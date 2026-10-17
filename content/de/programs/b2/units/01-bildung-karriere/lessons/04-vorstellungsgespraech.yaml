@@ -1,0 +1,394 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u01-vorstellungsgespraech
+order_index: 4
+level: b2
+title:
+  vi: Phỏng vấn tuyển dụng – es làm từ giữ chỗ (Es freut mich, dass …)
+objectives:
+  - vi: Dùng es báo trước câu dass/zu-Infinitiv (Ich finde es wichtig, dass …) và biết khi nào es biến mất.
+  - vi: Nghe hiểu các thông tin chính trong buổi phỏng vấn mẫu (thử việc, nghỉ phép, mức lương).
+  - vi: Nói về điểm mạnh, mức lương mong muốn và điều kiện hợp đồng một cách lịch sự.
+estimated_minutes: 22
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:b2u01-indem]
+items:
+  - item: de:item:b2u01-g-es-korrelat
+  - item: de:item:b2u01-gehaltsvorstellung
+  - item: de:item:b2u01-probezeit
+  - item: de:item:b2u01-kuendigung
+  - item: de:item:b2u01-kuendigen
+  - item: de:item:b2u01-arbeitsvertrag
+  - item: de:item:b2u01-belastbarkeit
+  - item: de:item:b2u01-teamfaehigkeit
+  - item: de:item:b2u01-verhandeln
+  - item: de:item:b2u01-kuendigungsfrist
+  - item: de:item:b2u01-urlaubsanspruch
+  - item: de:item:b2u01-bruttogehalt
+  - item: de:item:b2u01-einarbeitung
+  - item: de:item:b2u01-flexibilitaet
+  - item: de:item:b2u01-vereinbarung
+  - item: de:item:b2u01-arbeitsbedingungen
+  - item: de:item:b2u01-personalabteilung
+  - item: de:item:b2u01-homeoffice
+  - item: de:item:b2u01-zuverlaessigkeit
+  - item: de:item:a2u03-g-dass
+    role: reuse
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
+  - item: de:item:a2u04-g-wuerde-hoeflich
+    role: reuse
+  - item: de:item:a2u03-vorstellungsgespraech
+    role: reuse
+  - item: de:item:a2u03-staerke
+    role: reuse
+  - item: de:item:b1u08-g-mittelfeld
+    role: reuse
+  - item: de:item:b1u09-g-zu-infinitiv-dass
+    role: reuse
+  - item: de:item:b1u03-unbefristet
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn trả lời được các câu hỏi phỏng vấn một cách lịch sự, ví dụ: \"Es freut mich, dass Sie mich eingeladen haben. Ich halte es für eine meiner Stärken, auch unter Zeitdruck ruhig zu bleiben.\""
+  - type: explain
+    text:
+      vi: "Khi một câu dass hoặc cụm zu-Infinitiv làm chủ ngữ hay tân ngữ, câu chính thường có es đứng trước để \"giữ chỗ\" cho nó: Es freut mich, dass Sie Zeit haben. (= Dass Sie Zeit haben, freut mich.) es ở đây không mang nghĩa \"nó\"; tiếng Việt không có từ tương ứng, giống như ta nói \"Tôi rất vui vì …\"."
+  - type: explain
+    text:
+      vi: "Với finden/halten + tính từ, văn viết nên có es: Ich finde es wichtig, dass … · Ich halte es für sinnvoll, im Team zu arbeiten. Trong văn nói, đôi khi bạn nghe Ich finde wichtig, dass …, nhưng trong thư và bài thi hãy viết có es."
+  - type: explain
+    text:
+      vi: "Khi câu dass đứng đầu, nó đã chiếm vị trí 1 nên es biến mất: Dass Sie mich eingeladen haben, freut mich sehr. Không nói Dass …, freut es mich."
+  - type: explain
+    text:
+      vi: "Ở vị trí 1, es còn có thể chỉ là từ giữ chỗ để chủ ngữ thật đứng sau, hay gặp khi báo tin: Es haben sich über hundert Personen beworben. Động từ chia theo chủ ngữ thật (haben – hundert Personen), và es biến mất khi một từ khác đứng đầu: Auf die Stelle haben sich über hundert Personen beworben."
+  - type: explain
+    text:
+      vi: "Trong phỏng vấn, dùng Sie và câu lịch sự: Meine Stärken sind … · Meine Gehaltsvorstellung liegt bei … Euro brutto im Jahr. · Ich würde gern wissen, wie lang die Probezeit ist. Hỏi về hợp đồng là bình thường ở Đức; bạn nên hỏi rõ thử việc, nghỉ phép, Homeoffice và thời hạn báo trước."
+  - type: deep_explain
+    text:
+      vi: "Các cụm hay đi với es + dass/zu: es freut mich, es tut mir leid, es fällt mir schwer, es ist wichtig/möglich/nötig, es gelingt mir, ich finde es gut, ich halte es für richtig. Với một số động từ, es là tuỳ chọn (Ich bedauere [es], dass …), còn với finden/halten + tính từ thì có es là chuẩn. es giữ chỗ ở vị trí 1 khác với es là chủ ngữ thật (Es regnet. Es gibt viele Bewerber.): es thật không biến mất khi đảo (Heute regnet es. Heute gibt es viele Bewerber.). Theo cách hiểu thông dụng, mức lương trong phỏng vấn ở Đức thường được nói theo năm và trước thuế; con số cụ thể tuỳ ngành và vùng, nên hãy tìm hiểu trước."
+  - type: example
+    target: Es freut mich, dass Sie mich zum Vorstellungsgespräch eingeladen haben.
+    target_lang: de
+    translation:
+      vi: Tôi rất vui vì anh/chị đã mời tôi đến phỏng vấn.
+    note:
+      vi: "es báo trước câu dass; Sie viết hoa vì là cách xưng hô lịch sự."
+  - type: example
+    target: Ich finde es wichtig, dass die Einarbeitung gut organisiert ist.
+    target_lang: de
+    translation:
+      vi: Tôi cho rằng điều quan trọng là giai đoạn hướng dẫn công việc được tổ chức tốt.
+    note:
+      vi: "finden + tính từ + es + câu dass; trong câu dass, động từ ist đứng cuối."
+  - type: example
+    target: Dass die Probezeit sechs Monate dauert, ist für mich kein Problem.
+    target_lang: de
+    translation:
+      vi: Việc thử việc kéo dài sáu tháng không phải là vấn đề với tôi.
+    note:
+      vi: "Câu dass đứng đầu nên không có es; động từ ist đứng ngay sau dấu phẩy."
+  - type: example
+    target: Es haben sich über hundert Personen auf die Stelle beworben.
+    target_lang: de
+    translation:
+      vi: Đã có hơn một trăm người nộp đơn vào vị trí này.
+    note:
+      vi: "es chỉ giữ vị trí 1; động từ haben chia theo chủ ngữ thật hundert Personen (số nhiều)."
+  - type: example
+    target: Ich halte es für eine meiner Stärken, auch unter Zeitdruck ruhig zu bleiben.
+    target_lang: de
+    translation:
+      vi: Tôi cho rằng một trong những điểm mạnh của mình là vẫn bình tĩnh khi gấp rút về thời gian.
+    note:
+      vi: "halten für + Akkusativ + es + zu-Infinitiv. eine meiner Stärken = một trong những điểm mạnh của tôi (Genitiv số nhiều)."
+  - type: example
+    target: Meine Gehaltsvorstellung liegt bei 48.000 Euro brutto im Jahr. Ich würde gern wissen, ob Homeoffice möglich ist.
+    target_lang: de
+    translation:
+      vi: Mức lương mong muốn của tôi là 48.000 euro trước thuế mỗi năm. Tôi muốn biết liệu có được làm việc tại nhà không.
+    note:
+      vi: "liegen bei = ở mức. Ich würde gern wissen, ob … là cách hỏi lịch sự (câu hỏi gián tiếp, động từ cuối)."
+  - type: common_mistake
+    wrong: Dass Sie mich eingeladen haben, freut es mich sehr.
+    right: Dass Sie mich eingeladen haben, freut mich sehr.
+    target_lang: de
+    note:
+      vi: "Câu dass đã đứng ở vị trí 1, nên không thêm es nữa."
+  - type: common_mistake
+    wrong: Ich finde wichtig, dass das Team gut zusammenarbeitet.
+    right: Ich finde es wichtig, dass das Team gut zusammenarbeitet.
+    target_lang: de
+    note:
+      vi: "Trong văn nói, dạng không có es đôi khi được chấp nhận, nhưng trong văn viết và bài thi nên có es."
+  - type: common_mistake
+    wrong: Es hat sich viele Bewerber gemeldet.
+    right: Es haben sich viele Bewerber gemeldet.
+    target_lang: de
+    note:
+      vi: "es giữ chỗ không quyết định động từ: chủ ngữ thật là viele Bewerber (số nhiều), nên dùng haben."
+  - type: common_mistake
+    wrong: Heute es haben sich viele Bewerber gemeldet.
+    right: Heute haben sich viele Bewerber gemeldet.
+    target_lang: de
+    note:
+      vi: "Khi Heute đã đứng ở vị trí 1, es giữ chỗ biến mất."
+  - type: summary
+    points:
+      - vi: "es + câu dass / zu-Infinitiv: Es freut mich, dass … · Ich finde es wichtig, … zu …"
+      - vi: "finden/halten + tính từ: văn viết nên có es."
+      - vi: "Câu dass đứng đầu → không có es (Dass …, freut mich.)."
+      - vi: "es giữ chỗ ở vị trí 1: động từ chia theo chủ ngữ thật; es biến mất khi từ khác đứng đầu."
+      - vi: "Phỏng vấn: Meine Stärken sind …, Meine Gehaltsvorstellung liegt bei …, Ich würde gern wissen, ob/wie …"
+      - vi: "Từ vựng: die Gehaltsvorstellung, die Probezeit, die Kündigung, kündigen, der Arbeitsvertrag, die Belastbarkeit, die Teamfähigkeit, verhandeln."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u01l4-listen-einladung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      audio_asset_id: null
+      fallback_text: Es freut mich sehr, dass Sie mich zum Gespräch eingeladen haben. Ich habe Ihre Stellenanzeige mit großem Interesse gelesen.
+      options:
+        - { id: e2a, text: "Người nói rất vui vì được mời phỏng vấn và đã đọc tin tuyển dụng với nhiều hứng thú.", lang: vi }
+        - { id: e6b, text: "Người nói rất vui vì đã mời ứng viên đến phỏng vấn.", lang: vi }
+        - { id: e9c, text: "Người nói tiếc vì không được mời phỏng vấn.", lang: vi }
+        - { id: e4d, text: "Người nói chưa đọc tin tuyển dụng nhưng muốn được phỏng vấn.", lang: vi }
+    answer:
+      correct_option_id: e2a
+    explanation:
+      vi: "Es freut mich, dass Sie mich … eingeladen haben = tôi vui vì anh/chị đã mời tôi (Sie mời, mich được mời). mit großem Interesse gelesen = đã đọc với nhiều hứng thú."
+    display_answer: Người nói rất vui vì được mời phỏng vấn và đã đọc tin tuyển dụng với nhiều hứng thú.
+
+  - key: de:exercise:b2u01l4-listen-probezeit
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u01-probezeit
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Probezeit beträgt sechs Monate. Danach ist der Vertrag unbefristet. Ihr Urlaubsanspruch liegt bei dreißig Tagen im Jahr.
+      options:
+        - { id: p3a, text: "Thử việc sáu tháng, sau đó hợp đồng không thời hạn; được nghỉ phép 30 ngày mỗi năm.", lang: vi }
+        - { id: p7b, text: "Thử việc sáu tháng, sau đó hợp đồng có thời hạn; được nghỉ phép 30 ngày mỗi năm.", lang: vi }
+        - { id: p1c, text: "Thử việc ba tháng, sau đó hợp đồng không thời hạn; được nghỉ phép 30 ngày mỗi năm.", lang: vi }
+        - { id: p5d, text: "Thử việc sáu tháng, sau đó hợp đồng không thời hạn; được nghỉ phép 13 ngày mỗi năm.", lang: vi }
+    answer:
+      correct_option_id: p3a
+    explanation:
+      vi: "sechs Monate = sáu tháng; unbefristet = không thời hạn (befristet mới là có thời hạn). dreißig (30) khác dreizehn (13): hãy nghe đuôi -ßig và -zehn."
+    display_answer: Thử việc sáu tháng, sau đó hợp đồng không thời hạn; được nghỉ phép 30 ngày mỗi năm.
+
+  - key: de:exercise:b2u01l4-listen-gehalt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u01-gehaltsvorstellung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Meine Gehaltsvorstellung liegt bei fünfzigtausend Euro brutto im Jahr. Darüber können wir aber gern verhandeln.
+      options:
+        - { id: g4a, text: "Mức lương mong muốn là 50.000 euro trước thuế mỗi năm, có thể thương lượng.", lang: vi }
+        - { id: g8b, text: "Mức lương mong muốn là 50.000 euro sau thuế mỗi năm, không thương lượng.", lang: vi }
+        - { id: g2c, text: "Mức lương mong muốn là 15.000 euro trước thuế mỗi năm, có thể thương lượng.", lang: vi }
+        - { id: g6d, text: "Mức lương mong muốn là 50.000 euro trước thuế mỗi tháng, có thể thương lượng.", lang: vi }
+    answer:
+      correct_option_id: g4a
+    explanation:
+      vi: "fünfzigtausend = 50.000 (fünfzehntausend mới là 15.000); brutto = trước thuế; im Jahr = mỗi năm. Darüber können wir gern verhandeln = về khoản này ta có thể thương lượng."
+    display_answer: Mức lương mong muốn là 50.000 euro trước thuế mỗi năm, có thể thương lượng.
+
+  - key: de:exercise:b2u01l4-mcq-dass-vorne
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      stem: "Câu nào đúng? (Tôi rất vui vì anh/chị đã mời tôi.)"
+      stem_lang: vi
+      options:
+        - { id: v2a, text: "Dass Sie mich eingeladen haben, freut mich sehr.", lang: de }
+        - { id: v6b, text: "Dass Sie mich eingeladen haben, freut es mich sehr.", lang: de }
+        - { id: v9c, text: "Dass Sie mich eingeladen haben, es freut mich sehr.", lang: de }
+        - { id: v4d, text: "Dass Sie haben mich eingeladen, freut mich sehr.", lang: de }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "Câu dass đứng đầu chiếm vị trí 1, nên es biến mất và động từ freut đứng ngay sau dấu phẩy. Trong câu dass, trợ động từ haben đứng cuối."
+    display_answer: Dass Sie mich eingeladen haben, freut mich sehr.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u01l4-fill-es-haben
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      template: "Ich finde {{b1}} wichtig, im Team zu arbeiten. Es {{b2}} (haben) sich über hundert Personen beworben. Dass Sie Zeit haben, {{b3}} (freuen) mich sehr."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [es]
+        b2: [haben]
+        b3: [freut]
+    known_wrong:
+      - answer: hat
+        feedback_vi: es chỉ giữ chỗ; chủ ngữ thật là hundert Personen (số nhiều) – Es haben sich …
+        error_tag: verb_form
+      - answer: freuen
+        feedback_vi: Chủ ngữ là cả câu dass (ngôi thứ ba số ít) – freut.
+        error_tag: verb_form
+    explanation:
+      vi: "finden + tính từ + zu-Infinitiv: văn viết cần es (Ich finde es wichtig, …). Ở câu es giữ chỗ, động từ chia theo chủ ngữ thật số nhiều: haben. Câu dass đứng đầu là chủ ngữ ngôi thứ ba số ít nên dùng freut, và không có es."
+    display_answer: "Ich finde es wichtig, im Team zu arbeiten. Es haben sich über hundert Personen beworben. Dass Sie Zeit haben, freut mich sehr."
+
+  - key: de:exercise:b2u01l4-fill-vertrag
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-kuendigungsfrist
+    prompt:
+      template: "Die {{b1}} (die Zeit am Anfang, in der man getestet wird) dauert sechs Monate. In dieser Zeit gilt eine kürzere {{b2}} (Frist für die Kündigung). Über das Gehalt kann man oft {{b3}} (diskutieren, um sich zu einigen)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 15 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [Probezeit]
+        b2: [Kündigungsfrist]
+        b3: [verhandeln]
+    known_wrong:
+      - answer: Kündigung
+        feedback_vi: die Kündigung là việc chấm dứt hợp đồng; thời hạn báo trước là die Kündigungsfrist (có chữ s nối).
+        error_tag: word_choice
+      - answer: Kündigungfrist
+        feedback_vi: Từ ghép này có chữ s nối – Kündigungsfrist.
+        error_tag: spelling
+    explanation:
+      vi: "die Probezeit = thời gian thử việc; die Kündigungsfrist = thời hạn báo trước khi nghỉ việc (Kündigung + s + Frist); über etwas verhandeln = thương lượng về điều gì."
+    display_answer: "Die Probezeit dauert sechs Monate. In dieser Zeit gilt eine kürzere Kündigungsfrist. Über das Gehalt kann man oft verhandeln."
+
+  - key: de:exercise:b2u01l4-tr-team
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-zu-infinitiv
+    prompt:
+      source_text: "Tôi thấy làm việc nhóm là quan trọng. (dùng es + zu-Infinitiv)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich finde es wichtig, im Team zu arbeiten.
+        - Ich finde es wichtig, in einem Team zu arbeiten.
+        - Ich halte es für wichtig, im Team zu arbeiten.
+        - Ich halte es für wichtig, in einem Team zu arbeiten.
+        - Ich finde es wichtig, im Team zusammenzuarbeiten.
+        - Ich halte es für wichtig, im Team zusammenzuarbeiten.
+    known_wrong:
+      - answer: Ich finde es wichtig, im Team arbeiten.
+        feedback_vi: Sau es wichtig cần zu trước nguyên thể – im Team zu arbeiten.
+        error_tag: zu_infinitive
+      - answer: Ich finde es wichtig, zu im Team arbeiten.
+        feedback_vi: zu đứng ngay trước nguyên thể ở cuối – im Team zu arbeiten.
+        error_tag: zu_infinitive
+      - answer: Ich finde es wichtig, im Team zu arbeitet.
+        feedback_vi: Sau zu là động từ nguyên thể – zu arbeiten.
+        error_tag: zu_infinitive
+    explanation:
+      vi: "es báo trước cụm zu-Infinitiv đứng sau: Ich finde es wichtig, im Team zu arbeiten. zu đứng ngay trước nguyên thể ở cuối cụm; halten für + tính từ cũng dùng được: Ich halte es für wichtig, …"
+    display_answer: Ich finde es wichtig, im Team zu arbeiten.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u01l4-wb-es-freut
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi rất vui vì anh/chị đã mời tôi.\" (bắt đầu bằng Es)"
+      tokens:
+        - { id: r-mich1, text: mich }
+        - { id: r-haben, text: haben }
+        - { id: r-sehr, text: sehr }
+        - { id: r-dass, text: dass }
+        - { id: r-es, text: Es }
+        - { id: r-eingeladen, text: eingeladen }
+        - { id: r-komma, text: "," }
+        - { id: r-sie, text: Sie }
+        - { id: r-freut, text: freut }
+        - { id: r-mich2, text: mich }
+    answer:
+      orders:
+        - [r-es, r-freut, r-mich1, r-sehr, r-komma, r-dass, r-sie, r-mich2, r-eingeladen, r-haben]
+        - [r-es, r-freut, r-mich2, r-sehr, r-komma, r-dass, r-sie, r-mich1, r-eingeladen, r-haben]
+    explanation:
+      vi: "Câu chính: Es freut mich sehr (es giữ chỗ cho câu dass). Câu dass: chủ ngữ Sie, tân ngữ mich, Partizip eingeladen, rồi trợ động từ haben đứng cuối."
+    display_answer: Es freut mich sehr, dass Sie mich eingeladen haben.
+
+  - key: de:exercise:b2u01l4-wb-es-bewerber
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đã có hơn một trăm người nộp đơn vào vị trí này.\" (bắt đầu bằng Es)"
+      tokens:
+        - { id: x-beworben, text: beworben }
+        - { id: x-stelle, text: Stelle }
+        - { id: x-hundert, text: hundert }
+        - { id: x-es, text: Es }
+        - { id: x-auf, text: auf }
+        - { id: x-sich, text: sich }
+        - { id: x-personen, text: Personen }
+        - { id: x-die, text: die }
+        - { id: x-haben, text: haben }
+        - { id: x-ueber, text: über }
+    answer:
+      orders:
+        - [x-es, x-haben, x-sich, x-ueber, x-hundert, x-personen, x-auf, x-die, x-stelle, x-beworben]
+        - [x-es, x-haben, x-sich, x-auf, x-die, x-stelle, x-ueber, x-hundert, x-personen, x-beworben]
+    explanation:
+      vi: "Es chỉ giữ vị trí 1; động từ haben chia theo chủ ngữ thật über hundert Personen (số nhiều). Đại từ phản thân sich đứng ngay sau động từ, Partizip beworben ở cuối câu."
+    display_answer: Es haben sich über hundert Personen auf die Stelle beworben.
+
+  - key: de:exercise:b2u01l4-mcq-staerken
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:a2u03-staerke
+    prompt:
+      stem: "Người phỏng vấn hỏi về điểm mạnh của bạn. Câu trả lời nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: m3a, text: "Ich halte es für eine meiner Stärken, auch unter Zeitdruck ruhig zu bleiben.", lang: de }
+        - { id: m7b, text: "Ich halte für eine meiner Stärken, auch unter Zeitdruck ruhig bleiben.", lang: de }
+        - { id: m1c, text: "Es ist eine meiner Stärken, dass ich bleibe auch unter Zeitdruck ruhig.", lang: de }
+        - { id: m5d, text: "Dass ich auch unter Zeitdruck ruhig bleibe, ist es eine meiner Stärken.", lang: de }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "halten für + es báo trước cụm zu-Infinitiv: Ich halte es für …, … ruhig zu bleiben. Các câu kia thiếu es và zu, đặt động từ bleibe sai chỗ trong câu dass, hoặc giữ es khi câu dass đã đứng đầu."
+    display_answer: Ich halte es für eine meiner Stärken, auch unter Zeitdruck ruhig zu bleiben.

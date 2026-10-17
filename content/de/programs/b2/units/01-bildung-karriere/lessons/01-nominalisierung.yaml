@@ -1,0 +1,406 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u01-nominalisierung
+order_index: 1
+level: b2
+title:
+  vi: Cơ hội học vấn – danh từ hoá (Nach Abschluss des Studiums …)
+objectives:
+  - vi: Chuyển câu phụ (weil, obwohl, nachdem, bevor, während, wenn, um … zu) thành cụm giới từ + danh từ (Nominalstil) và ngược lại.
+  - vi: Đọc và viết cụm danh từ có Genitiv bổ nghĩa (die Anerkennung ausländischer Abschlüsse).
+  - vi: Đọc hiểu câu văn trang trọng về học vấn, cơ hội và công nhận bằng cấp.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: []
+items:
+  - item: de:item:b2u01-g-nominalisierung
+  - item: de:item:b2u01-g-genitivattribut
+  - item: de:item:b2u01-bildung
+  - item: de:item:b2u01-chancengleichheit
+  - item: de:item:b2u01-bildungsweg
+  - item: de:item:b2u01-qualifikation
+  - item: de:item:b2u01-qualifiziert
+  - item: de:item:b2u01-fachkraft
+  - item: de:item:b2u01-fachkraeftemangel
+  - item: de:item:b2u01-anerkennung
+  - item: de:item:b2u01-anerkennen
+  - item: de:item:b2u01-hochschulabschluss
+  - item: de:item:b2u01-bildungssystem
+  - item: de:item:b2u01-zugang
+  - item: de:item:b2u01-anerkennungsverfahren
+  - item: de:item:b2u01-gleichwertig
+  - item: de:item:b2u01-nachweis
+  - item: de:item:b2u01-nachweisen
+  - item: de:item:b2u01-arbeitsmarkt
+  - item: de:item:b2u01-auslaendisch
+  - item: de:item:b2u01-benachteiligt
+  - item: de:item:b1u01-g-nachdem
+    role: reuse
+  - item: de:item:b1u01-g-bevor
+    role: reuse
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u06-g-um-zu
+    role: reuse
+  - item: de:item:a2u07-g-genitiv-namen
+    role: reuse
+  - item: de:item:b1u01-abschluss
+    role: reuse
+  - item: de:item:b1u01-studium
+    role: reuse
+  - item: de:item:a2u03-bewerbung
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b1u03-g-damit
+    role: reuse
+  - item: de:item:b1u05-g-wortbildung-nomen
+    role: reuse
+  - item: de:item:b1u06-g-genitiv-praepositionen
+    role: reuse
+  - item: de:item:b1u07-g-nominalisierter-infinitiv
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc và viết được câu theo văn phong danh từ của văn bản trang trọng, ví dụ: \"Nach Abschluss des Studiums begann sie das Anerkennungsverfahren.\" (Học xong đại học, cô ấy bắt đầu làm thủ tục công nhận bằng.)"
+  - type: explain
+    text:
+      vi: "Văn bản hành chính, báo chí và học thuật tiếng Đức rất chuộng Nominalstil: thay một câu phụ có động từ bằng cụm \"giới từ + danh từ\". Nachdem sie das Studium abgeschlossen hatte, … → Nach Abschluss des Studiums …. Tiếng Việt hành chính cũng có lối này (\"việc công nhận văn bằng\" thay cho \"người ta công nhận văn bằng\"), nhưng tiếng Đức dùng nhiều hơn hẳn."
+  - type: explain
+    text:
+      vi: "Mỗi liên từ có một giới từ tương ứng: weil → wegen/aufgrund + Gen, obwohl → trotz + Gen, während → während + Gen, nachdem → nach + Dat, bevor → vor + Dat, wenn → bei + Dat, um … zu → zum/zur + Dat. Giới từ quyết định cách của danh từ đi sau: wegen des Gehalts, nach dem Studium, bei der Bewerbung."
+  - type: explain
+    text:
+      vi: "Động từ thành danh từ theo ba cách chính: thêm -ung (bewerben → die Bewerbung, anerkennen → die Anerkennung), viết hoa nguyên thể (lernen → das Lernen) hoặc dùng dạng gốc (abschließen → der Abschluss). Danh từ đuôi -ung là giống cái, nguyên thể danh từ hoá là giống trung; dạng gốc thì phải học thuộc giống."
+  - type: explain
+    text:
+      vi: "Chủ ngữ hoặc tân ngữ của động từ trở thành Genitiv đứng sau danh từ mới: man erkennt den Abschluss an → die Anerkennung des Abschlusses. Trạng từ trở thành tính từ có đuôi: man lernt regelmäßig → das regelmäßige Lernen; chủ ngữ là đại từ thì thành mạo từ sở hữu: ich bewerbe mich → meine Bewerbung."
+  - type: explain
+    text:
+      vi: "Genitiv đứng sau danh từ tương tự \"của\" trong tiếng Việt và có thể nối thành chuỗi: die Anerkennung der Abschlüsse ausländischer Fachkräfte. Danh từ số nhiều không mạo từ cần tính từ đuôi -er (ausländischer Abschlüsse), nếu không thì dùng von + Dativ (von Abschlüssen); tên riêng đứng trước: Deutschlands Hochschulen, Annas Zeugnis."
+  - type: deep_explain
+    text:
+      vi: "Nominalstil làm câu ngắn và khách quan hơn, nhưng dùng quá nhiều thì khó đọc; trong thư cá nhân và khi nói, người Đức vẫn dùng câu có động từ nhiều hơn. Một số cụm cố định thường bỏ mạo từ: nach Abschluss des Studiums, nach Ablauf der Frist, bei Fragen, zur Vorbereitung auf die Prüfung. Trong văn nói, wegen hay đi với Dativ (wegen dem Wetter), nhưng văn viết chuẩn và đề thi dùng Genitiv (wegen des Wetters). Khi đọc một câu Nominalstil dài, hãy \"dịch ngược\" sang câu có động từ: tìm danh từ -ung, hỏi \"ai làm gì\" rồi đọc phần Genitiv đi sau nó."
+  - type: example
+    target: Nach Abschluss des Studiums begann sie das Anerkennungsverfahren.
+    target_lang: de
+    translation:
+      vi: Học xong đại học, cô ấy bắt đầu làm thủ tục công nhận bằng.
+    note:
+      vi: "Verbalstil: Nachdem sie das Studium abgeschlossen hatte, … → nachdem thành nach + Dativ, abschließen thành der Abschluss, tân ngữ das Studium thành Genitiv des Studiums."
+  - type: example
+    target: Wegen des Fachkräftemangels haben ausländische Fachkräfte in vielen Berufen gute Chancen.
+    target_lang: de
+    translation:
+      vi: Vì thiếu lao động chuyên môn, người lao động chuyên môn nước ngoài có nhiều cơ hội trong nhiều ngành nghề.
+    note:
+      vi: "Verbalstil: Weil Fachkräfte fehlen, … → weil thành wegen + Genitiv: des Fachkräftemangels (der Mangel → des Mangels)."
+  - type: example
+    target: Trotz guter Qualifikationen fand er lange keine Stelle.
+    target_lang: de
+    translation:
+      vi: Dù có trình độ tốt, anh ấy vẫn lâu không tìm được việc.
+    note:
+      vi: "Verbalstil: Obwohl er gut qualifiziert war, … → trotz + Genitiv. Số nhiều không mạo từ nên tính từ mang đuôi -er: guter Qualifikationen."
+  - type: example
+    target: Vor dem Umzug nach Deutschland kann man die Anerkennung des Abschlusses schon beantragen.
+    target_lang: de
+    translation:
+      vi: Ngay trước khi chuyển sang Đức, bạn đã có thể nộp đơn xin công nhận bằng.
+    note:
+      vi: "Verbalstil: Bevor man nach Deutschland umzieht, … → bevor thành vor + Dativ (der Umzug → vor dem Umzug)."
+  - type: example
+    target: Bei der Bewerbung brauchen Sie einen Nachweis Ihrer Deutschkenntnisse.
+    target_lang: de
+    translation:
+      vi: Khi nộp hồ sơ, anh/chị cần giấy chứng nhận trình độ tiếng Đức.
+    note:
+      vi: "Verbalstil: Wenn Sie sich bewerben, … → wenn thành bei + Dativ, sich bewerben thành die Bewerbung. Ihrer Deutschkenntnisse là Genitiv số nhiều (Sie lịch sự)."
+  - type: example
+    target: Zur Vorbereitung auf die Prüfung besuchte sie einen Intensivkurs.
+    target_lang: de
+    translation:
+      vi: Để chuẩn bị cho kỳ thi, cô ấy theo học một khoá cấp tốc.
+    note:
+      vi: "Verbalstil: Um sich auf die Prüfung vorzubereiten, … (hoặc Damit sie sich auf die Prüfung vorbereiten konnte, …) → um … zu/damit thành zur (zu der) + danh từ giống cái die Vorbereitung."
+  - type: common_mistake
+    wrong: Das regelmäßig Lernen ist wichtig.
+    right: Das regelmäßige Lernen ist wichtig.
+    target_lang: de
+    note:
+      vi: "Khi động từ thành danh từ, trạng từ đi kèm phải thành tính từ có đuôi: regelmäßig lernen → das regelmäßige Lernen."
+  - type: common_mistake
+    wrong: Nachdem dem Studium zog sie nach Berlin.
+    right: Nach dem Studium zog sie nach Berlin.
+    target_lang: de
+    note:
+      vi: "nachdem là liên từ, phải đi với cả một câu có động từ. Trước danh từ, dùng giới từ nach + Dativ."
+  - type: common_mistake
+    wrong: Trotz er gut qualifiziert war, fand er keine Stelle.
+    right: Obwohl er gut qualifiziert war, fand er keine Stelle.
+    target_lang: de
+    note:
+      vi: "trotz là giới từ, chỉ đi với danh từ (trotz guter Qualifikationen). Muốn nối một câu, dùng liên từ obwohl."
+  - type: common_mistake
+    wrong: Die Anerkennung ausländische Abschlüsse dauert lange.
+    right: Die Anerkennung ausländischer Abschlüsse dauert lange.
+    target_lang: de
+    note:
+      vi: "Genitiv số nhiều không có mạo từ: tính từ mang đuôi -er (giống mạo từ der), để người đọc nhận ra cách."
+  - type: summary
+    points:
+      - vi: "Nominalstil = giới từ + danh từ thay cho câu phụ; hay gặp trong văn bản trang trọng."
+      - vi: "weil → wegen/aufgrund, obwohl → trotz, während → während (+ Gen); nachdem → nach, bevor → vor, wenn → bei, um … zu → zum/zur (+ Dat)."
+      - vi: "Động từ → danh từ: -ung (giống cái), nguyên thể viết hoa (giống trung), dạng gốc (Abschluss)."
+      - vi: "Chủ ngữ/tân ngữ → Genitiv sau danh từ; trạng từ → tính từ có đuôi; đại từ → mạo từ sở hữu."
+      - vi: "Genitiv số nhiều không mạo từ: tính từ đuôi -er (ausländischer Abschlüsse) hoặc von + Dativ."
+      - vi: "Tên riêng đứng trước: Deutschlands Hochschulen, Annas Zeugnis (không có dấu ')."
+      - vi: "Từ vựng: die Bildung, die Chancengleichheit, die Qualifikation, die Fachkraft, der Fachkräftemangel, die Anerkennung, anerkennen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u01l1-mcq-nach-abschluss
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u01-g-nominalisierung
+    prompt:
+      stem: "Chọn cụm Nominalstil đúng: \"Nachdem er das Studium abgeschlossen hatte, fand er schnell eine Stelle.\" → \"___ fand er schnell eine Stelle.\""
+      stem_lang: vi
+      options:
+        - { id: n4a, text: "Nach Abschluss des Studiums", lang: de }
+        - { id: n8b, text: "Nachdem Abschluss des Studiums", lang: de }
+        - { id: n2c, text: "Nach Abschluss das Studium", lang: de }
+        - { id: n6d, text: "Nach Abschluss des Studium", lang: de }
+    answer:
+      correct_option_id: n4a
+    explanation:
+      vi: "nachdem (liên từ) thành giới từ nach; abschließen thành der Abschluss; tân ngữ das Studium thành Genitiv des Studiums (giống trung có đuôi -s). nachdem không đứng trước danh từ, das Studium sai cách, còn des Studium thiếu đuôi -s."
+    display_answer: Nach Abschluss des Studiums
+
+  - key: de:exercise:b2u01l1-mcq-trotz-kosten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u01-g-nominalisierung
+    prompt:
+      stem: "\"Obwohl die Kosten hoch sind, studieren viele im Ausland.\" – Viết lại theo Nominalstil: \"___ der hohen Kosten studieren viele im Ausland.\""
+      stem_lang: vi
+      options:
+        - { id: t3a, text: "Trotz", lang: de }
+        - { id: t7b, text: "Wegen", lang: de }
+        - { id: t1c, text: "Obwohl", lang: de }
+        - { id: t5d, text: "Bei", lang: de }
+    answer:
+      correct_option_id: t3a
+    explanation:
+      vi: "obwohl (mặc dù) tương ứng với giới từ trotz + Genitiv: trotz der hohen Kosten. wegen nghĩa là \"vì\", sai nghĩa; Obwohl là liên từ, không đứng trước danh từ; bei tương ứng với wenn và cần Dativ."
+    display_answer: Trotz
+
+  - key: de:exercise:b2u01l1-mcq-auslaendischer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-genitivattribut
+    prompt:
+      stem: "Chọn dạng đúng: Die Anerkennung ___ Abschlüsse kann mehrere Monate dauern."
+      stem_lang: vi
+      options:
+        - { id: a2a, text: "ausländischer", lang: de }
+        - { id: a6b, text: "ausländische", lang: de }
+        - { id: a9c, text: "ausländischen", lang: de }
+        - { id: a4d, text: "ausländisches", lang: de }
+    answer:
+      correct_option_id: a2a
+    explanation:
+      vi: "Abschlüsse là Genitiv số nhiều và không có mạo từ, nên tính từ tự mang dấu hiệu của cách: đuôi -er như mạo từ der. ausländischen chỉ đúng khi có mạo từ đứng trước (der ausländischen Abschlüsse); -e và -es không phải đuôi Genitiv số nhiều."
+    display_answer: ausländischer
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u01l1-fill-der-des
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-genitivattribut
+    prompt:
+      template: "Bei {{b1}} Bewerbung brauchen Sie einen Nachweis {{b2}} Sprachkenntnisse. Wegen {{b3}} Fachkräftemangels haben Sie gute Chancen. (bestimmter Artikel)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [der]
+        b2: [der]
+        b3: [des]
+    known_wrong:
+      - answer: die
+        feedback_vi: "die là Nominativ/Akkusativ. Sau bei cần Dativ (der Bewerbung); Genitiv số nhiều cũng là der (der Sprachkenntnisse)."
+        error_tag: case_dat_akk
+      - answer: den
+        feedback_vi: "den là Akkusativ giống đực hoặc Dativ số nhiều. Ở đây cần Dativ giống cái der, Genitiv số nhiều der, hoặc Genitiv giống đực des."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "bei + Dativ: die Bewerbung → bei der Bewerbung. Nachweis + Genitiv số nhiều: der Sprachkenntnisse. wegen + Genitiv giống đực: des Fachkräftemangels (danh từ cũng có đuôi -s)."
+    display_answer: "Bei der Bewerbung brauchen Sie einen Nachweis der Sprachkenntnisse. Wegen des Fachkräftemangels haben Sie gute Chancen."
+
+  - key: de:exercise:b2u01l1-fill-nomen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-anerkennung
+    prompt:
+      template: "Wenn man sich bewirbt → bei der {{b1}} · Nachdem man das Studium abgeschlossen hat → nach {{b2}} des Studiums · Weil der Abschluss nicht anerkannt wird → wegen der fehlenden {{b3}} des Abschlusses"
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 13 }
+        - { id: b3, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [Bewerbung]
+        b2: [Abschluss, dem Abschluss]
+        b3: [Anerkennung]
+    known_wrong:
+      - answer: Bewerben
+        feedback_vi: Sau der (Dativ giống cái) cần danh từ giống cái – die Bewerbung. das Bewerben là giống trung (beim Bewerben).
+        error_tag: gender
+      - answer: Anerkennen
+        feedback_vi: Sau der fehlenden cần danh từ giống cái đuôi -ung – die Anerkennung.
+        error_tag: gender
+    explanation:
+      vi: "sich bewerben → die Bewerbung, anerkennen → die Anerkennung (đuôi -ung, giống cái, hợp với der). abschließen có danh từ gốc der Abschluss; cụm cố định nach Abschluss des Studiums thường bỏ mạo từ, nhưng nach dem Abschluss cũng đúng."
+    display_answer: "Wenn man sich bewirbt → bei der Bewerbung · Nachdem man das Studium abgeschlossen hat → nach Abschluss des Studiums · Weil der Abschluss nicht anerkannt wird → wegen der fehlenden Anerkennung des Abschlusses"
+
+  - key: de:exercise:b2u01l1-tr-nach-studium
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-studium
+    prompt:
+      source_text: "Sau khi tốt nghiệp đại học, cô ấy chuyển đến Berlin. (dùng Nominalstil với nach, không dùng nachdem)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nach Abschluss des Studiums zog sie nach Berlin.
+        - Nach Abschluss des Studiums ist sie nach Berlin gezogen.
+        - Nach dem Abschluss des Studiums zog sie nach Berlin.
+        - Nach dem Abschluss des Studiums ist sie nach Berlin gezogen.
+        - Nach Abschluss ihres Studiums zog sie nach Berlin.
+        - Nach Abschluss ihres Studiums ist sie nach Berlin gezogen.
+        - Nach dem Abschluss ihres Studiums zog sie nach Berlin.
+        - Nach dem Abschluss ihres Studiums ist sie nach Berlin gezogen.
+        - Nach dem Studium zog sie nach Berlin.
+        - Nach dem Studium ist sie nach Berlin gezogen.
+        - Nach ihrem Studium zog sie nach Berlin.
+        - Nach ihrem Studium ist sie nach Berlin gezogen.
+        - Nach dem Hochschulabschluss zog sie nach Berlin.
+        - Nach dem Hochschulabschluss ist sie nach Berlin gezogen.
+        - Sie zog nach Abschluss des Studiums nach Berlin.
+        - Sie ist nach Abschluss des Studiums nach Berlin gezogen.
+        - Sie zog nach dem Studium nach Berlin.
+        - Sie ist nach dem Studium nach Berlin gezogen.
+    known_wrong:
+      - answer: Nachdem Abschluss des Studiums zog sie nach Berlin.
+        feedback_vi: nachdem là liên từ, cần cả một câu. Trước danh từ dùng giới từ nach – Nach Abschluss des Studiums …
+        error_tag: preposition
+      - answer: Nach Abschluss des Studiums sie zog nach Berlin.
+        feedback_vi: Cụm Nach Abschluss des Studiums chiếm vị trí 1, nên zog đứng ngay sau – … zog sie nach Berlin.
+        error_tag: verb_position
+      - answer: Nach Abschluss das Studium zog sie nach Berlin.
+        feedback_vi: Danh từ bổ nghĩa cho Abschluss phải ở Genitiv – des Studiums.
+        error_tag: case_genitive
+    explanation:
+      vi: "nachdem → nach + Dativ; das Studium abschließen → der Abschluss des Studiums (cụm cố định thường bỏ mạo từ: nach Abschluss des Studiums). Cụm giới từ ở vị trí 1 nên động từ (zog hoặc ist … gezogen) đứng ngay sau; umziehen/ziehen nach chỉ di chuyển nên Perfekt dùng sein."
+    display_answer: Nach Abschluss des Studiums zog sie nach Berlin.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u01l1-wb-fachkraeftemangel
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-fachkraeftemangel
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Vì thiếu lao động chuyên môn, nhiều công ty tìm nhân viên ở nước ngoài.\""
+      tokens:
+        - { id: f-ausland, text: Ausland }
+        - { id: f-suchen, text: suchen }
+        - { id: f-des, text: des }
+        - { id: f-mitarbeiter, text: Mitarbeiter }
+        - { id: f-wegen, text: Wegen }
+        - { id: f-im, text: im }
+        - { id: f-firmen, text: Firmen }
+        - { id: f-mangel, text: Fachkräftemangels }
+        - { id: f-viele, text: viele }
+    answer:
+      orders:
+        - [f-wegen, f-des, f-mangel, f-suchen, f-viele, f-firmen, f-mitarbeiter, f-im, f-ausland]
+        - [f-wegen, f-des, f-mangel, f-suchen, f-viele, f-firmen, f-im, f-ausland, f-mitarbeiter]
+    explanation:
+      vi: "Cụm Nominalstil Wegen des Fachkräftemangels (wegen + Genitiv) chiếm vị trí 1, nên động từ suchen đứng ngay sau, rồi đến chủ ngữ viele Firmen. Tân ngữ Mitarbeiter và nơi chốn im Ausland có thể đổi chỗ cho nhau."
+    display_answer: Wegen des Fachkräftemangels suchen viele Firmen Mitarbeiter im Ausland.
+
+  - key: de:exercise:b2u01l1-tr-trotz-anerkennung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u01-anerkennung
+    prompt:
+      source_text: Trotz der Anerkennung ihres Abschlusses fand sie zunächst keine Stelle als Ärztin.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mặc dù bằng của cô ấy đã được công nhận, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Mặc dù bằng của cô ấy đã được công nhận, lúc đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Dù bằng của cô ấy đã được công nhận, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Dù bằng của cô ấy đã được công nhận, lúc đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Mặc dù bằng của cô ấy được công nhận, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Mặc dù bằng của cô ấy đã được công nhận, ban đầu cô ấy vẫn chưa tìm được việc làm bác sĩ.
+        - Mặc dù bằng của cô ấy đã được công nhận, ban đầu cô ấy không tìm được chỗ làm bác sĩ.
+        - Mặc dù bằng của cô ấy đã được công nhận, ban đầu cô ấy vẫn không tìm được chỗ làm bác sĩ.
+        - Mặc dù được công nhận bằng, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Dù đã được công nhận bằng, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Tuy bằng của cô ấy đã được công nhận, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Mặc dù bằng cấp của cô ấy đã được công nhận, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+        - Mặc dù bằng của chị ấy đã được công nhận, ban đầu chị ấy vẫn không tìm được việc làm bác sĩ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì bằng của cô ấy đã được công nhận, ban đầu cô ấy không tìm được việc làm bác sĩ.
+        feedback_vi: "trotz nghĩa là \"mặc dù\", không phải \"vì\" (wegen)."
+        error_tag: meaning
+    explanation:
+      vi: "trotz + Genitiv = mặc dù (tương ứng obwohl). die Anerkennung ihres Abschlusses = việc bằng của cô ấy được công nhận (ihres là Genitiv của ihr). zunächst = lúc đầu; keine Stelle als Ärztin = không có chỗ làm bác sĩ."
+    display_answer: Mặc dù bằng của cô ấy đã được công nhận, ban đầu cô ấy vẫn không tìm được việc làm bác sĩ.
+
+  - key: de:exercise:b2u01l1-mcq-annas-abschluss
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-genitivattribut
+    prompt:
+      stem: "Câu nào đúng? (Việc công nhận bằng của Anna mất ba tháng.)"
+      stem_lang: vi
+      options:
+        - { id: g3a, text: "Die Anerkennung von Annas Abschluss dauerte drei Monate.", lang: de }
+        - { id: g7b, text: "Die Anerkennung Annas Abschluss dauerte drei Monate.", lang: de }
+        - { id: g1c, text: "Die Anerkennung der Abschluss von Anna dauerte drei Monate.", lang: de }
+        - { id: g5d, text: "Die Anerkennung des Abschluss von Anna dauerte drei Monate.", lang: de }
+    answer:
+      correct_option_id: g3a
+    explanation:
+      vi: "Annas Abschluss (tên riêng + s đứng trước) là cách nói \"bằng của Anna\"; sau Anerkennung, cụm này được nối bằng von + Dativ. Không có von thì Abschluss phải ở Genitiv (Abschlusses) nên câu thứ hai sai; der Abschluss là Nominativ, còn des Abschluss thiếu đuôi -es."
+    display_answer: Die Anerkennung von Annas Abschluss dauerte drei Monate.

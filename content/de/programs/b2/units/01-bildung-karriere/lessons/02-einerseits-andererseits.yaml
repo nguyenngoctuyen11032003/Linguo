@@ -1,0 +1,397 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u01-einerseits-andererseits
+order_index: 2
+level: b2
+title:
+  vi: Một mặt… mặt khác – nối ý đối lập, nhượng bộ (Einerseits …, andererseits …)
+objectives:
+  - vi: Nối hai ý đối lập bằng einerseits … andererseits, dennoch, allerdings, jedoch, hingegen/dagegen và đặt động từ đúng chỗ.
+  - vi: Dùng wohingegen (câu phụ đối lập) và auch wenn / selbst wenn (dù cho, kể cả khi).
+  - vi: Cân nhắc ưu nhược của việc thăng tiến và viết một đoạn lập luận hai chiều.
+estimated_minutes: 22
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b2u01-nominalisierung]
+items:
+  - item: de:item:b2u01-g-adversativ-konzessiv
+  - item: de:item:b2u01-g-auch-wenn
+  - item: de:item:b2u01-aufstieg
+  - item: de:item:b2u01-befoerderung
+  - item: de:item:b2u01-befoerdern
+  - item: de:item:b2u01-fuehrungskraft
+  - item: de:item:b2u01-ehrgeiz
+  - item: de:item:b2u01-ehrgeizig
+  - item: de:item:b2u01-leistung
+  - item: de:item:b2u01-leistungsorientiert
+  - item: de:item:b2u01-verantwortung
+  - item: de:item:b2u01-herausforderung
+  - item: de:item:b2u01-belastung
+  - item: de:item:b2u01-privatleben
+  - item: de:item:b2u01-gehaltserhoehung
+  - item: de:item:b2u01-aufsteigen
+  - item: de:item:b2u01-zufriedenheit
+  - item: de:item:b2u01-ansehen
+  - item: de:item:b2u01-vereinbarkeit
+  - item: de:item:b2u01-leistungsdruck
+  - item: de:item:a2u04-g-wenn-konditional
+    role: reuse
+  - item: de:item:a2u06-g-deshalb
+    role: reuse
+  - item: de:item:b1u01-karriere
+    role: reuse
+  - item: de:item:a2u03-gehalt
+    role: reuse
+  - item: de:item:a2u03-ueberstunde
+    role: reuse
+  - item: de:item:b1u02-g-obwohl-trotzdem
+    role: reuse
+  - item: de:item:b1u04-g-zweiteilige-konnektoren
+    role: reuse
+  - item: de:item:b1u05-g-negation-erweitert
+    role: reuse
+  - item: de:item:b1u07-g-waehrend-konjunktion
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn cân nhắc được ưu và nhược của việc thăng tiến trong một đoạn văn mạch lạc, ví dụ: \"Einerseits verdient man als Führungskraft mehr, andererseits trägt man mehr Verantwortung. Dennoch möchte ich aufsteigen.\""
+  - type: explain
+    text:
+      vi: "Khi viết lập luận hai chiều, bạn cần từ nối cho ý đối lập. einerseits … andererseits (một mặt … mặt khác) đặt hai ý cạnh nhau; dennoch (tuy vậy) nghĩa như trotzdem; allerdings và jedoch (tuy nhiên, có điều) thêm một hạn chế; hingegen/dagegen (ngược lại) so sánh hai người hay hai việc."
+  - type: explain
+    text:
+      vi: "Các từ trên là trạng từ, giống trotzdem và deshalb bạn đã học: đứng ở vị trí 1 thì động từ chia đứng ngay sau (Allerdings muss man oft Überstunden machen.), hoặc đứng giữa câu sau động từ (Man muss allerdings oft Überstunden machen.). Không đặt dấu phẩy ngay sau chúng như \"however,\" trong tiếng Anh."
+  - type: explain
+    text:
+      vi: "hingegen hay đứng ngay sau chủ ngữ để làm nổi bật sự so sánh: Meine Schwester ist sehr ehrgeizig, ich hingegen arbeite lieber in Teilzeit. Trong cách viết này, chủ ngữ + hingegen cùng chiếm vị trí 1, động từ vẫn đứng thứ hai."
+  - type: explain
+    text:
+      vi: "wohingegen (còn, trong khi đó) là liên từ mở câu phụ: động từ đứng cuối, và câu wohingegen thường đứng sau câu chính: Lan arbeitet gern im Team, wohingegen Minh lieber allein arbeitet. Nó chỉ sự đối lập giữa hai việc, không phải nhượng bộ như obwohl (mặc dù)."
+  - type: explain
+    text:
+      vi: "auch wenn / selbst wenn (dù cho, kể cả khi) cũng mở câu phụ, động từ đứng cuối. So sánh với wenn (nếu): Wenn ich befördert werde, verdiene ich mehr. – Auch wenn ich nicht befördert werde, bleibe ich in der Firma. Khi câu auch wenn đứng đầu, dạng thông dụng là động từ câu chính đứng ngay sau dấu phẩy; dạng không đảo (…, ich bleibe trotzdem) cũng là tiếng Đức chuẩn."
+  - type: deep_explain
+    text:
+      vi: "Sắc thái: dennoch và trotzdem gần như cùng nghĩa, dennoch trang trọng hơn; allerdings thường thêm một hạn chế nhỏ (\"có điều\"), jedoch đối lập rõ hơn và hay gặp trong văn viết; dagegen và hingegen đều là \"ngược lại\", hingegen trang trọng hơn. jedoch đôi khi còn đứng đầu vế câu như aber mà không đảo (…, jedoch mir fehlt die Zeit), nhưng cách này hiếm; để an toàn, bạn hãy dùng nó như trạng từ (…, jedoch fehlt mir die Zeit). selbst wenn nhấn mạnh một tình huống khó xảy ra và hay đi với Konjunktiv II: Selbst wenn man mir mehr Geld anbieten würde, würde ich bleiben. Một đoạn lập luận tốt thường có khung: Einerseits … Andererseits … Allerdings … Dennoch/Trotzdem bin ich der Meinung, dass …"
+  - type: example
+    target: Einerseits verdient man als Führungskraft mehr, andererseits trägt man mehr Verantwortung.
+    target_lang: de
+    translation:
+      vi: Một mặt, làm quản lý thì lương cao hơn, mặt khác lại gánh nhiều trách nhiệm hơn.
+    note:
+      vi: "Cả einerseits và andererseits đều ở vị trí 1, nên verdient và trägt đứng ngay sau."
+  - type: example
+    target: Die Stelle ist gut bezahlt, allerdings muss man oft Überstunden machen.
+    target_lang: de
+    translation:
+      vi: Vị trí này được trả lương cao, tuy nhiên thường phải làm thêm giờ.
+    note:
+      vi: "allerdings là trạng từ: sau dấu phẩy, nó chiếm vị trí 1 của vế sau, nên muss đứng ngay sau."
+  - type: example
+    target: Der Leistungsdruck ist hoch. Dennoch ist sie mit ihrem Job zufrieden.
+    target_lang: de
+    translation:
+      vi: Áp lực thành tích rất cao. Tuy vậy, cô ấy vẫn hài lòng với công việc.
+    note:
+      vi: "dennoch (tuy vậy) khác deshalb (vì vậy): Der Leistungsdruck ist hoch, deshalb sucht er eine neue Stelle. Cả hai đều là trạng từ, động từ đứng ngay sau."
+  - type: example
+    target: Mein Bruder möchte schnell Karriere machen, wohingegen ich mehr Zeit für mein Privatleben haben möchte.
+    target_lang: de
+    translation:
+      vi: Anh tôi muốn nhanh chóng thăng tiến, còn tôi thì muốn có nhiều thời gian hơn cho đời sống riêng.
+    note:
+      vi: "wohingegen mở câu phụ: động từ chia möchte đứng cuối. Câu so sánh hai người, không mang nghĩa \"mặc dù\"; ở đây cũng có thể dùng während (B1) với nghĩa đối lập."
+  - type: example
+    target: Auch wenn ich die Beförderung nicht bekomme, bleibe ich in der Firma.
+    target_lang: de
+    translation:
+      vi: Dù không được thăng chức, tôi vẫn ở lại công ty.
+    note:
+      vi: "So sánh: Wenn ich die Beförderung bekomme, verdiene ich mehr (nếu). auch wenn = dù cho; câu phụ đứng đầu nên bleibe đứng ngay sau dấu phẩy."
+  - type: example
+    target: Meine Schwester ist sehr ehrgeizig, ich hingegen arbeite lieber in Teilzeit.
+    target_lang: de
+    translation:
+      vi: Chị tôi rất tham vọng, còn tôi thì thích làm bán thời gian hơn.
+    note:
+      vi: "ich hingegen cùng chiếm vị trí 1, động từ arbeite vẫn ở vị trí 2."
+  - type: example
+    target: Zwar war die Stelle gut bezahlt, aber nach der Beförderung hatte er keine Zeit mehr für sein Privatleben.
+    target_lang: de
+    translation:
+      vi: Vị trí đó lương cao thật, nhưng sau khi thăng chức anh ấy không còn thời gian cho đời sống riêng nữa.
+    note:
+      vi: "zwar … aber (B1) cũng nối ý nhượng bộ – đối lập: zwar ở vị trí 1 thì đảo (Zwar war …), aber đứng ở vị trí 0 nên không đảo. keine Zeit mehr = không còn thời gian nữa."
+  - type: common_mistake
+    wrong: Jedoch, die Arbeit ist sehr anstrengend.
+    right: Die Arbeit ist jedoch sehr anstrengend.
+    target_lang: de
+    note:
+      vi: "jedoch không dùng như \"however,\" có dấu phẩy. Đặt nó sau động từ, hoặc ở vị trí 1 kèm đảo: Jedoch ist die Arbeit sehr anstrengend."
+  - type: common_mistake
+    wrong: Dennoch ich bleibe in der Firma.
+    right: Dennoch bleibe ich in der Firma.
+    target_lang: de
+    note:
+      vi: "dennoch là trạng từ chiếm vị trí 1, nên động từ bleibe phải đứng ngay sau, chủ ngữ ich lùi ra sau."
+  - type: common_mistake
+    wrong: Ich bleibe in der Firma, wohingegen das Gehalt niedrig ist.
+    right: Ich bleibe in der Firma, obwohl das Gehalt niedrig ist.
+    target_lang: de
+    note:
+      vi: "Ý \"mặc dù\" (nhượng bộ) dùng obwohl. wohingegen chỉ so sánh hai việc trái ngược nhau (còn …)."
+  - type: common_mistake
+    wrong: Einerseits ich verdiene mehr, andererseits ich habe weniger Zeit.
+    right: Einerseits verdiene ich mehr, andererseits habe ich weniger Zeit.
+    target_lang: de
+    note:
+      vi: "einerseits và andererseits đều chiếm vị trí 1, nên động từ đứng ngay sau từng từ."
+  - type: summary
+    points:
+      - vi: "einerseits … andererseits, dennoch, allerdings, jedoch, hingegen/dagegen: trạng từ → ở vị trí 1 thì động từ đứng ngay sau."
+      - vi: "Không có dấu phẩy sau jedoch/allerdings ở đầu câu."
+      - vi: "Chủ ngữ + hingegen: Ich hingegen arbeite … (động từ vẫn ở vị trí 2)."
+      - vi: "wohingegen + câu phụ (động từ cuối) = còn, trong khi đó; khác obwohl (mặc dù)."
+      - vi: "auch wenn / selbst wenn + câu phụ = dù cho, kể cả khi; đứng đầu → thường đảo, dạng không đảo cũng đúng."
+      - vi: "Từ vựng: der Aufstieg, die Beförderung, befördern, die Führungskraft, der Ehrgeiz, ehrgeizig, die Leistung, leistungsorientiert."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u01l2-mcq-dennoch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u01-g-adversativ-konzessiv
+    prompt:
+      stem: "Câu nào đúng? (Công việc rất căng thẳng. Tuy vậy, tôi vẫn thích nó.)"
+      stem_lang: vi
+      options:
+        - { id: d3a, text: "Die Arbeit ist sehr stressig. Dennoch macht sie mir Spaß.", lang: de }
+        - { id: d7b, text: "Die Arbeit ist sehr stressig. Dennoch sie macht mir Spaß.", lang: de }
+        - { id: d1c, text: "Die Arbeit ist sehr stressig. Dennoch, sie macht mir Spaß.", lang: de }
+        - { id: d5d, text: "Die Arbeit ist sehr stressig, dennoch sie mir Spaß macht.", lang: de }
+    answer:
+      correct_option_id: d3a
+    explanation:
+      vi: "dennoch là trạng từ chiếm vị trí 1, nên động từ macht đứng ngay sau, chủ ngữ sie lùi ra sau. Không đặt dấu phẩy sau dennoch, và dennoch không mở câu phụ nên động từ không đứng cuối."
+    display_answer: Die Arbeit ist sehr stressig. Dennoch macht sie mir Spaß.
+
+  - key: de:exercise:b2u01l2-mcq-wohingegen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-adversativ-konzessiv
+    prompt:
+      stem: "Chọn từ nối đúng (Anh tôi muốn thăng tiến nhanh, còn tôi thì muốn có nhiều thời gian hơn cho gia đình): Mein Bruder möchte schnell aufsteigen, ___ ich mehr Zeit für die Familie haben möchte."
+      stem_lang: vi
+      options:
+        - { id: w2a, text: "wohingegen", lang: de }
+        - { id: w6b, text: "dennoch", lang: de }
+        - { id: w9c, text: "allerdings", lang: de }
+        - { id: w4d, text: "obwohl", lang: de }
+    answer:
+      correct_option_id: w2a
+    explanation:
+      vi: "Vế sau có động từ möchte đứng cuối, nên cần một liên từ mở câu phụ. wohingegen (còn, trong khi đó) so sánh hai người; obwohl cũng mở câu phụ nhưng nghĩa \"mặc dù\" không hợp. dennoch và allerdings là trạng từ, sau chúng động từ phải đứng ngay sau, không đứng cuối."
+    display_answer: wohingegen
+
+  - key: de:exercise:b2u01l2-mcq-auch-wenn
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u01-g-auch-wenn
+    prompt:
+      stem: "\"Auch wenn ich die Beförderung nicht bekomme, bleibe ich in der Firma.\" – Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: u2a, text: "Dù không được thăng chức, tôi vẫn ở lại công ty.", lang: vi }
+        - { id: u6b, text: "Nếu không được thăng chức, tôi sẽ rời công ty.", lang: vi }
+        - { id: u9c, text: "Vì không được thăng chức nên tôi ở lại công ty.", lang: vi }
+        - { id: u4d, text: "Khi được thăng chức, tôi sẽ ở lại công ty.", lang: vi }
+    answer:
+      correct_option_id: u2a
+    explanation:
+      vi: "auch wenn = dù cho, kể cả khi: việc không được thăng chức không làm thay đổi quyết định ở lại. bleibe ich in der Firma = tôi ở lại công ty, không phải rời đi; nicht bekomme = không nhận được."
+    display_answer: Dù không được thăng chức, tôi vẫn ở lại công ty.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u01l2-fill-einerseits
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-adversativ-konzessiv
+    prompt:
+      template: "{{b1}} (ein Wort: auf der einen Seite) verdient man als Führungskraft mehr Geld, {{b2}} (ein Wort: auf der anderen Seite) trägt man mehr Verantwortung. {{b3}} (ein Wort: trotzdem, formeller) möchte ich aufsteigen."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 13 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [Einerseits]
+        b2: [andererseits, anderseits, andrerseits]
+        b3: [Dennoch, Gleichwohl, Nichtsdestotrotz]
+    known_wrong:
+      - answer: Trotzdem
+        feedback_vi: trotzdem đúng nghĩa, nhưng đề yêu cầu từ trang trọng hơn có cùng nghĩa – dennoch.
+        error_tag: word_choice
+    explanation:
+      vi: "einerseits … andererseits = một mặt … mặt khác; cả hai đứng ở vị trí 1 nên động từ (verdient, trägt) theo ngay sau. dennoch là từ trang trọng cùng nghĩa với trotzdem, cũng đứng ở vị trí 1 kèm đảo: Dennoch möchte ich …"
+    display_answer: "Einerseits verdient man als Führungskraft mehr Geld, andererseits trägt man mehr Verantwortung. Dennoch möchte ich aufsteigen."
+
+  - key: de:exercise:b2u01l2-tr-auch-wenn
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-auch-wenn
+    prompt:
+      source_text: "Dù công việc vất vả, tôi không bỏ cuộc. (dùng auch wenn, bắt đầu bằng câu phụ)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Auch wenn die Arbeit anstrengend ist, gebe ich nicht auf.
+        - Auch wenn die Arbeit hart ist, gebe ich nicht auf.
+        - Auch wenn die Arbeit schwer ist, gebe ich nicht auf.
+        - Auch wenn die Arbeit anstrengend ist, ich gebe nicht auf.
+        - Auch wenn die Arbeit hart ist, ich gebe nicht auf.
+        - Auch wenn die Arbeit schwer ist, ich gebe nicht auf.
+        - Auch wenn die Arbeit anstrengend ist, gebe ich trotzdem nicht auf.
+        - Auch wenn die Arbeit hart ist, gebe ich trotzdem nicht auf.
+        - Auch wenn die Arbeit schwer ist, gebe ich trotzdem nicht auf.
+        - Auch wenn die Arbeit anstrengend ist, ich gebe trotzdem nicht auf.
+    known_wrong:
+      - answer: Auch wenn die Arbeit ist anstrengend, gebe ich nicht auf.
+        feedback_vi: Trong câu phụ auch wenn, động từ chia ist đứng cuối – Auch wenn die Arbeit anstrengend ist, …
+        error_tag: verb_position
+      - answer: Auch wenn die Arbeit anstrengend ist, ich nicht aufgebe.
+        feedback_vi: Câu chính không có động từ ở cuối – gebe ich nicht auf (hoặc ich gebe nicht auf).
+        error_tag: verb_position
+      - answer: Auch wenn die Arbeit anstrengend ist, gebe ich nicht.
+        feedback_vi: aufgeben là động từ tách, tiền tố auf phải đứng cuối câu – gebe ich nicht auf.
+        error_tag: separable_prefix
+    explanation:
+      vi: "auch wenn mở câu phụ, động từ ist đứng cuối. Câu chính: aufgeben là động từ tách (gebe … auf). Sau câu auch wenn, cách thông dụng là đảo (gebe ich nicht auf), nhưng dạng không đảo (ich gebe nicht auf) cũng chuẩn."
+    display_answer: Auch wenn die Arbeit anstrengend ist, gebe ich nicht auf.
+
+  - key: de:exercise:b2u01l2-tr-allerdings
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-gehalt
+    prompt:
+      source_text: "Lương thì cao, tuy nhiên tôi thường phải làm thêm giờ. (dùng allerdings)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das Gehalt ist hoch, allerdings muss ich oft Überstunden machen.
+        - Das Gehalt ist gut, allerdings muss ich oft Überstunden machen.
+        - Das Gehalt ist hoch, allerdings muss ich häufig Überstunden machen.
+        - Das Gehalt ist gut, allerdings muss ich häufig Überstunden machen.
+        - Das Gehalt ist hoch, ich muss allerdings oft Überstunden machen.
+        - Das Gehalt ist gut, ich muss allerdings oft Überstunden machen.
+        - Das Gehalt ist hoch, ich muss allerdings häufig Überstunden machen.
+        - Das Gehalt ist gut, ich muss allerdings häufig Überstunden machen.
+        - Der Lohn ist hoch, allerdings muss ich oft Überstunden machen.
+        - Der Lohn ist gut, allerdings muss ich oft Überstunden machen.
+    known_wrong:
+      - answer: Das Gehalt ist hoch, allerdings ich muss oft Überstunden machen.
+        feedback_vi: allerdings chiếm vị trí 1 của vế sau, nên muss đứng ngay sau – allerdings muss ich …
+        error_tag: verb_position
+      - answer: Das Gehalt ist hoch, allerdings ich oft Überstunden machen muss.
+        feedback_vi: allerdings là trạng từ, không mở câu phụ; động từ không đứng cuối – allerdings muss ich oft Überstunden machen.
+        error_tag: verb_position
+    explanation:
+      vi: "allerdings là trạng từ: đứng ngay sau dấu phẩy thì động từ muss theo ngay sau (allerdings muss ich …), hoặc đặt nó sau động từ (ich muss allerdings …). Làm thêm giờ = Überstunden machen; modal muss ở vị trí 2, nguyên thể machen ở cuối."
+    display_answer: Das Gehalt ist hoch, allerdings muss ich oft Überstunden machen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u01l2-wb-wohingegen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-aufsteigen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Lan muốn thăng tiến nhanh, còn Minh thì muốn có nhiều thời gian rảnh hơn.\""
+      tokens:
+        - { id: h-mehr, text: mehr }
+        - { id: h-moechte1, text: möchte }
+        - { id: h-wohingegen, text: wohingegen }
+        - { id: h-aufsteigen, text: aufsteigen }
+        - { id: h-minh, text: Minh }
+        - { id: h-lan, text: Lan }
+        - { id: h-haben, text: haben }
+        - { id: h-komma, text: "," }
+        - { id: h-freizeit, text: Freizeit }
+        - { id: h-schnell, text: schnell }
+        - { id: h-moechte2, text: möchte }
+    answer:
+      orders:
+        - [h-lan, h-moechte1, h-schnell, h-aufsteigen, h-komma, h-wohingegen, h-minh, h-mehr, h-freizeit, h-haben, h-moechte2]
+        - [h-lan, h-moechte2, h-schnell, h-aufsteigen, h-komma, h-wohingegen, h-minh, h-mehr, h-freizeit, h-haben, h-moechte1]
+    explanation:
+      vi: "Câu chính: möchte ở vị trí 2, nguyên thể aufsteigen ở cuối. wohingegen mở câu phụ, nên trong vế sau động từ chia möchte đứng sau cùng, sau nguyên thể haben."
+    display_answer: Lan möchte schnell aufsteigen, wohingegen Minh mehr Freizeit haben möchte.
+
+  - key: de:exercise:b2u01l2-tr-befoerderung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u01-befoerderung
+    prompt:
+      source_text: Einerseits bringt eine Beförderung mehr Geld und Ansehen, andererseits bleibt oft weniger Zeit für das Privatleben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Một mặt, thăng chức mang lại nhiều tiền và uy tín hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+        - Một mặt, thăng chức mang lại nhiều tiền hơn và uy tín hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+        - Một mặt, thăng chức đem lại nhiều tiền và uy tín hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+        - Một mặt, việc thăng chức mang lại nhiều tiền và uy tín hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+        - Một mặt, thăng chức mang lại nhiều tiền và uy tín hơn, mặt khác thường còn ít thời gian hơn cho cuộc sống riêng.
+        - Một mặt, thăng chức mang lại nhiều tiền và uy tín hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng tư.
+        - Một mặt, thăng chức mang lại nhiều tiền và danh tiếng hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+        - Một mặt, được thăng chức thì có nhiều tiền và uy tín hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+        - Một mặt, thăng chức mang lại nhiều tiền và uy tín hơn, nhưng mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+        - Một mặt, thăng chức mang lại nhiều tiền và uy tín hơn, mặt khác thường ít thời gian hơn cho đời sống riêng.
+        - Một mặt, thăng chức mang lại nhiều tiền và uy tín hơn, mặt khác thời gian cho đời sống riêng thường ít đi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì thăng chức mang lại nhiều tiền và uy tín hơn, nên thường còn ít thời gian hơn cho đời sống riêng.
+        feedback_vi: einerseits … andererseits = một mặt … mặt khác (cân nhắc hai phía), không phải quan hệ nguyên nhân.
+        error_tag: meaning
+    explanation:
+      vi: "einerseits … andererseits = một mặt … mặt khác. bringt … mehr Geld und Ansehen = mang lại nhiều tiền và uy tín hơn; bleibt oft weniger Zeit für das Privatleben = thường còn ít thời gian hơn cho đời sống riêng."
+    display_answer: Một mặt, thăng chức mang lại nhiều tiền và uy tín hơn, mặt khác thường còn ít thời gian hơn cho đời sống riêng.
+
+  - key: de:exercise:b2u01l2-mcq-forum
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-leistungsdruck
+    prompt:
+      stem: "Bạn viết một đoạn lập luận hai chiều cho diễn đàn. Câu nào đúng ngữ pháp và dấu câu?"
+      stem_lang: vi
+      options:
+        - { id: f3a, text: "Einerseits ist ein Aufstieg attraktiv, andererseits bedeutet er mehr Leistungsdruck.", lang: de }
+        - { id: f7b, text: "Einerseits ein Aufstieg ist attraktiv, andererseits er bedeutet mehr Leistungsdruck.", lang: de }
+        - { id: f1c, text: "Einerseits ist ein Aufstieg attraktiv, andererseits er bedeutet mehr Leistungsdruck.", lang: de }
+        - { id: f5d, text: "Jedoch, ein Aufstieg ist attraktiv, er bedeutet mehr Leistungsdruck.", lang: de }
+    answer:
+      correct_option_id: f3a
+    explanation:
+      vi: "einerseits và andererseits là trạng từ chiếm vị trí 1, nên động từ (ist, bedeutet) đứng ngay sau ở cả hai vế. jedoch không đi kèm dấu phẩy như \"however,\" và cũng không diễn đạt được ý cân nhắc hai phía như einerseits … andererseits."
+    display_answer: Einerseits ist ein Aufstieg attraktiv, andererseits bedeutet er mehr Leistungsdruck.

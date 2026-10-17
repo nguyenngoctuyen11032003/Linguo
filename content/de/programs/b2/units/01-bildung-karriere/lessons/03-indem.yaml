@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u01-indem
+order_index: 3
+level: b2
+title:
+  vi: Bằng cách… – indem, dadurch dass; folglich (Indem man lernt, …)
+objectives:
+  - vi: Nói về cách thức, phương tiện bằng indem, dadurch, dass … và durch + Akkusativ.
+  - vi: Nối hệ quả, kết luận trang trọng bằng folglich, infolgedessen, somit, demnach và phân biệt với sodass.
+  - vi: Đọc và nói về cách phát triển năng lực, học tập suốt đời.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u01-einerseits-andererseits]
+items:
+  - item: de:item:b2u01-g-indem
+  - item: de:item:b2u01-g-konsekutiv-formal
+  - item: de:item:b2u01-kompetenz
+  - item: de:item:b2u01-erwerben
+  - item: de:item:b2u01-sich-aneignen
+  - item: de:item:b2u01-faehigkeit
+  - item: de:item:b2u01-foerdern
+  - item: de:item:b2u01-foerderung
+  - item: de:item:b2u01-vermitteln
+  - item: de:item:b2u01-lebenslanges-lernen
+  - item: de:item:b2u01-fertigkeit
+  - item: de:item:b2u01-beherrschen
+  - item: de:item:b2u01-vertiefen
+  - item: de:item:b2u01-fortbildung
+  - item: de:item:b2u01-schulung
+  - item: de:item:b2u01-lernerfolg
+  - item: de:item:b2u01-eigeninitiative
+  - item: de:item:b2u01-selbststudium
+  - item: de:item:b2u01-erlernen
+  - item: de:item:b2u01-ausbauen
+  - item: de:item:a2u03-g-nebensatz-verbletzt
+    role: reuse
+  - item: de:item:a2u06-g-deshalb
+    role: reuse
+  - item: de:item:b2u01-g-nominalisierung
+    role: reuse
+  - item: de:item:a2u03-kenntnisse
+    role: reuse
+  - item: de:item:a2u03-praktikum
+    role: reuse
+  - item: de:item:b1u06-g-sodass
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được mình phát triển năng lực bằng cách nào và kết quả ra sao, ví dụ: \"Ich habe mir die Grundlagen angeeignet, indem ich jeden Tag gelernt habe. Folglich konnte ich die Prüfung bestehen.\""
+  - type: explain
+    text:
+      vi: "indem (bằng cách) trả lời câu hỏi Wie? hoặc Wodurch? (bằng cách nào, nhờ đâu) và mở đầu câu phụ, nên động từ chia đứng cuối: Ich lerne neue Wörter, indem ich jeden Tag lese. Câu indem có thể đứng trước hoặc sau câu chính; đứng trước thì động từ câu chính đứng ngay sau dấu phẩy: Indem ich jeden Tag lese, lerne ich neue Wörter."
+  - type: explain
+    text:
+      vi: "dadurch, dass … cùng nghĩa với indem nhưng tách làm hai phần: dadurch nằm trong câu chính, dass mở câu phụ: Man lernt eine Sprache dadurch, dass man sie spricht. Câu indem thường có cùng chủ ngữ với câu chính; khi chủ ngữ khác nhau, dadurch, dass thường tự nhiên hơn: Die Firma spart Kosten dadurch, dass die Schulungen online stattfinden."
+  - type: explain
+    text:
+      vi: "Trong Nominalstil, câu indem thành durch + Akkusativ: indem man regelmäßig übt → durch regelmäßiges Üben. durch chỉ là giới từ, không mở câu phụ, giống như trong tiếng Việt \"nhờ\" đi với danh từ còn \"bằng cách\" đi với cả một hành động."
+  - type: explain
+    text:
+      vi: "folglich, infolgedessen, somit (vì vậy, do đó) và demnach (theo đó, như vậy) là trạng từ nối câu, trang trọng hơn deshalb: ở vị trí 1 thì động từ chia đứng ngay sau (Folglich brauchen wir mehr Fachkräfte.), hoặc đứng giữa câu (Wir brauchen folglich mehr Fachkräfte.). sodass (B1) là liên từ nên động từ đứng cuối: …, sodass wir mehr Fachkräfte brauchen."
+  - type: explain
+    text:
+      vi: "Sắc thái: folglich và somit hay dùng cho kết luận logic, infolgedessen nhấn mạnh hậu quả thực tế của một sự việc, còn demnach là \"theo đó\", rút ra từ thông tin vừa nêu. Trong bài viết, mỗi đoạn chỉ cần một hai từ như vậy để văn mạch lạc mà không nặng nề."
+  - type: deep_explain
+    text:
+      vi: "indem và in dem khác nhau hoàn toàn: indem (viết liền) = bằng cách; in dem (viết rời) = trong cái đó (in dem Kurs, hoặc đại từ quan hệ: der Kurs, in dem ich viel gelernt habe). dadurch còn là trạng từ đứng một mình nghĩa là \"nhờ vậy, vì thế\": Ich habe ein Praktikum gemacht. Dadurch habe ich viel gelernt. Trong văn nói, người Đức hay thay indem bằng câu có dadurch hoặc bằng durch + danh từ. Đừng dùng somit, folglich với dấu phẩy ngay sau như \"therefore,\" trong tiếng Anh."
+  - type: example
+    target: Ich habe mir die Grundlagen angeeignet, indem ich jeden Tag eine Stunde gelernt habe.
+    target_lang: de
+    translation:
+      vi: Tôi đã tự nắm được kiến thức cơ bản bằng cách mỗi ngày học một tiếng.
+    note:
+      vi: "indem mở câu phụ: trợ động từ habe đứng cuối. sich etwas aneignen có đại từ phản thân ở Dativ (mir)."
+  - type: example
+    target: Indem man an Fortbildungen teilnimmt, bleibt man im Beruf auf dem neuesten Stand.
+    target_lang: de
+    translation:
+      vi: Bằng cách tham gia các khoá bồi dưỡng, bạn luôn cập nhật trong nghề.
+    note:
+      vi: "Câu indem đứng đầu là vị trí 1, nên bleibt đứng ngay sau dấu phẩy. teilnehmen là động từ tách, nhưng trong câu phụ viết liền và đứng cuối: teilnimmt."
+  - type: example
+    target: Viele Kompetenzen erwirbt man dadurch, dass man ein Praktikum macht.
+    target_lang: de
+    translation:
+      vi: Nhiều năng lực có được là nhờ đi thực tập.
+    note:
+      vi: "dadurch nằm trong câu chính, câu dass đứng sau với động từ macht ở cuối. erwerben đổi e → i: man erwirbt."
+  - type: example
+    target: Durch regelmäßiges Selbststudium hat sie ihre Kenntnisse vertieft.
+    target_lang: de
+    translation:
+      vi: Nhờ tự học đều đặn, cô ấy đã đào sâu kiến thức của mình.
+    note:
+      vi: "Nominalstil của: Indem sie regelmäßig selbst studiert hat, … → durch + Akkusativ, trạng từ regelmäßig thành tính từ regelmäßiges."
+  - type: example
+    target: Die Firma fördert Weiterbildung; folglich sind die Mitarbeiter gut qualifiziert.
+    target_lang: de
+    translation:
+      vi: Công ty hỗ trợ việc học nâng cao; do đó nhân viên có trình độ tốt.
+    note:
+      vi: "folglich ở vị trí 1 → sind đứng ngay sau. Văn nói thường dùng deshalb: …, deshalb sind die Mitarbeiter gut qualifiziert."
+  - type: example
+    target: Der Kurs vermittelt nur Grundlagen. Demnach ist er vor allem für Anfänger gedacht.
+    target_lang: de
+    translation:
+      vi: Khoá học chỉ dạy kiến thức cơ bản. Như vậy, nó chủ yếu dành cho người mới bắt đầu.
+    note:
+      vi: "demnach = theo đó, như vậy (kết luận rút ra từ câu trước); ở vị trí 1 nên ist đứng ngay sau."
+  - type: common_mistake
+    wrong: Durch ich jeden Tag lese, lerne ich viele Wörter.
+    right: Indem ich jeden Tag lese, lerne ich viele Wörter.
+    target_lang: de
+    note:
+      vi: "durch là giới từ, chỉ đi với danh từ (durch tägliches Lesen). Muốn nối cả một câu, dùng indem."
+  - type: common_mistake
+    wrong: Ich lerne viel, indem ich lese jeden Tag.
+    right: Ich lerne viel, indem ich jeden Tag lese.
+    target_lang: de
+    note:
+      vi: "indem mở câu phụ, nên động từ chia lese đứng cuối."
+  - type: common_mistake
+    wrong: Folglich, wir brauchen mehr Fachkräfte.
+    right: Folglich brauchen wir mehr Fachkräfte.
+    target_lang: de
+    note:
+      vi: "folglich không dùng như \"therefore,\" có dấu phẩy: nó chiếm vị trí 1, động từ đứng ngay sau."
+  - type: common_mistake
+    wrong: Er hatte sehr gute Noten, sodass bekam er ein Stipendium.
+    right: Er hatte sehr gute Noten, sodass er ein Stipendium bekam.
+    target_lang: de
+    note:
+      vi: "sodass là liên từ mở câu phụ: động từ đứng cuối. Nếu muốn đảo, dùng trạng từ: …, folglich bekam er ein Stipendium."
+  - type: common_mistake
+    wrong: Man lernt am besten, in dem man viel übt.
+    right: Man lernt am besten, indem man viel übt.
+    target_lang: de
+    note:
+      vi: "\"Bằng cách\" là indem, viết liền. in dem (viết rời) nghĩa là \"trong cái đó\"."
+  - type: summary
+    points:
+      - vi: "indem + câu phụ (động từ cuối) = bằng cách; trả lời Wie? / Wodurch?"
+      - vi: "dadurch, dass …: dadurch trong câu chính, dass mở câu phụ; hợp khi chủ ngữ khác nhau."
+      - vi: "Nominalstil: durch + Akkusativ (durch regelmäßiges Üben)."
+      - vi: "folglich, infolgedessen, somit, demnach: trạng từ → ở vị trí 1 thì động từ ngay sau, không có dấu phẩy sau chúng."
+      - vi: "sodass: liên từ → động từ cuối câu."
+      - vi: "Từ vựng: die Kompetenz, erwerben, sich etwas aneignen, die Fähigkeit, fördern, die Förderung, vermitteln, lebenslanges Lernen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u01l3-mcq-indem-bedeutung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u01-g-indem
+    prompt:
+      stem: "\"Sie hat ihr Deutsch verbessert, indem sie jeden Tag Nachrichten gehört hat.\" – indem ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: i3a, text: "bằng cách", lang: vi }
+        - { id: i7b, text: "trong khi", lang: vi }
+        - { id: i1c, text: "mặc dù", lang: vi }
+        - { id: i5d, text: "để", lang: vi }
+    answer:
+      correct_option_id: i3a
+    explanation:
+      vi: "indem nói về cách thức: cô ấy cải thiện tiếng Đức bằng cách nghe tin tức mỗi ngày. \"Trong khi\" là während, \"mặc dù\" là obwohl, \"để\" là um … zu hoặc damit."
+    display_answer: bằng cách
+
+  - key: de:exercise:b2u01l3-mcq-infolgedessen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-konsekutiv-formal
+    prompt:
+      stem: "Chọn từ làm câu đúng ngữ pháp: Die Kurse waren voll, ___ mussten wir auf das nächste Semester warten."
+      stem_lang: vi
+      options:
+        - { id: k2a, text: "infolgedessen", lang: de }
+        - { id: k6b, text: "sodass", lang: de }
+        - { id: k9c, text: "indem", lang: de }
+        - { id: k4d, text: "obwohl", lang: de }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "Sau chỗ trống, động từ mussten đứng ngay (đảo), nên cần một trạng từ chiếm vị trí 1: infolgedessen (do đó). sodass, indem, obwohl là liên từ mở câu phụ, sau chúng động từ phải đứng cuối; indem và obwohl còn sai nghĩa."
+    display_answer: infolgedessen
+
+  - key: de:exercise:b2u01l3-mcq-sodass
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-konsekutiv-formal
+    prompt:
+      stem: "Chọn từ làm câu đúng ngữ pháp: Die Kurse waren voll, ___ wir auf das nächste Semester warten mussten."
+      stem_lang: vi
+      options:
+        - { id: s3a, text: "sodass", lang: de }
+        - { id: s7b, text: "folglich", lang: de }
+        - { id: s1c, text: "somit", lang: de }
+        - { id: s5d, text: "demnach", lang: de }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "Ở vế sau, động từ mussten đứng cuối, nên cần liên từ mở câu phụ: sodass (đến nỗi, nên). folglich, somit, demnach là trạng từ: sau chúng động từ phải đứng ngay sau (folglich mussten wir …)."
+    display_answer: sodass
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u01l3-fill-indem-durch
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-indem
+    prompt:
+      template: "Man kann seine Sprachkenntnisse verbessern, indem man jeden Tag Nachrichten {{b1}} (hören). {{b2}} regelmäßiges Üben lernt man schneller. Viele erwerben Kompetenzen dadurch, {{b3}} sie ein Praktikum machen."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [hört]
+        b2: [Durch]
+        b3: [dass]
+    known_wrong:
+      - answer: hören
+        feedback_vi: Động từ cuối câu indem phải chia theo chủ ngữ man – hört.
+        error_tag: verb_form
+      - answer: Indem
+        feedback_vi: Trước một cụm danh từ (regelmäßiges Üben) cần giới từ durch + Akkusativ; indem chỉ mở câu phụ có động từ.
+        error_tag: preposition
+      - answer: das
+        feedback_vi: Liên từ mở câu phụ viết hai s – dadurch, dass …
+        error_tag: spelling
+    explanation:
+      vi: "Trong câu indem, động từ chia đứng cuối: man … hört. Trước danh từ dùng durch + Akkusativ (durch regelmäßiges Üben – das Üben, giống trung). dadurch đi cặp với câu dass."
+    display_answer: "Man kann seine Sprachkenntnisse verbessern, indem man jeden Tag Nachrichten hört. Durch regelmäßiges Üben lernt man schneller. Viele erwerben Kompetenzen dadurch, dass sie ein Praktikum machen."
+
+  - key: de:exercise:b2u01l3-tr-indem-lesen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-indem
+    prompt:
+      source_text: "Tôi học từ mới bằng cách đọc sách mỗi ngày. (dùng indem)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich lerne neue Wörter, indem ich jeden Tag Bücher lese.
+        - Ich lerne neue Wörter, indem ich täglich Bücher lese.
+        - Indem ich jeden Tag Bücher lese, lerne ich neue Wörter.
+        - Indem ich täglich Bücher lese, lerne ich neue Wörter.
+        - Ich lerne neue Vokabeln, indem ich jeden Tag Bücher lese.
+        - Ich lerne neue Vokabeln, indem ich täglich Bücher lese.
+        - Indem ich jeden Tag Bücher lese, lerne ich neue Vokabeln.
+        - Indem ich täglich Bücher lese, lerne ich neue Vokabeln.
+        - Ich lerne neue Wörter, indem ich jeden Tag ein Buch lese.
+        - Indem ich jeden Tag ein Buch lese, lerne ich neue Wörter.
+    known_wrong:
+      - answer: Ich lerne neue Wörter, indem ich lese jeden Tag Bücher.
+        feedback_vi: indem mở câu phụ, nên động từ lese đứng cuối – indem ich jeden Tag Bücher lese.
+        error_tag: verb_position
+      - answer: Ich lerne neue Wörter, durch ich jeden Tag Bücher lese.
+        feedback_vi: "durch là giới từ, không mở câu phụ; \"bằng cách\" + một hành động là indem."
+        error_tag: preposition
+      - answer: Indem ich jeden Tag Bücher lese, ich lerne neue Wörter.
+        feedback_vi: Câu indem đứng đầu là vị trí 1, nên lerne đứng ngay sau dấu phẩy – …, lerne ich neue Wörter.
+        error_tag: verb_position
+    explanation:
+      vi: "indem = bằng cách, mở câu phụ: động từ lese đứng cuối. Nếu câu indem đứng đầu, động từ câu chính lerne đứng ngay sau dấu phẩy."
+    display_answer: Ich lerne neue Wörter, indem ich jeden Tag Bücher lese.
+
+  - key: de:exercise:b2u01l3-fill-partizip
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-erwerben
+    prompt:
+      template: "Im Praktikum habe ich wichtige Kompetenzen {{b1}} (erwerben). Die Grundlagen habe ich mir selbst {{b2}} (aneignen). Der Kurs hat mir viel Wissen {{b3}} (vermitteln)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [erworben]
+        b2: [angeeignet]
+        b3: [vermittelt]
+    known_wrong:
+      - answer: geerworben
+        feedback_vi: Động từ có tiền tố er- không thêm ge- ở Partizip II – erworben.
+        error_tag: participle_form
+      - answer: erwerbt
+        feedback_vi: erwerben là động từ mạnh, Partizip II có -en và đổi nguyên âm – erworben.
+        error_tag: participle_form
+      - answer: angeignet
+        feedback_vi: "aneignen là động từ tách: an + ge + eignet – angeeignet (hai chữ e)."
+        error_tag: participle_form
+      - answer: gevermittelt
+        feedback_vi: Động từ có tiền tố ver- không thêm ge- – vermittelt.
+        error_tag: participle_form
+    explanation:
+      vi: "erwerben là động từ mạnh có tiền tố er-: erworben (không ge-). aneignen là động từ tách: ge chen giữa an và eignet → angeeignet. vermitteln có tiền tố ver-: vermittelt (không ge-)."
+    display_answer: "Im Praktikum habe ich wichtige Kompetenzen erworben. Die Grundlagen habe ich mir selbst angeeignet. Der Kurs hat mir viel Wissen vermittelt."
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u01l3-wb-folglich
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-konsekutiv-formal
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Công ty hỗ trợ việc học nâng cao, do đó nhân viên có trình độ tốt.\""
+      tokens:
+        - { id: q-sind, text: sind }
+        - { id: q-firma, text: Firma }
+        - { id: q-gut, text: gut }
+        - { id: q-folglich, text: folglich }
+        - { id: q-die-klein, text: die }
+        - { id: q-weiterbildung, text: Weiterbildung }
+        - { id: q-qualifiziert, text: qualifiziert }
+        - { id: q-die-gross, text: Die }
+        - { id: q-mitarbeiter, text: Mitarbeiter }
+        - { id: q-komma, text: "," }
+        - { id: q-foerdert, text: fördert }
+    answer:
+      orders:
+        - [q-die-gross, q-firma, q-foerdert, q-weiterbildung, q-komma, q-folglich, q-sind, q-die-klein, q-mitarbeiter, q-gut, q-qualifiziert]
+        - [q-die-gross, q-firma, q-foerdert, q-weiterbildung, q-komma, q-die-klein, q-mitarbeiter, q-sind, q-folglich, q-gut, q-qualifiziert]
+    explanation:
+      vi: "folglich là trạng từ: đứng ngay sau dấu phẩy thì động từ sind theo ngay sau (folglich sind die Mitarbeiter …); cũng có thể để chủ ngữ đầu vế và đặt folglich sau động từ (die Mitarbeiter sind folglich …)."
+    display_answer: Die Firma fördert Weiterbildung, folglich sind die Mitarbeiter gut qualifiziert.
+
+  - key: de:exercise:b2u01l3-wb-dadurch-dass
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-indem
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Người ta học một ngôn ngữ bằng cách nói ngôn ngữ đó.\""
+      tokens:
+        - { id: z-spricht, text: spricht }
+        - { id: z-dass, text: dass }
+        - { id: z-sprache, text: Sprache }
+        - { id: z-man-gross, text: Man }
+        - { id: z-dadurch, text: dadurch }
+        - { id: z-sie, text: sie }
+        - { id: z-komma, text: "," }
+        - { id: z-eine, text: eine }
+        - { id: z-man-klein, text: man }
+        - { id: z-lernt, text: lernt }
+    answer:
+      orders:
+        - [z-man-gross, z-lernt, z-eine, z-sprache, z-dadurch, z-komma, z-dass, z-man-klein, z-sie, z-spricht]
+        - [z-man-gross, z-lernt, z-dadurch, z-eine, z-sprache, z-komma, z-dass, z-man-klein, z-sie, z-spricht]
+    explanation:
+      vi: "dadurch nằm trong câu chính (sau tân ngữ hoặc ngay sau động từ lernt), câu dass đứng sau dấu phẩy với động từ spricht ở cuối. sie thay cho eine Sprache (giống cái)."
+    display_answer: Man lernt eine Sprache dadurch, dass man sie spricht.
+
+  - key: de:exercise:b2u01l3-tr-lebenslang
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u01-lebenslanges-lernen
+    prompt:
+      source_text: Durch lebenslanges Lernen bleibt man auf dem Arbeitsmarkt gefragt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhờ học tập suốt đời, người ta luôn được săn đón trên thị trường lao động.
+        - Nhờ học tập suốt đời, người ta vẫn được săn đón trên thị trường lao động.
+        - Nhờ học tập suốt đời, bạn luôn được săn đón trên thị trường lao động.
+        - Nhờ học tập suốt đời, bạn vẫn được săn đón trên thị trường lao động.
+        - Nhờ học suốt đời, người ta luôn được săn đón trên thị trường lao động.
+        - Bằng cách học tập suốt đời, người ta luôn được săn đón trên thị trường lao động.
+        - Bằng cách học tập suốt đời, người ta vẫn được săn đón trên thị trường lao động.
+        - Nhờ học tập suốt đời, người ta luôn được ưa chuộng trên thị trường lao động.
+        - Nhờ học tập suốt đời, người ta vẫn được cần đến trên thị trường lao động.
+        - Học tập suốt đời giúp người ta luôn được săn đón trên thị trường lao động.
+        - Học tập suốt đời giúp bạn luôn được săn đón trên thị trường lao động.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mặc dù học tập suốt đời, người ta vẫn được săn đón trên thị trường lao động.
+        feedback_vi: "durch = nhờ, bằng cách (phương tiện), không phải \"mặc dù\" (trotz)."
+        error_tag: meaning
+    explanation:
+      vi: "durch + Akkusativ chỉ phương tiện: nhờ, bằng cách. lebenslanges Lernen = học tập suốt đời; bleibt … gefragt = vẫn/luôn được săn đón (gefragt = được nhiều người cần)."
+    display_answer: Nhờ học tập suốt đời, người ta luôn được săn đón trên thị trường lao động.

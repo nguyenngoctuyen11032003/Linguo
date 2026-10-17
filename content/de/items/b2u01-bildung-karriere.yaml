@@ -1,0 +1,1727 @@
+# Học liệu unit B2U01 "Giáo dục và sự nghiệp" (Bildung und Karriere), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U01L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên nhóm item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Cơ hội học vấn – danh từ hoá =================
+  - key: de:item:b2u01-g-nominalisierung
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Nominalstil ↔ Verbalstil: weil → wegen · obwohl → trotz · nachdem → nach · bevor → vor · wenn → bei · um … zu → zum/zur"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nominalstil (văn phong danh từ) gói cả một câu phụ thành một cụm \"giới từ + danh từ\", rất hay gặp trong văn bản hành chính, báo chí và học thuật. Liên từ đổi thành giới từ: weil → wegen/aufgrund (+ Gen), obwohl → trotz (+ Gen), während → während (+ Gen), nachdem → nach (+ Dat), bevor → vor (+ Dat), wenn → bei (+ Dat), um … zu → zum/zur (+ Dat). Động từ thành danh từ (-ung, nguyên thể viết hoa hoặc dạng gốc như abschließen → der Abschluss), chủ ngữ hay tân ngữ thành Genitiv (hoặc von + Dativ), trạng từ thành tính từ."
+      examples:
+        - target: "Nachdem sie das Studium abgeschlossen hatte, zog sie nach München. → Nach Abschluss des Studiums zog sie nach München."
+          translation:
+            vi: Sau khi học xong đại học, cô ấy chuyển đến München.
+        - target: "Weil Fachkräfte fehlen, suchen viele Firmen Mitarbeiter im Ausland. → Wegen des Fachkräftemangels suchen viele Firmen Mitarbeiter im Ausland."
+          translation:
+            vi: Vì thiếu lao động có chuyên môn, nhiều công ty tìm nhân viên ở nước ngoài.
+        - target: "Wenn man sich bewirbt, braucht man einen Lebenslauf. → Bei der Bewerbung braucht man einen Lebenslauf."
+          translation:
+            vi: Khi nộp đơn xin việc, bạn cần một bản lý lịch.
+      confusion:
+        vi: "Khi đổi động từ thành danh từ, trạng từ phải thành tính từ có đuôi: regelmäßig lernen → das regelmäßige Lernen, schnell arbeiten → schnelles Arbeiten. Giới từ quyết định cách: wegen/trotz + Genitiv (wegen des Gehalts), nach/vor/bei + Dativ (nach dem Studium)."
+
+  - key: de:item:b2u01-g-genitivattribut
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Genitivattribut: die Anerkennung ausländischer Abschlüsse · nach Abschluss des Studiums · Deutschlands Hochschulen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Một danh từ có thể được bổ nghĩa bằng một danh từ thứ hai ở Genitiv đứng ngay sau nó, giống \"của\" trong tiếng Việt nhưng không cần từ nối: die Anerkennung des Abschlusses (sự công nhận tấm bằng). Các Genitiv có thể nối thành chuỗi (die Anerkennung der Abschlüsse ausländischer Fachkräfte), nhưng quá hai tầng thì khó đọc. Danh từ số nhiều không có mạo từ cần tính từ mang đuôi -er (ausländischer Abschlüsse), nếu không có tính từ thì dùng von + Dativ (die Anerkennung von Abschlüssen); tên riêng thường đứng trước: Deutschlands Hochschulen, Annas Zeugnis."
+      examples:
+        - target: Die Anerkennung ausländischer Abschlüsse kann mehrere Monate dauern.
+          translation:
+            vi: Việc công nhận bằng cấp nước ngoài có thể mất nhiều tháng.
+        - target: Nach Abschluss des Studiums beginnt für viele die Stellensuche.
+          translation:
+            vi: Học xong đại học, với nhiều người là bắt đầu cuộc tìm việc.
+        - target: Deutschlands Hochschulen bieten auch englischsprachige Studiengänge an.
+          translation:
+            vi: Các trường đại học của Đức cũng có những ngành học bằng tiếng Anh.
+      confusion:
+        vi: "Phần Genitiv đứng sau danh từ chính (die Ausbildung meines Bruders), ngược với tiếng Anh hay đặt người sở hữu trước. Tên riêng đứng trước viết là Annas, Deutschlands (không có dấu '); danh từ giống đực/trung số ít có đuôi -s/-es: des Studiums, des Abschlusses."
+
+  - key: de:item:b2u01-bildung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bildung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giáo dục, học vấn; sự hình thành
+      examples:
+        - target: Gute Bildung eröffnet viele Chancen.
+          translation:
+            vi: Học vấn tốt mở ra nhiều cơ hội.
+        - target: In Deutschland ist die Schulbildung weitgehend Sache der Bundesländer.
+          translation:
+            vi: Ở Đức, giáo dục phổ thông phần lớn do các bang tự quyết.
+      confusion:
+        vi: "die Bildung là học vấn, giáo dục nói chung; die Ausbildung là đào tạo nghề; die Erziehung là sự dạy dỗ (trong gia đình). Bildung còn nghĩa là sự hình thành: die Bildung einer Regierung."
+
+  - key: de:item:b2u01-chancengleichheit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Chancengleichheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự bình đẳng về cơ hội
+      examples:
+        - target: Chancengleichheit in der Bildung ist ein wichtiges Ziel.
+          translation:
+            vi: Bình đẳng cơ hội trong giáo dục là một mục tiêu quan trọng.
+        - target: Stipendien können zu mehr Chancengleichheit beitragen.
+          translation:
+            vi: Học bổng có thể góp phần tạo thêm bình đẳng về cơ hội.
+      pronunciation_note:
+        vi: "Chance là từ gốc Pháp: Ch đọc như sch. Trọng âm ở âm tiết đầu: CHAN-cen-gleich-heit."
+      confusion:
+        vi: "Danh từ ghép lấy giống của từ cuối: die Gleichheit → die Chancengleichheit. Đuôi -heit luôn là giống cái."
+
+  - key: de:item:b2u01-bildungsweg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Bildungsweg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con đường học vấn, quá trình học tập
+      examples:
+        - target: Über den zweiten Bildungsweg kann man das Abitur auch als Erwachsener nachholen.
+          translation:
+            vi: Qua hệ giáo dục dành cho người đi làm (zweiter Bildungsweg), người lớn cũng có thể học bù để lấy bằng Abitur.
+        - target: Ihr Bildungsweg führte von der Realschule über eine Ausbildung zum Studium.
+          translation:
+            vi: Con đường học vấn của cô ấy đi từ trường Realschule, qua học nghề, rồi lên đại học.
+      confusion:
+        vi: "der zweite Bildungsweg là cách lấy bằng phổ thông hoặc vào đại học khi đã đi làm. Chữ s nối giữa hai phần từ ghép: Bildung + s + Weg."
+
+  - key: de:item:b2u01-qualifikation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Qualifikation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: trình độ chuyên môn, bằng cấp, năng lực đủ tiêu chuẩn
+      examples:
+        - target: Welche Qualifikationen bringen Sie mit?
+          translation:
+            vi: Anh/chị có những trình độ, bằng cấp gì?
+        - target: Für diese Stelle fehlt mir noch eine wichtige Qualifikation.
+          translation:
+            vi: Với vị trí này tôi còn thiếu một bằng cấp quan trọng.
+      confusion:
+        vi: "Đuôi -tion luôn là giống cái và số nhiều thêm -en. Trong thể thao, Qualifikation còn là vòng loại."
+
+  - key: de:item:b2u01-qualifiziert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: qualifiziert
+      pos: tính từ
+    back:
+      meaning:
+        vi: có trình độ, đủ năng lực chuyên môn
+      examples:
+        - target: Wir suchen qualifizierte Mitarbeiterinnen und Mitarbeiter.
+          translation:
+            vi: Chúng tôi tìm nhân viên nam nữ có trình độ chuyên môn.
+        - target: Sie ist für die Stelle sehr gut qualifiziert.
+          translation:
+            vi: Cô ấy rất đủ năng lực cho vị trí này.
+      confusion:
+        vi: "Đủ năng lực cho việc gì: qualifiziert für + Akkusativ. überqualifiziert = có trình độ cao hơn mức công việc cần."
+
+  - key: de:item:b2u01-fachkraft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fachkraft, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lao động có chuyên môn, người có tay nghề
+      examples:
+        - target: In der Pflege werden dringend Fachkräfte gesucht.
+          translation:
+            vi: Ngành điều dưỡng đang rất cần người có chuyên môn.
+        - target: Er ist eine erfahrene Fachkraft.
+          translation:
+            vi: Anh ấy là một người lao động chuyên môn giàu kinh nghiệm.
+      confusion:
+        vi: "Từ này luôn là giống cái (từ cuối là die Kraft), kể cả khi nói về đàn ông: Er ist eine gute Fachkraft. Số nhiều đổi nguyên âm: die Fachkräfte."
+
+  - key: de:item:b2u01-fachkraeftemangel
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Fachkräftemangel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng thiếu lao động có chuyên môn
+      examples:
+        - target: Der Fachkräftemangel betrifft unter anderem die Pflege und das Handwerk.
+          translation:
+            vi: Tình trạng thiếu lao động chuyên môn ảnh hưởng đến nhiều ngành, trong đó có điều dưỡng và nghề thủ công.
+        - target: Wegen des Fachkräftemangels suchen viele Betriebe Personal im Ausland.
+          translation:
+            vi: Vì thiếu lao động chuyên môn, nhiều doanh nghiệp tìm nhân sự ở nước ngoài.
+      confusion:
+        vi: "Giống của từ ghép theo từ cuối: der Mangel → der Fachkräftemangel; Genitiv: des Fachkräftemangels. Thiếu cái gì: der Mangel an + Dativ (ein Mangel an Lehrkräften)."
+
+  - key: de:item:b2u01-anerkennung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Anerkennung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự công nhận (bằng cấp); sự ghi nhận, tán thưởng
+      examples:
+        - target: Ich habe die Anerkennung meines Abschlusses beantragt.
+          translation:
+            vi: Tôi đã nộp đơn xin công nhận bằng của mình.
+        - target: Für ihre Arbeit bekommt sie viel Anerkennung.
+          translation:
+            vi: Cô ấy được ghi nhận rất nhiều vì công việc của mình.
+      pronunciation_note:
+        vi: "Trọng âm ở tiền tố: AN-er-ken-nung."
+      confusion:
+        vi: "Công nhận cái gì: die Anerkennung + Genitiv (des Abschlusses) hoặc von + Dativ (von Abschlüssen). Thủ tục công nhận bằng ở Đức khác nhau theo nghề và theo bang, nên cần hỏi cơ quan có thẩm quyền."
+
+  - key: de:item:b2u01-anerkennen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: anerkennen, erkennt an, erkannte an, hat anerkannt
+      pos: động từ
+    back:
+      meaning:
+        vi: công nhận (bằng cấp, quyền lợi); thừa nhận
+      examples:
+        - target: Mein Abschluss aus Vietnam wurde in Deutschland anerkannt.
+          translation:
+            vi: Bằng của tôi từ Việt Nam đã được công nhận ở Đức.
+        - target: Die Behörde erkennt die Ausbildung als gleichwertig an.
+          translation:
+            vi: Cơ quan chức năng công nhận khoá đào tạo nghề này là tương đương.
+      confusion:
+        vi: "Partizip II là anerkannt (không có ge-, vì erkennen đã có tiền tố er-). Ở thì hiện tại, dạng tách erkennt … an phổ biến nhất; đôi khi cũng gặp dạng không tách anerkennt."
+
+  # --- Từ bổ sung B2U01L1 (10 lemma: trường học vấn, bằng cấp, công nhận) ---
+  - key: de:item:b2u01-hochschulabschluss
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hochschulabschluss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng đại học, bằng tốt nghiệp cao đẳng – đại học
+      examples:
+        - target: Für die Stelle ist ein Hochschulabschluss erforderlich.
+          translation:
+            vi: Vị trí này yêu cầu bằng đại học.
+        - target: Sie hat einen Hochschulabschluss in Informatik.
+          translation:
+            vi: Cô ấy có bằng đại học ngành tin học.
+      confusion:
+        vi: "die Hochschule là tên chung cho các trường đại học (Universität, Fachhochschule …). Số nhiều: die Hochschulabschlüsse."
+
+  - key: de:item:b2u01-bildungssystem
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Bildungssystem, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ thống giáo dục
+      examples:
+        - target: Im deutschen Bildungssystem gibt es verschiedene Schularten.
+          translation:
+            vi: Trong hệ thống giáo dục Đức có nhiều loại trường khác nhau.
+        - target: Wie funktioniert das Bildungssystem in deinem Land?
+          translation:
+            vi: Hệ thống giáo dục ở nước bạn hoạt động thế nào?
+      confusion:
+        vi: "das System → das Bildungssystem (giống trung), có chữ s nối: Bildung-s-system."
+
+  - key: de:item:b2u01-zugang
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zugang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tiếp cận, quyền vào; lối vào
+      examples:
+        - target: Alle Kinder sollen Zugang zu guter Bildung haben.
+          translation:
+            vi: Mọi trẻ em đều cần được tiếp cận nền giáo dục tốt.
+        - target: Mit dem Abitur hat man Zugang zum Studium.
+          translation:
+            vi: Có bằng Abitur thì được quyền vào đại học.
+      confusion:
+        vi: "Đi với zu + Dativ: Zugang zum Studium, Zugang zu Informationen. Số nhiều đổi nguyên âm: die Zugänge."
+
+  - key: de:item:b2u01-anerkennungsverfahren
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Anerkennungsverfahren, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thủ tục công nhận (bằng cấp)
+      examples:
+        - target: Das Anerkennungsverfahren hat bei mir vier Monate gedauert.
+          translation:
+            vi: Thủ tục công nhận bằng của tôi mất bốn tháng.
+        - target: Für das Anerkennungsverfahren braucht man meist beglaubigte Kopien der Zeugnisse.
+          translation:
+            vi: Để làm thủ tục công nhận, thường cần bản sao công chứng các văn bằng.
+      confusion:
+        vi: "das Verfahren (thủ tục, quy trình) → das Anerkennungsverfahren, số nhiều không đổi. Giấy tờ và thời gian xử lý khác nhau theo nghề và theo cơ quan, nên cần hỏi trước."
+
+  - key: de:item:b2u01-gleichwertig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gleichwertig
+      pos: tính từ
+    back:
+      meaning:
+        vi: tương đương, có giá trị ngang nhau
+      examples:
+        - target: Ihr Abschluss wurde als gleichwertig anerkannt.
+          translation:
+            vi: Bằng của chị ấy được công nhận là tương đương.
+        - target: Beide Abschlüsse sind gleichwertig.
+          translation:
+            vi: Hai tấm bằng có giá trị ngang nhau.
+      confusion:
+        vi: "Hay đi với als: als gleichwertig anerkennen. gleich = giống hệt, gleichwertig = khác nhau nhưng giá trị ngang nhau."
+
+  - key: de:item:b2u01-nachweis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Nachweis, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy chứng nhận, bằng chứng (có giấy tờ)
+      examples:
+        - target: Bitte schicken Sie uns einen Nachweis Ihrer Deutschkenntnisse.
+          translation:
+            vi: Xin anh/chị gửi cho chúng tôi giấy chứng nhận trình độ tiếng Đức.
+        - target: Für den Antrag brauchen Sie Nachweise über Ihre Berufserfahrung.
+          translation:
+            vi: Để làm hồ sơ, anh/chị cần giấy tờ chứng minh kinh nghiệm làm việc.
+      confusion:
+        vi: "Nachweis + Genitiv (eines Nachweises Ihrer Kenntnisse) hoặc Nachweis über + Akkusativ. Trong văn bản hành chính, Nachweis hay đứng cạnh Zeugnis, Zertifikat, Bescheinigung."
+
+  - key: de:item:b2u01-nachweisen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: nachweisen, weist nach, wies nach, hat nachgewiesen
+      pos: động từ
+    back:
+      meaning:
+        vi: chứng minh (bằng giấy tờ, bằng chứng)
+      examples:
+        - target: Sie müssen Ihre Sprachkenntnisse nachweisen.
+          translation:
+            vi: Anh/chị phải chứng minh trình độ ngoại ngữ.
+        - target: Er konnte drei Jahre Berufserfahrung nachweisen.
+          translation:
+            vi: Anh ấy chứng minh được ba năm kinh nghiệm làm việc.
+      confusion:
+        vi: "Động từ tách, gốc weisen là động từ mạnh: wies nach, hat nachgewiesen. zu-Infinitiv: nachzuweisen."
+
+  - key: de:item:b2u01-arbeitsmarkt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Arbeitsmarkt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thị trường lao động
+      examples:
+        - target: Mit einer guten Ausbildung hat man bessere Chancen auf dem Arbeitsmarkt.
+          translation:
+            vi: Được đào tạo tốt thì có nhiều cơ hội hơn trên thị trường lao động.
+        - target: Pflegekräfte sind auf dem Arbeitsmarkt sehr gefragt.
+          translation:
+            vi: Nhân viên điều dưỡng rất được săn đón trên thị trường lao động.
+      confusion:
+        vi: "Trên thị trường: auf dem Arbeitsmarkt (auf, không dùng in). Chữ s nối: Arbeit-s-markt."
+
+  - key: de:item:b2u01-auslaendisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausländisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: (thuộc) nước ngoài
+      examples:
+        - target: Viele ausländische Studierende lernen vor dem Studium Deutsch.
+          translation:
+            vi: Nhiều sinh viên nước ngoài học tiếng Đức trước khi vào đại học.
+        - target: Die Firma beschäftigt auch ausländische Fachkräfte.
+          translation:
+            vi: Công ty cũng tuyển dụng lao động chuyên môn người nước ngoài.
+      confusion:
+        vi: "ausländisch (tính từ, viết thường) – das Ausland (nước ngoài: im Ausland) – der Ausländer (người nước ngoài). Trong Genitiv số nhiều không mạo từ, đuôi là -er: die Anerkennung ausländischer Abschlüsse."
+
+  - key: de:item:b2u01-benachteiligt
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: benachteiligt
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị thiệt thòi, bị đối xử bất lợi
+      examples:
+        - target: Kinder aus ärmeren Familien sind im Bildungssystem oft benachteiligt.
+          translation:
+            vi: Trẻ em nhà nghèo thường bị thiệt thòi trong hệ thống giáo dục.
+        - target: Niemand darf wegen seines Geschlechts benachteiligt werden.
+          translation:
+            vi: Không ai được phép bị đối xử bất lợi vì giới tính của mình.
+      confusion:
+        vi: "Partizip của benachteiligen (không có ge-, vì có tiền tố be-), gốc là der Nachteil (bất lợi). Trái nghĩa: bevorzugt (được ưu tiên)."
+
+  # ================= Bài 2: Một mặt… mặt khác – nối ý đối lập, nhượng bộ =================
+  - key: de:item:b2u01-g-adversativ-konzessiv
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "einerseits … andererseits · jedoch · allerdings · dennoch · hingegen/dagegen · wohingegen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Các từ này nối hai ý trái ngược hoặc nhượng bộ, hay dùng trong văn viết trang trọng: einerseits … andererseits (một mặt … mặt khác), dennoch (tuy vậy, = trotzdem), allerdings và jedoch (tuy nhiên), hingegen/dagegen (ngược lại). Chúng là trạng từ: đứng ở vị trí 1 thì động từ chia đứng ngay sau (Dennoch bleibe ich.), hoặc đứng sau động từ ở giữa câu (Ich bleibe dennoch.). Riêng wohingegen (trong khi đó, còn) mở đầu câu phụ nên động từ đứng cuối."
+      examples:
+        - target: Einerseits verdient man als Führungskraft mehr, andererseits trägt man mehr Verantwortung.
+          translation:
+            vi: Một mặt, làm quản lý thì lương cao hơn, mặt khác lại gánh nhiều trách nhiệm hơn.
+        - target: Die Stelle ist gut bezahlt, allerdings muss man oft Überstunden machen.
+          translation:
+            vi: Vị trí này lương cao, tuy nhiên thường phải làm thêm giờ.
+        - target: Mein Bruder möchte schnell Karriere machen, wohingegen ich mehr Zeit für die Familie haben möchte.
+          translation:
+            vi: Anh tôi muốn nhanh chóng thăng tiến, còn tôi thì muốn có nhiều thời gian hơn cho gia đình.
+      confusion:
+        vi: "jedoch không đứng một mình kèm dấu phẩy như \"however,\" trong tiếng Anh: viết Die Arbeit ist jedoch anstrengend hoặc Jedoch ist die Arbeit anstrengend. wohingegen chỉ sự đối lập giữa hai việc (còn …), không mang nghĩa \"mặc dù\" như obwohl."
+
+  - key: de:item:b2u01-g-auch-wenn
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "auch wenn / selbst wenn + Nebensatz: Auch wenn es schwer ist, gebe ich nicht auf."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "auch wenn và selbst wenn nghĩa là \"dù cho, kể cả khi\"; câu phụ có động từ chia đứng cuối. Khác obwohl (mặc dù – nói về điều có thật), auch wenn dùng được cho cả điều có thật lẫn điều chỉ có thể xảy ra, còn selbst wenn nhấn mạnh hơn. Khi câu phụ đứng đầu, cách thông dụng là động từ câu chính đứng ngay sau dấu phẩy; dạng không đảo (Auch wenn es regnet, wir gehen trotzdem spazieren) cũng là tiếng Đức chuẩn."
+      examples:
+        - target: Auch wenn der Aufstieg viel Arbeit bedeutet, möchte ich Führungskraft werden.
+          translation:
+            vi: Dù thăng tiến đồng nghĩa với nhiều việc, tôi vẫn muốn làm quản lý.
+        - target: Ich bewerbe mich auf die Stelle, auch wenn meine Chancen nicht sehr groß sind.
+          translation:
+            vi: Tôi vẫn nộp đơn vào vị trí đó, dù cơ hội của tôi không lớn lắm.
+        - target: Selbst wenn man mir mehr Geld anbieten würde, würde ich die Firma nicht verlassen.
+          translation:
+            vi: Kể cả khi người ta trả tôi nhiều tiền hơn, tôi cũng không rời công ty.
+      confusion:
+        vi: "obwohl dùng cho sự thật (Obwohl ich müde bin, arbeite ich weiter); với một điều chưa chắc xảy ra, dùng auch wenn/selbst wenn. Đừng nhầm auch wenn (dù cho) với wenn (nếu, khi)."
+
+  - key: de:item:b2u01-aufstieg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Aufstieg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thăng tiến; sự đi lên
+      examples:
+        - target: Ohne Weiterbildung ist ein beruflicher Aufstieg oft schwierig.
+          translation:
+            vi: Không học thêm thì thăng tiến trong nghề thường khó.
+        - target: Ihr Aufstieg zur Abteilungsleiterin dauerte fünf Jahre.
+          translation:
+            vi: Cô ấy mất năm năm để lên được chức trưởng phòng.
+      confusion:
+        vi: "Danh từ của aufsteigen. Lên đến vị trí nào: der Aufstieg zu + Dativ (zur Abteilungsleiterin). der soziale Aufstieg = sự đi lên về địa vị xã hội."
+
+  - key: de:item:b2u01-befoerderung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Beförderung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thăng chức
+      examples:
+        - target: Nach zwei Jahren bekam er eine Beförderung.
+          translation:
+            vi: Sau hai năm, anh ấy được thăng chức.
+        - target: Mit der Beförderung kommt auch mehr Verantwortung.
+          translation:
+            vi: Thăng chức thì trách nhiệm cũng nhiều hơn.
+      confusion:
+        vi: "Trong văn bản giao thông, Beförderung còn có nghĩa là sự vận chuyển (die Beförderung von Personen)."
+
+  - key: de:item:b2u01-befoerdern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: befördern
+      pos: động từ
+    back:
+      meaning:
+        vi: thăng chức (cho ai); vận chuyển
+      examples:
+        - target: Sie wurde zur Teamleiterin befördert.
+          translation:
+            vi: Cô ấy được thăng chức làm trưởng nhóm.
+        - target: Wann wirst du endlich befördert?
+          translation:
+            vi: Bao giờ thì bạn mới được thăng chức?
+      confusion:
+        vi: "Thường dùng ở bị động: befördert werden zu + Dativ. Partizip II không có ge-, vì có tiền tố be-: befördert."
+
+  - key: de:item:b2u01-fuehrungskraft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Führungskraft, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cán bộ quản lý, người lãnh đạo
+      examples:
+        - target: Als Führungskraft muss man oft schnell Entscheidungen treffen.
+          translation:
+            vi: Là người quản lý, bạn thường phải ra quyết định nhanh.
+        - target: Gute Führungskräfte hören ihren Mitarbeitern zu.
+          translation:
+            vi: Người quản lý giỏi biết lắng nghe nhân viên.
+      confusion:
+        vi: "Giống cái như die Fachkraft, kể cả khi nói về đàn ông. Số nhiều: die Führungskräfte."
+
+  - key: de:item:b2u01-ehrgeiz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ehrgeiz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chí tiến thủ, tham vọng
+      examples:
+        - target: Mit viel Ehrgeiz hat sie ihr Ziel erreicht.
+          translation:
+            vi: Nhờ rất nhiều chí tiến thủ, cô ấy đã đạt được mục tiêu.
+        - target: Zu viel Ehrgeiz kann auch schaden.
+          translation:
+            vi: Tham vọng quá nhiều cũng có thể gây hại.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết đầu: EHR-geiz; ei đọc như \"ai\", z đọc như \"ts\"."
+      confusion:
+        vi: "Ehrgeiz có thể khen (chí tiến thủ) hoặc chê (tham vọng quá mức), tuỳ ngữ cảnh."
+
+  - key: de:item:b2u01-ehrgeizig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ehrgeizig
+      pos: tính từ
+    back:
+      meaning:
+        vi: có chí tiến thủ, nhiều tham vọng
+      examples:
+        - target: Mein Kollege ist sehr ehrgeizig und will schnell Karriere machen.
+          translation:
+            vi: Đồng nghiệp của tôi rất tham vọng và muốn thăng tiến nhanh.
+        - target: Das sind sehr ehrgeizige Ziele.
+          translation:
+            vi: Đó là những mục tiêu rất tham vọng.
+      confusion:
+        vi: "Tính từ đuôi -ig từ danh từ der Ehrgeiz. Đứng trước danh từ thì thêm đuôi: ehrgeizige Ziele, ein ehrgeiziger Plan."
+
+  - key: de:item:b2u01-leistung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Leistung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành tích, kết quả làm việc; khoản dịch vụ/quyền lợi
+      examples:
+        - target: Gute Leistungen sollten belohnt werden.
+          translation:
+            vi: Thành tích tốt nên được khen thưởng.
+        - target: Ihre Leistungen in der Schule waren immer sehr gut.
+          translation:
+            vi: Kết quả học tập ở trường của cô ấy luôn rất tốt.
+      confusion:
+        vi: "Ở trường và nơi làm việc, Leistung là thành tích, kết quả; trong bảo hiểm hay hợp đồng, Leistungen là các khoản được chi trả, quyền lợi."
+
+  - key: de:item:b2u01-leistungsorientiert
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: leistungsorientiert
+      pos: tính từ
+    back:
+      meaning:
+        vi: chú trọng thành tích, theo hiệu quả công việc
+      examples:
+        - target: Die Firma bezahlt ihre Mitarbeiter leistungsorientiert.
+          translation:
+            vi: Công ty trả lương cho nhân viên theo hiệu quả công việc.
+        - target: In einem leistungsorientierten Unternehmen zählen vor allem Ergebnisse.
+          translation:
+            vi: Ở một công ty chú trọng thành tích, điều quan trọng nhất là kết quả.
+      confusion:
+        vi: "Ghép từ Leistung + s + orientiert (hướng tới). Có thể khen (công bằng theo kết quả) hoặc chê (nhiều áp lực), tuỳ người nói."
+
+  # --- Từ bổ sung B2U01L2 (10 lemma: thăng tiến, ưu nhược của sự nghiệp) ---
+  - key: de:item:b2u01-verantwortung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verantwortung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trách nhiệm
+      examples:
+        - target: Als Teamleiter trägt man Verantwortung für fünf Mitarbeiter.
+          translation:
+            vi: Làm trưởng nhóm thì phải chịu trách nhiệm về năm nhân viên.
+        - target: Ich möchte mehr Verantwortung übernehmen.
+          translation:
+            vi: Tôi muốn đảm nhận nhiều trách nhiệm hơn.
+      confusion:
+        vi: "Các cụm cố định: Verantwortung tragen (gánh trách nhiệm), Verantwortung übernehmen (nhận trách nhiệm), Verantwortung für + Akkusativ."
+
+  - key: de:item:b2u01-herausforderung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Herausforderung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thử thách
+      examples:
+        - target: Die neue Stelle ist eine große Herausforderung für mich.
+          translation:
+            vi: Công việc mới là một thử thách lớn với tôi.
+        - target: Ich suche eine neue berufliche Herausforderung.
+          translation:
+            vi: Tôi đang tìm một thử thách mới trong nghề nghiệp.
+      confusion:
+        vi: "Herausforderung mang nghĩa tích cực (cơ hội thử sức), khác das Problem (vấn đề cần giải quyết)."
+
+  - key: de:item:b2u01-belastung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Belastung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: gánh nặng, áp lực
+      examples:
+        - target: Die ständigen Überstunden sind eine große Belastung.
+          translation:
+            vi: Làm thêm giờ liên tục là một gánh nặng lớn.
+        - target: Lange Arbeitszeiten können eine Belastung für die Familie sein.
+          translation:
+            vi: Thời gian làm việc dài có thể là gánh nặng cho gia đình.
+      confusion:
+        vi: "Danh từ của belasten (đè nặng). Đừng nhầm với die Belastbarkeit (khả năng chịu áp lực) – một phẩm chất được nhà tuyển dụng tìm kiếm."
+
+  - key: de:item:b2u01-privatleben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Privatleben (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: đời sống riêng tư
+      examples:
+        - target: Für mein Privatleben bleibt kaum noch Zeit.
+          translation:
+            vi: Tôi hầu như không còn thời gian cho đời sống riêng.
+        - target: Er trennt Beruf und Privatleben strikt.
+          translation:
+            vi: Anh ấy tách bạch hoàn toàn công việc và đời sống riêng.
+      confusion:
+        vi: "Ghép từ privat + das Leben, nên là giống trung. Đối lập thường gặp: Beruf und Privatleben."
+
+  - key: de:item:b2u01-gehaltserhoehung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gehaltserhöhung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tăng lương
+      examples:
+        - target: Nach einem Jahr hat sie um eine Gehaltserhöhung gebeten.
+          translation:
+            vi: Sau một năm, cô ấy đã đề nghị được tăng lương.
+        - target: Mit der Beförderung gab es auch eine Gehaltserhöhung.
+          translation:
+            vi: Cùng với việc thăng chức còn có cả tăng lương.
+      confusion:
+        vi: "Đề nghị tăng lương: um eine Gehaltserhöhung bitten (um + Akkusativ). Chữ s nối: Gehalt-s-erhöhung."
+
+  - key: de:item:b2u01-aufsteigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: aufsteigen, steigt auf, stieg auf, ist aufgestiegen
+      pos: động từ
+    back:
+      meaning:
+        vi: thăng tiến, lên chức; leo lên
+      examples:
+        - target: Sie ist schnell zur Abteilungsleiterin aufgestiegen.
+          translation:
+            vi: Cô ấy nhanh chóng lên chức trưởng phòng.
+        - target: Wer sich regelmäßig weiterbildet, kann leichter aufsteigen.
+          translation:
+            vi: Ai thường xuyên học thêm thì dễ thăng tiến hơn.
+      confusion:
+        vi: "Động từ tách, chỉ sự thay đổi vị trí nên Perfekt dùng sein: ist aufgestiegen. Lên đến chức gì: aufsteigen zu + Dativ."
+
+  - key: de:item:b2u01-zufriedenheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zufriedenheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hài lòng
+      examples:
+        - target: Für mich ist Zufriedenheit im Job wichtiger als ein hohes Gehalt.
+          translation:
+            vi: Với tôi, sự hài lòng trong công việc quan trọng hơn lương cao.
+        - target: Die Firma fragt jedes Jahr nach der Zufriedenheit der Mitarbeiter.
+          translation:
+            vi: Hằng năm công ty khảo sát mức độ hài lòng của nhân viên.
+      confusion:
+        vi: "Danh từ của zufrieden (hài lòng) + đuôi -heit, nên là giống cái."
+
+  - key: de:item:b2u01-ansehen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Ansehen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: uy tín, danh tiếng, sự kính trọng của xã hội
+      examples:
+        - target: Ärzte genießen in vielen Ländern ein hohes Ansehen.
+          translation:
+            vi: Ở nhiều nước, bác sĩ rất được xã hội kính trọng.
+        - target: Mit der Beförderung stieg auch sein Ansehen in der Firma.
+          translation:
+            vi: Cùng với việc thăng chức, uy tín của anh ấy trong công ty cũng tăng.
+      confusion:
+        vi: "das Ansehen (danh từ, uy tín) khác ansehen (động từ, xem, nhìn). Cụm cố định: ein hohes Ansehen genießen."
+
+  - key: de:item:b2u01-vereinbarkeit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Vereinbarkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng dung hoà (hai việc với nhau)
+      examples:
+        - target: Die Vereinbarkeit von Familie und Beruf ist für viele Eltern schwierig.
+          translation:
+            vi: Với nhiều bậc cha mẹ, dung hoà gia đình và công việc là điều khó.
+        - target: Teilzeitstellen können die Vereinbarkeit von Familie und Beruf verbessern.
+          translation:
+            vi: Việc làm bán thời gian có thể giúp dung hoà gia đình và công việc tốt hơn.
+      confusion:
+        vi: "Cụm rất hay gặp: die Vereinbarkeit von Familie und Beruf. Đừng nhầm với die Vereinbarung (thoả thuận)."
+
+  - key: de:item:b2u01-leistungsdruck
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Leistungsdruck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: áp lực thành tích
+      examples:
+        - target: In manchen Firmen ist der Leistungsdruck sehr hoch.
+          translation:
+            vi: Ở một số công ty, áp lực thành tích rất cao.
+        - target: Viele Schüler leiden unter Leistungsdruck.
+          translation:
+            vi: Nhiều học sinh khổ sở vì áp lực thành tích.
+      confusion:
+        vi: "Giống theo từ cuối: der Druck → der Leistungsdruck. Chịu đựng điều gì: leiden unter + Dativ."
+
+  # ================= Bài 3: Bằng cách… – indem, dadurch dass; folglich =================
+  - key: de:item:b2u01-g-indem
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "indem / dadurch, dass + Nebensatz · durch + Akk (Wie? Wodurch?)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "indem (bằng cách) mở đầu câu phụ nói về cách thức hay phương tiện, động từ chia đứng cuối: Man verbessert sein Deutsch, indem man jeden Tag liest. dadurch, dass … cùng nghĩa: dadurch nằm trong câu chính, dass mở câu phụ. Câu indem thường cùng chủ ngữ với câu chính; trong Nominalstil, bạn dùng durch + Akkusativ: durch tägliches Lesen."
+      examples:
+        - target: Sie hat ihr Deutsch verbessert, indem sie jeden Tag Nachrichten gehört hat.
+          translation:
+            vi: Cô ấy đã cải thiện tiếng Đức bằng cách nghe tin tức mỗi ngày.
+        - target: Man kann Kompetenzen dadurch erwerben, dass man ein Praktikum macht.
+          translation:
+            vi: Người ta có thể có được năng lực bằng cách đi thực tập.
+        - target: Durch regelmäßige Weiterbildung bleibt man auf dem Arbeitsmarkt gefragt.
+          translation:
+            vi: Nhờ thường xuyên học nâng cao, bạn luôn được săn đón trên thị trường lao động.
+      confusion:
+        vi: "durch là giới từ, không mở câu phụ: không nói Durch ich lerne …, mà Indem ich lerne, … hoặc Durch das Lernen …. Đừng nhầm indem (bằng cách) với in dem (trong cái đó: in dem Kurs)."
+
+  - key: de:item:b2u01-g-konsekutiv-formal
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "folglich · infolgedessen · somit · demnach (+ Verb an Position 2) – sodass + Nebensatz"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "folglich, infolgedessen, somit (vì vậy, do đó) và demnach (theo đó, như vậy) là trạng từ nối câu nói về hệ quả hoặc kết luận, trang trọng hơn deshalb. Chúng chiếm vị trí 1 nên động từ chia đứng ngay sau (Folglich fehlen Fachkräfte.), hoặc đứng sau động từ (Es fehlen folglich Fachkräfte.). sodass (B1) thì khác: nó mở câu phụ, động từ đứng cuối."
+      examples:
+        - target: Der Kurs war schnell ausgebucht; infolgedessen bietet die Volkshochschule einen zweiten Termin an.
+          translation:
+            vi: Khoá học nhanh chóng kín chỗ; do đó trường Volkshochschule mở thêm một lớp thứ hai.
+        - target: Sie hat die Prüfung bestanden und ist somit für das Studium zugelassen.
+          translation:
+            vi: Cô ấy đã thi đỗ và như vậy được nhận vào đại học.
+        - target: Laut Stellenanzeige ist Berufserfahrung Voraussetzung. Demnach haben Berufsanfänger hier wenig Chancen.
+          translation:
+            vi: Theo tin tuyển dụng, kinh nghiệm làm việc là điều kiện bắt buộc. Như vậy người mới đi làm ít có cơ hội ở đây.
+      confusion:
+        vi: "Sau folglich/somit ở đầu câu không đặt dấu phẩy và phải đảo: Folglich ist …, không viết Folglich, es ist …. sodass là liên từ, động từ đứng cuối: …, sodass viele Firmen im Ausland suchen."
+
+  - key: de:item:b2u01-kompetenz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kompetenz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: năng lực; thẩm quyền
+      examples:
+        - target: Soziale Kompetenzen sind im Beruf genauso wichtig wie Fachwissen.
+          translation:
+            vi: Năng lực xã hội trong công việc cũng quan trọng như kiến thức chuyên môn.
+        - target: Welche Kompetenzen möchten Sie in diesem Kurs erwerben?
+          translation:
+            vi: Anh/chị muốn có được những năng lực nào trong khoá học này?
+      confusion:
+        vi: "Ngoài nghĩa năng lực, Kompetenz còn là thẩm quyền: Das liegt nicht in meiner Kompetenz (việc đó không thuộc thẩm quyền của tôi). Tính từ: kompetent (có năng lực)."
+
+  - key: de:item:b2u01-erwerben
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: erwerben, erwirbt, erwarb, hat erworben
+      pos: động từ
+    back:
+      meaning:
+        vi: thu được, đạt được (kiến thức, bằng cấp); mua (trang trọng)
+      examples:
+        - target: Im Praktikum habe ich wichtige Erfahrungen erworben.
+          translation:
+            vi: Trong đợt thực tập, tôi đã có được những kinh nghiệm quan trọng.
+        - target: In diesem Kurs können Sie ein Zertifikat erwerben.
+          translation:
+            vi: Trong khoá học này, anh/chị có thể lấy một chứng chỉ.
+      confusion:
+        vi: "Động từ mạnh đổi e → i ở du/er (du erwirbst, er erwirbt), Präteritum erwarb, Partizip erworben (không có ge- vì có tiền tố er-)."
+
+  - key: de:item:b2u01-sich-aneignen
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: sich (Dat) etwas aneignen
+      pos: động từ
+    back:
+      meaning:
+        vi: tự tiếp thu, lĩnh hội (kiến thức, kỹ năng)
+      examples:
+        - target: Die Grundlagen habe ich mir selbst angeeignet.
+          translation:
+            vi: Phần kiến thức cơ bản tôi đã tự học lấy.
+        - target: Wie kann man sich schnell neues Wissen aneignen?
+          translation:
+            vi: Làm sao để tiếp thu kiến thức mới thật nhanh?
+      confusion:
+        vi: "Đại từ phản thân ở Dativ vì đã có tân ngữ Akkusativ: ich eigne mir etwas an (mir, không phải mich). Động từ tách, Partizip có hai chữ e: angeeignet."
+
+  - key: de:item:b2u01-faehigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fähigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng, năng lực
+      examples:
+        - target: Sie hat die Fähigkeit, komplizierte Dinge einfach zu erklären.
+          translation:
+            vi: Cô ấy có khả năng giải thích những điều phức tạp một cách đơn giản.
+        - target: Zu meinen Fähigkeiten gehört auch Teamarbeit.
+          translation:
+            vi: Làm việc nhóm cũng nằm trong các khả năng của tôi.
+      confusion:
+        vi: "Tính từ fähig + zu: Er ist zu allem fähig. die Fähigkeit là khả năng nói chung; die Fertigkeit là kỹ năng thực hành cụ thể."
+
+  - key: de:item:b2u01-foerdern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fördern
+      pos: động từ
+    back:
+      meaning:
+        vi: thúc đẩy, hỗ trợ (phát triển), tài trợ
+      examples:
+        - target: Die Firma fördert die Weiterbildung ihrer Mitarbeiter.
+          translation:
+            vi: Công ty hỗ trợ nhân viên học nâng cao.
+        - target: Gute Lehrkräfte fördern die Stärken ihrer Schüler.
+          translation:
+            vi: Giáo viên giỏi phát huy điểm mạnh của học sinh.
+      pronunciation_note:
+        vi: "ö ngắn, đọc như \"ơ\" nhưng tròn môi."
+      confusion:
+        vi: "fördern (thúc đẩy, hỗ trợ) khác fordern (đòi hỏi) – chỉ khác nhau ở dấu chấm trên o."
+
+  - key: de:item:b2u01-foerderung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Förderung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hỗ trợ, khoản tài trợ
+      examples:
+        - target: Für manche Weiterbildungen gibt es eine staatliche Förderung.
+          translation:
+            vi: Một số khoá học nâng cao được nhà nước hỗ trợ kinh phí.
+        - target: Die Förderung von Frauen in Führungspositionen ist ein wichtiges Thema.
+          translation:
+            vi: Việc hỗ trợ phụ nữ vào vị trí lãnh đạo là một chủ đề quan trọng.
+      confusion:
+        vi: "Ai/cái gì được hỗ trợ: die Förderung + Genitiv hoặc von + Dativ. Điều kiện nhận tài trợ thay đổi theo chương trình, nên cần hỏi nơi cấp."
+
+  - key: de:item:b2u01-vermitteln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vermitteln
+      pos: động từ
+    back:
+      meaning:
+        vi: truyền đạt (kiến thức); giới thiệu, môi giới (việc làm)
+      examples:
+        - target: Der Kurs vermittelt vor allem praktische Kenntnisse.
+          translation:
+            vi: Khoá học chủ yếu truyền đạt kiến thức thực hành.
+        - target: Die Agentur hat mir eine Stelle als Krankenpfleger vermittelt.
+          translation:
+            vi: Văn phòng môi giới đã giới thiệu cho tôi một chỗ làm điều dưỡng.
+      confusion:
+        vi: "Ai nhận ở Dativ, cái được truyền/giới thiệu ở Akkusativ: jemandem etwas vermitteln. Partizip không có ge-: vermittelt."
+
+  - key: de:item:b2u01-lebenslanges-lernen
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: lebenslanges Lernen
+      pos: cụm từ
+    back:
+      meaning:
+        vi: học tập suốt đời
+      examples:
+        - target: In der modernen Arbeitswelt ist lebenslanges Lernen wichtig.
+          translation:
+            vi: Trong thế giới việc làm hiện đại, học tập suốt đời là điều quan trọng.
+        - target: Die Volkshochschulen bieten Kurse für lebenslanges Lernen an.
+          translation:
+            vi: Các trường Volkshochschule có các khoá học phục vụ việc học suốt đời.
+      confusion:
+        vi: "das Lernen là động từ lernen được danh từ hoá (giống trung, viết hoa). Đuôi tính từ: lebenslanges Lernen (không mạo từ), das lebenslange Lernen (có mạo từ)."
+
+  # --- Từ bổ sung B2U01L3 (10 lemma: năng lực, học tập, bồi dưỡng) ---
+  - key: de:item:b2u01-fertigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fertigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỹ năng (thực hành)
+      examples:
+        - target: Im Kurs trainieren wir die vier Fertigkeiten Lesen, Hören, Schreiben und Sprechen.
+          translation:
+            vi: Trong khoá học, chúng ta luyện bốn kỹ năng đọc, nghe, viết và nói.
+        - target: Handwerkliche Fertigkeiten lernt man am besten in der Praxis.
+          translation:
+            vi: Kỹ năng tay nghề học tốt nhất là qua thực hành.
+      confusion:
+        vi: "die Fertigkeit là kỹ năng luyện được bằng thực hành; die Fähigkeit là khả năng nói chung. Đừng nhầm với fertig (xong, sẵn sàng)."
+
+  - key: de:item:b2u01-beherrschen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: beherrschen
+      pos: động từ
+    back:
+      meaning:
+        vi: thông thạo, làm chủ (ngôn ngữ, kỹ năng)
+      examples:
+        - target: Sie beherrscht drei Fremdsprachen.
+          translation:
+            vi: Cô ấy thông thạo ba ngoại ngữ.
+        - target: Bevor man weitermacht, sollte man die Grundlagen beherrschen.
+          translation:
+            vi: Trước khi học tiếp, nên nắm vững kiến thức cơ bản.
+      confusion:
+        vi: "beherrschen + Akkusativ, không cần giới từ. sich beherrschen (phản thân) nghĩa khác: kiềm chế bản thân."
+
+  - key: de:item:b2u01-vertiefen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vertiefen
+      pos: động từ
+    back:
+      meaning:
+        vi: đào sâu, củng cố (kiến thức)
+      examples:
+        - target: Ich möchte meine Kenntnisse in Statistik vertiefen.
+          translation:
+            vi: Tôi muốn đào sâu kiến thức về thống kê.
+        - target: Im zweiten Teil des Kurses vertiefen wir das Thema.
+          translation:
+            vi: Ở phần hai của khoá học, chúng ta đi sâu vào chủ đề này.
+      confusion:
+        vi: "Gốc là tief (sâu) + tiền tố ver-, nên Partizip không có ge-: vertieft. Hay đi với Kenntnisse, Wissen."
+
+  - key: de:item:b2u01-fortbildung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fortbildung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoá bồi dưỡng nghiệp vụ
+      examples:
+        - target: Nächste Woche nehme ich an einer Fortbildung teil.
+          translation:
+            vi: Tuần sau tôi tham gia một khoá bồi dưỡng nghiệp vụ.
+        - target: Die Firma bezahlt jedes Jahr eine Fortbildung.
+          translation:
+            vi: Mỗi năm công ty trả tiền cho một khoá bồi dưỡng.
+      confusion:
+        vi: "Fortbildung và Weiterbildung gần nghĩa nhau; Fortbildung thường là khoá ngắn để cập nhật trong nghề đang làm. Tham gia: an einer Fortbildung teilnehmen."
+
+  - key: de:item:b2u01-schulung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Schulung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi/khoá tập huấn
+      examples:
+        - target: Alle neuen Mitarbeiter bekommen eine Schulung zur neuen Software.
+          translation:
+            vi: Mọi nhân viên mới đều được tập huấn về phần mềm mới.
+        - target: Die Schulung dauert zwei Tage.
+          translation:
+            vi: Buổi tập huấn kéo dài hai ngày.
+      confusion:
+        vi: "Schulung là tập huấn ngắn về một việc cụ thể (phần mềm, an toàn lao động), không liên quan đến trường học (die Schule)."
+
+  - key: de:item:b2u01-lernerfolg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lernerfolg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: kết quả học tập, sự tiến bộ khi học
+      examples:
+        - target: Regelmäßiges Wiederholen verbessert den Lernerfolg.
+          translation:
+            vi: Ôn tập đều đặn giúp học hiệu quả hơn.
+        - target: Wie kann man den Lernerfolg messen?
+          translation:
+            vi: Làm sao đo được kết quả học tập?
+      confusion:
+        vi: "Giống theo từ cuối: der Erfolg → der Lernerfolg; không có chữ s nối."
+
+  - key: de:item:b2u01-eigeninitiative
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Eigeninitiative (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chủ động, tự giác
+      examples:
+        - target: Wir erwarten von unseren Mitarbeitern Eigeninitiative.
+          translation:
+            vi: Chúng tôi mong nhân viên của mình có tính chủ động.
+        - target: Er hat aus Eigeninitiative einen Programmierkurs besucht.
+          translation:
+            vi: Anh ấy đã tự giác đi học một khoá lập trình.
+      confusion:
+        vi: "Hay xuất hiện trong tin tuyển dụng cùng Teamfähigkeit, Belastbarkeit. Cụm: aus Eigeninitiative = tự mình chủ động."
+
+  - key: de:item:b2u01-selbststudium
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Selbststudium (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tự học
+      examples:
+        - target: Grammatik kann man gut im Selbststudium lernen.
+          translation:
+            vi: Ngữ pháp có thể tự học khá tốt.
+        - target: Neben dem Kurs sind zwei Stunden Selbststudium pro Woche nötig.
+          translation:
+            vi: Ngoài giờ học trên lớp, mỗi tuần cần hai giờ tự học.
+      pronunciation_note:
+        vi: "Hai cụm st đứng liền nhau (selbst + Studium); st ở đầu Studium đọc là \"scht\"."
+      confusion:
+        vi: "Giống trung theo das Studium. Tự học ở nhà: im Selbststudium."
+
+  - key: de:item:b2u01-erlernen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erlernen
+      pos: động từ
+    back:
+      meaning:
+        vi: học (thành thạo) một nghề, một kỹ năng
+      examples:
+        - target: Einen Beruf erlernt man in Deutschland oft in einer dualen Ausbildung.
+          translation:
+            vi: Ở Đức, người ta thường học nghề theo hình thức đào tạo kép (vừa học ở trường vừa làm ở doanh nghiệp).
+        - target: Er hat das Handwerk von seinem Vater erlernt.
+          translation:
+            vi: Anh ấy học nghề thủ công từ cha mình.
+      confusion:
+        vi: "erlernen nhấn mạnh việc học đến khi thành thạo (einen Beruf erlernen); lernen dùng cho mọi việc học. Partizip: erlernt (không có ge-)."
+
+  - key: de:item:b2u01-ausbauen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausbauen
+      pos: động từ
+    back:
+      meaning:
+        vi: mở rộng, phát triển thêm (kiến thức, kỹ năng); xây mở rộng
+      examples:
+        - target: Im Ausland konnte ich meine Sprachkenntnisse ausbauen.
+          translation:
+            vi: Ở nước ngoài tôi đã nâng cao thêm được trình độ ngoại ngữ.
+        - target: Die Firma will ihr Angebot an Weiterbildungen ausbauen.
+          translation:
+            vi: Công ty muốn mở rộng các khoá học nâng cao dành cho nhân viên.
+      confusion:
+        vi: "Động từ tách, có quy tắc: baute aus, hat ausgebaut. Với kiến thức: ausbauen = mở rộng thêm điều đã có, vertiefen = đào sâu."
+
+  # ================= Bài 4: Phỏng vấn tuyển dụng – es làm từ giữ chỗ =================
+  - key: de:item:b2u01-g-es-korrelat
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "es als Platzhalter: Ich finde es wichtig, dass … · Es freut mich, dass … · Es meldeten sich viele Bewerber."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Trong câu chính, es có thể đứng trước để \"báo trước\" một câu dass hoặc cụm zu-Infinitiv đứng sau: Es freut mich, dass Sie Zeit haben. Ich finde es wichtig, flexibel zu sein. Khi câu dass đứng đầu thì es biến mất (Dass Sie Zeit haben, freut mich.); còn es ở vị trí 1 chỉ giữ chỗ cho chủ ngữ thật đứng sau (Es meldeten sich viele Bewerber.) và biến mất khi từ khác đứng đầu (Gestern meldeten sich viele Bewerber.)."
+      examples:
+        - target: Es freut mich, dass Sie mich zum Vorstellungsgespräch eingeladen haben.
+          translation:
+            vi: Tôi rất vui vì anh/chị đã mời tôi đến phỏng vấn.
+        - target: Ich finde es wichtig, im Team zu arbeiten.
+          translation:
+            vi: Tôi thấy làm việc nhóm là điều quan trọng.
+        - target: Auf die Stellenanzeige meldeten sich viele Bewerber.
+          translation:
+            vi: Có nhiều ứng viên đã liên hệ sau tin tuyển dụng.
+      confusion:
+        vi: "Ở câu có es giữ chỗ (Es meldeten sich viele Bewerber), động từ chia theo chủ ngữ thật (viele Bewerber → meldeten), không theo es. Với một số động từ, es trước câu dass là tuỳ chọn (Ich bedauere [es], dass …); với finden + tính từ, văn viết nên luôn có es."
+
+  - key: de:item:b2u01-gehaltsvorstellung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gehaltsvorstellung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: mức lương mong muốn
+      examples:
+        - target: Was sind Ihre Gehaltsvorstellungen?
+          translation:
+            vi: Mức lương mong muốn của anh/chị là bao nhiêu?
+        - target: Bitte nennen Sie in Ihrer Bewerbung Ihre Gehaltsvorstellung.
+          translation:
+            vi: Xin anh/chị ghi mức lương mong muốn trong hồ sơ ứng tuyển.
+      confusion:
+        vi: "Trong phỏng vấn hay dùng số nhiều: Ihre Gehaltsvorstellungen. Thường nói theo lương năm trước thuế (brutto im Jahr)."
+
+  - key: de:item:b2u01-probezeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Probezeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian thử việc
+      examples:
+        - target: In meinem Vertrag dauert die Probezeit sechs Monate.
+          translation:
+            vi: Trong hợp đồng của tôi, thời gian thử việc là sáu tháng.
+        - target: Während der Probezeit gilt meist eine kürzere Kündigungsfrist.
+          translation:
+            vi: Trong thời gian thử việc, thời hạn báo trước khi nghỉ việc thường ngắn hơn.
+      confusion:
+        vi: "die Probe (sự thử) + die Zeit. Độ dài thử việc ghi trong hợp đồng; quy định cụ thể có thể thay đổi, nên hãy đọc kỹ hợp đồng của mình."
+
+  - key: de:item:b2u01-kuendigung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kündigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: (đơn/thông báo) chấm dứt hợp đồng, thôi việc
+      examples:
+        - target: Sie hat ihre Kündigung eingereicht, weil sie eine bessere Stelle gefunden hat.
+          translation:
+            vi: Cô ấy đã nộp đơn thôi việc vì tìm được chỗ làm tốt hơn.
+        - target: Er hat die Kündigung schriftlich bekommen.
+          translation:
+            vi: Anh ấy nhận thông báo cho thôi việc bằng văn bản.
+      confusion:
+        vi: "Kündigung dùng cho cả hai phía: người lao động xin nghỉ hoặc chủ cho nghỉ. Nó còn dùng cho mọi hợp đồng: die Kündigung des Handyvertrags."
+
+  - key: de:item:b2u01-kuendigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: kündigen
+      pos: động từ
+    back:
+      meaning:
+        vi: xin nghỉ việc; cho thôi việc; chấm dứt hợp đồng
+      examples:
+        - target: Ich habe zum Monatsende gekündigt.
+          translation:
+            vi: Tôi đã xin nghỉ việc, có hiệu lực từ cuối tháng.
+        - target: Die Firma hat ihm nach der Probezeit gekündigt.
+          translation:
+            vi: Công ty đã cho anh ấy thôi việc sau thời gian thử việc.
+      confusion:
+        vi: "Ich kündige. = tôi xin nghỉ. Cho ai thôi việc: jemandem kündigen (Dativ). Chấm dứt một hợp đồng: einen Vertrag kündigen (Akkusativ)."
+
+  - key: de:item:b2u01-arbeitsvertrag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Arbeitsvertrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hợp đồng lao động
+      examples:
+        - target: Lesen Sie den Arbeitsvertrag genau, bevor Sie ihn unterschreiben.
+          translation:
+            vi: Hãy đọc kỹ hợp đồng lao động trước khi ký.
+        - target: Mein Arbeitsvertrag ist zunächst auf ein Jahr befristet.
+          translation:
+            vi: Hợp đồng lao động của tôi trước mắt có thời hạn một năm.
+      confusion:
+        vi: "der Vertrag → der Arbeitsvertrag; số nhiều đổi nguyên âm: die Arbeitsverträge. Có thời hạn: befristet."
+
+  - key: de:item:b2u01-belastbarkeit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Belastbarkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng chịu áp lực
+      examples:
+        - target: In der Stellenanzeige werden Teamfähigkeit und Belastbarkeit verlangt.
+          translation:
+            vi: Tin tuyển dụng yêu cầu khả năng làm việc nhóm và chịu áp lực.
+        - target: Belastbarkeit bedeutet, auch unter Zeitdruck gute Arbeit zu leisten.
+          translation:
+            vi: Chịu được áp lực nghĩa là vẫn làm tốt kể cả khi gấp rút về thời gian.
+      confusion:
+        vi: "belasten (đè nặng) → belastbar (chịu được tải) → die Belastbarkeit (đuôi -keit, giống cái). Khác die Belastung (gánh nặng)."
+
+  - key: de:item:b2u01-teamfaehigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Teamfähigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng làm việc nhóm
+      examples:
+        - target: Teamfähigkeit ist für diese Stelle besonders wichtig.
+          translation:
+            vi: Khả năng làm việc nhóm đặc biệt quan trọng với vị trí này.
+        - target: Meine Teamfähigkeit habe ich in vielen Projekten gezeigt.
+          translation:
+            vi: Tôi đã thể hiện khả năng làm việc nhóm trong nhiều dự án.
+      confusion:
+        vi: "Danh từ của teamfähig; đuôi -keit là giống cái. Team đọc theo tiếng Anh."
+
+  - key: de:item:b2u01-verhandeln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verhandeln
+      pos: động từ
+    back:
+      meaning:
+        vi: đàm phán, thương lượng
+      examples:
+        - target: Über das Gehalt kann man oft verhandeln.
+          translation:
+            vi: Lương thường có thể thương lượng được.
+        - target: Ich habe mit meiner Chefin über mehr Urlaub verhandelt.
+          translation:
+            vi: Tôi đã thương lượng với sếp về việc được nghỉ phép nhiều hơn.
+      confusion:
+        vi: "Thương lượng với ai: mit + Dativ; về việc gì: über + Akkusativ. Partizip không có ge-: verhandelt."
+
+  # --- Từ bổ sung B2U01L4 (10 lemma: hợp đồng, điều kiện làm việc, phỏng vấn) ---
+  - key: de:item:b2u01-kuendigungsfrist
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kündigungsfrist, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời hạn báo trước khi chấm dứt hợp đồng
+      examples:
+        - target: Wie lang ist die Kündigungsfrist?
+          translation:
+            vi: Thời hạn báo trước khi nghỉ việc là bao lâu?
+        - target: Die Kündigungsfrist steht in Ihrem Arbeitsvertrag.
+          translation:
+            vi: Thời hạn báo trước được ghi trong hợp đồng lao động của anh/chị.
+      confusion:
+        vi: "die Frist (thời hạn) → die Kündigungsfrist, có chữ s nối. Thời hạn cụ thể tuỳ hợp đồng và quy định hiện hành."
+
+  - key: de:item:b2u01-urlaubsanspruch
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Urlaubsanspruch, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: số ngày nghỉ phép được hưởng
+      examples:
+        - target: Mein Urlaubsanspruch beträgt 28 Tage im Jahr.
+          translation:
+            vi: Tôi được nghỉ phép 28 ngày mỗi năm.
+        - target: Wie hoch ist der Urlaubsanspruch in Ihrer Firma?
+          translation:
+            vi: Ở công ty anh/chị, mỗi người được nghỉ phép bao nhiêu ngày?
+      confusion:
+        vi: "der Anspruch (quyền được hưởng) → der Urlaubsanspruch. Hỏi số lượng dùng Wie hoch ist …?, trả lời bằng betragen (lên tới, là)."
+
+  - key: de:item:b2u01-bruttogehalt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Bruttogehalt, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: lương gộp (trước thuế và bảo hiểm)
+      examples:
+        - target: Das Bruttogehalt beträgt 3500 Euro im Monat.
+          translation:
+            vi: Lương gộp là 3500 euro mỗi tháng.
+        - target: Netto bleibt vom Bruttogehalt deutlich weniger übrig.
+          translation:
+            vi: Lương thực nhận còn lại ít hơn lương gộp khá nhiều.
+      confusion:
+        vi: "brutto = trước khi trừ thuế và bảo hiểm, netto = số tiền thực nhận. Giống trung theo das Gehalt, số nhiều: die Bruttogehälter."
+
+  - key: de:item:b2u01-einarbeitung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Einarbeitung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giai đoạn hướng dẫn, làm quen với công việc mới
+      examples:
+        - target: In den ersten Wochen gibt es eine gründliche Einarbeitung.
+          translation:
+            vi: Trong những tuần đầu có chương trình hướng dẫn công việc kỹ lưỡng.
+        - target: Wer ist für meine Einarbeitung zuständig?
+          translation:
+            vi: Ai phụ trách hướng dẫn tôi làm quen công việc?
+      confusion:
+        vi: "Danh từ của sich einarbeiten (làm quen với công việc). Khác die Ausbildung (đào tạo nghề nhiều năm)."
+
+  - key: de:item:b2u01-flexibilitaet
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Flexibilität (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự linh hoạt
+      examples:
+        - target: Wir erwarten Flexibilität bei den Arbeitszeiten.
+          translation:
+            vi: Chúng tôi mong anh/chị linh hoạt về giờ làm.
+        - target: Homeoffice bietet mehr Flexibilität.
+          translation:
+            vi: Làm việc tại nhà mang lại nhiều sự linh hoạt hơn.
+      confusion:
+        vi: "Danh từ của flexibel; đuôi -ität luôn là giống cái, trọng âm ở âm tiết cuối: Fle-xi-bi-li-TÄT."
+
+  - key: de:item:b2u01-vereinbarung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vereinbarung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thoả thuận, bản thoả thuận
+      examples:
+        - target: Wir haben eine Vereinbarung über das Homeoffice getroffen.
+          translation:
+            vi: Chúng tôi đã có thoả thuận về việc làm tại nhà.
+        - target: Laut Vereinbarung arbeite ich zwei Tage pro Woche von zu Hause aus.
+          translation:
+            vi: Theo thoả thuận, tôi làm việc tại nhà hai ngày mỗi tuần.
+      confusion:
+        vi: "Cụm cố định: eine Vereinbarung treffen (đạt được thoả thuận). Đừng nhầm với die Vereinbarkeit (sự dung hoà)."
+
+  - key: de:item:b2u01-arbeitsbedingungen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Arbeitsbedingungen (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều kiện làm việc
+      examples:
+        - target: Die Arbeitsbedingungen in unserer Firma sind gut.
+          translation:
+            vi: Điều kiện làm việc ở công ty chúng tôi tốt.
+        - target: Viele Pflegekräfte wünschen sich bessere Arbeitsbedingungen.
+          translation:
+            vi: Nhiều nhân viên điều dưỡng mong có điều kiện làm việc tốt hơn.
+      confusion:
+        vi: "Thường dùng ở số nhiều. die Bedingung còn nghĩa là điều kiện để làm gì (unter einer Bedingung = với một điều kiện)."
+
+  - key: de:item:b2u01-personalabteilung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Personalabteilung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng nhân sự
+      examples:
+        - target: Schicken Sie Ihre Unterlagen bitte an die Personalabteilung.
+          translation:
+            vi: Xin gửi hồ sơ của anh/chị đến phòng nhân sự.
+        - target: Die Personalabteilung hat mich zum Vorstellungsgespräch eingeladen.
+          translation:
+            vi: Phòng nhân sự đã mời tôi đến phỏng vấn.
+      confusion:
+        vi: "das Personal (nhân sự, luôn số ít) + die Abteilung (phòng, ban) → giống cái. Trong công ty lớn còn gọi là HR."
+
+  - key: de:item:b2u01-homeoffice
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Homeoffice, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: làm việc tại nhà
+      examples:
+        - target: Ich arbeite zwei Tage pro Woche im Homeoffice.
+          translation:
+            vi: Mỗi tuần tôi làm việc tại nhà hai ngày.
+        - target: Ist bei Ihnen Homeoffice möglich?
+          translation:
+            vi: Ở công ty anh/chị có được làm việc tại nhà không?
+      confusion:
+        vi: "Từ mượn tiếng Anh, đọc gần như tiếng Anh. Ở Đức, Homeoffice là hình thức làm việc tại nhà; cụm thường dùng: im Homeoffice arbeiten."
+
+  - key: de:item:b2u01-zuverlaessigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zuverlässigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đáng tin cậy
+      examples:
+        - target: Zuverlässigkeit ist in diesem Beruf besonders wichtig.
+          translation:
+            vi: Sự đáng tin cậy đặc biệt quan trọng trong nghề này.
+        - target: Mein früherer Chef hat meine Zuverlässigkeit gelobt.
+          translation:
+            vi: Sếp cũ của tôi đã khen tôi là người đáng tin cậy.
+      confusion:
+        vi: "Danh từ của zuverlässig + đuôi -keit (giống cái)."

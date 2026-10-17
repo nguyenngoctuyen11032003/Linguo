@@ -1,0 +1,436 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u01-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – thư trang trọng gửi cấp trên/cơ sở đào tạo (Wiederholung)
+objectives:
+  - vi: Viết thư trang trọng khoảng 100 từ (kiểu Goethe B2 Schreiben Teil 2), ví dụ xin nghỉ một buổi học hoặc đổi lịch, trả lời đủ các ý của đề.
+  - vi: Đọc hiểu ý kiến của nhiều người về học vấn và nghề nghiệp (kiểu Goethe B2 Lesen Teil 1).
+  - vi: Ôn Nominalstil, từ nối đối lập/nhượng bộ/hệ quả, indem và es giữ chỗ trong văn bản trang trọng.
+estimated_minutes: 27
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:b2u01-vorstellungsgespraech]
+items:
+  - item: de:item:b2u01-g-nominalisierung
+    role: reuse
+  - item: de:item:b2u01-g-genitivattribut
+    role: reuse
+  - item: de:item:b2u01-g-adversativ-konzessiv
+    role: reuse
+  - item: de:item:b2u01-g-auch-wenn
+    role: reuse
+  - item: de:item:b2u01-g-indem
+    role: reuse
+  - item: de:item:b2u01-g-konsekutiv-formal
+    role: reuse
+  - item: de:item:b2u01-g-es-korrelat
+    role: reuse
+  - item: de:item:b2u01-erwerben
+    role: reuse
+  - item: de:item:b2u01-hochschulabschluss
+    role: reuse
+  - item: de:item:b2u01-ansehen
+    role: reuse
+  - item: de:item:b2u01-anerkennen
+    role: reuse
+  - item: de:item:b2u01-auslaendisch
+    role: reuse
+  - item: de:item:b2u01-foerdern
+    role: reuse
+  - item: de:item:b2u01-fortbildung
+    role: reuse
+  - item: de:item:b2u01-personalabteilung
+    role: reuse
+  - item: de:item:b2u01-verantwortung
+    role: reuse
+  - item: de:item:b2u01-befoerderung
+    role: reuse
+  - item: de:item:a2u03-praktikum
+    role: reuse
+  - item: de:item:b1u10-g-formeller-brief
+    role: reuse
+  - item: de:item:b1u04-weiterbildung
+    role: reuse
+  - item: de:item:b1u03-berufserfahrung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu được ý kiến của nhiều người về học vấn và sự nghiệp, và viết được một thư trang trọng khoảng 100 từ, ví dụ để xin vắng mặt ở khoá học vì một đợt bồi dưỡng nghiệp vụ."
+  - type: explain
+    text:
+      vi: "Trong dạng đọc nhiều ý kiến, mỗi người nêu một quan điểm, còn câu hỏi thường diễn đạt lại bằng từ khác (Praxis ↔ praktische Erfahrungen, nicht sofort ↔ zunächst nicht). Hãy dựa vào từ nối để tìm ý chính: einerseits … andererseits (cân nhắc), folglich (kết luận), auch wenn (nhượng bộ), wohingegen (so sánh)."
+  - type: explain
+    text:
+      vi: "Thư trang trọng gồm: lời chào (Sehr geehrte Frau …, / Sehr geehrter Herr …, / Sehr geehrte Damen und Herren,), lý do viết, các ý theo đề, lời đề nghị lịch sự, câu kết (Ich würde mich über eine kurze Rückmeldung freuen.) và Mit freundlichen Grüßen + họ tên. Sau dấu phẩy của lời chào, dòng tiếp theo bắt đầu bằng chữ thường (trừ danh từ và Sie)."
+  - type: explain
+    text:
+      vi: "Thư B2 nên có vài cụm Nominalstil (wegen einer Fortbildung, nach Abschluss des Kurses), từ nối trang trọng (allerdings, folglich, auch wenn) và câu lịch sự với es (Es wäre sehr hilfreich, wenn …). Sie, Ihnen, Ihr luôn viết hoa khi là cách xưng hô lịch sự."
+  - type: explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, phần Schreiben của Goethe-Zertifikat B2 có một bài viết nêu ý kiến và một thư trang trọng khoảng 100 từ theo các ý cho sẵn; cấu trúc, thời gian và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Thiếu một ý của đề là mất điểm, dù tiếng Đức đúng."
+  - type: deep_explain
+    text:
+      vi: "Một thư tốt không cần nhiều cấu trúc khó, nhưng mỗi câu phải rõ chức năng: nêu lý do (wegen …, da …), đề nghị (Ich möchte Sie bitten, … zu …; Könnten Sie …?), đề xuất giải pháp (indem …; Es wäre hilfreich, wenn …), kết thư. Tránh lẫn ngữ vực: không dùng du, Hallo, Liebe Grüße trong thư trang trọng. Khi đọc ý kiến, chú ý từ phủ định và nhượng bộ: zunächst nicht (lúc đầu thì không), kaum weniger (hầu như không ít hơn), auch wenn (dù cho) thường là chỗ đề bài cài bẫy."
+  - type: example
+    target: "Sehr geehrte Frau Becker, wegen einer beruflichen Fortbildung kann ich vom 10. bis 14. März leider nicht am Abendkurs teilnehmen. Die Fortbildung wird von meinem Arbeitgeber gefördert; folglich kann ich den Termin nicht verschieben. Ich möchte Sie daher bitten, mir die Unterlagen per E-Mail zu schicken."
+    target_lang: de
+    translation:
+      vi: "Kính gửi bà Becker, vì tham gia một khoá bồi dưỡng nghiệp vụ, rất tiếc từ ngày 10 đến 14 tháng Ba tôi không thể dự lớp buổi tối. Khoá bồi dưỡng do công ty tôi tài trợ; vì vậy tôi không thể dời lịch. Do đó, tôi xin phép đề nghị bà gửi tài liệu cho tôi qua e-mail."
+    note:
+      vi: "Phần đầu thư mẫu: lời chào (Frau → Sehr geehrte), lý do bằng Nominalstil (wegen + Genitiv), hệ quả với folglich (đảo động từ), lời đề nghị Ich möchte Sie bitten, … zu …"
+  - type: example
+    target: "Den verpassten Stoff werde ich nacharbeiten, indem ich die Aufgaben selbstständig erledige. Außerdem wäre es sehr hilfreich, wenn ich den Test später nachholen könnte. Auch wenn ich eine Woche fehle, möchte ich den Kurs erfolgreich abschließen. Ich würde mich über eine kurze Rückmeldung freuen. Mit freundlichen Grüßen"
+    target_lang: de
+    translation:
+      vi: "Tôi sẽ tự học bù phần bài bị lỡ bằng cách tự làm các bài tập. Ngoài ra, sẽ rất có ích nếu tôi có thể làm bài kiểm tra bù sau. Dù vắng một tuần, tôi vẫn muốn hoàn thành tốt khoá học. Tôi rất mong nhận được hồi âm của bà. Trân trọng"
+    note:
+      vi: "Phần sau thư mẫu (cả thư khoảng 100 từ): giải pháp với indem, câu lịch sự Es wäre hilfreich, wenn …, nhượng bộ với auch wenn, câu kết. Sau Mit freundlichen Grüßen xuống dòng ghi họ tên, không có dấu phẩy."
+  - type: example
+    target: Auch wenn ein Hochschulabschluss Ansehen bringt, ist er nicht für jeden der richtige Weg.
+    target_lang: de
+    translation:
+      vi: Dù bằng đại học mang lại uy tín, nó không phải là con đường đúng cho tất cả mọi người.
+    note:
+      vi: "Câu auch wenn đứng đầu, động từ ist đứng ngay sau dấu phẩy; er thay cho der Hochschulabschluss."
+  - type: common_mistake
+    wrong: Sehr geehrte Herr Becker,
+    right: Sehr geehrter Herr Becker,
+    target_lang: de
+    note:
+      vi: "Người nhận là nam → geehrter; nữ → Sehr geehrte Frau …; không rõ người nhận → Sehr geehrte Damen und Herren."
+  - type: common_mistake
+    wrong: Mit freundlichen Grüße
+    right: Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "mit + Dativ số nhiều: danh từ thêm -n – Grüßen."
+  - type: common_mistake
+    wrong: Ich hoffe, dass du mir bald antwortest.
+    right: Ich hoffe, dass Sie mir bald antworten.
+    target_lang: de
+    note:
+      vi: "Thư trang trọng dùng Sie (viết hoa) và động từ chia theo Sie: antworten."
+  - type: common_mistake
+    wrong: "Sehr geehrte Damen und Herren, Ich schreibe Ihnen wegen meiner Anmeldung."
+    right: "Sehr geehrte Damen und Herren, ich schreibe Ihnen wegen meiner Anmeldung."
+    target_lang: de
+    note:
+      vi: "Lời chào kết thúc bằng dấu phẩy, nên câu tiếp theo bắt đầu bằng chữ thường (ich), trừ danh từ và Sie."
+  - type: summary
+    points:
+      - vi: "Đọc ý kiến: tìm từ nối (einerseits/andererseits, folglich, auch wenn) và chú ý cách diễn đạt khác nhưng cùng nghĩa."
+      - vi: "Thư trang trọng: Sehr geehrte/r … – lý do – các ý của đề – đề nghị – Ich würde mich über eine Rückmeldung freuen – Mit freundlichen Grüßen + họ tên."
+      - vi: "Sau lời chào có dấu phẩy, dòng sau viết thường; Sie/Ihnen/Ihr viết hoa."
+      - vi: "Ngôn ngữ B2: wegen/aufgrund + Genitiv, folglich + đảo, indem, auch wenn, Es wäre hilfreich, wenn …"
+      - vi: "Đủ các ý của đề quan trọng hơn câu phức tạp."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen Teil 1) ----------------
+  - key: de:exercise:b2u01l5-mcq-jana
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-adversativ-konzessiv
+    prompt:
+      stem: "Jana (24): Einerseits habe ich durch mein Studium viel Fachwissen erworben, andererseits fehlte mir lange die Praxis. Erst durch ein Praktikum habe ich gelernt, wie der Berufsalltag funktioniert. Folglich rate ich allen, schon während des Studiums Berufserfahrung zu sammeln. — Was meint Jana?"
+      stem_lang: de
+      options:
+        - { id: j2a, text: "Man sollte schon während des Studiums praktische Erfahrungen sammeln.", lang: de }
+        - { id: j6b, text: "Im Studium lernt man zu wenig Fachwissen.", lang: de }
+        - { id: j9c, text: "Ein Praktikum ist erst nach dem Studium sinnvoll.", lang: de }
+        - { id: j4d, text: "Sie bereut, dass sie studiert hat.", lang: de }
+    answer:
+      correct_option_id: j2a
+    explanation:
+      vi: "Câu kết luận bắt đầu bằng Folglich: Jana khuyên nên tích luỹ kinh nghiệm ngay trong khi học (während des Studiums). Cô ấy nói đã có nhiều kiến thức chuyên môn (viel Fachwissen erworben), chỉ thiếu thực hành; cô ấy không nói hối hận vì đã học đại học."
+    display_answer: Man sollte schon während des Studiums praktische Erfahrungen sammeln.
+
+  - key: de:exercise:b2u01l5-mcq-tobias
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-auch-wenn
+    prompt:
+      stem: "Tobias (31): Nach der Schule habe ich eine Ausbildung zum Elektriker gemacht, wohingegen fast alle meine Freunde studiert haben. Heute verdiene ich als Meister kaum weniger als sie. Auch wenn ein Hochschulabschluss Ansehen bringt, ist er nicht für jeden der richtige Weg. — Richtig oder falsch? Tobias verdient deutlich weniger als seine Freunde mit Studium."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: Heute verdiene ich als Meister kaum weniger als sie – hầu như không ít hơn bạn bè (kaum = hầu như không). Vì vậy câu \"kém hơn nhiều\" (deutlich weniger) là sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b2u01l5-mcq-nguyen-anerkennung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-anerkennen
+    prompt:
+      stem: "Frau Nguyen (45): Als ich nach Deutschland kam, wurde mein Abschluss aus Vietnam zunächst nicht anerkannt. Ich habe mich dennoch nicht entmutigen lassen, sondern eine Weiterbildung gemacht. Ich finde es wichtig, dass Menschen mit ausländischen Abschlüssen besser unterstützt werden. — Richtig oder falsch? Der Abschluss von Frau Nguyen wurde sofort anerkannt."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "wurde … zunächst nicht anerkannt = lúc đầu không được công nhận. sofort (ngay lập tức) trái với zunächst nicht, nên câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b2u01l5-mcq-nguyen-wunsch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      stem: "Frau Nguyen (45): Als ich nach Deutschland kam, wurde mein Abschluss aus Vietnam zunächst nicht anerkannt. Ich habe mich dennoch nicht entmutigen lassen, sondern eine Weiterbildung gemacht. Ich finde es wichtig, dass Menschen mit ausländischen Abschlüssen besser unterstützt werden. — Was wünscht sich Frau Nguyen?"
+      stem_lang: de
+      options:
+        - { id: n3a, text: "mehr Unterstützung für Menschen mit ausländischen Abschlüssen", lang: de }
+        - { id: n7b, text: "dass ausländische Abschlüsse nicht mehr geprüft werden", lang: de }
+        - { id: n1c, text: "kürzere Weiterbildungen für Erwachsene", lang: de }
+        - { id: n5d, text: "mehr Studienplätze für ausländische Studierende", lang: de }
+    answer:
+      correct_option_id: n3a
+    explanation:
+      vi: "Ich finde es wichtig, dass Menschen mit ausländischen Abschlüssen besser unterstützt werden: es báo trước câu dass chứa mong muốn của bà – người có bằng nước ngoài được hỗ trợ tốt hơn. Bà không đòi bỏ việc kiểm tra bằng, cũng không nói về độ dài khoá học hay chỗ học đại học."
+    display_answer: mehr Unterstützung für Menschen mit ausländischen Abschlüssen
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b2u01l5-listen-fortbildung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u01-fortbildung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Liebe Kolleginnen und Kollegen, ab dem nächsten Jahr fördert unsere Firma Fortbildungen. Wer teilnehmen möchte, schickt bitte bis Ende März einen Antrag an die Personalabteilung.
+      options:
+        - { id: o2a, text: "Từ năm sau công ty hỗ trợ các khoá bồi dưỡng; ai muốn tham gia thì gửi đơn cho phòng nhân sự trước cuối tháng Ba.", lang: vi }
+        - { id: o6b, text: "Từ năm sau công ty hỗ trợ các khoá bồi dưỡng; ai muốn tham gia thì gửi đơn cho trưởng phòng trước cuối tháng Ba.", lang: vi }
+        - { id: o9c, text: "Từ năm sau công ty hỗ trợ các khoá bồi dưỡng; ai muốn tham gia thì gửi đơn cho phòng nhân sự trước cuối tháng Năm.", lang: vi }
+        - { id: o4d, text: "Từ năm nay mọi nhân viên bắt buộc phải tham gia một khoá bồi dưỡng.", lang: vi }
+    answer:
+      correct_option_id: o2a
+    explanation:
+      vi: "ab dem nächsten Jahr = từ năm sau; fördert = hỗ trợ (không phải bắt buộc); bis Ende März = trước cuối tháng Ba (März, không phải Mai); an die Personalabteilung = gửi phòng nhân sự."
+    display_answer: Từ năm sau công ty hỗ trợ các khoá bồi dưỡng; ai muốn tham gia thì gửi đơn cho phòng nhân sự trước cuối tháng Ba.
+
+  - key: de:exercise:b2u01l5-listen-befoerderung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u01-befoerderung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich bin mit meiner Stelle zufrieden. Allerdings würde ich gern mehr Verantwortung übernehmen, deshalb habe ich um ein Gespräch über eine Beförderung gebeten.
+      options:
+        - { id: b3a, text: "Người nói hài lòng với công việc nhưng muốn nhận thêm trách nhiệm, nên đã xin một buổi nói chuyện về việc thăng chức.", lang: vi }
+        - { id: b7b, text: "Người nói không hài lòng với công việc nên muốn nghỉ việc.", lang: vi }
+        - { id: b1c, text: "Người nói hài lòng với công việc và không muốn nhận thêm trách nhiệm.", lang: vi }
+        - { id: b5d, text: "Người nói đã được thăng chức và nhận thêm trách nhiệm.", lang: vi }
+    answer:
+      correct_option_id: b3a
+    explanation:
+      vi: "zufrieden = hài lòng; Allerdings würde ich gern mehr Verantwortung übernehmen = tuy nhiên tôi muốn nhận thêm trách nhiệm; um ein Gespräch … gebeten = đã xin một buổi nói chuyện, tức là chưa được thăng chức."
+    display_answer: Người nói hài lòng với công việc nhưng muốn nhận thêm trách nhiệm, nên đã xin một buổi nói chuyện về việc thăng chức.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u01l5-fill-brief
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      template: "Sehr {{b1}} Damen und Herren, … Ich würde mich über eine kurze Rückmeldung {{b2}}. Mit freundlichen {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [freuen]
+        b3: [Grüßen]
+    known_wrong:
+      - answer: geehrten
+        feedback_vi: Không có mạo từ, số nhiều Nominativ nên đuôi là -e – Sehr geehrte Damen und Herren.
+        error_tag: adj_ending
+      - answer: freue
+        feedback_vi: Sau würde cần động từ nguyên thể ở cuối – Ich würde mich … freuen.
+        error_tag: verb_form
+      - answer: Grüße
+        feedback_vi: "mit + Dativ số nhiều: danh từ thêm -n – Mit freundlichen Grüßen."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Lời chào trang trọng: Sehr geehrte Damen und Herren (không mạo từ, số nhiều → -e). würde + nguyên thể ở cuối: Ich würde mich über … freuen. Câu kết: Mit freundlichen Grüßen (mit + Dativ số nhiều)."
+    display_answer: "Sehr geehrte Damen und Herren, … Ich würde mich über eine kurze Rückmeldung freuen. Mit freundlichen Grüßen"
+
+  - key: de:exercise:b2u01l5-fill-nominal
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-nominalisierung
+    prompt:
+      template: "Weil ich krank war → wegen meiner {{b1}} · Nachdem ich mich angemeldet hatte → nach meiner {{b2}} · Bevor der Kurs beginnt → vor {{b3}} des Kurses"
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [Krankheit]
+        b2: [Anmeldung]
+        b3: [Beginn, dem Beginn]
+    known_wrong:
+      - answer: Anmelden
+        feedback_vi: Sau meiner (giống cái) cần danh từ giống cái đuôi -ung – die Anmeldung.
+        error_tag: gender
+      - answer: Krank
+        feedback_vi: krank là tính từ; danh từ là die Krankheit (đuôi -heit, giống cái).
+        error_tag: word_choice
+    explanation:
+      vi: "krank sein → die Krankheit (wegen meiner Krankheit, Genitiv); sich anmelden → die Anmeldung (nach meiner Anmeldung, Dativ); beginnen → der Beginn (vor Beginn des Kurses, cụm thường bỏ mạo từ; vor dem Beginn cũng đúng)."
+    display_answer: "Weil ich krank war → wegen meiner Krankheit · Nachdem ich mich angemeldet hatte → nach meiner Anmeldung · Bevor der Kurs beginnt → vor Beginn des Kurses"
+
+  - key: de:exercise:b2u01l5-tr-antwort
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      source_text: "Tôi rất vui vì anh/chị đã trả lời nhanh như vậy. (thư trang trọng, bắt đầu bằng Es)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Es freut mich, dass Sie so schnell geantwortet haben.
+        - Es freut mich sehr, dass Sie so schnell geantwortet haben.
+        - Es freut mich, dass Sie mir so schnell geantwortet haben.
+        - Es freut mich sehr, dass Sie mir so schnell geantwortet haben.
+        - Es freut mich, dass Sie so rasch geantwortet haben.
+        - Es freut mich sehr, dass Sie so rasch geantwortet haben.
+        - Es hat mich sehr gefreut, dass Sie so schnell geantwortet haben.
+        - Es hat mich gefreut, dass Sie so schnell geantwortet haben.
+    known_wrong:
+      - answer: Es freut mich, dass du so schnell geantwortet hast.
+        feedback_vi: Thư trang trọng dùng Sie (viết hoa) – dass Sie so schnell geantwortet haben.
+        error_tag: register_du_sie
+      - answer: Es freut mich, dass Sie so schnell haben geantwortet.
+        feedback_vi: Trong câu dass, trợ động từ haben đứng cuối, sau Partizip – geantwortet haben.
+        error_tag: verb_position
+      - answer: Es freut mich, dass Sie haben so schnell geantwortet.
+        feedback_vi: Trong câu dass, động từ chia haben đứng cuối câu.
+        error_tag: verb_position
+    explanation:
+      vi: "es báo trước câu dass: Es freut mich (sehr), dass … Trong câu dass, Partizip geantwortet rồi trợ động từ haben đứng cuối; thư trang trọng dùng Sie."
+    display_answer: Es freut mich sehr, dass Sie so schnell geantwortet haben.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u01l5-wb-bitten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-es-korrelat
+    prompt:
+      instruction: "Sắp xếp thành câu trong thư trang trọng: \"Tôi xin đề nghị anh/chị dời buổi hẹn sang thứ Năm.\""
+      tokens:
+        - { id: y-termin, text: Termin }
+        - { id: y-zu, text: zu }
+        - { id: y-sie, text: Sie }
+        - { id: y-donnerstag, text: Donnerstag }
+        - { id: y-ich, text: Ich }
+        - { id: y-verschieben, text: verschieben }
+        - { id: y-komma, text: "," }
+        - { id: y-bitten, text: bitten }
+        - { id: y-den, text: den }
+        - { id: y-auf, text: auf }
+        - { id: y-moechte, text: möchte }
+    answer:
+      orders:
+        - [y-ich, y-moechte, y-sie, y-bitten, y-komma, y-den, y-termin, y-auf, y-donnerstag, y-zu, y-verschieben]
+    explanation:
+      vi: "Câu chính: Ich möchte Sie bitten (möchte ở vị trí 2, bitten ở cuối). Sau dấu phẩy là cụm zu-Infinitiv: tân ngữ den Termin, rồi auf Donnerstag, cuối cùng zu verschieben."
+    display_answer: Ich möchte Sie bitten, den Termin auf Donnerstag zu verschieben.
+
+  - key: de:exercise:b2u01l5-wb-wegen-fortbildung
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-nominalisierung
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Vì một khoá bồi dưỡng nghiệp vụ, thứ Hai tôi không thể dự buổi học.\""
+      tokens:
+        - { id: c-am1, text: am }
+        - { id: c-teilnehmen, text: teilnehmen }
+        - { id: c-einer, text: einer }
+        - { id: c-nicht, text: nicht }
+        - { id: c-kann, text: kann }
+        - { id: c-unterricht, text: Unterricht }
+        - { id: c-wegen, text: Wegen }
+        - { id: c-montag, text: Montag }
+        - { id: c-ich, text: ich }
+        - { id: c-am2, text: am }
+        - { id: c-fortbildung, text: Fortbildung }
+    answer:
+      orders:
+        - [c-wegen, c-einer, c-fortbildung, c-kann, c-ich, c-am1, c-montag, c-nicht, c-am2, c-unterricht, c-teilnehmen]
+        - [c-wegen, c-einer, c-fortbildung, c-kann, c-ich, c-am2, c-montag, c-nicht, c-am1, c-unterricht, c-teilnehmen]
+        - [c-wegen, c-einer, c-fortbildung, c-kann, c-ich, c-am1, c-montag, c-am2, c-unterricht, c-nicht, c-teilnehmen]
+        - [c-wegen, c-einer, c-fortbildung, c-kann, c-ich, c-am2, c-montag, c-am1, c-unterricht, c-nicht, c-teilnehmen]
+    explanation:
+      vi: "Wegen einer Fortbildung (wegen + Genitiv giống cái: einer) chiếm vị trí 1, nên kann đứng ngay sau, rồi ich. am Montag đứng trước; nicht có thể đứng trước am Unterricht hoặc ngay trước teilnehmen. Nguyên thể teilnehmen ở cuối câu."
+    display_answer: Wegen einer Fortbildung kann ich am Montag nicht am Unterricht teilnehmen.
+
+  - key: de:exercise:b2u01l5-tr-aufgrund
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u01-g-nominalisierung
+    prompt:
+      source_text: Aufgrund einer beruflichen Fortbildung kann ich leider nicht an der Prüfung teilnehmen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì một khoá bồi dưỡng nghiệp vụ, tiếc là tôi không thể tham gia kỳ thi.
+        - Vì một khoá bồi dưỡng nghiệp vụ, rất tiếc tôi không thể tham gia kỳ thi.
+        - Do một khoá bồi dưỡng nghiệp vụ, tiếc là tôi không thể tham gia kỳ thi.
+        - Do một khoá bồi dưỡng nghiệp vụ, rất tiếc tôi không thể tham gia kỳ thi.
+        - Vì một khoá bồi dưỡng nghiệp vụ, tiếc là tôi không thể dự thi.
+        - Vì một khoá bồi dưỡng nghiệp vụ, rất tiếc tôi không thể dự thi.
+        - Vì phải tham gia một khoá bồi dưỡng nghiệp vụ, tiếc là tôi không thể dự thi.
+        - Vì phải tham gia một khoá bồi dưỡng nghiệp vụ, rất tiếc tôi không thể tham gia kỳ thi.
+        - Vì có một khoá bồi dưỡng nghiệp vụ nên rất tiếc tôi không thể tham gia kỳ thi.
+        - Do có khoá bồi dưỡng nghiệp vụ, tiếc là tôi không thể tham dự kỳ thi.
+        - Vì một khoá bồi dưỡng chuyên môn, tiếc là tôi không thể tham gia kỳ thi.
+        - Vì một khoá đào tạo nghiệp vụ, tiếc là tôi không thể tham gia kỳ thi.
+        - Rất tiếc, vì một khoá bồi dưỡng nghiệp vụ, tôi không thể tham gia kỳ thi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mặc dù có một khoá bồi dưỡng nghiệp vụ, tôi vẫn tham gia kỳ thi.
+        feedback_vi: aufgrund = vì, do (nguyên nhân), giống wegen; câu gốc nói tôi không thể (nicht) tham gia.
+        error_tag: meaning
+    explanation:
+      vi: "aufgrund + Genitiv = vì, do (trang trọng, như wegen): aufgrund einer beruflichen Fortbildung = vì một khoá bồi dưỡng nghiệp vụ. leider = tiếc là; an der Prüfung teilnehmen = tham gia kỳ thi."
+    display_answer: Vì một khoá bồi dưỡng nghiệp vụ, tiếc là tôi không thể tham gia kỳ thi.
