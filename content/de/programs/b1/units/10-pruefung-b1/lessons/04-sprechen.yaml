@@ -122,7 +122,7 @@ body:
       vi: "Với người bạn gọi là Herr/Frau + họ (Sie), dùng lassen Sie mich; lass mich chỉ dùng với du."
   - type: common_mistake
     wrong: Was?
-    right: Wie bitte? Können Sie das bitte noch einmal sagen?
+    right: Wie bitte? Können Sie das noch einmal sagen?
     target_lang: de
     note:
       vi: "Im lặng khi không hiểu là lỗi hay gặp; còn Was? nghe cộc lốc. Hãy hỏi lại lịch sự."
@@ -277,6 +277,9 @@ exercises:
         - Entschuldigung, dass ich unterbreche, aber ich habe eine Frage.
         - Entschuldigung, wenn ich Sie unterbreche, aber ich hätte eine Frage.
         - Entschuldigung, dass ich Sie unterbreche, aber ich hätte eine Frage.
+        - Entschuldigen Sie, wenn ich Sie unterbreche, aber ich hätte eine Frage.
+        - Entschuldigen Sie bitte, wenn ich Sie unterbreche, aber ich habe eine Frage.
+        - Entschuldigen Sie bitte, dass ich Sie unterbreche, aber ich habe eine Frage.
     known_wrong:
       - answer: Entschuldigung, wenn ich Sie breche unter, aber ich habe eine Frage.
         feedback_vi: "unterbrechen không tách: ich unterbreche, và trong câu phụ nó đứng cuối."

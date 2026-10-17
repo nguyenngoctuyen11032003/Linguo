@@ -70,7 +70,7 @@ body:
     target: Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen bis Freitag schicken könnten.
     target_lang: de
     translation:
-      vi: Tôi sẽ rất cảm ơn nếu ông/bà có thể gửi giấy tờ cho tôi trước thứ Sáu.
+      vi: Tôi sẽ rất cảm ơn nếu ông/bà có thể gửi giấy tờ cho tôi chậm nhất là thứ Sáu.
     note:
       vi: "wäre và könnten là Konjunktiv II – lịch sự hơn Schicken Sie mir …! Câu phụ wenn: động từ könnten đứng cuối."
   - type: example
@@ -98,7 +98,7 @@ body:
     target: "Ich finde es wichtig, dass Schüler in der Schule auch praktische Dinge lernen, zum Beispiel wie man kocht oder wie man mit Geld umgeht. Ich habe das als Jugendlicher nicht gelernt. Deshalb hatte ich am Anfang meines Studiums oft Probleme. Natürlich sind Mathe und Sprachen wichtig, aber im Alltag braucht man auch andere Fähigkeiten. Meiner Meinung nach sollte jede Schule ein solches Fach anbieten."
     target_lang: de
     translation:
-      vi: "Tôi thấy quan trọng là học sinh cũng được học những điều thực tế ở trường, ví dụ nấu ăn hay cách tiêu tiền. Hồi còn là thiếu niên tôi không được học những điều đó. Vì thế lúc mới vào đại học tôi hay gặp khó khăn. Dĩ nhiên toán và ngoại ngữ quan trọng, nhưng trong cuộc sống hằng ngày người ta cũng cần những kỹ năng khác. Theo tôi, trường nào cũng nên có một môn như vậy."
+      vi: "Tôi thấy quan trọng là học sinh cũng được học những điều thực tế ở trường, ví dụ nấu ăn hay cách quản lý tiền bạc. Hồi còn là thiếu niên tôi không được học những điều đó. Vì thế lúc mới vào đại học tôi hay gặp khó khăn. Dĩ nhiên toán và ngoại ngữ quan trọng, nhưng trong cuộc sống hằng ngày người ta cũng cần những kỹ năng khác. Theo tôi, trường nào cũng nên có một môn như vậy."
     note:
       vi: "Bài diễn đàn (kiểu Schreiben Teil 2, khoảng 70 từ): ý kiến → kinh nghiệm bản thân → nhượng bộ (Natürlich …, aber …) → kết luận. Không có lời chào kiểu thư."
   - type: common_mistake
@@ -118,7 +118,7 @@ body:
     right: Leider kann ich am Montag nicht kommen, weil ich krank bin. Könnten wir den Termin auf Mittwoch verschieben? Mit freundlichen Grüßen
     target_lang: de
     note:
-      vi: "Đề yêu cầu ba ý: xin lỗi, lý do, đề nghị ngày khác. Câu bên trái chỉ có một ý nên bài thiếu nội dung, dù ngữ pháp đúng."
+      vi: "Đề yêu cầu ba ý: xin lỗi, lý do, đề nghị ngày khác. Bản sai chỉ có một ý nên bài thiếu nội dung, dù ngữ pháp đúng."
   - type: summary
     points:
       - vi: "Khung: Betreff → Sehr geehrte/r … , → lý do → yêu cầu → câu kết → Mit freundlichen Grüßen + tên."
@@ -179,15 +179,15 @@ exercises:
       stem: "Đọc e-mail trả lời của một trường ngôn ngữ: \"Betreff: Ihre Anfrage – Sehr geehrte Frau Nguyen, vielen Dank für Ihre Anfrage. Leider ist der Abendkurs schon voll. Wir können Ihnen aber einen Platz im Samstagskurs anbieten. Bitte teilen Sie uns bis Freitag mit, ob Sie Interesse haben. Mit freundlichen Grüßen Ihr Team der Sprachschule\" Bà Nguyen cần làm gì?"
       stem_lang: vi
       options:
-        - { id: e1a, text: "Báo cho trường trước thứ Sáu xem bà có muốn học lớp thứ Bảy không.", lang: vi }
-        - { id: e2b, text: "Đăng ký lớp buổi tối trước thứ Sáu.", lang: vi }
+        - { id: e1a, text: "Báo cho trường chậm nhất là thứ Sáu xem bà có muốn học lớp thứ Bảy không.", lang: vi }
+        - { id: e2b, text: "Đăng ký lớp buổi tối chậm nhất là thứ Sáu.", lang: vi }
         - { id: e3c, text: "Đến trường vào thứ Bảy để làm bài kiểm tra.", lang: vi }
         - { id: e4d, text: "Không cần làm gì, vì lớp buổi tối đã có chỗ cho bà.", lang: vi }
     answer:
       correct_option_id: e1a
     explanation:
-      vi: "Leider ist der Abendkurs schon voll = lớp tối đã đầy; trường đề nghị một chỗ ở lớp thứ Bảy (Samstagskurs). Bitte teilen Sie uns bis Freitag mit, ob … = xin báo cho chúng tôi trước thứ Sáu xem bà có quan tâm không."
-    display_answer: "Báo cho trường trước thứ Sáu xem bà có muốn học lớp thứ Bảy không."
+      vi: "Leider ist der Abendkurs schon voll = lớp tối đã đầy; trường đề nghị một chỗ ở lớp thứ Bảy (Samstagskurs). Bitte teilen Sie uns bis Freitag mit, ob … = xin báo cho chúng tôi chậm nhất là thứ Sáu xem bà có quan tâm không."
+    display_answer: "Báo cho trường chậm nhất là thứ Sáu xem bà có muốn học lớp thứ Bảy không."
 
   # ---------------- recall ----------------
   - key: de:exercise:b1u10l3-fill-formeller-brief
@@ -197,7 +197,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u10-g-formeller-brief
     prompt:
-      template: "Sehr {{b1}} Damen und Herren, ich schreibe Ihnen, {{b2}} ich eine Frage zu meiner Rechnung habe. Ich {{b3}} Ihnen dankbar, wenn Sie mir den Betrag erklären könnten. Für Rückfragen stehe ich gern zur {{b4}}. Mit freundlichen Grüßen Minh Tran"
+      template: "Sehr {{b1}} Damen und Herren, ich schreibe Ihnen, {{b2}} ich eine Frage zu meiner Rechnung habe. Ich {{b3}} (sein, Konjunktiv II) Ihnen dankbar, wenn Sie mir den Betrag erklären könnten. Für Rückfragen stehe ich gern zur {{b4}}. Mit freundlichen Grüßen Minh Tran"
       blanks:
         - { id: b1, width_hint: 8 }
         - { id: b2, width_hint: 5 }
@@ -218,6 +218,9 @@ exercises:
         error_tag: verb_position
       - answer: würde
         feedback_vi: "Cụm cố định là Ich wäre Ihnen dankbar (Konjunktiv II của sein), không dùng würde ở đây."
+        error_tag: konjunktiv_form
+      - answer: bin
+        feedback_vi: "Đề yêu cầu Konjunktiv II của sein: Ich wäre Ihnen dankbar, wenn … – cách nhờ lịch sự cố định của thư trang trọng."
         error_tag: konjunktiv_form
     explanation:
       vi: "Sehr geehrte Damen und Herren khi không biết tên người nhận. weil/da mở câu phụ, động từ habe ở cuối. Ich wäre Ihnen dankbar, wenn … (Konjunktiv II). Câu kết cố định: Für Rückfragen stehe ich gern zur Verfügung."
@@ -240,6 +243,8 @@ exercises:
         - Ich möchte mich nach Ihrem Abendkurs erkundigen.
         - Ich möchte mich gern nach Ihrem Abendkurs erkundigen.
         - Ich möchte mich nach dem Kurs am Abend erkundigen.
+        - Ich möchte mich gerne nach dem Abendkurs erkundigen.
+        - Ich möchte mich gerne nach Ihrem Abendkurs erkundigen.
     known_wrong:
       - answer: Ich möchte nach dem Abendkurs erkundigen.
         feedback_vi: "sich erkundigen là động từ phản thân: Ich möchte mich … erkundigen."
@@ -284,7 +289,7 @@ exercises:
         feedback_vi: "Gửi cho ai là Dativ: Ihnen, không phải Sie."
         error_tag: case_dat_akk
     explanation:
-      vi: "anbei = kèm theo đây (chỉ dùng trong thư); hoặc im Anhang (trong tệp đính kèm). jemandem (Dativ: Ihnen) etwas senden/schicken. die Unterlagen (giấy tờ, hồ sơ) dùng ở số nhiều."
+      vi: "anbei = kèm theo đây (chủ yếu dùng trong thư, e-mail); hoặc im Anhang (trong tệp đính kèm). jemandem (Dativ: Ihnen) etwas senden/schicken. die Unterlagen (giấy tờ, hồ sơ) dùng ở số nhiều."
     display_answer: Anbei sende ich Ihnen meine Unterlagen.
 
   # ---------------- application ----------------

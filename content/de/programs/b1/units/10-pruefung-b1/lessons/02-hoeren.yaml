@@ -48,7 +48,7 @@ body:
       vi: "Khi nói nhanh, người Đức hay nuốt âm: ich habe → ich hab, gibt es → gibt's, einen Kaffee → 'n Kaffee, eine Frage → 'ne Frage, ich komme → ich komm. Đây không phải lỗi mà là tiếng Đức nói bình thường, giống như khi nói nhanh tiếng Việt cũng nuốt hoặc nối âm. Bạn cần nghe hiểu những dạng này, còn khi viết bài thi hãy dùng dạng đầy đủ."
   - type: explain
     text:
-      vi: "Cuối câu, người nói hay thêm ne? hoặc gell? với nghĩa \"đúng không?\", \"nhỉ?\" – ne? phổ biến hơn ở miền Bắc, gell?/gelle? chủ yếu ở miền Nam nước Đức và ở Áo. Trả lời không trang trọng: nee hoặc nö (= nein). Tiếng đệm ach so = \"à, ra vậy\"; na ja = \"ừ thì\", \"thôi thì\" (đồng ý nửa vời hoặc hơi do dự)."
+      vi: "Cuối câu, người nói hay thêm ne? hoặc gell? với nghĩa \"đúng không?\", \"nhỉ?\" – nói chung ne? hay gặp hơn ở miền Bắc, còn gell?/gelle? hay gặp ở miền Nam nước Đức và ở Áo (chỉ là xu hướng, không có ranh giới rõ ràng). Trả lời không trang trọng: nee hoặc nö (= nein). Tiếng đệm ach so = \"à, ra vậy\"; na ja = \"ừ thì\", \"thôi thì\" (đồng ý nửa vời hoặc hơi do dự)."
   - type: explain
     text:
       vi: "Trong văn nói, sau weil nhiều người để động từ ở vị trí 2, thường có một chỗ ngừng ngắn: Ich bleib zu Hause, weil – ich bin total müde. Bạn sẽ nghe dạng này rất nhiều, nhưng trong bài viết vẫn phải đặt động từ cuối câu: …, weil ich total müde bin."
@@ -57,7 +57,7 @@ body:
       vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành), phần nghe B1 gồm: các đoạn ngắn (thông báo, tin nhắn thoại, bản tin thời tiết hay giao thông), một bài hướng dẫn hoặc thuyết minh, một cuộc trò chuyện (đúng/sai) và một cuộc thảo luận trên radio (ai nói gì). Hãy đọc câu hỏi trước khi nghe và ghi nhanh từ khóa (ngày, giờ, địa điểm, phủ định) ngay lần nghe đầu. Đừng cố hiểu từng từ: người nói hay sửa lại thông tin (nicht am Mittwoch, sondern am Donnerstag), nên hãy nghe đến hết câu."
   - type: deep_explain
     text:
-      vi: "Những dạng rút gọn khác hay gặp: haste (= hast du), willste (= willst du), is (= ist), nich (= nicht), mal (= einmal), runter/rauf (= herunter/herauf). Trên radio, người dẫn chương trình (der Moderator, die Moderatorin) thường nói khá chuẩn, còn khách mời và người gọi điện (der Anrufer, die Anruferin) nói tự nhiên hơn, đôi khi có giọng địa phương. Bản tin thời tiết dùng nhiều cụm cố định: stark bewölkt, einzelne Schauer, Nebel am Morgen, Temperaturen zwischen 15 und 20 Grad. Tiếng đệm như äh, ähm, also không mang nghĩa chính, bạn có thể bỏ qua khi nghe. Mẹo ghi chú: viết tắt, dùng ký hiệu (↑ tăng, ✗ không), chỉ ghi danh từ và con số."
+      vi: "Những dạng rút gọn khác hay gặp: haste (= hast du), willste (= willst du), is (= ist), nich (= nicht), mal (= einmal), runter (= herunter/hinunter), rauf (= herauf/hinauf). Trên radio, người dẫn chương trình (der Moderator, die Moderatorin) thường nói khá chuẩn, còn khách mời và người gọi điện (der Anrufer, die Anruferin) nói tự nhiên hơn, đôi khi có giọng địa phương. Bản tin thời tiết dùng nhiều cụm cố định: stark bewölkt, einzelne Schauer, Nebel am Morgen, Temperaturen zwischen 15 und 20 Grad. Tiếng đệm như äh, ähm, also không mang nghĩa chính, bạn có thể bỏ qua khi nghe. Mẹo ghi chú: viết tắt, dùng ký hiệu (↑ tăng, ✗ không), chỉ ghi danh từ và con số."
   - type: example
     target: Ich nehm 'n Kaffee, und du? – Für mich nichts, danke.
     target_lang: de
@@ -231,9 +231,6 @@ exercises:
         - Ich habe auf ihrem Anrufbeantworter eine Nachricht hinterlassen.
         - Ich habe eine Nachricht auf ihrem Anrufbeantworter hinterlassen.
     known_wrong:
-      - answer: Ich habe ihr eine Nachricht auf den Anrufbeantworter hinterlassen.
-        feedback_vi: "Nơi lời nhắn nằm (Wo?) nên dùng auf + Dativ: auf dem Anrufbeantworter."
-        error_tag: case_dat_akk
       - answer: Ich habe sie eine Nachricht auf dem Anrufbeantworter hinterlassen.
         feedback_vi: "Để lại cho ai là Dativ: ihr (cho bà ấy), không phải sie."
         error_tag: case_dat_akk
@@ -323,7 +320,7 @@ exercises:
     item: de:item:b1u10-hoerer
     prompt:
       audio_asset_id: null
-      fallback_text: Herzlich willkommen im Stadtmuseum! Unsere Führung dauert etwa eine Stunde. Wir beginnen hier unten mit der Geschichte der Stadt. Danach gehen wir hinauf zu den Bildern aus dem neunzehnten Jahrhundert. Dort dürfen Sie gern fotografieren, aber bitte ohne Blitz. Zum Schluss können Sie im Museumscafé eine Pause machen.
+      fallback_text: Herzlich willkommen im Stadtmuseum! Unsere Führung dauert etwa eine Stunde. Wir beginnen hier unten mit der Geschichte der Stadt. Danach gehen wir die Treppe hinauf in den ersten Stock. Dort sehen Sie Bilder aus dem neunzehnten Jahrhundert. Sie dürfen dort gern fotografieren, aber bitte ohne Blitz. Zum Schluss können Sie im Museumscafé eine Pause machen.
       options:
         - { id: f1a, text: "Chuyến tham quan khoảng một giờ; ở khu tranh thế kỷ 19 được chụp ảnh nhưng không dùng đèn flash.", lang: vi }
         - { id: f2b, text: "Chuyến tham quan khoảng hai giờ; trong bảo tàng không được chụp ảnh.", lang: vi }
@@ -332,7 +329,7 @@ exercises:
     answer:
       correct_option_id: f1a
     explanation:
-      vi: "Kiểu Hören Teil 2 (hướng dẫn tham quan). etwa eine Stunde = khoảng một giờ; bắt đầu hier unten (ở dưới này) rồi mới đi hinauf (lên trên); Dort dürfen Sie fotografieren, aber bitte ohne Blitz = được chụp nhưng không dùng đèn flash."
+      vi: "Kiểu Hören Teil 2 (hướng dẫn tham quan). etwa eine Stunde = khoảng một giờ; bắt đầu hier unten (ở dưới này) rồi mới đi cầu thang lên tầng trên (die Treppe hinauf in den ersten Stock), nơi có tranh thế kỷ 19; Sie dürfen dort gern fotografieren, aber bitte ohne Blitz = được chụp nhưng không dùng đèn flash."
     display_answer: "Chuyến tham quan khoảng một giờ; ở khu tranh thế kỷ 19 được chụp ảnh nhưng không dùng đèn flash."
 
   - key: de:exercise:b1u10l2-mcq-weil-schriftlich

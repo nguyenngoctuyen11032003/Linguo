@@ -67,7 +67,7 @@ body:
       vi: "Sprechen: khi cùng lên kế hoạch, hãy đề nghị, phản hồi đề nghị của bạn thi và thống nhất; khi trình bày, đi theo một khung rõ ràng; khi phản hồi, nhắc lại một ý của bạn thi rồi hỏi thêm. Không hiểu thì hỏi lại (Habe ich dich richtig verstanden, dass …?), cần thời gian thì câu giờ (Moment, lass mich kurz überlegen)."
   - type: deep_explain
     text:
-      vi: "Tự kiểm tra bài viết (tiêu chí gợi ý của Linguo, không phải thang điểm chính thức): (1) Nội dung – đã viết đủ từng ý đề yêu cầu chưa? (2) Mạch lạc – có từ nối (zuerst, außerdem, deshalb, trotzdem, zum Schluss) và đoạn rõ ràng không? (3) Ngữ vực – du hay Sie đúng và nhất quán; lời chào đầu, cuối đúng; Sie, Ihnen viết hoa? (4) Ngữ pháp – động từ ở vị trí 2, động từ cuối câu phụ (weil, dass, ob, wenn), đuôi tính từ, giống của danh từ. (5) Độ dài – gần với số từ đề nêu. Tự kiểm tra bài nói: ghi âm phần trình bày của bạn (khoảng 3 phút), nghe lại và đánh dấu: có mở đầu, các ý chính, kinh nghiệm bản thân, so sánh với Việt Nam và kết luận không; có chỗ nào im lặng quá lâu không. Mẹo phân bổ thời gian: làm phần dễ trước, nhưng đừng bỏ trống câu nào nếu đề không trừ điểm câu sai – hãy kiểm tra quy định hiện hành."
+      vi: "Tự kiểm tra bài viết (tiêu chí gợi ý của Linguo, không phải thang điểm chính thức): (1) Nội dung – đã viết đủ từng ý đề yêu cầu chưa? (2) Mạch lạc – có từ nối (zuerst, außerdem, deshalb, trotzdem, zum Schluss) và đoạn rõ ràng không? (3) Ngữ vực – du hay Sie đúng và nhất quán; lời chào đầu, cuối đúng; Sie, Ihnen viết hoa? (4) Ngữ pháp – động từ ở vị trí 2, động từ cuối câu phụ (weil, dass, ob, wenn), đuôi tính từ, giống của danh từ. (5) Độ dài – gần với số từ đề nêu. Tự kiểm tra bài nói (cũng là gợi ý của Linguo): ghi âm phần trình bày của bạn, nghe lại và đánh dấu: có mở đầu, các ý chính, kinh nghiệm bản thân, so sánh với Việt Nam và kết luận không; có chỗ nào im lặng quá lâu không. Mẹo phân bổ thời gian: làm phần dễ trước, nhưng đừng bỏ trống câu nào nếu đề không trừ điểm câu sai – hãy kiểm tra quy định hiện hành."
   - type: example
     target: "Sehr geehrter Herr Schulz, leider kann ich an der Besprechung am Dienstag nicht teilnehmen, weil ich an diesem Tag einen Arzttermin habe. Ich wäre Ihnen dankbar, wenn Sie mir das Protokoll schicken könnten. Mit freundlichen Grüßen Minh Tran"
     target_lang: de
@@ -271,14 +271,14 @@ exercises:
     difficulty: 3
     item: de:item:b1u10-g-formeller-brief
     prompt:
-      template: "Sehr geehrte Frau Weber, leider kann ich am Montag nicht {{b1}} Kurs kommen. Ich {{b2}} Ihnen dankbar, wenn Sie mir die Unterlagen per E-Mail schicken {{b3}}. Mit freundlichen Grüßen Minh Tran"
+      template: "Sehr geehrte Frau Weber, leider kann ich am Montag nicht {{b1}} Kurs kommen. Ich {{b2}} (sein, Konjunktiv II) Ihnen dankbar, wenn Sie mir die Unterlagen per E-Mail schicken {{b3}}. Mit freundlichen Grüßen Minh Tran"
       blanks:
         - { id: b1, width_hint: 4 }
         - { id: b2, width_hint: 5 }
         - { id: b3, width_hint: 8 }
     answer:
       blanks:
-        b1: [zum]
+        b1: [zum, in den]
         b2: [wäre]
         b3: [könnten, würden]
     known_wrong:
@@ -291,8 +291,11 @@ exercises:
       - answer: würde
         feedback_vi: "Cụm cố định là Ich wäre Ihnen dankbar (Konjunktiv II của sein)."
         error_tag: konjunktiv_form
+      - answer: bin
+        feedback_vi: "Đề yêu cầu Konjunktiv II của sein: Ich wäre Ihnen dankbar, wenn … – cách nhờ lịch sự cố định của thư trang trọng."
+        error_tag: konjunktiv_form
     explanation:
-      vi: "Kiểu Schreiben Teil 3 (tin nhắn trang trọng). zum Kurs kommen = đến lớp. Ich wäre Ihnen dankbar, wenn Sie … schicken könnten (hoặc würden): Konjunktiv II, động từ chia đứng cuối câu wenn."
+      vi: "Kiểu Schreiben Teil 3 (tin nhắn trang trọng). zum Kurs kommen = đến lớp (cũng nói in den Kurs kommen). Ich wäre Ihnen dankbar, wenn Sie … schicken könnten (hoặc würden): Konjunktiv II, động từ chia đứng cuối câu wenn."
     display_answer: "Sehr geehrte Frau Weber, leider kann ich am Montag nicht zum Kurs kommen. Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen per E-Mail schicken könnten. Mit freundlichen Grüßen Minh Tran"
 
   - key: de:exercise:b1u10l5-tr-mitteilen-wann

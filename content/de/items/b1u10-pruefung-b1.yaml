@@ -326,7 +326,7 @@ items:
           translation:
             vi: Phim hay nhỉ? – Ừ thì, đoạn kết hơi chán.
       confusion:
-        vi: "gell?/gelle? chủ yếu nghe ở miền Nam nước Đức và ở Áo; ne? phổ biến hơn ở miền Bắc. Viết bài thi: weil ich keine Zeit habe (động từ cuối), không viết weil ich hab keine Zeit."
+        vi: "Nói chung gell?/gelle? hay nghe ở miền Nam nước Đức và ở Áo, còn ne? hay gặp hơn ở miền Bắc (chỉ là xu hướng, không có ranh giới rõ ràng). Viết bài thi: weil ich keine Zeit habe (động từ cuối), không viết weil ich hab keine Zeit."
 
   - key: de:item:b1u10-wetterbericht
     type: vocab
@@ -368,7 +368,7 @@ items:
           translation:
             vi: Tôi đã gọi, nhưng chỉ có máy trả lời tự động.
       confusion:
-        vi: "Từ ghép der Anruf (cuộc gọi) + der Beantworter (cái trả lời). Với điện thoại di động, người ta thường nói die Mailbox."
+        vi: "Từ ghép der Anruf (cuộc gọi) + Beantworter (từ beantworten – trả lời, thêm đuôi -er chỉ người/vật làm việc đó). Với điện thoại di động, người ta thường nói die Mailbox."
 
   - key: de:item:b1u10-radiosendung
     type: vocab
@@ -389,7 +389,7 @@ items:
           translation:
             vi: Sáng nào tôi cũng nghe chương trình đó trong ô tô.
       confusion:
-        vi: "Danh từ đuôi -ung là giống cái: die Sendung, die Radiosendung. Động từ gốc: senden (phát sóng)."
+        vi: "Danh từ tạo từ động từ + đuôi -ung là giống cái: die Sendung, die Radiosendung. Động từ gốc: senden (phát sóng)."
 
   - key: de:item:b1u10-moderator
     type: vocab
@@ -603,7 +603,7 @@ items:
             vi: Tôi viết thư cho ông/bà vì tôi có một câu hỏi về hóa đơn của mình.
         - target: Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen bis Freitag schicken könnten.
           translation:
-            vi: Tôi sẽ rất cảm ơn nếu ông/bà có thể gửi giấy tờ cho tôi trước thứ Sáu.
+            vi: Tôi sẽ rất cảm ơn nếu ông/bà có thể gửi giấy tờ cho tôi chậm nhất là thứ Sáu.
         - target: Für Rückfragen stehe ich gern zur Verfügung.
           translation:
             vi: Nếu có câu hỏi gì thêm, tôi sẵn sàng trả lời.
@@ -1076,7 +1076,7 @@ items:
           translation:
             vi: Chúng tôi thay phiên nhau nấu ăn.
       confusion:
-        vi: "Động từ tách và phản thân, chủ ngữ số nhiều: wir wechseln uns ab. Thay phiên làm gì: sich bei + Dativ abwechseln."
+        vi: "Động từ tách và phản thân, thường có chủ ngữ số nhiều: wir wechseln uns ab (hoặc: ich wechsle mich mit ihm ab). Thay phiên làm gì: sich bei + Dativ abwechseln."
 
   - key: de:item:b1u10-an-der-reihe-sein
     type: phrase

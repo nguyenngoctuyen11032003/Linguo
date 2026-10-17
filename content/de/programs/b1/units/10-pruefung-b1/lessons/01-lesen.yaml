@@ -102,7 +102,7 @@ body:
     right: Viele Menschen kaufen online ein. Das ist bequem.
     target_lang: de
     note:
-      vi: "Trỏ về cả một việc (câu trước) thì dùng das hoặc dies. dieser luôn cần một danh từ giống đực đã nói hoặc theo sau."
+      vi: "Trỏ về cả một việc (câu trước) thì dùng das hoặc dies. dieser (giống đực) chỉ thay cho một danh từ giống đực cụ thể, không thay cho cả một ý."
   - type: common_mistake
     wrong: Ich lese jeden Tag Zeitung. Deshalb ich verstehe mehr.
     right: Ich lese jeden Tag Zeitung. Deshalb verstehe ich mehr.
@@ -224,7 +224,7 @@ exercises:
         error_tag: preposition
       - answer: deshalb
         feedback_vi: "deshalb là \"vì thế\", không ghép từ giới từ. Ô này cần da- + giới từ trong ngoặc."
-        error_tag: preposition
+        error_tag: word_choice
     explanation:
       vi: "da- + giới từ thay cho ý ở câu trước: dabei (trong thời gian học ở đó), dafür (bù lại: nhà nhỏ nhưng rẻ), dadurch (nhờ nói tiếng Đức mỗi ngày). Mỗi từ ở vị trí 1 hoặc sau dấu phẩy, và động từ đi ngay sau."
     display_answer: "Ich habe ein Jahr in Wien studiert. Dabei habe ich viele nette Leute kennengelernt. Die Wohnung war klein, dafür war sie billig. Ich habe jeden Tag Deutsch gesprochen. Dadurch ist mein Deutsch viel besser geworden."
