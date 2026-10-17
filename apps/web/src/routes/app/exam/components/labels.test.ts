@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { charCount, formatScore, isAnswered, levelRangeLabel, questionTypeLabel } from './labels';
+import { FAMILY_LABELS, charCount, familyLanguage, formatScore, isAnswered, levelRangeLabel, questionTypeLabel } from './labels';
 
 describe('questionTypeLabel', () => {
   it('uses the curated Vietnamese name for known tags', () => {
@@ -15,6 +15,31 @@ describe('questionTypeLabel', () => {
     expect(questionTypeLabel('cefr_write_77')).toBe('Viết — câu 77');
     expect(questionTypeLabel('foo_bar')).toBe('foo bar');
     expect(questionTypeLabel('topik_i_listen')).toBe('Nghe');
+  });
+});
+
+describe('goethe labels', () => {
+  it('has curated Vietnamese names for the Lesen / Hören / Schreiben tags', () => {
+    expect(questionTypeLabel('goethe_listen_short')).toBe('Nghe — hội thoại, thông báo ngắn');
+    expect(questionTypeLabel('goethe_read_match')).toBe('Đọc — ghép thông tin');
+    expect(questionTypeLabel('goethe_read_truefalse')).toBe('Đọc — đúng/sai');
+    expect(questionTypeLabel('goethe_write_email')).toBe('Viết — email, thư');
+    expect(questionTypeLabel('goethe_write_essay')).toBe('Viết — nêu ý kiến');
+  });
+
+  it('keeps uncurated goethe tags readable (family prefix dropped, section and words translated)', () => {
+    expect(questionTypeLabel('goethe_read_sign_extra')).toBe('Đọc — biển báo extra');
+    expect(questionTypeLabel('goethe_listen_conversation_long')).toBe('Nghe — hội thoại long');
+    expect(questionTypeLabel('goethe_write')).toBe('Viết');
+  });
+
+  it('names the family and reads, hears and writes German', () => {
+    expect(FAMILY_LABELS.goethe).toBe('Goethe');
+    expect(familyLanguage('goethe')).toBe('de');
+    expect(familyLanguage('cefr')).toBe('en');
+    expect(familyLanguage('jlpt')).toBe('ja');
+    expect(familyLanguage('topik_i')).toBe('ko');
+    expect(familyLanguage('topik_ii')).toBe('ko');
   });
 });
 

@@ -254,6 +254,18 @@ export const CEFR_RESULT: ExamResult = examResultSchema.parse({
   scoring_verified: true,
 });
 
+export const GOETHE_RESULT: ExamResult = examResultSchema.parse({
+  ...BASE_RESULT,
+  family: 'goethe',
+  form_title_vi: 'Goethe A2 — Đề luyện số 1',
+  estimated_level: null,
+  cefr_sections: [
+    { section: 'reading', level_code: 'a2', reached: true },
+    { section: 'listening', level_code: 'a2', reached: false },
+  ],
+  scoring_verified: true,
+});
+
 export const HISTORY: ExamHistoryEntry[] = [
   {
     attempt_id: uuid(21),

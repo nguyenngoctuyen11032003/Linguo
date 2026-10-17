@@ -8,7 +8,7 @@ export function goalFamily(goal: GoalType | null | undefined): ExamFamily | null
 
 /**
  * PRD §9.2 warning on a hub card when the form does not match the path goal. Mirrors
- * public.exam_structure_warning (latest: supabase/migrations/20261018130000_japanese.sql), which start_exam returns as
+ * public.exam_structure_warning (latest: supabase/migrations/20261018210000_german.sql), which start_exam returns as
  * structure_warning_vi once the attempt exists.
  */
 export function structureWarning(goal: GoalType | null | undefined, family: ExamFamily): string | null {

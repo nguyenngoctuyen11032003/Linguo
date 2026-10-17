@@ -1,7 +1,7 @@
 import { screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
-import { CEFR_RESULT, TOPIK_RESULT } from './exam-fixtures';
+import { CEFR_RESULT, GOETHE_RESULT, TOPIK_RESULT } from './exam-fixtures';
 import { QuestionTypeBreakdown } from './QuestionTypeBreakdown';
 import { ResultSummary } from './ResultSummary';
 import { rubricStorageKey } from './labels';
@@ -35,6 +35,16 @@ describe('ResultSummary', () => {
     expect(screen.queryByText(/Bậc ước lượng/)).not.toBeInTheDocument();
     expect(screen.getByText('Quy đổi tham khảo, không phải kết quả chính thức')).toBeInTheDocument();
     expect(screen.queryByText('Thang điểm chưa được đối chiếu với quy chế hiện hành')).not.toBeInTheDocument();
+  });
+
+  it('shows a goethe result like CEFR: per-section "đạt mức", no conversion, no band estimate', () => {
+    renderExam(<ResultSummary result={GOETHE_RESULT} />);
+    expect(screen.getByText(/Goethe · /)).toBeInTheDocument();
+    expect(screen.getByText('Đạt mức A2 ở phần Đọc (ước lượng)')).toBeInTheDocument();
+    expect(screen.getByText('Chưa đạt mức A2 ở phần Nghe (ước lượng)')).toBeInTheDocument();
+    expect(screen.queryByText(/Quy đổi:/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Bậc ước lượng/)).not.toBeInTheDocument();
+    expect(screen.getByText('Quy đổi tham khảo, không phải kết quả chính thức')).toBeInTheDocument();
   });
 
   it('explains an expired attempt and omits the estimate when there is none', () => {

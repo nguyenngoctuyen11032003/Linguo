@@ -1,5 +1,5 @@
 import { AlertTriangle, CheckCircle2, CircleDashed, Info, PenLine, TimerOff } from 'lucide-react';
-import type { ExamResult } from '@linguo/shared';
+import { isCefrLikeFamily, type ExamResult } from '@linguo/shared';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { cn } from '@/lib/cn';
 import {
@@ -61,7 +61,8 @@ function PercentRing({ value }: { value: number }) {
 /** Total and per-section scores, the TOPIK estimate or CEFR "đạt mức" lines, and every disclaimer. */
 export function ResultSummary({ result }: ResultSummaryProps) {
   const hasEssay = result.review.some((r) => r.kind === 'essay');
-  const isCefr = result.family === 'cefr';
+  // CEFR-style result: per-section "đạt mức" lines, no score conversion (goethe is scored the same way).
+  const isCefr = isCefrLikeFamily(result.family);
   const cefrSections = isCefr ? (result.cefr_sections ?? []) : [];
   const percent = pct(result.total, result.max);
 

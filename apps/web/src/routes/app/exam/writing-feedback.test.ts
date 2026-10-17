@@ -52,4 +52,17 @@ describe('writingFeedbackLevel', () => {
     expect(writingFeedbackLevel(cefr)).toBe('b1');
     expect(writingFeedbackLevel({ ...cefr, cefr_sections: null })).toBe('a2');
   });
+
+  it('pitches goethe feedback at the form level, B1 when unknown', () => {
+    const goethe = { ...result, family: 'goethe' as const, cefr_sections: [{ section: 'writing' as const, level_code: 'a2', reached: false }] };
+    expect(writingFeedbackLevel(goethe)).toBe('a2');
+    expect(writingFeedbackLevel({ ...goethe, cefr_sections: null })).toBe('b1');
+  });
+
+  it('asks for German feedback on a goethe essay', () => {
+    const goethe = { ...result, family: 'goethe' as const, cefr_sections: [{ section: 'writing' as const, level_code: 'b1', reached: true }] };
+    const request = writingFeedbackRequest(goethe, essay);
+    expect(request).toMatchObject({ task: 'review_writing', language: 'de', level: 'b1' });
+    expect(aiRequestSchema.safeParse(request).success).toBe(true);
+  });
 });
