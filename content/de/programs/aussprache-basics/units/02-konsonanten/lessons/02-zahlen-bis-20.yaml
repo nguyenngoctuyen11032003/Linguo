@@ -42,23 +42,23 @@ body:
       vi: Sau i, e, ä, ö, ü, ei, eu và sau phụ âm (l, n, r), ch nhẹ hơn nhiều – ich, sechzehn, Milch. Hãy nói “i”, giữ nguyên lưỡi rồi thổi hơi mạnh qua mặt lưỡi, như tiếng xì nhẹ. Tiếng Việt không có âm này, nên đừng đọc ich thành “ích” có “k” ở cuối.
   - type: explain
     text:
-      vi: Cụm chs đọc là “ks” – sechs nghe như “zeks”, không phải “séch”. Đuôi -ig ở cuối từ đọc như ich – zwanzig là “TSVAN-tsich”, richtig là “RICH-tich”.
+      vi: Cụm chs đọc là “ks” – sechs nghe như “déks” (s đầu = “d” giọng Bắc), không phải “séch”. Đuôi -ig ở cuối từ đọc như ich – zwanzig là “TSVAN-tsich”, richtig là “RICH-tich”.
   - type: explain
     text:
       vi: Số 13–19 ghép số đơn vị với zehn (mười), ngược thứ tự tiếng Việt – dreizehn là “ba-mười” = mười ba. Hai số viết bớt chữ là sechzehn (bỏ s của sechs) và siebzehn (bỏ -en của sieben); elf (11), zwölf (12) và zwanzig (20) là từ riêng.
   - type: explain
     text:
-      vi: Số điện thoại thường được đọc từng chữ số, có khi theo cặp – null eins sieben sechs. Qua điện thoại, người Đức hay nói zwo thay cho zwei để khỏi nhầm với drei.
+      vi: Số điện thoại thường được đọc từng chữ số, có khi theo cặp – null eins sieben sechs. Qua điện thoại, người Đức hay nói zwo thay cho zwei để khỏi nhầm với drei; khi viết bằng chữ thì luôn là zwei.
   - type: deep_explain
     text:
-      vi: Khi có người hỏi lại cách viết một số, bạn đánh vần bằng tên chữ cái đã học ở P0U1 – zwanzig là Zet-We-A-En-Zet-I-Ge. Ở miền Nam Đức, Áo và Thụy Sĩ, đuôi -ig thường đọc là “ik”; cách đó vẫn được hiểu, nhưng bạn nên tập “ich” cho đúng chuẩn phổ biến. Chú ý i trong vierzehn ngắn, khác i dài trong vier. Handy là từ người Đức dùng cho điện thoại di động, dù nghe giống tiếng Anh.
+      vi: Khi có người hỏi lại cách viết một số, bạn đánh vần bằng tên chữ cái đã học ở P0U1 – zwanzig là Zett-We-A-En-Zett-I-Ge. Ở miền Nam Đức, Áo và Thụy Sĩ, đuôi -ig thường đọc là “ik”; cách đó vẫn được hiểu, nhưng bạn nên tập “ich” cho đúng chuẩn phổ biến. Chú ý i trong vierzehn ngắn, khác i dài trong vier. Handy là từ người Đức dùng cho điện thoại di động, dù nghe giống tiếng Anh.
   - type: example
     target: "Wir zählen: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn."
     target_lang: de
     translation:
       vi: "Chúng ta đếm nhé: một, hai, ba, bốn, năm, sáu, bảy, tám, chín, mười."
     note:
-      vi: z trong zwei, zehn = “ts”; v trong vier = “ph”; sechs = “zeks”; acht có ch = “kh”.
+      vi: z trong zwei, zehn = “ts”; v trong vier = “ph”; sechs = “déks”; acht có ch = “kh”.
   - type: example
     target: "elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig"
     target_lang: de
@@ -72,7 +72,7 @@ body:
     translation:
       vi: "Số di động của mình là 0176 238 904."
     note:
-      vi: Đọc từng chữ số, ngắt theo nhóm. Meine (của mình) và ist (là) bạn sẽ học ở A1.
+      vi: Đọc từng chữ số, ngắt theo nhóm (số bịa để luyện tập). Meine (của mình) và ist (là) bạn sẽ học ở A1.
   - type: example
     target: "Wer hat die Nummer acht? – Ich!"
     target_lang: de
@@ -91,9 +91,9 @@ body:
     target: "Zwanzig: Z-W-A-N-Z-I-G."
     target_lang: de
     translation:
-      vi: "Hai mươi: Zet-We-A-En-Zet-I-Ge."
+      vi: "Hai mươi: Zett-We-A-En-Zett-I-Ge."
     note:
-      vi: Đánh vần bằng tên chữ cái tiếng Đức (P0U1) – Z là “tset”, W là “vê”, G là “ghê”.
+      vi: Đánh vần bằng tên chữ cái tiếng Đức (P0U1) – Z là “txét”, W là “vê”, G là “ghê”.
   - type: common_mistake
     wrong: "sechszehn"
     right: "sechzehn"

@@ -143,6 +143,8 @@ items:
     back:
       meaning:
         vi: "Tạm biệt! (thân mật). Cũng viết Tschüs."
+      confusion:
+        vi: "Ở Đức nhiều người cũng nói Tschüss với nhân viên cửa hàng, nhưng khi cần lịch sự, trang trọng (ở cơ quan, với người lớn tuổi mới gặp) hãy dùng Auf Wiedersehen."
       examples:
         - target: "Tschüss, bis bald!"
           translation:
@@ -188,7 +190,7 @@ items:
       pronunciation_note:
         vi: "Wie = “vi”; h trong geht câm, e dài; -t's cuối = “ts”: “vi GHÊ-ts”."
       confusion:
-        vi: "Viết geht's hoặc gehts đều đúng. Với người cần lịch sự, ở A1 bạn sẽ học Wie geht es Ihnen?"
+        vi: "Dấu ' trong geht's thay cho chữ e của es (geht es). Với người cần lịch sự, ở A1 bạn sẽ học Wie geht es Ihnen?"
 
   - key: de:item:p0u2-danke-gut
     type: phrase
@@ -245,7 +247,7 @@ items:
           translation:
             vi: "Chào mừng bạn đến Berlin!"
       pronunciation_note:
-        vi: "z trong herzlich = “ts”; ch sau l là âm “ich” nhẹ; w trong willkommen = “v”: “HE-ts-lich vil-KO-mần”."
+        vi: "z trong herzlich = “ts”; ch trong đuôi -lich (sau i) là âm ich nhẹ; w trong willkommen = “v”: “HE-ts-lich vil-KO-mần”."
 
   # ---------------- bài 2: số 0–20 – ch, -ig ----------------
   - key: de:item:p0u2-g-ch-laute
@@ -269,7 +271,7 @@ items:
             vi: "tôi, đúng, mười sáu, sữa (ch nhẹ, giữa lưỡi)"
         - target: "sechs"
           translation:
-            vi: "sáu (chs = “ks”: “zeks”)"
+            vi: "sáu (chs = “ks”: “déks”, s đầu = “d” giọng Bắc)"
       pronunciation_note:
         vi: "Tiếng Việt không có âm ich-Laut. Hãy nói “i” rồi giữ nguyên lưỡi và thổi mạnh hơi ra – không bật “k” ở cuối như “ích”."
 
@@ -317,7 +319,7 @@ items:
           translation:
             vi: "mười, mười một, mười hai"
       pronunciation_note:
-        vi: "z trong zwei, zehn, zwölf = “ts”; v trong vier = “ph”; ei = “ai”, eu = “oi”; sechs = “zeks”; sieben = “DI-bần” (s đầu = “d” giọng Bắc)."
+        vi: "z trong zwei, zehn, zwölf = “ts”; v trong vier = “ph”; ei = “ai”, eu = “oi”; sechs = “déks”; sieben = “DI-bần” (s đầu = “d” giọng Bắc)."
 
   - key: de:item:p0u2-zahlen-13-20
     type: phrase
@@ -492,7 +494,7 @@ items:
       pos: quy tắc phát âm
     back:
       meaning:
-        vi: "s đứng trước nguyên âm ở đầu âm tiết đọc như “d” giọng Bắc (Sonne, sehr); sch như “s” uốn lưỡi, tròn môi. sp, st ở đầu từ (hoặc đầu một phần của từ ghép) đọc “schp”, “scht”. Âm “x” sau nguyên âm ngắn viết ss, sau nguyên âm dài hoặc nguyên âm đôi viết ß."
+        vi: "s đứng trước nguyên âm ở đầu âm tiết đọc như “d” giọng Bắc (Sonne, sehr); sch như “s” uốn lưỡi, tròn môi. sp, st ở đầu từ (hoặc đầu một phần của từ ghép) đọc “schp”, “scht”. Âm “x” giữa hai nguyên âm hoặc cuối từ gốc viết ss sau nguyên âm ngắn, viết ß sau nguyên âm dài hoặc nguyên âm đôi (một số từ ngắn chỉ có một s: bis, aus, eins)."
       examples:
         - target: "sehr, sieben, Musik"
           translation:
@@ -746,7 +748,7 @@ items:
           translation:
             vi: "đồng hồ, bốn, rất (r thành “a” nhẹ)"
       pronunciation_note:
-        vi: "Đừng rung đầu lưỡi như “r” miền Nam hay đọc r thành “z/d” như giọng Bắc. r rung đầu lưỡi vẫn có ở Bayern, Áo, Thụy Sĩ và được hiểu, nhưng r lưỡi gà là phổ biến nhất."
+        vi: "Đừng rung đầu lưỡi như khi đọc “r” rung trong tiếng Việt, cũng đừng đọc r thành “z/d” như giọng Bắc. r rung đầu lưỡi vẫn có ở Bayern, Áo, Thụy Sĩ và được hiểu, nhưng r lưỡi gà là phổ biến nhất."
 
   - key: de:item:p0u2-g-auslautverhaertung
     type: grammar_point
@@ -930,7 +932,7 @@ items:
       pronunciation_note:
         vi: "au = “ao”; ch sau au = “kh”: “aokh”."
       confusion:
-        vi: "auch đứng sau động từ: Ich komme auch aus Vietnam, không nói Ich auch komme."
+        vi: "Trong câu kể, auch thường đứng sau động từ: Ich komme auch aus Vietnam, không nói Ich auch komme aus Vietnam."
 
   - key: de:item:p0u2-und-du
     type: phrase

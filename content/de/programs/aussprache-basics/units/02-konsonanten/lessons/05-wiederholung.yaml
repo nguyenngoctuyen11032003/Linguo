@@ -81,7 +81,7 @@ body:
       vi: Một đoạn làm quen thường có bốn bước – chào, nói tên (Ich heiße …/Ich bin …), nói quê (Ich komme aus …), hỏi lại (Und du?/Und Sie?) rồi nói Freut mich!. Khi chia tay, thêm Bis bald! nếu thân mật.
   - type: explain
     text:
-      vi: Số điện thoại được đọc từng chữ số hoặc theo cặp – null eins sieben null, vier vier acht, zwölf sechzehn. Khi nghe, hãy viết ngay từng nhóm, chú ý các cặp dễ nhầm zwei/drei, zwölf/zwanzig, sechzehn/sechzig.
+      vi: Số điện thoại được đọc từng chữ số hoặc theo cặp – null eins sieben null, vier acht, zwölf sechzehn. Khi nghe, hãy viết ngay từng nhóm, chú ý các cặp dễ nhầm zwei/drei, zwölf/zwanzig, sechzehn/sechzig.
   - type: explain
     text:
       vi: Ôn nhanh cách đọc – w = “v”, v = “ph”, z = “ts”; ch sau a/o/u = “kh”, sau i/e = ch nhẹ, đuôi -ig = “ich”; s + nguyên âm = “d” giọng Bắc, sp/st đầu từ = “schp/scht”; r lưỡi gà hoặc “a” nhẹ ở cuối âm tiết; b/d/g cuối từ = p/t/k.
@@ -103,14 +103,14 @@ body:
     note:
       vi: Hai người lớn mới gặp, dùng Sie (lịch sự) cho cả đoạn.
   - type: example
-    target: "Meine Handynummer ist null eins sieben null, vier vier acht, zwölf sechzehn."
+    target: "Meine Handynummer ist null eins sieben null, vier acht, zwölf sechzehn."
     target_lang: de
     translation:
-      vi: "Số di động của tôi là 0170 448 1216."
+      vi: "Số di động của tôi là 0170 48 1216."
     note:
-      vi: Nhóm cuối đọc theo cặp – zwölf (12), sechzehn (16).
+      vi: Nhóm cuối đọc theo cặp – zwölf (12), sechzehn (16). Số trong bài là số bịa để luyện tập.
   - type: common_mistake
-    wrong: "Guten Tag! Wie heißen Sie? … Tschüss, Felix!"
+    wrong: "Guten Tag! Wie heißen Sie? … Tschüss, Thomas!"
     right: "Guten Tag! Wie heißen Sie? … Auf Wiedersehen, Herr Weber!"
     target_lang: de
     note:
@@ -164,17 +164,17 @@ exercises:
     item: de:item:p0u2-nummer
     prompt:
       audio_asset_id: null
-      fallback_text: "Meine Nummer ist null eins sieben null, vier vier acht, zwölf sechzehn."
+      fallback_text: "Meine Nummer ist null eins sieben null, vier acht, zwölf sechzehn."
       options:
-        - { id: p1k, text: "0170 448 1216", lang: de }
-        - { id: p2k, text: "0170 448 1260", lang: de }
-        - { id: p3k, text: "0170 484 1216", lang: de }
-        - { id: p4k, text: "0107 448 1216", lang: de }
+        - { id: p1k, text: "0170 48 1216", lang: de }
+        - { id: p2k, text: "0170 48 1260", lang: de }
+        - { id: p3k, text: "0170 84 1216", lang: de }
+        - { id: p4k, text: "0107 48 1216", lang: de }
     answer:
       correct_option_id: p1k
     explanation:
-      vi: null eins sieben null = 0170, vier vier acht = 448, rồi nhóm cuối đọc theo cặp – zwölf (12) sechzehn (16) = 1216. sechzig (60) mới cho ra 60.
-    display_answer: "0170 448 1216"
+      vi: null eins sieben null = 0170, vier acht = 48, rồi nhóm cuối đọc theo cặp – zwölf (12) sechzehn (16) = 1216. Nếu nghe zwölf sechzig (12 và 60) thì mới là 1260.
+    display_answer: "0170 48 1216"
 
   - key: de:exercise:p0u2l5-mcq-lesen-sie
     type: mcq
@@ -419,15 +419,15 @@ exercises:
     difficulty: 2
     item: de:item:p0u2-zahlen-13-20
     prompt:
-      stem: "Đọc tin nhắn của Anna. Hallo Minh! Wie geht's? Meine neue Handynummer: null eins fünf eins, zwei zwei sieben, neunzehn zwanzig. Tschüss, bis bald! Anna. Số mới của Anna là số nào?"
+      stem: "Đọc tin nhắn của Anna. Hallo Minh! Wie geht's? Meine neue Handynummer: null eins fünf eins, zwei sieben, neunzehn zwanzig. Tschüss, bis bald! Anna. Số mới của Anna là số nào?"
       stem_lang: vi
       options:
-        - { id: q1a, text: "0151 227 1920", lang: de }
-        - { id: q2a, text: "0151 227 1290", lang: de }
-        - { id: q3a, text: "0151 272 1920", lang: de }
-        - { id: q4a, text: "0115 227 1920", lang: de }
+        - { id: q1a, text: "0151 27 1920", lang: de }
+        - { id: q2a, text: "0151 27 1290", lang: de }
+        - { id: q3a, text: "0151 72 1920", lang: de }
+        - { id: q4a, text: "0115 27 1920", lang: de }
     answer:
       correct_option_id: q1a
     explanation:
-      vi: null eins fünf eins = 0151, zwei zwei sieben = 227, nhóm cuối đọc theo cặp – neunzehn (19) zwanzig (20) = 1920. Các phương án khác đảo chỗ chữ số.
-    display_answer: "0151 227 1920"
+      vi: null eins fünf eins = 0151, zwei sieben = 27, nhóm cuối đọc theo cặp – neunzehn (19) zwanzig (20) = 1920. Các phương án khác đảo chỗ chữ số.
+    display_answer: "0151 27 1920"

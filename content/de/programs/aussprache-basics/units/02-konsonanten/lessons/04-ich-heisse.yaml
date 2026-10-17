@@ -41,7 +41,7 @@ body:
       vi: Sau bài này, bạn tự giới thiệu tên và quê bằng tiếng Đức, hỏi lại người kia đúng mức thân mật hay lịch sự, và phát âm rõ âm r cùng các phụ âm cuối.
   - type: explain
     text:
-      vi: r đầu âm tiết hoặc sau phụ âm là r lưỡi gà – lưỡi không rung, cuống lưỡi nâng sát về phía sau họng và hơi cọ nhẹ, gần “g/gh” tiếng Việt nhưng lùi sâu hơn – richtig, drei, Frau. Đừng rung đầu lưỡi như “r” miền Nam, cũng đừng đọc thành “z/d” như giọng Bắc.
+      vi: r đầu âm tiết hoặc sau phụ âm là r lưỡi gà – lưỡi không rung, cuống lưỡi nâng sát về phía sau họng và hơi cọ nhẹ, gần “g/gh” tiếng Việt nhưng lùi sâu hơn – richtig, drei, Frau. Đừng rung đầu lưỡi như khi đọc “r” rung trong tiếng Việt, cũng đừng đọc thành “z/d” như giọng Bắc.
   - type: explain
     text:
       vi: Khi r đứng sau nguyên âm dài ở cuối âm tiết, hoặc trong đuôi -er, nó không còn là phụ âm mà thành “a” rất nhẹ – Uhr “u-a”, vier “phi-a”, sehr “dê-a”, Lehrer “LÊ-ra”.
@@ -298,7 +298,7 @@ exercises:
     difficulty: 2
     item: de:item:p0u2-und-sie
     prompt:
-      stem: "Ở buổi gặp mặt của công ty, một bà cụ người Đức nói: “Guten Tag! Ich heiße Ingrid Weber.” Bạn giới thiệu tên mình rồi hỏi lại thế nào cho lịch sự?"
+      stem: "Ở buổi gặp mặt của công ty, một phụ nữ lớn tuổi người Đức nói: “Guten Tag! Ich heiße Ingrid Weber.” Bạn giới thiệu tên mình rồi hỏi lại thế nào cho lịch sự?"
       stem_lang: vi
       options:
         - { id: m3s, text: "Ich heiße Hoa. Und Sie?", lang: de }

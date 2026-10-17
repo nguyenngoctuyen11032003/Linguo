@@ -256,6 +256,7 @@ exercises:
         - "Guten Abend! Wie geht's?"
         - "Guten Abend! Wie gehts?"
         - "Guten Abend! Wie geht es dir?"
+        - "Guten Abend! Wie geht's dir?"
         - "Abend! Wie geht's?"
         - "Abend! Wie gehts?"
     known_wrong:
@@ -290,7 +291,7 @@ exercises:
     answer:
       correct_option_id: q5w
     explanation:
-      vi: Lời tạm biệt lịch sự, trang trọng là Auf Wiedersehen. Tschüss là tạm biệt thân mật, Gute Nacht chỉ dùng khi đi ngủ, còn Hallo là lời chào khi gặp.
+      vi: Lời tạm biệt lịch sự, trang trọng là Auf Wiedersehen. Tschüss là tạm biệt thân mật (nhiều người Đức cũng nói ở cửa hàng, nhưng ở cơ quan thì Auf Wiedersehen an toàn hơn), Gute Nacht chỉ dùng khi đi ngủ, còn Hallo là lời chào khi gặp.
     display_answer: "Auf Wiedersehen!"
 
   - key: de:exercise:p0u2l1-wb-dialog
