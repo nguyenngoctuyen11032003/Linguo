@@ -32,14 +32,14 @@ select is(
        or pg_catalog.pg_get_function_arguments(p.oid) ilike '%content_private%'
        or p.prosrc ilike '%content_private%'
        or p.prosrc ilike '%exercise_keys%')
-     and p.proname not in ('get_lesson', 'submit_exercise', 'complete_lesson')),
+     and p.proname not in ('get_lesson', 'submit_exercise', 'complete_lesson', 'offline_lesson_packs')),
   '{}'::text[], 'only the lesson RPCs among client-callable public functions reference content_private');
 select is(
   (select count(*)::int
    from pg_catalog.pg_proc p
    join pg_catalog.pg_namespace n on n.oid = p.pronamespace
    where n.nspname = 'public'
-     and p.proname in ('get_lesson', 'submit_exercise', 'complete_lesson')
+     and p.proname in ('get_lesson', 'submit_exercise', 'complete_lesson', 'offline_lesson_packs')
      and p.prosrc ilike '%content_private%'
      and not (p.prosecdef and exists (
        select 1 from unnest(coalesce(p.proconfig, '{}'::text[])) as c (setting) where c.setting like 'search_path=%'))),

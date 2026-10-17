@@ -22,6 +22,8 @@ insert into export_excluded values
   ('push_subscriptions', 'device push credentials'),
   -- Bookkeeping for save_push_subscription's 20/hour rate limit, purged after a day: no learner content.
   ('push_subscription_saves', 'push save rate-limit bookkeeping, kept 1 day'),
+  -- Bookkeeping for offline_lesson_packs' 60/hour rate limit, purged per user after a day: no learner content.
+  ('offline_pack_requests', 'offline pack rate-limit bookkeeping, kept 1 day'),
   -- Access-control row the user already reads through staff_role(): not learning data.
   ('staff_roles', 'staff access control');
 

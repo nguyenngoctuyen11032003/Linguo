@@ -767,6 +767,20 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"offline_pack_requests": {
+                  Row: {
+                    "id": string,"requested_at": string,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "id"?: string,"requested_at"?: string,"user_id": string
+                  }
+                  Update: {
+                    "id"?: string,"requested_at"?: string,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"personal_vocab_imports": {
                   Row: {
                     "added": number,"created_at": string,"id": string,"list_id": string | null,"user_id": string
@@ -1215,7 +1229,7 @@ isOneToOne: false
 { Args: { "p_class_id": string }; Returns: string
                            },
 "complete_lesson":
-{ Args: { "p_run_id": string }; Returns: Json
+{ Args: { "p_client_at"?: string,"p_run_id": string }; Returns: Json
                            },
 "content_report_target_version":
 { Args: { "p_id": string,"p_kind": string }; Returns: number
@@ -1555,6 +1569,17 @@ isOneToOne: false
 "mark_notification":
 { Args: { "p_action": string,"p_id": string }; Returns: undefined
                            },
+"offline_lesson_manifest":
+{ Args: { "p_path_id": string }; Returns: {
+              "content_hash": string,"content_version": number,"exercise_versions_hash": string,"items_hash": string,"lesson_id": string
+            }[]
+                           },
+"offline_lesson_packs":
+{ Args: { "p_lesson_ids": (string)[],"p_path_id": string }; Returns: Json
+                           },
+"offline_lesson_public_json":
+{ Args: { "p_lesson_id": string }; Returns: Json
+                           },
 "path_lessons":
 { Args: { "p_path_id": string }; Returns: {
               "estimated_minutes": number,"is_demo": boolean,"lesson_id": string,"lesson_key": string,"lesson_order": number,"level_code": string,"prerequisite_ids": (string)[],"prerequisites_met": boolean,"program_id": string,"program_title": Json,"run_status": string,"title": Json,"unit_id": string,"unit_order": number,"unit_title": Json
@@ -1806,7 +1831,7 @@ isOneToOne: false
 { Args: { "p_form_id": string,"p_mode": string,"p_path_id": string,"p_question_type"?: string,"p_section"?: string }; Returns: Json
                            },
 "start_lesson":
-{ Args: { "p_lesson_id": string,"p_path_id": string }; Returns: Json
+{ Args: { "p_client_at"?: string,"p_lesson_id": string,"p_path_id": string,"p_run_id"?: string }; Returns: Json
                            },
 "study_session_json":
 { Args: { "p_id": string }; Returns: Json

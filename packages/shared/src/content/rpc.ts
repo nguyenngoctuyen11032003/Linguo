@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { ITEM_ROLES, ITEM_TYPES, lessonBlockSchema, localizedTextSchema } from './authoring';
-import { ANSWER_LANGS, EXERCISE_STAGES, EXERCISE_TYPES, VERDICTS } from './exercises';
+import { ANSWER_LANGS, EXERCISE_STAGES, EXERCISE_TYPES, knownWrongSchema, VERDICTS } from './exercises';
 
 // Spec 2 §3.5 and §6.3: JSON returned by path_lessons, get_lesson, start_lesson,
 // submit_exercise and complete_lesson. snake_case mirrors the SQL jsonb exactly.
@@ -23,6 +23,9 @@ export const LESSON_ERROR_CODES = [
   'rate_limited',
   'attempts_incomplete',
   'invalid_cursor',
+  'run_id_conflict',
+  'too_many_lessons',
+  'invalid_lessons',
 ] as const;
 
 export const pathLessonSchema = z.object({
@@ -111,22 +114,24 @@ export const lessonAttemptSchema = submitResultSchema.omit({ replayed: true }).e
 });
 export type LessonAttempt = z.infer<typeof lessonAttemptSchema>;
 
+export const lessonInfoSchema = z.object({
+  id: z.uuid(),
+  key: z.string(),
+  language_code: z.enum(['en', 'ko', 'ja', 'de']),
+  level_code: z.string(),
+  title: localizedTextSchema,
+  objectives: z.array(localizedTextSchema),
+  body: z.array(lessonBlockSchema),
+  estimated_minutes: z.number().int(),
+  skills: z.array(z.string()),
+  content_version: z.number().int(),
+  is_demo: z.boolean(),
+  unit_title: localizedTextSchema,
+  program_title: localizedTextSchema,
+});
+
 export const lessonPayloadSchema = z.object({
-  lesson: z.object({
-    id: z.uuid(),
-    key: z.string(),
-    language_code: z.enum(['en', 'ko', 'ja', 'de']),
-    level_code: z.string(),
-    title: localizedTextSchema,
-    objectives: z.array(localizedTextSchema),
-    body: z.array(lessonBlockSchema),
-    estimated_minutes: z.number().int(),
-    skills: z.array(z.string()),
-    content_version: z.number().int(),
-    is_demo: z.boolean(),
-    unit_title: localizedTextSchema,
-    program_title: localizedTextSchema,
-  }),
+  lesson: lessonInfoSchema,
   items: z.array(lessonItemSchema),
   exercises: z.array(publicExerciseSchema),
   run: lessonRunSchema.nullable(),
@@ -162,3 +167,59 @@ export const submitArgsSchema = z.object({
   p_client_at: z.string(),
 });
 export type SubmitArgs = z.infer<typeof submitArgsSchema>;
+
+// ---------------------------------------------------------------------------
+// Offline lessons (20261020000100_offline_lessons.sql): manifest and packs with answer keys
+// ---------------------------------------------------------------------------
+
+/** One row of offline_lesson_manifest(p_path_id): a pack is stale when any of these differs from the stored one. */
+export const offlineManifestRowSchema = z.object({
+  lesson_id: z.uuid(),
+  content_version: z.number().int(),
+  content_hash: z.string(),
+  exercise_versions_hash: z.string(),
+  items_hash: z.string(),
+});
+export type OfflineManifestRow = z.infer<typeof offlineManifestRowSchema>;
+
+/**
+ * The current answer key of one published exercise. answer_key / rubric stay loose here (the server validated them
+ * at import); localRun parses them per exercise type before grading.
+ */
+export const offlineKeySchema = z.object({
+  exercise_id: z.uuid(),
+  version: z.number().int(),
+  answer_key: z.record(z.string(), z.unknown()),
+  rubric: z.record(z.string(), z.unknown()),
+  known_wrong: z.array(knownWrongSchema),
+  explanation: localizedTextSchema,
+  display_answer: z.string(),
+  created_at: z.string(),
+});
+export type OfflineKey = z.infer<typeof offlineKeySchema>;
+
+/** One lesson of offline_lesson_packs: the public lesson payload (as get_lesson) plus the current keys. */
+export const offlinePackSchema = z.object({
+  lesson: lessonInfoSchema,
+  items: z.array(lessonItemSchema),
+  exercises: z.array(publicExerciseSchema),
+  content_version: z.number().int(),
+  keys: z.array(offlineKeySchema),
+});
+export type OfflinePack = z.infer<typeof offlinePackSchema>;
+
+export const offlinePacksResultSchema = z.object({
+  packs: z.array(offlinePackSchema),
+  /** Requested ids that are not (or no longer) in the path's lesson list. */
+  missing: z.array(z.uuid()),
+});
+export type OfflinePacksResult = z.infer<typeof offlinePacksResultSchema>;
+
+/** Arguments of start_lesson as queued by the offline outbox (a run minted on the device). */
+export const startLessonArgsSchema = z.object({
+  p_lesson_id: z.uuid(),
+  p_path_id: z.uuid(),
+  p_run_id: z.uuid().optional(),
+  p_client_at: z.string().optional(),
+});
+export type StartLessonArgs = z.infer<typeof startLessonArgsSchema>;

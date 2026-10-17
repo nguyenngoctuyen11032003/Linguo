@@ -18,6 +18,9 @@ const LESSON_MESSAGES: Record<LessonErrorCode, string> = {
   rate_limited: 'Bạn đang gửi quá nhanh. Đợi một chút rồi thử lại.',
   attempts_incomplete: 'Còn bài tập chưa có kết quả. Hãy hoàn thành trước khi kết thúc bài.',
   invalid_cursor: 'Vị trí bài học không hợp lệ. Hãy mở lại bài học.',
+  run_id_conflict: 'Lượt học này bị trùng với một lượt khác. Hãy mở lại bài học.',
+  too_many_lessons: 'Yêu cầu tải bài học không hợp lệ. Vui lòng thử lại.',
+  invalid_lessons: 'Yêu cầu tải bài học không hợp lệ. Vui lòng thử lại.',
 };
 
 const MESSAGES: Record<string, string> = {
