@@ -13,6 +13,8 @@ interface Props {
   summary: ReviewSummary | null;
   totals: ReviewQueue['totals'] | null;
   loadingMore: boolean;
+  /** No connection: extra cards come from the server, so the button waits for it. */
+  offline?: boolean;
   onMore: () => void;
   onDone: () => void;
   /** Opened from a study session: "Quay lại phiên học" becomes the main action and no extra cards are offered. */
@@ -24,7 +26,7 @@ function percent(value: number): string {
 }
 
 /** End of a review session: what was done, what is next, and a clear way to stop. */
-export function ReviewSummaryView({ reviewedCount, droppedCount = 0, graded, pendingCount, summary, totals, loadingMore, onMore, onDone, session }: Props) {
+export function ReviewSummaryView({ reviewedCount, droppedCount = 0, graded, pendingCount, summary, totals, loadingMore, offline = false, onMore, onDone, session }: Props) {
   const remembered = graded.filter((g) => g.rating_effective >= 3).length;
   const mastered = graded.filter((g) => g.newly_mastered).length;
   const tomorrow = summary?.forecast[1]?.count ?? null;
@@ -111,8 +113,8 @@ export function ReviewSummaryView({ reviewedCount, droppedCount = 0, graded, pen
           </div>
           {!session && hasMoreCards(totals) && (
             <div className="flex-1">
-              <Button variant="ghost" size="lg" block loading={loadingMore} onClick={onMore}>
-                +10 thẻ nữa
+              <Button variant="ghost" size="lg" block loading={loadingMore} disabled={offline} onClick={onMore}>
+                {offline ? '+10 thẻ nữa (cần mạng)' : '+10 thẻ nữa'}
               </Button>
             </div>
           )}

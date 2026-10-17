@@ -43,6 +43,8 @@ export interface ReviewSessionApi {
   syncFailed: string[];
   pendingCount: number;
   summary: ReviewSummary | null;
+  /** The queue comes from the copy saved on this device (no connection): postponing and extra cards need the network. */
+  fromCache?: boolean;
   /** Fetch 10 more new/due cards after the daily cap ("+10 thẻ nữa"). */
   loadMore: () => Promise<void>;
   retry: () => void;

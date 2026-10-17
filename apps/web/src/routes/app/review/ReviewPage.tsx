@@ -11,6 +11,7 @@ import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
 import { track } from '@/features/analytics';
 import { cn } from '@/lib/cn';
+import { useOnline } from '@/lib/useOnline';
 import type { Confidence } from '@/features/reviews/types';
 import { useReviewSession } from '@/features/reviews/useReviewSession';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
@@ -52,6 +53,7 @@ export function ReviewPage() {
   const toast = useToast();
   const navigate = useNavigate();
   const learningPaths = useLearningPaths();
+  const online = useOnline();
   const { status, card, cardState, position, total, totals, pendingCount } = session;
 
   const [confidence, setConfidence] = useState<Confidence | null>(null);
@@ -251,8 +253,8 @@ export function ReviewPage() {
                 Học bài mới
               </Link>
               {!sessionAction && hasMoreCards(totals) && (
-                <Button variant="ghost" size="lg" block loading={loadingMore} onClick={() => void more()}>
-                  +10 thẻ nữa
+                <Button variant="ghost" size="lg" block loading={loadingMore} disabled={!online} onClick={() => void more()}>
+                  {online ? '+10 thẻ nữa' : '+10 thẻ nữa (cần mạng)'}
                 </Button>
               )}
             </div>
@@ -274,6 +276,7 @@ export function ReviewPage() {
           summary={session.summary}
           totals={totals}
           loadingMore={loadingMore}
+          offline={!online}
           onMore={() => void more()}
           onDone={() => navigate('/app')}
           session={sessionAction}
@@ -389,16 +392,22 @@ export function ReviewPage() {
 
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
         <div className="flex flex-wrap gap-2">
-          <Button variant="ghost" disabled={postponing} onClick={() => void postpone()}>
+          <Button variant="ghost" disabled={postponing || !online} onClick={() => void postpone()}>
             Hoãn sang mai
           </Button>
           {total - position > 1 && (
-            <Button ref={postponeAllRef} variant="ghost" disabled={postponing} onClick={() => setConfirmAllOpen(true)}>
+            <Button ref={postponeAllRef} variant="ghost" disabled={postponing || !online} onClick={() => setConfirmAllOpen(true)}>
               Hoãn tất cả
             </Button>
           )}
         </div>
-        <p className="hidden text-sm text-muted sm:block">Phím tắt: Space lật · 1–4 chấm · P hoãn</p>
+        {online ? (
+          <p className="hidden text-sm text-muted sm:block">Phím tắt: Space lật · 1–4 chấm · P hoãn</p>
+        ) : (
+          <p role="note" className="text-sm text-muted">
+            Đang ngoại tuyến: vẫn chấm thẻ bình thường, hoãn thẻ cần có mạng.
+          </p>
+        )}
       </div>
 
       <PostponeAllDialog

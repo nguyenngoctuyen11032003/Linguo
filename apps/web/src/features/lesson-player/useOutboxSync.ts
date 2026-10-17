@@ -188,6 +188,8 @@ function useOutboxEngine({ client, userId, lockName, storageKeys, read, drain, d
     (force: boolean): Promise<void> => {
       const current = clientRef.current;
       if (!current || !userId) return Promise.resolve();
+      // A browser that says it is offline is right: nothing would get through, so do not burn a request (or a timeout).
+      if (navigator.onLine === false) return Promise.resolve();
       if (inFlight.current) {
         if (force) rerunForced.current = true;
         return inFlight.current;

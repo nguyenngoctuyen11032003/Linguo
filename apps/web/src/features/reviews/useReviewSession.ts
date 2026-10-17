@@ -8,8 +8,12 @@ import { getSupabase } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
 import { isUnansweredError, reviewErrorMessage } from './error-map';
 import { createReviewOutbox, type ReviewOutboxOutcome } from './outbox';
-import { getReviewQueue, getReviewSummary, gradeReview, postponeReviews, REVIEW_EXTRA_LIMIT } from './service';
+import { dropCardFromReviewQueueCache, readReviewQueueCache } from './queueCache';
+import { getReviewQueue, getReviewSummary, gradeReview, postponeReviews, REVIEW_EXTRA_LIMIT, REVIEW_QUEUE_LIMIT } from './service';
 import type { CardUiState, GradeMeta, ReviewSessionApi } from './types';
+
+/** Postponing and extra cards are decided by the server, so they wait for a connection. */
+const OFFLINE_NEEDS_NETWORK = 'Cần có mạng để làm việc này. Thẻ đang ôn vẫn được chấm và lưu để gửi sau.';
 
 type Status = ReviewSessionApi['status'];
 
@@ -24,11 +28,13 @@ interface SessionState {
   syncFailed: string[];
   totals: ReviewQueue['totals'] | null;
   summary: ReviewSummary | null;
+  /** The queue is the copy saved on this device (the server could not be reached). */
+  fromCache: boolean;
 }
 
 type Action =
   | { type: 'loading' }
-  | { type: 'loaded'; cards: ReviewCard[]; totals: ReviewQueue['totals'] }
+  | { type: 'loaded'; cards: ReviewCard[]; totals: ReviewQueue['totals']; fromCache?: boolean }
   | { type: 'failed'; error: string }
   | { type: 'flip' }
   | { type: 'submitting'; cardId: string }
@@ -56,6 +62,7 @@ const initialState: SessionState = {
   syncFailed: [],
   totals: null,
   summary: null,
+  fromCache: false,
 };
 
 function advance(state: SessionState): SessionState {
@@ -73,6 +80,7 @@ function reducer(state: SessionState, action: Action): SessionState {
         status: action.cards.length === 0 ? 'empty' : 'ready',
         cards: action.cards,
         totals: action.totals,
+        fromCache: action.fromCache ?? false,
       };
     case 'failed':
       return { ...initialState, status: 'error', error: action.error };
@@ -191,6 +199,17 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
       return;
     }
     dispatch({ type: 'loading' });
+    /** The saved queue (Home prefetches up to 100 cards): cards graded on this device are never in it, those still waiting in the outbox are filtered here. */
+    const fromCache = (): boolean => {
+      const cached = readReviewQueueCache(userId, pathId);
+      if (!cached) return false;
+      const queued = queuedCardIds(userId);
+      const cards = cached.data.cards.filter((c) => !queued.has(c.card_id)).slice(0, limit ?? REVIEW_QUEUE_LIMIT);
+      dispatch({ type: 'loaded', cards, totals: cached.data.totals, fromCache: true });
+      return true;
+    };
+    // Offline with a saved queue: no request that can only fail (or hang until the timeout).
+    if (navigator.onLine === false && fromCache()) return;
     getReviewQueue(client, pathId, limit ? { limit } : {})
       .then((queue) => {
         if (sessionRef.current !== session) return;
@@ -199,6 +218,7 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
       })
       .catch((error: unknown) => {
         if (sessionRef.current !== session) return;
+        if (isUnansweredError(error) && fromCache()) return;
         dispatch({ type: 'failed', error: reviewErrorMessage(error) });
       });
   }, [client, userId, pathId, waitingForPath, loadAttempt, limit]);
@@ -251,7 +271,7 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
 
   const grade = useCallback(
     async (rating: Rating, meta: GradeMeta) => {
-      const { state: current, client: c, online: isOnline, userId: uid } = latest.current;
+      const { state: current, client: c, online: isOnline, userId: uid, pathId: pathIdAtGrade } = latest.current;
       const card = current.status === 'ready' ? current.cards[current.position] : undefined;
       if (!card || !uid) return;
       const cardState = current.cardStates[card.card_id] ?? FRONT;
@@ -283,6 +303,7 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
           fail(new Error('outbox_unavailable'));
           return;
         }
+        dropCardFromReviewQueueCache(uid, pathIdAtGrade, card.card_id);
         if (same()) dispatch({ type: 'pending', cardId: card.card_id });
       };
       dispatch({ type: 'submitting', cardId: card.card_id });
@@ -297,6 +318,7 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
         }
         try {
           const result = await gradeReview(c, args);
+          dropCardFromReviewQueueCache(uid, pathIdAtGrade, card.card_id);
           if (same()) dispatch({ type: 'graded', cardId: card.card_id, result, advance: true });
         } catch (error) {
           // Timed out or failed before grading: resend later under the same idempotency key.
@@ -312,9 +334,13 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
 
   const postpone = useCallback(
     async (all = false) => {
-      const { state: current, client: c, pathId: p } = latest.current;
+      const { state: current, client: c, pathId: p, userId: uid, online: isOnline } = latest.current;
       const card = current.status === 'ready' ? current.cards[current.position] : undefined;
       if (!card || postponing.current) return;
+      if (!isOnline) {
+        toast.show({ tone: 'info', message: OFFLINE_NEEDS_NETWORK });
+        return;
+      }
       if (!c || !p) {
         toast.show({ tone: 'error', message: reviewErrorMessage(new Error('supabase_unavailable')) });
         return;
@@ -329,6 +355,7 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
         // grade is still waiting in the outbox.
         const ids = all ? current.cards.slice(current.position).map((x) => x.card_id) : [card.card_id];
         const result = await postponeReviews(c, p, ids, crypto.randomUUID());
+        if (uid && result.postponed > 0) for (const id of ids) dropCardFromReviewQueueCache(uid, p, id);
         if (sessionRef.current !== session) return;
         if (all) {
           dispatch({ type: 'postponedAll' });
@@ -350,8 +377,12 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
   );
 
   const loadMore = useCallback(async () => {
-    const { state: current, client: c, pathId: p, userId: uid } = latest.current;
+    const { state: current, client: c, pathId: p, userId: uid, online: isOnline } = latest.current;
     if (!c || !p || !uid || loadingMore.current) return;
+    if (!isOnline) {
+      toast.show({ tone: 'info', message: OFFLINE_NEEDS_NETWORK });
+      return;
+    }
     if (current.status === 'loading' || current.status === 'error') return;
     loadingMore.current = true;
     const session = sessionRef.current;
@@ -387,6 +418,7 @@ export function useReviewSession({ limit }: { limit?: number } = {}): ReviewSess
     syncFailed: state.syncFailed,
     pendingCount: reviews.pendingCount,
     summary: state.summary,
+    fromCache: state.fromCache,
     loadMore,
     retry,
   };

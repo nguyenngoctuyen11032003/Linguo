@@ -32,6 +32,7 @@ const MESSAGES: Record<string, string> = {
   ...PERSONAL_MESSAGES,
   invalid_payload: 'Dữ liệu từ vựng không hợp lệ. Vui lòng thử lại.',
   supabase_unavailable: 'Chưa cấu hình kết nối máy chủ.',
+  offline_required: 'Cần có mạng để làm việc này. Hãy kết nối mạng rồi thử lại.',
 };
 
 const NETWORK_MESSAGE = 'Không kết nối được máy chủ. Kiểm tra mạng và thử lại.';
@@ -44,6 +45,14 @@ function errorCode(error: object): string | null {
   if ('message' in error && typeof error.message === 'string' && CODE_PATTERN.test(error.message)) return error.message;
   if ('code' in error && typeof error.code === 'string' && error.code) return error.code;
   return null;
+}
+
+/**
+ * Creating, renaming, importing, editing and deleting are decided by the server: offline they are refused up front
+ * with `offline_required` (a friendly message) instead of a request that can only fail.
+ */
+export function requireOnline(): void {
+  if (typeof navigator !== 'undefined' && navigator.onLine === false) throw new Error('offline_required');
 }
 
 /** Vietnamese message for a personal vocabulary RPC failure. */

@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useReducer, useState } from 'react';
-import type { StudySession, TodaySessionResult } from '@linguo/shared';
+import { useCallback } from 'react';
+import { todaySessionResultSchema, type StudySession, type TodaySessionResult } from '@linguo/shared';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
 import { getSupabase } from '@/lib/supabase';
+import { useReadThrough } from '@/lib/useReadThrough';
 import { sessionErrorMessage } from './error-map';
 import { getTodaySession } from './service';
 
@@ -17,18 +18,16 @@ export interface TodaySessionState {
   reload: () => void;
   /** Puts the session returned by a mutation (save/reorder/update/finish) on screen without refetching. */
   setSession: (session: StudySession | null) => void;
-}
-
-interface Loaded {
-  key: string;
-  status: TodaySessionState['status'];
-  result: TodaySessionResult | null;
-  error: string | null;
+  /** The session is the copy saved on this device and the server could not confirm it (offline). */
+  stale?: boolean;
+  /** Epoch ms of the copy on screen (for "Cập nhật lúc HH:mm"). */
+  updatedAt?: number | null;
 }
 
 /**
  * `get_today_session` for a learning path (default: the current one). The server is the source of truth, so a
- * reload restores the running session exactly where the learner left it.
+ * reload restores the running session exactly where the learner left it; when it cannot be reached the last copy
+ * saved on this device is shown.
  */
 export function useTodaySession(pathId?: string | null): TodaySessionState {
   const { user } = useAuth();
@@ -37,53 +36,33 @@ export function useTodaySession(pathId?: string | null): TodaySessionState {
   const path = pathId === undefined ? currentId : pathId;
   const waitingForPath = !path && pathsStatus === 'loading';
   const client = getSupabase();
-  const [attempt, reload] = useReducer((n: number) => n + 1, 0);
-  const key = `${userId ?? ''}:${path ?? ''}`;
-  const [loaded, setLoaded] = useState<Loaded>({ key, status: 'loading', result: null, error: null });
-
-  useEffect(() => {
-    if (!userId) return;
-    if (!client) {
-      setLoaded({ key, status: 'error', result: null, error: sessionErrorMessage(new Error('supabase_unavailable')) });
-      return;
-    }
-    if (!path) {
-      if (!waitingForPath) setLoaded({ key, status: 'error', result: null, error: sessionErrorMessage({ message: 'path_not_found' }) });
-      return;
-    }
-    let active = true;
-    // Keep the session of the same path on screen while refreshing.
-    setLoaded((prev) => (prev.key === key ? { ...prev, status: prev.result ? prev.status : 'loading' } : { key, status: 'loading', result: null, error: null }));
-    getTodaySession(client, path)
-      .then((result) => {
-        if (active) setLoaded({ key, status: 'ready', result, error: null });
-      })
-      .catch((error: unknown) => {
-        if (active) setLoaded({ key, status: 'error', result: null, error: sessionErrorMessage(error) });
-      });
-    return () => {
-      active = false;
-    };
-  }, [client, userId, path, waitingForPath, key, attempt]);
-
-  const setSession = useCallback(
-    (session: StudySession | null) => {
-      setLoaded((prev) => {
-        if (prev.key !== key || !prev.result) return prev;
-        return { ...prev, status: 'ready', error: null, result: { ...prev.result, session } };
-      });
+  const read = useReadThrough<TodaySessionResult>({
+    enabled: !waitingForPath,
+    userId,
+    scope: `${userId ?? ''}:${path ?? ''}`,
+    request: path ?? '',
+    cacheName: path ? `today-session:${path}` : null,
+    schema: todaySessionResultSchema,
+    fetcher: () => {
+      if (!client) return Promise.reject(new Error('supabase_unavailable'));
+      if (!path) return Promise.reject({ message: 'path_not_found' });
+      return getTodaySession(client, path);
     },
-    [key],
-  );
+  });
 
-  const current = loaded.key === key ? loaded : { status: 'loading' as const, result: null, error: null };
+  const { update } = read;
+  const setSession = useCallback((session: StudySession | null) => update((result) => ({ ...result, session })), [update]);
+
+  const result = read.data;
   return {
-    status: current.status,
-    session: current.result?.session ?? null,
-    studiedSecondsToday: current.result?.studied_seconds_today ?? 0,
-    dailyGoalMinutes: current.result?.daily_goal_minutes ?? 0,
-    error: current.error,
-    reload,
+    status: read.status,
+    session: result?.session ?? null,
+    studiedSecondsToday: result?.studied_seconds_today ?? 0,
+    dailyGoalMinutes: result?.daily_goal_minutes ?? 0,
+    error: read.status === 'error' ? sessionErrorMessage(read.error) : null,
+    reload: read.reload,
     setSession,
+    stale: read.stale,
+    updatedAt: read.updatedAt,
   };
 }

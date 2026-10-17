@@ -3,15 +3,19 @@ import { Link } from 'react-router';
 import { buttonClasses } from '@/components/ui/Button';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { useReviewQueuePrefetch } from '@/features/reviews/queueCache';
 import { useReviewDue } from '@/features/reviews/useReviewDue';
 import { cn } from '@/lib/cn';
+import { formatUpdatedAt } from '@/lib/read-cache';
 
 /**
  * Home "Ôn tập hôm nay: N thẻ" as a big-number tile: a skeleton holds its place while loading so the cards below do
  * not jump; hidden with nothing due; a load error leaves only a small retry.
  */
 export function ReviewDueCard() {
-  const { status, count, reload } = useReviewDue();
+  const { status, count, reload, stale, updatedAt } = useReviewDue();
+  // Keeps up to 100 due cards on the device so a review session also runs with no network.
+  useReviewQueuePrefetch();
 
   if (status === 'error') {
     return (
@@ -63,6 +67,7 @@ export function ReviewDueCard() {
             <Layers aria-hidden className="mt-px size-3.5" />
             <span>Ôn trước, học mới sau</span>
           </p>
+          {stale && updatedAt ? <p className="mt-0.5 text-xs text-muted">{formatUpdatedAt(updatedAt)}</p> : null}
         </div>
         {/* Below 380px the label hides visually (it stays the link's name) and the button turns into a round arrow. */}
         <Link to="/app/on-tap" className={cn(buttonClasses('ghost', 'md'), 'shrink-0 max-[379px]:size-11 max-[379px]:px-0')}>

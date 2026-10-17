@@ -7,7 +7,8 @@ import { getSupabase } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
 import { isUnansweredError, personalVocabErrorMessage } from './error-map';
 import { createPersonalOutbox, type PersonalGradeArgs, type PersonalOutboxOutcome } from './outbox';
-import { getPersonalQueue, gradePersonalWord } from './service';
+import { dropWordFromPersonalQueueCache, readPersonalQueueCache } from './queueCache';
+import { getPersonalQueue, gradePersonalWord, PERSONAL_QUEUE_LIMIT } from './service';
 
 export type PersonalCardState = 'front' | 'back' | 'submitting';
 
@@ -29,6 +30,8 @@ export interface PersonalReviewApi {
   queued: string[];
   /** Personal vocabulary grades waiting in the outbox (this session or an earlier one). */
   pendingCount: number;
+  /** The queue is the copy saved on this device (no connection). */
+  fromCache?: boolean;
   retry: () => void;
 }
 
@@ -41,11 +44,12 @@ interface State {
   graded: PersonalGradeResult[];
   queued: string[];
   totals: PersonalQueue['totals'] | null;
+  fromCache: boolean;
 }
 
 type Action =
   | { type: 'loading' }
-  | { type: 'loaded'; queue: PersonalQueue }
+  | { type: 'loaded'; queue: PersonalQueue; fromCache?: boolean }
   | { type: 'failed'; error: string }
   | { type: 'flip' }
   | { type: 'submitting' }
@@ -60,7 +64,7 @@ type Action =
   /** A queued grade was dropped by the server. */
   | { type: 'dropped'; wordId: string };
 
-const initial: State = { status: 'loading', error: null, cards: [], position: 0, cardState: 'front', graded: [], queued: [], totals: null };
+const initial: State = { status: 'loading', error: null, cards: [], position: 0, cardState: 'front', graded: [], queued: [], totals: null, fromCache: false };
 
 function advance(state: State): State {
   const position = Math.min(state.position + 1, state.cards.length);
@@ -72,7 +76,7 @@ function reducer(state: State, action: Action): State {
     case 'loading':
       return { ...initial };
     case 'loaded':
-      return { ...initial, status: action.queue.cards.length === 0 ? 'empty' : 'ready', cards: action.queue.cards, totals: action.queue.totals };
+      return { ...initial, status: action.queue.cards.length === 0 ? 'empty' : 'ready', cards: action.queue.cards, totals: action.queue.totals, fromCache: action.fromCache ?? false };
     case 'failed':
       return { ...initial, status: 'error', error: action.error };
     case 'flip':
@@ -138,6 +142,17 @@ export function usePersonalReview(listId: string | null, { limit }: { limit?: nu
       return;
     }
     dispatch({ type: 'loading' });
+    /** The saved queue (written when the lists load online): words graded on this device are not in it, those still waiting in the outbox are filtered here. */
+    const fromCache = (): boolean => {
+      const cached = readPersonalQueueCache(userId, listId);
+      if (!cached) return false;
+      const waiting = new Set(createPersonalOutbox(userId).list().map((e) => e.args.p_word_id));
+      const cards = cached.data.cards.filter((c) => !waiting.has(c.card_id)).slice(0, limit ?? PERSONAL_QUEUE_LIMIT);
+      dispatch({ type: 'loaded', queue: { ...cached.data, cards }, fromCache: true });
+      return true;
+    };
+    // Offline with a saved queue: no request that can only fail.
+    if (navigator.onLine === false && fromCache()) return;
     getPersonalQueue(client, listId, limit)
       .then((queue) => {
         if (session.current !== mine) return;
@@ -146,7 +161,9 @@ export function usePersonalReview(listId: string | null, { limit }: { limit?: nu
         dispatch({ type: 'loaded', queue: waiting.size ? { ...queue, cards: queue.cards.filter((c) => !waiting.has(c.card_id)) } : queue });
       })
       .catch((error: unknown) => {
-        if (session.current === mine) dispatch({ type: 'failed', error: personalVocabErrorMessage(error) });
+        if (session.current !== mine) return;
+        if (isUnansweredError(error) && fromCache()) return;
+        dispatch({ type: 'failed', error: personalVocabErrorMessage(error) });
       });
   }, [client, userId, listId, limit, attempt]);
 
@@ -203,6 +220,7 @@ export function usePersonalReview(listId: string | null, { limit }: { limit?: nu
           return false;
         }
         keys.current.delete(keyId);
+        dropWordFromPersonalQueueCache(uid, listId, wordId);
         if (same()) dispatch({ type: 'queued', wordId });
         return true;
       };
@@ -222,6 +240,7 @@ export function usePersonalReview(listId: string | null, { limit }: { limit?: nu
           return;
         }
         const result = await gradePersonalWord(c, { wordId, rating, idempotencyKey: key });
+        dropWordFromPersonalQueueCache(uid, listId, wordId);
         if (!same()) return;
         keys.current.delete(keyId);
         dispatch({ type: 'graded', result });
@@ -242,7 +261,7 @@ export function usePersonalReview(listId: string | null, { limit }: { limit?: nu
         busy.current = false;
       }
     },
-    [toast],
+    [toast, listId],
   );
 
   const ready = state.status === 'ready';
@@ -260,6 +279,7 @@ export function usePersonalReview(listId: string | null, { limit }: { limit?: nu
     graded: state.graded,
     queued: state.queued,
     pendingCount: personalVocab.pendingCount,
+    fromCache: state.fromCache,
     retry,
   };
 }

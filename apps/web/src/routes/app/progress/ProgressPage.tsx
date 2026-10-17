@@ -12,6 +12,7 @@ import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvide
 import { useProgressDashboard } from '@/features/progress/useProgressDashboard';
 import { useReviewSummary } from '@/features/reviews/useReviewSummary';
 import { cn } from '@/lib/cn';
+import { formatUpdatedAt } from '@/lib/read-cache';
 import { useOnline } from '@/lib/useOnline';
 import { ExamHistoryCard } from '@/routes/app/exam/ExamHistoryCard';
 import { AccuracyList } from './AccuracyList';
@@ -128,6 +129,12 @@ export function ProgressPage() {
     const summary = review.summary;
     content = (
       <div aria-busy={refreshing || undefined} className={cn('reveal-stagger space-y-6 transition-opacity duration-200 lg:space-y-8', refreshing && 'opacity-70')}>
+        {dashboard.stale && dashboard.updatedAt ? (
+          <p role="note" className="flex items-center gap-1.5 text-sm text-muted">
+            <CloudOff aria-hidden className="size-4 shrink-0" />
+            Đang hiện số liệu đã lưu trên máy. {formatUpdatedAt(dashboard.updatedAt)}.
+          </p>
+        ) : null}
         {empty ? (
           <EmptyState
             icon={BarChart3}

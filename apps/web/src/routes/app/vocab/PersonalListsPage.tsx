@@ -1,3 +1,4 @@
+import { StaleNote } from '@/components/ui/StaleNote';
 import { useId, useRef, useState } from 'react';
 import { ChevronRight, NotebookPen, Plus } from 'lucide-react';
 import { Link } from 'react-router';
@@ -49,6 +50,7 @@ export function PersonalListsPage() {
   } else {
     content = (
       <>
+        <StaleNote stale={api.stale} updatedAt={api.updatedAt} />
         {api.status === 'error' && (
           <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
             {api.error}{' '}

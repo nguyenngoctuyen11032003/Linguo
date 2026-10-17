@@ -5,6 +5,7 @@ import { AppBar } from './AppBar';
 import { BottomNav } from './BottomNav';
 import { MoreSheet } from './MoreSheet';
 import { Sidebar } from './Sidebar';
+import { SyncStatusChip } from './SyncStatusChip';
 
 const COLLAPSE_KEY = 'linguo.sidebar.collapsed';
 
@@ -40,6 +41,7 @@ export function AppLayout() {
       <Sidebar className="hidden lg:flex" collapsed={collapsed} onToggle={() => setCollapsed((v) => !v)} />
       <div className="shell__col">
         <AppBar />
+        <SyncStatusChip />
         <main id="main" className="shell__main">
           <div key={pathname} className="shell__route">
             <Outlet />

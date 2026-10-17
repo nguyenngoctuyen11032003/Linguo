@@ -1,7 +1,7 @@
-import { useEffect, useReducer, useState } from 'react';
-import type { ProgressDashboard, ProgressRange } from '@linguo/shared';
+import { progressDashboardSchema, type ProgressDashboard, type ProgressRange } from '@linguo/shared';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { getSupabase } from '@/lib/supabase';
+import { useReadThrough } from '@/lib/useReadThrough';
 import { progressErrorMessage } from './error-map';
 import { getProgressDashboard } from './service';
 
@@ -13,50 +13,43 @@ export interface ProgressDashboardState {
   /** Vietnamese message when status is 'error'. */
   error: string | null;
   reload: () => void;
+  /** The numbers are the copy saved on this device and the server could not confirm them (offline). */
+  stale?: boolean;
+  /** Epoch ms of the copy on screen (for "Cập nhật lúc HH:mm"). */
+  updatedAt?: number | null;
 }
 
-interface Loaded {
-  /** user:path — data never leaks across users or paths. */
-  key: string;
-  status: 'loading' | 'ready' | 'error';
-  data: ProgressDashboard | null;
-  error: string | null;
-}
-
-/** `get_progress_dashboard` for a path and range (spec 8 §4), same pattern as `useReviewSummary`. */
+/**
+ * `get_progress_dashboard` for a path and range (spec 8 §4), same pattern as `useReviewSummary`: the last numbers of
+ * each range are saved on the device and shown when the server cannot be reached.
+ */
 export function useProgressDashboard(pathId: string | null, range: ProgressRange): ProgressDashboardState {
   const { user } = useAuth();
   const userId = user?.id ?? null;
   const client = getSupabase();
-  const [attempt, reload] = useReducer((n: number) => n + 1, 0);
-  const key = `${userId ?? ''}:${pathId ?? ''}`;
-  const [loaded, setLoaded] = useState<Loaded>({ key, status: 'loading', data: null, error: null });
   const idle = !userId || !pathId;
-
-  useEffect(() => {
-    if (!userId || !pathId) return;
-    if (!client) {
-      setLoaded({ key, status: 'error', data: null, error: progressErrorMessage(new Error('supabase_unavailable')) });
-      return;
-    }
-    let active = true;
-    // Keep the previous numbers of the same path on screen while another range (or a reload) is fetched.
-    setLoaded((prev) =>
-      prev.key === key ? { ...prev, status: 'loading', error: null } : { key, status: 'loading', data: null, error: null },
-    );
-    getProgressDashboard(client, pathId, range)
-      .then((data) => {
-        if (active) setLoaded({ key, status: 'ready', data, error: null });
-      })
-      .catch((error: unknown) => {
-        if (active) setLoaded({ key, status: 'error', data: null, error: progressErrorMessage(error) });
-      });
-    return () => {
-      active = false;
-    };
-  }, [client, userId, pathId, range, key, attempt]);
-
-  if (idle) return { status: 'idle', data: null, error: null, reload };
-  const current = loaded.key === key ? loaded : { status: 'loading' as const, data: null, error: null };
-  return { status: current.status, data: current.data, error: current.error, reload };
+  const read = useReadThrough<ProgressDashboard>({
+    enabled: !idle,
+    userId,
+    scope: `${userId ?? ''}:${pathId ?? ''}`,
+    request: `${pathId ?? ''}:${range}`,
+    cacheName: pathId ? `progress:${pathId}:${range}` : null,
+    schema: progressDashboardSchema,
+    loadingOnRefetch: true,
+    // A badge is announced by the call that awarded it; a saved copy must not announce it again on the next launch.
+    forCache: (data) => (data.motivation ? { ...data, motivation: { ...data.motivation, new_badges: [] } } : data),
+    fetcher: () => {
+      if (!client) return Promise.reject(new Error('supabase_unavailable'));
+      return getProgressDashboard(client, pathId!, range);
+    },
+  });
+  if (idle) return { status: 'idle', data: null, error: null, reload: read.reload };
+  return {
+    status: read.status,
+    data: read.data,
+    error: read.status === 'error' ? progressErrorMessage(read.error) : null,
+    reload: read.reload,
+    stale: read.stale,
+    updatedAt: read.updatedAt,
+  };
 }

@@ -1,3 +1,4 @@
+import { StaleNote } from '@/components/ui/StaleNote';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, FileUp, NotebookPen, Pencil, Play, Trash2 } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router';
@@ -168,6 +169,8 @@ export function PersonalListPage() {
           </button>
         </div>
       </div>
+
+      <StaleNote stale={words.stale || lists.stale} updatedAt={words.updatedAt ?? lists.updatedAt} />
 
       {words.status === 'error' && (
         <ErrorState title="Không tải được các từ" description={words.error ?? undefined} onRetry={words.reload} headingLevel="h2" />
