@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u05-nicht-mehr
+order_index: 4
+level: b1
+title:
+  vi: Không còn nữa – phủ định mở rộng (Ich rauche nicht mehr.)
+objectives:
+  - vi: Nghe hiểu ý chính của một chương trình tư vấn sức khoẻ trên radio.
+  - vi: Nói về việc thay đổi thói quen bằng nicht mehr, kein … mehr, noch nicht, noch kein, gar nicht, nie wieder.
+  - vi: Đặt nicht đúng chỗ khi phủ định cả câu hoặc chỉ một thành phần.
+estimated_minutes: 19
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:b1u05-lebensmittel]
+items:
+  - item: de:item:b1u05-g-negation-erweitert
+  - item: de:item:b1u05-sucht
+  - item: de:item:b1u05-suechtig
+  - item: de:item:b1u05-alkohol
+  - item: de:item:b1u05-zigarette
+  - item: de:item:b1u05-schlaf
+  - item: de:item:b1u05-entspannung
+  - item: de:item:b1u05-meditieren
+  - item: de:item:b1u05-druck
+  - item: de:item:b1u05-raucher
+  - item: de:item:b1u05-nichtraucher
+  - item: de:item:b1u05-schlafstoerung
+  - item: de:item:b1u05-rueckfall
+  - item: de:item:b1u05-erholsam
+  - item: de:item:b1u05-vorsatz
+  - item: de:item:b1u05-durchschlafen
+  - item: de:item:b1u05-nikotin
+  - item: de:item:a1u02-g-negation-nicht-kein
+    role: reuse
+  - item: de:item:a2u04-rauchen
+    role: reuse
+  - item: de:item:a2u04-aufhoeren
+    role: reuse
+  - item: de:item:a1u04-einschlafen
+    role: reuse
+  - item: de:item:a2u04-stress
+    role: reuse
+  - item: de:item:b1u02-g-obwohl-trotzdem
+    role: reuse
+  - item: de:item:b1u04-g-je-desto
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được thói quen đã thay đổi, ví dụ: \"Seit einem Jahr rauche ich nicht mehr, und ich trinke auch keinen Alkohol mehr. Einen Rückfall hatte ich noch nicht.\""
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"không … nữa\", tiếng Đức nói nicht mehr: Ich rauche nicht mehr. Với danh từ không có mạo từ hoặc đi với ein, dùng kein … mehr, mehr đứng sau danh từ: Ich trinke keinen Alkohol mehr, Ich habe keine Zigaretten mehr. Không nói nicht mehr Zigaretten – cụm này nghĩa là \"không nhiều thuốc hơn\"."
+  - type: explain
+    text:
+      vi: "\"Chưa\" là noch nicht, với danh từ là noch kein: Ich habe noch nicht gefrühstückt, Ich habe noch keinen Termin. Người Việt hay dịch \"không … nữa\" thành nicht noch – dạng này sai, còn noch nicht lại có nghĩa ngược hẳn (\"chưa\")."
+  - type: explain
+    text:
+      vi: "Muốn nhấn mạnh \"hoàn toàn không\", bạn thêm gar hoặc überhaupt: Ich schlafe gar nicht gut, Das schmeckt mir überhaupt nicht. nie wieder = không bao giờ … nữa (Nie wieder Zigaretten!), còn nur noch = chỉ còn (Ich trinke nur noch eine Tasse Kaffee am Tag)."
+  - type: explain
+    text:
+      vi: "Khi phủ định cả câu, nicht thường đứng gần cuối: sau tân ngữ và trạng từ thời gian, nhưng trước phần cuối khung câu, trước cụm chỉ hướng và trước tính từ sau sein (Ich gehe heute nicht ins Fitnessstudio. Ich kann nicht einschlafen.). Khi chỉ phủ định một thành phần, nicht đứng ngay trước thành phần đó và thường có sondern theo sau: Ich gehe nicht heute, sondern morgen."
+  - type: deep_explain
+    text:
+      vi: "Với danh từ có mạo từ xác định hoặc đại từ sở hữu thì dùng nicht, không dùng kein: Ich rauche diese Zigaretten nicht mehr. Muốn nói \"ít hơn\" chứ không phải \"không … nữa\", hãy dùng nicht mehr so viel: Ich trinke nicht mehr so viel Kaffee. Trả lời câu hỏi phủ định một cách khẳng định thì dùng doch: Rauchst du nicht mehr? – Doch, leider. Câu \"Ich habe noch nie meditiert\" (tôi chưa bao giờ thiền) dùng noch nie. Nếu bạn muốn bỏ thuốc, bác sĩ gia đình hoặc quỹ bảo hiểm y tế có thể giới thiệu chương trình hỗ trợ; nội dung trong bài chỉ là ví dụ ngôn ngữ."
+  - type: example
+    target: Seit einem Jahr rauche ich nicht mehr. Ich habe auch keine Zigaretten mehr zu Hause.
+    target_lang: de
+    translation:
+      vi: Đã một năm nay tôi không hút thuốc nữa. Ở nhà tôi cũng không còn điếu thuốc nào.
+    note:
+      vi: "rauchen (động từ) → nicht mehr; Zigaretten (danh từ không mạo từ) → keine … mehr."
+  - type: example
+    target: Hast du schon einmal meditiert? – Nein, noch nie. Aber ich möchte es gern ausprobieren.
+    target_lang: de
+    translation:
+      vi: Bạn đã bao giờ thiền chưa? – Chưa, chưa bao giờ. Nhưng mình muốn thử.
+    note:
+      vi: "Nói với bạn bè (du). noch nie = chưa bao giờ; noch nicht = chưa (lần này)."
+  - type: example
+    target: Obwohl ich sehr müde bin, kann ich nicht einschlafen.
+    target_lang: de
+    translation:
+      vi: Dù rất mệt nhưng tôi không ngủ được.
+    note:
+      vi: "Ôn obwohl: động từ cuối câu phụ. nicht đứng trước einschlafen ở cuối khung câu."
+  - type: example
+    target: Je weniger Kaffee ich trinke, desto besser schlafe ich.
+    target_lang: de
+    translation:
+      vi: Tôi càng uống ít cà phê thì càng ngủ ngon.
+    note:
+      vi: "Ôn je … desto: vế je có động từ cuối, vế desto có động từ đứng ngay sau so sánh hơn."
+  - type: example
+    target: "Mein Vorsatz war: nie wieder Zigaretten! Nach einem Rückfall im Februar habe ich es noch einmal versucht."
+    target_lang: de
+    translation:
+      vi: "Quyết tâm của tôi là: không bao giờ hút thuốc nữa! Sau một lần tái nghiện hồi tháng Hai, tôi đã thử lại lần nữa."
+    note:
+      vi: "nie wieder = không bao giờ … nữa. noch einmal = thêm một lần nữa (khẳng định, không phải phủ định)."
+  - type: common_mistake
+    wrong: Ich rauche nicht noch.
+    right: Ich rauche nicht mehr.
+    target_lang: de
+    note:
+      vi: "\"không … nữa\" = nicht mehr. noch không mang nghĩa \"nữa\" trong câu phủ định."
+  - type: common_mistake
+    wrong: Ich rauche nicht mehr Zigaretten.
+    right: Ich rauche keine Zigaretten mehr.
+    target_lang: de
+    note:
+      vi: "Danh từ không mạo từ phủ định bằng kein, và mehr đứng sau danh từ."
+  - type: common_mistake
+    wrong: Ich habe keinen Termin noch.
+    right: Ich habe noch keinen Termin.
+    target_lang: de
+    note:
+      vi: "\"chưa có\" + danh từ = noch kein…; noch đứng trước kein."
+  - type: summary
+    points:
+      - vi: "nicht mehr / kein … mehr = không … nữa (Ich rauche nicht mehr. Ich trinke keinen Alkohol mehr.)."
+      - vi: "noch nicht / noch kein = chưa; noch nie = chưa bao giờ."
+      - vi: "gar nicht, überhaupt nicht = hoàn toàn không; nie wieder = không bao giờ nữa; nur noch = chỉ còn."
+      - vi: "Phủ định cả câu: nicht gần cuối, trước phần cuối khung câu, cụm chỉ hướng, tính từ sau sein."
+      - vi: "Phủ định một thành phần: nicht ngay trước nó, thường kèm sondern."
+      - vi: "Từ vựng: die Sucht, süchtig nach, der Schlaf, die Entspannung, meditieren, unter Druck stehen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u05l4-listen-nicht-mehr
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      audio_asset_id: null
+      fallback_text: Seit einem Jahr rauche ich nicht mehr, und ich trinke auch keinen Alkohol mehr.
+      options:
+        - { id: l2a, text: "Đã một năm nay người nói không hút thuốc nữa và cũng không uống rượu bia nữa.", lang: vi }
+        - { id: l6b, text: "Người nói chưa bỏ được thuốc lá, nhưng đã bỏ rượu bia được một năm.", lang: vi }
+        - { id: l9c, text: "Đã một năm nay người nói hút thuốc ít hơn và uống ít rượu bia hơn.", lang: vi }
+        - { id: l4d, text: "Một năm trước người nói bắt đầu hút thuốc và uống rượu bia.", lang: vi }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "nicht mehr và kein … mehr đều nghĩa là \"không … nữa\" (đã dừng hẳn), không phải \"ít hơn\". Seit einem Jahr = đã một năm nay."
+    display_answer: Đã một năm nay người nói không hút thuốc nữa và cũng không uống rượu bia nữa.
+
+  - key: de:exercise:b1u05l4-listen-noch-kein-termin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich habe noch keinen Termin beim Arzt, aber ich rufe morgen in der Praxis an.
+      options:
+        - { id: m3a, text: "Người nói chưa có lịch hẹn với bác sĩ, ngày mai sẽ gọi điện đến phòng khám.", lang: vi }
+        - { id: m7b, text: "Người nói không còn lịch hẹn với bác sĩ nữa và sẽ không gọi lại.", lang: vi }
+        - { id: m1c, text: "Người nói đã có lịch hẹn với bác sĩ vào ngày mai.", lang: vi }
+        - { id: m5d, text: "Người nói chưa có lịch hẹn với bác sĩ, ngày mai sẽ đến thẳng phòng khám.", lang: vi }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "noch keinen Termin = chưa có lịch hẹn (không phải \"không còn\"). anrufen = gọi điện: ich rufe … an – không phải đến tận nơi."
+    display_answer: Người nói chưa có lịch hẹn với bác sĩ, ngày mai sẽ gọi điện đến phòng khám.
+
+  - key: de:exercise:b1u05l4-listen-radio-schlaf
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u05-druck
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Viele Menschen schlafen schlecht, weil sie bei der Arbeit unter Druck stehen. Unser Tipp: Legen Sie am Abend das Handy weg und trinken Sie nach vier Uhr nachmittags keinen Kaffee mehr."
+      options:
+        - { id: q2a, text: "Nhiều người ngủ kém vì áp lực công việc. Lời khuyên: buổi tối cất điện thoại đi và sau 4 giờ chiều không uống cà phê nữa.", lang: vi }
+        - { id: q6b, text: "Nhiều người ngủ kém vì uống cà phê. Lời khuyên: buổi tối cất điện thoại đi và sau 4 giờ chiều không uống cà phê nữa.", lang: vi }
+        - { id: q9c, text: "Nhiều người ngủ kém vì áp lực công việc. Lời khuyên: buổi tối dùng điện thoại để thư giãn và sau 4 giờ chiều chỉ uống một tách cà phê.", lang: vi }
+        - { id: q4d, text: "Nhiều người ngủ kém vì áp lực công việc. Lời khuyên: buổi tối cất điện thoại đi và sau 4 giờ chiều uống ít cà phê hơn.", lang: vi }
+    answer:
+      correct_option_id: q2a
+    explanation:
+      vi: "weil sie bei der Arbeit unter Druck stehen = vì bị áp lực trong công việc (nguyên nhân). das Handy weglegen = cất điện thoại đi; keinen Kaffee mehr = không uống cà phê nữa (không phải \"ít hơn\")."
+    display_answer: "Nhiều người ngủ kém vì áp lực công việc. Lời khuyên: buổi tối cất điện thoại đi và sau 4 giờ chiều không uống cà phê nữa."
+
+  - key: de:exercise:b1u05l4-mcq-nicht-mehr
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      stem: "Câu nào nghĩa là \"Tôi không hút thuốc nữa\"?"
+      stem_lang: vi
+      options:
+        - { id: c5m, text: "Ich rauche nicht mehr.", lang: de }
+        - { id: c1n, text: "Ich rauche nicht noch.", lang: de }
+        - { id: c8x, text: "Ich rauche noch nicht.", lang: de }
+        - { id: c3v, text: "Ich rauche nicht viel.", lang: de }
+    answer:
+      correct_option_id: c5m
+    explanation:
+      vi: "\"không … nữa\" = nicht mehr. nicht noch là sai; noch nicht nghĩa là \"chưa (hút)\"; nicht viel là \"không nhiều\"."
+    display_answer: Ich rauche nicht mehr.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u05l4-fill-keinen-mehr
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      template: "Früher habe ich jeden Tag vier Tassen Kaffee getrunken, aber heute trinke ich {{b1}} Kaffee {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [keinen]
+        b2: [mehr]
+    known_wrong:
+      - answer: nicht
+        feedback_vi: Kaffee là danh từ không có mạo từ, nên phủ định bằng kein – keinen Kaffee mehr.
+        error_tag: article
+      - answer: kein
+        feedback_vi: der Kaffee là giống đực, Akkusativ – keinen.
+        error_tag: case_dat_akk
+      - answer: noch
+        feedback_vi: "\"không … nữa\" là kein … mehr, không dùng noch."
+        error_tag: meaning
+    explanation:
+      vi: "Danh từ không mạo từ (Kaffee) → kein; der Kaffee là tân ngữ Akkusativ giống đực → keinen. mehr đứng sau danh từ: keinen Kaffee mehr = không uống cà phê nữa."
+    display_answer: "Früher habe ich jeden Tag vier Tassen Kaffee getrunken, aber heute trinke ich keinen Kaffee mehr."
+
+  - key: de:exercise:b1u05l4-fill-noch-keinen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      template: "Hast du schon einen Termin bei der Hautärztin? – Nein, ich habe {{b1}} keinen. Ich rufe morgen in der Praxis an."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [noch]
+    known_wrong:
+      - answer: schon
+        feedback_vi: "\"chưa có\" là noch kein – noch keinen."
+        error_tag: meaning
+      - answer: mehr
+        feedback_vi: Người nói chưa từng có lịch hẹn, nên là noch keinen (chưa), không phải keinen mehr (không còn).
+        error_tag: meaning
+    explanation:
+      vi: "Người nói chưa có lịch nhưng sẽ gọi điện đặt: noch kein(en) = chưa có. keinen thay cho keinen Termin."
+    display_answer: "Hast du schon einen Termin bei der Hautärztin? – Nein, ich habe noch keinen. Ich rufe morgen in der Praxis an."
+
+  - key: de:exercise:b1u05l4-tr-seit-januar
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      source_text: Từ tháng Một tôi không hút thuốc nữa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Seit Januar rauche ich nicht mehr.
+        - Ich rauche seit Januar nicht mehr.
+        - Seit Januar rauche ich keine Zigaretten mehr.
+        - Ich rauche seit Januar keine Zigaretten mehr.
+        - Seit Januar bin ich Nichtraucher.
+        - Ich bin seit Januar Nichtraucher.
+        - Seit Januar bin ich Nichtraucherin.
+        - Ich bin seit Januar Nichtraucherin.
+    known_wrong:
+      - answer: Seit Januar rauche ich nicht noch.
+        feedback_vi: "\"không … nữa\" = nicht mehr."
+        error_tag: meaning
+      - answer: Seit Januar ich rauche nicht mehr.
+        feedback_vi: Seit Januar ở vị trí 1 thì động từ rauche đứng ở vị trí 2 – Seit Januar rauche ich …
+        error_tag: verb_position
+      - answer: Seit Januar rauche ich nicht mehr Zigaretten.
+        feedback_vi: Danh từ không mạo từ phủ định bằng kein, mehr đứng sau – keine Zigaretten mehr.
+        error_tag: word_order
+    explanation:
+      vi: "\"không … nữa\" = nicht mehr (hoặc keine Zigaretten mehr). seit + mốc thời gian, động từ ở hiện tại vì đến giờ vẫn không hút."
+    display_answer: Seit Januar rauche ich nicht mehr.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u05l4-wb-obwohl-einschlafen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-schlafstoerung
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Obwohl: \"Dù rất mệt nhưng tôi không ngủ được.\""
+      tokens:
+        - { id: e-kann, text: kann }
+        - { id: e-ich1, text: ich }
+        - { id: e-einschlafen, text: einschlafen }
+        - { id: e-obwohl, text: Obwohl }
+        - { id: e-bin, text: bin }
+        - { id: e-komma, text: "," }
+        - { id: e-sehr, text: sehr }
+        - { id: e-nicht, text: nicht }
+        - { id: e-ich2, text: ich }
+        - { id: e-muede, text: müde }
+    answer:
+      orders:
+        - [e-obwohl, e-ich1, e-sehr, e-muede, e-bin, e-komma, e-kann, e-ich2, e-nicht, e-einschlafen]
+        - [e-obwohl, e-ich2, e-sehr, e-muede, e-bin, e-komma, e-kann, e-ich1, e-nicht, e-einschlafen]
+    explanation:
+      vi: "Câu obwohl: động từ bin đứng cuối. Câu phụ là vị trí 1, nên kann đứng ngay sau dấu phẩy, rồi ich. Phủ định cả câu: nicht đứng trước einschlafen ở cuối khung câu."
+    display_answer: Obwohl ich sehr müde bin, kann ich nicht einschlafen.
+
+  - key: de:exercise:b1u05l4-mcq-nicht-heute
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      stem: "Câu nào nghĩa là \"Không phải hôm nay tôi đi tập gym, mà là ngày mai\"?"
+      stem_lang: vi
+      options:
+        - { id: g4h, text: "Ich gehe nicht heute ins Fitnessstudio, sondern morgen.", lang: de }
+        - { id: g8j, text: "Ich gehe heute ins Fitnessstudio nicht, sondern morgen.", lang: de }
+        - { id: g2k, text: "Ich gehe heute nicht mehr ins Fitnessstudio.", lang: de }
+        - { id: g6p, text: "Nicht gehe ich heute ins Fitnessstudio, sondern morgen.", lang: de }
+    answer:
+      correct_option_id: g4h
+    explanation:
+      vi: "Chỉ phủ định một thành phần (heute) thì nicht đứng ngay trước nó, sau đó sondern + thành phần đúng (morgen). nicht không đứng sau cụm chỉ hướng ins Fitnessstudio và không đứng ở vị trí 1 trước động từ; heute nicht mehr nghĩa là \"hôm nay không đi nữa\"."
+    display_answer: Ich gehe nicht heute ins Fitnessstudio, sondern morgen.
+
+  - key: de:exercise:b1u05l4-tr-meditieren
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u05-meditieren
+    prompt:
+      source_text: Seitdem ich jeden Abend meditiere, habe ich gar keine Schlafstörungen mehr.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ khi thiền mỗi tối, tôi hoàn toàn không còn bị mất ngủ nữa.
+        - Từ khi tôi thiền mỗi tối, tôi hoàn toàn không còn bị mất ngủ nữa.
+        - Kể từ khi thiền mỗi tối, tôi hoàn toàn không còn bị mất ngủ nữa.
+        - Từ khi thiền vào mỗi buổi tối, tôi hoàn toàn không còn bị mất ngủ nữa.
+        - Từ khi thiền mỗi tối, tôi không còn bị mất ngủ chút nào nữa.
+        - Từ khi thiền mỗi tối, tôi không còn mất ngủ chút nào nữa.
+        - Từ khi thiền mỗi tối, tôi hoàn toàn không còn bị rối loạn giấc ngủ nữa.
+        - Từ khi thiền mỗi tối, tôi không còn bị mất ngủ nữa.
+        - Từ khi tôi thiền mỗi tối, tôi không còn mất ngủ nữa.
+        - Từ khi tôi thiền mỗi tối, tôi không bị mất ngủ nữa.
+        - Từ khi thiền mỗi tối, tôi chẳng còn bị mất ngủ nữa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Từ khi thiền mỗi tối, tôi vẫn còn bị mất ngủ.
+        feedback_vi: "gar keine … mehr = hoàn toàn không còn … nữa, không phải \"vẫn còn\"."
+        error_tag: meaning
+    explanation:
+      vi: "seitdem = từ khi (động từ meditiere cuối câu phụ). gar keine Schlafstörungen mehr = hoàn toàn không còn bị rối loạn giấc ngủ/mất ngủ nữa: gar nhấn mạnh, kein … mehr = không … nữa."
+    display_answer: Từ khi thiền mỗi tối, tôi hoàn toàn không còn bị mất ngủ nữa.

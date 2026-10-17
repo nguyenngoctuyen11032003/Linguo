@@ -1,0 +1,405 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u05-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – diễn đàn về ăn uống (Wiederholung)
+objectives:
+  - vi: Đọc các ý kiến ngắn trên diễn đàn và xác định ai ủng hộ, ai phản đối (kiểu Goethe B1 Lesen Teil 4).
+  - vi: Viết bài diễn đàn khoảng 80 từ về ăn chay, nêu ý kiến, lý do và ví dụ (kiểu Schreiben Teil 2).
+  - vi: Nghe chương trình tư vấn trên radio và nhận ra ai nói gì (kiểu Hören Teil 4).
+estimated_minutes: 24
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:b1u05-nicht-mehr]
+items:
+  - item: de:item:b1u05-g-passiv-modal
+    role: reuse
+  - item: de:item:b1u05-g-falls
+    role: reuse
+  - item: de:item:b1u05-g-adj-dekl-vollstaendig
+    role: reuse
+  - item: de:item:b1u05-g-nominalisierte-adjektive
+    role: reuse
+  - item: de:item:b1u05-g-wortbildung-nomen
+    role: reuse
+  - item: de:item:b1u05-g-negation-erweitert
+    role: reuse
+  - item: de:item:b1u05-vegetarisch
+    role: reuse
+  - item: de:item:b1u05-vegan
+    role: reuse
+  - item: de:item:b1u05-sich-ernaehren
+    role: reuse
+  - item: de:item:b1u05-ausgewogen
+    role: reuse
+  - item: de:item:b1u05-ernaehrung
+    role: reuse
+  - item: de:item:b1u05-bewegung
+    role: reuse
+  - item: de:item:b1u05-blutdruck
+    role: reuse
+  - item: de:item:b1u05-salz
+    role: reuse
+  - item: de:item:b1u05-vorsatz
+    role: reuse
+  - item: de:item:b1u05-wuerstchen
+    role: reuse
+  - item: de:item:a1u03-fleisch
+    role: reuse
+  - item: de:item:a2u04-diaet
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc nhanh được các ý kiến trên diễn đàn, nghe hiểu lời khuyên trên radio và viết được bài diễn đàn khoảng 80 từ về chuyện ăn chay.
+  - type: explain
+    text:
+      vi: "Ở dạng bài đọc ý kiến, bạn đọc nhiều ý kiến ngắn về cùng một câu hỏi và quyết định mỗi người ủng hộ (Ja) hay phản đối (Nein). Hãy tìm các cụm nêu quan điểm: Ich bin dafür / dagegen, Meiner Meinung nach …, Ich halte nichts von …, Das finde ich gut. Cẩn thận với aber và trotzdem: người viết có thể nêu một điểm trừ trước rồi mới kết luận là ủng hộ."
+  - type: explain
+    text:
+      vi: "Bài diễn đàn khoảng 80 từ gồm: ý kiến của bạn, lý do, một ví dụ từ kinh nghiệm bản thân và có thể thêm một lời khuyên. Hãy dùng cấu trúc của unit này để bài viết đạt mức B1: bị động với modal (Es sollten mehr vegetarische Gerichte angeboten werden), falls, phủ định (nicht mehr, noch nie), etwas Neues."
+  - type: explain
+    text:
+      vi: "Khi nghe radio dạng phỏng vấn, bạn phải biết ai nói ý nào. Hãy chú ý các từ phủ định và giới hạn như nicht mehr, noch nicht, nur noch, gar nicht: chúng thường là chỗ phân biệt đáp án đúng với đáp án nhiễu."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, Goethe-Zertifikat B1 có phần đọc với nhiều ý kiến ngắn (Lesen Teil 4), phần viết bài diễn đàn khoảng 80 từ (Schreiben Teil 2) và phần nghe một cuộc thảo luận trên radio (Hören Teil 4); số câu, thời gian và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Trên diễn đàn người Đức thường xưng du hoặc ihr với người đọc (Probiert doch mal …!). Các ý kiến về ăn uống trong bài chỉ là ví dụ để luyện tiếng, không phải lời khuyên y tế."
+  - type: example
+    target: "Ich esse seit zwei Jahren vegetarisch und fühle mich sehr gut. Am Anfang war es nicht leicht, weil ich sehr gern Würstchen gegessen habe. Heute vermisse ich Fleisch gar nicht mehr. Meiner Meinung nach muss nicht jeder Vegetarier werden. Aber falls man weniger Fleisch essen möchte, sollte man mit kleinen Schritten anfangen, zum Beispiel mit zwei Tagen ohne Fleisch pro Woche. Wichtig ist eine ausgewogene Ernährung mit viel Gemüse und Obst. Probiert doch mal etwas Neues!"
+    target_lang: de
+    translation:
+      vi: "Tôi ăn chay đã hai năm và cảm thấy rất khoẻ. Lúc đầu không dễ, vì tôi rất thích ăn xúc xích. Bây giờ tôi không còn thèm thịt chút nào nữa. Theo tôi, không phải ai cũng cần trở thành người ăn chay. Nhưng nếu muốn ăn ít thịt hơn thì nên bắt đầu từng bước nhỏ, ví dụ hai ngày mỗi tuần không ăn thịt. Quan trọng là ăn uống cân bằng với nhiều rau và trái cây. Các bạn hãy thử điều gì đó mới xem!"
+    note:
+      vi: "Bài mẫu khoảng 80 từ: ý kiến – kinh nghiệm – lời khuyên. Có gar nicht mehr, falls, etwas Neues, kleinen Schritten (Dativ số nhiều không mạo từ → -en)."
+  - type: example
+    target: Ich halte nichts von strengen Diäten. Besser sind eine ausgewogene Ernährung und mehr Bewegung.
+    target_lang: de
+    translation:
+      vi: Tôi không tán thành các chế độ ăn kiêng khắt khe. Ăn uống cân bằng và vận động nhiều hơn thì tốt hơn.
+    note:
+      vi: "nichts halten von + Dativ = không tán thành. von strengen Diäten: Dativ số nhiều không mạo từ → -en."
+  - type: example
+    target: Wegen seines hohen Blutdrucks isst mein Vater weniger Salz.
+    target_lang: de
+    translation:
+      vi: Vì bị huyết áp cao nên bố tôi ăn ít muối hơn.
+    note:
+      vi: "wegen + Genitiv: seines hohen Blutdrucks (der Blutdruck → des/seines Blutdrucks; hoch → hohen)."
+  - type: common_mistake
+    wrong: Meiner Meinung nach ich esse zu viel Fleisch.
+    right: Meiner Meinung nach esse ich zu viel Fleisch.
+    target_lang: de
+    note:
+      vi: "Meiner Meinung nach chiếm vị trí 1, nên động từ esse đứng ngay sau, rồi mới đến ich."
+  - type: common_mistake
+    wrong: Ich bin dafür, weil Gemüse ist gesund.
+    right: Ich bin dafür, weil Gemüse gesund ist.
+    target_lang: de
+    note:
+      vi: "Trong bài viết, câu weil đẩy động từ xuống cuối."
+  - type: common_mistake
+    wrong: Ich wünsche dir alles Gutes.
+    right: Ich wünsche dir alles Gute.
+    target_lang: de
+    note:
+      vi: "Sau alles đuôi là -e: alles Gute (khác với etwas Gutes)."
+  - type: summary
+    points:
+      - vi: "Đọc ý kiến: tìm dafür/dagegen, Meiner Meinung nach, Ich halte nichts von …; cẩn thận với aber, trotzdem."
+      - vi: "Bài diễn đàn ~80 từ: ý kiến – lý do – ví dụ bản thân – lời khuyên."
+      - vi: "Nghe: chú ý nicht mehr, noch nicht, nur noch, gar nicht."
+      - vi: "Bị động + modal: … sollte angeboten werden; câu phụ: …, dass … angeboten werden sollte."
+      - vi: "Đuôi tính từ đủ 4 cách: wegen seines hohen Blutdrucks; etwas Neues; alles Gute."
+      - vi: "Hậu tố → giống: die Ernährung, die Gesundheit, das Würstchen."
+exercises:
+  # ---------------- recognition: đọc ý kiến ----------------
+  - key: de:exercise:b1u05l5-mcq-forum-anna
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-vegetarisch
+    prompt:
+      stem: "Forum – Sollte es in jeder Schulkantine jeden Tag ein vegetarisches Gericht geben? Anna, 34: Ich esse seit drei Jahren kein Fleisch mehr und fühle mich sehr gut. Meiner Meinung nach sollte in jeder Kantine mindestens ein vegetarisches Gericht angeboten werden. Falls die Kinder Fleisch essen wollen, können sie ja trotzdem wählen. — Ist Anna dafür?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn1
+    explanation:
+      vi: "Anna viết: Meiner Meinung nach sollte … mindestens ein vegetarisches Gericht angeboten werden – theo chị, căng tin nào cũng nên có ít nhất một món chay. Chị ủng hộ."
+    display_answer: Ja
+
+  - key: de:exercise:b1u05l5-mcq-forum-bauer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      stem: "Forum – Sollte es in jeder Schulkantine jeden Tag ein vegetarisches Gericht geben? Herr Bauer, 58: Ich habe nichts gegen vegetarisches Essen, ich koche selbst oft ohne Fleisch. Aber jeden Tag und in jeder Schule? Das sollte jede Schule selbst entscheiden, nicht die Politik. — Ist Herr Bauer dafür?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn2
+    explanation:
+      vi: "Ông Bauer không phản đối món chay nói chung, nhưng với câu hỏi \"mỗi ngày, ở mọi trường\" thì ông nói: Das sollte jede Schule selbst entscheiden – mỗi trường tự quyết. Vì vậy ông không ủng hộ quy định này."
+    display_answer: Nein
+
+  - key: de:exercise:b1u05l5-mcq-forum-lena
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-nominalisierte-adjektive
+    prompt:
+      stem: "Forum – Sollte es in jeder Schulkantine jeden Tag ein vegetarisches Gericht geben? Lena, 41: Meine Kinder essen gar nicht gern Gemüse. Trotzdem bin ich dafür, denn in der Schule probieren sie vielleicht etwas Neues. — Ist Lena dafür?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn1
+    explanation:
+      vi: "Câu đầu nói các con chị không thích rau (gar nicht gern), nhưng sau trotzdem chị kết luận: Trotzdem bin ich dafür – chị vẫn ủng hộ, vì ở trường các con có thể thử món mới (etwas Neues)."
+    display_answer: Ja
+
+  - key: de:exercise:b1u05l5-mcq-forum-paul
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      stem: "Forum – Sollte es in jeder Schulkantine jeden Tag ein vegetarisches Gericht geben? Paul, 27: Wer kein Fleisch essen will, kann sich doch ein Brot von zu Hause mitnehmen. Ich halte überhaupt nichts von dieser Idee. — Ist Paul dafür?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn2
+    explanation:
+      vi: "Ich halte überhaupt nichts von dieser Idee = tôi hoàn toàn không tán thành ý tưởng này (überhaupt nhấn mạnh phủ định). Paul phản đối."
+    display_answer: Nein
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u05l5-listen-radio-keller
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u05-ausgewogen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Frau Doktor Keller, was raten Sie Menschen, die abnehmen möchten? – Strenge Diäten finde ich nicht sinnvoll. Besser sind eine ausgewogene Ernährung und mehr Bewegung im Alltag.
+      options:
+        - { id: k2a, text: "Bác sĩ Keller không ủng hộ ăn kiêng khắt khe; theo bà, ăn uống cân bằng và vận động nhiều hơn trong sinh hoạt hằng ngày thì tốt hơn.", lang: vi }
+        - { id: k6b, text: "Bác sĩ Keller khuyên nên ăn kiêng khắt khe và vận động nhiều hơn.", lang: vi }
+        - { id: k9c, text: "Bác sĩ Keller cho rằng chỉ cần vận động nhiều hơn, còn ăn uống không quan trọng.", lang: vi }
+        - { id: k4d, text: "Bác sĩ Keller không ủng hộ ăn kiêng khắt khe; theo bà, nên bỏ bữa sáng.", lang: vi }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "Strenge Diäten finde ich nicht sinnvoll = tôi thấy ăn kiêng khắt khe là không hợp lý. Besser sind eine ausgewogene Ernährung und mehr Bewegung = ăn uống cân bằng và vận động nhiều hơn thì tốt hơn – bà nói cả hai, không bỏ qua ăn uống."
+    display_answer: Bác sĩ Keller không ủng hộ ăn kiêng khắt khe; theo bà, ăn uống cân bằng và vận động nhiều hơn trong sinh hoạt hằng ngày thì tốt hơn.
+
+  - key: de:exercise:b1u05l5-listen-nur-noch
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u05-g-negation-erweitert
+    prompt:
+      audio_asset_id: null
+      fallback_text: Früher habe ich jeden Tag Fleisch gegessen. Heute esse ich nur noch am Wochenende Fleisch, und ich fühle mich viel besser.
+      options:
+        - { id: u3a, text: "Bây giờ người nói chỉ còn ăn thịt vào cuối tuần và cảm thấy khoẻ hơn nhiều.", lang: vi }
+        - { id: u7b, text: "Bây giờ người nói không ăn thịt nữa và cảm thấy khoẻ hơn nhiều.", lang: vi }
+        - { id: u1c, text: "Bây giờ người nói vẫn ăn thịt hằng ngày nhưng cảm thấy khoẻ hơn.", lang: vi }
+        - { id: u5d, text: "Bây giờ người nói chỉ còn ăn thịt vào cuối tuần nhưng cảm thấy mệt hơn.", lang: vi }
+    answer:
+      correct_option_id: u3a
+    explanation:
+      vi: "nur noch = chỉ còn (không phải nicht mehr – không … nữa): người nói vẫn ăn thịt, nhưng chỉ vào cuối tuần. viel besser = khoẻ hơn nhiều."
+    display_answer: Bây giờ người nói chỉ còn ăn thịt vào cuối tuần và cảm thấy khoẻ hơn nhiều.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u05l5-fill-forum-meinung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      template: "Meiner {{b1}} nach sollte jede Kantine ein vegetarisches Gericht anbieten. Ich bin {{b2}} diese Idee, {{b3}} viele Kinder gern etwas Neues probieren."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Meinung]
+        b2: [für]
+        b3: [weil, da]
+    known_wrong:
+      - answer: denn
+        feedback_vi: Sau denn động từ đứng ở vị trí 2; ở đây động từ probieren đứng cuối nên cần weil hoặc da.
+        error_tag: verb_position
+      - answer: Meine
+        feedback_vi: Cụm cố định là meiner Meinung nach (theo ý kiến của tôi) – thiếu danh từ Meinung.
+        error_tag: word_choice
+    explanation:
+      vi: "Meiner Meinung nach = theo tôi (cụm cố định, Dativ). Ich bin für + Akk = tôi ủng hộ. Câu lý do có động từ probieren ở cuối nên dùng weil (hoặc da), không dùng denn."
+    display_answer: "Meiner Meinung nach sollte jede Kantine ein vegetarisches Gericht anbieten. Ich bin für diese Idee, weil viele Kinder gern etwas Neues probieren."
+
+  - key: de:exercise:b1u05l5-fill-alles-gute
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-nominalisierte-adjektive
+    prompt:
+      template: "Lieber Tom, ich wünsche dir alles {{b1}} (gut) für deinen {{b2}} (neu) Vorsatz! Ich rauche übrigens auch {{b3}} mehr."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Gute]
+        b2: [neuen]
+        b3: [nicht]
+    known_wrong:
+      - answer: Gutes
+        feedback_vi: Sau alles đuôi là -e – alles Gute (còn etwas Gutes thì -es).
+        error_tag: adj_ending
+      - answer: neues
+        feedback_vi: der Vorsatz là giống đực, Akkusativ sau deinen → -en (deinen neuen Vorsatz).
+        error_tag: adj_ending
+      - answer: kein
+        feedback_vi: Phủ định động từ rauchen (không có danh từ) dùng nicht mehr.
+        error_tag: article
+    explanation:
+      vi: "alles Gute: tính từ danh từ hoá sau alles có đuôi -e. für + Akk, der Vorsatz giống đực → deinen neuen Vorsatz. rauchen không có danh từ đi kèm → nicht mehr (không hút nữa)."
+    display_answer: "Lieber Tom, ich wünsche dir alles Gute für deinen neuen Vorsatz! Ich rauche übrigens auch nicht mehr."
+
+  - key: de:exercise:b1u05l5-tr-falls-weniger-fleisch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-falls
+    prompt:
+      source_text: "Nếu bạn muốn ăn ít thịt hơn, bạn nên bắt đầu từ từ. (nói với bạn thân, bắt đầu bằng falls)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Falls du weniger Fleisch essen möchtest, solltest du langsam anfangen.
+        - Falls du weniger Fleisch essen willst, solltest du langsam anfangen.
+        - Falls du weniger Fleisch essen möchtest, solltest du Schritt für Schritt anfangen.
+        - Falls du weniger Fleisch essen willst, solltest du Schritt für Schritt anfangen.
+        - Falls du weniger Fleisch essen möchtest, solltest du mit kleinen Schritten anfangen.
+        - Falls du weniger Fleisch essen willst, solltest du mit kleinen Schritten anfangen.
+    known_wrong:
+      - answer: Falls du weniger Fleisch essen möchtest, du solltest langsam anfangen.
+        feedback_vi: Câu falls là vị trí 1, nên solltest đứng ngay sau dấu phẩy – …, solltest du …
+        error_tag: verb_position
+      - answer: Falls du möchtest weniger Fleisch essen, solltest du langsam anfangen.
+        feedback_vi: Trong câu falls, động từ chia möchtest đứng cuối – falls du weniger Fleisch essen möchtest.
+        error_tag: verb_position
+    explanation:
+      vi: "falls mở câu phụ, động từ chia (möchtest/willst) ở cuối. Câu phụ đứng đầu là vị trí 1, nên solltest đứng ngay sau dấu phẩy, anfangen ở cuối câu chính."
+    display_answer: Falls du weniger Fleisch essen möchtest, solltest du langsam anfangen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u05l5-wb-gerichte-angeboten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi thấy nên có nhiều món chay hơn.\" (bị động trong câu dass)"
+      tokens:
+        - { id: g-sollten, text: sollten }
+        - { id: g-vegetarische, text: vegetarische }
+        - { id: g-ich, text: Ich }
+        - { id: g-angeboten, text: angeboten }
+        - { id: g-dass, text: dass }
+        - { id: g-mehr, text: mehr }
+        - { id: g-komma, text: "," }
+        - { id: g-werden, text: werden }
+        - { id: g-finde, text: finde }
+        - { id: g-gerichte, text: Gerichte }
+    answer:
+      orders:
+        - [g-ich, g-finde, g-komma, g-dass, g-mehr, g-vegetarische, g-gerichte, g-angeboten, g-werden, g-sollten]
+    explanation:
+      vi: "Câu phụ dass: chủ ngữ mehr vegetarische Gerichte (số nhiều, không mạo từ → -e), cuối câu là angeboten – werden – sollten (modal đã chia đứng sau cùng, số nhiều nên sollten)."
+    display_answer: Ich finde, dass mehr vegetarische Gerichte angeboten werden sollten.
+
+  - key: de:exercise:b1u05l5-wb-wegen-blutdrucks
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-adj-dekl-vollstaendig
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Wegen: \"Vì bị huyết áp cao nên bố tôi ăn ít muối hơn.\""
+      tokens:
+        - { id: b-salz, text: Salz }
+        - { id: b-hohen, text: hohen }
+        - { id: b-vater, text: Vater }
+        - { id: b-wegen, text: Wegen }
+        - { id: b-isst, text: isst }
+        - { id: b-seines, text: seines }
+        - { id: b-weniger, text: weniger }
+        - { id: b-mein, text: mein }
+        - { id: b-blutdrucks, text: Blutdrucks }
+    answer:
+      orders:
+        - [b-wegen, b-seines, b-hohen, b-blutdrucks, b-isst, b-mein, b-vater, b-weniger, b-salz]
+    explanation:
+      vi: "wegen + Genitiv: seines hohen Blutdrucks (sau seines tính từ có -en; hoch mất c; danh từ giống đực thêm -s). Cụm wegen là vị trí 1, nên isst đứng ở vị trí 2, sau đó là chủ ngữ mein Vater."
+    display_answer: Wegen seines hohen Blutdrucks isst mein Vater weniger Salz.
+
+  - key: de:exercise:b1u05l5-tr-vegan-informieren
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u05-vegan
+    prompt:
+      source_text: Falls Sie sich vegan ernähren, sollten Sie sich gut informieren.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu bạn ăn thuần chay, bạn nên tìm hiểu kỹ.
+        - Nếu bạn ăn thuần chay thì bạn nên tìm hiểu kỹ.
+        - Nếu bạn ăn thuần chay, bạn nên tìm hiểu kỹ thông tin.
+        - Nếu bạn ăn thuần chay, bạn nên tìm hiểu thông tin kỹ.
+        - Nếu bạn ăn chay thuần, bạn nên tìm hiểu kỹ.
+        - Nếu bạn ăn thuần chay, bạn nên tìm hiểu kỹ càng.
+        - Trong trường hợp bạn ăn thuần chay, bạn nên tìm hiểu kỹ.
+        - Nếu ông/bà ăn thuần chay, ông/bà nên tìm hiểu kỹ.
+        - Nếu ông bà ăn thuần chay, ông bà nên tìm hiểu kỹ.
+        - Nếu anh chị ăn thuần chay, anh chị nên tìm hiểu kỹ.
+        - Nếu bạn ăn thuần chay, bạn nên tìm hiểu thật kỹ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nếu bạn ăn chay, bạn phải đi khám bác sĩ.
+        feedback_vi: "sich gut informieren là tìm hiểu kỹ thông tin; sollten là \"nên\", không phải \"phải\"."
+        error_tag: meaning
+    explanation:
+      vi: "falls = nếu, trong trường hợp; sich vegan ernähren = ăn thuần chay; sollten Sie sich gut informieren = ông/bà nên tìm hiểu kỹ (sollten: lời khuyên nhẹ)."
+    display_answer: Nếu bạn ăn thuần chay, bạn nên tìm hiểu kỹ.

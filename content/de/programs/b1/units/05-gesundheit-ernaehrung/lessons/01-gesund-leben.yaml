@@ -1,0 +1,408 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u05-gesund-leben
+order_index: 1
+level: b1
+title:
+  vi: Sống khoẻ – bị động với modal, falls (Es muss mehr getan werden.)
+objectives:
+  - vi: Đọc hiểu lời khuyên dinh dưỡng ngắn trên báo, tờ rơi.
+  - vi: Nói điều cần làm, nên làm hoặc không được làm theo kiểu khách quan bằng bị động với động từ khiếm khuyết (Das Obst muss gewaschen werden).
+  - vi: Nêu điều kiện có thể xảy ra bằng falls.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u04-wiederholung]
+items:
+  - item: de:item:b1u05-g-passiv-modal
+  - item: de:item:b1u05-g-falls
+  - item: de:item:b1u05-ernaehrung
+  - item: de:item:b1u05-sich-ernaehren
+  - item: de:item:b1u05-bewegung
+  - item: de:item:b1u05-vegetarisch
+  - item: de:item:b1u05-vegan
+  - item: de:item:b1u05-kalorie
+  - item: de:item:b1u05-vitamin
+  - item: de:item:b1u05-ausgewogen
+  - item: de:item:b1u05-verzichten-auf
+  - item: de:item:b1u05-uebergewicht
+  - item: de:item:b1u05-blutdruck
+  - item: de:item:b1u05-portion
+  - item: de:item:b1u05-ballaststoff
+  - item: de:item:b1u05-eiweiss
+  - item: de:item:b1u05-vermeiden
+  - item: de:item:b1u05-empfehlung
+  - item: de:item:b1u05-schaden
+  - item: de:item:b1u05-fettarm
+  - item: de:item:b1u05-salz
+  - item: de:item:a2u04-g-wenn-konditional
+    role: reuse
+  - item: de:item:a2u04-sich-bewegen
+    role: reuse
+  - item: de:item:a2u04-abnehmen
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praesens
+    role: reuse
+  - item: de:item:b1u03-g-damit
+    role: reuse
+  - item: de:item:b1u04-g-irreale-bedingung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu và tự nói được lời khuyên kiểu khách quan, ví dụ: \"Obst und Gemüse sollten vor dem Essen gewaschen werden. Falls Sie sich vegan ernähren möchten, sollten Sie sich gut informieren.\""
+  - type: explain
+    text:
+      vi: "Ở B1U03 bạn đã học bị động hiện tại: Das Obst wird gewaschen (quả được rửa). Khi thêm động từ khiếm khuyết, modal chia ở vị trí 2, còn werden lùi về cuối câu, ngay sau Partizip II: Das Obst muss gewaschen werden. Tiếng Việt chỉ nói \"phải được rửa\", còn tiếng Đức cần đủ ba động từ, trong đó hai động từ cuối không đổi dạng."
+  - type: explain
+    text:
+      vi: "Trong câu phụ (dass, weil, falls…), động từ đã chia đứng cuối cùng, nên thứ tự là Partizip II – werden – modal: …, dass das Obst gewaschen werden muss. Cặp \"gewaschen werden\" giữ nguyên như ở câu chính; chỉ modal chuyển ra sau chúng."
+  - type: explain
+    text:
+      vi: "Cấu trúc này rất hay gặp trong lời khuyên về sức khoẻ, công thức nấu ăn và nội quy, vì người làm không quan trọng: Hier darf nicht geraucht werden. Nếu muốn nói chung chung \"người ta\", bạn dùng câu chủ động với man: Man sollte mehr Gemüse essen."
+  - type: explain
+    text:
+      vi: "falls (trong trường hợp, lỡ như) mở đầu câu phụ điều kiện, động từ đứng cuối giống như sau wenn: Falls du Hunger hast, iss etwas. falls nhấn mạnh điều kiện có thể không xảy ra; còn wenn có thêm nghĩa thời gian \"khi\" (Wenn ich nach Hause komme, koche ich), và với nghĩa đó không thay bằng falls được."
+  - type: explain
+    text:
+      vi: "Hai động từ quan trọng của bài: sich ernähren cần đại từ phản thân (Ich ernähre mich vegetarisch), còn verzichten luôn đi với auf + Akkusativ (Ich verzichte auf Zucker). vegetarisch là ăn chay nhưng thường vẫn ăn trứng, sữa; vegan là không dùng mọi sản phẩm từ động vật."
+  - type: deep_explain
+    text:
+      vi: "sollte trong lời khuyên là Konjunktiv II của sollen (nhẹ nhàng hơn soll): Das Obst sollte gewaschen werden = quả nên được rửa. Với động từ đi kèm giới từ, câu bị động có thể không có chủ ngữ, động từ chia ngôi 3 số ít: Auf Zucker muss nicht ganz verzichtet werden. Khi không có gì khác đứng đầu câu, tiếng Đức đặt es làm chủ ngữ giả ở vị trí 1: Es muss mehr getan werden (cần phải làm nhiều hơn). Đừng nhầm với tương lai chủ động: Ich werde das Obst waschen (tôi sẽ rửa quả) không có Partizip II. Các lời khuyên ăn uống trong bài chỉ là hiểu biết phổ thông, không thay cho tư vấn của bác sĩ."
+  - type: example
+    target: Die Kartoffeln müssen zwanzig Minuten gekocht werden.
+    target_lang: de
+    translation:
+      vi: Khoai tây phải được luộc hai mươi phút.
+    note:
+      vi: "müssen chia ở vị trí 2 (die Kartoffeln là số nhiều → müssen); cuối câu: gekocht werden."
+  - type: example
+    target: Dieser Kuchen kann auch ohne Zucker gebacken werden.
+    target_lang: de
+    translation:
+      vi: Bánh này cũng có thể làm không cần đường.
+    note:
+      vi: "können + gebacken werden. Người làm bánh không quan trọng nên dùng bị động."
+  - type: example
+    target: In der Zeitung steht, dass in Kantinen mehr vegetarische Gerichte angeboten werden sollen.
+    target_lang: de
+    translation:
+      vi: Trên báo viết rằng ở các căng tin cần phục vụ nhiều món chay hơn.
+    note:
+      vi: "Câu phụ dass: angeboten – werden – sollen ở cuối, modal đã chia đứng sau cùng."
+  - type: example
+    target: Falls du heute Abend Zeit hast, können wir zusammen etwas Gesundes kochen.
+    target_lang: de
+    translation:
+      vi: Nếu tối nay bạn rảnh, chúng mình cùng nấu món gì đó lành mạnh nhé.
+    note:
+      vi: "Nói với bạn bè (du). Câu falls là vị trí 1, nên können đứng ngay sau dấu phẩy. etwas Gesundes (cái gì đó lành mạnh) – bạn sẽ học cách nói này ở bài 2."
+  - type: example
+    target: Zuerst wird das Gemüse gewaschen, dann wird es klein geschnitten.
+    target_lang: de
+    translation:
+      vi: Trước tiên rau được rửa, sau đó được thái nhỏ.
+    note:
+      vi: "Ôn bị động hiện tại (không có modal): wird + Partizip II."
+  - type: example
+    target: Ich koche jeden Abend frisch, damit meine Kinder gesund essen.
+    target_lang: de
+    translation:
+      vi: Tối nào tôi cũng nấu món tươi để các con tôi ăn uống lành mạnh.
+    note:
+      vi: "Ôn damit: hai vế có chủ ngữ khác nhau (ich / meine Kinder), động từ essen đứng cuối câu phụ."
+  - type: example
+    target: Wenn ich mehr Zeit hätte, würde ich öfter selbst kochen.
+    target_lang: de
+    translation:
+      vi: Giá mà tôi có nhiều thời gian hơn thì tôi sẽ tự nấu ăn thường xuyên hơn.
+    note:
+      vi: "Ôn Konjunktiv II: điều kiện không có thật (thực tế là không có thời gian). Với điều kiện có thể xảy ra thì dùng wenn/falls + Präsens."
+  - type: common_mistake
+    wrong: Das muss werden gemacht.
+    right: Das muss gemacht werden.
+    target_lang: de
+    note:
+      vi: "werden luôn đứng sau Partizip II ở cuối câu: gemacht werden."
+  - type: common_mistake
+    wrong: Die Ärztin sagt, dass das Obst muss gewaschen werden.
+    right: Die Ärztin sagt, dass das Obst gewaschen werden muss.
+    target_lang: de
+    note:
+      vi: "Trong câu phụ dass, động từ đã chia (muss) đứng cuối cùng, sau gewaschen werden."
+  - type: common_mistake
+    wrong: Ich verzichte Fleisch.
+    right: Ich verzichte auf Fleisch.
+    target_lang: de
+    note:
+      vi: "verzichten luôn cần auf + Akkusativ, dù tiếng Việt nói \"bỏ thịt\" không có giới từ."
+  - type: summary
+    points:
+      - vi: "Bị động + modal: modal ở vị trí 2, cuối câu Partizip II + werden (muss gewaschen werden)."
+      - vi: "Câu phụ: Partizip II – werden – modal (…, dass es gewaschen werden muss)."
+      - vi: "Dùng cho lời khuyên, công thức, nội quy; muốn nói \"người ta\" thì dùng man + chủ động."
+      - vi: "falls = trong trường hợp, lỡ như; động từ cuối; không mang nghĩa thời gian như wenn."
+      - vi: "sich ernähren (vegetarisch, vegan, gesund); verzichten auf + Akk."
+      - vi: "Từ vựng: die Ernährung, die Bewegung, die Kalorie, das Vitamin, ausgewogen, vermeiden, schaden + Dat."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u05l1-mcq-geraucht-werden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      stem: "Chọn dạng đúng: Hier darf nicht ___."
+      stem_lang: vi
+      options:
+        - { id: p4k, text: "geraucht werden", lang: de }
+        - { id: p9m, text: "werden geraucht", lang: de }
+        - { id: p2x, text: "geraucht wird", lang: de }
+        - { id: p7c, text: "rauchen werden", lang: de }
+    answer:
+      correct_option_id: p4k
+    explanation:
+      vi: "Sau modal darf, cuối câu là Partizip II rồi đến werden: geraucht werden (không được hút thuốc). werden không đứng trước Partizip; wird là dạng đã chia nên không đi sau darf được; rauchen werden không phải bị động."
+    display_answer: geraucht werden
+
+  - key: de:exercise:b1u05l1-mcq-dass-gekocht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      stem: "Chọn trật tự đúng trong câu phụ: Im Rezept steht, dass das Fleisch zwei Stunden ___."
+      stem_lang: vi
+      options:
+        - { id: d3r, text: "gekocht werden muss", lang: de }
+        - { id: d8t, text: "muss gekocht werden", lang: de }
+        - { id: d1w, text: "werden gekocht muss", lang: de }
+        - { id: d5q, text: "gekocht muss werden", lang: de }
+    answer:
+      correct_option_id: d3r
+    explanation:
+      vi: "Câu phụ dass đẩy động từ đã chia (muss) xuống cuối cùng. Cặp gekocht werden giữ nguyên thứ tự, nên ta có: gekocht werden muss."
+    display_answer: gekocht werden muss
+
+  - key: de:exercise:b1u05l1-mcq-lesen-zucker
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-ausgewogen
+    prompt:
+      stem: "Gesund leben – aber wie? Eine ausgewogene Ernährung ist für viele Menschen wichtig. Fachleute empfehlen oft, jeden Tag Obst und Gemüse zu essen und genug Wasser zu trinken. Zucker und Salz müssen nicht ganz vermieden werden, aber man sollte nicht zu viel davon essen. Falls Sie sich vegan ernähren möchten, sollten Sie sich vorher gut informieren. Und nicht vergessen: Auch Bewegung gehört zu einem gesunden Leben. — Richtig oder falsch? Laut Text sollte man gar keinen Zucker essen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: Zucker und Salz müssen nicht ganz vermieden werden – không cần tránh hoàn toàn đường và muối, chỉ không nên ăn quá nhiều. nicht müssen = không cần, không phải là \"không được\". Vì vậy câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u05l1-listen-falls-termin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u05-g-falls
+    prompt:
+      audio_asset_id: null
+      fallback_text: Falls Sie Fragen zu Ihrer Ernährung haben, können Sie gern einen Termin bei uns machen.
+      options:
+        - { id: f2a, text: "Nếu có câu hỏi về chế độ ăn uống, ông/bà có thể đặt lịch hẹn với chúng tôi.", lang: vi }
+        - { id: f6b, text: "Vì ông/bà có câu hỏi về chế độ ăn uống nên ông/bà phải đặt lịch hẹn với chúng tôi.", lang: vi }
+        - { id: f9c, text: "Nếu có câu hỏi về thuốc, ông/bà có thể đặt lịch hẹn với chúng tôi.", lang: vi }
+        - { id: f4d, text: "Nếu có câu hỏi về chế độ ăn uống, ông/bà có thể gọi cho chúng tôi bất cứ lúc nào.", lang: vi }
+    answer:
+      correct_option_id: f2a
+    explanation:
+      vi: "falls = nếu, trong trường hợp (không phải \"vì\"); Ernährung = chế độ ăn uống; können … gern einen Termin machen = có thể đặt lịch hẹn (không bắt buộc, không nói gọi bất cứ lúc nào)."
+    display_answer: Nếu có câu hỏi về chế độ ăn uống, ông/bà có thể đặt lịch hẹn với chúng tôi.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u05l1-fill-gekocht-werden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      template: "Gemüse sollte nicht zu lange {{b1}} (kochen) {{b2}}, sonst gehen viele Vitamine verloren."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [gekocht]
+        b2: [werden]
+    known_wrong:
+      - answer: kochen
+        feedback_vi: Bị động cần Partizip II – gekocht.
+        error_tag: participle_form
+      - answer: wird
+        feedback_vi: Sau modal sollte cần dạng nguyên thể – werden, không phải wird.
+        error_tag: verb_form
+      - answer: worden
+        feedback_vi: worden chỉ dùng ở Perfekt bị động; ở đây là sollte + gekocht werden.
+        error_tag: verb_form
+    explanation:
+      vi: "sollte ở vị trí 2, cuối câu là Partizip II + werden: gekocht werden (được nấu). Gemüse (rau) là chủ ngữ của câu bị động."
+    display_answer: "Gemüse sollte nicht zu lange gekocht werden, sonst gehen viele Vitamine verloren."
+
+  - key: de:exercise:b1u05l1-fill-sich-auf
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-verzichten-auf
+    prompt:
+      template: "Mein Bruder ernährt {{b1}} seit einem Jahr vegan. Er verzichtet {{b2}} Fleisch, Milch und Eier."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [sich]
+        b2: [auf]
+    known_wrong:
+      - answer: ihn
+        feedback_vi: Người ăn và người được nuôi là cùng một người (er), nên dùng đại từ phản thân sich.
+        error_tag: reflexive_missing
+      - answer: von
+        feedback_vi: verzichten đi với auf + Akkusativ – verzichtet auf Fleisch.
+        error_tag: preposition
+      - answer: für
+        feedback_vi: verzichten đi với auf + Akkusativ – verzichtet auf Fleisch.
+        error_tag: preposition
+    explanation:
+      vi: "sich ernähren là động từ phản thân: er ernährt sich. verzichten luôn cần auf + Akkusativ: auf Fleisch, Milch und Eier."
+    display_answer: "Mein Bruder ernährt sich seit einem Jahr vegan. Er verzichtet auf Fleisch, Milch und Eier."
+
+  - key: de:exercise:b1u05l1-tr-obst-gewaschen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      source_text: "Rau quả nên được rửa trước khi ăn. (dùng bị động với sollten)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Obst und Gemüse sollten vor dem Essen gewaschen werden.
+        - Vor dem Essen sollten Obst und Gemüse gewaschen werden.
+        - Gemüse und Obst sollten vor dem Essen gewaschen werden.
+        - Vor dem Essen sollten Gemüse und Obst gewaschen werden.
+        - Das Obst und das Gemüse sollten vor dem Essen gewaschen werden.
+        - Obst und Gemüse sollten gewaschen werden, bevor man sie isst.
+        - Gemüse und Obst sollten gewaschen werden, bevor man sie isst.
+        - Obst und Gemüse sollten gewaschen werden, bevor sie gegessen werden.
+        - Gemüse und Obst sollten gewaschen werden, bevor sie gegessen werden.
+    known_wrong:
+      - answer: Obst und Gemüse sollten vor dem Essen werden gewaschen.
+        feedback_vi: werden đứng sau Partizip II ở cuối câu – gewaschen werden.
+        error_tag: verb_position
+      - answer: Obst und Gemüse sollten vor dem Essen gewaschen wird.
+        feedback_vi: Sau modal cần nguyên thể werden, không dùng dạng đã chia wird.
+        error_tag: verb_form
+      - answer: Obst und Gemüse sollte vor dem Essen gewaschen werden.
+        feedback_vi: Chủ ngữ Obst und Gemüse là hai thứ (số nhiều), nên modal chia sollten.
+        error_tag: verb_form
+    explanation:
+      vi: "\"nên được rửa\" = sollten + gewaschen werden. Chủ ngữ gồm hai danh từ nối bằng und nên chia số nhiều sollten. vor dem Essen = trước bữa ăn, trước khi ăn."
+    display_answer: Obst und Gemüse sollten vor dem Essen gewaschen werden.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u05l1-wb-falls-abnehmen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-falls
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Falls: \"Nếu bạn muốn giảm cân, bạn nên vận động nhiều hơn.\""
+      tokens:
+        - { id: a-solltest, text: solltest }
+        - { id: a-falls, text: Falls }
+        - { id: a-dich, text: dich }
+        - { id: a-du1, text: du }
+        - { id: a-abnehmen, text: abnehmen }
+        - { id: a-mehr, text: mehr }
+        - { id: a-komma, text: "," }
+        - { id: a-moechtest, text: möchtest }
+        - { id: a-du2, text: du }
+        - { id: a-bewegen, text: bewegen }
+    answer:
+      orders:
+        - [a-falls, a-du1, a-abnehmen, a-moechtest, a-komma, a-solltest, a-du2, a-dich, a-mehr, a-bewegen]
+        - [a-falls, a-du2, a-abnehmen, a-moechtest, a-komma, a-solltest, a-du1, a-dich, a-mehr, a-bewegen]
+    explanation:
+      vi: "Câu falls: động từ chia möchtest đứng cuối, abnehmen đứng trước nó. Cả câu phụ là vị trí 1, nên solltest đứng ngay sau dấu phẩy, rồi chủ ngữ du và đại từ phản thân dich (sich bewegen)."
+    display_answer: Falls du abnehmen möchtest, solltest du dich mehr bewegen.
+
+  - key: de:exercise:b1u05l1-wb-dass-zucker
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-passiv-modal
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bác sĩ cho rằng nên ăn ít đường hơn.\" (dùng bị động trong câu dass)"
+      tokens:
+        - { id: z-sollte, text: sollte }
+        - { id: z-meint, text: meint }
+        - { id: z-gegessen, text: gegessen }
+        - { id: z-die, text: Die }
+        - { id: z-zucker, text: Zucker }
+        - { id: z-komma, text: "," }
+        - { id: z-werden, text: werden }
+        - { id: z-aerztin, text: Ärztin }
+        - { id: z-dass, text: dass }
+        - { id: z-weniger, text: weniger }
+    answer:
+      orders:
+        - [z-die, z-aerztin, z-meint, z-komma, z-dass, z-weniger, z-zucker, z-gegessen, z-werden, z-sollte]
+    explanation:
+      vi: "Câu chính: Die Ärztin meint. Câu phụ dass có chủ ngữ weniger Zucker và ba động từ ở cuối theo thứ tự gegessen – werden – sollte (modal đã chia đứng sau cùng)."
+    display_answer: Die Ärztin meint, dass weniger Zucker gegessen werden sollte.
+
+  - key: de:exercise:b1u05l1-tr-verzichten-fleisch
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u05-sich-ernaehren
+    prompt:
+      source_text: Viele Menschen verzichten heute auf Fleisch, weil sie sich gesünder ernähren wollen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày nay nhiều người không ăn thịt vì họ muốn ăn uống lành mạnh hơn.
+        - Ngày nay nhiều người không ăn thịt vì muốn ăn uống lành mạnh hơn.
+        - Ngày nay nhiều người bỏ thịt vì họ muốn ăn uống lành mạnh hơn.
+        - Ngày nay nhiều người kiêng thịt vì họ muốn ăn uống lành mạnh hơn.
+        - Ngày nay nhiều người từ bỏ thịt vì họ muốn ăn uống lành mạnh hơn.
+        - Ngày nay nhiều người không ăn thịt vì họ muốn ăn uống khoẻ mạnh hơn.
+        - Ngày nay nhiều người không ăn thịt vì họ muốn ăn uống tốt cho sức khoẻ hơn.
+        - Ngày nay nhiều người không ăn thịt vì họ muốn có chế độ ăn lành mạnh hơn.
+        - Hiện nay nhiều người không ăn thịt vì họ muốn ăn uống lành mạnh hơn.
+        - Bây giờ nhiều người không ăn thịt vì họ muốn ăn uống lành mạnh hơn.
+        - Ngày nay nhiều người không ăn thịt nữa vì họ muốn ăn uống lành mạnh hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngày nay nhiều người ăn nhiều thịt hơn vì họ muốn ăn uống lành mạnh hơn.
+        feedback_vi: "verzichten auf Fleisch là không ăn, bỏ thịt – ngược với \"ăn nhiều thịt\"."
+        error_tag: meaning
+    explanation:
+      vi: "verzichten auf Fleisch = không ăn, bỏ thịt. sich gesünder ernähren = ăn uống lành mạnh hơn (gesünder là so sánh hơn của gesund). weil đẩy động từ wollen xuống cuối câu phụ."
+    display_answer: Ngày nay nhiều người không ăn thịt vì họ muốn ăn uống lành mạnh hơn.

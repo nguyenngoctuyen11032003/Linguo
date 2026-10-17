@@ -1,0 +1,420 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u05-facharzt
+order_index: 2
+level: b1
+title:
+  vi: Ở bác sĩ chuyên khoa – tính từ đủ 4 cách, tính từ danh từ hoá (Der Kranke, etwas Neues)
+objectives:
+  - vi: Mô tả triệu chứng chi tiết khi đi khám bác sĩ chuyên khoa.
+  - vi: Hiểu chỉ định khám và thông tin của phòng khám.
+  - vi: Chia đuôi tính từ ở cả bốn cách (thêm Genitiv), cả với so sánh hơn, so sánh nhất đứng trước danh từ.
+  - vi: Dùng tính từ danh từ hoá (der Kranke, ein Deutscher, etwas Neues, nichts Besonderes).
+estimated_minutes: 20
+skills: [grammar, vocabulary, listening]
+prerequisites: [de:lesson:b1u05-gesund-leben]
+items:
+  - item: de:item:b1u05-g-adj-dekl-vollstaendig
+  - item: de:item:b1u05-g-nominalisierte-adjektive
+  - item: de:item:b1u05-facharzt
+  - item: de:item:b1u05-untersuchung
+  - item: de:item:b1u05-untersuchen
+  - item: de:item:b1u05-diagnose
+  - item: de:item:b1u05-behandlung
+  - item: de:item:b1u05-behandeln
+  - item: de:item:b1u05-patient
+  - item: de:item:b1u05-spritze
+  - item: de:item:b1u05-operation
+  - item: de:item:b1u05-chronisch
+  - item: de:item:b1u05-symptom
+  - item: de:item:b1u05-beschwerden
+  - item: de:item:b1u05-entzuendung
+  - item: de:item:b1u05-hausarzt
+  - item: de:item:b1u05-hautarzt
+  - item: de:item:b1u05-orthopaede
+  - item: de:item:b1u05-blut
+  - item: de:item:b1u05-roentgen
+  - item: de:item:b1u05-befund
+  - item: de:item:b1u05-krankheit
+  - item: de:item:a2u02-g-adj-unbestimmt-dativ
+    role: reuse
+  - item: de:item:a2u05-g-adj-bestimmt
+    role: reuse
+  - item: de:item:a2u05-g-superlativ
+    role: reuse
+  - item: de:item:a2u07-g-dieser-jeder
+    role: reuse
+  - item: de:item:a2u07-g-adj-nullartikel
+    role: reuse
+  - item: de:item:a1u08-krank
+    role: reuse
+  - item: de:item:a2u06-ueberweisen
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b1u03-g-n-deklination
+    role: reuse
+  - item: de:item:b1u03-g-indefinitpronomen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn mô tả được triệu chứng và hiểu bác sĩ chuyên khoa nói gì, ví dụ: \"Wegen der starken Rückenschmerzen hat mich mein Hausarzt an einen Orthopäden überwiesen.\" Bạn cũng nói được \"người bệnh\" (der Kranke) và \"có gì mới không\" (etwas Neues)."
+  - type: explain
+    text:
+      vi: "Bạn đã biết ba bảng đuôi tính từ ở Nominativ, Akkusativ, Dativ: bảng 1 sau ein/kein/mein, bảng 2 sau der/die/das/dieser, bảng 3 khi không có mạo từ. Ở B1 bạn thêm Genitiv – cách hay gặp sau wegen, trotz, während và trong văn viết. Tiếng Việt không đổi tính từ, nên hãy nhìn mạo từ trước: nó cho biết cách và giống."
+  - type: explain
+    text:
+      vi: "Tóm tắt ba bảng (ví dụ gut): Bảng 1 – Nom ein guter Arzt, eine gute Ärztin, ein gutes Mittel, keine guten Ärzte; Akk chỉ giống đực đổi: einen guten Arzt; Dativ và Genitiv luôn -en: einem guten, einer guten, eines guten, keiner guten. Bảng 2 – -e ở Nom số ít và Akk giống cái, giống trung (der gute, die gute, das gute), mọi chỗ còn lại -en. Bảng 3 – tính từ mang đuôi của der/die/das (guter Tee, gute Milch, gutes Wasser, gute Äpfel; Dat gutem, guter, gutem, guten), riêng Genitiv giống đực, giống trung là -en."
+  - type: explain
+    text:
+      vi: "Genitiv sau mạo từ (des/der, eines/einer) rất dễ: tính từ luôn -en – wegen des starken Hustens, trotz der starken Erkältung, wegen eines starken Fiebers, trotz der starken Schmerzen. Không có mạo từ thì giống cái và số nhiều là -er: trotz starker Schmerzen, wegen großer Müdigkeit. Danh từ giống đực và trung ở Genitiv thêm -s/-es: des Hustens, des Fiebers, des Arztes."
+  - type: explain
+    text:
+      vi: "So sánh hơn và so sánh nhất đứng trước danh từ vẫn phải thêm đuôi theo bảng: ein gesünderes Leben, die beste Lösung, mit dem besten Arzt. Người Việt hay quên đuôi vì tính từ đã có -er: ein besser Arzt là sai, đúng là ein besserer Arzt (bess-er + -er)."
+  - type: explain
+    text:
+      vi: "Nhiều tính từ dùng được như danh từ chỉ người: viết hoa nhưng vẫn chia đuôi theo bảng – der Kranke (người bệnh nam), die Kranke (nữ), ein Kranker, die Kranken, mit dem Kranken. Tương tự: der/die Deutsche → ein Deutscher, eine Deutsche, die Deutschen. Tiếng Việt cần thêm \"người\", còn tiếng Đức chỉ cần viết hoa tính từ."
+  - type: explain
+    text:
+      vi: "Sau etwas, nichts, viel, wenig, tính từ viết hoa và thêm -es: etwas Neues, nichts Besonderes, viel Gutes (sau giới từ Dativ: mit etwas Neuem). Sau alles thì đuôi là -e: alles Gute. Không viết etwas neu hay nichts besonders."
+  - type: deep_explain
+    text:
+      vi: "Khi nói, người Đức hay thay Genitiv bằng von + Dativ (die Praxis von meinem Arzt), và wegen/trotz + Dativ (wegen dem Fieber) khá phổ biến trong khẩu ngữ; trong văn viết và bài thi, hãy dùng Genitiv. Một số tính từ đổi hình khi có đuôi: hoch → der hohe Blutdruck (mất c), teuer → ein teures Medikament (mất e). Tính từ danh từ hoá hay gặp: der/die Bekannte (người quen), der/die Erwachsene (người lớn), der/die Verwandte (họ hàng), die Alten (người già). Ở Đức, bạn thường đi bác sĩ gia đình (Hausarzt) trước; khi cần, bác sĩ viết giấy chuyển khám chuyên khoa – die Überweisung, chính là danh từ của überweisen (A2), ở ngân hàng thì nó nghĩa là lệnh chuyển khoản. Quy định có thể thay đổi, nên hãy hỏi quỹ bảo hiểm của bạn."
+  - type: example
+    target: Wegen des starken Hustens konnte ich die ganze Nacht nicht schlafen.
+    target_lang: de
+    translation:
+      vi: Vì ho nhiều, cả đêm tôi không ngủ được.
+    note:
+      vi: "der Husten → Genitiv des Hustens; sau des tính từ có -en: starken."
+  - type: example
+    target: Trotz starker Schmerzen musste der Patient lange im Wartezimmer warten.
+    target_lang: de
+    translation:
+      vi: Dù đau nhiều, bệnh nhân vẫn phải chờ lâu trong phòng chờ.
+    note:
+      vi: "Genitiv số nhiều không có mạo từ → -er: starker Schmerzen."
+  - type: example
+    target: Seit wann haben Sie diese Beschwerden? – Seit einer Woche. Ich habe auch leichtes Fieber.
+    target_lang: de
+    translation:
+      vi: Ông/bà bị khó chịu như thế này từ bao giờ? – Từ một tuần nay. Tôi cũng hơi sốt.
+    note:
+      vi: "Bác sĩ nói với bệnh nhân (Sie). diese Beschwerden: số nhiều Akk sau dieser-từ. leichtes Fieber: không mạo từ, giống trung Akk → -es."
+  - type: example
+    target: Die Ärztin hat mich mit einem neuen Medikament behandelt.
+    target_lang: de
+    translation:
+      vi: Bác sĩ đã điều trị cho tôi bằng một loại thuốc mới.
+    note:
+      vi: "mit + Dativ, sau einem → -en: einem neuen Medikament."
+  - type: example
+    target: Das ist der beste Facharzt in der Stadt, aber man wartet lange auf einen Termin.
+    target_lang: de
+    translation:
+      vi: Đó là bác sĩ chuyên khoa giỏi nhất thành phố, nhưng phải chờ lâu mới có lịch hẹn.
+    note:
+      vi: "So sánh nhất trước danh từ: best- + đuôi bảng 2 → der beste Facharzt."
+  - type: example
+    target: Die Kranke darf heute schon nach Hause gehen.
+    target_lang: de
+    translation:
+      vi: Người bệnh (nữ) hôm nay đã được về nhà.
+    note:
+      vi: "die Kranke = người phụ nữ bị bệnh; viết hoa vì là danh từ, đuôi -e như tính từ sau die."
+  - type: example
+    target: Gibt es etwas Neues? – Nein, nichts Besonderes. Der Befund war gut.
+    target_lang: de
+    translation:
+      vi: Có gì mới không? – Không, chẳng có gì đặc biệt. Kết quả khám tốt.
+    note:
+      vi: "etwas Neues, nichts Besonderes: tính từ viết hoa + -es."
+  - type: common_mistake
+    wrong: Mein Kollege ist ein Deutsche.
+    right: Mein Kollege ist ein Deutscher.
+    target_lang: de
+    note:
+      vi: "Sau ein, giống đực Nominativ, tính từ danh từ hoá có -er như tính từ thường: ein Deutscher (nhưng der Deutsche)."
+  - type: common_mistake
+    wrong: Gibt es etwas neu?
+    right: Gibt es etwas Neues?
+    target_lang: de
+    note:
+      vi: "Sau etwas, tính từ viết hoa và thêm -es."
+  - type: common_mistake
+    wrong: Wegen des starke Fiebers bleibe ich zu Hause.
+    right: Wegen des starken Fiebers bleibe ich zu Hause.
+    target_lang: de
+    note:
+      vi: "Genitiv sau des: tính từ luôn -en."
+  - type: common_mistake
+    wrong: Frau Weber ist eine besser Ärztin.
+    right: Frau Weber ist eine bessere Ärztin.
+    target_lang: de
+    note:
+      vi: "So sánh hơn đứng trước danh từ vẫn cần đuôi: besser + -e."
+  - type: summary
+    points:
+      - vi: "Bảng 1 (ein/kein/mein) và bảng 2 (der/dieser): Dativ và Genitiv luôn -en."
+      - vi: "Bảng 3 (không mạo từ): đuôi của der/die/das; Genitiv giống đực, trung -en, giống cái và số nhiều -er (starker Schmerzen)."
+      - vi: "Genitiv: des/eines + danh từ -s/-es (des Fiebers, des Arztes)."
+      - vi: "So sánh hơn, nhất trước danh từ vẫn thêm đuôi: ein besserer Arzt, die beste Lösung."
+      - vi: "der Kranke, ein Kranker, die Kranken; der Deutsche, ein Deutscher."
+      - vi: "etwas Neues, nichts Besonderes, viel Gutes; alles Gute."
+      - vi: "Từ vựng: der Facharzt, die Untersuchung, die Diagnose, die Behandlung, der Patient (n-Deklination), chronisch."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u05l2-mcq-des-starken
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-adj-dekl-vollstaendig
+    prompt:
+      stem: "Chọn đuôi đúng (Genitiv, giống trung, sau des): Wegen des ___ Fiebers bleibt Lan heute zu Hause."
+      stem_lang: vi
+      options:
+        - { id: s3n, text: "starken", lang: de }
+        - { id: s7s, text: "starkes", lang: de }
+        - { id: s1e, text: "starke", lang: de }
+        - { id: s5r, text: "starker", lang: de }
+    answer:
+      correct_option_id: s3n
+    explanation:
+      vi: "Ở Genitiv, sau des (cũng như sau der, eines, einer) tính từ luôn có -en: wegen des starken Fiebers. Mạo từ des đã cho biết cách, nên tính từ chỉ cần đuôi yếu -en."
+    display_answer: starken
+
+  - key: de:exercise:b1u05l2-mcq-trotz-starker
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-adj-dekl-vollstaendig
+    prompt:
+      stem: "Chọn dạng đúng trong văn viết (Genitiv số nhiều, không mạo từ): Trotz ___ Schmerzen ging Herr Krause zur Arbeit."
+      stem_lang: vi
+      options:
+        - { id: t2r, text: "starker", lang: de }
+        - { id: t6n, text: "starken", lang: de }
+        - { id: t9e, text: "starke", lang: de }
+        - { id: t4s, text: "starkes", lang: de }
+    answer:
+      correct_option_id: t2r
+    explanation:
+      vi: "Không có mạo từ thì tính từ tự mang đuôi của mạo từ: Genitiv số nhiều là der → -er: trotz starker Schmerzen. trotz starken Schmerzen (Dativ) chỉ gặp trong khẩu ngữ, không phải dạng chuẩn của văn viết."
+    display_answer: starker
+
+  - key: de:exercise:b1u05l2-mcq-ein-kranker
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-nominalisierte-adjektive
+    prompt:
+      stem: "Chọn cách viết đúng: Im Wartezimmer sitzt ein ___ und wartet auf die Ärztin."
+      stem_lang: vi
+      options:
+        - { id: k5r, text: "Kranker", lang: de }
+        - { id: k1e, text: "Kranke", lang: de }
+        - { id: k8l, text: "kranker", lang: de }
+        - { id: k3n, text: "Kranken", lang: de }
+    answer:
+      correct_option_id: k5r
+    explanation:
+      vi: "Tính từ dùng như danh từ nên viết hoa, nhưng đuôi vẫn theo bảng 1: sau ein, giống đực Nominativ → -er: ein Kranker (người bệnh). Kranke đi với der/die/eine; Kranken là dạng sau dem/den hoặc số nhiều die Kranken."
+    display_answer: Kranker
+
+  - key: de:exercise:b1u05l2-listen-orthopaede
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u05-orthopaede
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wegen der starken Rückenschmerzen hat mich mein Hausarzt an einen Orthopäden überwiesen.
+      options:
+        - { id: o2a, text: "Vì đau lưng nhiều, bác sĩ gia đình đã chuyển tôi đến bác sĩ chỉnh hình.", lang: vi }
+        - { id: o6b, text: "Vì đau lưng nhiều, bác sĩ gia đình đã chuyển tiền cho bác sĩ chỉnh hình.", lang: vi }
+        - { id: o9c, text: "Dù đau lưng nhiều, bác sĩ gia đình vẫn không chuyển tôi đi khám chuyên khoa.", lang: vi }
+        - { id: o4d, text: "Vì đau đầu nhiều, bác sĩ gia đình đã chuyển tôi đến bác sĩ chỉnh hình.", lang: vi }
+    answer:
+      correct_option_id: o2a
+    explanation:
+      vi: "wegen = vì (không phải trotz – dù); Rückenschmerzen = đau lưng; jemanden an einen Facharzt überweisen = chuyển ai đến bác sĩ chuyên khoa (ở ngân hàng thì überweisen là chuyển khoản). den Orthopäden: n-Deklination."
+    display_answer: Vì đau lưng nhiều, bác sĩ gia đình đã chuyển tôi đến bác sĩ chỉnh hình.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u05l2-fill-fieber-medikamente
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-adj-dekl-vollstaendig
+    prompt:
+      template: "Wegen des {{b1}} (stark) Fiebers konnte Minh nicht zur Arbeit gehen. Die Ärztin hat eine {{b2}} (gründlich) Untersuchung gemacht. Trotz {{b3}} (gut) Medikamente war er erst nach einer Woche wieder gesund."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [starken]
+        b2: [gründliche]
+        b3: [guter]
+    known_wrong:
+      - answer: starkes
+        feedback_vi: Genitiv sau des – tính từ luôn -en (des starken Fiebers).
+        error_tag: adj_ending
+      - answer: gründlichen
+        feedback_vi: die Untersuchung là giống cái, Akkusativ sau eine → -e (eine gründliche Untersuchung).
+        error_tag: adj_ending
+      - answer: guten
+        feedback_vi: Genitiv số nhiều không có mạo từ → -er (trotz guter Medikamente).
+        error_tag: adj_ending
+    explanation:
+      vi: "b1: Genitiv giống trung sau des → -en. b2: Akkusativ giống cái sau eine → -e (giống Nominativ). b3: Genitiv số nhiều không mạo từ → tính từ mang đuôi của der: guter."
+    display_answer: "Wegen des starken Fiebers konnte Minh nicht zur Arbeit gehen. Die Ärztin hat eine gründliche Untersuchung gemacht. Trotz guter Medikamente war er erst nach einer Woche wieder gesund."
+
+  - key: de:exercise:b1u05l2-fill-bessere-modernsten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-adj-dekl-vollstaendig
+    prompt:
+      template: "Unser Hausarzt ist gut, aber Frau Weber ist eine noch {{b1}} (gut, Komparativ) Ärztin. Sie hat die {{b2}} (modern, Superlativ) Geräte in der ganzen Stadt."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [bessere]
+        b2: [modernsten]
+    known_wrong:
+      - answer: besser
+        feedback_vi: So sánh hơn đứng trước danh từ vẫn cần đuôi – eine bessere Ärztin.
+        error_tag: adj_ending
+      - answer: besseren
+        feedback_vi: Nominativ giống cái sau eine → -e (eine bessere Ärztin).
+        error_tag: adj_ending
+      - answer: modernste
+        feedback_vi: Số nhiều sau die → -en (die modernsten Geräte).
+        error_tag: adj_ending
+    explanation:
+      vi: "gut → besser (so sánh hơn) + đuôi bảng 1 (Nominativ giống cái sau eine: -e) = bessere. modern → modernst- (so sánh nhất) + đuôi bảng 2 (số nhiều sau die: -en) = modernsten."
+    display_answer: "Unser Hausarzt ist gut, aber Frau Weber ist eine noch bessere Ärztin. Sie hat die modernsten Geräte in der ganzen Stadt."
+
+  - key: de:exercise:b1u05l2-tr-etwas-neues
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-nominalisierte-adjektive
+    prompt:
+      source_text: "Có gì mới không? Không, chẳng có gì đặc biệt."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Gibt es etwas Neues? Nein, nichts Besonderes.
+        - Gibt es etwas Neues? Nein, es gibt nichts Besonderes.
+        - Gibt es etwas Neues? Nichts Besonderes.
+        - Gibt es was Neues? Nein, nichts Besonderes.
+        - Gibt es was Neues? Nein, es gibt nichts Besonderes.
+        - Was gibt es Neues? Nichts Besonderes.
+        - Was gibt es Neues? Nein, nichts Besonderes.
+    known_wrong:
+      - answer: Gibt es etwas neu? Nein, nichts besonders.
+        feedback_vi: Sau etwas/nichts, tính từ thành danh từ và thêm -es – etwas Neues, nichts Besonderes.
+        error_tag: adj_ending
+      - answer: Gibt es etwas Neue? Nein, nichts Besondere.
+        feedback_vi: Sau etwas/nichts đuôi là -es, không phải -e – etwas Neues, nichts Besonderes.
+        error_tag: adj_ending
+    explanation:
+      vi: "etwas + tính từ viết hoa + -es = cái gì đó …: etwas Neues (cái gì mới); nichts + … -es = chẳng có gì …: nichts Besonderes. Trong khẩu ngữ, was có thể thay etwas."
+    display_answer: Gibt es etwas Neues? Nein, nichts Besonderes.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u05l2-wb-hohen-fiebers
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-patient
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Wegen: \"Vì sốt cao, bệnh nhân phải nằm lại bệnh viện.\""
+      tokens:
+        - { id: h-krankenhaus, text: Krankenhaus }
+        - { id: h-muss, text: muss }
+        - { id: h-hohen, text: hohen }
+        - { id: h-der, text: der }
+        - { id: h-wegen, text: Wegen }
+        - { id: h-bleiben, text: bleiben }
+        - { id: h-fiebers, text: Fiebers }
+        - { id: h-im, text: im }
+        - { id: h-des, text: des }
+        - { id: h-patient, text: Patient }
+    answer:
+      orders:
+        - [h-wegen, h-des, h-hohen, h-fiebers, h-muss, h-der, h-patient, h-im, h-krankenhaus, h-bleiben]
+    explanation:
+      vi: "wegen + Genitiv: des hohen Fiebers (hoch mất c khi có đuôi; sau des → -en). Cụm wegen là vị trí 1, nên muss ở vị trí 2, rồi chủ ngữ der Patient; bleiben đứng cuối câu."
+    display_answer: Wegen des hohen Fiebers muss der Patient im Krankenhaus bleiben.
+
+  - key: de:exercise:b1u05l2-mcq-ein-deutscher
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-nominalisierte-adjektive
+    prompt:
+      stem: "Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: e4d, text: "Mein Nachbar ist ein Deutscher.", lang: de }
+        - { id: e8f, text: "Mein Nachbar ist ein Deutsche.", lang: de }
+        - { id: e2g, text: "Mein Nachbar ist ein deutscher.", lang: de }
+        - { id: e6h, text: "Mein Nachbar ist ein Deutsch.", lang: de }
+    answer:
+      correct_option_id: e4d
+    explanation:
+      vi: "der Deutsche là tính từ danh từ hoá: viết hoa, đuôi theo bảng – sau ein, giống đực Nominativ → ein Deutscher. Deutsch (không đuôi) là tên ngôn ngữ."
+    display_answer: Mein Nachbar ist ein Deutscher.
+
+  - key: de:exercise:b1u05l2-tr-chronische-entzuendung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u05-chronisch
+    prompt:
+      source_text: Der Facharzt hat eine chronische Entzündung festgestellt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bác sĩ chuyên khoa đã phát hiện một chứng viêm mạn tính.
+        - Bác sĩ chuyên khoa đã phát hiện một chứng viêm mãn tính.
+        - Bác sĩ chuyên khoa phát hiện một chứng viêm mạn tính.
+        - Bác sĩ chuyên khoa phát hiện một chứng viêm mãn tính.
+        - Bác sĩ chuyên khoa đã phát hiện ra một chứng viêm mạn tính.
+        - Bác sĩ chuyên khoa đã phát hiện ra một chứng viêm mãn tính.
+        - Bác sĩ chuyên khoa đã phát hiện viêm mạn tính.
+        - Bác sĩ chuyên khoa đã phát hiện viêm mãn tính.
+        - Bác sĩ chuyên khoa đã phát hiện một ổ viêm mạn tính.
+        - Bác sĩ chuyên khoa đã chẩn đoán viêm mạn tính.
+        - Bác sĩ chuyên khoa đã chẩn đoán viêm mãn tính.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bác sĩ gia đình đã phát hiện một chứng viêm mạn tính.
+        feedback_vi: "Facharzt là bác sĩ chuyên khoa; bác sĩ gia đình là Hausarzt."
+        error_tag: meaning
+    explanation:
+      vi: "der Facharzt = bác sĩ chuyên khoa; feststellen = phát hiện, xác định; eine chronische Entzündung = một chứng viêm mạn tính (Akkusativ giống cái sau eine → -e)."
+    display_answer: Bác sĩ chuyên khoa đã phát hiện một chứng viêm mạn tính.

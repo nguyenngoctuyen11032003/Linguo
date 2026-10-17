@@ -1,0 +1,356 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u05-lebensmittel
+order_index: 3
+level: b1
+title:
+  vi: Thực phẩm – hậu tố danh từ quyết định giống (Die Gesundheit, die Zutat)
+objectives:
+  - vi: Đọc nhãn thực phẩm (thành phần, hạn dùng, chất phụ gia) và công thức nấu ăn đơn giản.
+  - vi: Đoán giống và số nhiều của danh từ dựa vào hậu tố (-ung, -heit, -keit, -chen, -ment, -ling …).
+estimated_minutes: 18
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u05-facharzt]
+items:
+  - item: de:item:b1u05-g-wortbildung-nomen
+  - item: de:item:b1u05-lebensmittel
+  - item: de:item:b1u05-zutat
+  - item: de:item:b1u05-mahlzeit
+  - item: de:item:b1u05-gesundheit
+  - item: de:item:b1u05-frisch
+  - item: de:item:b1u05-haltbar
+  - item: de:item:b1u05-regional
+  - item: de:item:b1u05-verpackung
+  - item: de:item:b1u05-inhaltsstoff
+  - item: de:item:b1u05-fluessigkeit
+  - item: de:item:b1u05-landwirtschaft
+  - item: de:item:b1u05-zubereitung
+  - item: de:item:b1u05-enthalten
+  - item: de:item:b1u05-zusatzstoff
+  - item: de:item:b1u05-metzgerei
+  - item: de:item:b1u05-biologisch
+  - item: de:item:b1u05-naehrwert
+  - item: de:item:b1u05-nuss
+  - item: de:item:b1u05-wuerstchen
+  - item: de:item:p0u3-g-genus-artikel
+    role: reuse
+  - item: de:item:a1u08-rezept
+    role: reuse
+  - item: de:item:a2u07-qualitaet
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc được nhãn thực phẩm như \"Zutaten: Vollkornmehl, Wasser, Salz. Ohne Zusatzstoffe.\" và đoán đúng giống của nhiều danh từ mới chỉ nhờ phần đuôi: die Verpackung, das Würstchen, der Lehrling."
+  - type: explain
+    text:
+      vi: "Giống của danh từ tiếng Đức phần lớn phải học thuộc, nhưng một số hậu tố cho biết giống khá chắc chắn. Danh từ tận cùng bằng -ung, -heit, -keit, -schaft, -ion, -tät, -ei, -ik hầu như là giống cái và có số nhiều -en: die Verpackung – die Verpackungen, die Flüssigkeit, die Portion, die Metzgerei. Đây là nhóm lớn nhất, nên gặp các đuôi này bạn cứ đoán die."
+  - type: explain
+    text:
+      vi: "Hậu tố -chen và -lein (làm nhỏ đi, thường kèm biến âm) cho giống trung và không đổi ở số nhiều: die Wurst → das Würstchen, die Würstchen. Đuôi -ment, -um và động từ nguyên thể dùng làm danh từ cũng thường là giống trung: das Medikament, das Datum, das Kochen."
+  - type: explain
+    text:
+      vi: "Giống đực thường gặp ở -ling, -ismus, -or và ở -er khi chỉ người hay vật làm một việc gì: der Lehrling, der Vegetarismus, der Motor, der Bäcker, der Computer. Nhưng không phải từ nào tận cùng bằng -er cũng là giống đực: die Butter, das Fenster, die Mutter."
+  - type: explain
+    text:
+      vi: "Đừng đoán giống theo nghĩa như khi dịch từ tiếng Việt: \"sức khoẻ\" không có giống, nhưng đuôi -heit cho biết die Gesundheit. Với từ ghép, chỉ cần nhìn từ cuối: das Leben + das Mittel → das Lebensmittel, der Inhalt + der Stoff → der Inhaltsstoff."
+  - type: deep_explain
+    text:
+      vi: "Quy tắc hậu tố chỉ áp dụng khi đó thật sự là hậu tố: der Kuchen không có hậu tố -chen, das Ei không có hậu tố -ei, das Labor là ngoại lệ của -or. Trên bao bì thực phẩm ở Đức thường có: Zutaten (thành phần), Nährwerte (giá trị dinh dưỡng), mindestens haltbar bis (hạn sử dụng tốt nhất trước ngày), Kann Spuren von Nüssen enthalten (có thể chứa vết các loại hạt) và nhãn Bio cho sản phẩm hữu cơ. Công thức nấu ăn (das Rezept – cùng từ với \"đơn thuốc\") thường viết động từ nguyên thể ở cuối thay cho câu mệnh lệnh: Die Kartoffeln schälen und in Stücke schneiden. Danh từ nguyên thể thì luôn viết hoa và là giống trung: das Essen, das Rauchen."
+  - type: example
+    target: Auf der Verpackung stehen alle Zutaten und Nährwerte.
+    target_lang: de
+    translation:
+      vi: Trên bao bì có ghi tất cả thành phần và giá trị dinh dưỡng.
+    note:
+      vi: "die Verpackung (-ung → giống cái); die Zutat, der Nährwert phải học thuộc giống, số nhiều Zutaten, Nährwerte."
+  - type: example
+    target: Die Qualität der Lebensmittel ist hier sehr gut, weil fast alles aus der regionalen Landwirtschaft kommt.
+    target_lang: de
+    translation:
+      vi: Chất lượng thực phẩm ở đây rất tốt, vì hầu hết đều đến từ nông nghiệp địa phương.
+    note:
+      vi: "die Qualität (-tät), die Landwirtschaft (-schaft): giống cái. der Lebensmittel: Genitiv số nhiều."
+  - type: example
+    target: "Zubereitung: Die Nüsse klein schneiden und mit dem Joghurt mischen."
+    target_lang: de
+    translation:
+      vi: "Cách làm: thái nhỏ hạt rồi trộn với sữa chua."
+    note:
+      vi: "Ngôn ngữ công thức: động từ nguyên thể ở cuối. die Zubereitung: -ung → giống cái."
+  - type: example
+    target: Das Würstchen enthält leider viel Salz und einige Zusatzstoffe.
+    target_lang: de
+    translation:
+      vi: Tiếc là xúc xích này chứa nhiều muối và một số chất phụ gia.
+    note:
+      vi: "das Würstchen: -chen → giống trung. enthalten (chứa): er/sie/es enthält."
+  - type: common_mistake
+    wrong: Das Gesundheit ist am wichtigsten.
+    right: Die Gesundheit ist am wichtigsten.
+    target_lang: de
+    note:
+      vi: "Đuôi -heit → giống cái: die Gesundheit, dù tiếng Việt không có giống để gợi ý."
+  - type: common_mistake
+    wrong: Ich lese die Zutaten auf dem Verpackung.
+    right: Ich lese die Zutaten auf der Verpackung.
+    target_lang: de
+    note:
+      vi: "Verpackung có đuôi -ung nên là giống cái; Dativ giống cái là der."
+  - type: common_mistake
+    wrong: Der Würstchen ist kalt.
+    right: Das Würstchen ist kalt.
+    target_lang: de
+    note:
+      vi: "Đừng đoán theo die Wurst: danh từ có hậu tố -chen là giống trung."
+  - type: summary
+    points:
+      - vi: "die: -ung, -heit, -keit, -schaft, -ion, -tät, -ei, -ik (số nhiều -en)."
+      - vi: "das: -chen, -lein (số nhiều không đổi), -ment, -um, nguyên thể làm danh từ (das Kochen)."
+      - vi: "der: -ling, -ismus, -or, -er chỉ người làm (der Bäcker) – nhưng die Butter, das Fenster."
+      - vi: "Từ ghép: giống của từ cuối (das Lebensmittel, der Inhaltsstoff)."
+      - vi: "Nhãn: Zutaten, Nährwerte, mindestens haltbar bis, ohne Zusatzstoffe, Bio."
+      - vi: "Từ vựng: die Mahlzeit, die Gesundheit, frisch, haltbar, regional, enthalten."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u05l3-mcq-nicht-feminin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-g-wortbildung-nomen
+    prompt:
+      stem: "Danh từ nào KHÔNG phải giống cái?"
+      stem_lang: vi
+      options:
+        - { id: n3m, text: "Medikament", lang: de }
+        - { id: n7z, text: "Zubereitung", lang: de }
+        - { id: n1q, text: "Qualität", lang: de }
+        - { id: n5l, text: "Landwirtschaft", lang: de }
+    answer:
+      correct_option_id: n3m
+    explanation:
+      vi: "-ung (die Zubereitung), -tät (die Qualität), -schaft (die Landwirtschaft) là hậu tố giống cái. -ment thường là giống trung: das Medikament."
+    display_answer: Medikament
+
+  - key: de:exercise:b1u05l3-mcq-das-wuerstchen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-wuerstchen
+    prompt:
+      stem: "Chọn mạo từ đúng: ___ Würstchen ist noch warm."
+      stem_lang: vi
+      options:
+        - { id: w2d, text: "Das", lang: de }
+        - { id: w6e, text: "Die", lang: de }
+        - { id: w9r, text: "Der", lang: de }
+    answer:
+      correct_option_id: w2d
+    explanation:
+      vi: "Hậu tố -chen cho giống trung, dù từ gốc là die Wurst: das Würstchen."
+    display_answer: Das
+
+  - key: de:exercise:b1u05l3-mcq-etikett-zusatzstoffe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-zusatzstoff
+    prompt:
+      stem: "Vollkornbrot aus regionaler Landwirtschaft. Zutaten: Vollkornmehl, Wasser, Sonnenblumenkerne, Salz, Hefe. Ohne Zusatzstoffe. Kann Spuren von Nüssen enthalten. Mindestens haltbar bis: siehe Verpackung. — Richtig oder falsch? Das Brot enthält Zusatzstoffe."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Trên nhãn ghi Ohne Zusatzstoffe – không có chất phụ gia. Vì vậy câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u05l3-mcq-etikett-salz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u05-zutat
+    prompt:
+      stem: "Vollkornbrot aus regionaler Landwirtschaft. Zutaten: Vollkornmehl, Wasser, Sonnenblumenkerne, Salz, Hefe. Ohne Zusatzstoffe. Kann Spuren von Nüssen enthalten. Mindestens haltbar bis: siehe Verpackung. — Richtig oder falsch? Salz ist eine Zutat des Brotes."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Trong danh sách Zutaten (thành phần) có Salz (muối). Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u05l3-fill-artikel-suffix
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-g-wortbildung-nomen
+    prompt:
+      template: "{{b1}} Zubereitung ist ganz einfach. {{b2}} Medikament hilft gut gegen Kopfschmerzen. {{b3}} Vegetarismus wird immer beliebter."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [die]
+        b2: [das]
+        b3: [der]
+    explanation:
+      vi: "Zubereitung: -ung → die. Medikament: -ment → das. Vegetarismus: -ismus → der. Cả ba từ đều đoán được giống nhờ hậu tố."
+    display_answer: "Die Zubereitung ist ganz einfach. Das Medikament hilft gut gegen Kopfschmerzen. Der Vegetarismus wird immer beliebter."
+
+  - key: de:exercise:b1u05l3-fill-plural
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-inhaltsstoff
+    prompt:
+      template: "Auf der Packung stehen alle {{b1}} (die Zutat) und alle {{b2}} (der Inhaltsstoff). Viele {{b3}} (die Verpackung) sind leider aus Plastik."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 12 }
+        - { id: b3, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [Zutaten]
+        b2: [Inhaltsstoffe]
+        b3: [Verpackungen]
+    known_wrong:
+      - answer: Zutats
+        feedback_vi: die Zutat có số nhiều -en – die Zutaten.
+        error_tag: plural_form
+      - answer: Inhaltsstoffen
+        feedback_vi: Sau alle ở Nominativ, số nhiều là die Inhaltsstoffe (đuôi -n chỉ thêm ở Dativ).
+        error_tag: plural_form
+      - answer: Verpackunge
+        feedback_vi: Danh từ đuôi -ung có số nhiều -en – die Verpackungen.
+        error_tag: plural_form
+    explanation:
+      vi: "die Zutat → die Zutaten; der Inhaltsstoff → die Inhaltsstoffe (giống der Stoff – die Stoffe); die Verpackung → die Verpackungen (danh từ -ung có số nhiều -en)."
+    display_answer: "Auf der Packung stehen alle Zutaten und alle Inhaltsstoffe. Viele Verpackungen sind leider aus Plastik."
+
+  - key: de:exercise:b1u05l3-tr-gesundheit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-gesundheit
+    prompt:
+      source_text: Sức khoẻ là quan trọng nhất.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Gesundheit ist am wichtigsten.
+        - Gesundheit ist am wichtigsten.
+        - Am wichtigsten ist die Gesundheit.
+        - Am wichtigsten ist Gesundheit.
+        - Die Gesundheit ist das Wichtigste.
+        - Gesundheit ist das Wichtigste.
+        - Das Wichtigste ist die Gesundheit.
+        - Das Wichtigste ist Gesundheit.
+    known_wrong:
+      - answer: Das Gesundheit ist am wichtigsten.
+        feedback_vi: Đuôi -heit → giống cái – die Gesundheit.
+        error_tag: article
+      - answer: Der Gesundheit ist am wichtigsten.
+        feedback_vi: Đuôi -heit → giống cái – die Gesundheit.
+        error_tag: article
+      - answer: Die Gesundheit ist am wichtigste.
+        feedback_vi: Sau động từ, so sánh nhất là am + -sten – am wichtigsten.
+        error_tag: adj_ending
+    explanation:
+      vi: "die Gesundheit (-heit → giống cái). \"quan trọng nhất\" sau động từ sein: am wichtigsten; hoặc dùng tính từ danh từ hoá: das Wichtigste (điều quan trọng nhất)."
+    display_answer: Die Gesundheit ist am wichtigsten.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u05l3-wb-verpackung-zutaten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u05-verpackung
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Auf: \"Trên bao bì có ghi tất cả thành phần và giá trị dinh dưỡng.\""
+      tokens:
+        - { id: v-zutaten, text: Zutaten }
+        - { id: v-stehen, text: stehen }
+        - { id: v-der, text: der }
+        - { id: v-naehrwerte, text: Nährwerte }
+        - { id: v-auf, text: Auf }
+        - { id: v-und, text: und }
+        - { id: v-alle, text: alle }
+        - { id: v-verpackung, text: Verpackung }
+    answer:
+      orders:
+        - [v-auf, v-der, v-verpackung, v-stehen, v-alle, v-zutaten, v-und, v-naehrwerte]
+        - [v-auf, v-der, v-verpackung, v-stehen, v-alle, v-naehrwerte, v-und, v-zutaten]
+    explanation:
+      vi: "auf + Dativ (ở đâu?): auf der Verpackung – Verpackung giống cái nên Dativ là der. Cụm này ở vị trí 1, nên stehen ở vị trí 2, sau đó là chủ ngữ số nhiều alle Zutaten und Nährwerte (hai danh từ đổi chỗ được)."
+    display_answer: Auf der Verpackung stehen alle Zutaten und Nährwerte.
+
+  - key: de:exercise:b1u05l3-mcq-rezept-kochen
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a1u08-rezept
+    prompt:
+      stem: "Lan nhắn cho bạn: \"Kannst du mir das Rezept für deinen Nusskuchen schicken? Die Zubereitung sah so einfach aus!\" — Rezept ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r3c, text: "công thức nấu ăn", lang: vi }
+        - { id: r7d, text: "đơn thuốc", lang: vi }
+        - { id: r1h, text: "hoá đơn", lang: vi }
+        - { id: r5b, text: "bao bì", lang: vi }
+    answer:
+      correct_option_id: r3c
+    explanation:
+      vi: "das Rezept có hai nghĩa: đơn thuốc (ở phòng khám) và công thức nấu ăn. Ở đây nói về bánh (Nusskuchen) và cách làm (Zubereitung), nên là công thức nấu ăn. Hoá đơn là die Rechnung, bao bì là die Verpackung."
+    display_answer: công thức nấu ăn
+
+  - key: de:exercise:b1u05l3-tr-regionale-lebensmittel
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u05-regional
+    prompt:
+      source_text: Ich kaufe am liebsten frische, regionale Lebensmittel ohne viel Verpackung.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích nhất là mua thực phẩm tươi của địa phương, không có nhiều bao bì.
+        - Tôi thích nhất là mua thực phẩm tươi của địa phương mà không có nhiều bao bì.
+        - Tôi thích mua thực phẩm tươi của địa phương, không có nhiều bao bì nhất.
+        - Tôi thích nhất là mua thực phẩm tươi, của địa phương, không nhiều bao bì.
+        - Tôi thích nhất là mua thực phẩm tươi trong vùng, không có nhiều bao bì.
+        - Tôi thích mua nhất là thực phẩm tươi của địa phương, không có nhiều bao bì.
+        - Tôi thích nhất là mua đồ ăn tươi của địa phương, không có nhiều bao bì.
+        - Tôi thích nhất là mua thực phẩm tươi sống của địa phương, không có nhiều bao bì.
+        - Tôi thích nhất là mua thực phẩm tươi của địa phương, ít bao bì.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi thích nhất là mua thực phẩm tươi nhập khẩu, không có nhiều bao bì.
+        feedback_vi: "regional là của địa phương, trong vùng – ngược với nhập khẩu."
+        error_tag: meaning
+    explanation:
+      vi: "am liebsten = thích nhất (so sánh nhất của gern); frische, regionale Lebensmittel: số nhiều không mạo từ, Akkusativ → -e; ohne viel Verpackung = không có nhiều bao bì."
+    display_answer: Tôi thích nhất là mua thực phẩm tươi của địa phương, không có nhiều bao bì.

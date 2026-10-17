@@ -1,0 +1,1685 @@
+# Học liệu unit B1U05 "Sức khoẻ và dinh dưỡng" (Gesundheit und Ernährung), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U05L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Sống khoẻ – bị động với modal, falls =================
+  - key: de:item:b1u05-g-passiv-modal
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Passiv mit Modalverb: Das Obst muss gewaschen werden. · …, dass das Obst gewaschen werden muss."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ khiếm khuyết (müssen, sollen, können, dürfen) chia ở vị trí 2, cuối câu là Partizip II + werden ở dạng nguyên thể: Das Obst sollte gewaschen werden. Trong câu phụ, động từ khiếm khuyết đã chia đứng sau cùng: …, dass das Obst gewaschen werden sollte. Cấu trúc này hay gặp trong lời khuyên, hướng dẫn và nội quy, khi việc cần làm quan trọng hơn người làm."
+      examples:
+        - target: Obst und Gemüse sollten vor dem Essen gewaschen werden.
+          translation:
+            vi: Rau quả nên được rửa trước khi ăn.
+        - target: Hier darf nicht geraucht werden.
+          translation:
+            vi: Ở đây không được hút thuốc.
+        - target: Viele Ärzte sagen, dass mehr für die Gesundheit getan werden muss.
+          translation:
+            vi: Nhiều bác sĩ nói rằng cần phải làm nhiều hơn cho sức khoẻ.
+      confusion:
+        vi: "werden luôn đứng sau Partizip II: Das muss gemacht werden (không nói Das muss werden gemacht). Câu chủ động tương ứng dùng man: Man sollte das Obst waschen."
+
+  - key: de:item:b1u05-g-falls
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "falls: Falls du Fragen hast, ruf mich an."
+      pos: liên từ
+    back:
+      meaning:
+        vi: "falls mở đầu câu phụ điều kiện, động từ đứng cuối giống như sau wenn. falls nhấn mạnh rằng điều kiện có thể xảy ra mà cũng có thể không (\"trong trường hợp\", \"lỡ như\"); trong nhiều câu điều kiện, wenn và falls thay cho nhau được. Khác với wenn, falls không mang nghĩa thời gian \"khi, mỗi khi\"."
+      examples:
+        - target: Falls du Fragen hast, ruf mich einfach an.
+          translation:
+            vi: Nếu bạn có câu hỏi gì thì cứ gọi cho mình.
+        - target: Nimm einen Regenschirm mit, falls es regnet.
+          translation:
+            vi: Mang theo ô đi, lỡ trời mưa.
+      confusion:
+        vi: "Wenn ich nach Hause komme, koche ich (khi về đến nhà – việc chắc chắn xảy ra) thì không thay wenn bằng falls được."
+
+  - key: de:item:b1u05-ernaehrung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ernährung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ ăn uống, dinh dưỡng
+      examples:
+        - target: Eine gesunde Ernährung ist wichtig.
+          translation:
+            vi: Ăn uống lành mạnh là điều quan trọng.
+        - target: Ich achte sehr auf meine Ernährung.
+          translation:
+            vi: Tôi rất chú ý đến việc ăn uống của mình.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Ernährung. Động từ tương ứng là sich ernähren."
+
+  - key: de:item:b1u05-sich-ernaehren
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich ernähren
+      pos: động từ
+    back:
+      meaning:
+        vi: ăn uống (theo một cách nào đó), nuôi sống bản thân
+      examples:
+        - target: Wie ernährst du dich?
+          translation:
+            vi: Bạn ăn uống thế nào?
+        - target: Sie ernährt sich seit zwei Jahren vegetarisch.
+          translation:
+            vi: Cô ấy ăn chay đã hai năm nay.
+      confusion:
+        vi: "Cần đại từ phản thân: ich ernähre mich, du ernährst dich. Thường đi với một tính từ chỉ cách: sich gesund / vegetarisch / vegan ernähren."
+
+  - key: de:item:b1u05-bewegung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bewegung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự vận động (cơ thể)
+      examples:
+        - target: Ich brauche mehr Bewegung.
+          translation:
+            vi: Tôi cần vận động nhiều hơn.
+        - target: Bewegung an der frischen Luft tut gut.
+          translation:
+            vi: Vận động ngoài trời rất tốt cho cơ thể.
+      confusion:
+        vi: "Với nghĩa \"vận động\" thường dùng số ít. Động từ: sich bewegen (A2). Theo nghĩa \"phong trào\" thì có số nhiều die Bewegungen."
+
+  - key: de:item:b1u05-vegetarisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vegetarisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: chay (không ăn thịt, cá)
+      examples:
+        - target: Isst du vegetarisch?
+          translation:
+            vi: Bạn ăn chay à?
+        - target: Gibt es hier auch vegetarische Gerichte?
+          translation:
+            vi: Ở đây có món chay không?
+      confusion:
+        vi: "Người ăn chay: der Vegetarier / die Vegetarierin. Ăn chay kiểu Đức thường vẫn ăn trứng, sữa; không ăn cả những thứ đó là vegan."
+
+  - key: de:item:b1u05-vegan
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vegan
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuần chay (không ăn mọi sản phẩm từ động vật)
+      examples:
+        - target: Mein Bruder lebt vegan. Er isst keine Eier und trinkt keine Milch.
+          translation:
+            vi: Anh trai tôi sống thuần chay. Anh ấy không ăn trứng và không uống sữa.
+        - target: Das Restaurant bietet viele vegane Gerichte an.
+          translation:
+            vi: Nhà hàng có nhiều món thuần chay.
+      pronunciation_note:
+        vi: "Ở Đức thường đọc là ve-GAN, v đọc như \"v\", trọng âm ở âm tiết sau."
+
+  - key: de:item:b1u05-kalorie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kalorie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: calo
+      examples:
+        - target: Dieser Kuchen hat sehr viele Kalorien.
+          translation:
+            vi: Cái bánh này có rất nhiều calo.
+        - target: Wie viele Kalorien hat ein Apfel?
+          translation:
+            vi: Một quả táo có bao nhiêu calo?
+
+  - key: de:item:b1u05-vitamin
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Vitamin, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vitamin
+      examples:
+        - target: Orangen haben viel Vitamin C.
+          translation:
+            vi: Cam có nhiều vitamin C.
+        - target: In frischem Obst sind viele Vitamine.
+          translation:
+            vi: Trái cây tươi có nhiều vitamin.
+      pronunciation_note:
+        vi: "Trọng âm ở cuối: vi-ta-MIN; V đọc như \"v\"."
+
+  - key: de:item:b1u05-ausgewogen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausgewogen
+      pos: tính từ
+    back:
+      meaning:
+        vi: cân bằng, cân đối
+      examples:
+        - target: Eine ausgewogene Ernährung ist für viele Menschen das Ziel.
+          translation:
+            vi: Với nhiều người, ăn uống cân bằng là mục tiêu.
+        - target: Mein Frühstück ist nicht sehr ausgewogen.
+          translation:
+            vi: Bữa sáng của tôi không cân đối lắm.
+
+  - key: de:item:b1u05-verzichten-auf
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verzichten auf (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: từ bỏ, nhịn, không dùng (cái gì)
+      examples:
+        - target: Ich verzichte auf Zucker im Kaffee.
+          translation:
+            vi: Tôi không cho đường vào cà phê.
+        - target: Im Moment verzichtet er auf Alkohol.
+          translation:
+            vi: Hiện giờ anh ấy kiêng rượu bia.
+      confusion:
+        vi: "Luôn cần auf + Akkusativ: Ich verzichte auf Fleisch (không nói Ich verzichte Fleisch). Partizip II: hat verzichtet."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 1 – trường dinh dưỡng
+  - key: de:item:b1u05-uebergewicht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Übergewicht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thừa cân
+      examples:
+        - target: Zu wenig Bewegung kann zu Übergewicht führen.
+          translation:
+            vi: Vận động quá ít có thể dẫn đến thừa cân.
+        - target: Er hat leichtes Übergewicht.
+          translation:
+            vi: Anh ấy hơi thừa cân.
+
+  - key: de:item:b1u05-blutdruck
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Blutdruck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: huyết áp
+      examples:
+        - target: Die Ärztin misst den Blutdruck.
+          translation:
+            vi: Bác sĩ đo huyết áp.
+        - target: Mein Vater hat einen hohen Blutdruck.
+          translation:
+            vi: Bố tôi bị huyết áp cao.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: das Blut + der Druck → der Blutdruck."
+
+  - key: de:item:b1u05-portion
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Portion, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: suất, phần (ăn)
+      examples:
+        - target: Eine Portion Pommes, bitte.
+          translation:
+            vi: Cho một suất khoai tây chiên.
+        - target: Die Portionen in diesem Restaurant sind sehr groß.
+          translation:
+            vi: Các suất ăn ở nhà hàng này rất to.
+
+  - key: de:item:b1u05-ballaststoff
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ballaststoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất xơ
+      examples:
+        - target: Vollkornbrot hat viele Ballaststoffe.
+          translation:
+            vi: Bánh mì nguyên cám có nhiều chất xơ.
+        - target: Auch Gemüse und Obst liefern Ballaststoffe.
+          translation:
+            vi: Rau và trái cây cũng cung cấp chất xơ.
+      confusion:
+        vi: "Thường dùng ở số nhiều: die Ballaststoffe."
+
+  - key: de:item:b1u05-eiweiss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Eiweiß, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất đạm, protein; lòng trắng trứng
+      examples:
+        - target: Linsen und Bohnen haben viel Eiweiß.
+          translation:
+            vi: Đậu lăng và các loại đậu có nhiều chất đạm.
+        - target: Für den Kuchen braucht man nur das Eiweiß.
+          translation:
+            vi: Làm bánh này chỉ cần lòng trắng trứng.
+      confusion:
+        vi: "Nghĩa \"chất đạm\" thường dùng số ít (viel Eiweiß); trong văn bản khoa học còn gặp từ das Protein."
+
+  - key: de:item:b1u05-vermeiden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vermeiden, vermeidet, vermied, hat vermieden
+      pos: động từ
+    back:
+      meaning:
+        vi: tránh
+      examples:
+        - target: Ich versuche, Stress zu vermeiden.
+          translation:
+            vi: Tôi cố gắng tránh căng thẳng.
+        - target: Fertiggerichte vermeide ich, so gut es geht.
+          translation:
+            vi: Tôi tránh đồ ăn chế biến sẵn hết mức có thể.
+      confusion:
+        vi: "Tiền tố ver- không tách, Partizip II không có ge-: vermieden."
+
+  - key: de:item:b1u05-empfehlung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Empfehlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời khuyên, sự khuyến nghị
+      examples:
+        - target: Das ist nur eine Empfehlung, keine Regel.
+          translation:
+            vi: Đó chỉ là lời khuyên, không phải quy định.
+        - target: Auf Empfehlung meiner Ärztin esse ich weniger Salz.
+          translation:
+            vi: Theo lời khuyên của bác sĩ, tôi ăn ít muối hơn.
+      confusion:
+        vi: "Danh từ của empfehlen (A2). Đuôi -ung → giống cái, số nhiều -en."
+
+  - key: de:item:b1u05-schaden
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schaden (+ Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: gây hại (cho ai, cái gì)
+      examples:
+        - target: Rauchen schadet der Gesundheit.
+          translation:
+            vi: Hút thuốc có hại cho sức khoẻ.
+        - target: Ein Stück Kuchen schadet nicht.
+          translation:
+            vi: Một miếng bánh thì chẳng sao đâu.
+      confusion:
+        vi: "Đi với Dativ: Das schadet dir (không nói dich). Danh từ der Schaden (thiệt hại) có số nhiều die Schäden."
+
+  - key: de:item:b1u05-fettarm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fettarm
+      pos: tính từ
+    back:
+      meaning:
+        vi: ít béo, ít chất béo
+      examples:
+        - target: Ich kaufe meistens fettarme Milch.
+          translation:
+            vi: Tôi thường mua sữa ít béo.
+        - target: Fisch ist oft fettarm und leicht.
+          translation:
+            vi: Cá thường ít béo và nhẹ bụng.
+      confusion:
+        vi: "-arm nghĩa là \"ít\": fettarm, zuckerarm, salzarm."
+
+  - key: de:item:b1u05-salz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Salz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: muối
+      examples:
+        - target: Die Suppe braucht noch etwas Salz.
+          translation:
+            vi: Món súp cần thêm chút muối.
+        - target: Zu viel Salz ist ungesund.
+          translation:
+            vi: Ăn quá nhiều muối không tốt cho sức khoẻ.
+      confusion:
+        vi: "Tính từ: salzig (mặn). Số nhiều die Salze chỉ dùng trong hoá học."
+
+  # ================= Bài 2: Ở bác sĩ chuyên khoa – tính từ đủ 4 cách, tính từ danh từ hoá =================
+  - key: de:item:b1u05-g-adj-dekl-vollstaendig
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Adjektivdeklination mit Genitiv: wegen des starken Fiebers · trotz starker Schmerzen · ein gesünderes Leben"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Ở Genitiv, sau des/der hoặc eines/einer/keines/meines… tính từ luôn có đuôi -en: wegen des starken Fiebers, trotz einer langen Behandlung. Không có mạo từ thì giống đực và giống trung có -en (trotz schlechten Wetters), giống cái và số nhiều có -er (wegen starker Schmerzen). Tính từ so sánh hơn và so sánh nhất đứng trước danh từ cũng thêm đuôi theo ba bảng: ein gesünderes Leben, die beste Lösung."
+      examples:
+        - target: Wegen des starken Fiebers musste sie im Bett bleiben.
+          translation:
+            vi: Vì sốt cao, cô ấy phải nằm trên giường.
+        - target: Trotz starker Schmerzen ging er zur Arbeit.
+          translation:
+            vi: Dù đau nhiều, anh ấy vẫn đi làm.
+        - target: Das ist die beste Lösung für unsere Familie.
+          translation:
+            vi: Đó là giải pháp tốt nhất cho gia đình chúng tôi.
+      confusion:
+        vi: "Danh từ giống đực và trung ở Genitiv thêm -s/-es (des Fiebers, des Arztes), giống cái và số nhiều thì không. Tính từ so sánh hơn giữ -er rồi mới thêm đuôi: ein besserer Arzt, eine bessere Ärztin."
+
+  - key: de:item:b1u05-g-nominalisierte-adjektive
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Adjektive als Nomen: der Kranke, ein Kranker, die Kranken · etwas Neues, nichts Besonderes"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nhiều tính từ dùng được như danh từ chỉ người: viết hoa nhưng vẫn mang đuôi tính từ theo ba bảng – der Kranke, die Kranke, ein Kranker, eine Kranke, die Kranken. Sau etwas, nichts, viel, wenig, tính từ viết hoa và thêm -es: etwas Neues, nichts Besonderes, viel Gutes. Sau alles thì đuôi là -e: alles Gute."
+      examples:
+        - target: Der Kranke braucht jetzt viel Ruhe.
+          translation:
+            vi: Người bệnh bây giờ cần được nghỉ ngơi nhiều.
+        - target: Gibt es etwas Neues? – Nein, nichts Besonderes.
+          translation:
+            vi: Có gì mới không? – Không, chẳng có gì đặc biệt.
+        - target: Mein Nachbar ist ein Deutscher, seine Frau ist Vietnamesin.
+          translation:
+            vi: Hàng xóm của tôi là người Đức, vợ anh ấy là người Việt.
+      confusion:
+        vi: "der Deutsche nhưng ein Deutscher (sau ein, giống đực Nominativ có -er như tính từ), không phải ein Deutsche. Tiếng Đức (ngôn ngữ) là Deutsch: Ich spreche Deutsch."
+
+  - key: de:item:b1u05-facharzt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Facharzt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ chuyên khoa
+      examples:
+        - target: Mein Hausarzt hat mich an einen Facharzt überwiesen.
+          translation:
+            vi: Bác sĩ gia đình đã chuyển tôi đến bác sĩ chuyên khoa.
+        - target: Auf einen Termin beim Facharzt muss man oft lange warten.
+          translation:
+            vi: Hẹn khám bác sĩ chuyên khoa thường phải chờ lâu.
+      confusion:
+        vi: "Nữ: die Fachärztin, -nen. Số nhiều đổi nguyên âm: die Fachärzte."
+
+  - key: de:item:b1u05-untersuchung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Untersuchung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự khám bệnh, cuộc kiểm tra (y tế)
+      examples:
+        - target: Die Untersuchung dauert etwa zwanzig Minuten.
+          translation:
+            vi: Buổi khám kéo dài khoảng hai mươi phút.
+        - target: Für die Untersuchung müssen Sie nüchtern sein.
+          translation:
+            vi: Trước khi khám, ông/bà phải nhịn ăn.
+      confusion:
+        vi: "nüchtern ở phòng khám nghĩa là \"chưa ăn gì\" (nhịn đói); trong đời thường nó còn có nghĩa \"không say\"."
+
+  - key: de:item:b1u05-untersuchen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: untersuchen
+      pos: động từ
+    back:
+      meaning:
+        vi: khám, kiểm tra
+      examples:
+        - target: Die Ärztin hat mich gründlich untersucht.
+          translation:
+            vi: Bác sĩ đã khám kỹ cho tôi.
+        - target: Ich muss mein Knie untersuchen lassen.
+          translation:
+            vi: Tôi phải đi khám đầu gối.
+      confusion:
+        vi: "unter- ở đây không tách và Partizip II không có ge-: Ich untersuche, hat untersucht."
+
+  - key: de:item:b1u05-diagnose
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Diagnose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chẩn đoán
+      examples:
+        - target: Die Diagnose war zum Glück nicht schlimm.
+          translation:
+            vi: May là chẩn đoán không có gì nghiêm trọng.
+        - target: Erst nach der Untersuchung kann der Arzt eine Diagnose stellen.
+          translation:
+            vi: Phải khám xong bác sĩ mới đưa ra chẩn đoán được.
+      confusion:
+        vi: "Cụm cố định: eine Diagnose stellen (đưa ra chẩn đoán), không dùng machen."
+
+  - key: de:item:b1u05-behandlung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Behandlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự điều trị, đợt điều trị
+      examples:
+        - target: Die Behandlung dauert drei Wochen.
+          translation:
+            vi: Đợt điều trị kéo dài ba tuần.
+        - target: Ist die Behandlung schmerzhaft?
+          translation:
+            vi: Điều trị có đau không?
+
+  - key: de:item:b1u05-behandeln
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: behandeln
+      pos: động từ
+    back:
+      meaning:
+        vi: điều trị, chữa
+      examples:
+        - target: Welcher Arzt behandelt Sie?
+          translation:
+            vi: Bác sĩ nào đang điều trị cho ông/bà?
+        - target: Die Entzündung muss schnell behandelt werden.
+          translation:
+            vi: Chỗ viêm phải được điều trị sớm.
+      confusion:
+        vi: "be- không tách, Partizip II không có ge-: hat behandelt."
+
+  - key: de:item:b1u05-patient
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Patient, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh nhân
+      examples:
+        - target: Die Ärztin spricht mit dem Patienten.
+          translation:
+            vi: Bác sĩ nói chuyện với bệnh nhân.
+        - target: Im Wartezimmer warten schon fünf Patienten.
+          translation:
+            vi: Trong phòng chờ đã có năm bệnh nhân đang đợi.
+      pronunciation_note:
+        vi: "ti ở đây đọc là \"tsi\": pa-TSI-ent."
+      confusion:
+        vi: "n-Deklination: den/dem/des Patienten. Nữ: die Patientin, -nen."
+
+  - key: de:item:b1u05-spritze
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Spritze, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: mũi tiêm; ống tiêm
+      examples:
+        - target: Der Arzt gibt mir eine Spritze.
+          translation:
+            vi: Bác sĩ tiêm cho tôi một mũi.
+        - target: Viele Kinder haben Angst vor Spritzen.
+          translation:
+            vi: Nhiều trẻ em sợ tiêm.
+      confusion:
+        vi: "Tiêm cho ai: jemandem eine Spritze geben."
+
+  - key: de:item:b1u05-operation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Operation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ca phẫu thuật, ca mổ
+      examples:
+        - target: Nach der Operation musste er eine Woche im Krankenhaus bleiben.
+          translation:
+            vi: Sau ca mổ anh ấy phải nằm viện một tuần.
+        - target: Die Operation ist gut verlaufen.
+          translation:
+            vi: Ca mổ đã diễn ra tốt đẹp.
+      confusion:
+        vi: "Đuôi -ion là giống cái. Động từ: operieren (hat operiert)."
+
+  - key: de:item:b1u05-chronisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: chronisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: mạn tính
+      examples:
+        - target: Sie hat chronische Rückenschmerzen.
+          translation:
+            vi: Cô ấy bị đau lưng mạn tính.
+        - target: Diabetes ist eine chronische Krankheit.
+          translation:
+            vi: Tiểu đường là một bệnh mạn tính.
+      pronunciation_note:
+        vi: "ch ở đầu từ gốc Hy Lạp này đọc như \"k\": KRO-nisch."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 2 – trường khám chuyên khoa
+  - key: de:item:b1u05-symptom
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Symptom, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: triệu chứng
+      examples:
+        - target: Welche Symptome haben Sie?
+          translation:
+            vi: Ông/bà có những triệu chứng gì?
+        - target: Fieber und Husten sind typische Symptome einer Grippe.
+          translation:
+            vi: Sốt và ho là triệu chứng điển hình của cúm.
+
+  - key: de:item:b1u05-beschwerden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Beschwerden (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: những chỗ khó chịu, triệu chứng đau ốm
+      examples:
+        - target: Seit wann haben Sie diese Beschwerden?
+          translation:
+            vi: Ông/bà bị khó chịu như thế này từ bao giờ?
+        - target: Ich habe Beschwerden beim Gehen.
+          translation:
+            vi: Tôi thấy đau khi đi lại.
+      confusion:
+        vi: "Số ít die Beschwerde thường có nghĩa khác: lời phàn nàn, khiếu nại."
+
+  - key: de:item:b1u05-entzuendung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Entzündung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng viêm, chỗ viêm
+      examples:
+        - target: Die Ärztin hat eine Entzündung im Ohr festgestellt.
+          translation:
+            vi: Bác sĩ phát hiện tai bị viêm.
+        - target: Gegen die Entzündung bekommen Sie eine Salbe.
+          translation:
+            vi: Ông/bà sẽ được kê thuốc mỡ để chữa viêm.
+
+  - key: de:item:b1u05-hausarzt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hausarzt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ gia đình
+      examples:
+        - target: Gehen Sie am besten zuerst zu Ihrem Hausarzt.
+          translation:
+            vi: Tốt nhất ông/bà nên đến bác sĩ gia đình trước.
+        - target: Mein Hausarzt kennt mich seit vielen Jahren.
+          translation:
+            vi: Bác sĩ gia đình biết tôi đã nhiều năm.
+      confusion:
+        vi: "Nữ: die Hausärztin, -nen. Ở Đức, người ta thường đến bác sĩ gia đình trước, rồi được chuyển (überweisen) đến bác sĩ chuyên khoa khi cần."
+
+  - key: de:item:b1u05-hautarzt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hautarzt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ da liễu
+      examples:
+        - target: Mit diesem Problem sollten Sie zum Hautarzt gehen.
+          translation:
+            vi: Với vấn đề này ông/bà nên đi khám bác sĩ da liễu.
+        - target: Meine Schwester hat morgen einen Termin beim Hautarzt.
+          translation:
+            vi: Ngày mai chị tôi có hẹn khám da liễu.
+      confusion:
+        vi: "Đừng nhầm Hautarzt (die Haut = da) với Hausarzt (das Haus = nhà): chỉ khác một chữ t/s."
+
+  - key: de:item:b1u05-orthopaede
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Orthopäde, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ chỉnh hình (xương khớp)
+      examples:
+        - target: Wegen meiner Rückenschmerzen gehe ich zum Orthopäden.
+          translation:
+            vi: Vì đau lưng nên tôi đi khám bác sĩ xương khớp.
+        - target: Der Orthopäde hat mein Knie untersucht.
+          translation:
+            vi: Bác sĩ chỉnh hình đã khám đầu gối cho tôi.
+      confusion:
+        vi: "n-Deklination: den/dem/des Orthopäden. Nữ: die Orthopädin, -nen."
+
+  - key: de:item:b1u05-blut
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Blut (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: máu
+      examples:
+        - target: Morgen früh wird Ihnen Blut abgenommen.
+          translation:
+            vi: Sáng mai ông/bà sẽ được lấy máu.
+        - target: Ich kann kein Blut sehen.
+          translation:
+            vi: Tôi không thể nhìn thấy máu.
+      confusion:
+        vi: "Lấy máu (xét nghiệm): Blut abnehmen. Xét nghiệm máu: die Blutuntersuchung."
+
+  - key: de:item:b1u05-roentgen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: röntgen
+      pos: động từ
+    back:
+      meaning:
+        vi: chụp X-quang
+      examples:
+        - target: Das Bein muss geröntgt werden.
+          translation:
+            vi: Chân cần được chụp X-quang.
+        - target: Wir röntgen zur Sicherheit auch die Hand.
+          translation:
+            vi: Để chắc chắn, chúng tôi chụp cả bàn tay nữa.
+      confusion:
+        vi: "Partizip II: geröntgt. Tên gọi theo nhà vật lý Wilhelm Conrad Röntgen."
+
+  - key: de:item:b1u05-befund
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Befund, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: kết quả khám, kết quả xét nghiệm
+      examples:
+        - target: Den Befund bekommen Sie in einer Woche.
+          translation:
+            vi: Một tuần nữa ông/bà sẽ nhận được kết quả.
+        - target: Der Befund war zum Glück unauffällig.
+          translation:
+            vi: May là kết quả bình thường.
+      confusion:
+        vi: "unauffällig trên kết quả khám nghĩa là \"không có gì bất thường\"."
+
+  - key: de:item:b1u05-krankheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Krankheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh, căn bệnh
+      examples:
+        - target: Grippe ist eine ansteckende Krankheit.
+          translation:
+            vi: Cúm là một bệnh truyền nhiễm.
+        - target: Viele Krankheiten kann man heute gut behandeln.
+          translation:
+            vi: Ngày nay nhiều bệnh có thể chữa trị tốt.
+      confusion:
+        vi: "Đuôi -heit là giống cái: die Krankheit, die Gesundheit. Tính từ: krank."
+
+  # ================= Bài 3: Thực phẩm – hậu tố danh từ quyết định giống =================
+  - key: de:item:b1u05-g-wortbildung-nomen
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Endung und Genus: die Verpackung, Gesundheit, Flüssigkeit, Landwirtschaft, Portion, Qualität, Metzgerei, Musik · das Würstchen, Medikament, Datum · der Lehrling, Tourismus, Motor, Bäcker"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Danh từ có hậu tố -ung, -heit, -keit, -schaft, -ion, -tät, -ei, -ik hầu như là giống cái và có số nhiều -en (die Verpackung, die Qualität). Hậu tố -chen, -lein, -ment, -um và động từ nguyên thể dùng làm danh từ thường là giống trung (das Würstchen, das Medikament, das Kochen). Hậu tố -ling, -ismus, -or và -er chỉ người làm việc gì thường là giống đực (der Lehrling, der Tourismus, der Motor, der Bäcker)."
+      examples:
+        - target: Die Zubereitung dauert nur zehn Minuten.
+          translation:
+            vi: Khâu chế biến chỉ mất mười phút.
+        - target: Das Würstchen ist zu salzig.
+          translation:
+            vi: Cái xúc xích này mặn quá.
+        - target: Der Vegetarismus wird in Deutschland immer beliebter.
+          translation:
+            vi: Ăn chay ngày càng được ưa chuộng ở Đức.
+      confusion:
+        vi: "Chỉ xét đúng hậu tố, không xét chữ cái cuối ngẫu nhiên: der Kuchen (không có hậu tố -chen), das Labor (ngoại lệ của -or), die Butter, das Fenster, die Mutter (không phải -er chỉ người)."
+
+  - key: de:item:b1u05-lebensmittel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Lebensmittel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực phẩm
+      examples:
+        - target: Frische Lebensmittel kaufe ich am liebsten auf dem Markt.
+          translation:
+            vi: Thực phẩm tươi tôi thích mua ở chợ nhất.
+        - target: Dieses Lebensmittel ist bis Ende Mai haltbar.
+          translation:
+            vi: Thực phẩm này dùng được đến cuối tháng Năm.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: das Mittel → das Lebensmittel. Thường dùng ở số nhiều: die Lebensmittel."
+
+  - key: de:item:b1u05-zutat
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zutat, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên liệu, thành phần (món ăn)
+      examples:
+        - target: Für den Salat brauchen wir nur fünf Zutaten.
+          translation:
+            vi: Món salad này chỉ cần năm nguyên liệu.
+        - target: Lies bitte die Zutaten auf der Packung!
+          translation:
+            vi: Bạn đọc thành phần trên bao bì giúp mình nhé!
+      confusion:
+        vi: "-at không có trong danh sách hậu tố, nên giống của Zutat phải học thuộc: die Zutat."
+
+  - key: de:item:b1u05-mahlzeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Mahlzeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bữa ăn
+      examples:
+        - target: Für mich ist das Frühstück die wichtigste Mahlzeit des Tages.
+          translation:
+            vi: Với tôi, bữa sáng là bữa ăn quan trọng nhất trong ngày.
+        - target: Wir essen drei Mahlzeiten am Tag.
+          translation:
+            vi: Chúng tôi ăn ba bữa một ngày.
+      confusion:
+        vi: "Ở nhiều nơi làm việc tại Đức, đồng nghiệp chào nhau buổi trưa bằng \"Mahlzeit!\" (khẩu ngữ, tuỳ vùng)."
+
+  - key: de:item:b1u05-gesundheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gesundheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sức khoẻ
+      examples:
+        - target: Rauchen schadet der Gesundheit.
+          translation:
+            vi: Hút thuốc có hại cho sức khoẻ.
+        - target: Die Gesundheit ist das Wichtigste.
+          translation:
+            vi: Sức khoẻ là quan trọng nhất.
+      confusion:
+        vi: "Đuôi -heit → giống cái: die Gesundheit (không phải das). Khi ai đó hắt hơi, người Đức nói: Gesundheit!"
+
+  - key: de:item:b1u05-frisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: frisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: tươi, mới
+      examples:
+        - target: Das Brot ist ganz frisch.
+          translation:
+            vi: Bánh mì còn mới nguyên.
+        - target: Ich koche gern mit frischem Gemüse.
+          translation:
+            vi: Tôi thích nấu ăn với rau tươi.
+
+  - key: de:item:b1u05-haltbar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: haltbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: để được lâu, (còn) dùng được
+      examples:
+        - target: Die Milch ist noch bis Freitag haltbar.
+          translation:
+            vi: Sữa còn dùng được đến thứ Sáu.
+        - target: Nudeln und Reis sind lange haltbar.
+          translation:
+            vi: Mì và gạo để được lâu.
+      confusion:
+        vi: "Trên bao bì: mindestens haltbar bis … = hạn sử dụng tốt nhất trước ngày …"
+
+  - key: de:item:b1u05-regional
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: regional
+      pos: tính từ
+    back:
+      meaning:
+        vi: của địa phương, trong vùng
+      examples:
+        - target: Ich kaufe gern regionale Produkte.
+          translation:
+            vi: Tôi thích mua sản phẩm địa phương.
+        - target: Das Obst kommt von einem regionalen Bauernhof.
+          translation:
+            vi: Trái cây này đến từ một trang trại trong vùng.
+
+  - key: de:item:b1u05-verpackung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verpackung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bao bì
+      examples:
+        - target: Auf der Verpackung stehen alle Zutaten.
+          translation:
+            vi: Trên bao bì có ghi tất cả thành phần.
+        - target: Viele Verpackungen sind aus Plastik.
+          translation:
+            vi: Nhiều bao bì làm bằng nhựa.
+
+  - key: de:item:b1u05-inhaltsstoff
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Inhaltsstoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành phần (chất có trong sản phẩm)
+      examples:
+        - target: Die Inhaltsstoffe stehen auf der Rückseite.
+          translation:
+            vi: Thành phần được ghi ở mặt sau.
+        - target: Welche Inhaltsstoffe hat diese Creme?
+          translation:
+            vi: Kem này có những thành phần gì?
+      confusion:
+        vi: "Âm nối -s-: Inhalt + s + Stoff. Zutat dùng cho món ăn, Inhaltsstoff dùng cho cả mỹ phẩm, thuốc."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 3 – trường thực phẩm, nhãn mác
+  - key: de:item:b1u05-fluessigkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Flüssigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất lỏng, nước (uống)
+      examples:
+        - target: Bei Fieber braucht der Körper viel Flüssigkeit.
+          translation:
+            vi: Khi sốt, cơ thể cần nhiều nước.
+        - target: Diese Flüssigkeit darf man nicht trinken.
+          translation:
+            vi: Không được uống chất lỏng này.
+      confusion:
+        vi: "Đuôi -keit → giống cái. Tính từ: flüssig (lỏng)."
+
+  - key: de:item:b1u05-landwirtschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Landwirtschaft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nông nghiệp
+      examples:
+        - target: In dieser Region arbeiten viele Menschen in der Landwirtschaft.
+          translation:
+            vi: Ở vùng này nhiều người làm nông nghiệp.
+        - target: Die Kartoffeln kommen aus der regionalen Landwirtschaft.
+          translation:
+            vi: Khoai tây này từ nông nghiệp địa phương.
+      confusion:
+        vi: "Đuôi -schaft → giống cái: die Landwirtschaft, die Freundschaft."
+
+  - key: de:item:b1u05-zubereitung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zubereitung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách chế biến, khâu nấu nướng
+      examples:
+        - target: "Zubereitung: Die Kartoffeln waschen und zwanzig Minuten kochen."
+          translation:
+            vi: "Cách làm: rửa khoai tây và luộc hai mươi phút."
+        - target: Die Zubereitung dauert etwa eine halbe Stunde.
+          translation:
+            vi: Chế biến mất khoảng nửa tiếng.
+      confusion:
+        vi: "Công thức nấu ăn tiếng Đức hay dùng động từ nguyên thể ở cuối như mệnh lệnh: Die Zwiebeln schneiden."
+
+  - key: de:item:b1u05-enthalten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: enthalten, enthält, enthielt, hat enthalten
+      pos: động từ
+    back:
+      meaning:
+        vi: chứa, có chứa
+      examples:
+        - target: Das Produkt enthält Nüsse.
+          translation:
+            vi: Sản phẩm này có chứa các loại hạt.
+        - target: Wie viel Zucker enthält dieser Saft?
+          translation:
+            vi: Nước ép này chứa bao nhiêu đường?
+      confusion:
+        vi: "ent- không tách, Partizip II không có ge-: hat enthalten (giống hệt nguyên thể)."
+
+  - key: de:item:b1u05-zusatzstoff
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zusatzstoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất phụ gia
+      examples:
+        - target: Dieses Brot ist ohne Zusatzstoffe.
+          translation:
+            vi: Bánh mì này không có chất phụ gia.
+        - target: Auf der Verpackung stehen auch die Zusatzstoffe.
+          translation:
+            vi: Trên bao bì cũng ghi cả chất phụ gia.
+
+  - key: de:item:b1u05-metzgerei
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Metzgerei, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng thịt
+      examples:
+        - target: Fleisch und Wurst kaufe ich in der Metzgerei.
+          translation:
+            vi: Thịt và xúc xích tôi mua ở cửa hàng thịt.
+        - target: Die Metzgerei an der Ecke hat heute geschlossen.
+          translation:
+            vi: Cửa hàng thịt ở góc phố hôm nay đóng cửa.
+      confusion:
+        vi: "Đuôi -ei → giống cái: die Metzgerei, die Bäckerei. Ở miền Bắc nước Đức người ta hay nói die Fleischerei."
+
+  - key: de:item:b1u05-biologisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: biologisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: hữu cơ (canh tác); thuộc sinh học
+      examples:
+        - target: Das Gemüse kommt aus biologischem Anbau.
+          translation:
+            vi: Rau này được trồng theo phương pháp hữu cơ.
+        - target: Biologische Lebensmittel sind oft teurer.
+          translation:
+            vi: Thực phẩm hữu cơ thường đắt hơn.
+      confusion:
+        vi: "Trong đời thường người ta hay nói tắt là Bio (Bio-Gemüse, im Bioladen)."
+
+  - key: de:item:b1u05-naehrwert
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Nährwert, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá trị dinh dưỡng
+      examples:
+        - target: Die Nährwerte stehen auf der Rückseite der Verpackung.
+          translation:
+            vi: Giá trị dinh dưỡng được ghi ở mặt sau bao bì.
+        - target: Dieses Müsli hat einen hohen Nährwert.
+          translation:
+            vi: Món ngũ cốc này có giá trị dinh dưỡng cao.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: der Wert → der Nährwert."
+
+  - key: de:item:b1u05-nuss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Nuss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: "hạt (quả hạch: óc chó, hạnh nhân…)"
+      examples:
+        - target: Ich bin allergisch gegen Nüsse.
+          translation:
+            vi: Tôi bị dị ứng với các loại hạt.
+        - target: Kann Spuren von Nüssen enthalten.
+          translation:
+            vi: Có thể chứa vết các loại hạt.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm và vẫn viết ss: die Nüsse (u ngắn, nên ss)."
+
+  - key: de:item:b1u05-wuerstchen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Würstchen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: xúc xích nhỏ
+      examples:
+        - target: Die Kinder essen gern Würstchen.
+          translation:
+            vi: Bọn trẻ thích ăn xúc xích.
+        - target: Ein Würstchen mit Senf, bitte.
+          translation:
+            vi: Cho một cái xúc xích với mù tạt.
+      confusion:
+        vi: "Hậu tố -chen làm danh từ nhỏ đi và cho giống trung, thường kèm biến âm: die Wurst → das Würstchen."
+
+  # ================= Bài 4: Không còn nữa – phủ định mở rộng =================
+  - key: de:item:b1u05-g-negation-erweitert
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "nicht mehr · kein … mehr · noch nicht · noch kein · gar nicht · überhaupt nicht · nie wieder"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "nicht mehr / kein … mehr = không … nữa (trước kia có, bây giờ thì không): Ich rauche nicht mehr. Ich trinke keinen Alkohol mehr. noch nicht / noch kein = chưa (có thể sau này sẽ có): Ich habe noch keinen Termin. gar nicht, überhaupt nicht nhấn mạnh \"hoàn toàn không\", còn nie wieder là \"không bao giờ … nữa\"."
+      examples:
+        - target: Seit einem Jahr rauche ich nicht mehr.
+          translation:
+            vi: Đã một năm nay tôi không hút thuốc nữa.
+        - target: Ich habe noch keine Lösung gefunden.
+          translation:
+            vi: Tôi vẫn chưa tìm ra cách giải quyết.
+        - target: Ich gehe heute nicht ins Fitnessstudio.
+          translation:
+            vi: Hôm nay tôi không đi tập gym.
+      confusion:
+        vi: "\"không … nữa\" là nicht mehr (không nói nicht noch), \"chưa\" là noch nicht. Phủ định cả câu: nicht đứng gần cuối, trước phần cuối khung câu hoặc cụm nơi chốn (heute nicht ins Fitnessstudio); phủ định riêng một thành phần: nicht đứng ngay trước nó (nicht heute, sondern morgen)."
+
+  - key: de:item:b1u05-sucht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Sucht, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng nghiện, cơn nghiện
+      examples:
+        - target: Rauchen kann schnell zur Sucht werden.
+          translation:
+            vi: Hút thuốc có thể nhanh chóng trở thành nghiện.
+        - target: Er hat seine Sucht überwunden.
+          translation:
+            vi: Anh ấy đã cai được nghiện.
+      confusion:
+        vi: "Hay gặp trong từ ghép: die Spielsucht (nghiện cờ bạc), die Handysucht (nghiện điện thoại)."
+
+  - key: de:item:b1u05-suechtig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: süchtig
+      pos: tính từ
+    back:
+      meaning:
+        vi: nghiện
+      examples:
+        - target: Viele Raucher sind süchtig nach Nikotin.
+          translation:
+            vi: Nhiều người hút thuốc nghiện nicotin.
+        - target: Ich bin fast süchtig nach Schokolade.
+          translation:
+            vi: Tôi gần như nghiện sô-cô-la. (nói đùa)
+      confusion:
+        vi: "Nghiện cái gì: süchtig nach + Dativ."
+
+  - key: de:item:b1u05-alkohol
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Alkohol (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: rượu bia, cồn
+      examples:
+        - target: Ich trinke keinen Alkohol mehr.
+          translation:
+            vi: Tôi không uống rượu bia nữa.
+        - target: Zu viel Alkohol ist ungesund.
+          translation:
+            vi: Uống quá nhiều rượu bia có hại cho sức khoẻ.
+      confusion:
+        vi: "Thường không có mạo từ và không có số nhiều: Alkohol trinken, keinen Alkohol mehr."
+
+  - key: de:item:b1u05-zigarette
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zigarette, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: điếu thuốc lá
+      examples:
+        - target: Früher hat er eine Schachtel Zigaretten am Tag geraucht.
+          translation:
+            vi: Trước đây anh ấy hút một bao thuốc mỗi ngày.
+        - target: Sie hat seit drei Monaten keine Zigarette mehr geraucht.
+          translation:
+            vi: Đã ba tháng nay cô ấy không hút điếu thuốc nào nữa.
+      pronunciation_note:
+        vi: "Z đọc là \"ts\": tsi-ga-RE-tte."
+
+  - key: de:item:b1u05-schlaf
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schlaf (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấc ngủ
+      examples:
+        - target: Guter Schlaf ist wichtig für die Gesundheit.
+          translation:
+            vi: Ngủ ngon rất quan trọng cho sức khoẻ.
+        - target: Ich brauche mindestens sieben Stunden Schlaf.
+          translation:
+            vi: Tôi cần ngủ ít nhất bảy tiếng.
+
+  - key: de:item:b1u05-entspannung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Entspannung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thư giãn
+      examples:
+        - target: Zur Entspannung höre ich Musik.
+          translation:
+            vi: Để thư giãn, tôi nghe nhạc.
+        - target: Nach der Arbeit brauche ich ein bisschen Entspannung.
+          translation:
+            vi: Sau giờ làm tôi cần thư giãn một chút.
+      confusion:
+        vi: "Động từ: sich entspannen (A2). Đuôi -ung → giống cái."
+
+  - key: de:item:b1u05-meditieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: meditieren
+      pos: động từ
+    back:
+      meaning:
+        vi: thiền
+      examples:
+        - target: Seit einem Jahr meditiere ich jeden Morgen zehn Minuten.
+          translation:
+            vi: Đã một năm nay sáng nào tôi cũng thiền mười phút.
+        - target: Hast du schon einmal meditiert?
+          translation:
+            vi: Bạn đã bao giờ thiền chưa?
+      confusion:
+        vi: "Động từ đuôi -ieren: Partizip II không có ge- – hat meditiert."
+
+  - key: de:item:b1u05-druck
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Druck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: áp lực, sức ép
+      examples:
+        - target: Bei der Arbeit stehe ich ständig unter Druck.
+          translation:
+            vi: Ở chỗ làm tôi luôn bị áp lực.
+        - target: Vor den Prüfungen war der Druck sehr groß.
+          translation:
+            vi: Trước kỳ thi áp lực rất lớn.
+      confusion:
+        vi: "Cụm cố định: unter Druck stehen (bị áp lực), jemanden unter Druck setzen (gây sức ép cho ai)."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 4 – trường thói quen, căng thẳng
+  - key: de:item:b1u05-raucher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Raucher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người hút thuốc
+      examples:
+        - target: Mein Vater war lange Raucher.
+          translation:
+            vi: Bố tôi đã hút thuốc nhiều năm.
+        - target: Hier dürfen Raucher nur draußen rauchen.
+          translation:
+            vi: Ở đây người hút thuốc chỉ được hút ở bên ngoài.
+      confusion:
+        vi: "Nữ: die Raucherin, -nen. Đuôi -er chỉ người làm việc gì → giống đực. Nghề nghiệp, vai trò sau sein thường không có mạo từ: Ich bin Raucher."
+
+  - key: de:item:b1u05-nichtraucher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Nichtraucher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người không hút thuốc
+      examples:
+        - target: Seit drei Jahren bin ich Nichtraucher.
+          translation:
+            vi: Đã ba năm nay tôi không hút thuốc.
+        - target: Das ist ein Zimmer für Nichtraucher.
+          translation:
+            vi: Đây là phòng dành cho người không hút thuốc.
+      confusion:
+        vi: "Nữ: die Nichtraucherin, -nen. Ich bin Nichtraucher có thể nghĩa là chưa bao giờ hút, hoặc đã bỏ thuốc."
+
+  - key: de:item:b1u05-schlafstoerung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Schlafstörung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng rối loạn giấc ngủ, mất ngủ
+      examples:
+        - target: Viele Menschen leiden unter Schlafstörungen.
+          translation:
+            vi: Nhiều người bị rối loạn giấc ngủ.
+        - target: Stress kann zu Schlafstörungen führen.
+          translation:
+            vi: Căng thẳng có thể dẫn đến mất ngủ.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Störung → die Schlafstörung. Bị bệnh gì: leiden unter + Dativ."
+
+  - key: de:item:b1u05-rueckfall
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Rückfall, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tái phát, sự quay lại (thói quen cũ)
+      examples:
+        - target: Nach drei Monaten hatte er einen Rückfall.
+          translation:
+            vi: Sau ba tháng anh ấy lại tái nghiện.
+        - target: Ein Rückfall ist kein Grund aufzugeben.
+          translation:
+            vi: Tái phát một lần không phải là lý do để bỏ cuộc.
+
+  - key: de:item:b1u05-erholsam
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erholsam
+      pos: tính từ
+    back:
+      meaning:
+        vi: giúp nghỉ ngơi, hồi sức (thư thái)
+      examples:
+        - target: Der Urlaub war sehr erholsam.
+          translation:
+            vi: Kỳ nghỉ rất thư thái.
+        - target: Nach einer erholsamen Nacht bin ich wieder fit.
+          translation:
+            vi: Sau một đêm ngủ ngon, tôi lại khoẻ khoắn.
+      confusion:
+        vi: "Từ sich erholen (A2) + hậu tố -sam (tính từ): erholsam."
+
+  - key: de:item:b1u05-vorsatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Vorsatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyết tâm, dự định (thay đổi bản thân)
+      examples:
+        - target: "Mein Vorsatz für das neue Jahr: keine Zigaretten mehr!"
+          translation:
+            vi: "Quyết tâm năm mới của tôi: không hút thuốc nữa!"
+        - target: Viele Menschen haben gute Vorsätze, aber nur wenige halten sie.
+          translation:
+            vi: Nhiều người có quyết tâm tốt, nhưng ít người giữ được.
+
+  - key: de:item:b1u05-durchschlafen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: durchschlafen, schläft durch, schlief durch, hat durchgeschlafen
+      pos: động từ
+    back:
+      meaning:
+        vi: ngủ một mạch (không thức giấc giữa đêm)
+      examples:
+        - target: Seit Wochen kann ich nicht mehr durchschlafen.
+          translation:
+            vi: Đã mấy tuần nay tôi không ngủ một mạch được nữa.
+        - target: Das Baby hat heute zum ersten Mal durchgeschlafen.
+          translation:
+            vi: Hôm nay em bé lần đầu tiên ngủ một mạch cả đêm.
+      confusion:
+        vi: "Động từ tách: Ich schlafe nicht durch. Khác einschlafen (thiếp đi) và ausschlafen (ngủ bù, ngủ cho đã)."
+
+  - key: de:item:b1u05-nikotin
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Nikotin (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nicotin
+      examples:
+        - target: Zigaretten enthalten Nikotin.
+          translation:
+            vi: Thuốc lá có chứa nicotin.
+        - target: Nikotin macht schnell süchtig.
+          translation:
+            vi: Nicotin gây nghiện nhanh.
+      pronunciation_note:
+        vi: "Trọng âm ở cuối: ni-ko-TIN."
