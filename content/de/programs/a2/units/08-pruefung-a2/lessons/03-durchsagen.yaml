@@ -55,13 +55,13 @@ body:
       vi: "in + Dativ nói việc sẽ xảy ra sau bao lâu tính từ bây giờ: in zehn Minuten (mười phút nữa), in einer Woche (một tuần nữa). Đừng nhầm với vor + Dativ (vor zehn Minuten = cách đây mười phút) và seit + Dativ (seit zehn Minuten = đã mười phút nay, việc vẫn đang tiếp diễn)."
   - type: explain
     text:
-      vi: "für + Akkusativ nói khoảng thời gian dự định: Ich fahre für eine Woche nach Wien (cũng có thể bỏ für: Ich fahre eine Woche nach Wien). über + Akkusativ nói suốt một dịp: über das Wochenende (übers Wochenende), über Ostern."
+      vi: "für + Akkusativ nói khoảng thời gian dự định: Ich fahre für eine Woche nach Wien (cũng có thể bỏ für: Ich fahre eine Woche nach Wien; người Áo còn nói auf eine Woche, nhưng bạn dùng für). über + Akkusativ nói suốt một dịp: über das Wochenende (übers Wochenende), über Ostern."
   - type: explain
     text:
       vi: "Phần thi Hören của Goethe-Zertifikat A2 gồm các bài nghe như thông báo, tin nhắn thoại, hội thoại ngắn và phỏng vấn (theo mô tả tại thời điểm soạn, cần đối chiếu quy định hiện hành). Mẹo: đọc câu hỏi trước để biết cần nghe gì – giờ, ngày, đường ray hay số tuyến – rồi chú ý các từ ab, bis, in, fällt aus, Verspätung."
   - type: deep_explain
     text:
-      vi: "Thông báo thật thường mở đầu bằng Achtung …, Meine Damen und Herren … hoặc Liebe Fahrgäste … và hay lặp lại thông tin quan trọng (Ich wiederhole …). Khi có công trường hay sự cố, tàu có thể đổi đường ray hoặc có xe buýt chạy thay (Ersatzverkehr, viết tắt SEV); bảng điện tử và ứng dụng của hãng tàu thường cập nhật nhanh hơn. Qua loa, số 2 hay được đọc là zwo để khỏi nhầm với drei."
+      vi: "Thông báo thật thường mở đầu bằng Achtung …, Meine Damen und Herren … hoặc Liebe Fahrgäste … và hay lặp lại thông tin quan trọng (Ich wiederhole …). Khi có công trường hay sự cố, tàu có thể đổi đường ray hoặc có xe buýt chạy thay (Ersatzverkehr, viết tắt SEV); nên xem thêm bảng điện tử hoặc ứng dụng của hãng tàu. Qua loa, số 2 thường được đọc là zwo để khỏi nhầm với drei."
   - type: example
     target: "Achtung am Gleis 3: Der Zug nach Köln fällt heute aus."
     target_lang: de
@@ -84,12 +84,12 @@ body:
     note:
       vi: seit = đã … nay (vẫn đang chờ); in = … nữa (tương lai). die Anzeige = bảng điện tử.
   - type: example
-    target: Wir fahren für zwei Wochen nach Spanien, zwischen dem 1. und dem 15. August.
+    target: Wir fahren für zwei Wochen nach Spanien. Zwischen dem 1. und dem 15. August ist unser Laden geschlossen.
     target_lang: de
     translation:
-      vi: Chúng tôi đi Tây Ban Nha hai tuần, trong khoảng từ ngày 1 đến ngày 15 tháng Tám.
+      vi: Chúng tôi đi Tây Ban Nha hai tuần. Trong khoảng từ ngày 1 đến ngày 15 tháng Tám, cửa hàng của chúng tôi đóng cửa.
     note:
-      vi: für + Akkusativ = (đi) trong bao lâu; zwischen + Dativ – zwischen dem ersten und dem fünfzehnten August.
+      vi: für + Akkusativ = (đi) trong bao lâu (ở Áo còn nghe auf zwei Wochen); zwischen + Dativ – zwischen dem ersten und dem fünfzehnten August.
   - type: example
     target: Hallo Frau Weber, hier ist die Praxis Doktor Klein. Ihr Termin am Dienstag fällt leider aus. Können Sie am Donnerstag zwischen neun und elf Uhr kommen?
     target_lang: de
@@ -286,6 +286,8 @@ exercises:
         - In zehn Minuten kommt der Zug an.
         - Der Zug kommt in 10 Minuten an.
         - In 10 Minuten kommt der Zug an.
+        - Der Zug ist in zehn Minuten da.
+        - In zehn Minuten ist der Zug da.
     known_wrong:
       - answer: Der Zug kommt nach zehn Minuten.
         feedback_vi: "\"… nữa\" tính từ bây giờ là in + Dativ: in zehn Minuten."

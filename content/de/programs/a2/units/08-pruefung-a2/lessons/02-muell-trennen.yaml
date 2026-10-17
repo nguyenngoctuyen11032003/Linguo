@@ -230,7 +230,7 @@ exercises:
     difficulty: 3
     item: de:item:a2u08-pfand
     prompt:
-      template: "Pfandautomat: Bitte nur {{b1}} Flaschen zurückgeben (leer). Keine {{b2}} Flaschen (kaputt)!"
+      template: "Pfandautomat (leer / kaputt): Bitte nur {{b1}} Flaschen zurückgeben – keine {{b2}} Flaschen!"
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 8 }
@@ -252,8 +252,8 @@ exercises:
         feedback_vi: "Tính từ đứng trước danh từ cần đuôi: keine kaputten Flaschen."
         error_tag: adj_ending
     explanation:
-      vi: "Số nhiều không có mạo từ: tính từ mang đuôi -e (leere Flaschen). Sau keine ở số nhiều, tính từ có đuôi -en (keine kaputten Flaschen). Cả hai câu là biển hướng dẫn dạng nguyên thể/rút gọn."
-    display_answer: "Pfandautomat: Bitte nur leere Flaschen zurückgeben (leer). Keine kaputten Flaschen (kaputt)!"
+      vi: "Số nhiều không có mạo từ: tính từ mang đuôi -e (leere Flaschen). Sau keine ở số nhiều, tính từ có đuôi -en (keine kaputten Flaschen). Biển hướng dẫn dạng nguyên thể (zurückgeben ở cuối), phần sau rút gọn."
+    display_answer: "Pfandautomat (leer / kaputt): Bitte nur leere Flaschen zurückgeben – keine kaputten Flaschen!"
 
   - key: de:exercise:a2u08l2-tr-keinen-muell
     type: translate
@@ -270,13 +270,9 @@ exercises:
         - Hier keinen Müll wegwerfen!
         - Bitte hier keinen Müll wegwerfen!
         - Hier bitte keinen Müll wegwerfen!
-        - Bitte keinen Müll hier wegwerfen!
-        - Keinen Müll hier wegwerfen!
         - Hier keinen Abfall wegwerfen!
         - Bitte hier keinen Abfall wegwerfen!
         - Hier bitte keinen Abfall wegwerfen!
-        - Bitte keinen Abfall hier wegwerfen!
-        - Keinen Abfall hier wegwerfen!
     known_wrong:
       - answer: Hier keinen Müll werfen weg!
         feedback_vi: "Ở dạng nguyên thể cuối câu, động từ tách viết liền: wegwerfen."

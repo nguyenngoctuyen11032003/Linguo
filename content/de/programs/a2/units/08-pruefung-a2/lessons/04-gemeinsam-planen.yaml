@@ -48,10 +48,10 @@ body:
       vi: "Sau bài này, bạn cùng một người bạn lên kế hoạch được: đề nghị, đồng ý hoặc từ chối có lý do và đề nghị thời gian khác, ví dụ: \"Wollen wir am Samstag grillen? – Am Samstag kann ich leider nicht. Wie wäre es mit Sonntag? – Einverstanden!\""
   - type: explain
     text:
-      vi: "Có bốn mẫu để rủ nhau cùng làm gì: Gehen wir ins Kino! (động từ đứng đầu + wir), Lass uns ins Kino gehen! (nguyên thể cuối câu), Wollen wir ins Kino gehen? (câu hỏi, nguyên thể cuối câu) và Wie wäre es mit + Dativ? Tiếng Việt chỉ thêm \"nhé\", \"đi\" vào cuối câu, còn tiếng Đức đổi vị trí động từ."
+      vi: "Bài này học bốn mẫu để rủ nhau cùng làm gì: Gehen wir ins Kino! (động từ đứng đầu + wir), Lass uns ins Kino gehen! (nguyên thể cuối câu), Wollen wir ins Kino gehen? (câu hỏi, nguyên thể cuối câu) và Wie wäre es mit + Dativ? Tiếng Việt chỉ thêm \"nhé\", \"đi\" vào cuối câu, còn tiếng Đức đổi vị trí động từ."
   - type: explain
     text:
-      vi: "Lass uns dùng khi nói với một người bạn (du); nói với nhiều người bạn là Lasst uns …, trang trọng là Lassen Sie uns … Sau Lass uns, động từ chính ở nguyên thể và đứng cuối câu: Lass uns am Samstag zusammen kochen."
+      vi: "Theo chuẩn, Lass uns dùng khi nói với một người bạn (du), Lasst uns với nhiều người (ihr), Lassen Sie uns khi trang trọng; trong khẩu ngữ Lass uns cũng hay được dùng với cả nhóm. Sau Lass uns, động từ chính ở nguyên thể và đứng cuối câu: Lass uns am Samstag zusammen kochen."
   - type: explain
     text:
       vi: "Trả lời đề nghị: đồng ý – Gute Idee! / Einverstanden! / Gern!; từ chối lịch sự – Da kann ich leider nicht, kèm lý do (weil …, denn …) và một đề nghị khác (Wie wäre es mit …? Geht es am …?). Từ chối mà không đề nghị gì khác nghe khá cụt."
@@ -60,7 +60,7 @@ body:
       vi: "Phần thi nói Teil 3 của Goethe-Zertifikat A2 là cùng bạn thi lên kế hoạch một việc, mỗi người có lịch riêng (theo mô tả tại thời điểm soạn, cần đối chiếu quy định hiện hành). Phần thi viết có tin nhắn hoặc e-mail ngắn, thường phải trả lời đủ các ý đề bài nêu, ví dụ hẹn, hủy hoặc dời hẹn."
   - type: deep_explain
     text:
-      vi: "Muốn nhẹ nhàng hơn, bạn có thể dùng könnten: Wir könnten am Samstag grillen. Hỏi đối phương có tiện không: Hast du am Samstag Zeit? Passt dir Samstag? (passen + Dativ ở đây nghĩa là \"tiện, hợp\"). Trong e-mail hẹn, nhớ xin trả lời: Sag mir bitte Bescheid, ob du kommst – câu phụ với ob (động từ cuối) bạn đã học ở unit trước."
+      vi: "Muốn nhẹ nhàng hơn, bạn có thể dùng könnten: Wir könnten am Samstag grillen. Hỏi đối phương có tiện không: Hast du am Samstag Zeit? Passt dir Samstag? (passen + Dativ ở đây nghĩa là \"tiện, hợp\"). Trong e-mail hẹn, nhớ xin trả lời: Sag mir bitte Bescheid, ob du kommst – câu phụ với ob (động từ cuối) bạn đã học ở A2U06."
   - type: example
     target: Wollen wir am Samstag grillen? – Gute Idee! Ich bringe einen Salat mit.
     target_lang: de
@@ -107,13 +107,13 @@ body:
     right: Lass uns am Samstag grillen!
     target_lang: de
     note:
-      vi: Với một người bạn dùng Lass uns. Lassen chỉ đi với Sie – Lassen Sie uns … (trang trọng).
+      vi: Với một người bạn dùng Lass uns. Lassen ở đầu câu chỉ dùng trong Lassen Sie uns … (trang trọng).
   - type: common_mistake
     wrong: Wie wäre es mit Samstag grillen?
     right: Wollen wir am Samstag grillen?
     target_lang: de
     note:
-      vi: Sau Wie wäre es mit chỉ có danh từ (Wie wäre es mit Samstag?). Muốn nói cả hoạt động thì dùng Wollen wir … grillen?
+      vi: Sau Wie wäre es mit là danh từ hoặc cụm danh từ ở Dativ (Wie wäre es mit Samstag?), không phải động từ nguyên thể. Muốn nói cả hoạt động thì dùng Wollen wir … grillen?
   - type: summary
     points:
       - vi: "Rủ nhau: Gehen wir …! · Lass uns … + nguyên thể! · Wollen wir … + nguyên thể? · Wie wäre es mit + Dativ?"
@@ -261,7 +261,7 @@ exercises:
         error_tag: word_order
       - answer: Lass wir ins Kino gehen!
         feedback_vi: "Sau lassen là đại từ Akkusativ: uns, không phải wir."
-        error_tag: case_dat_akk
+        error_tag: pronoun_case
       - answer: Lassen uns ins Kino gehen!
         feedback_vi: "Nói với một người bạn (du) thì dùng Lass uns …; Lassen chỉ đi với Sie."
         error_tag: register_du_sie
@@ -288,6 +288,9 @@ exercises:
         - Sag mir bis spätestens Freitag Bescheid!
         - Gib mir bitte bis Freitag Bescheid!
         - Gib mir bis Freitag Bescheid!
+        - Bitte gib mir bis Freitag Bescheid!
+        - Sag mir bitte spätestens bis Freitag Bescheid!
+        - Sag mir spätestens bis Freitag Bescheid!
     known_wrong:
       - answer: Sag mich bitte bis Freitag Bescheid!
         feedback_vi: "Người được báo ở Dativ: mir (không phải mich)."
@@ -304,7 +307,7 @@ exercises:
     difficulty: 3
     item: de:item:a2u08-grillen
     prompt:
-      instruction: "Sắp xếp thành lời rủ: \"Chủ nhật mình cùng nướng thịt nhé?\""
+      instruction: "Sắp xếp thành lời rủ dạng câu hỏi với wollen: \"Chủ nhật mình cùng nướng thịt nhé?\""
       tokens:
         - { id: g-grillen, text: grillen }
         - { id: g-sonntag, text: Sonntag }
@@ -317,9 +320,8 @@ exercises:
     answer:
       orders:
         - [g-wollen, g-wir, g-am, g-sonntag, g-zusammen, g-grillen]
-        - [g-wollen, g-wir, g-zusammen, g-am, g-sonntag, g-grillen]
     explanation:
-      vi: "Lời rủ dạng câu hỏi: Wollen wir … ? – wollen đứng đầu, wir ngay sau, nguyên thể grillen ở cuối. lass và uns là phương án nhiễu (Lass uns … là câu cảm thán, không phải câu hỏi)."
+      vi: "Lời rủ dạng câu hỏi: Wollen wir … ? – wollen đứng đầu, wir ngay sau, thời gian (am Sonntag) trước zusammen, nguyên thể grillen ở cuối. lass và uns là phương án nhiễu: Lass uns … là lời rủ dạng mệnh lệnh, không phải câu hỏi với wollen."
     display_answer: Wollen wir am Sonntag zusammen grillen?
 
   - key: de:exercise:a2u08l4-mcq-sprechen-teil3

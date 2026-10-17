@@ -49,7 +49,7 @@ body:
       vi: "Nhiều động từ tiếng Đức đi kèm một giới từ cố định: warten auf (chờ), denken an (nghĩ đến), sich interessieren für (quan tâm đến), Angst haben vor (sợ), träumen von (mơ về). Tiếng Việt nói \"chờ bạn\", \"sợ chó\" mà không cần giới từ, nên người Việt hay quên giới từ hoặc chọn theo tiếng Anh. Hãy học cả cụm như một từ: warten auf + Akkusativ."
   - type: explain
     text:
-      vi: "Giới từ trong cụm quyết định cách của danh từ phía sau: với auf, an, für (và über) trong các cụm này dùng Akkusativ – auf den Bus, an meinen Bruder; với von, vor dùng Dativ – von einem Haus, vor dem Hund. Đại từ cũng đổi theo: auf dich, an ihn, von dir, vor ihm."
+      vi: "Mỗi cụm có cách cố định cho danh từ phía sau: với auf, an, für (và über) trong các cụm này dùng Akkusativ – auf den Bus, an meinen Bruder; với von, vor dùng Dativ – von einem Haus, vor dem Hund. Đại từ cũng đổi theo: auf dich, an ihn, von dir, vor ihm."
   - type: explain
     text:
       vi: "sich freuen có hai giới từ: auf cho việc sắp tới (Ich freue mich auf die Ferien – đang mong chờ), über cho việc đã có, đã xảy ra (Ich freue mich über das Geschenk – vui vì món quà). Đây là động từ phản thân: ich freue mich, du freust dich, wir freuen uns."
@@ -257,7 +257,6 @@ exercises:
       accepted:
         - Ich warte am Bahnhof auf dich.
         - Am Bahnhof warte ich auf dich.
-        - Ich warte auf dich am Bahnhof.
         - Ich warte gerade am Bahnhof auf dich.
         - Ich warte im Bahnhof auf dich.
     known_wrong:
@@ -296,9 +295,8 @@ exercises:
       orders:
         - [n-naechstes, n-jahr, n-studiere, n-ich, n-in, n-deutschland]
         - [n-ich, n-studiere, n-naechstes, n-jahr, n-in, n-deutschland]
-        - [n-in, n-deutschland, n-studiere, n-ich, n-naechstes, n-jahr]
     explanation:
-      vi: "Kế hoạch tương lai dùng thì hiện tại + mốc thời gian nächstes Jahr. Động từ chia theo ich (studiere) luôn ở vị trí 2: Nächstes Jahr studiere ich … hoặc Ich studiere nächstes Jahr …; thời gian thường đứng trước nơi chốn."
+      vi: "Kế hoạch tương lai dùng thì hiện tại + mốc thời gian nächstes Jahr. Trong câu kể, động từ chia theo ich (studiere) ở vị trí 2: Nächstes Jahr studiere ich … hoặc Ich studiere nächstes Jahr …; thời gian thường đứng trước nơi chốn."
     display_answer: Nächstes Jahr studiere ich in Deutschland.
 
   - key: de:exercise:a2u08l1-tr-freue-mich-wochenende

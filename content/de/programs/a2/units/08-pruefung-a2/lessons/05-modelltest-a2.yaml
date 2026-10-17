@@ -73,14 +73,14 @@ body:
       vi: "Sprechen gồm hỏi – đáp theo thẻ từ khóa, kể về cuộc sống của mình theo một câu hỏi, và cùng bạn thi lên kế hoạch một việc. Nói câu ngắn nhưng đúng; không hiểu thì hỏi lại: Können Sie das bitte wiederholen?"
   - type: deep_explain
     text:
-      vi: "Mẹo: (1) Đừng bỏ trống câu trắc nghiệm. (2) Trong bài nghe, thường có một con số hoặc ngày \"bẫy\" được nhắc trước rồi mới sửa lại – hãy nghe đến hết câu. (3) Trong bài viết, viết đủ từng ý quan trọng hơn viết dài; đọc lại để kiểm tra du/Sie, đuôi động từ và vị trí động từ. (4) Trong phần nói lên kế hoạch, hãy đề nghị, phản hồi đề nghị của bạn thi và thống nhất một kết quả. Đề luyện trong bài này do Linguo tự soạn, không phải đề thi thật."
+      vi: "Mẹo luyện tập: (1) Đọc kỹ hướng dẫn của từng phần trước khi làm. (2) Trong bài nghe, có thể có một con số hoặc ngày được nhắc trước rồi mới sửa lại – hãy nghe đến hết câu. (3) Trong bài viết, hãy trả lời đủ từng ý đề bài nêu, không cần viết dài; đọc lại để kiểm tra du/Sie, đuôi động từ và vị trí động từ. (4) Trong phần nói lên kế hoạch, hãy đề nghị, phản hồi đề nghị của bạn thi và thống nhất một kết quả. Đề luyện trong bài này do Linguo tự soạn, không phải đề thi thật."
   - type: example
-    target: "Hallo Jonas, mein Bus hat Verspätung. Ich komme erst in zwanzig Minuten. Wartet bitte nicht auf mich und bestellt schon! Bis gleich, Lan"
+    target: "Hallo Jonas, hallo Mia, mein Bus hat Verspätung. Ich komme erst in zwanzig Minuten. Wartet bitte nicht auf mich und bestellt schon! Bis gleich, Lan"
     target_lang: de
     translation:
-      vi: "Chào Jonas, xe buýt của mình bị trễ. Hai mươi phút nữa mình mới tới. Các bạn đừng chờ mình, cứ gọi món trước đi! Lát gặp nhé, Lan"
+      vi: "Chào Jonas, chào Mia, xe buýt của mình bị trễ. Hai mươi phút nữa mình mới tới. Các bạn đừng chờ mình, cứ gọi món trước đi! Lát gặp nhé, Lan"
     note:
-      vi: "Tin nhắn thân mật gửi một nhóm bạn (ihr → wartet, bestellt): lý do, giờ đến, lời nhờ. in zwanzig Minuten = hai mươi phút nữa; warten auf + Akkusativ."
+      vi: "Tin nhắn thân mật gửi hai người bạn (ihr → wartet, bestellt): lý do, giờ đến, lời nhờ. in zwanzig Minuten = hai mươi phút nữa; warten auf + Akkusativ."
   - type: example
     target: "Sehr geehrte Frau Schmidt, leider kann ich am Montag nicht zum Kurs kommen, weil ich krank bin. Können Sie mir bitte die Hausaufgaben schicken? Mit freundlichen Grüßen, Minh Tran"
     target_lang: de
@@ -259,7 +259,7 @@ exercises:
     difficulty: 2
     item: de:item:a2u08-warten-auf
     prompt:
-      template: "Hallo Jonas, mein Bus hat Verspätung. Ich komme {{b1}} zwanzig Minuten. Bitte wartet {{b2}} mich! Bis gleich, Lan"
+      template: "Hallo Jonas, hallo Mia, mein Bus hat Verspätung. Ich komme {{b1}} zwanzig Minuten. Bitte wartet {{b2}} mich! Bis gleich, Lan"
       blanks:
         - { id: b1, width_hint: 3 }
         - { id: b2, width_hint: 4 }
@@ -278,8 +278,8 @@ exercises:
         feedback_vi: "seit dùng cho việc đã bắt đầu. Tương lai dùng in; chờ ai là warten auf."
         error_tag: preposition
     explanation:
-      vi: "Kiểu Schreiben Teil 1 (SMS): báo lý do, giờ đến, lời nhờ. in zwanzig Minuten = hai mươi phút nữa; warten auf + Akkusativ (auf mich). wartet là mệnh lệnh với ihr vì Lan viết cho nhóm bạn."
-    display_answer: "Hallo Jonas, mein Bus hat Verspätung. Ich komme in zwanzig Minuten. Bitte wartet auf mich! Bis gleich, Lan"
+      vi: "Kiểu Schreiben Teil 1 (SMS): báo lý do, giờ đến, lời nhờ. in zwanzig Minuten = hai mươi phút nữa; warten auf + Akkusativ (auf mich). wartet là mệnh lệnh với ihr vì Lan viết cho hai người bạn."
+    display_answer: "Hallo Jonas, hallo Mia, mein Bus hat Verspätung. Ich komme in zwanzig Minuten. Bitte wartet auf mich! Bis gleich, Lan"
 
   - key: de:exercise:a2u08l5-fill-email-formell
     type: fill_blank
@@ -323,7 +323,6 @@ exercises:
       accepted:
         - Ich warte vor dem Kino auf dich.
         - Vor dem Kino warte ich auf dich.
-        - Ich warte auf dich vor dem Kino.
         - Ich warte gerade vor dem Kino auf dich.
     known_wrong:
       - answer: Ich warte vor dem Kino für dich.
@@ -374,7 +373,7 @@ exercises:
     difficulty: 3
     item: de:item:a2u08-g-vorschlag-wir
     prompt:
-      instruction: "Kiểu Sprechen Teil 3. Sắp xếp thành lời đề nghị: \"Ba giờ mình gặp nhau ở nhà ga nhé?\""
+      instruction: "Kiểu Sprechen Teil 3. Sắp xếp thành lời đề nghị dạng câu hỏi với wollen: \"Ba giờ mình gặp nhau ở nhà ga nhé?\""
       tokens:
         - { id: t-bahnhof, text: Bahnhof }
         - { id: t-uns, text: uns }
@@ -388,7 +387,6 @@ exercises:
     answer:
       orders:
         - [t-wollen, t-wir, t-uns, t-um, t-drei, t-uhr, t-am, t-bahnhof, t-treffen]
-        - [t-wollen, t-wir, t-uns, t-am, t-bahnhof, t-um, t-drei, t-uhr, t-treffen]
     explanation:
       vi: "Wollen wir …? + nguyên thể cuối câu (treffen). sich treffen là động từ phản thân: wir … uns, uns đứng ngay sau wir. Thời gian (um drei Uhr) thường đứng trước nơi chốn (am Bahnhof)."
     display_answer: Wollen wir uns um drei Uhr am Bahnhof treffen?

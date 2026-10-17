@@ -1,6 +1,6 @@
 # Học liệu unit A2U08 "Tương lai, môi trường và thi A2" (Zukunft, Umwelt, Goethe-Zertifikat A2), chương trình de:program:a2.
 # Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (A2U08L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
-# Động từ đi với giới từ ghi dạng `phrase` ("warten auf (+ Akkusativ)") để không trùng lemma với động từ đơn (denken ở A2U03).
+# Động từ đi với giới từ ghi dạng `phrase` (học cả cụm). german-lint so trùng lemma theo phần đầu của front.text ("denken an" ≠ "denken"), không theo type.
 schema_version: 1
 demo: false
 status: published
@@ -19,7 +19,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Nhiều động từ đi với một giới từ cố định, và giới từ đó quyết định cách: warten auf + Akkusativ, denken an + Akkusativ, sich interessieren für + Akkusativ, Angst haben vor + Dativ, träumen von + Dativ. Giới từ ở đây thường không dịch sát sang tiếng Việt (warten auf = chờ, không phải \"chờ trên\"), nên bạn học thuộc cả cụm: động từ + giới từ + cách."
+        vi: "Nhiều động từ đi với một giới từ cố định, và mỗi cụm đi với một cách cố định: warten auf + Akkusativ, denken an + Akkusativ, sich interessieren für + Akkusativ, Angst haben vor + Dativ, träumen von + Dativ. Giới từ ở đây thường không dịch sát sang tiếng Việt (warten auf = chờ, không phải \"chờ trên\"), nên bạn học thuộc cả cụm: động từ + giới từ + cách."
       examples:
         - target: Ich warte auf den Bus.
           translation:
@@ -757,7 +757,7 @@ items:
           translation:
             vi: Chúng tôi đi Ý một tuần.
       confusion:
-        vi: "Đừng nhầm: seit = từ … đến nay (việc đã bắt đầu), ab = từ … trở đi; vor zwei Tagen = cách đây hai ngày, in zwei Tagen = hai ngày nữa. Trước ngày tháng có mạo từ thì dùng bis zum, ab dem: bis zum 5. Mai."
+        vi: "Đừng nhầm: seit = từ … đến nay (việc đã bắt đầu), ab = từ … trở đi; vor zwei Tagen = cách đây hai ngày, in zwei Tagen = hai ngày nữa. Trước ngày tháng có mạo từ thì dùng bis zum, ab dem: bis zum 5. Mai. Ở Áo còn nghe auf zwei Wochen với nghĩa für zwei Wochen; bài này dùng für (chuẩn Đức)."
 
   - key: de:item:a2u08-durchsage
     type: vocab
@@ -886,7 +886,7 @@ items:
           translation:
             vi: Trên biển có một lưu ý quan trọng.
       confusion:
-        vi: "Thông báo ở ga hay mở đầu: Ein Hinweis für Reisende … (một lưu ý cho hành khách)."
+        vi: "Thông báo ở ga có thể mở đầu bằng: Hinweis für Reisende … (lưu ý cho hành khách)."
 
   - key: de:item:a2u08-einsteigen
     type: vocab
@@ -1113,7 +1113,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Đề nghị cùng làm gì có bốn mẫu: Gehen wir ins Kino! (động từ đầu câu + wir), Lass uns ins Kino gehen! (nguyên thể cuối câu), Wollen wir ins Kino gehen? (câu hỏi), Wie wäre es mit + Dativ? Tất cả tương đương \"… nhé!\", \"… đi!\" trong tiếng Việt."
+        vi: "Bài này học bốn mẫu để đề nghị cùng làm gì: Gehen wir ins Kino! (động từ đầu câu + wir), Lass uns ins Kino gehen! (nguyên thể cuối câu), Wollen wir ins Kino gehen? (câu hỏi), Wie wäre es mit + Dativ? Tất cả tương đương \"… nhé!\", \"… đi!\" trong tiếng Việt."
       examples:
         - target: Gehen wir heute Abend essen!
           translation:
@@ -1128,7 +1128,7 @@ items:
           translation:
             vi: Đi picnic ở công viên thì sao?
       confusion:
-        vi: "Lass uns dùng khi nói với một người bạn (du); với nhiều người bạn: Lasst uns …; trang trọng: Lassen Sie uns … Nguyên thể đứng cuối câu: Lass uns ins Kino gehen (không phải Lass uns gehen ins Kino)."
+        vi: "Theo chuẩn: Lass uns khi nói với một người bạn (du), Lasst uns với nhiều người (ihr), Lassen Sie uns khi trang trọng; trong khẩu ngữ Lass uns cũng hay được dùng với cả nhóm. Nguyên thể đứng cuối câu: Lass uns ins Kino gehen (không phải Lass uns gehen ins Kino)."
 
   - key: de:item:a2u08-planen
     type: vocab
