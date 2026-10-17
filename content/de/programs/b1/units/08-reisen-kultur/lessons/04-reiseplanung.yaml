@@ -49,6 +49,8 @@ items:
     role: reuse
   - item: de:item:b1u05-g-falls
     role: reuse
+  - item: de:item:b1u07-g-sobald-solange
+    role: reuse
 body:
   - type: objective
     text:
@@ -75,7 +77,7 @@ body:
     target: Wir könnten doch mit dem Zug fahren. Mit einer Ermäßigung ist das ziemlich günstig.
     target_lang: de
     translation:
-      vi: Mình đi tàu cũng được mà. Có giảm giá thì khá rẻ.
+      vi: Hay là mình đi tàu đi. Có giảm giá thì khá rẻ.
     note:
       vi: "Giữa bạn bè. könnten (Konjunktiv II của können) + doch: đề nghị thân thiện."
   - type: example
@@ -259,13 +261,13 @@ exercises:
     difficulty: 3
     item: de:item:b1u08-ermaessigung
     prompt:
-      template: "Für Studenten gibt es eine {{b1}} von zwanzig Prozent. Sie können Ihre Buchung bis zwei Tage vor der Anreise kostenlos {{b2}}. Danach zahlen Sie den vollen Preis."
+      template: "Für Studenten gibt es eine {{b1}} von zwanzig Prozent. Sie können Ihre Buchung bis zwei Tage vor der Anreise kostenlos {{b2}}. Wenn Sie später absagen, zahlen Sie den vollen Preis."
       blanks:
         - { id: b1, width_hint: 11 }
         - { id: b2, width_hint: 11 }
     answer:
       blanks:
-        b1: [Ermäßigung]
+        b1: [Ermäßigung, Preisermäßigung, Vergünstigung]
         b2: [stornieren]
     known_wrong:
       - answer: Rabatt
@@ -278,8 +280,8 @@ exercises:
         feedback_vi: Ở đây cần động từ nguyên thể sau können – stornieren (die Stornierung là danh từ).
         error_tag: word_choice
     explanation:
-      vi: "eine Ermäßigung = một mức giảm giá (giống cái, nên đi với eine). können + nguyên thể ở cuối câu: kostenlos stornieren = huỷ miễn phí."
-    display_answer: "Für Studenten gibt es eine Ermäßigung von zwanzig Prozent. Sie können Ihre Buchung bis zwei Tage vor der Anreise kostenlos stornieren. Danach zahlen Sie den vollen Preis."
+      vi: "eine Ermäßigung = một mức giảm giá (giống cái, nên đi với eine; die Vergünstigung cũng đúng). können + nguyên thể ở cuối câu: kostenlos stornieren = huỷ đặt chỗ miễn phí – câu sau (später absagen) cho thấy đây là chuyện huỷ."
+    display_answer: "Für Studenten gibt es eine Ermäßigung von zwanzig Prozent. Sie können Ihre Buchung bis zwei Tage vor der Anreise kostenlos stornieren. Wenn Sie später absagen, zahlen Sie den vollen Preis."
 
   - key: de:exercise:b1u08l4-tr-ans-meer
     type: translate
@@ -299,6 +301,9 @@ exercises:
         - Wie wäre es, wenn wir an die See fahren?
         - Wie wäre es, wenn wir an den Strand fahren?
         - Wie wär's, wenn wir ans Meer fahren?
+        - Wie wär's, wenn wir ans Meer fahren würden?
+        - Wie wäre es, wenn wir an die See fahren würden?
+        - Wie wäre es, wenn wir an den Strand fahren würden?
     known_wrong:
       - answer: Wie wäre es, wenn wir fahren ans Meer?
         feedback_vi: Trong câu wenn, động từ fahren đứng cuối – … wenn wir ans Meer fahren?
@@ -370,7 +375,7 @@ exercises:
     item: de:item:b1u08-pension
     prompt:
       audio_asset_id: null
-      fallback_text: Wir könnten doch zelten. – Hm, ich weiß nicht. Es soll am Wochenende regnen. Es wäre besser, wenn wir eine Pension nehmen. – Na gut, einverstanden. Dann buche ich heute noch ein Zimmer.
+      fallback_text: Wir könnten doch zelten. – Hm, ich weiß nicht. Es soll am Wochenende regnen. Es wäre besser, wenn wir eine Pension nehmen. – Na gut, einverstanden. Sobald ich zu Hause bin, buche ich ein Zimmer.
       options:
         - { id: c3a, text: "Họ quyết định ở nhà nghỉ vì cuối tuần có thể mưa.", lang: vi }
         - { id: c7b, text: "Họ quyết định cắm trại dù cuối tuần có thể mưa.", lang: vi }
@@ -379,7 +384,7 @@ exercises:
     answer:
       correct_option_id: c3a
     explanation:
-      vi: "Người thứ hai không muốn cắm trại vì Es soll am Wochenende regnen (dự báo cuối tuần mưa) và đề nghị Pension. Người thứ nhất đồng ý (Na gut, einverstanden) và sẽ đặt phòng ngay hôm nay."
+      vi: "Người thứ hai không muốn cắm trại vì Es soll am Wochenende regnen (dự báo cuối tuần mưa) và đề nghị Pension. Người thứ nhất đồng ý (Na gut, einverstanden) và sẽ đặt phòng ngay khi về đến nhà (sobald ich zu Hause bin)."
     display_answer: Họ quyết định ở nhà nghỉ vì cuối tuần có thể mưa.
 
   - key: de:exercise:b1u08l4-tr-frueh-buchen

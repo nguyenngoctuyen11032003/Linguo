@@ -66,10 +66,10 @@ body:
       vi: "Với người lạ, người lớn tuổi và trong công việc, nhiều người dùng Sie; giữa bạn bè, trong gia đình, giữa sinh viên thì dùng du. Thường người lớn tuổi hơn hoặc cấp trên đề nghị chuyển sang du: Wollen wir uns duzen? Nhiều công ty trẻ duzen ngay từ đầu, nên khi chưa chắc, bạn cứ dùng Sie hoặc hỏi."
   - type: explain
     text:
-      vi: "Trong bối cảnh trang trọng, người ta thường bắt tay khi gặp (sich die Hand geben); bạn thân có thể ôm nhau. Nhiều người Đức nói khá thẳng (Das finde ich nicht so gut), và điều đó thường không có nghĩa là bất lịch sự. Người Việt hay nói vòng để giữ hoà khí; cả hai cách đều là lịch sự, chỉ khác thói quen – và mỗi người mỗi khác."
+      vi: "Trong bối cảnh trang trọng, người ta thường bắt tay khi gặp (sich die Hand geben); bạn thân có thể ôm nhau (sich umarmen). Nhiều người Đức nói khá thẳng (Das finde ich nicht so gut), và điều đó thường không có nghĩa là bất lịch sự. Người Việt hay nói vòng để giữ hoà khí; cả hai cách đều là lịch sự, chỉ khác thói quen – và mỗi người mỗi khác."
   - type: deep_explain
     text:
-      vi: "Trọng âm đổi nghĩa: doch, ja không nhấn là tiểu từ; còn JA được nhấn trong câu mệnh lệnh là lời dặn mạnh (Komm JA nicht zu spät! = nhớ đừng có đến muộn đấy). Câu hỏi với denn đôi khi mang ý ngạc nhiên hoặc hơi trách: Was machst du denn hier? (sao bạn lại ở đây?). Tiểu từ mang sắc thái khẩu ngữ, nên trong e-mail gửi cơ quan bạn hạn chế dùng chúng. Khi được khen, người Đức thường đáp gọn Danke! hoặc Danke, das freut mich; cách chối khéo của người Việt (\"đâu có\") có thể làm người nghe bối rối. Cụm sich die Hand geben dùng đại từ Dativ (uns, euch, sich = cho nhau), giống sich die Hände waschen bạn đã học. Trong thư, du/dich viết thường hay viết hoa (Du/Dich) đều đúng, còn Sie/Ihnen lịch sự luôn viết hoa."
+      vi: "Trọng âm đổi nghĩa: tiểu từ ja thường không nhấn; còn JA được nhấn trong câu mệnh lệnh là lời dặn mạnh (Komm JA nicht zu spät! = nhớ đừng có đến muộn đấy). Câu hỏi với denn đôi khi mang ý ngạc nhiên hoặc hơi trách: Was machst du denn hier? (sao bạn lại ở đây?). Tiểu từ mang sắc thái khẩu ngữ, nên trong e-mail gửi cơ quan bạn hạn chế dùng chúng. Khi được khen, người Đức thường đáp gọn Danke! hoặc Danke, das freut mich; cách chối khéo của người Việt (\"đâu có\") có thể làm người nghe bối rối. Cụm sich die Hand geben dùng đại từ Dativ (uns, euch, sich = cho nhau), giống sich die Hände waschen bạn đã học. Trong thư, du/dich viết thường hay viết hoa (Du/Dich) đều đúng, còn Sie/Ihnen lịch sự luôn viết hoa."
   - type: example
     target: Komm doch mal am Wochenende vorbei! – Gern, danke für die Einladung!
     target_lang: de
@@ -302,6 +302,11 @@ exercises:
         - Bei der Begrüßung geben wir einander die Hand.
         - Zur Begrüßung geben wir einander die Hand.
         - Wenn wir uns begrüßen, geben wir uns die Hand.
+        - Wir geben uns bei der Begrüßung die Hände.
+        - Bei der Begrüßung geben wir uns die Hände.
+        - Zur Begrüßung geben wir uns die Hände.
+        - Wir geben einander bei der Begrüßung die Hand.
+        - Wir geben einander zur Begrüßung die Hand.
     known_wrong:
       - answer: Bei der Begrüßung geben wir die Hand.
         feedback_vi: Thiếu đại từ Dativ (cho nhau) – geben wir uns die Hand.

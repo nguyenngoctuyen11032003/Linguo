@@ -197,7 +197,7 @@ items:
       examples:
         - target: Dass alle Deutschen gern Bier trinken, ist ein Klischee.
           translation:
-            vi: Chuyện người Đức ai cũng thích uống bia là một khuôn mẫu rập khuôn.
+            vi: Chuyện người Đức ai cũng thích uống bia là một hình ảnh rập khuôn.
         - target: Der Film spielt mit Klischees über Nord und Süd.
           translation:
             vi: Bộ phim khai thác những khuôn mẫu về miền Bắc và miền Nam.
@@ -923,9 +923,9 @@ items:
       meaning:
         vi: pháo hoa (màn bắn pháo hoa)
       examples:
-        - target: An Silvester gibt es um Mitternacht überall Feuerwerk.
+        - target: An Silvester gibt es um Mitternacht in vielen Städten ein Feuerwerk.
           translation:
-            vi: Đêm Giao thừa dương lịch, đúng nửa đêm khắp nơi bắn pháo hoa.
+            vi: Đêm Giao thừa dương lịch, đúng nửa đêm nhiều thành phố bắn pháo hoa.
         - target: Wir haben uns das Feuerwerk vom Balkon aus angesehen.
           translation:
             vi: Chúng tôi xem pháo hoa từ ban công.
@@ -1116,9 +1116,9 @@ items:
         - target: Zum Volksfest trägt er eine Lederhose.
           translation:
             vi: Anh ấy mặc quần da đi lễ hội.
-        - target: Lederhosen sind teuer, aber sie halten sehr lange.
+        - target: Eine gute Lederhose ist oft teuer, aber sie hält sehr lange.
           translation:
-            vi: Quần da đắt nhưng dùng được rất lâu.
+            vi: Một chiếc quần da tốt thường đắt, nhưng dùng được rất lâu.
       confusion:
         vi: "Từ ghép: das Leder (da) + die Hose, nên giống cái theo từ cuối. Trang phục nữ tương ứng là das Dirndl."
 
@@ -1183,7 +1183,7 @@ items:
           translation:
             vi: Trong đoàn diễu hành, người ta ném kẹo từ trên xe xuống.
       confusion:
-        vi: "der Umzug có hai nghĩa: chuyển nhà và đoàn diễu hành; Festumzug chỉ có nghĩa diễu hành. Số nhiều: die Festumzüge."
+        vi: "der Umzug có hai nghĩa: chuyển nhà và đoàn diễu hành; Festumzug chỉ có nghĩa diễu hành. Số nhiều: die Festumzüge. Rosenmontag là thứ Hai trước Mùa Chay, nên ngày đổi theo từng năm (tháng Hai hoặc đầu tháng Ba)."
 
   - key: de:item:b1u08-bundesland
     type: vocab
@@ -1242,7 +1242,7 @@ items:
       examples:
         - target: Wir könnten doch mit dem Zug fahren.
           translation:
-            vi: Mình đi tàu cũng được mà.
+            vi: Hay là mình đi tàu đi.
         - target: Wie wäre es, wenn wir in einer Jugendherberge übernachten?
           translation:
             vi: Hay là mình ngủ ở nhà nghỉ thanh niên?
@@ -1304,7 +1304,7 @@ items:
       pos: danh từ
     back:
       meaning:
-        vi: nhà nghỉ nhỏ (thường do gia đình kinh doanh); lương hưu
+        vi: nhà nghỉ nhỏ (thường do gia đình kinh doanh); lương hưu (nhất là của công chức)
       examples:
         - target: Wir haben ein Zimmer in einer kleinen Pension gebucht.
           translation:

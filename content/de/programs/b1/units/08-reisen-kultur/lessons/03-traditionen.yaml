@@ -37,6 +37,8 @@ items:
   - item: de:item:b1u08-faehre
   - item: de:item:a2u02-g-objekt-stellung
     role: reuse
+  - item: de:item:b1u07-g-partizip-i-attribut
+    role: reuse
 body:
   - type: objective
     text:
@@ -61,7 +63,7 @@ body:
       vi: "Cùng một mùa lễ hội hoá trang trước Mùa Chay có tên khác nhau tuỳ vùng, ví dụ Karneval (Köln, Düsseldorf), Fasching (Bayern, Áo), Fastnacht hoặc Fasnacht (Tây Nam nước Đức, Thụy Sĩ). Ngày nghỉ lễ cũng khác nhau giữa các bang: ví dụ lễ Ba Vua (6/1) chỉ là ngày nghỉ ở một số bang. Giống như Tết, mỗi vùng ở Việt Nam cũng có món ăn và tục lệ riêng."
   - type: deep_explain
     text:
-      vi: "Thêm vài cặp tách/không tách hay gặp: umfahren tách = đâm đổ (Er hat das Schild umgefahren) – không tách = đi vòng tránh (Wir haben den Stau umfahren); durchschauen không tách = nhìn thấu (Ich habe ihn durchschaut). Nhiều động từ thực tế chỉ dùng một kiểu: umziehen (chuyển nhà) tách (Wir ziehen um), unterschreiben không tách (Ich unterschreibe), nên khi nghi ngờ hãy tra từ điển – từ điển ghi trọng âm hoặc dấu tách (über|setzen). Với Mittelfeld, TeKaMoLo là mẹo nhớ, không phải luật: trạng ngữ nơi chốn chỉ đích đến (nach Köln, ins Kino) thường đứng cuối, sát phần cuối câu; đại từ (mir, ihn, es) thường đứng ngay sau động từ chia, trước các trạng ngữ: Ich schenke ihn ihr morgen. Lý do hay dùng wegen + Genitiv (wegen des Festes) hoặc aus + danh từ không mạo từ (aus Spaß, aus Tradition)."
+      vi: "Thêm vài cặp tách/không tách hay gặp: umfahren tách = đâm đổ (Er hat das Schild umgefahren) – không tách = đi vòng tránh (Wir haben den Stau umfahren); durchschauen không tách = nhìn thấu (Ich habe ihn durchschaut). Nhiều động từ thực tế chỉ dùng một kiểu: umziehen (chuyển nhà) tách (Wir ziehen um), unterschreiben không tách (Ich unterschreibe), nên khi nghi ngờ hãy tra từ điển – từ điển ghi trọng âm hoặc dấu tách (über|setzen). Với Mittelfeld, TeKaMoLo là mẹo nhớ, không phải luật: trạng ngữ nơi chốn chỉ đích đến (nach Köln, ins Kino) thường đứng cuối, sát phần cuối câu; đại từ (mir, ihn, es) thường đứng ngay sau động từ chia và chủ ngữ, trước các trạng ngữ; hai đại từ thì Akkusativ trước Dativ: Ich schenke ihn ihr morgen. Ich gebe es dir später. Lý do hay dùng wegen + Genitiv (wegen des Festes) hoặc aus + danh từ không mạo từ (aus Spaß, aus Tradition)."
   - type: example
     target: Wir setzen mit der Fähre zur Insel über.
     target_lang: de
@@ -187,7 +189,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u08-festumzug
     prompt:
-      stem: "In Köln beginnt die Karnevalszeit am 11. November um 11:11 Uhr. Richtig gefeiert wird aber erst im Februar oder März. Am Rosenmontag zieht ein großer Festumzug durch die Stadt. Viele Menschen verkleiden sich, und von den Wagen werfen die Leute Süßigkeiten. In Bayern und Österreich nennt man das Fest meistens Fasching. — Richtig oder falsch? Der große Festumzug ist am 11. November."
+      stem: "In Köln beginnt die Karnevalszeit am 11. November um 11:11 Uhr. Die großen Feiern sind aber erst im Februar oder März. Am Rosenmontag zieht ein großer Festumzug durch die Stadt. Viele Menschen verkleiden sich, und von den vorbeifahrenden Wagen werfen die Leute Süßigkeiten. In Bayern und Österreich nennt man das Fest meistens Fasching. — Richtig oder falsch? Der große Festumzug ist am 11. November."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -195,7 +197,7 @@ exercises:
     answer:
       correct_option_id: rf2
     explanation:
-      vi: "Ngày 11/11 chỉ là ngày bắt đầu mùa Karneval. Đoàn diễu hành lớn (Festumzug) diễn ra vào Rosenmontag, tháng Hai hoặc tháng Ba. Vì vậy câu này sai."
+      vi: "Ngày 11/11 chỉ là ngày bắt đầu mùa Karneval. Đoàn diễu hành lớn (Festumzug) diễn ra vào Rosenmontag – thứ Hai trước Mùa Chay, ngày đổi theo từng năm (tháng Hai hoặc tháng Ba). Vì vậy câu này sai. (von den vorbeifahrenden Wagen: Partizip I làm tính từ = từ những chiếc xe đang chạy qua.)"
     display_answer: Falsch
 
   - key: de:exercise:b1u08l3-mcq-lesen-fasching
@@ -205,7 +207,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u08-karneval
     prompt:
-      stem: "In Köln beginnt die Karnevalszeit am 11. November um 11:11 Uhr. Richtig gefeiert wird aber erst im Februar oder März. Am Rosenmontag zieht ein großer Festumzug durch die Stadt. Viele Menschen verkleiden sich, und von den Wagen werfen die Leute Süßigkeiten. In Bayern und Österreich nennt man das Fest meistens Fasching. — Richtig oder falsch? In Bayern hat das Fest oft einen anderen Namen."
+      stem: "In Köln beginnt die Karnevalszeit am 11. November um 11:11 Uhr. Die großen Feiern sind aber erst im Februar oder März. Am Rosenmontag zieht ein großer Festumzug durch die Stadt. Viele Menschen verkleiden sich, und von den vorbeifahrenden Wagen werfen die Leute Süßigkeiten. In Bayern und Österreich nennt man das Fest meistens Fasching. — Richtig oder falsch? In Bayern hat das Fest oft einen anderen Namen."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -224,7 +226,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u08-g-verbpraefixe-wechsel
     prompt:
-      template: "Der Lehrer {{b1}} (wiederholen) die Frage noch einmal. Dann habe ich den Satz ins Vietnamesische {{b2}} (übersetzen)."
+      template: "Der Lehrer {{b1}} (wiederholen, Präsens) die Frage noch einmal. Den Satz an der Tafel habe ich schon ins Vietnamesische {{b2}} (übersetzen)."
       blanks:
         - { id: b1, width_hint: 10 }
         - { id: b2, width_hint: 10 }
@@ -243,11 +245,11 @@ exercises:
         feedback_vi: Động từ không tách thì Partizip không thêm ge- – übersetzt.
         error_tag: participle_form
       - answer: wiederholte
-        feedback_vi: Câu đầu ở hiện tại (Der Lehrer … noch einmal) – er wiederholt.
+        feedback_vi: Đề yêu cầu thì hiện tại (Präsens) – er wiederholt.
         error_tag: verb_form
     explanation:
       vi: "wiederholen (nhắc lại) và übersetzen (dịch) đều không tách: er wiederholt; Partizip II là übersetzt, không có ge-."
-    display_answer: "Der Lehrer wiederholt die Frage noch einmal. Dann habe ich den Satz ins Vietnamesische übersetzt."
+    display_answer: "Der Lehrer wiederholt die Frage noch einmal. Den Satz an der Tafel habe ich schon ins Vietnamesische übersetzt."
 
   - key: de:exercise:b1u08l3-fill-ihrer-einen
     type: fill_blank
@@ -297,6 +299,10 @@ exercises:
         - Wir fahren im Februar wegen des Karnevals mit dem Zug nach Köln.
         - Wegen des Karnevals fahren wir im Februar mit dem Zug nach Köln.
         - Mit dem Zug fahren wir im Februar wegen des Karnevals nach Köln.
+        - Nach Köln fahren wir im Februar wegen des Karnevals mit dem Zug.
+        - Im Februar fahren wir wegen des Karnevals mit der Bahn nach Köln.
+        - Wir fahren im Februar wegen des Karnevals mit der Bahn nach Köln.
+        - Wegen des Karnevals fahren wir im Februar mit der Bahn nach Köln.
     known_wrong:
       - answer: Wir fahren nach Köln im Februar wegen des Karnevals mit dem Zug.
         feedback_vi: Trật tự trung tính là thời gian – lý do – cách thức – nơi chốn; nach Köln đứng cuối.

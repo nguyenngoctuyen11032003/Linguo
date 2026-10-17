@@ -44,6 +44,8 @@ items:
     role: reuse
   - item: de:item:b1u05-g-nominalisierte-adjektive
     role: reuse
+  - item: de:item:b1u07-g-waehrend-konjunktion
+    role: reuse
 body:
   - type: objective
     text:
@@ -201,7 +203,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u08-ungewohnt
     prompt:
-      stem: "Mai lebt seit einem Jahr in Hamburg. Am Anfang war vieles ungewohnt für sie. Zu ihrer ersten Einladung brachte sie Blumen mit, statt Obst zu schenken, wie man es in Vietnam oft macht. Beim Essen wartete sie, bis alle etwas auf dem Teller hatten. Heute sagt sie: Es gibt Unterschiede, aber auch viele Gemeinsamkeiten. — Richtig oder falsch? Mai hat zur Einladung Obst mitgebracht."
+      stem: "Mai lebt seit einem Jahr in Hamburg. Am Anfang war vieles ungewohnt für sie, aber sie war auch neugierig. Während man in Vietnam oft Obst schenkt, bringen viele Gäste in Deutschland Blumen mit. Zu ihrer ersten Einladung brachte sie deshalb Blumen mit, statt Obst zu schenken. Beim Essen wartete sie, bis alle etwas auf dem Teller hatten. Heute sagt sie: Es gibt Unterschiede, aber auch viele Gemeinsamkeiten. — Richtig oder falsch? Mai hat zur Einladung Obst mitgebracht."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -209,7 +211,7 @@ exercises:
     answer:
       correct_option_id: rf2
     explanation:
-      vi: "Văn bản viết: brachte sie Blumen mit, statt Obst zu schenken – Mai mang hoa đến, thay vì tặng hoa quả. statt … zu nói việc không làm, nên câu này sai."
+      vi: "Văn bản viết: brachte sie deshalb Blumen mit, statt Obst zu schenken – Mai mang hoa đến, thay vì tặng hoa quả. statt … zu nói việc không làm, nên câu này sai. (Während … ở câu trước so sánh hai thói quen: ở Việt Nam người ta hay tặng hoa quả, còn ở Đức nhiều khách mang hoa.)"
     display_answer: Falsch
 
   - key: de:exercise:b1u08l1-mcq-lesen-gemeinsam
@@ -219,7 +221,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u08-gemeinsamkeit
     prompt:
-      stem: "Mai lebt seit einem Jahr in Hamburg. Am Anfang war vieles ungewohnt für sie. Zu ihrer ersten Einladung brachte sie Blumen mit, statt Obst zu schenken, wie man es in Vietnam oft macht. Beim Essen wartete sie, bis alle etwas auf dem Teller hatten. Heute sagt sie: Es gibt Unterschiede, aber auch viele Gemeinsamkeiten. — Richtig oder falsch? Mai sieht heute auch Gemeinsamkeiten zwischen den Kulturen."
+      stem: "Mai lebt seit einem Jahr in Hamburg. Am Anfang war vieles ungewohnt für sie, aber sie war auch neugierig. Während man in Vietnam oft Obst schenkt, bringen viele Gäste in Deutschland Blumen mit. Zu ihrer ersten Einladung brachte sie deshalb Blumen mit, statt Obst zu schenken. Beim Essen wartete sie, bis alle etwas auf dem Teller hatten. Heute sagt sie: Es gibt Unterschiede, aber auch viele Gemeinsamkeiten. — Richtig oder falsch? Mai sieht heute auch Gemeinsamkeiten zwischen den Kulturen."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -310,6 +312,12 @@ exercises:
         - Ohne sich zu verabschieden, ist er weggegangen.
         - Er ist gegangen, ohne Tschüss zu sagen.
         - Ohne Tschüss zu sagen, ist er gegangen.
+        - Er ist gegangen, ohne Tschüs zu sagen.
+        - Ohne Tschüs zu sagen, ist er gegangen.
+        - Er ist gegangen, ohne auf Wiedersehen zu sagen.
+        - Ohne auf Wiedersehen zu sagen, ist er gegangen.
+        - Er ist weggegangen, ohne Tschüss zu sagen.
+        - Er ist gegangen, ohne sich von uns zu verabschieden.
     known_wrong:
       - answer: Er ist gegangen, ohne sich verabschieden.
         feedback_vi: Sau ohne cần zu trước nguyên thể – ohne sich zu verabschieden.

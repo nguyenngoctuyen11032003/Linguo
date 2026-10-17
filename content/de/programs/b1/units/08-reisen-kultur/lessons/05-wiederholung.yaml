@@ -349,7 +349,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u08-g-mittelfeld
     prompt:
-      instruction: "Sắp xếp thành câu, theo trật tự trung tính: \"Ông chủ đưa cho các vị khách một phòng khác.\""
+      instruction: "Sắp xếp thành câu, theo trật tự trung tính: \"Ông chủ đã đưa cho các vị khách một phòng khác.\""
       tokens:
         - { id: g-zimmer, text: Zimmer }
         - { id: g-den, text: den }
