@@ -6,7 +6,7 @@ Viết tắt đường dẫn: `web/` = `apps/web/src/`, `shared/` = `packages/sh
 
 ## 1. Trạng thái từng spec
 
-Tất cả spec và đợt bổ sung dưới đây đã được triển khai trong code (đợt P2 cuối bảng: đã merge vào `main` và đã deploy). Tại thời điểm viết, 46 trên 47 migration trong `supabase/migrations/` đã được Deploy áp lên production (2026-10-16, run 38914412188) và ghi vào `supabase/migrations-applied.json`. Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
+Tất cả spec và đợt bổ sung dưới đây đã được triển khai trong code (đợt P2 cuối bảng: đã merge vào `main` và đã deploy). Tại thời điểm viết, cả 48 migration trong `supabase/migrations/` đã được Deploy áp lên production (2026-10-16, run 38914412188) và ghi vào `supabase/migrations-applied.json`. Việc ghi vào file đó là bước tay sau khi job `migrate` của Deploy xanh, nên một migration mới thêm sau tài liệu này có thể chưa được ghi: kiểm tra lại bằng lệnh ở mục 5. Thiết kế gốc ở `docs/superpowers/specs/`, kế hoạch ở `docs/superpowers/plans/` (không phải spec nào cũng có kế hoạch riêng).
 
 | Spec | Chủ đề | Nằm ở đâu | Migration chính |
 |---|---|---|---|
@@ -116,7 +116,7 @@ Nội dung học: toàn bộ `content/` ghi `status: published`; người duyệ
 
 ## 5. Danh sách migration
 
-Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 47 file; 46 file đã được Deploy áp lên production và ghi trong `migrations-applied.json`. "Chưa" chỉ nghĩa là chưa ghi vào file: một số có thể đã được Deploy áp lên production mà chưa `--record`, cần đối chiếu log job `migrate` hoặc `supabase migration list` trước khi ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
+Nguồn sự thật: `ls supabase/migrations` và `supabase/migrations-applied.json` (sha256 của từng file đã deploy; `scripts/check-migrations-immutable.mjs` chặn sửa hoặc xoá). Tại thời điểm viết có 48 file, tất cả đã được Deploy áp lên production và ghi trong `migrations-applied.json`. "Chưa" chỉ nghĩa là chưa ghi vào file: một số có thể đã được Deploy áp lên production mà chưa `--record`, cần đối chiếu log job `migrate` hoặc `supabase migration list` trước khi ghi. Kiểm tra lại (chỉ in file chưa được ghi, trống nghĩa là tất cả đã ghi):
 
 ```bash
 for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supabase/migrations-applied.json || echo "$n"; done
@@ -164,9 +164,10 @@ for f in supabase/migrations/*.sql; do n=$(basename "$f"); grep -q "\"$n\"" supa
 | `20261018160000` | `session_shorten_keeps_start` | `save_session_plan`: rút ngắn phiên đã bắt đầu giữ dòng, `started_at` và trạng thái (đánh số lại từ `20261018110000`) | Có |
 | `20261018170000` | `admin_item_reports` | `admin_item_open_reports`: số báo lỗi đang mở của một dòng nội dung (đánh số lại từ `20261018120000`) | Có |
 | `20261018180000` | `avatars` | cột `profiles.avatar_path`, bucket `avatars` và policy thư mục riêng của từng người dùng (đánh số lại từ `20261018140000`, trùng số với `ja_grading_whitespace`) | Có |
-| `20261018190000` | `import_service_timeout` | `service_role` có `statement_timeout = 120s` để import nội dung lớn không bị 57014 (không đổi schema) | Chưa |
+| `20261018190000` | `import_service_timeout` | `service_role` có `statement_timeout = 120s` để import nội dung lớn không bị 57014 (không đổi schema) | Có |
+| `20261018200000` | `postgrest_reload_role_settings` | `notify pgrst` (reload config + schema) để PostgREST nhận `statement_timeout` mới của `service_role` (không đổi schema) | Có |
 
-Migration mới phải có số lớn hơn `20261018190000`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
+Migration mới phải có số lớn hơn `20261018200000`, file cuối hiện có (DEPLOY.md, *Quy tắc đánh số migration mới*) và chỉ được ghi vào `migrations-applied.json` sau khi Deploy xanh.
 
 ## 6. Vận hành local và nhiều phiên làm việc song song
 
