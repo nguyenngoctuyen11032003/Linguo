@@ -194,7 +194,7 @@ exercises:
     difficulty: 2
     item: de:item:a1u06-g-duerfen
     prompt:
-      template: "{{b1}} ich hier parken? – Nein, hier {{b2}} man nicht parken. Aber da {{b3}} Sie parken."
+      template: "{{b1}} ich hier parken? (dürfen) – Nein, hier {{b2}} man nicht parken. Aber da {{b3}} Sie parken."
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 5 }
@@ -212,10 +212,10 @@ exercises:
         feedback_vi: dürft là ngôi ihr. Với ich và man là darf, với Sie là dürfen.
         error_tag: verb_form
       - answer: kann
-        feedback_vi: Hỏi xin phép và nói điều bị cấm trên biển báo dùng dürfen (darf).
+        feedback_vi: Bài này luyện dürfen (gợi ý trong ngoặc) – ich darf, man darf.
         error_tag: modal_choice
     explanation:
-      vi: "ich và man đi với dạng không đuôi darf; Sie (lịch sự) chia như số nhiều: Sie dürfen. Động từ chính parken ở cuối câu."
+      vi: "Hỏi xin phép và nói điều bị cấm dùng dürfen. ich và man đi với dạng không đuôi darf; Sie (lịch sự) chia như số nhiều: Sie dürfen. Động từ chính parken ở cuối câu."
     display_answer: "Darf ich hier parken? – Nein, hier darf man nicht parken. Aber da dürfen Sie parken."
 
   - key: de:exercise:a1u06l2-fill-einladen-treffen
@@ -225,7 +225,7 @@ exercises:
     difficulty: 2
     item: de:item:a1u06-einladen
     prompt:
-      template: "Am Samstag mache ich eine Party. Ich {{b1}} dich {{b2}}! – Danke! Am Nachmittag {{b3}} ich Anna, aber am Abend habe ich Zeit."
+      template: "Am Samstag mache ich eine Party. Ich {{b1}} dich {{b2}}! (einladen) – Danke! Am Nachmittag {{b3}} ich Anna (treffen), aber am Abend habe ich Zeit."
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 4 }
@@ -266,7 +266,6 @@ exercises:
         - Wollen wir zusammen ins Kino?
         - Wollen wir ins Kino gehen?
         - Gehen wir ins Kino?
-        - Sollen wir zusammen ins Kino gehen?
         - Wollen wir gemeinsam ins Kino gehen?
         - Gehen wir gemeinsam ins Kino?
     known_wrong:

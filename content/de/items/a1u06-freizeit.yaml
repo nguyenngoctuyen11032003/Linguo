@@ -807,7 +807,7 @@ items:
         vi: "besuchen + Akkusativ, không cần giới từ: Ich besuche meinen Freund. Partizip II là besucht (không có ge-) – học ở A2."
 
   - key: de:item:a1u06-museum
-    type: phrase
+    type: vocab
     level: a1
     difficulty: 2
     skill_tags: [vocabulary]

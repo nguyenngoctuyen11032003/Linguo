@@ -270,8 +270,6 @@ exercises:
       accepted:
         - Ich habe gestern einen Film gesehen.
         - Gestern habe ich einen Film gesehen.
-        - Gestern habe ich mir einen Film angesehen.
-        - Ich habe mir gestern einen Film angesehen.
     known_wrong:
       - answer: Gestern ich habe einen Film gesehen.
         feedback_vi: Gestern ở vị trí 1 thì habe phải ở vị trí 2 – Gestern habe ich …

@@ -173,12 +173,12 @@ exercises:
       options:
         - { id: s3n, text: sind, lang: de }
         - { id: h8g, text: haben, lang: de }
-        - { id: w2v, text: waren, lang: de }
-        - { id: c7l, text: hatten, lang: de }
+        - { id: w2v, text: seid, lang: de }
+        - { id: c7l, text: hat, lang: de }
     answer:
       correct_option_id: s3n
     explanation:
-      vi: "bleiben dùng sein ở Perfekt: wir sind … geblieben. haben sai trợ động từ; waren/hatten là Präteritum, không đi với Partizip geblieben."
+      vi: "bleiben dùng sein ở Perfekt, chia theo wir: wir sind … geblieben. haben và hat sai trợ động từ (hat còn sai ngôi); seid là sein ở ngôi ihr."
     display_answer: sind
 
   - key: de:exercise:a1u06l4-listen-wochenende

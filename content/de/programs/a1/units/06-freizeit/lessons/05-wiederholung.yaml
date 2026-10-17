@@ -247,7 +247,7 @@ exercises:
     difficulty: 2
     item: de:item:a1u06-vielleicht
     prompt:
-      template: "{{b1}} Sara, danke! Leider habe ich am Samstag keine Zeit. Hast du am Sonntag Zeit? {{b2}} Grüße, Tom"
+      template: "{{b1}} Sara, danke! Leider habe ich am Samstag keine Zeit. Hast du vielleicht am Sonntag Zeit? {{b2}} Grüße, Tom"
       blanks:
         - { id: b1, width_hint: 6 }
         - { id: b2, width_hint: 6 }
@@ -264,7 +264,7 @@ exercises:
         error_tag: adj_ending
     explanation:
       vi: "Mở đầu tin nhắn cho bạn nữ: Liebe Sara (hoặc Hallo Sara). Kết thúc: Viele Grüße hoặc Liebe Grüße – Grüße là số nhiều nên tính từ có đuôi -e."
-    display_answer: "Liebe Sara, danke! Leider habe ich am Samstag keine Zeit. Hast du am Sonntag Zeit? Viele Grüße, Tom"
+    display_answer: "Liebe Sara, danke! Leider habe ich am Samstag keine Zeit. Hast du vielleicht am Sonntag Zeit? Viele Grüße, Tom"
 
   - key: de:exercise:a1u06l5-fill-kino
     type: fill_blank
@@ -288,7 +288,7 @@ exercises:
         feedback_vi: Chuyện đã qua – der Film war toll (ist là hiện tại).
         error_tag: tense_present
       - answer: hatten
-        feedback_vi: hatten không đi với Partizip. essen dùng Perfekt với haben – wir haben … gegessen.
+        feedback_vi: Kể các việc nối tiếp nhau (Danach) bằng Perfekt, trợ động từ chia ở hiện tại – wir haben … gegessen.
         error_tag: aux_verb
       - answer: seid
         feedback_vi: seid là ngôi ihr. Chủ ngữ wir → wir sind.
@@ -318,6 +318,9 @@ exercises:
         - Vielen Dank! Ich muss am Samstag leider arbeiten.
         - Vielen Dank! Am Samstag muss ich leider arbeiten.
         - Danke schön! Leider muss ich am Samstag arbeiten.
+        - Danke schön! Ich muss leider am Samstag arbeiten.
+        - Danke schön! Am Samstag muss ich leider arbeiten.
+        - Danke, aber ich muss leider am Samstag arbeiten.
         - Danke, aber leider muss ich am Samstag arbeiten.
         - Danke, aber ich muss am Samstag leider arbeiten.
         - Danke, aber am Samstag muss ich leider arbeiten.
