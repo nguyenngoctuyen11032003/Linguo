@@ -255,7 +255,7 @@ exercises:
     answer:
       blanks:
         b1: [geehrte]
-        b2: [verschieben]
+        b2: [verschieben, verlegen]
         b3: [Grüßen]
     known_wrong:
       - answer: geehrter
@@ -268,7 +268,7 @@ exercises:
         feedback_vi: mit + Dativ số nhiều nên danh từ thêm -n – Mit freundlichen Grüßen.
         error_tag: case_dat_akk
     explanation:
-      vi: "Các cụm cố định của tin nhắn trang trọng: Sehr geehrte Frau … (nữ), Könnten wir den Termin … verschieben? (nguyên thể cuối câu), Mit freundlichen Grüßen (mit + Dativ số nhiều)."
+      vi: "Các cụm cố định của tin nhắn trang trọng: Sehr geehrte Frau … (nữ), Könnten wir den Termin … verschieben/verlegen? (nguyên thể cuối câu), Mit freundlichen Grüßen (mit + Dativ số nhiều)."
     display_answer: "Sehr geehrte Frau Wolf, leider kann ich am Montag nicht zur Besprechung kommen. Könnten wir den Termin auf Mittwoch verschieben? Mit freundlichen Grüßen Linh Nguyen"
 
   - key: de:exercise:b1u03l5-fill-passiv-genitiv

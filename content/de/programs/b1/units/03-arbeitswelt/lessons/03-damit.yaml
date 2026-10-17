@@ -279,6 +279,11 @@ exercises:
         - Ich telefoniere mit meinem Assistenten, damit er die Besprechung vorbereitet.
         - Ich rufe den Assistenten an, damit er das Meeting vorbereitet.
         - Ich rufe meinen Assistenten an, damit er das Meeting vorbereitet.
+        - Ich telefoniere mit dem Assistenten, damit er die Besprechung vorbereiten kann.
+        - Ich telefoniere mit meinem Assistenten, damit er die Besprechung vorbereiten kann.
+        - Ich rufe den Assistenten an, damit er die Sitzung vorbereitet.
+        - Damit er die Besprechung vorbereitet, rufe ich den Assistenten an.
+        - Damit er die Besprechung vorbereitet, rufe ich meinen Assistenten an.
     known_wrong:
       - answer: Ich rufe den Assistent an, damit er die Besprechung vorbereitet.
         feedback_vi: der Assistent thuộc n-Deklination – ở Akkusativ là den Assistenten.

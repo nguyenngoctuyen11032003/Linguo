@@ -65,7 +65,7 @@ body:
       vi: "Hỏi \"của ai?\" dùng wessen: Wessen Lebenslauf ist das? Khi nói chuyện, người Đức hay thay Genitiv bằng von + Dativ (die Adresse von der Firma), nhưng trong văn viết và tin tuyển dụng thường dùng Genitiv. Với tên riêng, bạn chỉ thêm -s như đã học ở A2: Annas Lebenslauf."
   - type: deep_explain
     text:
-      vi: "-s hay -es? Danh từ tận cùng -s, -ß, -x, -z, -sch phải thêm -es (des Hauses, des Platzes); danh từ nhiều âm tiết tận cùng -er, -en, -el chỉ thêm -s (des Arbeitgebers, des Unternehmens); nhiều danh từ một âm tiết dùng được cả hai (des Lohns / des Lohnes, des Tags / des Tages). Một số danh từ giống đực như der Kollege, der Praktikant có đuôi -n thay vì -s (des Kollegen) – bạn sẽ học ở bài 3. Trong câu phụ, werden của câu bị động đứng cuối: Ich hoffe, dass meine Bewerbung schnell gelesen wird. Tin tuyển dụng ở Đức hay có các cụm: ab sofort (ngay từ bây giờ), in Vollzeit/Teilzeit, Wir bieten … (chúng tôi đề nghị …), Ihre Bewerbung senden Sie bitte an … (xin gửi đơn đến …); sau tên nghề thường có ghi chú nam/nữ/giới tính khác."
+      vi: "-s hay -es? Danh từ tận cùng -s, -ß, -x, -z, -sch hầu như luôn thêm -es (des Hauses, des Platzes); danh từ nhiều âm tiết tận cùng -er, -en, -el chỉ thêm -s (des Arbeitgebers, des Unternehmens); nhiều danh từ một âm tiết dùng được cả hai (des Lohns / des Lohnes, des Tags / des Tages). Một số danh từ giống đực như der Kollege, der Praktikant có đuôi -n thay vì -s (des Kollegen) – bạn sẽ học ở bài 3. Trong câu phụ, werden của câu bị động đứng cuối: Ich hoffe, dass meine Bewerbung schnell gelesen wird. Tin tuyển dụng ở Đức hay có các cụm: ab sofort (ngay từ bây giờ), in Vollzeit/Teilzeit, Wir bieten … (chúng tôi đề nghị …), Ihre Bewerbung senden Sie bitte an … (xin gửi đơn đến …); sau tên nghề thường có ghi chú nam/nữ/giới tính khác."
   - type: example
     target: Gesucht wird ab sofort eine Köchin oder ein Koch für unser Hotel.
     target_lang: de
@@ -270,16 +270,16 @@ exercises:
     difficulty: 3
     item: de:item:b1u03-g-genitiv
     prompt:
-      template: "Die Anforderungen des {{b1}} (Arbeitgeber) sind hoch. Die Dauer des {{b2}} (Vertrag) ist ein Jahr. Auch die Höhe {{b3}} Lohns ist wichtig."
+      template: "Die Anforderungen des {{b1}} (Arbeitgeber) sind hoch. Die Dauer des {{b2}} (Vertrag) ist ein Jahr. Auch die Höhe {{b3}} (der Lohn) ist wichtig."
       blanks:
         - { id: b1, width_hint: 12 }
         - { id: b2, width_hint: 9 }
-        - { id: b3, width_hint: 4 }
+        - { id: b3, width_hint: 10 }
     answer:
       blanks:
         b1: [Arbeitgebers]
         b2: [Vertrags, Vertrages]
-        b3: [des]
+        b3: [des Lohns, des Lohnes]
     known_wrong:
       - answer: Arbeitgeber
         feedback_vi: Danh từ giống đực ở Genitiv thêm -s – des Arbeitgebers.
@@ -287,14 +287,17 @@ exercises:
       - answer: Vertrag
         feedback_vi: Sau des, danh từ giống đực thêm -s hoặc -es – des Vertrags / des Vertrages.
         error_tag: genitive_ending
-      - answer: der
-        feedback_vi: der Lohn là giống đực, Genitiv là des (der chỉ dùng cho giống cái và số nhiều).
+      - answer: der Lohn
+        feedback_vi: Ở đây cần Genitiv (của tiền lương), không phải Nominativ – des Lohns / des Lohnes.
         error_tag: article
-      - answer: dem
+      - answer: dem Lohn
         feedback_vi: dem là Dativ; ở đây cần Genitiv (của tiền lương) – des Lohns.
         error_tag: article
+      - answer: des Lohn
+        feedback_vi: Sau des, danh từ giống đực thêm -s hoặc -es – des Lohns / des Lohnes.
+        error_tag: genitive_ending
     explanation:
-      vi: "Genitiv giống đực: des + danh từ thêm -s/-es. Arbeitgeber tận cùng -er nên chỉ thêm -s; Vertrag và Lohn là danh từ một âm tiết, thêm -s hay -es đều được."
+      vi: "Genitiv giống đực: des + danh từ thêm -s/-es. Arbeitgeber tận cùng -er nên chỉ thêm -s; Vertrag và Lohn là danh từ một âm tiết, thêm -s hay -es đều được: des Vertrags/Vertrages, des Lohns/Lohnes."
     display_answer: "Die Anforderungen des Arbeitgebers sind hoch. Die Dauer des Vertrags ist ein Jahr. Auch die Höhe des Lohns ist wichtig."
 
   - key: de:exercise:b1u03l1-tr-lohn-monatlich
@@ -319,6 +322,8 @@ exercises:
         - Jeden Monat wird der Lohn bezahlt.
         - Der Lohn wird monatlich überwiesen.
         - Der Lohn wird jeden Monat überwiesen.
+        - Der Lohn wird monatlich ausgezahlt.
+        - Der Lohn wird jeden Monat ausgezahlt.
     known_wrong:
       - answer: Der Lohn wird monatlich zahlen.
         feedback_vi: Bị động cần Partizip II ở cuối câu – gezahlt (hoặc bezahlt).

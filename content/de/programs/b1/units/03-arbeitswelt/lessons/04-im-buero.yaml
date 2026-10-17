@@ -209,7 +209,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u03-g-indefinitpronomen
     prompt:
-      stem: "Câu nào có nghĩa \"Không ai đã sửa máy in.\"?"
+      stem: "Câu nào có nghĩa \"Chưa ai sửa máy in cả.\"?"
       stem_lang: vi
       options:
         - { id: r3m, text: "Niemand hat den Drucker repariert.", lang: de }
@@ -230,7 +230,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u03-g-indefinitpronomen
     prompt:
-      template: "Ich höre Stimmen, also ist noch {{b1}} im Büro. Die anderen sind alle in der Kantine, in der Küche ist {{b2}}. Ich habe Hunger, aber im Kühlschrank ist {{b3}} mehr."
+      template: "Ich höre eine Stimme, also ist noch {{b1}} im Büro. Die anderen sind alle in der Kantine, deshalb ist in der Küche {{b2}}. Ich habe Hunger, aber im Kühlschrank ist {{b3}} mehr."
       blanks:
         - { id: b1, width_hint: 7 }
         - { id: b2, width_hint: 8 }
@@ -251,8 +251,8 @@ exercises:
         feedback_vi: Ở đây là chủ ngữ (Nominativ) nên không có đuôi – jemand.
         error_tag: pronoun_case
     explanation:
-      vi: "Có tiếng người → có ai đó: jemand. Mọi người ở căng tin → trong bếp không có ai: niemand (khi nói cũng hay dùng keiner). Đói mà tủ lạnh không còn gì: nichts mehr. Cả ba đều làm chủ ngữ nên không có đuôi."
-    display_answer: "Ich höre Stimmen, also ist noch jemand im Büro. Die anderen sind alle in der Kantine, in der Küche ist niemand. Ich habe Hunger, aber im Kühlschrank ist nichts mehr."
+      vi: "Có tiếng người nói → có ai đó: jemand. Mọi người ở căng tin → trong bếp không có ai: niemand (khi nói cũng hay dùng keiner). Đói mà tủ lạnh không còn gì: nichts mehr. Cả ba đều làm chủ ngữ nên không có đuôi."
+    display_answer: "Ich höre eine Stimme, also ist noch jemand im Büro. Die anderen sind alle in der Kantine, deshalb ist in der Küche niemand. Ich habe Hunger, aber im Kühlschrank ist nichts mehr."
 
   - key: de:exercise:b1u03l4-fill-jemanden-niemanden
     type: fill_blank

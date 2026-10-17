@@ -55,7 +55,7 @@ items:
           translation:
             vi: Mong muốn của nhân viên rất quan trọng với chúng tôi.
       confusion:
-        vi: "Danh từ tận cùng -s, -ß, -x, -z, -sch phải thêm -es (des Hauses, des Platzes); danh từ tận cùng -er, -en, -el chỉ thêm -s (des Mitarbeiters); nhiều danh từ một âm tiết dùng được cả hai (des Lohns / des Lohnes). Tiếng Việt chỉ thêm chữ \"của\", còn tiếng Đức đổi mạo từ (des/der) và thường thêm đuôi cho danh từ."
+        vi: "Danh từ tận cùng -s, -ß, -x, -z, -sch hầu như luôn thêm -es (des Hauses, des Platzes); danh từ tận cùng -er, -en, -el chỉ thêm -s (des Mitarbeiters); nhiều danh từ một âm tiết dùng được cả hai (des Lohns / des Lohnes). Tiếng Việt chỉ thêm chữ \"của\", còn tiếng Đức đổi mạo từ (des/der) và thường thêm đuôi cho danh từ."
 
   - key: de:item:b1u03-stellenanzeige
     type: vocab
@@ -414,7 +414,7 @@ items:
           translation:
             vi: Ngày trước ở đây người ta sản xuất xe đạp.
       confusion:
-        vi: "wurde (bị động quá khứ: đã được) khác würde (Konjunktiv II, sẽ học ở B1U04): chỉ khác dấu trên chữ u. Ở ich và er/sie/es không có đuôi: ich wurde, er wurde."
+        vi: "wurde (bị động quá khứ: đã được) khác würde (Konjunktiv II, như trong Würden Sie …? đã gặp ở A2; hệ thống ở B1U04): chỉ khác dấu trên chữ u. Ở ich và er/sie/es không có đuôi: ich wurde, er wurde."
 
   - key: de:item:b1u03-g-passiv-perfekt
     type: grammar_point
@@ -1228,7 +1228,7 @@ items:
           translation:
             vi: Tôi không thấy ai cả.
       confusion:
-        vi: "Ở Akkusativ và Dativ, jemand/niemand thường có đuôi trong văn viết: jemanden, niemandem (khi nói cũng dùng dạng không đuôi). Tiếng Việt \"không ai làm\" chỉ có một chữ \"không\"; tiếng Đức chỉ cần niemand – thêm nicht thành phủ định kép (Niemand hat nicht gelacht = ai cũng cười)."
+        vi: "Ở Akkusativ và Dativ, jemand/niemand thường có đuôi trong văn viết: jemanden, niemandem (khi nói cũng dùng dạng không đuôi). Tiếng Việt \"không ai làm\" chỉ có một chữ \"không\"; tiếng Đức cũng chỉ cần niemand. Thêm nicht là lỗi phủ định kép; về logic, Niemand hat nicht gelacht lại có nghĩa là ai cũng cười."
 
   - key: de:item:b1u03-drucker
     type: vocab
