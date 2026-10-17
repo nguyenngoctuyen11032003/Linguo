@@ -37,6 +37,8 @@ items:
     role: reuse
   - item: de:item:a1u02-g-feminin-in
     role: reuse
+  - item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    role: reuse
   - item: de:item:a1u02-arzt
     role: reuse
   - item: de:item:a1u02-ingenieur
@@ -56,7 +58,7 @@ body:
       vi: "werden = trở thành, trở nên. Chia bất quy tắc: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden. Chú ý du wirst không có d."
   - type: explain
     text:
-      vi: "Như với sein, khi nói nghề sau werden người ta thường không dùng mạo từ: Ich werde Ingenieur. Sie wird Ärztin (nữ thêm -in). Có tính từ thì cần mạo từ: Er wird ein guter Koch."
+      vi: "Như với sein, khi nói nghề sau werden người ta thường không dùng mạo từ: Ich werde Ingenieur, Sie wird Ärztin (nữ thêm -in). Ich werde ein Ingenieur không sai ngữ pháp, nhưng ít tự nhiên hơn. Có tính từ thì cần mạo từ: Er wird ein guter Koch."
   - type: explain
     text:
       vi: "werden cũng đi với tính từ để nói sự thay đổi: Es wird kalt. Ich werde müde. Perfekt dùng sein: Er ist Koch geworden."
@@ -238,10 +240,10 @@ exercises:
         error_tag: aux_verb
       - answer: gewerdet
         feedback_vi: "Partizip II của werden là geworden."
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: gewordet
         feedback_vi: "Partizip II của werden là geworden."
-        error_tag: verb_form
+        error_tag: participle_form
     explanation:
       vi: "Perfekt của werden: sein + geworden. Câu bắt đầu bằng Nach dem Praktikum nên ist ở vị trí 2, geworden ở cuối."
     display_answer: Nach dem Praktikum ist mein Bruder Koch geworden.
@@ -262,6 +264,8 @@ exercises:
         - Ich möchte Ingenieurin werden.
         - Ich möchte ein Ingenieur werden.
         - Ich möchte eine Ingenieurin werden.
+        - Ich möchte gern Ingenieur werden.
+        - Ich möchte gern Ingenieurin werden.
     known_wrong:
       - answer: Ich möchte werden Ingenieur.
         feedback_vi: "Nguyên thể werden đứng cuối câu: Ich möchte Ingenieur werden."

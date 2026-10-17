@@ -247,6 +247,8 @@ exercises:
       accepted:
         - Weil die Arbeit sehr stressig ist, bin ich oft müde.
         - Weil meine Arbeit sehr stressig ist, bin ich oft müde.
+        - Weil die Arbeit sehr stressig ist, bin ich häufig müde.
+        - Weil meine Arbeit sehr stressig ist, bin ich häufig müde.
     known_wrong:
       - answer: Weil die Arbeit sehr stressig ist, ich bin oft müde.
         feedback_vi: "Câu phụ đứng đầu là vị trí 1, nên bin phải đứng ngay sau dấu phẩy: …, bin ich oft müde."

@@ -157,7 +157,7 @@ exercises:
     difficulty: 2
     item: de:item:a2u03-g-denn
     prompt:
-      stem: "Chọn từ đúng: Ich mache heute früh Feierabend, ___ ich habe einen Termin beim Arzt."
+      stem: "Chọn từ đúng (văn viết): Ich mache heute früh Feierabend, ___ ich habe einen Termin beim Arzt."
       stem_lang: vi
       options:
         - { id: a5n, text: denn, lang: de }
@@ -166,7 +166,7 @@ exercises:
     answer:
       correct_option_id: a5n
     explanation:
-      vi: "Vế sau có trật tự câu chính (habe ở vị trí 2), nên chỉ denn đúng. weil và dass cần động từ ở cuối: …, weil ich einen Termin beim Arzt habe."
+      vi: "Vế sau có trật tự câu chính (habe ở vị trí 2), nên trong văn viết chỉ denn đúng. weil và dass cần động từ ở cuối: …, weil ich einen Termin beim Arzt habe."
     display_answer: denn
 
   - key: de:exercise:a2u03l1-fill-aufstehe
@@ -266,6 +266,7 @@ exercises:
         - Weil meine Kollegen sehr nett sind, mag ich meine Arbeit.
         - Weil die Kollegen sehr nett sind, mag ich meine Arbeit.
         - Weil meine Kollegen sehr nett sind, gefällt mir meine Arbeit.
+        - Weil die Kollegen sehr nett sind, gefällt mir meine Arbeit.
     known_wrong:
       - answer: Ich mag meine Arbeit, weil meine Kollegen sind sehr nett.
         feedback_vi: "Sau weil, động từ sind phải đứng cuối: weil meine Kollegen sehr nett sind."

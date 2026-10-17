@@ -35,6 +35,8 @@ items:
     role: reuse
   - item: de:item:a1u07-g-gefallen-passen-stehen
     role: reuse
+  - item: de:item:a2u02-g-dat-akk-verben
+    role: reuse
   - item: de:item:a1u04-anrufen
     role: reuse
   - item: de:item:p0u3-telefon
@@ -61,7 +63,7 @@ body:
       vi: "Còn anrufen, zurückrufen, fragen đi với Akkusativ: Ich rufe Sie an. Kannst du mich zurückrufen? ausrichten có cả hai: người nhận ở Dativ, lời nhắn ở Akkusativ – Kann ich ihr etwas ausrichten?"
   - type: deep_explain
     text:
-      vi: "Khi nghe máy ở công ty, người Đức thường nói tên công ty, họ của mình và lời chào: \"Firma Becker, Schmidt am Apparat, guten Tag.\" Người gọi giới thiệu lại: \"Guten Tag, hier ist Lan Nguyen.\" Nếu người cần gặp không có mặt, bạn hỏi \"Kann ich etwas ausrichten?\" hoặc hẹn \"Sie/Er ruft Sie zurück.\" Cuộc gọi trang trọng kết thúc bằng \"Auf Wiederhören!\". Mẹo nhớ Dativ: những động từ này thường nói về việc làm cho ai đó (giúp ai, cảm ơn ai, chúc mừng ai, lắng nghe ai)."
+      vi: "Khi nghe máy ở công ty, người Đức thường nói tên công ty, họ của mình và lời chào: \"Firma Becker, Schmidt am Apparat, guten Tag.\" Người gọi giới thiệu lại: \"Guten Tag, hier ist Lan Nguyen.\" Nếu người cần gặp không có mặt, bạn hỏi \"Kann ich etwas ausrichten?\" hoặc hẹn \"Sie/Er ruft Sie zurück.\" Cuộc gọi lịch sự (Sie) thường kết thúc bằng \"Auf Wiederhören!\"; với bạn bè (du) người ta hay chỉ nói \"Tschüss!\". Mẹo nhớ Dativ: những động từ này thường nói về việc làm cho ai đó (giúp ai, cảm ơn ai, chúc mừng ai, lắng nghe ai)."
   - type: example
     target: "Firma Becker, Schmidt am Apparat, guten Tag. – Guten Tag, hier ist Lan Nguyen. Kann ich bitte Frau Klein sprechen?"
     target_lang: de
@@ -254,7 +256,7 @@ exercises:
         error_tag: case_dat_akk
       - answer: ihm
         feedback_vi: "ihm là Dativ của er/es. Frau Klein là nữ: ihr."
-        error_tag: case_dat_akk
+        error_tag: gender
     explanation:
       vi: "jemandem etwas ausrichten: người nhận ở Dativ (ihr), lời nhắn ở Akkusativ (etwas)."
     display_answer: Frau Klein ist nicht da. Kann ich ihr etwas ausrichten?
@@ -274,18 +276,20 @@ exercises:
         - Kannst du mich zurückrufen?
         - Kannst du mich bitte zurückrufen?
         - Kannst du mich zurückrufen, bitte?
+        - Rufst du mich zurück?
+        - Rufst du mich bitte zurück?
     known_wrong:
       - answer: Kannst du mir zurückrufen?
         feedback_vi: "zurückrufen (như anrufen) đi với Akkusativ: mich, không phải mir."
         error_tag: case_dat_akk
       - answer: Kannst du mich zurück rufen?
-        feedback_vi: "zurückrufen viết liền khi ở dạng nguyên thể cuối câu."
-        error_tag: separable_prefix
+        feedback_vi: "Lỗi chính tả: nguyên thể zurückrufen viết liền một từ (zurück chỉ tách ra khi động từ được chia: Ich rufe dich zurück)."
+        error_tag: spelling
       - answer: Kannst du zurückrufen mich?
         feedback_vi: "Nguyên thể zurückrufen đứng cuối câu (khung câu với modal)."
         error_tag: verb_position
     explanation:
-      vi: "Modal kannst ở vị trí 1 (câu hỏi), tân ngữ mich (Akkusativ), nguyên thể zurückrufen ở cuối."
+      vi: "Modal kannst ở vị trí 1 (câu hỏi), tân ngữ mich (Akkusativ), nguyên thể zurückrufen ở cuối. Cũng có thể nói ngắn: Rufst du mich zurück?"
     display_answer: Kannst du mich zurückrufen?
 
   # ---------------- application ----------------

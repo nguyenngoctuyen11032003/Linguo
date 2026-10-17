@@ -81,7 +81,7 @@ body:
     text:
       vi: "Trong e-mail trang trọng, sau lời chào có dấu phẩy, nên câu đầu tiên bắt đầu bằng chữ thường (ich habe …), trừ khi từ đầu là danh từ hoặc Sie. Mit freundlichen Grüßen không có dấu phẩy phía sau. Câu chào cuối và Sehr geehrte… có đuôi tính từ mà bạn sẽ học kỹ sau; bây giờ hãy học thuộc nguyên cụm. Độ dài, số ý và cách chấm bài thi có thể thay đổi – hãy xem mô tả đề thi hiện hành của Goethe-Institut trước khi thi."
   - type: example
-    target: "Sehr geehrte Frau Krüger, ich habe Ihre Anzeige gelesen. Ich möchte gern ein Praktikum in Ihrem Hotel machen, weil ich später an einer Rezeption arbeiten möchte. Ich spreche gut Deutsch und Englisch und bin zuverlässig und flexibel. Haben Sie im Juli noch einen Praktikumsplatz frei? Mit freundlichen Grüßen, Lan Nguyen"
+    target: "Sehr geehrte Frau Krüger, ich habe Ihre Anzeige gelesen. Ich möchte gern ein Praktikum in Ihrem Hotel machen, weil ich später an einer Rezeption arbeiten möchte. Ich spreche gut Deutsch und Englisch und bin zuverlässig und flexibel. Haben Sie im Juli noch einen Praktikumsplatz frei? Mit freundlichen Grüßen Lan Nguyen"
     target_lang: de
     translation:
       vi: "Kính gửi bà Krüger, tôi đã đọc tin đăng của bà. Tôi rất muốn thực tập ở khách sạn của bà, vì sau này tôi muốn làm việc ở quầy lễ tân. Tôi nói tốt tiếng Đức và tiếng Anh, đáng tin cậy và linh hoạt. Tháng Bảy bà còn chỗ thực tập trống không? Trân trọng, Lan Nguyen"
@@ -252,7 +252,7 @@ exercises:
     difficulty: 2
     item: de:item:a2u03-bewerbung
     prompt:
-      template: "{{b1}} geehrte Frau Krüger, … Mit {{b2}} Grüßen, Lan Nguyen"
+      template: "{{b1}} geehrte Frau Krüger, … Mit {{b2}} Grüßen Lan Nguyen"
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 12 }
@@ -269,7 +269,7 @@ exercises:
         error_tag: register_du_sie
     explanation:
       vi: "Mở đầu thư trang trọng gửi phụ nữ: Sehr geehrte Frau + họ; kết thúc: Mit freundlichen Grüßen."
-    display_answer: "Sehr geehrte Frau Krüger, … Mit freundlichen Grüßen, Lan Nguyen"
+    display_answer: "Sehr geehrte Frau Krüger, … Mit freundlichen Grüßen Lan Nguyen"
 
   - key: de:exercise:a2u03l5-fill-ins-team-passe
     type: fill_blank
@@ -366,6 +366,8 @@ exercises:
         - Weil ich Köchin werden möchte, suche ich ein Praktikum.
         - Ich suche ein Praktikum, weil ich ein Koch werden möchte.
         - Ich suche ein Praktikum, weil ich eine Köchin werden möchte.
+        - Ich suche ein Praktikum, weil ich gern Koch werden möchte.
+        - Ich suche ein Praktikum, weil ich gern Köchin werden möchte.
     known_wrong:
       - answer: Ich suche ein Praktikum, weil ich möchte Koch werden.
         feedback_vi: "Sau weil, modal möchte đứng cuối cùng: weil ich Koch werden möchte."
@@ -404,7 +406,7 @@ exercises:
     known_wrong:
       - answer: Tôi thường giúp sếp của tôi vì tôi còn mới.
         feedback_vi: "Chủ ngữ là meine Chefin (sếp), mir là người được giúp (Dativ): sếp giúp tôi."
-        error_tag: dativ_role
+        error_tag: case_dat_akk
     explanation:
       vi: "helfen + Dativ: meine Chefin hilft mir = sếp giúp tôi; weil ich noch neu bin = vì tôi còn mới."
     display_answer: Sếp của tôi thường giúp tôi vì tôi còn mới.

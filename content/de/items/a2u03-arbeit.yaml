@@ -840,7 +840,7 @@ items:
           translation:
             vi: Công ty Becker, Schmidt xin nghe, xin chào.
       confusion:
-        vi: "Khi nghe máy ở công ty, người Đức thường nói tên công ty và họ của mình trước, không chỉ nói \"Hallo\"."
+        vi: "Khi nghe máy ở công ty, người Đức thường nói tên công ty và họ của mình trước, không chỉ nói \"Hallo\". \"am Apparat\" nghe hơi truyền thống; nhiều người chỉ nói \"Firma Becker, Schmidt, guten Tag\"."
 
   - key: de:item:a2u03-auf-wiederhoeren
     type: phrase
@@ -852,13 +852,13 @@ items:
       pos: cụm từ
     back:
       meaning:
-        vi: Chào tạm biệt (khi kết thúc cuộc gọi trang trọng)
+        vi: Chào tạm biệt (khi kết thúc cuộc gọi lịch sự, xưng Sie)
       examples:
         - target: "Vielen Dank, Frau Klein. Auf Wiederhören!"
           translation:
             vi: "Cảm ơn bà Klein nhiều. Chào bà!"
       confusion:
-        vi: "Auf Wiedersehen (hẹn gặp lại – \"sehen\" là nhìn) khi gặp mặt; Auf Wiederhören (\"hören\" là nghe) trên điện thoại."
+        vi: "Auf Wiedersehen (hẹn gặp lại – \"sehen\" là nhìn) khi gặp mặt; Auf Wiederhören (\"hören\" là nghe) trên điện thoại. Gọi cho bạn bè (du) thì thường chỉ nói Tschüss!"
 
   - key: de:item:a2u03-durchwahl
     type: vocab
@@ -875,6 +875,8 @@ items:
         - target: Meine Durchwahl ist die 12.
           translation:
             vi: Số máy lẻ của tôi là 12.
+      confusion:
+        vi: "Văn nói hay thêm die trước con số (die 12, tức die Nummer 12); nói Meine Durchwahl ist 12 cũng được. Số trong ví dụ là số giả."
 
   # ================= bài 4: werden; ứng tuyển =================
   - key: de:item:a2u03-g-werden-vollverb
@@ -887,7 +889,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "werden = trở thành, trở nên. Với nghề, thường nói không có mạo từ (Ich werde Ingenieur.); với tính từ, tính từ không đổi đuôi (Es wird kalt.). Chú ý dạng bất quy tắc du wirst, er wird và Perfekt với sein: ist geworden."
+        vi: "werden = trở thành, trở nên. Với nghề, thường nói không có mạo từ (Ich werde Ingenieur; dạng Ich werde ein Ingenieur không sai nhưng ít tự nhiên hơn); với tính từ, tính từ không đổi đuôi (Es wird kalt.). Chú ý dạng bất quy tắc du wirst, er wird và Perfekt với sein: ist geworden."
       examples:
         - target: Meine Schwester wird Ärztin.
           translation:
@@ -1111,7 +1113,7 @@ items:
           translation:
             vi: Chị họ tôi làm điều dưỡng ở một bệnh viện.
       confusion:
-        vi: "Nam: der Pflegefachmann. Đây là tên nghề theo chương trình đào tạo điều dưỡng mới ở Đức; trong đời thường người ta vẫn hay nói die Krankenschwester hoặc der Krankenpfleger."
+        vi: "Nam: der Pflegefachmann. Đây là tên gọi chính thức hiện nay của nghề điều dưỡng ở Đức; trong đời thường người ta vẫn hay nói die Krankenschwester hoặc der Krankenpfleger."
 
   - key: de:item:a2u03-teamfaehig
     type: vocab
