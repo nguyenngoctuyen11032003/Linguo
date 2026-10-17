@@ -70,7 +70,7 @@ items:
           translation:
             vi: Ở đây có thang máy không?
       confusion:
-        vi: "Đổi nguyên âm e → i ở du và er/sie/es: du gibst, er gibt (i ngắn). Các ngôi khác giữ e: wir geben."
+        vi: "Đổi nguyên âm e → i ở du và er/sie/es: du gibst, er gibt (chuẩn đọc i dài /ɡiːpt/; nhiều vùng phía bắc đọc ngắn). Các ngôi khác giữ e: wir geben."
 
   - key: de:item:a1u05-wohnung
     type: vocab
@@ -92,7 +92,7 @@ items:
           translation:
             vi: Căn hộ sáng sủa và yên tĩnh.
       pronunciation_note:
-        vi: "w đọc như \"v\" tiếng Việt; -ung đọc gần \"ung\" nhưng âm ng cuối nhẹ."
+        vi: "w đọc như \"v\" tiếng Việt; -ung đọc gần \"ung\" nhưng không mím môi ở cuối như tiếng Việt (chỉ nâng cuống lưỡi)."
       confusion:
         vi: "die Wohnung là căn hộ (thường trong một toà nhà); das Haus là cả ngôi nhà."
 
@@ -230,7 +230,7 @@ items:
           translation:
             vi: Ban công nhỏ nhưng đẹp.
       pronunciation_note:
-        vi: "Trọng âm ở âm tiết cuối: bal-KON. Ở miền Nam nước Đức và Áo nhiều người đọc /balˈkɔŋ/."
+        vi: "Trọng âm ở âm tiết cuối: bal-KON. /balˈkoːn/ phổ biến ở miền Nam nước Đức, Áo và Thụy Sĩ; nhiều người miền Bắc đọc kiểu Pháp /balˈkɔŋ/."
       confusion:
         vi: "Giống đực: Akkusativ là einen Balkon. Số nhiều die Balkone (cũng gặp die Balkons)."
 
@@ -1092,7 +1092,7 @@ items:
           translation:
             vi: Nhà thờ ở bên quảng trường chợ, cạnh bưu điện.
       confusion:
-        vi: "der Markt (chợ) + der Platz (quảng trường) → der Marktplatz, số nhiều die Marktplätze. Thị trấn Đức nào cũng có một Marktplatz ở trung tâm, thường cạnh nhà thờ."
+        vi: "der Markt (chợ) + der Platz (quảng trường) → der Marktplatz, số nhiều die Marktplätze. Nhiều thị trấn Đức có một Marktplatz ở trung tâm, thường gần nhà thờ."
 
   - key: de:item:a1u05-spielplatz
     type: vocab
@@ -1225,7 +1225,7 @@ items:
           translation:
             vi: Ông/bà rẽ vào con đường thứ nhất bên phải ạ.
       confusion:
-        vi: "Mệnh lệnh không có bitte nghe rất cộc, kể cả khi dùng Sie. Câu hỏi với können (Können Sie …?) còn lịch sự hơn mệnh lệnh."
+        vi: "Khi nhờ ai làm gì, mệnh lệnh không có bitte dễ nghe cộc, kể cả khi dùng Sie (khi chỉ đường cho người hỏi thì không cần bitte). Câu hỏi với können (Können Sie …?) còn lịch sự hơn mệnh lệnh."
 
   - key: de:item:a1u05-gehen
     type: vocab

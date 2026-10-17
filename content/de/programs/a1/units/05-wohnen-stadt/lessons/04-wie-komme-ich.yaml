@@ -48,6 +48,8 @@ items:
     role: reuse
   - item: de:item:a1u03-g-vokalwechsel
     role: reuse
+  - item: de:item:a1u01-g-du-sie
+    role: reuse
 body:
   - type: objective
     text:
@@ -63,7 +65,7 @@ body:
       vi: Với ihr - dùng đúng dạng ihr ở hiện tại, chỉ bỏ ihr - ihr geht → Geht!, ihr nehmt → Nehmt!. Động từ sein bất quy tắc - Sei ruhig! (du), Seid ruhig! (ihr), Seien Sie ruhig! (Sie).
   - type: explain
     text:
-      vi: Mệnh lệnh không có bitte nghe rất cộc. Thêm bitte ngay sau Sie/động từ hoặc ở cuối câu - Gehen Sie bitte geradeaus! Muốn nhờ người lạ, hỏi Können Sie mir helfen? (mir = "tôi"; học thuộc cả câu, Dativ của đại từ học ở A1U07).
+      vi: Khi nhờ hay yêu cầu ai làm gì, mệnh lệnh không có bitte dễ nghe cộc; thêm bitte ngay sau Sie/động từ hoặc ở cuối câu - Gehen Sie bitte geradeaus! (Khi chỉ đường cho người vừa hỏi, Gehen Sie geradeaus không có bitte vẫn lịch sự.) Muốn nhờ người lạ, hỏi Können Sie mir helfen? (mir = "tôi"; học thuộc cả câu, Dativ của đại từ học ở A1U07).
   - type: explain
     text:
       vi: Hỏi đường - Wie komme ich zum Bahnhof / zum Park? (zum = zu dem, cho der/das) và Wie komme ich zur Post / zur Apotheke? (zur = zu der, cho die). Ở bài này bạn học thuộc như cụm cố định; giới từ zu + Dativ sẽ học ở A1U07.
@@ -303,6 +305,7 @@ exercises:
         - Entschuldigung, wie komme ich bitte zum Bahnhof?
         - Entschuldigung, wie kommt man zum Bahnhof?
         - Entschuldigung, wie komme ich zum Bahnhof, bitte?
+        - Entschuldigen Sie bitte, wie komme ich zum Bahnhof?
     known_wrong:
       - answer: Entschuldigung, wie komme ich zu Bahnhof?
         feedback_vi: Cần mạo từ - zu dem Bahnhof, nói gọn là zum Bahnhof.
@@ -338,7 +341,6 @@ exercises:
     answer:
       orders:
         - [a-gehen, a-sie, a-an, a-der, a-ampel, a-rechts]
-        - [a-gehen, a-sie, a-rechts, a-an, a-der, a-ampel]
         - [a-an, a-der, a-ampel, a-gehen, a-sie, a-rechts]
     explanation:
       vi: Mệnh lệnh lịch sự - Gehen Sie đứng đầu. Vị trí đứng yên an der Ampel dùng Dativ (die Ampel → der Ampel). Cũng có thể đưa an der Ampel lên đầu thành câu kể - An der Ampel gehen Sie rechts.
@@ -361,7 +363,7 @@ exercises:
     answer:
       correct_option_id: b4r
     explanation:
-      vi: Một người bạn thân → du → Geh! (bỏ -st và du). Gehen Sie quá trang trọng với bạn thân, Gehst thiếu sự bỏ đuôi -st, còn Geht! là mệnh lệnh cho nhiều người (ihr).
+      vi: Một người bạn thân → du → Geh! (bỏ -st và du). Gehen Sie quá trang trọng với bạn thân, Gehst chưa bỏ đuôi -st, còn Geht! là mệnh lệnh cho nhiều người (ihr).
     display_answer: Geh geradeaus und dann an der Kreuzung links.
 
   - key: de:exercise:a1u05l4-tr-helfen-apotheke
@@ -382,6 +384,9 @@ exercises:
         - Können Sie mir bitte helfen? Ich suche eine Apotheke.
         - Entschuldigung, können Sie mir helfen? Ich suche eine Apotheke.
         - Entschuldigung, können Sie mir helfen? Ich suche die Apotheke.
+        - Könnten Sie mir helfen? Ich suche die Apotheke.
+        - Könnten Sie mir helfen? Ich suche eine Apotheke.
+        - Könnten Sie mir bitte helfen? Ich suche die Apotheke.
     known_wrong:
       - answer: Können Sie mich helfen? Ich suche die Apotheke.
         feedback_vi: helfen đi với mir (Dativ), không phải mich - học thuộc cả câu Können Sie mir helfen?

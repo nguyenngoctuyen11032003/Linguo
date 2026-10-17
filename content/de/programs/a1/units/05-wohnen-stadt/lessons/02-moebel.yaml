@@ -38,6 +38,8 @@ items:
     role: reuse
   - item: de:item:a1u05-g-possessiv-plural
     role: reuse
+  - item: de:item:a1u01-g-personalpronomen
+    role: reuse
   - item: de:item:a1u03-g-akkusativ
     role: reuse
 body:

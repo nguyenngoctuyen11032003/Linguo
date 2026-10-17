@@ -39,6 +39,10 @@ items:
     role: reuse
   - item: de:item:a1u03-g-akkusativ
     role: reuse
+  - item: de:item:a1u02-g-possessiv-singular
+    role: reuse
+  - item: de:item:a1u02-g-adjektiv-praedikativ
+    role: reuse
 body:
   - type: objective
     text:
@@ -67,7 +71,7 @@ body:
     translation:
       vi: Căn hộ của tôi có ba phòng, một bếp và một phòng tắm.
     note:
-      vi: Chủ ngữ là căn hộ (sở hữu) nên dùng haben (hat). Theo cách đếm ở Đức, đây là căn hộ 3 phòng vì bếp và bad không tính.
+      vi: Chủ ngữ là căn hộ (sở hữu) nên dùng haben (hat); Wohnung giống cái nên là meine (như đã học ở A1U02). Theo cách đếm ở Đức, đây là căn hộ 3 phòng vì bếp và bad không tính.
   - type: example
     target: Es gibt einen Balkon, aber es gibt keinen Aufzug.
     target_lang: de
@@ -346,6 +350,8 @@ exercises:
         - [t-es, t-gibt, t-hier, t-eine, t-baeck, t-und, t-zwei, t-sm]
         - [t-zwei, t-sm, t-und, t-eine, t-baeck, t-gibt, t-es, t-hier]
         - [t-eine, t-baeck, t-und, t-zwei, t-sm, t-gibt, t-es, t-hier]
+        - [t-es, t-gibt, t-zwei, t-sm, t-und, t-eine, t-baeck, t-hier]
+        - [t-es, t-gibt, t-eine, t-baeck, t-und, t-zwei, t-sm, t-hier]
     explanation:
       vi: Ở một nơi có gì → es gibt; gibt luôn ở vị trí 2 và không đổi dù có hai siêu thị. Hier đứng đầu thì es đứng sau gibt; hat và geben là bẫy.
     display_answer: Hier gibt es zwei Supermärkte und eine Bäckerei.

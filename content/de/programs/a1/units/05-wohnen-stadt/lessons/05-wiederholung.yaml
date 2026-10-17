@@ -58,6 +58,8 @@ items:
     role: reuse
   - item: de:item:a1u03-g-moechten
     role: reuse
+  - item: de:item:a1u02-g-plural
+    role: reuse
 body:
   - type: objective
     text:
@@ -73,7 +75,7 @@ body:
       vi: Để tả căn hộ, bạn dùng đủ công cụ của unit - Die Wohnung hat…, Es gibt…, Das Wohnzimmer ist hell, Ich finde es gemütlich, Die Haltestelle ist vor dem Haus. Mỗi câu một ý, động từ chia luôn ở vị trí 2.
   - type: explain
     text:
-      vi: Khi nghe chỉ đường, ghi nhanh theo thứ tự - mốc (Ampel, Kreuzung, Ecke) → hướng (geradeaus, links, rechts) → nơi đến và vị trí (neben der Post). Bài nghe kiểu Start Deutsch 1 thường hỏi bạn chọn đúng đường đi hoặc đúng bản đồ.
+      vi: Khi nghe chỉ đường, ghi nhanh theo thứ tự - mốc (Ampel, Kreuzung, Ecke) → hướng (geradeaus, links, rechts) → nơi đến và vị trí (neben der Post). Bài nghe kiểu Start Deutsch 1 có thể hỏi bạn chọn đúng đường đi hoặc đúng hình.
   - type: deep_explain
     text:
       vi: Phần đọc của Start Deutsch 1 có dạng bài cho một tình huống và hai quảng cáo, bạn chọn quảng cáo phù hợp. Mẹo - gạch chân điều kiện trong tình huống (yên tĩnh, có vườn, gần trung tâm, giá bao nhiêu) rồi loại dần quảng cáo không đạt; đừng chỉ tìm từ giống hệt, vì quảng cáo có thể nói cùng ý bằng từ khác (kein Garten, nicht ruhig). Khi viết e-mail, hãy kiểm tra ba lỗi hay gặp của unit - Akkusativ sau es gibt (einen Balkon), Dativ sau giới từ vị trí (vor dem Haus) và đại từ đúng giống (Ich finde ihn/sie/es…).
@@ -366,6 +368,7 @@ exercises:
         - [n-neben, n-dem, n-haus, n-gibt, n-es, n-einen, n-park]
         - [n-es, n-gibt, n-neben, n-dem, n-haus, n-einen, n-park]
         - [n-es, n-gibt, n-einen, n-park, n-neben, n-dem, n-haus]
+        - [n-einen, n-park, n-gibt, n-es, n-neben, n-dem, n-haus]
     explanation:
       vi: Hai quy tắc trong một câu - neben (vị trí) + Dativ → neben dem Haus; es gibt + Akkusativ → einen Park. Khi neben dem Haus đứng đầu, gibt vẫn ở vị trí 2 và es theo sau.
     display_answer: Neben dem Haus gibt es einen Park.
