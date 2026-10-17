@@ -1,0 +1,1168 @@
+# Học liệu unit A2U03 "Công việc và xin việc" (Arbeit und Bewerbung), tiếng Đức A2.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: câu phụ với weil, denn; điều kiện làm việc =================
+  - key: de:item:a2u03-g-nebensatz-verbletzt
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Nebensatz: Verb am Ende (…, weil ich heute arbeiten muss.)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Trong câu phụ (sau weil, dass …), động từ chia đứng ở cuối câu. Động từ tách viết liền lại (weil ich früh aufstehe); với modal hoặc Perfekt, phần được chia (muss, habe) đứng sau cùng (weil ich arbeiten muss, weil ich lange gearbeitet habe). Câu phụ luôn được ngăn với câu chính bằng dấu phẩy."
+      examples:
+        - target: Ich bin müde, weil ich jeden Tag um fünf Uhr aufstehe.
+          translation:
+            vi: Tôi mệt vì ngày nào tôi cũng dậy lúc năm giờ.
+        - target: Ich komme heute später, weil ich noch arbeiten muss.
+          translation:
+            vi: Hôm nay tôi đến muộn hơn vì tôi còn phải làm việc.
+        - target: Sie ist froh, weil sie eine neue Stelle gefunden hat.
+          translation:
+            vi: Cô ấy vui vì đã tìm được chỗ làm mới.
+      confusion:
+        vi: "Câu chính: Ich muss heute arbeiten (động từ chia ở vị trí 2). Câu phụ: …, weil ich heute arbeiten muss (động từ chia ở cuối)."
+
+  - key: de:item:a2u03-g-weil
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "weil + Nebensatz: warum? – weil …"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "weil = vì, bởi vì; dùng để trả lời câu hỏi Warum?. Sau weil là câu phụ nên động từ chia đứng cuối. Trong hội thoại có thể trả lời chỉ bằng câu phụ: Warum lernst du Deutsch? – Weil ich in Deutschland arbeiten möchte."
+      examples:
+        - target: Ich mag meinen Job, weil meine Kollegen sehr nett sind.
+          translation:
+            vi: Tôi thích công việc của mình vì đồng nghiệp rất dễ mến.
+        - target: "Warum arbeitest du in Teilzeit? – Weil meine Kinder noch klein sind."
+          translation:
+            vi: "Sao bạn làm bán thời gian? – Vì các con mình còn nhỏ."
+      confusion:
+        vi: "weil (câu phụ, động từ cuối) và denn (vị trí 0, trật tự câu chính) cùng nghĩa \"vì\": …, weil ich krank bin = …, denn ich bin krank."
+
+  - key: de:item:a2u03-g-denn
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "denn (Position 0): …, denn ich bin krank."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "denn cũng nghĩa là \"vì\", nhưng giống und, aber, oder: nó đứng ở vị trí 0 và không làm đổi trật tự, nên sau denn động từ vẫn ở vị trí 2. Vế có denn đứng sau câu chính và không dùng một mình để trả lời Warum?."
+      examples:
+        - target: Ich nehme heute den Bus, denn mein Auto ist kaputt.
+          translation:
+            vi: Hôm nay tôi đi xe buýt vì ô tô của tôi bị hỏng.
+        - target: Er macht um vier Uhr Feierabend, denn er fängt sehr früh an.
+          translation:
+            vi: Anh ấy tan làm lúc bốn giờ vì anh ấy bắt đầu làm rất sớm.
+      confusion:
+        vi: "Đừng nhầm với denn trong câu hỏi (Wo wohnst du denn? = Thế bạn sống ở đâu?): ở đó denn chỉ làm câu hỏi mềm hơn, không có nghĩa \"vì\"."
+
+  - key: de:item:a2u03-arbeitsplatz
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Arbeitsplatz, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ làm, nơi làm việc; việc làm
+      examples:
+        - target: Mein Arbeitsplatz ist nicht weit von meiner Wohnung.
+          translation:
+            vi: Chỗ làm của tôi không xa nhà tôi.
+      confusion:
+        vi: "Từ ghép die Arbeit + -s- + der Platz: giống theo từ cuối (der), có âm nối -s-. Số nhiều: die Arbeitsplätze."
+
+  - key: de:item:a2u03-stelle
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Stelle, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: vị trí việc làm, chỗ làm (một công việc cụ thể)
+      examples:
+        - target: Ich suche eine Stelle als Verkäuferin.
+          translation:
+            vi: Tôi đang tìm một chỗ làm nhân viên bán hàng.
+      confusion:
+        vi: "eine Stelle suchen = tìm việc; eine Stelle finden = tìm được việc. Nghĩa gốc của die Stelle là \"chỗ, vị trí\"."
+
+  - key: de:item:a2u03-job
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Job, -s"
+      ipa: /dʒɔp/
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc làm, công việc (khẩu ngữ; hay dùng cho việc làm thêm)
+      examples:
+        - target: Am Wochenende hat Minh einen Job in einem Restaurant.
+          translation:
+            vi: Cuối tuần Minh làm thêm ở một nhà hàng.
+      pronunciation_note:
+        vi: "Từ mượn tiếng Anh, đọc gần như trong tiếng Anh: /dʒɔp/."
+
+  - key: de:item:a2u03-verdienen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: verdienen
+      pos: động từ
+    back:
+      meaning:
+        vi: kiếm (tiền), có thu nhập
+      examples:
+        - target: In meinem Job verdiene ich nicht viel.
+          translation:
+            vi: Với công việc này, tôi kiếm không được nhiều.
+      confusion:
+        vi: "Partizip II không có ge- vì có tiền tố ver-: Ich habe gut verdient."
+
+  - key: de:item:a2u03-gehalt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Gehalt, ¨-er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lương (thường là lương tháng)
+      examples:
+        - target: Das Gehalt ist gut, aber die Arbeitszeiten sind lang.
+          translation:
+            vi: Lương thì tốt, nhưng giờ làm việc dài.
+      confusion:
+        vi: "Số nhiều: die Gehälter. Tiền công trả theo giờ cho công nhân thường gọi là der Lohn."
+
+  - key: de:item:a2u03-chef
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Chef, -s / die Chefin, -nen"
+      ipa: /ʃɛf/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sếp, người quản lý
+      examples:
+        - target: Meine Chefin ist heute nicht im Büro.
+          translation:
+            vi: Hôm nay sếp của tôi (nữ) không có ở văn phòng.
+      pronunciation_note:
+        vi: "ch ở đầu từ này đọc như \"s\" uốn lưỡi (giống sch), vì từ gốc tiếng Pháp."
+
+  - key: de:item:a2u03-arbeitszeit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Arbeitszeit, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ làm việc, thời gian làm việc
+      examples:
+        - target: "Wie sind die Arbeitszeiten? – Von Montag bis Freitag, von acht bis fünf."
+          translation:
+            vi: "Giờ làm việc thế nào? – Từ thứ Hai đến thứ Sáu, từ tám giờ đến năm giờ."
+
+  - key: de:item:a2u03-vollzeit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Vollzeit (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: (làm) toàn thời gian
+      examples:
+        - target: Meine Frau arbeitet in Vollzeit.
+          translation:
+            vi: Vợ tôi làm toàn thời gian.
+      confusion:
+        vi: "Nói được cả in Vollzeit arbeiten và Vollzeit arbeiten."
+
+  - key: de:item:a2u03-teilzeit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Teilzeit (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: (làm) bán thời gian
+      examples:
+        - target: Ich arbeite in Teilzeit, nur vier Stunden am Tag.
+          translation:
+            vi: Tôi làm bán thời gian, chỉ bốn tiếng mỗi ngày.
+
+  - key: de:item:a2u03-feierabend
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Feierabend, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ tan làm; thời gian nghỉ sau giờ làm
+      examples:
+        - target: Um fünf Uhr mache ich Feierabend.
+          translation:
+            vi: Năm giờ tôi tan làm.
+      confusion:
+        vi: "Feierabend machen = tan làm, nghỉ làm trong ngày. Lời chúc quen thuộc khi đồng nghiệp ra về: \"Schönen Feierabend!\" (học như một cụm cố định)."
+
+  - key: de:item:a2u03-ueberstunde
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Überstunde, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ làm thêm (ngoài giờ)
+      examples:
+        - target: Im Dezember mache ich oft Überstunden.
+          translation:
+            vi: Vào tháng Mười hai tôi hay làm thêm giờ.
+      confusion:
+        vi: "Thường dùng ở số nhiều: Überstunden machen = làm thêm giờ."
+
+  - key: de:item:a2u03-schicht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Schicht, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ca làm việc
+      examples:
+        - target: Im Krankenhaus arbeitet meine Schwester in Schichten.
+          translation:
+            vi: Chị tôi làm việc theo ca ở bệnh viện.
+      confusion:
+        vi: "die Frühschicht (ca sáng), die Spätschicht (ca chiều), die Nachtschicht (ca đêm)."
+
+  - key: de:item:a2u03-arbeitstag
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Arbeitstag, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày làm việc
+      examples:
+        - target: Mein Arbeitstag fängt um acht Uhr an.
+          translation:
+            vi: Ngày làm việc của tôi bắt đầu lúc tám giờ.
+
+  # ================= bài 2: dass, câu phụ đứng đầu; đánh giá công việc =================
+  - key: de:item:a2u03-g-dass
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "dass + Nebensatz: Ich finde / glaube / denke / weiß, dass …"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "dass = rằng, là; nối một ý kiến hoặc một điều mình biết vào các động từ finden, glauben, denken, meinen, wissen. Sau dass là câu phụ: động từ chia đứng cuối, trước dass có dấu phẩy. dass (liên từ, hai chữ s) khác das (mạo từ, đại từ)."
+      examples:
+        - target: Ich finde, dass die Arbeit sehr interessant ist.
+          translation:
+            vi: Tôi thấy công việc rất thú vị.
+        - target: Ich glaube, dass der Chef heute nicht im Büro ist.
+          translation:
+            vi: Tôi nghĩ là hôm nay sếp không có ở văn phòng.
+      confusion:
+        vi: "Trong văn nói có thể bỏ dass; khi đó vế sau giữ trật tự câu chính: Ich glaube, er kommt heute nicht. = Ich glaube, dass er heute nicht kommt."
+
+  - key: de:item:a2u03-g-nebensatz-vorne
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Nebensatz auf Position 1: Weil ich krank bin, bleibe ich zu Hause."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Câu phụ có thể đứng đầu; khi đó cả câu phụ chiếm vị trí 1, nên động từ chia của câu chính đứng ngay sau dấu phẩy, rồi mới đến chủ ngữ. Tiếng Việt nói \"Vì tôi ốm, tôi ở nhà\", nhưng tiếng Đức phải đảo: …, bleibe ich zu Hause."
+      examples:
+        - target: Weil ich krank bin, bleibe ich heute zu Hause.
+          translation:
+            vi: Vì tôi bị ốm nên hôm nay tôi ở nhà.
+        - target: Weil der Bus Verspätung hatte, bin ich zu spät gekommen.
+          translation:
+            vi: Vì xe buýt bị trễ nên tôi đến muộn.
+      confusion:
+        vi: "Dấu hiệu dễ nhớ: hai động từ đứng sát nhau hai bên dấu phẩy (… krank bin, bleibe ich …)."
+
+  - key: de:item:a2u03-glauben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: glauben
+      pos: động từ
+    back:
+      meaning:
+        vi: tin, nghĩ (là), cho là
+      examples:
+        - target: Ich glaube, dass Herr Lang heute nicht kommt.
+          translation:
+            vi: Tôi nghĩ là hôm nay ông Lang không đến.
+
+  - key: de:item:a2u03-denken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "denken, dachte, hat gedacht"
+      pos: động từ
+    back:
+      meaning:
+        vi: nghĩ, suy nghĩ
+      examples:
+        - target: Ich denke, dass wir mehr Pausen brauchen.
+          translation:
+            vi: Tôi nghĩ là chúng ta cần nhiều giờ nghỉ hơn.
+      confusion:
+        vi: "Ich denke, dass … gần nghĩa Ich glaube, dass …; Präteritum bất quy tắc: dachte."
+
+  - key: de:item:a2u03-meinen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: meinen
+      pos: động từ
+    back:
+      meaning:
+        vi: cho rằng, có ý kiến; muốn nói (ý là)
+      examples:
+        - target: "Was meinst du? – Ich meine, dass die Arbeitszeit zu lang ist."
+          translation:
+            vi: "Bạn nghĩ sao? – Mình cho là thời gian làm việc dài quá."
+      confusion:
+        vi: "Was meinst du? có thể là \"Bạn nghĩ sao?\" hoặc \"Ý bạn là gì?\" tuỳ ngữ cảnh. die Meinung = ý kiến."
+
+  - key: de:item:a2u03-wichtig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wichtig
+      pos: tính từ
+    back:
+      meaning:
+        vi: quan trọng
+      examples:
+        - target: Für mich ist ein gutes Team sehr wichtig.
+          translation:
+            vi: Với tôi, một nhóm làm việc tốt rất quan trọng.
+      pronunciation_note:
+        vi: "w đọc như v tiếng Việt; -ig ở cuối đọc giống ich."
+
+  - key: de:item:a2u03-interessant
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: interessant
+      pos: tính từ
+    back:
+      meaning:
+        vi: thú vị, hay
+      examples:
+        - target: Die Arbeit ist interessant, aber anstrengend.
+          translation:
+            vi: Công việc thú vị nhưng vất vả.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: in-te-res-SANT."
+
+  - key: de:item:a2u03-anstrengend
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: anstrengend
+      pos: tính từ
+    back:
+      meaning:
+        vi: vất vả, mệt (làm người ta mệt)
+      examples:
+        - target: Die Arbeit im Restaurant ist sehr anstrengend.
+          translation:
+            vi: Công việc ở nhà hàng rất vất vả.
+      confusion:
+        vi: "anstrengend nói về công việc (làm mình mệt); müde nói về người (đang mệt): Die Arbeit ist anstrengend, ich bin müde."
+
+  - key: de:item:a2u03-stressig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: stressig
+      pos: tính từ
+    back:
+      meaning:
+        vi: căng thẳng, nhiều áp lực
+      examples:
+        - target: Der Montag ist im Büro immer stressig.
+          translation:
+            vi: Ở văn phòng, thứ Hai lúc nào cũng căng thẳng.
+
+  - key: de:item:a2u03-team
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Team, -s"
+      ipa: /tiːm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhóm (làm việc), đội
+      examples:
+        - target: Unser Team ist klein, aber sehr gut.
+          translation:
+            vi: Nhóm của chúng tôi nhỏ nhưng rất giỏi.
+      pronunciation_note:
+        vi: "Từ mượn tiếng Anh, đọc \"tim\" với i dài."
+
+  - key: de:item:a2u03-aufgabe
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Aufgabe, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiệm vụ, việc phải làm
+      examples:
+        - target: Das ist eine neue Aufgabe für mich.
+          translation:
+            vi: Đây là một nhiệm vụ mới với tôi.
+      confusion:
+        vi: "die Hausaufgabe = bài tập về nhà; die Aufgabe = nhiệm vụ nói chung, cả ở chỗ làm."
+
+  - key: de:item:a2u03-selbststaendig
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: selbstständig
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự chủ, tự làm (không cần ai hướng dẫn); tự kinh doanh
+      examples:
+        - target: In meinem Job arbeite ich sehr selbstständig.
+          translation:
+            vi: Trong công việc, tôi làm việc rất tự chủ.
+        - target: Mein Vater ist selbstständig. Er hat ein kleines Geschäft.
+          translation:
+            vi: Bố tôi tự kinh doanh. Ông có một cửa hàng nhỏ.
+      confusion:
+        vi: "Cũng viết được selbständig (một chữ t); cả hai cách viết đều đúng."
+
+  - key: de:item:a2u03-projekt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Projekt, -e"
+      ipa: /pʁoˈjɛkt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự án
+      examples:
+        - target: Unser Team hat ein neues Projekt.
+          translation:
+            vi: Nhóm chúng tôi có một dự án mới.
+      pronunciation_note:
+        vi: "j đọc như y trong tiếng Anh yes; trọng âm ở âm tiết sau: pro-JEKT."
+
+  - key: de:item:a2u03-kreativ
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: kreativ
+      ipa: /kʁeaˈtiːf/
+      pos: tính từ
+    back:
+      meaning:
+        vi: sáng tạo
+      examples:
+        - target: Ich finde meine Arbeit toll, weil sie sehr kreativ ist.
+          translation:
+            vi: Tôi thấy công việc của mình rất tuyệt vì nó rất sáng tạo.
+      pronunciation_note:
+        vi: "v ở cuối đọc như \"f\"; trọng âm ở -tiv."
+
+  - key: de:item:a2u03-abwechslungsreich
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abwechslungsreich
+      pos: tính từ
+    back:
+      meaning:
+        vi: đa dạng, phong phú, không nhàm chán
+      examples:
+        - target: Die Arbeit im Hotel ist abwechslungsreich.
+          translation:
+            vi: Công việc ở khách sạn rất đa dạng.
+      confusion:
+        vi: "Ngược nghĩa với langweilig. Từ ghép: die Abwechslung (sự thay đổi) + -s- + reich (nhiều)."
+
+  - key: de:item:a2u03-arbeitsklima
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Arbeitsklima (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: không khí làm việc, môi trường làm việc
+      examples:
+        - target: Ich glaube, dass das Arbeitsklima hier sehr gut ist.
+          translation:
+            vi: Tôi nghĩ là không khí làm việc ở đây rất tốt.
+
+  # ================= bài 3: động từ đi với Dativ; điện thoại công việc =================
+  - key: de:item:a2u03-g-dativ-verben
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Verben mit Dativ: helfen, danken, gehören, gratulieren, zuhören, fehlen, schmecken, antworten"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Một số động từ có tân ngữ chỉ người ở Dativ (mir, dir, Ihnen, dem Chef …), dù tiếng Việt nói \"giúp bạn\", \"cảm ơn anh\" như tân ngữ bình thường: helfen, danken, gehören, gratulieren, zuhören, fehlen, schmecken, antworten. Hãy học nhóm này cùng gefallen, passen, stehen đã biết."
+      examples:
+        - target: Kann ich Ihnen helfen?
+          translation:
+            vi: Tôi có thể giúp gì cho ông/bà?
+        - target: Das Essen in der Kantine schmeckt mir nicht.
+          translation:
+            vi: Tôi thấy đồ ăn ở căng tin không ngon.
+        - target: "Wem gehört der Kuli? – Er gehört mir."
+          translation:
+            vi: "Cái bút bi này của ai? – Của tôi."
+      confusion:
+        vi: "Akkusativ: Ich frage dich. Ich rufe dich an. Dativ: Ich helfe dir. Ich antworte dir. Hỏi người ở Dativ bằng Wem? (Wem hilfst du?)."
+
+  - key: de:item:a2u03-helfen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "helfen, hilft, half, hat geholfen"
+      pos: động từ
+    back:
+      meaning:
+        vi: giúp, giúp đỡ (+ Dativ)
+      examples:
+        - target: Mein Kollege hilft mir oft am Computer.
+          translation:
+            vi: Đồng nghiệp hay giúp tôi việc máy tính.
+      confusion:
+        vi: "Đổi nguyên âm e → i: du hilfst, er hilft. Người được giúp ở Dativ: Ich helfe dir (không phải dich)."
+
+  - key: de:item:a2u03-danken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: danken
+      pos: động từ
+    back:
+      meaning:
+        vi: cảm ơn (+ Dativ)
+      examples:
+        - target: Ich danke Ihnen sehr!
+          translation:
+            vi: Tôi rất cảm ơn ông/bà!
+      confusion:
+        vi: "Hằng ngày người ta hay nói ngắn Danke! hoặc Vielen Dank!; Ich danke Ihnen nghe trang trọng hơn."
+
+  - key: de:item:a2u03-gehoeren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gehören
+      pos: động từ
+    back:
+      meaning:
+        vi: thuộc về, là của (ai) (+ Dativ)
+      examples:
+        - target: "Gehört die Tasche Ihnen? – Nein, sie gehört Frau Klein."
+          translation:
+            vi: "Cái túi này của bà phải không? – Không, của bà Klein."
+      confusion:
+        vi: "Đồ vật là chủ ngữ, người ở Dativ: Das Handy gehört mir = Cái điện thoại là của tôi."
+
+  - key: de:item:a2u03-gratulieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gratulieren
+      pos: động từ
+    back:
+      meaning:
+        vi: chúc mừng (+ Dativ)
+      examples:
+        - target: Du hast die Stelle bekommen? Ich gratuliere dir!
+          translation:
+            vi: Bạn được nhận vào làm rồi à? Chúc mừng bạn!
+      confusion:
+        vi: "Partizip II không có ge- vì đuôi -ieren: Wir haben ihm gratuliert. Cụm hay gặp: Ich gratuliere dir zum Geburtstag!"
+
+  - key: de:item:a2u03-zuhoeren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zuhören
+      pos: động từ
+    back:
+      meaning:
+        vi: lắng nghe (ai) (+ Dativ)
+      examples:
+        - target: Hör mir bitte zu!
+          translation:
+            vi: Nghe mình nói này!
+      confusion:
+        vi: "Động từ tách: Ich höre dir zu. hören (nghe thấy) đi với Akkusativ: Ich höre Musik; zuhören (chú ý lắng nghe ai) đi với Dativ: Ich höre dem Chef zu."
+
+  - key: de:item:a2u03-fehlen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fehlen
+      pos: động từ
+    back:
+      meaning:
+        vi: thiếu; vắng mặt
+      examples:
+        - target: Mir fehlt noch ein Formular.
+          translation:
+            vi: Tôi còn thiếu một tờ đơn.
+        - target: Herr Lang fehlt heute, er ist krank.
+          translation:
+            vi: Hôm nay ông Lang vắng mặt, ông ấy bị ốm.
+      confusion:
+        vi: "Thứ bị thiếu là chủ ngữ, người thiếu ở Dativ. Du fehlst mir! = Mình nhớ bạn (bạn \"thiếu\" với mình)."
+
+  - key: de:item:a2u03-schmecken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: schmecken
+      pos: động từ
+    back:
+      meaning:
+        vi: có vị; (ai đó) thấy ngon (+ Dativ)
+      examples:
+        - target: "Schmeckt dir der Kaffee? – Ja, er schmeckt mir sehr gut."
+          translation:
+            vi: "Bạn thấy cà phê có ngon không? – Có, mình thấy rất ngon."
+      confusion:
+        vi: "Giống gefallen: món ăn là chủ ngữ, người ăn ở Dativ."
+
+  - key: de:item:a2u03-verbinden
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "verbinden, verband, hat verbunden"
+      pos: động từ
+    back:
+      meaning:
+        vi: nối máy (điện thoại); kết nối
+      examples:
+        - target: Einen Moment, bitte, ich verbinde Sie mit Frau Klein.
+          translation:
+            vi: Xin chờ một chút, tôi nối máy cho ông/bà với bà Klein.
+      confusion:
+        vi: "jemanden mit jemandem verbinden: người gọi ở Akkusativ (Sie), người được nối tới đi với mit + Dativ."
+
+  - key: de:item:a2u03-zurueckrufen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "zurückrufen, rief zurück, hat zurückgerufen"
+      pos: động từ
+    back:
+      meaning:
+        vi: gọi lại (+ Akkusativ)
+      examples:
+        - target: Frau Klein ruft Sie morgen zurück.
+          translation:
+            vi: Ngày mai bà Klein sẽ gọi lại cho ông/bà.
+      confusion:
+        vi: "Giống anrufen, người được gọi ở Akkusativ: Kannst du mich zurückrufen? (không phải mir)."
+
+  - key: de:item:a2u03-ausrichten
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausrichten
+      pos: động từ
+    back:
+      meaning:
+        vi: nhắn lại, chuyển lời
+      examples:
+        - target: Kann ich ihr etwas ausrichten?
+          translation:
+            vi: Tôi có thể nhắn lại gì cho cô ấy không?
+      confusion:
+        vi: "Động từ tách. Người nhận lời nhắn ở Dativ (ihr, ihm, Herrn Lang), lời nhắn ở Akkusativ (etwas)."
+
+  - key: de:item:a2u03-besetzt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: besetzt
+      pos: tính từ
+    back:
+      meaning:
+        vi: (máy) bận; (chỗ) đã có người
+      examples:
+        - target: Ich rufe später noch einmal an, die Leitung ist besetzt.
+          translation:
+            vi: Tôi sẽ gọi lại sau, máy đang bận.
+      confusion:
+        vi: "Cũng dùng cho chỗ ngồi, nhà vệ sinh: Ist der Platz besetzt? = Chỗ này có ai ngồi chưa?"
+
+  - key: de:item:a2u03-am-apparat
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "(Name) am Apparat"
+      pos: cụm từ
+    back:
+      meaning:
+        vi: (tên) đang nghe máy, (tên) xin nghe
+      examples:
+        - target: Firma Becker, Schmidt am Apparat, guten Tag.
+          translation:
+            vi: Công ty Becker, Schmidt xin nghe, xin chào.
+      confusion:
+        vi: "Khi nghe máy ở công ty, người Đức thường nói tên công ty và họ của mình trước, không chỉ nói \"Hallo\"."
+
+  - key: de:item:a2u03-auf-wiederhoeren
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "Auf Wiederhören!"
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Chào tạm biệt (khi kết thúc cuộc gọi trang trọng)
+      examples:
+        - target: "Vielen Dank, Frau Klein. Auf Wiederhören!"
+          translation:
+            vi: "Cảm ơn bà Klein nhiều. Chào bà!"
+      confusion:
+        vi: "Auf Wiedersehen (hẹn gặp lại – \"sehen\" là nhìn) khi gặp mặt; Auf Wiederhören (\"hören\" là nghe) trên điện thoại."
+
+  - key: de:item:a2u03-durchwahl
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Durchwahl, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: số máy lẻ (gọi thẳng tới một người trong công ty)
+      examples:
+        - target: Meine Durchwahl ist die 12.
+          translation:
+            vi: Số máy lẻ của tôi là 12.
+
+  # ================= bài 4: werden; ứng tuyển =================
+  - key: de:item:a2u03-g-werden-vollverb
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "werden: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "werden = trở thành, trở nên. Với nghề, thường nói không có mạo từ (Ich werde Ingenieur.); với tính từ, tính từ không đổi đuôi (Es wird kalt.). Chú ý dạng bất quy tắc du wirst, er wird và Perfekt với sein: ist geworden."
+      examples:
+        - target: Meine Schwester wird Ärztin.
+          translation:
+            vi: Chị tôi sắp trở thành bác sĩ.
+        - target: Im Herbst wird es früh dunkel.
+          translation:
+            vi: Vào mùa thu trời tối sớm.
+        - target: Ich möchte Pflegefachfrau werden.
+          translation:
+            vi: Tôi muốn trở thành điều dưỡng.
+      confusion:
+        vi: "werden (trở thành) khác wollen (muốn): Ich will Arzt werden = Tôi muốn trở thành bác sĩ; Ich werde Arzt = Tôi sẽ trở thành bác sĩ."
+
+  - key: de:item:a2u03-werden
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "werden, wird, wurde, ist geworden"
+      pos: động từ
+    back:
+      meaning:
+        vi: trở thành, trở nên
+      examples:
+        - target: Nach dem Praktikum ist er Koch geworden.
+          translation:
+            vi: Sau kỳ thực tập, anh ấy đã trở thành đầu bếp.
+      confusion:
+        vi: "du wirst (không có d), er wird. Perfekt dùng sein vì đây là sự thay đổi trạng thái: ist geworden."
+
+  - key: de:item:a2u03-bewerbung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Bewerbung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: hồ sơ xin việc; việc ứng tuyển
+      examples:
+        - target: Ich schreibe heute meine Bewerbung.
+          translation:
+            vi: Hôm nay tôi viết hồ sơ xin việc.
+      confusion:
+        vi: "Ở Đức, hồ sơ xin việc thường gồm thư xin việc (das Anschreiben), sơ yếu lý lịch (der Lebenslauf) và các bằng cấp, giấy nhận xét (die Zeugnisse)."
+
+  - key: de:item:a2u03-vorstellungsgespraech
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "das Vorstellungsgespräch, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi phỏng vấn xin việc
+      examples:
+        - target: Am Montag habe ich ein Vorstellungsgespräch.
+          translation:
+            vi: Thứ Hai tôi có một buổi phỏng vấn xin việc.
+      confusion:
+        vi: "Từ ghép: die Vorstellung (sự giới thiệu bản thân) + -s- + das Gespräch (cuộc nói chuyện) → giống trung theo từ cuối."
+
+  - key: de:item:a2u03-praktikum
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Praktikum, Praktika"
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ thực tập
+      examples:
+        - target: Im Sommer mache ich ein Praktikum in einem Hotel.
+          translation:
+            vi: Mùa hè này tôi thực tập ở một khách sạn.
+      confusion:
+        vi: "ein Praktikum machen = đi thực tập. Số nhiều bất quy tắc: die Praktika."
+
+  - key: de:item:a2u03-staerke
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Stärke, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm mạnh, thế mạnh
+      examples:
+        - target: "Was sind Ihre Stärken? – Ich bin zuverlässig und arbeite gern im Team."
+          translation:
+            vi: "Điểm mạnh của anh/chị là gì? – Tôi đáng tin cậy và thích làm việc nhóm."
+      confusion:
+        vi: "Từ tính từ stark (mạnh) → die Stärke."
+
+  - key: de:item:a2u03-schwaeche
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Schwäche, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm yếu
+      examples:
+        - target: Meine Schwäche ist, dass ich manchmal zu schnell arbeite.
+          translation:
+            vi: Điểm yếu của tôi là đôi khi tôi làm việc quá nhanh.
+      confusion:
+        vi: "Từ tính từ schwach (yếu) → die Schwäche."
+
+  - key: de:item:a2u03-zuverlaessig
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zuverlässig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng tin cậy
+      examples:
+        - target: Herr Nam ist sehr zuverlässig und immer pünktlich.
+          translation:
+            vi: Anh Nam rất đáng tin cậy và luôn đúng giờ.
+
+  - key: de:item:a2u03-flexibel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: flexibel
+      pos: tính từ
+    back:
+      meaning:
+        vi: linh hoạt
+      examples:
+        - target: Ich bin flexibel und kann auch am Wochenende arbeiten.
+          translation:
+            vi: Tôi linh hoạt và có thể làm cả cuối tuần.
+      confusion:
+        vi: "Khi thêm đuôi, chữ e trước l rơi mất: ein flexibler Mitarbeiter, flexible Arbeitszeiten."
+
+  - key: de:item:a2u03-kenntnisse
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kenntnisse (Pl.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiến thức, hiểu biết (về một lĩnh vực)
+      examples:
+        - target: Haben Sie Computerkenntnisse?
+          translation:
+            vi: Anh/chị có kiến thức về máy tính không?
+      confusion:
+        vi: "Thường dùng số nhiều và ghép: Deutschkenntnisse, Computerkenntnisse, Englischkenntnisse."
+
+  - key: de:item:a2u03-bewerber
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Bewerber, - / die Bewerberin, -nen"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ứng viên, người xin việc
+      examples:
+        - target: Für die Stelle gibt es zehn Bewerber.
+          translation:
+            vi: Vị trí này có mười ứng viên.
+
+  - key: de:item:a2u03-anschreiben
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "das Anschreiben, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư xin việc (gửi kèm hồ sơ)
+      examples:
+        - target: Das Anschreiben soll nicht länger als eine Seite sein.
+          translation:
+            vi: Thư xin việc không nên dài quá một trang.
+      confusion:
+        vi: "Danh từ tạo từ động từ anschreiben nên viết hoa và là giống trung: das Anschreiben."
+
+  - key: de:item:a2u03-pflegefachfrau
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Pflegefachfrau, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều dưỡng (nữ)
+      examples:
+        - target: Meine Cousine arbeitet als Pflegefachfrau in einem Krankenhaus.
+          translation:
+            vi: Chị họ tôi làm điều dưỡng ở một bệnh viện.
+      confusion:
+        vi: "Nam: der Pflegefachmann. Đây là tên nghề theo chương trình đào tạo điều dưỡng mới ở Đức; trong đời thường người ta vẫn hay nói die Krankenschwester hoặc der Krankenpfleger."
+
+  - key: de:item:a2u03-teamfaehig
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: teamfähig
+      pos: tính từ
+    back:
+      meaning:
+        vi: có khả năng làm việc nhóm
+      examples:
+        - target: Sie sind teamfähig und zuverlässig.
+          translation:
+            vi: Anh/chị có khả năng làm việc nhóm và đáng tin cậy.
+      confusion:
+        vi: "Hay gặp trong tin tuyển dụng. das Team + fähig (có khả năng)."
+
+  - key: de:item:a2u03-fleissig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fleißig
+      pos: tính từ
+    back:
+      meaning:
+        vi: chăm chỉ, siêng năng
+      examples:
+        - target: Lan ist sehr fleißig. Sie lernt jeden Abend Deutsch.
+          translation:
+            vi: Lan rất chăm chỉ. Tối nào cô ấy cũng học tiếng Đức.
+      pronunciation_note:
+        vi: "ei đọc là \"ai\"; ß là âm s (không rung); -ig ở cuối đọc giống ich."
+
+  - key: de:item:a2u03-geduldig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: geduldig
+      pos: tính từ
+    back:
+      meaning:
+        vi: kiên nhẫn
+      examples:
+        - target: Als Pflegefachfrau muss man sehr geduldig sein.
+          translation:
+            vi: Làm điều dưỡng thì phải rất kiên nhẫn.
+      confusion:
+        vi: "die Geduld = sự kiên nhẫn; ngược nghĩa: ungeduldig."

@@ -1,0 +1,362 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u03-dass
+order_index: 2
+level: a2
+title:
+  vi: Tôi thấy rằng… – dass (Ich finde, dass …)
+objectives:
+  - vi: Nêu ý kiến đơn giản về công việc và đồng nghiệp bằng Ich finde / glaube / denke / meine, dass …
+  - vi: Viết đúng dass (liên từ) và phân biệt với das.
+  - vi: Đặt câu phụ ở đầu câu và để động từ câu chính ngay sau dấu phẩy (Weil ich krank bin, bleibe ich zu Hause.).
+  - vi: Đánh giá công việc bằng tính từ (interessant, anstrengend, stressig, wichtig, selbstständig…).
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u03-weil-denn]
+items:
+  - item: de:item:a2u03-g-dass
+  - item: de:item:a2u03-g-nebensatz-vorne
+  - item: de:item:a2u03-glauben
+  - item: de:item:a2u03-denken
+  - item: de:item:a2u03-meinen
+  - item: de:item:a2u03-wichtig
+  - item: de:item:a2u03-interessant
+  - item: de:item:a2u03-anstrengend
+  - item: de:item:a2u03-stressig
+  - item: de:item:a2u03-team
+  - item: de:item:a2u03-aufgabe
+  - item: de:item:a2u03-selbststaendig
+  - item: de:item:a2u03-projekt
+  - item: de:item:a2u03-kreativ
+  - item: de:item:a2u03-abwechslungsreich
+  - item: de:item:a2u03-arbeitsklima
+  - item: de:item:a1u01-g-v2
+    role: reuse
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u03-g-nebensatz-verbletzt
+    role: reuse
+  - item: de:item:a1u06-langweilig
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được bạn nghĩ gì về công việc, về nhóm làm việc và đồng nghiệp – và bắt đầu câu bằng một lý do (Weil …, …).
+  - type: explain
+    text:
+      vi: "dass = rằng, là. Sau Ich finde, Ich glaube, Ich denke, Ich meine, Ich weiß bạn thêm dấu phẩy, dass, rồi một câu phụ: động từ đứng cuối. Ich finde, dass die Arbeit interessant ist."
+  - type: explain
+    text:
+      vi: "dass (hai chữ s) là liên từ; das (một chữ s) là mạo từ hoặc đại từ (das Team, Das ist gut). Nghe giống hệt nhau, nên khi viết hãy tự hỏi: có thể thay bằng \"rằng\" không? Nếu có thì viết dass."
+  - type: explain
+    text:
+      vi: "Câu phụ cũng có thể đứng đầu. Khi đó cả câu phụ là vị trí 1, nên động từ chia của câu chính đứng ngay sau dấu phẩy, rồi mới đến chủ ngữ: Weil ich krank bin, bleibe ich zu Hause. Đây vẫn là quy tắc động từ ở vị trí 2 bạn đã biết (Heute bleibe ich zu Hause)."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"Vì tôi ốm, (nên) tôi ở nhà\" với chủ ngữ đứng trước. Tiếng Đức không được: sau dấu phẩy phải là động từ – bleibe ich, không phải ich bleibe."
+  - type: deep_explain
+    text:
+      vi: "Trong văn nói, người Đức hay bỏ dass sau finden, glauben, denken: Ich glaube, er kommt heute nicht. Khi bỏ dass thì vế sau giữ trật tự câu chính – cả hai cách đều đúng, nhưng có dass thì động từ phải ở cuối. Riêng finden mang nghĩa \"thấy, đánh giá\" (Ich finde die Arbeit interessant); glauben, denken, meinen gần nghĩa \"nghĩ là\". Khi nói ý kiến ở chỗ làm, người Đức thường khá thẳng thắn nhưng lịch sự; câu mở đầu bằng Ich finde / Ich glaube giúp ý kiến nghe mềm hơn."
+  - type: example
+    target: Ich finde, dass die Arbeit sehr interessant ist.
+    target_lang: de
+    translation:
+      vi: Tôi thấy công việc rất thú vị.
+    note:
+      vi: "Dấu phẩy trước dass; động từ ist ở cuối câu phụ."
+  - type: example
+    target: "Wie findest du dein Team? – Ich glaube, dass wir ein sehr gutes Team sind."
+    target_lang: de
+    translation:
+      vi: "Bạn thấy nhóm của bạn thế nào? – Mình nghĩ là bọn mình là một nhóm rất tốt."
+    note:
+      vi: "Hai đồng nghiệp thân dùng du. ein gutes Team: đuôi -es sau ein với danh từ giống trung."
+  - type: example
+    target: Meine Kollegin meint, dass die Arbeit zu stressig ist.
+    target_lang: de
+    translation:
+      vi: Đồng nghiệp của tôi cho rằng công việc quá căng thẳng.
+    note:
+      vi: "meinen = cho rằng; động từ ist ở cuối."
+  - type: example
+    target: Weil ich krank bin, bleibe ich heute zu Hause.
+    target_lang: de
+    translation:
+      vi: Vì tôi bị ốm nên hôm nay tôi ở nhà.
+    note:
+      vi: "Câu phụ đứng đầu = vị trí 1; bleibe (vị trí 2) đứng ngay sau dấu phẩy, rồi đến ich."
+  - type: example
+    target: Weil die Aufgaben so abwechslungsreich sind, ist die Arbeit nie langweilig.
+    target_lang: de
+    translation:
+      vi: Vì các nhiệm vụ rất đa dạng nên công việc không bao giờ nhàm chán.
+    note:
+      vi: "Hai động từ đứng sát nhau qua dấu phẩy: sind, ist."
+  - type: common_mistake
+    wrong: Weil ich krank bin, ich bleibe zu Hause.
+    right: Weil ich krank bin, bleibe ich zu Hause.
+    target_lang: de
+    note:
+      vi: "Đừng giữ trật tự kiểu tiếng Việt/tiếng Anh: câu phụ là vị trí 1, động từ câu chính phải đứng ngay sau dấu phẩy."
+  - type: common_mistake
+    wrong: Ich finde, das die Arbeit interessant ist.
+    right: Ich finde, dass die Arbeit interessant ist.
+    target_lang: de
+    note:
+      vi: "Liên từ \"rằng\" viết dass với hai chữ s; das là mạo từ/đại từ."
+  - type: common_mistake
+    wrong: Ich glaube, dass der Chef ist heute nicht da.
+    right: Ich glaube, dass der Chef heute nicht da ist.
+    target_lang: de
+    note:
+      vi: "Sau dass, động từ chia đứng cuối như sau weil."
+  - type: summary
+    points:
+      - vi: "Ich finde / glaube / denke / meine / weiß, dass … + động từ cuối."
+      - vi: "dass (rằng) ≠ das (mạo từ, đại từ)."
+      - vi: "Câu phụ đứng đầu: …, + động từ + chủ ngữ (Weil ich krank bin, bleibe ich …)."
+      - vi: "Văn nói có thể bỏ dass: Ich glaube, er kommt nicht."
+      - vi: "Tính từ đánh giá: interessant, anstrengend, stressig, wichtig, kreativ, abwechslungsreich, selbstständig."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u03l2-mcq-dass-das
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u03-g-dass
+    prompt:
+      stem: "Chọn từ đúng: Ich finde, ___ die Arbeit interessant ist."
+      stem_lang: vi
+      options:
+        - { id: q2d, text: dass, lang: de }
+        - { id: q5s, text: das, lang: de }
+        - { id: q8n, text: denn, lang: de }
+    answer:
+      correct_option_id: q2d
+    explanation:
+      vi: "Cần liên từ \"rằng\" mở câu phụ (ist ở cuối): dass. das là mạo từ/đại từ; denn không đi với động từ ở cuối."
+    display_answer: dass
+
+  - key: de:exercise:a2u03l2-mcq-weil-vorne
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-g-nebensatz-vorne
+    prompt:
+      stem: "Chọn câu đúng: \"Vì tôi bị ốm nên tôi ở nhà.\""
+      stem_lang: vi
+      options:
+        - { id: v1a, text: "Weil ich krank bin, bleibe ich zu Hause.", lang: de }
+        - { id: v2b, text: "Weil ich krank bin, ich bleibe zu Hause.", lang: de }
+        - { id: v3c, text: "Weil ich bin krank, bleibe ich zu Hause.", lang: de }
+        - { id: v4d, text: "Weil ich krank bin, zu Hause bleibe ich.", lang: de }
+    answer:
+      correct_option_id: v1a
+    explanation:
+      vi: "Câu phụ (động từ bin ở cuối) chiếm vị trí 1, nên động từ câu chính bleibe đứng ngay sau dấu phẩy, rồi đến ich."
+    display_answer: "Weil ich krank bin, bleibe ich zu Hause."
+
+  - key: de:exercise:a2u03l2-listen-team-super
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-anstrengend
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich finde, dass die Arbeit anstrengend ist, aber das Team ist super.
+      options:
+        - { id: m1x, text: "Người nói thấy công việc vất vả, nhưng nhóm làm việc rất tuyệt.", lang: vi }
+        - { id: m2y, text: "Người nói thấy công việc nhẹ nhàng và nhóm làm việc rất tuyệt.", lang: vi }
+        - { id: m3z, text: "Người nói thấy công việc vất vả và nhóm làm việc không tốt.", lang: vi }
+        - { id: m4w, text: "Người nói thấy công việc thú vị, nhưng sếp rất khó tính.", lang: vi }
+    answer:
+      correct_option_id: m1x
+    explanation:
+      vi: "anstrengend = vất vả; aber das Team ist super = nhưng nhóm thì rất tuyệt."
+    display_answer: "Người nói thấy công việc vất vả, nhưng nhóm làm việc rất tuyệt."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u03l2-fill-anfaengt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-g-dass
+    prompt:
+      template: "Ich weiß, dass der Kurs um neun Uhr {{b1}}. (anfangen)"
+      blanks:
+        - { id: b1, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [anfängt]
+    known_wrong:
+      - answer: fängt an
+        feedback_vi: "Trong câu phụ với dass, động từ tách viết liền và đứng cuối: anfängt."
+        error_tag: separable_prefix
+      - answer: anfangt
+        feedback_vi: "anfangen đổi a → ä ở ngôi thứ ba: es fängt an → anfängt."
+        error_tag: verb_form
+    explanation:
+      vi: "dass mở câu phụ nên động từ đứng cuối; động từ tách viết liền lại; chủ ngữ der Kurs (ngôi 3) nên fängt → anfängt."
+    display_answer: Ich weiß, dass der Kurs um neun Uhr anfängt.
+
+  - key: de:exercise:a2u03l2-tr-finde-interessant
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-interessant
+    prompt:
+      source_text: "Tôi thấy rằng công việc rất thú vị. (công việc = die Arbeit; dùng dass)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich finde, dass die Arbeit sehr interessant ist.
+        - Ich finde, dass meine Arbeit sehr interessant ist.
+        - Ich finde, die Arbeit ist sehr interessant.
+        - Ich finde die Arbeit sehr interessant.
+    known_wrong:
+      - answer: Ich finde, dass die Arbeit ist sehr interessant.
+        feedback_vi: "Sau dass, động từ ist đứng cuối: dass die Arbeit sehr interessant ist."
+        error_tag: verb_position
+      - answer: Ich finde, das die Arbeit sehr interessant ist.
+        feedback_vi: "Liên từ \"rằng\" viết dass (hai chữ s)."
+        error_tag: das_dass
+    explanation:
+      vi: "Ich finde, dấu phẩy, dass + câu phụ với ist ở cuối. (Văn nói cũng có thể bỏ dass: Ich finde, die Arbeit ist sehr interessant.)"
+    display_answer: Ich finde, dass die Arbeit sehr interessant ist.
+
+  - key: de:exercise:a2u03l2-tr-weil-stressig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-nebensatz-vorne
+    prompt:
+      source_text: "Vì công việc rất căng thẳng nên tôi hay mệt. (bắt đầu bằng Weil; công việc = die Arbeit)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Weil die Arbeit sehr stressig ist, bin ich oft müde.
+        - Weil meine Arbeit sehr stressig ist, bin ich oft müde.
+    known_wrong:
+      - answer: Weil die Arbeit sehr stressig ist, ich bin oft müde.
+        feedback_vi: "Câu phụ đứng đầu là vị trí 1, nên bin phải đứng ngay sau dấu phẩy: …, bin ich oft müde."
+        error_tag: verb_position
+      - answer: Weil die Arbeit ist sehr stressig, bin ich oft müde.
+        feedback_vi: "Trong câu phụ với weil, ist đứng cuối: Weil die Arbeit sehr stressig ist, …"
+        error_tag: verb_position
+    explanation:
+      vi: "Câu phụ Weil die Arbeit sehr stressig ist (ist ở cuối) chiếm vị trí 1; động từ câu chính bin đứng ngay sau dấu phẩy, rồi đến ich oft müde."
+    display_answer: Weil die Arbeit sehr stressig ist, bin ich oft müde.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u03l2-wb-weil-krank
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u01-g-v2
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Weil: \"Vì tôi bị ốm nên tôi ở nhà.\""
+      tokens:
+        - { id: t-hause, text: Hause }
+        - { id: t-ich-a, text: ich }
+        - { id: t-bleibe, text: bleibe }
+        - { id: t-weil, text: Weil }
+        - { id: t-komma, text: "," }
+        - { id: t-zu, text: zu }
+        - { id: t-bin, text: bin }
+        - { id: t-ich-b, text: ich }
+        - { id: t-krank, text: krank }
+    answer:
+      orders:
+        - [t-weil, t-ich-a, t-krank, t-bin, t-komma, t-bleibe, t-ich-b, t-zu, t-hause]
+        - [t-weil, t-ich-b, t-krank, t-bin, t-komma, t-bleibe, t-ich-a, t-zu, t-hause]
+    explanation:
+      vi: "Câu phụ Weil ich krank bin (bin ở cuối) là vị trí 1; bleibe ở vị trí 2 ngay sau dấu phẩy, rồi chủ ngữ ich và zu Hause."
+    display_answer: Weil ich krank bin, bleibe ich zu Hause.
+
+  - key: de:exercise:a2u03l2-wb-glaube-klein
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-glauben
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi nghĩ là hôm nay bà Klein không đến.\""
+      tokens:
+        - { id: t-kommt, text: kommt }
+        - { id: t-dass, text: dass }
+        - { id: t-ich, text: Ich }
+        - { id: t-nicht, text: nicht }
+        - { id: t-frau, text: Frau }
+        - { id: t-komma, text: "," }
+        - { id: t-heute, text: heute }
+        - { id: t-glaube, text: glaube }
+        - { id: t-klein, text: Klein }
+    answer:
+      orders:
+        - [t-ich, t-glaube, t-komma, t-dass, t-frau, t-klein, t-heute, t-nicht, t-kommt]
+    explanation:
+      vi: "Ich glaube, dấu phẩy, dass + câu phụ: chủ ngữ Frau Klein, rồi heute nicht, động từ kommt ở cuối."
+    display_answer: Ich glaube, dass Frau Klein heute nicht kommt.
+
+  - key: de:exercise:a2u03l2-mcq-arbeitszeiten-sind
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-meinen
+    prompt:
+      stem: "Đồng nghiệp hỏi: \"Wie findest du die Arbeitszeiten?\" Bạn muốn nói: \"Mình thấy là chúng hơi dài quá.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z1k, text: "Ich finde, dass sie ein bisschen zu lang sind.", lang: de }
+        - { id: z2l, text: "Ich finde, dass sie ein bisschen zu lang ist.", lang: de }
+        - { id: z3m, text: "Ich finde, dass sind sie ein bisschen zu lang.", lang: de }
+        - { id: z4n, text: "Ich finde, das sie ein bisschen zu lang sind.", lang: de }
+    answer:
+      correct_option_id: z1k
+    explanation:
+      vi: "die Arbeitszeiten là số nhiều nên sie … sind; sau dass động từ đứng cuối; liên từ viết dass (hai chữ s)."
+    display_answer: "Ich finde, dass sie ein bisschen zu lang sind."
+
+  - key: de:exercise:a2u03l2-tr-projekt-wichtig-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-projekt
+    prompt:
+      source_text: Ich glaube, dass das Projekt sehr wichtig ist.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi nghĩ là dự án rất quan trọng.
+        - Tôi nghĩ rằng dự án rất quan trọng.
+        - Tôi nghĩ dự án rất quan trọng.
+        - Tôi tin là dự án rất quan trọng.
+        - Tôi tin rằng dự án rất quan trọng.
+        - Tôi cho rằng dự án rất quan trọng.
+        - Tôi nghĩ là dự án này rất quan trọng.
+        - Tôi nghĩ rằng dự án này rất quan trọng.
+        - Mình nghĩ là dự án rất quan trọng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi nghĩ là dự án không quan trọng.
+        feedback_vi: "Câu không có nicht: dự án rất quan trọng (sehr wichtig)."
+        error_tag: negation_added
+    explanation:
+      vi: "glauben, dass … = nghĩ là, tin rằng; das Projekt = dự án; wichtig = quan trọng. Ở đây das là mạo từ, dass là liên từ."
+    display_answer: Tôi nghĩ là dự án rất quan trọng.

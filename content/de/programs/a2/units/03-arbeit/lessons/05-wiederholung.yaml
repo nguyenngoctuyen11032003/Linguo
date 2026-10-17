@@ -1,0 +1,410 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u03-wiederholung
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập – tin tuyển dụng và e-mail xin thực tập (Wiederholung)
+objectives:
+  - vi: Đọc một tin tuyển dụng thực tập ngắn và tìm thông tin chính (thời gian, nhiệm vụ, yêu cầu, cách nộp hồ sơ).
+  - vi: Viết e-mail trang trọng khoảng 50 từ hỏi về chỗ thực tập theo 3 ý (lý do, khả năng của mình, câu hỏi).
+  - vi: Nói về công việc mơ ước bằng weil, dass và werden.
+  - vi: Ôn câu phụ với weil/dass, denn, câu phụ đứng đầu, động từ + Dativ và werden.
+estimated_minutes: 22
+skills: [reading, writing, speaking]
+prerequisites: [de:lesson:a2u03-bewerbung]
+items:
+  - item: de:item:a2u03-g-nebensatz-verbletzt
+    role: reuse
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u03-g-denn
+    role: reuse
+  - item: de:item:a2u03-g-dass
+    role: reuse
+  - item: de:item:a2u03-g-nebensatz-vorne
+    role: reuse
+  - item: de:item:a2u03-g-dativ-verben
+    role: reuse
+  - item: de:item:a2u03-g-werden-vollverb
+    role: reuse
+  - item: de:item:a2u03-stelle
+    role: reuse
+  - item: de:item:a2u03-arbeitszeit
+    role: reuse
+  - item: de:item:a2u03-ueberstunde
+    role: reuse
+  - item: de:item:a2u03-chef
+    role: reuse
+  - item: de:item:a2u03-team
+    role: reuse
+  - item: de:item:a2u03-aufgabe
+    role: reuse
+  - item: de:item:a2u03-kreativ
+    role: reuse
+  - item: de:item:a2u03-helfen
+    role: reuse
+  - item: de:item:a2u03-zurueckrufen
+    role: reuse
+  - item: de:item:a2u03-bewerbung
+    role: reuse
+  - item: de:item:a2u03-praktikum
+    role: reuse
+  - item: de:item:a2u03-zuverlaessig
+    role: reuse
+  - item: de:item:a2u03-flexibel
+    role: reuse
+  - item: de:item:a2u03-pflegefachfrau
+    role: reuse
+  - item: de:item:a1u02-koch
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu một tin tuyển thực tập ngắn và tự viết một e-mail trang trọng để hỏi về chỗ thực tập.
+  - type: explain
+    text:
+      vi: "Tin tuyển dụng tiếng Đức thường có các phần: ai đang tìm người (… sucht …), nhiệm vụ (Ihre Aufgaben), yêu cầu (Sie sind …, Sie sprechen …), giờ làm và cách nộp hồ sơ. Khi đọc, hãy tìm đúng những phần này trước."
+  - type: explain
+    text:
+      vi: "E-mail trang trọng: mở đầu Sehr geehrte Frau … / Sehr geehrter Herr …, (sau dấu phẩy, dòng sau viết thường), kết thúc Mit freundlichen Grüßen + tên. Luôn dùng Sie, Ihnen, Ihr viết hoa. Học các câu chào này như cụm cố định."
+  - type: explain
+    text:
+      vi: "Bài viết kiểu Goethe A2 thường cho 3 ý; mỗi ý viết 1–2 câu. Ví dụ: (1) vì sao bạn viết (weil …), (2) bạn biết làm gì, (3) một câu hỏi (Wann …? Haben Sie …?)."
+  - type: explain
+    text:
+      vi: "Khi nói về công việc mơ ước, kết hợp những gì đã học: Ich möchte … werden, weil … / Ich finde, dass … / Weil …, möchte ich …"
+  - type: deep_explain
+    text:
+      vi: "Trong e-mail trang trọng, sau lời chào có dấu phẩy, nên câu đầu tiên bắt đầu bằng chữ thường (ich habe …), trừ khi từ đầu là danh từ hoặc Sie. Mit freundlichen Grüßen không có dấu phẩy phía sau. Câu chào cuối và Sehr geehrte… có đuôi tính từ mà bạn sẽ học kỹ sau; bây giờ hãy học thuộc nguyên cụm. Độ dài, số ý và cách chấm bài thi có thể thay đổi – hãy xem mô tả đề thi hiện hành của Goethe-Institut trước khi thi."
+  - type: example
+    target: "Sehr geehrte Frau Krüger, ich habe Ihre Anzeige gelesen. Ich möchte gern ein Praktikum in Ihrem Hotel machen, weil ich später an einer Rezeption arbeiten möchte. Ich spreche gut Deutsch und Englisch und bin zuverlässig und flexibel. Haben Sie im Juli noch einen Praktikumsplatz frei? Mit freundlichen Grüßen, Lan Nguyen"
+    target_lang: de
+    translation:
+      vi: "Kính gửi bà Krüger, tôi đã đọc tin đăng của bà. Tôi rất muốn thực tập ở khách sạn của bà, vì sau này tôi muốn làm việc ở quầy lễ tân. Tôi nói tốt tiếng Đức và tiếng Anh, đáng tin cậy và linh hoạt. Tháng Bảy bà còn chỗ thực tập trống không? Trân trọng, Lan Nguyen"
+    note:
+      vi: "E-mail trang trọng (Sie, Ihre, Ihrem viết hoa), đủ 3 ý: lý do (weil), khả năng, câu hỏi. Trong e-mail thật, lời chào và Mit freundlichen Grüßen đứng ở dòng riêng, không có dấu phẩy sau Grüßen."
+  - type: example
+    target: Ich möchte Koch werden, weil ich gern koche und sehr kreativ bin.
+    target_lang: de
+    translation:
+      vi: Tôi muốn trở thành đầu bếp vì tôi thích nấu ăn và rất sáng tạo.
+    note:
+      vi: "Nói về công việc mơ ước: möchte … werden + câu phụ weil với động từ ở cuối (koche, bin)."
+  - type: example
+    target: Weil die Arbeitszeiten so lang sind, finde ich, dass der Job zu anstrengend ist.
+    target_lang: de
+    translation:
+      vi: Vì giờ làm việc dài quá nên tôi thấy công việc này quá vất vả.
+    note:
+      vi: "Câu phụ đứng đầu → finde ich; sau đó thêm một câu phụ với dass."
+  - type: common_mistake
+    wrong: Mit freundliche Grüßen
+    right: Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "Cụm cố định cuối thư trang trọng: freundlichen (đuôi -en)."
+  - type: common_mistake
+    wrong: Weil ich gern mit Menschen arbeite, ich möchte Pflegefachfrau werden.
+    right: Weil ich gern mit Menschen arbeite, möchte ich Pflegefachfrau werden.
+    target_lang: de
+    note:
+      vi: "Câu phụ đứng đầu là vị trí 1, nên modal möchte đứng ngay sau dấu phẩy."
+  - type: common_mistake
+    wrong: Können Sie mir zurückrufen?
+    right: Können Sie mich zurückrufen?
+    target_lang: de
+    note:
+      vi: "zurückrufen đi với Akkusativ (mich); helfen, danken mới đi với Dativ (mir)."
+  - type: summary
+    points:
+      - vi: "Tin tuyển dụng: … sucht …, Ihre Aufgaben, Sie sind / Sie sprechen …, Arbeitszeit, Bewerbung an …"
+      - vi: "E-mail trang trọng: Sehr geehrte Frau … / Sehr geehrter Herr …, … Mit freundlichen Grüßen."
+      - vi: "3 ý: lý do (weil), khả năng (Ich spreche …, Ich bin …), câu hỏi (Haben Sie …?)."
+      - vi: "weil/dass: động từ cuối; denn: vị trí 0; câu phụ đứng đầu → động từ ngay sau dấu phẩy."
+      - vi: "helfen, danken, gehören … + Dativ; anrufen, zurückrufen + Akkusativ."
+      - vi: "werden + nghề (thường không mạo từ): Ich möchte Koch werden."
+exercises:
+  # ---------------- recognition: đọc tin tuyển dụng ----------------
+  - key: de:exercise:a2u03l5-mcq-anzeige-dauer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-praktikum
+    prompt:
+      stem: "Đọc tin: \"Praktikum im Hotel Sonnenhof: ab Juli, drei Monate. Ihre Aufgaben: Sie helfen an der Rezeption, beantworten E-Mails und nehmen Telefonate an. Sie sprechen gut Deutsch und ein bisschen Englisch und sind freundlich und zuverlässig. Arbeitszeit: 30 Stunden pro Woche, auch am Wochenende. Bitte schicken Sie Ihre Bewerbung per E-Mail an Frau Krüger.\" – Câu: \"Das Praktikum dauert sechs Monate.\""
+      stem_lang: vi
+      options:
+        - { id: r1a, text: Richtig, lang: de }
+        - { id: r1b, text: Falsch, lang: de }
+    answer:
+      correct_option_id: r1b
+    explanation:
+      vi: "Tin ghi \"ab Juli, drei Monate\" = từ tháng Bảy, ba tháng, không phải sáu tháng."
+    display_answer: Falsch
+
+  - key: de:exercise:a2u03l5-mcq-anzeige-wochenende
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-arbeitszeit
+    prompt:
+      stem: "Đọc lại tin tuyển thực tập ở Hotel Sonnenhof (\"Arbeitszeit: 30 Stunden pro Woche, auch am Wochenende.\"). Câu: \"Man muss manchmal auch samstags oder sonntags arbeiten.\""
+      stem_lang: vi
+      options:
+        - { id: r2a, text: Richtig, lang: de }
+        - { id: r2b, text: Falsch, lang: de }
+    answer:
+      correct_option_id: r2a
+    explanation:
+      vi: "auch am Wochenende = cả cuối tuần, tức là có lúc làm thứ Bảy hoặc Chủ nhật."
+    display_answer: Richtig
+
+  - key: de:exercise:a2u03l5-mcq-anzeige-post
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-bewerbung
+    prompt:
+      stem: "Đọc lại tin tuyển thực tập ở Hotel Sonnenhof (\"Bitte schicken Sie Ihre Bewerbung per E-Mail an Frau Krüger.\"). Câu: \"Man schickt die Bewerbung mit der Post.\""
+      stem_lang: vi
+      options:
+        - { id: r3a, text: Richtig, lang: de }
+        - { id: r3b, text: Falsch, lang: de }
+    answer:
+      correct_option_id: r3b
+    explanation:
+      vi: "per E-Mail = qua e-mail, không gửi qua bưu điện (mit der Post)."
+    display_answer: Falsch
+
+  - key: de:exercise:a2u03l5-mcq-anzeige-aufgabe
+    type: mcq
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-aufgabe
+    prompt:
+      stem: "Theo tin tuyển dụng ở Hotel Sonnenhof (\"Sie helfen an der Rezeption, beantworten E-Mails und nehmen Telefonate an.\"), việc nào KHÔNG thuộc nhiệm vụ của người thực tập?"
+      stem_lang: vi
+      options:
+        - { id: r4a, text: E-Mails beantworten, lang: de }
+        - { id: r4b, text: Telefonate annehmen, lang: de }
+        - { id: r4c, text: Gäste vom Bahnhof abholen, lang: de }
+        - { id: r4d, text: an der Rezeption helfen, lang: de }
+    answer:
+      correct_option_id: r4c
+    explanation:
+      vi: "Ihre Aufgaben chỉ gồm giúp ở quầy lễ tân, trả lời e-mail và nghe điện thoại; đón khách ở nhà ga (Gäste vom Bahnhof abholen) không có trong tin."
+    display_answer: Gäste vom Bahnhof abholen
+
+  # ---------------- listening ----------------
+  - key: de:exercise:a2u03l5-listen-mailbox-kruger
+    type: listen
+    stage: recall
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u03-zurueckrufen
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag, Frau Nguyen, hier ist Krüger vom Hotel Sonnenhof. Vielen Dank für Ihre Bewerbung. Können Sie am Dienstag um zehn Uhr zu einem Gespräch kommen? Bitte rufen Sie mich zurück. Auf Wiederhören!"
+      options:
+        - { id: h1k, text: "Bà Krüger mời Lan đến nói chuyện thứ Ba lúc 10 giờ và nhờ Lan gọi lại.", lang: vi }
+        - { id: h2k, text: "Bà Krüger mời Lan đến nói chuyện thứ Năm lúc 10 giờ và nhờ Lan gọi lại.", lang: vi }
+        - { id: h3k, text: "Bà Krüger mời Lan đến nói chuyện thứ Ba lúc 10 giờ; bà ấy sẽ gọi lại cho Lan.", lang: vi }
+        - { id: h4k, text: "Bà Krüger báo rằng khách sạn không còn chỗ thực tập.", lang: vi }
+    answer:
+      correct_option_id: h1k
+    explanation:
+      vi: "am Dienstag um zehn Uhr = thứ Ba lúc 10 giờ (Donnerstag mới là thứ Năm); Bitte rufen Sie mich zurück = xin hãy gọi lại cho tôi – người phải gọi lại là Lan."
+    display_answer: "Bà Krüger mời Lan đến nói chuyện thứ Ba lúc 10 giờ và nhờ Lan gọi lại."
+
+  - key: de:exercise:a2u03l5-listen-koch-ueberstunden
+    type: listen
+    stage: recall
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u03-kreativ
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich arbeite gern als Koch, weil ich kreativ sein kann. Aber die Arbeitszeiten sind lang, und ich mache oft Überstunden.
+      options:
+        - { id: c1k, text: "Anh ấy thích làm đầu bếp vì được sáng tạo, nhưng giờ làm dài và hay phải làm thêm giờ.", lang: vi }
+        - { id: c2k, text: "Anh ấy không thích làm đầu bếp vì không được sáng tạo.", lang: vi }
+        - { id: c3k, text: "Anh ấy thích làm đầu bếp vì giờ làm ngắn và không phải làm thêm giờ.", lang: vi }
+        - { id: c4k, text: "Anh ấy muốn trở thành đầu bếp vì lương cao.", lang: vi }
+    answer:
+      correct_option_id: c1k
+    explanation:
+      vi: "gern als Koch arbeiten = thích làm đầu bếp; weil ich kreativ sein kann = vì có thể sáng tạo; aber … lang, oft Überstunden = nhưng giờ làm dài, hay làm thêm giờ."
+    display_answer: "Anh ấy thích làm đầu bếp vì được sáng tạo, nhưng giờ làm dài và hay phải làm thêm giờ."
+
+  # ---------------- writing / recall ----------------
+  - key: de:exercise:a2u03l5-fill-gruss-formel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-bewerbung
+    prompt:
+      template: "{{b1}} geehrte Frau Krüger, … Mit {{b2}} Grüßen, Lan Nguyen"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [Sehr]
+        b2: [freundlichen]
+    known_wrong:
+      - answer: freundliche
+        feedback_vi: "Cụm cố định là Mit freundlichen Grüßen (đuôi -en)."
+        error_tag: adj_ending
+      - answer: Liebe
+        feedback_vi: "Liebe dùng cho thư thân mật (Liebe Anna). Thư trang trọng: Sehr geehrte Frau …"
+        error_tag: register_du_sie
+    explanation:
+      vi: "Mở đầu thư trang trọng gửi phụ nữ: Sehr geehrte Frau + họ; kết thúc: Mit freundlichen Grüßen."
+    display_answer: "Sehr geehrte Frau Krüger, … Mit freundlichen Grüßen, Lan Nguyen"
+
+  - key: de:exercise:a2u03l5-fill-ins-team-passe
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-dass
+    prompt:
+      template: "Ich glaube, dass ich gut in Ihr Team {{b1}}. (passen)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [passe]
+    known_wrong:
+      - answer: passt
+        feedback_vi: "Chủ ngữ của câu phụ là ich nên chia passe."
+        error_tag: verb_form
+      - answer: passen
+        feedback_vi: "Cần chia theo ich: passe."
+        error_tag: verb_form
+    explanation:
+      vi: "Sau dass, động từ chia đứng cuối; chủ ngữ ich → passe. in Ihr Team passen = hợp với nhóm của ông/bà."
+    display_answer: Ich glaube, dass ich gut in Ihr Team passe.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u03l5-wb-weil-menschen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-nebensatz-vorne
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Weil: \"Vì tôi thích làm việc với con người nên tôi muốn trở thành điều dưỡng.\""
+      tokens:
+        - { id: t-moechte, text: möchte }
+        - { id: t-menschen, text: Menschen }
+        - { id: t-ich-a, text: ich }
+        - { id: t-werden, text: werden }
+        - { id: t-weil, text: Weil }
+        - { id: t-gern, text: gern }
+        - { id: t-komma, text: "," }
+        - { id: t-arbeite, text: arbeite }
+        - { id: t-pflege, text: Pflegefachfrau }
+        - { id: t-mit, text: mit }
+        - { id: t-ich-b, text: ich }
+    answer:
+      orders:
+        - [t-weil, t-ich-a, t-gern, t-mit, t-menschen, t-arbeite, t-komma, t-moechte, t-ich-b, t-pflege, t-werden]
+        - [t-weil, t-ich-b, t-gern, t-mit, t-menschen, t-arbeite, t-komma, t-moechte, t-ich-a, t-pflege, t-werden]
+    explanation:
+      vi: "Câu phụ Weil ich gern mit Menschen arbeite (arbeite ở cuối) là vị trí 1; modal möchte đứng ngay sau dấu phẩy, rồi ich, nghề và werden ở cuối."
+    display_answer: Weil ich gern mit Menschen arbeite, möchte ich Pflegefachfrau werden.
+
+  - key: de:exercise:a2u03l5-wb-praktikumsplatz-frei
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-praktikum
+    prompt:
+      instruction: "Câu hỏi trong e-mail: \"Tháng Bảy ông/bà còn chỗ thực tập trống không?\" Sắp xếp thành câu."
+      tokens:
+        - { id: t-frei, text: frei }
+        - { id: t-juli, text: Juli }
+        - { id: t-haben, text: Haben }
+        - { id: t-platz, text: Praktikumsplatz }
+        - { id: t-noch, text: noch }
+        - { id: t-im, text: im }
+        - { id: t-sie, text: Sie }
+        - { id: t-einen, text: einen }
+    answer:
+      orders:
+        - [t-haben, t-sie, t-im, t-juli, t-noch, t-einen, t-platz, t-frei]
+    explanation:
+      vi: "Câu hỏi có/không: động từ Haben đứng đầu, rồi Sie; thời gian im Juli, noch, tân ngữ einen Praktikumsplatz (Akkusativ), frei ở cuối."
+    display_answer: Haben Sie im Juli noch einen Praktikumsplatz frei?
+
+  - key: de:exercise:a2u03l5-tr-koch-werden
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-werden-vollverb
+    prompt:
+      source_text: "Tôi tìm một chỗ thực tập vì tôi muốn trở thành đầu bếp. (dùng weil, möchte; chỗ thực tập = ein Praktikum)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich suche ein Praktikum, weil ich Koch werden möchte.
+        - Ich suche ein Praktikum, weil ich Köchin werden möchte.
+        - Weil ich Koch werden möchte, suche ich ein Praktikum.
+        - Weil ich Köchin werden möchte, suche ich ein Praktikum.
+        - Ich suche ein Praktikum, weil ich ein Koch werden möchte.
+        - Ich suche ein Praktikum, weil ich eine Köchin werden möchte.
+    known_wrong:
+      - answer: Ich suche ein Praktikum, weil ich möchte Koch werden.
+        feedback_vi: "Sau weil, modal möchte đứng cuối cùng: weil ich Koch werden möchte."
+        error_tag: verb_position
+      - answer: Ich suche ein Praktikum, weil ich Koch möchte werden.
+        feedback_vi: "Trong câu phụ, nguyên thể werden đứng trước, modal möchte đứng sau cùng."
+        error_tag: verb_position
+    explanation:
+      vi: "Câu chính Ich suche ein Praktikum, dấu phẩy, câu phụ weil ich Koch werden möchte: nghề thường không có mạo từ, werden rồi möchte ở cuối."
+    display_answer: Ich suche ein Praktikum, weil ich Koch werden möchte.
+
+  - key: de:exercise:a2u03l5-tr-chefin-hilft-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-helfen
+    prompt:
+      source_text: Meine Chefin hilft mir oft, weil ich noch neu bin.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sếp của tôi thường giúp tôi vì tôi còn mới.
+        - Sếp của tôi thường giúp tôi vì tôi vẫn còn mới.
+        - Sếp tôi thường giúp tôi vì tôi còn mới.
+        - Sếp tôi hay giúp tôi vì tôi còn mới.
+        - Sếp của tôi hay giúp tôi vì tôi còn mới.
+        - Sếp của tôi hay giúp đỡ tôi vì tôi còn mới.
+        - Sếp của tôi thường giúp đỡ tôi vì tôi vẫn còn mới.
+        - Chị sếp của tôi thường giúp tôi vì tôi còn mới.
+        - Sếp của tôi thường giúp tôi vì tôi là người mới.
+        - Sếp của tôi hay giúp tôi vì tôi mới vào làm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi thường giúp sếp của tôi vì tôi còn mới.
+        feedback_vi: "Chủ ngữ là meine Chefin (sếp), mir là người được giúp (Dativ): sếp giúp tôi."
+        error_tag: dativ_role
+    explanation:
+      vi: "helfen + Dativ: meine Chefin hilft mir = sếp giúp tôi; weil ich noch neu bin = vì tôi còn mới."
+    display_answer: Sếp của tôi thường giúp tôi vì tôi còn mới.

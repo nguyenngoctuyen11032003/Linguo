@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u03-bewerbung
+order_index: 4
+level: a2
+title:
+  vi: Xin việc – werden (Ich möchte Pflegefachfrau werden.)
+objectives:
+  - vi: Nói mục tiêu nghề nghiệp bằng werden (Ich möchte Ingenieurin werden. Mein Bruder wird Koch.).
+  - vi: Chia werden ở hiện tại (ich werde, du wirst, er wird …) và dùng Perfekt ist geworden.
+  - vi: Nói điểm mạnh, điểm yếu của mình trong một buổi phỏng vấn ngắn.
+  - vi: Nghe một đoạn phỏng vấn xin việc ngắn và bắt thông tin chính.
+estimated_minutes: 17
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a2u03-am-telefon]
+items:
+  - item: de:item:a2u03-g-werden-vollverb
+  - item: de:item:a2u03-werden
+  - item: de:item:a2u03-bewerbung
+  - item: de:item:a2u03-vorstellungsgespraech
+  - item: de:item:a2u03-praktikum
+  - item: de:item:a2u03-staerke
+  - item: de:item:a2u03-schwaeche
+  - item: de:item:a2u03-zuverlaessig
+  - item: de:item:a2u03-flexibel
+  - item: de:item:a2u03-kenntnisse
+  - item: de:item:a2u03-bewerber
+  - item: de:item:a2u03-anschreiben
+  - item: de:item:a2u03-pflegefachfrau
+  - item: de:item:a2u03-teamfaehig
+  - item: de:item:a2u03-fleissig
+  - item: de:item:a2u03-geduldig
+  - item: de:item:a1u02-g-beruf-ohne-artikel
+    role: reuse
+  - item: de:item:a1u02-g-feminin-in
+    role: reuse
+  - item: de:item:a1u02-arzt
+    role: reuse
+  - item: de:item:a1u02-ingenieur
+    role: reuse
+  - item: de:item:a1u02-koch
+    role: reuse
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u03-g-dass
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mình muốn làm nghề gì, điểm mạnh – điểm yếu của mình, và hiểu các câu hỏi cơ bản trong một buổi phỏng vấn xin việc.
+  - type: explain
+    text:
+      vi: "werden = trở thành, trở nên. Chia bất quy tắc: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden. Chú ý du wirst không có d."
+  - type: explain
+    text:
+      vi: "Như với sein, khi nói nghề sau werden người ta thường không dùng mạo từ: Ich werde Ingenieur. Sie wird Ärztin (nữ thêm -in). Có tính từ thì cần mạo từ: Er wird ein guter Koch."
+  - type: explain
+    text:
+      vi: "werden cũng đi với tính từ để nói sự thay đổi: Es wird kalt. Ich werde müde. Perfekt dùng sein: Er ist Koch geworden."
+  - type: explain
+    text:
+      vi: "Đừng nhầm werden với wollen: Ich will Arzt werden = Tôi muốn trở thành bác sĩ (mong muốn). Ich werde Arzt = Tôi (sẽ) trở thành bác sĩ (sự việc chắc chắn, thường đang học hoặc sắp xong)."
+  - type: deep_explain
+    text:
+      vi: "Hồ sơ xin việc ở Đức (die Bewerbung) thường gồm thư xin việc (das Anschreiben), sơ yếu lý lịch (der Lebenslauf) và bằng cấp, giấy nhận xét (die Zeugnisse); yêu cầu cụ thể có thể khác nhau tuỳ nơi. Trong buổi phỏng vấn (das Vorstellungsgespräch), người phỏng vấn dùng Sie và hay hỏi: Was sind Ihre Stärken? Was sind Ihre Schwächen? Warum möchten Sie bei uns arbeiten? Khi nói điểm yếu, người ta thường chọn một điểm nhỏ và nói kèm cách khắc phục. Sau này bạn sẽ gặp werden + nguyên thể (thì tương lai) và werden + Partizip (bị động); bài này chỉ dùng werden = trở thành."
+  - type: example
+    target: Ich möchte Pflegefachfrau werden, weil ich gern Menschen helfe.
+    target_lang: de
+    translation:
+      vi: Tôi muốn trở thành điều dưỡng vì tôi thích giúp đỡ mọi người.
+    note:
+      vi: "möchte + nguyên thể werden ở cuối câu chính; nghề không có mạo từ; helfen + Dativ (Menschen ở Dativ số nhiều)."
+  - type: example
+    target: "Studierst du Medizin? – Ja, ich werde Ärztin."
+    target_lang: de
+    translation:
+      vi: "Bạn học y à? – Ừ, mình sẽ trở thành bác sĩ."
+    note:
+      vi: "Hai người bạn dùng du. Nghề nữ thêm -in (Arzt → Ärztin), không có mạo từ."
+  - type: example
+    target: Nach dem Praktikum ist mein Bruder Koch geworden.
+    target_lang: de
+    translation:
+      vi: Sau kỳ thực tập, anh trai tôi đã trở thành đầu bếp.
+    note:
+      vi: "Perfekt của werden dùng sein: ist … geworden."
+  - type: example
+    target: "Was sind Ihre Stärken? – Ich bin zuverlässig, flexibel und teamfähig."
+    target_lang: de
+    translation:
+      vi: "Điểm mạnh của anh/chị là gì? – Tôi đáng tin cậy, linh hoạt và làm việc nhóm tốt."
+    note:
+      vi: "Người phỏng vấn dùng Sie → Ihre. Tính từ sau sein không có đuôi."
+  - type: example
+    target: Im Winter wird es schon um vier Uhr dunkel.
+    target_lang: de
+    translation:
+      vi: Mùa đông mới bốn giờ chiều trời đã tối.
+    note:
+      vi: "werden + tính từ: trở nên. Chủ ngữ es → wird."
+  - type: common_mistake
+    wrong: Er hat Koch geworden.
+    right: Er ist Koch geworden.
+    target_lang: de
+    note:
+      vi: "werden là sự thay đổi trạng thái nên Perfekt dùng sein: ist geworden."
+  - type: common_mistake
+    wrong: Du werdest Ingenieurin.
+    right: Du wirst Ingenieurin.
+    target_lang: de
+    note:
+      vi: "werden bất quy tắc: du wirst, er wird."
+  - type: common_mistake
+    wrong: Er werdet Koch.
+    right: Er wird Koch.
+    target_lang: de
+    note:
+      vi: "werdet là ngôi ihr. Với er/sie/es: wird."
+  - type: summary
+    points:
+      - vi: "werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden."
+      - vi: "werden + nghề (thường không mạo từ): Ich werde Ingenieurin."
+      - vi: "werden + tính từ: Es wird kalt."
+      - vi: "Perfekt: ist geworden."
+      - vi: "will/möchte … werden = muốn trở thành."
+      - vi: "Phỏng vấn: Stärken/Schwächen, zuverlässig, flexibel, teamfähig, fleißig, geduldig, Kenntnisse."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u03l4-mcq-wird-ingenieur
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u03-g-werden-vollverb
+    prompt:
+      stem: "Chọn dạng đúng: Mein Bruder ___ Ingenieur."
+      stem_lang: vi
+      options:
+        - { id: w1r, text: wird, lang: de }
+        - { id: w2r, text: wirst, lang: de }
+        - { id: w3r, text: werdet, lang: de }
+        - { id: w4r, text: werde, lang: de }
+    answer:
+      correct_option_id: w1r
+    explanation:
+      vi: "mein Bruder = er → wird. wirst là ngôi du, werdet là ngôi ihr, werde là ngôi ich."
+    display_answer: wird
+
+  - key: de:exercise:a2u03l4-listen-staerken
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-staerke
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Was sind Ihre Stärken? – Ich bin zuverlässig und arbeite gern im Team."
+      options:
+        - { id: l1s, text: "Ứng viên nói mình đáng tin cậy và thích làm việc nhóm.", lang: vi }
+        - { id: l2s, text: "Ứng viên nói mình linh hoạt và thích làm việc một mình.", lang: vi }
+        - { id: l3s, text: "Ứng viên nói điểm yếu của mình là không đúng giờ.", lang: vi }
+        - { id: l4s, text: "Ứng viên nói mình chăm chỉ và có nhiều kinh nghiệm.", lang: vi }
+    answer:
+      correct_option_id: l1s
+    explanation:
+      vi: "Stärken = điểm mạnh; zuverlässig = đáng tin cậy; gern im Team arbeiten = thích làm việc nhóm."
+    display_answer: "Ứng viên nói mình đáng tin cậy và thích làm việc nhóm."
+
+  - key: de:exercise:a2u03l4-listen-pflegefachfrau
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-pflegefachfrau
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich möchte Pflegefachfrau werden, weil ich gern Menschen helfe.
+      options:
+        - { id: k1p, text: "Cô ấy muốn trở thành điều dưỡng vì cô ấy thích giúp đỡ mọi người.", lang: vi }
+        - { id: k2p, text: "Cô ấy là điều dưỡng và thích giúp đỡ mọi người.", lang: vi }
+        - { id: k3p, text: "Cô ấy muốn trở thành bác sĩ vì cô ấy thích giúp đỡ mọi người.", lang: vi }
+        - { id: k4p, text: "Cô ấy muốn trở thành điều dưỡng vì lương cao.", lang: vi }
+    answer:
+      correct_option_id: k1p
+    explanation:
+      vi: "möchte … werden = muốn trở thành (chưa phải là điều dưỡng); Pflegefachfrau = điều dưỡng; weil ich gern Menschen helfe = vì tôi thích giúp đỡ mọi người."
+    display_answer: "Cô ấy muốn trở thành điều dưỡng vì cô ấy thích giúp đỡ mọi người."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u03l4-fill-wirst
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-werden
+    prompt:
+      template: "Du {{b1}} bestimmt eine gute Ärztin! (werden)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [wirst]
+    known_wrong:
+      - answer: wirdst
+        feedback_vi: "werden bất quy tắc: du wirst (không có d)."
+        error_tag: verb_form
+      - answer: werdest
+        feedback_vi: "werden bất quy tắc: du wirst."
+        error_tag: verb_form
+      - answer: wird
+        feedback_vi: "wird là ngôi er/sie/es. Với du: wirst."
+        error_tag: verb_form
+    explanation:
+      vi: "werden ở ngôi du: du wirst. Có tính từ gut nên dùng eine gute Ärztin."
+    display_answer: Du wirst bestimmt eine gute Ärztin!
+
+  - key: de:exercise:a2u03l4-fill-ist-geworden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-werden
+    prompt:
+      template: "Nach dem Praktikum {{b1}} mein Bruder Koch {{b2}}. (werden – Perfekt)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [ist]
+        b2: [geworden]
+    known_wrong:
+      - answer: hat
+        feedback_vi: "werden là sự thay đổi trạng thái nên Perfekt dùng sein: ist geworden."
+        error_tag: aux_verb
+      - answer: gewerdet
+        feedback_vi: "Partizip II của werden là geworden."
+        error_tag: verb_form
+      - answer: gewordet
+        feedback_vi: "Partizip II của werden là geworden."
+        error_tag: verb_form
+    explanation:
+      vi: "Perfekt của werden: sein + geworden. Câu bắt đầu bằng Nach dem Praktikum nên ist ở vị trí 2, geworden ở cuối."
+    display_answer: Nach dem Praktikum ist mein Bruder Koch geworden.
+
+  - key: de:exercise:a2u03l4-tr-ingenieur-werden
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-werden-vollverb
+    prompt:
+      source_text: "Tôi muốn trở thành kỹ sư. (dùng möchte; bạn tự chọn dạng nam hoặc nữ)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte Ingenieur werden.
+        - Ich möchte Ingenieurin werden.
+        - Ich möchte ein Ingenieur werden.
+        - Ich möchte eine Ingenieurin werden.
+    known_wrong:
+      - answer: Ich möchte werden Ingenieur.
+        feedback_vi: "Nguyên thể werden đứng cuối câu: Ich möchte Ingenieur werden."
+        error_tag: verb_position
+      - answer: Ich werde Ingenieur.
+        feedback_vi: "Câu này nghĩa là \"Tôi sẽ trở thành kỹ sư\". Muốn nói \"muốn\" thì dùng möchte … werden."
+        error_tag: werden_wollen
+    explanation:
+      vi: "möchte ở vị trí 2, nguyên thể werden ở cuối. Khi nói nghề, cách tự nhiên nhất là không có mạo từ (Ingenieur / Ingenieurin); ein Ingenieur cũng đúng ngữ pháp nhưng ít dùng hơn."
+    display_answer: Ich möchte Ingenieur werden.
+
+  - key: de:exercise:a2u03l4-listen-praktikum-bis-freitag
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u03-kenntnisse
+    prompt:
+      audio_asset_id: null
+      fallback_text: Für das Praktikum brauchen Sie Computerkenntnisse. Schicken Sie uns Ihre Bewerbung bitte bis Freitag.
+      options:
+        - { id: j1f, text: "Thực tập cần biết dùng máy tính; gửi hồ sơ trước hoặc trong thứ Sáu.", lang: vi }
+        - { id: j2f, text: "Thực tập cần biết tiếng Anh; gửi hồ sơ trước hoặc trong thứ Sáu.", lang: vi }
+        - { id: j3f, text: "Thực tập cần biết dùng máy tính; buổi phỏng vấn vào thứ Sáu.", lang: vi }
+        - { id: j4f, text: "Thực tập không cần kinh nghiệm; gửi hồ sơ từ thứ Sáu.", lang: vi }
+    answer:
+      correct_option_id: j1f
+    explanation:
+      vi: "Computerkenntnisse = kiến thức về máy tính; Schicken Sie uns Ihre Bewerbung bis Freitag = gửi hồ sơ cho chúng tôi muộn nhất là thứ Sáu (bis = đến hạn)."
+    display_answer: "Thực tập cần biết dùng máy tính; gửi hồ sơ trước hoặc trong thứ Sáu."
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u03l4-wb-deutsch-pflegefachfrau
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi học tiếng Đức vì tôi muốn trở thành điều dưỡng ở Đức.\""
+      tokens:
+        - { id: t-werden, text: werden }
+        - { id: t-deutsch, text: Deutsch }
+        - { id: t-weil, text: weil }
+        - { id: t-ich-gross, text: Ich }
+        - { id: t-in, text: in }
+        - { id: t-moechte, text: möchte }
+        - { id: t-komma, text: "," }
+        - { id: t-pflege, text: Pflegefachfrau }
+        - { id: t-lerne, text: lerne }
+        - { id: t-deutschland, text: Deutschland }
+        - { id: t-ich-klein, text: ich }
+    answer:
+      orders:
+        - [t-ich-gross, t-lerne, t-deutsch, t-komma, t-weil, t-ich-klein, t-in, t-deutschland, t-pflege, t-werden, t-moechte]
+    explanation:
+      vi: "Trong câu phụ với weil: nguyên thể werden rồi modal möchte ở cuối cùng; nghề Pflegefachfrau đứng ngay trước werden, không có mạo từ."
+    display_answer: Ich lerne Deutsch, weil ich in Deutschland Pflegefachfrau werden möchte.
+
+  - key: de:exercise:a2u03l4-mcq-meine-schwaeche
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-schwaeche
+    prompt:
+      stem: "Người phỏng vấn hỏi: \"Was sind Ihre Schwächen?\" Câu trả lời nào đúng ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: u1s, text: "Meine Schwäche ist, dass ich manchmal zu schnell arbeite.", lang: de }
+        - { id: u2s, text: "Meine Schwäche ist, dass ich arbeite manchmal zu schnell.", lang: de }
+        - { id: u3s, text: "Mein Schwäche ist, dass ich manchmal zu schnell arbeite.", lang: de }
+        - { id: u4s, text: "Meine Schwäche ist, das ich manchmal zu schnell arbeite.", lang: de }
+    answer:
+      correct_option_id: u1s
+    explanation:
+      vi: "die Schwäche là giống cái nên meine; sau dass động từ arbeite đứng cuối; liên từ viết dass (hai chữ s)."
+    display_answer: "Meine Schwäche ist, dass ich manchmal zu schnell arbeite."
+
+  - key: de:exercise:a2u03l4-tr-koch-geworden-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-praktikum
+    prompt:
+      source_text: Nach dem Praktikum ist er Koch geworden.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sau kỳ thực tập, anh ấy đã trở thành đầu bếp.
+        - Sau kỳ thực tập anh ấy đã trở thành đầu bếp.
+        - Sau kỳ thực tập, anh ấy trở thành đầu bếp.
+        - Sau khi thực tập, anh ấy đã trở thành đầu bếp.
+        - Sau khi thực tập, anh ấy trở thành đầu bếp.
+        - Sau đợt thực tập, anh ấy đã trở thành đầu bếp.
+        - Sau kỳ thực tập, anh ấy đã thành đầu bếp.
+        - Sau kỳ thực tập, ông ấy đã trở thành đầu bếp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau kỳ thực tập, anh ấy muốn trở thành đầu bếp.
+        feedback_vi: "geworden là Perfekt của werden: đã trở thành, không phải \"muốn\"."
+        error_tag: werden_wollen
+    explanation:
+      vi: "ist … geworden = đã trở thành (Perfekt của werden với sein); nach dem Praktikum = sau kỳ thực tập; Koch = đầu bếp."
+    display_answer: Sau kỳ thực tập, anh ấy đã trở thành đầu bếp.

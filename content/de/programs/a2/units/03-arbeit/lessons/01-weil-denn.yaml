@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u03-weil-denn
+order_index: 1
+level: a2
+title:
+  vi: Vì tôi… – câu phụ với weil, denn (Weil ich früh anfangen muss)
+objectives:
+  - vi: Giải thích lý do bằng weil (thích hay không thích công việc, đến muộn, làm bán thời gian…).
+  - vi: Đặt động từ chia ở cuối câu phụ, kể cả với động từ tách, modal và Perfekt.
+  - vi: Dùng denn ở vị trí 0 và phân biệt denn với weil.
+  - vi: Nói về điều kiện làm việc (giờ làm, lương, toàn thời gian/bán thời gian, tan làm).
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u02-wiederholung]
+items:
+  - item: de:item:a2u03-g-nebensatz-verbletzt
+  - item: de:item:a2u03-g-weil
+  - item: de:item:a2u03-g-denn
+  - item: de:item:a2u03-arbeitsplatz
+  - item: de:item:a2u03-stelle
+  - item: de:item:a2u03-job
+  - item: de:item:a2u03-verdienen
+  - item: de:item:a2u03-gehalt
+  - item: de:item:a2u03-chef
+  - item: de:item:a2u03-arbeitszeit
+  - item: de:item:a2u03-vollzeit
+  - item: de:item:a2u03-teilzeit
+  - item: de:item:a2u03-feierabend
+  - item: de:item:a2u03-ueberstunde
+  - item: de:item:a2u03-schicht
+  - item: de:item:a2u03-arbeitstag
+  - item: de:item:a1u03-g-und-aber-oder
+    role: reuse
+  - item: de:item:a1u04-g-satzklammer
+    role: reuse
+  - item: de:item:a1u04-g-modal-satzklammer
+    role: reuse
+  - item: de:item:a1u04-aufstehen
+    role: reuse
+  - item: de:item:a1u04-anfangen
+    role: reuse
+  - item: de:item:a1u01-kollege
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được vì sao mình thích hay không thích công việc, vì sao đến muộn hay về sớm – bằng weil và denn.
+  - type: explain
+    text:
+      vi: "weil = vì. Khác tiếng Việt, sau weil là câu phụ (Nebensatz): động từ chia chạy xuống cuối câu. Ich arbeite gern hier → …, weil ich gern hier arbeite."
+  - type: explain
+    text:
+      vi: "Bạn đã biết khung câu: Ich muss früh anfangen. Trong câu phụ, phần được chia (muss, habe) đứng sau cùng: …, weil ich früh anfangen muss; …, weil ich lange gearbeitet habe. Động từ tách viết liền lại: Ich stehe früh auf → …, weil ich früh aufstehe."
+  - type: explain
+    text:
+      vi: "Khi weil đứng giữa câu, trước nó phải có dấu phẩy. Câu hỏi Warum? có thể trả lời chỉ bằng câu phụ: Warum bist du müde? – Weil ich Überstunden gemacht habe."
+  - type: explain
+    text:
+      vi: "denn cũng là \"vì\", nhưng giống und, aber, oder: đứng ở vị trí 0 và không đổi gì, nên sau denn vẫn là trật tự câu chính: …, denn ich muss früh anfangen. Vế có denn luôn đứng sau câu chính và không dùng một mình để trả lời Warum?."
+  - type: explain
+    text:
+      vi: "Trong khẩu ngữ, đôi khi bạn sẽ nghe người Đức nói weil + động từ ở vị trí 2. Khi viết và khi thi, hãy luôn để động từ ở cuối sau weil."
+  - type: deep_explain
+    text:
+      vi: "Có thể hình dung câu phụ cũng là một khung: liên từ (weil, dass) đứng ở chỗ của động từ chia, còn toàn bộ động từ dồn về cuối, phần được chia đứng sau cùng (arbeiten muss, gearbeitet habe, aufstehe). Vì vậy câu phụ với Perfekt + modal sau này cũng theo đúng quy tắc đó. Từ Feierabend (giờ tan làm) cho thấy nhiều người Đức tách khá rõ giờ làm và giờ nghỉ; ở nhiều chỗ làm, đồng nghiệp chào nhau \"Schönen Feierabend!\" khi ra về. Trong hội thoại, \"Warum …? – Weil …\" rất tự nhiên; còn denn thường nghe hơi \"viết\" hơn một chút."
+  - type: example
+    target: Ich mag meinen Job, weil die Arbeitszeiten gut sind.
+    target_lang: de
+    translation:
+      vi: Tôi thích công việc của mình vì giờ làm việc tốt.
+    note:
+      vi: "Câu phụ với weil: động từ sind đứng cuối; trước weil có dấu phẩy."
+  - type: example
+    target: "Warum kommst du so spät? – Weil ich Überstunden machen musste."
+    target_lang: de
+    translation:
+      vi: "Sao bạn đến muộn thế? – Vì mình phải làm thêm giờ."
+    note:
+      vi: "Hai đồng nghiệp thân dùng du. Modal musste (Präteritum) là phần được chia nên đứng sau cùng, sau machen."
+  - type: example
+    target: Ich stehe um fünf Uhr auf, weil mein Arbeitstag um sechs Uhr anfängt.
+    target_lang: de
+    translation:
+      vi: Tôi dậy lúc năm giờ vì ngày làm việc của tôi bắt đầu lúc sáu giờ.
+    note:
+      vi: "Trong câu chính, auf tách ra cuối; trong câu phụ, anfängt viết liền và đứng cuối."
+  - type: example
+    target: Herr Nam arbeitet in Teilzeit, denn er studiert noch.
+    target_lang: de
+    translation:
+      vi: Anh Nam làm bán thời gian vì anh ấy còn đang học đại học.
+    note:
+      vi: "denn ở vị trí 0, sau đó là trật tự câu chính: er studiert noch (động từ ở vị trí 2)."
+  - type: example
+    target: Ich bin heute sehr müde, denn ich habe zehn Stunden gearbeitet.
+    target_lang: de
+    translation:
+      vi: Hôm nay tôi rất mệt vì tôi đã làm mười tiếng.
+    note:
+      vi: "Sau denn: habe ở vị trí 2, gearbeitet ở cuối – đúng như câu chính. Với weil sẽ là: …, weil ich zehn Stunden gearbeitet habe."
+  - type: common_mistake
+    wrong: Ich komme nicht, weil ich muss heute arbeiten.
+    right: Ich komme nicht, weil ich heute arbeiten muss.
+    target_lang: de
+    note:
+      vi: "Lỗi phổ biến nhất: sau weil, động từ chia (muss) phải đứng cuối câu."
+  - type: common_mistake
+    wrong: Ich bin müde, denn ich heute viel gearbeitet habe.
+    right: Ich bin müde, denn ich habe heute viel gearbeitet.
+    target_lang: de
+    note:
+      vi: "denn không làm động từ chạy xuống cuối; sau denn vẫn là trật tự câu chính."
+  - type: common_mistake
+    wrong: Ich bin müde weil ich früh aufstehe.
+    right: Ich bin müde, weil ich früh aufstehe.
+    target_lang: de
+    note:
+      vi: "Trước câu phụ bắt buộc có dấu phẩy, khác tiếng Việt."
+  - type: summary
+    points:
+      - vi: "weil + câu phụ: động từ chia đứng cuối (…, weil ich arbeiten muss)."
+      - vi: "Động từ tách viết liền trong câu phụ: weil ich früh aufstehe."
+      - vi: "Perfekt/modal: phần được chia đứng sau cùng (gearbeitet habe, machen musste)."
+      - vi: "Dấu phẩy ngăn câu chính và câu phụ: …, weil …"
+      - vi: "denn = vì, ở vị trí 0, sau đó trật tự câu chính (…, denn ich bin krank)."
+      - vi: "Từ vựng: die Stelle, der Job, das Gehalt, verdienen, die Arbeitszeit, Vollzeit/Teilzeit, Feierabend machen, Überstunden machen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u03l1-mcq-weil-muss
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u03-g-nebensatz-verbletzt
+    prompt:
+      stem: "Chọn câu đúng (văn viết): \"Tôi không đến được vì tôi phải làm việc.\""
+      stem_lang: vi
+      options:
+        - { id: k4p, text: "Ich kann nicht kommen, weil ich muss arbeiten.", lang: de }
+        - { id: w7a, text: "Ich kann nicht kommen, weil ich arbeiten muss.", lang: de }
+        - { id: d2m, text: "Ich kann nicht kommen, weil muss ich arbeiten.", lang: de }
+        - { id: r9t, text: "Ich kann nicht kommen, weil arbeiten ich muss.", lang: de }
+    answer:
+      correct_option_id: w7a
+    explanation:
+      vi: "Sau weil là câu phụ: chủ ngữ ich đứng ngay sau weil, động từ chia muss đứng cuối cùng, sau nguyên thể arbeiten."
+    display_answer: "Ich kann nicht kommen, weil ich arbeiten muss."
+
+  - key: de:exercise:a2u03l1-mcq-denn-weil
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-g-denn
+    prompt:
+      stem: "Chọn từ đúng: Ich mache heute früh Feierabend, ___ ich habe einen Termin beim Arzt."
+      stem_lang: vi
+      options:
+        - { id: a5n, text: denn, lang: de }
+        - { id: b8c, text: weil, lang: de }
+        - { id: c3x, text: dass, lang: de }
+    answer:
+      correct_option_id: a5n
+    explanation:
+      vi: "Vế sau có trật tự câu chính (habe ở vị trí 2), nên chỉ denn đúng. weil và dass cần động từ ở cuối: …, weil ich einen Termin beim Arzt habe."
+    display_answer: denn
+
+  - key: de:exercise:a2u03l1-fill-aufstehe
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-g-nebensatz-verbletzt
+    prompt:
+      template: "Ich bin müde, weil ich jeden Tag um fünf Uhr {{b1}}. (aufstehen)"
+      blanks:
+        - { id: b1, width_hint: 10 }
+      hint_levels:
+        - "Nghĩa: Tôi mệt vì ngày nào tôi cũng dậy lúc năm giờ."
+        - "Gợi ý: trong câu phụ, động từ tách viết liền lại và đứng cuối: auf… (ngôi ich)."
+    answer:
+      blanks:
+        b1: [aufstehe]
+    known_wrong:
+      - answer: stehe auf
+        feedback_vi: "Trong câu phụ, động từ tách không tách ra nữa: aufstehe (viết liền, đứng cuối)."
+        error_tag: separable_prefix
+      - answer: aufstehen
+        feedback_vi: "Cần chia theo ich: aufstehe."
+        error_tag: verb_form
+    explanation:
+      vi: "Câu phụ với weil đẩy động từ chia xuống cuối; động từ tách aufstehen khi ở cuối câu phụ được viết liền: weil ich … aufstehe."
+    display_answer: Ich bin müde, weil ich jeden Tag um fünf Uhr aufstehe.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u03l1-fill-moechte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-verdienen
+    prompt:
+      template: "Lan sucht eine neue Stelle, weil sie mehr Geld verdienen {{b1}}. (möchten)"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [möchte]
+    known_wrong:
+      - answer: möchten
+        feedback_vi: "Chủ ngữ sie (cô ấy, số ít) nên chia möchte."
+        error_tag: verb_form
+      - answer: möchtest
+        feedback_vi: "möchtest là ngôi du; với sie (cô ấy) là möchte."
+        error_tag: verb_form
+    explanation:
+      vi: "Modal möchte là phần được chia nên đứng sau cùng trong câu phụ, sau nguyên thể verdienen. sie (cô ấy) → möchte."
+    display_answer: Lan sucht eine neue Stelle, weil sie mehr Geld verdienen möchte.
+
+  - key: de:exercise:a2u03l1-fill-gearbeitet-habe
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-g-nebensatz-verbletzt
+    prompt:
+      template: "Ich bin heute sehr müde, weil ich gestern zehn Stunden gearbeitet {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [habe]
+    known_wrong:
+      - answer: bin
+        feedback_vi: "arbeiten tạo Perfekt với haben: ich habe gearbeitet."
+        error_tag: aux_verb
+      - answer: hat
+        feedback_vi: "Chủ ngữ là ich nên dùng habe."
+        error_tag: verb_form
+    explanation:
+      vi: "Perfekt trong câu phụ: Partizip gearbeitet rồi đến trợ động từ habe ở cuối cùng. arbeiten đi với haben."
+    display_answer: Ich bin heute sehr müde, weil ich gestern zehn Stunden gearbeitet habe.
+
+  - key: de:exercise:a2u03l1-tr-kollegen-nett
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      source_text: "Tôi thích công việc của tôi vì đồng nghiệp rất dễ mến. (công việc = die Arbeit; dùng weil)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich mag meine Arbeit, weil meine Kollegen sehr nett sind.
+        - Ich mag meine Arbeit, weil die Kollegen sehr nett sind.
+        - Meine Arbeit gefällt mir, weil meine Kollegen sehr nett sind.
+        - Meine Arbeit gefällt mir, weil die Kollegen sehr nett sind.
+        - Mir gefällt meine Arbeit, weil meine Kollegen sehr nett sind.
+        - Mir gefällt meine Arbeit, weil die Kollegen sehr nett sind.
+        - Weil meine Kollegen sehr nett sind, mag ich meine Arbeit.
+        - Weil die Kollegen sehr nett sind, mag ich meine Arbeit.
+        - Weil meine Kollegen sehr nett sind, gefällt mir meine Arbeit.
+    known_wrong:
+      - answer: Ich mag meine Arbeit, weil meine Kollegen sind sehr nett.
+        feedback_vi: "Sau weil, động từ sind phải đứng cuối: weil meine Kollegen sehr nett sind."
+        error_tag: verb_position
+      - answer: Ich mag meine Arbeit, weil die Kollegen sind sehr nett.
+        feedback_vi: "Sau weil, động từ sind phải đứng cuối: weil die Kollegen sehr nett sind."
+        error_tag: verb_position
+    explanation:
+      vi: "Câu chính Ich mag meine Arbeit (hoặc Meine Arbeit gefällt mir), dấu phẩy, rồi câu phụ weil … sind với động từ ở cuối. die Kollegen là số nhiều nên sind."
+    display_answer: Ich mag meine Arbeit, weil meine Kollegen sehr nett sind.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u03l1-wb-teilzeit-studiere
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-teilzeit
+    prompt:
+      instruction: "Sắp xếp thành câu (câu chính đứng trước): \"Tôi làm bán thời gian vì tôi vẫn còn đang học đại học.\""
+      tokens:
+        - { id: t-studiere, text: studiere }
+        - { id: t-teilzeit, text: Teilzeit }
+        - { id: t-weil, text: weil }
+        - { id: t-ich-gross, text: Ich }
+        - { id: t-noch, text: noch }
+        - { id: t-komma, text: "," }
+        - { id: t-in, text: in }
+        - { id: t-arbeite, text: arbeite }
+        - { id: t-ich-klein, text: ich }
+    answer:
+      orders:
+        - [t-ich-gross, t-arbeite, t-in, t-teilzeit, t-komma, t-weil, t-ich-klein, t-noch, t-studiere]
+    explanation:
+      vi: "Câu chính Ich arbeite in Teilzeit (động từ ở vị trí 2), dấu phẩy, rồi câu phụ weil ich noch studiere – động từ studiere đứng cuối."
+    display_answer: Ich arbeite in Teilzeit, weil ich noch studiere.
+
+  - key: de:exercise:a2u03l1-wb-denn-auto
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-denn
+    prompt:
+      instruction: "Sắp xếp thành câu (dùng denn): \"Hôm nay tôi đi xe buýt vì ô tô của tôi bị hỏng.\""
+      tokens:
+        - { id: t-kaputt, text: kaputt }
+        - { id: t-bus, text: Bus }
+        - { id: t-denn, text: denn }
+        - { id: t-ist, text: ist }
+        - { id: t-ich, text: Ich }
+        - { id: t-mein, text: mein }
+        - { id: t-den, text: den }
+        - { id: t-komma, text: "," }
+        - { id: t-heute, text: heute }
+        - { id: t-nehme, text: nehme }
+        - { id: t-auto, text: Auto }
+    answer:
+      orders:
+        - [t-ich, t-nehme, t-heute, t-den, t-bus, t-komma, t-denn, t-mein, t-auto, t-ist, t-kaputt]
+    explanation:
+      vi: "denn ở vị trí 0 nên vế sau giữ trật tự câu chính: mein Auto (vị trí 1) ist (vị trí 2) kaputt. Với weil mới đổi thành … mein Auto kaputt ist."
+    display_answer: Ich nehme heute den Bus, denn mein Auto ist kaputt.
+
+  - key: de:exercise:a2u03l1-tr-ueberstunden-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-ueberstunde
+    prompt:
+      source_text: Ich bin heute sehr müde, denn ich habe Überstunden gemacht.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm nay tôi rất mệt vì tôi đã làm thêm giờ.
+        - Hôm nay tôi rất mệt vì đã làm thêm giờ.
+        - Hôm nay tôi rất mệt vì tôi làm thêm giờ.
+        - Hôm nay tôi rất mệt bởi vì tôi đã làm thêm giờ.
+        - Hôm nay tôi rất mệt vì tôi đã làm ngoài giờ.
+        - Hôm nay mình rất mệt vì mình đã làm thêm giờ.
+        - Hôm nay tôi mệt lắm vì tôi đã làm thêm giờ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm nay tôi rất mệt nhưng tôi đã làm thêm giờ.
+        feedback_vi: "denn nghĩa là \"vì\", không phải \"nhưng\" (aber)."
+        error_tag: conjunction_meaning
+    explanation:
+      vi: "denn = vì; Überstunden machen = làm thêm giờ; habe … gemacht là Perfekt nên dịch \"đã làm\"."
+    display_answer: Hôm nay tôi rất mệt vì tôi đã làm thêm giờ.
+
+  - key: de:exercise:a2u03l1-mcq-warum-stelle
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      stem: "Đồng nghiệp hỏi bạn: \"Warum suchst du eine neue Stelle?\" Câu trả lời nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f6s, text: Weil ich mehr Geld verdienen möchte., lang: de }
+        - { id: g1v, text: Weil ich möchte mehr Geld verdienen., lang: de }
+        - { id: h3j, text: Weil ich mehr Geld möchte verdienen., lang: de }
+        - { id: j8e, text: Weil mehr Geld ich verdienen möchte., lang: de }
+    answer:
+      correct_option_id: f6s
+    explanation:
+      vi: "Trả lời Warum? bằng một câu phụ với weil là tự nhiên. Trong câu phụ: chủ ngữ ich ngay sau weil, nguyên thể verdienen rồi đến modal möchte ở cuối."
+    display_answer: Weil ich mehr Geld verdienen möchte.

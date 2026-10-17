@@ -1,0 +1,356 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u03-am-telefon
+order_index: 3
+level: a2
+title:
+  vi: Gọi điện ở công ty – động từ đi với Dativ (Kann ich Ihnen helfen?)
+objectives:
+  - vi: Nhận cuộc gọi ở công ty, nối máy, nhận lời nhắn và hẹn gọi lại.
+  - vi: Dùng các động từ đi với Dativ (helfen, danken, gehören, gratulieren, zuhören, fehlen, schmecken, antworten).
+  - vi: Phân biệt động từ + Dativ (Ich helfe dir) với động từ + Akkusativ (Ich rufe dich an).
+estimated_minutes: 16
+skills: [grammar, listening, speaking]
+prerequisites: [de:lesson:a2u03-dass]
+items:
+  - item: de:item:a2u03-g-dativ-verben
+  - item: de:item:a2u03-helfen
+  - item: de:item:a2u03-danken
+  - item: de:item:a2u03-gehoeren
+  - item: de:item:a2u03-gratulieren
+  - item: de:item:a2u03-zuhoeren
+  - item: de:item:a2u03-fehlen
+  - item: de:item:a2u03-schmecken
+  - item: de:item:a2u03-verbinden
+  - item: de:item:a2u03-zurueckrufen
+  - item: de:item:a2u03-ausrichten
+  - item: de:item:a2u03-besetzt
+  - item: de:item:a2u03-am-apparat
+  - item: de:item:a2u03-auf-wiederhoeren
+  - item: de:item:a2u03-durchwahl
+  - item: de:item:a1u07-g-personalpronomen-dativ
+    role: reuse
+  - item: de:item:a1u07-g-gefallen-passen-stehen
+    role: reuse
+  - item: de:item:a1u04-anrufen
+    role: reuse
+  - item: de:item:p0u3-telefon
+    role: reuse
+  - item: de:item:a1u02-firma
+    role: reuse
+  - item: de:item:p0u3-buero
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nghe máy được ở công ty, nói "Tôi có thể giúp gì?", nối máy, nhận lời nhắn và hẹn gọi lại – với đúng Dativ.
+  - type: explain
+    text:
+      vi: "Bạn đã biết gefallen, passen, stehen đi với Dativ (mir, dir, Ihnen). Một nhóm động từ hay dùng khác cũng có người ở Dativ: helfen, danken, gehören, gratulieren, zuhören, fehlen, schmecken, antworten."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"giúp bạn\", \"cảm ơn anh\" như mọi tân ngữ khác, nên người Việt hay dùng nhầm Akkusativ. Hãy học thuộc: Ich helfe dir (không phải dich), Ich danke Ihnen (không phải Sie). Câu hỏi về người ở Dativ là Wem? (Wem hilfst du?)."
+  - type: explain
+    text:
+      vi: "Với gehören, schmecken, fehlen, đồ vật là chủ ngữ, người ở Dativ – giống gefallen: Das Handy gehört mir. Der Kaffee schmeckt mir. Mir fehlt ein Formular."
+  - type: explain
+    text:
+      vi: "Còn anrufen, zurückrufen, fragen đi với Akkusativ: Ich rufe Sie an. Kannst du mich zurückrufen? ausrichten có cả hai: người nhận ở Dativ, lời nhắn ở Akkusativ – Kann ich ihr etwas ausrichten?"
+  - type: deep_explain
+    text:
+      vi: "Khi nghe máy ở công ty, người Đức thường nói tên công ty, họ của mình và lời chào: \"Firma Becker, Schmidt am Apparat, guten Tag.\" Người gọi giới thiệu lại: \"Guten Tag, hier ist Lan Nguyen.\" Nếu người cần gặp không có mặt, bạn hỏi \"Kann ich etwas ausrichten?\" hoặc hẹn \"Sie/Er ruft Sie zurück.\" Cuộc gọi trang trọng kết thúc bằng \"Auf Wiederhören!\". Mẹo nhớ Dativ: những động từ này thường nói về việc làm cho ai đó (giúp ai, cảm ơn ai, chúc mừng ai, lắng nghe ai)."
+  - type: example
+    target: "Firma Becker, Schmidt am Apparat, guten Tag. – Guten Tag, hier ist Lan Nguyen. Kann ich bitte Frau Klein sprechen?"
+    target_lang: de
+    translation:
+      vi: "Công ty Becker, Schmidt xin nghe, xin chào. – Xin chào, tôi là Lan Nguyen. Tôi có thể nói chuyện với bà Klein được không?"
+    note:
+      vi: "Cuộc gọi công việc dùng Sie. Người nghe máy nói tên công ty và họ của mình."
+  - type: example
+    target: "Frau Klein ist leider nicht im Büro. Kann ich ihr etwas ausrichten?"
+    target_lang: de
+    translation:
+      vi: "Tiếc là bà Klein không có ở văn phòng. Tôi có thể nhắn lại gì cho bà ấy không?"
+    note:
+      vi: "ausrichten: người nhận lời nhắn ở Dativ – sie → ihr."
+  - type: example
+    target: "Einen Moment, bitte, ich verbinde Sie. – Vielen Dank, ich danke Ihnen!"
+    target_lang: de
+    translation:
+      vi: "Xin chờ một chút, tôi nối máy cho ông/bà. – Cảm ơn nhiều, cảm ơn ông/bà!"
+    note:
+      vi: "verbinden + Akkusativ (Sie); danken + Dativ (Ihnen)."
+  - type: example
+    target: "Gehört der Kuli dir? – Nein, er gehört meiner Kollegin."
+    target_lang: de
+    translation:
+      vi: "Cái bút bi này của bạn à? – Không, của đồng nghiệp của mình."
+    note:
+      vi: "Hai đồng nghiệp thân dùng du → dir. die Kollegin ở Dativ: meiner Kollegin."
+  - type: example
+    target: "Wie gefällt Ihnen Ihr Büro? – Sehr gut, und der Kaffee schmeckt mir auch!"
+    target_lang: de
+    translation:
+      vi: "Ông thấy văn phòng của ông thế nào? – Rất thích, và tôi thấy cà phê cũng ngon nữa!"
+    note:
+      vi: "gefallen và schmecken: đồ vật là chủ ngữ, người ở Dativ (Ihnen, mir)."
+  - type: common_mistake
+    wrong: Ich helfe dich.
+    right: Ich helfe dir.
+    target_lang: de
+    note:
+      vi: "helfen luôn đi với Dativ: dir, mir, Ihnen – dù tiếng Việt nói \"giúp bạn\"."
+  - type: common_mistake
+    wrong: Kannst du mir zurückrufen?
+    right: Kannst du mich zurückrufen?
+    target_lang: de
+    note:
+      vi: "Ngược lại, anrufen và zurückrufen đi với Akkusativ: mich, dich, Sie."
+  - type: common_mistake
+    wrong: Ich danke Sie.
+    right: Ich danke Ihnen.
+    target_lang: de
+    note:
+      vi: "danken + Dativ: Sie → Ihnen."
+  - type: summary
+    points:
+      - vi: "Động từ + Dativ: helfen, danken, gehören, gratulieren, zuhören, fehlen, schmecken, antworten (+ gefallen, passen, stehen)."
+      - vi: "Hỏi người ở Dativ: Wem?"
+      - vi: "gehören, schmecken, fehlen: đồ vật là chủ ngữ (Das Handy gehört mir)."
+      - vi: "anrufen, zurückrufen, fragen: Akkusativ (Ich rufe Sie zurück)."
+      - vi: "Nghe máy: Firma …, (Name) am Apparat, guten Tag. – Kann ich etwas ausrichten? – Auf Wiederhören!"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u03l3-mcq-ihnen-helfen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u03-helfen
+    prompt:
+      stem: "Bạn nghe máy ở công ty và nói với khách hàng (Sie): \"Kann ich ___ helfen?\""
+      stem_lang: vi
+      options:
+        - { id: p1a, text: Ihnen, lang: de }
+        - { id: p2b, text: Sie, lang: de }
+        - { id: p3c, text: dich, lang: de }
+        - { id: p4d, text: Ihr, lang: de }
+    answer:
+      correct_option_id: p1a
+    explanation:
+      vi: "helfen đi với Dativ; Sie (lịch sự) ở Dativ là Ihnen. Sie là Akkusativ/Nominativ; dich là Akkusativ của du; Ihr là tính từ sở hữu."
+    display_answer: Ihnen
+
+  - key: de:exercise:a2u03l3-mcq-helfe-dir
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u03-g-dativ-verben
+    prompt:
+      stem: "Chọn câu đúng: \"Mình giúp bạn nhé.\" (nói với bạn thân)"
+      stem_lang: vi
+      options:
+        - { id: e1h, text: Ich helfe dir., lang: de }
+        - { id: e2h, text: Ich helfe dich., lang: de }
+        - { id: e3h, text: Ich helfe du., lang: de }
+        - { id: e4h, text: Ich hilft dir., lang: de }
+    answer:
+      correct_option_id: e1h
+    explanation:
+      vi: "helfen + Dativ: du → dir. Với ich, động từ chia là helfe; hilft là dạng của er/sie/es."
+    display_answer: Ich helfe dir.
+
+  - key: de:exercise:a2u03l3-listen-frau-klein
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-am-apparat
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Firma Becker, Schmidt am Apparat, guten Tag. – Guten Tag, hier ist Lan Nguyen. Kann ich bitte Frau Klein sprechen? – Tut mir leid, Frau Klein ist gerade nicht da."
+      options:
+        - { id: n1a, text: "Lan muốn nói chuyện với bà Klein, nhưng bà ấy hiện không có ở đó.", lang: vi }
+        - { id: n2b, text: "Lan muốn nói chuyện với ông Schmidt, nhưng ông ấy đang bận máy.", lang: vi }
+        - { id: n3c, text: "Bà Klein gọi cho Lan, nhưng Lan không có ở đó.", lang: vi }
+        - { id: n4d, text: "Lan muốn nói chuyện với bà Klein, và ông Schmidt nối máy ngay.", lang: vi }
+    answer:
+      correct_option_id: n1a
+    explanation:
+      vi: "Schmidt am Apparat = Schmidt nghe máy; Lan hỏi Kann ich bitte Frau Klein sprechen?; Frau Klein ist gerade nicht da = bà Klein hiện không có ở đây."
+    display_answer: "Lan muốn nói chuyện với bà Klein, nhưng bà ấy hiện không có ở đó."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u03l3-fill-gehoert-ihnen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-gehoeren
+    prompt:
+      template: "Gehört das Handy {{b1}}? (Sie) – Nein, es gehört Frau Klein."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Ihnen]
+    known_wrong:
+      - answer: Sie
+        feedback_vi: "gehören đi với Dativ: Sie → Ihnen."
+        error_tag: case_dat_akk
+      - answer: Ihr
+        feedback_vi: "Ihr là tính từ sở hữu (của ông/bà). Ở đây cần Dativ của Sie: Ihnen."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Với gehören, đồ vật (das Handy) là chủ ngữ, người sở hữu ở Dativ: Ihnen."
+    display_answer: "Gehört das Handy Ihnen? – Nein, es gehört Frau Klein."
+
+  - key: de:exercise:a2u03l3-fill-schmeckt-dir-mir
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-schmecken
+    prompt:
+      template: "Schmeckt {{b1}} (du) der Kaffee? – Ja, er schmeckt {{b2}} (ich) sehr gut."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [dir]
+        b2: [mir]
+    known_wrong:
+      - answer: dich
+        feedback_vi: "schmecken đi với Dativ: du → dir."
+        error_tag: case_dat_akk
+      - answer: mich
+        feedback_vi: "schmecken đi với Dativ: ich → mir."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Như gefallen: món ăn/đồ uống (der Kaffee) là chủ ngữ, người thấy ngon ở Dativ: dir, mir."
+    display_answer: "Schmeckt dir der Kaffee? – Ja, er schmeckt mir sehr gut."
+
+  - key: de:exercise:a2u03l3-fill-ihr-ausrichten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-ausrichten
+    prompt:
+      template: "Frau Klein ist nicht da. Kann ich {{b1}} (sie) etwas ausrichten?"
+      blanks:
+        - { id: b1, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ihr]
+    known_wrong:
+      - answer: sie
+        feedback_vi: "Người nhận lời nhắn ở Dativ: sie (bà ấy) → ihr."
+        error_tag: case_dat_akk
+      - answer: ihm
+        feedback_vi: "ihm là Dativ của er/es. Frau Klein là nữ: ihr."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "jemandem etwas ausrichten: người nhận ở Dativ (ihr), lời nhắn ở Akkusativ (etwas)."
+    display_answer: Frau Klein ist nicht da. Kann ich ihr etwas ausrichten?
+
+  - key: de:exercise:a2u03l3-tr-mich-zurueckrufen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-zurueckrufen
+    prompt:
+      source_text: "Bạn gọi lại cho mình được không? (nói với đồng nghiệp thân, du)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Kannst du mich zurückrufen?
+        - Kannst du mich bitte zurückrufen?
+        - Kannst du mich zurückrufen, bitte?
+    known_wrong:
+      - answer: Kannst du mir zurückrufen?
+        feedback_vi: "zurückrufen (như anrufen) đi với Akkusativ: mich, không phải mir."
+        error_tag: case_dat_akk
+      - answer: Kannst du mich zurück rufen?
+        feedback_vi: "zurückrufen viết liền khi ở dạng nguyên thể cuối câu."
+        error_tag: separable_prefix
+      - answer: Kannst du zurückrufen mich?
+        feedback_vi: "Nguyên thể zurückrufen đứng cuối câu (khung câu với modal)."
+        error_tag: verb_position
+    explanation:
+      vi: "Modal kannst ở vị trí 1 (câu hỏi), tân ngữ mich (Akkusativ), nguyên thể zurückrufen ở cuối."
+    display_answer: Kannst du mich zurückrufen?
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u03l3-wb-verbinde-sie
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-verbinden
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Xin chờ một chút, tôi nối máy cho ông với bà Klein.\""
+      tokens:
+        - { id: t-mit, text: mit }
+        - { id: t-moment, text: Moment }
+        - { id: t-sie, text: Sie }
+        - { id: t-klein, text: Klein }
+        - { id: t-einen, text: Einen }
+        - { id: t-verbinde, text: verbinde }
+        - { id: t-komma, text: "," }
+        - { id: t-frau, text: Frau }
+        - { id: t-ich, text: ich }
+        - { id: t-ihnen, text: Ihnen }
+    answer:
+      orders:
+        - [t-einen, t-moment, t-komma, t-ich, t-verbinde, t-sie, t-mit, t-frau, t-klein]
+    explanation:
+      vi: "verbinden + Akkusativ: người gọi là Sie (không phải Ihnen); người được nối tới đi với mit: mit Frau Klein."
+    display_answer: Einen Moment, ich verbinde Sie mit Frau Klein.
+
+  - key: de:exercise:a2u03l3-mcq-telefon-melden
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-am-apparat
+    prompt:
+      stem: "Bạn là Lan Nguyen, làm ở công ty Becker. Điện thoại công ty reo, bạn nhấc máy. Cách nói nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: s1t, text: "Firma Becker, Lan Nguyen am Apparat, guten Tag.", lang: de }
+        - { id: s2t, text: "Hallo? Wer bist du?", lang: de }
+        - { id: s3t, text: "Ja? Was willst du?", lang: de }
+        - { id: s4t, text: "Tschüss, hier ist Firma Becker.", lang: de }
+    answer:
+      correct_option_id: s1t
+    explanation:
+      vi: "Ở công ty, nhấc máy bằng tên công ty + tên mình + lời chào. Hỏi \"Wer bist du?\" hay \"Was willst du?\" với khách là suồng sã (du); Tschüss là lời tạm biệt."
+    display_answer: "Firma Becker, Lan Nguyen am Apparat, guten Tag."
+
+  - key: de:exercise:a2u03l3-listen-wolf-zurueck
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-zurueckrufen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Herr Wolf ist heute leider nicht im Büro. Er ruft Sie morgen zurück. Auf Wiederhören!
+      options:
+        - { id: o1w, text: "Hôm nay ông Wolf không có ở văn phòng; ngày mai ông ấy sẽ gọi lại cho bạn.", lang: vi }
+        - { id: o2w, text: "Hôm nay ông Wolf không có ở văn phòng; bạn phải gọi lại vào ngày mai.", lang: vi }
+        - { id: o3w, text: "Ông Wolf đang ở văn phòng nhưng máy bận; ông ấy sẽ gọi lại ngay.", lang: vi }
+        - { id: o4w, text: "Ngày mai ông Wolf không có ở văn phòng; hôm nay ông ấy sẽ gọi lại.", lang: vi }
+    answer:
+      correct_option_id: o1w
+    explanation:
+      vi: "nicht im Büro = không có ở văn phòng; Er ruft Sie morgen zurück = ngày mai ông ấy gọi lại cho bạn (er là người gọi, Sie là người được gọi)."
+    display_answer: "Hôm nay ông Wolf không có ở văn phòng; ngày mai ông ấy sẽ gọi lại cho bạn."
