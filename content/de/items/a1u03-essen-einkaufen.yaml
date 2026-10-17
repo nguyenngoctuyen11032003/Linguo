@@ -1,0 +1,1372 @@
+# Học liệu unit A1U03 "Ăn uống và mua sắm" (Essen und Einkaufen), chương trình A1.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Was isst du gern? ----------------
+  - key: de:item:a1u03-g-vokalwechsel
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Vokalwechsel: essen → du isst, er isst"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Một số động từ đổi nguyên âm gốc chỉ ở ngôi du và er/sie/es: e → i (essen – isst, sprechen – spricht), e → ie (sehen – sieht, lesen – liest), a → ä (fahren – fährt, schlafen – schläft). Các ngôi ich, wir, ihr, sie/Sie chia bình thường: ich esse, wir essen."
+      examples:
+        - target: Was isst du gern?
+          translation:
+            vi: Bạn thích ăn gì?
+        - target: Meine Schwester liest gern.
+          translation:
+            vi: Chị gái tôi thích đọc sách.
+        - target: Lena fährt gern Fahrrad.
+          translation:
+            vi: Lena thích đạp xe.
+      confusion:
+        vi: "Đuôi vẫn là -st (du) và -t (er/sie/es), chỉ nguyên âm trong gốc đổi. Gốc essen tận cùng bằng s nên du chỉ thêm -t: du isst (không phải du esst, du issst)."
+
+  - key: de:item:a1u03-g-gern
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "gern / nicht gern: Ich esse gern Obst."
+      ipa: /ɡɛʁn/
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Muốn nói mình thích làm gì, bạn dùng động từ chính rồi thêm gern ngay sau động từ đã chia: Ich trinke gern Kaffee. Không thích: nicht gern. Động từ chia vẫn ở vị trí 2."
+      examples:
+        - target: Ich trinke gern Kaffee.
+          translation:
+            vi: Tôi thích uống cà phê.
+        - target: Isst du gern Gemüse? – Nein, nicht so gern.
+          translation:
+            vi: Bạn có thích ăn rau không? – Không, không thích lắm.
+      confusion:
+        vi: "Tiếng Việt nói \"thích + ăn\"; tiếng Đức không ghép hai động từ như vậy mà dùng động từ chính + gern. Không nói \"Ich mag essen\" hay \"Ich gern esse\"."
+
+  - key: de:item:a1u03-essen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: essen (du isst)
+      ipa: /ˈɛsn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: ăn
+      examples:
+        - target: Wir essen heute zu Hause.
+          translation:
+            vi: Hôm nay chúng tôi ăn ở nhà.
+        - target: Was isst du gern?
+          translation:
+            vi: Bạn thích ăn gì?
+      confusion:
+        vi: "ich esse, du isst, er/sie/es isst, wir essen, ihr esst, sie/Sie essen. Chú ý: ihr esst (đúng) nhưng du isst."
+
+  - key: de:item:a1u03-trinken
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: trinken
+      ipa: /ˈtʁɪŋkn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: uống
+      examples:
+        - target: Ich trinke gern Wasser.
+          translation:
+            vi: Tôi thích uống nước.
+        - target: Was trinkst du?
+          translation:
+            vi: Bạn uống gì?
+      pronunciation_note:
+        vi: "nk đọc như \"ng\" + \"k\": \"tring-kơn\"; r đọc nhẹ ở cuống họng, gần \"g\" mềm."
+
+  - key: de:item:a1u03-brot
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Brot, -e
+      ipa: /bʁoːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh mì (loại ổ lớn, thường cắt lát)
+      examples:
+        - target: Das Brot hier ist sehr gut.
+          translation:
+            vi: Bánh mì ở đây rất ngon.
+      confusion:
+        vi: "Ổ bánh mì nhỏ ăn sáng là das Brötchen. Người Đức có hàng trăm loại Brot, phần lớn là bánh mì đen hoặc nâu."
+
+  - key: de:item:a1u03-milch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Milch (Sg.)
+      ipa: /mɪlç/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sữa
+      examples:
+        - target: Trinkst du gern Milch?
+          translation:
+            vi: Bạn có thích uống sữa không?
+      pronunciation_note:
+        vi: "ch sau l, i, e đọc như hơi \"h\" xì nhẹ giữa lưỡi và vòm miệng (ich-Laut), không đọc \"kh\"."
+
+  - key: de:item:a1u03-kaffee
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Kaffee (Sg.)
+      ipa: /ˈkafe/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cà phê
+      examples:
+        - target: Ich trinke gern Kaffee.
+          translation:
+            vi: Tôi thích uống cà phê.
+      pronunciation_note:
+        vi: Ở Đức thường nhấn âm đầu (KA-phê); ở Áo hay nhấn âm cuối (ka-PHÊ).
+
+  - key: de:item:a1u03-wasser
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Wasser (Sg.)
+      ipa: /ˈvasɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước
+      examples:
+        - target: Das Wasser ist kalt.
+          translation:
+            vi: Nước lạnh.
+      pronunciation_note:
+        vi: "w đọc như \"v\" tiếng Việt; -er cuối đọc thành \"a\" nhẹ: \"va-xa\"."
+
+  - key: de:item:a1u03-saft
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Saft, ¨-e
+      ipa: /zaft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước ép, nước quả
+      examples:
+        - target: Die Kinder trinken gern Saft.
+          translation:
+            vi: Bọn trẻ thích uống nước ép.
+      pronunciation_note:
+        vi: "s đầu từ đứng trước nguyên âm đọc gần \"d\" giọng Bắc. Số nhiều: die Säfte."
+
+  - key: de:item:a1u03-obst
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Obst (Sg.)
+      ipa: /oːpst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trái cây, hoa quả (nói chung)
+      examples:
+        - target: Obst ist gesund.
+          translation:
+            vi: Trái cây tốt cho sức khoẻ.
+      confusion:
+        vi: Obst là danh từ chung không đếm được; muốn nói một quả cụ thể thì dùng tên quả (ein Apfel, eine Banane).
+
+  - key: de:item:a1u03-gemuese
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Gemüse (Sg.)
+      ipa: /ɡəˈmyːzə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: rau, rau củ (nói chung)
+      examples:
+        - target: Isst du gern Gemüse?
+          translation:
+            vi: Bạn có thích ăn rau không?
+      pronunciation_note:
+        vi: "Nhấn âm thứ hai: ge-MÜ-se. ü đọc như \"i\" nhưng tròn môi như \"u\"."
+
+  - key: de:item:a1u03-apfel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Apfel, ¨-
+      ipa: /ˈapfl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả táo
+      examples:
+        - target: Ich esse gern Äpfel.
+          translation:
+            vi: Tôi thích ăn táo.
+      pronunciation_note:
+        vi: "pf đọc liền: môi khép như \"p\" rồi bật ra \"ph\". Số nhiều: die Äpfel."
+
+  - key: de:item:a1u03-wurst
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Wurst, ¨-e
+      ipa: /vʊʁst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: xúc xích; giò, chả nguội thái lát
+      examples:
+        - target: Mein Vater isst gern Wurst.
+          translation:
+            vi: Bố tôi thích ăn xúc xích.
+      confusion:
+        vi: "Wurst là giống cái: die Wurst, số nhiều die Würste."
+
+  - key: de:item:a1u03-butter
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Butter (Sg.)
+      ipa: /ˈbʊtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bơ (làm từ sữa)
+      examples:
+        - target: Ich esse gern Brot mit Butter.
+          translation:
+            vi: Tôi thích ăn bánh mì phết bơ.
+      confusion:
+        vi: Quả bơ là die Avocado; die Butter chỉ là bơ sữa.
+
+  - key: de:item:a1u03-fruehstueck
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Frühstück, -e
+      ipa: /ˈfʁyːʃtʏk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bữa sáng
+      examples:
+        - target: Das Frühstück ist fertig!
+          translation:
+            vi: Bữa sáng xong rồi!
+      confusion:
+        vi: "Từ ghép früh (sớm) + das Stück (miếng): giống theo phần cuối, nên là das Frühstück."
+
+  - key: de:item:a1u03-banane
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Banane, -n
+      ipa: /baˈnaːnə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả chuối
+      examples:
+        - target: Die Bananen sind noch grün.
+          translation:
+            vi: Chuối vẫn còn xanh.
+
+  - key: de:item:a1u03-wein
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Wein, -e
+      ipa: /vaɪ̯n/
+      pos: danh từ
+    back:
+      meaning:
+        vi: rượu vang
+      examples:
+        - target: Trinken Sie gern Wein?
+          translation:
+            vi: Ông/bà có thích uống rượu vang không?
+      pronunciation_note:
+        vi: "w = \"v\", ei = \"ai\": đọc \"vain\"."
+
+  # ---------------- Bài 2: Ich nehme den Salat. ----------------
+  - key: de:item:a1u03-g-akkusativ
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Akkusativ: den / einen / keinen / meinen"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Tân ngữ trực tiếp (trả lời câu hỏi Wen? / Was?) đứng ở cách Akkusativ. Chỉ danh từ giống đực số ít đổi mạo từ: der → den, ein → einen, kein → keinen, mein → meinen. Giống cái (die, eine), giống trung (das, ein) và số nhiều (die) giữ nguyên như Nominativ."
+      examples:
+        - target: Ich nehme den Salat.
+          translation:
+            vi: Tôi gọi món salad.
+        - target: Wir haben keinen Reis mehr.
+          translation:
+            vi: Chúng tôi hết gạo rồi.
+        - target: Ich trinke meinen Kaffee schwarz.
+          translation:
+            vi: Tôi uống cà phê đen (không sữa, không đường).
+      confusion:
+        vi: "Chủ ngữ vẫn ở Nominativ: Der Salat ist lecker. Nhưng: Ich nehme den Salat. Đừng đổi giống cái thành \"einen\": Ich nehme eine Suppe."
+
+  - key: de:item:a1u03-nehmen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: nehmen (du nimmst)
+      ipa: /ˈneːmən/
+      pos: động từ
+    back:
+      meaning:
+        vi: lấy; (ở nhà hàng, cửa hàng) chọn, gọi món
+      examples:
+        - target: Ich nehme den Fisch.
+          translation:
+            vi: Tôi gọi món cá.
+        - target: Was nimmst du?
+          translation:
+            vi: Bạn gọi món gì?
+      confusion:
+        vi: "ich nehme, du nimmst, er/sie/es nimmt (e → i, mất h và viết hai chữ m), wir nehmen, ihr nehmt, sie/Sie nehmen."
+
+  - key: de:item:a1u03-salat
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Salat, -e
+      ipa: /zaˈlaːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: món salad, rau trộn; rau xà lách
+      examples:
+        - target: Ich nehme den Salat.
+          translation:
+            vi: Tôi gọi món salad.
+      pronunciation_note:
+        vi: "Nhấn âm cuối: sa-LAT, s đầu đọc gần \"d\" giọng Bắc."
+
+  - key: de:item:a1u03-suppe
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Suppe, -n
+      ipa: /ˈzʊpə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: món súp, canh
+      examples:
+        - target: Die Suppe ist heiß.
+          translation:
+            vi: Súp nóng.
+
+  - key: de:item:a1u03-fleisch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Fleisch (Sg.)
+      ipa: /flaɪ̯ʃ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịt
+      examples:
+        - target: Ich esse kein Fleisch.
+          translation:
+            vi: Tôi không ăn thịt.
+      pronunciation_note:
+        vi: "ei = \"ai\", sch = \"s\" uốn lưỡi tròn môi: \"phlaish\"."
+
+  - key: de:item:a1u03-fisch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Fisch, -e
+      ipa: /fɪʃ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cá; món cá
+      examples:
+        - target: Wir nehmen den Fisch.
+          translation:
+            vi: Chúng tôi gọi món cá.
+
+  - key: de:item:a1u03-reis
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Reis (Sg.)
+      ipa: /ʁaɪ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: gạo; cơm
+      examples:
+        - target: Wir essen oft Reis.
+          translation:
+            vi: Chúng tôi hay ăn cơm.
+      confusion:
+        vi: "Tiếng Đức chỉ có một từ Reis cho cả gạo và cơm. Đừng nhầm với die Reise (chuyến đi)."
+
+  - key: de:item:a1u03-speisekarte
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Speisekarte, -n
+      ipa: /ˈʃpaɪ̯zəˌkaʁtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực đơn
+      examples:
+        - target: Die Speisekarte, bitte!
+          translation:
+            vi: Cho tôi xin thực đơn!
+      pronunciation_note:
+        vi: "sp đầu từ đọc \"shp\": \"SHPAI-dơ-kar-tơ\"."
+      confusion:
+        vi: "Từ ghép die Speise (món ăn) + die Karte (tấm thẻ): giống theo phần cuối, nên là die Speisekarte."
+
+  - key: de:item:a1u03-bestellen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bestellen
+      ipa: /bəˈʃtɛlən/
+      pos: động từ
+    back:
+      meaning:
+        vi: gọi (món), đặt (hàng)
+      examples:
+        - target: Ich bestelle einen Salat.
+          translation:
+            vi: Tôi gọi một đĩa salad.
+      pronunciation_note:
+        vi: "be- không nhấn, nhấn vào STEL; st đầu âm tiết đọc \"sht\"."
+
+  - key: de:item:a1u03-rechnung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Rechnung, -en
+      ipa: /ˈʁɛçnʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoá đơn
+      examples:
+        - target: Die Rechnung, bitte!
+          translation:
+            vi: Cho tôi thanh toán!
+
+  - key: de:item:a1u03-zusammen-oder-getrennt
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Zusammen oder getrennt?
+      ipa: /tsuˈzamən oːdɐ ɡəˈtʁɛnt/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Trả chung hay trả riêng? (nhân viên hỏi khi tính tiền)
+      examples:
+        - target: Zusammen oder getrennt? – Getrennt, bitte.
+          translation:
+            vi: Trả chung hay riêng ạ? – Riêng ạ.
+      confusion:
+        vi: Ở Đức, mỗi người trong nhóm trả phần của mình là chuyện bình thường; nhân viên sẽ tính riêng từng người.
+
+  - key: de:item:a1u03-kellner
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Kellner, - / die Kellnerin, -nen
+      ipa: /ˈkɛlnɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nam / nữ nhân viên phục vụ (nhà hàng, quán cà phê)
+      examples:
+        - target: Der Kellner bringt die Speisekarte.
+          translation:
+            vi: Anh phục vụ mang thực đơn tới.
+      confusion:
+        vi: "Gọi phục vụ thì nói lịch sự \"Entschuldigung!\" hoặc giơ tay; không gọi \"Kellner!\"."
+
+  - key: de:item:a1u03-bezahlen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bezahlen
+      ipa: /bəˈtsaːlən/
+      pos: động từ
+    back:
+      meaning:
+        vi: trả tiền, thanh toán
+      examples:
+        - target: Ich bezahle die Rechnung.
+          translation:
+            vi: Tôi trả hoá đơn.
+      pronunciation_note:
+        vi: "z đọc \"ts\": be-TSA-lơn."
+
+  - key: de:item:a1u03-getraenk
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Getränk, -e
+      ipa: /ɡəˈtʁɛŋk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ uống
+      examples:
+        - target: Die Getränke sind hier nicht teuer.
+          translation:
+            vi: Đồ uống ở đây không đắt.
+
+  - key: de:item:a1u03-haehnchen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Hähnchen, -
+      ipa: /ˈhɛːnçən/
+      pos: danh từ
+    back:
+      meaning:
+        vi: gà (món ăn), thịt gà
+      examples:
+        - target: Ich nehme das Hähnchen mit Reis.
+          translation:
+            vi: Tôi gọi món gà với cơm.
+      confusion:
+        vi: "Mọi danh từ tận cùng bằng -chen đều là giống trung (das) và số nhiều không đổi."
+
+  - key: de:item:a1u03-nudel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Nudel, -n
+      ipa: /ˈnuːdl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mì, nui (thường dùng số nhiều die Nudeln)
+      examples:
+        - target: Die Kinder essen gern Nudeln.
+          translation:
+            vi: Bọn trẻ thích ăn mì.
+
+  - key: de:item:a1u03-nachtisch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Nachtisch, -e
+      ipa: /ˈnaːxtɪʃ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: món tráng miệng
+      examples:
+        - target: Und als Nachtisch?
+          translation:
+            vi: Còn món tráng miệng thì sao ạ?
+      confusion:
+        vi: "Từ ghép nach (sau) + der Tisch (bàn ăn): giống theo phần cuối, nên là der Nachtisch."
+
+  # ---------------- Bài 3: Ich möchte ein Stück Kuchen. ----------------
+  - key: de:item:a1u03-g-moechten
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "möchten: ich möchte, du möchtest, er möchte"
+      ipa: /ˈmœçtə/
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Möchte là cách nói lịch sự \"muốn\". ich möchte, du möchtest, er/sie/es möchte (không có -t), wir möchten, ihr möchtet, sie/Sie möchten. Sau möchte là danh từ ở Akkusativ hoặc một động từ nguyên thể đứng cuối câu."
+      examples:
+        - target: Ich möchte einen Kaffee, bitte.
+          translation:
+            vi: Cho tôi một ly cà phê.
+        - target: Möchtest du heute Fisch essen?
+          translation:
+            vi: Hôm nay bạn có muốn ăn cá không?
+      confusion:
+        vi: "Ngôi er/sie/es giống ngôi ich: er möchte, không phải \"er möchtet\". Động từ thứ hai không chia và luôn ở cuối câu."
+
+  - key: de:item:a1u03-g-moegen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "mögen: ich mag, du magst, er mag"
+      ipa: /ˈmøːɡn̩/ · /maːk/
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Mögen + danh từ nghĩa là thích (nói chung, lâu dài): Ich mag Kuchen. ich mag, du magst, er/sie/es mag (không có -t), wir mögen, ihr mögt, sie/Sie mögen. Möchte là muốn (ngay bây giờ), mag là thích."
+      examples:
+        - target: Ich mag Schokolade.
+          translation:
+            vi: Tôi thích sô-cô-la.
+        - target: Meine Kinder mögen keinen Fisch.
+          translation:
+            vi: Các con tôi không thích cá.
+      confusion:
+        vi: "Muốn nói thích LÀM gì, dùng động từ + gern (Ich esse gern Fisch), không dùng \"Ich mag essen\". Mag + danh từ: Ich mag Fisch."
+
+  - key: de:item:a1u03-g-und-aber-oder
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "und, aber, oder (Position 0)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "und (và), aber (nhưng), oder (hay, hoặc) nối hai câu mà không chiếm vị trí nào (vị trí 0): sau chúng là câu bình thường, động từ chia vẫn ở vị trí 2. Trước aber luôn có dấu phẩy."
+      examples:
+        - target: Ich trinke Kaffee, aber mein Mann trinkt Tee.
+          translation:
+            vi: Tôi uống cà phê, nhưng chồng tôi uống trà.
+        - target: Möchtest du Wasser oder Saft?
+          translation:
+            vi: Bạn muốn uống nước lọc hay nước ép?
+      confusion:
+        vi: "Sau aber không đảo động từ: \"aber ich möchte\" (đúng), không phải \"aber möchte ich\". Oder trong câu hỏi là \"hay\" (chọn một)."
+
+  - key: de:item:a1u03-kuchen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Kuchen, -
+      ipa: /ˈkuːxn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh ngọt, bánh bông lan
+      examples:
+        - target: Der Kuchen ist sehr lecker.
+          translation:
+            vi: Bánh ngọt rất ngon.
+      pronunciation_note:
+        vi: "ch sau u đọc như \"kh\" tiếng Việt: \"KU-khơn\"."
+
+  - key: de:item:a1u03-stueck
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Stück, -e
+      ipa: /ʃtʏk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: miếng, mẩu; cái (đơn vị đếm)
+      examples:
+        - target: Ein Stück Kuchen, bitte.
+          translation:
+            vi: Cho tôi một miếng bánh ngọt.
+      confusion:
+        vi: "Không dùng von: ein Stück Kuchen (không phải \"ein Stück von Kuchen\"). Làm đơn vị đếm sau số thì giữ nguyên: zwei Stück Kuchen."
+
+  - key: de:item:a1u03-glas
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Glas, ¨-er
+      ipa: /ɡlaːs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái cốc, cái ly (thủy tinh); thủy tinh
+      examples:
+        - target: Ein Glas Wasser, bitte.
+          translation:
+            vi: Cho tôi một cốc nước.
+      confusion:
+        vi: "Số nhiều die Gläser. Làm đơn vị đếm sau số có thể nói zwei Glas Wasser hoặc zwei Gläser Wasser."
+
+  - key: de:item:a1u03-tasse
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Tasse, -n
+      ipa: /ˈtasə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái tách, cái cốc (có quai)
+      examples:
+        - target: Eine Tasse Kaffee, bitte.
+          translation:
+            vi: Cho tôi một tách cà phê.
+      confusion:
+        vi: "Đơn vị giống cái có số nhiều sau số: zwei Tassen Kaffee."
+
+  - key: de:item:a1u03-flasche
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Flasche, -n
+      ipa: /ˈflaʃə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái chai
+      examples:
+        - target: Eine Flasche Wasser kostet einen Euro.
+          translation:
+            vi: Một chai nước giá một euro.
+      confusion:
+        vi: "Sau số dùng số nhiều: zwei Flaschen Saft."
+
+  - key: de:item:a1u03-zucker
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Zucker (Sg.)
+      ipa: /ˈtsʊkɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường (ăn)
+      examples:
+        - target: Möchten Sie Zucker? – Nein, danke.
+          translation:
+            vi: Ông/bà có dùng đường không ạ? – Không, cảm ơn.
+      pronunciation_note:
+        vi: "z đọc \"ts\": \"TSU-ka\"."
+
+  - key: de:item:a1u03-lecker
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: lecker
+      ipa: /ˈlɛkɐ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngon
+      examples:
+        - target: Die Suppe ist lecker!
+          translation:
+            vi: Súp ngon quá!
+      confusion:
+        vi: Lecker hơi thân mật; trong tình huống trang trọng hay nói Das schmeckt sehr gut.
+
+  - key: de:item:a1u03-suess
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: süß
+      ipa: /zyːs/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngọt; (người, con vật) dễ thương
+      examples:
+        - target: Der Kuchen ist sehr süß.
+          translation:
+            vi: Bánh ngọt rất ngọt.
+      pronunciation_note:
+        vi: "s đầu từ đọc gần \"d\" giọng Bắc, ü dài (lưỡi như \"i\", môi tròn như \"u\"), ß cuối đọc như \"x\"."
+
+  - key: de:item:a1u03-baeckerei
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Bäckerei, -en
+      ipa: /bɛkəˈʁaɪ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiệm bánh mì
+      examples:
+        - target: Die Bäckerei hier ist sehr gut.
+          translation:
+            vi: Tiệm bánh ở đây rất ngon.
+      confusion:
+        vi: "Danh từ có hậu tố -ei (die Bäckerei, die Metzgerei) là giống cái và nhấn vào -ei. Người làm bánh là der Bäcker."
+
+  - key: de:item:a1u03-was-darf-es-sein
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Was darf es sein?
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Quý khách dùng gì ạ? / Anh chị cần gì ạ? (người bán, phục vụ hỏi)
+      examples:
+        - target: Guten Tag! Was darf es sein? – Zwei Brötchen, bitte.
+          translation:
+            vi: Xin chào! Anh chị cần gì ạ? – Cho tôi hai cái bánh mì nhỏ.
+      confusion:
+        vi: Đây là câu của người bán; bạn chỉ cần hiểu và trả lời bằng tên món + bitte hoặc Ich hätte gern …
+
+  - key: de:item:a1u03-ich-haette-gern
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Ich hätte gern …
+      ipa: /ɪç ˈhɛtə ɡɛʁn/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Cho tôi … / Tôi muốn mua … (cách gọi món, mua hàng lịch sự nhất)
+      examples:
+        - target: Ich hätte gern ein Stück Kuchen.
+          translation:
+            vi: Cho tôi một miếng bánh ngọt.
+        - target: Ich hätte gern einen Kaffee.
+          translation:
+            vi: Cho tôi một ly cà phê.
+      confusion:
+        vi: "Học như một cụm cố định; danh từ sau nó ở Akkusativ (einen Kaffee). Đừng nhầm với Ich habe gern (tôi thích có)."
+
+  - key: de:item:a1u03-torte
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Torte, -n
+      ipa: /ˈtɔʁtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh kem nhiều tầng, bánh gatô
+      examples:
+        - target: Die Torte ist sehr groß.
+          translation:
+            vi: Cái bánh gatô rất to.
+      confusion:
+        vi: Torte thường có nhiều lớp kem; Kuchen là bánh ngọt đơn giản hơn.
+
+  - key: de:item:a1u03-sahne
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Sahne (Sg.)
+      ipa: /ˈzaːnə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kem sữa, kem tươi (đánh bông)
+      examples:
+        - target: Ein Stück Kuchen mit Sahne, bitte.
+          translation:
+            vi: Cho tôi một miếng bánh kèm kem tươi.
+      pronunciation_note:
+        vi: "h sau nguyên âm không đọc, chỉ làm a dài: \"DA-nơ\"."
+
+  - key: de:item:a1u03-eis
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Eis (Sg.)
+      ipa: /aɪ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kem (ăn); nước đá, băng
+      examples:
+        - target: Im Sommer essen die Kinder gern Eis.
+          translation:
+            vi: Mùa hè bọn trẻ thích ăn kem.
+      confusion:
+        vi: "Kem ăn là das Eis, không phải die Sahne (kem tươi phủ bánh)."
+
+  - key: de:item:a1u03-schokolade
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Schokolade, -n
+      ipa: /ʃokoˈlaːdə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sô-cô-la
+      examples:
+        - target: Magst du Schokolade?
+          translation:
+            vi: Bạn có thích sô-cô-la không?
+      pronunciation_note:
+        vi: "Nhấn vào LA: scho-ko-LA-de; sch đọc như \"s\" uốn lưỡi, tròn môi."
+
+  # ---------------- Bài 4: Auf dem Markt ----------------
+  - key: de:item:a1u03-g-zahlen-gross
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "hundert, tausend, eine Million · 2,50 € = zwei Euro fünfzig"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "100 = (ein)hundert, 1.000 = (ein)tausend, 1.000.000 = eine Million; số dưới một triệu viết liền thành một từ: 254 = zweihundertvierundfünfzig. Giống tiếng Việt, tiếng Đức dùng dấu phẩy cho phần thập phân và dấu chấm để tách hàng nghìn. Giá 2,50 € đọc là zwei Euro fünfzig."
+      examples:
+        - target: Das kostet zwei Euro fünfzig.
+          translation:
+            vi: Cái này giá hai euro năm mươi (2,50 €).
+        - target: Das Fahrrad kostet 450 Euro.
+          translation:
+            vi: Chiếc xe đạp giá 450 euro.
+      confusion:
+        vi: "Đừng theo thói quen tiếng Anh viết 2.50 hay 1,000. Với hàng trăm, đọc trăm trước rồi mới đến đơn vị và chục: 345 = dreihundertfünfundvierzig."
+
+  - key: de:item:a1u03-g-mengen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Wie viel? / Wie viele? · ein Kilo Tomaten"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Wie viel? hỏi lượng không đếm được và giá tiền (Wie viel kostet das?); Wie viele? hỏi danh từ đếm được số nhiều (Wie viele Äpfel?). Lượng + danh từ đứng liền nhau, không có von: ein Kilo Tomaten, 200 Gramm Käse. Sau số, Euro, Kilo, Gramm, Liter, Stück không thêm đuôi số nhiều, còn đơn vị giống cái thì có: zwei Flaschen, drei Tassen."
+      examples:
+        - target: Ich brauche ein Kilo Tomaten und 200 Gramm Käse.
+          translation:
+            vi: Tôi cần một cân cà chua và 200 gam pho mát.
+        - target: Wie viele Kartoffeln brauchst du?
+          translation:
+            vi: Bạn cần bao nhiêu củ khoai tây?
+      confusion:
+        vi: "Người Việt hay thêm \"von\" như tiếng Anh \"a kilo of\" hoặc thêm -s như \"zwei Euros\"; cả hai đều sai."
+
+  - key: de:item:a1u03-kosten
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kosten
+      ipa: /ˈkɔstn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: có giá, giá là
+      examples:
+        - target: Was kostet das?
+          translation:
+            vi: Cái này giá bao nhiêu?
+        - target: Die Tomaten kosten drei Euro.
+          translation:
+            vi: Cà chua giá ba euro.
+      confusion:
+        vi: "Gốc tận cùng bằng -t nên thêm -e-: es kostet. Vật là chủ ngữ: Das Brot kostet …, động từ chia theo vật (số ít kostet, số nhiều kosten)."
+
+  - key: de:item:a1u03-kaufen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kaufen
+      ipa: /ˈkaʊ̯fn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: mua
+      examples:
+        - target: Ich kaufe heute Obst und Gemüse.
+          translation:
+            vi: Hôm nay tôi mua trái cây và rau.
+      pronunciation_note:
+        vi: "au đọc như \"ao\": \"KAO-phơn\"."
+
+  - key: de:item:a1u03-brauchen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: brauchen
+      ipa: /ˈbʁaʊ̯xn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: cần
+      examples:
+        - target: Wir brauchen Milch und Brot.
+          translation:
+            vi: Chúng ta cần sữa và bánh mì.
+      pronunciation_note:
+        vi: "ch sau au đọc như \"kh\": \"BRAO-khơn\"."
+
+  - key: de:item:a1u03-euro
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Euro, -s
+      ipa: /ˈɔɪ̯ʁo/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng euro
+      examples:
+        - target: Das kostet drei Euro.
+          translation:
+            vi: Cái này giá ba euro.
+      pronunciation_note:
+        vi: "eu đọc như \"oi\": \"OI-ro\", không đọc \"iu-rô\" như tiếng Anh."
+      confusion:
+        vi: "Sau số luôn là Euro: drei Euro (không nói \"drei Euros\")."
+
+  - key: de:item:a1u03-cent
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Cent, -s
+      ipa: /sɛnt/ · /tsɛnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: xu (1/100 euro)
+      examples:
+        - target: Das kostet 99 Cent.
+          translation:
+            vi: Cái này giá 99 xu.
+      confusion:
+        vi: "Sau số dùng Cent không đuôi: 50 Cent. Khi nói giá có euro, người ta thường bỏ chữ Cent: 2,50 € = zwei Euro fünfzig."
+
+  - key: de:item:a1u03-kilo
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Kilo, -s
+      ipa: /ˈkiːlo/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ki-lô-gam, cân (viết tắt kg)
+      examples:
+        - target: Ein Kilo Tomaten, bitte.
+          translation:
+            vi: Cho tôi một cân cà chua.
+      confusion:
+        vi: "Sau số giữ nguyên Kilo: zwei Kilo Kartoffeln (không nói \"zwei Kilos\")."
+
+  - key: de:item:a1u03-tomate
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Tomate, -n
+      ipa: /toˈmaːtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả cà chua
+      examples:
+        - target: Die Tomaten sind heute billig.
+          translation:
+            vi: Hôm nay cà chua rẻ.
+      confusion:
+        vi: Ở Áo cà chua còn gọi là der Paradeiser; tiếng Đức chuẩn ở Đức dùng die Tomate.
+
+  - key: de:item:a1u03-kartoffel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Kartoffel, -n
+      ipa: /kaʁˈtɔfl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: củ khoai tây
+      examples:
+        - target: Ich brauche zwei Kilo Kartoffeln.
+          translation:
+            vi: Tôi cần hai cân khoai tây.
+      confusion:
+        vi: Ở Áo khoai tây còn gọi là der Erdapfel.
+
+  - key: de:item:a1u03-supermarkt
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Supermarkt, ¨-e
+      ipa: /ˈzuːpɐˌmaʁkt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: siêu thị
+      examples:
+        - target: Der Supermarkt ist sehr groß.
+          translation:
+            vi: Siêu thị rất lớn.
+      confusion:
+        vi: "Từ ghép super + der Markt (chợ): giống theo phần cuối, nên là der Supermarkt; số nhiều die Supermärkte."
+
+  - key: de:item:a1u03-teuer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: teuer
+      ipa: /ˈtɔɪ̯ɐ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đắt
+      examples:
+        - target: Der Fisch ist heute teuer.
+          translation:
+            vi: Hôm nay cá đắt.
+      pronunciation_note:
+        vi: "eu đọc \"oi\", -er cuối đọc \"a\" nhẹ: \"TOI-a\"."
+
+  - key: de:item:a1u03-billig
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: billig
+      ipa: /ˈbɪlɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: rẻ
+      examples:
+        - target: Die Kartoffeln sind billig.
+          translation:
+            vi: Khoai tây rẻ.
+      confusion:
+        vi: Billig đôi khi mang nghĩa "rẻ tiền, kém chất lượng"; muốn khen giá tốt, người Đức hay nói günstig.
+
+  - key: de:item:a1u03-gramm
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Gramm, -e
+      ipa: /ɡʁam/
+      pos: danh từ
+    back:
+      meaning:
+        vi: gam (viết tắt g)
+      examples:
+        - target: 200 Gramm Käse, bitte.
+          translation:
+            vi: Cho tôi 200 gam pho mát.
+      confusion:
+        vi: "Sau số luôn giữ nguyên Gramm: 500 Gramm Butter (không nói \"500 Gramme\")."
+
+  - key: de:item:a1u03-liter
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Liter, -
+      ipa: /ˈliːtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lít
+      examples:
+        - target: Ich brauche zwei Liter Milch.
+          translation:
+            vi: Tôi cần hai lít sữa.
+      confusion:
+        vi: "Cũng có thể nói das Liter (ở Thụy Sĩ chỉ dùng das); bài này dùng der Liter. Sau số giữ nguyên: zwei Liter."
+
+  - key: de:item:a1u03-packung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Packung, -en
+      ipa: /ˈpakʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: gói, hộp (bao bì)
+      examples:
+        - target: Eine Packung Nudeln, bitte.
+          translation:
+            vi: Cho tôi một gói mì.
+      confusion:
+        vi: "Đơn vị giống cái nên sau số có số nhiều: zwei Packungen Reis."
+
+  - key: de:item:a1u03-einkaufsliste
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Einkaufsliste, -n
+      ipa: /ˈaɪ̯nkaʊ̯fsˌlɪstə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: danh sách đồ cần mua
+      examples:
+        - target: Hast du die Einkaufsliste?
+          translation:
+            vi: Bạn có cầm danh sách đi chợ không?
+      confusion:
+        vi: "Từ ghép der Einkauf + s + die Liste: giống theo phần cuối (die), chữ s ở giữa là âm nối."
+
+  - key: de:item:a1u03-zwiebel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Zwiebel, -n
+      ipa: /ˈtsviːbl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: củ hành tây
+      examples:
+        - target: Wir brauchen noch drei Zwiebeln.
+          translation:
+            vi: Chúng ta còn cần ba củ hành tây.
+      pronunciation_note:
+        vi: "zw đọc \"ts\" + \"v\": \"TSVI-bơl\"."

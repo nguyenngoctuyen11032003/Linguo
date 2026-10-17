@@ -1,0 +1,365 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u03-was-isst-du-gern
+order_index: 1
+level: a1
+title:
+  vi: Bạn thích ăn gì? (Was isst du gern?)
+objectives:
+  - vi: Nói món mình thích và không thích ăn uống bằng gern / nicht gern.
+  - vi: Chia đúng các động từ đổi nguyên âm ở ngôi du và er/sie/es (essen – isst, fahren – fährt, lesen – liest).
+  - vi: Gọi tên các thực phẩm và đồ uống cơ bản kèm mạo từ.
+estimated_minutes: 13
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u02-wiederholung]
+items:
+  - item: de:item:a1u03-g-vokalwechsel
+  - item: de:item:a1u03-g-gern
+  - item: de:item:a1u03-essen
+  - item: de:item:a1u03-trinken
+  - item: de:item:a1u03-brot
+  - item: de:item:a1u03-milch
+  - item: de:item:a1u03-kaffee
+  - item: de:item:a1u03-wasser
+  - item: de:item:a1u03-saft
+  - item: de:item:a1u03-obst
+  - item: de:item:a1u03-gemuese
+  - item: de:item:a1u03-apfel
+  - item: de:item:a1u03-wurst
+  - item: de:item:a1u03-butter
+  - item: de:item:a1u03-fruehstueck
+  - item: de:item:a1u03-banane
+  - item: de:item:a1u03-wein
+  - item: de:item:p0u2-g-ch-laute
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Mình thích uống cà phê", "Bạn có thích ăn rau không?", "Anh ấy không thích uống sữa" bằng tiếng Đức, với động từ chia đúng.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói "thích + ăn"; tiếng Đức giữ động từ chính rồi thêm gern ngay sau động từ đã chia - Ich esse gern Obst. Không thích thì nói nicht gern - Ich trinke nicht gern Milch. Động từ chia vẫn đứng ở vị trí 2 như mọi câu kể.
+  - type: explain
+    text:
+      vi: Một số động từ đổi nguyên âm gốc, nhưng chỉ ở ngôi du và er/sie/es - e → i (essen - du isst, er isst; sprechen - du sprichst), e → ie (sehen - er sieht, lesen - er liest), a → ä (fahren - er fährt, schlafen - er schläft). Các ngôi ich, wir, ihr, sie/Sie chia bình thường - ich esse, wir essen, ihr esst.
+  - type: explain
+    text:
+      vi: Đuôi chia vẫn như bạn đã học (-st cho du, -t cho er/sie/es); chỉ nguyên âm trong gốc thay đổi. Gốc essen tận cùng bằng s nên du chỉ thêm -t - du isst.
+  - type: explain
+    text:
+      vi: Danh từ chỉ thức ăn, đồ uống nói chung thường không có mạo từ khi nói sở thích - Ich trinke gern Kaffee, Isst du gern Obst? Khi học từ, bạn vẫn phải nhớ giống - der Kaffee, die Milch, das Wasser.
+  - type: explain
+    text:
+      vi: Ôn phát âm ch - sau a, o, u, au đọc như "kh" tiếng Việt (Kuchen, brauchen); sau i, e, ä, ö, ü, ei, eu và sau l, n, r là âm "ich" nhẹ như hơi xì (Milch, ich, sprichst).
+  - type: deep_explain
+    text:
+      vi: Bữa sáng kiểu Đức (das Frühstück) thường có Brot hoặc Brötchen, bơ, mứt, pho mát, xúc xích thái lát (Wurst) và cà phê. Nhiều gia đình ăn tối nguội với bánh mì gọi là "Abendbrot", còn bữa nóng chính là bữa trưa. Câu hỏi "Was isst du gern?" (bạn thích ăn gì?) dùng với bạn bè, người cùng tuổi; với người lạ nói "Was essen Sie gern?". Gern cũng có thể đứng sau tân ngữ (Ich esse Äpfel gern), nhưng vị trí ngay sau động từ là tự nhiên và an toàn nhất.
+  - type: example
+    target: Ich trinke gern Kaffee, Tee trinke ich nicht gern.
+    target_lang: de
+    translation:
+      vi: Mình thích uống cà phê, còn trà thì mình không thích.
+    note:
+      vi: Vế sau đưa Tee lên đầu để nhấn mạnh, động từ trinke vẫn ở vị trí 2 và chủ ngữ ich đứng sau động từ.
+  - type: example
+    target: Was isst du gern?
+    target_lang: de
+    translation:
+      vi: Bạn thích ăn gì?
+    note:
+      vi: Nói với bạn bè (du). Essen đổi e → i ở ngôi du - isst.
+  - type: example
+    target: Mein Bruder isst nicht gern Gemüse.
+    target_lang: de
+    translation:
+      vi: Anh trai tôi không thích ăn rau.
+    note:
+      vi: Er (mein Bruder) cũng đổi nguyên âm - isst. Nicht gern = không thích.
+  - type: example
+    target: Lena fährt gern Fahrrad, und ihre Schwester liest gern.
+    target_lang: de
+    translation:
+      vi: Lena thích đạp xe, còn chị gái cô ấy thích đọc sách.
+    note:
+      vi: fahren → fährt (a → ä), lesen → liest (e → ie) ở ngôi er/sie/es.
+  - type: common_mistake
+    wrong: Ich gern esse Obst.
+    right: Ich esse gern Obst.
+    target_lang: de
+    note:
+      vi: Động từ chia luôn ở vị trí 2; gern đứng sau động từ, không chen vào giữa chủ ngữ và động từ như "tôi thích ăn" trong tiếng Việt.
+  - type: common_mistake
+    wrong: Du esst gern Brot.
+    right: Du isst gern Brot.
+    target_lang: de
+    note:
+      vi: Essen đổi e → i ở ngôi du và er/sie/es - du isst, er isst. Dạng esst chỉ dùng cho ihr.
+  - type: common_mistake
+    wrong: Ich mag essen Äpfel.
+    right: Ich esse gern Äpfel.
+    target_lang: de
+    note:
+      vi: Đừng dịch "thích" thành mögen rồi thêm một động từ nữa. Muốn nói thích làm gì, dùng động từ + gern.
+  - type: summary
+    points:
+      - vi: Thích làm gì = động từ chia + gern; không thích = nicht gern. Động từ ở vị trí 2.
+      - vi: e → i - essen (du isst, er isst), sprechen (du sprichst, er spricht).
+      - vi: e → ie - sehen (er sieht), lesen (er liest); a → ä - fahren (er fährt), schlafen (er schläft).
+      - vi: Chỉ ngôi du và er/sie/es đổi nguyên âm; ich, wir, ihr, sie/Sie chia bình thường.
+      - vi: der Kaffee, der Saft, der Apfel, der Wein · die Milch, die Wurst, die Butter, die Banane · das Brot, das Wasser, das Obst, das Gemüse, das Frühstück.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u03l1-mcq-du-isst
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-vokalwechsel
+    prompt:
+      stem: "Chọn dạng đúng cho chỗ trống: Du ___ gern Obst."
+      stem_lang: vi
+      options:
+        - { id: k4p, text: isst, lang: de }
+        - { id: w2e, text: esst, lang: de }
+        - { id: r7m, text: essen, lang: de }
+        - { id: b9t, text: esse, lang: de }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: Essen đổi e → i ở ngôi du - du isst. Esst là dạng của ihr, essen là của wir/sie/Sie, esse là của ich.
+    display_answer: isst
+
+  - key: de:exercise:a1u03l1-mcq-faehrt
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-vokalwechsel
+    prompt:
+      stem: "Chọn dạng đúng cho chỗ trống: Lena ___ gern Fahrrad."
+      stem_lang: vi
+      options:
+        - { id: h3s, text: fährt, lang: de }
+        - { id: n8c, text: fahrt, lang: de }
+        - { id: z1q, text: fährst, lang: de }
+        - { id: m6v, text: fahren, lang: de }
+    answer:
+      correct_option_id: h3s
+    explanation:
+      vi: Lena là sie (ngôi thứ ba số ít), fahren đổi a → ä ở ngôi này - sie fährt. Fahrt là dạng của ihr, fährst là của du.
+    display_answer: fährt
+
+  - key: de:exercise:a1u03l1-listen-kaffee-tee
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u03-g-gern
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich trinke nicht gern Kaffee. Ich trinke gern Tee.
+      options:
+        - { id: p5a, text: Tôi không thích uống cà phê. Tôi thích uống trà., lang: vi }
+        - { id: j2d, text: Tôi thích uống cà phê. Tôi không thích uống trà., lang: vi }
+        - { id: u8f, text: Tôi không uống cà phê. Tôi uống sữa., lang: vi }
+        - { id: c4g, text: Tôi thích uống cà phê và trà., lang: vi }
+    answer:
+      correct_option_id: p5a
+    explanation:
+      vi: Câu đầu có nicht gern (không thích) đi với Kaffee; câu sau có gern (thích) đi với Tee. Milch (sữa) không xuất hiện trong câu.
+    display_answer: Tôi không thích uống cà phê. Tôi thích uống trà.
+
+  - key: de:exercise:a1u03l1-fill-was-isst-du
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-essen
+    prompt:
+      template: "Was {{b1}} du gern? – Ich {{b2}} gern Gemüse."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Bạn thích ăn gì? – Mình thích ăn rau."
+        - "Gợi ý: động từ essen; ngôi du đổi e → i, ngôi ich chia bình thường."
+    answer:
+      blanks:
+        b1: [isst]
+        b2: [esse]
+    known_wrong:
+      - answer: esst
+        feedback_vi: Ngôi du của essen đổi e → i - du isst. Esst là dạng của ihr.
+        error_tag: vowel_change
+      - answer: isse
+        feedback_vi: Ngôi ich không đổi nguyên âm - ich esse.
+        error_tag: vowel_change
+    explanation:
+      vi: Ngôi du đổi nguyên âm - du isst; ngôi ich giữ nguyên gốc - ich esse.
+    display_answer: "Was isst du gern? – Ich esse gern Gemüse."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u03l1-fill-trinkt-isst
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-vokalwechsel
+    prompt:
+      template: "Mein Vater {{b1}} gern Saft. Meine Mutter {{b2}} gern Äpfel."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [trinkt]
+        b2: [isst]
+    known_wrong:
+      - answer: esst
+        feedback_vi: Essen đổi e → i ở ngôi er/sie/es - sie isst.
+        error_tag: vowel_change
+      - answer: trinken
+        feedback_vi: Mein Vater là er (ngôi thứ ba số ít), cần đuôi -t - er trinkt.
+        error_tag: verb_conjugation
+    explanation:
+      vi: Mein Vater = er nên trinken → trinkt (trinken không đổi nguyên âm). Meine Mutter = sie nên essen → isst (e → i).
+    display_answer: "Mein Vater trinkt gern Saft. Meine Mutter isst gern Äpfel."
+
+  - key: de:exercise:a1u03l1-tr-milch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-milch
+    prompt:
+      source_text: Bạn có thích uống sữa không? (hỏi bạn thân)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Trinkst du gern Milch?
+        - Trinkst du Milch gern?
+        - Magst du Milch?
+    known_wrong:
+      - answer: Trinken du gern Milch?
+        feedback_vi: Với du, động từ cần đuôi -st - Trinkst du …?
+        error_tag: verb_conjugation
+      - answer: Du gern trinkst Milch?
+        feedback_vi: Câu hỏi có/không đưa động từ chia lên đầu - Trinkst du gern Milch?
+        error_tag: verb_position
+      - answer: Magst du trinken Milch?
+        feedback_vi: Thích làm gì thì dùng động từ + gern - Trinkst du gern Milch? (hoặc Magst du Milch?, không thêm trinken).
+        error_tag: gern_moegen
+    explanation:
+      vi: Câu hỏi có/không - động từ chia đứng đầu, gern ngay sau chủ ngữ du. Hỏi bạn thân nên dùng du và đuôi -st - Trinkst du gern Milch? Khi nói, ch trong Milch là âm "ich" nhẹ, không đọc "kh".
+    display_answer: Trinkst du gern Milch?
+
+  - key: de:exercise:a1u03l1-tr-gemuese
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-vokalwechsel
+    prompt:
+      source_text: Anh ấy không thích ăn rau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Er isst nicht gern Gemüse.
+        - Er isst Gemüse nicht gern.
+        - Gemüse isst er nicht gern.
+        - Er mag kein Gemüse.
+    known_wrong:
+      - answer: Er esst nicht gern Gemüse.
+        feedback_vi: Essen đổi e → i ở ngôi er - er isst.
+        error_tag: vowel_change
+      - answer: Er nicht gern isst Gemüse.
+        feedback_vi: Động từ chia phải ở vị trí 2, ngay sau er - Er isst nicht gern Gemüse.
+        error_tag: verb_position
+      - answer: Er isst gern nicht Gemüse.
+        feedback_vi: Nicht đứng trước gern - nicht gern.
+        error_tag: word_order
+    explanation:
+      vi: Er + essen → er isst (e → i). "Không thích" là nicht gern, đặt ngay sau động từ chia.
+    display_answer: Er isst nicht gern Gemüse.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u03l1-wb-minh-aepfel
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-apfel
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Minh thích ăn táo.\""
+      tokens:
+        - { id: a1, text: Äpfel }
+        - { id: a2, text: gern }
+        - { id: a3, text: Minh }
+        - { id: a4, text: esst }
+        - { id: a5, text: isst }
+    answer:
+      orders:
+        - [a3, a5, a2, a1]
+        - [a3, a5, a1, a2]
+        - [a1, a5, a3, a2]
+        - [a2, a5, a3, a1]
+    explanation:
+      vi: Minh là er nên essen → isst. Động từ chia luôn ở vị trí 2; vị trí 1 thường là Minh, nhưng cũng có thể là Äpfel hoặc gern để nhấn mạnh. Táo nói chung dùng số nhiều Äpfel.
+    display_answer: Minh isst gern Äpfel.
+
+  - key: de:exercise:a1u03l1-tr-tochter-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u03-g-gern
+    prompt:
+      source_text: Meine Tochter isst nicht gern Obst, aber sie trinkt gern Saft.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Con gái tôi không thích ăn trái cây, nhưng nó thích uống nước ép.
+        - Con gái tôi không thích ăn hoa quả, nhưng nó thích uống nước ép.
+        - Con gái tôi không thích ăn trái cây nhưng thích uống nước ép.
+        - Con gái tôi không thích ăn hoa quả nhưng thích uống nước ép.
+        - Con gái tôi không thích ăn trái cây, nhưng con bé thích uống nước ép.
+        - Con gái tôi không thích ăn hoa quả, nhưng con bé thích uống nước hoa quả.
+        - Con gái mình không thích ăn trái cây, nhưng nó thích uống nước ép.
+        - Con gái mình không thích ăn hoa quả, nhưng thích uống nước ép.
+        - Con gái tôi không thích ăn trái cây, nhưng cháu thích uống nước ép.
+        - Con gái tôi không thích ăn trái cây, nhưng nó thích uống nước trái cây.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Con gái tôi thích ăn trái cây, nhưng nó không thích uống nước ép.
+        feedback_vi: Ngược nghĩa - nicht gern đi với Obst (không thích trái cây), gern đi với Saft (thích nước ép).
+        error_tag: negation_missed
+    explanation:
+      vi: Isst nicht gern Obst = không thích ăn trái cây; trinkt gern Saft = thích uống nước ép. Aber = nhưng (bạn sẽ học kỹ ở bài 3).
+    display_answer: Con gái tôi không thích ăn trái cây, nhưng nó thích uống nước ép.
+
+  - key: de:exercise:a1u03l1-mcq-satz-kaffee
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-gern
+    prompt:
+      stem: "Bạn muốn nói \"Mình thích uống cà phê.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s3k, text: Ich trinke gern Kaffee., lang: de }
+        - { id: f6n, text: Ich gern trinke Kaffee., lang: de }
+        - { id: y2w, text: Ich mag trinken Kaffee., lang: de }
+        - { id: e9r, text: Gern ich trinke Kaffee., lang: de }
+    answer:
+      correct_option_id: s3k
+    explanation:
+      vi: Động từ chia trinke phải ở vị trí 2 và gern đứng sau nó. "Ich gern trinke" và "Gern ich trinke" làm động từ rơi khỏi vị trí 2; "Ich mag trinken" dịch từng chữ từ "thích uống" nên sai.
+    display_answer: Ich trinke gern Kaffee.

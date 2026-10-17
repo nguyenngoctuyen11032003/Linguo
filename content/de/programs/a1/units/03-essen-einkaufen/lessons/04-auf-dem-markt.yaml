@@ -1,0 +1,353 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u03-auf-dem-markt
+order_index: 4
+level: a1
+title:
+  vi: Ở chợ, ở siêu thị – giá và số lượng (Auf dem Markt)
+objectives:
+  - vi: Hỏi giá và hiểu câu trả lời - Was kostet …? / Wie viel kostet …?
+  - vi: Đọc, nghe và nói số lớn (hundert, tausend) và giá tiền như 2,50 €.
+  - vi: Nói số lượng khi mua - ein Kilo Tomaten, 200 Gramm Käse; phân biệt Wie viel? và Wie viele?
+estimated_minutes: 14
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a1u03-ich-moechte]
+items:
+  - item: de:item:a1u03-g-zahlen-gross
+  - item: de:item:a1u03-g-mengen
+  - item: de:item:a1u03-kosten
+  - item: de:item:a1u03-kaufen
+  - item: de:item:a1u03-brauchen
+  - item: de:item:a1u03-euro
+  - item: de:item:a1u03-cent
+  - item: de:item:a1u03-kilo
+  - item: de:item:a1u03-tomate
+  - item: de:item:a1u03-kartoffel
+  - item: de:item:a1u03-supermarkt
+  - item: de:item:a1u03-teuer
+  - item: de:item:a1u03-billig
+  - item: de:item:a1u03-gramm
+  - item: de:item:a1u03-liter
+  - item: de:item:a1u03-packung
+  - item: de:item:a1u03-einkaufsliste
+  - item: de:item:a1u03-zwiebel
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đi chợ hoặc siêu thị ở Đức được - hỏi "Was kostet ein Kilo Tomaten?", nghe hiểu "zwei Euro fünfzig" và mua "500 Gramm Käse".
+  - type: explain
+    text:
+      vi: Số lớn ghép thành một từ - 100 = (ein)hundert, 345 = dreihundertfünfundvierzig, 1.000 = (ein)tausend, 2.500 = zweitausendfünfhundert, 1.000.000 = eine Million. Trong mỗi nhóm dưới 100, đơn vị vẫn đứng trước hàng chục như bạn đã học (fünfundvierzig = năm-và-bốn-mươi).
+  - type: explain
+    text:
+      vi: Giống tiếng Việt, tiếng Đức viết phần thập phân bằng dấu phẩy và tách hàng nghìn bằng dấu chấm - 2,50 €, 1.299 €. Đừng theo thói quen tiếng Anh viết 2.50. Giá 2,50 € đọc là zwei Euro fünfzig, 0,99 € đọc là neunundneunzig Cent.
+  - type: explain
+    text:
+      vi: Hỏi giá - Was kostet …? hoặc Wie viel kostet …? Động từ kosten chia theo món hàng - Der Käse kostet …, Die Tomaten kosten … Wie viel? hỏi lượng không đếm được, Wie viele? hỏi danh từ đếm được số nhiều - Wie viele Kartoffeln?
+  - type: explain
+    text:
+      vi: Lượng + danh từ đứng liền nhau, không có von - ein Kilo Tomaten, 200 Gramm Käse, ein Liter Milch. Sau số, Euro, Cent, Kilo, Gramm, Liter không thêm đuôi số nhiều (zwei Euro), còn đơn vị giống cái thì có (zwei Packungen, drei Flaschen).
+  - type: deep_explain
+    text:
+      vi: Khi nghe giá, hãy chú ý đuôi -zehn (13 - 19) và -zig (20 - 90) - fünfzehn (15) và fünfzig (50) rất dễ nghe nhầm. Cả hai đều nhấn FÜNF, nên hãy nghe kỹ phần cuối - -zehn đọc gần "tsên" (e dài), -zig đọc gần "tsích" với ch nhẹ như trong ich. Ở Đức nên mang túi riêng khi đi chợ; chai nhựa và chai thuỷ tinh thường có tiền cược (Pfand) mà bạn sẽ học sau. Ở Áo cà chua là der Paradeiser, khoai tây là der Erdapfel; Thụy Sĩ dùng đồng franc (CHF), không dùng euro.
+  - type: example
+    target: "Was kostet ein Kilo Tomaten? – Zwei Euro fünfzig."
+    target_lang: de
+    translation:
+      vi: "Một cân cà chua bao nhiêu tiền? – Hai euro năm mươi (2,50 €)."
+    note:
+      vi: Kilo đứng liền trước Tomaten, không có von. Khi đọc giá, chữ Cent thường được bỏ.
+  - type: example
+    target: Ich hätte gern 200 Gramm Käse und einen Liter Milch.
+    target_lang: de
+    translation:
+      vi: Cho tôi 200 gam pho mát và một lít sữa.
+    note:
+      vi: Nói với người bán (lịch sự). Der Liter là giống đực, làm tân ngữ nên thành einen Liter.
+  - type: example
+    target: "Wie viele Kartoffeln brauchst du? – Zwei Kilo."
+    target_lang: de
+    translation:
+      vi: "Bạn cần bao nhiêu khoai tây? – Hai cân."
+    note:
+      vi: Nói với bạn bè (du). Kartoffeln đếm được nên hỏi Wie viele; sau số, Kilo không đổi.
+  - type: example
+    target: Der Fernseher kostet 1.299 Euro. Das ist teuer!
+    target_lang: de
+    translation:
+      vi: Cái tivi giá 1.299 euro. Đắt quá!
+    note:
+      vi: 1.299 đọc là (ein)tausendzweihundertneunundneunzig; dấu chấm tách hàng nghìn.
+  - type: common_mistake
+    wrong: Das kostet zwei Euros.
+    right: Das kostet zwei Euro.
+    target_lang: de
+    note:
+      vi: Sau số, Euro giữ nguyên, không thêm -s như tiếng Anh.
+  - type: common_mistake
+    wrong: Ich brauche ein Kilo von Tomaten.
+    right: Ich brauche ein Kilo Tomaten.
+    target_lang: de
+    note:
+      vi: Lượng + danh từ đi liền, không dịch "of" của tiếng Anh thành von.
+  - type: common_mistake
+    wrong: Wie viel Kartoffeln brauchst du?
+    right: Wie viele Kartoffeln brauchst du?
+    target_lang: de
+    note:
+      vi: Kartoffeln đếm được và ở số nhiều, nên dùng Wie viele.
+  - type: summary
+    points:
+      - vi: hundert, tausend, eine Million; số dưới một triệu viết liền - dreihundertfünfundvierzig.
+      - vi: 2,50 € (dấu phẩy, giống tiếng Việt) = zwei Euro fünfzig; 0,99 € = neunundneunzig Cent.
+      - vi: Was kostet …? / Wie viel kostet …? - kostet (số ít), kosten (số nhiều).
+      - vi: Wie viel + không đếm được; Wie viele + số nhiều đếm được.
+      - vi: ein Kilo Tomaten, 200 Gramm Käse, ein Liter Milch - không có von.
+      - vi: zwei Euro, zwei Kilo, 500 Gramm, zwei Liter; nhưng zwei Flaschen, zwei Packungen.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u03l4-listen-preis-250
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-zahlen-gross
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das kostet zwei Euro fünfzig.
+      options:
+        - { id: a7b, text: "2,50 €", lang: de }
+        - { id: c2d, text: "2,15 €", lang: de }
+        - { id: e5f, text: "50,02 €", lang: de }
+        - { id: g8h, text: "2,05 €", lang: de }
+    answer:
+      correct_option_id: a7b
+    explanation:
+      vi: Zwei Euro fünfzig = 2 euro và 50 xu, viết 2,50 €. Fünfzig (50) khác fünfzehn (15) và fünf (5).
+    display_answer: "2,50 €"
+
+  - key: de:exercise:a1u03l4-listen-kilo-tomaten
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u03-tomate
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ein Kilo Tomaten kostet drei Euro neunzig.
+      options:
+        - { id: i3j, text: "Một cân cà chua giá 3,90 €.", lang: vi }
+        - { id: k6l, text: "Một cân cà chua giá 9,30 €.", lang: vi }
+        - { id: m1n, text: "Một cân khoai tây giá 3,90 €.", lang: vi }
+        - { id: o4p, text: "Ba cân cà chua giá 0,90 €.", lang: vi }
+    answer:
+      correct_option_id: i3j
+    explanation:
+      vi: Ein Kilo Tomaten = một cân cà chua; drei Euro neunzig = 3,90 €. Kartoffeln mới là khoai tây.
+    display_answer: "Một cân cà chua giá 3,90 €."
+
+  - key: de:exercise:a1u03l4-listen-550
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-zahlen-gross
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das Fahrrad kostet fünfhundertfünfzig Euro.
+      options:
+        - { id: q9r, text: "550 €", lang: de }
+        - { id: s2t, text: "515 €", lang: de }
+        - { id: u5v, text: "505 €", lang: de }
+        - { id: w8x, text: "5.050 €", lang: de }
+    answer:
+      correct_option_id: q9r
+    explanation:
+      vi: Fünfhundert = 500, fünfzig = 50, nên fünfhundertfünfzig = 550. 515 là fünfhundertfünfzehn, 505 là fünfhundertfünf.
+    display_answer: "550 €"
+
+  - key: de:exercise:a1u03l4-mcq-wie-viele
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-mengen
+    prompt:
+      stem: "Chọn từ đúng: Wie ___ Kartoffeln brauchst du?"
+      stem_lang: vi
+      options:
+        - { id: y3z, text: viele, lang: de }
+        - { id: b6c, text: viel, lang: de }
+        - { id: d9e, text: vielen, lang: de }
+        - { id: f2g, text: vieler, lang: de }
+    answer:
+      correct_option_id: y3z
+    explanation:
+      vi: Kartoffeln là danh từ đếm được ở số nhiều nên hỏi Wie viele. Wie viel dùng cho thứ không đếm được (Wie viel Milch?) hoặc giá tiền.
+    display_answer: viele
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u03l4-fill-kilo-gramm
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-mengen
+    prompt:
+      template: "Ich brauche zwei {{b1}} Kartoffeln und 300 {{b2}} Käse."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Kilo, Pfund]
+        b2: [Gramm]
+    known_wrong:
+      - answer: Kilos
+        feedback_vi: Sau số, Kilo giữ nguyên - zwei Kilo.
+        error_tag: plural_form
+      - answer: Gramme
+        feedback_vi: Sau số, Gramm giữ nguyên - 300 Gramm.
+        error_tag: plural_form
+      - answer: Kilo von
+        feedback_vi: Không dùng von - zwei Kilo Kartoffeln.
+        error_tag: preposition
+    explanation:
+      vi: Khoai tây thường mua theo cân - zwei Kilo; pho mát theo gam - 300 Gramm. Sau số, các đơn vị này không thêm đuôi số nhiều và đứng liền danh từ, không có von.
+    display_answer: Ich brauche zwei Kilo Kartoffeln und 300 Gramm Käse.
+
+  - key: de:exercise:a1u03l4-fill-zahl-345
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-zahlen-gross
+    prompt:
+      template: "345 € – {{b1}} Euro"
+      blanks:
+        - { id: b1, width_hint: 26 }
+    answer:
+      blanks:
+        b1: [dreihundertfünfundvierzig]
+    known_wrong:
+      - answer: dreihundertvierzigfünf
+        feedback_vi: Trong nhóm dưới 100, đơn vị đứng trước và nối bằng und - fünfundvierzig.
+        error_tag: number_order
+      - answer: dreihundertvierundfünfzig
+        feedback_vi: Đây là 354. 45 là fünfundvierzig (năm-và-bốn-mươi).
+        error_tag: number_order
+      - answer: drei hundert fünfundvierzig
+        feedback_vi: Số dưới một triệu viết liền thành một từ - dreihundertfünfundvierzig.
+        error_tag: spacing
+    explanation:
+      vi: 300 = dreihundert, 45 = fünfundvierzig (đơn vị trước, chục sau); ghép liền - dreihundertfünfundvierzig.
+    display_answer: 345 € – dreihundertfünfundvierzig Euro
+
+  - key: de:exercise:a1u03l4-tr-kilo-aepfel
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-kosten
+    prompt:
+      source_text: Một cân táo giá bao nhiêu?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Was kostet ein Kilo Äpfel?
+        - Wie viel kostet ein Kilo Äpfel?
+        - Wie teuer ist ein Kilo Äpfel?
+        - Was kostet ein Kilo Äpfel, bitte?
+        - Wie viel kostet ein Kilo Äpfel, bitte?
+    known_wrong:
+      - answer: Was kostet ein Kilo von Äpfeln?
+        feedback_vi: Không dùng von - ein Kilo Äpfel.
+        error_tag: preposition
+      - answer: Wie viele kostet ein Kilo Äpfel?
+        feedback_vi: Hỏi giá dùng Was kostet …? hoặc Wie viel kostet …?, không dùng viele.
+        error_tag: viel_viele
+      - answer: Was kostet ein Kilos Äpfel?
+        feedback_vi: Kilo không thêm -s - ein Kilo Äpfel.
+        error_tag: plural_form
+    explanation:
+      vi: Hỏi giá - Was kostet …? hoặc Wie viel kostet …?; chủ ngữ là ein Kilo nên động từ ở số ít - kostet. Táo dùng số nhiều Äpfel và đứng ngay sau Kilo.
+    display_answer: Was kostet ein Kilo Äpfel?
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u03l4-wb-wie-viel-kostet
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-mengen
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Đức: \"Một cân cà chua giá bao nhiêu?\""
+      tokens:
+        - { id: v1, text: Tomaten }
+        - { id: v2, text: kostet }
+        - { id: v3, text: Wie }
+        - { id: v4, text: Kilo }
+        - { id: v5, text: viel }
+        - { id: v6, text: ein }
+        - { id: v7, text: viele }
+        - { id: v8, text: von }
+    answer:
+      orders:
+        - [v3, v5, v2, v6, v4, v1]
+    explanation:
+      vi: Hỏi giá dùng Wie viel (không phải viele), rồi động từ kostet ở vị trí 2, chủ ngữ ein Kilo Tomaten đứng sau. Không có von giữa Kilo và Tomaten.
+    display_answer: Wie viel kostet ein Kilo Tomaten?
+
+  - key: de:exercise:a1u03l4-mcq-500-gramm
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-gramm
+    prompt:
+      stem: "Bạn đang ở chợ và muốn mua 500 gam cà chua. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h4i, text: Ich hätte gern 500 Gramm Tomaten., lang: de }
+        - { id: j7k, text: Ich hätte gern 500 Gramme Tomaten., lang: de }
+        - { id: l1m, text: Ich hätte gern 500 Gramm von Tomaten., lang: de }
+        - { id: n5o, text: Ich habe gern 500 Gramm Tomaten., lang: de }
+    answer:
+      correct_option_id: h4i
+    explanation:
+      vi: Sau số, Gramm giữ nguyên và đứng liền danh từ, không có von. Ich hätte gern … là cách mua lịch sự; Ich habe gern nghĩa là "tôi thích có", không phải lời mua hàng.
+    display_answer: Ich hätte gern 500 Gramm Tomaten.
+
+  - key: de:exercise:a1u03l4-tr-billig-teuer-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u03-billig
+    prompt:
+      source_text: Die Tomaten sind heute billig, aber die Kartoffeln sind teuer.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm nay cà chua rẻ, nhưng khoai tây đắt.
+        - Hôm nay cà chua rẻ nhưng khoai tây đắt.
+        - Hôm nay cà chua rẻ, nhưng khoai tây thì đắt.
+        - Cà chua hôm nay rẻ, nhưng khoai tây đắt.
+        - Cà chua hôm nay rẻ, nhưng khoai tây thì đắt.
+        - Hôm nay cà chua thì rẻ, nhưng khoai tây thì đắt.
+        - Hôm nay cà chua rẻ, còn khoai tây thì đắt.
+        - Hôm nay cà chua rẻ, nhưng khoai tây lại đắt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm nay cà chua đắt, nhưng khoai tây rẻ.
+        feedback_vi: Ngược nghĩa - billig là rẻ, teuer là đắt.
+        error_tag: meaning
+    explanation:
+      vi: Billig = rẻ, teuer = đắt; heute = hôm nay. Aber nối hai vế trái ngược nhau - "nhưng".
+    display_answer: Hôm nay cà chua rẻ, nhưng khoai tây đắt.

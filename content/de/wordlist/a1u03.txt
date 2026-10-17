@@ -1,0 +1,3 @@
+# Allow-list của unit A1U03 (Essen und Einkaufen): từ đúng tiếng Đức mà từ điển offline thiếu.
+# Gramme: số nhiều chuẩn của das Gramm (Duden); dùng làm phương án nhiễu "500 Gramme" (sau số phải là Gramm).
+Gramme

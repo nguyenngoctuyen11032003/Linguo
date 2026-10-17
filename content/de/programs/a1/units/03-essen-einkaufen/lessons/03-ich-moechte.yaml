@@ -1,0 +1,362 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u03-ich-moechte
+order_index: 3
+level: a1
+title:
+  vi: Tôi muốn… – möchten, mögen (Ich möchte ein Stück Kuchen.)
+objectives:
+  - vi: Đặt mua lịch sự ở tiệm bánh, quán cà phê bằng möchte và Ich hätte gern …
+  - vi: Phân biệt möchte (muốn ngay bây giờ) và mag (thích nói chung), chia đúng cả hai.
+  - vi: Nối hai ý bằng und, aber, oder mà không đổi trật tự từ.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u03-ich-nehme-den-salat]
+items:
+  - item: de:item:a1u03-g-moechten
+  - item: de:item:a1u03-g-moegen
+  - item: de:item:a1u03-g-und-aber-oder
+  - item: de:item:a1u03-kuchen
+  - item: de:item:a1u03-stueck
+  - item: de:item:a1u03-glas
+  - item: de:item:a1u03-tasse
+  - item: de:item:a1u03-flasche
+  - item: de:item:a1u03-zucker
+  - item: de:item:a1u03-lecker
+  - item: de:item:a1u03-suess
+  - item: de:item:a1u03-baeckerei
+  - item: de:item:a1u03-was-darf-es-sein
+  - item: de:item:a1u03-ich-haette-gern
+  - item: de:item:a1u03-torte
+  - item: de:item:a1u03-sahne
+  - item: de:item:a1u03-eis
+  - item: de:item:a1u03-schokolade
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mua được bánh và đồ uống một cách lịch sự ("Ich hätte gern ein Stück Kuchen."), nói điều mình thích ("Ich mag Schokolade.") và nối hai ý bằng und, aber, oder.
+  - type: explain
+    text:
+      vi: Möchte là "muốn" một cách lịch sự - dùng khi gọi món, mua hàng, mời. Chia - ich möchte, du möchtest, er/sie/es möchte, wir möchten, ihr möchtet, sie/Sie möchten. Ngôi er/sie/es giống hệt ngôi ich, không có -t.
+  - type: explain
+    text:
+      vi: Sau möchte có thể là danh từ ở Akkusativ (Ich möchte einen Kaffee.) hoặc một động từ nguyên thể. Động từ nguyên thể không chia và đứng cuối câu - Ich möchte ein Stück Kuchen essen. Tiếng Việt nói "muốn ăn" liền nhau, tiếng Đức tách ra hai đầu.
+  - type: explain
+    text:
+      vi: Mögen + danh từ là "thích" (nói chung, lâu dài) - Ich mag Kuchen. Chia - ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Mag = thích; möchte = muốn bây giờ - Ich mag Kaffee, aber jetzt möchte ich Tee.
+  - type: explain
+    text:
+      vi: Und (và), aber (nhưng), oder (hay, hoặc) đứng ở "vị trí 0" - chúng không chiếm chỗ, nên câu sau vẫn bắt đầu bình thường với chủ ngữ rồi động từ - …, aber ich möchte Tee. Trước aber luôn có dấu phẩy.
+  - type: deep_explain
+    text:
+      vi: Cụm "Ich hätte gern …" là cách gọi lịch sự nhất ở tiệm bánh, quán cà phê; bạn học nó như một cụm cố định (dạng hätte sẽ học ở A2). Người bán thường hỏi "Was darf es sein?" (Anh chị cần gì ạ?). Lượng + danh từ đứng liền nhau, không có von - ein Stück Kuchen, eine Tasse Kaffee, ein Glas Wasser, eine Flasche Saft. Chiều chủ nhật, nhiều gia đình Đức có thói quen "Kaffee und Kuchen" - cà phê và bánh ngọt khoảng 15 - 16 giờ.
+  - type: example
+    target: "Was darf es sein? – Ich hätte gern ein Stück Kuchen und eine Tasse Kaffee."
+    target_lang: de
+    translation:
+      vi: "Anh chị cần gì ạ? – Cho tôi một miếng bánh ngọt và một tách cà phê."
+    note:
+      vi: Người bán và khách nói chuyện lịch sự. Ein Stück Kuchen, eine Tasse Kaffee - không có von.
+  - type: example
+    target: Möchtest du ein Glas Wasser oder eine Flasche Saft?
+    target_lang: de
+    translation:
+      vi: Bạn muốn một cốc nước hay một chai nước ép?
+    note:
+      vi: Hỏi bạn bè (du) - du möchtest. Oder trong câu hỏi là "hay", chọn một trong hai.
+  - type: example
+    target: Meine Tochter mag Schokolade, aber sie möchte jetzt ein Eis.
+    target_lang: de
+    translation:
+      vi: Con gái tôi thích sô-cô-la, nhưng bây giờ con bé muốn ăn kem.
+    note:
+      vi: Mag = thích nói chung; möchte = muốn ngay lúc này. Sau aber, câu bắt đầu bình thường - sie möchte.
+  - type: example
+    target: Wir möchten zwei Stück Torte mit Sahne essen.
+    target_lang: de
+    translation:
+      vi: Chúng tôi muốn ăn hai miếng bánh gatô kèm kem tươi.
+    note:
+      vi: Möchten ở vị trí 2, động từ nguyên thể essen ở cuối câu. Sau số, Stück giữ nguyên.
+  - type: common_mistake
+    wrong: Er möchtet einen Kaffee.
+    right: Er möchte einen Kaffee.
+    target_lang: de
+    note:
+      vi: Möchte (cũng như mag) không có đuôi -t ở ngôi er/sie/es; ngôi này giống hệt ngôi ich.
+  - type: common_mistake
+    wrong: Ich möchte ein Glas von Wasser.
+    right: Ich möchte ein Glas Wasser.
+    target_lang: de
+    note:
+      vi: Lượng + danh từ đi liền, không dịch "of" của tiếng Anh thành von.
+  - type: common_mistake
+    wrong: Ich trinke Kaffee, aber möchte ich Tee.
+    right: Ich trinke Kaffee, aber ich möchte Tee.
+    target_lang: de
+    note:
+      vi: Aber ở vị trí 0, không làm đảo động từ - sau aber là chủ ngữ rồi mới đến động từ.
+  - type: summary
+    points:
+      - vi: möchten - ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.
+      - vi: möchte + Akkusativ (einen Kaffee) hoặc + động từ nguyên thể ở cuối câu.
+      - vi: mögen - ich mag, du magst, er mag, wir mögen, ihr mögt, sie/Sie mögen; mag = thích, möchte = muốn bây giờ.
+      - vi: und / aber / oder ở vị trí 0, không đổi trật tự; trước aber có dấu phẩy.
+      - vi: ein Stück Kuchen, eine Tasse Kaffee, ein Glas Wasser, eine Flasche Saft - không có von.
+      - vi: Người bán hỏi "Was darf es sein?"; bạn trả lời "Ich hätte gern …".
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u03l3-mcq-er-moechte
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-moechten
+    prompt:
+      stem: "Chọn dạng đúng cho chỗ trống: Er ___ ein Stück Kuchen."
+      stem_lang: vi
+      options:
+        - { id: c5j, text: möchte, lang: de }
+        - { id: u2n, text: möchtet, lang: de }
+        - { id: h8w, text: möchtest, lang: de }
+        - { id: z6r, text: möchten, lang: de }
+    answer:
+      correct_option_id: c5j
+    explanation:
+      vi: Ngôi er/sie/es của möchten giống ngôi ich - er möchte, không có -t. Möchtet là của ihr, möchtest của du, möchten của wir/sie/Sie.
+    display_answer: möchte
+
+  - key: de:exercise:a1u03l3-mcq-mag-fisch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-moegen
+    prompt:
+      stem: "Bạn muốn nói \"Tôi thích cá\" (nói chung, không phải đang gọi món). Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f3a, text: Ich mag Fisch., lang: de }
+        - { id: p7v, text: Ich möchte Fisch., lang: de }
+        - { id: s1e, text: Ich mögen Fisch., lang: de }
+        - { id: w9i, text: Ich magst Fisch., lang: de }
+    answer:
+      correct_option_id: f3a
+    explanation:
+      vi: Thích nói chung là mögen, ngôi ich là mag - Ich mag Fisch. "Ich möchte Fisch" nghĩa là muốn (ăn) cá bây giờ, không phải sở thích. Mögen là nguyên thể (và ngôi wir/sie), magst là dạng của du.
+    display_answer: Ich mag Fisch.
+
+  - key: de:exercise:a1u03l3-listen-kuchen-kaffee
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u03-ich-haette-gern
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich hätte gern zwei Stück Kuchen und eine Tasse Kaffee.
+      options:
+        - { id: j4k, text: Cho tôi hai miếng bánh ngọt và một tách cà phê., lang: vi }
+        - { id: y7d, text: Cho tôi một miếng bánh ngọt và hai tách cà phê., lang: vi }
+        - { id: b3m, text: Cho tôi hai miếng bánh ngọt và một cốc nước., lang: vi }
+        - { id: o6p, text: Tôi có hai miếng bánh ngọt và một tách cà phê., lang: vi }
+    answer:
+      correct_option_id: j4k
+    explanation:
+      vi: "Ich hätte gern … là \"Cho tôi …\" (gọi lịch sự), không phải \"tôi có\". Zwei Stück Kuchen = hai miếng bánh, eine Tasse Kaffee = một tách cà phê."
+    display_answer: Cho tôi hai miếng bánh ngọt và một tách cà phê.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u03l3-fill-moechtest-moechte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-moechten
+    prompt:
+      template: "Was {{b1}} du trinken? – Ich {{b2}} ein Glas Saft."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [möchtest]
+        b2: [möchte, nehme]
+    known_wrong:
+      - answer: möchtet
+        feedback_vi: Möchtet là dạng của ihr. Du → möchtest, ich → möchte.
+        error_tag: verb_conjugation
+      - answer: mag
+        feedback_vi: Mag là thích nói chung; khi muốn một thứ ngay bây giờ, dùng möchte.
+        error_tag: moechten_moegen
+      - answer: magst
+        feedback_vi: Câu hỏi muốn uống gì bây giờ nên dùng möchtest, không dùng magst (thích nói chung).
+        error_tag: moechten_moegen
+    explanation:
+      vi: Hỏi muốn uống gì - Was möchtest du trinken? (trinken nguyên thể ở cuối). Trả lời - Ich möchte ein Glas Saft.
+    display_answer: "Was möchtest du trinken? – Ich möchte ein Glas Saft."
+
+  - key: de:exercise:a1u03l3-fill-moegen-mag
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-moegen
+    prompt:
+      template: "Meine Töchter {{b1}} Schokolade sehr. Mein Sohn {{b2}} Schokolade auch sehr."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [mögen]
+        b2: [mag]
+    known_wrong:
+      - answer: mögt
+        feedback_vi: Mögt là dạng của ihr. Meine Töchter = sie (số nhiều) → mögen.
+        error_tag: verb_conjugation
+      - answer: magt
+        feedback_vi: Mag không có đuôi -t ở ngôi er - er mag.
+        error_tag: verb_conjugation
+      - answer: möchten
+        feedback_vi: "\"Thích sô-cô-la rất nhiều\" là sở thích, dùng mögen; möchten là muốn ngay bây giờ."
+        error_tag: moechten_moegen
+    explanation:
+      vi: Mögen + danh từ = thích. Số nhiều (meine Töchter = sie) → mögen; ngôi er (mein Sohn) → mag, không có -t.
+    display_answer: Meine Töchter mögen Schokolade sehr. Mein Sohn mag Schokolade auch sehr.
+
+  - key: de:exercise:a1u03l3-tr-glas-wasser
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-glas
+    prompt:
+      source_text: Tôi muốn một cốc nước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte ein Glas Wasser.
+        - Ich möchte bitte ein Glas Wasser.
+        - Ich möchte ein Glas Wasser, bitte.
+        - Ich hätte gern ein Glas Wasser.
+        - Ich möchte gern ein Glas Wasser.
+    known_wrong:
+      - answer: Ich möchte ein Glas von Wasser.
+        feedback_vi: Không dùng von - ein Glas Wasser.
+        error_tag: preposition
+      - answer: Ich möchtet ein Glas Wasser.
+        feedback_vi: Ngôi ich là möchte, không có -t.
+        error_tag: verb_conjugation
+      - answer: Ich mag ein Glas Wasser.
+        feedback_vi: Mag là thích nói chung; muốn một thứ ngay bây giờ thì dùng möchte.
+        error_tag: moechten_moegen
+    explanation:
+      vi: "\"Muốn\" khi gọi đồ là möchte; lượng + danh từ đi liền - ein Glas Wasser. Ich hätte gern … cũng đúng và còn lịch sự hơn."
+    display_answer: Ich möchte ein Glas Wasser.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u03l3-wb-tee-aber-kaffee
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u03-g-und-aber-oder
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Minh muốn trà, nhưng Anna muốn cà phê.\""
+      tokens:
+        - { id: m1, text: aber }
+        - { id: m2, text: Tee }
+        - { id: m3, text: möchte }
+        - { id: m4, text: Anna }
+        - { id: m5, text: Kaffee }
+        - { id: m6, text: Minh }
+        - { id: m7, text: möchte }
+    answer:
+      orders:
+        - [m6, m3, m2, m1, m4, m7, m5]
+        - [m6, m7, m2, m1, m4, m3, m5]
+        - [m6, m3, m2, m1, m5, m7, m4]
+        - [m6, m7, m2, m1, m5, m3, m4]
+        - [m2, m3, m6, m1, m4, m7, m5]
+        - [m2, m7, m6, m1, m4, m3, m5]
+        - [m2, m3, m6, m1, m5, m7, m4]
+        - [m2, m7, m6, m1, m5, m3, m4]
+    explanation:
+      vi: Aber đứng ở vị trí 0 nên câu sau vẫn là Anna möchte Kaffee - động từ ở vị trí 2, không đảo thành "aber möchte Anna". Trong mỗi vế, möchte luôn đứng thứ hai.
+    display_answer: Minh möchte Tee, aber Anna möchte Kaffee.
+
+  - key: de:exercise:a1u03l3-mcq-oder
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-und-aber-oder
+    prompt:
+      stem: "Người phục vụ muốn bạn chọn MỘT trong hai đồ uống: \"Möchten Sie Kaffee ___ Tee?\" Chọn từ đúng."
+      stem_lang: vi
+      options:
+        - { id: x2o, text: oder, lang: de }
+        - { id: d8a, text: aber, lang: de }
+        - { id: l5u, text: und, lang: de }
+        - { id: q1s, text: auch, lang: de }
+    answer:
+      correct_option_id: x2o
+    explanation:
+      vi: Oder = hay, hoặc - dùng khi chọn một trong hai. Und (và) nghĩa là lấy cả hai; aber (nhưng) diễn tả sự trái ngược; auch (cũng) không nối hai danh từ.
+    display_answer: oder
+
+  - key: de:exercise:a1u03l3-mcq-haette-gern
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-ich-haette-gern
+    prompt:
+      stem: "Ở tiệm bánh, người bán hỏi \"Was darf es sein?\". Bạn muốn mua một miếng bánh táo một cách lịch sự. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: v4g, text: Ich hätte gern ein Stück Apfelkuchen., lang: de }
+        - { id: k9e, text: Ich hätte gern ein Stück von Apfelkuchen., lang: de }
+        - { id: t2h, text: Ich möchtet ein Stück Apfelkuchen., lang: de }
+        - { id: n7z, text: Ich habe gern ein Stück Apfelkuchen., lang: de }
+    answer:
+      correct_option_id: v4g
+    explanation:
+      vi: Ich hätte gern … là cách mua lịch sự; ein Stück Apfelkuchen không có von. Ich möchtet sai đuôi (ngôi ich là möchte); Ich habe gern nghĩa là "tôi thích có", không phải lời gọi món.
+    display_answer: Ich hätte gern ein Stück Apfelkuchen.
+
+  - key: de:exercise:a1u03l3-tr-mag-moechte-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a1u03-g-moegen
+    prompt:
+      source_text: Ich mag Kuchen, aber jetzt möchte ich nichts essen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích bánh ngọt, nhưng bây giờ tôi không muốn ăn gì.
+        - Tôi thích bánh ngọt, nhưng bây giờ tôi không muốn ăn gì cả.
+        - Tôi thích bánh ngọt nhưng bây giờ tôi không muốn ăn gì.
+        - Tôi thích bánh, nhưng bây giờ tôi không muốn ăn gì.
+        - Tôi thích bánh ngọt, nhưng giờ tôi không muốn ăn gì.
+        - Tôi thích bánh ngọt, nhưng bây giờ tôi chẳng muốn ăn gì.
+        - Mình thích bánh ngọt, nhưng bây giờ mình không muốn ăn gì.
+        - Tôi thích bánh ngọt, nhưng lúc này tôi không muốn ăn gì.
+        - Tôi thích bánh ngọt, nhưng bây giờ tôi không muốn ăn gì hết.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi muốn bánh ngọt, nhưng bây giờ tôi không thích ăn gì.
+        feedback_vi: Ngược nghĩa - mag là thích, möchte là muốn.
+        error_tag: moechten_moegen
+    explanation:
+      vi: Mag = thích (nói chung); möchte … essen = muốn ăn (bây giờ); nichts = không gì cả. Sau aber, jetzt đứng đầu nên động từ möchte đứng ngay sau nó (vị trí 2).
+    display_answer: Tôi thích bánh ngọt, nhưng bây giờ tôi không muốn ăn gì.

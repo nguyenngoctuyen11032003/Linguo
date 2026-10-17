@@ -1,0 +1,361 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u03-wiederholung
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập – thực đơn, danh sách mua sắm (Wiederholung)
+objectives:
+  - vi: Đọc hiểu thực đơn và quảng cáo siêu thị ngắn (kiểu Start Deutsch 1, Lesen Teil 2).
+  - vi: Viết tin nhắn ngắn nhờ người khác mua đồ và một danh sách đi chợ.
+  - vi: Nghe hiểu hội thoại mua bán ngắn, nhất là giá tiền (kiểu Hören Teil 1).
+estimated_minutes: 18
+skills: [reading, writing, listening, speaking]
+prerequisites: [de:lesson:a1u03-auf-dem-markt]
+items:
+  - item: de:item:a1u03-g-vokalwechsel
+    role: reuse
+  - item: de:item:a1u03-g-gern
+    role: reuse
+  - item: de:item:a1u03-g-akkusativ
+    role: reuse
+  - item: de:item:a1u03-g-moechten
+    role: reuse
+  - item: de:item:a1u03-g-moegen
+    role: reuse
+  - item: de:item:a1u03-g-und-aber-oder
+    role: reuse
+  - item: de:item:a1u03-g-zahlen-gross
+    role: reuse
+  - item: de:item:a1u03-g-mengen
+    role: reuse
+  - item: de:item:a1u03-speisekarte
+    role: reuse
+  - item: de:item:a1u03-kosten
+    role: reuse
+  - item: de:item:a1u03-kaufen
+    role: reuse
+  - item: de:item:a1u03-brauchen
+    role: reuse
+  - item: de:item:a1u03-einkaufsliste
+    role: reuse
+  - item: de:item:a1u03-flasche
+    role: reuse
+  - item: de:item:a1u03-stueck
+    role: reuse
+  - item: de:item:a1u03-fisch
+    role: reuse
+  - item: de:item:a1u03-fleisch
+    role: reuse
+  - item: de:item:a1u03-tomate
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này không có ngữ pháp mới. Bạn dùng lại mọi thứ đã học trong unit để đọc thực đơn, quảng cáo, viết tin nhắn nhờ mua đồ và nghe giá tiền - đúng các dạng bài của kỳ thi Start Deutsch 1.
+  - type: explain
+    text:
+      vi: Khi đọc thực đơn hay quảng cáo, bạn không cần hiểu từng chữ. Hãy đọc câu hỏi trước, rồi tìm đúng dòng có món hàng và con số được hỏi.
+  - type: explain
+    text:
+      vi: Tin nhắn nhờ mua đồ thường có ba phần - lời chào (Hallo Tom,), việc cần nhờ (Wir brauchen … / Kaufst du bitte …?), lời cảm ơn và tên (Danke! Lisa). Món hàng là tân ngữ nên nhớ Akkusativ - einen Salat, eine Flasche Wein.
+  - type: explain
+    text:
+      vi: Khi nghe mua bán, giá tiền thường đến ở cuối, sau "Das kostet …" hoặc "Das macht …" (tổng cộng là …). Chú ý đuôi -zehn và -zig, và nhớ rằng giá được đọc là "Euro" rồi đến số xu.
+  - type: deep_explain
+    text:
+      vi: Trong Start Deutsch 1, phần đọc có dạng chọn đúng/sai (richtig/falsch) hoặc chọn thông tin từ quảng cáo; phần viết thứ hai là một tin nhắn khoảng 30 từ theo ba ý cho sẵn. Bạn nên viết câu ngắn, mỗi câu một ý, động từ ở vị trí 2, và dùng những mẫu chắc chắn đúng - Ich möchte …, Wir brauchen …, Kaufst du bitte …? Thông tin về dạng đề ở đây chỉ để luyện tập, hãy xem mô tả đề chính thức của Goethe-Institut trước khi thi.
+  - type: example
+    target: "Hallo Tom, wir brauchen noch Milch, Brot und Tomaten. Kaufst du bitte auch zwei Flaschen Wasser? Danke! Lisa"
+    target_lang: de
+    translation:
+      vi: "Chào Tom, nhà mình còn cần sữa, bánh mì và cà chua. Cậu mua giúp luôn hai chai nước nhé? Cảm ơn! Lisa"
+    note:
+      vi: Tin nhắn giữa bạn cùng nhà (du). "Kaufst du bitte …?" là cách nhờ lịch sự mà bạn đã học được - câu hỏi có/không với bitte.
+  - type: example
+    target: "Guten Tag, was darf es sein? – Ich hätte gern ein Kilo Kartoffeln und 200 Gramm Käse. – Gern. Das macht vier Euro achtzig."
+    target_lang: de
+    translation:
+      vi: "Xin chào, anh chị cần gì ạ? – Cho tôi một cân khoai tây và 200 gam pho mát. – Vâng. Tổng cộng là 4,80 €."
+    note:
+      vi: Người bán và khách nói lịch sự. Das macht … = tổng cộng là …
+  - type: example
+    target: Ich esse gern Fisch, aber ich mag kein Fleisch.
+    target_lang: de
+    translation:
+      vi: Tôi thích ăn cá, nhưng tôi không thích thịt.
+    note:
+      vi: Động từ + gern (thích làm gì) và mögen + danh từ (thích cái gì); sau aber, câu giữ nguyên trật tự.
+  - type: common_mistake
+    wrong: Kaufst du bitte ein Salat?
+    right: Kaufst du bitte einen Salat?
+    target_lang: de
+    note:
+      vi: Salat là giống đực và là thứ được mua (tân ngữ), nên ein → einen.
+  - type: common_mistake
+    wrong: Wir brauchen zwei Flasche Wasser.
+    right: Wir brauchen zwei Flaschen Wasser.
+    target_lang: de
+    note:
+      vi: Flasche là giống cái nên sau số phải dùng số nhiều Flaschen; chỉ Kilo, Gramm, Liter, Euro, Stück mới giữ nguyên.
+  - type: summary
+    points:
+      - vi: Đọc câu hỏi trước, rồi tìm dòng có món hàng và con số.
+      - vi: Tin nhắn - lời chào, việc cần nhờ (Wir brauchen … / Kaufst du bitte …?), cảm ơn và tên.
+      - vi: Món hàng là tân ngữ - einen Salat, eine Flasche, ein Kilo.
+      - vi: Giá - Das kostet … / Das macht … ; 4,80 € = vier Euro achtzig.
+      - vi: Thích làm gì = động từ + gern; thích cái gì = mögen; muốn bây giờ = möchte.
+exercises:
+  # ---------------- recognition: Lesen ----------------
+  - key: de:exercise:a1u03l5-mcq-angebot-milch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-zahlen-gross
+    prompt:
+      stem: "Supermarkt Sonnenblick – Angebote: Tomaten, 1 Kilo: 1,99 €. Kartoffeln, 2 Kilo: 2,49 €. Milch, 1 Liter: 0,99 €. Kaffee, 500 Gramm: 4,99 €. Brötchen, 6 Stück: 1,50 €. – Was kostet ein Liter Milch?"
+      stem_lang: de
+      options:
+        - { id: r1a, text: "0,99 €", lang: de }
+        - { id: r1b, text: "1,99 €", lang: de }
+        - { id: r1c, text: "9,90 €", lang: de }
+        - { id: r1d, text: "1,50 €", lang: de }
+    answer:
+      correct_option_id: r1a
+    explanation:
+      vi: Tìm dòng "Milch, 1 Liter" trong quảng cáo - giá 0,99 €. 1,99 € là giá cà chua, 1,50 € là giá sáu cái bánh mì nhỏ. (Dạng đọc quảng cáo của Start Deutsch 1.)
+    display_answer: "0,99 €"
+
+  - key: de:exercise:a1u03l5-mcq-angebot-tomaten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-tomate
+    prompt:
+      stem: "Supermarkt Sonnenblick – Angebote: Tomaten, 1 Kilo: 1,99 €. Kartoffeln, 2 Kilo: 2,49 €. Milch, 1 Liter: 0,99 €. Kaffee, 500 Gramm: 4,99 €. Brötchen, 6 Stück: 1,50 €. – Richtig oder falsch? Ein Kilo Tomaten kostet 2,49 €."
+      stem_lang: de
+      options:
+        - { id: r2a, text: Falsch, lang: de }
+        - { id: r2b, text: Richtig, lang: de }
+    answer:
+      correct_option_id: r2a
+    explanation:
+      vi: Sai (falsch). Một cân cà chua giá 1,99 €; 2,49 € là giá của hai cân khoai tây. Câu đúng/sai thường "đánh tráo" con số giữa hai dòng gần nhau.
+    display_answer: Falsch
+
+  - key: de:exercise:a1u03l5-mcq-speisekarte-anna
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-speisekarte
+    prompt:
+      stem: "Café Linde – Speisekarte: Tomatensuppe 4,50 € · Salat mit Hähnchen 8,90 € · Fisch mit Reis 12,50 € · Apfelkuchen (ein Stück) 3,20 € · Kaffee (eine Tasse) 2,60 €. – Anna isst kein Fleisch und keinen Fisch. Sie möchte etwas Warmes essen. Was nimmt sie?"
+      stem_lang: de
+      options:
+        - { id: r3a, text: die Tomatensuppe, lang: de }
+        - { id: r3b, text: den Salat mit Hähnchen, lang: de }
+        - { id: r3c, text: den Fisch mit Reis, lang: de }
+    answer:
+      correct_option_id: r3a
+    explanation:
+      vi: Anna không ăn thịt (Fleisch) và không ăn cá (Fisch), lại muốn món nóng (etwas Warmes) - chỉ còn súp cà chua. Hähnchen là thịt gà nên cũng bị loại.
+    display_answer: die Tomatensuppe
+
+  - key: de:exercise:a1u03l5-mcq-sms-lisa
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-brauchen
+    prompt:
+      stem: "Hallo Tom, wir brauchen noch Milch, Brot und Tomaten. Kaufst du bitte auch zwei Flaschen Wasser? Danke! Lisa – Richtig oder falsch? Tom kauft auch Käse."
+      stem_lang: de
+      options:
+        - { id: r4a, text: Falsch, lang: de }
+        - { id: r4b, text: Richtig, lang: de }
+    answer:
+      correct_option_id: r4a
+    explanation:
+      vi: Sai (falsch). Lisa nhờ mua sữa, bánh mì, cà chua và hai chai nước; tin nhắn không nhắc đến pho mát (Käse).
+    display_answer: Falsch
+
+  # ---------------- recognition: Hören ----------------
+  - key: de:exercise:a1u03l5-listen-das-macht
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-zahlen-gross
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag, was darf es sein? – Ich hätte gern ein Kilo Kartoffeln und drei Tomaten. – Gern. Das macht drei Euro zwanzig."
+      options:
+        - { id: h1a, text: "3,20 €", lang: de }
+        - { id: h1b, text: "3,12 €", lang: de }
+        - { id: h1c, text: "2,30 €", lang: de }
+        - { id: h1d, text: "20,30 €", lang: de }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: Giá nằm ở cuối - "Das macht drei Euro zwanzig" = tổng cộng 3,20 €. Euro đọc trước, số xu đọc sau. (Dạng nghe hội thoại ngắn của Start Deutsch 1.)
+    display_answer: "3,20 €"
+
+  - key: de:exercise:a1u03l5-listen-bestellung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u03-stueck
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich nehme die Suppe und ein Glas Wasser. Und als Nachtisch ein Stück Kuchen, bitte.
+      options:
+        - { id: h2a, text: "Khách gọi súp, một cốc nước và một miếng bánh ngọt tráng miệng.", lang: vi }
+        - { id: h2b, text: "Khách gọi salad, một cốc nước và một miếng bánh ngọt tráng miệng.", lang: vi }
+        - { id: h2c, text: "Khách gọi súp, một chai nước ép và một cây kem tráng miệng.", lang: vi }
+        - { id: h2d, text: "Khách gọi súp và một tách cà phê, không gọi tráng miệng.", lang: vi }
+    answer:
+      correct_option_id: h2a
+    explanation:
+      vi: Die Suppe = súp, ein Glas Wasser = một cốc nước, als Nachtisch ein Stück Kuchen = tráng miệng một miếng bánh ngọt.
+    display_answer: "Khách gọi súp, một cốc nước và một miếng bánh ngọt tráng miệng."
+
+  # ---------------- recall: Schreiben ----------------
+  - key: de:exercise:a1u03l5-fill-sms-salat-wein
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-akkusativ
+    prompt:
+      template: "Hallo Tom, ich koche heute Abend. Kaufst du bitte {{b1}} Salat und {{b2}} Flasche Wein? Danke! Lisa"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [einen]
+        b2: [eine]
+    known_wrong:
+      - answer: ein
+        feedback_vi: Salat là giống đực và là tân ngữ của kaufen nên ein → einen; Flasche là giống cái nên dùng eine.
+        error_tag: case_dat_akk
+    explanation:
+      vi: Salat và Flasche đều là thứ được mua (Akkusativ). Der Salat (giống đực) → einen Salat; die Flasche (giống cái) giữ nguyên → eine Flasche.
+    display_answer: "Hallo Tom, ich koche heute Abend. Kaufst du bitte einen Salat und eine Flasche Wein? Danke! Lisa"
+
+  - key: de:exercise:a1u03l5-tr-tomaten-wasser
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-mengen
+    prompt:
+      source_text: Tôi muốn mua một cân cà chua và hai chai nước.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte ein Kilo Tomaten und zwei Flaschen Wasser kaufen.
+        - Ich möchte gern ein Kilo Tomaten und zwei Flaschen Wasser kaufen.
+        - Ich möchte ein Kilo Tomaten und zwei Flaschen Wasser.
+        - Ich hätte gern ein Kilo Tomaten und zwei Flaschen Wasser.
+        - Ich möchte zwei Flaschen Wasser und ein Kilo Tomaten kaufen.
+    known_wrong:
+      - answer: Ich möchte kaufen ein Kilo Tomaten und zwei Flaschen Wasser.
+        feedback_vi: Động từ nguyên thể kaufen phải đứng cuối câu.
+        error_tag: verb_position
+      - answer: Ich möchte ein Kilo Tomaten und zwei Flasche Wasser kaufen.
+        feedback_vi: Flasche là giống cái nên sau số dùng số nhiều - zwei Flaschen.
+        error_tag: plural_form
+      - answer: Ich möchte ein Kilo von Tomaten und zwei Flaschen Wasser kaufen.
+        feedback_vi: Không dùng von - ein Kilo Tomaten.
+        error_tag: preposition
+    explanation:
+      vi: Möchte ở vị trí 2, kaufen ở cuối câu. Ein Kilo Tomaten (Kilo không đổi), zwei Flaschen Wasser (Flasche giống cái nên có số nhiều), không có von.
+    display_answer: Ich möchte ein Kilo Tomaten und zwei Flaschen Wasser kaufen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u03l5-wb-kaufst-du
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-kaufen
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Đức (nhắn cho bạn cùng nhà): \"Cậu mua sữa và bánh mì nhé?\""
+      tokens:
+        - { id: k1, text: Brot }
+        - { id: k2, text: und }
+        - { id: k3, text: Milch }
+        - { id: k4, text: du }
+        - { id: k5, text: Kaufst }
+        - { id: k6, text: kaufen }
+    answer:
+      orders:
+        - [k5, k4, k3, k2, k1]
+        - [k5, k4, k1, k2, k3]
+    explanation:
+      vi: Câu hỏi có/không - động từ chia (Kaufst, ngôi du) đứng đầu, rồi chủ ngữ du và hai món hàng nối bằng und. Kaufen là nguyên thể, không đi với du.
+    display_answer: Kaufst du Milch und Brot?
+
+  - key: de:exercise:a1u03l5-wb-lisa-kuchen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u03-g-moechten
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Lisa muốn mua hai miếng bánh ngọt.\""
+      tokens:
+        - { id: l1, text: kaufen }
+        - { id: l2, text: Stück }
+        - { id: l3, text: Lisa }
+        - { id: l4, text: zwei }
+        - { id: l5, text: möchte }
+        - { id: l6, text: Kuchen }
+        - { id: l7, text: von }
+    answer:
+      orders:
+        - [l3, l5, l4, l2, l6, l1]
+        - [l4, l2, l6, l5, l3, l1]
+    explanation:
+      vi: Möchte ở vị trí 2, động từ nguyên thể kaufen ở cuối câu. Zwei Stück Kuchen đi liền nhau, không có von; Stück giữ nguyên sau số.
+    display_answer: Lisa möchte zwei Stück Kuchen kaufen.
+
+  - key: de:exercise:a1u03l5-tr-fisch-fleisch-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u03-g-moegen
+    prompt:
+      source_text: Ich esse gern Fisch, aber ich mag kein Fleisch.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích ăn cá, nhưng tôi không thích thịt.
+        - Tôi thích ăn cá nhưng tôi không thích thịt.
+        - Tôi thích ăn cá, nhưng không thích thịt.
+        - Tôi thích ăn cá nhưng không thích thịt.
+        - Tôi thích ăn cá, nhưng tôi không thích ăn thịt.
+        - Tôi thích ăn cá nhưng không thích ăn thịt.
+        - Mình thích ăn cá, nhưng mình không thích thịt.
+        - Mình thích ăn cá, nhưng không thích ăn thịt.
+        - Tôi thích ăn cá, còn thịt thì tôi không thích.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi thích ăn thịt, nhưng tôi không thích cá.
+        feedback_vi: Ngược nghĩa - gern đi với Fisch (cá), kein … mögen đi với Fleisch (thịt).
+        error_tag: meaning
+    explanation:
+      vi: Esse gern Fisch = thích ăn cá; mag kein Fleisch = không thích thịt. Aber = nhưng.
+    display_answer: Tôi thích ăn cá, nhưng tôi không thích thịt.

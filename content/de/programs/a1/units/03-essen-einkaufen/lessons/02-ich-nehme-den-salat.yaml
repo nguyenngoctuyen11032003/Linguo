@@ -1,0 +1,359 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u03-ich-nehme-den-salat
+order_index: 2
+level: a1
+title:
+  vi: Gọi món – Akkusativ (Ich nehme den Salat.)
+objectives:
+  - vi: Gọi món, hỏi thực đơn và xin thanh toán ở nhà hàng.
+  - vi: Dùng đúng Akkusativ cho tân ngữ trực tiếp - den, einen, keinen, meinen với danh từ giống đực.
+  - vi: Hỏi tân ngữ bằng Wen? / Was? và trả lời câu "Zusammen oder getrennt?".
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u03-was-isst-du-gern]
+items:
+  - item: de:item:a1u03-g-akkusativ
+  - item: de:item:a1u03-nehmen
+  - item: de:item:a1u03-salat
+  - item: de:item:a1u03-suppe
+  - item: de:item:a1u03-fleisch
+  - item: de:item:a1u03-fisch
+  - item: de:item:a1u03-reis
+  - item: de:item:a1u03-speisekarte
+  - item: de:item:a1u03-bestellen
+  - item: de:item:a1u03-rechnung
+  - item: de:item:a1u03-zusammen-oder-getrennt
+  - item: de:item:a1u03-kellner
+  - item: de:item:a1u03-bezahlen
+  - item: de:item:a1u03-getraenk
+  - item: de:item:a1u03-haehnchen
+  - item: de:item:a1u03-nudel
+  - item: de:item:a1u03-nachtisch
+  - item: de:item:p0u3-g-genus-artikel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được món ở nhà hàng Đức ("Ich nehme den Fisch."), xin thực đơn, xin hoá đơn và trả lời khi được hỏi trả chung hay riêng.
+  - type: explain
+    text:
+      vi: Trong câu "Ich nehme den Salat", Salat là tân ngữ trực tiếp - thứ bị "lấy, gọi". Tiếng Đức đánh dấu tân ngữ trực tiếp bằng cách Akkusativ, trả lời câu hỏi Wen? (ai?) hoặc Was? (cái gì?). Tiếng Việt không biến đổi gì, nên đây là chỗ người Việt hay quên.
+  - type: explain
+    text:
+      vi: Tin vui - chỉ danh từ giống đực số ít đổi mạo từ - der → den, ein → einen, kein → keinen, mein → meinen. Giống cái (die/eine), giống trung (das/ein) và số nhiều (die) giữ nguyên như khi làm chủ ngữ.
+  - type: explain
+    text:
+      vi: Chủ ngữ vẫn ở Nominativ - Der Fisch ist frisch. Nhưng khi Fisch là thứ bạn gọi - Ich nehme den Fisch. Muốn biết danh từ đứng ở đâu, hãy hỏi "ai làm?" (Nominativ) và "làm gì, với cái gì?" (Akkusativ).
+  - type: explain
+    text:
+      vi: Nehmen đổi nguyên âm như essen - du nimmst, er nimmt (thêm một chữ m, bỏ h). Ở nhà hàng, "Ich nehme …" là cách gọi món ngắn gọn và tự nhiên; bestellen nghĩa là gọi món, đặt hàng.
+  - type: deep_explain
+    text:
+      vi: Ở Đức bạn thường trả tiền tại bàn - nói "Die Rechnung, bitte!" hoặc "Zahlen, bitte!", nhân viên sẽ hỏi "Zusammen oder getrennt?" (trả chung hay riêng). Tiền bo khoảng 5 - 10 %, thường làm tròn lên và nói luôn số tiền khi trả, ví dụ hoá đơn 18,40 € thì nói "Zwanzig, bitte." hoặc "Stimmt so." (khỏi thối). Haben cũng cần Akkusativ - Ich habe einen Bruder, Haben Sie einen Tisch frei?
+  - type: example
+    target: "Was nehmen Sie? – Ich nehme den Fisch mit Reis."
+    target_lang: de
+    translation:
+      vi: "Ông/bà dùng món gì ạ? – Tôi lấy món cá với cơm."
+    note:
+      vi: Nhân viên nói Sie với khách. Fisch là giống đực nên der → den.
+  - type: example
+    target: Wir bestellen eine Suppe und ein Hähnchen.
+    target_lang: de
+    translation:
+      vi: Chúng tôi gọi một bát súp và một món gà.
+    note:
+      vi: Suppe (giống cái) và Hähnchen (giống trung) không đổi ở Akkusativ - eine, ein.
+  - type: example
+    target: Wir haben leider keinen Fisch mehr.
+    target_lang: de
+    translation:
+      vi: Rất tiếc chúng tôi hết cá rồi.
+    note:
+      vi: kein → keinen trước danh từ giống đực làm tân ngữ.
+  - type: example
+    target: "Wen fragst du? – Ich frage den Kellner."
+    target_lang: de
+    translation:
+      vi: "Bạn hỏi ai thế? – Mình hỏi anh phục vụ."
+    note:
+      vi: Nói với bạn bè (du). Wen? hỏi người là tân ngữ; der Kellner → den Kellner.
+  - type: common_mistake
+    wrong: Ich nehme der Salat.
+    right: Ich nehme den Salat.
+    target_lang: de
+    note:
+      vi: Salat là thứ được gọi (tân ngữ), danh từ giống đực nên der phải đổi thành den.
+  - type: common_mistake
+    wrong: Ich nehme einen Suppe.
+    right: Ich nehme eine Suppe.
+    target_lang: de
+    note:
+      vi: Chỉ giống đực mới thêm -en. Suppe là giống cái nên vẫn là eine.
+  - type: common_mistake
+    wrong: Wir haben kein Reis.
+    right: Wir haben keinen Reis.
+    target_lang: de
+    note:
+      vi: Reis là giống đực, làm tân ngữ của haben nên kein → keinen.
+  - type: summary
+    points:
+      - vi: Tân ngữ trực tiếp (Wen? / Was?) ở Akkusativ.
+      - vi: Chỉ giống đực số ít đổi - der → den, ein → einen, kein → keinen, mein → meinen.
+      - vi: die / das / số nhiều giữ nguyên - Ich nehme die Suppe, das Hähnchen, die Nudeln.
+      - vi: nehmen - du nimmst, er nimmt. Gọi món - Ich nehme … / Ich bestelle …
+      - vi: Xin thực đơn - Die Speisekarte, bitte! Thanh toán - Die Rechnung, bitte! Trả lời - Zusammen. / Getrennt, bitte.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u03l2-mcq-den-salat
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-akkusativ
+    prompt:
+      stem: "Chọn mạo từ đúng: Ich nehme ___ Salat. (der Salat)"
+      stem_lang: vi
+      options:
+        - { id: q2m, text: den, lang: de }
+        - { id: v7k, text: der, lang: de }
+        - { id: x4b, text: das, lang: de }
+        - { id: l9p, text: die, lang: de }
+    answer:
+      correct_option_id: q2m
+    explanation:
+      vi: Salat là thứ được gọi, tức tân ngữ trực tiếp (Akkusativ). Danh từ giống đực nên der đổi thành den.
+    display_answer: den
+
+  - key: de:exercise:a1u03l2-mcq-die-suppe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-g-genus-artikel
+    prompt:
+      stem: "Chọn mạo từ đúng: Wir nehmen ___ Suppe. (die Suppe)"
+      stem_lang: vi
+      options:
+        - { id: g5t, text: die, lang: de }
+        - { id: d1w, text: den, lang: de }
+        - { id: o8h, text: einen, lang: de }
+        - { id: a3z, text: der, lang: de }
+    answer:
+      correct_option_id: g5t
+    explanation:
+      vi: Suppe là giống cái; ở Akkusativ giống cái không đổi - die Suppe. Den và einen chỉ dùng cho danh từ giống đực.
+    display_answer: die
+
+  - key: de:exercise:a1u03l2-listen-fisch-reis
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u03-fisch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich nehme den Fisch mit Reis und einen Salat.
+      options:
+        - { id: n4c, text: Tôi gọi món cá với cơm và một đĩa salad., lang: vi }
+        - { id: e6y, text: Tôi gọi món thịt với cơm và một đĩa salad., lang: vi }
+        - { id: t1s, text: Tôi gọi món cá với mì và một bát súp., lang: vi }
+        - { id: k8u, text: "Tôi không gọi cá, tôi gọi salad.", lang: vi }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: Fisch là cá, Reis là cơm, Salat là salad. Câu không có Fleisch (thịt), Nudeln (mì) hay Suppe (súp), cũng không có nicht hay kein.
+    display_answer: Tôi gọi món cá với cơm và một đĩa salad.
+
+  - key: de:exercise:a1u03l2-fill-einen-eine
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u03-g-akkusativ
+    prompt:
+      template: "Ich habe {{b1}} Bruder und {{b2}} Schwester."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Tôi có một anh trai và một chị gái."
+        - "Gợi ý: der Bruder (giống đực) đổi ein → einen; die Schwester (giống cái) giữ nguyên."
+    answer:
+      blanks:
+        b1: [einen]
+        b2: [eine]
+    known_wrong:
+      - answer: ein
+        feedback_vi: Bruder là giống đực, làm tân ngữ của haben nên ein → einen.
+        error_tag: case_dat_akk
+    explanation:
+      vi: Haben cần tân ngữ ở Akkusativ. Der Bruder → einen Bruder; die Schwester giữ nguyên → eine Schwester.
+    display_answer: Ich habe einen Bruder und eine Schwester.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u03l2-fill-tisch-frei
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-akkusativ
+    prompt:
+      template: "Haben Sie {{b1}} Tisch frei? – Nein, leider haben wir {{b2}} Tisch frei."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [einen]
+        b2: [keinen]
+    known_wrong:
+      - answer: ein
+        feedback_vi: Tisch là giống đực, làm tân ngữ của haben nên ein → einen.
+        error_tag: case_dat_akk
+      - answer: kein
+        feedback_vi: Tisch là giống đực, ở Akkusativ kein → keinen.
+        error_tag: case_dat_akk
+    explanation:
+      vi: Der Tisch là giống đực; tân ngữ của haben ở Akkusativ nên ein → einen, kein → keinen.
+    display_answer: "Haben Sie einen Tisch frei? – Nein, leider haben wir keinen Tisch frei."
+
+  - key: de:exercise:a1u03l2-fill-speisekarte-kaffee
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-akkusativ
+    prompt:
+      template: "Der Kellner bringt {{b1}} Speisekarte und {{b2}} Kaffee."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [die, eine]
+        b2: [den, einen]
+    known_wrong:
+      - answer: der
+        feedback_vi: Kaffee là thứ được mang tới (tân ngữ), giống đực nên der → den.
+        error_tag: case_dat_akk
+      - answer: ein
+        feedback_vi: Kaffee là giống đực ở Akkusativ nên ein → einen; Speisekarte là giống cái nên dùng eine.
+        error_tag: case_dat_akk
+    explanation:
+      vi: Der Kellner là chủ ngữ (Nominativ). Speisekarte (giống cái) giữ die/eine; Kaffee (giống đực) đổi thành den/einen.
+    display_answer: Der Kellner bringt die Speisekarte und den Kaffee.
+
+  - key: de:exercise:a1u03l2-tr-suppe-salat
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-salat
+    prompt:
+      source_text: Hôm nay tôi gọi súp và salad.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Heute nehme ich die Suppe und den Salat.
+        - Ich nehme heute die Suppe und den Salat.
+        - Heute nehme ich eine Suppe und einen Salat.
+        - Ich nehme heute eine Suppe und einen Salat.
+        - Heute bestelle ich die Suppe und den Salat.
+        - Ich bestelle heute die Suppe und den Salat.
+        - Heute bestelle ich eine Suppe und einen Salat.
+        - Ich bestelle heute eine Suppe und einen Salat.
+        - Heute nehme ich Suppe und Salat.
+        - Ich nehme heute Suppe und Salat.
+    known_wrong:
+      - answer: Heute nehme ich die Suppe und der Salat.
+        feedback_vi: Salat cũng là tân ngữ, giống đực nên der → den.
+        error_tag: case_dat_akk
+      - answer: Heute ich nehme die Suppe und den Salat.
+        feedback_vi: Heute đứng đầu thì động từ chia phải đứng ngay sau (vị trí 2) - Heute nehme ich …
+        error_tag: verb_position
+      - answer: Heute nehme ich einen Suppe und einen Salat.
+        feedback_vi: Suppe là giống cái nên vẫn là eine; chỉ giống đực mới thành einen.
+        error_tag: article
+    explanation:
+      vi: Nehmen (hoặc bestellen) ở vị trí 2. Die Suppe giữ nguyên ở Akkusativ, der Salat đổi thành den Salat (hoặc eine Suppe, einen Salat).
+    display_answer: Heute nehme ich die Suppe und den Salat.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u03l2-wb-weber-kaffee
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-bestellen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Ông Weber gọi một ly cà phê.\""
+      tokens:
+        - { id: w1, text: Kaffee }
+        - { id: w2, text: bestellt }
+        - { id: w3, text: einen }
+        - { id: w4, text: Herr Weber }
+        - { id: w5, text: ein }
+    answer:
+      orders:
+        - [w4, w2, w3, w1]
+        - [w3, w1, w2, w4]
+    explanation:
+      vi: Kaffee là giống đực và là tân ngữ nên dùng einen, không dùng ein. Động từ bestellt ở vị trí 2; vị trí 1 thường là chủ ngữ Herr Weber, nhưng cũng có thể là einen Kaffee để nhấn mạnh.
+    display_answer: Herr Weber bestellt einen Kaffee.
+
+  - key: de:exercise:a1u03l2-mcq-rechnung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-rechnung
+    prompt:
+      stem: "Bạn ăn xong ở nhà hàng và muốn thanh toán. Bạn nói gì với nhân viên phục vụ?"
+      stem_lang: vi
+      options:
+        - { id: r3x, text: "Die Rechnung, bitte!", lang: de }
+        - { id: i6q, text: "Die Speisekarte, bitte!", lang: de }
+        - { id: b2j, text: Zusammen oder getrennt?, lang: de }
+        - { id: m5d, text: Ich nehme den Salat., lang: de }
+    answer:
+      correct_option_id: r3x
+    explanation:
+      vi: Die Rechnung là hoá đơn - câu xin thanh toán. Die Speisekarte là thực đơn (dùng lúc mới vào). "Zusammen oder getrennt?" là câu nhân viên hỏi bạn, còn "Ich nehme den Salat." là câu gọi món.
+    display_answer: "Die Rechnung, bitte!"
+
+  - key: de:exercise:a1u03l2-tr-getrennt-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u03-zusammen-oder-getrennt
+    prompt:
+      source_text: "Zusammen oder getrennt? – Getrennt, bitte. Ich bezahle den Fisch."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Trả chung hay riêng? – Riêng ạ. Tôi trả tiền món cá."
+        - "Trả chung hay trả riêng? – Trả riêng ạ. Tôi trả tiền món cá."
+        - "Trả chung hay riêng ạ? – Riêng ạ. Tôi trả tiền cá."
+        - "Tính chung hay riêng? – Riêng ạ. Tôi trả tiền món cá."
+        - "Thanh toán chung hay riêng? – Riêng ạ. Tôi trả tiền món cá."
+        - "Trả chung hay riêng? – Riêng nhé. Tôi trả tiền món cá."
+        - "Trả chung hay riêng? – Trả riêng. Tôi trả tiền cá."
+        - "Trả chung hay riêng? – Riêng. Tôi trả món cá."
+        - "Trả chung hay riêng? – Làm ơn tính riêng. Tôi trả tiền món cá."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "Trả chung hay riêng? – Chung ạ. Tôi trả tiền món cá."
+        feedback_vi: Getrennt là riêng, zusammen mới là chung.
+        error_tag: meaning
+    explanation:
+      vi: Zusammen = chung, getrennt = riêng. Ich bezahle den Fisch = tôi trả (tiền) món cá; den Fisch là tân ngữ của bezahlen.
+    display_answer: "Trả chung hay riêng? – Riêng ạ. Tôi trả tiền món cá."
