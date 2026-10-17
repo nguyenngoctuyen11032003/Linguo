@@ -59,10 +59,10 @@ body:
       vi: "Trọng âm của động từ tách rơi vào tiền tố: AUFstehen, ANrufen, EINkaufen, FERNsehen. Nhưng không phải từ nào trông giống thế cũng tách: frühstücken (ăn sáng), beginnen (bắt đầu), duschen (tắm) không tách - Ich frühstücke um sieben Uhr."
   - type: explain
     text:
-      vi: "Đổi nguyên âm vẫn giữ nguyên với du và er/sie/es: du siehst fern, er sieht fern; du fängst an, er fängt an; du schläfst ein, sie schläft ein."
+      vi: "Động từ tách vẫn đổi nguyên âm ở du và er/sie/es như động từ gốc: du siehst fern, er sieht fern; du fängst an, er fängt an; du schläfst ein, sie schläft ein."
   - type: deep_explain
     text:
-      vi: "Tiền tố tách thường là một từ có nghĩa riêng (auf = lên, an = vào/đến, ein = vào trong, zurück = trở lại, fern = xa), nên tra từ điển sẽ thấy dấu tách auf|stehen. Các tiền tố be-, ver-, er-, ent- không bao giờ tách (beginnen, verstehen). Khi động từ tách đứng cuối câu ở dạng nguyên thể (sau können, müssen ở bài 3), nó viết liền trở lại: Ich muss früh aufstehen. Ở Đức, sau 22 giờ và ngày Chủ nhật là giờ yên tĩnh (Ruhezeit): hàng xóm mong bạn không gây ồn - bạn sẽ học kỹ hơn ở B1."
+      vi: "Tiền tố tách thường là một từ có nghĩa riêng (auf = lên, an = vào/đến, ein = vào trong, zurück = trở lại, fern = xa), nên tra từ điển sẽ thấy dấu tách auf|stehen. Các tiền tố be-, ver-, er-, ent- không bao giờ tách (beginnen, verstehen). Khi động từ tách đứng cuối câu ở dạng nguyên thể (sau können, müssen ở bài 3), nó viết liền trở lại: Ich muss früh aufstehen. Ở Đức, ban đêm (thường từ 22 giờ) và ngày Chủ nhật là giờ yên tĩnh (Ruhezeit): hàng xóm mong bạn không gây ồn - bạn sẽ học kỹ hơn ở B1."
   - type: example
     target: "Ich stehe um halb sieben auf und dusche."
     target_lang: de
@@ -249,6 +249,7 @@ exercises:
         - Wann rufst du Anna an?
         - Um wie viel Uhr rufst du Anna an?
         - Wann rufst du Anna denn an?
+        - Wann rufst du denn Anna an?
     known_wrong:
       - answer: Wann anrufst du Anna?
         feedback_vi: "anrufen tách đôi: rufst ở vị trí 2, an ở cuối câu."

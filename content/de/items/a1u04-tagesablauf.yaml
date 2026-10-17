@@ -53,7 +53,7 @@ items:
           translation:
             vi: Mấy giờ rồi? – Bốn giờ mười.
       confusion:
-        vi: "Wie spät ist es? hỏi bây giờ là mấy giờ; Wann …? hỏi một việc xảy ra lúc nào. Câu trả lời cho Wann luôn có um: Um sieben Uhr."
+        vi: "Wie spät ist es? hỏi bây giờ là mấy giờ; Wann …? hỏi một việc xảy ra lúc nào. Trả lời Wann bằng giờ đồng hồ thì dùng um: Um sieben Uhr."
 
   - key: de:item:a1u04-stunde
     type: vocab
@@ -318,9 +318,9 @@ items:
       meaning:
         vi: giờ (thời điểm trên đồng hồ)
       examples:
-        - target: "Die Uhrzeit auf meinem Handy stimmt nicht."
+        - target: "Die Uhrzeit stimmt nicht. Es ist schon acht Uhr."
           translation:
-            vi: Giờ trên điện thoại của tôi không đúng.
+            vi: Giờ này không đúng. Đã tám giờ rồi.
       confusion:
         vi: Từ ghép die Uhr + die Zeit, lấy giống của từ cuối (die Zeit) nên là die Uhrzeit.
 
@@ -339,7 +339,7 @@ items:
       examples:
         - target: "Der Kurs dauert zwei Stunden."
           translation:
-            vi: Khoá học kéo dài hai tiếng.
+            vi: Buổi học kéo dài hai tiếng.
         - target: "Wie lange dauert der Film?"
           translation:
             vi: Bộ phim dài bao lâu?
@@ -369,7 +369,7 @@ items:
           translation:
             vi: Buổi tối bạn có xem tivi không?
       confusion:
-        vi: "Không phải từ nào bắt đầu bằng \"früh\" hay \"be-\" cũng tách: frühstücken không tách (Ich frühstücke), beginnen không tách (Der Film beginnt)."
+        vi: "Không phải động từ nào có phần đầu ngắn cũng tách: frühstücken không tách vì sinh ra từ das Frühstück (Ich frühstücke); tiền tố be-, ver- không bao giờ tách (Der Film beginnt)."
 
   - key: de:item:a1u04-g-satzklammer
     type: grammar_point
@@ -1189,7 +1189,7 @@ items:
         vi: "Ở Đức, chúc mừng sinh nhật trước ngày bị coi là xui; hãy chúc đúng ngày hoặc sau đó."
 
   - key: de:item:a1u04-datum
-    type: phrase
+    type: vocab
     level: a1
     difficulty: 2
     skill_tags: [vocabulary]

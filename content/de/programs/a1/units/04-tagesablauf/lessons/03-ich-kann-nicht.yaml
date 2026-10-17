@@ -109,7 +109,7 @@ body:
     target: "Der Kurs dauert zwei Stunden. Um zehn Uhr machen wir Pause."
     target_lang: de
     translation:
-      vi: Khoá học kéo dài hai tiếng. Mười giờ chúng ta nghỉ giải lao.
+      vi: Buổi học kéo dài hai tiếng. Mười giờ chúng ta nghỉ giải lao.
     note:
       vi: "Pause machen = nghỉ giải lao. Um zehn Uhr đứng đầu nên machen đứng vị trí 2."
   - type: common_mistake

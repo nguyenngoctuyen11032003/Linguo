@@ -52,7 +52,7 @@ body:
       vi: "Khi nói nhiều mốc cùng lúc, đi từ lớn đến nhỏ: am Freitag um sieben Uhr. Riêng ban đêm là in der Nacht. Năm thường nói trơn, không có giới từ: đừng nói \"in 2025\" theo kiểu tiếng Anh."
   - type: explain
     text:
-      vi: "Số thứ tự: từ 1 đến 19 thêm -te (zweite, vierte, zehnte), từ 20 trở đi thêm -ste (zwanzigste, einunddreißigste). Năm dạng cần nhớ riêng: erste, dritte, siebte, achte (chỉ một chữ t). Khi viết, số thứ tự là chữ số kèm dấu chấm: 3. Mai đọc là dritte Mai."
+      vi: "Số thứ tự: từ 1 đến 19 thêm -te (zweite, vierte, zehnte), từ 20 trở đi thêm -ste (zwanzigste, einunddreißigste). Bốn dạng cần nhớ riêng: erste, dritte, siebte, achte (achte chỉ có một chữ t). Khi viết, số thứ tự là chữ số kèm dấu chấm: der 3. Mai đọc là der dritte Mai."
   - type: explain
     text:
       vi: "Nói hôm nay là ngày mấy: Heute ist der dritte Mai (đuôi -e). Nói việc xảy ra vào ngày nào: am dritten Mai (sau am thêm -n). Hỏi: Der Wievielte ist heute? / Welches Datum ist heute? và Wann hast du Geburtstag?"
@@ -362,7 +362,6 @@ exercises:
       orders:
         - [t-ich, t-habe, t-am, t-dritten, t-mai, t-geburtstag]
         - [t-am, t-dritten, t-mai, t-habe, t-ich, t-geburtstag]
-        - [t-geburtstag, t-habe, t-ich, t-am, t-dritten, t-mai]
     explanation:
       vi: "Ngày cụ thể: am + dritten (đuôi -en sau am) + Mai. habe đứng vị trí 2; câu thường bắt đầu bằng ich hoặc am dritten Mai. Không dùng im (chỉ cho tháng) hay dritte (thiếu -n)."
     display_answer: Ich habe am dritten Mai Geburtstag.

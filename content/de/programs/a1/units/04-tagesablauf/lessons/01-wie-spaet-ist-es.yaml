@@ -49,7 +49,7 @@ body:
       vi: "Cách chính thức (nhà ga, đài, giờ làm việc) dùng 24 giờ: số giờ + Uhr + số phút. 7:05 = sieben Uhr fünf, 18:45 = achtzehn Uhr fünfundvierzig. Chữ Uhr đứng giữa giờ và phút, giống \"giờ\" trong \"7 giờ 5\"."
   - type: explain
     text:
-      vi: "Cách thân mật (nói chuyện hằng ngày) dùng 12 giờ và không có chữ Uhr: phút + nach (quá) / vor (kém) + giờ. 3:10 = zehn nach drei, 8:40 = zwanzig vor neun; 15 phút là Viertel: Viertel nach zwei (2:15), Viertel vor drei (2:45)."
+      vi: "Cách thân mật (nói chuyện hằng ngày) dùng 12 giờ và khi có phút thì bỏ chữ Uhr: phút + nach (quá) / vor (kém) + giờ. 3:10 = zehn nach drei, 8:40 = zwanzig vor neun; 15 phút là Viertel: Viertel nach zwei (2:15), Viertel vor drei (2:45)."
   - type: explain
     text:
       vi: "halb + giờ SAU = giờ trước rưỡi: halb drei = 2:30, halb acht = 7:30. Người Đức nghĩ \"đã đi được nửa đường tới 3 giờ\". Đây là chỗ người Việt nhầm nhiều nhất, vì tiếng Việt nói \"hai rưỡi\" theo giờ trước."
@@ -125,7 +125,7 @@ body:
     points:
       - vi: "Hỏi giờ: Wie spät ist es? / Wie viel Uhr ist es? – Es ist …"
       - vi: "Chính thức: giờ + Uhr + phút (14:30 = vierzehn Uhr dreißig)."
-      - vi: "Thân mật: zehn nach drei, zwanzig vor neun, Viertel nach/vor, không có Uhr."
+      - vi: "Thân mật: zehn nach drei, zwanzig vor neun, Viertel nach/vor (có phút thì không có Uhr)."
       - vi: "halb + giờ sau: halb drei = 2:30."
       - vi: "um acht Uhr (lúc), von neun bis siebzehn Uhr (từ … đến), Wann …? (khi nào)."
       - vi: "Uhr = thời điểm; Stunde = một tiếng; dauern = kéo dài."
@@ -184,7 +184,7 @@ exercises:
         - { id: b1, width_hint: 3 }
         - { id: b2, width_hint: 8 }
       hint_levels:
-        - "Nghĩa: Khoá học bắt đầu lúc chín giờ và kéo dài hai tiếng."
+        - "Nghĩa: Buổi học bắt đầu lúc chín giờ và kéo dài hai tiếng."
         - "Gợi ý: \"lúc\" + giờ là một giới từ ngắn; \"hai tiếng\" là độ dài, số nhiều."
     answer:
       blanks:
@@ -357,6 +357,9 @@ exercises:
         - Khoá học bắt đầu lúc 6:15.
         - Lớp học bắt đầu lúc 18 giờ 15.
         - Khoá học bắt đầu lúc 18 giờ 15.
+        - Buổi học bắt đầu lúc sáu giờ mười lăm.
+        - Buổi học bắt đầu lúc 6 giờ 15.
+        - Buổi học bắt đầu lúc 6:15.
     rubric:
       diacritics: lenient
     known_wrong:

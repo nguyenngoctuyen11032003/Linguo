@@ -184,7 +184,7 @@ exercises:
         - { id: b2, width_hint: 3 }
     answer:
       blanks:
-        b1: [kannst]
+        b1: [kannst, willst]
         b2: [an]
     known_wrong:
       - answer: kann
@@ -200,7 +200,7 @@ exercises:
         feedback_vi: "\"Bắt đầu\" là anfangen: fängt … an, không phải auf."
         error_tag: separable_prefix
     explanation:
-      vi: "Câu hỏi có/không với können: Kannst du … kommen? - kannst đứng đầu, kommen nguyên thể ở cuối. anfangen tách: fängt … an."
+      vi: "Câu hỏi có/không với können: Kannst du … kommen? - kannst đứng đầu, kommen nguyên thể ở cuối (Willst du … kommen? cũng đúng ngữ pháp, nghĩa \"cậu có muốn đến không\"). anfangen tách: fängt … an."
     display_answer: "Hallo Tom, kannst du am Samstag um sieben Uhr kommen? Der Film fängt um halb acht an. Viele Grüße, Lan"
 
   - key: de:exercise:a1u04l5-tr-normalerweise
