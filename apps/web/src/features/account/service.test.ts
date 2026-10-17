@@ -73,6 +73,8 @@ describe('clearAllLocalLearnerData', () => {
     'linguo-lesson-v1:u1:abc',
     'linguo-speaking-v1:u1',
     'linguo-speaking-v1:u2',
+    'linguo-snap-v1:profile:u1',
+    'linguo-snap-v1:learning-paths:u2',
     'linguo-onboarding-draft',
   ];
 
@@ -102,7 +104,7 @@ describe('clearAllLocalLearnerData', () => {
     for (const k of ['linguo-outbox-v1:u1', 'linguo-outbox-v1:u2', 'linguo-review-outbox-v1:u1', 'linguo-lesson-v1:u2:abc']) {
       expect(localStorage.getItem(k)).toBe('x');
     }
-    for (const k of ['linguo-lesson-v1:u1:abc', 'linguo-speaking-v1:u1', 'linguo-speaking-v1:u2', 'linguo-onboarding-draft']) {
+    for (const k of ['linguo-lesson-v1:u1:abc', 'linguo-speaking-v1:u1', 'linguo-speaking-v1:u2', 'linguo-snap-v1:profile:u1', 'linguo-snap-v1:learning-paths:u2', 'linguo-onboarding-draft']) {
       expect(localStorage.getItem(k)).toBeNull();
     }
     expect(sessionStorage.length).toBe(0);

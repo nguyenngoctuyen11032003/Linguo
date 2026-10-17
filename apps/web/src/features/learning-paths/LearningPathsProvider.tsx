@@ -1,7 +1,9 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { useAuth } from '@/features/auth/AuthProvider';
+import { isNetworkError } from '@/lib/network-error';
 import { getSupabase, requireSupabase } from '@/lib/supabase';
 import { fetchCurrentPathId, listPaths, setCurrentPath, type LearningPath } from './service';
+import { readPathsSnapshot, writePathsSnapshot } from './snapshot';
 
 export interface LearningPathsContextValue {
   status: 'loading' | 'ready' | 'error';
@@ -9,6 +11,11 @@ export interface LearningPathsContextValue {
   paths: LearningPath[];
   currentId: string | null;
   current: LearningPath | null;
+  /**
+   * True while the paths on screen are the last copy saved on this device and the server has not confirmed them yet
+   * (offline, or the revalidation is still running). Absent means false (hand-built test values).
+   */
+  fromCache?: boolean;
   reload: () => void;
   /** Persists the choice through the RPC, then updates local state. Throws on failure. Only the latest call is applied. */
   setCurrent: (id: string) => Promise<void>;
@@ -28,18 +35,29 @@ interface State {
   error: unknown;
   paths: LearningPath[];
   currentId: string | null;
+  fromCache: boolean;
 }
 
-const empty = (ownerId: string | undefined): State => ({ ownerId, status: 'loading', error: null, paths: [], currentId: null });
+const empty = (ownerId: string | undefined): State => ({ ownerId, status: 'loading', error: null, paths: [], currentId: null, fromCache: false });
+
+/**
+ * The saved paths as a ready state, so the learning screens work at once and offline; plain loading when this
+ * device has none (a first sign-in) or only an empty list (never cached: it would force onboarding).
+ */
+function hydrate(ownerId: string | undefined): State {
+  const snap = ownerId ? readPathsSnapshot(ownerId) : null;
+  return snap ? { ownerId, status: 'ready', error: null, paths: snap.paths, currentId: snap.currentId, fromCache: true } : empty(ownerId);
+}
 
 const byCreatedAt = (a: LearningPath, b: LearningPath) => a.createdAt.localeCompare(b.createdAt) || a.id.localeCompare(b.id);
 
 export function LearningPathsProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
   const userId = user?.id;
-  const [owned, setOwned] = useState<State>(() => empty(userId));
+  const [owned, setOwned] = useState<State>(() => hydrate(userId));
   const [attempt, setAttempt] = useState(0);
-  const state = owned.ownerId === userId ? owned : empty(userId);
+  const hydrated = useMemo(() => hydrate(userId), [userId]);
+  const state = owned.ownerId === userId ? owned : hydrated;
   // Bumped by every local mutation; a fetch that started before a mutation must not overwrite it.
   const mutationSeq = useRef(0);
   // Identifies the latest setCurrent call so out-of-order resolutions are ignored.
@@ -54,7 +72,7 @@ export function LearningPathsProvider({ children }: { children: ReactNode }) {
     }
     let active = true;
     const startedAt = mutationSeq.current;
-    setOwned((s) => (s.ownerId === userId ? { ...s, status: 'loading', error: null } : empty(userId)));
+    setOwned((s) => (s.ownerId === userId ? { ...s, status: s.fromCache ? 'ready' : 'loading', error: null } : hydrate(userId)));
     Promise.all([listPaths(client), fetchCurrentPathId(client, userId)])
       .then(([paths, currentId]) => {
         if (!active) return;
@@ -63,17 +81,44 @@ export function LearningPathsProvider({ children }: { children: ReactNode }) {
           setAttempt((n) => n + 1);
           return;
         }
-        setOwned({ ownerId: userId, status: 'ready', error: null, paths, currentId });
+        setOwned({ ownerId: userId, status: 'ready', error: null, paths, currentId, fromCache: false });
       })
       .catch((error: unknown) => {
         if (!active) return;
-        // Keep whatever was loaded before so a failed reload does not blank the screen.
-        setOwned((s) => (s.ownerId === userId ? { ...s, status: 'error', error } : { ...empty(userId), status: 'error', error }));
+        // Keep whatever was loaded before so a failed reload does not blank the screen. With no network and paths on
+        // screen (saved copy or an earlier load) that is not an error at all: the learner just keeps learning.
+        setOwned((s) => {
+          if (s.ownerId !== userId) return { ...empty(userId), status: 'error', error };
+          if (isNetworkError(error) && s.paths.length > 0) return { ...s, status: 'ready', error: null, fromCache: true };
+          return { ...s, status: 'error', error };
+        });
       });
     return () => {
       active = false;
     };
   }, [userId, attempt]);
+
+  // Persist what the server last confirmed (including local edits made through setCurrent/upsertPath) for the next
+  // offline launch. A copy that is itself from the cache is never re-saved.
+  useEffect(() => {
+    if (!userId || owned.ownerId !== userId || owned.status !== 'ready' || owned.fromCache) return;
+    writePathsSnapshot(userId, { paths: owned.paths, currentId: owned.currentId });
+  }, [userId, owned]);
+
+  // Back online (or back in the app) while a saved copy is on screen: confirm it right away.
+  const showingCache = state.fromCache;
+  useEffect(() => {
+    if (!userId || !showingCache) return;
+    const retry = () => {
+      if (document.visibilityState !== 'hidden' && navigator.onLine !== false) setAttempt((n) => n + 1);
+    };
+    window.addEventListener('online', retry);
+    document.addEventListener('visibilitychange', retry);
+    return () => {
+      window.removeEventListener('online', retry);
+      document.removeEventListener('visibilitychange', retry);
+    };
+  }, [userId, showingCache]);
 
   const reload = useCallback(() => setAttempt((n) => n + 1), []);
 
@@ -113,6 +158,7 @@ export function LearningPathsProvider({ children }: { children: ReactNode }) {
       paths: state.paths,
       currentId: current?.id ?? null,
       current,
+      fromCache: state.fromCache,
       reload,
       setCurrent,
       upsertPath,

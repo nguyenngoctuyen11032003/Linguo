@@ -1,11 +1,14 @@
 import { clearLessonCache, LESSON_CACHE_PREFIX } from '@/features/lesson-player/lessonCache';
+import { LESSON_OPS_KEY_PREFIX, lessonOpsKey } from '@/features/lesson-player/offline-queue';
 import { OUTBOX_CHANGE_EVENT, OUTBOX_KEY_PREFIX, outboxKey } from '@/features/lesson-player/outbox';
+import { SYNC_REPORT_KEY_PREFIX, syncReportKey } from '@/features/lesson-player/sync-report';
 import { PERSONAL_OUTBOX_KEY_PREFIX, personalOutboxKey } from '@/features/personal-vocab/outbox';
 import { REVIEW_OUTBOX_KEY_PREFIX, reviewOutboxKey } from '@/features/reviews/outbox';
 import { clearSession, KEY_PREFIX as ROLEPLAY_KEY_PREFIX, LEGACY_KEY_PREFIX as ROLEPLAY_LEGACY_KEY_PREFIX } from '@/features/roleplay/storage';
 import { clearReflections, REFLECTION_KEY_PREFIX } from '@/features/speaking/ratings';
 import { DRAFT_KEY } from '@/routes/app/onboarding/useOnboardingDraft';
 import { isNetworkError } from '@/lib/network-error';
+import { SNAPSHOT_KEY_PREFIX } from '@/lib/offline-snapshot';
 import { removeKey } from '@/lib/storage';
 import type { AppSupabaseClient } from '@/lib/supabase';
 
@@ -64,12 +67,15 @@ export function downloadJson(data: unknown, fileName: string): void {
  */
 const LEARNER_KEY_PREFIXES = [
   OUTBOX_KEY_PREFIX,
+  LESSON_OPS_KEY_PREFIX,
+  SYNC_REPORT_KEY_PREFIX,
   REVIEW_OUTBOX_KEY_PREFIX,
   PERSONAL_OUTBOX_KEY_PREFIX,
   LESSON_CACHE_PREFIX,
   ROLEPLAY_KEY_PREFIX,
   ROLEPLAY_LEGACY_KEY_PREFIX,
   REFLECTION_KEY_PREFIX,
+  SNAPSHOT_KEY_PREFIX, // offline last-good copies of the profile and learning paths (lib/offline-snapshot.ts)
 ];
 /** Per-device (not per-user) key that still holds a learner's input: the onboarding draft. */
 const LEARNER_EXACT_KEYS = [DRAFT_KEY];
@@ -81,7 +87,7 @@ const LEARNER_EXACT_KEYS = [DRAFT_KEY];
  * id, sent after the next sign-in) and cached lesson text of OTHER users (curated content, not personal; the signing-out user's own cache
  * is cleared by exact key below).
  */
-const SIGN_OUT_KEEP_PREFIXES = [OUTBOX_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, PERSONAL_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX];
+const SIGN_OUT_KEEP_PREFIXES = [OUTBOX_KEY_PREFIX, LESSON_OPS_KEY_PREFIX, SYNC_REPORT_KEY_PREFIX, REVIEW_OUTBOX_KEY_PREFIX, PERSONAL_OUTBOX_KEY_PREFIX, LESSON_CACHE_PREFIX];
 
 function wipeStore(store: Storage, signOut: boolean): void {
   const keys: string[] = [];
@@ -116,7 +122,13 @@ export function clearAllLocalLearnerData(userId?: string | null, options: { mode
     const exact: Array<() => void> = [
       ...(signOut
         ? []
-        : [() => removeKey(outboxKey(userId)), () => removeKey(reviewOutboxKey(userId)), () => removeKey(personalOutboxKey(userId))]),
+        : [
+            () => removeKey(outboxKey(userId)),
+            () => removeKey(lessonOpsKey(userId)),
+            () => removeKey(syncReportKey(userId)),
+            () => removeKey(reviewOutboxKey(userId)),
+            () => removeKey(personalOutboxKey(userId)),
+          ]),
       () => clearLessonCache(userId),
       () => clearSession(userId),
       () => clearReflections(userId),
