@@ -1,4 +1,6 @@
 import {
+  CLASS_LANGUAGES,
+  LANGUAGES,
   LEVEL_INFO,
   TEACHER_LIMITS as L,
   type AssignmentKind,
@@ -8,8 +10,8 @@ import {
   type TeacherRosterMember,
 } from '@linguo/shared';
 
-/** Languages a teacher can open a class in today (ja is allowed by the data layer but has no content yet). */
-export const CLASS_LANGUAGE_CHOICES = ['en', 'ko'] as const satisfies readonly ClassLanguage[];
+/** Languages a teacher can open a class in: the class languages that are offered to learners (LANGUAGES[code].available). */
+export const CLASS_LANGUAGE_CHOICES: readonly ClassLanguage[] = CLASS_LANGUAGES.filter((code) => LANGUAGES[code].available);
 
 export const CLASS_LANGUAGE_LABELS: Record<ClassLanguage, string> = {
   en: 'Tiếng Anh',

@@ -9,7 +9,8 @@ import { cn } from '@/lib/cn';
 import { VocabDialog } from './VocabDialog';
 
 function isPersonalLanguage(code: string | undefined): code is PersonalLanguage {
-  return (PERSONAL_LANGUAGES as readonly string[]).includes(code ?? '');
+  // Only languages offered to learners: a path in a not-yet-published language must not preselect it.
+  return (PERSONAL_LANGUAGES as readonly string[]).includes(code ?? '') && LANGUAGES[code as PersonalLanguage].available;
 }
 
 export interface ListFormDialogProps {

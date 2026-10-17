@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Compass, MessagesSquare } from 'lucide-react';
 import { Link } from 'react-router';
-import { LANGUAGES, LEVEL_INFO, type LevelCode, type RoleplayScenario } from '@linguo/shared';
+import { LANGUAGES, LEVEL_INFO, roleplayScenariosFor, type LevelCode, type RoleplayScenario } from '@linguo/shared';
 import { AiNoticeDialog, AiQuotaChip, AiReportDialog, useQuotaGate } from '@/components/ai';
 import { buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -12,6 +12,7 @@ import { useAiNotice } from '@/features/ai-tutor/useAiNotice';
 import { useAiQuota } from '@/features/ai-tutor/useAiQuota';
 import { useAiTutor } from '@/features/ai-tutor/useAiTutor';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
+import { roleplayLanguageNames } from '@/features/roleplay/languages';
 import { buildSummaryRequest } from '@/features/roleplay/session';
 import { useRoleplaySession } from '@/features/roleplay/useRoleplaySession';
 import { useTts } from '@/features/speaking/useTts';
@@ -29,6 +30,8 @@ function LoadingPage() {
   );
 }
 
+const ROLEPLAY_LANGUAGE_NAMES = roleplayLanguageNames();
+
 /** /app/dong-vai: practise a conversation with an AI partner in a fixed scenario (spec 8.2 #6, 6.9). */
 export function RoleplayPage() {
   const paths = useLearningPaths();
@@ -37,7 +40,8 @@ export function RoleplayPage() {
   const quota = useAiQuota();
   const gate = useQuotaGate(quota.quota);
   const path = paths.current;
-  const language = path && (path.language === 'en' || path.language === 'ko') ? path.language : null;
+  // Any language with scenarios in the catalog (en, ko, ja today; de once its scenarios ship).
+  const language = path && roleplayScenariosFor(path.language).length > 0 ? path.language : null;
   const api = useRoleplaySession(user?.id ?? null, language, path?.currentLevel ?? null);
   const summary = useAiTutor();
   const tts = useTts(api.session?.language ?? language ?? 'en');
@@ -141,7 +145,7 @@ export function RoleplayPage() {
       <EmptyState
         icon={MessagesSquare}
         title="Chưa có tình huống cho ngôn ngữ này"
-        description="Đóng vai hội thoại hiện có cho tiếng Anh, tiếng Hàn và tiếng Nhật."
+        description={`Đóng vai hội thoại hiện có cho ${ROLEPLAY_LANGUAGE_NAMES}.`}
       />
     );
   }
