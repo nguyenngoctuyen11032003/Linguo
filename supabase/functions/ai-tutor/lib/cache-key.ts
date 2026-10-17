@@ -1,9 +1,12 @@
 import type { AiRequest } from '../../_shared/ai-contract.ts';
 
-/** NFKC, trim, collapse whitespace; English is also lower-cased (Korean has no case). */
+/**
+ * NFKC, trim, collapse whitespace; English is also lower-cased (Korean has no case). German is NFC and keeps its case:
+ * capitalising nouns is part of what is taught ("Tisch" vs "tisch" can be a different answer), and ß/umlauts are never folded.
+ */
 export function normalizeText(text: string | undefined | null, language: 'en' | 'ko' | 'ja' | 'de'): string {
   if (text === undefined || text === null) return '';
-  const s = text.normalize('NFKC').trim().replace(/\s+/g, ' ');
+  const s = text.normalize(language === 'de' ? 'NFC' : 'NFKC').trim().replace(/\s+/g, ' ');
   return language === 'en' ? s.toLowerCase() : s;
 }
 

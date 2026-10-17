@@ -10,7 +10,7 @@ export const generatePractice: PromptModule = {
   maxOutputTokens: 1200,
   system: systemPrompt([
     'Tạo câu hỏi trắc nghiệm luyện tập ngắn, mỗi câu có đúng MỘT đáp án đúng.',
-    '`question`: đề bài; nội dung cần luyện viết bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji), lời dẫn có thể bằng tiếng Việt.',
+    '`question`: đề bài; nội dung cần luyện viết bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji; tiếng Đức viết đúng chính tả có ä, ö, ü, ß, danh từ viết hoa), lời dẫn có thể bằng tiếng Việt.',
     '`options`: 3–4 lựa chọn khác nhau, không trùng lặp, các phương án nhiễu phải hợp lý nhưng sai rõ ràng.',
     '`answer`: chép NGUYÊN VĂN một phần tử trong `options`.',
     '`explanation_vi`: giải thích bằng tiếng Việt vì sao đáp án đúng và vì sao lựa chọn nhiễu sai.',

@@ -2,7 +2,8 @@ import { assert, assertEquals, assertFalse, assertMatch, assertStringIncludes, a
 import { z } from 'zod';
 import { AI_OUTPUT_SCHEMAS, AI_TASKS, type AiRequest, type AiRequestInput, aiRequestSchema } from '../../../_shared/ai-contract.ts';
 import { PROMPTS } from './index.ts';
-import { japaneseRegister } from './shared.ts';
+import { hasLatinLetter } from '../text.ts';
+import { germanRegister, japaneseRegister, LANGUAGE_LABELS, levelLabel, normalizeForMatch } from './shared.ts';
 
 const req = (input: AiRequestInput): AiRequest => aiRequestSchema.parse(input);
 
@@ -511,4 +512,142 @@ Deno.test('review_writing.validate (ja): the rewrite is Japanese sentences with 
   const user = PROMPTS.review_writing.buildUser(writingJa, { lessonContext: null });
   assertStringIncludes(user, 'JLPT N4');
   assertStringIncludes(user, 'です/ます');
+});
+
+// German (de): CEFR codes shared with en, Latin script (no script check beyond rejecting Hangul/Japanese), du/Sie register.
+const explainDe = req({ task: 'explain_concept', language: 'de', level: 'a1', concept: 'der, die, das khác nhau thế nào?' });
+const practiceDe = req({ task: 'generate_practice', language: 'de', level: 'a2', skill: 'vocabulary', focus: 'đồ ăn' });
+const analyzeDe = req({
+  task: 'analyze_error',
+  language: 'de',
+  level: 'a1',
+  prompt: 'Dịch: Tôi uống một ly nước.',
+  expected: 'Ich trinke ein Glas Wasser.',
+  answer: 'Ich trinke ein Glas wasser.',
+});
+
+Deno.test('de requests: CEFR levels pre_a1..b2 are accepted, German header', () => {
+  for (const level of ['pre_a1', 'a1', 'a2', 'b1', 'b2']) {
+    assert(aiRequestSchema.safeParse({ task: 'explain_concept', language: 'de', level, concept: 'Dativ' }).success, level);
+  }
+  assertFalse(aiRequestSchema.safeParse({ task: 'explain_concept', language: 'de', level: 'b3', concept: 'Dativ' }).success);
+  const user = PROMPTS.explain_concept.buildUser(explainDe, { lessonContext: null });
+  assertStringIncludes(user, 'Ngôn ngữ đích: tiếng Đức');
+  assertStringIncludes(user, 'Trình độ người học: CEFR A1');
+  assertEquals(LANGUAGE_LABELS.de, 'tiếng Đức');
+  assertEquals(levelLabel('pre_a1'), 'Pre-A1 (mới bắt đầu)');
+});
+
+Deno.test('de header: du/Sie register by level, capitalised nouns, umlauts, compare with Vietnamese', () => {
+  const user = (level: string) =>
+    PROMPTS.explain_concept.buildUser(req({ task: 'explain_concept', language: 'de', level, concept: 'Dativ' }), { lessonContext: null });
+  for (const level of ['pre_a1', 'a1', 'a2', 'b1', 'b2']) {
+    const u = user(level);
+    assertStringIncludes(u, 'Lối nói tiếng Đức:');
+    assertStringIncludes(u, '"Sie"');
+    assertStringIncludes(u, '"du"');
+    assertStringIncludes(u, 'viết hoa danh từ');
+    assertStringIncludes(u, 'Hochdeutsch');
+    assertStringIncludes(u, 'ä, ö, ü, ß');
+    assertStringIncludes(u, 'giống danh từ');
+    assertStringIncludes(u, 'vị trí động từ');
+  }
+  assertStringIncludes(user('pre_a1'), 'câu rất ngắn (3–6 từ)');
+  assertStringIncludes(user('a2'), 'Perfekt');
+  assertStringIncludes(user('b1'), 'Konjunktiv II đơn giản');
+  assertStringIncludes(user('b2'), 'Passiv');
+  assertEquals(germanRegister('zz'), germanRegister('a1'), 'unknown level falls back to the A1 register');
+  // Only de gets the register line, and ja/ko/en keep theirs.
+  assertFalse(PROMPTS.explain_concept.buildUser(explainKo, { lessonContext: null }).includes('Lối nói tiếng Đức'));
+  assertFalse(PROMPTS.explain_concept.buildUser(explainEn, { lessonContext: null }).includes('Lối nói tiếng Đức'));
+  assertFalse(PROMPTS.explain_concept.buildUser(explainJa, { lessonContext: null }).includes('Lối nói tiếng Đức'));
+  assertFalse(PROMPTS.explain_concept.buildUser(explainDe, { lessonContext: null }).includes('Lối nói tiếng Nhật'));
+  // Every task that writes target-language text sees it.
+  assertStringIncludes(PROMPTS.generate_practice.buildUser(practiceDe, { lessonContext: null }), 'Lối nói tiếng Đức');
+  assertStringIncludes(PROMPTS.analyze_error.buildUser(analyzeDe, { lessonContext: null }), 'Lối nói tiếng Đức');
+});
+
+Deno.test('de system prompts name the German exams among the ones never to invent', () => {
+  const sys = PROMPTS.explain_concept.system;
+  for (const exam of ['Goethe-Zertifikat', 'telc', 'TestDaF', 'ÖSD']) assertStringIncludes(sys, exam);
+  assertStringIncludes(sys, 'tiếng Đức');
+});
+
+Deno.test('de outputs: Latin script passes, Hangul and Japanese script are rejected', () => {
+  const ex = PROMPTS.explain_concept.validate;
+  const goodDe = {
+    ...goodExplainKo,
+    explanation_md: '**der/die/das** là mạo từ xác định.',
+    examples: [{ target: 'Der Tisch ist groß.', vi: 'Cái bàn to.' }],
+  };
+  assert(ex(goodDe, explainDe).ok);
+  // Umlauts and ß are ordinary German.
+  assert(ex({ ...goodDe, examples: [{ target: 'Die Straße ist schön.', vi: 'Con đường đẹp.' }] }, explainDe).ok);
+  const hangul = ex({ ...goodDe, examples: [{ target: 'Ich bin 학생.', vi: 'Tôi là học sinh.' }] }, explainDe);
+  assertFalse(hangul.ok);
+  if (!hangul.ok) assertStringIncludes(hangul.error, 'Hangul');
+  const kana = ex({ ...goodDe, examples: [{ target: 'Ich bin がくせい.', vi: 'Tôi là học sinh.' }] }, explainDe);
+  assertFalse(kana.ok);
+  if (!kana.ok) assertStringIncludes(kana.error, 'Japanese');
+  assertFalse(ex({ ...goodDe, examples: [{ target: '我是学生。', vi: 'Tôi là học sinh.' }] }, explainDe).ok, 'kanji / hanzi');
+
+  const gp = PROMPTS.generate_practice.validate;
+  const deItem = {
+    question: 'Welcher Artikel passt: ___ Tisch?',
+    options: ['der', 'die', 'das'],
+    answer: 'der',
+    explanation_vi: 'Tisch là danh từ giống đực nên dùng der.',
+  };
+  assert(gp({ items: [deItem] }, practiceDe).ok);
+  assertFalse(gp({ items: [{ ...deItem, options: ['der', 'die', '가'] }] }, practiceDe).ok, 'Hangul option');
+
+  const ae = PROMPTS.analyze_error.validate;
+  const good = { verdict: 'minor_issue', error_type: 'capitalization', explanation_md: 'Danh từ phải viết hoa: Wasser.', corrected: 'Ich trinke ein Glas Wasser.', tip_vi: null };
+  assert(ae(good, analyzeDe).ok);
+  assertFalse(ae({ ...good, corrected: '私は水を飲みます。' }, analyzeDe).ok, 'Japanese in a German correction');
+});
+
+Deno.test('de: text helpers and matching keep case and umlauts', () => {
+  assert(hasLatinLetter('Straße'));
+  assert(hasLatinLetter('ß'));
+  assertFalse(hasLatinLetter('2024 – 12.50 €'));
+  assertFalse(hasLatinLetter('가나다'));
+  // Matching is whitespace-tolerant and Unicode-form-tolerant, case-sensitive for de; en stays case-insensitive.
+  assertEquals(normalizeForMatch('Ich  trinke\nWasser', 'de'), 'IchtrinkeWasser');
+  assert(normalizeForMatch('Strasse', 'de') !== normalizeForMatch('Straße', 'de'), 'ß is never folded to ss');
+  assertEquals(normalizeForMatch('u\u0308ber', 'de'), normalizeForMatch('über', 'de'), 'decomposed ü equals composed ü');
+  assert(normalizeForMatch('Ich esse Brot', 'de') !== normalizeForMatch('ich esse brot', 'de'));
+  assertEquals(normalizeForMatch('Ich esse Brot', 'en'), normalizeForMatch('ich esse brot', 'en'));
+});
+
+const writingDe = req({
+  task: 'review_writing',
+  language: 'de',
+  level: 'a2',
+  prompt: 'Schreiben Sie eine kurze E-Mail an einen Freund über Ihr Wochenende.',
+  answer: 'Hallo Anna, am Wochenende ich habe einen Film gesehen. Er war sehr gut.',
+  rubric: [
+    { key: 'content', label_vi: 'Nội dung', description_vi: 'Kể đủ việc đã làm.', max_points: 5 },
+    { key: 'language', label_vi: 'Ngôn ngữ', description_vi: 'Vị trí động từ đúng.', max_points: 5 },
+  ],
+});
+
+Deno.test('review_writing.validate (de): the rewrite must be Latin-script text', () => {
+  const v = PROMPTS.review_writing.validate;
+  const good = {
+    criteria: [
+      { key: 'content', points: 4, comment_vi: 'Kể được việc đã làm.' },
+      { key: 'language', points: 3, comment_vi: 'Động từ chia phải đứng thứ hai: "am Wochenende habe ich ...".' },
+    ],
+    overall_vi: 'Bài ngắn nhưng rõ ý.',
+    corrected_version: 'Hallo Anna, am Wochenende habe ich einen Film gesehen. Er war sehr gut.',
+  };
+  assertEquals(v(good, writingDe), { ok: true, data: good });
+  assertFalse(v({ ...good, corrected_version: '周末我看了一部电影。' }, writingDe).ok, 'Chinese / Japanese script');
+  assertFalse(v({ ...good, corrected_version: 'Hallo Anna, 저는 학생이에요.' }, writingDe).ok, 'Hangul');
+  assertFalse(v({ ...good, corrected_version: '2024 - 12.50' }, writingDe).ok, 'a sentence needs letters');
+  const user = PROMPTS.review_writing.buildUser(writingDe, { lessonContext: null });
+  assertStringIncludes(user, 'CEFR A2');
+  assertStringIncludes(user, 'Lối nói tiếng Đức');
+  assertStringIncludes(PROMPTS.review_writing.system, 'đuôi tính từ');
 });

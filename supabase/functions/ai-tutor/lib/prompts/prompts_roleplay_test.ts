@@ -265,3 +265,65 @@ Deno.test('roleplay_turn.validate: blank hint becomes null', () => {
   const v = P.validate({ ...goodEn, hint_vi: '   ' }, turnEn);
   assert(v.ok && (v.data as { hint_vi: unknown }).hint_vi === null);
 });
+
+const turnDe = req({
+  task: 'roleplay_turn',
+  language: 'de',
+  level: 'a1',
+  scenario_key: 'cafe_order',
+  turn_index: 1,
+  history: [{ role: 'partner', text: 'Guten Tag! Was darf es sein?' }],
+  learner_message: 'Ich möchte ein Kaffee, bitte.',
+});
+
+Deno.test('roleplay_turn (de): every catalog scenario builds a German prompt with the du/Sie register', () => {
+  for (const key of ['cafe_order', 'ask_directions', 'hotel_checkin', 'doctor_visit', 'job_interview', 'shopping_bargain', 'introductions']) {
+    const scenario = findRoleplayScenario('de', key);
+    assert(scenario, `de scenario ${key}`);
+    const r = req({ task: 'roleplay_turn', language: 'de', level: scenario.level_min, scenario_key: key, turn_index: 0 });
+    const sys = P.buildSystem!(r);
+    assertStringIncludes(sys, scenario.persona);
+    for (const g of scenario.goals) assertStringIncludes(sys, `${g.key}: ${g.label_vi}`);
+    assertStringIncludes(sys, 'tiếng Đức');
+    const user = P.buildUser(r, { lessonContext: null });
+    assertStringIncludes(user, 'Ngôn ngữ đích: tiếng Đức');
+    assertStringIncludes(user, 'Lối nói tiếng Đức:');
+    assertStringIncludes(user, scenario.opening_hint);
+  }
+  // The same scenario key resolves to the persona of the request's language only.
+  assertStringIncludes(P.buildSystem!(turnDe), findRoleplayScenario('de', 'cafe_order')!.persona);
+  assertFalse(P.buildSystem!(turnDe).includes(findRoleplayScenario('en', 'cafe_order')!.persona));
+  // A de level the scenario does not list is still a valid request level (the catalog range only drives the picker).
+  assert(roleplayScenarioOf(turnDe));
+  // Corrections: umlaut transliteration is not an error.
+  assertStringIncludes(P.buildSystem!(turnDe), 'KHÔNG coi là lỗi');
+});
+
+Deno.test('roleplay_turn.validate (de): Latin text passes, Hangul, Japanese script and letterless replies are rejected', () => {
+  const de = { partner_reply: 'Gern! Möchten Sie Milch dazu?', hint_vi: null, corrections: [], goal_progress: ['order_drink'], finished: false };
+  const ok = P.validate(de, turnDe);
+  assert(ok.ok);
+  if (ok.ok) assertEquals((ok.data as { goal_progress: string[] }).goal_progress, ['order_drink']);
+  assert(P.validate({ ...de, partner_reply: 'Das macht 4,50 €. Zahlen Sie bar oder mit Karte?' }, turnDe).ok);
+  const hangul = P.validate({ ...de, partner_reply: '따뜻한 거요, 차가운 거요?' }, turnDe);
+  assertFalse(hangul.ok, 'Korean');
+  if (!hangul.ok) assertStringIncludes(hangul.error, 'Hangul');
+  const kana = P.validate({ ...de, partner_reply: 'ホットとアイス、どちらにしますか？' }, turnDe);
+  assertFalse(kana.ok, 'Japanese');
+  if (!kana.ok) assertStringIncludes(kana.error, 'Japanese');
+  assertFalse(P.validate({ ...de, partner_reply: '热的还是冰的？' }, turnDe).ok, 'kanji only');
+  assertFalse(P.validate({ ...de, partner_reply: '12:30 – 4,50' }, turnDe).ok, 'no letters');
+  // A German reply never gets accepted for a Korean or Japanese request, and an en request still allows plain Latin.
+  assertFalse(P.validate({ ...de, partner_reply: 'Gern! Möchten Sie Milch dazu?' }, turnKo).ok, 'ko needs Hangul');
+  // Corrections must quote the learner's German message: whitespace-tolerant, case- and umlaut-exact.
+  const corr = { original: 'ein  Kaffee', corrected: 'einen Kaffee', note_vi: 'Kaffee giống đực, Akkusativ: einen.' };
+  const c = P.validate({ ...de, corrections: [corr] }, turnDe);
+  assert(c.ok);
+  if (c.ok) assertEquals((c.data as { corrections: unknown[] }).corrections, [corr]);
+  const wrongCase = P.validate({ ...de, corrections: [{ ...corr, original: 'ein kaffee' }] }, turnDe);
+  assert(wrongCase.ok);
+  if (wrongCase.ok) assertEquals((wrongCase.data as { corrections: unknown[] }).corrections, [], 'the quoted text must match the learner text exactly (case)');
+  const invented = P.validate({ ...de, corrections: [{ ...corr, original: 'ein Tee' }] }, turnDe);
+  assert(invented.ok);
+  if (invented.ok) assertEquals((invented.data as { corrections: unknown[] }).corrections, []);
+});

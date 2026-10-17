@@ -1,5 +1,5 @@
 import { assert, assertEquals, assertFalse, assertStringIncludes, assertThrows } from 'jsr:@std/assert@1';
-import { escapeDelimiters, extractJson, hasHangul, hasJapanese, hasKana, redactPii, repairPrompt, sanitizeOutput, stripControl, wrapData } from './text.ts';
+import { escapeDelimiters, extractJson, hasHangul, hasJapanese, hasKana, hasLatinLetter, redactPii, repairPrompt, sanitizeOutput, stripControl, wrapData } from './text.ts';
 
 /** Returns the text between the first opening tag and the LAST closing tag of the block. */
 function blockBody(wrapped: string, tag: string): string {
@@ -174,4 +174,14 @@ Deno.test('hasJapanese and hasKana', () => {
   assertFalse(hasJapanese('​⁠ hello'));
   assert(hasKana('ひらがな'));
   assertFalse(hasKana('日本語'), 'kanji alone is not kana');
+});
+
+Deno.test('hasLatinLetter: German letters count, digits, punctuation and other scripts do not', () => {
+  assert(hasLatinLetter('Straße'));
+  assert(hasLatinLetter('Über'));
+  assert(hasLatinLetter('ß'));
+  assertFalse(hasLatinLetter('12:30 – 4,50 €'));
+  assertFalse(hasLatinLetter('저는 학생이에요'));
+  assertFalse(hasLatinLetter('私は学生です。'));
+  assertFalse(hasLatinLetter('​⁠'));
 });

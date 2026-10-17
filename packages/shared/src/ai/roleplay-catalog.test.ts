@@ -10,8 +10,7 @@ import {
   type RoleplayLanguage,
 } from './roleplay-catalog';
 
-// de joins once its scenarios exist (German plan, phase 4).
-const LANGS: RoleplayLanguage[] = ['en', 'ko', 'ja'];
+const LANGS: RoleplayLanguage[] = ['en', 'ko', 'ja', 'de'];
 
 describe('roleplay catalog integrity', () => {
   it('has scenarios for every language', () => {
@@ -55,10 +54,13 @@ describe('roleplay catalog integrity', () => {
       expect(roleplayScenarioFitsLevel(s, s.level_max)).toBe(true);
       expect(roleplayScenarioFitsLevel(s, 'zz_unknown')).toBe(false);
       expect(roleplayScenarioFitsLevel(s, '')).toBe(false);
-      // A level from the other language never fits.
+      // A level from the other language never fits (de shares the CEFR codes of en: skip codes the own scale contains).
       for (const lang of Object.keys(ROLEPLAY_LEVELS) as RoleplayLanguage[]) {
         if (lang === s.language) continue;
-        for (const level of ROLEPLAY_LEVELS[lang]) expect(roleplayScenarioFitsLevel(s, level)).toBe(false);
+        for (const level of ROLEPLAY_LEVELS[lang]) {
+          if (ROLEPLAY_LEVELS[s.language].includes(level)) continue;
+          expect(roleplayScenarioFitsLevel(s, level)).toBe(false);
+        }
       }
     }
   });
@@ -92,6 +94,43 @@ describe('roleplay catalog integrity', () => {
       expect(s.persona).toMatch(/です\/ます|kính ngữ/);
     }
     for (const s of roleplayScenariosFor('ko')) expect(s.opening_hint).not.toMatch(KANA);
+  });
+});
+
+describe('de role-play scenarios', () => {
+  it('mirrors ko: same scenario keys and goal keys, level spread = ko ordinals clamped at b2', () => {
+    const ko = roleplayScenariosFor('ko');
+    const de = roleplayScenariosFor('de');
+    expect(de.map((s) => s.key)).toEqual(ko.map((s) => s.key));
+    const last = ROLEPLAY_LEVELS.de.length - 1;
+    const ord = (lang: RoleplayLanguage, level: string) => ROLEPLAY_LEVELS[lang].indexOf(level);
+    for (const k of ko) {
+      const d = findRoleplayScenario('de', k.key)!;
+      expect(d.goals.map((g) => g.key)).toEqual(k.goals.map((g) => g.key));
+      expect(ord('de', d.level_min)).toBe(Math.min(ord('ko', k.level_min), last));
+      expect(ord('de', d.level_max)).toBe(Math.min(ord('ko', k.level_max), last));
+      expect(d.title_vi).toBe(k.title_vi);
+    }
+  });
+
+  it('openings are German (Latin script, no Hangul/kana/kanji) and personas are Vietnamese with a du/Sie register', () => {
+    const OTHER_SCRIPTS = /[぀-ヿ가-힯一-鿿]/;
+    for (const s of roleplayScenariosFor('de')) {
+      expect(s.opening_hint).toMatch(/^[\x20-\x7EÄÖÜäöüß]+$/);
+      expect(s.opening_hint).toMatch(/[A-Za-z]{3}/);
+      expect(s.opening_hint).not.toMatch(OTHER_SCRIPTS);
+      expect(s.persona).toMatch(/^Bạn là/);
+      expect(s.persona).toMatch(/"(Sie|du)"/);
+    }
+  });
+
+  it('the CEFR codes shared with en resolve per language: a de scenario fits de levels only', () => {
+    const cafe = findRoleplayScenario('de', 'cafe_order')!;
+    expect(roleplayScenarioFitsLevel(cafe, 'a1')).toBe(true);
+    expect(roleplayScenarioFitsLevel(cafe, 'pre_a1')).toBe(false);
+    expect(roleplayScenarioFitsLevel(cafe, 'b2')).toBe(false);
+    expect(roleplayScenarioFitsLevel(cafe, 'c1')).toBe(false);
+    expect(roleplayScenarioFitsLevel(cafe, 'n5')).toBe(false);
   });
 });
 

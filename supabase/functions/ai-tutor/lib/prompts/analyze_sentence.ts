@@ -10,7 +10,8 @@ import { dataField, header, normalizeForMatch, parseWith, type PromptModule, s, 
 
 // Spec 8.2 #4: part of speech per token, sentence components, grammar points, natural and alternative meanings.
 // Rubric (checked in validate): every token and component is copied from the sentence (nothing invented) and
-// Korean tokens are written in Hangul and Japanese tokens in kana/kanji, never romanised.
+// Korean tokens are written in Hangul and Japanese tokens in kana/kanji, never romanised; German tokens keep the
+// sentence's own spelling (the substring check covers it, German cannot be told apart from English by script).
 
 const LATIN_RE = /[A-Za-z]/;
 
@@ -25,13 +26,14 @@ export const analyzeSentence: PromptModule = {
     'Phân tích MỘT câu do người học đưa ra, chỉ dựa trên chính câu đó, ở mức vừa trình độ đã nêu.',
     '`translation_vi`: nghĩa tự nhiên của cả câu bằng tiếng Việt (không dịch từng chữ).',
     '`alternative_meanings`: tối đa 3 cách hiểu khác bằng tiếng Việt nếu câu mơ hồ hoặc có nghĩa khác theo ngữ cảnh; mảng rỗng nếu không có.',
-    '`tokens`: tách câu thành từ (tiếng Hàn: từ kèm tiểu từ/đuôi câu, có thể tách hình vị; tiếng Nhật: tách từ và trợ từ như は, が, を) theo thứ tự xuất hiện. `text` phải CHÉP NGUYÊN VĂN từ câu: không sửa, không thêm từ không có trong câu, tiếng Hàn phải viết bằng Hangul, tiếng Nhật viết bằng kana/kanji đúng như trong câu, không phiên âm La-tinh. `pos` là một trong: ' +
+    '`tokens`: tách câu thành từ (tiếng Hàn: từ kèm tiểu từ/đuôi câu, có thể tách hình vị; tiếng Nhật: tách từ và trợ từ như は, が, を; tiếng Đức: mỗi từ một token, động từ tách (trennbares Verb) thì tách thành hai token ở đúng vị trí trong câu) theo thứ tự xuất hiện. `text` phải CHÉP NGUYÊN VĂN từ câu: không sửa, không thêm từ không có trong câu, tiếng Hàn phải viết bằng Hangul, tiếng Nhật viết bằng kana/kanji đúng như trong câu, không phiên âm La-tinh; tiếng Đức viết đúng chính tả như trong câu (giữ nguyên chữ hoa/thường, ä, ö, ü, ß), không dịch sang tiếng Việt hay tiếng Anh. `pos` là một trong: ' +
       SENTENCE_POS.join(', ') +
       ' (tiểu từ tiếng Hàn và trợ từ tiếng Nhật là particle, đuôi từ là ending). `meaning_vi`: nghĩa hoặc chức năng ngắn bằng tiếng Việt.',
     '`components`: các thành phần câu (label thuộc: ' +
       SENTENCE_COMPONENTS.join(', ') +
       '); `text` là đoạn trích NGUYÊN VĂN từ câu, `note_vi` giải thích ngắn bằng tiếng Việt.',
     '`grammar_points`: tối đa 4 điểm ngữ pháp THỰC SỰ xuất hiện trong câu, vừa trình độ; `pattern` là mẫu ngữ pháp, `explanation_vi` giải thích ngắn bằng tiếng Việt.',
+    'Với tiếng Đức, nếu liên quan đến câu, hãy chỉ rõ: giống của danh từ (der/die/das) và cách của danh từ, đại từ, mạo từ (Nominativ, Akkusativ, Dativ, Genitiv) kèm đuôi mạo từ/tính từ; vị trí động từ (động từ chia ở vị trí thứ hai trong câu trần thuật, ở cuối câu phụ) và khung câu Satzklammer (động từ khuyết thiếu + nguyên thể, haben/sein + Partizip II, động từ tách). So sánh ngắn với tiếng Việt khi giúp người học hiểu. Không bịa quy tắc.',
     'Nếu câu có lỗi, vẫn phân tích đúng nguyên văn câu (không tự sửa tokens) và nêu lỗi trong `grammar_points` hoặc `uncertainty`.',
     '`confidence`: mức chắc chắn (high/medium/low). `uncertainty`: nếu không phải high, nêu ngắn điều chưa chắc và khuyên đối chiếu bài học đã kiểm duyệt; nếu chắc chắn thì null.',
     'Nếu đầu vào không phải một câu bằng ngôn ngữ đích, đặt confidence là low, giải thích trong `uncertainty`, và vẫn trả về ít nhất một token chép từ đầu vào.',

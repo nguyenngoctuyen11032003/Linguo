@@ -886,6 +886,10 @@ Deno.test('usage log never contains learner or model content', async () => {
 Deno.test('cache key: NFKC + trim + collapsed spaces; lower-case only for en', async () => {
   assert.equal(normalizeText('  Ｈello   WORLD ', 'en'), 'hello world');
   assert.equal(normalizeText(' 안녕  Hi ', 'ko'), '안녕 Hi');
+  // German: NFC, whitespace collapsed, case kept (noun capitalisation matters), ß and umlauts never folded.
+  assert.equal(normalizeText('  Die   Straße  scho\u0308n ', 'de'), 'Die Straße schön');
+  assert.notEqual(normalizeText('Tisch', 'de'), normalizeText('tisch', 'de'));
+  assert.notEqual(normalizeText('Straße', 'de'), normalizeText('Strasse', 'de'));
 
   const base = { promptVersion: 'v1', model: 'm' };
   const req = (concept: string, extra: Record<string, unknown> = {}) =>

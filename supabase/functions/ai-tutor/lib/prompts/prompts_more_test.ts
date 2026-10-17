@@ -308,3 +308,66 @@ Deno.test('cache keys: analyze_sentence ignores case/spacing in English; plan_re
   const changed = req({ task: 'plan_review', language: 'en', level: 'a2', gaps: planAny.gaps.map((g) => ({ ...g, count: g.count + 1 })) });
   assert((await key(planEn)) !== (await key(changed)), 'counts change the key');
 });
+
+// --- German (de) --------------------------------------------------------------------------------
+
+const sentenceDe = req({ task: 'analyze_sentence', language: 'de', level: 'a1', sentence: 'Ich trinke jeden Tag Kaffee.' });
+
+Deno.test('analyze_sentence (de): the prompt asks for German spelling and case, gender, verb position', () => {
+  const sys = PROMPTS.analyze_sentence.system;
+  assertStringIncludes(sys, 'tiếng Đức');
+  assertStringIncludes(sys, 'Nominativ, Akkusativ, Dativ, Genitiv');
+  assertStringIncludes(sys, 'der/die/das');
+  assertStringIncludes(sys, 'Satzklammer');
+  assertStringIncludes(sys, 'trennbares Verb');
+  const user = PROMPTS.analyze_sentence.buildUser(sentenceDe, { lessonContext: null });
+  assertStringIncludes(user, 'Ngôn ngữ đích: tiếng Đức');
+  assertStringIncludes(user, 'Lối nói tiếng Đức:');
+  assertStringIncludes(user, 'Ich trinke jeden Tag Kaffee.');
+  assert(PROMPTS.analyze_sentence.cacheable(sentenceDe));
+});
+
+Deno.test('analyze_sentence.validate (de): tokens keep the sentence spelling, nothing translated or invented', () => {
+  const v = PROMPTS.analyze_sentence.validate;
+  const good = {
+    translation_vi: 'Tôi uống cà phê mỗi ngày.',
+    alternative_meanings: [],
+    tokens: [
+      { text: 'Ich', pos: 'pronoun', meaning_vi: 'tôi' },
+      { text: 'trinke', pos: 'verb', meaning_vi: 'uống (chia theo ich)' },
+      { text: 'jeden', pos: 'determiner', meaning_vi: 'mỗi (Akkusativ, giống đực)' },
+      { text: 'Tag', pos: 'noun', meaning_vi: 'ngày' },
+      { text: 'Kaffee', pos: 'noun', meaning_vi: 'cà phê' },
+    ],
+    components: [{ label: 'adverbial', text: 'jeden Tag', note_vi: 'Trạng ngữ chỉ thời gian (Akkusativ).' }],
+    grammar_points: [{ pattern: 'Verb ở vị trí thứ hai', explanation_vi: 'Động từ chia đứng thứ hai trong câu trần thuật.' }],
+    confidence: 'high',
+    uncertainty: null,
+  };
+  assertEquals(v(good, sentenceDe), { ok: true, data: good });
+  const translated = v({ ...good, tokens: [...good.tokens, { text: 'coffee', pos: 'noun', meaning_vi: 'cà phê' }] }, sentenceDe);
+  assertFalse(translated.ok, 'a translated token is not in the sentence');
+  if (!translated.ok) assertStringIncludes(translated.error, 'not in the sentence');
+  // Case is part of German spelling: "kaffee" is not the token "Kaffee" of this sentence.
+  assertFalse(v({ ...good, tokens: [{ text: 'kaffee', pos: 'noun', meaning_vi: 'cà phê' }] }, sentenceDe).ok);
+  // Umlauts and ß are matched exactly, never folded to ae/oe/ue/ss.
+  const strasse = req({ task: 'analyze_sentence', language: 'de', level: 'a2', sentence: 'Die Straße ist schön.' });
+  const tok = (text: string) => ({ ...good, tokens: [{ text, pos: 'noun', meaning_vi: 'x' }], components: [] });
+  assert(v(tok('Straße'), strasse).ok);
+  assertFalse(v(tok('Strasse'), strasse).ok);
+  assert(v(tok('schön'), strasse).ok);
+  assertFalse(v(tok('schoen'), strasse).ok);
+});
+
+Deno.test('cache keys (de): case and umlauts are part of the key, spacing and Unicode form are not', async () => {
+  const key = (r: AiRequest) => cacheKey({ promptVersion: 'v1', model: 'm', request: r });
+  const s = (sentence: string, level = 'a1') => req({ task: 'analyze_sentence', language: 'de', level, sentence });
+  const a = await key(s('Ich esse Brot.'));
+  assertEquals(a, await key(s('  Ich   esse\tBrot. ')), 'whitespace is collapsed');
+  assertEquals(await key(s('Die Straße ist schön.')), await key(s('Die Straße ist scho\u0308n.')), 'composed and decomposed forms are one key');
+  assert(a !== (await key(s('ich esse brot.'))), 'German capitalisation is not folded');
+  assert((await key(s('Die Straße'))) !== (await key(s('Die Strasse'))), 'ß is not folded to ss');
+  assert((await key(s('Die Schönheit'))) !== (await key(s('Die Schoenheit'))), 'umlauts are not folded');
+  assert(a !== (await key(s('Ich esse Brot.', 'a2'))), 'level is part of the key');
+  assert(a !== (await key(req({ task: 'analyze_sentence', language: 'en', level: 'a1', sentence: 'Ich esse Brot.' }))), 'language is part of the key');
+});

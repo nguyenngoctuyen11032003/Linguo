@@ -173,3 +173,10 @@ export function hasJapanese(text: string): boolean {
 export function hasKana(text: string): boolean {
   return KANA_RE.test(text.replace(INVISIBLE_RE, ''));
 }
+
+const LATIN_LETTER_RE = /[A-Za-zÀ-ɏ]/;
+
+/** Any Latin letter (incl. ä, ö, ü, ß and other accented letters): digits and punctuation alone do not count. */
+export function hasLatinLetter(text: string): boolean {
+  return LATIN_LETTER_RE.test(text.replace(INVISIBLE_RE, ''));
+}

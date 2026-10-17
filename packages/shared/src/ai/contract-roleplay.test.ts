@@ -105,7 +105,7 @@ describe('roleplay_turn output', () => {
 });
 
 describe('roleplay scenario catalog', () => {
-  it.each(['en', 'ko'] as const)('has at least six scenarios for %s with unique keys', (lang) => {
+  it.each(['en', 'ko', 'ja', 'de'] as const)('has at least six scenarios for %s with unique keys', (lang) => {
     const list = roleplayScenariosFor(lang);
     expect(list.length).toBeGreaterThanOrEqual(6);
     expect(new Set(list.map((s) => s.key)).size).toBe(list.length);
@@ -115,6 +115,8 @@ describe('roleplay scenario catalog', () => {
     for (const key of ['cafe_order', 'ask_directions', 'hotel_checkin', 'doctor_visit', 'job_interview', 'shopping_bargain', 'introductions']) {
       expect(findRoleplayScenario('en', key)).toBeDefined();
       expect(findRoleplayScenario('ko', key)).toBeDefined();
+      expect(findRoleplayScenario('ja', key)).toBeDefined();
+      expect(findRoleplayScenario('de', key)).toBeDefined();
     }
   });
 
@@ -136,7 +138,7 @@ describe('roleplay scenario catalog', () => {
       expect(order.indexOf(s.level_max)).toBeGreaterThanOrEqual(order.indexOf(s.level_min));
       if (s.language === 'ko') expect(s.opening_hint).toMatch(/[가-힯]/);
       else if (s.language === 'ja') expect(s.opening_hint).toMatch(/[぀-ヿ]/);
-      else expect(s.opening_hint).toMatch(/^[\x20-\x7Eé]+$/);
+      else expect(s.opening_hint).toMatch(/^[\x20-\x7EéÄÖÜäöüß]+$/);
     }
   });
 
@@ -146,6 +148,11 @@ describe('roleplay scenario catalog', () => {
     expect(roleplayScenarioFitsLevel(cafe, 'a1')).toBe(true);
     expect(roleplayScenarioFitsLevel(cafe, 'c2')).toBe(false);
     expect(roleplayScenarioFitsLevel(cafe, 'topik1')).toBe(false);
+    // de uses the same CEFR codes as en but its own scale (b2 is its top level).
+    const cafeDe = findRoleplayScenario('de', 'cafe_order')!;
+    expect(roleplayScenarioFitsLevel(cafeDe, 'a2')).toBe(true);
+    expect(roleplayScenarioFitsLevel(cafeDe, 'c1')).toBe(false);
+    expect(roleplayScenarioFitsLevel(cafeDe, 'n5')).toBe(false);
   });
 
   it('looks scenarios up by language and key only', () => {

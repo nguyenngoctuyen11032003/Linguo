@@ -48,7 +48,7 @@ export const ROLEPLAY_MAX_CORRECTIONS = 2;
 export const AI_REPORT_REASONS = ['wrong', 'unclear', 'unsafe', 'other'] as const;
 
 const language = z.enum(['en', 'ko', 'ja', 'de']);
-/** CEFR (en), TOPIK (ko) and kana + JLPT (ja) level codes; mirrors LEVELS in learning/levels.ts (a test keeps them equal). */
+/** CEFR (en, de: pre_a1..b2 reuses the same codes), TOPIK (ko) and kana + JLPT (ja) level codes; mirrors LEVELS in learning/levels.ts (a test keeps them equal). */
 export const AI_LEVELS = [
   'pre_a1',
   'a1',
@@ -348,7 +348,7 @@ export const planReviewOutputSchema = z.strictObject({
 
 /** Spec 8.2 #6: the partner's next line plus gentle feedback on the learner's last message only. */
 export const roleplayTurnOutputSchema = z.strictObject({
-  /** In the target language (Hangul for ko, Japanese script for ja); in character, short, usually ends with a follow-up question. */
+  /** In the target language (Hangul for ko, Japanese script for ja, Latin script for en and de); in character, short, usually ends with a follow-up question. */
   partner_reply: md(ROLEPLAY_REPLY_MAX_CHARS),
   hint_vi: md(200).nullable(),
   /** Real errors in the learner's last message only; empty for the opening turn. */

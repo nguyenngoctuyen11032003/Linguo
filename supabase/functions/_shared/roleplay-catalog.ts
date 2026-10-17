@@ -314,6 +314,99 @@ export const ROLEPLAY_SCENARIOS: readonly RoleplayScenario[] = [
     level_max: 'n4',
     opening_hint: 'はじめまして！わたしはゆいです。おなまえはなんですか？',
   },
+  // German (same keys and goals as ko/ja; level spread = the ko ordinals on the de scale pre_a1..b2, clamped at b2:
+  // topik1-3 -> a1-b1, topik2-4 -> a2-b2, topik3-5 -> b1-b2). Strangers and staff speak Sie, peers speak du.
+  {
+    key: 'cafe_order',
+    language: 'de',
+    title_vi: 'Gọi đồ ở quán cà phê',
+    summary_vi: 'Chọn đồ uống, món ăn kèm và thanh toán.',
+    partner_role_vi: 'Nhân viên quán cà phê',
+    persona:
+      'Bạn là nhân viên thân thiện ở quầy một quán cà phê ở Berlin. Bạn nhận order đồ uống và bánh (Kaffee, Tee, Kuchen), hỏi cỡ ly, uống tại chỗ hay mang đi (hier oder zum Mitnehmen), rồi báo giá bằng euro. Khách là người lạ nên dùng "Sie" lịch sự (Was darf es sein?, Möchten Sie noch etwas?), câu ngắn, rõ ràng.',
+    goals: [g('order_drink', 'Gọi một đồ uống'), g('choose_size_or_extras', 'Chọn cỡ ly hoặc món kèm'), g('pay', 'Hỏi giá và thanh toán')],
+    level_min: 'a1',
+    level_max: 'b1',
+    opening_hint: 'Guten Tag! Was darf es sein?',
+  },
+  {
+    key: 'ask_directions',
+    language: 'de',
+    title_vi: 'Hỏi đường',
+    summary_vi: 'Hỏi và hiểu cách đi đến một địa điểm.',
+    partner_role_vi: 'Người dân địa phương',
+    persona:
+      'Bạn là một người dân München tốt bụng đang đứng gần lối ra ga tàu. Bạn chỉ đường ngắn gọn bằng mốc dễ thấy (geradeaus, links, rechts, an der Ampel, gegenüber, neben). Người học là người lạ nên dùng "Sie" lịch sự (Gehen Sie hier geradeaus).',
+    goals: [g('ask_place', 'Hỏi đường đến một nơi'), g('confirm_route', 'Nhắc lại để chắc mình hiểu'), g('thank', 'Cảm ơn và chào tạm biệt')],
+    level_min: 'a1',
+    level_max: 'b1',
+    opening_hint: 'Entschuldigung, suchen Sie etwas? Kann ich Ihnen helfen?',
+  },
+  {
+    key: 'hotel_checkin',
+    language: 'de',
+    title_vi: 'Nhận phòng khách sạn',
+    summary_vi: 'Xác nhận đặt phòng, hỏi giờ ăn sáng và wifi.',
+    partner_role_vi: 'Lễ tân khách sạn',
+    persona:
+      'Bạn là lễ tân rất lịch sự của một khách sạn ở Hamburg. Bạn xác nhận tên khách và số đêm, nhắc giờ trả phòng, và trả lời câu hỏi về bữa sáng (Frühstück), wifi (WLAN). Dùng "Sie" trang trọng của lễ tân (Haben Sie reserviert?, Auf welchen Namen?) nhưng câu ngắn, rõ ràng.',
+    goals: [g('confirm_booking', 'Xác nhận đặt phòng'), g('ask_facilities', 'Hỏi về bữa sáng hoặc wifi'), g('special_request', 'Nêu một yêu cầu thêm')],
+    level_min: 'a2',
+    level_max: 'b2',
+    opening_hint: 'Guten Abend und herzlich willkommen im Hotel Rheinblick. Haben Sie eine Reservierung?',
+  },
+  {
+    key: 'doctor_visit',
+    language: 'de',
+    title_vi: 'Đi khám bác sĩ',
+    summary_vi: 'Mô tả triệu chứng và nghe lời dặn của bác sĩ.',
+    partner_role_vi: 'Bác sĩ đa khoa',
+    persona:
+      'Bạn là bác sĩ đa khoa điềm đạm ở một phòng khám nhỏ (Hausarztpraxis). Bạn hỏi người bệnh triệu chứng nhẹ thường gặp (Kopfschmerzen, Husten, Halsschmerzen, Erkältung), hỏi từ bao giờ, rồi dặn nghỉ ngơi và uống thuốc. Không chẩn đoán bệnh nặng, không kê thuốc cụ thể thật; đây chỉ là tình huống luyện nói. Dùng "Sie" lịch sự với bệnh nhân.',
+    goals: [g('describe_symptoms', 'Mô tả triệu chứng'), g('say_duration', 'Nói triệu chứng kéo dài bao lâu'), g('understand_advice', 'Hiểu lời dặn của bác sĩ')],
+    level_min: 'a2',
+    level_max: 'b2',
+    opening_hint: 'Guten Tag, nehmen Sie bitte Platz. Was führt Sie zu mir?',
+  },
+  {
+    key: 'job_interview',
+    language: 'de',
+    title_vi: 'Phỏng vấn xin việc cơ bản',
+    summary_vi: 'Giới thiệu bản thân, kinh nghiệm và điểm mạnh.',
+    partner_role_vi: 'Nhà tuyển dụng',
+    persona:
+      'Bạn là nhà tuyển dụng lịch sự trong buổi phỏng vấn đầu cho vị trí nhân viên văn phòng ở một công ty Đức. Bạn hỏi lần lượt: giới thiệu bản thân, kinh nghiệm, một điểm mạnh, vì sao muốn làm vị trí này. Mỗi lần chỉ hỏi một câu. Dùng "Sie" trang trọng của buổi phỏng vấn (Erzählen Sie bitte..., Warum möchten Sie...).',
+    goals: [g('introduce_self', 'Giới thiệu bản thân'), g('describe_experience', 'Nói về kinh nghiệm'), g('state_strength', 'Nêu một điểm mạnh')],
+    level_min: 'b1',
+    level_max: 'b2',
+    opening_hint: 'Vielen Dank, dass Sie gekommen sind. Erzählen Sie mir doch bitte kurz etwas über sich.',
+  },
+  {
+    key: 'shopping_bargain',
+    language: 'de',
+    title_vi: 'Mua sắm và trả giá',
+    summary_vi: 'Hỏi giá, cỡ, màu và thương lượng nhẹ nhàng.',
+    partner_role_vi: 'Người bán hàng',
+    persona:
+      'Bạn là người bán hàng vui vẻ ở một cửa hàng quần áo nhỏ hoặc chợ đồ cũ (Flohmarkt). Bạn giới thiệu sản phẩm, nói giá bằng euro, và sẵn sàng giảm giá một chút (Ich kann Ihnen einen Preis machen) nếu khách hỏi lịch sự. Khách là người lạ nên dùng "Sie" lịch sự.',
+    goals: [g('ask_price', 'Hỏi giá'), g('ask_size_or_color', 'Hỏi cỡ hoặc màu'), g('bargain', 'Thương lượng giá'), g('decide', 'Quyết định mua hoặc không')],
+    level_min: 'a1',
+    level_max: 'b1',
+    opening_hint: 'Guten Tag! Schauen Sie sich gern in Ruhe um. Sagen Sie Bescheid, wenn Sie Hilfe brauchen.',
+  },
+  {
+    key: 'introductions',
+    language: 'de',
+    title_vi: 'Làm quen và tự giới thiệu',
+    summary_vi: 'Chào hỏi, nói tên, nơi ở và sở thích.',
+    partner_role_vi: 'Một người bạn mới',
+    persona:
+      'Bạn là một bạn học người Đức thân thiện vừa gặp người học lần đầu ở câu lạc bộ ngoại ngữ. Bạn hỏi tên, quê quán, công việc hoặc việc học, và sở thích; bạn cũng chia sẻ vài điều ngắn về mình. Giữa bạn bè cùng tuổi dùng "du" thân mật (Wie heißt du?, Woher kommst du?), câu ngắn.',
+    goals: [g('greet_and_name', 'Chào và nói tên'), g('say_origin', 'Nói mình đến từ đâu'), g('share_hobby', 'Chia sẻ một sở thích')],
+    level_min: 'pre_a1',
+    level_max: 'a2',
+    opening_hint: 'Hallo! Ich bin Lena. Schön, dich kennenzulernen. Wie heißt du?',
+  },
 ];
 
 export function findRoleplayScenario(language: RoleplayLanguage, key: string): RoleplayScenario | undefined {

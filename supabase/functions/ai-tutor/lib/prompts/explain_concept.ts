@@ -17,7 +17,7 @@ export const explainConcept: PromptModule = {
     'Giải thích một từ, cấu trúc ngữ pháp hoặc câu mà người học hỏi.',
     '`summary`: một câu tiếng Việt tóm tắt ý chính.',
     '`explanation_md`: giải thích bằng tiếng Việt (Markdown đơn giản), gồm nghĩa, cách dùng, lưu ý quan trọng.',
-    '`examples`: 2–4 ví dụ; `target` là câu bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji), `vi` là bản dịch tiếng Việt tự nhiên.',
+    '`examples`: 2–4 ví dụ; `target` là câu bằng ngôn ngữ đích (tiếng Hàn phải viết bằng Hangul, tiếng Nhật phải viết bằng chữ Nhật: kana, kanji; tiếng Đức viết đúng chính tả có ä, ö, ü, ß, danh từ viết hoa và nêu rõ du hay Sie nếu cần), `vi` là bản dịch tiếng Việt tự nhiên.',
     '`common_mistakes`: tối đa 3 lỗi người Việt hay mắc, viết bằng tiếng Việt; để mảng rỗng nếu không có.',
     '`confidence`: mức độ chắc chắn của bạn (high/medium/low).',
     '`uncertainty`: nếu confidence không phải high, nêu ngắn điều bạn chưa chắc và khuyên xem lại nội dung bài học đã kiểm duyệt; nếu chắc chắn thì null.',
