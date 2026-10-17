@@ -634,3 +634,15 @@ test('irregular plurals are written out in full (das Museum, Museen)', () => {
   assert.equal(parseNoun('das Museum, museen'), null);
   assert.equal(pluralForm('Tisch', '-e'), 'Tische');
 });
+
+test('articles: weak masculine oblique singular (dem Nachbarn) and demonstrative das after sein (Ist das Herr …) are not flagged', async (t) => {
+  const nouns = items([
+    ['de:item:nachbar', 'vocab', 'der Nachbar, -n', null, 'Nomen'],
+    ['de:item:herr', 'vocab', 'der Herr, -en', null, 'Nomen'],
+  ]);
+  const sentences = ['Ich gebe es dem Nachbarn.', 'Ist das Herr Becker?', 'Das ist Herr Weber.', 'Ich sehe das Herr.'];
+  const content = tree(t, { 'de/items/a.yaml': nouns, 'de/items/s.yaml': items(sentences.map((x, i) => [`de:item:s${i}`, 'phrase', `${NAMES[i]}!`, x])) });
+  const r = await lint(content);
+  const warned = r.warnings.filter((w) => w.message.startsWith('article')).map((w) => w.path.match(/items\[(\d+)\]/)[1]);
+  assert.deepEqual(warned, ['3']);
+});

@@ -132,6 +132,8 @@ function formsOf(lexicon) {
       if (e.plural !== '(Pl.)') add(lemma, 'sg', e.article);
       else add(lemma, 'pl', 'die');
       if (e.pluralForm) add(e.pluralForm, 'pl', e.article);
+      // Weak (n-declension) masculines: the plural form is also the oblique singular (dem Nachbarn, den Studenten).
+      if (e.pluralForm && e.article === 'der' && /^-(?:n|en)$/.test(e.plural)) add(e.pluralForm, 'sg', 'der');
     }
   }
   return forms;
@@ -542,6 +544,8 @@ function analyse(s, sp, forms, examShortText) {
     if (noun.skip || det.skip || !/^\s+$/.test(clean.slice(det.end, noun.index))) continue;
     const d = det.text.toLowerCase();
     if (!ALL_DETERMINERS.has(d)) continue;
+    // "Ist das Herr Müller?": after a form of sein, `das` is the demonstrative pronoun, not an article.
+    if (d === 'das' && /^(?:ist|sind|war|waren)$/i.test(tokens[i - 2]?.text ?? '')) continue;
     const allowed = allowedDeterminers(forms, noun.text);
     if (!allowed) continue;
     const set = INDEFINITE_SET.has(d) ? allowed.indef : allowed.def;
