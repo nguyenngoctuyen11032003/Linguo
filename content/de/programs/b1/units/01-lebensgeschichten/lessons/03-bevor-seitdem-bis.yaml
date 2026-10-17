@@ -78,7 +78,7 @@ body:
     translation:
       vi: Từ khi nghỉ hưu, cuối cùng tôi cũng có thời gian cho các cháu.
     note:
-      vi: "der Rentner / die Rentnerin = người nghỉ hưu (nghề không cần mạo từ). Vẫn đang nghỉ hưu nên cả hai vế ở Präsens: bin, habe."
+      vi: "der Rentner / die Rentnerin = người nghỉ hưu; giống như khi nói nghề nghiệp, sau sein không cần mạo từ. Vẫn đang nghỉ hưu nên cả hai vế ở Präsens: bin, habe."
   - type: example
     target: Seit ich mein Studium abgeschlossen habe, arbeite ich als Ingenieurin.
     target_lang: de
@@ -201,7 +201,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u01-g-bis
     prompt:
-      template: "{{b1}} ich in Deutschland wohne, koche ich öfter selbst. Ich bleibe hier, {{b2}} ich mein Studium abgeschlossen habe. {{b3}} ich zurückkehre, will ich noch Österreich besuchen."
+      template: "(bevor / bis / seit) {{b1}} ich in Deutschland wohne, koche ich öfter selbst. Ich bleibe hier, {{b2}} ich mein Studium abgeschlossen habe. {{b3}} ich zurückkehre, will ich noch Österreich besuchen."
       blanks:
         - { id: b1, width_hint: 7 }
         - { id: b2, width_hint: 4 }
@@ -247,10 +247,13 @@ exercises:
         - Ich wasche mir vor dem Essen die Hände.
         - Bevor ich esse, wasche ich meine Hände.
         - Ich wasche meine Hände, bevor ich esse.
+        - Ich wasche mir die Hände vor dem Essen.
+        - Vor dem Essen wasche ich meine Hände.
+        - Ich wasche meine Hände vor dem Essen.
     known_wrong:
       - answer: Bevor zu essen, wasche ich mir die Hände.
         feedback_vi: "Không có \"bevor zu + nguyên thể\" như tiếng Anh. Dùng câu phụ – Bevor ich esse, … (hoặc Vor dem Essen, …)."
-        error_tag: word_order
+        error_tag: zu_infinitive
       - answer: Bevor ich esse, ich wasche mir die Hände.
         feedback_vi: Câu phụ đứng đầu là vị trí 1, nên wasche đứng ngay sau dấu phẩy – …, wasche ich mir die Hände.
         error_tag: verb_position
@@ -315,6 +318,10 @@ exercises:
         - Ich lebe schon seit drei Jahren in Berlin.
         - Ich wohne seit 3 Jahren in Berlin.
         - Ich lebe seit 3 Jahren in Berlin.
+        - Ich wohne schon drei Jahre in Berlin.
+        - Ich lebe schon drei Jahre in Berlin.
+        - Seit drei Jahren wohne ich schon in Berlin.
+        - Seit drei Jahren lebe ich schon in Berlin.
     known_wrong:
       - answer: Ich habe seit drei Jahren in Berlin gewohnt.
         feedback_vi: Tôi vẫn đang sống ở Berlin, nên tiếng Đức dùng Präsens với seit – Ich wohne seit drei Jahren …
@@ -326,7 +333,7 @@ exercises:
         feedback_vi: seit đi với Dativ; số nhiều Dativ thêm -n – seit drei Jahren.
         error_tag: case_dat_akk
     explanation:
-      vi: "Việc còn tiếp diễn đến nay: seit + Dativ + Präsens (wohne/lebe), dù tiếng Việt nói \"đã\". Dativ số nhiều: drei Jahren."
+      vi: "Việc còn tiếp diễn đến nay: seit + Dativ + Präsens (wohne/lebe), dù tiếng Việt nói \"đã\". Dativ số nhiều: drei Jahren. Không có seit thì nói schon drei Jahre (chỉ khoảng thời gian)."
     display_answer: Ich wohne seit drei Jahren in Berlin.
 
   # ---------------- application ----------------

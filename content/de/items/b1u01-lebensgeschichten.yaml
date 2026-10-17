@@ -695,7 +695,7 @@ items:
             vi: Tôi thấy chia tay thật khó.
         - target: Am Anfang ist mir die Sprache schwergefallen.
           translation:
-            vi: Lúc đầu tôi thấy học tiếng rất khó.
+            vi: Lúc đầu tôi thấy tiếng ở đây khó.
       confusion:
         vi: "Việc khó là chủ ngữ, người thấy khó ở Dativ: Die Sprache fällt mir schwer. Không nói Ich falle schwer."
 

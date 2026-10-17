@@ -282,7 +282,7 @@ exercises:
     known_wrong:
       - answer: arbeitet
         feedback_vi: Sau hatte cần Partizip II – gearbeitet.
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: gehte
         feedback_vi: gehen là động từ mạnh – Präteritum là ging.
         error_tag: verb_form

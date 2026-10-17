@@ -57,7 +57,7 @@ body:
       vi: "Khi kể chuyện, nối các bước bằng zuerst, dann, danach, anschließend và để động từ ở vị trí 2: Anschließend sind wir essen gegangen. Nói cảm xúc: Ich war total überrascht. Das war mir peinlich. Was für ein Zufall!"
   - type: deep_explain
     text:
-      vi: "Nếu modal đứng một mình, không có động từ nguyên thể, thì dùng Partizip bình thường: Das habe ich nicht gewollt. Ich habe nach Hause gemusst. Trong câu phụ, haben đứng trước hai nguyên thể chứ không đứng cuối: …, weil ich gestern lange habe arbeiten müssen; cấu trúc này khó, nên trong câu phụ người Đức thường dùng Präteritum: …, weil ich gestern lange arbeiten musste. lassen (học ở A2) cũng có kiểu nguyên thể thay Partizip: Ich habe mein Fahrrad reparieren lassen. Về từ vựng: peinlich mô tả tình huống (Das war mir peinlich), còn sich schämen là động từ phản thân nói cảm xúc của người (Ich habe mich geschämt)."
+      vi: "Nếu modal đứng một mình, không có động từ nguyên thể, thì dùng Partizip bình thường: Das habe ich nicht gewollt; nhưng khi kể, modal đứng một mình thường dùng Präteritum: Ich musste nach Hause. Trong câu phụ, haben đứng trước hai nguyên thể chứ không đứng cuối: …, weil ich gestern lange habe arbeiten müssen; cấu trúc này khó, nên trong câu phụ người Đức thường dùng Präteritum: …, weil ich gestern lange arbeiten musste. lassen (học ở A2) cũng có kiểu nguyên thể thay Partizip: Ich habe mein Fahrrad reparieren lassen. Về từ vựng: peinlich mô tả tình huống (Das war mir peinlich), còn sich schämen là động từ phản thân nói cảm xúc của người (Ich habe mich geschämt)."
   - type: example
     target: Gestern habe ich lange arbeiten müssen, deshalb konnte ich nicht zur Party kommen.
     target_lang: de
@@ -262,16 +262,16 @@ exercises:
     known_wrong:
       - answer: getreffen
         feedback_vi: treffen là động từ mạnh, Partizip II đổi e → o – getroffen.
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: geüberrascht
         feedback_vi: Động từ có tiền tố über- không tách thì không thêm ge- – überrascht.
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: überraschte
         feedback_vi: Tính từ sau sein không có đuôi – ich war überrascht.
         error_tag: adj_ending
       - answer: gelachen
         feedback_vi: lachen là động từ yếu – Partizip II là gelacht.
-        error_tag: verb_form
+        error_tag: participle_form
     explanation:
       vi: "treffen là động từ mạnh: habe … getroffen. überrascht (ngạc nhiên) là Partizip của überraschen dùng như tính từ, không có ge- và không có đuôi sau war. lachen là động từ yếu: haben … gelacht."
     display_answer: "Ich habe zufällig meinen alten Lehrer im Zug getroffen. Was für ein Zufall! Ich war total überrascht, und wir haben viel gelacht."
@@ -283,14 +283,13 @@ exercises:
     difficulty: 3
     item: de:item:b1u01-g-modal-perfekt
     prompt:
-      source_text: "Tôi đã phải về nhà. (dùng Perfekt)"
+      source_text: "Tôi đã phải về nhà. (dùng Perfekt của müssen với gehen hoặc fahren)"
       source_lang: vi
       direction: vi_to_target
     answer:
       accepted:
         - Ich habe nach Hause gehen müssen.
         - Ich habe nach Hause fahren müssen.
-        - Ich habe nach Hause gemusst.
     known_wrong:
       - answer: Ich bin nach Hause gehen müssen.
         feedback_vi: Modal dùng haben ở Perfekt, kể cả khi đi với gehen – Ich habe … gehen müssen.
@@ -302,7 +301,7 @@ exercises:
         feedback_vi: "Cuối câu, động từ chính đứng trước, modal đứng sau – gehen müssen."
         error_tag: word_order
     explanation:
-      vi: "Perfekt của modal + nguyên thể: Ich habe nach Hause gehen (hoặc fahren) müssen. Khi modal đứng một mình (không có gehen), dùng Partizip: Ich habe nach Hause gemusst – cũng đúng."
+      vi: "Perfekt của modal + nguyên thể: Ich habe nach Hause gehen (hoặc fahren) müssen. Trợ động từ là haben vì modal quyết định trợ động từ; ở cuối câu, động từ chính đứng trước, modal đứng sau."
     display_answer: Ich habe nach Hause gehen müssen.
 
   # ---------------- application ----------------
@@ -349,6 +348,8 @@ exercises:
         - Ich habe zufällig im Zug meine alte Lehrerin getroffen.
         - Im Zug habe ich zufällig meine alte Lehrerin getroffen.
         - Zufällig habe ich meine alte Lehrerin im Zug getroffen.
+        - Zufällig habe ich im Zug meine alte Lehrerin getroffen.
+        - Im Zug habe ich meine alte Lehrerin zufällig getroffen.
         - Ich habe zufällig meine ehemalige Lehrerin im Zug getroffen.
         - Ich habe meine ehemalige Lehrerin zufällig im Zug getroffen.
         - Ich habe im Zug zufällig meine ehemalige Lehrerin getroffen.
@@ -359,7 +360,7 @@ exercises:
         error_tag: aux_verb
       - answer: Ich habe zufällig meine alte Lehrerin im Zug treffen.
         feedback_vi: Perfekt cần Partizip II ở cuối câu – getroffen.
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: Ich habe zufällig meinen alten Lehrerin im Zug getroffen.
         feedback_vi: die Lehrerin là giống cái, tân ngữ Akkusativ – meine alte Lehrerin.
         error_tag: gender

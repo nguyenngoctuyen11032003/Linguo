@@ -350,6 +350,10 @@ exercises:
         - Wir hatten damals nicht viel Spielzeug.
         - Damals hatten wir wenig Spielzeug.
         - Wir hatten damals wenig Spielzeug.
+        - Damals hatten wir nicht viele Spielsachen.
+        - Wir hatten damals nicht viele Spielsachen.
+        - Damals hatten wir wenige Spielsachen.
+        - Wir hatten damals wenige Spielsachen.
     known_wrong:
       - answer: Damals wir hatten nicht viel Spielzeug.
         feedback_vi: Damals ở vị trí 1 thì động từ hatten đứng ở vị trí 2 – Damals hatten wir …
@@ -358,7 +362,7 @@ exercises:
         feedback_vi: Damals (hồi đó) chỉ quá khứ nên dùng hatten, không dùng haben ở hiện tại.
         error_tag: verb_form
     explanation:
-      vi: "haben ở Präteritum: wir hatten. Spielzeug thường dùng ở số ít với nghĩa chung, nên nói nicht viel Spielzeug (hoặc wenig Spielzeug)."
+      vi: "haben ở Präteritum: wir hatten. Spielzeug thường dùng ở số ít với nghĩa chung, nên nói nicht viel Spielzeug (hoặc wenig Spielzeug); cũng có thể dùng danh từ số nhiều die Spielsachen: nicht viele Spielsachen."
     display_answer: Damals hatten wir nicht viel Spielzeug.
 
   - key: de:exercise:b1u01l1-tr-vater-streng

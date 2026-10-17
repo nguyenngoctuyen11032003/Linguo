@@ -58,7 +58,7 @@ body:
       vi: "Khi câu nachdem đứng đầu, cả câu phụ là vị trí 1, nên động từ câu chính đứng ngay sau dấu phẩy: Nachdem ich das Abitur gemacht hatte, zog ich nach Hanoi. Đây là quy tắc câu phụ đứng đầu bạn đã gặp với weil và wenn."
   - type: deep_explain
     text:
-      vi: "Trong văn nói, đôi khi bạn nghe người Đức dùng Perfekt ở cả hai vế (Nachdem ich gegessen habe, bin ich gegangen), nhưng văn viết chuẩn và đề thi dùng quy tắc lùi thì. Đừng nhầm ba từ: nachdem (liên từ, động từ cuối câu), nach (giới từ + Dativ: nach dem Abitur) và danach (trạng từ \"sau đó\", động từ ở vị trí 2: Danach zog ich nach Hanoi). Với động từ phản thân, đại từ đứng sau chủ ngữ như ở Perfekt: ich hatte mich verabschiedet, wir hatten uns eingelebt. Trong bài, auswandern (ra nước ngoài sống) và zurückkehren (trở về) đều chỉ di chuyển nên dùng war: Sie war schon ausgewandert."
+      vi: "Trong văn nói, đôi khi bạn nghe người Đức dùng Perfekt ở cả hai vế (Nachdem ich gegessen habe, bin ich gegangen), nhưng văn viết chuẩn và đề thi dùng quy tắc lùi thì. Đừng nhầm ba từ: nachdem (liên từ, động từ cuối câu), nach (giới từ + Dativ: nach dem Abitur) và danach (trạng từ \"sau đó\", động từ ở vị trí 2: Danach zog ich nach Hanoi). Với động từ phản thân, khi chủ ngữ là đại từ thì đại từ phản thân đứng ngay sau nó, như ở Perfekt: ich hatte mich verabschiedet, wir hatten uns eingelebt. Trong bài, auswandern (ra nước ngoài sống) và zurückkehren (trở về) đều chỉ di chuyển nên dùng war: Sie war schon ausgewandert."
   - type: example
     target: Nachdem ich das Abitur gemacht hatte, verließ ich mein Dorf.
     target_lang: de
@@ -105,7 +105,7 @@ body:
     right: Nachdem ich gegessen hatte, ging ich schlafen.
     target_lang: de
     note:
-      vi: "Không được bỏ trợ động từ: Partizip II luôn cần hatte/war (hoặc habe/bin) đi kèm."
+      vi: "Không được bỏ trợ động từ: trong Perfekt và Plusquamperfekt, Partizip II phải đi kèm hatte/war (hoặc habe/bin)."
   - type: common_mistake
     wrong: Nachdem ich angekommen hatte, rief ich meine Mutter an.
     right: Nachdem ich angekommen war, rief ich meine Mutter an.
@@ -210,7 +210,7 @@ exercises:
     known_wrong:
       - answer: geverabschiedet
         feedback_vi: Động từ có tiền tố ver- không thêm ge- ở Partizip II – verabschiedet.
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: fahren
         feedback_vi: Câu chính kể chuyện đã qua nên dùng Präteritum – wir fuhren.
         error_tag: verb_form
@@ -273,6 +273,10 @@ exercises:
         - Nachdem ich das Abitur bestanden hatte, habe ich mein Dorf verlassen.
         - Ich verließ mein Dorf, nachdem ich das Abitur bestanden hatte.
         - Ich habe mein Dorf verlassen, nachdem ich das Abitur bestanden hatte.
+        - Nachdem ich mein Abitur gemacht hatte, verließ ich mein Dorf.
+        - Nachdem ich mein Abitur gemacht hatte, habe ich mein Dorf verlassen.
+        - Ich verließ mein Dorf, nachdem ich mein Abitur gemacht hatte.
+        - Ich habe mein Dorf verlassen, nachdem ich mein Abitur gemacht hatte.
     known_wrong:
       - answer: Nachdem ich das Abitur gemacht hatte, ich verließ mein Dorf.
         feedback_vi: Câu nachdem đứng đầu là vị trí 1, nên verließ đứng ngay sau dấu phẩy – …, verließ ich mein Dorf.
@@ -339,6 +343,10 @@ exercises:
         - Ich hatte vorher nie im Ausland gewohnt.
         - Vorher hatte ich noch nie im Ausland gewohnt.
         - Ich hatte vorher noch nie im Ausland gewohnt.
+        - Zuvor hatte ich nie im Ausland gelebt.
+        - Ich hatte zuvor nie im Ausland gelebt.
+        - Zuvor hatte ich noch nie im Ausland gelebt.
+        - Ich hatte zuvor noch nie im Ausland gelebt.
     known_wrong:
       - answer: Vorher ich hatte nie im Ausland gelebt.
         feedback_vi: Vorher ở vị trí 1 thì hatte phải ở vị trí 2 – Vorher hatte ich …
@@ -350,7 +358,7 @@ exercises:
         feedback_vi: das Ausland cần mạo từ – im Ausland (in dem), ở nước ngoài.
         error_tag: article
     explanation:
-      vi: "Plusquamperfekt: hatte + Partizip II (gelebt) ở cuối câu; leben dùng haben. Ở nước ngoài = im Ausland (Wo?). vorher/davor ở đầu câu thì hatte đứng ở vị trí 2."
+      vi: "Plusquamperfekt: hatte + Partizip II (gelebt) ở cuối câu; leben dùng haben. Ở nước ngoài = im Ausland (Wo?). vorher/davor/zuvor ở đầu câu thì hatte đứng ở vị trí 2."
     display_answer: Vorher hatte ich nie im Ausland gelebt.
 
   - key: de:exercise:b1u01l2-tr-schwester
