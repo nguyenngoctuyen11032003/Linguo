@@ -1,0 +1,383 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u06-zukunft
+order_index: 1
+level: b1
+title:
+  vi: Trong tương lai – Futur I (Es wird wärmer werden.)
+objectives:
+  - vi: Dùng Futur I (werden + nguyên thể) để dự báo, nói quyết tâm và hứa hẹn.
+  - vi: Phỏng đoán điều đang xảy ra bằng werden + wohl (Er wird wohl krank sein).
+  - vi: Đọc hiểu một đoạn dự báo ngắn về khí hậu.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u05-wiederholung]
+items:
+  - item: de:item:b1u06-g-futur-i
+  - item: de:item:b1u06-g-vermutung-wohl
+  - item: de:item:b1u06-klima
+  - item: de:item:b1u06-klimawandel
+  - item: de:item:b1u06-temperatur
+  - item: de:item:b1u06-steigen
+  - item: de:item:b1u06-erde
+  - item: de:item:b1u06-prognose
+  - item: de:item:b1u06-duerre
+  - item: de:item:b1u06-ueberschwemmung
+  - item: de:item:b1u06-extrem
+  - item: de:item:b1u06-hitze
+  - item: de:item:b1u06-gletscher
+  - item: de:item:b1u06-schmelzen
+  - item: de:item:b1u06-unwetter
+  - item: de:item:b1u06-sturm
+  - item: de:item:b1u06-erwaermung
+  - item: de:item:b1u06-warnen
+  - item: de:item:b1u06-wahrscheinlich
+  - item: de:item:a2u03-g-werden-vollverb
+    role: reuse
+  - item: de:item:a2u08-g-praesens-zukunft
+    role: reuse
+  - item: de:item:a2u08-zukunft
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được về tương lai và đưa ra phỏng đoán, ví dụ: \"Die Temperaturen werden weiter steigen. Ich werde mehr Fahrrad fahren.\" hay \"Tom ist nicht da – er wird wohl krank sein.\""
+  - type: explain
+    text:
+      vi: "Futur I = werden chia theo chủ ngữ ở vị trí 2 + động từ chính nguyên thể ở cuối câu: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden … fahren. Tiếng Việt chỉ thêm \"sẽ\" trước động từ, còn tiếng Đức phải chia werden và đẩy động từ chính xuống cuối: Ich werde morgen ins Kino gehen."
+  - type: explain
+    text:
+      vi: "Bạn dùng Futur I để dự báo (Es wird morgen regnen), nói quyết tâm hoặc hứa hẹn (Ich werde ab jetzt weniger fliegen). Kế hoạch chắc chắn đã có mốc thời gian thì người Đức thường dùng Präsens như bạn học ở A2: Morgen fahre ich nach Berlin. Vì vậy, không phải chữ \"sẽ\" nào trong tiếng Việt cũng thành werden."
+  - type: explain
+    text:
+      vi: "werden + wohl + nguyên thể dùng để phỏng đoán điều đang xảy ra bây giờ, không phải tương lai: Er wird wohl krank sein = chắc là anh ấy đang ốm. Có thể thay wohl bằng sicher, bestimmt (chắc chắn hơn) hoặc nói bằng Präsens: Er ist wahrscheinlich krank."
+  - type: explain
+    text:
+      vi: "Đừng nhầm ba kiểu wird: wird + tính từ/danh từ là \"trở nên, trở thành\" (Es wird wärmer, Er wird Arzt); wird + nguyên thể là Futur I (Es wird regnen); wird + Partizip II là bị động (Der Müll wird getrennt). Hãy nhìn từ đứng cuối câu để biết."
+  - type: deep_explain
+    text:
+      vi: "Trong câu phụ, werden chia đứng cuối, ngay sau động từ nguyên thể: Ich glaube, dass es morgen regnen wird. Câu Es wird wärmer (Präsens, trở nên) đã nói về một quá trình đang diễn ra; Es wird wärmer werden (Futur I) là lời dự báo cho sau này, nên hai chữ werden đứng cạnh nhau là bình thường. Khi đi với động từ khiếm khuyết, ở cuối câu có hai nguyên thể: Wir werden mehr Energie sparen müssen (chúng ta sẽ phải tiết kiệm năng lượng hơn). Trong văn nói hằng ngày người Đức ít dùng Futur I hơn tiếng Việt dùng \"sẽ\"; bạn hay gặp nó trong dự báo thời tiết, tin tức, lời hứa và lời đe doạ (Das wirst du bereuen!). Nói về khí hậu, các bản tin thường nói có chừng mực: wahrscheinlich, vermutlich, nach der Prognose."
+  - type: example
+    target: Viele Experten erwarten, dass die Temperaturen in Zukunft weiter steigen werden.
+    target_lang: de
+    translation:
+      vi: Nhiều chuyên gia cho rằng trong tương lai nhiệt độ sẽ tiếp tục tăng.
+    note:
+      vi: "Câu phụ dass: steigen (nguyên thể) rồi werden (chia) ở cuối. in Zukunft = trong tương lai."
+  - type: example
+    target: Die Gletscher in den Alpen schmelzen, und es wird immer weniger Eis geben.
+    target_lang: de
+    translation:
+      vi: Các sông băng ở dãy Alps đang tan, và sẽ ngày càng ít băng hơn.
+    note:
+      vi: "schmelzen ở Präsens: việc đang diễn ra. es wird … geben: Futur I của es gibt (dự báo)."
+  - type: example
+    target: Ich verspreche dir, ich werde ab jetzt mit dem Fahrrad zur Arbeit fahren.
+    target_lang: de
+    translation:
+      vi: Mình hứa với bạn, từ giờ mình sẽ đi xe đạp đi làm.
+    note:
+      vi: "Lời hứa với người thân (du): werde ở vị trí 2, fahren ở cuối câu."
+  - type: example
+    target: Morgen fahre ich nach Berlin. Am Wochenende wird es dort wahrscheinlich regnen.
+    target_lang: de
+    translation:
+      vi: Ngày mai tôi đi Berlin. Cuối tuần ở đó có lẽ sẽ mưa.
+    note:
+      vi: "Kế hoạch chắc chắn có mốc thời gian: Präsens (fahre). Dự báo thời tiết: Futur I (wird … regnen)."
+  - type: example
+    target: Wo ist Tom? – Er wird wohl noch im Büro sein.
+    target_lang: de
+    translation:
+      vi: Tom đâu rồi? – Chắc là anh ấy vẫn còn ở văn phòng.
+    note:
+      vi: "Phỏng đoán bây giờ: werden + wohl + sein. Không có \"sẽ\" trong bản dịch."
+  - type: common_mistake
+    wrong: Ich werde morgen gehen ins Kino.
+    right: Ich werde morgen ins Kino gehen.
+    target_lang: de
+    note:
+      vi: "Động từ nguyên thể của Futur I đứng cuối câu, sau mọi thành phần khác: … ins Kino gehen."
+  - type: common_mistake
+    wrong: Ich wird ab morgen weniger Fleisch essen.
+    right: Ich werde ab morgen weniger Fleisch essen.
+    target_lang: de
+    note:
+      vi: "werden phải chia theo chủ ngữ: ich werde, du wirst, er wird."
+  - type: common_mistake
+    wrong: In Zukunft ich werde mehr Fahrrad fahren.
+    right: In Zukunft werde ich mehr Fahrrad fahren.
+    target_lang: de
+    note:
+      vi: "In Zukunft đứng ở vị trí 1 thì werde phải ở vị trí 2, chủ ngữ ich đứng sau."
+  - type: summary
+    points:
+      - vi: "Futur I: werden (chia, vị trí 2) + nguyên thể cuối câu: Es wird regnen."
+      - vi: "werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie/Sie werden."
+      - vi: "Dùng cho dự báo, quyết tâm, lời hứa; kế hoạch có mốc thời gian thường dùng Präsens."
+      - vi: "werden + wohl + nguyên thể = phỏng đoán hiện tại (chắc là): Er wird wohl krank sein."
+      - vi: "Câu phụ: …, dass es regnen wird (werden đứng cuối)."
+      - vi: "wird + tính từ = trở nên; wird + nguyên thể = Futur; wird + Partizip II = bị động."
+      - vi: "Từ vựng: das Klima, der Klimawandel, die Temperatur, steigen, die Erde, die Prognose, die Dürre, die Überschwemmung."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u06l1-mcq-wird-futur
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-futur-i
+    prompt:
+      stem: "Trong câu nào wird là Futur I (nghĩa \"sẽ\")?"
+      stem_lang: vi
+      options:
+        - { id: w3f, text: "Morgen wird es regnen.", lang: de }
+        - { id: w7d, text: "Im Herbst wird es früh dunkel.", lang: de }
+        - { id: w1p, text: "Der Müll wird hier getrennt.", lang: de }
+        - { id: w5v, text: "Mein Bruder wird Ingenieur.", lang: de }
+    answer:
+      correct_option_id: w3f
+    explanation:
+      vi: "wird + nguyên thể (regnen) ở cuối câu là Futur I. wird + tính từ (dunkel) và wird + danh từ (Ingenieur) nghĩa là \"trở nên, trở thành\"; wird + Partizip II (getrennt) là bị động."
+    display_answer: Morgen wird es regnen.
+
+  - key: de:exercise:b1u06l1-mcq-wohl-krank
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u06-g-vermutung-wohl
+    prompt:
+      stem: "Hôm nay Anna không đến lớp. Một bạn nói: \"Sie wird wohl krank sein.\" Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: k2a, text: "Chắc là hôm nay cô ấy bị ốm.", lang: vi }
+        - { id: k6b, text: "Ngày mai cô ấy sẽ bị ốm.", lang: vi }
+        - { id: k9c, text: "Cô ấy muốn nghỉ ốm.", lang: vi }
+        - { id: k4d, text: "Hôm qua cô ấy đã bị ốm.", lang: vi }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "werden + wohl + nguyên thể (krank sein) là phỏng đoán về hiện tại: chắc là bây giờ cô ấy đang ốm. Câu này không nói về ngày mai (tương lai) hay hôm qua (quá khứ), và không có nghĩa \"muốn\"."
+    display_answer: Chắc là hôm nay cô ấy bị ốm.
+
+  - key: de:exercise:b1u06l1-mcq-lesen-kuehler
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-prognose
+    prompt:
+      stem: "Prognose für unsere Region: Die Sommer werden in Zukunft wahrscheinlich heißer und trockener werden. Es wird öfter Dürren geben, aber auch mehr Unwetter mit starkem Regen. Dann kann es auch zu Überschwemmungen kommen. Die Stadt wird deshalb mehr Bäume pflanzen, denn sie spenden im Sommer Schatten. — Richtig oder falsch? Nach der Prognose werden die Sommer kühler."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: Die Sommer werden … heißer und trockener werden – mùa hè sẽ nóng hơn và khô hơn, không mát hơn (kühler). Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u06l1-mcq-lesen-baeume
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-futur-i
+    prompt:
+      stem: "Prognose für unsere Region: Die Sommer werden in Zukunft wahrscheinlich heißer und trockener werden. Es wird öfter Dürren geben, aber auch mehr Unwetter mit starkem Regen. Dann kann es auch zu Überschwemmungen kommen. Die Stadt wird deshalb mehr Bäume pflanzen, denn sie spenden im Sommer Schatten. — Richtig oder falsch? Die Stadt plant, mehr Bäume zu pflanzen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Die Stadt wird deshalb mehr Bäume pflanzen – Futur I diễn tả việc thành phố quyết định sẽ làm, tức là có kế hoạch trồng thêm cây. Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u06l1-fill-werde-wirst
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-futur-i
+    prompt:
+      template: "Ich {{b1}} ab Montag mit dem Fahrrad zur Arbeit fahren. {{b2}} du auch mitmachen? Meine Eltern {{b3}} ihr zweites Auto verkaufen."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [werde]
+        b2: [Wirst]
+        b3: [werden]
+    known_wrong:
+      - answer: wird
+        feedback_vi: wird chỉ dùng cho er/sie/es – ich werde, du wirst, sie (họ) werden.
+        error_tag: verb_form
+      - answer: werdet
+        feedback_vi: werdet là ngôi ihr – chủ ngữ meine Eltern (= sie, họ) cần werden.
+        error_tag: verb_form
+      - answer: werdest
+        feedback_vi: Ngôi du của werden bất quy tắc – du wirst.
+        error_tag: verb_form
+    explanation:
+      vi: "werden chia theo chủ ngữ: ich werde, du wirst (câu hỏi có/không nên Wirst đứng đầu), meine Eltern = sie → werden. Động từ chính (fahren, mitmachen, verkaufen) ở nguyên thể cuối câu."
+    display_answer: "Ich werde ab Montag mit dem Fahrrad zur Arbeit fahren. Wirst du auch mitmachen? Meine Eltern werden ihr zweites Auto verkaufen."
+
+  - key: de:exercise:b1u06l1-fill-duerre
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-duerre
+    prompt:
+      template: "Im Sommer gab es eine lange {{b1}}: Es hat acht Wochen nicht geregnet. Im Herbst kam dann zu viel Regen, und es gab eine {{b2}} in der Altstadt."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 16 }
+    answer:
+      blanks:
+        b1: [Dürre]
+        b2: [Überschwemmung]
+    known_wrong:
+      - answer: Dürren
+        feedback_vi: Sau eine cần số ít – eine lange Dürre.
+        error_tag: plural_form
+      - answer: Überschwemmungen
+        feedback_vi: Sau eine cần số ít – eine Überschwemmung.
+        error_tag: plural_form
+      - answer: Hitze
+        feedback_vi: Hitze là cái nóng; tám tuần không mưa là hạn hán – die Dürre.
+        error_tag: word_choice
+    explanation:
+      vi: "Nhiều tuần không mưa là hạn hán: die Dürre. Quá nhiều nước làm ngập khu phố là lũ lụt: die Überschwemmung. Cả hai là giống cái, đi với eine."
+    display_answer: "Im Sommer gab es eine lange Dürre: Es hat acht Wochen nicht geregnet. Im Herbst kam dann zu viel Regen, und es gab eine Überschwemmung in der Altstadt."
+
+  - key: de:exercise:b1u06l1-tr-temperatur
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-temperatur
+    prompt:
+      source_text: "Nhiệt độ trên Trái Đất sẽ tăng. (dùng Futur I)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Temperatur auf der Erde wird steigen.
+        - Die Temperaturen auf der Erde werden steigen.
+        - Auf der Erde wird die Temperatur steigen.
+        - Auf der Erde werden die Temperaturen steigen.
+        - Die Temperatur wird auf der Erde steigen.
+        - Die Temperaturen werden auf der Erde steigen.
+    known_wrong:
+      - answer: Die Temperatur auf der Erde wird steigt.
+        feedback_vi: Sau werden, động từ chính ở nguyên thể – wird … steigen.
+        error_tag: verb_form
+      - answer: Die Temperatur auf der Erde werden steigen.
+        feedback_vi: die Temperatur là số ít nên dùng wird; số nhiều die Temperaturen mới đi với werden.
+        error_tag: verb_form
+      - answer: Auf der Erde die Temperatur wird steigen.
+        feedback_vi: Auf der Erde ở vị trí 1 thì wird phải ở vị trí 2 – Auf der Erde wird die Temperatur steigen.
+        error_tag: verb_position
+    explanation:
+      vi: "Futur I: wird (chia theo die Temperatur, số ít) hoặc werden (die Temperaturen, số nhiều) ở vị trí 2, steigen ở cuối câu. Trái Đất luôn có mạo từ: auf der Erde."
+    display_answer: Die Temperatur auf der Erde wird steigen.
+
+  - key: de:exercise:b1u06l1-tr-buero-wohl
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-vermutung-wohl
+    prompt:
+      source_text: "Chắc là chị ấy đang ở văn phòng. (dùng werden + wohl)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Sie wird wohl im Büro sein.
+        - Sie wird wohl gerade im Büro sein.
+        - Sie wird jetzt wohl im Büro sein.
+        - Sie wird wohl jetzt im Büro sein.
+    known_wrong:
+      - answer: Sie wird wohl im Büro.
+        feedback_vi: Cần động từ nguyên thể ở cuối câu – … im Büro sein.
+        error_tag: verb_form
+      - answer: Sie wird wohl sein im Büro.
+        feedback_vi: Nguyên thể sein đứng cuối câu – Sie wird wohl im Büro sein.
+        error_tag: verb_position
+      - answer: Sie ist wohl im Büro sein.
+        feedback_vi: Cấu trúc phỏng đoán dùng werden – Sie wird wohl im Büro sein.
+        error_tag: verb_form
+    explanation:
+      vi: "Phỏng đoán điều đang xảy ra: werden (wird) + wohl + nguyên thể sein ở cuối câu. Bản dịch tiếng Việt không có \"sẽ\" vì đây không phải tương lai."
+    display_answer: Sie wird wohl im Büro sein.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u06l1-wb-duerren
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-futur-i
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Các chuyên gia tin rằng sẽ có nhiều đợt hạn hán hơn.\""
+      tokens:
+        - { id: d-geben, text: geben }
+        - { id: d-experten, text: Experten }
+        - { id: d-dass, text: dass }
+        - { id: d-wird, text: wird }
+        - { id: d-die, text: Die }
+        - { id: d-mehr, text: mehr }
+        - { id: d-komma, text: "," }
+        - { id: d-glauben, text: glauben }
+        - { id: d-es, text: es }
+        - { id: d-duerren, text: Dürren }
+    answer:
+      orders:
+        - [d-die, d-experten, d-glauben, d-komma, d-dass, d-es, d-mehr, d-duerren, d-geben, d-wird]
+    explanation:
+      vi: "Trong câu phụ dass, động từ chia đứng cuối: nguyên thể geben trước, werden (wird) sau. es gibt (có) ở Futur I là es wird … geben."
+    display_answer: Die Experten glauben, dass es mehr Dürren geben wird.
+
+  - key: de:exercise:b1u06l1-tr-fliegen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u06-g-futur-i
+    prompt:
+      source_text: Ich verspreche dir, ich werde weniger fliegen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mình hứa với bạn, mình sẽ đi máy bay ít hơn.
+        - Mình hứa với bạn, mình sẽ ít đi máy bay hơn.
+        - Tôi hứa với bạn, tôi sẽ đi máy bay ít hơn.
+        - Tôi hứa với bạn, tôi sẽ ít đi máy bay hơn.
+        - Tôi hứa với bạn là tôi sẽ đi máy bay ít hơn.
+        - Mình hứa với bạn là mình sẽ ít đi máy bay hơn.
+        - Tôi hứa với bạn, tôi sẽ bay ít hơn.
+        - Mình hứa với bạn, mình sẽ bay ít hơn.
+        - Anh hứa với em, anh sẽ đi máy bay ít hơn.
+        - Em hứa với anh, em sẽ đi máy bay ít hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi hứa với bạn, tôi đã đi máy bay ít hơn.
+        feedback_vi: "werde … fliegen là Futur I (sẽ), không phải quá khứ (đã)."
+        error_tag: meaning
+    explanation:
+      vi: "Ich verspreche dir = tôi hứa với bạn (du). ich werde … fliegen = Futur I dùng cho lời hứa: tôi sẽ đi máy bay. weniger = ít hơn."
+    display_answer: Mình hứa với bạn, mình sẽ đi máy bay ít hơn.

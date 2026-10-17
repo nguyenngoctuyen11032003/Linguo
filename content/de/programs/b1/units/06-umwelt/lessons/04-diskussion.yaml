@@ -1,0 +1,389 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u06-diskussion
+order_index: 4
+level: b1
+title:
+  vi: Thảo luận về môi trường – nêu ý kiến (Meiner Meinung nach …)
+objectives:
+  - vi: Nêu ý kiến bằng Meiner Meinung nach …, Ich bin der Meinung/Ansicht, dass …
+  - vi: Đồng ý và phản bác lịch sự (Da stimme ich dir zu. / Das sehe ich anders.), nêu ưu và nhược điểm.
+  - vi: Nghe hiểu ai ủng hộ, ai phản đối trong một cuộc thảo luận ngắn.
+estimated_minutes: 20
+skills: [listening, speaking]
+prerequisites: [de:lesson:b1u06-energie]
+items:
+  - item: de:item:b1u06-g-meinung-redemittel
+  - item: de:item:b1u06-meinung
+  - item: de:item:b1u06-ansicht
+  - item: de:item:b1u06-standpunkt
+  - item: de:item:b1u06-zustimmen
+  - item: de:item:b1u06-widersprechen
+  - item: de:item:b1u06-argument
+  - item: de:item:b1u06-ueberzeugen
+  - item: de:item:b1u06-vorteil
+  - item: de:item:b1u06-nachteil
+  - item: de:item:b1u06-verbot
+  - item: de:item:b1u06-sinnvoll
+  - item: de:item:b1u06-uebertrieben
+  - item: de:item:b1u06-recht-haben
+  - item: de:item:b1u06-alternative
+  - item: de:item:b1u06-diskussion
+  - item: de:item:b1u06-dafuer-dagegen-sein
+  - item: de:item:b1u06-diskutieren
+  - item: de:item:a2u03-g-dass
+    role: reuse
+  - item: de:item:a2u08-plastik
+    role: reuse
+  - item: de:item:b1u03-loesung
+    role: reuse
+  - item: de:item:b1u02-g-pronominaladverbien
+    role: reuse
+  - item: de:item:b1u02-g-verben-praeposition-b1
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn tham gia được một cuộc thảo luận ngắn về môi trường, ví dụ: \"Meiner Meinung nach sollten weniger Autos in die Innenstadt fahren. – Da stimme ich dir zu. – Das sehe ich anders.\""
+  - type: explain
+    text:
+      vi: "Meiner Meinung nach (theo ý tôi) chiếm vị trí 1, nên động từ chia đứng ngay sau, rồi mới đến chủ ngữ: Meiner Meinung nach ist das Verbot sinnvoll. Tiếng Việt nói \"theo tôi, lệnh cấm này hợp lý\" với chủ ngữ đứng trước động từ, nên người Việt hay quên đảo. Đừng thêm ich denke hay ich finde sau cụm này."
+  - type: explain
+    text:
+      vi: "Ich bin der Meinung, dass … và Ich bin der Ansicht, dass … nghe trang trọng hơn Ich finde, dass … một chút; sau dass động từ đứng cuối. Muốn nêu lập trường: Mein Standpunkt ist … hoặc Ich stehe auf dem Standpunkt, dass …"
+  - type: explain
+    text:
+      vi: "Đồng ý: Da stimme ich dir/Ihnen zu. – Da hast du recht. Phản đối nhẹ nhàng: Das sehe ich anders. – Da muss ich dir/Ihnen widersprechen. – Das finde ich übertrieben. zustimmen và widersprechen đều đi với Dativ (dir, Ihnen)."
+  - type: explain
+    text:
+      vi: "Khi cân nhắc hai mặt, dùng Einerseits …, andererseits … (một mặt …, mặt khác …), mỗi vế động từ đứng ngay sau: Einerseits ist das Auto praktisch, andererseits ist es teuer. Nêu ưu, nhược điểm: Ein Vorteil ist, dass … / Ein Nachteil ist, dass …"
+  - type: deep_explain
+    text:
+      vi: "meiner trong Meiner Meinung nach là Dativ (nach + Dativ, nhưng ở đây nach đứng sau danh từ); cũng có thể nói Nach meiner Meinung ist … Ich bin der Meinung dùng Nominativ (der Meinung), còn Ich bin anderer Meinung (tôi có ý kiến khác) là Genitiv không mạo từ, một cụm cố định. Câu Ich bin mit dir einverstanden không sai ngữ pháp, nhưng thường dùng để đồng ý với một đề nghị (Ich bin einverstanden = tôi đồng ý làm thế); khi tranh luận, Da hast du recht hoặc Da stimme ich dir zu tự nhiên hơn. Với người lạ, người lớn tuổi hay trong buổi thảo luận trang trọng, dùng Sie: Da stimme ich Ihnen zu. Theo hiểu biết lúc soạn bài, kỳ thi Goethe B1 có phần nghe một cuộc thảo luận và phần nói cần nêu, bảo vệ ý kiến; cấu trúc đề có thể thay đổi, hãy xem tài liệu mẫu chính thức."
+  - type: example
+    target: Meiner Meinung nach sollten weniger Autos in die Innenstadt fahren.
+    target_lang: de
+    translation:
+      vi: Theo tôi, nên có ít ô tô chạy vào trung tâm thành phố hơn.
+    note:
+      vi: "Meiner Meinung nach ở vị trí 1, động từ sollten ngay sau, chủ ngữ weniger Autos theo sau."
+  - type: example
+    target: Ich bin der Ansicht, dass ein Fahrverbot keine gute Lösung ist.
+    target_lang: de
+    translation:
+      vi: Tôi cho rằng lệnh cấm xe không phải là giải pháp tốt.
+    note:
+      vi: "Ich bin der Ansicht, dass … – câu phụ dass, động từ ist đứng cuối."
+  - type: example
+    target: Wir sollten Plastiktüten ganz verbieten. – Da stimme ich dir zu. Es gibt doch gute Alternativen.
+    target_lang: de
+    translation:
+      vi: Chúng ta nên cấm hẳn túi ni-lông. – Mình đồng ý với bạn. Đâu thiếu gì lựa chọn tốt khác.
+    note:
+      vi: "Hai người bạn (du): Da stimme ich dir zu (zustimmen + Dativ dir, động từ tách)."
+  - type: example
+    target: Das sehe ich anders. Viele Menschen brauchen ihr Auto für die Arbeit.
+    target_lang: de
+    translation:
+      vi: Tôi thấy khác. Nhiều người cần ô tô để đi làm.
+    note:
+      vi: "Phản bác lịch sự rồi đưa ngay một lý lẽ (ein Argument)."
+  - type: example
+    target: Einerseits ist ein Verbot sinnvoll, andererseits ist es für manche Menschen ein großer Nachteil.
+    target_lang: de
+    translation:
+      vi: Một mặt lệnh cấm là hợp lý, mặt khác nó là một bất lợi lớn đối với một số người.
+    note:
+      vi: "Einerseits …, andererseits …: sau mỗi từ, động từ ist đứng ngay sau (chỉ cần nhận biết ở bài này)."
+  - type: example
+    target: Die Stadt plant ein Fahrverbot. Was hältst du davon? – Ich bin dafür, aber mein Mann ist dagegen.
+    target_lang: de
+    translation:
+      vi: Thành phố định cấm xe. Bạn nghĩ sao về chuyện đó? – Mình tán thành, nhưng chồng mình thì phản đối.
+    note:
+      vi: "halten von + Dativ → davon (thay cho \"von diesem Fahrverbot\"). dafür/dagegen sein = tán thành/phản đối."
+  - type: common_mistake
+    wrong: Meiner Meinung nach ich denke, das ist gut.
+    right: Meiner Meinung nach ist das gut.
+    target_lang: de
+    note:
+      vi: "Meiner Meinung nach đã có nghĩa \"tôi nghĩ\"; không thêm ich denke, và động từ ist đứng ngay sau."
+  - type: common_mistake
+    wrong: Meiner Meinung nach das Verbot ist sinnvoll.
+    right: Meiner Meinung nach ist das Verbot sinnvoll.
+    target_lang: de
+    note:
+      vi: "Cụm Meiner Meinung nach là vị trí 1, nên động từ ist ở vị trí 2."
+  - type: common_mistake
+    wrong: Ich stimme dich zu.
+    right: Ich stimme dir zu.
+    target_lang: de
+    note:
+      vi: "zustimmen đi với Dativ: dir (du), Ihnen (Sie)."
+  - type: common_mistake
+    wrong: Ich bin einverstanden mit dir, das Argument ist gut.
+    right: Da hast du recht, das Argument ist gut.
+    target_lang: de
+    note:
+      vi: "Câu đầu không sai ngữ pháp nhưng nghe nặng và hay dùng để đồng ý một đề nghị. Trong tranh luận, nói Da hast du recht hoặc Da stimme ich dir zu."
+  - type: summary
+    points:
+      - vi: "Meiner Meinung nach + động từ ngay sau: Meiner Meinung nach ist das sinnvoll."
+      - vi: "Ich bin der Meinung/Ansicht, dass … (động từ cuối); Mein Standpunkt ist …"
+      - vi: "Đồng ý: Da stimme ich dir zu. / Da hast du recht."
+      - vi: "Phản đối: Das sehe ich anders. / Da muss ich dir widersprechen. / Das finde ich übertrieben."
+      - vi: "zustimmen, widersprechen + Dativ (dir, Ihnen)."
+      - vi: "Einerseits …, andererseits … (nhận biết); Ein Vorteil/Nachteil ist, dass …"
+      - vi: "Từ vựng: die Meinung, die Ansicht, der Standpunkt, das Argument, überzeugen, der Vorteil, der Nachteil."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u06l4-listen-fahrrad
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u06-g-meinung-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Meiner Meinung nach sollten wir in der Stadt mehr Fahrrad fahren. Das ist gesünder und besser für die Umwelt.
+      options:
+        - { id: l2a, text: "Theo người nói, trong thành phố nên đi xe đạp nhiều hơn vì tốt cho sức khỏe và cho môi trường.", lang: vi }
+        - { id: l6b, text: "Người nói cho rằng đi xe đạp trong thành phố quá nguy hiểm.", lang: vi }
+        - { id: l9c, text: "Theo người nói, nên đi ô tô nhiều hơn vì nhanh hơn.", lang: vi }
+        - { id: l4d, text: "Người nói kể rằng hôm qua mình đã đi xe đạp trong thành phố.", lang: vi }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "Meiner Meinung nach sollten wir … mehr Fahrrad fahren = theo tôi, chúng ta nên đi xe đạp nhiều hơn. gesünder = tốt cho sức khỏe hơn; besser für die Umwelt = tốt hơn cho môi trường."
+    display_answer: Theo người nói, trong thành phố nên đi xe đạp nhiều hơn vì tốt cho sức khỏe và cho môi trường.
+
+  - key: de:exercise:b1u06l4-listen-anders
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u06-argument
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ein Fahrverbot in der Innenstadt? Das sehe ich anders. Viele Menschen brauchen ihr Auto für die Arbeit.
+      options:
+        - { id: m3a, text: "Người nói phản đối lệnh cấm xe ở trung tâm, vì nhiều người cần ô tô để đi làm.", lang: vi }
+        - { id: m7b, text: "Người nói ủng hộ lệnh cấm xe ở trung tâm thành phố.", lang: vi }
+        - { id: m1c, text: "Người nói phản đối lệnh cấm xe, vì ô tô không gây ô nhiễm.", lang: vi }
+        - { id: m5d, text: "Người nói muốn cấm ô tô ở nơi làm việc.", lang: vi }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "Das sehe ich anders = tôi thấy khác (phản đối). Lý lẽ: Viele Menschen brauchen ihr Auto für die Arbeit = nhiều người cần ô tô để đi làm."
+    display_answer: Người nói phản đối lệnh cấm xe ở trung tâm, vì nhiều người cần ô tô để đi làm.
+
+  - key: de:exercise:b1u06l4-listen-einerseits
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u06-vorteil
+    prompt:
+      audio_asset_id: null
+      fallback_text: Einerseits ist Ökostrom gut für die Umwelt, andererseits kann er etwas teurer sein. Trotzdem kaufe ich nur noch Ökostrom.
+      options:
+        - { id: o2a, text: "Điện xanh tốt cho môi trường nhưng có thể đắt hơn một chút; dù vậy người nói giờ chỉ mua điện xanh.", lang: vi }
+        - { id: o6b, text: "Điện xanh tốt cho môi trường nhưng đắt hơn, vì vậy người nói không mua nữa.", lang: vi }
+        - { id: o9c, text: "Điện xanh vừa rẻ hơn vừa tốt cho môi trường, nên người nói chỉ mua điện xanh.", lang: vi }
+        - { id: o4d, text: "Điện xanh không tốt cho môi trường lắm, nhưng người nói vẫn mua vì rẻ.", lang: vi }
+    answer:
+      correct_option_id: o2a
+    explanation:
+      vi: "Einerseits … gut für die Umwelt (ưu điểm), andererseits … etwas teurer (nhược điểm: có thể đắt hơn một chút). Trotzdem kaufe ich nur noch Ökostrom = dù vậy, giờ tôi chỉ mua điện xanh."
+    display_answer: Điện xanh tốt cho môi trường nhưng có thể đắt hơn một chút; dù vậy người nói giờ chỉ mua điện xanh.
+
+  - key: de:exercise:b1u06l4-mcq-meinung-v2
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-meinung-redemittel
+    prompt:
+      stem: "Câu nào đúng? (Theo tôi, lệnh cấm này hợp lý.)"
+      stem_lang: vi
+      options:
+        - { id: v2a, text: "Meiner Meinung nach ist das Verbot sinnvoll.", lang: de }
+        - { id: v6b, text: "Meiner Meinung nach das Verbot ist sinnvoll.", lang: de }
+        - { id: v9c, text: "Meiner Meinung nach ich finde das Verbot sinnvoll.", lang: de }
+        - { id: v4d, text: "Meine Meinung nach ist das Verbot sinnvoll.", lang: de }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "Meiner Meinung nach là vị trí 1, động từ ist đứng ngay sau. Không thêm ich finde sau cụm này; và phải là meiner (Dativ), không phải meine."
+    display_answer: Meiner Meinung nach ist das Verbot sinnvoll.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u06l4-fill-redemittel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-meinung-redemittel
+    prompt:
+      template: "Anna: Ich bin der {{b1}}, dass wir weniger Plastik benutzen sollten. – Ben: Da {{b2}} ich dir zu. – Clara: Das {{b3}} ich anders."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Meinung, Ansicht]
+        b2: [stimme]
+        b3: [sehe]
+    known_wrong:
+      - answer: Standpunkt
+        feedback_vi: Không nói Ich bin der Standpunkt; dùng Ich bin der Meinung/Ansicht, dass … (hoặc Ich stehe auf dem Standpunkt, dass …).
+        error_tag: word_choice
+      - answer: stimmt
+        feedback_vi: Chủ ngữ là ich – ich stimme … zu.
+        error_tag: verb_form
+      - answer: sieht
+        feedback_vi: Chủ ngữ là ich – Das sehe ich anders.
+        error_tag: verb_form
+    explanation:
+      vi: "Ba câu mẫu: Ich bin der Meinung (Ansicht), dass … – Da stimme ich dir zu (zustimmen, tách) – Das sehe ich anders. Da và Das ở vị trí 1, nên động từ đứng ngay sau, chủ ngữ ich theo sau."
+    display_answer: "Anna: Ich bin der Meinung, dass wir weniger Plastik benutzen sollten. – Ben: Da stimme ich dir zu. – Clara: Das sehe ich anders."
+
+  - key: de:exercise:b1u06l4-fill-dir-ihnen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-zustimmen
+    prompt:
+      template: "(zu einer Freundin) Da stimme ich {{b1}} zu. – (zu einem Kunden) Da muss ich {{b2}} leider widersprechen."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [dir]
+        b2: [Ihnen]
+    known_wrong:
+      - answer: dich
+        feedback_vi: zustimmen đi với Dativ – dir, không phải dich.
+        error_tag: case_dat_akk
+      - answer: Sie
+        feedback_vi: widersprechen đi với Dativ – Ihnen (lịch sự), không phải Sie.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "zustimmen và widersprechen cần Dativ. Với bạn bè (du): dir; với khách hàng (Sie): Ihnen, viết hoa."
+    display_answer: "(zu einer Freundin) Da stimme ich dir zu. – (zu einem Kunden) Da muss ich Ihnen leider widersprechen."
+
+  - key: de:exercise:b1u06l4-tr-verbot-sinnvoll
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-sinnvoll
+    prompt:
+      source_text: "Theo tôi, lệnh cấm này là hợp lý. (bắt đầu bằng Meiner Meinung nach)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meiner Meinung nach ist dieses Verbot sinnvoll.
+        - Meiner Meinung nach ist das Verbot sinnvoll.
+        - Meiner Meinung nach ist dieses Verbot vernünftig.
+        - Meiner Meinung nach ist das Verbot vernünftig.
+    known_wrong:
+      - answer: Meiner Meinung nach dieses Verbot ist sinnvoll.
+        feedback_vi: Meiner Meinung nach ở vị trí 1 thì động từ ist ở vị trí 2 – Meiner Meinung nach ist …
+        error_tag: verb_position
+      - answer: Meiner Meinung nach ich finde dieses Verbot sinnvoll.
+        feedback_vi: Không thêm ich finde sau Meiner Meinung nach – Meiner Meinung nach ist dieses Verbot sinnvoll.
+        error_tag: word_order
+      - answer: Meine Meinung nach ist dieses Verbot sinnvoll.
+        feedback_vi: Cụm cố định dùng Dativ – Meiner Meinung nach.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Meiner Meinung nach (vị trí 1) + ist (vị trí 2) + dieses/das Verbot + sinnvoll. das Verbot là giống trung nên \"lệnh cấm này\" là dieses Verbot."
+    display_answer: Meiner Meinung nach ist dieses Verbot sinnvoll.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u06l4-wb-meinung-dass
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-meinung
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi cho rằng chúng ta phải đi máy bay ít hơn.\""
+      tokens:
+        - { id: q-fliegen, text: fliegen }
+        - { id: q-der, text: der }
+        - { id: q-wir, text: wir }
+        - { id: q-ich, text: Ich }
+        - { id: q-muessen, text: müssen }
+        - { id: q-komma, text: "," }
+        - { id: q-meinung, text: Meinung }
+        - { id: q-weniger, text: weniger }
+        - { id: q-bin, text: bin }
+        - { id: q-dass, text: dass }
+    answer:
+      orders:
+        - [q-ich, q-bin, q-der, q-meinung, q-komma, q-dass, q-wir, q-weniger, q-fliegen, q-muessen]
+    explanation:
+      vi: "Ich bin der Meinung, dass … mở câu phụ: động từ chia müssen đứng cuối, sau nguyên thể fliegen. Trước dass có dấu phẩy."
+    display_answer: Ich bin der Meinung, dass wir weniger fliegen müssen.
+
+  - key: de:exercise:b1u06l4-tr-recht-uebertrieben
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u06-uebertrieben
+    prompt:
+      source_text: "Bạn nói đúng, nhưng mình thấy chuyện đó hơi quá. (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Da hast du recht, aber ich finde das ein bisschen übertrieben.
+        - Da hast du recht, aber ich finde das etwas übertrieben.
+        - Da hast du recht, aber das finde ich ein bisschen übertrieben.
+        - Da hast du recht, aber das finde ich etwas übertrieben.
+        - Du hast recht, aber ich finde das ein bisschen übertrieben.
+        - Du hast recht, aber ich finde das etwas übertrieben.
+        - Du hast recht, aber das finde ich ein bisschen übertrieben.
+        - Du hast recht, aber das finde ich etwas übertrieben.
+        - Du hast recht, aber ich finde es ein bisschen übertrieben.
+        - Da hast du recht, aber ich finde es ein bisschen übertrieben.
+    known_wrong:
+      - answer: Du bist recht, aber ich finde das ein bisschen übertrieben.
+        feedback_vi: recht haben dùng với haben – Du hast recht.
+        error_tag: word_choice
+      - answer: Du hast recht, aber ich finde das ein bisschen übertreiben.
+        feedback_vi: Cần tính từ übertrieben (dạng Partizip II), không phải nguyên thể übertreiben.
+        error_tag: participle_form
+    explanation:
+      vi: "Bạn nói đúng = (Da) hast du recht / Du hast recht (với haben). \"Hơi quá\" = ein bisschen/etwas übertrieben. Sau aber, câu giữ trật tự V2 bình thường: ich finde das … hoặc das finde ich …"
+    display_answer: Da hast du recht, aber ich finde das ein bisschen übertrieben.
+
+  - key: de:exercise:b1u06l4-mcq-widersprechen-sie
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-widersprechen
+    prompt:
+      stem: "Trong một buổi thảo luận, bạn muốn lịch sự phản bác một người lạ (Sie). Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: x3a, text: "Da muss ich Ihnen widersprechen.", lang: de }
+        - { id: x7b, text: "Da muss ich dir widersprechen.", lang: de }
+        - { id: x1c, text: "Da muss ich Sie widersprechen.", lang: de }
+        - { id: x5d, text: "Da widerspreche ich Sie.", lang: de }
+    answer:
+      correct_option_id: x3a
+    explanation:
+      vi: "widersprechen đi với Dativ; với người lạ dùng Sie, Dativ là Ihnen. dir là Dativ của du – sai ngữ vực; Sie ở đây là Akkusativ – sai cách."
+    display_answer: Da muss ich Ihnen widersprechen.

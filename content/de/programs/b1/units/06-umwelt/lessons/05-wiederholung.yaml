@@ -1,0 +1,409 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u06-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – ghép người với quảng cáo, bài diễn đàn về môi trường (Wiederholung)
+objectives:
+  - vi: Đọc nhu cầu của từng người và chọn quảng cáo phù hợp (kiểu Goethe B1 Lesen).
+  - vi: Nghe hiểu thông báo và lời kể ngắn về thời tiết, năng lượng.
+  - vi: Viết bài diễn đàn khoảng 80 từ nêu ý kiến về phân loại rác hoặc ô tô trong thành phố (kiểu Goethe B1 Schreiben).
+estimated_minutes: 24
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:b1u06-diskussion]
+items:
+  - item: de:item:b1u06-g-futur-i
+    role: reuse
+  - item: de:item:b1u06-g-vermutung-wohl
+    role: reuse
+  - item: de:item:b1u06-g-genitiv-praepositionen
+    role: reuse
+  - item: de:item:b1u06-g-da-naemlich
+    role: reuse
+  - item: de:item:b1u06-g-sodass
+    role: reuse
+  - item: de:item:b1u06-g-komposita-fugen
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+  - item: de:item:b1u06-hitze
+    role: reuse
+  - item: de:item:b1u06-unwetter
+    role: reuse
+  - item: de:item:b1u06-verkehr
+    role: reuse
+  - item: de:item:b1u06-temperatur
+    role: reuse
+  - item: de:item:b1u06-stromrechnung
+    role: reuse
+  - item: de:item:b1u06-verbrauchen
+    role: reuse
+  - item: de:item:b1u06-meinung
+    role: reuse
+  - item: de:item:b1u06-vorteil
+    role: reuse
+  - item: de:item:b1u06-nachteil
+    role: reuse
+  - item: de:item:b1u06-schaedlich
+    role: reuse
+  - item: de:item:a2u08-muell
+    role: reuse
+  - item: de:item:a2u08-trennen
+    role: reuse
+  - item: de:item:a2u08-plastik
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chọn được quảng cáo phù hợp với nhu cầu của từng người, nghe hiểu thông báo ngắn về thời tiết và năng lượng, và viết được bài diễn đàn khoảng 80 từ nêu ý kiến về một chủ đề môi trường.
+  - type: explain
+    text:
+      vi: "Với dạng ghép người – quảng cáo, hãy đọc nhu cầu của người trước và gạch chân điều quan trọng nhất (muốn gì, không muốn gì, bao nhiêu tuổi, có tiền không). Sau đó tìm quảng cáo khớp mọi điều kiện, không chỉ khớp một từ giống nhau; thường có quảng cáo thừa không hợp với ai."
+  - type: explain
+    text:
+      vi: "Bài diễn đàn (Forumsbeitrag) là ý kiến cá nhân: mở đầu bằng trải nghiệm hoặc lập trường của bạn, đưa hai, ba lý do có ví dụ, nhắc một ý ngược lại, rồi kết luận. Không cần lời chào như e-mail; người viết thường xưng ich và viết thân mật nhưng rõ ràng."
+  - type: explain
+    text:
+      vi: "Để bài viết đạt mức B1, hãy dùng các cấu trúc của unit: Meiner Meinung nach + V2, wegen + Genitiv, da/weil + động từ cuối, sodass/so … dass cho hệ quả, Ein Vorteil/Nachteil ist, dass … và Futur I cho dự đoán. Đếm khoảng 80 từ: viết quá ngắn hoặc thiếu ý là mất điểm."
+  - type: deep_explain
+    text:
+      vi: "Theo hiểu biết lúc soạn bài, Goethe-Zertifikat B1 có một phần đọc ghép người với quảng cáo và một phần viết bài diễn đàn khoảng 80 từ; số câu, thời gian và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut. Khi ghép, cẩn thận với quảng cáo có từ giống hệt trong mô tả nhưng sai một điều kiện (giá, tuổi, ngày). Trong bài diễn đàn, thứ tự gợi ý: (1) Ich wohne … / Ich finde das Thema wichtig, weil … (2) Meiner Meinung nach … (3) Ein Vorteil ist, dass … (4) Andererseits … / Natürlich … (5) Deshalb finde ich … Viết xong, kiểm tra lại động từ: V2 trong câu chính, động từ cuối sau weil, da, dass, sodass, wenn."
+  - type: example
+    target: "Ich wohne seit fünf Jahren in der Innenstadt, und meiner Meinung nach sollten dort weniger Autos fahren. Wegen des starken Verkehrs ist die Luft oft schlecht, und es ist sehr laut. Viele Kinder fahren nicht mit dem Rad zur Schule, da die Straßen zu gefährlich sind. Natürlich brauchen manche Menschen ihr Auto, zum Beispiel ältere Leute. Deshalb finde ich ein komplettes Verbot übertrieben. Aber wenn Busse und Bahnen billiger werden, werden sicher mehr Menschen ihr Auto stehen lassen."
+    target_lang: de
+    translation:
+      vi: "Tôi sống ở trung tâm thành phố đã năm năm, và theo tôi ở đó nên có ít ô tô hơn. Vì xe cộ đông đúc nên không khí thường xấu và rất ồn. Nhiều trẻ em không đi xe đạp đến trường vì đường sá quá nguy hiểm. Dĩ nhiên một số người cần ô tô, ví dụ người lớn tuổi. Vì vậy tôi thấy cấm hoàn toàn là quá đà. Nhưng nếu xe buýt và tàu rẻ hơn, chắc chắn sẽ có nhiều người để ô tô ở nhà hơn."
+    note:
+      vi: "Bài mẫu khoảng 80 từ: lập trường (meiner Meinung nach) – lý do (wegen + Genitiv, da) – ý ngược lại (Natürlich …) – kết luận và dự đoán (deshalb, werden … stehen lassen)."
+  - type: example
+    target: Warum ist die Luft heute so schlecht? – Das wird wohl am Verkehr liegen.
+    target_lang: de
+    translation:
+      vi: Sao hôm nay không khí xấu thế? – Chắc là do xe cộ.
+    note:
+      vi: "werden + wohl + nguyên thể: phỏng đoán điều đang xảy ra. liegen an + Dativ = do, tại."
+  - type: example
+    target: Ich trenne meinen Müll, da Plastik sehr lange in der Natur bleibt.
+    target_lang: de
+    translation:
+      vi: Tôi phân loại rác, vì nhựa tồn tại rất lâu trong tự nhiên.
+    note:
+      vi: "Câu phụ da đứng sau câu chính cũng được; động từ bleibt ở cuối."
+  - type: common_mistake
+    wrong: Wegen dem Verkehr ist die Luft schlecht. (im Prüfungstext)
+    right: Wegen des Verkehrs ist die Luft schlecht.
+    target_lang: de
+    note:
+      vi: "Trong bài viết thi, dùng wegen + Genitiv: des Verkehrs."
+  - type: common_mistake
+    wrong: In Zukunft ich werde mehr Rad fahren.
+    right: In Zukunft werde ich mehr Rad fahren.
+    target_lang: de
+    note:
+      vi: "In Zukunft ở vị trí 1, nên werde ở vị trí 2."
+  - type: common_mistake
+    wrong: Es war so kalt, sodass wir mehr heizen mussten.
+    right: Es war so kalt, dass wir mehr heizen mussten.
+    target_lang: de
+    note:
+      vi: "Đã có so trước tính từ thì nối bằng dass; sodass dùng khi không có so."
+  - type: summary
+    points:
+      - vi: "Ghép quảng cáo: đọc nhu cầu trước, khớp mọi điều kiện, cẩn thận quảng cáo thừa."
+      - vi: "Bài diễn đàn ~80 từ: lập trường – lý do + ví dụ – ý ngược lại – kết luận."
+      - vi: "Meiner Meinung nach + V2; Ich bin der Meinung, dass … (động từ cuối)."
+      - vi: "wegen/trotz/während + Genitiv; da/weil + động từ cuối; nämlich giữa câu."
+      - vi: "…, sodass … / so + tính từ, dass …; Futur I: werden + nguyên thể cuối câu."
+      - vi: "werden + wohl = phỏng đoán hiện tại; từ ghép: giống theo từ cuối, âm nối -s-/-n-."
+exercises:
+  # ---------------- recognition: đọc (ghép người – quảng cáo) ----------------
+  - key: de:exercise:b1u06l5-mcq-anzeige-lan
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-stromrechnung
+    prompt:
+      stem: "Lan wohnt zur Miete. Ihre Stromrechnung war im letzten Jahr sehr hoch, und sie weiß nicht, wie sie sparen kann. — Welche Anzeige passt zu Lan?"
+      stem_lang: de
+      options:
+        - { id: an1, text: "Repair-Café im Stadtteilzentrum: Jeden ersten Samstag im Monat reparieren Freiwillige kostenlos Elektrogeräte, Fahrräder und Kleidung.", lang: de }
+        - { id: an2, text: "Fahrradkurs für Erwachsene: An fünf Abenden lernen Sie, sicher im Stadtverkehr zu fahren. Leihräder sind vorhanden. Kosten: 40 Euro.", lang: de }
+        - { id: an3, text: "Energieberatung für Mieter: Wir zeigen Ihnen, wie Sie Strom und Heizkosten sparen können. Die erste Beratung ist kostenlos.", lang: de }
+        - { id: an4, text: "Kleidertausch im Jugendzentrum: Bringen Sie Kleidung mit, die Sie nicht mehr tragen, und nehmen Sie kostenlos andere Sachen mit. Für alle ab 16 Jahren.", lang: de }
+        - { id: an5, text: "Gemeinschaftsgarten sucht Helfer: Gemüse anbauen mitten in der Stadt, jeden Mittwochnachmittag. Gartenwerkzeug ist da.", lang: de }
+    answer:
+      correct_option_id: an3
+    explanation:
+      vi: "Lan đi thuê nhà (zur Miete) và muốn biết cách tiết kiệm điện. Quảng cáo Energieberatung für Mieter (tư vấn năng lượng cho người thuê nhà) chỉ cách tiết kiệm điện và tiền sưởi, buổi tư vấn đầu miễn phí."
+    display_answer: "Energieberatung für Mieter: Wir zeigen Ihnen, wie Sie Strom und Heizkosten sparen können. Die erste Beratung ist kostenlos."
+
+  - key: de:exercise:b1u06l5-mcq-anzeige-toaster
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-muell
+    prompt:
+      stem: "Herr Becker hat einen alten Toaster, der nicht mehr funktioniert. Er möchte ihn nicht in den Müll werfen, aber ein neues Gerät ist ihm zu teuer. — Welche Anzeige passt zu Herrn Becker?"
+      stem_lang: de
+      options:
+        - { id: an1, text: "Repair-Café im Stadtteilzentrum: Jeden ersten Samstag im Monat reparieren Freiwillige kostenlos Elektrogeräte, Fahrräder und Kleidung.", lang: de }
+        - { id: an2, text: "Fahrradkurs für Erwachsene: An fünf Abenden lernen Sie, sicher im Stadtverkehr zu fahren. Leihräder sind vorhanden. Kosten: 40 Euro.", lang: de }
+        - { id: an3, text: "Energieberatung für Mieter: Wir zeigen Ihnen, wie Sie Strom und Heizkosten sparen können. Die erste Beratung ist kostenlos.", lang: de }
+        - { id: an4, text: "Kleidertausch im Jugendzentrum: Bringen Sie Kleidung mit, die Sie nicht mehr tragen, und nehmen Sie kostenlos andere Sachen mit. Für alle ab 16 Jahren.", lang: de }
+        - { id: an5, text: "Gemeinschaftsgarten sucht Helfer: Gemüse anbauen mitten in der Stadt, jeden Mittwochnachmittag. Gartenwerkzeug ist da.", lang: de }
+    answer:
+      correct_option_id: an1
+    explanation:
+      vi: "Ông Becker có máy nướng bánh mì hỏng, không muốn vứt đi và không muốn mua mới. Repair-Café sửa miễn phí đồ điện (Elektrogeräte) – đúng nhu cầu."
+    display_answer: "Repair-Café im Stadtteilzentrum: Jeden ersten Samstag im Monat reparieren Freiwillige kostenlos Elektrogeräte, Fahrräder und Kleidung."
+
+  - key: de:exercise:b1u06l5-mcq-anzeige-minh
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-verkehr
+    prompt:
+      stem: "Minh möchte nicht mehr mit dem Bus zur Arbeit fahren, sondern mit dem Fahrrad. Aber er hat Angst vor dem starken Verkehr in der Stadt. — Welche Anzeige passt zu Minh?"
+      stem_lang: de
+      options:
+        - { id: an1, text: "Repair-Café im Stadtteilzentrum: Jeden ersten Samstag im Monat reparieren Freiwillige kostenlos Elektrogeräte, Fahrräder und Kleidung.", lang: de }
+        - { id: an2, text: "Fahrradkurs für Erwachsene: An fünf Abenden lernen Sie, sicher im Stadtverkehr zu fahren. Leihräder sind vorhanden. Kosten: 40 Euro.", lang: de }
+        - { id: an3, text: "Energieberatung für Mieter: Wir zeigen Ihnen, wie Sie Strom und Heizkosten sparen können. Die erste Beratung ist kostenlos.", lang: de }
+        - { id: an4, text: "Kleidertausch im Jugendzentrum: Bringen Sie Kleidung mit, die Sie nicht mehr tragen, und nehmen Sie kostenlos andere Sachen mit. Für alle ab 16 Jahren.", lang: de }
+        - { id: an5, text: "Gemeinschaftsgarten sucht Helfer: Gemüse anbauen mitten in der Stadt, jeden Mittwochnachmittag. Gartenwerkzeug ist da.", lang: de }
+    answer:
+      correct_option_id: an2
+    explanation:
+      vi: "Minh muốn đi xe đạp nhưng sợ giao thông. Fahrradkurs dạy người lớn đi xe đạp an toàn trong giao thông thành phố (sicher im Stadtverkehr). Repair-Café cũng nhắc đến Fahrräder nhưng chỉ sửa xe – đó là bẫy từ giống nhau."
+    display_answer: "Fahrradkurs für Erwachsene: An fünf Abenden lernen Sie, sicher im Stadtverkehr zu fahren. Leihräder sind vorhanden. Kosten: 40 Euro."
+
+  - key: de:exercise:b1u06l5-mcq-anzeige-sophie
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-komposita-fugen
+    prompt:
+      stem: "Sophie ist 17 Jahre alt und hat viele Kleider, die sie nicht mehr trägt. Sie möchte gern neue Sachen haben, aber kein Geld ausgeben. — Welche Anzeige passt zu Sophie?"
+      stem_lang: de
+      options:
+        - { id: an1, text: "Repair-Café im Stadtteilzentrum: Jeden ersten Samstag im Monat reparieren Freiwillige kostenlos Elektrogeräte, Fahrräder und Kleidung.", lang: de }
+        - { id: an2, text: "Fahrradkurs für Erwachsene: An fünf Abenden lernen Sie, sicher im Stadtverkehr zu fahren. Leihräder sind vorhanden. Kosten: 40 Euro.", lang: de }
+        - { id: an3, text: "Energieberatung für Mieter: Wir zeigen Ihnen, wie Sie Strom und Heizkosten sparen können. Die erste Beratung ist kostenlos.", lang: de }
+        - { id: an4, text: "Kleidertausch im Jugendzentrum: Bringen Sie Kleidung mit, die Sie nicht mehr tragen, und nehmen Sie kostenlos andere Sachen mit. Für alle ab 16 Jahren.", lang: de }
+        - { id: an5, text: "Gemeinschaftsgarten sucht Helfer: Gemüse anbauen mitten in der Stadt, jeden Mittwochnachmittag. Gartenwerkzeug ist da.", lang: de }
+    answer:
+      correct_option_id: an4
+    explanation:
+      vi: "Sophie 17 tuổi, có nhiều quần áo không mặc nữa, muốn có đồ mới mà không tốn tiền. Kleidertausch (đổi quần áo: Kleider + Tausch) miễn phí, dành cho người từ 16 tuổi – Sophie đủ tuổi."
+    display_answer: "Kleidertausch im Jugendzentrum: Bringen Sie Kleidung mit, die Sie nicht mehr tragen, und nehmen Sie kostenlos andere Sachen mit. Für alle ab 16 Jahren."
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u06l5-listen-unwetter
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u06-unwetter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Achtung, Unwetterwarnung! Wegen der großen Hitze wird es heute Abend wahrscheinlich Gewitter geben. Bitte bleiben Sie während des Unwetters im Haus.
+      options:
+        - { id: u2a, text: "Vì nắng nóng, tối nay có lẽ sẽ có dông. Trong lúc có dông, mọi người nên ở trong nhà.", lang: vi }
+        - { id: u6b, text: "Vì nắng nóng, sáng mai có lẽ sẽ có dông. Trong lúc có dông, mọi người nên ở trong nhà.", lang: vi }
+        - { id: u9c, text: "Dù trời nóng, tối nay sẽ không có dông, nên mọi người có thể ra ngoài.", lang: vi }
+        - { id: u4d, text: "Vì mưa kéo dài, tối nay có thể bị ngập. Mọi người nên rời khỏi nhà.", lang: vi }
+    answer:
+      correct_option_id: u2a
+    explanation:
+      vi: "Wegen der großen Hitze = vì nắng nóng (wegen + Genitiv). wird es heute Abend wahrscheinlich Gewitter geben = tối nay có lẽ sẽ có dông (Futur I). während des Unwetters = trong lúc có giông bão (während + Genitiv)."
+    display_answer: Vì nắng nóng, tối nay có lẽ sẽ có dông. Trong lúc có dông, mọi người nên ở trong nhà.
+
+  - key: de:exercise:b1u06l5-listen-heizkosten
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u06-verbrauchen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Da unsere Heizkosten so hoch waren, haben wir neue Fenster einbauen lassen. Jetzt verbrauchen wir viel weniger Energie.
+      options:
+        - { id: h3a, text: "Vì tiền sưởi quá cao, họ đã cho lắp cửa sổ mới, và giờ họ tiêu thụ ít năng lượng hơn nhiều.", lang: vi }
+        - { id: h7b, text: "Vì tiền sưởi quá cao, họ đã tự lắp cửa sổ mới, nhưng vẫn tiêu thụ nhiều năng lượng.", lang: vi }
+        - { id: h1c, text: "Vì tiền điện quá cao, họ đã mua một tủ lạnh mới.", lang: vi }
+        - { id: h5d, text: "Họ muốn lắp cửa sổ mới vì cửa sổ cũ quá xấu.", lang: vi }
+    answer:
+      correct_option_id: h3a
+    explanation:
+      vi: "Da … so hoch waren = vì (tiền sưởi) cao quá. haben … einbauen lassen = đã nhờ người lắp (lassen + nguyên thể, không phải tự làm). viel weniger Energie verbrauchen = tiêu thụ ít năng lượng hơn nhiều."
+    display_answer: Vì tiền sưởi quá cao, họ đã cho lắp cửa sổ mới, và giờ họ tiêu thụ ít năng lượng hơn nhiều.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u06l5-fill-forum
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-meinung-redemittel
+    prompt:
+      template: "{{b1}} Meinung nach sollten weniger Autos in die Innenstadt fahren. Ein großer {{b2}} ist, dass die Luft dann sauberer wird. Ein {{b3}} ist aber, dass manche Menschen dann längere Wege haben."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Meiner]
+        b2: [Vorteil]
+        b3: [Nachteil]
+    known_wrong:
+      - answer: Meine
+        feedback_vi: Cụm cố định dùng Dativ – Meiner Meinung nach.
+        error_tag: case_dat_akk
+      - answer: Vorteile
+        feedback_vi: Sau ein (số ít) cần Vorteil, không phải số nhiều.
+        error_tag: plural_form
+    explanation:
+      vi: "Meiner Meinung nach + V2 (sollten). Không khí sạch hơn là ưu điểm: ein großer Vorteil; đường đi dài hơn là nhược điểm: ein Nachteil (aber báo hiệu ý ngược lại)."
+    display_answer: "Meiner Meinung nach sollten weniger Autos in die Innenstadt fahren. Ein großer Vorteil ist, dass die Luft dann sauberer wird. Ein Nachteil ist aber, dass manche Menschen dann längere Wege haben."
+
+  - key: de:exercise:b1u06l5-fill-trotz-werde
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-futur-i
+    prompt:
+      template: "{{b1}} des schlechten Wetters fahre ich heute mit dem Rad, denn ich will kein Auto mehr benutzen. In Zukunft {{b2}} ich nur noch Ökostrom kaufen."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Trotz]
+        b2: [werde]
+    known_wrong:
+      - answer: Obwohl
+        feedback_vi: obwohl mở câu phụ (cần động từ ở cuối); trước danh từ ở Genitiv dùng giới từ trotz.
+        error_tag: word_choice
+      - answer: wird
+        feedback_vi: Chủ ngữ là ich – ich werde … kaufen.
+        error_tag: verb_form
+    explanation:
+      vi: "trotz + Genitiv (des schlechten Wetters) = mặc dù thời tiết xấu. Futur I với ich: werde ở vị trí 2 (sau In Zukunft), kaufen ở cuối câu."
+    display_answer: "Trotz des schlechten Wetters fahre ich heute mit dem Rad, denn ich will kein Auto mehr benutzen. In Zukunft werde ich nur noch Ökostrom kaufen."
+
+  - key: de:exercise:b1u06l5-tr-muell-trennen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-trennen
+    prompt:
+      source_text: "Theo tôi, chúng ta nên phân loại rác. (bắt đầu bằng Meiner Meinung nach)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meiner Meinung nach sollten wir den Müll trennen.
+        - Meiner Meinung nach sollten wir Müll trennen.
+        - Meiner Meinung nach sollten wir unseren Müll trennen.
+        - Meiner Meinung nach sollte man den Müll trennen.
+        - Meiner Meinung nach sollte man Müll trennen.
+    known_wrong:
+      - answer: Meiner Meinung nach wir sollten den Müll trennen.
+        feedback_vi: Meiner Meinung nach ở vị trí 1, nên sollten đứng ngay sau – Meiner Meinung nach sollten wir …
+        error_tag: verb_position
+      - answer: Meiner Meinung nach sollten wir trennen den Müll.
+        feedback_vi: Động từ nguyên thể trennen đứng cuối câu – … den Müll trennen.
+        error_tag: verb_position
+    explanation:
+      vi: "\"nên\" = sollten (Konjunktiv II của sollen). Meiner Meinung nach chiếm vị trí 1, sollten ở vị trí 2, nguyên thể trennen ở cuối câu. den Müll trennen = phân loại rác."
+    display_answer: Meiner Meinung nach sollten wir den Müll trennen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u06l5-wb-wegen-spaet
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-genitiv-praepositionen
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Wegen: \"Vì giao thông nên chúng tôi đến muộn.\""
+      tokens:
+        - { id: w-spaet, text: spät }
+        - { id: w-wir, text: wir }
+        - { id: w-wegen, text: Wegen }
+        - { id: w-verkehrs, text: Verkehrs }
+        - { id: w-zu, text: zu }
+        - { id: w-des, text: des }
+        - { id: w-kommen, text: kommen }
+    answer:
+      orders:
+        - [w-wegen, w-des, w-verkehrs, w-kommen, w-wir, w-zu, w-spaet]
+    explanation:
+      vi: "wegen + Genitiv: des Verkehrs. Cả cụm Wegen des Verkehrs là vị trí 1, nên kommen đứng ngay sau, rồi đến chủ ngữ wir. zu spät kommen = đến muộn."
+    display_answer: Wegen des Verkehrs kommen wir zu spät.
+
+  - key: de:exercise:b1u06l5-wb-temperaturen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-temperatur
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi nghĩ rằng nhiệt độ sẽ tiếp tục tăng.\""
+      tokens:
+        - { id: t-werden, text: werden }
+        - { id: t-ich, text: Ich }
+        - { id: t-temperaturen, text: Temperaturen }
+        - { id: t-dass, text: dass }
+        - { id: t-steigen, text: steigen }
+        - { id: t-komma, text: "," }
+        - { id: t-glaube, text: glaube }
+        - { id: t-weiter, text: weiter }
+        - { id: t-die, text: die }
+    answer:
+      orders:
+        - [t-ich, t-glaube, t-komma, t-dass, t-die, t-temperaturen, t-weiter, t-steigen, t-werden]
+    explanation:
+      vi: "Câu phụ dass: động từ chia werden đứng cuối, ngay sau nguyên thể steigen. weiter steigen = tiếp tục tăng."
+    display_answer: Ich glaube, dass die Temperaturen weiter steigen werden.
+
+  - key: de:exercise:b1u06l5-tr-plastik
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u06-g-da-naemlich
+    prompt:
+      source_text: Da Plastik sehr lange in der Natur bleibt, ist es schädlich für die Umwelt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì nhựa tồn tại rất lâu trong tự nhiên nên nó có hại cho môi trường.
+        - Vì nhựa tồn tại rất lâu trong tự nhiên, nó có hại cho môi trường.
+        - Vì nhựa tồn tại rất lâu trong thiên nhiên nên nó có hại cho môi trường.
+        - Vì nhựa ở lại rất lâu trong tự nhiên nên nó có hại cho môi trường.
+        - Do nhựa tồn tại rất lâu trong tự nhiên nên nó có hại cho môi trường.
+        - Bởi vì nhựa tồn tại rất lâu trong tự nhiên nên nó có hại cho môi trường.
+        - Vì nhựa tồn tại rất lâu trong tự nhiên nên nhựa có hại cho môi trường.
+        - Vì nhựa tồn tại rất lâu trong môi trường tự nhiên nên nó có hại cho môi trường.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mặc dù nhựa tồn tại rất lâu trong tự nhiên, nó có hại cho môi trường.
+        feedback_vi: "da nêu lý do (vì), không phải nhượng bộ (mặc dù = obwohl)."
+        error_tag: meaning
+    explanation:
+      vi: "Da … bleibt = vì … tồn tại (câu phụ chỉ lý do, động từ cuối). ist es schädlich für die Umwelt = nó có hại cho môi trường; es thay cho das Plastik."
+    display_answer: Vì nhựa tồn tại rất lâu trong tự nhiên nên nó có hại cho môi trường.

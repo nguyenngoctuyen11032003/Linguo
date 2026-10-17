@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u06-energie
+order_index: 3
+level: b1
+title:
+  vi: Tiết kiệm năng lượng – sodass, từ ghép (So teuer, dass …)
+objectives:
+  - vi: Nói hệ quả bằng …, sodass … và so + tính từ …, dass …
+  - vi: Ghép danh từ đúng âm nối (-s-, -n-, -es-) và đúng giống theo từ cuối.
+  - vi: Đọc hiểu một đoạn văn ngắn về năng lượng và cách tiết kiệm điện.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u06-wegen]
+items:
+  - item: de:item:b1u06-g-sodass
+  - item: de:item:b1u06-g-komposita-fugen
+  - item: de:item:b1u06-energie
+  - item: de:item:b1u06-strom
+  - item: de:item:b1u06-erneuerbar
+  - item: de:item:b1u06-solaranlage
+  - item: de:item:b1u06-windkraft
+  - item: de:item:b1u06-verbrauchen
+  - item: de:item:b1u06-verbrauch
+  - item: de:item:b1u06-umweltschutz
+  - item: de:item:b1u06-nachhaltig
+  - item: de:item:b1u06-sonnenenergie
+  - item: de:item:b1u06-kraftwerk
+  - item: de:item:b1u06-stromrechnung
+  - item: de:item:b1u06-oekostrom
+  - item: de:item:b1u06-windrad
+  - item: de:item:b1u06-klimaschutz
+  - item: de:item:b1u06-waermepumpe
+  - item: de:item:b1u06-rohstoff
+  - item: de:item:p0u3-g-komposita
+    role: reuse
+  - item: de:item:a2u08-sparen
+    role: reuse
+  - item: de:item:a2u02-heizung
+    role: reuse
+  - item: de:item:a2u08-umwelt
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được hệ quả và dùng từ ghép về năng lượng, ví dụ: \"Der Strom ist so teuer geworden, dass wir mehr sparen. Wir haben jetzt eine Solaranlage, sodass unsere Stromrechnung niedriger ist.\""
+  - type: explain
+    text:
+      vi: "sodass mở câu phụ nêu hệ quả (nên, cho nên), động từ chia đứng cuối: Es war sehr kalt, sodass wir mehr heizen mussten. Câu sodass luôn đứng sau câu chính, không đứng đầu câu. Có thể viết liền sodass hoặc tách so dass."
+  - type: explain
+    text:
+      vi: "Muốn nhấn mạnh mức độ (đến nỗi), đặt so trước tính từ hoặc trạng từ trong câu chính, rồi nối bằng dass: Der Strom ist so teuer, dass wir sparen müssen. Tiếng Việt nói \"đắt đến nỗi\", tiếng Đức tách làm hai: so ở câu chính, dass ở câu phụ."
+  - type: explain
+    text:
+      vi: "Từ ghép tiếng Đức đặt từ chính ở cuối, ngược với tiếng Việt: \"hoá đơn tiền điện\" là die Stromrechnung (Strom + Rechnung). Giống của từ ghép theo từ cuối: der Wind + die Kraft = die Windkraft, die Sonne + das Licht = das Sonnenlicht."
+  - type: explain
+    text:
+      vi: "Giữa hai phần đôi khi có âm nối: -s- (der Arbeitsplatz, das Verkehrsmittel), -n- (die Sonnenenergie), -es- (das Tageslicht), hoặc không có gì (der Umweltschutz, der Klimaschutz). Sau đuôi -ung, -heit, -keit, -ion, -tät thường có -s-: die Wohnungstür, das Gesundheitsamt; các từ khác bạn nên học thuộc cả từ."
+  - type: deep_explain
+    text:
+      vi: "Âm nối -s- không phải số nhiều hay sở hữu cách, nó chỉ là \"keo dán\" giúp đọc trơn; vì vậy Arbeitsplatz không có nghĩa là \"chỗ của công việc\" theo kiểu Genitiv. Một số từ đổi dạng khi ghép: die Schule → das Schulbuch (bỏ -e), das Kind → das Kinderzimmer (-er-). So sánh ba cách nói hệ quả: …, deshalb + V2 (Es war kalt, deshalb haben wir mehr geheizt); …, sodass + động từ cuối; so + tính từ …, dass + động từ cuối. Đừng nhầm sodass (hệ quả) với damit (mục đích, để): Wir haben eine Solaranlage, damit wir Strom sparen (mục đích) – …, sodass wir Strom sparen (kết quả). Khi viết về năng lượng, những từ ghép hay gặp là der Stromverbrauch, die Stromrechnung, das Kraftwerk, die Wärmepumpe, der Ökostrom."
+  - type: example
+    target: Der Strom ist so teuer geworden, dass viele Familien Energie sparen müssen.
+    target_lang: de
+    translation:
+      vi: Điện đã đắt đến mức nhiều gia đình phải tiết kiệm năng lượng.
+    note:
+      vi: "so + tính từ (teuer) ở câu chính, câu phụ dass có động từ chia (müssen) ở cuối."
+  - type: example
+    target: Wir haben jetzt eine Solaranlage auf dem Dach, sodass unsere Stromrechnung viel niedriger ist.
+    target_lang: de
+    translation:
+      vi: Giờ nhà chúng tôi có hệ thống điện mặt trời trên mái, nên hoá đơn tiền điện thấp hơn nhiều.
+    note:
+      vi: "sodass nêu kết quả, ist đứng cuối. die Solaranlage, die Stromrechnung: giống cái theo die Anlage, die Rechnung."
+  - type: example
+    target: Unser alter Kühlschrank hat so viel Strom verbraucht, dass wir einen neuen gekauft haben.
+    target_lang: de
+    translation:
+      vi: Tủ lạnh cũ nhà tôi tốn điện đến nỗi chúng tôi đã mua cái mới.
+    note:
+      vi: "so viel = nhiều đến nỗi. verbrauchen không có ge- ở Partizip II: verbraucht."
+  - type: example
+    target: Windkraft und Sonnenenergie sind erneuerbar und wichtig für den Klimaschutz.
+    target_lang: de
+    translation:
+      vi: Năng lượng gió và năng lượng mặt trời là năng lượng tái tạo và quan trọng cho việc bảo vệ khí hậu.
+    note:
+      vi: "Sonne + n + Energie (âm nối -n-); Klima + Schutz (không có âm nối). Wind + Kraft → die Windkraft (giống cái theo die Kraft)."
+  - type: example
+    target: Wer Energie spart, tut etwas für den Umweltschutz und zahlt weniger.
+    target_lang: de
+    translation:
+      vi: Ai tiết kiệm năng lượng là đang làm điều tốt cho môi trường và trả ít tiền hơn.
+    note:
+      vi: "der Umweltschutz: die Umwelt + der Schutz, giống đực theo từ cuối."
+  - type: common_mistake
+    wrong: Ich suche einen neuen Arbeitplatz.
+    right: Ich suche einen neuen Arbeitsplatz.
+    target_lang: de
+    note:
+      vi: "Arbeit + Platz cần âm nối -s-: der Arbeitsplatz."
+  - type: common_mistake
+    wrong: Es war sehr kalt, sodass wir mussten mehr heizen.
+    right: Es war sehr kalt, sodass wir mehr heizen mussten.
+    target_lang: de
+    note:
+      vi: "sodass mở câu phụ, nên động từ chia (mussten) đứng cuối, không ở vị trí 2."
+  - type: common_mistake
+    wrong: Das Stromrechnung ist sehr hoch.
+    right: Die Stromrechnung ist sehr hoch.
+    target_lang: de
+    note:
+      vi: "Giống của từ ghép theo từ cuối: die Rechnung → die Stromrechnung (không theo der Strom)."
+  - type: summary
+    points:
+      - vi: "…, sodass + câu phụ (động từ cuối) = nên, cho nên; đứng sau câu chính."
+      - vi: "so + tính từ …, dass … = đến nỗi: so teuer, dass wir sparen müssen."
+      - vi: "deshalb + V2 (trạng từ) · sodass + động từ cuối (câu phụ)."
+      - vi: "Từ ghép: từ chính đứng cuối và quyết định giống (die Stromrechnung)."
+      - vi: "Âm nối: -s- (Arbeitsplatz, Verkehrsmittel), -n- (Sonnenenergie), -es- (Tageslicht), không có (Umweltschutz)."
+      - vi: "Sau -ung, -heit, -keit, -ion, -tät thường có -s-."
+      - vi: "Từ vựng: die Energie, der Strom, erneuerbar, die Solaranlage, die Windkraft, verbrauchen, der Verbrauch, nachhaltig."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u06l3-mcq-genus-rechnung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-stromrechnung
+    prompt:
+      stem: "Chọn mạo từ đúng: ___ Stromrechnung ist dieses Jahr sehr hoch."
+      stem_lang: vi
+      options:
+        - { id: s4e, text: "Die", lang: de }
+        - { id: s8r, text: "Der", lang: de }
+        - { id: s2a, text: "Das", lang: de }
+        - { id: s6n, text: "Den", lang: de }
+    answer:
+      correct_option_id: s4e
+    explanation:
+      vi: "Từ ghép lấy giống của từ cuối: der Strom + die Rechnung = die Stromrechnung. Chủ ngữ ở Nominativ nên dùng Die; Den là Akkusativ giống đực."
+    display_answer: Die
+
+  - key: de:exercise:b1u06l3-mcq-fugen-s
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-komposita-fugen
+    prompt:
+      stem: "Từ ghép nào có âm nối -s- giữa hai phần?"
+      stem_lang: vi
+      options:
+        - { id: f3v, text: "das Verkehrsmittel", lang: de }
+        - { id: f7u, text: "der Umweltschutz", lang: de }
+        - { id: f1w, text: "die Windkraft", lang: de }
+        - { id: f5s, text: "die Stromrechnung", lang: de }
+    answer:
+      correct_option_id: f3v
+    explanation:
+      vi: "Verkehr + s + Mittel: chữ s không thuộc từ nào, đó là âm nối. Trong Umweltschutz, s là chữ đầu của Schutz; Windkraft và Stromrechnung ghép thẳng, không có âm nối."
+    display_answer: das Verkehrsmittel
+
+  - key: de:exercise:b1u06l3-mcq-lesen-winter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-solaranlage
+    prompt:
+      stem: "Familie Wagner hat seit letztem Jahr eine Solaranlage auf dem Dach. An sonnigen Tagen produziert die Anlage so viel Strom, dass die Familie fast keinen Strom kaufen muss. Im Winter scheint die Sonne weniger, sodass die Wagners dann mehr Strom aus dem Netz brauchen. Außerdem sparen sie Energie: Sie schalten Geräte ganz aus, wenn sie sie nicht benutzen. — Richtig oder falsch? Im Winter produziert die Solaranlage mehr Strom als im Sommer."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Im Winter scheint die Sonne weniger, sodass die Wagners dann mehr Strom aus dem Netz brauchen – mùa đông ít nắng nên gia đình phải mua thêm điện. Vậy mùa đông hệ thống sản xuất ít điện hơn, câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u06l3-mcq-lesen-geraete
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-sodass
+    prompt:
+      stem: "Familie Wagner hat seit letztem Jahr eine Solaranlage auf dem Dach. An sonnigen Tagen produziert die Anlage so viel Strom, dass die Familie fast keinen Strom kaufen muss. Im Winter scheint die Sonne weniger, sodass die Wagners dann mehr Strom aus dem Netz brauchen. Außerdem sparen sie Energie: Sie schalten Geräte ganz aus, wenn sie sie nicht benutzen. — Richtig oder falsch? An sonnigen Tagen muss die Familie kaum Strom kaufen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "An sonnigen Tagen produziert die Anlage so viel Strom, dass die Familie fast keinen Strom kaufen muss – ngày nắng, hệ thống tạo nhiều điện đến nỗi gia đình gần như không phải mua điện. kaum = hầu như không, nên câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u06l3-fill-fugen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-komposita-fugen
+    prompt:
+      template: "die Sonne + die Energie = die {{b1}} · die Arbeit + der Platz = der {{b2}} · die Umwelt + der Schutz = der {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 13 }
+        - { id: b3, width_hint: 13 }
+    answer:
+      blanks:
+        b1: [Sonnenenergie]
+        b2: [Arbeitsplatz]
+        b3: [Umweltschutz]
+    known_wrong:
+      - answer: Sonneenergie
+        feedback_vi: Sonne + Energie cần âm nối -n- – die Sonnenenergie.
+        error_tag: spelling
+      - answer: Sonnenergie
+        feedback_vi: Giữ nguyên Sonne rồi thêm âm nối -n- – Sonne-n-energie = Sonnenenergie.
+        error_tag: spelling
+      - answer: Arbeitplatz
+        feedback_vi: Arbeit + Platz cần âm nối -s- – der Arbeitsplatz.
+        error_tag: spelling
+      - answer: Umweltsschutz
+        feedback_vi: Umwelt + Schutz ghép thẳng, không có âm nối – der Umweltschutz.
+        error_tag: spelling
+    explanation:
+      vi: "Sonnenenergie có -n-, Arbeitsplatz có -s-, Umweltschutz không có âm nối. Giống của cả từ theo từ cuối: die Energie, der Platz, der Schutz."
+    display_answer: "die Sonne + die Energie = die Sonnenenergie · die Arbeit + der Platz = der Arbeitsplatz · die Umwelt + der Schutz = der Umweltschutz"
+
+  - key: de:exercise:b1u06l3-fill-sodass
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-sodass
+    prompt:
+      template: "Es hat wochenlang nicht geregnet, {{b1}} die Felder ganz trocken sind. Die alte Heizung war {{b2}} schlecht, dass sie sehr viel Energie verbraucht hat."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [sodass, so dass, weshalb, weswegen]
+        b2: [so]
+    known_wrong:
+      - answer: deshalb
+        feedback_vi: Sau deshalb động từ đứng ở vị trí 2 (deshalb sind die Felder …). Ở đây động từ sind đứng cuối, nên cần sodass.
+        error_tag: verb_position
+      - answer: denn
+        feedback_vi: denn nêu lý do, không nêu hệ quả, và kéo theo V2. Ở đây cần sodass.
+        error_tag: word_choice
+      - answer: sehr
+        feedback_vi: Trước dass cần so + tính từ (so schlecht, dass …); sehr không đi với dass.
+        error_tag: word_choice
+      - answer: zu
+        feedback_vi: zu schlecht không nối với dass. Muốn nói đến nỗi thì dùng so … dass.
+        error_tag: word_choice
+    explanation:
+      vi: "Vế sau là hệ quả và động từ sind đứng cuối: …, sodass die Felder ganz trocken sind. Câu thứ hai có dass ở sau, nên trước tính từ cần so: so schlecht, dass …"
+    display_answer: "Es hat wochenlang nicht geregnet, sodass die Felder ganz trocken sind. Die alte Heizung war so schlecht, dass sie sehr viel Energie verbraucht hat."
+
+  - key: de:exercise:b1u06l3-tr-so-teuer
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-sodass
+    prompt:
+      source_text: "Điện đắt đến nỗi chúng tôi phải tiết kiệm."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Strom ist so teuer, dass wir sparen müssen.
+        - Strom ist so teuer, dass wir sparen müssen.
+        - Der Strom ist so teuer, dass wir Strom sparen müssen.
+        - Der Strom ist so teuer, dass wir Energie sparen müssen.
+        - Der Strom ist sehr teuer, sodass wir sparen müssen.
+        - Der Strom ist sehr teuer, so dass wir sparen müssen.
+    known_wrong:
+      - answer: Der Strom ist so teuer, dass wir müssen sparen.
+        feedback_vi: Trong câu phụ dass, động từ chia müssen đứng cuối – … dass wir sparen müssen.
+        error_tag: verb_position
+      - answer: Der Strom ist sehr teuer, dass wir sparen müssen.
+        feedback_vi: Muốn nói đến nỗi thì cần so trước tính từ – so teuer, dass …
+        error_tag: word_choice
+      - answer: Der Strom ist so teuer, sodass wir sparen müssen.
+        feedback_vi: Đã có so trước tính từ thì nối bằng dass – so teuer, dass … (sodass dùng khi không có so).
+        error_tag: word_choice
+    explanation:
+      vi: "\"đắt đến nỗi\" = so teuer, dass …; trong câu phụ dass, động từ khiếm khuyết müssen đứng cuối, sau nguyên thể sparen. Cũng có thể nói: Der Strom ist sehr teuer, sodass wir sparen müssen."
+    display_answer: Der Strom ist so teuer, dass wir sparen müssen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u06l3-wb-kalt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-sodass
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Trời lạnh đến nỗi chúng tôi phải sưởi nhiều hơn.\""
+      tokens:
+        - { id: k-heizen, text: heizen }
+        - { id: k-so, text: so }
+        - { id: k-wir, text: wir }
+        - { id: k-es, text: Es }
+        - { id: k-mussten, text: mussten }
+        - { id: k-komma, text: "," }
+        - { id: k-kalt, text: kalt }
+        - { id: k-dass, text: dass }
+        - { id: k-war, text: war }
+        - { id: k-mehr, text: mehr }
+    answer:
+      orders:
+        - [k-es, k-war, k-so, k-kalt, k-komma, k-dass, k-wir, k-mehr, k-heizen, k-mussten]
+    explanation:
+      vi: "Câu chính: Es war so kalt (so trước tính từ). Câu phụ dass: động từ chia mussten đứng cuối, sau nguyên thể heizen."
+    display_answer: Es war so kalt, dass wir mehr heizen mussten.
+
+  - key: de:exercise:b1u06l3-mcq-sodass-satz
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-sodass
+    prompt:
+      stem: "Bạn viết: \"Trời nắng nhiều, nên hệ thống điện mặt trời tạo ra nhiều điện.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: p2a, text: "Die Sonne scheint viel, sodass die Solaranlage viel Strom produziert.", lang: de }
+        - { id: p6b, text: "Die Sonne scheint viel, sodass produziert die Solaranlage viel Strom.", lang: de }
+        - { id: p9c, text: "Die Sonne scheint viel, deshalb die Solaranlage produziert viel Strom.", lang: de }
+        - { id: p4d, text: "Sodass die Sonne viel scheint, produziert die Solaranlage viel Strom.", lang: de }
+    answer:
+      correct_option_id: p2a
+    explanation:
+      vi: "sodass mở câu phụ: động từ produziert đứng cuối, và câu sodass đứng sau câu chính. Sau deshalb động từ phải ở vị trí 2 (deshalb produziert die Solaranlage …); câu sodass không đứng đầu câu."
+    display_answer: Die Sonne scheint viel, sodass die Solaranlage viel Strom produziert.
+
+  - key: de:exercise:b1u06l3-tr-erneuerbar
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u06-erneuerbar
+    prompt:
+      source_text: Erneuerbare Energien wie Windkraft und Sonnenenergie werden immer wichtiger.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Các năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng quan trọng hơn.
+        - Năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng quan trọng hơn.
+        - Năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng quan trọng.
+        - Năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng trở nên quan trọng.
+        - Các loại năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng quan trọng hơn.
+        - Các nguồn năng lượng tái tạo như gió và mặt trời ngày càng quan trọng hơn.
+        - Các nguồn năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng quan trọng hơn.
+        - Năng lượng tái tạo như điện gió và điện mặt trời ngày càng quan trọng hơn.
+        - Những năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng quan trọng hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Năng lượng tái tạo như năng lượng gió và năng lượng mặt trời sẽ quan trọng hơn.
+        feedback_vi: "werden + so sánh hơn (wichtiger) ở đây nghĩa là \"trở nên\", và immer + so sánh hơn = ngày càng; câu không phải Futur I."
+        error_tag: meaning
+    explanation:
+      vi: "werden immer wichtiger = ngày càng trở nên quan trọng hơn (werden + tính từ = trở nên; immer + so sánh hơn = ngày càng). erneuerbare Energien = năng lượng tái tạo."
+    display_answer: Các năng lượng tái tạo như năng lượng gió và năng lượng mặt trời ngày càng quan trọng hơn.

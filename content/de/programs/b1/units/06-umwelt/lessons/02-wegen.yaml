@@ -1,0 +1,399 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u06-wegen
+order_index: 2
+level: b1
+title:
+  vi: Vì giao thông – giới từ Genitiv, da, nämlich (Wegen des Verkehrs)
+objectives:
+  - vi: Dùng wegen, trotz, während, statt, innerhalb, außerhalb + Genitiv trong văn viết.
+  - vi: Nêu lý do bằng da (câu phụ) và nämlich (trạng từ), phân biệt với weil, denn, deshalb.
+  - vi: Viết vài câu nêu nguyên nhân – hậu quả của ô nhiễm.
+estimated_minutes: 19
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b1u06-zukunft]
+items:
+  - item: de:item:b1u06-g-genitiv-praepositionen
+  - item: de:item:b1u06-g-da-naemlich
+  - item: de:item:b1u06-luft
+  - item: de:item:b1u06-verschmutzung
+  - item: de:item:b1u06-verkehr
+  - item: de:item:b1u06-abgas
+  - item: de:item:b1u06-schaedlich
+  - item: de:item:b1u06-ursache
+  - item: de:item:b1u06-folge
+  - item: de:item:b1u06-verursachen
+  - item: de:item:b1u06-feinstaub
+  - item: de:item:b1u06-giftig
+  - item: de:item:b1u06-fahrverbot
+  - item: de:item:b1u06-belasten
+  - item: de:item:b1u06-innenstadt
+  - item: de:item:b1u06-grenzwert
+  - item: de:item:b1u06-oeffentlich
+  - item: de:item:b1u06-verkehrsmittel
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u03-g-denn
+    role: reuse
+  - item: de:item:a2u06-g-deshalb
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b1u02-g-obwohl-trotzdem
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được câu nêu nguyên nhân – hậu quả, ví dụ: \"Wegen des Verkehrs ist die Luft in der Innenstadt schlecht. Da Abgase schädlich sind, fahre ich mit dem Rad.\""
+  - type: explain
+    text:
+      vi: "wegen (vì), trotz (mặc dù có), während (trong lúc), statt (thay vì), innerhalb (bên trong), außerhalb (bên ngoài) đi với Genitiv: des/eines + danh từ thêm -s/-es cho giống đực và trung (wegen des Verkehrs, trotz des Regens), der/einer cho giống cái và số nhiều (während der Fahrt). Tiếng Việt chỉ đặt \"vì\" trước danh từ, còn tiếng Đức phải đổi cả mạo từ lẫn danh từ."
+  - type: explain
+    text:
+      vi: "Khi nói chuyện, người Đức rất hay dùng wegen + Dativ (wegen dem Verkehr), và bạn sẽ nghe thấy điều này hằng ngày. Trong bài viết, e-mail trang trọng và bài thi, hãy dùng Genitiv: wegen des Verkehrs."
+  - type: explain
+    text:
+      vi: "da mở câu phụ chỉ lý do, động từ đứng cuối như weil: Da die Luft schlecht ist, bleiben wir im Haus. Câu da thường đứng đầu và nêu lý do người nghe đã biết; trả lời câu hỏi Warum? thì dùng weil."
+  - type: explain
+    text:
+      vi: "nämlich (vì, bởi vì) là trạng từ trong câu thứ hai, giải thích câu trước; nó đứng sau động từ chia, không đứng ở vị trí 1: Ich nehme den Bus. Mein Auto ist nämlich kaputt. So sánh: denn + V2 (… , denn mein Auto ist kaputt), deshalb nói hậu quả và đứng ở vị trí 1 (Mein Auto ist kaputt, deshalb nehme ich den Bus)."
+  - type: deep_explain
+    text:
+      vi: "trotz + danh từ và obwohl + câu phụ cùng nghĩa: Trotz des Regens fahre ich Rad = Obwohl es regnet, fahre ich Rad; tương tự wegen + danh từ = weil + câu phụ. Khi chỉ khoảng thời gian không có mạo từ, innerhalb và außerhalb thường đi với von + Dativ: innerhalb von zwei Wochen. statt cũng viết là anstatt (trang trọng hơn một chút). Danh từ giống đực/trung một âm tiết thường thêm -es ở Genitiv (des Tages), nhiều âm tiết thêm -s (des Verkehrs); cả hai cách đều có ở vài từ (des Regens). Để nói nguyên nhân – hậu quả bằng danh từ, hãy dùng: die Ursache für + Akk (nguyên nhân của), die Folge (hậu quả), etwas verursachen (gây ra), etwas belasten (gây ô nhiễm, gây gánh nặng)."
+  - type: example
+    target: Wegen des starken Verkehrs ist die Luft in der Innenstadt oft schlecht.
+    target_lang: de
+    translation:
+      vi: Vì xe cộ đông đúc nên không khí ở trung tâm thành phố thường không tốt.
+    note:
+      vi: "der Verkehr → des starken Verkehrs (Genitiv: mạo từ des, tính từ -en, danh từ thêm -s)."
+  - type: example
+    target: Trotz des Fahrverbots fahren manche Leute mit dem Auto in die Altstadt.
+    target_lang: de
+    translation:
+      vi: Dù có lệnh cấm xe, một số người vẫn lái ô tô vào khu phố cổ.
+    note:
+      vi: "das Fahrverbot → trotz des Fahrverbots. Cụm trotz … đứng ở vị trí 1 nên fahren đứng ngay sau."
+  - type: example
+    target: Da Abgase schädlich für die Gesundheit sind, nehme ich lieber öffentliche Verkehrsmittel.
+    target_lang: de
+    translation:
+      vi: Vì khí thải có hại cho sức khỏe nên tôi thích đi phương tiện công cộng hơn.
+    note:
+      vi: "Câu phụ da: sind đứng cuối. Cả câu phụ là vị trí 1 nên nehme đứng ngay sau dấu phẩy."
+  - type: example
+    target: Ich fahre heute mit dem Bus. Mein Auto ist nämlich in der Werkstatt.
+    target_lang: de
+    translation:
+      vi: Hôm nay tôi đi xe buýt. Vì xe ô tô của tôi đang ở xưởng sửa.
+    note:
+      vi: "nämlich đứng sau động từ ist, giải thích câu trước. Không nói Nämlich ist mein Auto …"
+  - type: example
+    target: Statt eines Autos benutzt sie jetzt öffentliche Verkehrsmittel.
+    target_lang: de
+    translation:
+      vi: Thay vì ô tô, giờ cô ấy dùng phương tiện giao thông công cộng.
+    note:
+      vi: "das Auto → statt eines Autos (Genitiv của ein: eines, danh từ thêm -s)."
+  - type: example
+    target: Obwohl es regnet, fahre ich mit dem Rad. – Trotz des Regens fahre ich mit dem Rad.
+    target_lang: de
+    translation:
+      vi: Dù trời mưa, tôi vẫn đi xe đạp. (hai cách nói cùng nghĩa)
+    note:
+      vi: "obwohl + câu phụ (động từ regnet ở cuối) = trotz + danh từ ở Genitiv (der Regen → des Regens)."
+  - type: common_mistake
+    wrong: Wegen dem Verkehr komme ich zu spät. (in einer formellen E-Mail)
+    right: Wegen des Verkehrs komme ich zu spät.
+    target_lang: de
+    note:
+      vi: "Khi nói chuyện, wegen dem rất phổ biến; nhưng khi viết và đi thi, hãy dùng Genitiv: wegen des Verkehrs."
+  - type: common_mistake
+    wrong: Nämlich ist mein Auto kaputt.
+    right: Mein Auto ist nämlich kaputt.
+    target_lang: de
+    note:
+      vi: "nämlich không đứng ở vị trí 1; đặt nó sau động từ chia."
+  - type: common_mistake
+    wrong: Trotz des Regen fahre ich mit dem Rad.
+    right: Trotz des Regens fahre ich mit dem Rad.
+    target_lang: de
+    note:
+      vi: "Danh từ giống đực/trung ở Genitiv thêm -s/-es: des Regens, des Verkehrs."
+  - type: common_mistake
+    wrong: Da die Luft ist schlecht, bleiben wir zu Hause.
+    right: Da die Luft schlecht ist, bleiben wir zu Hause.
+    target_lang: de
+    note:
+      vi: "da mở câu phụ nên động từ chia đứng cuối câu phụ, giống weil."
+  - type: summary
+    points:
+      - vi: "wegen, trotz, während, statt, innerhalb, außerhalb + Genitiv: des/eines …-(e)s, der/einer."
+      - vi: "Văn nói hay dùng wegen + Dativ; văn viết, bài thi: Genitiv."
+      - vi: "da + câu phụ (động từ cuối), thường đứng đầu, lý do đã biết; Warum? → weil."
+      - vi: "nämlich: trạng từ trong câu thứ hai, sau động từ, không ở vị trí 1."
+      - vi: "denn (vị trí 0, V2) · weil/da (câu phụ) · nämlich (giữa câu) · deshalb (hậu quả, vị trí 1)."
+      - vi: "Từ vựng: die Luft, die Verschmutzung, der Verkehr, das Abgas, schädlich, die Ursache, die Folge, verursachen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u06l2-mcq-wegen-des
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-genitiv-praepositionen
+    prompt:
+      stem: "Chọn mạo từ đúng (văn viết): Wegen ___ Verkehrs ist die Luft schlecht."
+      stem_lang: vi
+      options:
+        - { id: g4s, text: "des", lang: de }
+        - { id: g8r, text: "der", lang: de }
+        - { id: g2n, text: "den", lang: de }
+        - { id: g6d, text: "das", lang: de }
+    answer:
+      correct_option_id: g4s
+    explanation:
+      vi: "wegen đi với Genitiv; der Verkehr (giống đực) ở Genitiv là des Verkehrs – danh từ cũng thêm -s. der là Nominativ, den là Akkusativ, das là mạo từ giống trung."
+    display_answer: des
+
+  - key: de:exercise:b1u06l2-mcq-naemlich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-da-naemlich
+    prompt:
+      stem: "Câu nào đúng? (Hôm nay tôi đi xe buýt. Vì xe đạp của tôi bị hỏng.)"
+      stem_lang: vi
+      options:
+        - { id: n3a, text: "Ich fahre heute mit dem Bus. Mein Fahrrad ist nämlich kaputt.", lang: de }
+        - { id: n7b, text: "Ich fahre heute mit dem Bus. Nämlich ist mein Fahrrad kaputt.", lang: de }
+        - { id: n1c, text: "Ich fahre heute mit dem Bus. Nämlich mein Fahrrad ist kaputt.", lang: de }
+        - { id: n5d, text: "Ich fahre heute mit dem Bus. Mein Fahrrad nämlich kaputt ist.", lang: de }
+    answer:
+      correct_option_id: n3a
+    explanation:
+      vi: "nämlich là trạng từ, đứng sau động từ chia (ist) trong câu chính bình thường. Nó không đứng ở vị trí 1, và câu có nämlich không phải câu phụ nên động từ không đứng cuối."
+    display_answer: Ich fahre heute mit dem Bus. Mein Fahrrad ist nämlich kaputt.
+
+  - key: de:exercise:b1u06l2-listen-abgase
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u06-abgas
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wegen der Abgase ist die Luft in unserer Straße sehr schlecht. Deshalb machen wir die Fenster nur selten auf.
+      options:
+        - { id: a2a, text: "Vì khí thải nên không khí ở phố nhà tôi rất xấu, vì vậy chúng tôi ít khi mở cửa sổ.", lang: vi }
+        - { id: a6b, text: "Vì khí thải nên không khí ở phố nhà tôi rất xấu, vì vậy chúng tôi hay mở cửa sổ.", lang: vi }
+        - { id: a9c, text: "Dù có khí thải, không khí ở phố nhà tôi vẫn tốt, nên chúng tôi ít khi mở cửa sổ.", lang: vi }
+        - { id: a4d, text: "Vì tiếng ồn nên phố nhà tôi rất khó chịu, vì vậy chúng tôi ít khi mở cửa sổ.", lang: vi }
+    answer:
+      correct_option_id: a2a
+    explanation:
+      vi: "Wegen der Abgase = vì khí thải (die Abgase, Genitiv số nhiều: der). die Luft … sehr schlecht = không khí rất xấu. Deshalb (vì vậy) … nur selten auf = chỉ thỉnh thoảng mới mở cửa sổ."
+    display_answer: Vì khí thải nên không khí ở phố nhà tôi rất xấu, vì vậy chúng tôi ít khi mở cửa sổ.
+
+  - key: de:exercise:b1u06l2-mcq-da
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u06-g-da-naemlich
+    prompt:
+      stem: "Chọn từ đúng: ___ die Luft heute sehr schlecht ist, bleiben die Kinder im Haus."
+      stem_lang: vi
+      options:
+        - { id: c1d, text: "Da", lang: de }
+        - { id: c5n, text: "Denn", lang: de }
+        - { id: c8s, text: "Deshalb", lang: de }
+        - { id: c3t, text: "Trotz", lang: de }
+    answer:
+      correct_option_id: c1d
+    explanation:
+      vi: "Động từ ist đứng cuối vế đầu, nên vế này là câu phụ – cần liên từ mở câu phụ chỉ lý do: Da. denn và deshalb kéo theo V2 (động từ ở vị trí 2); trotz là giới từ, đi với danh từ chứ không mở câu."
+    display_answer: Da
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u06l2-fill-genitiv
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-genitiv-praepositionen
+    prompt:
+      template: "Trotz {{b1}} Regens fahre ich mit dem Rad. Während {{b2}} Fahrt höre ich Musik. Statt {{b3}} (ein) Autos habe ich eine Monatskarte für den Bus."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [des]
+        b2: [der]
+        b3: [eines]
+    known_wrong:
+      - answer: dem
+        feedback_vi: Trong văn viết, trotz đi với Genitiv – trotz des Regens (der Regen, giống đực).
+        error_tag: case_dat_akk
+      - answer: die
+        feedback_vi: während + Genitiv; die Fahrt là giống cái nên Genitiv là der – während der Fahrt.
+        error_tag: case_dat_akk
+      - answer: einem
+        feedback_vi: statt + Genitiv; das Auto → statt eines Autos.
+        error_tag: case_dat_akk
+      - answer: ein
+        feedback_vi: statt + Genitiv; ein đổi thành eines (danh từ cũng thêm -s – Autos).
+        error_tag: case_dat_akk
+    explanation:
+      vi: "trotz, während, statt + Genitiv. der Regen → des Regens; die Fahrt → der Fahrt; das Auto → eines Autos. Dấu hiệu: danh từ giống đực/trung có thêm -s."
+    display_answer: "Trotz des Regens fahre ich mit dem Rad. Während der Fahrt höre ich Musik. Statt eines Autos habe ich eine Monatskarte für den Bus."
+
+  - key: de:exercise:b1u06l2-fill-da-naemlich
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-da-naemlich
+    prompt:
+      template: "Ich nehme heute den Bus. Mein Auto ist {{b1}} in der Werkstatt. {{b2}} heute so viel Verkehr ist, komme ich vielleicht etwas später."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [nämlich]
+        b2: [Da, Weil]
+    known_wrong:
+      - answer: denn
+        feedback_vi: denn đứng đầu một vế câu và kéo theo V2. Giữa câu cần nämlich; mở câu phụ (động từ ist ở cuối) cần Da hoặc Weil.
+        error_tag: word_choice
+      - answer: Trotz
+        feedback_vi: trotz là giới từ, đi với danh từ, không mở câu phụ. Ở đây cần Da.
+        error_tag: word_choice
+    explanation:
+      vi: "Câu thứ hai giải thích câu thứ nhất: nämlich, đứng sau động từ ist. Vế cuối có động từ ist đứng cuối, tức là câu phụ chỉ lý do: Da (hoặc Weil); da đứng đầu câu rất tự nhiên."
+    display_answer: "Ich nehme heute den Bus. Mein Auto ist nämlich in der Werkstatt. Da heute so viel Verkehr ist, komme ich vielleicht etwas später."
+
+  - key: de:exercise:b1u06l2-fill-schaedlich
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-schaedlich
+    prompt:
+      template: "Abgase sind {{b1}} (Schaden) für die Gesundheit, denn sie können Krankheiten {{b2}} (Ursache)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [schädlich]
+        b2: [verursachen]
+    known_wrong:
+      - answer: verursacht
+        feedback_vi: Sau động từ khiếm khuyết können, động từ chính ở nguyên thể – verursachen.
+        error_tag: verb_form
+      - answer: Schaden
+        feedback_vi: der Schaden là danh từ (thiệt hại). Sau sind cần tính từ tạo từ Schaden – schädlich.
+        error_tag: word_choice
+    explanation:
+      vi: "Từ danh từ der Schaden tạo tính từ schädlich (có hại); từ die Ursache tạo động từ verursachen (gây ra). können + nguyên thể ở cuối câu: … Krankheiten verursachen. denn đứng ở vị trí 0, sau nó là trật tự V2 bình thường (sie können …)."
+    display_answer: "Abgase sind schädlich für die Gesundheit, denn sie können Krankheiten verursachen."
+
+  - key: de:exercise:b1u06l2-tr-wegen-verkehr
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-verkehr
+    prompt:
+      source_text: "Vì giao thông nên không khí trong thành phố rất xấu. (văn viết, dùng wegen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wegen des Verkehrs ist die Luft in der Stadt sehr schlecht.
+        - Die Luft in der Stadt ist wegen des Verkehrs sehr schlecht.
+        - In der Stadt ist die Luft wegen des Verkehrs sehr schlecht.
+        - Wegen des Verkehrs ist die Luft in der Stadt sehr schmutzig.
+        - Die Luft in der Stadt ist wegen des Verkehrs sehr schmutzig.
+        - In der Stadt ist die Luft wegen des Verkehrs sehr schmutzig.
+        - Wegen des Verkehrs ist in der Stadt die Luft sehr schlecht.
+        - Wegen des Verkehrs ist die Luft in der Stadt sehr verschmutzt.
+        - Die Luft in der Stadt ist wegen des Verkehrs sehr verschmutzt.
+    known_wrong:
+      - answer: Wegen dem Verkehr ist die Luft in der Stadt sehr schlecht.
+        feedback_vi: Khi nói thì được, nhưng đề yêu cầu văn viết – wegen + Genitiv – wegen des Verkehrs.
+        error_tag: case_dat_akk
+      - answer: Wegen des Verkehr ist die Luft in der Stadt sehr schlecht.
+        feedback_vi: Danh từ giống đực ở Genitiv thêm -s – des Verkehrs.
+        error_tag: case_dat_akk
+      - answer: Wegen des Verkehrs die Luft ist in der Stadt sehr schlecht.
+        feedback_vi: Cụm wegen … ở vị trí 1 thì động từ ist ở vị trí 2 – Wegen des Verkehrs ist die Luft …
+        error_tag: verb_position
+    explanation:
+      vi: "wegen + Genitiv: der Verkehr → des Verkehrs. Nếu cụm wegen đứng đầu câu, động từ ist đứng ngay sau nó; cũng có thể bắt đầu bằng chủ ngữ: Die Luft in der Stadt ist wegen des Verkehrs sehr schlecht."
+    display_answer: Wegen des Verkehrs ist die Luft in der Stadt sehr schlecht.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u06l2-wb-da-bus
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-da-naemlich
+    prompt:
+      instruction: "Sắp xếp thành câu, câu phụ da đứng đầu: \"Vì xe buýt đã đầy nên tôi đi xe đạp.\""
+      tokens:
+        - { id: v-rad, text: Rad }
+        - { id: v-ist, text: ist }
+        - { id: v-da, text: Da }
+        - { id: v-ich, text: ich }
+        - { id: v-voll, text: voll }
+        - { id: v-komma, text: "," }
+        - { id: v-der, text: der }
+        - { id: v-fahre, text: fahre }
+        - { id: v-bus, text: Bus }
+    answer:
+      orders:
+        - [v-da, v-der, v-bus, v-voll, v-ist, v-komma, v-fahre, v-ich, v-rad]
+    explanation:
+      vi: "Câu phụ da: động từ ist đứng cuối (… voll ist). Câu phụ là vị trí 1 của cả câu, nên động từ fahre đứng ngay sau dấu phẩy, rồi đến chủ ngữ ich. Rad fahren = đi xe đạp."
+    display_answer: Da der Bus voll ist, fahre ich Rad.
+
+  - key: de:exercise:b1u06l2-tr-ursache
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u06-ursache
+    prompt:
+      source_text: Die Abgase der Autos sind eine wichtige Ursache für die Luftverschmutzung.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khí thải của ô tô là một nguyên nhân quan trọng gây ô nhiễm không khí.
+        - Khí thải từ ô tô là một nguyên nhân quan trọng gây ô nhiễm không khí.
+        - Khí thải ô tô là một nguyên nhân quan trọng gây ô nhiễm không khí.
+        - Khí thải của xe ô tô là một nguyên nhân quan trọng gây ô nhiễm không khí.
+        - Khí thải của ô tô là nguyên nhân quan trọng gây ô nhiễm không khí.
+        - Khí thải của ô tô là một nguyên nhân quan trọng của ô nhiễm không khí.
+        - Khí thải của ô tô là một nguyên nhân quan trọng gây ra ô nhiễm không khí.
+        - Khí thải của các xe ô tô là một nguyên nhân quan trọng gây ô nhiễm không khí.
+        - Khí thải từ xe hơi là một nguyên nhân quan trọng gây ô nhiễm không khí.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khí thải của ô tô là một hậu quả quan trọng của ô nhiễm không khí.
+        feedback_vi: "die Ursache là nguyên nhân; hậu quả là die Folge."
+        error_tag: meaning
+    explanation:
+      vi: "die Abgase der Autos = khí thải của ô tô (der Autos là Genitiv số nhiều). eine wichtige Ursache für … = một nguyên nhân quan trọng gây ra … die Luftverschmutzung = ô nhiễm không khí (Luft + Verschmutzung)."
+    display_answer: Khí thải của ô tô là một nguyên nhân quan trọng gây ô nhiễm không khí.

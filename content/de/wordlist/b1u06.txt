@@ -1,0 +1,7 @@
+# Allow-list của unit B1U06 (Umwelt und Zukunft): từ đúng mà từ điển offline thiếu.
+# die Solaranlage: hệ thống điện mặt trời (Duden).
+Solaranlage
+# der Ökostrom: điện từ nguồn tái tạo (Duden).
+Ökostrom
+# Repair-Café: quán sửa đồ miễn phí, từ vay mượn phổ biến ở Đức (Duden: Repaircafé).
+Repair

@@ -1,0 +1,1598 @@
+# Học liệu unit B1U06 "Môi trường và tương lai" (Umwelt und Zukunft), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U06L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# Thông tin về khí hậu/năng lượng chỉ là nhận định phổ biến, nói có chừng mực; không có số liệu thống kê.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Trong tương lai – Futur I =================
+  - key: de:item:b1u06-g-futur-i
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Futur I: werden + Infinitiv (Es wird wärmer werden.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Futur I gồm werden chia theo chủ ngữ ở vị trí 2 và động từ chính ở dạng nguyên thể ở cuối câu: ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden … fahren. Dùng để dự báo, nói quyết tâm hoặc hứa hẹn. Kế hoạch chắc chắn đã có mốc thời gian thì người Đức thường dùng Präsens: Morgen fahre ich nach Berlin."
+      examples:
+        - target: Im Sommer wird es wahrscheinlich wieder sehr heiß werden.
+          translation:
+            vi: Mùa hè tới có lẽ trời lại sẽ rất nóng.
+        - target: Ich verspreche dir, ich werde ab jetzt weniger Auto fahren.
+          translation:
+            vi: Mình hứa với bạn, từ giờ mình sẽ ít đi ô tô hơn.
+        - target: Ich glaube, dass die Preise weiter steigen werden.
+          translation:
+            vi: Tôi nghĩ là giá cả sẽ còn tiếp tục tăng.
+      confusion:
+        vi: "Có ba kiểu wird: wird + tính từ/danh từ = trở nên, trở thành (Es wird wärmer); wird + nguyên thể = Futur I (Es wird regnen); wird + Partizip II = bị động (Der Müll wird getrennt). Trong câu phụ, werden đứng cuối: …, dass es regnen wird."
+
+  - key: de:item:b1u06-g-vermutung-wohl
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Vermutung: werden + wohl + Infinitiv (Er wird wohl krank sein.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "werden + wohl + nguyên thể dùng để phỏng đoán điều đang xảy ra ngay bây giờ, nghĩa là \"chắc là, có lẽ\". Er wird wohl krank sein = chắc là (bây giờ) anh ấy đang ốm, không phải \"anh ấy sẽ ốm\". Thay wohl bằng sicher hoặc bestimmt thì người nói chắc chắn hơn."
+      examples:
+        - target: Tom ist heute nicht da. Er wird wohl krank sein.
+          translation:
+            vi: Hôm nay Tom không có ở đây. Chắc là anh ấy bị ốm.
+        - target: Wo ist Lisa? – Sie wird wohl noch im Büro sein.
+          translation:
+            vi: Lisa đâu rồi? – Chắc là cô ấy vẫn còn ở văn phòng.
+      confusion:
+        vi: "Nói cùng ý bằng Präsens + trạng từ cũng được: Er ist wahrscheinlich krank. Đừng bỏ động từ nguyên thể: Er wird wohl krank sein (không phải Er wird wohl krank – câu này lại có nghĩa \"có lẽ anh ấy sẽ bị ốm\")."
+
+  - key: de:item:b1u06-klima
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Klima (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khí hậu
+      examples:
+        - target: In Südvietnam ist das Klima das ganze Jahr warm.
+          translation:
+            vi: Ở miền Nam Việt Nam, khí hậu ấm quanh năm.
+        - target: Das Klima verändert sich.
+          translation:
+            vi: Khí hậu đang thay đổi.
+      confusion:
+        vi: "das Klima là trung tính dù tận cùng bằng -a. das Wetter là thời tiết hôm nay, ngày mai; das Klima là thời tiết điển hình của một vùng trong nhiều năm."
+      pronunciation_note:
+        vi: "i dài, trọng âm ở âm tiết đầu: /ˈkliːma/."
+
+  - key: de:item:b1u06-klimawandel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Klimawandel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: biến đổi khí hậu
+      examples:
+        - target: Der Klimawandel ist ein Problem für die ganze Welt.
+          translation:
+            vi: Biến đổi khí hậu là vấn đề của cả thế giới.
+        - target: Viele junge Menschen haben Angst vor dem Klimawandel.
+          translation:
+            vi: Nhiều người trẻ lo lắng về biến đổi khí hậu.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: das Klima + der Wandel (sự thay đổi) = der Klimawandel."
+
+  - key: de:item:b1u06-temperatur
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Temperatur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiệt độ
+      examples:
+        - target: Morgen steigt die Temperatur auf 30 Grad.
+          translation:
+            vi: Ngày mai nhiệt độ tăng lên 30 độ.
+        - target: In der Nacht sinken die Temperaturen unter null.
+          translation:
+            vi: Ban đêm nhiệt độ xuống dưới không độ.
+      confusion:
+        vi: "Nhiệt độ tăng lên mức nào: steigen auf + Akk (auf 30 Grad); giảm: sinken."
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối, u dài: Tem-pe-ra-TUR."
+
+  - key: de:item:b1u06-steigen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: steigen, steigt, stieg, ist gestiegen
+      pos: động từ
+    back:
+      meaning:
+        vi: tăng, tăng lên; leo lên
+      examples:
+        - target: Die Preise für Strom sind stark gestiegen.
+          translation:
+            vi: Giá điện đã tăng mạnh.
+        - target: Das Wasser im Fluss steigt.
+          translation:
+            vi: Nước sông đang dâng lên.
+      confusion:
+        vi: "steigen là tự tăng lên, Perfekt dùng sein: ist gestiegen. Đừng nhầm với einsteigen/aussteigen (lên/xuống xe) đã học ở A2."
+
+  - key: de:item:b1u06-erde
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erde (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: Trái Đất; đất (trồng cây)
+      examples:
+        - target: Die Erde wird wärmer.
+          translation:
+            vi: Trái Đất đang nóng lên.
+        - target: Die Pflanze braucht frische Erde.
+          translation:
+            vi: Cái cây cần đất mới.
+      confusion:
+        vi: "Trái Đất luôn có mạo từ: die Erde, auf der Erde. Mặt đất (nền dưới chân) thường là der Boden: Das Buch liegt auf dem Boden."
+
+  - key: de:item:b1u06-prognose
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Prognose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự báo, dự đoán
+      examples:
+        - target: Nach der Prognose wird es morgen regnen.
+          translation:
+            vi: Theo dự báo thì ngày mai trời sẽ mưa.
+        - target: Die Prognosen für die Wirtschaft sind nicht gut.
+          translation:
+            vi: Các dự báo về kinh tế không tốt.
+      confusion:
+        vi: "die Prognose dùng cho mọi loại dự đoán (kinh tế, khí hậu, bệnh). Dự báo thời tiết hằng ngày thường gọi là der Wetterbericht hoặc die Wettervorhersage."
+      pronunciation_note:
+        vi: "g và n tách hai âm tiết: Pro-gno-se, trọng âm ở -gno-, o dài."
+
+  - key: de:item:b1u06-duerre
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Dürre, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạn hán
+      examples:
+        - target: Im letzten Sommer gab es eine lange Dürre.
+          translation:
+            vi: Mùa hè năm ngoái có một đợt hạn hán dài.
+        - target: Die Bauern haben Angst vor einer Dürre.
+          translation:
+            vi: Nông dân sợ hạn hán.
+      confusion:
+        vi: "Tính từ liên quan: dürr (khô cằn, gầy gò), trocken (khô). Trái nghĩa với hạn hán là die Überschwemmung (lũ lụt)."
+      pronunciation_note:
+        vi: "ü ngắn: tròn môi như đọc \"u\" nhưng đặt lưỡi như \"i\"."
+
+  - key: de:item:b1u06-ueberschwemmung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Überschwemmung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lũ lụt, ngập lụt
+      examples:
+        - target: Nach dem starken Regen gab es eine Überschwemmung.
+          translation:
+            vi: Sau trận mưa lớn đã xảy ra lũ lụt.
+        - target: In der Altstadt gab es schon öfter Überschwemmungen.
+          translation:
+            vi: Khu phố cổ đã nhiều lần bị ngập lụt.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Überschwemmung. Khi nước sông dâng cao, người Đức cũng hay nói das Hochwasser."
+
+  - key: de:item:b1u06-extrem
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: extrem
+      pos: tính từ
+    back:
+      meaning:
+        vi: cực đoan, khắc nghiệt; cực kỳ
+      examples:
+        - target: Extreme Hitze ist gefährlich für alte Menschen.
+          translation:
+            vi: Nắng nóng khắc nghiệt rất nguy hiểm cho người già.
+        - target: Gestern war es extrem kalt.
+          translation:
+            vi: Hôm qua trời cực kỳ lạnh.
+      confusion:
+        vi: "Đứng trước danh từ thì có đuôi tính từ (extreme Hitze, das extreme Wetter); đứng trước tính từ khác thì là trạng từ, không có đuôi (extrem kalt)."
+
+  # Zusatzwortschatz bài 1 (trường: khí hậu)
+  - key: de:item:b1u06-hitze
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hitze (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái nóng, nắng nóng
+      examples:
+        - target: Bei dieser Hitze bleibe ich lieber zu Hause.
+          translation:
+            vi: Trời nóng thế này tôi thích ở nhà hơn.
+        - target: Bei großer Hitze sollte man viel Wasser trinken.
+          translation:
+            vi: Khi trời nắng nóng, nên uống nhiều nước.
+      confusion:
+        vi: "heiß là tính từ (Es ist heiß), die Hitze là danh từ. warm chỉ ấm dễ chịu, heiß là nóng."
+
+  - key: de:item:b1u06-gletscher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gletscher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: sông băng
+      examples:
+        - target: Die Gletscher in den Alpen werden kleiner.
+          translation:
+            vi: Các sông băng ở dãy Alps đang nhỏ dần.
+        - target: Im Urlaub haben wir einen Gletscher gesehen.
+          translation:
+            vi: Trong kỳ nghỉ chúng tôi đã được thấy một sông băng.
+      confusion:
+        vi: "Danh từ giống đực tận cùng bằng -er thường có số nhiều không đổi: der Gletscher – die Gletscher."
+
+  - key: de:item:b1u06-schmelzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schmelzen, schmilzt, schmolz, ist geschmolzen
+      pos: động từ
+    back:
+      meaning:
+        vi: tan, tan chảy
+      examples:
+        - target: Das Eis schmilzt in der Sonne.
+          translation:
+            vi: Đá tan dưới nắng.
+        - target: Der Schnee ist schon geschmolzen.
+          translation:
+            vi: Tuyết đã tan rồi.
+      confusion:
+        vi: "Đổi e → i ở du và er/sie/es: du schmilzt, es schmilzt. Khi nói băng, tuyết tự tan, Perfekt dùng sein: ist geschmolzen."
+
+  - key: de:item:b1u06-unwetter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Unwetter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời tiết xấu dữ dội (giông bão, mưa đá…)
+      examples:
+        - target: Gestern Abend gab es ein schweres Unwetter.
+          translation:
+            vi: Tối qua có một trận giông bão dữ dội.
+        - target: Bei einem Unwetter sollte man im Haus bleiben.
+          translation:
+            vi: Khi có giông bão, nên ở trong nhà.
+      confusion:
+        vi: "Tiền tố un- ở đây mang nghĩa \"xấu, dữ\", không phải \"không có thời tiết\". Giống theo das Wetter: das Unwetter."
+
+  - key: de:item:b1u06-sturm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Sturm, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bão, gió bão
+      examples:
+        - target: In der Nacht gab es einen starken Sturm.
+          translation:
+            vi: Đêm qua có một cơn bão mạnh.
+        - target: Der Sturm hat viele Bäume umgeworfen.
+          translation:
+            vi: Cơn bão đã quật đổ nhiều cây.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Stürme. Bão nhiệt đới ở châu Á thường gọi là der Taifun."
+
+  - key: de:item:b1u06-erwaermung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erwärmung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nóng lên
+      examples:
+        - target: Viele Wissenschaftler sprechen von der globalen Erwärmung.
+          translation:
+            vi: Nhiều nhà khoa học nói về sự nóng lên toàn cầu.
+        - target: Die Erwärmung der Meere ist ein Problem für viele Tiere.
+          translation:
+            vi: Việc nước biển ấm lên là một vấn đề với nhiều loài vật.
+      confusion:
+        vi: "Chuỗi tạo từ: warm → erwärmen (làm ấm lên) → die Erwärmung. Đuôi -ung là giống cái."
+
+  - key: de:item:b1u06-warnen
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: warnen vor (+ Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: cảnh báo (về điều gì)
+      examples:
+        - target: Der Wetterdienst warnt vor einem Sturm.
+          translation:
+            vi: Cơ quan khí tượng cảnh báo có bão.
+        - target: Ich habe dich vor dem Hund gewarnt!
+          translation:
+            vi: Mình đã cảnh báo bạn về con chó rồi mà!
+      confusion:
+        vi: "Người được cảnh báo ở Akkusativ, mối nguy dùng vor + Dativ: Ich warne dich vor dem Eis. Danh từ: die Warnung, -en."
+
+  - key: de:item:b1u06-wahrscheinlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: wahrscheinlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: có lẽ, có khả năng là
+      examples:
+        - target: Morgen regnet es wahrscheinlich.
+          translation:
+            vi: Ngày mai có lẽ trời mưa.
+        - target: Er ist wahrscheinlich noch im Büro.
+          translation:
+            vi: Có lẽ anh ấy vẫn còn ở văn phòng.
+      confusion:
+        vi: "wahrscheinlich chắc hơn vielleicht (có thể). Er ist wahrscheinlich krank gần nghĩa với Er wird wohl krank sein."
+
+  # ================= Bài 2: Vì giao thông – giới từ Genitiv, da, nämlich =================
+  - key: de:item:b1u06-g-genitiv-praepositionen
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Präpositionen mit Genitiv: wegen, trotz, während, statt, innerhalb, außerhalb"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Sáu giới từ này đi với Genitiv: wegen des Verkehrs (vì), trotz des Regens (mặc dù có), während der Fahrt (trong lúc), statt eines Autos (thay vì), innerhalb/außerhalb der Stadt (bên trong/bên ngoài). Danh từ giống đực và trung tính ở Genitiv thêm -s hoặc -es (des Verkehrs, des Regens). Trong văn nói người Đức hay dùng wegen/trotz + Dativ (wegen dem Verkehr), nhưng khi viết và đi thi bạn nên dùng Genitiv."
+      examples:
+        - target: Wegen des Verkehrs ist die Luft in der Innenstadt schlecht.
+          translation:
+            vi: Vì giao thông nên không khí ở trung tâm thành phố không tốt.
+        - target: Trotz des Regens fahre ich mit dem Fahrrad zur Arbeit.
+          translation:
+            vi: Dù trời mưa, tôi vẫn đi xe đạp đi làm.
+        - target: Während der Fahrt hören wir Musik.
+          translation:
+            vi: Trong lúc đi đường, chúng tôi nghe nhạc.
+      confusion:
+        vi: "Khi chỉ một khoảng thời gian không có mạo từ, innerhalb thường đi với von + Dativ: innerhalb von zwei Wochen. trotz + danh từ, còn obwohl + câu phụ: trotz des Regens = obwohl es regnet."
+
+  - key: de:item:b1u06-g-da-naemlich
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "da (Nebensatz) · nämlich (Adverb): Da es regnet, … · Ich bin nämlich krank."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "da mở câu phụ chỉ lý do, động từ đứng cuối như weil; câu da thường đứng đầu và nêu lý do người nghe đã biết, nghe hơi trang trọng. nämlich là trạng từ trong câu thứ hai để giải thích câu trước, đứng sau động từ chia và không đứng ở vị trí 1. Trả lời câu hỏi Warum? thì dùng weil, không dùng da."
+      examples:
+        - target: Da die Luft heute sehr schlecht ist, bleiben die Kinder im Haus.
+          translation:
+            vi: Vì hôm nay không khí rất xấu nên bọn trẻ ở trong nhà.
+        - target: Ich nehme heute den Bus. Mein Auto ist nämlich kaputt.
+          translation:
+            vi: Hôm nay tôi đi xe buýt. Vì xe ô tô của tôi bị hỏng.
+      confusion:
+        vi: "Bốn cách nói lý do – hệ quả: denn (vị trí 0, sau đó V2), weil/da (câu phụ, động từ cuối), nämlich (giữa câu thứ hai), deshalb (hậu quả, vị trí 1, động từ ngay sau)."
+
+  - key: de:item:b1u06-luft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Luft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: không khí
+      examples:
+        - target: Die Luft in der Stadt ist oft schlecht.
+          translation:
+            vi: Không khí trong thành phố thường không tốt.
+        - target: Am Meer ist die Luft frisch und sauber.
+          translation:
+            vi: Ở biển không khí trong lành và sạch.
+      confusion:
+        vi: "Ra ngoài hít thở không khí: an die frische Luft gehen. die Luft là không khí, der Wind là gió."
+
+  - key: de:item:b1u06-verschmutzung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verschmutzung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự ô nhiễm, sự làm bẩn
+      examples:
+        - target: Die Verschmutzung der Flüsse ist ein großes Problem.
+          translation:
+            vi: Ô nhiễm sông ngòi là một vấn đề lớn.
+        - target: In vielen Großstädten ist die Luftverschmutzung hoch.
+          translation:
+            vi: Ở nhiều thành phố lớn, ô nhiễm không khí cao.
+      confusion:
+        vi: "Chuỗi tạo từ: schmutzig (bẩn) → verschmutzen (làm ô nhiễm) → die Verschmutzung. Hay gặp trong từ ghép: die Luftverschmutzung, die Umweltverschmutzung."
+
+  - key: de:item:b1u06-verkehr
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verkehr (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giao thông, xe cộ qua lại
+      examples:
+        - target: Morgens gibt es hier viel Verkehr.
+          translation:
+            vi: Buổi sáng ở đây xe cộ đông.
+        - target: Im Verkehr muss man immer aufpassen.
+          translation:
+            vi: Khi tham gia giao thông, lúc nào cũng phải cẩn thận.
+      confusion:
+        vi: "Genitiv: des Verkehrs (wegen des Verkehrs). Đông xe là viel Verkehr, không dùng \"viele Verkehre\"."
+
+  - key: de:item:b1u06-abgas
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Abgas, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khí thải
+      examples:
+        - target: Autos und Fabriken produzieren Abgase.
+          translation:
+            vi: Ô tô và nhà máy thải ra khí thải.
+        - target: Die Abgase der Autos belasten die Luft.
+          translation:
+            vi: Khí thải từ ô tô làm ô nhiễm không khí.
+      confusion:
+        vi: "Thường dùng ở số nhiều: die Abgase. Giống theo das Gas: das Abgas."
+
+  - key: de:item:b1u06-schaedlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schädlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: có hại
+      examples:
+        - target: Rauchen ist schädlich für die Gesundheit.
+          translation:
+            vi: Hút thuốc có hại cho sức khỏe.
+        - target: Abgase sind schädlich für Menschen und Tiere.
+          translation:
+            vi: Khí thải có hại cho người và động vật.
+      confusion:
+        vi: "Có hại cho ai/cái gì: schädlich für + Akkusativ. Danh từ gốc: der Schaden (thiệt hại)."
+      pronunciation_note:
+        vi: "ä dài, đọc gần như \"e\" kéo dài: /ˈʃɛːtlɪç/."
+
+  - key: de:item:b1u06-ursache
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ursache, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên nhân
+      examples:
+        - target: Was ist die Ursache des Problems?
+          translation:
+            vi: Nguyên nhân của vấn đề là gì?
+        - target: Der Verkehr ist eine wichtige Ursache für schlechte Luft.
+          translation:
+            vi: Giao thông là một nguyên nhân quan trọng khiến không khí xấu.
+      confusion:
+        vi: "Nguyên nhân của điều gì: die Ursache für + Akk hoặc Genitiv (die Ursache des Problems). Câu cố định Keine Ursache! nghĩa là \"không có gì\" (đáp lại lời cảm ơn)."
+
+  - key: de:item:b1u06-folge
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Folge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hậu quả, kết quả; (phim) tập
+      examples:
+        - target: Der Klimawandel hat viele Folgen.
+          translation:
+            vi: Biến đổi khí hậu gây ra nhiều hậu quả.
+        - target: Hast du die neue Folge der Serie schon gesehen?
+          translation:
+            vi: Bạn đã xem tập mới của bộ phim chưa?
+      confusion:
+        vi: "die Ursache (nguyên nhân) → die Folge (hậu quả). Động từ liên quan: folgen (theo sau), daraus folgt (từ đó suy ra)."
+
+  - key: de:item:b1u06-verursachen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verursachen
+      pos: động từ
+    back:
+      meaning:
+        vi: gây ra
+      examples:
+        - target: Der Unfall hat einen langen Stau verursacht.
+          translation:
+            vi: Vụ tai nạn đã gây ra một vụ kẹt xe dài.
+        - target: Zu viel Verkehr verursacht Lärm und schlechte Luft.
+          translation:
+            vi: Quá nhiều xe cộ gây ra tiếng ồn và không khí xấu.
+      confusion:
+        vi: "Tiền tố ver- không tách nên Partizip II không có ge-: hat verursacht. Gốc của từ là die Ursache."
+
+  # Zusatzwortschatz bài 2 (trường: ô nhiễm, giao thông)
+  - key: de:item:b1u06-feinstaub
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Feinstaub (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bụi mịn
+      examples:
+        - target: Feinstaub ist schlecht für die Lunge.
+          translation:
+            vi: Bụi mịn không tốt cho phổi.
+        - target: Heute ist die Belastung durch Feinstaub hoch.
+          translation:
+            vi: Hôm nay mức ô nhiễm bụi mịn cao.
+      confusion:
+        vi: "fein (mịn) + der Staub (bụi) = der Feinstaub, giống đực theo der Staub."
+
+  - key: de:item:b1u06-giftig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: giftig
+      pos: tính từ
+    back:
+      meaning:
+        vi: độc, có độc
+      examples:
+        - target: Manche Pilze sind giftig.
+          translation:
+            vi: Một số loại nấm có độc.
+        - target: Diese Abgase sind giftig.
+          translation:
+            vi: Những khí thải này độc hại.
+      confusion:
+        vi: "Danh từ gốc là das Gift (chất độc), không phải \"quà\" như tiếng Anh gift; quà là das Geschenk."
+
+  - key: de:item:b1u06-fahrverbot
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Fahrverbot, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lệnh cấm xe chạy
+      examples:
+        - target: Die Stadt diskutiert über ein Fahrverbot in der Altstadt.
+          translation:
+            vi: Thành phố đang bàn về việc cấm xe chạy trong khu phố cổ.
+        - target: Für diese Straße gilt ein Fahrverbot.
+          translation:
+            vi: Con đường này cấm xe chạy.
+      confusion:
+        vi: "fahren + das Verbot (lệnh cấm) = das Fahrverbot, giống trung theo das Verbot."
+
+  - key: de:item:b1u06-belasten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: belasten
+      pos: động từ
+    back:
+      meaning:
+        vi: gây ô nhiễm, gây gánh nặng (cho)
+      examples:
+        - target: Die Abgase belasten die Luft.
+          translation:
+            vi: Khí thải làm ô nhiễm không khí.
+        - target: Der Lärm belastet die Menschen hier sehr.
+          translation:
+            vi: Tiếng ồn gây áp lực lớn cho người dân ở đây.
+      confusion:
+        vi: "Tiền tố be- không tách nên Partizip II không có ge-: hat belastet. Danh từ: die Belastung (die Luftbelastung = ô nhiễm không khí)."
+
+  - key: de:item:b1u06-innenstadt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Innenstadt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trung tâm thành phố, nội thành
+      examples:
+        - target: In der Innenstadt gibt es viele Geschäfte.
+          translation:
+            vi: Ở trung tâm thành phố có nhiều cửa hàng.
+        - target: Wir fahren mit der Bahn in die Innenstadt.
+          translation:
+            vi: Chúng tôi đi tàu vào trung tâm thành phố.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Innenstädte. Đi vào trung tâm: in die Innenstadt (Akk); ở trung tâm: in der Innenstadt (Dat)."
+
+  - key: de:item:b1u06-grenzwert
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Grenzwert, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngưỡng giới hạn, giá trị giới hạn
+      examples:
+        - target: Gestern lagen die Werte über dem Grenzwert.
+          translation:
+            vi: Hôm qua các chỉ số vượt ngưỡng giới hạn.
+        - target: Für Feinstaub gibt es einen Grenzwert.
+          translation:
+            vi: Đối với bụi mịn có một ngưỡng giới hạn.
+      confusion:
+        vi: "die Grenze (biên giới, giới hạn) + der Wert (giá trị) = der Grenzwert, giống đực theo der Wert."
+
+  - key: de:item:b1u06-oeffentlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: öffentlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: công cộng, công khai
+      examples:
+        - target: Ich fahre meistens mit öffentlichen Verkehrsmitteln.
+          translation:
+            vi: Tôi thường đi bằng phương tiện giao thông công cộng.
+        - target: Das ist ein öffentlicher Park.
+          translation:
+            vi: Đây là công viên công cộng.
+      confusion:
+        vi: "Trước danh từ cần đuôi tính từ: mit öffentlichen Verkehrsmitteln (Dativ số nhiều), ein öffentlicher Park."
+
+  - key: de:item:b1u06-verkehrsmittel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Verkehrsmittel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương tiện giao thông
+      examples:
+        - target: Der Bus ist ein öffentliches Verkehrsmittel.
+          translation:
+            vi: Xe buýt là một phương tiện giao thông công cộng.
+        - target: Welches Verkehrsmittel benutzt du am liebsten?
+          translation:
+            vi: Bạn thích dùng phương tiện giao thông nào nhất?
+      confusion:
+        vi: "der Verkehr + s + das Mittel: giữa hai phần có âm nối -s- (bạn sẽ học ở bài 3). Giống trung theo das Mittel."
+
+  # ================= Bài 3: Tiết kiệm năng lượng – sodass, từ ghép =================
+  - key: de:item:b1u06-g-sodass
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Folge: …, sodass … / so + Adjektiv …, dass …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sodass mở câu phụ nêu hệ quả (nên, cho nên), động từ đứng cuối, và câu sodass đứng sau câu chính: Es war kalt, sodass wir mehr heizen mussten. Muốn nhấn mạnh mức độ (đến nỗi), đặt so trước tính từ trong câu chính rồi nối bằng dass: Es war so kalt, dass wir mehr heizen mussten. Có thể viết sodass hoặc so dass."
+      examples:
+        - target: Der Strom ist teurer geworden, sodass viele Menschen Energie sparen.
+          translation:
+            vi: Điện đã đắt hơn, nên nhiều người tiết kiệm năng lượng.
+        - target: Die Heizung war so alt, dass sie sehr viel Energie verbraucht hat.
+          translation:
+            vi: Cái lò sưởi cũ đến nỗi nó đã tiêu tốn rất nhiều năng lượng.
+      confusion:
+        vi: "deshalb cũng nêu hệ quả nhưng là trạng từ ở vị trí 1, sau đó là động từ: Es war kalt, deshalb haben wir mehr geheizt. Sau sodass và dass, động từ chia luôn ở cuối câu phụ."
+
+  - key: de:item:b1u06-g-komposita-fugen
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Fugenelemente: der Arbeitsplatz (-s-), die Sonnenenergie (-n-), der Umweltschutz (ohne)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi ghép hai danh từ, đôi khi có âm nối (Fugenelement) ở giữa: -s- (der Arbeitsplatz, das Verkehrsmittel), -n- (die Sonnenenergie), -es- (das Tageslicht), có khi không có gì (der Umweltschutz). Sau các đuôi -ung, -heit, -keit, -ion, -tät thường có -s- (die Wohnungstür, das Gesundheitsamt). Từ ghép lấy giống của từ cuối."
+      examples:
+        - target: Ich suche einen neuen Arbeitsplatz.
+          translation:
+            vi: Tôi đang tìm một chỗ làm mới.
+        - target: Die Sonnenenergie ist für den Umweltschutz wichtig.
+          translation:
+            vi: Năng lượng mặt trời quan trọng cho việc bảo vệ môi trường.
+      confusion:
+        vi: "Âm nối -s- không có nghĩa số nhiều hay sở hữu; nó chỉ giúp đọc trơn. Ngoài các đuôi kể trên, nhiều từ phải học thuộc: Arbeitsplatz có -s-, Umweltschutz thì không."
+
+  - key: de:item:b1u06-energie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Energie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: năng lượng
+      examples:
+        - target: Wir müssen mehr Energie sparen.
+          translation:
+            vi: Chúng ta phải tiết kiệm năng lượng nhiều hơn.
+        - target: Erneuerbare Energien werden immer wichtiger.
+          translation:
+            vi: Các năng lượng tái tạo ngày càng quan trọng hơn.
+      confusion:
+        vi: "Số nhiều die Energien dùng khi nói các loại năng lượng (erneuerbare Energien). Năng lượng của một người (sức lực) cũng là Energie: Ich habe heute keine Energie."
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối, ie đọc \"i\" dài: e-ner-GIE; g đọc như \"g\"."
+
+  - key: de:item:b1u06-strom
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Strom (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện, dòng điện
+      examples:
+        - target: Der Strom ist teurer geworden.
+          translation:
+            vi: Điện đã đắt hơn.
+        - target: Wie viel Strom verbraucht euer Kühlschrank?
+          translation:
+            vi: Tủ lạnh nhà bạn tiêu thụ bao nhiêu điện?
+      confusion:
+        vi: "Với nghĩa \"điện\", der Strom không có số nhiều. Nghĩa \"dòng sông lớn, dòng chảy\" thì có số nhiều die Ströme."
+      pronunciation_note:
+        vi: "st đầu từ đọc là \"scht\": /ʃtʁoːm/, o dài."
+
+  - key: de:item:b1u06-erneuerbar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erneuerbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: tái tạo được
+      examples:
+        - target: Windkraft und Sonnenenergie sind erneuerbare Energien.
+          translation:
+            vi: Năng lượng gió và năng lượng mặt trời là năng lượng tái tạo.
+        - target: Kohle und Öl sind nicht erneuerbar.
+          translation:
+            vi: Than và dầu không tái tạo được.
+      confusion:
+        vi: "Chuỗi tạo từ: neu → erneuern (làm mới) → erneuerbar; đuôi -bar nghĩa là \"có thể … được\" (trinkbar = uống được)."
+
+  - key: de:item:b1u06-solaranlage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Solaranlage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ thống điện mặt trời, tấm pin mặt trời
+      examples:
+        - target: Wir haben eine Solaranlage auf dem Dach.
+          translation:
+            vi: Nhà chúng tôi có hệ thống điện mặt trời trên mái.
+        - target: Eine Solaranlage produziert Strom aus Sonnenlicht.
+          translation:
+            vi: Hệ thống điện mặt trời tạo ra điện từ ánh nắng.
+      confusion:
+        vi: "solar (mặt trời) + die Anlage (hệ thống, thiết bị) = die Solaranlage, giống cái theo die Anlage."
+
+  - key: de:item:b1u06-windkraft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Windkraft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: năng lượng gió, sức gió
+      examples:
+        - target: Windräder erzeugen Strom aus Windkraft.
+          translation:
+            vi: Tua-bin gió tạo ra điện từ sức gió.
+        - target: Windkraft ist eine erneuerbare Energie.
+          translation:
+            vi: Năng lượng gió là một loại năng lượng tái tạo.
+      confusion:
+        vi: "der Wind + die Kraft (sức mạnh) = die Windkraft: giống cái theo từ cuối, dù der Wind là giống đực."
+
+  - key: de:item:b1u06-verbrauchen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verbrauchen
+      pos: động từ
+    back:
+      meaning:
+        vi: tiêu thụ, tiêu tốn
+      examples:
+        - target: Unser alter Kühlschrank verbraucht viel Strom.
+          translation:
+            vi: Tủ lạnh cũ của chúng tôi tốn nhiều điện.
+        - target: Im Winter verbrauchen wir mehr Energie.
+          translation:
+            vi: Mùa đông chúng tôi tiêu thụ nhiều năng lượng hơn.
+      confusion:
+        vi: "brauchen là cần, verbrauchen là dùng hết, tiêu thụ. ver- không tách nên Partizip II là verbraucht (không có ge-)."
+
+  - key: de:item:b1u06-verbrauch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verbrauch (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: mức tiêu thụ, sự tiêu thụ
+      examples:
+        - target: Im Winter ist der Verbrauch höher.
+          translation:
+            vi: Mùa đông mức tiêu thụ cao hơn.
+        - target: Wir wollen unseren Stromverbrauch senken.
+          translation:
+            vi: Chúng tôi muốn giảm lượng điện tiêu thụ.
+      confusion:
+        vi: "Danh từ tạo từ gốc động từ không có đuôi thường là giống đực: verbrauchen → der Verbrauch. Hay gặp trong từ ghép: der Stromverbrauch, der Wasserverbrauch."
+
+  - key: de:item:b1u06-umweltschutz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Umweltschutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo vệ môi trường
+      examples:
+        - target: Umweltschutz ist mir sehr wichtig.
+          translation:
+            vi: Bảo vệ môi trường rất quan trọng với tôi.
+        - target: Was tust du für den Umweltschutz?
+          translation:
+            vi: Bạn làm gì để bảo vệ môi trường?
+      confusion:
+        vi: "die Umwelt + der Schutz = der Umweltschutz: không có âm nối, giống đực theo der Schutz. Động từ: die Umwelt schützen."
+
+  - key: de:item:b1u06-nachhaltig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: nachhaltig
+      pos: tính từ
+    back:
+      meaning:
+        vi: bền vững
+      examples:
+        - target: Wir wollen nachhaltiger leben.
+          translation:
+            vi: Chúng tôi muốn sống bền vững hơn.
+        - target: Diese Firma produziert nachhaltige Kleidung.
+          translation:
+            vi: Công ty này sản xuất quần áo bền vững.
+      confusion:
+        vi: "Danh từ: die Nachhaltigkeit (tính bền vững). Trong quảng cáo, nachhaltig thường nghĩa là ít hại cho môi trường và dùng được lâu dài."
+      pronunciation_note:
+        vi: "-ig cuối từ theo chuẩn đọc như \"ich\": /ˈnaːxhaltɪç/."
+
+  # Zusatzwortschatz bài 3 (trường: năng lượng)
+  - key: de:item:b1u06-sonnenenergie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Sonnenenergie (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: năng lượng mặt trời
+      examples:
+        - target: Mit Sonnenenergie kann man Strom und warmes Wasser erzeugen.
+          translation:
+            vi: Với năng lượng mặt trời, người ta có thể tạo ra điện và nước nóng.
+        - target: Unser Haus nutzt Sonnenenergie.
+          translation:
+            vi: Nhà chúng tôi dùng năng lượng mặt trời.
+      confusion:
+        vi: "die Sonne + n + die Energie: có âm nối -n-. Giống cái theo die Energie."
+
+  - key: de:item:b1u06-kraftwerk
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Kraftwerk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà máy điện
+      examples:
+        - target: Das alte Kraftwerk wird bald geschlossen.
+          translation:
+            vi: Nhà máy điện cũ sắp bị đóng cửa.
+        - target: Ein Kohlekraftwerk produziert viele Abgase.
+          translation:
+            vi: Nhà máy nhiệt điện than thải ra nhiều khí thải.
+      confusion:
+        vi: "die Kraft + das Werk (nhà máy) = das Kraftwerk, giống trung theo das Werk."
+
+  - key: de:item:b1u06-stromrechnung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Stromrechnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoá đơn tiền điện
+      examples:
+        - target: Unsere Stromrechnung ist dieses Jahr sehr hoch.
+          translation:
+            vi: Năm nay hoá đơn tiền điện nhà tôi rất cao.
+        - target: Hast du die Stromrechnung schon bezahlt?
+          translation:
+            vi: Bạn đã trả hoá đơn tiền điện chưa?
+      confusion:
+        vi: "Tiếng Việt nói \"hoá đơn tiền điện\" (từ chính đứng trước), tiếng Đức ngược lại: Strom + Rechnung, từ chính đứng cuối và quyết định giống (die Rechnung)."
+
+  - key: de:item:b1u06-oekostrom
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ökostrom (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện xanh (điện từ nguồn tái tạo)
+      examples:
+        - target: Wir kaufen nur noch Ökostrom.
+          translation:
+            vi: Chúng tôi giờ chỉ mua điện xanh.
+        - target: Ökostrom kommt aus Sonne, Wind oder Wasser.
+          translation:
+            vi: Điện xanh đến từ mặt trời, gió hoặc nước.
+      confusion:
+        vi: "Öko- là dạng ngắn của ökologisch (sinh thái), hay gặp trong khẩu ngữ: der Ökostrom, das Ökoprodukt."
+
+  - key: de:item:b1u06-windrad
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Windrad, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: tua-bin gió
+      examples:
+        - target: Auf dem Hügel stehen drei Windräder.
+          translation:
+            vi: Trên ngọn đồi có ba tua-bin gió.
+        - target: Ein Windrad erzeugt Strom.
+          translation:
+            vi: Một tua-bin gió tạo ra điện.
+      confusion:
+        vi: "Giống trung theo das Rad (bánh xe), không theo der Wind. Số nhiều: die Windräder."
+
+  - key: de:item:b1u06-klimaschutz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Klimaschutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo vệ khí hậu
+      examples:
+        - target: Klimaschutz geht uns alle an.
+          translation:
+            vi: Bảo vệ khí hậu là việc của tất cả chúng ta.
+        - target: Die Stadt tut viel für den Klimaschutz.
+          translation:
+            vi: Thành phố làm nhiều việc để bảo vệ khí hậu.
+      confusion:
+        vi: "das Klima + der Schutz = der Klimaschutz: không có âm nối, giống đực theo der Schutz (giống der Umweltschutz)."
+
+  - key: de:item:b1u06-waermepumpe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wärmepumpe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy bơm nhiệt
+      examples:
+        - target: Wir heizen jetzt mit einer Wärmepumpe.
+          translation:
+            vi: Giờ nhà chúng tôi sưởi bằng máy bơm nhiệt.
+        - target: Eine Wärmepumpe braucht Strom.
+          translation:
+            vi: Máy bơm nhiệt cần điện.
+      confusion:
+        vi: "die Wärme (hơi ấm) + die Pumpe = die Wärmepumpe. Tính từ gốc: warm; danh từ đổi nguyên âm: die Wärme."
+
+  - key: de:item:b1u06-rohstoff
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Rohstoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên liệu thô, tài nguyên
+      examples:
+        - target: Öl und Kohle sind wichtige Rohstoffe.
+          translation:
+            vi: Dầu và than là những nguyên liệu quan trọng.
+        - target: Recycling spart Rohstoffe.
+          translation:
+            vi: Tái chế giúp tiết kiệm tài nguyên.
+      confusion:
+        vi: "roh (thô, sống) + der Stoff (chất, vật liệu) = der Rohstoff, giống đực theo der Stoff."
+
+  # ================= Bài 4: Thảo luận về môi trường – nêu ý kiến =================
+  - key: de:item:b1u06-g-meinung-redemittel
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Meinung äußern: Meiner Meinung nach ist … · Ich bin der Meinung, dass … · Da stimme ich dir zu. · Das sehe ich anders."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Meiner Meinung nach chiếm vị trí 1, nên động từ đứng ngay sau: Meiner Meinung nach ist das sinnvoll. Ich bin der Meinung/Ansicht, dass … mở câu phụ, động từ cuối. Đồng ý: Da stimme ich dir zu. / Da hast du recht.; phản đối: Das sehe ich anders. / Da muss ich dir widersprechen."
+      examples:
+        - target: Meiner Meinung nach sollten weniger Autos in die Innenstadt fahren.
+          translation:
+            vi: Theo tôi, nên có ít ô tô chạy vào trung tâm thành phố hơn.
+        - target: Ich bin der Ansicht, dass ein Fahrverbot keine gute Lösung ist.
+          translation:
+            vi: Tôi cho rằng lệnh cấm xe không phải là giải pháp tốt.
+        - target: Einerseits ist das Auto praktisch, andererseits ist es schlecht für die Umwelt.
+          translation:
+            vi: Một mặt ô tô tiện lợi, mặt khác nó có hại cho môi trường.
+      confusion:
+        vi: "Sau Meiner Meinung nach không thêm ich denke hay ich finde. Einerseits …, andererseits … (một mặt …, mặt khác …): sau mỗi từ, động từ đứng ngay sau."
+
+  - key: de:item:b1u06-meinung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Meinung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý kiến
+      examples:
+        - target: Was ist deine Meinung dazu?
+          translation:
+            vi: Bạn nghĩ sao về chuyện đó?
+        - target: Wir sind verschiedener Meinung.
+          translation:
+            vi: Chúng tôi có ý kiến khác nhau.
+      confusion:
+        vi: "meiner Meinung nach là Dativ (meiner), nach đứng sau danh từ. Ich bin der Meinung, dass … (Nominativ). Ich bin anderer Meinung = tôi có ý kiến khác."
+
+  - key: de:item:b1u06-ansicht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ansicht, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: quan điểm, cách nhìn
+      examples:
+        - target: Ich bin der Ansicht, dass wir mehr tun müssen.
+          translation:
+            vi: Tôi cho rằng chúng ta phải làm nhiều hơn.
+        - target: Meiner Ansicht nach ist das zu teuer.
+          translation:
+            vi: Theo quan điểm của tôi, cái đó quá đắt.
+      confusion:
+        vi: "Dùng như die Meinung nhưng trang trọng hơn một chút. Đừng nhầm với die Ansichtskarte (bưu thiếp có ảnh)."
+
+  - key: de:item:b1u06-standpunkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Standpunkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lập trường, quan điểm
+      examples:
+        - target: Ich verstehe deinen Standpunkt.
+          translation:
+            vi: Mình hiểu quan điểm của bạn.
+        - target: Ich stehe auf dem Standpunkt, dass Plastiktüten verboten werden sollten.
+          translation:
+            vi: Tôi giữ quan điểm rằng túi ni-lông nên bị cấm.
+      confusion:
+        vi: "Không nói Ich bin der Standpunkt; nói Mein Standpunkt ist … hoặc Ich stehe auf dem Standpunkt, dass …"
+
+  - key: de:item:b1u06-zustimmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zustimmen (+ Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: đồng ý, tán thành
+      examples:
+        - target: Da stimme ich dir zu.
+          translation:
+            vi: Về điểm đó mình đồng ý với bạn.
+        - target: Ich stimme Ihnen völlig zu.
+          translation:
+            vi: Tôi hoàn toàn đồng ý với ông/bà.
+      confusion:
+        vi: "Động từ tách (stimme … zu) và người được đồng ý ở Dativ: dir, Ihnen, nicht dich, Sie. Partizip II: zugestimmt."
+
+  - key: de:item:b1u06-widersprechen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: widersprechen, widerspricht, widersprach, hat widersprochen
+      pos: động từ
+    back:
+      meaning:
+        vi: phản bác, nói ngược lại
+      examples:
+        - target: Da muss ich dir widersprechen.
+          translation:
+            vi: Về điểm này mình phải phản bác bạn.
+        - target: Sie widerspricht ihrem Chef nie.
+          translation:
+            vi: Cô ấy không bao giờ cãi lại sếp.
+      confusion:
+        vi: "Người bị phản bác ở Dativ (dir, ihm, Ihnen). Tiền tố wider- ở đây không tách và không có ge- ở Partizip II: hat widersprochen."
+
+  - key: de:item:b1u06-argument
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Argument, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lý lẽ, luận điểm
+      examples:
+        - target: Das ist ein gutes Argument.
+          translation:
+            vi: Đó là một lý lẽ hay.
+        - target: Welche Argumente gibt es dafür und dagegen?
+          translation:
+            vi: Có những lý lẽ nào ủng hộ và phản đối?
+      confusion:
+        vi: "Danh từ đuôi -ment thường là giống trung: das Argument, das Dokument. Argument chỉ là lý lẽ, không có nghĩa \"cãi nhau\" (cãi nhau là der Streit)."
+
+  - key: de:item:b1u06-ueberzeugen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: überzeugen
+      pos: động từ
+    back:
+      meaning:
+        vi: thuyết phục
+      examples:
+        - target: Deine Argumente überzeugen mich nicht.
+          translation:
+            vi: Lý lẽ của bạn không thuyết phục được mình.
+        - target: Ich bin überzeugt, dass das richtig ist.
+          translation:
+            vi: Tôi tin chắc rằng điều đó đúng.
+      confusion:
+        vi: "über- ở đây không tách: Partizip II là überzeugt (không có ge-). Thuyết phục ai về điều gì: jemanden von etwas überzeugen."
+
+  - key: de:item:b1u06-vorteil
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Vorteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ưu điểm, lợi thế
+      examples:
+        - target: Ein Vorteil ist, dass Fahrräder keine Abgase produzieren.
+          translation:
+            vi: Một ưu điểm là xe đạp không thải khí thải.
+        - target: Das Leben auf dem Land hat viele Vorteile.
+          translation:
+            vi: Cuộc sống ở nông thôn có nhiều ưu điểm.
+      confusion:
+        vi: "Trái nghĩa: der Nachteil. Cụm hay dùng khi viết: Ein Vorteil ist, dass … / Ein großer Vorteil von … ist …"
+
+  - key: de:item:b1u06-nachteil
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Nachteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhược điểm, bất lợi
+      examples:
+        - target: Ein Nachteil ist der hohe Preis.
+          translation:
+            vi: Một nhược điểm là giá cao.
+        - target: Jede Lösung hat Vorteile und Nachteile.
+          translation:
+            vi: Giải pháp nào cũng có ưu điểm và nhược điểm.
+      confusion:
+        vi: "Giống đực theo der Teil như der Vorteil. Có thể viết gọn: Vor- und Nachteile."
+
+  # Zusatzwortschatz bài 4 (trường: tranh luận)
+  - key: de:item:b1u06-verbot
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Verbot, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lệnh cấm, sự cấm
+      examples:
+        - target: Was hältst du von einem Verbot von Plastiktüten?
+          translation:
+            vi: Bạn nghĩ sao về việc cấm túi ni-lông?
+        - target: Hier gilt ein Rauchverbot.
+          translation:
+            vi: Ở đây cấm hút thuốc.
+      confusion:
+        vi: "Động từ: verbieten (cấm), Partizip II verboten. Ein Verbot gilt = lệnh cấm có hiệu lực."
+
+  - key: de:item:b1u06-sinnvoll
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sinnvoll
+      pos: tính từ
+    back:
+      meaning:
+        vi: hợp lý, có ý nghĩa
+      examples:
+        - target: Ich finde es sinnvoll, den Müll zu trennen.
+          translation:
+            vi: Tôi thấy phân loại rác là việc hợp lý.
+        - target: Das ist eine sinnvolle Idee.
+          translation:
+            vi: Đó là một ý tưởng hợp lý.
+      confusion:
+        vi: "der Sinn (ý nghĩa) + -voll (đầy) = sinnvoll; trái nghĩa: sinnlos (vô nghĩa)."
+
+  - key: de:item:b1u06-uebertrieben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: übertrieben
+      pos: tính từ
+    back:
+      meaning:
+        vi: thái quá, cường điệu, quá đà
+      examples:
+        - target: Das finde ich ein bisschen übertrieben.
+          translation:
+            vi: Mình thấy cái đó hơi quá.
+        - target: Seine Angst ist übertrieben.
+          translation:
+            vi: Nỗi sợ của anh ấy là thái quá.
+      confusion:
+        vi: "Là Partizip II của übertreiben (phóng đại) dùng như tính từ. Câu Das ist übertrieben phản đối nhẹ nhàng hơn Das ist falsch."
+
+  - key: de:item:b1u06-recht-haben
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: recht haben
+      pos: cụm từ
+    back:
+      meaning:
+        vi: (ai đó) nói đúng, có lý
+      examples:
+        - target: Da hast du recht.
+          translation:
+            vi: Về điểm đó bạn nói đúng.
+        - target: Sie haben völlig recht.
+          translation:
+            vi: Ông/bà hoàn toàn đúng.
+      confusion:
+        vi: "Dùng với haben, không dùng sein: Du hast recht (không nói Du bist recht). Viết recht haben hay Recht haben đều đúng chính tả."
+
+  - key: de:item:b1u06-alternative
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Alternative, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lựa chọn khác, giải pháp thay thế
+      examples:
+        - target: Das Fahrrad ist eine gute Alternative zum Auto.
+          translation:
+            vi: Xe đạp là một lựa chọn tốt thay cho ô tô.
+        - target: Gibt es keine Alternative?
+          translation:
+            vi: Không có lựa chọn nào khác sao?
+      confusion:
+        vi: "Thay thế cho cái gì: eine Alternative zu + Dativ (zum Auto). Tính từ: alternativ (alternative Energien = năng lượng thay thế)."
+      pronunciation_note:
+        vi: "Trọng âm ở -ti-, i dài: al-ter-na-TI-ve."
+
+  - key: de:item:b1u06-diskussion
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Diskussion, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc thảo luận, cuộc tranh luận
+      examples:
+        - target: Die Diskussion war sehr interessant.
+          translation:
+            vi: Cuộc thảo luận rất thú vị.
+        - target: Es gab eine lange Diskussion über das Fahrverbot.
+          translation:
+            vi: Đã có một cuộc tranh luận dài về lệnh cấm xe.
+      confusion:
+        vi: "Danh từ đuôi -ion là giống cái: die Diskussion. Thảo luận về điều gì: eine Diskussion über + Akk."
+
+  - key: de:item:b1u06-dafuer-dagegen-sein
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: dafür sein / dagegen sein
+      pos: cụm từ
+    back:
+      meaning:
+        vi: tán thành / phản đối
+      examples:
+        - target: Bist du dafür oder dagegen?
+          translation:
+            vi: Bạn tán thành hay phản đối?
+        - target: Ich bin dagegen, dass die Busse teurer werden.
+          translation:
+            vi: Tôi phản đối việc xe buýt tăng giá.
+      confusion:
+        vi: "Trọng âm rơi vào phần sau: da-FÜR, da-GE-gen. Có thể nối câu dass: Ich bin dafür, dass …"
+
+  - key: de:item:b1u06-diskutieren
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: diskutieren über (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: thảo luận, tranh luận (về điều gì)
+      examples:
+        - target: Wir diskutieren heute über den Klimawandel.
+          translation:
+            vi: Hôm nay chúng ta thảo luận về biến đổi khí hậu.
+        - target: Darüber haben wir lange diskutiert.
+          translation:
+            vi: Chúng tôi đã tranh luận về điều đó rất lâu.
+      confusion:
+        vi: "Động từ đuôi -ieren không có ge- ở Partizip II: hat diskutiert. Thảo luận về điều gì: über + Akkusativ."
