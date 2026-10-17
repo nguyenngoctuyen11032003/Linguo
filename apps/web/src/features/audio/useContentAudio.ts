@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { contentAudioSrc, loadAudioObjectUrl, NORMAL_AUDIO_RATE, shouldDownload, type ContentAudioRate } from './content-audio';
+import { audioLoadReason, contentAudioSrc, loadAudioObjectUrl, NORMAL_AUDIO_RATE, shouldDownload, type AudioLoadReason, type ContentAudioRate } from './content-audio';
 
 export type ContentAudioState = 'idle' | 'loading' | 'playing' | 'paused' | 'ended' | 'error';
 
@@ -7,6 +7,8 @@ export interface ContentAudio {
   /** False when the id resolves to no URL at all (the caller shows the machine-speech fallback right away). */
   playable: boolean;
   state: ContentAudioState;
+  /** Why the last download failed (`offline_uncached` = no network and the clip was never downloaded); null otherwise. */
+  errorReason: AudioLoadReason | null;
   rate: ContentAudioRate;
   /** Playback has begun at least once (the replay button is useful from then on). */
   started: boolean;
@@ -29,6 +31,7 @@ export function useContentAudio(assetId: string | null | undefined): ContentAudi
   const [state, setState] = useState<ContentAudioState>('idle');
   const [rate, setRateState] = useState<ContentAudioRate>(NORMAL_AUDIO_RATE);
   const [started, setStarted] = useState(false);
+  const [errorReason, setErrorReason] = useState<AudioLoadReason | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const objectUrlRef = useRef<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -126,7 +129,11 @@ export function useContentAudio(assetId: string | null | undefined): ContentAudi
           objectUrlRef.current = url;
           playFromHere(element(url, id), id);
         },
-        () => token.current === id && setState('error'),
+        (error) => {
+          if (token.current !== id) return;
+          setErrorReason(audioLoadReason(error));
+          setState('error');
+        },
       );
     },
     [assetId, src, element, playFromHere],
@@ -143,6 +150,7 @@ export function useContentAudio(assetId: string | null | undefined): ContentAudi
       token.current += 1;
       release();
       setState('idle');
+      setErrorReason(null);
       start(true);
       return;
     }
@@ -161,5 +169,5 @@ export function useContentAudio(assetId: string | null | undefined): ContentAudi
     if (audio) audio.playbackRate = audio.defaultPlaybackRate = next;
   }, []);
 
-  return { playable: src !== null, state, rate, started, toggle, replay, setRate };
+  return { playable: src !== null, state, errorReason: state === 'error' ? errorReason : null, rate, started, toggle, replay, setRate };
 }

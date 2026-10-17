@@ -13,3 +13,5 @@ export {
   type PrecacheResult,
 } from './offline-media';
 export { isPersisted, isQuotaExceededError, requestPersistence, storageEstimate, type PersistenceResult } from './storage';
+export { requestPretendardWarmup, shouldWarmFonts } from './font-warmup';
+export { OfflineMediaWarmup } from './OfflineMediaWarmup';

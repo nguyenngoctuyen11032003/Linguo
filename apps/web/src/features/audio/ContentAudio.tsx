@@ -58,7 +58,7 @@ export function ContentAudio(props: ContentAudioProps) {
 }
 
 function RecordedAudio({ assetId, fallbackText, fallbackLang, compact = false, className, onFailedChange }: ContentAudioProps) {
-  const { playable, state, rate, started, toggle, replay, setRate } = useContentAudio(assetId);
+  const { playable, state, errorReason, rate, started, toggle, replay, setRate } = useContentAudio(assetId);
   const failed = state === 'error' || !playable;
   const changeRef = useRef(onFailedChange);
   useEffect(() => {
@@ -69,6 +69,8 @@ function RecordedAudio({ assetId, fallbackText, fallbackLang, compact = false, c
   }, [failed]);
 
   const slow = rate === SLOW_AUDIO_RATE;
+  // No network and the clip was never downloaded: say so (the machine voice below still works offline).
+  const notDownloaded = state === 'error' && errorReason === 'offline_uncached';
   const busy = state === 'loading';
   const text = fallbackText?.trim() ?? '';
   const speech = text ? (
@@ -83,7 +85,7 @@ function RecordedAudio({ assetId, fallbackText, fallbackLang, compact = false, c
         <button
           type="button"
           onClick={toggle}
-          aria-label={PRIMARY_NAME[state]}
+          aria-label={notDownloaded ? 'Chưa tải bản ghi âm này. Thử lại' : PRIMARY_NAME[state]}
           aria-busy={busy || undefined}
           className={cn(
             pill,
@@ -127,7 +129,15 @@ function RecordedAudio({ assetId, fallbackText, fallbackLang, compact = false, c
         </button>
       </div>
       <p role="status" aria-live="polite" className={state === 'error' ? 'text-sm font-medium text-error-text' : 'sr-only'}>
-        {state === 'error' ? (speech ? 'Không phát được bản ghi âm. Bạn có thể nghe giọng đọc của máy.' : 'Không phát được bản ghi âm.') : ''}
+        {state === 'error'
+          ? notDownloaded
+            ? speech
+              ? 'Chưa tải bản ghi âm này. Bạn có thể nghe giọng đọc của máy.'
+              : 'Chưa tải bản ghi âm này.'
+            : speech
+              ? 'Không phát được bản ghi âm. Bạn có thể nghe giọng đọc của máy.'
+              : 'Không phát được bản ghi âm.'
+          : ''}
       </p>
       {state === 'error' && speech}
     </div>

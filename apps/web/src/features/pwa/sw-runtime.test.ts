@@ -1,6 +1,5 @@
-import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
+import indexHtml from '../../../index.html?raw';
 import { OFFLINE_MEDIA_CACHE } from '../offline-media/constants';
 import {
   extractFontUrls,
@@ -14,8 +13,6 @@ import {
   SW_MESSAGE_WARM_FONTS,
 } from './sw-helpers';
 import { CONTENT_AUDIO_CACHE_NAME, CONTENT_AUDIO_MAX_AGE_SECONDS, CONTENT_AUDIO_MAX_ENTRIES } from '../audio/sw-audio';
-
-const root = resolve(__dirname, '../../..');
 
 describe('runtime cache limits (offline learning)', () => {
   it('are generous enough for downloaded lessons', () => {
@@ -98,7 +95,6 @@ describe('warm fonts message', () => {
   });
 
   it('PRETENDARD_CSS_URL is the stylesheet index.html loads (the page and the worker must agree)', () => {
-    const html = readFileSync(resolve(root, 'index.html'), 'utf8');
-    expect(html).toContain(`font.href = '${PRETENDARD_CSS_URL}'`);
+    expect(indexHtml).toContain(`font.href = '${PRETENDARD_CSS_URL}'`);
   });
 });
