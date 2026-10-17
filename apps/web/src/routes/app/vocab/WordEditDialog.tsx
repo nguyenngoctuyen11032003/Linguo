@@ -2,6 +2,7 @@ import { useState, type FormEvent, type RefObject } from 'react';
 import { PERSONAL_VOCAB_LIMITS as L, cleanPersonalText, type PersonalLanguage, type PersonalWord } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
+import { GermanKeysScope } from '@/components/exercise/GermanKeys';
 import { Input } from '@/components/ui/Input';
 import { personalVocabErrorMessage } from '@/features/personal-vocab/error-map';
 import type { PersonalWordFields } from '@/features/personal-vocab/service';
@@ -65,6 +66,7 @@ function WordForm({ word, language, onClose, onSave }: { word: PersonalWord; lan
           {error}
         </p>
       )}
+      <GermanKeysScope enabled={language === 'de'} graded={false} className="space-y-4">
       <FormField label="Từ">
         {(a11y) => <Input {...a11y} lang={language} value={term} maxLength={L.term * 2} autoComplete="off" onChange={(e) => setTerm(e.target.value)} />}
       </FormField>
@@ -74,6 +76,7 @@ function WordForm({ word, language, onClose, onSave }: { word: PersonalWord; lan
       <FormField label="Ví dụ (không bắt buộc)">
         {(a11y) => <Input {...a11y} lang={language} value={example} maxLength={L.example * 2} autoComplete="off" onChange={(e) => setExample(e.target.value)} />}
       </FormField>
+      </GermanKeysScope>
       <FormField label="Phát âm (không bắt buộc)">
         {(a11y) => <Input {...a11y} value={pronunciation} maxLength={L.pronunciation * 2} autoComplete="off" onChange={(e) => setPronunciation(e.target.value)} />}
       </FormField>

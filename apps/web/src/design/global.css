@@ -84,6 +84,12 @@
     line-break: strict;
     overflow-wrap: anywhere;
   }
+  /* German: Latin script, so Be Vietnam Pro already covers ä ö ü ß Ä Ö Ü (checked in the latin woff2 subsets). Long compounds
+     (Krankenversicherungskarte) hyphenate by the language rules, and break anywhere only as a last resort. */
+  :lang(de) {
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
   /* Taps register immediately (no double-tap-zoom wait) on every control. */
   a,
   button,

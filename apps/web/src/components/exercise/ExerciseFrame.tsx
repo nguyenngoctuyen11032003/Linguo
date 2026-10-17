@@ -21,8 +21,10 @@ import { exercisePromptText, responseText, type LessonAiContext } from './ai-con
 import { CompositionGateContext, createCompositionGate } from './compositionGate';
 import { PendingSyncBadge } from './Badges';
 import { ConfidenceChips } from './ConfidenceChips';
+import { toTtsLanguage } from './machine-speech';
 import { FeedbackPanel } from './FeedbackPanel';
 import { FillBlankExercise } from './FillBlankExercise';
+import { GermanKeysScope } from './GermanKeys';
 import { HintReveal } from './HintReveal';
 import { ListenExercise } from './ListenExercise';
 import { McqExercise } from './McqExercise';
@@ -40,6 +42,8 @@ export interface ExerciseFrameProps {
   onContinue: () => void;
   /** Lesson facts for the AI tutor buttons under the feedback; omit to hide them. */
   ai?: LessonAiContext;
+  /** Course language when `ai` is omitted (admin preview): Latin-script text (en, de) cannot be told apart from its script. */
+  language?: string;
   /** Shows "Báo lỗi nội dung" for this exercise under the feedback (learner screens only, not admin previews). */
   reportable?: boolean;
   /** The action bar spans the page gutter (lesson player); off inside a padded card such as the admin preview. */
@@ -117,7 +121,7 @@ export function ExerciseFrame(props: ExerciseFrameProps) {
   return <ExerciseFrameInner key={`${props.exercise.id}:${props.exercise.version}:${props.recheck}`} {...props} />;
 }
 
-function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue, ai, reportable = false, bleed = false }: ExerciseFrameProps) {
+function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onContinue, ai, language, reportable = false, bleed = false }: ExerciseFrameProps) {
   const titleId = useId();
   const parsed = useMemo(() => parsePrompt(exercise), [exercise]);
   const gate = useMemo(() => createCompositionGate(), []);
@@ -251,7 +255,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
       body = (
         <ListenExercise
           prompt={parsed.prompt}
-          lang={ai?.language}
+          lang={ai?.language ?? language}
           seed={exercise.id}
           selectedId={selectedId}
           onSelect={pick}
@@ -369,7 +373,10 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
             )}
           </div>
           <div ref={bodyRef} className="mt-4 min-w-0">
-            {body}
+            {/* Typed answers in German get the ä ö ü ß helper (a Vietnamese keyboard has none of them). */}
+            <GermanKeysScope enabled={exercise.answer_lang === 'de' && (parsed.type === 'translate' || parsed.type === 'fill_blank')} disabled={locked}>
+              {body}
+            </GermanKeysScope>
           </div>
           {hintLevels.length > 0 && (
             <HintReveal levels={hintLevels} shown={hintsShown} onReveal={() => setHintsShown((n) => n + 1)} disabled={locked} />
@@ -383,7 +390,7 @@ function ExerciseFrameInner({ exercise, state, recheck, runId, onSubmit, onConti
             ai={aiInput}
             report={reportable ? { kind: 'exercise', id: exercise.id } : undefined}
             answerLang={exercise.answer_lang}
-            course={ai?.language ?? null}
+            course={ai?.language ?? toTtsLanguage(language)}
           />
         </div>
         <ActionBar bleed={bleed} verdict={showResult ? result.verdict : null}>

@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { Check, Mic, Square, Trash2 } from 'lucide-react';
+import { GermanKeysScope } from '@/components/exercise/GermanKeys';
 import { Button } from '@/components/ui/Button';
 import { alignToTarget } from '@/features/speaking/align';
 import { compareToTarget, type OverlapLevel } from '@/features/speaking/overlap';
@@ -217,6 +218,7 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
           <p id={transcriptHelpId} className="text-sm text-muted">
             Máy tự chép những gì nghe được. Bạn hãy sửa lại cho đúng với điều mình đã nói.
           </p>
+          <GermanKeysScope enabled={lang === 'de'} graded={false} compact>
           <textarea
             id={transcriptId}
             aria-describedby={transcriptHelpId}
@@ -226,6 +228,7 @@ export function PracticePanel({ lang, target, transcribe, tts, onSaveReflection 
             onChange={(e) => stt.setTranscript(e.target.value)}
             className={cn('block w-full rounded-2xl border border-input-border bg-surface-solid p-3 text-base text-text', FOCUS_RING)}
           />
+          </GermanKeysScope>
           {hint && (
             <div className="rounded-2xl bg-primary/8 p-3.5 text-sm ring-1 ring-primary/20 ring-inset" data-testid="overlap-hint">
               <p>{OVERLAP_TEXT[hint.level]}</p>

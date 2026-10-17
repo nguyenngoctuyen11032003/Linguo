@@ -3,6 +3,7 @@ import { Eye, EyeOff, Flag, Loader2, Volume2, VolumeX } from 'lucide-react';
 import { EXAM_ESSAY_MAX_CHARS, EXAM_SHORT_TEXT_MAX_CHARS, type ExamServedQuestion } from '@linguo/shared';
 import { AnswerInput } from '@/components/exercise/AnswerInput';
 import { ChoiceGroup } from '@/components/exercise/ChoiceGroup';
+import { GermanKeysScope } from '@/components/exercise/GermanKeys';
 import { cn } from '@/lib/cn';
 import { SECTION_LABELS, charCount } from './labels';
 
@@ -132,16 +133,19 @@ function ShortTextField({ question, language, onAnswer }: { question: ExamServed
       <label htmlFor={inputId} className="mb-1.5 block text-sm font-semibold">
         Câu trả lời của bạn
       </label>
-      <AnswerInput
-        id={inputId}
-        lang={language}
-        value={value}
-        maxLength={EXAM_SHORT_TEXT_MAX_CHARS}
-        onValueChange={(next) => {
-          setValue(next);
-          onAnswer(toAnswer(next));
-        }}
-      />
+      {/* Exam short answers are compared as typed (no ae/ue/ss folding), so the hint only offers the buttons. */}
+      <GermanKeysScope enabled={language === 'de'} graded={false}>
+        <AnswerInput
+          id={inputId}
+          lang={language}
+          value={value}
+          maxLength={EXAM_SHORT_TEXT_MAX_CHARS}
+          onValueChange={(next) => {
+            setValue(next);
+            onAnswer(toAnswer(next));
+          }}
+        />
+      </GermanKeysScope>
     </div>
   );
 }
@@ -178,6 +182,7 @@ function EssayField({ question, language, onAnswer }: { question: ExamServedQues
           {guide} Đây chỉ là gợi ý, không chặn khi nộp.
         </p>
       )}
+      <GermanKeysScope enabled={language === 'de'} graded={false}>
       <textarea
         id={areaId}
         lang={language}
@@ -194,6 +199,7 @@ function EssayField({ question, language, onAnswer }: { question: ExamServedQues
         }}
         className="block w-full min-w-0 resize-y rounded-2xl border border-input-border bg-surface-solid px-4 py-3 text-[17px] leading-relaxed text-text focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/45"
       />
+      </GermanKeysScope>
       <p className="mt-1.5 flex flex-wrap items-center justify-between gap-x-3 text-sm">
         <span className="font-semibold tabular-nums">{count} ký tự</span>
         {hint && <span className={cn(band === 'in' ? 'text-success-text' : 'text-muted')}>{hint}</span>}

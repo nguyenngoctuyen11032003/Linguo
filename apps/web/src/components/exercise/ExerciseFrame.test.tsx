@@ -375,6 +375,43 @@ describe('ExerciseFrame — word_bank', () => {
   });
 });
 
+describe('ExerciseFrame — German answers', () => {
+  it('translate into German: heading, lang and the ä ö ü ß keys feed the answer', async () => {
+    const { onSubmit } = setup(makeExercise('translate', { answer_lang: 'de' }));
+    expect(screen.getByRole('heading', { name: 'Dịch sang tiếng Đức' })).toBeInTheDocument();
+    const input = screen.getByRole('textbox', { name: 'Bản dịch của bạn' });
+    expect(input).toHaveAttribute('lang', 'de');
+    expect(screen.getByRole('group', { name: 'Chèn chữ cái tiếng Đức' })).toHaveAccessibleDescription(/ae, oe, ue, ss/);
+    await userEvent.type(input, 'Gr');
+    await userEvent.click(screen.getByRole('button', { name: 'Chèn ü' }));
+    await userEvent.click(screen.getByRole('button', { name: 'Chèn ß (eszett)' }));
+    await userEvent.keyboard('{Enter}');
+    expect(onSubmit).toHaveBeenCalledWith({ text: 'Grüß' }, expect.objectContaining({ confidence: null }));
+  });
+
+  it('fill_blank in German offers the keys once, under the sentence', async () => {
+    setup(makeExercise('fill_blank', { answer_lang: 'de' }));
+    expect(screen.getAllByRole('group', { name: 'Chèn chữ cái tiếng Đức' })).toHaveLength(1);
+  });
+
+  it('no keys for English, Korean, or choice exercises', () => {
+    setup(makeExercise('translate'));
+    expect(screen.queryByRole('group', { name: 'Chèn chữ cái tiếng Đức' })).not.toBeInTheDocument();
+  });
+
+  it('no keys on a German mcq', () => {
+    setup(makeExercise('mcq', { answer_lang: 'de' }));
+    expect(screen.queryByRole('group', { name: 'Chèn chữ cái tiếng Đức' })).not.toBeInTheDocument();
+  });
+
+  it('feedback names the German article and cases, with lang="de" on the German words', () => {
+    setup(makeExercise('translate', { answer_lang: 'de' }), graded(makeResult({ verdict: 'incorrect', is_correct: false, error_tags: ['article', 'case_dat_akk'] })));
+    expect(screen.getByText('der/die/das')).toHaveAttribute('lang', 'de');
+    expect(screen.getByText('Akkusativ')).toHaveAttribute('lang', 'de');
+    expect(screen.queryByText('a/an/the', { exact: false })).not.toBeInTheDocument();
+  });
+});
+
 describe('ExerciseFrame — translate', () => {
   it('renders the source with its language and submits on Enter', async () => {
     const { onSubmit } = setup(makeExercise('translate'));

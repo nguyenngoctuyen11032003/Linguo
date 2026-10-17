@@ -9,7 +9,7 @@ import { reveal } from '@/design/motion';
 import { cn } from '@/lib/cn';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 import { feedbackAiRequests, type AiSheetState, type ExerciseAiInput } from './ai-context';
-import { ERROR_TAG_MESSAGES } from './exercise-utils';
+import { errorTagMessage } from './exercise-utils';
 import type { TtsLanguage } from '@/features/exam/tts';
 import { ForeignText } from './ForeignText';
 import { JAPANESE_SCRIPT_RE, toTtsLanguage } from './machine-speech';
@@ -126,17 +126,21 @@ function FeedbackAiActions({ result, ai }: { result: SubmitResult; ai: ExerciseA
   );
 }
 
-/** Marks the Korean (Hangul), Japanese (kana/kanji) and English ("a/an/the") fragments of a Vietnamese message with their own `lang`. */
+const GERMAN_FRAGMENT = /^(?:der\/die\/das|haben|sein|Akkusativ|Dativ|ä, ö, ü|ae, oe, ue)$/;
+
+/** Marks the Korean (Hangul), Japanese (kana/kanji), English ("a/an/the") and German (der/die/das, Akkusativ…) fragments of a Vietnamese message with their own `lang`. */
 function withLanguageSpans(message: string): ReactNode {
-  return message.split(/([\uAC00-\uD7AF]+|[\u3040-\u30FF\u31F0-\u31FF\u4E00-\u9FFF\uFF66-\uFF9F]+|\ba\/an\/the\b)/).map((part, i) =>
-    i % 2 === 0 ? (
-      part
-    ) : (
-      <span key={i} lang={/[\uAC00-\uD7AF]/.test(part) ? 'ko' : JAPANESE_SCRIPT_RE.test(part) ? 'ja' : 'en'}>
-        {part}
-      </span>
-    ),
-  );
+  return message
+    .split(/([\uAC00-\uD7AF]+|[\u3040-\u30FF\u31F0-\u31FF\u4E00-\u9FFF\uFF66-\uFF9F]+|\ba\/an\/the\b|der\/die\/das|haben|sein|Akkusativ|Dativ|ä, ö, ü|ae, oe, ue)/)
+    .map((part, i) =>
+      i % 2 === 0 ? (
+        part
+      ) : (
+        <span key={i} lang={/[\uAC00-\uD7AF]/.test(part) ? 'ko' : JAPANESE_SCRIPT_RE.test(part) ? 'ja' : GERMAN_FRAGMENT.test(part) ? 'de' : 'en'}>
+          {part}
+        </span>
+      ),
+    );
 }
 
 function FeedbackCard({
@@ -154,7 +158,7 @@ function FeedbackCard({
 }) {
   const ui = VERDICT_UI[result.verdict];
   const Icon = ui.icon;
-  const tagMessages = result.error_tags.map((tag) => ERROR_TAG_MESSAGES[tag]).filter((m): m is string => Boolean(m));
+  const tagMessages = result.error_tags.map((tag) => errorTagMessage(tag, answerLang === 'de' || course === 'de')).filter((m): m is string => Boolean(m));
   const canRetry = result.verdict === 'incorrect' && !result.final;
 
   return (

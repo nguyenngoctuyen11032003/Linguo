@@ -15,6 +15,25 @@ export const ERROR_TAG_MESSAGES: Record<string, string> = {
   missing_diacritics: 'Đúng nhưng thiếu dấu',
 };
 
+/** German overrides: "article" means der/die/das there, and the grader's German-only tags need their own wording. */
+const GERMAN_ERROR_TAG_MESSAGES: Record<string, string> = {
+  article: 'Kiểm tra lại mạo từ der/die/das',
+  gender: 'Kiểm tra lại giống của danh từ (der/die/das)',
+  case_dat_akk: 'Kiểm tra lại cách: Akkusativ hay Dativ?',
+  verb_position: 'Kiểm tra lại vị trí của động từ',
+  adj_ending: 'Kiểm tra lại đuôi tính từ',
+  plural_form: 'Kiểm tra lại dạng số nhiều',
+  capitalization: 'Danh từ tiếng Đức luôn viết hoa',
+  aux_verb: 'Kiểm tra lại trợ động từ: haben hay sein?',
+  word_order: 'Kiểm tra lại trật tự từ trong câu',
+  missing_diacritics: 'Đúng nhưng thiếu dấu chấm của ä, ö, ü (hoặc viết ae, oe, ue)',
+};
+
+/** The message for a grader error tag; `german` picks the German wording where it differs. */
+export function errorTagMessage(tag: string, german = false): string | undefined {
+  return (german ? GERMAN_ERROR_TAG_MESSAGES[tag] : undefined) ?? ERROR_TAG_MESSAGES[tag];
+}
+
 export interface ChoiceOption {
   id: string;
   text: string;

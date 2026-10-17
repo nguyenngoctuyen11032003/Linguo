@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { audioUrl, isShortCjk, parseTemplate } from './exercise-utils';
+import { audioUrl, errorTagMessage, isShortCjk, parseTemplate } from './exercise-utils';
 
 describe('parseTemplate', () => {
   it('splits text and blanks in order', () => {
@@ -25,5 +25,16 @@ describe('isShortCjk', () => {
   });
   it('leaves Latin, mixed and longer text at the normal size', () => {
     for (const t of ['', 'a', 'Tạm biệt', '학교에 가요', 'ㅓ a']) expect(isShortCjk(t)).toBe(false);
+  });
+});
+
+describe('errorTagMessage', () => {
+  it('keeps the English wording and switches to German wording for German answers', () => {
+    expect(errorTagMessage('article')).toBe('Kiểm tra lại mạo từ a/an/the');
+    expect(errorTagMessage('article', true)).toBe('Kiểm tra lại mạo từ der/die/das');
+    expect(errorTagMessage('typo', true)).toBe('Đúng ý nhưng sai chính tả');
+    expect(errorTagMessage('case_dat_akk', true)).toMatch(/Akkusativ hay Dativ/);
+    expect(errorTagMessage('missing_diacritics', true)).toMatch(/ä, ö, ü/);
+    expect(errorTagMessage('case_dat_akk')).toBeUndefined();
   });
 });

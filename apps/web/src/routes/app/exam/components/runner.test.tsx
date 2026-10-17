@@ -121,6 +121,27 @@ describe('QuestionView', () => {
     expect(onAnswer).toHaveBeenLastCalledWith('ok');
   });
 
+  it('German answers get the ä ö ü ß keys (short text and essay); other languages do not', async () => {
+    const user = userEvent.setup();
+    const onAnswer = vi.fn();
+    const { unmount } = renderExam(<QuestionView question={SHORT_QUESTION} language="de" listenLimit={null} onAnswer={onAnswer} onToggleFlag={noop} />);
+    const group = screen.getByRole('group', { name: 'Chèn chữ cái tiếng Đức' });
+    // Exam short answers are compared as typed: the hint must not promise ae/oe/ue folding there.
+    expect(group).not.toHaveAccessibleDescription(/ae, oe/);
+    await user.click(within(group).getByRole('button', { name: 'Chèn ü' }));
+    expect(onAnswer).toHaveBeenLastCalledWith('시간이 있어요' + 'ü');
+    unmount();
+
+    const essay = renderExam(<QuestionView question={ESSAY_QUESTION} language="de" listenLimit={null} onAnswer={onAnswer} onToggleFlag={noop} />);
+    await user.click(screen.getByRole('textbox', { name: /Bài viết/ }));
+    await user.click(screen.getByRole('button', { name: 'Chèn ß (eszett)' }));
+    expect(onAnswer).toHaveBeenLastCalledWith(expect.stringMatching(/ß$/));
+    essay.unmount();
+
+    renderExam(<QuestionView question={SHORT_QUESTION} language="ko" listenLimit={null} onAnswer={noop} onToggleFlag={noop} />);
+    expect(screen.queryByRole('group', { name: 'Chèn chữ cái tiếng Đức' })).not.toBeInTheDocument();
+  });
+
   it('essay: live character count against the guidance, never blocking', async () => {
     const user = userEvent.setup();
     const onAnswer = vi.fn();

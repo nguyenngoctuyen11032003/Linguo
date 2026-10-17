@@ -14,6 +14,7 @@ import {
   useQuotaGate,
   type QuotaGate,
 } from '@/components/ai';
+import { GermanKeysScope } from '@/components/exercise/GermanKeys';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
@@ -545,6 +546,7 @@ function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
             <label htmlFor={inputId} className="eyebrow block px-1">
               Câu bạn muốn phân tích
             </label>
+            <GermanKeysScope enabled={language === 'de'} graded={false}>
             <AiTextarea
               id={inputId}
               lang={language}
@@ -556,6 +558,7 @@ function SentenceTab({ language, level, notice, quota, onReport }: PanelProps) {
               onValueChange={setSentence}
               onSubmitShortcut={() => submit()}
             />
+            </GermanKeysScope>
             {error && (
               <p id={errorId} role="alert" className="px-1 text-sm text-error-text">
                 {error}

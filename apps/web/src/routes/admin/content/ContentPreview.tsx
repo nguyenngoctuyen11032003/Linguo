@@ -55,6 +55,7 @@ function ExercisePreview({ detail, exercise }: { detail: AdminContentDetail; exe
           exercise={exercise}
           state={state}
           recheck={false}
+          language={rowLanguage(detail) ?? undefined}
           onSubmit={onSubmit}
           onContinue={() => {
             setResult(null);

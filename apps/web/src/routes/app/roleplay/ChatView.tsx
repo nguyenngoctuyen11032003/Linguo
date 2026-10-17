@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState, type FormEvent } from 'react';
 import { Check, Flag, Lightbulb, Mic, Pencil, SendHorizontal, Sparkles, Square, Volume2 } from 'lucide-react';
 import type { RoleplayScenario } from '@linguo/shared';
 import { AiFallback, AiLoading, AiTextarea, type QuotaGate } from '@/components/ai';
+import { GermanKeysScope } from '@/components/exercise/GermanKeys';
 import { Button } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 import type { AiQuota } from '@/features/ai-tutor/quota';
@@ -357,6 +358,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
                   <label htmlFor={`${voiceId}-msg`} className="sr-only">
                     Tin nhắn của bạn (bằng {LANGUAGE_NAME[lang]})
                   </label>
+                  <GermanKeysScope enabled={lang === 'de'} graded={false} compact>
                   <AiTextarea
                     id={`${voiceId}-msg`}
                     lang={lang}
@@ -372,6 +374,7 @@ export function ChatView({ api, session, scenario, quota, gate, tts, onFinish, o
                     }}
                     onSubmitShortcut={() => submit()}
                   />
+                  </GermanKeysScope>
                 </div>
                 <Button
                   type="submit"
