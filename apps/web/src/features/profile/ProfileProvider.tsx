@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { getSupabase } from '@/lib/supabase';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { fetchProfile, type Profile } from './service';
@@ -25,6 +25,13 @@ interface OwnedState extends State {
 }
 
 const LOADING: State = { status: 'loading', profile: null, error: null };
+
+/** An installed PWA lives for days in the background: re-read the profile when it comes back after at least this long. */
+export const PROFILE_REFRESH_AFTER_MS = 60_000;
+
+function sameProfile(a: Profile | null, b: Profile): boolean {
+  return !!a && a.id === b.id && a.displayName === b.displayName && a.timezone === b.timezone && (a.avatarPath ?? null) === (b.avatarPath ?? null);
+}
 
 export function ProfileProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
@@ -53,9 +60,49 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     };
   }, [userId, attempt]);
 
+  /** Bumped by every local write and every load: a slower, older background read must never overwrite a newer value. */
+  const writes = useRef(0);
+  const lastRead = useRef(Date.now());
+  useEffect(() => {
+    writes.current += 1;
+    lastRead.current = Date.now();
+  }, [userId, attempt]);
+
+  // Coming back to the app (phone: reopening the home-screen app, switching apps, another device changed the avatar):
+  // quietly re-read the profile so a stale in-memory copy does not stay on screen.
+  useEffect(() => {
+    const client = getSupabase();
+    if (!client || !userId) return;
+    let active = true;
+    const refresh = () => {
+      if (document.visibilityState === 'hidden' || Date.now() - lastRead.current < PROFILE_REFRESH_AFTER_MS) return;
+      lastRead.current = Date.now();
+      const started = writes.current;
+      fetchProfile(client, userId)
+        .then((profile) => {
+          if (!active || writes.current !== started) return;
+          // Unchanged data keeps the same object: Settings resets its form on a new profile and must not lose typed edits.
+          setOwned((s) => (s.ownerId === userId && s.status === 'ready' && !sameProfile(s.profile, profile) ? { status: 'ready', profile, error: null, ownerId: userId } : s));
+        })
+        .catch(() => undefined);
+    };
+    document.addEventListener('visibilitychange', refresh);
+    window.addEventListener('focus', refresh);
+    window.addEventListener('pageshow', refresh);
+    return () => {
+      active = false;
+      document.removeEventListener('visibilitychange', refresh);
+      window.removeEventListener('focus', refresh);
+      window.removeEventListener('pageshow', refresh);
+    };
+  }, [userId]);
+
   const reload = useCallback(() => setAttempt((n) => n + 1), []);
   const setProfile = useCallback(
-    (profile: Profile) => setOwned({ status: 'ready', profile, error: null, ownerId: userId }),
+    (profile: Profile) => {
+      writes.current += 1;
+      setOwned({ status: 'ready', profile, error: null, ownerId: userId });
+    },
     [userId],
   );
   const { status, profile, error } = state;

@@ -131,7 +131,7 @@ Triệu chứng: gia sư AI báo "Tạm thời không khả dụng" với mọi 
 
 ## 7. Bảo mật web
 
-- **CSP** đặt bằng `<meta http-equiv="Content-Security-Policy">`, được plugin `apps/web/build/csp.ts` chèn lúc build (GitHub Pages không cho đặt header). Chỉ cho phép `self`, origin Supabase lấy từ `VITE_SUPABASE_URL`, Google Fonts, jsDelivr (font Pretendard) và origin của `VITE_HERO_VIDEO_URL` nếu có. Script inline duy nhất (chọn theme) được cho phép bằng hash sha256 tính lúc build.
+- **CSP** đặt bằng `<meta http-equiv="Content-Security-Policy">`, được plugin `apps/web/build/csp.ts` chèn lúc build (GitHub Pages không cho đặt header). Chỉ cho phép `self`, origin Supabase lấy từ `VITE_SUPABASE_URL` (cả `img-src`, cho ảnh đại diện, kèm `blob:` cho ảnh xem trước), Google Fonts, jsDelivr (font Pretendard) và origin của `VITE_HERO_VIDEO_URL` nếu có. Script inline duy nhất (chọn theme) được cho phép bằng hash sha256 tính lúc build.
 - **Giới hạn của CSP dạng meta:** trình duyệt bỏ qua `frame-ancestors`, `report-uri`/`report-to` và `sandbox` trong meta. Site vẫn có thể bị nhúng iframe (clickjacking), và vi phạm CSP không được báo về đâu. Muốn chặn thì phải đưa site ra sau CDN/proxy có thể đặt header (ví dụ Cloudflare) với `Content-Security-Policy: frame-ancestors 'none'` và `X-Frame-Options: DENY`.
 - Dev server (`pnpm dev`) không có CSP để HMR chạy được. E2E (`tests/e2e/csp.spec.ts`) chạy trên bản build và fail khi có vi phạm.
 - Thêm nguồn mới (CDN, ảnh ngoài, API khác) thì phải sửa `build/csp.ts` và test của nó. Nếu không, trình duyệt sẽ chặn nguồn đó.

@@ -37,6 +37,12 @@ describe('buildCsp', () => {
     expect(directive(csp, 'media-src')?.split(' ')).toEqual(expect.arrayContaining([origin, 'blob:']));
   });
 
+  it('allows profile avatars: Supabase Storage public objects and blob: previews in img-src', () => {
+    const csp = buildCsp({ supabaseUrl: 'https://abc.supabase.co' });
+    expect(directive(csp, 'img-src')).toBe("img-src 'self' blob: https://abc.supabase.co");
+    expect(directive(buildCsp({ supabaseUrl: 'not a url' }), 'img-src')).toBe("img-src 'self' blob:");
+  });
+
   it('originOf only accepts http(s) URLs', () => {
     expect(originOf('https://abc.supabase.co/rest/v1')).toBe('https://abc.supabase.co');
     expect(originOf('http://127.0.0.1:54321')).toBe('http://127.0.0.1:54321');

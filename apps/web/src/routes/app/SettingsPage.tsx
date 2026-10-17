@@ -304,7 +304,7 @@ export function SettingsPage() {
                 <input
                   ref={avatarInput}
                   type="file"
-                  accept="image/jpeg,image/png,image/webp"
+                  accept="image/*"
                   className="sr-only"
                   tabIndex={-1}
                   aria-label="Chọn ảnh đại diện"
@@ -320,7 +320,7 @@ export function SettingsPage() {
                     Xoá ảnh
                   </Button>
                 )}
-                <p className="w-full text-sm text-muted">JPG, PNG hoặc WebP, tối đa 10 MB. Ảnh được cắt vuông tự động.</p>
+                <p className="w-full text-sm text-muted">JPG, PNG, WebP hoặc ảnh chụp từ điện thoại (tối đa 25 MB). Ảnh được cắt vuông tự động.</p>
               </div>
               <FormField label="Tên hiển thị" error={errors.displayName}>
                 {({ invalid, ...a11y }) => (

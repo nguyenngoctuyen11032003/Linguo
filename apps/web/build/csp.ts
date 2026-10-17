@@ -36,7 +36,10 @@ export function buildCsp(o: CspOptions = {}): string {
     ['script-src', uniq(["'self'", ...(o.scriptHashes ?? []).map((h) => `'${h}'`)])],
     ['style-src', ["'self'", JSDELIVR]],
     ['font-src', ["'self'", JSDELIVR]],
-    ['img-src', ["'self'"]],
+    // Profile avatars are public objects of the Supabase `avatars` bucket (https://<ref>.supabase.co/storage/v1/object/public/...);
+    // blob: shows the freshly picked photo at once while it uploads. Without the Supabase origin the production build
+    // blocks every avatar (the dev server has no CSP, so it only looked broken on the deployed/installed app).
+    ['img-src', uniq(["'self'", 'blob:', supabase])],
     // blob: lets the speaking practice replay a recording held in memory (never uploaded; see features/speaking),
     // and plays recorded listening clips that features/audio downloads from the Supabase `content-audio` bucket.
     ['media-src', uniq(["'self'", 'blob:', supabase, video])],
