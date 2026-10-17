@@ -52,7 +52,7 @@ items:
           translation:
             vi: Lisa đâu rồi? – Chắc là cô ấy vẫn còn ở văn phòng.
       confusion:
-        vi: "Nói cùng ý bằng Präsens + trạng từ cũng được: Er ist wahrscheinlich krank. Đừng bỏ động từ nguyên thể: Er wird wohl krank sein (không phải Er wird wohl krank – câu này lại có nghĩa \"có lẽ anh ấy sẽ bị ốm\")."
+        vi: "Nói cùng ý bằng Präsens + trạng từ cũng được: Er ist wahrscheinlich krank. Đừng bỏ động từ nguyên thể: Er wird wohl krank sein (không phải Er wird wohl krank – ở câu này werden nghĩa là \"trở nên\": có lẽ anh ấy sắp bị ốm)."
 
   - key: de:item:b1u06-klima
     type: vocab
@@ -161,7 +161,7 @@ items:
           translation:
             vi: Cái cây cần đất mới.
       confusion:
-        vi: "Trái Đất luôn có mạo từ: die Erde, auf der Erde. Mặt đất (nền dưới chân) thường là der Boden: Das Buch liegt auf dem Boden."
+        vi: "Nghĩa Trái Đất thường đi với mạo từ: die Erde, auf der Erde. Mặt đất (nền dưới chân) thường là der Boden: Das Buch liegt auf dem Boden."
 
   - key: de:item:b1u06-prognose
     type: vocab
@@ -184,7 +184,7 @@ items:
       confusion:
         vi: "die Prognose dùng cho mọi loại dự đoán (kinh tế, khí hậu, bệnh). Dự báo thời tiết hằng ngày thường gọi là der Wetterbericht hoặc die Wettervorhersage."
       pronunciation_note:
-        vi: "g và n tách hai âm tiết: Pro-gno-se, trọng âm ở -gno-, o dài."
+        vi: "g và n đều đọc rõ, không nhập thành \"ng\": /proˈɡnoːzə/, trọng âm ở -gno-, o dài."
 
   - key: de:item:b1u06-duerre
     type: vocab
@@ -431,7 +431,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Sáu giới từ này đi với Genitiv: wegen des Verkehrs (vì), trotz des Regens (mặc dù có), während der Fahrt (trong lúc), statt eines Autos (thay vì), innerhalb/außerhalb der Stadt (bên trong/bên ngoài). Danh từ giống đực và trung tính ở Genitiv thêm -s hoặc -es (des Verkehrs, des Regens). Trong văn nói người Đức hay dùng wegen/trotz + Dativ (wegen dem Verkehr), nhưng khi viết và đi thi bạn nên dùng Genitiv."
+        vi: "Sáu giới từ này đi với Genitiv: wegen des Verkehrs (vì), trotz des Regens (mặc dù có), während der Fahrt (trong lúc), statt eines Autos (thay vì), innerhalb/außerhalb der Stadt (bên trong/bên ngoài). Phần lớn danh từ giống đực và trung tính ở Genitiv thêm -s hoặc -es (des Verkehrs, des Regens; ngoại lệ như des Kollegen). Trong văn nói người Đức hay dùng wegen/trotz + Dativ (wegen dem Verkehr), nhưng khi viết và đi thi bạn nên dùng Genitiv."
       examples:
         - target: Wegen des Verkehrs ist die Luft in der Innenstadt schlecht.
           translation:
@@ -462,7 +462,7 @@ items:
             vi: Vì hôm nay không khí rất xấu nên bọn trẻ ở trong nhà.
         - target: Ich nehme heute den Bus. Mein Auto ist nämlich kaputt.
           translation:
-            vi: Hôm nay tôi đi xe buýt. Vì xe ô tô của tôi bị hỏng.
+            vi: Hôm nay tôi đi xe buýt, vì xe ô tô của tôi bị hỏng.
       confusion:
         vi: "Bốn cách nói lý do – hệ quả: denn (vị trí 0, sau đó V2), weil/da (câu phụ, động từ cuối), nämlich (giữa câu thứ hai), deshalb (hậu quả, vị trí 1, động từ ngay sau)."
 
@@ -1126,7 +1126,7 @@ items:
           translation:
             vi: Điện xanh đến từ mặt trời, gió hoặc nước.
       confusion:
-        vi: "Öko- là dạng ngắn của ökologisch (sinh thái), hay gặp trong khẩu ngữ: der Ökostrom, das Ökoprodukt."
+        vi: "Öko- là dạng ngắn của ökologisch (sinh thái), hay gặp trong từ ghép: der Ökostrom, das Ökoprodukt."
 
   - key: de:item:b1u06-windrad
     type: vocab
@@ -1256,7 +1256,7 @@ items:
           translation:
             vi: Chúng tôi có ý kiến khác nhau.
       confusion:
-        vi: "meiner Meinung nach là Dativ (meiner), nach đứng sau danh từ. Ich bin der Meinung, dass … (Nominativ). Ich bin anderer Meinung = tôi có ý kiến khác."
+        vi: "meiner Meinung nach là Dativ (meiner), nach đứng sau danh từ. Ich bin der Meinung, dass … và Ich bin anderer Meinung (tôi có ý kiến khác) là cụm cố định với Genitiv."
 
   - key: de:item:b1u06-ansicht
     type: vocab
@@ -1574,7 +1574,7 @@ items:
           translation:
             vi: Tôi phản đối việc xe buýt tăng giá.
       confusion:
-        vi: "Trọng âm rơi vào phần sau: da-FÜR, da-GE-gen. Có thể nối câu dass: Ich bin dafür, dass …"
+        vi: "Trong cụm này trọng âm thường rơi vào phần sau: da-FÜR, da-GE-gen. Có thể nối câu dass: Ich bin dafür, dass …"
 
   - key: de:item:b1u06-diskutieren
     type: phrase

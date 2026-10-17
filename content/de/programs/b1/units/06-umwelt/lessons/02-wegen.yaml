@@ -50,7 +50,7 @@ body:
       vi: "Sau bài này, bạn viết được câu nêu nguyên nhân – hậu quả, ví dụ: \"Wegen des Verkehrs ist die Luft in der Innenstadt schlecht. Da Abgase schädlich sind, fahre ich mit dem Rad.\""
   - type: explain
     text:
-      vi: "wegen (vì), trotz (mặc dù có), während (trong lúc), statt (thay vì), innerhalb (bên trong), außerhalb (bên ngoài) đi với Genitiv: des/eines + danh từ thêm -s/-es cho giống đực và trung (wegen des Verkehrs, trotz des Regens), der/einer cho giống cái và số nhiều (während der Fahrt). Tiếng Việt chỉ đặt \"vì\" trước danh từ, còn tiếng Đức phải đổi cả mạo từ lẫn danh từ."
+      vi: "wegen (vì), trotz (mặc dù có), während (trong lúc), statt (thay vì), innerhalb (bên trong), außerhalb (bên ngoài) đi với Genitiv: des/eines + danh từ thêm -s/-es cho phần lớn danh từ giống đực và trung (wegen des Verkehrs, trotz des Regens; ngoại lệ như des Kollegen), der/einer cho giống cái và số nhiều (während der Fahrt). Tiếng Việt chỉ đặt \"vì\" trước danh từ, còn tiếng Đức phải đổi cả mạo từ lẫn danh từ."
   - type: explain
     text:
       vi: "Khi nói chuyện, người Đức rất hay dùng wegen + Dativ (wegen dem Verkehr), và bạn sẽ nghe thấy điều này hằng ngày. Trong bài viết, e-mail trang trọng và bài thi, hãy dùng Genitiv: wegen des Verkehrs."
@@ -62,7 +62,7 @@ body:
       vi: "nämlich (vì, bởi vì) là trạng từ trong câu thứ hai, giải thích câu trước; nó đứng sau động từ chia, không đứng ở vị trí 1: Ich nehme den Bus. Mein Auto ist nämlich kaputt. So sánh: denn + V2 (… , denn mein Auto ist kaputt), deshalb nói hậu quả và đứng ở vị trí 1 (Mein Auto ist kaputt, deshalb nehme ich den Bus)."
   - type: deep_explain
     text:
-      vi: "trotz + danh từ và obwohl + câu phụ cùng nghĩa: Trotz des Regens fahre ich Rad = Obwohl es regnet, fahre ich Rad; tương tự wegen + danh từ = weil + câu phụ. Khi chỉ khoảng thời gian không có mạo từ, innerhalb và außerhalb thường đi với von + Dativ: innerhalb von zwei Wochen. statt cũng viết là anstatt (trang trọng hơn một chút). Danh từ giống đực/trung một âm tiết thường thêm -es ở Genitiv (des Tages), nhiều âm tiết thêm -s (des Verkehrs); cả hai cách đều có ở vài từ (des Regens). Để nói nguyên nhân – hậu quả bằng danh từ, hãy dùng: die Ursache für + Akk (nguyên nhân của), die Folge (hậu quả), etwas verursachen (gây ra), etwas belasten (gây ô nhiễm, gây gánh nặng)."
+      vi: "trotz + danh từ và obwohl + câu phụ cùng nghĩa: Trotz des Regens fahre ich Rad = Obwohl es regnet, fahre ich Rad; tương tự wegen + danh từ = weil + câu phụ. Khi danh từ không có mạo từ (nhất là khoảng thời gian), innerhalb thường đi với von + Dativ: innerhalb von zwei Wochen. statt cũng viết là anstatt (trang trọng hơn một chút). Danh từ giống đực/trung nhiều âm tiết thường chỉ thêm -s (des Verkehrs, des Regens); từ một âm tiết thường có cả hai dạng (des Tages/des Tags), còn từ tận cùng bằng -s, -ß, -z cần -es (des Hauses). Để nói nguyên nhân – hậu quả bằng danh từ, hãy dùng: die Ursache für + Akk (nguyên nhân của), die Folge (hậu quả), etwas verursachen (gây ra), etwas belasten (gây ô nhiễm, gây gánh nặng)."
   - type: example
     target: Wegen des starken Verkehrs ist die Luft in der Innenstadt oft schlecht.
     target_lang: de
@@ -88,7 +88,7 @@ body:
     target: Ich fahre heute mit dem Bus. Mein Auto ist nämlich in der Werkstatt.
     target_lang: de
     translation:
-      vi: Hôm nay tôi đi xe buýt. Vì xe ô tô của tôi đang ở xưởng sửa.
+      vi: Hôm nay tôi đi xe buýt, vì xe ô tô của tôi đang nằm ở xưởng sửa.
     note:
       vi: "nämlich đứng sau động từ ist, giải thích câu trước. Không nói Nämlich ist mein Auto …"
   - type: example
@@ -239,17 +239,17 @@ exercises:
         b3: [eines]
     known_wrong:
       - answer: dem
-        feedback_vi: Trong văn viết, trotz đi với Genitiv – trotz des Regens (der Regen, giống đực).
-        error_tag: case_dat_akk
+        feedback_vi: Danh từ đã có đuôi Genitiv -s (Regens), nên mạo từ cũng phải là Genitiv – trotz des Regens.
+        error_tag: case_genitive
       - answer: die
         feedback_vi: während + Genitiv; die Fahrt là giống cái nên Genitiv là der – während der Fahrt.
-        error_tag: case_dat_akk
+        error_tag: case_genitive
       - answer: einem
-        feedback_vi: statt + Genitiv; das Auto → statt eines Autos.
-        error_tag: case_dat_akk
+        feedback_vi: Danh từ đã có đuôi Genitiv -s (Autos), nên cần mạo từ Genitiv – statt eines Autos.
+        error_tag: case_genitive
       - answer: ein
         feedback_vi: statt + Genitiv; ein đổi thành eines (danh từ cũng thêm -s – Autos).
-        error_tag: case_dat_akk
+        error_tag: case_genitive
     explanation:
       vi: "trotz, während, statt + Genitiv. der Regen → des Regens; die Fahrt → der Fahrt; das Auto → eines Autos. Dấu hiệu: danh từ giống đực/trung có thêm -s."
     display_answer: "Trotz des Regens fahre ich mit dem Rad. Während der Fahrt höre ich Musik. Statt eines Autos habe ich eine Monatskarte für den Bus."
@@ -261,7 +261,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u06-g-da-naemlich
     prompt:
-      template: "Ich nehme heute den Bus. Mein Auto ist {{b1}} in der Werkstatt. {{b2}} heute so viel Verkehr ist, komme ich vielleicht etwas später."
+      template: "Ich nehme heute den Bus. Mein Auto ist {{b1}} in der Werkstatt. {{b2}} heute so viel Verkehr ist, komme ich vielleicht etwas später. (da · nämlich)"
       blanks:
         - { id: b1, width_hint: 8 }
         - { id: b2, width_hint: 5 }
@@ -272,12 +272,12 @@ exercises:
     known_wrong:
       - answer: denn
         feedback_vi: denn đứng đầu một vế câu và kéo theo V2. Giữa câu cần nämlich; mở câu phụ (động từ ist ở cuối) cần Da hoặc Weil.
-        error_tag: word_choice
+        error_tag: conjunction
       - answer: Trotz
         feedback_vi: trotz là giới từ, đi với danh từ, không mở câu phụ. Ở đây cần Da.
-        error_tag: word_choice
+        error_tag: conjunction
     explanation:
-      vi: "Câu thứ hai giải thích câu thứ nhất: nämlich, đứng sau động từ ist. Vế cuối có động từ ist đứng cuối, tức là câu phụ chỉ lý do: Da (hoặc Weil); da đứng đầu câu rất tự nhiên."
+      vi: "Câu thứ hai giải thích câu thứ nhất: nämlich, đứng sau động từ ist (không đứng ở vị trí 1). Vế cuối có động từ ist đứng cuối, tức là câu phụ chỉ lý do mở đầu câu: Da (Weil cũng đúng); câu da đứng đầu câu rất tự nhiên."
     display_answer: "Ich nehme heute den Bus. Mein Auto ist nämlich in der Werkstatt. Da heute so viel Verkehr ist, komme ich vielleicht etwas später."
 
   - key: de:exercise:b1u06l2-fill-schaedlich
@@ -325,15 +325,16 @@ exercises:
         - Die Luft in der Stadt ist wegen des Verkehrs sehr schmutzig.
         - In der Stadt ist die Luft wegen des Verkehrs sehr schmutzig.
         - Wegen des Verkehrs ist in der Stadt die Luft sehr schlecht.
+        - Die Luft ist in der Stadt wegen des Verkehrs sehr schlecht.
         - Wegen des Verkehrs ist die Luft in der Stadt sehr verschmutzt.
         - Die Luft in der Stadt ist wegen des Verkehrs sehr verschmutzt.
     known_wrong:
       - answer: Wegen dem Verkehr ist die Luft in der Stadt sehr schlecht.
-        feedback_vi: Khi nói thì được, nhưng đề yêu cầu văn viết – wegen + Genitiv – wegen des Verkehrs.
-        error_tag: case_dat_akk
+        feedback_vi: Khi nói thì người Đức hay dùng như vậy, nhưng đề yêu cầu văn viết – wegen + Genitiv – wegen des Verkehrs.
+        error_tag: case_genitive
       - answer: Wegen des Verkehr ist die Luft in der Stadt sehr schlecht.
         feedback_vi: Danh từ giống đực ở Genitiv thêm -s – des Verkehrs.
-        error_tag: case_dat_akk
+        error_tag: genitive_ending
       - answer: Wegen des Verkehrs die Luft ist in der Stadt sehr schlecht.
         feedback_vi: Cụm wegen … ở vị trí 1 thì động từ ist ở vị trí 2 – Wegen des Verkehrs ist die Luft …
         error_tag: verb_position

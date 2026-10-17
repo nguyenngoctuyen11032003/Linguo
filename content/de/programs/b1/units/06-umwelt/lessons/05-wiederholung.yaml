@@ -282,7 +282,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u06-g-futur-i
     prompt:
-      template: "{{b1}} des schlechten Wetters fahre ich heute mit dem Rad, denn ich will kein Auto mehr benutzen. In Zukunft {{b2}} ich nur noch Ökostrom kaufen."
+      template: "{{b1}} des schlechten Wetters fahre ich heute mit dem Rad, denn ich will kein Auto mehr benutzen. In Zukunft {{b2}} (werden) ich nur noch Ökostrom kaufen."
       blanks:
         - { id: b1, width_hint: 6 }
         - { id: b2, width_hint: 5 }
@@ -293,7 +293,7 @@ exercises:
     known_wrong:
       - answer: Obwohl
         feedback_vi: obwohl mở câu phụ (cần động từ ở cuối); trước danh từ ở Genitiv dùng giới từ trotz.
-        error_tag: word_choice
+        error_tag: conjunction
       - answer: wird
         feedback_vi: Chủ ngữ là ich – ich werde … kaufen.
         error_tag: verb_form

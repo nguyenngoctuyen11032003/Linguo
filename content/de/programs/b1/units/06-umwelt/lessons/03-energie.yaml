@@ -43,6 +43,10 @@ items:
     role: reuse
   - item: de:item:a2u08-umwelt
     role: reuse
+  - item: de:item:b1u04-g-relativ-wo-was
+    role: reuse
+  - item: de:item:b1u05-g-wortbildung-nomen
+    role: reuse
 body:
   - type: objective
     text:
@@ -58,7 +62,7 @@ body:
       vi: "Từ ghép tiếng Đức đặt từ chính ở cuối, ngược với tiếng Việt: \"hoá đơn tiền điện\" là die Stromrechnung (Strom + Rechnung). Giống của từ ghép theo từ cuối: der Wind + die Kraft = die Windkraft, die Sonne + das Licht = das Sonnenlicht."
   - type: explain
     text:
-      vi: "Giữa hai phần đôi khi có âm nối: -s- (der Arbeitsplatz, das Verkehrsmittel), -n- (die Sonnenenergie), -es- (das Tageslicht), hoặc không có gì (der Umweltschutz, der Klimaschutz). Sau đuôi -ung, -heit, -keit, -ion, -tät thường có -s-: die Wohnungstür, das Gesundheitsamt; các từ khác bạn nên học thuộc cả từ."
+      vi: "Giữa hai phần đôi khi có âm nối: -s- (der Arbeitsplatz, das Verkehrsmittel), -n- (die Sonnenenergie), -es- (das Tageslicht), hoặc không có gì (der Umweltschutz, der Klimaschutz). Sau các hậu tố danh từ giống cái bạn đã học ở B1U05 (-ung, -heit, -keit, -ion, -tät) thường có -s-: die Wohnungstür, das Gesundheitsamt; các từ khác bạn nên học thuộc cả từ."
   - type: deep_explain
     text:
       vi: "Âm nối -s- không phải số nhiều hay sở hữu cách, nó chỉ là \"keo dán\" giúp đọc trơn; vì vậy Arbeitsplatz không có nghĩa là \"chỗ của công việc\" theo kiểu Genitiv. Một số từ đổi dạng khi ghép: die Schule → das Schulbuch (bỏ -e), das Kind → das Kinderzimmer (-er-). So sánh ba cách nói hệ quả: …, deshalb + V2 (Es war kalt, deshalb haben wir mehr geheizt); …, sodass + động từ cuối; so + tính từ …, dass + động từ cuối. Đừng nhầm sodass (hệ quả) với damit (mục đích, để): Wir haben eine Solaranlage, damit wir Strom sparen (mục đích) – …, sodass wir Strom sparen (kết quả). Khi viết về năng lượng, những từ ghép hay gặp là der Stromverbrauch, die Stromrechnung, das Kraftwerk, die Wärmepumpe, der Ökostrom."
@@ -97,6 +101,13 @@ body:
       vi: Ai tiết kiệm năng lượng là đang làm điều tốt cho môi trường và trả ít tiền hơn.
     note:
       vi: "der Umweltschutz: die Umwelt + der Schutz, giống đực theo từ cuối."
+  - type: example
+    target: Schalte alles aus, was du gerade nicht brauchst. So sparst du Strom.
+    target_lang: de
+    translation:
+      vi: Hãy tắt mọi thứ bạn đang không dùng. Như vậy bạn tiết kiệm được điện.
+    note:
+      vi: "alles, was …: câu quan hệ với was (đã học ở B1U04), động từ brauchst đứng cuối. Lời khuyên cho bạn bè (du)."
   - type: common_mistake
     wrong: Ich suche einen neuen Arbeitplatz.
     right: Ich suche einen neuen Arbeitsplatz.
@@ -258,7 +269,7 @@ exercises:
         error_tag: verb_position
       - answer: denn
         feedback_vi: denn nêu lý do, không nêu hệ quả, và kéo theo V2. Ở đây cần sodass.
-        error_tag: word_choice
+        error_tag: conjunction
       - answer: sehr
         feedback_vi: Trước dass cần so + tính từ (so schlecht, dass …); sehr không đi với dass.
         error_tag: word_choice
@@ -266,7 +277,7 @@ exercises:
         feedback_vi: zu schlecht không nối với dass. Muốn nói đến nỗi thì dùng so … dass.
         error_tag: word_choice
     explanation:
-      vi: "Vế sau là hệ quả và động từ sind đứng cuối: …, sodass die Felder ganz trocken sind. Câu thứ hai có dass ở sau, nên trước tính từ cần so: so schlecht, dass …"
+      vi: "Vế sau là hệ quả và động từ sind đứng cuối: …, sodass die Felder ganz trocken sind (weshalb/weswegen cũng đúng nhưng trang trọng hơn). Câu thứ hai có dass ở sau, nên trước tính từ cần so: so schlecht, dass …"
     display_answer: "Es hat wochenlang nicht geregnet, sodass die Felder ganz trocken sind. Die alte Heizung war so schlecht, dass sie sehr viel Energie verbraucht hat."
 
   - key: de:exercise:b1u06l3-tr-so-teuer
@@ -287,6 +298,9 @@ exercises:
         - Der Strom ist so teuer, dass wir Energie sparen müssen.
         - Der Strom ist sehr teuer, sodass wir sparen müssen.
         - Der Strom ist sehr teuer, so dass wir sparen müssen.
+        - Strom ist sehr teuer, sodass wir sparen müssen.
+        - Strom ist so teuer, dass wir Strom sparen müssen.
+        - Strom ist so teuer, dass wir Energie sparen müssen.
     known_wrong:
       - answer: Der Strom ist so teuer, dass wir müssen sparen.
         feedback_vi: Trong câu phụ dass, động từ chia müssen đứng cuối – … dass wir sparen müssen.

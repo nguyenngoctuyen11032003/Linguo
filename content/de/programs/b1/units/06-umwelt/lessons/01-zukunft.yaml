@@ -53,7 +53,7 @@ body:
       vi: "Bạn dùng Futur I để dự báo (Es wird morgen regnen), nói quyết tâm hoặc hứa hẹn (Ich werde ab jetzt weniger fliegen). Kế hoạch chắc chắn đã có mốc thời gian thì người Đức thường dùng Präsens như bạn học ở A2: Morgen fahre ich nach Berlin. Vì vậy, không phải chữ \"sẽ\" nào trong tiếng Việt cũng thành werden."
   - type: explain
     text:
-      vi: "werden + wohl + nguyên thể dùng để phỏng đoán điều đang xảy ra bây giờ, không phải tương lai: Er wird wohl krank sein = chắc là anh ấy đang ốm. Có thể thay wohl bằng sicher, bestimmt (chắc chắn hơn) hoặc nói bằng Präsens: Er ist wahrscheinlich krank."
+      vi: "werden + wohl + nguyên thể dùng để phỏng đoán điều đang xảy ra bây giờ, không phải tương lai: Er wird wohl krank sein = chắc là anh ấy đang ốm. Có thể thay wohl bằng vermutlich (có lẽ), sicher hoặc bestimmt (chắc chắn hơn), hoặc nói bằng Präsens: Er ist wahrscheinlich krank."
   - type: explain
     text:
       vi: "Đừng nhầm ba kiểu wird: wird + tính từ/danh từ là \"trở nên, trở thành\" (Es wird wärmer, Er wird Arzt); wird + nguyên thể là Futur I (Es wird regnen); wird + Partizip II là bị động (Der Müll wird getrennt). Hãy nhìn từ đứng cuối câu để biết."
@@ -64,7 +64,7 @@ body:
     target: Viele Experten erwarten, dass die Temperaturen in Zukunft weiter steigen werden.
     target_lang: de
     translation:
-      vi: Nhiều chuyên gia cho rằng trong tương lai nhiệt độ sẽ tiếp tục tăng.
+      vi: Nhiều chuyên gia dự đoán rằng trong tương lai nhiệt độ sẽ tiếp tục tăng.
     note:
       vi: "Câu phụ dass: steigen (nguyên thể) rồi werden (chia) ở cuối. in Zukunft = trong tương lai."
   - type: example
@@ -279,6 +279,8 @@ exercises:
         - Auf der Erde werden die Temperaturen steigen.
         - Die Temperatur wird auf der Erde steigen.
         - Die Temperaturen werden auf der Erde steigen.
+        - Die Temperatur der Erde wird steigen.
+        - Die Temperaturen der Erde werden steigen.
     known_wrong:
       - answer: Die Temperatur auf der Erde wird steigt.
         feedback_vi: Sau werden, động từ chính ở nguyên thể – wird … steigen.
@@ -290,7 +292,7 @@ exercises:
         feedback_vi: Auf der Erde ở vị trí 1 thì wird phải ở vị trí 2 – Auf der Erde wird die Temperatur steigen.
         error_tag: verb_position
     explanation:
-      vi: "Futur I: wird (chia theo die Temperatur, số ít) hoặc werden (die Temperaturen, số nhiều) ở vị trí 2, steigen ở cuối câu. Trái Đất luôn có mạo từ: auf der Erde."
+      vi: "Futur I: wird (chia theo die Temperatur, số ít) hoặc werden (die Temperaturen, số nhiều) ở vị trí 2, steigen ở cuối câu. Trái Đất đi với mạo từ: auf der Erde (hoặc Genitiv: die Temperatur der Erde)."
     display_answer: Die Temperatur auf der Erde wird steigen.
 
   - key: de:exercise:b1u06l1-tr-buero-wohl

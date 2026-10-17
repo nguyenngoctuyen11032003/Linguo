@@ -44,6 +44,10 @@ items:
     role: reuse
   - item: de:item:b1u02-g-verben-praeposition-b1
     role: reuse
+  - item: de:item:b1u04-g-konjunktiv-ii-formen
+    role: reuse
+  - item: de:item:b1u04-g-zweiteilige-konnektoren
+    role: reuse
 body:
   - type: objective
     text:
@@ -62,7 +66,7 @@ body:
       vi: "Khi cân nhắc hai mặt, dùng Einerseits …, andererseits … (một mặt …, mặt khác …), mỗi vế động từ đứng ngay sau: Einerseits ist das Auto praktisch, andererseits ist es teuer. Nêu ưu, nhược điểm: Ein Vorteil ist, dass … / Ein Nachteil ist, dass …"
   - type: deep_explain
     text:
-      vi: "meiner trong Meiner Meinung nach là Dativ (nach + Dativ, nhưng ở đây nach đứng sau danh từ); cũng có thể nói Nach meiner Meinung ist … Ich bin der Meinung dùng Nominativ (der Meinung), còn Ich bin anderer Meinung (tôi có ý kiến khác) là Genitiv không mạo từ, một cụm cố định. Câu Ich bin mit dir einverstanden không sai ngữ pháp, nhưng thường dùng để đồng ý với một đề nghị (Ich bin einverstanden = tôi đồng ý làm thế); khi tranh luận, Da hast du recht hoặc Da stimme ich dir zu tự nhiên hơn. Với người lạ, người lớn tuổi hay trong buổi thảo luận trang trọng, dùng Sie: Da stimme ich Ihnen zu. Theo hiểu biết lúc soạn bài, kỳ thi Goethe B1 có phần nghe một cuộc thảo luận và phần nói cần nêu, bảo vệ ý kiến; cấu trúc đề có thể thay đổi, hãy xem tài liệu mẫu chính thức."
+      vi: "meiner trong Meiner Meinung nach là Dativ (nach + Dativ, nhưng ở đây nach đứng sau danh từ); cũng có thể nói Nach meiner Meinung ist … der Meinung trong Ich bin der Meinung là Genitiv (cụm cố định), giống Ich bin anderer Meinung (tôi có ý kiến khác); bạn chỉ cần học thuộc cả cụm. Câu Ich bin mit dir einverstanden không sai ngữ pháp, nhưng thường dùng để đồng ý với một đề nghị (Ich bin einverstanden = tôi đồng ý làm thế); khi tranh luận, Da hast du recht hoặc Da stimme ich dir zu tự nhiên hơn. Với người lạ, người lớn tuổi hay trong buổi thảo luận trang trọng, dùng Sie: Da stimme ich Ihnen zu. Theo hiểu biết lúc soạn bài, kỳ thi Goethe B1 có phần nghe một cuộc thảo luận và phần nói cần nêu, bảo vệ ý kiến; cấu trúc đề có thể thay đổi, hãy xem tài liệu mẫu chính thức."
   - type: example
     target: Meiner Meinung nach sollten weniger Autos in die Innenstadt fahren.
     target_lang: de
@@ -105,6 +109,13 @@ body:
       vi: Thành phố định cấm xe. Bạn nghĩ sao về chuyện đó? – Mình tán thành, nhưng chồng mình thì phản đối.
     note:
       vi: "halten von + Dativ → davon (thay cho \"von diesem Fahrverbot\"). dafür/dagegen sein = tán thành/phản đối."
+  - type: example
+    target: Das Fahrrad ist nicht nur gesünder, sondern auch billiger. Es wäre gut, wenn mehr Menschen Rad fahren würden.
+    target_lang: de
+    translation:
+      vi: Xe đạp không chỉ tốt cho sức khỏe hơn mà còn rẻ hơn. Sẽ thật tốt nếu nhiều người đi xe đạp hơn.
+    note:
+      vi: "Khi đưa lý lẽ, dùng lại nicht nur …, sondern auch … và Konjunktiv II (wäre, würde) đã học ở B1U04 để nêu mong muốn, đề xuất lịch sự."
   - type: common_mistake
     wrong: Meiner Meinung nach ich denke, das ist gut.
     right: Meiner Meinung nach ist das gut.
@@ -357,6 +368,8 @@ exercises:
         - Du hast recht, aber das finde ich etwas übertrieben.
         - Du hast recht, aber ich finde es ein bisschen übertrieben.
         - Da hast du recht, aber ich finde es ein bisschen übertrieben.
+        - Du hast recht, aber ich finde es etwas übertrieben.
+        - Da hast du recht, aber ich finde es etwas übertrieben.
     known_wrong:
       - answer: Du bist recht, aber ich finde das ein bisschen übertrieben.
         feedback_vi: recht haben dùng với haben – Du hast recht.
