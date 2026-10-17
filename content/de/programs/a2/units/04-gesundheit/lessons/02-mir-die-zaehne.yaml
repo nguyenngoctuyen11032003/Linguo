@@ -1,0 +1,407 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u04-mir-die-zaehne
+order_index: 2
+level: a2
+title:
+  vi: Tôi đánh răng – phản thân Dativ (Ich putze mir die Zähne.)
+objectives:
+  - vi: Kể việc vệ sinh cá nhân và mặc quần áo buổi sáng (Ich wasche mich, ich putze mir die Zähne, ich ziehe mich an).
+  - vi: Chọn đúng đại từ phản thân Akkusativ (mich, dich) hay Dativ (mir, dir) khi câu đã có tân ngữ.
+  - vi: Nói bộ phận cơ thể với mạo từ xác định (mir die Hände, dir die Haare).
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u04-sich-fuehlen]
+items:
+  - item: de:item:a2u04-g-reflexiv-dativ
+  - item: de:item:a2u04-zahn
+  - item: de:item:a2u04-zahnbuerste
+  - item: de:item:a2u04-sich-waschen
+  - item: de:item:a2u04-sich-kaemmen
+  - item: de:item:a2u04-sich-anziehen
+  - item: de:item:a2u04-sich-ausziehen
+  - item: de:item:a2u04-haar
+  - item: de:item:a2u04-haut
+  - item: de:item:a2u04-seife
+  - item: de:item:a2u04-handtuch
+  - item: de:item:a2u04-sich-rasieren
+  - item: de:item:a2u04-sich-abtrocknen
+  - item: de:item:a2u04-sich-schminken
+  - item: de:item:a2u04-gesicht
+  - item: de:item:a2u04-kamm
+  - item: de:item:a2u04-shampoo
+  - item: de:item:a2u04-creme
+  - item: de:item:a2u04-g-reflexiv-akk
+    role: reuse
+  - item: de:item:a1u07-g-personalpronomen-dativ
+    role: reuse
+  - item: de:item:a1u04-putzen
+    role: reuse
+  - item: de:item:a1u04-duschen
+    role: reuse
+  - item: de:item:a1u05-spiegel
+    role: reuse
+  - item: de:item:a1u08-hand
+    role: reuse
+  - item: de:item:a1u07-jacke
+    role: reuse
+  - item: de:item:a1u07-schuh
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được buổi sáng của mình: tắm rửa, đánh răng, chải tóc, mặc quần áo – và biết khi nào dùng mich, khi nào dùng mir."
+  - type: explain
+    text:
+      vi: "Khi động từ phản thân có thêm một tân ngữ Akkusativ (die Hände, die Zähne, eine Jacke), đại từ phản thân chuyển sang Dativ: Ich wasche mich (tôi tắm rửa) → Ich wasche mir die Hände (tôi rửa tay). Người (mir) ở Dativ, vật (die Hände) ở Akkusativ – giống khuôn Ich gebe dir das Buch."
+  - type: explain
+    text:
+      vi: "Dạng Dativ: ich → mir, du → dir, er/sie/es → sich, wir → uns, ihr → euch, sie/Sie → sich. Chỉ ich và du khác Akkusativ (mich/mir, dich/dir); các ngôi còn lại giống hệt. Vì vậy lỗi hay gặp nhất nằm ở ich và du: Ich putze mir (không phải mich) die Zähne."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"tôi rửa tay\", nếu dịch từng chữ \"rửa tay của tôi\" sẽ thành Ich wasche meine Hände – người Đức vẫn hiểu nhưng ít dùng. Cách tự nhiên là đại từ Dativ + mạo từ xác định: Ich wasche mir die Hände, Er kämmt sich die Haare."
+  - type: explain
+    text:
+      vi: "Đại từ phản thân đứng trước tân ngữ danh từ: Ich ziehe mir eine Jacke an. Động từ tách vẫn đưa tiền tố ra cuối (anziehen → … an, abtrocknen → … ab)."
+  - type: deep_explain
+    text:
+      vi: "Cùng một động từ có ba khuôn: Ich wasche das Auto (rửa vật khác, không phản thân), Ich wasche mich (tự tắm rửa – Akkusativ), Ich wasche mir die Haare (gội đầu – Dativ + Akkusativ). Tương tự: Ich ziehe mich an (mặc quần áo) – Ich ziehe mir die Schuhe an (đi giày). duschen bạn học ở A1 dùng được cả hai cách: Ich dusche và Ich dusche mich. putzen một mình là lau dọn (das Bad putzen); với răng thì nói sich die Zähne putzen."
+  - type: example
+    target: Ich putze mir zweimal am Tag die Zähne.
+    target_lang: de
+    translation:
+      vi: Tôi đánh răng hai lần một ngày.
+    note:
+      vi: "die Zähne là tân ngữ Akkusativ, nên đại từ phản thân là Dativ: mir."
+  - type: example
+    target: Wasch dir bitte die Hände, das Essen ist fertig!
+    target_lang: de
+    translation:
+      vi: Con rửa tay đi, cơm xong rồi!
+    note:
+      vi: "Mẹ nói với con (du): wasch dir. Mệnh lệnh của waschen không đổi a → ä: wasch!"
+  - type: example
+    target: Es ist kalt. Zieh dir eine Jacke an!
+    target_lang: de
+    translation:
+      vi: Trời lạnh đấy. Mặc áo khoác vào!
+    note:
+      vi: "Nói với bạn bè (du). eine Jacke là Akkusativ → dir; an ra cuối câu."
+  - type: example
+    target: Am Morgen wasche ich mich, ziehe mich an und kämme mir die Haare.
+    target_lang: de
+    translation:
+      vi: Buổi sáng tôi tắm rửa, mặc quần áo rồi chải tóc.
+    note:
+      vi: "So sánh: wasche mich, ziehe mich an (không có tân ngữ khác → Akkusativ) – kämme mir die Haare (có die Haare → Dativ)."
+  - type: example
+    target: Nach dem Duschen trocknet sich Lisa ab und schminkt sich vor dem Spiegel.
+    target_lang: de
+    translation:
+      vi: Tắm xong, Lisa lau khô người rồi trang điểm trước gương.
+    note:
+      vi: "Ngôi thứ ba dùng sich ở cả Akkusativ và Dativ. Với chủ ngữ là danh từ, sich thường đứng trước nó: trocknet sich Lisa ab."
+  - type: example
+    target: Zu Hause ziehen wir uns die Schuhe aus.
+    target_lang: de
+    translation:
+      vi: Ở nhà chúng tôi cởi giày ra.
+    note:
+      vi: "uns giống nhau ở Akkusativ và Dativ; aus ra cuối câu."
+  - type: common_mistake
+    wrong: Ich putze mich die Zähne.
+    right: Ich putze mir die Zähne.
+    target_lang: de
+    note:
+      vi: "Câu đã có tân ngữ Akkusativ die Zähne, nên đại từ phản thân là Dativ: mir."
+  - type: common_mistake
+    wrong: Du kämmst dich die Haare.
+    right: Du kämmst dir die Haare.
+    target_lang: de
+    note:
+      vi: "Có die Haare (Akkusativ) nên du → dir."
+  - type: common_mistake
+    wrong: Ich wasche meine Hände.
+    right: Ich wasche mir die Hände.
+    target_lang: de
+    note:
+      vi: "Câu bên trái người Đức vẫn hiểu, nhưng với bộ phận cơ thể cách nói tự nhiên là đại từ Dativ + mạo từ xác định."
+  - type: summary
+    points:
+      - vi: "Không có tân ngữ khác → Akkusativ: Ich wasche mich, ich ziehe mich an."
+      - vi: "Có tân ngữ Akkusativ → Dativ: Ich wasche mir die Hände, ich ziehe mir eine Jacke an."
+      - vi: "Dativ: mir, dir, sich, uns, euch, sich – chỉ mir/dir khác Akkusativ."
+      - vi: "Bộ phận cơ thể: mir die Zähne, dir die Haare (thường không dùng meine/deine)."
+      - vi: "Động từ tách: sich anziehen, sich ausziehen, sich abtrocknen – tiền tố ra cuối."
+      - vi: "sich waschen: du wäschst, er wäscht; mệnh lệnh: Wasch dir die Hände!"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u04l2-mcq-haare-waschen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u04-g-reflexiv-dativ
+    prompt:
+      stem: "Chọn câu đúng cho: \"Tôi gội đầu.\""
+      stem_lang: vi
+      options:
+        - { id: b5x, text: Ich wasche mir die Haare., lang: de }
+        - { id: g2c, text: Ich wasche mich die Haare., lang: de }
+        - { id: n7v, text: Ich wäscht mir die Haare., lang: de }
+        - { id: r4f, text: Ich wasche sich die Haare., lang: de }
+    answer:
+      correct_option_id: b5x
+    explanation:
+      vi: "die Haare là tân ngữ Akkusativ nên đại từ phản thân ở Dativ: mir. Với ich là wasche (wäscht là dạng của er/sie/es); sich chỉ dùng cho ngôi thứ ba."
+    display_answer: Ich wasche mir die Haare.
+
+  - key: de:exercise:a2u04l2-mcq-mich-mir
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-sich-anziehen
+    prompt:
+      stem: "Điền vào hai chỗ trống: \"Ich ziehe ___ an. Dann ziehe ich ___ eine Jacke an.\""
+      stem_lang: vi
+      options:
+        - { id: s8k, text: mich – mir, lang: de }
+        - { id: d1p, text: mir – mich, lang: de }
+        - { id: o6h, text: mich – mich, lang: de }
+        - { id: y3j, text: mir – mir, lang: de }
+    answer:
+      correct_option_id: s8k
+    explanation:
+      vi: "Câu đầu không có tân ngữ nào khác → Akkusativ mich (tôi mặc quần áo). Câu sau có eine Jacke (Akkusativ) → đại từ phản thân thành Dativ mir."
+    display_answer: mich – mir
+
+  - key: de:exercise:a2u04l2-fill-dir-mir
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-g-reflexiv-dativ
+    prompt:
+      template: "Kämmst du {{b1}} die Haare? – Ja, und dann wasche ich {{b2}} das Gesicht."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Bạn chải tóc à? – Ừ, rồi mình rửa mặt."
+        - "Gợi ý: đã có die Haare / das Gesicht (Akkusativ) → đại từ ở Dativ: du → d…, ich → m…"
+    answer:
+      blanks:
+        b1: [dir]
+        b2: [mir]
+    known_wrong:
+      - answer: dich
+        feedback_vi: "Đã có die Haare (Akkusativ) nên du → dir (Dativ), không phải dich."
+        error_tag: case_dat_akk
+      - answer: mich
+        feedback_vi: "Đã có das Gesicht (Akkusativ) nên ich → mir (Dativ), không phải mich."
+        error_tag: case_dat_akk
+      - answer: sich
+        feedback_vi: "sich chỉ dùng cho ngôi thứ ba và Sie; với du là dir, với ich là mir."
+        error_tag: reflexive_form
+    explanation:
+      vi: "Câu có tân ngữ Akkusativ (die Haare, das Gesicht) nên đại từ phản thân ở Dativ: du → dir, ich → mir."
+    display_answer: "Kämmst du dir die Haare? – Ja, und dann wasche ich mir das Gesicht."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u04l2-fill-morgenroutine
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-reflexiv-dativ
+    prompt:
+      template: "Nach dem Duschen trockne ich {{b1}} ab, dann ziehe ich {{b2}} an und putze {{b3}} die Zähne."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [mich]
+        b2: [mich]
+        b3: [mir]
+    known_wrong:
+      - answer: sich
+        feedback_vi: "Chủ ngữ là ich, nên dùng mich (không có tân ngữ khác) hoặc mir (có tân ngữ Akkusativ)."
+        error_tag: reflexive_form
+      - answer: ich
+        feedback_vi: "ich là chủ ngữ; ở đây cần đại từ phản thân mich/mir."
+        error_tag: reflexive_form
+    explanation:
+      vi: "trockne mich ab và ziehe mich an không có tân ngữ khác → Akkusativ mich. putze … die Zähne có die Zähne (Akkusativ) → Dativ mir."
+    display_answer: Nach dem Duschen trockne ich mich ab, dann ziehe ich mich an und putze mir die Zähne.
+
+  - key: de:exercise:a2u04l2-fill-waescht-rasiert
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-sich-waschen
+    prompt:
+      template: "Paul {{b1}} (sich waschen) sich die Haare. Heute hat er sich nicht {{b2}} (sich rasieren)."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [wäscht]
+        b2: [rasiert]
+    known_wrong:
+      - answer: wascht
+        feedback_vi: "waschen đổi a → ä ở er/sie/es: er wäscht."
+        error_tag: verb_form
+      - answer: gerasiert
+        feedback_vi: "Động từ đuôi -ieren không thêm ge- ở Partizip II: rasiert."
+        error_tag: partizip_form
+      - answer: rasieren
+        feedback_vi: "Sau hat cần Partizip II ở cuối câu: rasiert."
+        error_tag: partizip_form
+    explanation:
+      vi: "waschen là động từ đổi nguyên âm: du wäschst, er wäscht. rasieren có đuôi -ieren nên Partizip II không có ge-: hat sich rasiert."
+    display_answer: Paul wäscht sich die Haare. Heute hat er sich nicht rasiert.
+
+  - key: de:exercise:a2u04l2-tr-haende-waschen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-sich-waschen
+    prompt:
+      source_text: "Rửa tay đi! (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wasch dir die Hände!
+        - Wasche dir die Hände!
+        - Wasch dir bitte die Hände!
+        - Wasche dir bitte die Hände!
+        - Bitte wasch dir die Hände!
+        - Bitte wasche dir die Hände!
+        - Wasch deine Hände!
+        - Wasche deine Hände!
+    known_wrong:
+      - answer: Wasch dich die Hände!
+        feedback_vi: "Đã có die Hände (Akkusativ) nên đại từ phản thân là Dativ: dir."
+        error_tag: case_dat_akk
+      - answer: Wäsch dir die Hände!
+        feedback_vi: "Mệnh lệnh với du của waschen không đổi a → ä: Wasch!"
+        error_tag: verb_form
+      - answer: Wäschst dir die Hände!
+        feedback_vi: "Mệnh lệnh với du bỏ đuôi -st và không có chủ ngữ: Wasch dir die Hände!"
+        error_tag: verb_form
+    explanation:
+      vi: "Mệnh lệnh với du: Wasch (hoặc Wasche) – không đổi a → ä. die Hände là Akkusativ nên đại từ phản thân là dir. Wasch deine Hände! cũng hiểu được, nhưng Wasch dir die Hände! tự nhiên hơn."
+    display_answer: Wasch dir die Hände!
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u04l2-wb-jacke-an
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-sich-anziehen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi mặc áo khoác vào.\""
+      tokens:
+        - { id: t-an, text: an }
+        - { id: t-mich, text: mich }
+        - { id: t-jacke, text: Jacke }
+        - { id: t-ziehe, text: ziehe }
+        - { id: t-eine, text: eine }
+        - { id: t-aus, text: aus }
+        - { id: t-ich, text: ich }
+        - { id: t-mir, text: mir }
+    answer:
+      orders:
+        - [t-ich, t-ziehe, t-mir, t-eine, t-jacke, t-an]
+    explanation:
+      vi: "Có tân ngữ eine Jacke (Akkusativ) nên đại từ phản thân là mir (Dativ), đứng trước tân ngữ. anziehen là động từ tách: an ra cuối câu (aus là \"cởi ra\")."
+    display_answer: Ich ziehe mir eine Jacke an.
+
+  - key: de:exercise:a2u04l2-wb-jeden-morgen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-zahn
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Sáng nào tôi cũng đánh răng.\""
+      tokens:
+        - { id: t-zaehne, text: Zähne }
+        - { id: t-mich, text: mich }
+        - { id: t-jeden, text: jeden }
+        - { id: t-putze, text: putze }
+        - { id: t-die, text: die }
+        - { id: t-ich, text: ich }
+        - { id: t-morgen, text: Morgen }
+        - { id: t-mir, text: mir }
+    answer:
+      orders:
+        - [t-ich, t-putze, t-mir, t-jeden, t-morgen, t-die, t-zaehne]
+        - [t-jeden, t-morgen, t-putze, t-ich, t-mir, t-die, t-zaehne]
+    explanation:
+      vi: "die Zähne là Akkusativ nên dùng mir. putze ở vị trí 2; mir là đại từ ngắn nên đứng sớm, die Zähne thường ở cuối. Mở đầu bằng jeden Morgen thì đảo: Jeden Morgen putze ich mir die Zähne."
+    display_answer: Ich putze mir jeden Morgen die Zähne.
+
+  - key: de:exercise:a2u04l2-tr-schuhe-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-sich-ausziehen
+    prompt:
+      source_text: Zu Hause ziehen wir uns die Schuhe aus.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở nhà chúng tôi cởi giày.
+        - Ở nhà chúng tôi cởi giày ra.
+        - Ở nhà chúng ta cởi giày.
+        - Ở nhà chúng ta cởi giày ra.
+        - Ở nhà bọn mình cởi giày.
+        - Ở nhà chúng tôi bỏ giày ra.
+        - Ở trong nhà chúng tôi cởi giày.
+        - Trong nhà chúng tôi cởi giày ra.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở nhà chúng tôi đi giày vào.
+        feedback_vi: "ausziehen là cởi ra; mặc, đi vào là anziehen."
+        error_tag: meaning
+      - answer: Chúng tôi dọn ra khỏi nhà.
+        feedback_vi: "Ở đây có uns và die Schuhe nên là cởi giày; \"dọn nhà đi\" là ausziehen không có đại từ phản thân."
+        error_tag: meaning
+    explanation:
+      vi: "sich (Dativ) die Schuhe ausziehen = cởi giày. uns là đại từ phản thân của wir; zu Hause = ở nhà."
+    display_answer: Ở nhà chúng tôi cởi giày.
+
+  - key: de:exercise:a2u04l2-mcq-welcher-satz-dativ
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-reflexiv-dativ
+    prompt:
+      stem: "Câu nào cần đại từ mir (Dativ) chứ không phải mich?"
+      stem_lang: vi
+      options:
+        - { id: a7m, text: "Ich wasche ___ die Hände.", lang: de }
+        - { id: f3t, text: "Ich wasche ___ jeden Morgen.", lang: de }
+        - { id: l9z, text: "Ich ziehe ___ schnell an.", lang: de }
+        - { id: i5g, text: "Ich fühle ___ heute nicht gut.", lang: de }
+    answer:
+      correct_option_id: a7m
+    explanation:
+      vi: "Chỉ câu đầu có tân ngữ Akkusativ (die Hände), nên đại từ phản thân chuyển sang Dativ mir. Ba câu còn lại không có tân ngữ khác nên dùng mich."
+    display_answer: "Ich wasche ___ die Hände."

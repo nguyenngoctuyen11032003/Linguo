@@ -1,0 +1,419 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u04-du-solltest
+order_index: 3
+level: a2
+title:
+  vi: Bạn nên… – lời khuyên với Konjunktiv II (Du solltest weniger arbeiten.)
+objectives:
+  - vi: Khuyên bạn bè và người lạ về lối sống lành mạnh (Du solltest …, Sie sollten …, Du könntest …).
+  - vi: Khuyên theo kiểu "nếu tôi là bạn" (An deiner Stelle würde ich …).
+  - vi: Nhờ lịch sự hơn bằng Könnten Sie …? và Würden Sie …?
+  - vi: Phân biệt lời khuyên du solltest với lời dặn du sollst.
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u04-mir-die-zaehne]
+items:
+  - item: de:item:a2u04-g-sollte-koennte
+  - item: de:item:a2u04-g-wuerde-hoeflich
+  - item: de:item:a2u04-rat
+  - item: de:item:a2u04-tipp
+  - item: de:item:a2u04-rauchen
+  - item: de:item:a2u04-aufhoeren
+  - item: de:item:a2u04-ungesund
+  - item: de:item:a2u04-gewicht
+  - item: de:item:a2u04-abnehmen
+  - item: de:item:a2u04-zunehmen
+  - item: de:item:a2u04-diaet
+  - item: de:item:a2u04-regelmaessig
+  - item: de:item:a2u04-fettig
+  - item: de:item:a2u04-fitnessstudio
+  - item: de:item:a2u04-treppe
+  - item: de:item:a2u04-suessigkeit
+  - item: de:item:a1u05-g-hoefliche-bitte
+    role: reuse
+  - item: de:item:a1u08-g-sollen
+    role: reuse
+  - item: de:item:a2u01-g-praeteritum-modal
+    role: reuse
+  - item: de:item:a2u03-g-dativ-verben
+    role: reuse
+  - item: de:item:a2u04-sich-bewegen
+    role: reuse
+  - item: de:item:a1u04-schlafen
+    role: reuse
+  - item: de:item:a1u05-aufzug
+    role: reuse
+  - item: de:item:p0u2-sport
+    role: reuse
+  - item: de:item:a1u03-kaffee
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn khuyên được người khác một cách nhẹ nhàng (Du solltest mehr schlafen), gợi ý một cách làm (Du könntest die Treppe nehmen) và nhờ người lạ thật lịch sự (Könnten Sie mir bitte helfen?)."
+  - type: explain
+    text:
+      vi: "Muốn khuyên \"bạn nên …\", dùng sollte + động từ nguyên thể ở cuối câu: Du solltest weniger arbeiten. Chia: ich sollte, du solltest, er/sie sollte, wir sollten, ihr solltet, sie/Sie sollten – ngôi ich và er không có đuôi, như các modal khác."
+  - type: explain
+    text:
+      vi: "sollte trông giống hệt Präteritum của sollen bạn đã học (Ich sollte gestern arbeiten = hôm qua tôi đã phải làm); ngữ cảnh cho bạn biết nghĩa. Muốn gợi ý một khả năng, dùng könnte (có ö): Du könntest am Abend joggen. Đừng nhầm với konnte (không có umlaut) = đã có thể."
+  - type: explain
+    text:
+      vi: "Du sollst … (sollen ở hiện tại) là lời dặn, lời yêu cầu của người khác, nghe nặng hơn: Der Arzt sagt, du sollst nicht rauchen. Khi chính bạn khuyên bạn bè, dùng du solltest."
+  - type: explain
+    text:
+      vi: "Nhờ lịch sự hơn Können Sie …?: Könnten Sie …? hoặc Würden Sie … + nguyên thể ở cuối: Würden Sie bitte langsamer sprechen? Khuyên kiểu \"nếu tôi là bạn\": An deiner Stelle würde ich … (với người lạ: An Ihrer Stelle …)."
+  - type: deep_explain
+    text:
+      vi: "sollte, könnte, würde đều thuộc Konjunktiv II – dạng giả định giúp câu mềm hơn, giống tiếng Việt thêm \"nên\", \"có lẽ\", \"phiền … được không\". Ở A2 bạn chỉ cần học chúng như mẫu câu; hệ thống đầy đủ (wäre, hätte, điều kiện không có thật) học ở B1. Ich hätte gern … bạn học ở A1 cũng là Konjunktiv II. Chỉ cần một dạng lịch sự: Könnten Sie mir helfen? hoặc Würden Sie mir helfen? – gộp cả hai thành Würden Sie mir helfen können? nghe rườm rà. Với người chưa thân, nhất là về cân nặng hay ăn uống, người Đức thường chỉ khuyên khi được hỏi."
+  - type: example
+    target: Du arbeitest zu viel. Du solltest mehr schlafen.
+    target_lang: de
+    translation:
+      vi: Bạn làm việc nhiều quá. Bạn nên ngủ nhiều hơn.
+    note:
+      vi: "Khuyên bạn bè (du): solltest, nguyên thể schlafen ở cuối câu."
+  - type: example
+    target: Herr Becker, Sie sollten sich mehr bewegen.
+    target_lang: de
+    translation:
+      vi: Ông Becker, ông nên vận động nhiều hơn.
+    note:
+      vi: "Nói với người lạ, người lớn tuổi (Sie): Sie sollten. sich bewegen là động từ phản thân của bài 1."
+  - type: example
+    target: Du könntest die Treppe nehmen und nicht den Aufzug.
+    target_lang: de
+    translation:
+      vi: Bạn có thể đi cầu thang bộ thay vì đi thang máy.
+    note:
+      vi: "könntest = gợi ý một cách làm, nhẹ hơn solltest."
+  - type: example
+    target: Entschuldigung, könnten Sie mir bitte helfen?
+    target_lang: de
+    translation:
+      vi: Xin lỗi, anh/chị có thể giúp tôi được không ạ?
+    note:
+      vi: "Hỏi người lạ (Sie). helfen đi với Dativ: mir."
+  - type: example
+    target: Würden Sie bitte das Fenster aufmachen?
+    target_lang: de
+    translation:
+      vi: Phiền anh/chị mở giúp cửa sổ được không ạ?
+    note:
+      vi: "Würden Sie + nguyên thể ở cuối câu = lời nhờ rất lịch sự."
+  - type: example
+    target: An deiner Stelle würde ich mit dem Rauchen aufhören.
+    target_lang: de
+    translation:
+      vi: Nếu mình là bạn, mình sẽ bỏ thuốc lá.
+    note:
+      vi: "Nói với bạn (du): deiner. An deiner Stelle ở vị trí 1, würde ở vị trí 2; aufhören là động từ tách nhưng đứng nguyên ở cuối vì là nguyên thể."
+  - type: example
+    target: "Der Arzt sagt, ich soll nicht mehr rauchen. – Dann solltest du wirklich aufhören."
+    target_lang: de
+    translation:
+      vi: "Bác sĩ bảo tớ không được hút thuốc nữa. – Thế thì cậu thật sự nên bỏ đi."
+    note:
+      vi: "soll = lời dặn của bác sĩ (sollen ở hiện tại); solltest = lời khuyên của người bạn (Konjunktiv II)."
+  - type: example
+    target: "Ich konnte gestern nicht schlafen. – Du solltest am Abend keinen Kaffee trinken."
+    target_lang: de
+    translation:
+      vi: "Hôm qua mình không ngủ được. – Buổi tối bạn không nên uống cà phê."
+    note:
+      vi: "konnte (không có ö) là quá khứ \"đã có thể\"; solltest ở đây là lời khuyên cho hiện tại."
+  - type: common_mistake
+    wrong: Du solltest mehr schläfst.
+    right: Du solltest mehr schlafen.
+    target_lang: de
+    note:
+      vi: "Sau sollte, động từ chính ở nguyên thể và đứng cuối câu."
+  - type: common_mistake
+    wrong: Könntest Sie mir helfen?
+    right: Könnten Sie mir helfen?
+    target_lang: de
+    note:
+      vi: "Với Sie, động từ chia như số nhiều: könnten (có -n)."
+  - type: common_mistake
+    wrong: An deiner Stelle ich würde zum Arzt gehen.
+    right: An deiner Stelle würde ich zum Arzt gehen.
+    target_lang: de
+    note:
+      vi: "An deiner Stelle đã chiếm vị trí 1, nên würde phải đứng ngay sau."
+  - type: common_mistake
+    wrong: Du sollst weniger arbeiten.
+    right: Du solltest weniger arbeiten.
+    target_lang: de
+    note:
+      vi: "Khi chính bạn khuyên: câu trái không sai ngữ pháp, nhưng nghĩa là \"(người ta dặn) bạn phải làm ít đi\". Lời khuyên của chính bạn là du solltest."
+  - type: summary
+    points:
+      - vi: "Khuyên: du solltest / Sie sollten + nguyên thể cuối câu."
+      - vi: "Gợi ý: du könntest / Sie könnten (có ö, khác konnte)."
+      - vi: "du sollst = lời dặn của người khác; du solltest = lời khuyên."
+      - vi: "Nhờ lịch sự: Könnten Sie …? · Würden Sie …?"
+      - vi: "An deiner Stelle / An Ihrer Stelle würde ich … (V2: würde đứng thứ hai)."
+      - vi: "Từ vựng lối sống: rauchen, mit dem Rauchen aufhören, abnehmen, zunehmen, regelmäßig, ungesund."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u04l3-mcq-solltest-schlafen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u04-g-sollte-koennte
+    prompt:
+      stem: "Bạn khuyên bạn thân: \"Bạn nên ngủ nhiều hơn.\" Chọn câu đúng."
+      stem_lang: vi
+      options:
+        - { id: m2w, text: Du solltest mehr schlafen., lang: de }
+        - { id: t8r, text: Du solltest mehr schläfst., lang: de }
+        - { id: h5c, text: Du solltet mehr schlafen., lang: de }
+        - { id: z1q, text: Du solltest schlafen mehr., lang: de }
+    answer:
+      correct_option_id: m2w
+    explanation:
+      vi: "du → solltest; động từ chính schlafen ở nguyên thể và đứng cuối câu. solltet là dạng của ihr."
+    display_answer: Du solltest mehr schlafen.
+
+  - key: de:exercise:a2u04l3-mcq-koenntest
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-g-sollte-koennte
+    prompt:
+      stem: "Chọn từ đúng để gợi ý cho bạn: \"Du ___ am Abend joggen.\" (Bạn có thể thử chạy bộ buổi tối.)"
+      stem_lang: vi
+      options:
+        - { id: c4n, text: könntest, lang: de }
+        - { id: v7e, text: konntest, lang: de }
+        - { id: k2s, text: könntet, lang: de }
+        - { id: w6b, text: könnte, lang: de }
+    answer:
+      correct_option_id: c4n
+    explanation:
+      vi: "Gợi ý dùng könnte (có ö); với du thêm -st: könntest. konntest (không có ö) là quá khứ \"đã có thể\"; könntet là dạng của ihr; könnte là dạng của ich/er."
+    display_answer: könntest
+
+  - key: de:exercise:a2u04l3-listen-an-deiner-stelle
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-g-wuerde-hoeflich
+    prompt:
+      audio_asset_id: null
+      fallback_text: "An deiner Stelle würde ich weniger Kaffee trinken und mehr Wasser."
+      options:
+        - { id: f8j, text: "Người nói khuyên uống ít cà phê hơn và uống nhiều nước hơn.", lang: vi }
+        - { id: q3y, text: "Người nói khuyên uống nhiều cà phê hơn và ít nước hơn.", lang: vi }
+        - { id: e7u, text: "Người nói kể rằng mình đã bỏ cà phê.", lang: vi }
+        - { id: r1d, text: "Người nói mời bạn đi uống cà phê.", lang: vi }
+    answer:
+      correct_option_id: f8j
+    explanation:
+      vi: "An deiner Stelle würde ich … = nếu mình là bạn, mình sẽ … (một lời khuyên). weniger Kaffee = ít cà phê hơn, mehr Wasser = nhiều nước hơn."
+    display_answer: "Người nói khuyên uống ít cà phê hơn và uống nhiều nước hơn."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u04l3-fill-solltest-solltet
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-g-sollte-koennte
+    prompt:
+      template: "Du {{b1}} (sollen, Konjunktiv II) weniger Süßigkeiten essen, und ihr {{b2}} (sollen, Konjunktiv II) mehr Sport machen."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [solltest]
+        b2: [solltet]
+    known_wrong:
+      - answer: sollst
+        feedback_vi: "sollst là lời dặn ở hiện tại. Lời khuyên dùng Konjunktiv II: du solltest."
+        error_tag: konjunktiv_form
+      - answer: sollt
+        feedback_vi: "sollt là lời dặn ở hiện tại. Lời khuyên với ihr: solltet."
+        error_tag: konjunktiv_form
+      - answer: sollten
+        feedback_vi: "sollten là dạng của wir, sie, Sie. du → solltest, ihr → solltet."
+        error_tag: verb_form
+    explanation:
+      vi: "Lời khuyên dùng sollte + đuôi theo ngôi: du solltest, ihr solltet. Động từ chính (essen, machen) ở nguyên thể cuối câu."
+    display_answer: Du solltest weniger Süßigkeiten essen, und ihr solltet mehr Sport machen.
+
+  - key: de:exercise:a2u04l3-fill-koennten-wuerden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-wuerde-hoeflich
+    prompt:
+      template: "{{b1}} (können, Konjunktiv II) Sie mir bitte helfen? – Gern. Und {{b2}} (werden, Konjunktiv II) Sie bitte hier unterschreiben?"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Könnten]
+        b2: [Würden]
+    known_wrong:
+      - answer: Können
+        feedback_vi: "Können Sie …? đúng nhưng chưa phải dạng lịch sự hơn mà đề yêu cầu: Könnten Sie …?"
+        error_tag: konjunktiv_form
+      - answer: Konnten
+        feedback_vi: "Konnten (không có ö) là quá khứ. Nhờ lịch sự: Könnten."
+        error_tag: konjunktiv_form
+      - answer: Werden
+        feedback_vi: "Werden Sie …? không phải lời nhờ. Nhờ lịch sự: Würden Sie …?"
+        error_tag: konjunktiv_form
+      - answer: Wurden
+        feedback_vi: "Wurden (không có ü) là quá khứ của werden. Nhờ lịch sự: Würden."
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Dạng lịch sự (Konjunktiv II) có umlaut: können → Könnten Sie …?, werden → Würden Sie …? Nguyên thể (helfen, unterschreiben) ở cuối câu."
+    display_answer: "Könnten Sie mir bitte helfen? – Gern. Und würden Sie bitte hier unterschreiben?"
+
+  - key: de:exercise:a2u04l3-tr-rauchen-aufhoeren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-aufhoeren
+    prompt:
+      source_text: "Bạn nên bỏ thuốc lá. (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Du solltest mit dem Rauchen aufhören.
+        - Du solltest aufhören zu rauchen.
+        - Du solltest nicht mehr rauchen.
+    known_wrong:
+      - answer: Du solltest mit dem Rauchen aufhörst.
+        feedback_vi: "Sau solltest, động từ chính ở nguyên thể: aufhören."
+        error_tag: verb_form
+      - answer: Du solltest mit das Rauchen aufhören.
+        feedback_vi: "mit đi với Dativ: mit dem Rauchen."
+        error_tag: case_dat_akk
+      - answer: Du solltet mit dem Rauchen aufhören.
+        feedback_vi: "solltet là dạng của ihr; với du là solltest."
+        error_tag: verb_form
+    explanation:
+      vi: "Lời khuyên với du: Du solltest … + nguyên thể cuối câu. \"Bỏ thuốc lá\" = mit dem Rauchen aufhören (mit + Dativ, das Rauchen viết hoa vì là danh từ)."
+    display_answer: Du solltest mit dem Rauchen aufhören.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u04l3-wb-an-deiner-stelle
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-wuerde-hoeflich
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu mình là bạn, mình sẽ đi khám bác sĩ.\""
+      tokens:
+        - { id: t-arzt, text: Arzt }
+        - { id: t-wuerde, text: würde }
+        - { id: t-stelle, text: Stelle }
+        - { id: t-gehen, text: gehen }
+        - { id: t-an, text: an }
+        - { id: t-werde, text: werde }
+        - { id: t-ich, text: ich }
+        - { id: t-zum, text: zum }
+        - { id: t-deiner, text: deiner }
+    answer:
+      orders:
+        - [t-an, t-deiner, t-stelle, t-wuerde, t-ich, t-zum, t-arzt, t-gehen]
+        - [t-ich, t-wuerde, t-an, t-deiner, t-stelle, t-zum, t-arzt, t-gehen]
+    explanation:
+      vi: "Mẫu khuyên: An deiner Stelle würde ich … + nguyên thể cuối câu. Khi An deiner Stelle ở vị trí 1 thì würde đứng thứ hai, rồi đến ich. werde là thì tương lai, không phải dạng giả định."
+    display_answer: An deiner Stelle würde ich zum Arzt gehen.
+
+  - key: de:exercise:a2u04l3-wb-sie-sollten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-regelmaessig
+    prompt:
+      instruction: "Bác sĩ nói với bệnh nhân (Sie). Sắp xếp thành câu: \"Ông nên tập thể thao đều đặn.\""
+      tokens:
+        - { id: t-machen, text: machen }
+        - { id: t-sport, text: Sport }
+        - { id: t-solltest, text: solltest }
+        - { id: t-sie, text: Sie }
+        - { id: t-regelmaessig, text: regelmäßig }
+        - { id: t-sollten, text: sollten }
+    answer:
+      orders:
+        - [t-sie, t-sollten, t-regelmaessig, t-sport, t-machen]
+    explanation:
+      vi: "Với Sie: sollten. Trạng từ regelmäßig đứng trước tân ngữ Sport, nguyên thể machen ở cuối câu. solltest là dạng của du."
+    display_answer: Sie sollten regelmäßig Sport machen.
+
+  - key: de:exercise:a2u04l3-tr-langsamer-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-g-wuerde-hoeflich
+    prompt:
+      source_text: Könnten Sie bitte langsamer sprechen?
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh có thể nói chậm hơn được không?
+        - Chị có thể nói chậm hơn được không?
+        - Ông có thể nói chậm hơn được không?
+        - Bà có thể nói chậm hơn được không?
+        - Anh có thể nói chậm hơn được không ạ?
+        - Chị có thể nói chậm hơn được không ạ?
+        - Ông có thể nói chậm hơn được không ạ?
+        - Bà có thể nói chậm hơn được không ạ?
+        - Anh làm ơn nói chậm hơn được không?
+        - Chị làm ơn nói chậm hơn được không?
+        - Làm ơn nói chậm hơn được không?
+        - Xin vui lòng nói chậm hơn.
+        - Bạn có thể nói chậm hơn được không?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh có thể nói nhanh hơn được không?
+        feedback_vi: "langsamer = chậm hơn (so sánh hơn của langsam), không phải nhanh hơn."
+        error_tag: meaning
+      - answer: Anh đã có thể nói chậm hơn.
+        feedback_vi: "Könnten Sie …? là lời nhờ lịch sự, không phải câu kể về quá khứ."
+        error_tag: meaning
+    explanation:
+      vi: "Könnten Sie …? là lời nhờ lịch sự (\"có thể … được không ạ\"); langsamer = chậm hơn."
+    display_answer: Anh có thể nói chậm hơn được không?
+
+  - key: de:exercise:a2u04l3-mcq-an-ihrer-stelle
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-wuerde-hoeflich
+    prompt:
+      stem: "Đồng nghiệp lớn tuổi (bạn xưng Sie) nói mình rất căng thẳng. Bạn khuyên ông ấy nghỉ giải lao. Câu nào đúng và hợp ngữ vực?"
+      stem_lang: vi
+      options:
+        - { id: p4h, text: An Ihrer Stelle würde ich eine Pause machen., lang: de }
+        - { id: d9a, text: An deiner Stelle würde ich eine Pause machen., lang: de }
+        - { id: s2l, text: An Ihrer Stelle ich würde eine Pause machen., lang: de }
+        - { id: y8o, text: An Ihrer Stelle würde ich eine Pause mache., lang: de }
+    answer:
+      correct_option_id: p4h
+    explanation:
+      vi: "Với người xưng Sie dùng An Ihrer Stelle (deiner là cho du). würde phải đứng ở vị trí 2, ngay sau An Ihrer Stelle; nguyên thể machen ở cuối câu."
+    display_answer: An Ihrer Stelle würde ich eine Pause machen.

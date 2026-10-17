@@ -1,0 +1,390 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u04-in-der-apotheke
+order_index: 4
+level: a2
+title:
+  vi: Ở hiệu thuốc – wenn điều kiện (Wenn du Fieber hast, …)
+objectives:
+  - vi: Mua thuốc ở hiệu thuốc và hỏi cách dùng (Wie oft muss ich die Tabletten einnehmen?).
+  - vi: Hiểu lời dặn của dược sĩ và khi nào nên đi bác sĩ.
+  - vi: Nói điều kiện với wenn, động từ đứng cuối câu phụ (Wenn du Fieber hast, geh zum Arzt).
+  - vi: Gọi xe cứu thương trong trường hợp khẩn cấp.
+estimated_minutes: 17
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a2u04-du-solltest]
+items:
+  - item: de:item:a2u04-g-wenn-konditional
+  - item: de:item:a2u04-medikament
+  - item: de:item:a2u04-salbe
+  - item: de:item:a2u04-allergie
+  - item: de:item:a2u04-schmerz
+  - item: de:item:a2u04-krankenkasse
+  - item: de:item:a2u04-versichertenkarte
+  - item: de:item:a2u04-notfall
+  - item: de:item:a2u04-krankenwagen
+  - item: de:item:a2u04-einnehmen
+  - item: de:item:a2u04-nebenwirkung
+  - item: de:item:a2u04-verschreiben
+  - item: de:item:a2u04-rezeptfrei
+  - item: de:item:a2u04-pflaster
+  - item: de:item:a2u04-tropfen
+  - item: de:item:a2u04-wirken
+  - item: de:item:a2u04-notaufnahme
+  - item: de:item:a2u04-kopfschmerzen
+  - item: de:item:a2u04-apotheker
+  - item: de:item:a1u05-g-imperativ
+    role: reuse
+  - item: de:item:a1u08-g-wie-oft-mal
+    role: reuse
+  - item: de:item:a2u03-g-nebensatz-verbletzt
+    role: reuse
+  - item: de:item:a2u03-g-nebensatz-vorne
+    role: reuse
+  - item: de:item:a1u05-apotheke
+    role: reuse
+  - item: de:item:a1u02-arzt
+    role: reuse
+  - item: de:item:a1u02-krankenhaus
+    role: reuse
+  - item: de:item:a1u08-fieber
+    role: reuse
+  - item: de:item:a1u08-tablette
+    role: reuse
+  - item: de:item:a1u08-rezept
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn mua được thuốc ở hiệu thuốc, hiểu dược sĩ dặn uống thế nào, nói được \"nếu … thì …\" bằng wenn và biết gọi xe cứu thương khi khẩn cấp."
+  - type: explain
+    text:
+      vi: "wenn mở đầu câu phụ nêu một điều kiện có thể xảy ra, giống \"nếu\" trong tiếng Việt. Như weil và dass, động từ chia của câu wenn đứng cuối: wenn du Fieber hast (không phải wenn du hast Fieber). Hai câu luôn ngăn nhau bằng dấu phẩy."
+  - type: explain
+    text:
+      vi: "Câu wenn đứng đầu chiếm vị trí 1, nên câu chính bắt đầu ngay bằng động từ: Wenn es nicht besser wird, gehe ich zum Arzt. Tiếng Việt có chữ \"thì\", tiếng Đức không cần (có thể thêm dann: …, dann gehe ich zum Arzt). Câu chính là mệnh lệnh thì động từ vốn đã đứng đầu: Wenn du Fieber hast, geh zum Arzt."
+  - type: explain
+    text:
+      vi: "Câu wenn cũng có thể đứng sau, khi đó câu chính giữ trật tự bình thường: Ich gehe zum Arzt, wenn es nicht besser wird. Đừng nhầm wenn (nếu) với wann (khi nào? – từ để hỏi)."
+  - type: explain
+    text:
+      vi: "Ở hiệu thuốc: Ich brauche etwas gegen Kopfschmerzen. · Haben Sie eine Salbe gegen …? · Wie oft muss ich das einnehmen? Dược sĩ hay hỏi: Haben Sie Allergien? Nehmen Sie andere Medikamente? Viên thuốc thì einnehmen hoặc nehmen, không dùng trinken."
+  - type: deep_explain
+    text:
+      vi: "Ở Đức, thuốc kê đơn chỉ bán ở hiệu thuốc (Apotheke) và cần đơn bác sĩ (Rezept); nhiều thuốc không cần đơn cũng chỉ có ở Apotheke chứ không có ở siêu thị. Khi đi khám, bạn mang thẻ bảo hiểm (Versichertenkarte) của Krankenkasse. Số khẩn cấp ở Đức: 112 (cấp cứu, cứu hoả), 110 (cảnh sát); ở Áo và Thụy Sĩ xe cứu thương là 144, số 112 cũng gọi được – các thông tin này có thể thay đổi, hãy kiểm tra lại khi bạn sang. Bài học chỉ dạy ngôn ngữ, không thay lời khuyên của bác sĩ hay dược sĩ."
+  - type: example
+    target: Wenn du Fieber hast, geh zum Arzt.
+    target_lang: de
+    translation:
+      vi: Nếu bạn bị sốt thì đi khám bác sĩ đi.
+    note:
+      vi: "Nói với bạn (du). hast đứng cuối câu wenn; câu chính là mệnh lệnh: geh."
+  - type: example
+    target: Wenn die Schmerzen nicht besser werden, gehe ich morgen zum Arzt.
+    target_lang: de
+    translation:
+      vi: Nếu không đỡ đau thì mai tôi sẽ đi khám bác sĩ.
+    note:
+      vi: "werden ở cuối câu wenn; câu chính bắt đầu ngay bằng gehe (động từ ở vị trí 2 của cả câu)."
+  - type: example
+    target: Ich lege mich hin, wenn ich Kopfschmerzen habe.
+    target_lang: de
+    translation:
+      vi: Tôi nằm nghỉ khi bị đau đầu.
+    note:
+      vi: "Câu wenn đứng sau: câu chính giữ trật tự bình thường, habe ở cuối câu phụ."
+  - type: example
+    target: "Haben Sie etwas gegen Husten? – Ja, die Tabletten hier sind rezeptfrei."
+    target_lang: de
+    translation:
+      vi: "Chị có thuốc gì trị ho không? – Có, thuốc viên này không cần đơn."
+    note:
+      vi: "Khách và dược sĩ nói Sie. gegen + Akkusativ: etwas gegen Husten."
+  - type: example
+    target: Wenn ich ein Rezept habe, gehe ich in die Apotheke.
+    target_lang: de
+    translation:
+      vi: Khi có đơn thuốc, tôi đi đến hiệu thuốc.
+    note:
+      vi: "habe ở cuối câu wenn; gehe đứng ngay sau dấu phẩy. in die Apotheke: đi tới (Wohin?) nên dùng Akkusativ."
+  - type: example
+    target: Nehmen Sie die Tabletten dreimal am Tag nach dem Essen ein.
+    target_lang: de
+    translation:
+      vi: Anh/chị uống thuốc ba lần một ngày, sau khi ăn.
+    note:
+      vi: "Mệnh lệnh với Sie; einnehmen là động từ tách nên ein ra cuối câu."
+  - type: example
+    target: Hilfe! Das ist ein Notfall. Rufen Sie bitte einen Krankenwagen!
+    target_lang: de
+    translation:
+      vi: Cứu với! Đây là trường hợp khẩn cấp. Làm ơn gọi xe cứu thương!
+    note:
+      vi: "Nhờ người lạ (Sie). einen Krankenwagen là Akkusativ giống đực."
+  - type: common_mistake
+    wrong: Wenn du hast Fieber, bleib zu Hause.
+    right: Wenn du Fieber hast, bleib zu Hause.
+    target_lang: de
+    note:
+      vi: "Trong câu wenn, động từ chia đứng cuối."
+  - type: common_mistake
+    wrong: Wenn es nicht besser wird, ich gehe zum Arzt.
+    right: Wenn es nicht besser wird, gehe ich zum Arzt.
+    target_lang: de
+    note:
+      vi: "Câu wenn đứng đầu chiếm vị trí 1, nên động từ câu chính đứng ngay sau dấu phẩy, chủ ngữ theo sau."
+  - type: common_mistake
+    wrong: Wann du Fieber hast, geh zum Arzt.
+    right: Wenn du Fieber hast, geh zum Arzt.
+    target_lang: de
+    note:
+      vi: "wann là \"khi nào?\" để hỏi; \"nếu\" là wenn."
+  - type: summary
+    points:
+      - vi: "wenn = nếu (điều kiện có thể xảy ra); động từ chia ở cuối câu wenn."
+      - vi: "Câu wenn đứng đầu → câu chính bắt đầu bằng động từ: Wenn …, gehe ich …"
+      - vi: "Câu wenn đứng sau → câu chính bình thường: Ich gehe …, wenn …"
+      - vi: "wenn (nếu) ≠ wann (khi nào?)."
+      - vi: "Hiệu thuốc: etwas gegen Kopfschmerzen, rezeptfrei, einnehmen, Nebenwirkungen."
+      - vi: "Khẩn cấp ở Đức: 112 (cấp cứu, cứu hoả), 110 (cảnh sát) – kiểm tra lại khi sang."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u04l4-listen-dreimal
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u04-einnehmen
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Nehmen Sie die Tabletten bitte dreimal am Tag nach dem Essen ein."
+      options:
+        - { id: a3k, text: "Uống thuốc ba lần một ngày, sau khi ăn.", lang: vi }
+        - { id: m8p, text: "Uống thuốc ba lần một ngày, trước khi ăn.", lang: vi }
+        - { id: u5x, text: "Uống ba viên một lần, sau khi ăn.", lang: vi }
+        - { id: g1w, text: "Uống thuốc hai lần một ngày, sau khi ăn.", lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: "dreimal am Tag = ba lần một ngày; nach dem Essen = sau khi ăn (trước khi ăn là vor dem Essen)."
+    display_answer: "Uống thuốc ba lần một ngày, sau khi ăn."
+
+  - key: de:exercise:a2u04l4-listen-nach-drei-tagen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-g-wenn-konditional
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Wenn die Schmerzen nach drei Tagen nicht besser sind, gehen Sie bitte zum Arzt."
+      options:
+        - { id: n4c, text: "Nếu sau ba ngày vẫn không đỡ đau thì nên đi khám bác sĩ.", lang: vi }
+        - { id: e9r, text: "Sau ba ngày phải quay lại hiệu thuốc.", lang: vi }
+        - { id: j2v, text: "Nếu đau thì uống thuốc trong ba ngày.", lang: vi }
+        - { id: o6s, text: "Ba ngày nữa bác sĩ sẽ đến khám.", lang: vi }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: "Wenn … nicht besser sind = nếu không đỡ hơn; nach drei Tagen = sau ba ngày; gehen Sie zum Arzt = hãy đi bác sĩ."
+    display_answer: "Nếu sau ba ngày vẫn không đỡ đau thì nên đi khám bác sĩ."
+
+  - key: de:exercise:a2u04l4-listen-notfall
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-krankenwagen
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hallo, das ist ein Notfall! Ein Mann hat sich am Kopf verletzt. Bitte schicken Sie schnell einen Krankenwagen."
+      options:
+        - { id: w3b, text: "Một người đàn ông bị thương ở đầu; người gọi xin gửi xe cứu thương.", lang: vi }
+        - { id: h7y, text: "Người gọi bị đau đầu và hỏi hiệu thuốc gần nhất.", lang: vi }
+        - { id: k1f, text: "Một người đàn ông bị cảm, cần bác sĩ đến nhà.", lang: vi }
+        - { id: z5m, text: "Người gọi muốn đặt lịch khám cho ngày mai.", lang: vi }
+    answer:
+      correct_option_id: w3b
+    explanation:
+      vi: "hat sich am Kopf verletzt = bị thương ở đầu; schicken Sie einen Krankenwagen = hãy gửi xe cứu thương; Notfall = trường hợp khẩn cấp."
+    display_answer: "Một người đàn ông bị thương ở đầu; người gọi xin gửi xe cứu thương."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u04l4-fill-hast-musst
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-g-wenn-konditional
+    prompt:
+      template: "Wenn du Fieber {{b1}} (haben), {{b2}} (müssen) du im Bett bleiben."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [hast]
+        b2: [musst]
+    known_wrong:
+      - answer: hat
+        feedback_vi: "Chủ ngữ là du: du hast."
+        error_tag: verb_form
+      - answer: muss
+        feedback_vi: "Chủ ngữ là du: du musst."
+        error_tag: verb_form
+      - answer: müsst
+        feedback_vi: "müsst là dạng của ihr; với du là musst (không có ü)."
+        error_tag: verb_form
+    explanation:
+      vi: "Trong câu wenn, hast đứng cuối. Câu chính bắt đầu ngay bằng động từ musst (vì câu wenn đã chiếm vị trí 1), nguyên thể bleiben ở cuối."
+    display_answer: Wenn du Fieber hast, musst du im Bett bleiben.
+
+  - key: de:exercise:a2u04l4-fill-krankenwagen-notfall
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-notfall
+    prompt:
+      template: "Rufen Sie sofort einen {{b1}} (= das Auto für Kranke), wenn es ein {{b2}} (= eine gefährliche Situation) ist."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Krankenwagen]
+        b2: [Notfall]
+    known_wrong:
+      - answer: Krankenhaus
+        feedback_vi: "das Krankenhaus là bệnh viện; xe cứu thương là der Krankenwagen."
+        error_tag: vocabulary
+      - answer: Notaufnahme
+        feedback_vi: "die Notaufnahme là khoa cấp cứu của bệnh viện; trường hợp khẩn cấp là der Notfall."
+        error_tag: vocabulary
+    explanation:
+      vi: "einen Krankenwagen rufen = gọi xe cứu thương (giống đực, Akkusativ einen). ein Notfall = một trường hợp khẩn cấp; ist đứng cuối câu wenn."
+    display_answer: Rufen Sie sofort einen Krankenwagen, wenn es ein Notfall ist.
+
+  - key: de:exercise:a2u04l4-tr-fieber-zu-hause
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-wenn-konditional
+    prompt:
+      source_text: "Nếu bạn bị sốt thì ở nhà đi. (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wenn du Fieber hast, bleib zu Hause.
+        - Wenn du Fieber hast, bleibe zu Hause.
+        - Wenn du Fieber hast, dann bleib zu Hause.
+        - Wenn du Fieber hast, dann bleibe zu Hause.
+        - Bleib zu Hause, wenn du Fieber hast.
+        - Bleibe zu Hause, wenn du Fieber hast.
+        - Wenn du Fieber hast, bleib zuhause.
+        - Bleib zuhause, wenn du Fieber hast.
+        - Wenn du Fieber hast, bleib daheim.
+    known_wrong:
+      - answer: Wenn du hast Fieber, bleib zu Hause.
+        feedback_vi: "Trong câu wenn, động từ hast đứng cuối: wenn du Fieber hast."
+        error_tag: verb_position
+      - answer: Wenn du Fieber hast, du bleibst zu Hause.
+        feedback_vi: "Sau câu wenn, động từ câu chính đứng ngay sau dấu phẩy; ở đây là lời khuyên nên dùng mệnh lệnh: bleib zu Hause."
+        error_tag: verb_position
+      - answer: Wann du Fieber hast, bleib zu Hause.
+        feedback_vi: "wann là \"khi nào?\" để hỏi; \"nếu\" là wenn."
+        error_tag: conjunction
+      - answer: Wenn du Fieber hast, bleib nach Hause.
+        feedback_vi: "Ở nhà (Wo?) là zu Hause; nach Hause là về nhà."
+        error_tag: preposition
+    explanation:
+      vi: "wenn + câu phụ, động từ hast ở cuối. Câu chính là mệnh lệnh với du: bleib (hoặc bleibe) zu Hause. Câu wenn có thể đứng trước hoặc sau."
+    display_answer: Wenn du Fieber hast, bleib zu Hause.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u04l4-wb-nicht-besser
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-wenn-konditional
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu không đỡ hơn thì tôi sẽ đi khám bác sĩ.\""
+      tokens:
+        - { id: t-gehe, text: gehe }
+        - { id: t-besser, text: besser }
+        - { id: t-arzt, text: Arzt }
+        - { id: t-wann, text: wann }
+        - { id: t-es, text: es }
+        - { id: t-zum, text: zum }
+        - { id: t-wird, text: wird }
+        - { id: t-ich, text: ich }
+        - { id: t-nicht, text: nicht }
+        - { id: t-wenn, text: wenn }
+    answer:
+      orders:
+        - [t-wenn, t-es, t-nicht, t-besser, t-wird, t-gehe, t-ich, t-zum, t-arzt]
+        - [t-ich, t-gehe, t-zum, t-arzt, t-wenn, t-es, t-nicht, t-besser, t-wird]
+    explanation:
+      vi: "Trong câu wenn, wird đứng cuối. Câu wenn đứng đầu thì câu chính bắt đầu bằng gehe: Wenn es nicht besser wird, gehe ich zum Arzt. Cũng có thể đặt câu wenn sau: Ich gehe zum Arzt, wenn es nicht besser wird. wann là từ để hỏi."
+    display_answer: Wenn es nicht besser wird, gehe ich zum Arzt.
+
+  - key: de:exercise:a2u04l4-mcq-etwas-gegen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-kopfschmerzen
+    prompt:
+      stem: "Ở hiệu thuốc, bạn muốn mua thuốc đau đầu và nói lịch sự. Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: x2d, text: Ich hätte gern etwas gegen Kopfschmerzen., lang: de }
+        - { id: b6q, text: Ich habe gern etwas gegen Kopfschmerzen., lang: de }
+        - { id: l4n, text: Ich hätte gern etwas gegen Kopfschmerzen haben., lang: de }
+        - { id: r9t, text: Hätte ich gern etwas gegen Kopfschmerzen., lang: de }
+    answer:
+      correct_option_id: x2d
+    explanation:
+      vi: "Ich hätte gern … là cụm gọi hàng lịch sự (học từ A1); etwas gegen + Akkusativ = thuốc trị … Ich habe gern nghĩa là \"tôi thích có\"; không thêm haben ở cuối; câu kể không mở đầu bằng động từ."
+    display_answer: Ich hätte gern etwas gegen Kopfschmerzen.
+
+  - key: de:exercise:a2u04l4-tr-salbe-verschrieben-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-verschreiben
+    prompt:
+      source_text: Die Ärztin hat mir eine Salbe verschrieben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bác sĩ đã kê cho tôi một loại thuốc mỡ.
+        - Bác sĩ kê cho tôi một loại thuốc mỡ.
+        - Bác sĩ đã kê cho tôi thuốc mỡ.
+        - Bác sĩ kê cho tôi thuốc mỡ.
+        - Bác sĩ đã kê đơn thuốc mỡ cho tôi.
+        - Bác sĩ kê đơn thuốc mỡ cho tôi.
+        - Bác sĩ đã kê cho tôi một tuýp thuốc mỡ.
+        - Bác sĩ đã kê cho tôi một loại thuốc bôi.
+        - Bác sĩ đã kê cho tôi thuốc bôi.
+        - Nữ bác sĩ đã kê cho tôi một loại thuốc mỡ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bác sĩ đã viết cho tôi một lá thư.
+        feedback_vi: "verschreiben là kê đơn thuốc, không phải \"viết thư\" (schreiben)."
+        error_tag: meaning
+      - answer: Tôi đã kê cho bác sĩ một loại thuốc mỡ.
+        feedback_vi: "Chủ ngữ là die Ärztin (bác sĩ), mir (cho tôi) ở Dativ."
+        error_tag: meaning
+    explanation:
+      vi: "verschreiben = kê (đơn); hat … verschrieben là Perfekt (Partizip không có ge- vì tiền tố ver-). mir = cho tôi, eine Salbe = một loại thuốc mỡ."
+    display_answer: Bác sĩ đã kê cho tôi một loại thuốc mỡ.

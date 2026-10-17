@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u04-sich-fuehlen
+order_index: 1
+level: a2
+title:
+  vi: Bạn thấy trong người thế nào? – động từ phản thân (Wie fühlst du dich?)
+objectives:
+  - vi: Nói mình cảm thấy thế nào trong người (Ich fühle mich müde / schwach / fit).
+  - vi: Chia động từ phản thân với mich, dich, sich, uns, euch, sich, kể cả khi đảo chủ ngữ và ở Perfekt.
+  - vi: Nói về nghỉ ngơi và vận động (sich ausruhen, sich erholen, sich bewegen).
+  - vi: Kể mình bị cảm, bị thương (Ich habe mich erkältet / verletzt).
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u03-wiederholung]
+items:
+  - item: de:item:a2u04-g-reflexiv-akk
+  - item: de:item:a2u04-sich-fuehlen
+  - item: de:item:a2u04-sich-ausruhen
+  - item: de:item:a2u04-sich-erholen
+  - item: de:item:a2u04-sich-beeilen
+  - item: de:item:a2u04-sich-bewegen
+  - item: de:item:a2u04-sich-verletzen
+  - item: de:item:a2u04-sich-erkaelten
+  - item: de:item:a2u04-fit
+  - item: de:item:a2u04-schwach
+  - item: de:item:a2u04-stress
+  - item: de:item:a2u04-sich-hinlegen
+  - item: de:item:a2u04-sich-entspannen
+  - item: de:item:a2u04-sich-wohlfuehlen
+  - item: de:item:a2u04-erschoepft
+  - item: de:item:a2u04-schwindlig
+  - item: de:item:a1u08-g-wehtun
+    role: reuse
+  - item: de:item:a2u02-g-positionsverben
+    role: reuse
+  - item: de:item:p0u1-muede
+    role: reuse
+  - item: de:item:a1u06-joggen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được mình thấy trong người thế nào (Ich fühle mich müde), khuyên bạn bè nghỉ ngơi (Ruh dich aus!) và kể mình bị cảm, bị thương (Ich habe mich erkältet)."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"tôi thấy mệt\", còn tiếng Đức nói \"tôi thấy mình mệt\": Ich fühle mich müde. Động từ cần thêm một đại từ chỉ chính chủ ngữ như vậy gọi là động từ phản thân; từ điển ghi kèm sich: sich fühlen, sich ausruhen."
+  - type: explain
+    text:
+      vi: "Đại từ phản thân (Akkusativ): ich → mich, du → dich, er/sie/es → sich, wir → uns, ihr → euch, sie/Sie → sich. Chỉ ngôi thứ ba và Sie có dạng mới sich; các ngôi khác giống đại từ Akkusativ bạn đã biết. sich luôn viết thường, kể cả khi đi với Sie: Wie fühlen Sie sich?"
+  - type: explain
+    text:
+      vi: "Đại từ phản thân đứng ngay sau động từ chia: Ich fühle mich besser. Khi câu mở đầu bằng trạng ngữ, động từ vẫn ở vị trí 2, chủ ngữ đại từ theo sau rồi mới đến đại từ phản thân: Heute fühle ich mich besser. Với động từ tách, tiền tố vẫn ra cuối câu: Ich ruhe mich am Wochenende aus."
+  - type: explain
+    text:
+      vi: "Ở Perfekt, động từ phản thân đi với haben, đại từ đứng sau haben: Ich habe mich erkältet. Trong câu mệnh lệnh vẫn giữ đại từ: Beeil dich! · Beeilen Sie sich! · Ruh dich aus!"
+  - type: deep_explain
+    text:
+      vi: "Nhiều động từ có cả dạng có sich và không có sich, nghĩa khác nhau: Ich bewege mich (tôi vận động) – Ich bewege den Tisch (tôi xê dịch cái bàn); Ich habe mich verletzt (tôi bị thương) – Ich habe ihn verletzt (tôi làm anh ấy bị thương). Với động từ đặt để: Ich lege das Buch auf den Tisch – Ich lege mich ins Bett (tôi nằm lên giường), vẫn là Wohin? + Akkusativ như bài giới từ hai cách. Một số cách nói sức khoẻ không dùng sich mà dùng Dativ: Mir geht es gut, Mir tut der Kopf weh, Mir ist schwindlig."
+  - type: example
+    target: "Wie fühlst du dich heute? – Danke, ich fühle mich schon besser."
+    target_lang: de
+    translation:
+      vi: "Hôm nay bạn thấy trong người thế nào? – Cảm ơn, mình thấy đỡ hơn rồi."
+    note:
+      vi: "Hai người bạn nói du: du → dich, ich → mich."
+  - type: example
+    target: "Wie fühlen Sie sich, Herr Koch? – Ich fühle mich noch schwach."
+    target_lang: de
+    translation:
+      vi: "Ông Koch thấy trong người thế nào ạ? – Tôi vẫn còn thấy yếu."
+    note:
+      vi: "Nói với người lớn tuổi, người lạ dùng Sie; đại từ phản thân của Sie là sich, viết thường."
+  - type: example
+    target: Ich jogge jeden Morgen. Danach fühle ich mich fit.
+    target_lang: de
+    translation:
+      vi: Sáng nào tôi cũng chạy bộ. Chạy xong tôi thấy rất khoẻ khoắn.
+    note:
+      vi: "Danach ở vị trí 1 → fühle ở vị trí 2, rồi ich, rồi mich."
+  - type: example
+    target: Ich habe mich erkältet. Mir tut der Kopf weh.
+    target_lang: de
+    translation:
+      vi: Tôi bị cảm rồi. Tôi đau đầu.
+    note:
+      vi: "Perfekt với haben: habe mich erkältet. Câu sau dùng Dativ mir với wehtun như bạn đã học."
+  - type: example
+    target: Du bist so müde. Leg dich doch ins Bett!
+    target_lang: de
+    translation:
+      vi: Bạn mệt quá rồi. Lên giường nằm đi!
+    note:
+      vi: "Mệnh lệnh với du: leg dich. Nằm lên giường là hướng tới (Wohin?) nên ins Bett (Akkusativ), như bài giới từ hai cách; doch làm lời khuyên nhẹ nhàng hơn."
+  - type: example
+    target: Wir müssen uns beeilen, der Zug fährt in zehn Minuten.
+    target_lang: de
+    translation:
+      vi: Chúng ta phải nhanh lên, mười phút nữa tàu chạy.
+    note:
+      vi: "Với modal, đại từ phản thân đứng sau động từ chia (müssen uns), nguyên thể beeilen ở cuối."
+  - type: common_mistake
+    wrong: Ich fühle gut.
+    right: Ich fühle mich gut.
+    target_lang: de
+    note:
+      vi: "sich fühlen luôn cần đại từ phản thân khi nói về cảm giác của mình: mich."
+  - type: common_mistake
+    wrong: Ich fühle mir gut.
+    right: Ich fühle mich gut.
+    target_lang: de
+    note:
+      vi: "Câu không có tân ngữ nào khác nên dùng Akkusativ mich, không dùng Dativ mir."
+  - type: common_mistake
+    wrong: Heute ich fühle mich besser.
+    right: Heute fühle ich mich besser.
+    target_lang: de
+    note:
+      vi: "Động từ luôn ở vị trí 2: sau Heute là fühle, rồi mới đến ich."
+  - type: summary
+    points:
+      - vi: "Động từ phản thân: sich fühlen, sich ausruhen, sich erholen, sich beeilen, sich bewegen, sich verletzen, sich erkälten."
+      - vi: "mich, dich, sich, uns, euch, sich – chỉ ngôi thứ ba và Sie dùng sich (viết thường)."
+      - vi: "Đại từ đứng sau động từ chia; khi đảo: Heute fühle ich mich besser."
+      - vi: "Động từ tách: Ich ruhe mich aus. Mệnh lệnh: Ruh dich aus! Beeilen Sie sich!"
+      - vi: "Perfekt với haben: Ich habe mich erkältet / verletzt / gut erholt."
+      - vi: "Mir ist schwindlig, Mir tut der Kopf weh dùng Dativ, không dùng sich."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u04l1-mcq-fuehle-mich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u04-g-reflexiv-akk
+    prompt:
+      stem: "Chọn câu đúng cho: \"Hôm nay tôi thấy mệt.\""
+      stem_lang: vi
+      options:
+        - { id: k4r, text: Ich fühle heute müde., lang: de }
+        - { id: w8d, text: Ich fühle mich heute müde., lang: de }
+        - { id: p2m, text: Ich fühle mir heute müde., lang: de }
+        - { id: x6t, text: Ich fühle sich heute müde., lang: de }
+    answer:
+      correct_option_id: w8d
+    explanation:
+      vi: "sich fühlen cần đại từ phản thân; với ich là mich (Akkusativ). Thiếu mich là sai, mir là Dativ, còn sich chỉ dùng cho ngôi thứ ba và Sie."
+    display_answer: Ich fühle mich heute müde.
+
+  - key: de:exercise:a2u04l1-fill-euch-uns-sich
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-g-reflexiv-akk
+    prompt:
+      template: "Wie fühlt ihr {{b1}}? – Wir fühlen {{b2}} gut. Aber Anna fühlt {{b3}} nicht so gut."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Các bạn thấy trong người thế nào? – Chúng mình thấy khoẻ. Nhưng Anna thấy không khoẻ lắm."
+        - "Gợi ý: ihr → e…, wir → u…, Anna (sie) → s…"
+    answer:
+      blanks:
+        b1: [euch]
+        b2: [uns]
+        b3: [sich]
+    known_wrong:
+      - answer: ihr
+        feedback_vi: "ihr là chủ ngữ; đại từ phản thân của ihr là euch."
+        error_tag: reflexive_form
+      - answer: wir
+        feedback_vi: "wir là chủ ngữ; đại từ phản thân của wir là uns."
+        error_tag: reflexive_form
+      - answer: sie
+        feedback_vi: "Với chủ ngữ ngôi thứ ba (Anna = sie), đại từ phản thân là sich."
+        error_tag: reflexive_form
+    explanation:
+      vi: "ihr → euch, wir → uns giống đại từ Akkusativ; ngôi thứ ba (Anna) dùng dạng riêng sich."
+    display_answer: "Wie fühlt ihr euch? – Wir fühlen uns gut. Aber Anna fühlt sich nicht so gut."
+
+  - key: de:exercise:a2u04l1-listen-erkaeltet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-sich-erkaelten
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Mir geht es leider nicht gut. Ich habe mich erkältet und bleibe heute im Bett."
+      options:
+        - { id: h3q, text: "Người nói bị cảm và hôm nay nằm nghỉ ở nhà.", lang: vi }
+        - { id: z7b, text: "Người nói bị thương nên hôm nay phải đi bác sĩ.", lang: vi }
+        - { id: c5n, text: "Người nói thấy khoẻ và hôm nay đi làm.", lang: vi }
+        - { id: v1e, text: "Người nói đã khỏi cảm và hôm nay đi chơi.", lang: vi }
+    answer:
+      correct_option_id: h3q
+    explanation:
+      vi: "Ich habe mich erkältet = tôi bị cảm; im Bett bleiben = nằm nghỉ trên giường. Mir geht es nicht gut cho biết người nói không khoẻ."
+    display_answer: "Người nói bị cảm và hôm nay nằm nghỉ ở nhà."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u04l1-fill-verletzt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-sich-verletzen
+    prompt:
+      template: "Thomas hat {{b1}} beim Fußball verletzt. – Oh nein! Und du? Hast du {{b2}} auch verletzt?"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [sich]
+        b2: [dich]
+    known_wrong:
+      - answer: er
+        feedback_vi: "er là chủ ngữ; Thomas tự bị thương nên dùng đại từ phản thân sich."
+        error_tag: reflexive_form
+      - answer: dir
+        feedback_vi: "Câu không có tân ngữ nào khác nên dùng Akkusativ: dich."
+        error_tag: case_dat_akk
+      - answer: du
+        feedback_vi: "du là chủ ngữ; đại từ phản thân của du là dich."
+        error_tag: reflexive_form
+    explanation:
+      vi: "sich verletzen = bị thương. Thomas là ngôi thứ ba → sich; du → dich. Ở Perfekt dùng haben: hat sich verletzt, hast dich verletzt."
+    display_answer: "Thomas hat sich beim Fußball verletzt. – Oh nein! Und du? Hast du dich auch verletzt?"
+
+  - key: de:exercise:a2u04l1-fill-fuehlen-sie-sich
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-sich-fuehlen
+    prompt:
+      template: "Wie {{b1}} (sich fühlen) Sie {{b2}} heute, Herr Koch?"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [fühlen]
+        b2: [sich]
+    known_wrong:
+      - answer: fühlt
+        feedback_vi: "Sie (lịch sự) chia như số nhiều: Sie fühlen."
+        error_tag: verb_form
+      - answer: Ihnen
+        feedback_vi: "Ihnen là Dativ. Đại từ phản thân của Sie là sich."
+        error_tag: case_dat_akk
+      - answer: Sie
+        feedback_vi: "Đại từ phản thân của Sie không phải Sie mà là sich (viết thường)."
+        error_tag: reflexive_form
+    explanation:
+      vi: "Với Sie, động từ chia như số nhiều (fühlen) và đại từ phản thân là sich, viết thường."
+    display_answer: Wie fühlen Sie sich heute, Herr Koch?
+
+  - key: de:exercise:a2u04l1-tr-erkaeltet
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u04-sich-erkaelten
+    prompt:
+      source_text: Tôi bị cảm rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe mich erkältet.
+        - Ich bin erkältet.
+        - Ich habe eine Erkältung.
+    known_wrong:
+      - answer: Ich habe mir erkältet.
+        feedback_vi: "Không có tân ngữ nào khác nên dùng Akkusativ: mich."
+        error_tag: case_dat_akk
+      - answer: Ich bin mich erkältet.
+        feedback_vi: "Động từ phản thân ở Perfekt đi với haben: Ich habe mich erkältet."
+        error_tag: aux_verb
+      - answer: Ich habe erkältet.
+        feedback_vi: "Thiếu đại từ phản thân: Ich habe mich erkältet."
+        error_tag: reflexive_missing
+    explanation:
+      vi: "sich erkälten ở Perfekt: Ich habe mich erkältet (haben + mich + Partizip II). Ich bin erkältet và Ich habe eine Erkältung cũng đúng, cùng nghĩa."
+    display_answer: Ich habe mich erkältet.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u04l1-wb-heute-besser
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-reflexiv-akk
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hôm nay tôi thấy khoẻ hơn.\""
+      tokens:
+        - { id: t-mich, text: mich }
+        - { id: t-besser, text: besser }
+        - { id: t-fuehlt, text: fühlt }
+        - { id: t-ich, text: ich }
+        - { id: t-mir, text: mir }
+        - { id: t-heute, text: heute }
+        - { id: t-fuehle, text: fühle }
+    answer:
+      orders:
+        - [t-heute, t-fuehle, t-ich, t-mich, t-besser]
+        - [t-ich, t-fuehle, t-mich, t-heute, t-besser]
+    explanation:
+      vi: "Động từ fühle ở vị trí 2. Mở đầu bằng heute thì ich đứng sau fühle, rồi đến mich: Heute fühle ich mich besser. Mở đầu bằng ich: Ich fühle mich heute besser."
+    display_answer: Heute fühle ich mich besser.
+
+  - key: de:exercise:a2u04l1-wb-gut-erholt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-sich-erholen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cuối tuần tôi đã nghỉ ngơi lại sức rất tốt.\""
+      tokens:
+        - { id: t-erholt, text: erholt }
+        - { id: t-mich, text: mich }
+        - { id: t-bin, text: bin }
+        - { id: t-wochenende, text: Wochenende }
+        - { id: t-gut, text: gut }
+        - { id: t-ich, text: ich }
+        - { id: t-am, text: am }
+        - { id: t-habe, text: habe }
+    answer:
+      orders:
+        - [t-am, t-wochenende, t-habe, t-ich, t-mich, t-gut, t-erholt]
+        - [t-ich, t-habe, t-mich, t-am, t-wochenende, t-gut, t-erholt]
+    explanation:
+      vi: "Động từ phản thân ở Perfekt đi với haben (không dùng bin). habe ở vị trí 2, Partizip II erholt (không có ge- vì tiền tố er-) ở cuối câu; mich đứng ngay sau habe hoặc sau ich khi đảo."
+    display_answer: Am Wochenende habe ich mich gut erholt.
+
+  - key: de:exercise:a2u04l1-tr-bewege-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-sich-bewegen
+    prompt:
+      source_text: Ich bewege mich zu wenig.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi vận động quá ít.
+        - Tôi vận động ít quá.
+        - Tôi ít vận động quá.
+        - Tôi vận động không đủ.
+        - Mình vận động quá ít.
+        - Mình vận động ít quá.
+        - Mình ít vận động quá.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi vận động nhiều quá.
+        feedback_vi: "zu wenig = quá ít, không phải quá nhiều (zu viel)."
+        error_tag: meaning
+      - answer: Tôi di chuyển cái bàn quá ít.
+        feedback_vi: "Có mich nên là tự mình vận động, không phải xê dịch đồ vật."
+        error_tag: meaning
+    explanation:
+      vi: "sich bewegen (có sich) = vận động; zu wenig = quá ít."
+    display_answer: Tôi vận động quá ít.
+
+  - key: de:exercise:a2u04l1-mcq-leg-dich-hin
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-sich-hinlegen
+    prompt:
+      stem: "Bạn thân của bạn nói: \"Ich bin total erschöpft.\" Bạn khuyên bạn ấy nằm nghỉ. Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: q9a, text: Dann leg dich doch hin!, lang: de }
+        - { id: j3s, text: Dann leg dir doch hin!, lang: de }
+        - { id: u6w, text: Dann legen dich doch hin!, lang: de }
+        - { id: e2k, text: Dann leg doch hin!, lang: de }
+    answer:
+      correct_option_id: q9a
+    explanation:
+      vi: "Mệnh lệnh với du của sich hinlegen: leg dich … hin – giữ đại từ Akkusativ dich, tiền tố hin ở cuối. dir là Dativ; legen là dạng của Sie/số nhiều, không đi với dich; bỏ dich thì câu thiếu đại từ phản thân."
+    display_answer: Dann leg dich doch hin!

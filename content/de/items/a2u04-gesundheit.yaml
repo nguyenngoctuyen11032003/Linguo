@@ -1,0 +1,1278 @@
+# Học liệu unit A2U04 "Sức khoẻ" (Gesundheit), tiếng Đức A2.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: động từ phản thân (Akkusativ), thể trạng =================
+  - key: de:item:a2u04-g-reflexiv-akk
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Reflexivpronomen im Akkusativ: mich, dich, sich, uns, euch, sich"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ phản thân cần một đại từ chỉ chính chủ ngữ: ich fühle mich, du fühlst dich, er/sie/es fühlt sich, wir fühlen uns, ihr fühlt euch, sie/Sie fühlen sich. Đại từ đứng sau động từ chia; khi đảo chủ ngữ thì đứng sau chủ ngữ là đại từ: Heute fühle ich mich besser. Ở Perfekt, động từ phản thân đi với haben: Ich habe mich erkältet."
+      examples:
+        - target: "Wie fühlst du dich heute? – Ich fühle mich nicht gut."
+          translation:
+            vi: "Hôm nay bạn thấy trong người thế nào? – Mình thấy không khoẻ."
+        - target: Heute fühle ich mich besser.
+          translation:
+            vi: Hôm nay tôi thấy khoẻ hơn.
+        - target: Wir haben uns im Urlaub gut erholt.
+          translation:
+            vi: Kỳ nghỉ vừa rồi chúng tôi đã nghỉ ngơi lại sức rất tốt.
+      confusion:
+        vi: "Chỉ ngôi thứ ba và Sie dùng dạng mới sich (luôn viết thường, kể cả với Sie: Wie fühlen Sie sich?). ich, du, wir, ihr dùng mich, dich, uns, euch – giống đại từ Akkusativ bạn đã biết."
+
+  - key: de:item:a2u04-sich-fuehlen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich fühlen
+      pos: động từ
+    back:
+      meaning:
+        vi: cảm thấy (trong người)
+      examples:
+        - target: Ich fühle mich heute nicht gut.
+          translation:
+            vi: Hôm nay tôi thấy trong người không khoẻ.
+        - target: Wie fühlen Sie sich, Frau Weber?
+          translation:
+            vi: Bà Weber thấy trong người thế nào ạ?
+      confusion:
+        vi: "Ich fühle mich gut và Mir geht es gut đều dùng được; Ich fühle mich … nói rõ cảm giác của bạn (müde, schwach, fit). Đừng bỏ mich: \"Ich fühle gut\" là sai."
+
+  - key: de:item:a2u04-sich-ausruhen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich ausruhen
+      pos: động từ
+    back:
+      meaning:
+        vi: nghỉ ngơi (cho lại sức)
+      examples:
+        - target: Nach der Arbeit ruhe ich mich eine Stunde aus.
+          translation:
+            vi: Sau giờ làm tôi nghỉ ngơi một tiếng.
+        - target: Du bist krank. Ruh dich aus!
+          translation:
+            vi: Bạn đang ốm. Nghỉ ngơi đi!
+      confusion:
+        vi: "Động từ tách: aus ra cuối câu (Ich ruhe mich aus). Perfekt: Ich habe mich ausgeruht."
+
+  - key: de:item:a2u04-sich-erholen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich erholen
+      pos: động từ
+    back:
+      meaning:
+        vi: hồi phục, nghỉ ngơi lại sức (sau bệnh, sau thời gian làm việc mệt)
+      examples:
+        - target: Im Urlaub habe ich mich gut erholt.
+          translation:
+            vi: Trong kỳ nghỉ tôi đã lại sức rất tốt.
+        - target: Erholen Sie sich gut!
+          translation:
+            vi: Chúc ông/bà mau lại sức!
+      confusion:
+        vi: "er- là tiền tố không tách nên Partizip II không có ge-: erholt. sich ausruhen là nghỉ một lúc; sich erholen nhấn vào kết quả: lại sức, khoẻ lại."
+
+  - key: de:item:a2u04-sich-beeilen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich beeilen
+      pos: động từ
+    back:
+      meaning:
+        vi: khẩn trương, làm nhanh lên
+      examples:
+        - target: Beeil dich, der Bus kommt!
+          translation:
+            vi: Nhanh lên, xe buýt đến rồi!
+        - target: Wir müssen uns beeilen.
+          translation:
+            vi: Chúng ta phải nhanh lên.
+      confusion:
+        vi: "Mệnh lệnh vẫn giữ đại từ: Beeil dich! (du) · Beeilt euch! (ihr) · Beeilen Sie sich! (Sie)."
+
+  - key: de:item:a2u04-sich-bewegen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich bewegen
+      pos: động từ
+    back:
+      meaning:
+        vi: vận động, cử động
+      examples:
+        - target: Ich arbeite im Büro und bewege mich zu wenig.
+          translation:
+            vi: Tôi làm văn phòng và vận động quá ít.
+      confusion:
+        vi: "Có sich: chính mình vận động. Không có sich: dịch chuyển vật khác (Ich bewege den Tisch = tôi xê dịch cái bàn)."
+
+  - key: de:item:a2u04-sich-verletzen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich verletzen
+      pos: động từ
+    back:
+      meaning:
+        vi: bị thương (tự làm mình bị thương)
+      examples:
+        - target: Beim Fußball hat er sich verletzt.
+          translation:
+            vi: Anh ấy bị thương khi đá bóng.
+      confusion:
+        vi: "Tiếng Việt nói \"bị thương\", tiếng Đức nói \"làm mình bị thương\": Ich habe mich verletzt. Partizip II không có ge- vì tiền tố ver-."
+
+  - key: de:item:a2u04-sich-erkaelten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich erkälten
+      pos: động từ
+    back:
+      meaning:
+        vi: bị cảm lạnh
+      examples:
+        - target: Ich habe mich erkältet.
+          translation:
+            vi: Tôi bị cảm rồi.
+        - target: Im Winter erkälte ich mich oft.
+          translation:
+            vi: Mùa đông tôi hay bị cảm.
+      confusion:
+        vi: "Ich habe mich erkältet, Ich bin erkältet và Ich habe eine Erkältung đều đúng và cùng nghĩa \"tôi bị cảm\"."
+
+  - key: de:item:a2u04-fit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fit
+      pos: tính từ
+    back:
+      meaning:
+        vi: khoẻ khoắn, sung sức
+      examples:
+        - target: Ich jogge jeden Morgen und fühle mich fit.
+          translation:
+            vi: Sáng nào tôi cũng chạy bộ và thấy rất khoẻ khoắn.
+
+  - key: de:item:a2u04-schwach
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: schwach
+      pos: tính từ
+    back:
+      meaning:
+        vi: yếu, mệt yếu
+      examples:
+        - target: Nach dem Fieber fühle ich mich noch schwach.
+          translation:
+            vi: Sau trận sốt tôi vẫn còn thấy yếu.
+      confusion:
+        vi: "Trái nghĩa: stark (khoẻ, mạnh). So sánh hơn có umlaut: schwächer."
+
+  - key: de:item:a2u04-stress
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Stress (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự căng thẳng, áp lực
+      examples:
+        - target: Im Moment habe ich viel Stress bei der Arbeit.
+          translation:
+            vi: Dạo này tôi rất căng thẳng trong công việc.
+      confusion:
+        vi: "Nói \"tôi bị căng thẳng\": Ich habe Stress (không nói Ich bin Stress). Tính từ: stressig."
+
+  - key: de:item:a2u04-sich-hinlegen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich hinlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: nằm xuống (nghỉ)
+      examples:
+        - target: Ich bin müde, ich lege mich kurz hin.
+          translation:
+            vi: Tôi mệt, tôi nằm nghỉ một lát.
+      confusion:
+        vi: "sich hinlegen là hành động nằm xuống (Wohin?); liegen là đang nằm (Wo?): Ich liege im Bett."
+
+  - key: de:item:a2u04-sich-entspannen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich entspannen
+      pos: động từ
+    back:
+      meaning:
+        vi: thư giãn
+      examples:
+        - target: Am Abend entspanne ich mich mit Musik.
+          translation:
+            vi: Buổi tối tôi thư giãn bằng âm nhạc.
+
+  - key: de:item:a2u04-sich-wohlfuehlen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich wohlfühlen
+      pos: động từ
+    back:
+      meaning:
+        vi: thấy dễ chịu, thấy thoải mái (trong người, ở một nơi)
+      examples:
+        - target: In meiner neuen Wohnung fühle ich mich wohl.
+          translation:
+            vi: Tôi thấy thoải mái trong căn hộ mới.
+        - target: Ich fühle mich heute nicht wohl.
+          translation:
+            vi: Hôm nay tôi thấy trong người không được khoẻ.
+      confusion:
+        vi: "wohl tách ra cuối câu như tiền tố: Ich fühle mich wohl."
+
+  - key: de:item:a2u04-erschoepft
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: erschöpft
+      pos: tính từ
+    back:
+      meaning:
+        vi: kiệt sức, mệt lả
+      examples:
+        - target: Nach der Arbeit bin ich total erschöpft.
+          translation:
+            vi: Sau giờ làm tôi mệt lả.
+      confusion:
+        vi: "Mạnh hơn müde (mệt, buồn ngủ)."
+
+  - key: de:item:a2u04-schwindlig
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schwindlig
+      pos: tính từ
+    back:
+      meaning:
+        vi: chóng mặt
+      examples:
+        - target: Mir ist schwindlig.
+          translation:
+            vi: Tôi bị chóng mặt.
+      confusion:
+        vi: "Người bị chóng mặt ở Dativ: Mir ist schwindlig, không nói \"Ich bin schwindlig\"."
+
+  # ================= bài 2: phản thân Dativ, vệ sinh cá nhân =================
+  - key: de:item:a2u04-g-reflexiv-dativ
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Reflexivpronomen im Dativ: Ich wasche mir die Hände."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Khi câu đã có tân ngữ Akkusativ (die Hände, die Zähne, eine Jacke), đại từ phản thân chuyển sang Dativ: mir, dir, sich, uns, euch, sich. Chỉ ich và du khác dạng Akkusativ (mich → mir, dich → dir). Với bộ phận cơ thể, tiếng Đức thường dùng mạo từ xác định (mir die Hände) thay vì meine Hände."
+      examples:
+        - target: Ich putze mir die Zähne.
+          translation:
+            vi: Tôi đánh răng.
+        - target: Wasch dir bitte die Hände!
+          translation:
+            vi: Con rửa tay đi!
+        - target: Ich ziehe mir eine Jacke an.
+          translation:
+            vi: Tôi mặc áo khoác vào.
+      confusion:
+        vi: "Ich wasche mich (tắm rửa – Akkusativ) ↔ Ich wasche mir die Hände (rửa tay – Dativ, vì die Hände đã là Akkusativ)."
+
+  - key: de:item:a2u04-zahn
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Zahn, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: răng
+      examples:
+        - target: Ich putze mir zweimal am Tag die Zähne.
+          translation:
+            vi: Tôi đánh răng hai lần một ngày.
+        - target: Mir tut ein Zahn weh.
+          translation:
+            vi: Tôi bị đau một cái răng.
+      pronunciation_note:
+        vi: "z đọc là \"ts\"; số nhiều có umlaut: die Zähne."
+
+  - key: de:item:a2u04-zahnbuerste
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Zahnbürste, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bàn chải đánh răng
+      examples:
+        - target: Ich brauche eine neue Zahnbürste.
+          translation:
+            vi: Tôi cần một cái bàn chải đánh răng mới.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: der Zahn + die Bürste = die Zahnbürste."
+
+  - key: de:item:a2u04-sich-waschen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich waschen, wäscht, wusch, hat gewaschen
+      pos: động từ
+    back:
+      meaning:
+        vi: tắm rửa; rửa (tay, mặt), gội (đầu)
+      examples:
+        - target: Am Morgen wasche ich mich und ziehe mich an.
+          translation:
+            vi: Buổi sáng tôi tắm rửa rồi mặc quần áo.
+        - target: Er wäscht sich die Haare.
+          translation:
+            vi: Anh ấy gội đầu.
+      confusion:
+        vi: "Đổi a → ä chỉ ở du và er/sie/es (du wäschst, er wäscht); ich wasche, wir waschen không đổi."
+
+  - key: de:item:a2u04-sich-kaemmen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich kämmen
+      pos: động từ
+    back:
+      meaning:
+        vi: chải tóc
+      examples:
+        - target: Sie kämmt sich vor dem Spiegel die Haare.
+          translation:
+            vi: Cô ấy chải tóc trước gương.
+
+  - key: de:item:a2u04-sich-anziehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich anziehen, zog an, hat angezogen
+      pos: động từ
+    back:
+      meaning:
+        vi: mặc quần áo; mặc (một món đồ)
+      examples:
+        - target: Ich ziehe mich schnell an.
+          translation:
+            vi: Tôi mặc quần áo thật nhanh.
+        - target: Es ist kalt. Zieh dir eine Jacke an!
+          translation:
+            vi: Trời lạnh đấy. Mặc áo khoác vào!
+      confusion:
+        vi: "Ich ziehe mich an (mặc đồ – Akkusativ) ↔ Ich ziehe mir eine Jacke an (mặc một cái áo khoác – Dativ). Động từ tách: an ra cuối câu."
+
+  - key: de:item:a2u04-sich-ausziehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich ausziehen, zog aus, hat ausgezogen
+      pos: động từ
+    back:
+      meaning:
+        vi: cởi quần áo; cởi (một món đồ)
+      examples:
+        - target: Zu Hause ziehe ich mir die Schuhe aus.
+          translation:
+            vi: Ở nhà tôi cởi giày ra.
+      confusion:
+        vi: "ausziehen không có đại từ phản thân và đi với sein còn có nghĩa \"dọn ra khỏi nhà\": Er ist ausgezogen."
+
+  - key: de:item:a2u04-haar
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Haar, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tóc, sợi tóc
+      examples:
+        - target: Ich wasche mir jeden Tag die Haare.
+          translation:
+            vi: Ngày nào tôi cũng gội đầu.
+      confusion:
+        vi: "Nói về mái tóc, tiếng Đức thường dùng số nhiều die Haare (tiếng Việt chỉ nói \"tóc\"): Sie hat lange Haare."
+
+  - key: de:item:a2u04-haut
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Haut (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: da (người)
+      examples:
+        - target: Im Winter ist meine Haut sehr trocken.
+          translation:
+            vi: Mùa đông da tôi rất khô.
+
+  - key: de:item:a2u04-seife
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Seife, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: xà phòng
+      examples:
+        - target: Wasch dir die Hände mit Seife!
+          translation:
+            vi: Rửa tay bằng xà phòng đi!
+
+  - key: de:item:a2u04-handtuch
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Handtuch, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: khăn tắm, khăn lau tay
+      examples:
+        - target: Das Handtuch hängt im Bad.
+          translation:
+            vi: Khăn tắm treo trong phòng tắm.
+      confusion:
+        vi: "Từ ghép: die Hand + das Tuch = das Handtuch (giống trung, theo từ cuối). Số nhiều: die Handtücher."
+
+  - key: de:item:a2u04-sich-rasieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich rasieren
+      pos: động từ
+    back:
+      meaning:
+        vi: cạo râu
+      examples:
+        - target: Mein Vater rasiert sich jeden Morgen.
+          translation:
+            vi: Sáng nào bố tôi cũng cạo râu.
+      confusion:
+        vi: "Động từ đuôi -ieren: Partizip II không có ge-: Ich habe mich rasiert."
+
+  - key: de:item:a2u04-sich-abtrocknen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich abtrocknen
+      pos: động từ
+    back:
+      meaning:
+        vi: lau khô người; lau khô (tay, tóc)
+      examples:
+        - target: Nach dem Duschen trockne ich mich ab.
+          translation:
+            vi: Tắm xong tôi lau khô người.
+        - target: Trockne dir die Hände ab!
+          translation:
+            vi: Lau khô tay đi!
+
+  - key: de:item:a2u04-sich-schminken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sich schminken
+      pos: động từ
+    back:
+      meaning:
+        vi: trang điểm
+      examples:
+        - target: Sie schminkt sich vor der Arbeit.
+          translation:
+            vi: Cô ấy trang điểm trước khi đi làm.
+
+  - key: de:item:a2u04-gesicht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Gesicht, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: mặt, khuôn mặt
+      examples:
+        - target: Ich wasche mir das Gesicht.
+          translation:
+            vi: Tôi rửa mặt.
+      pronunciation_note:
+        vi: "ch sau i là ich-Laut (âm xát nhẹ ở vòm miệng), không đọc thành \"k\"."
+
+  - key: de:item:a2u04-kamm
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Kamm, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái lược
+      examples:
+        - target: Hast du einen Kamm für mich?
+          translation:
+            vi: Bạn có cái lược nào cho mình mượn không?
+      confusion:
+        vi: "Danh từ der Kamm, động từ sich kämmen (có umlaut)."
+
+  - key: de:item:a2u04-shampoo
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Shampoo, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: dầu gội đầu
+      examples:
+        - target: Das Shampoo ist leer. Kannst du ein neues kaufen?
+          translation:
+            vi: Dầu gội hết rồi. Bạn mua chai mới được không?
+
+  - key: de:item:a2u04-creme
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Creme, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: kem bôi (da, tay, mặt)
+      examples:
+        - target: Im Winter brauche ich eine Creme für die Hände.
+          translation:
+            vi: Mùa đông tôi cần một loại kem bôi tay.
+      confusion:
+        vi: "Creme bôi da để dưỡng; Salbe là thuốc mỡ dùng để chữa."
+
+  # ================= bài 3: lời khuyên, lối sống =================
+  - key: de:item:a2u04-g-sollte-koennte
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Ratschlag: du solltest / Sie sollten / du könntest + Infinitiv"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "sollte (nên) và könnte (có thể thử) + động từ nguyên thể ở cuối câu dùng để khuyên nhẹ nhàng: ich sollte, du solltest, er sollte, wir sollten, ihr solltet, sie/Sie sollten; ich könnte, du könntest, er könnte … Dạng sollte trùng với Präteritum của sollen, ngữ cảnh cho biết nghĩa. könnte có ö, khác konnte (đã có thể)."
+      examples:
+        - target: Du solltest weniger arbeiten.
+          translation:
+            vi: Bạn nên làm việc ít đi.
+        - target: Sie sollten mehr Wasser trinken.
+          translation:
+            vi: Ông/bà nên uống nhiều nước hơn.
+        - target: Du könntest am Abend joggen.
+          translation:
+            vi: Bạn có thể thử chạy bộ vào buổi tối.
+      confusion:
+        vi: "Du sollst … (hiện tại) là lời dặn, yêu cầu của người khác, nghe nặng hơn; tự mình khuyên bạn thì dùng Du solltest …"
+
+  - key: de:item:a2u04-g-wuerde-hoeflich
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Würden Sie …? · Könnten Sie …? · An deiner Stelle würde ich …"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Würden Sie … + nguyên thể? và Könnten Sie … + nguyên thể? là cách nhờ lịch sự hơn Können Sie …? An deiner Stelle würde ich … (nếu tôi là bạn, tôi sẽ …) dùng để khuyên; với người lạ: An Ihrer Stelle würde ich … Ở A2 bạn học như mẫu câu, hệ thống Konjunktiv II học ở B1."
+      examples:
+        - target: Könnten Sie mir bitte helfen?
+          translation:
+            vi: Ông/bà có thể giúp tôi được không ạ?
+        - target: Würden Sie bitte das Fenster aufmachen?
+          translation:
+            vi: Phiền anh/chị mở giúp cửa sổ được không ạ?
+        - target: An deiner Stelle würde ich zum Arzt gehen.
+          translation:
+            vi: Nếu mình là bạn, mình sẽ đi khám bác sĩ.
+      confusion:
+        vi: "An deiner Stelle chiếm vị trí 1, nên würde đứng ngay sau, rồi mới đến ich: An deiner Stelle würde ich …"
+
+  - key: de:item:a2u04-rat
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Rat, Ratschläge
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời khuyên
+      examples:
+        - target: Kannst du mir einen Rat geben?
+          translation:
+            vi: Bạn cho mình một lời khuyên được không?
+      confusion:
+        vi: "Số nhiều thường dùng là die Ratschläge (từ der Ratschlag). Die Räte là \"các hội đồng\", nghĩa khác."
+
+  - key: de:item:a2u04-tipp
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Tipp, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẹo, gợi ý
+      examples:
+        - target: Hast du einen Tipp für mich? Ich schlafe so schlecht.
+          translation:
+            vi: Bạn có mẹo nào cho mình không? Mình ngủ kém quá.
+
+  - key: de:item:a2u04-rauchen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: rauchen
+      pos: động từ
+    back:
+      meaning:
+        vi: hút thuốc
+      examples:
+        - target: Rauchen Sie?
+          translation:
+            vi: Ông/bà có hút thuốc không?
+        - target: Hier darf man nicht rauchen.
+          translation:
+            vi: Ở đây không được hút thuốc.
+      confusion:
+        vi: "Danh từ hoá viết hoa: das Rauchen (việc hút thuốc)."
+
+  - key: de:item:a2u04-aufhoeren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: aufhören (mit)
+      pos: động từ
+    back:
+      meaning:
+        vi: dừng, thôi, bỏ (một thói quen)
+      examples:
+        - target: Mein Onkel hat mit dem Rauchen aufgehört.
+          translation:
+            vi: Chú tôi đã bỏ thuốc lá.
+        - target: Hör auf!
+          translation:
+            vi: Thôi đi!
+      confusion:
+        vi: "mit + Dativ: mit dem Rauchen aufhören. Động từ tách: Ich höre mit dem Rauchen auf."
+
+  - key: de:item:a2u04-ungesund
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: ungesund
+      pos: tính từ
+    back:
+      meaning:
+        vi: không tốt cho sức khoẻ
+      examples:
+        - target: Zu viel Zucker ist ungesund.
+          translation:
+            vi: Quá nhiều đường thì không tốt cho sức khoẻ.
+      confusion:
+        vi: "Tiền tố un- làm nghĩa ngược lại: gesund → ungesund."
+
+  - key: de:item:a2u04-gewicht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Gewicht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cân nặng
+      examples:
+        - target: Ich möchte mein Gewicht halten.
+          translation:
+            vi: Tôi muốn giữ cân nặng như hiện tại.
+
+  - key: de:item:a2u04-abnehmen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: abnehmen, nimmt ab, nahm ab, hat abgenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: giảm cân
+      examples:
+        - target: Ich habe drei Kilo abgenommen.
+          translation:
+            vi: Tôi đã giảm được ba cân.
+      confusion:
+        vi: "Đổi e → i ở du và er: du nimmst ab, er nimmt ab. abnehmen còn nhiều nghĩa khác (ví dụ nhấc máy điện thoại); ở bài này là giảm cân."
+
+  - key: de:item:a2u04-zunehmen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zunehmen, nimmt zu, nahm zu, hat zugenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: tăng cân
+      examples:
+        - target: Im Winter habe ich zwei Kilo zugenommen.
+          translation:
+            vi: Mùa đông tôi tăng hai cân.
+
+  - key: de:item:a2u04-diaet
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Diät, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ ăn kiêng
+      examples:
+        - target: Ich mache gerade eine Diät.
+          translation:
+            vi: Tôi đang ăn kiêng.
+      pronunciation_note:
+        vi: "Hai âm tiết, trọng âm ở âm sau: Di-ÄT."
+
+  - key: de:item:a2u04-regelmaessig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: regelmäßig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đều đặn
+      examples:
+        - target: Ich mache regelmäßig Sport.
+          translation:
+            vi: Tôi tập thể thao đều đặn.
+
+  - key: de:item:a2u04-fettig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fettig
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhiều dầu mỡ
+      examples:
+        - target: Das Essen ist mir zu fettig.
+          translation:
+            vi: Món này với tôi nhiều dầu mỡ quá.
+
+  - key: de:item:a2u04-fitnessstudio
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Fitnessstudio, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng tập thể hình (gym)
+      examples:
+        - target: Ich gehe zweimal pro Woche ins Fitnessstudio.
+          translation:
+            vi: Tôi đi tập gym hai lần một tuần.
+      confusion:
+        vi: "Viết liền, ba chữ s: Fitness + Studio = Fitnessstudio."
+
+  - key: de:item:a2u04-treppe
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Treppe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cầu thang
+      examples:
+        - target: Ich nehme die Treppe und nicht den Aufzug.
+          translation:
+            vi: Tôi đi cầu thang bộ chứ không đi thang máy.
+
+  - key: de:item:a2u04-suessigkeit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Süßigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ ngọt, bánh kẹo (thường dùng số nhiều)
+      examples:
+        - target: Meine Kinder essen gern Süßigkeiten.
+          translation:
+            vi: Các con tôi thích ăn bánh kẹo.
+
+  # ================= bài 4: hiệu thuốc, wenn điều kiện =================
+  - key: de:item:a2u04-g-wenn-konditional
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "wenn + Nebensatz (Bedingung): Wenn du Fieber hast, geh zum Arzt."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "wenn (nếu) mở đầu câu phụ nêu một điều kiện có thể xảy ra; động từ chia đứng cuối câu phụ. Câu wenn đứng trước thì câu chính bắt đầu ngay bằng động từ: Wenn es nicht besser wird, gehe ich zum Arzt. Câu wenn cũng có thể đứng sau: Ich gehe zum Arzt, wenn es nicht besser wird."
+      examples:
+        - target: Wenn du Fieber hast, geh zum Arzt.
+          translation:
+            vi: Nếu bạn bị sốt thì đi khám bác sĩ đi.
+        - target: Wenn ich Kopfschmerzen habe, lege ich mich hin.
+          translation:
+            vi: Nếu bị đau đầu thì tôi nằm nghỉ.
+        - target: Rufen Sie die 112 an, wenn es ein Notfall ist.
+          translation:
+            vi: Nếu là trường hợp khẩn cấp, hãy gọi số 112.
+      confusion:
+        vi: "wenn (nếu) khác wann (khi nào? – từ để hỏi): Wann kommt der Arzt? ↔ Wenn du Schmerzen hast, …"
+
+  - key: de:item:a2u04-medikament
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Medikament, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuốc (chữa bệnh)
+      examples:
+        - target: Nehmen Sie regelmäßig Medikamente?
+          translation:
+            vi: Ông/bà có dùng thuốc thường xuyên không?
+      confusion:
+        vi: "Từ có đuôi -ment thường là giống trung: das Medikament. Một viên thuốc là eine Tablette."
+
+  - key: de:item:a2u04-salbe
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Salbe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuốc mỡ, thuốc bôi
+      examples:
+        - target: Haben Sie eine Salbe gegen Rückenschmerzen?
+          translation:
+            vi: Chị có thuốc bôi trị đau lưng không?
+
+  - key: de:item:a2u04-allergie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Allergie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: dị ứng
+      examples:
+        - target: Haben Sie eine Allergie?
+          translation:
+            vi: Ông/bà có bị dị ứng gì không?
+        - target: Ich habe eine Allergie gegen Katzen.
+          translation:
+            vi: Tôi bị dị ứng với mèo.
+      pronunciation_note:
+        vi: "Trọng âm ở âm cuối: Al-ler-GIE. Số nhiều die Allergien có thêm một âm tiết: Al-ler-GI-en."
+
+  - key: de:item:a2u04-schmerz
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Schmerz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơn đau, sự đau
+      examples:
+        - target: Wo haben Sie Schmerzen?
+          translation:
+            vi: Ông/bà đau ở đâu?
+      confusion:
+        vi: "Thường dùng số nhiều: Ich habe Schmerzen. Ghép với bộ phận cơ thể: Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+
+  - key: de:item:a2u04-krankenkasse
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Krankenkasse, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quỹ bảo hiểm y tế
+      examples:
+        - target: Bei welcher Krankenkasse sind Sie?
+          translation:
+            vi: Anh/chị đóng bảo hiểm y tế ở quỹ nào?
+
+  - key: de:item:a2u04-versichertenkarte
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Versichertenkarte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ bảo hiểm y tế
+      examples:
+        - target: Bitte bringen Sie Ihre Versichertenkarte mit.
+          translation:
+            vi: Xin mang theo thẻ bảo hiểm y tế của anh/chị.
+      confusion:
+        vi: "Ở Đức tên chính thức là elektronische Gesundheitskarte; người ta cũng nói Versichertenkarte hoặc Krankenkassenkarte."
+
+  - key: de:item:a2u04-notfall
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Notfall, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường hợp khẩn cấp, cấp cứu
+      examples:
+        - target: Im Notfall rufen Sie die 112 an.
+          translation:
+            vi: Trong trường hợp khẩn cấp, hãy gọi số 112.
+
+  - key: de:item:a2u04-krankenwagen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Krankenwagen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe cứu thương
+      examples:
+        - target: Schnell, ruf einen Krankenwagen!
+          translation:
+            vi: Nhanh lên, gọi xe cứu thương đi!
+      confusion:
+        vi: "der Krankenwagen (xe cứu thương) khác das Krankenhaus (bệnh viện)."
+
+  - key: de:item:a2u04-einnehmen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: einnehmen, nimmt ein, nahm ein, hat eingenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: uống (thuốc), dùng (thuốc)
+      examples:
+        - target: Nehmen Sie die Tabletten dreimal am Tag nach dem Essen ein.
+          translation:
+            vi: Anh/chị uống thuốc ba lần một ngày, sau khi ăn.
+      confusion:
+        vi: "Tiếng Việt nói \"uống thuốc\", nhưng tiếng Đức không dùng trinken với viên thuốc: Tabletten einnehmen hoặc nói ngắn Tabletten nehmen."
+
+  - key: de:item:a2u04-nebenwirkung
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Nebenwirkung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tác dụng phụ
+      examples:
+        - target: Hat das Medikament Nebenwirkungen?
+          translation:
+            vi: Thuốc này có tác dụng phụ không?
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Nebenwirkung, số nhiều -en."
+
+  - key: de:item:a2u04-verschreiben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: verschreiben, verschrieb, hat verschrieben
+      pos: động từ
+    back:
+      meaning:
+        vi: kê (đơn thuốc)
+      examples:
+        - target: Die Ärztin hat mir eine Salbe verschrieben.
+          translation:
+            vi: Bác sĩ đã kê cho tôi một loại thuốc mỡ.
+      confusion:
+        vi: "Tiền tố ver- không tách, Partizip II không có ge-: verschrieben."
+
+  - key: de:item:a2u04-rezeptfrei
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: rezeptfrei
+      pos: tính từ
+    back:
+      meaning:
+        vi: không cần đơn thuốc
+      examples:
+        - target: Ist das Medikament rezeptfrei?
+          translation:
+            vi: Thuốc này mua không cần đơn phải không?
+      confusion:
+        vi: "-frei = không có, không cần: rezeptfrei (không cần đơn), alkoholfrei (không cồn)."
+
+  - key: de:item:a2u04-pflaster
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Pflaster, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: băng dán cá nhân
+      examples:
+        - target: Ich habe mich geschnitten. Hast du ein Pflaster?
+          translation:
+            vi: Mình bị đứt tay rồi. Bạn có băng dán cá nhân không?
+
+  - key: de:item:a2u04-tropfen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Tropfen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: giọt; (số nhiều) thuốc nhỏ
+      examples:
+        - target: Die Tropfen sind für die Augen.
+          translation:
+            vi: Thuốc nhỏ này dùng cho mắt.
+
+  - key: de:item:a2u04-wirken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wirken
+      pos: động từ
+    back:
+      meaning:
+        vi: có tác dụng
+      examples:
+        - target: Das Medikament wirkt nach einer Stunde.
+          translation:
+            vi: Thuốc có tác dụng sau một tiếng.
+      confusion:
+        vi: "Danh từ: die Wirkung (tác dụng) – như trong die Nebenwirkung."
+
+  - key: de:item:a2u04-notaufnahme
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Notaufnahme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoa cấp cứu (của bệnh viện)
+      examples:
+        - target: In der Notaufnahme muss man manchmal lange warten.
+          translation:
+            vi: Ở khoa cấp cứu đôi khi phải chờ lâu.
+
+  - key: de:item:a2u04-kopfschmerzen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Kopfschmerzen (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: (chứng) đau đầu
+      examples:
+        - target: Ich habe Kopfschmerzen.
+          translation:
+            vi: Tôi bị đau đầu.
+      confusion:
+        vi: "Thường dùng số nhiều, không có mạo từ: Ich habe Kopfschmerzen (không nói \"Ich bin Kopfschmerzen\"). Cùng nghĩa: Mir tut der Kopf weh."
+
+  - key: de:item:a2u04-apotheker
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Apotheker, - / die Apothekerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: dược sĩ
+      examples:
+        - target: Fragen Sie Ihren Arzt oder Apotheker.
+          translation:
+            vi: Hãy hỏi bác sĩ hoặc dược sĩ của bạn.

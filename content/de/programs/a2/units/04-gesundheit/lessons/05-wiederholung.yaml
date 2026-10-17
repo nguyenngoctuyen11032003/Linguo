@@ -1,0 +1,426 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u04-wiederholung
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập – xin nghỉ ốm (Wiederholung)
+objectives:
+  - vi: Đọc hướng dẫn dùng thuốc đơn giản và tin nhắn khuyên nhủ của bạn bè.
+  - vi: Viết tin nhắn hoặc e-mail ngắn (khoảng 40 từ) xin nghỉ ốm gửi sếp hoặc giáo viên.
+  - vi: Nghe lời nhắn của phòng khám và lời khuyên của bạn bè.
+  - vi: Ôn động từ phản thân (mich/mir), lời khuyên sollte/könnte/würde, wenn, weil và denn.
+estimated_minutes: 22
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:a2u04-in-der-apotheke]
+items:
+  - item: de:item:a2u04-g-reflexiv-akk
+    role: reuse
+  - item: de:item:a2u04-g-reflexiv-dativ
+    role: reuse
+  - item: de:item:a2u04-g-sollte-koennte
+    role: reuse
+  - item: de:item:a2u04-g-wuerde-hoeflich
+    role: reuse
+  - item: de:item:a2u04-g-wenn-konditional
+    role: reuse
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u03-g-denn
+    role: reuse
+  - item: de:item:a1u08-g-anrede-gruss
+    role: reuse
+  - item: de:item:a2u04-sich-fuehlen
+    role: reuse
+  - item: de:item:a2u04-sich-erkaelten
+    role: reuse
+  - item: de:item:a2u04-sich-ausruhen
+    role: reuse
+  - item: de:item:a2u04-schwach
+    role: reuse
+  - item: de:item:a2u04-einnehmen
+    role: reuse
+  - item: de:item:a2u04-medikament
+    role: reuse
+  - item: de:item:a2u04-versichertenkarte
+    role: reuse
+  - item: de:item:a2u04-notfall
+    role: reuse
+  - item: de:item:a1u08-gute-besserung
+    role: reuse
+  - item: de:item:a1u08-termin
+    role: reuse
+  - item: de:item:a1u08-krank
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Bài ôn tập: bạn đọc hướng dẫn dùng thuốc và tin nhắn, nghe lời nhắn của phòng khám, rồi tự viết tin nhắn xin nghỉ ốm ngắn, đúng ngữ vực."
+  - type: explain
+    text:
+      vi: "Tin nhắn xin nghỉ ốm gồm ba ý: mình không đến được (leider kann ich heute nicht kommen), lý do (weil ich krank bin / denn ich habe Fieber), và hẹn tiếp (Ich melde mich morgen. / Wenn es mir besser geht, komme ich wieder.)."
+  - type: explain
+    text:
+      vi: "Nhớ trật tự: sau weil và wenn động từ đứng cuối (weil ich mich erkältet habe); sau denn giữ trật tự câu chính (denn ich habe Fieber). Trong văn viết, đừng dùng weil với động từ ở vị trí 2."
+  - type: explain
+    text:
+      vi: "Ngữ vực: gửi sếp hoặc giáo viên xưng Sie thì mở đầu Sehr geehrte Frau … / Sehr geehrter Herr … và kết thúc Mit freundlichen Grüßen; gửi bạn bè thì Liebe … / Lieber … hoặc Hallo …, kết thúc Viele Grüße. Bạn bè đáp lại thường chúc Gute Besserung!"
+  - type: deep_explain
+    text:
+      vi: "Ở Đức, người đi làm bị ốm thường phải báo cho chỗ làm ngay ngày đầu và từ một số ngày nhất định thì cần giấy chứng nhận của bác sĩ (Krankschreibung); quy định cụ thể tuỳ hợp đồng và có thể thay đổi, nên hỏi chỗ làm của bạn. Trong bài thi Goethe A2 phần Schreiben, bạn thường phải viết tin nhắn hoặc e-mail ngắn theo ba ý cho trước – hãy viết đủ cả ba ý, mỗi ý một hai câu."
+  - type: example
+    target: "Sehr geehrte Frau Schulz, leider kann ich heute nicht zur Arbeit kommen, denn ich bin krank. Mit freundlichen Grüßen, Linh Tran"
+    target_lang: de
+    translation:
+      vi: "Kính gửi bà Schulz, rất tiếc hôm nay tôi không thể đi làm được vì tôi bị ốm. Trân trọng, Linh Tran"
+    note:
+      vi: "Thư trang trọng gửi sếp (Sie). Sau denn giữ trật tự câu chính: ich bin krank."
+  - type: example
+    target: "Lieber Herr Wagner, ich kann heute nicht zum Kurs kommen, weil ich mich erkältet habe."
+    target_lang: de
+    translation:
+      vi: "Thầy Wagner thân mến, hôm nay em không đến lớp được vì em bị cảm."
+    note:
+      vi: "Sau weil, động từ chia habe đứng cuối; mich là đại từ phản thân Akkusativ."
+  - type: example
+    target: "Du hast dich erkältet? Dann ruh dich aus. Wenn du morgen noch Fieber hast, solltest du zum Arzt gehen."
+    target_lang: de
+    translation:
+      vi: "Bạn bị cảm à? Vậy thì nghỉ ngơi đi. Nếu mai vẫn còn sốt thì bạn nên đi khám bác sĩ."
+    note:
+      vi: "Bạn bè (du): ruh dich aus (mệnh lệnh), wenn + động từ cuối, solltest đứng ngay sau dấu phẩy."
+  - type: example
+    target: "Hallo Tom, ich habe mir beim Sport den Fuß verletzt. Kannst du mir die Hausaufgaben schicken? Viele Grüße, Mai"
+    target_lang: de
+    translation:
+      vi: "Chào Tom, mình bị thương ở chân khi tập thể thao. Bạn gửi bài tập về nhà cho mình được không? Thân, Mai"
+    note:
+      vi: "Tin nhắn thân mật (du). Có tân ngữ den Fuß nên đại từ phản thân ở Dativ: mir."
+  - type: common_mistake
+    wrong: Ich kann nicht kommen, weil ich bin krank.
+    right: Ich kann nicht kommen, weil ich krank bin.
+    target_lang: de
+    note:
+      vi: "Trong văn viết, sau weil động từ chia đứng cuối. Muốn giữ trật tự câu chính, dùng denn: …, denn ich bin krank."
+  - type: common_mistake
+    wrong: Sehr geehrte Frau Schulz, … Viele Grüße
+    right: Sehr geehrte Frau Schulz, … Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "Mở đầu trang trọng thì kết thúc cũng trang trọng: Mit freundlichen Grüßen."
+  - type: summary
+    points:
+      - vi: "Ba ý của tin nhắn xin nghỉ: không đến được – lý do – hẹn tiếp."
+      - vi: "weil / wenn + động từ cuối; denn + trật tự câu chính."
+      - vi: "Phản thân: Ich fühle mich nicht gut. Ich habe mich erkältet. Ich putze mir die Zähne."
+      - vi: "Khuyên: Du solltest … · Du könntest … · An deiner Stelle würde ich …"
+      - vi: "Thư trang trọng: Sehr geehrte/r … – Mit freundlichen Grüßen; thân mật: Liebe/r … – Viele Grüße."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a2u04l5-mcq-lesen-beipackzettel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-einnehmen
+    prompt:
+      stem: "Đọc hướng dẫn (mô phỏng, không phải thuốc thật): \"Tabletten gegen Kopfschmerzen. Erwachsene: 1 Tablette, nicht mehr als 3 Tabletten am Tag. Nehmen Sie die Tabletten mit Wasser ein. Nicht für Kinder unter 12 Jahren.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c3w, text: "Người lớn uống mỗi lần 1 viên, không quá 3 viên một ngày.", lang: vi }
+        - { id: k8e, text: "Trẻ em 10 tuổi cũng dùng được thuốc này.", lang: vi }
+        - { id: t5y, text: "Người lớn uống 3 viên mỗi lần.", lang: vi }
+        - { id: h1u, text: "Nên uống thuốc với sữa.", lang: vi }
+    answer:
+      correct_option_id: c3w
+    explanation:
+      vi: "Erwachsene: 1 Tablette = người lớn mỗi lần 1 viên; nicht mehr als 3 Tabletten am Tag = không quá 3 viên một ngày. Nicht für Kinder unter 12 Jahren = không dùng cho trẻ dưới 12 tuổi; mit Wasser = với nước."
+    display_answer: "Người lớn uống mỗi lần 1 viên, không quá 3 viên một ngày."
+
+  - key: de:exercise:a2u04l5-mcq-lesen-krankmeldung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-g-denn
+    prompt:
+      stem: "Đọc e-mail: \"Sehr geehrte Frau Schulz, leider kann ich heute nicht zur Arbeit kommen, denn ich bin krank. Ich habe Fieber und mir tut der Hals weh. Heute Vormittag gehe ich zum Arzt. Ich melde mich morgen wieder. Mit freundlichen Grüßen, Linh Tran\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m6a, text: "Linh bị sốt, đau họng và sáng nay sẽ đi khám bác sĩ.", lang: vi }
+        - { id: s2q, text: "Linh xin nghỉ vì phải đưa con đi khám bác sĩ.", lang: vi }
+        - { id: f9g, text: "Linh đã khỏi ốm và mai sẽ đi làm lại.", lang: vi }
+        - { id: p4x, text: "Bà Schulz bị ốm nên Linh phải làm thay.", lang: vi }
+    answer:
+      correct_option_id: m6a
+    explanation:
+      vi: "denn ich bin krank = vì tôi bị ốm; Fieber = sốt, mir tut der Hals weh = tôi đau họng; Heute Vormittag gehe ich zum Arzt = sáng nay tôi đi bác sĩ. Ich melde mich morgen wieder chỉ là \"mai tôi sẽ báo lại\", không nói đã khỏi."
+    display_answer: "Linh bị sốt, đau họng và sáng nay sẽ đi khám bác sĩ."
+
+  - key: de:exercise:a2u04l5-mcq-lesen-ratschlag
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-g-wuerde-hoeflich
+    prompt:
+      stem: "Đọc tin nhắn: \"Hallo Minh, du hast geschrieben, dass du immer müde bist. An deiner Stelle würde ich früher ins Bett gehen und abends nicht so lange am Handy sein. Du könntest auch am Wochenende joggen. Wenn du willst, laufen wir zusammen! Liebe Grüße, Jana\". Jana khuyên Minh điều gì?"
+      stem_lang: vi
+      options:
+        - { id: r7c, text: "Đi ngủ sớm hơn và buổi tối bớt dùng điện thoại.", lang: vi }
+        - { id: j3m, text: "Uống nhiều cà phê hơn để bớt mệt.", lang: vi }
+        - { id: z8k, text: "Đi khám bác sĩ ngay cuối tuần này.", lang: vi }
+        - { id: b2h, text: "Ngủ trưa và không tập thể thao.", lang: vi }
+    answer:
+      correct_option_id: r7c
+    explanation:
+      vi: "An deiner Stelle würde ich früher ins Bett gehen = nếu là bạn, mình sẽ đi ngủ sớm hơn; nicht so lange am Handy sein = đừng dùng điện thoại lâu như thế. Jana còn gợi ý chạy bộ cuối tuần (Du könntest … joggen)."
+    display_answer: "Đi ngủ sớm hơn và buổi tối bớt dùng điện thoại."
+
+  - key: de:exercise:a2u04l5-mcq-lesen-praxis
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-versichertenkarte
+    prompt:
+      stem: "Đọc biển ở phòng khám: \"Praxis Dr. Berger – Sprechstunde: Montag bis Freitag 8 bis 12 Uhr, Dienstag und Donnerstag auch 15 bis 18 Uhr. Bitte bringen Sie Ihre Versichertenkarte mit.\" Thứ Tư lúc 16 giờ bạn có đến khám được không?"
+      stem_lang: vi
+      options:
+        - { id: u4t, text: "Không, buổi chiều chỉ mở vào thứ Ba và thứ Năm.", lang: vi }
+        - { id: e1p, text: "Có, chiều nào cũng mở từ 15 đến 18 giờ.", lang: vi }
+        - { id: o7d, text: "Có, nhưng phải mang theo đơn thuốc.", lang: vi }
+        - { id: y5r, text: "Không, thứ Tư phòng khám đóng cửa cả ngày.", lang: vi }
+    answer:
+      correct_option_id: u4t
+    explanation:
+      vi: "Montag bis Freitag 8 bis 12 Uhr = buổi sáng các ngày trong tuần, kể cả thứ Tư; Dienstag und Donnerstag auch 15 bis 18 Uhr = chỉ thứ Ba và thứ Năm mở thêm buổi chiều. Cần mang Versichertenkarte (thẻ bảo hiểm), không phải đơn thuốc."
+    display_answer: "Không, buổi chiều chỉ mở vào thứ Ba và thứ Năm."
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a2u04l5-listen-praxis-termin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-termin
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag, hier ist die Praxis Doktor Berger. Leider ist Ihr Termin am Mittwoch um neun Uhr nicht möglich. Wir haben am Donnerstag um zehn Uhr noch einen Termin frei. Könnten Sie uns bitte zurückrufen?"
+      options:
+        - { id: d6n, text: "Lịch hẹn thứ Tư lúc 9 giờ không được; phòng khám còn chỗ thứ Năm lúc 10 giờ và nhờ bạn gọi lại.", lang: vi }
+        - { id: w2s, text: "Lịch hẹn chuyển từ thứ Năm sang thứ Tư lúc 9 giờ.", lang: vi }
+        - { id: i8f, text: "Phòng khám nhắc bạn đến đúng 10 giờ thứ Tư.", lang: vi }
+        - { id: g4l, text: "Bác sĩ Berger sẽ gọi lại cho bạn vào thứ Năm.", lang: vi }
+    answer:
+      correct_option_id: d6n
+    explanation:
+      vi: "Ihr Termin am Mittwoch um neun Uhr ist nicht möglich = lịch hẹn thứ Tư 9 giờ không được; am Donnerstag um zehn Uhr noch einen Termin frei = thứ Năm 10 giờ còn trống; Könnten Sie uns zurückrufen? = bạn gọi lại cho phòng khám được không."
+    display_answer: "Lịch hẹn thứ Tư lúc 9 giờ không được; phòng khám còn chỗ thứ Năm lúc 10 giờ và nhờ bạn gọi lại."
+
+  - key: de:exercise:a2u04l5-listen-freundin-rat
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-g-sollte-koennte
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Du hast dich erkältet? Dann trink viel Tee und ruh dich aus. Wenn du morgen noch Fieber hast, solltest du zum Arzt gehen."
+      options:
+        - { id: v3x, text: "Uống nhiều trà, nghỉ ngơi; nếu mai còn sốt thì nên đi bác sĩ.", lang: vi }
+        - { id: q7b, text: "Đi bác sĩ ngay hôm nay rồi mai nghỉ ngơi.", lang: vi }
+        - { id: n1k, text: "Uống nhiều trà và mai đi làm bình thường.", lang: vi }
+        - { id: a9w, text: "Nếu mai hết sốt thì nên đi bác sĩ kiểm tra.", lang: vi }
+    answer:
+      correct_option_id: v3x
+    explanation:
+      vi: "trink viel Tee und ruh dich aus = uống nhiều trà và nghỉ ngơi; Wenn du morgen noch Fieber hast = nếu mai vẫn còn sốt; solltest du zum Arzt gehen = bạn nên đi bác sĩ."
+    display_answer: "Uống nhiều trà, nghỉ ngơi; nếu mai còn sốt thì nên đi bác sĩ."
+
+  # ---------------- recall: viết ----------------
+  - key: de:exercise:a2u04l5-fill-email-chefin
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      template: "Sehr geehrte Frau Schulz, leider kann ich heute nicht zur Arbeit kommen, {{b1}} ich bin krank. Ich fühle {{b2}} nicht gut und habe Fieber. Mit freundlichen {{b3}} Linh Tran"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [denn]
+        b2: [mich]
+        b3: [Grüßen]
+    known_wrong:
+      - answer: weil
+        feedback_vi: "Sau chỗ trống là ich bin krank (động từ ở vị trí 2), nên phải dùng denn. Nếu dùng weil, động từ phải ra cuối: weil ich krank bin."
+        error_tag: conjunction
+      - answer: mir
+        feedback_vi: "sich fühlen không có tân ngữ khác nên dùng Akkusativ: mich."
+        error_tag: case_dat_akk
+      - answer: Grüße
+        feedback_vi: "Sau mit (Dativ) và ở số nhiều cần đuôi -n: Mit freundlichen Grüßen."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "denn giữ trật tự câu chính (denn ich bin krank). sich fühlen → ich fühle mich. Lời chào cuối thư trang trọng cố định: Mit freundlichen Grüßen."
+    display_answer: Sehr geehrte Frau Schulz, leider kann ich heute nicht zur Arbeit kommen, denn ich bin krank. Ich fühle mich nicht gut und habe Fieber. Mit freundlichen Grüßen Linh Tran
+
+  - key: de:exercise:a2u04l5-fill-kurs-lehrer
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      template: "Lieber Herr Wagner, ich kann heute leider nicht zum Kurs kommen, weil ich mich erkältet {{b1}}. Wenn es mir besser {{b2}}, komme ich am Freitag wieder. Viele Grüße, Mai"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [habe]
+        b2: [geht]
+    known_wrong:
+      - answer: bin
+        feedback_vi: "Động từ phản thân ở Perfekt đi với haben: ich habe mich erkältet."
+        error_tag: aux_verb
+      - answer: hat
+        feedback_vi: "Chủ ngữ là ich: ich habe."
+        error_tag: verb_form
+      - answer: gehe
+        feedback_vi: "Chủ ngữ là es (Es geht mir besser): es geht."
+        error_tag: verb_form
+    explanation:
+      vi: "Sau weil, trợ động từ habe đứng cuối (sich erkälten đi với haben). Es geht mir besser → trong câu wenn: wenn es mir besser geht."
+    display_answer: Lieber Herr Wagner, ich kann heute leider nicht zum Kurs kommen, weil ich mich erkältet habe. Wenn es mir besser geht, komme ich am Freitag wieder. Viele Grüße, Mai
+
+  - key: de:exercise:a2u04l5-tr-nicht-arbeiten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      source_text: "Hôm nay tôi không đi làm được vì tôi bị ốm. (viết trong e-mail gửi sếp)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich kann heute nicht zur Arbeit kommen, weil ich krank bin.
+        - Heute kann ich nicht zur Arbeit kommen, weil ich krank bin.
+        - Ich kann heute nicht zur Arbeit kommen, denn ich bin krank.
+        - Heute kann ich nicht zur Arbeit kommen, denn ich bin krank.
+        - Ich kann heute nicht zur Arbeit gehen, weil ich krank bin.
+        - Heute kann ich nicht zur Arbeit gehen, weil ich krank bin.
+        - Ich kann heute nicht zur Arbeit gehen, denn ich bin krank.
+        - Heute kann ich nicht zur Arbeit gehen, denn ich bin krank.
+        - Ich kann heute nicht arbeiten, weil ich krank bin.
+        - Heute kann ich nicht arbeiten, weil ich krank bin.
+        - Ich kann heute nicht arbeiten, denn ich bin krank.
+        - Heute kann ich nicht arbeiten, denn ich bin krank.
+        - Weil ich krank bin, kann ich heute nicht zur Arbeit kommen.
+        - Weil ich krank bin, kann ich heute nicht arbeiten.
+    known_wrong:
+      - answer: Ich kann heute nicht zur Arbeit kommen, weil ich bin krank.
+        feedback_vi: "Trong văn viết, sau weil động từ chia đứng cuối: weil ich krank bin (hoặc dùng denn ich bin krank)."
+        error_tag: verb_position
+      - answer: Ich kann heute nicht zur Arbeit kommen, denn ich krank bin.
+        feedback_vi: "Sau denn giữ trật tự câu chính: denn ich bin krank."
+        error_tag: verb_position
+    explanation:
+      vi: "Lý do dùng weil (động từ cuối: weil ich krank bin) hoặc denn (trật tự câu chính: denn ich bin krank). kann ở vị trí 2, nguyên thể kommen/arbeiten ở cuối câu chính."
+    display_answer: Ich kann heute nicht zur Arbeit kommen, weil ich krank bin.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u04l5-wb-wenn-besser
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-wenn-konditional
+    prompt:
+      instruction: "Sắp xếp thành câu cho tin nhắn xin nghỉ: \"Nếu tôi thấy khoẻ hơn, tôi sẽ quay lại.\""
+      tokens:
+        - { id: t-komme, text: komme }
+        - { id: t-mir, text: mir }
+        - { id: t-geht, text: geht }
+        - { id: t-mich, text: mich }
+        - { id: t-wieder, text: wieder }
+        - { id: t-es, text: es }
+        - { id: t-ich, text: ich }
+        - { id: t-besser, text: besser }
+        - { id: t-wenn, text: wenn }
+        - { id: t-gehe, text: gehe }
+    answer:
+      orders:
+        - [t-wenn, t-es, t-mir, t-besser, t-geht, t-komme, t-ich, t-wieder]
+        - [t-ich, t-komme, t-wieder, t-wenn, t-es, t-mir, t-besser, t-geht]
+    explanation:
+      vi: "Es geht mir besser (Dativ mir) → trong câu wenn, geht đứng cuối. Câu wenn đứng đầu thì câu chính bắt đầu bằng komme: Wenn es mir besser geht, komme ich wieder."
+    display_answer: Wenn es mir besser geht, komme ich wieder.
+
+  - key: de:exercise:a2u04l5-wb-sie-sollten-ausruhen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-sich-ausruhen
+    prompt:
+      instruction: "Bác sĩ nói với bệnh nhân (Sie). Sắp xếp thành câu: \"Anh nên nghỉ ngơi vài ngày.\""
+      tokens:
+        - { id: t-tage, text: Tage }
+        - { id: t-ausruhen, text: ausruhen }
+        - { id: t-ihnen, text: Ihnen }
+        - { id: t-ein, text: ein }
+        - { id: t-sollten, text: sollten }
+        - { id: t-paar, text: paar }
+        - { id: t-sie, text: Sie }
+        - { id: t-sich, text: sich }
+    answer:
+      orders:
+        - [t-sie, t-sollten, t-sich, t-ein, t-paar, t-tage, t-ausruhen]
+    explanation:
+      vi: "Sie sollten + đại từ phản thân sich (không phải Ihnen – Dativ) + ein paar Tage + nguyên thể ausruhen ở cuối câu (sau modal, động từ tách không bị tách)."
+    display_answer: Sie sollten sich ein paar Tage ausruhen.
+
+  - key: de:exercise:a2u04l5-tr-erkaeltet-schwach-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u04-schwach
+    prompt:
+      source_text: Ich habe mich gestern erkältet und fühle mich heute schwach.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm qua tôi bị cảm và hôm nay tôi thấy yếu.
+        - Hôm qua tôi bị cảm và hôm nay thấy yếu.
+        - Hôm qua tôi bị cảm và hôm nay tôi thấy người yếu.
+        - Hôm qua tôi bị cảm, hôm nay tôi thấy yếu.
+        - Hôm qua tôi bị cảm lạnh và hôm nay tôi thấy yếu.
+        - Hôm qua tôi bị cảm và hôm nay tôi thấy mệt.
+        - Hôm qua mình bị cảm và hôm nay mình thấy yếu.
+        - Tôi bị cảm từ hôm qua và hôm nay tôi thấy yếu.
+        - Hôm qua tôi bị cảm và hôm nay tôi cảm thấy yếu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm qua tôi bị thương và hôm nay tôi thấy yếu.
+        feedback_vi: "sich erkälten là bị cảm; bị thương là sich verletzen."
+        error_tag: meaning
+      - answer: Hôm qua tôi bị cảm và hôm nay tôi thấy khoẻ.
+        feedback_vi: "schwach = yếu, trái nghĩa với fit/stark."
+        error_tag: meaning
+    explanation:
+      vi: "habe mich erkältet = (đã) bị cảm; fühle mich schwach = thấy (người) yếu."
+    display_answer: Hôm qua tôi bị cảm và hôm nay tôi thấy yếu.
