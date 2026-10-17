@@ -97,7 +97,7 @@ items:
           translation:
             vi: Cái đèn ở đâu? – Cạnh ghế sofa.
       confusion:
-        vi: "stehen không có tân ngữ, hỏi Wo? + Dativ. Ở miền Nam nước Đức, Áo và Thụy Sĩ, Perfekt thường là ist gestanden; ở miền Bắc và miền Trung nước Đức dùng hat gestanden."
+        vi: "stehen không có tân ngữ, hỏi Wo? + Dativ. Ở miền Nam nước Đức, Áo và Thụy Sĩ, Perfekt thường là ist gestanden; ở miền Bắc và miền Trung nước Đức dùng hat gestanden. Bạn chỉ cần nhận ra ist gestanden; khi nói và viết hãy dùng hat gestanden."
 
   - key: de:item:a2u02-legen
     type: vocab
@@ -226,7 +226,7 @@ items:
           translation:
             vi: Thứ Bảy mình chuyển nhà. Bạn giúp mình nhé?
       pronunciation_note:
-        vi: "z đọc là \"ts\"; g cuối từ đọc như \"k\": um-tsúk."
+        vi: "z đọc là \"ts\"; g cuối từ đọc như \"k\"; u trong -zug là u dài; trọng âm ở UM: UM-tsuuk."
 
   - key: de:item:a2u02-umziehen
     type: vocab
@@ -758,7 +758,7 @@ items:
           translation:
             vi: Đồ đạc cũ của tôi không vừa căn hộ.
       confusion:
-        vi: "Sau sein tính từ không có đuôi: Die Küche ist hell (không phải helle). Tính từ tận cùng -el, -er bỏ e: dunkel → eine dunkle Küche, teuer → eine teure Wohnung."
+        vi: "Sau sein tính từ không có đuôi: Die Küche ist hell (không phải helle). Tính từ tận cùng -el bỏ e: dunkel → eine dunkle Küche; teuer cũng bỏ e (eine teure Wohnung), nhưng sauber thì giữ: eine saubere Küche."
 
   - key: de:item:a2u02-dunkel
     type: vocab
@@ -857,7 +857,7 @@ items:
           translation:
             vi: Tấm thảm bẩn.
       pronunciation_note:
-        vi: "-ig ở cuối đọc gần như \"-ích\": SCHMUT-tsich."
+        vi: "tz đọc là \"ts\"; -ig ở cuối từ đọc như ich [ɪç] (hơi gió, không bật \"k\" như \"-ích\" tiếng Việt); trọng âm ở SCHMUT."
 
   - key: de:item:a2u02-moebliert
     type: vocab
@@ -1237,9 +1237,9 @@ items:
             vi: Toà nhà có năm tầng.
         - target: Die Wohnung ist im dritten Stock.
           translation:
-            vi: Căn hộ ở tầng ba (tính từ tầng trệt lên).
+            vi: Căn hộ ở "tầng 3" kiểu Đức (tầng bốn theo cách gọi miền Bắc, lầu ba theo cách gọi miền Nam).
       confusion:
-        vi: "Khi nói tầng mấy, người Đức thường rút gọn thành der Stock: im ersten Stock. Tầng trệt là das Erdgeschoss, nên erster Stock là \"tầng hai\" theo cách gọi miền Bắc, \"lầu một\" theo cách gọi miền Nam."
+        vi: "Khi nói tầng mấy, người Đức thường rút gọn thành der Stock: im ersten Stock; cũng hay gặp die Etage: in der ersten Etage. Tầng trệt là das Erdgeschoss, nên erster Stock là \"tầng hai\" theo cách gọi miền Bắc, \"lầu một\" theo cách gọi miền Nam."
 
   - key: de:item:a2u02-heizung
     type: vocab

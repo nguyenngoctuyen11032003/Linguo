@@ -72,7 +72,7 @@ body:
       vi: "Nhiệm vụ viết: bạn là Lan Pham. Chuông cửa nhà bạn hỏng từ thứ Hai. Hãy viết cho chủ nhà, ông Berger, khoảng 40 từ: (1) báo cái gì hỏng và từ khi nào, (2) nhờ ông ấy gửi người quản lý nhà đến, (3) nói khi nào bạn ở nhà. Viết xong, so với e-mail mẫu dưới đây."
   - type: deep_explain
     text:
-      vi: "Câu hữu ích khi viết cho chủ nhà: Seit Montag funktioniert … nicht. (seit + thì hiện tại) · … ist kaputt. · Können Sie bitte den Hausmeister schicken? · Ich bin am … ab … Uhr zu Hause. · Meine Nachbarin hat einen Schlüssel. Đề thi có thể đòi thư thân mật hoặc trang trọng; với chủ nhà, cơ quan, người lạ luôn chọn trang trọng (Sie). Đừng quên đuôi tính từ sau ein-từ (in meiner kleinen Wohnung) và thứ tự hai tân ngữ (Können Sie ihm den Schlüssel geben?). Cấu trúc đề có thể thay đổi; hãy xem mô tả đề Goethe A2 hiện hành trước khi thi."
+      vi: "Câu hữu ích khi viết cho chủ nhà: Seit Montag funktioniert … nicht. (seit + thì hiện tại) · … ist kaputt. · Können Sie bitte den Hausmeister schicken? · Ich bin am … ab … Uhr zu Hause. · Meine Nachbarin hat einen Schlüssel. Đề thi có thể đòi thư thân mật hoặc trang trọng; với chủ nhà, cơ quan, người lạ thì nên chọn trang trọng (Sie). Đừng quên đuôi tính từ sau ein-từ (in meiner kleinen Wohnung) và thứ tự hai tân ngữ (Können Sie ihm den Schlüssel geben?). Cấu trúc đề có thể thay đổi; hãy xem mô tả đề Goethe A2 hiện hành trước khi thi."
   - type: example
     target: "Sehr geehrter Herr Berger, seit Montag funktioniert die Klingel an meiner Tür nicht. Können Sie bitte den Hausmeister schicken? Ich bin am Dienstag und am Mittwoch ab 16 Uhr zu Hause. Mit freundlichen Grüßen, Lan Pham"
     target_lang: de
@@ -141,7 +141,7 @@ exercises:
     difficulty: 2
     item: de:item:a2u02-anzeige
     prompt:
-      stem: "Đọc tin rao: \"Vermiete eine helle 3-Zimmer-Wohnung im Neubau, 75 Quadratmeter, 2. Stock, mit Balkon. Kaltmiete 820 Euro, Nebenkosten 190 Euro. Frei ab 1. März.\" Mỗi tháng bạn trả tổng cộng bao nhiêu (Warmmiete)?"
+      stem: "Đọc tin rao: \"Zu vermieten: helle 3-Zimmer-Wohnung im Neubau, 75 Quadratmeter, 2. Stock, mit Balkon. Kaltmiete 820 Euro, Nebenkosten 190 Euro. Frei ab 1. März.\" Mỗi tháng bạn trả tổng cộng bao nhiêu (Warmmiete)?"
       stem_lang: vi
       options:
         - { id: z6m, text: "1010 euro.", lang: vi }
@@ -187,7 +187,7 @@ exercises:
         - { id: c8j, text: "Ở nhà ông Krüger, tầng trệt.", lang: vi }
         - { id: y3p, text: "Trên bàn trong căn hộ của chị Roth.", lang: vi }
         - { id: g6s, text: "Chị Roth đưa tận tay vào thứ Sáu.", lang: vi }
-        - { id: t1h, text: "Ở nhà ông Krüger, tầng một.", lang: vi }
+        - { id: t1h, text: "Ở chỗ ông Krüger, dưới tầng hầm.", lang: vi }
     answer:
       correct_option_id: c8j
     explanation:
@@ -363,7 +363,7 @@ exercises:
         error_tag: case_dat_akk
       - answer: Ich habe den Schlüssel auf den Tisch gelegen.
         feedback_vi: "legen (đặt) có quy tắc: hat gelegt. gelegen là Partizip của liegen (nằm)."
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: Ich bin den Schlüssel auf den Tisch gelegt.
         feedback_vi: "legen có tân ngữ nên Perfekt dùng haben: Ich habe … gelegt."
         error_tag: aux_verb

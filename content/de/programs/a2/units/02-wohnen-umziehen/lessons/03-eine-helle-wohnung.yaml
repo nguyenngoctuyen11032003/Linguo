@@ -69,7 +69,7 @@ body:
       vi: "Ở Akkusativ chỉ giống đực đổi: einen großen Balkon; giống cái và giống trung giữ nguyên (eine helle Küche, ein ruhiges Zimmer). Số nhiều sau keine/meine/unsere: luôn -en (keine großen Zimmer, meine alten Möbel)."
   - type: explain
     text:
-      vi: "Sau sein tính từ vẫn không có đuôi như bạn đã học ở A1: Die Küche ist hell. Tính từ tận cùng -el, -er bỏ e khi thêm đuôi: dunkel → eine dunkle Küche, teuer → eine teure Wohnung."
+      vi: "Sau sein tính từ vẫn không có đuôi như bạn đã học ở A1: Die Küche ist hell. Tính từ tận cùng -el bỏ e khi thêm đuôi (dunkel → eine dunkle Küche); teuer, sauer cũng bỏ e (eine teure Wohnung), nhưng phần lớn tính từ -er khác giữ e: eine saubere Küche."
   - type: deep_explain
     text:
       vi: "Bảng này (sau ein-từ) là một trong ba bảng đuôi tính từ. Bảng sau mạo từ xác định (das große Zimmer) học ở A2U05, bảng không mạo từ (große Zimmer, ruhige Lage – kiểu chữ trong quảng cáo nhà) học ở A2U07; khi đọc quảng cáo bạn sẽ gặp chúng trước, chỉ cần hiểu nghĩa. Một ngoại lệ hay gặp: hoch mất c khi có đuôi (ein hohes Zimmer). Nhiều tính từ cùng đứng trước một danh từ thì đều có cùng đuôi: ein langer, schmaler Flur. Với Altbau và Neubau, chú ý số nhiều bất quy tắc: die Altbauten, die Neubauten."
@@ -132,7 +132,7 @@ body:
       - vi: "Akkusativ: chỉ giống đực đổi – einen großen Balkon."
       - vi: "Số nhiều sau keine/meine: -en – keine großen Zimmer."
       - vi: "Sau sein: không đuôi – Die Küche ist hell."
-      - vi: "dunkel → dunkle, teuer → teure."
+      - vi: "dunkel → dunkle, teuer → teure; nhưng sauber → saubere."
       - vi: "Tả nhà: laut/leise, sauber/schmutzig, möbliert, renoviert, Altbau/Neubau, Lage – Die Lage ist zentral."
 exercises:
   # ---------------- recognition ----------------

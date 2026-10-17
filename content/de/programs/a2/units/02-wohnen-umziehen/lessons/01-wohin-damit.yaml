@@ -83,7 +83,7 @@ body:
       vi: "Kết quả của việc đặt là trạng thái: stehen (đứng), liegen (nằm), sitzen (ngồi), hängen (đang treo). Các động từ này không có tân ngữ, hỏi Wo? + Dativ và là động từ bất quy tắc: stand – hat gestanden, lag – hat gelegen, saß – hat gesessen, hing – hat gehangen. hängen với nghĩa \"treo cái gì\" thì có quy tắc: hängte – hat gehängt."
   - type: deep_explain
     text:
-      vi: "Quy tắc Wo?/Wohin? áp dụng cho mọi động từ chuyển động, không chỉ bốn động từ \"đặt\": Ich gehe in die Küche (đi vào bếp – Akk) – Ich bin in der Küche (ở trong bếp – Dat). Vì vậy cụm \"ins Kino gehen\" mà bạn học thuộc ở A1 thật ra là in das Kino + Akkusativ. Khi phân vân, hãy hỏi: có di chuyển tới một chỗ mới không? Có → Akkusativ; chỉ ở yên hoặc đi lại bên trong một chỗ (Wir laufen im Park) → Dativ. Ngoài ra, khi viết thân mật người Đức còn rút gọn auf das → aufs (aufs Sofa). Ở miền Nam nước Đức, Áo và Thụy Sĩ, Perfekt của stehen, liegen, sitzen thường dùng sein (ist gestanden); bạn chỉ cần nhận ra, còn khi viết hãy dùng hat."
+      vi: "Quy tắc Wo?/Wohin? áp dụng cho hầu hết động từ chỉ chuyển động, không chỉ bốn động từ \"đặt\": Ich gehe in die Küche (đi vào bếp – Akk) – Ich bin in der Küche (ở trong bếp – Dat). Vì vậy cụm \"ins Kino gehen\" mà bạn học thuộc ở A1 thật ra là in das Kino + Akkusativ. Khi phân vân, hãy hỏi: có di chuyển tới một chỗ mới không? Có → Akkusativ; chỉ ở yên hoặc đi lại bên trong một chỗ (Wir laufen im Park) → Dativ. Ngoài ra, nhất là trong văn nói, người Đức còn rút gọn auf das → aufs (aufs Sofa). Ở miền Nam nước Đức, Áo và Thụy Sĩ, Perfekt của stehen, liegen, sitzen thường dùng sein (ist gestanden); bạn chỉ cần nhận ra, còn trong bài tập của khoá này hãy dùng hat."
   - type: example
     target: "Wohin stellen wir das Sofa? – Ans Fenster."
     target_lang: de
@@ -123,7 +123,7 @@ body:
     target: Der Karton ist für den Keller. Stell ihn bitte in den Keller!
     target_lang: de
     translation:
-      vi: Cái thùng này để dưới tầng hầm. Bạn mang nó xuống tầng hầm nhé!
+      vi: Cái thùng này để dưới tầng hầm. Bạn đặt nó xuống tầng hầm nhé!
     note:
       vi: "für + Akkusativ (den Keller) như ở A1. Câu 2 là Wohin? → in den Keller (Akkusativ); der Karton → ihn."
   - type: common_mistake
@@ -304,6 +304,8 @@ exercises:
         - An die Wand hängen wir das Bild.
         - Wir hängen das Bild an der Wand auf.
         - Das Bild hängen wir an der Wand auf.
+        - Wir hängen das Bild an die Wand auf.
+        - Das Bild hängen wir an die Wand auf.
     known_wrong:
       - answer: Wir hängen das Bild an der Wand.
         feedback_vi: "Treo lên là Wohin? → Akkusativ: an die Wand. an der Wand (Dativ) dùng khi tranh đã treo yên: Das Bild hängt an der Wand."
@@ -315,7 +317,7 @@ exercises:
         feedback_vi: "die Wand là giống cái; Akkusativ giống cái vẫn là die: an die Wand."
         error_tag: article
     explanation:
-      vi: "hängen (treo cái gì) + Wohin? → an + Akkusativ: die Wand → an die Wand. Tường là mặt đứng nên dùng an, không dùng auf. Với động từ tách aufhängen, người Đức hay nói an der Wand aufhängen – cũng đúng."
+      vi: "hängen (treo cái gì) + Wohin? → an + Akkusativ: die Wand → an die Wand. Tường là mặt đứng nên dùng an, không dùng auf. Với động từ tách aufhängen, người Đức nói được cả an der Wand aufhängen lẫn an die Wand aufhängen – đều đúng."
     display_answer: Wir hängen das Bild an die Wand.
 
   # ---------------- application ----------------

@@ -135,15 +135,15 @@ exercises:
       audio_asset_id: null
       fallback_text: "Die Wohnung hat sechzig Quadratmeter und liegt im dritten Stock. Die Kaltmiete ist fünfhundertfünfzig Euro."
       options:
-        - { id: c4h, text: "Căn hộ 60 m², ở tầng ba (Stock), tiền thuê lạnh 550 euro.", lang: vi }
-        - { id: t8n, text: "Căn hộ 50 m², ở tầng sáu (Stock), tiền thuê lạnh 550 euro.", lang: vi }
-        - { id: r2p, text: "Căn hộ 60 m², ở tầng ba (Stock), tiền thuê ấm 550 euro.", lang: vi }
+        - { id: c4h, text: "Căn hộ 60 m², ở tầng 3 kiểu Đức (dritter Stock), tiền thuê lạnh 550 euro.", lang: vi }
+        - { id: t8n, text: "Căn hộ 50 m², ở tầng 6 kiểu Đức (sechster Stock), tiền thuê lạnh 550 euro.", lang: vi }
+        - { id: r2p, text: "Căn hộ 60 m², ở tầng 3 kiểu Đức (dritter Stock), tiền thuê ấm 550 euro.", lang: vi }
         - { id: k7m, text: "Căn hộ 16 m², ở tầng trệt, tiền thuê lạnh 515 euro.", lang: vi }
     answer:
       correct_option_id: c4h
     explanation:
-      vi: "sechzig = 60 (không phải sechzehn = 16), im dritten Stock = tầng ba theo cách đếm của Đức, fünfhundertfünfzig = 550. Kaltmiete là tiền thuê lạnh, chưa gồm phí phụ."
-    display_answer: "Căn hộ 60 m², ở tầng ba (Stock), tiền thuê lạnh 550 euro."
+      vi: "sechzig = 60 (không phải sechzehn = 16), im dritten Stock = tầng 3 theo cách đếm của Đức (không tính tầng trệt; miền Bắc gọi là tầng bốn), fünfhundertfünfzig = 550. Kaltmiete là tiền thuê lạnh, chưa gồm phí phụ."
+    display_answer: "Căn hộ 60 m², ở tầng 3 kiểu Đức (dritter Stock), tiền thuê lạnh 550 euro."
 
   - key: de:exercise:a2u02l4-listen-nebenkosten-kaution
     type: listen

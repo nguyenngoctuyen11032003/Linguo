@@ -58,7 +58,7 @@ body:
       vi: "Nhắc lại dạng Dativ: dem/einem (der, das), der/einer (die), den + -n (số nhiều); đại từ mir, dir, ihm, ihr, uns, euch, ihnen/Ihnen. Dạng Akkusativ: den/einen (der), die (die), das (das); đại từ mich, dich, ihn, sie, es, uns, euch, sie/Sie."
   - type: explain
     text:
-      vi: "Thứ tự trong câu: hai danh từ thì người (Dativ) thường đứng trước vật (Akkusativ): Ich gebe der Nachbarin den Schlüssel. Đại từ luôn đứng trước danh từ: Ich gebe ihr den Schlüssel / Ich gebe ihn der Nachbarin. Hai đại từ thì Akkusativ trước: Ich gebe ihn ihr."
+      vi: "Thứ tự trong câu: hai danh từ thì người (Dativ) thường đứng trước vật (Akkusativ): Ich gebe der Nachbarin den Schlüssel. Đại từ thường đứng trước danh từ: Ich gebe ihr den Schlüssel / Ich gebe ihn der Nachbarin. Hai đại từ thì Akkusativ trước: Ich gebe ihn ihr."
   - type: explain
     text:
       vi: "der Nachbar là danh từ đặc biệt: ở số ít, Akkusativ và Dativ thêm -n (den Nachbarn, dem Nachbarn). Bạn chỉ cần học thuộc hai dạng này; quy tắc đầy đủ sẽ học ở B1. Với người hàng xóm nữ thì bình thường: der Nachbarin (Dativ)."
@@ -87,7 +87,7 @@ body:
     note:
       vi: "Hai người hàng xóm thân nói du. sie (= die Bohrmaschine, Akk) đứng trước dir (Dat) vì cả hai đều là đại từ."
   - type: example
-    target: "Der Schlüssel? Den gebe ich dem Hausmeister. – Gut, dann gib ihn ihm heute!"
+    target: "Der Schlüssel? Den gebe ich dem Hausmeister. – Gut, dann gib ihn ihm heute noch!"
     target_lang: de
     translation:
       vi: Chìa khoá à? Cái đó mình đưa cho ông quản lý nhà. – Ừ, vậy hôm nay đưa cho ông ấy luôn nhé!
@@ -243,10 +243,10 @@ exercises:
     known_wrong:
       - answer: geleiht
         feedback_vi: "leihen là động từ bất quy tắc: leihen – lieh – hat geliehen."
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: gelieht
         feedback_vi: "Partizip của leihen là geliehen (đuôi -en, ei → ie)."
-        error_tag: verb_form
+        error_tag: participle_form
       - answer: zurückgebe
         feedback_vi: "zurückgeben là động từ tách: động từ chia ở vị trí 2 (gebe), zurück đứng cuối câu."
         error_tag: separable_prefix
@@ -272,6 +272,8 @@ exercises:
         - Gib dem Hausmeister den Schlüssel!
         - Gib den Schlüssel bitte dem Hausmeister!
         - Gib den Schlüssel dem Hausmeister!
+        - Gib bitte den Schlüssel dem Hausmeister!
+        - Bitte gib den Schlüssel dem Hausmeister!
     known_wrong:
       - answer: Gib den Hausmeister den Schlüssel!
         feedback_vi: "Người nhận ở Dativ: der Hausmeister → dem Hausmeister."
