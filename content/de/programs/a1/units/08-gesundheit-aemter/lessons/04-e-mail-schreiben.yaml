@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u08-e-mail-schreiben
+order_index: 4
+level: a1
+title:
+  vi: Viết thiệp và e-mail ngắn (Eine Karte, eine E-Mail)
+objectives:
+  - vi: Mở đầu và kết thúc thư đúng kiểu thân mật (Liebe Anna, … Viele Grüße) và trang trọng (Sehr geehrte Frau Weber, … Mit freundlichen Grüßen).
+  - vi: Viết thiệp, e-mail khoảng 30 từ để cảm ơn, chúc mừng, trả lời lời mời.
+  - vi: Hiểu tin nhắn thoại và lời chúc ngắn.
+estimated_minutes: 15
+skills: [writing, reading, vocabulary]
+prerequisites: [de:lesson:a1u08-auf-dem-amt]
+items:
+  - item: de:item:a1u08-g-anrede-gruss
+  - item: de:item:a1u08-karte
+  - item: de:item:a1u08-brief
+  - item: de:item:a1u08-nachricht
+  - item: de:item:a1u08-schreiben
+  - item: de:item:a1u08-schicken
+  - item: de:item:a1u08-antworten
+  - item: de:item:a1u08-einladung
+  - item: de:item:a1u08-gruss
+  - item: de:item:a1u08-herzlich
+  - item: de:item:a1u08-herzlichen-glueckwunsch
+  - item: de:item:a1u08-postkarte
+  - item: de:item:a1u08-alles-gute
+  - item: de:item:a1u08-vielen-dank
+  - item: de:item:p0u3-g-anrede
+    role: reuse
+  - item: de:item:a1u01-g-du-sie
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được một tấm thiệp chúc mừng, một e-mail cảm ơn bạn bè và một e-mail ngắn gửi cơ quan với lời chào đầu và cuối thư đúng kiểu.
+  - type: explain
+    text:
+      vi: "Thư thân mật (bạn bè, gia đình) mở đầu bằng Liebe + tên nữ, Lieber + tên nam, hoặc Hallo + tên; kết bằng Viele Grüße hoặc Liebe Grüße rồi tên bạn. Trong thư thân mật dùng du."
+  - type: explain
+    text:
+      vi: "Thư trang trọng (cơ quan, phòng khám, công ty) mở đầu bằng Sehr geehrte Frau + họ, Sehr geehrter Herr + họ; chưa biết tên người nhận thì Sehr geehrte Damen und Herren. Kết thư: Mit freundlichen Grüßen; trong thư dùng Sie, Ihnen, Ihr (viết hoa)."
+  - type: explain
+    text:
+      vi: "Đuôi -e / -er trong Liebe / Lieber, Sehr geehrte / geehrter đổi theo giới tính người nhận; bây giờ bạn chỉ cần học như cụm cố định. Không dùng Hallo trong thư gửi cơ quan."
+  - type: explain
+    text:
+      vi: "Sau lời chào có dấu phẩy, và câu đầu tiên của thư viết thường: Liebe Anna, vielen Dank für … (danh từ và Sie vẫn viết hoa). Tiếng Việt hay viết \"Chào Anna,\" rồi viết hoa câu sau, nên người Việt dễ sai chỗ này."
+  - type: explain
+    text:
+      vi: "Một thư ngắn kiểu thi Start Deutsch 1 (khoảng 30 từ) gồm: lời chào, ba ý nội dung (ví dụ cảm ơn, trả lời, hỏi), lời chào cuối và tên. Các động từ hay dùng: schreiben (viết), schicken (gửi), antworten (trả lời)."
+  - type: deep_explain
+    text:
+      vi: "Vì sao Liebe Anna nhưng Lieber Tom? lieb là tính từ, và tính từ đứng trước danh từ đổi đuôi – quy tắc đầy đủ bạn học ở A2. Thư gửi hai người: Liebe Anna, lieber Tom, (từ thứ hai viết thường). Trên phong bì người ta ghi \"Herrn Klein\" (thêm -n), nhưng lời chào vẫn là Sehr geehrter Herr Klein. Trong thư thật, tên người viết nằm ở dòng riêng, không có dấu phẩy sau Viele Grüße; trong bài này, khi viết trên một dòng, dấu phẩy chỉ thay cho chỗ xuống dòng. E-mail công việc thân thiện cũng hay dùng Viele Grüße hoặc Beste Grüße, nhưng Mit freundlichen Grüßen an toàn nhất khi viết cho cơ quan."
+  - type: example
+    target: "Liebe Anna, vielen Dank für die Einladung! Ich komme gern am Samstag. Soll ich einen Kuchen mitbringen? Viele Grüße, Lan"
+    target_lang: de
+    translation:
+      vi: "Anna thân mến, cảm ơn bạn nhiều vì lời mời! Thứ Bảy mình sẽ đến. Mình có cần mang bánh theo không? Thân, Lan"
+    note:
+      vi: "Thư thân mật cho bạn nữ: Liebe Anna; sau dấu phẩy viết thường vielen. Ba ý: cảm ơn – nhận lời – câu hỏi."
+  - type: example
+    target: "Sehr geehrte Frau Weber, leider kann ich am Montag nicht zum Termin kommen. Haben Sie am Mittwoch Zeit? Mit freundlichen Grüßen, Minh Tran"
+    target_lang: de
+    translation:
+      vi: "Kính gửi bà Weber, tiếc là thứ Hai tôi không thể đến buổi hẹn. Thứ Tư bà có thời gian không ạ? Trân trọng, Minh Tran"
+    note:
+      vi: "Thư trang trọng: Sehr geehrte Frau + họ; dùng Sie; kết bằng Mit freundlichen Grüßen."
+  - type: example
+    target: "Lieber Tom, herzlichen Glückwunsch zum Geburtstag! Alles Gute! Liebe Grüße, Mai"
+    target_lang: de
+    translation:
+      vi: "Tom thân mến, chúc mừng sinh nhật bạn! Chúc bạn mọi điều tốt đẹp! Thân, Mai"
+    note:
+      vi: "Tom là nam nên Lieber. Sau dấu phẩy, herzlichen viết thường vì là câu tiếp theo."
+  - type: example
+    target: "Sehr geehrte Damen und Herren, ich möchte meinen Sohn für den Deutschkurs anmelden. Bitte schicken Sie mir das Formular. Mit freundlichen Grüßen, Linh Pham"
+    target_lang: de
+    translation:
+      vi: "Kính gửi quý ông bà, tôi muốn đăng ký khoá tiếng Đức cho con trai tôi. Xin vui lòng gửi cho tôi tờ khai. Trân trọng, Linh Pham"
+    note:
+      vi: "Chưa biết tên người nhận: Sehr geehrte Damen und Herren. schicken + Dativ (mir) + Akkusativ (das Formular)."
+  - type: common_mistake
+    wrong: Liebe Anna, Vielen Dank für die Karte!
+    right: Liebe Anna, vielen Dank für die Karte!
+    target_lang: de
+    note:
+      vi: "Sau dấu phẩy của lời chào, câu đầu viết thường (trừ danh từ và Sie)."
+  - type: common_mistake
+    wrong: Liebe Tom,
+    right: Lieber Tom,
+    target_lang: de
+    note:
+      vi: "Tom là nam: Lieber. Liebe dùng cho nữ (Liebe Anna)."
+  - type: common_mistake
+    wrong: Hallo Herr Klein, ich brauche einen Termin.
+    right: Sehr geehrter Herr Klein, ich brauche einen Termin.
+    target_lang: de
+    note:
+      vi: "Thư gửi cơ quan, người không quen: dùng Sehr geehrter Herr …, không dùng Hallo."
+  - type: common_mistake
+    wrong: Mit freundliche Grüße
+    right: Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "Cụm cố định: Mit freundlichen Grüßen (có -n ở cả hai từ)."
+  - type: summary
+    points:
+      - vi: "Thân mật: Liebe Anna, / Lieber Tom, / Hallo Lisa, … Viele Grüße / Liebe Grüße + tên (du)."
+      - vi: "Trang trọng: Sehr geehrte Frau …, / Sehr geehrter Herr …, / Sehr geehrte Damen und Herren, … Mit freundlichen Grüßen (Sie)."
+      - vi: "Sau dấu phẩy của lời chào, câu đầu viết thường."
+      - vi: "Vielen Dank für …! Herzlichen Glückwunsch zum Geburtstag! Alles Gute!"
+      - vi: "schreiben, schicken (+ Dativ + Akkusativ), antworten; die Karte, der Brief, die Nachricht, die Einladung."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u08l4-mcq-sehr-geehrter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      stem: "Bạn viết e-mail lần đầu cho ông Klein ở Bürgeramt (thư trang trọng). Chọn lời chào đầu thư đúng."
+      stem_lang: vi
+      options:
+        - { id: c4m, text: "Sehr geehrter Herr Klein,", lang: de }
+        - { id: h7v, text: "Sehr geehrte Herr Klein,", lang: de }
+        - { id: o2s, text: "Hallo Klein,", lang: de }
+        - { id: t8q, text: "Liebe Herr Klein,", lang: de }
+    answer:
+      correct_option_id: c4m
+    explanation:
+      vi: "Thư trang trọng gửi nam giới: Sehr geehrter Herr + họ (đuôi -er). Sehr geehrte dùng cho nữ; Hallo không hợp thư cơ quan; Liebe dùng cho nữ và cho thư thân mật."
+    display_answer: "Sehr geehrter Herr Klein,"
+
+  - key: de:exercise:a1u08l4-mcq-klein-nach-komma
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      stem: "Câu nào viết đúng chính tả?"
+      stem_lang: vi
+      options:
+        - { id: r3d, text: "Liebe Anna, vielen Dank für deine Karte!", lang: de }
+        - { id: f9k, text: "Liebe Anna, Vielen Dank für deine Karte!", lang: de }
+        - { id: m5z, text: "liebe Anna, vielen Dank für deine Karte!", lang: de }
+        - { id: y1p, text: "Liebe Anna, vielen dank für deine Karte!", lang: de }
+    answer:
+      correct_option_id: r3d
+    explanation:
+      vi: "Sau dấu phẩy của lời chào, câu đầu viết thường: vielen. Danh từ luôn viết hoa: Dank, Karte; chữ đầu tiên của thư cũng viết hoa: Liebe."
+    display_answer: "Liebe Anna, vielen Dank für deine Karte!"
+
+  - key: de:exercise:a1u08l4-listen-glueckwunsch
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u08-herzlichen-glueckwunsch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Herzlichen Glückwunsch zum Geburtstag, liebe Oma!
+      options:
+        - { id: g6w, text: Chúc mừng sinh nhật bà!, lang: vi }
+        - { id: n3x, text: Cảm ơn bà vì lời mời!, lang: vi }
+        - { id: s8b, text: Chúc bà mau khỏi bệnh!, lang: vi }
+        - { id: e4u, text: "Bà ơi, sinh nhật bà là ngày nào?", lang: vi }
+    answer:
+      correct_option_id: g6w
+    explanation:
+      vi: "Herzlichen Glückwunsch zum Geburtstag = chúc mừng sinh nhật. Chúc mau khỏi là Gute Besserung; cảm ơn lời mời là Danke für die Einladung."
+    display_answer: Chúc mừng sinh nhật bà!
+
+  - key: de:exercise:a1u08l4-listen-sara-einladung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-einladung
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hallo Minh, hier ist Sara. Danke für deine Nachricht! Ich schicke dir die Einladung heute per E-Mail. Bis Samstag!"
+      options:
+        - { id: k7a, text: "Hôm nay Sara sẽ gửi lời mời cho Minh qua e-mail.", lang: vi }
+        - { id: d2r, text: "Minh phải gửi lời mời cho Sara qua e-mail.", lang: vi }
+        - { id: w6n, text: "Sara chưa nhận được tin nhắn của Minh.", lang: vi }
+        - { id: z3h, text: "Sara mời Minh đến vào Chủ nhật.", lang: vi }
+    answer:
+      correct_option_id: k7a
+    explanation:
+      vi: "Ich schicke dir die Einladung heute per E-Mail = hôm nay mình gửi lời mời cho bạn qua e-mail. Danke für deine Nachricht = Sara đã nhận tin nhắn; Bis Samstag = hẹn thứ Bảy."
+    display_answer: "Hôm nay Sara sẽ gửi lời mời cho Minh qua e-mail."
+
+  - key: de:exercise:a1u08l4-listen-frau-weber
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Sehr geehrte Frau Weber, vielen Dank für Ihre E-Mail. Leider kann ich am Montag nicht kommen. Mit freundlichen Grüßen, Minh Tran"
+      options:
+        - { id: b8e, text: "Minh viết thư trang trọng cho bà Weber: cảm ơn e-mail, thứ Hai không đến được.", lang: vi }
+        - { id: l4c, text: "Minh viết thư thân mật cho bạn Weber: thứ Hai sẽ đến.", lang: vi }
+        - { id: u9j, text: "Bà Weber viết cho Minh: thứ Hai không có lịch hẹn.", lang: vi }
+        - { id: i1t, text: "Minh mời bà Weber đến vào thứ Hai.", lang: vi }
+    answer:
+      correct_option_id: b8e
+    explanation:
+      vi: "Sehr geehrte … Mit freundlichen Grüßen là thư trang trọng; người viết ký tên cuối thư là Minh Tran. Leider kann ich am Montag nicht kommen = tiếc là thứ Hai tôi không đến được."
+    display_answer: "Minh viết thư trang trọng cho bà Weber: cảm ơn e-mail, thứ Hai không đến được."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u08l4-fill-lieber-gruesse
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-gruss
+    prompt:
+      template: "{{b1}} Tom, vielen Dank für die Einladung! Ich komme gern. Viele {{b2}}, Lan"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Lieber, Hallo]
+        b2: [Grüße]
+    known_wrong:
+      - answer: Liebe
+        feedback_vi: "Tom là nam nên Lieber Tom (Liebe dùng cho nữ)."
+        error_tag: adj_ending
+      - answer: Gruß
+        feedback_vi: "Cuối thư dùng số nhiều: Viele Grüße."
+        error_tag: plural_form
+      - answer: Grüßen
+        feedback_vi: "Không có mit nên không thêm -n: Viele Grüße."
+        error_tag: plural_form
+    explanation:
+      vi: "Thư thân mật gửi bạn nam: Lieber Tom (hoặc Hallo Tom). Lời chào cuối thân mật: Viele Grüße – Grüße là số nhiều của der Gruß."
+    display_answer: Lieber Tom, vielen Dank für die Einladung! Ich komme gern. Viele Grüße, Lan
+
+  - key: de:exercise:a1u08l4-fill-geehrte-freundlichen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      template: "Sehr {{b1}} Frau Weber, ich brauche einen Termin. Haben Sie am Freitag Zeit? Mit {{b2}} Grüßen, Minh Tran"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [freundlichen]
+    known_wrong:
+      - answer: geehrter
+        feedback_vi: "Frau Weber là nữ: Sehr geehrte Frau … (geehrter dùng cho Herr)."
+        error_tag: adj_ending
+      - answer: freundliche
+        feedback_vi: "Cụm cố định: Mit freundlichen Grüßen (có -n)."
+        error_tag: adj_ending
+      - answer: freundlich
+        feedback_vi: "Cụm cố định: Mit freundlichen Grüßen."
+        error_tag: adj_ending
+    explanation:
+      vi: "Thư trang trọng gửi phụ nữ: Sehr geehrte Frau + họ. Lời chào cuối trang trọng là cụm cố định Mit freundlichen Grüßen."
+    display_answer: Sehr geehrte Frau Weber, ich brauche einen Termin. Haben Sie am Freitag Zeit? Mit freundlichen Grüßen, Minh Tran
+
+  - key: de:exercise:a1u08l4-tr-danke-einladung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-vielen-dank
+    prompt:
+      source_text: Cảm ơn bạn nhiều vì lời mời!
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Vielen Dank für die Einladung!
+        - Vielen Dank für deine Einladung!
+        - Danke für die Einladung!
+        - Danke für deine Einladung!
+        - Herzlichen Dank für die Einladung!
+        - Herzlichen Dank für deine Einladung!
+        - Danke schön für die Einladung!
+        - Vielen herzlichen Dank für die Einladung!
+        - Vielen Dank für eure Einladung!
+        - Ich danke dir für die Einladung!
+    known_wrong:
+      - answer: Vielen Dank für der Einladung!
+        feedback_vi: "für đi với Akkusativ: für die Einladung."
+        error_tag: case_dat_akk
+      - answer: Viel Dank für die Einladung!
+        feedback_vi: "Cụm cố định: Vielen Dank."
+        error_tag: word_form
+      - answer: Vielen Dank für das Einladung!
+        feedback_vi: "Danh từ đuôi -ung là giống cái: die Einladung."
+        error_tag: article
+    explanation:
+      vi: "Cảm ơn vì điều gì: Vielen Dank für + Akkusativ. die Einladung giống cái nên giữ die."
+    display_answer: Vielen Dank für die Einladung!
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u08l4-wb-karte-aus-berlin
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-schicken
+    prompt:
+      instruction: "Bạn nhắn cho bạn thân: \"Mình gửi cho bạn một tấm thiệp từ Berlin.\" Sắp xếp thành câu."
+      tokens:
+        - { id: t-karte, text: Karte }
+        - { id: t-aus, text: aus }
+        - { id: t-dir, text: dir }
+        - { id: t-ich, text: ich }
+        - { id: t-berlin, text: Berlin }
+        - { id: t-schicke, text: schicke }
+        - { id: t-eine, text: eine }
+        - { id: t-dich, text: dich }
+        - { id: t-schickst, text: schickst }
+    answer:
+      orders:
+        - [t-ich, t-schicke, t-dir, t-eine, t-karte, t-aus, t-berlin]
+        - [t-ich, t-schicke, t-dir, t-aus, t-berlin, t-eine, t-karte]
+        - [t-aus, t-berlin, t-schicke, t-ich, t-dir, t-eine, t-karte]
+    explanation:
+      vi: "schicken + Dativ (người nhận: dir, không phải dich) + Akkusativ (vật: eine Karte). Ngôi ich: schicke, ở vị trí 2."
+    display_answer: Ich schicke dir eine Karte aus Berlin.
+
+  - key: de:exercise:a1u08l4-tr-glueckwunsch-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u08-alles-gute
+    prompt:
+      source_text: Herzlichen Glückwunsch zum Geburtstag! Alles Gute!
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúc mừng sinh nhật! Chúc mọi điều tốt đẹp!
+        - Chúc mừng sinh nhật! Chúc bạn mọi điều tốt đẹp!
+        - Chúc mừng sinh nhật bạn! Chúc bạn mọi điều tốt đẹp!
+        - Chúc mừng sinh nhật! Chúc mọi điều tốt lành!
+        - Chúc mừng sinh nhật! Chúc bạn mọi điều tốt lành!
+        - Chúc mừng sinh nhật bạn! Chúc mọi điều tốt đẹp!
+        - Chúc mừng sinh nhật! Chúc bạn những điều tốt đẹp nhất!
+        - Chúc mừng sinh nhật! Mọi điều tốt đẹp nhé!
+        - Chúc mừng sinh nhật! Chúc mọi điều tốt đẹp nhất!
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chúc mau khỏi bệnh!
+        feedback_vi: "Đó là Gute Besserung. Herzlichen Glückwunsch zum Geburtstag = chúc mừng sinh nhật."
+        error_tag: vocabulary
+    explanation:
+      vi: "Herzlichen Glückwunsch zum Geburtstag = chúc mừng sinh nhật; Alles Gute = chúc mọi điều tốt đẹp."
+    display_answer: Chúc mừng sinh nhật! Chúc mọi điều tốt đẹp!

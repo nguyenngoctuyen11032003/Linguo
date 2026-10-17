@@ -1,0 +1,394 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u08-der-koerper
+order_index: 1
+level: a1
+title:
+  vi: Cơ thể – sollen, đau ở đâu (Mir tut der Kopf weh.)
+objectives:
+  - vi: Gọi tên các bộ phận cơ thể kèm mạo từ và số nhiều (der Kopf, die Hand, die Füße…).
+  - vi: Nói mình đau ở đâu và hỏi người khác (Mir tut der Kopf weh. Was tut dir weh?).
+  - vi: Thuật lại lời bác sĩ hay người khác dặn bằng sollen (Der Arzt sagt, ich soll im Bett bleiben.).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u07-wiederholung]
+items:
+  - item: de:item:a1u08-g-sollen
+  - item: de:item:a1u08-g-wehtun
+  - item: de:item:a1u08-koerper
+  - item: de:item:a1u08-kopf
+  - item: de:item:a1u08-bauch
+  - item: de:item:a1u08-ruecken
+  - item: de:item:a1u08-arm
+  - item: de:item:a1u08-bein
+  - item: de:item:a1u08-fuss
+  - item: de:item:a1u08-hand
+  - item: de:item:a1u08-auge
+  - item: de:item:a1u08-hals
+  - item: de:item:a1u08-wehtun
+  - item: de:item:a1u08-ohr
+  - item: de:item:a1u08-nase
+  - item: de:item:a1u08-mund
+  - item: de:item:a1u08-finger
+  - item: de:item:a1u04-g-modal-satzklammer
+    role: reuse
+  - item: de:item:a1u07-g-personalpronomen-dativ
+    role: reuse
+  - item: de:item:a1u05-g-imperativ
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Tôi đau đầu", "Hai bàn chân tôi đau", hỏi "Bạn đau ở đâu?" và kể lại "Bác sĩ bảo tôi phải nằm nghỉ".
+  - type: explain
+    text:
+      vi: "Bộ phận cơ thể là danh từ nên luôn học kèm mạo từ: der Kopf, der Bauch, der Rücken, die Hand, das Bein, das Auge. Nhiều bộ phận đi thành đôi, nên bạn hay dùng số nhiều: die Augen, die Ohren, die Hände, die Füße."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"Tôi đau đầu\", \"tôi\" là chủ ngữ. Tiếng Đức nói như \"cái đầu làm tôi đau\": Mir tut der Kopf weh – der Kopf là chủ ngữ, người đau ở Dativ (mir), còn weh tách ra đứng cuối câu."
+  - type: explain
+    text:
+      vi: "Động từ chia theo chỗ đau, không theo người: một bộ phận → tut (Mir tut der Bauch weh), số nhiều → tun (Mir tun die Füße weh). Hỏi bạn bè: Was tut dir weh? Hỏi người lạ: Was tut Ihnen weh?"
+  - type: explain
+    text:
+      vi: "sollen dùng khi bạn nhắc lại điều người khác dặn, yêu cầu: Der Arzt sagt, ich soll im Bett bleiben. Chia như các modal đã học: ich soll, du sollst, er soll (ngôi ich và er không có đuôi), động từ chính ở nguyên thể cuối câu."
+  - type: explain
+    text:
+      vi: "Đừng dịch sollen là \"nên\": soll gần với \"bảo, dặn là phải\" (Bác sĩ bảo tôi phải nằm nghỉ). Lời khuyên \"nên\" là sollte, bạn học ở A2; müssen là \"phải\" vì bắt buộc, không cần ai dặn."
+  - type: deep_explain
+    text:
+      vi: "Trong câu Der Arzt sagt, ich soll …, phần sau dấu phẩy là một câu chính bình thường (soll ở vị trí 2), không cần dass. Câu hỏi Soll ich …? dùng khi bạn hỏi người khác muốn mình làm gì: Soll ich morgen wiederkommen? = Tôi có cần mai quay lại không? Ngoài Mir tut der Kopf weh, người Đức cũng rất hay nói Ich habe Kopfschmerzen (đau đầu), Bauchschmerzen, Rückenschmerzen – từ ghép với Schmerzen (cơn đau); Mein Kopf tut weh cũng đúng. Chú ý tiếng Việt gọi chung là \"chân\", \"tay\", còn tiếng Đức tách ra: das Bein (cả chân) – der Fuß (bàn chân), der Arm (cánh tay) – die Hand (bàn tay)."
+  - type: example
+    target: Mir tut der Kopf weh.
+    target_lang: de
+    translation:
+      vi: Tôi đau đầu.
+    note:
+      vi: "der Kopf là chủ ngữ nên tut (ngôi 3 số ít); người đau ở Dativ: mir. weh đứng cuối câu."
+  - type: example
+    target: "Was tut dir weh? – Mir tun die Füße weh."
+    target_lang: de
+    translation:
+      vi: "Bạn đau ở đâu? – Mình bị đau chân."
+    note:
+      vi: "Hai người bạn nói du → dir. die Füße là số nhiều nên tun."
+  - type: example
+    target: Der Arzt sagt, ich soll drei Tage im Bett bleiben.
+    target_lang: de
+    translation:
+      vi: Bác sĩ bảo tôi phải nằm nghỉ trên giường ba ngày.
+    note:
+      vi: "ich soll (không có đuôi); bleiben ở nguyên thể cuối câu. Sau dấu phẩy là câu chính, soll ở vị trí 2."
+  - type: example
+    target: "Frau Nguyen, Sie sollen bitte morgen um neun Uhr kommen."
+    target_lang: de
+    translation:
+      vi: "Chị Nguyễn, (người ta dặn) chị đến lúc chín giờ sáng mai nhé."
+    note:
+      vi: "Nhân viên nhắn lại lời của bác sĩ cho bệnh nhân, nên dùng Sie (lịch sự): Sie sollen."
+  - type: example
+    target: Meinem Sohn tut das Ohr weh.
+    target_lang: de
+    translation:
+      vi: Con trai tôi bị đau tai.
+    note:
+      vi: "Người đau là danh từ thì cũng ở Dativ: der Sohn → meinem Sohn."
+  - type: example
+    target: "Soll ich viel Wasser trinken? – Ja, Sie sollen viel trinken."
+    target_lang: de
+    translation:
+      vi: "Tôi có phải uống nhiều nước không? – Có, ông/bà phải uống nhiều nước."
+    note:
+      vi: "Bệnh nhân hỏi bác sĩ muốn mình làm gì: Soll ich …? Bác sĩ trả lời với Sie: Sie sollen …"
+  - type: example
+    target: "Bleiben Sie zwei Tage zu Hause und trinken Sie viel Wasser! – Der Arzt sagt, ich soll zwei Tage zu Hause bleiben."
+    target_lang: de
+    translation:
+      vi: "Ông/bà ở nhà hai ngày và uống nhiều nước nhé! – Bác sĩ bảo tôi phải ở nhà hai ngày."
+    note:
+      vi: "Bác sĩ nói trực tiếp bằng câu mệnh lệnh với Sie (Bleiben Sie …!). Khi kể lại cho người khác, bạn đổi sang sollen: ich soll … bleiben."
+  - type: common_mistake
+    wrong: Ich tue Kopf weh.
+    right: Mir tut der Kopf weh.
+    target_lang: de
+    note:
+      vi: Đừng dịch từng chữ "tôi đau đầu". Chỗ đau là chủ ngữ, người đau ở Dativ (mir), và Kopf cần mạo từ der.
+  - type: common_mistake
+    wrong: Mir tut die Füße weh.
+    right: Mir tun die Füße weh.
+    target_lang: de
+    note:
+      vi: "die Füße là số nhiều nên động từ cũng số nhiều: tun."
+  - type: common_mistake
+    wrong: Der Arzt sagt, ich sollen im Bett bleiben.
+    right: Der Arzt sagt, ich soll im Bett bleiben.
+    target_lang: de
+    note:
+      vi: "Modal ở ngôi ich không có đuôi: ich soll (như ich kann, ich muss)."
+  - type: summary
+    points:
+      - vi: "Bộ phận cơ thể: der Kopf, der Bauch, der Rücken, der Arm, das Bein, der Fuß, die Hand, das Auge, der Hals, das Ohr, die Nase, der Mund."
+      - vi: "Mir tut der Kopf weh. – Mir tun die Füße weh. (chỗ đau là chủ ngữ, người ở Dativ)"
+      - vi: "Was tut dir weh? (bạn bè) – Was tut Ihnen weh? (lịch sự)"
+      - vi: "sollen: ich soll, du sollst, er soll, wir sollen, ihr sollt, sie/Sie sollen + nguyên thể cuối câu."
+      - vi: "sollen = được dặn, được yêu cầu (Der Arzt sagt, ich soll …), không phải \"nên\"."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u08l1-mcq-kopf-weh
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u08-g-wehtun
+    prompt:
+      stem: "Chọn câu đúng cho: \"Tôi đau đầu.\""
+      stem_lang: vi
+      options:
+        - { id: h4m, text: Ich tue Kopf weh., lang: de }
+        - { id: q7z, text: Mir tut der Kopf weh., lang: de }
+        - { id: c2w, text: Mich tut der Kopf weh., lang: de }
+        - { id: y9d, text: Mir tun der Kopf weh., lang: de }
+    answer:
+      correct_option_id: q7z
+    explanation:
+      vi: "Chỗ đau (der Kopf) là chủ ngữ, nên động từ là tut (ngôi 3 số ít); người đau ở Dativ: mir. mich là Akkusativ; tun dùng cho chỗ đau số nhiều; \"Ich tue Kopf weh\" là dịch từng chữ từ tiếng Việt."
+    display_answer: Mir tut der Kopf weh.
+
+  - key: de:exercise:a1u08l1-mcq-du-sollst
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u08-g-sollen
+    prompt:
+      stem: "Chọn dạng đúng: Der Arzt sagt, du ___ viel Wasser trinken."
+      stem_lang: vi
+      options:
+        - { id: k3r, text: sollst, lang: de }
+        - { id: w8n, text: soll, lang: de }
+        - { id: p5f, text: sollen, lang: de }
+        - { id: e1t, text: sollt, lang: de }
+    answer:
+      correct_option_id: k3r
+    explanation:
+      vi: "Chủ ngữ là du nên dùng sollst (đuôi -st như du kannst, du musst). soll dành cho ich và er/sie/es, sollen cho wir và sie/Sie, sollt cho ihr."
+    display_answer: sollst
+
+  - key: de:exercise:a1u08l1-listen-fuesse
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u08-fuss
+    prompt:
+      audio_asset_id: null
+      fallback_text: Mir tun die Füße weh.
+      options:
+        - { id: r6b, text: Tôi bị đau hai bàn chân., lang: vi }
+        - { id: j2x, text: Tôi bị đau hai bàn tay., lang: vi }
+        - { id: n8s, text: Tôi bị đau lưng., lang: vi }
+        - { id: f4g, text: Tôi bị đau mắt., lang: vi }
+    answer:
+      correct_option_id: r6b
+    explanation:
+      vi: "die Füße là số nhiều của der Fuß (bàn chân), vì vậy động từ là tun. Bàn tay là die Hände, lưng là der Rücken, mắt là die Augen."
+    display_answer: Tôi bị đau hai bàn chân.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u08l1-fill-tut-tun
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-wehtun
+    prompt:
+      template: "Mir {{b1}} der Bauch weh, und meinem Sohn {{b2}} die Ohren weh."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [tut]
+        b2: [tun]
+    known_wrong:
+      - answer: tue
+        feedback_vi: "Động từ chia theo chỗ đau, không theo người: der Bauch → tut, die Ohren → tun."
+        error_tag: verb_form
+      - answer: tust
+        feedback_vi: "Chủ ngữ là chỗ đau (der Bauch, die Ohren), không phải du: tut / tun."
+        error_tag: verb_form
+    explanation:
+      vi: "der Bauch là một bộ phận (ngôi 3 số ít) nên tut; die Ohren là số nhiều nên tun. Người đau đứng ở Dativ: mir, meinem Sohn."
+    display_answer: Mir tut der Bauch weh, und meinem Sohn tun die Ohren weh.
+
+  - key: de:exercise:a1u08l1-fill-soll-sollen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-sollen
+    prompt:
+      template: "Der Arzt sagt, ich {{b1}} (sollen) im Bett bleiben, und die Kinder {{b2}} (sollen) auch zu Hause bleiben."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [soll]
+        b2: [sollen]
+    known_wrong:
+      - answer: solle
+        feedback_vi: "Modal ở ngôi ich không có đuôi: ich soll."
+        error_tag: verb_form
+      - answer: sollst
+        feedback_vi: "sollst chỉ dùng với du. ich → soll, die Kinder (sie, số nhiều) → sollen."
+        error_tag: verb_form
+      - answer: sollt
+        feedback_vi: "sollt chỉ dùng với ihr. ich → soll, die Kinder → sollen."
+        error_tag: verb_form
+    explanation:
+      vi: "ich soll (ngôi ich không có đuôi, giống ich kann, ich muss); die Kinder là số nhiều, tương đương sie, nên sollen. Động từ chính bleiben ở nguyên thể cuối mỗi vế."
+    display_answer: Der Arzt sagt, ich soll im Bett bleiben, und die Kinder sollen auch zu Hause bleiben.
+
+  - key: de:exercise:a1u08l1-tr-ruecken
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-ruecken
+    prompt:
+      source_text: Tôi đau lưng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mir tut der Rücken weh.
+        - Der Rücken tut mir weh.
+        - Mein Rücken tut weh.
+        - Mein Rücken tut mir weh.
+        - Ich habe Rückenschmerzen.
+    known_wrong:
+      - answer: Ich tue Rücken weh.
+        feedback_vi: "Chỗ đau là chủ ngữ, người đau ở Dativ: Mir tut der Rücken weh."
+        error_tag: wehtun_pattern
+      - answer: Mich tut der Rücken weh.
+        feedback_vi: "wehtun cần Dativ: mir, không phải mich."
+        error_tag: case_dat_akk
+      - answer: Mir tut die Rücken weh.
+        feedback_vi: "Rücken là giống đực: der Rücken."
+        error_tag: article
+      - answer: Mir tut Rücken weh.
+        feedback_vi: "Thiếu mạo từ: der Rücken."
+        error_tag: article
+    explanation:
+      vi: "Khuôn câu: Mir tut + chỗ đau (Nominativ) + weh. der Rücken là giống đực, số ít nên tut; mir là Dativ của ich. Ich habe Rückenschmerzen cũng đúng."
+    display_answer: Mir tut der Rücken weh.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u08l1-wb-wasser-trinken
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-sollen
+    prompt:
+      instruction: "Bác sĩ dặn bạn uống nhiều nước. Bạn kể lại cho bạn bè: \"(Bác sĩ dặn) tôi phải uống nhiều nước.\" Sắp xếp thành câu."
+      tokens:
+        - { id: t-viel, text: viel }
+        - { id: t-soll, text: soll }
+        - { id: t-trinken, text: trinken }
+        - { id: t-ich, text: ich }
+        - { id: t-wasser, text: Wasser }
+        - { id: t-sollst, text: sollst }
+        - { id: t-trinke, text: trinke }
+    answer:
+      orders:
+        - [t-ich, t-soll, t-viel, t-wasser, t-trinken]
+        - [t-viel, t-wasser, t-soll, t-ich, t-trinken]
+    explanation:
+      vi: "Lời người khác dặn → sollen; ngôi ich là soll (sollst dành cho du). soll ở vị trí 2, trinken ở nguyên thể cuối câu (trinke là dạng chia, không đứng cuối câu modal)."
+    display_answer: Ich soll viel Wasser trinken.
+
+  - key: de:exercise:a1u08l1-wb-fuesse-weh
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-wehtun
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi bị đau hai bàn chân.\""
+      tokens:
+        - { id: t-weh, text: weh }
+        - { id: t-die, text: die }
+        - { id: t-mir, text: mir }
+        - { id: t-tun, text: tun }
+        - { id: t-fuesse, text: Füße }
+        - { id: t-tut, text: tut }
+        - { id: t-mich, text: mich }
+    answer:
+      orders:
+        - [t-mir, t-tun, t-die, t-fuesse, t-weh]
+        - [t-die, t-fuesse, t-tun, t-mir, t-weh]
+    explanation:
+      vi: "die Füße là chủ ngữ số nhiều nên tun (không phải tut); người đau ở Dativ: mir (không phải mich). weh luôn đứng cuối câu; tun ở vị trí 2."
+    display_answer: Mir tun die Füße weh.
+
+  - key: de:exercise:a1u08l1-mcq-was-tut-ihnen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-personalpronomen-dativ
+    prompt:
+      stem: "Một ông lớn tuổi bạn không quen bị ngã trên phố. Bạn hỏi ông ấy đau ở đâu. Câu nào đúng và lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: v5c, text: Was tut Ihnen weh?, lang: de }
+        - { id: a8u, text: Was tut dir weh?, lang: de }
+        - { id: s1k, text: Was tut Sie weh?, lang: de }
+        - { id: g6p, text: Was tun Sie weh?, lang: de }
+    answer:
+      correct_option_id: v5c
+    explanation:
+      vi: "Với người lạ, lớn tuổi dùng Sie; trong khuôn wehtun người đau ở Dativ, nên Sie → Ihnen. dir là cách nói với bạn bè; Sie (Nominativ/Akkusativ) sai cách; \"Was tun Sie weh?\" lại biến ông ấy thành người gây đau."
+    display_answer: Was tut Ihnen weh?
+
+  - key: de:exercise:a1u08l1-tr-mutter-sagt-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-g-sollen
+    prompt:
+      source_text: Meine Mutter sagt, ich soll den Arzt anrufen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mẹ tôi bảo tôi gọi điện cho bác sĩ.
+        - Mẹ tôi bảo tôi phải gọi điện cho bác sĩ.
+        - Mẹ tôi bảo tôi gọi cho bác sĩ.
+        - Mẹ tôi bảo tôi phải gọi cho bác sĩ.
+        - Mẹ tôi bảo tôi gọi bác sĩ.
+        - Mẹ tôi dặn tôi gọi điện cho bác sĩ.
+        - Mẹ tôi dặn tôi phải gọi điện cho bác sĩ.
+        - Mẹ tôi dặn tôi gọi cho bác sĩ.
+        - Mẹ tôi nói tôi phải gọi điện cho bác sĩ.
+        - Mẹ tôi nói tôi gọi điện cho bác sĩ.
+        - Mẹ mình bảo mình gọi điện cho bác sĩ.
+        - Mẹ tôi bảo tôi gọi điện thoại cho bác sĩ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mẹ tôi gọi điện cho bác sĩ.
+        feedback_vi: "Người gọi điện là ich (tôi), mẹ chỉ dặn: Mẹ tôi bảo tôi gọi điện cho bác sĩ."
+        error_tag: subject_missed
+      - answer: Mẹ tôi muốn gọi điện cho bác sĩ.
+        feedback_vi: "soll không phải \"muốn\" (wollen). Ở đây là lời mẹ dặn tôi làm."
+        error_tag: modal_meaning
+    explanation:
+      vi: "ich soll … anrufen = tôi được dặn là phải gọi điện; người dặn là meine Mutter. anrufen là động từ tách, ở nguyên thể cuối câu vì có modal."
+    display_answer: Mẹ tôi bảo tôi gọi điện cho bác sĩ.

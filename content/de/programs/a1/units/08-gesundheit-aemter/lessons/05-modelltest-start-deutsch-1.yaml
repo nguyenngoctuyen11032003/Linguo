@@ -1,0 +1,398 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u08-modelltest-start-deutsch-1
+order_index: 5
+level: a1
+title:
+  vi: Ôn A1 – bài thi mô phỏng Start Deutsch 1 (Modelltest)
+objectives:
+  - vi: "Làm quen dạng bài Hören: hội thoại ngắn, thông báo, tin nhắn thoại."
+  - vi: "Làm quen dạng bài Lesen: tin nhắn/e-mail, quảng cáo, biển báo."
+  - vi: "Schreiben: điền form (Teil 1) và viết tin nhắn ~30 từ theo 3 ý (Teil 2)."
+  - vi: "Sprechen: giới thiệu bản thân, hỏi–đáp theo thẻ chủ đề, đưa ra lời đề nghị theo thẻ hình."
+estimated_minutes: 20
+skills: [listening, reading, writing, speaking]
+prerequisites: [de:lesson:a1u08-e-mail-schreiben]
+items:
+  - item: de:item:a1u08-g-sollen
+    role: reuse
+  - item: de:item:a1u08-g-wehtun
+    role: reuse
+  - item: de:item:a1u08-g-wie-oft-mal
+    role: reuse
+  - item: de:item:a1u08-g-akk-praepositionen
+    role: reuse
+  - item: de:item:a1u08-g-anrede-gruss
+    role: reuse
+  - item: de:item:a1u08-krank
+    role: reuse
+  - item: de:item:a1u08-fieber
+    role: reuse
+  - item: de:item:a1u08-praxis
+    role: reuse
+  - item: de:item:a1u08-termin
+    role: reuse
+  - item: de:item:a1u08-tablette
+    role: reuse
+  - item: de:item:a1u08-sprechstunde
+    role: reuse
+  - item: de:item:a1u08-geschlossen
+    role: reuse
+  - item: de:item:a1u02-arzt
+    role: reuse
+  - item: de:item:a1u01-formular
+    role: reuse
+  - item: de:item:a1u01-familienname
+    role: reuse
+  - item: de:item:a1u01-vorname
+    role: reuse
+  - item: de:item:a1u01-wohnort
+    role: reuse
+  - item: de:item:a1u04-hausaufgabe
+    role: reuse
+  - item: de:item:p0u3-fenster
+    role: reuse
+  - item: de:item:a1u05-g-hoefliche-bitte
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài cuối A1 cho bạn làm thử từng dạng bài của kỳ thi Start Deutsch 1, với chủ đề quen thuộc của cả cấp A1 – sức khoẻ, cơ quan, hẹn gặp, thư từ.
+  - type: explain
+    text:
+      vi: "Start Deutsch 1 có bốn phần: Hören (nghe), Lesen (đọc), Schreiben (viết) và Sprechen (nói, thi theo nhóm). Cấu trúc, thời gian và thang điểm có thể thay đổi – hãy xem thông tin mới nhất của Goethe-Institut trước khi đăng ký thi."
+  - type: explain
+    text:
+      vi: "Hören và Lesen: đọc câu hỏi trước, đoán thông tin cần tìm (giờ, ngày, nơi chốn, giá), rồi chỉ tìm đúng chỗ đó. Với bài Richtig/Falsch, chú ý các chữ nhỏ làm đổi nghĩa: nicht, kein, nur, heute, morgen."
+  - type: explain
+    text:
+      vi: "Schreiben Teil 2: viết khoảng 30 từ, trả lời đủ cả ba ý của đề, có lời chào đầu và cuối đúng kiểu (Liebe/Lieber … Viele Grüße hoặc Sehr geehrte … Mit freundlichen Grüßen). Câu ngắn, đúng còn hơn câu dài, sai."
+  - type: explain
+    text:
+      vi: "Sprechen: Teil 1 giới thiệu bản thân (Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby); Teil 2 hỏi và trả lời theo thẻ chủ đề (Gesundheit – Arzt? → Wie oft gehst du zum Arzt?); Teil 3 nhờ hay đề nghị theo thẻ hình (Können Sie bitte das Fenster aufmachen?)."
+  - type: deep_explain
+    text:
+      vi: "Mẹo làm bài: ở phần nghe thông báo, con số thường là đáp án – luyện phân biệt -zehn (15) và -zig (50), elf (11) và acht (8). Ở phần đọc quảng cáo, đề thường cho hai quảng cáo gần giống nhau; khác biệt nằm ở ngày, giờ hoặc điều kiện (ohne Termin, nur am Wochenende). Trong phần nói theo nhóm, bạn hỏi bạn cùng thi bằng du hoặc Sie tuỳ theo hướng dẫn của giám khảo – khi không chắc, Sie luôn an toàn. Phần viết dùng lại những cụm bạn đã học: Vielen Dank für …, Leider kann ich nicht …, Haben Sie / Hast du am … Zeit?"
+  - type: example
+    target: "Hallo, hier ist die Praxis Doktor Schäfer. Frau Nguyen, Ihr Termin am Donnerstag ist leider nicht möglich. Können Sie am Freitag um zehn Uhr kommen?"
+    target_lang: de
+    translation:
+      vi: "Xin chào, đây là phòng khám bác sĩ Schäfer. Chị Nguyễn, tiếc là lịch hẹn thứ Năm của chị không được. Chị có thể đến lúc mười giờ thứ Sáu không?"
+    note:
+      vi: "Dạng tin nhắn thoại (Hören Teil 3): thông tin chính là ngày và giờ mới."
+  - type: example
+    target: "Liebe Mai, ich bin leider krank. Ich habe Fieber und soll drei Tage im Bett bleiben. Kannst du mir die Hausaufgaben bringen? Viele Grüße, Jonas"
+    target_lang: de
+    translation:
+      vi: "Mai thân mến, tiếc là mình bị ốm. Mình bị sốt và phải nằm nghỉ ba ngày. Bạn mang bài tập về nhà cho mình được không? Thân, Jonas"
+    note:
+      vi: "Dạng tin nhắn ~30 từ (Lesen Teil 1, cũng là mẫu cho Schreiben Teil 2): lời chào – lý do – lời nhờ – lời chào cuối."
+  - type: example
+    target: "Wie oft gehst du zum Arzt? – Ich gehe nur einmal im Jahr zum Arzt."
+    target_lang: de
+    translation:
+      vi: "Bạn đi khám bác sĩ bao lâu một lần? – Mình chỉ đi khám mỗi năm một lần."
+    note:
+      vi: "Sprechen Teil 2: thẻ \"Gesundheit – Arzt?\". Hai thí sinh nói du với nhau nếu giám khảo cho phép."
+  - type: example
+    target: "Was fehlt dir? – Mir tut der Bauch weh. – Oh, gute Besserung!"
+    target_lang: de
+    translation:
+      vi: "Bạn bị làm sao thế? – Mình đau bụng. – Ôi, mau khỏi nhé!"
+    note:
+      vi: "Sprechen Teil 2 với thẻ \"Gesundheit\": hai thí sinh dùng du. Chỗ đau là chủ ngữ, người đau ở Dativ (mir)."
+  - type: common_mistake
+    wrong: Ich bin Fieber und ich soll im Bett bleiben.
+    right: Ich habe Fieber und soll im Bett bleiben.
+    target_lang: de
+    note:
+      vi: "Triệu chứng đi với haben. Trong bài viết, lỗi nhỏ như vậy làm mất điểm phần ngôn ngữ."
+  - type: common_mistake
+    wrong: "Sehr geehrte Damen und Herren, Ich bin krank."
+    right: "Sehr geehrte Damen und Herren, ich bin krank."
+    target_lang: de
+    note:
+      vi: "Sau dấu phẩy của lời chào, câu đầu viết thường."
+  - type: summary
+    points:
+      - vi: "Hören: nghe con số, ngày, giờ; chú ý nicht, nur, heute/morgen."
+      - vi: "Lesen: đọc câu hỏi trước, tìm đúng thông tin; Richtig/Falsch."
+      - vi: "Schreiben Teil 1: điền form (Familienname, Vorname, Alter, Wohnort…)."
+      - vi: "Schreiben Teil 2: ~30 từ, đủ 3 ý, lời chào đầu – cuối đúng kiểu."
+      - vi: "Sprechen: tự giới thiệu; hỏi–đáp theo thẻ; nhờ lịch sự (Können Sie bitte …?)."
+exercises:
+  # ---------------- recognition: Lesen ----------------
+  - key: de:exercise:a1u08l5-mcq-lesen-jonas
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-krank
+    prompt:
+      stem: "Lesen Teil 1. Đọc tin nhắn: \"Liebe Mai, ich bin leider krank. Ich habe Fieber und soll drei Tage im Bett bleiben. Kannst du mir am Montag die Hausaufgaben aus dem Deutschkurs bringen? Viele Grüße, Jonas\" — Richtig oder falsch? Jonas geht am Montag zum Deutschkurs."
+      stem_lang: vi
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Lesen Teil 1 (tin nhắn, Richtig/Falsch). Jonas bị ốm và phải nằm nghỉ ba ngày (soll drei Tage im Bett bleiben); cậu nhờ Mai mang bài tập đến vào thứ Hai, nên cậu không đi học – câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:a1u08l5-mcq-lesen-anzeige
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-sprechstunde
+    prompt:
+      stem: "Lesen Teil 2. Thứ Bảy con bạn bị sốt và bạn muốn đi khám. Chọn quảng cáo phù hợp. (a) \"Praxis Dr. Berg – Sprechstunde: Montag bis Freitag 8 bis 18 Uhr, nur mit Termin.\" (b) \"Praxis Dr. Yilmaz, Kinderärztin – Sprechstunde: Montag bis Freitag 9 bis 17 Uhr, Samstag 9 bis 12 Uhr, auch ohne Termin.\""
+      stem_lang: vi
+      options:
+        - { id: a1x, text: "(a) Praxis Dr. Berg", lang: vi }
+        - { id: b2x, text: "(b) Praxis Dr. Yilmaz", lang: vi }
+    answer:
+      correct_option_id: b2x
+    explanation:
+      vi: "Lesen Teil 2 (chọn quảng cáo). Chỉ phòng khám (b) mở thứ Bảy (Samstag 9 bis 12 Uhr) và nhận khám không cần lịch hẹn (auch ohne Termin); Kinderärztin là bác sĩ nhi. Phòng khám (a) chỉ mở từ thứ Hai đến thứ Sáu."
+    display_answer: "(b) Praxis Dr. Yilmaz"
+
+  - key: de:exercise:a1u08l5-mcq-lesen-aushang
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-praxis
+    prompt:
+      stem: "Lesen Teil 3. Đọc biển ở cửa phòng khám: \"Liebe Patientinnen und Patienten, unsere Praxis ist vom 1. bis 14. August geschlossen. Bitte gehen Sie dann zu Dr. Weber, Hauptstraße 5.\" Ngày 5 tháng 8 bạn bị ốm. Bạn làm gì?"
+      stem_lang: vi
+      options:
+        - { id: c3h, text: "Đến bác sĩ Weber ở Hauptstraße 5.", lang: vi }
+        - { id: c7k, text: "Đến phòng khám này, vì nó mở cửa từ ngày 1 tháng 8.", lang: vi }
+        - { id: c9m, text: "Chờ đến ngày 5 tháng 8 rồi gọi điện cho phòng khám.", lang: vi }
+    answer:
+      correct_option_id: c3h
+    explanation:
+      vi: "Lesen Teil 3 (biển báo). vom 1. bis 14. August geschlossen = đóng cửa từ ngày 1 đến 14 tháng 8; ngày 5 nằm trong khoảng đó, nên đi đến bác sĩ thay thế: Dr. Weber, Hauptstraße 5."
+    display_answer: "Đến bác sĩ Weber ở Hauptstraße 5."
+
+  # ---------------- recognition: Hören ----------------
+  - key: de:exercise:a1u08l5-listen-neuer-termin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-termin
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hallo, hier ist die Praxis Doktor Schäfer. Frau Nguyen, Ihr Termin am Donnerstag ist leider nicht möglich. Können Sie am Freitag um zehn Uhr kommen? Bitte rufen Sie uns an. Danke!"
+      options:
+        - { id: h1a, text: "Lịch hẹn mới: thứ Sáu lúc 10 giờ.", lang: vi }
+        - { id: h2b, text: "Lịch hẹn mới: thứ Năm lúc 10 giờ.", lang: vi }
+        - { id: h3c, text: "Lịch hẹn mới: thứ Sáu lúc 2 giờ chiều.", lang: vi }
+        - { id: h4d, text: "Lịch hẹn thứ Năm vẫn giữ nguyên.", lang: vi }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: "Hören Teil 3 (tin nhắn thoại). Ihr Termin am Donnerstag ist leider nicht möglich = lịch thứ Năm không được; am Freitag um zehn Uhr = thứ Sáu lúc mười giờ."
+    display_answer: "Lịch hẹn mới: thứ Sáu lúc 10 giờ."
+
+  - key: de:exercise:a1u08l5-listen-dreimal
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-g-wie-oft-mal
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Wie oft soll ich die Tabletten nehmen? – Dreimal am Tag, immer nach dem Essen. – Und wie lange? – Eine Woche."
+      options:
+        - { id: k1a, text: "Ba lần mỗi ngày, sau bữa ăn, trong một tuần.", lang: vi }
+        - { id: k2b, text: "Ba lần mỗi tuần, trước bữa ăn.", lang: vi }
+        - { id: k3c, text: "Hai lần mỗi ngày, sau bữa ăn, trong ba tuần.", lang: vi }
+        - { id: k4d, text: "Một lần mỗi ngày, buổi sáng, trong một tuần.", lang: vi }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: "Hören Teil 1 (hội thoại ngắn). dreimal am Tag = ba lần mỗi ngày; nach dem Essen = sau bữa ăn; eine Woche = một tuần."
+    display_answer: "Ba lần mỗi ngày, sau bữa ăn, trong một tuần."
+
+  # ---------------- recall: Schreiben ----------------
+  - key: de:exercise:a1u08l5-fill-formular
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-formular
+    prompt:
+      template: "Minh Tran ist 28 Jahre alt. Er kommt aus Vietnam und wohnt jetzt in Köln. – Formular: Familienname: Tran. Vorname: {{b1}}. Alter: {{b2}}. Wohnort: {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Minh]
+        b2: ["28", achtundzwanzig, 28 Jahre]
+        b3: [Köln]
+    known_wrong:
+      - answer: Vietnam
+        feedback_vi: "Wohnort là nơi đang sống (Köln); Vietnam là nước quê (Herkunftsland)."
+        error_tag: form_field
+      - answer: Tran
+        feedback_vi: "Tran là họ (Familienname); Vorname là tên: Minh."
+        error_tag: form_field
+    explanation:
+      vi: "Schreiben Teil 1 (điền form). Vorname = tên (Minh), Familienname = họ (Tran), Alter = tuổi (28), Wohnort = nơi đang sống (Köln, vì wohnt jetzt in Köln)."
+    display_answer: "Familienname: Tran. Vorname: Minh. Alter: 28. Wohnort: Köln."
+
+  - key: de:exercise:a1u08l5-fill-sehr-geehrte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      template: "{{b1}} Damen und Herren, ich bin leider krank und kann am Montag nicht zum Termin kommen. Haben Sie am Mittwoch einen Termin für mich? Mit {{b2}} Grüßen, Minh Tran"
+      blanks:
+        - { id: b1, width_hint: 13 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [Sehr geehrte]
+        b2: [freundlichen]
+    known_wrong:
+      - answer: Liebe
+        feedback_vi: "Thư gửi cơ quan, không biết tên người nhận: Sehr geehrte Damen und Herren."
+        error_tag: register
+      - answer: Hallo
+        feedback_vi: "Không dùng Hallo trong thư trang trọng: Sehr geehrte Damen und Herren."
+        error_tag: register
+      - answer: Sehr geehrter
+        feedback_vi: "Damen und Herren là số nhiều: Sehr geehrte."
+        error_tag: adj_ending
+      - answer: freundliche
+        feedback_vi: "Cụm cố định: Mit freundlichen Grüßen."
+        error_tag: adj_ending
+    explanation:
+      vi: "Schreiben Teil 2 (thư trang trọng ~30 từ, 3 ý: báo ốm – không đến được – xin lịch mới). Mở đầu: Sehr geehrte Damen und Herren; kết: Mit freundlichen Grüßen."
+    display_answer: Sehr geehrte Damen und Herren, ich bin leider krank und kann am Montag nicht zum Termin kommen. Haben Sie am Mittwoch einen Termin für mich? Mit freundlichen Grüßen, Minh Tran
+
+  - key: de:exercise:a1u08l5-tr-vorstellung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-wohnort
+    prompt:
+      source_text: Tôi đến từ Việt Nam và sống ở Berlin.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich komme aus Vietnam und wohne in Berlin.
+        - Ich komme aus Vietnam und lebe in Berlin.
+        - Ich komme aus Vietnam und ich wohne in Berlin.
+        - Ich komme aus Vietnam und ich lebe in Berlin.
+        - Ich komme aus Vietnam und wohne jetzt in Berlin.
+        - Ich komme aus Vietnam und lebe jetzt in Berlin.
+    known_wrong:
+      - answer: Ich komme von Vietnam und wohne in Berlin.
+        feedback_vi: "Quê quán dùng aus: Ich komme aus Vietnam."
+        error_tag: preposition
+      - answer: Ich komme aus Vietnam und wohne nach Berlin.
+        feedback_vi: "Sống ở đâu dùng in: Ich wohne in Berlin."
+        error_tag: preposition
+      - answer: Ich kommen aus Vietnam und wohnen in Berlin.
+        feedback_vi: "Chia động từ theo ich: komme, wohne."
+        error_tag: verb_form
+    explanation:
+      vi: "Sprechen Teil 1 (giới thiệu bản thân). Quê quán: aus + tên nước; nơi sống: wohnen/leben in + thành phố. Động từ chia theo ich: komme, wohne."
+    display_answer: Ich komme aus Vietnam und wohne in Berlin.
+
+  # ---------------- application: Sprechen ----------------
+  - key: de:exercise:a1u08l5-wb-wie-oft-arzt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-arzt
+    prompt:
+      instruction: "Sprechen Teil 2: bạn rút thẻ \"Gesundheit – Arzt?\" và hỏi bạn cùng thi (du): \"Bạn đi khám bác sĩ bao lâu một lần?\" Sắp xếp thành câu hỏi."
+      tokens:
+        - { id: t-arzt, text: Arzt }
+        - { id: t-du, text: du }
+        - { id: t-oft, text: oft }
+        - { id: t-zum, text: zum }
+        - { id: t-wie, text: wie }
+        - { id: t-gehst, text: gehst }
+        - { id: t-geht, text: geht }
+        - { id: t-zu, text: zu }
+    answer:
+      orders:
+        - [t-wie, t-oft, t-gehst, t-du, t-zum, t-arzt]
+    explanation:
+      vi: "Sprechen Teil 2 (hỏi theo thẻ chủ đề). Câu hỏi W: Wie oft ở vị trí 1, động từ gehst ở vị trí 2 (du → gehst). Đến chỗ bác sĩ: zu + dem Arzt = zum Arzt."
+    display_answer: Wie oft gehst du zum Arzt?
+
+  - key: de:exercise:a1u08l5-wb-fenster-aufmachen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-hoefliche-bitte
+    prompt:
+      instruction: "Sprechen Teil 3: thẻ hình vẽ một cửa sổ. Bạn nhờ giám khảo (Sie) mở cửa sổ một cách lịch sự. Sắp xếp thành câu."
+      tokens:
+        - { id: t-fenster, text: Fenster }
+        - { id: t-bitte, text: bitte }
+        - { id: t-aufmachen, text: aufmachen }
+        - { id: t-sie, text: Sie }
+        - { id: t-das, text: das }
+        - { id: t-koennen, text: können }
+        - { id: t-der, text: der }
+        - { id: t-macht, text: macht }
+    answer:
+      orders:
+        - [t-koennen, t-sie, t-bitte, t-das, t-fenster, t-aufmachen]
+        - [t-koennen, t-sie, t-das, t-fenster, t-bitte, t-aufmachen]
+    explanation:
+      vi: "Sprechen Teil 3 (nhờ, đề nghị theo thẻ hình). Câu hỏi có/không: động từ können đứng đầu, rồi Sie; aufmachen ở nguyên thể cuối câu. das Fenster là giống trung."
+    display_answer: Können Sie bitte das Fenster aufmachen?
+
+  - key: de:exercise:a1u08l5-tr-praxis-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-geschlossen
+    prompt:
+      source_text: Die Praxis ist am Mittwochnachmittag geschlossen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phòng khám đóng cửa vào chiều thứ Tư.
+        - Phòng khám đóng cửa chiều thứ Tư.
+        - Chiều thứ Tư phòng khám đóng cửa.
+        - Phòng khám nghỉ chiều thứ Tư.
+        - Chiều thứ Tư phòng khám nghỉ.
+        - Phòng khám đóng cửa vào buổi chiều thứ Tư.
+        - Phòng khám đóng cửa buổi chiều thứ Tư.
+        - Vào chiều thứ Tư phòng khám đóng cửa.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Phòng khám mở cửa vào chiều thứ Tư.
+        feedback_vi: "geschlossen = đóng cửa (mở cửa là geöffnet)."
+        error_tag: vocabulary
+      - answer: Phòng khám đóng cửa vào sáng thứ Tư.
+        feedback_vi: "Nachmittag = buổi chiều."
+        error_tag: vocabulary
+    explanation:
+      vi: "Lesen Teil 3 (biển báo). Mittwochnachmittag = Mittwoch + Nachmittag = chiều thứ Tư; geschlossen = đóng cửa."
+    display_answer: Phòng khám đóng cửa vào chiều thứ Tư.

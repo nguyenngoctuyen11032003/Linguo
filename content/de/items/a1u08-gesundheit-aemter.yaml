@@ -1,0 +1,1234 @@
+# Học liệu unit A1U08 "Sức khoẻ, cơ quan và ôn A1" (Gesundheit, Ämter, Start Deutsch 1), tiếng Đức A1.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: cơ thể, sollen, wehtun =================
+  - key: de:item:a1u08-g-sollen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "sollen: ich soll, du sollst, er/sie/es soll, wir sollen, ihr sollt, sie/Sie sollen"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "sollen dùng khi nhắc lại điều người khác (bác sĩ, sếp, giáo viên…) yêu cầu, dặn mình làm. Ngôi ich và er/sie/es không có đuôi: ich soll, er soll. Như các modal khác, động từ chính ở nguyên thể, đứng cuối câu."
+      examples:
+        - target: Der Arzt sagt, ich soll drei Tage im Bett bleiben.
+          translation:
+            vi: Bác sĩ bảo tôi phải nằm nghỉ trên giường ba ngày.
+        - target: Du sollst deine Mutter anrufen.
+          translation:
+            vi: (Người ta dặn) bạn phải gọi điện cho mẹ bạn.
+        - target: Soll ich morgen wiederkommen?
+          translation:
+            vi: Tôi có cần ngày mai quay lại không?
+      confusion:
+        vi: "sollen không phải \"nên\": soll là \"được dặn là phải\" (lời yêu cầu của người khác). Lời khuyên \"nên\" là sollte, bạn học ở A2. müssen là \"phải\" vì bắt buộc, không cần ai dặn."
+
+  - key: de:item:a1u08-g-wehtun
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Mir tut der Kopf weh. Mir tun die Füße weh."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Nói chỗ đau: bộ phận cơ thể là chủ ngữ, người bị đau ở Dativ (mir, dir, ihm, ihr, Ihnen…). Động từ chia theo bộ phận: một bộ phận → tut, nhiều (số nhiều) → tun. weh tách ra, đứng cuối câu như động từ tách."
+      examples:
+        - target: Mir tut der Bauch weh.
+          translation:
+            vi: Tôi đau bụng.
+        - target: Tun dir die Augen weh?
+          translation:
+            vi: Bạn có bị đau mắt không?
+        - target: Was tut Ihnen weh?
+          translation:
+            vi: Ông/bà đau ở đâu?
+      confusion:
+        vi: "Không nói \"Ich tue Kopf weh\" (dịch từng chữ \"tôi đau đầu\"). Der Kopf tut mir weh và Mein Kopf tut weh cũng đúng; Ich habe Kopfschmerzen là cách nói khác rất thông dụng."
+
+  - key: de:item:a1u08-koerper
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Körper, -"
+      ipa: /ˈkœʁpɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ thể
+      examples:
+        - target: Der Körper braucht viel Wasser.
+          translation:
+            vi: Cơ thể cần nhiều nước.
+      pronunciation_note:
+        vi: "ö ngắn, tròn môi; -er cuối đọc như \"a\" nhẹ: KÖR-pa."
+
+  - key: de:item:a1u08-kopf
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Kopf, ¨-e"
+      ipa: /kɔpf/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái đầu
+      examples:
+        - target: Mir tut der Kopf weh.
+          translation:
+            vi: Tôi đau đầu.
+      pronunciation_note:
+        vi: "pf: môi khép lại rồi bật p và f liền nhau, không chen nguyên âm vào giữa. Số nhiều: die Köpfe."
+
+  - key: de:item:a1u08-bauch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Bauch, ¨-e"
+      ipa: /baʊ̯x/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái bụng
+      examples:
+        - target: Nach dem Essen tut mir der Bauch weh.
+          translation:
+            vi: Sau khi ăn tôi bị đau bụng.
+      pronunciation_note:
+        vi: "au đọc như \"ao\"; ch sau au là âm \"kh\" (ach-Laut): \"baokh\". Số nhiều: die Bäuche."
+
+  - key: de:item:a1u08-ruecken
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Rücken, -"
+      ipa: /ˈʁʏkn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái lưng
+      examples:
+        - target: Ich arbeite viel am Computer. Mein Rücken tut weh.
+          translation:
+            vi: Tôi làm việc nhiều với máy tính. Lưng tôi bị đau.
+      pronunciation_note:
+        vi: "ü ngắn: tròn môi như nói \"u\" nhưng lưỡi đặt như \"i\"; ck đọc như k."
+
+  - key: de:item:a1u08-arm
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Arm, -e"
+      ipa: /aʁm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cánh tay
+      examples:
+        - target: Nach dem Tennis tut mir der Arm weh.
+          translation:
+            vi: Chơi quần vợt xong tôi bị đau tay.
+      confusion:
+        vi: "der Arm là cả cánh tay; bàn tay là die Hand."
+
+  - key: de:item:a1u08-bein
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Bein, -e"
+      ipa: /baɪ̯n/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái chân (cả chân, từ hông xuống)
+      examples:
+        - target: Mein Bruder hat ein Problem mit dem Bein.
+          translation:
+            vi: Anh trai tôi có vấn đề ở chân.
+      pronunciation_note:
+        vi: "ei đọc như \"ai\": \"bain\"."
+      confusion:
+        vi: "Tiếng Việt gọi chung là \"chân\", tiếng Đức tách hai từ: das Bein (cả chân) và der Fuß (bàn chân)."
+
+  - key: de:item:a1u08-fuss
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Fuß, ¨-e"
+      ipa: /fuːs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bàn chân
+      examples:
+        - target: Nach dem Wandern tun mir die Füße weh.
+          translation:
+            vi: Đi bộ đường dài xong tôi bị đau chân.
+      pronunciation_note:
+        vi: "u dài, ß là âm s: \"fuus\". Số nhiều die Füße với ü dài."
+      confusion:
+        vi: "zu Fuß gehen = đi bộ (bạn đã học ở unit 5)."
+
+  - key: de:item:a1u08-hand
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Hand, ¨-e"
+      ipa: /hant/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bàn tay
+      examples:
+        - target: Er hat ein Handy in der Hand.
+          translation:
+            vi: Anh ấy cầm điện thoại trên tay.
+      pronunciation_note:
+        vi: "d ở cuối từ đọc như t: \"hant\". Ở số nhiều die Hände, d lại đọc là d."
+
+  - key: de:item:a1u08-auge
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Auge, -n"
+      ipa: /ˈaʊ̯ɡə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con mắt
+      examples:
+        - target: Ich lese viel. Mir tun die Augen weh.
+          translation:
+            vi: Tôi đọc nhiều. Mắt tôi bị đau.
+      pronunciation_note:
+        vi: "au đọc như \"ao\"; e cuối nhẹ như \"ơ\": AO-gơ."
+
+  - key: de:item:a1u08-hals
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hals, ¨-e"
+      ipa: /hals/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ; họng
+      examples:
+        - target: Ich habe Husten, und mir tut der Hals weh.
+          translation:
+            vi: Tôi bị ho và đau họng.
+      confusion:
+        vi: "der Hals vừa là cái cổ vừa là cổ họng. Số nhiều: die Hälse."
+
+  - key: de:item:a1u08-wehtun
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "wehtun (es tut weh)"
+      ipa: /ˈveːtuːn/
+      pos: động từ
+    back:
+      meaning:
+        vi: đau, làm đau
+      examples:
+        - target: Tut es sehr weh? – Ja, es tut sehr weh.
+          translation:
+            vi: Có đau lắm không? – Có, đau lắm.
+      pronunciation_note:
+        vi: "w đọc là \"v\"; e trong weh dài, h không đọc: \"vê-tun\"."
+      confusion:
+        vi: "wehtun là động từ tách: Mir tut der Kopf weh. Chủ ngữ là chỗ đau, nên thường chỉ gặp es/er/sie tut weh và sie tun weh."
+
+  - key: de:item:a1u08-ohr
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Ohr, -en"
+      ipa: /oːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái tai
+      examples:
+        - target: Meinem Kind tut das Ohr weh.
+          translation:
+            vi: Con tôi bị đau tai.
+      pronunciation_note:
+        vi: "o dài, h không đọc, r cuối như \"a\" nhẹ: \"ôô-a\"."
+
+  - key: de:item:a1u08-nase
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Nase, -n"
+      ipa: /ˈnaːzə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái mũi
+      examples:
+        - target: Ich habe Schnupfen, meine Nase läuft.
+          translation:
+            vi: Tôi bị sổ mũi, mũi chảy nước suốt.
+      pronunciation_note:
+        vi: "a dài; s đứng trước nguyên âm là âm hữu thanh [z], gần chữ \"d\" giọng Hà Nội: NAA-dơ."
+
+  - key: de:item:a1u08-mund
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Mund, ¨-er"
+      ipa: /mʊnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái miệng
+      examples:
+        - target: Bitte machen Sie den Mund auf.
+          translation:
+            vi: Ông/bà há miệng ra giúp tôi.
+      pronunciation_note:
+        vi: "u ngắn; d cuối đọc như t: \"munt\". Số nhiều: die Münder."
+
+  - key: de:item:a1u08-finger
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Finger, -"
+      ipa: /ˈfɪŋɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngón tay
+      examples:
+        - target: Eine Hand hat fünf Finger.
+          translation:
+            vi: Một bàn tay có năm ngón.
+      pronunciation_note:
+        vi: "ng đọc như \"ng\" tiếng Việt, không có âm g riêng; -er cuối như \"a\" nhẹ: FING-a."
+
+  # ================= bài 2: đi khám bệnh =================
+  - key: de:item:a1u08-g-wie-oft-mal
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Wie oft? – einmal, zweimal, dreimal am Tag · täglich · jeden Tag"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Nói bao nhiêu lần: số + mal viết liền (einmal, zweimal, dreimal) + am Tag / in der Woche. täglich và jeden Tag đều là \"mỗi ngày\". Câu hỏi là Wie oft …?"
+      examples:
+        - target: Nehmen Sie die Tabletten dreimal am Tag.
+          translation:
+            vi: Ông/bà uống thuốc ba lần mỗi ngày.
+        - target: Ich gehe zweimal in der Woche schwimmen.
+          translation:
+            vi: Tôi đi bơi hai lần mỗi tuần.
+        - target: Wie oft soll ich das nehmen? – Einmal täglich, am Abend.
+          translation:
+            vi: Tôi phải uống cái này mấy lần? – Mỗi ngày một lần, vào buổi tối.
+      confusion:
+        vi: "Thường viết liền: dreimal. Khi muốn nhấn mạnh, viết rời drei Mal (Mal viết hoa) cũng đúng. jeden Tag là Akkusativ của der Tag, học như cụm."
+
+  - key: de:item:a1u08-krank
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: krank
+      ipa: /kʁaŋk/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ốm, bị bệnh
+      examples:
+        - target: Ich bin krank und bleibe heute zu Hause.
+          translation:
+            vi: Tôi bị ốm và hôm nay ở nhà.
+      confusion:
+        vi: "krank đi với sein: Ich bin krank. Bệnh viện là das Krankenhaus."
+
+  - key: de:item:a1u08-gesund
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: gesund
+      ipa: /ɡəˈzʊnt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: khoẻ mạnh; tốt cho sức khoẻ
+      examples:
+        - target: Gestern hatte ich Fieber, heute bin ich wieder gesund.
+          translation:
+            vi: Hôm qua tôi bị sốt, hôm nay tôi khoẻ lại rồi.
+        - target: Obst ist gesund.
+          translation:
+            vi: Hoa quả tốt cho sức khoẻ.
+      pronunciation_note:
+        vi: "Trọng âm ở -sund; s trước nguyên âm là âm [z], gần chữ \"d\" giọng Hà Nội; d cuối đọc như t."
+
+  - key: de:item:a1u08-fieber
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Fieber (Sg.)"
+      ipa: /ˈfiːbɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơn sốt
+      examples:
+        - target: Mein Sohn hat Fieber.
+          translation:
+            vi: Con trai tôi bị sốt.
+      pronunciation_note:
+        vi: "ie là i dài; -er cuối như \"a\" nhẹ: FII-ba."
+      confusion:
+        vi: "Nói Ich habe Fieber (không có ein, không dùng sein). Tiếng Việt nói \"bị sốt\", nhưng tiếng Đức là \"có sốt\"."
+
+  - key: de:item:a1u08-husten
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Husten (Sg.)"
+      ipa: /ˈhuːstn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh ho, cơn ho
+      examples:
+        - target: Ich habe Husten und Schnupfen.
+          translation:
+            vi: Tôi bị ho và sổ mũi.
+      confusion:
+        vi: "Ich habe Husten (thường không có mạo từ). Cũng có động từ husten: Er hustet viel = anh ấy ho nhiều."
+
+  - key: de:item:a1u08-schnupfen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Schnupfen (Sg.)"
+      ipa: /ˈʃnʊpfn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng sổ mũi
+      examples:
+        - target: Im Winter habe ich oft Schnupfen.
+          translation:
+            vi: Mùa đông tôi hay bị sổ mũi.
+      pronunciation_note:
+        vi: "sch như \"s\" chu môi; pf bật p và f liền nhau: SHNUP-fơn."
+
+  - key: de:item:a1u08-erkaeltung
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Erkältung, -en"
+      ipa: /ɛɐ̯ˈkɛltʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh cảm lạnh
+      examples:
+        - target: Ich habe eine Erkältung.
+          translation:
+            vi: Tôi bị cảm.
+      pronunciation_note:
+        vi: "Trọng âm ở -käl-; tiền tố er- đọc nhẹ."
+      confusion:
+        vi: "Khác Fieber, Husten: Erkältung đếm được nên có eine: Ich habe eine Erkältung. Cũng nói: Ich bin erkältet."
+
+  - key: de:item:a1u08-praxis
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Praxis, Praxen"
+      ipa: /ˈpʁaksɪs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng khám (của bác sĩ)
+      examples:
+        - target: Die Praxis ist am Mittwochnachmittag geschlossen.
+          translation:
+            vi: Phòng khám đóng cửa chiều thứ Tư.
+      pronunciation_note:
+        vi: "x đọc là \"ks\"; trọng âm ở PRA-."
+      confusion:
+        vi: "Số nhiều không theo quy tắc thường: die Praxen. Bệnh viện lớn là das Krankenhaus."
+
+  - key: de:item:a1u08-tablette
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Tablette, -n"
+      ipa: /taˈblɛtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: viên thuốc
+      examples:
+        - target: Nehmen Sie eine Tablette nach dem Essen.
+          translation:
+            vi: Ông/bà uống một viên sau khi ăn.
+      pronunciation_note:
+        vi: "Trọng âm ở -blet-: ta-BLET-tơ."
+      confusion:
+        vi: "Viên thuốc thì dùng nehmen, không dùng trinken: Ich nehme eine Tablette (dù tiếng Việt nói \"uống thuốc\")."
+
+  - key: de:item:a1u08-rezept
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Rezept, -e"
+      ipa: /ʁeˈtsɛpt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn thuốc
+      examples:
+        - target: Hier ist Ihr Rezept. Gute Besserung!
+          translation:
+            vi: Đây là đơn thuốc của ông/bà. Chúc mau khỏi bệnh!
+      pronunciation_note:
+        vi: "z đọc là \"ts\"; trọng âm ở -zept: rê-TSEPT."
+      confusion:
+        vi: "das Rezept cũng có nghĩa là công thức nấu ăn. Hoá đơn, biên lai là die Quittung hoặc die Rechnung, không phải Rezept."
+
+  - key: de:item:a1u08-termin
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Termin, -e"
+      ipa: /tɛʁˈmiːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc hẹn, lịch hẹn (bác sĩ, cơ quan, công việc)
+      examples:
+        - target: Ich hätte gern einen Termin beim Arzt.
+          translation:
+            vi: Tôi muốn đặt một lịch khám bác sĩ.
+      pronunciation_note:
+        vi: "Trọng âm ở -min, i dài: ter-MIIN."
+      confusion:
+        vi: "der Termin là lịch hẹn chính thức (bác sĩ, cơ quan). Hẹn đi chơi với bạn là die Verabredung."
+
+  - key: de:item:a1u08-sprechstunde
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Sprechstunde, -n"
+      ipa: /ˈʃpʁɛçʃtʊndə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ khám, giờ tiếp khách
+      examples:
+        - target: Die Sprechstunde ist von acht bis zwölf Uhr.
+          translation:
+            vi: Giờ khám từ tám đến mười hai giờ.
+      pronunciation_note:
+        vi: "sp và st ở đầu mỗi phần của từ ghép đọc là \"shp\", \"sht\"; ch sau e là ich-Laut (như trong ich), không phải âm \"kh\"."
+      confusion:
+        vi: "Từ ghép sprechen + die Stunde, nên là die Sprechstunde."
+
+  - key: de:item:a1u08-wartezimmer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Wartezimmer, -"
+      ipa: /ˈvaʁtəˌtsɪmɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng chờ (ở phòng khám)
+      examples:
+        - target: Bitte warten Sie im Wartezimmer.
+          translation:
+            vi: Mời ông/bà chờ ở phòng chờ.
+      confusion:
+        vi: "Từ ghép warten (chờ) + das Zimmer, nên là das Wartezimmer."
+
+  - key: de:item:a1u08-gute-besserung
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Gute Besserung!
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Chúc mau khỏi bệnh!
+      examples:
+        - target: Du bist krank? Gute Besserung!
+          translation:
+            vi: Bạn bị ốm à? Chúc bạn mau khỏi nhé!
+      confusion:
+        vi: "Dùng được với cả du và Sie. Học như một cụm cố định."
+
+  - key: de:item:a1u08-was-fehlt-ihnen
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Was fehlt Ihnen?
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Ông/bà bị làm sao? (bác sĩ hỏi bệnh)
+      examples:
+        - target: Guten Tag, was fehlt Ihnen? – Ich habe Fieber und Husten.
+          translation:
+            vi: Chào ông/bà, ông/bà bị làm sao? – Tôi bị sốt và ho.
+      confusion:
+        vi: "Với bạn bè: Was fehlt dir? Ihnen/dir là Dativ; học như một cụm cố định."
+
+  # ================= bài 3: ở cơ quan hành chính, für/ohne =================
+  - key: de:item:a1u08-g-akk-praepositionen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "für, ohne, durch, gegen, um + Akkusativ"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Năm giới từ này luôn đi với Akkusativ: chỉ giống đực đổi (den, einen, keinen, meinen); die, das và số nhiều giữ nguyên. Đại từ cũng ở Akkusativ: für mich, ohne dich, für Sie."
+      examples:
+        - target: Ich brauche einen Termin für die Anmeldung.
+          translation:
+            vi: Tôi cần một lịch hẹn để đăng ký cư trú.
+        - target: Ohne Termin geht es leider nicht.
+          translation:
+            vi: Tiếc là không có lịch hẹn thì không được.
+        - target: Haben Sie Tabletten gegen Fieber?
+          translation:
+            vi: Ông/bà có thuốc hạ sốt không?
+        - target: Wir gehen durch den Park.
+          translation:
+            vi: Chúng tôi đi xuyên qua công viên.
+      confusion:
+        vi: "für = cho, để; ohne = không có; gegen = chống, trị (gegen Husten) hoặc khoảng (gegen acht Uhr); durch = xuyên qua; um = quanh (um die Ecke = ngay góc phố), um + giờ bạn đã biết."
+
+  - key: de:item:a1u08-amt
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Amt, ¨-er"
+      ipa: /amt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ quan hành chính, sở
+      examples:
+        - target: Auf dem Amt braucht man oft einen Termin.
+          translation:
+            vi: Ở cơ quan hành chính người ta thường cần lịch hẹn.
+      confusion:
+        vi: "Số nhiều die Ämter. Nói chung chung \"ở cơ quan\" thường là auf dem Amt; với tên cụ thể hay dùng im: im Bürgeramt."
+
+  - key: de:item:a1u08-ausweis
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Ausweis, -e"
+      ipa: /ˈaʊ̯sˌvaɪ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ căn cước, giấy tờ tuỳ thân
+      examples:
+        - target: Bitte zeigen Sie mir Ihren Ausweis.
+          translation:
+            vi: Xin ông/bà cho tôi xem giấy tờ tuỳ thân.
+      pronunciation_note:
+        vi: "au như \"ao\", ei như \"ai\", w là \"v\": AOS-vais."
+      confusion:
+        vi: "der Ausweis là thẻ, giấy tờ tuỳ thân nói chung (Personalausweis là căn cước công dân Đức); hộ chiếu là der Pass."
+
+  - key: de:item:a1u08-pass
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Pass, ¨-e"
+      ipa: /pas/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hộ chiếu
+      examples:
+        - target: Ohne Pass geht das nicht.
+          translation:
+            vi: Không có hộ chiếu thì không được.
+      pronunciation_note:
+        vi: "a ngắn vì có ss. Số nhiều die Pässe."
+
+  - key: de:item:a1u08-unterschrift
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Unterschrift, -en"
+      ipa: /ˈʊntɐʃʁɪft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chữ ký
+      examples:
+        - target: Wir brauchen hier noch Ihre Unterschrift.
+          translation:
+            vi: Chúng tôi còn cần chữ ký của ông/bà ở đây.
+      pronunciation_note:
+        vi: "Trọng âm ở UN-; sch như \"s\" chu môi."
+
+  - key: de:item:a1u08-unterschreiben
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: unterschreiben
+      ipa: /ʊntɐˈʃʁaɪ̯bn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: ký tên
+      examples:
+        - target: Bitte unterschreiben Sie hier.
+          translation:
+            vi: Xin ông/bà ký vào đây.
+      pronunciation_note:
+        vi: "Trọng âm ở -schrei-, ei như \"ai\": un-ta-SHRAI-bơn."
+      confusion:
+        vi: "unter- ở đây không tách: Ich unterschreibe das Formular (không nói \"schreibe … unter\"). Trọng âm cũng khác danh từ: UN-terschrift nhưng unter-SCHREI-ben."
+
+  - key: de:item:a1u08-anmelden
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: anmelden
+      ipa: /ˈanˌmɛldn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: đăng ký (cho ai, cái gì); khai báo
+      examples:
+        - target: Ich möchte meinen Sohn für den Deutschkurs anmelden.
+          translation:
+            vi: Tôi muốn đăng ký khoá tiếng Đức cho con trai tôi.
+      confusion:
+        vi: "Động từ tách: Ich melde meinen Sohn an. Đăng ký cho chính mình là Ich melde mich an (mich là đại từ phản thân, học kỹ ở A2)."
+
+  - key: de:item:a1u08-anmeldung
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Anmeldung, -en"
+      ipa: /ˈanmɛldʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: "việc đăng ký (đặc biệt: đăng ký cư trú); quầy đăng ký, quầy lễ tân"
+      examples:
+        - target: Für die Anmeldung brauchen Sie Ihren Pass.
+          translation:
+            vi: Để đăng ký cư trú, ông/bà cần mang hộ chiếu.
+        - target: Bitte gehen Sie zuerst zur Anmeldung.
+          translation:
+            vi: Xin ông/bà đến quầy lễ tân trước.
+      confusion:
+        vi: "Danh từ đuôi -ung luôn là giống cái: die Anmeldung, die Erkältung, die Einladung."
+
+  - key: de:item:a1u08-geoeffnet
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: geöffnet
+      ipa: /ɡəˈʔœfnət/
+      pos: tính từ
+    back:
+      meaning:
+        vi: mở cửa (đang hoạt động)
+      examples:
+        - target: Das Bürgeramt ist von acht bis zwölf Uhr geöffnet.
+          translation:
+            vi: Văn phòng công dân mở cửa từ tám đến mười hai giờ.
+      pronunciation_note:
+        vi: "ö ngắn, tròn môi; trọng âm ở -öff-: gơ-ÖF-nơt."
+      confusion:
+        vi: "Trong văn nói người ta hay dùng offen: Die Bank ist offen. Trên biển báo thường viết geöffnet."
+
+  - key: de:item:a1u08-geschlossen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: geschlossen
+      ipa: /ɡəˈʃlɔsn̩/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đóng cửa
+      examples:
+        - target: Am Samstag ist das Amt geschlossen.
+          translation:
+            vi: Thứ Bảy cơ quan đóng cửa.
+      confusion:
+        vi: "Văn nói hay dùng zu: Die Praxis ist zu. Trên biển báo thường viết geschlossen."
+
+  - key: de:item:a1u08-oeffnungszeiten
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Öffnungszeiten (Pl.)"
+      ipa: /ˈœfnʊŋsˌtsaɪ̯tn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ mở cửa
+      examples:
+        - target: Wie sind die Öffnungszeiten?
+          translation:
+            vi: Giờ mở cửa thế nào?
+      pronunciation_note:
+        vi: "ö ngắn; z đọc là \"ts\"; trọng âm ở ÖFF-."
+      confusion:
+        vi: "Thường dùng ở số nhiều vì là một bảng giờ (Montag bis Freitag …). s giữa hai phần từ ghép (Öffnung-s-zeiten) là âm nối."
+
+  - key: de:item:a1u08-buergeramt
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Bürgeramt, ¨-er"
+      ipa: /ˈbʏʁɡɐˌʔamt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn phòng công dân (nơi đăng ký cư trú, làm giấy tờ)
+      examples:
+        - target: Die Anmeldung macht man im Bürgeramt.
+          translation:
+            vi: Đăng ký cư trú thì làm ở văn phòng công dân.
+      confusion:
+        vi: "Tên gọi khác nhau tuỳ thành phố (Bürgerbüro, Einwohnermeldeamt…), hãy kiểm tra ở nơi bạn sống. Từ ghép theo giống của từ cuối: das Amt → das Bürgeramt."
+
+  - key: de:item:a1u08-dokument
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Dokument, -e"
+      ipa: /dokuˈmɛnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy tờ, tài liệu
+      examples:
+        - target: Bitte bringen Sie alle Dokumente mit.
+          translation:
+            vi: Xin ông/bà mang theo tất cả giấy tờ.
+      pronunciation_note:
+        vi: "Trọng âm ở âm cuối: đô-ku-MENT."
+
+  - key: de:item:a1u08-passfoto
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Passfoto, -s"
+      ipa: /ˈpasˌfoːto/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ảnh thẻ (ảnh hộ chiếu)
+      examples:
+        - target: Für den Ausweis brauchen Sie ein Passfoto.
+          translation:
+            vi: Để làm thẻ căn cước, ông/bà cần một ảnh thẻ.
+      confusion:
+        vi: "Từ ghép der Pass + das Foto → das Passfoto (giống của từ cuối)."
+
+  - key: de:item:a1u08-kopie
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kopie, -n"
+      ipa: /koˈpiː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản sao, bản photo
+      examples:
+        - target: Haben Sie eine Kopie von Ihrem Pass?
+          translation:
+            vi: Ông/bà có bản sao hộ chiếu không?
+      pronunciation_note:
+        vi: "Trọng âm ở cuối, ie là i dài: kô-PII. Số nhiều die Kopien: kô-PII-ơn."
+
+  # ================= bài 4: thiệp và e-mail =================
+  - key: de:item:a1u08-g-anrede-gruss
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Liebe Anna, / Lieber Tom, ↔ Sehr geehrte Frau Weber, / Sehr geehrter Herr Klein, · Viele Grüße ↔ Mit freundlichen Grüßen"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Thư thân mật: Liebe (nữ) / Lieber (nam) / Hallo + tên, cuối thư Viele Grüße hoặc Liebe Grüße. Thư trang trọng: Sehr geehrte Frau … / Sehr geehrter Herr … / Sehr geehrte Damen und Herren, cuối thư Mit freundlichen Grüßen. Sau dấu phẩy của lời chào, câu đầu tiên viết thường (danh từ và Sie vẫn viết hoa)."
+      examples:
+        - target: Liebe Anna, vielen Dank für die Einladung! Viele Grüße, Lan
+          translation:
+            vi: Anna thân mến, cảm ơn bạn nhiều vì lời mời! Thân, Lan
+        - target: Sehr geehrte Damen und Herren, ich brauche einen Termin. Mit freundlichen Grüßen, Minh Tran
+          translation:
+            vi: Kính gửi quý ông bà, tôi cần một lịch hẹn. Trân trọng, Minh Tran
+      confusion:
+        vi: "Liebe Anna nhưng Lieber Tom; Sehr geehrte Frau nhưng Sehr geehrter Herr – đuôi theo giới tính người nhận, học như cụm. Không dùng Hallo trong thư gửi cơ quan."
+
+  - key: de:item:a1u08-karte
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Karte, -n"
+      ipa: /ˈkaʁtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tấm thiệp; tấm thẻ; vé
+      examples:
+        - target: Ich schreibe meiner Oma eine Karte.
+          translation:
+            vi: Tôi viết một tấm thiệp cho bà.
+      confusion:
+        vi: "Karte có nhiều nghĩa: thiệp (die Geburtstagskarte), vé (die Fahrkarte), thực đơn (die Speisekarte), thẻ ngân hàng."
+
+  - key: de:item:a1u08-brief
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Brief, -e"
+      ipa: /bʁiːf/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lá thư
+      examples:
+        - target: Heute ist ein Brief vom Amt gekommen.
+          translation:
+            vi: Hôm nay có một lá thư của cơ quan gửi đến.
+      pronunciation_note:
+        vi: "ie là i dài: \"briif\"."
+
+  - key: de:item:a1u08-nachricht
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Nachricht, -en"
+      ipa: /ˈnaːxʁɪçt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin nhắn; tin tức
+      examples:
+        - target: Danke für deine Nachricht!
+          translation:
+            vi: Cảm ơn tin nhắn của bạn!
+      pronunciation_note:
+        vi: "a dài; ch sau a là âm \"kh\" (ach-Laut), còn ch sau i là ich-Laut (như trong ich)."
+      confusion:
+        vi: "Số nhiều die Nachrichten còn có nghĩa \"bản tin thời sự\" trên TV, radio."
+
+  - key: de:item:a1u08-schreiben
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: schreiben
+      ipa: /ˈʃʁaɪ̯bn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: viết
+      examples:
+        - target: Ich schreibe heute eine E-Mail.
+          translation:
+            vi: Hôm nay tôi viết một e-mail.
+      pronunciation_note:
+        vi: "sch như \"s\" chu môi; ei như \"ai\": SHRAI-bơn."
+      confusion:
+        vi: "Viết cho ai: người nhận ở Dativ – Ich schreibe dir eine Karte. Perfekt: Ich habe geschrieben."
+
+  - key: de:item:a1u08-schicken
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: schicken
+      ipa: /ˈʃɪkn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: gửi
+      examples:
+        - target: Ich schicke dir die Adresse per E-Mail.
+          translation:
+            vi: Mình gửi địa chỉ cho bạn qua e-mail.
+      confusion:
+        vi: "schicken + Dativ (người nhận) + Akkusativ (vật gửi): Ich schicke dir eine Karte."
+
+  - key: de:item:a1u08-antworten
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: antworten
+      ipa: /ˈantvɔʁtn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: trả lời
+      examples:
+        - target: Bitte antworten Sie bis Freitag.
+          translation:
+            vi: Xin ông/bà trả lời trước thứ Sáu.
+      pronunciation_note:
+        vi: "Trọng âm ở AN-; w là \"v\"."
+      confusion:
+        vi: "Gốc tận cùng -t nên thêm -e-: du antwortest, er antwortet. Danh từ: die Antwort (câu trả lời)."
+
+  - key: de:item:a1u08-einladung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Einladung, -en"
+      ipa: /ˈaɪ̯nˌlaːdʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời mời; thiệp mời
+      examples:
+        - target: Vielen Dank für die Einladung!
+          translation:
+            vi: Cảm ơn nhiều vì lời mời!
+      confusion:
+        vi: "Từ động từ einladen (mời) mà bạn đã học. Đuôi -ung luôn là giống cái."
+
+  - key: de:item:a1u08-gruss
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Gruß, ¨-e"
+      ipa: /ɡʁuːs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời chào, lời hỏi thăm
+      examples:
+        - target: Viele Grüße aus Hanoi!
+          translation:
+            vi: Gửi lời chào từ Hà Nội!
+      pronunciation_note:
+        vi: "u dài, ß là âm s. Số nhiều die Grüße với ü dài."
+      confusion:
+        vi: "Cuối thư dùng số nhiều: Viele Grüße, Liebe Grüße, Mit freundlichen Grüßen (sau mit là Dativ số nhiều nên thêm -n)."
+
+  - key: de:item:a1u08-herzlich
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: herzlich
+      ipa: /ˈhɛʁtslɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thân ái, nồng nhiệt, chân thành
+      examples:
+        - target: Herzlich willkommen in Berlin!
+          translation:
+            vi: Nhiệt liệt chào mừng đến Berlin!
+      pronunciation_note:
+        vi: "z là \"ts\"; -lich cuối đọc nhẹ với âm ich: HERTS-likh."
+      confusion:
+        vi: "Trong các cụm Herzliche Grüße, Herzlichen Glückwunsch, đuôi -e/-en là đuôi tính từ – học như cụm, quy tắc ở A2."
+
+  - key: de:item:a1u08-herzlichen-glueckwunsch
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Herzlichen Glückwunsch!
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Xin chúc mừng!
+      examples:
+        - target: Herzlichen Glückwunsch zum Geburtstag!
+          translation:
+            vi: Chúc mừng sinh nhật!
+      confusion:
+        vi: "zum Geburtstag = nhân dịp sinh nhật (zu + dem). Cũng nói Alles Gute zum Geburtstag!"
+
+  - key: de:item:a1u08-postkarte
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Postkarte, -n"
+      ipa: /ˈpɔstˌkaʁtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu thiếp
+      examples:
+        - target: Die Postkarte aus Wien ist sehr schön.
+          translation:
+            vi: Tấm bưu thiếp từ Vienna rất đẹp.
+      confusion:
+        vi: "Từ ghép die Post + die Karte → die Postkarte."
+
+  - key: de:item:a1u08-alles-gute
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Alles Gute!
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Chúc mọi điều tốt đẹp!
+      examples:
+        - target: Alles Gute zum Geburtstag!
+          translation:
+            vi: Chúc mừng sinh nhật, chúc mọi điều tốt đẹp!
+      confusion:
+        vi: "Gute viết hoa vì là danh từ hoá (das Gute = điều tốt). Dùng cho sinh nhật, đám cưới, lời chia tay."
+
+  - key: de:item:a1u08-vielen-dank
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Vielen Dank!
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Cảm ơn nhiều!
+      examples:
+        - target: Vielen Dank für Ihre E-Mail.
+          translation:
+            vi: Cảm ơn ông/bà nhiều vì e-mail.
+      confusion:
+        vi: "Cảm ơn vì điều gì: für + Akkusativ (für die Einladung, für deine Hilfe). Dank là danh từ nên viết hoa."

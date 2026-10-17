@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u08-auf-dem-amt
+order_index: 3
+level: a1
+title:
+  vi: Ở cơ quan hành chính – für, ohne (Auf dem Amt)
+objectives:
+  - vi: Đọc giờ mở cửa và biển báo ở cơ quan (Öffnungszeiten, geöffnet, geschlossen).
+  - vi: Hỏi cần mang giấy tờ gì (Was brauche ich für die Anmeldung?).
+  - vi: Dùng für, ohne, durch, gegen, um + Akkusativ (für mich, ohne Termin, gegen Fieber).
+  - vi: Hiểu các bước cơ bản khi đăng ký cư trú (Anmeldung).
+estimated_minutes: 15
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:a1u08-beim-arzt]
+items:
+  - item: de:item:a1u08-g-akk-praepositionen
+  - item: de:item:a1u08-amt
+  - item: de:item:a1u08-ausweis
+  - item: de:item:a1u08-pass
+  - item: de:item:a1u08-unterschrift
+  - item: de:item:a1u08-unterschreiben
+  - item: de:item:a1u08-anmelden
+  - item: de:item:a1u08-anmeldung
+  - item: de:item:a1u08-geoeffnet
+  - item: de:item:a1u08-geschlossen
+  - item: de:item:a1u08-oeffnungszeiten
+  - item: de:item:a1u08-buergeramt
+  - item: de:item:a1u08-dokument
+  - item: de:item:a1u08-passfoto
+  - item: de:item:a1u08-kopie
+  - item: de:item:a1u03-g-akkusativ
+    role: reuse
+  - item: de:item:a1u04-g-um-von-bis
+    role: reuse
+  - item: de:item:a1u06-g-duerfen
+    role: reuse
+  - item: de:item:a1u06-g-man
+    role: reuse
+  - item: de:item:a1u01-formular
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được bảng giờ mở cửa của Bürgeramt, hỏi cần giấy tờ gì để đăng ký cư trú, và nói "cho tôi", "không có lịch hẹn", "thuốc trị ho" bằng giới từ + Akkusativ.
+  - type: explain
+    text:
+      vi: "für, ohne, durch, gegen, um luôn đi với Akkusativ. Bạn chỉ cần dạng Akkusativ đã học: der → den, ein → einen, kein → keinen, mein → meinen; die, das và số nhiều giữ nguyên."
+  - type: explain
+    text:
+      vi: "Đại từ sau các giới từ này cũng ở Akkusativ: für mich, für dich, ohne ihn, für Sie. Tiếng Việt nói \"cho tôi\" mà chữ \"tôi\" không đổi, nhưng tiếng Đức không nói für ich hay für mir."
+  - type: explain
+    text:
+      vi: "Nghĩa: für = cho, để (ein Termin für die Anmeldung); ohne = không có (ohne Termin – thường không cần mạo từ); gegen = chống, trị (Tabletten gegen Fieber) hoặc khoảng (gegen zehn Uhr)."
+  - type: explain
+    text:
+      vi: "durch = xuyên qua (durch den Park); um = quanh (gleich um die Ecke = ngay góc phố), còn um + giờ (um acht Uhr) bạn đã biết."
+  - type: explain
+    text:
+      vi: "Ở cơ quan luôn dùng Sie. Nhân viên hay nói: Bitte unterschreiben Sie hier. Haben Sie Ihren Ausweis? Ohne Termin geht es leider nicht."
+  - type: deep_explain
+    text:
+      vi: "Ở Đức, khi chuyển đến nơi ở mới, bạn phải đăng ký địa chỉ (die Anmeldung) ở cơ quan đăng ký cư trú – theo quy định hiện hành là trong vòng hai tuần; tên cơ quan khác nhau tuỳ thành phố (Bürgeramt, Bürgerbüro, Einwohnermeldeamt…), hãy kiểm tra lại ở nơi bạn sống. Thường bạn cần đặt Termin trước (nhiều nơi đặt qua mạng) và mang hộ chiếu hoặc thẻ căn cước cùng giấy xác nhận của chủ nhà. Câu Ich möchte mich anmelden có mich là đại từ phản thân – bạn học kỹ ở A2, bây giờ chỉ cần học như cụm. unterschreiben không tách (Ich unterschreibe), khác anmelden (Ich melde meinen Sohn an)."
+  - type: example
+    target: Ich brauche einen Termin für die Anmeldung.
+    target_lang: de
+    translation:
+      vi: Tôi cần một lịch hẹn để đăng ký cư trú.
+    note:
+      vi: "für + Akkusativ: die Anmeldung giữ nguyên die; der Termin là tân ngữ nên einen Termin."
+  - type: example
+    target: "Haben Sie einen Termin? – Nein. – Ohne Termin geht es leider nicht."
+    target_lang: de
+    translation:
+      vi: "Ông có lịch hẹn không? – Không. – Tiếc là không có lịch hẹn thì không được."
+    note:
+      vi: "Nhân viên nói với người dân bằng Sie. ohne Termin: thường không cần mạo từ."
+  - type: example
+    target: "Das Formular ist für Sie. Bitte unterschreiben Sie hier."
+    target_lang: de
+    translation:
+      vi: "Tờ khai này là cho ông/bà. Xin ông/bà ký vào đây."
+    note:
+      vi: "für Sie (Akkusativ của Sie vẫn là Sie). unterschreiben không tách."
+  - type: example
+    target: "Wo ist das Bürgeramt? – Gleich um die Ecke. Gehen Sie hier durch den Park."
+    target_lang: de
+    translation:
+      vi: "Văn phòng công dân ở đâu ạ? – Ngay góc phố thôi. Ông/bà đi xuyên qua công viên này."
+    note:
+      vi: "durch + Akkusativ: der Park → durch den Park; um die Ecke = ngay góc phố."
+  - type: example
+    target: "Öffnungszeiten: Montag bis Freitag 8 bis 12 Uhr, Donnerstag auch 14 bis 18 Uhr. Samstag und Sonntag geschlossen."
+    target_lang: de
+    translation:
+      vi: "Giờ mở cửa: thứ Hai đến thứ Sáu 8 đến 12 giờ, thứ Năm thêm 14 đến 18 giờ. Thứ Bảy và Chủ nhật đóng cửa."
+    note:
+      vi: "Biển giờ mở cửa thường viết rút gọn như vậy, không có câu đầy đủ."
+  - type: example
+    target: Im Wartezimmer darf man nicht telefonieren.
+    target_lang: de
+    translation:
+      vi: Trong phòng chờ không được gọi điện thoại.
+    note:
+      vi: "man darf nicht = không được phép (biển báo, nội quy)."
+  - type: common_mistake
+    wrong: Der Brief ist für ich.
+    right: Der Brief ist für mich.
+    target_lang: de
+    note:
+      vi: "Sau für dùng Akkusativ: ich → mich."
+  - type: common_mistake
+    wrong: Wir gehen durch dem Park.
+    right: Wir gehen durch den Park.
+    target_lang: de
+    note:
+      vi: "durch đi với Akkusativ (den), không phải Dativ (dem)."
+  - type: common_mistake
+    wrong: Für die Anmeldung brauche ich ein Termin.
+    right: Für die Anmeldung brauche ich einen Termin.
+    target_lang: de
+    note:
+      vi: "der Termin là tân ngữ của brauchen nên ở Akkusativ: einen Termin."
+  - type: summary
+    points:
+      - vi: "für, ohne, durch, gegen, um + Akkusativ: für den Arzt, ohne meinen Pass, durch den Park."
+      - vi: "Đại từ: für mich, für dich, für Sie – không nói für ich / für mir."
+      - vi: "ohne Termin, Tabletten gegen Fieber, gleich um die Ecke."
+      - vi: "Öffnungszeiten, geöffnet ↔ geschlossen, von 8 bis 12 Uhr."
+      - vi: "Bitte unterschreiben Sie hier. Für die Anmeldung braucht man einen Pass."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u08l3-mcq-fuer-mich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u08-g-akk-praepositionen
+    prompt:
+      stem: "Chọn dạng đúng: Das Formular ist für ___. (ich)"
+      stem_lang: vi
+      options:
+        - { id: a7k, text: mich, lang: de }
+        - { id: g2p, text: mir, lang: de }
+        - { id: u5x, text: ich, lang: de }
+        - { id: z9e, text: mein, lang: de }
+    answer:
+      correct_option_id: a7k
+    explanation:
+      vi: "für luôn đi với Akkusativ; ich ở Akkusativ là mich. mir là Dativ, ich là Nominativ, mein là mạo từ sở hữu."
+    display_answer: mich
+
+  - key: de:exercise:a1u08l3-mcq-lesen-mittwoch
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-oeffnungszeiten
+    prompt:
+      stem: "Đọc biển: \"Bürgeramt – Öffnungszeiten: Montag, Dienstag, Freitag 8 bis 12 Uhr; Donnerstag 14 bis 18 Uhr; Mittwoch geschlossen. Nur mit Termin!\" Thứ Tư lúc 10 giờ bạn đến mà không có lịch hẹn. Có được không?"
+      stem_lang: vi
+      options:
+        - { id: q3n, text: "Không: thứ Tư đóng cửa, và phải có lịch hẹn.", lang: vi }
+        - { id: j8w, text: "Được: thứ Tư mở cửa từ 8 đến 12 giờ.", lang: vi }
+        - { id: m1c, text: "Được, nếu đến trước 12 giờ và không cần lịch hẹn.", lang: vi }
+        - { id: v4s, text: "Chỉ được vào buổi chiều, từ 14 đến 18 giờ.", lang: vi }
+    answer:
+      correct_option_id: q3n
+    explanation:
+      vi: "Mittwoch geschlossen = thứ Tư đóng cửa; Nur mit Termin = chỉ tiếp khi có lịch hẹn. 14 bis 18 Uhr là giờ thứ Năm (Donnerstag)."
+    display_answer: "Không: thứ Tư đóng cửa, và phải có lịch hẹn."
+
+  - key: de:exercise:a1u08l3-fill-die-meinen
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u08-g-akk-praepositionen
+    prompt:
+      template: "Ich brauche einen Termin für {{b1}} Anmeldung. Ohne {{b2}} (mein) Pass geht es nicht."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Tôi cần một lịch hẹn để đăng ký cư trú. Không có hộ chiếu của tôi thì không được."
+        - "Gợi ý: für, ohne + Akkusativ; die Anmeldung (giống cái), der Pass (giống đực)."
+    answer:
+      blanks:
+        b1: [die, meine, eine]
+        b2: [meinen]
+    known_wrong:
+      - answer: der
+        feedback_vi: "für + Akkusativ: die Anmeldung giữ nguyên die (der là Dativ giống cái)."
+        error_tag: case_dat_akk
+      - answer: meinem
+        feedback_vi: "ohne đi với Akkusativ: der Pass → meinen Pass (meinem là Dativ)."
+        error_tag: case_dat_akk
+      - answer: mein
+        feedback_vi: "der Pass là giống đực, ở Akkusativ thêm -en: meinen."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "für và ohne luôn đi với Akkusativ. Giống cái die Anmeldung giữ nguyên die; giống đực der Pass → meinen Pass."
+    display_answer: Ich brauche einen Termin für die Anmeldung. Ohne meinen Pass geht es nicht.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u08l3-fill-meinen-mich
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-akk-praepositionen
+    prompt:
+      template: "Die Tabletten sind für {{b1}} (mein) Vater, und der Tee ist für {{b2}} (ich)."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [meinen]
+        b2: [mich]
+    known_wrong:
+      - answer: meinem
+        feedback_vi: "für đi với Akkusativ: der Vater → meinen Vater (meinem là Dativ)."
+        error_tag: case_dat_akk
+      - answer: mein
+        feedback_vi: "der Vater là giống đực, ở Akkusativ: meinen."
+        error_tag: case_dat_akk
+      - answer: mir
+        feedback_vi: "für đi với Akkusativ: ich → mich (mir là Dativ)."
+        error_tag: case_dat_akk
+      - answer: ich
+        feedback_vi: "Sau für không dùng Nominativ: für mich."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "für + Akkusativ: der Vater → meinen Vater; ich → mich."
+    display_answer: Die Tabletten sind für meinen Vater, und der Tee ist für mich.
+
+  - key: de:exercise:a1u08l3-fill-bis-geschlossen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-geschlossen
+    prompt:
+      template: "Das Bürgeramt ist nur von 8 {{b1}} 12 Uhr geöffnet. Am Nachmittag ist es {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [bis]
+        b2: [geschlossen, zu]
+    known_wrong:
+      - answer: geöffnet
+        feedback_vi: "Câu đầu có nur (chỉ) từ 8 đến 12 giờ, nên buổi chiều đóng cửa: geschlossen."
+        error_tag: vocabulary
+      - answer: offen
+        feedback_vi: "Buổi chiều cơ quan không mở cửa: geschlossen."
+        error_tag: vocabulary
+    explanation:
+      vi: "Khoảng thời gian: von … bis …. nur von 8 bis 12 Uhr nghĩa là chiều không làm việc, nên geschlossen (văn nói: zu)."
+    display_answer: Das Bürgeramt ist nur von 8 bis 12 Uhr geöffnet. Am Nachmittag ist es geschlossen.
+
+  - key: de:exercise:a1u08l3-tr-termin-anmeldung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-anmeldung
+    prompt:
+      source_text: Tôi cần một lịch hẹn để đăng ký cư trú.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich brauche einen Termin für die Anmeldung.
+        - Für die Anmeldung brauche ich einen Termin.
+        - Ich brauche für die Anmeldung einen Termin.
+        - Ich brauche einen Termin für meine Anmeldung.
+        - Für meine Anmeldung brauche ich einen Termin.
+    known_wrong:
+      - answer: Ich brauche ein Termin für die Anmeldung.
+        feedback_vi: "der Termin là giống đực, ở Akkusativ: einen Termin."
+        error_tag: case_dat_akk
+      - answer: Ich brauche einen Termin für der Anmeldung.
+        feedback_vi: "für đi với Akkusativ: für die Anmeldung."
+        error_tag: case_dat_akk
+      - answer: Für die Anmeldung ich brauche einen Termin.
+        feedback_vi: "Động từ phải ở vị trí 2: Für die Anmeldung brauche ich …"
+        error_tag: verb_position
+    explanation:
+      vi: "brauchen + Akkusativ: einen Termin; für + Akkusativ: für die Anmeldung. Nếu mở đầu bằng für die Anmeldung, động từ brauche vẫn ở vị trí 2."
+    display_answer: Ich brauche einen Termin für die Anmeldung.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u08l3-wb-sohn-anmelden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u08-anmelden
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi muốn đăng ký khoá học cho con trai tôi.\""
+      tokens:
+        - { id: t-kurs, text: Kurs }
+        - { id: t-anmelden, text: anmelden }
+        - { id: t-meinen, text: meinen }
+        - { id: t-ich, text: ich }
+        - { id: t-fuer, text: für }
+        - { id: t-sohn, text: Sohn }
+        - { id: t-moechte, text: möchte }
+        - { id: t-den, text: den }
+        - { id: t-dem, text: dem }
+    answer:
+      orders:
+        - [t-ich, t-moechte, t-meinen, t-sohn, t-fuer, t-den, t-kurs, t-anmelden]
+        - [t-meinen, t-sohn, t-moechte, t-ich, t-fuer, t-den, t-kurs, t-anmelden]
+        - [t-fuer, t-den, t-kurs, t-moechte, t-ich, t-meinen, t-sohn, t-anmelden]
+    explanation:
+      vi: "möchte ở vị trí 2, anmelden ở nguyên thể cuối câu. meinen Sohn là tân ngữ (Akkusativ); für + Akkusativ: der Kurs → für den Kurs (không phải dem)."
+    display_answer: Ich möchte meinen Sohn für den Kurs anmelden.
+
+  - key: de:exercise:a1u08l3-mcq-gegen-husten
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-akk-praepositionen
+    prompt:
+      stem: "Bạn ở hiệu thuốc và muốn hỏi có thuốc trị ho không. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: b6r, text: Haben Sie etwas gegen Husten?, lang: de }
+        - { id: x1f, text: Haben Sie etwas gegen dem Husten?, lang: de }
+        - { id: d8j, text: Haben Sie etwas ohne Husten?, lang: de }
+        - { id: k4w, text: Haben Sie Husten gegen etwas?, lang: de }
+    answer:
+      correct_option_id: b6r
+    explanation:
+      vi: "gegen = chống, trị bệnh: etwas gegen Husten. gegen đi với Akkusativ nên không dùng dem; ohne nghĩa là \"không có\", sai nghĩa."
+    display_answer: Haben Sie etwas gegen Husten?
+
+  - key: de:exercise:a1u08l3-tr-man-braucht-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-pass
+    prompt:
+      source_text: Für die Anmeldung braucht man einen Pass.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Để đăng ký cư trú, người ta cần hộ chiếu.
+        - Để đăng ký cư trú cần có hộ chiếu.
+        - Để đăng ký cư trú, bạn cần hộ chiếu.
+        - Để đăng ký cư trú cần hộ chiếu.
+        - Muốn đăng ký cư trú thì cần hộ chiếu.
+        - Đăng ký cư trú cần hộ chiếu.
+        - Để đăng ký, người ta cần hộ chiếu.
+        - Để đăng ký cần hộ chiếu.
+        - Để đăng ký cư trú, người ta cần một cuốn hộ chiếu.
+        - Để đăng ký cư trú, người ta cần có hộ chiếu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Để đăng ký cư trú, người ta cần thẻ căn cước.
+        feedback_vi: "der Pass là hộ chiếu; thẻ căn cước là der Ausweis."
+        error_tag: vocabulary
+    explanation:
+      vi: "man = người ta (nói chung), động từ chia như er: man braucht. für die Anmeldung = để đăng ký (cư trú); der Pass = hộ chiếu."
+    display_answer: Để đăng ký cư trú, người ta cần hộ chiếu.
+
+  - key: de:exercise:a1u08l3-mcq-lesen-dokumente
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-dokument
+    prompt:
+      stem: "Đọc thông báo: \"Bürgeramt Mitte – Anmeldung: Bitte bringen Sie diese Dokumente mit: Ihren Pass oder Ausweis und das Formular. Bitte unterschreiben Sie das Formular! Termine nur online.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: y2h, text: "Phải đặt lịch qua mạng, mang hộ chiếu hoặc thẻ căn cước và tờ khai đã ký.", lang: vi }
+        - { id: p7m, text: "Có thể đến không cần lịch hẹn, chỉ cần mang ảnh thẻ.", lang: vi }
+        - { id: e5t, text: "Phải mang cả hộ chiếu và thẻ căn cước, tờ khai sẽ ký ở văn phòng.", lang: vi }
+        - { id: w9b, text: "Đặt lịch qua điện thoại, không cần mang giấy tờ.", lang: vi }
+    answer:
+      correct_option_id: y2h
+    explanation:
+      vi: "Termine nur online = chỉ đặt lịch qua mạng; Pass oder Ausweis = hộ chiếu hoặc thẻ căn cước (một trong hai); Bitte unterschreiben Sie das Formular = hãy ký tờ khai. Thông báo không nhắc ảnh thẻ."
+    display_answer: "Phải đặt lịch qua mạng, mang hộ chiếu hoặc thẻ căn cước và tờ khai đã ký."

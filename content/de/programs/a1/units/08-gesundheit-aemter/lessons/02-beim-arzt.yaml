@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u08-beim-arzt
+order_index: 2
+level: a1
+title:
+  vi: Đi khám bệnh (Beim Arzt)
+objectives:
+  - vi: Gọi điện đến phòng khám để đặt lịch hẹn (Ich hätte gern einen Termin.).
+  - vi: Nói triệu chứng của mình (Ich habe Fieber und Husten. Ich bin krank.).
+  - vi: Hiểu bác sĩ dặn dùng thuốc mấy lần (dreimal am Tag, täglich).
+estimated_minutes: 15
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a1u08-der-koerper]
+items:
+  - item: de:item:a1u08-g-wie-oft-mal
+  - item: de:item:a1u08-krank
+  - item: de:item:a1u08-gesund
+  - item: de:item:a1u08-fieber
+  - item: de:item:a1u08-husten
+  - item: de:item:a1u08-schnupfen
+  - item: de:item:a1u08-erkaeltung
+  - item: de:item:a1u08-praxis
+  - item: de:item:a1u08-tablette
+  - item: de:item:a1u08-rezept
+  - item: de:item:a1u08-termin
+  - item: de:item:a1u08-sprechstunde
+  - item: de:item:a1u08-wartezimmer
+  - item: de:item:a1u08-gute-besserung
+  - item: de:item:a1u08-was-fehlt-ihnen
+  - item: de:item:a1u08-g-wehtun
+    role: reuse
+  - item: de:item:a1u04-g-ordinalzahlen
+    role: reuse
+  - item: de:item:a1u06-g-praeteritum-sein-haben
+    role: reuse
+  - item: de:item:a1u07-g-dativ-praepositionen
+    role: reuse
+  - item: de:item:a1u05-apotheke
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi điện đặt lịch khám, nói với bác sĩ mình bị sốt, ho, cảm, và hiểu lời dặn "uống thuốc ba lần mỗi ngày".
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"tôi bị ốm\", \"tôi bị sốt\" với cùng chữ \"bị\". Tiếng Đức tách hai cách: Ich bin krank (sein + tính từ), nhưng triệu chứng đi với haben: Ich habe Fieber, Husten, Schnupfen, eine Erkältung."
+  - type: explain
+    text:
+      vi: "Fieber, Husten, Schnupfen thường dùng không có mạo từ: Ich habe Fieber (không nói ein Fieber). Riêng die Erkältung đếm được, nên nói Ich habe eine Erkältung."
+  - type: explain
+    text:
+      vi: "Đặt lịch qua điện thoại: Ich hätte gern einen Termin. Ngày giờ hẹn dùng am + thứ/ngày và um + giờ: am Montag um zehn Uhr, am dritten Mai."
+  - type: explain
+    text:
+      vi: "Bác sĩ dặn uống thuốc mấy lần: einmal, zweimal, dreimal am Tag (số + mal, thường viết liền). täglich và jeden Tag đều là \"mỗi ngày\"; hỏi lại: Wie oft soll ich die Tabletten nehmen?"
+  - type: explain
+    text:
+      vi: "Ở phòng khám, bác sĩ và nhân viên nói Sie với bệnh nhân người lớn: Was fehlt Ihnen? (Ông/bà bị làm sao?). Lúc chia tay, người ta chúc: Gute Besserung!"
+  - type: deep_explain
+    text:
+      vi: "Ở Đức, khi ốm thông thường người ta hay đến bác sĩ gia đình (der Hausarzt, die Hausärztin) trước và gọi điện hẹn lịch; thường cần mang thẻ bảo hiểm y tế (thủ tục có thể thay đổi, hãy hỏi phòng khám của bạn). das Rezept là đơn thuốc – bạn mang đơn ra hiệu thuốc (die Apotheke); còn hoá đơn, biên lai là die Rechnung hoặc die Quittung. Kể chuyện hôm qua dùng war/hatte: Gestern hatte ich Fieber, heute bin ich wieder gesund. Viên thuốc thì nehmen, không trinken, dù tiếng Việt nói \"uống thuốc\"."
+  - type: example
+    target: "Guten Tag, ich hätte gern einen Termin. – Geht es am Dienstag um neun Uhr?"
+    target_lang: de
+    translation:
+      vi: "Chào chị, tôi muốn đặt một lịch khám. – Thứ Ba lúc chín giờ có được không ạ?"
+    note:
+      vi: "Gọi điện cho phòng khám: dùng cách nói lịch sự Ich hätte gern …; Geht es …? = có được không."
+  - type: example
+    target: "Was fehlt Ihnen? – Ich habe Fieber und Husten, und mir tut der Hals weh."
+    target_lang: de
+    translation:
+      vi: "Ông bị làm sao? – Tôi bị sốt và ho, và tôi đau họng."
+    note:
+      vi: "Bác sĩ nói Sie → Ihnen. Triệu chứng đi với haben, không có mạo từ; chỗ đau dùng khuôn mir tut … weh."
+  - type: example
+    target: Nehmen Sie die Tabletten dreimal am Tag nach dem Essen.
+    target_lang: de
+    translation:
+      vi: Ông/bà uống thuốc ba lần mỗi ngày, sau khi ăn.
+    note:
+      vi: "Câu mệnh lệnh với Sie; dreimal am Tag = ba lần mỗi ngày; nach dem Essen = sau bữa ăn (nach + Dativ)."
+  - type: example
+    target: Gestern hatte ich Fieber. Heute bin ich wieder gesund.
+    target_lang: de
+    translation:
+      vi: Hôm qua tôi bị sốt. Hôm nay tôi khoẻ lại rồi.
+    note:
+      vi: "hatte là quá khứ của haben, dùng nhiều trong văn nói thay cho Perfekt."
+  - type: example
+    target: "Hier ist Ihr Rezept. Gute Besserung! – Vielen Dank, auf Wiedersehen!"
+    target_lang: de
+    translation:
+      vi: "Đây là đơn thuốc của ông. Chúc ông mau khỏi! – Cảm ơn bác sĩ nhiều, chào bác sĩ!"
+    note:
+      vi: "Rezept = đơn thuốc (mang ra Apotheke)."
+  - type: common_mistake
+    wrong: Ich bin Fieber.
+    right: Ich habe Fieber.
+    target_lang: de
+    note:
+      vi: Đừng dịch chữ "bị". Triệu chứng đi với haben; chỉ krank, gesund, müde mới đi với sein.
+  - type: common_mistake
+    wrong: Ich habe ein Fieber.
+    right: Ich habe Fieber.
+    target_lang: de
+    note:
+      vi: "Fieber, Husten, Schnupfen thường dùng không có mạo từ. Chỉ nói eine Erkältung."
+  - type: common_mistake
+    wrong: Ich trinke die Tabletten dreimal am Tag.
+    right: Ich nehme die Tabletten dreimal am Tag.
+    target_lang: de
+    note:
+      vi: "Thuốc viên thì dùng nehmen, dù tiếng Việt nói \"uống thuốc\"."
+  - type: summary
+    points:
+      - vi: "Ich bin krank / gesund. – Ich habe Fieber, Husten, Schnupfen, eine Erkältung."
+      - vi: "Ich hätte gern einen Termin. – am Dienstag um neun Uhr."
+      - vi: "Was fehlt Ihnen? – Gute Besserung!"
+      - vi: "einmal, zweimal, dreimal am Tag; täglich = jeden Tag; Wie oft …?"
+      - vi: "Tabletten nehmen (không trinken); das Rezept = đơn thuốc → Apotheke."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u08l2-mcq-habe-fieber
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u08-fieber
+    prompt:
+      stem: "Bạn bị sốt. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: d3k, text: Ich habe Fieber., lang: de }
+        - { id: m7q, text: Ich bin Fieber., lang: de }
+        - { id: x2r, text: Ich habe ein Fieber., lang: de }
+        - { id: b9t, text: Ich bin krank Fieber., lang: de }
+    answer:
+      correct_option_id: d3k
+    explanation:
+      vi: "Triệu chứng đi với haben, và Fieber thường không có mạo từ: Ich habe Fieber. \"Ich bin Fieber\" là dịch từng chữ \"tôi bị sốt\"."
+    display_answer: Ich habe Fieber.
+
+  - key: de:exercise:a1u08l2-listen-zweimal
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u08-g-wie-oft-mal
+    prompt:
+      audio_asset_id: null
+      fallback_text: Nehmen Sie die Tabletten zweimal am Tag, am Morgen und am Abend.
+      options:
+        - { id: p4h, text: "Uống thuốc hai lần mỗi ngày, buổi sáng và buổi tối.", lang: vi }
+        - { id: z8c, text: "Uống thuốc ba lần mỗi ngày, sau bữa ăn.", lang: vi }
+        - { id: l1n, text: "Uống hai viên vào buổi sáng.", lang: vi }
+        - { id: u6w, text: "Uống thuốc mỗi ngày một lần, vào buổi tối.", lang: vi }
+    answer:
+      correct_option_id: p4h
+    explanation:
+      vi: "zweimal am Tag = hai lần mỗi ngày; am Morgen und am Abend = buổi sáng và buổi tối. dreimal mới là ba lần, einmal là một lần."
+    display_answer: "Uống thuốc hai lần mỗi ngày, buổi sáng và buổi tối."
+
+  - key: de:exercise:a1u08l2-listen-termin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-termin
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Praxis Doktor Schmidt, guten Tag. – Guten Tag, hier ist Minh Tran. Ich habe Fieber und Husten. Ich hätte gern einen Termin. – Können Sie heute um elf Uhr kommen?"
+      options:
+        - { id: k5v, text: "Minh bị sốt và ho; phòng khám hẹn Minh đến lúc 11 giờ hôm nay.", lang: vi }
+        - { id: e2j, text: "Minh bị sốt và ho; phòng khám hẹn Minh đến lúc 11 giờ ngày mai.", lang: vi }
+        - { id: r7s, text: "Minh bị đau họng; phòng khám hẹn Minh đến lúc 7 giờ hôm nay.", lang: vi }
+        - { id: o3f, text: "Minh gọi để huỷ lịch khám lúc 11 giờ.", lang: vi }
+    answer:
+      correct_option_id: k5v
+    explanation:
+      vi: "Ich habe Fieber und Husten = tôi bị sốt và ho; Ich hätte gern einen Termin = tôi muốn đặt lịch; heute um elf Uhr = hôm nay lúc 11 giờ (elf = 11)."
+    display_answer: "Minh bị sốt và ho; phòng khám hẹn Minh đến lúc 11 giờ hôm nay."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u08l2-fill-habe-dreimal
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-wie-oft-mal
+    prompt:
+      template: "Was fehlt Ihnen? – Ich {{b1}} Fieber und Husten. – Nehmen Sie die Tabletten {{b2}} (3-mal) am Tag."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [habe]
+        b2: [dreimal, drei Mal, 3-mal]
+    known_wrong:
+      - answer: bin
+        feedback_vi: "Triệu chứng đi với haben: Ich habe Fieber. (sein chỉ dùng với krank, gesund…)"
+        error_tag: verb_choice
+      - answer: drei
+        feedback_vi: "\"Ba lần\" là dreimal (số + mal)."
+        error_tag: word_form
+    explanation:
+      vi: "Fieber, Husten là triệu chứng nên dùng haben: ich habe. Ba lần = dreimal (thường viết liền; drei Mal cũng đúng)."
+    display_answer: "Was fehlt Ihnen? – Ich habe Fieber und Husten. – Nehmen Sie die Tabletten dreimal am Tag."
+
+  - key: de:exercise:a1u08l2-fill-wie-oft-am
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-wie-oft-mal
+    prompt:
+      template: "Wie {{b1}} soll ich die Tabletten nehmen? – Zweimal {{b2}} Tag."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [oft]
+        b2: [am, pro]
+    known_wrong:
+      - answer: viel
+        feedback_vi: "Hỏi số lần là Wie oft …? (Wie viel hỏi số lượng.)"
+        error_tag: question_word
+      - answer: im
+        feedback_vi: "Với Tag dùng am: zweimal am Tag."
+        error_tag: preposition
+      - answer: in
+        feedback_vi: "Với Tag dùng am: zweimal am Tag (in der Woche mới dùng in)."
+        error_tag: preposition
+    explanation:
+      vi: "Hỏi bao nhiêu lần: Wie oft …? Trả lời: zweimal am Tag (pro Tag cũng đúng)."
+    display_answer: Wie oft soll ich die Tabletten nehmen? – Zweimal am Tag.
+
+  - key: de:exercise:a1u08l2-tr-tabletten-zweimal
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-tablette
+    prompt:
+      source_text: Tôi uống những viên thuốc này hai lần mỗi ngày.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich nehme die Tabletten zweimal am Tag.
+        - Ich nehme diese Tabletten zweimal am Tag.
+        - Ich nehme die Tabletten zweimal täglich.
+        - Ich nehme diese Tabletten zweimal täglich.
+        - Zweimal am Tag nehme ich die Tabletten.
+        - Zweimal am Tag nehme ich diese Tabletten.
+        - Die Tabletten nehme ich zweimal am Tag.
+        - Diese Tabletten nehme ich zweimal am Tag.
+        - Ich nehme die Tabletten jeden Tag zweimal.
+        - Ich nehme die Tabletten zwei Mal am Tag.
+        - Ich nehme die Tabletten zweimal pro Tag.
+    known_wrong:
+      - answer: Ich trinke die Tabletten zweimal am Tag.
+        feedback_vi: "Viên thuốc thì dùng nehmen, không dùng trinken."
+        error_tag: verb_choice
+      - answer: Ich nehme die Tabletten zweimal im Tag.
+        feedback_vi: "Với Tag dùng am: zweimal am Tag."
+        error_tag: preposition
+      - answer: Ich nehme die Tabletten zwei am Tag.
+        feedback_vi: "\"Hai lần\" là zweimal."
+        error_tag: word_form
+    explanation:
+      vi: "Thuốc viên dùng nehmen (ich nehme); hai lần mỗi ngày = zweimal am Tag hoặc zweimal täglich. nehme ở vị trí 2."
+    display_answer: Ich nehme die Tabletten zweimal am Tag.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u08l2-wb-nehmen-sie
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-tablette
+    prompt:
+      instruction: "Bác sĩ dặn bệnh nhân (Sie): \"Ông/bà uống thuốc ba lần mỗi ngày.\" Sắp xếp thành câu mệnh lệnh."
+      tokens:
+        - { id: t-tag, text: Tag }
+        - { id: t-dreimal, text: dreimal }
+        - { id: t-sie, text: Sie }
+        - { id: t-am, text: am }
+        - { id: t-tabletten, text: Tabletten }
+        - { id: t-nehmen, text: nehmen }
+        - { id: t-die, text: die }
+        - { id: t-im, text: im }
+    answer:
+      orders:
+        - [t-nehmen, t-sie, t-die, t-tabletten, t-dreimal, t-am, t-tag]
+    explanation:
+      vi: "Câu mệnh lệnh với Sie: động từ đứng đầu, ngay sau là Sie (Nehmen Sie …). Tân ngữ die Tabletten rồi đến số lần: dreimal am Tag (không dùng im)."
+    display_answer: Nehmen Sie die Tabletten dreimal am Tag.
+
+  - key: de:exercise:a1u08l2-mcq-termin-telefon
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-termin
+    prompt:
+      stem: "Bạn gọi điện đến phòng khám để xin một lịch khám. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: f6a, text: "Guten Tag, ich hätte gern einen Termin.", lang: de }
+        - { id: w3e, text: "Hallo, gib mir einen Termin!", lang: de }
+        - { id: i8m, text: "Guten Tag, ich bin einen Termin.", lang: de }
+        - { id: c5y, text: "Guten Tag, ich habe ein Rezept.", lang: de }
+    answer:
+      correct_option_id: f6a
+    explanation:
+      vi: "Ich hätte gern … là cách xin lịch sự, dùng Sie ngầm. \"Gib mir …!\" là mệnh lệnh với du – không lịch sự với phòng khám; \"ich bin einen Termin\" sai động từ; Rezept là đơn thuốc, không phải lịch hẹn."
+    display_answer: "Guten Tag, ich hätte gern einen Termin."
+
+  - key: de:exercise:a1u08l2-tr-gestern-fieber-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-gesund
+    prompt:
+      source_text: Gestern hatte ich Fieber, aber heute bin ich wieder gesund.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi khỏe lại rồi.
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi lại khỏe rồi.
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi đã khỏe lại.
+        - Hôm qua tôi bị sốt nhưng hôm nay tôi khỏe lại rồi.
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi khỏe rồi.
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi khỏe lại.
+        - Hôm qua mình bị sốt, nhưng hôm nay mình khỏe lại rồi.
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi lại khỏe mạnh.
+        - Hôm qua tôi sốt, nhưng hôm nay tôi khỏe lại rồi.
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi khoẻ lại rồi.
+        - Hôm qua tôi bị sốt, nhưng hôm nay tôi khoẻ rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm nay tôi bị sốt, nhưng hôm qua tôi khỏe.
+        feedback_vi: "gestern = hôm qua (hatte Fieber), heute = hôm nay (gesund)."
+        error_tag: time_reference
+    explanation:
+      vi: "hatte là quá khứ của haben: hôm qua tôi bị sốt. wieder gesund = khoẻ lại."
+    display_answer: Hôm qua tôi bị sốt, nhưng hôm nay tôi khỏe lại rồi.
+
+  - key: de:exercise:a1u08l2-mcq-rezept-apotheke
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-rezept
+    prompt:
+      stem: "Bác sĩ nói: \"Hier ist Ihr Rezept.\" Bạn mang tờ giấy này đi đâu?"
+      stem_lang: vi
+      options:
+        - { id: n2d, text: "Đến hiệu thuốc (die Apotheke) để lấy thuốc.", lang: vi }
+        - { id: h9g, text: "Về nhà để nấu ăn theo công thức.", lang: vi }
+        - { id: t4b, text: "Đến ngân hàng để thanh toán hoá đơn.", lang: vi }
+        - { id: s7x, text: "Đến bưu điện để gửi thư.", lang: vi }
+    answer:
+      correct_option_id: n2d
+    explanation:
+      vi: "Ở phòng khám, das Rezept là đơn thuốc – mang ra Apotheke để lấy thuốc. Rezept cũng có nghĩa công thức nấu ăn, nhưng không phải khi bác sĩ đưa cho bạn; hoá đơn là die Rechnung."
+    display_answer: "Đến hiệu thuốc (die Apotheke) để lấy thuốc."
