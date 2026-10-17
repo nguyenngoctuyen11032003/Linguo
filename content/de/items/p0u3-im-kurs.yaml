@@ -30,7 +30,7 @@ items:
           translation:
             vi: cái bảng – những cái bảng
       pronunciation_note:
-        vi: "der đọc gần như “đe-a” (r cuối thành a nhẹ), die đọc “đi” dài, das đọc “đát” với s cuối rõ."
+        vi: "der đọc gần như “đê-a” (e dài, r cuối thành a nhẹ), die đọc “đi” dài, das đọc “đas” – a ngắn, s cuối xì rõ, không đọc thành “đát”."
       confusion:
         vi: "Giống ngữ pháp không phải giới tính: das Mädchen (cô bé) là giống trung. die ở số ít (die Tafel) và die ở số nhiều (die Tische) viết giống nhau, nhìn danh từ để biết."
 
@@ -150,7 +150,7 @@ items:
           translation:
             vi: Cây bút ở kia.
       pronunciation_note:
-        vi: "st đầu từ đọc “scht”: “schtift”. Đừng đọc “xtíp” kiểu tiếng Anh."
+        vi: "st đầu từ đọc “scht”: “schtift”. Đừng đọc “xtíp”: f và t cuối đều phải bật rõ."
 
   - key: de:item:p0u3-kuli
     type: vocab
@@ -527,7 +527,7 @@ items:
       pos: trọng âm
     back:
       meaning:
-        vi: "Từ gốc Đức nhấn âm tiết đầu của gốc từ (TA-fel, FENS-ter); tiền tố be-, ge-, ver-, er-, ent-, zer- không bao giờ nhấn (ver-STE-hen). Từ vay mượn thường nhấn cuối: -ion, -tät, -ie, -ieren, -ant/-ent, -é (Informa-TION, Universi-TÄT, Ca-FÉ)."
+        vi: "Từ gốc Đức nhấn âm tiết đầu của gốc từ (TA-fel, FEN-ster); tiền tố be-, ge-, ver-, er-, ent-, zer- không bao giờ nhấn (ver-STE-hen). Từ vay mượn thường nhấn cuối: -ion, -tät, -ie, -ieren, -ant/-ent, -é (Informa-TION, Universi-TÄT, Ca-FÉ)."
       examples:
         - target: Das Problem ist neu.
           translation:

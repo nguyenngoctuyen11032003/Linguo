@@ -55,7 +55,7 @@ body:
       vi: Tiếng Việt đọc mỗi tiếng rõ và đều nhau; tiếng Đức có một âm tiết được nhấn mạnh, dài và rõ hơn, còn các âm khác đọc nhẹ đi. Nhấn sai chỗ thì người Đức rất khó nhận ra từ của bạn.
   - type: explain
     text:
-      vi: Từ gốc Đức thường nhấn âm tiết đầu – TA-fel, FENS-ter, TA-sche. Riêng tiền tố be-, ge-, ver-, er-, ent-, zer- không bao giờ nhấn, nên nhấn âm sau đó – ver-STE-hen.
+      vi: Từ gốc Đức thường nhấn âm tiết đầu – TA-fel, FEN-ster, TA-sche. Riêng tiền tố be-, ge-, ver-, er-, ent-, zer- không bao giờ nhấn, nên nhấn âm sau đó – ver-STE-hen.
   - type: explain
     text:
       vi: Từ vay mượn (gốc Pháp, Latinh) thường nhấn âm cuối – Restau-RANT, Ca-FÉ, Bü-RO, Pro-BLEM, Universi-TÄT, Informa-TION. Đừng nhấn theo tiếng Anh; ngoại lệ hay gặp là KI-no và Com-PU-ter.
@@ -264,6 +264,8 @@ exercises:
         - das Restaurant und das Café
         - das Café und das Restaurant
         - die Restaurants und die Cafés
+        - ein Restaurant und ein Café
+        - ein Café und ein Restaurant
     rubric:
       diacritics: lenient
     known_wrong:

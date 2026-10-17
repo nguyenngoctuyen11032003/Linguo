@@ -258,6 +258,8 @@ exercises:
         - der Kuli und das Buch
         - das Buch und der Kugelschreiber
         - der Kugelschreiber und das Buch
+        - ein Buch und ein Kuli
+        - ein Kuli und ein Buch
     known_wrong:
       - answer: die Buch und der Kuli
         feedback_vi: Buch là giống trung – das Buch.
@@ -266,7 +268,7 @@ exercises:
         feedback_vi: Kuli là giống đực – der Kuli.
         error_tag: article
       - answer: Buch und Kuli
-        feedback_vi: Thiếu mạo từ. Tiếng Đức gọi đồ vật cụ thể phải có mạo từ – das Buch, der Kuli.
+        feedback_vi: Thiếu mạo từ. Hãy luôn viết danh từ kèm mạo từ – das Buch, der Kuli.
         error_tag: article
     explanation:
       vi: Quyển sách là das Buch, cây bút bi là der Kuli (dạng nói tắt của der Kugelschreiber). “và” là und. Mỗi danh từ mang mạo từ của riêng nó.
