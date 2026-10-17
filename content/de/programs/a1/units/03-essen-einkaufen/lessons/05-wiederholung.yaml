@@ -52,6 +52,8 @@ items:
     role: reuse
   - item: de:item:a1u03-tomate
     role: reuse
+  - item: de:item:a1u02-g-negation-nicht-kein
+    role: reuse
 body:
   - type: objective
     text:
@@ -100,7 +102,7 @@ body:
     right: Wir brauchen zwei Flaschen Wasser.
     target_lang: de
     note:
-      vi: Flasche là giống cái nên sau số phải dùng số nhiều Flaschen; chỉ Kilo, Gramm, Liter, Euro, Stück mới giữ nguyên.
+      vi: Flasche là giống cái nên sau số phải dùng số nhiều Flaschen; các đơn vị như Kilo, Gramm, Liter, Euro, Stück thì giữ nguyên.
   - type: summary
     points:
       - vi: Đọc câu hỏi trước, rồi tìm dòng có món hàng và con số.
@@ -267,6 +269,8 @@ exercises:
         - Ich möchte ein Kilo Tomaten und zwei Flaschen Wasser.
         - Ich hätte gern ein Kilo Tomaten und zwei Flaschen Wasser.
         - Ich möchte zwei Flaschen Wasser und ein Kilo Tomaten kaufen.
+        - Ich möchte gerne ein Kilo Tomaten und zwei Flaschen Wasser kaufen.
+        - Ich hätte gerne ein Kilo Tomaten und zwei Flaschen Wasser.
     known_wrong:
       - answer: Ich möchte kaufen ein Kilo Tomaten und zwei Flaschen Wasser.
         feedback_vi: Động từ nguyên thể kaufen phải đứng cuối câu.
@@ -357,5 +361,5 @@ exercises:
         feedback_vi: Ngược nghĩa - gern đi với Fisch (cá), kein … mögen đi với Fleisch (thịt).
         error_tag: meaning
     explanation:
-      vi: Esse gern Fisch = thích ăn cá; mag kein Fleisch = không thích thịt. Aber = nhưng.
+      vi: Esse gern Fisch = thích ăn cá; mag kein Fleisch = không thích thịt (kein phủ định danh từ không có mạo từ). Aber = nhưng.
     display_answer: Tôi thích ăn cá, nhưng tôi không thích thịt.

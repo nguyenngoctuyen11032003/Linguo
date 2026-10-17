@@ -152,7 +152,9 @@ items:
           translation:
             vi: Tôi thích uống cà phê.
       pronunciation_note:
-        vi: Ở Đức thường nhấn âm đầu (KA-phê); ở Áo hay nhấn âm cuối (ka-PHÊ).
+        vi: Ở Đức phần lớn nhấn âm đầu (KA-phê); ở miền Nam nước Đức và ở Áo hay nhấn âm cuối (ka-PHÊ).
+      confusion:
+        vi: "Nói về cà phê nói chung thì không có số nhiều (Ich trinke gern Kaffee). Khi gọi món, \"einen Kaffee\", \"zwei Kaffee\" nghĩa là một, hai ly cà phê; dạng die Kaffees có nhưng ít gặp."
 
   - key: de:item:a1u03-wasser
     type: vocab
@@ -628,7 +630,7 @@ items:
           translation:
             vi: Tôi gọi món gà với cơm.
       confusion:
-        vi: "Mọi danh từ tận cùng bằng -chen đều là giống trung (das) và số nhiều không đổi."
+        vi: "Danh từ có hậu tố nhỏ -chen (das Hähnchen, das Brötchen) đều là giống trung và số nhiều không đổi. Der Kuchen không thuộc nhóm này: -chen ở đây không phải hậu tố."
 
   - key: de:item:a1u03-nudel
     type: vocab
@@ -721,7 +723,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "und (và), aber (nhưng), oder (hay, hoặc) nối hai câu mà không chiếm vị trí nào (vị trí 0): sau chúng là câu bình thường, động từ chia vẫn ở vị trí 2. Trước aber luôn có dấu phẩy."
+        vi: "und (và), aber (nhưng), oder (hay, hoặc) nối hai câu mà không chiếm vị trí nào (vị trí 0): sau chúng là câu bình thường, động từ chia vẫn ở vị trí 2. Khi aber nối hai ý, trước nó có dấu phẩy."
       examples:
         - target: Ich trinke Kaffee, aber mein Mann trinkt Tee.
           translation:
@@ -1312,7 +1314,7 @@ items:
           translation:
             vi: Tôi cần hai lít sữa.
       confusion:
-        vi: "Cũng có thể nói das Liter (ở Thụy Sĩ chỉ dùng das); bài này dùng der Liter. Sau số giữ nguyên: zwei Liter."
+        vi: "Trong văn nói cũng gặp das Liter; dạng chuẩn nên dùng là der Liter. Số nhiều không đổi đuôi: zwei Liter."
 
   - key: de:item:a1u03-packung
     type: vocab

@@ -49,10 +49,10 @@ body:
       vi: Mögen + danh từ là "thích" (nói chung, lâu dài) - Ich mag Kuchen. Chia - ich mag, du magst, er/sie/es mag, wir mögen, ihr mögt, sie/Sie mögen. Mag = thích; möchte = muốn bây giờ - Ich mag Kaffee, aber jetzt möchte ich Tee.
   - type: explain
     text:
-      vi: Und (và), aber (nhưng), oder (hay, hoặc) đứng ở "vị trí 0" - chúng không chiếm chỗ, nên câu sau vẫn bắt đầu bình thường với chủ ngữ rồi động từ - …, aber ich möchte Tee. Trước aber luôn có dấu phẩy.
+      vi: Und (và), aber (nhưng), oder (hay, hoặc) đứng ở "vị trí 0" - chúng không chiếm chỗ, nên câu sau vẫn bắt đầu bình thường với chủ ngữ rồi động từ - …, aber ich möchte Tee. Khi aber nối hai ý, trước nó có dấu phẩy.
   - type: deep_explain
     text:
-      vi: Cụm "Ich hätte gern …" là cách gọi lịch sự nhất ở tiệm bánh, quán cà phê; bạn học nó như một cụm cố định (dạng hätte sẽ học ở A2). Người bán thường hỏi "Was darf es sein?" (Anh chị cần gì ạ?). Lượng + danh từ đứng liền nhau, không có von - ein Stück Kuchen, eine Tasse Kaffee, ein Glas Wasser, eine Flasche Saft. Chiều chủ nhật, nhiều gia đình Đức có thói quen "Kaffee und Kuchen" - cà phê và bánh ngọt khoảng 15 - 16 giờ.
+      vi: Cụm "Ich hätte gern …" là cách gọi lịch sự nhất ở tiệm bánh, quán cà phê; bạn học nó như một cụm cố định (dạng hätte sẽ học ở A2). Người bán thường hỏi "Was darf es sein?" (Anh chị cần gì ạ?). Lượng + danh từ đứng liền nhau, không có von - ein Stück Kuchen, eine Tasse Kaffee, ein Glas Wasser, eine Flasche Saft. "Kaffee und Kuchen" (cà phê và bánh ngọt vào buổi chiều) là một thói quen quen thuộc ở Đức, nhất là khi có khách hoặc vào dịp cuối tuần.
   - type: example
     target: "Was darf es sein? – Ich hätte gern ein Stück Kuchen und eine Tasse Kaffee."
     target_lang: de
@@ -104,7 +104,7 @@ body:
       - vi: möchten - ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.
       - vi: möchte + Akkusativ (einen Kaffee) hoặc + động từ nguyên thể ở cuối câu.
       - vi: mögen - ich mag, du magst, er mag, wir mögen, ihr mögt, sie/Sie mögen; mag = thích, möchte = muốn bây giờ.
-      - vi: und / aber / oder ở vị trí 0, không đổi trật tự; trước aber có dấu phẩy.
+      - vi: und / aber / oder ở vị trí 0, không đổi trật tự; aber nối hai ý thì có dấu phẩy đứng trước.
       - vi: ein Stück Kuchen, eine Tasse Kaffee, ein Glas Wasser, eine Flasche Saft - không có von.
       - vi: Người bán hỏi "Was darf es sein?"; bạn trả lời "Ich hätte gern …".
 exercises:
@@ -245,6 +245,9 @@ exercises:
         - Ich möchte ein Glas Wasser, bitte.
         - Ich hätte gern ein Glas Wasser.
         - Ich möchte gern ein Glas Wasser.
+        - Ich möchte gerne ein Glas Wasser.
+        - Ich hätte gerne ein Glas Wasser.
+        - Ich möchte ein Glas Wasser trinken.
     known_wrong:
       - answer: Ich möchte ein Glas von Wasser.
         feedback_vi: Không dùng von - ein Glas Wasser.
@@ -253,7 +256,7 @@ exercises:
         feedback_vi: Ngôi ich là möchte, không có -t.
         error_tag: verb_conjugation
       - answer: Ich mag ein Glas Wasser.
-        feedback_vi: Mag là thích nói chung; muốn một thứ ngay bây giờ thì dùng möchte.
+        feedback_vi: Trong tiếng Đức chuẩn, mag là thích nói chung; muốn một thứ ngay bây giờ thì dùng möchte.
         error_tag: moechten_moegen
     explanation:
       vi: "\"Muốn\" khi gọi đồ là möchte; lượng + danh từ đi liền - ein Glas Wasser. Ich hätte gern … cũng đúng và còn lịch sự hơn."

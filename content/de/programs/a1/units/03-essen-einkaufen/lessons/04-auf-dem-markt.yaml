@@ -34,6 +34,10 @@ items:
   - item: de:item:a1u03-packung
   - item: de:item:a1u03-einkaufsliste
   - item: de:item:a1u03-zwiebel
+  - item: de:item:a1u01-g-zahlen-bis-100
+    role: reuse
+  - item: de:item:a1u02-g-plural
+    role: reuse
 body:
   - type: objective
     text:
@@ -52,7 +56,7 @@ body:
       vi: Lượng + danh từ đứng liền nhau, không có von - ein Kilo Tomaten, 200 Gramm Käse, ein Liter Milch. Sau số, Euro, Cent, Kilo, Gramm, Liter không thêm đuôi số nhiều (zwei Euro), còn đơn vị giống cái thì có (zwei Packungen, drei Flaschen).
   - type: deep_explain
     text:
-      vi: Khi nghe giá, hãy chú ý đuôi -zehn (13 - 19) và -zig (20 - 90) - fünfzehn (15) và fünfzig (50) rất dễ nghe nhầm. Cả hai đều nhấn FÜNF, nên hãy nghe kỹ phần cuối - -zehn đọc gần "tsên" (e dài), -zig đọc gần "tsích" với ch nhẹ như trong ich. Ở Đức nên mang túi riêng khi đi chợ; chai nhựa và chai thuỷ tinh thường có tiền cược (Pfand) mà bạn sẽ học sau. Ở Áo cà chua là der Paradeiser, khoai tây là der Erdapfel; Thụy Sĩ dùng đồng franc (CHF), không dùng euro.
+      vi: Khi nghe giá, hãy chú ý đuôi -zehn (13 - 19) và -zig (20 - 90) - fünfzehn (15) và fünfzig (50) rất dễ nghe nhầm. Cả hai đều nhấn FÜNF, nên hãy nghe kỹ phần cuối - -zehn đọc gần "tsên" (e dài), -zig đọc gần "tsích" với ch nhẹ như trong ich. Ở Đức nên mang túi riêng khi đi chợ; nhiều loại chai nhựa và chai thuỷ tinh có tiền cược (Pfand) mà bạn sẽ học sau. Ở Áo cà chua là der Paradeiser, khoai tây là der Erdapfel; Thụy Sĩ dùng đồng franc (CHF), không dùng euro.
   - type: example
     target: "Was kostet ein Kilo Tomaten? – Zwei Euro fünfzig."
     target_lang: de
@@ -216,7 +220,7 @@ exercises:
         feedback_vi: Không dùng von - zwei Kilo Kartoffeln.
         error_tag: preposition
     explanation:
-      vi: Khoai tây thường mua theo cân - zwei Kilo; pho mát theo gam - 300 Gramm. Sau số, các đơn vị này không thêm đuôi số nhiều và đứng liền danh từ, không có von.
+      vi: Khoai tây thường mua theo cân - zwei Kilo; pho mát theo gam - 300 Gramm. Sau số, các đơn vị này không thêm đuôi số nhiều và đứng liền danh từ, không có von. (Zwei Pfund - một Pfund là nửa cân - cũng đúng, nhưng bài này dùng Kilo.)
     display_answer: Ich brauche zwei Kilo Kartoffeln und 300 Gramm Käse.
 
   - key: de:exercise:a1u03l4-fill-zahl-345

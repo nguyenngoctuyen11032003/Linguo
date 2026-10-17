@@ -35,6 +35,8 @@ items:
   - item: de:item:a1u03-wein
   - item: de:item:p0u2-g-ch-laute
     role: reuse
+  - item: de:item:a1u01-g-praesens
+    role: reuse
 body:
   - type: objective
     text:

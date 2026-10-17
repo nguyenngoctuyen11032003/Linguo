@@ -35,6 +35,12 @@ items:
   - item: de:item:a1u03-nachtisch
   - item: de:item:p0u3-g-genus-artikel
     role: reuse
+  - item: de:item:a1u02-g-possessiv-singular
+    role: reuse
+  - item: de:item:a1u02-g-haben
+    role: reuse
+  - item: de:item:a1u02-g-unbestimmter-artikel
+    role: reuse
 body:
   - type: objective
     text:
@@ -47,7 +53,7 @@ body:
       vi: Tin vui - chỉ danh từ giống đực số ít đổi mạo từ - der → den, ein → einen, kein → keinen, mein → meinen. Giống cái (die/eine), giống trung (das/ein) và số nhiều (die) giữ nguyên như khi làm chủ ngữ.
   - type: explain
     text:
-      vi: Chủ ngữ vẫn ở Nominativ - Der Fisch ist frisch. Nhưng khi Fisch là thứ bạn gọi - Ich nehme den Fisch. Muốn biết danh từ đứng ở đâu, hãy hỏi "ai làm?" (Nominativ) và "làm gì, với cái gì?" (Akkusativ).
+      vi: Chủ ngữ vẫn ở Nominativ - Der Fisch ist frisch. Nhưng khi Fisch là thứ bạn gọi - Ich nehme den Fisch. Muốn biết danh từ ở cách nào, hãy hỏi "ai, cái gì làm việc này?" (Nominativ) và "người đó gọi, lấy, mua ai hay cái gì?" (Akkusativ).
   - type: explain
     text:
       vi: Nehmen đổi nguyên âm như essen - du nimmst, er nimmt (thêm một chữ m, bỏ h). Ở nhà hàng, "Ich nehme …" là cách gọi món ngắn gọn và tự nhiên; bestellen nghĩa là gọi món, đặt hàng.
@@ -82,6 +88,13 @@ body:
       vi: "Bạn hỏi ai thế? – Mình hỏi anh phục vụ."
     note:
       vi: Nói với bạn bè (du). Wen? hỏi người là tân ngữ; der Kellner → den Kellner.
+  - type: example
+    target: Mein Bruder nimmt den Fisch. Meine Schwester nimmt einen Salat.
+    target_lang: de
+    translation:
+      vi: Anh trai tôi gọi món cá. Chị gái tôi gọi một đĩa salad.
+    note:
+      vi: Mein Bruder, meine Schwester là chủ ngữ nên giữ Nominativ (mein, meine). Den Fisch, einen Salat là tân ngữ, giống đực nên đổi sang Akkusativ. Nehmen ở ngôi er/sie là nimmt.
   - type: common_mistake
     wrong: Ich nehme der Salat.
     right: Ich nehme den Salat.
@@ -270,6 +283,8 @@ exercises:
         - Ich bestelle heute eine Suppe und einen Salat.
         - Heute nehme ich Suppe und Salat.
         - Ich nehme heute Suppe und Salat.
+        - Heute bestelle ich Suppe und Salat.
+        - Ich bestelle heute Suppe und Salat.
     known_wrong:
       - answer: Heute nehme ich die Suppe und der Salat.
         feedback_vi: Salat cũng là tân ngữ, giống đực nên der → den.
