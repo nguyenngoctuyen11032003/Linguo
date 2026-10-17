@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u05-eine-reise
+order_index: 1
+level: a2
+title:
+  vi: Một chuyến đi – Präteritum (Wir fuhren ans Meer.)
+objectives:
+  - vi: Hiểu đoạn kể chuyện viết ở Präteritum (blog du lịch, truyện ngắn).
+  - vi: Chia động từ có quy tắc ở Präteritum – gốc + -te (machte, wohnte, arbeitete).
+  - vi: Nhận ra 15 dạng Präteritum bất quy tắc hay gặp (ging, kam, fuhr, sah …) và tìm lại nguyên thể.
+  - vi: Kể chuyến đi bằng câu đơn giản – đặt chuyến, xếp va li, ra biển, lên núi, ra đảo.
+estimated_minutes: 16
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:a2u04-wiederholung]
+items:
+  - item: de:item:a2u05-g-praeteritum-regelmaessig
+  - item: de:item:a2u05-g-praeteritum-haeufig
+  - item: de:item:a2u05-urlaub
+  - item: de:item:a2u05-reise
+  - item: de:item:a2u05-koffer
+  - item: de:item:a2u05-packen
+  - item: de:item:a2u05-buchen
+  - item: de:item:a2u05-reisebuero
+  - item: de:item:a2u05-strand
+  - item: de:item:a2u05-meer
+  - item: de:item:a2u05-insel
+  - item: de:item:a2u05-berg
+  - item: de:item:a2u05-reisen
+  - item: de:item:a2u05-uebernachten
+  - item: de:item:a2u05-rucksack
+  - item: de:item:a2u05-sonnenbrille
+  - item: de:item:a2u05-ferienwohnung
+  - item: de:item:a2u05-zelt
+  - item: de:item:a2u05-kueste
+  - item: de:item:a1u06-g-praeteritum-sein-haben
+    role: reuse
+  - item: de:item:a1u06-fahren
+    role: reuse
+  - item: de:item:a1u06-fliegen
+    role: reuse
+  - item: de:item:a1u04-aufraeumen
+    role: reuse
+  - item: de:item:a2u01-g-partizip-praefix-ieren
+    role: reuse
+  - item: de:item:a2u01-besichtigen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu được một đoạn blog kể chuyến đi viết ở Präteritum và tự viết được câu như: Letzten Sommer machten wir Urlaub an der Küste. Ich buchte eine Ferienwohnung und packte meinen Koffer."
+  - type: explain
+    text:
+      vi: "Präteritum là thì quá khứ của văn viết kể chuyện: truyện, báo, blog. Khi nói, người Đức thường dùng Perfekt (Wir sind ans Meer gefahren), nhưng với sein, haben và động từ khiếm khuyết thì Präteritum (war, hatte, wollte) phổ biến cả khi nói. Tiếng Việt chỉ thêm \"đã\" hay \"hồi đó\", còn tiếng Đức đổi chính động từ."
+  - type: explain
+    text:
+      vi: "Động từ có quy tắc: gốc + -te + đuôi: ich machte, du machtest, er/sie/es machte, wir machten, ihr machtet, sie/Sie machten. Ngôi ich và er/sie/es giống nhau, không có -t như ở hiện tại. Gốc tận cùng bằng -t hoặc -d thêm -ete cho dễ đọc: arbeiten → arbeitete, warten → wartete, übernachten → übernachtete."
+  - type: explain
+    text:
+      vi: "Động từ bất quy tắc (động từ mạnh) đổi nguyên âm và không có -te: fahren → fuhr, gehen → ging, kommen → kam, sehen → sah. Ở bài này bạn chỉ cần nhận ra 15 dạng hay gặp khi đọc rồi tìm nguyên thể: ging, kam, fuhr, sah, gab, nahm, fand, blieb, schrieb, las, aß, trank, rief, lief, flog. Ngôi ich và er/sie/es không có đuôi (er fuhr), wir và sie/Sie thêm -en (wir fuhren)."
+  - type: explain
+    text:
+      vi: "Động từ tách vẫn tách ở Präteritum, tiền tố đứng cuối câu: aufräumen → Wir räumten die Wohnung auf; ankommen → Wir kamen spät an. Từ mới của bài: der Urlaub, die Reise, der Koffer, packen, buchen, das Reisebüro, der Strand, das Meer, die Insel, der Berg."
+  - type: deep_explain
+    text:
+      vi: "Đuôi ngôi của Präteritum giống đuôi của động từ khiếm khuyết bạn đã học (ich wollte, du wolltest, wir wollten). Ngoài -t/-d, một số gốc tận cùng bằng phụ âm + n hoặc m cũng thêm -ete: regnen → es regnete, öffnen → öffnete. Trong một đoạn văn viết, hãy giữ một thì: kể bằng Präteritum thì tiếp tục Präteritum; còn khi nói, dùng war/hatte cùng Perfekt (Ich war in Rom und habe viel gesehen) là hoàn toàn bình thường. Phân biệt: der Urlaub là kỳ nghỉ của người đi làm, die Ferien là kỳ nghỉ của trường học; das Meer là biển, der See là hồ."
+  - type: example
+    target: Letzten Sommer machten wir Urlaub an der Küste.
+    target_lang: de
+    translation:
+      vi: Mùa hè năm ngoái chúng tôi đi nghỉ ở vùng biển.
+    note:
+      vi: "machen → mach + te + n (ngôi wir) = machten. Urlaub machen = đi nghỉ."
+  - type: example
+    target: Ich buchte die Reise im Reisebüro und packte am Abend meinen Koffer.
+    target_lang: de
+    translation:
+      vi: Tôi đặt chuyến đi ở văn phòng du lịch và buổi tối xếp va li.
+    note:
+      vi: "buchen → buchte, packen → packte; ngôi ich không có đuôi sau -te."
+  - type: example
+    target: Mein Bruder arbeitete damals in einem Hotel am Strand.
+    target_lang: de
+    translation:
+      vi: Hồi đó anh trai tôi làm việc ở một khách sạn cạnh bãi biển.
+    note:
+      vi: "arbeiten có gốc tận cùng bằng -t nên thêm -ete: arbeitete."
+  - type: example
+    target: Wir fuhren mit dem Zug ans Meer und blieben zwei Wochen auf einer Insel.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đi tàu ra biển và ở lại hai tuần trên một hòn đảo.
+    note:
+      vi: "fuhren = fahren, blieben = bleiben: động từ mạnh, chỉ cần nhận ra khi đọc."
+  - type: example
+    target: Am Abend gingen wir an den Strand und aßen Fisch.
+    target_lang: de
+    translation:
+      vi: Buổi tối chúng tôi ra bãi biển và ăn cá.
+    note:
+      vi: "gingen = gehen, aßen = essen."
+  - type: example
+    target: "Und was hast du im Urlaub gemacht? – Wir haben die Altstadt besichtigt und ein Museum besucht."
+    target_lang: de
+    translation:
+      vi: "Thế kỳ nghỉ bạn đã làm gì? – Bọn mình đã tham quan khu phố cổ và đi thăm một bảo tàng."
+    note:
+      vi: "Hai người bạn nói chuyện (du) nên dùng Perfekt; besichtigen, besuchen có tiền tố không tách be- nên Partizip II không có ge-: besichtigt, besucht."
+  - type: common_mistake
+    wrong: Er fahrte mit dem Zug nach Hamburg.
+    right: Er fuhr mit dem Zug nach Hamburg.
+    target_lang: de
+    note:
+      vi: "fahren là động từ mạnh: Präteritum là fuhr, không thêm -te."
+  - type: common_mistake
+    wrong: Gestern habe ich die Reise buchte.
+    right: Gestern habe ich die Reise gebucht.
+    target_lang: de
+    note:
+      vi: "Đã dùng habe (Perfekt) thì cuối câu phải là Partizip II (gebucht); hoặc chỉ dùng Präteritum: Gestern buchte ich die Reise."
+  - type: common_mistake
+    wrong: Sie arbeitte in einem Reisebüro.
+    right: Sie arbeitete in einem Reisebüro.
+    target_lang: de
+    note:
+      vi: "Gốc arbeit- tận cùng bằng -t nên cần thêm -e- trước -te: arbeitete."
+  - type: summary
+    points:
+      - vi: "Präteritum: thì kể chuyện của văn viết; khi nói thường dùng Perfekt (trừ war, hatte, modal)."
+      - vi: "Có quy tắc: gốc + -te + đuôi: machte, machtest, machten, machtet."
+      - vi: "Gốc -t/-d: -ete (arbeitete, übernachtete)."
+      - vi: "Bất quy tắc: đổi nguyên âm, không -te: ging, kam, fuhr, sah, blieb, flog …"
+      - vi: "ich = er/sie/es ở Präteritum (ich fuhr, er fuhr)."
+      - vi: "Từ mới: der Urlaub, die Reise, der Koffer, packen, buchen, der Strand, das Meer, die Insel, der Berg."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u05l1-mcq-fuhr-fahren
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u05-g-praeteritum-haeufig
+    prompt:
+      stem: "Trong câu \"Wir fuhren mit dem Zug nach Rostock.\", fuhren là Präteritum của động từ nào?"
+      stem_lang: vi
+      options:
+        - { id: f1a, text: fahren, lang: de }
+        - { id: f2b, text: führen, lang: de }
+        - { id: f3c, text: finden, lang: de }
+        - { id: f4d, text: fliegen, lang: de }
+    answer:
+      correct_option_id: f1a
+    explanation:
+      vi: "fahren → fuhr (nguyên âm a đổi thành u). führen có Präteritum führte, finden → fand, fliegen → flog."
+    display_answer: fahren
+
+  - key: de:exercise:a2u05l1-mcq-buchten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u05-g-praeteritum-regelmaessig
+    prompt:
+      stem: "Chọn dạng đúng: Letztes Jahr ___ wir eine Reise nach Spanien. (buchen)"
+      stem_lang: vi
+      options:
+        - { id: b1a, text: buchten, lang: de }
+        - { id: b2b, text: buchte, lang: de }
+        - { id: b3c, text: buchtet, lang: de }
+        - { id: b4d, text: gebucht, lang: de }
+    answer:
+      correct_option_id: b1a
+    explanation:
+      vi: "Letztes Jahr chỉ quá khứ, chỗ trống chỉ có một từ nên cần Präteritum. Ngôi wir: gốc buch + -te + -n = buchten. buchte là ngôi ich/er, buchtet là ngôi ihr; gebucht cần đi với haben."
+    display_answer: buchten
+
+  - key: de:exercise:a2u05l1-listen-insel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-insel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Im Urlaub fuhren wir ans Meer. Wir blieben eine Woche auf einer Insel und gingen jeden Tag an den Strand.
+      options:
+        - { id: l1a, text: "Kỳ nghỉ, họ đi biển, ở một tuần trên một hòn đảo và ngày nào cũng ra bãi biển.", lang: vi }
+        - { id: l2b, text: "Kỳ nghỉ, họ đi biển, ở hai tuần trên một hòn đảo và ngày nào cũng ra bãi biển.", lang: vi }
+        - { id: l3c, text: "Kỳ nghỉ, họ lên núi, ở một tuần trong khách sạn và ngày nào cũng đi bộ đường dài.", lang: vi }
+        - { id: l4d, text: "Kỳ nghỉ, họ đi biển, ở một tuần trên một hòn đảo nhưng không ra bãi biển lần nào.", lang: vi }
+    answer:
+      correct_option_id: l1a
+    explanation:
+      vi: "fuhren ans Meer = đi biển; blieben eine Woche auf einer Insel = ở lại một tuần trên đảo; gingen jeden Tag an den Strand = ngày nào cũng ra bãi biển."
+    display_answer: "Kỳ nghỉ, họ đi biển, ở một tuần trên một hòn đảo và ngày nào cũng ra bãi biển."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u05l1-fill-wohnten-arbeitete
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-g-praeteritum-regelmaessig
+    prompt:
+      template: "Letzten Sommer {{b1}} (wohnen) wir in einer Ferienwohnung an der Küste. Mein Vater {{b2}} (arbeiten) dort jeden Morgen am Laptop."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [wohnten]
+        b2: [arbeitete]
+    known_wrong:
+      - answer: wohnte
+        feedback_vi: "Chủ ngữ là wir nên cần thêm -n: wohnten."
+        error_tag: verb_form
+      - answer: wohnen
+        feedback_vi: "Letzten Sommer là quá khứ: dùng Präteritum wohnten."
+        error_tag: tense
+      - answer: arbeitte
+        feedback_vi: "Gốc arbeit- tận cùng bằng -t nên thêm -ete: arbeitete."
+        error_tag: verb_form
+      - answer: arbeitet
+        feedback_vi: "Đây là dạng hiện tại; quá khứ là arbeitete."
+        error_tag: tense
+    explanation:
+      vi: "Letzten Sommer chỉ quá khứ, mỗi chỗ trống một từ nên dùng Präteritum. wohnen → wohn + te + n (wir) = wohnten; arbeiten có gốc tận cùng -t nên thêm -ete: arbeitete (ngôi er không có đuôi)."
+    display_answer: "Letzten Sommer wohnten wir in einer Ferienwohnung an der Küste. Mein Vater arbeitete dort jeden Morgen am Laptop."
+
+  - key: de:exercise:a2u05l1-fill-buchte-packte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-packen
+    prompt:
+      template: "Vor einem Monat {{b1}} (buchen) ich eine Reise nach Italien. Am Abend vor der Reise {{b2}} (packen) ich meinen Koffer."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [buchte]
+        b2: [packte]
+    known_wrong:
+      - answer: buche
+        feedback_vi: "Vor einem Monat là quá khứ: Präteritum buchte."
+        error_tag: tense
+      - answer: buchten
+        feedback_vi: "Chủ ngữ là ich: không có đuôi sau -te: buchte."
+        error_tag: verb_form
+      - answer: packe
+        feedback_vi: "Quá khứ: packte."
+        error_tag: tense
+      - answer: packten
+        feedback_vi: "Chủ ngữ là ich: packte."
+        error_tag: verb_form
+    explanation:
+      vi: "Hai câu kể quá khứ (vor einem Monat, am Abend vor der Reise), mỗi chỗ trống một từ nên dùng Präteritum. Ngôi ich: gốc + -te, không thêm đuôi: buchte, packte."
+    display_answer: "Vor einem Monat buchte ich eine Reise nach Italien. Am Abend vor der Reise packte ich meinen Koffer."
+
+  - key: de:exercise:a2u05l1-tr-damals-hamburg
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-g-praeteritum-regelmaessig
+    prompt:
+      source_text: "Hồi đó chúng tôi sống ở Hamburg. (dùng Präteritum)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Damals wohnten wir in Hamburg.
+        - Wir wohnten damals in Hamburg.
+        - Damals lebten wir in Hamburg.
+        - Wir lebten damals in Hamburg.
+        - In Hamburg wohnten wir damals.
+        - In Hamburg lebten wir damals.
+    known_wrong:
+      - answer: Damals wir wohnten in Hamburg.
+        feedback_vi: "Trạng từ damals đứng đầu thì động từ đứng ngay sau: Damals wohnten wir …"
+        error_tag: verb_position
+      - answer: Damals wohnte wir in Hamburg.
+        feedback_vi: "Chủ ngữ wir cần đuôi -n: wohnten."
+        error_tag: verb_form
+      - answer: Damals wohnen wir in Hamburg.
+        feedback_vi: "Đây là hiện tại; đề yêu cầu Präteritum: wohnten."
+        error_tag: tense
+    explanation:
+      vi: "damals = hồi đó; sống ở = wohnen (hoặc leben) in. Präteritum ngôi wir: wohnten/lebten. Động từ luôn ở vị trí 2: Damals wohnten wir … hoặc Wir wohnten damals …"
+    display_answer: Damals wohnten wir in Hamburg.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u05l1-mcq-lesen-blog
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u05-g-praeteritum-haeufig
+    prompt:
+      stem: "Đọc đoạn blog: \"Im Mai flogen wir nach Mallorca. Das Hotel fanden wir im Internet. Am ersten Tag regnete es. Wir blieben im Hotel und lasen Bücher.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m1a, text: "Họ bay đến Mallorca vào tháng Năm; ngày đầu trời mưa nên họ ở lại khách sạn đọc sách.", lang: vi }
+        - { id: m2b, text: "Họ đi tàu đến Mallorca vào tháng Năm; ngày đầu trời mưa nên họ ở lại khách sạn đọc sách.", lang: vi }
+        - { id: m3c, text: "Họ tìm khách sạn ở văn phòng du lịch.", lang: vi }
+        - { id: m4d, text: "Ngày đầu trời nắng nên họ ra bãi biển đọc sách.", lang: vi }
+    answer:
+      correct_option_id: m1a
+    explanation:
+      vi: "flogen = fliegen (bay); fanden … im Internet = tìm trên mạng; regnete = trời mưa; blieben = ở lại; lasen = lesen (đọc)."
+    display_answer: "Họ bay đến Mallorca vào tháng Năm; ngày đầu trời mưa nên họ ở lại khách sạn đọc sách."
+
+  - key: de:exercise:a2u05l1-wb-raeumten-auf
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-ferienwohnung
+    prompt:
+      instruction: "Sắp xếp thành câu (Präteritum): \"Buổi tối chúng tôi dọn dẹp căn hộ nghỉ dưỡng.\""
+      tokens:
+        - { id: w-wir, text: wir }
+        - { id: w-auf, text: auf }
+        - { id: w-abend, text: Abend }
+        - { id: w-raeumte, text: räumte }
+        - { id: w-die, text: die }
+        - { id: w-am, text: am }
+        - { id: w-raeumten, text: räumten }
+        - { id: w-fewo, text: Ferienwohnung }
+    answer:
+      orders:
+        - [w-am, w-abend, w-raeumten, w-wir, w-die, w-fewo, w-auf]
+        - [w-wir, w-raeumten, w-am, w-abend, w-die, w-fewo, w-auf]
+        - [w-wir, w-raeumten, w-die, w-fewo, w-am, w-abend, w-auf]
+        - [w-die, w-fewo, w-raeumten, w-wir, w-am, w-abend, w-auf]
+    explanation:
+      vi: "aufräumen là động từ tách: räumten ở vị trí 2, auf ở cuối câu. Chủ ngữ wir nên dùng räumten (räumte là ngôi ich/er)."
+    display_answer: Am Abend räumten wir die Ferienwohnung auf.
+
+  - key: de:exercise:a2u05l1-tr-insel-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u05-meer
+    prompt:
+      source_text: Wir fuhren ans Meer und blieben eine Woche auf der Insel.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi đi biển và ở lại trên đảo một tuần.
+        - Chúng tôi đã đi biển và ở lại trên đảo một tuần.
+        - Chúng tôi ra biển và ở lại trên đảo một tuần.
+        - Chúng tôi đi ra biển và ở trên đảo một tuần.
+        - Chúng tôi đi biển và ở trên đảo một tuần.
+        - Chúng tôi ra biển và ở lại đảo một tuần.
+        - Chúng tôi đã ra biển và ở lại trên đảo một tuần.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chúng tôi đi biển và ở lại trên đảo hai tuần.
+        feedback_vi: "eine Woche = một tuần."
+        error_tag: meaning
+      - answer: Chúng tôi lên núi và ở lại trên đảo một tuần.
+        feedback_vi: "ans Meer = ra biển, không phải lên núi (in die Berge)."
+        error_tag: meaning
+    explanation:
+      vi: "fuhren = Präteritum của fahren (đi bằng xe, tàu); blieben = Präteritum của bleiben (ở lại). ans Meer = ra biển; auf der Insel = trên đảo."
+    display_answer: Chúng tôi đi biển và ở lại trên đảo một tuần.
+
+  - key: de:exercise:a2u05l1-mcq-packten
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-koffer
+    prompt:
+      stem: "Bạn viết blog: \"Tối hôm trước chúng tôi xếp va li.\" Câu nào đúng (Präteritum)?"
+      stem_lang: vi
+      options:
+        - { id: p1a, text: Am Abend vorher packten wir die Koffer., lang: de }
+        - { id: p2b, text: Am Abend vorher buchten wir die Koffer., lang: de }
+        - { id: p3c, text: Am Abend vorher packte wir die Koffer., lang: de }
+        - { id: p4d, text: Am Abend vorher wir packten die Koffer., lang: de }
+    answer:
+      correct_option_id: p1a
+    explanation:
+      vi: "den Koffer packen = xếp va li (buchen là đặt chỗ). Ngôi wir: packten. Trạng ngữ am Abend vorher đứng đầu nên động từ ở vị trí 2, trước chủ ngữ."
+    display_answer: Am Abend vorher packten wir die Koffer.

@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u05-im-hotel
+order_index: 4
+level: a2
+title:
+  vi: Ở khách sạn – giới từ du lịch, phàn nàn (Im Hotel)
+objectives:
+  - vi: Nói đi đâu và ở đâu khi du lịch – ans Meer/am Meer, in die Berge/in den Bergen, auf eine Insel/auf einer Insel, nach Spanien, in die Schweiz, zu Freunden/bei Freunden.
+  - vi: Đặt phòng và nhận phòng ở quầy lễ tân (Einzelzimmer, Doppelzimmer, Halbpension).
+  - vi: Phàn nàn lịch sự về sự cố trong phòng (Leider funktioniert … nicht. Könnten Sie …?).
+  - vi: Nghe hiểu hội thoại ngắn ở khách sạn.
+estimated_minutes: 17
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a2u05-die-schoenste-reise]
+items:
+  - item: de:item:a2u05-g-reise-praepositionen
+  - item: de:item:a2u05-einzelzimmer
+  - item: de:item:a2u05-doppelzimmer
+  - item: de:item:a2u05-rezeption
+  - item: de:item:a2u05-uebernachtung
+  - item: de:item:a2u05-halbpension
+  - item: de:item:a2u05-reservieren
+  - item: de:item:a2u05-beschwerde
+  - item: de:item:a2u05-sich-beschweren
+  - item: de:item:a2u05-kaputt
+  - item: de:item:a2u05-funktionieren
+  - item: de:item:a2u05-klimaanlage
+  - item: de:item:a2u05-vollpension
+  - item: de:item:a2u05-blick
+  - item: de:item:a2u05-reservierung
+  - item: de:item:a2u05-licht
+  - item: de:item:a2u05-anreisen
+  - item: de:item:a2u05-abreisen
+  - item: de:item:a1u01-g-laender-artikel
+    role: reuse
+  - item: de:item:a1u07-g-dativ-praepositionen
+    role: reuse
+  - item: de:item:a1u07-g-nach-zu-hause
+    role: reuse
+  - item: de:item:p0u1-hotel
+    role: reuse
+  - item: de:item:a2u05-meer
+    role: reuse
+  - item: de:item:a2u05-insel
+    role: reuse
+  - item: de:item:a2u04-g-reflexiv-akk
+    role: reuse
+  - item: de:item:a2u04-g-wuerde-hoeflich
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được \"Im Sommer fahren wir ans Meer\", \"Wir waren bei Freunden in der Schweiz\", đặt được phòng ở khách sạn và phàn nàn lịch sự: \"Leider funktioniert die Klimaanlage nicht. Könnten Sie bitte jemanden schicken?\""
+  - type: explain
+    text:
+      vi: "Như giới từ hai cách bạn đã học: đi đâu (Wohin?) → Akkusativ, ở đâu (Wo?) → Dativ. Ra biển, hồ, bãi biển dùng an: Wir fahren ans Meer / an den See – Wir sind am Meer / am See. Lên vùng núi dùng in + số nhiều: in die Berge – in den Bergen."
+  - type: explain
+    text:
+      vi: "Ra đảo dùng auf: auf eine Insel – auf einer Insel; đảo có tên riêng thường dùng nach: nach Mallorca, nach Rügen (ở đó: auf Mallorca). Thành phố, nước không mạo từ: nach Spanien, nach Wien – ở đó: in Spanien, in Wien. Nước có mạo từ dùng in: in die Schweiz, in die Türkei – in der Schweiz, in der Türkei."
+  - type: explain
+    text:
+      vi: "Đến nhà ai: zu + Dativ (zu Freunden, zu meiner Tante); ở nhà ai: bei + Dativ (bei Freunden, bei meiner Tante). Nhớ cặp quen thuộc: nach Hause (về nhà) – zu Hause (ở nhà)."
+  - type: explain
+    text:
+      vi: "Ở khách sạn: Ich möchte ein Doppelzimmer für drei Nächte reservieren. / Ich habe eine Reservierung auf den Namen … Halbpension = bữa sáng và bữa tối, Vollpension = ba bữa. anreisen = đến (ngày nhận phòng), abreisen = rời đi (ngày trả phòng)."
+  - type: explain
+    text:
+      vi: "Phàn nàn lịch sự: nêu vấn đề bằng Leider … (Leider funktioniert das Licht im Bad nicht. Die Dusche ist kaputt.), rồi đề nghị bằng Könnten Sie …? hoặc Würden Sie …? Câu quá thẳng như \"Das ist schlecht!\" nghe thô lỗ. Muốn khiếu nại chính thức: Ich möchte mich beschweren (sich beschweren über + Akk / bei + Dativ)."
+  - type: deep_explain
+    text:
+      vi: "Vì sao an với biển? an là \"sát cạnh\": am Meer = ở bên biển, im Meer = ở dưới nước biển (đang bơi); am See – im See cũng vậy. auf dem Land = ở nông thôn, aufs Land = về quê. Một số vùng núi có tên riêng số ít: im Schwarzwald, in den Harz (der Harz). Ở châu Âu, giá phòng có thể đã gồm bữa sáng hoặc chưa, giờ nhận và trả phòng cũng khác nhau tùy khách sạn – hãy hỏi lại khi đặt phòng. Khi phàn nàn với nhân viên khách sạn, bạn thường dùng Sie."
+  - type: example
+    target: Im Sommer fahren wir ans Meer, im Winter in die Berge.
+    target_lang: de
+    translation:
+      vi: Mùa hè chúng tôi đi biển, mùa đông lên núi.
+    note:
+      vi: "Wohin? → ans (= an das) Meer, in die Berge (Akkusativ số nhiều)."
+  - type: example
+    target: Letztes Jahr waren wir zwei Wochen auf einer Insel in Griechenland.
+    target_lang: de
+    translation:
+      vi: Năm ngoái chúng tôi đã ở hai tuần trên một hòn đảo ở Hy Lạp.
+    note:
+      vi: "Wo? → auf einer Insel (Dativ); in Griechenland (nước không mạo từ)."
+  - type: example
+    target: In den Ferien sind wir bei Freunden in der Schweiz.
+    target_lang: de
+    translation:
+      vi: Kỳ nghỉ này chúng tôi ở nhà bạn bè ở Thụy Sĩ.
+    note:
+      vi: "bei + Dativ = ở nhà ai; in der Schweiz: nước có mạo từ, Wo? → Dativ."
+  - type: example
+    target: "Guten Tag, ich möchte ein Doppelzimmer mit Halbpension für drei Nächte reservieren."
+    target_lang: de
+    translation:
+      vi: Chào anh/chị, tôi muốn đặt một phòng đôi kèm bữa sáng và bữa tối cho ba đêm.
+    note:
+      vi: "Khách nói với lễ tân, dùng giọng lịch sự (möchte)."
+  - type: example
+    target: "Entschuldigung, leider funktioniert die Klimaanlage in Zimmer 214 nicht. Könnten Sie bitte jemanden schicken?"
+    target_lang: de
+    translation:
+      vi: Xin lỗi, tiếc là máy lạnh phòng 214 không chạy. Anh/chị có thể cử ai đến được không?
+    note:
+      vi: "Phàn nàn lịch sự: Leider + vấn đề + Könnten Sie …? Với nhân viên khách sạn dùng Sie."
+  - type: example
+    target: "Ich möchte mich über das Zimmer beschweren. Die Dusche ist kaputt, und es ist sehr laut."
+    target_lang: de
+    translation:
+      vi: Tôi muốn khiếu nại về căn phòng. Vòi sen bị hỏng, và rất ồn.
+    note:
+      vi: "sich beschweren über + Akkusativ: über das Zimmer."
+  - type: common_mistake
+    wrong: Wir fahren nach den Bergen.
+    right: Wir fahren in die Berge.
+    target_lang: de
+    note:
+      vi: "nach chỉ dùng cho thành phố, nước không mạo từ; vùng núi: in die Berge."
+  - type: common_mistake
+    wrong: Ich fahre zu Meer.
+    right: Ich fahre ans Meer.
+    target_lang: de
+    note:
+      vi: "Ra biển: an + Akkusativ: ans Meer."
+  - type: common_mistake
+    wrong: Wir fahren nach die Schweiz.
+    right: Wir fahren in die Schweiz.
+    target_lang: de
+    note:
+      vi: "Nước có mạo từ (die Schweiz, die Türkei) dùng in + Akkusativ."
+  - type: common_mistake
+    wrong: Das Zimmer ist schlecht! Die Dusche geht nicht!
+    right: Entschuldigung, leider funktioniert die Dusche nicht. Könnten Sie bitte jemanden schicken?
+    target_lang: de
+    note:
+      vi: "Câu bên trái đúng ngữ pháp nhưng nghe thô; phàn nàn lịch sự với leider và Könnten Sie …?"
+  - type: summary
+    points:
+      - vi: "Wohin? ans Meer, in die Berge, auf eine Insel, nach Spanien, in die Schweiz, zu Freunden."
+      - vi: "Wo? am Meer, in den Bergen, auf einer Insel, in Spanien, in der Schweiz, bei Freunden."
+      - vi: "Đảo có tên: nach Mallorca – auf Mallorca."
+      - vi: "Khách sạn: das Einzelzimmer, das Doppelzimmer, die Rezeption, die Halbpension, reservieren."
+      - vi: "Phàn nàn: Leider funktioniert … nicht. / … ist kaputt. Könnten Sie …?"
+      - vi: "sich beschweren über + Akk / bei + Dativ."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u05l4-listen-einzelzimmer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u05-einzelzimmer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Abend. Ich habe ein Einzelzimmer für zwei Nächte reserviert. Mein Name ist Tran.
+      options:
+        - { id: e1a, text: "Khách đã đặt một phòng đơn cho hai đêm.", lang: vi }
+        - { id: e2b, text: "Khách đã đặt một phòng đôi cho hai đêm.", lang: vi }
+        - { id: e3c, text: "Khách muốn đặt một phòng đơn cho ba đêm.", lang: vi }
+        - { id: e4d, text: "Khách hỏi khách sạn còn phòng đơn không.", lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "Ich habe … reserviert = tôi đã đặt (Perfekt); ein Einzelzimmer = phòng đơn (Doppelzimmer là phòng đôi); für zwei Nächte = cho hai đêm."
+    display_answer: "Khách đã đặt một phòng đơn cho hai đêm."
+
+  - key: de:exercise:a2u05l4-listen-klimaanlage
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-klimaanlage
+    prompt:
+      audio_asset_id: null
+      fallback_text: Entschuldigung, in meinem Zimmer funktioniert die Klimaanlage nicht, und das Fenster geht nicht auf.
+      options:
+        - { id: k1a, text: "Máy lạnh không chạy và cửa sổ không mở được.", lang: vi }
+        - { id: k2b, text: "Máy lạnh không chạy và vòi sen bị hỏng.", lang: vi }
+        - { id: k3c, text: "Đèn không sáng và cửa sổ không đóng được.", lang: vi }
+        - { id: k4d, text: "Máy lạnh chạy quá lạnh và cửa sổ không mở được.", lang: vi }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: "funktioniert … nicht = không chạy; die Klimaanlage = máy lạnh; das Fenster geht nicht auf = cửa sổ không mở ra được."
+    display_answer: "Máy lạnh không chạy và cửa sổ không mở được."
+
+  - key: de:exercise:a2u05l4-mcq-ans-meer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u05-g-reise-praepositionen
+    prompt:
+      stem: "Chọn giới từ đúng: Im Sommer fahren wir ___ Meer."
+      stem_lang: vi
+      options:
+        - { id: p1a, text: ans, lang: de }
+        - { id: p2b, text: am, lang: de }
+        - { id: p3c, text: nach, lang: de }
+        - { id: p4d, text: in, lang: de }
+    answer:
+      correct_option_id: p1a
+    explanation:
+      vi: "fahren hỏi Wohin? → an + Akkusativ: an das Meer = ans Meer. am Meer trả lời Wo?; nach chỉ dùng cho thành phố, nước không mạo từ."
+    display_answer: ans
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u05l4-fill-nach-auf-am
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-g-reise-praepositionen
+    prompt:
+      template: "Letzten Sommer sind wir {{b1}} Spanien geflogen. Wir waren zwei Wochen {{b2}} einer Insel und jeden Tag {{b3}} Strand."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [nach]
+        b2: [auf]
+        b3: [am]
+    known_wrong:
+      - answer: zu
+        feedback_vi: "Nước không mạo từ (Spanien) dùng nach."
+        error_tag: preposition
+      - answer: ans
+        feedback_vi: "waren hỏi Wo? → Dativ: am Strand (an dem)."
+        error_tag: case_dat_akk
+      - answer: an den
+        feedback_vi: "waren hỏi Wo? → Dativ: am Strand."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "nach Spanien (nước không mạo từ, Wohin?); auf einer Insel (đảo, Wo? → Dativ); am Strand (an dem, Wo? → Dativ)."
+    display_answer: Letzten Sommer sind wir nach Spanien geflogen. Wir waren zwei Wochen auf einer Insel und jeden Tag am Strand.
+
+  - key: de:exercise:a2u05l4-fill-berge-bei-schweiz
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-reise-praepositionen
+    prompt:
+      template: "Im Winter fahren wir {{b1}} die Berge. Dort wohnen wir nicht im Hotel, wir übernachten {{b2}} Freunden zu Hause. Im Frühling fahren wir {{b3}} die Schweiz."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [in]
+        b2: [bei]
+        b3: [in]
+    known_wrong:
+      - answer: nach
+        feedback_vi: "Vùng núi và nước có mạo từ (die Schweiz) dùng in, không dùng nach."
+        error_tag: preposition
+      - answer: zu
+        feedback_vi: "zu = đến nhà ai (đi đâu); ở nhà ai (Wo?) dùng bei."
+        error_tag: preposition
+    explanation:
+      vi: "in die Berge (vùng núi, Wohin?); bei Freunden zu Hause (ở nhà bạn bè, Wo? → bei + Dativ); in die Schweiz (nước có mạo từ, Wohin?)."
+    display_answer: Im Winter fahren wir in die Berge. Dort wohnen wir nicht im Hotel, wir übernachten bei Freunden zu Hause. Im Frühling fahren wir in die Schweiz.
+
+  - key: de:exercise:a2u05l4-tr-insel-ruegen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-reise-praepositionen
+    prompt:
+      source_text: Mùa hè chúng tôi đi ra đảo Rügen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Im Sommer fahren wir auf die Insel Rügen.
+        - Wir fahren im Sommer auf die Insel Rügen.
+        - Im Sommer fahren wir nach Rügen.
+        - Wir fahren im Sommer nach Rügen.
+        - Im Sommer reisen wir nach Rügen.
+        - Wir reisen im Sommer nach Rügen.
+    known_wrong:
+      - answer: Im Sommer fahren wir zu die Insel Rügen.
+        feedback_vi: "Ra đảo dùng auf + Akkusativ: auf die Insel Rügen (hoặc nach Rügen)."
+        error_tag: preposition
+      - answer: Im Sommer fahren wir auf der Insel Rügen.
+        feedback_vi: "fahren hỏi Wohin? → Akkusativ: auf die Insel."
+        error_tag: case_dat_akk
+      - answer: Im Sommer wir fahren nach Rügen.
+        feedback_vi: "Im Sommer đứng đầu thì động từ đứng ngay sau: Im Sommer fahren wir …"
+        error_tag: verb_position
+    explanation:
+      vi: "Ra đảo: auf die Insel (Akkusativ, Wohin?) hoặc với tên riêng: nach Rügen. Động từ fahren ở vị trí 2."
+    display_answer: Im Sommer fahren wir auf die Insel Rügen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u05l4-listen-licht-bad
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u05-licht
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Rezeption, guten Tag. – Guten Tag, hier ist Zimmer dreihundertfünf. Leider funktioniert das Licht im Bad nicht. – Oh, das tut mir leid. Ich schicke sofort jemanden."
+      options:
+        - { id: r1a, text: "Đèn trong phòng tắm phòng 305 không sáng; lễ tân sẽ cử người đến ngay.", lang: vi }
+        - { id: r2b, text: "Vòi sen phòng 305 bị hỏng; lễ tân sẽ cử người đến ngày mai.", lang: vi }
+        - { id: r3c, text: "Đèn trong phòng tắm phòng 503 không sáng; lễ tân sẽ cử người đến ngay.", lang: vi }
+        - { id: r4d, text: "Khách phòng 305 muốn đổi sang phòng khác.", lang: vi }
+    answer:
+      correct_option_id: r1a
+    explanation:
+      vi: "dreihundertfünf = 305; das Licht im Bad funktioniert nicht = đèn trong phòng tắm không sáng; Ich schicke sofort jemanden = tôi cử người đến ngay."
+    display_answer: "Đèn trong phòng tắm phòng 305 không sáng; lễ tân sẽ cử người đến ngay."
+
+  - key: de:exercise:a2u05l4-mcq-beschwerde-hoeflich
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-funktionieren
+    prompt:
+      stem: "Máy lạnh trong phòng bạn không chạy. Bạn nói gì với lễ tân (lịch sự)?"
+      stem_lang: vi
+      options:
+        - { id: q1a, text: "Entschuldigung, leider funktioniert die Klimaanlage in meinem Zimmer nicht. Könnten Sie bitte jemanden schicken?", lang: de }
+        - { id: q2b, text: "Die Klimaanlage ist schlecht! Machen Sie das sofort!", lang: de }
+        - { id: q3c, text: "Entschuldigung, leider funktioniert die Klimaanlage in meinem Zimmer nicht. Kannst du bitte jemanden schicken?", lang: de }
+        - { id: q4d, text: "Entschuldigung, leider funktionieren die Klimaanlage in meinem Zimmer nicht. Könnten Sie bitte jemanden schicken?", lang: de }
+    answer:
+      correct_option_id: q1a
+    explanation:
+      vi: "Phàn nàn lịch sự: Entschuldigung + leider + vấn đề + Könnten Sie …? Với nhân viên dùng Sie, không dùng du. die Klimaanlage là số ít nên động từ là funktioniert."
+    display_answer: "Entschuldigung, leider funktioniert die Klimaanlage in meinem Zimmer nicht. Könnten Sie bitte jemanden schicken?"
+
+  - key: de:exercise:a2u05l4-wb-doppelzimmer
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-doppelzimmer
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi muốn đặt một phòng đôi kèm bữa sáng và bữa tối.\""
+      tokens:
+        - { id: d-halb, text: Halbpension }
+        - { id: d-ich, text: ich }
+        - { id: d-reservieren, text: reservieren }
+        - { id: d-ein, text: ein }
+        - { id: d-moechte, text: möchte }
+        - { id: d-mit, text: mit }
+        - { id: d-dz, text: Doppelzimmer }
+        - { id: d-reserviere, text: reserviere }
+        - { id: d-einen, text: einen }
+    answer:
+      orders:
+        - [d-ich, d-moechte, d-ein, d-dz, d-mit, d-halb, d-reservieren]
+        - [d-ein, d-dz, d-mit, d-halb, d-moechte, d-ich, d-reservieren]
+    explanation:
+      vi: "möchte ở vị trí 2, động từ nguyên thể reservieren ở cuối câu. das Doppelzimmer là giống trung nên Akkusativ là ein (không phải einen)."
+    display_answer: Ich möchte ein Doppelzimmer mit Halbpension reservieren.
+
+  - key: de:exercise:a2u05l4-tr-dusche-kaputt
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-kaputt
+    prompt:
+      source_text: Tiếc là vòi sen bị hỏng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Leider ist die Dusche kaputt.
+        - Die Dusche ist leider kaputt.
+        - Leider funktioniert die Dusche nicht.
+        - Die Dusche funktioniert leider nicht.
+    known_wrong:
+      - answer: Leider die Dusche ist kaputt.
+        feedback_vi: "leider đứng đầu thì động từ đứng ngay sau: Leider ist die Dusche kaputt."
+        error_tag: verb_position
+      - answer: Leider ist der Dusche kaputt.
+        feedback_vi: "die Dusche là giống cái."
+        error_tag: article
+    explanation:
+      vi: "tiếc là = leider; bị hỏng = kaputt sein (hoặc funktioniert nicht). Động từ luôn ở vị trí 2."
+    display_answer: Leider ist die Dusche kaputt.

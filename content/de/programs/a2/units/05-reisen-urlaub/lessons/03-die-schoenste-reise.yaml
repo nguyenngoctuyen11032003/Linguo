@@ -1,0 +1,398 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u05-die-schoenste-reise
+order_index: 3
+level: a2
+title:
+  vi: Chuyến đi đẹp nhất – so sánh nhất, đuôi tính từ sau der (Die schönste Reise)
+objectives:
+  - vi: Dùng đúng đuôi tính từ sau der/die/das (der schöne Strand, den schönen Strand, dem schönen Strand, die schönen Strände).
+  - vi: Dùng so sánh nhất – am schönsten, der/die/das schönste …, và các dạng đặc biệt am besten, am meisten, am liebsten, am höchsten, am nächsten.
+  - vi: So sánh nơi chốn, nói cái gì đẹp, cao, dài, xa nhất.
+  - vi: Đọc hiểu đoạn tả phong cảnh – rừng, sông, thung lũng, núi.
+estimated_minutes: 17
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:a2u05-als-wenn]
+items:
+  - item: de:item:a2u05-g-adj-bestimmt
+  - item: de:item:a2u05-g-superlativ
+  - item: de:item:a2u05-landschaft
+  - item: de:item:a2u05-natur
+  - item: de:item:a2u05-wald
+  - item: de:item:a2u05-fluss
+  - item: de:item:a2u05-tal
+  - item: de:item:a2u05-hoch
+  - item: de:item:a2u05-tief
+  - item: de:item:a2u05-breit
+  - item: de:item:a2u05-wunderbar
+  - item: de:item:a2u05-spannend
+  - item: de:item:a2u05-gebirge
+  - item: de:item:a2u05-gipfel
+  - item: de:item:a2u05-wasserfall
+  - item: de:item:a2u05-himmel
+  - item: de:item:a2u05-gegend
+  - item: de:item:a2u05-steil
+  - item: de:item:a2u05-huegel
+  - item: de:item:a2u05-wiese
+  - item: de:item:a1u07-g-komparativ
+    role: reuse
+  - item: de:item:a1u06-g-gern-lieber-am-liebsten
+    role: reuse
+  - item: de:item:a2u05-berg
+    role: reuse
+  - item: de:item:a2u05-insel
+    role: reuse
+  - item: de:item:a2u05-strand
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được \"Die Zugspitze ist der höchste Berg in Deutschland\", \"Am schönsten war der kleine Strand\" và dùng đúng đuôi tính từ sau der, die, das khi tả phong cảnh."
+  - type: explain
+    text:
+      vi: "Sau der, die, das tính từ chỉ có hai đuôi: -e và -en. -e ở năm chỗ: Nominativ số ít cả ba giống (der schöne Strand, die schöne Insel, das schöne Tal) và Akkusativ giống cái, giống trung (die schöne Insel, das schöne Tal). Mọi chỗ còn lại là -en: den schönen Strand, dem schönen Strand, der schönen Insel (Dativ), die schönen Strände."
+  - type: explain
+    text:
+      vi: "Mạo từ der/die/das đã cho biết giống và cách, nên đuôi tính từ ở đây đơn giản hơn bảng sau ein bạn đã học: ein schöner Strand → der schöne Strand, ein schönes Tal → das schöne Tal. Tiếng Việt đặt tính từ sau danh từ và không đổi (bãi biển đẹp); tiếng Đức đặt tính từ trước danh từ và tính từ phải có đuôi (trừ vài ngoại lệ như prima, lila hay der Kölner Dom)."
+  - type: explain
+    text:
+      vi: "So sánh nhất sau động từ: am + tính từ + -sten: Die Insel ist am schönsten. Trước danh từ: tính từ + -st- + đuôi theo bảng: der schönste Strand, den schönsten Strand, auf dem höchsten Berg. Tính từ có umlaut ở so sánh hơn thì so sánh nhất cũng có: alt → älter → am ältesten, lang → länger → am längsten."
+  - type: explain
+    text:
+      vi: "Sau -t, -d, -s, -ß, -z ở âm tiết mang trọng âm, thêm -e- cho dễ đọc: am ältesten, am breitesten, am heißesten, am kürzesten; riêng groß → am größten. Dạng đặc biệt cần thuộc: gut → am besten, viel → am meisten, gern → am liebsten, hoch → am höchsten, nah → am nächsten."
+  - type: explain
+    text:
+      vi: "hoch mất chữ c khi có đuôi: Der Berg ist hoch, nhưng der hohe Berg, die hohen Berge. Từ mới: die Landschaft, die Natur, der Wald, der Fluss, das Tal, tief, breit, wunderbar, spannend."
+  - type: deep_explain
+    text:
+      vi: "Âm cuối không mang trọng âm thì không thêm -e-: spannend → am spannendsten. Sau mein, dein, unser … (bảng sau ein) so sánh nhất cũng lấy đuôi của bảng đó: mein schönster Urlaub, meine schönste Reise. Tính từ có -el, -er thường bỏ e khi có đuôi: dunkel → der dunkle Wald, teuer → das teure Hotel. Câu hỏi welcher/welche/welches cũng đi với so sánh nhất: Welche Insel ist am schönsten? Sau welcher, đuôi tính từ giống sau der: welcher hohe Berg."
+  - type: example
+    target: Der breite Fluss fließt durch das grüne Tal.
+    target_lang: de
+    translation:
+      vi: Con sông rộng chảy qua thung lũng xanh.
+    note:
+      vi: "der breite Fluss: Nominativ → -e; durch das grüne Tal: Akkusativ giống trung → -e."
+  - type: example
+    target: Wir wanderten durch den dunklen Wald zum kleinen See.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đi bộ qua khu rừng tối đến cái hồ nhỏ.
+    note:
+      vi: "den dunklen Wald: Akkusativ giống đực → -en (dunkel bỏ e); zum kleinen See: Dativ → -en."
+  - type: example
+    target: Die Zugspitze ist der höchste Berg in Deutschland.
+    target_lang: de
+    translation:
+      vi: Zugspitze là ngọn núi cao nhất nước Đức.
+    note:
+      vi: "hoch → höchst- + đuôi -e sau der (Nominativ)."
+  - type: example
+    target: Der Rhein ist länger als der Main, aber die Donau ist am längsten.
+    target_lang: de
+    translation:
+      vi: Sông Rhein dài hơn sông Main, nhưng sông Danube dài nhất.
+    note:
+      vi: "So sánh hơn: länger als; so sánh nhất sau sein: am längsten."
+  - type: example
+    target: Ich mache am liebsten Urlaub in den Bergen. Dort ist die Luft am besten.
+    target_lang: de
+    translation:
+      vi: Tôi thích đi nghỉ ở vùng núi nhất. Ở đó không khí trong lành nhất.
+    note:
+      vi: "gern → lieber → am liebsten; gut → besser → am besten."
+  - type: example
+    target: Von allen Stränden auf der Insel hat mir der kleine Strand am besten gefallen.
+    target_lang: de
+    translation:
+      vi: Trong tất cả các bãi biển trên đảo, tôi thích nhất bãi biển nhỏ.
+    note:
+      vi: "der kleine Strand là chủ ngữ của gefallen (Nominativ → -e); von allen Stränden = trong tất cả các bãi biển."
+  - type: common_mistake
+    wrong: Wir haben den schöne Strand gesehen.
+    right: Wir haben den schönen Strand gesehen.
+    target_lang: de
+    note:
+      vi: "Akkusativ giống đực (den) → đuôi -en."
+  - type: common_mistake
+    wrong: Der Berg ist am höchste.
+    right: Der Berg ist am höchsten.
+    target_lang: de
+    note:
+      vi: "Sau am, so sánh nhất có đuôi -en: am höchsten, am schönsten."
+  - type: common_mistake
+    wrong: Das ist der hoche Turm.
+    right: Das ist der hohe Turm.
+    target_lang: de
+    note:
+      vi: "hoch mất chữ c khi có đuôi: der hohe Turm."
+  - type: common_mistake
+    wrong: Das ist der schönster Strand.
+    right: Das ist der schönste Strand.
+    target_lang: de
+    note:
+      vi: "Sau der, Nominativ giống đực có đuôi -e; -er là đuôi sau ein/mein (mein schönster Urlaub)."
+  - type: summary
+    points:
+      - vi: "Sau der/die/das: -e ở Nominativ số ít và Akkusativ die/das; còn lại -en."
+      - vi: "der schöne Strand – den schönen Strand – dem schönen Strand – die schönen Strände."
+      - vi: "So sánh nhất: am schönsten (sau động từ); der/die/das schönste … (trước danh từ)."
+      - vi: "-esten sau -t, -d, -s, -ß, -z có trọng âm: am ältesten; nhưng am größten."
+      - vi: "Đặc biệt: am besten, am meisten, am liebsten, am höchsten, am nächsten."
+      - vi: "hoch → der hohe Berg; dunkel → der dunkle Wald."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u05l3-mcq-kleinen-hotel
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u05-g-adj-bestimmt
+    prompt:
+      stem: "Chọn dạng đúng: Wir wohnten im ___ Hotel am See. (klein)"
+      stem_lang: vi
+      options:
+        - { id: k1a, text: kleinen, lang: de }
+        - { id: k2b, text: kleine, lang: de }
+        - { id: k3c, text: kleines, lang: de }
+        - { id: k4d, text: kleiner, lang: de }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: "im = in dem: Dativ sau mạo từ xác định → đuôi -en: im kleinen Hotel. kleines là đuôi sau ein (ein kleines Hotel)."
+    display_answer: kleinen
+
+  - key: de:exercise:a2u05l3-mcq-am-heissesten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-g-superlativ
+    prompt:
+      stem: "Chọn dạng đúng: Im August ist es in Spanien am ___. (heiß)"
+      stem_lang: vi
+      options:
+        - { id: h1a, text: heißesten, lang: de }
+        - { id: h2b, text: heiß, lang: de }
+        - { id: h3c, text: heißeste, lang: de }
+        - { id: h4d, text: heißer, lang: de }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: "heiß tận cùng bằng -ß nên thêm -e-: am heißesten. Sau am luôn là dạng -sten có đuôi -en (không phải heißeste hay heiß); heißer là so sánh hơn."
+    display_answer: heißesten
+
+  - key: de:exercise:a2u05l3-listen-landschaft
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-landschaft
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Landschaft hier ist wunderbar. Der Fluss ist nicht sehr breit, aber das Tal ist tief und grün.
+      options:
+        - { id: n1a, text: "Phong cảnh ở đây tuyệt vời; con sông không rộng lắm, nhưng thung lũng sâu và xanh.", lang: vi }
+        - { id: n2b, text: "Phong cảnh ở đây tuyệt vời; con sông rất rộng và thung lũng sâu, xanh.", lang: vi }
+        - { id: n3c, text: "Phong cảnh ở đây tuyệt vời; con sông không rộng lắm, nhưng khu rừng sâu và xanh.", lang: vi }
+        - { id: n4d, text: "Phong cảnh ở đây không đẹp lắm; con sông hẹp và thung lũng khô.", lang: vi }
+    answer:
+      correct_option_id: n1a
+    explanation:
+      vi: "wunderbar = tuyệt vời; nicht sehr breit = không rộng lắm; das Tal ist tief und grün = thung lũng sâu và xanh (der Wald mới là rừng)."
+    display_answer: "Phong cảnh ở đây tuyệt vời; con sông không rộng lắm, nhưng thung lũng sâu và xanh."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u05l3-fill-hohen-berg
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-adj-bestimmt
+    prompt:
+      template: "Wir sind auf den {{b1}} (hoch) Berg gewandert. Von oben haben wir das {{b2}} (grün) Tal und den {{b3}} (breit) Fluss gesehen."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [hohen]
+        b2: [grüne]
+        b3: [breiten]
+    known_wrong:
+      - answer: hochen
+        feedback_vi: "hoch mất chữ c khi có đuôi: hohen."
+        error_tag: adj_ending
+      - answer: hohe
+        feedback_vi: "auf den Berg là Akkusativ giống đực → -en: den hohen Berg."
+        error_tag: adj_ending
+      - answer: grünes
+        feedback_vi: "Sau das chỉ dùng -e (das grüne Tal); -es là đuôi sau ein."
+        error_tag: adj_ending
+      - answer: breite
+        feedback_vi: "den Fluss là Akkusativ giống đực → -en: den breiten Fluss."
+        error_tag: adj_ending
+    explanation:
+      vi: "den hohen Berg, den breiten Fluss: Akkusativ giống đực → -en (hoch mất c). das grüne Tal: Akkusativ giống trung → -e."
+    display_answer: Wir sind auf den hohen Berg gewandert. Von oben haben wir das grüne Tal und den breiten Fluss gesehen.
+
+  - key: de:exercise:a2u05l3-fill-hoeher-hoechste
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-superlativ
+    prompt:
+      template: "Die Zugspitze ist {{b1}} (hoch) als der Brocken. Sie ist der {{b2}} (hoch) Berg in Deutschland."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [höher]
+        b2: [höchste]
+    known_wrong:
+      - answer: hocher
+        feedback_vi: "So sánh hơn của hoch là höher."
+        error_tag: komparativ_form
+      - answer: höchster
+        feedback_vi: "Sau der (Nominativ) đuôi là -e: der höchste Berg; -er là đuôi sau ein."
+        error_tag: adj_ending
+      - answer: höchsten
+        feedback_vi: "der … Berg là Nominativ → der höchste Berg."
+        error_tag: adj_ending
+    explanation:
+      vi: "Có als → so sánh hơn: höher. Trước danh từ, sau der (Nominativ): der höchste Berg. Die Zugspitze là giống cái nên đại từ là sie, nhưng danh từ phía sau là der Berg."
+    display_answer: Die Zugspitze ist höher als der Brocken. Sie ist der höchste Berg in Deutschland.
+
+  - key: de:exercise:a2u05l3-tr-welche-insel
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-g-superlativ
+    prompt:
+      source_text: Hòn đảo nào đẹp nhất?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Welche Insel ist am schönsten?
+        - Welche Insel ist die schönste?
+        - Welche Insel ist die schönste Insel?
+        - Welches ist die schönste Insel?
+    known_wrong:
+      - answer: Welche Insel ist am schönste?
+        feedback_vi: "Sau am cần đuôi -en: am schönsten."
+        error_tag: adj_ending
+      - answer: Welche Insel ist schönste?
+        feedback_vi: "So sánh nhất sau sein dùng am …-sten (am schönsten) hoặc die schönste."
+        error_tag: superlativ_form
+      - answer: Welcher Insel ist am schönsten?
+        feedback_vi: "die Insel là giống cái: welche Insel."
+        error_tag: article
+    explanation:
+      vi: "nào = welche (die Insel, giống cái). Đẹp nhất sau sein: am schönsten, hoặc die schönste (ngầm hiểu Insel)."
+    display_answer: Welche Insel ist am schönsten?
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u05l3-wb-schoensten-strand
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-superlativ
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Buổi tối chúng tôi đi ra bãi biển đẹp nhất.\""
+      tokens:
+        - { id: t-strand, text: Strand }
+        - { id: t-sind, text: sind }
+        - { id: t-abend, text: Abend }
+        - { id: t-schoenste, text: schönste }
+        - { id: t-wir, text: wir }
+        - { id: t-gefahren, text: gefahren }
+        - { id: t-am, text: am }
+        - { id: t-zum, text: zum }
+        - { id: t-schoensten, text: schönsten }
+        - { id: t-haben, text: haben }
+    answer:
+      orders:
+        - [t-am, t-abend, t-sind, t-wir, t-zum, t-schoensten, t-strand, t-gefahren]
+        - [t-wir, t-sind, t-am, t-abend, t-zum, t-schoensten, t-strand, t-gefahren]
+        - [t-zum, t-schoensten, t-strand, t-sind, t-wir, t-am, t-abend, t-gefahren]
+    explanation:
+      vi: "zum = zu dem (Dativ) nên tính từ có đuôi -en: zum schönsten Strand. fahren đi với sein ở Perfekt: sind … gefahren."
+    display_answer: Am Abend sind wir zum schönsten Strand gefahren.
+
+  - key: de:exercise:a2u05l3-mcq-lesen-wolfgangsee
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u05-g-superlativ
+    prompt:
+      stem: "Đọc: \"Letzten Sommer waren wir drei Wochen in Österreich. Am besten hat mir der Wolfgangsee gefallen: Das Wasser war sauber und nicht so kalt wie in den Bergen. Am spannendsten war die Wanderung auf den höchsten Berg in der Gegend.\" Người viết thích nơi nào nhất?"
+      stem_lang: vi
+      options:
+        - { id: o1a, text: "Hồ Wolfgangsee.", lang: vi }
+        - { id: o2b, text: "Ngọn núi cao nhất trong vùng.", lang: vi }
+        - { id: o3c, text: "Những hồ nước lạnh trên núi.", lang: vi }
+        - { id: o4d, text: "Một thành phố ở Thụy Sĩ.", lang: vi }
+    answer:
+      correct_option_id: o1a
+    explanation:
+      vi: "Am besten hat mir der Wolfgangsee gefallen = tôi thích hồ Wolfgangsee nhất. Chuyến leo lên ngọn núi cao nhất là \"hấp dẫn nhất\" (am spannendsten), không phải nơi được thích nhất. die Wanderung = chuyến đi bộ đường dài."
+    display_answer: "Hồ Wolfgangsee."
+
+  - key: de:exercise:a2u05l3-mcq-schoenste-strand
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-adj-bestimmt
+    prompt:
+      stem: "Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c1a, text: Das ist der schönste Strand auf der Insel., lang: de }
+        - { id: c2b, text: Das ist der schönster Strand auf der Insel., lang: de }
+        - { id: c3c, text: Das ist der schönsten Strand auf der Insel., lang: de }
+        - { id: c4d, text: Das ist am schönste Strand auf der Insel., lang: de }
+    answer:
+      correct_option_id: c1a
+    explanation:
+      vi: "der … Strand là Nominativ giống đực → đuôi -e: der schönste Strand. -er là đuôi sau ein; -en dùng cho Akkusativ giống đực và Dativ; am chỉ đi với dạng -sten sau động từ."
+    display_answer: Das ist der schönste Strand auf der Insel.
+
+  - key: de:exercise:a2u05l3-tr-am-liebsten-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a1u06-g-gern-lieber-am-liebsten
+    prompt:
+      source_text: Am liebsten wandere ich durch den Wald zum Fluss.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi thích nhất là đi bộ qua rừng ra sông.
+        - Tôi thích nhất là đi bộ xuyên rừng ra sông.
+        - Tôi thích nhất là đi bộ qua rừng đến bờ sông.
+        - Tôi thích nhất là đi bộ qua rừng đến con sông.
+        - Điều tôi thích nhất là đi bộ qua rừng ra sông.
+        - Tôi thích đi bộ qua rừng ra sông nhất.
+        - Tôi thích nhất là đi bộ đường dài qua rừng ra sông.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi thích đi bộ qua sông vào rừng.
+        feedback_vi: "durch den Wald = qua rừng; zum Fluss = đến sông."
+        error_tag: meaning
+    explanation:
+      vi: "am liebsten + động từ = thích … nhất; durch den Wald = qua rừng (Akkusativ); zum Fluss = đến sông (Dativ)."
+    display_answer: Tôi thích nhất là đi bộ qua rừng ra sông.

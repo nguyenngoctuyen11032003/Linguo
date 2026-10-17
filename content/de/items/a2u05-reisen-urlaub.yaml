@@ -1,0 +1,1361 @@
+# Học liệu unit A2U05 "Du lịch và kỳ nghỉ" (Reisen und Urlaub), tiếng Đức A2.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: Präteritum, kỳ nghỉ =================
+  - key: de:item:a2u05-g-praeteritum-regelmaessig
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Präteritum (regelmäßig): machen → machte, wohnen → wohnte, arbeiten → arbeitete"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ có quy tắc ở Präteritum: gốc + -te + đuôi: ich machte, du machtest, er/sie/es machte, wir machten, ihr machtet, sie/Sie machten. Gốc tận cùng bằng -t hoặc -d thêm -ete: arbeitete, wartete, übernachtete. Präteritum chủ yếu dùng trong văn viết kể chuyện; khi nói, người Đức thường dùng Perfekt, trừ sein, haben và động từ khiếm khuyết."
+      examples:
+        - target: Letzten Sommer machten wir Urlaub an der Küste.
+          translation:
+            vi: Mùa hè năm ngoái chúng tôi đi nghỉ ở vùng biển.
+        - target: Ich buchte die Reise im Reisebüro.
+          translation:
+            vi: Tôi đặt chuyến đi ở văn phòng du lịch.
+        - target: Mein Bruder arbeitete damals in einem Hotel.
+          translation:
+            vi: Hồi đó anh trai tôi làm việc ở một khách sạn.
+      confusion:
+        vi: "Ngôi ich và er/sie/es giống nhau ở Präteritum (ich machte, er machte), không có -t như ở hiện tại (er macht)."
+
+  - key: de:item:a2u05-g-praeteritum-haeufig
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Präteritum (unregelmäßig): ging, kam, fuhr, sah, gab, nahm, fand, blieb, schrieb, las, aß, trank, rief, lief, flog"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ bất quy tắc (động từ mạnh) đổi nguyên âm gốc và không có -te: gehen → ging, kommen → kam, fahren → fuhr, sehen → sah, geben → gab, nehmen → nahm, finden → fand, bleiben → blieb, schreiben → schrieb, lesen → las, essen → aß, trinken → trank, rufen → rief, laufen → lief, fliegen → flog. Ngôi ich và er/sie/es không có đuôi (ich fuhr, er fuhr); wir và sie/Sie thêm -en (wir fuhren). Ở A2 bạn cần nhận ra các dạng này khi đọc và tìm lại nguyên thể."
+      examples:
+        - target: Im Mai flogen wir nach Mallorca.
+          translation:
+            vi: Tháng Năm chúng tôi bay sang Mallorca.
+        - target: Wir blieben eine Woche auf der Insel.
+          translation:
+            vi: Chúng tôi ở lại trên đảo một tuần.
+        - target: Am Abend gingen wir an den Strand und aßen Fisch.
+          translation:
+            vi: Buổi tối chúng tôi ra bãi biển và ăn cá.
+      confusion:
+        vi: "Không thêm -te vào động từ mạnh: fahren → fuhr (không phải fahrte), gehen → ging (không phải gehte)."
+
+  - key: de:item:a2u05-urlaub
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Urlaub, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ nghỉ, nghỉ phép (của người đi làm)
+      examples:
+        - target: Im Sommer machen wir zwei Wochen Urlaub in Italien.
+          translation:
+            vi: Mùa hè chúng tôi đi nghỉ hai tuần ở Ý.
+      confusion:
+        vi: "der Urlaub = kỳ nghỉ, ngày nghỉ phép của người đi làm (Urlaub machen, im Urlaub); die Ferien (Pl.) = kỳ nghỉ của trường học, đại học (Sommerferien)."
+
+  - key: de:item:a2u05-reise
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Reise, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến đi (thường là đi xa)
+      examples:
+        - target: Die Reise nach Wien hat sechs Stunden gedauert.
+          translation:
+            vi: Chuyến đi Viên mất sáu tiếng.
+        - target: Gute Reise!
+          translation:
+            vi: Chúc thượng lộ bình an!
+
+  - key: de:item:a2u05-koffer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Koffer, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: va li
+      examples:
+        - target: Mein Koffer ist zu schwer.
+          translation:
+            vi: Va li của tôi nặng quá.
+
+  - key: de:item:a2u05-packen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: packen
+      pos: động từ
+    back:
+      meaning:
+        vi: xếp (đồ), đóng gói
+      examples:
+        - target: Am Abend packte ich meinen Koffer.
+          translation:
+            vi: Buổi tối tôi xếp va li.
+      confusion:
+        vi: "Động từ có quy tắc: packte, hat gepackt. den Koffer packen = xếp đồ vào va li."
+
+  - key: de:item:a2u05-buchen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: buchen
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt (chuyến đi, vé, phòng)
+      examples:
+        - target: Wir buchten die Reise im Internet.
+          translation:
+            vi: Chúng tôi đặt chuyến đi qua mạng.
+      confusion:
+        vi: "Động từ có quy tắc: buchte, hat gebucht. buchen hay dùng cho chuyến đi, vé máy bay; reservieren hay dùng cho phòng, bàn ăn."
+
+  - key: de:item:a2u05-reisebuero
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Reisebüro, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn phòng du lịch, đại lý du lịch
+      examples:
+        - target: Im Reisebüro bekommt man viele Informationen.
+          translation:
+            vi: Ở văn phòng du lịch người ta nhận được nhiều thông tin.
+      confusion:
+        vi: "Từ ghép: die Reise + das Büro → das Reisebüro (giống theo từ cuối)."
+
+  - key: de:item:a2u05-strand
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Strand, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bãi biển, bãi cát
+      examples:
+        - target: Im Urlaub liegen wir jeden Tag am Strand.
+          translation:
+            vi: Trong kỳ nghỉ, ngày nào chúng tôi cũng nằm ở bãi biển.
+      confusion:
+        vi: "Số nhiều: die Strände. Ở đâu: am Strand; đi đâu: an den Strand."
+
+  - key: de:item:a2u05-meer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Meer, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: biển
+      examples:
+        - target: Im Sommer fahren wir ans Meer.
+          translation:
+            vi: Mùa hè chúng tôi đi biển.
+      confusion:
+        vi: "das Meer = biển; der See = hồ; die See (Sg.) cũng là biển, thường trong tên riêng: die Ostsee (biển Baltic), die Nordsee (biển Bắc)."
+
+  - key: de:item:a2u05-insel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Insel, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: hòn đảo
+      examples:
+        - target: Rügen ist eine Insel in der Ostsee.
+          translation:
+            vi: Rügen là một hòn đảo ở biển Baltic.
+      confusion:
+        vi: "Ở trên đảo: auf einer Insel (không dùng in)."
+
+  - key: de:item:a2u05-berg
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Berg, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: núi, ngọn núi
+      examples:
+        - target: Am Wochenende wandern wir in den Bergen.
+          translation:
+            vi: Cuối tuần chúng tôi đi bộ đường dài trên núi.
+      confusion:
+        vi: "Đi núi (vùng núi): in die Berge; ở trên núi: in den Bergen; lên một ngọn núi cụ thể: auf den Berg."
+
+  - key: de:item:a2u05-reisen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: reisen
+      pos: động từ
+    back:
+      meaning:
+        vi: đi du lịch, đi xa
+      examples:
+        - target: Meine Eltern reisen gern.
+          translation:
+            vi: Bố mẹ tôi thích đi du lịch.
+      confusion:
+        vi: "Động từ có quy tắc: reiste; Perfekt dùng sein vì là động từ chuyển động: Wir sind viel gereist."
+
+  - key: de:item:a2u05-uebernachten
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: übernachten
+      pos: động từ
+    back:
+      meaning:
+        vi: ngủ qua đêm, nghỉ lại (ở đâu đó)
+      examples:
+        - target: Wir übernachteten in einer kleinen Pension.
+          translation:
+            vi: Chúng tôi ngủ lại ở một nhà nghỉ nhỏ.
+      confusion:
+        vi: "Gốc tận cùng bằng -t nên Präteritum là übernachtete; über- không tách, Partizip II không có ge-: hat übernachtet."
+
+  - key: de:item:a2u05-rucksack
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Rucksack, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ba lô
+      examples:
+        - target: Für die Wanderung brauchst du einen Rucksack.
+          translation:
+            vi: Đi bộ đường dài thì bạn cần một cái ba lô.
+      confusion:
+        vi: "Số nhiều: die Rucksäcke."
+
+  - key: de:item:a2u05-sonnenbrille
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Sonnenbrille, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: kính râm
+      examples:
+        - target: Hast du deine Sonnenbrille eingepackt?
+          translation:
+            vi: Bạn đã bỏ kính râm vào túi chưa?
+      confusion:
+        vi: "Từ ghép: die Sonne + die Brille. die Brille là số ít dù chỉ một cặp kính: eine Sonnenbrille = một cái kính râm."
+
+  - key: de:item:a2u05-ferienwohnung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Ferienwohnung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: căn hộ cho thuê nghỉ dưỡng
+      examples:
+        - target: Wir mieteten eine Ferienwohnung direkt am Meer.
+          translation:
+            vi: Chúng tôi thuê một căn hộ nghỉ dưỡng ngay sát biển.
+
+  - key: de:item:a2u05-zelt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Zelt, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái lều
+      examples:
+        - target: Wir haben zwei Nächte im Zelt geschlafen.
+          translation:
+            vi: Chúng tôi ngủ lều hai đêm.
+      pronunciation_note:
+        vi: "z đầu từ đọc là \"ts\": Zelt ≈ \"tselt\"."
+
+  - key: de:item:a2u05-kueste
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Küste, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bờ biển, vùng ven biển
+      examples:
+        - target: An der Küste ist es im Sommer oft windig.
+          translation:
+            vi: Ở vùng ven biển mùa hè thường có gió.
+      confusion:
+        vi: "die Küste là cả dải đất ven biển; der Strand là bãi cát nơi bạn tắm biển."
+
+  # ================= bài 2: als, wenn, tham quan =================
+  - key: de:item:a2u05-g-als-temporal
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "als + Nebensatz: Als ich in Wien war, …"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "als (khi) dùng cho một sự việc xảy ra một lần hoặc một giai đoạn trong quá khứ: Als ich in Wien war …, Als ich ein Kind war … Động từ chia đứng cuối câu phụ; nếu câu phụ đứng đầu, động từ câu chính đứng ngay sau dấu phẩy."
+      examples:
+        - target: Als ich in Wien war, habe ich Schloss Schönbrunn besucht.
+          translation:
+            vi: Khi ở Viên, tôi đã đến thăm cung điện Schönbrunn.
+        - target: Als wir Kinder waren, wohnten wir in Hue.
+          translation:
+            vi: Hồi chúng tôi còn nhỏ, chúng tôi sống ở Huế.
+      confusion:
+        vi: "als (khi – quá khứ, một lần) ≠ wenn (mỗi khi, hoặc khi ở hiện tại/tương lai) ≠ wann (khi nào – câu hỏi)."
+
+  - key: de:item:a2u05-g-wenn-temporal
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "wenn, immer wenn, jedes Mal wenn: Wenn ich in Wien bin, …"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "wenn = mỗi khi (việc lặp lại, ở quá khứ hay hiện tại) hoặc = khi (một lần ở hiện tại, tương lai). Muốn nhấn mạnh sự lặp lại: immer wenn, jedes Mal wenn. Động từ chia đứng cuối câu phụ như với als."
+      examples:
+        - target: Jedes Mal wenn wir in Wien waren, besuchten wir die Altstadt.
+          translation:
+            vi: Mỗi lần ở Viên, chúng tôi đều đi dạo khu phố cổ.
+        - target: Wenn du nach Köln fährst, musst du den Dom sehen.
+          translation:
+            vi: Khi nào bạn đi Köln thì nhất định phải xem nhà thờ lớn.
+      confusion:
+        vi: "Quá khứ + một lần → als; mọi trường hợp khác (lặp lại, hiện tại, tương lai) → wenn."
+
+  - key: de:item:a2u05-sehenswuerdigkeit
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Sehenswürdigkeit, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm tham quan, danh thắng
+      examples:
+        - target: Welche Sehenswürdigkeiten gibt es in Dresden?
+          translation:
+            vi: Ở Dresden có những điểm tham quan nào?
+      confusion:
+        vi: "Gồm sehen (xem) + würdig (đáng) + -keit: nơi đáng xem. Danh từ đuôi -keit luôn là giống cái."
+
+  - key: de:item:a2u05-altstadt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Altstadt, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu phố cổ
+      examples:
+        - target: Die Altstadt von Salzburg ist sehr schön.
+          translation:
+            vi: Khu phố cổ của Salzburg rất đẹp.
+      confusion:
+        vi: "Số nhiều: die Altstädte."
+
+  - key: de:item:a2u05-schloss
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Schloss, ¨-er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lâu đài, cung điện
+      examples:
+        - target: Das Schloss liegt auf einem Berg über der Stadt.
+          translation:
+            vi: Lâu đài nằm trên một ngọn núi phía trên thành phố.
+      confusion:
+        vi: "Số nhiều: die Schlösser. das Schloss còn có nghĩa là ổ khóa."
+
+  - key: de:item:a2u05-bruecke
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Brücke, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây cầu
+      examples:
+        - target: Wir gingen über die alte Brücke in die Altstadt.
+          translation:
+            vi: Chúng tôi đi qua cây cầu cổ vào khu phố cổ.
+
+  - key: de:item:a2u05-turm
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Turm, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tòa tháp
+      examples:
+        - target: Vom Turm hat man einen tollen Blick auf die Stadt.
+          translation:
+            vi: Từ trên tháp nhìn ra thành phố rất đẹp.
+      confusion:
+        vi: "Số nhiều: die Türme."
+
+  - key: de:item:a2u05-fuehrung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Führung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến tham quan có người hướng dẫn
+      examples:
+        - target: Die Führung durch das Schloss dauert eine Stunde.
+          translation:
+            vi: Chuyến tham quan có hướng dẫn trong lâu đài kéo dài một tiếng.
+      confusion:
+        vi: "eine Führung machen = đi một tour có hướng dẫn; die Führung durch + Akk (durch die Altstadt)."
+
+  - key: de:item:a2u05-tourist
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Tourist, -en / die Touristin, -nen"
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách du lịch
+      examples:
+        - target: Im Sommer kommen viele Touristen nach Heidelberg.
+          translation:
+            vi: Mùa hè có nhiều khách du lịch đến Heidelberg.
+      confusion:
+        vi: "der Tourist thêm -en ở mọi cách trừ Nominativ số ít: Ich frage den Touristen. Ich helfe dem Touristen."
+
+  - key: de:item:a2u05-souvenir
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Souvenir, -s"
+      ipa: /zuvəˈniːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quà lưu niệm
+      examples:
+        - target: Als Souvenir habe ich eine Tasse gekauft.
+          translation:
+            vi: Tôi đã mua một cái cốc làm quà lưu niệm.
+      pronunciation_note:
+        vi: "Từ gốc Pháp, trọng âm ở âm tiết cuối; s đầu từ đọc gần như \"d\" nhẹ trong giọng Bắc."
+
+  - key: de:item:a2u05-beruehmt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: berühmt
+      pos: tính từ
+    back:
+      meaning:
+        vi: nổi tiếng
+      examples:
+        - target: Der Kölner Dom ist sehr berühmt.
+          translation:
+            vi: Nhà thờ lớn Köln rất nổi tiếng.
+      confusion:
+        vi: "berühmt für + Akk = nổi tiếng về: Wien ist berühmt für seine Kaffeehäuser."
+
+  - key: de:item:a2u05-dom
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Dom, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà thờ lớn (nhà thờ chính tòa)
+      examples:
+        - target: Der Dom steht mitten in der Altstadt.
+          translation:
+            vi: Nhà thờ lớn nằm giữa khu phố cổ.
+      confusion:
+        vi: "die Kirche là nhà thờ nói chung; der Dom là nhà thờ lớn, thường rất cổ và nổi tiếng."
+
+  - key: de:item:a2u05-denkmal
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "das Denkmal, ¨-er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tượng đài, đài tưởng niệm; di tích
+      examples:
+        - target: Vor dem Rathaus steht ein Denkmal.
+          translation:
+            vi: Trước tòa thị chính có một tượng đài.
+      confusion:
+        vi: "Số nhiều: die Denkmäler (dạng Denkmale cũng có trong từ điển)."
+
+  - key: de:item:a2u05-reisefuehrer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Reiseführer, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: sách hướng dẫn du lịch; hướng dẫn viên du lịch
+      examples:
+        - target: Im Reiseführer steht, dass der Turm sehr alt ist.
+          translation:
+            vi: Trong sách hướng dẫn du lịch có viết rằng tòa tháp rất cổ.
+      confusion:
+        vi: "Hai nghĩa: cuốn sách và người dẫn đoàn. Người dẫn đoàn là nữ: die Reiseführerin, -nen."
+
+  - key: de:item:a2u05-stadtrundfahrt
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Stadtrundfahrt, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến tham quan thành phố bằng xe
+      examples:
+        - target: Am ersten Tag haben wir eine Stadtrundfahrt mit dem Bus gemacht.
+          translation:
+            vi: Ngày đầu chúng tôi đi một vòng tham quan thành phố bằng xe buýt.
+      confusion:
+        vi: "Từ ghép: die Stadt + rund (vòng) + die Fahrt (chuyến đi bằng xe)."
+
+  - key: de:item:a2u05-eintritt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Eintritt, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: (phí) vào cửa
+      examples:
+        - target: Der Eintritt kostet zehn Euro, für Kinder ist er frei.
+          translation:
+            vi: Vé vào cửa giá mười euro, trẻ em được vào miễn phí.
+      confusion:
+        vi: "Eintritt frei = vào cửa miễn phí. Số nhiều rất ít dùng."
+
+  - key: de:item:a2u05-brunnen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Brunnen, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đài phun nước; cái giếng
+      examples:
+        - target: Wir treffen uns am Brunnen auf dem Marktplatz.
+          translation:
+            vi: Chúng ta gặp nhau ở đài phun nước trên quảng trường chợ.
+
+  - key: de:item:a2u05-hafen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hafen, ¨-"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bến cảng
+      examples:
+        - target: Am Abend gingen wir am Hafen spazieren.
+          translation:
+            vi: Buổi tối chúng tôi đi dạo ở bến cảng.
+      confusion:
+        vi: "Số nhiều: die Häfen. der Flughafen (sân bay) = cảng của máy bay."
+
+  # ================= bài 3: đuôi tính từ sau der, so sánh nhất, thiên nhiên =================
+  - key: de:item:a2u05-g-adj-bestimmt
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Adjektiv nach der/die/das: der schöne Strand, den schönen Strand, dem schönen Strand, die schönen Strände"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Sau der, die, das tính từ chỉ có hai đuôi. -e ở năm chỗ: Nominativ số ít cả ba giống (der schöne Strand, die schöne Insel, das schöne Tal) và Akkusativ giống cái, giống trung (die schöne Insel, das schöne Tal). Mọi chỗ còn lại là -en: Akkusativ giống đực, toàn bộ Dativ và số nhiều."
+      examples:
+        - target: Der breite Fluss fließt durch das grüne Tal.
+          translation:
+            vi: Con sông rộng chảy qua thung lũng xanh.
+        - target: Wir wanderten durch den dunklen Wald zum kleinen See.
+          translation:
+            vi: Chúng tôi đi bộ qua khu rừng tối đến cái hồ nhỏ.
+      confusion:
+        vi: "So với bảng sau ein: ein schöner Strand → der schöne Strand; ein schönes Tal → das schöne Tal."
+
+  - key: de:item:a2u05-g-superlativ
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Superlativ: am schönsten · der/die/das schönste … · am besten, am meisten, am liebsten, am höchsten, am nächsten"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Sau động từ: am + tính từ + -sten (Die Insel ist am schönsten). Trước danh từ: tính từ + -st- + đuôi theo bảng (der schönste Strand, den schönsten Strand). Sau -t, -d, -s, -ß, -z ở âm tiết mang trọng âm thêm -e-: am ältesten, am heißesten (riêng groß → am größten)."
+      examples:
+        - target: Die Zugspitze ist der höchste Berg in Deutschland.
+          translation:
+            vi: Zugspitze là ngọn núi cao nhất nước Đức.
+        - target: Der Rhein ist länger als der Main, aber die Donau ist am längsten.
+          translation:
+            vi: Sông Rhein dài hơn sông Main, nhưng sông Danube dài nhất.
+      confusion:
+        vi: "Dạng đặc biệt: gut → am besten, viel → am meisten, gern → am liebsten, hoch → am höchsten, nah → am nächsten."
+
+  - key: de:item:a2u05-landschaft
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Landschaft, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong cảnh, cảnh quan
+      examples:
+        - target: Die Landschaft in Bayern gefällt mir sehr.
+          translation:
+            vi: Tôi rất thích phong cảnh ở Bayern.
+      confusion:
+        vi: "Danh từ đuôi -schaft luôn là giống cái."
+
+  - key: de:item:a2u05-natur
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Natur (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiên nhiên
+      examples:
+        - target: Im Urlaub möchte ich viel in der Natur sein.
+          translation:
+            vi: Kỳ nghỉ này tôi muốn ở giữa thiên nhiên thật nhiều.
+
+  - key: de:item:a2u05-wald
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Wald, ¨-er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: rừng
+      examples:
+        - target: Am Sonntag gehen wir im Wald spazieren.
+          translation:
+            vi: Chủ nhật chúng tôi đi dạo trong rừng.
+      confusion:
+        vi: "Số nhiều: die Wälder."
+
+  - key: de:item:a2u05-fluss
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Fluss, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: con sông
+      examples:
+        - target: Der Fluss ist hier nicht sehr tief.
+          translation:
+            vi: Con sông ở đây không sâu lắm.
+      confusion:
+        vi: "Số nhiều: die Flüsse."
+
+  - key: de:item:a2u05-tal
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Tal, ¨-er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thung lũng
+      examples:
+        - target: Das Dorf liegt in einem schönen Tal.
+          translation:
+            vi: Ngôi làng nằm trong một thung lũng đẹp.
+      confusion:
+        vi: "Số nhiều: die Täler."
+
+  - key: de:item:a2u05-hoch
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "hoch (höher, am höchsten)"
+      pos: tính từ
+    back:
+      meaning:
+        vi: cao
+      examples:
+        - target: Der Berg ist hoch. Das ist ein hoher Berg.
+          translation:
+            vi: Ngọn núi cao. Đó là một ngọn núi cao.
+      confusion:
+        vi: "hoch mất chữ c khi có đuôi: der hohe Berg, ein hoher Turm. So sánh: höher, am höchsten."
+
+  - key: de:item:a2u05-tief
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: tief
+      pos: tính từ
+    back:
+      meaning:
+        vi: sâu
+      examples:
+        - target: Der See ist hier zehn Meter tief.
+          translation:
+            vi: Ở đây hồ sâu mười mét.
+
+  - key: de:item:a2u05-breit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: breit
+      pos: tính từ
+    back:
+      meaning:
+        vi: rộng (bề ngang)
+      examples:
+        - target: Die Donau ist in Wien sehr breit.
+          translation:
+            vi: Ở Viên, sông Danube rất rộng.
+      confusion:
+        vi: "breit = rộng bề ngang (sông, đường); weit = xa. So sánh nhất: am breitesten."
+
+  - key: de:item:a2u05-wunderbar
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wunderbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: tuyệt vời
+      examples:
+        - target: Die Aussicht vom Turm war wunderbar.
+          translation:
+            vi: Quang cảnh nhìn từ tháp thật tuyệt vời.
+
+  - key: de:item:a2u05-spannend
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: spannend
+      pos: tính từ
+    back:
+      meaning:
+        vi: hấp dẫn, gay cấn, thú vị
+      examples:
+        - target: Die Führung durch die alte Burg war sehr spannend.
+          translation:
+            vi: Chuyến tham quan có hướng dẫn trong tòa thành cổ rất hấp dẫn.
+      confusion:
+        vi: "So sánh nhất: am spannendsten (âm cuối -end không mang trọng âm nên không thêm -e-)."
+
+  - key: de:item:a2u05-gebirge
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "das Gebirge, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: dãy núi, vùng núi
+      examples:
+        - target: Im Sommer wandern wir gern im Gebirge.
+          translation:
+            vi: Mùa hè chúng tôi thích đi bộ đường dài ở vùng núi.
+      confusion:
+        vi: "ins Gebirge fahren = in die Berge fahren (đi lên vùng núi)."
+
+  - key: de:item:a2u05-gipfel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Gipfel, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đỉnh núi
+      examples:
+        - target: Nach drei Stunden waren wir endlich auf dem Gipfel.
+          translation:
+            vi: Sau ba tiếng, cuối cùng chúng tôi đã lên tới đỉnh núi.
+
+  - key: de:item:a2u05-wasserfall
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Wasserfall, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thác nước
+      examples:
+        - target: In der Nähe von Da Lat gibt es viele Wasserfälle.
+          translation:
+            vi: Gần Đà Lạt có nhiều thác nước.
+      confusion:
+        vi: "Từ ghép: das Wasser + der Fall → der Wasserfall; số nhiều die Wasserfälle."
+
+  - key: de:item:a2u05-himmel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Himmel, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bầu trời
+      examples:
+        - target: Der Himmel war blau, und es war warm.
+          translation:
+            vi: Bầu trời xanh và trời ấm.
+      confusion:
+        vi: "am Himmel = trên bầu trời (Wo?)."
+
+  - key: de:item:a2u05-gegend
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Gegend, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: vùng, khu vực (quanh đâu đó)
+      examples:
+        - target: In der Gegend gibt es viele Seen.
+          translation:
+            vi: Vùng này có nhiều hồ.
+
+  - key: de:item:a2u05-steil
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: steil
+      pos: tính từ
+    back:
+      meaning:
+        vi: dốc
+      examples:
+        - target: Der Weg zum Gipfel ist sehr steil.
+          translation:
+            vi: Con đường lên đỉnh núi rất dốc.
+
+  - key: de:item:a2u05-huegel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hügel, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngọn đồi
+      examples:
+        - target: Hinter dem Dorf gibt es grüne Hügel.
+          translation:
+            vi: Phía sau ngôi làng có những ngọn đồi xanh.
+      confusion:
+        vi: "der Hügel thấp hơn der Berg."
+
+  - key: de:item:a2u05-wiese
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Wiese, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bãi cỏ, đồng cỏ
+      examples:
+        - target: Wir machten ein Picknick auf der Wiese.
+          translation:
+            vi: Chúng tôi đi dã ngoại trên bãi cỏ.
+      confusion:
+        vi: "auf der Wiese (Wo?), auf die Wiese (Wohin?)."
+
+  # ================= bài 4: giới từ du lịch, khách sạn =================
+  - key: de:item:a2u05-g-reise-praepositionen
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Richtung und Ort: ans Meer / am Meer · in die Berge / in den Bergen · auf eine Insel / auf einer Insel · nach Spanien / in Spanien · in die Schweiz / in der Schweiz · zu Freunden / bei Freunden"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Đi đâu (Wohin?) dùng an/in/auf + Akkusativ, nước và thành phố không mạo từ dùng nach, đến nhà ai dùng zu; ở đâu (Wo?) dùng an/in/auf + Dativ, in + tên nước/thành phố, ở nhà ai dùng bei. an cho bờ nước (Meer, See, Strand), in cho vùng núi và nước có mạo từ, auf cho đảo."
+      examples:
+        - target: Im Sommer fahren wir ans Meer, im Winter in die Berge.
+          translation:
+            vi: Mùa hè chúng tôi đi biển, mùa đông lên núi.
+        - target: Letztes Jahr waren wir bei Freunden in der Schweiz.
+          translation:
+            vi: Năm ngoái chúng tôi ở nhà bạn bè ở Thụy Sĩ.
+        - target: Wir waren zwei Wochen auf einer Insel in Griechenland.
+          translation:
+            vi: Chúng tôi đã ở hai tuần trên một hòn đảo ở Hy Lạp.
+      confusion:
+        vi: "Đảo có tên riêng thường dùng nach (nach Mallorca, nach Rügen), ở đó thì auf (auf Mallorca). am Meer = ở bên biển; im Meer = ở dưới nước biển (đang bơi)."
+
+  - key: de:item:a2u05-einzelzimmer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Einzelzimmer, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng đơn (một người)
+      examples:
+        - target: Ein Einzelzimmer kostet 70 Euro pro Nacht.
+          translation:
+            vi: Một phòng đơn giá 70 euro mỗi đêm.
+
+  - key: de:item:a2u05-doppelzimmer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Doppelzimmer, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng đôi (hai người)
+      examples:
+        - target: Haben Sie noch ein Doppelzimmer frei?
+          translation:
+            vi: Anh/chị còn phòng đôi trống không?
+
+  - key: de:item:a2u05-rezeption
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Rezeption, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: quầy lễ tân
+      examples:
+        - target: Den Schlüssel bekommen Sie an der Rezeption.
+          translation:
+            vi: Ông/bà nhận chìa khóa ở quầy lễ tân.
+      pronunciation_note:
+        vi: "-tion đọc là \"tsi-ôn\", trọng âm ở âm tiết cuối: Re-zep-TSION."
+
+  - key: de:item:a2u05-uebernachtung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Übernachtung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đêm nghỉ, lượt ngủ lại (ở khách sạn)
+      examples:
+        - target: Eine Übernachtung mit Frühstück kostet 85 Euro.
+          translation:
+            vi: Một đêm nghỉ kèm bữa sáng giá 85 euro.
+      confusion:
+        vi: "Danh từ của übernachten; danh từ có hậu tố -ung là giống cái."
+
+  - key: de:item:a2u05-halbpension
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Halbpension (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: gói phòng kèm bữa sáng và bữa tối
+      examples:
+        - target: Wir nehmen das Zimmer mit Halbpension.
+          translation:
+            vi: Chúng tôi lấy phòng kèm bữa sáng và bữa tối.
+      confusion:
+        vi: "Halbpension = bữa sáng + bữa tối; Vollpension = ba bữa; nur Frühstück = chỉ bữa sáng."
+
+  - key: de:item:a2u05-reservieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: reservieren
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt trước (phòng, bàn)
+      examples:
+        - target: Ich habe ein Zimmer für zwei Nächte reserviert.
+          translation:
+            vi: Tôi đã đặt trước một phòng cho hai đêm.
+      confusion:
+        vi: "Động từ -ieren: Partizip II không có ge-: hat reserviert."
+
+  - key: de:item:a2u05-beschwerde
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Beschwerde, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời phàn nàn, khiếu nại
+      examples:
+        - target: Ich habe eine Beschwerde. Das Zimmer ist nicht sauber.
+          translation:
+            vi: Tôi muốn phàn nàn. Phòng không sạch.
+
+  - key: de:item:a2u05-sich-beschweren
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "sich beschweren (bei + Dat., über + Akk.)"
+      pos: động từ
+    back:
+      meaning:
+        vi: phàn nàn, khiếu nại (với ai, về việc gì)
+      examples:
+        - target: Ich möchte mich über das Zimmer beschweren.
+          translation:
+            vi: Tôi muốn phàn nàn về căn phòng.
+      confusion:
+        vi: "Phản thân với Akkusativ: ich beschwere mich, du beschwerst dich. Perfekt: hat sich beschwert (be- không có ge-)."
+
+  - key: de:item:a2u05-kaputt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: kaputt
+      pos: tính từ
+    back:
+      meaning:
+        vi: hỏng
+      examples:
+        - target: Der Fernseher in meinem Zimmer ist kaputt.
+          translation:
+            vi: Ti vi trong phòng tôi bị hỏng.
+
+  - key: de:item:a2u05-funktionieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: funktionieren
+      pos: động từ
+    back:
+      meaning:
+        vi: hoạt động, chạy (máy móc)
+      examples:
+        - target: Leider funktioniert das WLAN nicht.
+          translation:
+            vi: Tiếc là wifi không vào được.
+      confusion:
+        vi: "Câu phàn nàn lịch sự hay dùng: Leider funktioniert … nicht."
+
+  - key: de:item:a2u05-klimaanlage
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Klimaanlage, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy điều hòa
+      examples:
+        - target: Im Zimmer gibt es leider keine Klimaanlage.
+          translation:
+            vi: Tiếc là trong phòng không có điều hòa.
+      confusion:
+        vi: "Từ ghép: das Klima + die Anlage (thiết bị) → die Klimaanlage."
+
+  - key: de:item:a2u05-vollpension
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Vollpension (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: gói phòng kèm cả ba bữa
+      examples:
+        - target: Mit Vollpension bekommen Sie auch ein Mittagessen.
+          translation:
+            vi: Với gói ba bữa, ông/bà có cả bữa trưa.
+
+  - key: de:item:a2u05-blick
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Blick, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tầm nhìn, cái nhìn
+      examples:
+        - target: Ich hätte gern ein Zimmer mit Blick aufs Meer.
+          translation:
+            vi: Tôi muốn một phòng nhìn ra biển.
+      confusion:
+        vi: "ein Zimmer mit Blick auf + Akk: mit Blick aufs Meer, mit Blick auf den See."
+
+  - key: de:item:a2u05-reservierung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Reservierung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc đặt chỗ trước
+      examples:
+        - target: Ich habe eine Reservierung auf den Namen Nguyen.
+          translation:
+            vi: Tôi có đặt phòng trước dưới tên Nguyễn.
+
+  - key: de:item:a2u05-licht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Licht, -er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ánh sáng; đèn
+      examples:
+        - target: Das Licht im Bad funktioniert nicht.
+          translation:
+            vi: Đèn trong phòng tắm không sáng.
+      confusion:
+        vi: "das Licht anmachen/ausmachen = bật/tắt đèn."
+
+  - key: de:item:a2u05-anreisen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: anreisen
+      pos: động từ
+    back:
+      meaning:
+        vi: đến nơi (bắt đầu kỳ ở khách sạn)
+      examples:
+        - target: Wir reisen am Freitag an und am Montag ab.
+          translation:
+            vi: Chúng tôi đến vào thứ Sáu và rời đi vào thứ Hai.
+      confusion:
+        vi: "Động từ tách, Perfekt với sein: Wir sind am Freitag angereist."
+
+  - key: de:item:a2u05-abreisen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abreisen
+      pos: động từ
+    back:
+      meaning:
+        vi: rời đi, trả phòng ra về
+      examples:
+        - target: Wann reisen Sie ab? – Am Sonntag.
+          translation:
+            vi: Khi nào ông/bà rời đi? – Chủ nhật.
+      confusion:
+        vi: "Động từ tách, Perfekt với sein: Sie ist gestern abgereist."

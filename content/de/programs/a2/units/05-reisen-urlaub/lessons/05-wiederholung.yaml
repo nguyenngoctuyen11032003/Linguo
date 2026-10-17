@@ -1,0 +1,437 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u05-wiederholung
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập – bưu thiếp, blog kỳ nghỉ (Wiederholung)
+objectives:
+  - vi: Đọc blog du lịch viết ở Präteritum và tìm thông tin chính.
+  - vi: Viết tin nhắn ngắn khoảng 20–30 từ cho bạn từ nơi nghỉ (dạng giống Goethe A2 Schreiben Teil 1).
+  - vi: Kể về "chuyến đi đẹp nhất" với als, so sánh nhất và Perfekt.
+  - vi: Ôn Präteritum, als/wenn, đuôi tính từ sau der/die/das, so sánh nhất và giới từ du lịch.
+estimated_minutes: 22
+skills: [reading, writing, speaking]
+prerequisites: [de:lesson:a2u05-im-hotel]
+items:
+  - item: de:item:a2u05-g-praeteritum-regelmaessig
+    role: reuse
+  - item: de:item:a2u05-g-praeteritum-haeufig
+    role: reuse
+  - item: de:item:a2u05-g-als-temporal
+    role: reuse
+  - item: de:item:a2u05-g-wenn-temporal
+    role: reuse
+  - item: de:item:a2u05-g-adj-bestimmt
+    role: reuse
+  - item: de:item:a2u05-g-superlativ
+    role: reuse
+  - item: de:item:a2u05-g-reise-praepositionen
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-sein
+    role: reuse
+  - item: de:item:a2u01-g-erzaehl-adverbien
+    role: reuse
+  - item: de:item:a2u05-ferienwohnung
+    role: reuse
+  - item: de:item:a2u05-strand
+    role: reuse
+  - item: de:item:a2u05-berg
+    role: reuse
+  - item: de:item:a2u05-gipfel
+    role: reuse
+  - item: de:item:a2u05-souvenir
+    role: reuse
+  - item: de:item:a2u05-fuehrung
+    role: reuse
+  - item: de:item:a2u05-halbpension
+    role: reuse
+  - item: de:item:a2u05-doppelzimmer
+    role: reuse
+  - item: de:item:a2u05-blick
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Bài này ôn cả unit qua ba việc: đọc blog và bưu thiếp du lịch, viết tin nhắn ngắn cho bạn từ nơi nghỉ, kể về chuyến đi đẹp nhất của bạn."
+  - type: explain
+    text:
+      vi: "Đọc blog du lịch: blog và truyện thường viết ở Präteritum. Gặp dạng như fuhr, ging, aß, hãy nghĩ tới nguyên thể (fahren, gehen, essen); với dạng có -te như buchte, wohnte, bỏ -te là ra gốc. Trước khi đọc, xem câu hỏi cần thông tin gì: nơi chốn, thời gian hay ý kiến."
+  - type: explain
+    text:
+      vi: "Tin nhắn cho bạn (dạng giống Goethe A2 Schreiben Teil 1): khoảng 20–30 từ và trả lời đủ ba ý đề bài cho, ví dụ: bạn đang ở đâu, thời tiết và chỗ ở thế nào, khi nào về. Dùng du, mở đầu bằng Hallo + tên, kết bằng Liebe Grüße hoặc Bis bald. Số từ và cách chấm cụ thể theo đề mẫu hiện hành của Goethe-Institut, có thể thay đổi."
+  - type: explain
+    text:
+      vi: "Kể chuyến đi đẹp nhất: mở đầu bằng thời gian (Letztes Jahr …, Als ich 18 war, …), kể theo trình tự với zuerst, dann, danach (nhớ đảo động từ lên vị trí 2) và kết bằng so sánh nhất: Am schönsten war … / Das war meine schönste Reise."
+  - type: explain
+    text:
+      vi: "Khi nói, bạn thường kể bằng Perfekt: động từ chuyển động (fahren, fliegen, gehen) và bleiben dùng sein: Wir sind nach Wien gefahren. Wir sind eine Woche geblieben. Với sein, haben và động từ khiếm khuyết, Präteritum vẫn tự nhiên: Das Wetter war super."
+  - type: deep_explain
+    text:
+      vi: "Trong tin nhắn thân mật, người Đức hay viết Liebe Grüße hoặc viết tắt LG, nhưng trong bài thi nên viết đầy đủ. Danh từ vẫn phải viết hoa, kể cả trong tin nhắn. Nếu đề hỏi ba ý, mỗi ý một câu là đủ; đừng kể quá dài. Bưu thiếp thường mở bằng Liebe …/Lieber … (Liebe Oma, Lieber Jonas) và câu quen thuộc Viele Grüße aus … (lời chào từ …)."
+  - type: example
+    target: "Hallo Lena, viele Grüße aus Rügen! Das Wetter ist super, wir sind jeden Tag am Strand. Unsere Ferienwohnung ist klein, aber gemütlich. Am Samstag kommen wir zurück. Liebe Grüße, Minh"
+    target_lang: de
+    translation:
+      vi: "Chào Lena, gửi lời chào từ Rügen! Thời tiết tuyệt lắm, ngày nào bọn mình cũng ra bãi biển. Căn hộ nghỉ dưỡng nhỏ nhưng ấm cúng. Thứ Bảy bọn mình về. Thân, Minh"
+    note:
+      vi: "Khoảng 30 từ, đủ ba ý: thời tiết và hoạt động, chỗ ở, khi nào về. Viết cho bạn nên dùng giọng thân mật."
+  - type: example
+    target: "Im August flogen wir nach Mallorca. Wir wohnten in einem kleinen Hotel direkt am Meer. Jeden Morgen gingen wir an den Strand."
+    target_lang: de
+    translation:
+      vi: "Tháng Tám chúng tôi bay sang Mallorca. Chúng tôi ở một khách sạn nhỏ ngay sát biển. Sáng nào chúng tôi cũng ra bãi biển."
+    note:
+      vi: "Blog viết ở Präteritum: flogen (fliegen), wohnten (wohnen), gingen (gehen)."
+  - type: example
+    target: "Meine schönste Reise war eine Reise nach Sapa. Als ich 20 war, bin ich mit Freunden in die Berge gefahren."
+    target_lang: de
+    translation:
+      vi: "Chuyến đi đẹp nhất của tôi là chuyến đi Sa Pa. Năm 20 tuổi, tôi đã đi lên núi cùng bạn bè."
+    note:
+      vi: "meine schönste Reise: sau meine (Nominativ giống cái) đuôi -e; als + war cho một lần trong quá khứ; fahren dùng sein ở Perfekt."
+  - type: example
+    target: "Zuerst sind wir durch die Altstadt gegangen, dann haben wir eine Führung im Schloss gemacht."
+    target_lang: de
+    translation:
+      vi: "Đầu tiên chúng tôi đi bộ qua khu phố cổ, sau đó đi một tour có hướng dẫn trong lâu đài."
+    note:
+      vi: "zuerst, dann đứng đầu → động từ ngay sau: sind wir, haben wir."
+  - type: common_mistake
+    wrong: Gestern wir sind ans Meer gefahren.
+    right: Gestern sind wir ans Meer gefahren.
+    target_lang: de
+    note:
+      vi: "Trạng từ đứng đầu → động từ ở vị trí 2, chủ ngữ sau động từ."
+  - type: common_mistake
+    wrong: Wir haben nach Mallorca geflogen.
+    right: Wir sind nach Mallorca geflogen.
+    target_lang: de
+    note:
+      vi: "fliegen là động từ chuyển động: Perfekt với sein."
+  - type: common_mistake
+    wrong: Die Insel war am schönste.
+    right: Die Insel war am schönsten.
+    target_lang: de
+    note:
+      vi: "Sau am, so sánh nhất có đuôi -en."
+  - type: summary
+    points:
+      - vi: "Blog, truyện: Präteritum (buchte, wohnte; fuhr, ging, blieb)."
+      - vi: "Tin nhắn cho bạn: Hallo …, ba ý, Liebe Grüße – khoảng 20–30 từ."
+      - vi: "als: một lần trong quá khứ; wenn: mỗi khi, hoặc hiện tại/tương lai."
+      - vi: "der schöne Strand, den schönen Strand; am schönsten, der schönste."
+      - vi: "ans Meer/am Meer, in die Berge/in den Bergen, auf eine Insel/auf einer Insel."
+      - vi: "Kể khi nói: Perfekt; fahren, fliegen, gehen, bleiben dùng sein."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a2u05l5-mcq-lesen-mallorca
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-g-praeteritum-haeufig
+    prompt:
+      stem: "Đọc blog: \"Im August flogen wir nach Mallorca. Wir wohnten in einem kleinen Hotel direkt am Meer. Am ersten Tag regnete es, aber danach war das Wetter jeden Tag super.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a1a, text: "Họ bay đến Mallorca và ở một khách sạn nhỏ sát biển.", lang: vi }
+        - { id: a2b, text: "Họ đi tàu đến Mallorca và ở một khách sạn nhỏ sát biển.", lang: vi }
+        - { id: a3c, text: "Trời mưa suốt cả kỳ nghỉ.", lang: vi }
+        - { id: a4d, text: "Khách sạn của họ ở trên núi.", lang: vi }
+    answer:
+      correct_option_id: a1a
+    explanation:
+      vi: "flogen = fliegen (bay); wohnten … direkt am Meer = ở ngay sát biển. Chỉ ngày đầu trời mưa (am ersten Tag regnete es), sau đó thời tiết đẹp."
+    display_answer: "Họ bay đến Mallorca và ở một khách sạn nhỏ sát biển."
+
+  - key: de:exercise:a2u05l5-mcq-lesen-gipfel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-gipfel
+    prompt:
+      stem: "Đọc blog: \"Am Mittwoch machten wir einen Ausflug in die Berge. Wir nahmen den Bus bis zu einem kleinen Dorf und liefen dann zwei Stunden bis zum Gipfel. Die Aussicht war wunderbar!\" Họ lên đỉnh núi bằng cách nào?"
+      stem_lang: vi
+      options:
+        - { id: b1a, text: "Đi xe buýt đến một ngôi làng nhỏ rồi đi bộ hai tiếng.", lang: vi }
+        - { id: b2b, text: "Đi xe buýt thẳng lên đỉnh núi.", lang: vi }
+        - { id: b3c, text: "Đi taxi đến một ngôi làng nhỏ rồi đi bộ hai tiếng.", lang: vi }
+        - { id: b4d, text: "Đi bộ cả ngày từ khách sạn.", lang: vi }
+    answer:
+      correct_option_id: b1a
+    explanation:
+      vi: "nahmen den Bus = nehmen (đi xe buýt) bis zu einem kleinen Dorf = đến một ngôi làng nhỏ; liefen = laufen (đi bộ) zwei Stunden bis zum Gipfel = hai tiếng lên tới đỉnh."
+    display_answer: "Đi xe buýt đến một ngôi làng nhỏ rồi đi bộ hai tiếng."
+
+  - key: de:exercise:a2u05l5-mcq-lesen-postkarte
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-g-superlativ
+    prompt:
+      stem: "Đọc bưu thiếp: \"Liebe Oma, viele Grüße aus Wien! Gestern haben wir eine Führung durch das Schloss gemacht. Am besten hat mir der große Garten gefallen. Morgen fahren wir weiter nach Salzburg. Bis bald! Deine Linh\" – Câu \"Linh thích nhất khu vườn lớn\" đúng (richtig) hay sai (falsch)?"
+      stem_lang: vi
+      options:
+        - { id: c1a, text: Richtig, lang: de }
+        - { id: c2b, text: Falsch, lang: de }
+    answer:
+      correct_option_id: c1a
+    explanation:
+      vi: "Am besten hat mir der große Garten gefallen = khu vườn lớn là thứ tôi thích nhất (gut → am besten; der große Garten là chủ ngữ của gefallen)."
+    display_answer: Richtig
+
+  - key: de:exercise:a2u05l5-mcq-lesen-hotel-preis
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u05-halbpension
+    prompt:
+      stem: "Đọc quảng cáo: \"Hotel Seeblick – Doppelzimmer mit Frühstück: 89 Euro pro Nacht. Halbpension: plus 20 Euro pro Person und Nacht. Alle Zimmer mit Balkon und Blick auf den See.\" Hai người ở phòng đôi một đêm, có Halbpension, trả bao nhiêu?"
+      stem_lang: vi
+      options:
+        - { id: d1a, text: 129 euro, lang: vi }
+        - { id: d2b, text: 109 euro, lang: vi }
+        - { id: d3c, text: 89 euro, lang: vi }
+        - { id: d4d, text: 178 euro, lang: vi }
+    answer:
+      correct_option_id: d1a
+    explanation:
+      vi: "Phòng đôi kèm bữa sáng 89 euro một đêm; Halbpension thêm 20 euro mỗi người mỗi đêm: 89 + 2 × 20 = 129 euro."
+    display_answer: 129 euro
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a2u05l5-listen-anna-berge
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-g-reise-praepositionen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo Tuan, hier ist Anna. Wir sind gerade in den Bergen. Das Wetter ist schlecht, es regnet seit gestern. Wir kommen schon am Freitag zurück.
+      options:
+        - { id: e1a, text: "Anna đang ở trên núi; trời mưa từ hôm qua; họ sẽ về sớm, vào thứ Sáu.", lang: vi }
+        - { id: e2b, text: "Anna đang ở biển; trời mưa từ hôm qua; họ sẽ về vào thứ Sáu.", lang: vi }
+        - { id: e3c, text: "Anna đang ở trên núi; trời đẹp; họ sẽ về vào thứ Sáu.", lang: vi }
+        - { id: e4d, text: "Anna đang ở trên núi; trời mưa từ hôm qua; họ sẽ về vào thứ Bảy.", lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "in den Bergen = ở trên núi (Wo? → Dativ); es regnet seit gestern = mưa từ hôm qua; schon am Freitag = sớm, ngay thứ Sáu."
+    display_answer: "Anna đang ở trên núi; trời mưa từ hôm qua; họ sẽ về sớm, vào thứ Sáu."
+
+  - key: de:exercise:a2u05l5-listen-ostsee
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-g-als-temporal
+    prompt:
+      audio_asset_id: null
+      fallback_text: Als ich ein Kind war, fuhren wir jeden Sommer zu meinen Großeltern an die Ostsee.
+      options:
+        - { id: f1a, text: "Hồi nhỏ, mùa hè nào người nói cũng đến nhà ông bà ở biển Baltic.", lang: vi }
+        - { id: f2b, text: "Mùa hè này người nói sẽ đến nhà ông bà ở biển Baltic.", lang: vi }
+        - { id: f3c, text: "Hồi nhỏ, người nói chỉ một lần đến nhà ông bà ở biển Baltic.", lang: vi }
+        - { id: f4d, text: "Hồi nhỏ, mùa hè nào ông bà cũng đến thăm người nói.", lang: vi }
+    answer:
+      correct_option_id: f1a
+    explanation:
+      vi: "Als ich ein Kind war = hồi tôi còn nhỏ (một giai đoạn trong quá khứ); fuhren wir jeden Sommer = mùa hè nào chúng tôi cũng đi; zu meinen Großeltern an die Ostsee = đến ông bà ở biển Baltic."
+    display_answer: "Hồi nhỏ, mùa hè nào người nói cũng đến nhà ông bà ở biển Baltic."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u05l5-fill-sms-gruesse
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-g-reise-praepositionen
+    prompt:
+      template: "Hallo Mia, viele Grüße {{b1}} Hamburg! Wir sind seit Montag hier und übernachten {{b2}} Freunden zu Hause. Am Sonntag fahren wir {{b3}} Hause. Liebe {{b4}}, Lan"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+        - { id: b4, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [aus]
+        b2: [bei]
+        b3: [nach]
+        b4: [Grüße]
+    known_wrong:
+      - answer: zu
+        feedback_vi: "Về nhà (đi đâu) là nach Hause; zu Hause là ở nhà. Ở nhà ai thì dùng bei."
+        error_tag: preposition
+      - answer: Gruß
+        feedback_vi: "Câu chào cuối thư dùng số nhiều: Liebe Grüße."
+        error_tag: plural_form
+    explanation:
+      vi: "Grüße aus + nơi chốn (lời chào từ …); bei Freunden = ở nhà bạn bè; nach Hause = về nhà; Liebe Grüße = thân (câu chào cuối)."
+    display_answer: "Hallo Mia, viele Grüße aus Hamburg! Wir sind seit Montag hier und übernachten bei Freunden zu Hause. Am Sonntag fahren wir nach Hause. Liebe Grüße, Lan"
+
+  - key: de:exercise:a2u05l5-fill-schoenste-reise
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-adj-bestimmt
+    prompt:
+      template: "Unsere {{b1}} (schön) Reise war die Reise nach Da Lat. Damals {{b2}} (wohnen) wir in einem Hotel am See. Am {{b3}} (gut) hat mir der {{b4}} (groß) Blumenmarkt gefallen."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 7 }
+        - { id: b4, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [schönste]
+        b2: [wohnten]
+        b3: [besten]
+        b4: [große]
+    known_wrong:
+      - answer: schönsten
+        feedback_vi: "Unsere … Reise là Nominativ giống cái → đuôi -e: unsere schönste Reise."
+        error_tag: adj_ending
+      - answer: wohnen
+        feedback_vi: "Damals chỉ quá khứ: Präteritum wohnten."
+        error_tag: tense
+      - answer: gutesten
+        feedback_vi: "gut có dạng đặc biệt: am besten."
+        error_tag: superlativ_form
+      - answer: großen
+        feedback_vi: "der Blumenmarkt là chủ ngữ (Nominativ) → der große Blumenmarkt."
+        error_tag: adj_ending
+      - answer: großer
+        feedback_vi: "Sau der chỉ dùng -e ở Nominativ: der große Blumenmarkt."
+        error_tag: adj_ending
+    explanation:
+      vi: "unsere schönste Reise (Nominativ giống cái → -e); damals → Präteritum wohnten; gut → am besten; der große Blumenmarkt (chủ ngữ của gefallen, Nominativ → -e)."
+    display_answer: "Unsere schönste Reise war die Reise nach Da Lat. Damals wohnten wir in einem Hotel am See. Am besten hat mir der große Blumenmarkt gefallen."
+
+  - key: de:exercise:a2u05l5-tr-souvenir-wien
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-als-temporal
+    prompt:
+      source_text: Khi tôi ở Viên, tôi đã mua một món quà lưu niệm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Als ich in Wien war, habe ich ein Souvenir gekauft.
+        - Als ich in Wien war, kaufte ich ein Souvenir.
+        - Ich habe ein Souvenir gekauft, als ich in Wien war.
+        - Ich kaufte ein Souvenir, als ich in Wien war.
+    known_wrong:
+      - answer: Wenn ich in Wien war, habe ich ein Souvenir gekauft.
+        feedback_vi: "Một lần trong quá khứ → als."
+        error_tag: conjunction_als_wenn
+      - answer: Als ich in Wien war, ich habe ein Souvenir gekauft.
+        feedback_vi: "Câu phụ đứng đầu → động từ câu chính ngay sau dấu phẩy: …, habe ich …"
+        error_tag: verb_position
+      - answer: Als ich in Wien war, habe ich einen Souvenir gekauft.
+        feedback_vi: "das Souvenir là giống trung: ein Souvenir."
+        error_tag: article
+    explanation:
+      vi: "Một lần trong quá khứ → als, war ở cuối câu phụ. Câu chính khi nói dùng Perfekt (habe … gekauft) hoặc Präteritum (kaufte), động từ ngay sau dấu phẩy."
+    display_answer: Als ich in Wien war, habe ich ein Souvenir gekauft.
+
+  - key: de:exercise:a2u05l5-tr-in-die-berge
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-berg
+    prompt:
+      source_text: Mùa hè chúng tôi đi lên núi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Im Sommer fahren wir in die Berge.
+        - Wir fahren im Sommer in die Berge.
+        - Im Sommer gehen wir in die Berge.
+        - Wir gehen im Sommer in die Berge.
+        - Im Sommer fahren wir ins Gebirge.
+        - Wir fahren im Sommer ins Gebirge.
+    known_wrong:
+      - answer: Im Sommer fahren wir nach den Bergen.
+        feedback_vi: "Vùng núi dùng in + Akkusativ: in die Berge."
+        error_tag: preposition
+      - answer: Im Sommer fahren wir in den Bergen.
+        feedback_vi: "fahren hỏi Wohin? → Akkusativ: in die Berge (in den Bergen là ở trên núi)."
+        error_tag: case_dat_akk
+      - answer: Im Sommer wir fahren in die Berge.
+        feedback_vi: "Im Sommer đứng đầu → động từ ngay sau: Im Sommer fahren wir …"
+        error_tag: verb_position
+    explanation:
+      vi: "Đi lên vùng núi: in die Berge (Akkusativ số nhiều, Wohin?), hoặc ins Gebirge. Động từ ở vị trí 2."
+    display_answer: Im Sommer fahren wir in die Berge.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u05l5-wb-abend-strand
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-superlativ
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đẹp nhất là buổi tối ở bãi biển.\""
+      tokens:
+        - { id: x-war, text: war }
+        - { id: x-am1, text: am }
+        - { id: x-strand, text: Strand }
+        - { id: x-der, text: der }
+        - { id: x-schoensten, text: schönsten }
+        - { id: x-abend, text: Abend }
+        - { id: x-am2, text: am }
+        - { id: x-schoenste, text: schönste }
+    answer:
+      orders:
+        - [x-am1, x-schoensten, x-war, x-der, x-abend, x-am2, x-strand]
+        - [x-am2, x-schoensten, x-war, x-der, x-abend, x-am1, x-strand]
+        - [x-der, x-abend, x-am1, x-strand, x-war, x-am2, x-schoensten]
+        - [x-der, x-abend, x-am2, x-strand, x-war, x-am1, x-schoensten]
+    explanation:
+      vi: "So sánh nhất sau sein: am schönsten. Có thể đặt am schönsten lên đầu để nhấn mạnh (Am schönsten war …) hoặc bắt đầu bằng chủ ngữ der Abend am Strand; war luôn ở vị trí 2."
+    display_answer: Am schönsten war der Abend am Strand.
+
+  - key: de:exercise:a2u05l5-wb-zug-berge
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u06-g-perfekt-sein
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi đã đi tàu lên núi.\""
+      tokens:
+        - { id: z-gefahren, text: gefahren }
+        - { id: z-die, text: die }
+        - { id: z-wir, text: wir }
+        - { id: z-zug, text: Zug }
+        - { id: z-in, text: in }
+        - { id: z-sind, text: sind }
+        - { id: z-dem, text: dem }
+        - { id: z-berge, text: Berge }
+        - { id: z-mit, text: mit }
+        - { id: z-haben, text: haben }
+        - { id: z-nach, text: nach }
+    answer:
+      orders:
+        - [z-wir, z-sind, z-mit, z-dem, z-zug, z-in, z-die, z-berge, z-gefahren]
+        - [z-mit, z-dem, z-zug, z-sind, z-wir, z-in, z-die, z-berge, z-gefahren]
+        - [z-in, z-die, z-berge, z-sind, z-wir, z-mit, z-dem, z-zug, z-gefahren]
+    explanation:
+      vi: "fahren là động từ chuyển động nên Perfekt dùng sein: sind … gefahren. Đi lên vùng núi: in die Berge (không dùng nach). mit dem Zug = bằng tàu (mit + Dativ)."
+    display_answer: Wir sind mit dem Zug in die Berge gefahren.

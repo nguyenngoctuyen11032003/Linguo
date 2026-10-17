@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u05-als-wenn
+order_index: 2
+level: a2
+title:
+  vi: Khi tôi ở Viên – als, wenn (Als ich in Wien war, …)
+objectives:
+  - vi: Kể kỷ niệm một lần trong quá khứ với als (Als ich in Wien war, …).
+  - vi: Nói thói quen lặp lại với wenn, immer wenn, jedes Mal wenn.
+  - vi: Chọn đúng als hay wenn và đặt động từ đúng chỗ trong câu phụ và câu chính.
+  - vi: Nói về điểm tham quan – khu phố cổ, lâu đài, cầu, tháp, tour có hướng dẫn, quà lưu niệm.
+estimated_minutes: 16
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u05-eine-reise]
+items:
+  - item: de:item:a2u05-g-als-temporal
+  - item: de:item:a2u05-g-wenn-temporal
+  - item: de:item:a2u05-sehenswuerdigkeit
+  - item: de:item:a2u05-altstadt
+  - item: de:item:a2u05-schloss
+  - item: de:item:a2u05-bruecke
+  - item: de:item:a2u05-turm
+  - item: de:item:a2u05-fuehrung
+  - item: de:item:a2u05-tourist
+  - item: de:item:a2u05-souvenir
+  - item: de:item:a2u05-beruehmt
+  - item: de:item:a2u05-dom
+  - item: de:item:a2u05-denkmal
+  - item: de:item:a2u05-reisefuehrer
+  - item: de:item:a2u05-stadtrundfahrt
+  - item: de:item:a2u05-eintritt
+  - item: de:item:a2u05-brunnen
+  - item: de:item:a2u05-hafen
+  - item: de:item:a2u05-g-praeteritum-regelmaessig
+    role: reuse
+  - item: de:item:a2u03-g-nebensatz-vorne
+    role: reuse
+  - item: de:item:a2u04-g-wenn-konditional
+    role: reuse
+  - item: de:item:a2u01-besichtigen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được \"Als ich in Wien war, habe ich das Schloss besucht\" (một lần trong quá khứ) và \"Wenn ich in Wien bin, gehe ich immer in die Altstadt\" (mỗi khi), đồng thời nói về các điểm tham quan."
+  - type: explain
+    text:
+      vi: "als và wenn đều dịch là \"khi\", nhưng tiếng Đức phân biệt theo thời gian và số lần. als: một sự việc hoặc một giai đoạn chỉ có một lần trong quá khứ (Als ich in Wien war … ; Als ich ein Kind war …). wenn: mỗi khi (lặp lại, ở quá khứ hay hiện tại) hoặc khi (một lần ở hiện tại, tương lai)."
+  - type: explain
+    text:
+      vi: "Mẹo nhớ: quá khứ + một lần = als; các trường hợp khác = wenn. Muốn nhấn mạnh sự lặp lại, dùng immer wenn hoặc jedes Mal wenn (mỗi lần): Jedes Mal wenn wir in Wien waren, besuchten wir die Altstadt."
+  - type: explain
+    text:
+      vi: "als và wenn mở đầu câu phụ nên động từ chia đứng cuối: Als ich in Wien war. Câu phụ đứng đầu thì câu chính bắt đầu bằng động từ ngay sau dấu phẩy: Als ich in Wien war, habe ich viel gesehen. Tiếng Việt nói \"khi ở Viên, tôi đã…\", còn tiếng Đức đặt động từ trước chủ ngữ: …, habe ich …"
+  - type: explain
+    text:
+      vi: "Bạn đã gặp wenn với nghĩa \"nếu\" (Wenn du Zeit hast, …). Ở hiện tại và tương lai, wenn có thể là \"khi\" hoặc \"nếu\", ngữ cảnh cho biết nghĩa nào. Với một sự việc chỉ xảy ra một lần trong quá khứ, tiếng Đức chuẩn dùng als, không dùng wenn."
+  - type: explain
+    text:
+      vi: "Từ mới về tham quan: die Sehenswürdigkeit, die Altstadt, das Schloss, die Brücke, der Turm, die Führung, der Tourist, das Souvenir, berühmt. der Tourist thêm -en ở mọi cách trừ Nominativ số ít: Ich zeige dem Touristen den Weg."
+  - type: deep_explain
+    text:
+      vi: "Trong câu với als, động từ thường ở Präteritum (war, hatte, machte) hoặc Perfekt; câu chính khi nói thường dùng Perfekt, khi viết dùng Präteritum. Đừng nhầm với wann (khi nào), từ dùng để hỏi: Wann warst du in Wien? – Als ich 20 war. Câu phụ cũng có thể đứng sau câu chính, không cần đảo: Ich habe viele Fotos gemacht, als ich in Wien war. Wien là thủ đô nước Áo, tiếng Việt thường gọi là Viên; cung điện Schönbrunn và nhà thờ Stephansdom là hai điểm tham quan rất nổi tiếng ở đó."
+  - type: example
+    target: Als ich in Wien war, habe ich Schloss Schönbrunn besucht.
+    target_lang: de
+    translation:
+      vi: Khi ở Viên, tôi đã đến thăm cung điện Schönbrunn.
+    note:
+      vi: "Một chuyến đi trong quá khứ → als; war đứng cuối câu phụ, câu chính bắt đầu bằng habe."
+  - type: example
+    target: Als wir Kinder waren, machten wir jeden Sommer Urlaub an der Ostsee.
+    target_lang: de
+    translation:
+      vi: Hồi chúng tôi còn nhỏ, mùa hè nào cũng đi nghỉ ở biển Baltic.
+    note:
+      vi: "Thời thơ ấu là một giai đoạn trong quá khứ → als (dù việc đi nghỉ lặp lại mỗi hè)."
+  - type: example
+    target: Jedes Mal wenn wir in Wien waren, besuchten wir die Altstadt.
+    target_lang: de
+    translation:
+      vi: Mỗi lần ở Viên, chúng tôi đều đi dạo khu phố cổ.
+    note:
+      vi: "Lặp lại nhiều lần trong quá khứ → (jedes Mal) wenn."
+  - type: example
+    target: Wenn du nach Köln fährst, musst du unbedingt den Dom sehen.
+    target_lang: de
+    translation:
+      vi: Khi nào bạn đi Köln thì nhất định phải xem nhà thờ lớn.
+    note:
+      vi: "Tương lai → wenn. Nói với bạn bè nên dùng du."
+  - type: example
+    target: Wenn ich in einer neuen Stadt bin, mache ich immer zuerst eine Führung.
+    target_lang: de
+    translation:
+      vi: Mỗi khi ở một thành phố mới, tôi luôn đi một tour có hướng dẫn trước tiên.
+    note:
+      vi: "Thói quen ở hiện tại → wenn. eine Führung machen = đi tour có hướng dẫn."
+  - type: example
+    target: Wenn das Wetter morgen schlecht ist, besichtigen wir das Schloss.
+    target_lang: de
+    translation:
+      vi: Nếu mai trời xấu, chúng ta sẽ đi tham quan lâu đài.
+    note:
+      vi: "Ở đây wenn = nếu (điều kiện), như bạn đã học. Câu phụ đứng đầu nên besichtigen đứng ngay sau dấu phẩy."
+  - type: common_mistake
+    wrong: Wenn ich ein Kind war, wohnte ich in Hue.
+    right: Als ich ein Kind war, wohnte ich in Hue.
+    target_lang: de
+    note:
+      vi: "Thời thơ ấu là một giai đoạn trong quá khứ → als."
+  - type: common_mistake
+    wrong: Als ich in Wien bin, besuche ich das Schloss.
+    right: Wenn ich in Wien bin, besuche ich das Schloss.
+    target_lang: de
+    note:
+      vi: "Hiện tại, tương lai → wenn; als chỉ dùng cho quá khứ."
+  - type: common_mistake
+    wrong: Als ich in Wien war, ich habe viele Fotos gemacht.
+    right: Als ich in Wien war, habe ich viele Fotos gemacht.
+    target_lang: de
+    note:
+      vi: "Câu phụ đứng đầu chiếm vị trí 1, nên động từ câu chính đứng ngay sau dấu phẩy."
+  - type: summary
+    points:
+      - vi: "als = khi (một lần hoặc một giai đoạn trong quá khứ)."
+      - vi: "wenn = mỗi khi (lặp lại) hoặc khi (hiện tại, tương lai)."
+      - vi: "immer wenn, jedes Mal wenn = mỗi lần."
+      - vi: "Câu phụ: động từ cuối; câu phụ đứng đầu → động từ câu chính ngay sau dấu phẩy."
+      - vi: "wann chỉ dùng để hỏi."
+      - vi: "Tham quan: die Sehenswürdigkeit, die Altstadt, das Schloss, die Brücke, der Turm, die Führung, das Souvenir."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u05l2-mcq-als-kind
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u05-g-als-temporal
+    prompt:
+      stem: "Chọn từ đúng: ___ ich zehn Jahre alt war, flog ich zum ersten Mal."
+      stem_lang: vi
+      options:
+        - { id: a1a, text: Als, lang: de }
+        - { id: a2b, text: Wenn, lang: de }
+        - { id: a3c, text: Wann, lang: de }
+    answer:
+      correct_option_id: a1a
+    explanation:
+      vi: "Năm mười tuổi là một thời điểm trong quá khứ, việc bay lần đầu chỉ có một lần → als. wann chỉ dùng để hỏi."
+    display_answer: Als
+
+  - key: de:exercise:a2u05l2-mcq-wenn-berlin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u05-g-wenn-temporal
+    prompt:
+      stem: "Chọn từ đúng: ___ ich in Berlin bin, besuche ich immer meine Tante."
+      stem_lang: vi
+      options:
+        - { id: w1a, text: Wenn, lang: de }
+        - { id: w2b, text: Als, lang: de }
+        - { id: w3c, text: Wann, lang: de }
+    answer:
+      correct_option_id: w1a
+    explanation:
+      vi: "Thói quen ở hiện tại (bin, immer) → wenn. als chỉ dùng cho quá khứ; wann là từ để hỏi."
+    display_answer: Wenn
+
+  - key: de:exercise:a2u05l2-listen-fuehrung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u05-fuehrung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Als ich in Wien war, habe ich eine Führung durch die Altstadt gemacht. Das war sehr interessant.
+      options:
+        - { id: g1a, text: "Khi ở Viên, người nói đã đi một tour có hướng dẫn qua khu phố cổ.", lang: vi }
+        - { id: g2b, text: "Mỗi lần ở Viên, người nói đều đi tour có hướng dẫn qua khu phố cổ.", lang: vi }
+        - { id: g3c, text: "Khi nào đến Viên, người nói sẽ đi tour có hướng dẫn qua khu phố cổ.", lang: vi }
+        - { id: g4d, text: "Khi ở Viên, người nói đã đến thăm một lâu đài.", lang: vi }
+    answer:
+      correct_option_id: g1a
+    explanation:
+      vi: "als + war = một lần trong quá khứ; eine Führung durch die Altstadt = tour có hướng dẫn qua khu phố cổ. \"Mỗi lần\" sẽ là jedes Mal wenn; tương lai sẽ dùng wenn."
+    display_answer: "Khi ở Viên, người nói đã đi một tour có hướng dẫn qua khu phố cổ."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u05l2-fill-als-wenn
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u05-g-wenn-temporal
+    prompt:
+      template: "{{b1}} ich 2019 zum ersten Mal in Wien war, habe ich viele Sehenswürdigkeiten gesehen. Und {{b2}} ich heute nach Wien fahre, besuche ich jedes Mal meine Freunde."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Als, Während]
+        b2: [wenn]
+    known_wrong:
+      - answer: wann
+        feedback_vi: "wann (khi nào) chỉ dùng để hỏi; ở đây cần als (một lần trong quá khứ) hoặc wenn (lặp lại ở hiện tại)."
+        error_tag: conjunction_als_wenn
+    explanation:
+      vi: "Câu 1: một lần trong quá khứ (2019, zum ersten Mal, war) → Als. Câu 2: lặp lại ở hiện tại (fahre, jedes Mal) → wenn."
+    display_answer: "Als ich 2019 zum ersten Mal in Wien war, habe ich viele Sehenswürdigkeiten gesehen. Und wenn ich heute nach Wien fahre, besuche ich jedes Mal meine Freunde."
+
+  - key: de:exercise:a2u05l2-fill-waren-machten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-als-temporal
+    prompt:
+      template: "Als wir in Salzburg {{b1}} (sein), {{b2}} (machen) wir eine Führung durch die Altstadt."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [waren]
+        b2: [machten]
+    known_wrong:
+      - answer: sind
+        feedback_vi: "als chỉ dùng cho quá khứ: Als wir in Salzburg waren."
+        error_tag: tense
+      - answer: machen
+        feedback_vi: "Kể chuyện quá khứ: Präteritum machten."
+        error_tag: tense
+      - answer: machte
+        feedback_vi: "Chủ ngữ là wir: machten."
+        error_tag: verb_form
+    explanation:
+      vi: "als + quá khứ: sein → waren (wir). Câu phụ đứng đầu nên động từ câu chính machten đứng ngay sau dấu phẩy, rồi mới đến wir."
+    display_answer: Als wir in Salzburg waren, machten wir eine Führung durch die Altstadt.
+
+  - key: de:exercise:a2u05l2-tr-als-kind
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-als-temporal
+    prompt:
+      source_text: Khi tôi còn nhỏ, tôi sống ở Đà Lạt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Als ich ein Kind war, wohnte ich in Da Lat.
+        - Als ich ein Kind war, habe ich in Da Lat gewohnt.
+        - Als ich ein Kind war, lebte ich in Da Lat.
+        - Als ich ein Kind war, habe ich in Da Lat gelebt.
+        - Als ich klein war, wohnte ich in Da Lat.
+        - Als ich klein war, habe ich in Da Lat gewohnt.
+        - Als ich klein war, lebte ich in Da Lat.
+        - Als ich klein war, habe ich in Da Lat gelebt.
+        - Ich wohnte in Da Lat, als ich ein Kind war.
+        - Ich habe in Da Lat gewohnt, als ich ein Kind war.
+        - Ich lebte in Da Lat, als ich ein Kind war.
+        - Ich habe in Da Lat gelebt, als ich ein Kind war.
+        - Ich wohnte in Da Lat, als ich klein war.
+        - Ich habe in Da Lat gewohnt, als ich klein war.
+    known_wrong:
+      - answer: Wenn ich ein Kind war, wohnte ich in Da Lat.
+        feedback_vi: "Thời thơ ấu là một giai đoạn trong quá khứ → als."
+        error_tag: conjunction_als_wenn
+      - answer: Als ich ein Kind war, ich wohnte in Da Lat.
+        feedback_vi: "Câu phụ đứng đầu → động từ câu chính ngay sau dấu phẩy: …, wohnte ich …"
+        error_tag: verb_position
+      - answer: Als ich war ein Kind, wohnte ich in Da Lat.
+        feedback_vi: "Trong câu phụ với als, động từ chia đứng cuối: Als ich ein Kind war."
+        error_tag: verb_position
+    explanation:
+      vi: "\"Khi còn nhỏ\" là một giai đoạn trong quá khứ → Als ich ein Kind war (hoặc Als ich klein war). Động từ war ở cuối câu phụ; câu chính bắt đầu bằng động từ: wohnte ich …"
+    display_answer: Als ich ein Kind war, wohnte ich in Da Lat.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u05l2-wb-als-souvenir
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-souvenir
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Khi tôi ở Viên, tôi đã mua một món quà lưu niệm.\""
+      tokens:
+        - { id: s-kaufte, text: kaufte }
+        - { id: s-ich1, text: ich }
+        - { id: s-souvenir, text: Souvenir }
+        - { id: s-als, text: Als }
+        - { id: s-wien, text: Wien }
+        - { id: s-war, text: "war," }
+        - { id: s-ich2, text: ich }
+        - { id: s-in, text: in }
+        - { id: s-ein, text: ein }
+        - { id: s-wenn, text: Wenn }
+    answer:
+      orders:
+        - [s-als, s-ich1, s-in, s-wien, s-war, s-kaufte, s-ich2, s-ein, s-souvenir]
+        - [s-als, s-ich2, s-in, s-wien, s-war, s-kaufte, s-ich1, s-ein, s-souvenir]
+    explanation:
+      vi: "Một lần trong quá khứ → Als. Trong câu phụ, war đứng cuối; câu chính bắt đầu bằng động từ kaufte ngay sau dấu phẩy, rồi đến ich."
+    display_answer: Als ich in Wien war, kaufte ich ein Souvenir.
+
+  - key: de:exercise:a2u05l2-mcq-stephansdom
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-g-als-temporal
+    prompt:
+      stem: "Bạn kể với bạn thân về chuyến đi Viên năm ngoái (chỉ một lần). Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: d1a, text: "Als ich letztes Jahr in Wien war, habe ich den Stephansdom besichtigt.", lang: de }
+        - { id: d2b, text: "Wenn ich letztes Jahr in Wien war, habe ich den Stephansdom besichtigt.", lang: de }
+        - { id: d3c, text: "Als ich letztes Jahr in Wien war, ich habe den Stephansdom besichtigt.", lang: de }
+        - { id: d4d, text: "Als ich letztes Jahr in Wien bin, habe ich den Stephansdom besichtigt.", lang: de }
+    answer:
+      correct_option_id: d1a
+    explanation:
+      vi: "Một lần trong quá khứ → als + war. Sau câu phụ, động từ habe đứng ngay sau dấu phẩy. wenn không dùng cho một lần trong quá khứ; bin là hiện tại."
+    display_answer: "Als ich letztes Jahr in Wien war, habe ich den Stephansdom besichtigt."
+
+  - key: de:exercise:a2u05l2-tr-immer-wenn-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u05-g-wenn-temporal
+    prompt:
+      source_text: Immer wenn ich in einer neuen Stadt bin, besuche ich zuerst die Altstadt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mỗi khi đến một thành phố mới, tôi đi thăm khu phố cổ trước tiên.
+        - Mỗi khi ở một thành phố mới, tôi đi thăm khu phố cổ trước tiên.
+        - Mỗi khi ở một thành phố mới, tôi thăm khu phố cổ trước.
+        - Mỗi khi đến một thành phố mới, tôi thăm khu phố cổ trước.
+        - Mỗi lần ở một thành phố mới, tôi đi thăm khu phố cổ trước tiên.
+        - Mỗi lần đến một thành phố mới, tôi thăm khu phố cổ trước.
+        - Bất cứ khi nào ở một thành phố mới, tôi đều thăm khu phố cổ trước.
+        - Mỗi khi tôi ở một thành phố mới, tôi đi thăm khu phố cổ trước tiên.
+        - Mỗi khi tôi đến một thành phố mới, tôi thăm khu phố cổ trước.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi tôi ở một thành phố mới, tôi đã thăm khu phố cổ trước tiên.
+        feedback_vi: "immer wenn = mỗi khi (thói quen ở hiện tại), không phải một lần trong quá khứ."
+        error_tag: meaning
+    explanation:
+      vi: "immer wenn = mỗi khi; bin, besuche là hiện tại → thói quen. zuerst = trước tiên; die Altstadt = khu phố cổ."
+    display_answer: Mỗi khi đến một thành phố mới, tôi đi thăm khu phố cổ trước tiên.
+
+  - key: de:exercise:a2u05l2-tr-wenn-du-wien
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u05-altstadt
+    prompt:
+      source_text: "Khi nào bạn ở Viên, bạn phải xem khu phố cổ. (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wenn du in Wien bist, musst du die Altstadt sehen.
+        - Wenn du in Wien bist, musst du die Altstadt besuchen.
+        - Wenn du in Wien bist, musst du die Altstadt besichtigen.
+        - Wenn du in Wien bist, musst du dir die Altstadt ansehen.
+        - Wenn du in Wien bist, musst du dir die Altstadt anschauen.
+        - Wenn du nach Wien kommst, musst du die Altstadt sehen.
+        - Wenn du nach Wien kommst, musst du die Altstadt besuchen.
+        - Wenn du nach Wien fährst, musst du die Altstadt sehen.
+        - Wenn du nach Wien fährst, musst du die Altstadt besuchen.
+        - Du musst die Altstadt sehen, wenn du in Wien bist.
+        - Du musst die Altstadt besuchen, wenn du in Wien bist.
+        - Du musst die Altstadt besichtigen, wenn du in Wien bist.
+    known_wrong:
+      - answer: Als du in Wien bist, musst du die Altstadt sehen.
+        feedback_vi: "Hiện tại, tương lai → wenn; als chỉ dùng cho quá khứ."
+        error_tag: conjunction_als_wenn
+      - answer: Wenn du in Wien bist, du musst die Altstadt sehen.
+        feedback_vi: "Câu phụ đứng đầu → động từ câu chính ngay sau dấu phẩy: …, musst du …"
+        error_tag: verb_position
+      - answer: Wenn du bist in Wien, musst du die Altstadt sehen.
+        feedback_vi: "Trong câu phụ, động từ chia đứng cuối: wenn du in Wien bist."
+        error_tag: verb_position
+    explanation:
+      vi: "Tương lai → wenn. bist đứng cuối câu phụ; câu chính bắt đầu bằng musst, động từ nguyên thể (sehen/besuchen) ở cuối câu."
+    display_answer: Wenn du in Wien bist, musst du die Altstadt sehen.
