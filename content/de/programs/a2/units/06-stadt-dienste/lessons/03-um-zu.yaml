@@ -46,7 +46,7 @@ body:
       vi: Sau bài này, bạn nói được "Tôi ra bưu điện để lấy gói hàng", "Gói hàng nặng quá, vì vậy tôi đi taxi" và xử lý được các việc thường gặp ở bưu điện.
   - type: explain
     text:
-      vi: "um … zu nói mục đích (để …): um đứng đầu cụm, zu + nguyên thể đứng cuối cụm, trước cụm luôn có dấu phẩy. Ich gehe zur Post, um Briefmarken zu kaufen. Động từ tách vẫn chèn zu vào giữa: um ein Paket abzuholen."
+      vi: "um … zu nói mục đích (để …): um đứng đầu cụm, zu + nguyên thể đứng cuối cụm, cụm luôn được ngăn với câu chính bằng dấu phẩy. Ich gehe zur Post, um Briefmarken zu kaufen. Động từ tách vẫn chèn zu vào giữa: um ein Paket abzuholen."
   - type: explain
     text:
       vi: "Tiếng Việt \"để mua tem\" đặt động từ ngay sau \"để\"; tiếng Đức đẩy động từ về cuối: um Briefmarken zu kaufen. Thường thì người làm hai việc là một (tôi đi – tôi mua). Cụm um … zu cũng có thể đứng đầu câu: Um Briefmarken zu kaufen, gehe ich zur Post – động từ chính đứng ngay sau dấu phẩy."
@@ -58,7 +58,7 @@ body:
       vi: "So sánh với weil: weil nêu nguyên nhân và đẩy động từ xuống cuối (…, weil das Paket schwer ist); deshalb nêu kết quả và đi với động từ ở vị trí 2 (Das Paket ist schwer, deshalb nehme ich ein Taxi)."
   - type: deep_explain
     text:
-      vi: "deshalb không bắt buộc đứng đầu: Ich nehme deshalb ein Taxi cũng đúng (đứng sau động từ). deswegen và deshalb dùng như nhau; darum hơi khẩu ngữ hơn một chút. Khi mục đích là của người khác (tôi gửi gói hàng để mẹ tôi có quà), tiếng Đức không dùng um … zu mà dùng damit – bạn sẽ học ở B1. Ở bưu điện: das Päckchen là gói nhỏ, thường rẻ hơn das Paket; kích thước, cân nặng tối đa và giá tùy hãng và có thể thay đổi, nên nhân viên sẽ cân (wiegen) gói hàng của bạn. Nếu người đưa thư (der Postbote) không gặp bạn, bạn có thể nhận một tờ giấy báo (der Zettel) ghi nơi đến lấy hàng (abholen) – mang theo giấy tờ tùy thân."
+      vi: "deshalb không bắt buộc đứng đầu: Ich nehme deshalb ein Taxi cũng đúng (đứng sau động từ). Ba từ deshalb, deswegen, darum dùng gần như nhau; deswegen và darum hay gặp trong văn nói hơn một chút. Khi mục đích là của người khác (tôi gửi gói hàng để mẹ tôi có quà), tiếng Đức không dùng um … zu mà dùng damit – bạn sẽ học ở B1. Ở bưu điện: das Päckchen là gói nhỏ, thường rẻ hơn das Paket; kích thước, cân nặng tối đa và giá tùy hãng và có thể thay đổi, nên nhân viên sẽ cân (wiegen) gói hàng của bạn. Nếu người đưa thư (der Postbote) không gặp bạn, bạn có thể nhận một tờ giấy báo (der Zettel) ghi nơi đến lấy hàng (abholen) – thường cần mang theo tờ giấy đó và giấy tờ tùy thân."
   - type: example
     target: Ich gehe zur Post, um ein Paket abzuholen.
     target_lang: de
@@ -115,7 +115,7 @@ body:
   - type: summary
     points:
       - vi: "um + … + zu + nguyên thể = để … (cùng một người làm)."
-      - vi: "Luôn có dấu phẩy trước um; động từ tách: abzuholen, einzuwerfen."
+      - vi: "Cụm um … zu luôn được ngăn bằng dấu phẩy; động từ tách: abzuholen, einzuwerfen."
       - vi: "Um … zu …, + động từ + chủ ngữ … khi cụm um … zu đứng đầu."
       - vi: "deshalb/deswegen/darum ở vị trí 1 → động từ ngay sau: Deshalb nehme ich …"
       - vi: "weil → động từ cuối (nguyên nhân); deshalb → động từ vị trí 2 (kết quả)."

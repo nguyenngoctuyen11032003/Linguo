@@ -11,7 +11,7 @@ title:
 objectives:
   - vi: Đọc hiểu thông báo ngắn của cơ quan, ngân hàng, bưu điện (giờ mở cửa, giấy tờ cần mang, việc cần làm).
   - vi: Nghe hiểu lời gọi số ở cơ quan và tin nhắn thoại của tiệm dịch vụ.
-  - vi: Viết e-mail trang trọng khoảng 50 từ hỏi giờ mở cửa và giấy tờ cần mang (kiểu Goethe A2 Schreiben Teil 2).
+  - vi: Viết e-mail trang trọng khoảng 50 từ hỏi giờ mở cửa và giấy tờ cần mang (gần với dạng viết e-mail trong đề Goethe A2).
   - vi: Ôn câu hỏi gián tiếp, ob, zu + nguyên thể, um … zu, deshalb, lassen và nicht müssen/nicht dürfen.
 estimated_minutes: 22
 skills: [reading, writing, listening]
@@ -55,6 +55,16 @@ items:
     role: reuse
   - item: de:item:a2u06-fundbuero
     role: reuse
+  - item: de:item:a2u06-regenschirm
+    role: reuse
+  - item: de:item:a1u08-termin
+    role: reuse
+  - item: de:item:a1u08-ausweis
+    role: reuse
+  - item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    role: reuse
+  - item: de:item:a2u01-g-praeteritum-modal
+    role: reuse
 body:
   - type: objective
     text:
@@ -70,7 +80,7 @@ body:
       vi: "Câu hỏi trong e-mail nên viết gián tiếp cho lịch sự: Können Sie mir bitte sagen, wann …? / Ich möchte gern wissen, ob … . Đừng quên: động từ chia đứng cuối câu phụ."
   - type: deep_explain
     text:
-      vi: "Một e-mail mẫu khoảng 50 từ: \"Sehr geehrte Damen und Herren, ich bin neu in der Stadt und möchte mich anmelden. Können Sie mir bitte sagen, wann das Bürgeramt geöffnet ist? Ich möchte auch wissen, ob ich einen Termin brauche und welche Dokumente ich mitbringen muss. Vielen Dank im Voraus! Mit freundlichen Grüßen Mai Tran\". Đề Goethe A2 Schreiben Teil 2 thường yêu cầu trả lời đủ các ý cho sẵn – đánh dấu từng ý khi viết xong. Giờ mở cửa, việc có cần đặt lịch hẹn (Termin) hay không và giấy tờ cần mang khác nhau theo từng thành phố và có thể thay đổi – vì vậy bạn mới cần viết e-mail để hỏi. Ngân hàng đứng đắn sẽ không hỏi mã PIN qua e-mail hay điện thoại; gặp yêu cầu như vậy thì đừng trả lời."
+      vi: "Một e-mail mẫu khoảng 50 từ: \"Sehr geehrte Damen und Herren, ich bin neu in der Stadt und möchte mich anmelden. Können Sie mir bitte sagen, wann das Bürgeramt geöffnet ist? Ich möchte auch wissen, ob ich einen Termin brauche und welche Dokumente ich mitbringen muss. Vielen Dank im Voraus! Mit freundlichen Grüßen Mai Tran\". Bài viết e-mail trong đề thi A2 thường cho sẵn vài ý cần trả lời (độ dài và định dạng đề có thể thay đổi, hãy xem tài liệu mẫu mới nhất) – đánh dấu từng ý khi viết xong. Giờ mở cửa, việc có cần đặt lịch hẹn (Termin) hay không và giấy tờ cần mang khác nhau theo từng thành phố và có thể thay đổi – vì vậy bạn mới cần viết e-mail để hỏi. Ngân hàng uy tín không hỏi mã PIN qua e-mail hay điện thoại; gặp yêu cầu như vậy thì đừng trả lời."
   - type: example
     target: "Sehr geehrte Damen und Herren, können Sie mir bitte sagen, wann das Bürgeramt am Freitag geöffnet ist?"
     target_lang: de
@@ -163,7 +173,7 @@ exercises:
     answer:
       correct_option_id: s8b
     explanation:
-      vi: "nicht zustellen = không giao được; ab morgen, 10 Uhr = từ 10 giờ ngày mai; in unserer Filiale … abholen = đến chi nhánh lấy; diesen Zettel und Ihren Ausweis mitbringen = mang theo tờ giấy này và giấy tờ tùy thân."
+      vi: "wir konnten … nicht zustellen = chúng tôi đã không giao được (konnten là Präteritum của können); ab morgen, 10 Uhr = từ 10 giờ ngày mai; in unserer Filiale … abholen = đến chi nhánh lấy; diesen Zettel und Ihren Ausweis mitbringen = mang theo tờ giấy này và giấy tờ tùy thân."
     display_answer: "Từ 10 giờ sáng mai, mang tờ giấy này và giấy tờ tùy thân đến chi nhánh để lấy gói hàng."
 
   - key: de:exercise:a2u06l5-mcq-lesen-bank
@@ -308,6 +318,9 @@ exercises:
         - Ich würde gern wissen, ob ich einen Termin brauche.
         - Ich möchte wissen, ob ich einen Termin machen muss.
         - Ich möchte wissen, ob ich einen Termin vereinbaren muss.
+        - Ich würde gerne wissen, ob ich einen Termin brauche.
+        - Ich möchte gern wissen, ob ich einen Termin machen muss.
+        - Ich möchte gern wissen, ob ich einen Termin vereinbaren muss.
     known_wrong:
       - answer: Ich möchte wissen, ob ich brauche einen Termin.
         feedback_vi: "Sau ob, động từ chia (brauche) đứng cuối: ob ich einen Termin brauche."

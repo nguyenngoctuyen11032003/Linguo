@@ -110,7 +110,7 @@ items:
           translation:
             vi: Tòa thị chính ở quảng trường chợ.
       pronunciation_note:
-        vi: "Rat + Haus: t và h thuộc hai phần khác nhau nên đọc tách \"Rát-hau-s\", không đọc thành một âm \"th\"."
+        vi: "Rat + Haus: t và h thuộc hai phần khác nhau nên đọc tách Rat-haus (a trong Rat dài, h bật hơi), không gộp thành một âm \"th\". Trọng âm ở Rat."
 
   - key: de:item:a2u06-bibliothek
     type: vocab
@@ -223,7 +223,7 @@ items:
             vi: Ở đây ai phụ trách việc đăng ký cư trú?
         - target: Dafür ist das Bürgeramt zuständig.
           translation:
-            vi: Việc đó thuộc về văn phòng dịch vụ công dân.
+            vi: Việc đó do văn phòng dịch vụ công dân (Bürgeramt) phụ trách.
       confusion:
         vi: "Rất hay gặp ở cơ quan Đức: nếu nghe \"Wir sind nicht zuständig\" nghĩa là việc của bạn không thuộc chỗ này, bạn cần hỏi nơi khác."
 
@@ -331,7 +331,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Sau Es ist wichtig/schwer/einfach …, sau các động từ như vergessen, versuchen và sau danh từ như Zeit, Lust, ta dùng cụm zu + nguyên thể ở cuối câu. Với động từ tách, zu chen vào giữa: anzurufen, abzuheben. Sau động từ khuyết thiếu (können, müssen, wollen, dürfen …) thì không có zu."
+        vi: "Sau Es ist wichtig/schwer/einfach …, sau các động từ như vergessen, versuchen và sau danh từ như Zeit, Lust, ta dùng cụm zu + nguyên thể (zu + nguyên thể đứng cuối cụm). Với động từ tách, zu chen vào giữa: anzurufen, abzuheben. Sau động từ khuyết thiếu (können, müssen, wollen, dürfen …) thì không có zu."
       examples:
         - target: Es ist wichtig, die Geheimzahl nicht zu vergessen.
           translation:
@@ -519,9 +519,9 @@ items:
       meaning:
         vi: phí, lệ phí
       examples:
-        - target: Kostet das Konto eine Gebühr?
+        - target: Muss ich für das Konto Gebühren bezahlen?
           translation:
-            vi: Tài khoản này có mất phí không?
+            vi: Tôi có phải trả phí cho tài khoản này không?
       confusion:
         vi: "die Gebühr là phí cho một dịch vụ (ngân hàng, cơ quan); der Preis là giá của một món hàng. Mức phí tùy nơi và có thể thay đổi."
 

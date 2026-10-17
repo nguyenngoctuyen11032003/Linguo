@@ -43,6 +43,8 @@ items:
     role: reuse
   - item: de:item:a2u06-abholen
     role: reuse
+  - item: de:item:a2u04-g-reflexiv-dativ
+    role: reuse
 body:
   - type: objective
     text:
@@ -58,10 +60,10 @@ body:
       vi: "nicht müssen = không cần (không bắt buộc): Sie müssen nicht warten. nicht dürfen = không được phép (bị cấm): Hier dürfen Sie nicht parken. Tiếng Việt \"không phải\" gần với nicht müssen, còn \"không được\" là nicht dürfen."
   - type: explain
     text:
-      vi: "Nếu bạn biết tiếng Anh, cẩn thận: must not (cấm) tương ứng nicht dürfen, không phải nicht müssen. Trên biển báo thường chỉ có danh từ + verboten (Rauchen verboten) hoặc erlaubt."
+      vi: "Nếu bạn biết tiếng Anh, cẩn thận: must not (cấm) tương ứng nicht dürfen, không phải nicht müssen. Trên biển báo thường chỉ có danh từ + verboten (Rauchen verboten) hoặc erlaubt; nói thành câu chung chung thì dùng man: Hier darf man nicht rauchen."
   - type: deep_explain
     text:
-      vi: "Cắt tóc của chính mình ở tiệm: Ich lasse mir die Haare schneiden – mir ở Dativ cho biết tóc là của mình (giống Ich wasche mir die Hände). Với động từ khuyết thiếu, lassen đứng cuối: Ich muss mein Fahrrad reparieren lassen. Ở Perfekt, lassen đi với nguyên thể thì dùng dạng lassen chứ không dùng gelassen: Ich habe mein Fahrrad reparieren lassen – bạn chỉ cần nhận ra dạng này. Với danh từ, \"không cần\" thường nói bằng kein: Sie müssen kein Formular ausfüllen. Ở tiệm dịch vụ, hai câu hỏi hữu ích: Wann ist es fertig? (khi nào xong) và Was kostet das? / Wie hoch sind die Kosten? (giá bao nhiêu). Ở nhiều tiệm cắt tóc và xưởng sửa xe tại Đức, nên đặt lịch hẹn trước; cách làm và giá mỗi nơi một khác."
+      vi: "Cắt tóc của chính mình ở tiệm: Ich lasse mir die Haare schneiden – mir ở Dativ cho biết tóc là của mình (giống Ich wasche mir die Hände). Với động từ khuyết thiếu, lassen đứng cuối: Ich muss mein Fahrrad reparieren lassen. Ở Perfekt, lassen đi với nguyên thể thì dùng dạng lassen chứ không dùng gelassen: Ich habe mein Fahrrad reparieren lassen – bạn chỉ cần nhận ra dạng này. Với danh từ, \"không cần\" thường nói bằng kein: Sie müssen kein Formular ausfüllen. Ở tiệm dịch vụ, hai câu hỏi hữu ích: Wann ist es fertig? (khi nào xong) và Was kostet das? / Wie hoch sind die Kosten? (giá bao nhiêu). Nhiều tiệm cắt tóc và xưởng sửa xe ở Đức làm việc theo lịch hẹn, nhưng cũng có nơi nhận khách không hẹn trước; cách làm và giá mỗi nơi một khác và có thể thay đổi, nên bạn hỏi trước."
   - type: example
     target: Ich lasse mein Fahrrad in der Werkstatt reparieren.
     target_lang: de
@@ -80,7 +82,7 @@ body:
     target: "Ich möchte meinen Anzug reinigen lassen. Wann ist er fertig? – Am Donnerstag."
     target_lang: de
     translation:
-      vi: "Tôi muốn giặt khô bộ com-lê. Khi nào xong ạ? – Thứ Năm."
+      vi: "Tôi muốn gửi giặt khô bộ com-lê này. Khi nào xong ạ? – Thứ Năm."
     note:
       vi: "Khách nói với nhân viên tiệm giặt. Có möchten nên lassen đứng cuối: reinigen lassen."
   - type: example
@@ -260,6 +262,8 @@ exercises:
         - Ich lasse mir morgen die Haare schneiden.
         - Morgen lasse ich mir beim Friseur die Haare schneiden.
         - Ich lasse mir morgen beim Friseur die Haare schneiden.
+        - Morgen lasse ich mir die Haare beim Friseur schneiden.
+        - Ich lasse mir morgen die Haare beim Friseur schneiden.
         - Morgen lasse ich meine Haare schneiden.
         - Ich lasse morgen meine Haare schneiden.
         - Morgen gehe ich zum Friseur.

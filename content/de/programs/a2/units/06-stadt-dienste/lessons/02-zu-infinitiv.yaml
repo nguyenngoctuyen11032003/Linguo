@@ -43,6 +43,8 @@ items:
     role: reuse
   - item: de:item:a1u05-bank
     role: reuse
+  - item: de:item:a2u01-g-seit-praesens
+    role: reuse
 body:
   - type: objective
     text:
@@ -55,13 +57,13 @@ body:
       vi: "Tiếng Việt nói \"quan trọng là mở tài khoản\" với động từ đứng trước tân ngữ; tiếng Đức đẩy động từ về cuối: ein Konto zu eröffnen. Cụm zu không có chủ ngữ riêng – người làm chính là chủ ngữ của câu chính (Ich habe vergessen, … = tôi quên, và tôi là người phải làm)."
   - type: explain
     text:
-      vi: "Với động từ tách, zu chen vào giữa tiền tố và gốc, viết liền thành một chữ: anrufen → anzurufen, abheben → abzuheben, einzahlen → einzuzahlen. Tiền tố không tách (über-, er-, ver-, be-) thì zu đứng riêng phía trước: zu überweisen, zu eröffnen, zu versuchen."
+      vi: "Với động từ tách, zu chen vào giữa tiền tố và gốc, viết liền thành một chữ: anrufen → anzurufen, abheben → abzuheben, einzahlen → einzuzahlen. Tiền tố không tách (be-, er-, ver- và über- trong überweisen) thì zu đứng riêng phía trước: zu überweisen, zu eröffnen, zu versuchen."
   - type: explain
     text:
       vi: "Sau động từ khuyết thiếu (können, müssen, wollen, dürfen, möchten) không có zu: Ich muss Geld abheben (không phải zu abheben). Mẹo: modal → nguyên thể trơn; Es ist …, vergessen, versuchen, Zeit, Lust → zu."
   - type: deep_explain
     text:
-      vi: "Dấu phẩy: trước cụm zu sau Es ist … (có chữ es báo trước) và sau danh từ (Zeit, Lust) thì phải có dấu phẩy; sau động từ như vergessen, versuchen dấu phẩy có thể bỏ, nhưng bạn nên đặt cho rõ. Cùng một ý có thể nói bằng dass, nhưng câu dass cần chủ ngữ riêng: Es ist wichtig, dass Sie die Geheimzahl nicht vergessen. = Es ist wichtig, die Geheimzahl nicht zu vergessen. nicht đứng ngay trước zu + nguyên thể. Về ngân hàng ở Đức: chuyển khoản dùng số IBAN của người nhận; nhiều người vẫn hay trả tiền mặt (Bargeld), dù thẻ ngày càng phổ biến. Rút tiền ở máy của ngân hàng khác hoặc một số loại tài khoản có thể mất phí (Gebühr) – mức phí tùy ngân hàng và có thể thay đổi, nên bạn hỏi trước: Kostet das eine Gebühr?"
+      vi: "Dấu phẩy: theo quy tắc chính tả hiện hành, cụm zu phụ thuộc vào danh từ (Zeit, Lust) hoặc có từ báo trước như es (Es ist wichtig, …) thì cần dấu phẩy; sau động từ như vergessen, versuchen dấu phẩy thường là tùy chọn. Với các mẫu câu trong bài này, đặt dấu phẩy trước cụm zu là cách an toàn và dễ đọc. Cùng một ý có thể nói bằng dass, nhưng câu dass cần chủ ngữ riêng: Es ist wichtig, dass Sie die Geheimzahl nicht vergessen. = Es ist wichtig, die Geheimzahl nicht zu vergessen. nicht đứng ngay trước zu + nguyên thể. Về ngân hàng ở Đức: chuyển khoản dùng số IBAN của người nhận; nhiều người vẫn hay trả tiền mặt (Bargeld), dù thẻ ngày càng phổ biến. Rút tiền ở máy của ngân hàng khác hoặc một số loại tài khoản có thể mất phí (Gebühr) – mức phí tùy ngân hàng và có thể thay đổi, nên bạn hỏi trước: Gibt es dafür eine Gebühr?"
   - type: example
     target: Es ist wichtig, die Geheimzahl nicht zu vergessen.
     target_lang: de
@@ -84,7 +86,7 @@ body:
     note:
       vi: "Hai người bạn nói với nhau nên dùng du. Lust haben + zu: … zur Bank zu gehen."
   - type: example
-    target: "Ich möchte ein Konto eröffnen. Kostet das eine Gebühr?"
+    target: "Ich möchte ein Konto eröffnen. Gibt es dafür eine Gebühr?"
     target_lang: de
     translation:
       vi: "Tôi muốn mở một tài khoản. Việc này có mất phí không?"
@@ -340,6 +342,7 @@ exercises:
         - Vergiss nicht, Geld abzuheben!
         - Denk daran, Bargeld abzuheben!
         - Denk bitte daran, Bargeld abzuheben!
+        - Vergiss bitte nicht, Geld abzuheben!
     known_wrong:
       - answer: Vergiss nicht, Bargeld zu abheben!
         feedback_vi: "abheben là động từ tách: zu chen vào giữa → abzuheben."

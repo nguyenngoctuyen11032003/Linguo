@@ -240,6 +240,8 @@ exercises:
         - Wissen Sie, wo hier die Post ist?
         - Wissen Sie, wo die Post hier ist?
         - Entschuldigung, wissen Sie, wo die Post ist?
+        - Entschuldigung, wissen Sie, wo hier die Post ist?
+        - Wissen Sie vielleicht, wo die Post ist?
         - Können Sie mir sagen, wo die Post ist?
     known_wrong:
       - answer: Wissen Sie, wo ist die Post?
@@ -318,6 +320,9 @@ exercises:
         - Ich weiß nicht, ob die Bibliothek heute auf ist.
         - Ob die Bibliothek heute geöffnet ist, weiß ich nicht.
         - Ob die Bibliothek heute offen ist, weiß ich nicht.
+        - Ob die Bibliothek heute öffnet, weiß ich nicht.
+        - Ich weiß nicht, ob heute die Bibliothek offen ist.
+        - Ich weiß nicht, ob die Bibliothek heute aufhat.
     known_wrong:
       - answer: Ich weiß nicht, ob die Bibliothek ist heute geöffnet.
         feedback_vi: "Sau ob, động từ chia (ist) đứng cuối câu: …, ob die Bibliothek heute geöffnet ist."
