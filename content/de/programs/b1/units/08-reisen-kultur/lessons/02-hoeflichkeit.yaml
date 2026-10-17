@@ -1,0 +1,397 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u08-hoeflichkeit
+order_index: 2
+level: b1
+title:
+  vi: Lịch sự kiểu Đức – tiểu từ tình thái 1 (Komm doch mal vorbei!)
+objectives:
+  - vi: Hiểu và dùng các tiểu từ doch, mal, ja, denn, eben/halt để câu nói mềm và tự nhiên hơn.
+  - vi: Chọn du hay Sie đúng tình huống và biết ai thường đề nghị chuyển sang du.
+  - vi: Chào hỏi, nhận lời khen và nói thẳng mà vẫn lịch sự.
+estimated_minutes: 19
+skills: [grammar, speaking, listening]
+prerequisites: [de:lesson:b1u08-andere-laender]
+items:
+  - item: de:item:b1u08-g-modalpartikeln-1
+  - item: de:item:b1u08-hoeflich
+  - item: de:item:b1u08-unhoeflich
+  - item: de:item:b1u08-begruessung
+  - item: de:item:b1u08-begruessen
+  - item: de:item:b1u08-sich-die-hand-geben
+  - item: de:item:b1u08-duzen
+  - item: de:item:b1u08-siezen
+  - item: de:item:b1u08-missverstaendnis
+  - item: de:item:b1u08-hoeflichkeit
+  - item: de:item:b1u08-kompliment
+  - item: de:item:b1u08-direkt
+  - item: de:item:b1u08-unangenehm
+  - item: de:item:b1u08-umarmung
+  - item: de:item:b1u08-foermlich
+  - item: de:item:b1u08-locker
+  - item: de:item:b1u08-nicken
+  - item: de:item:b1u08-verabschiedung
+  - item: de:item:b1u02-umarmen
+    role: reuse
+  - item: de:item:a1u01-g-du-sie
+    role: reuse
+  - item: de:item:a1u02-g-doch
+    role: reuse
+  - item: de:item:a2u04-g-reflexiv-dativ
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được những câu mời, hỏi han tự nhiên như người Đức, ví dụ: \"Komm doch mal am Wochenende vorbei!\" hay \"Was ist denn los?\", và biết lúc nào nên chuyển từ Sie sang du."
+  - type: explain
+    text:
+      vi: "Tiểu từ tình thái (Modalpartikeln) là những từ nhỏ như doch, mal, ja, denn, eben, halt. Chúng không đổi nội dung câu mà cho biết thái độ người nói – giống \"nhé, đi, mà, nhỉ, thôi\" trong tiếng Việt. Vì vậy đừng dịch chúng từng chữ."
+  - type: explain
+    text:
+      vi: "mal làm lời nhờ, lời mời nhẹ nhàng hơn: Kannst du mal kurz helfen? doch thêm ý thúc giục thân thiện hoặc nhắc điều người kia đã biết: Komm doch mit! – Das weißt du doch! Khi đi cùng nhau, doch đứng trước mal: Komm doch mal vorbei!"
+  - type: explain
+    text:
+      vi: "ja trong câu kể nói điều cả hai đều biết, hoặc tỏ ra ngạc nhiên: Du kennst ja Berlin. – Das ist ja toll! denn chỉ dùng trong câu hỏi, làm câu hỏi thân mật, quan tâm hơn: Was ist denn los? eben và halt (halt khẩu ngữ hơn) nghĩa là \"thì vậy thôi\", chấp nhận điều không đổi được: Das ist halt so."
+  - type: explain
+    text:
+      vi: "Tiểu từ đứng ở giữa câu: sau động từ chia, thường sau đại từ và trước phần thông tin mới (Kannst du mir mal helfen?). Không đặt chúng ở đầu câu như trạng từ (không nói Mal kannst du …), trừ vài cụm cố định như Mal sehen!"
+  - type: explain
+    text:
+      vi: "Đừng dịch doch thành \"nhưng\" trong mọi câu. doch đầu câu có thể là \"nhưng\" (Doch dann kam der Regen); doch trả lời câu hỏi phủ định là \"có chứ\" (Kommst du nicht? – Doch!); còn doch giữa câu là tiểu từ tình thái."
+  - type: explain
+    text:
+      vi: "Với người lạ, người lớn tuổi và trong công việc, nhiều người dùng Sie; giữa bạn bè, trong gia đình, giữa sinh viên thì dùng du. Thường người lớn tuổi hơn hoặc cấp trên đề nghị chuyển sang du: Wollen wir uns duzen? Nhiều công ty trẻ duzen ngay từ đầu, nên khi chưa chắc, bạn cứ dùng Sie hoặc hỏi."
+  - type: explain
+    text:
+      vi: "Trong bối cảnh trang trọng, người ta thường bắt tay khi gặp (sich die Hand geben); bạn thân có thể ôm nhau. Nhiều người Đức nói khá thẳng (Das finde ich nicht so gut), và điều đó thường không có nghĩa là bất lịch sự. Người Việt hay nói vòng để giữ hoà khí; cả hai cách đều là lịch sự, chỉ khác thói quen – và mỗi người mỗi khác."
+  - type: deep_explain
+    text:
+      vi: "Trọng âm đổi nghĩa: doch, ja không nhấn là tiểu từ; còn JA được nhấn trong câu mệnh lệnh là lời dặn mạnh (Komm JA nicht zu spät! = nhớ đừng có đến muộn đấy). Câu hỏi với denn đôi khi mang ý ngạc nhiên hoặc hơi trách: Was machst du denn hier? (sao bạn lại ở đây?). Tiểu từ mang sắc thái khẩu ngữ, nên trong e-mail gửi cơ quan bạn hạn chế dùng chúng. Khi được khen, người Đức thường đáp gọn Danke! hoặc Danke, das freut mich; cách chối khéo của người Việt (\"đâu có\") có thể làm người nghe bối rối. Cụm sich die Hand geben dùng đại từ Dativ (uns, euch, sich = cho nhau), giống sich die Hände waschen bạn đã học. Trong thư, du/dich viết thường hay viết hoa (Du/Dich) đều đúng, còn Sie/Ihnen lịch sự luôn viết hoa."
+  - type: example
+    target: Komm doch mal am Wochenende vorbei! – Gern, danke für die Einladung!
+    target_lang: de
+    translation:
+      vi: Cuối tuần ghé nhà mình chơi nhé! – Ừ, cảm ơn bạn đã mời!
+    note:
+      vi: "Giữa bạn bè (du). doch mal làm lời mời thân thiện, nhiệt tình hơn câu Komm am Wochenende vorbei."
+  - type: example
+    target: Was ist denn los? Du siehst müde aus.
+    target_lang: de
+    translation:
+      vi: Có chuyện gì thế? Trông bạn mệt quá.
+    note:
+      vi: "denn làm câu hỏi thân mật, tỏ ra quan tâm. aussehen là động từ tách: siehst … aus."
+  - type: example
+    target: Sie sprechen ja schon sehr gut Deutsch! – Danke für das Kompliment!
+    target_lang: de
+    translation:
+      vi: Anh nói tiếng Đức giỏi quá! – Cảm ơn lời khen!
+    note:
+      vi: "Sie lịch sự (ví dụ với đồng nghiệp mới). ja diễn tả ngạc nhiên vui vẻ; người được khen đáp gọn bằng lời cảm ơn."
+  - type: example
+    target: Der Zug hat Verspätung. – Das ist halt so, da kann man nichts machen.
+    target_lang: de
+    translation:
+      vi: Tàu bị trễ. – Thì vậy thôi, chẳng làm gì được.
+    note:
+      vi: "halt (hoặc eben) = chấp nhận điều không đổi được."
+  - type: example
+    target: Frau Nguyen, wir arbeiten ja schon lange zusammen. Wollen wir uns nicht duzen? Ich bin Monika.
+    target_lang: de
+    translation:
+      vi: Chị Nguyễn, chúng ta làm việc với nhau lâu rồi. Mình xưng hô thân mật với nhau nhé? Tôi là Monika.
+    note:
+      vi: "Đồng nghiệp lớn tuổi hơn đề nghị chuyển từ Sie sang du. Wollen wir uns nicht duzen? là lời đề nghị lịch sự, không phải câu phủ định thật. ja = điều cả hai đều biết."
+  - type: example
+    target: Bei der Begrüßung geben wir uns die Hand.
+    target_lang: de
+    translation:
+      vi: Khi chào hỏi, chúng tôi bắt tay nhau.
+    note:
+      vi: "uns là Dativ phản thân (cho nhau), die Hand là Akkusativ – giống wir waschen uns die Hände."
+  - type: common_mistake
+    wrong: Mal kannst du mir helfen?
+    right: Kannst du mir mal helfen?
+    target_lang: de
+    note:
+      vi: "mal đứng giữa câu, sau động từ và đại từ, không đứng đầu câu."
+  - type: common_mistake
+    wrong: Doch komm mit!
+    right: Komm doch mit!
+    target_lang: de
+    note:
+      vi: "Người Việt hay hiểu doch = \"nhưng\" và đặt ở đầu câu. Muốn thúc giục thân thiện (đi cùng đi mà!), doch đứng sau động từ."
+  - type: common_mistake
+    wrong: Guten Tag, Herr Weber, wie geht es dir?
+    right: Guten Tag, Herr Weber, wie geht es Ihnen?
+    target_lang: de
+    note:
+      vi: "Herr/Frau + họ thường đi với Sie, nên dùng Ihnen. dir chỉ dùng khi hai người đã thoả thuận duzen."
+  - type: common_mistake
+    wrong: Ich habe denn keine Zeit.
+    right: Ich habe halt keine Zeit.
+    target_lang: de
+    note:
+      vi: "denn tình thái chỉ dùng trong câu hỏi. Muốn nói \"thì không có thời gian thôi\", dùng halt hoặc eben."
+  - type: summary
+    points:
+      - vi: "Tiểu từ tình thái thêm thái độ, không đổi nội dung; không dịch từng chữ."
+      - vi: "doch: thúc giục/nhắc (Komm doch mit!); mal: làm nhẹ lời nhờ (Hilf mir mal!)."
+      - vi: "ja: điều đã biết/ngạc nhiên (Das ist ja toll!); denn: câu hỏi thân mật (Was ist denn los?)."
+      - vi: "eben/halt: chấp nhận (Das ist halt so)."
+      - vi: "Vị trí: giữa câu, sau động từ và đại từ; doch trước mal."
+      - vi: "du/Sie: thường người lớn tuổi hơn/cấp trên đề nghị duzen; chưa chắc thì dùng Sie."
+      - vi: "Thẳng thắn không có nghĩa là bất lịch sự; khi được khen, đáp Danke!"
+      - vi: "Từ vựng: höflich, unhöflich, die Begrüßung, begrüßen, sich die Hand geben, duzen, siezen, das Missverständnis."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u08l2-listen-vorbei
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u08-g-modalpartikeln-1
+    prompt:
+      audio_asset_id: null
+      fallback_text: Komm doch mal am Samstag vorbei! Ich koche vietnamesisch.
+      options:
+        - { id: v2a, text: "Thứ Bảy ghé nhà mình chơi nhé! Mình sẽ nấu món Việt.", lang: vi }
+        - { id: v6b, text: "Thứ Bảy đừng ghé nhé! Mình bận nấu món Việt.", lang: vi }
+        - { id: v9c, text: "Thứ Bảy mình sẽ ghé nhà bạn. Bạn nấu món Việt nhé!", lang: vi }
+        - { id: v4d, text: "Thứ Bảy ghé nhà mình chơi nhé! Mình sẽ nấu món Đức.", lang: vi }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "Komm doch mal … vorbei! là lời mời thân thiện (ghé chơi nhé), không phải lời từ chối; người mời là người nói (Ich koche). vietnamesisch kochen = nấu món Việt."
+    display_answer: Thứ Bảy ghé nhà mình chơi nhé! Mình sẽ nấu món Việt.
+
+  - key: de:exercise:b1u08l2-listen-duzen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u08-duzen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wir arbeiten ja jetzt zusammen. Wollen wir uns nicht duzen? Ich bin Thomas.
+      options:
+        - { id: d3a, text: "Giờ chúng ta làm việc cùng nhau rồi. Mình xưng du với nhau nhé? Tôi là Thomas.", lang: vi }
+        - { id: d7b, text: "Giờ chúng ta làm việc cùng nhau rồi. Mình nên giữ cách xưng Sie. Tôi là Thomas.", lang: vi }
+        - { id: d1c, text: "Chúng ta chưa làm việc cùng nhau. Mình xưng du với nhau nhé? Tôi là Thomas.", lang: vi }
+        - { id: d5d, text: "Giờ chúng ta làm việc cùng nhau rồi. Anh không muốn xưng du với tôi à? Tôi là Thomas.", lang: vi }
+    answer:
+      correct_option_id: d3a
+    explanation:
+      vi: "Wollen wir uns nicht duzen? là lời đề nghị lịch sự chuyển sang du, không phải câu hỏi phủ định thật (\"anh không muốn … à?\"). Wir arbeiten ja jetzt zusammen: ja nhắc điều cả hai đều biết – giờ họ đã làm việc cùng nhau."
+    display_answer: Giờ chúng ta làm việc cùng nhau rồi. Mình xưng du với nhau nhé? Tôi là Thomas.
+
+  - key: de:exercise:b1u08l2-listen-halt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u08-g-modalpartikeln-1
+    prompt:
+      audio_asset_id: null
+      fallback_text: Was ist denn los? – Mein Zug fällt aus. – Das ist halt so. Nimm doch den Bus!
+      options:
+        - { id: z2a, text: "Có chuyện gì thế? – Tàu của mình bị huỷ. – Thì vậy thôi. Đi xe buýt đi!", lang: vi }
+        - { id: z6b, text: "Có chuyện gì thế? – Tàu của mình bị trễ. – Thì vậy thôi. Đi xe buýt đi!", lang: vi }
+        - { id: z9c, text: "Có chuyện gì thế? – Tàu của mình bị huỷ. – Thì vậy thôi. Đừng đi xe buýt!", lang: vi }
+        - { id: z4d, text: "Sao bạn lại ở đây? – Tàu của mình bị huỷ. – Không thể chấp nhận được! Đi xe buýt đi!", lang: vi }
+    answer:
+      correct_option_id: z2a
+    explanation:
+      vi: "Was ist denn los? = có chuyện gì thế (denn: hỏi han quan tâm). fällt aus = bị huỷ (không phải bị trễ: hat Verspätung). Das ist halt so = thì vậy thôi; Nimm doch den Bus! = đi xe buýt đi (doch: khuyên thân thiện)."
+    display_answer: Có chuyện gì thế? – Tàu của mình bị huỷ. – Thì vậy thôi. Đi xe buýt đi!
+
+  - key: de:exercise:b1u08l2-mcq-mal-position
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-g-modalpartikeln-1
+    prompt:
+      stem: "Bạn nhờ bạn cùng phòng mở cửa sổ. Câu nào đúng và tự nhiên?"
+      stem_lang: vi
+      options:
+        - { id: m3a, text: "Kannst du mal das Fenster aufmachen?", lang: de }
+        - { id: m7b, text: "Mal kannst du das Fenster aufmachen?", lang: de }
+        - { id: m1c, text: "Kannst du das Fenster aufmachen mal?", lang: de }
+        - { id: m5d, text: "Kannst mal du das Fenster aufmachen?", lang: de }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "mal đứng giữa câu, sau động từ chia (Kannst) và đại từ (du). Không đặt mal ở đầu câu, không đặt sau động từ tách ở cuối câu, và không chen giữa động từ với đại từ chủ ngữ."
+    display_answer: Kannst du mal das Fenster aufmachen?
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u08l2-fill-denn-ja-doch
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-modalpartikeln-1
+    prompt:
+      template: "(denn – ja – doch: jedes Wort einmal) A: Wo wohnst du {{b1}} jetzt? – B: In Köln. – A: Oh, Köln ist {{b2}} toll! (überrascht) – B: Komm {{b3}} mal vorbei!"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [denn]
+        b2: [ja]
+        b3: [doch]
+    known_wrong:
+      - answer: mal
+        feedback_vi: mal không có trong danh sách và câu b3 đã có mal; dùng denn, ja, doch – mỗi từ một lần.
+        error_tag: word_choice
+    explanation:
+      vi: "denn làm câu hỏi thân mật (Wo wohnst du denn jetzt?). ja trong câu cảm thán diễn tả ngạc nhiên (Köln ist ja toll!). doch đi trước mal trong lời mời thân thiện (Komm doch mal vorbei!)."
+    display_answer: "A: Wo wohnst du denn jetzt? – B: In Köln. – A: Oh, Köln ist ja toll! – B: Komm doch mal vorbei!"
+
+  - key: de:exercise:b1u08l2-fill-sieze-duzen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-siezen
+    prompt:
+      template: "Meine Chefin ist sehr förmlich, deshalb {{b1}} ich sie. Mit meinen Kommilitonen ist das anders: Wir {{b2}} uns."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [sieze]
+        b2: [duzen]
+    known_wrong:
+      - answer: siezen
+        feedback_vi: Chủ ngữ là ich nên chia sieze; còn giữa bạn học với nhau thì xưng du – wir duzen uns.
+        error_tag: verb_form
+      - answer: duze
+        feedback_vi: Sếp rất trang trọng (sehr förmlich) nên bạn xưng Sie – ich sieze sie.
+        error_tag: register_du_sie
+      - answer: siezt
+        feedback_vi: Chủ ngữ là ich – ich sieze (siezt là ngôi er/ihr).
+        error_tag: verb_form
+    explanation:
+      vi: "Sau deshalb, động từ đứng ở vị trí 2: deshalb sieze ich sie. Với người trang trọng, nhất là trong công việc, thường dùng Sie (siezen); giữa sinh viên với nhau thường dùng du (duzen): Wir duzen uns."
+    display_answer: "Meine Chefin ist sehr förmlich, deshalb sieze ich sie. Mit meinen Kommilitonen ist das anders: Wir duzen uns."
+
+  - key: de:exercise:b1u08l2-tr-hand
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-sich-die-hand-geben
+    prompt:
+      source_text: "Khi chào hỏi, chúng tôi bắt tay nhau."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Bei der Begrüßung geben wir uns die Hand.
+        - Wir geben uns bei der Begrüßung die Hand.
+        - Zur Begrüßung geben wir uns die Hand.
+        - Wir geben uns zur Begrüßung die Hand.
+        - Bei der Begrüßung geben wir einander die Hand.
+        - Zur Begrüßung geben wir einander die Hand.
+        - Wenn wir uns begrüßen, geben wir uns die Hand.
+    known_wrong:
+      - answer: Bei der Begrüßung geben wir die Hand.
+        feedback_vi: Thiếu đại từ Dativ (cho nhau) – geben wir uns die Hand.
+        error_tag: reflexive_missing
+      - answer: Bei der Begrüßung wir geben uns die Hand.
+        feedback_vi: Bei der Begrüßung đứng ở vị trí 1 nên động từ geben phải đứng ở vị trí 2 – Bei der Begrüßung geben wir …
+        error_tag: verb_position
+      - answer: Bei der Begrüßung geben wir uns den Hand.
+        feedback_vi: Hand là giống cái – die Hand.
+        error_tag: article
+    explanation:
+      vi: "sich die Hand geben: uns (Dativ, cho nhau) + die Hand (Akkusativ). Khi chào hỏi = bei der Begrüßung hoặc zur Begrüßung; cụm này đứng đầu thì geben ở vị trí 2."
+    display_answer: Bei der Begrüßung geben wir uns die Hand.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u08l2-wb-doch-mal
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-modalpartikeln-1
+    prompt:
+      instruction: "Sắp xếp thành câu (nói với bạn thân): \"Cuối tuần ghé nhà mình chơi nhé!\""
+      tokens:
+        - { id: p-vorbei, text: vorbei }
+        - { id: p-mal, text: mal }
+        - { id: p-am, text: am }
+        - { id: p-komm, text: Komm }
+        - { id: p-wochenende, text: Wochenende }
+        - { id: p-doch, text: doch }
+    answer:
+      orders:
+        - [p-komm, p-doch, p-mal, p-am, p-wochenende, p-vorbei]
+        - [p-komm, p-doch, p-am, p-wochenende, p-mal, p-vorbei]
+        - [p-komm, p-am, p-wochenende, p-doch, p-mal, p-vorbei]
+    explanation:
+      vi: "Mệnh lệnh: Komm đứng đầu, tiền tố tách vorbei đứng cuối. doch đứng trước mal; cụm am Wochenende có thể đứng trước, giữa hoặc sau hai tiểu từ – cả ba cách đều tự nhiên."
+    display_answer: Komm doch mal am Wochenende vorbei!
+
+  - key: de:exercise:b1u08l2-mcq-professorin
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-siezen
+    prompt:
+      stem: "Bạn gặp giáo sư hướng dẫn (bà Lange) lần đầu ở trường đại học. Câu chào nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: g2a, text: "Guten Tag, Frau Lange! Schön, Sie kennenzulernen.", lang: de }
+        - { id: g6b, text: "Hallo Petra, schön, dich kennenzulernen!", lang: de }
+        - { id: g9c, text: "Guten Tag, Frau Lange! Schön, dich kennenzulernen.", lang: de }
+        - { id: g4d, text: "Hey, wie geht's denn so?", lang: de }
+    answer:
+      correct_option_id: g2a
+    explanation:
+      vi: "Lần đầu gặp giáo sư là bối cảnh trang trọng: Frau + họ và Sie. Gọi tên riêng với du, hay trộn Frau Lange với dich đều không hợp; Hey, wie geht's denn so? chỉ dùng với bạn bè."
+    display_answer: Guten Tag, Frau Lange! Schön, Sie kennenzulernen.
+
+  - key: de:exercise:b1u08l2-tr-missverstaendnis
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u08-missverstaendnis
+    prompt:
+      source_text: Das war ein Missverständnis. Ich wollte nicht unhöflich sein.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đó là một sự hiểu lầm. Tôi không muốn bất lịch sự.
+        - Đó là một sự hiểu lầm. Tôi không có ý bất lịch sự.
+        - Đó là một hiểu lầm. Tôi không có ý bất lịch sự.
+        - Đó là hiểu lầm. Tôi không có ý bất lịch sự.
+        - Đó là hiểu lầm thôi. Tôi không có ý bất lịch sự.
+        - Đó chỉ là hiểu lầm. Tôi không có ý bất lịch sự.
+        - Đó là một sự hiểu lầm. Tôi không cố ý bất lịch sự.
+        - Đó là một sự hiểu lầm. Tôi không định tỏ ra bất lịch sự.
+        - Đó là một sự hiểu lầm. Tôi không muốn tỏ ra bất lịch sự.
+        - Đấy là một sự hiểu lầm. Tôi không có ý bất lịch sự.
+        - Đó là một sự hiểu nhầm. Tôi không có ý bất lịch sự.
+        - Đó là hiểu nhầm. Tôi không có ý bất lịch sự.
+        - Đó là một sự hiểu lầm. Mình không có ý bất lịch sự.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đó là một sự hiểu lầm. Tôi muốn bất lịch sự.
+        feedback_vi: "Câu có nicht: Ich wollte nicht unhöflich sein = tôi không có ý bất lịch sự."
+        error_tag: meaning
+    explanation:
+      vi: "das Missverständnis = sự hiểu lầm. Ich wollte nicht unhöflich sein: wollte là Präteritum của wollen, ở đây mang nghĩa \"không có ý\"."
+    display_answer: Đó là một sự hiểu lầm. Tôi không có ý bất lịch sự.

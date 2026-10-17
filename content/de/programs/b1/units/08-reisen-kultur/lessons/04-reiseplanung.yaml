@@ -1,0 +1,418 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u08-reiseplanung
+order_index: 4
+level: b1
+title:
+  vi: Lên kế hoạch chuyến đi – đề nghị lịch sự (Wir könnten doch …)
+objectives:
+  - vi: "Đưa ra đề nghị lịch sự bằng Konjunktiv II: Wir könnten …, Wie wäre es, wenn …?, Hättest du Lust, … zu …?"
+  - vi: Đáp lại đề nghị của người khác – đồng ý, từ chối nhẹ nhàng, đưa phương án khác và đi đến thoả thuận (kiểu Goethe B1 Sprechen, phần cùng lên kế hoạch).
+  - vi: Nghe và nói về chỗ ở, tuyến đường, giảm giá và huỷ đặt chỗ khi lên kế hoạch chuyến đi.
+estimated_minutes: 20
+skills: [listening, speaking]
+prerequisites: [de:lesson:b1u08-traditionen]
+items:
+  - item: de:item:b1u08-g-vorschlag-konjunktiv
+  - item: de:item:b1u08-unterkunft
+  - item: de:item:b1u08-jugendherberge
+  - item: de:item:b1u08-pension
+  - item: de:item:b1u08-campingplatz
+  - item: de:item:b1u08-rundreise
+  - item: de:item:b1u08-verbindung
+  - item: de:item:b1u08-ermaessigung
+  - item: de:item:b1u08-stornieren
+  - item: de:item:b1u08-buchung
+  - item: de:item:b1u08-anreise
+  - item: de:item:b1u08-abreise
+  - item: de:item:b1u08-stornierung
+  - item: de:item:b1u08-mitfahrgelegenheit
+  - item: de:item:b1u08-mietwagen
+  - item: de:item:b1u08-strecke
+  - item: de:item:b1u08-aufenthalt
+  - item: de:item:b1u08-reiseziel
+  - item: de:item:b1u08-wanderung
+  - item: de:item:b1u08-g-modalpartikeln-1
+    role: reuse
+  - item: de:item:a2u08-g-vorschlag-wir
+    role: reuse
+  - item: de:item:a2u05-g-reise-praepositionen
+    role: reuse
+  - item: de:item:b1u04-g-konjunktiv-ii-formen
+    role: reuse
+  - item: de:item:b1u04-g-konjunktiv-ii-modal
+    role: reuse
+  - item: de:item:b1u04-g-irreale-bedingung
+    role: reuse
+  - item: de:item:b1u05-g-falls
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn cùng người khác lên kế hoạch được một chuyến đi bằng những câu như: \"Wie wäre es, wenn wir in einer Jugendherberge übernachten?\" – \"Gute Idee, aber es wäre besser, wenn wir früh buchen.\""
+  - type: explain
+    text:
+      vi: "Ở A2 bạn đã đề nghị bằng Lass uns …! hoặc Wollen wir …? Ở B1, Konjunktiv II làm lời đề nghị mềm và lịch sự hơn: Wir könnten am Samstag fahren. Thêm doch để nghe nhiệt tình, thân thiện: Wir könnten doch zelten!"
+  - type: explain
+    text:
+      vi: "Hỏi ý người kia: Wie wäre es, wenn wir mit dem Zug fahren? (động từ cuối câu wenn) – Hättest du Lust, eine Wanderung zu machen? (zu + nguyên thể ở cuối). Khi muốn đưa phương án khác: Ich würde vorschlagen, dass wir … / Es wäre besser, wenn wir …"
+  - type: explain
+    text:
+      vi: "Đáp lại đề nghị – đồng ý: Gute Idee! / Einverstanden! / Das klingt gut. Từ chối nhẹ: công nhận ý của bạn trước (Das ist eine gute Idee, aber …), nêu lý do, rồi đưa phương án khác. Cuối cùng chốt lại: Dann machen wir es so!"
+  - type: explain
+    text:
+      vi: "Theo cấu trúc hiện tại, phần thi nói Goethe B1 có một phần hai người cùng lên kế hoạch; người chấm để ý cả việc bạn hỏi ý kiến và đáp lại đề nghị của bạn cùng thi (nên xem tài liệu mẫu chính thức vì cấu trúc có thể thay đổi). Vì vậy đừng chỉ nói ý mình bằng câu khẳng định hay mệnh lệnh (Wir fahren am Samstag!). Tiếng Việt hay nói \"hay là … nhé?\" – tiếng Đức tương ứng là Wie wäre es, wenn …? hoặc Wir könnten doch …"
+  - type: explain
+    text:
+      vi: "Chỗ ở (die Unterkunft) có nhiều loại: Hotel, Pension (nhà nghỉ nhỏ, thường do gia đình kinh doanh), Jugendherberge (nhà nghỉ thanh niên, rẻ), Campingplatz, Ferienwohnung. Nhiều nơi có Ermäßigung cho sinh viên, trẻ em hoặc nhóm; điều kiện huỷ (stornieren) miễn phí khác nhau ở mỗi nơi, nên hãy đọc kỹ trước khi đặt."
+  - type: deep_explain
+    text:
+      vi: "Bảng nhanh Konjunktiv II: könnten (có thể), sollten (nên), wäre (sẽ là), hätte (sẽ có), würde + nguyên thể (sẽ). Trong câu wenn sau Wie wäre es, bạn có thể dùng hiện tại hoặc Konjunktiv II: Wie wäre es, wenn wir zelten? / … wenn wir zelten würden? – cả hai đều đúng. Dạng ngắn: Wie wäre es mit + Dativ? (Wie wäre es mit einer Rundreise?). Ich würde vorschlagen, dass … lịch sự hơn Ich schlage vor, dass … Thêm điều kiện bằng falls: Falls es regnet, könnten wir ins Museum gehen. Ôn giới từ chỉ nơi đến: in die Berge / ans Meer (Wohin? + Akkusativ) – in den Bergen / am Meer (Wo? + Dativ). Khi bạn cùng thi đưa ý, đừng im lặng: nhắc lại ý đó (Du meinst, wir sollten …?), khen hoặc phản đối có lý do, rồi đề nghị tiếp."
+  - type: example
+    target: Wir könnten doch mit dem Zug fahren. Mit einer Ermäßigung ist das ziemlich günstig.
+    target_lang: de
+    translation:
+      vi: Mình đi tàu cũng được mà. Có giảm giá thì khá rẻ.
+    note:
+      vi: "Giữa bạn bè. könnten (Konjunktiv II của können) + doch: đề nghị thân thiện."
+  - type: example
+    target: Wie wäre es, wenn wir in einer Jugendherberge übernachten? – Gute Idee, das ist billiger als ein Hotel.
+    target_lang: de
+    translation:
+      vi: Hay là mình ngủ ở nhà nghỉ thanh niên? – Ý hay đấy, rẻ hơn khách sạn.
+    note:
+      vi: "Câu wenn: động từ übernachten đứng cuối. Người kia đồng ý và nêu lý do."
+  - type: example
+    target: Hättest du Lust, eine Rundreise durch Süddeutschland zu machen? – Ja, gern! Aber ich hätte nur eine Woche Zeit.
+    target_lang: de
+    translation:
+      vi: Bạn có muốn đi một vòng miền Nam nước Đức không? – Có chứ! Nhưng mình chỉ có một tuần thôi.
+    note:
+      vi: "Hättest du Lust, … zu + nguyên thể? lịch sự hơn Hast du Lust …? hätte = Konjunktiv II của haben."
+  - type: example
+    target: Ich würde vorschlagen, dass wir die Unterkunft heute noch buchen. Sonst ist alles ausgebucht.
+    target_lang: de
+    translation:
+      vi: Mình đề nghị là đặt chỗ ở ngay hôm nay. Không thì hết chỗ mất.
+    note:
+      vi: "Câu dass: buchen đứng cuối. ausgebucht = hết chỗ."
+  - type: example
+    target: Zelten ist eine nette Idee, aber es soll regnen. Es wäre besser, wenn wir eine Pension mit Frühstück nehmen.
+    target_lang: de
+    translation:
+      vi: Cắm trại là ý hay, nhưng dự báo trời sẽ mưa. Tốt hơn là mình lấy một nhà nghỉ có bữa sáng.
+    note:
+      vi: "Từ chối nhẹ: công nhận ý của bạn, nêu lý do (es soll regnen = nghe nói/dự báo sẽ mưa), rồi đưa phương án khác bằng es wäre besser, wenn …"
+  - type: example
+    target: Lass uns ans Meer fahren! – Ich würde lieber in die Berge fahren. Dort könnten wir wandern.
+    target_lang: de
+    translation:
+      vi: Mình đi biển đi! – Mình thì thích lên núi hơn. Ở đó mình có thể đi bộ đường dài.
+    note:
+      vi: "Lass uns … (A2) vẫn đúng và thân mật. ans Meer, in die Berge: hỏi Wohin? nên dùng Akkusativ."
+  - type: example
+    target: Falls es regnet, könnten wir ins Museum gehen. Und wenn wir mehr Zeit hätten, würden wir noch nach Prag fahren.
+    target_lang: de
+    translation:
+      vi: Nếu trời mưa thì mình có thể đi bảo tàng. Còn nếu có nhiều thời gian hơn, mình sẽ đi thêm Praha.
+    note:
+      vi: "falls = trong trường hợp (điều kiện có thể xảy ra). wenn … hätten, würden … là điều kiện không thật ở hiện tại: thực ra họ không có thêm thời gian."
+  - type: common_mistake
+    wrong: Wir fahren am Samstag nach Dresden!
+    right: Wir könnten am Samstag nach Dresden fahren. Was meinst du?
+    target_lang: de
+    note:
+      vi: "Câu khẳng định như vậy nghe như bạn đã quyết định thay người khác. Khi lên kế hoạch chung, hãy đề nghị và hỏi ý kiến."
+  - type: common_mistake
+    wrong: Wie wäre es, wenn wir fahren mit dem Bus?
+    right: Wie wäre es, wenn wir mit dem Bus fahren?
+    target_lang: de
+    note:
+      vi: "Câu phụ wenn: động từ đứng cuối."
+  - type: common_mistake
+    wrong: Hättest du Lust, eine Wanderung machen?
+    right: Hättest du Lust, eine Wanderung zu machen?
+    target_lang: de
+    note:
+      vi: "Sau Lust haben cần zu + nguyên thể."
+  - type: common_mistake
+    wrong: "Wir könnten zelten. – Ich will ein Hotel."
+    right: "Wir könnten zelten. – Zelten ist eine nette Idee, aber im Hotel ist es bequemer. Was meinst du?"
+    target_lang: de
+    note:
+      vi: "Trong thi nói, hãy đáp lại đề nghị của bạn (công nhận, nêu lý do) rồi mới đưa ý mình và hỏi lại."
+  - type: summary
+    points:
+      - vi: "Đề nghị: Wir könnten (doch) …; Wie wäre es, wenn … (động từ cuối)?; Hättest du Lust, … zu …?"
+      - vi: "Phương án khác: Ich würde vorschlagen, dass …; Es wäre besser, wenn …"
+      - vi: "Đồng ý: Gute Idee! / Einverstanden! Từ chối nhẹ: Das ist eine gute Idee, aber …"
+      - vi: "Thi nói: hỏi ý kiến, đáp lại đề nghị của bạn, chốt lại (Dann machen wir es so!)."
+      - vi: "könnten (Konjunktiv II) ≠ konnten (Präteritum)."
+      - vi: "Từ vựng: die Unterkunft, die Jugendherberge, die Pension, der Campingplatz, die Rundreise, die Verbindung, die Ermäßigung, stornieren."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u08l4-listen-jugendherberge
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u08-jugendherberge
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wie wäre es, wenn wir in einer Jugendherberge übernachten? Das ist viel billiger als ein Hotel.
+      options:
+        - { id: j2a, text: "Hay là mình ngủ ở nhà nghỉ thanh niên? Rẻ hơn khách sạn nhiều.", lang: vi }
+        - { id: j6b, text: "Mình đã ngủ ở nhà nghỉ thanh niên rồi. Rẻ hơn khách sạn nhiều.", lang: vi }
+        - { id: j9c, text: "Hay là mình ngủ ở khách sạn? Rẻ hơn nhà nghỉ thanh niên nhiều.", lang: vi }
+        - { id: j4d, text: "Hay là mình ngủ ở khu cắm trại? Rẻ hơn khách sạn nhiều.", lang: vi }
+    answer:
+      correct_option_id: j2a
+    explanation:
+      vi: "Wie wäre es, wenn …? = hay là …? (đề nghị, chưa xảy ra). in einer Jugendherberge = ở nhà nghỉ thanh niên; viel billiger als ein Hotel = rẻ hơn khách sạn nhiều."
+    display_answer: Hay là mình ngủ ở nhà nghỉ thanh niên? Rẻ hơn khách sạn nhiều.
+
+  - key: de:exercise:b1u08l4-listen-stornieren
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u08-stornieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Tag, leider müssen wir unsere Reise verschieben. Ich möchte deshalb meine Buchung für das Doppelzimmer stornieren.
+      options:
+        - { id: s3a, text: "Tiếc là chúng tôi phải hoãn chuyến đi, nên tôi muốn huỷ đặt phòng đôi.", lang: vi }
+        - { id: s7b, text: "Tiếc là chúng tôi phải hoãn chuyến đi, nên tôi muốn đổi phòng đôi sang phòng đơn.", lang: vi }
+        - { id: s1c, text: "Tiếc là chúng tôi phải hoãn chuyến đi, nên tôi muốn đặt thêm một phòng đôi.", lang: vi }
+        - { id: s5d, text: "Chúng tôi sẽ đến sớm hơn, nên tôi muốn đặt phòng đôi từ hôm nay.", lang: vi }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "verschieben = hoãn (dời lịch); die Buchung stornieren = huỷ đặt chỗ; das Doppelzimmer = phòng đôi. deshalb nối lý do với kết quả."
+    display_answer: Tiếc là chúng tôi phải hoãn chuyến đi, nên tôi muốn huỷ đặt phòng đôi.
+
+  - key: de:exercise:b1u08l4-mcq-koennten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-g-vorschlag-konjunktiv
+    prompt:
+      stem: "Bạn cùng thi nói và bạn đang lên kế hoạch một chuyến đi. Câu nào là lời đề nghị lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: k3a, text: "Wir könnten am Samstag nach Dresden fahren. Was meinst du?", lang: de }
+        - { id: k7b, text: "Wir fahren am Samstag nach Dresden, fertig!", lang: de }
+        - { id: k1c, text: "Fahr am Samstag nach Dresden!", lang: de }
+        - { id: k5d, text: "Wir konnten am Samstag nach Dresden fahren.", lang: de }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: "könnten (Konjunktiv II) + câu hỏi ý kiến là lời đề nghị lịch sự. konnten (không có dấu chấm trên o) là Präteritum: \"đã có thể\" – không phải đề nghị. Hai câu còn lại là quyết định thay người khác hoặc ra lệnh."
+    display_answer: Wir könnten am Samstag nach Dresden fahren. Was meinst du?
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u08l4-fill-waere-haettest
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-vorschlag-konjunktiv
+    prompt:
+      template: "Wie {{b1}} (sein) es, wenn wir mit dem Zug fahren? – Gute Idee! Und {{b2}} (haben) du Lust, in einer Pension zu übernachten? – Ja, aber wir {{b3}} (können) auch zelten. Das ist billiger. (alle Verben im Konjunktiv II)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [wäre]
+        b2: [hättest]
+        b3: [könnten]
+    known_wrong:
+      - answer: war
+        feedback_vi: war là Präteritum (đã là). Đề nghị cần Konjunktiv II – Wie wäre es, wenn …?
+        error_tag: konjunktiv_form
+      - answer: hattest
+        feedback_vi: hattest là Präteritum. Đề nghị lịch sự dùng Konjunktiv II có umlaut – hättest.
+        error_tag: konjunktiv_form
+      - answer: konnten
+        feedback_vi: konnten là Präteritum (đã có thể). Đề nghị dùng könnten (có umlaut).
+        error_tag: konjunktiv_form
+      - answer: hast
+        feedback_vi: Đề yêu cầu Konjunktiv II – hättest (Hast du Lust …? là thì hiện tại, kém mềm hơn).
+        error_tag: konjunktiv_form
+      - answer: können
+        feedback_vi: Đề yêu cầu Konjunktiv II – wir könnten (có umlaut).
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Konjunktiv II để đề nghị: sein → wäre, haben → hättest (ngôi du), können → könnten (ngôi wir). Dạng hiện tại (Hast du Lust …?, wir können …) cũng đúng ngữ pháp nhưng Konjunktiv II nghe mềm và lịch sự hơn."
+    display_answer: "Wie wäre es, wenn wir mit dem Zug fahren? – Gute Idee! Und hättest du Lust, in einer Pension zu übernachten? – Ja, aber wir könnten auch zelten. Das ist billiger. (alle Verben im Konjunktiv II)"
+
+  - key: de:exercise:b1u08l4-fill-ermaessigung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-ermaessigung
+    prompt:
+      template: "Für Studenten gibt es eine {{b1}} von zwanzig Prozent. Sie können Ihre Buchung bis zwei Tage vor der Anreise kostenlos {{b2}}. Danach zahlen Sie den vollen Preis."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [Ermäßigung]
+        b2: [stornieren]
+    known_wrong:
+      - answer: Rabatt
+        feedback_vi: Rabatt là giống đực (der Rabatt), không đi với eine; giảm giá cho sinh viên thường gọi là die Ermäßigung.
+        error_tag: article
+      - answer: storniert
+        feedback_vi: Sau können cần nguyên thể ở cuối câu – stornieren.
+        error_tag: verb_form
+      - answer: Stornierung
+        feedback_vi: Ở đây cần động từ nguyên thể sau können – stornieren (die Stornierung là danh từ).
+        error_tag: word_choice
+    explanation:
+      vi: "eine Ermäßigung = một mức giảm giá (giống cái, nên đi với eine). können + nguyên thể ở cuối câu: kostenlos stornieren = huỷ miễn phí."
+    display_answer: "Für Studenten gibt es eine Ermäßigung von zwanzig Prozent. Sie können Ihre Buchung bis zwei Tage vor der Anreise kostenlos stornieren. Danach zahlen Sie den vollen Preis."
+
+  - key: de:exercise:b1u08l4-tr-ans-meer
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-vorschlag-konjunktiv
+    prompt:
+      source_text: "Hay là chúng ta đi biển? (dùng Wie wäre es, wenn …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wie wäre es, wenn wir ans Meer fahren?
+        - Wie wäre es, wenn wir ans Meer fahren würden?
+        - Wie wäre es, wenn wir an das Meer fahren?
+        - Wie wäre es, wenn wir an die See fahren?
+        - Wie wäre es, wenn wir an den Strand fahren?
+        - Wie wär's, wenn wir ans Meer fahren?
+    known_wrong:
+      - answer: Wie wäre es, wenn wir fahren ans Meer?
+        feedback_vi: Trong câu wenn, động từ fahren đứng cuối – … wenn wir ans Meer fahren?
+        error_tag: verb_position
+      - answer: Wie wäre es, wenn wir am Meer fahren?
+        feedback_vi: Đi đến biển là hướng (Wohin?) nên dùng ans Meer (Akkusativ); am Meer là ở biển (Wo?).
+        error_tag: case_dat_akk
+      - answer: Wie war es, wenn wir ans Meer fahren?
+        feedback_vi: war là Präteritum; đề nghị dùng Konjunktiv II – Wie wäre es …?
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Wie wäre es, wenn + câu phụ (động từ cuối). Đi biển: ans Meer fahren – ans = an das, Akkusativ vì chỉ hướng (Wohin?). Trong câu wenn có thể dùng fahren hoặc fahren würden."
+    display_answer: Wie wäre es, wenn wir ans Meer fahren?
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u08l4-wb-lust-wanderung
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-wanderung
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bạn có muốn đi bộ đường dài trên núi không?\""
+      tokens:
+        - { id: w-machen, text: machen }
+        - { id: w-bergen, text: Bergen }
+        - { id: w-lust, text: Lust }
+        - { id: w-eine, text: eine }
+        - { id: w-haettest, text: Hättest }
+        - { id: w-zu, text: zu }
+        - { id: w-den, text: den }
+        - { id: w-komma, text: "," }
+        - { id: w-wanderung, text: Wanderung }
+        - { id: w-du, text: du }
+        - { id: w-in, text: in }
+    answer:
+      orders:
+        - [w-haettest, w-du, w-lust, w-komma, w-in, w-den, w-bergen, w-eine, w-wanderung, w-zu, w-machen]
+        - [w-haettest, w-du, w-lust, w-komma, w-eine, w-wanderung, w-in, w-den, w-bergen, w-zu, w-machen]
+    explanation:
+      vi: "Câu hỏi có/không: Hättest đứng đầu, rồi du Lust. Sau dấu phẩy là cụm zu + nguyên thể, zu machen ở cuối. in den Bergen (Wo? + Dativ) có thể đứng trước hoặc sau eine Wanderung."
+    display_answer: Hättest du Lust, in den Bergen eine Wanderung zu machen?
+
+  - key: de:exercise:b1u08l4-mcq-reaktion
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-vorschlag-konjunktiv
+    prompt:
+      stem: "Bạn cùng thi nói: \"Wir könnten doch zelten!\" Bạn không muốn cắm trại. Câu đáp nào tốt nhất cho phần thi nói?"
+      stem_lang: vi
+      options:
+        - { id: r2a, text: "Zelten ist eine nette Idee, aber es soll regnen. Wie wäre es mit einer Pension?", lang: de }
+        - { id: r6b, text: "Nein.", lang: de }
+        - { id: r9c, text: "Wir nehmen ein Hotel.", lang: de }
+        - { id: r4d, text: "Zelten? Das ist eine schlechte Idee, du hast keine Ahnung.", lang: de }
+    answer:
+      correct_option_id: r2a
+    explanation:
+      vi: "Câu tốt nhất công nhận ý của bạn (eine nette Idee), nêu lý do (es soll regnen) và đưa phương án khác bằng câu hỏi (Wie wäre es mit …?). Nein. và Wir nehmen ein Hotel. không tương tác; câu cuối thiếu lịch sự."
+    display_answer: Zelten ist eine nette Idee, aber es soll regnen. Wie wäre es mit einer Pension?
+
+  - key: de:exercise:b1u08l4-listen-kompromiss
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u08-pension
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wir könnten doch zelten. – Hm, ich weiß nicht. Es soll am Wochenende regnen. Es wäre besser, wenn wir eine Pension nehmen. – Na gut, einverstanden. Dann buche ich heute noch ein Zimmer.
+      options:
+        - { id: c3a, text: "Họ quyết định ở nhà nghỉ vì cuối tuần có thể mưa.", lang: vi }
+        - { id: c7b, text: "Họ quyết định cắm trại dù cuối tuần có thể mưa.", lang: vi }
+        - { id: c1c, text: "Họ quyết định ở khách sạn vì nhà nghỉ đã hết chỗ.", lang: vi }
+        - { id: c5d, text: "Họ chưa quyết định được, sẽ bàn lại vào cuối tuần.", lang: vi }
+    answer:
+      correct_option_id: c3a
+    explanation:
+      vi: "Người thứ hai không muốn cắm trại vì Es soll am Wochenende regnen (dự báo cuối tuần mưa) và đề nghị Pension. Người thứ nhất đồng ý (Na gut, einverstanden) và sẽ đặt phòng ngay hôm nay."
+    display_answer: Họ quyết định ở nhà nghỉ vì cuối tuần có thể mưa.
+
+  - key: de:exercise:b1u08l4-tr-frueh-buchen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u08-unterkunft
+    prompt:
+      source_text: Es wäre besser, wenn wir die Unterkunft früh buchen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tốt hơn là chúng ta đặt chỗ ở sớm.
+        - Tốt hơn là mình đặt chỗ ở sớm.
+        - Tốt hơn là chúng ta nên đặt chỗ ở sớm.
+        - Tốt hơn hết là chúng ta đặt chỗ ở sớm.
+        - Sẽ tốt hơn nếu chúng ta đặt chỗ ở sớm.
+        - Sẽ tốt hơn nếu mình đặt chỗ ở sớm.
+        - Sẽ tốt hơn nếu chúng ta đặt chỗ ở từ sớm.
+        - Tốt hơn là chúng ta đặt chỗ ở từ sớm.
+        - Tốt hơn là chúng ta đặt chỗ nghỉ sớm.
+        - Sẽ tốt hơn nếu chúng ta đặt chỗ nghỉ sớm.
+        - Tốt hơn là chúng ta đặt phòng sớm.
+        - Sẽ tốt hơn nếu chúng ta đặt phòng sớm.
+        - Tốt hơn là chúng mình đặt chỗ ở sớm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tốt hơn là chúng ta đặt chỗ ở muộn.
+        feedback_vi: "früh = sớm (không phải muộn)."
+        error_tag: meaning
+    explanation:
+      vi: "Es wäre besser, wenn … = sẽ tốt hơn nếu / tốt hơn là … (đề nghị lịch sự bằng Konjunktiv II). die Unterkunft = chỗ ở; früh buchen = đặt sớm."
+    display_answer: Tốt hơn là chúng ta đặt chỗ ở sớm.

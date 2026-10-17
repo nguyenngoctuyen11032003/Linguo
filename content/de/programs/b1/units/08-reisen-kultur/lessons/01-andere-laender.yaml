@@ -1,0 +1,407 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u08-andere-laender
+order_index: 1
+level: b1
+title:
+  vi: Nước khác, phong tục khác – thay vì, mà không (Statt zu …, ohne zu …)
+objectives:
+  - vi: So sánh phong tục ở Việt Nam và ở Đức một cách tôn trọng, không khái quát hoá.
+  - vi: Nói việc làm thay thế bằng (an)statt … zu và việc làm mà không kèm việc khác bằng ohne … zu.
+  - vi: Phân biệt hin (ra xa người nói) và her (về phía người nói) – Komm her!, Herein!, Geh hinaus!
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u07-wiederholung]
+items:
+  - item: de:item:b1u08-g-statt-ohne-zu
+  - item: de:item:b1u08-g-hin-her
+  - item: de:item:b1u08-kultur
+  - item: de:item:b1u08-sitte
+  - item: de:item:b1u08-brauch
+  - item: de:item:b1u08-tradition
+  - item: de:item:b1u08-typisch
+  - item: de:item:b1u08-vorurteil
+  - item: de:item:b1u08-klischee
+  - item: de:item:b1u08-unterschied
+  - item: de:item:b1u08-respektieren
+  - item: de:item:b1u08-verhalten
+  - item: de:item:b1u08-gastfreundschaft
+  - item: de:item:b1u08-vergleichen
+  - item: de:item:b1u08-vergleich
+  - item: de:item:b1u08-gemeinsamkeit
+  - item: de:item:b1u08-verschieden
+  - item: de:item:b1u08-ungewohnt
+  - item: de:item:b1u08-respekt
+  - item: de:item:b1u08-trinkgeld
+  - item: de:item:b1u02-neugierig
+    role: reuse
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
+  - item: de:item:a2u02-g-wechselpraepositionen
+    role: reuse
+  - item: de:item:b1u05-g-nominalisierte-adjektive
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn so sánh được phong tục hai nước, ví dụ: \"Zur Hochzeit schenken viele Gäste in Vietnam Geld, statt ein Geschenk zu kaufen.\", và hiểu vì sao khi bạn gõ cửa, người trong phòng nói \"Herein!\"."
+  - type: explain
+    text:
+      vi: "Muốn nói \"thay vì làm A, (làm B)\", bạn dùng (an)statt … zu + nguyên thể: Statt anzurufen, schreibt sie eine Nachricht. statt và anstatt cùng nghĩa; statt ngắn hơn và hay dùng khi nói. Giống \"thay vì\" của tiếng Việt, nhưng động từ đứng cuối cụm, ngay sau zu."
+  - type: explain
+    text:
+      vi: "ohne … zu + nguyên thể nghĩa là \"mà không (làm gì)\": Er isst, ohne auf die anderen zu warten. Với động từ tách, zu chen vào giữa và viết liền: ohne die Schuhe auszuziehen. Cụm ohne … zu và (an)statt … zu được ngăn với câu chính bằng dấu phẩy."
+  - type: explain
+    text:
+      vi: "Chỉ dùng zu khi người làm hai việc là một. Nếu là hai người khác nhau, dùng câu phụ ohne dass / statt dass: Er ist gegangen, ohne dass ich es gemerkt habe. Khi cụm zu đứng đầu câu, nó chiếm vị trí 1, nên động từ câu chính đứng ngay sau dấu phẩy: Ohne zu fragen, hat er ein Foto gemacht."
+  - type: explain
+    text:
+      vi: "her là hướng về phía người nói, hin là hướng ra xa người nói: Komm her! (lại đây) – Geh hin! (đi đến đó). Ghép với giới từ: herein/hinein (vào), heraus/hinaus (ra), herauf/hinauf (lên), herunter/hinunter (xuống). Ai gõ cửa phòng bạn, bạn nói Herein!, vì người đó đi vào về phía bạn."
+  - type: explain
+    text:
+      vi: "Giống Wo?/Wohin? ở giới từ hai cách, tiếng Đức tách chỗ ở và hướng đi: Die Kinder spielen draußen (Wo?) – Die Kinder gehen hinaus (Wohin?). Tương tự, oben/unten là ở trên/ở dưới, còn hinauf/herunter là đi lên/đi xuống. Khi nói, người Đức hay rút gọn thành rein, raus, rauf, runter cho cả hai hướng."
+  - type: explain
+    text:
+      vi: "Khi so sánh văn hoá, hãy nói viele Menschen, oft, in meiner Familie thay vì alle Deutschen hay alle Vietnamesen. Phong tục khác nhau theo vùng, gia đình và thế hệ, và mỗi người mỗi khác. Câu Andere Länder, andere Sitten nhắc rằng khác không có nghĩa là sai."
+  - type: deep_explain
+    text:
+      vi: "statt có hai cách dùng: giới từ + Genitiv (statt des Kaffees, đã học ở unit trước) và statt … zu + nguyên thể (statt Kaffee zu trinken). Cùng khuôn với um … zu (để) bạn đã biết: chủ ngữ chung, zu + nguyên thể ở cuối cụm, có dấu phẩy. Cụm zu thường đứng trước hoặc sau câu chính; đặt giữa câu chính (Er hat, ohne zu fragen, ein Foto gemacht) cũng đúng nhưng ít gặp hơn. Với hin/her, mẹo nhớ: her = hierher (về đây), hin = dorthin (đến đó). Khi nói, câu hỏi Woher? và Wohin? hay bị tách: Wo kommst du her? Wo gehst du hin? Ghép với động từ, hin-/her- là tiền tố tách: Kommen Sie bitte herein! – Er ist hineingegangen. Về văn hoá: những gì bạn thấy \"điển hình\" (typisch) thường chỉ đúng với một nhóm người ở một nơi; khi chưa chắc, hỏi lịch sự luôn tốt hơn đoán."
+  - type: example
+    target: Zur Hochzeit schenken viele Gäste in Vietnam Geld, statt ein Geschenk zu kaufen.
+    target_lang: de
+    translation:
+      vi: Ở Việt Nam, nhiều khách đi đám cưới mừng tiền thay vì mua quà.
+    note:
+      vi: "statt ein Geschenk zu kaufen: thay vì mua quà – zu kaufen ở cuối cụm. Chủ ngữ của cả hai việc là viele Gäste."
+  - type: example
+    target: Er isst, ohne auf die anderen zu warten.
+    target_lang: de
+    translation:
+      vi: Anh ấy ăn mà không đợi mọi người.
+    note:
+      vi: "warten auf + Akk; zu warten đứng cuối cụm ohne. Ở nhiều gia đình của cả hai nước, người ta đợi mọi người cùng bắt đầu ăn."
+  - type: example
+    target: Sie ist ins Wohnzimmer gegangen, ohne die Schuhe auszuziehen.
+    target_lang: de
+    translation:
+      vi: Cô ấy đi vào phòng khách mà không cởi giày.
+    note:
+      vi: "ausziehen là động từ tách nên zu chen vào giữa: auszuziehen. Ở Đức, có nhà cởi giày, có nhà không – nếu không chắc, bạn cứ hỏi chủ nhà."
+  - type: example
+    target: Statt anzurufen, hat sie mir eine Nachricht geschrieben.
+    target_lang: de
+    translation:
+      vi: Thay vì gọi điện, cô ấy nhắn tin cho tôi.
+    note:
+      vi: "Cụm statt … zu đứng đầu là vị trí 1, nên hat đứng ngay sau dấu phẩy."
+  - type: example
+    target: In vielen Familien in Vietnam grüßen die Jüngeren zuerst die Älteren. In Deutschland ist das oft weniger streng geregelt.
+    target_lang: de
+    translation:
+      vi: Ở nhiều gia đình Việt Nam, người nhỏ tuổi chào người lớn tuổi trước. Ở Đức, việc này thường không có quy định chặt như vậy.
+    note:
+      vi: "die Jüngeren, die Älteren: tính từ danh từ hoá (đã học ở unit trước) – viết hoa, đuôi như tính từ. Chú ý cách nói vielen, oft: không khái quát hoá."
+  - type: example
+    target: Es klopft. – Herein!
+    target_lang: de
+    translation:
+      vi: Có tiếng gõ cửa. – Mời vào!
+    note:
+      vi: "Người gõ cửa sẽ đi vào về phía người nói, nên dùng her: herein."
+  - type: example
+    target: Ich bin schon unten. Kommst du herunter?
+    target_lang: de
+    translation:
+      vi: Mình xuống dưới rồi. Bạn xuống nhé?
+    note:
+      vi: "Giữa bạn bè (du). Người nói ở dưới, người kia đi xuống về phía mình nên dùng herunter. Người nói ở trên bảo ai đi xuống thì dùng hinunter: Geh hinunter!"
+  - type: common_mistake
+    wrong: Er ist gegangen, ohne fragen.
+    right: Er ist gegangen, ohne zu fragen.
+    target_lang: de
+    note:
+      vi: "Sau ohne, động từ nguyên thể cần zu: ohne zu fragen."
+  - type: common_mistake
+    wrong: Komm hin!
+    right: Komm her!
+    target_lang: de
+    note:
+      vi: "Người kia đi về phía bạn nên dùng her. hin là hướng ra xa bạn: Geh hin!"
+  - type: common_mistake
+    wrong: Statt zu anrufen, schreibe ich eine Mail.
+    right: Statt anzurufen, schreibe ich eine Mail.
+    target_lang: de
+    note:
+      vi: "anrufen là động từ tách: zu đứng giữa tiền tố và gốc, viết liền – anzurufen."
+  - type: common_mistake
+    wrong: Ohne zu fragen, er hat ein Foto gemacht.
+    right: Ohne zu fragen, hat er ein Foto gemacht.
+    target_lang: de
+    note:
+      vi: "Cụm ohne … zu ở đầu câu là vị trí 1, nên động từ hat phải đứng ngay sau dấu phẩy."
+  - type: summary
+    points:
+      - vi: "(an)statt … zu + nguyên thể = thay vì làm gì; ohne … zu + nguyên thể = mà không làm gì."
+      - vi: "Chỉ dùng khi chung chủ ngữ; khác chủ ngữ: statt dass / ohne dass + câu phụ."
+      - vi: "zu đứng ngay trước nguyên thể ở cuối cụm; động từ tách: anzurufen, auszuziehen."
+      - vi: "Có dấu phẩy; cụm zu đứng đầu thì động từ chính đứng ngay sau dấu phẩy."
+      - vi: "her = về phía người nói (Komm her!, Herein!); hin = ra xa người nói (Geh hin!, hinaus)."
+      - vi: "draußen/drinnen, oben/unten = ở đâu (Wo?); hinaus/herein, hinauf/herunter = hướng đi (Wohin?)."
+      - vi: "So sánh văn hoá: viele, oft, manche – tránh alle, immer, jeder."
+      - vi: "Từ vựng: die Kultur, die Sitte, der Brauch, die Tradition, typisch, das Vorurteil, das Klischee, der Unterschied, respektieren."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u08l1-mcq-ohne-warten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      stem: "Chọn câu đúng: \"Anh ấy ăn mà không đợi mọi người.\""
+      stem_lang: vi
+      options:
+        - { id: o4k, text: "Er isst, ohne auf die anderen zu warten.", lang: de }
+        - { id: o8m, text: "Er isst, ohne auf die anderen warten.", lang: de }
+        - { id: o2p, text: "Er isst, ohne zu auf die anderen warten.", lang: de }
+        - { id: o6t, text: "Er isst, ohne dass auf die anderen zu warten.", lang: de }
+    answer:
+      correct_option_id: o4k
+    explanation:
+      vi: "ohne … zu: zu đứng ngay trước nguyên thể ở cuối cụm (zu warten). Thiếu zu là sai; zu không đứng ở đầu cụm; ohne dass cần một câu phụ có chủ ngữ và động từ chia, không đi với zu."
+    display_answer: Er isst, ohne auf die anderen zu warten.
+
+  - key: de:exercise:b1u08l1-mcq-herein
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-g-hin-her
+    prompt:
+      stem: "Bạn đang ngồi trong văn phòng thì có người gõ cửa. Bạn mời người đó vào. Bạn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: h3a, text: "Herein!", lang: de }
+        - { id: h7b, text: "Hinein!", lang: de }
+        - { id: h1c, text: "Hinaus!", lang: de }
+        - { id: h5d, text: "Heraus!", lang: de }
+    answer:
+      correct_option_id: h3a
+    explanation:
+      vi: "Người gõ cửa đi vào phòng, tức là về phía bạn: her + ein = herein. hinein cũng là \"vào\" nhưng theo hướng ra xa người nói (bạn đứng ngoài bảo ai vào trong); hinaus và heraus nghĩa là \"ra ngoài\"."
+    display_answer: Herein!
+
+  - key: de:exercise:b1u08l1-mcq-lesen-obst
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-ungewohnt
+    prompt:
+      stem: "Mai lebt seit einem Jahr in Hamburg. Am Anfang war vieles ungewohnt für sie. Zu ihrer ersten Einladung brachte sie Blumen mit, statt Obst zu schenken, wie man es in Vietnam oft macht. Beim Essen wartete sie, bis alle etwas auf dem Teller hatten. Heute sagt sie: Es gibt Unterschiede, aber auch viele Gemeinsamkeiten. — Richtig oder falsch? Mai hat zur Einladung Obst mitgebracht."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: brachte sie Blumen mit, statt Obst zu schenken – Mai mang hoa đến, thay vì tặng hoa quả. statt … zu nói việc không làm, nên câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u08l1-mcq-lesen-gemeinsam
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-gemeinsamkeit
+    prompt:
+      stem: "Mai lebt seit einem Jahr in Hamburg. Am Anfang war vieles ungewohnt für sie. Zu ihrer ersten Einladung brachte sie Blumen mit, statt Obst zu schenken, wie man es in Vietnam oft macht. Beim Essen wartete sie, bis alle etwas auf dem Teller hatten. Heute sagt sie: Es gibt Unterschiede, aber auch viele Gemeinsamkeiten. — Richtig oder falsch? Mai sieht heute auch Gemeinsamkeiten zwischen den Kulturen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Câu cuối: Es gibt Unterschiede, aber auch viele Gemeinsamkeiten – có khác biệt nhưng cũng có nhiều điểm chung. Vì vậy câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u08l1-fill-auszuziehen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      template: "Sie ist ins Wohnzimmer gegangen, ohne die Schuhe {{b1}} (ausziehen). Zur Hochzeit schenken viele Gäste in Vietnam Geld, statt ein Geschenk {{b2}} (kaufen)."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [auszuziehen]
+        b2: [zu kaufen]
+    known_wrong:
+      - answer: zu ausziehen
+        feedback_vi: ausziehen là động từ tách – zu chen vào giữa và viết liền – auszuziehen.
+        error_tag: separable_prefix
+      - answer: ausziehen
+        feedback_vi: Sau ohne … cần zu + nguyên thể – auszuziehen.
+        error_tag: zu_infinitive
+      - answer: kaufen
+        feedback_vi: Sau statt … cần zu + nguyên thể – zu kaufen.
+        error_tag: zu_infinitive
+      - answer: zukaufen
+        feedback_vi: kaufen không phải động từ tách, nên zu viết rời – zu kaufen.
+        error_tag: zu_infinitive
+    explanation:
+      vi: "ohne … zu / statt … zu: nguyên thể kèm zu đứng cuối cụm. ausziehen là động từ tách nên zu chen vào giữa: auszuziehen; kaufen không tách nên zu viết rời: zu kaufen."
+    display_answer: "Sie ist ins Wohnzimmer gegangen, ohne die Schuhe auszuziehen. Zur Hochzeit schenken viele Gäste in Vietnam Geld, statt ein Geschenk zu kaufen."
+
+  - key: de:exercise:b1u08l1-fill-herunter-herein
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-hin-her
+    prompt:
+      template: "Ich warte unten vor dem Haus. Kommst du {{b1}} (nach unten, zu mir)? – Später im Büro: Es klopft an der Tür. Ich sage: {{b2}}! (Die Person soll zu mir ins Zimmer kommen.)"
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [herunter, runter]
+        b2: [herein]
+    known_wrong:
+      - answer: hinunter
+        feedback_vi: Người kia đi xuống về phía bạn (bạn đang ở dưới), nên dùng her – herunter.
+        error_tag: word_choice
+      - answer: hinein
+        feedback_vi: Người gõ cửa đi vào về phía bạn, nên dùng her – Herein!
+        error_tag: word_choice
+      - answer: unten
+        feedback_vi: unten chỉ chỗ (ở dưới, Wo?); ở đây cần hướng đi xuống – herunter.
+        error_tag: word_choice
+    explanation:
+      vi: "Hướng về phía người nói dùng her: herunter (xuống chỗ tôi), herein (vào chỗ tôi). Khi nói, runter cũng đúng. unten/drinnen chỉ chỗ, không chỉ hướng."
+    display_answer: "Ich warte unten vor dem Haus. Kommst du herunter? – Später im Büro: Es klopft an der Tür. Ich sage: Herein!"
+
+  - key: de:exercise:b1u08l1-tr-verabschieden
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      source_text: "Anh ấy đã đi mà không chào tạm biệt. (dùng ohne … zu và Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Er ist gegangen, ohne sich zu verabschieden.
+        - Ohne sich zu verabschieden, ist er gegangen.
+        - Er ist weggegangen, ohne sich zu verabschieden.
+        - Ohne sich zu verabschieden, ist er weggegangen.
+        - Er ist gegangen, ohne Tschüss zu sagen.
+        - Ohne Tschüss zu sagen, ist er gegangen.
+    known_wrong:
+      - answer: Er ist gegangen, ohne sich verabschieden.
+        feedback_vi: Sau ohne cần zu trước nguyên thể – ohne sich zu verabschieden.
+        error_tag: zu_infinitive
+      - answer: Er ist gegangen, ohne zu sich verabschieden.
+        feedback_vi: zu đứng ngay trước nguyên thể, sau đại từ sich – ohne sich zu verabschieden.
+        error_tag: word_order
+      - answer: Er hat gegangen, ohne sich zu verabschieden.
+        feedback_vi: gehen là động từ chuyển động, Perfekt dùng sein – Er ist gegangen.
+        error_tag: aux_verb
+      - answer: Ohne sich zu verabschieden, er ist gegangen.
+        feedback_vi: Cụm ohne … zu ở đầu là vị trí 1, nên ist đứng ngay sau dấu phẩy – …, ist er gegangen.
+        error_tag: verb_position
+    explanation:
+      vi: "chào tạm biệt = sich verabschieden; trong cụm ohne … zu, đại từ sich đứng trước zu: ohne sich zu verabschieden. gehen dùng sein ở Perfekt: Er ist gegangen."
+    display_answer: Er ist gegangen, ohne sich zu verabschieden.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u08l1-wb-statt-anrufen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      instruction: "Sắp xếp thành câu (có một thẻ thừa): \"Thay vì gọi điện, cô ấy viết một tin nhắn.\""
+      tokens:
+        - { id: s-nachricht, text: Nachricht }
+        - { id: s-sie, text: sie }
+        - { id: s-anzurufen, text: anzurufen }
+        - { id: s-eine, text: eine }
+        - { id: s-statt, text: Statt }
+        - { id: s-zu, text: zu }
+        - { id: s-schreibt, text: schreibt }
+        - { id: s-komma, text: "," }
+    answer:
+      orders:
+        - [s-statt, s-anzurufen, s-komma, s-schreibt, s-sie, s-eine, s-nachricht]
+    explanation:
+      vi: "anrufen là động từ tách nên zu nằm sẵn bên trong anzurufen – thẻ zu là thẻ thừa. Cụm Statt anzurufen là vị trí 1, nên schreibt đứng ngay sau dấu phẩy, rồi đến chủ ngữ sie."
+    display_answer: Statt anzurufen, schreibt sie eine Nachricht.
+
+  - key: de:exercise:b1u08l1-tr-foto
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      source_text: Ohne zu fragen, hat er ein Foto von uns gemacht.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy chụp ảnh chúng tôi mà không hỏi.
+        - Anh ấy đã chụp ảnh chúng tôi mà không hỏi.
+        - Anh ấy chụp ảnh chúng tôi mà không hỏi trước.
+        - Anh ấy đã chụp ảnh chúng tôi mà không hỏi trước.
+        - Anh ấy chụp ảnh chúng tôi mà không xin phép.
+        - Anh ấy đã chụp ảnh chúng tôi mà không xin phép.
+        - Anh ấy chụp một tấm ảnh chúng tôi mà không hỏi.
+        - Anh ấy chụp ảnh bọn tôi mà không hỏi.
+        - Anh ta chụp ảnh chúng tôi mà không hỏi.
+        - Không hỏi gì, anh ấy chụp ảnh chúng tôi.
+        - Không hỏi gì, anh ấy đã chụp ảnh chúng tôi.
+        - Chẳng hỏi gì, anh ấy đã chụp ảnh chúng tôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh ấy hỏi rồi chụp ảnh chúng tôi.
+        feedback_vi: "ohne zu fragen = mà không hỏi; anh ấy không hỏi trước khi chụp."
+        error_tag: meaning
+    explanation:
+      vi: "Ohne zu fragen = mà không hỏi. hat … gemacht là Perfekt của machen; ein Foto machen = chụp ảnh. Cụm ohne … zu đứng đầu câu nên hat đứng ngay sau dấu phẩy."
+    display_answer: Anh ấy chụp ảnh chúng tôi mà không hỏi.
+
+  - key: de:exercise:b1u08l1-mcq-klischee
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-klischee
+    prompt:
+      stem: "Bạn muốn nói về khác biệt văn hoá một cách tôn trọng, không khái quát hoá. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: k2a, text: "Viele Menschen hier sind sehr pünktlich, aber natürlich ist jeder anders.", lang: de }
+        - { id: k6b, text: "Alle Deutschen sind immer pünktlich.", lang: de }
+        - { id: k9c, text: "In Vietnam trinkt jeder nur grünen Tee.", lang: de }
+        - { id: k4d, text: "Bei euch ist das falsch, bei uns ist es richtig.", lang: de }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "Câu đúng dùng viele Menschen và nói rõ mỗi người mỗi khác – không khái quát hoá. Hai câu dùng alle, immer, jeder là Klischee; câu còn lại coi phong tục khác là sai, trái với tinh thần Andere Länder, andere Sitten."
+    display_answer: Viele Menschen hier sind sehr pünktlich, aber natürlich ist jeder anders.

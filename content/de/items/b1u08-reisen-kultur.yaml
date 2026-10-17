@@ -1,0 +1,1634 @@
+# Học liệu unit B1U08 "Du lịch và khác biệt văn hoá" (Reisen und Kulturen), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U08L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên nhóm item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Nước khác, phong tục khác – statt/ohne … zu, hin/her =================
+  - key: de:item:b1u08-g-statt-ohne-zu
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "(an)statt … zu / ohne … zu + Infinitiv: Statt anzurufen, schreibt sie. Er geht, ohne zu fragen."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "(an)statt … zu = thay vì làm gì; ohne … zu = (làm việc này) mà không làm việc kia. Cụm này dùng khi người làm hai việc là một; zu đứng ngay trước nguyên thể ở cuối cụm, với động từ tách thì chen vào giữa (anzurufen, auszuziehen). Cụm được ngăn với câu chính bằng dấu phẩy và có thể đứng trước hoặc sau câu chính."
+      examples:
+        - target: Statt anzurufen, hat sie mir eine Nachricht geschrieben.
+          translation:
+            vi: Thay vì gọi điện, cô ấy nhắn tin cho tôi.
+        - target: Er ist gegangen, ohne sich zu verabschieden.
+          translation:
+            vi: Anh ấy đi mà không chào tạm biệt.
+        - target: Ohne zu fragen, hat er ein Foto von uns gemacht.
+          translation:
+            vi: Anh ấy chụp ảnh chúng tôi mà không hỏi.
+      confusion:
+        vi: "Nếu hai việc do hai người khác nhau làm, không dùng zu mà dùng câu phụ ohne dass / statt dass: Er ist gegangen, ohne dass wir es gemerkt haben. Đừng nhầm với statt + Genitiv (giới từ): statt des Kaffees."
+
+  - key: de:item:b1u08-g-hin-her
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "hin / her: Komm her! · Geh hin! · herein / hinein · herauf / hinunter"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "her chỉ hướng về phía người nói, hin chỉ hướng ra xa người nói: Komm her! (lại đây) – Geh hin! (đi đến đó). Ghép với giới từ: herein/hinein (vào), heraus/hinaus (ra), herauf/hinauf (lên), herunter/hinunter (xuống). Còn draußen/drinnen, oben/unten trả lời câu hỏi Wo? (ở đâu), không chỉ hướng."
+      examples:
+        - target: Es klopft. – Herein!
+          translation:
+            vi: Có tiếng gõ cửa. – Mời vào!
+        - target: Ich warte unten. Kommst du herunter?
+          translation:
+            vi: Mình đợi ở dưới. Bạn xuống nhé?
+        - target: Die Kinder spielen draußen. Sie sollen jetzt hereinkommen.
+          translation:
+            vi: Bọn trẻ đang chơi ở ngoài. Giờ chúng phải vào nhà.
+      confusion:
+        vi: "Khi nói, người Đức hay dùng dạng ngắn rein, raus, rauf, runter cho cả hai hướng (Komm rein! / Geh rein!). Phân biệt hướng và chỗ: Er geht hinaus (Wohin?) – Er ist draußen (Wo?)."
+
+  - key: de:item:b1u08-kultur
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kultur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn hoá
+      examples:
+        - target: Ich interessiere mich sehr für die deutsche Kultur.
+          translation:
+            vi: Tôi rất quan tâm đến văn hoá Đức.
+        - target: In vielen Kulturen spielt das gemeinsame Essen eine wichtige Rolle.
+          translation:
+            vi: Trong nhiều nền văn hoá, bữa ăn chung đóng vai trò quan trọng.
+      confusion:
+        vi: "Kultur còn có nghĩa là đời sống văn hoá – nghệ thuật (nhà hát, bảo tàng, hoà nhạc): In Berlin gibt es viel Kultur. Tính từ: kulturell (kulturelle Unterschiede)."
+
+  - key: de:item:b1u08-sitte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Sitte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong tục, lệ thói (cách cư xử được cộng đồng coi là đúng)
+      examples:
+        - target: Andere Länder, andere Sitten.
+          translation:
+            vi: Nhập gia tuỳ tục. (Nước khác, phong tục khác.)
+        - target: Nach alter Sitte feiert man das Fest mit der ganzen Familie.
+          translation:
+            vi: Theo phong tục xưa, người ta đón lễ cùng cả gia đình.
+      confusion:
+        vi: "Ba từ gần nghĩa: die Sitte (lệ thói, phép cư xử), der Brauch (phong tục gắn với một dịp, một lễ), die Tradition (truyền thống, nghĩa rộng nhất)."
+
+  - key: de:item:b1u08-brauch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Brauch, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong tục, tập quán (thường gắn với lễ, dịp đặc biệt)
+      examples:
+        - target: Zu Weihnachten gibt es in Deutschland viele alte Bräuche.
+          translation:
+            vi: Dịp Giáng sinh ở Đức có nhiều phong tục lâu đời.
+        - target: Zum Tết schenkt man Kindern nach altem Brauch Geld in roten Umschlägen.
+          translation:
+            vi: Dịp Tết, theo phong tục xưa, người ta mừng tuổi trẻ em bằng phong bao đỏ.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Bräuche. Đừng nhầm với động từ brauchen (cần)."
+
+  - key: de:item:b1u08-tradition
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Tradition, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: truyền thống
+      examples:
+        - target: Das Fest hat eine lange Tradition.
+          translation:
+            vi: Lễ hội này có truyền thống lâu đời.
+        - target: In unserer Familie ist es Tradition, am Sonntag zusammen zu essen.
+          translation:
+            vi: Trong gia đình tôi, ăn cơm cùng nhau vào Chủ nhật là truyền thống.
+      confusion:
+        vi: "Tính từ: traditionell (traditionelle Kleidung = trang phục truyền thống). Danh từ đuôi -tion là giống cái: die Tradition, die Information."
+
+  - key: de:item:b1u08-typisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: typisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: điển hình, đặc trưng
+      examples:
+        - target: Dieses Gericht ist typisch für die Region.
+          translation:
+            vi: Món này là món đặc trưng của vùng.
+        - target: Was ist für dich typisch deutsch?
+          translation:
+            vi: Với bạn, cái gì là điển hình kiểu Đức?
+      confusion:
+        vi: "typisch für + Akk (đặc trưng cho). Câu kiểu \"Das ist typisch deutsch!\" thường mang sắc thái đùa hoặc khái quát hoá, nên hãy dùng cẩn thận."
+
+  - key: de:item:b1u08-vorurteil
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Vorurteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: định kiến
+      examples:
+        - target: Man sollte keine Vorurteile gegenüber anderen Kulturen haben.
+          translation:
+            vi: Không nên có định kiến với các nền văn hoá khác.
+        - target: Viele Vorurteile verschwinden, wenn man die Menschen kennenlernt.
+          translation:
+            vi: Nhiều định kiến biến mất khi ta quen biết con người thật.
+      confusion:
+        vi: "Vorurteile gegen + Akk hoặc gegenüber + Dat (định kiến đối với ai). Vorurteil là ý kiến (thường tiêu cực) có sẵn trước khi biết rõ; Klischee là hình ảnh rập khuôn, không nhất thiết tiêu cực."
+
+  - key: de:item:b1u08-klischee
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Klischee, -s
+      ipa: /kliˈʃeː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khuôn mẫu, hình ảnh rập khuôn (về một nhóm người)
+      examples:
+        - target: Dass alle Deutschen gern Bier trinken, ist ein Klischee.
+          translation:
+            vi: Chuyện người Đức ai cũng thích uống bia là một khuôn mẫu rập khuôn.
+        - target: Der Film spielt mit Klischees über Nord und Süd.
+          translation:
+            vi: Bộ phim khai thác những khuôn mẫu về miền Bắc và miền Nam.
+      pronunciation_note:
+        vi: "Từ gốc Pháp: sch đọc /ʃ/, trọng âm ở âm tiết cuối, ee là e dài: /kliˈʃeː/."
+
+  - key: de:item:b1u08-unterschied
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Unterschied, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự khác biệt, điểm khác nhau
+      examples:
+        - target: Was ist der Unterschied zwischen einem Brauch und einer Sitte?
+          translation:
+            vi: Phong tục và lệ thói khác nhau ở điểm nào?
+        - target: Es gibt große Unterschiede zwischen Stadt und Land.
+          translation:
+            vi: Giữa thành phố và nông thôn có nhiều khác biệt lớn.
+      confusion:
+        vi: "Unterschied zwischen + Dat (khác biệt giữa …). Tính từ unterschiedlich gần nghĩa với verschieden (khác nhau)."
+
+  - key: de:item:b1u08-respektieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: respektieren
+      pos: động từ
+    back:
+      meaning:
+        vi: tôn trọng
+      examples:
+        - target: Ich respektiere deine Meinung, auch wenn ich sie nicht teile.
+          translation:
+            vi: Mình tôn trọng ý kiến của bạn, dù mình không đồng ý.
+        - target: Bitte respektieren Sie die Ruhe in der Kirche.
+          translation:
+            vi: Xin quý khách giữ yên lặng trong nhà thờ.
+      confusion:
+        vi: "Động từ đuôi -ieren không thêm ge- ở Partizip: Ich habe die Regeln respektiert. Danh từ: der Respekt (vor + Dat)."
+
+  # Zusatzwortschatz B1U08L1 (9 lemma, trường: văn hoá, phong tục)
+  - key: de:item:b1u08-verhalten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Verhalten (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành vi, cách cư xử
+      examples:
+        - target: Sein Verhalten hat mich überrascht.
+          translation:
+            vi: Cách cư xử của anh ấy làm tôi ngạc nhiên.
+        - target: Im Ausland achte ich besonders auf mein Verhalten.
+          translation:
+            vi: Ở nước ngoài, tôi đặc biệt chú ý đến cách cư xử của mình.
+      confusion:
+        vi: "Động từ phản thân: sich verhalten (cư xử), verhielt sich, hat sich verhalten. Er hat sich korrekt verhalten."
+
+  - key: de:item:b1u08-gastfreundschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gastfreundschaft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lòng hiếu khách
+      examples:
+        - target: Vielen Dank für Ihre Gastfreundschaft!
+          translation:
+            vi: Cảm ơn ông bà rất nhiều vì đã đón tiếp chu đáo!
+        - target: Die Gastfreundschaft der Familie hat mich sehr beeindruckt.
+          translation:
+            vi: Lòng hiếu khách của gia đình ấy làm tôi rất cảm động.
+      confusion:
+        vi: "Từ ghép: der Gast + die Freundschaft, nên giống cái theo từ cuối. Tính từ: gastfreundlich."
+
+  - key: de:item:b1u08-vergleichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vergleichen, vergleicht, verglich, hat verglichen
+      pos: động từ
+    back:
+      meaning:
+        vi: so sánh
+      examples:
+        - target: Man kann die beiden Länder nicht einfach vergleichen.
+          translation:
+            vi: Không thể đơn giản so sánh hai nước với nhau.
+        - target: Ich vergleiche die Preise, bevor ich ein Zimmer buche.
+          translation:
+            vi: Tôi so sánh giá trước khi đặt phòng.
+      confusion:
+        vi: "vergleichen + Akk + mit + Dat: Vietnam mit Deutschland vergleichen. Có tiền tố ver- nên Partizip không có ge-: verglichen."
+
+  - key: de:item:b1u08-vergleich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Vergleich, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự so sánh
+      examples:
+        - target: Im Vergleich zu Hanoi ist Leipzig sehr ruhig.
+          translation:
+            vi: So với Hà Nội, Leipzig rất yên tĩnh.
+        - target: Der Vergleich ist nicht fair.
+          translation:
+            vi: Phép so sánh này không công bằng.
+      confusion:
+        vi: "Cụm hay dùng: im Vergleich zu + Dat (so với)."
+
+  - key: de:item:b1u08-gemeinsamkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gemeinsamkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm chung
+      examples:
+        - target: Trotz aller Unterschiede gibt es auch viele Gemeinsamkeiten.
+          translation:
+            vi: Dù có nhiều khác biệt, vẫn có nhiều điểm chung.
+        - target: Wir haben eine wichtige Gemeinsamkeit – wir lieben gutes Essen.
+          translation:
+            vi: Chúng tôi có một điểm chung quan trọng – đều mê đồ ăn ngon.
+      confusion:
+        vi: "Danh từ đuôi -keit là giống cái. Tính từ: gemeinsam (chung, cùng nhau). Trái nghĩa: der Unterschied."
+
+  - key: de:item:b1u08-verschieden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verschieden
+      pos: tính từ
+    back:
+      meaning:
+        vi: khác nhau; nhiều (loại) khác nhau
+      examples:
+        - target: Die Menschen sind verschieden.
+          translation:
+            vi: Mỗi người mỗi khác.
+        - target: In verschiedenen Regionen gibt es verschiedene Bräuche.
+          translation:
+            vi: Ở các vùng khác nhau có những phong tục khác nhau.
+      confusion:
+        vi: "verschieden = khác nhau (giữa nhiều thứ với nhau); anders = khác (so với một thứ): Das ist hier anders als in Vietnam."
+
+  - key: de:item:b1u08-ungewohnt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ungewohnt
+      pos: tính từ
+    back:
+      meaning:
+        vi: lạ, chưa quen
+      examples:
+        - target: Das Essen war am Anfang ungewohnt für mich.
+          translation:
+            vi: Lúc đầu đồ ăn còn lạ với tôi.
+        - target: Für viele Besucher ist es ungewohnt, dass die meisten Geschäfte am Sonntag geschlossen sind.
+          translation:
+            vi: Với nhiều du khách, việc phần lớn cửa hàng đóng cửa vào Chủ nhật là điều lạ.
+      confusion:
+        vi: "ungewohnt mô tả sự việc (lạ với ai: für + Akk). Nói về người thì dùng an etwas gewöhnt sein / sich an etwas gewöhnen (quen với cái gì)."
+
+  - key: de:item:b1u08-respekt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Respekt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tôn trọng, kính trọng
+      examples:
+        - target: In vielen vietnamesischen Familien spielt Respekt vor den Älteren eine große Rolle.
+          translation:
+            vi: Trong nhiều gia đình Việt Nam, sự kính trọng người lớn tuổi có vai trò lớn.
+        - target: Wir sollten anderen Kulturen mit Respekt begegnen.
+          translation:
+            vi: Chúng ta nên đối xử với các nền văn hoá khác bằng sự tôn trọng.
+      confusion:
+        vi: "Respekt vor + Dat (tôn trọng ai, cái gì). Động từ: respektieren."
+
+  - key: de:item:b1u08-trinkgeld
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Trinkgeld, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền boa, tiền típ
+      examples:
+        - target: Im Restaurant geben viele Gäste etwa fünf bis zehn Prozent Trinkgeld.
+          translation:
+            vi: Ở nhà hàng, nhiều khách boa khoảng năm đến mười phần trăm.
+        - target: Das macht 18 Euro. – Hier sind 20, stimmt so!
+          translation:
+            vi: Tổng cộng 18 euro. – Đây là 20 euro, khỏi trả lại!
+      confusion:
+        vi: "Ở Đức, khách thường nói luôn số tiền muốn trả (kể cả tiền boa) khi thanh toán, hoặc nói Stimmt so! (khỏi thối). Mức boa là thói quen, không phải quy định, và khác nhau theo nơi và người."
+
+  # ================= Bài 2: Lịch sự kiểu Đức – tiểu từ tình thái =================
+  - key: de:item:b1u08-g-modalpartikeln-1
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Modalpartikeln: doch, mal, ja, denn, eben/halt – Komm doch mal vorbei!"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Tiểu từ tình thái không đổi nội dung câu mà thêm thái độ: doch (thúc giục thân thiện, nhắc điều người kia đã biết), mal (làm nhẹ yêu cầu), ja (điều ai cũng biết, hoặc ngạc nhiên), denn (câu hỏi thân mật, quan tâm), eben/halt (chấp nhận: thì vậy thôi). Chúng đứng ở giữa câu, sau động từ chia và thường sau đại từ. Giống \"nhé, đi, mà, nhỉ, thôi\" trong tiếng Việt, chúng thường không dịch từng chữ được."
+      examples:
+        - target: Komm doch mal vorbei!
+          translation:
+            vi: Ghé chơi đi!
+        - target: Was ist denn los?
+          translation:
+            vi: Có chuyện gì thế?
+        - target: Das ist ja toll!
+          translation:
+            vi: Hay quá nhỉ!
+        - target: Der Zug hat Verspätung. – Das ist halt so.
+          translation:
+            vi: Tàu bị trễ. – Thì vậy thôi.
+      confusion:
+        vi: "Tiểu từ doch khác doch trả lời câu hỏi phủ định (Kommst du nicht? – Doch!) và khác doch = nhưng. ja tình thái dùng trong câu kể/cảm thán, denn tình thái chỉ dùng trong câu hỏi. Đi cùng nhau: doch mal (Komm doch mal her!)."
+
+  - key: de:item:b1u08-hoeflich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: höflich
+      ipa: /ˈhøːflɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: lịch sự
+      examples:
+        - target: Der Kellner war sehr höflich.
+          translation:
+            vi: Anh phục vụ rất lịch sự.
+        - target: Es ist höflich, sich nach einer Einladung zu bedanken.
+          translation:
+            vi: Cảm ơn sau khi được mời là phép lịch sự.
+      confusion:
+        vi: "Danh từ: die Höflichkeit. Trái nghĩa: unhöflich."
+
+  - key: de:item:b1u08-unhoeflich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unhöflich
+      pos: tính từ
+    back:
+      meaning:
+        vi: bất lịch sự
+      examples:
+        - target: Viele finden es unhöflich, ohne Entschuldigung zu spät zu kommen.
+          translation:
+            vi: Nhiều người thấy đến muộn mà không xin lỗi là bất lịch sự.
+        - target: Das war nicht unhöflich gemeint.
+          translation:
+            vi: Tôi không có ý bất lịch sự đâu.
+      confusion:
+        vi: "Tiền tố un- tạo nghĩa ngược: höflich → unhöflich, freundlich → unfreundlich, gewohnt → ungewohnt."
+
+  - key: de:item:b1u08-begruessung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Begrüßung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chào hỏi, lời chào (khi gặp)
+      examples:
+        - target: Zur Begrüßung gibt man sich in vielen Firmen die Hand.
+          translation:
+            vi: Ở nhiều công ty, người ta bắt tay khi chào hỏi.
+        - target: Die Begrüßung unter Freunden ist oft locker.
+          translation:
+            vi: Bạn bè chào nhau thường rất thoải mái.
+      confusion:
+        vi: "zur Begrüßung / bei der Begrüßung = khi chào hỏi. Lúc chia tay: die Verabschiedung."
+
+  - key: de:item:b1u08-begruessen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: begrüßen
+      pos: động từ
+    back:
+      meaning:
+        vi: chào, đón chào (ai)
+      examples:
+        - target: Die Chefin begrüßt die neuen Kollegen.
+          translation:
+            vi: Chị trưởng phòng chào đón các đồng nghiệp mới.
+        - target: Ich begrüße Sie herzlich zu unserem Kurs.
+          translation:
+            vi: Tôi nhiệt liệt chào mừng quý vị đến với khoá học.
+      confusion:
+        vi: "begrüßen + Akk: Er begrüßt mich. Có tiền tố be- nên Partizip không có ge-: Sie hat uns begrüßt."
+
+  - key: de:item:b1u08-sich-die-hand-geben
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich die Hand geben
+      pos: cụm từ
+    back:
+      meaning:
+        vi: bắt tay nhau
+      examples:
+        - target: Bei der Begrüßung geben wir uns die Hand.
+          translation:
+            vi: Khi chào hỏi, chúng tôi bắt tay nhau.
+        - target: Zum Abschied haben sie sich die Hand gegeben.
+          translation:
+            vi: Lúc chia tay, họ bắt tay nhau.
+      confusion:
+        vi: "uns/euch/sich ở đây là Dativ (cho nhau), die Hand là Akkusativ – giống sich die Hände waschen. Bắt tay một người: jemandem die Hand geben (Ich gebe Ihnen die Hand)."
+
+  - key: de:item:b1u08-duzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: duzen
+      pos: động từ
+    back:
+      meaning:
+        vi: xưng hô thân mật (gọi nhau là du)
+      examples:
+        - target: Wollen wir uns duzen?
+          translation:
+            vi: Mình xưng hô thân mật (du) với nhau nhé?
+        - target: In unserer Firma duzen sich alle.
+          translation:
+            vi: Ở công ty tôi, mọi người đều xưng du với nhau.
+      confusion:
+        vi: "duzen + Akk: Ich duze ihn. Dùng với nhau: wir duzen uns. Trái nghĩa: siezen."
+
+  - key: de:item:b1u08-siezen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: siezen
+      pos: động từ
+    back:
+      meaning:
+        vi: xưng hô lịch sự (gọi nhau là Sie)
+      examples:
+        - target: Ich sieze meine Professorin.
+          translation:
+            vi: Tôi xưng Sie với cô giáo sư của tôi.
+        - target: Fremde Erwachsene siezt man normalerweise.
+          translation:
+            vi: Thông thường người ta xưng Sie với người lớn mình không quen.
+      pronunciation_note:
+        vi: "z đọc là \"ts\": siezen /ˈziːtsn̩/."
+
+  - key: de:item:b1u08-missverstaendnis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Missverständnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hiểu lầm
+      examples:
+        - target: Das war ein Missverständnis.
+          translation:
+            vi: Đó là một sự hiểu lầm.
+        - target: Um Missverständnisse zu vermeiden, frage ich lieber nach.
+          translation:
+            vi: Để tránh hiểu lầm, tôi thà hỏi lại.
+      confusion:
+        vi: "Danh từ đuôi -nis có số nhiều -nisse: die Missverständnisse. Động từ missverstehen không tách: Sie haben mich missverstanden."
+
+  # Zusatzwortschatz B1U08L2 (9 lemma, trường: phép lịch sự)
+  - key: de:item:b1u08-hoeflichkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Höflichkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự lịch sự, phép lịch sự
+      examples:
+        - target: Pünktlichkeit ist für viele Menschen eine Form der Höflichkeit.
+          translation:
+            vi: Với nhiều người, đúng giờ là một cách thể hiện sự lịch sự.
+        - target: Das hat er nur aus Höflichkeit gesagt.
+          translation:
+            vi: Anh ấy nói vậy chỉ vì phép lịch sự thôi.
+      confusion:
+        vi: "aus Höflichkeit = vì phép lịch sự. Số nhiều die Höflichkeiten = những câu xã giao."
+
+  - key: de:item:b1u08-kompliment
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Kompliment, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời khen
+      examples:
+        - target: Danke für das Kompliment!
+          translation:
+            vi: Cảm ơn lời khen nhé!
+        - target: Er hat mir ein Kompliment für mein Deutsch gemacht.
+          translation:
+            vi: Anh ấy khen tiếng Đức của tôi.
+      confusion:
+        vi: "Cụm cố định: jemandem ein Kompliment machen (khen ai). Khi được khen, người Đức thường đáp Danke!; tiếng Việt hay chối khéo (\"đâu có\"), cách đó có thể làm người Đức bối rối."
+
+  - key: de:item:b1u08-direkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: direkt
+      pos: tính từ
+    back:
+      meaning:
+        vi: thẳng thắn; trực tiếp
+      examples:
+        - target: Meine Kollegin sagt ihre Meinung sehr direkt.
+          translation:
+            vi: Đồng nghiệp của tôi nói ý kiến rất thẳng.
+        - target: Direkt bedeutet nicht unbedingt unhöflich.
+          translation:
+            vi: Thẳng thắn không nhất thiết là bất lịch sự.
+      confusion:
+        vi: "direkt còn có nghĩa là ngay, trực tiếp: Der Zug fährt direkt nach Berlin; Das Hotel liegt direkt am Meer."
+
+  - key: de:item:b1u08-unangenehm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unangenehm
+      pos: tính từ
+    back:
+      meaning:
+        vi: khó chịu; ngại, khó xử
+      examples:
+        - target: Die Situation war mir sehr unangenehm.
+          translation:
+            vi: Tình huống đó làm tôi rất khó xử.
+        - target: Es ist mir unangenehm, nach Geld zu fragen.
+          translation:
+            vi: Tôi ngại hỏi chuyện tiền bạc.
+      confusion:
+        vi: "Người cảm thấy ở Dativ: Das ist mir unangenehm (giống Das war mir peinlich)."
+
+  - key: de:item:b1u08-umarmung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Umarmung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ôm
+      examples:
+        - target: Unter Freunden ist eine Umarmung zur Begrüßung ganz normal.
+          translation:
+            vi: Giữa bạn bè, ôm nhau khi gặp là chuyện bình thường.
+        - target: Liebe Grüße und eine feste Umarmung!
+          translation:
+            vi: Gửi bạn lời chào thân thương và một cái ôm thật chặt!
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Umarmung, die Begrüßung, die Verabschiedung."
+
+  - key: de:item:b1u08-foermlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: förmlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: trang trọng, theo nghi thức; khách sáo
+      examples:
+        - target: Im Büro ist der Ton manchmal sehr förmlich.
+          translation:
+            vi: Ở văn phòng, cách nói chuyện đôi khi rất trang trọng.
+        - target: Sie müssen nicht so förmlich sein.
+          translation:
+            vi: Anh/chị không cần khách sáo vậy đâu.
+      confusion:
+        vi: "Trái nghĩa trong khẩu ngữ: locker (thoải mái). formell gần nghĩa với förmlich."
+
+  - key: de:item:b1u08-locker
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: locker
+      pos: tính từ
+    back:
+      meaning:
+        vi: thoải mái, không câu nệ (khẩu ngữ); lỏng
+      examples:
+        - target: Unser Chef ist ganz locker.
+          translation:
+            vi: Sếp của chúng tôi rất thoải mái.
+        - target: Unter Studenten ist der Umgang meistens locker.
+          translation:
+            vi: Giữa sinh viên với nhau, cách cư xử thường thoải mái.
+      confusion:
+        vi: "Nghĩa gốc là lỏng: Die Schraube ist locker (con ốc bị lỏng). Trong văn viết trang trọng, nên dùng ungezwungen hoặc entspannt."
+
+  - key: de:item:b1u08-nicken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: nicken
+      pos: động từ
+    back:
+      meaning:
+        vi: gật đầu
+      examples:
+        - target: Er nickte und lächelte.
+          translation:
+            vi: Anh ấy gật đầu và mỉm cười.
+        - target: Sie hat nur kurz genickt.
+          translation:
+            vi: Cô ấy chỉ gật đầu một cái.
+      confusion:
+        vi: "Động từ yếu: nickte, hat genickt. Lắc đầu là den Kopf schütteln."
+
+  - key: de:item:b1u08-verabschiedung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verabschiedung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chào tạm biệt, lúc chia tay
+      examples:
+        - target: Bei der Verabschiedung hat sie mich umarmt.
+          translation:
+            vi: Lúc chia tay, cô ấy ôm tôi.
+        - target: Die Verabschiedung war kurz, aber herzlich.
+          translation:
+            vi: Lời chào tạm biệt ngắn gọn nhưng ấm áp.
+      confusion:
+        vi: "Động từ: sich verabschieden (von + Dat). Gặp nhau: die Begrüßung; chia tay: die Verabschiedung."
+
+  # ================= Bài 3: Lễ hội và truyền thống – tiền tố hai kiểu, Mittelfeld =================
+  - key: de:item:b1u08-g-verbpraefixe-wechsel
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "durch-, über-, um-, unter-, wieder-: Er setzt mit der Fähre über. · Er übersetzt den Text."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Năm tiền tố này có lúc tách, có lúc không, và nghĩa thay đổi theo. Khi tách, trọng âm ở tiền tố và nghĩa thường là nghĩa đen (übersetzen = chở/đi sang bờ bên kia: Er setzt über, Partizip übergesetzt). Khi không tách, trọng âm ở gốc và nghĩa thường là nghĩa bóng (übersetzen = dịch: Er übersetzt, Partizip übersetzt, không có ge-)."
+      examples:
+        - target: Wir setzen mit der Fähre zur Insel über.
+          translation:
+            vi: Chúng tôi đi phà sang đảo.
+        - target: Kannst du mir den Brief ins Deutsche übersetzen?
+          translation:
+            vi: Bạn dịch giúp mình lá thư sang tiếng Đức được không?
+        - target: Der Lehrer wiederholt die Frage. – Der Hund holt den Ball wieder.
+          translation:
+            vi: Thầy giáo nhắc lại câu hỏi. – Con chó mang quả bóng về.
+      confusion:
+        vi: "wieder- gần như luôn tách (wiederkommen, wiedersehen); wiederholen (nhắc lại, ôn) là ngoại lệ không tách. Cặp khác: umfahren tách = đâm đổ (Er hat das Schild umgefahren), không tách = đi vòng tránh (Wir haben den Stau umfahren)."
+
+  - key: de:item:b1u08-g-mittelfeld
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Mittelfeld: TeKaMoLo (temporal – kausal – modal – lokal) · Dativ vor Akkusativ (Nomen)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Ở giữa câu, trạng ngữ thường theo thứ tự thời gian (wann?) – lý do (warum?) – cách thức (wie?) – nơi chốn (wo?/wohin?). Khi hai tân ngữ đều là danh từ, Dativ (người nhận) thường đứng trước Akkusativ (vật). Đây là trật tự trung tính, không phải luật cứng: người Đức vẫn đổi chỗ khi muốn nhấn mạnh."
+      examples:
+        - target: Wir fahren morgen wegen des Volksfests mit dem Zug nach München.
+          translation:
+            vi: Ngày mai chúng tôi đi tàu đến München vì lễ hội dân gian.
+        - target: Die Oma schenkt den Kindern einen Adventskalender.
+          translation:
+            vi: Bà tặng các cháu một chiếc lịch Mùa Vọng.
+      confusion:
+        vi: "Tiếng Việt hay nói nơi chốn trước thời gian (ở Köln vào tháng Hai), còn trật tự trung tính của tiếng Đức là thời gian trước: im Februar in Köln. Nếu Akkusativ là đại từ thì nó đứng trước Dativ: Sie schenkt ihn den Kindern."
+
+  - key: de:item:b1u08-karneval
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Karneval (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lễ hội hoá trang Karneval (trước Mùa Chay)
+      examples:
+        - target: In Köln feiert man jedes Jahr Karneval.
+          translation:
+            vi: Ở Köln, năm nào người ta cũng mở hội Karneval.
+        - target: Im Karneval verkleiden sich viele Menschen.
+          translation:
+            vi: Vào dịp Karneval, nhiều người hoá trang.
+      confusion:
+        vi: "Cùng một mùa lễ hội có tên khác nhau tuỳ vùng, ví dụ Karneval (vùng sông Rhein như Köln, Düsseldorf), Fasching (Bayern, Áo), Fastnacht hoặc Fasnacht (Tây Nam nước Đức, Thụy Sĩ)."
+
+  - key: de:item:b1u08-volksfest
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Volksfest, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lễ hội dân gian (hội chợ ngoài trời có trò chơi, quầy ăn uống)
+      examples:
+        - target: Das Oktoberfest in München ist ein sehr bekanntes Volksfest.
+          translation:
+            vi: Oktoberfest ở München là một lễ hội dân gian rất nổi tiếng.
+        - target: Auf dem Volksfest gibt es Karussells und Bratwurst.
+          translation:
+            vi: Ở lễ hội có vòng quay ngựa gỗ và xúc xích nướng.
+      confusion:
+        vi: "Từ ghép: das Volk (dân chúng) + s + das Fest. Đi lễ hội: auf das Volksfest gehen; ở lễ hội: auf dem Volksfest."
+
+  - key: de:item:b1u08-feuerwerk
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Feuerwerk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: pháo hoa (màn bắn pháo hoa)
+      examples:
+        - target: An Silvester gibt es um Mitternacht überall Feuerwerk.
+          translation:
+            vi: Đêm Giao thừa dương lịch, đúng nửa đêm khắp nơi bắn pháo hoa.
+        - target: Wir haben uns das Feuerwerk vom Balkon aus angesehen.
+          translation:
+            vi: Chúng tôi xem pháo hoa từ ban công.
+      confusion:
+        vi: "Silvester = đêm 31/12. Tết Nguyên Đán của Việt Nam có thể gọi là Tết hoặc das vietnamesische Neujahrsfest."
+
+  - key: de:item:b1u08-tracht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Tracht, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: trang phục truyền thống (của một vùng)
+      examples:
+        - target: Auf dem Oktoberfest tragen viele Besucher Tracht.
+          translation:
+            vi: Ở Oktoberfest, nhiều du khách mặc trang phục truyền thống.
+        - target: Zu besonderen Festen tragen manche Menschen in Bayern noch Tracht.
+          translation:
+            vi: Vào các dịp lễ đặc biệt, một số người ở Bayern vẫn mặc trang phục truyền thống.
+      confusion:
+        vi: "Dirndl (váy) và Lederhose (quần da) là trang phục truyền thống của vùng Bayern và Áo, không phải của cả nước Đức; mỗi vùng có Tracht riêng."
+
+  - key: de:item:b1u08-feiertag
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Feiertag, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày lễ (ngày nghỉ lễ)
+      examples:
+        - target: Am Feiertag sind die meisten Geschäfte geschlossen.
+          translation:
+            vi: Vào ngày lễ, phần lớn cửa hàng đóng cửa.
+        - target: Nicht alle Feiertage gelten in allen Bundesländern.
+          translation:
+            vi: Không phải ngày lễ nào cũng được nghỉ ở mọi bang.
+      confusion:
+        vi: "Ngày nghỉ lễ khác nhau theo bang, ví dụ lễ Ba Vua (6/1) chỉ là ngày nghỉ ở một số bang. Ngày làm việc gọi là der Werktag."
+
+  - key: de:item:b1u08-adventskalender
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Adventskalender, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: lịch Mùa Vọng (lịch có ô nhỏ mở mỗi ngày từ 1 đến 24 tháng 12)
+      examples:
+        - target: Die Kinder öffnen jeden Tag ein Türchen im Adventskalender.
+          translation:
+            vi: Mỗi ngày bọn trẻ mở một ô cửa nhỏ trên lịch Mùa Vọng.
+        - target: Ich habe meiner Schwester einen Adventskalender geschenkt.
+          translation:
+            vi: Tôi tặng em gái một chiếc lịch Mùa Vọng.
+      confusion:
+        vi: "der Advent = Mùa Vọng, bốn tuần trước Giáng sinh. Từ ghép có âm nối -s-: Advent + s + Kalender."
+
+  - key: de:item:b1u08-uebersetzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: übersetzen
+      pos: động từ
+    back:
+      meaning:
+        vi: dịch (từ ngôn ngữ này sang ngôn ngữ khác)
+      examples:
+        - target: Kannst du mir diesen Satz übersetzen?
+          translation:
+            vi: Bạn dịch giúp mình câu này được không?
+        - target: Sie hat das Buch aus dem Vietnamesischen ins Deutsche übersetzt.
+          translation:
+            vi: Cô ấy đã dịch cuốn sách từ tiếng Việt sang tiếng Đức.
+      confusion:
+        vi: "Nghĩa \"dịch\" không tách, trọng âm ở -setz-, Partizip übersetzt. Cùng chữ nhưng tách (trọng âm ở ü) nghĩa là đi/chở sang bờ bên kia: Er setzt mit der Fähre über, Partizip übergesetzt."
+
+  # Zusatzwortschatz B1U08L3 (10 lemma, trường: lễ hội)
+  - key: de:item:b1u08-kostuem
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Kostüm, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trang phục hoá trang; bộ vest nữ
+      examples:
+        - target: Was für ein Kostüm trägst du im Karneval?
+          translation:
+            vi: Dịp Karneval bạn mặc đồ hoá trang gì?
+        - target: Die Kinder haben ihre Kostüme selbst gemacht.
+          translation:
+            vi: Bọn trẻ tự làm đồ hoá trang của mình.
+      confusion:
+        vi: "Ngoài đồ hoá trang, das Kostüm còn là bộ vest nữ (áo khoác + váy). Trọng âm ở âm tiết thứ hai: Kos-TÜM."
+
+  - key: de:item:b1u08-sich-verkleiden
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich verkleiden (als + Nom)
+      pos: động từ
+    back:
+      meaning:
+        vi: hoá trang (thành ai, cái gì)
+      examples:
+        - target: Ich verkleide mich als Pirat.
+          translation:
+            vi: Mình hoá trang thành cướp biển.
+        - target: Zum Fasching haben sich die Kinder als Tiere verkleidet.
+          translation:
+            vi: Dịp Fasching, bọn trẻ hoá trang thành các con vật.
+      confusion:
+        vi: "Cần đại từ phản thân Akkusativ (mich, dich, sich) và als + Nominativ: Er verkleidet sich als Polizist."
+
+  - key: de:item:b1u08-weihnachtsmarkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Weihnachtsmarkt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chợ Giáng sinh
+      examples:
+        - target: Viele Weihnachtsmärkte öffnen Ende November.
+          translation:
+            vi: Nhiều chợ Giáng sinh mở cửa vào cuối tháng Mười Một.
+        - target: Wollen wir am Samstag auf den Weihnachtsmarkt gehen?
+          translation:
+            vi: Thứ Bảy mình đi chợ Giáng sinh nhé?
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Weihnachtsmärkte. Đi chợ: auf den Weihnachtsmarkt gehen (Wohin? + Akk); ở chợ: auf dem Weihnachtsmarkt."
+
+  - key: de:item:b1u08-gluehwein
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Glühwein, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: rượu vang nóng (đun với gia vị)
+      examples:
+        - target: Auf dem Weihnachtsmarkt trinken viele Leute Glühwein.
+          translation:
+            vi: Ở chợ Giáng sinh, nhiều người uống rượu vang nóng.
+        - target: Für Kinder gibt es Punsch ohne Alkohol.
+          translation:
+            vi: Trẻ em thì có nước trái cây nóng không cồn.
+      confusion:
+        vi: "Từ ghép: glühen (nóng rực) + der Wein. Ở nhiều chợ, cốc được tính thêm tiền cọc (Pfand) và trả lại khi bạn trả cốc."
+
+  - key: de:item:b1u08-lederhose
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Lederhose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần da (trang phục truyền thống vùng Bayern, Áo)
+      examples:
+        - target: Zum Volksfest trägt er eine Lederhose.
+          translation:
+            vi: Anh ấy mặc quần da đi lễ hội.
+        - target: Lederhosen sind teuer, aber sie halten sehr lange.
+          translation:
+            vi: Quần da đắt nhưng dùng được rất lâu.
+      confusion:
+        vi: "Từ ghép: das Leder (da) + die Hose, nên giống cái theo từ cuối. Trang phục nữ tương ứng là das Dirndl."
+
+  - key: de:item:b1u08-schmuecken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schmücken
+      pos: động từ
+    back:
+      meaning:
+        vi: trang trí (cho đẹp, nhất là dịp lễ)
+      examples:
+        - target: Vor Weihnachten schmücken viele Familien einen Weihnachtsbaum.
+          translation:
+            vi: Trước Giáng sinh, nhiều gia đình trang trí cây thông Noel.
+        - target: Zum Tết schmücken viele Familien ihre Wohnung mit Blumen.
+          translation:
+            vi: Dịp Tết, nhiều gia đình trang trí nhà cửa bằng hoa.
+      confusion:
+        vi: "Động từ yếu: schmückte, hat geschmückt. Danh từ der Schmuck = đồ trang sức, đồ trang trí."
+
+  - key: de:item:b1u08-stimmung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Stimmung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: không khí (của một sự kiện); tâm trạng
+      examples:
+        - target: Die Stimmung auf dem Fest war toll.
+          translation:
+            vi: Không khí ở lễ hội thật tuyệt.
+        - target: Heute bin ich nicht in Stimmung.
+          translation:
+            vi: Hôm nay tôi không có hứng.
+      confusion:
+        vi: "Stimmung là không khí, cảm xúc chung; die Atmosphäre gần nghĩa. Đừng nhầm với die Stimme (giọng nói)."
+
+  - key: de:item:b1u08-festumzug
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Festumzug, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đoàn diễu hành lễ hội
+      examples:
+        - target: Am Rosenmontag zieht in Köln ein großer Festumzug durch die Stadt.
+          translation:
+            vi: Vào ngày Thứ Hai Hoa Hồng, một đoàn diễu hành lớn đi qua thành phố Köln.
+        - target: Beim Festumzug werfen die Leute Süßigkeiten von den Wagen.
+          translation:
+            vi: Trong đoàn diễu hành, người ta ném kẹo từ trên xe xuống.
+      confusion:
+        vi: "der Umzug có hai nghĩa: chuyển nhà và đoàn diễu hành; Festumzug chỉ có nghĩa diễu hành. Số nhiều: die Festumzüge."
+
+  - key: de:item:b1u08-bundesland
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Bundesland, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: bang (của Đức, Áo)
+      examples:
+        - target: Deutschland hat 16 Bundesländer.
+          translation:
+            vi: Nước Đức có 16 bang.
+        - target: Die Schulferien sind in jedem Bundesland anders.
+          translation:
+            vi: Kỳ nghỉ học ở mỗi bang mỗi khác.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Bundesländer. Trong văn bản hành chính, bang thường được gọi ngắn là das Land (das Land Berlin)."
+
+  - key: de:item:b1u08-faehre
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fähre, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: phà
+      examples:
+        - target: Die Fähre zur Insel fährt jede Stunde.
+          translation:
+            vi: Phà ra đảo chạy mỗi giờ một chuyến.
+        - target: Wir setzen mit der Fähre über.
+          translation:
+            vi: Chúng tôi đi phà sang bờ bên kia.
+      confusion:
+        vi: "mit der Fähre fahren / übersetzen (đi phà). Đừng nhầm với fahren (lái, đi xe)."
+
+  # ================= Bài 4: Lên kế hoạch chuyến đi – đề nghị bằng Konjunktiv II =================
+  - key: de:item:b1u08-g-vorschlag-konjunktiv
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Vorschläge mit Konjunktiv II: Wir könnten … · Wie wäre es, wenn …? · Hättest du Lust, … zu …? · Ich würde vorschlagen, dass … · Es wäre besser, wenn …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Đề nghị bằng Konjunktiv II nghe mềm và lịch sự hơn câu mệnh lệnh: Wir könnten am Samstag fahren. Wie wäre es, wenn …? và Hättest du Lust, … zu …? mời người kia cùng quyết định. Khi muốn đưa phương án khác: Es wäre besser, wenn … / Ich würde vorschlagen, dass …"
+      examples:
+        - target: Wir könnten doch mit dem Zug fahren.
+          translation:
+            vi: Mình đi tàu cũng được mà.
+        - target: Wie wäre es, wenn wir in einer Jugendherberge übernachten?
+          translation:
+            vi: Hay là mình ngủ ở nhà nghỉ thanh niên?
+        - target: Hättest du Lust, eine Rundreise durch Bayern zu machen?
+          translation:
+            vi: Bạn có muốn đi một vòng quanh Bayern không?
+      confusion:
+        vi: "Sau wenn và dass, động từ đứng cuối (… wenn wir zelten). könnten (Konjunktiv II, có thể) khác konnten (Präteritum, đã có thể): chỉ khác dấu chấm trên o."
+
+  - key: de:item:b1u08-unterkunft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Unterkunft, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ ở (khi đi xa)
+      examples:
+        - target: Wir suchen noch eine günstige Unterkunft.
+          translation:
+            vi: Chúng tôi vẫn đang tìm một chỗ ở giá rẻ.
+        - target: Die Unterkunft war sauber und ruhig.
+          translation:
+            vi: Chỗ ở sạch sẽ và yên tĩnh.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Unterkünfte. Unterkunft là từ chung cho mọi loại: Hotel, Pension, Jugendherberge, Ferienwohnung."
+
+  - key: de:item:b1u08-jugendherberge
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Jugendherberge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà nghỉ thanh niên (chỗ ở giá rẻ, thường có phòng nhiều giường)
+      examples:
+        - target: Wir haben zwei Nächte in einer Jugendherberge übernachtet.
+          translation:
+            vi: Chúng tôi ngủ hai đêm ở một nhà nghỉ thanh niên.
+        - target: In der Jugendherberge schläft man oft in Zimmern mit mehreren Betten.
+          translation:
+            vi: Ở nhà nghỉ thanh niên, người ta thường ngủ phòng nhiều giường.
+      confusion:
+        vi: "Từ ghép: die Jugend (tuổi trẻ) + die Herberge (nhà trọ). Điều kiện ở (thẻ thành viên, giới hạn tuổi) tuỳ từng nơi và có thể thay đổi."
+
+  - key: de:item:b1u08-pension
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Pension, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà nghỉ nhỏ (thường do gia đình kinh doanh); lương hưu
+      examples:
+        - target: Wir haben ein Zimmer in einer kleinen Pension gebucht.
+          translation:
+            vi: Chúng tôi đặt một phòng ở một nhà nghỉ nhỏ.
+        - target: Die Pension liegt direkt am See.
+          translation:
+            vi: Nhà nghỉ nằm ngay cạnh hồ.
+      confusion:
+        vi: "Pension còn có nghĩa là lương hưu (in Pension gehen = về hưu). Halbpension = gồm bữa sáng và một bữa chính; Vollpension = gồm ba bữa."
+      pronunciation_note:
+        vi: "Từ gốc Pháp, nhấn âm cuối: /pãˈzi̯oːn/; nhiều người cũng đọc /paŋˈzi̯oːn/ hoặc /pɛnˈzi̯oːn/."
+
+  - key: de:item:b1u08-campingplatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Campingplatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu cắm trại
+      examples:
+        - target: Auf dem Campingplatz kann man ein Zelt aufbauen.
+          translation:
+            vi: Ở khu cắm trại có thể dựng lều.
+        - target: Der Campingplatz liegt direkt am Meer.
+          translation:
+            vi: Khu cắm trại nằm ngay sát biển.
+      pronunciation_note:
+        vi: "Camping đọc theo kiểu tiếng Anh: /ˈkɛmpɪŋ/."
+
+  - key: de:item:b1u08-rundreise
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Rundreise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến đi vòng (qua nhiều nơi)
+      examples:
+        - target: Wir machen eine Rundreise durch Vietnam.
+          translation:
+            vi: Chúng tôi đi một vòng khắp Việt Nam.
+        - target: Die Rundreise dauert zwei Wochen.
+          translation:
+            vi: Chuyến đi vòng kéo dài hai tuần.
+      confusion:
+        vi: "eine Rundreise durch + Akk machen (đi vòng qua một vùng). Chuyến đi ngắn trong ngày: der Ausflug."
+
+  - key: de:item:b1u08-verbindung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verbindung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuyến (tàu, xe) kết nối; đường liên lạc
+      examples:
+        - target: Gibt es eine direkte Verbindung nach Prag?
+          translation:
+            vi: Có tuyến đi thẳng đến Praha không?
+        - target: Die Verbindung ist schlecht, ich höre dich kaum.
+          translation:
+            vi: Đường truyền kém quá, mình gần như không nghe thấy bạn.
+      confusion:
+        vi: "Trên ứng dụng tàu xe, Verbindung là một phương án đi (giờ đi, giờ đến, số lần đổi tàu). Động từ: verbinden (nối)."
+
+  - key: de:item:b1u08-ermaessigung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ermäßigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự giảm giá (cho một nhóm người)
+      examples:
+        - target: Studenten bekommen eine Ermäßigung.
+          translation:
+            vi: Sinh viên được giảm giá.
+        - target: Gibt es eine Ermäßigung für Gruppen?
+          translation:
+            vi: Có giảm giá cho nhóm không?
+      confusion:
+        vi: "Ermäßigung là giảm giá cho đối tượng (sinh viên, trẻ em, nhóm); der Rabatt là chiết khấu khi mua; das Sonderangebot là hàng khuyến mãi. Tính từ: ermäßigt (ermäßigter Eintritt)."
+
+  - key: de:item:b1u08-stornieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: stornieren
+      pos: động từ
+    back:
+      meaning:
+        vi: huỷ (đặt chỗ, đơn hàng)
+      examples:
+        - target: Ich möchte meine Buchung stornieren.
+          translation:
+            vi: Tôi muốn huỷ đặt chỗ của mình.
+        - target: Kann man das Zimmer kostenlos stornieren?
+          translation:
+            vi: Có huỷ phòng miễn phí được không?
+      confusion:
+        vi: "Đuôi -ieren nên Partizip không có ge-: storniert. Huỷ một cuộc hẹn thường dùng absagen; huỷ đặt chỗ, đơn hàng dùng stornieren."
+
+  # Zusatzwortschatz B1U08L4 (10 lemma, trường: lưu trú, đi lại)
+  - key: de:item:b1u08-buchung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Buchung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đặt chỗ, đơn đặt (phòng, vé)
+      examples:
+        - target: Vielen Dank für Ihre Buchung!
+          translation:
+            vi: Cảm ơn quý khách đã đặt chỗ!
+        - target: Die Buchungsnummer finden Sie in der E-Mail.
+          translation:
+            vi: Quý khách tìm mã đặt chỗ trong e-mail.
+      confusion:
+        vi: "Động từ: buchen (đặt). Ghép: die Buchungsnummer (mã đặt chỗ), có âm nối -s-."
+
+  - key: de:item:b1u08-anreise
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Anreise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến đi đến; ngày đến (nơi lưu trú)
+      examples:
+        - target: Die Anreise ist am Freitag ab 15 Uhr möglich.
+          translation:
+            vi: Có thể nhận phòng từ 15 giờ thứ Sáu.
+        - target: Wie lange dauert die Anreise mit dem Zug?
+          translation:
+            vi: Đi tàu đến đó mất bao lâu?
+      confusion:
+        vi: "Anreise (đến) ↔ Abreise (rời đi). Động từ: anreisen, ist angereist."
+
+  - key: de:item:b1u08-abreise
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Abreise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lúc rời đi; ngày trả phòng
+      examples:
+        - target: Am Tag der Abreise muss man das Zimmer oft bis 10 Uhr verlassen.
+          translation:
+            vi: Vào ngày đi, thường phải trả phòng trước 10 giờ.
+        - target: Kurz vor der Abreise wurde ich krank.
+          translation:
+            vi: Ngay trước hôm đi thì tôi bị ốm.
+      confusion:
+        vi: "Động từ: abreisen, ist abgereist (tách, dùng sein)."
+
+  - key: de:item:b1u08-stornierung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Stornierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự huỷ (đặt chỗ)
+      examples:
+        - target: Eine kostenlose Stornierung ist bis zwei Tage vor der Anreise möglich.
+          translation:
+            vi: Có thể huỷ miễn phí đến hai ngày trước ngày đến.
+        - target: Ich habe die Bestätigung meiner Stornierung noch nicht bekommen.
+          translation:
+            vi: Tôi vẫn chưa nhận được xác nhận huỷ.
+      confusion:
+        vi: "Danh từ của stornieren, đuôi -ung nên giống cái. Điều kiện huỷ miễn phí khác nhau ở mỗi nơi, nên luôn đọc kỹ."
+
+  - key: de:item:b1u08-mitfahrgelegenheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Mitfahrgelegenheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đi nhờ xe (chia tiền xăng với người lái)
+      examples:
+        - target: Ich fahre mit einer Mitfahrgelegenheit nach Hamburg.
+          translation:
+            vi: Tôi đi nhờ xe (có góp tiền) đến Hamburg.
+        - target: Mitfahrgelegenheiten findet man oft im Internet.
+          translation:
+            vi: Chuyến đi nhờ xe thường tìm được trên mạng.
+      confusion:
+        vi: "Từ ghép dài: mitfahren (đi cùng) + die Gelegenheit (cơ hội). Giống cái theo từ cuối."
+
+  - key: de:item:b1u08-mietwagen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Mietwagen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe thuê (ô tô)
+      examples:
+        - target: Mit dem Mietwagen sind wir flexibler.
+          translation:
+            vi: Đi xe thuê thì chúng ta linh hoạt hơn.
+        - target: Den Mietwagen holen wir am Flughafen ab.
+          translation:
+            vi: Chúng tôi nhận xe thuê ở sân bay.
+      confusion:
+        vi: "Từ ghép: mieten (thuê) + der Wagen. Số nhiều giống số ít: die Mietwagen."
+
+  - key: de:item:b1u08-strecke
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Strecke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quãng đường; tuyến đường
+      examples:
+        - target: Die Strecke von Berlin nach München ist etwa 600 Kilometer lang.
+          translation:
+            vi: Quãng đường từ Berlin đến München dài khoảng 600 ki-lô-mét.
+        - target: Auf dieser Strecke fahren die Züge jede halbe Stunde.
+          translation:
+            vi: Trên tuyến này, cứ nửa tiếng có một chuyến tàu.
+      confusion:
+        vi: "Strecke là quãng/tuyến (khoảng cách, đường đi); der Weg là đường đi nói chung, cách đi."
+
+  - key: de:item:b1u08-aufenthalt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Aufenthalt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian lưu lại, kỳ lưu trú
+      examples:
+        - target: Wir wünschen Ihnen einen schönen Aufenthalt!
+          translation:
+            vi: Chúc quý khách có kỳ lưu trú vui vẻ!
+        - target: Während meines Aufenthalts in Wien habe ich viel gelernt.
+          translation:
+            vi: Trong thời gian ở Viên, tôi đã học được nhiều điều.
+      confusion:
+        vi: "Ở ga tàu, Aufenthalt còn là thời gian tàu dừng: Der Zug hat fünf Minuten Aufenthalt."
+
+  - key: de:item:b1u08-reiseziel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Reiseziel, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm đến (du lịch)
+      examples:
+        - target: Die Ostsee ist ein beliebtes Reiseziel.
+          translation:
+            vi: Biển Baltic là một điểm đến được ưa chuộng.
+        - target: Was ist dein nächstes Reiseziel?
+          translation:
+            vi: Điểm đến tiếp theo của bạn là đâu?
+      confusion:
+        vi: "Từ ghép: die Reise + das Ziel (đích), nên giống trung theo từ cuối."
+
+  - key: de:item:b1u08-wanderung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wanderung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến đi bộ đường dài (dã ngoại)
+      examples:
+        - target: Wir könnten eine Wanderung in den Bergen machen.
+          translation:
+            vi: Mình có thể đi bộ đường dài trên núi.
+        - target: Die Wanderung dauert etwa vier Stunden.
+          translation:
+            vi: Chuyến đi bộ kéo dài khoảng bốn tiếng.
+      confusion:
+        vi: "eine Wanderung machen = wandern (đi bộ đường dài). Khác với spazieren gehen (đi dạo ngắn)."

@@ -1,0 +1,423 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u08-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – e-mail khiếu nại sau chuyến đi (Wiederholung)
+objectives:
+  - vi: Viết e-mail khiếu nại hoặc hỏi thông tin trang trọng khoảng 80–100 từ – nêu vấn đề cụ thể, yêu cầu lịch sự, chào kết đúng chuẩn.
+  - vi: Đọc tờ thông tin, nội quy du lịch và tìm đúng chi tiết (kiểu Goethe B1 Lesen, phần đọc quy định – hướng dẫn).
+  - vi: Ôn statt/ohne … zu, hin/her, tiểu từ tình thái, tiền tố tách/không tách, trật tự giữa câu và đề nghị bằng Konjunktiv II.
+estimated_minutes: 24
+skills: [reading, writing, speaking]
+prerequisites: [de:lesson:b1u08-reiseplanung]
+items:
+  - item: de:item:b1u08-g-statt-ohne-zu
+    role: reuse
+  - item: de:item:b1u08-g-hin-her
+    role: reuse
+  - item: de:item:b1u08-g-modalpartikeln-1
+    role: reuse
+  - item: de:item:b1u08-g-verbpraefixe-wechsel
+    role: reuse
+  - item: de:item:b1u08-g-mittelfeld
+    role: reuse
+  - item: de:item:b1u08-g-vorschlag-konjunktiv
+    role: reuse
+  - item: de:item:b1u08-unterkunft
+    role: reuse
+  - item: de:item:b1u08-jugendherberge
+    role: reuse
+  - item: de:item:b1u08-pension
+    role: reuse
+  - item: de:item:b1u08-stornieren
+    role: reuse
+  - item: de:item:b1u08-stornierung
+    role: reuse
+  - item: de:item:b1u08-ermaessigung
+    role: reuse
+  - item: de:item:b1u08-anreise
+    role: reuse
+  - item: de:item:b1u08-abreise
+    role: reuse
+  - item: de:item:b1u08-aufenthalt
+    role: reuse
+  - item: de:item:b1u08-buchung
+    role: reuse
+  - item: de:item:b1u08-feuerwerk
+    role: reuse
+  - item: de:item:b1u08-hoeflich
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được e-mail khiếu nại trang trọng sau một chuyến đi, đọc hiểu nội quy của một nơi lưu trú và nghe hiểu các cuộc gọi, lời đề nghị ngắn khi đi du lịch.
+  - type: explain
+    text:
+      vi: "E-mail khiếu nại trang trọng gồm: lời chào (Sehr geehrte Damen und Herren, / Sehr geehrte Frau …, / Sehr geehrter Herr …,), lý do viết (ich schreibe Ihnen, weil …), vấn đề cụ thể (ngày, phòng, điều gì không đúng), yêu cầu, và lời chào cuối Mit freundlichen Grüßen + họ tên. Sau dấu phẩy của lời chào, câu tiếp theo bắt đầu bằng chữ thường."
+  - type: explain
+    text:
+      vi: "Trong thư trang trọng, Sie/Ihnen/Ihr lịch sự viết hoa. Yêu cầu bằng Konjunktiv II nghe lịch sự mà vẫn rõ: Ich würde Sie bitten, mir einen Teil des Preises zu erstatten. Khiếu nại bình tĩnh, có chi tiết (ngày, giờ, đã báo lễ tân chưa) thường hiệu quả hơn những câu gay gắt."
+  - type: explain
+    text:
+      vi: "Khi đọc nội quy (Hausordnung) hay tờ thông tin, hãy đọc câu hỏi trước rồi tìm từ khoá như Anreise, Abreise, Stornierung, Ermäßigung. Chú ý các chữ nhỏ đổi nghĩa cả câu: ab (từ), bis (đến), nur, nicht, kostenlos, danach."
+  - type: explain
+    text:
+      vi: "Khi nói, ôn lại cách đề nghị (Wir könnten …, Wie wäre es, wenn …?) và tiểu từ làm câu mềm (doch, mal). Khi viết thư trang trọng thì hạn chế tiểu từ tình thái, vì chúng mang sắc thái khẩu ngữ."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, phần viết của Goethe-Zertifikat B1 có một nhiệm vụ viết tin nhắn trang trọng ngắn (khoảng 40 từ); bài khiếu nại 80–100 từ ở đây là bài luyện rộng hơn. Cấu trúc và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut. Bố cục gợi ý: 1) lý do viết, 2) hai–ba vấn đề cụ thể với thời gian và nơi chốn (trật tự TeKaMoLo), 3) bạn đã làm gì (Ich habe mich sofort an der Rezeption beschwert), 4) yêu cầu lịch sự bằng Konjunktiv II, 5) lời chào cuối. Cụm hữu ích: Leider musste ich feststellen, dass … / Statt eines ruhigen Zimmers bekamen wir … / Wir mussten abreisen, ohne … zu … Ghi mã đặt chỗ (Buchungsnummer) nếu có. Sau Mit freundlichen Grüßen không có dấu phẩy; tên viết ở dòng dưới."
+  - type: example
+    target: "Sehr geehrte Damen und Herren, vom 3. bis 6. Mai war ich mit meiner Frau Gast in Ihrer Pension. Leider waren wir sehr enttäuscht. Statt eines ruhigen Zimmers mit Seeblick bekamen wir ein kleines Zimmer direkt über der Küche. Ab sechs Uhr morgens war es dort sehr laut. Außerdem war die Dusche zwei Tage lang kaputt, obwohl ich mich gleich am ersten Abend an der Rezeption beschwert hatte."
+    target_lang: de
+    translation:
+      vi: "Kính gửi quý ông bà, từ ngày 3 đến ngày 6 tháng Năm, tôi và vợ đã ở nhà nghỉ của quý vị. Tiếc là chúng tôi rất thất vọng. Thay vì một phòng yên tĩnh nhìn ra hồ, chúng tôi nhận một phòng nhỏ ngay trên bếp. Từ sáu giờ sáng ở đó đã rất ồn. Ngoài ra vòi sen bị hỏng suốt hai ngày, dù ngay tối đầu tiên tôi đã phàn nàn với lễ tân."
+    note:
+      vi: "Phần 1 của e-mail mẫu: lời chào, thời gian lưu trú, các vấn đề cụ thể. statt + Genitiv (statt eines ruhigen Zimmers); Plusquamperfekt cho việc xảy ra trước (beschwert hatte)."
+  - type: example
+    target: "Auf Ihrer Webseite steht, dass alle Zimmer ruhig sind. Deshalb würde ich Sie bitten, uns einen Teil des Preises zu erstatten. Ich würde mich freuen, wenn Sie mir bis Ende Mai antworten könnten. Mit freundlichen Grüßen Minh Nguyen"
+    target_lang: de
+    translation:
+      vi: "Trên trang web của quý vị có ghi rằng mọi phòng đều yên tĩnh. Vì vậy tôi đề nghị quý vị hoàn lại cho chúng tôi một phần tiền phòng. Tôi rất mong nhận được hồi âm trước cuối tháng Năm. Trân trọng, Minh Nguyen"
+    note:
+      vi: "Phần 2: lý do yêu cầu, yêu cầu lịch sự bằng Konjunktiv II (würde … bitten, könnten), lời chào cuối không có dấu phẩy. Cả bài khoảng 100 từ."
+  - type: example
+    target: Anreise ab 15 Uhr, Abreise bis 10 Uhr. Eine kostenlose Stornierung ist bis drei Tage vor der Anreise möglich.
+    target_lang: de
+    translation:
+      vi: Nhận phòng từ 15 giờ, trả phòng trước 10 giờ. Có thể huỷ miễn phí đến ba ngày trước ngày đến.
+    note:
+      vi: "Văn bản nội quy hay viết ngắn, bỏ động từ. ab = từ (mốc bắt đầu), bis = đến (mốc cuối)."
+  - type: example
+    target: Wir mussten früher abreisen, ohne das Feuerwerk sehen zu können.
+    target_lang: de
+    translation:
+      vi: Chúng tôi phải về sớm mà không xem được pháo hoa.
+    note:
+      vi: "ohne … zu với động từ khiếm khuyết: sehen zu können (zu đứng trước können)."
+  - type: common_mistake
+    wrong: Sehr geehrte Damen und Herren, Ich schreibe Ihnen, weil ich mit meinem Aufenthalt nicht zufrieden war.
+    right: Sehr geehrte Damen und Herren, ich schreibe Ihnen, weil ich mit meinem Aufenthalt nicht zufrieden war.
+    target_lang: de
+    note:
+      vi: "Sau dấu phẩy của lời chào, câu tiếp theo viết thường (trừ danh từ và Sie/Ihnen)."
+  - type: common_mistake
+    wrong: Sehr geehrter Frau Weber,
+    right: Sehr geehrte Frau Weber,
+    target_lang: de
+    note:
+      vi: "Người nhận là nữ → geehrte; geehrter chỉ dùng với Herr (Sehr geehrter Herr Weber)."
+  - type: common_mistake
+    wrong: Geben Sie mir sofort mein Geld zurück!
+    right: Ich würde Sie bitten, mir einen Teil des Preises zu erstatten.
+    target_lang: de
+    note:
+      vi: "Mệnh lệnh gay gắt nghe bất lịch sự trong thư trang trọng; dùng Konjunktiv II để yêu cầu."
+  - type: common_mistake
+    wrong: Ich hoffe, du antwortest mir bald.
+    right: Ich hoffe, Sie antworten mir bald.
+    target_lang: de
+    note:
+      vi: "Thư gửi khách sạn, cơ quan: giữ Sie trong cả bài, không đổi sang du."
+  - type: summary
+    points:
+      - vi: "Thư khiếu nại: Sehr geehrte Damen und Herren, – lý do – vấn đề cụ thể – yêu cầu – Mit freundlichen Grüßen + họ tên."
+      - vi: "Yêu cầu lịch sự: Ich würde Sie bitten, … zu …; Ich würde mich freuen, wenn Sie … könnten."
+      - vi: "Sie/Ihnen/Ihr viết hoa; không dùng tiểu từ tình thái và mệnh lệnh gay gắt."
+      - vi: "Đọc nội quy: tìm từ khoá (Anreise, Abreise, Stornierung, Ermäßigung) và để ý ab, bis, nur, danach."
+      - vi: "Ôn: statt/ohne … zu; hin/her; doch, mal, ja, denn, halt; übersetzen tách/không tách; TeKaMoLo; Wir könnten …"
+exercises:
+  # ---------------- recognition: đọc (nội quy) ----------------
+  - key: de:exercise:b1u08l5-mcq-abreise
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-abreise
+    prompt:
+      stem: "Hausordnung der Jugendherberge am See: Anreise ab 15 Uhr, Abreise bis 10 Uhr. Bettwäsche ist im Preis enthalten. Frühstück gibt es von 7 bis 9 Uhr. Ab 22 Uhr bitten wir um Ruhe im Haus. Eine kostenlose Stornierung ist bis drei Tage vor der Anreise möglich, danach zahlen Sie 50 Prozent des Preises. Gruppen ab zehn Personen erhalten eine Ermäßigung. — Bis wann muss man am Abreisetag das Zimmer verlassen?"
+      stem_lang: de
+      options:
+        - { id: a1, text: "bis 10 Uhr", lang: de }
+        - { id: a2, text: "ab 15 Uhr", lang: de }
+        - { id: a3, text: "bis 9 Uhr", lang: de }
+    answer:
+      correct_option_id: a1
+    explanation:
+      vi: "Abreise bis 10 Uhr: ngày đi phải trả phòng trước 10 giờ. ab 15 Uhr là giờ nhận phòng (Anreise); 9 giờ là giờ kết thúc bữa sáng."
+    display_answer: bis 10 Uhr
+
+  - key: de:exercise:b1u08l5-mcq-stornierung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-stornierung
+    prompt:
+      stem: "Hausordnung der Jugendherberge am See: Anreise ab 15 Uhr, Abreise bis 10 Uhr. Bettwäsche ist im Preis enthalten. Frühstück gibt es von 7 bis 9 Uhr. Ab 22 Uhr bitten wir um Ruhe im Haus. Eine kostenlose Stornierung ist bis drei Tage vor der Anreise möglich, danach zahlen Sie 50 Prozent des Preises. Gruppen ab zehn Personen erhalten eine Ermäßigung. — Was passiert, wenn man zwei Tage vor der Anreise storniert?"
+      stem_lang: de
+      options:
+        - { id: b1, text: "Man zahlt die Hälfte des Preises.", lang: de }
+        - { id: b2, text: "Die Stornierung ist kostenlos.", lang: de }
+        - { id: b3, text: "Man zahlt den ganzen Preis.", lang: de }
+    answer:
+      correct_option_id: b1
+    explanation:
+      vi: "Huỷ miễn phí chỉ đến ba ngày trước ngày đến; hai ngày trước là đã quá hạn, nên phải trả 50 Prozent – một nửa giá (die Hälfte des Preises)."
+    display_answer: Man zahlt die Hälfte des Preises.
+
+  - key: de:exercise:b1u08l5-mcq-ermaessigung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-ermaessigung
+    prompt:
+      stem: "Hausordnung der Jugendherberge am See: Anreise ab 15 Uhr, Abreise bis 10 Uhr. Bettwäsche ist im Preis enthalten. Frühstück gibt es von 7 bis 9 Uhr. Ab 22 Uhr bitten wir um Ruhe im Haus. Eine kostenlose Stornierung ist bis drei Tage vor der Anreise möglich, danach zahlen Sie 50 Prozent des Preises. Gruppen ab zehn Personen erhalten eine Ermäßigung. — Wer bekommt eine Ermäßigung?"
+      stem_lang: de
+      options:
+        - { id: c1, text: "Gruppen ab zehn Personen", lang: de }
+        - { id: c2, text: "alle Studenten", lang: de }
+        - { id: c3, text: "Familien mit Kindern", lang: de }
+    answer:
+      correct_option_id: c1
+    explanation:
+      vi: "Văn bản chỉ nói Gruppen ab zehn Personen erhalten eine Ermäßigung – nhóm từ mười người được giảm giá. Sinh viên và gia đình không được nhắc đến, nên không chọn được."
+    display_answer: Gruppen ab zehn Personen
+
+  - key: de:exercise:b1u08l5-mcq-ruhe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-jugendherberge
+    prompt:
+      stem: "Hausordnung der Jugendherberge am See: Anreise ab 15 Uhr, Abreise bis 10 Uhr. Bettwäsche ist im Preis enthalten. Frühstück gibt es von 7 bis 9 Uhr. Ab 22 Uhr bitten wir um Ruhe im Haus. Eine kostenlose Stornierung ist bis drei Tage vor der Anreise möglich, danach zahlen Sie 50 Prozent des Preises. Gruppen ab zehn Personen erhalten eine Ermäßigung. — Was gilt ab 22 Uhr?"
+      stem_lang: de
+      options:
+        - { id: d1, text: "Im Haus soll es ruhig sein.", lang: de }
+        - { id: d2, text: "Das Haus wird geschlossen.", lang: de }
+        - { id: d3, text: "Man muss die Bettwäsche bezahlen.", lang: de }
+    answer:
+      correct_option_id: d1
+    explanation:
+      vi: "Ab 22 Uhr bitten wir um Ruhe im Haus = từ 22 giờ xin giữ yên tĩnh trong nhà. Văn bản không nói đóng cửa; Bettwäsche ist im Preis enthalten nghĩa là ga giường đã gồm trong giá."
+    display_answer: Im Haus soll es ruhig sein.
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u08l5-listen-heizung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u08-unterkunft
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Abend, hier ist Frau Tran aus Zimmer zwölf. Die Heizung funktioniert nicht, und es ist sehr kalt. Könnten Sie bitte jemanden schicken?
+      options:
+        - { id: e2a, text: "Khách phòng 12 báo lò sưởi hỏng, phòng rất lạnh, và nhờ cử người đến.", lang: vi }
+        - { id: e6b, text: "Khách phòng 12 muốn đổi phòng vì phòng quá nóng.", lang: vi }
+        - { id: e9c, text: "Khách phòng 12 muốn huỷ đặt phòng vì lò sưởi hỏng.", lang: vi }
+        - { id: e4d, text: "Khách phòng 20 báo lò sưởi hỏng và tự sửa được.", lang: vi }
+    answer:
+      correct_option_id: e2a
+    explanation:
+      vi: "Zimmer zwölf = phòng 12; Die Heizung funktioniert nicht = lò sưởi không hoạt động; Könnten Sie bitte jemanden schicken? = nhờ lịch sự bằng Konjunktiv II: cử ai đến."
+    display_answer: Khách phòng 12 báo lò sưởi hỏng, phòng rất lạnh, và nhờ cử người đến.
+
+  - key: de:exercise:b1u08l5-listen-stadtfuehrung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      audio_asset_id: null
+      fallback_text: Statt den ganzen Tag im Hotel zu warten, könnten wir doch eine Stadtführung machen. Was meinst du?
+      options:
+        - { id: t3a, text: "Thay vì ngồi đợi cả ngày ở khách sạn, mình đi tham quan thành phố có hướng dẫn đi. Bạn thấy sao?", lang: vi }
+        - { id: t7b, text: "Mình ở khách sạn cả ngày nên không đi tham quan thành phố được.", lang: vi }
+        - { id: t1c, text: "Mình đợi ở khách sạn cả ngày, sau đó đi tham quan thành phố.", lang: vi }
+        - { id: t5d, text: "Thay vì đi tham quan thành phố, mình ở lại khách sạn cả ngày nhé.", lang: vi }
+    answer:
+      correct_option_id: t3a
+    explanation:
+      vi: "Statt … zu warten = thay vì đợi (việc không làm). könnten wir doch … machen = đề nghị thân thiện: mình đi … đi. Was meinst du? = bạn thấy sao?"
+    display_answer: Thay vì ngồi đợi cả ngày ở khách sạn, mình đi tham quan thành phố có hướng dẫn đi. Bạn thấy sao?
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u08l5-fill-brief
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-vorschlag-konjunktiv
+    prompt:
+      template: "Sehr {{b1}} Damen und Herren, ich schreibe Ihnen, weil ich mit meinem Aufenthalt nicht zufrieden war. … Ich {{b2}} mich freuen, wenn Sie mir bald antworten könnten. Mit freundlichen {{b3}} Minh Nguyen"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [würde]
+        b3: [Grüßen]
+    known_wrong:
+      - answer: geehrter
+        feedback_vi: Damen und Herren là số nhiều – Sehr geehrte Damen und Herren.
+        error_tag: adj_ending
+      - answer: werde
+        feedback_vi: Yêu cầu lịch sự dùng Konjunktiv II, khớp với könnten ở câu sau – Ich würde mich freuen.
+        error_tag: konjunktiv_form
+      - answer: Grüße
+        feedback_vi: Sau mit cần Dativ số nhiều, thêm -n – Mit freundlichen Grüßen.
+        error_tag: case_dat_akk
+      - answer: Gruß
+        feedback_vi: Cụm cố định dùng số nhiều – Mit freundlichen Grüßen.
+        error_tag: plural_form
+    explanation:
+      vi: "Các cụm cố định của thư trang trọng: Sehr geehrte Damen und Herren (đuôi -e vì số nhiều), Ich würde mich freuen, wenn Sie … könnten (Konjunktiv II), Mit freundlichen Grüßen (mit + Dativ số nhiều: -n)."
+    display_answer: "Sehr geehrte Damen und Herren, ich schreibe Ihnen, weil ich mit meinem Aufenthalt nicht zufrieden war. … Ich würde mich freuen, wenn Sie mir bald antworten könnten. Mit freundlichen Grüßen Minh Nguyen"
+
+  - key: de:exercise:b1u08l5-tr-feuerwerk
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      source_text: "Chúng tôi phải về mà không xem được pháo hoa. (dùng abreisen, mussten và ohne … zu)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir mussten abreisen, ohne das Feuerwerk zu sehen.
+        - Ohne das Feuerwerk zu sehen, mussten wir abreisen.
+        - Wir mussten abreisen, ohne das Feuerwerk sehen zu können.
+        - Ohne das Feuerwerk sehen zu können, mussten wir abreisen.
+        - Wir mussten abreisen, ohne das Feuerwerk gesehen zu haben.
+        - Ohne das Feuerwerk gesehen zu haben, mussten wir abreisen.
+    known_wrong:
+      - answer: Wir mussten abreisen, ohne das Feuerwerk sehen.
+        feedback_vi: Sau ohne cần zu trước nguyên thể – ohne das Feuerwerk zu sehen.
+        error_tag: zu_infinitive
+      - answer: Wir mussten abreisen, ohne zu sehen das Feuerwerk.
+        feedback_vi: Tân ngữ đứng trước, zu + nguyên thể ở cuối cụm – ohne das Feuerwerk zu sehen.
+        error_tag: word_order
+      - answer: Ohne das Feuerwerk zu sehen, wir mussten abreisen.
+        feedback_vi: Cụm ohne … zu ở đầu là vị trí 1, nên mussten đứng ngay sau dấu phẩy.
+        error_tag: verb_position
+    explanation:
+      vi: "ohne + tân ngữ + zu + nguyên thể ở cuối cụm: ohne das Feuerwerk zu sehen (hoặc sehen zu können = không xem được). Câu chính: Wir mussten abreisen (abreisen nguyên thể ở cuối)."
+    display_answer: Wir mussten abreisen, ohne das Feuerwerk zu sehen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u08l5-wb-vorschlagen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-vorschlag-konjunktiv
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi đề nghị là chúng ta huỷ đặt chỗ.\""
+      tokens:
+        - { id: v-stornieren, text: stornieren }
+        - { id: v-dass, text: dass }
+        - { id: v-wuerde, text: würde }
+        - { id: v-buchung, text: Buchung }
+        - { id: v-ich, text: Ich }
+        - { id: v-die, text: die }
+        - { id: v-komma, text: "," }
+        - { id: v-wir, text: wir }
+        - { id: v-vorschlagen, text: vorschlagen }
+    answer:
+      orders:
+        - [v-ich, v-wuerde, v-vorschlagen, v-komma, v-dass, v-wir, v-die, v-buchung, v-stornieren]
+    explanation:
+      vi: "Ich würde vorschlagen (Konjunktiv II, lịch sự), sau dấu phẩy là câu phụ dass: chủ ngữ wir, tân ngữ die Buchung, động từ stornieren đứng cuối."
+    display_answer: Ich würde vorschlagen, dass wir die Buchung stornieren.
+
+  - key: de:exercise:b1u08l5-wb-den-gaesten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-mittelfeld
+    prompt:
+      instruction: "Sắp xếp thành câu, theo trật tự trung tính: \"Ông chủ đưa cho các vị khách một phòng khác.\""
+      tokens:
+        - { id: g-zimmer, text: Zimmer }
+        - { id: g-den, text: den }
+        - { id: g-hat, text: hat }
+        - { id: g-anderes, text: anderes }
+        - { id: g-der, text: Der }
+        - { id: g-gegeben, text: gegeben }
+        - { id: g-ein, text: ein }
+        - { id: g-gaesten, text: Gästen }
+        - { id: g-chef, text: Chef }
+    answer:
+      orders:
+        - [g-der, g-chef, g-hat, g-den, g-gaesten, g-ein, g-anderes, g-zimmer, g-gegeben]
+    explanation:
+      vi: "Perfekt: hat … gegeben (Partizip cuối câu). Hai tân ngữ là danh từ: Dativ (den Gästen – người nhận) đứng trước Akkusativ (ein anderes Zimmer – vật)."
+    display_answer: Der Chef hat den Gästen ein anderes Zimmer gegeben.
+
+  - key: de:exercise:b1u08l5-tr-ferienwohnung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u08-g-vorschlag-konjunktiv
+    prompt:
+      source_text: Wie wäre es, wenn wir statt eines Hotels eine Ferienwohnung nehmen?
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hay là chúng ta thuê căn hộ nghỉ dưỡng thay vì khách sạn?
+        - Hay là mình thuê căn hộ nghỉ dưỡng thay vì khách sạn?
+        - Hay là chúng ta lấy căn hộ nghỉ dưỡng thay vì khách sạn?
+        - Hay là chúng ta thuê một căn hộ nghỉ dưỡng thay vì ở khách sạn?
+        - Hay là mình thuê một căn hộ nghỉ dưỡng thay vì ở khách sạn?
+        - Thay vì khách sạn, hay là chúng ta thuê căn hộ nghỉ dưỡng?
+        - Thay vì ở khách sạn, hay là mình thuê một căn hộ nghỉ dưỡng?
+        - Sẽ thế nào nếu chúng ta thuê căn hộ nghỉ dưỡng thay vì khách sạn?
+        - Hay là chúng ta thuê căn hộ du lịch thay vì khách sạn?
+        - Hay là mình thuê căn hộ du lịch thay vì ở khách sạn?
+        - Hay là chúng ta thuê nhà nghỉ dưỡng thay vì khách sạn?
+        - Thay vì khách sạn, chúng ta thuê căn hộ nghỉ dưỡng thì sao?
+        - Chúng ta thuê căn hộ nghỉ dưỡng thay vì khách sạn thì sao?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hay là chúng ta ở khách sạn thay vì căn hộ nghỉ dưỡng?
+        feedback_vi: "statt eines Hotels = thay vì khách sạn; phương án được đề nghị là die Ferienwohnung."
+        error_tag: meaning
+    explanation:
+      vi: "Wie wäre es, wenn …? = hay là …? / … thì sao? statt eines Hotels = thay vì (một) khách sạn (statt + Genitiv). die Ferienwohnung = căn hộ cho thuê để nghỉ dưỡng."
+    display_answer: Hay là chúng ta thuê căn hộ nghỉ dưỡng thay vì khách sạn?
+
+  - key: de:exercise:b1u08l5-mcq-register
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-hoeflich
+    prompt:
+      stem: "Câu nào phù hợp trong e-mail khiếu nại trang trọng gửi khách sạn?"
+      stem_lang: vi
+      options:
+        - { id: x2a, text: "Ich würde Sie bitten, mir einen Teil des Preises zu erstatten.", lang: de }
+        - { id: x6b, text: "Gib mir doch mal mein Geld zurück!", lang: de }
+        - { id: x9c, text: "Das ist ja eine Frechheit, ihr seid unmöglich!", lang: de }
+        - { id: x4d, text: "Hallo Leute, das Zimmer war echt mies.", lang: de }
+    answer:
+      correct_option_id: x2a
+    explanation:
+      vi: "Thư trang trọng: Sie viết hoa và yêu cầu bằng Konjunktiv II (würde … bitten). Các câu khác dùng du/ihr, tiểu từ khẩu ngữ (doch mal, ja), từ lóng (echt mies) hoặc lời lẽ gay gắt."
+    display_answer: Ich würde Sie bitten, mir einen Teil des Preises zu erstatten.

@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u08-traditionen
+order_index: 3
+level: b1
+title:
+  vi: Lễ hội và truyền thống – tiền tố hai kiểu, trật tự giữa câu (Wir übersetzen den Text / Wir setzen über)
+objectives:
+  - vi: Tả một lễ hội ở Đức hoặc ở Việt Nam – khi nào, vì sao, người ta làm gì, ở đâu.
+  - vi: Phân biệt động từ có tiền tố tách và không tách (setzt über – übersetzt, holt wieder – wiederholt).
+  - vi: Sắp xếp thời gian – lý do – cách thức – nơi chốn và Dativ – Akkusativ theo trật tự trung tính trong câu dài.
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u08-hoeflichkeit]
+items:
+  - item: de:item:b1u08-g-verbpraefixe-wechsel
+  - item: de:item:b1u08-g-mittelfeld
+  - item: de:item:b1u08-karneval
+  - item: de:item:b1u08-volksfest
+  - item: de:item:b1u08-feuerwerk
+  - item: de:item:b1u08-tracht
+  - item: de:item:b1u08-feiertag
+  - item: de:item:b1u08-adventskalender
+  - item: de:item:b1u08-uebersetzen
+  - item: de:item:b1u08-kostuem
+  - item: de:item:b1u08-sich-verkleiden
+  - item: de:item:b1u08-weihnachtsmarkt
+  - item: de:item:b1u08-gluehwein
+  - item: de:item:b1u08-lederhose
+  - item: de:item:b1u08-schmuecken
+  - item: de:item:b1u08-stimmung
+  - item: de:item:b1u08-festumzug
+  - item: de:item:b1u08-bundesland
+  - item: de:item:b1u08-faehre
+  - item: de:item:a2u02-g-objekt-stellung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn tả được một lễ hội bằng câu dài mà vẫn đúng trật tự, ví dụ: \"Wir fahren im Februar wegen des Karnevals mit dem Zug nach Köln.\", và không còn nhầm übersetzen (dịch) với übersetzen (sang bờ bên kia)."
+  - type: explain
+    text:
+      vi: "Các tiền tố durch-, über-, um-, unter-, wieder- có lúc tách, có lúc không. Khi tách, trọng âm rơi vào tiền tố và nghĩa thường là nghĩa đen: Wir setzen mit der Fähre über (sang bờ bên kia). Khi không tách, trọng âm rơi vào gốc động từ và nghĩa thường là nghĩa bóng: Ich übersetze den Text (dịch)."
+  - type: explain
+    text:
+      vi: "Partizip II theo hai kiểu: động từ tách có ge- ở giữa (übergesetzt, umgefahren), động từ không tách không có ge- (übersetzt, wiederholt, umfahren). Ở thì hiện tại, chỉ động từ tách mới đẩy tiền tố ra cuối câu: Der Hund holt den Ball wieder – Der Lehrer wiederholt die Frage."
+  - type: explain
+    text:
+      vi: "Tiếng Việt có hai từ khác hẳn nhau: \"dịch\" và \"đi phà sang sông\"; tiếng Đức dùng cùng chữ übersetzen, chỉ khác trọng âm và cách tách. wieder- gần như luôn tách (wiederkommen, wiedersehen); wiederholen (nhắc lại, ôn) là ngoại lệ không tách. Khi gặp động từ mới với năm tiền tố này, hãy học kèm trọng âm và một câu mẫu."
+  - type: explain
+    text:
+      vi: "Khi phần giữa câu (Mittelfeld) có nhiều trạng ngữ, trật tự trung tính là TeKaMoLo: thời gian (wann?) – lý do (warum?) – cách thức (wie?) – nơi chốn (wo?/wohin?). Ví dụ: Wir fahren morgen wegen des Volksfests mit dem Zug nach München. Tiếng Việt hay nói nơi chốn trước thời gian, còn tiếng Đức trung tính đặt thời gian trước: im Februar in Köln."
+  - type: explain
+    text:
+      vi: "Khi hai tân ngữ đều là danh từ, Dativ (người nhận) thường đứng trước Akkusativ (vật): Die Oma schenkt den Kindern einen Adventskalender. Nếu Akkusativ là đại từ thì nó lên trước: Sie schenkt ihn den Kindern. Đây là trật tự hay gặp, không phải luật cứng – người Đức vẫn đổi chỗ khi muốn nhấn mạnh."
+  - type: explain
+    text:
+      vi: "Cùng một mùa lễ hội hoá trang trước Mùa Chay có tên khác nhau tuỳ vùng, ví dụ Karneval (Köln, Düsseldorf), Fasching (Bayern, Áo), Fastnacht hoặc Fasnacht (Tây Nam nước Đức, Thụy Sĩ). Ngày nghỉ lễ cũng khác nhau giữa các bang: ví dụ lễ Ba Vua (6/1) chỉ là ngày nghỉ ở một số bang. Giống như Tết, mỗi vùng ở Việt Nam cũng có món ăn và tục lệ riêng."
+  - type: deep_explain
+    text:
+      vi: "Thêm vài cặp tách/không tách hay gặp: umfahren tách = đâm đổ (Er hat das Schild umgefahren) – không tách = đi vòng tránh (Wir haben den Stau umfahren); durchschauen không tách = nhìn thấu (Ich habe ihn durchschaut). Nhiều động từ thực tế chỉ dùng một kiểu: umziehen (chuyển nhà) tách (Wir ziehen um), unterschreiben không tách (Ich unterschreibe), nên khi nghi ngờ hãy tra từ điển – từ điển ghi trọng âm hoặc dấu tách (über|setzen). Với Mittelfeld, TeKaMoLo là mẹo nhớ, không phải luật: trạng ngữ nơi chốn chỉ đích đến (nach Köln, ins Kino) thường đứng cuối, sát phần cuối câu; đại từ (mir, ihn, es) thường đứng ngay sau động từ chia, trước các trạng ngữ: Ich schenke ihn ihr morgen. Lý do hay dùng wegen + Genitiv (wegen des Festes) hoặc aus + danh từ không mạo từ (aus Spaß, aus Tradition)."
+  - type: example
+    target: Wir setzen mit der Fähre zur Insel über.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đi phà sang đảo.
+    note:
+      vi: "übersetzen tách (nhấn ü): setzen … über – nghĩa đen là sang bờ bên kia."
+  - type: example
+    target: Kannst du mir den Brief ins Deutsche übersetzen? – Klar, ich habe schon viele Briefe übersetzt.
+    target_lang: de
+    translation:
+      vi: Bạn dịch giúp mình lá thư sang tiếng Đức được không? – Được chứ, mình đã dịch nhiều thư rồi.
+    note:
+      vi: "Giữa bạn bè (du). übersetzen không tách (nhấn -setz-) = dịch; Partizip übersetzt, không có ge-."
+  - type: example
+    target: Der Lehrer wiederholt die Frage. – Der Hund holt den Ball wieder.
+    target_lang: de
+    translation:
+      vi: Thầy giáo nhắc lại câu hỏi. – Con chó mang quả bóng về.
+    note:
+      vi: "wiederholen (nhắc lại) không tách; wieder … holen (lấy về, mang về) tách."
+  - type: example
+    target: Wir fahren im Februar wegen des Karnevals mit dem Zug nach Köln.
+    target_lang: de
+    translation:
+      vi: Tháng Hai chúng tôi đi tàu đến Köln vì lễ hội Karneval.
+    note:
+      vi: "Te (im Februar) – Ka (wegen des Karnevals) – Mo (mit dem Zug) – Lo (nach Köln): trật tự trung tính."
+  - type: example
+    target: Ende November schenkt die Oma den Kindern einen Adventskalender.
+    target_lang: de
+    translation:
+      vi: Cuối tháng Mười Một, bà tặng các cháu một chiếc lịch Mùa Vọng.
+    note:
+      vi: "Dativ (den Kindern – người nhận) trước Akkusativ (einen Adventskalender – vật) khi cả hai là danh từ."
+  - type: example
+    target: Zum Tết schmücken viele Familien in Vietnam ihre Wohnung mit Blumen, und um Mitternacht gibt es oft ein Feuerwerk.
+    target_lang: de
+    translation:
+      vi: Dịp Tết, nhiều gia đình ở Việt Nam trang trí nhà bằng hoa, và lúc giao thừa thường có bắn pháo hoa.
+    note:
+      vi: "zum Tết = vào dịp Tết. Trật tự trong câu đầu: Te/dịp (zum Tết) đứng đầu, rồi chủ ngữ, tân ngữ, cách thức (mit Blumen)."
+  - type: common_mistake
+    wrong: Ich habe den Text übergesetzt.
+    right: Ich habe den Text übersetzt.
+    target_lang: de
+    note:
+      vi: "Nghĩa \"dịch\" là động từ không tách nên Partizip không có ge-: übersetzt."
+  - type: common_mistake
+    wrong: Wir fahren nach Köln im Februar.
+    right: Wir fahren im Februar nach Köln.
+    target_lang: de
+    note:
+      vi: "Trật tự trung tính: thời gian trước nơi chốn; đích đến (nach Köln) thường đứng cuối."
+  - type: common_mistake
+    wrong: Der Lehrer holt die Frage wieder.
+    right: Der Lehrer wiederholt die Frage.
+    target_lang: de
+    note:
+      vi: "Nhắc lại = wiederholen, không tách. wieder … holen (tách) nghĩa là lấy về."
+  - type: common_mistake
+    wrong: Die Oma schenkt einen Adventskalender den Kindern.
+    right: Die Oma schenkt den Kindern einen Adventskalender.
+    target_lang: de
+    note:
+      vi: "Hai tân ngữ là danh từ: thường Dativ (người nhận) trước Akkusativ (vật); trật tự kia nghe không tự nhiên."
+  - type: summary
+    points:
+      - vi: "durch-, über-, um-, unter-, wieder-: tách (nhấn tiền tố, thường nghĩa đen) hoặc không tách (nhấn gốc, thường nghĩa bóng)."
+      - vi: "übersetzen: setzt über / übergesetzt (sang bờ) – übersetzt / übersetzt (dịch)."
+      - vi: "wieder- gần như luôn tách; wiederholen (nhắc lại) không tách."
+      - vi: "Không tách: Partizip không có ge- (übersetzt, wiederholt)."
+      - vi: "Mittelfeld trung tính: TeKaMoLo – thời gian, lý do, cách thức, nơi chốn."
+      - vi: "Hai danh từ tân ngữ: Dativ trước Akkusativ; Akkusativ là đại từ thì đứng trước."
+      - vi: "Karneval / Fasching / Fastnacht: tên khác nhau theo vùng; ngày nghỉ lễ khác nhau theo bang."
+      - vi: "Từ vựng: der Karneval, das Volksfest, das Feuerwerk, die Tracht, der Feiertag, der Adventskalender, übersetzen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u08l3-mcq-uebersetzt
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-uebersetzen
+    prompt:
+      stem: "Chọn dạng đúng: Ich habe den Brief ins Deutsche ___. (dịch)"
+      stem_lang: vi
+      options:
+        - { id: u2a, text: "übersetzt", lang: de }
+        - { id: u6b, text: "übergesetzt", lang: de }
+        - { id: u9c, text: "übersetzte", lang: de }
+        - { id: u4d, text: "übersetzen", lang: de }
+    answer:
+      correct_option_id: u2a
+    explanation:
+      vi: "übersetzen nghĩa là dịch là động từ không tách, nên Partizip II không có ge-: übersetzt. übergesetzt là Partizip của übersetzen tách (sang bờ bên kia); sau habe cần Partizip II, không dùng Präteritum (übersetzte) hay nguyên thể (übersetzen)."
+    display_answer: übersetzt
+
+  - key: de:exercise:b1u08l3-mcq-setzen-ueber
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-g-verbpraefixe-wechsel
+    prompt:
+      stem: "Câu nào đúng? (Chúng tôi đi phà sang bờ bên kia.)"
+      stem_lang: vi
+      options:
+        - { id: f3a, text: "Wir setzen mit der Fähre über.", lang: de }
+        - { id: f7b, text: "Wir übersetzen mit der Fähre.", lang: de }
+        - { id: f1c, text: "Wir setzen über mit der Fähre.", lang: de }
+        - { id: f5d, text: "Wir übersetzen uns mit der Fähre.", lang: de }
+    answer:
+      correct_option_id: f3a
+    explanation:
+      vi: "Nghĩa \"sang bờ bên kia\" là übersetzen tách: ở câu chính, setzen đứng vị trí 2 và über ra cuối câu. Wir übersetzen … (không tách) là \"dịch\"; tiền tố tách phải đứng cuối, không đứng ngay sau động từ."
+    display_answer: Wir setzen mit der Fähre über.
+
+  - key: de:exercise:b1u08l3-mcq-lesen-umzug
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-festumzug
+    prompt:
+      stem: "In Köln beginnt die Karnevalszeit am 11. November um 11:11 Uhr. Richtig gefeiert wird aber erst im Februar oder März. Am Rosenmontag zieht ein großer Festumzug durch die Stadt. Viele Menschen verkleiden sich, und von den Wagen werfen die Leute Süßigkeiten. In Bayern und Österreich nennt man das Fest meistens Fasching. — Richtig oder falsch? Der große Festumzug ist am 11. November."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Ngày 11/11 chỉ là ngày bắt đầu mùa Karneval. Đoàn diễu hành lớn (Festumzug) diễn ra vào Rosenmontag, tháng Hai hoặc tháng Ba. Vì vậy câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u08l3-mcq-lesen-fasching
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u08-karneval
+    prompt:
+      stem: "In Köln beginnt die Karnevalszeit am 11. November um 11:11 Uhr. Richtig gefeiert wird aber erst im Februar oder März. Am Rosenmontag zieht ein großer Festumzug durch die Stadt. Viele Menschen verkleiden sich, und von den Wagen werfen die Leute Süßigkeiten. In Bayern und Österreich nennt man das Fest meistens Fasching. — Richtig oder falsch? In Bayern hat das Fest oft einen anderen Namen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Câu cuối: In Bayern und Österreich nennt man das Fest meistens Fasching – ở Bayern thường gọi là Fasching, tức là một tên khác. Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u08l3-fill-wiederholt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-verbpraefixe-wechsel
+    prompt:
+      template: "Der Lehrer {{b1}} (wiederholen) die Frage noch einmal. Dann habe ich den Satz ins Vietnamesische {{b2}} (übersetzen)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [wiederholt]
+        b2: [übersetzt]
+    known_wrong:
+      - answer: holt wieder
+        feedback_vi: Nhắc lại = wiederholen, không tách – Der Lehrer wiederholt die Frage.
+        error_tag: separable_prefix
+      - answer: übergesetzt
+        feedback_vi: Dịch (ins Vietnamesische) là übersetzen không tách – Partizip übersetzt, không có ge-.
+        error_tag: separable_prefix
+      - answer: geübersetzt
+        feedback_vi: Động từ không tách thì Partizip không thêm ge- – übersetzt.
+        error_tag: participle_form
+      - answer: wiederholte
+        feedback_vi: Câu đầu ở hiện tại (Der Lehrer … noch einmal) – er wiederholt.
+        error_tag: verb_form
+    explanation:
+      vi: "wiederholen (nhắc lại) và übersetzen (dịch) đều không tách: er wiederholt; Partizip II là übersetzt, không có ge-."
+    display_answer: "Der Lehrer wiederholt die Frage noch einmal. Dann habe ich den Satz ins Vietnamesische übersetzt."
+
+  - key: de:exercise:b1u08l3-fill-ihrer-einen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-mittelfeld
+    prompt:
+      template: "Ende November schenkt die Oma {{b1}} (ihr-) Enkelin {{b2}} (ein-) Adventskalender."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [ihrer]
+        b2: [einen]
+    known_wrong:
+      - answer: ihre
+        feedback_vi: Enkelin là người nhận nên ở Dativ – ihrer Enkelin (die → der).
+        error_tag: case_dat_akk
+      - answer: ihrem
+        feedback_vi: die Enkelin là giống cái – Dativ là ihrer, không phải ihrem.
+        error_tag: gender
+      - answer: einem
+        feedback_vi: Adventskalender là vật được tặng (Akkusativ, giống đực) – einen.
+        error_tag: case_dat_akk
+      - answer: ein
+        feedback_vi: der Adventskalender giống đực, ở Akkusativ là einen.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "schenken + Dativ (người nhận) + Akkusativ (vật). die Enkelin ở Dativ: ihrer Enkelin; der Adventskalender ở Akkusativ: einen Adventskalender. Hai danh từ: Dativ đứng trước Akkusativ."
+    display_answer: Ende November schenkt die Oma ihrer Enkelin einen Adventskalender.
+
+  - key: de:exercise:b1u08l3-tr-karneval-koeln
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-g-mittelfeld
+    prompt:
+      source_text: "Tháng Hai chúng tôi đi tàu đến Köln vì lễ hội Karneval. (dùng wegen + Genitiv, trật tự trung tính)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Im Februar fahren wir wegen des Karnevals mit dem Zug nach Köln.
+        - Wir fahren im Februar wegen des Karnevals mit dem Zug nach Köln.
+        - Wegen des Karnevals fahren wir im Februar mit dem Zug nach Köln.
+        - Mit dem Zug fahren wir im Februar wegen des Karnevals nach Köln.
+    known_wrong:
+      - answer: Wir fahren nach Köln im Februar wegen des Karnevals mit dem Zug.
+        feedback_vi: Trật tự trung tính là thời gian – lý do – cách thức – nơi chốn; nach Köln đứng cuối.
+        error_tag: word_order
+      - answer: Im Februar wir fahren wegen des Karnevals mit dem Zug nach Köln.
+        feedback_vi: Im Februar ở vị trí 1 thì động từ fahren phải ở vị trí 2 – Im Februar fahren wir …
+        error_tag: verb_position
+      - answer: Wir fahren im Februar wegen der Karneval mit dem Zug nach Köln.
+        feedback_vi: Karneval là giống đực, Genitiv là des Karnevals.
+        error_tag: article
+    explanation:
+      vi: "TeKaMoLo: im Februar (thời gian) – wegen des Karnevals (lý do, Genitiv của der Karneval) – mit dem Zug (cách thức) – nach Köln (nơi đến). Một thành phần có thể lên vị trí 1, phần còn lại giữ trật tự đó."
+    display_answer: Wir fahren im Februar wegen des Karnevals mit dem Zug nach Köln.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u08l3-wb-volksfest
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u08-g-mittelfeld
+    prompt:
+      instruction: "Sắp xếp thành câu, theo trật tự trung tính: \"Ngày mai chúng tôi đi tàu đến München vì lễ hội dân gian.\""
+      tokens:
+        - { id: t-zug, text: Zug }
+        - { id: t-wegen, text: wegen }
+        - { id: t-nach, text: nach }
+        - { id: t-wir, text: Wir }
+        - { id: t-volksfests, text: Volksfests }
+        - { id: t-morgen, text: morgen }
+        - { id: t-dem, text: dem }
+        - { id: t-fahren, text: fahren }
+        - { id: t-muenchen, text: München }
+        - { id: t-des, text: des }
+        - { id: t-mit, text: mit }
+    answer:
+      orders:
+        - [t-wir, t-fahren, t-morgen, t-wegen, t-des, t-volksfests, t-mit, t-dem, t-zug, t-nach, t-muenchen]
+    explanation:
+      vi: "Wir fahren ở vị trí 1–2, rồi TeKaMoLo: morgen (thời gian) – wegen des Volksfests (lý do) – mit dem Zug (cách thức) – nach München (nơi đến, đứng cuối)."
+    display_answer: Wir fahren morgen wegen des Volksfests mit dem Zug nach München.
+
+  - key: de:exercise:b1u08l3-wb-kostuem
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u08-kostuem
+    prompt:
+      instruction: "Sắp xếp thành câu (có một thẻ thừa): \"Anna tặng bạn trai một bộ đồ hoá trang.\""
+      tokens:
+        - { id: k-kostuem, text: Kostüm }
+        - { id: k-ihrem, text: ihrem }
+        - { id: k-anna, text: Anna }
+        - { id: k-ein, text: ein }
+        - { id: k-ihren, text: ihren }
+        - { id: k-schenkt, text: schenkt }
+        - { id: k-freund, text: Freund }
+    answer:
+      orders:
+        - [k-anna, k-schenkt, k-ihrem, k-freund, k-ein, k-kostuem]
+    explanation:
+      vi: "schenken + Dativ (người nhận: ihrem Freund) + Akkusativ (vật: ein Kostüm). Hai danh từ: Dativ đứng trước Akkusativ. ihren là Akkusativ nên là thẻ thừa."
+    display_answer: Anna schenkt ihrem Freund ein Kostüm.
+
+  - key: de:exercise:b1u08l3-tr-feuerwerk
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u08-feuerwerk
+    prompt:
+      source_text: Auf dem Volksfest gab es am Abend ein großes Feuerwerk, und die Stimmung war toll.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở lễ hội, buổi tối có một màn pháo hoa lớn, và không khí rất tuyệt.
+        - Ở lễ hội, buổi tối có bắn pháo hoa lớn, và không khí rất tuyệt.
+        - Ở lễ hội, buổi tối có màn pháo hoa lớn và không khí thật tuyệt.
+        - Buổi tối ở lễ hội có một màn pháo hoa lớn, và không khí rất tuyệt.
+        - Buổi tối ở lễ hội có màn bắn pháo hoa lớn, không khí rất tuyệt.
+        - Tại lễ hội, buổi tối có một màn pháo hoa lớn, và không khí rất tuyệt.
+        - Ở lễ hội dân gian, buổi tối có một màn pháo hoa lớn, và không khí rất tuyệt.
+        - Ở hội chợ, buổi tối có một màn pháo hoa lớn, và không khí rất tuyệt.
+        - Ở lễ hội, buổi tối có một màn pháo hoa lớn, và bầu không khí rất tuyệt.
+        - Ở lễ hội, buổi tối có một màn pháo hoa lớn, và không khí thật tuyệt vời.
+        - Ở lễ hội, tối hôm đó có một màn pháo hoa lớn, và không khí rất tuyệt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở lễ hội, buổi tối có một màn pháo hoa lớn, nhưng tâm trạng của tôi không tốt.
+        feedback_vi: "die Stimmung war toll = không khí rất tuyệt; câu gốc không nói về tâm trạng xấu."
+        error_tag: meaning
+    explanation:
+      vi: "gab es = Präteritum của es gibt (có). das Feuerwerk = pháo hoa; die Stimmung = không khí (của sự kiện). auf dem Volksfest = ở lễ hội dân gian."
+    display_answer: Ở lễ hội, buổi tối có một màn pháo hoa lớn, và không khí rất tuyệt.

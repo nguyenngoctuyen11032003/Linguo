@@ -1,0 +1,7 @@
+# B1U08 Reisen und Kulturen
+# Partizip II von nicken
+genickt
+# Merkwort für die Satzgliedfolge im Mittelfeld (temporal, kausal, modal, lokal)
+TeKaMoLo
+# Adjektiv (temporal – kausal – modal – lokal)
+modal
