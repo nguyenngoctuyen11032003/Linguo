@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u07-nachrichten
+order_index: 4
+level: b1
+title:
+  vi: Nghe tin tức – mốc thời gian chính xác (Gegen acht Uhr, Mitte Mai)
+objectives:
+  - vi: Hiểu tin vắn trên radio hoặc TV và ghi lại ai – cái gì – khi nào – ở đâu.
+  - vi: Dùng mốc thời gian chính xác và gần đúng – gegen acht Uhr, um acht Uhr herum, Anfang/Mitte/Ende Mai, ab sofort, innerhalb von zwei Stunden.
+  - vi: Kể lại ngắn gọn một tin vừa nghe.
+estimated_minutes: 20
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:b1u07-gebrauchsanweisung]
+items:
+  - item: de:item:b1u07-g-zeitangaben-praezise
+  - item: de:item:b1u07-meldung
+  - item: de:item:b1u07-bericht
+  - item: de:item:b1u07-schlagzeile
+  - item: de:item:b1u07-aktuell
+  - item: de:item:b1u07-quelle
+  - item: de:item:b1u07-journalist
+  - item: de:item:b1u07-interview
+  - item: de:item:b1u07-veroeffentlichen
+  - item: de:item:b1u07-sprecher
+  - item: de:item:b1u07-melden
+  - item: de:item:b1u07-feuerwehr
+  - item: de:item:b1u07-streik
+  - item: de:item:b1u07-gewitter
+  - item: de:item:b1u07-brand
+  - item: de:item:b1u07-vermutlich
+  - item: de:item:b1u07-bisher
+  - item: de:item:b1u07-zeitpunkt
+  - item: de:item:a2u01-g-zeitangaben-akk
+    role: reuse
+  - item: de:item:a2u07-g-es-geht-um
+    role: reuse
+  - item: de:item:a2u08-g-zeit-praepositionen
+    role: reuse
+  - item: de:item:b1u01-g-praeteritum-system
+    role: reuse
+  - item: de:item:b1u01-g-praeteritum-perfekt-gebrauch
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praeteritum
+    role: reuse
+  - item: de:item:b1u03-g-passiv-perfekt
+    role: reuse
+  - item: de:item:b1u06-g-genitiv-praepositionen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nghe hiểu và kể lại được một tin vắn, ví dụ: \"Gegen acht Uhr ist in der Innenstadt ein Brand ausgebrochen. Die Feuerwehr war innerhalb von zehn Minuten vor Ort.\""
+  - type: explain
+    text:
+      vi: "gegen + giờ nghĩa là khoảng giờ đó: gegen acht Uhr = khoảng tám giờ. um … herum cũng có nghĩa gần đúng: um acht Uhr herum; còn um acht Uhr (không có herum) là đúng tám giờ. Tin tức thường dùng gegen khi chưa biết giờ chính xác."
+  - type: explain
+    text:
+      vi: "Anfang, Mitte, Ende đứng thẳng trước tên tháng, không có giới từ và mạo từ: Anfang Mai, Mitte Mai, Ende Mai. Tiếng Việt nói \"vào giữa tháng Năm\", nhưng tiếng Đức không có từ tương ứng với \"vào\". Nếu sau đó là danh từ có mạo từ thì dùng Genitiv: Ende des Monats, Anfang der Woche."
+  - type: explain
+    text:
+      vi: "ab sofort = kể từ bây giờ (Ab sofort gilt eine neue Regel). innerhalb von + Dativ = trong vòng: innerhalb von zwei Stunden. Bạn đã học ab Montag, seit Montag, bis Freitag; các mốc này hay đi cùng nhau trong tin tức."
+  - type: explain
+    text:
+      vi: "Tin trên radio và TV thường dùng Präteritum (passierte, kam, sagte) và câu bị động (wurde verletzt). Giờ được đọc theo hệ 24 giờ: 21.15 Uhr = einundzwanzig Uhr fünfzehn. Khi nghe, chỉ cần bắt bốn ý: Wer? Was? Wann? Wo?"
+  - type: explain
+    text:
+      vi: "Khi kể lại tin cho bạn bè, người Đức thường chuyển sang Perfekt: In den Nachrichten haben sie gesagt, dass … Câu mở đầu hay dùng: Hast du schon gehört? In den Nachrichten ging es heute um …"
+  - type: deep_explain
+    text:
+      vi: "gegen còn là giới từ + Akkusativ nghĩa là \"chống lại\" (gegen den Plan); chỉ khi đi với giờ, gegen mới nghĩa là \"khoảng\". um … herum với nơi chốn nghĩa là \"vòng quanh\" (um das Haus herum). Mốc tương đối không có mạo từ dùng Genitiv với đuôi tính từ: Mitte nächster Woche, Anfang nächsten Jahres, Ende letzten Monats. innerhalb có thể đi trực tiếp với Genitiv khi có mạo từ (innerhalb einer Woche, đã học ở unit 6); khi không có mạo từ hay từ hạn định thì dùng innerhalb von + Dativ (innerhalb von zwei Tagen). Trong văn báo chí còn gặp zunächst (lúc đầu), bislang (cho đến nay, như bisher), im Laufe des Tages (trong ngày) và laut + Dativ (theo): laut Polizei."
+  - type: example
+    target: Der Unfall passierte gegen acht Uhr auf der Autobahn.
+    target_lang: de
+    translation:
+      vi: Vụ tai nạn xảy ra vào khoảng tám giờ trên đường cao tốc.
+    note:
+      vi: "gegen acht Uhr = khoảng tám giờ (giờ không chính xác). passierte: Präteritum, văn tin tức."
+  - type: example
+    target: Die Bauarbeiten sollen Mitte Mai beginnen und Ende Juni fertig sein.
+    target_lang: de
+    translation:
+      vi: Công trình dự kiến bắt đầu vào giữa tháng Năm và xong vào cuối tháng Sáu.
+    note:
+      vi: "Mitte Mai, Ende Juni: không có giới từ, không có mạo từ."
+  - type: example
+    target: Ab sofort fahren die Busse wieder nach Plan.
+    target_lang: de
+    translation:
+      vi: Kể từ bây giờ xe buýt lại chạy theo lịch.
+    note:
+      vi: "Ab sofort đứng đầu câu nên động từ fahren ở vị trí 2."
+  - type: example
+    target: Die Feuerwehr war innerhalb von zehn Minuten vor Ort.
+    target_lang: de
+    translation:
+      vi: Lính cứu hoả có mặt tại chỗ trong vòng mười phút.
+    note:
+      vi: "innerhalb von + Dativ khi không có mạo từ: innerhalb von zehn Minuten. vor Ort = tại hiện trường."
+  - type: example
+    target: Wegen eines Streiks wurden gestern viele Züge gestrichen. Der Bericht dazu ist heute Morgen veröffentlicht worden.
+    target_lang: de
+    translation:
+      vi: Vì đình công, hôm qua nhiều chuyến tàu đã bị huỷ. Bài tường thuật về việc này đã được đăng sáng nay.
+    note:
+      vi: "wegen + Genitiv (eines Streiks). Bị động Präteritum: wurden … gestrichen; bị động Perfekt: ist … veröffentlicht worden – có worden, khác với trạng thái ist veröffentlicht."
+  - type: example
+    target: Letzte Woche ging es in den Nachrichten fast nur um das Wetter.
+    target_lang: de
+    translation:
+      vi: Tuần trước tin tức gần như chỉ nói về thời tiết.
+    note:
+      vi: "Letzte Woche: mốc thời gian ở Akkusativ, không có giới từ. Es geht um + Akkusativ = nói về; Präteritum là ging es um."
+  - type: example
+    target: Wann kommst du? – So gegen acht, vielleicht auch etwas später.
+    target_lang: de
+    translation:
+      vi: Mấy giờ bạn đến? – Khoảng tám giờ, có khi muộn hơn chút.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). Khi nói, người Đức hay thêm so: so gegen acht, so um acht herum."
+  - type: common_mistake
+    wrong: In Mitte Mai beginnt der neue Kurs.
+    right: Mitte Mai beginnt der neue Kurs.
+    target_lang: de
+    note:
+      vi: "Anfang, Mitte, Ende + tháng không có giới từ. Tiếng Việt nói \"vào giữa tháng\", nhưng tiếng Đức không thêm in."
+  - type: common_mistake
+    wrong: Innerhalb zwei Stunden war die Feuerwehr da.
+    right: Innerhalb von zwei Stunden war die Feuerwehr da.
+    target_lang: de
+    note:
+      vi: "Khi không có mạo từ, sau innerhalb cần von + Dativ: innerhalb von zwei Stunden."
+  - type: common_mistake
+    wrong: Der Film beginnt um 20.15 Uhr – also um acht Uhr fünfzehn morgens.
+    right: Der Film beginnt um 20.15 Uhr – also um Viertel nach acht abends.
+    target_lang: de
+    note:
+      vi: "Giờ chính thức theo hệ 24 giờ: zwanzig Uhr fünfzehn là 8 giờ 15 tối, không phải buổi sáng."
+  - type: summary
+    points:
+      - vi: "gegen acht Uhr, um acht Uhr herum = khoảng tám giờ; um acht Uhr = đúng tám giờ."
+      - vi: "Anfang/Mitte/Ende Mai: không giới từ, không mạo từ; có mạo từ thì dùng Genitiv (Ende des Monats)."
+      - vi: "ab sofort = kể từ bây giờ; innerhalb von + Dativ = trong vòng."
+      - vi: "Tin tức: Präteritum, bị động, giờ 24 giờ (21.15 Uhr = einundzwanzig Uhr fünfzehn)."
+      - vi: "Nghe tin: Wer? Was? Wann? Wo? Kể lại: Perfekt, In den Nachrichten ging es um …"
+      - vi: "Từ vựng: die Meldung, der Bericht, die Schlagzeile, aktuell, die Quelle, der Journalist, das Interview, veröffentlichen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u07l4-listen-brand
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-g-zeitangaben-praezise
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Abend, hier sind die Nachrichten. In der Innenstadt ist heute gegen acht Uhr ein Brand in einem Bürogebäude ausgebrochen. Die Feuerwehr war innerhalb von zehn Minuten vor Ort. Verletzt wurde niemand.
+      options:
+        - { id: f2a, text: "Khoảng tám giờ có cháy ở một toà nhà văn phòng; lính cứu hoả đến trong vòng mười phút, không ai bị thương.", lang: vi }
+        - { id: f6b, text: "Đúng tám giờ có cháy ở một toà nhà văn phòng; lính cứu hoả đến trong vòng mười phút, không ai bị thương.", lang: vi }
+        - { id: f9c, text: "Khoảng tám giờ có cháy ở một toà nhà văn phòng; lính cứu hoả đến sau mười phút, nhiều người bị thương.", lang: vi }
+        - { id: f4d, text: "Khoảng tám giờ có cháy ở một trường học; lính cứu hoả đến trong vòng mười phút, không ai bị thương.", lang: vi }
+    answer:
+      correct_option_id: f2a
+    explanation:
+      vi: "gegen acht Uhr = khoảng tám giờ (không phải đúng tám giờ – um acht Uhr). in einem Bürogebäude = ở một toà nhà văn phòng; innerhalb von zehn Minuten = trong vòng mười phút; Verletzt wurde niemand = không ai bị thương."
+    display_answer: Khoảng tám giờ có cháy ở một toà nhà văn phòng; lính cứu hoả đến trong vòng mười phút, không ai bị thương.
+
+  - key: de:exercise:b1u07l4-listen-streik
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-streik
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wegen eines Streiks fallen morgen viele Züge aus. Ab Donnerstag fahren die Züge vermutlich wieder normal.
+      options:
+        - { id: s3a, text: "Ngày mai nhiều chuyến tàu bị huỷ vì đình công; từ thứ Năm có lẽ tàu chạy lại bình thường.", lang: vi }
+        - { id: s7b, text: "Hôm nay nhiều chuyến tàu bị huỷ vì đình công; từ thứ Năm có lẽ tàu chạy lại bình thường.", lang: vi }
+        - { id: s1c, text: "Ngày mai nhiều chuyến tàu bị huỷ vì giông bão; từ thứ Năm có lẽ tàu chạy lại bình thường.", lang: vi }
+        - { id: s5d, text: "Ngày mai nhiều chuyến tàu bị huỷ vì đình công; đến thứ Năm tàu chắc chắn vẫn chưa chạy lại.", lang: vi }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "Wegen eines Streiks = vì đình công; morgen = ngày mai; fallen aus = bị huỷ. Ab Donnerstag = từ thứ Năm; vermutlich = có lẽ (không chắc chắn); wieder normal = lại bình thường."
+    display_answer: Ngày mai nhiều chuyến tàu bị huỷ vì đình công; từ thứ Năm có lẽ tàu chạy lại bình thường.
+
+  - key: de:exercise:b1u07l4-listen-wetter
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-gewitter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Und nun das Wetter. Am Nachmittag gibt es im Süden Gewitter. Ab Mitte nächster Woche wird es wieder wärmer.
+      options:
+        - { id: w3a, text: "Chiều nay miền Nam có giông; từ giữa tuần sau trời ấm lên.", lang: vi }
+        - { id: w7b, text: "Chiều nay miền Bắc có giông; từ giữa tuần sau trời ấm lên.", lang: vi }
+        - { id: w1c, text: "Chiều nay miền Nam có giông; từ đầu tuần sau trời ấm lên.", lang: vi }
+        - { id: w5d, text: "Chiều nay miền Nam có giông; từ giữa tuần sau trời lạnh hơn.", lang: vi }
+    answer:
+      correct_option_id: w3a
+    explanation:
+      vi: "im Süden = ở miền Nam; Gewitter = giông. Ab Mitte nächster Woche = từ giữa tuần sau (Anfang mới là đầu tuần); wärmer = ấm hơn."
+    display_answer: Chiều nay miền Nam có giông; từ giữa tuần sau trời ấm lên.
+
+  - key: de:exercise:b1u07l4-listen-uhrzeit
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-g-zeitangaben-praezise
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das Interview mit der Bürgermeisterin hören Sie heute um einundzwanzig Uhr fünfzehn.
+      options:
+        - { id: u2a, text: "Lúc 21 giờ 15 (9 giờ 15 tối)", lang: vi }
+        - { id: u6b, text: "Lúc 20 giờ 15 (8 giờ 15 tối)", lang: vi }
+        - { id: u9c, text: "Lúc 21 giờ 50 (10 giờ kém 10 tối)", lang: vi }
+        - { id: u4d, text: "Lúc 9 giờ 15 sáng", lang: vi }
+    answer:
+      correct_option_id: u2a
+    explanation:
+      vi: "einundzwanzig Uhr fünfzehn = 21 giờ 15 theo hệ 24 giờ, tức 9 giờ 15 tối. fünfzehn (15) khác fünfzig (50); zwanzig Uhr là 20 giờ."
+    display_answer: Lúc 21 giờ 15 (9 giờ 15 tối)
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u07l4-fill-mitte-gegen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-zeitangaben-praezise
+    prompt:
+      template: "Der Kurs beginnt am 15. Mai, also {{b1}} Mai. Die Feuerwehr war {{b2}} von zehn Minuten vor Ort. Der Brand begann {{b3}} acht Uhr, die genaue Uhrzeit ist noch nicht bekannt."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Mitte]
+        b2: [innerhalb]
+        b3: [gegen]
+    known_wrong:
+      - answer: Anfang
+        feedback_vi: Ngày 15 là giữa tháng – Mitte Mai. Anfang Mai là đầu tháng.
+        error_tag: meaning
+      - answer: Ende
+        feedback_vi: Ngày 15 là giữa tháng – Mitte Mai. Ende Mai là cuối tháng.
+        error_tag: meaning
+      - answer: um
+        feedback_vi: Giờ chính xác chưa biết (die genaue Uhrzeit ist noch nicht bekannt) nên dùng gegen = khoảng; um acht Uhr là đúng tám giờ.
+        error_tag: preposition
+    explanation:
+      vi: "Giữa tháng = Mitte (không giới từ). Trong vòng + số lượng không có mạo từ = innerhalb von + Dativ. Giờ gần đúng = gegen acht Uhr."
+    display_answer: "Der Kurs beginnt am 15. Mai, also Mitte Mai. Die Feuerwehr war innerhalb von zehn Minuten vor Ort. Der Brand begann gegen acht Uhr, die genaue Uhrzeit ist noch nicht bekannt."
+
+  - key: de:exercise:b1u07l4-fill-seit-bis
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      template: "Die Straße ist schon {{b1}} Montag gesperrt, und die Bauarbeiten dauern noch {{b2}} Ende Juni."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [seit]
+        b2: [bis]
+    known_wrong:
+      - answer: ab
+        feedback_vi: schon … gesperrt cho thấy việc đã bắt đầu và vẫn tiếp diễn – seit Montag. ab Montag là từ thứ Hai (thường cho tương lai).
+        error_tag: preposition
+      - answer: vor
+        feedback_vi: vor Montag là trước thứ Hai. Đã bắt đầu từ thứ Hai và vẫn còn tiếp diễn – seit Montag.
+        error_tag: preposition
+    explanation:
+      vi: "seit + mốc thời gian + hiện tại: việc bắt đầu trong quá khứ và vẫn còn (schon seit Montag gesperrt). bis Ende Juni = cho đến cuối tháng Sáu; Ende Juni không cần giới từ thêm."
+    display_answer: "Die Straße ist schon seit Montag gesperrt, und die Bauarbeiten dauern noch bis Ende Juni."
+
+  - key: de:exercise:b1u07l4-tr-ab-sofort
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-zeitangaben-praezise
+    prompt:
+      source_text: "Kể từ bây giờ, cửa hàng mở cửa đến 20 giờ. (cửa hàng = das Geschäft)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ab sofort ist das Geschäft bis 20 Uhr geöffnet.
+        - Das Geschäft ist ab sofort bis 20 Uhr geöffnet.
+        - Ab sofort hat das Geschäft bis 20 Uhr geöffnet.
+        - Das Geschäft hat ab sofort bis 20 Uhr geöffnet.
+        - Ab sofort ist das Geschäft bis 20 Uhr offen.
+        - Das Geschäft ist ab sofort bis 20 Uhr offen.
+        - Ab sofort ist das Geschäft bis zwanzig Uhr geöffnet.
+        - Das Geschäft ist ab sofort bis zwanzig Uhr geöffnet.
+        - Ab sofort hat das Geschäft bis zwanzig Uhr geöffnet.
+        - Das Geschäft hat ab sofort bis zwanzig Uhr geöffnet.
+        - Ab sofort ist das Geschäft bis zwanzig Uhr offen.
+        - Das Geschäft ist ab sofort bis zwanzig Uhr offen.
+    known_wrong:
+      - answer: Ab sofort das Geschäft ist bis 20 Uhr geöffnet.
+        feedback_vi: Ab sofort đứng ở vị trí 1 nên động từ ist ở vị trí 2 – Ab sofort ist das Geschäft …
+        error_tag: verb_position
+      - answer: Seit sofort ist das Geschäft bis 20 Uhr geöffnet.
+        feedback_vi: Kể từ bây giờ (cho tương lai) là ab sofort, không dùng seit.
+        error_tag: preposition
+    explanation:
+      vi: "Kể từ bây giờ = ab sofort; đến 20 giờ = bis 20 Uhr. Mở cửa: ist geöffnet (trạng thái), hat geöffnet hoặc ist offen đều đúng. Nếu ab sofort đứng đầu thì động từ ở vị trí 2."
+    display_answer: Ab sofort ist das Geschäft bis 20 Uhr geöffnet.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u07l4-wb-gegen-unfall
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-praeteritum-system
+    prompt:
+      instruction: "Sắp xếp thành câu tin tức (Präteritum), bắt đầu bằng Gegen: \"Khoảng tám giờ đã xảy ra một vụ tai nạn trên đường cao tốc.\""
+      tokens:
+        - { id: a-autobahn, text: Autobahn }
+        - { id: a-passierte, text: passierte }
+        - { id: a-gegen, text: Gegen }
+        - { id: a-ein, text: ein }
+        - { id: a-uhr, text: Uhr }
+        - { id: a-der, text: der }
+        - { id: a-unfall, text: Unfall }
+        - { id: a-acht, text: acht }
+        - { id: a-auf, text: auf }
+    answer:
+      orders:
+        - [a-gegen, a-acht, a-uhr, a-passierte, a-auf, a-der, a-autobahn, a-ein, a-unfall]
+        - [a-gegen, a-acht, a-uhr, a-passierte, a-ein, a-unfall, a-auf, a-der, a-autobahn]
+    explanation:
+      vi: "Gegen acht Uhr là vị trí 1, nên passierte (Präteritum của passieren) ở vị trí 2. Chủ ngữ ein Unfall và cụm nơi chốn auf der Autobahn có thể đổi chỗ cho nhau; trong tin tức, chủ ngữ mới (ein Unfall) hay được đặt sau."
+    display_answer: Gegen acht Uhr passierte auf der Autobahn ein Unfall.
+
+  - key: de:exercise:b1u07l4-wb-interview-mitte
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-veroeffentlichen
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Das Interview: \"Bài phỏng vấn đã được đăng vào giữa tháng Năm.\""
+      tokens:
+        - { id: i-mai, text: Mai }
+        - { id: i-veroeffentlicht, text: veröffentlicht }
+        - { id: i-das, text: Das }
+        - { id: i-wurde, text: wurde }
+        - { id: i-mitte, text: Mitte }
+        - { id: i-interview, text: Interview }
+    answer:
+      orders:
+        - [i-das, i-interview, i-wurde, i-mitte, i-mai, i-veroeffentlicht]
+    explanation:
+      vi: "Bị động Präteritum: wurde ở vị trí 2, Partizip II veröffentlicht (không ge- vì có ver-) ở cuối câu. Mitte Mai đứng giữa, không cần giới từ."
+    display_answer: Das Interview wurde Mitte Mai veröffentlicht.
+
+  - key: de:exercise:b1u07l4-mcq-es-ging-um
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-es-geht-um
+    prompt:
+      stem: "Bạn kể lại cho bạn bè: \"Hôm nay tin tức nói về một cuộc đình công ở ngành đường sắt.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g2a, text: "In den Nachrichten ging es heute um einen Streik bei der Bahn.", lang: de }
+        - { id: g6b, text: "In den Nachrichten ging es heute über einen Streik bei der Bahn.", lang: de }
+        - { id: g9c, text: "In den Nachrichten es ging heute um einen Streik bei der Bahn.", lang: de }
+        - { id: g4d, text: "In den Nachrichten ging es heute um ein Streik bei der Bahn.", lang: de }
+    answer:
+      correct_option_id: g2a
+    explanation:
+      vi: "Nói về = es geht um + Akkusativ (Präteritum: es ging um). der Streik là giống đực nên Akkusativ là einen Streik. In den Nachrichten là vị trí 1, nên ging đứng ở vị trí 2, trước es."
+    display_answer: In den Nachrichten ging es heute um einen Streik bei der Bahn.

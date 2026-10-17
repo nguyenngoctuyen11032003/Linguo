@@ -1,0 +1,407 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u07-digitaler-alltag
+order_index: 1
+level: b1
+title:
+  vi: Đời sống số – phân từ làm tính từ (Das klingelnde Handy, die gespeicherten Daten)
+objectives:
+  - vi: Tạo và dùng Partizip I làm tính từ (das klingelnde Handy) cho hành động chủ động, đang diễn ra.
+  - vi: Dùng Partizip II làm tính từ (die gespeicherten Daten) cho việc đã xong, thường mang nghĩa bị động.
+  - vi: Đọc một đoạn văn ngắn về thiết bị số và mô tả thiết bị gọn bằng cụm phân từ.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u06-wiederholung]
+items:
+  - item: de:item:b1u07-g-partizip-i-attribut
+  - item: de:item:b1u07-g-partizip-ii-attribut
+  - item: de:item:b1u07-geraet
+  - item: de:item:b1u07-akku
+  - item: de:item:b1u07-aufladen
+  - item: de:item:b1u07-installieren
+  - item: de:item:b1u07-software
+  - item: de:item:b1u07-digital
+  - item: de:item:b1u07-daten
+  - item: de:item:b1u07-nutzer
+  - item: de:item:b1u07-wlan
+  - item: de:item:b1u07-kabel
+  - item: de:item:b1u07-kopfhoerer
+  - item: de:item:b1u07-lautsprecher
+  - item: de:item:b1u07-update
+  - item: de:item:b1u07-einstellung
+  - item: de:item:b1u07-aktualisieren
+  - item: de:item:b1u07-tastatur
+  - item: de:item:b1u07-kabellos
+  - item: de:item:b1u07-tippen
+  - item: de:item:a2u07-g-was-fuer-ein
+    role: reuse
+  - item: de:item:a2u07-gebraucht
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-nom-akk
+    role: reuse
+  - item: de:item:b1u05-g-adj-dekl-vollstaendig
+    role: reuse
+  - item: de:item:b1u06-g-komposita-fugen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn mô tả được thiết bị số một cách gọn gàng bằng phân từ, ví dụ: \"Das klingelnde Handy gehört mir. Die gespeicherten Daten sind sicher, und der Akku ist voll aufgeladen.\""
+  - type: explain
+    text:
+      vi: "Partizip I được tạo bằng nguyên thể + -d: klingeln → klingelnd, lachen → lachend, fahren → fahrend. Khi đứng trước danh từ, nó nhận đuôi đúng như một tính từ: das klingelnde Handy, ein klingelndes Handy, im fahrenden Zug."
+  - type: explain
+    text:
+      vi: "Partizip I mang nghĩa chủ động và đang diễn ra cùng lúc: das klingelnde Handy là cái điện thoại đang reo. Tiếng Việt đặt \"đang reo\" sau danh từ, còn tiếng Đức đặt phân từ trước danh từ, giữa mạo từ và danh từ."
+  - type: explain
+    text:
+      vi: "Partizip II (gespeichert, installiert, aufgeladen) cũng đứng trước danh từ và nhận đuôi tính từ: die gespeicherten Daten, ein aufgeladener Akku. Với động từ có tân ngữ, nghĩa là bị động và đã xong: die gespeicherten Daten = dữ liệu đã được lưu."
+  - type: explain
+    text:
+      vi: "Với động từ chuyển động hoặc đổi trạng thái dùng sein (ankommen, einschlafen), Partizip II mang nghĩa chủ động và đã xong: der angekommene Zug = chuyến tàu đã đến. Mẹo kiểm tra: đổi cụm phân từ thành mệnh đề quan hệ – das klingelnde Handy = das Handy, das klingelt; die gespeicherten Daten = die Daten, die gespeichert wurden."
+  - type: deep_explain
+    text:
+      vi: "Trước phân từ có thể thêm trạng từ hoặc cả một cụm: ein voll aufgeladener Akku, das gestern installierte Update; cụm dài hơn (cụm phân từ mở rộng) là đặc trưng của văn báo chí và bạn sẽ học kỹ ở B2. Nhiều tính từ quen thuộc thật ra là phân từ: spannend, anstrengend, dringend (Partizip I), gebraucht, verheiratet, geöffnet (Partizip II). Partizip I còn có thể làm trạng từ, không có đuôi: Er kam lachend ins Zimmer. Chú ý chọn đúng loại: das reparierende Handy là sai nghĩa (điện thoại tự đi sửa), phải nói das reparierte Handy (điện thoại đã được sửa). Đuôi của phân từ theo đúng ba bảng tính từ bạn đã học: sau der/die/das, sau ein/kein/mein và khi không có mạo từ (gespeicherte Daten)."
+  - type: example
+    target: Das klingelnde Handy liegt unter dem Kissen.
+    target_lang: de
+    translation:
+      vi: Cái điện thoại đang reo nằm dưới gối.
+    note:
+      vi: "klingeln + d = klingelnd; sau das (Nom, giống trung) thêm -e: das klingelnde Handy."
+  - type: example
+    target: Im fahrenden Zug ist das WLAN oft schlecht.
+    target_lang: de
+    translation:
+      vi: Trên tàu đang chạy, Wi-Fi thường yếu.
+    note:
+      vi: "im = in dem (Dativ giống đực) nên phân từ có đuôi -en: im fahrenden Zug."
+  - type: example
+    target: Die gelöschten Fotos kann man manchmal wiederherstellen.
+    target_lang: de
+    translation:
+      vi: Những tấm ảnh đã bị xoá đôi khi có thể khôi phục lại được.
+    note:
+      vi: "löschen → gelöscht (Partizip II): ảnh bị xoá, nghĩa bị động. Sau die số nhiều, đuôi là -en."
+  - type: example
+    target: Ein voll aufgeladener Akku hält bei mir einen ganzen Tag.
+    target_lang: de
+    translation:
+      vi: Với tôi, một cục pin sạc đầy dùng được cả ngày.
+    note:
+      vi: "aufladen → aufgeladen; sau ein (Nom, giống đực) đuôi là -er. voll là trạng từ đứng trước phân từ nên không có đuôi."
+  - type: example
+    target: Das Handy, das gerade klingelt, gehört meinem Kollegen.
+    target_lang: de
+    translation:
+      vi: Cái điện thoại đang reo là của đồng nghiệp tôi.
+    note:
+      vi: "Mệnh đề quan hệ das Handy, das gerade klingelt có cùng nghĩa với das klingelnde Handy; cụm phân từ ngắn hơn và hay gặp trong văn viết."
+  - type: example
+    target: Die Sicherheitseinstellungen findest du im Menü oben rechts.
+    target_lang: de
+    translation:
+      vi: Phần cài đặt bảo mật bạn tìm trong menu ở góc trên bên phải.
+    note:
+      vi: "Nói với bạn bè (du). Từ ghép die Sicherheit + s + die Einstellungen: sau đuôi -heit thường có âm nối -s-."
+  - type: example
+    target: Was für ein Gerät suchen Sie? – Einen kabellosen Lautsprecher für die Küche.
+    target_lang: de
+    translation:
+      vi: Anh/chị tìm loại thiết bị nào ạ? – Một cái loa không dây cho nhà bếp.
+    note:
+      vi: "Nhân viên bán hàng nói với khách (Sie). Was für ein … hỏi về loại; câu trả lời ở Akkusativ: einen kabellosen Lautsprecher."
+  - type: common_mistake
+    wrong: Das klingeln Handy gehört mir.
+    right: Das klingelnde Handy gehört mir.
+    target_lang: de
+    note:
+      vi: "Partizip I cần thêm -d vào nguyên thể và đuôi tính từ: klingeln + d + e = klingelnde."
+  - type: common_mistake
+    wrong: Die gespeichert Daten sind weg.
+    right: Die gespeicherten Daten sind weg.
+    target_lang: de
+    note:
+      vi: "Phân từ đứng trước danh từ phải có đuôi như tính từ: die gespeicherten Daten. Chỉ sau sein mới không có đuôi: Die Daten sind gespeichert."
+  - type: common_mistake
+    wrong: Ich finde die speichernden Daten nicht.
+    right: Ich finde die gespeicherten Daten nicht.
+    target_lang: de
+    note:
+      vi: "Dữ liệu không tự lưu mà được lưu (bị động, đã xong), nên dùng Partizip II gespeichert, không dùng Partizip I speichernd."
+  - type: summary
+    points:
+      - vi: "Partizip I = nguyên thể + -d (klingelnd, fahrend): chủ động, đang diễn ra."
+      - vi: "Partizip II (gespeichert, aufgeladen): thường bị động, đã xong; với động từ dùng sein thì chủ động, đã xong (der angekommene Zug)."
+      - vi: "Trước danh từ, phân từ có đuôi tính từ: das klingelnde Handy, im fahrenden Zug, ein aufgeladener Akku, die gespeicherten Daten."
+      - vi: "Kiểm tra bằng mệnh đề quan hệ: das Handy, das klingelt / die Daten, die gespeichert wurden."
+      - vi: "Từ vựng: das Gerät, der Akku, aufladen, installieren, die Software, digital, die Daten, der Nutzer, das WLAN."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u07l1-mcq-klingelnde
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-g-partizip-i-attribut
+    prompt:
+      stem: "Chọn dạng đúng (cái điện thoại đang reo): Das ___ Handy gehört meiner Kollegin."
+      stem_lang: vi
+      options:
+        - { id: k3a, text: "klingelnde", lang: de }
+        - { id: k7b, text: "klingeln", lang: de }
+        - { id: k1c, text: "klingelte", lang: de }
+        - { id: k5d, text: "klingelnd", lang: de }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: "Đang reo (chủ động, đang diễn ra) → Partizip I: klingeln + d = klingelnd. Đứng trước danh từ sau das (Nom, giống trung) cần đuôi -e: das klingelnde Handy. klingeln là nguyên thể, klingelte là Präteritum, klingelnd thiếu đuôi."
+    display_answer: klingelnde
+
+  - key: de:exercise:b1u07l1-mcq-gespeicherten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-g-partizip-ii-attribut
+    prompt:
+      stem: "Chọn dạng đúng (những tấm ảnh đã được lưu): Ich kann die ___ Fotos nicht mehr finden."
+      stem_lang: vi
+      options:
+        - { id: s2a, text: "gespeicherten", lang: de }
+        - { id: s6b, text: "speichernden", lang: de }
+        - { id: s9c, text: "gespeichert", lang: de }
+        - { id: s4d, text: "gespeicherte", lang: de }
+    answer:
+      correct_option_id: s2a
+    explanation:
+      vi: "Ảnh được lưu (bị động, đã xong) → Partizip II gespeichert. Sau die số nhiều (Akk), đuôi là -en: die gespeicherten Fotos. speichernden là Partizip I (ảnh tự lưu – sai nghĩa); gespeichert thiếu đuôi; gespeicherte sai đuôi."
+    display_answer: gespeicherten
+
+  - key: de:exercise:b1u07l1-mcq-lesen-bus
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-kabellos
+    prompt:
+      stem: "Mein Tag beginnt um sechs Uhr mit dem klingelnden Wecker auf meinem Handy. Noch im Bett lese ich die neuen Nachrichten. Im fahrenden Bus höre ich mit kabellosen Kopfhörern Musik. Abends lade ich alle Geräte auf. Einmal pro Woche speichere ich meine wichtigsten Daten auf einer externen Festplatte. — Richtig oder falsch? Die Person hört im Bus Musik ohne Kabel."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Văn bản viết: Im fahrenden Bus höre ich mit kabellosen Kopfhörern Musik – trên xe buýt đang chạy, người viết nghe nhạc bằng tai nghe không dây (kabellos = ohne Kabel). Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u07l1-mcq-lesen-daten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-daten
+    prompt:
+      stem: "Mein Tag beginnt um sechs Uhr mit dem klingelnden Wecker auf meinem Handy. Noch im Bett lese ich die neuen Nachrichten. Im fahrenden Bus höre ich mit kabellosen Kopfhörern Musik. Abends lade ich alle Geräte auf. Einmal pro Woche speichere ich meine wichtigsten Daten auf einer externen Festplatte. — Richtig oder falsch? Die Person speichert ihre Daten jeden Tag."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: Einmal pro Woche speichere ich meine wichtigsten Daten – mỗi tuần một lần, không phải mỗi ngày. Việc làm hằng ngày (abends) là sạc thiết bị: Abends lade ich alle Geräte auf. Câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u07l1-fill-partizip-i
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-partizip-i-attribut
+    prompt:
+      template: "Im {{b1}} (fahren) Zug ist das WLAN oft schlecht. Das {{b2}} (klingeln) Handy gehört mir nicht. Neben mir sitzt ein {{b3}} (lachen) Kind."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 11 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [fahrenden]
+        b2: [klingelnde]
+        b3: [lachendes]
+    known_wrong:
+      - answer: fahrender
+        feedback_vi: im = in dem (Dativ giống đực), sau dem đuôi là -en – im fahrenden Zug.
+        error_tag: adj_ending
+      - answer: gefahrenen
+        feedback_vi: Con tàu đang chạy (chủ động, đang diễn ra) nên dùng Partizip I fahrend-, không dùng Partizip II.
+        error_tag: participle_form
+      - answer: klingeln
+        feedback_vi: Cần Partizip I có đuôi tính từ – klingeln + d + e = klingelnde.
+        error_tag: participle_form
+      - answer: klingelndes
+        feedback_vi: Sau mạo từ xác định das (Nom) chỉ cần đuôi -e – das klingelnde Handy.
+        error_tag: adj_ending
+      - answer: lachende
+        feedback_vi: Sau ein (Nom, giống trung) đuôi phải cho thấy giống trung – ein lachendes Kind.
+        error_tag: adj_ending
+    explanation:
+      vi: "Cả ba việc đều đang diễn ra và chủ động → Partizip I (nguyên thể + d). Đuôi theo bảng tính từ: im (Dativ giống đực) → -en; das (Nom) → -e; ein + giống trung (Nom) → -es."
+    display_answer: "Im fahrenden Zug ist das WLAN oft schlecht. Das klingelnde Handy gehört mir nicht. Neben mir sitzt ein lachendes Kind."
+
+  - key: de:exercise:b1u07l1-fill-partizip-ii
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-partizip-ii-attribut
+    prompt:
+      template: "Die {{b1}} (speichern) Daten sind weg. Ein voll {{b2}} (aufladen) Akku hält einen ganzen Tag. Das {{b3}} (installieren) Programm funktioniert nicht."
+      blanks:
+        - { id: b1, width_hint: 13 }
+        - { id: b2, width_hint: 12 }
+        - { id: b3, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [gespeicherten]
+        b2: [aufgeladener]
+        b3: [installierte]
+    known_wrong:
+      - answer: gespeicherte
+        feedback_vi: Sau die số nhiều đuôi là -en – die gespeicherten Daten.
+        error_tag: adj_ending
+      - answer: speichernden
+        feedback_vi: Dữ liệu được lưu (bị động, đã xong) nên dùng Partizip II gespeichert-, không dùng Partizip I.
+        error_tag: participle_form
+      - answer: aufgeladene
+        feedback_vi: Sau ein + danh từ giống đực (Nom) đuôi là -er – ein aufgeladener Akku.
+        error_tag: adj_ending
+      - answer: aufgeladen
+        feedback_vi: Phân từ đứng trước danh từ cần đuôi tính từ – ein voll aufgeladener Akku.
+        error_tag: adj_ending
+      - answer: geinstallierte
+        feedback_vi: Động từ đuôi -ieren không có ge- ở Partizip II – installiert, nên das installierte Programm.
+        error_tag: participle_form
+      - answer: installiertes
+        feedback_vi: Sau mạo từ xác định das (Nom) chỉ cần đuôi -e – das installierte Programm.
+        error_tag: adj_ending
+    explanation:
+      vi: "Dữ liệu được lưu, pin được sạc, chương trình được cài: việc đã xong, bị động → Partizip II (gespeichert, aufgeladen, installiert – không ge- vì đuôi -ieren). Đuôi: die số nhiều → -en; ein + giống đực Nom → -er; das Nom → -e."
+    display_answer: "Die gespeicherten Daten sind weg. Ein voll aufgeladener Akku hält einen ganzen Tag. Das installierte Programm funktioniert nicht."
+
+  - key: de:exercise:b1u07l1-tr-klingelnde
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-partizip-i-attribut
+    prompt:
+      source_text: "Cái điện thoại đang reo nằm trên bàn. (dùng Partizip I)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das klingelnde Handy liegt auf dem Tisch.
+        - Auf dem Tisch liegt das klingelnde Handy.
+        - Das klingelnde Telefon liegt auf dem Tisch.
+        - Auf dem Tisch liegt das klingelnde Telefon.
+        - Das klingelnde Smartphone liegt auf dem Tisch.
+        - Auf dem Tisch liegt das klingelnde Smartphone.
+        - Auf dem Tisch liegt ein klingelndes Handy.
+        - Auf dem Tisch liegt ein klingelndes Telefon.
+        - Auf dem Tisch liegt ein klingelndes Smartphone.
+    known_wrong:
+      - answer: Das klingeln Handy liegt auf dem Tisch.
+        feedback_vi: Partizip I cần -d và đuôi tính từ – das klingelnde Handy.
+        error_tag: participle_form
+      - answer: Das klingelndes Handy liegt auf dem Tisch.
+        feedback_vi: Sau das (mạo từ xác định) chỉ cần đuôi -e – das klingelnde Handy.
+        error_tag: adj_ending
+      - answer: Das Handy klingelnd liegt auf dem Tisch.
+        feedback_vi: Phân từ làm tính từ đứng giữa mạo từ và danh từ – das klingelnde Handy.
+        error_tag: word_order
+    explanation:
+      vi: "Đang reo → Partizip I klingelnd, đứng trước danh từ với đuôi -e sau das: das klingelnde Handy. Điện thoại nằm trên bàn: liegen auf + Dativ (auf dem Tisch). Có thể đưa auf dem Tisch lên đầu câu, động từ liegt vẫn ở vị trí 2."
+    display_answer: Das klingelnde Handy liegt auf dem Tisch.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u07l1-wb-gespeicherten-daten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-partizip-ii-attribut
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Ich: \"Tôi không tìm thấy những dữ liệu đã lưu nữa.\""
+      tokens:
+        - { id: d-finde, text: finde }
+        - { id: d-daten, text: Daten }
+        - { id: d-ich, text: Ich }
+        - { id: d-nicht, text: nicht }
+        - { id: d-gespeicherten, text: gespeicherten }
+        - { id: d-mehr, text: mehr }
+        - { id: d-die, text: die }
+    answer:
+      orders:
+        - [d-ich, d-finde, d-die, d-gespeicherten, d-daten, d-nicht, d-mehr]
+    explanation:
+      vi: "Động từ finde ở vị trí 2. Phân từ gespeicherten đứng giữa mạo từ die và danh từ Daten. nicht mehr (không … nữa) đứng sau tân ngữ xác định, ở cuối câu."
+    display_answer: Ich finde die gespeicherten Daten nicht mehr.
+
+  - key: de:exercise:b1u07l1-mcq-was-fuer-ein
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-was-fuer-ein
+    prompt:
+      stem: "Ở cửa hàng điện máy, nhân viên muốn hỏi khách đang tìm loại thiết bị nào. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: w2a, text: "Was für ein Gerät suchen Sie?", lang: de }
+        - { id: w6b, text: "Was für einen Gerät suchen Sie?", lang: de }
+        - { id: w9c, text: "Was für Gerät suchen Sie?", lang: de }
+        - { id: w4d, text: "Was für ein Gerät Sie suchen?", lang: de }
+    answer:
+      correct_option_id: w2a
+    explanation:
+      vi: "Was für ein …? hỏi về loại. das Gerät là giống trung, ở Akkusativ vẫn là ein (không phải einen). Danh từ đếm được số ít cần ein, và trong câu hỏi W động từ suchen đứng ở vị trí 2."
+    display_answer: Was für ein Gerät suchen Sie?
+
+  - key: de:exercise:b1u07l1-tr-gebrauchtes-handy
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-gebraucht
+    prompt:
+      source_text: "Tôi đã mua một chiếc điện thoại đã qua sử dụng. (văn nói, dùng Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe ein gebrauchtes Handy gekauft.
+        - Ich habe mir ein gebrauchtes Handy gekauft.
+        - Ich habe ein gebrauchtes Smartphone gekauft.
+        - Ich habe mir ein gebrauchtes Smartphone gekauft.
+        - Ich habe ein gebrauchtes Telefon gekauft.
+        - Ich habe mir ein gebrauchtes Telefon gekauft.
+    known_wrong:
+      - answer: Ich habe ein gebrauchter Handy gekauft.
+        feedback_vi: das Handy là giống trung; sau ein ở Akkusativ đuôi là -es – ein gebrauchtes Handy.
+        error_tag: adj_ending
+      - answer: Ich habe ein gebraucht Handy gekauft.
+        feedback_vi: Phân từ đứng trước danh từ cần đuôi tính từ – ein gebrauchtes Handy.
+        error_tag: adj_ending
+      - answer: Ich habe ein gebrauchendes Handy gekauft.
+        feedback_vi: Điện thoại đã được người khác dùng (bị động, đã xong) nên dùng Partizip II gebraucht, không dùng Partizip I.
+        error_tag: participle_form
+    explanation:
+      vi: "đã qua sử dụng = gebraucht (Partizip II của brauchen/gebrauchen, đã thành tính từ quen dùng). Sau ein + danh từ giống trung ở Akkusativ, đuôi là -es: ein gebrauchtes Handy. Perfekt: habe … gekauft."
+    display_answer: Ich habe ein gebrauchtes Handy gekauft.

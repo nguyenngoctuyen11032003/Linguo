@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u07-waehrend
+order_index: 2
+level: b1
+title:
+  vi: Trong khi, ngay khi, chừng nào (Während, sobald, solange)
+objectives:
+  - vi: Nói về thói quen dùng điện thoại và mạng xã hội của mình.
+  - vi: Dùng während + câu phụ để nói hai việc diễn ra cùng lúc hoặc để so sánh tương phản.
+  - vi: Dùng sobald (ngay khi) và solange (chừng nào còn) với động từ đứng cuối câu phụ.
+estimated_minutes: 19
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b1u07-digitaler-alltag]
+items:
+  - item: de:item:b1u07-g-waehrend-konjunktion
+  - item: de:item:b1u07-g-sobald-solange
+  - item: de:item:b1u07-gewohnheit
+  - item: de:item:b1u07-soziales-netzwerk
+  - item: de:item:b1u07-abhaengig
+  - item: de:item:b1u07-bildschirmzeit
+  - item: de:item:b1u07-ablenken
+  - item: de:item:b1u07-staendig
+  - item: de:item:b1u07-erreichbar
+  - item: de:item:b1u07-benachrichtigung
+  - item: de:item:b1u07-surfen
+  - item: de:item:b1u07-chatten
+  - item: de:item:b1u07-gleichzeitig
+  - item: de:item:b1u07-nebenbei
+  - item: de:item:b1u07-lautlos
+  - item: de:item:b1u07-ablenkung
+  - item: de:item:b1u07-reagieren
+  - item: de:item:b1u07-offline
+  - item: de:item:b1u07-kontakt
+  - item: de:item:a2u05-g-wenn-temporal
+    role: reuse
+  - item: de:item:b1u01-g-bis
+    role: reuse
+  - item: de:item:a2u07-online
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được về thói quen số của mình, ví dụ: \"Während ich koche, höre ich Musik. Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy. Aber solange ich arbeite, ist mein Handy lautlos.\""
+  - type: explain
+    text:
+      vi: "während có thể mở đầu một câu phụ, và như mọi câu phụ, động từ chia đứng cuối: Während ich koche, … Nghĩa thường gặp nhất là hai việc diễn ra cùng lúc (trong khi): Während ich koche, höre ich Musik. Câu phụ đứng đầu chiếm vị trí 1, nên động từ câu chính đứng ngay sau dấu phẩy."
+  - type: explain
+    text:
+      vi: "während còn dùng để so sánh tương phản hai người hoặc hai việc, giống \"còn\", \"trong khi đó\" trong tiếng Việt: Während meine Mutter ständig online ist, liest mein Vater lieber Zeitung. Ở nghĩa này, hai vế thường có từ đối lập (ständig online ↔ lieber Zeitung)."
+  - type: explain
+    text:
+      vi: "Bạn đã gặp während là giới từ + Genitiv: während des Unterrichts. Giới từ thì theo sau là một danh từ; liên từ thì theo sau là cả một câu có chủ ngữ và động từ ở cuối: während ich lerne."
+  - type: explain
+    text:
+      vi: "sobald = ngay khi: việc ở câu chính xảy ra ngay sau việc ở câu phụ, thường dùng hiện tại để nói tương lai: Sobald ich zu Hause bin, rufe ich dich an. So với wenn (khi, mỗi khi), sobald nhấn mạnh \"ngay lập tức\"."
+  - type: explain
+    text:
+      vi: "solange = chừng nào còn, suốt thời gian mà: Solange du online bist, kannst du dich nicht konzentrieren. Đừng nhầm với bis (cho đến khi): Ich warte, bis du offline bist – bis chỉ điểm kết thúc, solange chỉ cả khoảng thời gian."
+  - type: deep_explain
+    text:
+      vi: "Khi việc ở câu phụ phải xong trước, sobald đi với Perfekt: Sobald ich die Mail gelesen habe, antworte ich dir. solange hay đi với phủ định: Solange du nicht antwortest, warte ich (chừng nào bạn chưa trả lời, tôi còn chờ). Viết rời so lange nghĩa là \"lâu như thế\" (Ich habe so lange gewartet!); cụm so bald wie möglich (càng sớm càng tốt) cũng viết rời. Trạng từ währenddessen = trong lúc đó, đứng trong câu chính: Ich koche, und währenddessen höre ich Musik. Về văn phong: trong văn viết chuẩn, giới từ während đi với Genitiv (während des Essens); dạng während dem Essen chỉ gặp trong khẩu ngữ."
+  - type: example
+    target: Während ich koche, höre ich Musik.
+    target_lang: de
+    translation:
+      vi: Trong khi nấu ăn, tôi nghe nhạc.
+    note:
+      vi: "während = đồng thời. Câu phụ: koche đứng cuối; câu chính: höre đứng ngay sau dấu phẩy."
+  - type: example
+    target: Während meine Mutter ständig online ist, liest mein Vater lieber Zeitung.
+    target_lang: de
+    translation:
+      vi: Mẹ tôi lúc nào cũng online, còn bố tôi thì thích đọc báo hơn.
+    note:
+      vi: "während = tương phản (còn, trong khi đó). Hai vế đối lập: ständig online ↔ lieber Zeitung."
+  - type: example
+    target: Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy.
+    target_lang: de
+    translation:
+      vi: Hễ có thông báo là tôi nhìn ngay vào điện thoại.
+    note:
+      vi: "sobald = ngay khi. aufs = auf das (Akkusativ, vì là hướng nhìn: Wohin?)."
+  - type: example
+    target: Solange ich arbeite, lege ich mein Handy in die Schublade.
+    target_lang: de
+    translation:
+      vi: Chừng nào còn làm việc, tôi để điện thoại trong ngăn kéo.
+    note:
+      vi: "solange = suốt thời gian làm việc. legen + in die Schublade (Wohin? → Akkusativ)."
+  - type: example
+    target: Wenn ich im Urlaub bin, bin ich nicht erreichbar. Ich bleibe offline, bis ich wieder zu Hause bin.
+    target_lang: de
+    translation:
+      vi: Khi đi nghỉ, tôi không nhận liên lạc. Tôi ngắt mạng cho đến khi về lại nhà.
+    note:
+      vi: "wenn = khi/mỗi khi (đã học ở A2); bis = cho đến khi (điểm kết thúc). Cả hai đều mở câu phụ, động từ cuối."
+  - type: example
+    target: Chattest du oft nebenbei, während du fernsiehst? – Ja, leider. Das ist eine schlechte Gewohnheit.
+    target_lang: de
+    translation:
+      vi: Bạn có hay vừa xem ti vi vừa chat không? – Có, tiếc là vậy. Đó là một thói quen xấu.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). fernsehen là động từ tách, nhưng trong câu phụ nó viết liền ở cuối: während du fernsiehst."
+  - type: common_mistake
+    wrong: Während ich esse, ich schaue aufs Handy.
+    right: Während ich esse, schaue ich aufs Handy.
+    target_lang: de
+    note:
+      vi: "Câu phụ đứng đầu là vị trí 1, nên động từ câu chính (schaue) phải đứng ngay sau dấu phẩy, trước chủ ngữ."
+  - type: common_mistake
+    wrong: Während das Essen schaue ich aufs Handy.
+    right: Während des Essens schaue ich aufs Handy.
+    target_lang: de
+    note:
+      vi: "Khi theo sau là danh từ, während là giới từ và cần Genitiv: des Essens. Muốn dùng câu thì: Während ich esse, …"
+  - type: common_mistake
+    wrong: Solange habe ich auf deine Antwort gewartet!
+    right: So lange habe ich auf deine Antwort gewartet!
+    target_lang: de
+    note:
+      vi: "\"Lâu như thế\" là so lange (viết rời). solange (viết liền) là liên từ \"chừng nào còn\" và mở câu phụ."
+  - type: summary
+    points:
+      - vi: "während + câu phụ: (1) trong khi – đồng thời; (2) còn, trong khi đó – tương phản."
+      - vi: "während + Genitiv là giới từ (während des Essens); während + câu là liên từ (während ich esse)."
+      - vi: "sobald = ngay khi; solange = chừng nào còn; bis = cho đến khi; wenn = khi, mỗi khi."
+      - vi: "Câu phụ: động từ cuối; câu phụ đứng đầu → động từ câu chính ngay sau dấu phẩy."
+      - vi: "so lange (viết rời) = lâu như thế, không phải liên từ."
+      - vi: "Từ vựng: die Gewohnheit, das soziale Netzwerk, abhängig von, die Bildschirmzeit, ablenken, ständig, erreichbar, die Benachrichtigung."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u07l2-mcq-sobald
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-g-sobald-solange
+    prompt:
+      stem: "Chọn liên từ đúng (ngay khi về đến nhà): ___ ich zu Hause bin, rufe ich dich an."
+      stem_lang: vi
+      options:
+        - { id: o3a, text: "Sobald", lang: de }
+        - { id: o7b, text: "Solange", lang: de }
+        - { id: o1c, text: "Während", lang: de }
+        - { id: o5d, text: "Bis", lang: de }
+    answer:
+      correct_option_id: o3a
+    explanation:
+      vi: "Ngay khi = sobald: gọi điện ngay sau khi về đến nhà. Solange (chừng nào còn ở nhà) và Während (trong lúc ở nhà) nói về cả một khoảng thời gian; Bis (cho đến khi) chỉ điểm kết thúc."
+    display_answer: Sobald
+
+  - key: de:exercise:b1u07l2-mcq-solange
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-g-sobald-solange
+    prompt:
+      stem: "Chọn liên từ đúng (chừng nào bạn còn online): ___ du online bist, kannst du dich nicht konzentrieren."
+      stem_lang: vi
+      options:
+        - { id: l2a, text: "Solange", lang: de }
+        - { id: l6b, text: "Sobald", lang: de }
+        - { id: l9c, text: "Bis", lang: de }
+        - { id: l4d, text: "Nachdem", lang: de }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "Chừng nào còn = solange: suốt thời gian online thì không tập trung được. Sobald là ngay khi, Bis là cho đến khi, Nachdem là sau khi."
+    display_answer: Solange
+
+  - key: de:exercise:b1u07l2-listen-kochen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-g-waehrend-konjunktion
+    prompt:
+      audio_asset_id: null
+      fallback_text: Während ich koche, höre ich Musik. Aber sobald das Essen fertig ist, lege ich das Handy weg.
+      options:
+        - { id: h2a, text: "Trong khi nấu ăn, tôi nghe nhạc. Nhưng ngay khi đồ ăn xong, tôi cất điện thoại đi.", lang: vi }
+        - { id: h6b, text: "Sau khi nấu ăn, tôi nghe nhạc. Nhưng ngay khi đồ ăn xong, tôi cất điện thoại đi.", lang: vi }
+        - { id: h9c, text: "Trong khi nấu ăn, tôi nghe nhạc. Nhưng chừng nào đồ ăn chưa xong, tôi không cất điện thoại.", lang: vi }
+        - { id: h4d, text: "Trong khi nấu ăn, tôi xem điện thoại. Nhưng ngay khi đồ ăn xong, tôi bật nhạc.", lang: vi }
+    answer:
+      correct_option_id: h2a
+    explanation:
+      vi: "Während ich koche = trong khi nấu ăn (không phải sau khi – nachdem); höre ich Musik = tôi nghe nhạc. sobald das Essen fertig ist = ngay khi đồ ăn xong; lege ich das Handy weg = tôi cất điện thoại đi."
+    display_answer: Trong khi nấu ăn, tôi nghe nhạc. Nhưng ngay khi đồ ăn xong, tôi cất điện thoại đi.
+
+  - key: de:exercise:b1u07l2-mcq-waehrend-kontrast
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-g-waehrend-konjunktion
+    prompt:
+      stem: "Trong câu \"Während Anna ständig online ist, hat ihr Bruder nicht einmal ein Smartphone.\", während có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: t3a, text: "còn, trong khi đó (so sánh tương phản)", lang: vi }
+        - { id: t7b, text: "ngay khi", lang: vi }
+        - { id: t1c, text: "cho đến khi", lang: vi }
+        - { id: t5d, text: "sau khi", lang: vi }
+    answer:
+      correct_option_id: t3a
+    explanation:
+      vi: "Hai vế đối lập nhau: Anna lúc nào cũng online, còn anh trai thậm chí không có điện thoại thông minh. Ở đây während so sánh tương phản hai người, giống \"còn\", \"trong khi đó\"."
+    display_answer: còn, trong khi đó (so sánh tương phản)
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u07l2-fill-sobald-anrufen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-sobald-solange
+    prompt:
+      template: "Sobald ich zu Hause {{b1}} (sein), {{b2}} (anrufen) ich dich {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [bin]
+        b2: [rufe]
+        b3: [an]
+    known_wrong:
+      - answer: anrufe
+        feedback_vi: Trong câu chính, động từ tách tách ra – rufe đứng ngay sau dấu phẩy, an đứng cuối câu.
+        error_tag: separable_prefix
+      - answer: sein
+        feedback_vi: Động từ trong câu phụ phải chia theo chủ ngữ ich – ich bin.
+        error_tag: verb_form
+    explanation:
+      vi: "Câu phụ sobald: động từ chia (bin) đứng cuối. Câu phụ là vị trí 1, nên động từ câu chính rufe đứng ngay sau dấu phẩy; anrufen là động từ tách, tiền tố an đứng cuối câu chính."
+    display_answer: "Sobald ich zu Hause bin, rufe ich dich an."
+
+  - key: de:exercise:b1u07l2-fill-waehrend-des
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-waehrend-konjunktion
+    prompt:
+      template: "Während {{b1}} Unterrichts bleibt das Handy in der Tasche. Und während ich {{b2}} (lernen), höre ich keine Musik."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [des]
+        b2: [lerne]
+    known_wrong:
+      - answer: dem
+        feedback_vi: Giới từ während trong văn viết chuẩn đi với Genitiv – während des Unterrichts (während dem chỉ là khẩu ngữ).
+        error_tag: preposition
+      - answer: den
+        feedback_vi: Giới từ während đi với Genitiv, không đi với Akkusativ – während des Unterrichts.
+        error_tag: preposition
+      - answer: lernen
+        feedback_vi: Động từ trong câu phụ vẫn phải chia theo chủ ngữ ich – während ich lerne.
+        error_tag: verb_form
+    explanation:
+      vi: "Vế đầu: während + danh từ là giới từ, cần Genitiv: des Unterrichts (der Unterricht, Genitiv thêm -s). Vế sau: während + câu là liên từ, động từ chia đứng cuối: während ich lerne."
+    display_answer: "Während des Unterrichts bleibt das Handy in der Tasche. Und während ich lerne, höre ich keine Musik."
+
+  - key: de:exercise:b1u07l2-tr-kochen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-waehrend-konjunktion
+    prompt:
+      source_text: "Trong khi nấu ăn, tôi nghe nhạc. (bắt đầu bằng Während)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Während ich koche, höre ich Musik.
+        - Während ich Essen koche, höre ich Musik.
+        - Während ich das Essen koche, höre ich Musik.
+        - Während ich koche, höre ich mir Musik an.
+    known_wrong:
+      - answer: Während ich koche, ich höre Musik.
+        feedback_vi: Câu phụ đứng đầu là vị trí 1, nên höre đứng ngay sau dấu phẩy – …, höre ich Musik.
+        error_tag: verb_position
+      - answer: Während koche ich, höre ich Musik.
+        feedback_vi: Trong câu phụ während, động từ koche đứng cuối – Während ich koche, …
+        error_tag: verb_position
+    explanation:
+      vi: "Câu phụ während: chủ ngữ ich, động từ koche ở cuối. Cả câu phụ là vị trí 1, nên động từ câu chính höre đứng ngay sau dấu phẩy, rồi mới đến ich."
+    display_answer: Während ich koche, höre ich Musik.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u07l2-wb-solange-online
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-sobald-solange
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Solange: \"Chừng nào bạn còn online, bạn không thể tập trung.\""
+      tokens:
+        - { id: n-kannst, text: kannst }
+        - { id: n-online, text: online }
+        - { id: n-du1, text: du }
+        - { id: n-solange, text: Solange }
+        - { id: n-dich, text: dich }
+        - { id: n-komma, text: "," }
+        - { id: n-konzentrieren, text: konzentrieren }
+        - { id: n-bist, text: bist }
+        - { id: n-du2, text: du }
+        - { id: n-nicht, text: nicht }
+    answer:
+      orders:
+        - [n-solange, n-du1, n-online, n-bist, n-komma, n-kannst, n-du2, n-dich, n-nicht, n-konzentrieren]
+        - [n-solange, n-du2, n-online, n-bist, n-komma, n-kannst, n-du1, n-dich, n-nicht, n-konzentrieren]
+    explanation:
+      vi: "Câu phụ solange: bist đứng cuối. Câu chính: modal kannst ngay sau dấu phẩy, rồi chủ ngữ du, đại từ phản thân dich, nicht, và nguyên thể konzentrieren ở cuối."
+    display_answer: Solange du online bist, kannst du dich nicht konzentrieren.
+
+  - key: de:exercise:b1u07l2-wb-waehrend-vater
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-staendig
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Während: \"Mẹ tôi lúc nào cũng online, còn bố tôi thì đọc báo.\""
+      tokens:
+        - { id: v-liest, text: liest }
+        - { id: v-mutter, text: Mutter }
+        - { id: v-waehrend, text: Während }
+        - { id: v-vater, text: Vater }
+        - { id: v-ist, text: ist }
+        - { id: v-staendig, text: ständig }
+        - { id: v-komma, text: "," }
+        - { id: v-meine, text: meine }
+        - { id: v-zeitung, text: Zeitung }
+        - { id: v-online, text: online }
+        - { id: v-mein, text: mein }
+    answer:
+      orders:
+        - [v-waehrend, v-meine, v-mutter, v-staendig, v-online, v-ist, v-komma, v-liest, v-mein, v-vater, v-zeitung]
+    explanation:
+      vi: "während ở đây là tương phản. Câu phụ: ist đứng cuối, trạng từ ständig đứng trước online. Câu chính: liest ngay sau dấu phẩy, rồi chủ ngữ mein Vater và tân ngữ Zeitung."
+    display_answer: Während meine Mutter ständig online ist, liest mein Vater Zeitung.
+
+  - key: de:exercise:b1u07l2-mcq-benachrichtigung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-benachrichtigung
+    prompt:
+      stem: "Bạn kể với bạn bè về thói quen của mình: \"Hễ có thông báo là tôi nhìn ngay vào điện thoại.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: b3a, text: "Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy.", lang: de }
+        - { id: b7b, text: "Sobald ich bekomme eine Benachrichtigung, schaue ich aufs Handy.", lang: de }
+        - { id: b1c, text: "Sobald ich eine Benachrichtigung bekomme, ich schaue aufs Handy.", lang: de }
+        - { id: b5d, text: "Solange ich eine Benachrichtigung bekomme, schaue ich aufs Handy.", lang: de }
+    answer:
+      correct_option_id: b3a
+    explanation:
+      vi: "Ngay khi = sobald, động từ bekomme đứng cuối câu phụ, và động từ câu chính schaue đứng ngay sau dấu phẩy. Solange nghĩa là \"chừng nào còn\", không hợp với ý \"hễ … là ngay\"."
+    display_answer: Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy.

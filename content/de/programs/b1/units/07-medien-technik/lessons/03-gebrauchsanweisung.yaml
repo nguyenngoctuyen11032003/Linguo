@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u07-gebrauchsanweisung
+order_index: 3
+level: b1
+title:
+  vi: Hướng dẫn sử dụng – bị động trạng thái, nguyên thể danh từ hoá (Das Gerät ist eingeschaltet. Beim Laden …)
+objectives:
+  - vi: Phân biệt bị động trạng thái (ist eingeschaltet) với bị động quá trình (wird eingeschaltet) và với Perfekt.
+  - vi: Dùng nguyên thể danh từ hoá – das Laden, beim Laden, zum Laden – và viết hoa đúng.
+  - vi: Đọc hiểu một hướng dẫn sử dụng ngắn và báo một hỏng hóc.
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u07-waehrend]
+items:
+  - item: de:item:b1u07-g-zustandspassiv
+  - item: de:item:b1u07-g-nominalisierter-infinitiv
+  - item: de:item:b1u07-gebrauchsanweisung
+  - item: de:item:b1u07-einschalten
+  - item: de:item:b1u07-ausschalten
+  - item: de:item:b1u07-anschliessen
+  - item: de:item:b1u07-knopf
+  - item: de:item:b1u07-druecken
+  - item: de:item:b1u07-stecker
+  - item: de:item:b1u07-steckdose
+  - item: de:item:b1u07-garantie
+  - item: de:item:b1u07-reparatur
+  - item: de:item:b1u07-ladegeraet
+  - item: de:item:b1u07-fehler
+  - item: de:item:b1u07-defekt
+  - item: de:item:b1u07-blinken
+  - item: de:item:b1u07-leuchten
+  - item: de:item:b1u07-einstecken
+  - item: de:item:b1u07-kundendienst
+  - item: de:item:b1u07-vorsicht
+  - item: de:item:b1u07-schritt
+  - item: de:item:a2u02-g-positionsverben
+    role: reuse
+  - item: de:item:a2u08-g-infinitiv-aufforderung
+    role: reuse
+  - item: de:item:b1u01-g-bevor
+    role: reuse
+  - item: de:item:b1u07-g-partizip-ii-attribut
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praesens
+    role: reuse
+  - item: de:item:b1u05-g-passiv-modal
+    role: reuse
+  - item: de:item:b1u06-g-sodass
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc được hướng dẫn sử dụng và báo được hỏng hóc, ví dụ: \"Beim Laden blinkt die Lampe rot. Das Gerät ist richtig angeschlossen, aber es funktioniert nicht.\""
+  - type: explain
+    text:
+      vi: "sein + Partizip II diễn tả trạng thái, tức kết quả còn lại sau một hành động: Das Gerät ist eingeschaltet = máy đang ở trạng thái bật. Người Đức gọi đây là Zustandspassiv (bị động trạng thái). Tiếng Việt thường nói \"đang bật\", \"đã được bật\"."
+  - type: explain
+    text:
+      vi: "werden + Partizip II (bạn đã học) diễn tả quá trình: Das Gerät wird eingeschaltet = máy đang được bật lên (có người đang bật). So sánh: Die Tür wird geschlossen (cửa đang được đóng) ↔ Die Tür ist geschlossen (cửa đang đóng). Trạng thái trong quá khứ dùng war: Gestern war das Geschäft geschlossen."
+  - type: explain
+    text:
+      vi: "Đừng nhầm ist eingeschaltet với Perfekt: einschalten có tân ngữ nên Perfekt chủ động dùng haben – Ich habe das Gerät eingeschaltet. Câu ist + Partizip II có chủ ngữ là vật bị tác động (das Gerät) là trạng thái; Perfekt bị động thì có thêm worden: Das Gerät ist eingeschaltet worden."
+  - type: explain
+    text:
+      vi: "Nguyên thể có thể thành danh từ giống trung và luôn được viết hoa: laden → das Laden (việc sạc), lesen → das Lesen. beim + nguyên thể = trong khi đang làm (Beim Laden blinkt die Lampe); zum + nguyên thể = để làm, dùng cho (ein Kabel zum Laden)."
+  - type: explain
+    text:
+      vi: "Hướng dẫn sử dụng hay dùng mệnh lệnh với Sie (Drücken Sie den Knopf), nguyên thể làm mệnh lệnh (Stecker ziehen!) và câu bevor: Bevor Sie das Gerät reinigen, ziehen Sie den Stecker. Đọc theo từng Schritt (bước) và chú ý chữ Vorsicht! hoặc Achtung!"
+  - type: deep_explain
+    text:
+      vi: "Nguyên thể danh từ hoá có thể kèm tân ngữ ở Genitiv hoặc ghép thành một từ: das Aufladen des Akkus, beim Autofahren, Kaffee zum Mitnehmen (cà phê mang đi). Ở cửa hàng, quán ăn bạn sẽ hay gặp cụm zum + nguyên thể như zum Mitnehmen. Bị động trạng thái thường dùng khi hành động để lại một kết quả thấy được (geöffnet, geschlossen, eingeschaltet, repariert, angeschlossen); với động từ như suchen hay anrufen thì hầu như không có trạng thái như vậy. Phân biệt với tính từ thật: Das Gerät ist kaputt / defekt là tính từ, không có hành động phía trước; còn Das Gerät ist repariert là kết quả của việc sửa. Khi báo hỏng hóc, hãy nêu trạng thái đã kiểm tra: Das Gerät ist richtig angeschlossen und eingeschaltet, aber der Bildschirm bleibt schwarz."
+  - type: example
+    target: Das Gerät ist eingeschaltet, wenn die grüne Lampe leuchtet.
+    target_lang: de
+    translation:
+      vi: Máy đang bật khi đèn xanh sáng.
+    note:
+      vi: "ist eingeschaltet = trạng thái (Zustandspassiv), không phải hành động bật."
+  - type: example
+    target: Der Akku wird gerade aufgeladen. Nach etwa zwei Stunden ist er voll aufgeladen.
+    target_lang: de
+    translation:
+      vi: Pin đang được sạc. Sau khoảng hai tiếng thì pin sẽ đầy.
+    note:
+      vi: "wird … aufgeladen = quá trình đang diễn ra; ist … aufgeladen = trạng thái kết quả."
+  - type: example
+    target: Beim Laden kann das Handy warm werden.
+    target_lang: de
+    translation:
+      vi: Khi đang sạc, điện thoại có thể nóng lên.
+    note:
+      vi: "beim = bei dem; Laden viết hoa vì đã thành danh từ (das Laden)."
+  - type: example
+    target: Bevor Sie das Gerät reinigen, ziehen Sie den Stecker aus der Steckdose.
+    target_lang: de
+    translation:
+      vi: Trước khi lau chùi máy, hãy rút phích cắm ra khỏi ổ điện.
+    note:
+      vi: "Văn hướng dẫn dùng Sie. bevor mở câu phụ (reinigen ở cuối); câu chính là mệnh lệnh nên ziehen đứng đầu."
+  - type: example
+    target: Stellen Sie das Gerät auf eine ebene Fläche und benutzen Sie nur das mitgelieferte Ladegerät.
+    target_lang: de
+    translation:
+      vi: Hãy đặt máy lên một mặt phẳng và chỉ dùng bộ sạc đi kèm.
+    note:
+      vi: "stellen + auf + Akkusativ (Wohin?). mitgeliefert là Partizip II làm tính từ: bộ sạc được giao kèm theo máy."
+  - type: example
+    target: Das Gerät muss vor dem ersten Gebrauch vollständig aufgeladen werden.
+    target_lang: de
+    translation:
+      vi: Máy phải được sạc đầy trước lần dùng đầu tiên.
+    note:
+      vi: "Bị động với modal: muss … aufgeladen werden (quá trình cần làm). Khi đã sạc xong thì nói trạng thái: Das Gerät ist aufgeladen."
+  - type: example
+    target: Das Ladekabel war defekt, sodass der Akku leer blieb.
+    target_lang: de
+    translation:
+      vi: Dây sạc bị hỏng nên pin vẫn hết.
+    note:
+      vi: "sodass nối kết quả, động từ blieb đứng cuối câu phụ. Hữu ích khi báo hỏng hóc cho bộ phận chăm sóc khách hàng."
+  - type: example
+    target: "Vorsicht: Vor dem Reinigen Stecker ziehen!"
+    target_lang: de
+    translation:
+      vi: "Chú ý: Rút phích cắm trước khi lau chùi!"
+    note:
+      vi: "Biển báo, hướng dẫn hay dùng nguyên thể làm mệnh lệnh (Stecker ziehen!). vor dem Reinigen: nguyên thể danh từ hoá sau giới từ vor + Dativ."
+  - type: common_mistake
+    wrong: Ich bin das Gerät eingeschaltet.
+    right: Ich habe das Gerät eingeschaltet.
+    target_lang: de
+    note:
+      vi: "Khi nói người đã làm hành động thì dùng Perfekt với haben. ist eingeschaltet chỉ dùng khi chủ ngữ là cái máy: Das Gerät ist eingeschaltet."
+  - type: common_mistake
+    wrong: Beim laden blinkt die Lampe rot.
+    right: Beim Laden blinkt die Lampe rot.
+    target_lang: de
+    note:
+      vi: "Sau beim, zum, das … nguyên thể đã thành danh từ nên phải viết hoa: das Laden, beim Laden, zum Laden."
+  - type: common_mistake
+    wrong: Der Akku ist gerade aufgeladen, bitte warten Sie noch.
+    right: Der Akku wird gerade aufgeladen, bitte warten Sie noch.
+    target_lang: de
+    note:
+      vi: "Việc còn đang diễn ra (gerade, bitte warten) là quá trình nên dùng werden. ist aufgeladen là kết quả: pin đã đầy."
+  - type: summary
+    points:
+      - vi: "Zustandspassiv: sein + Partizip II = trạng thái (Das Gerät ist eingeschaltet); quá khứ: war + Partizip II."
+      - vi: "Vorgangspassiv: werden + Partizip II = quá trình (Das Gerät wird eingeschaltet)."
+      - vi: "Perfekt chủ động: Ich habe das Gerät eingeschaltet; Perfekt bị động: ist … eingeschaltet worden."
+      - vi: "Nguyên thể danh từ hoá: das Laden; beim Laden = khi đang sạc; zum Laden = để sạc. Luôn viết hoa."
+      - vi: "Hướng dẫn: Drücken Sie …, Stecker ziehen!, Bevor Sie …, Vorsicht!"
+      - vi: "Từ vựng: die Gebrauchsanweisung, einschalten, ausschalten, anschließen, der Knopf, drücken, der Stecker, die Steckdose, die Garantie, die Reparatur."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u07l3-mcq-ist-eingeschaltet
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-g-zustandspassiv
+    prompt:
+      stem: "Đèn xanh đang sáng: máy đang ở trạng thái bật. Câu nào diễn tả đúng trạng thái này?"
+      stem_lang: vi
+      options:
+        - { id: z2a, text: "Das Gerät ist eingeschaltet.", lang: de }
+        - { id: z6b, text: "Das Gerät wird eingeschaltet.", lang: de }
+        - { id: z9c, text: "Das Gerät hat eingeschaltet.", lang: de }
+        - { id: z4d, text: "Das Gerät ist einschalten.", lang: de }
+    answer:
+      correct_option_id: z2a
+    explanation:
+      vi: "Trạng thái = sein + Partizip II: Das Gerät ist eingeschaltet. wird eingeschaltet là quá trình (máy đang được bật lên). hat eingeschaltet sai vì cái máy không tự làm hành động bật; ist einschalten thiếu Partizip II."
+    display_answer: Das Gerät ist eingeschaltet.
+
+  - key: de:exercise:b1u07l3-mcq-beim-laden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-g-nominalisierter-infinitiv
+    prompt:
+      stem: "Câu nào viết đúng? (Khi đang sạc, máy có thể nóng lên.)"
+      stem_lang: vi
+      options:
+        - { id: c3a, text: "Beim Laden kann das Gerät warm werden.", lang: de }
+        - { id: c7b, text: "Beim laden kann das Gerät warm werden.", lang: de }
+        - { id: c1c, text: "Bei Laden kann das Gerät warm werden.", lang: de }
+        - { id: c5d, text: "Zum laden kann das Gerät warm werden.", lang: de }
+    answer:
+      correct_option_id: c3a
+    explanation:
+      vi: "beim = bei dem: trước danh từ cần mạo từ, nên không nói bei Laden. Laden đã thành danh từ (das Laden) nên viết hoa. zum Laden nghĩa là \"để sạc\", không phải \"khi đang sạc\"."
+    display_answer: Beim Laden kann das Gerät warm werden.
+
+  - key: de:exercise:b1u07l3-mcq-lesen-lampe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-blinken
+    prompt:
+      stem: "Kabelloser Lautsprecher – Gebrauchsanweisung. Schritt 1: Laden Sie den Akku vor dem ersten Gebrauch vollständig auf. Beim Laden blinkt die Lampe rot. Sobald der Akku voll ist, leuchtet sie grün. Schritt 2: Drücken Sie den Knopf drei Sekunden lang. Das Gerät ist eingeschaltet, wenn Sie einen Ton hören. Vorsicht: Gerät nicht ins Wasser legen! — Richtig oder falsch? Während der Akku lädt, leuchtet die Lampe grün."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Hướng dẫn viết: Beim Laden blinkt die Lampe rot – khi đang sạc, đèn nhấp nháy đỏ. Đèn chỉ sáng xanh (leuchtet grün) sobald der Akku voll ist – khi pin đã đầy. Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u07l3-mcq-lesen-ton
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-einschalten
+    prompt:
+      stem: "Kabelloser Lautsprecher – Gebrauchsanweisung. Schritt 1: Laden Sie den Akku vor dem ersten Gebrauch vollständig auf. Beim Laden blinkt die Lampe rot. Sobald der Akku voll ist, leuchtet sie grün. Schritt 2: Drücken Sie den Knopf drei Sekunden lang. Das Gerät ist eingeschaltet, wenn Sie einen Ton hören. Vorsicht: Gerät nicht ins Wasser legen! — Richtig oder falsch? Wenn man einen Ton hört, ist der Lautsprecher eingeschaltet."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Hướng dẫn viết: Das Gerät ist eingeschaltet, wenn Sie einen Ton hören – nghe thấy một tiếng \"bíp\" là máy đã bật. Câu hỏi diễn đạt lại bằng man và der Lautsprecher, nhưng cùng nghĩa. Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u07l3-fill-ist-war-wird
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-zustandspassiv
+    prompt:
+      template: "Die grüne Lampe leuchtet: Das Gerät {{b1}} (Zustand) eingeschaltet. Gestern {{b2}} (Zustand) das Geschäft den ganzen Tag geschlossen. Der Akku {{b3}} (Vorgang) gerade aufgeladen."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [ist]
+        b2: [war]
+        b3: [wird]
+    known_wrong:
+      - answer: hat
+        feedback_vi: Chủ ngữ là vật bị tác động, không phải người làm – trạng thái dùng sein (ist/war), quá trình dùng werden.
+        error_tag: aux_verb
+      - answer: wurde
+        feedback_vi: wurde là quá trình trong quá khứ. Trạng thái trong quá khứ dùng war (Gestern war das Geschäft geschlossen); quá trình đang diễn ra bây giờ dùng wird.
+        error_tag: verb_form
+    explanation:
+      vi: "Trạng thái hiện tại: ist + Partizip II (ist eingeschaltet). Trạng thái trong quá khứ (Gestern): war + Partizip II (war geschlossen). Quá trình đang diễn ra (gerade): wird + Partizip II (wird aufgeladen)."
+    display_answer: "Die grüne Lampe leuchtet: Das Gerät ist eingeschaltet. Gestern war das Geschäft den ganzen Tag geschlossen. Der Akku wird gerade aufgeladen."
+
+  - key: de:exercise:b1u07l3-fill-beim-zum
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-nominalisierter-infinitiv
+    prompt:
+      template: "{{b1}} Laden blinkt die Lampe rot. Für die Reise brauche ich noch ein Kabel {{b2}} Laden."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [Beim]
+        b2: [zum]
+    known_wrong:
+      - answer: bei
+        feedback_vi: Danh từ das Laden cần mạo từ – bei dem = beim.
+        error_tag: preposition
+      - answer: zu
+        feedback_vi: Danh từ das Laden cần mạo từ – zu dem = zum.
+        error_tag: preposition
+    explanation:
+      vi: "Khi đang sạc = beim Laden (bei dem). Một cái dây để sạc = ein Kabel zum Laden (zu dem): zum + nguyên thể diễn tả mục đích, công dụng."
+    display_answer: "Beim Laden blinkt die Lampe rot. Für die Reise brauche ich noch ein Kabel zum Laden."
+
+  - key: de:exercise:b1u07l3-tr-ausgeschaltet
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-ausschalten
+    prompt:
+      source_text: "Máy đã tắt rồi, bạn có thể rút phích cắm. (nói với bạn bè; dùng bị động trạng thái)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das Gerät ist ausgeschaltet, du kannst den Stecker ziehen.
+        - Das Gerät ist schon ausgeschaltet, du kannst den Stecker ziehen.
+        - Das Gerät ist jetzt ausgeschaltet, du kannst den Stecker ziehen.
+        - Das Gerät ist ausgeschaltet, du kannst jetzt den Stecker ziehen.
+        - Das Gerät ist ausgeschaltet, also kannst du den Stecker ziehen.
+        - Das Gerät ist ausgeschaltet, du kannst den Stecker herausziehen.
+        - Das Gerät ist schon ausgeschaltet, du kannst den Stecker herausziehen.
+    known_wrong:
+      - answer: Das Gerät wird ausgeschaltet, du kannst den Stecker ziehen.
+        feedback_vi: wird ausgeschaltet là quá trình (đang được tắt). Máy đã tắt rồi là trạng thái – ist ausgeschaltet.
+        error_tag: verb_form
+      - answer: Das Gerät hat ausgeschaltet, du kannst den Stecker ziehen.
+        feedback_vi: Cái máy không tự làm hành động tắt; trạng thái dùng sein – Das Gerät ist ausgeschaltet.
+        error_tag: aux_verb
+      - answer: Das Gerät ist ausgeschaltet, du kannst ziehen den Stecker.
+        feedback_vi: Với modal, nguyên thể ziehen đứng cuối câu – du kannst den Stecker ziehen.
+        error_tag: word_order
+    explanation:
+      vi: "Máy đã tắt (trạng thái) = Das Gerät ist ausgeschaltet. rút phích cắm = den Stecker ziehen; với modal können, nguyên thể ziehen đứng cuối câu."
+    display_answer: Das Gerät ist ausgeschaltet, du kannst den Stecker ziehen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u07l3-wb-bevor-stecker
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-bevor
+    prompt:
+      instruction: "Sắp xếp thành câu hướng dẫn, bắt đầu bằng Bevor: \"Trước khi lau chùi máy, hãy rút phích cắm.\""
+      tokens:
+        - { id: p-ziehen, text: ziehen }
+        - { id: p-geraet, text: Gerät }
+        - { id: p-sie1, text: Sie }
+        - { id: p-stecker, text: Stecker }
+        - { id: p-bevor, text: Bevor }
+        - { id: p-komma, text: "," }
+        - { id: p-reinigen, text: reinigen }
+        - { id: p-den, text: den }
+        - { id: p-sie2, text: Sie }
+        - { id: p-das, text: das }
+    answer:
+      orders:
+        - [p-bevor, p-sie1, p-das, p-geraet, p-reinigen, p-komma, p-ziehen, p-sie2, p-den, p-stecker]
+        - [p-bevor, p-sie2, p-das, p-geraet, p-reinigen, p-komma, p-ziehen, p-sie1, p-den, p-stecker]
+    explanation:
+      vi: "Câu phụ bevor: reinigen đứng cuối. Câu chính là mệnh lệnh với Sie: động từ ziehen đứng ngay sau dấu phẩy, rồi Sie và tân ngữ den Stecker."
+    display_answer: Bevor Sie das Gerät reinigen, ziehen Sie den Stecker.
+
+  - key: de:exercise:b1u07l3-wb-beim-laden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-nominalisierter-infinitiv
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Beim: \"Khi đang sạc, đèn nhấp nháy màu đỏ.\""
+      tokens:
+        - { id: q-lampe, text: Lampe }
+        - { id: q-rot, text: rot }
+        - { id: q-beim, text: Beim }
+        - { id: q-blinkt, text: blinkt }
+        - { id: q-laden, text: Laden }
+        - { id: q-die, text: die }
+    answer:
+      orders:
+        - [q-beim, q-laden, q-blinkt, q-die, q-lampe, q-rot]
+    explanation:
+      vi: "Beim Laden (viết hoa vì là danh từ) chiếm vị trí 1, nên động từ blinkt ở vị trí 2, rồi chủ ngữ die Lampe và trạng từ rot."
+    display_answer: Beim Laden blinkt die Lampe rot.
+
+  - key: de:exercise:b1u07l3-mcq-defekt-melden
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-anschliessen
+    prompt:
+      stem: "Bạn viết e-mail cho bộ phận chăm sóc khách hàng: máy đã được nối dây đúng cách nhưng bạn không bật lên được. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: e2a, text: "Das Gerät ist richtig angeschlossen, aber ich kann es nicht einschalten.", lang: de }
+        - { id: e6b, text: "Das Gerät hat richtig angeschlossen, aber ich kann es nicht einschalten.", lang: de }
+        - { id: e9c, text: "Das Gerät ist richtig anschließen, aber ich kann es nicht einschalten.", lang: de }
+        - { id: e4d, text: "Das Gerät ist richtig angeschlossen, aber ich kann es nicht schalten ein.", lang: de }
+    answer:
+      correct_option_id: e2a
+    explanation:
+      vi: "Trạng thái đã nối dây: ist angeschlossen (sein + Partizip II). Với modal kann, động từ tách einschalten đứng nguyên ở cuối câu, viết liền."
+    display_answer: Das Gerät ist richtig angeschlossen, aber ich kann es nicht einschalten.

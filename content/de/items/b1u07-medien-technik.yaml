@@ -1,0 +1,1669 @@
+# Học liệu unit B1U07 "Truyền thông và công nghệ" (Medien und Technik), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U07L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Đời sống số – phân từ làm tính từ =================
+  - key: de:item:b1u07-g-partizip-i-attribut
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Partizip I als Adjektiv: das klingelnde Handy, im fahrenden Zug"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Partizip I = nguyên thể + -d: klingeln → klingelnd, fahren → fahrend. Đứng trước danh từ, nó nhận đuôi như một tính từ bình thường: das klingelnde Handy, ein klingelndes Handy, im fahrenden Zug. Nghĩa là chủ động và đang diễn ra cùng lúc: cái điện thoại đang reo, con tàu đang chạy."
+      examples:
+        - target: Das klingelnde Handy gehört meiner Kollegin.
+          translation:
+            vi: Cái điện thoại đang reo là của đồng nghiệp tôi.
+        - target: Im fahrenden Zug ist das WLAN oft schlecht.
+          translation:
+            vi: Trên tàu đang chạy, mạng WLAN thường yếu.
+      confusion:
+        vi: "Đừng bỏ -d hay dùng dạng quá khứ: das klingelnde Handy, không phải das klingeln Handy hay das klingelte Handy. Sau sein, người Đức thường dùng động từ chia thay cho Partizip I: Das Handy klingelt (không nói Das Handy ist klingelnd)."
+
+  - key: de:item:b1u07-g-partizip-ii-attribut
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Partizip II als Adjektiv: die gespeicherten Daten, ein aufgeladener Akku"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Partizip II (gespeichert, installiert, aufgeladen) đứng trước danh từ cũng nhận đuôi tính từ: die gespeicherten Daten, ein aufgeladener Akku. Với động từ có tân ngữ, nghĩa là bị động và đã xong: dữ liệu đã được lưu. Với động từ chuyển động hoặc đổi trạng thái dùng sein, nghĩa là chủ động và đã xong: der angekommene Zug = chuyến tàu đã đến."
+      examples:
+        - target: Ich kann die gelöschten Fotos nicht mehr finden.
+          translation:
+            vi: Tôi không tìm lại được những tấm ảnh đã bị xoá.
+        - target: Ein voll aufgeladener Akku hält bei mir meistens einen ganzen Tag.
+          translation:
+            vi: Với tôi, một cục pin sạc đầy thường dùng được cả ngày.
+      confusion:
+        vi: "Partizip I là chủ động, đang diễn ra (das klingelnde Handy = điện thoại đang reo); Partizip II thường là bị động, đã xong (das reparierte Handy = điện thoại đã được sửa). Đuôi theo bảng tính từ: der gespeicherte Text, die gespeicherten Daten."
+
+  - key: de:item:b1u07-geraet
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gerät, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiết bị, máy (đồ điện, đồ điện tử)
+      examples:
+        - target: Wie viele digitale Geräte hast du zu Hause?
+          translation:
+            vi: Ở nhà bạn có bao nhiêu thiết bị số?
+        - target: Das Gerät ist neu, aber es funktioniert nicht richtig.
+          translation:
+            vi: Cái máy còn mới nhưng chạy không đúng.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết thứ hai: ge-RÄT; ä ở đây đọc dài, gần như \"e\" kéo dài."
+      confusion:
+        vi: "das Gerät là từ chung cho máy móc, đồ điện (das Elektrogerät, das Haushaltsgerät). die Maschine thường dùng cho máy lớn hơn hoặc máy có động cơ (die Waschmaschine)."
+
+  - key: de:item:b1u07-akku
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Akku, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: pin sạc (của điện thoại, laptop …)
+      examples:
+        - target: Mein Akku ist fast leer.
+          translation:
+            vi: Pin của tôi sắp hết rồi.
+        - target: Der Akku hält nicht mehr so lange wie früher.
+          translation:
+            vi: Pin không còn dùng được lâu như trước nữa.
+      confusion:
+        vi: "der Akku là pin sạc lại được, gắn trong máy; pin dùng một lần (pin tiểu) là die Batterie. Akku là dạng rút gọn của der Akkumulator."
+
+  - key: de:item:b1u07-aufladen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: aufladen, lädt auf, lud auf, hat aufgeladen
+      pos: động từ
+    back:
+      meaning:
+        vi: sạc (pin, điện thoại); nạp (tiền vào thẻ)
+      examples:
+        - target: Ich muss mein Handy noch aufladen.
+          translation:
+            vi: Tôi còn phải sạc điện thoại.
+        - target: Sie lädt ihr Handy jede Nacht auf.
+          translation:
+            vi: Đêm nào cô ấy cũng sạc điện thoại.
+      confusion:
+        vi: "Động từ tách: Ich lade das Handy auf. Ngôi du và er/sie/es đổi a → ä: du lädst auf, sie lädt auf. Khi nói, người Đức cũng hay chỉ dùng laden: Das Handy lädt gerade (đang sạc)."
+
+  - key: de:item:b1u07-installieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: installieren
+      pos: động từ
+    back:
+      meaning:
+        vi: cài đặt (phần mềm, ứng dụng); lắp đặt (thiết bị)
+      examples:
+        - target: Hast du die neue App schon installiert?
+          translation:
+            vi: Bạn đã cài ứng dụng mới chưa?
+        - target: Ich installiere das Programm auf meinem Laptop.
+          translation:
+            vi: Tôi cài chương trình đó lên laptop của mình.
+      confusion:
+        vi: "Động từ đuôi -ieren: Partizip II không có ge- (hat installiert). Gỡ cài đặt là deinstallieren."
+
+  - key: de:item:b1u07-software
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Software (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần mềm
+      examples:
+        - target: Diese Software ist kostenlos.
+          translation:
+            vi: Phần mềm này miễn phí.
+        - target: Die Software muss regelmäßig aktualisiert werden.
+          translation:
+            vi: Phần mềm cần được cập nhật thường xuyên.
+      confusion:
+        vi: "Software thường dùng ở số ít; nói về nhiều chương trình cụ thể thì dùng die Programme. Phần cứng là die Hardware."
+
+  - key: de:item:b1u07-digital
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: digital
+      pos: tính từ
+    back:
+      meaning:
+        vi: số, kỹ thuật số
+      examples:
+        - target: Viele Menschen lesen die Zeitung heute digital.
+          translation:
+            vi: Ngày nay nhiều người đọc báo bản điện tử.
+        - target: Unser Alltag wird immer digitaler.
+          translation:
+            vi: Cuộc sống hằng ngày của chúng ta ngày càng số hoá.
+      confusion:
+        vi: "Trước danh từ có đuôi: digitale Geräte, das digitale Leben. Danh từ: die Digitalisierung (sự số hoá); trái nghĩa: analog."
+
+  - key: de:item:b1u07-daten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Daten (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: dữ liệu
+      examples:
+        - target: Wo werden meine Daten gespeichert?
+          translation:
+            vi: Dữ liệu của tôi được lưu ở đâu?
+        - target: Geben Sie Ihre persönlichen Daten nicht an Fremde weiter.
+          translation:
+            vi: Đừng đưa dữ liệu cá nhân của bạn cho người lạ.
+      confusion:
+        vi: "Với nghĩa dữ liệu, die Daten dùng ở số nhiều. Số ít das Datum có nghĩa khác: ngày tháng (Welches Datum ist heute?)."
+
+  - key: de:item:b1u07-nutzer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Nutzer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người dùng (nữ – die Nutzerin, -nen)
+      examples:
+        - target: Viele Nutzer lesen die Bedingungen nicht.
+          translation:
+            vi: Nhiều người dùng không đọc các điều khoản.
+        - target: Als Nutzerin muss ich ein sicheres Passwort wählen.
+          translation:
+            vi: Là người dùng, tôi phải chọn một mật khẩu an toàn.
+      confusion:
+        vi: "Đồng nghĩa: der Benutzer, -. Số nhiều giống số ít: die Nutzer; Dativ số nhiều thêm -n: mit den Nutzern."
+
+  - key: de:item:b1u07-wlan
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das WLAN (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: mạng không dây, Wi-Fi
+      examples:
+        - target: Gibt es hier WLAN?
+          translation:
+            vi: Ở đây có Wi-Fi không?
+        - target: Das WLAN im Hotel ist kostenlos.
+          translation:
+            vi: Wi-Fi ở khách sạn miễn phí.
+      pronunciation_note:
+        vi: "Đọc là \"vê-lan\": W đọc như v, trọng âm ở âm tiết đầu."
+      confusion:
+        vi: "Ở Đức người ta thường nói WLAN; từ Wi-Fi cũng được hiểu nhưng ít dùng hơn. Thường không có mạo từ: Gibt es hier WLAN?"
+
+  # Từ bổ sung (Zusatzwortschatz) bài 1 – trường thiết bị số
+  - key: de:item:b1u07-kabel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Kabel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: dây cáp, dây điện
+      examples:
+        - target: Hast du ein Kabel für mein Handy?
+          translation:
+            vi: Bạn có dây cáp cho điện thoại của mình không?
+        - target: Das Kabel ist leider zu kurz.
+          translation:
+            vi: Tiếc là dây cáp quá ngắn.
+      confusion:
+        vi: "Số nhiều giống số ít: die Kabel. Dây sạc là das Ladekabel."
+
+  - key: de:item:b1u07-kopfhoerer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kopfhörer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: tai nghe
+      examples:
+        - target: Im Zug höre ich Musik mit Kopfhörern.
+          translation:
+            vi: Trên tàu tôi nghe nhạc bằng tai nghe.
+        - target: Meine Kopfhörer sind kabellos.
+          translation:
+            vi: Tai nghe của tôi là loại không dây.
+      confusion:
+        vi: "Số nhiều không thêm đuôi (die Kopfhörer), Dativ số nhiều thêm -n: mit Kopfhörern. Từ ghép der Kopf + der Hörer → giống đực."
+
+  - key: de:item:b1u07-lautsprecher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lautsprecher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: loa
+      examples:
+        - target: Der Lautsprecher ist zu leise.
+          translation:
+            vi: Cái loa nhỏ tiếng quá.
+        - target: Ich habe einen kleinen Lautsprecher für die Küche gekauft.
+          translation:
+            vi: Tôi đã mua một cái loa nhỏ cho nhà bếp.
+      confusion:
+        vi: "Từ ghép laut (to) + der Sprecher (người nói) → giống đực. Chú ý: der Sprecher một mình là người phát ngôn, người đọc tin."
+
+  - key: de:item:b1u07-update
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Update, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản cập nhật
+      examples:
+        - target: Für mein Handy gibt es ein neues Update.
+          translation:
+            vi: Điện thoại của tôi có bản cập nhật mới.
+        - target: Nach dem Update funktioniert die App nicht mehr.
+          translation:
+            vi: Sau khi cập nhật, ứng dụng không chạy nữa.
+      confusion:
+        vi: "Từ mượn tiếng Anh, đọc gần như tiếng Anh. Động từ tiếng Đức tương ứng là aktualisieren."
+
+  - key: de:item:b1u07-einstellung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Einstellung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cài đặt (trong máy, ứng dụng); thái độ, quan điểm
+      examples:
+        - target: Das findest du in den Einstellungen.
+          translation:
+            vi: Cái đó bạn tìm trong phần cài đặt.
+        - target: Ich habe die Einstellungen geändert.
+          translation:
+            vi: Tôi đã đổi phần cài đặt.
+      confusion:
+        vi: "Phần cài đặt của máy thường dùng số nhiều: die Einstellungen. Nghĩa thứ hai: thái độ (eine positive Einstellung zur Arbeit)."
+
+  - key: de:item:b1u07-aktualisieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: aktualisieren
+      pos: động từ
+    back:
+      meaning:
+        vi: cập nhật
+      examples:
+        - target: Bitte aktualisieren Sie die App.
+          translation:
+            vi: Vui lòng cập nhật ứng dụng.
+        - target: Ich habe die Software gestern aktualisiert.
+          translation:
+            vi: Hôm qua tôi đã cập nhật phần mềm.
+      confusion:
+        vi: "Đuôi -ieren: Partizip II không có ge- (hat aktualisiert). Liên quan: aktuell = mới nhất, hiện thời."
+
+  - key: de:item:b1u07-tastatur
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Tastatur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bàn phím
+      examples:
+        - target: Die Tastatur meines Laptops ist kaputt.
+          translation:
+            vi: Bàn phím laptop của tôi bị hỏng.
+        - target: Auf einer deutschen Tastatur gibt es die Buchstaben ä, ö, ü und ß.
+          translation:
+            vi: Trên bàn phím tiếng Đức có các chữ ä, ö, ü và ß.
+      confusion:
+        vi: "Một phím là die Taste, -n. Trên bàn phím tiếng Đức (QWERTZ), chữ Z và Y đổi chỗ so với bàn phím tiếng Anh."
+
+  - key: de:item:b1u07-kabellos
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: kabellos
+      pos: tính từ
+    back:
+      meaning:
+        vi: không dây
+      examples:
+        - target: Ich habe kabellose Kopfhörer.
+          translation:
+            vi: Tôi có tai nghe không dây.
+        - target: Kann man dieses Handy kabellos aufladen?
+          translation:
+            vi: Điện thoại này có sạc không dây được không?
+      confusion:
+        vi: "Hậu tố -los = không có: kabellos (không dây), kostenlos (miễn phí), arbeitslos (thất nghiệp)."
+
+  - key: de:item:b1u07-tippen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: tippen
+      pos: động từ
+    back:
+      meaning:
+        vi: gõ (phím); chạm (vào màn hình)
+      examples:
+        - target: Er tippt sehr schnell.
+          translation:
+            vi: Anh ấy gõ phím rất nhanh.
+        - target: Tippen Sie auf das Symbol oben rechts.
+          translation:
+            vi: Hãy chạm vào biểu tượng ở góc trên bên phải.
+      confusion:
+        vi: "tippen auf + Akk = chạm vào (Tippen Sie auf das Symbol); gõ một đoạn chữ: einen Text tippen."
+
+  # ================= Bài 2: während, sobald, solange =================
+  - key: de:item:b1u07-g-waehrend-konjunktion
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "während + Nebensatz: Während ich koche, höre ich Musik."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "während có thể mở đầu một câu phụ, động từ chia đứng cuối: Während ich koche, … Nghĩa thứ nhất là hai việc diễn ra cùng lúc (trong khi). Nghĩa thứ hai là tương phản (còn, trong khi đó): Während mein Bruder ständig online ist, liest meine Schwester lieber Bücher."
+      examples:
+        - target: Während ich koche, höre ich Musik.
+          translation:
+            vi: Trong khi nấu ăn, tôi nghe nhạc.
+        - target: Während meine Mutter ständig online ist, liest mein Vater lieber Zeitung.
+          translation:
+            vi: Mẹ tôi lúc nào cũng online, còn bố tôi thì thích đọc báo giấy hơn.
+      confusion:
+        vi: "während + Genitiv (während des Essens) là giới từ, theo sau là một danh từ; während + câu phụ là liên từ, theo sau là chủ ngữ và động từ ở cuối. Trong văn viết chuẩn, giới từ während đi với Genitiv, không phải Dativ."
+
+  - key: de:item:b1u07-g-sobald-solange
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "sobald / solange + Nebensatz: Sobald ich zu Hause bin, … · Solange du online bist, …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sobald = ngay khi: việc ở câu chính xảy ra ngay sau việc ở câu phụ (Sobald ich zu Hause bin, rufe ich dich an). solange = chừng nào (còn), suốt thời gian mà (Solange du online bist, kannst du dich nicht konzentrieren). Cả hai mở câu phụ, động từ chia đứng cuối."
+      examples:
+        - target: Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy.
+          translation:
+            vi: Hễ có thông báo là tôi nhìn ngay vào điện thoại.
+        - target: Solange ich arbeite, lege ich mein Handy in die Schublade.
+          translation:
+            vi: Chừng nào còn làm việc, tôi để điện thoại trong ngăn kéo.
+      confusion:
+        vi: "solange (viết liền) là liên từ \"chừng nào còn\"; so lange (viết rời) là \"lâu như thế\": Ich habe so lange gewartet! sobald nói về thời điểm bắt đầu, solange nói về một khoảng thời gian kéo dài."
+
+  - key: de:item:b1u07-gewohnheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gewohnheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thói quen
+      examples:
+        - target: Das ist eine schlechte Gewohnheit.
+          translation:
+            vi: Đó là một thói quen xấu.
+        - target: Ich habe die Gewohnheit, abends im Bett noch Nachrichten zu lesen.
+          translation:
+            vi: Tôi có thói quen buổi tối nằm trên giường đọc tin tức.
+      confusion:
+        vi: "aus Gewohnheit = theo thói quen. Đừng nhầm với sich gewöhnen an + Akk = làm quen với (Ich habe mich an das Wetter gewöhnt)."
+
+  - key: de:item:b1u07-soziales-netzwerk
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das soziale Netzwerk, die sozialen Netzwerke
+      pos: cụm từ
+    back:
+      meaning:
+        vi: mạng xã hội
+      examples:
+        - target: In sozialen Netzwerken teilen viele Menschen private Fotos.
+          translation:
+            vi: Trên mạng xã hội, nhiều người chia sẻ ảnh riêng tư.
+        - target: Bist du in einem sozialen Netzwerk aktiv?
+          translation:
+            vi: Bạn có hoạt động trên mạng xã hội nào không?
+      confusion:
+        vi: "sozial đổi đuôi như mọi tính từ: in den sozialen Netzwerken, in einem sozialen Netzwerk. Trong khẩu ngữ người ta cũng nói die sozialen Medien hoặc Social Media."
+
+  - key: de:item:b1u07-abhaengig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abhängig (von + Dat)
+      pos: tính từ
+    back:
+      meaning:
+        vi: phụ thuộc (vào); nghiện
+      examples:
+        - target: Manche Jugendliche fühlen sich vom Handy abhängig.
+          translation:
+            vi: Một số thanh thiếu niên cảm thấy mình bị lệ thuộc vào điện thoại.
+        - target: Der Preis ist abhängig von der Größe.
+          translation:
+            vi: Giá tuỳ thuộc vào kích cỡ.
+      confusion:
+        vi: "abhängig von + Dativ (vom Handy), không dùng an. Danh từ: die Abhängigkeit; trái nghĩa: unabhängig (độc lập)."
+
+  - key: de:item:b1u07-bildschirmzeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bildschirmzeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian dùng màn hình (điện thoại, máy tính, ti vi)
+      examples:
+        - target: Meine Bildschirmzeit ist viel zu hoch.
+          translation:
+            vi: Thời gian dùng màn hình của tôi quá nhiều.
+        - target: Wie kann ich meine Bildschirmzeit reduzieren?
+          translation:
+            vi: Làm sao tôi giảm được thời gian dùng màn hình?
+      confusion:
+        vi: "Từ ghép der Bildschirm + die Zeit lấy giống của từ cuối: die Bildschirmzeit. Thời gian nhiều hay ít: hoch/niedrig hoặc viel/wenig Bildschirmzeit."
+
+  - key: de:item:b1u07-ablenken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ablenken
+      pos: động từ
+    back:
+      meaning:
+        vi: làm sao nhãng, làm phân tâm
+      examples:
+        - target: Benachrichtigungen lenken mich ständig ab.
+          translation:
+            vi: Các thông báo cứ làm tôi sao nhãng.
+        - target: Lenk mich bitte nicht ab, ich muss mich konzentrieren!
+          translation:
+            vi: Đừng làm mình phân tâm nhé, mình phải tập trung!
+      confusion:
+        vi: "Động từ tách: Das lenkt mich ab; Partizip II: abgelenkt (Ich bin abgelenkt = tôi bị phân tâm). sich ablenken = tự giải khuây: Ich lenke mich mit Musik ab."
+
+  - key: de:item:b1u07-staendig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ständig
+      pos: trạng từ
+    back:
+      meaning:
+        vi: liên tục, suốt, lúc nào cũng
+      examples:
+        - target: Er schaut ständig auf sein Handy.
+          translation:
+            vi: Anh ấy lúc nào cũng nhìn vào điện thoại.
+        - target: Das Telefon klingelt ständig.
+          translation:
+            vi: Điện thoại reo liên tục.
+      confusion:
+        vi: "ständig thường mang sắc thái phàn nàn (quá nhiều, gây khó chịu); trung tính hơn là immer hoặc oft."
+
+  - key: de:item:b1u07-erreichbar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erreichbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: liên lạc được; đến được
+      examples:
+        - target: Am Wochenende bin ich nicht erreichbar.
+          translation:
+            vi: Cuối tuần không liên lạc được với tôi.
+        - target: Sind Sie morgen telefonisch erreichbar?
+          translation:
+            vi: Ngày mai có thể gọi điện cho ông/bà được không?
+      confusion:
+        vi: "erreichbar đi từ erreichen (liên lạc được, tới được). Tiếng Việt nói \"liên lạc được với tôi\", tiếng Đức lấy người làm chủ ngữ: Ich bin erreichbar."
+
+  - key: de:item:b1u07-benachrichtigung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Benachrichtigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông báo (trên điện thoại, ứng dụng)
+      examples:
+        - target: Ich bekomme ständig Benachrichtigungen.
+          translation:
+            vi: Tôi liên tục nhận được thông báo.
+        - target: Ich habe die Benachrichtigungen für diese App ausgeschaltet.
+          translation:
+            vi: Tôi đã tắt thông báo của ứng dụng này.
+      confusion:
+        vi: "die Benachrichtigung là thông báo tự động của máy; die Nachricht là tin nhắn hoặc tin tức. Danh từ đuôi -ung là giống cái."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 2 – trường thói quen số
+  - key: de:item:b1u07-surfen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: surfen
+      pos: động từ
+    back:
+      meaning:
+        vi: lướt mạng; lướt sóng
+      examples:
+        - target: Abends surfe ich oft im Internet.
+          translation:
+            vi: Buổi tối tôi hay lướt mạng.
+        - target: Wir haben stundenlang im Internet gesurft.
+          translation:
+            vi: Chúng tôi đã lướt mạng hàng tiếng đồng hồ.
+      confusion:
+        vi: "Nghĩa gốc là lướt sóng; im Internet surfen = lướt mạng. Partizip II: gesurft."
+
+  - key: de:item:b1u07-chatten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: chatten
+      pos: động từ
+    back:
+      meaning:
+        vi: nhắn tin trò chuyện, chat
+      examples:
+        - target: Ich chatte jeden Abend mit meiner Schwester.
+          translation:
+            vi: Tối nào tôi cũng chat với chị gái.
+        - target: Wir haben gestern lange gechattet.
+          translation:
+            vi: Hôm qua chúng tôi chat với nhau rất lâu.
+      confusion:
+        vi: "Từ mượn tiếng Anh nhưng chia như động từ Đức: ich chatte, du chattest, Partizip II gechattet. Gửi một tin nhắn: eine Nachricht schreiben/schicken."
+
+  - key: de:item:b1u07-gleichzeitig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gleichzeitig
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cùng lúc, đồng thời
+      examples:
+        - target: Ich kann nicht gleichzeitig telefonieren und schreiben.
+          translation:
+            vi: Tôi không thể vừa gọi điện vừa viết cùng lúc.
+        - target: Viele Leute sehen fern und schauen gleichzeitig aufs Handy.
+          translation:
+            vi: Nhiều người vừa xem ti vi vừa nhìn điện thoại.
+      confusion:
+        vi: "gleichzeitig là trạng từ nằm trong một câu; muốn nối hai câu thì dùng liên từ während: Während ich fernsehe, schaue ich aufs Handy."
+
+  - key: de:item:b1u07-nebenbei
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: nebenbei
+      pos: trạng từ
+    back:
+      meaning:
+        vi: kèm theo, làm thêm bên cạnh (việc chính)
+      examples:
+        - target: Ich lerne und höre nebenbei Musik.
+          translation:
+            vi: Tôi vừa học vừa nghe nhạc.
+        - target: Sie studiert und arbeitet nebenbei in einem Café.
+          translation:
+            vi: Cô ấy đi học và làm thêm ở một quán cà phê.
+      confusion:
+        vi: "nebenbei nhấn mạnh việc phụ đi kèm việc chính. Cụm nebenbei bemerkt = nhân tiện nói thêm."
+
+  - key: de:item:b1u07-lautlos
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: lautlos
+      pos: tính từ
+    back:
+      meaning:
+        vi: im lặng, không tiếng; (điện thoại) ở chế độ im lặng
+      examples:
+        - target: Im Kino stelle ich mein Handy lautlos.
+          translation:
+            vi: Trong rạp chiếu phim tôi để điện thoại ở chế độ im lặng.
+        - target: Mein Handy war lautlos, deshalb habe ich deinen Anruf nicht gehört.
+          translation:
+            vi: Điện thoại mình để im lặng nên mình không nghe thấy bạn gọi.
+      confusion:
+        vi: "Hậu tố -los = không có: lautlos = không có tiếng. Đừng nhầm với leise (nhỏ tiếng nhưng vẫn có tiếng)."
+
+  - key: de:item:b1u07-ablenkung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ablenkung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự sao nhãng, điều gây phân tâm; sự giải khuây
+      examples:
+        - target: Für viele Schüler ist das Handy eine große Ablenkung.
+          translation:
+            vi: Với nhiều học sinh, điện thoại là thứ rất dễ gây sao nhãng.
+        - target: Nach der Arbeit brauche ich ein bisschen Ablenkung.
+          translation:
+            vi: Sau giờ làm tôi cần giải khuây một chút.
+      confusion:
+        vi: "Danh từ của ablenken; đuôi -ung là giống cái."
+
+  - key: de:item:b1u07-reagieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: reagieren (auf + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: phản ứng (với), trả lời (lại)
+      examples:
+        - target: Sie hat auf meine Nachricht nicht reagiert.
+          translation:
+            vi: Cô ấy không phản hồi tin nhắn của tôi.
+        - target: Wie reagierst du auf negative Kommentare?
+          translation:
+            vi: Bạn phản ứng thế nào với những bình luận tiêu cực?
+      confusion:
+        vi: "reagieren auf + Akkusativ (auf meine Nachricht). Đuôi -ieren nên Partizip II không có ge-: hat reagiert."
+
+  - key: de:item:b1u07-offline
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: offline
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngoại tuyến, không kết nối mạng
+      examples:
+        - target: Am Wochenende bin ich gern offline.
+          translation:
+            vi: Cuối tuần tôi thích ngắt mạng.
+        - target: Viele Apps funktionieren auch offline.
+          translation:
+            vi: Nhiều ứng dụng vẫn chạy được khi không có mạng.
+      confusion:
+        vi: "offline và online không đổi đuôi, thường đứng sau sein hoặc làm trạng từ: Ich bin offline."
+
+  - key: de:item:b1u07-kontakt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kontakt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự liên lạc; người liên hệ (trong danh bạ)
+      examples:
+        - target: Über soziale Netzwerke bleiben wir in Kontakt.
+          translation:
+            vi: Chúng tôi giữ liên lạc qua mạng xã hội.
+        - target: Ich habe seine Nummer in meinen Kontakten gespeichert.
+          translation:
+            vi: Tôi đã lưu số của anh ấy vào danh bạ.
+      confusion:
+        vi: "mit jemandem in Kontakt bleiben = giữ liên lạc với ai; Kontakt aufnehmen = bắt đầu liên lạc."
+
+  # ================= Bài 3: Hướng dẫn sử dụng – Zustandspassiv, nguyên thể danh từ hoá =================
+  - key: de:item:b1u07-g-zustandspassiv
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Zustandspassiv: Das Gerät ist eingeschaltet. (sein + Partizip II)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sein + Partizip II diễn tả trạng thái, tức kết quả của một hành động đã xong: Das Gerät ist eingeschaltet (máy đang bật). werden + Partizip II diễn tả quá trình: Das Gerät wird eingeschaltet (máy được bật lên). Trạng thái trong quá khứ dùng war: Das Geschäft war geschlossen."
+      examples:
+        - target: Der Akku ist voll aufgeladen.
+          translation:
+            vi: Pin đã được sạc đầy.
+        - target: Das Programm ist schon installiert.
+          translation:
+            vi: Chương trình đã được cài rồi.
+      confusion:
+        vi: "Das Fenster ist geöffnet không phải Perfekt chủ động: Perfekt của öffnen là hat geöffnet. Perfekt bị động có thêm worden: Das Fenster ist geöffnet worden."
+
+  - key: de:item:b1u07-g-nominalisierter-infinitiv
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Nominalisierter Infinitiv: das Laden, beim Laden, zum Laden"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nguyên thể có thể thành danh từ giống trung và được viết hoa: laden → das Laden (việc sạc). beim + nguyên thể = trong khi đang làm việc đó (Beim Laden blinkt die Lampe); zum + nguyên thể = để làm, dùng cho việc đó (ein Kabel zum Laden). beim = bei dem, zum = zu dem."
+      examples:
+        - target: Beim Laden kann das Handy warm werden.
+          translation:
+            vi: Khi đang sạc, điện thoại có thể nóng lên.
+        - target: Das Lesen am Bildschirm ist anstrengend.
+          translation:
+            vi: Đọc trên màn hình thì mệt.
+      confusion:
+        vi: "Vì đã thành danh từ nên phải viết hoa: beim Laden, không phải beim laden. Đừng nhầm với der Laden (cửa hàng) – danh từ giống đực khác hẳn."
+
+  - key: de:item:b1u07-gebrauchsanweisung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gebrauchsanweisung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hướng dẫn sử dụng
+      examples:
+        - target: Lesen Sie vor dem ersten Gebrauch die Gebrauchsanweisung.
+          translation:
+            vi: Hãy đọc hướng dẫn sử dụng trước lần dùng đầu tiên.
+        - target: Die Gebrauchsanweisung gibt es auch auf Vietnamesisch.
+          translation:
+            vi: Hướng dẫn sử dụng cũng có bằng tiếng Việt.
+      confusion:
+        vi: "Từ ghép der Gebrauch + s + die Anweisung lấy giống cái của từ cuối. Từ gần nghĩa: die Anleitung, die Bedienungsanleitung."
+
+  - key: de:item:b1u07-einschalten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: einschalten
+      pos: động từ
+    back:
+      meaning:
+        vi: bật (máy, đèn)
+      examples:
+        - target: Schalten Sie das Gerät ein.
+          translation:
+            vi: Hãy bật máy lên.
+        - target: Ich habe den Fernseher eingeschaltet.
+          translation:
+            vi: Tôi đã bật ti vi.
+      confusion:
+        vi: "Động từ tách: Ich schalte das Gerät ein; Partizip II: eingeschaltet. Khẩu ngữ hay nói anmachen."
+
+  - key: de:item:b1u07-ausschalten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausschalten
+      pos: động từ
+    back:
+      meaning:
+        vi: tắt (máy, đèn)
+      examples:
+        - target: Bitte schalten Sie Ihre Handys aus.
+          translation:
+            vi: Xin quý vị vui lòng tắt điện thoại.
+        - target: Hast du das Licht ausgeschaltet?
+          translation:
+            vi: Bạn đã tắt đèn chưa?
+      confusion:
+        vi: "Động từ tách: Ich schalte das Handy aus; Partizip II: ausgeschaltet. Khẩu ngữ hay nói ausmachen."
+
+  - key: de:item:b1u07-anschliessen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: anschließen, schließt an, schloss an, hat angeschlossen
+      pos: động từ
+    back:
+      meaning:
+        vi: nối, kết nối (thiết bị); cắm vào
+      examples:
+        - target: Schließen Sie den Drucker an den Computer an.
+          translation:
+            vi: Hãy nối máy in với máy tính.
+        - target: Ist der Fernseher schon angeschlossen?
+          translation:
+            vi: Ti vi đã được nối dây chưa?
+      confusion:
+        vi: "anschließen an + Akk (an den Computer). Đừng nhầm với abschließen = khoá (cửa) hoặc hoàn thành (việc học)."
+
+  - key: de:item:b1u07-knopf
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Knopf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nút (bấm); cúc áo
+      examples:
+        - target: Drücken Sie den roten Knopf.
+          translation:
+            vi: Hãy bấm nút đỏ.
+        - target: An meinem Mantel fehlt ein Knopf.
+          translation:
+            vi: Áo khoác của tôi bị mất một cái cúc.
+      pronunciation_note:
+        vi: "K đứng trước n vẫn được đọc: k-nopf (khác tiếng Anh knife)."
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Knöpfe. Phím trên bàn phím là die Taste."
+
+  - key: de:item:b1u07-druecken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: drücken
+      pos: động từ
+    back:
+      meaning:
+        vi: ấn, nhấn, bấm
+      examples:
+        - target: Drücken Sie die Taste drei Sekunden lang.
+          translation:
+            vi: Hãy ấn phím trong ba giây.
+        - target: Du musst fester drücken.
+          translation:
+            vi: Bạn phải ấn mạnh hơn.
+      confusion:
+        vi: "drücken (có ü) = ấn; drucken (không có ü) = in: Ich drucke den Text aus. Trên cửa thường ghi Drücken (đẩy) và Ziehen (kéo)."
+
+  - key: de:item:b1u07-stecker
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Stecker, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phích cắm
+      examples:
+        - target: Ziehen Sie den Stecker aus der Steckdose.
+          translation:
+            vi: Hãy rút phích cắm ra khỏi ổ điện.
+        - target: Der Stecker passt nicht in die Steckdose.
+          translation:
+            vi: Phích cắm không vừa với ổ điện.
+      confusion:
+        vi: "den Stecker ziehen = rút phích cắm; den Stecker einstecken = cắm phích vào."
+
+  - key: de:item:b1u07-steckdose
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Steckdose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: ổ cắm điện
+      examples:
+        - target: Gibt es hier eine Steckdose?
+          translation:
+            vi: Ở đây có ổ cắm điện không?
+        - target: Die Steckdose ist hinter dem Schrank.
+          translation:
+            vi: Ổ cắm ở phía sau tủ.
+      confusion:
+        vi: "Từ ghép stecken (cắm) + die Dose (hộp) lấy giống cái của từ cuối. Cắm vào ổ: in die Steckdose (Wohin? → Akk)."
+
+  - key: de:item:b1u07-garantie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Garantie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo hành; sự bảo đảm
+      examples:
+        - target: Auf das Gerät haben Sie zwei Jahre Garantie.
+          translation:
+            vi: Máy này được bảo hành hai năm.
+        - target: Die Garantie ist leider schon abgelaufen.
+          translation:
+            vi: Tiếc là đã hết hạn bảo hành.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: ga-ran-TIE; số nhiều die Garantien đọc ga-ran-TI-en."
+      confusion:
+        vi: "Garantie auf + Akk (auf das Gerät). Thời hạn và điều kiện bảo hành khác nhau tuỳ sản phẩm và cửa hàng, nên hãy đọc kỹ giấy tờ khi mua."
+
+  - key: de:item:b1u07-reparatur
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Reparatur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự sửa chữa
+      examples:
+        - target: Die Reparatur dauert etwa eine Woche.
+          translation:
+            vi: Việc sửa chữa mất khoảng một tuần.
+        - target: Ich bringe meinen Laptop zur Reparatur.
+          translation:
+            vi: Tôi mang laptop đi sửa.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: re-pa-ra-TUR."
+      confusion:
+        vi: "Động từ: reparieren (hat repariert, không có ge-). zur Reparatur bringen = mang đi sửa."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 3 – trường thiết bị, sửa chữa
+  - key: de:item:b1u07-ladegeraet
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ladegerät, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ sạc, cục sạc
+      examples:
+        - target: Ich habe mein Ladegerät zu Hause vergessen.
+          translation:
+            vi: Tôi để quên bộ sạc ở nhà.
+        - target: Benutzen Sie nur das mitgelieferte Ladegerät.
+          translation:
+            vi: Chỉ dùng bộ sạc đi kèm theo máy.
+      confusion:
+        vi: "das Ladegerät là cả bộ sạc (thường có phích cắm); das Ladekabel chỉ là dây sạc. Từ ghép laden + das Gerät → giống trung."
+
+  - key: de:item:b1u07-fehler
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Fehler, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: lỗi
+      examples:
+        - target: Bei der Installation ist ein Fehler aufgetreten.
+          translation:
+            vi: Đã xảy ra lỗi khi cài đặt.
+        - target: In meinem Text sind noch drei Fehler.
+          translation:
+            vi: Bài viết của tôi còn ba lỗi.
+      confusion:
+        vi: "der Fehler dùng cho cả lỗi của máy lẫn lỗi sai khi nói, viết: einen Fehler machen = mắc lỗi. Số nhiều giống số ít: die Fehler."
+
+  - key: de:item:b1u07-defekt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: defekt
+      pos: tính từ
+    back:
+      meaning:
+        vi: hỏng, bị lỗi (máy móc)
+      examples:
+        - target: Das Ladekabel ist defekt.
+          translation:
+            vi: Dây sạc bị hỏng.
+        - target: Das defekte Gerät habe ich zurückgegeben.
+          translation:
+            vi: Tôi đã trả lại cái máy bị lỗi.
+      confusion:
+        vi: "defekt trang trọng hơn kaputt, hay dùng trong thư khiếu nại và hướng dẫn. Trước danh từ có đuôi: ein defektes Gerät."
+
+  - key: de:item:b1u07-blinken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: blinken
+      pos: động từ
+    back:
+      meaning:
+        vi: nhấp nháy
+      examples:
+        - target: Die Lampe blinkt rot.
+          translation:
+            vi: Đèn nhấp nháy màu đỏ.
+        - target: Wenn der Akku fast leer ist, blinkt das Licht.
+          translation:
+            vi: Khi pin sắp hết, đèn nhấp nháy.
+      confusion:
+        vi: "blinken = đèn bật tắt liên tục; leuchten = sáng liên tục, không tắt."
+
+  - key: de:item:b1u07-leuchten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: leuchten
+      pos: động từ
+    back:
+      meaning:
+        vi: sáng, phát sáng
+      examples:
+        - target: Die grüne Lampe leuchtet, wenn das Gerät eingeschaltet ist.
+          translation:
+            vi: Đèn xanh sáng khi máy đang bật.
+        - target: Der Bildschirm leuchtet nicht mehr.
+          translation:
+            vi: Màn hình không sáng nữa.
+      confusion:
+        vi: "eu đọc gần như \"oi\". leuchten = sáng đều; blinken = nhấp nháy."
+
+  - key: de:item:b1u07-einstecken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: einstecken
+      pos: động từ
+    back:
+      meaning:
+        vi: cắm vào; bỏ vào túi (mang theo)
+      examples:
+        - target: Hast du das Ladekabel eingesteckt?
+          translation:
+            vi: Bạn đã cắm dây sạc chưa?
+        - target: Stecken Sie den Stecker erst ein, wenn das Gerät ausgeschaltet ist.
+          translation:
+            vi: Chỉ cắm phích khi máy đã tắt.
+      confusion:
+        vi: "Động từ tách: Ich stecke den Stecker ein. Trái nghĩa: den Stecker ziehen (rút ra). Nghĩa khác: Hast du den Schlüssel eingesteckt? = Bạn đã mang theo chìa khoá chưa?"
+
+  - key: de:item:b1u07-kundendienst
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kundendienst, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ phận chăm sóc khách hàng, dịch vụ hậu mãi
+      examples:
+        - target: Bei Problemen rufen Sie bitte den Kundendienst an.
+          translation:
+            vi: Nếu có vấn đề, vui lòng gọi cho bộ phận chăm sóc khách hàng.
+        - target: Der Kundendienst hat mir schnell geantwortet.
+          translation:
+            vi: Bộ phận chăm sóc khách hàng đã trả lời tôi nhanh chóng.
+      confusion:
+        vi: "Từ ghép der Kunde + n + der Dienst: có âm nối -n- và lấy giống đực của từ cuối."
+
+  - key: de:item:b1u07-vorsicht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vorsicht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thận trọng; Vorsicht! = Cẩn thận!
+      examples:
+        - target: Vorsicht, das Gerät ist heiß!
+          translation:
+            vi: Cẩn thận, máy đang nóng!
+        - target: Bitte mit Vorsicht benutzen.
+          translation:
+            vi: Xin hãy dùng cẩn thận.
+      confusion:
+        vi: "Tính từ: vorsichtig (cẩn thận): Sei vorsichtig! Trên hướng dẫn và biển báo hay gặp Vorsicht! hoặc Achtung!"
+
+  - key: de:item:b1u07-schritt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schritt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bước
+      examples:
+        - target: "Schritt 1: Schalten Sie das Gerät aus."
+          translation:
+            vi: "Bước 1: Hãy tắt máy."
+        - target: Ich erkläre dir alles Schritt für Schritt.
+          translation:
+            vi: Mình giải thích cho bạn từng bước một.
+      confusion:
+        vi: "Schritt für Schritt = từng bước một. Nghĩa gốc là bước chân: ein paar Schritte gehen."
+
+  # ================= Bài 4: Nghe tin tức – mốc thời gian chính xác =================
+  - key: de:item:b1u07-g-zeitangaben-praezise
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Präzise Zeitangaben: gegen acht Uhr, um acht Uhr herum, Mitte Mai, ab sofort, innerhalb von zwei Tagen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "gegen + giờ và um … herum đều có nghĩa là khoảng (giờ đó): gegen acht Uhr, um acht Uhr herum. Anfang, Mitte, Ende đứng thẳng trước tên tháng, không có giới từ: Anfang Mai, Mitte Mai, Ende Mai. ab sofort = kể từ bây giờ; innerhalb von + Dativ = trong vòng: innerhalb von zwei Tagen."
+      examples:
+        - target: Der Unfall passierte gegen acht Uhr.
+          translation:
+            vi: Vụ tai nạn xảy ra vào khoảng tám giờ.
+        - target: Ab sofort fahren die Busse wieder nach Plan.
+          translation:
+            vi: Kể từ bây giờ xe buýt chạy lại theo lịch.
+        - target: Die Bauarbeiten sollen Mitte Mai beginnen.
+          translation:
+            vi: Công trình dự kiến bắt đầu vào giữa tháng Năm.
+      confusion:
+        vi: "Không nói in Mitte Mai hay am Anfang Mai: chỉ cần Mitte Mai, Anfang Mai. Khi sau đó là danh từ có mạo từ thì dùng Genitiv: Ende des Monats, Anfang der Woche."
+
+  - key: de:item:b1u07-meldung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Meldung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin (ngắn), bản tin; thông báo
+      examples:
+        - target: Laut einer Meldung der Polizei wurde niemand verletzt.
+          translation:
+            vi: Theo thông báo của cảnh sát, không ai bị thương.
+        - target: Die Meldung kam heute Morgen im Radio.
+          translation:
+            vi: Tin đó được phát trên đài sáng nay.
+      confusion:
+        vi: "die Meldung là một tin ngắn; die Nachricht là tin tức nói chung hoặc tin nhắn; die Nachrichten (số nhiều) là chương trình thời sự."
+
+  - key: de:item:b1u07-bericht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Bericht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tường thuật, phóng sự; báo cáo
+      examples:
+        - target: Im Bericht steht, dass die Straße gesperrt ist.
+          translation:
+            vi: Trong bài tường thuật có viết rằng con đường bị chặn.
+        - target: Ich habe einen Bericht über den Ausflug geschrieben.
+          translation:
+            vi: Tôi đã viết một bài tường thuật về chuyến dã ngoại.
+      confusion:
+        vi: "Động từ: berichten über + Akk. Một Bericht thường dài và chi tiết hơn một Meldung."
+
+  - key: de:item:b1u07-schlagzeile
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Schlagzeile, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tít báo, tiêu đề lớn
+      examples:
+        - target: Morgens lese ich oft nur die Schlagzeilen.
+          translation:
+            vi: Buổi sáng tôi thường chỉ đọc các tít báo.
+        - target: Der Streik machte gestern Schlagzeilen.
+          translation:
+            vi: Hôm qua cuộc đình công lên trang nhất các báo.
+      confusion:
+        vi: "Schlagzeilen machen = được báo chí đưa tin rầm rộ. Từ ghép der Schlag + die Zeile lấy giống cái của từ cuối."
+
+  - key: de:item:b1u07-aktuell
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: aktuell
+      pos: tính từ
+    back:
+      meaning:
+        vi: mới nhất, hiện thời, thời sự
+      examples:
+        - target: Hier sind die aktuellen Nachrichten.
+          translation:
+            vi: Sau đây là tin tức mới nhất.
+        - target: Ist diese Information noch aktuell?
+          translation:
+            vi: Thông tin này còn đúng với hiện tại không?
+      confusion:
+        vi: "Đừng nhầm với tiếng Anh actual: aktuell nghĩa là mới nhất, hiện nay, không phải \"thực sự\" (thực sự là tatsächlich)."
+
+  - key: de:item:b1u07-quelle
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Quelle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguồn (tin); con suối
+      examples:
+        - target: Aus welcher Quelle kommt diese Information?
+          translation:
+            vi: Thông tin này từ nguồn nào?
+        - target: Prüf immer die Quelle, bevor du etwas teilst!
+          translation:
+            vi: Luôn kiểm tra nguồn trước khi chia sẻ thứ gì nhé!
+      confusion:
+        vi: "Qu đọc như \"kv\": Quelle ≈ \"kve-le\". Nghĩa gốc là con suối, nguồn nước."
+
+  - key: de:item:b1u07-journalist
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Journalist, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà báo (nữ – die Journalistin, -nen)
+      examples:
+        - target: Sie arbeitet als Journalistin bei einer Zeitung.
+          translation:
+            vi: Cô ấy làm nhà báo cho một tờ báo.
+        - target: Gestern habe ich mit einem Journalisten gesprochen.
+          translation:
+            vi: Hôm qua tôi đã nói chuyện với một nhà báo.
+      pronunciation_note:
+        vi: "J ở đây đọc như chữ j trong tiếng Pháp (journal), không đọc như j thường của tiếng Đức; trọng âm ở âm tiết cuối: -LIST."
+      confusion:
+        vi: "Danh từ n-Deklination: den Journalisten, dem Journalisten, des Journalisten."
+
+  - key: de:item:b1u07-interview
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Interview, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc phỏng vấn (báo chí)
+      examples:
+        - target: Das Interview erscheint morgen in der Zeitung.
+          translation:
+            vi: Bài phỏng vấn sẽ được đăng trên báo ngày mai.
+        - target: Die Sängerin hat einem Radiosender ein Interview gegeben.
+          translation:
+            vi: Nữ ca sĩ đã trả lời phỏng vấn một đài phát thanh.
+      confusion:
+        vi: "ein Interview geben = trả lời phỏng vấn; ein Interview führen = thực hiện phỏng vấn. Phỏng vấn xin việc thường là das Vorstellungsgespräch."
+
+  - key: de:item:b1u07-veroeffentlichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: veröffentlichen
+      pos: động từ
+    back:
+      meaning:
+        vi: công bố, đăng, xuất bản
+      examples:
+        - target: Die Zeitung hat den Artikel gestern veröffentlicht.
+          translation:
+            vi: Tờ báo đã đăng bài báo đó hôm qua.
+        - target: Der Bericht wird nächste Woche veröffentlicht.
+          translation:
+            vi: Bản báo cáo sẽ được công bố vào tuần sau.
+      confusion:
+        vi: "Có tiền tố ver- nên Partizip II không có ge-: hat veröffentlicht. Danh từ: die Veröffentlichung."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 4 – trường tin tức
+  - key: de:item:b1u07-sprecher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Sprecher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người phát ngôn; phát thanh viên (nữ – die Sprecherin, -nen)
+      examples:
+        - target: Ein Sprecher der Polizei sagte, dass die Straße bald wieder frei ist.
+          translation:
+            vi: Người phát ngôn của cảnh sát nói rằng con đường sẽ sớm thông trở lại.
+        - target: Die Sprecherin liest heute Abend die Nachrichten.
+          translation:
+            vi: Tối nay nữ phát thanh viên đọc bản tin.
+      confusion:
+        vi: "Trong tin tức: ein Sprecher der Polizei, eine Sprecherin der Stadt = người phát ngôn của …; số nhiều giống số ít: die Sprecher."
+
+  - key: de:item:b1u07-melden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: melden
+      pos: động từ
+    back:
+      meaning:
+        vi: đưa tin, báo tin; trình báo
+      examples:
+        - target: Die Polizei meldet einen Unfall auf der Autobahn.
+          translation:
+            vi: Cảnh sát báo có một vụ tai nạn trên đường cao tốc.
+        - target: Bitte melden Sie den Schaden sofort.
+          translation:
+            vi: Vui lòng báo ngay về thiệt hại.
+      confusion:
+        vi: "sich melden = liên lạc, lên tiếng: Melde dich mal! Danh từ: die Meldung."
+
+  - key: de:item:b1u07-feuerwehr
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Feuerwehr, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đội cứu hoả, lính cứu hoả
+      examples:
+        - target: Die Feuerwehr war innerhalb von zehn Minuten vor Ort.
+          translation:
+            vi: Lính cứu hoả có mặt tại chỗ trong vòng mười phút.
+        - target: Die Feuerwehr konnte den Brand schnell löschen.
+          translation:
+            vi: Lính cứu hoả đã nhanh chóng dập tắt đám cháy.
+      confusion:
+        vi: "die Feuerwehr là cả lực lượng (số ít); một người lính cứu hoả là der Feuerwehrmann. Ở Đức và các nước EU, số khẩn cấp cho cứu hoả và cấp cứu là 112."
+
+  - key: de:item:b1u07-streik
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Streik, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc đình công
+      examples:
+        - target: Wegen eines Streiks fallen heute viele Züge aus.
+          translation:
+            vi: Do đình công, hôm nay nhiều chuyến tàu bị huỷ.
+        - target: Der Streik dauert bis Mittwoch.
+          translation:
+            vi: Cuộc đình công kéo dài đến thứ Tư.
+      confusion:
+        vi: "Động từ: streiken (đình công). Số nhiều thêm -s: die Streiks."
+
+  - key: de:item:b1u07-gewitter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gewitter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơn giông (mưa có sấm sét)
+      examples:
+        - target: Am Abend gibt es im Süden Gewitter.
+          translation:
+            vi: Buổi tối ở miền Nam có giông.
+        - target: Wegen eines Gewitters fiel der Strom aus.
+          translation:
+            vi: Vì giông nên bị mất điện.
+      confusion:
+        vi: "das Gewitter là giống trung, số nhiều giống số ít. Bão lớn có gió mạnh là der Sturm."
+
+  - key: de:item:b1u07-brand
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Brand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vụ cháy, đám cháy
+      examples:
+        - target: In der Nacht ist in einer Fabrik ein Brand ausgebrochen.
+          translation:
+            vi: Trong đêm, một vụ cháy đã bùng phát tại một nhà máy.
+        - target: Die Ursache des Brandes ist noch unklar.
+          translation:
+            vi: Nguyên nhân vụ cháy vẫn chưa rõ.
+      confusion:
+        vi: "der Brand là từ hay dùng trong tin tức; das Feuer là lửa nói chung. Số nhiều đổi nguyên âm: die Brände. Bùng phát: ein Brand bricht aus."
+
+  - key: de:item:b1u07-vermutlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vermutlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: có lẽ, có khả năng
+      examples:
+        - target: Der Zug kommt vermutlich mit zwanzig Minuten Verspätung.
+          translation:
+            vi: Tàu có lẽ sẽ đến trễ hai mươi phút.
+        - target: Die Ursache war vermutlich ein technischer Fehler.
+          translation:
+            vi: Nguyên nhân có lẽ là một lỗi kỹ thuật.
+      confusion:
+        vi: "Tin tức dùng vermutlich khi chưa chắc chắn. Gần nghĩa: wahrscheinlich, wohl."
+
+  - key: de:item:b1u07-bisher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bisher
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cho đến nay
+      examples:
+        - target: Bisher gibt es keine Informationen über Verletzte.
+          translation:
+            vi: Cho đến nay chưa có thông tin về người bị thương.
+        - target: Bisher hat niemand auf meine Nachricht reagiert.
+          translation:
+            vi: Cho đến giờ chưa ai phản hồi tin nhắn của tôi.
+      confusion:
+        vi: "bisher đi với thì hiện tại hoặc Perfekt, nói về khoảng thời gian kéo dài đến bây giờ."
+
+  - key: de:item:b1u07-zeitpunkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zeitpunkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời điểm
+      examples:
+        - target: Zum Zeitpunkt des Unfalls war die Straße nass.
+          translation:
+            vi: Vào thời điểm xảy ra tai nạn, mặt đường bị ướt.
+        - target: Jetzt ist kein guter Zeitpunkt für ein Gespräch.
+          translation:
+            vi: Bây giờ không phải là thời điểm tốt để nói chuyện.
+      confusion:
+        vi: "Từ ghép die Zeit + der Punkt lấy giống đực của từ cuối. zum Zeitpunkt + Genitiv = vào thời điểm …"

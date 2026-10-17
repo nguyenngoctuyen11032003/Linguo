@@ -1,0 +1,3 @@
+# Allow-list của unit B1U07 (Medien und Technik): từ đúng mà từ điển offline thiếu.
+# Nominalisierter (Infinitiv): thuật ngữ ngữ pháp (= substantivierter Infinitiv).
+Nominalisierter

@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u07-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – bình luận một bài báo về mạng xã hội (Wiederholung)
+objectives:
+  - vi: Đọc hiểu một bài báo ngắn về thói quen số (kiểu Goethe B1 Lesen) và chọn richtig/falsch.
+  - vi: Nghe hiểu tin vắn và ghi lại cái gì – khi nào – ở đâu (kiểu Goethe B1 Hören Teil 1).
+  - vi: Viết bình luận khoảng 80 từ về mạng xã hội, nêu ý kiến và lý do (kiểu bài diễn đàn trong Goethe B1 Schreiben).
+estimated_minutes: 24
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:b1u07-nachrichten]
+items:
+  - item: de:item:b1u07-g-partizip-i-attribut
+    role: reuse
+  - item: de:item:b1u07-g-partizip-ii-attribut
+    role: reuse
+  - item: de:item:b1u07-g-waehrend-konjunktion
+    role: reuse
+  - item: de:item:b1u07-g-sobald-solange
+    role: reuse
+  - item: de:item:b1u07-g-zustandspassiv
+    role: reuse
+  - item: de:item:b1u07-g-nominalisierter-infinitiv
+    role: reuse
+  - item: de:item:b1u07-g-zeitangaben-praezise
+    role: reuse
+  - item: de:item:b1u07-soziales-netzwerk
+    role: reuse
+  - item: de:item:b1u07-bildschirmzeit
+    role: reuse
+  - item: de:item:b1u07-ablenken
+    role: reuse
+  - item: de:item:b1u07-erreichbar
+    role: reuse
+  - item: de:item:b1u07-benachrichtigung
+    role: reuse
+  - item: de:item:b1u07-kontakt
+    role: reuse
+  - item: de:item:b1u07-meldung
+    role: reuse
+  - item: de:item:b1u07-quelle
+    role: reuse
+  - item: de:item:b1u07-nutzer
+    role: reuse
+  - item: de:item:b1u07-wlan
+    role: reuse
+  - item: de:item:a2u07-teilen
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được một bài báo ngắn về điện thoại ở trường học, nghe hiểu tin vắn, và viết được một bình luận khoảng 80 từ về mạng xã hội.
+  - type: explain
+    text:
+      vi: "Khi đọc bài báo, hãy đọc tít (Schlagzeile) và câu đầu trước để biết chủ đề. Với câu richtig/falsch, so từng chi tiết: ai, khi nào, bao nhiêu (alle ↔ manche, immer ↔ manchmal). Câu hỏi thường diễn đạt lại bằng từ khác, nên đừng chỉ tìm từ giống hệt."
+  - type: explain
+    text:
+      vi: "Khi nghe tin vắn, bạn thường chỉ được nghe một lần. Hãy đọc câu hỏi trước, rồi tập trung vào một ý: giờ (gegen acht Uhr), ngày (ab Donnerstag, Mitte Juni) hay địa điểm."
+  - type: explain
+    text:
+      vi: "Bình luận trên diễn đàn gồm: nêu ý kiến (Meiner Meinung nach …, Ich bin der Meinung, dass …), lý do và ví dụ, và một câu kết luận (Deshalb …). Cặp einerseits … andererseits (một mặt … mặt khác) giúp so sánh hai phía. Dùng thêm während, sobald, solange để câu văn mạch lạc và đạt mức B1."
+  - type: explain
+    text:
+      vi: "Sau Meiner Meinung nach, động từ đứng ngay ở vị trí 2: Meiner Meinung nach sind soziale Netzwerke nützlich. Không nói Meiner Meinung nach ich finde … – đó là lỗi người Việt rất hay mắc."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, phần Schreiben của Goethe-Zertifikat B1 có một nhiệm vụ viết bài diễn đàn khoảng 80 từ để nêu ý kiến về một chủ đề; cấu trúc, số từ và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Bài viết nên trả lời đúng chủ đề, có ý kiến rõ ràng và ít nhất một lý do hoặc ví dụ. Trong phần Hören, tin vắn và thông báo thường có số, giờ và ngày; hãy ghi nhanh bằng chữ số khi nghe. Khi bình luận về công nghệ, nên viết theo kinh nghiệm của mình (Ich selbst …, Bei mir …) thay vì đưa ra con số mà bạn không chắc chắn."
+  - type: example
+    target: "Meiner Meinung nach haben soziale Netzwerke Vor- und Nachteile. Einerseits kann man leicht mit Freunden in Kontakt bleiben, die weit weg wohnen. Andererseits sind viele Menschen ständig online und werden von Benachrichtigungen abgelenkt. Deshalb finde ich ein Handyverbot im Unterricht richtig, solange die Schüler in den Pausen erreichbar sind. Ich selbst stelle mein Handy lautlos, während ich arbeite. Und bevor ich eine Meldung teile, prüfe ich immer die Quelle."
+    target_lang: de
+    translation:
+      vi: "Theo tôi, mạng xã hội có cả ưu điểm lẫn nhược điểm. Một mặt, người ta dễ dàng giữ liên lạc với những người bạn sống ở xa. Mặt khác, nhiều người lúc nào cũng online và bị các thông báo làm sao nhãng. Vì vậy tôi thấy cấm điện thoại trong giờ học là đúng, miễn là học sinh vẫn liên lạc được trong giờ ra chơi. Bản thân tôi để điện thoại im lặng trong khi làm việc. Và trước khi chia sẻ một tin, tôi luôn kiểm tra nguồn."
+    note:
+      vi: "Bình luận mẫu khoảng 75 từ: ý kiến – một mặt/mặt khác – kết luận – kinh nghiệm bản thân. Có mệnh đề quan hệ (die weit weg wohnen), bị động (werden … abgelenkt), solange, während và bevor."
+  - type: example
+    target: Sobald die Pause beginnt, dürfen die Schüler ihre Handys wieder benutzen.
+    target_lang: de
+    translation:
+      vi: Ngay khi giờ ra chơi bắt đầu, học sinh lại được dùng điện thoại.
+    note:
+      vi: "sobald = ngay khi; câu phụ đứng đầu nên dürfen ở ngay sau dấu phẩy."
+  - type: example
+    target: Laut einer Meldung der Stadt gibt es in der Bibliothek ab Anfang Juni kostenloses WLAN.
+    target_lang: de
+    translation:
+      vi: Theo thông báo của thành phố, từ đầu tháng Sáu thư viện có Wi-Fi miễn phí.
+    note:
+      vi: "laut + Dativ/Genitiv = theo (nguồn tin); ab Anfang Juni: Anfang + tháng không cần giới từ thêm."
+  - type: common_mistake
+    wrong: Meiner Meinung nach ich finde soziale Netzwerke nützlich.
+    right: Meiner Meinung nach sind soziale Netzwerke nützlich.
+    target_lang: de
+    note:
+      vi: "Meiner Meinung nach chiếm vị trí 1, nên động từ đứng ngay sau. Không cần thêm ich finde – ý \"theo tôi\" đã có sẵn."
+  - type: common_mistake
+    wrong: Während dem Unterricht bleiben die Handys im Schrank.
+    right: Während des Unterrichts bleiben die Handys im Schrank.
+    target_lang: de
+    note:
+      vi: "Trong văn viết chuẩn, giới từ während đi với Genitiv: während des Unterrichts. während dem chỉ gặp trong khẩu ngữ."
+  - type: common_mistake
+    wrong: In Mitte Juni gibt es kostenloses WLAN.
+    right: Ab Mitte Juni gibt es kostenloses WLAN.
+    target_lang: de
+    note:
+      vi: "Mitte + tháng không đi với in. Muốn nói \"từ giữa tháng Sáu\" thì dùng ab Mitte Juni."
+  - type: summary
+    points:
+      - vi: "Đọc: tít + câu đầu → chủ đề; richtig/falsch: so ai, khi nào, bao nhiêu (alle ↔ manche)."
+      - vi: "Nghe tin vắn: đọc câu hỏi trước, bắt giờ, ngày, địa điểm."
+      - vi: "Bình luận: Meiner Meinung nach + động từ; Einerseits … andererseits …; Deshalb …; Ich selbst …"
+      - vi: "Ôn ngữ pháp: das klingelnde Handy / die gespeicherten Daten; während, sobald, solange; ist eingeschaltet; beim Laden; gegen acht Uhr, Mitte Mai."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen) ----------------
+  - key: de:exercise:b1u07l5-mcq-artikel-pause
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-g-sobald-solange
+    prompt:
+      stem: "Handyfreie Schule? An einer Schule in unserer Stadt bleiben die Handys ab sofort während des Unterrichts im Schrank. Sobald die Pause beginnt, dürfen die Schüler sie wieder benutzen. Die Lehrer berichten, dass die Schüler jetzt weniger abgelenkt sind. Manche Eltern finden die Regel aber zu streng, weil ihre Kinder nicht mehr ständig erreichbar sind. — Richtig oder falsch? In der Pause dürfen die Schüler ihre Handys benutzen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Bài báo viết: Sobald die Pause beginnt, dürfen die Schüler sie wieder benutzen – ngay khi giờ ra chơi bắt đầu, học sinh lại được dùng điện thoại (sie = die Handys). Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u07l5-mcq-artikel-eltern
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-erreichbar
+    prompt:
+      stem: "Handyfreie Schule? An einer Schule in unserer Stadt bleiben die Handys ab sofort während des Unterrichts im Schrank. Sobald die Pause beginnt, dürfen die Schüler sie wieder benutzen. Die Lehrer berichten, dass die Schüler jetzt weniger abgelenkt sind. Manche Eltern finden die Regel aber zu streng, weil ihre Kinder nicht mehr ständig erreichbar sind. — Richtig oder falsch? Alle Eltern finden die neue Regel gut."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Bài báo viết: Manche Eltern finden die Regel aber zu streng – một số phụ huynh thấy quy định quá nghiêm, vì con họ không còn liên lạc được mọi lúc. Câu hỏi dùng Alle (tất cả), nên câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u07l5-mcq-artikel-lehrer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u07-ablenken
+    prompt:
+      stem: "Handyfreie Schule? An einer Schule in unserer Stadt bleiben die Handys ab sofort während des Unterrichts im Schrank. Sobald die Pause beginnt, dürfen die Schüler sie wieder benutzen. Die Lehrer berichten, dass die Schüler jetzt weniger abgelenkt sind. Manche Eltern finden die Regel aber zu streng, weil ihre Kinder nicht mehr ständig erreichbar sind. — Richtig oder falsch? Laut den Lehrern können sich die Schüler im Unterricht jetzt schlechter konzentrieren."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Các giáo viên kể rằng học sinh bây giờ ít bị sao nhãng hơn (weniger abgelenkt), tức là tập trung tốt hơn, không phải kém hơn (schlechter). Câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recognition: nghe (kiểu Hören Teil 1) ----------------
+  - key: de:exercise:b1u07l5-listen-stau
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-g-zeitangaben-praezise
+    prompt:
+      audio_asset_id: null
+      fallback_text: Und nun eine Verkehrsmeldung. Auf der Autobahn bei Kassel gibt es nach einem Unfall gegen sieben Uhr einen langen Stau. Die Polizei rechnet damit, dass die Straße innerhalb von zwei Stunden wieder frei ist.
+      options:
+        - { id: k2a, text: "Sau một vụ tai nạn lúc khoảng bảy giờ có tắc đường dài; cảnh sát dự kiến trong vòng hai tiếng đường sẽ thông.", lang: vi }
+        - { id: k6b, text: "Sau một vụ tai nạn lúc khoảng bảy giờ có tắc đường dài; cảnh sát dự kiến sau hai ngày đường mới thông.", lang: vi }
+        - { id: k9c, text: "Sau một vụ tai nạn lúc đúng hai giờ có tắc đường dài; cảnh sát dự kiến trong vòng bảy tiếng đường sẽ thông.", lang: vi }
+        - { id: k4d, text: "Có tắc đường dài vì công trình sửa đường; cảnh sát dự kiến trong vòng hai tiếng đường sẽ thông.", lang: vi }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "nach einem Unfall gegen sieben Uhr = sau một vụ tai nạn vào khoảng bảy giờ; einen langen Stau = tắc đường dài. innerhalb von zwei Stunden = trong vòng hai tiếng (Stunden, không phải Tage – ngày)."
+    display_answer: Sau một vụ tai nạn lúc khoảng bảy giờ có tắc đường dài; cảnh sát dự kiến trong vòng hai tiếng đường sẽ thông.
+
+  - key: de:exercise:b1u07l5-listen-bibliothek
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u07-wlan
+    prompt:
+      audio_asset_id: null
+      fallback_text: Kurz notiert. Die Stadtbibliothek ist ab Anfang Juni auch sonntags geöffnet. Außerdem gibt es dort ab sofort kostenloses WLAN.
+      options:
+        - { id: j3a, text: "Từ đầu tháng Sáu thư viện mở cửa cả Chủ nhật; Wi-Fi miễn phí thì có ngay từ bây giờ.", lang: vi }
+        - { id: j7b, text: "Từ giữa tháng Sáu thư viện mở cửa cả Chủ nhật; Wi-Fi miễn phí thì có ngay từ bây giờ.", lang: vi }
+        - { id: j1c, text: "Từ đầu tháng Sáu thư viện đóng cửa vào Chủ nhật; Wi-Fi miễn phí thì có ngay từ bây giờ.", lang: vi }
+        - { id: j5d, text: "Từ đầu tháng Sáu thư viện mở cửa cả Chủ nhật; Wi-Fi miễn phí sẽ có từ tháng Bảy.", lang: vi }
+    answer:
+      correct_option_id: j3a
+    explanation:
+      vi: "ab Anfang Juni = từ đầu tháng Sáu (Mitte là giữa); auch sonntags geöffnet = mở cửa cả Chủ nhật (trạng thái: ist geöffnet). ab sofort = ngay từ bây giờ; kostenloses WLAN = Wi-Fi miễn phí."
+    display_answer: Từ đầu tháng Sáu thư viện mở cửa cả Chủ nhật; Wi-Fi miễn phí thì có ngay từ bây giờ.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u07l5-fill-meinung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-meinung-redemittel
+    prompt:
+      template: "Meiner {{b1}} nach haben soziale Netzwerke Vor- und Nachteile. Ich bin aber der {{b2}}, dass viele Menschen zu oft online sind."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Meinung]
+        b2: [Meinung, Ansicht]
+    known_wrong:
+      - answer: Meinungen
+        feedback_vi: Cụm cố định dùng số ít – Meiner Meinung nach, Ich bin der Meinung.
+        error_tag: plural_form
+      - answer: Idee
+        feedback_vi: Nêu ý kiến dùng cụm cố định Ich bin der Meinung (hoặc der Ansicht), dass …
+        error_tag: word_choice
+    explanation:
+      vi: "Hai cụm cố định để nêu ý kiến: Meiner Meinung nach (theo ý kiến của tôi) + động từ ở vị trí 2, và Ich bin der Meinung/Ansicht, dass … (tôi cho rằng) + câu phụ, động từ cuối."
+    display_answer: "Meiner Meinung nach haben soziale Netzwerke Vor- und Nachteile. Ich bin aber der Meinung, dass viele Menschen zu oft online sind."
+
+  - key: de:exercise:b1u07l5-fill-grammatik-mix
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-partizip-ii-attribut
+    prompt:
+      template: "Die {{b1}} (speichern) Fotos sind weg! {{b2}} Laden ist mein Handy abgestürzt. Jetzt warte ich, {{b3}} der Kundendienst antwortet."
+      blanks:
+        - { id: b1, width_hint: 13 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [gespeicherten]
+        b2: [Beim]
+        b3: [bis]
+    known_wrong:
+      - answer: gespeicherte
+        feedback_vi: Sau die số nhiều đuôi là -en – die gespeicherten Fotos.
+        error_tag: adj_ending
+      - answer: speichernden
+        feedback_vi: Ảnh được lưu (bị động, đã xong) nên dùng Partizip II – gespeicherten.
+        error_tag: participle_form
+      - answer: Zum
+        feedback_vi: "zum Laden là \"để sạc\"; \"trong khi đang sạc\" là beim Laden."
+        error_tag: preposition
+      - answer: solange
+        feedback_vi: "Chờ cho đến khi (điểm kết thúc) là bis; solange là \"chừng nào còn\"."
+        error_tag: conjunction
+    explanation:
+      vi: "die gespeicherten Fotos: Partizip II (đã được lưu) + đuôi -en sau die số nhiều. Beim Laden = trong khi đang sạc. warten, bis … = chờ cho đến khi; động từ antwortet đứng cuối câu phụ."
+    display_answer: "Die gespeicherten Fotos sind weg! Beim Laden ist mein Handy abgestürzt. Jetzt warte ich, bis der Kundendienst antwortet."
+
+  - key: de:exercise:b1u07l5-tr-benachrichtigung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-benachrichtigung
+    prompt:
+      source_text: "Ngay khi có thông báo, tôi nhìn vào điện thoại. (bắt đầu bằng Sobald; có thông báo = eine Benachrichtigung bekommen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy.
+        - Sobald ich eine Benachrichtigung bekomme, schaue ich auf das Handy.
+        - Sobald ich eine Benachrichtigung bekomme, schaue ich auf mein Handy.
+        - Sobald ich eine Benachrichtigung bekomme, schaue ich sofort aufs Handy.
+        - Sobald ich eine Benachrichtigung bekomme, schaue ich sofort auf mein Handy.
+        - Sobald ich eine Benachrichtigung bekomme, sehe ich aufs Handy.
+        - Sobald ich eine Benachrichtigung bekomme, sehe ich auf mein Handy.
+        - Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Smartphone.
+        - Sobald ich eine Benachrichtigung bekomme, schaue ich auf mein Smartphone.
+    known_wrong:
+      - answer: Sobald ich bekomme eine Benachrichtigung, schaue ich aufs Handy.
+        feedback_vi: Trong câu phụ sobald, động từ bekomme đứng cuối – Sobald ich eine Benachrichtigung bekomme, …
+        error_tag: verb_position
+      - answer: Sobald ich eine Benachrichtigung bekomme, ich schaue aufs Handy.
+        feedback_vi: Câu phụ đứng đầu là vị trí 1, nên schaue đứng ngay sau dấu phẩy – …, schaue ich aufs Handy.
+        error_tag: verb_position
+      - answer: Sobald ich eine Benachrichtigung bekomme, schaue ich im Handy.
+        feedback_vi: Nhìn vào điện thoại là hướng nhìn – auf + Akkusativ (aufs Handy).
+        error_tag: preposition
+    explanation:
+      vi: "sobald mở câu phụ, động từ bekomme đứng cuối. Câu phụ là vị trí 1, nên schaue đứng ngay sau dấu phẩy. Nhìn vào điện thoại = auf das Handy schauen (aufs Handy)."
+    display_answer: Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u07l5-wb-meinung-bildschirmzeit
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-bildschirmzeit
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Meiner Meinung nach: \"Theo tôi, chúng ta nên giảm thời gian dùng màn hình.\""
+      tokens:
+        - { id: m-wir, text: wir }
+        - { id: m-reduzieren, text: reduzieren }
+        - { id: m-meiner, text: Meiner }
+        - { id: m-unsere, text: unsere }
+        - { id: m-sollten, text: sollten }
+        - { id: m-nach, text: nach }
+        - { id: m-bildschirmzeit, text: Bildschirmzeit }
+        - { id: m-meinung, text: Meinung }
+    answer:
+      orders:
+        - [m-meiner, m-meinung, m-nach, m-sollten, m-wir, m-unsere, m-bildschirmzeit, m-reduzieren]
+    explanation:
+      vi: "Meiner Meinung nach chiếm vị trí 1, nên sollten (lời khuyên, Konjunktiv II của sollen) ở vị trí 2, rồi chủ ngữ wir. Tân ngữ unsere Bildschirmzeit đứng giữa, nguyên thể reduzieren ở cuối câu."
+    display_answer: Meiner Meinung nach sollten wir unsere Bildschirmzeit reduzieren.
+
+  - key: de:exercise:b1u07l5-wb-solange-unterricht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-sobald-solange
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Solange: \"Chừng nào giờ học còn diễn ra, điện thoại vẫn ở trong tủ.\""
+      tokens:
+        - { id: u-handys, text: Handys }
+        - { id: u-laeuft, text: läuft }
+        - { id: u-solange, text: Solange }
+        - { id: u-im, text: im }
+        - { id: u-komma, text: "," }
+        - { id: u-unterricht, text: Unterricht }
+        - { id: u-bleiben, text: bleiben }
+        - { id: u-der, text: der }
+        - { id: u-schrank, text: Schrank }
+        - { id: u-die, text: die }
+    answer:
+      orders:
+        - [u-solange, u-der, u-unterricht, u-laeuft, u-komma, u-bleiben, u-die, u-handys, u-im, u-schrank]
+    explanation:
+      vi: "Câu phụ solange: läuft đứng cuối (der Unterricht läuft = giờ học đang diễn ra). Câu phụ là vị trí 1, nên bleiben đứng ngay sau dấu phẩy, rồi chủ ngữ die Handys và im Schrank (Wo? → Dativ)."
+    display_answer: Solange der Unterricht läuft, bleiben die Handys im Schrank.
+
+  - key: de:exercise:b1u07l5-tr-quelle
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u07-quelle
+    prompt:
+      source_text: Viele Nutzer prüfen die Quelle nicht, bevor sie eine Meldung teilen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhiều người dùng không kiểm tra nguồn trước khi chia sẻ một tin.
+        - Nhiều người dùng không kiểm tra nguồn trước khi chia sẻ tin.
+        - Nhiều người dùng không kiểm tra nguồn tin trước khi chia sẻ một tin.
+        - Nhiều người dùng không kiểm tra nguồn trước khi họ chia sẻ một tin.
+        - Nhiều người dùng không kiểm tra nguồn trước khi chia sẻ một bản tin.
+        - Nhiều người dùng không kiểm tra nguồn trước khi chia sẻ một thông tin.
+        - Nhiều người dùng không kiểm tra nguồn trước khi chia sẻ thông tin.
+        - Nhiều người dùng không kiểm tra nguồn gốc trước khi chia sẻ một tin.
+        - Nhiều người dùng không xem nguồn trước khi chia sẻ một tin.
+        - Trước khi chia sẻ một tin, nhiều người dùng không kiểm tra nguồn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhiều người dùng không kiểm tra nguồn sau khi chia sẻ một tin.
+        feedback_vi: "bevor là \"trước khi\"; \"sau khi\" là nachdem."
+        error_tag: meaning
+    explanation:
+      vi: "Viele Nutzer = nhiều người dùng; prüfen … nicht = không kiểm tra; die Quelle = nguồn (tin). bevor sie eine Meldung teilen = trước khi (họ) chia sẻ một tin; động từ teilen đứng cuối câu phụ."
+    display_answer: Nhiều người dùng không kiểm tra nguồn trước khi chia sẻ một tin.
