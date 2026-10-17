@@ -1,0 +1,397 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u01-mein-lebenslauf
+order_index: 4
+level: a2
+title:
+  vi: Lý lịch của tôi – seit, năm (Mein Lebenslauf)
+objectives:
+  - vi: Kể các mốc đời mình (sinh, đi học, học nghề hoặc đại học, kết hôn) với năm đọc đúng.
+  - vi: Nói việc bắt đầu trong quá khứ và còn kéo dài đến nay bằng seit + thì hiện tại.
+  - vi: Nghe hiểu một đoạn phỏng vấn ngắn về tiểu sử.
+estimated_minutes: 18
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a2u01-vor-einem-jahr]
+items:
+  - item: de:item:a2u01-g-seit-praesens
+  - item: de:item:a2u01-g-jahreszahlen
+  - item: de:item:a2u01-geboren
+  - item: de:item:a2u01-grundschule
+  - item: de:item:a2u01-gymnasium
+  - item: de:item:a2u01-abitur
+  - item: de:item:a2u01-ausbildung
+  - item: de:item:a2u01-studieren
+  - item: de:item:a2u01-lebenslauf
+  - item: de:item:a2u01-erfahrung
+  - item: de:item:a2u01-heiraten
+  - item: de:item:a2u01-pruefung
+  - item: de:item:a2u01-bestehen
+  - item: de:item:a2u01-durchfallen
+  - item: de:item:a2u01-kindergarten
+  - item: de:item:a2u01-berufsschule
+  - item: de:item:a2u01-leben
+  - item: de:item:a1u03-g-zahlen-gross
+    role: reuse
+  - item: de:item:a1u04-g-ordinalzahlen
+    role: reuse
+  - item: de:item:a2u01-g-partizip-praefix-ieren
+    role: reuse
+  - item: de:item:a2u01-g-vor-nach-dativ
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được tiểu sử ngắn của mình, ví dụ: \"Ich bin 1998 in Hanoi geboren. 2016 habe ich das Abitur gemacht. Seit zwei Jahren wohne ich in Deutschland.\""
+  - type: explain
+    text:
+      vi: "Năm từ 1100 đến 1999 đọc theo \"trăm\": 1998 = neunzehnhundertachtundneunzig (mười chín trăm + chín mươi tám). Từ năm 2000 đọc như số thường: 2000 = zweitausend, 2010 = zweitausendzehn, 2024 = zweitausendvierundzwanzig. Như mọi số, hàng đơn vị đọc trước hàng chục: achtundneunzig."
+  - type: explain
+    text:
+      vi: "Năm đứng một mình, không có giới từ: Ich bin 1998 geboren. Muốn rõ hơn thì nói im Jahr 1998. Không nói in 1998 – đó là kiểu nói theo tiếng Anh."
+  - type: explain
+    text:
+      vi: "Việc bắt đầu trong quá khứ và vẫn còn đến bây giờ: tiếng Đức dùng thì HIỆN TẠI với seit + Dativ. Tiếng Việt nói \"tôi đã sống ở đây được ba năm\", tiếng Đức nói Ich wohne seit drei Jahren hier. Hỏi: Seit wann wohnst du hier? / Wie lange wohnst du schon hier?"
+  - type: explain
+    text:
+      vi: "So sánh: vor drei Jahren = cách đây ba năm (một mốc đã qua, dùng Perfekt hoặc war); seit drei Jahren = từ ba năm nay (còn tiếp diễn, dùng hiện tại); in drei Jahren = ba năm nữa. Ví dụ: Ich bin vor drei Jahren nach Deutschland gekommen, und ich wohne seit drei Jahren hier."
+  - type: explain
+    text:
+      vi: "Nhiều động từ trong lý lịch không có ge- (bài 1): studiert, bestanden, besucht. Ngày sinh dùng số thứ tự: am dritten Mai 1998. Người còn sống nói Ich bin … geboren (với sein)."
+  - type: deep_explain
+    text:
+      vi: "Trường học ở Đức (giải thích đơn giản; chi tiết khác nhau giữa các bang): trẻ đi Kindergarten, rồi Grundschule (thường 4 năm), sau đó học các loại trường khác nhau; Gymnasium kết thúc bằng Abitur – điều kiện thông thường để vào đại học (studieren). Con đường phổ biến khác là Ausbildung: học nghề kiểu kép, vừa làm ở công ty, vừa học lý thuyết ở Berufsschule. Lebenslauf ở Đức thường viết dạng bảng, mỗi dòng một mốc: 2010–2016 Gymnasium in …, 2016 Abitur, seit 2020 Ausbildung zum Koch; ảnh là tuỳ chọn. Một số trường hợp seit + Perfekt cũng có (Ich habe ihn seit Jahren nicht gesehen – việc không xảy ra), nhưng với việc vẫn đang diễn ra như sống, làm việc, học, bạn dùng thì hiện tại."
+  - type: example
+    target: Ich bin am dritten Mai 1998 in Hanoi geboren.
+    target_lang: de
+    translation:
+      vi: Tôi sinh ngày 3 tháng 5 năm 1998 ở Hà Nội.
+    note:
+      vi: "am dritten Mai – số thứ tự cho ngày; 1998 đọc là neunzehnhundertachtundneunzig, không có giới từ."
+  - type: example
+    target: 2016 habe ich das Abitur gemacht. Danach habe ich in Leipzig Informatik studiert.
+    target_lang: de
+    translation:
+      vi: Năm 2016 tôi thi tú tài. Sau đó tôi học ngành tin học ở Leipzig.
+    note:
+      vi: "2016 (zweitausendsechzehn) ở vị trí 1, nên habe đứng ngay sau. studieren → studiert (không có ge-)."
+  - type: example
+    target: Seit wann wohnen Sie in Deutschland? – Ich wohne seit zwei Jahren hier.
+    target_lang: de
+    translation:
+      vi: Anh/chị sống ở Đức từ bao giờ? – Tôi sống ở đây được hai năm rồi.
+    note:
+      vi: Phỏng vấn lịch sự (Sie). Vẫn còn sống ở đó nên dùng hiện tại (wohne), seit + Dativ số nhiều (Jahren).
+  - type: example
+    target: Nach dem Abitur habe ich eine Ausbildung zur Köchin gemacht. Die Prüfung habe ich 2022 bestanden.
+    target_lang: de
+    translation:
+      vi: Sau khi đỗ tú tài, tôi học nghề đầu bếp. Năm 2022 tôi thi đỗ.
+    note:
+      vi: nach dem Abitur (nach + Dativ). bestehen → bestanden (be- không nhấn, không có ge-).
+  - type: example
+    target: Wir haben 2019 geheiratet und wohnen seit 2020 in Köln.
+    target_lang: de
+    translation:
+      vi: Chúng tôi cưới nhau năm 2019 và sống ở Köln từ năm 2020.
+    note:
+      vi: Việc đã xong (cưới) → Perfekt; việc còn tiếp diễn (sống ở Köln) → hiện tại + seit.
+  - type: common_mistake
+    wrong: Ich wohne seit drei Jahren hier gewohnt.
+    right: Ich wohne seit drei Jahren hier.
+    target_lang: de
+    note:
+      vi: "Việc vẫn đang diễn ra → chỉ dùng thì hiện tại với seit, không thêm Partizip theo kiểu \"đã … được\"."
+  - type: common_mistake
+    wrong: Ich bin in 1999 geboren.
+    right: Ich bin 1999 geboren.
+    target_lang: de
+    note:
+      vi: Năm đứng một mình (hoặc im Jahr 1999), không có in.
+  - type: common_mistake
+    wrong: Ich wohne vor drei Jahren in Berlin.
+    right: Ich wohne seit drei Jahren in Berlin.
+    target_lang: de
+    note:
+      vi: "vor = cách đây (một mốc đã qua); \"được ba năm rồi, vẫn đang ở\" là seit."
+  - type: common_mistake
+    wrong: Ich habe 2010 an der Universität gestudiert.
+    right: Ich habe 2010 an der Universität studiert.
+    target_lang: de
+    note:
+      vi: Động từ -ieren không có ge-.
+  - type: summary
+    points:
+      - vi: "1998 = neunzehnhundertachtundneunzig; 2010 = zweitausendzehn."
+      - vi: "Ich bin 1998 geboren / im Jahr 1998 – không nói in 1998."
+      - vi: "seit + Dativ + HIỆN TẠI cho việc còn tiếp diễn: Ich wohne seit drei Jahren hier."
+      - vi: "vor drei Jahren (cách đây) – seit drei Jahren (từ ba năm nay) – in drei Jahren (ba năm nữa)."
+      - vi: "Kindergarten → Grundschule → Gymnasium → Abitur → studieren; hoặc Ausbildung + Berufsschule."
+      - vi: "eine Prüfung machen / bestehen (bestanden) / durchfallen (ist durchgefallen)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u01l4-listen-geboren
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u01-g-jahreszahlen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich bin neunzehnhundertachtundneunzig in Hanoi geboren.
+      options:
+        - { id: y1a, text: Tôi sinh năm 1998 ở Hà Nội., lang: vi }
+        - { id: y2b, text: Tôi sinh năm 1989 ở Hà Nội., lang: vi }
+        - { id: y3c, text: Tôi sinh năm 1988 ở Hà Nội., lang: vi }
+        - { id: y4d, text: Tôi sinh năm 2008 ở Hà Nội., lang: vi }
+    answer:
+      correct_option_id: y1a
+    explanation:
+      vi: "neunzehnhundert = 19 trăm; achtundneunzig = tám và chín mươi = 98 (đơn vị đọc trước chục). Vậy là 1998. 1989 sẽ là neunzehnhundertneunundachtzig."
+    display_answer: Tôi sinh năm 1998 ở Hà Nội.
+
+  - key: de:exercise:a2u01l4-mcq-2010
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u03-g-zahlen-gross
+    prompt:
+      stem: "Năm 2010 đọc thế nào?"
+      stem_lang: vi
+      options:
+        - { id: z1a, text: zweitausendzehn, lang: de }
+        - { id: z2b, text: zwanzig zehn, lang: de }
+        - { id: z3c, text: zweihundertzehn, lang: de }
+        - { id: z4d, text: zweitausendzwanzig, lang: de }
+    answer:
+      correct_option_id: z1a
+    explanation:
+      vi: "Từ năm 2000 trở đi, năm đọc như số thường: zweitausend + zehn. Kiểu \"zwanzig zehn\" (như tiếng Anh twenty ten) không dùng; zweihundertzehn là 210, zweitausendzwanzig là 2020."
+    display_answer: zweitausendzehn
+
+  - key: de:exercise:a2u01l4-listen-seit
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u01-g-seit-praesens
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich wohne seit drei Jahren in Köln und arbeite als Pfleger.
+      options:
+        - { id: s1a, text: Tôi sống ở Köln được ba năm rồi và làm điều dưỡng., lang: vi }
+        - { id: s2b, text: Cách đây ba năm tôi sống ở Köln và làm điều dưỡng., lang: vi }
+        - { id: s3c, text: Ba năm nữa tôi sẽ sống ở Köln và làm điều dưỡng., lang: vi }
+        - { id: s4d, text: Tôi sống ở Köln được ba năm rồi và làm đầu bếp., lang: vi }
+    answer:
+      correct_option_id: s1a
+    explanation:
+      vi: "seit drei Jahren + thì hiện tại (wohne) = đã ba năm nay và vẫn đang sống ở đó. \"Cách đây\" là vor, \"ba năm nữa\" là in drei Jahren. der Pfleger = điều dưỡng, không phải đầu bếp (der Koch)."
+    display_answer: Tôi sống ở Köln được ba năm rồi và làm điều dưỡng.
+
+  - key: de:exercise:a2u01l4-listen-interview
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u01-g-vor-nach-dativ
+    prompt:
+      audio_asset_id: null
+      fallback_text: Nach dem Abitur habe ich eine Ausbildung zur Köchin gemacht. Seit zwei Jahren arbeite ich in einem Restaurant in Hamburg.
+      options:
+        - { id: i1a, text: "Sau khi đỗ tú tài, chị ấy học nghề đầu bếp; hai năm nay chị làm ở một nhà hàng ở Hamburg.", lang: vi }
+        - { id: i2b, text: "Trước khi thi tú tài, chị ấy học nghề đầu bếp; hai năm nay chị làm ở một nhà hàng ở Hamburg.", lang: vi }
+        - { id: i3c, text: "Sau khi đỗ tú tài, chị ấy học đại học; hai năm nay chị làm ở một nhà hàng ở Hamburg.", lang: vi }
+        - { id: i4d, text: "Sau khi đỗ tú tài, chị ấy học nghề đầu bếp; cách đây hai năm chị làm ở một nhà hàng ở Hamburg.", lang: vi }
+    answer:
+      correct_option_id: i1a
+    explanation:
+      vi: "Nach dem Abitur = sau tú tài (vor = trước). eine Ausbildung zur Köchin = học nghề đầu bếp, không phải học đại học (studieren). Seit zwei Jahren arbeite ich = làm được hai năm nay và vẫn đang làm."
+    display_answer: Sau khi đỗ tú tài, chị ấy học nghề đầu bếp; hai năm nay chị làm ở một nhà hàng ở Hamburg.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u01l4-fill-seit
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-seit-praesens
+    prompt:
+      template: "Ich {{b1}} (wohnen) seit drei {{b2}} (das Jahr) in Berlin. Ich {{b3}} (lernen) seit einem Jahr Deutsch."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [wohne]
+        b2: [Jahren]
+        b3: [lerne]
+    known_wrong:
+      - answer: wohnte
+        feedback_vi: Vẫn còn sống ở đó → thì hiện tại với seit – ich wohne.
+        error_tag: tense
+      - answer: gewohnt
+        feedback_vi: Không dùng Perfekt cho việc còn tiếp diễn – ich wohne seit …
+        error_tag: tense
+      - answer: Jahre
+        feedback_vi: seit + Dativ; Dativ số nhiều thêm -n – seit drei Jahren.
+        error_tag: plural_form
+      - answer: gelernt
+        feedback_vi: Vẫn đang học → thì hiện tại – ich lerne seit einem Jahr Deutsch.
+        error_tag: tense
+    explanation:
+      vi: "Việc bắt đầu trong quá khứ và vẫn tiếp diễn → thì hiện tại: ich wohne, ich lerne. seit đi với Dativ: drei Jahren (số nhiều + -n), einem Jahr."
+    display_answer: "Ich wohne seit drei Jahren in Berlin. Ich lerne seit einem Jahr Deutsch."
+
+  - key: de:exercise:a2u01l4-fill-lebenslauf
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-partizip-praefix-ieren
+    prompt:
+      template: "2015 {{b1}} ich das Abitur gemacht. Dann habe ich in Leipzig Informatik {{b2}} (studieren). Einmal {{b3}} ich in einer Prüfung durchgefallen, aber dann habe ich alle Prüfungen {{b4}} (bestehen)."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 4 }
+        - { id: b4, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [habe]
+        b2: [studiert]
+        b3: [bin]
+        b4: [bestanden]
+    known_wrong:
+      - answer: gestudiert
+        feedback_vi: Động từ -ieren không có ge- – studiert.
+        error_tag: participle_form
+      - answer: gebestanden
+        feedback_vi: be- là tiền tố không tách – bestanden, không thêm ge-.
+        error_tag: participle_form
+      - answer: bestehen
+        feedback_vi: Cuối câu Perfekt cần Partizip II – bestanden.
+        error_tag: participle_form
+      - answer: hat
+        feedback_vi: Chủ ngữ ich → habe (hat là của er/sie/es).
+        error_tag: verb_form
+    explanation:
+      vi: "das Abitur machen → habe … gemacht. studieren → studiert (-ieren, không ge-). durchfallen đi với sein → ich bin durchgefallen. bestehen → bestanden (be-, không ge-)."
+    display_answer: "2015 habe ich das Abitur gemacht. Dann habe ich in Leipzig Informatik studiert. Einmal bin ich in einer Prüfung durchgefallen, aber dann habe ich alle Prüfungen bestanden."
+
+  - key: de:exercise:a2u01l4-tr-geboren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-geboren
+    prompt:
+      source_text: Tôi sinh năm 1998.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich bin 1998 geboren.
+        - Ich bin im Jahr 1998 geboren.
+        - Ich bin neunzehnhundertachtundneunzig geboren.
+        - Ich bin im Jahr neunzehnhundertachtundneunzig geboren.
+        - Ich wurde 1998 geboren.
+    known_wrong:
+      - answer: Ich bin in 1998 geboren.
+        feedback_vi: Năm đứng một mình hoặc sau im Jahr – không có in.
+        error_tag: preposition
+      - answer: Ich habe 1998 geboren.
+        feedback_vi: Nói năm sinh dùng sein – Ich bin 1998 geboren.
+        error_tag: aux_verb
+      - answer: Ich bin im 1998 geboren.
+        feedback_vi: im chỉ đi với chữ Jahr – im Jahr 1998, hoặc chỉ 1998.
+        error_tag: preposition
+    explanation:
+      vi: "Ich bin … geboren (với sein). Năm đứng một mình hoặc sau im Jahr; 1998 đọc là neunzehnhundertachtundneunzig."
+    display_answer: Ich bin 1998 geboren.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u01l4-wb-seit-einem-jahr
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-seit-praesens
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi học tiếng Đức được một năm rồi.\""
+      tokens:
+        - { id: x-jahr, text: Jahr }
+        - { id: x-gelernt, text: gelernt }
+        - { id: x-seit, text: seit }
+        - { id: x-deutsch, text: Deutsch }
+        - { id: x-ich, text: Ich }
+        - { id: x-einem, text: einem }
+        - { id: x-lerne, text: lerne }
+    answer:
+      orders:
+        - [x-ich, x-lerne, x-seit, x-einem, x-jahr, x-deutsch]
+        - [x-ich, x-lerne, x-deutsch, x-seit, x-einem, x-jahr]
+    explanation:
+      vi: "Việc vẫn đang tiếp diễn → thì hiện tại lerne, không dùng gelernt. seit einem Jahr (Dativ) có thể đứng trước hoặc sau Deutsch."
+    display_answer: Ich lerne seit einem Jahr Deutsch.
+
+  - key: de:exercise:a2u01l4-tr-berlin
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-seit-praesens
+    prompt:
+      source_text: Tôi sống ở Berlin được ba năm rồi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich wohne seit drei Jahren in Berlin.
+        - Seit drei Jahren wohne ich in Berlin.
+        - Ich wohne schon seit drei Jahren in Berlin.
+        - Ich wohne schon drei Jahre in Berlin.
+        - Ich lebe seit drei Jahren in Berlin.
+        - Seit drei Jahren lebe ich in Berlin.
+        - Ich lebe schon seit drei Jahren in Berlin.
+        - Ich wohne seit drei Jahren hier in Berlin.
+    known_wrong:
+      - answer: Ich habe seit drei Jahren in Berlin gewohnt.
+        feedback_vi: Bạn vẫn còn sống ở Berlin → dùng thì hiện tại với seit – Ich wohne seit drei Jahren in Berlin.
+        error_tag: tense
+      - answer: Ich wohne seit drei Jahre in Berlin.
+        feedback_vi: seit + Dativ; Dativ số nhiều thêm -n – seit drei Jahren.
+        error_tag: plural_form
+      - answer: Ich wohne vor drei Jahren in Berlin.
+        feedback_vi: vor = cách đây; "được ba năm rồi" là seit.
+        error_tag: preposition
+      - answer: Seit drei Jahren ich wohne in Berlin.
+        feedback_vi: Seit drei Jahren ở vị trí 1 thì wohne phải ở vị trí 2.
+        error_tag: verb_position
+    explanation:
+      vi: "\"đã … được ba năm (và vẫn đang)\" = seit drei Jahren + thì hiện tại. seit đi với Dativ nên Jahre → Jahren."
+    display_answer: Ich wohne seit drei Jahren in Berlin.
+
+  - key: de:exercise:a2u01l4-mcq-geheiratet
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-heiraten
+    prompt:
+      stem: "Trong buổi phỏng vấn, bạn kể: \"Tôi kết hôn năm 2019.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h1a, text: 2019 habe ich geheiratet., lang: de }
+        - { id: h2b, text: In 2019 habe ich geheiratet., lang: de }
+        - { id: h3c, text: 2019 bin ich geheiratet., lang: de }
+        - { id: h4d, text: 2019 ich habe geheiratet., lang: de }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: "Năm đứng một mình (không in) và chiếm vị trí 1, nên habe ở vị trí 2. heiraten đi với haben: habe … geheiratet."
+    display_answer: 2019 habe ich geheiratet.

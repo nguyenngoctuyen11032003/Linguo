@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u01-ich-musste-arbeiten
+order_index: 2
+level: a2
+title:
+  vi: Tôi đã phải làm việc – Präteritum của động từ khiếm khuyết (Ich musste arbeiten.)
+objectives:
+  - vi: Kể việc mình đã phải, đã muốn, đã không thể làm bằng musste, wollte, konnte, durfte, sollte, mochte.
+  - vi: Sắp xếp câu chuyện theo trình tự với zuerst, dann, danach, später, zum Schluss và giữ động từ ở vị trí 2.
+  - vi: Kể một sự cố trên đường (Panne, Stau, Unfall).
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u01-am-wochenende]
+items:
+  - item: de:item:a2u01-g-praeteritum-modal
+  - item: de:item:a2u01-g-erzaehl-adverbien
+  - item: de:item:a2u01-zuerst
+  - item: de:item:a2u01-dann
+  - item: de:item:a2u01-danach
+  - item: de:item:a2u01-spaeter
+  - item: de:item:a2u01-zum-schluss
+  - item: de:item:a2u01-ploetzlich
+  - item: de:item:a2u01-endlich
+  - item: de:item:a2u01-unfall
+  - item: de:item:a2u01-panne
+  - item: de:item:a2u01-stau
+  - item: de:item:a2u01-zum-glueck
+  - item: de:item:a2u01-pech-haben
+  - item: de:item:a2u01-sofort
+  - item: de:item:a2u01-reifen
+  - item: de:item:a2u01-autobahn
+  - item: de:item:a2u01-leer
+  - item: de:item:a1u01-g-v2
+    role: reuse
+  - item: de:item:a1u03-g-moegen
+    role: reuse
+  - item: de:item:a1u04-g-modalverben
+    role: reuse
+  - item: de:item:a1u06-g-praeteritum-sein-haben
+    role: reuse
+  - item: de:item:a2u01-passieren
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được một ngày gặp sự cố theo đúng trình tự, ví dụ: \"Zuerst hatten wir eine Panne. Dann mussten wir lange warten. Zum Schluss konnten wir endlich nach Hause fahren.\""
+  - type: explain
+    text:
+      vi: "Khi kể việc đã phải, đã muốn hay đã có thể làm, người Đức thường dùng Präteritum của động từ khiếm khuyết, kể cả khi nói. Cách tạo: gốc + -te, và bỏ umlaut nếu có: können → konnte, müssen → musste, dürfen → durfte, wollen → wollte, sollen → sollte, mögen → mochte."
+  - type: explain
+    text:
+      vi: "ich và er/sie/es giống nhau, không có đuôi riêng: ich musste, er musste. Các ngôi khác thêm đuôi: du musstest, wir mussten, ihr musstet, sie/Sie mussten. Động từ chính vẫn ở nguyên thể, cuối câu: Ich musste gestern lange arbeiten."
+  - type: explain
+    text:
+      vi: "Cẩn thận với umlaut: musste (đã phải) khác müsste (lẽ ra phải), konnte (đã có thể) khác könnte (có lẽ có thể). möchten không có dạng quá khứ riêng – muốn kể \"đã muốn\" thì dùng wollte."
+  - type: explain
+    text:
+      vi: "Khi kể theo trình tự, zuerst, dann, danach, später, zum Schluss thường đứng đầu câu và chiếm vị trí 1. Vì vậy động từ chia đứng ngay sau, chủ ngữ lùi ra sau: Danach sind wir nach Hause gefahren. Tiếng Việt giữ \"chúng tôi\" ngay sau \"sau đó\", tiếng Đức thì không."
+  - type: explain
+    text:
+      vi: "plötzlich (bỗng nhiên) mở đầu sự cố, zum Glück (may mà) và leider (tiếc là) cho biết cảm xúc. zum Schluss chỉ bước cuối của chuỗi việc, còn endlich là \"cuối cùng thì\" sau khi chờ lâu."
+  - type: deep_explain
+    text:
+      vi: "Động từ khiếm khuyết cũng có Perfekt, nhưng hình thức khá nặng: Ich habe gestern arbeiten müssen (hai nguyên thể ở cuối câu). Vì vậy ngay cả trong văn nói, người Đức thường chọn Ich musste gestern arbeiten. Hãy nhớ bộ ba dạng quá khứ dùng nhiều nhất khi nói: war, hatte và musste/konnte/wollte; các động từ còn lại bạn kể bằng Perfekt. und, aber, oder đứng ở vị trí 0, không tính: Zuerst haben wir gegessen, und dann sind wir gegangen – sau und, dann là vị trí 1 nên sind đứng ngay sau."
+  - type: example
+    target: Am Montag hatte ich eine Panne. Ich konnte nicht zur Arbeit fahren.
+    target_lang: de
+    translation:
+      vi: Thứ Hai xe tôi bị hỏng. Tôi không thể đi làm được.
+    note:
+      vi: hatte (war/hatte đã học ở A1) và konnte đều là Präteritum; fahren là nguyên thể, đứng cuối câu.
+  - type: example
+    target: Zuerst musste ich den Reifen wechseln, dann war auf der Autobahn Stau.
+    target_lang: de
+    translation:
+      vi: Đầu tiên tôi phải thay lốp, rồi trên đường cao tốc lại bị tắc.
+    note:
+      vi: Zuerst và dann đều ở vị trí 1, động từ chia (musste, war) đứng ngay sau.
+  - type: example
+    target: Wir wollten ins Kino gehen, aber wir hatten keine Zeit.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đã định đi xem phim, nhưng không có thời gian.
+    note:
+      vi: "wollte(n) dùng cho \"đã muốn, đã định\"; möchten không có dạng quá khứ riêng."
+  - type: example
+    target: Plötzlich war mein Akku leer. Zum Glück durfte ich das Telefon im Café benutzen.
+    target_lang: de
+    translation:
+      vi: Bỗng nhiên điện thoại tôi hết pin. May mà tôi được dùng điện thoại trong quán cà phê.
+    note:
+      vi: durfte = đã được phép. benutzen (dùng) không có ge- ở Perfekt (benutzt) – giống bài 1.
+  - type: example
+    target: Zwei Stunden später sind wir endlich angekommen. Zum Schluss wollte niemand mehr fahren.
+    target_lang: de
+    translation:
+      vi: Hai tiếng sau cuối cùng chúng tôi cũng đến nơi. Lúc cuối chẳng ai còn muốn lái xe nữa.
+    note:
+      vi: "Cả cụm Zwei Stunden später là vị trí 1, nên sind đứng ngay sau. wollte niemand = không ai muốn."
+  - type: common_mistake
+    wrong: Ich müsste gestern arbeiten.
+    right: Ich musste gestern arbeiten.
+    target_lang: de
+    note:
+      vi: "Kể việc đã phải làm thì không có umlaut – musste. müsste (có umlaut) nghĩa là \"lẽ ra phải\"."
+  - type: common_mistake
+    wrong: Dann ich bin nach Hause gefahren.
+    right: Dann bin ich nach Hause gefahren.
+    target_lang: de
+    note:
+      vi: dann chiếm vị trí 1, nên động từ bin phải đứng ngay sau, chủ ngữ ich lùi ra sau.
+  - type: common_mistake
+    wrong: Ich möchtete ins Kino gehen.
+    right: Ich wollte ins Kino gehen.
+    target_lang: de
+    note:
+      vi: "möchten không có dạng quá khứ; kể \"đã muốn\" thì dùng wollte."
+  - type: common_mistake
+    wrong: Er musstet lange warten.
+    right: Er musste lange warten.
+    target_lang: de
+    note:
+      vi: Ở Präteritum, er/sie/es giống ich, không có đuôi -t – er musste.
+  - type: summary
+    points:
+      - vi: "Präteritum modal = gốc + -te, bỏ umlaut: konnte, musste, durfte, wollte, sollte, mochte."
+      - vi: "ich = er/sie/es (musste); du musstest, wir/sie/Sie mussten, ihr musstet."
+      - vi: "musste ≠ müsste; konnte ≠ könnte; \"đã muốn\" = wollte."
+      - vi: "zuerst, dann, danach, später, zum Schluss ở vị trí 1 → động từ ở vị trí 2."
+      - vi: "plötzlich, zum Glück, leider, endlich làm câu chuyện sinh động."
+      - vi: "Sự cố: eine Panne haben, im Stau sein, einen Unfall haben."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u01l2-mcq-musste
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u01-g-praeteritum-modal
+    prompt:
+      stem: "Điền dạng đúng: \"Gestern ___ ich lange arbeiten.\" (Hôm qua tôi đã phải làm việc rất lâu.)"
+      stem_lang: vi
+      options:
+        - { id: m3a, text: musste, lang: de }
+        - { id: m6b, text: müsste, lang: de }
+        - { id: m1c, text: muss, lang: de }
+        - { id: m8d, text: mussten, lang: de }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "Việc đã xảy ra hôm qua → Präteritum musste (không umlaut, ich không có đuôi). müsste là Konjunktiv II (lẽ ra phải), muss là hiện tại, mussten là của wir/sie/Sie."
+    display_answer: musste
+
+  - key: de:exercise:a2u01l2-mcq-danach
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u01-g-erzaehl-adverbien
+    prompt:
+      stem: "Câu nào đúng nghĩa \"Sau đó chúng tôi lái xe về nhà.\"?"
+      stem_lang: vi
+      options:
+        - { id: d5e, text: Danach sind wir nach Hause gefahren., lang: de }
+        - { id: d2f, text: Danach wir sind nach Hause gefahren., lang: de }
+        - { id: d9g, text: Danach wir nach Hause gefahren sind., lang: de }
+        - { id: d4h, text: Danach haben wir nach Hause gefahren., lang: de }
+    answer:
+      correct_option_id: d5e
+    explanation:
+      vi: "Danach chiếm vị trí 1, nên sind ở vị trí 2 và wir đứng sau. fahren (di chuyển) đi với sein, không phải haben."
+    display_answer: Danach sind wir nach Hause gefahren.
+
+  - key: de:exercise:a2u01l2-listen-panne
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u06-g-praeteritum-sein-haben
+    prompt:
+      audio_asset_id: null
+      fallback_text: Am Montag hatte ich eine Panne. Ich konnte nicht zur Arbeit fahren.
+      options:
+        - { id: n1a, text: Thứ Hai xe tôi bị hỏng. Tôi không thể đi làm được., lang: vi }
+        - { id: n2b, text: Thứ Hai xe tôi bị hỏng. Tôi không muốn đi làm., lang: vi }
+        - { id: n3c, text: Thứ Hai tôi bị tai nạn. Tôi không thể đi làm được., lang: vi }
+        - { id: n4d, text: Thứ Hai xe tôi sẽ bị hỏng. Tôi sẽ không đi làm được., lang: vi }
+    answer:
+      correct_option_id: n1a
+    explanation:
+      vi: "eine Panne = xe hỏng giữa đường (tai nạn là der Unfall). hatte và konnte là quá khứ; konnte nicht = đã không thể (không muốn là wollte nicht)."
+    display_answer: Thứ Hai xe tôi bị hỏng. Tôi không thể đi làm được.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u01l2-fill-kino
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-praeteritum-modal
+    prompt:
+      template: "Am Samstag {{b1}} (wollen) wir ins Kino gehen, aber ich {{b2}} (müssen) arbeiten. Mein Bruder {{b3}} (können) auch nicht kommen."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [wollten]
+        b2: [musste]
+        b3: [konnte]
+    known_wrong:
+      - answer: wollen
+        feedback_vi: Câu kể chuyện đã qua → Präteritum – wir wollten.
+        error_tag: tense_present
+      - answer: müsste
+        feedback_vi: Không có umlaut khi kể quá khứ – ich musste (müsste là Konjunktiv II).
+        error_tag: konjunktiv_form
+      - answer: mussten
+        feedback_vi: Chủ ngữ ich → musste, không có đuôi -n.
+        error_tag: verb_form
+      - answer: könnte
+        feedback_vi: Không có umlaut khi kể quá khứ – er konnte (könnte là Konjunktiv II).
+        error_tag: konjunktiv_form
+      - answer: konnten
+        feedback_vi: Chủ ngữ mein Bruder (er) → konnte, không có đuôi -n.
+        error_tag: verb_form
+    explanation:
+      vi: "wollen → wir wollten; müssen → ich musste; können → er konnte. Präteritum modal = gốc + -te, bỏ umlaut; ich và er không có đuôi riêng, wir thêm -n."
+    display_answer: "Am Samstag wollten wir ins Kino gehen, aber ich musste arbeiten. Mein Bruder konnte auch nicht kommen."
+
+  - key: de:exercise:a2u01l2-fill-durfte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u03-g-moegen
+    prompt:
+      template: "Gestern {{b1}} (dürfen) ich nicht fernsehen. Ich {{b2}} (sollen) meine Hausaufgaben machen. Den Film {{b3}} (mögen) ich sowieso nicht."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [durfte]
+        b2: [sollte]
+        b3: [mochte]
+    known_wrong:
+      - answer: dürfte
+        feedback_vi: Không có umlaut khi kể quá khứ – ich durfte.
+        error_tag: konjunktiv_form
+      - answer: darf
+        feedback_vi: gestern → quá khứ – ich durfte.
+        error_tag: tense_present
+      - answer: soll
+        feedback_vi: Việc đã qua → Präteritum – ich sollte.
+        error_tag: tense_present
+      - answer: möchte
+        feedback_vi: möchte là hiện tại (muốn). Quá khứ của mögen là mochte – bỏ umlaut, g thành ch.
+        error_tag: verb_form
+      - answer: mag
+        feedback_vi: Việc đã qua → Präteritum – ich mochte.
+        error_tag: tense_present
+    explanation:
+      vi: "dürfen → durfte, sollen → sollte, mögen → mochte (bỏ umlaut, g đổi thành ch). Chủ ngữ ich nên không có đuôi. sowieso = dù sao thì."
+    display_answer: "Gestern durfte ich nicht fernsehen. Ich sollte meine Hausaufgaben machen. Den Film mochte ich sowieso nicht."
+
+  - key: de:exercise:a2u01l2-tr-arbeiten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-praeteritum-modal
+    prompt:
+      source_text: Hôm qua tôi đã phải làm việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich musste gestern arbeiten.
+        - Gestern musste ich arbeiten.
+        - Ich habe gestern arbeiten müssen.
+        - Gestern habe ich arbeiten müssen.
+    known_wrong:
+      - answer: Ich müsste gestern arbeiten.
+        feedback_vi: Kể việc đã phải làm → musste (không umlaut). müsste là Konjunktiv II.
+        error_tag: konjunktiv_form
+      - answer: Gestern ich musste arbeiten.
+        feedback_vi: Gestern ở vị trí 1 thì musste phải ở vị trí 2 – Gestern musste ich arbeiten.
+        error_tag: verb_position
+      - answer: Ich muss gestern arbeiten.
+        feedback_vi: gestern → quá khứ – Ich musste gestern arbeiten.
+        error_tag: tense_present
+      - answer: Ich musste gestern gearbeitet.
+        feedback_vi: Sau động từ khiếm khuyết, động từ chính ở nguyên thể – arbeiten.
+        error_tag: verb_form
+    explanation:
+      vi: "müssen → musste (Präteritum, ich không có đuôi); arbeiten là nguyên thể, đứng cuối câu. Dạng Perfekt Ich habe gestern arbeiten müssen cũng đúng nhưng ít dùng hơn."
+    display_answer: Ich musste gestern arbeiten.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u01l2-wb-zum-schluss
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-zum-schluss
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cuối cùng thì chúng tôi cũng về nhà được.\""
+      tokens:
+        - { id: x-endlich, text: endlich }
+        - { id: x-fahren, text: fahren }
+        - { id: x-wir, text: wir }
+        - { id: x-schluss, text: Zum Schluss }
+        - { id: x-hause, text: Hause }
+        - { id: x-konnten, text: konnten }
+        - { id: x-gefahren, text: gefahren }
+        - { id: x-nach, text: nach }
+    answer:
+      orders:
+        - [x-schluss, x-konnten, x-wir, x-endlich, x-nach, x-hause, x-fahren]
+    explanation:
+      vi: "Zum Schluss ở vị trí 1, nên konnten ở vị trí 2, wir đứng sau. Sau động từ khiếm khuyết, động từ chính ở nguyên thể cuối câu (fahren), không dùng Partizip gefahren."
+    display_answer: Zum Schluss konnten wir endlich nach Hause fahren.
+
+  - key: de:exercise:a2u01l2-tr-bus-endlich
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u01-g-v2
+    prompt:
+      source_text: Cuối cùng xe buýt cũng đến!
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Endlich ist der Bus gekommen!
+        - Der Bus ist endlich gekommen!
+        - Endlich ist der Bus da!
+        - Der Bus ist endlich da!
+        - Endlich kommt der Bus!
+        - Endlich kam der Bus!
+    known_wrong:
+      - answer: Endlich der Bus ist gekommen!
+        feedback_vi: Endlich ở vị trí 1 thì ist phải ở vị trí 2 – Endlich ist der Bus gekommen.
+        error_tag: verb_position
+      - answer: Endlich hat der Bus gekommen!
+        feedback_vi: kommen (di chuyển) đi với sein – ist gekommen.
+        error_tag: aux_verb
+      - answer: Zum Schluss ist der Bus gekommen!
+        feedback_vi: Câu này có ý nhẹ nhõm sau khi chờ lâu – dùng endlich; zum Schluss chỉ là bước cuối của một chuỗi việc.
+        error_tag: word_choice
+    explanation:
+      vi: "endlich = cuối cùng thì (sau khi chờ). Khi endlich đứng đầu, động từ ist ở vị trí 2 và chủ ngữ der Bus đứng sau. kommen đi với sein."
+    display_answer: Endlich ist der Bus gekommen!
+
+  - key: de:exercise:a2u01l2-mcq-konnte
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u04-g-modalverben
+    prompt:
+      stem: "Đồng nghiệp hỏi vì sao hôm qua bạn vắng mặt. Bạn muốn nói: \"Hôm qua tôi đã không đến được – xe tôi bị hỏng.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: k1p, text: "Ich konnte gestern nicht kommen – ich hatte eine Panne.", lang: de }
+        - { id: k2p, text: "Ich könnte gestern nicht kommen – ich hatte eine Panne.", lang: de }
+        - { id: k3p, text: "Ich kann gestern nicht kommen – ich habe eine Panne.", lang: de }
+        - { id: k4p, text: "Ich konnte gestern nicht gekommen – ich hatte eine Panne.", lang: de }
+    answer:
+      correct_option_id: k1p
+    explanation:
+      vi: "können → konnte (quá khứ, không umlaut); könnte là Konjunktiv II. kann/habe là hiện tại, không hợp với gestern. Sau động từ khiếm khuyết là nguyên thể kommen, không phải gekommen."
+    display_answer: "Ich konnte gestern nicht kommen – ich hatte eine Panne."

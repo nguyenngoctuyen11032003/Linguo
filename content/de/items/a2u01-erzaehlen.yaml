@@ -1,0 +1,1519 @@
+# Học liệu unit A2U01 "Kể chuyện" (Erzählen), chương trình de:program:a2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (A2U01L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Cuối tuần của bạn thế nào? – Partizip II không ge- =================
+  - key: de:item:a2u01-g-partizip-praefix-ieren
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Partizip II: besucht, vergessen, passiert, telefoniert"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ có tiền tố không tách (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) và động từ tận cùng -ieren không thêm ge- ở Partizip II: besuchen → besucht, vergessen → vergessen, telefonieren → telefoniert. Phần đuôi vẫn như cũ: -t cho động từ thường, -en cho động từ mạnh. Động từ tách thì vẫn có ge- ở giữa: einkaufen → eingekauft."
+      examples:
+        - target: Am Samstag haben wir ein Museum besichtigt.
+          translation:
+            vi: Thứ Bảy chúng tôi đã tham quan một bảo tàng.
+        - target: Ich habe gestern lange mit meiner Mutter telefoniert.
+          translation:
+            vi: Hôm qua tôi đã nói chuyện điện thoại rất lâu với mẹ.
+        - target: Was ist passiert?
+          translation:
+            vi: Đã xảy ra chuyện gì vậy?
+      confusion:
+        vi: "Mẹo nhớ: nếu âm tiết đầu không được nhấn (be-SU-chen, ver-GES-sen, te-le-fo-NIE-ren) thì không có ge-. Tiền tố tách được nhấn (EIN-kaufen), nên ge- chen vào giữa: eingekauft."
+
+  - key: de:item:a2u01-erleben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: erleben
+      ipa: /ɛɐ̯ˈleːbn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: trải qua, được chứng kiến (một sự việc)
+      examples:
+        - target: Am Wochenende habe ich viel erlebt.
+          translation:
+            vi: Cuối tuần tôi đã trải qua nhiều chuyện.
+        - target: Was hast du in Berlin erlebt?
+          translation:
+            vi: Ở Berlin bạn đã có những trải nghiệm gì?
+      pronunciation_note:
+        vi: "er- không nhấn, nhấn vào âm tiết thứ hai: er-LE-ben."
+      confusion:
+        vi: "Partizip II: erlebt (không có ge-). Đừng nhầm với leben (sống): Ich lebe in Hanoi."
+
+  - key: de:item:a2u01-besichtigen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: besichtigen
+      pos: động từ
+    back:
+      meaning:
+        vi: tham quan, đi xem (công trình, thành phố, căn hộ)
+      examples:
+        - target: In Wien haben wir ein Museum besichtigt.
+          translation:
+            vi: Ở Vienna chúng tôi đã tham quan một bảo tàng.
+        - target: Möchten Sie die Wohnung besichtigen?
+          translation:
+            vi: Anh/chị có muốn xem căn hộ không?
+      pronunciation_note:
+        vi: "be- không nhấn: be-SICH-ti-gen."
+      confusion:
+        vi: "besichtigen dùng cho nơi chốn, công trình; đi thăm người thì dùng besuchen: Ich besuche meine Oma. Partizip II: besichtigt."
+
+  - key: de:item:a2u01-verpassen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: verpassen
+      pos: động từ
+    back:
+      meaning:
+        vi: lỡ, nhỡ (tàu, xe, cơ hội)
+      examples:
+        - target: Ich habe den Zug verpasst.
+          translation:
+            vi: Tôi đã lỡ chuyến tàu.
+        - target: Der Bus ist weg – ich habe ihn verpasst.
+          translation:
+            vi: Xe buýt đi mất rồi – tôi lỡ chuyến rồi.
+      pronunciation_note:
+        vi: "ver- không nhấn: ver-PAS-sen; a ngắn vì đứng trước ss."
+      confusion:
+        vi: "verpassen + Akkusativ: den Zug, den Bus verpassen. Partizip II: verpasst (không phải geverpasst)."
+
+  - key: de:item:a2u01-vergessen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: vergessen, vergisst, vergaß, hat vergessen
+      pos: động từ
+    back:
+      meaning:
+        vi: quên
+      examples:
+        - target: Ich habe mein Handy zu Hause vergessen.
+          translation:
+            vi: Tôi để quên điện thoại ở nhà.
+        - target: "Vergiss nicht: Morgen ist der Test!"
+          translation:
+            vi: "Đừng quên: ngày mai có bài kiểm tra đấy!"
+      pronunciation_note:
+        vi: "ver- không nhấn: ver-GES-sen."
+      confusion:
+        vi: "Partizip II giống hệt nguyên thể: hat vergessen (không có ge-, đuôi -en). Ở du và er/sie/es, e đổi thành i: du vergisst, er vergisst."
+
+  - key: de:item:a2u01-passieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: passieren (ist passiert)
+      pos: động từ
+    back:
+      meaning:
+        vi: xảy ra
+      examples:
+        - target: Was ist passiert?
+          translation:
+            vi: Đã có chuyện gì vậy?
+        - target: Zum Glück ist nichts passiert.
+          translation:
+            vi: May mà không có chuyện gì xảy ra.
+      pronunciation_note:
+        vi: "Động từ -ieren nhấn vào -IE-: pas-SIE-ren."
+      confusion:
+        vi: "Perfekt với sein: Was ist passiert? (không nói hat passiert). Chủ ngữ là sự việc; người gặp chuyện ở Dativ: Mir ist etwas passiert."
+
+  - key: de:item:a2u01-erzaehlen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: erzählen
+      pos: động từ
+    back:
+      meaning:
+        vi: kể (chuyện)
+      examples:
+        - target: Erzähl mal! Wie war dein Wochenende?
+          translation:
+            vi: Kể nghe đi! Cuối tuần của bạn thế nào?
+        - target: Meine Oma hat uns eine Geschichte erzählt.
+          translation:
+            vi: Bà đã kể cho chúng tôi một câu chuyện.
+      pronunciation_note:
+        vi: "er- không nhấn: er-ZÄH-len; z đọc là \"ts\", äh là e dài, mở."
+      confusion:
+        vi: "Partizip II: erzählt (không có ge-). erzählen là kể một câu chuyện, một sự việc; sagen là nói một câu, một ý."
+
+  - key: de:item:a2u01-telefonieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: telefonieren
+      pos: động từ
+    back:
+      meaning:
+        vi: gọi điện, nói chuyện điện thoại
+      examples:
+        - target: Ich telefoniere oft mit meinen Eltern.
+          translation:
+            vi: Tôi hay gọi điện nói chuyện với bố mẹ.
+        - target: Gestern habe ich eine Stunde mit Anna telefoniert.
+          translation:
+            vi: Hôm qua tôi đã nói chuyện điện thoại với Anna một tiếng.
+      pronunciation_note:
+        vi: "Nhấn vào -NIE-: te-le-fo-NIE-ren."
+      confusion:
+        vi: "telefonieren mit + Dativ (nói chuyện điện thoại với ai); anrufen + Akkusativ (gọi cho ai): Ich rufe dich an. Partizip II: telefoniert."
+
+  - key: de:item:a2u01-probieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: probieren
+      pos: động từ
+    back:
+      meaning:
+        vi: thử, nếm thử
+      examples:
+        - target: Hast du schon mal Döner probiert?
+          translation:
+            vi: Bạn đã bao giờ ăn thử Döner chưa?
+        - target: Probieren Sie den Kuchen!
+          translation:
+            vi: Anh/chị nếm thử bánh đi!
+      pronunciation_note:
+        vi: "Nhấn vào -BIE-: pro-BIE-ren."
+      confusion:
+        vi: "Partizip II: probiert (không có ge-). Thử quần áo thường nói anprobieren: Ich probiere die Jacke an."
+
+  - key: de:item:a2u01-fotografieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: fotografieren
+      pos: động từ
+    back:
+      meaning:
+        vi: chụp ảnh
+      examples:
+        - target: In Hamburg haben wir viel fotografiert.
+          translation:
+            vi: Ở Hamburg chúng tôi đã chụp rất nhiều ảnh.
+        - target: Darf man hier fotografieren?
+          translation:
+            vi: Ở đây có được chụp ảnh không?
+      pronunciation_note:
+        vi: "Nhấn vào -FIE-: fo-to-gra-FIE-ren."
+      confusion:
+        vi: "Partizip II: fotografiert (không có ge-). Cách nói khác: Fotos machen – Wir haben viele Fotos gemacht."
+
+  - key: de:item:a2u01-erlebnis
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Erlebnis, -se
+      ipa: /ɛɐ̯ˈleːpnɪs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trải nghiệm, sự việc đáng nhớ
+      examples:
+        - target: Das Konzert war wirklich ein Erlebnis.
+          translation:
+            vi: Buổi hòa nhạc thật sự là một trải nghiệm đáng nhớ.
+        - target: Erzähl mir von deinen Erlebnissen!
+          translation:
+            vi: Kể cho mình nghe về những trải nghiệm của bạn đi!
+      pronunciation_note:
+        vi: "Nhấn vào -LEB-; b trước n đọc gần như \"p\"."
+      confusion:
+        vi: "das Erlebnis là một sự việc bạn đã trải qua; die Erfahrung là kinh nghiệm rút ra (bài 4). Số nhiều: die Erlebnisse."
+
+  # Zusatzwortschatz bài 1 (trường: trải nghiệm)
+  - key: de:item:a2u01-verbringen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: verbringen, verbringt, verbrachte, hat verbracht
+      pos: động từ
+    back:
+      meaning:
+        vi: trải qua, dành (thời gian ở đâu, làm gì)
+      examples:
+        - target: Wo hast du das Wochenende verbracht?
+          translation:
+            vi: Bạn đã trải qua cuối tuần ở đâu?
+        - target: Wir haben zwei Tage in Prag verbracht.
+          translation:
+            vi: Chúng tôi đã ở Praha hai ngày.
+      confusion:
+        vi: "verbringen đi với thời gian (das Wochenende, zwei Tage); tiêu tiền là Geld ausgeben. Partizip II: verbracht (không có ge-)."
+
+  - key: de:item:a2u01-bekommen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: bekommen, bekommt, bekam, hat bekommen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận được
+      examples:
+        - target: Zum Geburtstag habe ich ein Fahrrad bekommen.
+          translation:
+            vi: Sinh nhật tôi được tặng một chiếc xe đạp.
+        - target: Hast du meine E-Mail bekommen?
+          translation:
+            vi: Bạn đã nhận được e-mail của mình chưa?
+      confusion:
+        vi: "Bẫy: bekommen KHÔNG có nghĩa \"trở thành\" như become trong tiếng Anh (trở thành là werden). Partizip II: bekommen, giống hệt nguyên thể."
+
+  - key: de:item:a2u01-verlieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: verlieren, verliert, verlor, hat verloren
+      pos: động từ
+    back:
+      meaning:
+        vi: làm mất; thua
+      examples:
+        - target: Ich habe meine Tasche verloren.
+          translation:
+            vi: Tôi đã làm mất túi.
+        - target: Leider haben wir das Spiel verloren.
+          translation:
+            vi: Tiếc là chúng tôi đã thua trận đấu.
+      confusion:
+        vi: "Trái nghĩa: verlieren ↔ finden (làm mất ↔ tìm thấy), verlieren ↔ gewinnen (thua ↔ thắng). Partizip II: verloren."
+
+  - key: de:item:a2u01-gewinnen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gewinnen, gewinnt, gewann, hat gewonnen
+      pos: động từ
+    back:
+      meaning:
+        vi: thắng, giành được
+      examples:
+        - target: Wer hat das Spiel gewonnen?
+          translation:
+            vi: Ai đã thắng trận đấu?
+        - target: Mein Onkel hat im Lotto gewonnen.
+          translation:
+            vi: Chú tôi đã trúng xổ số.
+      confusion:
+        vi: "gewinnen đã bắt đầu bằng ge- không nhấn (ge-WIN-nen), nên Partizip II không thêm ge- nữa: gewonnen (không phải gegewonnen)."
+
+  - key: de:item:a2u01-empfehlen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: empfehlen, empfiehlt, empfahl, hat empfohlen
+      pos: động từ
+    back:
+      meaning:
+        vi: gợi ý, giới thiệu (nên dùng, nên xem)
+      examples:
+        - target: Was können Sie mir empfehlen?
+          translation:
+            vi: Anh/chị có thể gợi ý cho tôi món gì?
+        - target: Mein Freund hat mir das Buch empfohlen.
+          translation:
+            vi: Bạn tôi đã giới thiệu cho tôi cuốn sách này.
+      pronunciation_note:
+        vi: "emp- không nhấn: emp-FEH-len; eh là e dài."
+      confusion:
+        vi: "Partizip II: empfohlen (không có ge-, e đổi thành o). Ở du và er/sie/es, e đổi thành ie: du empfiehlst, er empfiehlt."
+
+  - key: de:item:a2u01-geschichte
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Geschichte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu chuyện; lịch sử
+      examples:
+        - target: Erzähl mir eine Geschichte!
+          translation:
+            vi: Kể cho con nghe một câu chuyện đi!
+        - target: Die Geschichte von Berlin ist sehr interessant.
+          translation:
+            vi: Lịch sử của Berlin rất thú vị.
+      pronunciation_note:
+        vi: "Nhấn vào -SCHICH-: ge-SCHICH-te."
+      confusion:
+        vi: "Một từ, hai nghĩa: câu chuyện (eine Geschichte erzählen) và lịch sử (môn học, quá khứ của một nơi)."
+
+  # ================= Bài 2: Tôi đã phải làm việc – Präteritum của động từ khiếm khuyết =================
+  - key: de:item:a2u01-g-praeteritum-modal
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Präteritum der Modalverben: konnte, musste, wollte, durfte, sollte, mochte"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi kể việc đã phải, đã muốn, đã có thể làm, người Đức thường dùng Präteritum của động từ khiếm khuyết, cả khi nói: gốc + -te, và umlaut bị bỏ (können → konnte, müssen → musste, dürfen → durfte, mögen → mochte). ich và er/sie/es giống nhau, không có đuôi riêng: ich musste, er musste. Động từ chính vẫn ở nguyên thể, cuối câu."
+      examples:
+        - target: Gestern musste ich lange arbeiten.
+          translation:
+            vi: Hôm qua tôi đã phải làm việc rất lâu.
+        - target: Ich konnte am Samstag nicht kommen. Ich war krank.
+          translation:
+            vi: Thứ Bảy tôi đã không đến được. Tôi bị ốm.
+        - target: Wir wollten ins Kino gehen, aber wir hatten keine Zeit.
+          translation:
+            vi: Chúng tôi đã định đi xem phim, nhưng không có thời gian.
+      confusion:
+        vi: "musste ≠ müsste, konnte ≠ könnte (có umlaut là Konjunktiv II, nghĩa \"lẽ ra, có lẽ\"). möchten không có dạng quá khứ riêng: dùng wollte. Đuôi: ich/er musste, du musstest, wir/sie/Sie mussten, ihr musstet."
+
+  - key: de:item:a2u01-g-erzaehl-adverbien
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Erzählen: zuerst, dann, danach, später, zum Schluss + Verb auf Position 2"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi kể theo trình tự, zuerst, dann, danach, später, zum Schluss thường đứng đầu câu. Chúng chiếm vị trí 1, nên động từ chia (hoặc haben/sein) đứng ngay sau, chủ ngữ lùi ra sau động từ. Tiếng Việt nói \"Sau đó tôi đi\", tiếng Đức nói Danach bin ich gegangen."
+      examples:
+        - target: Zuerst habe ich gefrühstückt, dann bin ich zur Arbeit gefahren.
+          translation:
+            vi: Trước tiên tôi ăn sáng, rồi tôi đi làm.
+        - target: Danach waren wir müde. Zum Schluss sind wir nach Hause gefahren.
+          translation:
+            vi: Sau đó chúng tôi mệt. Cuối cùng chúng tôi về nhà.
+      confusion:
+        vi: "und, aber, oder không chiếm vị trí nào: …, und dann sind wir gegangen – dann mới là vị trí 1, nên sind đứng ngay sau dann."
+
+  - key: de:item:a2u01-zuerst
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zuerst
+      pos: trạng từ
+    back:
+      meaning:
+        vi: trước tiên, đầu tiên
+      examples:
+        - target: Zuerst haben wir einen Kaffee getrunken.
+          translation:
+            vi: Trước tiên chúng tôi uống một ly cà phê.
+        - target: Was machen wir zuerst?
+          translation:
+            vi: Chúng ta làm gì trước?
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết sau: zu-ERST."
+      confusion:
+        vi: "zuerst là bước đầu trong một chuỗi việc; zum ersten Mal là lần đầu tiên (chưa từng làm trước đó)."
+
+  - key: de:item:a2u01-dann
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: dann
+      pos: trạng từ
+    back:
+      meaning:
+        vi: rồi, sau đó; vậy thì
+      examples:
+        - target: Zuerst kaufen wir ein, dann kochen wir.
+          translation:
+            vi: Trước tiên chúng ta đi chợ, rồi nấu ăn.
+        - target: Dann bis morgen!
+          translation:
+            vi: Vậy hẹn mai gặp nhé!
+      confusion:
+        vi: "dann ở đầu câu thì động từ đứng ngay sau: Dann bin ich gegangen (không nói Dann ich bin gegangen)."
+
+  - key: de:item:a2u01-danach
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: danach
+      pos: trạng từ
+    back:
+      meaning:
+        vi: sau đó (sau việc vừa kể)
+      examples:
+        - target: Wir haben gegessen. Danach sind wir spazieren gegangen.
+          translation:
+            vi: Chúng tôi ăn xong. Sau đó chúng tôi đi dạo.
+        - target: Und was hast du danach gemacht?
+          translation:
+            vi: Rồi sau đó bạn làm gì?
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết sau: da-NACH; ch sau a là âm ach-Laut (gần \"kh\")."
+      confusion:
+        vi: "danach đứng một mình, thay cho cả một việc vừa kể; nach + danh từ (nach dem Essen) là cấu trúc của bài 3."
+
+  - key: de:item:a2u01-spaeter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: später
+      pos: trạng từ
+    back:
+      meaning:
+        vi: sau đó, về sau, muộn hơn
+      examples:
+        - target: Zwei Stunden später war der Zug endlich da.
+          translation:
+            vi: Hai tiếng sau, cuối cùng tàu cũng đến.
+        - target: Bis später!
+          translation:
+            vi: Lát nữa gặp lại nhé!
+      confusion:
+        vi: "später là dạng so sánh của spät (muộn): muộn hơn, về sau. Kể chuyện: zwei Stunden später = hai tiếng sau đó."
+
+  - key: de:item:a2u01-zum-schluss
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zum Schluss
+      pos: cụm từ
+    back:
+      meaning:
+        vi: cuối cùng (bước cuối của một chuỗi việc)
+      examples:
+        - target: Zum Schluss haben wir noch ein Foto gemacht.
+          translation:
+            vi: Cuối cùng chúng tôi còn chụp một tấm ảnh.
+        - target: Zum Schluss sind alle nach Hause gegangen.
+          translation:
+            vi: Cuối cùng mọi người đều về nhà.
+      confusion:
+        vi: "zum Schluss là bước cuối trong một chuỗi; endlich là \"cuối cùng thì\" sau khi chờ lâu, có ý nhẹ nhõm: Endlich ist der Bus gekommen!"
+
+  - key: de:item:a2u01-ploetzlich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: plötzlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: bỗng nhiên, đột nhiên
+      examples:
+        - target: Plötzlich war der Akku leer.
+          translation:
+            vi: Bỗng nhiên điện thoại hết pin.
+        - target: Plötzlich ist ein Auto gekommen.
+          translation:
+            vi: Bỗng nhiên có một chiếc ô tô đi tới.
+      pronunciation_note:
+        vi: "ö ngắn (đứng trước tz); -lich có âm ich-Laut ở cuối."
+
+  - key: de:item:a2u01-endlich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: endlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cuối cùng thì, rốt cuộc (sau khi chờ đợi)
+      examples:
+        - target: Endlich ist der Bus gekommen!
+          translation:
+            vi: Cuối cùng xe buýt cũng đến!
+        - target: Endlich Wochenende!
+          translation:
+            vi: Cuối cùng cũng đến cuối tuần!
+      pronunciation_note:
+        vi: "d cuối âm tiết đọc như \"t\": END-lich."
+      confusion:
+        vi: "endlich mang cảm xúc (nhẹ nhõm, mong chờ); khi chỉ liệt kê bước cuối, bạn dùng zum Schluss."
+
+  - key: de:item:a2u01-unfall
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Unfall, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tai nạn
+      examples:
+        - target: Auf der Autobahn ist ein Unfall passiert.
+          translation:
+            vi: Trên đường cao tốc đã xảy ra một vụ tai nạn.
+        - target: Hattest du einen Unfall?
+          translation:
+            vi: Bạn bị tai nạn à?
+      pronunciation_note:
+        vi: "Nhấn vào UN-: UN-fall."
+      confusion:
+        vi: "Số nhiều có umlaut: die Unfälle. Nói einen Unfall haben (bị tai nạn) – Akkusativ einen."
+
+  - key: de:item:a2u01-panne
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Panne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cố hỏng xe (giữa đường)
+      examples:
+        - target: Wir hatten auf der Autobahn eine Panne.
+          translation:
+            vi: Xe chúng tôi bị hỏng trên đường cao tốc.
+        - target: Das Auto hat schon wieder eine Panne.
+          translation:
+            vi: Xe ô tô lại bị hỏng nữa rồi.
+      confusion:
+        vi: "eine Panne haben dùng chủ yếu cho xe hỏng giữa đường; đồ vật hỏng nói chung thì nói kaputt sein."
+
+  - key: de:item:a2u01-stau
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Stau, -s
+      ipa: /ʃtaʊ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kẹt xe, tắc đường
+      examples:
+        - target: Auf der Autobahn war Stau.
+          translation:
+            vi: Trên đường cao tốc bị tắc đường.
+        - target: Heute gibt es keinen Stau.
+          translation:
+            vi: Hôm nay không bị tắc đường.
+      pronunciation_note:
+        vi: "st đầu từ đọc là \"scht\"; au như \"ao\"."
+
+  # Zusatzwortschatz bài 2 (trường: sự cố)
+  - key: de:item:a2u01-zum-glueck
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zum Glück
+      pos: cụm từ
+    back:
+      meaning:
+        vi: may mà, may thay
+      examples:
+        - target: Zum Glück ist nichts passiert.
+          translation:
+            vi: May mà không có chuyện gì xảy ra.
+        - target: Zum Glück war der Bus pünktlich.
+          translation:
+            vi: May mà xe buýt đến đúng giờ.
+      confusion:
+        vi: "zum Glück đứng đầu câu chiếm vị trí 1, động từ đứng ngay sau. Trái nghĩa: leider (tiếc là)."
+
+  - key: de:item:a2u01-pech-haben
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Pech haben
+      pos: cụm từ
+    back:
+      meaning:
+        vi: gặp xui, không may
+      examples:
+        - target: "Gestern hatte ich Pech: Ich habe den Bus verpasst."
+          translation:
+            vi: "Hôm qua tôi gặp xui: tôi lỡ chuyến xe buýt."
+        - target: So ein Pech!
+          translation:
+            vi: Xui quá!
+      confusion:
+        vi: "Trái nghĩa: Glück haben (gặp may). Quá khứ thường dùng hatte: Ich hatte Pech."
+
+  - key: de:item:a2u01-sofort
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sofort
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ngay lập tức
+      examples:
+        - target: Ich habe sofort meinen Vater angerufen.
+          translation:
+            vi: Tôi đã gọi ngay cho bố.
+        - target: Komm sofort nach Hause!
+          translation:
+            vi: Về nhà ngay!
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết sau: so-FORT."
+
+  - key: de:item:a2u01-reifen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Reifen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: lốp xe
+      examples:
+        - target: Der Reifen ist kaputt.
+          translation:
+            vi: Lốp xe bị hỏng rồi.
+        - target: Ich musste den Reifen wechseln.
+          translation:
+            vi: Tôi đã phải thay lốp.
+      pronunciation_note:
+        vi: "ei đọc như \"ai\": REI-fen."
+      confusion:
+        vi: "Số nhiều không đổi: die Reifen."
+
+  - key: de:item:a2u01-autobahn
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Autobahn, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường cao tốc
+      examples:
+        - target: Wir sind auf der Autobahn nach München gefahren.
+          translation:
+            vi: Chúng tôi đi đường cao tốc tới München.
+        - target: Auf der Autobahn war Stau.
+          translation:
+            vi: Trên đường cao tốc bị tắc đường.
+      confusion:
+        vi: "Từ ghép die Auto + die Bahn → giống của từ cuối: die Autobahn. Trên đường cao tốc: auf der Autobahn (Dativ)."
+
+  - key: de:item:a2u01-leer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: leer
+      pos: tính từ
+    back:
+      meaning:
+        vi: trống, rỗng; hết (pin, xăng)
+      examples:
+        - target: Der Kühlschrank ist leer.
+          translation:
+            vi: Tủ lạnh trống trơn.
+        - target: Mein Akku war leer.
+          translation:
+            vi: Điện thoại của tôi hết pin.
+      pronunciation_note:
+        vi: "ee là e dài."
+      confusion:
+        vi: "Trái nghĩa: voll (đầy). Der Akku ist leer = hết pin."
+
+  # ================= Bài 3: Cách đây một năm – mốc thời gian =================
+  - key: de:item:a2u01-g-vor-nach-dativ
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "vor / nach + Dativ: vor dem Essen, nach der Arbeit, vor zwei Jahren"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "vor (trước) và nach (sau) chỉ thời gian đi với Dativ: vor dem Essen, nach der Arbeit, nach dem Kurs. vor + một khoảng thời gian nghĩa là \"cách đây\": vor einem Jahr, vor zwei Jahren (Dativ số nhiều thêm -n). \"… nữa\" trong tương lai thì dùng in: in zwei Jahren."
+      examples:
+        - target: Nach der Arbeit gehe ich oft joggen.
+          translation:
+            vi: Sau giờ làm tôi hay đi chạy bộ.
+        - target: Vor zwei Jahren war ich in Deutschland.
+          translation:
+            vi: Cách đây hai năm tôi đã ở Đức.
+        - target: Vor dem Essen haben wir noch telefoniert.
+          translation:
+            vi: Trước bữa ăn chúng tôi còn gọi điện cho nhau.
+      confusion:
+        vi: "vor zwei Jahren = cách đây hai năm (quá khứ); in zwei Jahren = hai năm nữa (tương lai); nach zwei Jahren = sau hai năm (tính từ một mốc trong câu chuyện)."
+
+  - key: de:item:a2u01-g-zeitangaben-akk
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Zeitangaben im Akkusativ: letzte Woche, nächsten Monat, jeden Tag, dieses Jahr"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Mốc thời gian với letzt- (trước), nächst- (tới), jed- (mỗi), dies- (này) đứng một mình, không có giới từ, và ở Akkusativ. Đuôi theo giống của danh từ: der Monat → letzten/nächsten/jeden/diesen Monat; die Woche → letzte/nächste/jede/diese Woche; das Jahr → letztes/nächstes/jedes/dieses Jahr. Không thêm in như tiếng Việt \"vào tuần trước\"."
+      examples:
+        - target: Nächsten Monat fahre ich nach Wien.
+          translation:
+            vi: Tháng sau tôi đi Vienna.
+        - target: Ich gehe jeden Tag joggen.
+          translation:
+            vi: Ngày nào tôi cũng đi chạy bộ.
+        - target: Letztes Jahr waren wir in Italien.
+          translation:
+            vi: Năm ngoái chúng tôi đã ở Ý.
+      confusion:
+        vi: "Không nói in letzte Woche. Bạn có thể gặp dạng dài có giới từ và mạo từ (in der letzten Woche), nhưng dạng ngắn không giới từ là cách nói thông dụng nhất."
+
+  - key: de:item:a2u01-vorgestern
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: vorgestern
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hôm kia
+      examples:
+        - target: Vorgestern war ich krank.
+          translation:
+            vi: Hôm kia tôi bị ốm.
+        - target: Ich habe Tom vorgestern gesehen.
+          translation:
+            vi: Hôm kia tôi đã gặp Tom.
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết đầu: VOR-ges-tern."
+      confusion:
+        vi: "vorgestern (hôm kia) – gestern (hôm qua) – heute – morgen (ngày mai) – übermorgen (ngày kia)."
+
+  - key: de:item:a2u01-uebermorgen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: übermorgen
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ngày kia
+      examples:
+        - target: Übermorgen fahren wir nach Berlin.
+          translation:
+            vi: Ngày kia chúng tôi đi Berlin.
+        - target: Hast du übermorgen Zeit?
+          translation:
+            vi: Ngày kia bạn có rảnh không?
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết đầu: Ü-ber-mor-gen."
+
+  - key: de:item:a2u01-naechst
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: nächste Woche, nächstes Wochenende
+      pos: cụm từ
+    back:
+      meaning:
+        vi: tuần tới, cuối tuần tới (nächst- = tới, kế tiếp)
+      examples:
+        - target: Nächste Woche habe ich frei.
+          translation:
+            vi: Tuần tới tôi được nghỉ.
+        - target: Was machst du nächstes Wochenende?
+          translation:
+            vi: Cuối tuần tới bạn làm gì?
+      confusion:
+        vi: "nächst- đổi đuôi theo giống như letzt-: nächste Woche, nächsten Monat, nächstes Jahr. Cũng có nghĩa \"kế tiếp\": die nächste Haltestelle (trạm kế tiếp)."
+
+  - key: de:item:a2u01-frueher
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: früher
+      pos: trạng từ
+    back:
+      meaning:
+        vi: trước đây, ngày xưa
+      examples:
+        - target: Früher habe ich in Hanoi gewohnt.
+          translation:
+            vi: Trước đây tôi sống ở Hà Nội.
+        - target: Früher war hier ein Kino.
+          translation:
+            vi: Ngày xưa ở đây có một rạp chiếu phim.
+      confusion:
+        vi: "früher còn là dạng so sánh của früh: sớm hơn – Heute stehe ich früher auf. Nghĩa \"trước đây\" thường đối lập với heute hoặc jetzt."
+
+  - key: de:item:a2u01-damals
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: damals
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hồi đó, khi ấy
+      examples:
+        - target: Vor zehn Jahren war ich in Berlin. Damals konnte ich noch kein Deutsch.
+          translation:
+            vi: Cách đây mười năm tôi ở Berlin. Hồi đó tôi chưa biết tiếng Đức.
+        - target: Damals hatten wir kein Auto.
+          translation:
+            vi: Hồi đó chúng tôi không có ô tô.
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết đầu: DA-mals."
+      confusion:
+        vi: "damals chỉ về một thời điểm cụ thể đã nhắc tới (hồi đó); früher là \"trước đây\" nói chung, so với bây giờ."
+
+  - key: de:item:a2u01-neulich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: neulich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hôm nọ, mới đây
+      examples:
+        - target: Neulich habe ich Anna in der Stadt getroffen.
+          translation:
+            vi: Hôm nọ tôi gặp Anna ngoài phố.
+        - target: Ich war neulich beim Arzt.
+          translation:
+            vi: Mới đây tôi có đi khám bác sĩ.
+      pronunciation_note:
+        vi: "eu đọc như \"oi\": NEU-lich."
+      confusion:
+        vi: "neulich chỉ dùng cho một việc đã xảy ra cách đây không lâu, không dùng cho tương lai (tương lai gần: bald)."
+
+  - key: de:item:a2u01-moment
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Moment, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoảnh khắc, lúc, chốc lát
+      examples:
+        - target: Einen Moment, bitte!
+          translation:
+            vi: Xin chờ một chút!
+        - target: Im Moment habe ich keine Zeit.
+          translation:
+            vi: Lúc này tôi không có thời gian.
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết sau: mo-MENT."
+      confusion:
+        vi: "Einen Moment, bitte! (Akkusativ) = Xin chờ một chút. im Moment = hiện giờ, lúc này."
+
+  - key: de:item:a2u01-mal
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Mal, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lần (zum ersten Mal = lần đầu tiên)
+      examples:
+        - target: Ich war zum ersten Mal in Deutschland.
+          translation:
+            vi: Lần đầu tiên tôi đến Đức.
+        - target: Das nächste Mal komme ich mit.
+          translation:
+            vi: Lần sau tôi sẽ đi cùng.
+      confusion:
+        vi: "zum ersten Mal = lần đầu tiên; jedes Mal = mỗi lần. das Mal là danh từ (viết hoa, tách rời), còn einmal, zweimal là trạng từ (viết thường, viết liền)."
+
+  # Zusatzwortschatz bài 3 (trường: thời gian)
+  - key: de:item:a2u01-bald
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bald
+      pos: trạng từ
+    back:
+      meaning:
+        vi: sắp, chẳng bao lâu nữa
+      examples:
+        - target: Bald habe ich Geburtstag.
+          translation:
+            vi: Sắp đến sinh nhật tôi rồi.
+        - target: Der Zug kommt bald.
+          translation:
+            vi: Tàu sắp đến rồi.
+      confusion:
+        vi: "Bis bald! = Hẹn sớm gặp lại. bald nói về tương lai gần; quá khứ gần thì dùng neulich."
+
+  - key: de:item:a2u01-vorher
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: vorher
+      pos: trạng từ
+    back:
+      meaning:
+        vi: trước đó
+      examples:
+        - target: Ich wohne jetzt in Bonn. Vorher habe ich in Köln gewohnt.
+          translation:
+            vi: Giờ tôi sống ở Bonn. Trước đó tôi sống ở Köln.
+        - target: Ruf mich bitte vorher an!
+          translation:
+            vi: Nhớ gọi cho mình trước nhé!
+      confusion:
+        vi: "vorher (trước đó) ↔ nachher (lát nữa, sau đó). vorher đứng một mình; vor + danh từ thì cần Dativ: vor dem Essen."
+
+  - key: de:item:a2u01-nachher
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: nachher
+      pos: trạng từ
+    back:
+      meaning:
+        vi: lát nữa; sau đó
+      examples:
+        - target: Ich rufe dich nachher an.
+          translation:
+            vi: Lát nữa mình gọi cho bạn.
+        - target: Nachher gehen wir ins Kino.
+          translation:
+            vi: Lát nữa chúng mình đi xem phim.
+      confusion:
+        vi: "nachher hay dùng cho \"lát nữa\" trong hôm nay; khi kể chuyện theo trình tự, danach phổ biến hơn."
+
+  - key: de:item:a2u01-gerade
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gerade
+      pos: trạng từ
+    back:
+      meaning:
+        vi: vừa mới; đang (ngay lúc này)
+      examples:
+        - target: Ich bin gerade nach Hause gekommen.
+          translation:
+            vi: Tôi vừa mới về đến nhà.
+        - target: Ich koche gerade.
+          translation:
+            vi: Tôi đang nấu ăn.
+      confusion:
+        vi: "gerade + Perfekt = vừa mới; gerade + hiện tại = đang, giống \"đang\" trong tiếng Việt. Đừng nhầm với geradeaus (đi thẳng)."
+
+  - key: de:item:a2u01-jahrhundert
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Jahrhundert, -e
+      ipa: /jaːɐ̯ˈhʊndɐt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thế kỷ
+      examples:
+        - target: Wir leben im 21. Jahrhundert.
+          translation:
+            vi: Chúng ta đang sống ở thế kỷ 21.
+        - target: Die Kirche ist aus dem 13. Jahrhundert.
+          translation:
+            vi: Nhà thờ này có từ thế kỷ 13.
+      pronunciation_note:
+        vi: "Nhấn vào -HUN-: Jahr-HUN-dert."
+      confusion:
+        vi: "Từ ghép das Jahr + das Hundert. Đọc thế kỷ bằng số thứ tự: im 21. Jahrhundert = im einundzwanzigsten Jahrhundert."
+
+  - key: de:item:a2u01-vergangenheit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Vergangenheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quá khứ
+      examples:
+        - target: In der Vergangenheit war das anders.
+          translation:
+            vi: Trong quá khứ chuyện đó khác.
+        - target: Perfekt und Präteritum sind Zeitformen für die Vergangenheit.
+          translation:
+            vi: Perfekt và Präteritum là các thì dùng cho quá khứ.
+      pronunciation_note:
+        vi: "ver- không nhấn: ver-GAN-gen-heit."
+      confusion:
+        vi: "Các từ -heit đều giống cái: die Vergangenheit. Tương lai là die Zukunft (học ở unit sau)."
+
+  # ================= Bài 4: Lý lịch của tôi – seit, năm =================
+  - key: de:item:a2u01-g-seit-praesens
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "seit + Dativ + Präsens: Ich wohne seit drei Jahren hier."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Việc bắt đầu trong quá khứ và vẫn còn tiếp diễn đến bây giờ: tiếng Đức dùng thì hiện tại với seit + Dativ. Tiếng Việt nói \"đã sống ở đây được ba năm\", tiếng Đức nói Ich wohne seit drei Jahren hier (không dùng Perfekt). Hỏi: Seit wann …? hoặc Wie lange … schon?"
+      examples:
+        - target: Ich lerne seit einem Jahr Deutsch.
+          translation:
+            vi: Tôi học tiếng Đức được một năm rồi.
+        - target: Seit wann wohnen Sie in Berlin?
+          translation:
+            vi: Anh/chị sống ở Berlin từ bao giờ?
+        - target: Sie arbeitet seit 2020 in München.
+          translation:
+            vi: Cô ấy làm việc ở München từ năm 2020.
+      confusion:
+        vi: "seit = từ … đến nay, việc vẫn còn tiếp diễn; vor = cách đây, chỉ một mốc đã qua: Ich bin vor drei Jahren nach Berlin gekommen. Ich wohne seit drei Jahren in Berlin."
+
+  - key: de:item:a2u01-g-jahreszahlen
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Jahreszahlen: 1998 = neunzehnhundertachtundneunzig, 2010 = zweitausendzehn"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Năm từ 1100 đến 1999 đọc theo \"trăm\": 1998 = neunzehnhundertachtundneunzig (mười chín trăm chín mươi tám). Từ năm 2000 đọc như số thường: zweitausend, zweitausendzehn, zweitausendvierundzwanzig. Năm đứng một mình hoặc sau im Jahr: Ich bin 1998 geboren / im Jahr 1998 geboren – không nói in 1998."
+      examples:
+        - target: Ich bin 1998 geboren.
+          translation:
+            vi: Tôi sinh năm 1998.
+        - target: Im Jahr 2010 habe ich das Abitur gemacht.
+          translation:
+            vi: Năm 2010 tôi thi đỗ tú tài.
+      confusion:
+        vi: "in 1998 là cách nói theo tiếng Anh (in 1998), không phải tiếng Đức chuẩn. 1998 đọc là neunzehnhundert…, không đọc eintausendneunhundert…"
+
+  - key: de:item:a2u01-geboren
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Ich bin … geboren.
+      pos: cụm từ
+    back:
+      meaning:
+        vi: được sinh ra; Ich bin … geboren = tôi sinh (năm …, ở …)
+      examples:
+        - target: Ich bin 1995 in Hanoi geboren.
+          translation:
+            vi: Tôi sinh năm 1995 ở Hà Nội.
+        - target: Wann sind Sie geboren?
+          translation:
+            vi: Anh/chị sinh năm nào?
+      confusion:
+        vi: "Người còn sống thường nói Ich bin … geboren (dùng sein, không dùng haben). Hỏi: Wo bist du geboren? / Wann sind Sie geboren?"
+
+  - key: de:item:a2u01-grundschule
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Grundschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường tiểu học
+      examples:
+        - target: Ich bin in Hanoi zur Grundschule gegangen.
+          translation:
+            vi: Tôi học tiểu học ở Hà Nội.
+        - target: Die Grundschule ist neben der Kirche.
+          translation:
+            vi: Trường tiểu học ở cạnh nhà thờ.
+      confusion:
+        vi: "Ở Đức trẻ em thường học Grundschule 4 năm (ở vài bang là 6 năm), sau đó chuyển sang các loại trường khác nhau, ví dụ Gymnasium."
+
+  - key: de:item:a2u01-gymnasium
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gymnasium, Gymnasien
+      ipa: /ɡʏmˈnaːzi̯ʊm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường trung học (hướng lên đại học, kết thúc bằng kỳ thi Abitur)
+      examples:
+        - target: Mein Bruder ist auf dem Gymnasium.
+          translation:
+            vi: Anh trai tôi đang học ở trường Gymnasium.
+        - target: Auf dem Gymnasium habe ich Englisch und Französisch gelernt.
+          translation:
+            vi: Ở trường Gymnasium tôi đã học tiếng Anh và tiếng Pháp.
+      pronunciation_note:
+        vi: "y đọc như ü ngắn; nhấn vào -NA-: Gym-NA-si-um."
+      confusion:
+        vi: "Bẫy: Gymnasium không phải phòng tập thể dục (phòng tập là das Fitnessstudio). Nói auf dem Gymnasium (đang học ở đó). Số nhiều: die Gymnasien."
+
+  - key: de:item:a2u01-abitur
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Abitur (Sg.)
+      ipa: /abiˈtuːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng tú tài (kỳ thi cuối Gymnasium, cho phép vào đại học)
+      examples:
+        - target: Ich habe 2016 das Abitur gemacht.
+          translation:
+            vi: Tôi thi đỗ tú tài năm 2016.
+        - target: Nach dem Abitur möchte ich studieren.
+          translation:
+            vi: Sau khi đỗ tú tài tôi muốn học đại học.
+      pronunciation_note:
+        vi: "Nhấn vào âm tiết cuối: a-bi-TUR."
+      confusion:
+        vi: "Nói das Abitur machen (thi tú tài). Khẩu ngữ gọi tắt là das Abi."
+
+  - key: de:item:a2u01-ausbildung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Ausbildung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: học nghề, đào tạo nghề
+      examples:
+        - target: Ich mache eine Ausbildung zum Koch.
+          translation:
+            vi: Tôi đang học nghề đầu bếp.
+        - target: Die Ausbildung dauert drei Jahre.
+          translation:
+            vi: Khoá học nghề kéo dài ba năm.
+      confusion:
+        vi: "Ở Đức nhiều nghề được học theo kiểu kép: vừa làm ở công ty, vừa học lý thuyết ở Berufsschule, thường khoảng 2–3,5 năm. eine Ausbildung zum Koch / zur Köchin (zu + Dativ)."
+
+  - key: de:item:a2u01-studieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: studieren
+      pos: động từ
+    back:
+      meaning:
+        vi: học đại học
+      examples:
+        - target: Ich studiere Informatik in Berlin.
+          translation:
+            vi: Tôi học ngành tin học ở Berlin.
+        - target: Was hast du studiert?
+          translation:
+            vi: Bạn đã học ngành gì?
+      pronunciation_note:
+        vi: "st đầu âm tiết đọc là \"scht\"; nhấn vào -DIE-: stu-DIE-ren."
+      confusion:
+        vi: "studieren = học ở đại học (một ngành); lernen = học bài, học ngôn ngữ, học kỹ năng: Ich lerne Deutsch. Partizip II: studiert (không có ge-)."
+
+  - key: de:item:a2u01-lebenslauf
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Lebenslauf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sơ yếu lý lịch (CV)
+      examples:
+        - target: Ich schreibe gerade meinen Lebenslauf.
+          translation:
+            vi: Tôi đang viết sơ yếu lý lịch.
+        - target: Schicken Sie uns bitte Ihren Lebenslauf.
+          translation:
+            vi: Xin anh/chị gửi cho chúng tôi sơ yếu lý lịch.
+      confusion:
+        vi: "Từ ghép das Leben + der Lauf (có s nối) → der Lebenslauf. Ở Đức Lebenslauf thường viết dạng bảng (năm – việc); ảnh là tuỳ chọn."
+
+  - key: de:item:a2u01-erfahrung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Erfahrung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: kinh nghiệm
+      examples:
+        - target: Ich habe viel Erfahrung als Kellner.
+          translation:
+            vi: Tôi có nhiều kinh nghiệm làm bồi bàn.
+        - target: Hast du Erfahrung mit Kindern?
+          translation:
+            vi: Bạn có kinh nghiệm với trẻ con không?
+      confusion:
+        vi: "die Erfahrung = kinh nghiệm tích lũy được; das Erlebnis = một sự việc cụ thể đã trải qua. Các từ -ung đều giống cái."
+
+  - key: de:item:a2u01-heiraten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: heiraten
+      pos: động từ
+    back:
+      meaning:
+        vi: kết hôn, cưới
+      examples:
+        - target: Wir haben 2019 geheiratet.
+          translation:
+            vi: Chúng tôi cưới nhau năm 2019.
+        - target: Meine Schwester heiratet nächsten Monat.
+          translation:
+            vi: Tháng sau chị gái tôi lấy chồng.
+      confusion:
+        vi: "Cưới ai: heiraten + Akkusativ, không có mit – Er hat sie geheiratet. Trạng thái: verheiratet sein (mit + Dativ). Perfekt với haben: hat geheiratet."
+
+  - key: de:item:a2u01-pruefung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Prüfung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ thi, bài thi
+      examples:
+        - target: Morgen habe ich eine Prüfung.
+          translation:
+            vi: Ngày mai tôi có một bài thi.
+        - target: Ich mache im Mai die Prüfung.
+          translation:
+            vi: Tháng Năm tôi đi thi.
+      confusion:
+        vi: "eine Prüfung machen = đi thi; eine Prüfung bestehen = thi đỗ; durchfallen = thi trượt."
+
+  # Zusatzwortschatz bài 4 (trường: học vấn, tiểu sử)
+  - key: de:item:a2u01-bestehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: bestehen, besteht, bestand, hat bestanden
+      pos: động từ
+    back:
+      meaning:
+        vi: thi đỗ, vượt qua (kỳ thi)
+      examples:
+        - target: Ich habe die Prüfung bestanden!
+          translation:
+            vi: Tôi thi đỗ rồi!
+        - target: Hast du den Test bestanden?
+          translation:
+            vi: Bạn qua bài kiểm tra chưa?
+      confusion:
+        vi: "bestehen + Akkusativ: die Prüfung bestehen. Partizip II: bestanden (be- không nhấn nên không có ge-)."
+
+  - key: de:item:a2u01-durchfallen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: durchfallen, fällt durch, fiel durch, ist durchgefallen
+      pos: động từ
+    back:
+      meaning:
+        vi: thi trượt, thi rớt
+      examples:
+        - target: Leider bin ich durchgefallen.
+          translation:
+            vi: Tiếc là tôi thi trượt.
+        - target: Er ist in der Prüfung durchgefallen.
+          translation:
+            vi: Anh ấy đã thi trượt.
+      confusion:
+        vi: "Động từ tách, nhấn vào DURCH, nên ge- chen vào giữa: durchgefallen. Perfekt với sein: ich bin durchgefallen. Trái nghĩa: bestehen."
+
+  - key: de:item:a2u01-kindergarten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Kindergarten, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường mẫu giáo
+      examples:
+        - target: Mein Sohn ist im Kindergarten.
+          translation:
+            vi: Con trai tôi đang ở trường mẫu giáo.
+        - target: Der Kindergarten fängt um acht Uhr an.
+          translation:
+            vi: Trường mẫu giáo bắt đầu lúc tám giờ.
+      confusion:
+        vi: "Từ ghép das Kind + der Garten → der Kindergarten; số nhiều: die Kindergärten. Hằng ngày người ta cũng hay nói die Kita."
+
+  - key: de:item:a2u01-berufsschule
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Berufsschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường dạy nghề (phần học lý thuyết của Ausbildung)
+      examples:
+        - target: Zwei Tage pro Woche bin ich in der Berufsschule.
+          translation:
+            vi: Mỗi tuần tôi học ở trường nghề hai ngày.
+        - target: In der Berufsschule lernen wir die Theorie.
+          translation:
+            vi: Ở trường nghề chúng tôi học lý thuyết.
+      confusion:
+        vi: "Từ ghép der Beruf + die Schule (có s nối) → die Berufsschule."
+
+  - key: de:item:a2u01-leben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Leben, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc sống, cuộc đời
+      examples:
+        - target: Das Leben in Deutschland ist teuer.
+          translation:
+            vi: Cuộc sống ở Đức đắt đỏ.
+        - target: So ist das Leben!
+          translation:
+            vi: Đời là thế mà!
+      confusion:
+        vi: "das Leben là danh từ (viết hoa); leben là động từ (sống): Ich lebe in Hanoi."

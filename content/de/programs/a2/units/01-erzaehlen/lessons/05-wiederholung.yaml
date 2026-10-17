@@ -1,0 +1,406 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u01-wiederholung
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập – e-mail kể cuối tuần (Wiederholung)
+objectives:
+  - vi: Đọc hiểu một bài blog du lịch ngắn kể theo trình tự (Perfekt, war/hatte, musste/konnte).
+  - vi: Viết e-mail thân mật khoảng 40–50 từ kể về cuối tuần theo 3 ý cho trước (kiểu Goethe A2 Schreiben).
+  - vi: Nghe hiểu tin nhắn thoại và lời giới thiệu ngắn có mốc thời gian, năm và seit.
+estimated_minutes: 22
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:a2u01-mein-lebenslauf]
+items:
+  - item: de:item:a2u01-g-partizip-praefix-ieren
+    role: reuse
+  - item: de:item:a2u01-g-praeteritum-modal
+    role: reuse
+  - item: de:item:a2u01-g-erzaehl-adverbien
+    role: reuse
+  - item: de:item:a2u01-g-vor-nach-dativ
+    role: reuse
+  - item: de:item:a2u01-g-zeitangaben-akk
+    role: reuse
+  - item: de:item:a2u01-g-seit-praesens
+    role: reuse
+  - item: de:item:a2u01-g-jahreszahlen
+    role: reuse
+  - item: de:item:a2u01-mal
+    role: reuse
+  - item: de:item:a2u01-panne
+    role: reuse
+  - item: de:item:a2u01-telefonieren
+    role: reuse
+  - item: de:item:a2u01-verpassen
+    role: reuse
+  - item: de:item:a1u07-verspaetung
+    role: reuse
+  - item: de:item:a1u06-letzt
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được bài blog kể một chuyến đi cuối tuần và tự viết được e-mail ngắn kể cho bạn bè nghe cuối tuần của mình.
+  - type: explain
+    text:
+      vi: "Khi đọc blog hay e-mail kể chuyện, hãy tìm hai thứ: mốc thời gian (letzten Freitag, am Samstag, zuerst, danach) và động từ ở vị trí 2 và cuối câu (habe … besichtigt, musste … warten). Câu hỏi richtig/falsch thường đổi đúng một chi tiết: thứ, thứ tự việc, hay có làm được hay không."
+  - type: explain
+    text:
+      vi: "E-mail thân mật gồm: lời chào (Liebe Anna, / Lieber Paul, / Hallo Tom,) – cảm ơn hoặc mở đầu – ba ý theo đề bài – lời chào cuối (Viele Grüße / Liebe Grüße + tên). Viết mỗi ý một hoặc hai câu, nối bằng zuerst, dann, danach, zum Schluss."
+  - type: explain
+    text:
+      vi: "Trộn các dạng quá khứ cho tự nhiên: Perfekt cho hành động (habe besichtigt, bin gefahren), war/hatte cho trạng thái (Das Wetter war schön), musste/konnte/wollte cho việc phải làm, có thể hay muốn làm. Việc còn tiếp diễn thì dùng hiện tại với seit."
+  - type: explain
+    text:
+      vi: "Kiểm tra lại trước khi gửi: động từ ở vị trí 2 sau mốc thời gian đầu câu, Partizip không ge- với be-/ver-/-ieren, haben hay sein, vor zwei Jahren (có -n), letzte Woche (không giới từ)."
+  - type: deep_explain
+    text:
+      vi: "Phần viết e-mail trong đề Goethe A2 thường cho sẵn tình huống và ba ý cần viết; bạn được chấm theo việc có trả lời đủ ba ý, văn bản có mạch lạc và ngôn ngữ có hiểu được không. Số từ yêu cầu và thang điểm cụ thể nên xem trong tài liệu chính thức của Goethe-Institut. Mẹo luyện: gạch ba ý, viết cho mỗi ý một câu chính và một câu thêm chi tiết, rồi thêm câu mở đầu và câu kết. Đừng cố dùng cấu trúc chưa chắc chắn; câu ngắn mà đúng tốt hơn câu dài mà sai."
+  - type: example
+    target: "Liebe Anna, danke für deine E-Mail! Letztes Wochenende war ich zum ersten Mal in Wien. Zuerst habe ich die Altstadt besichtigt, danach habe ich Kuchen probiert. Leider musste ich am Sonntag schon zurückfahren. Nächsten Monat besuche ich dich! Viele Grüße, Minh"
+    target_lang: de
+    translation:
+      vi: "Anna thân mến, cảm ơn e-mail của bạn! Cuối tuần trước mình đến Vienna lần đầu tiên. Trước tiên mình tham quan khu phố cổ, sau đó ăn thử bánh. Tiếc là Chủ nhật mình đã phải về rồi. Tháng sau mình sẽ đến thăm bạn! Thân, Minh"
+    note:
+      vi: "E-mail mẫu khoảng 40 từ, viết cho bạn bè (du). Ba ý: đi đâu, đã làm gì, khi nào gặp lại. die Altstadt = khu phố cổ."
+  - type: example
+    target: Letzten Freitag hatte der Zug Verspätung. Ich musste eine Stunde warten.
+    target_lang: de
+    translation:
+      vi: Thứ Sáu tuần trước tàu bị trễ. Tôi đã phải chờ một tiếng.
+    note:
+      vi: letzten Freitag (Akkusativ, không giới từ); hatte, musste là Präteritum dùng cả khi nói.
+  - type: example
+    target: Ich bin 2000 geboren und wohne seit einem Jahr in München.
+    target_lang: de
+    translation:
+      vi: Tôi sinh năm 2000 và sống ở München được một năm rồi.
+    note:
+      vi: 2000 đọc là zweitausend; seit + thì hiện tại cho việc còn tiếp diễn.
+  - type: common_mistake
+    wrong: Letztes Wochenende ich habe meine Oma besucht.
+    right: Letztes Wochenende habe ich meine Oma besucht.
+    target_lang: de
+    note:
+      vi: Mốc thời gian ở vị trí 1 thì động từ habe phải đứng ngay sau.
+  - type: common_mistake
+    wrong: Lieber Anna, …
+    right: Liebe Anna, …
+    target_lang: de
+    note:
+      vi: "Viết cho nữ: Liebe; cho nam: Lieber (Lieber Paul)."
+  - type: summary
+    points:
+      - vi: "Đọc: tìm mốc thời gian + động từ (vị trí 2 và cuối câu)."
+      - vi: "E-mail: Liebe/Lieber/Hallo … – cảm ơn – 3 ý – Viele Grüße / Liebe Grüße."
+      - vi: "Trình tự: zuerst, dann, danach, später, zum Schluss + động từ vị trí 2."
+      - vi: "Perfekt cho hành động; war/hatte, musste/konnte/wollte."
+      - vi: "vor zwei Jahren – seit zwei Jahren – in zwei Jahren; letzte Woche, nächsten Monat."
+      - vi: "Năm: 1998 = neunzehnhundertachtundneunzig, 2010 = zweitausendzehn, không có in."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a2u01l5-mcq-blog-zug
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-verspaetung
+    prompt:
+      stem: "Letzten Freitag bin ich nach der Arbeit zum Bahnhof gefahren. Der Zug hatte Verspätung, und ich musste eine Stunde warten. Am Samstag habe ich zuerst die Altstadt besichtigt, danach habe ich Kuchen probiert. Am Abend wollte ich ins Konzert gehen, aber die Karten waren schon weg. Am Sonntag habe ich lange mit meiner Schwester telefoniert. Ich war zum ersten Mal in Wien! — Richtig oder falsch? Der Zug war pünktlich."
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Blog viết: Der Zug hatte Verspätung, und ich musste eine Stunde warten – tàu bị trễ, phải chờ một tiếng. Vậy câu \"tàu đúng giờ\" là sai."
+    display_answer: Falsch
+
+  - key: de:exercise:a2u01l5-mcq-blog-zuerst
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-erzaehl-adverbien
+    prompt:
+      stem: "Letzten Freitag bin ich nach der Arbeit zum Bahnhof gefahren. Der Zug hatte Verspätung, und ich musste eine Stunde warten. Am Samstag habe ich zuerst die Altstadt besichtigt, danach habe ich Kuchen probiert. Am Abend wollte ich ins Konzert gehen, aber die Karten waren schon weg. Am Sonntag habe ich lange mit meiner Schwester telefoniert. Ich war zum ersten Mal in Wien! — Was hat die Autorin am Samstag zuerst gemacht?"
+      stem_lang: de
+      options:
+        - { id: z1a, text: Sie hat die Altstadt besichtigt., lang: de }
+        - { id: z2b, text: Sie hat Kuchen probiert., lang: de }
+        - { id: z3c, text: Sie ist ins Konzert gegangen., lang: de }
+        - { id: z4d, text: Sie hat mit ihrer Schwester telefoniert., lang: de }
+    answer:
+      correct_option_id: z1a
+    explanation:
+      vi: "Am Samstag habe ich zuerst die Altstadt besichtigt – việc đầu tiên. Ăn bánh là danach (sau đó); cô ấy không đi hòa nhạc được; gọi điện cho chị gái là vào Chủ nhật."
+    display_answer: Sie hat die Altstadt besichtigt.
+
+  - key: de:exercise:a2u01l5-mcq-blog-konzert
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-praeteritum-modal
+    prompt:
+      stem: "Letzten Freitag bin ich nach der Arbeit zum Bahnhof gefahren. Der Zug hatte Verspätung, und ich musste eine Stunde warten. Am Samstag habe ich zuerst die Altstadt besichtigt, danach habe ich Kuchen probiert. Am Abend wollte ich ins Konzert gehen, aber die Karten waren schon weg. Am Sonntag habe ich lange mit meiner Schwester telefoniert. Ich war zum ersten Mal in Wien! — Richtig oder falsch? Am Samstagabend konnte die Autorin nicht ins Konzert gehen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Am Abend wollte ich ins Konzert gehen, aber die Karten waren schon weg – cô ấy muốn (wollte) đi nhưng vé đã hết, nên không đi được. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:a2u01l5-mcq-blog-oft
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-mal
+    prompt:
+      stem: "Letzten Freitag bin ich nach der Arbeit zum Bahnhof gefahren. Der Zug hatte Verspätung, und ich musste eine Stunde warten. Am Samstag habe ich zuerst die Altstadt besichtigt, danach habe ich Kuchen probiert. Am Abend wollte ich ins Konzert gehen, aber die Karten waren schon weg. Am Sonntag habe ich lange mit meiner Schwester telefoniert. Ich war zum ersten Mal in Wien! — Richtig oder falsch? Die Autorin war schon oft in Wien."
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Ich war zum ersten Mal in Wien = đây là lần đầu tiên cô ấy đến Vienna, nên câu \"đã đến nhiều lần\" là sai."
+    display_answer: Falsch
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a2u01l5-listen-panne
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u01-panne
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo Paul, hier ist Mia. Ich bin gerade in Hamburg angekommen. Wir hatten eine Panne auf der Autobahn, aber zum Glück ist nichts passiert.
+      options:
+        - { id: p1a, text: Mia vừa đến Hamburg; xe bị hỏng trên đường cao tốc nhưng may mà không ai sao., lang: vi }
+        - { id: p2b, text: Mia sắp đến Hamburg; xe bị hỏng trên đường cao tốc nhưng may mà không ai sao., lang: vi }
+        - { id: p3c, text: Mia vừa đến Hamburg; trên đường cao tốc có một vụ tai nạn nghiêm trọng., lang: vi }
+        - { id: p4d, text: Mia vừa đến Hamburg; đường cao tốc bị tắc nên đến muộn., lang: vi }
+    answer:
+      correct_option_id: p1a
+    explanation:
+      vi: "gerade + Perfekt (bin … angekommen) = vừa mới đến. eine Panne = xe hỏng (không phải Unfall hay Stau). zum Glück ist nichts passiert = may mà không có chuyện gì."
+    display_answer: Mia vừa đến Hamburg; xe bị hỏng trên đường cao tốc nhưng may mà không ai sao.
+
+  - key: de:exercise:a2u01l5-listen-vorstellung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u01-g-jahreszahlen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich heiße Linh. Ich bin zweitausend in Hanoi geboren und wohne seit einem Jahr in München.
+      options:
+        - { id: v1a, text: Linh sinh năm 2000 ở Hà Nội và sống ở München được một năm rồi., lang: vi }
+        - { id: v2b, text: Linh sinh năm 2002 ở Hà Nội và sống ở München được một năm rồi., lang: vi }
+        - { id: v3c, text: Linh sinh năm 2000 ở Hà Nội và cách đây một năm đã sống ở München., lang: vi }
+        - { id: v4d, text: Linh sinh năm 2000 ở Hà Nội và một năm nữa sẽ chuyển đến München., lang: vi }
+    answer:
+      correct_option_id: v1a
+    explanation:
+      vi: "zweitausend = 2000 (2002 là zweitausendzwei). seit einem Jahr + thì hiện tại (wohne) = sống ở đó được một năm và vẫn đang sống."
+    display_answer: Linh sinh năm 2000 ở Hà Nội và sống ở München được một năm rồi.
+
+  # ---------------- recall: viết e-mail ----------------
+  - key: de:exercise:a2u01l5-fill-email
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-zeitangaben-akk
+    prompt:
+      template: "{{b1}} Anna, danke für deine E-Mail! Letztes Wochenende {{b2}} ich zum ersten Mal in Wien. Es war toll! {{b3}} Grüße, Minh"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Liebe, Hallo]
+        b2: [war]
+        b3: [Viele, Liebe]
+    known_wrong:
+      - answer: Lieber
+        feedback_vi: Anna là nữ → Liebe Anna; cuối thư là Viele Grüße hoặc Liebe Grüße.
+        error_tag: adj_ending
+      - answer: bin
+        feedback_vi: Câu không có Partizip ở cuối, nên dùng Präteritum war – Letztes Wochenende war ich …
+        error_tag: tense
+      - answer: Viel
+        feedback_vi: Grüße là số nhiều → Viele Grüße.
+        error_tag: adj_ending
+    explanation:
+      vi: "Viết cho bạn nữ: Liebe Anna (hoặc Hallo Anna). Letztes Wochenende ở vị trí 1 → động từ war ở vị trí 2 (sein ở quá khứ). Cuối thư: Viele Grüße / Liebe Grüße."
+    display_answer: "Liebe Anna, danke für deine E-Mail! Letztes Wochenende war ich zum ersten Mal in Wien. Es war toll! Viele Grüße, Minh"
+
+  - key: de:exercise:a2u01l5-fill-musste
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-partizip-praefix-ieren
+    prompt:
+      template: "Am Samstag {{b1}} (müssen) ich leider arbeiten. Am Sonntag haben wir ein Museum {{b2}} (besichtigen). (nächst-) {{b3}} Woche besuche ich dich!"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 11 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [musste]
+        b2: [besichtigt]
+        b3: [Nächste]
+    known_wrong:
+      - answer: müsste
+        feedback_vi: Kể việc đã phải làm → musste (không umlaut).
+        error_tag: konjunktiv_form
+      - answer: muss
+        feedback_vi: Việc đã qua → Präteritum musste.
+        error_tag: tense_present
+      - answer: gebesichtigt
+        feedback_vi: be- là tiền tố không tách – besichtigt, không thêm ge-.
+        error_tag: participle_form
+      - answer: Nächsten
+        feedback_vi: die Woche là giống cái → nächste Woche (Akkusativ).
+        error_tag: adj_ending
+    explanation:
+      vi: "müssen → ich musste (Präteritum, không đuôi). besichtigen → besichtigt (be-, không ge-). die Woche → nächste Woche, không giới từ."
+    display_answer: "Am Samstag musste ich leider arbeiten. Am Sonntag haben wir ein Museum besichtigt. Nächste Woche besuche ich dich!"
+
+  - key: de:exercise:a2u01l5-tr-zug-verpasst
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-vor-nach-dativ
+    prompt:
+      source_text: Cách đây hai tuần tôi đã lỡ chuyến tàu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Vor zwei Wochen habe ich den Zug verpasst.
+        - Ich habe vor zwei Wochen den Zug verpasst.
+        - Ich habe den Zug vor zwei Wochen verpasst.
+    known_wrong:
+      - answer: Vor zwei Wochen ich habe den Zug verpasst.
+        feedback_vi: Vor zwei Wochen ở vị trí 1 thì habe phải ở vị trí 2.
+        error_tag: verb_position
+      - answer: Vor zwei Wochen habe ich den Zug geverpasst.
+        feedback_vi: ver- là tiền tố không tách – verpasst.
+        error_tag: participle_form
+      - answer: Seit zwei Wochen habe ich den Zug verpasst.
+        feedback_vi: "\"Cách đây\" là vor; seit dùng cho việc còn kéo dài đến nay."
+        error_tag: preposition
+      - answer: In zwei Wochen habe ich den Zug verpasst.
+        feedback_vi: "in zwei Wochen = hai tuần nữa; \"cách đây\" là vor."
+        error_tag: preposition
+    explanation:
+      vi: "\"Cách đây hai tuần\" = vor zwei Wochen (vor + Dativ số nhiều; Wochen đã tận cùng -n). verpassen → habe … verpasst, Partizip cuối câu."
+    display_answer: Vor zwei Wochen habe ich den Zug verpasst.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u01l5-wb-danach
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-telefonieren
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Sau đó chúng tôi đã nói chuyện điện thoại rất lâu.\""
+      tokens:
+        - { id: x-lange, text: lange }
+        - { id: x-telefoniert, text: telefoniert }
+        - { id: x-sind, text: sind }
+        - { id: x-wir, text: wir }
+        - { id: x-danach, text: Danach }
+        - { id: x-haben, text: haben }
+    answer:
+      orders:
+        - [x-danach, x-haben, x-wir, x-lange, x-telefoniert]
+    explanation:
+      vi: "Danach chiếm vị trí 1, nên haben ở vị trí 2, wir đứng sau. telefonieren đi với haben (sind là thừa) và Partizip telefoniert không có ge-, đứng cuối câu."
+    display_answer: Danach haben wir lange telefoniert.
+
+  - key: de:exercise:a2u01l5-wb-seit
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-seit-praesens
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi sống ở Vienna được hai năm rồi.\""
+      tokens:
+        - { id: x-jahren, text: Jahren }
+        - { id: x-in, text: in }
+        - { id: x-ich, text: Ich }
+        - { id: x-jahre, text: Jahre }
+        - { id: x-wien, text: Wien }
+        - { id: x-zwei, text: zwei }
+        - { id: x-wohne, text: wohne }
+        - { id: x-seit, text: seit }
+    answer:
+      orders:
+        - [x-ich, x-wohne, x-seit, x-zwei, x-jahren, x-in, x-wien]
+        - [x-ich, x-wohne, x-in, x-wien, x-seit, x-zwei, x-jahren]
+    explanation:
+      vi: "Việc vẫn tiếp diễn → thì hiện tại wohne + seit. seit đi với Dativ, nên số nhiều thêm -n: zwei Jahren (Jahre là thừa)."
+    display_answer: Ich wohne seit zwei Jahren in Wien.
+
+  - key: de:exercise:a2u01l5-tr-wien
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a1u06-letzt
+    prompt:
+      source_text: Letztes Wochenende war ich zum ersten Mal in Wien.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần trước tôi đến Vienna lần đầu tiên.
+        - Cuối tuần trước lần đầu tiên tôi đến Vienna.
+        - Cuối tuần trước tôi ở Vienna lần đầu tiên.
+        - Cuối tuần trước lần đầu tiên tôi ở Vienna.
+        - Cuối tuần trước tôi đã đến Vienna lần đầu tiên.
+        - Cuối tuần trước lần đầu tiên tôi đã đến Vienna.
+        - Cuối tuần trước tôi lần đầu tiên đến Vienna.
+        - Cuối tuần trước tôi đến Viên lần đầu tiên.
+        - Cuối tuần trước lần đầu tiên tôi đến Viên.
+        - Cuối tuần trước tôi đến Wien lần đầu tiên.
+        - Cuối tuần trước lần đầu tiên tôi đến Wien.
+        - Cuối tuần trước tôi lần đầu đến Vienna.
+        - Cuối tuần trước lần đầu tôi đến Vienna.
+        - Cuối tuần vừa rồi tôi đến Vienna lần đầu tiên.
+        - Cuối tuần trước mình đến Vienna lần đầu tiên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần tới tôi đến Vienna lần đầu tiên.
+        feedback_vi: letztes Wochenende = cuối tuần TRƯỚC (cuối tuần tới là nächstes Wochenende).
+        error_tag: meaning
+      - answer: Cuối tuần trước tôi đến Vienna lần cuối cùng.
+        feedback_vi: zum ersten Mal = lần đầu tiên.
+        error_tag: meaning
+    explanation:
+      vi: "letztes Wochenende = cuối tuần trước; war ich in Wien = tôi đã ở/đến Vienna; zum ersten Mal = lần đầu tiên."
+    display_answer: Cuối tuần trước tôi đến Vienna lần đầu tiên.

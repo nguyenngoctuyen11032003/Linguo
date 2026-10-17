@@ -1,0 +1,397 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u01-vor-einem-jahr
+order_index: 3
+level: a2
+title:
+  vi: Cách đây một năm – mốc thời gian (Vor einem Jahr)
+objectives:
+  - vi: Đặt sự việc đúng mốc thời gian quá khứ và tương lai với vor/nach + Dativ (vor zwei Jahren, nach der Arbeit).
+  - vi: Dùng mốc thời gian không giới từ ở Akkusativ (letzte Woche, nächsten Monat, jeden Tag, dieses Jahr).
+  - vi: Đọc hiểu tin nhắn ngắn có nhiều mốc thời gian (vorgestern, früher, damals, zum ersten Mal).
+estimated_minutes: 17
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:a2u01-ich-musste-arbeiten]
+items:
+  - item: de:item:a2u01-g-vor-nach-dativ
+  - item: de:item:a2u01-g-zeitangaben-akk
+  - item: de:item:a2u01-vorgestern
+  - item: de:item:a2u01-uebermorgen
+  - item: de:item:a2u01-naechst
+  - item: de:item:a2u01-frueher
+  - item: de:item:a2u01-damals
+  - item: de:item:a2u01-neulich
+  - item: de:item:a2u01-moment
+  - item: de:item:a2u01-mal
+  - item: de:item:a2u01-bald
+  - item: de:item:a2u01-vorher
+  - item: de:item:a2u01-nachher
+  - item: de:item:a2u01-gerade
+  - item: de:item:a2u01-jahrhundert
+  - item: de:item:a2u01-vergangenheit
+  - item: de:item:a1u04-g-am-im-um
+    role: reuse
+  - item: de:item:a1u07-g-dativ-praepositionen
+    role: reuse
+  - item: de:item:a1u06-letzt
+    role: reuse
+  - item: de:item:a2u01-g-praeteritum-modal
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được chuyện gì xảy ra khi nào, ví dụ: \"Vor einem Jahr war ich zum ersten Mal in Deutschland. Nächsten Monat fahre ich wieder hin.\""
+  - type: explain
+    text:
+      vi: "vor (trước) và nach (sau) chỉ thời gian đi với Dativ: vor dem Essen, nach der Arbeit, nach dem Kurs. Bạn đã biết nach + Dativ khi chỉ hướng (nach Berlin); ở đây là nghĩa thời gian."
+  - type: explain
+    text:
+      vi: "vor + một khoảng thời gian nghĩa là \"cách đây\": vor einem Jahr, vor zwei Jahren – Dativ số nhiều thêm -n vào danh từ. \"… nữa\" trong tương lai thì dùng in: in zwei Jahren (hai năm nữa). nach zwei Jahren là \"sau hai năm\", tính từ một mốc trong câu chuyện."
+  - type: explain
+    text:
+      vi: "Với letzt- (trước), nächst- (tới), jed- (mỗi), dies- (này), bạn KHÔNG dùng giới từ, và cụm từ ở Akkusativ: letzte Woche, nächsten Monat, jeden Tag, dieses Jahr. Đuôi theo giống: der Monat → -en, die Woche → -e, das Jahr → -es. Tiếng Việt nói \"vào tuần trước\", nhưng tiếng Đức không có \"in\"."
+  - type: explain
+    text:
+      vi: "So sánh với am/im/um đã học: am Montag, im Mai, um acht Uhr có giới từ; letzten Montag, nächsten Mai, jeden Morgen thì không. Mốc thời gian đứng đầu câu vẫn chiếm vị trí 1, động từ đứng ngay sau."
+  - type: explain
+    text:
+      vi: "Trạng từ thời gian: vorgestern (hôm kia), übermorgen (ngày kia), neulich (hôm nọ), gerade (vừa mới / đang), bald (sắp), vorher (trước đó), nachher (lát nữa). früher là \"trước đây\" nói chung, damals là \"hồi đó\" – một thời điểm đã nhắc tới."
+  - type: deep_explain
+    text:
+      vi: "Vì sao letzte Woche ở Akkusativ? Tiếng Đức dùng Akkusativ không giới từ để chỉ thời điểm hoặc khoảng thời gian: Ich war eine Woche in Wien (một tuần), Ich gehe jeden Tag joggen (mỗi ngày). Đuôi của letzt-/nächst- giống đuôi của der/die/das ở Akkusativ: den Monat → letzten Monat, die Woche → letzte Woche, das Jahr → letztes Jahr. Bạn có thể gặp dạng dài có giới từ (in der letzten Woche), nhưng dạng ngắn là cách nói thông dụng nhất. das Mal (lần) cũng dùng như vậy: das nächste Mal, jedes Mal, còn zum ersten Mal có zum (= zu dem) nên đuôi là -en."
+  - type: example
+    target: Vor einem Jahr war ich zum ersten Mal in Deutschland.
+    target_lang: de
+    translation:
+      vi: Cách đây một năm tôi đến Đức lần đầu tiên.
+    note:
+      vi: vor einem Jahr = cách đây một năm (vor + Dativ, das Jahr → einem Jahr). zum ersten Mal = lần đầu tiên.
+  - type: example
+    target: Nach der Arbeit bin ich sofort nach Hause gefahren.
+    target_lang: de
+    translation:
+      vi: Sau giờ làm tôi về nhà ngay.
+    note:
+      vi: nach der Arbeit = sau giờ làm (die Arbeit → der Arbeit, Dativ). Cả cụm ở vị trí 1, nên bin đứng ngay sau.
+  - type: example
+    target: Letzten Montag war ich krank, aber nächste Woche habe ich frei.
+    target_lang: de
+    translation:
+      vi: Thứ Hai tuần trước tôi bị ốm, nhưng tuần tới tôi được nghỉ.
+    note:
+      vi: "Không có giới từ: der Montag → letzten Montag, die Woche → nächste Woche. So sánh: am Montag (có am)."
+  - type: example
+    target: Früher habe ich in Hanoi gewohnt. Damals konnte ich noch kein Deutsch.
+    target_lang: de
+    translation:
+      vi: Trước đây tôi sống ở Hà Nội. Hồi đó tôi chưa biết tiếng Đức.
+    note:
+      vi: früher = trước đây (so với bây giờ); damals = hồi đó, chỉ đúng thời gian vừa nhắc.
+  - type: example
+    target: Ich bin gerade nach Hause gekommen. Ich rufe dich nachher an, okay?
+    target_lang: de
+    translation:
+      vi: Mình vừa mới về đến nhà. Lát nữa mình gọi cho bạn nhé?
+    note:
+      vi: Nói với bạn bè (du). gerade + Perfekt = vừa mới; nachher = lát nữa.
+  - type: common_mistake
+    wrong: Ich war vor zwei Jahre in Berlin.
+    right: Ich war vor zwei Jahren in Berlin.
+    target_lang: de
+    note:
+      vi: vor + Dativ; Dativ số nhiều thêm -n vào danh từ – vor zwei Jahren.
+  - type: common_mistake
+    wrong: In letzte Woche war ich krank.
+    right: Letzte Woche war ich krank.
+    target_lang: de
+    note:
+      vi: Mốc thời gian với letzt- không cần giới từ (Akkusativ) – Letzte Woche …
+  - type: common_mistake
+    wrong: Nach zwei Wochen fahre ich nach Hause.
+    right: In zwei Wochen fahre ich nach Hause.
+    target_lang: de
+    note:
+      vi: "Muốn nói \"hai tuần nữa\" (tính từ bây giờ) thì dùng in + Dativ; nach zwei Wochen là \"sau hai tuần\" tính từ một mốc khác trong câu chuyện."
+  - type: common_mistake
+    wrong: Ich war zum erste Mal in Wien.
+    right: Ich war zum ersten Mal in Wien.
+    target_lang: de
+    note:
+      vi: zum = zu dem (Dativ), nên số thứ tự có đuôi -en – zum ersten Mal.
+  - type: summary
+    points:
+      - vi: "vor/nach + Dativ: vor dem Essen, nach der Arbeit."
+      - vi: "vor zwei Jahren = cách đây hai năm; in zwei Jahren = hai năm nữa; nach zwei Jahren = sau hai năm."
+      - vi: "Không giới từ, Akkusativ: letzten Monat, letzte Woche, letztes Jahr; nächst-, jed-, dies- cũng vậy."
+      - vi: "am/im/um có giới từ; letzt-/nächst-/jed-/dies- thì không."
+      - vi: "vorgestern – gestern – heute – morgen – übermorgen."
+      - vi: "früher (trước đây) / damals (hồi đó) / neulich (hôm nọ) / gerade (vừa mới, đang) / bald (sắp)."
+      - vi: "zum ersten Mal = lần đầu tiên."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u01l3-mcq-jahren
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u01-g-vor-nach-dativ
+    prompt:
+      stem: "Điền dạng đúng: \"Ich war vor zwei ___ in Österreich.\" (cách đây hai năm)"
+      stem_lang: vi
+      options:
+        - { id: j1a, text: Jahren, lang: de }
+        - { id: j2b, text: Jahre, lang: de }
+        - { id: j3c, text: Jahr, lang: de }
+        - { id: j4d, text: Jahres, lang: de }
+    answer:
+      correct_option_id: j1a
+    explanation:
+      vi: "vor đi với Dativ. Số nhiều của das Jahr là die Jahre, và ở Dativ số nhiều danh từ thêm -n: vor zwei Jahren."
+    display_answer: Jahren
+
+  - key: de:exercise:a2u01l3-mcq-in-zwei-wochen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-vor-nach-dativ
+    prompt:
+      stem: "Câu nào nghĩa là \"Hai tuần nữa tôi đi Berlin.\"?"
+      stem_lang: vi
+      options:
+        - { id: w1a, text: In zwei Wochen fahre ich nach Berlin., lang: de }
+        - { id: w2b, text: Vor zwei Wochen bin ich nach Berlin gefahren., lang: de }
+        - { id: w3c, text: Zwei Wochen fahre ich nach Berlin., lang: de }
+        - { id: w4d, text: Vor zwei Wochen fahre ich nach Berlin., lang: de }
+    answer:
+      correct_option_id: w1a
+    explanation:
+      vi: "\"… nữa\" trong tương lai là in + Dativ: in zwei Wochen. vor zwei Wochen là \"cách đây hai tuần\" (quá khứ), không đi với thì hiện tại để nói tương lai. Zwei Wochen không có giới từ nghĩa là \"trong hai tuần\" (kéo dài), không phải \"hai tuần nữa\"."
+    display_answer: In zwei Wochen fahre ich nach Berlin.
+
+  - key: de:exercise:a2u01l3-mcq-dresden-oft
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-mal
+    prompt:
+      stem: "Hallo Tim, vorgestern war ich zum ersten Mal in Dresden. Früher habe ich in Leipzig gewohnt, aber damals hatte ich nie Zeit für Ausflüge. Nach dem Frühstück haben wir die Stadt besichtigt, und am Abend waren wir in einem Konzert. Nächsten Monat fahre ich wieder hin. Kommst du mit? Liebe Grüße, Lisa — Richtig oder falsch? Lisa war schon oft in Dresden."
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Lisa viết: vorgestern war ich zum ersten Mal in Dresden – hôm kia là lần đầu tiên cô ấy đến Dresden. Vì vậy câu \"đã đến nhiều lần\" là sai."
+    display_answer: Falsch
+
+  - key: de:exercise:a2u01l3-mcq-dresden-wann
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-g-zeitangaben-akk
+    prompt:
+      stem: "Hallo Tim, vorgestern war ich zum ersten Mal in Dresden. Früher habe ich in Leipzig gewohnt, aber damals hatte ich nie Zeit für Ausflüge. Nach dem Frühstück haben wir die Stadt besichtigt, und am Abend waren wir in einem Konzert. Nächsten Monat fahre ich wieder hin. Kommst du mit? Liebe Grüße, Lisa — Wann fährt Lisa wieder nach Dresden?"
+      stem_lang: de
+      options:
+        - { id: q1a, text: Nächsten Monat., lang: de }
+        - { id: q2b, text: Letzten Monat., lang: de }
+        - { id: q3c, text: Übermorgen., lang: de }
+        - { id: q4d, text: Nach dem Frühstück., lang: de }
+    answer:
+      correct_option_id: q1a
+    explanation:
+      vi: "Nächsten Monat fahre ich wieder hin = tháng sau tôi lại đến đó. Letzten Monat là tháng trước; nach dem Frühstück là lúc cả nhóm bắt đầu tham quan hôm kia."
+    display_answer: Nächsten Monat.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u01l3-fill-letztes
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-zeitangaben-akk
+    prompt:
+      template: "(letzt-) {{b1}} Jahr war ich in Wien. (nächst-) {{b2}} Monat fahre ich nach Rom. Ich lerne (jed-) {{b3}} Tag Deutsch."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Letztes]
+        b2: [Nächsten]
+        b3: [jeden]
+    known_wrong:
+      - answer: Letzte
+        feedback_vi: das Jahr là giống trung → letztes Jahr.
+        error_tag: adj_ending
+      - answer: Letzten
+        feedback_vi: das Jahr là giống trung → letztes Jahr (-en dành cho der Monat).
+        error_tag: adj_ending
+      - answer: Nächster
+        feedback_vi: Mốc thời gian ở Akkusativ; der Monat → nächsten Monat.
+        error_tag: case_dat_akk
+      - answer: Nächste
+        feedback_vi: der Monat là giống đực → nächsten Monat (Akkusativ).
+        error_tag: adj_ending
+      - answer: jeder
+        feedback_vi: Mốc thời gian ở Akkusativ; der Tag → jeden Tag.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Mốc thời gian không giới từ ở Akkusativ. das Jahr → letztes Jahr; der Monat → nächsten Monat; der Tag → jeden Tag."
+    display_answer: "Letztes Jahr war ich in Wien. Nächsten Monat fahre ich nach Rom. Ich lerne jeden Tag Deutsch."
+
+  - key: de:exercise:a2u01l3-fill-nach-der-arbeit
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-dativ-praepositionen
+    prompt:
+      template: "Nach {{b1}} Arbeit gehe ich oft joggen. Vor {{b2}} Essen trinke ich keinen Kaffee. Ich war vor zwei {{b3}} (das Jahr) in Deutschland."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [der]
+        b2: [dem]
+        b3: [Jahren]
+    known_wrong:
+      - answer: die
+        feedback_vi: nach đi với Dativ; die Arbeit → nach der Arbeit.
+        error_tag: case_dat_akk
+      - answer: das
+        feedback_vi: vor (thời gian) đi với Dativ; das Essen → vor dem Essen.
+        error_tag: case_dat_akk
+      - answer: den
+        feedback_vi: Dativ của die Arbeit là der, của das Essen là dem.
+        error_tag: case_dat_akk
+      - answer: Jahre
+        feedback_vi: Dativ số nhiều thêm -n – vor zwei Jahren.
+        error_tag: plural_form
+    explanation:
+      vi: "vor và nach chỉ thời gian đi với Dativ: die Arbeit → der Arbeit, das Essen → dem Essen. Dativ số nhiều: die Jahre → den Jahren, nên vor zwei Jahren."
+    display_answer: "Nach der Arbeit gehe ich oft joggen. Vor dem Essen trinke ich keinen Kaffee. Ich war vor zwei Jahren in Deutschland."
+
+  - key: de:exercise:a2u01l3-tr-vor-einem-jahr
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-g-vor-nach-dativ
+    prompt:
+      source_text: Cách đây một năm tôi đã ở Đức.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Vor einem Jahr war ich in Deutschland.
+        - Ich war vor einem Jahr in Deutschland.
+        - Vor einem Jahr bin ich in Deutschland gewesen.
+        - Ich bin vor einem Jahr in Deutschland gewesen.
+    known_wrong:
+      - answer: Vor ein Jahr war ich in Deutschland.
+        feedback_vi: vor + Dativ; das Jahr → vor einem Jahr.
+        error_tag: case_dat_akk
+      - answer: Vor einem Jahr ich war in Deutschland.
+        feedback_vi: Vor einem Jahr ở vị trí 1 thì war phải ở vị trí 2 – Vor einem Jahr war ich …
+        error_tag: verb_position
+      - answer: Nach einem Jahr war ich in Deutschland.
+        feedback_vi: "\"Cách đây\" là vor; nach einem Jahr nghĩa là \"sau một năm\"."
+        error_tag: preposition
+      - answer: In einem Jahr war ich in Deutschland.
+        feedback_vi: "in einem Jahr là \"một năm nữa\" (tương lai); \"cách đây\" là vor."
+        error_tag: preposition
+    explanation:
+      vi: "\"Cách đây một năm\" = vor einem Jahr (vor + Dativ). sein ở quá khứ thường dùng war; Perfekt bin … gewesen cũng đúng. Cụm thời gian ở vị trí 1 thì động từ đứng ngay sau."
+    display_answer: Vor einem Jahr war ich in Deutschland.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u01l3-wb-naechste-woche
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-naechst
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tuần tới chúng tôi đi Hamburg.\""
+      tokens:
+        - { id: x-hamburg, text: Hamburg }
+        - { id: x-wir, text: wir }
+        - { id: x-woche, text: Woche }
+        - { id: x-in, text: In }
+        - { id: x-fahren, text: fahren }
+        - { id: x-nach, text: nach }
+        - { id: x-naechste, text: Nächste }
+    answer:
+      orders:
+        - [x-naechste, x-woche, x-fahren, x-wir, x-nach, x-hamburg]
+    explanation:
+      vi: "Nächste Woche (Akkusativ, không giới từ – token In là thừa) ở vị trí 1, nên fahren ở vị trí 2, chủ ngữ wir đứng sau. Tương lai gần dùng thì hiện tại."
+    display_answer: Nächste Woche fahren wir nach Hamburg.
+
+  - key: de:exercise:a2u01l3-mcq-zum-ersten-mal
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-mal
+    prompt:
+      stem: "Một người Đức hỏi bạn đã đến Đức bao giờ chưa. Bạn muốn nói: \"Đây là lần đầu tiên tôi ở Đức.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: e1a, text: Ich bin zum ersten Mal in Deutschland., lang: de }
+        - { id: e2b, text: Ich bin zum erste Mal in Deutschland., lang: de }
+        - { id: e3c, text: Ich bin zuerst in Deutschland., lang: de }
+        - { id: e4d, text: Ich bin zum ersten Mal nach Deutschland., lang: de }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "zum ersten Mal = lần đầu tiên; zum = zu dem nên số thứ tự có đuôi -en. zuerst là \"trước tiên\" trong một chuỗi việc. Đang ở đâu thì dùng in Deutschland, không dùng nach (chỉ hướng đi)."
+    display_answer: Ich bin zum ersten Mal in Deutschland.
+
+  - key: de:exercise:a2u01l3-tr-frueher-damals
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u01-damals
+    prompt:
+      source_text: Früher habe ich in Hanoi gewohnt. Damals konnte ich noch kein Deutsch.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước đây tôi sống ở Hà Nội. Hồi đó tôi chưa biết tiếng Đức.
+        - Trước đây tôi đã sống ở Hà Nội. Hồi đó tôi chưa biết tiếng Đức.
+        - Trước đây tôi sống ở Hà Nội. Hồi đó tôi còn chưa biết tiếng Đức.
+        - Trước đây tôi sống ở Hà Nội. Lúc đó tôi chưa biết tiếng Đức.
+        - Trước đây tôi sống ở Hà Nội. Khi đó tôi chưa biết tiếng Đức.
+        - Trước đây tôi sống ở Hà Nội. Hồi đó tôi chưa biết chút tiếng Đức nào.
+        - Trước đây tôi sống ở Hà Nội. Hồi đó tôi chưa nói được tiếng Đức.
+        - Ngày trước tôi sống ở Hà Nội. Hồi đó tôi chưa biết tiếng Đức.
+        - Ngày xưa tôi sống ở Hà Nội. Hồi đó tôi chưa biết tiếng Đức.
+        - Trước kia tôi sống ở Hà Nội. Hồi đó tôi chưa biết tiếng Đức.
+        - Hồi trước tôi sống ở Hà Nội. Lúc đó tôi chưa biết tiếng Đức.
+        - Trước đây tôi sống ở Hà Nội. Hồi ấy tôi chưa biết tiếng Đức.
+        - Trước đây tôi sống ở Hà Nội. Hồi đó tôi vẫn chưa biết tiếng Đức.
+        - Trước đây tôi sống ở Hà Nội. Hồi đó tôi không biết tiếng Đức.
+        - Trước đây mình sống ở Hà Nội. Hồi đó mình chưa biết tiếng Đức.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trước đây tôi sống ở Hà Nội. Hồi đó tôi không muốn học tiếng Đức.
+        feedback_vi: konnte … kein Deutsch = không biết tiếng Đức (können), không phải "không muốn".
+        error_tag: meaning
+    explanation:
+      vi: "früher = trước đây; damals = hồi đó (đúng thời gian vừa nhắc). konnte noch kein Deutsch = khi ấy chưa biết tiếng Đức (Deutsch können = biết tiếng Đức)."
+    display_answer: Trước đây tôi sống ở Hà Nội. Hồi đó tôi chưa biết tiếng Đức.

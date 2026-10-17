@@ -1,0 +1,406 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u01-am-wochenende
+order_index: 1
+level: a2
+title:
+  vi: Cuối tuần của bạn thế nào? – Perfekt mở rộng (Was hast du erlebt?)
+objectives:
+  - vi: Kể chi tiết một trải nghiệm bằng Perfekt, kể cả với động từ có tiền tố không tách (besucht, vergessen) và động từ -ieren (telefoniert).
+  - vi: Nhận ra khi nào Partizip II không có ge- nhờ trọng âm của từ.
+  - vi: Chọn đúng haben hoặc sein, đặc biệt với passieren (ist passiert).
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking]
+prerequisites: []
+items:
+  - item: de:item:a2u01-g-partizip-praefix-ieren
+  - item: de:item:a2u01-erleben
+  - item: de:item:a2u01-besichtigen
+  - item: de:item:a2u01-verpassen
+  - item: de:item:a2u01-vergessen
+  - item: de:item:a2u01-passieren
+  - item: de:item:a2u01-erzaehlen
+  - item: de:item:a2u01-telefonieren
+  - item: de:item:a2u01-probieren
+  - item: de:item:a2u01-fotografieren
+  - item: de:item:a2u01-erlebnis
+  - item: de:item:a2u01-verbringen
+  - item: de:item:a2u01-bekommen
+  - item: de:item:a2u01-verlieren
+  - item: de:item:a2u01-gewinnen
+  - item: de:item:a2u01-empfehlen
+  - item: de:item:a2u01-geschichte
+  - item: de:item:p0u3-g-wortakzent
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-haben
+    role: reuse
+  - item: de:item:a1u06-g-partizip-ii
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-sein
+    role: reuse
+  - item: de:item:a1u06-besuchen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được cuối tuần của mình thật chi tiết, ví dụ: \"Am Samstag habe ich meine Oma besucht. Sie hat mir viel erzählt, und wir haben viel fotografiert.\""
+  - type: explain
+    text:
+      vi: "Bạn đã biết Partizip II có ge-: gemacht, gesehen, eingekauft. Có hai nhóm động từ KHÔNG thêm ge-: động từ có tiền tố không tách (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-) và động từ tận cùng -ieren."
+  - type: explain
+    text:
+      vi: "Với tiền tố không tách, bạn chỉ đổi đuôi như bình thường: besuchen → besucht, erleben → erlebt, verpassen → verpasst; động từ mạnh giữ đuôi -en: vergessen → vergessen, bekommen → bekommen. Động từ -ieren luôn tận cùng bằng -t: telefonieren → telefoniert, fotografieren → fotografiert."
+  - type: explain
+    text:
+      vi: "Mẹo nhớ bằng trọng âm: ge- chỉ đứng trước âm tiết được nhấn. be-SU-chen, ver-GES-sen, te-le-fo-NIE-ren có âm tiết đầu không nhấn, nên không có ge-. Tiền tố tách được nhấn (EIN-kaufen, AN-rufen), nên ge- vẫn chen vào giữa: eingekauft, angerufen."
+  - type: explain
+    text:
+      vi: "Trợ động từ vẫn theo quy tắc cũ: phần lớn dùng haben (ich habe besucht, ich habe telefoniert). passieren dùng sein: Was ist passiert? Tiếng Việt chỉ cần thêm \"đã\", còn tiếng Đức phải chọn đúng haben hay sein."
+  - type: explain
+    text:
+      vi: "Khi nói chuyện, người Đức kể quá khứ chủ yếu bằng Perfekt. Präteritum (ich besuchte) chủ yếu gặp trong văn viết; riêng war, hatte và động từ khiếm khuyết (bài sau) thì dùng cả khi nói."
+  - type: deep_explain
+    text:
+      vi: "Danh sách tiền tố không tách kèm ví dụ: be- (besuchen → besucht, bezahlen → bezahlt, bekommen → bekommen), emp- (empfehlen → empfohlen), ent- (entschuldigen → entschuldigt), er- (erleben → erlebt, erzählen → erzählt), ge- (gewinnen → gewonnen, gefallen → gefallen), miss- (missverstehen → missverstanden), ver- (verstehen → verstanden, verlieren → verloren, verbringen → verbracht), zer- (zerstören → zerstört). Động từ -ieren phần lớn là từ vay mượn và đều có quy tắc: studieren → studiert, probieren → probiert. Một vài tiền tố như durch-, über-, um- lúc tách được, lúc không – bạn sẽ gặp dần ở các bài sau; khi tách được thì chúng được nhấn và có ge- ở giữa (durchgefallen). Với động từ mạnh, bạn vẫn phải học thuộc dạng Partizip: vergessen → vergessen, verlieren → verloren, empfehlen → empfohlen."
+  - type: example
+    target: Was hast du am Wochenende erlebt? – Ich habe meine Oma besucht. Sie hat mir viel erzählt.
+    target_lang: de
+    translation:
+      vi: Cuối tuần bạn đã làm gì? – Mình về thăm bà. Bà kể cho mình nghe nhiều chuyện lắm.
+    note:
+      vi: Nói với bạn bè (du). erlebt, besucht, erzählt đều không có ge- vì er- và be- là tiền tố không tách.
+  - type: example
+    target: Am Samstag haben wir die Stadt besichtigt und viel fotografiert.
+    target_lang: de
+    translation:
+      vi: Thứ Bảy chúng tôi đã tham quan thành phố và chụp rất nhiều ảnh.
+    note:
+      vi: Hai Partizip dùng chung một haben. fotografieren tận cùng -ieren nên Partizip là fotografiert.
+  - type: example
+    target: Am Sonntag habe ich meine Fahrkarte vergessen und den Zug verpasst.
+    target_lang: de
+    translation:
+      vi: Chủ nhật tôi để quên vé và lỡ chuyến tàu.
+    note:
+      vi: vergessen là động từ mạnh nên Partizip giữ đuôi -en và trông giống hệt nguyên thể; verpassen → verpasst.
+  - type: example
+    target: Am Freitag habe ich eingekauft, und am Samstag habe ich meine Freunde besucht.
+    target_lang: de
+    translation:
+      vi: Thứ Sáu tôi đi mua sắm, còn thứ Bảy tôi đi thăm bạn bè.
+    note:
+      vi: "So sánh: einkaufen là động từ tách (nhấn EIN) → eingekauft; besuchen có be- không nhấn → besucht."
+  - type: example
+    target: Haben Sie schon einmal Döner probiert? – Nein, noch nie.
+    target_lang: de
+    translation:
+      vi: Anh/chị đã bao giờ ăn thử Döner chưa? – Chưa, chưa bao giờ.
+    note:
+      vi: Hỏi lịch sự (Sie). schon einmal = đã từng; probieren → probiert.
+  - type: example
+    target: Wo hast du das Wochenende verbracht? – In Hamburg. Das war ein Erlebnis!
+    target_lang: de
+    translation:
+      vi: Cuối tuần bạn ở đâu? – Ở Hamburg. Thật là một trải nghiệm đáng nhớ!
+    note:
+      vi: Nói với bạn bè (du). verbringen → verbracht; das Erlebnis = trải nghiệm đáng nhớ.
+  - type: common_mistake
+    wrong: Ich habe meine Oma gebesucht.
+    right: Ich habe meine Oma besucht.
+    target_lang: de
+    note:
+      vi: be- là tiền tố không tách, không được nhấn, nên không thêm ge-.
+  - type: common_mistake
+    wrong: Wir haben den Bus geverpasst.
+    right: Wir haben den Bus verpasst.
+    target_lang: de
+    note:
+      vi: ver- cũng là tiền tố không tách – Partizip chỉ đổi đuôi thành -t.
+  - type: common_mistake
+    wrong: Was hat passiert?
+    right: Was ist passiert?
+    target_lang: de
+    note:
+      vi: passieren (xảy ra) đi với sein trong Perfekt.
+  - type: common_mistake
+    wrong: Ich habe mit Anna getelefoniert.
+    right: Ich habe mit Anna telefoniert.
+    target_lang: de
+    note:
+      vi: Động từ tận cùng -ieren không bao giờ thêm ge-.
+  - type: summary
+    points:
+      - vi: "Không có ge-: tiền tố không tách be-, emp-, ent-, er-, ge-, miss-, ver-, zer- (besucht, erlebt, verpasst, vergessen)."
+      - vi: "Không có ge-: động từ -ieren, luôn tận cùng -t (telefoniert, fotografiert, probiert)."
+      - vi: "Mẹo: âm tiết đầu không nhấn → không có ge-; tiền tố tách được nhấn → ge- ở giữa (eingekauft)."
+      - vi: "Phần lớn dùng haben; passieren dùng sein: Was ist passiert?"
+      - vi: "Văn nói kể quá khứ bằng Perfekt."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u01l1-mcq-besucht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u01-g-partizip-praefix-ieren
+    prompt:
+      stem: "Partizip II của besuchen là gì?"
+      stem_lang: vi
+      options:
+        - { id: p4k, text: besucht, lang: de }
+        - { id: h2w, text: gebesucht, lang: de }
+        - { id: t7m, text: besuchen, lang: de }
+        - { id: z9c, text: gebesuchen, lang: de }
+    answer:
+      correct_option_id: p4k
+    explanation:
+      vi: "be- là tiền tố không tách nên không thêm ge-; besuchen là động từ thường nên đuôi là -t: besucht. besuchen là nguyên thể, không phải Partizip."
+    display_answer: besucht
+
+  - key: de:exercise:a2u01l1-mcq-wortakzent
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-g-wortakzent
+    prompt:
+      stem: "Vì sao Partizip của verpassen là verpasst, còn của einkaufen là eingekauft?"
+      stem_lang: vi
+      options:
+        - { id: a3x, text: "ver- không được nhấn nên không có ge-; ein- được nhấn (tiền tố tách) nên ge- chen vào giữa.", lang: vi }
+        - { id: b8y, text: "verpassen là động từ mạnh, einkaufen là động từ thường.", lang: vi }
+        - { id: c5z, text: "verpassen đi với sein, einkaufen đi với haben.", lang: vi }
+        - { id: d1q, text: "Động từ dài hơn ba âm tiết thì không có ge-.", lang: vi }
+    answer:
+      correct_option_id: a3x
+    explanation:
+      vi: "ge- chỉ đứng trước âm tiết được nhấn. ver-PAS-sen có âm tiết đầu không nhấn nên không có ge-; EIN-kaufen nhấn vào tiền tố tách, nên ge- chen giữa: ein-ge-kauft. Cả hai đều là động từ thường và đều dùng haben."
+    display_answer: "ver- không được nhấn nên không có ge-; ein- được nhấn (tiền tố tách) nên ge- chen vào giữa."
+
+  - key: de:exercise:a2u01l1-mcq-telefoniert
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u01-telefonieren
+    prompt:
+      stem: "Câu nào đúng nghĩa \"Hôm qua tôi đã nói chuyện điện thoại với mẹ.\"?"
+      stem_lang: vi
+      options:
+        - { id: k6r, text: Ich habe gestern mit meiner Mutter telefoniert., lang: de }
+        - { id: j2s, text: Ich telefoniere gestern mit meiner Mutter., lang: de }
+        - { id: w8u, text: Ich bin gestern mit meiner Mutter telefoniert., lang: de }
+        - { id: q3v, text: Ich habe gestern mit meiner Mutter telefonieren., lang: de }
+    answer:
+      correct_option_id: k6r
+    explanation:
+      vi: "Việc đã xảy ra hôm qua nên dùng Perfekt: habe … telefoniert (đuôi -ieren nên không có ge-). Trợ động từ là haben, không phải sein; nguyên thể telefonieren không đứng cuối câu Perfekt; telefoniere là thì hiện tại."
+    display_answer: Ich habe gestern mit meiner Mutter telefoniert.
+
+  - key: de:exercise:a2u01l1-listen-tante
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u01-fotografieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Letztes Wochenende habe ich meine Tante besucht. Wir haben viel fotografiert.
+      options:
+        - { id: l1a, text: Cuối tuần trước tôi đi thăm dì. Chúng tôi chụp rất nhiều ảnh., lang: vi }
+        - { id: l2b, text: Cuối tuần tới tôi sẽ đi thăm dì. Chúng tôi sẽ chụp rất nhiều ảnh., lang: vi }
+        - { id: l3c, text: Cuối tuần trước dì đến thăm tôi. Chúng tôi chụp rất nhiều ảnh., lang: vi }
+        - { id: l4d, text: Cuối tuần trước tôi đi thăm dì. Chúng tôi nói chuyện điện thoại rất lâu., lang: vi }
+    answer:
+      correct_option_id: l1a
+    explanation:
+      vi: "Letztes Wochenende = cuối tuần trước; habe … besucht là Perfekt nên việc đã xảy ra, và chủ ngữ là ich (tôi đi thăm dì). fotografiert = đã chụp ảnh, không phải telefoniert (gọi điện)."
+    display_answer: Cuối tuần trước tôi đi thăm dì. Chúng tôi chụp rất nhiều ảnh.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u01l1-fill-oma
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-erzaehlen
+    prompt:
+      template: "Am Samstag habe ich meine Oma {{b1}} (besuchen). Sie hat mir viel {{b2}} (erzählen). Am Abend habe ich lange mit Tom {{b3}} (telefonieren)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [besucht]
+        b2: [erzählt]
+        b3: [telefoniert]
+    known_wrong:
+      - answer: gebesucht
+        feedback_vi: be- là tiền tố không tách – không thêm ge-, chỉ cần besucht.
+        error_tag: participle_form
+      - answer: geerzählt
+        feedback_vi: er- là tiền tố không tách – Partizip là erzählt.
+        error_tag: participle_form
+      - answer: getelefoniert
+        feedback_vi: Động từ -ieren không có ge- – telefoniert.
+        error_tag: participle_form
+      - answer: besuchen
+        feedback_vi: Ở cuối câu Perfekt cần Partizip II (besucht), không phải nguyên thể.
+        error_tag: participle_form
+    explanation:
+      vi: "besuchen (be-) → besucht, erzählen (er-) → erzählt, telefonieren (-ieren) → telefoniert. Cả ba là động từ thường nên đuôi -t, không có ge-, và đi với haben."
+    display_answer: "Am Samstag habe ich meine Oma besucht. Sie hat mir viel erzählt. Am Abend habe ich lange mit Tom telefoniert."
+
+  - key: de:exercise:a2u01l1-fill-vergessen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u06-g-perfekt-sein
+    prompt:
+      template: "Was {{b1}} passiert? – Ich {{b2}} meine Fahrkarte {{b3}} (vergessen) und den Zug verpasst."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [ist]
+        b2: [habe]
+        b3: [vergessen]
+    known_wrong:
+      - answer: hat
+        feedback_vi: passieren đi với sein – Was ist passiert?
+        error_tag: aux_verb
+      - answer: bin
+        feedback_vi: vergessen và verpassen đi với haben – ich habe … vergessen.
+        error_tag: aux_verb
+      - answer: gevergessen
+        feedback_vi: ver- là tiền tố không tách – Partizip là vergessen, không thêm ge-.
+        error_tag: participle_form
+      - answer: vergesst
+        feedback_vi: vergessen là động từ mạnh – Partizip giữ đuôi -en và giống nguyên thể – vergessen.
+        error_tag: participle_form
+    explanation:
+      vi: "passieren dùng sein (ist passiert). vergessen và verpassen dùng haben, ở đây chủ ngữ ich nên là habe. vergessen là động từ mạnh có ver- nên Partizip giống hệt nguyên thể: vergessen."
+    display_answer: "Was ist passiert? – Ich habe meine Fahrkarte vergessen und den Zug verpasst."
+
+  - key: de:exercise:a2u01l1-tr-bus
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-verpassen
+    prompt:
+      source_text: Hôm qua tôi đã lỡ chuyến xe buýt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe gestern den Bus verpasst.
+        - Gestern habe ich den Bus verpasst.
+        - Ich habe den Bus gestern verpasst.
+    known_wrong:
+      - answer: Ich habe gestern den Bus geverpasst.
+        feedback_vi: ver- là tiền tố không tách – Partizip là verpasst, không thêm ge-.
+        error_tag: participle_form
+      - answer: Gestern ich habe den Bus verpasst.
+        feedback_vi: Gestern ở vị trí 1 thì habe phải ở vị trí 2 – Gestern habe ich …
+        error_tag: verb_position
+      - answer: Ich bin gestern den Bus verpasst.
+        feedback_vi: verpassen đi với haben – ich habe … verpasst.
+        error_tag: aux_verb
+      - answer: Ich habe gestern der Bus verpasst.
+        feedback_vi: der Bus là tân ngữ nên ở Akkusativ – den Bus.
+        error_tag: case_dat_akk
+      - answer: Ich habe gestern verpasst den Bus.
+        feedback_vi: Partizip verpasst đứng cuối câu.
+        error_tag: word_order
+    explanation:
+      vi: "Perfekt: habe ở vị trí 2, Partizip verpasst (không có ge- vì ver-) ở cuối câu. der Bus làm tân ngữ nên đổi thành den Bus."
+    display_answer: Ich habe gestern den Bus verpasst.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u01l1-wb-museum
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-besichtigen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thứ Bảy chúng tôi đã tham quan một bảo tàng.\""
+      tokens:
+        - { id: x-museum, text: Museum }
+        - { id: x-haben, text: haben }
+        - { id: x-sind, text: sind }
+        - { id: x-samstag, text: Samstag }
+        - { id: x-ein, text: ein }
+        - { id: x-besichtigt, text: besichtigt }
+        - { id: x-wir, text: wir }
+        - { id: x-am, text: Am }
+    answer:
+      orders:
+        - [x-am, x-samstag, x-haben, x-wir, x-ein, x-museum, x-besichtigt]
+    explanation:
+      vi: "Am Samstag ở vị trí 1, nên haben ở vị trí 2 và chủ ngữ wir đứng sau. Partizip besichtigt (không có ge- vì be- không nhấn) đứng cuối câu. besichtigen đi với haben, nên token sind là thừa."
+    display_answer: Am Samstag haben wir ein Museum besichtigt.
+
+  - key: de:exercise:a2u01l1-tr-stadt
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u01-g-partizip-praefix-ieren
+    prompt:
+      source_text: Am Samstag haben wir die Stadt besichtigt und viel fotografiert.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thứ Bảy chúng tôi đã tham quan thành phố và chụp rất nhiều ảnh.
+        - Thứ Bảy chúng tôi tham quan thành phố và chụp rất nhiều ảnh.
+        - Thứ Bảy chúng tôi đã tham quan thành phố và chụp nhiều ảnh.
+        - Thứ Bảy chúng tôi tham quan thành phố và chụp nhiều ảnh.
+        - Thứ Bảy chúng tôi đã đi tham quan thành phố và chụp rất nhiều ảnh.
+        - Thứ Bảy chúng tôi đi tham quan thành phố và chụp rất nhiều ảnh.
+        - Thứ Bảy chúng tôi đã đi tham quan thành phố và chụp nhiều ảnh.
+        - Hôm thứ Bảy chúng tôi đã tham quan thành phố và chụp rất nhiều ảnh.
+        - Thứ Bảy chúng tôi đã tham quan thành phố và đã chụp rất nhiều ảnh.
+        - Thứ Bảy chúng tôi đã tham quan thành phố và chụp ảnh rất nhiều.
+        - Thứ Bảy chúng tôi đã tham quan thành phố và chụp được rất nhiều ảnh.
+        - Thứ Bảy bọn mình đã tham quan thành phố và chụp rất nhiều ảnh.
+        - Thứ Bảy chúng mình đã tham quan thành phố và chụp rất nhiều ảnh.
+        - Thứ Bảy chúng tôi đã thăm thành phố và chụp rất nhiều ảnh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thứ Bảy chúng tôi sẽ tham quan thành phố và chụp rất nhiều ảnh.
+        feedback_vi: haben … besichtigt, fotografiert là Perfekt – việc đã xảy ra, không phải "sẽ".
+        error_tag: tense_meaning
+    explanation:
+      vi: "besichtigt là Partizip của besichtigen (tham quan), fotografiert là của fotografieren (chụp ảnh); cả hai dùng chung haben. Tiếng Việt không bắt buộc thêm \"đã\" khi đã có mốc thời gian."
+    display_answer: Thứ Bảy chúng tôi đã tham quan thành phố và chụp rất nhiều ảnh.
+
+  - key: de:exercise:a2u01l1-mcq-passiert
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u01-passieren
+    prompt:
+      stem: "Bạn thân của bạn trông rất buồn. Bạn hỏi: \"Đã có chuyện gì vậy?\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s4e, text: Was ist passiert?, lang: de }
+        - { id: s7f, text: Was hat passiert?, lang: de }
+        - { id: s2g, text: Was ist passieren?, lang: de }
+        - { id: s9h, text: Was hast du passiert?, lang: de }
+    answer:
+      correct_option_id: s4e
+    explanation:
+      vi: "passieren đi với sein, và vì tận cùng -ieren nên Partizip là passiert (không có ge-); passieren là nguyên thể, không dùng ở đây. Chủ ngữ là was (chuyện gì), không phải du, nên không nói Was hast du passiert."
+    display_answer: Was ist passiert?
