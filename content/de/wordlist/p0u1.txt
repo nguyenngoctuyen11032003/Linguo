@@ -1,0 +1,4 @@
+# Unit P0U1 (Das Alphabet und die Vokale): correct German words the offline dictionary lacks.
+# Letter names as listed in Duden (das Jot, das Vau).
+Jot
+Vau

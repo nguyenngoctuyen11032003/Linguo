@@ -1,0 +1,338 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u1-umlaute
+order_index: 3
+level: pre_a1
+title:
+  vi: Ä, Ö, Ü (Die Umlaute)
+objectives:
+  - vi: Phát âm đúng ü, ö, ä trong các từ thông dụng.
+  - vi: Nghe phân biệt u – ü, o – ö, a – ä (die Tour – die Tür, schon – schön).
+  - vi: Gõ được ä, ö, ü, hoặc ae, oe, ue khi bàn phím không có chữ đó.
+estimated_minutes: 12
+skills: [pronunciation, listening, speaking]
+prerequisites: [de:lesson:p0u1-vokale-lang-kurz]
+items:
+  - item: de:item:p0u1-g-umlaute
+  - item: de:item:p0u1-schoen
+  - item: de:item:p0u1-muede
+  - item: de:item:p0u1-hoeren
+  - item: de:item:p0u1-ueber
+  - item: de:item:p0u1-tuer
+  - item: de:item:p0u1-maedchen
+  - item: de:item:p0u1-kaese
+  - item: de:item:p0u1-broetchen
+  - item: de:item:p0u1-loeffel
+  - item: de:item:p0u1-oel
+  - item: de:item:p0u1-g-vokallaenge
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc đúng những từ có hai chấm như schön, müde, die Tür, das Mädchen, nghe ra sự khác nhau giữa schon và schön, và biết cách gõ các chữ này.
+  - type: explain
+    text:
+      vi: "ü là âm tiếng Việt không có: đặt lưỡi như khi nói \"i\", rồi chu tròn môi như khi nói \"u\". Đừng đọc thành \"uy\" hay \"u\": müde là MÜÜ-đơ, không phải \"muy-đê\"."
+  - type: explain
+    text:
+      vi: "ö cũng là âm tròn môi: đặt lưỡi như khi nói \"ê\", môi tròn như khi nói \"ô\" (schön, hören). ä thì dễ hơn, gần giống \"e\" của tiếng Việt: das Mädchen, der Käse."
+  - type: explain
+    text:
+      vi: "ä, ö, ü cũng có dạng dài và ngắn theo đúng quy tắc chữ viết của bài trước: das Öl (ö dài, một l) – der Löffel (ö ngắn, ff). Hai chấm không phải dấu trang trí: thiếu chúng là thành từ khác, như schon (đã, rồi) và schön (đẹp)."
+  - type: explain
+    text:
+      vi: "Bàn phím không có ä, ö, ü thì bạn gõ ae, oe, ue (và ss thay cho ß): schoen, muede. Trong Linguo, gõ kiểu này vẫn được tính đúng; nhưng bỏ hẳn hai chấm (mude, schon) là sai chính tả."
+  - type: deep_explain
+    text:
+      vi: "Umlaut thường xuất hiện khi từ đổi dạng, nhất là ở số nhiều: der Mann – die Männer, der Hut – die Hüte. Vì vậy trong danh sách từ, ký hiệu ¨ (der Mann, ¨-er) báo số nhiều có thêm hai chấm. das Mädchen là giống trung vì có đuôi -chen, dù chỉ con gái: giống ngữ pháp không phải giới tính."
+  - type: example
+    target: "schon – schön"
+    target_lang: de
+    translation:
+      vi: "đã, rồi – đẹp"
+    note:
+      vi: "schon có o ngắn, môi tròn như \"ô\"; schön có ö dài, lưỡi như \"ê\" mà môi tròn. Hai từ khác nghĩa hoàn toàn."
+  - type: example
+    target: "die Tour – die Tür"
+    target_lang: de
+    translation:
+      vi: "chuyến đi – cánh cửa"
+    note:
+      vi: "Tour có u như \"u\"; Tür có ü: giữ lưỡi như \"i\" và tròn môi."
+  - type: example
+    target: "das Öl – der Löffel"
+    target_lang: de
+    translation:
+      vi: "dầu – cái thìa"
+    note:
+      vi: "Öl: ö dài vì chỉ có một l. Löffel: ö ngắn vì có ff."
+  - type: example
+    target: "das Mädchen, der Käse, das Brötchen"
+    target_lang: de
+    translation:
+      vi: "cô bé, phô mai, bánh mì nhỏ"
+    note:
+      vi: "ä dài như \"e\" kéo dài (MEE-…, KEE-dơ); ö trong Brötchen dài và tròn môi."
+  - type: example
+    target: "müde, über, hören"
+    target_lang: de
+    translation:
+      vi: "mệt, ở trên / về, nghe"
+    note:
+      vi: "ü và ö ở đây đều dài; -e và -er cuối từ đọc nhẹ."
+  - type: common_mistake
+    wrong: "muy-đê"
+    right: "müde"
+    target_lang: de
+    note:
+      vi: "Người Việt hay đọc ü thành \"uy\" hoặc \"u\". ü là một âm duy nhất: lưỡi như \"i\", môi tròn như \"u\", không lướt từ u sang i."
+  - type: common_mistake
+    wrong: "schon (khi muốn nói \"đẹp\")"
+    right: "schön"
+    target_lang: de
+    note:
+      vi: "Bỏ dấu chấm khi viết làm thành từ khác: schon là \"đã, rồi\". Không gõ được ö thì viết schoen, đừng viết schon."
+  - type: common_mistake
+    wrong: "hô-ren"
+    right: "hören"
+    target_lang: de
+    note:
+      vi: "ö không phải \"ô\": giữ lưỡi như \"ê\" rồi mới tròn môi. Đọc \"hô-ren\" thì người Đức nghe không ra từ hören."
+  - type: summary
+    points:
+      - vi: "ü = lưỡi như \"i\" + môi tròn như \"u\" (không phải \"uy\")."
+      - vi: "ö = lưỡi như \"ê\" + môi tròn như \"ô\" (không phải \"ô\")."
+      - vi: "ä ≈ \"e\" của tiếng Việt."
+      - vi: "ä, ö, ü cũng có dài – ngắn: das Öl (dài), der Löffel (ngắn)."
+      - vi: "Không có phím ä, ö, ü, ß → gõ ae, oe, ue, ss; bỏ dấu chấm là sai (schon ≠ schön)."
+      - vi: "das Mädchen là giống trung (đuôi -chen)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u1l3-listen-schoen-schon
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-schoen
+    prompt:
+      audio_asset_id: null
+      fallback_text: schön
+      options:
+        - { id: g5r, text: schön, lang: de }
+        - { id: v2k, text: schon, lang: de }
+    answer:
+      correct_option_id: g5r
+    explanation:
+      vi: "Bạn nghe một âm dài, lưỡi ở vị trí \"ê\" nhưng môi tròn: đó là ö trong schön (đẹp). schon (đã, rồi) có o ngắn, nghe như \"ô\" gọn."
+    display_answer: schön
+
+  - key: de:exercise:p0u1l3-listen-tuer-tour
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-tuer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Tür
+      options:
+        - { id: a3d, text: die Tür, lang: de }
+        - { id: m6x, text: die Tour, lang: de }
+    answer:
+      correct_option_id: a3d
+    explanation:
+      vi: "Âm bạn nghe có màu \"i\" nhưng môi tròn: đó là ü trong die Tür (cánh cửa). die Tour (chuyến đi) có u thường, nghe như \"u\" tiếng Việt."
+    display_answer: die Tür
+
+  - key: de:exercise:p0u1l3-mcq-oe-laut
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u1-g-umlaute
+    prompt:
+      stem: "Khi đọc ö (như trong hören, schön), bạn đặt lưỡi và môi thế nào?"
+      stem_lang: vi
+      options:
+        - { id: o4l, text: "Lưỡi như khi nói \"ê\", môi tròn như khi nói \"ô\"", lang: vi }
+        - { id: u7m, text: "Giống hệt \"ô\" của tiếng Việt", lang: vi }
+        - { id: i2n, text: "Như \"ơ\" của tiếng Việt, môi không tròn", lang: vi }
+        - { id: e9p, text: "Lướt từ \"u\" sang \"y\", như \"uy\"", lang: vi }
+    answer:
+      correct_option_id: o4l
+    explanation:
+      vi: "ö kết hợp vị trí lưỡi của \"ê\" với môi tròn của \"ô\", nên nó không giống hẳn \"ô\" hay \"ơ\". \"Lướt từ u sang y\" là lỗi hay gặp khi đọc ü, và cũng sai vì ö, ü chỉ là một âm, không lướt."
+    display_answer: "Lưỡi như khi nói \"ê\", môi tròn như khi nói \"ô\""
+
+  - key: de:exercise:p0u1l3-mcq-tippen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u1-g-umlaute
+    prompt:
+      stem: "Bàn phím của bạn không có chữ ü. Bạn gõ từ müde (mệt) thế nào cho đúng?"
+      stem_lang: vi
+      options:
+        - { id: c8f, text: muede, lang: vi }
+        - { id: h1q, text: mude, lang: vi }
+        - { id: s5w, text: muide, lang: vi }
+        - { id: j3y, text: miude, lang: vi }
+    answer:
+      correct_option_id: c8f
+    explanation:
+      vi: "Cách gõ thay thế chuẩn là thêm e sau nguyên âm: ü → ue, ö → oe, ä → ae. mude (bỏ dấu chấm) là sai chính tả; muide, miude là cách phiên âm kiểu Việt, không dùng trong tiếng Đức."
+    display_answer: muede
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u1l3-tr-muede
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-muede
+    prompt:
+      source_text: mệt
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - müde
+    known_wrong:
+      - answer: mude
+        feedback_vi: "Thiếu hai chấm trên u. Viết müde; không gõ được ü thì gõ muede."
+        error_tag: missing_umlaut
+      - answer: müd
+        feedback_vi: "müde có e ở cuối, đọc nhẹ như \"ơ\": MÜÜ-đơ."
+        error_tag: spelling
+    explanation:
+      vi: "Mệt là müde: ü dài (lưỡi như \"i\", môi tròn), e cuối đọc nhẹ. Bàn phím không có ü thì gõ muede, vẫn được tính đúng."
+    display_answer: müde
+
+  - key: de:exercise:p0u1l3-tr-kaese
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-kaese
+    prompt:
+      source_text: phô mai
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Käse
+        - der Käse
+    known_wrong:
+      - answer: Kase
+        feedback_vi: "Thiếu hai chấm: phô mai là Käse với ä (gõ ae nếu không có ä)."
+        error_tag: missing_umlaut
+      - answer: Cheese
+        feedback_vi: "Cheese là tiếng Anh. Tiếng Đức là der Käse, đọc KEE-dơ."
+        error_tag: english_word
+    explanation:
+      vi: "Phô mai là der Käse. ä đọc như \"e\" kéo dài, s giữa hai nguyên âm như \"d\" nhẹ: KEE-dơ."
+    display_answer: der Käse
+
+  - key: de:exercise:p0u1l3-wb-loeffel
+    type: word_bank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-loeffel
+    prompt:
+      instruction: "Ghép các chữ cái thành từ tiếng Đức nghĩa là \"cái thìa\"."
+      tokens:
+        - { id: f1, text: f }
+        - { id: e1, text: e }
+        - { id: oo, text: o }
+        - { id: ll, text: L }
+        - { id: l2, text: l }
+        - { id: f2, text: f }
+        - { id: oe, text: ö }
+    answer:
+      orders:
+        - [ll, oe, f1, f2, e1, l2]
+        - [ll, oe, f2, f1, e1, l2]
+    explanation:
+      vi: "Cái thìa là der Löffel: L viết hoa, ö (không phải o), hai chữ f vì ö đọc ngắn, rồi -el. Chữ o là chữ thừa: Loffel không phải từ tiếng Đức."
+    display_answer: Löffel
+
+  - key: de:exercise:p0u1l3-tr-hoeren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-hoeren
+    prompt:
+      source_text: nghe
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - hören
+    known_wrong:
+      - answer: horen
+        feedback_vi: "Thiếu hai chấm trên o: hören (gõ hoeren nếu không có ö)."
+        error_tag: missing_umlaut
+      - answer: hörn
+        feedback_vi: "Động từ nguyên thể kết thúc bằng -en: hören."
+        error_tag: spelling
+    explanation:
+      vi: "Nghe là hören: ö dài (lưỡi như \"ê\", môi tròn), -en cuối đọc nhẹ: HÖÖ-rơn."
+    display_answer: hören
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u1l3-mcq-schoen-nachricht
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-schoen
+    prompt:
+      stem: "Bạn người Đức gửi cho bạn một bức ảnh hồ nước. Bạn muốn nhắn lại \"Đẹp quá!\". Bạn viết gì?"
+      stem_lang: vi
+      options:
+        - { id: b7z, text: Schön!, lang: de }
+        - { id: d4v, text: Schon!, lang: de }
+        - { id: k1t, text: Schein!, lang: de }
+        - { id: w6g, text: Schuh!, lang: de }
+    answer:
+      correct_option_id: b7z
+    explanation:
+      vi: "\"Đẹp\" là schön, có ö. Schon (không chấm) nghĩa là \"đã, rồi\"; Schein là tờ giấy bạc/giấy chứng nhận, Schuh là chiếc giày. Hai dấu chấm làm thay đổi nghĩa của từ."
+    display_answer: Schön!
+
+  - key: de:exercise:p0u1l3-tr-broetchen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-broetchen
+    prompt:
+      source_text: "Zwei Brötchen, bitte!"
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cho tôi hai cái bánh mì nhỏ!
+        - Cho tôi hai cái bánh mì!
+        - Cho tôi hai bánh mì nhỏ.
+        - Hai cái bánh mì nhỏ, làm ơn!
+        - Làm ơn cho hai cái bánh mì nhỏ.
+        - Cho tôi hai ổ bánh mì nhỏ.
+        - Cho tôi hai ổ bánh mì.
+        - Cho tôi hai cái bánh mì tròn.
+        - Hai cái bánh mì, làm ơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cho tôi một cái bánh mì nhỏ!
+        feedback_vi: "Zwei là hai, không phải một."
+        error_tag: number
+    explanation:
+      vi: "Brötchen là bánh mì nhỏ (ổ tròn ăn sáng), zwei là hai, bitte làm câu nhờ lịch sự. Đây là câu bạn nói ở tiệm bánh, dùng được với bất kỳ ai."
+    display_answer: Cho tôi hai cái bánh mì nhỏ!

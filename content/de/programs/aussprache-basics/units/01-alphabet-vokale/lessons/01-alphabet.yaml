@@ -1,0 +1,328 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u1-alphabet
+order_index: 1
+level: pre_a1
+title:
+  vi: Bảng chữ cái và đánh vần (Das Alphabet)
+objectives:
+  - vi: Đọc tên 26 chữ cái cùng ä, ö, ü và ß theo cách đọc của người Đức.
+  - vi: Đánh vần tên của mình bằng tiếng Đức (großes …, Doppel-…).
+  - vi: Nghe một từ hoặc một tên được đánh vần và viết lại đúng.
+estimated_minutes: 12
+skills: [pronunciation, listening, speaking]
+prerequisites: []
+items:
+  - item: de:item:p0u1-g-alphabet
+  - item: de:item:p0u1-g-buchstabieren
+  - item: de:item:p0u1-taxi
+  - item: de:item:p0u1-hotel
+  - item: de:item:p0u1-bus
+  - item: de:item:p0u1-radio
+  - item: de:item:p0u1-pizza
+  - item: de:item:p0u1-baby
+  - item: de:item:p0u1-tee
+  - item: de:item:p0u1-cola
+  - item: de:item:p0u1-kamera
+  - item: de:item:p0u1-zoo
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được bảng chữ cái tiếng Đức, đánh vần được tên mình và viết lại được những từ quốc tế như Taxi, Pizza, Zoo khi nghe người khác đánh vần.
+  - type: explain
+    text:
+      vi: "Tiếng Đức có 26 chữ cái giống tiếng Anh, thêm ba chữ có hai chấm ä, ö, ü và chữ ß. Tên chữ đọc theo kiểu Đức, gần với cách gọi chữ cái tiếng Việt hơn là tiếng Anh: A \"a\", B \"bê\", D \"đê\", E \"ê\", I \"i\", O \"ô\", U \"u\"."
+  - type: explain
+    text:
+      vi: "Một số tên chữ cần nhớ riêng: C \"txê\", H \"ha\", J \"iót\", Q \"cu\", V \"phao\", W \"vê\", X \"íks\", Y \"ÜP-xi-lon\", Z \"txét\". ß tên là Eszett (\"ét-txét\"), đọc như s; đó là một chữ riêng, không phải chữ B."
+  - type: explain
+    text:
+      vi: "Khi đánh vần, bạn đọc lần lượt tên từng chữ: Taxi là T, A, X, I. Chữ đầu viết hoa thì nói thêm \"großes\" (großes N), hai chữ giống nhau liền nhau thì nói \"Doppel-\" (Doppel-Z trong Pizza). Muốn hỏi một từ viết thế nào, bạn nói \"Wie schreibt man das?\"."
+  - type: explain
+    text:
+      vi: "Các từ quốc tế trong bài (Taxi, Hotel, Bus, Radio, Pizza, Baby, Tee, Cola, Kamera, Zoo) bạn đã biết nghĩa, nhưng tiếng Đức đọc khác tiếng Anh. Baby là \"BÊ-bi\", Zoo là \"txôô\", Pizza là \"PÍT-xa\": cứ đọc đúng từng chữ theo kiểu Đức là gần đúng."
+  - type: deep_explain
+    text:
+      vi: "Người Đức đánh vần rất thường xuyên: khi đặt bàn, đặt phòng khách sạn, gọi điện cho cơ quan. Qua điện thoại họ hay đánh vần kèm một từ quen, ví dụ \"A wie Anton\" (A như trong Anton), để người nghe khỏi nhầm B với P hay D với T. Ở Thụy Sĩ không dùng ß mà luôn viết ss; ở Đức và Áo ß vẫn là chữ chuẩn."
+  - type: example
+    target: "Taxi: T, A, X, I"
+    target_lang: de
+    translation:
+      vi: "taxi: tê – a – íks – i"
+    note:
+      vi: "X là \"íks\", I là \"i\": đọc kiểu Đức, không đọc \"ếch\", \"ai\" như tiếng Anh."
+  - type: example
+    target: "Pizza: P, I, Doppel-Z, A"
+    target_lang: de
+    translation:
+      vi: "pizza: pê – i – hai chữ txét – a"
+    note:
+      vi: "Hai chữ z liền nhau nói gọn là Doppel-Z thay vì \"Z, Z\"."
+  - type: example
+    target: "Großes A, Doppel-N, A: Anna"
+    target_lang: de
+    translation:
+      vi: "A viết hoa, hai chữ n, a: Anna"
+    note:
+      vi: "Tên riêng viết hoa chữ đầu, nên khi đánh vần tên người Đức hay nói \"großes A\"."
+  - type: example
+    target: "Wie schreibt man das? – Z, Doppel-O."
+    target_lang: de
+    translation:
+      vi: "Từ đó viết thế nào? – Txét, hai chữ ô (Zoo)."
+    note:
+      vi: "Câu hỏi dùng man (người ta) nên hỏi được cả người lạ lẫn bạn bè, không cần chọn du hay Sie."
+  - type: common_mistake
+    wrong: "dschej, i, ai"
+    right: "Jot, E, I"
+    target_lang: de
+    note:
+      vi: "Đọc J, E, I theo kiểu tiếng Anh (\"giây\", \"i\", \"ai\") làm người Đức nghe thành chữ khác. Tiếng Đức: J là Jot (\"iót\"), E là \"ê\", I là \"i\"."
+  - type: common_mistake
+    wrong: "V = vê"
+    right: "V = Vau"
+    target_lang: de
+    note:
+      vi: "Chữ V tên là Vau (\"phao\"); \"vê\" là tên của chữ W. Trong từ tiếng Đức, v cũng thường đọc như \"ph\" (sẽ học ở unit sau)."
+  - type: common_mistake
+    wrong: "Strase"
+    right: "Straße"
+    target_lang: de
+    note:
+      vi: "ß là một chữ riêng (Eszett), không được bỏ đi và không viết thành B. Nếu bàn phím không có ß thì gõ ss: Strasse."
+  - type: common_mistake
+    wrong: "Piza"
+    right: "Pizza"
+    target_lang: de
+    note:
+      vi: "Nghe \"Doppel-Z\" thì phải viết hai chữ z. Doppel nghĩa là \"đôi\"."
+  - type: summary
+    points:
+      - vi: "26 chữ cái + ä, ö, ü + ß; tên chữ đọc kiểu Đức (E \"ê\", I \"i\", J \"iót\", V \"phao\", W \"vê\", Z \"txét\")."
+      - vi: "ß tên là Eszett, đọc như s; ở Thụy Sĩ viết ss."
+      - vi: "Đánh vần: đọc tên từng chữ; chữ hoa → großes …; hai chữ giống nhau → Doppel-…"
+      - vi: "Hỏi cách viết: Wie schreibt man das?"
+      - vi: "Từ quốc tế đọc theo chữ kiểu Đức: Baby \"BÊ-bi\", Zoo \"txôô\", Pizza \"PÍT-xa\"."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u1l1-mcq-buchstabe-j
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u1-g-alphabet
+    prompt:
+      stem: "Trong bảng chữ cái tiếng Đức, chữ J được gọi thế nào?"
+      stem_lang: vi
+      options:
+        - { id: k4w, text: "\"iót\" (Jot)", lang: vi }
+        - { id: p8m, text: "\"giây\" như tiếng Anh", lang: vi }
+        - { id: d2s, text: "\"gi\" như tiếng Việt", lang: vi }
+        - { id: z6r, text: "\"i\"", lang: vi }
+    answer:
+      correct_option_id: k4w
+    explanation:
+      vi: "Tên chữ J trong tiếng Đức là Jot, đọc \"iót\". \"Giây\" là cách đọc tiếng Anh, còn \"i\" là tên của chữ I."
+    display_answer: "\"iót\" (Jot)"
+
+  - key: de:exercise:p0u1l1-mcq-buchstabe-v
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u1-g-alphabet
+    prompt:
+      stem: "Người Đức đánh vần một chữ cái là \"phao\". Đó là chữ nào?"
+      stem_lang: vi
+      options:
+        - { id: r3t, text: V, lang: vi }
+        - { id: m7c, text: W, lang: vi }
+        - { id: f1x, text: F, lang: vi }
+        - { id: b5q, text: P, lang: vi }
+    answer:
+      correct_option_id: r3t
+    explanation:
+      vi: "Chữ V tên là Vau, đọc \"phao\". W tên là \"vê\", F là \"ép\", P là \"pê\" - không chữ nào trong số đó đọc là \"phao\"."
+    display_answer: V
+
+  - key: de:exercise:p0u1l1-listen-kamera
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-kamera
+    prompt:
+      audio_asset_id: null
+      fallback_text: "K, A, M, E, R, A."
+      options:
+        - { id: h2v, text: die Kamera, lang: de }
+        - { id: u9e, text: die Cola, lang: de }
+        - { id: s4n, text: das Radio, lang: de }
+        - { id: a7j, text: das Taxi, lang: de }
+    answer:
+      correct_option_id: h2v
+    explanation:
+      vi: "Sáu chữ được đánh vần là ca – a – em – ê – er – a, ghép lại thành Kamera (máy ảnh). Cola, Radio và Taxi bắt đầu bằng chữ khác (C, R, T)."
+    display_answer: die Kamera
+
+  - key: de:exercise:p0u1l1-mcq-eszett
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u1-g-alphabet
+    prompt:
+      stem: "Chữ ß trong tiếng Đức là gì?"
+      stem_lang: vi
+      options:
+        - { id: e5k, text: "Một chữ riêng tên là Eszett, đọc như s", lang: vi }
+        - { id: w2b, text: "Chữ B viết hoa kiểu cổ, đọc như b", lang: vi }
+        - { id: n8g, text: "Một dấu trang trí, có thể bỏ đi", lang: vi }
+        - { id: t3y, text: "Chữ cái Hy Lạp beta, đọc như v", lang: vi }
+    answer:
+      correct_option_id: e5k
+    explanation:
+      vi: "ß là một chữ cái riêng của tiếng Đức, tên Eszett (\"ét-txét\"), đọc như s - ví dụ Straße (đường phố). Nó không phải chữ B hay beta, và không được bỏ đi; nếu không gõ được thì viết ss."
+    display_answer: "Một chữ riêng tên là Eszett, đọc như s"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u1l1-wb-hotel
+    type: word_bank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-hotel
+    prompt:
+      instruction: "Ghép các chữ cái thành từ tiếng Đức nghĩa là \"khách sạn\"."
+      tokens:
+        - { id: t-t, text: t }
+        - { id: t-a, text: a }
+        - { id: t-hh, text: H }
+        - { id: t-l, text: l }
+        - { id: t-e, text: e }
+        - { id: t-o, text: o }
+        - { id: t-u, text: u }
+    answer:
+      orders:
+        - [t-hh, t-o, t-t, t-e, t-l]
+    explanation:
+      vi: "Khách sạn là das Hotel: ha – ô – tê – ê – el. Từ này giống tiếng Anh nhưng đọc kiểu Đức hô-TEL, với o như \"ô\"; chữ a và u là chữ thừa."
+    display_answer: Hotel
+
+  - key: de:exercise:p0u1l1-fill-zoo
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-zoo
+    prompt:
+      template: "Z, Doppel-O → {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Zoo, der Zoo]
+    known_wrong:
+      - answer: Zo
+        feedback_vi: "Doppel-O là hai chữ o liền nhau, nên phải viết Zoo."
+        error_tag: double_letter
+      - answer: Tso
+        feedback_vi: "Âm \"ts\" ở đầu từ là chữ Z (Zett), và Doppel-O là hai chữ o: Zoo."
+        error_tag: spelling
+    explanation:
+      vi: "Z là \"txét\", Doppel-O là hai chữ o, nên từ được đánh vần là Zoo (sở thú). Chữ z tiếng Đức đọc là \"ts\": Zoo đọc \"txôô\"."
+    display_answer: Zoo
+
+  - key: de:exercise:p0u1l1-fill-pizza
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-pizza
+    prompt:
+      template: "P, I, Doppel-Z, A → {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Pizza, die Pizza]
+    known_wrong:
+      - answer: Piza
+        feedback_vi: "Doppel-Z là hai chữ z, nên viết Pizza."
+        error_tag: double_letter
+      - answer: Pitsa
+        feedback_vi: "Âm \"ts\" ở đây được viết bằng zz, không viết ts: Pizza."
+        error_tag: spelling
+    explanation:
+      vi: "Bốn phần được đánh vần là P, I, hai chữ z và A, ghép lại thành Pizza. Hai chữ zz đọc là \"ts\": PÍT-xa."
+    display_answer: Pizza
+
+  - key: de:exercise:p0u1l1-tr-tee
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-tee
+    prompt:
+      source_text: trà
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Tee
+        - der Tee
+        - ein Tee
+    known_wrong:
+      - answer: Te
+        feedback_vi: "Tee viết hai chữ e; hai chữ e liền nhau là âm \"ê\" kéo dài."
+        error_tag: double_letter
+      - answer: Tea
+        feedback_vi: "Tea là tiếng Anh. Tiếng Đức là Tee, đọc \"têê\"."
+        error_tag: english_word
+    explanation:
+      vi: "Trà tiếng Đức là der Tee. Hai chữ ee viết liền là một âm \"ê\" dài, nên đánh vần là T, Doppel-E."
+    display_answer: der Tee
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u1l1-listen-linh
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-g-buchstabieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Großes L, I, N, H."
+      options:
+        - { id: c6l, text: Linh, lang: vi }
+        - { id: g2o, text: Ninh, lang: vi }
+        - { id: v8i, text: Lin, lang: vi }
+        - { id: q4z, text: Ling, lang: vi }
+    answer:
+      correct_option_id: c6l
+    explanation:
+      vi: "Bạn nghe \"großes L\" (L viết hoa), rồi I (\"i\"), N (\"en\"), H (\"ha\"): Linh. Ninh bắt đầu bằng N, Lin thiếu chữ H, Ling có G (\"gê\") thay cho H."
+    display_answer: Linh
+
+  - key: de:exercise:p0u1l1-mcq-wie-schreibt
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-g-buchstabieren
+    prompt:
+      stem: "Một người Đức nói tên một con phố mà bạn không biết viết. Bạn hỏi: \"Từ đó viết thế nào?\""
+      stem_lang: vi
+      options:
+        - { id: x3a, text: Wie schreibt man das?, lang: de }
+        - { id: j7u, text: Wie heißt das?, lang: de }
+        - { id: o1d, text: Was schreibt man das?, lang: de }
+        - { id: y5f, text: Wie schreiben das?, lang: de }
+    answer:
+      correct_option_id: x3a
+    explanation:
+      vi: "Hỏi cách viết dùng câu cố định Wie schreibt man das? (wie = thế nào). Wie heißt das? là hỏi \"cái này gọi là gì\", không phải hỏi cách viết; hai câu còn lại sai ngữ pháp (Was thay cho Wie, thiếu man)."
+    display_answer: Wie schreibt man das?

@@ -1,0 +1,929 @@
+# Học liệu unit P0U1 "Chữ cái và nguyên âm" (chương trình aussprache-basics, pre_a1).
+# IPA theo cách đọc chuẩn Hochdeutsch; cách so sánh với âm tiếng Việt chỉ là gần đúng.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: bảng chữ cái và đánh vần ----------------
+  - key: de:item:p0u1-g-alphabet
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "Das Alphabet: A–Z, Ä, Ö, Ü, ß"
+      ipa: "/aː beː tseː deː eː ɛf ɡeː haː iː jɔt kaː ɛl ɛm ɛn oː peː kuː ɛʁ ɛs teː uː faʊ̯ veː ɪks ˈʏpsilɔn tsɛt/"
+      pos: quy tắc chữ viết
+    back:
+      meaning:
+        vi: "Tiếng Đức có 26 chữ cái như tiếng Anh, cộng thêm ä, ö, ü và ß. Tên chữ đọc theo kiểu Đức: E là \"ê\", I là \"i\", J là \"iót\", V là \"phao\", W là \"vê\", Z là \"txét\". ß là một chữ riêng, tên là Eszett (\"ét-txét\"), đọc như s."
+      examples:
+        - target: "Taxi: T, A, X, I"
+          translation:
+            vi: "taxi: tê – a – íks – i"
+        - target: "Zoo: Z, Doppel-O"
+          translation:
+            vi: "sở thú: txét – hai chữ ô"
+      pronunciation_note:
+        vi: "Phần lớn tên chữ có âm ê dài ở cuối (Be, Ce, De, Ge, Pe, Te, We) hoặc âm e ngắn ở đầu (Ef, El, Em, En, Er, Es). Ä, Ö, Ü được gọi bằng chính âm của chúng (ä như \"e\" kéo dài; ö và ü là âm tròn môi, học ở bài 3), không gọi là \"a có hai chấm\"."
+      confusion:
+        vi: "Đừng đọc tên chữ theo tiếng Anh: J không phải \"giây\", E không phải \"i\", I không phải \"ai\", Y không phải \"oai\" (tiếng Đức gọi là Ypsilon)."
+
+  - key: de:item:p0u1-g-buchstabieren
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "Buchstabieren: Wie schreibt man das?"
+      ipa: "/buːxʃtaˈbiːʁən/"
+      pos: quy tắc chữ viết
+    back:
+      meaning:
+        vi: "Khi đánh vần, bạn đọc lần lượt tên từng chữ cái. Chữ đầu viết hoa thì nói \"großes …\" (großes N), hai chữ giống nhau liền nhau thì nói \"Doppel-…\" (Doppel-s, Doppel-t). Muốn hỏi một từ viết thế nào, bạn nói \"Wie schreibt man das?\"."
+      examples:
+        - target: "Wie schreibt man das? – B, E, Doppel-T."
+          translation:
+            vi: "Từ đó viết thế nào? – Bê, ê, hai chữ tê (Bett)."
+        - target: "Großes A, Doppel-N, A: Anna"
+          translation:
+            vi: "A viết hoa, hai chữ n, a: Anna"
+      pronunciation_note:
+        vi: "Buchstabieren có âm ch \"kh\" sau u (sẽ học kỹ ở unit sau); trọng âm rơi vào \"bie\"."
+
+  - key: de:item:p0u1-taxi
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Taxi, -s"
+      ipa: /ˈtaksi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe taxi
+      examples:
+        - target: "Ein Taxi, bitte!"
+          translation:
+            vi: Làm ơn gọi cho tôi một chiếc taxi!
+      pronunciation_note:
+        vi: "x đọc là \"ks\": TÁK-xi, trọng âm ở âm tiết đầu."
+
+  - key: de:item:p0u1-hotel
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Hotel, -s"
+      ipa: /hoˈtɛl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách sạn
+      examples:
+        - target: ein Hotel in Berlin
+          translation:
+            vi: một khách sạn ở Berlin
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết sau: hô-TEL; h đầu từ là âm \"h\" bật hơi nhẹ như tiếng Việt."
+
+  - key: de:item:p0u1-bus
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Bus, -se"
+      ipa: /bʊs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe buýt
+      examples:
+        - target: der Bus nach Berlin
+          translation:
+            vi: xe buýt đi Berlin
+      pronunciation_note:
+        vi: "u ngắn và gọn; s cuối từ đọc như \"x\" xì hơi. Số nhiều viết hai chữ s: die Busse."
+
+  - key: de:item:p0u1-radio
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Radio, -s"
+      ipa: /ˈʁaːdi̯o/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đài, radio
+      examples:
+        - target: Radio hören
+          translation:
+            vi: nghe đài
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết đầu, a dài: RA-đi-ô. r đầu từ đọc ở cổ họng, không rung đầu lưỡi."
+
+  - key: de:item:p0u1-pizza
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Pizza, -s"
+      ipa: /ˈpɪtsa/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh pizza
+      examples:
+        - target: "Eine Pizza, bitte!"
+          translation:
+            vi: Cho tôi một cái pizza!
+      pronunciation_note:
+        vi: "zz đọc là \"ts\": PÍT-xa. Khi đánh vần nói \"P, I, Doppel-Z, A\"."
+      confusion:
+        vi: "Số nhiều thường gặp là die Pizzas; dạng die Pizzen cũng đúng."
+
+  - key: de:item:p0u1-baby
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Baby, -s"
+      ipa: /ˈbeːbi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: em bé
+      examples:
+        - target: das Baby von Anna
+          translation:
+            vi: em bé của Anna
+      pronunciation_note:
+        vi: "Đọc là BÊ-bi (e dài như \"ê\"), không đọc \"bây-bi\" kiểu tiếng Anh."
+
+  - key: de:item:p0u1-tee
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Tee, -s"
+      ipa: /teː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trà
+      examples:
+        - target: "Ein Tee, bitte!"
+          translation:
+            vi: Cho tôi một tách trà!
+      pronunciation_note:
+        vi: "Hai chữ e viết liền là một âm \"ê\" kéo dài: \"têê\", không đọc thành hai âm."
+
+  - key: de:item:p0u1-cola
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Cola, -s"
+      ipa: /ˈkoːla/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước cô-la
+      examples:
+        - target: "Eine Cola, bitte!"
+          translation:
+            vi: Cho tôi một chai cô-la!
+      pronunciation_note:
+        vi: "o dài như \"ô\": CÔ-la."
+      confusion:
+        vi: "Ở miền Nam nước Đức và ở Áo người ta hay nói das Cola; ở Đức chuẩn là die Cola."
+
+  - key: de:item:p0u1-kamera
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Kamera, -s"
+      ipa: /ˈkaməʁa/
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy ảnh, máy quay
+      examples:
+        - target: die Kamera von Minh
+          translation:
+            vi: máy ảnh của Minh
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết đầu: CA-mơ-ra; e ở giữa đọc rất nhẹ như \"ơ\"."
+
+  - key: de:item:p0u1-zoo
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Zoo, -s"
+      ipa: /tsoː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sở thú, vườn bách thú
+      examples:
+        - target: der Zoo in Berlin
+          translation:
+            vi: sở thú ở Berlin
+      pronunciation_note:
+        vi: "z đọc là \"ts\", oo là \"ô\" dài: \"txôô\". Không đọc \"zu\" như tiếng Anh."
+
+  # ---------------- bài 2: nguyên âm dài và ngắn ----------------
+  - key: de:item:p0u1-g-vokallaenge
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Vokallänge: lang (Tee, Boot, Uhr, Bier, Name) – kurz (Bett, Mann, Sonne)"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "Nguyên âm đọc dài khi viết đôi (ee, oo, aa), khi có h theo sau (Uhr), khi là ie (Bier) hoặc khi chỉ có một phụ âm theo sau (Name, Hut). Nguyên âm đọc ngắn khi đứng trước phụ âm đôi (tt, nn, ll, ss) hoặc cụm phụ âm. Dài hay ngắn có thể đổi nghĩa: das Bett (cái giường) khác das Beet (luống hoa)."
+      examples:
+        - target: "der Tee, das Boot, die Uhr, das Bier"
+          translation:
+            vi: "trà, thuyền, đồng hồ, bia – nguyên âm dài"
+        - target: "das Bett, der Mann, die Sonne, der Ball"
+          translation:
+            vi: "giường, người đàn ông, mặt trời, quả bóng – nguyên âm ngắn"
+      pronunciation_note:
+        vi: "Nguyên âm ngắn đọc gọn và dứt khoát, giống \"ă\" so với \"a\" của tiếng Việt. Nguyên âm dài kéo dài gần gấp đôi; e dài nghe như \"ê\", o dài như \"ô\"."
+      confusion:
+        vi: "Có ngoại lệ: der Bus có u ngắn dù chỉ có một s. Khi gặp từ mới, hãy nghe audio để chắc chắn."
+
+  - key: de:item:p0u1-name
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Name, -n"
+      ipa: /ˈnaːmə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tên
+      examples:
+        - target: Mein Name ist Lan.
+          translation:
+            vi: Tên tôi là Lan.
+      pronunciation_note:
+        vi: "a dài vì chỉ có một m theo sau: NAA-mơ; e cuối đọc rất nhẹ."
+      confusion:
+        vi: "Der Name đổi đuôi ở các cách khác: den Namen, dem Namen, des Namens (sẽ học sau)."
+
+  - key: de:item:p0u1-mann
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Mann, ¨-er"
+      ipa: /man/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người đàn ông; chồng
+      examples:
+        - target: ein Mann aus Hanoi
+          translation:
+            vi: một người đàn ông đến từ Hà Nội
+      pronunciation_note:
+        vi: "a ngắn vì có nn: đọc gọn như \"măn\". Số nhiều die Männer có ä."
+
+  - key: de:item:p0u1-bett
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Bett, -en"
+      ipa: /bɛt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái giường
+      examples:
+        - target: ein Bett im Hotel
+          translation:
+            vi: một chiếc giường trong khách sạn
+      pronunciation_note:
+        vi: "e ngắn và mở như \"e\" tiếng Việt vì có tt: \"bét\"."
+      confusion:
+        vi: "das Beet (luống hoa) có e dài như \"ê\": \"bêêt\"."
+
+  - key: de:item:p0u1-see
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der See, -n"
+      ipa: /zeː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái hồ
+      examples:
+        - target: ein See in Bayern
+          translation:
+            vi: một cái hồ ở bang Bayern
+      pronunciation_note:
+        vi: "s đầu từ đọc như \"d\" nhẹ (giọng Bắc), ee là \"ê\" dài: \"dêê\". Số nhiều die Seen đọc \"dê-ừn\"."
+      confusion:
+        vi: "die See (giống cái) nghĩa là biển; der See (giống đực) là hồ."
+
+  - key: de:item:p0u1-boot
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Boot, -e"
+      ipa: /boːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con thuyền
+      examples:
+        - target: ein Boot auf dem See
+          translation:
+            vi: một con thuyền trên hồ
+      pronunciation_note:
+        vi: "oo là \"ô\" dài: \"bôôt\", không đọc \"bút\" như boot tiếng Anh."
+
+  - key: de:item:p0u1-sonne
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Sonne, -n"
+      ipa: /ˈzɔnə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mặt trời; nắng
+      examples:
+        - target: die Sonne am Morgen
+          translation:
+            vi: mặt trời buổi sáng
+      pronunciation_note:
+        vi: "o ngắn và mở như \"o\" tiếng Việt vì có nn; s đầu như \"d\" nhẹ: DO-nơ."
+
+  - key: de:item:p0u1-uhr
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Uhr, -en"
+      ipa: /uːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng hồ; giờ (khi nói giờ)
+      examples:
+        - target: Wie viel Uhr ist es?
+          translation:
+            vi: Mấy giờ rồi?
+      pronunciation_note:
+        vi: "h sau nguyên âm không đọc, chỉ báo u dài; r cuối nghe như \"a\" rất nhẹ: \"uu-a\"."
+
+  - key: de:item:p0u1-bier
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Bier, -e"
+      ipa: /biːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bia
+      examples:
+        - target: "Ein Bier, bitte!"
+          translation:
+            vi: Cho tôi một cốc bia!
+      pronunciation_note:
+        vi: "ie là một âm \"i\" dài, không đọc \"i-ê\"; r cuối như \"a\" nhẹ: \"bii-a\"."
+
+  - key: de:item:p0u1-hut
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Hut, ¨-e"
+      ipa: /huːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái mũ (có vành)
+      examples:
+        - target: ein Hut aus Vietnam
+          translation:
+            vi: một cái mũ từ Việt Nam
+      pronunciation_note:
+        vi: "u dài vì chỉ có một t theo sau: \"huut\". Số nhiều die Hüte có ü."
+
+  - key: de:item:p0u1-ball
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Ball, ¨-e"
+      ipa: /bal/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả bóng
+      examples:
+        - target: der Ball von Tim
+          translation:
+            vi: quả bóng của Tim
+      pronunciation_note:
+        vi: "a ngắn vì có ll: đọc gọn như \"băl\". Số nhiều die Bälle có ä."
+
+  # ---------------- bài 3: ä, ö, ü ----------------
+  - key: de:item:p0u1-g-umlaute
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Die Umlaute: ä, ö, ü"
+      ipa: "/ɛː ɛ – øː œ – yː ʏ/"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "ü: đặt lưỡi như khi nói \"i\" rồi tròn môi như \"u\". ö: đặt lưỡi như \"ê\" rồi tròn môi như \"ô\". ä gần giống \"e\" mở của tiếng Việt; cả ba cũng có dạng dài và ngắn như bài trước."
+      examples:
+        - target: "schon – schön"
+          translation:
+            vi: "đã, rồi – đẹp"
+        - target: "die Tür, das Mädchen, der Löffel"
+          translation:
+            vi: "cánh cửa, cô bé, cái thìa"
+      pronunciation_note:
+        vi: "Mẹo luyện ü: nói \"iii\" kéo dài rồi từ từ chu môi tròn lại, lưỡi giữ nguyên. Luyện ö tương tự từ \"êêê\"."
+      confusion:
+        vi: "Bàn phím không có ä/ö/ü thì gõ ae, oe, ue (ß gõ ss); bỏ hẳn hai chấm là sai chính tả và có thể thành từ khác: schon (đã) ≠ schön (đẹp)."
+
+  - key: de:item:p0u1-schoen
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: schön
+      ipa: /ʃøːn/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đẹp; hay, dễ chịu
+      examples:
+        - target: Das ist schön!
+          translation:
+            vi: Đẹp quá! / Hay quá!
+      pronunciation_note:
+        vi: "sch đọc như \"s\" chu môi (học kỹ ở unit sau); ö dài, môi tròn."
+      confusion:
+        vi: "schon (không chấm) là một từ khác, nghĩa là \"đã, rồi\"."
+
+  - key: de:item:p0u1-muede
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: müde
+      ipa: /ˈmyːdə/
+      pos: tính từ
+    back:
+      meaning:
+        vi: mệt, buồn ngủ
+      examples:
+        - target: Ich bin müde.
+          translation:
+            vi: Tôi mệt.
+      pronunciation_note:
+        vi: "ü dài, môi tròn; e cuối rất nhẹ như \"ơ\": MÜÜ-đơ. Không đọc \"muy-đê\"."
+
+  - key: de:item:p0u1-hoeren
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: hören
+      ipa: /ˈhøːʁən/
+      pos: động từ
+    back:
+      meaning:
+        vi: nghe
+      examples:
+        - target: Radio hören
+          translation:
+            vi: nghe đài
+      pronunciation_note:
+        vi: "ö dài, môi tròn như \"ô\" nhưng lưỡi như \"ê\": HÖÖ-rơn."
+
+  - key: de:item:p0u1-ueber
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: über
+      ipa: /ˈyːbɐ/
+      pos: giới từ
+    back:
+      meaning:
+        vi: ở trên, phía trên; về (chủ đề); qua
+      examples:
+        - target: ein Buch über Deutschland
+          translation:
+            vi: một cuốn sách về nước Đức
+      pronunciation_note:
+        vi: "ü dài; -er cuối đọc như \"a\" nhẹ: ÜÜ-ba."
+
+  - key: de:item:p0u1-tuer
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Tür, -en"
+      ipa: /tyːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cánh cửa (ra vào)
+      examples:
+        - target: "eine Tür, zwei Türen"
+          translation:
+            vi: một cánh cửa, hai cánh cửa
+      pronunciation_note:
+        vi: "ü dài, r cuối như \"a\" nhẹ: \"tüü-a\"."
+      confusion:
+        vi: "die Tour (u, không chấm) là chuyến đi; die Tür có ü là cánh cửa."
+
+  - key: de:item:p0u1-maedchen
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Mädchen, -"
+      ipa: /ˈmɛːtçən/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cô bé, bé gái
+      examples:
+        - target: das Mädchen und der Ball
+          translation:
+            vi: cô bé và quả bóng
+      pronunciation_note:
+        vi: "ä dài như \"e\" kéo dài, trọng âm ở âm tiết đầu; -chen đọc nhẹ, ch ở đây là tiếng xì hơi nhẹ giữa \"h\" và \"x\" (học kỹ ở unit sau)."
+      confusion:
+        vi: "Mädchen là giống trung (das) vì đuôi -chen, dù chỉ con gái: giống ngữ pháp không phải giới tính."
+
+  - key: de:item:p0u1-kaese
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Käse (Sg.)"
+      ipa: /ˈkɛːzə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phô mai
+      examples:
+        - target: Käse aus Holland
+          translation:
+            vi: phô mai Hà Lan
+      pronunciation_note:
+        vi: "ä dài như \"e\" kéo dài, s giữa hai nguyên âm như \"d\" nhẹ: KEE-dơ."
+
+  - key: de:item:p0u1-broetchen
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Brötchen, -"
+      ipa: /ˈbʁøːtçən/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh mì nhỏ (ổ bánh mì tròn ăn sáng)
+      examples:
+        - target: "Zwei Brötchen, bitte!"
+          translation:
+            vi: Cho tôi hai cái bánh mì nhỏ!
+      pronunciation_note:
+        vi: "ö dài, môi tròn, trọng âm ở âm tiết đầu; -chen đọc nhẹ như ở das Mädchen."
+      confusion:
+        vi: "Ở Áo và vùng Bayern người ta gọi là die Semmel."
+
+  - key: de:item:p0u1-loeffel
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Löffel, -"
+      ipa: /ˈlœfl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái thìa, cái muỗng
+      examples:
+        - target: ein Löffel für die Suppe
+          translation:
+            vi: một cái thìa để ăn súp
+      pronunciation_note:
+        vi: "ö ngắn vì có ff: tròn môi, đọc gọn; -el cuối rất nhẹ: LÖF-fơl."
+
+  - key: de:item:p0u1-oel
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Öl, -e"
+      ipa: /øːl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: dầu (dầu ăn, dầu máy)
+      examples:
+        - target: Öl und Essig
+          translation:
+            vi: dầu và giấm
+      pronunciation_note:
+        vi: "ö dài vì chỉ có một l theo sau: \"ööl\", môi tròn suốt cả âm."
+
+  # ---------------- bài 4: nguyên âm đôi, -e và -er ----------------
+  - key: de:item:p0u1-g-diphthonge
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Diphthonge: Ei, Zeit – heute, Häuser – Haus, Frau"
+      ipa: "/aɪ̯ – ɔɪ̯ – aʊ̯/"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "ei (và ai) đọc như \"ai\": das Ei, die Zeit. eu và äu đọc như \"oi\": heute, die Häuser. au đọc như \"ao\": das Haus, die Frau."
+      examples:
+        - target: "das Ei, die Zeit – heute, neu – das Haus, die Frau"
+          translation:
+            vi: "quả trứng, thời gian – hôm nay, mới – ngôi nhà, người phụ nữ"
+        - target: "die Zeit – das Bier"
+          translation:
+            vi: "thời gian (ei = \"ai\") – bia (ie = \"i\" dài)"
+      pronunciation_note:
+        vi: "Mẹo nhớ ei và ie: ie chỉ đọc chữ đầu, một âm \"i\" kéo dài (Bier); ei luôn đọc thành \"ai\" (Zeit)."
+      confusion:
+        vi: "Đừng đọc tách từng chữ: ei không phải \"ê-i\", eu không phải \"ê-u\", au không phải \"a-u\"."
+
+  - key: de:item:p0u1-g-schwa-er
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Endungen -e und -er: Name, heute – Lehrer, Teller"
+      ipa: "/ə – ɐ/"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "e cuối từ, không mang trọng âm, đọc rất nhẹ như \"ơ\": Name, heute. -er cuối từ đọc như \"a\" nhẹ và ngắn, không rung r: Lehrer, über. Hai đuôi này không bao giờ đọc to và rõ như \"ê\" hay \"e-rơ\"."
+      examples:
+        - target: "die Lehre – der Lehrer"
+          translation:
+            vi: "việc học nghề (LÊ-rơ) – thầy giáo (LÊ-ra)"
+        - target: "heute, die Leute, müde"
+          translation:
+            vi: "hôm nay, mọi người, mệt – e cuối đều đọc nhẹ như \"ơ\""
+      pronunciation_note:
+        vi: "Trọng âm của các từ này luôn ở âm tiết đầu; âm tiết cuối có -e hoặc -er đọc lướt, nhỏ và ngắn."
+
+  - key: de:item:p0u1-ei
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Ei, -er"
+      ipa: /aɪ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả trứng
+      examples:
+        - target: "ein Ei, zwei Eier"
+          translation:
+            vi: một quả trứng, hai quả trứng
+      pronunciation_note:
+        vi: "ei đọc như \"ai\"; số nhiều Eier đọc \"AI-a\"."
+
+  - key: de:item:p0u1-haus
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "das Haus, ¨-er"
+      ipa: /haʊ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngôi nhà
+      examples:
+        - target: "ein Haus, zwei Häuser"
+          translation:
+            vi: một ngôi nhà, hai ngôi nhà
+      pronunciation_note:
+        vi: "au đọc như \"ao\": \"hao-x\". Số nhiều Häuser có äu, đọc như \"oi\": HOI-da."
+
+  - key: de:item:p0u1-frau
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Frau, -en"
+      ipa: /fʁaʊ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người phụ nữ; vợ; bà (trước họ, như Frau Müller)
+      examples:
+        - target: Frau Müller
+          translation:
+            vi: bà Müller
+      pronunciation_note:
+        vi: "au đọc như \"ao\"; r sau f đọc nhẹ ở cổ họng: \"phrao\"."
+
+  - key: de:item:p0u1-heute
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: heute
+      ipa: /ˈhɔɪ̯tə/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hôm nay
+      examples:
+        - target: heute in Berlin
+          translation:
+            vi: hôm nay ở Berlin
+      pronunciation_note:
+        vi: "eu đọc như \"oi\", e cuối như \"ơ\" nhẹ: HOI-tơ."
+
+  - key: de:item:p0u1-neu
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: neu
+      ipa: /nɔɪ̯/
+      pos: tính từ
+    back:
+      meaning:
+        vi: mới
+      examples:
+        - target: Das Haus ist neu.
+          translation:
+            vi: Ngôi nhà này mới.
+      pronunciation_note:
+        vi: "eu đọc như \"noi\", không đọc \"nê-u\"."
+
+  - key: de:item:p0u1-leute
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Leute (Pl.)"
+      ipa: /ˈlɔɪ̯tə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mọi người, người ta (chỉ có số nhiều)
+      examples:
+        - target: die Leute im Hotel
+          translation:
+            vi: mọi người trong khách sạn
+      pronunciation_note:
+        vi: "eu đọc như \"oi\", e cuối như \"ơ\" nhẹ: LOI-tơ."
+
+  - key: de:item:p0u1-lehrer
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Lehrer, -"
+      ipa: /ˈleːʁɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thầy giáo, giáo viên (nam)
+      examples:
+        - target: Herr Weber ist Lehrer.
+          translation:
+            vi: Ông Weber là giáo viên.
+      pronunciation_note:
+        vi: "eh là \"ê\" dài; -er cuối như \"a\" nhẹ: LÊ-ra, không đọc \"lê-rơ-rơ\"."
+
+  - key: de:item:p0u1-zeit
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "die Zeit, -en"
+      ipa: /tsaɪ̯t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian; lúc, thời
+      examples:
+        - target: Ich habe keine Zeit.
+          translation:
+            vi: Tôi không có thời gian.
+      pronunciation_note:
+        vi: "z là \"ts\", ei là \"ai\": \"txai-t\"."
+
+  - key: de:item:p0u1-raum
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Raum, ¨-e"
+      ipa: /ʁaʊ̯m/
+      pos: danh từ
+    back:
+      meaning:
+        vi: căn phòng, gian phòng; không gian
+      examples:
+        - target: "ein Raum, zwei Räume"
+          translation:
+            vi: một căn phòng, hai căn phòng
+      pronunciation_note:
+        vi: "au là \"ao\": \"rao-m\". Số nhiều Räume có äu, đọc như \"oi\": ROI-mơ."
+
+  - key: de:item:p0u1-teller
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "der Teller, -"
+      ipa: /ˈtɛlɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái đĩa (để ăn)
+      examples:
+        - target: ein Teller und ein Löffel
+          translation:
+            vi: một cái đĩa và một cái thìa
+      pronunciation_note:
+        vi: "e ngắn vì có ll; -er cuối như \"a\" nhẹ: TEL-la."

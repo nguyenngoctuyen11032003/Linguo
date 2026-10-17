@@ -1,0 +1,332 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u1-diphthonge
+order_index: 4
+level: pre_a1
+title:
+  vi: Nguyên âm đôi và âm cuối -e, -er (Diphthonge, -e und -er)
+objectives:
+  - vi: Đọc đúng ei/ai, eu/äu, au và phân biệt ei với ie.
+  - vi: Đọc nhẹ âm -e cuối từ (như "ơ") và đuôi -er (như "a" nhẹ).
+  - vi: Nghe nhận ra các từ như heute, die Zeit, das Haus, der Lehrer.
+estimated_minutes: 12
+skills: [pronunciation, listening, reading]
+prerequisites: [de:lesson:p0u1-umlaute]
+items:
+  - item: de:item:p0u1-g-diphthonge
+  - item: de:item:p0u1-g-schwa-er
+  - item: de:item:p0u1-ei
+  - item: de:item:p0u1-haus
+  - item: de:item:p0u1-frau
+  - item: de:item:p0u1-heute
+  - item: de:item:p0u1-neu
+  - item: de:item:p0u1-leute
+  - item: de:item:p0u1-lehrer
+  - item: de:item:p0u1-zeit
+  - item: de:item:p0u1-raum
+  - item: de:item:p0u1-teller
+  - item: de:item:p0u1-g-umlaute
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc đúng những từ có nguyên âm đôi như das Ei, heute, das Haus, không nhầm ei với ie, và đọc nhẹ được đuôi -e, -er như người Đức (heute, der Lehrer).
+  - type: explain
+    text:
+      vi: "Nguyên âm đôi là hai chữ nguyên âm đọc lướt thành một âm, giống \"ai\", \"ao\", \"oi\" của tiếng Việt. ei (và ai) đọc như \"ai\": das Ei, die Zeit. au đọc như \"ao\": das Haus, die Frau."
+  - type: explain
+    text:
+      vi: "eu và äu đều đọc như \"oi\": heute, neu, die Leute. äu là au có thêm hai chấm, hay gặp ở số nhiều: das Haus – die Häuser, der Raum – die Räume."
+  - type: explain
+    text:
+      vi: "Cẩn thận với ei và ie: ei là \"ai\" (die Zeit), còn ie là \"i\" kéo dài (das Bier). Mẹo nhớ: ie chỉ đọc chữ đầu là i, còn ei luôn là \"ai\"."
+  - type: explain
+    text:
+      vi: "Chữ e ở cuối từ, không mang trọng âm, đọc rất nhẹ như \"ơ\": heute (HOI-tơ), die Leute. Đuôi -er cuối từ đọc như \"a\" nhẹ và ngắn, không rung r: der Lehrer (LÊ-ra), der Teller (TEL-la)."
+  - type: deep_explain
+    text:
+      vi: "Âm \"ơ\" nhẹ (IPA /ə/) và \"a\" nhẹ của -er (IPA /ɐ/) xuất hiện rất nhiều, vì nhiều đuôi từ tiếng Đức là -e, -en, -er. Đọc chúng to và rõ (\"lê-rơ\", \"hoi-tê\") là dấu hiệu giọng nước ngoài dễ nhận nhất. Hãy nhấn rõ âm tiết đầu và đọc lướt, nhỏ, ngắn âm tiết cuối."
+  - type: example
+    target: "das Ei – die Zeit"
+    target_lang: de
+    translation:
+      vi: "quả trứng – thời gian"
+    note:
+      vi: "ei đọc như \"ai\": \"ai\", \"txai-t\". z đầu từ là \"ts\"."
+  - type: example
+    target: "das Haus – die Häuser"
+    target_lang: de
+    translation:
+      vi: "ngôi nhà – những ngôi nhà"
+    note:
+      vi: "au là \"ao\" (\"hao-x\"); ở số nhiều au thành äu, đọc như \"oi\" (HOI-da)."
+  - type: example
+    target: "heute, neu, die Leute"
+    target_lang: de
+    translation:
+      vi: "hôm nay, mới, mọi người"
+    note:
+      vi: "eu đọc như \"oi\": HOI-tơ, \"noi\", LOI-tơ. e cuối từ đọc nhẹ như \"ơ\"."
+  - type: example
+    target: "der Lehrer – der Teller"
+    target_lang: de
+    translation:
+      vi: "thầy giáo – cái đĩa"
+    note:
+      vi: "-er cuối đọc như \"a\" nhẹ: LÊ-ra, TEL-la. Lehrer có e dài (vì có h), Teller có e ngắn (vì có ll)."
+  - type: example
+    target: "die Zeit – das Bier"
+    target_lang: de
+    translation:
+      vi: "thời gian – bia"
+    note:
+      vi: "ei là \"ai\" (txai-t), ie là \"i\" dài (bii-a): hai cách viết gần giống nhau nhưng đọc khác hẳn."
+  - type: common_mistake
+    wrong: "ê-i"
+    right: "Ei"
+    target_lang: de
+    note:
+      vi: "ei không đọc tách thành \"ê-i\" mà lướt thành một âm \"ai\". das Ei đọc giống chữ \"ai\" của tiếng Việt."
+  - type: common_mistake
+    wrong: "hê-u-tê"
+    right: "heute"
+    target_lang: de
+    note:
+      vi: "eu đọc như \"oi\", không phải \"ê-u\"; e cuối đọc nhẹ như \"ơ\", không phải \"ê\": HOI-tơ."
+  - type: common_mistake
+    wrong: "lê-rơ-rơ"
+    right: "Lehrer"
+    target_lang: de
+    note:
+      vi: "Đuôi -er không đọc rõ \"e-rơ\" và không rung r. Nó chỉ là một âm \"a\" nhẹ: LÊ-ra."
+  - type: summary
+    points:
+      - vi: "ei, ai = \"ai\" (das Ei, die Zeit); au = \"ao\" (das Haus, die Frau)."
+      - vi: "eu, äu = \"oi\" (heute, neu, die Häuser)."
+      - vi: "ei ≠ ie: die Zeit (\"ai\") – das Bier (\"i\" dài)."
+      - vi: "e cuối từ đọc nhẹ như \"ơ\" (heute); -er cuối từ như \"a\" nhẹ, không rung r (der Lehrer)."
+      - vi: "Nhấn âm tiết đầu, đọc lướt âm tiết cuối."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u1l4-listen-leid-lied
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-g-diphthonge
+    prompt:
+      audio_asset_id: null
+      fallback_text: Lied
+      options:
+        - { id: r2c, text: das Lied, lang: de }
+        - { id: t8h, text: das Leid, lang: de }
+    answer:
+      correct_option_id: r2c
+    explanation:
+      vi: "Bạn nghe một âm \"i\" kéo dài: đó là ie trong das Lied (bài hát). das Leid (nỗi đau) viết ei, đọc như \"lai-t\"."
+    display_answer: das Lied
+
+  - key: de:exercise:p0u1l4-listen-heute
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-heute
+    prompt:
+      audio_asset_id: null
+      fallback_text: heute
+      options:
+        - { id: p5n, text: heute, lang: de }
+        - { id: m3w, text: Hüte, lang: de }
+        - { id: z9b, text: hatte, lang: de }
+    answer:
+      correct_option_id: p5n
+    explanation:
+      vi: "Âm đầu bạn nghe là \"oi\": đó là eu trong heute (hôm nay), HOI-tơ. Hüte có ü dài tròn môi, hatte có a ngắn; không từ nào có âm \"oi\"."
+    display_answer: heute
+
+  - key: de:exercise:p0u1l4-listen-lehrer-lehre
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-g-schwa-er
+    prompt:
+      audio_asset_id: null
+      fallback_text: Lehrer
+      options:
+        - { id: k6s, text: der Lehrer, lang: de }
+        - { id: g1u, text: die Lehre, lang: de }
+    answer:
+      correct_option_id: k6s
+    explanation:
+      vi: "Cuối từ bạn nghe âm \"a\" nhẹ: đó là đuôi -er của der Lehrer (thầy giáo), LÊ-ra. die Lehre (việc học nghề) kết thúc bằng -e, nghe như \"ơ\" nhẹ: LÊ-rơ."
+    display_answer: der Lehrer
+
+  - key: de:exercise:p0u1l4-listen-haus
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-haus
+    prompt:
+      audio_asset_id: null
+      fallback_text: Haus
+      options:
+        - { id: f4e, text: das Haus, lang: de }
+        - { id: y7a, text: die Hose, lang: de }
+        - { id: n2i, text: heiß, lang: de }
+    answer:
+      correct_option_id: f4e
+    explanation:
+      vi: "Bạn nghe âm \"ao\": đó là au trong das Haus (ngôi nhà). die Hose (cái quần) có o dài như \"ô\", heiß (nóng) có ei như \"ai\"."
+    display_answer: das Haus
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u1l4-wb-zeit
+    type: word_bank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-zeit
+    prompt:
+      instruction: "Ghép các chữ cái thành từ tiếng Đức nghĩa là \"thời gian\" (đọc \"txai-t\")."
+      tokens:
+        - { id: c-i, text: i }
+        - { id: c-t, text: t }
+        - { id: c-z, text: Z }
+        - { id: c-e, text: e }
+        - { id: c-a, text: a }
+    answer:
+      orders:
+        - [c-z, c-e, c-i, c-t]
+    explanation:
+      vi: "Âm \"ai\" trong tiếng Đức thường viết là ei, nên thời gian là die Zeit: Z, e, i, t. Viết Ziet sẽ đọc thành \"txiit\" (ie là i dài); chữ a là chữ thừa."
+    display_answer: Zeit
+
+  - key: de:exercise:p0u1l4-tr-frau
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-frau
+    prompt:
+      source_text: người phụ nữ
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Frau
+        - die Frau
+        - eine Frau
+    known_wrong:
+      - answer: Frao
+        feedback_vi: "Âm \"ao\" trong tiếng Đức viết là au: Frau."
+        error_tag: spelling
+    explanation:
+      vi: "Người phụ nữ là die Frau. Âm \"ao\" được viết bằng au, nên đọc \"phrao\" nhưng viết Frau."
+    display_answer: die Frau
+
+  - key: de:exercise:p0u1l4-tr-neu
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-neu
+    prompt:
+      source_text: mới
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - neu
+    known_wrong:
+      - answer: noi
+        feedback_vi: "Âm \"oi\" trong tiếng Đức viết là eu (hoặc äu), không viết oi: neu."
+        error_tag: spelling
+      - answer: new
+        feedback_vi: "New là tiếng Anh. Tiếng Đức là neu, đọc \"noi\"."
+        error_tag: english_word
+    explanation:
+      vi: "Mới là neu. eu đọc như \"oi\", nên neu đọc là \"noi\"."
+    display_answer: neu
+
+  - key: de:exercise:p0u1l4-tr-ei
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-ei
+    prompt:
+      source_text: quả trứng
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ei
+        - das Ei
+        - ein Ei
+    known_wrong:
+      - answer: Ai
+        feedback_vi: "Trứng viết là Ei: âm \"ai\" ở đây được viết bằng ei."
+        error_tag: spelling
+      - answer: Ie
+        feedback_vi: "ie đọc là \"i\" dài; trứng là Ei, đọc \"ai\"."
+        error_tag: ei_ie
+    explanation:
+      vi: "Quả trứng là das Ei, đọc giống chữ \"ai\" của tiếng Việt. Đừng nhầm với ie (đọc \"i\" dài)."
+    display_answer: das Ei
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u1l4-mcq-leute
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-leute
+    prompt:
+      stem: "Bạn đọc to cụm die Leute (mọi người). Cách đọc nào gần đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: a8o, text: "LOI-tơ", lang: vi }
+        - { id: h5u, text: "LÊ-u-tê", lang: vi }
+        - { id: s1l, text: "LAI-tơ", lang: vi }
+        - { id: d6t, text: "LOI-tê", lang: vi }
+    answer:
+      correct_option_id: a8o
+    explanation:
+      vi: "eu đọc như \"oi\" và e cuối từ đọc nhẹ như \"ơ\", nên Leute là LOI-tơ. \"LÊ-u-tê\" đọc tách từng chữ; \"LAI-tơ\" là cách đọc của ei; \"LOI-tê\" đọc e cuối quá rõ."
+    display_answer: "LOI-tơ"
+
+  - key: de:exercise:p0u1l4-tr-haus-neu
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-neu
+    prompt:
+      source_text: Das Haus ist neu.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngôi nhà mới.
+        - Ngôi nhà này mới.
+        - Ngôi nhà còn mới.
+        - Căn nhà mới.
+        - Căn nhà này mới.
+        - Căn nhà còn mới.
+        - Nhà mới.
+        - Cái nhà này mới.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngôi nhà cũ.
+        feedback_vi: "neu là mới; cũ là alt."
+        error_tag: antonym
+    explanation:
+      vi: "das Haus là ngôi nhà (au đọc \"ao\"), neu là mới (eu đọc \"oi\"), ist là \"thì, là\". Câu nói ngôi nhà này còn mới."
+    display_answer: Ngôi nhà này mới.

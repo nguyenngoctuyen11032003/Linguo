@@ -1,0 +1,336 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u1-vokale-lang-kurz
+order_index: 2
+level: pre_a1
+title:
+  vi: Nguyên âm dài và ngắn (Lange und kurze Vokale)
+objectives:
+  - vi: Nghe và đọc đúng nguyên âm dài, ngắn trong các từ quen thuộc.
+  - vi: Đoán nguyên âm dài hay ngắn nhờ chữ viết (ee, oo, h, ie, phụ âm đôi).
+  - vi: Phân biệt những cặp từ chỉ khác nhau ở độ dài như das Bett – das Beet.
+estimated_minutes: 12
+skills: [pronunciation, listening, reading]
+prerequisites: [de:lesson:p0u1-alphabet]
+items:
+  - item: de:item:p0u1-g-vokallaenge
+  - item: de:item:p0u1-name
+  - item: de:item:p0u1-mann
+  - item: de:item:p0u1-bett
+  - item: de:item:p0u1-see
+  - item: de:item:p0u1-boot
+  - item: de:item:p0u1-sonne
+  - item: de:item:p0u1-uhr
+  - item: de:item:p0u1-bier
+  - item: de:item:p0u1-hut
+  - item: de:item:p0u1-ball
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nghe ra được nguyên âm dài hay ngắn, đọc đúng những từ như der Name, der Mann, das Bett, das Boot và đoán được độ dài của nguyên âm khi nhìn chữ viết.
+  - type: explain
+    text:
+      vi: "Trong tiếng Đức, mỗi nguyên âm a, e, i, o, u đều có dạng dài và dạng ngắn. Tiếng Việt cũng có vài cặp như vậy (a dài – ă ngắn), nên bạn có thể dựa vào đó: der Name đọc a dài như \"a\", der Mann đọc a ngắn như \"ă\"."
+  - type: explain
+    text:
+      vi: "Chữ viết báo nguyên âm dài khi: nguyên âm viết đôi (Tee, Boot), có h đứng sau (Uhr), là ie (Bier), hoặc chỉ có một phụ âm theo sau (Name, Hut). Chữ h đứng sau nguyên âm không đọc, nó chỉ báo nguyên âm đó dài."
+  - type: explain
+    text:
+      vi: "Chữ viết báo nguyên âm ngắn khi nguyên âm đứng trước phụ âm đôi (Bett, Mann, Sonne, Ball) hoặc trước một cụm phụ âm. Nguyên âm ngắn đọc gọn, dứt khoát rồi chuyển ngay sang phụ âm."
+  - type: explain
+    text:
+      vi: "Dài hay ngắn có thể làm đổi nghĩa: das Bett (cái giường) khác das Beet (luống hoa). Chất âm cũng hơi khác: e dài nghe như \"ê\", e ngắn như \"e\"; o dài như \"ô\", o ngắn như \"o\"."
+  - type: deep_explain
+    text:
+      vi: "Quy tắc chữ viết đúng với phần lớn từ nhưng có ngoại lệ: der Bus có u ngắn dù chỉ có một s. Gặp từ mới, bạn hãy nghe mẫu và nhìn chữ viết cùng lúc. Trong IPA, dấu ː sau nguyên âm nghĩa là âm dài: der Name /ˈnaːmə/, der Mann /man/."
+  - type: example
+    target: "der Name – der Mann"
+    target_lang: de
+    translation:
+      vi: "tên – người đàn ông"
+    note:
+      vi: "Name: a dài vì chỉ có một m (NAA-mơ). Mann: a ngắn vì có nn (đọc gọn như \"măn\")."
+  - type: example
+    target: "der See – das Bett"
+    target_lang: de
+    translation:
+      vi: "cái hồ – cái giường"
+    note:
+      vi: "ee là \"ê\" kéo dài (\"dêê\"); e trước tt là \"e\" ngắn (\"bét\")."
+  - type: example
+    target: "das Boot – die Sonne"
+    target_lang: de
+    translation:
+      vi: "con thuyền – mặt trời"
+    note:
+      vi: "oo là \"ô\" kéo dài (\"bôôt\"); o trước nn là \"o\" ngắn (DO-nơ)."
+  - type: example
+    target: "die Uhr – das Bier – der Hut"
+    target_lang: de
+    translation:
+      vi: "đồng hồ – bia – cái mũ"
+    note:
+      vi: "Ba cách viết nguyên âm dài: có h sau u (h không đọc), ie là \"i\" dài, u trước một chữ t."
+  - type: example
+    target: "der Hut – der Ball"
+    target_lang: de
+    translation:
+      vi: "cái mũ – quả bóng"
+    note:
+      vi: "Hut: u dài trước một phụ âm. Ball: a ngắn trước ll."
+  - type: common_mistake
+    wrong: "Beet (khi muốn nói cái giường)"
+    right: "Bett"
+    target_lang: de
+    note:
+      vi: "Tiếng Việt không phân biệt e dài – e ngắn nên người Việt hay đọc Bett và Beet như nhau. Cái giường là das Bett: e ngắn, gọn, dừng ở t; das Beet (e dài) là luống hoa."
+  - type: common_mistake
+    wrong: "Bi-er"
+    right: "Bier"
+    target_lang: de
+    note:
+      vi: "ie là một âm \"i\" dài, không đọc thành \"i-ê\". Bier đọc gần như \"bii-a\"."
+  - type: common_mistake
+    wrong: "U-h-r (đọc cả chữ h)"
+    right: "Uhr"
+    target_lang: de
+    note:
+      vi: "h đứng sau nguyên âm không đọc; nó chỉ báo u dài: \"uu-a\"."
+  - type: summary
+    points:
+      - vi: "Mỗi nguyên âm có dạng dài và ngắn; dài/ngắn có thể đổi nghĩa (Bett – Beet)."
+      - vi: "Dài: viết đôi (ee, oo, aa), có h theo sau (Uhr), ie (Bier), trước một phụ âm (Name, Hut)."
+      - vi: "Ngắn: trước phụ âm đôi (tt, nn, ll, ss) hoặc cụm phụ âm (Bett, Mann, Sonne, Ball)."
+      - vi: "e dài ≈ \"ê\", e ngắn ≈ \"e\"; o dài ≈ \"ô\", o ngắn ≈ \"o\"; a ngắn ≈ \"ă\"."
+      - vi: "h sau nguyên âm không đọc; ie là một âm \"i\" dài."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u1l2-listen-bett-beet
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-bett
+    prompt:
+      audio_asset_id: null
+      fallback_text: Bett
+      options:
+        - { id: q2h, text: das Bett, lang: de }
+        - { id: w9k, text: das Beet, lang: de }
+    answer:
+      correct_option_id: q2h
+    explanation:
+      vi: "Bạn nghe một âm e ngắn, gọn như \"e\" rồi dừng ngay ở t: đó là Bett (cái giường), viết tt. Beet (luống hoa) có e dài, kéo ra như \"êê\"."
+    display_answer: das Bett
+
+  - key: de:exercise:p0u1l2-listen-ofen-offen
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-g-vokallaenge
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ofen
+      options:
+        - { id: r5m, text: der Ofen, lang: de }
+        - { id: c1p, text: offen, lang: de }
+    answer:
+      correct_option_id: r5m
+    explanation:
+      vi: "Bạn nghe o dài như \"ôô\": đó là der Ofen (cái lò), chỉ có một f nên o dài. offen (mở) viết ff nên o ngắn, đọc gọn như \"o\"."
+    display_answer: der Ofen
+
+  - key: de:exercise:p0u1l2-mcq-lang
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-name
+    prompt:
+      stem: "Trong từ nào nguyên âm được đọc DÀI?"
+      stem_lang: vi
+      options:
+        - { id: d6a, text: der Name, lang: de }
+        - { id: h3s, text: der Mann, lang: de }
+        - { id: m8t, text: die Sonne, lang: de }
+        - { id: b4f, text: das Bett, lang: de }
+    answer:
+      correct_option_id: d6a
+    explanation:
+      vi: "Name chỉ có một m sau a nên a dài (NAA-mơ). Mann (nn), Sonne (nn) và Bett (tt) đều có phụ âm đôi nên nguyên âm ngắn."
+    display_answer: der Name
+
+  - key: de:exercise:p0u1l2-mcq-kurz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-ball
+    prompt:
+      stem: "Trong từ nào nguyên âm được đọc NGẮN?"
+      stem_lang: vi
+      options:
+        - { id: k7n, text: der Ball, lang: de }
+        - { id: s2e, text: der See, lang: de }
+        - { id: z5o, text: das Boot, lang: de }
+        - { id: p9u, text: der Hut, lang: de }
+    answer:
+      correct_option_id: k7n
+    explanation:
+      vi: "Ball có ll nên a ngắn, đọc gọn như \"ă\". See và Boot viết nguyên âm đôi (ee, oo) nên dài; Hut chỉ có một t sau u nên u dài."
+    display_answer: der Ball
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u1l2-wb-bett
+    type: word_bank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-bett
+    prompt:
+      instruction: "Ghép các chữ cái thành từ tiếng Đức nghĩa là \"cái giường\" (nguyên âm ngắn)."
+      tokens:
+        - { id: t1, text: t }
+        - { id: e1, text: e }
+        - { id: bb, text: B }
+        - { id: t2, text: t }
+        - { id: e2, text: e }
+    answer:
+      orders:
+        - [bb, e1, t1, t2]
+        - [bb, e1, t2, t1]
+        - [bb, e2, t1, t2]
+        - [bb, e2, t2, t1]
+    explanation:
+      vi: "Cái giường là das Bett: e ngắn nên phải viết hai chữ t sau e. B, e, e, t sẽ thành Beet (luống hoa) với e dài."
+    display_answer: Bett
+
+  - key: de:exercise:p0u1l2-tr-sonne
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-sonne
+    prompt:
+      source_text: mặt trời
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Sonne
+        - die Sonne
+    known_wrong:
+      - answer: Sone
+        feedback_vi: "o trong Sonne đọc ngắn, nên phải viết hai chữ n: Sonne."
+        error_tag: double_letter
+      - answer: Sun
+        feedback_vi: "Sun là tiếng Anh. Tiếng Đức là die Sonne."
+        error_tag: english_word
+    explanation:
+      vi: "Mặt trời là die Sonne. o đọc ngắn như \"o\" nên sau nó là phụ âm đôi nn; e cuối đọc nhẹ: DO-nơ."
+    display_answer: die Sonne
+
+  - key: de:exercise:p0u1l2-tr-uhr
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-uhr
+    prompt:
+      source_text: đồng hồ
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Uhr
+        - die Uhr
+    known_wrong:
+      - answer: Ur
+        feedback_vi: "Thiếu chữ h. Đồng hồ là Uhr: h không đọc nhưng phải viết, nó báo u dài."
+        error_tag: spelling
+      - answer: Uhrr
+        feedback_vi: "Chỉ có một chữ r: Uhr."
+        error_tag: spelling
+    explanation:
+      vi: "Đồng hồ là die Uhr. Chữ h sau u không đọc, chỉ báo u dài: \"uu-a\"."
+    display_answer: die Uhr
+
+  - key: de:exercise:p0u1l2-tr-mann
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-mann
+    prompt:
+      source_text: người đàn ông
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mann
+        - der Mann
+        - ein Mann
+    known_wrong:
+      - answer: Man
+        feedback_vi: "Người đàn ông là Mann với hai chữ n (a ngắn). man một chữ n là một từ khác, nghĩa là \"người ta\"."
+        error_tag: double_letter
+      - answer: Mahn
+        feedback_vi: "h sau a sẽ làm a dài. Mann có a ngắn nên viết nn."
+        error_tag: spelling
+    explanation:
+      vi: "Người đàn ông là der Mann. a đọc ngắn như \"ă\" nên viết hai chữ n."
+    display_answer: der Mann
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u1l2-mcq-neues-wort
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-g-vokallaenge
+    prompt:
+      stem: "Bạn gặp một từ mới: der Kamm (cái lược). Chữ a trong từ này đọc thế nào?"
+      stem_lang: vi
+      options:
+        - { id: n4c, text: "Ngắn, như \"ă\", vì sau a là mm", lang: vi }
+        - { id: y8b, text: "Dài, như \"a\" kéo dài, vì sau a là mm", lang: vi }
+        - { id: l1r, text: "Dài, vì từ chỉ có một âm tiết", lang: vi }
+        - { id: f6w, text: "Không đọc, vì a đứng giữa hai phụ âm", lang: vi }
+    answer:
+      correct_option_id: n4c
+    explanation:
+      vi: "Nguyên âm đứng trước phụ âm đôi (mm) thì đọc ngắn, giống Mann và Ball. Một từ chỉ có một âm tiết vẫn có thể có nguyên âm dài (Hut) hoặc ngắn (Kamm), nên số âm tiết không quyết định."
+    display_answer: "Ngắn, như \"ă\", vì sau a là mm"
+
+  - key: de:exercise:p0u1l2-tr-see
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-see
+    prompt:
+      source_text: der See
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - cái hồ
+        - hồ
+        - hồ nước
+        - một cái hồ
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: biển
+        feedback_vi: "der See (giống đực) là cái hồ. die See (giống cái) mới là biển; biển cũng hay gọi là das Meer."
+        error_tag: gender_meaning
+      - answer: nhìn
+        feedback_vi: "Đây là tiếng Đức, không phải see tiếng Anh. der See là cái hồ, đọc \"dêê\"."
+        error_tag: english_word
+    explanation:
+      vi: "der See nghĩa là cái hồ. ee là \"ê\" dài và s đầu từ đọc như \"d\" nhẹ: \"dêê\"."
+    display_answer: cái hồ

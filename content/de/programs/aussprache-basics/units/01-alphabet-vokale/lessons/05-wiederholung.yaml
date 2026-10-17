@@ -1,0 +1,391 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u1-wiederholung
+order_index: 5
+level: pre_a1
+title:
+  vi: "Ôn tập: đọc tên, đánh vần, nghe phân biệt (Wiederholung)"
+objectives:
+  - vi: Đánh vần tên của mình và một địa chỉ email bằng tiếng Đức.
+  - vi: Nghe chọn đúng từ trong các cặp dễ nhầm (der Mann – der Name, das Bett – das Boot, schon – schön).
+  - vi: Đọc to một danh sách từ đã học với nguyên âm dài – ngắn, ä ö ü và nguyên âm đôi đúng.
+estimated_minutes: 17
+skills: [pronunciation, listening, reading, writing]
+prerequisites: [de:lesson:p0u1-diphthonge]
+items:
+  - item: de:item:p0u1-g-alphabet
+    role: reuse
+  - item: de:item:p0u1-g-buchstabieren
+    role: reuse
+  - item: de:item:p0u1-g-vokallaenge
+    role: reuse
+  - item: de:item:p0u1-g-umlaute
+    role: reuse
+  - item: de:item:p0u1-g-diphthonge
+    role: reuse
+  - item: de:item:p0u1-g-schwa-er
+    role: reuse
+  - item: de:item:p0u1-name
+    role: reuse
+  - item: de:item:p0u1-mann
+    role: reuse
+  - item: de:item:p0u1-bett
+    role: reuse
+  - item: de:item:p0u1-boot
+    role: reuse
+  - item: de:item:p0u1-schoen
+    role: reuse
+  - item: de:item:p0u1-taxi
+    role: reuse
+  - item: de:item:p0u1-tee
+    role: reuse
+  - item: de:item:p0u1-cola
+    role: reuse
+  - item: de:item:p0u1-pizza
+    role: reuse
+  - item: de:item:p0u1-kaese
+    role: reuse
+  - item: de:item:p0u1-broetchen
+    role: reuse
+  - item: de:item:p0u1-bier
+    role: reuse
+  - item: de:item:p0u1-lehrer
+    role: reuse
+  - item: de:item:p0u1-haus
+    role: reuse
+  - item: de:item:p0u1-leute
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đánh vần được tên mình và địa chỉ email, nghe phân biệt được những cặp từ dễ nhầm như der Mann – der Name, schon – schön, và đọc to được một danh sách mua sắm nhỏ bằng tiếng Đức.
+  - type: explain
+    text:
+      vi: "Bài này ôn cả unit: tên chữ cái, nguyên âm dài – ngắn, ä ö ü, nguyên âm đôi và đuôi -e, -er. Gặp một từ mới, bạn hãy tự hỏi lần lượt: nguyên âm dài hay ngắn, có hai chấm không, có phải nguyên âm đôi không."
+  - type: explain
+    text:
+      vi: "Đánh vần email: dấu chấm là Punkt, @ đọc là \"ét\" (từ at của tiếng Anh), gạch nối là Bindestrich. Ví dụ lan.tran@web.de đánh vần là L, A, N, Punkt, T, R, A, N, at, W, E, B, Punkt, D, E."
+  - type: explain
+    text:
+      vi: "Tiếng Đức không có chữ đ và các dấu thanh của tiếng Việt, nên trên giấy tờ Đức tên người Việt thường viết không dấu và đ thành d: Nguyễn Văn Đức thành Nguyen Van Duc. Khi đánh vần, bạn đánh vần đúng dạng không dấu này."
+  - type: deep_explain
+    text:
+      vi: "Luyện những cặp từ gần giống nhau là cách luyện nghe tốt nhất: der Mann – der Name khác ở a ngắn và a dài, das Bett – das Boot khác ở e và o, schon – schön khác ở o và ö. Hãy đọc to từng cặp, ghi âm lại và so với audio mẫu. Khi đánh vần qua điện thoại, nói chậm và tách rõ từng chữ; người nghe sẽ hỏi lại \"Wie schreibt man das?\" nếu chưa rõ."
+  - type: example
+    target: "Großes N, G, U, Y, E, N: Nguyen"
+    target_lang: de
+    translation:
+      vi: "N viết hoa, gê, u, ÜP-xi-lon, ê, en: Nguyen"
+    note:
+      vi: "Y tên là Ypsilon; G đọc \"gê\", không phải \"giê\"."
+  - type: example
+    target: "der Mann – der Name"
+    target_lang: de
+    translation:
+      vi: "người đàn ông – tên"
+    note:
+      vi: "Mann: a ngắn vì nn. Name: a dài vì chỉ có một m."
+  - type: example
+    target: "das Bett – das Boot"
+    target_lang: de
+    translation:
+      vi: "cái giường – con thuyền"
+    note:
+      vi: "Bett: e ngắn trước tt. Boot: oo là \"ô\" dài."
+  - type: example
+    target: "Tee, Cola, Pizza, Käse, Brötchen"
+    target_lang: de
+    translation:
+      vi: "trà, cô-la, pizza, phô mai, bánh mì nhỏ"
+    note:
+      vi: "Đọc to danh sách: ee dài (Tee), o dài (Cola), zz là \"ts\" (Pizza), ä như \"e\" kéo dài (Käse), ö tròn môi (Brötchen)."
+  - type: common_mistake
+    wrong: "Nam-mơ"
+    right: "Name"
+    target_lang: de
+    note:
+      vi: "Name chỉ có một m nên a đọc dài: NAA-mơ. Đọc a ngắn như trong Mann thì nghe giống một từ khác."
+  - type: common_mistake
+    wrong: "Đuc"
+    right: "Duc"
+    target_lang: de
+    note:
+      vi: "Bảng chữ cái tiếng Đức không có đ. Khi viết và đánh vần cho người Đức, bạn dùng d: D, U, C."
+  - type: common_mistake
+    wrong: "Bot"
+    right: "Boot"
+    target_lang: de
+    note:
+      vi: "Con thuyền có o dài nên viết hai chữ o: das Boot. Khi đánh vần nói B, Doppel-O, T."
+  - type: summary
+    points:
+      - vi: "Đánh vần: tên chữ kiểu Đức; großes … cho chữ hoa; Doppel-… cho hai chữ giống nhau."
+      - vi: "Email: Punkt = dấu chấm, at = @, Bindestrich = gạch nối."
+      - vi: "Tên người Việt viết không dấu, đ → d (Nguyen Van Duc)."
+      - vi: "Dài – ngắn: Name – Mann, Boot – Bett; ä ö ü: schon – schön."
+      - vi: "Nguyên âm đôi: ei \"ai\", eu/äu \"oi\", au \"ao\"; -e như \"ơ\", -er như \"a\" nhẹ."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u1l5-listen-mann-name
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-name
+    prompt:
+      audio_asset_id: null
+      fallback_text: Name
+      options:
+        - { id: n3m, text: der Name, lang: de }
+        - { id: m5n, text: der Mann, lang: de }
+    answer:
+      correct_option_id: n3m
+    explanation:
+      vi: "Bạn nghe a dài và một âm \"ơ\" nhẹ ở cuối: NAA-mơ, tức der Name. der Mann chỉ có một âm tiết với a ngắn, gọn như \"măn\"."
+    display_answer: der Name
+
+  - key: de:exercise:p0u1l5-listen-bett-boot
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-boot
+    prompt:
+      audio_asset_id: null
+      fallback_text: Boot
+      options:
+        - { id: b2o, text: das Boot, lang: de }
+        - { id: e7t, text: das Bett, lang: de }
+    answer:
+      correct_option_id: b2o
+    explanation:
+      vi: "Bạn nghe \"ô\" kéo dài: đó là oo trong das Boot (con thuyền). das Bett có e ngắn như \"e\", nghe \"bét\"."
+    display_answer: das Boot
+
+  - key: de:exercise:p0u1l5-listen-schon-schoen
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-schoen
+    prompt:
+      audio_asset_id: null
+      fallback_text: schon
+      options:
+        - { id: s4c, text: schon, lang: de }
+        - { id: s9o, text: schön, lang: de }
+    answer:
+      correct_option_id: s4c
+    explanation:
+      vi: "Bạn nghe o thường, môi tròn như \"ô\" và lưỡi lùi về sau: đó là schon (đã, rồi). schön có ö: lưỡi đưa ra trước như \"ê\" trong khi môi vẫn tròn."
+    display_answer: schon
+
+  - key: de:exercise:p0u1l5-mcq-liste-bier
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-bier
+    prompt:
+      stem: "Đọc danh sách mua sắm của Anna: «Tee, Cola, Pizza, Käse, Brötchen». Thứ nào KHÔNG có trong danh sách?"
+      stem_lang: vi
+      options:
+        - { id: l1b, text: Bier, lang: de }
+        - { id: l2t, text: Tee, lang: de }
+        - { id: l3k, text: Käse, lang: de }
+        - { id: l4p, text: Pizza, lang: de }
+    answer:
+      correct_option_id: l1b
+    explanation:
+      vi: "Danh sách có Tee (trà), Käse (phô mai) và Pizza, nhưng không có Bier (bia). Bier có ie, đọc \"bii-a\"."
+    display_answer: Bier
+
+  - key: de:exercise:p0u1l5-mcq-liste-lang
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-g-vokallaenge
+    prompt:
+      stem: "Trong danh sách «Tee, Cola, Pizza, Käse, Brötchen», từ nào viết hai nguyên âm giống nhau liền nhau để báo âm dài?"
+      stem_lang: vi
+      options:
+        - { id: v1e, text: Tee, lang: de }
+        - { id: v2c, text: Cola, lang: de }
+        - { id: v3p, text: Pizza, lang: de }
+        - { id: v4b, text: Brötchen, lang: de }
+    answer:
+      correct_option_id: v1e
+    explanation:
+      vi: "Tee viết ee - nguyên âm đôi chữ là dấu hiệu âm dài. Cola cũng có o dài nhưng chỉ viết một o; Pizza viết đôi phụ âm zz (i ngắn); Brötchen có ö dài nhưng chỉ một chữ."
+    display_answer: Tee
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u1l5-wb-taxi
+    type: word_bank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-taxi
+    prompt:
+      instruction: "Bạn nghe đánh vần \"T, A, X, I\". Ghép các chữ cái thành từ."
+      tokens:
+        - { id: x-x, text: x }
+        - { id: x-s, text: s }
+        - { id: x-t, text: T }
+        - { id: x-i, text: i }
+        - { id: x-k, text: k }
+        - { id: x-a, text: a }
+    answer:
+      orders:
+        - [x-t, x-a, x-x, x-i]
+    explanation:
+      vi: "T (\"tê\"), A (\"a\"), X (\"íks\"), I (\"i\") ghép thành Taxi. Chữ x đã mang âm \"ks\", nên không cần thêm k hay s."
+    display_answer: Taxi
+
+  - key: de:exercise:p0u1l5-wb-lehrer
+    type: word_bank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-lehrer
+    prompt:
+      instruction: "Ghép các chữ cái thành từ tiếng Đức nghĩa là \"thầy giáo\" (đọc LÊ-ra)."
+      tokens:
+        - { id: r1, text: r }
+        - { id: e1, text: e }
+        - { id: hh, text: h }
+        - { id: ll, text: L }
+        - { id: aa, text: a }
+        - { id: e2, text: e }
+        - { id: r2, text: r }
+    answer:
+      orders:
+        - [ll, e1, hh, r1, e2, r2]
+        - [ll, e2, hh, r1, e1, r2]
+        - [ll, e1, hh, r2, e2, r1]
+        - [ll, e2, hh, r2, e1, r1]
+    explanation:
+      vi: "Thầy giáo là der Lehrer: eh báo e dài (\"ê\"), đuôi -er đọc như \"a\" nhẹ. Vì vậy âm \"a\" ở cuối được viết bằng -er, không phải chữ a."
+    display_answer: Lehrer
+
+  - key: de:exercise:p0u1l5-fill-mueller
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u1-g-buchstabieren
+    prompt:
+      template: "Großes M, Ü, Doppel-L, E, R → {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Müller]
+    known_wrong:
+      - answer: Muller
+        feedback_vi: "Bạn nghe Ü, nên phải viết ü (hoặc ue nếu bàn phím không có ü): Müller."
+        error_tag: missing_umlaut
+      - answer: Müler
+        feedback_vi: "Doppel-L là hai chữ l: Müller."
+        error_tag: double_letter
+    explanation:
+      vi: "M viết hoa, Ü, hai chữ l, E, R ghép thành Müller - một họ rất phổ biến ở Đức. ü ngắn vì đứng trước ll; -er cuối đọc như \"a\" nhẹ: MÜL-la."
+    display_answer: Müller
+
+  - key: de:exercise:p0u1l5-tr-haus
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u1-haus
+    prompt:
+      source_text: ngôi nhà
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Haus
+        - das Haus
+        - ein Haus
+    known_wrong:
+      - answer: Haos
+        feedback_vi: "Âm \"ao\" trong tiếng Đức viết là au: Haus."
+        error_tag: spelling
+      - answer: House
+        feedback_vi: "House là tiếng Anh. Tiếng Đức là das Haus."
+        error_tag: english_word
+    explanation:
+      vi: "Ngôi nhà là das Haus: au đọc như \"ao\", s cuối như \"x\": \"hao-x\"."
+    display_answer: das Haus
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u1l5-mcq-email
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-g-alphabet
+    prompt:
+      stem: "Lan đánh vần địa chỉ email cho cô thư ký người Đức: «L, A, N, Punkt, T, R, A, N, at, W, E, B, Punkt, D, E». Cô ấy ghi lại địa chỉ nào?"
+      stem_lang: vi
+      options:
+        - { id: m1a, text: lan.tran@web.de, lang: vi }
+        - { id: m2b, text: lantran@web.de, lang: vi }
+        - { id: m3c, text: lan-tran@web.de, lang: vi }
+        - { id: m4d, text: lan.tran@web.com, lang: vi }
+    answer:
+      correct_option_id: m1a
+    explanation:
+      vi: "Punkt là dấu chấm (.), at là @. Giữa Lan và Tran có Punkt nên có dấu chấm, không phải gạch nối (Bindestrich); cuối cùng là Punkt, D, E nên là .de chứ không phải .com."
+    display_answer: lan.tran@web.de
+
+  - key: de:exercise:p0u1l5-listen-name-buchstabiert
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-g-buchstabieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Großes H, U, Y. Großes T, R, A, N."
+      options:
+        - { id: h1y, text: Huy Tran, lang: vi }
+        - { id: h2y, text: Hui Tran, lang: vi }
+        - { id: h3y, text: Huy Dran, lang: vi }
+        - { id: h4y, text: Huy Trang, lang: vi }
+    answer:
+      correct_option_id: h1y
+    explanation:
+      vi: "Chữ thứ ba là Y (Ypsilon, \"ÜP-xi-lon\") nên tên là Huy, không phải Hui. Họ bắt đầu bằng T (\"tê\"), không phải D (\"đê\"), và kết thúc ở N, không có G (\"gê\"): Tran."
+    display_answer: Huy Tran
+
+  - key: de:exercise:p0u1l5-tr-leute
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u1-leute
+    prompt:
+      source_text: die Leute
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - mọi người
+        - những người
+        - người ta
+        - người
+        - những người này
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: hôm nay
+        feedback_vi: "Hôm nay là heute. die Leute (LOI-tơ) là mọi người: hai từ chỉ khác nhau ở chữ đầu."
+        error_tag: word_confusion
+    explanation:
+      vi: "die Leute nghĩa là mọi người, người ta; từ này chỉ có số nhiều. eu đọc như \"oi\", e cuối nhẹ như \"ơ\": LOI-tơ."
+    display_answer: mọi người
