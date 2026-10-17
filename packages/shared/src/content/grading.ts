@@ -90,6 +90,9 @@ const VI_TONES: Record<string, string> = {
 /** Not after `q`: in the `qu` cluster the u is a glide, so quý/quỳ already carry the tone correctly. */
 const VI_TONE_RE = new RegExp(`(?<!q)(${Object.keys(VI_TONES).join('|')})(?!\\p{Alphabetic})`, 'gu');
 
+const DE_FOLD: Record<string, string> = { ä: 'ae', ö: 'oe', ü: 'ue', ß: 'ss' };
+const DE_FOLD_RE = /[äöüß]/gu;
+
 /** Only U+0020 is left after WHITESPACE runs, so collapse/trim look at nothing else. */
 const collapse = (s: string) => s.replace(/ {2,}/gu, ' ').replace(/^ | $/gu, '');
 
@@ -102,6 +105,9 @@ export function normalizeAnswer(input: string, lang: AnswerLang, rubric: Rubric)
   s = collapse(s);
   if (lang === 'en' && rubric.expand_contractions) s = s.replace(CONTRACTION_RE, (m) => CONTRACTIONS[m] ?? m);
   if (lang === 'vi') s = s.replace(VI_TONE_RE, (m) => VI_TONES[m] ?? m);
+  // German: ä/ö/ü/ß are folded to their digraphs on both sides, so `fuer`/`Strasse`/`schoen` equal `für`/`Straße`/`schön`.
+  // (The input is already NFC and lowercased, so Ä/Ö/Ü/ẞ arrive here as ä/ö/ü/ß.) No whitespace or contraction changes.
+  if (lang === 'de') s = s.replace(DE_FOLD_RE, (m) => DE_FOLD[m] ?? m);
   // Japanese is written without spaces: after punctuation handling drop every space (WHITESPACE,
   // incl. U+3000, is already U+0020 here), so "はい、そうです。" and "はい そうです" both equal "はいそうです".
   if (lang === 'ja') return s.replace(/ /gu, '');
@@ -245,6 +251,10 @@ function isParticleAllomorph(r: string, a: string): boolean {
   return false;
 }
 
+/** German with the umlaut dots dropped (ä→a, ö→o, ü→u) before normalizing; ß still folds to ss. Used only for the lenient 'almost' check. */
+const DE_DROP_DOTS: Record<string, string> = { ä: 'a', ö: 'o', ü: 'u', Ä: 'A', Ö: 'O', Ü: 'U' };
+const dropUmlautDots = (s: string) => s.normalize('NFC').replace(/[äöüÄÖÜ]/gu, (m) => DE_DROP_DOTS[m] ?? m);
+
 function gradeText(response: string | undefined, accepted: string[], input: GradeInput): GradeResult {
   const { lang, rubric, knownWrong } = input;
   const r = normalizeAnswer(response ?? '', lang, rubric);
@@ -266,6 +276,11 @@ function gradeText(response: string | undefined, accepted: string[], input: Grad
   if (lang === 'vi' && rubric.diacritics === 'lenient') {
     const rs = stripDiacritics(r);
     if (as.some((a) => stripDiacritics(a) === rs)) return result('almost', ['missing_diacritics']);
+  }
+  // German typed without the umlaut dots (fur for für). schon vs schön is a real-word clash, so it is only ever 'almost'.
+  if (lang === 'de' && rubric.diacritics === 'lenient') {
+    const rd = normalizeAnswer(dropUmlautDots(response ?? ''), lang, rubric);
+    if (accepted.some((a) => normalizeAnswer(dropUmlautDots(a), lang, rubric) === rd)) return result('almost', ['missing_diacritics']);
   }
   return result('incorrect');
 }
