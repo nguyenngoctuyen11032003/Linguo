@@ -1,0 +1,428 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u03-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – tin nhắn trang trọng, hồ sơ xin việc (Wiederholung)
+objectives:
+  - vi: Đọc nhiều tin tuyển dụng ngắn và ghép đúng người với việc (kiểu Goethe B1 Lesen, dạng ghép tin đăng).
+  - vi: Nghe hiểu tin nhắn thoại xin dời lịch và đoạn giới thiệu công ty.
+  - vi: Viết tin nhắn trang trọng khoảng 40 từ để xin dời lịch hoặc xin lỗi vì vắng mặt (kiểu Goethe B1 Schreiben Teil 3).
+estimated_minutes: 24
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:b1u03-im-buero]
+items:
+  - item: de:item:b1u03-g-passiv-praesens
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praeteritum
+    role: reuse
+  - item: de:item:b1u03-g-passiv-perfekt
+    role: reuse
+  - item: de:item:b1u03-g-damit
+    role: reuse
+  - item: de:item:b1u03-g-n-deklination
+    role: reuse
+  - item: de:item:b1u03-g-indefinitpronomen
+    role: reuse
+  - item: de:item:b1u03-stellenanzeige
+    role: reuse
+  - item: de:item:b1u03-berufserfahrung
+    role: reuse
+  - item: de:item:b1u03-unbefristet
+    role: reuse
+  - item: de:item:b1u03-erforderlich
+    role: reuse
+  - item: de:item:b1u03-unternehmen
+    role: reuse
+  - item: de:item:b1u03-exportieren
+    role: reuse
+  - item: de:item:b1u03-besprechung
+    role: reuse
+  - item: de:item:b1u03-assistent
+    role: reuse
+  - item: de:item:a2u03-bewerbung
+    role: reuse
+  - item: de:item:a2u03-vorstellungsgespraech
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc nhanh được vài tin tuyển dụng để tìm việc phù hợp, nghe hiểu tin nhắn thoại công việc, và viết được tin nhắn trang trọng khoảng 40 từ, ví dụ: \"Sehr geehrte Frau Wolf, leider kann ich am Montag nicht zur Besprechung kommen …\""
+  - type: explain
+    text:
+      vi: "Khi ghép người tìm việc với tin tuyển dụng, trước hết hãy gạch chân điều kiện chính của từng người (giờ làm, kinh nghiệm, nơi làm, loại hợp đồng), rồi tìm điều đó trong tin đăng. Tin tuyển dụng hay dùng bị động (Gesucht wird …, Unterkunft wird gestellt) và Genitiv (Assistenz der Geschäftsführung). Có thể có người không hợp với tin nào, nên đừng cố ghép bằng mọi giá."
+  - type: explain
+    text:
+      vi: "Tin nhắn trang trọng gửi cho người bạn xưng Sie: sếp, giáo viên, nhân viên văn phòng. Cấu trúc: Sehr geehrte Frau … / Sehr geehrter Herr …, – lý do viết (xin lỗi, xin dời lịch) – đề nghị – Mit freundlichen Grüßen + họ tên. Sie, Ihnen, Ihr luôn viết hoa trong cả tin nhắn."
+  - type: explain
+    text:
+      vi: "Câu mẫu hay dùng: Leider kann ich am Montag nicht zur Besprechung kommen, weil … (tiếc là tôi không thể …); Könnten wir den Termin auf Mittwoch verschieben? (chúng ta có thể dời lịch … không?); Ich bitte um Ihr Verständnis (mong anh/chị thông cảm). Könnten là dạng lịch sự bạn đã học như một mẫu câu ở A2; hệ thống Konjunktiv II sẽ học ở unit sau."
+  - type: explain
+    text:
+      vi: "Ôn nhanh ngữ pháp của unit: bị động wird/wurde/ist … worden + Partizip II; Genitiv des/der, danh từ giống đực, trung tính thêm -s; damit khi khác chủ ngữ, um … zu khi cùng chủ ngữ. Thêm n-Deklination (den Kollegen, Herrn Weber) và niemand/nichts không đi kèm nicht."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, phần Schreiben của Goethe-Zertifikat B1 có ba nhiệm vụ, trong đó Teil 3 là tin nhắn trang trọng khoảng 40 từ; cấu trúc và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Người chấm thường xem: đủ các ý của đề, lời chào và lời kết đúng ngữ vực, cách viết lịch sự. Không biết tên người nhận: Sehr geehrte Damen und Herren. Sau lời chào có dấu phẩy, và câu đầu tiên viết thường (trừ danh từ và Sie): Sehr geehrte Frau Wolf, leider kann ich …. Liebe Frau Wolf thân thiện hơn nhưng vẫn xưng Sie."
+  - type: example
+    target: "Sehr geehrte Frau Wolf, leider kann ich am Montag nicht zur Besprechung kommen, weil ich einen Arzttermin habe. Könnten wir den Termin auf Mittwoch verschieben? Das Protokoll der letzten Besprechung schicke ich Ihnen heute noch. Ich bitte um Ihr Verständnis. Mit freundlichen Grüßen Linh Nguyen"
+    target_lang: de
+    translation:
+      vi: "Kính gửi bà Wolf, tiếc là thứ Hai tôi không thể đến cuộc họp vì tôi có lịch khám bác sĩ. Chúng ta có thể dời lịch sang thứ Tư được không ạ? Biên bản cuộc họp lần trước tôi sẽ gửi bà ngay trong hôm nay. Mong bà thông cảm. Trân trọng, Linh Nguyen"
+    note:
+      vi: "Khoảng 45 từ: lời chào trang trọng – lý do (weil, động từ cuối) – đề nghị lịch sự (Könnten wir …?) – thông tin thêm – lời kết. Frau → Sehr geehrte; Protokoll der letzten Besprechung là Genitiv."
+  - type: example
+    target: Gesucht wird ab sofort eine Assistentin oder ein Assistent der Geschäftsführung. Gute Englischkenntnisse sind erforderlich.
+    target_lang: de
+    translation:
+      vi: Cần tuyển ngay một trợ lý (nữ hoặc nam) cho ban giám đốc. Yêu cầu tiếng Anh tốt.
+    note:
+      vi: "Gesucht wird …: bị động hiện tại. der Geschäftsführung: Genitiv giống cái."
+  - type: example
+    target: Ihre Bewerbung ist bei uns eingegangen und wird in den nächsten Tagen geprüft.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đã nhận được đơn ứng tuyển của anh/chị, đơn sẽ được xem xét trong vài ngày tới.
+    note:
+      vi: "Câu thường gặp trong thư trả lời của công ty. ist eingegangen: Perfekt của eingehen (đến nơi); wird … geprüft: bị động hiện tại."
+  - type: common_mistake
+    wrong: Sehr geehrter Frau Wolf,
+    right: Sehr geehrte Frau Wolf,
+    target_lang: de
+    note:
+      vi: "Người nhận là nữ → Sehr geehrte; Sehr geehrter dùng cho nam (Sehr geehrter Herr Klein)."
+  - type: common_mistake
+    wrong: Mit freundlichen Grüße
+    right: Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "mit + Dativ số nhiều: danh từ thêm -n – Grüßen."
+  - type: common_mistake
+    wrong: Ich bitte um dein Verständnis.
+    right: Ich bitte um Ihr Verständnis.
+    target_lang: de
+    note:
+      vi: "Tin nhắn trang trọng xưng Sie từ đầu đến cuối: Ihr Verständnis, Ihnen (viết hoa)."
+  - type: summary
+    points:
+      - vi: "Đọc tin tuyển dụng: so điều kiện (giờ làm, kinh nghiệm, nơi, hợp đồng); có thể không có tin nào phù hợp."
+      - vi: "Tin nhắn trang trọng: Sehr geehrte/r … – lý do – đề nghị – Mit freundlichen Grüßen + họ tên."
+      - vi: "Câu mẫu: Leider kann ich … nicht …, weil …; Könnten wir den Termin verschieben?; Ich bitte um Ihr Verständnis."
+      - vi: "Bị động: wird gesucht – wurde gegründet – ist geschlossen worden."
+      - vi: "Genitiv: des Unternehmens, der Firma; n-Deklination: den Kollegen, Herrn Weber."
+      - vi: "damit (khác chủ ngữ) – um … zu (cùng chủ ngữ); niemand/nichts không đi với nicht."
+exercises:
+  # ---------------- recognition: đọc (ghép người – tin đăng) ----------------
+  - key: de:exercise:b1u03l5-mcq-anzeige-mai
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-berufserfahrung
+    prompt:
+      stem: "Anzeige A: Bäckerei sucht Verkäuferin oder Verkäufer in Teilzeit (6 bis 12 Uhr), keine Berufserfahrung nötig. Anzeige B: IT-Firma in Leipzig sucht Assistenz der Geschäftsführung, Vollzeit, unbefristet; gutes Englisch und Berufserfahrung im Büro erforderlich. Anzeige C: Hotel am Bodensee: Servicekräfte von Juni bis September gesucht, Unterkunft wird gestellt. — Welche Anzeige passt? Mai hat drei Jahre in einem Büro gearbeitet, spricht gut Englisch und sucht eine feste Stelle."
+      stem_lang: de
+      options:
+        - { id: an1, text: "Anzeige A", lang: de }
+        - { id: an2, text: "Anzeige B", lang: de }
+        - { id: an3, text: "Anzeige C", lang: de }
+        - { id: an0, text: "Keine Anzeige passt", lang: de }
+    answer:
+      correct_option_id: an2
+    explanation:
+      vi: "Mai có kinh nghiệm văn phòng, giỏi tiếng Anh và muốn chỗ làm lâu dài. Tin B yêu cầu đúng gutes Englisch và Berufserfahrung im Büro, hợp đồng unbefristet (không thời hạn) – phù hợp với \"eine feste Stelle\"."
+    display_answer: Anzeige B
+
+  - key: de:exercise:b1u03l5-mcq-anzeige-tom
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-passiv-praesens
+    prompt:
+      stem: "Anzeige A: Bäckerei sucht Verkäuferin oder Verkäufer in Teilzeit (6 bis 12 Uhr), keine Berufserfahrung nötig. Anzeige B: IT-Firma in Leipzig sucht Assistenz der Geschäftsführung, Vollzeit, unbefristet; gutes Englisch und Berufserfahrung im Büro erforderlich. Anzeige C: Hotel am Bodensee: Servicekräfte von Juni bis September gesucht, Unterkunft wird gestellt. — Welche Anzeige passt? Tom studiert und möchte in den Semesterferien im Sommer Geld verdienen, am liebsten an einem See."
+      stem_lang: de
+      options:
+        - { id: an1, text: "Anzeige A", lang: de }
+        - { id: an2, text: "Anzeige B", lang: de }
+        - { id: an3, text: "Anzeige C", lang: de }
+        - { id: an0, text: "Keine Anzeige passt", lang: de }
+    answer:
+      correct_option_id: an3
+    explanation:
+      vi: "Tom muốn làm thêm mùa hè, tốt nhất là ở gần hồ. Tin C: khách sạn bên hồ Bodensee tuyển người phục vụ từ tháng Sáu đến tháng Chín (… gesucht: cách viết gọn của werden … gesucht), còn có chỗ ở (Unterkunft wird gestellt – bị động)."
+    display_answer: Anzeige C
+
+  - key: de:exercise:b1u03l5-mcq-anzeige-fischer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-stellenanzeige
+    prompt:
+      stem: "Anzeige A: Bäckerei sucht Verkäuferin oder Verkäufer in Teilzeit (6 bis 12 Uhr), keine Berufserfahrung nötig. Anzeige B: IT-Firma in Leipzig sucht Assistenz der Geschäftsführung, Vollzeit, unbefristet; gutes Englisch und Berufserfahrung im Büro erforderlich. Anzeige C: Hotel am Bodensee: Servicekräfte von Juni bis September gesucht, Unterkunft wird gestellt. — Welche Anzeige passt? Frau Fischer hat zwei kleine Kinder und kann nur vormittags arbeiten. Sie hat noch nie im Verkauf gearbeitet."
+      stem_lang: de
+      options:
+        - { id: an1, text: "Anzeige A", lang: de }
+        - { id: an2, text: "Anzeige B", lang: de }
+        - { id: an3, text: "Anzeige C", lang: de }
+        - { id: an0, text: "Keine Anzeige passt", lang: de }
+    answer:
+      correct_option_id: an1
+    explanation:
+      vi: "Frau Fischer chỉ làm được buổi sáng và chưa có kinh nghiệm bán hàng. Tin A: bán thời gian từ 6 đến 12 giờ, keine Berufserfahrung nötig (không cần kinh nghiệm)."
+    display_answer: Anzeige A
+
+  - key: de:exercise:b1u03l5-mcq-anzeige-berg
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-genitiv
+    prompt:
+      stem: "Anzeige A: Bäckerei sucht Verkäuferin oder Verkäufer in Teilzeit (6 bis 12 Uhr), keine Berufserfahrung nötig. Anzeige B: IT-Firma in Leipzig sucht Assistenz der Geschäftsführung, Vollzeit, unbefristet; gutes Englisch und Berufserfahrung im Büro erforderlich. Anzeige C: Hotel am Bodensee: Servicekräfte von Juni bis September gesucht, Unterkunft wird gestellt. — Welche Anzeige passt? Herr Berg ist Koch und sucht eine Stelle in einem Restaurant."
+      stem_lang: de
+      options:
+        - { id: an1, text: "Anzeige A", lang: de }
+        - { id: an2, text: "Anzeige B", lang: de }
+        - { id: an3, text: "Anzeige C", lang: de }
+        - { id: an0, text: "Keine Anzeige passt", lang: de }
+    answer:
+      correct_option_id: an0
+    explanation:
+      vi: "Herr Berg là đầu bếp, tìm việc ở nhà hàng. Không tin nào tuyển đầu bếp: A tuyển bán hàng, B tuyển trợ lý của ban giám đốc (der Geschäftsführung – Genitiv), C tuyển người phục vụ (Servicekräfte). Vì vậy không có tin nào phù hợp."
+    display_answer: Keine Anzeige passt
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u03l5-listen-termin-verschieben
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u03-vorstellungsgespraech
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Tag, hier spricht Linh Nguyen. Leider kann ich morgen nicht zum Vorstellungsgespräch kommen, weil ich krank bin. Könnten wir einen neuen Termin vereinbaren?
+      options:
+        - { id: v3a, text: "Linh bị ốm nên ngày mai không đến phỏng vấn được và muốn hẹn lịch mới.", lang: vi }
+        - { id: v7b, text: "Linh bị ốm nên hủy hẳn buổi phỏng vấn ngày mai.", lang: vi }
+        - { id: v1c, text: "Linh sẽ đến phỏng vấn muộn vì bị ốm.", lang: vi }
+        - { id: v5d, text: "Hôm nay Linh không đến phỏng vấn được vì bận việc, muốn hẹn lịch mới.", lang: vi }
+    answer:
+      correct_option_id: v3a
+    explanation:
+      vi: "Leider kann ich morgen nicht … kommen, weil ich krank bin = ngày mai tôi không đến được vì bị ốm. Könnten wir einen neuen Termin vereinbaren? = chúng ta có thể hẹn lịch mới không – Linh không hủy hẳn mà xin dời lịch."
+    display_answer: Linh bị ốm nên ngày mai không đến phỏng vấn được và muốn hẹn lịch mới.
+
+  - key: de:exercise:b1u03l5-listen-firma-asien
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u03-exportieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Firma Berger wurde 1985 in Hamburg gegründet. Seit 2010 werden die Produkte auch nach Asien exportiert.
+      options:
+        - { id: a2a, text: "Công ty Berger được thành lập năm 1985 ở Hamburg; từ năm 2010 sản phẩm còn được xuất khẩu sang châu Á.", lang: vi }
+        - { id: a6b, text: "Công ty Berger được thành lập năm 1985 ở Hamburg; từ năm 2010 sản phẩm được nhập khẩu từ châu Á.", lang: vi }
+        - { id: a9c, text: "Công ty Berger được thành lập năm 2010 ở Hamburg; sản phẩm được xuất khẩu sang châu Á.", lang: vi }
+        - { id: a4d, text: "Công ty Berger được thành lập năm 1985 ở châu Á; từ năm 2010 sản phẩm được bán ở Hamburg.", lang: vi }
+    answer:
+      correct_option_id: a2a
+    explanation:
+      vi: "wurde 1985 in Hamburg gegründet = được thành lập năm 1985 ở Hamburg (bị động Präteritum). Seit 2010 werden die Produkte auch nach Asien exportiert = từ 2010 sản phẩm còn được xuất khẩu sang châu Á (exportieren = xuất khẩu, không phải nhập khẩu)."
+    display_answer: Công ty Berger được thành lập năm 1985 ở Hamburg; từ năm 2010 sản phẩm còn được xuất khẩu sang châu Á.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u03l5-fill-nachricht-floskeln
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-besprechung
+    prompt:
+      template: "Sehr {{b1}} Frau Wolf, leider kann ich am Montag nicht zur Besprechung kommen. Könnten wir den Termin auf Mittwoch {{b2}}? Mit freundlichen {{b3}} Linh Nguyen"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 11 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [verschieben]
+        b3: [Grüßen]
+    known_wrong:
+      - answer: geehrter
+        feedback_vi: Người nhận là nữ (Frau Wolf) → Sehr geehrte; geehrter dùng cho Herr.
+        error_tag: adj_ending
+      - answer: verschiebt
+        feedback_vi: Sau Könnten wir …, động từ chính ở dạng nguyên thể cuối câu – verschieben.
+        error_tag: verb_form
+      - answer: Grüße
+        feedback_vi: mit + Dativ số nhiều nên danh từ thêm -n – Mit freundlichen Grüßen.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Các cụm cố định của tin nhắn trang trọng: Sehr geehrte Frau … (nữ), Könnten wir den Termin … verschieben? (nguyên thể cuối câu), Mit freundlichen Grüßen (mit + Dativ số nhiều)."
+    display_answer: "Sehr geehrte Frau Wolf, leider kann ich am Montag nicht zur Besprechung kommen. Könnten wir den Termin auf Mittwoch verschieben? Mit freundlichen Grüßen Linh Nguyen"
+
+  - key: de:exercise:b1u03l5-fill-passiv-genitiv
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-unternehmen
+    prompt:
+      template: "Die Firma {{b1}} (werden) 1985 gegründet. Heute {{b2}} (werden) die Produkte des {{b3}} (Unternehmen) weltweit verkauft."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 13 }
+    answer:
+      blanks:
+        b1: [wurde]
+        b2: [werden]
+        b3: [Unternehmens]
+    known_wrong:
+      - answer: wird
+        feedback_vi: Năm 1985 là quá khứ (wurde); còn câu Heute có chủ ngữ số nhiều die Produkte (werden).
+        error_tag: verb_form
+      - answer: Unternehmen
+        feedback_vi: das Unternehmen là giống trung, ở Genitiv thêm -s – des Unternehmens.
+        error_tag: genitive_ending
+      - answer: geworden
+        feedback_vi: Ở đây werden là trợ động từ bị động và phải chia theo chủ ngữ, thì – wurde/werden.
+        error_tag: verb_form
+    explanation:
+      vi: "Năm 1985 → bị động Präteritum: die Firma wurde gegründet. Heute → bị động hiện tại, chủ ngữ số nhiều die Produkte → werden … verkauft. Genitiv giống trung: des Unternehmens (danh từ tận cùng -en chỉ thêm -s)."
+    display_answer: "Die Firma wurde 1985 gegründet. Heute werden die Produkte des Unternehmens weltweit verkauft."
+
+  - key: de:exercise:b1u03l5-tr-nicht-kommen-konnte
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u03-g-n-deklination
+    prompt:
+      source_text: "Xin lỗi ông Weber, hôm qua tôi đã không đến được. (tin nhắn trang trọng, dùng Präteritum của können)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Entschuldigen Sie bitte, Herr Weber, ich konnte gestern nicht kommen.
+        - Entschuldigen Sie, Herr Weber, ich konnte gestern nicht kommen.
+        - Entschuldigen Sie bitte, Herr Weber, gestern konnte ich nicht kommen.
+        - Entschuldigen Sie, Herr Weber, gestern konnte ich nicht kommen.
+        - Entschuldigung, Herr Weber, ich konnte gestern nicht kommen.
+        - Entschuldigung, Herr Weber, gestern konnte ich nicht kommen.
+        - Es tut mir leid, Herr Weber, ich konnte gestern nicht kommen.
+        - Es tut mir leid, Herr Weber, gestern konnte ich nicht kommen.
+        - Es tut mir leid, Herr Weber, dass ich gestern nicht kommen konnte.
+        - Entschuldigen Sie bitte, Herr Weber, dass ich gestern nicht kommen konnte.
+        - Entschuldigen Sie, Herr Weber, dass ich gestern nicht kommen konnte.
+        - Entschuldigung, Herr Weber, dass ich gestern nicht kommen konnte.
+    known_wrong:
+      - answer: Entschuldige bitte, Herr Weber, ich konnte gestern nicht kommen.
+        feedback_vi: Tin nhắn trang trọng với Herr Weber phải xưng Sie – Entschuldigen Sie bitte.
+        error_tag: register_du_sie
+      - answer: Entschuldigen Sie bitte, Herrn Weber, ich konnte gestern nicht kommen.
+        feedback_vi: Khi gọi trực tiếp (Nominativ), dùng Herr Weber; Herrn chỉ dùng ở Akkusativ, Dativ, Genitiv.
+        error_tag: n_declension
+      - answer: Entschuldigen Sie bitte, Herr Weber, ich kann gestern nicht kommen.
+        feedback_vi: "gestern là quá khứ – Präteritum của können: ich konnte."
+        error_tag: verb_form
+    explanation:
+      vi: "Xưng Sie: Entschuldigen Sie (bitte) hoặc Es tut mir leid. Gọi trực tiếp là Nominativ nên vẫn là Herr Weber (Herrn chỉ ở Akk/Dat/Gen). können ở Präteritum: ich konnte; câu dass thì konnte đứng cuối."
+    display_answer: Entschuldigen Sie bitte, Herr Weber, ich konnte gestern nicht kommen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u03l5-wb-leider-besprechung
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-besprechung
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tiếc là ngày mai tôi không thể đến cuộc họp.\""
+      tokens:
+        - { id: q-besprechung, text: Besprechung }
+        - { id: q-kann, text: kann }
+        - { id: q-nicht, text: nicht }
+        - { id: q-leider, text: Leider }
+        - { id: q-kommen, text: kommen }
+        - { id: q-zur, text: zur }
+        - { id: q-ich, text: ich }
+        - { id: q-morgen, text: morgen }
+    answer:
+      orders:
+        - [q-leider, q-kann, q-ich, q-morgen, q-nicht, q-zur, q-besprechung, q-kommen]
+    explanation:
+      vi: "Leider ở vị trí 1, nên động từ kann ở vị trí 2, rồi đến chủ ngữ ich. Trạng từ thời gian morgen trước nicht; nicht đứng trước cụm chỉ hướng zur Besprechung; động từ nguyên thể kommen đứng cuối câu."
+    display_answer: Leider kann ich morgen nicht zur Besprechung kommen.
+
+  - key: de:exercise:b1u03l5-wb-damit-vorbereiten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-g-damit
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi gửi anh/chị biên bản để anh/chị có thể chuẩn bị.\""
+      tokens:
+        - { id: y-koennen, text: können }
+        - { id: y-protokoll, text: Protokoll }
+        - { id: y-ich, text: Ich }
+        - { id: y-damit, text: damit }
+        - { id: y-ihnen, text: Ihnen }
+        - { id: y-vorbereiten, text: vorbereiten }
+        - { id: y-das, text: das }
+        - { id: y-komma, text: "," }
+        - { id: y-sie, text: Sie }
+        - { id: y-schicke, text: schicke }
+        - { id: y-sich, text: sich }
+    answer:
+      orders:
+        - [y-ich, y-schicke, y-ihnen, y-das, y-protokoll, y-komma, y-damit, y-sie, y-sich, y-vorbereiten, y-koennen]
+    explanation:
+      vi: "Khác chủ ngữ (ich – Sie) → damit. Câu chính: Ich schicke Ihnen (Dativ, đại từ) das Protokoll (Akkusativ). Trong câu phụ damit, đại từ phản thân sich đứng sau Sie, rồi vorbereiten, động từ chia können đứng cuối."
+    display_answer: Ich schicke Ihnen das Protokoll, damit Sie sich vorbereiten können.
+
+  - key: de:exercise:b1u03l5-tr-bewerbung-geprueft-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u03-bewerbung
+    prompt:
+      source_text: Ihre Bewerbung wird in den nächsten Tagen geprüft.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đơn ứng tuyển của anh/chị sẽ được xem xét trong vài ngày tới.
+        - Đơn ứng tuyển của bạn sẽ được xem xét trong vài ngày tới.
+        - Đơn ứng tuyển của anh chị sẽ được xem xét trong vài ngày tới.
+        - Đơn ứng tuyển của anh/chị sẽ được xem xét trong những ngày tới.
+        - Đơn ứng tuyển của bạn sẽ được xem xét trong những ngày tới.
+        - Đơn ứng tuyển của bạn được xem xét trong vài ngày tới.
+        - Hồ sơ ứng tuyển của bạn sẽ được xem xét trong vài ngày tới.
+        - Hồ sơ ứng tuyển của anh/chị sẽ được xem xét trong vài ngày tới.
+        - Hồ sơ của bạn sẽ được xem xét trong vài ngày tới.
+        - Đơn xin việc của bạn sẽ được xem xét trong vài ngày tới.
+        - Đơn xin việc của anh/chị sẽ được xem xét trong những ngày tới.
+        - Chúng tôi sẽ xem xét đơn ứng tuyển của bạn trong vài ngày tới.
+        - Đơn ứng tuyển của bạn sẽ được kiểm tra trong vài ngày tới.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đơn ứng tuyển của bạn đã được xem xét trong vài ngày qua.
+        feedback_vi: "wird … geprüft là bị động hiện tại, ở đây nói việc sắp làm (in den nächsten Tagen = trong vài ngày tới), không phải đã xong."
+        error_tag: meaning
+    explanation:
+      vi: "wird … geprüft = được xem xét (bị động hiện tại, chỉ việc sắp diễn ra nhờ in den nächsten Tagen). Ihre (viết hoa) = của anh/chị; die Bewerbung = đơn/hồ sơ ứng tuyển."
+    display_answer: Đơn ứng tuyển của anh/chị sẽ được xem xét trong vài ngày tới.

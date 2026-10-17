@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u03-firmengeschichte
+order_index: 2
+level: b1
+title:
+  vi: Lịch sử công ty – bị động quá khứ (Die Firma wurde 1950 gegründet.)
+objectives:
+  - vi: Dùng bị động Präteritum (wurde/wurden + Partizip II) để kể lịch sử một doanh nghiệp.
+  - vi: Dùng bị động Perfekt (ist/sind + Partizip II + worden) khi nói, và phân biệt worden với geworden.
+  - vi: Đọc và viết đoạn giới thiệu ngắn về lịch sử công ty và quy trình sản xuất.
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u03-stellenanzeigen]
+items:
+  - item: de:item:b1u03-g-passiv-praeteritum
+  - item: de:item:b1u03-g-passiv-perfekt
+  - item: de:item:b1u03-gruenden
+  - item: de:item:b1u03-unternehmen
+  - item: de:item:b1u03-betrieb
+  - item: de:item:b1u03-herstellen
+  - item: de:item:b1u03-produktion
+  - item: de:item:b1u03-fabrik
+  - item: de:item:b1u03-mitarbeiter
+  - item: de:item:b1u03-entwickeln
+  - item: de:item:b1u03-exportieren
+  - item: de:item:b1u03-gruendung
+  - item: de:item:b1u03-gruender
+  - item: de:item:b1u03-konzern
+  - item: de:item:b1u03-familienunternehmen
+  - item: de:item:b1u03-hauptsitz
+  - item: de:item:b1u03-weltweit
+  - item: de:item:b1u03-erweitern
+  - item: de:item:b1u03-erfolg
+  - item: de:item:b1u03-erfolgreich
+  - item: de:item:b1u01-g-praeteritum-system
+    role: reuse
+  - item: de:item:b1u01-g-nachdem
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praesens
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được lịch sử một công ty, ví dụ: \"Die Firma wurde 1950 gegründet. Zuerst wurden nur Fahrräder hergestellt. Die alte Fabrik ist 2010 geschlossen worden.\""
+  - type: explain
+    text:
+      vi: "Khi kể lịch sử công ty hay một việc đã qua ở thể bị động, bạn dùng werden ở Präteritum: wurde/wurden + Partizip II. wurde ở vị trí 2, Partizip II đứng cuối câu: Die Firma wurde 1950 gegründet. Bạn đã gặp dạng wurde khi học werden \"trở thành\"; câu bị động dùng đúng dạng đó."
+  - type: explain
+    text:
+      vi: "Chia đủ: ich wurde, du wurdest, er/sie/es wurde, wir wurden, ihr wurdet, sie/Sie wurden. Chủ ngữ số nhiều thì dùng wurden: Früher wurden hier Fahrräder hergestellt. Đừng nhầm với würde (có dấu trên u) – đó là Konjunktiv II, bạn sẽ học ở unit sau."
+  - type: explain
+    text:
+      vi: "Perfekt bị động: ist/sind + Partizip II + worden ở cuối câu: Die Fabrik ist 2010 geschlossen worden. Trong câu bị động, Partizip của werden là worden (không có ge-); geworden chỉ dùng với nghĩa \"trở thành\": Er ist Chef geworden. Trợ động từ của Perfekt bị động là sein, không phải haben."
+  - type: explain
+    text:
+      vi: "Khi viết (lịch sử công ty, báo chí, tiểu sử), người Đức hay dùng Präteritum bị động; khi nói, hay dùng Perfekt bị động. Trong câu phụ, động từ chia đứng cuối cùng: …, dass die Firma 1950 gegründet wurde, hoặc …, dass die Firma 1950 gegründet worden ist."
+  - type: deep_explain
+    text:
+      vi: "Ba thì bị động của bài này: Präsens wird gebaut, Präteritum wurde gebaut, Perfekt ist gebaut worden. Hãy phân biệt bị động chỉ hành động (Die Fabrik wurde geschlossen – việc đóng cửa đã diễn ra) với sein + Partizip chỉ trạng thái (Die Fabrik ist geschlossen – nhà máy đang trong tình trạng đóng cửa); dạng thứ hai sẽ học ở B1U07. Lịch sử công ty hay dùng nachdem với Plusquamperfekt (B1U01): Nachdem der Gründer 1980 gestorben war, übernahm seine Tochter das Unternehmen. Năm đứng một mình (1950) hoặc nói im Jahr 1950, không nói in 1950 như tiếng Anh."
+  - type: example
+    target: Die Firma Berger wurde 1950 in Stuttgart gegründet.
+    target_lang: de
+    translation:
+      vi: Công ty Berger được thành lập năm 1950 tại Stuttgart.
+    note:
+      vi: "wurde ở vị trí 2, gegründet đứng cuối câu; năm đứng một mình, không có in."
+  - type: example
+    target: Zuerst wurden nur Fahrräder hergestellt, später auch Motorräder.
+    target_lang: de
+    translation:
+      vi: Ban đầu công ty chỉ sản xuất xe đạp, về sau làm cả xe máy.
+    note:
+      vi: "Chủ ngữ số nhiều (Fahrräder) → wurden. herstellen là động từ tách: Partizip II hergestellt."
+  - type: example
+    target: Die alte Fabrik ist 2010 geschlossen worden. Die Produktion findet jetzt in Polen statt.
+    target_lang: de
+    translation:
+      vi: Nhà máy cũ đã bị đóng cửa năm 2010. Việc sản xuất giờ diễn ra ở Ba Lan.
+    note:
+      vi: "Perfekt bị động: ist + geschlossen + worden – khi nói, cách này rất thường gặp. stattfinden (diễn ra) là động từ tách: findet … statt."
+  - type: example
+    target: Nachdem der Gründer 1980 gestorben war, übernahm seine Tochter das Unternehmen.
+    target_lang: de
+    translation:
+      vi: Sau khi người sáng lập qua đời năm 1980, con gái ông tiếp quản doanh nghiệp.
+    note:
+      vi: "nachdem + Plusquamperfekt (war gestorben), câu chính ở Präteritum: übernahm (übernehmen, động từ mạnh)."
+  - type: example
+    target: Weißt du, wann die Firma gegründet worden ist? – Ich glaube, 1950.
+    target_lang: de
+    translation:
+      vi: Bạn có biết công ty được thành lập khi nào không? – Mình nghĩ là năm 1950.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). Câu hỏi gián tiếp với wann: ist đứng cuối cùng, sau gegründet worden."
+  - type: common_mistake
+    wrong: Die Firma ist 1950 gegründet geworden.
+    right: Die Firma ist 1950 gegründet worden.
+    target_lang: de
+    note:
+      vi: "Trong câu bị động, Partizip của werden là worden; geworden chỉ dùng với nghĩa \"trở thành\"."
+  - type: common_mistake
+    wrong: Die Firma hat 1950 gegründet worden.
+    right: Die Firma ist 1950 gegründet worden.
+    target_lang: de
+    note:
+      vi: "Perfekt bị động dùng sein (ist/sind), không dùng haben."
+  - type: common_mistake
+    wrong: Die Fahrräder wurde in Polen hergestellt.
+    right: Die Fahrräder wurden in Polen hergestellt.
+    target_lang: de
+    note:
+      vi: "Chủ ngữ số nhiều (die Fahrräder) → wurden."
+  - type: summary
+    points:
+      - vi: "Präteritum bị động: wurde/wurden (vị trí 2) + Partizip II (cuối câu)."
+      - vi: "ich wurde, du wurdest, er wurde, wir wurden, ihr wurdet, sie wurden."
+      - vi: "Perfekt bị động: ist/sind + Partizip II + worden – trợ động từ là sein."
+      - vi: "worden (bị động) ≠ geworden (trở thành); wurde ≠ würde."
+      - vi: "Viết: Präteritum bị động; nói: Perfekt bị động."
+      - vi: "Từ vựng: gründen, das Unternehmen, der Betrieb, herstellen, die Produktion, die Fabrik, der Mitarbeiter, entwickeln, exportieren."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u03l2-mcq-wurde
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-passiv-praeteritum
+    prompt:
+      stem: "Chọn dạng đúng (bị động, Präteritum): Die Firma ___ 1950 von zwei Brüdern gegründet."
+      stem_lang: vi
+      options:
+        - { id: u4t, text: "wurde", lang: de }
+        - { id: u8n, text: "wurden", lang: de }
+        - { id: u1k, text: "würde", lang: de }
+        - { id: u6h, text: "hat", lang: de }
+    answer:
+      correct_option_id: u4t
+    explanation:
+      vi: "Präteritum bị động: wurde + Partizip II. Chủ ngữ die Firma là số ít nên dùng wurde. wurden dùng cho số nhiều; würde là Konjunktiv II (nghĩa khác); hat không tạo câu bị động."
+    display_answer: wurde
+
+  - key: de:exercise:b1u03l2-mcq-worden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-passiv-perfekt
+    prompt:
+      stem: "Câu nào đúng? (Nhà máy đã được xây năm 1985.)"
+      stem_lang: vi
+      options:
+        - { id: f2a, text: "Die Fabrik ist 1985 gebaut worden.", lang: de }
+        - { id: f7b, text: "Die Fabrik ist 1985 gebaut geworden.", lang: de }
+        - { id: f5c, text: "Die Fabrik hat 1985 gebaut worden.", lang: de }
+        - { id: f9d, text: "Die Fabrik ist 1985 worden gebaut.", lang: de }
+    answer:
+      correct_option_id: f2a
+    explanation:
+      vi: "Perfekt bị động: ist + Partizip II + worden. Không dùng geworden (chỉ cho nghĩa \"trở thành\"), không dùng haben, và gebaut đứng trước worden ở cuối câu."
+    display_answer: Die Fabrik ist 1985 gebaut worden.
+
+  - key: de:exercise:b1u03l2-listen-gegruendet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u03-gruenden
+    prompt:
+      audio_asset_id: null
+      fallback_text: Unser Unternehmen wurde 1962 von zwei Schwestern gegründet. Heute arbeiten hier dreihundert Mitarbeiter.
+      options:
+        - { id: s3a, text: "Doanh nghiệp được hai chị em gái thành lập năm 1962; ngày nay có ba trăm nhân viên.", lang: vi }
+        - { id: s7b, text: "Doanh nghiệp được hai anh em trai thành lập năm 1962; ngày nay có ba trăm nhân viên.", lang: vi }
+        - { id: s1c, text: "Doanh nghiệp được hai chị em gái thành lập năm 1972; ngày nay có ba trăm nhân viên.", lang: vi }
+        - { id: s5d, text: "Doanh nghiệp được hai chị em gái thành lập năm 1962; ngày nay có ba mươi nhân viên.", lang: vi }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "wurde … von zwei Schwestern gegründet = được hai chị em gái thành lập (Brüder mới là anh em trai). neunzehnhundertzweiundsechzig = 1962; dreihundert = ba trăm (dreißig mới là ba mươi)."
+    display_answer: Doanh nghiệp được hai chị em gái thành lập năm 1962; ngày nay có ba trăm nhân viên.
+
+  - key: de:exercise:b1u03l2-mcq-lesen-export
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-exportieren
+    prompt:
+      stem: "Die Möbelfirma Berger wurde 1923 in einem kleinen Dorf in Bayern gegründet. Zuerst wurden nur Tische und Stühle hergestellt. 1970 wurde eine neue Fabrik gebaut, und seit 1990 werden die Möbel auch ins Ausland exportiert. Heute wird das Familienunternehmen von der Enkelin des Gründers geleitet. — Richtig oder falsch? Die Möbel werden nur in Deutschland verkauft."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: seit 1990 werden die Möbel auch ins Ausland exportiert – từ năm 1990 đồ nội thất còn được xuất khẩu ra nước ngoài. Vì vậy câu \"chỉ bán ở Đức\" sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u03l2-fill-wurde-gegruendet
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-g-passiv-praeteritum
+    prompt:
+      template: "Die Firma {{b1}} (werden) 1950 von Karl Berger {{b2}} (gründen). Zuerst {{b3}} (werden) nur Fahrräder {{b4}} (herstellen)."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 7 }
+        - { id: b4, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [wurde]
+        b2: [gegründet]
+        b3: [wurden]
+        b4: [hergestellt]
+    known_wrong:
+      - answer: wird
+        feedback_vi: Đây là lịch sử năm 1950, nên dùng Präteritum – wurde.
+        error_tag: verb_form
+      - answer: werden
+        feedback_vi: Chuyện đã qua (zuerst, năm 1950) nên dùng Präteritum – wurden.
+        error_tag: verb_form
+      - answer: geherstellt
+        feedback_vi: herstellen là động từ tách, ge- đứng giữa – hergestellt.
+        error_tag: participle_form
+      - answer: gründet
+        feedback_vi: Câu bị động cần Partizip II – gegründet.
+        error_tag: participle_form
+    explanation:
+      vi: "Präteritum bị động: wurde (chủ ngữ số ít die Firma) và wurden (chủ ngữ số nhiều Fahrräder) + Partizip II ở cuối câu. gründen → gegründet; herstellen (tách) → hergestellt."
+    display_answer: "Die Firma wurde 1950 von Karl Berger gegründet. Zuerst wurden nur Fahrräder hergestellt."
+
+  - key: de:exercise:b1u03l2-fill-sind-worden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-g-passiv-perfekt
+    prompt:
+      template: "Seit 2010 {{b1}} in unserem Betrieb viele neue Produkte {{b2}} (entwickeln) {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [sind]
+        b2: [entwickelt]
+        b3: [worden]
+    known_wrong:
+      - answer: haben
+        feedback_vi: Perfekt bị động dùng sein – sind … entwickelt worden.
+        error_tag: aux_verb
+      - answer: geworden
+        feedback_vi: Trong câu bị động, Partizip của werden là worden (không có ge-).
+        error_tag: participle_form
+      - answer: geentwickelt
+        feedback_vi: ent- là tiền tố không tách nên không thêm ge- – entwickelt.
+        error_tag: participle_form
+      - answer: ist
+        feedback_vi: Chủ ngữ viele neue Produkte là số nhiều – sind.
+        error_tag: verb_form
+    explanation:
+      vi: "Perfekt bị động: sind (chủ ngữ số nhiều) + Partizip II entwickelt + worden ở cuối câu. entwickeln có tiền tố không tách ent- nên Partizip II không có ge-."
+    display_answer: "Seit 2010 sind in unserem Betrieb viele neue Produkte entwickelt worden."
+
+  - key: de:exercise:b1u03l2-tr-fabrik-gebaut
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-fabrik
+    prompt:
+      source_text: "Nhà máy được xây năm 1970. (câu bị động)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Fabrik wurde 1970 gebaut.
+        - 1970 wurde die Fabrik gebaut.
+        - Die Fabrik wurde im Jahr 1970 gebaut.
+        - Im Jahr 1970 wurde die Fabrik gebaut.
+        - Die Fabrik ist 1970 gebaut worden.
+        - 1970 ist die Fabrik gebaut worden.
+        - Die Fabrik ist im Jahr 1970 gebaut worden.
+        - Im Jahr 1970 ist die Fabrik gebaut worden.
+    known_wrong:
+      - answer: Die Fabrik ist 1970 gebaut geworden.
+        feedback_vi: Perfekt bị động dùng worden, không phải geworden.
+        error_tag: participle_form
+      - answer: Die Fabrik wurde in 1970 gebaut.
+        feedback_vi: Năm đứng một mình hoặc dùng im Jahr 1970, không dùng in 1970.
+        error_tag: preposition
+      - answer: Die Fabrik hat 1970 gebaut worden.
+        feedback_vi: Perfekt bị động dùng sein – Die Fabrik ist … gebaut worden.
+        error_tag: aux_verb
+    explanation:
+      vi: "Bị động quá khứ: Die Fabrik wurde 1970 gebaut (Präteritum) hoặc Die Fabrik ist 1970 gebaut worden (Perfekt). Năm đứng một mình, không có in."
+    display_answer: Die Fabrik wurde 1970 gebaut.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u03l2-wb-exportiert
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-exportieren
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Các sản phẩm đã được xuất khẩu sang nhiều nước.\""
+      tokens:
+        - { id: e-laender, text: Länder }
+        - { id: e-wurden, text: wurden }
+        - { id: e-exportiert, text: exportiert }
+        - { id: e-viele, text: viele }
+        - { id: e-die, text: Die }
+        - { id: e-in, text: in }
+        - { id: e-produkte, text: Produkte }
+    answer:
+      orders:
+        - [e-die, e-produkte, e-wurden, e-in, e-viele, e-laender, e-exportiert]
+    explanation:
+      vi: "Chủ ngữ số nhiều die Produkte → wurden ở vị trí 2. in viele Länder (Akkusativ – đi đâu?) ở giữa, Partizip II exportiert (không có ge- vì đuôi -ieren) đứng cuối câu."
+    display_answer: Die Produkte wurden in viele Länder exportiert.
+
+  - key: de:exercise:b1u03l2-wb-geschlossen-worden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u03-g-passiv-perfekt
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi nghe nói là nhà máy đã bị đóng cửa.\""
+      tokens:
+        - { id: h-worden, text: worden }
+        - { id: h-ich, text: Ich }
+        - { id: h-fabrik, text: Fabrik }
+        - { id: h-dass, text: dass }
+        - { id: h-gehoert, text: gehört }
+        - { id: h-ist, text: ist }
+        - { id: h-komma, text: "," }
+        - { id: h-die, text: die }
+        - { id: h-habe, text: habe }
+        - { id: h-geschlossen, text: geschlossen }
+    answer:
+      orders:
+        - [h-ich, h-habe, h-gehoert, h-komma, h-dass, h-die, h-fabrik, h-geschlossen, h-worden, h-ist]
+    explanation:
+      vi: "Câu phụ dass: động từ chia ist đứng cuối cùng, sau geschlossen worden. Perfekt bị động trong câu phụ: Partizip II + worden + ist."
+    display_answer: Ich habe gehört, dass die Fabrik geschlossen worden ist.
+
+  - key: de:exercise:b1u03l2-tr-gruender-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u01-g-nachdem
+    prompt:
+      source_text: Nachdem der Gründer gestorben war, wurde die Firma von seiner Tochter geleitet.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sau khi người sáng lập qua đời, công ty do con gái ông ấy điều hành.
+        - Sau khi người sáng lập qua đời, công ty được con gái ông ấy điều hành.
+        - Sau khi người sáng lập mất, công ty do con gái ông ấy điều hành.
+        - Sau khi người sáng lập qua đời, công ty do con gái ông điều hành.
+        - Sau khi người sáng lập qua đời, công ty được con gái ông điều hành.
+        - Sau khi người sáng lập qua đời, con gái ông ấy điều hành công ty.
+        - Sau khi người sáng lập qua đời, con gái ông điều hành công ty.
+        - Sau khi người sáng lập qua đời, công ty do con gái ông ấy lãnh đạo.
+        - Sau khi người sáng lập qua đời, công ty được con gái ông ấy lãnh đạo.
+        - Sau khi người sáng lập qua đời, công ty do con gái ông ấy quản lý.
+        - Sau khi người sáng lập qua đời, con gái ông ấy quản lý công ty.
+        - Sau khi người sáng lập mất, con gái ông ấy điều hành công ty.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau khi người sáng lập qua đời, công ty điều hành con gái ông ấy.
+        feedback_vi: "Câu bị động: die Firma là chủ ngữ được điều hành, von seiner Tochter là người điều hành (con gái ông)."
+        error_tag: meaning
+      - answer: Trước khi người sáng lập qua đời, công ty do con gái ông ấy điều hành.
+        feedback_vi: "nachdem = sau khi; trước khi là bevor."
+        error_tag: meaning
+    explanation:
+      vi: "nachdem + Plusquamperfekt (war gestorben) = sau khi … đã qua đời. wurde … von seiner Tochter geleitet là Präteritum bị động: công ty được con gái ông điều hành."
+    display_answer: Sau khi người sáng lập qua đời, công ty do con gái ông ấy điều hành.

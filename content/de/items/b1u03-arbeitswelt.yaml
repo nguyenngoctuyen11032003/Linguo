@@ -1,0 +1,1593 @@
+# Học liệu unit B1U03 "Thế giới việc làm" (Arbeitswelt), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U03L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# die Überstunde, -n (ma trận B1U03L4) đã được giới thiệu ở a2u03 (de:item:a2u03-ueberstunde), nên bài 4 chỉ reuse.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Tin tuyển dụng – bị động hiện tại, Genitiv =================
+  - key: de:item:b1u03-g-passiv-praesens
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Passiv Präsens: wird/werden + Partizip II (Gesucht wird eine Köchin.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Câu bị động nói một việc \"được làm\" khi người làm không quan trọng: werden chia theo chủ ngữ ở vị trí 2, Partizip II đứng cuối câu (Die Bewerbungen werden heute gelesen). Tân ngữ Akkusativ của câu chủ động trở thành chủ ngữ Nominativ của câu bị động: Die Firma sucht einen Koch → Ein Koch wird gesucht. Muốn nói ai làm, dùng von + Dativ (von der Chefin); nói bằng cách nào hay do đâu, dùng durch + Akkusativ (durch eine Anzeige)."
+      examples:
+        - target: In unserem Hotel wird ab Juli eine Köchin gesucht.
+          translation:
+            vi: Khách sạn chúng tôi cần tuyển một nữ đầu bếp từ tháng Bảy.
+        - target: Die Bewerbungen werden von der Personalchefin gelesen.
+          translation:
+            vi: Các đơn ứng tuyển được trưởng phòng nhân sự đọc.
+        - target: Der Lohn wird am Ende des Monats überwiesen.
+          translation:
+            vi: Lương được chuyển khoản vào cuối tháng.
+      confusion:
+        vi: "werden + Partizip II là bị động (được/bị …); werden + danh từ hay tính từ là \"trở thành\" (Er wird Koch). von luôn đi với Dativ: von der Firma, không phải von die Firma."
+
+  - key: de:item:b1u03-g-genitiv
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Genitiv: des Arbeitgebers, des Projekts · der Firma · der Bewerber – wessen?"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Genitiv diễn tả quan hệ \"của\" và đứng sau danh từ chính: die Adresse der Firma (địa chỉ của công ty). Giống đực và trung tính dùng des/eines, danh từ thêm -s hoặc -es (des Arbeitgebers, des Projekts); giống cái và số nhiều dùng der/einer, danh từ không đổi (der Firma, der Bewerber). Câu hỏi là wessen? (của ai?); khi nói, người Đức hay thay Genitiv bằng von + Dativ (die Adresse von der Firma)."
+      examples:
+        - target: Die Anforderungen des Arbeitgebers stehen in der Anzeige.
+          translation:
+            vi: Yêu cầu của nhà tuyển dụng có ghi trong tin đăng.
+        - target: Wessen Lebenslauf ist das? – Das ist der Lebenslauf meiner Kollegin.
+          translation:
+            vi: Đây là sơ yếu lý lịch của ai? – Đó là sơ yếu lý lịch của chị đồng nghiệp của tôi.
+        - target: Die Wünsche der Mitarbeiter sind uns wichtig.
+          translation:
+            vi: Mong muốn của nhân viên rất quan trọng với chúng tôi.
+      confusion:
+        vi: "Danh từ tận cùng -s, -ß, -x, -z, -sch phải thêm -es (des Hauses, des Platzes); danh từ tận cùng -er, -en, -el chỉ thêm -s (des Mitarbeiters); nhiều danh từ một âm tiết dùng được cả hai (des Lohns / des Lohnes). Tiếng Việt chỉ thêm chữ \"của\", còn tiếng Đức đổi mạo từ (des/der) và thường thêm đuôi cho danh từ."
+
+  - key: de:item:b1u03-stellenanzeige
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Stellenanzeige, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin tuyển dụng (trên báo, trên mạng)
+      examples:
+        - target: Ich habe eine interessante Stellenanzeige im Internet gefunden.
+          translation:
+            vi: Tôi tìm thấy một tin tuyển dụng hay trên mạng.
+        - target: In der Stellenanzeige steht, dass man gut Englisch sprechen muss.
+          translation:
+            vi: Trong tin tuyển dụng có ghi là phải nói tiếng Anh tốt.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Anzeige → die Stellenanzeige. Khác das Stellenangebot (vị trí đang tuyển, lời mời làm việc)."
+
+  - key: de:item:b1u03-arbeitgeber
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Arbeitgeber, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người sử dụng lao động, chủ (bên thuê người làm)
+      examples:
+        - target: Mein Arbeitgeber bezahlt mir einen Deutschkurs.
+          translation:
+            vi: Công ty tôi trả tiền cho tôi học một khóa tiếng Đức.
+        - target: Der Arbeitgeber und der Arbeitnehmer unterschreiben den Vertrag.
+          translation:
+            vi: Bên sử dụng lao động và người lao động ký hợp đồng.
+      confusion:
+        vi: "Arbeitgeber là bên \"cho\" việc (geben = cho): công ty, ông chủ. Arbeitnehmer là bên \"nhận\" việc (nehmen = nhận): người làm thuê. Người Việt hay đảo ngược hai từ này."
+
+  - key: de:item:b1u03-arbeitnehmer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Arbeitnehmer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người lao động (làm thuê)
+      examples:
+        - target: Viele Arbeitnehmer arbeiten heute auch von zu Hause.
+          translation:
+            vi: Ngày nay nhiều người lao động cũng làm việc tại nhà.
+        - target: Die Arbeitnehmer bekommen jeden Monat ihren Lohn.
+          translation:
+            vi: Người lao động nhận lương hằng tháng.
+      confusion:
+        vi: "Dạng nữ: die Arbeitnehmerin, -nen. Đừng nhầm với der Arbeitgeber (bên thuê người làm)."
+
+  - key: de:item:b1u03-voraussetzung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Voraussetzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều kiện cần có, yêu cầu tiên quyết
+      examples:
+        - target: Gute Deutschkenntnisse sind eine Voraussetzung für die Stelle.
+          translation:
+            vi: Tiếng Đức tốt là điều kiện bắt buộc cho vị trí này.
+        - target: Welche Voraussetzungen muss ich erfüllen?
+          translation:
+            vi: Tôi phải đáp ứng những điều kiện nào?
+      confusion:
+        vi: "Voraussetzung für + Akkusativ (für die Stelle). Đi với động từ erfüllen: die Voraussetzungen erfüllen = đáp ứng điều kiện."
+
+  - key: de:item:b1u03-einstellen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: einstellen
+      pos: động từ
+    back:
+      meaning:
+        vi: tuyển (nhận người vào làm)
+      examples:
+        - target: Die Bäckerei stellt zwei neue Verkäuferinnen ein.
+          translation:
+            vi: Tiệm bánh tuyển thêm hai nhân viên bán hàng nữ.
+        - target: Im Mai wird eine neue Kollegin eingestellt.
+          translation:
+            vi: Tháng Năm sẽ có một đồng nghiệp nữ mới được tuyển vào.
+      confusion:
+        vi: "Động từ tách: stellt … ein, Partizip II eingestellt. einstellen còn có nghĩa \"điều chỉnh\" (die Heizung einstellen), nên hãy xem ngữ cảnh."
+
+  - key: de:item:b1u03-sich-bewerben-um
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "sich bewerben um (+ Akk), bewirbt, bewarb, hat beworben"
+      pos: động từ
+    back:
+      meaning:
+        vi: ứng tuyển, nộp đơn xin (một vị trí)
+      examples:
+        - target: Ich bewerbe mich um eine Stelle als Krankenpfleger.
+          translation:
+            vi: Tôi ứng tuyển vào vị trí điều dưỡng viên.
+        - target: Sie hat sich bei einer großen Firma in Köln beworben.
+          translation:
+            vi: Cô ấy đã nộp đơn vào một công ty lớn ở Köln.
+      confusion:
+        vi: "Cần đại từ phản thân: ich bewerbe mich. Vị trí nào: um + Akk (um die Stelle); ở đâu: bei + Dativ (bei der Firma). Đổi nguyên âm ở du/er: du bewirbst, er bewirbt."
+
+  - key: de:item:b1u03-berufserfahrung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Berufserfahrung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: kinh nghiệm làm việc (trong nghề)
+      examples:
+        - target: Haben Sie Berufserfahrung im Verkauf?
+          translation:
+            vi: Anh/chị có kinh nghiệm làm bán hàng không?
+        - target: Für die Stelle braucht man mindestens zwei Jahre Berufserfahrung.
+          translation:
+            vi: Vị trí này cần ít nhất hai năm kinh nghiệm.
+      confusion:
+        vi: "Thường dùng số ít và không có mạo từ: Ich habe drei Jahre Berufserfahrung. Từ ghép có âm nối -s-: Beruf + s + Erfahrung."
+
+  - key: de:item:b1u03-lohn
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lohn, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền lương, tiền công
+      examples:
+        - target: Der Lohn wird am Ende des Monats überwiesen.
+          translation:
+            vi: Lương được chuyển khoản vào cuối tháng.
+        - target: In dieser Branche sind die Löhne leider niedrig.
+          translation:
+            vi: Tiếc là lương trong ngành này thấp.
+      confusion:
+        vi: "der Lohn hay dùng cho tiền công tính theo giờ của công nhân, lao động phổ thông; das Gehalt (đã học ở A2) là lương tháng cố định của nhân viên văn phòng. Số nhiều đổi nguyên âm: die Löhne."
+
+  - key: de:item:b1u03-befristet
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: befristet
+      pos: tính từ
+    back:
+      meaning:
+        vi: có thời hạn (hợp đồng, công việc)
+      examples:
+        - target: Der Vertrag ist auf ein Jahr befristet.
+          translation:
+            vi: Hợp đồng có thời hạn một năm.
+        - target: Leider habe ich nur eine befristete Stelle.
+          translation:
+            vi: Tiếc là tôi chỉ có một chỗ làm có thời hạn.
+      confusion:
+        vi: "Ngược nghĩa: unbefristet (không thời hạn, lâu dài). Thời hạn bao lâu: befristet auf + Akk (auf zwei Jahre)."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 1 – trường tuyển dụng
+  - key: de:item:b1u03-anforderung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Anforderung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: yêu cầu, đòi hỏi (đặt ra cho người làm)
+      examples:
+        - target: Die Anforderungen an die Bewerber sind hoch.
+          translation:
+            vi: Yêu cầu đối với người ứng tuyển rất cao.
+        - target: Erfüllen Sie alle Anforderungen?
+          translation:
+            vi: Anh/chị có đáp ứng mọi yêu cầu không?
+      confusion:
+        vi: "Yêu cầu đối với ai: Anforderungen an + Akk (an die Bewerber). Gần nghĩa die Voraussetzung; Anforderung nhấn mạnh điều được đòi hỏi."
+
+  - key: de:item:b1u03-unbefristet
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unbefristet
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thời hạn, lâu dài
+      examples:
+        - target: Wir bieten Ihnen einen unbefristeten Vertrag.
+          translation:
+            vi: Chúng tôi đề nghị anh/chị một hợp đồng không thời hạn.
+        - target: Seit Januar ist meine Stelle unbefristet.
+          translation:
+            vi: Từ tháng Một, công việc của tôi đã thành không thời hạn.
+      confusion:
+        vi: "Tiền tố un- mang nghĩa phủ định: befristet ↔ unbefristet. Trước danh từ có đuôi tính từ: ein unbefristeter Vertrag."
+
+  - key: de:item:b1u03-erforderlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erforderlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: cần thiết, bắt buộc phải có
+      examples:
+        - target: Ein Führerschein ist für diese Stelle erforderlich.
+          translation:
+            vi: Vị trí này bắt buộc phải có bằng lái xe.
+        - target: Gute Englischkenntnisse sind erforderlich.
+          translation:
+            vi: Cần có tiếng Anh tốt.
+      confusion:
+        vi: "Hay gặp trong tin tuyển dụng, trang trọng hơn nötig hay notwendig. Không nhầm với erfolgreich (thành công)."
+
+  - key: de:item:b1u03-bereich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Bereich, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lĩnh vực, mảng (công việc)
+      examples:
+        - target: Sie arbeitet im Bereich Marketing.
+          translation:
+            vi: Cô ấy làm trong mảng marketing.
+        - target: Wir suchen Mitarbeiter für den Bereich Verkauf.
+          translation:
+            vi: Chúng tôi tìm nhân viên cho mảng bán hàng.
+      confusion:
+        vi: "Tên lĩnh vực đứng sau và không có mạo từ: im Bereich IT, im Bereich Pflege."
+
+  - key: de:item:b1u03-stellenangebot
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Stellenangebot, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vị trí đang tuyển, lời mời làm việc
+      examples:
+        - target: Auf der Website der Stadt gibt es viele Stellenangebote.
+          translation:
+            vi: Trên trang web của thành phố có nhiều vị trí đang tuyển.
+        - target: Ich habe ein gutes Stellenangebot aus München bekommen.
+          translation:
+            vi: Tôi nhận được một lời mời làm việc tốt từ München.
+      confusion:
+        vi: "Giống trung theo das Angebot, khác die Stellenanzeige (giống cái, là bản tin đăng tuyển)."
+
+  - key: de:item:b1u03-bezahlung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bezahlung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền trả công, mức đãi ngộ (lương)
+      examples:
+        - target: Die Arbeit ist interessant, aber die Bezahlung ist schlecht.
+          translation:
+            vi: Công việc thú vị nhưng lương thấp.
+        - target: Wir bieten eine faire Bezahlung und flexible Arbeitszeiten.
+          translation:
+            vi: Chúng tôi trả lương công bằng và có giờ làm linh hoạt.
+      confusion:
+        vi: "Từ động từ bezahlen (trả tiền). Trong tin tuyển dụng hay gặp: eine gute/faire Bezahlung."
+
+  - key: de:item:b1u03-leitung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Leitung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự lãnh đạo, ban lãnh đạo; (điện thoại) đường dây
+      examples:
+        - target: Frau Schneider übernimmt die Leitung des Projekts.
+          translation:
+            vi: Bà Schneider nhận việc phụ trách dự án.
+        - target: Die Abteilung steht unter der Leitung von Herrn Schmidt.
+          translation:
+            vi: Phòng này do ông Schmidt lãnh đạo.
+      confusion:
+        vi: "leiten = lãnh đạo, der Leiter = người phụ trách (die Leiterin). Trên điện thoại: Die Leitung ist besetzt = máy đang bận."
+
+  # ================= Bài 2: Lịch sử công ty – bị động quá khứ =================
+  - key: de:item:b1u03-g-passiv-praeteritum
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Passiv Präteritum: wurde/wurden + Partizip II (Die Firma wurde 1950 gegründet.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Bị động ở quá khứ dùng werden ở Präteritum: ich wurde, du wurdest, er/sie/es wurde, wir wurden, ihr wurdet, sie/Sie wurden. wurde/wurden đứng ở vị trí 2, Partizip II đứng cuối câu: Die Fabrik wurde 1972 gebaut. Dạng này rất hay gặp trong văn viết như lịch sử công ty, tin tức, tiểu sử."
+      examples:
+        - target: Die Firma wurde 1950 von zwei Brüdern gegründet.
+          translation:
+            vi: Công ty được hai anh em thành lập năm 1950.
+        - target: Früher wurden hier Fahrräder hergestellt.
+          translation:
+            vi: Ngày trước ở đây người ta sản xuất xe đạp.
+      confusion:
+        vi: "wurde (bị động quá khứ: đã được) khác würde (Konjunktiv II, sẽ học ở B1U04): chỉ khác dấu trên chữ u. Ở ich và er/sie/es không có đuôi: ich wurde, er wurde."
+
+  - key: de:item:b1u03-g-passiv-perfekt
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Passiv Perfekt: ist/sind + Partizip II + worden (Die Fabrik ist geschlossen worden.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Perfekt bị động dùng sein (không dùng haben) + Partizip II + worden ở cuối câu: Das Büro ist renoviert worden. Trong câu bị động, Partizip của werden là worden, không có ge-; geworden chỉ dùng khi werden nghĩa là \"trở thành\" (Er ist Chef geworden). Khi nói, người Đức hay dùng Perfekt bị động; khi viết hay dùng Präteritum bị động; nghĩa gần như nhau."
+      examples:
+        - target: Das Büro ist letzte Woche renoviert worden.
+          translation:
+            vi: Văn phòng đã được sửa sang lại vào tuần trước.
+        - target: Sind die neuen Verkäufer schon eingestellt worden?
+          translation:
+            vi: Những nhân viên bán hàng mới đã được tuyển chưa?
+      confusion:
+        vi: "Không nói ist gegründet geworden hay hat gegründet worden. Trong câu phụ, ist đứng sau cùng: …, dass die Firma 1950 gegründet worden ist."
+
+  - key: de:item:b1u03-gruenden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gründen
+      pos: động từ
+    back:
+      meaning:
+        vi: thành lập, sáng lập
+      examples:
+        - target: Mein Onkel hat 2015 eine eigene Firma gegründet.
+          translation:
+            vi: Chú tôi đã thành lập công ty riêng vào năm 2015.
+        - target: Das Unternehmen wurde 1950 gegründet.
+          translation:
+            vi: Doanh nghiệp được thành lập năm 1950.
+      confusion:
+        vi: "Năm đứng một mình, không có in: 1950 gegründet, hoặc im Jahr 1950 gegründet. Danh từ: die Gründung (sự thành lập), der Gründer (người sáng lập)."
+
+  - key: de:item:b1u03-unternehmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Unternehmen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: doanh nghiệp, công ty
+      examples:
+        - target: Das Unternehmen hat 500 Mitarbeiter.
+          translation:
+            vi: Doanh nghiệp có 500 nhân viên.
+        - target: Sie arbeitet bei einem großen Unternehmen in Frankfurt.
+          translation:
+            vi: Cô ấy làm việc ở một doanh nghiệp lớn tại Frankfurt.
+      confusion:
+        vi: "das Unternehmen trang trọng hơn die Firma. Genitiv: des Unternehmens. Viết thường, unternehmen là động từ \"làm, tổ chức (hoạt động)\": Was unternehmen wir am Wochenende?"
+
+  - key: de:item:b1u03-betrieb
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Betrieb, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ sở sản xuất – kinh doanh, xí nghiệp
+      examples:
+        - target: In unserem Betrieb arbeiten 40 Leute.
+          translation:
+            vi: Xí nghiệp của chúng tôi có 40 người làm.
+        - target: Er hat seine Ausbildung in einem kleinen Betrieb gemacht.
+          translation:
+            vi: Anh ấy học nghề ở một cơ sở nhỏ.
+      confusion:
+        vi: "der Betrieb thường chỉ một cơ sở cụ thể (xưởng, nhà máy, cửa hàng), das Unternehmen chỉ cả doanh nghiệp. außer Betrieb = (máy) không hoạt động."
+
+  - key: de:item:b1u03-herstellen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: herstellen
+      pos: động từ
+    back:
+      meaning:
+        vi: sản xuất, chế tạo
+      examples:
+        - target: Die Firma stellt Möbel her.
+          translation:
+            vi: Công ty sản xuất đồ nội thất.
+        - target: Hier werden Teile für Autos hergestellt.
+          translation:
+            vi: Ở đây người ta sản xuất linh kiện ô tô.
+      confusion:
+        vi: "Động từ tách: stellt … her, Partizip II hergestellt. Danh từ: die Herstellung (việc sản xuất), der Hersteller (nhà sản xuất)."
+
+  - key: de:item:b1u03-produktion
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Produktion (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự sản xuất, khâu sản xuất
+      examples:
+        - target: Die Produktion läuft rund um die Uhr.
+          translation:
+            vi: Việc sản xuất chạy suốt ngày đêm.
+        - target: Mein Bruder arbeitet in der Produktion.
+          translation:
+            vi: Anh trai tôi làm ở bộ phận sản xuất.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối; -tion đọc /tsi̯oːn/: /pʁodʊkˈtsi̯oːn/."
+      confusion:
+        vi: "Danh từ đuôi -tion là giống cái: die Produktion, die Information."
+
+  - key: de:item:b1u03-fabrik
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fabrik, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà máy
+      examples:
+        - target: Mein Vater hat dreißig Jahre in einer Fabrik gearbeitet.
+          translation:
+            vi: Bố tôi đã làm ở nhà máy ba mươi năm.
+        - target: Die alte Fabrik wurde 1995 geschlossen.
+          translation:
+            vi: Nhà máy cũ bị đóng cửa năm 1995.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: /faˈbʁiːk/."
+      confusion:
+        vi: "Nhà máy lớn của một tập đoàn cũng hay gọi là das Werk."
+
+  - key: de:item:b1u03-mitarbeiter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Mitarbeiter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên, người cùng làm việc
+      examples:
+        - target: Die Firma hat heute 200 Mitarbeiter.
+          translation:
+            vi: Hiện nay công ty có 200 nhân viên.
+        - target: Eine neue Mitarbeiterin fängt am Montag an.
+          translation:
+            vi: Một nhân viên nữ mới bắt đầu làm vào thứ Hai.
+      confusion:
+        vi: "Dạng nữ: die Mitarbeiterin, -nen. Mitarbeiter nhìn từ phía công ty (nhân viên của công ty), der Kollege là người cùng làm với mình."
+
+  - key: de:item:b1u03-entwickeln
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: entwickeln
+      pos: động từ
+    back:
+      meaning:
+        vi: phát triển, xây dựng (sản phẩm, ý tưởng)
+      examples:
+        - target: Die Firma entwickelt Software für Krankenhäuser.
+          translation:
+            vi: Công ty phát triển phần mềm cho bệnh viện.
+        - target: Das Produkt wurde in Dresden entwickelt.
+          translation:
+            vi: Sản phẩm được phát triển ở Dresden.
+      confusion:
+        vi: "Tiền tố ent- không tách và Partizip II không có ge-: hat entwickelt. Danh từ: die Entwicklung."
+
+  - key: de:item:b1u03-exportieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: exportieren
+      pos: động từ
+    back:
+      meaning:
+        vi: xuất khẩu
+      examples:
+        - target: Die Firma exportiert Maschinen nach Asien.
+          translation:
+            vi: Công ty xuất khẩu máy móc sang châu Á.
+        - target: Unsere Produkte werden in viele Länder exportiert.
+          translation:
+            vi: Sản phẩm của chúng tôi được xuất khẩu sang nhiều nước.
+      confusion:
+        vi: "Động từ đuôi -ieren không có ge-: hat exportiert. Ngược nghĩa: importieren (nhập khẩu)."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 2 – trường doanh nghiệp
+  - key: de:item:b1u03-gruendung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gründung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thành lập
+      examples:
+        - target: Seit der Gründung ist die Firma stark gewachsen.
+          translation:
+            vi: Từ khi thành lập, công ty đã lớn mạnh nhiều.
+        - target: Zur Gründung des Vereins kamen viele Gäste.
+          translation:
+            vi: Nhiều khách đã đến dự lễ thành lập hội.
+      confusion:
+        vi: "gründen → die Gründung (đuôi -ung là giống cái). seit der Gründung = từ khi thành lập (seit + Dativ)."
+
+  - key: de:item:b1u03-gruender
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gründer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người sáng lập
+      examples:
+        - target: Der Gründer der Firma hieß Karl Berger.
+          translation:
+            vi: Người sáng lập công ty tên là Karl Berger.
+        - target: Die Gründerin leitet das Unternehmen bis heute.
+          translation:
+            vi: Người sáng lập (nữ) vẫn điều hành doanh nghiệp đến tận hôm nay.
+      confusion:
+        vi: "Dạng nữ: die Gründerin, -nen. Genitiv: des Gründers (der Sohn des Gründers)."
+
+  - key: de:item:b1u03-konzern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Konzern, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tập đoàn
+      examples:
+        - target: Sie arbeitet für einen großen Konzern.
+          translation:
+            vi: Cô ấy làm cho một tập đoàn lớn.
+        - target: Der Konzern hat Fabriken in zehn Ländern.
+          translation:
+            vi: Tập đoàn có nhà máy ở mười nước.
+      confusion:
+        vi: "der Konzern gồm nhiều công ty; die Firma có thể rất nhỏ. Đừng nhầm với das Konzert (buổi hòa nhạc)."
+
+  - key: de:item:b1u03-familienunternehmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Familienunternehmen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: doanh nghiệp gia đình
+      examples:
+        - target: Die Bäckerei ist ein Familienunternehmen.
+          translation:
+            vi: Tiệm bánh là một doanh nghiệp gia đình.
+        - target: Das Familienunternehmen wird heute von der Enkelin des Gründers geleitet.
+          translation:
+            vi: Ngày nay doanh nghiệp gia đình do cháu gái của người sáng lập điều hành.
+      confusion:
+        vi: "Familie + n + Unternehmen; giống trung theo das Unternehmen."
+
+  - key: de:item:b1u03-hauptsitz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hauptsitz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trụ sở chính
+      examples:
+        - target: Der Hauptsitz der Firma ist in Hamburg.
+          translation:
+            vi: Trụ sở chính của công ty ở Hamburg.
+        - target: Das Unternehmen hat seinen Hauptsitz in Stuttgart.
+          translation:
+            vi: Doanh nghiệp có trụ sở chính ở Stuttgart.
+      confusion:
+        vi: "Haupt- = chính: der Hauptsitz, der Hauptbahnhof. Chi nhánh là die Filiale, -n."
+
+  - key: de:item:b1u03-weltweit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: weltweit
+      pos: tính từ
+    back:
+      meaning:
+        vi: trên toàn thế giới
+      examples:
+        - target: Die Firma verkauft ihre Produkte weltweit.
+          translation:
+            vi: Công ty bán sản phẩm trên toàn thế giới.
+        - target: Der Konzern hat weltweit 5000 Mitarbeiter.
+          translation:
+            vi: Tập đoàn có 5000 nhân viên trên toàn thế giới.
+      confusion:
+        vi: "Viết liền một từ (die Welt + weit). Dùng được cả như trạng từ: weltweit bekannt = nổi tiếng khắp thế giới."
+
+  - key: de:item:b1u03-erweitern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erweitern
+      pos: động từ
+    back:
+      meaning:
+        vi: mở rộng
+      examples:
+        - target: Im Jahr 2005 wurde die Fabrik erweitert.
+          translation:
+            vi: Năm 2005 nhà máy được mở rộng.
+        - target: Wir wollen unser Angebot erweitern.
+          translation:
+            vi: Chúng tôi muốn mở rộng các sản phẩm, dịch vụ của mình.
+      confusion:
+        vi: "Tiền tố er- không tách, Partizip II không có ge-: erweitert. Gốc là tính từ weit (rộng)."
+
+  - key: de:item:b1u03-erfolg
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Erfolg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thành công
+      examples:
+        - target: Das neue Produkt war ein großer Erfolg.
+          translation:
+            vi: Sản phẩm mới là một thành công lớn.
+        - target: Viel Erfolg bei deiner Bewerbung!
+          translation:
+            vi: Chúc bạn ứng tuyển thành công!
+      confusion:
+        vi: "Viel Erfolg! = Chúc thành công! Tính từ: erfolgreich."
+
+  - key: de:item:b1u03-erfolgreich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erfolgreich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thành công
+      examples:
+        - target: Die kleine Firma ist heute sehr erfolgreich.
+          translation:
+            vi: Công ty nhỏ ấy ngày nay rất thành công.
+        - target: Sie hat das Projekt erfolgreich abgeschlossen.
+          translation:
+            vi: Cô ấy đã hoàn thành dự án thành công.
+      confusion:
+        vi: "Đuôi -reich = nhiều, giàu: erfolgreich, abwechslungsreich."
+
+  # ================= Bài 3: damit / um … zu, n-Deklination =================
+  - key: de:item:b1u03-g-damit
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "damit + Nebensatz ↔ um … zu + Infinitiv (Ziel, Zweck)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Cả hai đều nói mục đích (\"để\"). Khi hai vế có chủ ngữ khác nhau, phải dùng damit + câu phụ với động từ cuối: Ich erkläre es langsam, damit du alles verstehst. Khi cùng chủ ngữ, người Đức thường dùng um … zu + nguyên thể, không có chủ ngữ: Ich bleibe länger, um den Bericht zu schreiben."
+      examples:
+        - target: Ich schicke Ihnen die Unterlagen heute, damit Sie sie bis Montag lesen können.
+          translation:
+            vi: Hôm nay tôi gửi anh/chị tài liệu để anh/chị có thể đọc trước thứ Hai.
+        - target: Wir treffen uns früher, um alles vorzubereiten.
+          translation:
+            vi: Chúng ta gặp nhau sớm hơn để chuẩn bị mọi thứ.
+      confusion:
+        vi: "Sau um … zu không có chủ ngữ và không có động từ chia: không nói um mein Chef zufrieden ist. Cùng chủ ngữ vẫn dùng được damit (Ich lerne viel, damit ich die Prüfung bestehe), nhưng um … zu ngắn và tự nhiên hơn."
+
+  - key: de:item:b1u03-g-n-deklination
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "n-Deklination: der Kollege → den/dem/des Kollegen · der Herr → Herrn"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Một nhóm danh từ giống đực thêm -n hoặc -en ở mọi cách, trừ Nominativ số ít: der Kollege → den Kollegen, dem Kollegen, des Kollegen. Nhóm này gồm phần lớn danh từ giống đực chỉ người hoặc con vật tận cùng -e (der Kollege, der Kunde, der Experte), nhiều danh từ chỉ người tận cùng -ent, -ant, -ist, -oge (der Student, der Praktikant, der Journalist, der Biologe) và vài từ riêng như der Herr, der Mensch, der Nachbar. Số nhiều cũng có -(e)n: die Kollegen, die Praktikanten."
+      examples:
+        - target: Kannst du bitte den Kunden zurückrufen?
+          translation:
+            vi: Bạn gọi lại cho vị khách hàng được không?
+        - target: Ich habe mit Herrn Weber über den neuen Praktikanten gesprochen.
+          translation:
+            vi: Tôi đã nói chuyện với ông Weber về cậu thực tập sinh mới.
+        - target: Das ist das Büro des Assistenten.
+          translation:
+            vi: Đây là phòng làm việc của anh trợ lý.
+      confusion:
+        vi: "der Herr: den/dem/des Herrn ở số ít, die Herren ở số nhiều. der Name có Genitiv riêng: des Namens (Akk/Dat: den/dem Namen). Không phải danh từ giống đực nào tận cùng -e cũng thuộc nhóm này: der Käse – des Käses."
+
+  - key: de:item:b1u03-praktikant
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Praktikant, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực tập sinh (nam)
+      examples:
+        - target: Diesen Sommer haben wir zwei Praktikanten.
+          translation:
+            vi: Mùa hè này chúng tôi có hai thực tập sinh.
+        - target: Ich zeige dem neuen Praktikanten das Büro.
+          translation:
+            vi: Tôi dẫn cậu thực tập sinh mới đi xem văn phòng.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: /pʁaktiˈkant/."
+      confusion:
+        vi: "n-Deklination: den/dem/des Praktikanten. Dạng nữ die Praktikantin, -nen không thêm -en ở số ít (der Praktikantin)."
+
+  - key: de:item:b1u03-experte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Experte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyên gia
+      examples:
+        - target: Wir fragen am besten einen Experten.
+          translation:
+            vi: Tốt nhất là chúng ta hỏi một chuyên gia.
+        - target: Sie ist Expertin für Online-Marketing.
+          translation:
+            vi: Cô ấy là chuyên gia về marketing trực tuyến.
+      confusion:
+        vi: "n-Deklination: den/dem/des Experten. Dạng nữ: die Expertin, -nen."
+
+  - key: de:item:b1u03-assistent
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Assistent, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: trợ lý
+      examples:
+        - target: Der Assistent bereitet die Besprechung vor.
+          translation:
+            vi: Anh trợ lý chuẩn bị cuộc họp.
+        - target: Bitte geben Sie die Unterlagen meinem Assistenten.
+          translation:
+            vi: Xin anh/chị đưa tài liệu cho trợ lý của tôi.
+      confusion:
+        vi: "n-Deklination: den/dem/des Assistenten. Dạng nữ: die Assistentin, -nen."
+
+  - key: de:item:b1u03-klappen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: klappen
+      pos: động từ
+    back:
+      meaning:
+        vi: suôn sẻ, thành công, được việc (văn nói)
+      examples:
+        - target: Hat mit dem Termin alles geklappt?
+          translation:
+            vi: Chuyện cuộc hẹn mọi thứ ổn cả chứ?
+        - target: Am Freitag klappt es bei mir leider nicht.
+          translation:
+            vi: Tiếc là thứ Sáu tôi không được.
+      confusion:
+        vi: "Chủ ngữ thường là es, das hoặc alles: Es hat geklappt! = Được rồi! Trang trọng hơn: funktionieren."
+
+  - key: de:item:b1u03-besprechung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Besprechung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc họp (trao đổi công việc)
+      examples:
+        - target: Um zehn Uhr haben wir eine Besprechung.
+          translation:
+            vi: Mười giờ chúng ta có cuộc họp.
+        - target: Frau Lang ist gerade in einer Besprechung.
+          translation:
+            vi: Bà Lang đang họp.
+      confusion:
+        vi: "Từ động từ besprechen (bàn bạc). die Sitzung là cuộc họp chính thức, trang trọng hơn."
+
+  - key: de:item:b1u03-ziel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ziel, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mục tiêu; đích đến
+      examples:
+        - target: Was ist das Ziel der Besprechung?
+          translation:
+            vi: Mục tiêu của cuộc họp là gì?
+        - target: Wir haben unser Ziel erreicht.
+          translation:
+            vi: Chúng tôi đã đạt được mục tiêu.
+      confusion:
+        vi: "ein Ziel erreichen = đạt mục tiêu; sich ein Ziel setzen = đặt mục tiêu. das Ziel cũng là đích đến của một chuyến đi."
+
+  - key: de:item:b1u03-erreichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erreichen
+      pos: động từ
+    back:
+      meaning:
+        vi: đạt được; liên lạc được với ai; kịp (tàu xe)
+      examples:
+        - target: Ich habe Herrn Becker telefonisch nicht erreicht.
+          translation:
+            vi: Tôi đã không gọi được cho ông Becker.
+        - target: Wir müssen den Zug um acht erreichen.
+          translation:
+            vi: Chúng ta phải kịp chuyến tàu lúc tám giờ.
+      confusion:
+        vi: "Đi thẳng với Akkusativ, không có giới từ: jemanden erreichen. Tiền tố er- không tách, Partizip II: erreicht."
+
+  - key: de:item:b1u03-frist
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Frist, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời hạn, hạn chót
+      examples:
+        - target: Die Frist für die Bewerbung endet am 15. Mai.
+          translation:
+            vi: Hạn nộp đơn ứng tuyển kết thúc vào ngày 15 tháng Năm.
+        - target: Wir müssen die Frist unbedingt einhalten.
+          translation:
+            vi: Chúng ta nhất định phải giữ đúng hạn.
+      confusion:
+        vi: "eine Frist einhalten = giữ đúng hạn; eine Frist verpassen = lỡ hạn. befristet (có thời hạn) cùng gốc."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 3 – trường dự án, nhóm
+  - key: de:item:b1u03-loesung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Lösung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giải pháp, lời giải
+      examples:
+        - target: Wir müssen schnell eine Lösung finden.
+          translation:
+            vi: Chúng ta phải nhanh chóng tìm ra giải pháp.
+        - target: Das ist eine gute Lösung für das Problem.
+          translation:
+            vi: Đó là một giải pháp tốt cho vấn đề này.
+      confusion:
+        vi: "lösen (giải quyết) → die Lösung. Giải pháp cho cái gì: die Lösung für + Akk."
+
+  - key: de:item:b1u03-vorbereiten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vorbereiten
+      pos: động từ
+    back:
+      meaning:
+        vi: chuẩn bị
+      examples:
+        - target: Ich bereite die Präsentation vor.
+          translation:
+            vi: Tôi chuẩn bị bài thuyết trình.
+        - target: Hast du alles für die Besprechung vorbereitet?
+          translation:
+            vi: Bạn đã chuẩn bị mọi thứ cho cuộc họp chưa?
+      confusion:
+        vi: "Động từ tách: bereitet … vor; Partizip II vorbereitet (không thêm ge- vì gốc bereiten có be-). Tự chuẩn bị cho việc gì: sich vorbereiten auf + Akk."
+
+  - key: de:item:b1u03-verantwortlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verantwortlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: chịu trách nhiệm, phụ trách
+      examples:
+        - target: Wer ist für das Projekt verantwortlich?
+          translation:
+            vi: Ai chịu trách nhiệm dự án này?
+        - target: Ich bin für die Kunden aus Asien verantwortlich.
+          translation:
+            vi: Tôi phụ trách khách hàng từ châu Á.
+      confusion:
+        vi: "verantwortlich für + Akk. Danh từ: die Verantwortung (trách nhiệm)."
+
+  - key: de:item:b1u03-zeitplan
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zeitplan, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lịch trình, tiến độ (kế hoạch thời gian)
+      examples:
+        - target: Wir müssen den Zeitplan ändern.
+          translation:
+            vi: Chúng ta phải thay đổi lịch trình.
+        - target: Nach dem Zeitplan ist das Projekt im Juni fertig.
+          translation:
+            vi: Theo tiến độ thì dự án xong vào tháng Sáu.
+      confusion:
+        vi: "die Zeit + der Plan → der Zeitplan (giống theo từ cuối). Số nhiều đổi nguyên âm: die Zeitpläne."
+
+  - key: de:item:b1u03-erledigen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erledigen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm xong, giải quyết xong (việc)
+      examples:
+        - target: Ich erledige das sofort.
+          translation:
+            vi: Tôi làm việc đó ngay.
+        - target: Hast du die Aufgaben schon erledigt?
+          translation:
+            vi: Bạn đã làm xong các việc chưa?
+      confusion:
+        vi: "Hay đi với Aufgabe, Arbeit, Einkäufe. Văn nói: Ich bin total erledigt = tôi mệt rã rời."
+
+  - key: de:item:b1u03-zusammenarbeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zusammenarbeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hợp tác, làm việc cùng nhau
+      examples:
+        - target: Vielen Dank für die gute Zusammenarbeit!
+          translation:
+            vi: Cảm ơn vì sự hợp tác tốt đẹp!
+        - target: Die Zusammenarbeit mit dem neuen Team klappt gut.
+          translation:
+            vi: Việc làm cùng nhóm mới rất suôn sẻ.
+      confusion:
+        vi: "Động từ tách: zusammenarbeiten – Wir arbeiten gut zusammen."
+
+  - key: de:item:b1u03-teilnehmer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Teilnehmer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người tham gia
+      examples:
+        - target: Die Besprechung hat zehn Teilnehmer.
+          translation:
+            vi: Cuộc họp có mười người tham gia.
+        - target: Alle Teilnehmer bekommen vorher eine E-Mail.
+          translation:
+            vi: Tất cả người tham gia đều nhận được e-mail trước.
+      confusion:
+        vi: "Dạng nữ: die Teilnehmerin, -nen. Tham gia vào việc gì: teilnehmen an + Dativ (an der Besprechung teilnehmen)."
+
+  - key: de:item:b1u03-kandidat
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kandidat, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ứng viên
+      examples:
+        - target: Wir haben drei Kandidaten zum Gespräch eingeladen.
+          translation:
+            vi: Chúng tôi đã mời ba ứng viên đến phỏng vấn.
+        - target: Die Chefin spricht heute mit dem letzten Kandidaten.
+          translation:
+            vi: Hôm nay bà giám đốc nói chuyện với ứng viên cuối cùng.
+      confusion:
+        vi: "n-Deklination: den/dem/des Kandidaten. Dạng nữ: die Kandidatin, -nen."
+
+  # ================= Bài 4: Ở văn phòng – đại từ bất định =================
+  - key: de:item:b1u03-g-indefinitpronomen
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Indefinitpronomen: jemand, niemand, etwas, nichts · alle, einige, manche, mehrere, beide"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "jemand (ai đó), niemand (không ai), etwas (cái gì đó), nichts (không gì) đi với động từ số ít: Hat jemand angerufen? alle, einige, manche, mehrere, beide nói về nhiều người hay vật và đi với động từ số nhiều: Alle sind schon da. niemand và nichts đã mang nghĩa phủ định, nên không thêm nicht hay kein."
+      examples:
+        - target: Hat jemand den Drucker repariert? – Nein, niemand.
+          translation:
+            vi: Có ai sửa máy in chưa? – Chưa, không ai cả.
+        - target: Einige Kollegen machen heute Überstunden, aber die meisten haben schon Feierabend.
+          translation:
+            vi: Vài đồng nghiệp hôm nay làm thêm giờ, nhưng phần lớn đã tan làm rồi.
+        - target: Ich habe niemanden gesehen.
+          translation:
+            vi: Tôi không thấy ai cả.
+      confusion:
+        vi: "Ở Akkusativ và Dativ, jemand/niemand thường có đuôi trong văn viết: jemanden, niemandem (khi nói cũng dùng dạng không đuôi). Tiếng Việt \"không ai làm\" chỉ có một chữ \"không\"; tiếng Đức chỉ cần niemand – thêm nicht thành phủ định kép (Niemand hat nicht gelacht = ai cũng cười)."
+
+  - key: de:item:b1u03-drucker
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Drucker, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy in
+      examples:
+        - target: Der Drucker ist schon wieder kaputt.
+          translation:
+            vi: Máy in lại hỏng nữa rồi.
+        - target: Der Drucker steht im Flur neben der Küche.
+          translation:
+            vi: Máy in đặt ở hành lang cạnh bếp.
+      confusion:
+        vi: "drucken/ausdrucken = in; der Drucker = máy in; der Kopierer = máy photo."
+
+  - key: de:item:b1u03-datei
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Datei, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tệp, tập tin (máy tính)
+      examples:
+        - target: Ich schicke dir die Datei per E-Mail.
+          translation:
+            vi: Mình gửi bạn tập tin qua e-mail.
+        - target: Die Datei ist leider zu groß.
+          translation:
+            vi: Tiếc là tập tin quá lớn.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: /daˈtaɪ̯/."
+      confusion:
+        vi: "die Datei là tập tin; der Ordner là thư mục (hoặc bìa hồ sơ bằng giấy)."
+
+  - key: de:item:b1u03-speichern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: speichern
+      pos: động từ
+    back:
+      meaning:
+        vi: lưu (dữ liệu)
+      examples:
+        - target: Hast du die Datei gespeichert?
+          translation:
+            vi: Bạn đã lưu tập tin chưa?
+        - target: Speichern Sie das Dokument bitte im Ordner "Projekte".
+          translation:
+            vi: Anh/chị vui lòng lưu tài liệu vào thư mục "Projekte".
+      confusion:
+        vi: "Động từ yếu: hat gespeichert. der Speicher = bộ nhớ."
+
+  - key: de:item:b1u03-ausdrucken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausdrucken
+      pos: động từ
+    back:
+      meaning:
+        vi: in ra
+      examples:
+        - target: Kannst du mir das Protokoll ausdrucken?
+          translation:
+            vi: Bạn in giúp mình biên bản được không?
+        - target: Ich drucke die Präsentation zweimal aus.
+          translation:
+            vi: Tôi in bài thuyết trình ra hai bản.
+      confusion:
+        vi: "Động từ tách: druckt … aus, Partizip II ausgedruckt. Đừng nhầm với ausdrücken (có ü) = diễn đạt."
+
+  - key: de:item:b1u03-abteilung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Abteilung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng, ban (trong công ty)
+      examples:
+        - target: Sie arbeitet in der Personalabteilung.
+          translation:
+            vi: Cô ấy làm ở phòng nhân sự.
+        - target: Welche Abteilung ist für Urlaubsanträge zuständig?
+          translation:
+            vi: Phòng nào phụ trách đơn xin nghỉ phép?
+      confusion:
+        vi: "Ở phòng nào: in der Abteilung (Dativ). Trưởng phòng: der Abteilungsleiter / die Abteilungsleiterin."
+
+  - key: de:item:b1u03-protokoll
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Protokoll, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: biên bản (cuộc họp)
+      examples:
+        - target: Wer schreibt heute das Protokoll?
+          translation:
+            vi: Hôm nay ai ghi biên bản?
+        - target: Das Protokoll der Besprechung liegt auf Ihrem Schreibtisch.
+          translation:
+            vi: Biên bản cuộc họp nằm trên bàn làm việc của anh/chị.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: /pʁotoˈkɔl/."
+      confusion:
+        vi: "das Protokoll schreiben (hoặc führen) = ghi biên bản."
+
+  - key: de:item:b1u03-sich-krankmelden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich krankmelden
+      pos: động từ
+    back:
+      meaning:
+        vi: báo ốm (với nơi làm việc)
+      examples:
+        - target: Ich muss mich heute leider krankmelden.
+          translation:
+            vi: Tiếc là hôm nay tôi phải báo ốm.
+        - target: Er hat sich gestern krankgemeldet.
+          translation:
+            vi: Hôm qua anh ấy đã báo ốm.
+      confusion:
+        vi: "Vừa phản thân vừa tách: Ich melde mich krank; Partizip II krankgemeldet. Nên báo ốm ngay buổi sáng của ngày nghỉ đầu tiên."
+
+  - key: de:item:b1u03-urlaubsantrag
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Urlaubsantrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn xin nghỉ phép
+      examples:
+        - target: Ich habe meinen Urlaubsantrag schon abgegeben.
+          translation:
+            vi: Tôi đã nộp đơn xin nghỉ phép rồi.
+        - target: Mein Urlaubsantrag wurde genehmigt.
+          translation:
+            vi: Đơn xin nghỉ phép của tôi đã được duyệt.
+      confusion:
+        vi: "Urlaub + s + der Antrag; số nhiều: die Urlaubsanträge. einen Urlaubsantrag stellen = làm đơn xin nghỉ phép."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 4 – trường văn phòng
+  - key: de:item:b1u03-ordner
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ordner, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bìa còng (đựng hồ sơ); thư mục (máy tính)
+      examples:
+        - target: Die Rechnungen sind im blauen Ordner.
+          translation:
+            vi: Hóa đơn nằm trong bìa hồ sơ màu xanh.
+        - target: Ich habe die Datei in einem neuen Ordner gespeichert.
+          translation:
+            vi: Tôi đã lưu tập tin trong một thư mục mới.
+      confusion:
+        vi: "Cùng gốc với ordnen (sắp xếp) và die Ordnung (trật tự)."
+
+  - key: de:item:b1u03-kopierer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kopierer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy photocopy
+      examples:
+        - target: Der Kopierer hat kein Papier mehr.
+          translation:
+            vi: Máy photo hết giấy rồi.
+        - target: Kannst du mir zeigen, wie der Kopierer funktioniert?
+          translation:
+            vi: Bạn chỉ mình cách dùng máy photo được không?
+      confusion:
+        vi: "kopieren = sao chép, photo; die Kopie = bản sao."
+
+  - key: de:item:b1u03-krankschreibung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Krankschreibung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy nghỉ ốm (bác sĩ cấp)
+      examples:
+        - target: Ab wann brauche ich eine Krankschreibung?
+          translation:
+            vi: Từ khi nào tôi cần giấy nghỉ ốm?
+        - target: Der Arzt hat mich für drei Tage krankgeschrieben.
+          translation:
+            vi: Bác sĩ cho tôi nghỉ ốm ba ngày.
+      confusion:
+        vi: "Động từ: krankschreiben (bác sĩ cho nghỉ ốm). Ở Đức thường cần giấy này khi ốm quá ba ngày, nhưng công ty có thể yêu cầu sớm hơn; quy định có thể thay đổi, hãy xem hợp đồng của bạn."
+
+  - key: de:item:b1u03-kantine
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kantine, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: căng tin (của công ty)
+      examples:
+        - target: Mittags essen wir in der Kantine.
+          translation:
+            vi: Buổi trưa chúng tôi ăn ở căng tin.
+        - target: Das Essen in unserer Kantine ist günstig.
+          translation:
+            vi: Đồ ăn ở căng tin công ty tôi rẻ.
+      confusion:
+        vi: "Căng tin của trường đại học gọi là die Mensa."
+
+  - key: de:item:b1u03-weiterleiten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: weiterleiten
+      pos: động từ
+    back:
+      meaning:
+        vi: chuyển tiếp (e-mail, cuộc gọi)
+      examples:
+        - target: Ich leite dir die E-Mail weiter.
+          translation:
+            vi: Mình chuyển tiếp e-mail cho bạn.
+        - target: Können Sie meinen Anruf an Frau Berg weiterleiten?
+          translation:
+            vi: Anh/chị có thể chuyển cuộc gọi của tôi đến bà Berg không?
+      confusion:
+        vi: "Động từ tách: leitet … weiter, Partizip II weitergeleitet."
+
+  - key: de:item:b1u03-abwesend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abwesend
+      pos: tính từ
+    back:
+      meaning:
+        vi: vắng mặt
+      examples:
+        - target: Herr Klein ist bis Freitag abwesend.
+          translation:
+            vi: Ông Klein vắng mặt đến thứ Sáu.
+        - target: Wer war bei der Besprechung abwesend?
+          translation:
+            vi: Ai vắng mặt trong cuộc họp?
+      confusion:
+        vi: "Ngược nghĩa: anwesend (có mặt). Thư trả lời tự động hay viết: Ich bin bis zum 10. Mai abwesend."
+
+  - key: de:item:b1u03-vertretung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vertretung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: người làm thay; sự thay thế
+      examples:
+        - target: Frau Schulz ist meine Vertretung, wenn ich im Urlaub bin.
+          translation:
+            vi: Khi tôi đi nghỉ phép, bà Schulz làm thay tôi.
+        - target: Wir suchen eine Vertretung für nächste Woche.
+          translation:
+            vi: Chúng tôi tìm người làm thay cho tuần sau.
+      confusion:
+        vi: "Động từ vertreten = làm thay ai: Frau Schulz vertritt mich."
+
+  - key: de:item:b1u03-dienstreise
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Dienstreise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến công tác
+      examples:
+        - target: Nächste Woche bin ich auf Dienstreise in Berlin.
+          translation:
+            vi: Tuần sau tôi đi công tác ở Berlin.
+        - target: Die Kosten der Dienstreise bezahlt die Firma.
+          translation:
+            vi: Chi phí chuyến công tác do công ty trả.
+      confusion:
+        vi: "auf Dienstreise sein = đang đi công tác; eine Dienstreise machen = đi công tác."
+
+  - key: de:item:b1u03-genehmigen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: genehmigen
+      pos: động từ
+    back:
+      meaning:
+        vi: phê duyệt, cho phép (chính thức)
+      examples:
+        - target: Die Chefin hat meinen Urlaub genehmigt.
+          translation:
+            vi: Bà giám đốc đã duyệt kỳ nghỉ phép của tôi.
+        - target: Der Antrag wurde schnell genehmigt.
+          translation:
+            vi: Đơn được duyệt nhanh chóng.
+      confusion:
+        vi: "Tiền tố ge- ở đây là một phần của động từ, nên Partizip II không thêm ge- nữa: genehmigt. Danh từ: die Genehmigung (giấy phép)."

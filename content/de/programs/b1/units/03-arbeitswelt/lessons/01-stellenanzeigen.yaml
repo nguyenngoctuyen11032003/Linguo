@@ -1,0 +1,420 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u03-stellenanzeigen
+order_index: 1
+level: b1
+title:
+  vi: Tin tuyển dụng – bị động hiện tại, Genitiv (Gesucht wird …)
+objectives:
+  - vi: Dùng câu bị động hiện tại (werden + Partizip II) để nói một việc "được làm" mà không cần nói ai làm.
+  - vi: Dùng Genitiv (des/der, danh từ thêm -s/-es) để nói "của" trong văn viết, và hỏi bằng wessen.
+  - vi: Đọc tin tuyển dụng, hiểu yêu cầu (Voraussetzungen) và quyền lợi (Bezahlung, Vertrag).
+estimated_minutes: 20
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u02-wiederholung]
+items:
+  - item: de:item:b1u03-g-passiv-praesens
+  - item: de:item:b1u03-g-genitiv
+  - item: de:item:b1u03-stellenanzeige
+  - item: de:item:b1u03-arbeitgeber
+  - item: de:item:b1u03-arbeitnehmer
+  - item: de:item:b1u03-voraussetzung
+  - item: de:item:b1u03-einstellen
+  - item: de:item:b1u03-sich-bewerben-um
+  - item: de:item:b1u03-berufserfahrung
+  - item: de:item:b1u03-lohn
+  - item: de:item:b1u03-befristet
+  - item: de:item:b1u03-anforderung
+  - item: de:item:b1u03-unbefristet
+  - item: de:item:b1u03-erforderlich
+  - item: de:item:b1u03-bereich
+  - item: de:item:b1u03-stellenangebot
+  - item: de:item:b1u03-bezahlung
+  - item: de:item:b1u03-leitung
+  - item: de:item:a2u03-g-werden-vollverb
+    role: reuse
+  - item: de:item:a2u03-bewerbung
+    role: reuse
+  - item: de:item:a2u03-stelle
+    role: reuse
+  - item: de:item:a2u07-g-genitiv-namen
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-nom-akk
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu được một tin tuyển dụng và nói được việc gì \"được làm\", ví dụ: \"Gesucht wird eine Köchin. Die Bewerbungen werden von der Chefin gelesen. Die Voraussetzungen der Stelle stehen in der Anzeige.\""
+  - type: explain
+    text:
+      vi: "Câu bị động dùng khi việc được làm quan trọng hơn người làm, rất hay gặp trong tin tuyển dụng, thông báo và mô tả quy trình. Cấu trúc: werden chia theo chủ ngữ ở vị trí 2, Partizip II đứng cuối câu: Die Stelle wird im Internet angeboten. Tiếng Việt chỉ thêm \"được\" hoặc nói \"người ta …\", còn tiếng Đức đổi cả cấu trúc câu."
+  - type: explain
+    text:
+      vi: "Tân ngữ Akkusativ của câu chủ động trở thành chủ ngữ Nominativ của câu bị động: Wir suchen einen Koch → Ein Koch wird gesucht. Chủ ngữ số nhiều thì dùng werden: Zwei Köche werden gesucht. Tin tuyển dụng hay đưa Partizip lên đầu cho nổi bật, werden vẫn ở vị trí 2: Gesucht wird eine Köchin."
+  - type: explain
+    text:
+      vi: "Muốn nói ai làm, dùng von + Dativ: Die Bewerbungen werden von der Chefin gelesen. Nói bằng cách nào hay do đâu, dùng durch + Akkusativ: Die Kunden werden durch einen Newsletter informiert. Đừng nhầm với werden \"trở thành\" đã học ở A2: Er wird Koch (anh ấy trở thành đầu bếp) không phải câu bị động."
+  - type: explain
+    text:
+      vi: "Genitiv diễn tả \"của\" và đứng sau danh từ chính: die Adresse der Firma, die Anforderungen des Arbeitgebers. Giống đực và trung tính dùng des (eines, meines) và danh từ thêm -s/-es; giống cái và số nhiều dùng der (einer, meiner) và danh từ không đổi. Tiếng Việt chỉ thêm chữ \"của\", còn tiếng Đức đổi mạo từ và đuôi danh từ."
+  - type: explain
+    text:
+      vi: "Hỏi \"của ai?\" dùng wessen: Wessen Lebenslauf ist das? Khi nói chuyện, người Đức hay thay Genitiv bằng von + Dativ (die Adresse von der Firma), nhưng trong văn viết và tin tuyển dụng thường dùng Genitiv. Với tên riêng, bạn chỉ thêm -s như đã học ở A2: Annas Lebenslauf."
+  - type: deep_explain
+    text:
+      vi: "-s hay -es? Danh từ tận cùng -s, -ß, -x, -z, -sch phải thêm -es (des Hauses, des Platzes); danh từ nhiều âm tiết tận cùng -er, -en, -el chỉ thêm -s (des Arbeitgebers, des Unternehmens); nhiều danh từ một âm tiết dùng được cả hai (des Lohns / des Lohnes, des Tags / des Tages). Một số danh từ giống đực như der Kollege, der Praktikant có đuôi -n thay vì -s (des Kollegen) – bạn sẽ học ở bài 3. Trong câu phụ, werden của câu bị động đứng cuối: Ich hoffe, dass meine Bewerbung schnell gelesen wird. Tin tuyển dụng ở Đức hay có các cụm: ab sofort (ngay từ bây giờ), in Vollzeit/Teilzeit, Wir bieten … (chúng tôi đề nghị …), Ihre Bewerbung senden Sie bitte an … (xin gửi đơn đến …); sau tên nghề thường có ghi chú nam/nữ/giới tính khác."
+  - type: example
+    target: Gesucht wird ab sofort eine Köchin oder ein Koch für unser Hotel.
+    target_lang: de
+    translation:
+      vi: Khách sạn chúng tôi cần tuyển ngay một đầu bếp (nữ hoặc nam).
+    note:
+      vi: "Partizip gesucht đứng đầu cho nổi bật; wird vẫn ở vị trí 2; chủ ngữ là eine Köchin oder ein Koch (Nominativ)."
+  - type: example
+    target: Alle Bewerbungen werden von Frau Weber gelesen.
+    target_lang: de
+    translation:
+      vi: Tất cả đơn ứng tuyển đều được bà Weber đọc.
+    note:
+      vi: "Chủ ngữ số nhiều (alle Bewerbungen) → werden. Người làm: von + Dativ (von Frau Weber)."
+  - type: example
+    target: Die Voraussetzungen der Stelle stehen am Ende der Anzeige.
+    target_lang: de
+    translation:
+      vi: Điều kiện của vị trí này ghi ở cuối tin đăng.
+    note:
+      vi: "der Stelle, der Anzeige: Genitiv của danh từ giống cái – mạo từ der, danh từ không đổi."
+  - type: example
+    target: Die Bezahlung ist gut, aber der Vertrag meines Bruders ist leider befristet.
+    target_lang: de
+    translation:
+      vi: Lương thì tốt, nhưng tiếc là hợp đồng của anh trai tôi có thời hạn.
+    note:
+      vi: "meines Bruders: Genitiv giống đực – meines, danh từ thêm -s."
+  - type: example
+    target: Wessen Lebenslauf ist das? – Das ist Annas Lebenslauf. Sie bewirbt sich um die Stelle in der Buchhaltung.
+    target_lang: de
+    translation:
+      vi: Đây là sơ yếu lý lịch của ai? – Của Anna. Cô ấy ứng tuyển vào vị trí ở phòng kế toán.
+    note:
+      vi: "wessen? = của ai? Với tên riêng chỉ thêm -s và không có mạo từ (Annas Lebenslauf), như đã học ở A2."
+  - type: example
+    target: Wir suchen einen Koch, der gern im Team arbeitet und Berufserfahrung hat.
+    target_lang: de
+    translation:
+      vi: Chúng tôi tìm một đầu bếp thích làm việc nhóm và có kinh nghiệm.
+    note:
+      vi: "der gern im Team arbeitet: mệnh đề quan hệ (B1U02), động từ đứng cuối – kiểu câu rất hay gặp trong tin tuyển dụng."
+  - type: example
+    target: Bewirbst du dich um die Stelle? – Ja, aber man braucht drei Jahre Berufserfahrung, und ich habe nur zwei.
+    target_lang: de
+    translation:
+      vi: Bạn có nộp đơn vào vị trí đó không? – Có, nhưng cần ba năm kinh nghiệm, mà mình chỉ có hai.
+    note:
+      vi: "Hội thoại giữa bạn bè (du). sich bewerben um + Akk; du bewirbst (đổi e → i)."
+  - type: common_mistake
+    wrong: Das Haus wird von die Firma gebaut.
+    right: Das Haus wird von der Firma gebaut.
+    target_lang: de
+    note:
+      vi: "von luôn đi với Dativ: die Firma → von der Firma."
+  - type: common_mistake
+    wrong: Ein Koch wird suchen.
+    right: Ein Koch wird gesucht.
+    target_lang: de
+    note:
+      vi: "Bị động cần Partizip II (gesucht). Ein Koch wird suchen có nghĩa khác hẳn: \"một đầu bếp sẽ tìm\"."
+  - type: common_mistake
+    wrong: Die Adresse des Firma steht oben.
+    right: Die Adresse der Firma steht oben.
+    target_lang: de
+    note:
+      vi: "die Firma là giống cái, nên Genitiv là der Firma (không phải des)."
+  - type: common_mistake
+    wrong: Die Wünsche des Arbeitgeber sind klar.
+    right: Die Wünsche des Arbeitgebers sind klar.
+    target_lang: de
+    note:
+      vi: "Danh từ giống đực ở Genitiv thêm -s: des Arbeitgebers."
+  - type: summary
+    points:
+      - vi: "Bị động hiện tại: werden (vị trí 2) + Partizip II (cuối câu): Ein Koch wird gesucht."
+      - vi: "ich werde, du wirst, er/sie/es wird, wir werden, ihr werdet, sie/Sie werden."
+      - vi: "Người làm: von + Dativ; cách thức, nguyên nhân: durch + Akkusativ."
+      - vi: "werden + Partizip II = bị động; werden + danh từ/tính từ = trở thành."
+      - vi: "Genitiv: des/eines + danh từ -s/-es (giống đực, trung tính); der/einer (giống cái, số nhiều)."
+      - vi: "wessen? = của ai?; khi nói hay thay bằng von + Dativ."
+      - vi: "Từ vựng: die Stellenanzeige, der Arbeitgeber, der Arbeitnehmer, die Voraussetzung, einstellen, sich bewerben um, die Berufserfahrung, der Lohn, befristet."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u03l1-mcq-wird-gesucht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-passiv-praesens
+    prompt:
+      stem: "Chọn dạng đúng của werden: In unserem Hotel ___ ab Juli eine Köchin gesucht."
+      stem_lang: vi
+      options:
+        - { id: w7k, text: "wird", lang: de }
+        - { id: w2m, text: "werden", lang: de }
+        - { id: w9p, text: "hat", lang: de }
+        - { id: w4s, text: "wirst", lang: de }
+    answer:
+      correct_option_id: w7k
+    explanation:
+      vi: "Câu bị động cần werden + Partizip II (gesucht). Chủ ngữ là eine Köchin (ngôi thứ ba số ít) nên dùng wird. werden dùng cho chủ ngữ số nhiều, wirst cho du; hat không tạo câu bị động."
+    display_answer: wird
+
+  - key: de:exercise:b1u03l1-mcq-welcher-passiv
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u03-g-werden-vollverb
+    prompt:
+      stem: "Câu nào là câu bị động (\"được làm\")?"
+      stem_lang: vi
+      options:
+        - { id: p3a, text: "Die Stelle wird im Internet angeboten.", lang: de }
+        - { id: p8b, text: "Mein Bruder wird Ingenieur.", lang: de }
+        - { id: p1c, text: "Im Herbst wird es früh dunkel.", lang: de }
+        - { id: p6d, text: "Sie wird nächstes Jahr dreißig.", lang: de }
+    answer:
+      correct_option_id: p3a
+    explanation:
+      vi: "Bị động là werden + Partizip II: wird … angeboten (vị trí này được đăng tuyển trên mạng). Ở ba câu còn lại, werden đi với danh từ, tính từ hoặc số tuổi và có nghĩa \"trở thành, trở nên\"."
+    display_answer: Die Stelle wird im Internet angeboten.
+
+  - key: de:exercise:b1u03l1-mcq-des-arbeitgebers
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-genitiv
+    prompt:
+      stem: "Chọn mạo từ Genitiv đúng: Die Anforderungen ___ Arbeitgebers sind hoch."
+      stem_lang: vi
+      options:
+        - { id: g5d, text: "des", lang: de }
+        - { id: g2r, text: "der", lang: de }
+        - { id: g8m, text: "dem", lang: de }
+        - { id: g1n, text: "den", lang: de }
+    answer:
+      correct_option_id: g5d
+    explanation:
+      vi: "der Arbeitgeber là giống đực; Genitiv giống đực là des, và danh từ thêm -s: des Arbeitgebers (yêu cầu của nhà tuyển dụng). dem là Dativ, den là Akkusativ; der chỉ là Genitiv khi danh từ giống cái hoặc số nhiều."
+    display_answer: des
+
+  - key: de:exercise:b1u03l1-mcq-lesen-erfahrung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-berufserfahrung
+    prompt:
+      stem: "Hotel Seeblick sucht ab sofort eine Köchin oder einen Koch in Vollzeit. Voraussetzungen: eine abgeschlossene Ausbildung und mindestens zwei Jahre Berufserfahrung. Wir bieten einen unbefristeten Vertrag und eine faire Bezahlung. Bewerbungen werden nur per E-Mail angenommen. — Richtig oder falsch? Man kann sich auch ohne Berufserfahrung um die Stelle bewerben."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Tin đăng ghi Voraussetzungen: … mindestens zwei Jahre Berufserfahrung – ít nhất hai năm kinh nghiệm là điều kiện bắt buộc. Vì vậy người không có kinh nghiệm không đáp ứng được; câu này sai. (Bewerbungen werden … angenommen = đơn được nhận – câu bị động.)"
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u03l1-fill-werden-eingestellt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-g-passiv-praesens
+    prompt:
+      template: "In unserer Firma {{b1}} (werden) jedes Jahr zehn neue Verkäufer {{b2}} (einstellen). Die Bewerbungen {{b3}} (werden) von der Chefin gelesen."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 11 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [werden]
+        b2: [eingestellt]
+        b3: [werden]
+    known_wrong:
+      - answer: wird
+        feedback_vi: Chủ ngữ là số nhiều (zehn neue Verkäufer, die Bewerbungen) nên dùng werden.
+        error_tag: verb_form
+      - answer: einstellt
+        feedback_vi: Ở động từ tách, ge- chen vào giữa tiền tố và gốc – eingestellt.
+        error_tag: participle_form
+      - answer: geeinstellt
+        feedback_vi: ge- đứng sau tiền tố tách, không đứng trước – eingestellt.
+        error_tag: participle_form
+      - answer: einstellen
+        feedback_vi: Câu bị động cần Partizip II ở cuối câu, không phải nguyên thể – eingestellt.
+        error_tag: participle_form
+    explanation:
+      vi: "Bị động hiện tại: werden + Partizip II. Cả hai chủ ngữ đều số nhiều nên dùng werden. einstellen là động từ tách, Partizip II là ein-ge-stellt."
+    display_answer: "In unserer Firma werden jedes Jahr zehn neue Verkäufer eingestellt. Die Bewerbungen werden von der Chefin gelesen."
+
+  - key: de:exercise:b1u03l1-fill-genitiv-vertrag
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-g-genitiv
+    prompt:
+      template: "Die Anforderungen des {{b1}} (Arbeitgeber) sind hoch. Die Dauer des {{b2}} (Vertrag) ist ein Jahr. Auch die Höhe {{b3}} Lohns ist wichtig."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Arbeitgebers]
+        b2: [Vertrags, Vertrages]
+        b3: [des]
+    known_wrong:
+      - answer: Arbeitgeber
+        feedback_vi: Danh từ giống đực ở Genitiv thêm -s – des Arbeitgebers.
+        error_tag: genitive_ending
+      - answer: Vertrag
+        feedback_vi: Sau des, danh từ giống đực thêm -s hoặc -es – des Vertrags / des Vertrages.
+        error_tag: genitive_ending
+      - answer: der
+        feedback_vi: der Lohn là giống đực, Genitiv là des (der chỉ dùng cho giống cái và số nhiều).
+        error_tag: article
+      - answer: dem
+        feedback_vi: dem là Dativ; ở đây cần Genitiv (của tiền lương) – des Lohns.
+        error_tag: article
+    explanation:
+      vi: "Genitiv giống đực: des + danh từ thêm -s/-es. Arbeitgeber tận cùng -er nên chỉ thêm -s; Vertrag và Lohn là danh từ một âm tiết, thêm -s hay -es đều được."
+    display_answer: "Die Anforderungen des Arbeitgebers sind hoch. Die Dauer des Vertrags ist ein Jahr. Auch die Höhe des Lohns ist wichtig."
+
+  - key: de:exercise:b1u03l1-tr-lohn-monatlich
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-lohn
+    prompt:
+      source_text: "Lương được trả hằng tháng. (dùng der Lohn, câu bị động)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Lohn wird monatlich gezahlt.
+        - Der Lohn wird monatlich bezahlt.
+        - Der Lohn wird jeden Monat gezahlt.
+        - Der Lohn wird jeden Monat bezahlt.
+        - Monatlich wird der Lohn gezahlt.
+        - Monatlich wird der Lohn bezahlt.
+        - Jeden Monat wird der Lohn gezahlt.
+        - Jeden Monat wird der Lohn bezahlt.
+        - Der Lohn wird monatlich überwiesen.
+        - Der Lohn wird jeden Monat überwiesen.
+    known_wrong:
+      - answer: Der Lohn wird monatlich zahlen.
+        feedback_vi: Bị động cần Partizip II ở cuối câu – gezahlt (hoặc bezahlt).
+        error_tag: participle_form
+      - answer: Der Lohn werden monatlich gezahlt.
+        feedback_vi: Chủ ngữ der Lohn là số ít nên dùng wird.
+        error_tag: verb_form
+      - answer: Der Lohn wird gezahlt monatlich.
+        feedback_vi: Partizip II đứng cuối câu – Der Lohn wird monatlich gezahlt.
+        error_tag: verb_position
+    explanation:
+      vi: "Chủ ngữ của câu bị động là der Lohn (số ít) → wird ở vị trí 2; Partizip II gezahlt (hoặc bezahlt, überwiesen) đứng cuối câu. hằng tháng = monatlich hoặc jeden Monat."
+    display_answer: Der Lohn wird monatlich gezahlt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u03l1-wb-von-der-chefin
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-bewerbung
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Các đơn ứng tuyển được bà giám đốc đọc.\""
+      tokens:
+        - { id: c-gelesen, text: gelesen }
+        - { id: c-der, text: der }
+        - { id: c-bewerbungen, text: Bewerbungen }
+        - { id: c-von, text: von }
+        - { id: c-werden, text: werden }
+        - { id: c-chefin, text: Chefin }
+        - { id: c-die, text: Die }
+    answer:
+      orders:
+        - [c-die, c-bewerbungen, c-werden, c-von, c-der, c-chefin, c-gelesen]
+    explanation:
+      vi: "Chủ ngữ die Bewerbungen (số nhiều) đứng đầu, werden ở vị trí 2. Người làm đi với von + Dativ (von der Chefin), Partizip II gelesen đứng cuối câu."
+    display_answer: Die Bewerbungen werden von der Chefin gelesen.
+
+  - key: de:exercise:b1u03l1-wb-voraussetzungen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-stelle
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Các điều kiện của vị trí này có ghi trong tin đăng.\""
+      tokens:
+        - { id: v-anzeige, text: Anzeige }
+        - { id: v-der1, text: der }
+        - { id: v-stehen, text: stehen }
+        - { id: v-die, text: Die }
+        - { id: v-in, text: in }
+        - { id: v-stelle, text: Stelle }
+        - { id: v-der2, text: der }
+        - { id: v-voraussetzungen, text: Voraussetzungen }
+    answer:
+      orders:
+        - [v-die, v-voraussetzungen, v-der1, v-stelle, v-stehen, v-in, v-der2, v-anzeige]
+        - [v-die, v-voraussetzungen, v-der2, v-stelle, v-stehen, v-in, v-der1, v-anzeige]
+    explanation:
+      vi: "Genitiv đứng ngay sau danh từ chính: die Voraussetzungen der Stelle (die Stelle giống cái → der). Động từ stehen ở vị trí 2; in der Anzeige là Dativ (ở đâu?)."
+    display_answer: Die Voraussetzungen der Stelle stehen in der Anzeige.
+
+  - key: de:exercise:b1u03l1-tr-befristet-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u03-befristet
+    prompt:
+      source_text: Die Stelle ist befristet, aber der Arbeitgeber zahlt einen guten Lohn.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Công việc này có thời hạn, nhưng chủ trả lương tốt.
+        - Công việc này có thời hạn, nhưng công ty trả lương tốt.
+        - Công việc này có thời hạn, nhưng nhà tuyển dụng trả lương tốt.
+        - Công việc này có thời hạn, nhưng chủ trả lương cao.
+        - Công việc này có thời hạn, nhưng công ty trả lương cao.
+        - Vị trí này có thời hạn, nhưng nhà tuyển dụng trả lương tốt.
+        - Vị trí này có thời hạn, nhưng công ty trả lương tốt.
+        - Vị trí này có thời hạn, nhưng chủ trả lương cao.
+        - Chỗ làm này có thời hạn, nhưng chủ trả lương tốt.
+        - Công việc có thời hạn, nhưng chủ trả lương tốt.
+        - Công việc này là hợp đồng có thời hạn, nhưng chủ trả lương tốt.
+        - Công việc này chỉ có thời hạn, nhưng chủ trả lương tốt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Công việc này lâu dài, nhưng chủ trả lương tốt.
+        feedback_vi: "befristet là có thời hạn; lâu dài, không thời hạn là unbefristet."
+        error_tag: meaning
+      - answer: Công việc này có thời hạn, nhưng người lao động trả lương tốt.
+        feedback_vi: "der Arbeitgeber là bên trả lương (chủ, công ty), còn người lao động là der Arbeitnehmer."
+        error_tag: meaning
+    explanation:
+      vi: "befristet = có thời hạn; der Arbeitgeber = chủ, bên sử dụng lao động (người trả lương); einen guten Lohn zahlen = trả lương tốt."
+    display_answer: Công việc này có thời hạn, nhưng chủ trả lương tốt.

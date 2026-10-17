@@ -1,0 +1,389 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u03-im-buero
+order_index: 4
+level: b1
+title:
+  vi: Ở văn phòng – đại từ bất định (Hat jemand den Drucker repariert?)
+objectives:
+  - vi: Dùng đại từ bất định jemand, niemand, etwas, nichts, alle, einige, manche, mehrere, beide đúng nghĩa và đúng dạng động từ.
+  - vi: Trao đổi công việc hằng ngày ở văn phòng, xin nghỉ phép và báo ốm.
+  - vi: Nghe hiểu cuộc gọi báo ốm và đoạn trao đổi ngắn trong cuộc họp.
+estimated_minutes: 20
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:b1u03-damit]
+items:
+  - item: de:item:b1u03-g-indefinitpronomen
+  - item: de:item:b1u03-drucker
+  - item: de:item:b1u03-datei
+  - item: de:item:b1u03-speichern
+  - item: de:item:b1u03-ausdrucken
+  - item: de:item:b1u03-abteilung
+  - item: de:item:b1u03-protokoll
+  - item: de:item:b1u03-sich-krankmelden
+  - item: de:item:b1u03-urlaubsantrag
+  - item: de:item:b1u03-ordner
+  - item: de:item:b1u03-kopierer
+  - item: de:item:b1u03-krankschreibung
+  - item: de:item:b1u03-kantine
+  - item: de:item:b1u03-weiterleiten
+  - item: de:item:b1u03-abwesend
+  - item: de:item:b1u03-vertretung
+  - item: de:item:b1u03-dienstreise
+  - item: de:item:b1u03-genehmigen
+  - item: de:item:a2u03-ueberstunde
+    role: reuse
+  - item: de:item:b1u01-g-bis
+    role: reuse
+  - item: de:item:b1u01-g-modal-perfekt
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praeteritum
+    role: reuse
+  - item: de:item:a2u07-g-indefinitpronomen-einer
+    role: reuse
+  - item: de:item:b1u02-g-adjektive-praeposition
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn trao đổi được những việc hằng ngày ở văn phòng, ví dụ: \"Hat jemand den Drucker repariert? – Nein, niemand. Einige Kollegen machen heute Überstunden. Ich melde mich heute krank.\""
+  - type: explain
+    text:
+      vi: "jemand (ai đó), niemand (không ai), etwas (cái gì đó), nichts (không gì cả) dùng khi không nói rõ người hay vật nào, và đi với động từ số ít: Hat jemand angerufen? Niemand weiß es. Ở Akkusativ và Dativ, trong văn viết jemand/niemand thường có đuôi: Ich habe niemanden gesehen; Ich spreche mit jemandem."
+  - type: explain
+    text:
+      vi: "alle (tất cả), einige (vài, một số), manche (một số – không phải tất cả), mehrere (nhiều, vài cái), beide (cả hai) nói về nhiều người hay vật và đi với động từ số nhiều: Alle sind schon in der Kantine. Chúng cũng đứng được trước danh từ số nhiều: einige Kollegen, mehrere Dateien, beide Drucker."
+  - type: explain
+    text:
+      vi: "niemand và nichts đã mang nghĩa phủ định, nên không thêm nicht hay kein: Niemand hat angerufen (không ai gọi). Tiếng Việt nói \"không ai gọi\" chỉ với một chữ \"không\"; nếu bạn thêm nicht (Niemand hat nicht angerufen), câu thành phủ định kép, nghĩa là ai cũng đã gọi."
+  - type: explain
+    text:
+      vi: "Câu hay dùng ở văn phòng: Ich melde mich krank (báo ốm), Ich möchte einen Urlaubsantrag stellen (xin nghỉ phép), Ich muss heute Überstunden machen (làm thêm giờ). Ở Đức, người ta thường báo ốm ngay sáng ngày nghỉ đầu tiên; giấy bác sĩ (die Krankschreibung) thường cần khi ốm quá ba ngày, nhưng công ty có thể yêu cầu sớm hơn và quy định có thể thay đổi, nên hãy xem hợp đồng."
+  - type: deep_explain
+    text:
+      vi: "etwas và nichts hay đi với tính từ viết hoa có đuôi -es: etwas Neues (cái gì đó mới), nichts Wichtiges (không có gì quan trọng). Khi nói, etwas thường rút gọn thành was: Hast du was gehört? Ở A2 bạn đã học einer/keiner (một cái/không cái nào trong một nhóm đã biết: Ist hier ein Drucker? – Ja, da hinten ist einer), còn jemand/niemand nói về người nói chung. manche nhấn mạnh \"không phải tất cả\", mehrere nhấn mạnh \"nhiều hơn hai\". Khi kể việc đã phải làm, dùng Perfekt của modal đã học: Ich habe gestern Überstunden machen müssen; nói \"cho đến khi\" dùng bis: Ich bleibe, bis alles fertig ist."
+  - type: example
+    target: Hat jemand den Drucker repariert? – Nein, noch niemand. Ich rufe gleich den Techniker an.
+    target_lang: de
+    translation:
+      vi: Có ai sửa máy in chưa? – Chưa, chưa ai cả. Tôi gọi thợ kỹ thuật ngay đây.
+    note:
+      vi: "jemand, niemand đi với động từ số ít (hat). der Techniker là danh từ thường: den Techniker."
+  - type: example
+    target: Einige Kollegen machen heute Überstunden, aber alle anderen haben schon Feierabend.
+    target_lang: de
+    translation:
+      vi: Vài đồng nghiệp hôm nay làm thêm giờ, nhưng tất cả những người khác đã tan làm rồi.
+    note:
+      vi: "einige, alle + động từ số nhiều (machen, haben). Feierabend haben = đã tan làm."
+  - type: example
+    target: Guten Morgen, Frau Wolf. Ich bin leider krank und kann heute nicht kommen. Ich gehe gleich zum Arzt.
+    target_lang: de
+    translation:
+      vi: Chào buổi sáng bà Wolf. Tiếc là tôi bị ốm nên hôm nay không đến được. Tôi đi khám bác sĩ ngay đây.
+    note:
+      vi: "Gọi điện báo ốm với sếp, xưng Sie và chào bằng họ (Frau Wolf)."
+  - type: example
+    target: Bis die Besprechung anfängt, drucke ich noch schnell das Protokoll aus.
+    target_lang: de
+    translation:
+      vi: Trong lúc chờ cuộc họp bắt đầu, tôi in nhanh biên bản ra.
+    note:
+      vi: "bis = cho đến khi: động từ anfängt đứng cuối câu phụ. ausdrucken là động từ tách: drucke … aus."
+  - type: example
+    target: Mein Urlaubsantrag wurde genehmigt. Vom 3. bis zum 14. August bin ich abwesend, und Frau Schulz ist meine Vertretung.
+    target_lang: de
+    translation:
+      vi: Đơn nghỉ phép của tôi đã được duyệt. Từ ngày 3 đến ngày 14 tháng Tám tôi vắng mặt, và bà Schulz sẽ làm thay tôi.
+    note:
+      vi: "wurde genehmigt: bị động Präteritum (bài 2). genehmigen không thêm ge- ở Partizip II."
+  - type: example
+    target: Ist hier irgendwo ein Kopierer? – Ja, im zweiten Stock steht einer.
+    target_lang: de
+    translation:
+      vi: Ở đây có máy photo nào không? – Có, trên tầng hai có một cái.
+    note:
+      vi: "einer (A2) thay cho ein Kopierer đã nói trước đó – dùng cho vật lẫn người trong một nhóm đã biết; jemand chỉ nói về người nói chung."
+  - type: example
+    target: Niemand war mit dem neuen Zeitplan zufrieden, deshalb sprechen wir morgen noch einmal darüber.
+    target_lang: de
+    translation:
+      vi: Không ai hài lòng với lịch trình mới, vì vậy ngày mai chúng ta sẽ bàn lại.
+    note:
+      vi: "niemand + động từ số ít (war). zufrieden mit + Dativ: tính từ đi với giới từ cố định (B1U02)."
+  - type: common_mistake
+    wrong: Niemand hat den Drucker nicht repariert.
+    right: Niemand hat den Drucker repariert.
+    target_lang: de
+    note:
+      vi: "niemand đã có nghĩa phủ định; thêm nicht thành phủ định kép (ai cũng đã sửa)."
+  - type: common_mistake
+    wrong: Alle ist schon in der Kantine.
+    right: Alle sind schon in der Kantine.
+    target_lang: de
+    note:
+      vi: "alle chỉ nhiều người nên động từ ở số nhiều: sind."
+  - type: common_mistake
+    wrong: Ich melde heute krank.
+    right: Ich melde mich heute krank.
+    target_lang: de
+    note:
+      vi: "sich krankmelden là động từ phản thân: Ich melde mich krank."
+  - type: summary
+    points:
+      - vi: "jemand, niemand, etwas, nichts + động từ số ít; Akk/Dat: jemanden/niemanden, jemandem/niemandem."
+      - vi: "alle, einige, manche, mehrere, beide + động từ số nhiều; đứng một mình hoặc trước danh từ số nhiều."
+      - vi: "niemand, nichts không đi kèm nicht/kein (tránh phủ định kép)."
+      - vi: "Văn phòng: der Drucker, die Datei speichern, ausdrucken, die Abteilung, das Protokoll."
+      - vi: "Nghỉ: sich krankmelden, die Krankschreibung, der Urlaubsantrag, Überstunden machen."
+      - vi: "Ôn: bis (cho đến khi), habe … machen müssen (Perfekt của modal)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u03l4-listen-drucker
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u03-drucker
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hat jemand den Drucker repariert? – Nein, noch niemand. Ich rufe gleich den Techniker an.
+      options:
+        - { id: l2a, text: "Chưa ai sửa máy in; người trả lời sẽ gọi thợ kỹ thuật ngay.", lang: vi }
+        - { id: l6b, text: "Đã có người sửa máy in; người trả lời sẽ gọi thợ kỹ thuật để kiểm tra.", lang: vi }
+        - { id: l9c, text: "Chưa ai sửa máy in; người trả lời sẽ tự sửa ngay.", lang: vi }
+        - { id: l4d, text: "Chưa ai sửa máy photo; người trả lời sẽ gọi thợ kỹ thuật ngay.", lang: vi }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "Nein, noch niemand = chưa, chưa ai cả. Ich rufe gleich den Techniker an = tôi gọi thợ kỹ thuật ngay. der Drucker là máy in (máy photo là der Kopierer)."
+    display_answer: Chưa ai sửa máy in; người trả lời sẽ gọi thợ kỹ thuật ngay.
+
+  - key: de:exercise:b1u03l4-listen-krankmelden
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u03-sich-krankmelden
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Morgen, Frau Wolf, hier ist Minh Pham. Ich bin leider krank und kann heute nicht ins Büro kommen. Ich gehe gleich zum Arzt.
+      options:
+        - { id: k3a, text: "Minh báo ốm: hôm nay không đến văn phòng được và sẽ đi khám bác sĩ ngay.", lang: vi }
+        - { id: k7b, text: "Minh báo hôm nay sẽ đến văn phòng muộn vì phải đi khám bác sĩ.", lang: vi }
+        - { id: k1c, text: "Minh xin nghỉ phép hôm nay để đi du lịch.", lang: vi }
+        - { id: k5d, text: "Minh báo ốm: hôm nay không đến văn phòng được và ngày mai mới đi khám.", lang: vi }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: "Ich bin leider krank und kann heute nicht ins Büro kommen = tôi bị ốm, hôm nay không đến văn phòng được (không phải đến muộn). Ich gehe gleich zum Arzt = tôi đi khám ngay (gleich = ngay bây giờ)."
+    display_answer: "Minh báo ốm: hôm nay không đến văn phòng được và sẽ đi khám bác sĩ ngay."
+
+  - key: de:exercise:b1u03l4-listen-besprechung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u03-g-indefinitpronomen
+    prompt:
+      audio_asset_id: null
+      fallback_text: In der Besprechung haben alle zugehört, aber niemand hatte eine Idee. Deshalb treffen wir uns morgen noch einmal.
+      options:
+        - { id: b2a, text: "Trong cuộc họp ai cũng lắng nghe nhưng không ai có ý tưởng, nên ngày mai họp lại.", lang: vi }
+        - { id: b6b, text: "Trong cuộc họp ai cũng lắng nghe và vài người có ý tưởng, nên ngày mai họp lại.", lang: vi }
+        - { id: b9c, text: "Trong cuộc họp không ai lắng nghe, nên ngày mai họp lại.", lang: vi }
+        - { id: b4d, text: "Trong cuộc họp ai cũng lắng nghe nhưng không ai có ý tưởng, nên tuần sau họp lại.", lang: vi }
+    answer:
+      correct_option_id: b2a
+    explanation:
+      vi: "alle haben zugehört = mọi người đều lắng nghe; niemand hatte eine Idee = không ai có ý tưởng; morgen noch einmal = ngày mai thêm một lần nữa."
+    display_answer: Trong cuộc họp ai cũng lắng nghe nhưng không ai có ý tưởng, nên ngày mai họp lại.
+
+  - key: de:exercise:b1u03l4-mcq-niemand-repariert
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-indefinitpronomen
+    prompt:
+      stem: "Câu nào có nghĩa \"Không ai đã sửa máy in.\"?"
+      stem_lang: vi
+      options:
+        - { id: r3m, text: "Niemand hat den Drucker repariert.", lang: de }
+        - { id: r8n, text: "Niemand hat den Drucker nicht repariert.", lang: de }
+        - { id: r1o, text: "Niemand haben den Drucker repariert.", lang: de }
+        - { id: r6p, text: "Jemand hat den Drucker nicht repariert.", lang: de }
+    answer:
+      correct_option_id: r3m
+    explanation:
+      vi: "niemand đã mang nghĩa phủ định và đi với động từ số ít: Niemand hat … repariert. Thêm nicht thành phủ định kép (ai cũng đã sửa); haben sai dạng số; Jemand hat … nicht repariert nghĩa là \"có một người đã không sửa\"."
+    display_answer: Niemand hat den Drucker repariert.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u03l4-fill-jemand-niemand-nichts
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-g-indefinitpronomen
+    prompt:
+      template: "Ich höre Stimmen, also ist noch {{b1}} im Büro. Die anderen sind alle in der Kantine, in der Küche ist {{b2}}. Ich habe Hunger, aber im Kühlschrank ist {{b3}} mehr."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [jemand, einer]
+        b2: [niemand, keiner]
+        b3: [nichts]
+    known_wrong:
+      - answer: nicht
+        feedback_vi: "nicht chỉ phủ định động từ hay cả câu; \"không còn gì\" là nichts mehr."
+        error_tag: word_choice
+      - answer: niemanden
+        feedback_vi: Ở đây là chủ ngữ (Nominativ) nên không có đuôi – niemand.
+        error_tag: pronoun_case
+      - answer: jemanden
+        feedback_vi: Ở đây là chủ ngữ (Nominativ) nên không có đuôi – jemand.
+        error_tag: pronoun_case
+    explanation:
+      vi: "Có tiếng người → có ai đó: jemand. Mọi người ở căng tin → trong bếp không có ai: niemand (khi nói cũng hay dùng keiner). Đói mà tủ lạnh không còn gì: nichts mehr. Cả ba đều làm chủ ngữ nên không có đuôi."
+    display_answer: "Ich höre Stimmen, also ist noch jemand im Büro. Die anderen sind alle in der Kantine, in der Küche ist niemand. Ich habe Hunger, aber im Kühlschrank ist nichts mehr."
+
+  - key: de:exercise:b1u03l4-fill-jemanden-niemanden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-abteilung
+    prompt:
+      template: "Kennst du {{b1}} in der Personalabteilung? – Nein, leider kenne ich dort {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [jemanden, jemand]
+        b2: [niemanden, niemand, keinen]
+    known_wrong:
+      - answer: nicht
+        feedback_vi: Không quen ai = niemanden (không phải nicht).
+        error_tag: word_choice
+      - answer: nichts
+        feedback_vi: nichts dùng cho vật; với người dùng niemanden.
+        error_tag: meaning
+      - answer: jemandem
+        feedback_vi: kennen đi với Akkusativ – jemanden (jemandem là Dativ).
+        error_tag: pronoun_case
+    explanation:
+      vi: "kennen + Akkusativ: jemanden (ai đó), niemanden (không ai). Trong văn viết thường có đuôi -en; khi nói, jemand/niemand không đuôi cũng được chấp nhận."
+    display_answer: "Kennst du jemanden in der Personalabteilung? – Nein, leider kenne ich dort niemanden."
+
+  - key: de:exercise:b1u03l4-tr-datei-gespeichert
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-speichern
+    prompt:
+      source_text: "Có ai lưu tập tin chưa? (dùng Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Hat jemand die Datei gespeichert?
+        - Hat schon jemand die Datei gespeichert?
+        - Hat jemand schon die Datei gespeichert?
+        - Hat jemand die Datei schon gespeichert?
+    known_wrong:
+      - answer: Hat niemand die Datei gespeichert?
+        feedback_vi: "niemand nghĩa là \"không ai\"; câu hỏi \"có ai … không\" dùng jemand."
+        error_tag: meaning
+      - answer: Haben jemand die Datei gespeichert?
+        feedback_vi: jemand đi với động từ số ít – Hat jemand …?
+        error_tag: verb_form
+      - answer: Hat jemand die Datei speichern?
+        feedback_vi: Perfekt cần Partizip II – gespeichert.
+        error_tag: participle_form
+    explanation:
+      vi: "Câu hỏi có/không: động từ hat đứng đầu, jemand (ai đó) là chủ ngữ số ít, Partizip II gespeichert đứng cuối. schon (đã … chưa) có thể thêm vào."
+    display_answer: Hat jemand die Datei gespeichert?
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u03l4-wb-ueberstunden-muessen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u01-g-modal-perfekt
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hôm qua tôi đã phải làm thêm giờ.\""
+      tokens:
+        - { id: o-muessen, text: müssen }
+        - { id: o-gestern, text: gestern }
+        - { id: o-ich, text: Ich }
+        - { id: o-machen, text: machen }
+        - { id: o-habe, text: habe }
+        - { id: o-ueberstunden, text: Überstunden }
+    answer:
+      orders:
+        - [o-ich, o-habe, o-gestern, o-ueberstunden, o-machen, o-muessen]
+    explanation:
+      vi: "Perfekt của modal có động từ nguyên thể đi kèm: haben ở vị trí 2, cuối câu là động từ chính machen rồi modal müssen ở dạng nguyên thể. Überstunden machen = làm thêm giờ."
+    display_answer: Ich habe gestern Überstunden machen müssen.
+
+  - key: de:exercise:b1u03l4-tr-bis-protokoll-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u01-g-bis
+    prompt:
+      source_text: Bis die Besprechung anfängt, drucke ich noch schnell das Protokoll aus.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước khi cuộc họp bắt đầu, tôi in nhanh biên bản ra.
+        - Trước khi cuộc họp bắt đầu, tôi còn in nhanh biên bản.
+        - Trước khi cuộc họp bắt đầu, tôi tranh thủ in nhanh biên bản.
+        - Trong lúc chờ cuộc họp bắt đầu, tôi in nhanh biên bản ra.
+        - Trong lúc chờ cuộc họp bắt đầu, tôi in nhanh biên bản.
+        - Cho đến khi cuộc họp bắt đầu, tôi còn in nhanh biên bản.
+        - Cho đến lúc cuộc họp bắt đầu, tôi in nhanh biên bản ra.
+        - Trước khi họp, tôi in nhanh biên bản ra.
+        - Trước khi cuộc họp bắt đầu, tôi in vội biên bản ra.
+        - Trước giờ họp, tôi in nhanh biên bản ra.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sau khi cuộc họp bắt đầu, tôi in nhanh biên bản ra.
+        feedback_vi: "bis = cho đến khi, tức là việc in xảy ra trước khi cuộc họp bắt đầu."
+        error_tag: meaning
+    explanation:
+      vi: "bis = cho đến khi: tôi tranh thủ in trong khoảng thời gian trước khi cuộc họp bắt đầu. das Protokoll = biên bản; ausdrucken = in ra (drucke … aus)."
+    display_answer: Trước khi cuộc họp bắt đầu, tôi in nhanh biên bản ra.
+
+  - key: de:exercise:b1u03l4-mcq-melde-mich-krank
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-sich-krankmelden
+    prompt:
+      stem: "Bạn gọi cho sếp để báo ốm. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m4a, text: "Ich melde mich heute krank.", lang: de }
+        - { id: m9b, text: "Ich melde heute krank.", lang: de }
+        - { id: m2c, text: "Ich krankmelde mich heute.", lang: de }
+        - { id: m7d, text: "Ich melde mir heute krank.", lang: de }
+    answer:
+      correct_option_id: m4a
+    explanation:
+      vi: "sich krankmelden vừa phản thân vừa tách: động từ melde ở vị trí 2, đại từ phản thân Akkusativ mich, phần tách krank đứng cuối câu. Không thể bỏ mich, không dùng mir (Dativ), và krank không đứng trước melde trong câu chính."
+    display_answer: Ich melde mich heute krank.

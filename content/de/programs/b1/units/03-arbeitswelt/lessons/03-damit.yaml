@@ -1,0 +1,401 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u03-damit
+order_index: 3
+level: b1
+title:
+  vi: Để mọi việc suôn sẻ – damit/um … zu, n-Deklination (Damit alles klappt)
+objectives:
+  - vi: Nói mục đích trong công việc bằng damit khi hai vế có chủ ngữ khác nhau, và bằng um … zu khi cùng chủ ngữ.
+  - vi: Dùng đúng các danh từ n-Deklination (den Kollegen, dem Kunden, des Praktikanten, Herrn Weber).
+  - vi: Nói về dự án, cuộc họp, mục tiêu và thời hạn trong nhóm làm việc.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b1u03-firmengeschichte]
+items:
+  - item: de:item:b1u03-g-damit
+  - item: de:item:b1u03-g-n-deklination
+  - item: de:item:b1u03-praktikant
+  - item: de:item:b1u03-experte
+  - item: de:item:b1u03-assistent
+  - item: de:item:b1u03-klappen
+  - item: de:item:b1u03-besprechung
+  - item: de:item:b1u03-ziel
+  - item: de:item:b1u03-erreichen
+  - item: de:item:b1u03-frist
+  - item: de:item:b1u03-loesung
+  - item: de:item:b1u03-vorbereiten
+  - item: de:item:b1u03-verantwortlich
+  - item: de:item:b1u03-zeitplan
+  - item: de:item:b1u03-erledigen
+  - item: de:item:b1u03-zusammenarbeit
+  - item: de:item:b1u03-teilnehmer
+  - item: de:item:b1u03-kandidat
+  - item: de:item:a1u01-kollege
+    role: reuse
+  - item: de:item:p0u3-herr
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:a2u06-g-um-zu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được mục đích trong công việc và dùng đúng danh từ như der Kollege, der Praktikant, ví dụ: \"Ich erkläre dem Praktikanten alles, damit er die Frist nicht verpasst. Wir treffen uns früher, um die Besprechung vorzubereiten.\""
+  - type: explain
+    text:
+      vi: "Để nói mục đích (\"để …\"), khi hai vế có chủ ngữ khác nhau, bạn dùng damit + câu phụ, động từ chia đứng cuối: Ich erkläre es langsam, damit du alles verstehst. Tiếng Việt dùng một chữ \"để\" cho mọi trường hợp, nên người Việt hay quên kiểm tra chủ ngữ của hai vế."
+  - type: explain
+    text:
+      vi: "Khi hai vế cùng chủ ngữ, người Đức thường dùng um … zu + nguyên thể (đã học ở A2), không có chủ ngữ: Ich bleibe länger, um den Bericht zu schreiben. Sau um không được có chủ ngữ và động từ chia: không nói um mein Chef zufrieden ist, mà nói damit mein Chef zufrieden ist."
+  - type: explain
+    text:
+      vi: "Cùng chủ ngữ vẫn dùng được damit (Ich lerne viel, damit ich die Prüfung bestehe), nhưng um … zu ngắn và tự nhiên hơn. Câu damit cũng có thể đứng đầu; khi đó cả câu phụ là vị trí 1 và câu chính bắt đầu bằng động từ: Damit alles klappt, treffen wir uns morgen früh."
+  - type: explain
+    text:
+      vi: "Một nhóm danh từ giống đực (n-Deklination) thêm -n hoặc -en ở mọi cách trừ Nominativ số ít: der Kollege → den Kollegen, dem Kollegen, des Kollegen. Phần lớn là danh từ giống đực chỉ người hoặc con vật tận cùng -e (der Kunde, der Experte), nhiều danh từ chỉ người tận cùng -ent, -ant, -ist (der Assistent, der Praktikant, der Journalist), và vài từ riêng như der Herr, der Mensch, der Nachbar. Bạn đã gặp các dạng như Herrn Weber, den Kollegen; bài này hệ thống hoá chúng."
+  - type: explain
+    text:
+      vi: "Ở Genitiv, nhóm này thêm -n/-en chứ không thêm -s: des Kollegen, des Praktikanten. der Herr có số ít den/dem/des Herrn nhưng số nhiều die Herren; der Name có Genitiv là des Namens. Dạng nữ (die Kollegin, die Praktikantin) không thêm đuôi ở số ít."
+  - type: deep_explain
+    text:
+      vi: "Từ điển thường ghi n-Deklination là \"der Kollege, -n, -n\" (đuôi Genitiv số ít và đuôi số nhiều), khác danh từ thường như \"der Lehrer, -s, -\". Vài danh từ trừu tượng có Genitiv -ns: der Name – des Namens, der Gedanke – des Gedankens. Khi nói nhanh, người Đức đôi khi bỏ -n (mit dem Praktikant), nhưng trong văn viết và bài thi hãy viết đủ. Đừng nhầm liên từ damit (để) với trạng từ damit (với cái đó: Was machst du damit?); liên từ damit mở đầu câu phụ có động từ cuối. Ở cuối câu với um … zu, động từ tách nhận zu ở giữa: vorzubereiten, anzurufen."
+  - type: example
+    target: Ich schicke Ihnen die Unterlagen heute, damit Sie sie bis Montag lesen können.
+    target_lang: de
+    translation:
+      vi: Hôm nay tôi gửi anh/chị tài liệu để anh/chị có thể đọc trước thứ Hai.
+    note:
+      vi: "Nói với khách hàng (Sie). Hai chủ ngữ khác nhau (ich – Sie) → damit; trong câu phụ, động từ chia können đứng cuối."
+  - type: example
+    target: Wir treffen uns morgen früh, um die Besprechung vorzubereiten.
+    target_lang: de
+    translation:
+      vi: Sáng mai chúng ta gặp nhau để chuẩn bị cuộc họp.
+    note:
+      vi: "Cùng chủ ngữ (wir) → um … zu. vorbereiten là động từ tách nên zu chen vào giữa: vorzubereiten."
+  - type: example
+    target: Damit das Projekt klappt, muss jeder seine Aufgaben pünktlich erledigen.
+    target_lang: de
+    translation:
+      vi: Để dự án suôn sẻ, mỗi người phải làm xong phần việc của mình đúng hạn.
+    note:
+      vi: "Câu damit đứng đầu là vị trí 1, nên câu chính bắt đầu bằng động từ muss."
+  - type: example
+    target: Darf ich Ihnen unseren neuen Praktikanten vorstellen? Das ist Herr Tran.
+    target_lang: de
+    translation:
+      vi: Cho phép tôi giới thiệu với anh/chị thực tập sinh mới của chúng tôi. Đây là anh Tran.
+    note:
+      vi: "Nói trang trọng (Ihnen). vorstellen + Akk: der Praktikant → unseren neuen Praktikanten (n-Deklination thêm -en)."
+  - type: example
+    target: Hast du den Kunden schon zurückgerufen? – Nein, ich habe Herrn Becker noch nicht erreicht.
+    target_lang: de
+    translation:
+      vi: Bạn đã gọi lại cho vị khách hàng chưa? – Chưa, mình vẫn chưa gọi được cho ông Becker.
+    note:
+      vi: "Hai đồng nghiệp thân nói với nhau (du). den Kunden, Herrn Becker: Akkusativ của n-Deklination."
+  - type: common_mistake
+    wrong: Ich frage den Kollege.
+    right: Ich frage den Kollegen.
+    target_lang: de
+    note:
+      vi: "der Kollege thuộc n-Deklination: ở Akkusativ thêm -n – den Kollegen."
+  - type: common_mistake
+    wrong: Ich komme früher, um mein Chef zufrieden ist.
+    right: Ich komme früher, damit mein Chef zufrieden ist.
+    target_lang: de
+    note:
+      vi: "Hai chủ ngữ khác nhau (ich – mein Chef) nên phải dùng damit; um … zu không có chủ ngữ riêng."
+  - type: common_mistake
+    wrong: Wir sprechen langsam, damit die Praktikanten verstehen alles.
+    right: Wir sprechen langsam, damit die Praktikanten alles verstehen.
+    target_lang: de
+    note:
+      vi: "damit mở đầu câu phụ: động từ chia verstehen đứng cuối."
+  - type: common_mistake
+    wrong: Ich schreibe Herr Weber eine E-Mail.
+    right: Ich schreibe Herrn Weber eine E-Mail.
+    target_lang: de
+    note:
+      vi: "Herr ở Dativ (viết cho ai?) là Herrn."
+  - type: summary
+    points:
+      - vi: "Khác chủ ngữ: damit + câu phụ (động từ cuối) – Ich erkläre es, damit du es verstehst."
+      - vi: "Cùng chủ ngữ: thường um … zu + nguyên thể – Ich komme früher, um alles vorzubereiten."
+      - vi: "Sau um … zu không có chủ ngữ, không có động từ chia."
+      - vi: "n-Deklination: -(e)n ở mọi cách trừ Nominativ số ít – den/dem/des Kollegen, Praktikanten, Experten."
+      - vi: "Herr → Herrn (số ít), Herren (số nhiều); Name → des Namens."
+      - vi: "Từ vựng: der Praktikant, der Experte, der Assistent, klappen, die Besprechung, das Ziel, erreichen, die Frist."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u03l3-mcq-damit-sie
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-damit
+    prompt:
+      stem: "Chọn từ đúng: Ich schicke Ihnen die Unterlagen, ___ Sie sie vor der Besprechung lesen können."
+      stem_lang: vi
+      options:
+        - { id: d4m, text: "damit", lang: de }
+        - { id: d8u, text: "um", lang: de }
+        - { id: d2o, text: "obwohl", lang: de }
+        - { id: d6n, text: "denn", lang: de }
+    answer:
+      correct_option_id: d4m
+    explanation:
+      vi: "Hai vế có chủ ngữ khác nhau (ich – Sie) và vế sau nói mục đích → damit, động từ können đứng cuối. um … zu không có chủ ngữ riêng; obwohl = mặc dù; sau denn động từ phải ở vị trí 2."
+    display_answer: damit
+
+  - key: de:exercise:b1u03l3-mcq-praktikanten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-g-n-deklination
+    prompt:
+      stem: "Chọn dạng đúng: Ich habe gestern mit dem neuen ___ gesprochen."
+      stem_lang: vi
+      options:
+        - { id: n3p, text: "Praktikanten", lang: de }
+        - { id: n7q, text: "Praktikant", lang: de }
+        - { id: n1r, text: "Praktikantin", lang: de }
+        - { id: n5s, text: "Praktikum", lang: de }
+    answer:
+      correct_option_id: n3p
+    explanation:
+      vi: "mit + Dativ, dem neuen → giống đực. der Praktikant thuộc n-Deklination nên ở Dativ thêm -en: dem Praktikanten. Praktikantin là giống cái (phải là der neuen Praktikantin); Praktikum là kỳ thực tập, không phải người."
+    display_answer: Praktikanten
+
+  - key: de:exercise:b1u03l3-mcq-experten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u03-experte
+    prompt:
+      stem: "Câu nào đúng? (Tốt nhất là chúng ta hỏi một chuyên gia.)"
+      stem_lang: vi
+      options:
+        - { id: x2a, text: "Wir fragen am besten einen Experten.", lang: de }
+        - { id: x6b, text: "Wir fragen am besten einen Experte.", lang: de }
+        - { id: x9c, text: "Wir fragen am besten einem Experten.", lang: de }
+        - { id: x4d, text: "Wir fragen am besten ein Experte.", lang: de }
+    answer:
+      correct_option_id: x2a
+    explanation:
+      vi: "fragen đi với Akkusativ: einen. der Experte thuộc n-Deklination nên ở Akkusativ thêm -n: einen Experten. einem là Dativ; ein Experte là Nominativ."
+    display_answer: Wir fragen am besten einen Experten.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u03l3-fill-assistenten-herrn
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:p0u3-herr
+    prompt:
+      template: "Frau Lang sucht einen {{b1}} (Assistent). Gestern hat sie mit einem {{b2}} (Experte) gesprochen. Morgen trifft sie {{b3}} (Herr) Becker."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Assistenten]
+        b2: [Experten]
+        b3: [Herrn]
+    known_wrong:
+      - answer: Assistent
+        feedback_vi: "der Assistent thuộc n-Deklination – ở Akkusativ thêm -en: einen Assistenten."
+        error_tag: n_declension
+      - answer: Experte
+        feedback_vi: "der Experte thuộc n-Deklination – ở Dativ thêm -n: mit einem Experten."
+        error_tag: n_declension
+      - answer: Herr
+        feedback_vi: der Herr ở Akkusativ số ít là Herrn – Morgen trifft sie Herrn Becker.
+        error_tag: n_declension
+      - answer: Herren
+        feedback_vi: Herren là số nhiều; với một người (Herr Becker) dùng Herrn.
+        error_tag: n_declension
+    explanation:
+      vi: "Cả ba danh từ thuộc n-Deklination: ngoài Nominativ số ít đều thêm -(e)n. einen Assistenten (Akk), mit einem Experten (Dat), Herrn Becker (Akk; số ít là Herrn, số nhiều mới là Herren)."
+    display_answer: "Frau Lang sucht einen Assistenten. Gestern hat sie mit einem Experten gesprochen. Morgen trifft sie Herrn Becker."
+
+  - key: de:exercise:b1u03l3-fill-damit-um
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-g-damit
+    prompt:
+      template: "Wir sprechen langsam, {{b1}} die Praktikanten alles verstehen. Ich bleibe heute länger, {{b2}} den Bericht zu schreiben. Die Chefin erklärt die Aufgabe genau, {{b3}} alles klappt."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [damit]
+        b2: [um]
+        b3: [damit]
+    known_wrong:
+      - answer: dass
+        feedback_vi: Câu nói mục đích (để …) nên dùng damit, không dùng dass.
+        error_tag: conjunction
+      - answer: weil
+        feedback_vi: weil nói lý do (vì), không nói mục đích (để) – dùng damit.
+        error_tag: conjunction
+      - answer: obwohl
+        feedback_vi: obwohl = mặc dù; ở đây cần nói mục đích (để).
+        error_tag: conjunction
+    explanation:
+      vi: "Ô 1 và ô 3: hai vế khác chủ ngữ (wir – die Praktikanten; die Chefin – alles) → damit, động từ cuối câu phụ. Ô 2: cùng chủ ngữ ich và đã có zu + nguyên thể → um."
+    display_answer: "Wir sprechen langsam, damit die Praktikanten alles verstehen. Ich bleibe heute länger, um den Bericht zu schreiben. Die Chefin erklärt die Aufgabe genau, damit alles klappt."
+
+  - key: de:exercise:b1u03l3-tr-assistenten-anrufen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u03-assistent
+    prompt:
+      source_text: "Tôi gọi điện cho trợ lý (nam) để anh ấy chuẩn bị cuộc họp."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich rufe den Assistenten an, damit er die Besprechung vorbereitet.
+        - Ich rufe den Assistenten an, damit er die Besprechung vorbereiten kann.
+        - Ich rufe meinen Assistenten an, damit er die Besprechung vorbereitet.
+        - Ich rufe meinen Assistenten an, damit er die Besprechung vorbereiten kann.
+        - Ich telefoniere mit dem Assistenten, damit er die Besprechung vorbereitet.
+        - Ich telefoniere mit meinem Assistenten, damit er die Besprechung vorbereitet.
+        - Ich rufe den Assistenten an, damit er das Meeting vorbereitet.
+        - Ich rufe meinen Assistenten an, damit er das Meeting vorbereitet.
+    known_wrong:
+      - answer: Ich rufe den Assistent an, damit er die Besprechung vorbereitet.
+        feedback_vi: der Assistent thuộc n-Deklination – ở Akkusativ là den Assistenten.
+        error_tag: n_declension
+      - answer: Ich rufe den Assistenten an, um er die Besprechung vorbereitet.
+        feedback_vi: Hai chủ ngữ khác nhau (ich – er) nên dùng damit, không dùng um.
+        error_tag: conjunction
+      - answer: Ich rufe den Assistenten an, damit er bereitet die Besprechung vor.
+        feedback_vi: Trong câu phụ damit, động từ đứng cuối và không tách – vorbereitet.
+        error_tag: verb_position
+    explanation:
+      vi: "anrufen + Akk: den Assistenten (n-Deklination thêm -en). Chủ ngữ hai vế khác nhau (ich – er) → damit; động từ tách vorbereiten đứng cuối câu phụ và viết liền: vorbereitet."
+    display_answer: Ich rufe den Assistenten an, damit er die Besprechung vorbereitet.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u03l3-wb-frist-verpasst
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u03-frist
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi giúp cậu thực tập sinh để cậu ấy không lỡ hạn.\""
+      tokens:
+        - { id: t-nicht, text: nicht }
+        - { id: t-praktikanten, text: Praktikanten }
+        - { id: t-damit, text: damit }
+        - { id: t-ich, text: Ich }
+        - { id: t-frist, text: Frist }
+        - { id: t-dem, text: dem }
+        - { id: t-verpasst, text: verpasst }
+        - { id: t-komma, text: "," }
+        - { id: t-helfe, text: helfe }
+        - { id: t-er, text: er }
+        - { id: t-die, text: die }
+    answer:
+      orders:
+        - [t-ich, t-helfe, t-dem, t-praktikanten, t-komma, t-damit, t-er, t-die, t-frist, t-nicht, t-verpasst]
+    explanation:
+      vi: "helfen + Dativ: dem Praktikanten (n-Deklination thêm -en). Khác chủ ngữ (ich – er) → damit; trong câu phụ, nicht đứng trước động từ và động từ verpasst đứng cuối."
+    display_answer: Ich helfe dem Praktikanten, damit er die Frist nicht verpasst.
+
+  - key: de:exercise:b1u03l3-wb-um-vorzubereiten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u03-vorbereiten
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hôm nay tôi ở lại lâu hơn để chuẩn bị bài thuyết trình.\""
+      tokens:
+        - { id: v-vorzubereiten, text: vorzubereiten }
+        - { id: v-heute, text: heute }
+        - { id: v-um, text: um }
+        - { id: v-ich, text: Ich }
+        - { id: v-praesentation, text: Präsentation }
+        - { id: v-komma, text: "," }
+        - { id: v-laenger, text: länger }
+        - { id: v-die, text: die }
+        - { id: v-bleibe, text: bleibe }
+    answer:
+      orders:
+        - [v-ich, v-bleibe, v-heute, v-laenger, v-komma, v-um, v-die, v-praesentation, v-vorzubereiten]
+    explanation:
+      vi: "Cùng chủ ngữ ich → um … zu. Tân ngữ die Präsentation đứng giữa um và nguyên thể; vorbereiten là động từ tách nên zu chen vào giữa: vorzubereiten."
+    display_answer: Ich bleibe heute länger, um die Präsentation vorzubereiten.
+
+  - key: de:exercise:b1u03l3-tr-projekt-klappt-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u03-klappen
+    prompt:
+      source_text: Damit das Projekt klappt, muss jeder seine Aufgaben pünktlich erledigen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Để dự án suôn sẻ, mỗi người phải làm xong phần việc của mình đúng hạn.
+        - Để dự án suôn sẻ, mỗi người phải hoàn thành nhiệm vụ của mình đúng hạn.
+        - Để dự án suôn sẻ, ai cũng phải làm xong việc của mình đúng hạn.
+        - Để dự án suôn sẻ, ai cũng phải hoàn thành nhiệm vụ của mình đúng hạn.
+        - Để dự án thành công, mỗi người phải làm xong phần việc của mình đúng hạn.
+        - Để dự án thành công, mỗi người phải hoàn thành nhiệm vụ của mình đúng hạn.
+        - Để dự án thành công, ai cũng phải hoàn thành công việc của mình đúng hạn.
+        - Để dự án trôi chảy, mỗi người phải làm xong phần việc của mình đúng hạn.
+        - Để dự án suôn sẻ, mỗi người phải hoàn thành công việc của mình đúng hạn.
+        - Để dự án suôn sẻ, mọi người phải hoàn thành nhiệm vụ của mình đúng hạn.
+        - Để dự án suôn sẻ, mỗi người phải làm xong các nhiệm vụ của mình đúng giờ.
+        - Muốn dự án suôn sẻ, mỗi người phải làm xong phần việc của mình đúng hạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì dự án suôn sẻ, mỗi người phải làm xong phần việc của mình đúng hạn.
+        feedback_vi: "damit nói mục đích (để), không nói lý do (vì = weil)."
+        error_tag: meaning
+    explanation:
+      vi: "Damit … = để …; klappen = suôn sẻ, thành công. Câu damit đứng đầu nên câu chính bắt đầu bằng động từ muss. pünktlich erledigen = làm xong đúng hạn."
+    display_answer: Để dự án suôn sẻ, mỗi người phải làm xong phần việc của mình đúng hạn.
+
+  - key: de:exercise:b1u03l3-mcq-um-zu-sammeln
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u01-kollege
+    prompt:
+      stem: "Bạn kể với một đồng nghiệp (Kollege) lý do bạn đi thực tập. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z3a, text: "Ich mache ein Praktikum, um Berufserfahrung zu sammeln.", lang: de }
+        - { id: z8b, text: "Ich mache ein Praktikum, um ich Berufserfahrung sammle.", lang: de }
+        - { id: z5c, text: "Ich mache ein Praktikum, damit Berufserfahrung zu sammeln.", lang: de }
+        - { id: z1d, text: "Ich mache ein Praktikum, um Berufserfahrung sammeln.", lang: de }
+    answer:
+      correct_option_id: z3a
+    explanation:
+      vi: "Cùng chủ ngữ (ich) → um … zu + nguyên thể: um Berufserfahrung zu sammeln. Sau um không có chủ ngữ và động từ chia; damit không đi với zu + nguyên thể; um … zu không được thiếu zu."
+    display_answer: Ich mache ein Praktikum, um Berufserfahrung zu sammeln.
