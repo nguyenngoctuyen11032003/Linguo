@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Navigate } from "react-router";
+import { CloudOff } from "lucide-react";
 import { DEFAULT_TIMEZONE } from "@linguo/shared";
 import { Avatar } from "@/components/ui/Avatar";
 import { ErrorState } from "@/components/ui/ErrorState";
@@ -11,6 +12,7 @@ import { setPathStatus } from "@/features/learning-paths/service";
 import { avatarUrl } from "@/features/profile/avatar";
 import { useProfile } from "@/features/profile/ProfileProvider";
 import { resolveTimeZone } from "@/lib/dates";
+import { useOnline } from "@/lib/useOnline";
 import { getSupabase, requireSupabase } from "@/lib/supabase";
 import { ClassesHomeCard } from "@/features/classes/ClassesHomeCard";
 import { DiagnosticCard } from "./home/DiagnosticCard";
@@ -33,8 +35,9 @@ const todayLabel = (timeZone: string) =>
   }).format(new Date());
 
 export function HomePage() {
-  const { status, profile, reload } = useProfile();
+  const { status, profile, reload, fromCache: profileFromCache, stale: profileStale } = useProfile();
   const paths = useLearningPaths();
+  const online = useOnline();
   const toast = useToast();
   const [resuming, setResuming] = useState(false);
   const cardFocusRef = useRef<HTMLElement | null>(null);
@@ -46,6 +49,10 @@ export function HomePage() {
   // Vietnamese names end with the given name: greet by it only ("Nguyễn Ngọc Tuyền" → "Tuyền").
   const name = fullName?.split(/\s+/).pop();
   const timeZone = resolveTimeZone(profile?.timezone ?? DEFAULT_TIMEZONE);
+  // Learners keep studying from the copy saved on this device when the server cannot be reached; say so (quietly).
+  const savedData = Boolean(profileStale || paths.stale || (!online && (profileFromCache || paths.fromCache)));
+  // Nothing saved yet and no network: the only honest answer is "open the app once with a connection".
+  const noOfflineData = !online && !paths.current && (paths.status === "error" || status === "error");
 
   const currentStatus = paths.current?.status;
   useEffect(() => {
@@ -110,13 +117,29 @@ export function HomePage() {
         </div>
       </header>
 
-      {status === "error" && (
+      {savedData && (
+        <p
+          role="status"
+          className="flex items-center justify-center gap-2 rounded-2xl bg-text/5 px-3 py-2 text-sm text-muted"
+        >
+          <CloudOff aria-hidden className="size-4 shrink-0" />
+          Đang dùng dữ liệu đã lưu trên thiết bị
+        </p>
+      )}
+      {noOfflineData && (
+        <ErrorState
+          title="Chưa có dữ liệu để học ngoại tuyến"
+          description="Hãy mở Linguo một lần khi có mạng để lộ trình được lưu vào thiết bị."
+          onRetry={paths.reload}
+        />
+      )}
+      {status === "error" && !noOfflineData && (
         <ErrorState title="Không tải được hồ sơ" onRetry={reload} />
       )}
       {paths.status === "loading" && paths.paths.length === 0 && (
         <Skeleton className="block h-64 w-full rounded-3xl" />
       )}
-      {paths.status === "error" && (
+      {paths.status === "error" && !noOfflineData && (
         <ErrorState title="Không tải được lộ trình" onRetry={paths.reload} />
       )}
       {paths.status !== "error" && paths.current && (

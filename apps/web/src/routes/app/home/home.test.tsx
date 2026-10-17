@@ -251,3 +251,37 @@ describe('HomePage', () => {
     expect(needsSpreadWarning([{ ...low(TEST_PATH), status: 'paused' }, { ...low(TEST_KO_PATH), status: 'paused' }])).toBe(false);
   });
 });
+
+describe('HomePage with saved data (offline-first)', () => {
+  afterEach(() => vi.restoreAllMocks());
+  const offline = () => vi.spyOn(navigator, 'onLine', 'get').mockReturnValue(false);
+
+  it('shows the learning screen plus a quiet hint when the saved copy is on screen offline', () => {
+    offline();
+    renderWithProviders(<HomePage />, { route: '/app', profile: { fromCache: true }, paths: { fromCache: true } });
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Chào Anh');
+    expect(screen.getByText('Đang dùng dữ liệu đã lưu trên thiết bị')).toBeInTheDocument();
+    expect(screen.getByText('Lộ trình của bạn')).toBeInTheDocument();
+    expect(screen.queryByText(/Không tải được/)).not.toBeInTheDocument();
+  });
+
+  it('shows the hint online too once a revalidation failed (stale), but not during a normal load', () => {
+    const { unmount } = renderWithProviders(<HomePage />, { route: '/app', paths: { fromCache: true } });
+    expect(screen.queryByText('Đang dùng dữ liệu đã lưu trên thiết bị')).not.toBeInTheDocument();
+    unmount();
+    renderWithProviders(<HomePage />, { route: '/app', paths: { fromCache: true, stale: true } });
+    expect(screen.getByText('Đang dùng dữ liệu đã lưu trên thiết bị')).toBeInTheDocument();
+  });
+
+  it('explains what to do when offline with nothing saved, instead of two generic load errors', () => {
+    offline();
+    renderWithProviders(<HomePage />, {
+      route: '/app',
+      profile: { status: 'error', profile: null },
+      paths: { status: 'error', paths: [], current: null },
+    });
+    expect(screen.getByRole('heading', { name: 'Chưa có dữ liệu để học ngoại tuyến' })).toBeInTheDocument();
+    expect(screen.queryByText('Không tải được hồ sơ')).not.toBeInTheDocument();
+    expect(screen.queryByText('Không tải được lộ trình')).not.toBeInTheDocument();
+  });
+});

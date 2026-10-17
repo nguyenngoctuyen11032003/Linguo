@@ -15,6 +15,8 @@ export interface ProfileContextValue {
    * Absent means false (hand-built test values).
    */
   fromCache?: boolean;
+  /** True once a revalidation failed on the network while a saved copy is shown: the data really is possibly out of date. */
+  stale?: boolean;
   reload: () => void;
   setProfile: (profile: Profile) => void;
 }
@@ -26,6 +28,7 @@ interface State {
   profile: Profile | null;
   error: unknown;
   fromCache: boolean;
+  stale: boolean;
 }
 
 interface OwnedState extends State {
@@ -33,12 +36,12 @@ interface OwnedState extends State {
   ownerId: string | undefined;
 }
 
-const LOADING: State = { status: 'loading', profile: null, error: null, fromCache: false };
+const LOADING: State = { status: 'loading', profile: null, error: null, fromCache: false, stale: false };
 
 /** The saved copy as a ready state (instant, works offline), or plain loading when this device has none. */
 function hydrate(userId: string | undefined): State {
   const cached = userId ? readProfileSnapshot(userId) : null;
-  return cached ? { status: 'ready', profile: cached, error: null, fromCache: true } : LOADING;
+  return cached ? { status: 'ready', profile: cached, error: null, fromCache: true, stale: false } : LOADING;
 }
 
 /** An installed PWA lives for days in the background: re-read the profile when it comes back after at least this long. */
@@ -68,15 +71,15 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
       .then((profile) => {
         if (!active) return;
         writeProfileSnapshot(userId, profile);
-        setOwned({ status: 'ready', profile, error: null, fromCache: false, ownerId: userId });
+        setOwned({ status: 'ready', profile, error: null, fromCache: false, stale: false, ownerId: userId });
       })
       .catch((error: unknown) => {
         if (!active) return;
         // No network: keep showing the saved copy (a profile the learner already had) instead of an error card.
         setOwned((s) =>
           isNetworkError(error) && s.ownerId === userId && s.profile
-            ? { ...s, status: 'ready', error: null, fromCache: true }
-            : { status: 'error', profile: null, error, fromCache: false, ownerId: userId },
+            ? { ...s, status: 'ready', error: null, fromCache: true, stale: true }
+            : { status: 'error', profile: null, error, fromCache: false, stale: false, ownerId: userId },
         );
       });
     return () => {
@@ -109,8 +112,8 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
           writeProfileSnapshot(userId, profile);
           setOwned((s) => {
             if (s.ownerId !== userId || s.status !== 'ready') return s;
-            if (!sameProfile(s.profile, profile)) return { status: 'ready', profile, error: null, fromCache: false, ownerId: userId };
-            return s.fromCache ? { ...s, fromCache: false } : s;
+            if (!sameProfile(s.profile, profile)) return { status: 'ready', profile, error: null, fromCache: false, stale: false, ownerId: userId };
+            return s.fromCache || s.stale ? { ...s, fromCache: false, stale: false } : s;
           });
         })
         .catch(() => undefined);
@@ -136,12 +139,12 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
     (profile: Profile) => {
       writes.current += 1;
       if (userId) writeProfileSnapshot(userId, profile);
-      setOwned({ status: 'ready', profile, error: null, fromCache: false, ownerId: userId });
+      setOwned({ status: 'ready', profile, error: null, fromCache: false, stale: false, ownerId: userId });
     },
     [userId],
   );
-  const { status, profile, error, fromCache } = state;
-  const value = useMemo(() => ({ status, profile, error, fromCache, reload, setProfile }), [status, profile, error, fromCache, reload, setProfile]);
+  const { status, profile, error, fromCache, stale } = state;
+  const value = useMemo(() => ({ status, profile, error, fromCache, stale, reload, setProfile }), [status, profile, error, fromCache, stale, reload, setProfile]);
 
   return <ProfileContext.Provider value={value}>{children}</ProfileContext.Provider>;
 }

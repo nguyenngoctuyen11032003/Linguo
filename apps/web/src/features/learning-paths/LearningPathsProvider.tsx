@@ -16,6 +16,8 @@ export interface LearningPathsContextValue {
    * (offline, or the revalidation is still running). Absent means false (hand-built test values).
    */
   fromCache?: boolean;
+  /** True once a revalidation failed on the network while a saved copy is shown: the data really is possibly out of date. */
+  stale?: boolean;
   reload: () => void;
   /** Persists the choice through the RPC, then updates local state. Throws on failure. Only the latest call is applied. */
   setCurrent: (id: string) => Promise<void>;
@@ -36,9 +38,10 @@ interface State {
   paths: LearningPath[];
   currentId: string | null;
   fromCache: boolean;
+  stale: boolean;
 }
 
-const empty = (ownerId: string | undefined): State => ({ ownerId, status: 'loading', error: null, paths: [], currentId: null, fromCache: false });
+const empty = (ownerId: string | undefined): State => ({ ownerId, status: 'loading', error: null, paths: [], currentId: null, fromCache: false, stale: false });
 
 /**
  * The saved paths as a ready state, so the learning screens work at once and offline; plain loading when this
@@ -46,7 +49,7 @@ const empty = (ownerId: string | undefined): State => ({ ownerId, status: 'loadi
  */
 function hydrate(ownerId: string | undefined): State {
   const snap = ownerId ? readPathsSnapshot(ownerId) : null;
-  return snap ? { ownerId, status: 'ready', error: null, paths: snap.paths, currentId: snap.currentId, fromCache: true } : empty(ownerId);
+  return snap ? { ownerId, status: 'ready', error: null, paths: snap.paths, currentId: snap.currentId, fromCache: true, stale: false } : empty(ownerId);
 }
 
 const byCreatedAt = (a: LearningPath, b: LearningPath) => a.createdAt.localeCompare(b.createdAt) || a.id.localeCompare(b.id);
@@ -81,7 +84,7 @@ export function LearningPathsProvider({ children }: { children: ReactNode }) {
           setAttempt((n) => n + 1);
           return;
         }
-        setOwned({ ownerId: userId, status: 'ready', error: null, paths, currentId, fromCache: false });
+        setOwned({ ownerId: userId, status: 'ready', error: null, paths, currentId, fromCache: false, stale: false });
       })
       .catch((error: unknown) => {
         if (!active) return;
@@ -89,7 +92,7 @@ export function LearningPathsProvider({ children }: { children: ReactNode }) {
         // screen (saved copy or an earlier load) that is not an error at all: the learner just keeps learning.
         setOwned((s) => {
           if (s.ownerId !== userId) return { ...empty(userId), status: 'error', error };
-          if (isNetworkError(error) && s.paths.length > 0) return { ...s, status: 'ready', error: null, fromCache: true };
+          if (isNetworkError(error) && s.paths.length > 0) return { ...s, status: 'ready', error: null, fromCache: true, stale: true };
           return { ...s, status: 'error', error };
         });
       });
@@ -159,6 +162,7 @@ export function LearningPathsProvider({ children }: { children: ReactNode }) {
       currentId: current?.id ?? null,
       current,
       fromCache: state.fromCache,
+      stale: state.stale,
       reload,
       setCurrent,
       upsertPath,
