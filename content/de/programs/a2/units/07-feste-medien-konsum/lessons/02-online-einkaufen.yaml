@@ -1,0 +1,356 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u07-online-einkaufen
+order_index: 2
+level: a2
+title:
+  vi: Mua sắm trực tuyến – tính từ không mạo từ (Frischer Kaffee, günstige Preise)
+objectives:
+  - vi: Đọc quảng cáo và lời đánh giá sản phẩm trên cửa hàng online.
+  - vi: Hỏi đổi hoặc trả hàng bằng câu lịch sự (Kann ich … umtauschen?).
+  - vi: Dùng đúng đuôi tính từ khi không có mạo từ (frischer Kaffee, gute Qualität, Mit freundlichen Grüßen).
+estimated_minutes: 17
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:a2u07-feste]
+items:
+  - item: de:item:a2u07-g-adj-nullartikel
+  - item: de:item:a2u07-online-shop
+  - item: de:item:a2u07-warenkorb
+  - item: de:item:a2u07-liefern
+  - item: de:item:a2u07-zurueckschicken
+  - item: de:item:a2u07-umtauschen
+  - item: de:item:a2u07-qualitaet
+  - item: de:item:a2u07-marke
+  - item: de:item:a2u07-produkt
+  - item: de:item:a2u07-kunde
+  - item: de:item:a2u07-gebraucht
+  - item: de:item:a2u07-bestellung
+  - item: de:item:a2u07-bewertung
+  - item: de:item:a2u07-versand
+  - item: de:item:a2u07-kostenlos
+  - item: de:item:a2u07-gutschein
+  - item: de:item:a2u07-rabatt
+  - item: de:item:a2u07-g-dieser-jeder
+    role: reuse
+  - item: de:item:a1u03-g-mengen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được quảng cáo và đánh giá kiểu "Gute Qualität, kostenloser Versand!", viết được tin nhắn xin đổi hàng và kết thư đúng bằng "Mit freundlichen Grüßen".
+  - type: explain
+    text:
+      vi: "Bạn đã biết hai bảng đuôi tính từ: sau ein/kein/mein (ein frischer Kaffee) và sau der/die/das (der frische Kaffee). Bảng 3 dành cho trường hợp không có mạo từ nào: lúc đó tính từ phải tự mang đuôi của mạo từ xác định – frischer Kaffee (der), frische Milch (die), frisches Brot (das), frische Brötchen (số nhiều)."
+  - type: explain
+    text:
+      vi: "Akkusativ chỉ giống đực đổi: Ich trinke schwarzen Kaffee (den → -en). Dativ lấy đuôi của dem/der/dem/den: mit frischem Obst, mit warmer Milch, Mit freundlichen Grüßen. Tiếng Việt không có đuôi nào nên bạn cần tự hỏi: danh từ giống gì, ở cách nào?"
+  - type: explain
+    text:
+      vi: "Không mạo từ thường gặp ở danh từ không đếm được (Kaffee, Milch, Qualität), danh từ số nhiều (gebrauchte Bücher, günstige Preise), sau số đếm và đơn vị (zwei Kilo frischen Kaffee) và trong quảng cáo, đánh giá ngắn: Gute Qualität, schnelle Lieferung!"
+  - type: explain
+    text:
+      vi: "Đổi trả hàng: umtauschen = đổi lấy món khác (cỡ khác, màu khác), zurückschicken = gửi trả lại. Cả hai là động từ tách: Ich tausche die Schuhe um. Ich schicke die Jacke zurück. Với cửa hàng luôn dùng Sie."
+  - type: deep_explain
+    text:
+      vi: "Mẹo nhớ bảng 3: chỉ cần nhớ đuôi của der/die/das/die và dem/der/dem/den rồi gắn chữ cái cuối vào tính từ (der → -er, das → -es, dem → -em). Lời chúc và lời chào cố định cũng theo bảng này: Viele Grüße (Akk số nhiều), Mit freundlichen Grüßen (Dativ số nhiều), Frohe Weihnachten, Gute Reise! Riêng super, prima và màu lila, rosa trong văn chuẩn thường để nguyên, không thêm đuôi (super Qualität). Điều kiện đổi trả khi mua online do từng cửa hàng và luật hiện hành quy định và có thể thay đổi, nên hãy đọc kỹ trước khi đặt hàng."
+  - type: example
+    target: "Frischer Kaffee aus Vietnam – kostenloser Versand ab 30 Euro!"
+    target_lang: de
+    translation:
+      vi: "Cà phê tươi từ Việt Nam – miễn phí vận chuyển cho đơn từ 30 euro!"
+    note:
+      vi: "der Kaffee, der Versand: không có mạo từ nên tính từ lấy đuôi -er (frischer, kostenloser). frisch = tươi, mới."
+  - type: example
+    target: "Ich bestelle ein Kilo schwarzen Kaffee und drei Packungen grünen Tee."
+    target_lang: de
+    translation:
+      vi: "Tôi đặt một ký cà phê đen và ba gói trà xanh."
+    note:
+      vi: "Sau ein Kilo, drei Packungen danh từ không có mạo từ. Kaffee và Tee là tân ngữ giống đực (Akkusativ) nên tính từ có đuôi -en."
+  - type: example
+    target: "Gute Qualität, schnelle Lieferung! Diese Marke kann ich empfehlen."
+    target_lang: de
+    translation:
+      vi: "Chất lượng tốt, giao hàng nhanh! Tôi có thể giới thiệu thương hiệu này."
+    note:
+      vi: "Đánh giá ngắn thường bỏ mạo từ: die Qualität → gute Qualität. empfehlen = giới thiệu, khuyên dùng."
+  - type: example
+    target: "Ich suche einen gebrauchten Laptop. – Gebrauchte Laptops gibt es in diesem Online-Shop."
+    target_lang: de
+    translation:
+      vi: "Mình đang tìm một cái laptop cũ. – Laptop cũ thì cửa hàng online này có."
+    note:
+      vi: "Có mạo từ ein (einen gebrauchten Laptop – bảng 1) so với không có mạo từ ở số nhiều (gebrauchte Laptops – bảng 3). Hai người bạn nói với nhau."
+  - type: example
+    target: "Sehr geehrte Damen und Herren, die Schuhe sind leider zu klein. Kann ich sie umtauschen? Mit freundlichen Grüßen, Lan"
+    target_lang: de
+    translation:
+      vi: "Kính gửi quý cửa hàng, rất tiếc đôi giày bị nhỏ. Tôi có thể đổi không? Trân trọng, Lan"
+    note:
+      vi: "Thư gửi cửa hàng là thư trang trọng: mở đầu Sehr geehrte Damen und Herren, kết thúc Mit freundlichen Grüßen (Dativ số nhiều -en)."
+  - type: common_mistake
+    wrong: Mit freundliche Grüße
+    right: Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "mit đi với Dativ; Dativ số nhiều không mạo từ: tính từ -en, danh từ thêm -n (Grüßen)."
+  - type: common_mistake
+    wrong: Ich trinke gern schwarze Kaffee.
+    right: Ich trinke gern schwarzen Kaffee.
+    target_lang: de
+    note:
+      vi: "Kaffee là tân ngữ giống đực (Akkusativ) và không có mạo từ, nên tính từ mang đuôi của den: schwarzen Kaffee."
+  - type: common_mistake
+    wrong: Frische Brot vom Bäcker!
+    right: Frisches Brot vom Bäcker!
+    target_lang: de
+    note:
+      vi: "das Brot là giống trung; không có mạo từ nên tính từ lấy đuôi -es của das."
+  - type: summary
+    points:
+      - vi: "Không mạo từ: tính từ mang đuôi của der/die/das – frischer Kaffee, frische Milch, frisches Brot, frische Brötchen."
+      - vi: "Akkusativ giống đực: schwarzen Kaffee; Dativ: mit frischem Obst, mit warmer Milch, Mit freundlichen Grüßen."
+      - vi: "Dùng khi: danh từ không đếm được, số nhiều, sau số lượng, trong quảng cáo và đánh giá."
+      - vi: "umtauschen = đổi; zurückschicken = gửi trả lại (động từ tách)."
+      - vi: "Thư cho cửa hàng: Sehr geehrte Damen und Herren … Mit freundlichen Grüßen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u07l2-mcq-frisches-brot
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u07-g-adj-nullartikel
+    prompt:
+      stem: "Chọn dạng đúng cho biển quảng cáo của tiệm bánh: \"___ Brot – jeden Morgen!\" (das Brot, frisch = tươi)"
+      stem_lang: vi
+      options:
+        - { id: f3k, text: Frisches, lang: de }
+        - { id: f8m, text: Frische, lang: de }
+        - { id: f1z, text: Frischer, lang: de }
+        - { id: f6w, text: Frischen, lang: de }
+    answer:
+      correct_option_id: f3k
+    explanation:
+      vi: "Không có mạo từ, nên tính từ phải mang đuôi của mạo từ: das Brot → frisches Brot (-es như das). Frische là đuôi sau das (das frische Brot) hoặc cho giống cái; Frischer cho giống đực."
+    display_answer: Frisches
+
+  - key: de:exercise:a2u07l2-mcq-lesen-werbung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-versand
+    prompt:
+      stem: "Đọc quảng cáo của một cửa hàng online (thông tin tự soạn): \"Neue Sommerschuhe: 20 Prozent Rabatt! Kostenloser Versand ab 50 Euro. Sie können alle Produkte 30 Tage lang zurückschicken.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: q2h, text: "Đơn hàng từ 50 euro được miễn phí vận chuyển.", lang: vi }
+        - { id: q7n, text: "Mọi đơn hàng đều được miễn phí vận chuyển.", lang: vi }
+        - { id: q4b, text: "Giày mùa hè được giảm giá 30 phần trăm.", lang: vi }
+        - { id: q9s, text: "Chỉ được gửi trả hàng trong 20 ngày.", lang: vi }
+    answer:
+      correct_option_id: q2h
+    explanation:
+      vi: "Kostenloser Versand ab 50 Euro = miễn phí vận chuyển từ 50 euro trở lên, không phải cho mọi đơn. 20 Prozent là mức giảm giá; 30 Tage lang là thời gian được gửi trả hàng."
+    display_answer: "Đơn hàng từ 50 euro được miễn phí vận chuyển."
+
+  - key: de:exercise:a2u07l2-fill-gebrauchte-buecher
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-gebraucht
+    prompt:
+      template: "In diesem Online-Shop kaufe ich oft {{b1}} Bücher."
+      blanks:
+        - { id: b1, width_hint: 10 }
+      hint_levels:
+        - "Nghĩa của câu: Tôi hay mua sách cũ ở cửa hàng online này."
+        - "Gợi ý: dùng gebraucht; Bücher là số nhiều, làm tân ngữ, không có mạo từ."
+    answer:
+      blanks:
+        b1: [gebrauchte]
+    known_wrong:
+      - answer: gebrauchten
+        feedback_vi: "Không có mạo từ, số nhiều ở Akkusativ có đuôi -e (như die): gebrauchte Bücher."
+        error_tag: adj_ending
+      - answer: gebrauchtes
+        feedback_vi: "Bücher là số nhiều, không phải giống trung số ít: gebrauchte Bücher."
+        error_tag: adj_ending
+      - answer: gebraucht
+        feedback_vi: "Tính từ đứng trước danh từ phải có đuôi: gebrauchte Bücher."
+        error_tag: adj_ending
+    explanation:
+      vi: "Bücher là số nhiều và không có mạo từ, nên tính từ lấy đuôi của die (số nhiều): gebrauchte Bücher. Nếu có mạo từ (die gebrauchten Bücher) thì mới là -en."
+    display_answer: In diesem Online-Shop kaufe ich oft gebrauchte Bücher.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u07l2-fill-mit-freundlichen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-adj-nullartikel
+    prompt:
+      template: "Kann ich die Jacke umtauschen? Sie ist leider zu groß. Mit {{b1}} {{b2}}, Minh (freundlich, der Gruß)"
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [freundlichen]
+        b2: [Grüßen]
+    known_wrong:
+      - answer: freundliche
+        feedback_vi: "Sau mit là Dativ; Dativ số nhiều không mạo từ: tính từ -en (freundlichen)."
+        error_tag: adj_ending
+      - answer: freundlichem
+        feedback_vi: "Grüßen là số nhiều; -em chỉ dùng cho giống đực/giống trung số ít ở Dativ."
+        error_tag: adj_ending
+      - answer: Grüße
+        feedback_vi: "Danh từ số nhiều ở Dativ thêm -n: mit … Grüßen."
+        error_tag: case_dat_akk
+      - answer: Gruß
+        feedback_vi: "Lời chào cuối thư dùng số nhiều: Mit freundlichen Grüßen."
+        error_tag: plural_form
+    explanation:
+      vi: "mit cần Dativ. Grüße ở Dativ số nhiều thành Grüßen, và vì không có mạo từ nên tính từ lấy đuôi của den: freundlichen. Đây là câu kết thư trang trọng chuẩn."
+    display_answer: "Kann ich die Jacke umtauschen? Sie ist leider zu groß. Mit freundlichen Grüßen, Minh"
+
+  - key: de:exercise:a2u07l2-fill-schwarzen-warmer
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-adj-nullartikel
+    prompt:
+      template: "Morgens trinke ich {{b1}} Kaffee mit {{b2}} Milch. (schwarz, warm)"
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [schwarzen]
+        b2: [warmer]
+    known_wrong:
+      - answer: schwarzer
+        feedback_vi: "Kaffee là tân ngữ của trinke (Akkusativ): den → schwarzen Kaffee."
+        error_tag: adj_ending
+      - answer: schwarze
+        feedback_vi: "Không có mạo từ, giống đực ở Akkusativ có đuôi -en: schwarzen Kaffee."
+        error_tag: adj_ending
+      - answer: warme
+        feedback_vi: "Sau mit là Dativ; die Milch ở Dativ là der → tính từ -er: mit warmer Milch."
+        error_tag: adj_ending
+      - answer: warmem
+        feedback_vi: "die Milch là giống cái; -em chỉ dành cho giống đực/giống trung ở Dativ."
+        error_tag: adj_ending
+    explanation:
+      vi: "der Kaffee làm tân ngữ (Akkusativ) → den → schwarzen Kaffee. die Milch sau mit (Dativ) → der → warmer Milch. Không có mạo từ nên tính từ mang chữ cái cuối của mạo từ."
+    display_answer: Morgens trinke ich schwarzen Kaffee mit warmer Milch.
+
+  - key: de:exercise:a2u07l2-tr-schuhe-umtauschen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-umtauschen
+    prompt:
+      source_text: Tôi muốn đổi đôi giày này.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte diese Schuhe umtauschen.
+        - Ich möchte gern diese Schuhe umtauschen.
+        - Ich möchte diese Schuhe gern umtauschen.
+        - Diese Schuhe möchte ich umtauschen.
+        - Ich würde diese Schuhe gern umtauschen.
+        - Ich will diese Schuhe umtauschen.
+        - Ich möchte dieses Paar Schuhe umtauschen.
+    known_wrong:
+      - answer: Ich möchte diese Schuhe tauschen um.
+        feedback_vi: "Sau möchte, động từ tách đứng nguyên dạng liền ở cuối câu: umtauschen."
+        error_tag: separable_prefix
+      - answer: Ich möchte dieser Schuhe umtauschen.
+        feedback_vi: "Schuhe là số nhiều, tân ngữ: diese Schuhe."
+        error_tag: article
+      - answer: Ich möchte umtauschen diese Schuhe.
+        feedback_vi: "Với möchte, động từ nguyên thể đứng cuối câu (khung câu)."
+        error_tag: verb_position
+    explanation:
+      vi: "\"Đôi giày\" trong tiếng Đức là số nhiều die Schuhe, nên \"này\" là diese. möchte ở vị trí 2, umtauschen (nguyên thể, không tách) ở cuối câu."
+    display_answer: Ich möchte diese Schuhe umtauschen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u07l2-wb-kostenloser-versand
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-kostenlos
+    prompt:
+      instruction: "Sắp xếp thành câu quảng cáo: \"Hôm nay miễn phí vận chuyển.\""
+      tokens:
+        - { id: t-versand, text: Versand }
+        - { id: t-es, text: es }
+        - { id: t-kostenloser, text: kostenloser }
+        - { id: t-heute, text: heute }
+        - { id: t-gibt, text: gibt }
+        - { id: t-kostenlosen, text: kostenlosen }
+    answer:
+      orders:
+        - [t-heute, t-gibt, t-es, t-kostenlosen, t-versand]
+        - [t-es, t-gibt, t-heute, t-kostenlosen, t-versand]
+        - [t-kostenlosen, t-versand, t-gibt, t-es, t-heute]
+    explanation:
+      vi: "es gibt cần Akkusativ, der Versand không có mạo từ → kostenlosen Versand (đuôi -en như den). gibt luôn ở vị trí 2; vị trí 1 có thể là heute, es hoặc cụm kostenlosen Versand (rất hay gặp trong quảng cáo)."
+    display_answer: Heute gibt es kostenlosen Versand.
+
+  - key: de:exercise:a2u07l2-tr-bewertung-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u07-qualitaet
+    prompt:
+      source_text: "Gute Qualität, aber die Lieferung war sehr langsam."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chất lượng tốt nhưng giao hàng rất chậm.
+        - Chất lượng tốt, nhưng giao hàng rất chậm.
+        - Chất lượng tốt nhưng việc giao hàng rất chậm.
+        - Chất lượng tốt nhưng giao hàng chậm quá.
+        - Chất lượng tốt nhưng hàng giao rất chậm.
+        - Hàng chất lượng tốt nhưng giao rất chậm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Gute Qualität = chất lượng tốt (tính từ không mạo từ, đuôi -e như die). aber = nhưng; die Lieferung war sehr langsam = giao hàng (đã) rất chậm."
+    display_answer: Chất lượng tốt nhưng giao hàng rất chậm.
+
+  - key: de:exercise:a2u07l2-mcq-brief-schluss
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-adj-nullartikel
+    prompt:
+      stem: "Bạn viết e-mail cho cửa hàng online để xin trả lại một cái áo. Câu kết thư nào vừa đúng ngữ pháp vừa hợp ngữ vực?"
+      stem_lang: vi
+      options:
+        - { id: m5a, text: "Mit freundlichen Grüßen", lang: de }
+        - { id: m2e, text: "Mit freundliche Grüße", lang: de }
+        - { id: m8i, text: "Mit freundlichem Grüßen", lang: de }
+        - { id: m4o, text: "Hab dich lieb", lang: de }
+    answer:
+      correct_option_id: m5a
+    explanation:
+      vi: "Thư gửi cửa hàng là thư trang trọng, kết bằng Mit freundlichen Grüßen: mit + Dativ số nhiều, không mạo từ nên tính từ -en và danh từ -n. Hai câu giữa sai đuôi; \"Hab dich lieb\" chỉ dùng với người thân."
+    display_answer: Mit freundlichen Grüßen

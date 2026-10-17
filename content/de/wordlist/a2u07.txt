@@ -1,0 +1,16 @@
+# A2U07 Feste, Medien und Konsum: correct words the German lint dictionary does not know.
+# Tết: Vietnamese lunar New Year, used as a name in German text (das vietnamesische Neujahrsfest)
+Tết
+Dokumentarfilm
+Dokumentarfilme
+Tablet
+Tablets
+# posten (social media: post), regular verb
+posten
+poste
+postest
+postet
+gepostet
+# possessive pronoun standing alone (das Handy → seins)
+seins
+deins

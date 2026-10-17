@@ -1,0 +1,335 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u07-medien
+order_index: 3
+level: a2
+title:
+  vi: Báo, TV, quảng cáo – was für ein, es geht um (Was für eine Sendung ist das?)
+objectives:
+  - vi: Nói mình thường xem gì, đọc gì (Zeitung, Serien, Talkshows, Internet).
+  - vi: Hỏi về loại chương trình, loại phim bằng Was für ein …?
+  - vi: Tóm tắt nội dung một bài báo, bộ phim bằng một câu với es geht um + Akkusativ.
+estimated_minutes: 17
+skills: [grammar, vocabulary, listening]
+prerequisites: [de:lesson:a2u07-online-einkaufen]
+items:
+  - item: de:item:a2u07-g-was-fuer-ein
+  - item: de:item:a2u07-g-es-geht-um
+  - item: de:item:a2u07-zeitung
+  - item: de:item:a2u07-zeitschrift
+  - item: de:item:a2u07-artikel
+  - item: de:item:a2u07-fernsehen
+  - item: de:item:a2u07-sendung
+  - item: de:item:a2u07-serie
+  - item: de:item:a2u07-werbung
+  - item: de:item:a2u07-internet
+  - item: de:item:a2u07-app
+  - item: de:item:a2u07-berichten
+  - item: de:item:a2u07-krimi
+  - item: de:item:a2u07-komoedie
+  - item: de:item:a2u07-programm
+  - item: de:item:a2u07-zuschauer
+  - item: de:item:a2u07-talkshow
+  - item: de:item:a2u07-dokumentarfilm
+  - item: de:item:a1u06-film
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: 'Sau bài này, bạn hỏi được "Was für einen Film siehst du gern?" (bạn thích xem loại phim gì?) và kể ngắn gọn nội dung, ví dụ "In dem Film geht es um eine Familie in Berlin."'
+  - type: explain
+    text:
+      vi: "Was für ein …? hỏi về loại, kiểu: Was für ein Film ist das? – Ein Krimi. welcher hỏi chọn cái nào trong mấy cái đã biết: Welcher Film läuft heute? – Der Krimi um acht. Tiếng Việt nói \"phim gì, loại phim nào\" cho cả hai, nên bạn hãy tự hỏi: mình muốn biết loại hay muốn chọn một cái cụ thể?"
+  - type: explain
+    text:
+      vi: "Trong was für ein, chữ für không quyết định cách. ein biến cách theo vai trò của danh từ trong câu: Was für ein Film ist das? (Film là chủ ngữ – Nominativ), Was für einen Film siehst du? (Film là tân ngữ – Akkusativ). Câu trả lời dùng cùng dạng: – Einen Krimi."
+  - type: explain
+    text:
+      vi: "Danh từ số nhiều và danh từ không đếm được thì bỏ ein: Was für Filme siehst du gern? Was für Musik hörst du? Đừng bỏ ein ở danh từ số ít đếm được: Was für ein Film?, không nói Was für Film?"
+  - type: explain
+    text:
+      vi: "Tóm nội dung: (In dem Artikel / In der Serie / Im Film) geht es um + Akkusativ = (bài báo, phim) nói về …. Chủ ngữ luôn là es nên động từ luôn là geht, và trong cấu trúc này chỉ dùng um, không dùng über."
+  - type: deep_explain
+    text:
+      vi: "Câu hỏi \"Worum geht es?\" (Nói về cái gì vậy?) rất hay gặp; worum = wo + um, bạn tạm học như một cụm cố định, quy tắc wo- + giới từ sẽ học ở B1. Sau danh từ thì dùng über bình thường: ein Artikel über das Internet, ein Film über Vietnam; động từ berichten cũng đi với über: Die Zeitung berichtet über das Fest. Trong văn nói, người Đức đôi khi tách was … für: Was siehst du gern für Filme? – nghĩa không đổi. Trên tivi Đức có nhiều kênh công cộng và tư nhân; kênh nào, giờ nào phát gì thì có thể thay đổi, hãy xem lịch phát sóng (das Programm)."
+  - type: example
+    target: "Was für eine Sendung ist das? – Eine Talkshow. Heute sprechen vier Gäste über das Internet."
+    target_lang: de
+    translation:
+      vi: "Đây là chương trình gì vậy? – Một chương trình trò chuyện. Hôm nay bốn khách mời nói về Internet."
+    note:
+      vi: "die Sendung là chủ ngữ của ist → Nominativ: was für eine Sendung."
+  - type: example
+    target: "Was für einen Film möchtest du heute Abend sehen? – Einen Krimi oder eine Komödie."
+    target_lang: de
+    translation:
+      vi: "Tối nay bạn muốn xem phim loại gì? – Phim trinh thám hoặc phim hài."
+    note:
+      vi: "Film là tân ngữ của sehen → Akkusativ: einen Film, einen Krimi, eine Komödie. Hai người bạn dùng du."
+  - type: example
+    target: "Welche Zeitung liest du? – Ich lese keine Zeitung. Ich lese die Nachrichten mit einer App."
+    target_lang: de
+    translation:
+      vi: "Bạn đọc báo nào? – Mình không đọc báo giấy. Mình đọc tin tức bằng một ứng dụng."
+    note:
+      vi: "welche Zeitung: hỏi tờ báo cụ thể nào (không phải loại báo)."
+  - type: example
+    target: "In dem Artikel geht es um Werbung für Kinder."
+    target_lang: de
+    translation:
+      vi: "Bài báo nói về quảng cáo dành cho trẻ em."
+    note:
+      vi: "geht es um + Akkusativ; Werbung không đếm được nên không có mạo từ."
+  - type: example
+    target: "Worum geht es in der Serie? – Es geht um eine Familie in Berlin und ihre Probleme."
+    target_lang: de
+    translation:
+      vi: "Phim bộ đó nói về gì vậy? – Nó kể về một gia đình ở Berlin và những rắc rối của họ."
+    note:
+      vi: "Worum geht es? là câu hỏi cố định. eine Familie ở Akkusativ (giống cái không đổi)."
+  - type: common_mistake
+    wrong: Was für Film siehst du gern?
+    right: Was für einen Film siehst du gern?
+    target_lang: de
+    note:
+      vi: "Danh từ số ít đếm được cần ein; Film là tân ngữ nên einen. Hoặc dùng số nhiều: Was für Filme siehst du gern?"
+  - type: common_mistake
+    wrong: In dem Film geht es über einen Koch.
+    right: In dem Film geht es um einen Koch.
+    target_lang: de
+    note:
+      vi: "Cấu trúc es geht … luôn đi với um + Akkusativ."
+  - type: common_mistake
+    wrong: Was für ein Film möchtest du sehen?
+    right: Was für einen Film möchtest du sehen?
+    target_lang: de
+    note:
+      vi: "Film là tân ngữ của sehen (Akkusativ) nên einen; für không quyết định cách ở đây."
+  - type: summary
+    points:
+      - vi: "Was für ein …? = loại gì; welcher …? = cái nào (trong nhóm đã biết)."
+      - vi: "ein theo vai trò trong câu: Was für ein Film ist das? / Was für einen Film siehst du?"
+      - vi: "Số nhiều, không đếm được: Was für Filme? Was für Musik?"
+      - vi: "In dem Artikel geht es um + Akkusativ; không dùng über sau geht es."
+      - vi: "die Zeitung, die Zeitschrift, das Fernsehen, die Sendung, die Serie, die Werbung, im Internet, die App."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u07l3-mcq-was-fuer-ein
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u07-g-was-fuer-ein
+    prompt:
+      stem: "Chọn dạng đúng: ___ Film ist das? – Ein Krimi. (der Film)"
+      stem_lang: vi
+      options:
+        - { id: w1a, text: Was für ein, lang: de }
+        - { id: w6b, text: Was für einen, lang: de }
+        - { id: w3c, text: Was für eine, lang: de }
+        - { id: w8d, text: Was für, lang: de }
+    answer:
+      correct_option_id: w1a
+    explanation:
+      vi: "Câu trả lời là một loại phim nên hỏi bằng was für ein. Film là chủ ngữ của ist (Nominativ), giống đực → ein (für không làm đổi cách). Was für không có ein chỉ dùng với số nhiều hoặc danh từ không đếm được."
+    display_answer: Was für ein
+
+  - key: de:exercise:a2u07l3-listen-artikel-handys
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u07-g-es-geht-um
+    prompt:
+      audio_asset_id: null
+      fallback_text: In dem Artikel geht es um Handys in der Schule.
+      options:
+        - { id: l2k, text: "Bài báo nói về điện thoại di động trong trường học.", lang: vi }
+        - { id: l5m, text: "Bài báo nói về một trường học mới.", lang: vi }
+        - { id: l8p, text: "Trong trường học không được dùng điện thoại.", lang: vi }
+        - { id: l3r, text: "Bài báo được viết trên điện thoại.", lang: vi }
+    answer:
+      correct_option_id: l2k
+    explanation:
+      vi: "In dem Artikel geht es um … = bài báo nói về …; chủ đề là Handys in der Schule (điện thoại di động trong trường học). Câu không nói gì về việc cấm dùng."
+    display_answer: "Bài báo nói về điện thoại di động trong trường học."
+
+  - key: de:exercise:a2u07l3-mcq-geht-es-um
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-es-geht-um
+    prompt:
+      stem: "Chọn từ đúng: In der Sendung geht es ___ das Internet."
+      stem_lang: vi
+      options:
+        - { id: u4a, text: um, lang: de }
+        - { id: u7b, text: über, lang: de }
+        - { id: u2c, text: von, lang: de }
+        - { id: u9d, text: für, lang: de }
+    answer:
+      correct_option_id: u4a
+    explanation:
+      vi: "Cấu trúc cố định là es geht um + Akkusativ (das Internet). über chỉ dùng sau danh từ (eine Sendung über das Internet), không dùng sau geht es; von và für không đi với cấu trúc này."
+    display_answer: um
+
+  - key: de:exercise:a2u07l3-listen-talkshow
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-talkshow
+    prompt:
+      audio_asset_id: null
+      fallback_text: Was für eine Sendung ist das? – Eine Talkshow. Sie läuft jeden Donnerstag um zehn Uhr abends.
+      options:
+        - { id: t3e, text: "Đó là một chương trình trò chuyện, phát lúc 10 giờ tối thứ Năm hằng tuần.", lang: vi }
+        - { id: t6f, text: "Đó là một phim bộ, phát lúc 10 giờ tối thứ Năm hằng tuần.", lang: vi }
+        - { id: t1g, text: "Đó là một chương trình trò chuyện, phát lúc 10 giờ sáng thứ Ba.", lang: vi }
+        - { id: t8h, text: "Đó là một chương trình trò chuyện, chỉ phát một lần.", lang: vi }
+    answer:
+      correct_option_id: t3e
+    explanation:
+      vi: "Eine Talkshow = chương trình trò chuyện; jeden Donnerstag = mỗi thứ Năm (Dienstag mới là thứ Ba); um zehn Uhr abends = 10 giờ tối."
+    display_answer: "Đó là một chương trình trò chuyện, phát lúc 10 giờ tối thứ Năm hằng tuần."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u07l3-fill-einen-eine
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-was-fuer-ein
+    prompt:
+      template: "Was für {{b1}} Film möchtest du sehen? – {{b2}} Komödie."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [einen]
+        b2: [Eine]
+    known_wrong:
+      - answer: ein
+        feedback_vi: "Film là tân ngữ của sehen (Akkusativ), giống đực → einen; die Komödie → eine."
+        error_tag: case_dat_akk
+      - answer: einem
+        feedback_vi: "für ở đây không quyết định cách; Film là tân ngữ → Akkusativ einen."
+        error_tag: case_dat_akk
+      - answer: einer
+        feedback_vi: "die Komödie trả lời cho câu hỏi Akkusativ: eine Komödie."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Trong was für ein, ein biến cách theo vai trò của danh từ: Film là tân ngữ của sehen → einen Film. Câu trả lời giữ cùng vai trò: die Komödie ở Akkusativ → eine Komödie."
+    display_answer: "Was für einen Film möchtest du sehen? – Eine Komödie."
+
+  - key: de:exercise:a2u07l3-fill-geht-um
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-es-geht-um
+    prompt:
+      template: "In dem Artikel {{b1}} es {{b2}} einen neuen Online-Shop."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [geht]
+        b2: [um]
+    known_wrong:
+      - answer: über
+        feedback_vi: "Sau geht es chỉ dùng um: es geht um einen neuen Online-Shop."
+        error_tag: preposition
+      - answer: von
+        feedback_vi: "Cấu trúc cố định là es geht um + Akkusativ, không dùng von."
+        error_tag: preposition
+    explanation:
+      vi: "Tóm nội dung bằng es geht um + Akkusativ. In dem Artikel đứng ở vị trí 1 nên động từ geht ở vị trí 2, es đứng ngay sau; einen neuen Online-Shop là Akkusativ sau um."
+    display_answer: In dem Artikel geht es um einen neuen Online-Shop.
+
+  - key: de:exercise:a2u07l3-tr-familie-berlin
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-es-geht-um
+    prompt:
+      source_text: Bộ phim nói về một gia đình ở Berlin.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In dem Film geht es um eine Familie in Berlin.
+        - Im Film geht es um eine Familie in Berlin.
+        - Es geht in dem Film um eine Familie in Berlin.
+        - Es geht im Film um eine Familie in Berlin.
+        - Der Film handelt von einer Familie in Berlin.
+    known_wrong:
+      - answer: In dem Film geht es über eine Familie in Berlin.
+        feedback_vi: "Sau geht es chỉ dùng um."
+        error_tag: preposition
+      - answer: In dem Film es geht um eine Familie in Berlin.
+        feedback_vi: "In dem Film ở vị trí 1, nên động từ geht phải đứng ngay sau: In dem Film geht es …"
+        error_tag: verb_position
+      - answer: In dem Film geht es um einer Familie in Berlin.
+        feedback_vi: "um đi với Akkusativ: eine Familie."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "\"Nói về\" khi tóm nội dung = es geht um + Akkusativ: In dem Film (Im Film) geht es um eine Familie. Động từ geht ở vị trí 2, nên nếu In dem Film đứng đầu thì es đứng sau geht."
+    display_answer: In dem Film geht es um eine Familie in Berlin.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u07l3-wb-was-fuer-filme
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-was-fuer-ein
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi (nói với bạn): \"Bạn thích xem những loại phim gì?\""
+      tokens:
+        - { id: t-gern, text: gern }
+        - { id: t-filme, text: Filme }
+        - { id: t-ein, text: ein }
+        - { id: t-siehst, text: siehst }
+        - { id: t-was, text: Was }
+        - { id: t-welche, text: welche }
+        - { id: t-du, text: du }
+        - { id: t-fuer, text: für }
+    answer:
+      orders:
+        - [t-was, t-fuer, t-filme, t-siehst, t-du, t-gern]
+        - [t-was, t-siehst, t-du, t-gern, t-fuer, t-filme]
+    explanation:
+      vi: "Hỏi về loại phim (số nhiều) nên dùng was für và bỏ ein: Was für Filme. Động từ siehst (du, sehen đổi nguyên âm) ở vị trí 2, gern đứng sau du. Trong văn nói cũng hay tách: Was siehst du gern für Filme?"
+    display_answer: Was für Filme siehst du gern?
+
+  - key: de:exercise:a2u07l3-tr-werbung-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u07-werbung
+    prompt:
+      source_text: "In der Werbung geht es nicht um das Produkt, sondern um ein schönes Leben."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Quảng cáo không nói về sản phẩm mà nói về một cuộc sống đẹp.
+        - Quảng cáo không nói về sản phẩm mà về một cuộc sống đẹp.
+        - Mẩu quảng cáo không nói về sản phẩm mà nói về một cuộc sống đẹp.
+        - Trong quảng cáo, nội dung không phải về sản phẩm mà về một cuộc sống đẹp.
+        - Quảng cáo không nói về sản phẩm mà nói về cuộc sống tươi đẹp.
+        - Quảng cáo không nói về sản phẩm mà về cuộc sống đẹp.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "In der Werbung geht es um … = quảng cáo nói về …; nicht …, sondern … = không phải … mà là …. Thông tin đúng nằm sau sondern: um ein schönes Leben (một cuộc sống đẹp)."
+    display_answer: Quảng cáo không nói về sản phẩm mà nói về một cuộc sống đẹp.

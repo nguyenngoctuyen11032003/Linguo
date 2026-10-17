@@ -1,0 +1,349 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u07-feste
+order_index: 1
+level: a2
+title:
+  vi: Bạn thích lễ nào? – dieser, jeder, sondern (Welches Fest feiert ihr?)
+objectives:
+  - vi: Kể về Tết và các lễ của Đức (Weihnachten, Ostern, Silvester), nói mình ăn mừng ở đâu, với ai.
+  - vi: Chúc mừng đúng dịp và đúng ngữ vực (du/Sie).
+  - vi: So sánh phong tục và sửa thông tin sai bằng nicht …, sondern ….
+  - vi: Dùng dieser, jeder, welcher, alle với đuôi đúng.
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u06-wiederholung]
+items:
+  - item: de:item:a2u07-g-dieser-jeder
+  - item: de:item:a2u07-g-sondern
+  - item: de:item:a2u07-fest
+  - item: de:item:a2u07-feiern
+  - item: de:item:a2u07-weihnachten
+  - item: de:item:a2u07-ostern
+  - item: de:item:a2u07-silvester
+  - item: de:item:a2u07-neujahr
+  - item: de:item:a2u07-geschenk
+  - item: de:item:a2u07-kerze
+  - item: de:item:a2u07-gast
+  - item: de:item:a2u07-hochzeit
+  - item: de:item:a2u07-heiligabend
+  - item: de:item:a2u07-weihnachtsbaum
+  - item: de:item:a2u07-feier
+  - item: de:item:a2u07-wuenschen
+  - item: de:item:a2u07-anstossen
+  - item: de:item:a1u07-g-welcher
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được về Tết và các lễ lớn ở Đức, chúc mừng đúng dịp, và nói được những câu như "Chúng tôi không ăn Tết vào tháng Mười hai mà vào tháng Một hoặc tháng Hai".
+  - type: explain
+    text:
+      vi: "dieser (này), jeder (mỗi) và welcher (nào – bạn đã học ở A1) có đuôi giống hệt mạo từ xác định: der Baum → dieser Baum, die Kerze → diese Kerze, das Fest → dieses Fest. Ở Akkusativ chỉ giống đực đổi thành -en (diesen Baum, jeden Tag). Tiếng Việt đặt \"này\" sau danh từ (lễ này), còn tiếng Đức đặt dieser trước danh từ."
+  - type: explain
+    text:
+      vi: "jeder chỉ đi với số ít: jeder Gast, jedes Jahr. Muốn nói \"tất cả\" ở số nhiều thì dùng alle: alle Gäste. Tính từ đứng sau dieser, jeder, welcher, alle có đuôi như sau der/die/das: dieser große Baum, alle neuen Kerzen."
+  - type: explain
+    text:
+      vi: "sondern = \"mà là\": sau một phủ định (nicht, kein), nó đưa ra thông tin đúng thay vào chỗ sai – Wir feiern nicht am 24., sondern am 25. Dezember. aber (nhưng) chỉ thêm một ý ngược chiều, không sửa vế trước – Das Geschenk ist nicht teuer, aber schön. Cả hai đứng ở vị trí 0 (không đẩy động từ) và có dấu phẩy đứng trước."
+  - type: explain
+    text:
+      vi: "Tên lễ Weihnachten, Ostern, Silvester, Neujahr thường dùng không có mạo từ; \"vào dịp\" nói là an hoặc zu: an Weihnachten, zu Ostern, an Silvester. Riêng Heiligabend thường có am: am Heiligabend. Tết bạn có thể nói đơn giản là Tết hoặc das vietnamesische Neujahrsfest."
+  - type: deep_explain
+    text:
+      vi: "Ở Đức nhiều gia đình trang trí cây thông (der Weihnachtsbaum), thắp nến và tặng quà ngay tối 24/12 (Heiligabend), sau đó ngày 25 và 26 là thời gian sum họp gia đình. Silvester (31/12) người ta thường đi tiệc với bạn bè, đúng nửa đêm cụng ly (anstoßen); trước nửa đêm chúc \"Guten Rutsch!\" (chúc \"trượt\" suôn sẻ sang năm mới), sau nửa đêm chúc \"Frohes neues Jahr!\". Những lời chúc như Frohe Weihnachten!, Frohe Ostern! là cụm cố định – tính từ ở đây không có mạo từ, bạn sẽ học quy tắc đuôi này ở bài sau. Phong tục khác nhau theo vùng và theo từng gia đình."
+  - type: example
+    target: "Welches Fest feiert ihr in Vietnam am liebsten? – Tết natürlich! Dieses Fest feiern wir jedes Jahr im Januar oder Februar."
+    target_lang: de
+    translation:
+      vi: "Ở Việt Nam các bạn thích ăn lễ nào nhất? – Tết chứ! Năm nào chúng mình cũng ăn lễ này vào tháng Một hoặc tháng Hai."
+    note:
+      vi: "Hỏi một nhóm bạn nên dùng ihr. das Fest → welches Fest, dieses Fest; jedes Jahr là Akkusativ chỉ thời gian. Ngày Tết theo âm lịch nên mỗi năm một khác."
+  - type: example
+    target: "Feiert ihr Weihnachten am 25. Dezember? – Nein, nicht am 25., sondern schon am 24. Dezember, am Heiligabend."
+    target_lang: de
+    translation:
+      vi: "Các bạn ăn mừng Giáng sinh vào ngày 25 tháng Mười hai à? – Không, không phải ngày 25 mà ngay từ ngày 24, tối Giáng sinh."
+    note:
+      vi: "sondern sửa lại thông tin sai (ngày 25 → ngày 24). Bạn bè nói với nhau bằng du/ihr."
+  - type: example
+    target: "Alle Gäste bringen ein Geschenk mit. Jeder Gast bekommt am Ende eine Kerze."
+    target_lang: de
+    translation:
+      vi: "Tất cả khách đều mang quà đến. Cuối buổi, mỗi người khách được nhận một cây nến."
+    note:
+      vi: "alle + số nhiều (Gäste), jeder + số ít (Gast). mitbringen = mang theo đến."
+  - type: example
+    target: "Ich schenke meiner Oma diese Kerze. – Die ist schön! Welche Kerze schenkst du deinem Opa?"
+    target_lang: de
+    translation:
+      vi: "Mình tặng bà cây nến này. – Đẹp đấy! Còn ông thì bạn tặng cây nến nào?"
+    note:
+      vi: "schenken: người nhận ở Dativ (meiner Oma), món quà ở Akkusativ (diese Kerze). Hai người bạn nói với nhau bằng du."
+  - type: example
+    target: "Frau Weber, ich wünsche Ihnen frohe Weihnachten! – Danke, das wünsche ich Ihnen auch!"
+    target_lang: de
+    translation:
+      vi: "Bà Weber, chúc bà Giáng sinh vui vẻ! – Cảm ơn, tôi cũng chúc anh/chị như vậy!"
+    note:
+      vi: "Với hàng xóm hoặc đồng nghiệp chưa thân dùng Sie/Ihnen. frohe Weihnachten là cụm cố định."
+  - type: common_mistake
+    wrong: Wir feiern nicht am 24., aber am 25. Dezember.
+    right: Wir feiern nicht am 24., sondern am 25. Dezember.
+    target_lang: de
+    note:
+      vi: "Vế sau sửa lại vế trước (không phải ngày 24 mà là ngày 25) nên phải dùng sondern, không dùng aber."
+  - type: common_mistake
+    wrong: Diese Fest ist sehr schön.
+    right: Dieses Fest ist sehr schön.
+    target_lang: de
+    note:
+      vi: "das Fest là giống trung nên dieses (đuôi -es như das)."
+  - type: common_mistake
+    wrong: Jede Gäste bekommt eine Kerze.
+    right: Jeder Gast bekommt eine Kerze.
+    target_lang: de
+    note:
+      vi: "jeder chỉ đi với số ít (jeder Gast). Muốn nói số nhiều thì dùng alle: Alle Gäste bekommen eine Kerze."
+  - type: summary
+    points:
+      - vi: "dieser / diese / dieses, jeder / jede / jedes: đuôi như der / die / das; Akk giống đực -en."
+      - vi: "jeder + số ít; alle + số nhiều."
+      - vi: "Tính từ sau dieser/jeder/welcher/alle: đuôi như sau der/die/das (dieser große Baum)."
+      - vi: "nicht/kein …, sondern … = không phải … mà là …; aber chỉ thêm ý ngược chiều."
+      - vi: "an/zu Weihnachten, zu Ostern, an Silvester, am Heiligabend."
+      - vi: "Chúc: Frohe Weihnachten! Frohe Ostern! Guten Rutsch! Frohes neues Jahr!"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u07l1-mcq-dieses-fest
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u07-g-dieser-jeder
+    prompt:
+      stem: "Chọn từ đúng: ___ Fest feiern wir jedes Jahr. (das Fest)"
+      stem_lang: vi
+      options:
+        - { id: k3d, text: Dieser, lang: de }
+        - { id: p8m, text: Diese, lang: de }
+        - { id: w2q, text: Dieses, lang: de }
+        - { id: h6z, text: Diesen, lang: de }
+    answer:
+      correct_option_id: w2q
+    explanation:
+      vi: "das Fest là giống trung, nên dies- lấy đuôi -es như das: Dieses Fest. Ở đây Fest là tân ngữ (Akkusativ) nhưng giống trung ở Akkusativ không đổi. Dieser dùng cho giống đực, diese cho giống cái và số nhiều, diesen cho giống đực ở Akkusativ."
+    display_answer: Dieses
+
+  - key: de:exercise:a2u07l1-listen-nicht-sondern
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u07-g-sondern
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wir feiern Weihnachten nicht am fünfundzwanzigsten, sondern am vierundzwanzigsten Dezember.
+      options:
+        - { id: r5t, text: "Chúng tôi ăn mừng Giáng sinh vào ngày 24, không phải ngày 25 tháng Mười hai.", lang: vi }
+        - { id: c9n, text: "Chúng tôi ăn mừng Giáng sinh vào ngày 25, không phải ngày 24 tháng Mười hai.", lang: vi }
+        - { id: m1v, text: "Chúng tôi ăn mừng Giáng sinh cả ngày 24 lẫn ngày 25 tháng Mười hai.", lang: vi }
+        - { id: e4j, text: "Chúng tôi không ăn mừng Giáng sinh.", lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: "nicht am fünfundzwanzigsten = không phải ngày 25; sondern am vierundzwanzigsten = mà là ngày 24. Thông tin đúng luôn nằm sau sondern."
+    display_answer: "Chúng tôi ăn mừng Giáng sinh vào ngày 24, không phải ngày 25 tháng Mười hai."
+
+  - key: de:exercise:a2u07l1-mcq-sondern-aber
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-sondern
+    prompt:
+      stem: "Chọn từ đúng: Wir feiern Tết nicht im Dezember, ___ im Januar oder Februar."
+      stem_lang: vi
+      options:
+        - { id: s7b, text: sondern, lang: de }
+        - { id: a2f, text: aber, lang: de }
+        - { id: o5x, text: oder, lang: de }
+        - { id: d8u, text: denn, lang: de }
+    answer:
+      correct_option_id: s7b
+    explanation:
+      vi: "Vế sau sửa lại thông tin sai ở vế trước (không phải tháng Mười hai mà là tháng Một hoặc Hai), nên dùng sondern. aber chỉ thêm ý ngược chiều, không thay thế; oder (hoặc) và denn (vì) không hợp nghĩa."
+    display_answer: sondern
+
+  - key: de:exercise:a2u07l1-fill-jeder-gast
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-dieser-jeder
+    prompt:
+      template: "Auf unserer Hochzeit bekommt {{b1}} Gast eine kleine Kerze."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Ở đám cưới của chúng tôi, mỗi người khách nhận một cây nến nhỏ."
+        - "Gợi ý: dùng jed- (mỗi); der Gast là giống đực, ở đây là chủ ngữ (Nominativ)."
+    answer:
+      blanks:
+        b1: [jeder]
+    known_wrong:
+      - answer: jede
+        feedback_vi: "der Gast là giống đực: jeder Gast (đuôi -er như der)."
+        error_tag: article
+      - answer: jedes
+        feedback_vi: "der Gast là giống đực, không phải giống trung: jeder Gast."
+        error_tag: article
+      - answer: jeden
+        feedback_vi: "Gast là chủ ngữ của bekommt (Nominativ), nên jeder, không phải jeden."
+        error_tag: case_dat_akk
+      - answer: alle
+        feedback_vi: "alle đi với số nhiều (alle Gäste); với Gast số ít dùng jeder."
+        error_tag: plural_form
+    explanation:
+      vi: "jeder có đuôi như mạo từ xác định: der Gast → jeder Gast. Gast là chủ ngữ (ai nhận nến?) nên ở Nominativ; câu bắt đầu bằng Auf unserer Hochzeit nên động từ bekommt đứng ngay sau."
+    display_answer: Auf unserer Hochzeit bekommt jeder Gast eine kleine Kerze.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u07l1-fill-diesen-grossen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-dieser-jeder
+    prompt:
+      template: "Welchen Weihnachtsbaum nimmst du? – Ich nehme {{b1}} {{b2}} Baum hier. (dieser, groß)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [diesen]
+        b2: [großen]
+    known_wrong:
+      - answer: dieser
+        feedback_vi: "Baum là tân ngữ của nehme (Akkusativ): der → den, dieser → diesen."
+        error_tag: case_dat_akk
+      - answer: dieses
+        feedback_vi: "der Baum là giống đực; ở Akkusativ là diesen."
+        error_tag: article
+      - answer: großer
+        feedback_vi: "Sau diesen, tính từ có đuôi như sau den: diesen großen Baum."
+        error_tag: adj_ending
+      - answer: große
+        feedback_vi: "Giống đực ở Akkusativ sau diesen: tính từ có đuôi -en (großen)."
+        error_tag: adj_ending
+    explanation:
+      vi: "nehmen cần Akkusativ; der Baum ở Akkusativ là den Baum, nên dieser → diesen. Tính từ đứng sau diesen có đuôi giống như sau den: diesen großen Baum (bảng đuôi sau der/die/das)."
+    display_answer: "Welchen Weihnachtsbaum nimmst du? – Ich nehme diesen großen Baum hier."
+
+  - key: de:exercise:a2u07l1-tr-jedes-jahr-tet
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-feiern
+    prompt:
+      source_text: Năm nào chúng tôi cũng ăn Tết ở Hà Nội.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Jedes Jahr feiern wir Tết in Hanoi.
+        - Wir feiern jedes Jahr Tết in Hanoi.
+        - Wir feiern Tết jedes Jahr in Hanoi.
+        - Tết feiern wir jedes Jahr in Hanoi.
+        - In Hanoi feiern wir jedes Jahr Tết.
+        - Wir feiern jedes Jahr in Hanoi Tết.
+    known_wrong:
+      - answer: Jedes Jahr wir feiern Tết in Hanoi.
+        feedback_vi: "Khi Jedes Jahr đứng đầu câu, động từ feiern phải đứng ngay sau (vị trí 2): Jedes Jahr feiern wir …"
+        error_tag: verb_position
+      - answer: Wir feiern jede Jahr Tết in Hanoi.
+        feedback_vi: "das Jahr là giống trung: jedes Jahr."
+        error_tag: article
+      - answer: Wir feiern jeden Jahr Tết in Hanoi.
+        feedback_vi: "das Jahr là giống trung; ở Akkusativ vẫn là jedes Jahr (chỉ giống đực mới đổi thành jeden)."
+        error_tag: article
+    explanation:
+      vi: "\"Năm nào cũng\" = jedes Jahr (Akkusativ chỉ thời gian, das Jahr → jedes). \"Ăn Tết\" = Tết feiern. Động từ feiern luôn ở vị trí 2, nên nếu câu mở đầu bằng Jedes Jahr thì wir đứng sau feiern."
+    display_answer: Jedes Jahr feiern wir Tết in Hanoi.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u07l1-wb-kein-sondern
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-sondern
+    prompt:
+      instruction: "Sắp xếp thành câu có sondern: \"Đây không phải quà sinh nhật mà là quà cưới.\""
+      tokens:
+        - { id: t-sondern, text: sondern }
+        - { id: t-hochzeitsgeschenk, text: Hochzeitsgeschenk }
+        - { id: t-ist, text: ist }
+        - { id: t-aber, text: aber }
+        - { id: t-kein, text: kein }
+        - { id: t-ein, text: ein }
+        - { id: t-das, text: Das }
+        - { id: t-geburtstagsgeschenk, text: Geburtstagsgeschenk }
+        - { id: t-keine, text: keine }
+    answer:
+      orders:
+        - [t-das, t-ist, t-kein, t-geburtstagsgeschenk, t-sondern, t-ein, t-hochzeitsgeschenk]
+    explanation:
+      vi: "Phủ định danh từ có ein thì dùng kein (das Geschenk → kein Geschenk, không phải keine). Vế sau sửa lại vế trước nên nối bằng sondern, và vế sau giữ mạo từ ein: sondern ein Hochzeitsgeschenk. aber không dùng được vì nó không thay thế thông tin sai."
+    display_answer: Das ist kein Geburtstagsgeschenk, sondern ein Hochzeitsgeschenk.
+
+  - key: de:exercise:a2u07l1-wb-schenke-oma-kerze
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-dieser-jeder
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mình tặng bà cây nến này.\""
+      tokens:
+        - { id: t-kerze, text: Kerze }
+        - { id: t-meiner, text: meiner }
+        - { id: t-ich, text: ich }
+        - { id: t-dieser, text: dieser }
+        - { id: t-schenke, text: schenke }
+        - { id: t-diese, text: diese }
+        - { id: t-oma, text: Oma }
+        - { id: t-meine, text: meine }
+    answer:
+      orders:
+        - [t-ich, t-schenke, t-meiner, t-oma, t-diese, t-kerze]
+        - [t-diese, t-kerze, t-schenke, t-ich, t-meiner, t-oma]
+        - [t-meiner, t-oma, t-schenke, t-ich, t-diese, t-kerze]
+    explanation:
+      vi: "schenken: người nhận ở Dativ (meiner Oma), món quà ở Akkusativ (diese Kerze – giống cái ở Akkusativ không đổi). Hai danh từ đứng sau động từ thì Dativ trước Akkusativ. schenke luôn ở vị trí 2, vị trí 1 có thể là ich, diese Kerze hoặc meiner Oma."
+    display_answer: Ich schenke meiner Oma diese Kerze.
+
+  - key: de:exercise:a2u07l1-mcq-guten-rutsch
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-wuenschen
+    prompt:
+      stem: "Chiều 31/12 bạn gặp ông hàng xóm lớn tuổi (bạn vẫn xưng Sie với ông). Bạn chúc câu nào?"
+      stem_lang: vi
+      options:
+        - { id: g4r, text: "Ich wünsche Ihnen einen guten Rutsch!", lang: de }
+        - { id: n7k, text: "Ich wünsche dir einen guten Rutsch!", lang: de }
+        - { id: v2c, text: "Ich wünsche Ihnen frohe Ostern!", lang: de }
+        - { id: b9w, text: "Herzlichen Glückwunsch zur Hochzeit!", lang: de }
+    answer:
+      correct_option_id: g4r
+    explanation:
+      vi: "Trước nửa đêm Silvester người Đức chúc \"einen guten Rutsch\" (sang năm mới suôn sẻ). Với người xưng Sie thì người nhận ở Dativ là Ihnen, không phải dir. Frohe Ostern là lời chúc lễ Phục sinh, còn câu cuối chúc mừng đám cưới."
+    display_answer: "Ich wünsche Ihnen einen guten Rutsch!"

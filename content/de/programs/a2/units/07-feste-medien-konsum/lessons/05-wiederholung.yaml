@@ -1,0 +1,408 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u07-wiederholung
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập – thư mời, đánh giá, bài đăng diễn đàn (Wiederholung)
+objectives:
+  - vi: Đọc hiểu lời mời, lời đánh giá sản phẩm và bài đăng ngắn trên diễn đàn.
+  - vi: Viết thư mời dự tiệc khoảng 50 từ (thời gian, địa điểm, mang gì).
+  - vi: Nghe hiểu quảng cáo trên radio và tin nhắn thoại ngắn.
+  - vi: Ôn dieser/jeder, sondern, tính từ không mạo từ, was für ein, es geht um, Annas …, einer/keiner.
+estimated_minutes: 22
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:a2u07-annas-blog]
+items:
+  - item: de:item:a2u07-g-dieser-jeder
+    role: reuse
+  - item: de:item:a2u07-g-sondern
+    role: reuse
+  - item: de:item:a2u07-g-adj-nullartikel
+    role: reuse
+  - item: de:item:a2u07-g-was-fuer-ein
+    role: reuse
+  - item: de:item:a2u07-g-es-geht-um
+    role: reuse
+  - item: de:item:a2u07-g-genitiv-namen
+    role: reuse
+  - item: de:item:a2u07-g-indefinitpronomen-einer
+    role: reuse
+  - item: de:item:a1u08-g-anrede-gruss
+    role: reuse
+  - item: de:item:a1u08-einladung
+    role: reuse
+  - item: de:item:a2u07-feiern
+    role: reuse
+  - item: de:item:a2u07-gast
+    role: reuse
+  - item: de:item:a2u07-geschenk
+    role: reuse
+  - item: de:item:a2u07-silvester
+    role: reuse
+  - item: de:item:a2u07-kerze
+    role: reuse
+  - item: de:item:a2u07-qualitaet
+    role: reuse
+  - item: de:item:a2u07-zurueckschicken
+    role: reuse
+  - item: de:item:a2u07-rabatt
+    role: reuse
+  - item: de:item:a2u07-serie
+    role: reuse
+  - item: de:item:a2u07-artikel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn cả unit qua những văn bản rất hay gặp trong đời sống và trong đề Goethe A2 – thư mời dự tiệc, lời đánh giá sản phẩm, bài đăng diễn đàn, quảng cáo trên radio – và bạn tự viết một thư mời ngắn.
+  - type: explain
+    text:
+      vi: "Thư mời thân mật (khoảng 50 từ) cần đủ bốn ý: dịp gì (Ich feiere meinen Geburtstag), khi nào (am Samstag um 19 Uhr), ở đâu (bei mir zu Hause), mang gì hoặc trả lời trước khi nào (Bringt bitte … mit. Sagt bitte bis Donnerstag Bescheid.). Mở đầu Liebe … / Lieber …, kết thúc Viele Grüße hoặc Liebe Grüße."
+  - type: explain
+    text:
+      vi: "Đọc lời đánh giá: tìm tính từ (gute Qualität, schlechter Service) và từ nối aber, sondern – thông tin quan trọng thường nằm sau chúng. Đọc bài diễn đàn: tìm câu có es geht um để biết chủ đề."
+  - type: explain
+    text:
+      vi: "Nghe quảng cáo radio: bắt ba thông tin – bán gì, giảm bao nhiêu (… Prozent Rabatt), đến khi nào (nur diese Woche, bis Samstag). Câu quảng cáo hay bỏ mạo từ nên tính từ mang đuôi đầy đủ: kostenloser Versand, frisches Obst."
+  - type: deep_explain
+    text:
+      vi: "Trong lời đánh giá và bài diễn đàn bạn sẽ gặp Präteritum của động từ mạnh: kam (kommen), gab (geben), fand (finden), ging (gehen) – chỉ cần nhận ra nghĩa, khi nói vẫn có thể dùng Perfekt. Trong thư mời gửi nhiều bạn cùng lúc, dùng ihr: Kommt ihr? Bringt bitte … mit! Thư gửi cửa hàng hay cơ quan thì trang trọng: Sehr geehrte Damen und Herren … Mit freundlichen Grüßen. Thông tin trong các văn bản luyện tập ở bài này là tự soạn."
+  - type: example
+    target: "Liebe Freunde, am Samstag feiere ich meinen Geburtstag und ich lade euch herzlich ein! Die Party beginnt um 19 Uhr bei mir zu Hause. Bringt bitte keine Geschenke mit, sondern einen Salat oder einen Kuchen. Sagt mir bitte bis Donnerstag Bescheid, ob ihr kommt. Viele Grüße, Mai"
+    target_lang: de
+    translation:
+      vi: "Các bạn thân mến, thứ Bảy này mình tổ chức sinh nhật và trân trọng mời các bạn! Tiệc bắt đầu lúc 19 giờ ở nhà mình. Đừng mang quà nhé, mà mang một món salad hoặc một cái bánh. Trước thứ Năm báo mình biết các bạn có đến không nhé. Thân, Mai"
+    note:
+      vi: "Thư mẫu khoảng 50 từ, đủ bốn ý: dịp, giờ, nơi, mang gì + hạn trả lời. Viết cho nhiều bạn nên dùng ihr/euch."
+  - type: example
+    target: "Schöne Farbe, aber schlechte Qualität. Die Jacke kam erst nach zehn Tagen und nach einer Woche war sie kaputt. Ich habe sie zurückgeschickt."
+    target_lang: de
+    translation:
+      vi: "Màu đẹp nhưng chất lượng kém. Áo khoác mãi mười ngày sau mới đến, và một tuần sau thì đã hỏng. Tôi đã gửi trả lại."
+    note:
+      vi: "Đánh giá ngắn bỏ mạo từ: schöne Farbe, schlechte Qualität. kam là Präteritum của kommen."
+  - type: example
+    target: "Nur diese Woche: zwanzig Prozent Rabatt auf alle Fernseher und kostenloser Versand!"
+    target_lang: de
+    translation:
+      vi: "Chỉ trong tuần này: giảm hai mươi phần trăm cho mọi tivi và miễn phí vận chuyển!"
+    note:
+      vi: "Câu quảng cáo radio: nur diese Woche = chỉ tuần này; der Fernseher = cái tivi."
+  - type: common_mistake
+    wrong: Bringt bitte keine Geschenke mit, aber einen Salat.
+    right: Bringt bitte keine Geschenke mit, sondern einen Salat.
+    target_lang: de
+    note:
+      vi: "Vế sau thay thế vế trước (không phải quà mà là salad) nên dùng sondern."
+  - type: common_mistake
+    wrong: Viel Grüße
+    right: Viele Grüße
+    target_lang: de
+    note:
+      vi: "Grüße là số nhiều, không mạo từ: viele Grüße (đuôi -e)."
+  - type: common_mistake
+    wrong: Lieber Anna,
+    right: Liebe Anna,
+    target_lang: de
+    note:
+      vi: "Viết cho nữ: Liebe …; viết cho nam: Lieber … (Lieber Tom)."
+  - type: summary
+    points:
+      - vi: "Thư mời: dịp – thời gian – địa điểm – mang gì/hạn trả lời; Liebe/Lieber …, Viele Grüße."
+      - vi: "Thư trang trọng: Sehr geehrte Damen und Herren … Mit freundlichen Grüßen."
+      - vi: "Đánh giá, quảng cáo: tính từ không mạo từ (gute Qualität, kostenloser Versand)."
+      - vi: "Thông tin đúng nằm sau sondern; chủ đề nằm sau es geht um."
+      - vi: "Annas Blog; Ja, ich habe einen. – Nein, ich habe keins."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a2u07l5-mcq-lesen-einladung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u08-einladung
+    prompt:
+      stem: "Đọc thư mời: \"Liebe Freunde, am Samstag feiere ich meinen Geburtstag. Die Party beginnt um 19 Uhr bei mir zu Hause. Bringt bitte keine Geschenke mit, sondern einen Salat oder einen Kuchen. Viele Grüße, Mai\" Mai muốn khách mang gì?"
+      stem_lang: vi
+      options:
+        - { id: e1a, text: "Một món salad hoặc một cái bánh, không mang quà.", lang: vi }
+        - { id: e4b, text: "Một món quà nhỏ và một cái bánh.", lang: vi }
+        - { id: e7c, text: "Chỉ mang quà, không mang đồ ăn.", lang: vi }
+        - { id: e9d, text: "Không cần mang gì.", lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "keine Geschenke …, sondern einen Salat oder einen Kuchen = không mang quà mà mang salad hoặc bánh. Thông tin đúng nằm sau sondern."
+    display_answer: "Một món salad hoặc một cái bánh, không mang quà."
+
+  - key: de:exercise:a2u07l5-mcq-lesen-bewertung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-qualitaet
+    prompt:
+      stem: "Đọc lời đánh giá: \"Schöne Farbe, aber schlechte Qualität. Die Jacke kam erst nach zehn Tagen und nach einer Woche war sie kaputt. Ich habe sie zurückgeschickt.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: b2a, text: "Người viết đã gửi trả áo khoác vì chất lượng kém.", lang: vi }
+        - { id: b5b, text: "Người viết hài lòng với chất lượng áo khoác.", lang: vi }
+        - { id: b8c, text: "Áo khoác được giao sau một tuần.", lang: vi }
+        - { id: b3d, text: "Người viết đã đổi áo lấy màu khác.", lang: vi }
+    answer:
+      correct_option_id: b2a
+    explanation:
+      vi: "schlechte Qualität = chất lượng kém; war sie kaputt = áo đã hỏng; Ich habe sie zurückgeschickt = tôi đã gửi trả. Áo đến sau mười ngày (kam erst nach zehn Tagen), hỏng sau một tuần; người viết trả hàng chứ không đổi (umtauschen)."
+    display_answer: "Người viết đã gửi trả áo khoác vì chất lượng kém."
+
+  - key: de:exercise:a2u07l5-mcq-lesen-forum
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-serie
+    prompt:
+      stem: "Đọc bài đăng trên diễn đàn: \"Was für Sendungen seht ihr gern? Fernsehen finde ich langweilig. Die Nachrichten lese ich lieber in einer App. Aber am Wochenende sehe ich mit meiner Schwester Serien im Internet, am liebsten Krimis. Tuan\" Câu nào đúng về Tuấn?"
+      stem_lang: vi
+      options:
+        - { id: f2a, text: "Tuấn đọc tin tức trên một ứng dụng và cuối tuần xem phim bộ, thích nhất phim trinh thám.", lang: vi }
+        - { id: f6b, text: "Tuấn xem tivi mỗi ngày, thích nhất phim hài.", lang: vi }
+        - { id: f9c, text: "Tuấn không bao giờ xem phim bộ.", lang: vi }
+        - { id: f4d, text: "Tuấn đọc báo giấy cùng chị gái.", lang: vi }
+    answer:
+      correct_option_id: f2a
+    explanation:
+      vi: "Fernsehen finde ich langweilig = mình thấy truyền hình chán; Die Nachrichten lese ich lieber in einer App = tin tức mình thích đọc trên ứng dụng hơn; am Wochenende … Serien im Internet, am liebsten Krimis = cuối tuần xem phim bộ trên mạng, thích nhất phim trinh thám. Tuấn không nói gì về báo giấy."
+    display_answer: "Tuấn đọc tin tức trên một ứng dụng và cuối tuần xem phim bộ, thích nhất phim trinh thám."
+
+  - key: de:exercise:a2u07l5-mcq-lesen-kommentar
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-g-es-geht-um
+    prompt:
+      stem: "Đọc bình luận dưới một bài blog: \"Toller Artikel! In Annas Text geht es um Weihnachten in Deutschland. Bei uns in Vietnam ist Tết wichtiger. Jeder Gast bringt ein kleines Geschenk mit und wir essen zusammen. Linh\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c3a, text: "Bài của Anna nói về Giáng sinh ở Đức; với Linh, Tết quan trọng hơn.", lang: vi }
+        - { id: c7b, text: "Bài của Linh nói về Tết ở Việt Nam.", lang: vi }
+        - { id: c1c, text: "Ở Việt Nam, khách không mang quà khi đến chơi Tết.", lang: vi }
+        - { id: c5d, text: "Anna đón Giáng sinh ở Việt Nam.", lang: vi }
+    answer:
+      correct_option_id: c3a
+    explanation:
+      vi: "In Annas Text geht es um Weihnachten in Deutschland = bài của Anna nói về Giáng sinh ở Đức. Linh viết bình luận: Tết wichtiger = Tết quan trọng hơn; jeder Gast bringt ein kleines Geschenk mit = mỗi vị khách mang một món quà nhỏ."
+    display_answer: "Bài của Anna nói về Giáng sinh ở Đức; với Linh, Tết quan trọng hơn."
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a2u07l5-listen-radiowerbung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-rabatt
+    prompt:
+      audio_asset_id: null
+      fallback_text: Nur diese Woche im Online-Shop Sonnenschein. Zwanzig Prozent Rabatt auf alle Fernseher und kostenloser Versand!
+      options:
+        - { id: r4a, text: "Chỉ tuần này: tivi giảm 20 phần trăm và miễn phí vận chuyển.", lang: vi }
+        - { id: r8b, text: "Chỉ tuần này: tivi giảm 12 phần trăm và miễn phí vận chuyển.", lang: vi }
+        - { id: r2c, text: "Cả tháng này: mọi sản phẩm giảm 20 phần trăm.", lang: vi }
+        - { id: r6d, text: "Chỉ tuần này: miễn phí vận chuyển, nhưng tivi không giảm giá.", lang: vi }
+    answer:
+      correct_option_id: r4a
+    explanation:
+      vi: "nur diese Woche = chỉ tuần này; zwanzig Prozent Rabatt auf alle Fernseher = giảm 20 % cho mọi tivi (zwanzig = 20, zwölf = 12); kostenloser Versand = miễn phí vận chuyển."
+    display_answer: "Chỉ tuần này: tivi giảm 20 phần trăm và miễn phí vận chuyển."
+
+  - key: de:exercise:a2u07l5-listen-silvester
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-silvester
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo Jonas, hier ist Lena. Wir feiern Silvester nicht bei Tom, sondern bei mir. Kannst du ein paar Kerzen mitbringen? Bis dann!
+      options:
+        - { id: s1a, text: "Lena nhắn Jonas: giao thừa tổ chức ở nhà Lena, nhờ Jonas mang mấy cây nến.", lang: vi }
+        - { id: s5b, text: "Lena nhắn Jonas: giao thừa tổ chức ở nhà Tom, nhờ Jonas mang mấy cây nến.", lang: vi }
+        - { id: s9c, text: "Lena nhắn Jonas: giao thừa tổ chức ở nhà Lena, nhờ Jonas mang quà.", lang: vi }
+        - { id: s3d, text: "Lena không đón giao thừa năm nay.", lang: vi }
+    answer:
+      correct_option_id: s1a
+    explanation:
+      vi: "nicht bei Tom, sondern bei mir = không ở nhà Tom mà ở nhà mình (Lena). ein paar Kerzen = vài cây nến; mitbringen = mang theo."
+    display_answer: "Lena nhắn Jonas: giao thừa tổ chức ở nhà Lena, nhờ Jonas mang mấy cây nến."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u07l5-fill-liebe-viele
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      template: "{{b1}} Anna, am Freitag feiere ich meinen Geburtstag. Kommst du? {{b2}} Grüße, Minh"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [Liebe]
+        b2: [Viele, Liebe, Herzliche]
+    known_wrong:
+      - answer: Lieber
+        feedback_vi: "Anna là nữ nên Liebe Anna; Lieber chỉ dùng cho nam (Lieber Tom)."
+        error_tag: gender
+      - answer: Viel
+        feedback_vi: "Grüße là số nhiều, không mạo từ: viele Grüße (đuôi -e)."
+        error_tag: adj_ending
+      - answer: Vielen
+        feedback_vi: "Lời chào cuối thư ở đây là Akkusativ số nhiều: Viele Grüße (Vielen Dank là cụm khác)."
+        error_tag: adj_ending
+    explanation:
+      vi: "Thư thân mật cho một bạn nữ mở đầu bằng Liebe Anna. Cuối thư: Viele Grüße, Liebe Grüße hoặc Herzliche Grüße – Grüße là số nhiều không mạo từ nên tính từ có đuôi -e."
+    display_answer: "Liebe Anna, am Freitag feiere ich meinen Geburtstag. Kommst du? Viele Grüße, Minh"
+
+  - key: de:exercise:a2u07l5-fill-geehrte-freundlichen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-adj-nullartikel
+    prompt:
+      template: "Sehr {{b1}} Damen und Herren, die Jacke ist leider zu klein. Ich schicke sie zurück. Mit {{b2}} Grüßen, Lan"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [freundlichen]
+    known_wrong:
+      - answer: geehrten
+        feedback_vi: "Lời xưng hô không mạo từ, số nhiều ở Nominativ: Sehr geehrte Damen und Herren (đuôi -e)."
+        error_tag: adj_ending
+      - answer: freundliche
+        feedback_vi: "mit + Dativ số nhiều không mạo từ: freundlichen Grüßen (đuôi -en)."
+        error_tag: adj_ending
+    explanation:
+      vi: "Thư gửi cửa hàng là thư trang trọng. Sehr geehrte Damen und Herren: số nhiều không mạo từ → -e. Mit freundlichen Grüßen: mit + Dativ số nhiều → -en."
+    display_answer: "Sehr geehrte Damen und Herren, die Jacke ist leider zu klein. Ich schicke sie zurück. Mit freundlichen Grüßen, Lan"
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u07l5-wb-nicht-um-acht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-sondern
+    prompt:
+      instruction: "Viết thêm vào thư mời. Sắp xếp thành câu: \"Tiệc không bắt đầu lúc tám giờ mà lúc bảy giờ.\""
+      tokens:
+        - { id: t-sondern, text: sondern }
+        - { id: t-party, text: Party }
+        - { id: t-um1, text: um }
+        - { id: t-sieben, text: sieben }
+        - { id: t-die, text: Die }
+        - { id: t-nicht, text: nicht }
+        - { id: t-aber, text: aber }
+        - { id: t-acht, text: acht }
+        - { id: t-beginnt, text: beginnt }
+        - { id: t-um2, text: um }
+    answer:
+      orders:
+        - [t-die, t-party, t-beginnt, t-nicht, t-um1, t-acht, t-sondern, t-um2, t-sieben]
+        - [t-die, t-party, t-beginnt, t-nicht, t-um2, t-acht, t-sondern, t-um1, t-sieben]
+    explanation:
+      vi: "beginnt ở vị trí 2. nicht đứng trước phần bị phủ định (um acht), rồi sondern đưa ra giờ đúng (um sieben). aber không dùng được vì vế sau thay thế thông tin sai."
+    display_answer: Die Party beginnt nicht um acht, sondern um sieben.
+
+  - key: de:exercise:a2u07l5-wb-was-fuer-kuchen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-was-fuer-ein
+    prompt:
+      instruction: "Bạn trả lời thư mời và hỏi lại. Sắp xếp thành câu: \"Mình nên mang loại bánh gì?\""
+      tokens:
+        - { id: t-mitbringen, text: mitbringen }
+        - { id: t-ich, text: ich }
+        - { id: t-einen, text: einen }
+        - { id: t-was, text: Was }
+        - { id: t-kuchen, text: Kuchen }
+        - { id: t-soll, text: soll }
+        - { id: t-fuer, text: für }
+        - { id: t-ein, text: ein }
+    answer:
+      orders:
+        - [t-was, t-fuer, t-einen, t-kuchen, t-soll, t-ich, t-mitbringen]
+        - [t-was, t-soll, t-ich, t-fuer, t-einen, t-kuchen, t-mitbringen]
+    explanation:
+      vi: "Hỏi loại bánh → was für ein; Kuchen là tân ngữ của mitbringen nên einen (Akkusativ giống đực). soll ở vị trí 2, mitbringen (không tách sau động từ khiếm khuyết) ở cuối câu. Văn nói cũng hay tách: Was soll ich für einen Kuchen mitbringen?"
+    display_answer: Was für einen Kuchen soll ich mitbringen?
+
+  - key: de:exercise:a2u07l5-tr-jeder-gast
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-dieser-jeder
+    prompt:
+      source_text: Mỗi người khách mang theo một món quà nhỏ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Jeder Gast bringt ein kleines Geschenk mit.
+        - Ein kleines Geschenk bringt jeder Gast mit.
+        - Jeder Gast bringt ein kleines Geschenk.
+        - Jeder Gast nimmt ein kleines Geschenk mit.
+    known_wrong:
+      - answer: Jeder Gast bringt ein kleine Geschenk mit.
+        feedback_vi: "Sau ein, giống trung ở Akkusativ: ein kleines Geschenk (-es)."
+        error_tag: adj_ending
+      - answer: Jede Gast bringt ein kleines Geschenk mit.
+        feedback_vi: "der Gast là giống đực: jeder Gast."
+        error_tag: article
+      - answer: Jeder Gast mitbringt ein kleines Geschenk.
+        feedback_vi: "mitbringen là động từ tách: bringt ở vị trí 2, mit ở cuối câu."
+        error_tag: separable_prefix
+      - answer: Jeder Gäste bringen ein kleines Geschenk mit.
+        feedback_vi: "jeder chỉ đi với số ít: jeder Gast bringt; số nhiều thì nói alle Gäste bringen."
+        error_tag: plural_form
+    explanation:
+      vi: "\"Mỗi người khách\" = jeder Gast (số ít, giống đực). mitbringen tách: bringt … mit. das Geschenk sau ein, ở Akkusativ: ein kleines Geschenk."
+    display_answer: Jeder Gast bringt ein kleines Geschenk mit.
+
+  - key: de:exercise:a2u07l5-tr-peters-artikel-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u07-g-genitiv-namen
+    prompt:
+      source_text: In Peters Artikel geht es um gebrauchte Handys.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bài báo của Peter nói về điện thoại cũ.
+        - Bài viết của Peter nói về điện thoại cũ.
+        - Bài báo của Peter nói về điện thoại đã qua sử dụng.
+        - Bài viết của Peter nói về điện thoại đã qua sử dụng.
+        - Bài báo của Peter viết về điện thoại cũ.
+        - Bài viết của Peter viết về điện thoại cũ.
+        - Bài báo của Peter nói về những chiếc điện thoại cũ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Peters Artikel = bài báo của Peter (tên + -s). es geht um = nói về; gebrauchte Handys = điện thoại cũ, đã qua sử dụng (số nhiều, không mạo từ nên -e)."
+    display_answer: Bài báo của Peter nói về điện thoại cũ.

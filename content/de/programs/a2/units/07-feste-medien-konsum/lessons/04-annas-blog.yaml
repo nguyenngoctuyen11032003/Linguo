@@ -1,0 +1,329 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u07-annas-blog
+order_index: 4
+level: a2
+title:
+  vi: Blog của Anna – sở hữu cách tên riêng, đại từ bất định (Annas Blog – Hast du einen?)
+objectives:
+  - vi: Nói đồ vật của ai bằng tên riêng + -s (Annas Blog) hoặc von + Dativ (der Blog von Anna).
+  - vi: Trả lời ngắn mà không lặp lại danh từ (Ja, ich habe einen. – Nein, ich habe keins.).
+  - vi: Nghe hiểu một đoạn podcast, video ngắn về mạng xã hội.
+  - vi: Nói về việc đăng, chia sẻ, tải lên, tải xuống trên mạng.
+estimated_minutes: 17
+skills: [listening, reading, speaking]
+prerequisites: [de:lesson:a2u07-medien]
+items:
+  - item: de:item:a2u07-g-genitiv-namen
+  - item: de:item:a2u07-g-indefinitpronomen-einer
+  - item: de:item:a2u07-blog
+  - item: de:item:a2u07-posten
+  - item: de:item:a2u07-teilen
+  - item: de:item:a2u07-kommentar
+  - item: de:item:a2u07-video
+  - item: de:item:a2u07-herunterladen
+  - item: de:item:a2u07-passwort
+  - item: de:item:a2u07-online
+  - item: de:item:a2u07-bildschirm
+  - item: de:item:a2u07-smartphone
+  - item: de:item:a2u07-tablet
+  - item: de:item:a2u07-hochladen
+  - item: de:item:a2u07-loeschen
+  - item: de:item:a2u07-link
+  - item: de:item:a2u07-profil
+  - item: de:item:a1u02-laptop
+    role: reuse
+  - item: de:item:p0u3-handy
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Đây là blog của Anna" (Das ist Annas Blog), trả lời gọn "Có, mình có một cái" (Ja, ich habe einen) và nghe hiểu một đoạn video ngắn trên mạng.
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"blog của Anna\" (vật trước, người sau); tiếng Đức có thể đặt người trước: Annas Blog. Thêm -s vào tên, không có mạo từ và không có dấu nháy. Tên tận cùng bằng -s, -ß, -x, -z thì chỉ thêm dấu nháy: Max' Video."
+  - type: explain
+    text:
+      vi: "Khi nói chuyện, người Đức rất hay dùng von + Dativ thay cho -s: der Blog von Anna, das Handy von meinem Bruder. Cả hai đều đúng; Annas Blog gọn và hay gặp trong văn viết."
+  - type: explain
+    text:
+      vi: "Để khỏi lặp danh từ, ein/kein/mein có thể đứng một mình, nhưng lúc đó phải mang đuôi đầy đủ như der/die/das: einer (Nominativ giống đực), eine, eins. Giống đực ở Akkusativ là einen: Hast du einen Laptop? – Ja, ich habe einen. Tiếng Việt chỉ cần nói \"có, có một cái\", còn tiếng Đức phải chọn đúng đuôi theo giống."
+  - type: explain
+    text:
+      vi: "Phủ định dùng keiner/keine/keins (Akk giống đực keinen); sở hữu dùng meiner/meine/meins (của mình), deiner … Số nhiều: welche (có) và keine (không có): Hast du Fotos? – Ja, ich habe welche."
+  - type: deep_explain
+    text:
+      vi: "Bảng đầy đủ khi đứng một mình – Nominativ: einer / eine / eins / welche; Akkusativ: einen / eine / eins / welche. Giống trung cũng nói được eines, keines, meines (hơi trang trọng hơn eins, keins, meins). Dạng có dấu nháy kiểu tiếng Anh (Anna's) đôi khi thấy trên biển hiệu cửa hàng, nhưng trong câu viết bình thường người Đức viết Annas. Với hai đại từ đứng sau động từ thì Akkusativ đứng trước Dativ: Ich schicke ihn (den Link) dir."
+  - type: example
+    target: "Hallo, hier ist Anna! In meinem Blog poste ich jede Woche ein Video über Hanoi. Ladet es herunter und teilt es mit euren Freunden!"
+    target_lang: de
+    translation:
+      vi: "Chào các bạn, mình là Anna! Trên blog của mình, tuần nào mình cũng đăng một video về Hà Nội. Hãy tải về và chia sẻ với bạn bè nhé!"
+    note:
+      vi: "Anna nói với người xem bằng ihr (ladet, teilt, euren). herunterladen là động từ tách: ladet … herunter."
+  - type: example
+    target: "Wie findest du Annas neues Video? – Super! Ich habe schon einen Kommentar geschrieben."
+    target_lang: de
+    translation:
+      vi: "Bạn thấy video mới của Anna thế nào? – Tuyệt! Mình đã viết một bình luận rồi."
+    note:
+      vi: "Annas neues Video: không có mạo từ nên tính từ có đuôi -es (das Video). Hai người bạn dùng du."
+  - type: example
+    target: "Hast du einen Laptop? – Nein, ich habe keinen. Aber ich habe ein Tablet. – Ich habe auch eins."
+    target_lang: de
+    translation:
+      vi: "Bạn có laptop không? – Không, mình không có. Nhưng mình có máy tính bảng. – Mình cũng có một cái."
+    note:
+      vi: "der Laptop → keinen (Akk giống đực); das Tablet → eins."
+  - type: example
+    target: "Ist das Peters Smartphone? – Nein, das ist nicht seins. Das ist meins."
+    target_lang: de
+    translation:
+      vi: "Đây là điện thoại của Peter à? – Không, không phải của anh ấy, của mình đấy."
+    note:
+      vi: "das Smartphone → seins, meins (đuôi -s của das)."
+  - type: example
+    target: "Kannst du mir den Link schicken? – Klar, ich schicke ihn dir gleich."
+    target_lang: de
+    translation:
+      vi: "Bạn gửi cho mình đường link được không? – Được chứ, mình gửi ngay đây."
+    note:
+      vi: "Hai đại từ: Akkusativ (ihn = den Link) đứng trước Dativ (dir)."
+  - type: common_mistake
+    wrong: Das ist der Annas Blog.
+    right: Das ist Annas Blog.
+    target_lang: de
+    note:
+      vi: "Tên + -s đã thay cho mạo từ, không thêm der. Cũng có thể nói: Das ist der Blog von Anna."
+  - type: common_mistake
+    wrong: Hast du einen Laptop? – Ja, ich habe ein.
+    right: Hast du einen Laptop? – Ja, ich habe einen.
+    target_lang: de
+    note:
+      vi: "Đứng một mình thì phải có đuôi đầy đủ: der Laptop ở Akkusativ → einen."
+  - type: common_mistake
+    wrong: Hast du ein Tablet? – Nein, ich habe kein.
+    right: Hast du ein Tablet? – Nein, ich habe keins.
+    target_lang: de
+    note:
+      vi: "das Tablet → keins (hoặc keines) khi đứng một mình."
+  - type: summary
+    points:
+      - vi: "Annas Blog, Peters Video (không mạo từ, không dấu nháy); Max' Handy."
+      - vi: "Văn nói: der Blog von Anna (von + Dativ)."
+      - vi: "Đứng một mình: einer / eine / eins; Akk giống đực einen."
+      - vi: "keiner / keine / keins (keinen); meiner / meine / meins; số nhiều: welche / keine."
+      - vi: "posten, teilen, hochladen, herunterladen, löschen; der Kommentar, das Passwort, der Link."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u07l4-mcq-annas-blog
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u07-g-genitiv-namen
+    prompt:
+      stem: "Cách viết chuẩn trong câu bình thường cho \"blog của Anna\" là gì?"
+      stem_lang: vi
+      options:
+        - { id: g2a, text: "Annas Blog", lang: de }
+        - { id: g5b, text: "der Annas Blog", lang: de }
+        - { id: g7c, text: "der Blog Anna", lang: de }
+        - { id: g9d, text: "Anna Blog", lang: de }
+    answer:
+      correct_option_id: g2a
+    explanation:
+      vi: "Tên + -s đứng trước danh từ và thay cho mạo từ: Annas Blog. Không thêm der trước tên; thiếu -s (Anna Blog) hoặc đặt tên trơn sau danh từ (der Blog Anna) đều sai. Muốn đặt người sau thì dùng von: der Blog von Anna."
+    display_answer: Annas Blog
+
+  - key: de:exercise:a2u07l4-listen-keinen-einen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-g-indefinitpronomen-einer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hast du einen Laptop? – Nein, ich habe keinen, aber mein Bruder hat einen.
+      options:
+        - { id: h4a, text: "Người trả lời không có laptop, nhưng anh trai người đó có.", lang: vi }
+        - { id: h7b, text: "Người trả lời có laptop, anh trai thì không.", lang: vi }
+        - { id: h1c, text: "Cả người trả lời và anh trai đều không có laptop.", lang: vi }
+        - { id: h9d, text: "Người trả lời mượn laptop của anh trai.", lang: vi }
+    answer:
+      correct_option_id: h4a
+    explanation:
+      vi: "ich habe keinen = mình không có (cái nào); mein Bruder hat einen = anh trai mình có một cái. keinen và einen thay cho einen Laptop để khỏi lặp danh từ."
+    display_answer: "Người trả lời không có laptop, nhưng anh trai người đó có."
+
+  - key: de:exercise:a2u07l4-listen-lisas-handy
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-g-genitiv-namen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist nicht Peters Handy, sondern Lisas Handy. Der Bildschirm ist kaputt.
+      options:
+        - { id: k3a, text: "Đây là điện thoại của Lisa, không phải của Peter; màn hình bị hỏng.", lang: vi }
+        - { id: k6b, text: "Đây là điện thoại của Peter, không phải của Lisa; màn hình bị hỏng.", lang: vi }
+        - { id: k8c, text: "Đây là điện thoại của Lisa; Peter làm hỏng màn hình.", lang: vi }
+        - { id: k2d, text: "Peter và Lisa dùng chung một điện thoại.", lang: vi }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: "nicht Peters Handy, sondern Lisas Handy = không phải điện thoại của Peter mà là của Lisa (thông tin đúng nằm sau sondern). Der Bildschirm ist kaputt = màn hình hỏng; câu không nói ai làm hỏng."
+    display_answer: "Đây là điện thoại của Lisa, không phải của Peter; màn hình bị hỏng."
+
+  - key: de:exercise:a2u07l4-listen-annas-video
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u07-link
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo, hier ist Anna! In meinem neuen Video geht es um Hanoi. Den Link findet ihr unter dem Video.
+      options:
+        - { id: v5a, text: "Video mới của Anna nói về Hà Nội; đường link ở bên dưới video.", lang: vi }
+        - { id: v2b, text: "Video mới của Anna nói về Hà Nội; đường link ở trên blog.", lang: vi }
+        - { id: v8c, text: "Anna đang ở Hà Nội và chưa đăng video.", lang: vi }
+        - { id: v4d, text: "Anna xoá video về Hà Nội.", lang: vi }
+    answer:
+      correct_option_id: v5a
+    explanation:
+      vi: "In meinem neuen Video geht es um Hanoi = video mới của mình nói về Hà Nội. unter dem Video = ở bên dưới video. Anna nói với người xem bằng ihr (findet ihr)."
+    display_answer: "Video mới của Anna nói về Hà Nội; đường link ở bên dưới video."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u07l4-fill-keins
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-indefinitpronomen-einer
+    prompt:
+      template: "Hast du ein Tablet? – Nein, ich habe {{b1}}. Ich lese auf dem Laptop."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [keins, keines]
+    known_wrong:
+      - answer: kein
+        feedback_vi: "Đứng một mình thì phải có đuôi: das Tablet → keins (hoặc keines)."
+        error_tag: article
+      - answer: keinen
+        feedback_vi: "das Tablet là giống trung, không phải giống đực: keins."
+        error_tag: gender
+      - answer: keine
+        feedback_vi: "das Tablet là giống trung số ít: keins."
+        error_tag: gender
+    explanation:
+      vi: "Thay cho kein Tablet mà không lặp danh từ: kein đứng một mình nhận đuôi -s của das → keins (hoặc keines, trang trọng hơn)."
+    display_answer: "Hast du ein Tablet? – Nein, ich habe keins. Ich lese auf dem Laptop."
+
+  - key: de:exercise:a2u07l4-fill-einen-bildschirm
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-bildschirm
+    prompt:
+      template: "Brauchst du einen Bildschirm? – Nein danke, ich habe schon {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [einen]
+    known_wrong:
+      - answer: ein
+        feedback_vi: "Đứng một mình thì cần đuôi đầy đủ: der Bildschirm ở Akkusativ → einen."
+        error_tag: article
+      - answer: eins
+        feedback_vi: "der Bildschirm là giống đực, không phải giống trung: einen."
+        error_tag: gender
+      - answer: einer
+        feedback_vi: "Ở đây là tân ngữ của habe (Akkusativ), nên einen chứ không phải einer."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "einen thay cho einen Bildschirm (giống đực, Akkusativ vì là tân ngữ của habe). Đứng một mình, ein phải mang đuôi đầy đủ."
+    display_answer: "Brauchst du einen Bildschirm? – Nein danke, ich habe schon einen."
+
+  - key: de:exercise:a2u07l4-tr-annas-passwort
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u07-g-genitiv-namen
+    prompt:
+      source_text: Đây là mật khẩu của Anna.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das ist Annas Passwort.
+        - Das ist das Passwort von Anna.
+        - Das hier ist Annas Passwort.
+        - Das hier ist das Passwort von Anna.
+        - Hier ist Annas Passwort.
+        - Hier ist das Passwort von Anna.
+    known_wrong:
+      - answer: Das ist das Annas Passwort.
+        feedback_vi: "Tên + -s đã thay cho mạo từ: Annas Passwort, không thêm das."
+        error_tag: article
+    explanation:
+      vi: "Có hai cách: Annas Passwort (tên + -s, không mạo từ) hoặc das Passwort von Anna (von + Dativ, hay dùng khi nói)."
+    display_answer: Das ist Annas Passwort.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u07l4-wb-nicht-meins
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-indefinitpronomen-einer
+    prompt:
+      instruction: "Bạn được hỏi: \"Ist das dein Handy?\" Sắp xếp câu trả lời: \"Không, đó không phải của mình.\""
+      tokens:
+        - { id: t-meins, text: meins }
+        - { id: t-ist, text: ist }
+        - { id: t-mein, text: mein }
+        - { id: t-nein, text: Nein }
+        - { id: t-nicht, text: nicht }
+        - { id: t-das, text: das }
+        - { id: t-meiner, text: meiner }
+    answer:
+      orders:
+        - [t-nein, t-das, t-ist, t-nicht, t-meins]
+    explanation:
+      vi: "das Handy là giống trung, nên \"của mình\" đứng một mình là meins (đuôi -s của das); meiner dùng cho giống đực. nicht đứng trước meins để phủ định."
+    display_answer: Nein, das ist nicht meins.
+
+  - key: de:exercise:a2u07l4-wb-schicke-ihn-dir
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-link
+    prompt:
+      instruction: "Bạn bè nhờ: \"Kannst du mir den Link schicken?\" Sắp xếp câu trả lời: \"Mình gửi nó cho bạn ngay.\""
+      tokens:
+        - { id: t-dir, text: dir }
+        - { id: t-gleich, text: gleich }
+        - { id: t-ihm, text: ihm }
+        - { id: t-schicke, text: schicke }
+        - { id: t-ihn, text: ihn }
+        - { id: t-ich, text: ich }
+        - { id: t-dich, text: dich }
+    answer:
+      orders:
+        - [t-ich, t-schicke, t-ihn, t-dir, t-gleich]
+        - [t-gleich, t-schicke, t-ich, t-ihn, t-dir]
+    explanation:
+      vi: "der Link → ihn (Akkusativ), người nhận du → dir (Dativ). Hai đại từ thì Akkusativ đứng trước Dativ: ihn dir. schicke ở vị trí 2; vị trí 1 là ich hoặc gleich."
+    display_answer: Ich schicke ihn dir gleich.

@@ -1,0 +1,1295 @@
+# Học liệu unit A2U07 "Lễ hội, truyền thông và tiêu dùng" (Feste, Medien und Konsum), tiếng Đức A2.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: lễ hội – dieser, jeder, sondern =================
+  - key: de:item:a2u07-g-dieser-jeder
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "dieser, jeder, welcher, alle: dieser Film, diese Kerze, dieses Fest, alle Gäste"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "dieser (này), jeder (mỗi), welcher (nào) có đuôi giống mạo từ xác định: der → dieser/jeder, die → diese/jede, das → dieses/jedes; Akkusativ giống đực -en (diesen, jeden), Dativ -em/-er/-em (an diesem Tag). jeder chỉ dùng với số ít; số nhiều dùng alle (alle Gäste). Tính từ đứng sau những từ này có đuôi như sau der/die/das: dieser schöne Baum, alle neuen Produkte."
+      examples:
+        - target: Dieses Fest feiern wir jedes Jahr im Februar.
+          translation:
+            vi: Năm nào chúng tôi cũng ăn lễ này vào tháng Hai.
+        - target: Welche Kerze möchtest du? – Diese rote Kerze hier.
+          translation:
+            vi: Bạn muốn cây nến nào? – Cây nến đỏ này đây.
+        - target: Alle Gäste kommen um acht Uhr.
+          translation:
+            vi: Tất cả khách đến lúc tám giờ.
+      confusion:
+        vi: "jeder Gast (mỗi người khách, số ít) – alle Gäste (tất cả khách, số nhiều). Không nói jede Gäste."
+
+  - key: de:item:a2u07-g-sondern
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "nicht …, sondern … / kein …, sondern …"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Sau một phủ định (nicht, kein), sondern đưa ra thông tin đúng để thay vào: không phải A mà là B. aber thì chỉ thêm một ý trái ngược, không sửa lại vế trước. sondern đứng ở vị trí 0 như aber và luôn có dấu phẩy đứng trước."
+      examples:
+        - target: Wir feiern nicht am 24., sondern am 25. Dezember.
+          translation:
+            vi: Chúng tôi không ăn mừng vào ngày 24 mà vào ngày 25 tháng Mười hai.
+        - target: Das ist kein Geburtstagsgeschenk, sondern ein Hochzeitsgeschenk.
+          translation:
+            vi: Đây không phải quà sinh nhật mà là quà cưới.
+        - target: Das Geschenk ist nicht teuer, aber sehr schön.
+          translation:
+            vi: Món quà không đắt nhưng rất đẹp.
+      confusion:
+        vi: "Vế sau sửa lại vế trước (không phải A → mà là B): sondern. Vế sau chỉ nói thêm một ý ngược chiều (không đắt nhưng đẹp): aber."
+
+  - key: de:item:a2u07-fest
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Fest, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lễ, dịp lễ, lễ hội; buổi tiệc lớn
+      examples:
+        - target: Das wichtigste Fest in Vietnam ist Tết.
+          translation:
+            vi: Lễ quan trọng nhất ở Việt Nam là Tết.
+      confusion:
+        vi: "das Fest là dịp lễ hay lễ hội nói chung (Weihnachten ist ein Fest); die Feier là một buổi tổ chức cụ thể (die Geburtstagsfeier); die Party là bữa tiệc vui, thân mật."
+
+  - key: de:item:a2u07-feiern
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: feiern
+      pos: động từ
+    back:
+      meaning:
+        vi: ăn mừng, tổ chức (lễ, tiệc)
+      examples:
+        - target: Wir feiern Silvester bei Freunden.
+          translation:
+            vi: Chúng tôi đón giao thừa ở nhà bạn bè.
+      confusion:
+        vi: "feiern là động từ có quy tắc: ich feiere, du feierst; Perfekt: hat gefeiert."
+
+  - key: de:item:a2u07-weihnachten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Weihnachten
+      ipa: /ˈvaɪ̯naxtn̩/
+      pos: tên lễ (thường không có mạo từ)
+    back:
+      meaning:
+        vi: lễ Giáng sinh, Nô-en
+      examples:
+        - target: An Weihnachten fahre ich zu meinen Eltern.
+          translation:
+            vi: Giáng sinh tôi về nhà bố mẹ.
+      pronunciation_note:
+        vi: "W đọc như \"v\"; ch sau a là âm \"kh\" sát ở cuống họng."
+      confusion:
+        vi: "Nói an Weihnachten (hay gặp ở miền Nam nước Đức) hoặc zu Weihnachten (hay gặp ở miền Bắc), cả hai đều đúng. Lời chúc: Frohe Weihnachten!"
+
+  - key: de:item:a2u07-ostern
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Ostern
+      ipa: /ˈoːstɐn/
+      pos: tên lễ (thường không có mạo từ)
+    back:
+      meaning:
+        vi: lễ Phục sinh (vào tháng Ba hoặc tháng Tư, mỗi năm một ngày khác)
+      examples:
+        - target: Zu Ostern suchen die Kinder Ostereier im Garten.
+          translation:
+            vi: Vào lễ Phục sinh, trẻ con đi tìm trứng Phục sinh trong vườn.
+      confusion:
+        vi: "Giống Weihnachten: nói zu Ostern hoặc an Ostern. Lời chúc: Frohe Ostern!"
+
+  - key: de:item:a2u07-silvester
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Silvester
+      ipa: /zɪlˈvɛstɐ/
+      pos: tên lễ (thường không có mạo từ)
+    back:
+      meaning:
+        vi: đêm giao thừa dương lịch (31/12)
+      examples:
+        - target: Was machst du an Silvester? – Ich feiere mit Freunden.
+          translation:
+            vi: Giao thừa bạn làm gì? – Mình đón giao thừa với bạn bè.
+      pronunciation_note:
+        vi: "S đầu từ đọc như \"d\" nhẹ (giọng Bắc); v ở đây đọc như \"v\" (từ gốc Latinh), không đọc \"f\"; trọng âm ở âm tiết thứ hai: sil-VES-ter."
+
+  - key: de:item:a2u07-neujahr
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Neujahr (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày đầu năm mới dương lịch (1/1)
+      examples:
+        - target: An Neujahr besuchen wir meine Großeltern.
+          translation:
+            vi: Ngày mùng một tháng Một chúng tôi đi thăm ông bà.
+      confusion:
+        vi: "Neujahr thường dùng không có mạo từ (an Neujahr). Tết Nguyên Đán gọi là das vietnamesische Neujahrsfest hoặc đơn giản là Tết. Lời chúc: Frohes neues Jahr!"
+
+  - key: de:item:a2u07-geschenk
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Geschenk, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: quà, món quà
+      examples:
+        - target: Das Geschenk für meine Mutter habe ich schon gekauft.
+          translation:
+            vi: Quà cho mẹ thì tôi mua rồi.
+      confusion:
+        vi: "Động từ tặng là schenken: Ich schenke dir ein Buch."
+
+  - key: de:item:a2u07-kerze
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kerze, -n"
+      ipa: /ˈkɛʁt͡sə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây nến
+      examples:
+        - target: Auf dem Tisch stehen viele Kerzen.
+          translation:
+            vi: Trên bàn có nhiều cây nến.
+      pronunciation_note:
+        vi: "z đọc là \"ts\": KER-tse."
+
+  - key: de:item:a2u07-gast
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Gast, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách
+      examples:
+        - target: Zu unserer Party kommen zwanzig Gäste.
+          translation:
+            vi: Có hai mươi khách đến bữa tiệc của chúng tôi.
+      confusion:
+        vi: "Số nhiều có biến âm: die Gäste. Dùng cho cả nam và nữ (Sie ist unser Gast)."
+
+  - key: de:item:a2u07-hochzeit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Hochzeit, -en"
+      ipa: /ˈhɔxt͡saɪ̯t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đám cưới
+      examples:
+        - target: Im Juni sind wir auf einer Hochzeit in Hanoi.
+          translation:
+            vi: Tháng Sáu chúng tôi đi dự một đám cưới ở Hà Nội.
+      pronunciation_note:
+        vi: "o trong Hochzeit đọc ngắn (khác với hoch – cao, o dài); z đọc là \"ts\"."
+      confusion:
+        vi: "Đi dự đám cưới: auf eine Hochzeit gehen; đang ở đám cưới: auf einer Hochzeit sein."
+
+  - key: de:item:a2u07-heiligabend
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Heiligabend, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đêm Giáng sinh, tối 24/12
+      examples:
+        - target: Am Heiligabend bekommen die Kinder ihre Geschenke.
+          translation:
+            vi: Tối 24 trẻ con được nhận quà.
+      confusion:
+        vi: "Ở Đức, nhiều gia đình tặng quà vào tối 24/12 (Heiligabend), không phải sáng 25/12 như ở nhiều nước khác."
+
+  - key: de:item:a2u07-weihnachtsbaum
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Weihnachtsbaum, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây thông Nô-en
+      examples:
+        - target: Unser Weihnachtsbaum steht im Wohnzimmer.
+          translation:
+            vi: Cây thông Nô-en nhà mình đặt ở phòng khách.
+      confusion:
+        vi: "Từ ghép Weihnacht + s + Baum lấy giống của từ cuối: der Baum → der Weihnachtsbaum. Số nhiều: die Weihnachtsbäume."
+
+  - key: de:item:a2u07-feier
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Feier, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi lễ, buổi tiệc (một dịp tổ chức cụ thể)
+      examples:
+        - target: Die Feier beginnt um 19 Uhr.
+          translation:
+            vi: Buổi tiệc bắt đầu lúc 19 giờ.
+      confusion:
+        vi: "Hay gặp trong từ ghép: die Geburtstagsfeier (tiệc sinh nhật), die Hochzeitsfeier (tiệc cưới)."
+
+  - key: de:item:a2u07-wuenschen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wünschen
+      pos: động từ
+    back:
+      meaning:
+        vi: chúc; mong muốn
+      examples:
+        - target: Wir wünschen Ihnen ein frohes neues Jahr!
+          translation:
+            vi: Chúng tôi chúc anh/chị năm mới vui vẻ!
+      confusion:
+        vi: "Người nhận lời chúc ở Dativ, điều được chúc ở Akkusativ: Ich wünsche dir (Dat) viel Glück (Akk)."
+
+  - key: de:item:a2u07-anstossen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "anstoßen, stößt an, stieß an, hat angestoßen"
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: cụng ly, nâng ly chúc mừng
+      examples:
+        - target: Um Mitternacht stoßen wir an und wünschen uns ein frohes neues Jahr.
+          translation:
+            vi: Đúng nửa đêm chúng tôi cụng ly và chúc nhau năm mới vui vẻ.
+      confusion:
+        vi: "Động từ tách: Wir stoßen an. Khi cụng ly người Đức hay nói \"Prost!\" hoặc \"Zum Wohl!\"."
+
+  # ================= bài 2: mua sắm trực tuyến – tính từ không mạo từ =================
+  - key: de:item:a2u07-g-adj-nullartikel
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Adjektiv ohne Artikel: frischer Kaffee, frische Milch, frisches Brot, frische Brötchen"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Khi trước tính từ không có mạo từ, tính từ tự mang đuôi của mạo từ xác định: -er (der), -e (die), -es (das), -e (số nhiều). Akkusativ giống đực -en (frischen Kaffee); Dativ -em, -er, -em, số nhiều -en (mit frischem Obst, Mit freundlichen Grüßen). Câu quảng cáo, đánh giá và lời chào cuối thư dùng dạng này rất nhiều."
+      examples:
+        - target: Ich trinke morgens gern schwarzen Kaffee.
+          translation:
+            vi: Buổi sáng tôi thích uống cà phê đen.
+        - target: Hier gibt es gebrauchte Bücher in guter Qualität.
+          translation:
+            vi: Ở đây có sách cũ chất lượng tốt.
+        - target: Mit freundlichen Grüßen
+          translation:
+            vi: Trân trọng (câu chào cuối thư trang trọng)
+      confusion:
+        vi: "Có mạo từ thì mạo từ đã cho biết giống và cách, nên tính từ chỉ cần -e/-en: der frische Kaffee. Không có mạo từ thì tính từ phải tự \"làm mạo từ\": frischer Kaffee."
+
+  - key: de:item:a2u07-online-shop
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Online-Shop, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng trực tuyến
+      examples:
+        - target: In diesem Online-Shop kaufe ich oft Kleidung.
+          translation:
+            vi: Tôi hay mua quần áo ở cửa hàng online này.
+      confusion:
+        vi: "Cũng viết liền: der Onlineshop. Giống đực vì từ cuối là der Shop."
+
+  - key: de:item:a2u07-warenkorb
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Warenkorb, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: giỏ hàng (trên trang mua sắm)
+      examples:
+        - target: Ich lege die Schuhe in den Warenkorb.
+          translation:
+            vi: Tôi bỏ đôi giày vào giỏ hàng.
+      confusion:
+        vi: "die Ware (hàng hóa) + der Korb (cái giỏ) → der Warenkorb."
+
+  - key: de:item:a2u07-liefern
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: liefern
+      pos: động từ
+    back:
+      meaning:
+        vi: giao hàng
+      examples:
+        - target: Der Shop liefert auch am Samstag.
+          translation:
+            vi: Cửa hàng giao cả thứ Bảy.
+      confusion:
+        vi: "Động từ có quy tắc: er liefert, hat geliefert."
+
+  - key: de:item:a2u07-zurueckschicken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zurückschicken
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: gửi trả lại
+      examples:
+        - target: Die Jacke ist zu klein. Ich schicke sie zurück.
+          translation:
+            vi: Cái áo khoác nhỏ quá. Tôi gửi trả lại.
+      confusion:
+        vi: "Động từ tách: Ich schicke die Jacke zurück. Perfekt: hat zurückgeschickt."
+
+  - key: de:item:a2u07-umtauschen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: umtauschen
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: đổi (hàng đã mua lấy hàng khác)
+      examples:
+        - target: Kann ich die Hose umtauschen? Sie passt mir nicht.
+          translation:
+            vi: Tôi đổi cái quần này được không? Nó không vừa với tôi.
+      confusion:
+        vi: "umtauschen = đổi lấy món khác; zurückschicken/zurückgeben = trả lại hàng. Động từ tách: Ich tausche die Hose um."
+
+  - key: de:item:a2u07-qualitaet
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Qualität, -en"
+      ipa: /kvaliˈtɛːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất lượng
+      examples:
+        - target: Die Qualität ist gut, aber der Preis ist hoch.
+          translation:
+            vi: Chất lượng tốt nhưng giá cao.
+      pronunciation_note:
+        vi: "qu đọc là \"kv\"; trọng âm ở âm tiết cuối: kva-li-TÄT."
+
+  - key: de:item:a2u07-marke
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Marke, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thương hiệu, nhãn hiệu
+      examples:
+        - target: Welche Marke ist das? – Das ist eine deutsche Marke.
+          translation:
+            vi: Đây là thương hiệu nào? – Đây là một thương hiệu Đức.
+      confusion:
+        vi: "Con tem thư là die Briefmarke."
+
+  - key: de:item:a2u07-produkt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Produkt, -e"
+      ipa: /pʁoˈdʊkt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sản phẩm
+      examples:
+        - target: Alle Produkte sind heute zehn Prozent billiger.
+          translation:
+            vi: Hôm nay mọi sản phẩm đều rẻ hơn mười phần trăm.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết thứ hai: pro-DUKT."
+
+  - key: de:item:a2u07-kunde
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Kunde, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách hàng (nam hoặc chung); nữ là die Kundin, -nen
+      examples:
+        - target: Der Kunde möchte die Jacke umtauschen.
+          translation:
+            vi: Vị khách muốn đổi cái áo khoác.
+      confusion:
+        vi: "der Kunde thêm -n ở mọi cách trừ Nominativ số ít: den Kunden (Akk), dem Kunden (Dat). Đừng nhầm với der Gast (khách mời, khách ở nhà hàng)."
+
+  - key: de:item:a2u07-gebraucht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gebraucht
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã qua sử dụng, cũ (đồ second-hand)
+      examples:
+        - target: Ich kaufe oft gebrauchte Bücher im Internet.
+          translation:
+            vi: Tôi hay mua sách cũ trên mạng.
+      confusion:
+        vi: "Trái nghĩa: neu. gebraucht vốn là Partizip II của brauchen nhưng ở đây dùng như tính từ nên có đuôi: ein gebrauchtes Fahrrad."
+
+  - key: de:item:a2u07-bestellung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Bestellung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn hàng, việc đặt hàng
+      examples:
+        - target: Ihre Bestellung ist unterwegs.
+          translation:
+            vi: Đơn hàng của quý khách đang trên đường giao.
+      confusion:
+        vi: "Từ động từ bestellen (đặt hàng, gọi món) + -ung; danh từ đuôi -ung luôn giống cái."
+
+  - key: de:item:a2u07-bewertung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Bewertung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời đánh giá, nhận xét (của khách hàng)
+      examples:
+        - target: Das Produkt hat viele gute Bewertungen.
+          translation:
+            vi: Sản phẩm này có nhiều đánh giá tốt.
+
+  - key: de:item:a2u07-versand
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Versand (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc gửi hàng, vận chuyển (phí ship)
+      examples:
+        - target: Der Versand ist kostenlos.
+          translation:
+            vi: Miễn phí vận chuyển.
+
+  - key: de:item:a2u07-kostenlos
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: kostenlos
+      pos: tính từ
+    back:
+      meaning:
+        vi: miễn phí
+      examples:
+        - target: Die App ist kostenlos.
+          translation:
+            vi: Ứng dụng này miễn phí.
+      confusion:
+        vi: "Trước danh từ có đuôi như mọi tính từ: kostenloser Versand."
+
+  - key: de:item:a2u07-gutschein
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Gutschein, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phiếu quà tặng, phiếu mua hàng
+      examples:
+        - target: Zum Geburtstag habe ich einen Gutschein bekommen.
+          translation:
+            vi: Sinh nhật tôi được tặng một phiếu mua hàng.
+
+  - key: de:item:a2u07-rabatt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Rabatt, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: (sự) giảm giá
+      examples:
+        - target: Heute gibt es zwanzig Prozent Rabatt auf alle Schuhe.
+          translation:
+            vi: Hôm nay giảm giá hai mươi phần trăm cho tất cả giày.
+      confusion:
+        vi: "Rabatt auf + Akkusativ: Rabatt auf alle Schuhe (giảm giá cho tất cả giày)."
+
+  # ================= bài 3: truyền thông – was für ein, es geht um =================
+  - key: de:item:a2u07-g-was-fuer-ein
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Was für ein …? – Was für einen Film siehst du gern?"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Was für ein …? hỏi về loại, kiểu (phim gì, chương trình loại nào); welcher hỏi chọn cái nào trong một nhóm đã biết. ein biến cách theo vai trò của danh từ trong câu, không theo für: Was für ein Film ist das? (Nominativ) – Was für einen Film siehst du? (Akkusativ). Với số nhiều và danh từ không đếm được thì bỏ ein: Was für Filme? Was für Musik?"
+      examples:
+        - target: Was für eine Sendung ist das? – Eine Talkshow.
+          translation:
+            vi: Đây là chương trình gì vậy? – Một chương trình trò chuyện.
+        - target: Was für einen Film möchtest du sehen? – Einen Krimi.
+          translation:
+            vi: Bạn muốn xem phim loại gì? – Một phim trinh thám.
+        - target: Was für Musik hörst du gern?
+          translation:
+            vi: Bạn thích nghe nhạc gì?
+      confusion:
+        vi: "Welcher Film? = phim nào (trong mấy phim đang chiếu). Was für ein Film? = phim loại gì (hài, trinh thám…)."
+
+  - key: de:item:a2u07-g-es-geht-um
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Es geht um + Akkusativ: In dem Artikel geht es um …"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Để nói một bài báo, bộ phim hay cuộc nói chuyện có nội dung về gì, dùng (In dem Film) geht es um + Akkusativ. Chủ ngữ luôn là es nên động từ luôn là geht, kể cả khi chủ đề ở số nhiều. Trong cấu trúc này chỉ dùng um, không dùng über (über chỉ đi sau danh từ: ein Film über Berlin)."
+      examples:
+        - target: In dem Artikel geht es um Handys in der Schule.
+          translation:
+            vi: Bài báo nói về điện thoại di động trong trường học.
+        - target: In der Serie geht es um eine Familie in Berlin.
+          translation:
+            vi: Bộ phim kể về một gia đình ở Berlin.
+        - target: Im Film geht es um einen jungen Koch.
+          translation:
+            vi: Bộ phim kể về một anh đầu bếp trẻ.
+      confusion:
+        vi: "Ở vị trí 1 có thể là phần In dem Film (… geht es um …) hoặc chính es (Es geht in dem Film um …). Không nói \"Der Film geht um …\"."
+
+  - key: de:item:a2u07-zeitung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Zeitung, -en"
+      ipa: /ˈt͡saɪ̯tʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tờ báo
+      examples:
+        - target: Mein Vater liest jeden Morgen die Zeitung.
+          translation:
+            vi: Sáng nào bố tôi cũng đọc báo.
+      pronunciation_note:
+        vi: "Z đầu từ đọc là \"ts\"; ei đọc như \"ai\"."
+
+  - key: de:item:a2u07-zeitschrift
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Zeitschrift, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tạp chí
+      examples:
+        - target: Am Bahnhof kaufe ich manchmal eine Zeitschrift.
+          translation:
+            vi: Thỉnh thoảng tôi mua một cuốn tạp chí ở nhà ga.
+      confusion:
+        vi: "die Zeitung ra thường xuyên (hằng ngày hoặc hằng tuần), giấy mỏng, nhiều tin tức; die Zeitschrift là tạp chí, thường có nhiều ảnh, theo chủ đề."
+
+  - key: de:item:a2u07-artikel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Artikel, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài báo; (ngữ pháp) mạo từ
+      examples:
+        - target: Hast du den Artikel über das neue Museum gelesen?
+          translation:
+            vi: Bạn đọc bài báo về bảo tàng mới chưa?
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết thứ hai: ar-TI-kel."
+      confusion:
+        vi: "Cùng một từ cho hai nghĩa: der Artikel trong báo và der Artikel (der/die/das) trong ngữ pháp."
+
+  - key: de:item:a2u07-fernsehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Fernsehen (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: truyền hình (các chương trình trên tivi)
+      examples:
+        - target: Was kommt heute Abend im Fernsehen?
+          translation:
+            vi: Tối nay trên tivi có gì?
+      confusion:
+        vi: "fernsehen (động từ, viết thường) = xem tivi: Ich sehe fern. das Fernsehen = truyền hình; der Fernseher = cái máy tivi."
+
+  - key: de:item:a2u07-sendung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Sendung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình (truyền hình, phát thanh)
+      examples:
+        - target: Diese Sendung läuft jeden Sonntag um 20 Uhr.
+          translation:
+            vi: Chương trình này phát vào 20 giờ mỗi Chủ nhật.
+      confusion:
+        vi: "Chương trình phát sóng \"läuft\" hoặc \"kommt\": Die Sendung läuft um acht. Was kommt im Fernsehen?"
+
+  - key: de:item:a2u07-serie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Serie, -n"
+      ipa: /ˈzeːʁi̯ə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim bộ, loạt phim nhiều tập
+      examples:
+        - target: Am Wochenende sehe ich gern Serien.
+          translation:
+            vi: Cuối tuần tôi thích xem phim bộ.
+      pronunciation_note:
+        vi: "S đầu từ đọc như \"d\" nhẹ; ie ở cuối tách thành hai âm: SE-ri-e."
+
+  - key: de:item:a2u07-werbung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Werbung (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: quảng cáo
+      examples:
+        - target: Im Fernsehen gibt es zu viel Werbung.
+          translation:
+            vi: Trên tivi có quá nhiều quảng cáo.
+
+  - key: de:item:a2u07-internet
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Internet (Sg.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: mạng Internet
+      examples:
+        - target: Ich lese die Zeitung im Internet.
+          translation:
+            vi: Tôi đọc báo trên mạng.
+      confusion:
+        vi: "Trên mạng thường nói im Internet (in + dem): Ich lese die Zeitung im Internet."
+
+  - key: de:item:a2u07-app
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die App, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ứng dụng (trên điện thoại)
+      examples:
+        - target: Mit dieser App kann ich Deutsch lernen.
+          translation:
+            vi: Với ứng dụng này tôi học được tiếng Đức.
+      pronunciation_note:
+        vi: "Đọc như tiếng Anh, gần như \"ep\"."
+
+  - key: de:item:a2u07-berichten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: berichten
+      pos: động từ
+    back:
+      meaning:
+        vi: đưa tin, tường thuật, kể lại
+      examples:
+        - target: Die Zeitung berichtet über das Fest.
+          translation:
+            vi: Tờ báo đưa tin về lễ hội.
+      confusion:
+        vi: "berichten über + Akkusativ hoặc von + Dativ. Ngôi 3 thêm -et: er berichtet."
+
+  - key: de:item:a2u07-krimi
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Krimi, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim (truyện) trinh thám, hình sự
+      examples:
+        - target: Am Sonntagabend sehe ich gern einen Krimi.
+          translation:
+            vi: Tối Chủ nhật tôi thích xem một phim trinh thám.
+
+  - key: de:item:a2u07-komoedie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Komödie, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim hài, vở hài kịch
+      examples:
+        - target: Die Komödie war sehr lustig.
+          translation:
+            vi: Bộ phim hài rất buồn cười.
+
+  - key: de:item:a2u07-programm
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Programm, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình, lịch phát sóng; kênh (truyền hình)
+      examples:
+        - target: Das Programm für heute Abend steht in der Zeitung.
+          translation:
+            vi: Lịch phát sóng tối nay có in trên báo.
+      confusion:
+        vi: "das Programm là cả lịch phát sóng hoặc một kênh; die Sendung là một chương trình cụ thể trong đó."
+
+  - key: de:item:a2u07-zuschauer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Zuschauer, - / die Zuschauerin, -nen"
+      pos: danh từ
+    back:
+      meaning:
+        vi: khán giả, người xem
+      examples:
+        - target: Die Sendung hat viele junge Zuschauer.
+          translation:
+            vi: Chương trình có nhiều khán giả trẻ.
+
+  - key: de:item:a2u07-talkshow
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Talkshow, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình trò chuyện (có khách mời)
+      examples:
+        - target: In der Talkshow sprechen heute vier Gäste über das Internet.
+          translation:
+            vi: Hôm nay trong chương trình trò chuyện có bốn khách mời nói về Internet.
+
+  - key: de:item:a2u07-dokumentarfilm
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Dokumentarfilm, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim tài liệu
+      examples:
+        - target: Gestern habe ich einen Dokumentarfilm über Vietnam gesehen.
+          translation:
+            vi: Hôm qua tôi xem một phim tài liệu về Việt Nam.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: der Film → der Dokumentarfilm."
+
+  # ================= bài 4: blog của Anna – Annas, einer/keiner =================
+  - key: de:item:a2u07-g-genitiv-namen
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Annas Blog, Peters Handy – das Handy von Peter"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Để nói đồ vật của ai, thêm -s vào tên riêng và đặt trước danh từ, không có mạo từ và không có dấu nháy: Annas Blog (blog của Anna). Tên tận cùng bằng -s, -ß, -x, -z thì chỉ thêm dấu nháy: Max' Handy. Trong văn nói người Đức thường dùng von + Dativ: das Handy von Max."
+      examples:
+        - target: Das ist Annas Blog.
+          translation:
+            vi: Đây là blog của Anna.
+        - target: Wie ist Peters Passwort?
+          translation:
+            vi: Mật khẩu của Peter là gì?
+        - target: Das Video von Lisa ist super.
+          translation:
+            vi: Video của Lisa hay tuyệt.
+      confusion:
+        vi: "Thứ tự ngược với tiếng Việt: blog của Anna → Annas Blog (chủ sở hữu đứng trước). Không thêm mạo từ: der Annas Blog là sai."
+
+  - key: de:item:a2u07-g-indefinitpronomen-einer
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "einer / eine / eins, keiner / keine / keins, meiner …: Hast du einen Laptop? – Ja, ich habe einen."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Để khỏi lặp lại danh từ, ein/kein/mein đứng một mình làm đại từ và mang đuôi đầy đủ: einer (der), eine (die), eins (das); Akkusativ giống đực là einen. Số nhiều: welche (có một ít) – keine (không có cái nào). Giống trung cũng nói được eines, keines, meines (trang trọng hơn eins, keins, meins)."
+      examples:
+        - target: Hast du ein Tablet? – Nein, ich habe keins.
+          translation:
+            vi: Bạn có máy tính bảng không? – Không, mình không có.
+        - target: Ist das dein Handy? – Nein, das ist nicht meins.
+          translation:
+            vi: Đây là điện thoại của bạn à? – Không, không phải của mình.
+        - target: Ich brauche Fotos für meinen Blog. Hast du welche?
+          translation:
+            vi: Mình cần ảnh cho blog. Bạn có ảnh nào không?
+      confusion:
+        vi: "Trước danh từ: Ich habe einen Laptop / ein Tablet. Đứng một mình: Ich habe einen / eins. Giống đực Nominativ khác hẳn: ein Laptop → einer (Da ist einer.)."
+
+  - key: de:item:a2u07-blog
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Blog, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: blog, nhật ký trên mạng
+      examples:
+        - target: Anna schreibt einen Blog über Reisen.
+          translation:
+            vi: Anna viết blog về du lịch.
+      confusion:
+        vi: "Cũng có người nói das Blog; trong bài này dùng der Blog."
+
+  - key: de:item:a2u07-posten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: posten
+      pos: động từ
+    back:
+      meaning:
+        vi: đăng (bài, ảnh lên mạng)
+      examples:
+        - target: Ich poste jeden Tag ein Foto.
+          translation:
+            vi: Ngày nào tôi cũng đăng một tấm ảnh.
+      confusion:
+        vi: "Động từ có quy tắc: er postet, hat gepostet."
+
+  - key: de:item:a2u07-teilen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: teilen
+      pos: động từ
+    back:
+      meaning:
+        vi: chia sẻ; chia
+      examples:
+        - target: Kannst du das Video mit mir teilen?
+          translation:
+            vi: Bạn chia sẻ video đó cho mình được không?
+      confusion:
+        vi: "teilen cũng có nghĩa là chia: Wir teilen die Pizza."
+
+  - key: de:item:a2u07-kommentar
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Kommentar, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời bình luận
+      examples:
+        - target: Unter dem Video gibt es viele Kommentare.
+          translation:
+            vi: Dưới video có rất nhiều bình luận.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: kom-men-TAR."
+
+  - key: de:item:a2u07-video
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Video, -s"
+      ipa: /ˈviːdeo/
+      pos: danh từ
+    back:
+      meaning:
+        vi: video, đoạn phim
+      examples:
+        - target: Hast du Peters neues Video gesehen?
+          translation:
+            vi: Bạn xem video mới của Peter chưa?
+      pronunciation_note:
+        vi: "V ở đây đọc như \"v\" (từ gốc Latinh), không đọc \"f\"."
+
+  - key: de:item:a2u07-herunterladen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "herunterladen, lädt herunter, lud herunter, hat heruntergeladen"
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: tải xuống
+      examples:
+        - target: Du kannst die App kostenlos herunterladen.
+          translation:
+            vi: Bạn có thể tải ứng dụng này miễn phí.
+      pronunciation_note:
+        vi: "Trọng âm ở he-RUN-ter."
+      confusion:
+        vi: "Động từ tách: Ich lade die App herunter. Trái nghĩa: hochladen (tải lên)."
+
+  - key: de:item:a2u07-passwort
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Passwort, ¨-er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: mật khẩu
+      examples:
+        - target: Ich habe mein Passwort vergessen.
+          translation:
+            vi: Tôi quên mật khẩu rồi.
+      pronunciation_note:
+        vi: "w đọc như \"v\": PASS-vort. Số nhiều: die Passwörter."
+
+  - key: de:item:a2u07-online
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: online
+      pos: tính từ / trạng từ
+    back:
+      meaning:
+        vi: trực tuyến, đang trên mạng
+      examples:
+        - target: Bist du gerade online?
+          translation:
+            vi: Bạn đang online à?
+      confusion:
+        vi: "Không có đuôi: Ich bin online. Ich kaufe online ein."
+
+  - key: de:item:a2u07-bildschirm
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Bildschirm, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: màn hình
+      examples:
+        - target: Der Bildschirm von meinem Handy ist kaputt.
+          translation:
+            vi: Màn hình điện thoại của tôi bị vỡ rồi.
+      confusion:
+        vi: "das Bild (hình) + der Schirm (tấm che) → der Bildschirm (giống đực theo từ cuối)."
+
+  - key: de:item:a2u07-smartphone
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Smartphone, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện thoại thông minh
+      examples:
+        - target: Mit dem Smartphone mache ich viele Fotos.
+          translation:
+            vi: Tôi chụp nhiều ảnh bằng điện thoại thông minh.
+      confusion:
+        vi: "Trong văn nói người Đức hay gọi là das Handy."
+
+  - key: de:item:a2u07-tablet
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Tablet, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy tính bảng
+      examples:
+        - target: Meine Oma liest die Zeitung auf dem Tablet.
+          translation:
+            vi: Bà tôi đọc báo trên máy tính bảng.
+      confusion:
+        vi: "Đừng nhầm với die Tablette (viên thuốc)."
+
+  - key: de:item:a2u07-hochladen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "hochladen, lädt hoch, lud hoch, hat hochgeladen"
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: tải lên (mạng)
+      examples:
+        - target: Ich lade die Fotos von der Party heute Abend hoch.
+          translation:
+            vi: Tối nay mình tải ảnh bữa tiệc lên.
+      confusion:
+        vi: "Động từ tách, đổi nguyên âm ở du/er: du lädst hoch, er lädt hoch."
+
+  - key: de:item:a2u07-loeschen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: löschen
+      pos: động từ
+    back:
+      meaning:
+        vi: xoá (dữ liệu, ảnh, bài đăng)
+      examples:
+        - target: Bitte lösch das Foto!
+          translation:
+            vi: Làm ơn xoá tấm ảnh đó đi!
+      confusion:
+        vi: "Động từ có quy tắc: er löscht, hat gelöscht."
+
+  - key: de:item:a2u07-link
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Link, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường link, đường dẫn
+      examples:
+        - target: Schick mir bitte den Link!
+          translation:
+            vi: Gửi mình đường link nhé!
+
+  - key: de:item:a2u07-profil
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Profil, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: trang cá nhân, hồ sơ (trên mạng)
+      examples:
+        - target: Auf meinem Profil gibt es nur wenige Fotos.
+          translation:
+            vi: Trên trang cá nhân của mình chỉ có ít ảnh.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: pro-FIL, i dài."
