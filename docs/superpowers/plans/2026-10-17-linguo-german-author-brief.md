@@ -47,3 +47,18 @@ Bạn KHÔNG phải tác giả; đọc như biên tập viên tiếng Đức b�
 2. Sửa trực tiếp mọi lỗi tìm thấy trong file của unit (đừng chỉ báo cáo). Lỗi cấu trúc syllabus (cần đổi nơi giới thiệu ngữ pháp) thì chỉ ghi vào báo cáo.
 3. Chạy lại `node scripts/content/german-lint.mjs <file của unit>` và `pnpm content:check` (chỉ quan tâm file của bạn) cho tới khi sạch; commit `review(de): <mã unit> …` (explicit paths).
 Báo cáo cuối: số lỗi sửa theo loại (với 3–5 ví dụ điển hình trước/sau), phần còn nghi ngờ, các điểm syllabus cần orchestrator xem.
+
+## C. Lỗi reviewer đã bắt được ở các unit trước (tránh ngay từ đầu)
+
+1. Phát âm/vùng miền sai (nguyên âm dài–ngắn, Balkon, geben…); gợi ý âm tiếng Việt sai hoặc gây hiểu nhầm (kết thúc bằng t/x/ng...). Chỉ ghi điều chắc chắn đúng ở tiếng Đức chuẩn.
+2. Quy tắc tuyệt đối sai ("luôn", "mọi", "không bao giờ", "đều"): luôn kèm ngoại lệ (ví dụ -chen trung tính nhưng der Kuchen; Wann? không luôn có um; tên nước có/không mạo từ).
+3. Cấu trúc chưa dạy mà bài tập sản sinh (fill_blank, word_bank, translate vi→de) đòi hỏi: kiểm tra cột "Giới thiệu ở" trong syllabus §3 cho từng cấu trúc; chỉ cho phép ở ví dụ đọc/nghe có chú thích hoặc cụm cố định.
+4. Phương án nhiễu/known_wrong thực ra là tiếng Đức đúng (Plusquamperfekt cạnh ô Perfekt, kann thay darf, "eine Ärztin", "Ich habe nach Hause gemusst"): làm đáp án duy nhất bằng gợi ý trong đề (ví dụ "(dürfen)") hoặc bỏ.
+5. Ô trống nhiều đáp án hợp lệ hoặc cùng một từ đúng ở hai ô (known_wrong của fill_blank không được đúng ở ô khác): thêm gợi ý hoặc đổi câu.
+6. Thứ tự từ biên/afterthought hoặc không tự nhiên được chấp nhận là đúng ("Ich fahre nach Berlin mit dem Zug"): chỉ chấp nhận trật tự trung tính; nhưng không loại các trật tự đảo vị trí 1 bình thường.
+7. Sự kiện dễ đổi hoặc chưa kiểm chứng (giờ mở cửa, lệ phí, thủ tục, quy định, số điện thoại thật, định dạng đề Goethe): làm mềm "có thể thay đổi", hoặc bỏ. Số điện thoại/dữ liệu cá nhân bịa phải rõ là giả (ngắn).
+8. Dịch Việt lỏng ("khoá học" thay vì "buổi học"), gợi ý cách sai ("với cái gì?" cho Akkusativ).
+9. Tag lỗi ngoài danh sách: dùng article, gender, case_dat_akk, verb_position, word_order, adj_ending, plural_form, aux_verb, capitalization, separable_prefix, reflexive_missing, konjunktiv_form, preposition, register_du_sie, participle_form, zu_infinitive; chỉ thêm tag mới khi không tag nào hợp.
+10. Linter chính tả kiểm cả phương án nhiễu: không dùng dạng sai bịa (fahrte, habst) làm ô mcq; dùng dạng thật nhưng sai ngữ cảnh. Fill_blank template phải toàn tiếng Đức (không chèn từ Việt vào template).
+11. Danh từ có số nhiều bất quy tắc ghi nguyên dạng: `das Museum, Museen`. Item đã `introduce` ở unit khác không được tạo lại; item đã có thì `reuse`. Item dùng đúng key trong syllabus. Item ôn (reuse) không tính vào trần số item mỗi bài.
+12. Liên kết `reuse` sang unit khác chỉ khi key tồn tại VÀ đã được commit (`git ls-files`); kiểm lại ngay trước commit cuối.
