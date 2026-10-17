@@ -1,0 +1,434 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u02-wiederholung
+order_index: 5
+level: a1
+title:
+  vi: "Ôn tập: viết về gia đình (Wiederholung)"
+objectives:
+  - vi: Đọc hiểu một đoạn văn ngắn giới thiệu một người và gia đình họ.
+  - vi: Viết 4–5 câu (khoảng 30 từ) về gia đình và nghề của mình.
+  - vi: Hỏi – đáp theo thẻ chủ đề Familie/Beruf (kiểu Sprechen Teil 2 của Start Deutsch 1).
+  - vi: Dùng lại mein/meine, haben, số nhiều, kein/nicht, doch, nghề không mạo từ và dạng -in.
+estimated_minutes: 20
+skills: [reading, writing, speaking]
+prerequisites: [de:lesson:a1u02-berufe]
+items:
+  - item: de:item:a1u02-g-possessiv-singular
+    role: reuse
+  - item: de:item:a1u02-g-adjektiv-praedikativ
+    role: reuse
+  - item: de:item:a1u02-g-haben
+    role: reuse
+  - item: de:item:a1u02-g-plural
+    role: reuse
+  - item: de:item:a1u02-g-unbestimmter-artikel
+    role: reuse
+  - item: de:item:a1u02-g-negation-nicht-kein
+    role: reuse
+  - item: de:item:a1u02-g-doch
+    role: reuse
+  - item: de:item:a1u02-g-beruf-ohne-artikel
+    role: reuse
+  - item: de:item:a1u02-g-feminin-in
+    role: reuse
+  - item: de:item:a1u01-g-alter
+    role: reuse
+  - item: de:item:a1u02-familie
+    role: reuse
+  - item: de:item:a1u02-eltern
+    role: reuse
+  - item: de:item:a1u02-geschwister
+    role: reuse
+  - item: de:item:a1u02-sohn
+    role: reuse
+  - item: de:item:a1u02-tochter
+    role: reuse
+  - item: de:item:a1u02-verheiratet
+    role: reuse
+  - item: de:item:a1u02-ledig
+    role: reuse
+  - item: de:item:a1u02-beruf
+    role: reuse
+  - item: de:item:a1u02-arzt
+    role: reuse
+  - item: de:item:a1u02-ingenieur
+    role: reuse
+  - item: de:item:a1u02-pfleger
+    role: reuse
+  - item: de:item:a1u02-erzieher
+    role: reuse
+  - item: de:item:a1u02-katze
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu một đoạn giới thiệu gia đình, viết được 4–5 câu về gia đình và nghề của mình, và hỏi – đáp nhanh theo thẻ chủ đề như trong phần thi nói Start Deutsch 1."
+  - type: explain
+    text:
+      vi: "Khi đọc đoạn giới thiệu, hãy gạch chân từ khoá: tên, số (tuổi, số con), nghề, verheiratet/ledig. Đối chiếu từng phương án với đúng câu trong bài – phương án sai thường chỉ khác một chi tiết nhỏ (Söhne hay Töchter, Arzt hay Ärztin)."
+  - type: explain
+    text:
+      vi: "Viết về gia đình theo thứ tự đơn giản: tên, tuổi, quê, nơi ở – hôn nhân, con cái – bố mẹ, anh chị em – nghề. Mỗi câu một ý, động từ luôn ở vị trí 2: Ich bin verheiratet. Meine Frau ist Ärztin."
+  - type: explain
+    text:
+      vi: "Phần thi nói Teil 2 (theo mô tả tại thời điểm soạn): bạn rút một thẻ có chủ đề và một từ, ví dụ Familie – Geschwister?, rồi đặt câu hỏi cho bạn thi cùng: Hast du Geschwister? Người kia trả lời bằng câu đầy đủ; giữ du hoặc Sie thống nhất trong cả lượt."
+  - type: explain
+    text:
+      vi: "Trước khi nộp bài viết, tự kiểm tra bốn điểm: mein/meine đúng giống; số nhiều sau số đếm (zwei Kinder); nghề không mạo từ và dạng -in cho nữ; kein cho danh từ, nicht cho động từ và tính từ."
+  - type: deep_explain
+    text:
+      vi: "Bài viết mẫu (khoảng 35 từ): Ich heiße Minh und bin 30 Jahre alt. Ich komme aus Vietnam und wohne in Berlin. Ich bin verheiratet und habe zwei Kinder. Meine Frau ist Ärztin. Ich bin Ingenieur. Nếu bạn có anh trai hay con trai (một người), hãy chờ Unit 3 để học \"Ich habe einen Bruder\" – sau haben, danh từ giống đực đổi mạo từ; hiện tại bạn có thể viết Mein Bruder heißt … hoặc dùng số nhiều (zwei Brüder). Nói tuổi luôn dùng sein: Ich bin 30 Jahre alt, không dùng haben."
+  - type: example
+    target: Ich heiße Minh und bin 30 Jahre alt. Ich komme aus Vietnam und wohne in Berlin.
+    target_lang: de
+    translation:
+      vi: Tôi tên là Minh, 30 tuổi. Tôi đến từ Việt Nam và sống ở Berlin.
+    note:
+      vi: "Tuổi dùng sein: bin 30 Jahre alt. Hai động từ (heiße, bin) cùng chủ ngữ ich nối bằng und."
+  - type: example
+    target: Ich bin verheiratet und habe zwei Kinder. Meine Frau ist Ärztin und ich bin Ingenieur.
+    target_lang: de
+    translation:
+      vi: Tôi đã kết hôn và có hai con. Vợ tôi là bác sĩ, còn tôi là kỹ sư.
+    note:
+      vi: "die Frau (vợ) giống cái → meine Frau; nghề không có mạo từ, Ärztin là dạng nữ."
+  - type: example
+    target: "Hast du Geschwister? – Ja, ich habe eine Schwester. Sie ist 19 Jahre alt und Studentin."
+    target_lang: de
+    translation:
+      vi: "Bạn có anh chị em không? – Có, mình có một em gái. Em ấy 19 tuổi và là sinh viên."
+    note:
+      vi: "Kiểu hỏi – đáp theo thẻ (Familie – Geschwister?), nói với bạn thi cùng bằng du."
+  - type: example
+    target: "Ist deine Schwester nicht verheiratet? – Doch, sie ist verheiratet. Ihr Mann ist Koch."
+    target_lang: de
+    translation:
+      vi: "Chị bạn chưa kết hôn à? – Có chứ, chị ấy đã kết hôn rồi. Chồng chị ấy là đầu bếp."
+    note:
+      vi: "Câu hỏi có nicht nên trả lời \"có\" bằng Doch. Ihr Mann = chồng của chị ấy (người sở hữu là nữ → ihr)."
+  - type: common_mistake
+    wrong: Ich habe 30 Jahre.
+    right: Ich bin 30 Jahre alt.
+    target_lang: de
+    note:
+      vi: "Nói tuổi dùng sein + Jahre alt, không dịch \"có\" bằng haben."
+  - type: common_mistake
+    wrong: Meine Mutter ist eine Lehrerin.
+    right: Meine Mutter ist Lehrerin.
+    target_lang: de
+    note:
+      vi: "Khi chỉ nói nghề, bỏ mạo từ."
+  - type: common_mistake
+    wrong: Ich habe zwei Bruder.
+    right: Ich habe zwei Brüder.
+    target_lang: de
+    note:
+      vi: "Sau zwei phải dùng số nhiều: der Bruder → die Brüder (thêm biến âm)."
+  - type: summary
+    points:
+      - vi: "Đọc: tìm tên, số, nghề, tình trạng hôn nhân rồi đối chiếu từng chi tiết."
+      - vi: "Viết: tên – tuổi – quê – hôn nhân, con cái – gia đình – nghề; động từ ở vị trí 2."
+      - vi: "Nói (Teil 2): từ thẻ chủ đề đặt câu hỏi có/không hoặc câu hỏi W-, trả lời bằng câu đầy đủ."
+      - vi: "Ôn: mein/meine, haben, số nhiều, ein/kein/nicht, doch, nghề không mạo từ, -in."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a1u02l5-mcq-lesen-lan-kinder
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-negation-nicht-kein
+    prompt:
+      stem: "Ich heiße Lan. Ich bin 24 Jahre alt und komme aus Vietnam. Jetzt wohne ich in Köln. Ich bin Pflegerin von Beruf. Ich bin ledig und habe keine Kinder. Meine Eltern wohnen in Hue. Mein Vater ist Ingenieur und meine Mutter ist Verkäuferin. Ich habe zwei Brüder. Sie sind Studenten in Hanoi.\n\nWas ist richtig?"
+      stem_lang: de
+      options:
+        - { id: r1a, text: Lan hat keine Kinder., lang: de }
+        - { id: r1b, text: Lan ist verheiratet., lang: de }
+        - { id: r1c, text: Lan hat zwei Schwestern., lang: de }
+        - { id: r1d, text: Lan wohnt in Hue., lang: de }
+    answer:
+      correct_option_id: r1a
+    explanation:
+      vi: "Bài viết: \"Ich bin ledig und habe keine Kinder\" – Lan độc thân và không có con. Lan có hai anh/em trai (Brüder), không phải chị em gái; bố mẹ Lan mới sống ở Huế, còn Lan sống ở Köln."
+    display_answer: Lan hat keine Kinder.
+
+  - key: de:exercise:a1u02l5-mcq-lesen-lan-beruf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-pfleger
+    prompt:
+      stem: "Ich heiße Lan. Ich bin 24 Jahre alt und komme aus Vietnam. Jetzt wohne ich in Köln. Ich bin Pflegerin von Beruf. Ich bin ledig und habe keine Kinder. Meine Eltern wohnen in Hue. Mein Vater ist Ingenieur und meine Mutter ist Verkäuferin. Ich habe zwei Brüder. Sie sind Studenten in Hanoi.\n\nWas ist Lan von Beruf?"
+      stem_lang: de
+      options:
+        - { id: r2a, text: Pflegerin, lang: de }
+        - { id: r2b, text: Verkäuferin, lang: de }
+        - { id: r2c, text: Ingenieurin, lang: de }
+        - { id: r2d, text: Studentin, lang: de }
+    answer:
+      correct_option_id: r2a
+    explanation:
+      vi: "\"Ich bin Pflegerin von Beruf\" – Lan là điều dưỡng. Verkäuferin là nghề của mẹ Lan, Ingenieur là nghề của bố; hai anh/em trai mới là sinh viên."
+    display_answer: Pflegerin
+
+  - key: de:exercise:a1u02l5-mcq-lesen-becker
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-arzt
+    prompt:
+      stem: "Das ist Familie Becker aus Bremen. Herr Becker ist 45 Jahre alt und Koch von Beruf. Seine Frau heißt Sabine. Sie ist Ärztin und arbeitet im Krankenhaus. Die zwei Kinder heißen Mia und Finn. Mia ist 12 und Finn ist 9 Jahre alt. Die Familie hat eine Katze. Ein Auto hat die Familie nicht.\n\nWas ist richtig?"
+      stem_lang: de
+      options:
+        - { id: r3a, text: Sabine Becker ist Ärztin., lang: de }
+        - { id: r3b, text: Herr Becker ist Arzt., lang: de }
+        - { id: r3c, text: Familie Becker hat ein Auto., lang: de }
+        - { id: r3d, text: Familie Becker hat drei Kinder., lang: de }
+    answer:
+      correct_option_id: r3a
+    explanation:
+      vi: "\"Seine Frau heißt Sabine. Sie ist Ärztin\" – vợ ông Becker, Sabine, là bác sĩ. Ông Becker là đầu bếp (Koch); gia đình có hai con và không có xe hơi (Ein Auto hat die Familie nicht)."
+    display_answer: Sabine Becker ist Ärztin.
+
+  - key: de:exercise:a1u02l5-mcq-lesen-wer-koch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-possessiv-singular
+    prompt:
+      stem: "Das ist Familie Becker aus Bremen. Herr Becker ist 45 Jahre alt und Koch von Beruf. Seine Frau heißt Sabine. Sie ist Ärztin und arbeitet im Krankenhaus. Die zwei Kinder heißen Mia und Finn. Mia ist 12 und Finn ist 9 Jahre alt. Die Familie hat eine Katze. Ein Auto hat die Familie nicht.\n\nWer ist Koch von Beruf?"
+      stem_lang: de
+      options:
+        - { id: r4a, text: Herr Becker, lang: de }
+        - { id: r4b, text: Sabine Becker, lang: de }
+        - { id: r4c, text: Mia, lang: de }
+        - { id: r4d, text: Finn, lang: de }
+    answer:
+      correct_option_id: r4a
+    explanation:
+      vi: "\"Herr Becker ist 45 Jahre alt und Koch von Beruf\" – ông Becker là đầu bếp. \"Seine Frau\" là vợ của ông (sein vì người sở hữu là ông Becker); bà là bác sĩ, còn Mia và Finn là con."
+    display_answer: Herr Becker
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a1u02l5-listen-tuan
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u02-erzieher
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo, ich bin Tuan. Ich bin verheiratet und habe eine Tochter. Meine Frau ist Erzieherin.
+      options:
+        - { id: t1n, text: "Tuấn đã kết hôn và có một con gái; vợ anh là giáo viên mầm non.", lang: vi }
+        - { id: t2n, text: "Tuấn đã kết hôn và có một con trai; vợ anh là giáo viên mầm non.", lang: vi }
+        - { id: t3n, text: "Tuấn đã kết hôn và có một con gái; vợ anh là điều dưỡng.", lang: vi }
+        - { id: t4n, text: "Tuấn chưa kết hôn và có một con gái; mẹ anh là giáo viên mầm non.", lang: vi }
+    answer:
+      correct_option_id: t1n
+    explanation:
+      vi: "verheiratet = đã kết hôn; eine Tochter = một con gái (con trai là Sohn); Erzieherin = giáo viên mầm non (nữ), meine Frau = vợ tôi."
+    display_answer: "Tuấn đã kết hôn và có một con gái; vợ anh là giáo viên mầm non."
+
+  - key: de:exercise:a1u02l5-listen-doch-schwester
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u02-g-doch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hast du keine Geschwister? Doch, ich habe eine Schwester. Sie ist Verkäuferin.
+      options:
+        - { id: s1w, text: "Người trả lời có một chị (em) gái, cô ấy là nhân viên bán hàng.", lang: vi }
+        - { id: s2w, text: Người trả lời không có anh chị em., lang: vi }
+        - { id: s3w, text: "Người trả lời có một anh (em) trai, anh ấy là nhân viên bán hàng.", lang: vi }
+        - { id: s4w, text: "Người trả lời có một chị (em) gái, cô ấy là đầu bếp.", lang: vi }
+    answer:
+      correct_option_id: s1w
+    explanation:
+      vi: "Doch phản bác câu hỏi phủ định: người đó CÓ anh chị em – eine Schwester (chị/em gái). Verkäuferin là nhân viên bán hàng nữ."
+    display_answer: "Người trả lời có một chị (em) gái, cô ấy là nhân viên bán hàng."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u02l5-fill-meine-familie
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-familie
+    prompt:
+      template: "Das ist {{b1}} Familie. Mein Vater ist Koch und {{b2}} Mutter ist Verkäuferin. Meine Eltern {{b3}} drei Kinder."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [meine]
+        b2: [meine]
+        b3: [haben]
+    known_wrong:
+      - answer: mein
+        feedback_vi: die Familie, die Mutter là giống cái nên cần -e - meine.
+        error_tag: possessive_ending
+      - answer: hat
+        feedback_vi: Meine Eltern là số nhiều (= sie) nên dùng haben.
+        error_tag: verb_agreement
+      - answer: habt
+        feedback_vi: habt chỉ dùng với ihr; meine Eltern (= sie) → haben.
+        error_tag: verb_form
+    explanation:
+      vi: "Familie và Mutter là giống cái → meine. Meine Eltern là số nhiều (sie) → haben."
+    display_answer: Das ist meine Familie. Mein Vater ist Koch und meine Mutter ist Verkäuferin. Meine Eltern haben drei Kinder.
+
+  - key: de:exercise:a1u02l5-fill-wie-alt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-alter
+    prompt:
+      template: "A: Wie alt {{b1}} deine Geschwister? B: Mein Bruder ist 20 und meine Schwester ist 17 Jahre {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [sind]
+        b2: [alt]
+    known_wrong:
+      - answer: ist
+        feedback_vi: Geschwister là số nhiều nên dùng sind.
+        error_tag: verb_agreement
+      - answer: haben
+        feedback_vi: Hỏi tuổi dùng sein, không dùng haben - Wie alt sind …?
+        error_tag: alter_haben
+    explanation:
+      vi: "Hỏi tuổi: Wie alt + sein + chủ ngữ; Geschwister là số nhiều nên dùng sind. Trả lời: … ist 17 Jahre alt."
+    display_answer: "A: Wie alt sind deine Geschwister? B: Mein Bruder ist 20 und meine Schwester ist 17 Jahre alt."
+
+  - key: de:exercise:a1u02l5-tr-tochter-soehne
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-plural
+    prompt:
+      source_text: Tôi có một con gái và hai con trai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe eine Tochter und zwei Söhne.
+        - Ich habe zwei Söhne und eine Tochter.
+        - Ich habe eine Tochter und 2 Söhne.
+        - Ich habe 2 Söhne und eine Tochter.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ich habe ein Tochter und zwei Söhne.
+        feedback_vi: die Tochter giống cái nên dùng eine.
+        error_tag: article
+      - answer: Ich habe eine Tochter und zwei Sohn.
+        feedback_vi: Sau zwei phải dùng số nhiều - Söhne.
+        error_tag: plural_form
+      - answer: Ich habe eine Tochter und zwei Sohns.
+        feedback_vi: "Số nhiều của der Sohn là Söhne, không thêm -s."
+        error_tag: plural_form
+      - answer: Ich hat eine Tochter und zwei Söhne.
+        feedback_vi: Chủ ngữ ich nên dùng habe.
+        error_tag: verb_form
+    explanation:
+      vi: "ich → habe. die Tochter giống cái → eine Tochter (sau haben giữ nguyên). Sohn → Söhne (thêm -e và biến âm) sau số đếm."
+    display_answer: Ich habe eine Tochter und zwei Söhne.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u02l5-tr-kein-arzt
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u02-g-beruf-ohne-artikel
+    prompt:
+      source_text: Bố tôi không phải là bác sĩ. Ông ấy là kỹ sư.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mein Vater ist kein Arzt. Er ist Ingenieur.
+        - Mein Vater ist kein Arzt, sondern Ingenieur.
+        - Mein Vater ist kein Arzt. Er ist Ingenieur von Beruf.
+        - Mein Vater ist kein Arzt. Er arbeitet als Ingenieur.
+        - Mein Vater ist nicht Arzt. Er ist Ingenieur.
+        - Mein Vater ist nicht Arzt, sondern Ingenieur.
+    known_wrong:
+      - answer: Mein Vater ist nicht ein Arzt. Er ist Ingenieur.
+        feedback_vi: Không nói nicht ein - phủ định nghề dùng kein Arzt.
+        error_tag: negation_kein
+      - answer: Mein Vater ist kein Arzt. Er ist ein Ingenieur.
+        feedback_vi: Nói nghề không dùng mạo từ - Er ist Ingenieur.
+        error_tag: beruf_article
+      - answer: Mein Vater ist keine Arzt. Er ist Ingenieur.
+        feedback_vi: der Arzt giống đực nên dùng kein, không có -e.
+        error_tag: negation_ending
+      - answer: Meine Vater ist kein Arzt. Er ist Ingenieur.
+        feedback_vi: der Vater giống đực nên dùng mein, không có -e.
+        error_tag: possessive_ending
+    explanation:
+      vi: "Phủ định nghề dùng kein: kein Arzt (der Arzt → kein, không -e). Câu khẳng định nghề không có mạo từ: Er ist Ingenieur."
+    display_answer: Mein Vater ist kein Arzt. Er ist Ingenieur.
+
+  - key: de:exercise:a1u02l5-wb-schwester-nicht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-verheiratet
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chị gái tôi chưa kết hôn.\""
+      tokens:
+        - { id: c-verheiratet, text: verheiratet }
+        - { id: c-meine, text: meine }
+        - { id: c-nicht, text: nicht }
+        - { id: c-schwester, text: Schwester }
+        - { id: c-ist, text: ist }
+        - { id: c-kein, text: kein }
+        - { id: c-mein, text: mein }
+    answer:
+      orders:
+        - [c-meine, c-schwester, c-ist, c-nicht, c-verheiratet]
+        - [c-verheiratet, c-ist, c-meine, c-schwester, c-nicht]
+    explanation:
+      vi: "Phủ định tính từ (verheiratet) dùng nicht, đặt ngay trước tính từ. die Schwester giống cái → meine. Cách nói nhấn mạnh Verheiratet ist meine Schwester nicht cũng đúng."
+    display_answer: Meine Schwester ist nicht verheiratet.
+
+  - key: de:exercise:a1u02l5-wb-von-beruf
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-beruf
+    prompt:
+      instruction: "Thẻ chủ đề Beruf. Hỏi một giám khảo bạn chưa quen (xưng Sie): \"Ông/bà làm nghề gì?\""
+      tokens:
+        - { id: v-beruf, text: Beruf }
+        - { id: v-sie, text: Sie }
+        - { id: v-von, text: von }
+        - { id: v-was, text: was }
+        - { id: v-bist, text: bist }
+        - { id: v-sind, text: sind }
+        - { id: v-du, text: du }
+    answer:
+      orders:
+        - [v-was, v-sind, v-sie, v-von, v-beruf]
+    explanation:
+      vi: "Câu hỏi W-: từ để hỏi was ở vị trí 1, động từ sind ở vị trí 2. Xưng Sie nên dùng sind (không phải bist/du); von Beruf là cụm cố định đứng cuối."
+    display_answer: Was sind Sie von Beruf?

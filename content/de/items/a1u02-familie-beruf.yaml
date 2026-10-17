@@ -1,0 +1,1192 @@
+# Học liệu unit A1U02 "Gia đình và nghề nghiệp" (Familie und Beruf). Danh từ ghi kèm mạo từ và số nhiều; nghề ghi cả dạng nam / nữ.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: gia đình tôi (mein, dein) ----------------
+  - key: de:item:a1u02-g-possessiv-singular
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "mein/meine, dein/deine, sein/seine, ihr/ihre, Ihr/Ihre"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Từ sở hữu đứng trước danh từ: mein (của tôi), dein (của bạn), sein (của anh ấy), ihr (của cô ấy, của họ), Ihr (của ông/bà – lịch sự). Chọn sein hay ihr theo người sở hữu; thêm -e khi danh từ là giống cái hoặc số nhiều: mein Vater, meine Mutter, meine Eltern."
+      examples:
+        - target: Das ist meine Mutter und das ist mein Vater.
+          translation:
+            vi: Đây là mẹ tôi và đây là bố tôi.
+        - target: Minh wohnt in Hanoi. Seine Schwester wohnt in Hue.
+          translation:
+            vi: Minh sống ở Hà Nội. Chị gái anh ấy sống ở Huế.
+        - target: "Frau Weber, wie heißt Ihr Kind?"
+          translation:
+            vi: Chị Weber ơi, con chị tên là gì?
+      confusion:
+        vi: "sein/ihr theo người sở hữu, không theo vật được sở hữu: Lan und ihr Bruder (Lan là nữ), Minh und seine Mutter (Minh là nam)."
+
+  - key: de:item:a1u02-g-adjektiv-praedikativ
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "sein + Adjektiv: Meine Mutter ist klein."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Tính từ đứng sau sein giữ nguyên, không thêm đuôi, dù danh từ là giống đực, giống cái hay số nhiều. Khác tiếng Việt, câu tả người bắt buộc có động từ sein (ist, sind)."
+      examples:
+        - target: Mein Bruder ist groß.
+          translation:
+            vi: Anh trai tôi cao.
+        - target: Meine Eltern sind sehr nett.
+          translation:
+            vi: Bố mẹ tôi rất dễ mến.
+      confusion:
+        vi: "Không nói Meine Schwester ist kleine và không bỏ ist (Mein Bruder groß)."
+
+  - key: de:item:a1u02-familie
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Familie, -n"
+      ipa: /faˈmiːli̯ə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: gia đình
+      examples:
+        - target: Das ist meine Familie.
+          translation:
+            vi: Đây là gia đình tôi.
+        - target: Meine Familie ist klein.
+          translation:
+            vi: Gia đình tôi ít người.
+      pronunciation_note:
+        vi: "Nhấn âm \"mi\" kéo dài; đuôi -lie đọc lướt như \"li-ơ\": fa-MI-li-ơ."
+
+  - key: de:item:a1u02-mutter
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Mutter, ¨-"
+      ipa: /ˈmʊtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẹ (số nhiều die Mütter)
+      examples:
+        - target: Meine Mutter ist sehr nett.
+          translation:
+            vi: Mẹ tôi rất dễ mến.
+      pronunciation_note:
+        vi: "-er cuối đọc như \"a\" nhẹ, không cuộn r: MU-ta."
+
+  - key: de:item:a1u02-vater
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Vater, ¨-"
+      ipa: /ˈfaːtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố, cha (số nhiều die Väter)
+      examples:
+        - target: Mein Vater heißt Hung.
+          translation:
+            vi: Bố tôi tên là Hùng.
+      pronunciation_note:
+        vi: "V ở đây đọc như \"ph\" tiếng Việt: FA-ta."
+
+  - key: de:item:a1u02-eltern
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Eltern (Pl.)"
+      ipa: /ˈɛltɐn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố mẹ, cha mẹ (chỉ dùng ở số nhiều)
+      examples:
+        - target: Meine Eltern wohnen in Hue.
+          translation:
+            vi: Bố mẹ tôi sống ở Huế.
+      confusion:
+        vi: "Die Eltern là số nhiều nên đi với meine và động từ số nhiều: Meine Eltern sind nett."
+
+  - key: de:item:a1u02-bruder
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Bruder, ¨-"
+      ipa: /ˈbʁuːdɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh trai hoặc em trai (số nhiều die Brüder)
+      examples:
+        - target: Mein Bruder ist 15 Jahre alt.
+          translation:
+            vi: Em trai tôi 15 tuổi.
+      pronunciation_note:
+        vi: "r đầu âm tiết đọc nhẹ ở cuối họng, gần \"g\" tiếng Việt; -er cuối đọc như \"a\" nhẹ."
+
+  - key: de:item:a1u02-schwester
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Schwester, -n"
+      ipa: /ˈʃvɛstɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chị gái hoặc em gái
+      examples:
+        - target: Meine Schwester ist groß.
+          translation:
+            vi: Chị gái tôi cao.
+      pronunciation_note:
+        vi: "Schw đọc như \"s\" uốn lưỡi + \"v\": SCHVES-ta."
+
+  - key: de:item:a1u02-geschwister
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Geschwister (Pl.)"
+      ipa: /ɡəˈʃvɪstɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh chị em ruột (dùng ở số nhiều, gồm cả anh/em trai và chị/em gái)
+      examples:
+        - target: Meine Geschwister sind lustig.
+          translation:
+            vi: Anh chị em của tôi rất vui tính.
+      confusion:
+        vi: "Tiếng Việt nói \"anh chị em\"; tiếng Đức gộp lại thành một từ số nhiều die Geschwister."
+
+  - key: de:item:a1u02-kind
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Kind, -er"
+      ipa: /kɪnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đứa trẻ; con (của bố mẹ)
+      examples:
+        - target: Das Kind ist noch klein.
+          translation:
+            vi: Đứa bé còn nhỏ.
+        - target: Meine Eltern haben zwei Kinder.
+          translation:
+            vi: Bố mẹ tôi có hai người con.
+      pronunciation_note:
+        vi: "d cuối từ đọc thành \"t\": Kind = \"kint\"."
+      confusion:
+        vi: "das Kind là giống trung dù chỉ người; đại từ thay thế là es: Das Kind ist klein. Es ist drei Jahre alt."
+
+  - key: de:item:a1u02-gross
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: groß
+      ipa: /ɡʁoːs/
+      pos: tính từ
+    back:
+      meaning:
+        vi: to, lớn; (người) cao
+      examples:
+        - target: Mein Vater ist groß.
+          translation:
+            vi: Bố tôi cao.
+        - target: Hanoi ist groß.
+          translation:
+            vi: Hà Nội rộng lớn.
+      pronunciation_note:
+        vi: "o dài, ß đọc như \"x\": groß = \"grôôx\"."
+
+  - key: de:item:a1u02-klein
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: klein
+      ipa: /klaɪ̯n/
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhỏ, bé; (người) thấp
+      examples:
+        - target: Meine Schwester ist noch klein.
+          translation:
+            vi: Em gái tôi còn nhỏ.
+      pronunciation_note:
+        vi: "ei đọc là \"ai\": klein = \"klai-n\"."
+
+  - key: de:item:a1u02-zwilling
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Zwilling, -e"
+      ipa: /ˈt͡svɪlɪŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh/chị/em sinh đôi; die Zwillinge = cặp sinh đôi
+      examples:
+        - target: Mai und Lan sind Zwillinge.
+          translation:
+            vi: Mai và Lan là chị em sinh đôi.
+      pronunciation_note:
+        vi: "z đọc \"ts\", w đọc \"v\": TSVI-ling."
+
+  - key: de:item:a1u02-einzelkind
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Einzelkind, -er"
+      ipa: /ˈaɪ̯nt͡sl̩kɪnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con một (không có anh chị em)
+      examples:
+        - target: Ich bin Einzelkind.
+          translation:
+            vi: Tôi là con một.
+      confusion:
+        vi: "Từ ghép lấy giống của phần cuối: das Kind → das Einzelkind."
+
+  - key: de:item:a1u02-lustig
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: lustig
+      ipa: /ˈlʊstɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: vui tính, hài hước
+      examples:
+        - target: Mein Bruder ist sehr lustig.
+          translation:
+            vi: Anh trai tôi rất vui tính.
+      pronunciation_note:
+        vi: "-ig cuối từ đọc như \"ich\": LUS-tich."
+
+  # ---------------- bài 2: haben và số nhiều ----------------
+  - key: de:item:a1u02-g-haben
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Haben nghĩa là \"có\". Ở du và er/sie/es, chữ b biến mất: du hast, er hat – phải học thuộc."
+      examples:
+        - target: Ich habe zwei Kinder.
+          translation:
+            vi: Tôi có hai con.
+        - target: Hast du Geschwister?
+          translation:
+            vi: Bạn có anh chị em không?
+        - target: Meine Tante hat drei Töchter.
+          translation:
+            vi: Cô tôi có ba con gái.
+      confusion:
+        vi: "Nói tuổi dùng sein, không dùng haben: Ich bin 25 Jahre alt (không nói Ich habe 25 Jahre)."
+
+  - key: de:item:a1u02-g-plural
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Plural: die Söhne, die Tanten, die Kinder, die Omas, die Onkel"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Số nhiều có 5 kiểu: -e (Söhne), -(e)n (Tanten), -er (Kinder), -s (Omas), không thêm đuôi (Onkel); nhiều từ thêm biến âm (Brüder, Töchter). Mạo từ số nhiều luôn là die. Vì có nhiều kiểu, hãy học mỗi danh từ kèm số nhiều."
+      examples:
+        - target: Ich habe zwei Brüder.
+          translation:
+            vi: Tôi có hai anh em trai.
+        - target: Die Kinder sind groß.
+          translation:
+            vi: Những đứa con đã lớn.
+      confusion:
+        vi: "Mẹo: die …-e → -n (Tante → Tanten); -in → -innen (Freundin → Freundinnen); der/das …-er, -el, -chen không đổi (Onkel → Onkel); từ mượn -o, -a, -y → -s (Auto → Autos)."
+
+  - key: de:item:a1u02-sohn
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Sohn, ¨-e"
+      ipa: /zoːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con trai (số nhiều die Söhne)
+      examples:
+        - target: Mein Sohn heißt Minh.
+          translation:
+            vi: Con trai tôi tên là Minh.
+      pronunciation_note:
+        vi: "s đầu từ đọc như \"d\" nhẹ (giọng Bắc), h không đọc, o dài: \"dôôn\"."
+
+  - key: de:item:a1u02-tochter
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Tochter, ¨-"
+      ipa: /ˈtɔxtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con gái (số nhiều die Töchter)
+      examples:
+        - target: Meine Tochter ist zehn Jahre alt.
+          translation:
+            vi: Con gái tôi mười tuổi.
+      pronunciation_note:
+        vi: "ch sau o đọc như \"kh\" tiếng Việt: TOKH-ta."
+
+  - key: de:item:a1u02-grosseltern
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Großeltern (Pl.)"
+      ipa: /ˈɡʁoːsˌʔɛltɐn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ông bà (cả bên nội và bên ngoại)
+      examples:
+        - target: Meine Großeltern wohnen in Hue.
+          translation:
+            vi: Ông bà tôi sống ở Huế.
+      confusion:
+        vi: "Tiếng Đức không phân biệt nội/ngoại bằng từ riêng như tiếng Việt."
+
+  - key: de:item:a1u02-oma
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Oma, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bà (cách gọi thân mật; trang trọng hơn là die Großmutter)
+      examples:
+        - target: Meine Oma ist 80 Jahre alt.
+          translation:
+            vi: Bà tôi 80 tuổi.
+
+  - key: de:item:a1u02-opa
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Opa, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: ông (cách gọi thân mật; trang trọng hơn là der Großvater)
+      examples:
+        - target: Mein Opa ist sehr lustig.
+          translation:
+            vi: Ông tôi rất vui tính.
+
+  - key: de:item:a1u02-onkel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Onkel, -"
+      ipa: /ˈɔŋkl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chú, bác (trai), cậu, dượng
+      examples:
+        - target: Mein Onkel wohnt in Deutschland.
+          translation:
+            vi: Chú tôi sống ở Đức.
+      confusion:
+        vi: "Một từ der Onkel thay cho chú, bác, cậu, dượng của tiếng Việt; số nhiều giữ nguyên: die Onkel."
+
+  - key: de:item:a1u02-tante
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Tante, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cô, dì, bác (gái), thím, mợ
+      examples:
+        - target: Meine Tante hat drei Kinder.
+          translation:
+            vi: Cô tôi có ba người con.
+
+  - key: de:item:a1u02-verheiratet
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: verheiratet
+      ipa: /fɛɐ̯ˈhaɪ̯ʁaːtət/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã kết hôn, đã có gia đình
+      examples:
+        - target: Ich bin verheiratet.
+          translation:
+            vi: Tôi đã kết hôn.
+        - target: Sind Sie verheiratet?
+          translation:
+            vi: Anh/chị đã kết hôn chưa?
+      confusion:
+        vi: "Dùng với sein: Ich bin verheiratet (không nói Ich habe verheiratet)."
+
+  - key: de:item:a1u02-ledig
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: ledig
+      ipa: /ˈleːdɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: độc thân, chưa kết hôn (từ hay gặp trong mẫu đơn)
+      examples:
+        - target: Mein Bruder ist ledig.
+          translation:
+            vi: Anh trai tôi chưa kết hôn.
+
+  - key: de:item:a1u02-geschieden
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: geschieden
+      ipa: /ɡəˈʃiːdn̩/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã ly hôn
+      examples:
+        - target: Meine Tante ist geschieden.
+          translation:
+            vi: Cô tôi đã ly hôn.
+      pronunciation_note:
+        vi: "ie đọc là \"i\" dài: gơ-SCHII-đơn."
+
+  - key: de:item:a1u02-cousin
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Cousin, -s / die Cousine, -n"
+      ipa: /kuˈzɛ̃ː/ · /kuˈziːnə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh/em họ (nam) / chị/em họ (nữ)
+      examples:
+        - target: Ich habe zwei Cousinen.
+          translation:
+            vi: Tôi có hai chị em họ.
+        - target: Mein Cousin heißt Tuan.
+          translation:
+            vi: Anh họ tôi tên là Tuấn.
+      pronunciation_note:
+        vi: "Từ gốc Pháp: Cousin đọc \"ku-ZANG\" (âm mũi), Cousine đọc \"ku-ZII-nơ\"."
+
+  - key: de:item:a1u02-enkel
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Enkel, -"
+      ipa: /ˈɛŋkl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cháu (của ông bà); số nhiều die Enkel. Cháu gái là die Enkelin (đuôi -in học ở bài 4).
+      examples:
+        - target: Meine Großeltern haben sechs Enkel.
+          translation:
+            vi: Ông bà tôi có sáu đứa cháu.
+
+  # ---------------- bài 3: ein, kein, nicht, doch ----------------
+  - key: de:item:a1u02-g-unbestimmter-artikel
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "ein / eine: ein Hund, eine Katze, ein Auto"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Mạo từ không xác định (\"một\"): ein cho der và das, eine cho die. Số nhiều không có ein: Das sind Katzen."
+      examples:
+        - target: Das ist ein Hund.
+          translation:
+            vi: Đây là một con chó.
+        - target: Das ist eine Katze und das ist ein Kaninchen.
+          translation:
+            vi: Đây là một con mèo và đây là một con thỏ.
+      confusion:
+        vi: "Trong bài này ein/eine chỉ dùng ở chủ ngữ và sau sein (Das ist ein Hund); sau haben, danh từ giống đực đổi thành einen – học ở Unit 3."
+
+  - key: de:item:a1u02-g-negation-nicht-kein
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "kein / keine – nicht"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "kein (= nicht + ein) phủ định danh từ đi với ein hoặc không có mạo từ: kein Hund, keine Katze, keine Kinder. nicht phủ định động từ, tính từ và danh từ có der/die/das hoặc mein/dein: Das ist nicht mein Hund. nicht đứng cuối câu đơn giản, nhưng đứng trước tính từ và nơi chốn."
+      examples:
+        - target: Das ist kein Hund. Das ist eine Katze.
+          translation:
+            vi: Đây không phải là con chó. Đây là con mèo.
+        - target: Ich habe keine Kinder.
+          translation:
+            vi: Tôi không có con.
+        - target: Mein Fahrrad ist nicht neu.
+          translation:
+            vi: Xe đạp của tôi không mới.
+      confusion:
+        vi: "Không nói nicht ein Hund hay kein mein Hund: dùng kein Hund và nicht mein Hund."
+
+  - key: de:item:a1u02-g-doch
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "doch: Hast du keine Zeit? – Doch!"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Khi câu hỏi có kein hoặc nicht, muốn trả lời \"có\" thì dùng doch, không dùng ja. Đồng ý với ý phủ định thì trả lời nein."
+      examples:
+        - target: Hast du keine Geschwister? – Doch, ich habe zwei Schwestern.
+          translation:
+            vi: Bạn không có anh chị em à? – Có chứ, mình có hai chị em gái.
+        - target: Bist du nicht verheiratet? – Nein, ich bin ledig.
+          translation:
+            vi: Bạn chưa kết hôn à? – Ừ, mình còn độc thân.
+      confusion:
+        vi: "Tiếng Việt \"Ừ, không có\" là đồng ý với câu phủ định – tiếng Đức nói Nein. \"Có chứ!\" mới là Doch."
+
+  - key: de:item:a1u02-haustier
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Haustier, -e"
+      ipa: /ˈhaʊ̯sˌtiːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vật nuôi trong nhà, thú cưng
+      examples:
+        - target: Hast du ein Haustier?
+          translation:
+            vi: Bạn có nuôi thú cưng không?
+      confusion:
+        vi: "das Haus + das Tier: từ ghép lấy giống của phần cuối (das Tier)."
+
+  - key: de:item:a1u02-hund
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hund, -e"
+      ipa: /hʊnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con chó
+      examples:
+        - target: Das ist mein Hund. Er heißt Max.
+          translation:
+            vi: Đây là con chó của tôi. Nó tên là Max.
+      pronunciation_note:
+        vi: "d cuối đọc thành \"t\": \"hunt\"."
+      confusion:
+        vi: "der Hund là giống đực nên đại từ thay thế là er (Er heißt Max)."
+
+  - key: de:item:a1u02-katze
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Katze, -n"
+      ipa: /ˈkat͡sə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con mèo
+      examples:
+        - target: Ich habe eine Katze.
+          translation:
+            vi: Tôi có một con mèo.
+      pronunciation_note:
+        vi: "tz đọc \"ts\": KAT-sơ."
+
+  - key: de:item:a1u02-auto
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Auto, -s"
+      ipa: /ˈaʊ̯to/
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe ô tô, xe hơi
+      examples:
+        - target: Das Auto ist neu.
+          translation:
+            vi: Chiếc xe hơi này mới.
+
+  - key: de:item:a1u02-fahrrad
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Fahrrad, ¨-er"
+      ipa: /ˈfaːɐ̯ˌʁaːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe đạp (số nhiều die Fahrräder)
+      examples:
+        - target: Mein Fahrrad ist alt.
+          translation:
+            vi: Xe đạp của tôi cũ.
+
+  - key: de:item:a1u02-foto
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Foto, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bức ảnh
+      examples:
+        - target: Das Foto ist schön.
+          translation:
+            vi: Bức ảnh đẹp.
+
+  - key: de:item:a1u02-hobby
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Hobby, -s"
+      ipa: /ˈhɔbi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sở thích
+      examples:
+        - target: Mein Hobby ist Fußball.
+          translation:
+            vi: Sở thích của tôi là bóng đá.
+
+  - key: de:item:a1u02-vogel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Vogel, ¨-"
+      ipa: /ˈfoːɡl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con chim (số nhiều die Vögel)
+      examples:
+        - target: Der Vogel ist klein.
+          translation:
+            vi: Con chim nhỏ.
+      pronunciation_note:
+        vi: "V đọc như \"ph\": FÔ-gơl."
+
+  - key: de:item:a1u02-kaninchen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Kaninchen, -"
+      ipa: /kaˈniːnçən/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con thỏ (nuôi trong nhà)
+      examples:
+        - target: Meine Kinder haben zwei Kaninchen.
+          translation:
+            vi: Các con tôi nuôi hai con thỏ.
+      confusion:
+        vi: "Đuôi -chen luôn là giống trung (das) và số nhiều không đổi: die Kaninchen."
+
+  - key: de:item:a1u02-hamster
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hamster, -"
+      ipa: /ˈhamstɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: con chuột hamster, chuột đồng cảnh (số nhiều die Hamster)
+      examples:
+        - target: Das ist kein Hamster. Das ist ein Kaninchen.
+          translation:
+            vi: Đây không phải là con hamster. Đây là con thỏ.
+      confusion:
+        vi: "Danh từ giống đực tận cùng -er không đổi ở số nhiều: der Hamster → die Hamster."
+
+  - key: de:item:a1u02-laptop
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Laptop, -s"
+      ipa: /ˈlɛptɔp/
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy tính xách tay
+      examples:
+        - target: Das ist mein Laptop. Er ist neu.
+          translation:
+            vi: Đây là máy tính xách tay của tôi. Nó mới.
+
+  # ---------------- bài 4: nghề nghiệp ----------------
+  - key: de:item:a1u02-g-beruf-ohne-artikel
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Beruf ohne Artikel: Ich bin Lehrerin."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Nói nghề với sein hoặc arbeiten als, tiếng Đức không dùng mạo từ: Ich bin Ingenieur. Er arbeitet als Koch. Khác tiếng Anh (a teacher), giống tiếng Việt (tôi là giáo viên)."
+      examples:
+        - target: Ich bin Ingenieur.
+          translation:
+            vi: Tôi là kỹ sư.
+        - target: Meine Schwester arbeitet als Verkäuferin.
+          translation:
+            vi: Chị tôi làm nhân viên bán hàng.
+      confusion:
+        vi: "Phủ định nghề dùng kein: Ich bin kein Arzt (tôi không phải bác sĩ)."
+
+  - key: de:item:a1u02-g-feminin-in
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "-in: der Lehrer → die Lehrerin, der Arzt → die Ärztin"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Danh từ chỉ người nữ thêm -in và luôn là giống cái (die); số nhiều -innen. Một số từ thêm biến âm: Arzt → Ärztin, Koch → Köchin."
+      examples:
+        - target: Meine Mutter ist Ärztin.
+          translation:
+            vi: Mẹ tôi là bác sĩ.
+        - target: Lan ist Köchin und Mai ist Verkäuferin.
+          translation:
+            vi: Lan là đầu bếp, còn Mai là nhân viên bán hàng.
+      confusion:
+        vi: "Với người nữ, dùng dạng -in: Sie ist Lehrerin (không nói Sie ist Lehrer)."
+
+  - key: de:item:a1u02-beruf
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Beruf, -e"
+      ipa: /bəˈʁuːf/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghề nghiệp
+      examples:
+        - target: Was sind Sie von Beruf?
+          translation:
+            vi: Anh/chị làm nghề gì?
+      confusion:
+        vi: "\"von Beruf\" là cụm cố định: Ich bin Koch von Beruf (nghề của tôi là đầu bếp)."
+
+  - key: de:item:a1u02-arbeiten
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: arbeiten
+      ipa: /ˈaʁbaɪ̯tn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: làm việc (du arbeitest, er arbeitet)
+      examples:
+        - target: Ich arbeite in Hamburg.
+          translation:
+            vi: Tôi làm việc ở Hamburg.
+        - target: Arbeitest du als Koch?
+          translation:
+            vi: Bạn làm đầu bếp à?
+      confusion:
+        vi: "Gốc tận cùng -t nên thêm -e- trước đuôi: du arbeitest, er arbeitet, ihr arbeitet."
+
+  - key: de:item:a1u02-machen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: machen
+      ipa: /ˈmaxn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: làm
+      examples:
+        - target: Was machen Sie beruflich?
+          translation:
+            vi: Anh/chị làm nghề gì?
+        - target: Was machst du?
+          translation:
+            vi: Bạn làm gì (đấy)?
+      pronunciation_note:
+        vi: "ch sau a đọc như \"kh\": MA-khơn."
+
+  - key: de:item:a1u02-arzt
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Arzt, ¨-e / die Ärztin, -nen"
+      ipa: /aːɐ̯t͡st/ · /ˈɛːɐ̯t͡stɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ (nam / nữ); số nhiều die Ärzte, die Ärztinnen
+      examples:
+        - target: Meine Mutter ist Ärztin.
+          translation:
+            vi: Mẹ tôi là bác sĩ.
+      pronunciation_note:
+        vi: "Cụm phụ âm cuối -rzt đọc liền: \"aatst\"; Ärztin có biến âm ä."
+
+  - key: de:item:a1u02-ingenieur
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Ingenieur, -e / die Ingenieurin, -nen"
+      ipa: /ɪnʒeˈni̯øːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỹ sư (nam / nữ)
+      examples:
+        - target: Mein Vater ist Ingenieur.
+          translation:
+            vi: Bố tôi là kỹ sư.
+      pronunciation_note:
+        vi: "Từ gốc Pháp: g đọc như \"j\" tiếng Pháp, eu đọc như \"ơ\" tròn môi, nhấn âm cuối: in-je-ni-ƠƠR."
+
+  - key: de:item:a1u02-verkaeufer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Verkäufer, - / die Verkäuferin, -nen"
+      ipa: /fɛɐ̯ˈkɔɪ̯fɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên bán hàng, người bán hàng (nam / nữ)
+      examples:
+        - target: Meine Tante ist Verkäuferin.
+          translation:
+            vi: Cô tôi là nhân viên bán hàng.
+      pronunciation_note:
+        vi: "äu đọc là \"oi\": fe-KOI-fa."
+
+  - key: de:item:a1u02-koch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Koch, ¨-e / die Köchin, -nen"
+      ipa: /kɔx/ · /ˈkœçɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu bếp (nam / nữ); số nhiều die Köche, die Köchinnen
+      examples:
+        - target: Mein Bruder ist Koch.
+          translation:
+            vi: Anh trai tôi là đầu bếp.
+      pronunciation_note:
+        vi: "Koch: ch sau o đọc \"kh\"; Köchin: ch sau ö đọc như \"h\" xì nhẹ."
+
+  - key: de:item:a1u02-pfleger
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Pfleger, - / die Pflegerin, -nen"
+      ipa: /ˈp͡fleːɡɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều dưỡng, người chăm sóc (nam / nữ)
+      examples:
+        - target: Lan arbeitet als Pflegerin.
+          translation:
+            vi: Lan làm điều dưỡng.
+      pronunciation_note:
+        vi: "pf đọc liền \"p\" + \"ph\", đừng bỏ âm p."
+      confusion:
+        vi: "Tên nghề chính thức hiện nay là Pflegefachfrau / Pflegefachmann; trong giao tiếp vẫn nói Pfleger/Pflegerin."
+
+  - key: de:item:a1u02-firma
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Firma, Firmen"
+      pos: danh từ
+    back:
+      meaning:
+        vi: công ty (số nhiều die Firmen)
+      examples:
+        - target: Die Firma ist klein.
+          translation:
+            vi: Công ty này nhỏ.
+      confusion:
+        vi: "Số nhiều thay -a bằng -en: die Firma → die Firmen."
+
+  - key: de:item:a1u02-krankenhaus
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Krankenhaus, ¨-er"
+      ipa: /ˈkʁaŋkn̩ˌhaʊ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh viện (số nhiều die Krankenhäuser)
+      examples:
+        - target: Das Krankenhaus ist groß.
+          translation:
+            vi: Bệnh viện rất lớn.
+        - target: Sie arbeitet im Krankenhaus.
+          translation:
+            vi: Cô ấy làm việc ở bệnh viện.
+      confusion:
+        vi: "\"im Krankenhaus\" (ở bệnh viện) học như một cụm; cách dùng in + Dativ học ở Unit 5."
+
+  - key: de:item:a1u02-als
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "als (arbeiten als …)"
+      pos: giới từ
+    back:
+      meaning:
+        vi: "với vai trò là, làm (nghề): arbeiten als + nghề, không có mạo từ"
+      examples:
+        - target: Ich arbeite als Ingenieur.
+          translation:
+            vi: Tôi làm kỹ sư.
+
+  - key: de:item:a1u02-hausmann
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hausmann, ¨-er / die Hausfrau, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: người nội trợ (nam / nữ)
+      examples:
+        - target: Mein Vater ist Hausmann und meine Mutter ist Ärztin.
+          translation:
+            vi: Bố tôi ở nhà làm nội trợ, còn mẹ tôi là bác sĩ.
+      confusion:
+        vi: "Dạng nữ không thêm -in mà đổi phần cuối: der Mann → die Frau (Hausmann → Hausfrau)."
+
+  - key: de:item:a1u02-mechaniker
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Mechaniker, - / die Mechanikerin, -nen"
+      ipa: /meˈçaːnɪkɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thợ cơ khí, thợ sửa xe (nam / nữ)
+      examples:
+        - target: Er ist Mechaniker von Beruf.
+          translation:
+            vi: Nghề của anh ấy là thợ cơ khí.
+      pronunciation_note:
+        vi: "ch ở đây đọc như \"h\" xì nhẹ, nhấn âm \"cha\": me-HA-ni-ka."
+
+  - key: de:item:a1u02-erzieher
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Erzieher, - / die Erzieherin, -nen"
+      ipa: /ɛɐ̯ˈt͡siːɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giáo viên mầm non, người giữ trẻ (nam / nữ)
+      examples:
+        - target: Meine Schwester ist Erzieherin.
+          translation:
+            vi: Chị tôi là giáo viên mầm non.
+
+  - key: de:item:a1u02-rentner
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Rentner, - / die Rentnerin, -nen"
+      ipa: /ˈʁɛntnɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người về hưu (nam / nữ)
+      examples:
+        - target: Mein Opa ist Rentner.
+          translation:
+            vi: Ông tôi đã nghỉ hưu.
+
+  - key: de:item:a1u02-arbeitslos
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: arbeitslos
+      ipa: /ˈaʁbaɪ̯t͡sloːs/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thất nghiệp
+      examples:
+        - target: Mein Onkel ist arbeitslos.
+          translation:
+            vi: Chú tôi đang thất nghiệp.

@@ -1,0 +1,399 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u02-kein-nicht
+order_index: 3
+level: a1
+title:
+  vi: ein, kein, nicht, doch (Das ist kein Hund!)
+objectives:
+  - vi: Gọi tên vật nuôi và đồ vật cá nhân với ein/eine.
+  - vi: Phủ định danh từ bằng kein/keine và phủ định động từ, tính từ, danh từ có mạo từ xác định bằng nicht.
+  - vi: Trả lời "có" cho câu hỏi phủ định bằng doch.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u02-ich-habe-zwei-kinder]
+items:
+  - item: de:item:a1u02-g-unbestimmter-artikel
+  - item: de:item:a1u02-g-negation-nicht-kein
+  - item: de:item:a1u02-g-doch
+  - item: de:item:a1u02-haustier
+  - item: de:item:a1u02-hund
+  - item: de:item:a1u02-katze
+  - item: de:item:a1u02-auto
+  - item: de:item:a1u02-fahrrad
+  - item: de:item:a1u02-foto
+  - item: de:item:a1u02-hobby
+  - item: de:item:a1u02-vogel
+  - item: de:item:a1u02-kaninchen
+  - item: de:item:a1u02-hamster
+  - item: de:item:a1u02-laptop
+  - item: de:item:a1u01-g-ja-nein-frage
+    role: reuse
+  - item: de:item:a1u02-g-haben
+    role: reuse
+  - item: de:item:a1u02-g-possessiv-singular
+    role: reuse
+  - item: de:item:p0u1-zeit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được \"Đây là một con chó\", \"Tôi không có xe hơi\", \"Đây không phải xe đạp của tôi\" và trả lời \"Có chứ!\" khi ai đó hỏi \"Bạn không có … à?\"."
+  - type: explain
+    text:
+      vi: "ein/eine giống \"một\", dùng khi nói tới một vật chưa xác định: Das ist ein Hund. Giống đực (der) và giống trung (das) → ein; giống cái (die) → eine. Số nhiều không có ein: Das sind Katzen."
+  - type: explain
+    text:
+      vi: "Muốn phủ định một danh từ đi với ein hoặc không có mạo từ, tiếng Đức dùng kein (= nicht + ein), không nói nicht ein. kein đổi đuôi như ein: kein Hund, keine Katze, kein Auto; số nhiều dùng keine: Ich habe keine Kinder."
+  - type: explain
+    text:
+      vi: "nicht phủ định động từ, tính từ và danh từ có der/die/das hoặc mein/dein…: Lan kommt nicht. Das Auto ist nicht neu. Das ist nicht mein Fahrrad. Trong câu đơn giản nicht đứng cuối câu, nhưng đứng trước tính từ và trước nơi chốn: Er wohnt nicht in Hanoi."
+  - type: explain
+    text:
+      vi: "Tiếng Việt trả lời câu hỏi phủ định rất dễ nhầm: \"Bạn không có thời gian à? – Ừ, không có\" hay \"Có chứ\". Tiếng Đức rõ ràng: muốn nói CÓ thì dùng Doch, đồng ý là KHÔNG thì dùng Nein. Hast du keine Zeit? – Doch! (Có chứ, mình rảnh.) – Nein. (Ừ, mình không rảnh.)"
+  - type: explain
+    text:
+      vi: "Bài này chỉ dùng kein/ein với danh từ giống đực ở chủ ngữ hoặc sau sein (Das ist kein Hund). Sau haben, danh từ giống đực đổi dạng (einen, keinen) – bạn học ở Unit 3; vì vậy ở đây chỉ nói Ich habe eine Katze, kein Auto, keine Kinder."
+  - type: deep_explain
+    text:
+      vi: "Ja chỉ dùng để trả lời câu hỏi khẳng định (Hast du ein Auto? – Ja.). Với câu hỏi có kein/nicht, ja gần như không dùng: muốn phản bác thì nói Doch, kèm câu đầy đủ cho rõ (Doch, ich habe eine Katze). Kein và nicht không đi chung với một danh từ: nói kein Hund hoặc nicht mein Hund, không có \"kein mein Hund\" hay \"nicht ein Hund\". Danh từ không đếm được cũng phủ định bằng kein: Ich habe keine Zeit. Câu \"Mein Fahrrad ist das nicht\" (đảo vị trí) cũng đúng, dùng khi muốn nhấn mạnh."
+  - type: example
+    target: "Ist das ein Hund? – Nein, das ist kein Hund. Das ist eine Katze."
+    target_lang: de
+    translation:
+      vi: "Đó là con chó à? – Không, đó không phải là con chó. Đó là con mèo."
+    note:
+      vi: "der Hund → ein/kein Hund; die Katze → eine Katze. Kein thay cho \"nicht ein\"."
+  - type: example
+    target: "Hast du ein Auto? – Nein, ich habe kein Auto. Ich habe ein Fahrrad."
+    target_lang: de
+    translation:
+      vi: "Bạn có xe hơi không? – Không, mình không có xe hơi. Mình có một chiếc xe đạp."
+    note:
+      vi: "Nói với bạn (du). das Auto, das Fahrrad là giống trung nên sau haben vẫn là ein/kein."
+  - type: example
+    target: "Ist das dein Laptop? – Nein, das ist nicht mein Laptop."
+    target_lang: de
+    translation:
+      vi: "Đây là máy tính của bạn à? – Không, đây không phải máy tính của mình."
+    note:
+      vi: "Có mein/dein thì phủ định bằng nicht, đặt trước mein: nicht mein Laptop."
+  - type: example
+    target: "Hast du keine Haustiere? – Doch, ich habe zwei Kaninchen!"
+    target_lang: de
+    translation:
+      vi: "Bạn không nuôi thú cưng à? – Có chứ, mình nuôi hai con thỏ!"
+    note:
+      vi: "Câu hỏi có keine, người trả lời muốn nói CÓ nên bắt đầu bằng Doch."
+  - type: example
+    target: Mein Bruder wohnt nicht in Hanoi. Er wohnt in Hue.
+    target_lang: de
+    translation:
+      vi: Anh trai tôi không sống ở Hà Nội. Anh ấy sống ở Huế.
+    note:
+      vi: "nicht đứng trước nơi chốn (in Hanoi)."
+  - type: example
+    target: "Das Foto ist nicht schön. – Doch, das Foto ist sehr schön!"
+    target_lang: de
+    translation:
+      vi: "Bức ảnh này không đẹp. – Có mà, bức ảnh rất đẹp!"
+    note:
+      vi: "Doch cũng dùng để phản bác một câu nói phủ định, không chỉ câu hỏi."
+  - type: example
+    target: "Hast du ein Hobby? – Ja, Vögel! Ich habe zwei Vögel."
+    target_lang: de
+    translation:
+      vi: "Bạn có sở thích gì không? – Có, chim! Mình nuôi hai con chim."
+    note:
+      vi: "das Hobby giống trung → ein Hobby. der Vogel số nhiều là die Vögel (thêm biến âm)."
+  - type: common_mistake
+    wrong: Das ist nicht ein Hund.
+    right: Das ist kein Hund.
+    target_lang: de
+    note:
+      vi: "Danh từ đi với ein thì phủ định bằng kein, không dùng nicht ein."
+  - type: common_mistake
+    wrong: "Hast du kein Auto? – Ja, ich habe ein Auto."
+    right: "Hast du kein Auto? – Doch, ich habe ein Auto."
+    target_lang: de
+    note:
+      vi: "Câu hỏi phủ định mà bạn muốn trả lời CÓ thì dùng Doch, không dùng Ja."
+  - type: common_mistake
+    wrong: Ich habe nicht Kinder.
+    right: Ich habe keine Kinder.
+    target_lang: de
+    note:
+      vi: "Danh từ không có mạo từ (số nhiều) phủ định bằng keine."
+  - type: common_mistake
+    wrong: Das ist kein mein Fahrrad.
+    right: Das ist nicht mein Fahrrad.
+    target_lang: de
+    note:
+      vi: "Có mein/dein/sein… thì dùng nicht, không dùng kein."
+  - type: summary
+    points:
+      - vi: "ein (der, das) / eine (die); số nhiều không có ein."
+      - vi: "kein = nicht + ein: kein Hund, keine Katze, kein Auto, keine Kinder."
+      - vi: "nicht cho động từ, tính từ, danh từ có der/die/das hoặc mein/dein: Das ist nicht mein Hund."
+      - vi: "nicht đứng cuối câu đơn giản; đứng trước tính từ và nơi chốn."
+      - vi: "Câu hỏi phủ định: muốn nói CÓ → Doch; đồng ý là KHÔNG → Nein."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u02l3-mcq-eine-katze
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-unbestimmter-artikel
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: \"Das ist ___ Katze.\" (Đây là một con mèo.)"
+      stem_lang: vi
+      options:
+        - { id: n1e, text: eine, lang: de }
+        - { id: n2e, text: ein, lang: de }
+        - { id: n3e, text: der, lang: de }
+        - { id: n4e, text: das, lang: de }
+    answer:
+      correct_option_id: n1e
+    explanation:
+      vi: "die Katze là giống cái nên \"một con mèo\" là eine Katze. Ein dùng cho der/das; der Katze, das Katze sai giống và không mang nghĩa \"một\"."
+    display_answer: eine
+
+  - key: de:exercise:a1u02l3-mcq-kein-hund
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-negation-nicht-kein
+    prompt:
+      stem: "Câu nào đúng để nói \"Đó không phải là con chó\"?"
+      stem_lang: vi
+      options:
+        - { id: g1k, text: Das ist kein Hund., lang: de }
+        - { id: g2k, text: Das ist nicht ein Hund., lang: de }
+        - { id: g3k, text: Das ist keine Hund., lang: de }
+        - { id: g4k, text: Das ist nicht Hund., lang: de }
+    answer:
+      correct_option_id: g1k
+    explanation:
+      vi: "Hund là danh từ đếm được, đi với ein, nên phủ định bằng kein (= nicht + ein). der Hund giống đực nên là kein, không phải keine."
+    display_answer: Das ist kein Hund.
+
+  - key: de:exercise:a1u02l3-listen-doch-katze
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u02-g-doch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hast du keine Katze? Doch, ich habe eine Katze.
+      options:
+        - { id: d1c, text: "Bạn không có mèo à? – Có chứ, mình có một con mèo.", lang: vi }
+        - { id: d2c, text: "Bạn không có mèo à? – Ừ, mình không có mèo.", lang: vi }
+        - { id: d3c, text: "Bạn có mèo không? – Không, mình không có mèo.", lang: vi }
+        - { id: d4c, text: "Bạn không có chó à? – Có chứ, mình có một con chó.", lang: vi }
+    answer:
+      correct_option_id: d1c
+    explanation:
+      vi: "Câu hỏi có keine (phủ định), câu trả lời bắt đầu bằng Doch nên nghĩa là \"Có chứ\". Katze là con mèo (chó là Hund)."
+    display_answer: "Bạn không có mèo à? – Có chứ, mình có một con mèo."
+
+  - key: de:exercise:a1u02l3-fill-kein-ein
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-negation-nicht-kein
+    prompt:
+      template: "Das ist {{b1}} Hund. Das ist {{b2}} Kaninchen!"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Đây không phải là con chó. Đây là một con thỏ!"
+        - "Gợi ý: der Hund là giống đực, das Kaninchen là giống trung."
+    answer:
+      blanks:
+        b1: [kein]
+        b2: [ein]
+    known_wrong:
+      - answer: nicht ein
+        feedback_vi: Không nói nicht ein - phủ định danh từ đi với ein bằng kein.
+        error_tag: negation_kein
+      - answer: keine
+        feedback_vi: der Hund là giống đực nên dùng kein, không có -e.
+        error_tag: gender
+      - answer: eine
+        feedback_vi: das Kaninchen là giống trung nên dùng ein, không có -e.
+        error_tag: gender
+    explanation:
+      vi: "Phủ định \"một con chó\" → kein Hund (kein = nicht + ein). Câu sau khẳng định → ein Kaninchen. Hund giống đực, Kaninchen giống trung nên đều không thêm -e."
+    display_answer: Das ist kein Hund. Das ist ein Kaninchen!
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u02l3-fill-keine-geschwister
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-negation-nicht-kein
+    prompt:
+      template: "A: Hast du Geschwister? B: Nein, ich habe {{b1}} Geschwister. Ich bin Einzelkind."
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [keine]
+    known_wrong:
+      - answer: nicht
+        feedback_vi: Danh từ không có mạo từ phủ định bằng kein-, không dùng nicht - keine Geschwister.
+        error_tag: negation_kein
+      - answer: kein
+        feedback_vi: Geschwister là số nhiều nên cần -e - keine.
+        error_tag: negation_ending
+    explanation:
+      vi: "Geschwister là danh từ số nhiều không có mạo từ, nên phủ định bằng keine (số nhiều luôn có -e)."
+    display_answer: "A: Hast du Geschwister? B: Nein, ich habe keine Geschwister. Ich bin Einzelkind."
+
+  - key: de:exercise:a1u02l3-fill-nicht-kein
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-negation-nicht-kein
+    prompt:
+      template: "Mein Fahrrad ist {{b1}} neu. Und das hier ist {{b2}} Laptop, das ist ein Handy!"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [nicht]
+        b2: [kein]
+    known_wrong:
+      - answer: keine
+        feedback_vi: Trước tính từ dùng nicht; trước der Laptop (giống đực) dùng kein, không có -e.
+        error_tag: negation_kein
+      - answer: nicht ein
+        feedback_vi: Không nói nicht ein - dùng kein Laptop.
+        error_tag: negation_kein
+    explanation:
+      vi: "neu là tính từ nên phủ định bằng nicht (đặt trước tính từ). Laptop là danh từ đi với ein nên phủ định bằng kein; der Laptop giống đực nên không có -e."
+    display_answer: Mein Fahrrad ist nicht neu. Und das hier ist kein Laptop, das ist ein Handy!
+
+  - key: de:exercise:a1u02l3-tr-kein-auto
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-auto
+    prompt:
+      source_text: Tôi không có xe hơi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe kein Auto.
+        - Ein Auto habe ich nicht.
+        - Ich besitze kein Auto.
+        - Ich habe keinen Wagen.
+    known_wrong:
+      - answer: Ich habe nicht ein Auto.
+        feedback_vi: Không nói nicht ein - dùng kein Auto.
+        error_tag: negation_kein
+      - answer: Ich habe nicht Auto.
+        feedback_vi: Danh từ đếm được phủ định bằng kein - Ich habe kein Auto.
+        error_tag: negation_kein
+      - answer: Ich habe keine Auto.
+        feedback_vi: das Auto là giống trung nên dùng kein, không có -e.
+        error_tag: gender
+      - answer: Ich nicht habe ein Auto.
+        feedback_vi: Động từ habe phải ở vị trí 2, và phủ định danh từ dùng kein - Ich habe kein Auto.
+        error_tag: verb_position
+    explanation:
+      vi: "\"Không có xe hơi\" = phủ định danh từ đi với ein → kein Auto. das Auto giống trung nên kein không có -e; động từ habe đứng ở vị trí 2."
+    display_answer: Ich habe kein Auto.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u02l3-mcq-doch-fahrrad
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-doch
+    prompt:
+      stem: "Bạn của bạn hỏi: \"Hast du kein Fahrrad?\" Thực ra bạn có xe đạp. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: f1d, text: "Doch, ich habe ein Fahrrad.", lang: de }
+        - { id: f2d, text: "Ja, ich habe ein Fahrrad.", lang: de }
+        - { id: f3d, text: "Nein, ich habe ein Fahrrad.", lang: de }
+        - { id: f4d, text: "Doch, ich habe kein Fahrrad.", lang: de }
+    answer:
+      correct_option_id: f1d
+    explanation:
+      vi: "Câu hỏi có kein (phủ định) và bạn muốn nói CÓ, nên phải dùng Doch. Ja chỉ trả lời câu hỏi khẳng định; Nein nghĩa là đồng ý \"không có\"; Doch đi với kein Fahrrad thì tự mâu thuẫn."
+    display_answer: "Doch, ich habe ein Fahrrad."
+
+  - key: de:exercise:a1u02l3-wb-nicht-mein-fahrrad
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-fahrrad
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đây không phải xe đạp của tôi.\""
+      tokens:
+        - { id: r-fahrrad, text: Fahrrad }
+        - { id: r-nicht, text: nicht }
+        - { id: r-ist, text: ist }
+        - { id: r-mein, text: mein }
+        - { id: r-das, text: das }
+        - { id: r-kein, text: kein }
+        - { id: r-meine, text: meine }
+    answer:
+      orders:
+        - [r-das, r-ist, r-nicht, r-mein, r-fahrrad]
+        - [r-mein, r-fahrrad, r-ist, r-das, r-nicht]
+    explanation:
+      vi: "Có mein thì phủ định bằng nicht, đặt trước mein: Das ist nicht mein Fahrrad. das Fahrrad giống trung nên là mein (không -e). Cách nói nhấn mạnh Mein Fahrrad ist das nicht cũng đúng."
+    display_answer: Das ist nicht mein Fahrrad.
+
+  - key: de:exercise:a1u02l3-tr-keine-zeit-doch
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u02-g-doch
+    prompt:
+      source_text: "Hast du keine Zeit? – Doch!"
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Bạn không có thời gian à? – Có chứ!"
+        - "Bạn không rảnh à? – Có chứ!"
+        - "Bạn không rảnh à? – Rảnh chứ!"
+        - "Bạn không có thời gian à? – Có!"
+        - "Bạn không có thời gian sao? – Có chứ!"
+        - "Bạn không có thời gian hả? – Có chứ!"
+        - "Cậu không có thời gian à? – Có chứ!"
+        - "Cậu không rảnh à? – Có chứ!"
+        - "Bạn không có thời gian à? – Có mà!"
+        - "Bạn không có thời gian à? – Có chứ."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "Bạn không có thời gian à? – Ừ, không có."
+        feedback_vi: "Doch nghĩa là \"có chứ\" (phản bác câu hỏi phủ định), không phải đồng ý \"không có\"."
+        error_tag: meaning
+      - answer: "Bạn có thời gian không? – Không!"
+        feedback_vi: "Câu hỏi có keine (phủ định), và Doch là câu trả lời \"có\"."
+        error_tag: meaning
+    explanation:
+      vi: "keine Zeit = không có thời gian, nên câu hỏi là \"Bạn không có thời gian à?\". Doch phản bác ý phủ định: \"Có chứ!\"."
+    display_answer: "Bạn không có thời gian à? – Có chứ!"

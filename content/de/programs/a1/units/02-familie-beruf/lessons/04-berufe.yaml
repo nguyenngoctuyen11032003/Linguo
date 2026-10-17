@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u02-berufe
+order_index: 4
+level: a1
+title:
+  vi: Nghề nghiệp (Was sind Sie von Beruf?)
+objectives:
+  - vi: Hỏi và nói nghề nghiệp, nơi làm việc của mình và người khác.
+  - vi: Nói nghề không dùng mạo từ (Ich bin Ingenieur) và dùng dạng -in cho người nữ (Ärztin, Köchin).
+  - vi: Nghe hiểu một đoạn giới thiệu nghề ngắn.
+estimated_minutes: 15
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a1u02-kein-nicht]
+items:
+  - item: de:item:a1u02-g-beruf-ohne-artikel
+  - item: de:item:a1u02-g-feminin-in
+  - item: de:item:a1u02-beruf
+  - item: de:item:a1u02-arbeiten
+  - item: de:item:a1u02-machen
+  - item: de:item:a1u02-arzt
+  - item: de:item:a1u02-ingenieur
+  - item: de:item:a1u02-verkaeufer
+  - item: de:item:a1u02-koch
+  - item: de:item:a1u02-pfleger
+  - item: de:item:a1u02-firma
+  - item: de:item:a1u02-krankenhaus
+  - item: de:item:a1u02-als
+  - item: de:item:a1u02-mechaniker
+  - item: de:item:a1u02-erzieher
+  - item: de:item:a1u02-rentner
+  - item: de:item:a1u02-hausmann
+  - item: de:item:a1u02-arbeitslos
+  - item: de:item:a1u01-g-praesens
+    role: reuse
+  - item: de:item:a1u01-g-w-fragen
+    role: reuse
+  - item: de:item:p0u1-lehrer
+    role: reuse
+  - item: de:item:a1u02-g-negation-nicht-kein
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hỏi được \"Anh/chị làm nghề gì?\", trả lời \"Tôi là kỹ sư\", \"Mẹ tôi là bác sĩ, làm ở bệnh viện\" và nghe hiểu một người giới thiệu nghề của mình."
+  - type: explain
+    text:
+      vi: "Nói nghề với sein, tiếng Đức KHÔNG dùng mạo từ: Ich bin Lehrerin. Er ist Arzt. Tiếng Anh nói \"I am a teacher\", còn tiếng Đức giống tiếng Việt hơn: \"Tôi là giáo viên\"."
+  - type: explain
+    text:
+      vi: "Nghề của người nữ thường thêm -in và luôn là giống cái: der Verkäufer → die Verkäuferin, der Ingenieur → die Ingenieurin. Một số từ còn thêm biến âm: der Arzt → die Ärztin, der Koch → die Köchin. Số nhiều của -in là -innen: die Ärztinnen."
+  - type: explain
+    text:
+      vi: "Hỏi nghề: Was sind Sie von Beruf? hoặc tự nhiên, lịch sự hơn: Was machen Sie beruflich? Với bạn bè: Was bist du von Beruf? / Was machst du beruflich? Cụm \"von Beruf\" học thuộc như một khối."
+  - type: explain
+    text:
+      vi: "arbeiten có gốc tận cùng -t nên thêm -e- trước đuôi: du arbeitest, er arbeitet. arbeiten als + nghề, cũng không có mạo từ: Ich arbeite als Koch. Nơi làm việc \"ở bệnh viện\" là im Krankenhaus – học như một cụm, cách dùng in + Dativ sẽ học ở Unit 5."
+  - type: explain
+    text:
+      vi: "Ngành điều dưỡng (die Pflege) ở Đức tuyển nhiều người Việt. Tên nghề chính thức hiện nay là Pflegefachfrau/Pflegefachmann; trong giao tiếp hằng ngày người ta vẫn nói Pfleger/Pflegerin, còn Krankenschwester là tên gọi cũ."
+  - type: deep_explain
+    text:
+      vi: "Phủ định nghề dùng kein: Ich bin kein Arzt (tôi không phải bác sĩ). Khi có tính từ đứng trước nghề thì lại cần mạo từ (Er ist ein guter Koch – \"anh ấy là một đầu bếp giỏi\"); dạng này bạn sẽ học ở A2. Không phải nghề nào cũng thêm -in: der Hausmann → die Hausfrau đổi cả phần cuối. Trên báo và thông báo tuyển dụng bạn sẽ gặp cách viết cả hai giới như Ärztinnen und Ärzte hoặc Mitarbeiter (m/w/d)."
+  - type: example
+    target: "Was sind Sie von Beruf? – Ich bin Ingenieur. Meine Firma ist in Hamburg."
+    target_lang: de
+    translation:
+      vi: "Anh làm nghề gì? – Tôi là kỹ sư. Công ty của tôi ở Hamburg."
+    note:
+      vi: "Hỏi lịch sự với Sie. Ich bin Ingenieur – không có mạo từ trước nghề. die Firma giống cái → meine Firma."
+  - type: example
+    target: Meine Mutter ist Ärztin und mein Vater ist Hausmann.
+    target_lang: de
+    translation:
+      vi: Mẹ tôi là bác sĩ, còn bố tôi ở nhà làm nội trợ.
+    note:
+      vi: "Ärztin: dạng nữ của Arzt, thêm -in và biến âm. Hausmann là nam nội trợ (nữ: Hausfrau)."
+  - type: example
+    target: "Was machst du beruflich, Lan? – Ich bin Pflegerin. Ich arbeite im Krankenhaus."
+    target_lang: de
+    translation:
+      vi: "Lan làm nghề gì thế? – Mình là điều dưỡng. Mình làm ở bệnh viện."
+    note:
+      vi: "Nói với bạn (du) nên dùng machst. im Krankenhaus là cụm cố định \"ở bệnh viện\"."
+  - type: example
+    target: Meine Schwester ist Erzieherin und mein Bruder ist auch Erzieher.
+    target_lang: de
+    translation:
+      vi: Chị tôi là giáo viên mầm non, và anh tôi cũng là giáo viên mầm non.
+    note:
+      vi: "Cùng một nghề: nữ là Erzieherin, nam là Erzieher."
+  - type: example
+    target: Mein Opa ist Rentner. Mein Onkel ist arbeitslos.
+    target_lang: de
+    translation:
+      vi: Ông tôi đã nghỉ hưu. Chú tôi đang thất nghiệp.
+    note:
+      vi: "Rentner, arbeitslos cũng dùng với sein và không có mạo từ."
+  - type: example
+    target: Ich bin kein Arzt. Ich bin Pfleger.
+    target_lang: de
+    translation:
+      vi: Tôi không phải bác sĩ. Tôi là điều dưỡng.
+    note:
+      vi: "Phủ định nghề dùng kein (kein Arzt), không dùng nicht ein."
+  - type: common_mistake
+    wrong: Ich bin ein Lehrer.
+    right: Ich bin Lehrer.
+    target_lang: de
+    note:
+      vi: "Do ảnh hưởng tiếng Anh (a teacher). Nói nghề với sein thì bỏ mạo từ."
+  - type: common_mistake
+    wrong: Lan ist Arzt.
+    right: Lan ist Ärztin.
+    target_lang: de
+    note:
+      vi: "Lan là nữ nên dùng dạng -in: Ärztin (có biến âm)."
+  - type: common_mistake
+    wrong: Er arbeitet als ein Koch.
+    right: Er arbeitet als Koch.
+    target_lang: de
+    note:
+      vi: "Sau als + nghề cũng không có mạo từ."
+  - type: common_mistake
+    wrong: Du arbeitst als Verkäufer.
+    right: Du arbeitest als Verkäufer.
+    target_lang: de
+    note:
+      vi: "Gốc arbeit- tận cùng -t nên thêm -e- trước đuôi -st: du arbeitest."
+  - type: summary
+    points:
+      - vi: "Nghề với sein hoặc arbeiten als: không mạo từ – Ich bin Ingenieur. Ich arbeite als Koch."
+      - vi: "Người nữ: thêm -in (Verkäuferin), có khi thêm biến âm (Ärztin, Köchin); số nhiều -innen."
+      - vi: "Hỏi nghề: Was sind Sie von Beruf? / Was machen Sie beruflich? (du: Was bist du von Beruf?)"
+      - vi: "arbeiten: du arbeitest, er arbeitet (thêm -e-)."
+      - vi: "im Krankenhaus = ở bệnh viện (cụm cố định)."
+      - vi: "Phủ định nghề: Ich bin kein Arzt."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u02l4-listen-koechin
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u02-koch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich heiße Thu und ich bin Köchin.
+      options:
+        - { id: j1t, text: Thu là đầu bếp., lang: vi }
+        - { id: j2t, text: Thu là bác sĩ., lang: vi }
+        - { id: j3t, text: Thu là nhân viên bán hàng., lang: vi }
+        - { id: j4t, text: Thu là điều dưỡng., lang: vi }
+    answer:
+      correct_option_id: j1t
+    explanation:
+      vi: "Köchin là đầu bếp nữ (dạng nữ của Koch). Bác sĩ là Ärztin, nhân viên bán hàng là Verkäuferin, điều dưỡng là Pflegerin."
+    display_answer: Thu là đầu bếp.
+
+  - key: de:exercise:a1u02l4-listen-mechaniker
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u02-verkaeufer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Mein Bruder ist Mechaniker und meine Schwester ist Verkäuferin.
+      options:
+        - { id: u1m, text: "Anh trai tôi là thợ cơ khí, chị gái tôi là nhân viên bán hàng.", lang: vi }
+        - { id: u2m, text: "Anh trai tôi là nhân viên bán hàng, chị gái tôi là thợ cơ khí.", lang: vi }
+        - { id: u3m, text: "Anh trai tôi là đầu bếp, chị gái tôi là nhân viên bán hàng.", lang: vi }
+        - { id: u4m, text: "Anh trai tôi là thợ cơ khí, chị gái tôi là bác sĩ.", lang: vi }
+    answer:
+      correct_option_id: u1m
+    explanation:
+      vi: "Mechaniker (thợ cơ khí) đi với mein Bruder; Verkäuferin (nhân viên bán hàng nữ) đi với meine Schwester."
+    display_answer: "Anh trai tôi là thợ cơ khí, chị gái tôi là nhân viên bán hàng."
+
+  - key: de:exercise:a1u02l4-mcq-aerztin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-feminin-in
+    prompt:
+      stem: "Mẹ của Minh là bác sĩ. Chọn từ đúng: \"Seine Mutter ist ___.\""
+      stem_lang: vi
+      options:
+        - { id: z1a, text: Ärztin, lang: de }
+        - { id: z2a, text: Ärztinnen, lang: de }
+        - { id: z3a, text: Ärzte, lang: de }
+        - { id: z4a, text: Arzt, lang: de }
+    answer:
+      correct_option_id: z1a
+    explanation:
+      vi: "Một người nữ → dạng -in số ít: Ärztin (Arzt thêm -in và biến âm). Ärztinnen, Ärzte là số nhiều; Arzt là dạng cho người nam."
+    display_answer: Ärztin
+
+  - key: de:exercise:a1u02l4-mcq-lehrerin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-beruf-ohne-artikel
+    prompt:
+      stem: Lan là giáo viên. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: b1l, text: Lan ist Lehrerin., lang: de }
+        - { id: b2l, text: Lan ist ein Lehrer., lang: de }
+        - { id: b3l, text: Lan ist eine Lehrer., lang: de }
+        - { id: b4l, text: Lan ist Lehrerinnen., lang: de }
+    answer:
+      correct_option_id: b1l
+    explanation:
+      vi: "Nói nghề với sein không dùng mạo từ, và Lan là nữ nên dùng Lehrerin (số ít). Lehrerinnen là số nhiều; eine Lehrer sai cả mạo từ lẫn dạng nữ."
+    display_answer: Lan ist Lehrerin.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u02l4-fill-koechin
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-feminin-in
+    prompt:
+      template: "Mein Bruder ist Koch und meine Schwester ist auch {{b1}}."
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Köchin]
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Koch
+        feedback_vi: Chị/em gái là nữ nên dùng dạng -in - Köchin (có biến âm ö).
+        error_tag: feminine_form
+      - answer: eine Köchin
+        feedback_vi: Nói nghề với sein không dùng mạo từ - chỉ Köchin.
+        error_tag: beruf_article
+    explanation:
+      vi: "meine Schwester là nữ nên nghề phải ở dạng nữ: Koch → Köchin (thêm -in và biến âm o → ö). Không có mạo từ trước nghề."
+    display_answer: Mein Bruder ist Koch und meine Schwester ist auch Köchin.
+
+  - key: de:exercise:a1u02l4-fill-bist-arbeite
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-arbeiten
+    prompt:
+      template: "A: Was {{b1}} du von Beruf? B: Ich {{b2}} als Verkäufer."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [bist]
+        b2: [arbeite]
+    known_wrong:
+      - answer: arbeitest
+        feedback_vi: "Chú ý ngôi: du → bist; ich → arbeite (arbeitest là của du)."
+        error_tag: verb_form
+      - answer: arbeitet
+        feedback_vi: "Chú ý ngôi: ich → arbeite (arbeitet là của er/sie/es, ihr)."
+        error_tag: verb_form
+      - answer: bin
+        feedback_vi: "Chú ý ngôi: du → bist; với als + nghề dùng động từ arbeiten (ich arbeite)."
+        error_tag: verb_form
+    explanation:
+      vi: "Câu hỏi nghề cố định: Was bist du von Beruf? (du → bist). Câu trả lời: ich arbeite als + nghề, không mạo từ."
+    display_answer: "A: Was bist du von Beruf? B: Ich arbeite als Verkäufer."
+
+  - key: de:exercise:a1u02l4-tr-mutter-aerztin
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-arzt
+    prompt:
+      source_text: Mẹ tôi là bác sĩ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meine Mutter ist Ärztin.
+        - Meine Mutter ist Ärztin von Beruf.
+        - Meine Mutter arbeitet als Ärztin.
+        - Meine Mama ist Ärztin.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Meine Mutter ist Arzt.
+        feedback_vi: Mẹ là nữ nên dùng dạng nữ - Ärztin.
+        error_tag: feminine_form
+      - answer: Meine Mutter ist eine Ärztin.
+        feedback_vi: Khi chỉ nói nghề, người Đức bỏ mạo từ - Meine Mutter ist Ärztin.
+        error_tag: beruf_article
+      - answer: Meine Mutter ist ein Arzt.
+        feedback_vi: Bỏ mạo từ trước nghề và dùng dạng nữ - Meine Mutter ist Ärztin.
+        error_tag: beruf_article
+      - answer: Mein Mutter ist Ärztin.
+        feedback_vi: die Mutter giống cái nên cần -e - meine Mutter.
+        error_tag: possessive_ending
+    explanation:
+      vi: "die Mutter → meine Mutter. Nghề của người nữ dùng dạng -in: Ärztin; nói nghề với sein không có mạo từ."
+    display_answer: Meine Mutter ist Ärztin.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u02l4-wb-koch-hamburg
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u02-als
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Anh ấy làm đầu bếp ở Hamburg.\""
+      tokens:
+        - { id: k-koch, text: Koch }
+        - { id: k-in, text: in }
+        - { id: k-er, text: er }
+        - { id: k-ein, text: ein }
+        - { id: k-hamburg, text: Hamburg }
+        - { id: k-arbeitet, text: arbeitet }
+        - { id: k-als, text: als }
+        - { id: k-arbeitest, text: arbeitest }
+    answer:
+      orders:
+        - [k-er, k-arbeitet, k-als, k-koch, k-in, k-hamburg]
+        - [k-er, k-arbeitet, k-in, k-hamburg, k-als, k-koch]
+        - [k-in, k-hamburg, k-arbeitet, k-er, k-als, k-koch]
+        - [k-als, k-koch, k-arbeitet, k-er, k-in, k-hamburg]
+    explanation:
+      vi: "er → arbeitet (thêm -e-), động từ luôn ở vị trí 2. als + nghề không có mạo từ (không dùng ein). Phần đứng đầu có thể là er, in Hamburg hoặc als Koch – chỉ cần arbeitet ở vị trí 2."
+    display_answer: Er arbeitet als Koch in Hamburg.
+
+  - key: de:exercise:a1u02l4-listen-frau-wagner
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u02-krankenhaus
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist Frau Wagner. Sie ist Ärztin und arbeitet im Krankenhaus. Ihr Mann ist Rentner.
+      options:
+        - { id: w1g, text: "Bà Wagner là bác sĩ ở bệnh viện, chồng bà đã nghỉ hưu.", lang: vi }
+        - { id: w2g, text: "Bà Wagner là điều dưỡng ở bệnh viện, chồng bà đã nghỉ hưu.", lang: vi }
+        - { id: w3g, text: "Bà Wagner là bác sĩ ở bệnh viện, chồng bà là đầu bếp.", lang: vi }
+        - { id: w4g, text: "Bà Wagner đã nghỉ hưu, chồng bà là bác sĩ.", lang: vi }
+    answer:
+      correct_option_id: w1g
+    explanation:
+      vi: "Sie ist Ärztin und arbeitet im Krankenhaus = bà là bác sĩ, làm ở bệnh viện. Ihr Mann ist Rentner = chồng bà (ihr: của bà ấy) là người về hưu."
+    display_answer: "Bà Wagner là bác sĩ ở bệnh viện, chồng bà đã nghỉ hưu."
+
+  - key: de:exercise:a1u02l4-mcq-sie-beruflich
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-machen
+    prompt:
+      stem: Ở lớp tiếng Đức, bạn muốn hỏi nghề của một người đàn ông lớn tuổi mới quen. Câu nào phù hợp nhất?
+      stem_lang: vi
+      options:
+        - { id: y1s, text: Was machen Sie beruflich?, lang: de }
+        - { id: y2s, text: Was machst du beruflich?, lang: de }
+        - { id: y3s, text: Was sind Sie Beruf?, lang: de }
+        - { id: y4s, text: Was ist Ihr von Beruf?, lang: de }
+    answer:
+      correct_option_id: y1s
+    explanation:
+      vi: "Người lớn tuổi mới quen → xưng Sie: Was machen Sie beruflich? Câu với du không lịch sự; \"Was sind Sie Beruf?\" thiếu von; \"Was ist Ihr von Beruf?\" sai cấu trúc."
+    display_answer: Was machen Sie beruflich?

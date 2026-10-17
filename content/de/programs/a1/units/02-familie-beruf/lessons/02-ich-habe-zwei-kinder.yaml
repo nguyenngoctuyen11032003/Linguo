@@ -1,0 +1,400 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u02-ich-habe-zwei-kinder
+order_index: 2
+level: a1
+title:
+  vi: Tôi có hai con – haben và số nhiều (Ich habe zwei Kinder)
+objectives:
+  - vi: Nói mình có ai trong gia đình bằng haben (ich habe, du hast, er hat…).
+  - vi: Nói và hỏi tình trạng hôn nhân - verheiratet, ledig, geschieden.
+  - vi: Nhận biết 5 kiểu số nhiều và dùng số nhiều sau số đếm (zwei Kinder, drei Söhne).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u02-meine-familie]
+items:
+  - item: de:item:a1u02-g-haben
+  - item: de:item:a1u02-g-plural
+  - item: de:item:a1u02-sohn
+  - item: de:item:a1u02-tochter
+  - item: de:item:a1u02-grosseltern
+  - item: de:item:a1u02-oma
+  - item: de:item:a1u02-opa
+  - item: de:item:a1u02-onkel
+  - item: de:item:a1u02-tante
+  - item: de:item:a1u02-verheiratet
+  - item: de:item:a1u02-ledig
+  - item: de:item:a1u02-geschieden
+  - item: de:item:a1u02-cousin
+  - item: de:item:a1u02-enkel
+  - item: de:item:p0u1-g-umlaute
+    role: reuse
+  - item: de:item:p0u3-g-genus-artikel
+    role: reuse
+  - item: de:item:a1u02-g-possessiv-singular
+    role: reuse
+  - item: de:item:a1u02-kind
+    role: reuse
+  - item: de:item:a1u02-bruder
+    role: reuse
+  - item: de:item:a1u02-geschwister
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được \"Tôi đã kết hôn và có hai con\", \"Bà tôi có sáu đứa cháu\" và hỏi người khác có anh chị em hay con cái không."
+  - type: explain
+    text:
+      vi: "Haben nghĩa là \"có\": ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben. Ở du và er/sie/es chữ b biến mất (hast, hat) – hãy học thuộc như một khối."
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ thêm \"hai\", \"những\" còn danh từ giữ nguyên; tiếng Đức đổi chính danh từ: ein Kind → zwei Kinder. Mạo từ số nhiều luôn là die, dù số ít là der, die hay das."
+  - type: explain
+    text:
+      vi: "Có 5 kiểu số nhiều: -e (der Sohn → die Söhne), -(e)n (die Tante → die Tanten), -er (das Kind → die Kinder), -s (die Oma → die Omas), không thêm đuôi (der Onkel → die Onkel). Nhiều từ còn thêm biến âm: der Bruder → die Brüder, die Tochter → die Töchter."
+  - type: explain
+    text:
+      vi: "Mẹo đoán: danh từ giống cái tận cùng -e thêm -n (Tante → Tanten); -in thêm -nen (Freundin → Freundinnen); giống đực, giống trung tận cùng -er, -el, -chen giữ nguyên (Onkel → Onkel); từ mượn tận cùng -o, -a, -y thêm -s (Opa → Opas). Mẹo có ngoại lệ, nên luôn học danh từ kèm số nhiều như trên thẻ từ: der Sohn, ¨-e."
+  - type: explain
+    text:
+      vi: "Hỏi tình trạng hôn nhân: Sind Sie verheiratet? – Ja, ich bin verheiratet. / Nein, ich bin ledig. / Ich bin geschieden. Ba từ này đi với sein, không đi với haben; ở Đức người ta ít hỏi chuyện này với người mới quen."
+  - type: explain
+    text:
+      vi: "Sau haben, danh từ giống cái, giống trung và số nhiều giữ nguyên dạng: Ich habe eine Schwester, ein Kind, zwei Brüder. Với danh từ giống đực, mạo từ sau haben đổi dạng – bạn sẽ học ở Unit 3, nên bài này chưa dùng."
+  - type: deep_explain
+    text:
+      vi: "Biến âm ở số nhiều làm đổi cả âm đọc: Sohn /zoːn/ → Söhne /ˈzøːnə/, Bruder → Brüder, Mutter → Mütter. Khi máy không có phím ä/ö/ü, bạn gõ ae/oe/ue (Soehne) – máy chấm vẫn tính đúng. Sau số đếm từ 2 trở lên luôn dùng số nhiều (zwei Kinder, drei Töchter), còn ein/eine đi với số ít (eine Tochter). Oma, Opa là cách gọi thân mật; trên giấy tờ người ta viết die Großmutter, der Großvater. Tiếng Việt có chú, bác, cậu, dượng, cô, dì, thím, mợ; tiếng Đức chỉ có der Onkel và die Tante."
+  - type: example
+    target: "Ich habe drei Kinder: eine Tochter und zwei Söhne."
+    target_lang: de
+    translation:
+      vi: "Tôi có ba con: một con gái và hai con trai."
+    note:
+      vi: "Kinder, Söhne là số nhiều (sau số đếm). eine Tochter đứng sau haben vẫn giữ nguyên dạng vì Tochter là giống cái."
+  - type: example
+    target: "Hast du Geschwister? – Ja, ich habe zwei Brüder und eine Schwester."
+    target_lang: de
+    translation:
+      vi: "Bạn có anh chị em không? – Có, mình có hai anh em trai và một chị gái."
+    note:
+      vi: "Nói với bạn (du) nên dùng hast. Bruder → Brüder: số nhiều thêm biến âm, không thêm đuôi."
+  - type: example
+    target: "Sind Sie verheiratet, Frau Schmidt? – Nein, ich bin geschieden."
+    target_lang: de
+    translation:
+      vi: "Chị Schmidt đã kết hôn chưa? – Chưa, tôi đã ly hôn."
+    note:
+      vi: "Hỏi lịch sự với Sie. verheiratet, geschieden đi với sein (bin), không đi với haben."
+  - type: example
+    target: Meine Großeltern haben sechs Enkel. Ich habe drei Cousins und zwei Cousinen.
+    target_lang: de
+    translation:
+      vi: Ông bà tôi có sáu đứa cháu. Tôi có ba anh em họ và hai chị em họ.
+    note:
+      vi: "Großeltern là số nhiều nên dùng haben. Enkel số nhiều giữ nguyên (tận cùng -el); Cousin thêm -s, Cousine thêm -n."
+  - type: common_mistake
+    wrong: Ich habe zwei Kind.
+    right: Ich habe zwei Kinder.
+    target_lang: de
+    note:
+      vi: "Tiếng Việt nói \"hai con\" mà từ \"con\" không đổi; tiếng Đức sau số đếm từ 2 phải dùng số nhiều: Kinder."
+  - type: common_mistake
+    wrong: Ich habe zwei Sohns.
+    right: Ich habe zwei Söhne.
+    target_lang: de
+    note:
+      vi: "Đừng thêm -s kiểu tiếng Anh. Sohn có số nhiều -e và biến âm: Söhne."
+  - type: common_mistake
+    wrong: Du habst eine Schwester.
+    right: Du hast eine Schwester.
+    target_lang: de
+    note:
+      vi: "haben bất quy tắc: du hast, er hat (mất chữ b)."
+  - type: common_mistake
+    wrong: Ich habe verheiratet.
+    right: Ich bin verheiratet.
+    target_lang: de
+    note:
+      vi: "Tình trạng hôn nhân dùng sein: ich bin verheiratet / ledig / geschieden."
+  - type: summary
+    points:
+      - vi: "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben."
+      - vi: "Số nhiều: -e (Söhne), -(e)n (Tanten), -er (Kinder), -s (Omas), không đuôi (Onkel); nhiều từ thêm biến âm (Brüder, Töchter)."
+      - vi: "Mạo từ số nhiều luôn là die. Học danh từ luôn kèm số nhiều."
+      - vi: "Sau số đếm từ 2 trở lên: số nhiều (zwei Kinder)."
+      - vi: "verheiratet, ledig, geschieden đi với sein: Ich bin ledig."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u02l2-mcq-du-hast
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-haben
+    prompt:
+      stem: "Chọn dạng đúng cho chỗ trống: \"Du ___ zwei Brüder.\""
+      stem_lang: vi
+      options:
+        - { id: h1s, text: hast, lang: de }
+        - { id: h2b, text: habt, lang: de }
+        - { id: h3t, text: hat, lang: de }
+        - { id: h4e, text: habe, lang: de }
+    answer:
+      correct_option_id: h1s
+    explanation:
+      vi: "Với du, haben chia là hast (chữ b biến mất, không có dạng \"habst\"). hat dùng cho er/sie/es, habe cho ich, habt cho ihr."
+    display_answer: hast
+
+  - key: de:exercise:a1u02l2-mcq-toechter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-tochter
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: \"Meine Tante hat drei ___.\" (Cô tôi có ba con gái.)"
+      stem_lang: vi
+      options:
+        - { id: k8a, text: Töchter, lang: de }
+        - { id: k5n, text: Töchtern, lang: de }
+        - { id: k7o, text: Tochter, lang: de }
+    answer:
+      correct_option_id: k8a
+    explanation:
+      vi: "Sau drei phải dùng số nhiều. die Tochter (¨-) chỉ thêm biến âm, không thêm đuôi: Töchter, giống die Mutter → die Mütter. Tochter là số ít; Töchtern là dạng của một cách khác (Dativ), không dùng ở đây."
+    display_answer: Töchter
+
+  - key: de:exercise:a1u02l2-listen-oma-enkel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u02-enkel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Meine Oma hat sechs Enkel.
+      options:
+        - { id: e1k, text: Bà tôi có sáu đứa cháu., lang: vi }
+        - { id: e2k, text: Bà tôi có bảy đứa cháu., lang: vi }
+        - { id: e3k, text: Ông tôi có sáu đứa cháu., lang: vi }
+        - { id: e4k, text: Bà tôi có sáu người con., lang: vi }
+    answer:
+      correct_option_id: e1k
+    explanation:
+      vi: "Oma là bà (ông là Opa), sechs là 6 (7 là sieben), Enkel là cháu (con là Kinder). Enkel số nhiều giữ nguyên vì tận cùng -el."
+    display_answer: Bà tôi có sáu đứa cháu.
+
+  - key: de:exercise:a1u02l2-fill-hat-haben
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-haben
+    prompt:
+      template: "Mein Onkel {{b1}} drei Kinder und wir {{b2}} zwei Kinder."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Chú tôi có ba con, còn chúng tôi có hai con."
+        - "Gợi ý: mein Onkel = er; wir là ngôi thứ nhất số nhiều."
+    answer:
+      blanks:
+        b1: [hat]
+        b2: [haben]
+    known_wrong:
+      - answer: habt
+        feedback_vi: habt chỉ dùng với ihr; mein Onkel (= er) → hat, wir → haben.
+        error_tag: verb_form
+      - answer: hast
+        feedback_vi: hast chỉ dùng với du; mein Onkel (= er) → hat, wir → haben.
+        error_tag: verb_form
+    explanation:
+      vi: "Mein Onkel là ngôi thứ ba số ít (er) nên dùng hat; wir dùng haben."
+    display_answer: Mein Onkel hat drei Kinder und wir haben zwei Kinder.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u02l2-fill-soehne-toechter
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-plural
+    prompt:
+      template: "Meine Tante hat zwei {{b1}} (der Sohn) und drei {{b2}} (die Tochter)."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Söhne]
+        b2: [Töchter]
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sohns
+        feedback_vi: "Không thêm -s kiểu tiếng Anh: der Sohn → die Söhne."
+        error_tag: plural_form
+      - answer: Sohn
+        feedback_vi: Sau số đếm từ 2 phải dùng số nhiều - Söhne.
+        error_tag: plural_form
+      - answer: Tochters
+        feedback_vi: "Không thêm -s: die Tochter → die Töchter (chỉ thêm biến âm)."
+        error_tag: plural_form
+      - answer: Tochtern
+        feedback_vi: "die Tochter không thêm -n: số nhiều là Töchter (chỉ thêm biến âm)."
+        error_tag: plural_form
+      - answer: Tochter
+        feedback_vi: Sau số đếm từ 2 phải dùng số nhiều - Töchter.
+        error_tag: plural_form
+    explanation:
+      vi: "Sohn (¨-e) → Söhne: thêm -e và biến âm. Tochter (¨-) → Töchter: chỉ thêm biến âm. Sau zwei, drei luôn dùng số nhiều."
+    display_answer: Meine Tante hat zwei Söhne und drei Töchter.
+
+  - key: de:exercise:a1u02l2-fill-habt-haben
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-haben
+    prompt:
+      template: "A: {{b1}} ihr Kinder? B: Ja, wir {{b2}} eine Tochter."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Habt]
+        b2: [haben]
+    known_wrong:
+      - answer: Hat
+        feedback_vi: hat dùng cho er/sie/es; với ihr là habt.
+        error_tag: verb_form
+      - answer: Hast
+        feedback_vi: hast dùng cho du; với ihr là habt.
+        error_tag: verb_form
+    explanation:
+      vi: "Câu hỏi có/không: động từ đứng đầu. ihr (các bạn) → habt; wir → haben. eine Tochter là giống cái nên sau haben giữ nguyên."
+    display_answer: "A: Habt ihr Kinder? B: Ja, wir haben eine Tochter."
+
+  - key: de:exercise:a1u02l2-tr-verheiratet-kinder
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-verheiratet
+    prompt:
+      source_text: Tôi đã kết hôn và có hai con.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich bin verheiratet und habe zwei Kinder.
+        - Ich bin verheiratet und ich habe zwei Kinder.
+        - Ich bin verheiratet und habe 2 Kinder.
+        - Ich bin verheiratet und ich habe 2 Kinder.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ich habe verheiratet und habe zwei Kinder.
+        feedback_vi: "\"Đã kết hôn\" dùng sein: Ich bin verheiratet."
+        error_tag: aux_verb
+      - answer: Ich bin verheiratet und habe zwei Kind.
+        feedback_vi: Sau zwei phải dùng số nhiều - Kinder.
+        error_tag: plural_form
+      - answer: Ich bin verheiratet und habe zwei Kinds.
+        feedback_vi: "Số nhiều của das Kind là Kinder, không thêm -s."
+        error_tag: plural_form
+      - answer: Ich bin verheiratet und hat zwei Kinder.
+        feedback_vi: Chủ ngữ là ich nên dùng habe.
+        error_tag: verb_form
+    explanation:
+      vi: "\"Đã kết hôn\" là trạng thái hiện tại nên dùng Ich bin verheiratet (không cần thì quá khứ). \"Có hai con\" là habe zwei Kinder – Kind có số nhiều -er."
+    display_answer: Ich bin verheiratet und habe zwei Kinder.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u02l2-wb-haben-sie-kinder
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-haben
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi lịch sự: \"Chị Schmidt, chị có con không?\""
+      tokens:
+        - { id: w-kinder, text: Kinder }
+        - { id: w-frau, text: Frau }
+        - { id: w-haben, text: haben }
+        - { id: w-schmidt, text: Schmidt }
+        - { id: w-sie, text: Sie }
+        - { id: w-hast, text: hast }
+        - { id: w-kind, text: Kind }
+    answer:
+      orders:
+        - [w-frau, w-schmidt, w-haben, w-sie, w-kinder]
+        - [w-haben, w-sie, w-kinder, w-frau, w-schmidt]
+    explanation:
+      vi: "Câu hỏi có/không: động từ đứng đầu – Haben Sie …? Lịch sự nên dùng Sie + haben (không phải hast). Hỏi \"có con không\" dùng số nhiều Kinder; lời gọi Frau Schmidt đứng đầu hoặc cuối câu đều được."
+    display_answer: Frau Schmidt, haben Sie Kinder?
+
+  - key: de:exercise:a1u02l2-mcq-ledig
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-ledig
+    prompt:
+      stem: "Một bạn cùng lớp hỏi: \"Bist du verheiratet?\" Bạn chưa kết hôn. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: l1d, text: "Nein, ich bin ledig.", lang: de }
+        - { id: l2d, text: "Nein, ich habe ledig.", lang: de }
+        - { id: l3d, text: "Ja, ich bin ledig.", lang: de }
+        - { id: l4d, text: "Nein, ich bin verheiratet.", lang: de }
+    answer:
+      correct_option_id: l1d
+    explanation:
+      vi: "Chưa kết hôn nên trả lời Nein, rồi nói ich bin ledig (độc thân) – ledig đi với sein. \"Ja\" sẽ có nghĩa là bạn đã kết hôn, mâu thuẫn với ledig."
+    display_answer: "Nein, ich bin ledig."
+
+  - key: de:exercise:a1u02l2-tr-onkel-geschieden
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a1u02-geschieden
+    prompt:
+      source_text: Mein Onkel ist geschieden und hat zwei Töchter.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chú tôi đã ly hôn và có hai con gái.
+        - Chú tôi đã ly hôn và có hai cô con gái.
+        - Chú tôi đã ly hôn và có hai đứa con gái.
+        - Chú tôi ly hôn rồi và có hai con gái.
+        - Chú tôi ly hôn và có hai con gái.
+        - Chú tôi đã li hôn và có hai con gái.
+        - Chú tôi đã ly dị và có hai con gái.
+        - Chú tôi đã ly hôn, có hai con gái.
+        - Chú của tôi đã ly hôn và có hai con gái.
+        - Bác tôi đã ly hôn và có hai con gái.
+        - Bác tôi ly hôn và có hai con gái.
+        - Cậu tôi đã ly hôn và có hai con gái.
+        - Cậu tôi ly hôn và có hai con gái.
+        - Dượng tôi đã ly hôn và có hai con gái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chú tôi đã kết hôn và có hai con gái.
+        feedback_vi: geschieden là đã ly hôn; đã kết hôn là verheiratet.
+        error_tag: meaning
+      - answer: Chú tôi đã ly hôn và có hai con trai.
+        feedback_vi: Töchter là các con gái; con trai là Söhne.
+        error_tag: meaning
+    explanation:
+      vi: "der Onkel có thể là chú, bác, cậu hoặc dượng. geschieden là đã ly hôn; Töchter là số nhiều của Tochter (con gái)."
+    display_answer: Chú tôi đã ly hôn và có hai con gái.

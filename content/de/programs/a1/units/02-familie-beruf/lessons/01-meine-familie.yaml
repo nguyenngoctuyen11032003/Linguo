@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u02-meine-familie
+order_index: 1
+level: a1
+title:
+  vi: Gia đình tôi – mein, dein (Meine Familie)
+objectives:
+  - vi: Giới thiệu các thành viên gia đình bằng mein/meine, dein/deine, sein/seine, ihr/ihre và Ihr/Ihre.
+  - vi: Tả người trong gia đình bằng tính từ đơn giản sau sein (groß, klein, nett, lustig).
+  - vi: Chọn đúng sein hay ihr theo người sở hữu và thêm -e cho danh từ giống cái, số nhiều.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u01-wiederholung]
+items:
+  - item: de:item:a1u02-g-possessiv-singular
+  - item: de:item:a1u02-g-adjektiv-praedikativ
+  - item: de:item:a1u02-familie
+  - item: de:item:a1u02-mutter
+  - item: de:item:a1u02-vater
+  - item: de:item:a1u02-eltern
+  - item: de:item:a1u02-bruder
+  - item: de:item:a1u02-schwester
+  - item: de:item:a1u02-geschwister
+  - item: de:item:a1u02-kind
+  - item: de:item:a1u02-gross
+  - item: de:item:a1u02-klein
+  - item: de:item:a1u02-zwilling
+  - item: de:item:a1u02-einzelkind
+  - item: de:item:a1u02-lustig
+  - item: de:item:a1u01-g-personalpronomen
+    role: reuse
+  - item: de:item:a1u01-g-sein
+    role: reuse
+  - item: de:item:p0u1-g-schwa-er
+    role: reuse
+  - item: de:item:p0u2-g-r-laut
+    role: reuse
+  - item: de:item:a1u01-nett
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn giới thiệu được gia đình mình kiểu \"Đây là mẹ tôi. Mẹ tôi nhỏ người và rất dễ mến.\" và hỏi về gia đình người khác bằng tiếng Đức."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"mẹ tôi\", từ sở hữu đứng sau; tiếng Đức đặt từ sở hữu trước danh từ: mein Vater, meine Mutter. Danh từ giống đực (der) và giống trung (das) đi với mein; giống cái (die) và số nhiều đi với meine."
+  - type: explain
+    text:
+      vi: "Năm cặp cần nhớ: mein/meine (của tôi), dein/deine (của bạn – nói với bạn thân), sein/seine (của anh ấy), ihr/ihre (của cô ấy, của họ), Ihr/Ihre (của ông, bà, anh, chị – lịch sự, luôn viết hoa). Đuôi -e giống hệt quy tắc của mein: meine Mutter, deine Eltern, seine Schwester, Ihre Familie."
+  - type: explain
+    text:
+      vi: "Chọn sein hay ihr theo NGƯỜI sở hữu, không theo người được nói tới: Minh và mẹ anh ấy là Minh und seine Mutter, Lan và anh trai cô ấy là Lan und ihr Bruder. Đuôi -e thì theo danh từ đứng sau (Mutter giống cái → seine)."
+  - type: explain
+    text:
+      vi: "Tả người, bạn dùng sein + tính từ: Mein Bruder ist groß. Tính từ đứng sau sein giữ nguyên, không thêm đuôi, dù danh từ là der, die hay số nhiều. Khác tiếng Việt (\"anh tôi cao\"), tiếng Đức bắt buộc có ist/sind."
+  - type: explain
+    text:
+      vi: "Từ chỉ người thân có giống theo giới tính: der Vater, der Bruder, die Mutter, die Schwester; riêng das Kind là giống trung. Die Eltern và die Geschwister dùng ở số nhiều, nên đi với meine và động từ sind."
+  - type: deep_explain
+    text:
+      vi: "Tiếng Việt phân biệt anh/em, nội/ngoại; tiếng Đức gọn hơn: der Bruder là anh hoặc em trai, die Schwester là chị hoặc em gái. Muốn nói rõ, người Đức nói mein großer Bruder (anh trai) hay meine kleine Schwester (em gái) – dạng tính từ đứng trước danh từ này bạn sẽ học ở A2, giờ chỉ cần nhận ra. Với das Kind, đại từ là es và từ sở hữu cũng là sein: Das Kind und sein Vater. Phát âm: -er cuối ở Vater, Mutter, Bruder, Schwester đọc như \"a\" nhẹ, không cuộn r; r đầu âm tiết (Bruder) đọc nhẹ ở cuối họng."
+  - type: example
+    target: "Das ist meine Familie: mein Vater, meine Mutter und mein Bruder."
+    target_lang: de
+    translation:
+      vi: "Đây là gia đình tôi: bố, mẹ và anh trai tôi."
+    note:
+      vi: "der Vater, der Bruder → mein; die Mutter, die Familie → meine. Bruder cũng có thể là em trai, tuỳ ngữ cảnh."
+  - type: example
+    target: Das ist Lan. Ihr Bruder ist groß und ihre Schwester ist klein.
+    target_lang: de
+    translation:
+      vi: Đây là Lan. Anh trai Lan cao, còn chị gái Lan thì thấp.
+    note:
+      vi: "Lan là nữ nên dùng ihr (của cô ấy). Bruder giống đực → ihr; Schwester giống cái → ihre. Tính từ groß, klein không đổi đuôi."
+  - type: example
+    target: "Sind das deine Eltern? – Ja, das sind meine Eltern. Sie sind sehr nett."
+    target_lang: de
+    translation:
+      vi: "Đây là bố mẹ bạn à? – Ừ, bố mẹ mình đấy. Bố mẹ mình rất dễ mến."
+    note:
+      vi: "Nói với bạn thân (du) nên dùng deine. Eltern là số nhiều nên dùng deine/meine và động từ sind."
+  - type: example
+    target: "Frau Weber, wie heißt Ihr Kind?"
+    target_lang: de
+    translation:
+      vi: Chị Weber ơi, con chị tên là gì?
+    note:
+      vi: "Nói lịch sự với người lớn (Sie) nên dùng Ihr, viết hoa. das Kind giống trung → Ihr, không có -e."
+  - type: example
+    target: Mai und Lan sind Zwillinge. Sie sind sehr lustig. Ich bin Einzelkind.
+    target_lang: de
+    translation:
+      vi: Mai và Lan là chị em sinh đôi. Hai chị em rất vui tính. Còn tôi là con một.
+    note:
+      vi: "Zwillinge là số nhiều của der Zwilling nên dùng sind; sie ở đây là \"họ\". Ich bin Einzelkind không cần mạo từ."
+  - type: common_mistake
+    wrong: Mein Mutter ist nett.
+    right: Meine Mutter ist nett.
+    target_lang: de
+    note:
+      vi: "die Mutter là giống cái nên phải thêm -e: meine Mutter."
+  - type: common_mistake
+    wrong: Minh wohnt in Hanoi. Ihre Mutter wohnt in Hue.
+    right: Minh wohnt in Hanoi. Seine Mutter wohnt in Hue.
+    target_lang: de
+    note:
+      vi: "Người sở hữu là Minh (nam) nên dùng sein; đừng chọn ihr chỉ vì người mẹ là nữ. Đuôi -e có vì Mutter là giống cái."
+  - type: common_mistake
+    wrong: Meine Schwester ist kleine.
+    right: Meine Schwester ist klein.
+    target_lang: de
+    note:
+      vi: "Tính từ đứng sau sein không thêm đuôi, kể cả khi danh từ là giống cái."
+  - type: common_mistake
+    wrong: Mein Bruder groß.
+    right: Mein Bruder ist groß.
+    target_lang: de
+    note:
+      vi: "Tiếng Việt nói \"anh tôi cao\" không cần động từ, nhưng tiếng Đức bắt buộc có ist."
+  - type: summary
+    points:
+      - vi: "der/das → mein, dein, sein, ihr, Ihr; die và số nhiều → thêm -e: meine, deine, seine, ihre, Ihre."
+      - vi: "sein = của anh ấy, ihr = của cô ấy/của họ, Ihr (viết hoa) = của ông/bà/anh/chị (lịch sự)."
+      - vi: "Chọn sein/ihr theo người sở hữu; chọn đuôi -e theo danh từ đứng sau."
+      - vi: "Tả người: sein + tính từ không đuôi – Meine Mutter ist klein. Meine Eltern sind nett."
+      - vi: "der Vater, der Bruder, die Mutter, die Schwester, das Kind; die Eltern, die Geschwister (số nhiều)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u02l1-mcq-meine-mutter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-possessiv-singular
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: \"Das ist ___ Mutter.\" (Đây là mẹ tôi.)"
+      stem_lang: vi
+      options:
+        - { id: a7k, text: meine, lang: de }
+        - { id: p2m, text: mein, lang: de }
+        - { id: x4r, text: deine, lang: de }
+        - { id: h8t, text: seine, lang: de }
+    answer:
+      correct_option_id: a7k
+    explanation:
+      vi: "die Mutter là giống cái nên \"của tôi\" là meine (thêm -e). Mein chỉ dùng cho der/das; deine là \"của bạn\", seine là \"của anh ấy\"."
+    display_answer: meine
+
+  - key: de:exercise:a1u02l1-mcq-ihr-bruder
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-possessiv-singular
+    prompt:
+      stem: Anna kể về anh trai của cô ấy. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: q3w, text: Ihr Bruder ist groß., lang: de }
+        - { id: z9e, text: Sein Bruder ist groß., lang: de }
+        - { id: m5u, text: Ihre Bruder ist groß., lang: de }
+        - { id: c2j, text: Ihr Bruder ist große., lang: de }
+    answer:
+      correct_option_id: q3w
+    explanation:
+      vi: "Người sở hữu là Anna (nữ) nên dùng ihr; der Bruder giống đực nên không thêm -e. Sein chỉ dùng khi người sở hữu là nam, và tính từ sau ist giữ nguyên (groß, không phải große)."
+    display_answer: Ihr Bruder ist groß.
+
+  - key: de:exercise:a1u02l1-listen-vater-nett
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u02-vater
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist mein Vater. Er ist sehr nett.
+      options:
+        - { id: v1n, text: Đây là bố tôi. Bố tôi rất dễ mến., lang: vi }
+        - { id: v2m, text: Đây là mẹ tôi. Mẹ tôi rất dễ mến., lang: vi }
+        - { id: v3g, text: Đây là bố tôi. Bố tôi rất cao., lang: vi }
+        - { id: v4b, text: Đây là anh trai tôi. Anh ấy rất dễ mến., lang: vi }
+    answer:
+      correct_option_id: v1n
+    explanation:
+      vi: "Vater là bố (mẹ là Mutter, anh/em trai là Bruder); er thay cho der Vater. Nett là dễ mến, còn \"cao\" là groß."
+    display_answer: Đây là bố tôi. Bố tôi rất dễ mến.
+
+  - key: de:exercise:a1u02l1-fill-meine-mein
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-eltern
+    prompt:
+      template: "{{b1}} Eltern wohnen in Hue und {{b2}} Bruder wohnt in Hanoi."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa của câu: Bố mẹ tôi sống ở Huế, còn anh trai tôi sống ở Hà Nội."
+        - "Gợi ý: die Eltern là số nhiều; der Bruder là giống đực."
+    answer:
+      blanks:
+        b1: [Meine]
+        b2: [mein]
+    explanation:
+      vi: "Eltern là số nhiều nên dùng meine (có -e); Bruder là giống đực nên dùng mein (không -e)."
+    display_answer: Meine Eltern wohnen in Hue und mein Bruder wohnt in Hanoi.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u02l1-fill-ihre-ihr
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-possessiv-singular
+    prompt:
+      template: "Das ist Lan. {{b1}} Mutter ist klein und {{b2}} Vater ist groß."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Ihre]
+        b2: [ihr]
+    known_wrong:
+      - answer: Seine
+        feedback_vi: "Lan là nữ nên \"của cô ấy\" là ihr/ihre, không dùng sein/seine."
+        error_tag: possessive_owner
+      - answer: sein
+        feedback_vi: "Lan là nữ nên \"của cô ấy\" là ihr/ihre, không dùng sein/seine."
+        error_tag: possessive_owner
+    explanation:
+      vi: "Người sở hữu là Lan (nữ) nên dùng ihr. Mutter giống cái → Ihre (có -e); Vater giống đực → ihr (không -e)."
+    display_answer: Das ist Lan. Ihre Mutter ist klein und ihr Vater ist groß.
+
+  - key: de:exercise:a1u02l1-fill-deine-meine
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-schwester
+    prompt:
+      template: "A: Hallo Lan, wie geht's? Wie heißt {{b1}} Schwester? B: Gut, danke! {{b2}} Schwester heißt Mai."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [deine]
+        b2: [Meine]
+    known_wrong:
+      - answer: dein
+        feedback_vi: die Schwester là giống cái nên cần -e - deine.
+        error_tag: possessive_ending
+      - answer: mein
+        feedback_vi: die Schwester là giống cái nên cần -e - meine.
+        error_tag: possessive_ending
+      - answer: Ihre
+        feedback_vi: "A chào Lan thân mật (Hallo, wie geht's?) nên xưng du: \"của bạn\" là deine; Ihre chỉ dùng khi xưng Sie."
+        error_tag: register_du_sie
+    explanation:
+      vi: "A chào Lan thân mật (Hallo, wie geht's?) nên hỏi bằng dein-; Lan trả lời về chị/em của mình nên dùng mein-. Schwester giống cái nên cả hai đều thêm -e: deine, Meine."
+    display_answer: "A: Hallo Lan, wie geht's? Wie heißt deine Schwester? B: Gut, danke! Meine Schwester heißt Mai."
+
+  - key: de:exercise:a1u02l1-tr-eltern-nett
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-adjektiv-praedikativ
+    prompt:
+      source_text: Bố mẹ tôi rất dễ mến.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meine Eltern sind sehr nett.
+        - Meine Eltern sind sehr freundlich.
+        - Meine Eltern sind sehr sympathisch.
+        - Meine Eltern sind wirklich nett.
+        - Meine Eltern sind wirklich sehr nett.
+    known_wrong:
+      - answer: Mein Eltern sind sehr nett.
+        feedback_vi: die Eltern là số nhiều nên cần -e - meine Eltern.
+        error_tag: possessive_ending
+      - answer: Meine Eltern ist sehr nett.
+        feedback_vi: Eltern là số nhiều nên động từ là sind, không phải ist.
+        error_tag: verb_agreement
+      - answer: Meine Eltern sehr nett.
+        feedback_vi: Thiếu động từ - tiếng Đức bắt buộc có sind trước tính từ.
+        error_tag: missing_sein
+      - answer: Meine Eltern sind sehr nette.
+        feedback_vi: Tính từ đứng sau sein không thêm đuôi - nett.
+        error_tag: adj_ending
+    explanation:
+      vi: "Eltern là số nhiều → meine Eltern + sind. \"Dễ mến\" là nett (hoặc freundlich, sympathisch); tính từ sau sind giữ nguyên, không thêm -e."
+    display_answer: Meine Eltern sind sehr nett.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u02l1-wb-deine-eltern
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-eltern
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi (nói với bạn thân): \"Đây là bố mẹ bạn à?\""
+      tokens:
+        - { id: t-eltern, text: Eltern }
+        - { id: t-das, text: das }
+        - { id: t-dein, text: dein }
+        - { id: t-deine, text: deine }
+        - { id: t-sind, text: sind }
+        - { id: t-ist, text: ist }
+    answer:
+      orders:
+        - [t-sind, t-das, t-deine, t-eltern]
+    explanation:
+      vi: "Câu hỏi có/không: động từ đứng đầu (Sind das …?). Eltern là số nhiều nên dùng sind và deine (có -e)."
+    display_answer: Sind das deine Eltern?
+
+  - key: de:exercise:a1u02l1-mcq-ihre-schwester
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-possessiv-singular
+    prompt:
+      stem: "Cô giáo (bạn xưng Sie) xem ảnh gia đình bạn và hỏi: \"Ist Ihre Schwester groß?\" Bạn muốn trả lời: Vâng, chị tôi cao. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s4k, text: "Ja, meine Schwester ist groß.", lang: de }
+        - { id: s7p, text: "Ja, mein Schwester ist groß.", lang: de }
+        - { id: s2d, text: "Ja, Ihre Schwester ist groß.", lang: de }
+        - { id: s9f, text: "Ja, meine Schwester ist große.", lang: de }
+    answer:
+      correct_option_id: s4k
+    explanation:
+      vi: "Cô hỏi \"chị của bạn\" (Ihre), bạn trả lời về chị của mình nên đổi thành meine – Schwester giống cái nên có -e. Ihre Schwester sẽ thành \"chị của cô\"; tính từ sau ist không có đuôi."
+    display_answer: "Ja, meine Schwester ist groß."
+
+  - key: de:exercise:a1u02l1-tr-schwester-bruder
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u02-klein
+    prompt:
+      source_text: Em gái tôi còn nhỏ, còn anh trai tôi thì cao.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meine Schwester ist noch klein und mein Bruder ist groß.
+        - Meine Schwester ist noch klein, mein Bruder ist groß.
+        - Meine Schwester ist noch klein, aber mein Bruder ist groß.
+        - Meine Schwester ist noch klein und mein Bruder ist schon groß.
+        - Meine Schwester ist klein und mein Bruder ist groß.
+        - Mein Bruder ist groß und meine Schwester ist noch klein.
+    known_wrong:
+      - answer: Mein Schwester ist noch klein und mein Bruder ist groß.
+        feedback_vi: die Schwester giống cái nên cần -e - meine Schwester.
+        error_tag: possessive_ending
+      - answer: Meine Schwester ist noch klein und meine Bruder ist groß.
+        feedback_vi: der Bruder giống đực nên không thêm -e - mein Bruder.
+        error_tag: possessive_ending
+      - answer: Meine Schwester ist noch kleine und mein Bruder ist groß.
+        feedback_vi: Tính từ sau sein không thêm đuôi - klein.
+        error_tag: adj_ending
+      - answer: Meine Schwester noch klein und mein Bruder groß.
+        feedback_vi: Mỗi vế cần động từ ist - tiếng Đức không bỏ sein như tiếng Việt.
+        error_tag: missing_sein
+    explanation:
+      vi: "Schwester giống cái → meine; Bruder giống đực → mein. Mỗi vế cần ist, tính từ klein/groß giữ nguyên. \"Còn nhỏ\" là noch klein; \"còn … thì\" nối bằng und."
+    display_answer: Meine Schwester ist noch klein und mein Bruder ist groß.
