@@ -1,0 +1,369 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u10-schreiben
+order_index: 3
+level: b1
+title:
+  vi: Viết – thư trang trọng chuẩn (Der formelle Brief)
+objectives:
+  - vi: Viết tin nhắn hoặc e-mail trang trọng ngắn (khoảng 40 từ) có tiêu đề, lời chào, lý do, yêu cầu lịch sự và lời kết đúng.
+  - vi: Viết e-mail thân mật (khoảng 80 từ) và bài trên diễn đàn (khoảng 80 từ) trả lời đủ các ý đề yêu cầu, có từ nối.
+  - vi: Phân biệt thân mật – trang trọng và viết hoa đúng Sie, Ihnen, Ihr.
+estimated_minutes: 20
+skills: [writing, reading]
+prerequisites: [de:lesson:b1u10-hoeren]
+items:
+  - item: de:item:b1u10-g-formeller-brief
+  - item: de:item:b1u10-betreff
+  - item: de:item:b1u10-anfrage
+  - item: de:item:b1u10-absage
+  - item: de:item:b1u10-zusage
+  - item: de:item:b1u10-mitteilen
+  - item: de:item:b1u10-in-bezug-auf
+  - item: de:item:b1u10-anliegen
+  - item: de:item:b1u10-bitte
+  - item: de:item:b1u10-anhang
+  - item: de:item:b1u10-beantworten
+  - item: de:item:b1u10-unterlagen
+  - item: de:item:b1u10-sich-erkundigen-nach
+  - item: de:item:b1u10-anbei
+  - item: de:item:b1u10-grussformel
+  - item: de:item:a1u08-g-anrede-gruss
+    role: reuse
+  - item: de:item:a2u04-g-wuerde-hoeflich
+    role: reuse
+  - item: de:item:b1u09-g-zu-infinitiv-dass
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được một tin nhắn trang trọng ngắn, ví dụ: \"Sehr geehrte Frau Becker, leider kann ich am Montag nicht zum Kurs kommen, weil ich einen Termin beim Amt habe. Ich wäre Ihnen dankbar, wenn Sie mir die Aufgaben schicken könnten. Mit freundlichen Grüßen …\""
+  - type: explain
+    text:
+      vi: "Thư trang trọng có khung cố định: Betreff (tiêu đề ngắn, không cần câu đầy đủ) → Sehr geehrte Frau … / Sehr geehrter Herr … / Sehr geehrte Damen und Herren, → lý do viết → yêu cầu hoặc thông tin → câu kết → Mit freundlichen Grüßen + họ tên. Sau dấu phẩy của lời chào, câu đầu tiên viết thường (trừ danh từ và Sie). Tiếng Việt có \"Kính gửi …\" – \"Trân trọng\"; tiếng Đức cũng vậy, nhưng đuôi của geehrte/geehrter phải hợp giới tính người nhận."
+  - type: explain
+    text:
+      vi: "Mở đầu nêu lý do: Ich schreibe Ihnen, weil … hoặc In Bezug auf Ihre Anzeige … / Ich möchte mich nach … erkundigen. Yêu cầu lịch sự dùng Konjunktiv II: Ich wäre Ihnen dankbar, wenn Sie mir … schicken könnten. / Könnten Sie mir bitte mitteilen, …? Từ chối hoặc xin lỗi: Leider kann ich am … nicht teilnehmen."
+  - type: explain
+    text:
+      vi: "Câu kết hay dùng: Für Rückfragen stehe ich gern zur Verfügung. (cụm cố định: nếu có câu hỏi, tôi sẵn sàng trả lời) và Vielen Dank im Voraus. Trong thư, Sie, Ihnen, Ihr, Ihre ở ngôi lịch sự luôn viết hoa; sie viết thường là \"cô ấy\" hoặc \"họ\". Người Việt hay viết thường Ihnen hoặc trộn du với Sie – hãy đọc lại thư trước khi gửi."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành), phần viết B1 gồm ba bài: e-mail thân mật khoảng 80 từ, bài viết nêu ý kiến trên diễn đàn khoảng 80 từ và tin nhắn trang trọng khoảng 40 từ. Mỗi đề nêu vài ý cần viết; bỏ sót một ý là lỗi rất hay gặp và làm bài thiếu nội dung. Hãy gạch từng ý trong đề và đánh dấu khi đã viết xong."
+  - type: explain
+    text:
+      vi: "E-mail thân mật: Liebe Anna, / Lieber Jonas, … Viele Grüße hoặc Liebe Grüße, xưng du. Bài trên diễn đàn không cần lời chào kiểu thư: mở bằng ý kiến của bạn (Ich finde, dass … / Meiner Meinung nach …), đưa lý do, một ví dụ từ kinh nghiệm và câu kết. Dùng từ nối (außerdem, deshalb, trotzdem, zum Schluss) để bài mạch lạc."
+  - type: deep_explain
+    text:
+      vi: "Mẹo cho tin nhắn trang trọng khoảng 40 từ: một câu lý do, một câu yêu cầu hoặc xin lỗi, một câu cảm ơn – thế là đủ. Trong e-mail, Betreff là ô tiêu đề; trong thư giấy, dòng tiêu đề ngày nay thường được in đậm và không ghi chữ Betreff. Lời chào và câu chào cuối (die Grußformel) đứng ở dòng riêng; sau Mit freundlichen Grüßen không có dấu phẩy. Nếu không biết tên người nhận, dùng Sehr geehrte Damen und Herren. Tránh dạng nói (hab, 'ne, gibt's) và tránh mở đầu bằng Hallo khi viết cho cơ quan hoặc người lạ. Gửi kèm giấy tờ: Im Anhang finden Sie … / Anbei sende ich Ihnen … . Các thư mẫu trong bài do Linguo tự soạn; tên người trong đó là tên giả."
+  - type: example
+    target: "Betreff: Deutschkurs am Montag – Sehr geehrte Frau Becker, leider kann ich am Montag nicht zum Kurs kommen, weil ich einen wichtigen Termin beim Amt habe. Könnten Sie mir bitte die Aufgaben per E-Mail schicken? Vielen Dank im Voraus! Mit freundlichen Grüßen Linh Pham"
+    target_lang: de
+    translation:
+      vi: "Tiêu đề: Lớp tiếng Đức hôm thứ Hai – Kính gửi cô Becker, rất tiếc thứ Hai em không đến lớp được vì em có một cuộc hẹn quan trọng ở cơ quan hành chính. Cô có thể gửi bài tập cho em qua e-mail được không ạ? Em cảm ơn cô trước! Trân trọng, Linh Pham"
+    note:
+      vi: "Tin nhắn trang trọng (kiểu Schreiben Teil 3, khoảng 40 từ): lý do (weil … habe), yêu cầu lịch sự (Könnten Sie …?), cảm ơn. Trong e-mail thật, lời chào và Mit freundlichen Grüßen đứng ở dòng riêng."
+  - type: example
+    target: Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen bis Freitag schicken könnten.
+    target_lang: de
+    translation:
+      vi: Tôi sẽ rất cảm ơn nếu ông/bà có thể gửi giấy tờ cho tôi trước thứ Sáu.
+    note:
+      vi: "wäre và könnten là Konjunktiv II – lịch sự hơn Schicken Sie mir …! Câu phụ wenn: động từ könnten đứng cuối."
+  - type: example
+    target: Ich hoffe, bald eine Antwort von Ihnen zu bekommen.
+    target_lang: de
+    translation:
+      vi: Tôi mong sớm nhận được câu trả lời của ông/bà.
+    note:
+      vi: "Câu kết hay dùng. Cùng chủ ngữ (ich hoffe – ich bekomme) nên dùng zu-Infinitiv; khác chủ ngữ thì dùng dass: Ich hoffe, dass Sie bald antworten."
+  - type: example
+    target: In Bezug auf Ihre Anzeige möchte ich mich nach dem Preis für den Abendkurs erkundigen.
+    target_lang: de
+    translation:
+      vi: Về mẩu quảng cáo của quý vị, tôi muốn hỏi giá của khóa học buổi tối.
+    note:
+      vi: "in Bezug auf + Akkusativ (Ihre Anzeige); sich erkundigen nach + Dativ (dem Preis)."
+  - type: example
+    target: "Liebe Sophie, vielen Dank für deine Einladung zum Geburtstag! Ich komme sehr gern, aber ich kann erst um acht Uhr da sein, weil ich bis halb acht arbeiten muss. Soll ich etwas mitbringen? Ich könnte einen Nudelsalat machen. Und hast du schon eine Idee, was du dir wünschst? Ich freue mich auf Samstag! Liebe Grüße Hoa"
+    target_lang: de
+    translation:
+      vi: "Sophie thân mến, cảm ơn bạn nhiều vì đã mời mình dự sinh nhật! Mình rất vui được đến, nhưng tám giờ mình mới tới được, vì mình phải làm việc đến bảy rưỡi. Mình có nên mang gì không? Mình có thể làm một món salad mì. Bạn đã nghĩ ra mình muốn được tặng gì chưa? Mình mong đến thứ Bảy lắm! Thân, Hoa"
+    note:
+      vi: "E-mail thân mật (kiểu Schreiben Teil 1): xưng du, deine, dir viết thường; trả lời đủ ba ý thường gặp – nhận lời, giờ đến kèm lý do, hỏi về quà hoặc đồ mang theo."
+  - type: example
+    target: "Ich finde es wichtig, dass Schüler in der Schule auch praktische Dinge lernen, zum Beispiel wie man kocht oder wie man mit Geld umgeht. Ich habe das als Jugendlicher nicht gelernt. Deshalb hatte ich am Anfang meines Studiums oft Probleme. Natürlich sind Mathe und Sprachen wichtig, aber im Alltag braucht man auch andere Fähigkeiten. Meiner Meinung nach sollte jede Schule ein solches Fach anbieten."
+    target_lang: de
+    translation:
+      vi: "Tôi thấy quan trọng là học sinh cũng được học những điều thực tế ở trường, ví dụ nấu ăn hay cách tiêu tiền. Hồi còn là thiếu niên tôi không được học những điều đó. Vì thế lúc mới vào đại học tôi hay gặp khó khăn. Dĩ nhiên toán và ngoại ngữ quan trọng, nhưng trong cuộc sống hằng ngày người ta cũng cần những kỹ năng khác. Theo tôi, trường nào cũng nên có một môn như vậy."
+    note:
+      vi: "Bài diễn đàn (kiểu Schreiben Teil 2, khoảng 70 từ): ý kiến → kinh nghiệm bản thân → nhượng bộ (Natürlich …, aber …) → kết luận. Không có lời chào kiểu thư."
+  - type: common_mistake
+    wrong: Könnten sie mir bitte die Unterlagen schicken?
+    right: Könnten Sie mir bitte die Unterlagen schicken?
+    target_lang: de
+    note:
+      vi: "Sie lịch sự (ông/bà) luôn viết hoa, kể cả giữa câu. sie viết thường nghĩa là \"cô ấy\" hoặc \"họ\" – người đọc sẽ hiểu sai."
+  - type: common_mistake
+    wrong: Sehr geehrter Frau Becker,
+    right: Sehr geehrte Frau Becker,
+    target_lang: de
+    note:
+      vi: "Đuôi theo giới tính người nhận: Sehr geehrte Frau …, Sehr geehrter Herr …, Sehr geehrte Damen und Herren."
+  - type: common_mistake
+    wrong: Leider kann ich am Montag nicht kommen. Mit freundlichen Grüßen
+    right: Leider kann ich am Montag nicht kommen, weil ich krank bin. Könnten wir den Termin auf Mittwoch verschieben? Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "Đề yêu cầu ba ý: xin lỗi, lý do, đề nghị ngày khác. Câu bên trái chỉ có một ý nên bài thiếu nội dung, dù ngữ pháp đúng."
+  - type: summary
+    points:
+      - vi: "Khung: Betreff → Sehr geehrte/r … , → lý do → yêu cầu → câu kết → Mit freundlichen Grüßen + tên."
+      - vi: "Lý do: Ich schreibe Ihnen, weil … / In Bezug auf … / Ich möchte mich nach … erkundigen."
+      - vi: "Yêu cầu: Ich wäre Ihnen dankbar, wenn Sie … könnten. / Könnten Sie mir bitte mitteilen, …?"
+      - vi: "Kết: Für Rückfragen stehe ich gern zur Verfügung. Vielen Dank im Voraus."
+      - vi: "Sie, Ihnen, Ihr viết hoa; thân mật dùng du, Liebe/Lieber …, Viele/Liebe Grüße."
+      - vi: "Viết đủ mọi ý đề yêu cầu; gạch từng ý khi đã viết."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u10l3-mcq-sehr-geehrter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      stem: "Bạn viết e-mail cho ông Hoffmann ở văn phòng quản lý nhà, người bạn chưa quen. Lời chào nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g4t, text: "Sehr geehrter Herr Hoffmann,", lang: de }
+        - { id: g1k, text: "Sehr geehrte Herr Hoffmann,", lang: de }
+        - { id: g7p, text: "Sehr geehrter Hoffmann,", lang: de }
+        - { id: g2x, text: "Sehr geehrtes Herr Hoffmann,", lang: de }
+    answer:
+      correct_option_id: g4t
+    explanation:
+      vi: "Người nhận là nam nên dùng Sehr geehrter Herr + họ. geehrte dùng cho Frau; không bỏ Herr trước họ; geehrtes không đi với người."
+    display_answer: "Sehr geehrter Herr Hoffmann,"
+
+  - key: de:exercise:b1u10l3-mcq-ihnen-gross
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      stem: "Trong thư trang trọng, bạn nhờ chính người nhận thư trả lời mình. Câu nào viết đúng?"
+      stem_lang: vi
+      options:
+        - { id: h3a, text: "Ich wäre Ihnen dankbar, wenn Sie mir bald antworten könnten.", lang: de }
+        - { id: h6b, text: "Ich wäre ihnen dankbar, wenn sie mir bald antworten könnten.", lang: de }
+        - { id: h1c, text: "Ich wäre Ihnen dankbar, wenn sie mir bald antworten könnten.", lang: de }
+        - { id: h8d, text: "Ich wäre Ihnen Dankbar, wenn Sie mir bald antworten könnten.", lang: de }
+    answer:
+      correct_option_id: h3a
+    explanation:
+      vi: "Người nhận được xưng Sie, nên Ihnen và Sie đều viết hoa. Viết thường (ihnen, sie) sẽ thành \"họ\" – sai ý. dankbar là tính từ nên viết thường."
+    display_answer: "Ich wäre Ihnen dankbar, wenn Sie mir bald antworten könnten."
+
+  - key: de:exercise:b1u10l3-mcq-lesen-antwort
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-mitteilen
+    prompt:
+      stem: "Đọc e-mail trả lời của một trường ngôn ngữ: \"Betreff: Ihre Anfrage – Sehr geehrte Frau Nguyen, vielen Dank für Ihre Anfrage. Leider ist der Abendkurs schon voll. Wir können Ihnen aber einen Platz im Samstagskurs anbieten. Bitte teilen Sie uns bis Freitag mit, ob Sie Interesse haben. Mit freundlichen Grüßen Ihr Team der Sprachschule\" Bà Nguyen cần làm gì?"
+      stem_lang: vi
+      options:
+        - { id: e1a, text: "Báo cho trường trước thứ Sáu xem bà có muốn học lớp thứ Bảy không.", lang: vi }
+        - { id: e2b, text: "Đăng ký lớp buổi tối trước thứ Sáu.", lang: vi }
+        - { id: e3c, text: "Đến trường vào thứ Bảy để làm bài kiểm tra.", lang: vi }
+        - { id: e4d, text: "Không cần làm gì, vì lớp buổi tối đã có chỗ cho bà.", lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "Leider ist der Abendkurs schon voll = lớp tối đã đầy; trường đề nghị một chỗ ở lớp thứ Bảy (Samstagskurs). Bitte teilen Sie uns bis Freitag mit, ob … = xin báo cho chúng tôi trước thứ Sáu xem bà có quan tâm không."
+    display_answer: "Báo cho trường trước thứ Sáu xem bà có muốn học lớp thứ Bảy không."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u10l3-fill-formeller-brief
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      template: "Sehr {{b1}} Damen und Herren, ich schreibe Ihnen, {{b2}} ich eine Frage zu meiner Rechnung habe. Ich {{b3}} Ihnen dankbar, wenn Sie mir den Betrag erklären könnten. Für Rückfragen stehe ich gern zur {{b4}}. Mit freundlichen Grüßen Minh Tran"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 5 }
+        - { id: b4, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [weil, da]
+        b3: [wäre]
+        b4: [Verfügung]
+    known_wrong:
+      - answer: geehrter
+        feedback_vi: "Damen und Herren là số nhiều nên dùng geehrte: Sehr geehrte Damen und Herren."
+        error_tag: adj_ending
+      - answer: denn
+        feedback_vi: "Sau denn động từ ở vị trí 2. Ở đây habe đứng cuối câu, nên cần liên từ câu phụ weil (hoặc da)."
+        error_tag: verb_position
+      - answer: würde
+        feedback_vi: "Cụm cố định là Ich wäre Ihnen dankbar (Konjunktiv II của sein), không dùng würde ở đây."
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Sehr geehrte Damen und Herren khi không biết tên người nhận. weil/da mở câu phụ, động từ habe ở cuối. Ich wäre Ihnen dankbar, wenn … (Konjunktiv II). Câu kết cố định: Für Rückfragen stehe ich gern zur Verfügung."
+    display_answer: "Sehr geehrte Damen und Herren, ich schreibe Ihnen, weil ich eine Frage zu meiner Rechnung habe. Ich wäre Ihnen dankbar, wenn Sie mir den Betrag erklären könnten. Für Rückfragen stehe ich gern zur Verfügung. Mit freundlichen Grüßen Minh Tran"
+
+  - key: de:exercise:b1u10l3-tr-erkundigen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-sich-erkundigen-nach
+    prompt:
+      source_text: "Tôi muốn hỏi thông tin về khóa học buổi tối. (thư trang trọng, dùng sich erkundigen nach và möchte)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte mich nach dem Abendkurs erkundigen.
+        - Ich möchte mich gern nach dem Abendkurs erkundigen.
+        - Ich möchte mich nach Ihrem Abendkurs erkundigen.
+        - Ich möchte mich gern nach Ihrem Abendkurs erkundigen.
+        - Ich möchte mich nach dem Kurs am Abend erkundigen.
+    known_wrong:
+      - answer: Ich möchte nach dem Abendkurs erkundigen.
+        feedback_vi: "sich erkundigen là động từ phản thân: Ich möchte mich … erkundigen."
+        error_tag: reflexive_missing
+      - answer: Ich möchte mich nach den Abendkurs erkundigen.
+        feedback_vi: "nach đi với Dativ: nach dem Abendkurs."
+        error_tag: case_dat_akk
+      - answer: Ich möchte mich nach dem Abendkurs erkundigt.
+        feedback_vi: "Sau möchte, động từ chính ở nguyên thể cuối câu: erkundigen."
+        error_tag: verb_form
+    explanation:
+      vi: "sich erkundigen nach + Dativ = hỏi thông tin về điều gì. möchte ở vị trí 2, đại từ phản thân mich đứng sớm, nguyên thể erkundigen ở cuối câu. der Abendkurs → nach dem Abendkurs."
+    display_answer: Ich möchte mich nach dem Abendkurs erkundigen.
+
+  - key: de:exercise:b1u10l3-tr-anbei-unterlagen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-anbei
+    prompt:
+      source_text: "Kèm theo đây tôi gửi ông/bà giấy tờ của tôi. (e-mail trang trọng)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Anbei sende ich Ihnen meine Unterlagen.
+        - Anbei schicke ich Ihnen meine Unterlagen.
+        - Ich sende Ihnen anbei meine Unterlagen.
+        - Ich schicke Ihnen anbei meine Unterlagen.
+        - Ich sende Ihnen meine Unterlagen anbei.
+        - Ich schicke Ihnen meine Unterlagen anbei.
+        - Im Anhang sende ich Ihnen meine Unterlagen.
+        - Im Anhang schicke ich Ihnen meine Unterlagen.
+        - Im Anhang finden Sie meine Unterlagen.
+        - Anbei finden Sie meine Unterlagen.
+    known_wrong:
+      - answer: Anbei ich sende Ihnen meine Unterlagen.
+        feedback_vi: "Anbei ở vị trí 1 nên động từ sende đứng ngay sau: Anbei sende ich …"
+        error_tag: verb_position
+      - answer: Anbei sende ich Sie meine Unterlagen.
+        feedback_vi: "Gửi cho ai là Dativ: Ihnen, không phải Sie."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "anbei = kèm theo đây (chỉ dùng trong thư); hoặc im Anhang (trong tệp đính kèm). jemandem (Dativ: Ihnen) etwas senden/schicken. die Unterlagen (giấy tờ, hồ sơ) dùng ở số nhiều."
+    display_answer: Anbei sende ich Ihnen meine Unterlagen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u10l3-wb-ich-schreibe-ihnen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      instruction: "Câu mở đầu thư trang trọng. Sắp xếp thành câu: \"Tôi viết thư cho ông/bà vì tôi có một câu hỏi.\""
+      tokens:
+        - { id: s-frage, text: Frage }
+        - { id: s-ich1, text: ich }
+        - { id: s-weil, text: weil }
+        - { id: s-habe, text: habe }
+        - { id: s-ihnen, text: Ihnen }
+        - { id: s-komma, text: "," }
+        - { id: s-schreibe, text: schreibe }
+        - { id: s-eine, text: eine }
+        - { id: s-ich2, text: ich }
+    answer:
+      orders:
+        - [s-ich1, s-schreibe, s-ihnen, s-komma, s-weil, s-ich2, s-eine, s-frage, s-habe]
+        - [s-ich2, s-schreibe, s-ihnen, s-komma, s-weil, s-ich1, s-eine, s-frage, s-habe]
+        - [s-weil, s-ich1, s-eine, s-frage, s-habe, s-komma, s-schreibe, s-ich2, s-ihnen]
+        - [s-weil, s-ich2, s-eine, s-frage, s-habe, s-komma, s-schreibe, s-ich1, s-ihnen]
+    explanation:
+      vi: "Câu chính: schreibe ở vị trí 2, Ihnen (Dativ, viết hoa) theo sau. Câu phụ weil: động từ habe ở cuối. Nếu câu weil đứng đầu, động từ schreibe của câu chính đứng ngay sau dấu phẩy: Weil ich eine Frage habe, schreibe ich Ihnen."
+    display_answer: Ich schreibe Ihnen, weil ich eine Frage habe.
+
+  - key: de:exercise:b1u10l3-tr-mitteilen-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-mitteilen
+    prompt:
+      source_text: Leider muss ich Ihnen mitteilen, dass ich an dem Kurs nicht teilnehmen kann.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Rất tiếc, tôi phải thông báo với ông/bà rằng tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải thông báo với ông bà rằng tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải báo với ông/bà rằng tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải thông báo với anh/chị rằng tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải thông báo với quý vị rằng tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải thông báo rằng tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải thông báo với ông/bà là tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải thông báo với ông/bà rằng tôi không tham gia khóa học được.
+        - Tôi rất tiếc phải thông báo với ông/bà rằng tôi không thể tham gia khóa học.
+        - Rất tiếc, tôi phải thông báo với ông/bà rằng tôi không thể tham gia lớp học.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Rất tiếc, tôi phải thông báo với ông/bà rằng tôi không muốn tham gia khóa học.
+        feedback_vi: "nicht teilnehmen kann = không thể tham gia, không phải \"không muốn\"."
+        error_tag: meaning
+    explanation:
+      vi: "jemandem etwas mitteilen = thông báo cho ai (trang trọng hơn sagen). an etwas teilnehmen = tham gia; kann đứng cuối câu dass."
+    display_answer: Rất tiếc, tôi phải thông báo với ông/bà rằng tôi không thể tham gia khóa học.
+
+  - key: de:exercise:b1u10l3-mcq-forum-anfang
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      stem: "Kiểu Schreiben Teil 2: bạn viết bài trên diễn đàn trả lời câu hỏi \"Ab wann sollten Kinder ein eigenes Handy haben?\". Câu mở đầu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: o1a, text: "Ich finde, dass Kinder nicht zu früh ein eigenes Handy bekommen sollten.", lang: de }
+        - { id: o2b, text: "Sehr geehrte Damen und Herren, ich schreibe Ihnen wegen meiner Rechnung.", lang: de }
+        - { id: o3c, text: "Für Rückfragen stehe ich gern zur Verfügung.", lang: de }
+        - { id: o4d, text: "Liebe Grüße und bis bald!", lang: de }
+    answer:
+      correct_option_id: o1a
+    explanation:
+      vi: "Bài diễn đàn mở bằng ý kiến của mình về đúng chủ đề (Ich finde, dass …). Lời chào kiểu thư trang trọng, câu kết của thư và lời chào cuối thân mật đều không hợp với phần mở đầu của bài diễn đàn."
+    display_answer: "Ich finde, dass Kinder nicht zu früh ein eigenes Handy bekommen sollten."

@@ -1,0 +1,406 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u10-modelltest-b1
+order_index: 5
+level: b1
+title:
+  vi: Đề mô phỏng Goethe-Zertifikat B1 (Modelltest B1)
+objectives:
+  - vi: Làm một lượt các dạng bài của bốn phần Lesen, Hören, Schreiben, Sprechen trình độ B1 trong khuôn khổ bài tập của ứng dụng.
+  - vi: Đọc blog, bài báo, quy định và nghe tin nhắn thoại, thảo luận trên radio để tìm ý chính và chi tiết.
+  - vi: Viết e-mail thân mật, tin nhắn trang trọng đủ ý, đúng ngữ vực; tự kiểm tra bài viết, bài nói dài theo tiêu chí.
+  - vi: Phản ứng lịch sự trong phần nói (đề nghị, hỏi lại, đề nghị phương án khác).
+estimated_minutes: 25
+skills: [reading, listening, writing, speaking]
+prerequisites: [de:lesson:b1u10-sprechen]
+items:
+  - item: de:item:b1u10-g-textverweise
+    role: reuse
+  - item: de:item:b1u10-g-gesprochene-sprache
+    role: reuse
+  - item: de:item:b1u10-g-formeller-brief
+    role: reuse
+  - item: de:item:b1u10-g-gespraechsstrategien
+    role: reuse
+  - item: de:item:b1u10-aussage
+    role: reuse
+  - item: de:item:b1u10-zutreffen
+    role: reuse
+  - item: de:item:b1u10-textstelle
+    role: reuse
+  - item: de:item:b1u10-anrufer
+    role: reuse
+  - item: de:item:b1u10-radiosendung
+    role: reuse
+  - item: de:item:b1u10-mitteilen
+    role: reuse
+  - item: de:item:b1u10-unterlagen
+    role: reuse
+  - item: de:item:b1u10-gespraechspartner
+    role: reuse
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u06-g-ob
+    role: reuse
+  - item: de:item:a2u08-wie-waere-es-mit
+    role: reuse
+  - item: de:item:b1u09-g-praesentation-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Bài này là một đề luyện ngắn mô phỏng bốn phần của Goethe-Zertifikat B1 – Lesen, Hören, Schreiben, Sprechen – đồng thời ôn cả unit: từ quy chiếu, dạng nói rút gọn, thư trang trọng và chiến lược giữ hội thoại. Đề do Linguo tự soạn, không phải đề thi thật."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), Goethe-Zertifikat B1 cho người lớn gồm bốn phần: Lesen (năm dạng bài), Hören (bốn dạng), Schreiben (ba bài viết) và Sprechen (thi theo cặp, ba phần). Số câu, thời gian, cách tính điểm và cách thi từng phần có thể thay đổi, vì vậy trước khi đăng ký thi hãy xem tài liệu chính thức mới nhất."
+  - type: explain
+    text:
+      vi: "Lesen và Hören: đọc câu hỏi trước, gạch từ khóa, tìm chỗ tương ứng trong bài (Textstelle) và so nghĩa chứ không so chữ. Chú ý các từ làm đổi nghĩa (nicht, kein, nur, erst, nicht …, sondern …) và từ quy chiếu (dadurch, dafür, deshalb). Khi nghe, ghi ngay ngày, giờ, địa điểm và nghe đến hết câu."
+  - type: explain
+    text:
+      vi: "Schreiben: e-mail thân mật (du, Liebe/Lieber …), bài trên diễn đàn (ý kiến + lý do + ví dụ) và tin nhắn trang trọng ngắn (Sie, Sehr geehrte …, Mit freundlichen Grüßen). Ứng dụng không chấm tự động bài viết dài: hãy viết ra giấy rồi tự kiểm tra theo tiêu chí ở phần đọc thêm. Trong bài tập, bạn luyện các câu then chốt của thư."
+  - type: explain
+    text:
+      vi: "Sprechen: khi cùng lên kế hoạch, hãy đề nghị, phản hồi đề nghị của bạn thi và thống nhất; khi trình bày, đi theo một khung rõ ràng; khi phản hồi, nhắc lại một ý của bạn thi rồi hỏi thêm. Không hiểu thì hỏi lại (Habe ich dich richtig verstanden, dass …?), cần thời gian thì câu giờ (Moment, lass mich kurz überlegen)."
+  - type: deep_explain
+    text:
+      vi: "Tự kiểm tra bài viết (tiêu chí gợi ý của Linguo, không phải thang điểm chính thức): (1) Nội dung – đã viết đủ từng ý đề yêu cầu chưa? (2) Mạch lạc – có từ nối (zuerst, außerdem, deshalb, trotzdem, zum Schluss) và đoạn rõ ràng không? (3) Ngữ vực – du hay Sie đúng và nhất quán; lời chào đầu, cuối đúng; Sie, Ihnen viết hoa? (4) Ngữ pháp – động từ ở vị trí 2, động từ cuối câu phụ (weil, dass, ob, wenn), đuôi tính từ, giống của danh từ. (5) Độ dài – gần với số từ đề nêu. Tự kiểm tra bài nói: ghi âm phần trình bày của bạn (khoảng 3 phút), nghe lại và đánh dấu: có mở đầu, các ý chính, kinh nghiệm bản thân, so sánh với Việt Nam và kết luận không; có chỗ nào im lặng quá lâu không. Mẹo phân bổ thời gian: làm phần dễ trước, nhưng đừng bỏ trống câu nào nếu đề không trừ điểm câu sai – hãy kiểm tra quy định hiện hành."
+  - type: example
+    target: "Sehr geehrter Herr Schulz, leider kann ich an der Besprechung am Dienstag nicht teilnehmen, weil ich an diesem Tag einen Arzttermin habe. Ich wäre Ihnen dankbar, wenn Sie mir das Protokoll schicken könnten. Mit freundlichen Grüßen Minh Tran"
+    target_lang: de
+    translation:
+      vi: "Kính gửi ông Schulz, rất tiếc tôi không thể tham dự cuộc họp hôm thứ Ba vì hôm đó tôi có lịch khám bác sĩ. Tôi sẽ rất cảm ơn nếu ông có thể gửi cho tôi biên bản cuộc họp. Trân trọng, Minh Tran"
+    note:
+      vi: "Kiểu Schreiben Teil 3 (khoảng 40 từ): xin lỗi + lý do (weil … habe) + yêu cầu lịch sự (Ich wäre Ihnen dankbar, wenn …). Viết hoa Ihnen, Sie."
+  - type: example
+    target: "Ich finde, dass Kinder nicht zu früh ein eigenes Handy bekommen sollten. Mit einem Handy sind sie oft abgelenkt und spielen zu viel. Trotzdem kann ein Handy nützlich sein, zum Beispiel wenn ein Kind allein zur Schule fährt. Deshalb meine ich: lieber ein einfaches Handy und klare Regeln."
+    target_lang: de
+    translation:
+      vi: "Tôi cho rằng trẻ em không nên có điện thoại riêng quá sớm. Có điện thoại, các em thường mất tập trung và chơi quá nhiều. Tuy vậy, điện thoại cũng có thể hữu ích, ví dụ khi một em nhỏ tự đi học một mình. Vì thế tôi nghĩ: tốt hơn là một chiếc điện thoại đơn giản và quy tắc rõ ràng."
+    note:
+      vi: "Kiểu Schreiben Teil 2 (bài diễn đàn): ý kiến → lý do → nhượng bộ (Trotzdem …) → kết luận (Deshalb …). Từ nối giúp bài mạch lạc."
+  - type: example
+    target: "Ich spreche heute über das Thema Wohnen bei den Eltern. Zuerst erzähle ich von meinen eigenen Erfahrungen, dann erkläre ich, wie das in Vietnam ist. Zum Schluss nenne ich Vorteile und Nachteile und sage meine Meinung."
+    target_lang: de
+    translation:
+      vi: "Hôm nay tôi nói về chủ đề sống cùng bố mẹ. Đầu tiên tôi kể về kinh nghiệm của bản thân, sau đó tôi giải thích ở Việt Nam thì thế nào. Cuối cùng tôi nêu ưu điểm, nhược điểm và nói ý kiến của mình."
+    note:
+      vi: "Kiểu Sprechen Teil 2: câu mở đầu giới thiệu chủ đề và cấu trúc bài trình bày (Zuerst …, dann …, Zum Schluss …) – Redemittel đã học ở B1U09."
+  - type: example
+    target: "Danke für deine Präsentation! Du hast gesagt, dass in Vietnam viele junge Leute bei ihren Eltern wohnen. Ist das auch nach der Hochzeit so?"
+    target_lang: de
+    translation:
+      vi: "Cảm ơn bài trình bày của bạn! Bạn nói rằng ở Việt Nam nhiều người trẻ sống cùng bố mẹ. Sau khi cưới cũng vậy à?"
+    note:
+      vi: "Kiểu Sprechen Teil 3: cảm ơn, nhắc lại một ý của bạn thi (Du hast gesagt, dass …), rồi hỏi thêm. Hai bạn thi ở đây xưng du."
+  - type: common_mistake
+    wrong: Sehr geehrter Herr Schulz, ich kann nicht kommen. Tschüss!
+    right: Sehr geehrter Herr Schulz, leider kann ich nicht kommen, weil ich krank bin. Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "Thư trang trọng cần lý do và lời chào cuối trang trọng; Tschüss chỉ dùng với bạn bè."
+  - type: common_mistake
+    wrong: Ich kann nicht kommen, weil ich muss arbeiten.
+    right: Ich kann nicht kommen, weil ich arbeiten muss.
+    target_lang: de
+    note:
+      vi: "Trong bài viết, động từ chia sau weil đứng cuối câu. weil + vị trí 2 chỉ nghe thấy trong văn nói."
+  - type: summary
+    points:
+      - vi: "Bốn phần: Lesen, Hören, Schreiben, Sprechen (mô tả tại thời điểm soạn – cần đối chiếu quy định hiện hành)."
+      - vi: "Đọc, nghe: từ khóa, Textstelle, so nghĩa; chú ý nicht …, sondern … và từ quy chiếu."
+      - vi: "Viết: đủ ý, từ nối, đúng ngữ vực (du/Sie), lời chào đầu – cuối đúng."
+      - vi: "Thư trang trọng: Ich schreibe Ihnen, weil … / Ich wäre Ihnen dankbar, wenn … / Mit freundlichen Grüßen."
+      - vi: "Nói: đề nghị – hỏi ý kiến – hỏi lại – câu giờ – thống nhất; phản hồi bằng Du hast gesagt, dass …"
+exercises:
+  # ---------------- recognition: Lesen ----------------
+  - key: de:exercise:b1u10l5-mcq-lesen-blog-verein
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u10-g-textverweise
+    prompt:
+      stem: "Kiểu Lesen Teil 1 (blog). \"Hallo zusammen! Seit drei Monaten wohne ich jetzt in Deutschland. Am Anfang war alles neu, und ich kannte kaum jemanden. Dann habe ich mich in einem Sportverein angemeldet. Dadurch habe ich schnell nette Leute kennengelernt. Nur die Wohnungssuche war schwierig: Die Mieten sind höher, als ich dachte.\" — Richtig oder falsch? Durch den Sportverein hat die Person neue Menschen kennengelernt."
+      stem_lang: vi
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Dadurch trỏ về việc đăng ký vào câu lạc bộ thể thao: nhờ đó người viết nhanh chóng quen những người dễ mến. Câu nhận định nói cùng ý bằng từ khác (durch den Sportverein = dadurch; neue Menschen = nette Leute), nên đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u10l5-mcq-lesen-bibliothek
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-aussage
+    prompt:
+      stem: "Kiểu Lesen Teil 2 (bài báo). \"In unserer Stadtbibliothek kann man seit Kurzem nicht nur Bücher ausleihen, sondern auch Werkzeuge, Spiele und Nähmaschinen. Die Idee dahinter: Nicht jeder muss alles selbst kaufen. Dadurch spart man Geld und schont die Umwelt. Viele Besucher finden das Angebot praktisch. Einige wünschen sich aber längere Öffnungszeiten.\" Welche Aussage trifft zu?"
+      stem_lang: vi
+      options:
+        - { id: b1a, text: "In der Bibliothek kann man jetzt auch Werkzeug ausleihen.", lang: de }
+        - { id: b2b, text: "Werkzeuge muss man in der Bibliothek kaufen.", lang: de }
+        - { id: b3c, text: "Alle Besucher sind mit den Öffnungszeiten zufrieden.", lang: de }
+        - { id: b4d, text: "In der Bibliothek kann man keine Bücher mehr ausleihen.", lang: de }
+    answer:
+      correct_option_id: b1a
+    explanation:
+      vi: "nicht nur Bücher …, sondern auch Werkzeuge = không chỉ sách mà cả dụng cụ, nên vẫn mượn được sách và giờ mượn được cả dụng cụ. Ý về mua (kaufen) bị đảo ngược; chữ Öffnungszeiten có trong bài, nhưng bài nói một số người muốn giờ mở cửa dài hơn – bẫy trùng chữ."
+    display_answer: "In der Bibliothek kann man jetzt auch Werkzeug ausleihen."
+
+  - key: de:exercise:b1u10l5-mcq-lesen-hausordnung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-zutreffen
+    prompt:
+      stem: "Kiểu Lesen Teil 5 (quy định). \"Hausordnung im Sportzentrum: Bitte bringen Sie ein eigenes Handtuch mit. Die Geräte dürfen nur mit sauberen Sportschuhen benutzt werden. Jugendliche unter 16 Jahren dürfen nur in Begleitung eines Erwachsenen trainieren. Bei Fragen wenden Sie sich bitte an unser Personal an der Theke.\" Was gilt im Sportzentrum?"
+      stem_lang: vi
+      options:
+        - { id: h1a, text: "Wer jünger als 16 ist, darf nur zusammen mit einem Erwachsenen trainieren.", lang: de }
+        - { id: h2b, text: "Handtücher bekommt man an der Theke.", lang: de }
+        - { id: h3c, text: "An den Geräten darf man auch ohne Schuhe trainieren.", lang: de }
+        - { id: h4d, text: "Jugendliche unter 16 Jahren dürfen hier nicht trainieren.", lang: de }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: "in Begleitung eines Erwachsenen = có người lớn đi cùng, nên dưới 16 tuổi vẫn tập được nếu có người lớn. Khăn phải tự mang (eigenes Handtuch mitbringen); ở quầy (Theke) chỉ để hỏi thông tin; máy tập chỉ dùng với giày thể thao sạch."
+    display_answer: "Wer jünger als 16 ist, darf nur zusammen mit einem Erwachsenen trainieren."
+
+  # ---------------- recognition: Hören ----------------
+  - key: de:exercise:b1u10l5-listen-mailbox-referat
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-g-gesprochene-sprache
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo Tim, hier ist Lea. Du, unser Treffen für das Referat ist nicht am Mittwoch, sondern erst am Donnerstag. Gleiche Zeit, also um vier, aber nicht in der Bibliothek, sondern bei mir zu Hause. Bring bitte deinen Laptop mit, ja? Bis dann!
+      options:
+        - { id: t1a, text: "Thứ Năm, 4 giờ, ở nhà Lea; Tim mang theo máy tính xách tay.", lang: vi }
+        - { id: t2b, text: "Thứ Tư, 4 giờ, ở thư viện; Tim mang theo máy tính xách tay.", lang: vi }
+        - { id: t3c, text: "Thứ Năm, 4 giờ, ở thư viện; Lea mang theo máy tính xách tay.", lang: vi }
+        - { id: t4d, text: "Thứ Năm, 2 giờ, ở nhà Lea; Tim mang theo máy tính xách tay.", lang: vi }
+    answer:
+      correct_option_id: t1a
+    explanation:
+      vi: "Kiểu Hören Teil 1 (tin nhắn thoại). Hai lần nicht …, sondern …: không phải thứ Tư mà thứ Năm; không phải ở thư viện mà ở nhà Lea (bei mir zu Hause). Gleiche Zeit, also um vier = vẫn giờ cũ, bốn giờ. Bring … mit = Tim mang theo laptop."
+    display_answer: "Thứ Năm, 4 giờ, ở nhà Lea; Tim mang theo máy tính xách tay."
+
+  - key: de:exercise:b1u10l5-listen-radio-ehrenamt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-anrufer
+    prompt:
+      audio_asset_id: null
+      fallback_text: In unserer Sendung geht es heute um das Thema Ehrenamt. Unsere erste Anruferin hilft seit zwei Jahren in einem Sportverein für Kinder. – Ja, das kostet viel Zeit, aber dafür bekomme ich auch viel zurück. – Und unser zweiter Anrufer? – Na ja, ich finde Ehrenamt wichtig, aber neben meiner Arbeit habe ich dafür einfach keine Zeit.
+      options:
+        - { id: e1a, text: "Người gọi thứ nhất làm tình nguyện hai năm và thấy đáng công sức; người thứ hai thấy việc tình nguyện quan trọng nhưng không có thời gian.", lang: vi }
+        - { id: e2b, text: "Người gọi thứ hai làm tình nguyện hai năm; người thứ nhất không có thời gian vì bận đi làm.", lang: vi }
+        - { id: e3c, text: "Cả hai người gọi đều đang giúp ở một câu lạc bộ thể thao cho trẻ em.", lang: vi }
+        - { id: e4d, text: "Người gọi thứ hai cho rằng làm tình nguyện không quan trọng.", lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "Kiểu Hören Teil 4 (ai nói gì). Người thứ nhất: das kostet viel Zeit, aber dafür bekomme ich viel zurück – tốn thời gian nhưng bù lại nhận được nhiều. Người thứ hai: na ja, ich finde Ehrenamt wichtig, aber … keine Zeit – thấy quan trọng nhưng không có thời gian."
+    display_answer: "Người gọi thứ nhất làm tình nguyện hai năm và thấy đáng công sức; người thứ hai thấy việc tình nguyện quan trọng nhưng không có thời gian."
+
+  # ---------------- recognition: Sprechen ----------------
+  - key: de:exercise:b1u10l5-mcq-sprechen-planen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-wie-waere-es-mit
+    prompt:
+      stem: "Kiểu Sprechen Teil 1 (cùng lên kế hoạch). Bạn thi nói: \"Wir könnten am Freitag um zwei Uhr eine Abschiedsparty im Kursraum machen.\" Bạn chỉ rảnh từ bốn giờ. Câu trả lời nào giữ cuộc trò chuyện tốt nhất?"
+      stem_lang: vi
+      options:
+        - { id: s1a, text: "Gute Idee! Aber am Freitag habe ich erst ab vier Uhr Zeit. Wie wäre es mit fünf Uhr?", lang: de }
+        - { id: s2b, text: "Ja.", lang: de }
+        - { id: s3c, text: "Nein, das ist keine gute Idee.", lang: de }
+        - { id: s4d, text: "Am Freitag gehe ich ins Kino, und am Samstag fahre ich zu meiner Tante.", lang: de }
+    answer:
+      correct_option_id: s1a
+    explanation:
+      vi: "Câu tốt nhất phản hồi đề nghị (Gute Idee!), nói rõ vấn đề kèm lý do (erst ab vier Uhr) và đưa phương án khác (Wie wäre es mit fünf Uhr?). Ja hoặc một lời từ chối cụt làm cuộc trò chuyện dừng lại; kể chuyện riêng là độc thoại."
+    display_answer: "Gute Idee! Aber am Freitag habe ich erst ab vier Uhr Zeit. Wie wäre es mit fünf Uhr?"
+
+  # ---------------- recall: Schreiben ----------------
+  - key: de:exercise:b1u10l5-fill-email-informell
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      template: "{{b1}} Jonas, vielen Dank für deine Einladung! Leider kann ich am Samstag nicht kommen, {{b2}} meine Eltern zu Besuch sind. Hast du vielleicht am Sonntag Zeit?"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Lieber, Hallo]
+        b2: [weil, da]
+    known_wrong:
+      - answer: Liebe
+        feedback_vi: "Jonas là nam nên viết Lieber Jonas; Liebe dùng cho người nhận là nữ."
+        error_tag: adj_ending
+      - answer: denn
+        feedback_vi: "Sau denn động từ đứng ở vị trí 2 (denn meine Eltern sind …). Ở đây sind ở cuối nên cần weil hoặc da."
+        error_tag: verb_position
+    explanation:
+      vi: "Kiểu Schreiben Teil 1 (e-mail thân mật, du): lời chào Lieber + tên nam (hoặc Hallo). weil/da mở câu phụ, động từ sind đứng cuối."
+    display_answer: "Lieber Jonas, vielen Dank für deine Einladung! Leider kann ich am Samstag nicht kommen, weil meine Eltern zu Besuch sind. Hast du vielleicht am Sonntag Zeit?"
+
+  - key: de:exercise:b1u10l5-fill-nachricht-formell
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      template: "Sehr geehrte Frau Weber, leider kann ich am Montag nicht {{b1}} Kurs kommen. Ich {{b2}} Ihnen dankbar, wenn Sie mir die Unterlagen per E-Mail schicken {{b3}}. Mit freundlichen Grüßen Minh Tran"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [zum]
+        b2: [wäre]
+        b3: [könnten, würden]
+    known_wrong:
+      - answer: im
+        feedback_vi: "Đến đâu (Wohin?) với kommen: zum Kurs kommen, không phải im Kurs."
+        error_tag: preposition
+      - answer: zu
+        feedback_vi: "der Kurs cần mạo từ: zu + dem = zum Kurs."
+        error_tag: article
+      - answer: würde
+        feedback_vi: "Cụm cố định là Ich wäre Ihnen dankbar (Konjunktiv II của sein)."
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Kiểu Schreiben Teil 3 (tin nhắn trang trọng). zum Kurs kommen = đến lớp. Ich wäre Ihnen dankbar, wenn Sie … schicken könnten (hoặc würden): Konjunktiv II, động từ chia đứng cuối câu wenn."
+    display_answer: "Sehr geehrte Frau Weber, leider kann ich am Montag nicht zum Kurs kommen. Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen per E-Mail schicken könnten. Mit freundlichen Grüßen Minh Tran"
+
+  - key: de:exercise:b1u10l5-tr-mitteilen-wann
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-mitteilen
+    prompt:
+      source_text: "Ông/bà có thể cho tôi biết khi nào khóa học bắt đầu không? (thư trang trọng, dùng mitteilen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Könnten Sie mir bitte mitteilen, wann der Kurs beginnt?
+        - Könnten Sie mir mitteilen, wann der Kurs beginnt?
+        - Können Sie mir bitte mitteilen, wann der Kurs beginnt?
+        - Können Sie mir mitteilen, wann der Kurs beginnt?
+        - Könnten Sie mir bitte mitteilen, wann der Kurs anfängt?
+        - Könnten Sie mir mitteilen, wann der Kurs anfängt?
+        - Können Sie mir bitte mitteilen, wann der Kurs anfängt?
+        - Können Sie mir mitteilen, wann der Kurs anfängt?
+    known_wrong:
+      - answer: Könnten Sie mir bitte mitteilen, wann beginnt der Kurs?
+        feedback_vi: "Câu hỏi gián tiếp: động từ đứng cuối – …, wann der Kurs beginnt?"
+        error_tag: verb_position
+      - answer: Könnten Sie mich bitte mitteilen, wann der Kurs beginnt?
+        feedback_vi: "Báo cho ai là Dativ: mir mitteilen."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "jemandem (Dativ: mir) etwas mitteilen. Câu hỏi gián tiếp với wann: động từ chia (beginnt/anfängt) ở cuối. Könnten Sie …? lịch sự hơn Können Sie …?, cả hai đều dùng được."
+    display_answer: Könnten Sie mir bitte mitteilen, wann der Kurs beginnt?
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u10l5-wb-weil-arbeiten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      instruction: "Hoàn thành câu trong tin nhắn trang trọng: \"Leider kann ich nicht kommen, …\" – \"… vì hôm đó tôi phải làm việc.\""
+      tokens:
+        - { id: w-tag, text: Tag }
+        - { id: w-muss, text: muss }
+        - { id: w-an, text: an }
+        - { id: w-ich, text: ich }
+        - { id: w-arbeiten, text: arbeiten }
+        - { id: w-weil, text: weil }
+        - { id: w-diesem, text: diesem }
+    answer:
+      orders:
+        - [w-weil, w-ich, w-an, w-diesem, w-tag, w-arbeiten, w-muss]
+    explanation:
+      vi: "Câu phụ weil: chủ ngữ ich đứng ngay sau weil, rồi trạng ngữ an diesem Tag (hôm đó, Dativ), nguyên thể arbeiten và động từ chia muss ở cuối cùng."
+    display_answer: Leider kann ich nicht kommen, weil ich an diesem Tag arbeiten muss.
+
+  - key: de:exercise:b1u10l5-wb-ob-stattfindet
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-ob
+    prompt:
+      instruction: "Hoàn thành câu trong thư: \"Könnten Sie mir bitte mitteilen, …\" – \"… liệu khóa học có diễn ra vào thứ Bảy không?\""
+      tokens:
+        - { id: o-samstag, text: Samstag }
+        - { id: o-stattfindet, text: stattfindet }
+        - { id: o-der, text: der }
+        - { id: o-ob, text: ob }
+        - { id: o-kurs, text: Kurs }
+        - { id: o-am, text: am }
+    answer:
+      orders:
+        - [o-ob, o-der, o-kurs, o-am, o-samstag, o-stattfindet]
+        - [o-ob, o-am, o-samstag, o-der, o-kurs, o-stattfindet]
+    explanation:
+      vi: "Câu hỏi có/không gián tiếp dùng ob; động từ tách stattfinden viết liền và đứng cuối câu phụ. Thường chủ ngữ đứng trước (ob der Kurs am Samstag stattfindet); đưa am Samstag lên trước để nhấn mạnh cũng đúng."
+    display_answer: Könnten Sie mir bitte mitteilen, ob der Kurs am Samstag stattfindet?
+
+  - key: de:exercise:b1u10l5-tr-richtig-verstanden-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-g-gespraechsstrategien
+    prompt:
+      source_text: Habe ich dich richtig verstanden, dass du am Wochenende keine Zeit hast?
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mình hiểu đúng không, là cuối tuần bạn không rảnh?
+        - Mình hiểu có đúng không, là cuối tuần bạn không rảnh?
+        - Mình hiểu có đúng không, là cuối tuần bạn không có thời gian?
+        - Có phải ý bạn là cuối tuần bạn không rảnh không?
+        - Có phải ý bạn là cuối tuần bạn không có thời gian không?
+        - Có phải bạn nói là cuối tuần bạn không rảnh không?
+        - Ý bạn là cuối tuần bạn không rảnh à?
+        - Ý bạn là cuối tuần bạn không có thời gian à?
+        - Tôi hiểu đúng không, là cuối tuần bạn không rảnh?
+        - Tôi hiểu có đúng không, rằng cuối tuần bạn không có thời gian?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mình hiểu đúng không, là cuối tuần bạn rảnh?
+        feedback_vi: "keine Zeit haben = không có thời gian, không rảnh."
+        error_tag: meaning
+    explanation:
+      vi: "Habe ich dich richtig verstanden, dass …? là cách hỏi lại để kiểm tra mình hiểu đúng (với du). keine Zeit haben = không rảnh; am Wochenende = vào cuối tuần."
+    display_answer: Mình hiểu đúng không, là cuối tuần bạn không rảnh?

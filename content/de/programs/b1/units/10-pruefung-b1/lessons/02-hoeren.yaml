@@ -1,0 +1,356 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u10-hoeren
+order_index: 2
+level: b1
+title:
+  vi: Nghe hiểu – tiếng Đức nói thực tế (Gesprochene Sprache)
+objectives:
+  - vi: Nghe hiểu các dạng rút gọn khi nói (hab, gibt's, 'n, nee/nö, ne?, gell?, weil + V2, ach so, na ja) và biết dạng viết chuẩn tương ứng.
+  - vi: Làm quen bốn dạng bài nghe B1 – tin ngắn (bản tin thời tiết, tin nhắn thoại), hướng dẫn tham quan, cuộc trò chuyện, thảo luận trên radio (ai nói gì).
+  - vi: Ghi từ khóa ngay lần nghe đầu thay vì cố nghe từng từ.
+estimated_minutes: 20
+skills: [listening, vocabulary]
+prerequisites: [de:lesson:b1u10-lesen]
+items:
+  - item: de:item:b1u10-g-gesprochene-sprache
+  - item: de:item:b1u10-wetterbericht
+  - item: de:item:b1u10-anrufbeantworter
+  - item: de:item:b1u10-radiosendung
+  - item: de:item:b1u10-moderator
+  - item: de:item:b1u10-hoerer
+  - item: de:item:b1u10-umfrage
+  - item: de:item:b1u10-anrufer
+  - item: de:item:b1u10-mailbox
+  - item: de:item:b1u10-schauer
+  - item: de:item:b1u10-bewoelkt
+  - item: de:item:b1u10-nebel
+  - item: de:item:b1u10-verkehrsmeldung
+  - item: de:item:a2u03-g-weil
+    role: reuse
+  - item: de:item:a2u07-g-es-geht-um
+    role: reuse
+  - item: de:item:b1u07-g-zeitangaben-praezise
+    role: reuse
+  - item: de:item:b1u08-g-hin-her
+    role: reuse
+  - item: de:item:b1u08-g-modalpartikeln-1
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nghe hiểu một câu nói nhanh như \"Nee, ich hab keine Zeit, weil – ich muss noch arbeiten, ne?\" và biết khi viết phải là: \"Nein, ich habe keine Zeit, weil ich noch arbeiten muss.\""
+  - type: explain
+    text:
+      vi: "Khi nói nhanh, người Đức hay nuốt âm: ich habe → ich hab, gibt es → gibt's, einen Kaffee → 'n Kaffee, eine Frage → 'ne Frage, ich komme → ich komm. Đây không phải lỗi mà là tiếng Đức nói bình thường, giống như khi nói nhanh tiếng Việt cũng nuốt hoặc nối âm. Bạn cần nghe hiểu những dạng này, còn khi viết bài thi hãy dùng dạng đầy đủ."
+  - type: explain
+    text:
+      vi: "Cuối câu, người nói hay thêm ne? hoặc gell? với nghĩa \"đúng không?\", \"nhỉ?\" – ne? phổ biến hơn ở miền Bắc, gell?/gelle? chủ yếu ở miền Nam nước Đức và ở Áo. Trả lời không trang trọng: nee hoặc nö (= nein). Tiếng đệm ach so = \"à, ra vậy\"; na ja = \"ừ thì\", \"thôi thì\" (đồng ý nửa vời hoặc hơi do dự)."
+  - type: explain
+    text:
+      vi: "Trong văn nói, sau weil nhiều người để động từ ở vị trí 2, thường có một chỗ ngừng ngắn: Ich bleib zu Hause, weil – ich bin total müde. Bạn sẽ nghe dạng này rất nhiều, nhưng trong bài viết vẫn phải đặt động từ cuối câu: …, weil ich total müde bin."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành), phần nghe B1 gồm: các đoạn ngắn (thông báo, tin nhắn thoại, bản tin thời tiết hay giao thông), một bài hướng dẫn hoặc thuyết minh, một cuộc trò chuyện (đúng/sai) và một cuộc thảo luận trên radio (ai nói gì). Hãy đọc câu hỏi trước khi nghe và ghi nhanh từ khóa (ngày, giờ, địa điểm, phủ định) ngay lần nghe đầu. Đừng cố hiểu từng từ: người nói hay sửa lại thông tin (nicht am Mittwoch, sondern am Donnerstag), nên hãy nghe đến hết câu."
+  - type: deep_explain
+    text:
+      vi: "Những dạng rút gọn khác hay gặp: haste (= hast du), willste (= willst du), is (= ist), nich (= nicht), mal (= einmal), runter/rauf (= herunter/herauf). Trên radio, người dẫn chương trình (der Moderator, die Moderatorin) thường nói khá chuẩn, còn khách mời và người gọi điện (der Anrufer, die Anruferin) nói tự nhiên hơn, đôi khi có giọng địa phương. Bản tin thời tiết dùng nhiều cụm cố định: stark bewölkt, einzelne Schauer, Nebel am Morgen, Temperaturen zwischen 15 und 20 Grad. Tiếng đệm như äh, ähm, also không mang nghĩa chính, bạn có thể bỏ qua khi nghe. Mẹo ghi chú: viết tắt, dùng ký hiệu (↑ tăng, ✗ không), chỉ ghi danh từ và con số."
+  - type: example
+    target: Ich nehm 'n Kaffee, und du? – Für mich nichts, danke.
+    target_lang: de
+    translation:
+      vi: Mình lấy một cà phê, còn bạn? – Mình không lấy gì, cảm ơn.
+    note:
+      vi: "Bạn bè nói với nhau (du). nehm = nehme, 'n = einen (Kaffee là giống đực, Akkusativ). Viết chuẩn: Ich nehme einen Kaffee."
+  - type: example
+    target: Der Film war super, ne? – Na ja, die Musik war gut, aber das Ende war ein bisschen langweilig.
+    target_lang: de
+    translation:
+      vi: Phim hay nhỉ? – Ừ thì, nhạc hay, nhưng đoạn kết hơi chán.
+    note:
+      vi: "ne? = đúng không, nhỉ. na ja cho thấy người trả lời không hoàn toàn đồng ý."
+  - type: example
+    target: Der Kurs fängt um zehn an, gell? – Nö, heute schon um neun. – Ach so, gut, dass du das sagst!
+    target_lang: de
+    translation:
+      vi: Lớp bắt đầu lúc mười giờ, đúng không? – Không, hôm nay chín giờ đã bắt đầu rồi. – À ra vậy, may mà bạn nói cho mình biết!
+    note:
+      vi: "gell? (miền Nam) = đúng không; nö = nein (thân mật); ach so = à, ra vậy. Hội thoại giữa bạn bè (du)."
+  - type: example
+    target: Ich komm heute nicht mit, weil – ich hab morgen 'ne Prüfung.
+    target_lang: de
+    translation:
+      vi: Hôm nay mình không đi cùng đâu, vì mai mình có bài thi.
+    note:
+      vi: "komm = komme, hab = habe, 'ne = eine; weil + động từ vị trí 2 chỉ có trong văn nói. Viết: …, weil ich morgen eine Prüfung habe."
+  - type: example
+    target: "Und jetzt das Wetter: Im Norden ist es stark bewölkt, am Nachmittag gibt es einzelne Schauer. Im Süden gibt es am Morgen Nebel, danach scheint die Sonne."
+    target_lang: de
+    translation:
+      vi: "Và bây giờ là thời tiết: Miền Bắc nhiều mây, buổi chiều có mưa rào rải rác. Miền Nam buổi sáng có sương mù, sau đó trời nắng."
+    note:
+      vi: "Bản tin thời tiết trên radio (kiểu Hören Teil 1): người dẫn nói chuẩn, nhiều cụm cố định. Ghi chú theo vùng: Nord – Süd."
+  - type: common_mistake
+    wrong: Ich kann morgen nicht kommen, weil ich hab keine Zeit.
+    right: Ich kann morgen nicht kommen, weil ich keine Zeit habe.
+    target_lang: de
+    note:
+      vi: "Khi nói bạn sẽ nghe weil + vị trí 2, nhưng khi viết bài thi, động từ sau weil phải đứng cuối câu."
+  - type: common_mistake
+    wrong: "Sehr geehrte Frau Weber, ich hab 'ne Frage zum Kurs."
+    right: "Sehr geehrte Frau Weber, ich habe eine Frage zum Kurs."
+    target_lang: de
+    note:
+      vi: "Dạng rút gọn chỉ dùng khi nói hoặc nhắn tin thân mật; thư trang trọng phải dùng dạng đầy đủ."
+  - type: common_mistake
+    wrong: "Notiz: Treffen am Mittwoch"
+    right: "Notiz: Treffen am Donnerstag"
+    target_lang: de
+    note:
+      vi: "Bài nghe nói: Das Treffen ist nicht am Mittwoch, sondern erst am Donnerstag. Nghe từng từ rồi ghi ngay chữ đầu tiên (Mittwoch) là sai; hãy nghe đến hết câu."
+  - type: summary
+    points:
+      - vi: "hab = habe, gibt's = gibt es, 'n = einen/ein, 'ne = eine, komm = komme."
+      - vi: "nee/nö = nein; ne? / gell? = đúng không?; ach so = à, ra vậy; na ja = ừ thì."
+      - vi: "Văn nói: weil + vị trí 2; văn viết: weil … động từ cuối."
+      - vi: "Nghe: đọc câu hỏi trước, ghi từ khóa, nghe đến hết câu (nicht …, sondern …)."
+      - vi: "Từ: der Wetterbericht, der Anrufbeantworter, die Radiosendung, der Moderator, der Hörer, die Umfrage."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u10l2-listen-party-nee
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-g-gesprochene-sprache
+    prompt:
+      audio_asset_id: null
+      fallback_text: Du kommst doch am Samstag zu meiner Party, gell? – Nee, tut mir leid, ich hab am Samstag Spätdienst. – Ach so, schade!
+      options:
+        - { id: p3k, text: "Người kia không đến bữa tiệc thứ Bảy được vì phải làm ca muộn.", lang: vi }
+        - { id: p8m, text: "Người kia sẽ đến bữa tiệc sau giờ làm.", lang: vi }
+        - { id: p1t, text: "Bữa tiệc thứ Bảy bị hủy vì mọi người phải đi làm.", lang: vi }
+        - { id: p6w, text: "Người kia chưa biết có đến được bữa tiệc không.", lang: vi }
+    answer:
+      correct_option_id: p3k
+    explanation:
+      vi: "doch … gell? = chắc là bạn đến, đúng không (người hỏi tin là bạn sẽ đến); nee = nein; ich hab Spätdienst = tôi có ca làm muộn. Ach so, schade! = à vậy à, tiếc quá – nên bạn kia không đến."
+    display_answer: "Người kia không đến bữa tiệc thứ Bảy được vì phải làm ca muộn."
+
+  - key: de:exercise:b1u10l2-mcq-na-ja
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-g-gesprochene-sprache
+    prompt:
+      stem: "Trong hội thoại: \"Wie war das Konzert? – Na ja, die Band war gut, aber es war viel zu voll.\" Người trả lời thấy buổi hòa nhạc thế nào?"
+      stem_lang: vi
+      options:
+        - { id: n4a, text: "Không hẳn tuyệt – có điểm tốt, có điểm không hài lòng.", lang: vi }
+        - { id: n7b, text: "Rất tuyệt, không có gì để chê.", lang: vi }
+        - { id: n2c, text: "Rất tệ, không có gì tốt.", lang: vi }
+        - { id: n9d, text: "Không đi xem nên không biết.", lang: vi }
+    answer:
+      correct_option_id: n4a
+    explanation:
+      vi: "na ja báo hiệu một đánh giá nửa vời; sau đó là một ý tốt (die Band war gut) và một ý không hài lòng (viel zu voll – đông quá). Vì vậy không phải \"rất tuyệt\" cũng không phải \"rất tệ\"."
+    display_answer: "Không hẳn tuyệt – có điểm tốt, có điểm không hài lòng."
+
+  - key: de:exercise:b1u10l2-listen-wetterbericht
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-wetterbericht
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Und nun das Wetter für morgen: Im Norden ist es stark bewölkt, und gegen Abend gibt es Schauer. Im Süden gibt es am Morgen Nebel, danach scheint die Sonne. Die Temperaturen liegen zwischen fünfzehn und zwanzig Grad."
+      options:
+        - { id: w1a, text: "Miền Bắc nhiều mây, khoảng chiều tối có mưa rào; miền Nam sáng có sương mù, sau đó nắng.", lang: vi }
+        - { id: w2b, text: "Miền Bắc sáng có sương mù, sau đó nắng; miền Nam nhiều mây, khoảng chiều tối có mưa rào.", lang: vi }
+        - { id: w3c, text: "Cả nước nắng, chỉ có sương mù vào buổi sáng.", lang: vi }
+        - { id: w4d, text: "Miền Bắc nhiều mây, chiều tối có giông; miền Nam nắng cả ngày.", lang: vi }
+    answer:
+      correct_option_id: w1a
+    explanation:
+      vi: "Kiểu Hören Teil 1. Im Norden: stark bewölkt, gegen Abend Schauer (gegen = khoảng, vào lúc gần; mưa rào). Im Süden: am Morgen Nebel (sương mù), danach Sonne. Khi nghe bản tin, hãy ghi chú theo từng vùng để không lẫn."
+    display_answer: "Miền Bắc nhiều mây, khoảng chiều tối có mưa rào; miền Nam sáng có sương mù, sau đó nắng."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u10l2-fill-hab-habe
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-gesprochene-sprache
+    prompt:
+      template: "Gesprochen: Ich hab heute keine Zeit, weil – ich hab 'ne Prüfung. Geschrieben: Ich {{b1}} heute keine Zeit, weil ich {{b2}} Prüfung {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [habe]
+        b2: [eine]
+        b3: [habe]
+    known_wrong:
+      - answer: hab
+        feedback_vi: "hab là dạng nói. Trong văn viết dùng dạng đầy đủ: ich habe."
+        error_tag: verb_form
+      - answer: einen
+        feedback_vi: "Prüfung là giống cái (die Prüfung), Akkusativ vẫn là eine."
+        error_tag: article
+      - answer: hat
+        feedback_vi: "Chủ ngữ là ich nên chia habe."
+        error_tag: verb_form
+    explanation:
+      vi: "Chuyển sang văn viết: hab → habe, 'ne → eine (die Prüfung, giống cái). Sau weil, động từ chia habe đứng cuối câu phụ, không ở vị trí 2 như trong văn nói."
+    display_answer: "Gesprochen: Ich hab heute keine Zeit, weil – ich hab 'ne Prüfung. Geschrieben: Ich habe heute keine Zeit, weil ich eine Prüfung habe."
+
+  - key: de:exercise:b1u10l2-tr-anrufbeantworter
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-anrufbeantworter
+    prompt:
+      source_text: "Tôi đã để lại cho bà ấy một lời nhắn trên máy trả lời tự động. (dùng hinterlassen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe ihr eine Nachricht auf dem Anrufbeantworter hinterlassen.
+        - Ich habe ihr auf dem Anrufbeantworter eine Nachricht hinterlassen.
+        - Ich habe ihr eine Nachricht auf ihrem Anrufbeantworter hinterlassen.
+        - Ich habe ihr auf ihrem Anrufbeantworter eine Nachricht hinterlassen.
+        - Ich habe auf ihrem Anrufbeantworter eine Nachricht hinterlassen.
+        - Ich habe eine Nachricht auf ihrem Anrufbeantworter hinterlassen.
+    known_wrong:
+      - answer: Ich habe ihr eine Nachricht auf den Anrufbeantworter hinterlassen.
+        feedback_vi: "Nơi lời nhắn nằm (Wo?) nên dùng auf + Dativ: auf dem Anrufbeantworter."
+        error_tag: case_dat_akk
+      - answer: Ich habe sie eine Nachricht auf dem Anrufbeantworter hinterlassen.
+        feedback_vi: "Để lại cho ai là Dativ: ihr (cho bà ấy), không phải sie."
+        error_tag: case_dat_akk
+      - answer: Ich habe ihr eine Nachricht auf dem Anrufbeantworter gehinterlassen.
+        feedback_vi: "hinterlassen không tách và không có ge- ở Partizip II: hinterlassen."
+        error_tag: participle_form
+    explanation:
+      vi: "jemandem (Dativ: ihr) eine Nachricht hinterlassen = để lại lời nhắn cho ai. auf dem Anrufbeantworter: chỉ nơi chốn (Wo?) nên Dativ. hinterlassen là động từ không tách, Partizip II giống nguyên thể."
+    display_answer: Ich habe ihr eine Nachricht auf dem Anrufbeantworter hinterlassen.
+
+  - key: de:exercise:b1u10l2-tr-nee-arbeiten
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      source_text: "Nee, heute nicht. Ich hab keine Zeit, weil – ich muss noch arbeiten."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không, hôm nay thì không. Mình không rảnh, vì mình còn phải làm việc.
+        - Không, hôm nay không được. Mình không có thời gian, vì mình còn phải làm việc.
+        - Không, hôm nay thì không. Mình không có thời gian vì mình còn phải làm việc.
+        - Không, hôm nay không. Mình không rảnh vì mình còn phải làm việc.
+        - Không, hôm nay thì không. Tôi không có thời gian, vì tôi còn phải làm việc.
+        - Không, hôm nay không. Tôi không rảnh vì tôi còn phải làm việc.
+        - Không, hôm nay thì không được. Mình không rảnh vì còn phải đi làm.
+        - Không, hôm nay thì không. Mình không rảnh, vì mình còn phải làm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không, hôm nay thì không. Mình không rảnh, vì mình đã làm việc rồi.
+        feedback_vi: "ich muss noch arbeiten = mình còn phải làm việc (việc chưa làm xong), không phải đã làm rồi."
+        error_tag: meaning
+    explanation:
+      vi: "nee = nein; hab = habe; weil – ich muss … là weil + vị trí 2 của văn nói, nghĩa vẫn là \"vì\". noch arbeiten müssen = vẫn còn phải làm việc."
+    display_answer: Không, hôm nay thì không. Mình không rảnh, vì mình còn phải làm việc.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u10l2-listen-praxis-mailbox
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-anrufbeantworter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Tag, Frau Nguyen, hier ist die Praxis Doktor Berger. Leider müssen wir Ihren Termin am Donnerstag absagen. Können Sie stattdessen am Freitag um halb zehn kommen? Bitte rufen Sie uns kurz zurück. Vielen Dank und auf Wiederhören!
+      options:
+        - { id: m2a, text: "Lịch hẹn thứ Năm bị hủy; phòng khám đề nghị thứ Sáu lúc 9 giờ 30 và nhờ gọi lại.", lang: vi }
+        - { id: m5b, text: "Lịch hẹn thứ Năm bị hủy; phòng khám đề nghị thứ Sáu lúc 10 giờ 30 và nhờ gọi lại.", lang: vi }
+        - { id: m8c, text: "Lịch hẹn được chuyển từ thứ Sáu sang thứ Năm lúc 9 giờ 30.", lang: vi }
+        - { id: m3d, text: "Lịch hẹn thứ Năm vẫn giữ nguyên; chỉ cần gọi lại để xác nhận.", lang: vi }
+    answer:
+      correct_option_id: m2a
+    explanation:
+      vi: "Kiểu Hören Teil 1 (tin nhắn thoại). Termin am Donnerstag absagen = hủy hẹn thứ Năm; stattdessen am Freitag um halb zehn = thay vào đó thứ Sáu lúc 9 giờ 30 (halb zehn là nửa tiếng trước 10 giờ); rufen Sie uns zurück = hãy gọi lại."
+    display_answer: "Lịch hẹn thứ Năm bị hủy; phòng khám đề nghị thứ Sáu lúc 9 giờ 30 và nhờ gọi lại."
+
+  - key: de:exercise:b1u10l2-listen-radio-handy
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-radiosendung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Willkommen zu unserer Sendung! Heute geht es um die Frage, ob Kinder ein eigenes Handy brauchen. Frau Klein, was meinen Sie? – Na ja, ab zwölf Jahren finde ich das in Ordnung, aber nicht früher. – Und Sie, Herr Brandt? – Ich sehe das anders. Mein Sohn ist neun und hat schon eins, weil er allein mit dem Bus zur Schule fährt.
+      options:
+        - { id: r1a, text: "Bà Klein thấy trẻ từ 12 tuổi có điện thoại là được; con trai 9 tuổi của ông Brandt đã có điện thoại vì cháu tự đi xe buýt đến trường.", lang: vi }
+        - { id: r2b, text: "Ông Brandt thấy trẻ từ 12 tuổi có điện thoại là được; con gái 9 tuổi của bà Klein đã có điện thoại.", lang: vi }
+        - { id: r3c, text: "Cả hai đều cho rằng trẻ dưới 12 tuổi không nên có điện thoại riêng.", lang: vi }
+        - { id: r4d, text: "Bà Klein hoàn toàn phản đối việc trẻ em có điện thoại riêng.", lang: vi }
+    answer:
+      correct_option_id: r1a
+    explanation:
+      vi: "Kiểu Hören Teil 4 (thảo luận trên radio – ai nói gì). Bà Klein: Na ja, ab zwölf … in Ordnung (từ 12 tuổi thì được, không sớm hơn). Ông Brandt: Ich sehe das anders – con ông 9 tuổi đã có một chiếc (hat schon eins), weil er allein mit dem Bus fährt."
+    display_answer: "Bà Klein thấy trẻ từ 12 tuổi có điện thoại là được; con trai 9 tuổi của ông Brandt đã có điện thoại vì cháu tự đi xe buýt đến trường."
+
+  - key: de:exercise:b1u10l2-listen-museum-fuehrung
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-hoerer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Herzlich willkommen im Stadtmuseum! Unsere Führung dauert etwa eine Stunde. Wir beginnen hier unten mit der Geschichte der Stadt. Danach gehen wir hinauf zu den Bildern aus dem neunzehnten Jahrhundert. Dort dürfen Sie gern fotografieren, aber bitte ohne Blitz. Zum Schluss können Sie im Museumscafé eine Pause machen.
+      options:
+        - { id: f1a, text: "Chuyến tham quan khoảng một giờ; ở khu tranh thế kỷ 19 được chụp ảnh nhưng không dùng đèn flash.", lang: vi }
+        - { id: f2b, text: "Chuyến tham quan khoảng hai giờ; trong bảo tàng không được chụp ảnh.", lang: vi }
+        - { id: f3c, text: "Chuyến tham quan bắt đầu ở tầng trên với tranh thế kỷ 19.", lang: vi }
+        - { id: f4d, text: "Chuyến tham quan khoảng một giờ; ở khu tranh được chụp ảnh có đèn flash.", lang: vi }
+    answer:
+      correct_option_id: f1a
+    explanation:
+      vi: "Kiểu Hören Teil 2 (hướng dẫn tham quan). etwa eine Stunde = khoảng một giờ; bắt đầu hier unten (ở dưới này) rồi mới đi hinauf (lên trên); Dort dürfen Sie fotografieren, aber bitte ohne Blitz = được chụp nhưng không dùng đèn flash."
+    display_answer: "Chuyến tham quan khoảng một giờ; ở khu tranh thế kỷ 19 được chụp ảnh nhưng không dùng đèn flash."
+
+  - key: de:exercise:b1u10l2-mcq-weil-schriftlich
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-weil
+    prompt:
+      stem: "Bạn nghe một người bạn nói: \"Ich komm nicht, weil – ich hab keine Zeit.\" Bạn muốn viết ý này trong e-mail gửi giáo viên (Sie). Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c1a, text: "Leider kann ich nicht kommen, weil ich keine Zeit habe.", lang: de }
+        - { id: c2b, text: "Leider kann ich nicht kommen, weil ich habe keine Zeit.", lang: de }
+        - { id: c3c, text: "Leider kann ich nicht kommen, weil ich keine Zeit hab.", lang: de }
+        - { id: c4d, text: "Ich komm leider nicht, weil ich keine Zeit habe.", lang: de }
+    answer:
+      correct_option_id: c1a
+    explanation:
+      vi: "Văn viết trang trọng: động từ sau weil đứng cuối (habe) và dùng dạng đầy đủ. weil ich habe … là trật tự của văn nói; hab và komm là dạng rút gọn, không hợp với e-mail gửi giáo viên."
+    display_answer: "Leider kann ich nicht kommen, weil ich keine Zeit habe."

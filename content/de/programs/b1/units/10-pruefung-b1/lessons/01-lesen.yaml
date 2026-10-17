@@ -1,0 +1,348 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u10-lesen
+order_index: 1
+level: b1
+title:
+  vi: Đọc hiểu – từ quy chiếu trong văn bản (Textverweise – dies, dabei, deshalb)
+objectives:
+  - vi: Nhận ra các từ quy chiếu dies/das, dieser, solche, dabei, dafür, dadurch, deshalb và tìm đúng câu hay ý mà chúng trỏ về.
+  - vi: Làm quen năm dạng bài đọc B1 (blog đúng/sai, bài báo chọn ý, ghép quảng cáo, ý kiến ủng hộ/phản đối, quy định – hướng dẫn) với chiến lược tìm từ khóa.
+  - vi: Chọn đáp án vì trùng nghĩa chứ không vì trùng chữ.
+estimated_minutes: 20
+skills: [reading, grammar, vocabulary]
+prerequisites: [de:lesson:b1u09-wiederholung]
+items:
+  - item: de:item:b1u10-g-textverweise
+  - item: de:item:b1u10-aussage
+  - item: de:item:b1u10-zutreffen
+  - item: de:item:b1u10-abschnitt
+  - item: de:item:b1u10-ueberschrift
+  - item: de:item:b1u10-zusammenhang
+  - item: de:item:b1u10-behaupten
+  - item: de:item:b1u10-leserbrief
+  - item: de:item:b1u10-textstelle
+  - item: de:item:b1u10-absatz
+  - item: de:item:b1u10-schluesselwort
+  - item: de:item:b1u10-ankreuzen
+  - item: de:item:b1u10-zuordnen
+  - item: de:item:b1u10-woertlich
+  - item: de:item:a2u06-g-deshalb
+    role: reuse
+  - item: de:item:a2u07-g-dieser-jeder
+    role: reuse
+  - item: de:item:b1u02-g-pronominaladverbien
+    role: reuse
+  - item: de:item:b1u09-g-wortbildung-adjektiv
+    role: reuse
+  - item: de:item:b1u09-g-vergleichssatz
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, khi gặp một câu bắt đầu bằng Dadurch, Dafür hay Deshalb, bạn biết ngay nó trỏ về ý nào ở câu trước, ví dụ: \"Immer mehr Menschen fahren Rad. Dadurch gibt es weniger Staus.\" – dadurch = nhờ việc nhiều người đạp xe."
+  - type: explain
+    text:
+      vi: "Văn bản tiếng Đức nối các câu bằng những từ trỏ ngược về trước: dies/das (điều đó), dieser + danh từ (… này), solche (những … như thế). Trong Viele kaufen online ein. Das ist bequem., từ das trỏ về cả việc mua sắm online chứ không về một danh từ. Tiếng Việt cũng có \"điều đó\", \"việc này\", nhưng tiếng Đức dùng dày hơn nhiều, nhất là trong văn viết."
+  - type: explain
+    text:
+      vi: "Từ da- + giới từ thay cho cả một ý ở câu trước: dabei (trong lúc làm việc đó), dafür (cho việc đó), dadurch (nhờ đó, do đó). Giới từ đi kèm động từ quyết định từ nào được dùng: helfen bei → Ich helfe dir dabei; sich interessieren für → Ich interessiere mich dafür. Nếu giới từ bắt đầu bằng nguyên âm thì thêm r: darauf, darüber."
+  - type: explain
+    text:
+      vi: "deshalb (vì thế) nối kết quả với lý do ở câu trước; nếu đứng đầu câu thì động từ vẫn ở vị trí 2: Der Zug hatte Verspätung. Deshalb kam ich zu spät. dadurch nhấn mạnh cách thức dẫn tới kết quả: Ich lese jeden Tag. Dadurch lerne ich viele neue Wörter."
+  - type: explain
+    text:
+      vi: "Trong bài đọc, đáp án đúng thường diễn đạt lại ý của văn bản bằng từ khác, còn phương án lặp nguyên văn một từ trong bài lại hay là bẫy. Hãy gạch từ khóa trong câu hỏi, tìm chỗ tương ứng trong bài (die Textstelle), rồi so nghĩa, chú ý nicht, kein, nur, nicht mehr và các từ quy chiếu. Đọc theo nghĩa của cả câu, đừng dừng ở một chữ trùng."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), phần đọc B1 có năm dạng: blog hoặc e-mail cá nhân (đúng/sai), bài báo (chọn ý), ghép quảng cáo với người cần, ý kiến của bạn đọc (ủng hộ hay phản đối) và quy định, hướng dẫn (chọn ý). Số câu, thời gian và cách chấm điểm có thể thay đổi, nên trước khi thi hãy xem tài liệu chính thức mới nhất."
+  - type: deep_explain
+    text:
+      vi: "dies là dạng ngắn của dieses và hay dùng trong văn viết để trỏ về cả câu trước: Dies zeigt, dass … . Khi nói, người ta dùng das nhiều hơn. Lưu ý dies hay đứng ở vị trí 1 với vai trò tân ngữ: Dies zeigt eine neue Studie – chủ ngữ ở đây là eine neue Studie. solche đi với danh từ số nhiều và có đuôi như tính từ: solche Probleme, bei solchen Problemen. Một số từ da- có hai nghĩa tùy ngữ cảnh: dafür có thể là \"cho việc đó\" hoặc \"bù lại\" (Die Wohnung ist klein, dafür ist sie billig); dabei có thể là \"trong lúc đó\" hoặc \"thế mà\" (Er ist müde, dabei hat er lange geschlafen). Khi gặp một câu bắt đầu bằng Dabei, Dafür, Dadurch, hãy dừng lại và hỏi: \"việc đó\" là việc gì? Câu trả lời thường nằm ở câu ngay trước. Muốn trỏ về người thì không dùng da-: Ich warte auf ihn (người), nhưng Ich warte darauf (việc, vật) – bạn đã gặp điều này ở B1U02."
+  - type: example
+    target: Immer mehr Menschen fahren mit dem Fahrrad zur Arbeit. Dadurch gibt es in der Stadt weniger Staus.
+    target_lang: de
+    translation:
+      vi: Ngày càng nhiều người đạp xe đi làm. Nhờ đó trong thành phố bớt kẹt xe hơn.
+    note:
+      vi: "Dadurch = durch das, tức là nhờ việc nhiều người đạp xe. Dadurch ở vị trí 1 nên động từ gibt đứng ở vị trí 2."
+  - type: example
+    target: Unser Verein sucht Helfer für das Sommerfest. Dafür brauchen wir vor allem Leute, die gern backen.
+    target_lang: de
+    translation:
+      vi: Hội chúng tôi tìm người giúp cho lễ hội mùa hè. Cho việc đó, chúng tôi đặc biệt cần những người thích làm bánh.
+    note:
+      vi: "Dafür = für das Sommerfest. Thông báo của một hội (văn viết), không xưng du hay Sie với ai cụ thể."
+  - type: example
+    target: Mein Bruder hat ein Jahr in Kanada gearbeitet. Dabei hat er sehr gut Englisch gelernt.
+    target_lang: de
+    translation:
+      vi: Anh tôi đã làm việc một năm ở Canada. Trong thời gian đó, anh ấy học được tiếng Anh rất tốt.
+    note:
+      vi: "Dabei = bei der Arbeit in Kanada, tức là trong lúc làm việc ở đó."
+  - type: example
+    target: Viele Jugendliche telefonieren kaum noch. Dies zeigt eine neue Studie.
+    target_lang: de
+    translation:
+      vi: Nhiều thanh thiếu niên gần như không còn gọi điện thoại nữa. Một nghiên cứu mới cho thấy điều đó.
+    note:
+      vi: "Dies trỏ về cả câu trước và là tân ngữ đứng ở vị trí 1; chủ ngữ là eine neue Studie. Đọc kỹ để không hiểu ngược."
+  - type: example
+    target: Viele Städte bauen neue Radwege. Diese Entwicklung finde ich gut.
+    target_lang: de
+    translation:
+      vi: Nhiều thành phố xây đường dành cho xe đạp mới. Tôi thấy xu hướng này tốt.
+    note:
+      vi: "dieser + danh từ tóm lại cả ý trước: Diese Entwicklung = việc các thành phố xây đường xe đạp. Entwicklung là giống cái nên dùng diese."
+  - type: common_mistake
+    wrong: Viele Menschen kaufen online ein. Dieser ist bequem.
+    right: Viele Menschen kaufen online ein. Das ist bequem.
+    target_lang: de
+    note:
+      vi: "Trỏ về cả một việc (câu trước) thì dùng das hoặc dies. dieser luôn cần một danh từ giống đực đã nói hoặc theo sau."
+  - type: common_mistake
+    wrong: Ich lese jeden Tag Zeitung. Deshalb ich verstehe mehr.
+    right: Ich lese jeden Tag Zeitung. Deshalb verstehe ich mehr.
+    target_lang: de
+    note:
+      vi: "deshalb, dadurch, dafür, dabei chiếm vị trí 1, nên động từ đứng ngay sau, rồi mới đến chủ ngữ."
+  - type: common_mistake
+    wrong: "Im Text steht kostenlos, also stimmt die Aussage: Der Kurs ist kostenlos."
+    right: "Im Text steht: Der Kurs ist nur für Mitglieder kostenlos. Die Aussage ist also falsch."
+    target_lang: de
+    note:
+      vi: "Chọn đáp án vì thấy một chữ trùng (kostenlos) là lỗi rất hay gặp. Phải đọc cả câu: chỉ miễn phí cho hội viên, nên câu nhận định chung là sai."
+  - type: summary
+    points:
+      - vi: "dies/das trỏ về cả câu trước; dieser + danh từ, solche + danh từ số nhiều tóm lại một ý."
+      - vi: "dabei (trong lúc đó), dafür (cho việc đó / bù lại), dadurch (nhờ đó), deshalb (vì thế)."
+      - vi: "Từ quy chiếu ở vị trí 1 → động từ ở vị trí 2: Dadurch gibt es …, Deshalb kam ich …"
+      - vi: "Khi đọc: gạch từ khóa, tìm Textstelle, so nghĩa – không chọn vì trùng chữ."
+      - vi: "Ngôn ngữ đề: die Aussage, zutreffen, der Abschnitt, die Überschrift, ankreuzen, zuordnen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u10l1-mcq-dadurch
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-g-textverweise
+    prompt:
+      stem: "Đọc: \"Immer mehr Firmen erlauben ihren Mitarbeitern, von zu Hause aus zu arbeiten. Dadurch sparen die Mitarbeiter viel Zeit.\" Từ Dadurch trỏ về điều gì?"
+      stem_lang: vi
+      options:
+        - { id: d7k, text: "Việc nhiều công ty cho nhân viên làm việc ở nhà.", lang: vi }
+        - { id: d2m, text: "Các nhân viên.", lang: vi }
+        - { id: d9q, text: "Thời gian của nhân viên.", lang: vi }
+        - { id: d4w, text: "Việc nhân viên tiết kiệm được tiền.", lang: vi }
+    answer:
+      correct_option_id: d7k
+    explanation:
+      vi: "dadurch thay cho cả ý ở câu trước: nhờ việc được làm ở nhà mà nhân viên tiết kiệm thời gian. Nó không trỏ về một người hay một danh từ đơn lẻ, và câu không nói gì về tiền."
+    display_answer: "Việc nhiều công ty cho nhân viên làm việc ở nhà."
+
+  - key: de:exercise:b1u10l1-mcq-deshalb
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u06-g-deshalb
+    prompt:
+      stem: "Chọn từ nối hợp nghĩa: Meine Tochter liebt Tiere. ___ möchte sie später Tierärztin werden."
+      stem_lang: vi
+      options:
+        - { id: s3a, text: "Deshalb", lang: de }
+        - { id: s8b, text: "Trotzdem", lang: de }
+        - { id: s1c, text: "Dadurch", lang: de }
+        - { id: s6d, text: "Dabei", lang: de }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "Yêu động vật là lý do, muốn làm bác sĩ thú y là kết quả, nên dùng deshalb (vì thế). Trotzdem chỉ sự trái ngược; dadurch nói cách thức dẫn đến một kết quả (không hợp với mong muốn); dabei là \"trong lúc đó\" hoặc \"thế mà\"."
+    display_answer: Deshalb
+
+  - key: de:exercise:b1u10l1-mcq-blog-leicht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u10-aussage
+    prompt:
+      stem: "Kiểu Lesen Teil 1 (blog). \"Letzten Sommer habe ich zum ersten Mal in einem Ferienlager als Betreuerin gearbeitet. Dabei habe ich viel über Kinder gelernt. Die Arbeit war anstrengender, als ich dachte, dafür war die Stimmung im Team toll. Nächstes Jahr möchte ich auf jeden Fall wieder mitmachen.\" — Richtig oder falsch? Die Autorin fand die Arbeit leicht."
+      stem_lang: vi
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Trong bài: Die Arbeit war anstrengender, als ich dachte (công việc vất vả hơn tôi tưởng). dafür ở đây nghĩa là \"bù lại\": bù lại không khí trong nhóm rất tuyệt. Câu nhận định nói công việc nhẹ nhàng (leicht), nên sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u10l1-mcq-blog-wieder
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u10-zutreffen
+    prompt:
+      stem: "Kiểu Lesen Teil 1 (blog). \"Letzten Sommer habe ich zum ersten Mal in einem Ferienlager als Betreuerin gearbeitet. Dabei habe ich viel über Kinder gelernt. Die Arbeit war anstrengender, als ich dachte, dafür war die Stimmung im Team toll. Nächstes Jahr möchte ich auf jeden Fall wieder mitmachen.\" — Trifft die Aussage zu? Die Autorin will im nächsten Jahr noch einmal als Betreuerin arbeiten."
+      stem_lang: vi
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Bài viết: Nächstes Jahr möchte ich … wieder mitmachen. Câu nhận định nói cùng ý bằng từ khác (im nächsten Jahr = nächstes Jahr, noch einmal … arbeiten = wieder mitmachen), nên đúng. Đây chính là kiểu diễn đạt lại mà bạn phải nhận ra."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u10l1-fill-dabei-dafuer-dadurch
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-textverweise
+    prompt:
+      template: "Ich habe ein Jahr in Wien studiert. {{b1}} (bei + das) habe ich viele nette Leute kennengelernt. Die Wohnung war klein, {{b2}} (für + das) war sie billig. Ich habe jeden Tag Deutsch gesprochen. {{b3}} (durch + das) ist mein Deutsch viel besser geworden."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Dabei]
+        b2: [dafür]
+        b3: [Dadurch]
+    known_wrong:
+      - answer: damit
+        feedback_vi: "damit = mit + das (hoặc liên từ \"để\"). Hãy ghép da- với đúng giới từ trong ngoặc."
+        error_tag: preposition
+      - answer: deshalb
+        feedback_vi: "deshalb là \"vì thế\", không ghép từ giới từ. Ô này cần da- + giới từ trong ngoặc."
+        error_tag: preposition
+    explanation:
+      vi: "da- + giới từ thay cho ý ở câu trước: dabei (trong thời gian học ở đó), dafür (bù lại: nhà nhỏ nhưng rẻ), dadurch (nhờ nói tiếng Đức mỗi ngày). Mỗi từ ở vị trí 1 hoặc sau dấu phẩy, và động từ đi ngay sau."
+    display_answer: "Ich habe ein Jahr in Wien studiert. Dabei habe ich viele nette Leute kennengelernt. Die Wohnung war klein, dafür war sie billig. Ich habe jeden Tag Deutsch gesprochen. Dadurch ist mein Deutsch viel besser geworden."
+
+  - key: de:exercise:b1u10l1-tr-dadurch-woerter
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-textverweise
+    prompt:
+      source_text: "Nhờ đó tôi học được nhiều từ mới. (câu nối tiếp \"Ich lese jeden Tag Zeitung.\"; dùng dadurch, thì hiện tại)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Dadurch lerne ich viele neue Wörter.
+        - Ich lerne dadurch viele neue Wörter.
+        - Dadurch lerne ich viele neue Vokabeln.
+        - Ich lerne dadurch viele neue Vokabeln.
+    known_wrong:
+      - answer: Dadurch ich lerne viele neue Wörter.
+        feedback_vi: "Dadurch ở vị trí 1 nên động từ lerne đứng ngay sau: Dadurch lerne ich …"
+        error_tag: verb_position
+      - answer: Dadurch lerne ich viel neue Wörter.
+        feedback_vi: "Trước danh từ số nhiều dùng viele: viele neue Wörter."
+        error_tag: adj_ending
+    explanation:
+      vi: "dadurch = nhờ việc đọc báo mỗi ngày. Từ quy chiếu đứng đầu câu thì động từ ở vị trí 2: Dadurch lerne ich …; cũng có thể đặt dadurch sau động từ: Ich lerne dadurch …"
+    display_answer: Dadurch lerne ich viele neue Wörter.
+
+  - key: de:exercise:b1u10l1-tr-deshalb-spaet
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u06-g-deshalb
+    prompt:
+      source_text: "Vì thế tôi đã đến muộn. (câu nối tiếp \"Der Bus hatte Verspätung.\"; dùng deshalb)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Deshalb bin ich zu spät gekommen.
+        - Deshalb kam ich zu spät.
+        - Ich bin deshalb zu spät gekommen.
+        - Ich kam deshalb zu spät.
+    known_wrong:
+      - answer: Deshalb ich bin zu spät gekommen.
+        feedback_vi: "Deshalb ở vị trí 1 nên động từ bin đứng ngay sau: Deshalb bin ich …"
+        error_tag: verb_position
+      - answer: Deshalb habe ich zu spät gekommen.
+        feedback_vi: "kommen chỉ sự di chuyển nên Perfekt dùng sein: ich bin … gekommen."
+        error_tag: aux_verb
+    explanation:
+      vi: "Xe buýt bị trễ là lý do, đến muộn là kết quả → deshalb. Kể chuyện đã qua: Perfekt (bin … gekommen) hoặc Präteritum (kam). Động từ chia đứng ở vị trí 2 sau Deshalb."
+    display_answer: Deshalb bin ich zu spät gekommen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u10l1-wb-dabei-kennengelernt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-textverweise
+    prompt:
+      instruction: "Câu trước: \"Sie hat ein Jahr in Wien gearbeitet.\" Sắp xếp thành câu nối tiếp: \"Trong thời gian đó, cô ấy đã quen nhiều người thú vị.\""
+      tokens:
+        - { id: k-menschen, text: Menschen }
+        - { id: k-hat, text: hat }
+        - { id: k-kennengelernt, text: kennengelernt }
+        - { id: k-dabei, text: Dabei }
+        - { id: k-interessante, text: interessante }
+        - { id: k-sie, text: sie }
+        - { id: k-viele, text: viele }
+    answer:
+      orders:
+        - [k-dabei, k-hat, k-sie, k-viele, k-interessante, k-menschen, k-kennengelernt]
+        - [k-sie, k-hat, k-dabei, k-viele, k-interessante, k-menschen, k-kennengelernt]
+        - [k-viele, k-interessante, k-menschen, k-hat, k-sie, k-dabei, k-kennengelernt]
+    explanation:
+      vi: "Dabei (= trong lúc làm việc ở Wien) đứng đầu, rồi động từ chia hat ở vị trí 2, chủ ngữ sie, tân ngữ viele interessante Menschen và Partizip II kennengelernt cuối câu. Cũng có thể bắt đầu bằng sie: Sie hat dabei viele interessante Menschen kennengelernt."
+    display_answer: Dabei hat sie viele interessante Menschen kennengelernt.
+
+  - key: de:exercise:b1u10l1-mcq-anzeige-pruefung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-zuordnen
+    prompt:
+      stem: "Kiểu Lesen Teil 3 (ghép quảng cáo). Chị Mai muốn học một khóa tiếng Đức buổi tối để chuẩn bị thi B1. Quảng cáo nào phù hợp với chị?"
+      stem_lang: vi
+      options:
+        - { id: a1x, text: "Prüfungsvorbereitung Deutsch B1: Abendkurs, dienstags und donnerstags 18 bis 20 Uhr", lang: de }
+        - { id: a2y, text: "Deutsch B1 intensiv: täglich 9 bis 13 Uhr, kleine Gruppen", lang: de }
+        - { id: a3u, text: "Abendkurs Englisch B1 mit Prüfungsvorbereitung: mittwochs 19 Uhr", lang: de }
+        - { id: a4v, text: "Konversationskurs Deutsch am Abend – kostenlos, ohne Prüfung, für alle Niveaus", lang: de }
+    answer:
+      correct_option_id: a1x
+    explanation:
+      vi: "Phải khớp đủ ba điều kiện: tiếng Đức, buổi tối, chuẩn bị thi B1. Quảng cáo tiếng Anh có đủ chữ Abendkurs, B1, Prüfung nhưng sai ngôn ngữ – đó là bẫy trùng chữ; khóa B1 intensiv học buổi sáng; khóa hội thoại tuy miễn phí (kostenlos = không mất tiền) nhưng không chuẩn bị thi (ohne Prüfung)."
+    display_answer: "Prüfungsvorbereitung Deutsch B1: Abendkurs, dienstags und donnerstags 18 bis 20 Uhr"
+
+  - key: de:exercise:b1u10l1-mcq-meinung-handyverbot
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-leserbrief
+    prompt:
+      stem: "Kiểu Lesen Teil 4. Trong một thư bạn đọc về việc cấm điện thoại di động ở trường, Jana viết: \"Ich verstehe, dass viele Eltern sich Sorgen machen. Trotzdem halte ich ein Verbot für falsch. Schüler sollten lernen, vernünftig mit dem Handy umzugehen. Dafür braucht man keine Verbote, sondern klare Regeln.\" Ist Jana für ein Handyverbot an Schulen?"
+      stem_lang: vi
+      options:
+        - { id: j1n, text: "Ja", lang: de }
+        - { id: j2n, text: "Nein", lang: de }
+    answer:
+      correct_option_id: j2n
+    explanation:
+      vi: "Câu đầu (Ich verstehe, dass …) chỉ là nhượng bộ; ý chính đến sau Trotzdem: halte ich ein Verbot für falsch – Jana cho rằng lệnh cấm là sai. Dafür (cho việc học dùng điện thoại hợp lý) cần quy tắc rõ ràng chứ không cần lệnh cấm."
+    display_answer: Nein

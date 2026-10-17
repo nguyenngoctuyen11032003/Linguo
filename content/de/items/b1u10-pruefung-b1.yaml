@@ -1,0 +1,1163 @@
+# Học liệu unit B1U10 "Ôn B1 và thi Goethe-Zertifikat B1" (Prüfungstraining B1), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U10L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Đọc hiểu – từ quy chiếu trong văn bản =================
+  - key: de:item:b1u10-g-textverweise
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Textverweise: dies/das, dieser, solche · dabei, dafür, dadurch · deshalb"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nhiều từ trong văn bản không mang thông tin mới mà trỏ về câu hoặc ý đứng trước: dies/das (điều đó), dieser/diese/dieses + danh từ (… này), solche (những … như thế). Các từ da- + giới từ như dabei (khi làm việc đó), dafür (cho việc đó), dadurch (nhờ đó, do đó) và deshalb (vì thế) thay cho cả một ý ở câu trước. Khi đọc, hãy hỏi \"từ này trỏ về đâu?\" để hiểu đúng quan hệ giữa các câu."
+      examples:
+        - target: Immer mehr Menschen fahren mit dem Fahrrad zur Arbeit. Dadurch gibt es weniger Staus.
+          translation:
+            vi: Ngày càng nhiều người đạp xe đi làm. Nhờ đó mà bớt kẹt xe.
+        - target: Mein Nachbar hilft älteren Menschen beim Einkaufen. Dafür bekommt er kein Geld.
+          translation:
+            vi: Hàng xóm tôi giúp người già đi mua sắm. Anh ấy không nhận tiền cho việc đó.
+        - target: Viele Städte bauen neue Radwege. Diese Entwicklung finde ich gut.
+          translation:
+            vi: Nhiều thành phố xây đường dành cho xe đạp mới. Tôi thấy xu hướng này tốt.
+      confusion:
+        vi: "dabei, dafür, dadurch trỏ về một việc hay một ý; muốn trỏ về người thì dùng giới từ + đại từ (für ihn, bei ihr). deshalb nêu kết quả của một lý do, còn dadurch nhấn mạnh cách thức hay con đường dẫn đến kết quả."
+
+  - key: de:item:b1u10-aussage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Aussage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu nhận định, lời phát biểu
+      examples:
+        - target: Lesen Sie die Aussagen und dann den Text.
+          translation:
+            vi: Hãy đọc các câu nhận định rồi mới đọc văn bản.
+        - target: Diese Aussage passt nicht zum Text.
+          translation:
+            vi: Câu nhận định này không khớp với văn bản.
+      confusion:
+        vi: "Trong đề thi, Aussage là câu bạn phải đánh giá đúng hay sai so với văn bản. Động từ gốc là aussagen (khai, phát biểu)."
+
+  - key: de:item:b1u10-zutreffen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zutreffen, trifft zu, traf zu, hat zugetroffen
+      pos: động từ
+    back:
+      meaning:
+        vi: đúng, phù hợp (với ai, điều gì)
+      examples:
+        - target: Welche Aussage trifft zu?
+          translation:
+            vi: Nhận định nào đúng?
+        - target: Das trifft auf mich nicht zu.
+          translation:
+            vi: Điều đó không đúng với tôi.
+      confusion:
+        vi: "Động từ tách: trifft … zu. Đúng với ai/cái gì: zutreffen auf + Akkusativ (auf mich). Đừng nhầm với treffen (gặp)."
+
+  - key: de:item:b1u10-abschnitt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Abschnitt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần, đoạn (của văn bản)
+      examples:
+        - target: Im zweiten Abschnitt geht es um die Kosten.
+          translation:
+            vi: Phần thứ hai nói về chi phí.
+        - target: Lesen Sie den Text Abschnitt für Abschnitt.
+          translation:
+            vi: Hãy đọc văn bản từng phần một.
+      confusion:
+        vi: "der Abschnitt là một phần nội dung, có thể gồm nhiều đoạn; der Absatz là đoạn văn bắt đầu bằng một dòng mới."
+
+  - key: de:item:b1u10-ueberschrift
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Überschrift, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiêu đề, đầu đề (bài viết)
+      examples:
+        - target: Welche Überschrift passt zu welchem Text?
+          translation:
+            vi: Tiêu đề nào hợp với văn bản nào?
+        - target: Die Überschrift hat mich neugierig gemacht.
+          translation:
+            vi: Cái tiêu đề làm tôi tò mò.
+      confusion:
+        vi: "Danh từ đuôi -schrift là giống cái: die Überschrift, die Unterschrift (chữ ký). Tiêu đề e-mail là der Betreff."
+
+  - key: de:item:b1u10-zusammenhang
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zusammenhang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mối liên hệ; ngữ cảnh
+      examples:
+        - target: In diesem Zusammenhang hat das Wort eine andere Bedeutung.
+          translation:
+            vi: Trong ngữ cảnh này, từ đó có nghĩa khác.
+        - target: Gibt es einen Zusammenhang zwischen Schlaf und Gesundheit?
+          translation:
+            vi: Giữa giấc ngủ và sức khỏe có mối liên hệ nào không?
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Zusammenhänge. Liên hệ giữa hai thứ: der Zusammenhang zwischen A und B."
+
+  - key: de:item:b1u10-behaupten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: behaupten
+      pos: động từ
+    back:
+      meaning:
+        vi: khẳng định, cho rằng (chưa chắc đã được chứng minh)
+      examples:
+        - target: Der Autor behauptet, dass Kinder heute weniger lesen.
+          translation:
+            vi: Tác giả cho rằng trẻ em ngày nay đọc ít hơn.
+        - target: Er behauptet, dass er die E-Mail nie bekommen hat.
+          translation:
+            vi: Anh ta khẳng định là chưa bao giờ nhận được e-mail đó.
+      confusion:
+        vi: "behaupten chỉ là người nói tự khẳng định, không có nghĩa điều đó đúng. Trong đề đọc, Der Autor behauptet … là ý kiến của tác giả, không phải sự thật đã được chứng minh."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 1 – trường đọc hiểu, ngôn ngữ đề thi
+  - key: de:item:b1u10-leserbrief
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Leserbrief, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư bạn đọc (gửi tòa soạn báo)
+      examples:
+        - target: In ihrem Leserbrief kritisiert die Autorin die neuen Öffnungszeiten.
+          translation:
+            vi: Trong thư bạn đọc của mình, tác giả phê phán giờ mở cửa mới.
+        - target: Die Zeitung hat drei Leserbriefe zu diesem Thema gedruckt.
+          translation:
+            vi: Tờ báo đã đăng ba thư bạn đọc về chủ đề này.
+      confusion:
+        vi: "Từ ghép der Leser (người đọc) + der Brief (thư), lấy giống của từ cuối: der Leserbrief."
+
+  - key: de:item:b1u10-textstelle
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Textstelle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ (đoạn, câu) trong văn bản
+      examples:
+        - target: Markieren Sie die Textstelle, die zur Aussage passt.
+          translation:
+            vi: Hãy đánh dấu chỗ trong bài khớp với câu nhận định.
+        - target: An dieser Textstelle ändert der Autor seine Meinung.
+          translation:
+            vi: Ở chỗ này trong bài, tác giả thay đổi ý kiến.
+      confusion:
+        vi: "der Text + die Stelle (chỗ), lấy giống của từ cuối: die Textstelle. Tìm đúng Textstelle trước rồi mới so nghĩa với phương án."
+
+  - key: de:item:b1u10-absatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Absatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đoạn văn (bắt đầu bằng dòng mới)
+      examples:
+        - target: Im ersten Absatz stellt sich die Autorin vor.
+          translation:
+            vi: Ở đoạn đầu tiên, tác giả tự giới thiệu.
+        - target: Beginnen Sie für jeden Punkt einen neuen Absatz.
+          translation:
+            vi: Mỗi ý hãy viết thành một đoạn mới.
+      confusion:
+        vi: "Số nhiều die Absätze. der Absatz còn có nghĩa là gót giày; der Abschnitt là một phần nội dung, có thể dài hơn một đoạn."
+
+  - key: de:item:b1u10-schluesselwort
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Schlüsselwort, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ khóa
+      examples:
+        - target: Markieren Sie die Schlüsselwörter in der Aufgabe.
+          translation:
+            vi: Hãy đánh dấu các từ khóa trong đề bài.
+        - target: Im Text wird das Schlüsselwort oft mit anderen Worten ausgedrückt.
+          translation:
+            vi: Trong văn bản, từ khóa thường được diễn đạt bằng từ khác.
+      confusion:
+        vi: "der Schlüssel (chìa khóa) + das Wort, lấy giống của từ cuối: das Schlüsselwort, số nhiều die Schlüsselwörter."
+
+  - key: de:item:b1u10-ankreuzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ankreuzen
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh dấu chéo (chọn đáp án)
+      examples:
+        - target: Kreuzen Sie die richtige Lösung an.
+          translation:
+            vi: Hãy đánh dấu chéo vào đáp án đúng.
+        - target: Ich habe aus Versehen zwei Antworten angekreuzt.
+          translation:
+            vi: Tôi lỡ đánh dấu hai đáp án.
+      confusion:
+        vi: "Động từ tách: kreuzen … an, Partizip II angekreuzt. Trong đề tiếng Đức, ankreuzen là đánh dấu chéo (x) vào ô, không phải khoanh tròn."
+
+  - key: de:item:b1u10-zuordnen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zuordnen
+      pos: động từ
+    back:
+      meaning:
+        vi: ghép, xếp (cái gì vào đúng chỗ)
+      examples:
+        - target: Ordnen Sie die Anzeigen den Personen zu.
+          translation:
+            vi: Hãy ghép các quảng cáo với từng người.
+        - target: Diese Anzeige kann man keiner Person zuordnen.
+          translation:
+            vi: Quảng cáo này không ghép được với người nào.
+      confusion:
+        vi: "Động từ tách: ordnen … zu. Ghép cái gì (Akkusativ) với ai/cái gì (Dativ): die Anzeige einer Person zuordnen."
+
+  - key: de:item:b1u10-woertlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: wörtlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: nguyên văn, từng chữ một
+      examples:
+        - target: Die Lösung steht selten wörtlich im Text.
+          translation:
+            vi: Đáp án hiếm khi nằm nguyên văn trong bài.
+        - target: Bitte übersetzen Sie nicht zu wörtlich.
+          translation:
+            vi: Xin đừng dịch quá sát từng chữ.
+      confusion:
+        vi: "Trong bài đọc, phương án lặp lại nguyên văn một từ trong bài thường là bẫy; đáp án đúng hay diễn đạt lại ý bằng từ khác."
+
+  # ================= Bài 2: Nghe hiểu – tiếng Đức nói thực tế =================
+  - key: de:item:b1u10-g-gesprochene-sprache
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Gesprochene Sprache: hab, gibt's, 'n Kaffee · nee/nö · …, ne? / …, gell? · weil + V2 · ach so, na ja"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi nói nhanh, người Đức hay rút gọn: hab (= habe), gibt's (= gibt es), 'n Kaffee (= einen Kaffee), nee hoặc nö (= nein), và thêm ne? hay gell? ở cuối câu với nghĩa \"đúng không?\". Trong văn nói còn hay gặp weil + động từ ở vị trí 2 và các tiếng đệm ach so (à, ra vậy), na ja (ừ thì, thôi thì). Bạn cần nghe hiểu những dạng này, nhưng khi viết bài thi hãy dùng dạng đầy đủ."
+      examples:
+        - target: Hast du heute Abend Zeit? – Nee, ich hab leider keine Zeit.
+          translation:
+            vi: Tối nay bạn rảnh không? – Không, tiếc là mình không rảnh.
+        - target: Der Film war super, ne? – Na ja, das Ende war ein bisschen langweilig.
+          translation:
+            vi: Phim hay nhỉ? – Ừ thì, đoạn kết hơi chán.
+      confusion:
+        vi: "gell?/gelle? chủ yếu nghe ở miền Nam nước Đức và ở Áo; ne? phổ biến hơn ở miền Bắc. Viết bài thi: weil ich keine Zeit habe (động từ cuối), không viết weil ich hab keine Zeit."
+
+  - key: de:item:b1u10-wetterbericht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Wetterbericht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản tin thời tiết
+      examples:
+        - target: Laut Wetterbericht regnet es morgen.
+          translation:
+            vi: Theo bản tin thời tiết, mai trời mưa.
+        - target: Hast du heute schon den Wetterbericht gehört?
+          translation:
+            vi: Hôm nay bạn đã nghe bản tin thời tiết chưa?
+      confusion:
+        vi: "der Wetterbericht là bản tin (trên radio, ti vi); die Wettervorhersage nhấn mạnh phần dự báo. Hai từ thường dùng thay nhau."
+
+  - key: de:item:b1u10-anrufbeantworter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Anrufbeantworter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy trả lời điện thoại tự động
+      examples:
+        - target: Ich habe ihr eine Nachricht auf dem Anrufbeantworter hinterlassen.
+          translation:
+            vi: Tôi đã để lại lời nhắn cho cô ấy trên máy trả lời tự động.
+        - target: Ich habe angerufen, aber es lief nur der Anrufbeantworter.
+          translation:
+            vi: Tôi đã gọi, nhưng chỉ có máy trả lời tự động.
+      confusion:
+        vi: "Từ ghép der Anruf (cuộc gọi) + der Beantworter (cái trả lời). Với điện thoại di động, người ta thường nói die Mailbox."
+
+  - key: de:item:b1u10-radiosendung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Radiosendung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình phát thanh
+      examples:
+        - target: In der Radiosendung diskutieren drei Gäste über das Thema Wohnen.
+          translation:
+            vi: Trong chương trình phát thanh, ba vị khách thảo luận về chủ đề nhà ở.
+        - target: Ich höre die Sendung jeden Morgen im Auto.
+          translation:
+            vi: Sáng nào tôi cũng nghe chương trình đó trong ô tô.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Sendung, die Radiosendung. Động từ gốc: senden (phát sóng)."
+
+  - key: de:item:b1u10-moderator
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Moderator, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: người dẫn chương trình
+      examples:
+        - target: Der Moderator begrüßt die Gäste im Studio.
+          translation:
+            vi: Người dẫn chương trình chào các vị khách trong trường quay.
+        - target: Die Moderatorin stellt den Gästen kurze Fragen.
+          translation:
+            vi: Nữ dẫn chương trình đặt những câu hỏi ngắn cho các vị khách.
+      pronunciation_note:
+        vi: "Số ít nhấn âm -ra-: Moderator; số nhiều trọng âm chuyển sang -to-: Moderatoren (giống Doktor – Doktoren)."
+      confusion:
+        vi: "Nữ: die Moderatorin, -nen. Số nhiều die Moderatoren."
+
+  - key: de:item:b1u10-hoerer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hörer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thính giả, người nghe; ống nghe điện thoại
+      examples:
+        - target: Liebe Hörerinnen und Hörer, herzlich willkommen!
+          translation:
+            vi: Kính chào quý thính giả!
+        - target: Er nahm den Hörer ab und sagte seinen Namen.
+          translation:
+            vi: Anh ấy nhấc ống nghe và nói tên mình.
+      confusion:
+        vi: "Nữ: die Hörerin, -nen. Người xem ti vi là der Zuschauer, người đọc là der Leser."
+
+  - key: de:item:b1u10-umfrage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Umfrage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc khảo sát, cuộc thăm dò ý kiến
+      examples:
+        - target: Wir machen heute eine kleine Umfrage auf der Straße.
+          translation:
+            vi: Hôm nay chúng tôi làm một cuộc thăm dò nhỏ trên đường phố.
+        - target: An der Umfrage haben über tausend Menschen teilgenommen.
+          translation:
+            vi: Hơn một nghìn người đã tham gia cuộc khảo sát.
+      confusion:
+        vi: "eine Umfrage machen/durchführen = làm khảo sát; an einer Umfrage teilnehmen = tham gia khảo sát."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 2 – trường radio, điện thoại, bản tin thời tiết
+  - key: de:item:b1u10-anrufer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Anrufer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người gọi điện
+      examples:
+        - target: Viele Anrufer haben heute ihre Meinung gesagt.
+          translation:
+            vi: Hôm nay nhiều người gọi đến đã nói ý kiến của mình.
+        - target: Unsere nächste Anruferin kommt aus Köln.
+          translation:
+            vi: Người gọi tiếp theo của chúng ta đến từ Köln.
+      confusion:
+        vi: "Nữ: die Anruferin, -nen. Động từ gốc: anrufen (gọi điện), danh từ der Anruf (cuộc gọi)."
+
+  - key: de:item:b1u10-mailbox
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Mailbox, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hộp thư thoại (của điện thoại di động)
+      examples:
+        - target: Ich habe dir auf die Mailbox gesprochen.
+          translation:
+            vi: Mình đã để lại lời nhắn trong hộp thư thoại của bạn.
+        - target: Seine Mailbox ist leider voll.
+          translation:
+            vi: Tiếc là hộp thư thoại của anh ấy đầy rồi.
+      pronunciation_note:
+        vi: "Từ mượn tiếng Anh, đọc gần như \"mêl-box\"."
+      confusion:
+        vi: "Lời nhắn để lại là eine Nachricht; auf die Mailbox sprechen = để lại lời nhắn bằng giọng nói."
+
+  - key: de:item:b1u10-schauer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schauer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơn mưa rào
+      examples:
+        - target: Am Nachmittag gibt es im Norden einzelne Schauer.
+          translation:
+            vi: Buổi chiều ở miền Bắc có mưa rào rải rác.
+        - target: Nach dem kurzen Schauer schien wieder die Sonne.
+          translation:
+            vi: Sau cơn mưa rào ngắn, trời lại nắng.
+      confusion:
+        vi: "Trong bản tin thời tiết, Schauer là mưa rào ngắn; der Regen là mưa nói chung."
+
+  - key: de:item:b1u10-bewoelkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bewölkt
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhiều mây, có mây
+      examples:
+        - target: Morgen ist es im Süden stark bewölkt.
+          translation:
+            vi: Ngày mai ở miền Nam trời nhiều mây.
+        - target: Der Himmel ist bewölkt, aber es bleibt trocken.
+          translation:
+            vi: Trời nhiều mây nhưng không mưa.
+      confusion:
+        vi: "Từ die Wolke (đám mây). Trong bản tin thời tiết hay gặp: sonnig (nắng) – bewölkt (nhiều mây) – bedeckt (u ám, mây kín trời)."
+
+  - key: de:item:b1u10-nebel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Nebel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: sương mù
+      examples:
+        - target: Am Morgen gibt es in vielen Regionen dichten Nebel.
+          translation:
+            vi: Buổi sáng ở nhiều vùng có sương mù dày.
+        - target: Bei Nebel fahren Sie bitte besonders langsam.
+          translation:
+            vi: Khi có sương mù, xin hãy lái xe thật chậm.
+      confusion:
+        vi: "Tính từ: neblig (có sương mù). Trong bản tin thời tiết hay nghe: Nebel am Morgen, danach sonnig."
+
+  - key: de:item:b1u10-verkehrsmeldung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verkehrsmeldung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin giao thông (trên radio)
+      examples:
+        - target: Nach den Nachrichten kommen die Verkehrsmeldungen.
+          translation:
+            vi: Sau bản tin thời sự là tin giao thông.
+        - target: Laut Verkehrsmeldung gibt es auf der A7 einen langen Stau.
+          translation:
+            vi: Theo tin giao thông, trên đường cao tốc A7 đang kẹt xe dài.
+      confusion:
+        vi: "Từ ghép có âm nối -s-: der Verkehr + s + die Meldung, lấy giống của từ cuối: die Verkehrsmeldung."
+
+  # ================= Bài 3: Viết – thư trang trọng chuẩn =================
+  - key: de:item:b1u10-g-formeller-brief
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Formeller Brief: Betreff · Ich schreibe Ihnen, weil … · Ich wäre Ihnen dankbar, wenn … · Leider kann ich … · Für Rückfragen stehe ich gern zur Verfügung."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Thư trang trọng có dòng tiêu đề (Betreff), lời chào Sehr geehrte …, câu mở đầu nêu lý do (Ich schreibe Ihnen, weil …) và phần chính với yêu cầu lịch sự bằng Konjunktiv II (Ich wäre Ihnen dankbar, wenn Sie … könnten) hoặc lời từ chối, xin lỗi (Leider kann ich …). Cuối thư thường có cụm cố định Für Rückfragen stehe ich gern zur Verfügung rồi Mit freundlichen Grüßen. Sie, Ihnen, Ihr ở ngôi lịch sự viết hoa trong cả bức thư."
+      examples:
+        - target: Ich schreibe Ihnen, weil ich eine Frage zu meiner Rechnung habe.
+          translation:
+            vi: Tôi viết thư cho ông/bà vì tôi có một câu hỏi về hóa đơn của mình.
+        - target: Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen bis Freitag schicken könnten.
+          translation:
+            vi: Tôi sẽ rất cảm ơn nếu ông/bà có thể gửi giấy tờ cho tôi trước thứ Sáu.
+        - target: Für Rückfragen stehe ich gern zur Verfügung.
+          translation:
+            vi: Nếu có câu hỏi gì thêm, tôi sẵn sàng trả lời.
+      confusion:
+        vi: "Sau lời chào có dấu phẩy, câu đầu tiên viết thường (trừ danh từ và Sie): Sehr geehrte Frau Becker, ich schreibe Ihnen … Sau Mit freundlichen Grüßen không có dấu phẩy."
+
+  - key: de:item:b1u10-betreff
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Betreff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiêu đề (thư, e-mail); vấn đề được nói đến
+      examples:
+        - target: "Betreff: Anmeldung zum Deutschkurs"
+          translation:
+            vi: "Tiêu đề: Đăng ký khóa học tiếng Đức"
+        - target: Bitte schreiben Sie Ihre Kundennummer in den Betreff.
+          translation:
+            vi: Xin ghi mã số khách hàng của ông/bà vào dòng tiêu đề.
+      confusion:
+        vi: "Betreff là cụm danh từ ngắn, không phải câu đầy đủ. Trong thư giấy, dòng tiêu đề ngày nay thường được in đậm và không ghi chữ Betreff."
+
+  - key: de:item:b1u10-anfrage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Anfrage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư hỏi thông tin, yêu cầu (gửi đến một nơi)
+      examples:
+        - target: Vielen Dank für Ihre Anfrage.
+          translation:
+            vi: Cảm ơn ông/bà đã gửi yêu cầu.
+        - target: Ich habe eine Anfrage zu Ihrem Kursangebot.
+          translation:
+            vi: Tôi muốn hỏi thông tin về các khóa học của quý trung tâm.
+      confusion:
+        vi: "die Anfrage là lời hỏi (thường bằng văn bản) gửi tới cơ quan, công ty; die Frage là câu hỏi nói chung."
+
+  - key: de:item:b1u10-absage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Absage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời từ chối; thông báo hủy
+      examples:
+        - target: Leider habe ich eine Absage von der Firma bekommen.
+          translation:
+            vi: Tiếc là tôi đã nhận được thư từ chối của công ty.
+        - target: Bitte schicken Sie uns eine kurze Absage, wenn Sie nicht kommen können.
+          translation:
+            vi: Nếu không đến được, xin ông/bà báo hủy ngắn cho chúng tôi.
+      confusion:
+        vi: "die Absage ↔ die Zusage. Động từ tương ứng: absagen (hủy, từ chối) ↔ zusagen (nhận lời)."
+
+  - key: de:item:b1u10-zusage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zusage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nhận lời, thư chấp thuận
+      examples:
+        - target: Ich habe eine Zusage für den Studienplatz bekommen!
+          translation:
+            vi: Tôi đã nhận được thư chấp thuận cho chỗ học đại học!
+        - target: Vielen Dank für Ihre schnelle Zusage.
+          translation:
+            vi: Cảm ơn ông/bà đã nhanh chóng nhận lời.
+      confusion:
+        vi: "eine Zusage bekommen = được nhận (việc làm, chỗ học); eine Absage bekommen = bị từ chối."
+
+  - key: de:item:b1u10-mitteilen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: mitteilen
+      pos: động từ
+    back:
+      meaning:
+        vi: thông báo, báo cho biết (trang trọng)
+      examples:
+        - target: Bitte teilen Sie uns Ihre neue Adresse mit.
+          translation:
+            vi: Xin ông/bà báo cho chúng tôi địa chỉ mới.
+        - target: Leider muss ich Ihnen mitteilen, dass der Kurs ausfällt.
+          translation:
+            vi: Rất tiếc, tôi phải thông báo với ông/bà rằng khóa học bị hủy.
+      confusion:
+        vi: "Động từ tách: teilen … mit. Báo cho ai (Dativ) điều gì (Akkusativ): jemandem etwas mitteilen. Trang trọng hơn sagen."
+
+  - key: de:item:b1u10-in-bezug-auf
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: in Bezug auf (+ Akk)
+      pos: cụm từ
+    back:
+      meaning:
+        vi: về, liên quan đến
+      examples:
+        - target: In Bezug auf Ihre Anzeige habe ich noch eine Frage.
+          translation:
+            vi: Về mẩu quảng cáo của quý vị, tôi còn một câu hỏi.
+        - target: Ich habe eine Frage in Bezug auf die Kosten.
+          translation:
+            vi: Tôi có một câu hỏi liên quan đến chi phí.
+      confusion:
+        vi: "Sau in Bezug auf là Akkusativ: in Bezug auf Ihre E-Mail. Đây là cụm trang trọng; khi nói bình thường hay dùng zu: eine Frage zu den Kosten."
+
+  - key: de:item:b1u10-anliegen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Anliegen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc cần trình bày, điều mong muốn (khi liên hệ một nơi)
+      examples:
+        - target: Ich habe ein wichtiges Anliegen.
+          translation:
+            vi: Tôi có một việc quan trọng muốn trình bày.
+        - target: Bitte beschreiben Sie Ihr Anliegen kurz.
+          translation:
+            vi: Xin mô tả ngắn gọn việc ông/bà cần.
+      confusion:
+        vi: "das Anliegen là danh từ hóa của động từ nên giống trung, số nhiều không đổi: die Anliegen."
+
+  - key: de:item:b1u10-bitte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bitte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nhờ, lời đề nghị
+      examples:
+        - target: Ich habe eine Bitte an Sie.
+          translation:
+            vi: Tôi có một việc muốn nhờ ông/bà.
+        - target: Vielen Dank, dass Sie meine Bitte so schnell erfüllt haben.
+          translation:
+            vi: Cảm ơn ông/bà đã đáp ứng lời đề nghị của tôi nhanh như vậy.
+      confusion:
+        vi: "die Bitte (danh từ, viết hoa) khác bitte (làm ơn, xin mời). Nhờ ai: eine Bitte an + Akkusativ (an Sie)."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 3 – trường thư từ công việc
+  - key: de:item:b1u10-anhang
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Anhang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tệp đính kèm; phần phụ lục
+      examples:
+        - target: Im Anhang finden Sie meinen Lebenslauf.
+          translation:
+            vi: Ông/bà vui lòng xem sơ yếu lý lịch của tôi trong tệp đính kèm.
+        - target: Der Anhang ist leider zu groß.
+          translation:
+            vi: Tiếc là tệp đính kèm quá lớn.
+      confusion:
+        vi: "Số nhiều die Anhänge. Câu quen thuộc trong e-mail: Im Anhang finden Sie … hoặc Anbei sende ich Ihnen …"
+
+  - key: de:item:b1u10-beantworten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: beantworten
+      pos: động từ
+    back:
+      meaning:
+        vi: trả lời (câu hỏi, thư)
+      examples:
+        - target: Bitte beantworten Sie die Fragen schriftlich.
+          translation:
+            vi: Xin trả lời các câu hỏi bằng văn bản.
+        - target: Leider hat noch niemand meine E-Mail beantwortet.
+          translation:
+            vi: Tiếc là vẫn chưa ai trả lời e-mail của tôi.
+      confusion:
+        vi: "beantworten + Akkusativ, không có giới từ: eine Frage beantworten. antworten cần auf: auf eine Frage antworten. Partizip II không có ge-: beantwortet."
+
+  - key: de:item:b1u10-unterlagen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Unterlagen (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy tờ, hồ sơ, tài liệu
+      examples:
+        - target: Bitte bringen Sie alle Unterlagen zum Termin mit.
+          translation:
+            vi: Xin mang theo toàn bộ giấy tờ khi đến hẹn.
+        - target: Ich schicke Ihnen die Unterlagen per Post.
+          translation:
+            vi: Tôi gửi giấy tờ cho ông/bà qua đường bưu điện.
+      confusion:
+        vi: "Với nghĩa giấy tờ, hồ sơ, từ này hầu như chỉ dùng ở số nhiều. Số ít die Unterlage thường là tấm lót (để kê, để lót)."
+
+  - key: de:item:b1u10-sich-erkundigen-nach
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich erkundigen nach (+ Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: hỏi thăm, hỏi thông tin (về điều gì)
+      examples:
+        - target: Ich möchte mich nach den Kurszeiten erkundigen.
+          translation:
+            vi: Tôi muốn hỏi thông tin về giờ học.
+        - target: Sie hat sich nach dem Preis erkundigt.
+          translation:
+            vi: Cô ấy đã hỏi giá.
+      confusion:
+        vi: "Cần đại từ phản thân và nach + Dativ: ich erkundige mich nach dem Preis. Đây là cách nói trang trọng hơn fragen nach."
+
+  - key: de:item:b1u10-anbei
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: anbei
+      pos: trạng từ
+    back:
+      meaning:
+        vi: kèm theo đây (trong thư)
+      examples:
+        - target: Anbei sende ich Ihnen das ausgefüllte Formular.
+          translation:
+            vi: Kèm theo đây tôi gửi ông/bà mẫu đơn đã điền.
+        - target: Die Rechnung finden Sie anbei.
+          translation:
+            vi: Hóa đơn được gửi kèm theo đây.
+      confusion:
+        vi: "anbei chủ yếu dùng trong thư từ, văn bản trang trọng. Đứng ở vị trí 1 thì động từ theo ngay sau: Anbei sende ich …"
+
+  - key: de:item:b1u10-grussformel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Grußformel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu chào cuối thư
+      examples:
+        - target: Mit freundlichen Grüßen ist die übliche Grußformel in formellen Briefen.
+          translation:
+            vi: Mit freundlichen Grüßen là câu chào cuối thường dùng trong thư trang trọng.
+        - target: Unter einer E-Mail an Freunde reicht eine kurze Grußformel wie Viele Grüße.
+          translation:
+            vi: Cuối e-mail gửi bạn bè, một câu chào ngắn như Viele Grüße là đủ.
+      confusion:
+        vi: "der Gruß (lời chào) + die Formel (công thức), lấy giống của từ cuối: die Grußformel. Lời chào đầu thư gọi là die Anrede."
+
+  # ================= Bài 4: Nói – giữ cuộc trò chuyện =================
+  - key: de:item:b1u10-g-gespraechsstrategien
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Gesprächsstrategien: Habe ich Sie richtig verstanden, dass …? · Moment, lass mich kurz überlegen. · Darf ich kurz etwas ergänzen? · Entschuldigung, wenn ich unterbreche, …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để giữ cuộc trò chuyện, bạn dùng bốn nhóm cụm: hỏi lại (Habe ich Sie richtig verstanden, dass …? / Wie meinen Sie das?), câu giờ (Moment, lass mich kurz überlegen.), bổ sung (Darf ich kurz etwas ergänzen?) và ngắt lời lịch sự (Entschuldigung, wenn ich Sie unterbreche, aber …). Với người bạn gọi là Sie, đổi lass mich thành lassen Sie mich. Hỏi lại hay xin thời gian suy nghĩ tốt hơn nhiều so với im lặng."
+      examples:
+        - target: Habe ich Sie richtig verstanden, dass der Kurs nur am Wochenende stattfindet?
+          translation:
+            vi: Có phải ý anh/chị là khóa học chỉ diễn ra vào cuối tuần không?
+        - target: Moment, lass mich kurz überlegen.
+          translation:
+            vi: Khoan, để mình nghĩ một chút.
+        - target: Entschuldigung, wenn ich Sie unterbreche, aber wir haben nur noch fünf Minuten.
+          translation:
+            vi: Xin lỗi vì ngắt lời anh/chị, nhưng chúng ta chỉ còn năm phút.
+      confusion:
+        vi: "Sau dass, động từ chia đứng cuối: …, dass der Kurs am Montag beginnt. lass mich (với du) – lassen Sie mich (với Sie)."
+
+  - key: de:item:b1u10-nachfragen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: nachfragen
+      pos: động từ
+    back:
+      meaning:
+        vi: hỏi lại, hỏi thêm
+      examples:
+        - target: Wenn Sie etwas nicht verstehen, fragen Sie einfach nach.
+          translation:
+            vi: Nếu không hiểu điều gì, anh/chị cứ hỏi lại.
+        - target: Ich habe beim Amt noch einmal nachgefragt.
+          translation:
+            vi: Tôi đã hỏi lại ở cơ quan một lần nữa.
+      confusion:
+        vi: "Động từ tách: fragen … nach, Partizip II nachgefragt. Đừng nhầm với fragen nach + Dativ (hỏi về): nach dem Weg fragen."
+
+  - key: de:item:b1u10-ergaenzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ergänzen
+      pos: động từ
+    back:
+      meaning:
+        vi: bổ sung, thêm vào
+      examples:
+        - target: Darf ich noch etwas ergänzen?
+          translation:
+            vi: Tôi xin bổ sung thêm một ý được không?
+        - target: Ergänzen Sie die Sätze.
+          translation:
+            vi: Hãy hoàn thành các câu.
+      confusion:
+        vi: "Không tách, Partizip II không có ge-: hat ergänzt. Trong đề bài, Ergänzen Sie … nghĩa là điền cho đủ, hoàn thành."
+
+  - key: de:item:b1u10-unterbrechen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unterbrechen, unterbricht, unterbrach, hat unterbrochen
+      pos: động từ
+    back:
+      meaning:
+        vi: ngắt lời; làm gián đoạn
+      examples:
+        - target: Entschuldigung, dass ich Sie unterbreche.
+          translation:
+            vi: Xin lỗi vì tôi ngắt lời anh/chị.
+        - target: Bitte unterbrich mich nicht, ich bin gleich fertig.
+          translation:
+            vi: Đừng ngắt lời mình, mình sắp nói xong rồi.
+      confusion:
+        vi: "unter- ở đây không tách: ich unterbreche, er hat mich unterbrochen (không có ge-). Trọng âm ở -bre-."
+
+  - key: de:item:b1u10-rueckfrage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Rückfrage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu hỏi lại, câu hỏi thêm (để làm rõ)
+      examples:
+        - target: Haben Sie noch Rückfragen?
+          translation:
+            vi: Anh/chị còn câu hỏi gì không?
+        - target: Bei Rückfragen rufen Sie mich bitte an.
+          translation:
+            vi: Nếu có câu hỏi thêm, xin gọi điện cho tôi.
+      confusion:
+        vi: "Hay gặp trong cụm cố định cuối thư: Für Rückfragen stehe ich gern zur Verfügung."
+
+  - key: de:item:b1u10-gespraech
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gespräch, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc trò chuyện, cuộc nói chuyện
+      examples:
+        - target: Das Gespräch hat etwa zehn Minuten gedauert.
+          translation:
+            vi: Cuộc trò chuyện kéo dài khoảng mười phút.
+        - target: Ich hatte heute ein Gespräch mit meiner Chefin.
+          translation:
+            vi: Hôm nay tôi đã có một buổi nói chuyện với sếp.
+      confusion:
+        vi: "Từ gốc sprechen: das Gespräch. ein Gespräch führen = tiến hành một cuộc trò chuyện (trang trọng)."
+
+  - key: de:item:b1u10-gespraechspartner
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gesprächspartner, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người cùng trò chuyện, người đối thoại
+      examples:
+        - target: Hören Sie Ihrem Gesprächspartner gut zu.
+          translation:
+            vi: Hãy lắng nghe kỹ người đối thoại với bạn.
+        - target: Meine Gesprächspartnerin hatte eine ganz andere Meinung.
+          translation:
+            vi: Người cùng trò chuyện với tôi có ý kiến hoàn toàn khác.
+      confusion:
+        vi: "Từ ghép có âm nối -s-: das Gespräch + s + der Partner. Nữ: die Gesprächspartnerin, -nen."
+
+  # Từ bổ sung (Zusatzwortschatz) bài 4 – trường hội thoại
+  - key: de:item:b1u10-sich-abwechseln
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich abwechseln
+      pos: động từ
+    back:
+      meaning:
+        vi: thay phiên nhau
+      examples:
+        - target: Im Gespräch sollten sich die Partner beim Sprechen abwechseln.
+          translation:
+            vi: Trong cuộc trò chuyện, hai người nên thay phiên nhau nói.
+        - target: Wir wechseln uns beim Kochen ab.
+          translation:
+            vi: Chúng tôi thay phiên nhau nấu ăn.
+      confusion:
+        vi: "Động từ tách và phản thân, chủ ngữ số nhiều: wir wechseln uns ab. Thay phiên làm gì: sich bei + Dativ abwechseln."
+
+  - key: de:item:b1u10-an-der-reihe-sein
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: an der Reihe sein
+      pos: cụm từ
+    back:
+      meaning:
+        vi: đến lượt (ai)
+      examples:
+        - target: Jetzt sind Sie an der Reihe.
+          translation:
+            vi: Bây giờ đến lượt anh/chị.
+        - target: Wer ist als Nächstes an der Reihe?
+          translation:
+            vi: Tiếp theo đến lượt ai?
+      confusion:
+        vi: "die Reihe là hàng, dãy; an der Reihe sein là cụm cố định. Khẩu ngữ cũng hay nói: Du bist dran."
+
+  - key: de:item:b1u10-gedanke
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gedanke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý nghĩ, suy nghĩ
+      examples:
+        - target: Das ist ein interessanter Gedanke.
+          translation:
+            vi: Đó là một suy nghĩ thú vị.
+        - target: Darf ich den Gedanken noch kurz zu Ende führen?
+          translation:
+            vi: Cho tôi nói nốt ý này được không?
+      confusion:
+        vi: "Biến cách như n-Deklination (den Gedanken, dem Gedanken) nhưng Genitiv là des Gedankens. Động từ liên quan: denken."
+
+  - key: de:item:b1u10-deutlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: deutlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: rõ, rõ ràng
+      examples:
+        - target: Könnten Sie bitte etwas deutlicher sprechen?
+          translation:
+            vi: Anh/chị có thể nói rõ hơn một chút được không?
+        - target: Sie hat deutlich gesagt, dass sie nicht mitkommt.
+          translation:
+            vi: Cô ấy đã nói rõ là cô ấy không đi cùng.
+      confusion:
+        vi: "deutlich sprechen là phát âm rõ; muốn người khác giải thích cụ thể hơn thì dùng genauer erklären."
+
+  - key: de:item:b1u10-punkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Punkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm, ý (trong cuộc nói chuyện); dấu chấm
+      examples:
+        - target: Das ist ein wichtiger Punkt.
+          translation:
+            vi: Đó là một ý quan trọng.
+        - target: Zu diesem Punkt möchte ich noch etwas sagen.
+          translation:
+            vi: Về điểm này, tôi muốn nói thêm một chút.
+      confusion:
+        vi: "der Punkt còn là dấu chấm cuối câu và là \"điểm\" trong bài thi (zehn Punkte)."

@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u10-sprechen
+order_index: 4
+level: b1
+title:
+  vi: Nói – giữ cuộc trò chuyện (Nachfragen, ergänzen, unterbrechen)
+objectives:
+  - vi: Hỏi lại khi chưa hiểu, câu giờ để suy nghĩ, bổ sung ý và ngắt lời một cách lịch sự.
+  - vi: Làm quen ba phần thi nói B1 (cùng lên kế hoạch; trình bày một chủ đề; phản hồi và trả lời câu hỏi) mà không im lặng hay nói độc thoại.
+  - vi: Dùng đúng du/Sie trong các cụm giữ hội thoại (lass mich – lassen Sie mich).
+estimated_minutes: 20
+skills: [speaking, listening]
+prerequisites: [de:lesson:b1u10-schreiben]
+items:
+  - item: de:item:b1u10-g-gespraechsstrategien
+  - item: de:item:b1u10-nachfragen
+  - item: de:item:b1u10-ergaenzen
+  - item: de:item:b1u10-unterbrechen
+  - item: de:item:b1u10-rueckfrage
+  - item: de:item:b1u10-gespraech
+  - item: de:item:b1u10-gespraechspartner
+  - item: de:item:b1u10-sich-abwechseln
+  - item: de:item:b1u10-an-der-reihe-sein
+  - item: de:item:b1u10-gedanke
+  - item: de:item:b1u10-deutlich
+  - item: de:item:b1u10-punkt
+  - item: de:item:a2u06-g-indirekte-w-frage
+    role: reuse
+  - item: de:item:a2u03-g-dass
+    role: reuse
+  - item: de:item:a2u08-g-vorschlag-wir
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+  - item: de:item:b1u08-g-vorschlag-konjunktiv
+    role: reuse
+  - item: de:item:b1u09-g-praesentation-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, khi chưa hiểu hoặc cần thời gian, bạn không im lặng mà nói được: \"Habe ich Sie richtig verstanden, dass …?\" hoặc \"Moment, lass mich kurz überlegen.\""
+  - type: explain
+    text:
+      vi: "Khi chưa hiểu, đừng im lặng: hỏi lại là việc bình thường và được mong đợi trong một cuộc trò chuyện tiếng Đức. Mẫu hay dùng: Habe ich Sie richtig verstanden, dass …? (động từ cuối câu dass), Wie meinen Sie das? Bạn cũng có thể dùng câu hỏi gián tiếp đã học ở A2: Können Sie mir sagen, was das Wort bedeutet?"
+  - type: explain
+    text:
+      vi: "Cần thời gian suy nghĩ, bạn nói: Moment, lass mich kurz überlegen. (với Sie: Moment, lassen Sie mich kurz überlegen.) hoặc Das ist eine gute Frage. Người Việt hay im lặng hoặc kéo dài \"ờ…\"; trong tiếng Đức, một câu câu giờ ngắn nghe tự nhiên hơn nhiều."
+  - type: explain
+    text:
+      vi: "Bổ sung ý: Darf ich kurz etwas ergänzen? / Ich möchte noch etwas ergänzen: … Ngắt lời lịch sự: Entschuldigung, wenn ich Sie unterbreche, aber … / Darf ich Sie kurz unterbrechen? Ngắt lời mà không có câu xin lỗi nghe khá thô, nhất là với người bạn gọi là Sie."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành), phần nói B1 thi theo cặp: cùng nhau lên kế hoạch một việc, mỗi người trình bày một chủ đề, rồi phản hồi và trả lời câu hỏi về phần trình bày. Ở phần lên kế hoạch, hãy đề nghị, hỏi ý kiến bạn thi và thay phiên nhau nói (sich abwechseln) – đừng độc thoại."
+  - type: deep_explain
+    text:
+      vi: "Một chuỗi giữ hội thoại khi lên kế hoạch: đề nghị (Wollen wir …? / Wir könnten …), hỏi ý kiến (Was meinst du? / Was hältst du davon?), đồng ý hoặc phản đối có lý do, hỏi lại khi chưa rõ, rồi tóm tắt kết quả (Also, wir machen …). Khi bạn thi nói quá lâu, bạn có thể xen vào nhẹ nhàng: Darf ich kurz etwas sagen? Khi muốn nói nốt ý mình: Darf ich den Gedanken noch kurz zu Ende führen? Bị hỏi điều bạn chưa nghĩ tới thì thành thật: Darüber habe ich noch nicht nachgedacht, aber ich glaube … Với bạn thi, hãy chọn du hoặc Sie và giữ nhất quán; với giám khảo thường dùng Sie. Nhớ: lass mich (du) – lasst mich (ihr) – lassen Sie mich (Sie)."
+  - type: example
+    target: Habe ich Sie richtig verstanden, dass der Kurs nur am Wochenende stattfindet?
+    target_lang: de
+    translation:
+      vi: Có phải ý anh/chị là khóa học chỉ diễn ra vào cuối tuần không?
+    note:
+      vi: "Hỏi lại người lạ (Sie). Câu phụ dass: động từ tách stattfinden viết liền ở cuối."
+  - type: example
+    target: Moment, lass mich kurz überlegen. Ich glaube, Samstag passt mir besser.
+    target_lang: de
+    translation:
+      vi: Khoan, để mình nghĩ một chút. Mình nghĩ thứ Bảy hợp với mình hơn.
+    note:
+      vi: "Nói với bạn thi (du): lass mich. Với Sie: lassen Sie mich kurz überlegen."
+  - type: example
+    target: Darf ich kurz etwas ergänzen? Man muss die Tickets vorher online kaufen.
+    target_lang: de
+    translation:
+      vi: Mình bổ sung một chút được không? Phải mua vé trước trên mạng.
+    note:
+      vi: "Bổ sung một thông tin cho kế hoạch chung. ergänzen không tách."
+  - type: example
+    target: Entschuldigung, wenn ich Sie unterbreche, aber wir haben nur noch fünf Minuten.
+    target_lang: de
+    translation:
+      vi: Xin lỗi vì tôi ngắt lời anh/chị, nhưng chúng ta chỉ còn năm phút.
+    note:
+      vi: "Ngắt lời lịch sự (Sie): câu xin lỗi + aber + lý do. unterbrechen không tách: ich unterbreche."
+  - type: example
+    target: Wie bitte? Können Sie mir sagen, was das Wort Ehrenamt genau bedeutet?
+    target_lang: de
+    translation:
+      vi: Xin lỗi, anh/chị nói gì ạ? Anh/chị có thể cho tôi biết từ Ehrenamt chính xác nghĩa là gì không?
+    note:
+      vi: "Hỏi nghĩa một từ bằng câu hỏi gián tiếp (A2U06): was … bedeutet, động từ ở cuối."
+  - type: example
+    target: Da stimme ich dir zu. Darf ich kurz etwas ergänzen? Am Wochenende sind die Museen oft sehr voll.
+    target_lang: de
+    translation:
+      vi: Mình đồng ý với bạn. Mình bổ sung một chút được không? Cuối tuần các bảo tàng thường rất đông.
+    note:
+      vi: "Kiểu Sprechen Teil 1: đồng ý (Da stimme ich dir zu – đã học ở B1U06) rồi bổ sung một thông tin quan trọng cho kế hoạch."
+  - type: example
+    target: Ich komme jetzt zu meinem zweiten Punkt. – Entschuldigung, darf ich kurz eine Rückfrage stellen?
+    target_lang: de
+    translation:
+      vi: Bây giờ tôi chuyển sang ý thứ hai. – Xin lỗi, tôi hỏi lại một chút được không?
+    note:
+      vi: "Ich komme jetzt zu … là câu chuyển ý khi thuyết trình (B1U09). Người nghe xen vào lịch sự để hỏi lại: eine Rückfrage stellen."
+  - type: common_mistake
+    wrong: Habe ich Sie richtig verstanden, dass der Kurs findet am Samstag statt?
+    right: Habe ich Sie richtig verstanden, dass der Kurs am Samstag stattfindet?
+    target_lang: de
+    note:
+      vi: "Sau dass, động từ chia đứng cuối và động từ tách viết liền: stattfindet."
+  - type: common_mistake
+    wrong: Moment, Herr Weber, lass mich kurz überlegen.
+    right: Moment, Herr Weber, lassen Sie mich kurz überlegen.
+    target_lang: de
+    note:
+      vi: "Với người bạn gọi là Herr/Frau + họ (Sie), dùng lassen Sie mich; lass mich chỉ dùng với du."
+  - type: common_mistake
+    wrong: Was?
+    right: Wie bitte? Können Sie das bitte noch einmal sagen?
+    target_lang: de
+    note:
+      vi: "Im lặng khi không hiểu là lỗi hay gặp; còn Was? nghe cộc lốc. Hãy hỏi lại lịch sự."
+  - type: common_mistake
+    wrong: Am Samstag gehen wir ins Museum, dann essen wir im Restaurant, und am Abend gehen wir ins Kino.
+    right: Wir könnten am Samstag ins Museum gehen. Was meinst du?
+    target_lang: de
+    note:
+      vi: "Ở phần cùng lên kế hoạch, một người tự quyết hết là độc thoại. Hãy đề nghị một ý rồi hỏi ý kiến bạn thi."
+  - type: summary
+    points:
+      - vi: "Hỏi lại: Habe ich Sie richtig verstanden, dass …? / Wie meinen Sie das? / Wie bitte?"
+      - vi: "Câu giờ: Moment, lass mich (lassen Sie mich) kurz überlegen. / Das ist eine gute Frage."
+      - vi: "Bổ sung: Darf ich kurz etwas ergänzen?"
+      - vi: "Ngắt lời: Entschuldigung, wenn ich Sie unterbreche, aber … / Darf ich Sie kurz unterbrechen?"
+      - vi: "Lên kế hoạch: đề nghị → hỏi ý kiến → thay phiên nhau → thống nhất."
+      - vi: "Từ: nachfragen, ergänzen, unterbrechen (không tách), die Rückfrage, das Gespräch, der Gesprächspartner."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u10l4-listen-nachfragen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-g-gespraechsstrategien
+    prompt:
+      audio_asset_id: null
+      fallback_text: Habe ich Sie richtig verstanden, dass wir das Formular online ausfüllen müssen?
+      options:
+        - { id: n1a, text: "Người nói hỏi lại để chắc mình hiểu đúng: phải điền mẫu đơn trên mạng.", lang: vi }
+        - { id: n2b, text: "Người nói ngắt lời để nói rằng mẫu đơn đã được điền.", lang: vi }
+        - { id: n3c, text: "Người nói xin thời gian để suy nghĩ về mẫu đơn.", lang: vi }
+        - { id: n4d, text: "Người nói bổ sung rằng không được điền mẫu đơn trên mạng.", lang: vi }
+    answer:
+      correct_option_id: n1a
+    explanation:
+      vi: "Habe ich Sie richtig verstanden, dass …? là câu hỏi lại để kiểm tra mình hiểu đúng chưa. Nội dung trong câu dass: wir … das Formular online ausfüllen müssen – phải điền mẫu đơn trên mạng."
+    display_answer: "Người nói hỏi lại để chắc mình hiểu đúng: phải điền mẫu đơn trên mạng."
+
+  - key: de:exercise:b1u10l4-listen-ueberlegen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-g-gespraechsstrategien
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hm, das ist eine gute Frage. Moment, lass mich kurz überlegen.
+      options:
+        - { id: u1a, text: "Người nói xin một chút thời gian để suy nghĩ.", lang: vi }
+        - { id: u2b, text: "Người nói không hiểu câu hỏi và nhờ hỏi lại.", lang: vi }
+        - { id: u3c, text: "Người nói từ chối trả lời câu hỏi.", lang: vi }
+        - { id: u4d, text: "Người nói xin lỗi vì đã ngắt lời.", lang: vi }
+    answer:
+      correct_option_id: u1a
+    explanation:
+      vi: "Das ist eine gute Frage và Moment, lass mich kurz überlegen là hai cách câu giờ: người nói hiểu câu hỏi, chỉ cần vài giây để nghĩ. überlegen = suy nghĩ, cân nhắc."
+    display_answer: "Người nói xin một chút thời gian để suy nghĩ."
+
+  - key: de:exercise:b1u10l4-listen-unterbrechen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u10-unterbrechen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Entschuldigung, wenn ich Sie unterbreche, aber der Zug fährt schon um acht und nicht um neun.
+      options:
+        - { id: z1a, text: "Người nói ngắt lời lịch sự để sửa thông tin: tàu chạy lúc tám giờ, không phải chín giờ.", lang: vi }
+        - { id: z2b, text: "Người nói ngắt lời để sửa thông tin: tàu chạy lúc chín giờ, không phải tám giờ.", lang: vi }
+        - { id: z3c, text: "Người nói hỏi lại xem tàu chạy lúc tám hay chín giờ.", lang: vi }
+        - { id: z4d, text: "Người nói xin lỗi vì đến muộn chuyến tàu tám giờ.", lang: vi }
+    answer:
+      correct_option_id: z1a
+    explanation:
+      vi: "Entschuldigung, wenn ich Sie unterbreche, aber … là cách ngắt lời lịch sự. Thông tin được sửa: schon um acht und nicht um neun – đã chạy lúc tám giờ, không phải chín giờ."
+    display_answer: "Người nói ngắt lời lịch sự để sửa thông tin: tàu chạy lúc tám giờ, không phải chín giờ."
+
+  - key: de:exercise:b1u10l4-mcq-lassen-sie-mich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u10-g-gespraechsstrategien
+    prompt:
+      stem: "Giám khảo hỏi bạn một câu khó. Bạn nói với giám khảo (Sie). Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: l1a, text: "Moment, lassen Sie mich kurz überlegen.", lang: de }
+        - { id: l2b, text: "Moment, lass Sie mich kurz überlegen.", lang: de }
+        - { id: l3c, text: "Moment, lassen mich kurz überlegen.", lang: de }
+        - { id: l4d, text: "Moment, lasst mich kurz überlegen.", lang: de }
+    answer:
+      correct_option_id: l1a
+    explanation:
+      vi: "Mệnh lệnh với Sie: lassen Sie + mich. lass dùng với du, lasst với ihr; lassen mich thiếu Sie. Chỉ có lassen Sie mich là đúng khi nói với giám khảo."
+    display_answer: "Moment, lassen Sie mich kurz überlegen."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u10l4-fill-verstanden-ergaenzen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-ergaenzen
+    prompt:
+      template: "Habe ich Sie richtig {{b1}} (verstehen), dass wir uns am Montag {{b2}} (treffen)? Darf ich noch kurz etwas {{b3}} (ergänzen)?"
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [verstanden]
+        b2: [treffen]
+        b3: [ergänzen]
+    known_wrong:
+      - answer: verstehen
+        feedback_vi: "Habe … + Partizip II (Perfekt): verstanden."
+        error_tag: participle_form
+      - answer: geverstanden
+        feedback_vi: "verstehen có tiền tố ver- không tách, nên Partizip II không có ge-: verstanden."
+        error_tag: participle_form
+      - answer: ergänzt
+        feedback_vi: "Sau darf, động từ chính ở nguyên thể cuối câu: ergänzen."
+        error_tag: verb_form
+      - answer: treffen uns
+        feedback_vi: "Đại từ uns đã có trong câu; trong câu phụ dass, chỉ động từ treffen đứng cuối."
+        error_tag: word_order
+    explanation:
+      vi: "Habe ich … verstanden: Perfekt, Partizip II của verstehen là verstanden (không có ge-). Câu phụ dass: động từ treffen đứng cuối. Sau động từ khiếm khuyết darf: nguyên thể ergänzen ở cuối."
+    display_answer: "Habe ich Sie richtig verstanden, dass wir uns am Montag treffen? Darf ich noch kurz etwas ergänzen?"
+
+  - key: de:exercise:b1u10l4-tr-unterbrechen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-unterbrechen
+    prompt:
+      source_text: "Xin lỗi vì tôi ngắt lời anh/chị, nhưng tôi có một câu hỏi. (nói với Sie)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Entschuldigung, wenn ich Sie unterbreche, aber ich habe eine Frage.
+        - Entschuldigung, dass ich Sie unterbreche, aber ich habe eine Frage.
+        - Entschuldigen Sie, wenn ich Sie unterbreche, aber ich habe eine Frage.
+        - Entschuldigen Sie, dass ich Sie unterbreche, aber ich habe eine Frage.
+        - Entschuldigung, wenn ich unterbreche, aber ich habe eine Frage.
+        - Entschuldigung, dass ich unterbreche, aber ich habe eine Frage.
+        - Entschuldigung, wenn ich Sie unterbreche, aber ich hätte eine Frage.
+        - Entschuldigung, dass ich Sie unterbreche, aber ich hätte eine Frage.
+    known_wrong:
+      - answer: Entschuldigung, wenn ich Sie breche unter, aber ich habe eine Frage.
+        feedback_vi: "unterbrechen không tách: ich unterbreche, và trong câu phụ nó đứng cuối."
+        error_tag: separable_prefix
+      - answer: Entschuldigung, wenn ich unterbreche Sie, aber ich habe eine Frage.
+        feedback_vi: "Trong câu phụ wenn/dass, động từ đứng cuối: wenn ich Sie unterbreche."
+        error_tag: verb_position
+      - answer: Entschuldigung, wenn ich dich unterbreche, aber ich habe eine Frage.
+        feedback_vi: "Đề yêu cầu nói với Sie: wenn ich Sie unterbreche."
+        error_tag: register_du_sie
+    explanation:
+      vi: "Cụm ngắt lời lịch sự: Entschuldigung, wenn/dass ich Sie unterbreche, aber … unterbrechen là động từ không tách, đứng cuối câu phụ; Sie là tân ngữ Akkusativ."
+    display_answer: Entschuldigung, wenn ich Sie unterbreche, aber ich habe eine Frage.
+
+  - key: de:exercise:b1u10l4-tr-deutlicher
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-deutlich
+    prompt:
+      source_text: "Anh/chị có thể nói rõ hơn một chút được không? (phát âm rõ hơn; nói với người lạ, dùng Sie và Konjunktiv II)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Könnten Sie bitte etwas deutlicher sprechen?
+        - Könnten Sie etwas deutlicher sprechen?
+        - Könnten Sie bitte ein bisschen deutlicher sprechen?
+        - Könnten Sie ein bisschen deutlicher sprechen?
+        - Könnten Sie bitte ein wenig deutlicher sprechen?
+        - Könnten Sie ein wenig deutlicher sprechen?
+    known_wrong:
+      - answer: Könnten Sie bitte sprechen etwas deutlicher?
+        feedback_vi: "Nguyên thể sprechen đứng cuối câu: Könnten Sie bitte etwas deutlicher sprechen?"
+        error_tag: verb_position
+      - answer: Könntest du bitte etwas deutlicher sprechen?
+        feedback_vi: "Đề yêu cầu nói với người lạ (Sie): Könnten Sie …?"
+        error_tag: register_du_sie
+    explanation:
+      vi: "Könnten Sie …? (Konjunktiv II) là lời nhờ lịch sự; deutlicher là so sánh hơn của deutlich (rõ hơn); nguyên thể sprechen đứng cuối câu."
+    display_answer: Könnten Sie bitte etwas deutlicher sprechen?
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u10l4-listen-abschiedsfest
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u08-g-vorschlag-wir
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wollen wir für unsere Lehrerin ein kleines Abschiedsfest organisieren? – Gute Idee! Wir könnten am Freitag im Kursraum feiern. – Habe ich dich richtig verstanden, dass wir dort auch kochen sollen? – Nein, nein, jeder bringt etwas mit. – Ach so! Dann bringe ich einen Kuchen mit.
+      options:
+        - { id: k1a, text: "Họ tổ chức tiệc chia tay cô giáo vào thứ Sáu ở phòng học, mỗi người mang một món.", lang: vi }
+        - { id: k2b, text: "Họ tổ chức tiệc chia tay vào thứ Sáu và cùng nấu ăn ở phòng học.", lang: vi }
+        - { id: k3c, text: "Họ tổ chức tiệc chia tay vào thứ Sáu ở nhà hàng.", lang: vi }
+        - { id: k4d, text: "Chỉ một người mang bánh, những người khác không phải mang gì.", lang: vi }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: "Kiểu Sprechen Teil 1 (cùng lên kế hoạch). Wollen wir … organisieren? là lời đề nghị; Habe ich dich richtig verstanden, dass … là hỏi lại (du); câu trả lời: jeder bringt etwas mit – mỗi người mang một món, không nấu ở đó."
+    display_answer: "Họ tổ chức tiệc chia tay cô giáo vào thứ Sáu ở phòng học, mỗi người mang một món."
+
+  - key: de:exercise:b1u10l4-wb-dass-kurs
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u03-g-dass
+    prompt:
+      instruction: "Hoàn thành câu hỏi lại: \"Habe ich Sie richtig verstanden, …\" – \"… rằng khóa học bắt đầu vào thứ Hai?\""
+      tokens:
+        - { id: d-montag, text: Montag }
+        - { id: d-beginnt, text: beginnt }
+        - { id: d-kurs, text: Kurs }
+        - { id: d-dass, text: dass }
+        - { id: d-am, text: am }
+        - { id: d-der, text: der }
+    answer:
+      orders:
+        - [d-dass, d-der, d-kurs, d-am, d-montag, d-beginnt]
+        - [d-dass, d-am, d-montag, d-der, d-kurs, d-beginnt]
+    explanation:
+      vi: "Câu phụ dass: dass đứng đầu, động từ chia beginnt đứng cuối. Trật tự thường gặp là chủ ngữ trước (dass der Kurs am Montag beginnt); đưa am Montag lên trước chủ ngữ cũng đúng khi muốn nhấn mạnh ngày."
+    display_answer: Habe ich Sie richtig verstanden, dass der Kurs am Montag beginnt?
+
+  - key: de:exercise:b1u10l4-mcq-teil3-rueckfrage
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-rueckfrage
+    prompt:
+      stem: "Kiểu Sprechen Teil 3: bạn thi vừa trình bày về chủ đề \"Wohnen bei den Eltern\". Bạn muốn phản hồi bằng một câu hỏi lại. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: q1a, text: "Du hast gesagt, dass viele junge Leute bei ihren Eltern wohnen. Kannst du das noch etwas genauer erklären?", lang: de }
+        - { id: q2b, text: "Was?", lang: de }
+        - { id: q3c, text: "Ich habe keine Fragen. Jetzt spreche ich über mein Thema.", lang: de }
+        - { id: q4d, text: "Das ist falsch.", lang: de }
+    answer:
+      correct_option_id: q1a
+    explanation:
+      vi: "Phản hồi tốt nhắc lại một ý của bạn thi (Du hast gesagt, dass …) rồi hỏi thêm (Kannst du das genauer erklären?). Was? quá cộc; bỏ qua phần phản hồi hoặc chỉ nói Das ist falsch không giữ được cuộc trò chuyện."
+    display_answer: "Du hast gesagt, dass viele junge Leute bei ihren Eltern wohnen. Kannst du das noch etwas genauer erklären?"
