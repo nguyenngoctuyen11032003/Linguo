@@ -14,7 +14,7 @@
 --   teacher_create_class     20261017000400_teacher_tools.sql
 -- diagnostic_level_code (20261018130000_japanese.sql) already clamps to the language's highest ordinal, so de
 -- (five levels, ordinals 0–4) needs no change there; the engine's θ grid above ordinal 4 is clamped to b2.
--- Answer grading for de (umlaut folding) lives in 20261018200000_german_grading.sql.
+-- Answer grading for de (umlaut folding) lives in 20261018205000_german_grading.sql.
 -- The web app hides de until LANGUAGES.de.available is flipped (packages/shared/src/constants.ts).
 
 -- ---------------------------------------------------------------------------
