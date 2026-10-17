@@ -1,0 +1,438 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u01-wiederholung
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập + Start Deutsch 1 – điền form, tự giới thiệu (Wiederholung)
+objectives:
+  - vi: Đọc hiểu một hồ sơ tự giới thiệu ngắn và xác định thông tin đúng/sai.
+  - vi: Điền mẫu đơn thông tin cá nhân (kiểu Schreiben Teil 1 của Start Deutsch 1).
+  - vi: Tự giới thiệu theo các từ khóa Name, Alter, Land, Wohnort, Sprachen (kiểu Sprechen Teil 1).
+  - vi: Nghe hiểu lời tự giới thiệu và số tuổi.
+estimated_minutes: 20
+skills: [reading, writing, speaking, listening]
+prerequisites: [de:lesson:a1u01-zahlen-bis-100]
+items:
+  - item: de:item:a1u01-g-personalpronomen
+    role: reuse
+  - item: de:item:a1u01-g-sein
+    role: reuse
+  - item: de:item:a1u01-g-du-sie
+    role: reuse
+  - item: de:item:a1u01-g-praesens
+    role: reuse
+  - item: de:item:a1u01-g-laender-artikel
+    role: reuse
+  - item: de:item:a1u01-g-w-fragen
+    role: reuse
+  - item: de:item:a1u01-g-ja-nein-frage
+    role: reuse
+  - item: de:item:a1u01-g-v2
+    role: reuse
+  - item: de:item:a1u01-g-zahlen-bis-100
+    role: reuse
+  - item: de:item:a1u01-g-alter
+    role: reuse
+  - item: de:item:a1u01-vorname
+    role: reuse
+  - item: de:item:a1u01-familienname
+    role: reuse
+  - item: de:item:a1u01-wohnort
+    role: reuse
+  - item: de:item:a1u01-wohnen
+    role: reuse
+  - item: de:item:a1u01-schweiz
+    role: reuse
+  - item: de:item:p0u1-g-alphabet
+    role: reuse
+  - item: de:item:p0u1-g-diphthonge
+    role: reuse
+  - item: de:item:p0u3-g-nomen-gross
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc được một hồ sơ ngắn, điền đúng các ô Vorname, Familienname, Wohnort, và tự giới thiệu 5–6 câu như phần đầu bài thi nói Start Deutsch 1.
+  - type: explain
+    text:
+      vi: "Phần thi Nói 1 của Start Deutsch 1: bạn tự giới thiệu theo các từ khóa trên thẻ – Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby. Với năm từ khóa đầu, bạn đã có đủ câu mẫu: Ich heiße … / Ich bin … Jahre alt. / Ich komme aus … / Ich wohne in … / Ich spreche … (Beruf và Hobby sẽ học ở unit 2)."
+  - type: explain
+    text:
+      vi: "Phần thi Viết 1 là điền form: đọc một đoạn văn ngắn về một người rồi điền thông tin vào ô. Đừng nhầm Vorname (tên) với Familienname/Nachname (họ), và Wohnort (nơi đang ở) với Geburtsort hay quê (nơi sinh, nơi đến)."
+  - type: explain
+    text:
+      vi: "Phần đọc thường hỏi Richtig oder falsch? (đúng hay sai). Hãy so từng chi tiết: kommt aus … là quê, wohnt in … là nơi ở; một câu sai chỉ vì đổi một thành phố cũng là falsch."
+  - type: deep_explain
+    text:
+      vi: "Khi tự giới thiệu, hãy giữ động từ ở vị trí 2 mà vẫn đổi đầu câu cho tự nhiên: Ich komme aus Vietnam. Jetzt wohne ich in Leipzig. – nghe hay hơn lặp “Ich … Ich … Ich …”. Ở bài thi, giám khảo xưng Sie (Woher kommen Sie?), còn khi nói với thí sinh khác thường xưng du. Trước khi viết vào form, đọc lại họ – tên cho đúng thứ tự Đức: Vorname là tên gọi (Lan), Familienname là họ (Pham)."
+  - type: example
+    target: "Hallo! Ich heiße Lan Pham. Ich bin 24 Jahre alt und komme aus Vietnam. Jetzt wohne ich in Leipzig. Ich spreche Vietnamesisch, Englisch und ein bisschen Deutsch."
+    target_lang: de
+    translation:
+      vi: Xin chào! Mình tên là Phạm Lan. Mình 24 tuổi và đến từ Việt Nam. Bây giờ mình sống ở Leipzig. Mình nói tiếng Việt, tiếng Anh và một chút tiếng Đức.
+    note:
+      vi: Một đoạn tự giới thiệu đủ 5 từ khóa. Câu “Jetzt wohne ich …” – jetzt đứng đầu nên ich lùi sau động từ.
+  - type: example
+    target: "Vorname: Lan · Familienname: Pham · Alter: 24 · Wohnort: Leipzig · Sprachen: Vietnamesisch, Englisch, Deutsch"
+    target_lang: de
+    translation:
+      vi: "Tên: Lan · Họ: Phạm · Tuổi: 24 · Nơi ở: Leipzig · Ngôn ngữ: tiếng Việt, tiếng Anh, tiếng Đức"
+    note:
+      vi: "Cùng thông tin ấy, điền vào form. Tên riêng Việt Nam trên giấy tờ Đức thường viết không dấu; khi được hỏi Wie schreibt man das?, bạn đánh vần bằng bảng chữ cái tiếng Đức: P-H-A-M."
+  - type: example
+    target: Ich heiße Mai und wohne in Leipzig. Paul wohnt in der Schweiz.
+    target_lang: de
+    translation:
+      vi: Mình tên là Mai và sống ở Leipzig. Paul sống ở Thụy Sĩ.
+    note:
+      vi: "Luyện nguyên âm đôi: ei trong heiße, Leipzig, Schweiz và ai trong Mai đều đọc “ai”; au trong Paul đọc “ao”."
+  - type: example
+    target: "Woher kommen Sie? – Ich komme aus Vietnam, aus Hue. – Und wo wohnen Sie? – In Köln."
+    target_lang: de
+    translation:
+      vi: Anh/chị đến từ đâu? – Tôi đến từ Việt Nam, từ Huế. – Còn anh/chị sống ở đâu? – Ở Köln.
+    note:
+      vi: Giám khảo xưng Sie. Câu trả lời ngắn “In Köln.” rất tự nhiên.
+  - type: common_mistake
+    wrong: "Vorname: Pham · Familienname: Lan"
+    right: "Vorname: Lan · Familienname: Pham"
+    target_lang: de
+    note:
+      vi: Tiếng Việt đọc họ trước, nhưng trên form Đức, Vorname là tên gọi (Lan), Familienname là họ (Pham).
+  - type: common_mistake
+    wrong: Jetzt ich wohne in Leipzig.
+    right: Jetzt wohne ich in Leipzig.
+    target_lang: de
+    note:
+      vi: Khi jetzt đứng đầu, động từ wohne vẫn ở vị trí 2, ich lùi ra sau.
+  - type: common_mistake
+    wrong: Ich habe 24 Jahre.
+    right: Ich bin 24 Jahre alt.
+    target_lang: de
+    note:
+      vi: Tuổi nói bằng sein + Jahre alt, không bằng haben.
+  - type: summary
+    points:
+      - vi: "Tự giới thiệu: Ich heiße … · Ich bin … Jahre alt. · Ich komme aus … · Ich wohne in … · Ich spreche …"
+      - vi: "Form: Vorname = tên, Familienname/Nachname = họ, Wohnort = nơi đang ở."
+      - vi: Động từ ở vị trí 2 – đổi đầu câu để nói tự nhiên (Jetzt wohne ich …).
+      - vi: "Với giám khảo: Sie (Woher kommen Sie?); với bạn cùng thi: thường du."
+      - vi: "Nước có mạo từ: aus der Schweiz, aus der Türkei, aus den USA."
+exercises:
+  # ---------------- recognition: đọc (Lesen) ----------------
+  - key: de:exercise:a1u01l5-mcq-profil-wohnort
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-wohnen
+    prompt:
+      stem: "Hallo! Ich heiße Lan Pham. Ich bin 24 Jahre alt und komme aus Vietnam, aus Da Nang. Jetzt wohne ich in Leipzig. Ich spreche Vietnamesisch, Englisch und ein bisschen Deutsch. – Lan wohnt in Da Nang. Richtig oder falsch?"
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Lan kommt aus Da Nang (quê ở Đà Nẵng), nhưng wohnt jetzt in Leipzig (bây giờ sống ở Leipzig). Câu “Lan wohnt in Da Nang” nhầm quê với nơi ở, nên là falsch."
+    display_answer: Falsch
+
+  - key: de:exercise:a1u01l5-mcq-profil-sprachen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-sprache
+    prompt:
+      stem: "Hallo! Ich heiße Lan Pham. Ich bin 24 Jahre alt und komme aus Vietnam, aus Da Nang. Jetzt wohne ich in Leipzig. Ich spreche Vietnamesisch, Englisch und ein bisschen Deutsch. – Lan spricht drei Sprachen. Richtig oder falsch?"
+      stem_lang: de
+      options:
+        - { id: rs1, text: Richtig, lang: de }
+        - { id: rs2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rs1
+    explanation:
+      vi: "Lan nói Vietnamesisch, Englisch và ein bisschen Deutsch – tổng cộng ba ngôn ngữ (drei Sprachen), dù tiếng Đức mới chỉ một chút. Vì vậy câu này richtig."
+    display_answer: Richtig
+
+  - key: de:exercise:a1u01l5-mcq-profil-becker
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-zahlen-bis-100
+    prompt:
+      stem: "Guten Tag! Ich bin Thomas Becker. Ich komme aus der Schweiz, aus Zürich. Jetzt wohne ich in Hamburg. Ich bin achtundfünfzig Jahre alt. – Wie alt ist Herr Becker?"
+      stem_lang: de
+      options:
+        - { id: ab1, text: "58", lang: de }
+        - { id: ab2, text: "85", lang: de }
+        - { id: ab3, text: "48", lang: de }
+        - { id: ab4, text: "68", lang: de }
+    answer:
+      correct_option_id: ab1
+    explanation:
+      vi: "achtundfünfzig = acht (8) + fünfzig (50) = 58. Đọc đơn vị trước, hàng chục sau – nên 85 là đáp án nhiễu dễ nhầm nhất."
+    display_answer: "58"
+
+  # ---------------- recognition: nghe (Hören) ----------------
+  - key: de:exercise:a1u01l5-listen-jonas
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u01-kommen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Tag! Ich heiße Jonas Wagner. Ich komme aus Österreich, aus Wien. Jetzt wohne ich in München.
+      options:
+        - { id: jw1, text: Jonas đến từ Áo và bây giờ sống ở München., lang: vi }
+        - { id: jw2, text: Jonas đến từ Thụy Sĩ và bây giờ sống ở Vienna., lang: vi }
+        - { id: jw3, text: Jonas đến từ Đức và bây giờ sống ở Vienna., lang: vi }
+        - { id: jw4, text: Jonas đến từ Áo và bây giờ sống ở Vienna., lang: vi }
+    answer:
+      correct_option_id: jw1
+    explanation:
+      vi: "Ich komme aus Österreich, aus Wien = quê ở Áo, từ Vienna. Jetzt wohne ich in München = bây giờ sống ở München. Vienna là quê, không phải nơi ở."
+    display_answer: Jonas đến từ Áo và bây giờ sống ở München.
+
+  - key: de:exercise:a1u01l5-listen-alter-59
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u01-g-alter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Frau Schulz ist neunundfünfzig Jahre alt.
+      options:
+        - { id: fs1, text: Bà Schulz 59 tuổi., lang: vi }
+        - { id: fs2, text: Bà Schulz 95 tuổi., lang: vi }
+        - { id: fs3, text: Bà Schulz 49 tuổi., lang: vi }
+        - { id: fs4, text: Bà Schulz 69 tuổi., lang: vi }
+    answer:
+      correct_option_id: fs1
+    explanation:
+      vi: "neunundfünfzig = neun (9) + fünfzig (50) = 59. Nghe neun trước nhưng ghi số 5 trước."
+    display_answer: Bà Schulz 59 tuổi.
+
+  # ---------------- recall: viết (Schreiben) ----------------
+  - key: de:exercise:a1u01l5-fill-formular
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-vorname
+    prompt:
+      template: "Lan Pham kommt aus Da Nang und wohnt jetzt in Leipzig. Formular – Familienname: Pham · Vorname: {{b1}} · Wohnort: {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [Lan]
+        b2: [Leipzig]
+    known_wrong:
+      - answer: Pham
+        feedback_vi: Pham là họ (Familienname). Ô Vorname ghi tên gọi – Lan.
+        error_tag: name_order
+      - answer: Lan Pham
+        feedback_vi: Ô Vorname chỉ ghi tên gọi (Lan), không ghi cả họ tên.
+        error_tag: name_order
+      - answer: Da Nang
+        feedback_vi: Da Nang là quê (kommt aus). Wohnort là nơi đang sống – Leipzig.
+        error_tag: wohnort
+      - answer: Vietnam
+        feedback_vi: Vietnam là nước Lan đến từ. Wohnort là thành phố đang sống – Leipzig.
+        error_tag: wohnort
+    explanation:
+      vi: "Vorname là tên gọi (Lan), Familienname là họ (Pham). Wohnort là nơi đang ở: wohnt jetzt in Leipzig → Leipzig."
+    display_answer: "Familienname: Pham · Vorname: Lan · Wohnort: Leipzig"
+
+  - key: de:exercise:a1u01l5-fill-ich-heisse
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-praesens
+    prompt:
+      template: "Hallo! Ich {{b1}} Minh und {{b2}} aus Vietnam. Ich {{b3}} in Köln und {{b4}} Deutsch."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 6 }
+        - { id: b4, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [heiße, bin]
+        b2: [komme, bin]
+        b3: [wohne, lebe]
+        b4: [lerne, spreche]
+    known_wrong:
+      - answer: heißt
+        feedback_vi: heißt là của du/er. Với ich là heiße.
+        error_tag: verb_form
+      - answer: kommen
+        feedback_vi: kommen là nguyên thể. Với ich là komme.
+        error_tag: verb_form
+      - answer: kommt
+        feedback_vi: kommt là của er/sie/es. Với ich là komme.
+        error_tag: verb_form
+      - answer: wohnt
+        feedback_vi: wohnt là của er/sie/es. Với ich là wohne.
+        error_tag: verb_form
+      - answer: lernst
+        feedback_vi: lernst là của du. Với ich là lerne.
+        error_tag: verb_form
+      - answer: sprichst
+        feedback_vi: sprichst là của du. Với ich là spreche (không đổi e → i).
+        error_tag: verb_form
+    explanation:
+      vi: "Mọi động từ đi với ich đều có đuôi -e: heiße, komme, wohne, lerne, spreche (ngôi ich của sprechen không đổi e → i). Sau und, chủ ngữ ich có thể lược."
+    display_answer: Hallo! Ich heiße Minh und komme aus Vietnam. Ich wohne in Köln und lerne Deutsch.
+
+  - key: de:exercise:a1u01l5-tr-30-hamburg
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-alter
+    prompt:
+      source_text: Tôi 30 tuổi và sống ở Hamburg.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich bin 30 Jahre alt und wohne in Hamburg.
+        - Ich bin dreißig Jahre alt und wohne in Hamburg.
+        - Ich bin 30 Jahre alt und lebe in Hamburg.
+        - Ich bin dreißig Jahre alt und lebe in Hamburg.
+        - Ich bin 30 und wohne in Hamburg.
+        - Ich bin dreißig und wohne in Hamburg.
+        - Ich bin 30 und lebe in Hamburg.
+        - Ich bin dreißig und lebe in Hamburg.
+        - Ich bin 30 Jahre alt und ich wohne in Hamburg.
+        - Ich bin dreißig Jahre alt und ich wohne in Hamburg.
+        - Ich bin 30 Jahre alt und ich lebe in Hamburg.
+        - Ich bin dreißig Jahre alt und ich lebe in Hamburg.
+    known_wrong:
+      - answer: Ich habe 30 Jahre und wohne in Hamburg.
+        feedback_vi: Tuổi nói bằng sein – Ich bin 30 Jahre alt.
+        error_tag: haben_alter
+      - answer: Ich bin 30 Jahre alt und wohnen in Hamburg.
+        feedback_vi: Chủ ngữ vẫn là ich nên động từ là wohne.
+        error_tag: verb_form
+      - answer: Ich bin dreizig Jahre alt und wohne in Hamburg.
+        feedback_vi: Ba mươi viết với ß – dreißig.
+        error_tag: number_spelling
+    explanation:
+      vi: "Tuổi: Ich bin 30 (Jahre alt). Nơi ở: wohne/lebe in Hamburg – chủ ngữ ich nên đuôi -e; sau und có thể lược ich."
+    display_answer: Ich bin 30 Jahre alt und wohne in Hamburg.
+
+  # ---------------- application: nói / sắp xếp (Sprechen) ----------------
+  - key: de:exercise:a1u01l5-wb-jetzt-leipzig
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-v2
+    prompt:
+      instruction: "Sắp xếp thành câu: “Bây giờ tôi sống ở Leipzig.”"
+      tokens:
+        - { id: t-leipzig, text: Leipzig }
+        - { id: t-ich, text: ich }
+        - { id: t-jetzt, text: jetzt }
+        - { id: t-wohnt, text: wohnt }
+        - { id: t-wohne, text: wohne }
+        - { id: t-in, text: in }
+    answer:
+      orders:
+        - [t-jetzt, t-wohne, t-ich, t-in, t-leipzig]
+        - [t-ich, t-wohne, t-jetzt, t-in, t-leipzig]
+        - [t-in, t-leipzig, t-wohne, t-ich, t-jetzt]
+    explanation:
+      vi: "ich đi với wohne. Động từ luôn ở vị trí 2: Jetzt wohne ich in Leipzig / Ich wohne jetzt in Leipzig. wohnt là của er/sie/es."
+    display_answer: Jetzt wohne ich in Leipzig.
+
+  - key: de:exercise:a1u01l5-wb-woher-kommen-sie
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-w-fragen
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi (xưng Sie): “Ông Becker, ông đến từ đâu?”"
+      tokens:
+        - { id: t-kommen, text: kommen }
+        - { id: t-becker, text: Becker }
+        - { id: t-woher, text: woher }
+        - { id: t-kommst, text: kommst }
+        - { id: t-sie, text: Sie }
+        - { id: t-herr, text: Herr }
+        - { id: t-wo, text: wo }
+    answer:
+      orders:
+        - [t-herr, t-becker, t-woher, t-kommen, t-sie]
+        - [t-woher, t-kommen, t-sie, t-herr, t-becker]
+    explanation:
+      vi: "“Từ đâu” là woher (wo là “ở đâu”). Câu hỏi W-: Woher + động từ + Sie; Sie lịch sự chia như số nhiều – kommen. Herr Becker đứng đầu hoặc cuối câu."
+    display_answer: Herr Becker, woher kommen Sie?
+
+  - key: de:exercise:a1u01l5-mcq-gross-klein
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-g-nomen-gross
+    prompt:
+      stem: "Một bạn viết vào form: “ich komme aus vietnam und lerne jetzt deutsch.” Những chữ nào phải viết hoa?"
+      stem_lang: vi
+      options:
+        - { id: gk1, text: "ich (đầu câu), vietnam, deutsch", lang: vi }
+        - { id: gk2, text: "vietnam, deutsch", lang: vi }
+        - { id: gk3, text: "ich, komme, lerne", lang: vi }
+        - { id: gk4, text: Chỉ ich (đầu câu), lang: vi }
+    answer:
+      correct_option_id: gk1
+    explanation:
+      vi: "Chữ đầu câu luôn viết hoa (Ich); tên nước Vietnam là danh từ riêng; Deutsch sau lernen là tên ngôn ngữ – một danh từ – nên cũng viết hoa. Động từ (komme, lerne) viết thường."
+    display_answer: "ich (đầu câu), vietnam, deutsch"
+
+  - key: de:exercise:a1u01l5-tr-frau-weber
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u01-schweiz
+    prompt:
+      source_text: Frau Weber kommt aus der Schweiz und spricht Deutsch und Französisch.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bà Weber đến từ Thụy Sĩ và nói tiếng Đức và tiếng Pháp.
+        - Bà Weber đến từ Thụy Sĩ và nói được tiếng Đức và tiếng Pháp.
+        - Bà Weber đến từ Thụy Sĩ, nói tiếng Đức và tiếng Pháp.
+        - Bà Weber đến từ Thụy Sĩ và nói tiếng Đức với tiếng Pháp.
+        - Bà Weber đến từ Thụy Sĩ và biết tiếng Đức và tiếng Pháp.
+        - Bà Weber là người Thụy Sĩ và nói tiếng Đức và tiếng Pháp.
+        - Chị Weber đến từ Thụy Sĩ và nói tiếng Đức và tiếng Pháp.
+        - Cô Weber đến từ Thụy Sĩ và nói tiếng Đức và tiếng Pháp.
+        - Bà Weber đến từ Thụy Sĩ và nói tiếng Đức cùng tiếng Pháp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bà Weber đến từ Thụy Điển và nói tiếng Đức và tiếng Pháp.
+        feedback_vi: die Schweiz là Thụy Sĩ; Thụy Điển là Schweden.
+        error_tag: vocabulary
+      - answer: Bà Weber sống ở Thụy Sĩ và nói tiếng Đức và tiếng Pháp.
+        feedback_vi: kommt aus là “đến từ”, không phải “sống ở” (wohnt in).
+        error_tag: meaning
+    explanation:
+      vi: "kommt aus der Schweiz = đến từ Thụy Sĩ (Schweiz luôn có mạo từ). spricht Deutsch und Französisch = nói tiếng Đức và tiếng Pháp. Frau = bà/chị/cô."
+    display_answer: Bà Weber đến từ Thụy Sĩ và nói tiếng Đức và tiếng Pháp.

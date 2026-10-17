@@ -1,0 +1,366 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u01-ich-du-sie
+order_index: 1
+level: a1
+title:
+  vi: Tôi, bạn, ngài – động từ sein (Ich bin, du bist, Sie sind)
+objectives:
+  - vi: Giới thiệu mình và người khác bằng động từ sein (ich bin, du bist, er ist …).
+  - vi: Dùng đúng đại từ nhân xưng ich, du, er, sie, es, wir, ihr, sie/Sie.
+  - vi: Chọn du hay Sie cho phù hợp với người đối diện và hỏi thăm sức khỏe lịch sự.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: []
+items:
+  - item: de:item:a1u01-g-personalpronomen
+  - item: de:item:a1u01-g-sein
+  - item: de:item:a1u01-g-du-sie
+  - item: de:item:a1u01-vorname
+  - item: de:item:a1u01-familienname
+  - item: de:item:a1u01-freund
+  - item: de:item:a1u01-freundin
+  - item: de:item:a1u01-kollege
+  - item: de:item:a1u01-kollegin
+  - item: de:item:a1u01-nett
+  - item: de:item:a1u01-wie-geht-es-ihnen
+  - item: de:item:a1u01-es-geht
+  - item: de:item:a1u01-prima
+  - item: de:item:a1u01-sympathisch
+  - item: de:item:a1u01-super
+  - item: de:item:a1u01-schlecht
+  - item: de:item:p0u3-g-das-ist
+    role: reuse
+  - item: de:item:p0u3-g-anrede
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được “Mình là Minh”, “Chúng tôi là đồng nghiệp”, “Bà Weber rất dễ mến” bằng tiếng Đức và biết lúc nào xưng du, lúc nào xưng Sie.
+  - type: explain
+    text:
+      vi: "Tiếng Đức có một bộ đại từ chủ ngữ cố định: ich (tôi), du (bạn), er (anh ấy), sie (cô ấy), es (nó), wir (chúng tôi), ihr (các bạn), sie (họ), Sie (ông/bà/anh/chị – lịch sự). Bạn không cần chọn giữa anh, chị, em, cô, chú như tiếng Việt – tuổi tác không đổi đại từ."
+  - type: explain
+    text:
+      vi: "Động từ sein (là, thì, ở) đổi dạng theo chủ ngữ: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Tiếng Việt nói “Tôi Minh”, “Cô ấy mệt” mà không cần “là”; tiếng Đức luôn phải có sein: Ich bin Minh. Sie ist müde."
+  - type: explain
+    text:
+      vi: "du dùng với bạn bè, người nhà, trẻ em và người trẻ cùng lứa; Sie dùng với người lạ, người lớn tuổi, ở cơ quan và nơi làm việc. Với Sie, bạn gọi Herr/Frau + họ (Frau Weber); với du, gọi tên riêng (Lena). Khi chưa chắc, cứ dùng Sie – người Đức sẽ đề nghị chuyển sang du nếu muốn."
+  - type: explain
+    text:
+      vi: "Chữ sie có ba nghĩa: sie ist (cô ấy), sie sind (họ), Sie sind (ông/bà, lịch sự – luôn viết hoa). Hãy nhìn động từ: ist → cô ấy; sind → họ hoặc ông/bà, rồi dựa vào ngữ cảnh."
+  - type: deep_explain
+    text:
+      vi: "Trong công ty khởi nghiệp, quán bar hay trên mạng, người Đức trẻ thường xưng du ngay; ở ngân hàng, cơ quan, với thầy cô và khách hàng thì gần như luôn là Sie. Hỏi thăm sức khỏe: thân mật là “Wie geht's?”, lịch sự là “Wie geht es Ihnen?” – Ihnen là dạng của Sie, hãy học nguyên cụm (dạng này thuộc Dativ, sẽ học sau). Cách trả lời từ tốt đến xấu: super / prima → gut → es geht → schlecht. Lưu ý: der Freund vừa là “bạn” vừa là “bạn trai”, die Freundin vừa là “bạn” vừa là “bạn gái”."
+  - type: example
+    target: "Hallo, ich bin Minh. Und du? – Ich bin Lena. Freut mich!"
+    target_lang: de
+    translation:
+      vi: Chào, mình là Minh. Còn bạn? – Mình là Lena. Rất vui được gặp bạn!
+    note:
+      vi: Hai người trẻ gặp nhau nên xưng du. ich bin – du bist; ở câu “Und du?” động từ được lược đi.
+  - type: example
+    target: "Guten Tag, Herr Becker! Wie geht es Ihnen? – Danke, gut. Und Ihnen?"
+    target_lang: de
+    translation:
+      vi: Chào ông Becker! Ông có khỏe không? – Cảm ơn, tôi khỏe. Còn ông/bà?
+    note:
+      vi: Xưng Sie với người lớn tuổi hoặc đồng nghiệp chưa thân; gọi Herr + họ và dùng cụm Wie geht es Ihnen?.
+  - type: example
+    target: Das ist Paul. Er ist sehr nett.
+    target_lang: de
+    translation:
+      vi: Đây là Paul. Anh ấy rất dễ mến.
+    note:
+      vi: "Giới thiệu người khác bằng Das ist …, rồi dùng er (anh ấy) + ist. Không bỏ ist: “Er sehr nett” là sai."
+  - type: example
+    target: Lena und Mia sind Freundinnen. Sie sind sehr sympathisch.
+    target_lang: de
+    translation:
+      vi: Lena và Mia là bạn bè. Họ rất dễ mến.
+    note:
+      vi: "Hai người → sie (họ) + sind. Ở đây Sie viết hoa chỉ vì đứng đầu câu; động từ sind và ngữ cảnh cho biết đó là “họ”."
+  - type: example
+    target: "Lena, Tom, ihr seid Kollegen, oder? – Nein, wir sind Freunde."
+    target_lang: de
+    translation:
+      vi: Lena, Tom, hai bạn là đồng nghiệp phải không? – Không, bọn mình là bạn bè.
+    note:
+      vi: "Nói với hai người bạn (thân mật, số nhiều) dùng ihr + seid; trả lời bằng wir + sind. Nếu là hai người xưng Sie thì nói Sie sind."
+  - type: common_mistake
+    wrong: Ich Minh.
+    right: Ich bin Minh.
+    target_lang: de
+    note:
+      vi: Tiếng Việt có thể nói “Tôi Minh”, nhưng câu tiếng Đức bắt buộc có động từ. Giới thiệu tên dùng ich bin (hoặc ich heiße).
+  - type: common_mistake
+    wrong: Herr Becker, sie sind sehr nett.
+    right: Herr Becker, Sie sind sehr nett.
+    target_lang: de
+    note:
+      vi: Nói với ông Becker (lịch sự) phải viết hoa Sie. sie viết thường giữa câu nghĩa là “họ”.
+  - type: common_mistake
+    wrong: "Guten Tag, Frau Schmidt! Wie geht es dir?"
+    right: "Guten Tag, Frau Schmidt! Wie geht es Ihnen?"
+    target_lang: de
+    note:
+      vi: Đã gọi Frau + họ thì đang xưng Sie, nên phải hỏi Wie geht es Ihnen?. dir chỉ dùng với người bạn xưng du.
+  - type: common_mistake
+    wrong: Wir seid Kollegen.
+    right: Wir sind Kollegen.
+    target_lang: de
+    note:
+      vi: seid chỉ đi với ihr (các bạn). wir, sie (họ) và Sie đều dùng sind.
+  - type: summary
+    points:
+      - vi: "ich bin · du bist · er/sie/es ist · wir sind · ihr seid · sie/Sie sind."
+      - vi: Câu tiếng Đức luôn cần động từ – không nói “Ich Minh”, “Er sehr nett”.
+      - vi: du/ihr với bạn bè, người nhà; Sie (luôn viết hoa) với người lạ, người lớn tuổi, công việc.
+      - vi: Sie → Herr/Frau + họ; du → tên riêng.
+      - vi: "Hỏi thăm lịch sự: Wie geht es Ihnen? – Danke, gut / prima / es geht / schlecht."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u01l1-mcq-wir-sind
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-sein
+    prompt:
+      stem: "Chọn dạng đúng của sein: Wir ___ Kollegen."
+      stem_lang: vi
+      options:
+        - { id: k4p, text: sind, lang: de }
+        - { id: w9a, text: seid, lang: de }
+        - { id: t2m, text: ist, lang: de }
+        - { id: b7x, text: bin, lang: de }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: wir (chúng tôi) đi với sind. seid chỉ dùng cho ihr, ist cho er/sie/es, bin cho ich.
+    display_answer: sind
+
+  - key: de:exercise:a1u01l1-listen-sie-ist
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u01-g-personalpronomen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist Frau Weber. Sie ist sehr nett.
+      options:
+        - { id: m3q, text: Đây là bà Weber. Bà ấy rất dễ mến., lang: vi }
+        - { id: z8f, text: Đây là bà Weber. Họ rất dễ mến., lang: vi }
+        - { id: r1d, text: Đây là ông Weber. Ông ấy rất dễ mến., lang: vi }
+        - { id: h6v, text: Đây là bà Weber. Bà ấy rất mệt., lang: vi }
+    answer:
+      correct_option_id: m3q
+    explanation:
+      vi: "Frau là bà/cô, không phải ông (Herr). Sie ist đi với ist nên là “bà ấy”, không phải “họ” (họ thì phải là sie sind). nett là dễ mến, còn mệt là müde."
+    display_answer: Đây là bà Weber. Bà ấy rất dễ mến.
+
+  - key: de:exercise:a1u01l1-fill-bin-bist
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-sein
+    prompt:
+      template: "Hallo, ich {{b1}} Minh. Und du {{b2}} Lena, oder?"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+      hint_levels:
+        - "Nghĩa: Chào, mình là Minh. Còn bạn là Lena, phải không?"
+        - "Gợi ý: ich → bin, du → bist."
+    answer:
+      blanks:
+        b1: [bin]
+        b2: [bist]
+    known_wrong:
+      - answer: ist
+        feedback_vi: ist dùng cho er/sie/es. Với ich là bin, với du là bist.
+        error_tag: verb_form
+      - answer: sind
+        feedback_vi: sind dùng cho wir, sie (họ) và Sie. Với ich là bin, với du là bist.
+        error_tag: verb_form
+    explanation:
+      vi: "Mỗi chủ ngữ có một dạng sein riêng: ich bin, du bist. “…, oder?” ở cuối câu giống “… phải không?” trong tiếng Việt."
+    display_answer: Hallo, ich bin Minh. Und du bist Lena, oder?
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u01l1-fill-seid-sind
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-sein
+    prompt:
+      template: "Ihr {{b1}} Freunde, und wir {{b2}} Kollegen."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [seid]
+        b2: [sind]
+    known_wrong:
+      - answer: seit
+        feedback_vi: seit (từ khi) là một từ khác. “Các bạn là” viết là ihr seid, tận cùng bằng d.
+        error_tag: spelling
+      - answer: ist
+        feedback_vi: ist chỉ dùng cho er/sie/es (một người). ihr → seid, wir → sind.
+        error_tag: verb_form
+      - answer: bist
+        feedback_vi: bist chỉ dùng cho du (một người). ihr → seid, wir → sind.
+        error_tag: verb_form
+    explanation:
+      vi: ihr (các bạn) là ngôi duy nhất dùng seid; wir (chúng tôi) dùng sind. Câu nghĩa là “Các bạn là bạn bè, còn chúng tôi là đồng nghiệp.”
+    display_answer: Ihr seid Freunde, und wir sind Kollegen.
+
+  - key: de:exercise:a1u01l1-tr-freunde-nett
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-freund
+    prompt:
+      source_text: Anna và Tom là bạn bè. Họ rất dễ mến.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Anna und Tom sind Freunde. Sie sind sehr nett.
+        - Anna und Tom sind Freunde. Sie sind sehr sympathisch.
+        - Tom und Anna sind Freunde. Sie sind sehr nett.
+        - Tom und Anna sind Freunde. Sie sind sehr sympathisch.
+    known_wrong:
+      - answer: Anna und Tom ist Freunde. Sie ist sehr nett.
+        feedback_vi: Hai người (Anna und Tom) là số nhiều nên dùng sind; “họ” là sie sind.
+        error_tag: verb_form
+      - answer: Anna und Tom Freunde. Sie sehr nett.
+        feedback_vi: Thiếu động từ sein. Câu tiếng Đức cần sind ở cả hai câu.
+        error_tag: missing_sein
+      - answer: Anna und Tom sind Freunde. Sie sehr nett.
+        feedback_vi: Câu thứ hai thiếu sind – “Họ rất dễ mến” là Sie sind sehr nett.
+        error_tag: missing_sein
+      - answer: Anna und Tom sind Freunde. Er ist sehr nett.
+        feedback_vi: “Họ” là sie (số nhiều) + sind; er chỉ một người nam.
+        error_tag: pronoun
+    explanation:
+      vi: "Anna und Tom là hai người nên dùng sind; “họ” là sie + sind. Freunde là số nhiều của der Freund. “Dễ mến” có thể là nett hoặc sympathisch."
+    display_answer: Anna und Tom sind Freunde. Sie sind sehr nett.
+
+  - key: de:exercise:a1u01l1-tr-wie-geht-es-ihnen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-wie-geht-es-ihnen
+    prompt:
+      source_text: Chào bà Weber! Bà có khỏe không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Guten Tag, Frau Weber! Wie geht es Ihnen?
+        - Hallo, Frau Weber! Wie geht es Ihnen?
+        - Guten Morgen, Frau Weber! Wie geht es Ihnen?
+        - Guten Abend, Frau Weber! Wie geht es Ihnen?
+        - Guten Tag, Frau Weber! Wie geht's Ihnen?
+        - Hallo, Frau Weber! Wie geht's Ihnen?
+    known_wrong:
+      - answer: Guten Tag, Frau Weber! Wie geht es dir?
+        feedback_vi: Gọi Frau Weber là đang xưng Sie, nên hỏi Wie geht es Ihnen?, không dùng dir.
+        error_tag: register_du_sie
+      - answer: Guten Tag, Frau Weber! Wie geht es Sie?
+        feedback_vi: Cụm cố định là Wie geht es Ihnen? – không dùng Sie ở đây.
+        error_tag: pronoun_case
+      - answer: Guten Tag, Weber! Wie geht es Ihnen?
+        feedback_vi: Khi xưng Sie, gọi Frau + họ (Frau Weber), không gọi họ trống không.
+        error_tag: anrede
+    explanation:
+      vi: "Bà Weber là người xưng Sie: chào Guten Tag (hoặc Hallo) + Frau Weber, rồi hỏi bằng cụm cố định Wie geht es Ihnen? – Ihnen viết hoa vì là dạng lịch sự."
+    display_answer: Guten Tag, Frau Weber! Wie geht es Ihnen?
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u01l1-mcq-du-sie-chef
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-du-sie
+    prompt:
+      stem: Ngày đầu đi làm, bạn gặp giám đốc mới là ông Schulz (khoảng 55 tuổi). Câu chào hỏi nào phù hợp?
+      stem_lang: vi
+      options:
+        - { id: c5n, text: "Guten Tag, Herr Schulz! Wie geht es Ihnen?", lang: de }
+        - { id: y2e, text: "Hallo, Schulz! Wie geht's dir?", lang: de }
+        - { id: p8j, text: "Guten Tag, Herr Schulz! Wie geht es dir?", lang: de }
+        - { id: u4s, text: "Guten Tag, Herr Schulz! Wie geht es Sie?", lang: de }
+    answer:
+      correct_option_id: c5n
+    explanation:
+      vi: "Với cấp trên mới gặp, người Đức xưng Sie: Herr + họ và Wie geht es Ihnen?. Gọi “Schulz” trống không và dùng dir là quá suồng sã; “Wie geht es Sie” sai dạng – cụm đúng là Ihnen."
+    display_answer: "Guten Tag, Herr Schulz! Wie geht es Ihnen?"
+
+  - key: de:exercise:a1u01l1-wb-sie-sind-nett
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-du-sie
+    prompt:
+      instruction: "Sắp xếp thành câu để nói với bà Weber (xưng Sie): “Bà Weber ơi, bà rất tử tế.”"
+      tokens:
+        - { id: t-nett, text: nett }
+        - { id: t-sie, text: Sie }
+        - { id: t-weber, text: Weber }
+        - { id: t-sehr, text: sehr }
+        - { id: t-bist, text: bist }
+        - { id: t-sind, text: sind }
+        - { id: t-frau, text: Frau }
+        - { id: t-ist, text: ist }
+    answer:
+      orders:
+        - [t-frau, t-weber, t-sie, t-sind, t-sehr, t-nett]
+        - [t-sie, t-sind, t-sehr, t-nett, t-frau, t-weber]
+    explanation:
+      vi: "Sie lịch sự đi với sind (như sie – họ), không phải bist hay ist. Tên gọi Frau Weber có thể đứng đầu hoặc cuối câu."
+    display_answer: Frau Weber, Sie sind sehr nett.
+
+  - key: de:exercise:a1u01l1-tr-kollegen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u01-kollege
+    prompt:
+      source_text: Das sind Herr Becker und Frau Klein. Sie sind Kollegen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Đây là ông Becker và bà Klein. Họ là đồng nghiệp.
+        - Đây là ông Becker và bà Klein. Hai người là đồng nghiệp.
+        - Đây là ông Becker và bà Klein. Họ là đồng nghiệp của nhau.
+        - Đây là anh Becker và chị Klein. Họ là đồng nghiệp.
+        - Đây là ông Becker và cô Klein. Họ là đồng nghiệp.
+        - Đây là ông Becker với bà Klein. Họ là đồng nghiệp.
+        - Đây là ông Becker và bà Klein. Hai người họ là đồng nghiệp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đây là ông Becker và bà Klein. Bà ấy là đồng nghiệp.
+        feedback_vi: Sie sind + Kollegen (số nhiều) nghĩa là “họ là đồng nghiệp”, không phải “bà ấy”.
+        error_tag: pronoun
+      - answer: Đây là ông Becker và bà Klein. Họ là bạn bè.
+        feedback_vi: Kollegen là đồng nghiệp; bạn bè là Freunde.
+        error_tag: vocabulary
+    explanation:
+      vi: "Das sind … là dạng số nhiều của Das ist … (“Đây là …”). Sie sind Kollegen: sind + danh từ số nhiều nên Sie ở đầu câu là “họ”. Herr = ông/anh, Frau = bà/chị/cô."
+    display_answer: Đây là ông Becker và bà Klein. Họ là đồng nghiệp.

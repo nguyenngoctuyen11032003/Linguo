@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u01-woher-kommst-du
+order_index: 2
+level: a1
+title:
+  vi: Bạn đến từ đâu? – chia động từ (Woher kommst du?)
+objectives:
+  - vi: Nói mình đến từ đâu và đang sống ở đâu (Ich komme aus …, Ich wohne in …).
+  - vi: Hỏi quê quán và nơi ở của người khác, cả với du lẫn Sie.
+  - vi: Chia động từ có quy tắc ở thì hiện tại (đuôi -e, -st, -t, -en, -t, -en), kể cả du arbeitest và du heißt.
+  - vi: Dùng đúng tên nước có mạo từ (aus der Schweiz, in der Türkei, aus den USA).
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u01-ich-du-sie]
+items:
+  - item: de:item:a1u01-g-praesens
+  - item: de:item:a1u01-g-laender-artikel
+  - item: de:item:a1u01-kommen
+  - item: de:item:a1u01-wohnen
+  - item: de:item:a1u01-land
+  - item: de:item:a1u01-deutschland
+  - item: de:item:a1u01-oesterreich
+  - item: de:item:a1u01-schweiz
+  - item: de:item:a1u01-vietnam
+  - item: de:item:a1u01-aus
+  - item: de:item:a1u01-in
+  - item: de:item:a1u01-heissen
+  - item: de:item:a1u01-leben
+  - item: de:item:a1u01-hauptstadt
+  - item: de:item:a1u01-tuerkei
+  - item: de:item:a1u01-usa
+  - item: de:item:a1u01-frankreich
+  - item: de:item:p0u2-g-w-v-f-z
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trả lời và hỏi được “Bạn đến từ đâu?”, “Bạn sống ở đâu?” bằng tiếng Đức, với động từ chia đúng theo chủ ngữ.
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói “tôi đến”, “bạn đến”, “họ đến” – động từ không đổi. Tiếng Đức lấy gốc động từ (komm- từ kommen) rồi gắn đuôi theo chủ ngữ: ich komme, du kommst, er/sie/es kommt, wir kommen, ihr kommt, sie/Sie kommen."
+  - type: explain
+    text:
+      vi: "Hai trường hợp đặc biệt: gốc tận cùng bằng -t hoặc -d thì thêm -e- cho dễ đọc (arbeiten → du arbeitest, er arbeitet); gốc tận cùng bằng -s, -ß, -z thì ngôi du chỉ thêm -t (heißen → du heißt, không phải heißst)."
+  - type: explain
+    text:
+      vi: "Quê quán: kommen aus + nơi chốn (Ich komme aus Vietnam, aus Hanoi). Nơi ở: wohnen in + nơi chốn (Ich wohne in Berlin). Câu hỏi mẫu Woher kommst du? / Wo wohnst du? – bạn cứ học như mẫu câu, quy tắc câu hỏi sẽ học ở bài 3."
+  - type: explain
+    text:
+      vi: "Đa số tên nước không có mạo từ: aus Deutschland, in Österreich. Vài nước luôn có mạo từ – die Schweiz, die Türkei, die USA (số nhiều), der Iran – và sau aus/in thì nói aus der Schweiz, in der Türkei, aus den USA, aus dem Iran. Hãy học thuộc cả cụm."
+  - type: deep_explain
+    text:
+      vi: "Người Đức rất hay hỏi “Woher kommst du?” khi mới quen; trả lời có thể chỉ một cụm “Aus Vietnam.” hoặc kèm thành phố “Aus Vietnam, aus Da Nang.”. wohnen là ở tại một chỗ cụ thể (thành phố, địa chỉ), leben rộng hơn – sống ở một nước, sống lâu dài; trong nhiều câu cả hai đều đúng (Ich wohne/lebe in Deutschland). Mạo từ der trong “aus der Schweiz” là dạng Dativ của die – bạn sẽ hiểu lý do ở unit 5, giờ chỉ cần nhớ cụm. Lưu ý: hỏi “ở đâu” là wo, hỏi “từ đâu” là woher."
+  - type: example
+    target: "Woher kommst du? – Ich komme aus Vietnam, aus Hanoi."
+    target_lang: de
+    translation:
+      vi: Bạn đến từ đâu? – Mình đến từ Việt Nam, từ Hà Nội.
+    note:
+      vi: Hai bạn trẻ nói chuyện nên xưng du – động từ thành kommst. Với ich, đuôi là -e (komme).
+  - type: example
+    target: "Woher kommen Sie, Herr Keller? – Ich komme aus der Schweiz."
+    target_lang: de
+    translation:
+      vi: Ông Keller, ông đến từ đâu? – Tôi đến từ Thụy Sĩ.
+    note:
+      vi: Xưng Sie lịch sự nên động từ giống ngôi số nhiều (kommen). Schweiz luôn có mạo từ – aus der Schweiz.
+  - type: example
+    target: Wir wohnen in Berlin, und Anna wohnt in Wien.
+    target_lang: de
+    translation:
+      vi: Chúng tôi sống ở Berlin, còn Anna sống ở Vienna.
+    note:
+      vi: "wir → wohnen (giống nguyên thể), Anna (= sie, cô ấy) → wohnt. Wien là tên tiếng Đức của thủ đô nước Áo. Nhớ cách đọc: w trong wir, wohnen, Wien đọc như “v” tiếng Việt; z trong Schweiz đọc “ts”."
+  - type: example
+    target: "Wie heißt du? – Ich heiße Tom. Ich arbeite in Hamburg. Und du? Wo arbeitest du?"
+    target_lang: de
+    translation:
+      vi: Bạn tên gì? – Mình tên Tom. Mình làm việc ở Hamburg. Còn bạn? Bạn làm việc ở đâu?
+    note:
+      vi: "du heißt (gốc heiß- đã có ß nên chỉ thêm -t); du arbeitest (gốc arbeit- tận cùng bằng t nên thêm -e-). Câu này xưng du. (arbeiten = làm việc, sẽ học kỹ ở unit 2.)"
+  - type: example
+    target: Sarah kommt aus den USA, aber sie lebt jetzt in Deutschland.
+    target_lang: de
+    translation:
+      vi: Sarah đến từ Mỹ, nhưng bây giờ cô ấy sống ở Đức.
+    note:
+      vi: "die USA là số nhiều nên sau aus thành den USA. Deutschland không có mạo từ. (aber = nhưng.)"
+  - type: common_mistake
+    wrong: Du kommen aus Vietnam.
+    right: Du kommst aus Vietnam.
+    target_lang: de
+    note:
+      vi: Động từ phải đổi đuôi theo chủ ngữ – với du luôn là -st. Nguyên thể kommen chỉ đi với wir, sie (họ) và Sie.
+  - type: common_mistake
+    wrong: Du arbeitst in Berlin.
+    right: Du arbeitest in Berlin.
+    target_lang: de
+    note:
+      vi: Gốc arbeit- tận cùng bằng t, nên chèn -e- trước đuôi -st, -t cho dễ đọc – du arbeitest, er arbeitet.
+  - type: common_mistake
+    wrong: Lukas kommt aus Schweiz.
+    right: Lukas kommt aus der Schweiz.
+    target_lang: de
+    note:
+      vi: Schweiz không bao giờ đứng một mình – luôn là die Schweiz, sau aus/in là der Schweiz.
+  - type: common_mistake
+    wrong: Ich komme von Vietnam.
+    right: Ich komme aus Vietnam.
+    target_lang: de
+    note:
+      vi: Nói quê quán (từ một nước, một thành phố) dùng aus, không dùng von.
+  - type: summary
+    points:
+      - vi: "Đuôi động từ: ich -e · du -st · er/sie/es -t · wir -en · ihr -t · sie/Sie -en."
+      - vi: "Gốc -t/-d thêm -e-: du arbeitest, er arbeitet. Gốc -s/-ß/-z: du heißt."
+      - vi: "Quê quán: Ich komme aus … · Nơi ở: Ich wohne / lebe in …"
+      - vi: "Nước có mạo từ: aus der Schweiz, in der Türkei, aus den USA – học cả cụm."
+      - vi: "Hỏi: Woher kommst du? / Woher kommen Sie? – Wo wohnst du? / Wo wohnen Sie?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u01l2-mcq-kommst
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-praesens
+    prompt:
+      stem: "Chọn dạng đúng của kommen: Du ___ aus Vietnam."
+      stem_lang: vi
+      options:
+        - { id: f3w, text: kommst, lang: de }
+        - { id: a8k, text: komme, lang: de }
+        - { id: q2z, text: kommt, lang: de }
+        - { id: n5r, text: kommen, lang: de }
+    answer:
+      correct_option_id: f3w
+    explanation:
+      vi: Chủ ngữ du luôn lấy đuôi -st, nên komm- + -st = kommst. komme dùng cho ich, kommt cho er/sie/es và ihr, kommen cho wir, sie/Sie.
+    display_answer: kommst
+
+  - key: de:exercise:a1u01l2-mcq-arbeitest
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-praesens
+    prompt:
+      stem: "Chọn dạng đúng của arbeiten (làm việc): Du ___ in Berlin."
+      stem_lang: vi
+      options:
+        - { id: e6m, text: arbeitest, lang: de }
+        - { id: j1v, text: arbeitet, lang: de }
+        - { id: s9c, text: arbeite, lang: de }
+        - { id: d4g, text: arbeiten, lang: de }
+    answer:
+      correct_option_id: e6m
+    explanation:
+      vi: "Với du, đuôi là -st; gốc arbeit- tận cùng bằng t nên chèn thêm -e- → arbeitest. arbeitet là của er/sie/es và ihr, arbeite của ich, arbeiten của wir, sie/Sie."
+    display_answer: arbeitest
+
+  - key: de:exercise:a1u01l2-fill-aus-der-schweiz
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-laender-artikel
+    prompt:
+      template: "Lukas kommt aus {{b1}} Schweiz, und Mehmet kommt aus {{b2}} Türkei."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Lukas đến từ Thụy Sĩ, còn Mehmet đến từ Thổ Nhĩ Kỳ."
+        - "Gợi ý: die Schweiz, die Türkei – sau aus, die đổi thành một mạo từ khác (cùng một từ cho cả hai chỗ)."
+    answer:
+      blanks:
+        b1: [der]
+        b2: [der]
+    known_wrong:
+      - answer: die
+        feedback_vi: Sau aus, die Schweiz/die Türkei đổi thành der – aus der Schweiz, aus der Türkei.
+        error_tag: article
+      - answer: dem
+        feedback_vi: dem dùng cho nước giống đực/trung (aus dem Iran). Schweiz và Türkei là giống cái → aus der.
+        error_tag: article
+    explanation:
+      vi: "Schweiz và Türkei là hai nước luôn có mạo từ giống cái die. Sau aus (và in), die đổi thành der: aus der Schweiz, aus der Türkei – học cả cụm."
+    display_answer: Lukas kommt aus der Schweiz, und Mehmet kommt aus der Türkei.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u01l2-fill-heisst-wohnst
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-heissen
+    prompt:
+      template: "Wie {{b1}} du? – Ich {{b2}} Linh. – Und wo {{b3}} du? – Ich {{b4}} in Leipzig."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 6 }
+        - { id: b4, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [heißt]
+        b2: [heiße, bin]
+        b3: [wohnst, lebst]
+        b4: [wohne, lebe]
+    known_wrong:
+      - answer: heißst
+        feedback_vi: Gốc heiß- đã tận cùng bằng ß, nên với du chỉ thêm -t – du heißt.
+        error_tag: verb_form
+      - answer: heißen
+        feedback_vi: heißen là nguyên thể (wir/sie/Sie). Với du là heißt, với ich là heiße.
+        error_tag: verb_form
+      - answer: wohnen
+        feedback_vi: wohnen là nguyên thể. Với du là wohnst, với ich là wohne.
+        error_tag: verb_form
+      - answer: wohnt
+        feedback_vi: wohnt dùng cho er/sie/es và ihr. Với du là wohnst, với ich là wohne.
+        error_tag: verb_form
+    explanation:
+      vi: "Hỏi tên với du: Wie heißt du? (heiß- + t). Trả lời: Ich heiße … (hoặc Ich bin …). Hỏi nơi ở: Wo wohnst du? – Ich wohne in … (dùng leben cũng đúng)."
+    display_answer: "Wie heißt du? – Ich heiße Linh. – Und wo wohnst du? – Ich wohne in Leipzig."
+
+  - key: de:exercise:a1u01l2-tr-aus-vietnam
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-kommen
+    prompt:
+      source_text: Tôi đến từ Việt Nam và tôi sống ở Đức.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich komme aus Vietnam und wohne in Deutschland.
+        - Ich komme aus Vietnam und ich wohne in Deutschland.
+        - Ich komme aus Vietnam und lebe in Deutschland.
+        - Ich komme aus Vietnam und ich lebe in Deutschland.
+        - Ich bin aus Vietnam und wohne in Deutschland.
+        - Ich bin aus Vietnam und ich wohne in Deutschland.
+        - Ich bin aus Vietnam und lebe in Deutschland.
+        - Ich bin aus Vietnam und ich lebe in Deutschland.
+    known_wrong:
+      - answer: Ich kommen aus Vietnam und wohnen in Deutschland.
+        feedback_vi: Với ich, động từ có đuôi -e – ich komme, ich wohne.
+        error_tag: verb_form
+      - answer: Ich komme von Vietnam und wohne in Deutschland.
+        feedback_vi: Nói quê quán dùng aus, không dùng von – aus Vietnam.
+        error_tag: preposition
+      - answer: Ich komme aus Vietnam und wohne in der Deutschland.
+        feedback_vi: Deutschland không có mạo từ – in Deutschland.
+        error_tag: article
+      - answer: Ich komme aus Vietnam und wohne aus Deutschland.
+        feedback_vi: Nơi đang ở dùng in, aus chỉ dùng cho nơi xuất phát.
+        error_tag: preposition
+    explanation:
+      vi: "Quê quán: Ich komme aus Vietnam (hoặc Ich bin aus Vietnam). Nơi ở: wohne/lebe in Deutschland – Deutschland không có mạo từ. Sau und có thể lặp hoặc lược ich."
+    display_answer: Ich komme aus Vietnam und wohne in Deutschland.
+
+  - key: de:exercise:a1u01l2-tr-schweiz
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-schweiz
+    prompt:
+      source_text: Lukas đến từ Thụy Sĩ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Lukas kommt aus der Schweiz.
+        - Lukas ist aus der Schweiz.
+        - Aus der Schweiz kommt Lukas.
+    known_wrong:
+      - answer: Lukas kommt aus Schweiz.
+        feedback_vi: Schweiz luôn có mạo từ – aus der Schweiz.
+        error_tag: article
+      - answer: Lukas kommt aus die Schweiz.
+        feedback_vi: Sau aus, die Schweiz đổi thành der Schweiz.
+        error_tag: article
+      - answer: Lukas kommst aus der Schweiz.
+        feedback_vi: Lukas (= er) đi với kommt; kommst chỉ dùng cho du.
+        error_tag: verb_form
+      - answer: Lukas kommen aus der Schweiz.
+        feedback_vi: Một người (er) → kommt; kommen dùng cho wir, sie/Sie.
+        error_tag: verb_form
+    explanation:
+      vi: "Lukas là một người (= er) nên dùng kommt. Thụy Sĩ là die Schweiz, sau aus thành aus der Schweiz."
+    display_answer: Lukas kommt aus der Schweiz.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u01l2-mcq-woher-kommen-sie
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-praesens
+    prompt:
+      stem: Bạn muốn hỏi bà Schmidt, đồng nghiệp mới lớn tuổi (xưng Sie), xem bà đến từ đâu. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: v7b, text: "Woher kommen Sie, Frau Schmidt?", lang: de }
+        - { id: g3y, text: "Woher kommst Sie, Frau Schmidt?", lang: de }
+        - { id: l9h, text: "Woher kommt Sie, Frau Schmidt?", lang: de }
+        - { id: o2t, text: "Woher kommst du, Frau Schmidt?", lang: de }
+    answer:
+      correct_option_id: v7b
+    explanation:
+      vi: "Sie lịch sự chia như sie (họ) – kommen. kommst chỉ đi với du, kommt với er/sie/es. Gọi Frau Schmidt mà xưng du là lệch ngữ vực."
+    display_answer: "Woher kommen Sie, Frau Schmidt?"
+
+  - key: de:exercise:a1u01l2-wb-jetzt-wien
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-wohnen
+    prompt:
+      instruction: "Sắp xếp thành câu: “Bây giờ chúng tôi sống ở Vienna.” (Vienna = Wien)"
+      tokens:
+        - { id: t-in, text: in }
+        - { id: t-wohnen, text: wohnen }
+        - { id: t-wien, text: Wien }
+        - { id: t-jetzt, text: jetzt }
+        - { id: t-wohnt, text: wohnt }
+        - { id: t-wir, text: wir }
+        - { id: t-wohnst, text: wohnst }
+    answer:
+      orders:
+        - [t-wir, t-wohnen, t-jetzt, t-in, t-wien]
+        - [t-jetzt, t-wohnen, t-wir, t-in, t-wien]
+        - [t-in, t-wien, t-wohnen, t-wir, t-jetzt]
+    explanation:
+      vi: "wir đi với wohnen (đuôi -en). Câu thường gặp nhất là Wir wohnen jetzt in Wien; nếu đưa jetzt hoặc in Wien lên đầu thì động từ vẫn đứng thứ hai và wir lùi ra sau (bài 3 sẽ học kỹ)."
+    display_answer: Wir wohnen jetzt in Wien.
+
+  - key: de:exercise:a1u01l2-tr-tuerkei
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u01-tuerkei
+    prompt:
+      source_text: Mehmet kommt aus der Türkei und lebt jetzt in Frankreich.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mehmet đến từ Thổ Nhĩ Kỳ và bây giờ sống ở Pháp.
+        - Mehmet đến từ Thổ Nhĩ Kỳ và bây giờ đang sống ở Pháp.
+        - Mehmet đến từ Thổ Nhĩ Kỳ và hiện sống ở Pháp.
+        - Mehmet đến từ Thổ Nhĩ Kỳ và hiện đang sống ở Pháp.
+        - Mehmet đến từ Thổ Nhĩ Kỳ và hiện nay sống ở Pháp.
+        - Mehmet đến từ Thổ Nhĩ Kỳ và giờ sống ở Pháp.
+        - Mehmet đến từ Thổ Nhĩ Kỳ, bây giờ sống ở Pháp.
+        - Mehmet đến từ Thổ Nhĩ Kỳ, bây giờ đang sống ở Pháp.
+        - Mehmet là người Thổ Nhĩ Kỳ và bây giờ sống ở Pháp.
+        - Mehmet quê ở Thổ Nhĩ Kỳ và bây giờ sống ở Pháp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mehmet đến từ Pháp và bây giờ sống ở Thổ Nhĩ Kỳ.
+        feedback_vi: Ngược rồi – kommt aus (đến từ) đi với Türkei, lebt in (sống ở) đi với Frankreich.
+        error_tag: meaning
+    explanation:
+      vi: "kommt aus der Türkei = đến từ Thổ Nhĩ Kỳ; lebt jetzt in Frankreich = bây giờ sống ở Pháp. Türkei luôn có mạo từ (aus der Türkei), Frankreich thì không."
+    display_answer: Mehmet đến từ Thổ Nhĩ Kỳ và bây giờ sống ở Pháp.

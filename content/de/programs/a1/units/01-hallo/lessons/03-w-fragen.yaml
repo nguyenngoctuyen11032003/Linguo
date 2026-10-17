@@ -1,0 +1,369 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u01-w-fragen
+order_index: 3
+level: a1
+title:
+  vi: Câu hỏi W- và câu hỏi có/không (W-Fragen)
+objectives:
+  - vi: Đặt câu hỏi W- (Wer? Wie? Wo? Woher? Was?) với động từ ở vị trí 2.
+  - vi: Đặt câu hỏi có/không với động từ đứng đầu (Sprichst du Deutsch?) và trả lời Ja/Nein.
+  - vi: Giữ động từ ở vị trí 2 trong câu kể, kể cả khi heute/jetzt đứng đầu câu.
+  - vi: Nói mình biết những ngôn ngữ nào (Ich spreche Vietnamesisch und ein bisschen Deutsch).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking, listening]
+prerequisites: [de:lesson:a1u01-woher-kommst-du]
+items:
+  - item: de:item:a1u01-g-w-fragen
+  - item: de:item:a1u01-g-ja-nein-frage
+  - item: de:item:a1u01-g-v2
+  - item: de:item:a1u01-sprechen
+  - item: de:item:a1u01-lernen
+  - item: de:item:a1u01-sprache
+  - item: de:item:a1u01-deutsch
+  - item: de:item:a1u01-englisch
+  - item: de:item:a1u01-vietnamesisch
+  - item: de:item:a1u01-wer
+  - item: de:item:a1u01-wo
+  - item: de:item:a1u01-woher
+  - item: de:item:a1u01-was
+  - item: de:item:a1u01-wie
+  - item: de:item:a1u01-ein-bisschen
+  - item: de:item:a1u01-franzoesisch
+  - item: de:item:p0u3-g-satzmelodie
+    role: reuse
+  - item: de:item:p0u1-g-vokallaenge
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được tên, quê, nơi ở, ngôn ngữ của người khác bằng câu hỏi đúng trật tự, và nói được “Hôm nay tôi học tiếng Đức” mà không đặt sai động từ.
+  - type: explain
+    text:
+      vi: "Câu hỏi W- bắt đầu bằng từ để hỏi: wer (ai), wie (thế nào), wo (ở đâu), woher (từ đâu), was (gì). Ngay sau đó là động từ đã chia (vị trí 2), rồi mới đến chủ ngữ: Wo wohnst du? Tiếng Việt để từ để hỏi ở cuối (“Bạn sống ở đâu?”), tiếng Đức đưa nó lên đầu."
+  - type: explain
+    text:
+      vi: "Câu hỏi có/không không có từ để hỏi: động từ đã chia đứng đầu câu, chủ ngữ ngay sau – Sprichst du Deutsch? Tiếng Việt thêm “có … không”, tiếng Đức chỉ đảo động từ lên trước và lên giọng ở cuối câu. Trả lời: Ja / Nein."
+  - type: explain
+    text:
+      vi: "Trong câu kể, động từ đã chia luôn ở vị trí 2. Nếu đưa heute, jetzt hay in Berlin lên đầu, chủ ngữ phải lùi ra sau động từ: Heute lerne ich Deutsch – không nói “Heute ich lerne”. Đây là lỗi số 1 của người Việt, vì tiếng Việt giữ nguyên “Hôm nay tôi học”."
+  - type: explain
+    text:
+      vi: "sprechen đổi nguyên âm e → i ở ngôi du và er/sie/es: ich spreche, du sprichst, er spricht, wir sprechen. Tên ngôn ngữ viết hoa: Deutsch, Englisch, Vietnamesisch, Französisch."
+  - type: deep_explain
+    text:
+      vi: "“Vị trí” tính theo thành phần câu chứ không theo số từ: “in Berlin” là một thành phần, nên In Berlin wohne ich vẫn đúng V2. Câu “Du wohnst wo?” (từ để hỏi cuối câu) chỉ dùng khi hỏi lại vì ngạc nhiên hoặc nghe không rõ, không dùng thay câu hỏi bình thường. Về ngữ điệu: câu hỏi W- thường hạ giọng ở cuối, câu hỏi có/không lên giọng. Ngôn ngữ là danh từ nên viết hoa (Ich lerne Deutsch); dạng tính từ viết thường (vietnamesisch kochen = nấu kiểu Việt) – bài này chỉ cần nhận ra."
+  - type: example
+    target: "Wie heißen Sie? – Ich heiße Anna Wagner. – Woher kommen Sie? – Aus Österreich."
+    target_lang: de
+    translation:
+      vi: Bà tên là gì? – Tôi tên là Anna Wagner. – Bà đến từ đâu? – Từ Áo.
+    note:
+      vi: "Hai người lạ xưng Sie. Mỗi câu hỏi: từ để hỏi (Wie, Woher) + động từ + chủ ngữ, và hạ giọng ở cuối câu. Chú ý nguyên âm dài: ie trong Wie là “i” kéo dài, e trong woher cũng dài."
+  - type: example
+    target: "Sprichst du Englisch? – Ja, und ein bisschen Französisch."
+    target_lang: de
+    translation:
+      vi: Bạn có nói tiếng Anh không? – Có, và một chút tiếng Pháp.
+    note:
+      vi: Bạn bè xưng du. Câu hỏi có/không – động từ Sprichst đứng đầu và lên giọng ở cuối câu; sprechen đổi e → i với du (i ngắn, trước hai phụ âm ch-st).
+  - type: example
+    target: Heute lerne ich Deutsch, und morgen lerne ich Englisch.
+    target_lang: de
+    translation:
+      vi: Hôm nay tôi học tiếng Đức, còn ngày mai tôi học tiếng Anh.
+    note:
+      vi: "heute/morgen đứng đầu nên động từ lerne vẫn ở vị trí 2 và ich lùi ra sau. (morgen = ngày mai.)"
+  - type: example
+    target: "Wer ist das? – Das ist Frau Klein. Sie spricht vier Sprachen."
+    target_lang: de
+    translation:
+      vi: Ai đây? – Đây là bà Klein. Bà ấy nói được bốn thứ tiếng.
+    note:
+      vi: "Wer hỏi về người. Sie spricht – sie (bà ấy) đi với spricht (e → i)."
+  - type: common_mistake
+    wrong: Heute ich lerne Deutsch.
+    right: Heute lerne ich Deutsch.
+    target_lang: de
+    note:
+      vi: Động từ đã chia phải ở vị trí 2. heute đã chiếm vị trí 1, nên lerne đứng thứ hai và ich lùi ra sau.
+  - type: common_mistake
+    wrong: Was heißt du?
+    right: Wie heißt du?
+    target_lang: de
+    note:
+      vi: Tiếng Việt hỏi “tên là gì”, nhưng tiếng Đức hỏi tên bằng Wie (thế nào). Was heißt …? chỉ dùng để hỏi nghĩa của một từ.
+  - type: common_mistake
+    wrong: Sprechst du Deutsch?
+    right: Sprichst du Deutsch?
+    target_lang: de
+    note:
+      vi: sprechen đổi e → i ở ngôi du và er/sie/es – du sprichst, er spricht.
+  - type: common_mistake
+    wrong: Wo du wohnst?
+    right: Wo wohnst du?
+    target_lang: de
+    note:
+      vi: Sau từ để hỏi là động từ ngay (vị trí 2), rồi mới đến chủ ngữ.
+  - type: summary
+    points:
+      - vi: "Câu hỏi W-: từ để hỏi + động từ + chủ ngữ … ? (Wo wohnst du?)"
+      - vi: "Câu hỏi có/không: động từ + chủ ngữ … ? (Sprichst du Deutsch?) – Ja / Nein."
+      - vi: "Câu kể: động từ ở vị trí 2 – Heute lerne ich Deutsch."
+      - vi: "wer = ai · wie = thế nào · wo = ở đâu · woher = từ đâu · was = gì."
+      - vi: "sprechen: ich spreche, du sprichst, er spricht."
+      - vi: Hỏi tên là Wie heißt du?, không phải Was heißt du?.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u01l3-mcq-wo-wohnst
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-w-fragen
+    prompt:
+      stem: "Chọn câu hỏi đúng trật tự: “Bạn sống ở đâu?”"
+      stem_lang: vi
+      options:
+        - { id: h2k, text: Wo wohnst du?, lang: de }
+        - { id: x7p, text: Wo du wohnst?, lang: de }
+        - { id: c1s, text: Wohnst wo du?, lang: de }
+        - { id: m8e, text: Wo wohnen du?, lang: de }
+    answer:
+      correct_option_id: h2k
+    explanation:
+      vi: "Từ để hỏi Wo ở vị trí 1, động từ wohnst ở vị trí 2, rồi đến du. “Wo du wohnst” để động từ cuối, “Wohnst wo du” đặt sai từ để hỏi, “wohnen du” chia sai."
+    display_answer: Wo wohnst du?
+
+  - key: de:exercise:a1u01l3-listen-sprichst
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u01-g-ja-nein-frage
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sprichst du Englisch?
+      options:
+        - { id: r5t, text: Bạn có nói tiếng Anh không?, lang: vi }
+        - { id: k9b, text: Bạn có học tiếng Anh không?, lang: vi }
+        - { id: w3n, text: Ai nói tiếng Anh?, lang: vi }
+        - { id: f6d, text: Bạn có nói tiếng Đức không?, lang: vi }
+    answer:
+      correct_option_id: r5t
+    explanation:
+      vi: "Động từ Sprichst (nói) đứng đầu nên đây là câu hỏi có/không: “Bạn có nói … không?”. Englisch là tiếng Anh; học là lernen; “ai” sẽ bắt đầu bằng Wer."
+    display_answer: Bạn có nói tiếng Anh không?
+
+  - key: de:exercise:a1u01l3-mcq-heute-lerne
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-v2
+    prompt:
+      stem: "Chọn câu đúng: “Hôm nay tôi học tiếng Đức.”"
+      stem_lang: vi
+      options:
+        - { id: z4a, text: Heute lerne ich Deutsch., lang: de }
+        - { id: b6q, text: Heute ich lerne Deutsch., lang: de }
+        - { id: j8u, text: Heute ich Deutsch lerne., lang: de }
+        - { id: s2o, text: Ich heute lerne Deutsch., lang: de }
+    answer:
+      correct_option_id: z4a
+    explanation:
+      vi: "Động từ đã chia luôn ở vị trí 2. Heute chiếm vị trí 1, nên lerne đứng ngay sau và ich lùi ra sau động từ. Ba câu còn lại đều đẩy động từ ra vị trí 3 hoặc cuối câu."
+    display_answer: Heute lerne ich Deutsch.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u01l3-fill-wie-woher-wo
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-woher
+    prompt:
+      template: "{{b1}} heißt du? – Linh. – {{b2}} kommst du? – Aus Hanoi. – Und {{b3}} wohnst du jetzt? – In Leipzig."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Wie]
+        b2: [Woher]
+        b3: [wo]
+    known_wrong:
+      - answer: Was
+        feedback_vi: Hỏi tên dùng Wie heißt du?, không dùng Was.
+        error_tag: question_word
+      - answer: Wer
+        feedback_vi: Wer nghĩa là “ai”. Hỏi tên dùng Wie, hỏi quê dùng Woher, hỏi nơi ở dùng wo.
+        error_tag: question_word
+    explanation:
+      vi: "Hỏi tên: Wie heißt du?; hỏi quê (trả lời bằng aus): Woher kommst du?; hỏi nơi ở (trả lời bằng in): Wo wohnst du?."
+    display_answer: "Wie heißt du? – Linh. – Woher kommst du? – Aus Hanoi. – Und wo wohnst du jetzt? – In Leipzig."
+
+  - key: de:exercise:a1u01l3-fill-sprichst-lerne
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-sprechen
+    prompt:
+      template: "{{b1}} (sprechen) du Vietnamesisch, Tom? – Ja, ein bisschen. Ich {{b2}} (lernen) Vietnamesisch in Hanoi."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Sprichst]
+        b2: [lerne]
+    known_wrong:
+      - answer: Sprechst
+        feedback_vi: sprechen đổi e → i ở ngôi du – du sprichst.
+        error_tag: vowel_change
+      - answer: Spricht
+        feedback_vi: spricht dùng cho er/sie/es. Với du là sprichst.
+        error_tag: verb_form
+      - answer: lernst
+        feedback_vi: lernst dùng cho du. Với ich, đuôi là -e – ich lerne.
+        error_tag: verb_form
+      - answer: lernen
+        feedback_vi: lernen là nguyên thể. Với ich, đuôi là -e – ich lerne.
+        error_tag: verb_form
+    explanation:
+      vi: "Câu hỏi có/không: động từ đứng đầu – Sprichst du …? (du + e → i + -st). Câu trả lời: ich + lern- + -e = lerne."
+    display_answer: "Sprichst du Vietnamesisch, Tom? – Ja, ein bisschen. Ich lerne Vietnamesisch in Hanoi."
+
+  - key: de:exercise:a1u01l3-tr-sprichst-du-deutsch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-ja-nein-frage
+    prompt:
+      source_text: "Bạn có nói tiếng Đức không? – Có, một chút. (hỏi một bạn cùng lớp)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Sprichst du Deutsch? – Ja, ein bisschen.
+        - Sprichst du Deutsch? – Ja, ich spreche ein bisschen Deutsch.
+        - Sprichst du Deutsch? – Ja, etwas.
+        - Kannst du Deutsch? – Ja, ein bisschen.
+    known_wrong:
+      - answer: Sprechst du Deutsch? – Ja, ein bisschen.
+        feedback_vi: sprechen đổi e → i ở ngôi du – Sprichst du …?
+        error_tag: vowel_change
+      - answer: Spricht du Deutsch? – Ja, ein bisschen.
+        feedback_vi: Với du, đuôi động từ là -st – Sprichst du …?
+        error_tag: verb_form
+      - answer: Sprechen du Deutsch? – Ja, ein bisschen.
+        feedback_vi: sprechen là nguyên thể (wir, sie/Sie). Với du là sprichst.
+        error_tag: verb_form
+    explanation:
+      vi: "Hỏi bạn cùng lớp nên xưng du. Câu hỏi có/không đưa động từ lên đầu: Sprichst du Deutsch?; trả lời ngắn: Ja, ein bisschen."
+    display_answer: Sprichst du Deutsch? – Ja, ein bisschen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u01l3-wb-heute-lernen-wir
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-v2
+    prompt:
+      instruction: "Sắp xếp thành câu: “Hôm nay chúng tôi học tiếng Đức.”"
+      tokens:
+        - { id: t-deutsch, text: Deutsch }
+        - { id: t-wir, text: wir }
+        - { id: t-heute, text: heute }
+        - { id: t-lernt, text: lernt }
+        - { id: t-lernen, text: lernen }
+    answer:
+      orders:
+        - [t-heute, t-lernen, t-wir, t-deutsch]
+        - [t-wir, t-lernen, t-heute, t-deutsch]
+        - [t-deutsch, t-lernen, t-wir, t-heute]
+    explanation:
+      vi: "wir đi với lernen. Dù bạn đặt heute, wir hay Deutsch ở đầu câu, động từ lernen luôn đứng thứ hai: Heute lernen wir Deutsch / Wir lernen heute Deutsch."
+    display_answer: Heute lernen wir Deutsch.
+
+  - key: de:exercise:a1u01l3-wb-wo-lernst-du
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-wo
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: “Bạn học tiếng Đức ở đâu?”"
+      tokens:
+        - { id: t-deutsch, text: Deutsch }
+        - { id: t-du, text: du }
+        - { id: t-woher, text: woher }
+        - { id: t-lernst, text: lernst }
+        - { id: t-wo, text: wo }
+        - { id: t-lernen, text: lernen }
+    answer:
+      orders:
+        - [t-wo, t-lernst, t-du, t-deutsch]
+    explanation:
+      vi: "“Ở đâu” là wo (woher là “từ đâu”). Câu hỏi W-: Wo + động từ lernst + du + phần còn lại."
+    display_answer: Wo lernst du Deutsch?
+
+  - key: de:exercise:a1u01l3-mcq-sprechen-sie
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-englisch
+    prompt:
+      stem: Bạn muốn hỏi cô giáo (xưng Sie) xem cô có nói tiếng Anh không. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - { id: p3r, text: Sprechen Sie Englisch?, lang: de }
+        - { id: e9w, text: Sprichst du Englisch?, lang: de }
+        - { id: y5m, text: Spricht Sie Englisch?, lang: de }
+        - { id: n1c, text: Sprechen Englisch Sie?, lang: de }
+    answer:
+      correct_option_id: p3r
+    explanation:
+      vi: "Với cô giáo dùng Sie; Sie chia như số nhiều (sprechen, không đổi e → i). Câu hỏi có/không: động từ đầu, chủ ngữ ngay sau – Sprechen Sie …?. Sprichst du là xưng du, không hợp với cô giáo."
+    display_answer: Sprechen Sie Englisch?
+
+  - key: de:exercise:a1u01l3-tr-herr-klein-sprachen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u01-ein-bisschen
+    prompt:
+      source_text: Herr Klein spricht Deutsch, Englisch und ein bisschen Französisch.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ông Klein nói tiếng Đức, tiếng Anh và một chút tiếng Pháp.
+        - Ông Klein nói được tiếng Đức, tiếng Anh và một chút tiếng Pháp.
+        - Ông Klein nói tiếng Đức, tiếng Anh và một ít tiếng Pháp.
+        - Ông Klein nói được tiếng Đức, tiếng Anh và một ít tiếng Pháp.
+        - Ông Klein nói tiếng Đức, tiếng Anh và hơi biết tiếng Pháp.
+        - Anh Klein nói tiếng Đức, tiếng Anh và một chút tiếng Pháp.
+        - Anh Klein nói được tiếng Đức, tiếng Anh và một chút tiếng Pháp.
+        - Ông Klein nói tiếng Đức, tiếng Anh và biết một chút tiếng Pháp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ông Klein nói tiếng Đức, tiếng Anh và tiếng Pháp.
+        feedback_vi: Còn thiếu ein bisschen – ông ấy chỉ nói “một chút” tiếng Pháp.
+        error_tag: missing_word
+      - answer: Ông Klein học tiếng Đức, tiếng Anh và một chút tiếng Pháp.
+        feedback_vi: spricht là “nói”; “học” là lernt.
+        error_tag: vocabulary
+    explanation:
+      vi: "spricht = nói (sprechen, ngôi er). ein bisschen = một chút, đứng trước Französisch nên chỉ tiếng Pháp là “một chút”. Herr = ông/anh."
+    display_answer: Ông Klein nói tiếng Đức, tiếng Anh và một chút tiếng Pháp.

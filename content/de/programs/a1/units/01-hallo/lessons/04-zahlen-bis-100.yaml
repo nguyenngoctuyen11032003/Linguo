@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u01-zahlen-bis-100
+order_index: 4
+level: a1
+title:
+  vi: Số đến 100, tuổi, địa chỉ (Zahlen bis 100)
+objectives:
+  - vi: Nghe và nói các số từ 21 đến 100 (đơn vị trước, hàng chục sau).
+  - vi: Nói và hỏi tuổi bằng sein … Jahre alt.
+  - vi: Nói số nhà, mã bưu chính, số điện thoại; điền một mẫu đơn đơn giản.
+estimated_minutes: 14
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a1u01-w-fragen]
+items:
+  - item: de:item:a1u01-g-zahlen-bis-100
+  - item: de:item:a1u01-g-alter
+  - item: de:item:a1u01-zehnerzahlen
+  - item: de:item:a1u01-jahr
+  - item: de:item:a1u01-alt
+  - item: de:item:a1u01-jung
+  - item: de:item:a1u01-adresse
+  - item: de:item:a1u01-e-mail
+  - item: de:item:a1u01-formular
+  - item: de:item:a1u01-wohnort
+  - item: de:item:a1u01-hausnummer
+  - item: de:item:a1u01-postleitzahl
+  - item: de:item:a1u01-alter
+  - item: de:item:a1u01-nationalitaet
+  - item: de:item:a1u01-telefonnummer
+  - item: de:item:a1u01-geburtsort
+  - item: de:item:p0u1-g-buchstabieren
+    role: reuse
+  - item: de:item:p0u2-g-ig-endung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nghe đúng số nhà, tuổi, mã bưu chính, nói được “Tôi 25 tuổi” và điền được các ô cơ bản của một mẫu đơn tiếng Đức.
+  - type: explain
+    text:
+      vi: "Từ 21 đến 99, tiếng Đức đọc hàng đơn vị trước, rồi und, rồi hàng chục: 47 = sieben-und-vierzig (“bảy và bốn mươi”). Tiếng Việt đọc ngược lại (bốn mươi bảy), nên khi nghe hãy chờ hàng chục ở cuối rồi mới viết số."
+  - type: explain
+    text:
+      vi: "Hàng chục: zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert. Nhớ ba chỗ lạ: dreißig viết với ß; sechzig bỏ s của sechs; siebzig bỏ en của sieben. Số viết liền thành một từ, và 21 là einundzwanzig (eins mất s)."
+  - type: explain
+    text:
+      vi: "Nói tuổi dùng sein, không dùng haben: Ich bin 25 Jahre alt (hoặc ngắn: Ich bin 25). Hỏi: Wie alt bist du? (thân mật) / Wie alt sind Sie? (lịch sự)."
+  - type: explain
+    text:
+      vi: "Địa chỉ ở Đức: tên đường trước, số nhà sau (Gartenstraße 12); dòng dưới là mã bưu chính 5 số rồi tên thành phố (04109 Leipzig). Trên mẫu đơn (das Formular) hay gặp: Vorname, Familienname/Nachname, Alter, Adresse, Wohnort, Geburtsort, Telefonnummer, E-Mail."
+  - type: deep_explain
+    text:
+      vi: "Số điện thoại thường đọc từng chữ số (null, drei, vier, eins …) hoặc từng cặp (vierunddreißig); qua điện thoại người ta hay nói zwo thay zwei cho khỏi lẫn với drei. Mã bưu chính ở Áo và Thụy Sĩ chỉ có 4 số. Hỏi tuổi người mới quen ngoài đời có thể bị coi là tò mò, nhưng trong lớp học và trên mẫu đơn thì bình thường. alt dùng cho người (già) và vật (cũ); trái nghĩa cho người là jung, cho vật là neu."
+  - type: example
+    target: "Wie alt bist du? – Ich bin zweiundzwanzig. Und du? – Ich bin achtundzwanzig Jahre alt."
+    target_lang: de
+    translation:
+      vi: Bạn bao nhiêu tuổi? – Mình 22. Còn bạn? – Mình 28 tuổi.
+    note:
+      vi: Hai bạn trẻ xưng du. zweiundzwanzig = 2 + 20; có thể bỏ Jahre alt khi nói ngắn.
+  - type: example
+    target: "Wie alt sind Sie, Herr Wolf? – Ich bin siebenundsechzig Jahre alt."
+    target_lang: de
+    translation:
+      vi: Ông Wolf, ông bao nhiêu tuổi? – Tôi 67 tuổi.
+    note:
+      vi: Xưng Sie với người lớn tuổi. siebenundsechzig = 7 + 60 – nghe “sieben” trước nhưng viết số 6 trước.
+  - type: example
+    target: "Die Adresse ist Gartenstraße 12, 04109 Leipzig."
+    target_lang: de
+    translation:
+      vi: Địa chỉ là số 12 phố Gartenstraße, 04109 Leipzig.
+    note:
+      vi: Số nhà (die Hausnummer) đứng sau tên đường; mã bưu chính (die Postleitzahl) đứng trước tên thành phố.
+  - type: example
+    target: "Wohnort: Leipzig. Geburtsort: Hue. Nationalität: vietnamesisch."
+    target_lang: de
+    translation:
+      vi: "Nơi ở: Leipzig. Nơi sinh: Huế. Quốc tịch: Việt Nam."
+    note:
+      vi: Ba ô hay gặp trên mẫu đơn. Quốc tịch thường ghi bằng tính từ viết thường (vietnamesisch).
+  - type: example
+    target: "Wo wohnen Sie? – In Leipzig. – Wie schreibt man das? – L-E-I-P-Z-I-G."
+    target_lang: de
+    translation:
+      vi: Anh/chị sống ở đâu? – Ở Leipzig. – Viết thế nào ạ? – L-E-I-P-Z-I-G.
+    note:
+      vi: "Nhân viên ở quầy xưng Sie. Khi điền form, người ta hay hỏi Wie schreibt man das? và bạn đánh vần bằng tên chữ cái. Đuôi -ig trong Leipzig (cũng như zwanzig, dreißig) đọc như “ich”."
+  - type: common_mistake
+    wrong: Ich habe 25 Jahre.
+    right: Ich bin 25 Jahre alt.
+    target_lang: de
+    note:
+      vi: Không dịch “có 25 tuổi” bằng haben (như tiếng Pháp hay tiếng Tây Ban Nha). Tiếng Đức nói tuổi bằng sein + Jahre alt.
+  - type: common_mistake
+    wrong: vierzigsieben
+    right: siebenundvierzig
+    target_lang: de
+    note:
+      vi: Số 47 đọc hàng đơn vị trước – sieben und vierzig – và viết liền. Nghe siebenundvierzig mà ghi 74 là lỗi rất hay gặp.
+  - type: common_mistake
+    wrong: dreizig
+    right: dreißig
+    target_lang: de
+    note:
+      vi: Ba mươi viết với ß – dreißig – khác với mọi số chục khác (zwanzig, vierzig …).
+  - type: summary
+    points:
+      - vi: "21–99: đơn vị + und + chục, viết liền – 47 = siebenundvierzig."
+      - vi: "Chục: zwanzig, dreißig (ß), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert."
+      - vi: "Tuổi: Ich bin … Jahre alt. Hỏi: Wie alt bist du? / Wie alt sind Sie?"
+      - vi: "Địa chỉ Đức: Tên đường + số nhà, mã bưu chính (5 số) + thành phố."
+      - vi: "Mẫu đơn: Vorname, Nachname, Alter, Adresse, Wohnort, Geburtsort, Nationalität, Telefonnummer, E-Mail."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u01l4-listen-47
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u01-g-zahlen-bis-100
+    prompt:
+      audio_asset_id: null
+      fallback_text: siebenundvierzig
+      options:
+        - { id: q1a, text: "47", lang: vi }
+        - { id: q2b, text: "74", lang: vi }
+        - { id: q3c, text: "17", lang: vi }
+        - { id: q4d, text: "40", lang: vi }
+    answer:
+      correct_option_id: q1a
+    explanation:
+      vi: "sieben (7) đọc trước, vierzig (40) đọc sau – nhưng số viết là 47. Nghe thấy 7 trước rồi vội ghi 74 là lỗi phổ biến nhất."
+    display_answer: "47"
+
+  - key: de:exercise:a1u01l4-listen-alter-23
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u01-g-alter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich bin dreiundzwanzig Jahre alt.
+      options:
+        - { id: u7k, text: Tôi 23 tuổi., lang: vi }
+        - { id: u2m, text: Tôi 32 tuổi., lang: vi }
+        - { id: u9p, text: Tôi 33 tuổi., lang: vi }
+        - { id: u4r, text: Tôi 20 tuổi., lang: vi }
+    answer:
+      correct_option_id: u7k
+    explanation:
+      vi: "dreiundzwanzig = drei (3) + zwanzig (20) = 23. Ich bin … Jahre alt là cách nói tuổi."
+    display_answer: Tôi 23 tuổi.
+
+  - key: de:exercise:a1u01l4-listen-adresse
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-hausnummer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Adresse ist Gartenstraße einundachtzig.
+      options:
+        - { id: g5e, text: Gartenstraße 81, lang: de }
+        - { id: g8h, text: Gartenstraße 18, lang: de }
+        - { id: g1j, text: Gartenstraße 88, lang: de }
+        - { id: g3l, text: Gartenstraße 71, lang: de }
+    answer:
+      correct_option_id: g5e
+    explanation:
+      vi: "einundachtzig = ein (1) + achtzig (80) = 81. Số nhà đứng sau tên đường. achtzehn mới là 18, einundsiebzig là 71."
+    display_answer: Gartenstraße 81
+
+  - key: de:exercise:a1u01l4-mcq-68
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-zehnerzahlen
+    prompt:
+      stem: Số 68 viết bằng chữ tiếng Đức là gì?
+      stem_lang: vi
+      options:
+        - { id: n6a, text: achtundsechzig, lang: de }
+        - { id: n6b, text: sechsundachtzig, lang: de }
+        - { id: n6c, text: sechsundsechzig, lang: de }
+        - { id: n6d, text: achtundachtzig, lang: de }
+    answer:
+      correct_option_id: n6a
+    explanation:
+      vi: "68 = 8 + 60: acht (đơn vị) trước, und, rồi sechzig (hàng chục). sechsundachtzig là 86 – đúng kiểu đọc tiếng Việt nên rất dễ nhầm."
+    display_answer: achtundsechzig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u01l4-fill-wie-alt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-alter
+    prompt:
+      template: "Wie {{b1}} bist du? – Ich bin {{b2}} Jahre alt. (30)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [alt]
+        b2: [dreißig, "30"]
+    known_wrong:
+      - answer: dreizig
+        feedback_vi: Ba mươi viết với ß – dreißig, không phải dreizig.
+        error_tag: number_spelling
+      - answer: dreizehn
+        feedback_vi: dreizehn là 13. Ba mươi là dreißig.
+        error_tag: number_confusion
+      - answer: viel
+        feedback_vi: Hỏi tuổi luôn là Wie alt …? (bao nhiêu tuổi = “già thế nào”).
+        error_tag: question_word
+    explanation:
+      vi: "Hỏi tuổi: Wie alt bist du?. Trả lời: Ich bin dreißig Jahre alt – dreißig viết với ß."
+    display_answer: "Wie alt bist du? – Ich bin dreißig Jahre alt."
+
+  - key: de:exercise:a1u01l4-fill-zahlen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-zahlen-bis-100
+    prompt:
+      template: "67 = {{b1}} · 76 = {{b2}} · 90 = {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 16 }
+        - { id: b2, width_hint: 16 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [siebenundsechzig]
+        b2: [sechsundsiebzig]
+        b3: [neunzig]
+    known_wrong:
+      - answer: sechzigundsieben
+        feedback_vi: Tiếng Đức đọc đơn vị trước – 67 là siebenundsechzig.
+        error_tag: number_order
+      - answer: siebzigundsechs
+        feedback_vi: Tiếng Đức đọc đơn vị trước – 76 là sechsundsiebzig.
+        error_tag: number_order
+      - answer: siebenundsechszig
+        feedback_vi: Sáu mươi là sechzig – bỏ s của sechs.
+        error_tag: number_spelling
+      - answer: sechsundsiebenzig
+        feedback_vi: Bảy mươi là siebzig – bỏ en của sieben.
+        error_tag: number_spelling
+      - answer: neunzehn
+        feedback_vi: neunzehn là 19. Chín mươi là neunzig.
+        error_tag: number_confusion
+    explanation:
+      vi: "67 = sieben + und + sechzig; 76 = sechs + und + siebzig; 90 = neunzig. Nhớ sechzig và siebzig là dạng rút gọn."
+    display_answer: "67 = siebenundsechzig · 76 = sechsundsiebzig · 90 = neunzig"
+
+  - key: de:exercise:a1u01l4-tr-25-jahre
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-g-alter
+    prompt:
+      source_text: Tôi 25 tuổi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich bin 25 Jahre alt.
+        - Ich bin fünfundzwanzig Jahre alt.
+        - Ich bin 25.
+        - Ich bin fünfundzwanzig.
+    known_wrong:
+      - answer: Ich habe 25 Jahre.
+        feedback_vi: Tuổi nói bằng sein – Ich bin 25 Jahre alt, không dùng haben.
+        error_tag: haben_alter
+      - answer: Ich habe fünfundzwanzig Jahre.
+        feedback_vi: Tuổi nói bằng sein – Ich bin fünfundzwanzig Jahre alt, không dùng haben.
+        error_tag: haben_alter
+      - answer: Ich bin zweiundfünfzig Jahre alt.
+        feedback_vi: zweiundfünfzig là 52. 25 là fünfundzwanzig – đơn vị trước, chục sau.
+        error_tag: number_order
+      - answer: Ich bin zwanzigfünf Jahre alt.
+        feedback_vi: 25 đọc đơn vị trước và có und – fünfundzwanzig.
+        error_tag: number_order
+    explanation:
+      vi: "Nói tuổi: Ich bin + số + Jahre alt (hoặc chỉ Ich bin 25). 25 = fünf + und + zwanzig."
+    display_answer: Ich bin 25 Jahre alt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u01l4-mcq-wohnort
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-wohnort
+    prompt:
+      stem: "Bạn là Minh, sinh ở Huế, đang sống tại Gartenstraße 12, 04109 Leipzig. Trên mẫu đơn, ô “Wohnort” bạn điền gì?"
+      stem_lang: vi
+      options:
+        - { id: o1w, text: Leipzig, lang: de }
+        - { id: o2w, text: Hue, lang: de }
+        - { id: o3w, text: Gartenstraße 12, lang: de }
+        - { id: o4w, text: "04109", lang: de }
+    answer:
+      correct_option_id: o1w
+    explanation:
+      vi: "Wohnort là thành phố bạn đang sống – Leipzig. Hue là Geburtsort (nơi sinh), Gartenstraße 12 là tên đường và số nhà, 04109 là Postleitzahl."
+    display_answer: Leipzig
+
+  - key: de:exercise:a1u01l4-wb-wie-alt-sind-sie
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u01-alt
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi (xưng Sie): “Bà Schmidt, bà bao nhiêu tuổi?”"
+      tokens:
+        - { id: t-alt, text: alt }
+        - { id: t-sie, text: Sie }
+        - { id: t-schmidt, text: Schmidt }
+        - { id: t-wie, text: wie }
+        - { id: t-jahre, text: Jahre }
+        - { id: t-frau, text: Frau }
+        - { id: t-sind, text: sind }
+        - { id: t-bist, text: bist }
+    answer:
+      orders:
+        - [t-frau, t-schmidt, t-wie, t-alt, t-sind, t-sie]
+        - [t-wie, t-alt, t-sind, t-sie, t-frau, t-schmidt]
+    explanation:
+      vi: "Wie alt là cụm từ để hỏi (vị trí 1), sau đó động từ sind (Sie lịch sự) rồi Sie. Không dùng Jahre trong câu hỏi; bist là của du."
+    display_answer: Frau Schmidt, wie alt sind Sie?
+
+  - key: de:exercise:a1u01l4-tr-tom-54
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u01-zehnerzahlen
+    prompt:
+      source_text: Tom ist vierundfünfzig Jahre alt und wohnt in Köln.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tom 54 tuổi và sống ở Köln.
+        - Tom năm mươi tư tuổi và sống ở Köln.
+        - Tom năm mươi bốn tuổi và sống ở Köln.
+        - Tom 54 tuổi và đang sống ở Köln.
+        - Tom 54 tuổi, sống ở Köln.
+        - Tom 54 tuổi và sống ở Cologne.
+        - Tom 54 tuổi và ở Köln.
+        - Tom năm mươi tư tuổi, sống ở Köln.
+        - Tom năm nay 54 tuổi và sống ở Köln.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tom 45 tuổi và sống ở Köln.
+        feedback_vi: vierundfünfzig = 4 + 50 = 54. Tiếng Đức đọc đơn vị trước.
+        error_tag: number_order
+      - answer: Tom 44 tuổi và sống ở Köln.
+        feedback_vi: fünfzig là 50, nên vierundfünfzig là 54.
+        error_tag: number_confusion
+    explanation:
+      vi: "vierundfünfzig: vier (4) đọc trước, fünfzig (50) đọc sau → 54. ist … Jahre alt = … tuổi; wohnt in Köln = sống ở Köln."
+    display_answer: Tom 54 tuổi và sống ở Köln.

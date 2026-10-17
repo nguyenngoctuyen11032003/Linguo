@@ -1,0 +1,1284 @@
+# Học liệu unit A1U01 "Xin chào! Làm quen" (Hallo! Ich bin …), chương trình de:program:a1.
+# Danh từ ghi kèm mạo từ và số nhiều; IPA theo chuẩn Hochdeutsch (Đức).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: ich, du, Sie – sein ----------------
+  - key: de:item:a1u01-g-personalpronomen
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Personalpronomen (Nominativ): ich, du, er, sie, es, wir, ihr, sie / Sie"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Đại từ làm chủ ngữ: ich (tôi), du (bạn, thân mật), er (anh ấy/ông ấy), sie (cô ấy/bà ấy), es (nó), wir (chúng tôi/chúng ta), ihr (các bạn, thân mật), sie (họ), Sie (ông/bà/anh/chị, lịch sự). Tiếng Đức không xưng hô theo tuổi và quan hệ như anh/chị/em; bạn chỉ chọn giữa du và Sie. Đại từ ich viết thường, trừ khi đứng đầu câu."
+      examples:
+        - target: Das ist Paul. Er ist sehr nett.
+          translation:
+            vi: Đây là Paul. Anh ấy rất dễ mến.
+        - target: Lena und Tom sind Freunde. Sie sind sehr sympathisch.
+          translation:
+            vi: Lena và Tom là bạn bè. Họ rất dễ mến.
+      confusion:
+        vi: "sie (cô ấy) đi với ist; sie (họ) và Sie (lịch sự) đi với sind. Nhìn động từ và chữ hoa để phân biệt: Sie ist … = cô ấy (đầu câu), Sie sind … = họ hoặc ông/bà."
+
+  - key: de:item:a1u01-g-sein
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "sein: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "sein nghĩa là “là / thì / ở” và đổi dạng theo từng chủ ngữ. Tiếng Việt hay bỏ “là” (Tôi Minh, Tôi mệt), còn tiếng Đức không bao giờ bỏ sein. wir, sie (họ) và Sie đều dùng sind."
+      examples:
+        - target: Ich bin Lan, und du bist Tom.
+          translation:
+            vi: Mình là Lan, còn bạn là Tom.
+        - target: Ihr seid Kollegen.
+          translation:
+            vi: Các bạn là đồng nghiệp.
+      confusion:
+        vi: "seid (ihr seid – các bạn là) khác seit (từ khi). Hai từ đọc giống nhau, chỉ khác chữ cuối."
+
+  - key: de:item:a1u01-g-du-sie
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "du / ihr / Sie: informell und formell"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "du (một người) và ihr (nhiều người) dùng với bạn bè, gia đình, trẻ em; Sie dùng với người lạ, người lớn tuổi, ở cơ quan và chỗ làm, cho một hay nhiều người. Sie lịch sự luôn viết hoa và chia động từ như sie (họ): Sie sind. Khi chưa chắc, hãy dùng Sie cho tới khi người kia mời bạn xưng du."
+      examples:
+        - target: "Guten Tag, Frau Schmidt! Wie geht es Ihnen?"
+          translation:
+            vi: Chào bà Schmidt! Bà có khỏe không?
+        - target: "Hallo, Tom! Wie geht's?"
+          translation:
+            vi: Chào Tom! Khỏe không?
+      confusion:
+        vi: Với Sie, người Đức gọi Herr/Frau + họ (Frau Schmidt); với du, gọi tên riêng (Tom). Không ghép Frau với tên riêng như “Frau Lan”.
+
+  - key: de:item:a1u01-vorname
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Vorname, -n
+      ipa: /ˈfoːɐ̯ˌnaːmə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tên (tên gọi, không phải họ)
+      examples:
+        - target: Der Vorname ist Minh, M-I-N-H.
+          translation:
+            vi: Tên là Minh, M-I-N-H.
+      confusion:
+        vi: "Với tên người Việt, Vorname là tên gọi (Minh), còn họ (Nguyen) là Familienname. Biến cách như Name: den Vornamen, dem Vornamen."
+
+  - key: de:item:a1u01-familienname
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Familienname, -n
+      ipa: /faˈmiːli̯ənˌnaːmə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: họ
+      examples:
+        - target: Der Familienname ist Nguyen.
+          translation:
+            vi: Họ là Nguyễn.
+      confusion:
+        vi: "Familienname và Nachname cùng nghĩa là họ. Trên form tiếng Đức họ có ô riêng; đừng viết cả họ tên vào ô Vorname. Biến cách: den Familiennamen."
+
+  - key: de:item:a1u01-freund
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Freund, -e
+      ipa: /fʁɔʏ̯nt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn (nam); cũng có nghĩa là bạn trai, tùy ngữ cảnh
+      examples:
+        - target: Tom und Paul sind Freunde.
+          translation:
+            vi: Tom và Paul là bạn bè.
+      pronunciation_note:
+        vi: eu đọc gần như “oi”; d cuối từ đọc thành t – /fʁɔʏ̯nt/.
+      confusion:
+        vi: "Freund vừa là “bạn” vừa là “bạn trai”; ngữ cảnh sẽ cho biết nghĩa nào. Số nhiều Freunde dùng cho nhóm bạn nam hoặc nhóm có cả nam lẫn nữ."
+
+  - key: de:item:a1u01-freundin
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Freundin, -nen
+      ipa: /ˈfʁɔʏ̯ndɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn (nữ); cũng có nghĩa là bạn gái, tùy ngữ cảnh
+      examples:
+        - target: Lena und Mia sind Freundinnen.
+          translation:
+            vi: Lena và Mia là bạn bè.
+      confusion:
+        vi: Đuôi -in tạo dạng giống cái (der Freund → die Freundin); số nhiều gấp đôi n thành -innen.
+
+  - key: de:item:a1u01-kollege
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Kollege, -n
+      ipa: /kɔˈleːɡə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng nghiệp (nam)
+      examples:
+        - target: Herr Becker und Herr Wolf sind Kollegen.
+          translation:
+            vi: Ông Becker và ông Wolf là đồng nghiệp.
+      pronunciation_note:
+        vi: Trọng âm ở âm tiết giữa – ko-LE-ge, e dài.
+      confusion:
+        vi: "Danh từ này đổi đuôi khi làm tân ngữ: den Kollegen, dem Kollegen (sẽ học sau). Giống cái là die Kollegin."
+
+  - key: de:item:a1u01-kollegin
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Kollegin, -nen
+      ipa: /kɔˈleːɡɪn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng nghiệp (nữ)
+      examples:
+        - target: Frau Weber und Frau Klein sind Kolleginnen.
+          translation:
+            vi: Bà Weber và bà Klein là đồng nghiệp.
+
+  - key: de:item:a1u01-nett
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: nett
+      ipa: /nɛt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tử tế, dễ thương, dễ mến
+      examples:
+        - target: Frau Weber ist sehr nett.
+          translation:
+            vi: Bà Weber rất tử tế.
+      confusion:
+        vi: Đừng nhầm với tiếng Anh “net”. nett là lời khen thông dụng nhất cho người mới quen.
+
+  - key: de:item:a1u01-wie-geht-es-ihnen
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: Wie geht es Ihnen?
+      ipa: /viː ˈɡeːt ɛs ˈiːnən/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Ông/bà/anh/chị có khỏe không? (lịch sự, dùng với Sie)
+      examples:
+        - target: "Guten Tag, Herr Becker! Wie geht es Ihnen? – Danke, gut. Und Ihnen?"
+          translation:
+            vi: Chào ông Becker! Ông có khỏe không? – Cảm ơn, tôi khỏe. Còn ông?
+      confusion:
+        vi: "Học nguyên cụm. Thân mật thì nói Wie geht's? hoặc Wie geht es dir?; với người xưng Sie thì luôn là Ihnen (viết hoa)."
+
+  - key: de:item:a1u01-es-geht
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: Es geht.
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Tàm tạm, cũng được (trả lời câu hỏi thăm sức khỏe)
+      examples:
+        - target: "Wie geht es Ihnen? – Ach, es geht."
+          translation:
+            vi: Bà có khỏe không? – Ừm, cũng tàm tạm.
+      confusion:
+        vi: "Es geht không có nghĩa là “nó đi”. Thang trả lời: super → gut → es geht → schlecht."
+
+  - key: de:item:a1u01-prima
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: prima
+      ipa: /ˈpʁiːma/
+      pos: tính từ
+    back:
+      meaning:
+        vi: rất tốt, tuyệt (khẩu ngữ)
+      examples:
+        - target: "Wie geht es Ihnen? – Prima, danke!"
+          translation:
+            vi: Ông có khỏe không? – Rất khỏe, cảm ơn!
+      confusion:
+        vi: prima không bao giờ đổi đuôi; dùng trong lời nói hằng ngày, không dùng trong thư trang trọng.
+
+  - key: de:item:a1u01-sympathisch
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sympathisch
+      ipa: /zʏmˈpaːtɪʃ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ mến, gây cảm tình
+      examples:
+        - target: Du bist sehr sympathisch!
+          translation:
+            vi: Bạn dễ mến lắm!
+      pronunciation_note:
+        vi: y đọc như ü (môi tròn, lưỡi như i); trọng âm ở -pa-.
+      confusion:
+        vi: Khác tiếng Anh “sympathetic” (thông cảm). sympathisch chỉ nói ai đó dễ mến.
+
+  - key: de:item:a1u01-super
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: super
+      ipa: /ˈzuːpɐ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tuyệt, rất tốt (khẩu ngữ)
+      examples:
+        - target: "Wie geht's? – Super, danke!"
+          translation:
+            vi: Khỏe không? – Tuyệt, cảm ơn!
+      pronunciation_note:
+        vi: s đầu từ đọc như “d” nhẹ giọng Bắc – /ˈzuːpɐ/, không đọc “xu-pơ”.
+
+  - key: de:item:a1u01-schlecht
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: schlecht
+      ipa: /ʃlɛçt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tệ, kém, không khỏe
+      examples:
+        - target: "Wie geht's? – Schlecht. Ich bin sehr müde."
+          translation:
+            vi: Khỏe không? – Tệ lắm. Mình mệt quá.
+      pronunciation_note:
+        vi: ch sau e là âm “h” xì nhẹ (ich-Laut), không phải “kh”.
+
+  # ---------------- Bài 2: Woher kommst du? – chia động từ ----------------
+  - key: de:item:a1u01-g-praesens
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Präsens: ich komme, du kommst, er/sie/es kommt, wir kommen, ihr kommt, sie/Sie kommen"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ đổi đuôi theo chủ ngữ: gốc (komm-) + -e, -st, -t, -en, -t, -en. Gốc tận cùng bằng -t/-d thêm -e- trước -st và -t (du arbeitest, er arbeitet); gốc tận cùng bằng -s/-ß/-z thì ngôi du chỉ thêm -t (du heißt). Tiếng Việt không chia động từ, nên đây là chỗ bạn cần luyện nhiều nhất."
+      examples:
+        - target: "Woher kommst du? – Ich komme aus Vietnam."
+          translation:
+            vi: Bạn đến từ đâu? – Mình đến từ Việt Nam.
+        - target: Wir wohnen in Berlin, und Anna wohnt in Wien.
+          translation:
+            vi: Chúng tôi sống ở Berlin, còn Anna sống ở Vienna.
+      confusion:
+        vi: "Ngôi wir và sie/Sie giống hệt nguyên thể (wir kommen, Sie kommen); ngôi er/sie/es và ihr cùng đuôi -t (er kommt, ihr kommt)."
+
+  - key: de:item:a1u01-g-laender-artikel
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Ländernamen: aus Deutschland – aber: aus der Schweiz, aus der Türkei, aus den USA"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Phần lớn tên nước không có mạo từ: aus Vietnam, in Deutschland. Một số nước luôn đi kèm mạo từ: die Schweiz, die Türkei, die USA (số nhiều), der Iran. Sau aus và in, mạo từ đổi dạng – aus der Schweiz, in der Türkei, aus den USA, aus dem Iran – nên hãy học thuộc cả cụm."
+      examples:
+        - target: Lukas kommt aus der Schweiz.
+          translation:
+            vi: Lukas đến từ Thụy Sĩ.
+        - target: Sarah wohnt in den USA.
+          translation:
+            vi: Sarah sống ở Mỹ.
+      confusion:
+        vi: “aus Schweiz” là sai – Schweiz không bao giờ đứng một mình. Lý do đổi die → der sẽ học ở bài về Dativ; bây giờ chỉ cần nhớ cụm.
+
+  - key: de:item:a1u01-kommen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kommen
+      ipa: /ˈkɔmən/
+      pos: động từ
+    back:
+      meaning:
+        vi: đến; kommen aus … = đến từ …, quê ở …
+      examples:
+        - target: "Woher kommst du? – Ich komme aus Hanoi."
+          translation:
+            vi: Bạn đến từ đâu? – Mình đến từ Hà Nội.
+      confusion:
+        vi: "Nói quê quán dùng kommen aus, không dùng von: Ich komme aus Vietnam."
+
+  - key: de:item:a1u01-wohnen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: wohnen
+      ipa: /ˈvoːnən/
+      pos: động từ
+    back:
+      meaning:
+        vi: ở, sống (tại một nơi, một địa chỉ)
+      examples:
+        - target: Wo wohnst du? – Ich wohne in Leipzig.
+          translation:
+            vi: Bạn sống ở đâu? – Mình sống ở Leipzig.
+      pronunciation_note:
+        vi: w đọc như “v” tiếng Việt; h sau o không đọc, chỉ làm o dài.
+      confusion:
+        vi: wohnen nói về chỗ ở (thành phố, địa chỉ); leben rộng hơn – sống ở một nước, sống một cuộc đời.
+
+  - key: de:item:a1u01-land
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Land, ¨-er
+      ipa: /lant/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đất nước, quốc gia; (cũng có nghĩa) nông thôn
+      examples:
+        - target: Österreich und die Schweiz sind Länder in Europa.
+          translation:
+            vi: Áo và Thụy Sĩ là các nước ở châu Âu.
+      confusion:
+        vi: "Số nhiều có biến âm: das Land → die Länder. auf dem Land = ở nông thôn."
+
+  - key: de:item:a1u01-deutschland
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Deutschland
+      ipa: /ˈdɔʏ̯t͡ʃlant/
+      pos: tên nước
+    back:
+      meaning:
+        vi: nước Đức
+      examples:
+        - target: Ich wohne jetzt in Deutschland.
+          translation:
+            vi: Bây giờ tôi sống ở Đức.
+      pronunciation_note:
+        vi: eu đọc gần như “oi”, tsch như “ch” tiếng Việt bật mạnh – “Đoi-ch-lant”.
+
+  - key: de:item:a1u01-oesterreich
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Österreich
+      ipa: /ˈøːstəʁaɪ̯ç/
+      pos: tên nước
+    back:
+      meaning:
+        vi: nước Áo
+      examples:
+        - target: Wien ist in Österreich.
+          translation:
+            vi: Vienna ở nước Áo.
+      pronunciation_note:
+        vi: ö là “ê” nhưng tròn môi; st giữa từ đọc s-t bình thường (không phải “scht”).
+
+  - key: de:item:a1u01-schweiz
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Schweiz (Sg.)
+      ipa: /ʃvaɪ̯t͡s/
+      pos: tên nước
+    back:
+      meaning:
+        vi: nước Thụy Sĩ
+      examples:
+        - target: Lukas kommt aus der Schweiz.
+          translation:
+            vi: Lukas đến từ Thụy Sĩ.
+        - target: Wir wohnen in der Schweiz.
+          translation:
+            vi: Chúng tôi sống ở Thụy Sĩ.
+      confusion:
+        vi: Luôn có mạo từ – die Schweiz, aus der Schweiz, in der Schweiz.
+
+  - key: de:item:a1u01-vietnam
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Vietnam
+      ipa: /vi̯ɛtˈnam/
+      pos: tên nước
+    back:
+      meaning:
+        vi: Việt Nam
+      examples:
+        - target: Ich komme aus Vietnam, aus Hanoi.
+          translation:
+            vi: Tôi đến từ Việt Nam, từ Hà Nội.
+      pronunciation_note:
+        vi: V trong Vietnam đọc như “v” (không phải “ph” như trong Vater).
+
+  - key: de:item:a1u01-aus
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: aus
+      ipa: /aʊ̯s/
+      pos: giới từ
+    back:
+      meaning:
+        vi: từ (nơi xuất phát, quê quán)
+      examples:
+        - target: Anna kommt aus Deutschland.
+          translation:
+            vi: Anna đến từ Đức.
+      confusion:
+        vi: "aus = từ bên trong một nước, thành phố đi ra: aus Vietnam, aus Hanoi. Không dùng von để nói quê quán."
+
+  - key: de:item:a1u01-in
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: in
+      ipa: /ɪn/
+      pos: giới từ
+    back:
+      meaning:
+        vi: ở, trong (nơi chốn)
+      examples:
+        - target: Minh wohnt in Leipzig.
+          translation:
+            vi: Minh sống ở Leipzig.
+      confusion:
+        vi: "Ở thành phố, ở nước: in Berlin, in Österreich; nước có mạo từ: in der Schweiz, in den USA."
+
+  - key: de:item:a1u01-heissen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: heißen (du heißt)
+      ipa: /ˈhaɪ̯sn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: tên là, được gọi là
+      examples:
+        - target: Wie heißt du? – Ich heiße Linh.
+          translation:
+            vi: Bạn tên là gì? – Mình tên là Linh.
+      pronunciation_note:
+        vi: ei đọc như “ai”; ß là âm “x” không rung.
+      confusion:
+        vi: "Gốc heiß- đã tận cùng bằng ß nên ngôi du chỉ thêm -t: du heißt (không phải heißst). Hỏi tên dùng Wie, không dùng Was."
+
+  - key: de:item:a1u01-leben
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: leben
+      ipa: /ˈleːbn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: sống
+      examples:
+        - target: Wir leben in Deutschland.
+          translation:
+            vi: Chúng tôi sống ở Đức.
+      confusion:
+        vi: Nói chỗ ở cụ thể (thành phố, địa chỉ) người Đức hay dùng wohnen; leben dùng cho nước, nơi sống lâu dài hoặc nghĩa “sống” nói chung.
+
+  - key: de:item:a1u01-hauptstadt
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Hauptstadt, ¨-e
+      ipa: /ˈhaʊ̯ptˌʃtat/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thủ đô
+      examples:
+        - target: Hanoi ist die Hauptstadt von Vietnam.
+          translation:
+            vi: Hà Nội là thủ đô của Việt Nam.
+        - target: Berlin und Wien sind Hauptstädte.
+          translation:
+            vi: Berlin và Vienna là các thủ đô.
+      pronunciation_note:
+        vi: Trọng âm ở Haupt-; st của Stadt đọc “scht”, dt cuối từ đọc t.
+      confusion:
+        vi: Từ ghép Haupt (chính) + die Stadt (thành phố), nên giống theo phần cuối là die.
+
+  - key: de:item:a1u01-tuerkei
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Türkei (Sg.)
+      ipa: /tʏʁˈkaɪ̯/
+      pos: tên nước
+    back:
+      meaning:
+        vi: Thổ Nhĩ Kỳ
+      examples:
+        - target: Mehmet kommt aus der Türkei.
+          translation:
+            vi: Mehmet đến từ Thổ Nhĩ Kỳ.
+      confusion:
+        vi: Luôn có mạo từ – aus der Türkei, in der Türkei.
+
+  - key: de:item:a1u01-usa
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die USA (Pl.)
+      ipa: /uː ʔɛs ˈʔaː/
+      pos: tên nước
+    back:
+      meaning:
+        vi: nước Mỹ, Hoa Kỳ
+      examples:
+        - target: Sarah kommt aus den USA.
+          translation:
+            vi: Sarah đến từ Mỹ.
+      confusion:
+        vi: die USA là số nhiều (các bang), nên sau aus/in là den USA.
+
+  - key: de:item:a1u01-frankreich
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Frankreich
+      ipa: /ˈfʁaŋkʁaɪ̯ç/
+      pos: tên nước
+    back:
+      meaning:
+        vi: nước Pháp
+      examples:
+        - target: Paris ist in Frankreich.
+          translation:
+            vi: Paris ở nước Pháp.
+
+  # ---------------- Bài 3: W-Fragen, Ja/Nein-Fragen, V2 ----------------
+  - key: de:item:a1u01-g-w-fragen
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "W-Fragen: Wie heißt du? Woher kommst du? Wo wohnst du?"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Từ để hỏi (wer, wie, wo, woher, was) đứng đầu câu, động từ đã chia đứng ngay sau ở vị trí 2, rồi đến chủ ngữ. Tiếng Việt thường để từ để hỏi ở cuối (Bạn sống ở đâu?), tiếng Đức đưa nó lên đầu. Giọng hạ xuống ở cuối câu hỏi W-."
+      examples:
+        - target: Wo wohnen Sie?
+          translation:
+            vi: Ông/bà sống ở đâu?
+        - target: Was lernst du?
+          translation:
+            vi: Bạn học gì?
+
+  - key: de:item:a1u01-g-ja-nein-frage
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Ja/Nein-Fragen: Sprichst du Deutsch? – Ja, ein bisschen."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Câu hỏi có/không đưa động từ đã chia lên đầu câu (vị trí 1), chủ ngữ đứng ngay sau. Tiếng Việt thêm “có … không?”, tiếng Đức chỉ đảo động từ lên trước và lên giọng ở cuối câu. Trả lời bằng Ja hoặc Nein."
+      examples:
+        - target: "Kommen Sie aus Österreich? – Nein, aus der Schweiz."
+          translation:
+            vi: Ông có phải người Áo không? – Không, tôi đến từ Thụy Sĩ.
+        - target: "Lernst du Englisch? – Ja."
+          translation:
+            vi: Bạn có học tiếng Anh không? – Có.
+
+  - key: de:item:a1u01-g-v2
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Verb auf Position 2: Ich lerne heute Deutsch. Heute lerne ich Deutsch."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Trong câu kể, động từ đã chia luôn ở vị trí 2. Nếu một thành phần khác (heute, jetzt, in Berlin …) đứng đầu câu, chủ ngữ phải lùi ra sau động từ. “Heute ich lerne …” là lỗi người Việt hay mắc nhất."
+      examples:
+        - target: Heute lerne ich Deutsch.
+          translation:
+            vi: Hôm nay tôi học tiếng Đức.
+        - target: Jetzt wohnt Minh in Berlin.
+          translation:
+            vi: Bây giờ Minh sống ở Berlin.
+      confusion:
+        vi: Vị trí 2 tính theo thành phần câu, không theo số từ – “in Berlin” là một thành phần, nên “In Berlin wohne ich.” vẫn đúng.
+
+  - key: de:item:a1u01-sprechen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sprechen (du sprichst)
+      ipa: /ˈʃpʁɛçn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: nói (một ngôn ngữ), nói chuyện
+      examples:
+        - target: "Sprichst du Deutsch? – Ja, ein bisschen."
+          translation:
+            vi: Bạn có nói tiếng Đức không? – Có, một chút.
+        - target: Frau Klein spricht Englisch und Französisch.
+          translation:
+            vi: Bà Klein nói tiếng Anh và tiếng Pháp.
+      pronunciation_note:
+        vi: sp đầu từ đọc “schp”; ch sau e là âm “h” xì nhẹ.
+      confusion:
+        vi: "Ngôi du và er/sie/es đổi e → i: du sprichst, er spricht; các ngôi khác giữ e (ich spreche, wir sprechen)."
+
+  - key: de:item:a1u01-lernen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: lernen
+      ipa: /ˈlɛʁnən/
+      pos: động từ
+    back:
+      meaning:
+        vi: học
+      examples:
+        - target: Ich lerne Deutsch.
+          translation:
+            vi: Tôi học tiếng Đức.
+
+  - key: de:item:a1u01-sprache
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Sprache, -n
+      ipa: /ˈʃpʁaːxə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngôn ngữ, tiếng
+      examples:
+        - target: Ich spreche drei Sprachen.
+          translation:
+            vi: Tôi nói được ba thứ tiếng.
+      pronunciation_note:
+        vi: ch sau a là âm “kh” tiếng Việt.
+
+  - key: de:item:a1u01-deutsch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Deutsch
+      ipa: /dɔʏ̯t͡ʃ/
+      pos: tên ngôn ngữ
+    back:
+      meaning:
+        vi: tiếng Đức
+      examples:
+        - target: Wir lernen Deutsch.
+          translation:
+            vi: Chúng tôi học tiếng Đức.
+      confusion:
+        vi: Tên ngôn ngữ sau sprechen/lernen viết hoa (Ich lerne Deutsch); tính từ “thuộc về Đức” viết thường (deutsch).
+
+  - key: de:item:a1u01-englisch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Englisch
+      ipa: /ˈɛŋlɪʃ/
+      pos: tên ngôn ngữ
+    back:
+      meaning:
+        vi: tiếng Anh
+      examples:
+        - target: Sprechen Sie Englisch?
+          translation:
+            vi: Ông/bà có nói tiếng Anh không?
+
+  - key: de:item:a1u01-vietnamesisch
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Vietnamesisch
+      ipa: /vi̯ɛtnaˈmeːzɪʃ/
+      pos: tên ngôn ngữ
+    back:
+      meaning:
+        vi: tiếng Việt
+      examples:
+        - target: Tom lernt Vietnamesisch.
+          translation:
+            vi: Tom học tiếng Việt.
+      pronunciation_note:
+        vi: Trọng âm ở -me-; s giữa hai nguyên âm đọc như “d” nhẹ giọng Bắc.
+
+  - key: de:item:a1u01-wer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: wer
+      ipa: /veːɐ̯/
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: ai
+      examples:
+        - target: Wer ist das? – Das ist Frau Weber.
+          translation:
+            vi: Ai đây? – Đây là bà Weber.
+      confusion:
+        vi: wer (ai) đọc giống tiếng Anh “where” nhưng nghĩa khác hẳn; “ở đâu” là wo.
+
+  - key: de:item:a1u01-wo
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: wo
+      ipa: /voː/
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: ở đâu
+      examples:
+        - target: Wo wohnst du?
+          translation:
+            vi: Bạn sống ở đâu?
+      confusion:
+        vi: wo hỏi nơi đang ở; woher hỏi nơi xuất phát (từ đâu đến).
+
+  - key: de:item:a1u01-woher
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: woher
+      ipa: /voˈheːɐ̯/
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: từ đâu
+      examples:
+        - target: Woher kommen Sie?
+          translation:
+            vi: Ông/bà đến từ đâu?
+      confusion:
+        vi: Hỏi bằng woher thì trả lời bằng aus – Woher kommst du? – Aus Vietnam.
+
+  - key: de:item:a1u01-was
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: was
+      ipa: /vas/
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: cái gì, gì
+      examples:
+        - target: Was lernst du? – Deutsch.
+          translation:
+            vi: Bạn học gì? – Tiếng Đức.
+      confusion:
+        vi: "“Bạn tên là gì?” không dịch bằng was: phải nói Wie heißt du?"
+
+  - key: de:item:a1u01-wie
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: wie
+      ipa: /viː/
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: như thế nào, ra sao (hỏi tên, tuổi, sức khỏe)
+      examples:
+        - target: Wie heißen Sie?
+          translation:
+            vi: Ông/bà tên là gì?
+        - target: Wie alt bist du?
+          translation:
+            vi: Bạn bao nhiêu tuổi?
+      pronunciation_note:
+        vi: ie đọc là “i” dài; w đọc như “v” – /viː/.
+
+  - key: de:item:a1u01-ein-bisschen
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary, speaking]
+    front:
+      text: ein bisschen
+      ipa: /aɪ̯n ˈbɪsçən/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: một chút, một ít
+      examples:
+        - target: Ich spreche ein bisschen Deutsch.
+          translation:
+            vi: Tôi nói được một chút tiếng Đức.
+      confusion:
+        vi: Viết bisschen với ss (chính tả mới), không viết bißchen.
+
+  - key: de:item:a1u01-franzoesisch
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Französisch
+      ipa: /fʁanˈt͡søːzɪʃ/
+      pos: tên ngôn ngữ
+    back:
+      meaning:
+        vi: tiếng Pháp
+      examples:
+        - target: Frau Klein spricht Französisch.
+          translation:
+            vi: Bà Klein nói tiếng Pháp.
+      pronunciation_note:
+        vi: z đọc “ts”; ö là “ê” tròn môi; trọng âm ở -zö-.
+
+  # ---------------- Bài 4: số đến 100, tuổi, địa chỉ ----------------
+  - key: de:item:a1u01-g-zahlen-bis-100
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Zahlen 21–100: einundzwanzig, zweiundzwanzig … neunundneunzig, hundert"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Từ 21 đến 99, tiếng Đức đọc hàng đơn vị trước, rồi und, rồi hàng chục: 47 = siebenundvierzig (“bảy và bốn mươi”) – ngược với tiếng Việt. Hàng chục: zwanzig, dreißig (với ß), vierzig, fünfzig, sechzig (không có -s), siebzig (không có -en), achtzig, neunzig, hundert. Viết liền thành một từ; 21 là einundzwanzig (eins mất -s)."
+      examples:
+        - target: Die Hausnummer ist siebenundvierzig.
+          translation:
+            vi: Số nhà là 47.
+        - target: Ich bin dreiunddreißig Jahre alt.
+          translation:
+            vi: Tôi 33 tuổi.
+      confusion:
+        vi: "Khi nghe, hãy chờ đến hàng chục ở cuối rồi mới viết: vierundsiebzig = 74, siebenundvierzig = 47."
+
+  - key: de:item:a1u01-g-alter
+    type: grammar_point
+    level: a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Alter: Ich bin … Jahre alt. Wie alt bist du? Wie alt sind Sie?"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Nói tuổi dùng sein + số + Jahre alt: Ich bin 25 Jahre alt (nói ngắn: Ich bin 25). Không dùng haben như khi dịch “có 25 tuổi”. Hỏi tuổi: Wie alt bist du? (thân mật) / Wie alt sind Sie? (lịch sự)."
+      examples:
+        - target: "Wie alt bist du? – Ich bin zwanzig."
+          translation:
+            vi: Bạn bao nhiêu tuổi? – Mình hai mươi.
+        - target: Herr Becker ist sechzig Jahre alt.
+          translation:
+            vi: Ông Becker 60 tuổi.
+      confusion:
+        vi: Hỏi tuổi người lạ, người lớn tuổi có thể bị coi là tò mò; trong lớp học và trên form thì hoàn toàn bình thường.
+
+  - key: de:item:a1u01-zehnerzahlen
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Zehnerzahlen: zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert"
+      pos: cụm từ
+    back:
+      meaning:
+        vi: các số chục từ 20 đến 100
+      examples:
+        - target: Anna ist zwanzig, und Tom ist dreißig.
+          translation:
+            vi: Anna hai mươi tuổi, còn Tom ba mươi.
+        - target: Herr Wolf ist siebzig Jahre alt.
+          translation:
+            vi: Ông Wolf 70 tuổi.
+      pronunciation_note:
+        vi: Đuôi -zig đọc gần như “tsích” nhẹ, không bật “k” ở cuối (/t͡sɪç/); dreißig có ß chứ không có z.
+      confusion:
+        vi: "Ba số bất quy tắc: dreißig (không phải dreizig), sechzig (không phải sechszig), siebzig (không phải siebenzig)."
+
+  - key: de:item:a1u01-jahr
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Jahr, -e
+      ipa: /jaːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: năm
+      examples:
+        - target: Ich bin zwanzig Jahre alt.
+          translation:
+            vi: Tôi hai mươi tuổi.
+      pronunciation_note:
+        vi: j đọc như “d” trong tiếng Việt miền Nam (/j/); r cuối từ gần như “a” nhẹ.
+
+  - key: de:item:a1u01-alt
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: alt
+      ipa: /alt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: già; cũ; (… tuổi)
+      examples:
+        - target: Wie alt sind Sie?
+          translation:
+            vi: Ông/bà bao nhiêu tuổi?
+      confusion:
+        vi: "alt dùng cả cho người (già) lẫn vật (cũ); trái nghĩa với người là jung, với vật là neu."
+
+  - key: de:item:a1u01-jung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: jung
+      ipa: /jʊŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: trẻ
+      examples:
+        - target: Sie ist sehr jung.
+          translation:
+            vi: Cô ấy rất trẻ.
+      confusion:
+        vi: jung chỉ dùng cho người, con vật; đồ vật mới là neu.
+
+  - key: de:item:a1u01-adresse
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Adresse, -n
+      ipa: /aˈdʁɛsə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: địa chỉ
+      examples:
+        - target: Die Adresse ist Gartenstraße 12, 04109 Leipzig.
+          translation:
+            vi: Địa chỉ là số 12 phố Gartenstraße, 04109 Leipzig.
+      confusion:
+        vi: Ở Đức số nhà đứng sau tên đường (Gartenstraße 12); mã bưu chính 5 số đứng trước tên thành phố.
+
+  - key: de:item:a1u01-e-mail
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die E-Mail, -s
+      ipa: /ˈiːmeɪ̯l/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư điện tử, email
+      examples:
+        - target: Danke für die E-Mail!
+          translation:
+            vi: Cảm ơn bạn vì email!
+      confusion:
+        vi: "die E-Mail là bức thư; địa chỉ email là die E-Mail-Adresse. Ký tự @ đọc là “ät”."
+
+  - key: de:item:a1u01-formular
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Formular, -e
+      ipa: /fɔʁmuˈlaːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẫu đơn, tờ khai
+      examples:
+        - target: Das Formular ist hier.
+          translation:
+            vi: Mẫu đơn ở đây.
+      pronunciation_note:
+        vi: Trọng âm ở âm cuối -lar.
+
+  - key: de:item:a1u01-wohnort
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Wohnort, -e
+      ipa: /ˈvoːnˌʔɔʁt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nơi ở (thành phố đang sống)
+      examples:
+        - target: Der Wohnort ist Leipzig.
+          translation:
+            vi: Nơi ở là Leipzig.
+      confusion:
+        vi: Từ ghép wohnen + der Ort; giống theo phần cuối (der Ort → der Wohnort). Wohnort là nơi bạn đang ở, không phải quê.
+
+  - key: de:item:a1u01-hausnummer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Hausnummer, -n
+      ipa: /ˈhaʊ̯sˌnʊmɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: số nhà
+      examples:
+        - target: Die Hausnummer ist vierundachtzig.
+          translation:
+            vi: Số nhà là 84.
+
+  - key: de:item:a1u01-postleitzahl
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Postleitzahl, -en
+      ipa: /ˈpɔstlaɪ̯tˌt͡saːl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mã bưu chính
+      examples:
+        - target: Die Postleitzahl ist 10115.
+          translation:
+            vi: Mã bưu chính là 10115.
+      confusion:
+        vi: Ở Đức mã bưu chính có 5 chữ số, ở Áo và Thụy Sĩ có 4 chữ số; viết tắt là PLZ.
+
+  - key: de:item:a1u01-alter
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Alter (Sg.)
+      ipa: /ˈaltɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuổi (ô “tuổi” trên mẫu đơn)
+      examples:
+        - target: "Name: Linh Tran, Alter: 25 Jahre"
+          translation:
+            vi: "Tên: Trần Linh, tuổi: 25"
+      confusion:
+        vi: das Alter là danh từ (tuổi); alt là tính từ (Ich bin 25 Jahre alt).
+
+  - key: de:item:a1u01-nationalitaet
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Nationalität, -en
+      ipa: /nat͡si̯onaliˈtɛːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quốc tịch (ô trên mẫu đơn)
+      examples:
+        - target: "Nationalität: vietnamesisch"
+          translation:
+            vi: "Quốc tịch: Việt Nam"
+      pronunciation_note:
+        vi: ti trước nguyên âm đọc “tsi”; trọng âm ở âm cuối -tät.
+      confusion:
+        vi: Trên form, quốc tịch thường ghi bằng tính từ viết thường (vietnamesisch, deutsch); tên nước là Vietnam, Deutschland.
+
+  - key: de:item:a1u01-telefonnummer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Telefonnummer, -n
+      ipa: /teleˈfoːnˌnʊmɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: số điện thoại
+      examples:
+        - target: Die Telefonnummer ist 0341 225870.
+          translation:
+            vi: Số điện thoại là 0341 225870.
+      confusion:
+        vi: Số điện thoại thường đọc từng chữ số hoặc từng cặp (zweiundzwanzig, achtundfünfzig …).
+
+  - key: de:item:a1u01-geburtsort
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Geburtsort, -e
+      ipa: /ɡəˈbuːɐ̯t͡sˌʔɔʁt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nơi sinh
+      examples:
+        - target: Der Geburtsort ist Hue.
+          translation:
+            vi: Nơi sinh là Huế.
+      confusion:
+        vi: Geburtsort (nơi sinh) khác Wohnort (nơi đang ở); s ở giữa là âm nối của từ ghép.
