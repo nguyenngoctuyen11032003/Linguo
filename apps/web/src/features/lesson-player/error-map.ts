@@ -25,6 +25,8 @@ const LESSON_MESSAGES: Record<LessonErrorCode, string> = {
 
 const MESSAGES: Record<string, string> = {
   ...LESSON_MESSAGES,
+  /** Offline and the lesson was never downloaded to this device. */
+  lesson_not_downloaded: 'Bài học này chưa được tải về máy. Hãy kết nối mạng, hoặc tải bài về từ trang Học tập khi có mạng.',
   invalid_payload: 'Dữ liệu bài học không hợp lệ. Vui lòng thử lại.',
   supabase_unavailable: 'Chưa cấu hình kết nối máy chủ.',
   /** The offline outbox could not be written (storage full or blocked). */

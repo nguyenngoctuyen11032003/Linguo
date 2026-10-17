@@ -1,8 +1,13 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import {
+  advanceLocalCursor,
+  applyLocalAttempt,
+  completeLocalRun,
+  summarizeLocalRun,
   type CompleteResult,
   type ExerciseResponse,
+  type LessonAttempt,
   type LessonItem,
   type LessonPayload,
   type PublicExercise,
@@ -12,12 +17,21 @@ import { useToast } from '@/components/ui/Toast';
 import { track } from '@/features/analytics';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
-import { isNetworkError } from '@/lib/network-error';
 import { getSupabase, type AppSupabaseClient } from '@/lib/supabase';
 import { useOnline } from '@/lib/useOnline';
 import { isUnansweredError, lessonErrorMessage } from './error-map';
 import { lessonCacheKey, readLessonCache, writeLessonCache } from './lessonCache';
-import { createOutbox, OUTBOX_CHANGE_EVENT, outboxKey, type OutboxEntry } from './outbox';
+import {
+  adoptServerRun,
+  loadedFromContext,
+  openDeviceRun,
+  persistLocalRun,
+  startRunOnDevice,
+  type Loaded,
+  type LocalCtx,
+} from './offline-run';
+import { enqueueLessonCompletion } from './offline-queue';
+import { createOutbox, OUTBOX_CHANGE_EVENT, OUTBOX_ENQUEUED_EVENT, outboxKey, type OutboxEntry } from './outbox';
 import {
   buildSteps,
   entryKey,
@@ -50,27 +64,56 @@ function parseStepParam(value: string | null, stepCount: number): number | null 
  * The open run, else the latest completed one as is (reopening a finished lesson shows its summary). A new run is
  * started only when there is none yet or when the learner asked to study a completed lesson again (`restart`).
  */
-async function loadPayload(
-  client: AppSupabaseClient,
-  userId: string,
-  lessonId: string,
-  pathId: string,
-  restart: boolean,
-): Promise<LessonPayload> {
-  let payload: LessonPayload;
-  try {
-    payload = await getLesson(client, lessonId, pathId);
-  } catch (error) {
-    const cached = isNetworkError(error) ? readLessonCache(lessonCacheKey(userId, pathId, lessonId)) : null;
-    if (!cached) throw error;
-    return cached;
-  }
+async function loadFromServer(client: AppSupabaseClient, lessonId: string, pathId: string, restart: boolean): Promise<LessonPayload> {
+  const payload = await getLesson(client, lessonId, pathId);
   if (payload.run?.status === 'in_progress') return payload;
   if (payload.run && !restart) return payload;
   const run = await startLesson(client, lessonId, pathId);
   track('lesson_started', { restart: !!payload.run });
   // A new run starts with no attempts; the payload's attempts belonged to the previous (completed) run.
   return { ...payload, run, attempts: run.id === payload.run?.id ? payload.attempts : [] };
+}
+
+/**
+ * Where a lesson comes from, in order: (1) a run this device still owns (its start/answers/completion are not all on the
+ * server yet, or there is no network), (2) the server, (3) with no usable network: the in-progress copy saved while
+ * studying (adopted into the device's engine when the pack is stored, else shown as before with answers waiting for the
+ * server), (4) a new run started from the stored pack. Without any of them the lesson needs the network.
+ */
+async function loadPayload(
+  client: AppSupabaseClient | null,
+  userId: string,
+  lessonId: string,
+  pathId: string,
+  restart: boolean,
+  online: boolean,
+): Promise<Loaded> {
+  if (!restart) {
+    const device = await openDeviceRun(userId, lessonId, pathId, online && !!client);
+    if (device) return device;
+  }
+  let failure: unknown = null;
+  if (client && online) {
+    try {
+      return { payload: await loadFromServer(client, lessonId, pathId, restart), local: null };
+    } catch (error) {
+      if (!isUnansweredError(error)) throw error;
+      failure = error;
+    }
+  }
+  if (!restart) {
+    const cached = readLessonCache(lessonCacheKey(userId, pathId, lessonId));
+    if (cached?.run) {
+      const ctx = await adoptServerRun(userId, pathId, cached, cached.attempts, cached.run);
+      return ctx ? loadedFromContext(ctx) : { payload: cached, local: null };
+    }
+  }
+  const started = await startRunOnDevice(userId, lessonId, pathId);
+  if (started) {
+    track('lesson_started', { restart });
+    return started;
+  }
+  throw failure ?? new Error('lesson_not_downloaded');
 }
 
 interface LoadState {
@@ -99,6 +142,12 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   });
 
   const runIdRef = useRef<string | null>(null);
+  /** Set while the lesson runs from the device's copy (graded here, replayed to the server later). */
+  const localRef = useRef<LocalCtx | null>(null);
+  const [localMode, setLocalMode] = useState(false);
+  /** Idempotency keys of answers graded on the device: the server's replayed result must not be applied a second time. */
+  const locallyGraded = useRef(new Set<string>());
+  const warnedSave = useRef(false);
   /** Cache key of the loaded run; null while (re)loading so a stale payload is never written under a new key. */
   const cacheKeyRef = useRef<string | null>(null);
   /** Queue entries with a submit in flight (guards double submits before React re-renders). */
@@ -118,6 +167,11 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   const applyOutcome = useCallback(
     (outcome: OutboxOutcome, entry: OutboxEntry) => {
       if (entry.args.p_run_id !== runIdRef.current) return;
+      if (locallyGraded.current.has(entry.args.p_idempotency_key)) {
+        // Already shown with the device's verdict; the server only re-checks it. Say so if it refused the answer.
+        if ('error' in outcome) toast.show({ tone: 'error', message: lessonErrorMessage(outcome.error) });
+        return;
+      }
       const ref: EntryRef = { exerciseId: entry.args.p_exercise_id, queueIndex: entry.queueIndex };
       appliedFromOutbox.current.add(`${entry.args.p_run_id}:${entryKey(ref.exerciseId, ref.queueIndex)}`);
       if ('result' in outcome) {
@@ -139,8 +193,20 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   );
 
   // The provider (mounted for every signed-in screen) replays the outbox; this lesson only listens to its results.
-  const { pendingCount, subscribe } = useOutboxSyncContext();
+  const { pendingCount, pendingByRun, subscribe, subscribeRunEvents } = useOutboxSyncContext();
   useEffect(() => subscribe(onOutboxResult), [subscribe, onOutboxResult]);
+
+  // The server already held an open run for this lesson (a run started offline): continue under its id.
+  useEffect(
+    () =>
+      subscribeRunEvents((event) => {
+        if (event.type !== 'remapped' || event.from !== runIdRef.current) return;
+        runIdRef.current = event.to;
+        if (localRef.current) localRef.current.run = { ...localRef.current.run, id: event.to };
+        dispatch({ type: 'runRemapped', to: event.to });
+      }),
+    [subscribeRunEvents],
+  );
 
   // ---- outbox entries that vanish (another tab sent them, or they expired after 7 days) ------------------
   useEffect(() => {
@@ -205,8 +271,9 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   useEffect(() => {
     runIdRef.current = null;
     cacheKeyRef.current = null;
+    localRef.current = null;
     if (!userId) return;
-    if (!client) {
+    if (!client && latest.current.online) {
       setLoad({ status: 'error', error: lessonErrorMessage(new Error('supabase_unavailable')) });
       return;
     }
@@ -221,11 +288,14 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     let active = true;
     setLoad({ status: 'loading', error: null });
     const restart = restartFor.current === lessonId;
-    loadPayload(client, userId, lessonId, pathId, restart)
-      .then((payload) => {
+    loadPayload(client, userId, lessonId, pathId, restart, latest.current.online)
+      .then(({ payload, local }) => {
         if (!active) return;
         if (restart) restartFor.current = null;
         const run = payload.run!;
+        localRef.current = local;
+        locallyGraded.current = new Set();
+        setLocalMode(!!local);
         const steps = buildSteps(payload, run.queue);
         const { searchParams: params, setSearchParams: setParams } = latest.current;
         const cursorIndex = Math.min(Math.max(run.cursor, 0), Math.max(steps.length - 1, 0));
@@ -234,12 +304,15 @@ export function useLessonRun(lessonId: string): LessonRunApi {
           run.status === 'completed'
             ? steps.findIndex((s) => s.kind === 'summary')
             : reachableStep((restart ? null : parseStepParam(params.get(STEP_PARAM), steps.length)) ?? cursorIndex, steps, false);
-        const pending = createOutbox(userId)
-          .list()
-          .filter((e) => e.args.p_run_id === run.id)
-          .map((e) => ({ exerciseId: e.args.p_exercise_id, queueIndex: e.queueIndex }));
+        // Answers of a run on the device were graded here and show their verdict; only a server run's queued answers wait.
+        const pending = local
+          ? []
+          : createOutbox(userId)
+              .list()
+              .filter((e) => e.args.p_run_id === run.id)
+              .map((e) => ({ exerciseId: e.args.p_exercise_id, queueIndex: e.queueIndex }));
         runIdRef.current = run.id;
-        cacheKeyRef.current = lessonCacheKey(userId, pathId, lessonId);
+        cacheKeyRef.current = local ? null : lessonCacheKey(userId, pathId, lessonId);
         savedCursor.current = run.cursor;
         wantedCursor.current = run.cursor;
         dispatch({ type: 'loaded', payload, run, stepIndex, pending });
@@ -333,12 +406,21 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     const { client: c } = latest.current;
     const id = runIdRef.current;
     const target = wantedCursor.current;
-    if (!c || !id || target <= savedCursor.current) return;
+    if (!id || target <= savedCursor.current) return;
+    const ctx = localRef.current;
+    if (ctx) {
+      // A run on the device keeps its position on the device (the server may not know the run yet).
+      savedCursor.current = target;
+      ctx.run = advanceLocalCursor(ctx.run, target);
+      if (userId) void persistLocalRun(userId, ctx);
+      return;
+    }
+    if (!c) return;
     savedCursor.current = target;
     saveCursor(c, id, target).catch(() => {
       // Best effort: the cursor only restores the position; the server keeps the max anyway.
     });
-  }, []);
+  }, [userId]);
 
   useEffect(() => {
     if (!runId || !runActive) return;
@@ -351,6 +433,19 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   useEffect(() => () => flushCursor(), [flushCursor]);
 
   // ---- submit --------------------------------------------------------------------------------------------
+  /** Tells the learner once that the device could not keep the run (disk full / storage blocked). */
+  const persistRun = useCallback(
+    (ctx: LocalCtx) => {
+      if (!userId) return;
+      void persistLocalRun(userId, ctx).then((ok) => {
+        if (ok || warnedSave.current) return;
+        warnedSave.current = true;
+        toast.show({ tone: 'error', message: 'Không lưu được tiến độ bài học trên thiết bị (bộ nhớ đầy hoặc bị chặn).' });
+      });
+    },
+    [userId, toast],
+  );
+
   const submit = useCallback(
     async (exerciseId: string, queueIndex: number, response: ExerciseResponse, meta: SubmitMeta) => {
       const { state: current, client: c, online: isOnline } = latest.current;
@@ -392,14 +487,71 @@ export function useLessonRun(lessonId: string): LessonRunApi {
         }
         if (sameRun()) dispatch({ type: 'pending', ...ref });
       };
+      /** Grades with the device's keys, queues the answer for the server and shows the verdict at once. */
+      const gradeOnDevice = (ctx: LocalCtx) => {
+        const secret = ctx.keys.get(exerciseId);
+        if (!secret) {
+          fail(new Error('exercise_version_mismatch'));
+          return;
+        }
+        let graded: ReturnType<typeof applyLocalAttempt>;
+        try {
+          graded = applyLocalAttempt(ctx.run, {
+            exercise,
+            key: secret,
+            response,
+            confidence: meta.confidence,
+            idempotencyKey: args.p_idempotency_key,
+            clientAt: args.p_client_at,
+          });
+        } catch (error) {
+          fail(error);
+          return;
+        }
+        // Queue first: an answer the server will never hear about must not be shown as done.
+        if (!createOutbox(userId).add({ args: { ...args, p_run_id: ctx.run.id }, queueIndex })) {
+          fail(new Error('outbox_unavailable'));
+          return;
+        }
+        try {
+          window.dispatchEvent(new Event(OUTBOX_ENQUEUED_EVENT));
+        } catch {
+          // The next interval tick drains it.
+        }
+        ctx.run = graded.run;
+        locallyGraded.current.add(args.p_idempotency_key);
+        persistRun(ctx);
+        if (sameRun()) dispatch({ type: 'graded', ...ref, result: graded.result });
+      };
+      /** The network is gone: carry on from the device's copy when it has one, else park the answer without a verdict. */
+      const goOffline = async () => {
+        const waiting = Object.values(latest.current.state.local).some((status) => status === 'pending_sync');
+        const payload = current.payload;
+        if (!waiting && payload && pathId) {
+          const adopted = await adoptServerRun(userId, pathId, payload, current.attempts as LessonAttempt[], { id: run.id, cursor: wantedCursor.current, queue: run.queue });
+          if (adopted && sameRun()) {
+            localRef.current = adopted;
+            setLocalMode(true);
+            cacheKeyRef.current = null;
+            gradeOnDevice(adopted);
+            return;
+          }
+        }
+        queueOffline();
+      };
       dispatch({ type: 'submitting', ...ref });
       try {
+        const ctx = localRef.current;
+        if (ctx) {
+          gradeOnDevice(ctx);
+          return;
+        }
         if (!c) {
           fail(new Error('supabase_unavailable'));
           return;
         }
         if (!isOnline) {
-          queueOffline();
+          await goOffline();
           return;
         }
         try {
@@ -407,21 +559,24 @@ export function useLessonRun(lessonId: string): LessonRunApi {
           if (sameRun()) dispatch({ type: 'graded', ...ref, result });
         } catch (error) {
           // Timed out or failed on the server before grading: resend later under the same idempotency key.
-          if (isUnansweredError(error)) queueOffline();
+          if (isUnansweredError(error)) await goOffline();
           else fail(error);
         }
       } finally {
         submittingRef.current.delete(key);
       }
     },
-    [userId, toast],
+    [userId, pathId, toast, persistRun],
   );
 
   // ---- completion ----------------------------------------------------------------------------------------
   const inFlight = Object.keys(state.local).length > 0;
   // complete_lesson refuses a run with an unanswered queue entry; checking here keeps the summary from waiting forever.
   const unresolved = useMemo(() => (ready ? unresolvedSteps(state) : NO_INDEXES), [ready, state]);
-  const canComplete = ready && !!state.run && pendingCount === 0 && !inFlight && unresolved.length === 0;
+  // Answers still on their way to the server hold a server run back (it cannot be completed before they land); a run on
+  // the device completes anyway: its completion is queued behind its own start and answers.
+  const runPending = state.run ? (pendingByRun[state.run.id] ?? 0) : 0;
+  const canComplete = ready && !!state.run && !inFlight && unresolved.length === 0 && (localMode || runPending === 0);
   const canCompleteRef = useRef(canComplete);
   useLayoutEffect(() => {
     canCompleteRef.current = canComplete;
@@ -430,7 +585,31 @@ export function useLessonRun(lessonId: string): LessonRunApi {
   const complete = useCallback(async (): Promise<CompleteResult | null> => {
     const { state: current, client: c } = latest.current;
     if (current.completeResult) return current.completeResult;
-    if (!c || !current.run || !canCompleteRef.current) return null;
+    if (!current.run || !canCompleteRef.current) return null;
+    const ctx = localRef.current;
+    if (ctx && userId) {
+      const now = new Date();
+      const done = summarizeLocalRun(ctx.run, {
+        publishedIds: ctx.publishedIds,
+        now,
+        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Ho_Chi_Minh',
+      });
+      if (!done.ok) {
+        toast.show({ tone: 'error', message: lessonErrorMessage({ message: done.error }) });
+        return null;
+      }
+      // Queue the completion first (it waits behind the run's start and answers); no queue, no completion on screen.
+      if (!enqueueLessonCompletion(userId, ctx.run.id, done.summary.completed_at)) {
+        toast.show({ tone: 'error', message: lessonErrorMessage(new Error('outbox_unavailable')) });
+        return null;
+      }
+      ctx.run = completeLocalRun(ctx.run, done.summary);
+      persistRun(ctx);
+      dispatch({ type: 'completed', result: done.summary });
+      track('lesson_completed');
+      return done.summary;
+    }
+    if (!c) return null;
     try {
       const result = await completeLesson(c, current.run.id);
       dispatch({ type: 'completed', result });
@@ -440,7 +619,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
       toast.show({ tone: 'error', message: lessonErrorMessage(error) });
       return null;
     }
-  }, [toast]);
+  }, [toast, userId, persistRun]);
 
   const retry = useCallback(() => setLoadAttempt((n) => n + 1), []);
 
@@ -478,6 +657,7 @@ export function useLessonRun(lessonId: string): LessonRunApi {
     exerciseState,
     submit,
     pendingCount,
+    localMode,
     unresolved,
     canComplete,
     complete,

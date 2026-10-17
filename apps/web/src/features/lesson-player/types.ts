@@ -60,6 +60,11 @@ export interface LessonRunApi {
   complete: () => Promise<CompleteResult | null>;
   completeResult: CompleteResult | null;
   runId: string | null;
+  /**
+   * The lesson runs from the copy stored on this device: answers are graded here at once and replayed to the server later
+   * (which stays authoritative). True for lessons done offline and until the server has taken over the run.
+   */
+  localMode: boolean;
   /** A completed run is shown with its summary; nothing can be submitted to it. */
   runStatus: LessonRun['status'] | null;
   retry: () => void;
