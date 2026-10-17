@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u04-wochentage-termine
+order_index: 4
+level: a1
+title:
+  vi: Thứ, ngày, tháng (Wochentage und Termine)
+objectives:
+  - vi: Gọi tên các thứ, tháng, mùa và dùng đúng am (thứ, ngày, buổi), im (tháng, mùa), um (giờ).
+  - vi: Đọc và nói ngày tháng bằng số thứ tự (der erste Mai, am ersten Mai, viết 1. Mai).
+  - vi: Nói ngày sinh của mình và hỏi ngày sinh của người khác.
+  - vi: Hiểu thông báo ngắn về ngày giờ (lịch học, lịch hẹn).
+estimated_minutes: 15
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a1u04-ich-kann-nicht]
+items:
+  - item: de:item:a1u04-g-am-im-um
+  - item: de:item:a1u04-g-ordinalzahlen
+  - item: de:item:a1u04-woche
+  - item: de:item:a1u04-wochenende
+  - item: de:item:a1u04-tag
+  - item: de:item:a1u04-wochentage
+  - item: de:item:a1u04-monat
+  - item: de:item:a1u04-monate
+  - item: de:item:a1u04-jahreszeiten
+  - item: de:item:a1u04-geburtstag
+  - item: de:item:a1u04-datum
+  - item: de:item:a1u04-kalender
+  - item: de:item:a1u04-ferien
+  - item: de:item:a1u04-frei
+  - item: de:item:a1u04-g-um-von-bis
+    role: reuse
+  - item: de:item:a1u04-anfangen
+    role: reuse
+  - item: de:item:p0u2-g-auslautverhaertung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được \"Thứ Hai lớp học bắt đầu lúc 9 giờ\", \"Tháng Tám tôi được nghỉ\", \"Sinh nhật tôi vào ngày 12 tháng 4\" và nghe hiểu lịch hẹn đơn giản bằng tiếng Đức."
+  - type: explain
+    text:
+      vi: "Các thứ (Montag … Sonntag), các tháng (Januar … Dezember) và các mùa (Frühling, Sommer, Herbst, Winter) đều là giống đực: der Montag, der Mai, der Sommer. Tuần ở Đức bắt đầu từ thứ Hai. Chữ g cuối trong Tag, Montag đọc thành \"k\" (taak)."
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ nói \"thứ Hai\", \"tháng Năm\" mà không cần giới từ, nhưng tiếng Đức bắt buộc có giới từ: am + thứ, ngày, buổi (am Montag, am Wochenende, am Abend, am 3. Mai); im + tháng, mùa (im Mai, im Sommer); um + giờ (um acht Uhr)."
+  - type: explain
+    text:
+      vi: "Khi nói nhiều mốc cùng lúc, đi từ lớn đến nhỏ: am Freitag um sieben Uhr. Riêng ban đêm là in der Nacht. Năm thường nói trơn, không có giới từ: đừng nói \"in 2025\" theo kiểu tiếng Anh."
+  - type: explain
+    text:
+      vi: "Số thứ tự: từ 1 đến 19 thêm -te (zweite, vierte, zehnte), từ 20 trở đi thêm -ste (zwanzigste, einunddreißigste). Năm dạng cần nhớ riêng: erste, dritte, siebte, achte (chỉ một chữ t). Khi viết, số thứ tự là chữ số kèm dấu chấm: 3. Mai đọc là dritte Mai."
+  - type: explain
+    text:
+      vi: "Nói hôm nay là ngày mấy: Heute ist der dritte Mai (đuôi -e). Nói việc xảy ra vào ngày nào: am dritten Mai (sau am thêm -n). Hỏi: Der Wievielte ist heute? / Welches Datum ist heute? và Wann hast du Geburtstag?"
+  - type: deep_explain
+    text:
+      vi: "Người Đức viết ngày trước, tháng sau, giống tiếng Việt: 03.05. = 3/5, đọc là der dritte Fünfte hoặc der dritte Mai. Ở Áo, tháng Một gọi là Jänner, đôi khi tháng Hai là Feber; miền Bắc nước Đức còn gọi thứ Bảy là Sonnabend. Phong tục: chúc mừng sinh nhật trước ngày bị coi là xui, nên hãy chúc đúng ngày (Alles Gute zum Geburtstag!) hoặc sau đó."
+  - type: example
+    target: "Am Montag fängt der Kurs um neun Uhr an."
+    target_lang: de
+    translation:
+      vi: Thứ Hai lớp học bắt đầu lúc chín giờ.
+    note:
+      vi: "am + thứ, um + giờ; ngày đứng trước giờ. anfangen tách: fängt … an."
+  - type: example
+    target: "Im August haben die Kinder Ferien."
+    target_lang: de
+    translation:
+      vi: Tháng Tám bọn trẻ được nghỉ hè.
+    note:
+      vi: "im + tháng. die Ferien chỉ có số nhiều."
+  - type: example
+    target: "Wann hast du Geburtstag? – Am dritten März."
+    target_lang: de
+    translation:
+      vi: Sinh nhật cậu vào ngày nào? – Ngày 3 tháng 3.
+    note:
+      vi: "Hỏi bạn bè dùng du. Trả lời bằng am + số thứ tự đuôi -en: am dritten."
+  - type: example
+    target: "Der Wievielte ist heute? – Heute ist der erste Oktober."
+    target_lang: de
+    translation:
+      vi: Hôm nay là ngày bao nhiêu? – Hôm nay là ngày 1 tháng 10.
+    note:
+      vi: "Sau der dùng đuôi -e: der erste. Câu hỏi không có du/Sie nên dùng được với mọi người."
+  - type: example
+    target: "Am Wochenende habe ich frei. Im Winter ist es kalt."
+    target_lang: de
+    translation:
+      vi: Cuối tuần tôi được nghỉ. Mùa đông trời lạnh.
+    note:
+      vi: "am Wochenende (như ngày), im Winter (như tháng, mùa)."
+  - type: example
+    target: "Mein Geburtstag ist am 21. Juli."
+    target_lang: de
+    translation:
+      vi: Sinh nhật tôi vào ngày 21 tháng 7.
+    note:
+      vi: "Đọc là am einundzwanzigsten Juli: từ 20 trở đi đuôi là -ste (-sten sau am)."
+  - type: common_mistake
+    wrong: "Ich habe in Montag frei."
+    right: "Ich habe am Montag frei."
+    target_lang: de
+    note:
+      vi: "Với thứ trong tuần dùng am, không dùng in."
+  - type: common_mistake
+    wrong: "Am Mai habe ich Ferien."
+    right: "Im Mai habe ich Ferien."
+    target_lang: de
+    note:
+      vi: "Tháng và mùa dùng im: im Mai, im Sommer; am dành cho thứ và ngày cụ thể."
+  - type: common_mistake
+    wrong: "Heute ist der dreite Mai."
+    right: "Heute ist der dritte Mai."
+    target_lang: de
+    note:
+      vi: "3 là dạng đặc biệt: dritte (không phải \"dreite\"). Tương tự erste, siebte, achte."
+  - type: common_mistake
+    wrong: "Mein Geburtstag ist am drei Mai."
+    right: "Mein Geburtstag ist am dritten Mai."
+    target_lang: de
+    note:
+      vi: "Tiếng Việt nói \"ngày ba\" bằng số đếm, còn tiếng Đức nói ngày bằng số thứ tự; sau am thêm đuôi -en."
+  - type: summary
+    points:
+      - vi: "Thứ, tháng, mùa đều là der: der Montag, der Mai, der Sommer."
+      - vi: "am + thứ/ngày/buổi (am Montag, am Wochenende, am 3. Mai); im + tháng/mùa (im Mai, im Winter); um + giờ."
+      - vi: "Thứ tự: am Freitag um sieben Uhr; ban đêm: in der Nacht."
+      - vi: "Số thứ tự: -te (1–19), -ste (từ 20); đặc biệt erste, dritte, siebte, achte."
+      - vi: "Heute ist der dritte Mai. – Am dritten Mai habe ich Geburtstag. Viết: 3. Mai."
+      - vi: "Hỏi: Der Wievielte ist heute? Wann hast du Geburtstag?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u04l4-listen-geburtstag
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u04-g-ordinalzahlen
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Mein Geburtstag ist am siebten Juni."
+      options:
+        - { id: h5v, text: "Sinh nhật tôi vào ngày 7 tháng 6.", lang: vi }
+        - { id: c2n, text: "Sinh nhật tôi vào ngày 7 tháng 7.", lang: vi }
+        - { id: r8b, text: "Sinh nhật tôi vào ngày 17 tháng 6.", lang: vi }
+        - { id: x4j, text: "Sinh nhật tôi vào ngày 6 tháng 7.", lang: vi }
+    answer:
+      correct_option_id: h5v
+    explanation:
+      vi: "siebten = thứ bảy (ngày 7); 17 sẽ là siebzehnten. Juni là tháng 6, Juli là tháng 7 - hai từ dễ nghe nhầm, hãy chú ý âm n và l."
+    display_answer: "Sinh nhật tôi vào ngày 7 tháng 6."
+
+  - key: de:exercise:a1u04l4-mcq-im-august
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u04-g-am-im-um
+    prompt:
+      stem: "Chọn từ đúng: ___ August haben die Kinder Ferien."
+      stem_lang: vi
+      options:
+        - { id: t6a, text: Im, lang: de }
+        - { id: l3d, text: Am, lang: de }
+        - { id: p9s, text: Um, lang: de }
+        - { id: v1f, text: In, lang: de }
+    answer:
+      correct_option_id: t6a
+    explanation:
+      vi: "Tháng và mùa đi với im (im August, im Sommer). Am dùng cho thứ và ngày, Um cho giờ. \"In August\" là kiểu tiếng Anh; tiếng Đức cần im."
+    display_answer: Im
+
+  - key: de:exercise:a1u04l4-listen-kurszeiten
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u04-wochentage
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Der Kurs ist am Dienstag und am Donnerstag von sechs bis acht Uhr."
+      options:
+        - { id: q2r, text: "Thứ Ba và thứ Năm, từ 6 đến 8 giờ", lang: vi }
+        - { id: g7k, text: "Thứ Hai và thứ Tư, từ 6 đến 8 giờ", lang: vi }
+        - { id: m4z, text: "Thứ Ba và thứ Năm, từ 8 đến 10 giờ", lang: vi }
+        - { id: s1w, text: "Thứ Bảy và Chủ nhật, từ 6 đến 8 giờ", lang: vi }
+    answer:
+      correct_option_id: q2r
+    explanation:
+      vi: "Dienstag = thứ Ba, Donnerstag = thứ Năm; von sechs bis acht Uhr = từ 6 đến 8 giờ. Mẹo nhớ: Mittwoch là \"giữa tuần\" (Mitte = giữa), Donnerstag đứng ngay sau nó."
+    display_answer: "Thứ Ba và thứ Năm, từ 6 đến 8 giờ"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u04l4-fill-am-um-im
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-am-im-um
+    prompt:
+      template: "Der Kurs beginnt {{b1}} Montag {{b2}} neun Uhr. {{b3}} Sommer habe ich frei."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [am]
+        b2: [um]
+        b3: [Im]
+    known_wrong:
+      - answer: in
+        feedback_vi: "Tiếng Đức không dùng in trơn với thứ, giờ hay mùa: am Montag, um neun Uhr, im Sommer."
+        error_tag: preposition
+      - answer: an
+        feedback_vi: "Trước thứ dùng am (an + dem), không dùng an trơn."
+        error_tag: preposition
+      - answer: zu
+        feedback_vi: "zu không dùng để nói thời gian ở đây; dùng am / um / im."
+        error_tag: preposition
+    explanation:
+      vi: "am + thứ (am Montag), um + giờ (um neun Uhr), im + mùa (im Sommer). Ngày đứng trước giờ."
+    display_answer: "Der Kurs beginnt am Montag um neun Uhr. Im Sommer habe ich frei."
+
+  - key: de:exercise:a1u04l4-fill-dritte-siebten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-ordinalzahlen
+    prompt:
+      template: "Heute ist der {{b1}} Mai. Mein Geburtstag ist am {{b2}} Mai. (3. / 7.)"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [dritte]
+        b2: [siebten, siebenten]
+    known_wrong:
+      - answer: dreite
+        feedback_vi: "Số thứ tự của 3 là dạng đặc biệt: dritte."
+        error_tag: ordinal_form
+      - answer: drei
+        feedback_vi: "Nói ngày cần số thứ tự: der dritte Mai, không phải số đếm drei."
+        error_tag: ordinal_form
+      - answer: dritten
+        feedback_vi: "Sau der (Heute ist der …) đuôi là -e: der dritte. Đuôi -en dùng sau am."
+        error_tag: adj_ending
+      - answer: sieben
+        feedback_vi: "Nói ngày cần số thứ tự: am siebten Mai, không phải số đếm sieben."
+        error_tag: ordinal_form
+      - answer: siebte
+        feedback_vi: "Sau am thêm -n: am siebten Mai."
+        error_tag: adj_ending
+    explanation:
+      vi: "Heute ist der … dùng đuôi -e: der dritte (3 là dạng đặc biệt). Sau am dùng đuôi -en: am siebten (7 bỏ \"en\" của sieben; dạng dài am siebenten cũng đúng)."
+    display_answer: "Heute ist der dritte Mai. Mein Geburtstag ist am siebten Mai."
+
+  - key: de:exercise:a1u04l4-tr-geburtstag-april
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-geburtstag
+    prompt:
+      source_text: Sinh nhật tôi vào ngày 12 tháng 4.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mein Geburtstag ist am zwölften April.
+        - Mein Geburtstag ist am 12. April.
+        - Ich habe am zwölften April Geburtstag.
+        - Ich habe am 12. April Geburtstag.
+        - Am zwölften April habe ich Geburtstag.
+        - Am 12. April habe ich Geburtstag.
+        - Am zwölften April ist mein Geburtstag.
+        - Am 12. April ist mein Geburtstag.
+        - Mein Geburtstag ist am zwölften Vierten.
+    known_wrong:
+      - answer: Mein Geburtstag ist am zwölf April.
+        feedback_vi: "Ngày cần số thứ tự có đuôi: am zwölften April."
+        error_tag: ordinal_form
+      - answer: Mein Geburtstag ist im zwölften April.
+        feedback_vi: "Ngày cụ thể đi với am; im chỉ dùng cho tháng không có ngày (im April)."
+        error_tag: preposition
+      - answer: Mein Geburtstag ist am zwölfte April.
+        feedback_vi: "Sau am số thứ tự có đuôi -en: am zwölften."
+        error_tag: adj_ending
+      - answer: Am zwölften April ich habe Geburtstag.
+        feedback_vi: "Ngày đứng đầu câu thì habe ở vị trí 2: Am zwölften April habe ich Geburtstag."
+        error_tag: verb_position
+    explanation:
+      vi: "Ngày cụ thể: am + số thứ tự đuôi -en + tháng: am zwölften April (viết am 12. April). Người Đức cũng hay nói Ich habe am … Geburtstag."
+    display_answer: Mein Geburtstag ist am zwölften April.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u04l4-listen-kursbeginn
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-datum
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Der Deutschkurs fängt am zehnten September an. Er ist immer am Mittwoch um achtzehn Uhr."
+      options:
+        - { id: u5n, text: "Bắt đầu ngày 10/9; học thứ Tư hằng tuần lúc 18 giờ.", lang: vi }
+        - { id: k1c, text: "Bắt đầu ngày 10/9; học thứ Hai hằng tuần lúc 18 giờ.", lang: vi }
+        - { id: o6y, text: "Bắt đầu ngày 9/10; học thứ Tư hằng tuần lúc 18 giờ.", lang: vi }
+        - { id: d3e, text: "Bắt đầu ngày 10/9; học thứ Tư hằng tuần lúc 8 giờ.", lang: vi }
+    answer:
+      correct_option_id: u5n
+    explanation:
+      vi: "am zehnten September = ngày 10 tháng 9 (người Đức nói ngày trước tháng, giống tiếng Việt). am Mittwoch = thứ Tư, um achtzehn Uhr = 18 giờ."
+    display_answer: "Bắt đầu ngày 10/9; học thứ Tư hằng tuần lúc 18 giờ."
+
+  - key: de:exercise:a1u04l4-mcq-termin-sie
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-am-im-um
+    prompt:
+      stem: "Một đồng nghiệp hỏi: \"Wann haben Sie Zeit?\" Bạn rảnh vào thứ Năm lúc 15 giờ. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: b2h, text: "Am Donnerstag um fünfzehn Uhr.", lang: de }
+        - { id: n8q, text: "Im Donnerstag um fünfzehn Uhr.", lang: de }
+        - { id: j4t, text: "Am Donnerstag am fünfzehn Uhr.", lang: de }
+        - { id: w6l, text: "Um Donnerstag in fünfzehn Uhr.", lang: de }
+    answer:
+      correct_option_id: b2h
+    explanation:
+      vi: "Thứ đi với am (am Donnerstag), giờ đi với um (um fünfzehn Uhr); ngày đứng trước giờ. Câu trả lời ngắn không cần động từ."
+    display_answer: "Am Donnerstag um fünfzehn Uhr."
+
+  - key: de:exercise:a1u04l4-wb-dritten-mai
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-geburtstag
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Tôi có sinh nhật vào ngày 3 tháng 5.\""
+      tokens:
+        - { id: t-mai, text: Mai }
+        - { id: t-dritte, text: dritte }
+        - { id: t-habe, text: habe }
+        - { id: t-geburtstag, text: Geburtstag }
+        - { id: t-am, text: am }
+        - { id: t-ich, text: ich }
+        - { id: t-im, text: im }
+        - { id: t-dritten, text: dritten }
+    answer:
+      orders:
+        - [t-ich, t-habe, t-am, t-dritten, t-mai, t-geburtstag]
+        - [t-am, t-dritten, t-mai, t-habe, t-ich, t-geburtstag]
+        - [t-geburtstag, t-habe, t-ich, t-am, t-dritten, t-mai]
+    explanation:
+      vi: "Ngày cụ thể: am + dritten (đuôi -en sau am) + Mai. habe đứng vị trí 2; câu thường bắt đầu bằng ich hoặc am dritten Mai. Không dùng im (chỉ cho tháng) hay dritte (thiếu -n)."
+    display_answer: Ich habe am dritten Mai Geburtstag.
+
+  - key: de:exercise:a1u04l4-tr-wochenende-frei
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-frei
+    prompt:
+      source_text: Am Wochenende habe ich frei.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần tôi được nghỉ.
+        - Cuối tuần tôi rảnh.
+        - Cuối tuần tôi nghỉ.
+        - Cuối tuần mình được nghỉ.
+        - Cuối tuần mình rảnh.
+        - Tôi được nghỉ vào cuối tuần.
+        - Tôi rảnh vào cuối tuần.
+        - Vào cuối tuần tôi được nghỉ.
+        - Vào cuối tuần tôi rảnh.
+        - Cuối tuần tôi được nghỉ làm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần tôi phải làm việc.
+        feedback_vi: "frei haben là được nghỉ, rảnh - ngược với phải làm việc."
+        error_tag: vocabulary
+      - answer: Cuối tháng tôi được nghỉ.
+        feedback_vi: "Wochenende là cuối tuần (Woche = tuần), không phải cuối tháng."
+        error_tag: vocabulary
+    explanation:
+      vi: "am Wochenende = vào cuối tuần; frei haben = được nghỉ (không phải đi làm, đi học)."
+    display_answer: Cuối tuần tôi được nghỉ.

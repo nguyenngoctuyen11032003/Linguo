@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u04-wiederholung
+order_index: 5
+level: a1
+title:
+  vi: "Ôn tập: một ngày của tôi (Wiederholung)"
+objectives:
+  - vi: Đọc hiểu một kế hoạch tuần và một tin nhắn hẹn giờ ngắn.
+  - vi: Viết 5–6 câu về một ngày của mình với giờ giấc, động từ tách và động từ khiếm khuyết.
+  - vi: Nghe đoạn hội thoại hoặc tin nhắn thoại ngắn và chọn đúng ngày giờ (kiểu Hören Teil 1 của Start Deutsch 1).
+estimated_minutes: 20
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:a1u04-wochentage-termine]
+items:
+  - item: de:item:a1u04-g-uhrzeit
+    role: reuse
+  - item: de:item:a1u04-g-um-von-bis
+    role: reuse
+  - item: de:item:a1u04-g-trennbare-verben
+    role: reuse
+  - item: de:item:a1u04-g-satzklammer
+    role: reuse
+  - item: de:item:a1u04-g-modalverben
+    role: reuse
+  - item: de:item:a1u04-g-modal-satzklammer
+    role: reuse
+  - item: de:item:a1u04-g-am-im-um
+    role: reuse
+  - item: de:item:a1u04-g-ordinalzahlen
+    role: reuse
+  - item: de:item:a1u04-halb
+    role: reuse
+  - item: de:item:a1u04-viertel
+    role: reuse
+  - item: de:item:a1u04-aufstehen
+    role: reuse
+  - item: de:item:a1u04-einkaufen
+    role: reuse
+  - item: de:item:a1u04-normalerweise
+    role: reuse
+  - item: de:item:a1u04-koennen
+    role: reuse
+  - item: de:item:a1u04-leider
+    role: reuse
+  - item: de:item:a1u04-wochentage
+    role: reuse
+  - item: de:item:a1u04-test
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Bài này ôn cả unit qua ba kỹ năng: đọc kế hoạch tuần và tin nhắn hẹn, viết vài câu về một ngày của bạn, nghe hội thoại ngắn để bắt đúng ngày giờ - giống phần Đọc và Nghe của Start Deutsch 1."
+  - type: explain
+    text:
+      vi: "Khi đọc kế hoạch hay tin nhắn, hãy gạch chân ba thứ: thứ/ngày (am Montag, am 3. Mai), giờ (um halb acht, von … bis …) và động từ ở cuối câu (auf, an, ein, kommen). Tiền tố ở cuối câu có thể đổi nghĩa: Ich stehe auf (dậy) khác Ich stehe (đứng)."
+  - type: explain
+    text:
+      vi: "Khi nghe giờ, cẩn thận với bẫy halb: halb acht là 7:30, không phải 8:30. Trong bài nghe, câu đầu thường nêu một giờ, rồi người kia sửa lại (Nein, lieber um …) - đáp án là giờ cuối cùng được chốt."
+  - type: explain
+    text:
+      vi: "Viết về một ngày: mỗi câu một việc, đặt giờ ở đầu câu cho đa dạng nhưng nhớ động từ ở vị trí 2 (Um sieben Uhr frühstücke ich.). Dùng ít nhất một động từ tách (aufstehen, einkaufen, fernsehen) và một động từ khiếm khuyết (Ich muss …, Ich kann …)."
+  - type: deep_explain
+    text:
+      vi: "Phần Nghe Teil 1 của Start Deutsch 1 gồm các đoạn hội thoại đời thường ngắn; mỗi đoạn có một câu hỏi về giờ, ngày, giá hoặc địa điểm với ba lựa chọn. Mẹo: đọc câu hỏi trước để biết cần nghe gì (Wann? → giờ/ngày). Phần Viết Teil 2 yêu cầu một tin nhắn ngắn (khoảng 30 từ) theo ba ý; một lời từ chối hẹn kiểu Leider kann ich am … nicht. Ich muss … Können wir … ? là khung rất hữu ích. (Cấu trúc đề tham khảo tại thời điểm soạn, cần đối chiếu quy chế hiện hành của Goethe-Institut.)"
+  - type: example
+    target: "Ich stehe um halb sieben auf und dusche. Um sieben Uhr frühstücke ich. Ich arbeite von acht bis sechzehn Uhr. Am Abend koche ich und sehe fern. Um elf Uhr schlafe ich ein."
+    target_lang: de
+    translation:
+      vi: Tôi dậy lúc sáu giờ rưỡi rồi đi tắm. Bảy giờ tôi ăn sáng. Tôi làm việc từ 8 giờ đến 16 giờ. Buổi tối tôi nấu ăn và xem tivi. Mười một giờ tôi đi ngủ.
+    note:
+      vi: "Mẫu đoạn viết 5 câu: có giờ (um, von … bis), động từ tách (stehe … auf, sehe … fern, schlafe … ein) và động từ ở vị trí 2 sau giờ đứng đầu."
+  - type: example
+    target: "Hallo Tom, leider kann ich am Freitag nicht kommen. Ich muss arbeiten. Hast du am Samstag um drei Uhr Zeit? Viele Grüße, Lan"
+    target_lang: de
+    translation:
+      vi: Chào Tom, tiếc là thứ Sáu mình không đến được. Mình phải làm việc. Thứ Bảy lúc ba giờ cậu có rảnh không? Thân, Lan
+    note:
+      vi: "Tin nhắn thân mật cho bạn (du): từ chối + lý do + đề nghị giờ mới. Viele Grüße là câu kết thông dụng."
+  - type: example
+    target: "Wann fängt der Film an? – Um Viertel nach acht. – Und wie lange dauert er? – Zwei Stunden."
+    target_lang: de
+    translation:
+      vi: Mấy giờ phim bắt đầu? – Tám giờ mười lăm. – Thế phim dài bao lâu? – Hai tiếng.
+    note:
+      vi: "Hội thoại kiểu bài nghe: một câu hỏi giờ (Wann?), một câu hỏi độ dài (Wie lange?)."
+  - type: common_mistake
+    wrong: "Um sieben Uhr ich frühstücke."
+    right: "Um sieben Uhr frühstücke ich."
+    target_lang: de
+    note:
+      vi: "Giờ đứng đầu câu thì động từ vẫn ở vị trí 2, chủ ngữ ra sau."
+  - type: common_mistake
+    wrong: "Heute Abend ich will sehe fern."
+    right: "Heute Abend will ich fernsehen."
+    target_lang: de
+    note:
+      vi: "Động từ khiếm khuyết will đứng thứ hai sau heute Abend; động từ tách ở cuối câu để nguyên thể và viết liền: fernsehen."
+  - type: common_mistake
+    wrong: "Der Kurs ist am Mai."
+    right: "Der Kurs ist im Mai."
+    target_lang: de
+    note:
+      vi: "Tháng đi với im; am dùng cho thứ và ngày cụ thể (am 3. Mai)."
+  - type: summary
+    points:
+      - vi: "Giờ: halb acht = 7:30; Viertel nach/vor; um + giờ; von … bis …"
+      - vi: "Động từ tách: phần chia ở vị trí 2, tiền tố ở cuối câu."
+      - vi: "können/müssen/wollen ở vị trí 2, nguyên thể ở cuối; không có zu."
+      - vi: "am + thứ/ngày, im + tháng/mùa; ngày nói bằng số thứ tự: am dritten Mai."
+      - vi: "Từ chối hẹn: Leider kann ich … nicht. Ich muss … Hast du am … Zeit?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u04l5-mcq-plan-kurs
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u04-wochentage
+    prompt:
+      stem: "Đọc kế hoạch tuần của Lena: \"Montag: 8:30–16:30 Uhr arbeiten · Dienstag: 18 Uhr Deutschkurs · Mittwoch: Oma anrufen · Donnerstag: 18 Uhr Deutschkurs · Freitag: 19:30 Uhr Kino mit Jonas · Samstag: einkaufen · Sonntag: ausschlafen!\" Câu \"Lena hat am Dienstag und am Donnerstag Deutschkurs.\" đúng hay sai?"
+      stem_lang: vi
+      options:
+        - { id: r1a, text: "Đúng (richtig)", lang: vi }
+        - { id: f2b, text: "Sai (falsch)", lang: vi }
+    answer:
+      correct_option_id: r1a
+    explanation:
+      vi: "Kế hoạch ghi Dienstag (thứ Ba) và Donnerstag (thứ Năm) đều có Deutschkurs lúc 18 giờ, nên câu này đúng."
+    display_answer: "Đúng (richtig)"
+
+  - key: de:exercise:a1u04l5-mcq-plan-kino
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-halb
+    prompt:
+      stem: "Vẫn kế hoạch tuần của Lena: \"Freitag: 19:30 Uhr Kino mit Jonas.\" Câu \"Am Freitag geht Lena um halb acht ins Kino.\" đúng hay sai?"
+      stem_lang: vi
+      options:
+        - { id: r3c, text: "Đúng (richtig)", lang: vi }
+        - { id: f4d, text: "Sai (falsch)", lang: vi }
+    answer:
+      correct_option_id: r3c
+    explanation:
+      vi: "19:30 là bảy giờ rưỡi tối; cách nói thân mật là halb acht (nửa đường tới 8 giờ). Vậy câu này đúng - đừng nhầm halb acht với 8:30."
+    display_answer: "Đúng (richtig)"
+
+  - key: de:exercise:a1u04l5-listen-film
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-viertel
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Wann fängt der Film an? – Um Viertel nach acht. – Und wie lange dauert er? – Zwei Stunden."
+      options:
+        - { id: n5p, text: "Phim bắt đầu lúc 8 giờ 15 và dài hai tiếng.", lang: vi }
+        - { id: y2s, text: "Phim bắt đầu lúc 7 giờ 45 và dài hai tiếng.", lang: vi }
+        - { id: c7v, text: "Phim bắt đầu lúc 8 giờ 15 và kết thúc lúc 2 giờ.", lang: vi }
+        - { id: h9m, text: "Phim bắt đầu lúc 8 giờ 30 và dài hai tiếng.", lang: vi }
+    answer:
+      correct_option_id: n5p
+    explanation:
+      vi: "Viertel nach acht = 8 giờ 15 (Viertel vor acht mới là 7:45, halb neun là 8:30). zwei Stunden là độ dài hai tiếng, không phải lúc 2 giờ."
+    display_answer: "Phim bắt đầu lúc 8 giờ 15 và dài hai tiếng."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u04l5-fill-nachricht
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-modal-satzklammer
+    prompt:
+      template: "Hallo Tom, {{b1}} du am Samstag um sieben Uhr kommen? Der Film fängt um halb acht {{b2}}. Viele Grüße, Lan"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [kannst]
+        b2: [an]
+    known_wrong:
+      - answer: kann
+        feedback_vi: "kann là dạng của ich và er/sie/es; với du dùng kannst."
+        error_tag: verb_form
+      - answer: kannt
+        feedback_vi: "Không có dạng kannt; với du dùng kannst."
+        error_tag: verb_form
+      - answer: kommst
+        feedback_vi: "Cuối câu đã có kommen (nguyên thể), nên ở đầu cần động từ khiếm khuyết: Kannst du … kommen?"
+        error_tag: modal_infinitive
+      - answer: auf
+        feedback_vi: "\"Bắt đầu\" là anfangen: fängt … an, không phải auf."
+        error_tag: separable_prefix
+    explanation:
+      vi: "Câu hỏi có/không với können: Kannst du … kommen? - kannst đứng đầu, kommen nguyên thể ở cuối. anfangen tách: fängt … an."
+    display_answer: "Hallo Tom, kannst du am Samstag um sieben Uhr kommen? Der Film fängt um halb acht an. Viele Grüße, Lan"
+
+  - key: de:exercise:a1u04l5-tr-normalerweise
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-normalerweise
+    prompt:
+      source_text: Thường thì tôi dậy lúc 7 giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Normalerweise stehe ich um sieben Uhr auf.
+        - Normalerweise stehe ich um 7 Uhr auf.
+        - Ich stehe normalerweise um sieben Uhr auf.
+        - Ich stehe normalerweise um 7 Uhr auf.
+        - Um sieben Uhr stehe ich normalerweise auf.
+        - Um 7 Uhr stehe ich normalerweise auf.
+    known_wrong:
+      - answer: Normalerweise ich stehe um sieben Uhr auf.
+        feedback_vi: "normalerweise đứng đầu thì stehe ở vị trí 2: Normalerweise stehe ich …"
+        error_tag: verb_position
+      - answer: Normalerweise aufstehe ich um sieben Uhr.
+        feedback_vi: "aufstehen tách đôi: stehe ở vị trí 2, auf ở cuối câu."
+        error_tag: separable_prefix
+      - answer: Normalerweise stehe ich auf um sieben Uhr.
+        feedback_vi: "Tiền tố auf đứng tận cuối câu, sau um sieben Uhr."
+        error_tag: separable_prefix
+    explanation:
+      vi: "normalerweise = thường thì. aufstehen tách đôi: stehe ở vị trí 2, auf ở cuối. Nếu câu mở đầu bằng normalerweise hay um sieben Uhr thì chủ ngữ ich đứng sau động từ."
+    display_answer: Normalerweise stehe ich um sieben Uhr auf.
+
+  - key: de:exercise:a1u04l5-wb-muss-aufstehen
+    type: word_bank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-aufstehen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Tôi phải dậy lúc sáu giờ.\""
+      tokens:
+        - { id: t-aufstehen, text: aufstehen }
+        - { id: t-uhr, text: Uhr }
+        - { id: t-stehe, text: stehe }
+        - { id: t-muss, text: muss }
+        - { id: t-sechs, text: sechs }
+        - { id: t-zu, text: zu }
+        - { id: t-ich, text: ich }
+        - { id: t-um, text: um }
+    answer:
+      orders:
+        - [t-ich, t-muss, t-um, t-sechs, t-uhr, t-aufstehen]
+        - [t-um, t-sechs, t-uhr, t-muss, t-ich, t-aufstehen]
+    explanation:
+      vi: "muss ở vị trí 2, aufstehen nguyên thể ở cuối câu và viết liền. Không dùng stehe (đã có muss chia rồi) và không thêm zu."
+    display_answer: Ich muss um sechs Uhr aufstehen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u04l5-mcq-sms-uhrzeit
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-g-uhrzeit
+    prompt:
+      stem: "Đọc tin nhắn: \"Hallo Minh, hast du am Samstag Zeit? Wir wollen um zwölf Uhr zusammen kochen. Ich kaufe am Vormittag ein. Kannst du um halb zwölf kommen? Lan\" Lan muốn Minh đến lúc mấy giờ?"
+      stem_lang: vi
+      options:
+        - { id: a7k, text: "11 giờ 30", lang: vi }
+        - { id: b4m, text: "12 giờ 30", lang: vi }
+        - { id: c9q, text: "12 giờ", lang: vi }
+        - { id: d1w, text: "Buổi sáng, chưa rõ giờ", lang: vi }
+    answer:
+      correct_option_id: a7k
+    explanation:
+      vi: "Kannst du um halb zwölf kommen? - halb zwölf là 11:30 (nửa đường tới 12 giờ). 12 giờ là giờ bắt đầu nấu ăn; am Vormittag là lúc Lan đi chợ."
+    display_answer: "11 giờ 30"
+
+  - key: de:exercise:a1u04l5-mcq-sms-einkaufen
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-einkaufen
+    prompt:
+      stem: "Vẫn tin nhắn của Lan: \"… Wir wollen um zwölf Uhr zusammen kochen. Ich kaufe am Vormittag ein. …\" Lan đi chợ khi nào?"
+      stem_lang: vi
+      options:
+        - { id: e3r, text: "Sáng thứ Bảy, trước khi nấu ăn", lang: vi }
+        - { id: g8t, text: "Chiều thứ Bảy, sau khi nấu ăn", lang: vi }
+        - { id: i5y, text: "Thứ Sáu", lang: vi }
+        - { id: j2u, text: "Lúc 12 giờ", lang: vi }
+    answer:
+      correct_option_id: e3r
+    explanation:
+      vi: "Ich kaufe am Vormittag ein = tôi đi chợ vào buổi sáng (einkaufen tách: kaufe … ein). Tin nhắn nói về thứ Bảy, và nấu ăn lúc 12 giờ, nên Lan đi chợ trước đó."
+    display_answer: "Sáng thứ Bảy, trước khi nấu ăn"
+
+  - key: de:exercise:a1u04l5-listen-absage-tom
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a1u04-leider
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hallo Anna, hier ist Tom. Ich kann heute leider nicht kommen. Ich muss lange arbeiten. Hast du am Mittwoch um halb sieben Zeit?"
+      options:
+        - { id: k4a, text: "Tom không đến hôm nay và hỏi Anna có rảnh thứ Tư lúc 6 giờ 30 không.", lang: vi }
+        - { id: l9b, text: "Tom không đến hôm nay và hỏi Anna có rảnh thứ Tư lúc 7 giờ 30 không.", lang: vi }
+        - { id: o2c, text: "Tom không đến hôm nay và hỏi Anna có rảnh thứ Hai lúc 6 giờ 30 không.", lang: vi }
+        - { id: p6d, text: "Hôm nay Tom đến lúc 6 giờ 30.", lang: vi }
+    answer:
+      correct_option_id: k4a
+    explanation:
+      vi: "kann heute leider nicht kommen = tiếc là hôm nay không đến được; am Mittwoch = thứ Tư; um halb sieben = 6:30 (không phải 7:30)."
+    display_answer: "Tom không đến hôm nay và hỏi Anna có rảnh thứ Tư lúc 6 giờ 30 không."
+
+  - key: de:exercise:a1u04l5-wb-freitag-kommen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u04-koennen
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Đức: \"Thứ Sáu lúc tám giờ cậu đến được không?\""
+      tokens:
+        - { id: t-kommen, text: kommen }
+        - { id: t-am, text: am }
+        - { id: t-um, text: um }
+        - { id: t-kommst, text: kommst }
+        - { id: t-du, text: du }
+        - { id: t-acht, text: acht }
+        - { id: t-im, text: im }
+        - { id: t-freitag, text: Freitag }
+        - { id: t-kannst, text: kannst }
+        - { id: t-uhr, text: Uhr }
+    answer:
+      orders:
+        - [t-kannst, t-du, t-am, t-freitag, t-um, t-acht, t-uhr, t-kommen]
+    explanation:
+      vi: "Câu hỏi có/không: động từ khiếm khuyết kannst đứng đầu, rồi du, mốc thời gian theo thứ tự ngày trước giờ (am Freitag um acht Uhr), động từ nguyên thể kommen ở cuối. Thứ đi với am, không đi với im."
+    display_answer: Kannst du am Freitag um acht Uhr kommen?
+
+  - key: de:exercise:a1u04l5-tr-test-montag
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a1u04-test
+    prompt:
+      source_text: Leider kann ich am Freitag nicht kommen. Am Montag habe ich einen Test.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tiếc là thứ Sáu tôi không đến được. Thứ Hai tôi có bài kiểm tra.
+        - Tiếc là thứ Sáu mình không đến được. Thứ Hai mình có bài kiểm tra.
+        - Tiếc là thứ Sáu tôi không thể đến. Thứ Hai tôi có bài kiểm tra.
+        - Tiếc là thứ Sáu mình không thể đến. Thứ Hai mình có bài kiểm tra.
+        - Rất tiếc, thứ Sáu tôi không đến được. Thứ Hai tôi có bài kiểm tra.
+        - Rất tiếc, thứ Sáu mình không đến được. Thứ Hai mình có bài kiểm tra.
+        - Tiếc là tôi không đến được vào thứ Sáu. Thứ Hai tôi có bài kiểm tra.
+        - Tiếc là tôi không thể đến vào thứ Sáu. Vào thứ Hai tôi có bài kiểm tra.
+        - Tiếc là thứ Sáu tôi không đến được. Thứ Hai tôi có một bài kiểm tra.
+        - Tiếc là thứ Sáu tôi không đến được. Thứ Hai tôi có bài thi.
+        - Tiếc là thứ Sáu mình không đến được. Thứ Hai mình có bài thi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tiếc là thứ Sáu tôi không đến được. Thứ Ba tôi có bài kiểm tra.
+        feedback_vi: Montag là thứ Hai; Dienstag mới là thứ Ba.
+        error_tag: vocabulary
+      - answer: Thứ Sáu tôi đến được. Thứ Hai tôi có bài kiểm tra.
+        feedback_vi: "kann … nicht kommen là không đến được; leider = tiếc là."
+        error_tag: negation_missed
+    explanation:
+      vi: "leider = tiếc là; kann … nicht kommen = không đến được; am Freitag = thứ Sáu, am Montag = thứ Hai; einen Test haben = có bài kiểm tra."
+    display_answer: Tiếc là thứ Sáu tôi không đến được. Thứ Hai tôi có bài kiểm tra.

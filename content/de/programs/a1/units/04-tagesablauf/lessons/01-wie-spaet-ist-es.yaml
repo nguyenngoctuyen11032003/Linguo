@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u04-wie-spaet-ist-es
+order_index: 1
+level: a1
+title:
+  vi: Mấy giờ rồi? (Wie spät ist es?)
+objectives:
+  - vi: Hỏi giờ và nói giờ theo cách chính thức (vierzehn Uhr dreißig) lẫn thân mật (Viertel nach, Viertel vor, halb).
+  - vi: Hiểu đúng halb drei là 2 giờ 30, không phải 3 giờ 30.
+  - vi: Nói việc xảy ra lúc mấy giờ (um) và từ mấy giờ đến mấy giờ (von … bis).
+  - vi: Gọi tên các buổi trong ngày và phân biệt Uhr (giờ trên đồng hồ) với Stunde (một tiếng).
+estimated_minutes: 15
+skills: [grammar, vocabulary, listening]
+prerequisites: [de:lesson:a1u03-wiederholung]
+items:
+  - item: de:item:a1u04-g-uhrzeit
+  - item: de:item:a1u04-g-um-von-bis
+  - item: de:item:a1u04-stunde
+  - item: de:item:a1u04-minute
+  - item: de:item:a1u04-halb
+  - item: de:item:a1u04-viertel
+  - item: de:item:a1u04-spaet
+  - item: de:item:a1u04-der-morgen
+  - item: de:item:a1u04-vormittag
+  - item: de:item:a1u04-nachmittag
+  - item: de:item:a1u04-abend
+  - item: de:item:a1u04-nacht
+  - item: de:item:a1u04-mittag
+  - item: de:item:a1u04-sekunde
+  - item: de:item:a1u04-uhrzeit
+  - item: de:item:a1u04-dauern
+  - item: de:item:a1u01-g-zahlen-bis-100
+    role: reuse
+  - item: de:item:p0u2-g-s-laute
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hỏi được \"Mấy giờ rồi?\", trả lời được \"Hai giờ rưỡi\", \"Tám giờ kém mười lăm\" và nói được lịch trong ngày như \"Tôi làm việc từ 9 giờ đến 17 giờ\" bằng tiếng Đức."
+  - type: explain
+    text:
+      vi: "Hỏi giờ có hai cách ngang nhau: Wie spät ist es? và Wie viel Uhr ist es? Trả lời luôn bắt đầu bằng Es ist …: Es ist drei Uhr. Tiếng Việt nói \"Ba giờ rồi\" không cần chủ ngữ, nhưng câu Đức bắt buộc có es."
+  - type: explain
+    text:
+      vi: "Cách chính thức (nhà ga, đài, giờ làm việc) dùng 24 giờ: số giờ + Uhr + số phút. 7:05 = sieben Uhr fünf, 18:45 = achtzehn Uhr fünfundvierzig. Chữ Uhr đứng giữa giờ và phút, giống \"giờ\" trong \"7 giờ 5\"."
+  - type: explain
+    text:
+      vi: "Cách thân mật (nói chuyện hằng ngày) dùng 12 giờ và không có chữ Uhr: phút + nach (quá) / vor (kém) + giờ. 3:10 = zehn nach drei, 8:40 = zwanzig vor neun; 15 phút là Viertel: Viertel nach zwei (2:15), Viertel vor drei (2:45)."
+  - type: explain
+    text:
+      vi: "halb + giờ SAU = giờ trước rưỡi: halb drei = 2:30, halb acht = 7:30. Người Đức nghĩ \"đã đi được nửa đường tới 3 giờ\". Đây là chỗ người Việt nhầm nhiều nhất, vì tiếng Việt nói \"hai rưỡi\" theo giờ trước."
+  - type: explain
+    text:
+      vi: "Nói việc xảy ra lúc mấy giờ: um + giờ (Der Kurs beginnt um acht Uhr); khoảng thời gian: von … bis … (von neun bis siebzehn Uhr). Câu hỏi là Wann …? (Khi nào?). Các buổi: am Morgen, am Vormittag, am Mittag, am Nachmittag, am Abend, nhưng in der Nacht; bạn học cứ dùng như cụm cố định, bài 4 sẽ giải thích am."
+  - type: explain
+    text:
+      vi: "Uhr là thời điểm trên đồng hồ (um zwei Uhr = lúc 2 giờ); Stunde là độ dài một tiếng (zwei Stunden = hai tiếng). Tiếng Việt dùng chung chữ \"giờ\" cho cả hai nên dễ lẫn: \"học hai giờ\" là zwei Stunden, không phải zwei Uhr."
+  - type: deep_explain
+    text:
+      vi: "Cách thân mật còn có fünf vor halb drei (2:25) và fünf nach halb drei (2:35): lấy mốc halb rồi cộng trừ 5 phút. Một giờ đúng nói Es ist ein Uhr hoặc Es ist eins (không nói \"eins Uhr\"). Ở Đông và Nam nước Đức, Áo, bạn có thể nghe viertel drei (= 2:15) và dreiviertel drei (= 2:45); chỉ cần nhận ra, khi nói hãy dùng Viertel nach/vor. Người Đức coi trọng đúng giờ: hẹn um acht Uhr nghĩa là có mặt lúc 8 giờ, đến muộn vài phút nên nhắn trước."
+  - type: example
+    target: "Wie spät ist es? – Es ist halb neun."
+    target_lang: de
+    translation:
+      vi: Mấy giờ rồi? – Tám giờ rưỡi.
+    note:
+      vi: "halb neun = 8:30 (nửa đường tới 9 giờ). sp trong spät đọc là \"shp\" như st trong Stunde. Câu hỏi không có du/Sie nên dùng được với mọi người."
+  - type: example
+    target: "Der Zug fährt um vierzehn Uhr dreißig."
+    target_lang: de
+    translation:
+      vi: Tàu chạy lúc 14 giờ 30.
+    note:
+      vi: Ở nhà ga dùng giờ chính thức (24 giờ). Cùng giờ ấy, khi nói chuyện thân mật là halb drei.
+  - type: example
+    target: "Ich arbeite von neun bis siebzehn Uhr."
+    target_lang: de
+    translation:
+      vi: Tôi làm việc từ 9 giờ đến 17 giờ.
+    note:
+      vi: "von … bis … nói khoảng thời gian; chỉ cần một chữ Uhr ở cuối."
+  - type: example
+    target: "Entschuldigung, wie viel Uhr ist es? – Es ist Viertel nach zwei."
+    target_lang: de
+    translation:
+      vi: Xin lỗi, bây giờ là mấy giờ ạ? – Hai giờ mười lăm.
+    note:
+      vi: "Hỏi người lạ trên đường: mở đầu bằng Entschuldigung cho lịch sự. Viertel nach zwei = 2:15."
+  - type: example
+    target: "Der Film dauert zwei Stunden. Er beginnt um acht Uhr."
+    target_lang: de
+    translation:
+      vi: Bộ phim dài hai tiếng. Phim bắt đầu lúc tám giờ.
+    note:
+      vi: "Độ dài dùng Stunden, thời điểm dùng Uhr. Er thay cho der Film (giống đực)."
+  - type: common_mistake
+    wrong: "Es ist halb zwei."
+    right: "Es ist halb drei."
+    target_lang: de
+    note:
+      vi: "Muốn nói \"hai giờ rưỡi\" (2:30) thì halb đi với giờ SAU: halb drei. halb zwei là 1:30."
+  - type: common_mistake
+    wrong: "Der Kurs dauert zwei Uhr."
+    right: "Der Kurs dauert zwei Stunden."
+    target_lang: de
+    note:
+      vi: "Nói độ dài (kéo dài bao lâu) dùng Stunde/Stunden; Uhr chỉ dùng cho thời điểm trên đồng hồ."
+  - type: common_mistake
+    wrong: "Ist drei Uhr."
+    right: "Es ist drei Uhr."
+    target_lang: de
+    note:
+      vi: Câu tiếng Đức cần chủ ngữ; khi nói giờ, chủ ngữ là es.
+  - type: common_mistake
+    wrong: "Ich komme in acht Uhr."
+    right: "Ich komme um acht Uhr."
+    target_lang: de
+    note:
+      vi: "\"Lúc\" + giờ luôn là um, không dùng in hay am."
+  - type: summary
+    points:
+      - vi: "Hỏi giờ: Wie spät ist es? / Wie viel Uhr ist es? – Es ist …"
+      - vi: "Chính thức: giờ + Uhr + phút (14:30 = vierzehn Uhr dreißig)."
+      - vi: "Thân mật: zehn nach drei, zwanzig vor neun, Viertel nach/vor, không có Uhr."
+      - vi: "halb + giờ sau: halb drei = 2:30."
+      - vi: "um acht Uhr (lúc), von neun bis siebzehn Uhr (từ … đến), Wann …? (khi nào)."
+      - vi: "Uhr = thời điểm; Stunde = một tiếng; dauern = kéo dài."
+      - vi: "am Morgen, am Vormittag, am Mittag, am Nachmittag, am Abend, in der Nacht."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u04l1-mcq-halb-drei
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u04-halb
+    prompt:
+      stem: "\"Es ist halb drei.\" Bây giờ là mấy giờ?"
+      stem_lang: vi
+      options:
+        - { id: k7p, text: "2 giờ 30", lang: vi }
+        - { id: w2d, text: "3 giờ 30", lang: vi }
+        - { id: r5m, text: "2 giờ 15", lang: vi }
+        - { id: z9h, text: "3 giờ 15", lang: vi }
+    answer:
+      correct_option_id: k7p
+    explanation:
+      vi: "halb + giờ sau: halb drei là nửa đường tới 3 giờ, tức 2:30. 3:30 sẽ là halb vier; 2:15 là Viertel nach zwei."
+    display_answer: "2 giờ 30"
+
+  - key: de:exercise:a1u04l1-listen-viertel-vor
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u04-viertel
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Es ist Viertel vor acht."
+      options:
+        - { id: m3t, text: "7 giờ 45", lang: vi }
+        - { id: b8x, text: "8 giờ 15", lang: vi }
+        - { id: q4n, text: "8 giờ 45", lang: vi }
+        - { id: f6s, text: "7 giờ 15", lang: vi }
+    answer:
+      correct_option_id: m3t
+    explanation:
+      vi: "Viertel vor acht = còn 15 phút nữa đến 8 giờ, tức 7:45 (tám giờ kém mười lăm). vor là \"kém\", nach là \"quá\"."
+    display_answer: "7 giờ 45"
+
+  - key: de:exercise:a1u04l1-fill-um-stunden
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u04-g-um-von-bis
+    prompt:
+      template: "Der Kurs beginnt {{b1}} neun Uhr und dauert zwei {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 8 }
+      hint_levels:
+        - "Nghĩa: Khoá học bắt đầu lúc chín giờ và kéo dài hai tiếng."
+        - "Gợi ý: \"lúc\" + giờ là một giới từ ngắn; \"hai tiếng\" là độ dài, số nhiều."
+    answer:
+      blanks:
+        b1: [um]
+        b2: [Stunden]
+    known_wrong:
+      - answer: in
+        feedback_vi: "\"Lúc\" + giờ dùng um, không dùng in."
+        error_tag: preposition
+      - answer: am
+        feedback_vi: "am dùng cho buổi, thứ; với giờ đồng hồ dùng um."
+        error_tag: preposition
+      - answer: Uhr
+        feedback_vi: Kéo dài hai tiếng là độ dài, nên dùng Stunden; Uhr chỉ thời điểm.
+        error_tag: uhr_stunde
+      - answer: Stunde
+        feedback_vi: Sau zwei cần số nhiều - zwei Stunden.
+        error_tag: plural_form
+    explanation:
+      vi: "Thời điểm bắt đầu dùng um + giờ (um neun Uhr). Kéo dài bao lâu dùng Stunde; hai tiếng là số nhiều nên zwei Stunden."
+    display_answer: "Der Kurs beginnt um neun Uhr und dauert zwei Stunden."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u04l1-fill-von-bis
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-um-von-bis
+    prompt:
+      template: "Lan arbeitet {{b1}} acht {{b2}} sechzehn Uhr."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [von]
+        b2: [bis]
+    known_wrong:
+      - answer: um
+        feedback_vi: "um chỉ một thời điểm; khoảng thời gian \"từ … đến …\" là von … bis …."
+        error_tag: preposition
+      - answer: nach
+        feedback_vi: "\"Đến\" (giờ) trong khoảng thời gian là bis, không phải nach."
+        error_tag: preposition
+      - answer: zu
+        feedback_vi: "\"Đến\" (giờ) trong khoảng thời gian là bis, không phải zu."
+        error_tag: preposition
+    explanation:
+      vi: "Nói khoảng thời gian làm việc: von (từ) + giờ bắt đầu, bis (đến) + giờ kết thúc. Lan làm từ 8 giờ đến 16 giờ."
+    display_answer: "Lan arbeitet von acht bis sechzehn Uhr."
+
+  - key: de:exercise:a1u04l1-tr-halb-acht
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-uhrzeit
+    prompt:
+      source_text: Bây giờ là bảy giờ rưỡi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Es ist halb acht.
+        - Es ist jetzt halb acht.
+        - Jetzt ist es halb acht.
+        - Es ist sieben Uhr dreißig.
+        - Es ist jetzt sieben Uhr dreißig.
+        - Jetzt ist es sieben Uhr dreißig.
+        - Es ist neunzehn Uhr dreißig.
+        - Es ist 7 Uhr 30.
+        - Es ist 7:30 Uhr.
+        - Es ist 19 Uhr 30.
+        - Es ist 19:30 Uhr.
+    known_wrong:
+      - answer: Es ist halb sieben.
+        feedback_vi: halb sieben là 6:30. 7:30 là nửa đường tới 8 giờ - halb acht.
+        error_tag: halb_hour
+      - answer: Ist halb acht.
+        feedback_vi: Thiếu chủ ngữ es - Es ist halb acht.
+        error_tag: missing_subject
+      - answer: Es ist sieben Stunden dreißig.
+        feedback_vi: Giờ trên đồng hồ dùng Uhr, không dùng Stunden.
+        error_tag: uhr_stunde
+    explanation:
+      vi: "Bảy giờ rưỡi = nửa đường tới 8 giờ, nên thân mật là halb acht; chính thức là sieben Uhr dreißig. Câu luôn có chủ ngữ es."
+    display_answer: Es ist halb acht.
+
+  - key: de:exercise:a1u04l1-tr-arbeite-von-bis
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-um-von-bis
+    prompt:
+      source_text: Tôi làm việc từ 9 giờ đến 17 giờ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich arbeite von neun bis siebzehn Uhr.
+        - Ich arbeite von neun Uhr bis siebzehn Uhr.
+        - Ich arbeite von 9 bis 17 Uhr.
+        - Ich arbeite von 9 Uhr bis 17 Uhr.
+        - Von neun bis siebzehn Uhr arbeite ich.
+        - Von neun Uhr bis siebzehn Uhr arbeite ich.
+        - Von 9 bis 17 Uhr arbeite ich.
+        - Von 9 Uhr bis 17 Uhr arbeite ich.
+    known_wrong:
+      - answer: Ich arbeite von neun zu siebzehn Uhr.
+        feedback_vi: "\"Đến\" trong khoảng thời gian là bis - von neun bis siebzehn Uhr."
+        error_tag: preposition
+      - answer: Ich arbeite um neun bis siebzehn Uhr.
+        feedback_vi: um chỉ một thời điểm; khoảng thời gian dùng von … bis ….
+        error_tag: preposition
+      - answer: Von neun bis siebzehn Uhr ich arbeite.
+        feedback_vi: Khi đặt von … bis … lên đầu, động từ vẫn ở vị trí 2 - Von neun bis siebzehn Uhr arbeite ich.
+        error_tag: verb_position
+      - answer: Ich arbeiten von neun bis siebzehn Uhr.
+        feedback_vi: Với ich, động từ có đuôi -e - ich arbeite.
+        error_tag: verb_form
+    explanation:
+      vi: "Từ … đến … là von … bis …; chữ Uhr chỉ cần một lần ở cuối. Nếu đưa von … bis … lên đầu câu, động từ arbeite vẫn đứng thứ hai, chủ ngữ ich ra sau."
+    display_answer: Ich arbeite von neun bis siebzehn Uhr.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u04l1-mcq-fremde-fragen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-spaet
+    prompt:
+      stem: "Điện thoại hết pin, bạn muốn hỏi một người lạ trên phố bây giờ là mấy giờ. Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: h2c, text: "Entschuldigung, wie spät ist es?", lang: de }
+        - { id: v8r, text: "Entschuldigung, wann ist es?", lang: de }
+        - { id: g5j, text: "Entschuldigung, wie viele Stunden ist es?", lang: de }
+        - { id: t1y, text: "Entschuldigung, wie spät sind Sie?", lang: de }
+    answer:
+      correct_option_id: h2c
+    explanation:
+      vi: "Câu hỏi giờ cố định là Wie spät ist es? (hoặc Wie viel Uhr ist es?). Wann hỏi một việc xảy ra lúc nào; Stunden là độ dài; \"wie spät sind Sie\" không có nghĩa."
+    display_answer: "Entschuldigung, wie spät ist es?"
+
+  - key: de:exercise:a1u04l1-tr-viertel-nach
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-viertel
+    prompt:
+      source_text: Der Kurs beginnt um Viertel nach sechs.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lớp học bắt đầu lúc sáu giờ mười lăm.
+        - Lớp học bắt đầu lúc sáu giờ mười lăm phút.
+        - Lớp học bắt đầu lúc 6 giờ 15.
+        - Lớp học bắt đầu lúc 6 giờ 15 phút.
+        - Lớp học bắt đầu lúc 6:15.
+        - Lớp bắt đầu lúc sáu giờ mười lăm.
+        - Lớp bắt đầu lúc 6 giờ 15.
+        - Lớp bắt đầu lúc 6:15.
+        - Khoá học bắt đầu lúc sáu giờ mười lăm.
+        - Khoá học bắt đầu lúc 6 giờ 15.
+        - Khoá học bắt đầu lúc 6:15.
+        - Lớp học bắt đầu lúc 18 giờ 15.
+        - Khoá học bắt đầu lúc 18 giờ 15.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Lớp học bắt đầu lúc sáu giờ kém mười lăm.
+        feedback_vi: "nach là \"quá\", không phải \"kém\" - Viertel nach sechs = 6:15."
+        error_tag: nach_vor
+      - answer: Lớp học bắt đầu lúc sáu giờ rưỡi.
+        feedback_vi: Viertel là 15 phút, không phải nửa giờ.
+        error_tag: viertel_halb
+    explanation:
+      vi: "Viertel = 15 phút, nach = quá, nên Viertel nach sechs là 6 giờ 15. um = lúc; der Kurs là lớp/khoá học."
+    display_answer: Lớp học bắt đầu lúc sáu giờ mười lăm.
+
+  - key: de:exercise:a1u04l1-wb-unterricht-halb
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-uhrzeit
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Buổi học bắt đầu lúc tám giờ rưỡi.\""
+      tokens:
+        - { id: t-halb, text: halb }
+        - { id: t-beginnt, text: beginnt }
+        - { id: t-acht, text: acht }
+        - { id: t-unterricht, text: Unterricht }
+        - { id: t-um, text: um }
+        - { id: t-der, text: der }
+        - { id: t-neun, text: neun }
+        - { id: t-am, text: am }
+    answer:
+      orders:
+        - [t-der, t-unterricht, t-beginnt, t-um, t-halb, t-neun]
+        - [t-um, t-halb, t-neun, t-beginnt, t-der, t-unterricht]
+    explanation:
+      vi: "8:30 là halb neun (nửa đường tới 9 giờ), không phải halb acht. \"Lúc\" + giờ là um. Động từ beginnt đứng vị trí 2, dù câu mở đầu bằng der Unterricht hay um halb neun."
+    display_answer: Der Unterricht beginnt um halb neun.

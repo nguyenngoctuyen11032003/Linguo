@@ -1,0 +1,1266 @@
+# Học liệu unit A1U04 "Một ngày của tôi (Mein Tag)": giờ, sinh hoạt hằng ngày, động từ tách, động từ khiếm khuyết, thứ – ngày – tháng.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Mấy giờ rồi? ----------------
+  - key: de:item:a1u04-g-uhrzeit
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Uhrzeit: vierzehn Uhr dreißig / halb drei"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Cách chính thức (đài, nhà ga, công việc) đọc giờ theo 24 giờ: số giờ + Uhr + số phút (14:30 = vierzehn Uhr dreißig). Cách thân mật dùng 12 giờ với nach (quá), vor (kém), Viertel (15 phút) và halb (rưỡi). Chú ý: halb drei là 2 giờ 30 (nửa tiếng trước 3 giờ), không phải 3 giờ 30."
+      examples:
+        - target: "Es ist vierzehn Uhr dreißig."
+          translation:
+            vi: Bây giờ là 14 giờ 30.
+        - target: "Es ist halb drei."
+          translation:
+            vi: Bây giờ là hai giờ rưỡi.
+        - target: "Es ist Viertel vor acht."
+          translation:
+            vi: Bây giờ là tám giờ kém mười lăm.
+      confusion:
+        vi: "Uhr là giờ trên đồng hồ (Es ist drei Uhr = Bây giờ là 3 giờ); Stunde là khoảng thời gian một tiếng (drei Stunden = ba tiếng đồng hồ)."
+
+  - key: de:item:a1u04-g-um-von-bis
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "um acht Uhr · von neun bis siebzehn Uhr"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Nói việc xảy ra vào lúc mấy giờ dùng um + giờ (um acht Uhr = lúc 8 giờ). Khoảng thời gian từ… đến… là von … bis …. Hỏi giờ hiện tại: Wie spät ist es? / Wie viel Uhr ist es?; hỏi lúc nào: Wann …?"
+      examples:
+        - target: "Der Unterricht beginnt um acht Uhr."
+          translation:
+            vi: Buổi học bắt đầu lúc 8 giờ.
+        - target: "Ich arbeite von neun bis siebzehn Uhr."
+          translation:
+            vi: Tôi làm việc từ 9 giờ đến 17 giờ.
+        - target: "Wie spät ist es? – Es ist zehn nach vier."
+          translation:
+            vi: Mấy giờ rồi? – Bốn giờ mười.
+      confusion:
+        vi: "Wie spät ist es? hỏi bây giờ là mấy giờ; Wann …? hỏi một việc xảy ra lúc nào. Câu trả lời cho Wann luôn có um: Um sieben Uhr."
+
+  - key: de:item:a1u04-stunde
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Stunde, -n"
+      ipa: /ˈʃtʊndə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ, tiếng đồng hồ (khoảng thời gian 60 phút); tiết học
+      examples:
+        - target: "Ich lerne jeden Tag eine Stunde Deutsch."
+          translation:
+            vi: Mỗi ngày tôi học tiếng Đức một tiếng.
+      pronunciation_note:
+        vi: "st ở đầu từ đọc là \"sht\" (ʃt); u ngắn như \"u\" trong \"cúp\"."
+      confusion:
+        vi: "Stunde đo độ dài (zwei Stunden = hai tiếng); Uhr chỉ thời điểm trên đồng hồ (um zwei Uhr = lúc hai giờ)."
+
+  - key: de:item:a1u04-minute
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Minute, -n"
+      ipa: /miˈnuːtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phút
+      examples:
+        - target: "Ich warte zehn Minuten."
+          translation:
+            vi: Tôi đợi mười phút.
+      pronunciation_note:
+        vi: Trọng âm ở âm thứ hai mi-NU-te; u dài.
+
+  - key: de:item:a1u04-halb
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: halb
+      ipa: /halp/
+      pos: tính từ
+    back:
+      meaning:
+        vi: "nửa, rưỡi; trong giờ thân mật: halb + giờ sau = giờ trước rưỡi (halb drei = 2 giờ 30)"
+      examples:
+        - target: "Es ist halb acht."
+          translation:
+            vi: Bây giờ là bảy giờ rưỡi.
+        - target: "Ich warte eine halbe Stunde."
+          translation:
+            vi: Tôi đợi nửa tiếng.
+      pronunciation_note:
+        vi: "b ở cuối từ đọc thành \"p\": halb đọc là \"halp\"."
+      confusion:
+        vi: "Người Việt hay hiểu halb drei là \"ba giờ rưỡi\". Tiếng Đức đếm \"nửa đường tới 3 giờ\", nên halb drei = 2:30, halb neun = 8:30."
+
+  - key: de:item:a1u04-viertel
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Viertel, -"
+      ipa: /ˈfɪrtl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: "một phần tư; trong giờ: 15 phút (Viertel nach = quá 15 phút, Viertel vor = kém 15 phút)"
+      examples:
+        - target: "Es ist Viertel nach neun."
+          translation:
+            vi: Bây giờ là chín giờ mười lăm.
+        - target: "Der Film beginnt um Viertel vor sieben."
+          translation:
+            vi: Phim bắt đầu lúc bảy giờ kém mười lăm.
+      pronunciation_note:
+        vi: "v trong Viertel đọc là \"f\" (\"fia-tel\"), không đọc như v tiếng Việt."
+
+  - key: de:item:a1u04-spaet
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: spät
+      ipa: /ʃpɛːt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: muộn, trễ
+      examples:
+        - target: "Wie spät ist es?"
+          translation:
+            vi: Mấy giờ rồi?
+        - target: "Es ist schon spät."
+          translation:
+            vi: Đã muộn rồi.
+      pronunciation_note:
+        vi: "sp ở đầu từ đọc là \"shp\"; ä dài như \"e\" kéo dài."
+      confusion:
+        vi: "Wie spät ist es? nghĩa đen là \"muộn đến đâu rồi?\" nhưng chỉ là câu hỏi giờ bình thường, không có ý chê muộn."
+
+  - key: de:item:a1u04-der-morgen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Morgen, -"
+      ipa: /ˈmɔrɡn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi sáng (sáng sớm, khoảng đến 9–10 giờ)
+      examples:
+        - target: "Am Morgen trinke ich Kaffee."
+          translation:
+            vi: Buổi sáng tôi uống cà phê.
+      confusion:
+        vi: "der Morgen (danh từ, viết hoa) = buổi sáng; morgen (trạng từ, viết thường) = ngày mai."
+
+  - key: de:item:a1u04-vormittag
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Vormittag, -e"
+      ipa: /ˈfoːɐ̯mɪtaːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi sáng muộn (khoảng 9 giờ đến trưa)
+      examples:
+        - target: "Am Vormittag habe ich Kurs."
+          translation:
+            vi: Buổi sáng tôi có lớp.
+      pronunciation_note:
+        vi: "v đọc là \"f\"; g cuối từ đọc thành \"k\" (Vormittak)."
+      confusion:
+        vi: "vor = trước; Vormittag = \"trước giữa trưa\", Nachmittag = \"sau giữa trưa\"."
+
+  - key: de:item:a1u04-nachmittag
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Nachmittag, -e"
+      ipa: /ˈnaːxmɪtaːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi chiều
+      examples:
+        - target: "Am Nachmittag lerne ich Deutsch."
+          translation:
+            vi: Buổi chiều tôi học tiếng Đức.
+      pronunciation_note:
+        vi: "ch sau a đọc như \"kh\" tiếng Việt; g cuối đọc thành \"k\"."
+
+  - key: de:item:a1u04-abend
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Abend, -e"
+      ipa: /ˈaːbn̩t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi tối
+      examples:
+        - target: "Am Abend koche ich."
+          translation:
+            vi: Buổi tối tôi nấu ăn.
+        - target: "Guten Abend!"
+          translation:
+            vi: Chào buổi tối!
+      pronunciation_note:
+        vi: "d cuối từ đọc thành \"t\": A-bent."
+
+  - key: de:item:a1u04-nacht
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Nacht, ¨-e"
+      ipa: /naxt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đêm, ban đêm
+      examples:
+        - target: "In der Nacht schlafe ich."
+          translation:
+            vi: Ban đêm tôi ngủ.
+      pronunciation_note:
+        vi: "ch sau a đọc như \"kh\" tiếng Việt; số nhiều là die Nächte."
+      confusion:
+        vi: "Các buổi khác dùng am (am Morgen, am Abend), riêng ban đêm nói in der Nacht."
+
+  - key: de:item:a1u04-mittag
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Mittag, -e"
+      ipa: /ˈmɪtaːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi trưa, giữa trưa
+      examples:
+        - target: "Am Mittag habe ich eine Stunde Zeit."
+          translation:
+            vi: Buổi trưa tôi có một tiếng rảnh.
+      pronunciation_note:
+        vi: "g cuối từ đọc thành \"k\": Mittak."
+
+  - key: de:item:a1u04-sekunde
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Sekunde, -n"
+      ipa: /zeˈkʊndə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giây
+      examples:
+        - target: "Eine Minute hat sechzig Sekunden."
+          translation:
+            vi: Một phút có sáu mươi giây.
+      pronunciation_note:
+        vi: "s đầu âm tiết đọc gần như \"d\" giọng Bắc (hữu thanh); trọng âm se-KUN-de."
+
+  - key: de:item:a1u04-uhrzeit
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Uhrzeit, -en"
+      ipa: /ˈuːɐ̯tsaɪ̯t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ (thời điểm trên đồng hồ)
+      examples:
+        - target: "Die Uhrzeit auf meinem Handy stimmt nicht."
+          translation:
+            vi: Giờ trên điện thoại của tôi không đúng.
+      confusion:
+        vi: Từ ghép die Uhr + die Zeit, lấy giống của từ cuối (die Zeit) nên là die Uhrzeit.
+
+  - key: de:item:a1u04-dauern
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: dauern
+      ipa: /ˈdaʊ̯ɐn/
+      pos: động từ
+    back:
+      meaning:
+        vi: kéo dài, mất (bao lâu)
+      examples:
+        - target: "Der Kurs dauert zwei Stunden."
+          translation:
+            vi: Khoá học kéo dài hai tiếng.
+        - target: "Wie lange dauert der Film?"
+          translation:
+            vi: Bộ phim dài bao lâu?
+      confusion:
+        vi: "Chủ ngữ của dauern là sự việc (der Kurs, der Film), không phải người: nói Die Fahrt dauert zehn Minuten, không nói \"Ich dauere\"."
+
+  # ---------------- Bài 2: động từ tách ----------------
+  - key: de:item:a1u04-g-trennbare-verben
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "trennbare Verben: aufstehen → ich stehe um sieben Uhr auf"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ tách có tiền tố như an-, auf-, aus-, ein-, mit-, fern-, zurück-. Trong câu, phần động từ chia đứng ở vị trí 2, còn tiền tố tách ra đứng cuối câu. Trọng âm luôn rơi vào tiền tố: AUFstehen, ANrufen."
+      examples:
+        - target: "Ich stehe um sieben Uhr auf."
+          translation:
+            vi: Tôi dậy lúc bảy giờ.
+        - target: "Lena ruft ihre Mutter an."
+          translation:
+            vi: Lena gọi điện cho mẹ.
+        - target: "Siehst du am Abend fern?"
+          translation:
+            vi: Buổi tối bạn có xem tivi không?
+      confusion:
+        vi: "Không phải từ nào bắt đầu bằng \"früh\" hay \"be-\" cũng tách: frühstücken không tách (Ich frühstücke), beginnen không tách (Der Film beginnt)."
+
+  - key: de:item:a1u04-g-satzklammer
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Satzklammer: Ich rufe heute Anna an."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Câu tiếng Đức giống một cái \"khung\": động từ chia đứng ở vị trí 2, phần còn lại của động từ đứng cuối câu. Mọi thông tin khác (thời gian, người, vật) nằm giữa khung. Dù câu dài đến đâu, tiền tố vẫn ở cuối."
+      examples:
+        - target: "Ich räume heute mein Zimmer auf."
+          translation:
+            vi: Hôm nay tôi dọn phòng mình.
+        - target: "Heute kaufe ich mit Anna ein."
+          translation:
+            vi: Hôm nay tôi đi mua sắm với Anna.
+      confusion:
+        vi: "Tiếng Việt để \"dậy\", \"gọi điện\" thành một khối; tiếng Đức tách đôi động từ thành hai đầu khung, nên phải nghe đến cuối câu mới biết đủ nghĩa."
+
+  - key: de:item:a1u04-aufstehen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: aufstehen
+      ipa: /ˈaʊ̯fˌʃteːən/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: thức dậy, đứng dậy (rời giường)
+      examples:
+        - target: "Ich stehe um sechs Uhr auf."
+          translation:
+            vi: Tôi dậy lúc sáu giờ.
+      pronunciation_note:
+        vi: "Trọng âm ở AUF; st đọc là \"sht\"."
+      confusion:
+        vi: "aufwachen = tỉnh giấc (mở mắt); aufstehen = ra khỏi giường."
+
+  - key: de:item:a1u04-fruehstuecken
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: frühstücken
+      ipa: /ˈfryːʃtʏkn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: ăn sáng
+      examples:
+        - target: "Wir frühstücken um halb acht."
+          translation:
+            vi: Chúng tôi ăn sáng lúc bảy giờ rưỡi.
+      pronunciation_note:
+        vi: "ü dài rồi ü ngắn: tròn môi như đọc \"u\" nhưng lưỡi đặt như \"i\"."
+      confusion:
+        vi: "frühstücken KHÔNG phải động từ tách: Ich frühstücke um sieben Uhr (không nói \"Ich stücke früh\")."
+
+  - key: de:item:a1u04-einkaufen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: einkaufen
+      ipa: /ˈaɪ̯nˌkaʊ̯fn̩/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: đi mua sắm, đi chợ (mua đồ dùng hằng ngày)
+      examples:
+        - target: "Ich kaufe heute ein."
+          translation:
+            vi: Hôm nay tôi đi chợ.
+        - target: "Wann kaufst du ein?"
+          translation:
+            vi: Khi nào bạn đi mua đồ?
+      confusion:
+        vi: "einkaufen thường không cần tân ngữ (đi chợ nói chung); kaufen + vật cụ thể: Ich kaufe Brot."
+
+  - key: de:item:a1u04-anrufen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: anrufen
+      ipa: /ˈanˌruːfn̩/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: gọi điện cho ai
+      examples:
+        - target: "Ich rufe meine Mutter an."
+          translation:
+            vi: Tôi gọi điện cho mẹ.
+      confusion:
+        vi: "Người được gọi là tân ngữ Akkusativ, không có giới từ: Ich rufe Anna an (không nói \"für Anna\" theo kiểu \"gọi cho Anna\")."
+
+  - key: de:item:a1u04-fernsehen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "fernsehen (du siehst fern)"
+      ipa: /ˈfɛrnˌzeːən/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: xem tivi
+      examples:
+        - target: "Mein Vater sieht jeden Abend fern."
+          translation:
+            vi: Bố tôi tối nào cũng xem tivi.
+      confusion:
+        vi: "Đổi nguyên âm e → ie ở du/er: du siehst fern, er sieht fern; ich sehe fern giữ e."
+
+  - key: de:item:a1u04-aufraeumen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: aufräumen
+      ipa: /ˈaʊ̯fˌrɔɪ̯mən/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: dọn dẹp, sắp xếp gọn gàng
+      examples:
+        - target: "Am Samstag räume ich die Wohnung auf."
+          translation:
+            vi: Thứ Bảy tôi dọn nhà.
+      pronunciation_note:
+        vi: "äu đọc như \"oi\": AUF-roi-men."
+
+  - key: de:item:a1u04-anfangen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "anfangen (du fängst an)"
+      ipa: /ˈanˌfaŋən/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: bắt đầu
+      examples:
+        - target: "Der Kurs fängt um neun Uhr an."
+          translation:
+            vi: Khoá học bắt đầu lúc chín giờ.
+      confusion:
+        vi: "Đổi nguyên âm a → ä ở du/er: du fängst an, er fängt an. Nghĩa giống beginnen, nhưng beginnen không tách: Der Kurs beginnt um neun Uhr."
+
+  - key: de:item:a1u04-schlafen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "schlafen (du schläfst)"
+      ipa: /ˈʃlaːfn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: ngủ
+      examples:
+        - target: "Am Sonntag schläft Minh lange."
+          translation:
+            vi: Chủ nhật Minh ngủ dậy muộn.
+      confusion:
+        vi: "Đổi a → ä ở du/er: du schläfst, er schläft. schlafen = đang ngủ; einschlafen = chìm vào giấc ngủ."
+
+  - key: de:item:a1u04-duschen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: duschen
+      ipa: /ˈdʊʃn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: tắm vòi sen
+      examples:
+        - target: "Ich dusche am Morgen."
+          translation:
+            vi: Tôi tắm vào buổi sáng.
+      pronunciation_note:
+        vi: "sch đọc như \"s\" uốn lưỡi, tròn môi (ʃ)."
+
+  - key: de:item:a1u04-frueh
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: früh
+      ipa: /fryː/
+      pos: trạng từ / tính từ
+    back:
+      meaning:
+        vi: sớm
+      examples:
+        - target: "Ich stehe früh auf."
+          translation:
+            vi: Tôi dậy sớm.
+      pronunciation_note:
+        vi: "h sau nguyên âm không đọc, chỉ báo ü dài."
+      confusion:
+        vi: "früh (sớm) ↔ spät (muộn)."
+
+  - key: de:item:a1u04-aufwachen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: aufwachen
+      ipa: /ˈaʊ̯fˌvaxn̩/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: tỉnh giấc, thức giấc
+      examples:
+        - target: "Ich wache um sechs Uhr auf, aber ich stehe um sieben Uhr auf."
+          translation:
+            vi: Tôi tỉnh giấc lúc sáu giờ nhưng bảy giờ mới dậy.
+      pronunciation_note:
+        vi: "w đọc là \"v\"; ch sau a đọc như \"kh\"."
+
+  - key: de:item:a1u04-einschlafen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "einschlafen (du schläfst ein)"
+      ipa: /ˈaɪ̯nˌʃlaːfn̩/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: ngủ thiếp đi, chìm vào giấc ngủ
+      examples:
+        - target: "Mein Sohn schläft um neun Uhr ein."
+          translation:
+            vi: Con trai tôi ngủ lúc chín giờ.
+      confusion:
+        vi: "einschlafen là khoảnh khắc bắt đầu ngủ; schlafen là trạng thái ngủ kéo dài (Ich schlafe acht Stunden)."
+
+  - key: de:item:a1u04-ausschlafen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "ausschlafen (du schläfst aus)"
+      ipa: /ˈaʊ̯sˌʃlaːfn̩/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: ngủ bù, ngủ cho đã (ngủ đến khi tự dậy)
+      examples:
+        - target: "Am Sonntag schlafe ich aus."
+          translation:
+            vi: Chủ nhật tôi ngủ cho đã.
+      confusion:
+        vi: "Ba động từ cùng gốc: schlafen (ngủ), einschlafen (thiếp đi), ausschlafen (ngủ đủ, ngủ bù). Đều đổi a → ä: du schläfst aus."
+
+  - key: de:item:a1u04-normalerweise
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: normalerweise
+      ipa: /nɔrˈmaːlɐˌvaɪ̯zə/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thường thì, bình thường
+      examples:
+        - target: "Normalerweise stehe ich um sieben Uhr auf."
+          translation:
+            vi: Thường thì tôi dậy lúc bảy giờ.
+      confusion:
+        vi: "Đứng đầu câu thì động từ chia vẫn ở vị trí 2, chủ ngữ đứng sau: Normalerweise frühstücke ich …"
+
+  # ---------------- Bài 3: động từ khiếm khuyết ----------------
+  - key: de:item:a1u04-g-modalverben
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Modalverben: können, müssen, wollen (ich kann, du musst, er will)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "können = có thể/biết làm, müssen = phải, wollen = muốn (ý định mạnh). Ở số ít nguyên âm đổi (können → kann, müssen → muss, wollen → will) và ich/er/sie/es không có đuôi: ich kann, er kann. Số nhiều chia như nguyên thể: wir können, sie müssen."
+      examples:
+        - target: "Ich kann gut kochen."
+          translation:
+            vi: Tôi nấu ăn giỏi.
+        - target: "Er muss heute arbeiten."
+          translation:
+            vi: Hôm nay anh ấy phải làm việc.
+        - target: "Willst du am Wochenende Deutsch lernen?"
+          translation:
+            vi: Cuối tuần bạn có muốn học tiếng Đức không?
+      confusion:
+        vi: "Không có đuôi -t ở ngôi thứ ba: er kann (không phải \"er kannt\"), sie muss (không phải \"sie musst\")."
+
+  - key: de:item:a1u04-g-modal-satzklammer
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Modalverb + Infinitiv am Ende: Ich muss heute lange arbeiten."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ khiếm khuyết đứng ở vị trí 2 và được chia; động từ chính để nguyên thể, đứng cuối câu. Không thêm zu. Động từ tách ở cuối câu thì viết liền: Ich muss früh aufstehen."
+      examples:
+        - target: "Ich kann heute nicht kommen."
+          translation:
+            vi: Hôm nay tôi không đến được.
+        - target: "Morgen muss ich früh aufstehen."
+          translation:
+            vi: Ngày mai tôi phải dậy sớm.
+      confusion:
+        vi: "Tiếng Việt nói \"có thể nấu phở\" (động từ ngay sau \"có thể\"); tiếng Đức đẩy động từ chính xuống cuối: Ich kann Pho kochen."
+
+  - key: de:item:a1u04-koennen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "können (ich kann, du kannst)"
+      ipa: /ˈkœnən/
+      pos: động từ khiếm khuyết
+    back:
+      meaning:
+        vi: có thể; biết (làm gì)
+      examples:
+        - target: "Kannst du heute Abend kommen?"
+          translation:
+            vi: Tối nay bạn đến được không?
+        - target: "Lan kann gut Deutsch sprechen."
+          translation:
+            vi: Lan nói tiếng Đức giỏi.
+      pronunciation_note:
+        vi: "ö ngắn: tròn môi như \"ô\" nhưng lưỡi đặt như \"e\"."
+
+  - key: de:item:a1u04-muessen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "müssen (ich muss, du musst)"
+      ipa: /ˈmʏsn̩/
+      pos: động từ khiếm khuyết
+    back:
+      meaning:
+        vi: phải
+      examples:
+        - target: "Ich muss jetzt gehen."
+          translation:
+            vi: Tôi phải đi bây giờ.
+      confusion:
+        vi: "Số ít không có ü: ich muss, du musst, er muss; số nhiều có ü: wir müssen."
+
+  - key: de:item:a1u04-wollen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "wollen (ich will, du willst)"
+      ipa: /ˈvɔlən/
+      pos: động từ khiếm khuyết
+    back:
+      meaning:
+        vi: muốn (có ý định rõ ràng)
+      examples:
+        - target: "Wir wollen am Samstag kochen."
+          translation:
+            vi: Thứ Bảy chúng tôi định nấu ăn.
+      confusion:
+        vi: "Ich will … nghe mạnh, dứt khoát; khi xin hay mời lịch sự dùng möchten: Ich möchte einen Kaffee."
+
+  - key: de:item:a1u04-kochen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kochen
+      ipa: /ˈkɔxn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: nấu ăn, nấu
+      examples:
+        - target: "Heute koche ich Pho."
+          translation:
+            vi: Hôm nay tôi nấu phở.
+      pronunciation_note:
+        vi: "ch sau o đọc như \"kh\" tiếng Việt."
+
+  - key: de:item:a1u04-putzen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: putzen
+      ipa: /ˈpʊtsn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: lau chùi, dọn vệ sinh
+      examples:
+        - target: "Am Samstag putze ich das Bad."
+          translation:
+            vi: Thứ Bảy tôi lau dọn phòng tắm.
+      pronunciation_note:
+        vi: "tz đọc là \"ts\"."
+      confusion:
+        vi: "putzen = lau chùi cho sạch; aufräumen = xếp đồ gọn gàng."
+
+  - key: de:item:a1u04-hausaufgabe
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Hausaufgabe, -n"
+      ipa: /ˈhaʊ̯sˌʔaʊ̯fɡaːbə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tập về nhà
+      examples:
+        - target: "Ich muss noch die Hausaufgaben machen."
+          translation:
+            vi: Tôi còn phải làm bài tập về nhà.
+      confusion:
+        vi: "Người Đức thường dùng số nhiều: Hausaufgaben machen = làm bài tập về nhà."
+
+  - key: de:item:a1u04-kurs
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Kurs, -e"
+      ipa: /kʊrs/
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoá học, lớp học
+      examples:
+        - target: "Der Deutschkurs ist am Montag und am Mittwoch."
+          translation:
+            vi: Lớp tiếng Đức vào thứ Hai và thứ Tư.
+
+  - key: de:item:a1u04-pause
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Pause, -n"
+      ipa: /ˈpaʊ̯zə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ nghỉ, giải lao
+      examples:
+        - target: "Wir machen zehn Minuten Pause."
+          translation:
+            vi: Chúng ta nghỉ mười phút.
+      confusion:
+        vi: "Pause machen = (chủ động) nghỉ giải lao; Pause haben = đang trong giờ nghỉ: Wir haben jetzt Pause."
+
+  - key: de:item:a1u04-leider
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: leider
+      ipa: /ˈlaɪ̯dɐ/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tiếc là, rất tiếc
+      examples:
+        - target: "Leider kann ich heute nicht."
+          translation:
+            vi: Tiếc là hôm nay tôi không được.
+      confusion:
+        vi: "leider đứng đầu câu thì động từ vẫn ở vị trí 2: Leider kann ich … (không nói \"Leider ich kann\")."
+
+  - key: de:item:a1u04-morgen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: morgen
+      ipa: /ˈmɔrɡn̩/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ngày mai
+      examples:
+        - target: "Morgen muss ich arbeiten."
+          translation:
+            vi: Ngày mai tôi phải làm việc.
+      confusion:
+        vi: "morgen (viết thường) = ngày mai; der Morgen (viết hoa) = buổi sáng. morgen früh = sáng mai."
+
+  - key: de:item:a1u04-spuelen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: spülen
+      ipa: /ˈʃpyːlən/
+      pos: động từ
+    back:
+      meaning:
+        vi: rửa (bát đĩa)
+      examples:
+        - target: "Nam spült jeden Abend das Geschirr."
+          translation:
+            vi: Tối nào Nam cũng rửa bát.
+      pronunciation_note:
+        vi: "sp đầu từ đọc \"shp\"; ü dài."
+
+  - key: de:item:a1u04-geschirr
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Geschirr (Sg.)"
+      ipa: /ɡəˈʃɪr/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bát đĩa (nói chung)
+      examples:
+        - target: "Ich muss noch das Geschirr spülen."
+          translation:
+            vi: Tôi còn phải rửa bát.
+      confusion:
+        vi: "Geschirr là danh từ tập hợp, dùng ở số ít: das Geschirr (cả chồng bát đĩa)."
+
+  - key: de:item:a1u04-ueben
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: üben
+      ipa: /ˈyːbn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: luyện tập, ôn luyện
+      examples:
+        - target: "Ich will jeden Tag Deutsch üben."
+          translation:
+            vi: Tôi muốn luyện tiếng Đức mỗi ngày.
+
+  - key: de:item:a1u04-test
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Test, -s"
+      ipa: /tɛst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài kiểm tra
+      examples:
+        - target: "Morgen haben wir einen Test."
+          translation:
+            vi: Ngày mai chúng tôi có bài kiểm tra.
+
+  # ---------------- Bài 4: thứ, ngày, tháng ----------------
+  - key: de:item:a1u04-g-am-im-um
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "am Montag · im Mai · um acht Uhr"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "am dùng cho thứ, ngày và buổi (am Montag, am Wochenende, am Abend, am 3. Mai). im dùng cho tháng và mùa (im Mai, im Sommer). um dùng cho giờ (um acht Uhr); riêng ban đêm nói in der Nacht."
+      examples:
+        - target: "Am Montag habe ich einen Deutschkurs."
+          translation:
+            vi: Thứ Hai tôi có lớp tiếng Đức.
+        - target: "Im Juli ist es heiß."
+          translation:
+            vi: Tháng Bảy trời nóng.
+        - target: "Wir kommen am Freitag um sieben Uhr."
+          translation:
+            vi: Chúng tôi đến vào thứ Sáu lúc bảy giờ.
+      confusion:
+        vi: "Tiếng Việt chỉ nói \"thứ Hai\", \"tháng Năm\" không cần giới từ; tiếng Đức bắt buộc có am/im/um. Không nói \"in Montag\" hay \"am Mai\"."
+
+  - key: de:item:a1u04-g-ordinalzahlen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Ordinalzahlen: der erste, zweite, dritte … · am ersten Mai (1. Mai)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Số thứ tự: từ 1 đến 19 thêm -te (zweite, vierte), từ 20 trở đi thêm -ste (zwanzigste); dạng đặc biệt: erste, dritte, siebte, achte (một chữ t). Khi viết, số thứ tự là chữ số + dấu chấm (1. Mai). Nói ngày: Heute ist der erste Mai; sau am thêm -n: am ersten Mai."
+      examples:
+        - target: "Heute ist der dritte Oktober."
+          translation:
+            vi: Hôm nay là ngày 3 tháng 10.
+        - target: "Mein Geburtstag ist am siebten Juni."
+          translation:
+            vi: Sinh nhật tôi vào ngày 7 tháng 6.
+        - target: "Der Kurs beginnt am 21. März."
+          translation:
+            vi: Khoá học bắt đầu ngày 21 tháng 3.
+      confusion:
+        vi: "Không nói \"der dreite\" hay \"der einte\": đúng là der dritte, der erste. siebte bỏ \"en\" của sieben."
+
+  - key: de:item:a1u04-woche
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Woche, -n"
+      ipa: /ˈvɔxə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuần
+      examples:
+        - target: "Eine Woche hat sieben Tage."
+          translation:
+            vi: Một tuần có bảy ngày.
+      pronunciation_note:
+        vi: "w đọc là \"v\"; ch sau o đọc như \"kh\"."
+
+  - key: de:item:a1u04-wochenende
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Wochenende, -n"
+      ipa: /ˈvɔxn̩ˌʔɛndə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuối tuần
+      examples:
+        - target: "Am Wochenende schlafe ich lange."
+          translation:
+            vi: Cuối tuần tôi ngủ muộn.
+      confusion:
+        vi: "Từ ghép die Woche + das Ende, lấy giống của từ cuối nên là das Wochenende; đi với am: am Wochenende."
+
+  - key: de:item:a1u04-tag
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Tag, -e"
+      ipa: /taːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày
+      examples:
+        - target: "Ich lerne jeden Tag Deutsch."
+          translation:
+            vi: Tôi học tiếng Đức mỗi ngày.
+        - target: "Guten Tag!"
+          translation:
+            vi: Xin chào! (chào ban ngày, lịch sự)
+      pronunciation_note:
+        vi: "g cuối từ đọc thành \"k\": Tag đọc là \"taak\"; nhưng số nhiều Tage đọc g bình thường."
+
+  - key: de:item:a1u04-wochentage
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Wochentage: Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag"
+      pos: cụm từ (danh từ giống đực)
+    back:
+      meaning:
+        vi: "các thứ trong tuần: thứ Hai, thứ Ba, thứ Tư, thứ Năm, thứ Sáu, thứ Bảy, Chủ nhật (đều là der: der Montag, -e)"
+      examples:
+        - target: "Am Dienstag und am Donnerstag habe ich Kurs."
+          translation:
+            vi: Thứ Ba và thứ Năm tôi có lớp.
+        - target: "Heute ist Mittwoch."
+          translation:
+            vi: Hôm nay là thứ Tư.
+      pronunciation_note:
+        vi: "Mọi thứ đều có -tag đọc \"taak\", trừ Mittwoch; ở miền Bắc nước Đức còn gặp Sonnabend = Samstag."
+      confusion:
+        vi: "Tuần ở Đức bắt đầu từ thứ Hai (Montag), và lịch Đức xếp Montag ở cột đầu tiên."
+
+  - key: de:item:a1u04-monat
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Monat, -e"
+      ipa: /ˈmoːnat/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tháng
+      examples:
+        - target: "Ein Jahr hat zwölf Monate."
+          translation:
+            vi: Một năm có mười hai tháng.
+
+  - key: de:item:a1u04-monate
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Monate: Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember"
+      pos: cụm từ (danh từ giống đực)
+    back:
+      meaning:
+        vi: "tháng Một đến tháng Mười Hai (đều là der: der Januar, der Mai); đi với im: im Januar"
+      examples:
+        - target: "Im Dezember ist es kalt."
+          translation:
+            vi: Tháng Mười Hai trời lạnh.
+        - target: "Mein Geburtstag ist im August."
+          translation:
+            vi: Sinh nhật tôi vào tháng Tám.
+      pronunciation_note:
+        vi: "Juni và Juli dễ nghe nhầm: khi cần nói thật rõ (qua điện thoại), người Đức đôi khi đọc Juno, Julei."
+      confusion:
+        vi: "Tiếng Việt gọi tháng bằng số; tiếng Đức dùng tên. Ở Áo, tháng Một là Jänner (= Januar), đôi khi Feber (= Februar)."
+
+  - key: de:item:a1u04-jahreszeiten
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Jahreszeiten: der Frühling, der Sommer, der Herbst, der Winter"
+      pos: cụm từ (danh từ giống đực)
+    back:
+      meaning:
+        vi: bốn mùa – mùa xuân, mùa hè, mùa thu, mùa đông; đi với im (im Sommer)
+      examples:
+        - target: "Im Herbst ist es oft windig."
+          translation:
+            vi: Mùa thu trời hay có gió.
+        - target: "Im Winter ist es in Hanoi kalt."
+          translation:
+            vi: Mùa đông ở Hà Nội lạnh.
+
+  - key: de:item:a1u04-geburtstag
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Geburtstag, -e"
+      ipa: /ɡəˈbuːɐ̯tsˌtaːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sinh nhật
+      examples:
+        - target: "Wann hast du Geburtstag? – Am zwölften April."
+          translation:
+            vi: Sinh nhật bạn ngày nào? – Ngày 12 tháng 4.
+      confusion:
+        vi: "Ở Đức, chúc mừng sinh nhật trước ngày bị coi là xui; hãy chúc đúng ngày hoặc sau đó."
+
+  - key: de:item:a1u04-datum
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Datum, Daten"
+      ipa: /ˈdaːtʊm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày tháng (ghi trên lịch, trên giấy tờ)
+      examples:
+        - target: "Welches Datum ist heute? – Heute ist der zehnte Mai."
+          translation:
+            vi: Hôm nay là ngày bao nhiêu? – Hôm nay là ngày 10 tháng 5.
+      confusion:
+        vi: "Số nhiều Daten không thêm đuôi mà thay -um bằng -en. Người Đức viết ngày trước tháng: 10.05. = ngày 10 tháng 5, giống tiếng Việt, khác tiếng Anh Mỹ."
+
+  - key: de:item:a1u04-kalender
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Kalender, -"
+      ipa: /kaˈlɛndɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: lịch, cuốn lịch
+      examples:
+        - target: "Mein Kalender ist voll."
+          translation:
+            vi: Lịch của tôi kín rồi.
+
+  - key: de:item:a1u04-ferien
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Ferien (Pl.)"
+      ipa: /ˈfeːri̯ən/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ nghỉ (của học sinh, sinh viên)
+      examples:
+        - target: "Im August haben die Kinder Ferien."
+          translation:
+            vi: Tháng Tám bọn trẻ được nghỉ hè.
+      confusion:
+        vi: "Ferien chỉ có số nhiều. Kỳ nghỉ phép của người đi làm thường gọi là der Urlaub."
+
+  - key: de:item:a1u04-frei
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: frei
+      ipa: /fraɪ̯/
+      pos: tính từ
+    back:
+      meaning:
+        vi: rảnh, được nghỉ; còn trống
+      examples:
+        - target: "Am Sonntag habe ich frei."
+          translation:
+            vi: Chủ nhật tôi được nghỉ.
+        - target: "Ist der Platz frei?"
+          translation:
+            vi: Chỗ này còn trống không?
+      confusion:
+        vi: "frei haben = được nghỉ làm/học; frei sein = rảnh, không bận."

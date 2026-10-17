@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u04-ich-stehe-auf
+order_index: 2
+level: a1
+title:
+  vi: Tôi dậy lúc bảy giờ – động từ tách (Ich stehe um sieben Uhr auf.)
+objectives:
+  - vi: Kể thói quen hằng ngày theo trình tự (aufstehen, duschen, frühstücken, einkaufen, fernsehen, einschlafen …).
+  - vi: Đặt đúng động từ tách trong câu - phần chia ở vị trí 2, tiền tố ở cuối câu (khung câu).
+  - vi: Hỏi bạn bè về thói quen với Wann …? và câu hỏi có/không.
+  - vi: Nhận ra động từ không tách như frühstücken, beginnen, duschen.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u04-wie-spaet-ist-es]
+items:
+  - item: de:item:a1u04-g-trennbare-verben
+  - item: de:item:a1u04-g-satzklammer
+  - item: de:item:a1u04-aufstehen
+  - item: de:item:a1u04-fruehstuecken
+  - item: de:item:a1u04-einkaufen
+  - item: de:item:a1u04-anrufen
+  - item: de:item:a1u04-fernsehen
+  - item: de:item:a1u04-aufraeumen
+  - item: de:item:a1u04-anfangen
+  - item: de:item:a1u04-schlafen
+  - item: de:item:a1u04-duschen
+  - item: de:item:a1u04-frueh
+  - item: de:item:a1u04-aufwachen
+  - item: de:item:a1u04-einschlafen
+  - item: de:item:a1u04-ausschlafen
+  - item: de:item:a1u04-normalerweise
+  - item: de:item:a1u04-g-um-von-bis
+    role: reuse
+  - item: de:item:a1u01-g-v2
+    role: reuse
+  - item: de:item:a1u03-g-vokalwechsel
+    role: reuse
+  - item: de:item:p0u3-g-wortakzent
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được một ngày của mình như \"Tôi dậy lúc 6 giờ rưỡi, tắm rồi ăn sáng\", \"Buổi tối tôi xem tivi\" và hỏi bạn bè \"Mấy giờ cậu đi ngủ?\" bằng tiếng Đức."
+  - type: explain
+    text:
+      vi: "Nhiều động từ tiếng Đức có một tiền tố ngắn phía trước: an-, auf-, aus-, ein-, mit-, fern-, zurück-. Ở dạng nguyên thể chúng viết liền (aufstehen), nhưng trong câu chúng tách đôi: phần chia đứng vị trí 2, tiền tố chạy xuống cuối câu: Ich stehe um sieben Uhr auf."
+  - type: explain
+    text:
+      vi: "Hãy hình dung câu Đức như một cái khung: động từ chia mở khung ở vị trí 2, tiền tố đóng khung ở cuối. Mọi thứ khác (giờ, người, vật) nằm giữa: Ich rufe heute um acht Uhr meine Mutter an. Tiếng Việt để \"gọi điện\" thành một khối, nên bạn phải tập \"giữ\" tiền tố lại cho tới cuối câu."
+  - type: explain
+    text:
+      vi: "Khi giờ hay normalerweise đứng đầu câu, động từ chia vẫn ở vị trí 2, chủ ngữ lùi ra sau: Um sieben Uhr stehe ich auf. Câu hỏi cũng vậy: Wann stehst du auf? / Stehst du früh auf? - tiền tố luôn ở cuối."
+  - type: explain
+    text:
+      vi: "Trọng âm của động từ tách rơi vào tiền tố: AUFstehen, ANrufen, EINkaufen, FERNsehen. Nhưng không phải từ nào trông giống thế cũng tách: frühstücken (ăn sáng), beginnen (bắt đầu), duschen (tắm) không tách - Ich frühstücke um sieben Uhr."
+  - type: explain
+    text:
+      vi: "Đổi nguyên âm vẫn giữ nguyên với du và er/sie/es: du siehst fern, er sieht fern; du fängst an, er fängt an; du schläfst ein, sie schläft ein."
+  - type: deep_explain
+    text:
+      vi: "Tiền tố tách thường là một từ có nghĩa riêng (auf = lên, an = vào/đến, ein = vào trong, zurück = trở lại, fern = xa), nên tra từ điển sẽ thấy dấu tách auf|stehen. Các tiền tố be-, ver-, er-, ent- không bao giờ tách (beginnen, verstehen). Khi động từ tách đứng cuối câu ở dạng nguyên thể (sau können, müssen ở bài 3), nó viết liền trở lại: Ich muss früh aufstehen. Ở Đức, sau 22 giờ và ngày Chủ nhật là giờ yên tĩnh (Ruhezeit): hàng xóm mong bạn không gây ồn - bạn sẽ học kỹ hơn ở B1."
+  - type: example
+    target: "Ich stehe um halb sieben auf und dusche."
+    target_lang: de
+    translation:
+      vi: Tôi dậy lúc sáu giờ rưỡi rồi đi tắm.
+    note:
+      vi: "aufstehen tách: stehe … auf; duschen không tách. halb sieben = 6:30."
+  - type: example
+    target: "Um acht Uhr fängt der Unterricht an."
+    target_lang: de
+    translation:
+      vi: Tám giờ buổi học bắt đầu.
+    note:
+      vi: "Giờ đứng đầu nên động từ fängt ở vị trí 2, chủ ngữ der Unterricht theo sau, tiền tố an ở cuối. a → ä: es fängt an."
+  - type: example
+    target: "Wann rufst du deine Mutter an? – Heute Abend."
+    target_lang: de
+    translation:
+      vi: Khi nào cậu gọi điện cho mẹ? – Tối nay.
+    note:
+      vi: "Nói với bạn thân (du). Người được gọi (deine Mutter) là tân ngữ Akkusativ, không cần giới từ."
+  - type: example
+    target: "Am Abend sieht Minh fern, aber Lan räumt die Küche auf."
+    target_lang: de
+    translation:
+      vi: Buổi tối Minh xem tivi, còn Lan dọn bếp.
+    note:
+      vi: "e → ie: er sieht fern. die Küche (nhà bếp) nằm trong khung räumt … auf."
+  - type: example
+    target: "Normalerweise schläft Anna um elf Uhr ein."
+    target_lang: de
+    translation:
+      vi: Thường thì Anna đi ngủ lúc mười một giờ.
+    note:
+      vi: "normalerweise đứng đầu nên động từ schläft đứng thứ hai; einschlafen tách: schläft … ein."
+  - type: common_mistake
+    wrong: "Ich aufstehe um sieben Uhr."
+    right: "Ich stehe um sieben Uhr auf."
+    target_lang: de
+    note:
+      vi: "Trong câu, động từ tách phải tách đôi: stehe ở vị trí 2, auf ở cuối câu."
+  - type: common_mistake
+    wrong: "Ich stücke um sieben Uhr früh."
+    right: "Ich frühstücke um sieben Uhr."
+    target_lang: de
+    note:
+      vi: "frühstücken KHÔNG phải động từ tách (nó sinh ra từ danh từ das Frühstück), nên chia nguyên khối: ich frühstücke."
+  - type: common_mistake
+    wrong: "Ich stehe auf um sieben Uhr."
+    right: "Ich stehe um sieben Uhr auf."
+    target_lang: de
+    note:
+      vi: "Tiền tố đóng khung ở tận cuối câu, sau cả giờ giấc - không đứng ngay sau động từ như tiếng Anh get up."
+  - type: common_mistake
+    wrong: "Um sieben Uhr ich stehe auf."
+    right: "Um sieben Uhr stehe ich auf."
+    target_lang: de
+    note:
+      vi: "Câu bắt đầu bằng giờ thì động từ vẫn phải ở vị trí 2, chủ ngữ ich ra sau động từ."
+  - type: summary
+    points:
+      - vi: "Động từ tách: an-, auf-, aus-, ein-, mit-, fern-, zurück- … - Ich stehe … auf."
+      - vi: "Khung câu: động từ chia ở vị trí 2, tiền tố ở cuối câu; mọi thứ khác ở giữa."
+      - vi: "Giờ/trạng từ đứng đầu: Um sieben Uhr stehe ich auf. Câu hỏi: Wann stehst du auf?"
+      - vi: "Trọng âm ở tiền tố: AUFstehen, ANrufen."
+      - vi: "Không tách: frühstücken, beginnen, duschen."
+      - vi: "Đổi nguyên âm: du siehst fern, er fängt an, sie schläft ein."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u04l2-mcq-stehe-auf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u04-g-trennbare-verben
+    prompt:
+      stem: "Chọn câu đúng cho \"Tôi dậy lúc sáu giờ.\""
+      stem_lang: vi
+      options:
+        - { id: p4k, text: "Ich stehe um sechs Uhr auf.", lang: de }
+        - { id: d9s, text: "Ich aufstehe um sechs Uhr.", lang: de }
+        - { id: x2m, text: "Ich stehe auf um sechs Uhr.", lang: de }
+        - { id: n6w, text: "Ich stehe um sechs Uhr aufstehen.", lang: de }
+    answer:
+      correct_option_id: p4k
+    explanation:
+      vi: "aufstehen là động từ tách: phần chia stehe ở vị trí 2, tiền tố auf ở cuối câu, sau cả um sechs Uhr. Không viết liền \"aufstehe\", không đặt auf ngay sau động từ."
+    display_answer: "Ich stehe um sechs Uhr auf."
+
+  - key: de:exercise:a1u04l2-mcq-nicht-trennbar
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u04-fruehstuecken
+    prompt:
+      stem: "Động từ nào KHÔNG tách trong câu?"
+      stem_lang: vi
+      options:
+        - { id: c3f, text: frühstücken, lang: de }
+        - { id: j8v, text: aufstehen, lang: de }
+        - { id: y5b, text: einkaufen, lang: de }
+        - { id: l1q, text: anrufen, lang: de }
+    answer:
+      correct_option_id: c3f
+    explanation:
+      vi: "frühstücken sinh ra từ danh từ das Frühstück, \"früh\" không phải tiền tố tách: Ich frühstücke. Ba động từ còn lại có tiền tố auf-, ein-, an- nên tách: Ich stehe auf, ich kaufe ein, ich rufe an."
+    display_answer: frühstücken
+
+  - key: de:exercise:a1u04l2-fill-sieht-fern
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u04-fernsehen
+    prompt:
+      template: "Mein Vater {{b1}} jeden Abend {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Bố tôi tối nào cũng xem tivi."
+        - "Gợi ý: fernsehen tách đôi; với er (mein Vater) e đổi thành ie."
+    answer:
+      blanks:
+        b1: [sieht]
+        b2: [fern]
+    known_wrong:
+      - answer: seht
+        feedback_vi: "sehen đổi nguyên âm e → ie ở ngôi er/sie/es: er sieht."
+        error_tag: vowel_change
+      - answer: fernsieht
+        feedback_vi: "fernsehen tách đôi: sieht ở vị trí 2, fern ở cuối câu."
+        error_tag: separable_prefix
+      - answer: fernsehen
+        feedback_vi: "Ở cuối câu chỉ còn tiền tố fern; phần chia sieht đứng vị trí 2."
+        error_tag: separable_prefix
+    explanation:
+      vi: "Mein Vater = er, nên sehen thành sieht (đổi e → ie). Tiền tố fern tách ra đứng cuối câu: sieht … fern."
+    display_answer: "Mein Vater sieht jeden Abend fern."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u04l2-fill-faengt-an
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-anfangen
+    prompt:
+      template: "Der Film {{b1}} um acht Uhr {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [fängt]
+        b2: [an]
+    known_wrong:
+      - answer: anfängt
+        feedback_vi: "anfangen tách đôi trong câu: fängt ở vị trí 2, an ở cuối."
+        error_tag: separable_prefix
+      - answer: fängst
+        feedback_vi: "fängst là dạng của du; der Film = er/es nên dùng fängt."
+        error_tag: verb_form
+      - answer: beginnt
+        feedback_vi: "beginnen không tách và không đi với an; ở đây cần fängt … an."
+        error_tag: separable_prefix
+    explanation:
+      vi: "der Film là ngôi thứ ba số ít, anfangen đổi a → ä: er fängt an. Phần chia fängt đứng thứ hai, tiền tố an ở cuối câu sau um acht Uhr."
+    display_answer: "Der Film fängt um acht Uhr an."
+
+  - key: de:exercise:a1u04l2-tr-rufst-an
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-anrufen
+    prompt:
+      source_text: Khi nào cậu gọi điện cho Anna? (hỏi bạn thân)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wann rufst du Anna an?
+        - Um wie viel Uhr rufst du Anna an?
+        - Wann rufst du Anna denn an?
+    known_wrong:
+      - answer: Wann anrufst du Anna?
+        feedback_vi: "anrufen tách đôi: rufst ở vị trí 2, an ở cuối câu."
+        error_tag: separable_prefix
+      - answer: Wann rufst du an Anna?
+        feedback_vi: "Tiền tố an đứng cuối câu, sau cả Anna: Wann rufst du Anna an?"
+        error_tag: separable_prefix
+      - answer: Wann rufen Sie Anna an?
+        feedback_vi: Hỏi bạn thân thì dùng du, không dùng Sie.
+        error_tag: register_du_sie
+      - answer: Wann du rufst Anna an?
+        feedback_vi: Câu hỏi với Wann thì động từ đứng ngay sau từ hỏi - Wann rufst du …?
+        error_tag: verb_position
+    explanation:
+      vi: "Hỏi bạn thân dùng du: du rufst. Từ hỏi Wann ở vị trí 1, động từ chia rufst ở vị trí 2, tiền tố an đóng khung ở cuối câu. Anna là tân ngữ, không cần giới từ."
+    display_answer: Wann rufst du Anna an?
+
+  - key: de:exercise:a1u04l2-tr-kaufe-ein
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-einkaufen
+    prompt:
+      source_text: Hôm nay tôi đi chợ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Heute kaufe ich ein.
+        - Ich kaufe heute ein.
+        - Heute gehe ich einkaufen.
+        - Ich gehe heute einkaufen.
+    known_wrong:
+      - answer: Heute ich kaufe ein.
+        feedback_vi: "Heute đứng đầu thì động từ ở vị trí 2: Heute kaufe ich ein."
+        error_tag: verb_position
+      - answer: Ich einkaufe heute.
+        feedback_vi: "einkaufen tách đôi: kaufe ở vị trí 2, ein ở cuối câu."
+        error_tag: separable_prefix
+      - answer: Heute kaufe ich.
+        feedback_vi: "Thiếu tiền tố ein: kaufen là mua (cần vật cụ thể), einkaufen mới là đi chợ."
+        error_tag: separable_prefix
+    explanation:
+      vi: "\"Đi chợ, đi mua đồ\" là einkaufen. Động từ chia kaufe đứng vị trí 2, ein ở cuối câu. Người Đức cũng hay nói einkaufen gehen: Ich gehe heute einkaufen."
+    display_answer: Heute kaufe ich ein.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u04l2-wb-rufe-mutter-an
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-satzklammer
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Tôi gọi điện cho mẹ lúc tám giờ.\""
+      tokens:
+        - { id: t-an, text: an }
+        - { id: t-mutter, text: Mutter }
+        - { id: t-um, text: um }
+        - { id: t-anrufe, text: anrufe }
+        - { id: t-ich, text: ich }
+        - { id: t-uhr, text: Uhr }
+        - { id: t-rufe, text: rufe }
+        - { id: t-meine, text: meine }
+        - { id: t-acht, text: acht }
+    answer:
+      orders:
+        - [t-ich, t-rufe, t-um, t-acht, t-uhr, t-meine, t-mutter, t-an]
+        - [t-ich, t-rufe, t-meine, t-mutter, t-um, t-acht, t-uhr, t-an]
+        - [t-um, t-acht, t-uhr, t-rufe, t-ich, t-meine, t-mutter, t-an]
+        - [t-meine, t-mutter, t-rufe, t-ich, t-um, t-acht, t-uhr, t-an]
+    explanation:
+      vi: "Khung câu: rufe ở vị trí 2, an ở tận cuối. Giữa khung là um acht Uhr và meine Mutter; câu có thể bắt đầu bằng ich, um acht Uhr hoặc meine Mutter, nhưng rufe luôn đứng thứ hai. \"anrufe\" không dùng được vì trong câu tiền tố phải tách."
+    display_answer: Ich rufe um acht Uhr meine Mutter an.
+
+  - key: de:exercise:a1u04l2-tr-minh-fern
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-fernsehen
+    prompt:
+      source_text: Am Abend sieht Minh fern, aber Lan räumt auf.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Buổi tối Minh xem tivi, còn Lan dọn dẹp.
+        - Buổi tối Minh xem tivi, nhưng Lan dọn dẹp.
+        - Buổi tối Minh xem ti vi, còn Lan dọn dẹp.
+        - Buổi tối Minh xem ti vi, nhưng Lan dọn dẹp.
+        - Buổi tối Minh xem tivi, còn Lan thì dọn dẹp.
+        - Buổi tối Minh xem tivi nhưng Lan lại dọn dẹp.
+        - Tối Minh xem tivi, còn Lan dọn dẹp.
+        - Minh xem tivi vào buổi tối, còn Lan dọn dẹp.
+        - Buổi tối Minh xem tivi, còn Lan dọn nhà.
+        - Buổi tối Minh xem tivi, nhưng Lan dọn nhà.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Buổi tối Minh xem tivi, còn Lan đi ngủ.
+        feedback_vi: "aufräumen là dọn dẹp, không phải đi ngủ (đi ngủ là schlafen gehen/einschlafen)."
+        error_tag: vocabulary
+      - answer: Buổi sáng Minh xem tivi, còn Lan dọn dẹp.
+        feedback_vi: am Abend là buổi tối; buổi sáng là am Morgen.
+        error_tag: vocabulary
+    explanation:
+      vi: "sieht … fern là fernsehen (xem tivi), räumt … auf là aufräumen (dọn dẹp) - tiền tố ở cuối mỗi vế. aber dịch là \"nhưng\" hoặc \"còn\" đều tự nhiên."
+    display_answer: Buổi tối Minh xem tivi, còn Lan dọn dẹp.
+
+  - key: de:exercise:a1u04l2-mcq-schlaefst-ein
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u04-einschlafen
+    prompt:
+      stem: "Bạn muốn hỏi bạn cùng phòng (bạn thân): \"Thường thì cậu ngủ lúc mấy giờ?\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s7g, text: "Wann schläfst du normalerweise ein?", lang: de }
+        - { id: e2u, text: "Wann einschläfst du normalerweise?", lang: de }
+        - { id: o9z, text: "Wann schlafen Sie normalerweise ein?", lang: de }
+        - { id: i4r, text: "Wann du schläfst normalerweise ein?", lang: de }
+    answer:
+      correct_option_id: s7g
+    explanation:
+      vi: "Với bạn thân dùng du: du schläfst (a → ä). Sau Wann là động từ chia, tiền tố ein ở cuối câu. \"einschläfst\" sai vì không tách; Sie quá trang trọng với bạn cùng phòng; \"Wann du schläfst\" sai vị trí động từ."
+    display_answer: "Wann schläfst du normalerweise ein?"

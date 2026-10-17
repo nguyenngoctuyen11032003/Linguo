@@ -1,0 +1,5 @@
+# Unit A1U04 (Mein Tag): correct German words the offline dictionary lacks.
+Modalverb
+Modalverben
+# Vietnamese dish (phở) used in examples
+Pho

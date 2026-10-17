@@ -1,0 +1,400 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u04-ich-kann-nicht
+order_index: 3
+level: a1
+title:
+  vi: Tôi phải, tôi có thể – động từ khiếm khuyết (Ich kann heute nicht.)
+objectives:
+  - vi: Chia đúng können, müssen, wollen ở mọi ngôi (ich kann, er muss, du willst …).
+  - vi: Đặt động từ khiếm khuyết ở vị trí 2 và động từ chính nguyên thể ở cuối câu.
+  - vi: Nói mình có thể, phải, muốn làm việc nhà, việc học gì.
+  - vi: Từ chối một lời rủ một cách lịch sự và nêu lý do (Leider kann ich heute nicht. Ich muss …).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u04-ich-stehe-auf]
+items:
+  - item: de:item:a1u04-g-modalverben
+  - item: de:item:a1u04-g-modal-satzklammer
+  - item: de:item:a1u04-koennen
+  - item: de:item:a1u04-muessen
+  - item: de:item:a1u04-wollen
+  - item: de:item:a1u04-kochen
+  - item: de:item:a1u04-putzen
+  - item: de:item:a1u04-hausaufgabe
+  - item: de:item:a1u04-kurs
+  - item: de:item:a1u04-pause
+  - item: de:item:a1u04-leider
+  - item: de:item:a1u04-morgen
+  - item: de:item:a1u04-spuelen
+  - item: de:item:a1u04-geschirr
+  - item: de:item:a1u04-ueben
+  - item: de:item:a1u04-test
+  - item: de:item:a1u04-g-satzklammer
+    role: reuse
+  - item: de:item:a1u04-aufstehen
+    role: reuse
+  - item: de:item:a1u02-g-negation-nicht-kein
+    role: reuse
+  - item: de:item:a1u03-g-moechten
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được \"Tôi biết nấu phở\", \"Ngày mai tôi phải dậy sớm\", \"Cậu có muốn học không?\" và từ chối khéo một lời rủ: \"Tiếc là hôm nay mình không được. Mình phải làm việc.\""
+  - type: explain
+    text:
+      vi: "können = có thể, biết làm (Ich kann kochen); müssen = phải (Ich muss arbeiten); wollen = muốn, định làm (Ich will Deutsch lernen). Chúng giống \"có thể\", \"phải\", \"muốn\" trong tiếng Việt: luôn đi kèm một động từ khác."
+  - type: explain
+    text:
+      vi: "Ở số ít, nguyên âm đổi và ich với er/sie/es giống hệt nhau, không có đuôi: ich kann – er kann, ich muss – sie muss, ich will – es will. du thêm -st: du kannst, du musst, du willst. Số nhiều giữ nguyên âm của nguyên thể: wir können, ihr könnt, sie/Sie müssen, wir wollen."
+  - type: explain
+    text:
+      vi: "Khung câu với động từ khiếm khuyết: động từ khiếm khuyết chia ở vị trí 2, động từ chính để nguyên thể ở cuối câu. Tiếng Việt nói \"có thể nấu phở\" (động từ ngay sau \"có thể\"), còn tiếng Đức nói Ich kann Pho kochen. Không thêm zu: Ich muss arbeiten."
+  - type: explain
+    text:
+      vi: "Động từ tách ở cuối câu thì viết liền lại: Ich stehe früh auf → Ich muss früh aufstehen. nicht đứng ngay trước động từ nguyên thể ở cuối: Ich kann heute nicht kommen."
+  - type: explain
+    text:
+      vi: "Từ chối lịch sự kiểu Đức: nói tiếc trước, rồi nêu lý do bằng müssen: Leider kann ich heute nicht. Ich muss arbeiten. Câu ngắn Ich kann heute nicht (bỏ kommen) rất tự nhiên khi nói. leider đứng đầu thì động từ vẫn ở vị trí 2: Leider kann ich …"
+  - type: deep_explain
+    text:
+      vi: "wollen nghe dứt khoát (ý định của mình); khi gọi món hay xin điều gì, hãy dùng möchten lịch sự hơn: Ich möchte einen Kaffee, không nói \"Ich will einen Kaffee\" với người phục vụ. Phủ định của müssen là \"không cần\": Ich muss heute nicht arbeiten = Hôm nay tôi không phải đi làm (không có nghĩa \"không được làm\"). können còn có nghĩa \"biết một ngôn ngữ\": Ich kann Deutsch. Với người lạ, khách hàng, thầy cô dùng Sie: Können Sie bitte langsam sprechen?"
+  - type: example
+    target: "Kannst du heute Abend kommen? – Leider kann ich heute nicht. Ich muss arbeiten."
+    target_lang: de
+    translation:
+      vi: Tối nay cậu đến được không? – Tiếc là hôm nay mình không được. Mình phải làm việc.
+    note:
+      vi: "Hai người bạn nói du. Lời từ chối mẫu: leider + kann ich … nicht, rồi lý do với muss."
+  - type: example
+    target: "Mein Bruder kann sehr gut kochen."
+    target_lang: de
+    translation:
+      vi: Anh trai tôi nấu ăn rất giỏi.
+    note:
+      vi: "mein Bruder = er nên kann (không có đuôi -t); kochen nguyên thể ở cuối."
+  - type: example
+    target: "Wir müssen morgen früh aufstehen."
+    target_lang: de
+    translation:
+      vi: Ngày mai chúng tôi phải dậy sớm.
+    note:
+      vi: "aufstehen đứng cuối ở dạng nguyên thể nên viết liền. morgen (viết thường) = ngày mai."
+  - type: example
+    target: "Willst du heute Abend Deutsch üben?"
+    target_lang: de
+    translation:
+      vi: Tối nay cậu có muốn luyện tiếng Đức không?
+    note:
+      vi: "Câu hỏi có/không: động từ khiếm khuyết willst đứng đầu, üben ở cuối. Nói với bạn (du)."
+  - type: example
+    target: "Ich muss noch putzen und das Geschirr spülen."
+    target_lang: de
+    translation:
+      vi: Tôi còn phải lau dọn và rửa bát.
+    note:
+      vi: "Một động từ khiếm khuyết muss đi với hai động từ nguyên thể nối bằng und, cả hai ở cuối."
+  - type: example
+    target: "Können Sie bitte morgen um neun Uhr kommen?"
+    target_lang: de
+    translation:
+      vi: Ngày mai ông/bà có thể đến lúc chín giờ được không ạ?
+    note:
+      vi: "Lời đề nghị lịch sự với người lạ hoặc trong công việc: dùng Sie (viết hoa) + können + bitte."
+  - type: example
+    target: "Der Kurs dauert zwei Stunden. Um zehn Uhr machen wir Pause."
+    target_lang: de
+    translation:
+      vi: Khoá học kéo dài hai tiếng. Mười giờ chúng ta nghỉ giải lao.
+    note:
+      vi: "Pause machen = nghỉ giải lao. Um zehn Uhr đứng đầu nên machen đứng vị trí 2."
+  - type: common_mistake
+    wrong: "Er kannt gut kochen."
+    right: "Er kann gut kochen."
+    target_lang: de
+    note:
+      vi: "Động từ khiếm khuyết không thêm -t ở er/sie/es: er kann, sie muss, es will."
+  - type: common_mistake
+    wrong: "Ich muss zu arbeiten."
+    right: "Ich muss arbeiten."
+    target_lang: de
+    note:
+      vi: "Sau können, müssen, wollen là nguyên thể trơn, không có zu (khác tiếng Anh have to work)."
+  - type: common_mistake
+    wrong: "Ich kann kochen Pho."
+    right: "Ich kann Pho kochen."
+    target_lang: de
+    note:
+      vi: "Đừng đặt động từ chính ngay sau kann như tiếng Việt; động từ nguyên thể luôn đóng khung ở cuối câu."
+  - type: common_mistake
+    wrong: "Leider ich kann heute nicht."
+    right: "Leider kann ich heute nicht."
+    target_lang: de
+    note:
+      vi: "leider đứng đầu câu chiếm vị trí 1, nên kann đứng thứ hai và ich ra sau."
+  - type: summary
+    points:
+      - vi: "können (có thể, biết), müssen (phải), wollen (muốn, định)."
+      - vi: "ich kann / du kannst / er kann – wir können; ich muss / du musst / er muss – wir müssen; ich will / du willst / er will – wir wollen."
+      - vi: "ich và er/sie/es không có đuôi: er kann, không phải \"er kannt\"."
+      - vi: "Khung câu: động từ khiếm khuyết ở vị trí 2, nguyên thể ở cuối: Ich kann Pho kochen."
+      - vi: "Không có zu: Ich muss arbeiten. Động từ tách viết liền ở cuối: Ich muss früh aufstehen."
+      - vi: "Từ chối: Leider kann ich heute nicht. Ich muss …"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u04l3-mcq-er-kann
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u04-g-modalverben
+    prompt:
+      stem: "Chọn dạng đúng: Er ___ heute nicht kommen."
+      stem_lang: vi
+      options:
+        - { id: a5r, text: kann, lang: de }
+        - { id: u3e, text: kannt, lang: de }
+        - { id: k8o, text: könnt, lang: de }
+        - { id: b6i, text: können, lang: de }
+    answer:
+      correct_option_id: a5r
+    explanation:
+      vi: "Với er/sie/es, können thành kann, không có đuôi -t (giống ich kann). könnt là dạng của ihr, können là dạng của wir/sie/Sie."
+    display_answer: kann
+
+  - key: de:exercise:a1u04l3-listen-absage
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u04-leider
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Leider kann ich heute nicht. Ich muss arbeiten."
+      options:
+        - { id: g4w, text: "Tiếc là hôm nay tôi không được. Tôi phải làm việc.", lang: vi }
+        - { id: m9c, text: "Hôm nay tôi đến được. Tôi không phải làm việc.", lang: vi }
+        - { id: z1t, text: "Tiếc là ngày mai tôi không được. Tôi phải học.", lang: vi }
+        - { id: e7h, text: "Hôm nay tôi muốn làm việc.", lang: vi }
+    answer:
+      correct_option_id: g4w
+    explanation:
+      vi: "leider = tiếc là, kann … nicht = không thể, heute = hôm nay, muss arbeiten = phải làm việc. Đây là câu từ chối lịch sự có lý do."
+    display_answer: "Tiếc là hôm nay tôi không được. Tôi phải làm việc."
+
+  - key: de:exercise:a1u04l3-fill-du-musst
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u04-muessen
+    prompt:
+      template: "Du {{b1}} heute die Hausaufgaben machen."
+      blanks:
+        - { id: b1, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Hôm nay cậu phải làm bài tập về nhà."
+        - "Gợi ý: müssen với du; số ít không có ü, du thêm -st."
+    answer:
+      blanks:
+        b1: [musst]
+    known_wrong:
+      - answer: muss
+        feedback_vi: "muss là dạng của ich và er/sie/es; với du cần đuôi -st: du musst."
+        error_tag: verb_form
+      - answer: müssen
+        feedback_vi: "müssen là dạng của wir/sie/Sie; với du dùng musst (số ít không có ü)."
+        error_tag: verb_form
+      - answer: müsst
+        feedback_vi: "müsst là dạng của ihr; với du dùng musst."
+        error_tag: verb_form
+    explanation:
+      vi: "müssen ở số ít bỏ ü: ich muss, du musst, er muss. Chủ ngữ du nên thêm -st: du musst. Động từ chính machen đứng cuối câu."
+    display_answer: "Du musst heute die Hausaufgaben machen."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u04l3-fill-muessen-spuelen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-modal-satzklammer
+    prompt:
+      template: "Wir {{b1}} heute das Geschirr {{b2}}. (müssen / spülen)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [müssen]
+        b2: [spülen]
+    known_wrong:
+      - answer: muss
+        feedback_vi: "Chủ ngữ wir (số nhiều) nên dùng müssen, không dùng muss."
+        error_tag: verb_form
+      - answer: müsst
+        feedback_vi: "müsst là dạng của ihr; với wir dùng müssen."
+        error_tag: verb_form
+      - answer: spülen müssen
+        feedback_vi: "Chỉ một động từ ở mỗi chỗ trống: müssen ở vị trí 2, spülen ở cuối."
+        error_tag: word_order
+      - answer: zu spülen
+        feedback_vi: "Sau müssen không có zu: Wir müssen … spülen."
+        error_tag: zu_infinitive
+      - answer: spült
+        feedback_vi: "Động từ chính ở cuối câu để nguyên thể: spülen."
+        error_tag: modal_infinitive
+    explanation:
+      vi: "wir đi với müssen (số nhiều giữ ü). Động từ chính spülen để nguyên thể, đứng cuối câu, không có zu."
+    display_answer: "Wir müssen heute das Geschirr spülen."
+
+  - key: de:exercise:a1u04l3-tr-kann-nicht-kommen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-koennen
+    prompt:
+      source_text: Hôm nay tôi không đến được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich kann heute nicht kommen.
+        - Heute kann ich nicht kommen.
+        - Ich kann heute nicht.
+        - Heute kann ich nicht.
+    known_wrong:
+      - answer: Ich kann nicht kommen heute.
+        feedback_vi: "Động từ nguyên thể kommen phải đứng cuối câu: Ich kann heute nicht kommen."
+        error_tag: word_order
+      - answer: Heute ich kann nicht kommen.
+        feedback_vi: "Heute đứng đầu thì kann ở vị trí 2: Heute kann ich nicht kommen."
+        error_tag: verb_position
+      - answer: Ich kann heute kommen nicht.
+        feedback_vi: "nicht đứng trước động từ nguyên thể ở cuối câu: … nicht kommen."
+        error_tag: word_order
+      - answer: Ich kannst heute nicht kommen.
+        feedback_vi: "Với ich dùng kann; kannst là dạng của du."
+        error_tag: verb_form
+    explanation:
+      vi: "\"Không … được\" = kann … nicht. kann ở vị trí 2, nicht đứng trước kommen, kommen ở cuối câu. Khi nói, bỏ kommen vẫn tự nhiên: Ich kann heute nicht."
+    display_answer: Ich kann heute nicht kommen.
+
+  - key: de:exercise:a1u04l3-tr-frueh-aufstehen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-g-modal-satzklammer
+    prompt:
+      source_text: Ngày mai tôi phải dậy sớm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Morgen muss ich früh aufstehen.
+        - Ich muss morgen früh aufstehen.
+        - Morgen muss ich zeitig aufstehen.
+        - Ich muss morgen zeitig aufstehen.
+    known_wrong:
+      - answer: Morgen ich muss früh aufstehen.
+        feedback_vi: "Morgen đứng đầu thì muss ở vị trí 2: Morgen muss ich …"
+        error_tag: verb_position
+      - answer: Morgen muss ich früh aufzustehen.
+        feedback_vi: "Sau müssen không có zu: … früh aufstehen."
+        error_tag: zu_infinitive
+      - answer: Morgen muss ich stehe früh auf.
+        feedback_vi: "Sau muss, động từ chính để nguyên thể ở cuối và viết liền: aufstehen."
+        error_tag: modal_infinitive
+      - answer: Morgen muss ich aufstehen früh.
+        feedback_vi: "aufstehen đóng khung ở cuối câu, früh nằm giữa: … früh aufstehen."
+        error_tag: word_order
+    explanation:
+      vi: "muss ở vị trí 2; aufstehen ở cuối câu dạng nguyên thể nên viết liền, không tách, không có zu. morgen = ngày mai, früh = sớm."
+    display_answer: Morgen muss ich früh aufstehen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u04l3-wb-pho-kochen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u04-kochen
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Lan biết nấu phở.\""
+      tokens:
+        - { id: t-kochen, text: kochen }
+        - { id: t-zu, text: zu }
+        - { id: t-lan, text: Lan }
+        - { id: t-pho, text: Pho }
+        - { id: t-kocht, text: kocht }
+        - { id: t-kann, text: kann }
+    answer:
+      orders:
+        - [t-lan, t-kann, t-pho, t-kochen]
+        - [t-pho, t-kann, t-lan, t-kochen]
+    explanation:
+      vi: "kann đứng vị trí 2, động từ chính kochen nguyên thể ở cuối; không cần zu, không dùng kocht. Thường câu bắt đầu bằng Lan; đưa Pho lên đầu để nhấn mạnh món ăn cũng đúng."
+    display_answer: Lan kann Pho kochen.
+
+  - key: de:exercise:a1u04l3-mcq-absagen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u04-leider
+    prompt:
+      stem: "Bạn thân rủ: \"Hast du heute Abend Zeit? Wir kochen zusammen.\" Bạn phải làm việc. Câu trả lời nào đúng và lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: f2p, text: "Leider kann ich heute nicht. Ich muss arbeiten.", lang: de }
+        - { id: w7k, text: "Leider ich kann heute nicht. Ich muss arbeiten.", lang: de }
+        - { id: q3x, text: "Leider kann ich heute nicht. Ich muss zu arbeiten.", lang: de }
+        - { id: y8m, text: "Ja, gern! Ich muss arbeiten.", lang: de }
+    answer:
+      correct_option_id: f2p
+    explanation:
+      vi: "Sau leider, động từ kann đứng thứ hai; sau muss là nguyên thể trơn arbeiten, không có zu. \"Ja, gern!\" là nhận lời, mâu thuẫn với việc phải làm việc."
+    display_answer: "Leider kann ich heute nicht. Ich muss arbeiten."
+
+  - key: de:exercise:a1u04l3-tr-willst-ueben
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u04-wollen
+    prompt:
+      source_text: Willst du morgen Deutsch üben?
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ngày mai cậu có muốn luyện tiếng Đức không?
+        - Ngày mai bạn có muốn luyện tiếng Đức không?
+        - Mai cậu có muốn luyện tiếng Đức không?
+        - Mai bạn có muốn luyện tiếng Đức không?
+        - Ngày mai bạn muốn luyện tiếng Đức không?
+        - Ngày mai cậu muốn luyện tiếng Đức không?
+        - Ngày mai bạn có muốn tập tiếng Đức không?
+        - Ngày mai bạn có muốn ôn tiếng Đức không?
+        - Ngày mai cậu có muốn ôn tiếng Đức không?
+        - Bạn có muốn luyện tiếng Đức vào ngày mai không?
+        - Ngày mai bạn có muốn luyện tập tiếng Đức không?
+        - Ngày mai cậu có muốn luyện tập tiếng Đức không?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm nay cậu có muốn luyện tiếng Đức không?
+        feedback_vi: morgen (viết thường) là ngày mai, không phải hôm nay.
+        error_tag: vocabulary
+      - answer: Sáng nay cậu có muốn luyện tiếng Đức không?
+        feedback_vi: "morgen viết thường là ngày mai; der Morgen viết hoa mới là buổi sáng."
+        error_tag: morgen_der_morgen
+    explanation:
+      vi: "Willst du …? là câu hỏi có/không với wollen (muốn), üben = luyện tập. morgen viết thường là ngày mai."
+    display_answer: Ngày mai cậu có muốn luyện tiếng Đức không?
