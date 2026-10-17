@@ -4,6 +4,7 @@ import { AnimatePresence, m as motion } from 'motion/react';
 import { Button } from '@/components/ui/Button';
 import { functionalTransition } from '@/design/motion';
 import { useModalDialog } from '@/lib/useModalDialog';
+import { useOnline } from '@/lib/useOnline';
 import { useMotionPrefs } from '@/providers/MotionProvider';
 
 interface Props {
@@ -18,6 +19,7 @@ interface Props {
 /** Bottom sheet confirming that leaving keeps the learner's progress. */
 export function ExitSheet({ open, onClose, onExit, pendingCount, triggerRef }: Props) {
   const { reduceMotion } = useMotionPrefs();
+  const online = useOnline();
   const panelRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
   const descriptionId = useId();
@@ -60,7 +62,13 @@ export function ExitSheet({ open, onClose, onExit, pendingCount, triggerRef }: P
             </h2>
             <div id={descriptionId} className="mt-2 space-y-1 text-[15px] text-muted">
               <p>Lần sau bạn sẽ học tiếp từ đúng bước đang dừng.</p>
-              {pendingCount > 0 && <p>Còn {pendingCount} câu đang chờ đồng bộ — sẽ được chấm khi có mạng.</p>}
+              {pendingCount > 0 && (
+                <p>
+                  {online
+                    ? `Còn ${pendingCount} câu đang chờ đồng bộ — sẽ được chấm khi có mạng.`
+                    : `Còn ${pendingCount} câu đã lưu trên máy — kết quả và điểm sẽ tính khi có mạng.`}
+                </p>
+              )}
             </div>
             <div className="mt-5 grid gap-2">
               <Button variant="accent" size="lg" block onClick={onClose}>

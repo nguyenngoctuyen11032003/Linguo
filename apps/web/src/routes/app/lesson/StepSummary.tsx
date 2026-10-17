@@ -4,6 +4,7 @@ import type { CompleteResult, LessonBlock } from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { Spinner } from '@/components/ui/Spinner';
 import { playSound } from '@/lib/sound';
+import { useOnline } from '@/lib/useOnline';
 
 /** Every stage answered at 100% with no near-misses: earns the bigger fanfare. */
 function isPerfect(result: CompleteResult): boolean {
@@ -37,6 +38,9 @@ interface Props {
 /** Summary points and run stats; completes the lesson on enter once every attempt is synced. */
 export function StepSummary({ blocks, result, canComplete, pendingCount, unresolved, onComplete, onResume }: Props) {
   const points = blocks.flatMap((b) => (b.type === 'summary' ? b.points.map((p) => p.vi) : []));
+  const online = useOnline();
+  // The result was worked out on this device (offline lesson): the server has not confirmed it, nor granted XP, yet.
+  const unsynced = result !== null && pendingCount > 0;
   const [completing, setCompleting] = useState(false);
   const [failed, setFailed] = useState(false);
   const started = useRef(false);
@@ -138,12 +142,19 @@ export function StepSummary({ blocks, result, canComplete, pendingCount, unresol
               )}
             </div>
           )}
+          {unsynced && (
+            <p role="status" className="mt-4 border-t border-white/12 pt-3 text-[14px] leading-snug text-white/85">
+              {online ? 'Đang đồng bộ kết quả lên máy chủ…' : 'Đã lưu — kết quả và điểm sẽ tính khi có mạng.'}
+            </p>
+          )}
         </section>
       ) : !canComplete ? (
         <div className="space-y-3">
           <p role="status" className="rounded-2xl bg-warn/15 px-4 py-3 text-[15px] font-medium ring-1 ring-warn/40 ring-inset">
             {pendingCount > 0
-              ? `Còn ${pendingCount} câu đang chờ đồng bộ`
+              ? online
+                ? `Còn ${pendingCount} câu đang chờ đồng bộ`
+                : `Còn ${pendingCount} câu đã lưu trên máy, sẽ đồng bộ khi có mạng`
               : unresolved.length > 0
                 ? `Còn ${unresolved.length} câu chưa có kết quả. Làm xong để hoàn thành bài học.`
                 : 'Chưa thể hoàn thành bài học.'}
