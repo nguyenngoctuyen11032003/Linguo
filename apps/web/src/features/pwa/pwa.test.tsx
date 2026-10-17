@@ -8,6 +8,8 @@ import { onNotificationClicked, resetNotificationClickListener } from './notific
 import { registerServiceWorker, swBasePath, swUpdateStore } from './register';
 import { SW_MESSAGE_SKIP_WAITING, SW_NOTIFICATION_CLICKED } from './sw-helpers';
 import { UpdateToast } from './UpdateToast';
+import { OfflineReadyToast } from './OfflineReadyToast';
+import { offlineReadyStore, OFFLINE_READY_KEY } from './offline-ready';
 import { captureInstallPrompt, isIos, resetInstallPromptForTests } from './useInstallPrompt';
 import { stubMatchMedia } from '../../../tests/unit/match-media';
 
@@ -86,6 +88,37 @@ describe('registerServiceWorker', () => {
     expect(swUpdateStore.getSnapshot().updateAvailable).toBe(false);
   });
 
+  it('raises "ready offline" once when the very first worker activates, never for updates', async () => {
+    const c = new FakeContainer();
+    c.controller = null;
+    const first = new FakeWorker();
+    c.registration.installing = first; // register() resolves with the worker already installing
+    await registerServiceWorker({ enabled: true, base: '/', container: asContainer(c) });
+    first.setState('installed');
+    expect(offlineReadyStore.getSnapshot().offlineReady).toBe(false);
+    first.setState('activated');
+    expect(offlineReadyStore.getSnapshot().offlineReady).toBe(true);
+    expect(localStorage.getItem(OFFLINE_READY_KEY)).toBe('1');
+    offlineReadyStore.reset();
+    // the same device is never told twice
+    c.registration.installing = null;
+    const again = new FakeWorker();
+    c.registration.installing = again;
+    c.registration.dispatchEvent(new Event('updatefound'));
+    again.setState('activated');
+    expect(offlineReadyStore.getSnapshot().offlineReady).toBe(false);
+  });
+
+  it('does not raise "ready offline" for an update (a controller already exists)', async () => {
+    const c = new FakeContainer();
+    await registerServiceWorker({ enabled: true, base: '/', container: asContainer(c) });
+    const next = new FakeWorker();
+    c.registration.installing = next;
+    c.registration.dispatchEvent(new Event('updatefound'));
+    next.setState('activated');
+    expect(offlineReadyStore.getSnapshot().offlineReady).toBe(false);
+  });
+
   it('resolves null when registration fails', async () => {
     const c = new FakeContainer();
     c.register.mockRejectedValueOnce(new Error('SecurityError'));
@@ -103,6 +136,35 @@ describe('registerServiceWorker', () => {
     expect(swBasePath('/Linguo')).toBe('/Linguo/');
     expect(swBasePath('./')).toBe('/');
     expect(swBasePath('https://cdn.example.com/app/')).toBe('/app/');
+  });
+});
+
+describe('OfflineReadyToast', () => {
+  afterEach(() => {
+    offlineReadyStore.reset();
+    localStorage.clear();
+    vi.useRealTimers();
+  });
+
+  it('is an empty live region until the first install finished, then announces and dismisses itself', () => {
+    vi.useFakeTimers();
+    render(<OfflineReadyToast />);
+    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+    act(() => offlineReadyStore.markReady());
+    expect(screen.getByText('Sẵn sàng dùng ngoại tuyến')).toBeInTheDocument();
+    act(() => {
+      vi.advanceTimersByTime(8001);
+    });
+    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+  });
+
+  it('can be closed by hand, and is shown only once per device', () => {
+    render(<OfflineReadyToast />);
+    act(() => offlineReadyStore.markReady());
+    act(() => screen.getByRole('button', { name: 'Đóng' }).click());
+    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+    act(() => offlineReadyStore.markReady());
+    expect(screen.getByRole('status')).toBeEmptyDOMElement();
   });
 });
 

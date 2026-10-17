@@ -1,5 +1,6 @@
 import { SW_MESSAGE_SKIP_WAITING } from './sw-helpers';
 import { startNotificationClickListener } from './notification-click';
+import { offlineReadyStore } from './offline-ready';
 
 /** How often a visible tab asks the server for a newer service worker. */
 const UPDATE_CHECK_INTERVAL_MS = 30 * 60 * 1000;
@@ -118,9 +119,26 @@ export async function registerServiceWorker(options: RegisterOptions = {}): Prom
 
   // A worker that finished installing while a controller exists is an update waiting for the learner.
   if (registration.waiting && container.controller) swUpdateStore.setWaiting(registration.waiting);
+
+  // No controller yet = the very first install on this device: once that worker has installed (the whole app shell
+  // is precached) and activated, tell the learner once that the app now works offline. Not for updates.
+  const firstInstall = !container.controller;
+  const watched = new WeakSet<ServiceWorker>();
+  const watchFirstInstall = (worker: ServiceWorker) => {
+    if (!firstInstall || watched.has(worker)) return;
+    watched.add(worker);
+    const check = () => {
+      if (worker.state === 'activated') offlineReadyStore.markReady();
+    };
+    worker.addEventListener('statechange', check);
+  };
+  // register() resolves with the installing worker already set, so `updatefound` may have fired before this point.
+  if (registration.installing) watchFirstInstall(registration.installing);
+
   registration.addEventListener('updatefound', () => {
     const installing = registration.installing;
     if (!installing) return;
+    watchFirstInstall(installing);
     installing.addEventListener('statechange', () => {
       if (installing.state === 'installed' && container.controller) swUpdateStore.setWaiting(installing);
     });

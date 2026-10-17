@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router';
 import { publishNotificationsChanged } from '@/features/notifications/events';
 import { isBusyRoute } from '@/features/pwa/busy-route';
 import { onNotificationClicked } from '@/features/pwa/notification-click';
+import { OfflineReadyToast } from '@/features/pwa/OfflineReadyToast';
 import { UpdateToast } from '@/features/pwa/UpdateToast';
 import { appPathFrom } from '@/features/pwa/app-path';
 import { NotificationOpenToast } from '@/features/pwa/NotificationOpenToast';
@@ -51,6 +52,7 @@ export function PwaBridge() {
   return (
     <>
       <UpdateToast pathname={pathname} />
+      <OfflineReadyToast />
       <NotificationOpenToast open={waiting !== null} onOpen={open} onDismiss={dismiss} />
     </>
   );
