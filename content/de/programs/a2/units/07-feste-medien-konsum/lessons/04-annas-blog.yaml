@@ -38,6 +38,8 @@ items:
     role: reuse
   - item: de:item:p0u3-handy
     role: reuse
+  - item: de:item:a2u02-g-objekt-stellung
+    role: reuse
 body:
   - type: objective
     text:
@@ -56,7 +58,7 @@ body:
       vi: "Phủ định dùng keiner/keine/keins (Akk giống đực keinen); sở hữu dùng meiner/meine/meins (của mình), deiner … Số nhiều: welche (có) và keine (không có): Hast du Fotos? – Ja, ich habe welche."
   - type: deep_explain
     text:
-      vi: "Bảng đầy đủ khi đứng một mình – Nominativ: einer / eine / eins / welche; Akkusativ: einen / eine / eins / welche. Giống trung cũng nói được eines, keines, meines (hơi trang trọng hơn eins, keins, meins). Dạng có dấu nháy kiểu tiếng Anh (Anna's) đôi khi thấy trên biển hiệu cửa hàng, nhưng trong câu viết bình thường người Đức viết Annas. Với hai đại từ đứng sau động từ thì Akkusativ đứng trước Dativ: Ich schicke ihn (den Link) dir."
+      vi: "Bảng đầy đủ khi đứng một mình – Nominativ: einer / eine / eins / welche; Akkusativ: einen / eine / eins / welche. Giống trung cũng nói được eines, keines, meines (hơi trang trọng hơn eins, keins, meins). Dạng có dấu nháy kiểu tiếng Anh (Anna's) đôi khi thấy trên biển hiệu cửa hàng và quy tắc chính tả không cấm hẳn, nhưng cách viết chuẩn, thông dụng là Annas. Với hai đại từ đứng sau động từ thì Akkusativ đứng trước Dativ (ôn A2U02): Ich schicke ihn dir (ihn = den Link)."
   - type: example
     target: "Hallo, hier ist Anna! In meinem Blog poste ich jede Woche ein Video über Hanoi. Ladet es herunter und teilt es mit euren Freunden!"
     target_lang: de

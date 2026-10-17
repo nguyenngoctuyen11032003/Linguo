@@ -240,7 +240,7 @@ items:
           translation:
             vi: Tháng Sáu chúng tôi đi dự một đám cưới ở Hà Nội.
       pronunciation_note:
-        vi: "o trong Hochzeit đọc ngắn (khác với hoch – cao, o dài); z đọc là \"ts\"."
+        vi: "Theo phát âm chuẩn (Duden), o trong Hochzeit (đám cưới) đọc ngắn, khác với hoch (cao) có o dài; z đọc là \"ts\"."
       confusion:
         vi: "Đi dự đám cưới: auf eine Hochzeit gehen; đang ở đám cưới: auf einer Hochzeit sein."
 
@@ -557,7 +557,7 @@ items:
           translation:
             vi: Đơn hàng của quý khách đang trên đường giao.
       confusion:
-        vi: "Từ động từ bestellen (đặt hàng, gọi món) + -ung; danh từ đuôi -ung luôn giống cái."
+        vi: "Từ động từ bestellen (đặt hàng, gọi món) + hậu tố -ung; danh từ tạo bằng hậu tố -ung là giống cái (die Zeitung, die Wohnung)."
 
   - key: de:item:a2u07-bewertung
     type: vocab
@@ -678,7 +678,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Để nói một bài báo, bộ phim hay cuộc nói chuyện có nội dung về gì, dùng (In dem Film) geht es um + Akkusativ. Chủ ngữ luôn là es nên động từ luôn là geht, kể cả khi chủ đề ở số nhiều. Trong cấu trúc này chỉ dùng um, không dùng über (über chỉ đi sau danh từ: ein Film über Berlin)."
+        vi: "Để nói một bài báo, bộ phim hay cuộc nói chuyện có nội dung về gì, dùng (In dem Film) geht es um + Akkusativ. Chủ ngữ luôn là es nên ở thì hiện tại động từ luôn là geht, kể cả khi chủ đề ở số nhiều. Trong cấu trúc này chỉ dùng um, không dùng über (über chỉ đi sau danh từ: ein Film über Berlin)."
       examples:
         - target: In dem Artikel geht es um Handys in der Schule.
           translation:

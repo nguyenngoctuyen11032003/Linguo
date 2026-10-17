@@ -36,6 +36,8 @@ items:
   - item: de:item:a2u07-dokumentarfilm
   - item: de:item:a1u06-film
     role: reuse
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
 body:
   - type: objective
     text:
@@ -51,7 +53,7 @@ body:
       vi: "Danh từ số nhiều và danh từ không đếm được thì bỏ ein: Was für Filme siehst du gern? Was für Musik hörst du? Đừng bỏ ein ở danh từ số ít đếm được: Was für ein Film?, không nói Was für Film?"
   - type: explain
     text:
-      vi: "Tóm nội dung: (In dem Artikel / In der Serie / Im Film) geht es um + Akkusativ = (bài báo, phim) nói về …. Chủ ngữ luôn là es nên động từ luôn là geht, và trong cấu trúc này chỉ dùng um, không dùng über."
+      vi: "Tóm nội dung: (In dem Artikel / In der Serie / Im Film) geht es um + Akkusativ = (bài báo, phim) nói về …. Chủ ngữ luôn là es nên ở thì hiện tại động từ luôn là geht (kể cả khi chủ đề ở số nhiều), và trong cấu trúc này chỉ dùng um, không dùng über."
   - type: deep_explain
     text:
       vi: "Câu hỏi \"Worum geht es?\" (Nói về cái gì vậy?) rất hay gặp; worum = wo + um, bạn tạm học như một cụm cố định, quy tắc wo- + giới từ sẽ học ở B1. Sau danh từ thì dùng über bình thường: ein Artikel über das Internet, ein Film über Vietnam; động từ berichten cũng đi với über: Die Zeitung berichtet über das Fest. Trong văn nói, người Đức đôi khi tách was … für: Was siehst du gern für Filme? – nghĩa không đổi. Trên tivi Đức có nhiều kênh công cộng và tư nhân; kênh nào, giờ nào phát gì thì có thể thay đổi, hãy xem lịch phát sóng (das Programm)."
@@ -70,12 +72,12 @@ body:
     note:
       vi: "Film là tân ngữ của sehen → Akkusativ: einen Film, einen Krimi, eine Komödie. Hai người bạn dùng du."
   - type: example
-    target: "Welche Zeitung liest du? – Ich lese keine Zeitung. Ich lese die Nachrichten mit einer App."
+    target: "Welche Zeitung liest du? – Ich lese keine Zeitung. Es ist einfacher, die Nachrichten in einer App zu lesen."
     target_lang: de
     translation:
-      vi: "Bạn đọc báo nào? – Mình không đọc báo giấy. Mình đọc tin tức bằng một ứng dụng."
+      vi: "Bạn đọc báo nào? – Mình không đọc báo. Đọc tin tức trên ứng dụng thì tiện hơn."
     note:
-      vi: "welche Zeitung: hỏi tờ báo cụ thể nào (không phải loại báo)."
+      vi: "welche Zeitung: hỏi tờ báo cụ thể nào (không phải loại báo). Es ist einfacher, … zu lesen: zu + nguyên thể ở cuối câu (đã học ở A2U06)."
   - type: example
     target: "In dem Artikel geht es um Werbung für Kinder."
     target_lang: de
@@ -101,7 +103,7 @@ body:
     right: In dem Film geht es um einen Koch.
     target_lang: de
     note:
-      vi: "Cấu trúc es geht … luôn đi với um + Akkusativ."
+      vi: "Khi nói nội dung (\"nói về\"), es geht luôn đi với um + Akkusativ."
   - type: common_mistake
     wrong: Was für ein Film möchtest du sehen?
     right: Was für einen Film möchtest du sehen?
@@ -299,7 +301,7 @@ exercises:
         - { id: t-ein, text: ein }
         - { id: t-siehst, text: siehst }
         - { id: t-was, text: Was }
-        - { id: t-welche, text: welche }
+        - { id: t-einen, text: einen }
         - { id: t-du, text: du }
         - { id: t-fuer, text: für }
     answer:

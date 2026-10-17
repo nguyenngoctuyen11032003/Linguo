@@ -55,6 +55,8 @@ items:
     role: reuse
   - item: de:item:a2u07-artikel
     role: reuse
+  - item: de:item:a2u05-g-praeteritum-haeufig
+    role: reuse
 body:
   - type: objective
     text:
@@ -75,7 +77,7 @@ body:
     target: "Liebe Freunde, am Samstag feiere ich meinen Geburtstag und ich lade euch herzlich ein! Die Party beginnt um 19 Uhr bei mir zu Hause. Bringt bitte keine Geschenke mit, sondern einen Salat oder einen Kuchen. Sagt mir bitte bis Donnerstag Bescheid, ob ihr kommt. Viele Grüße, Mai"
     target_lang: de
     translation:
-      vi: "Các bạn thân mến, thứ Bảy này mình tổ chức sinh nhật và trân trọng mời các bạn! Tiệc bắt đầu lúc 19 giờ ở nhà mình. Đừng mang quà nhé, mà mang một món salad hoặc một cái bánh. Trước thứ Năm báo mình biết các bạn có đến không nhé. Thân, Mai"
+      vi: "Các bạn thân mến, thứ Bảy này mình tổ chức sinh nhật và rất muốn mời các bạn đến! Tiệc bắt đầu lúc 19 giờ ở nhà mình. Đừng mang quà nhé, mà mang một món salad hoặc một cái bánh. Trước thứ Năm báo mình biết các bạn có đến không nhé. Thân, Mai"
     note:
       vi: "Thư mẫu khoảng 50 từ, đủ bốn ý: dịp, giờ, nơi, mang gì + hạn trả lời. Viết cho nhiều bạn nên dùng ihr/euch."
   - type: example
@@ -189,15 +191,15 @@ exercises:
       stem: "Đọc bình luận dưới một bài blog: \"Toller Artikel! In Annas Text geht es um Weihnachten in Deutschland. Bei uns in Vietnam ist Tết wichtiger. Jeder Gast bringt ein kleines Geschenk mit und wir essen zusammen. Linh\" Câu nào đúng?"
       stem_lang: vi
       options:
-        - { id: c3a, text: "Bài của Anna nói về Giáng sinh ở Đức; với Linh, Tết quan trọng hơn.", lang: vi }
-        - { id: c7b, text: "Bài của Linh nói về Tết ở Việt Nam.", lang: vi }
+        - { id: c3a, text: "Bài của Anna nói về Giáng sinh ở Đức; Linh viết rằng ở Việt Nam Tết quan trọng hơn.", lang: vi }
+        - { id: c7b, text: "Bài của Anna nói về Tết ở Việt Nam.", lang: vi }
         - { id: c1c, text: "Ở Việt Nam, khách không mang quà khi đến chơi Tết.", lang: vi }
         - { id: c5d, text: "Anna đón Giáng sinh ở Việt Nam.", lang: vi }
     answer:
       correct_option_id: c3a
     explanation:
       vi: "In Annas Text geht es um Weihnachten in Deutschland = bài của Anna nói về Giáng sinh ở Đức. Linh viết bình luận: Tết wichtiger = Tết quan trọng hơn; jeder Gast bringt ein kleines Geschenk mit = mỗi vị khách mang một món quà nhỏ."
-    display_answer: "Bài của Anna nói về Giáng sinh ở Đức; với Linh, Tết quan trọng hơn."
+    display_answer: "Bài của Anna nói về Giáng sinh ở Đức; Linh viết rằng ở Việt Nam Tết quan trọng hơn."
 
   # ---------------- recognition: nghe ----------------
   - key: de:exercise:a2u07l5-listen-radiowerbung
@@ -371,7 +373,7 @@ exercises:
         error_tag: adj_ending
       - answer: Jede Gast bringt ein kleines Geschenk mit.
         feedback_vi: "der Gast là giống đực: jeder Gast."
-        error_tag: article
+        error_tag: gender
       - answer: Jeder Gast mitbringt ein kleines Geschenk.
         feedback_vi: "mitbringen là động từ tách: bringt ở vị trí 2, mit ở cuối câu."
         error_tag: separable_prefix

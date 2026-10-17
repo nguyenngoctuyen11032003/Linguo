@@ -36,6 +36,12 @@ items:
   - item: de:item:a2u07-anstossen
   - item: de:item:a1u07-g-welcher
     role: reuse
+  - item: de:item:a2u02-g-dat-akk-verben
+    role: reuse
+  - item: de:item:a2u05-g-wenn-temporal
+    role: reuse
+  - item: de:item:a2u05-g-adj-bestimmt
+    role: reuse
 body:
   - type: objective
     text:
@@ -51,7 +57,7 @@ body:
       vi: "sondern = \"mà là\": sau một phủ định (nicht, kein), nó đưa ra thông tin đúng thay vào chỗ sai – Wir feiern nicht am 24., sondern am 25. Dezember. aber (nhưng) chỉ thêm một ý ngược chiều, không sửa vế trước – Das Geschenk ist nicht teuer, aber schön. Cả hai đứng ở vị trí 0 (không đẩy động từ) và có dấu phẩy đứng trước."
   - type: explain
     text:
-      vi: "Tên lễ Weihnachten, Ostern, Silvester, Neujahr thường dùng không có mạo từ; \"vào dịp\" nói là an hoặc zu: an Weihnachten, zu Ostern, an Silvester. Riêng Heiligabend thường có am: am Heiligabend. Tết bạn có thể nói đơn giản là Tết hoặc das vietnamesische Neujahrsfest."
+      vi: "Tên lễ Weihnachten, Ostern, Silvester, Neujahr thường dùng không có mạo từ; \"vào dịp\" nói là an hoặc zu: an/zu Weihnachten, an/zu Ostern (an hay gặp ở miền Nam, zu ở miền Bắc nước Đức), an Silvester. Riêng Heiligabend thường có am: am Heiligabend. Tết bạn có thể nói đơn giản là Tết hoặc das vietnamesische Neujahrsfest."
   - type: deep_explain
     text:
       vi: "Ở Đức nhiều gia đình trang trí cây thông (der Weihnachtsbaum), thắp nến và tặng quà ngay tối 24/12 (Heiligabend), sau đó ngày 25 và 26 là thời gian sum họp gia đình. Silvester (31/12) người ta thường đi tiệc với bạn bè, đúng nửa đêm cụng ly (anstoßen); trước nửa đêm chúc \"Guten Rutsch!\" (chúc \"trượt\" suôn sẻ sang năm mới), sau nửa đêm chúc \"Frohes neues Jahr!\". Những lời chúc như Frohe Weihnachten!, Frohe Ostern! là cụm cố định – tính từ ở đây không có mạo từ, bạn sẽ học quy tắc đuôi này ở bài sau. Phong tục khác nhau theo vùng và theo từng gia đình."
@@ -70,19 +76,19 @@ body:
     note:
       vi: "sondern sửa lại thông tin sai (ngày 25 → ngày 24). Bạn bè nói với nhau bằng du/ihr."
   - type: example
-    target: "Alle Gäste bringen ein Geschenk mit. Jeder Gast bekommt am Ende eine Kerze."
+    target: "Wenn wir feiern, bringen alle Gäste ein Geschenk mit. Jeder Gast bekommt am Ende eine Kerze."
     target_lang: de
     translation:
-      vi: "Tất cả khách đều mang quà đến. Cuối buổi, mỗi người khách được nhận một cây nến."
+      vi: "Mỗi khi chúng tôi tổ chức tiệc, tất cả khách đều mang quà đến. Cuối buổi, mỗi người khách được nhận một cây nến."
     note:
-      vi: "alle + số nhiều (Gäste), jeder + số ít (Gast). mitbringen = mang theo đến."
+      vi: "alle + số nhiều (Gäste), jeder + số ít (Gast). wenn = mỗi khi (đã học ở A2U05): feiern đứng cuối mệnh đề phụ. mitbringen = mang theo đến."
   - type: example
     target: "Ich schenke meiner Oma diese Kerze. – Die ist schön! Welche Kerze schenkst du deinem Opa?"
     target_lang: de
     translation:
       vi: "Mình tặng bà cây nến này. – Đẹp đấy! Còn ông thì bạn tặng cây nến nào?"
     note:
-      vi: "schenken: người nhận ở Dativ (meiner Oma), món quà ở Akkusativ (diese Kerze). Hai người bạn nói với nhau bằng du."
+      vi: "schenken: người nhận ở Dativ (meiner Oma), món quà ở Akkusativ (diese Kerze), giống geben, schicken ở A2U02. Hai người bạn nói với nhau bằng du."
   - type: example
     target: "Frau Weber, ich wünsche Ihnen frohe Weihnachten! – Danke, das wünsche ich Ihnen auch!"
     target_lang: de
@@ -197,10 +203,10 @@ exercises:
     known_wrong:
       - answer: jede
         feedback_vi: "der Gast là giống đực: jeder Gast (đuôi -er như der)."
-        error_tag: article
+        error_tag: gender
       - answer: jedes
         feedback_vi: "der Gast là giống đực, không phải giống trung: jeder Gast."
-        error_tag: article
+        error_tag: gender
       - answer: jeden
         feedback_vi: "Gast là chủ ngữ của bekommt (Nominativ), nên jeder, không phải jeden."
         error_tag: case_dat_akk
@@ -262,6 +268,7 @@ exercises:
         - Tết feiern wir jedes Jahr in Hanoi.
         - In Hanoi feiern wir jedes Jahr Tết.
         - Wir feiern jedes Jahr in Hanoi Tết.
+        - Jedes Jahr feiern wir in Hanoi Tết.
     known_wrong:
       - answer: Jedes Jahr wir feiern Tết in Hanoi.
         feedback_vi: "Khi Jedes Jahr đứng đầu câu, động từ feiern phải đứng ngay sau (vị trí 2): Jedes Jahr feiern wir …"
@@ -325,7 +332,7 @@ exercises:
         - [t-diese, t-kerze, t-schenke, t-ich, t-meiner, t-oma]
         - [t-meiner, t-oma, t-schenke, t-ich, t-diese, t-kerze]
     explanation:
-      vi: "schenken: người nhận ở Dativ (meiner Oma), món quà ở Akkusativ (diese Kerze – giống cái ở Akkusativ không đổi). Hai danh từ đứng sau động từ thì Dativ trước Akkusativ. schenke luôn ở vị trí 2, vị trí 1 có thể là ich, diese Kerze hoặc meiner Oma."
+      vi: "schenken: người nhận ở Dativ (meiner Oma), món quà ở Akkusativ (diese Kerze – giống cái ở Akkusativ không đổi). Hai danh từ đứng sau động từ thì trật tự trung tính là Dativ trước Akkusativ. schenke luôn ở vị trí 2, vị trí 1 có thể là ich, diese Kerze hoặc meiner Oma."
     display_answer: Ich schenke meiner Oma diese Kerze.
 
   - key: de:exercise:a2u07l1-mcq-guten-rutsch
