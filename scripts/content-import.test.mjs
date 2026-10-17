@@ -761,7 +761,7 @@ test('build leaves other exercise types and the loaded content untouched', () =>
 // ---- diagnostic item bank (spec 4 §3) -------------------------------------------------------------------
 
 const DIAG_SKILLS = { vocabulary: ['voc', 'mcq'], grammar: ['gram', 'cloze_choice'], reading: ['read', 'reading_mcq'] };
-const DIAG_LEVELS = { en: ['pre_a1', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'], ko: ['hangul', 'topik1', 'topik2', 'topik3', 'topik4', 'topik5', 'topik6'] };
+const DIAG_LEVELS = { en: ['pre_a1', 'a1', 'a2', 'b1', 'b2', 'c1', 'c2'], ko: ['hangul', 'topik1', 'topik2', 'topik3', 'topik4', 'topik5', 'topik6'], de: ['pre_a1', 'a1', 'a2', 'b1', 'b2'] };
 
 /** A complete, valid bank file: `perLevel` items for every level of `lang`. */
 function diagYaml(lang, skill, { perLevel = 5 } = {}) {
@@ -1494,6 +1494,201 @@ test('CONTENT_MAX_LEVEL matches the highest published program of every language 
   for (const lang of LANGUAGE_CODES) {
     const published = programs.filter((p) => p.lang === lang && effectiveStatus(p.data.status, p.data.demo) === 'published');
     const top = published.reduce((max, p) => Math.max(max, levelOrdinal(lang, p.data.level_to)), -1);
-    assert.equal(LEVELS[lang][top], CONTENT_MAX_LEVEL[lang], `${lang}: highest program level_to vs CONTENT_MAX_LEVEL`);
+    // A language whose content has not shipped yet (de) keeps the ceiling at its first level.
+    assert.equal(LEVELS[lang][Math.max(top, 0)], CONTENT_MAX_LEVEL[lang], `${lang}: highest program level_to vs CONTENT_MAX_LEVEL`);
+  }
+});
+
+// ---- German (de) plumbing: layout, keys, ceiling, diagnostic minimum, Goethe family ---------------------------
+
+const DE_VALID = join(here, '__fixtures__', 'content-valid-de');
+const DE_PROGRAM = 'de/programs/basics/program.yaml';
+
+function deTree(t) {
+  const dir = mkdtempSync(join(tmpdir(), 'linguo-content-de-'));
+  t.after(() => rmSync(dir, { recursive: true, force: true }));
+  const content = join(dir, 'content');
+  cpSync(DE_VALID, content, { recursive: true });
+  return { dir, content };
+}
+
+/** A small valid Goethe A1–A2 form: cefr-like scoring (no bands, pass_ratio 0.6), `goethe_` question types. */
+const GOETHE_YAML = `# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+language: de
+form:
+  key: de:exam:goethe-mock
+  family: goethe
+  title_vi: Goethe — Đề thử
+  description_vi: Đề thử Goethe cho kiểm thử.
+  level_from: a1
+  level_to: a2
+  source_key: src:fixture
+  time_limits: { listening: 15, reading: 20 }
+  scoring:
+    verified: false
+    source_note_vi: Chưa đối chiếu.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+questions:
+  - key: de:examq:goethe-mock-l01
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe và chọn đáp án đúng.
+      stem: Wann beginnt der Kurs?
+      stem_lang: de
+      audio_asset_id: null
+      script: "Der Kurs beginnt um neun Uhr."
+      options:
+        - { id: a, text: "Um neun Uhr.", lang: de }
+        - { id: b, text: "Um zehn Uhr.", lang: de }
+    answer: a
+    explanation: { vi: "Giờ bắt đầu là chín giờ." }
+  - key: de:examq:goethe-mock-r01
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc và chọn đáp án đúng.
+      stem: Wo wohnt Anna?
+      stem_lang: de
+      passage: "Anna wohnt in Berlin. Sie arbeitet in einer Bäckerei."
+      options:
+        - { id: a, text: "In Berlin.", lang: de }
+        - { id: b, text: "In Wien.", lang: de }
+    answer: a
+    explanation: { vi: "Anna wohnt in Berlin." }
+`;
+
+test('de: content layout accepts de programs, items, diagnostic and exam files', () => {
+  assert.deepEqual(classify(['de', 'items', 'basics.yaml']), { kind: 'items', lang: 'de' });
+  assert.deepEqual(classify(['de', 'programs', 'a1', 'program.yaml']), { kind: 'program', lang: 'de', program: 'a1' });
+  assert.deepEqual(classify(['de', 'programs', 'a1', 'units', '03-kaffee', 'unit.yaml']), { kind: 'unit', lang: 'de', program: 'a1', unit: '03-kaffee' });
+  assert.deepEqual(classify(['de', 'programs', 'a1', 'units', '03-kaffee', 'lessons', '01-bestellen.yaml']), { kind: 'lesson', lang: 'de', program: 'a1', unit: '03-kaffee' });
+  assert.deepEqual(classify(['diagnostic', 'de', 'vocabulary.yaml']), { kind: 'diagnostic', lang: 'de' });
+  assert.deepEqual(classify(['exams', 'de', 'goethe-a1-mock-1.yaml']), { kind: 'exam', lang: 'de' });
+  assert.equal(classify(['ge', 'items', 'basics.yaml']), null);
+});
+
+test('de: the German fixture passes the checks (ä/ö/ü/ß answers fold in the shared grader) and builds a de bundle', (t) => {
+  const { content } = deTree(t);
+  assert.deepEqual(checkContent(loadTree(content), { grade, contentMaxLevel: CONTENT_MAX_LEVEL }), []);
+  const bundle = buildBundle(loadTree(content));
+  assert.ok(bundleSchema.safeParse(bundle).success);
+  assert.ok(bundle.programs.every((p) => p.language_code === 'de'));
+  assert.equal(bundle.lessons.length, 1);
+});
+
+test('de: keys must start with "de:"', (t) => {
+  const { content } = deTree(t);
+  edit(content, DE_PROGRAM, 'key: de:program:basics', 'key: en:program:basics');
+  const errors = check(content);
+  assert.ok(errors.some((e) => e.includes('key "en:program:basics" must start with "de:"')), errors.join('\n'));
+});
+
+test('de: a program above CONTENT_MAX_LEVEL.de is rejected until the shared ceiling is raised', (t) => {
+  const { content } = deTree(t);
+  edit(content, DE_PROGRAM, 'level_to: pre_a1', 'level_to: b1');
+  const ceiling = (e) => e.includes('is above CONTENT_MAX_LEVEL.de');
+  const high = checkContent(loadTree(content), { grade, contentMaxLevel: { ...CONTENT_MAX_LEVEL, de: 'a2' } });
+  assert.ok(
+    high.includes('content/de/programs/basics/program.yaml: level_to "b1" is above CONTENT_MAX_LEVEL.de (a2); raise it in packages/shared/src/learning/levels.ts so learners can pick the new levels'),
+    high.join('\n'),
+  );
+  assert.ok(!checkContent(loadTree(content), { grade, contentMaxLevel: { ...CONTENT_MAX_LEVEL, de: 'b1' } }).some(ceiling));
+  // Other languages' levels are not de levels.
+  edit(content, DE_PROGRAM, 'level_to: b1', 'level_to: n1');
+  assert.ok(check(content).some((e) => e.includes('level_to "n1" is not a de level (pre_a1, a1, a2, b1, b2)')));
+});
+
+test('de: a diagnostic bank needs at least 5 items per skill x level over the 5 de levels (75 items)', (t) => {
+  const { content } = diagTree(t, ['de']);
+  const loaded = loadTree(content);
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildDiagnosticBundle(loaded);
+  assert.equal(bundle.items.length, 75);
+  assert.ok(bundle.items.every((i) => i.language_code === 'de' && LEVELS.de.includes(i.level_code)));
+  assert.equal(bundle.items.find((i) => i.key === 'de:diag:gram-b2-3').difficulty, 4.5);
+
+  writeFileSync(join(content, 'diagnostic', 'de', 'grammar.yaml'), diagYaml('de', 'grammar', { perLevel: 4 }));
+  const errors = check(content);
+  assert.ok(errors.includes('content/diagnostic/de/grammar.yaml: grammar pre_a1 has 4 item(s), needs at least 5'), errors.join('\n'));
+  assert.equal(errors.length, 5);
+  rmSync(join(content, 'diagnostic', 'de', 'reading.yaml'));
+  assert.ok(check(content).includes('content/diagnostic/de/reading.yaml: reading b2 has 0 item(s), needs at least 5'));
+  // Levels of another language are rejected in the de bank.
+  writeFileSync(join(content, 'diagnostic', 'de', 'reading.yaml'), diagYaml('de', 'reading').replace('level: b2', 'level: c1'));
+  assert.ok(check(content).some((e) => e.includes('level "c1" is not a de level')));
+});
+
+test('de: a Goethe form passes the checks (cefr-like scoring) and builds a de bundle', (t) => {
+  const tree = tempTree(t);
+  mkdirSync(join(tree.content, 'exams', 'de'), { recursive: true });
+  writeFileSync(join(tree.content, 'exams', 'de', 'goethe-mock.yaml'), GOETHE_YAML);
+  const loaded = loadTree(tree.content);
+  assert.deepEqual(checkContent(loaded, { grade }), []);
+  const bundle = buildExamBundle(loaded);
+  assert.ok(examBundleSchema.safeParse(bundle).success);
+  const [form] = bundle.forms;
+  assert.deepEqual([form.language_code, form.family, form.id], ['de', 'goethe', contentId('de:exam:goethe-mock')]);
+});
+
+test('de: Goethe scoring is cefr-like (no bands, pass_ratio 0.6) and the family belongs to de', (t) => {
+  const run = (from, to) => {
+    const tree = tempTree(t);
+    mkdirSync(join(tree.content, 'exams', 'de'), { recursive: true });
+    writeFileSync(join(tree.content, 'exams', 'de', 'goethe-mock.yaml'), GOETHE_YAML.replace(from, to));
+    return checkContent(loadTree(tree.content), { grade });
+  };
+  assert.ok(run('    pass_ratio: 0.6', '    pass_ratio: null').some((e) => e.includes('goethe forms need scoring.pass_ratio')));
+  assert.ok(run('    pass_ratio: 0.6', '    pass_ratio: 0.5').some((e) => e.includes('goethe forms need scoring.pass_ratio 0.6')));
+  assert.ok(run('    bands: []', '    bands: [{ level_code: a1, min_total: 10 }]').some((e) => e.includes('goethe forms have no score bands')));
+  assert.ok(run('family: goethe', 'family: cefr').some((e) => e.includes('family cefr is a en exam, not de')));
+  assert.ok(run('question_type: goethe_listen_detail', 'question_type: cefr_listen_detail').some((e) => e.includes('question_type must start with "goethe_"')));
+  assert.ok(run('level_code: a1\n    points: 1\n    prompt:\n      instruction_vi: Nghe', 'level_code: c1\n    points: 1\n    prompt:\n      instruction_vi: Nghe').some((e) => e.includes('level_code "c1" is not a de level')));
+});
+
+test('de: the loader accepts content/de/wordlist/*.txt and lexicon.json but no other text files', (t) => {
+  const { content } = deTree(t);
+  mkdirSync(join(content, 'de', 'wordlist'), { recursive: true });
+  writeFileSync(join(content, 'de', 'wordlist', 'a1-food.txt'), 'Brezel\n');
+  writeFileSync(join(content, 'de', 'lexicon.json'), '{"version":1,"nouns":{}}\n');
+  assert.deepEqual(check(content), []);
+  writeFileSync(join(content, 'de', 'notes.txt'), 'x\n');
+  mkdirSync(join(content, 'de', 'wordlist', 'sub'), { recursive: true });
+  writeFileSync(join(content, 'de', 'wordlist', 'sub', 'x.txt'), 'x\n');
+  const errors = check(content);
+  assert.ok(errors.some((e) => e.startsWith('content/de/notes.txt: unexpected file')), errors.join('\n'));
+  assert.ok(errors.some((e) => e.startsWith('content/de/wordlist/sub/x.txt: unexpected file')));
+});
+
+test('de: pnpm content:check runs the German lint (spelling errors fail the run, warnings do not)', async (t) => {
+  const { content, dir } = deTree(t);
+  const out = [];
+  const err = [];
+  const run = () => main(['--check', '--dir', content], { cwd: dir, grade, log: (m) => out.push(m), error: (m) => err.push(m) });
+  assert.equal(await run(), 0, err.join('\n'));
+  edit(content, 'de/items/basics.yaml', 'Der Tisch ist groß.', 'Der Tisck ist groß.');
+  assert.equal(await run(), 1);
+  assert.ok(err.some((m) => m.includes('content/de/items/basics.yaml: items[0].back.examples[0].target: "Tisck" is not in the German dictionary')), err.join('\n'));
+});
+
+test('real diagnostic bank: when de has a bank it covers 5 levels x 3 skills with >= 5 items each', () => {
+  const loaded = loadContent(REAL_CONTENT, { label: 'content' });
+  const items = buildDiagnosticBundle(loaded).items.filter((i) => i.language_code === 'de');
+  if (items.length === 0) return; // German bank not shipped yet
+  assert.ok(items.length >= 75, `de: ${items.length} items`);
+  for (const skill of Object.keys(DIAG_SKILLS)) {
+    for (const level of DIAG_LEVELS.de) {
+      assert.ok(items.filter((i) => i.skill === skill && i.level_code === level).length >= 5, `de ${skill} ${level}`);
+    }
   }
 });

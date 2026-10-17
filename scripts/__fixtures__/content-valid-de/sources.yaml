@@ -1,0 +1,8 @@
+# DEMO — chưa kiểm duyệt (test fixture for scripts/content-import.test.mjs)
+schema_version: 1
+sources:
+  - key: src:fixture
+    title: Nguồn thử nghiệm
+    author_or_org: Linguo
+    license: own
+    demo: true

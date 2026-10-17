@@ -1,0 +1,79 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+key: de:lesson:tisch
+order_index: 0
+level: pre_a1
+title: { vi: "Tisch, Frau, Kind" }
+objectives:
+  - { vi: Gọi tên đồ vật và người kèm mạo từ. }
+estimated_minutes: 5
+skills: [vocabulary]
+items:
+  - { item: de:item:tisch }
+  - { item: de:item:frau }
+  - { item: de:item:kind }
+body:
+  - type: objective
+    text: { vi: "Bạn sẽ nói được der, die, das cùng danh từ." }
+  - type: explain
+    text: { vi: "Danh từ tiếng Đức luôn viết hoa và có giống: der, die hoặc das." }
+  - type: example
+    target: Der Tisch ist groß.
+    target_lang: de
+    translation: { vi: Cái bàn to. }
+  - type: example
+    target: Die Frau heißt Anna.
+    target_lang: de
+    translation: { vi: Người phụ nữ tên là Anna. }
+  - type: common_mistake
+    wrong: Die Tisch ist groß.
+    right: Der Tisch ist groß.
+    target_lang: de
+    note: { vi: "Tisch là giống đực nên dùng der." }
+  - type: summary
+    points:
+      - { vi: "der Tisch, die Frau, das Kind." }
+exercises:
+  - key: de:exercise:tisch-mcq
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    item: de:item:tisch
+    prompt:
+      stem: "Welcher Artikel passt zu Tisch?"
+      stem_lang: de
+      options:
+        - { id: a, text: der, lang: de }
+        - { id: b, text: die, lang: de }
+    answer: { correct_option_id: a }
+    explanation: { vi: "Tisch là giống đực: der Tisch." }
+    display_answer: der
+  - key: de:exercise:tisch-blank
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    prompt:
+      template: "{{b1}} Tisch ist groß."
+      blanks: [{ id: b1 }]
+    answer:
+      blanks: { b1: [Der] }
+    known_wrong:
+      - { answer: Die, feedback_vi: "Tisch là giống đực, không dùng die.", error_tag: article }
+    explanation: { vi: "Tisch là giống đực: der Tisch." }
+    display_answer: Der Tisch ist groß.
+  - key: de:exercise:tisch-translate
+    type: translate
+    stage: application
+    answer_lang: de
+    prompt:
+      source_text: Đây là cái bàn của người phụ nữ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted: [Das ist der Tisch der Frau., Das ist der Tisch von der Frau.]
+    known_wrong:
+      - { answer: Das ist die Tisch der Frau., feedback_vi: "Tisch là giống đực: der Tisch.", error_tag: article }
+    explanation: { vi: "Sở hữu cách: der Tisch der Frau." }
+    display_answer: Das ist der Tisch der Frau.

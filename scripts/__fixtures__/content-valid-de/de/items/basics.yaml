@@ -1,0 +1,56 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+source: src:fixture
+items:
+  - key: de:item:tisch
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    front: { text: "der Tisch, -e", ipa: "/tɪʃ/", pos: Nomen }
+    back:
+      meaning: { vi: cái bàn }
+      examples:
+        - target: Der Tisch ist groß.
+          translation: { vi: Cái bàn to. }
+  - key: de:item:frau
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    front: { text: "die Frau, -en", pos: Nomen }
+    back:
+      meaning: { vi: "người phụ nữ, bà" }
+      examples:
+        - target: Die Frau heißt Anna.
+          translation: { vi: Người phụ nữ tên là Anna. }
+  - key: de:item:kind
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    front: { text: "das Kind, -er", pos: Nomen }
+    back:
+      meaning: { vi: đứa trẻ }
+      examples:
+        - target: Das Kind spielt.
+          translation: { vi: Đứa trẻ đang chơi. }
+  - key: de:item:milch
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    front: { text: "die Milch (Sg.)", pos: Nomen }
+    back:
+      meaning: { vi: sữa }
+  - key: de:item:gehen
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    front: { text: "gehen", pos: Verb }
+    back:
+      meaning: { vi: đi }
+  - key: de:item:guten-morgen
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    front: { text: "Guten Morgen!" }
+    back:
+      meaning: { vi: Chào buổi sáng! }

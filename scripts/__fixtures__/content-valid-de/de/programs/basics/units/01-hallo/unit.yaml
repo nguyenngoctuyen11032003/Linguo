@@ -1,0 +1,7 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+key: de:unit:hallo
+order_index: 0
+title: { vi: Chào hỏi }

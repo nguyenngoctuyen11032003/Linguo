@@ -1,0 +1,13 @@
+# DEMO — chưa kiểm duyệt
+schema_version: 1
+demo: true
+status: published
+source: src:fixture
+key: de:program:basics
+language: de
+title: { vi: Nền tảng }
+description: { vi: Chương trình tiếng Đức thử nghiệm. }
+kind: core
+level_from: pre_a1
+level_to: pre_a1
+order_index: 0

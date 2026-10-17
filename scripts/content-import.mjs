@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Content import tooling (spec 2 §4.3). Needs tsx to load the shared TS package:
-//   node --import tsx scripts/content-import.mjs --check               validate content/ (pnpm content:check)
+//   node --import tsx scripts/content-import.mjs --check               validate content/ incl. the German lint (pnpm content:check)
 //   node --import tsx scripts/content-import.mjs --emit-sql            write supabase/seed.sql (pnpm content:build)
 //   node --import tsx scripts/content-import.mjs --emit-sql --check    fail if seed.sql is stale
 //   node --import tsx scripts/content-import.mjs --apply               import into hosted Supabase (pnpm content:push)
@@ -17,6 +17,7 @@ import { fileURLToPath } from 'node:url';
 import { importResultSchema } from '@linguo/shared';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
+import { formatIssue, lintGerman } from './content/german-lint.mjs';
 import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic.mjs';
 import { buildExamBundle, examFiles, renderExamSql } from './content/exam.mjs';
 import { loadContent } from './content/load.mjs';
@@ -39,7 +40,7 @@ const display = (path, cwd) => relative(cwd, path).split(sep).join('/') || '.';
  */
 export async function main(
   argv,
-  { env = process.env, cwd = process.cwd(), grade = sharedGrader(), fetchImpl = globalThis.fetch, log = console.log, error = console.error } = {},
+  { env = process.env, cwd = process.cwd(), grade = sharedGrader(), fetchImpl = globalThis.fetch, log = console.log, error = console.error, germanSpeller = null } = {},
 ) {
   const emitSql = argv.includes('--emit-sql');
   const apply = argv.includes('--apply');
@@ -70,6 +71,10 @@ export async function main(
 
   const loaded = loadContent(dir, { label: display(dir, cwd) });
   const errors = checkContent(loaded, { grade });
+  // German text lint (spelling, noun shape, duplicates…): errors fail the run, warnings are printed.
+  const german = await lintGerman({ contentDir: dir, label: display(dir, cwd), speller: germanSpeller });
+  for (const w of german.warnings) log(`warning: ${formatIssue(w)}`);
+  errors.push(...german.errors.map(formatIssue));
   if (errors.length) {
     for (const e of errors) error(e);
     error(`\n${errors.length} content error(s).`);
