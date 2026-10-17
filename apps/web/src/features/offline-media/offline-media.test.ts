@@ -45,13 +45,13 @@ describe('offline media cache', () => {
   });
 
   it('downloads, skips what is stored, and reports bytes', async () => {
-    const fetchMock = vi.fn(async (..._args: unknown[]) => audioResponse(250));
+    const fetchMock = vi.fn(async () => audioResponse(250));
     vi.stubGlobal('fetch', fetchMock);
     const progress = vi.fn();
     const first = await precacheLessonAssets([urlOf(ID_A), urlOf(ID_B), urlOf(ID_A)], { onProgress: progress });
     expect(first).toMatchObject({ cached: 2, skipped: 0, failed: 0, bytes: 500 });
     expect(progress).toHaveBeenLastCalledWith(2, 2);
-    expect(fetchMock).toHaveBeenCalledWith(urlOf(ID_A), expect.objectContaining({ mode: 'cors', credentials: 'omit' }));
+    expect(fetchMock.mock.calls[0]).toEqual([urlOf(ID_A), expect.objectContaining({ mode: "cors", credentials: "omit" })]);
 
     const second = await precacheLessonAssets([urlOf(ID_A), urlOf(ID_B)]);
     expect(second).toMatchObject({ cached: 0, skipped: 2, failed: 0, bytes: 0 });
