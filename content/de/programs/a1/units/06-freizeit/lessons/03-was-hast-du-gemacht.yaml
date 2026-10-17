@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u06-was-hast-du-gemacht
+order_index: 3
+level: a1
+title:
+  vi: Bạn đã làm gì? – Perfekt với haben (Was hast du gemacht?)
+objectives:
+  - vi: Kể ngắn về hôm qua và cuối tuần trước bằng Perfekt với haben.
+  - vi: Tạo Partizip II của động từ thường (gemacht), động từ mạnh (gesehen) và động từ tách (eingekauft).
+  - vi: Hỏi bạn bè đã làm gì và nói hoạt động đó vui hay chán.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u06-hast-du-zeit]
+items:
+  - item: de:item:a1u06-g-perfekt-haben
+  - item: de:item:a1u06-g-partizip-ii
+  - item: de:item:a1u06-gestern
+  - item: de:item:a1u06-letzt
+  - item: de:item:a1u06-film
+  - item: de:item:a1u06-sehen
+  - item: de:item:a1u06-besuchen
+  - item: de:item:a1u06-museum
+  - item: de:item:a1u06-ausflug
+  - item: de:item:a1u06-spass-machen
+  - item: de:item:a1u06-toll
+  - item: de:item:a1u06-langweilig
+  - item: de:item:a1u06-spaziergang
+  - item: de:item:a1u06-spiel
+  - item: de:item:a1u02-g-haben
+    role: reuse
+  - item: de:item:a1u04-g-trennbare-verben
+    role: reuse
+  - item: de:item:a1u04-g-satzklammer
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được cuối tuần vừa rồi, ví dụ: \"Am Samstag habe ich eingekauft und einen Film gesehen. Das hat Spaß gemacht!\""
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ cần thêm \"đã\" hay \"hôm qua\"; tiếng Đức phải đổi cả động từ. Khi nói chuyện, người Đức kể việc đã qua bằng Perfekt: haben (chia theo chủ ngữ) + Partizip II của động từ chính."
+  - type: explain
+    text:
+      vi: "Perfekt cũng là khung câu, giống động từ tách và động từ khiếm khuyết: haben ở vị trí 2, Partizip II ở cuối câu. Ich habe gestern einen Film gesehen – không nói Ich habe gesehen einen Film."
+  - type: explain
+    text:
+      vi: "Động từ thường: ge + gốc + t – machen → gemacht, kaufen → gekauft, spielen → gespielt; gốc tận cùng -t thì thêm -et: arbeiten → gearbeitet. Động từ mạnh: ge + gốc + en, nhiều từ đổi nguyên âm – sehen → gesehen, lesen → gelesen, essen → gegessen, trinken → getrunken; loại này bạn phải học thuộc."
+  - type: explain
+    text:
+      vi: "Động từ tách: ge chen vào giữa tiền tố và gốc – einkaufen → eingekauft, fernsehen → ferngesehen, aufräumen → aufgeräumt. Tiền tố vẫn dính liền với Partizip và cả từ đứng cuối câu."
+  - type: explain
+    text:
+      vi: "Mốc thời gian: gestern (hôm qua), letzte Woche (tuần trước), letztes Wochenende (cuối tuần trước), am Samstag. Không có giới từ trước letzt- (không nói in letzte Woche). Khi mốc thời gian đứng đầu câu, haben vẫn ở vị trí 2."
+  - type: deep_explain
+    text:
+      vi: "Tiếng Đức có hai cách kể quá khứ: Perfekt (văn nói, tin nhắn) và Präteritum (văn viết, truyện). Ở A1 bạn dùng Perfekt, riêng sein và haben thì dùng war/hatte (bài sau). Động từ bắt đầu bằng be-, ver-… hoặc tận cùng -ieren không thêm ge: besuchen → besucht, telefonieren → telefoniert – bạn sẽ học kỹ ở A2, bây giờ chỉ cần nhận ra. Một nhóm động từ chỉ di chuyển dùng sein thay haben (Ich bin gefahren) – đó là bài tiếp theo. \"Vui\" nói bằng Spaß machen, chủ ngữ là hoạt động: Der Ausflug hat Spaß gemacht."
+  - type: example
+    target: Was hast du am Wochenende gemacht? – Ich habe ein Buch gelesen und Musik gehört.
+    target_lang: de
+    translation:
+      vi: Cuối tuần bạn đã làm gì? – Mình đọc một cuốn sách và nghe nhạc.
+    note:
+      vi: Hỏi bạn bè (du). hast/habe ở vị trí 2, Partizip ở cuối câu; hai Partizip nối bằng und dùng chung một habe.
+  - type: example
+    target: Gestern Abend haben wir ferngesehen und Pizza gegessen.
+    target_lang: de
+    translation:
+      vi: Tối qua chúng tôi xem ti vi và ăn pizza.
+    note:
+      vi: fernsehen → ferngesehen (ge chen giữa); essen → gegessen (động từ mạnh, đuôi -en). Gestern Abend đứng đầu nên haben ở vị trí 2.
+  - type: example
+    target: Letztes Wochenende haben wir einen Ausflug gemacht. Das hat viel Spaß gemacht!
+    target_lang: de
+    translation:
+      vi: Cuối tuần trước chúng tôi đi chơi một chuyến. Vui lắm!
+    note:
+      vi: einen Ausflug machen = đi chơi một chuyến. Chủ ngữ của Spaß machen là hoạt động (das), không phải người.
+  - type: example
+    target: Haben Sie gestern eingekauft? – Nein, ich habe gearbeitet.
+    target_lang: de
+    translation:
+      vi: Hôm qua anh/chị có đi mua sắm không? – Không, tôi đi làm.
+    note:
+      vi: Hỏi lịch sự (Sie). Câu hỏi có/không – Haben đứng đầu, Partizip cuối. arbeiten → gearbeitet (gốc tận cùng -t nên thêm -et).
+  - type: example
+    target: Am Sonntag besuche ich meine Oma. Wir gehen zusammen ins Museum.
+    target_lang: de
+    translation:
+      vi: Chủ nhật tôi đi thăm bà. Hai bà cháu cùng đi bảo tàng.
+    note:
+      vi: Trong bài này besuchen chỉ dùng ở hiện tại (Partizip besucht không có ge-, học ở A2). ins Museum gehen giống cụm ins Kino gehen.
+  - type: common_mistake
+    wrong: Gestern ich sehe einen Film.
+    right: Gestern habe ich einen Film gesehen.
+    target_lang: de
+    note:
+      vi: Có gestern vẫn phải đổi động từ sang Perfekt (habe … gesehen), và động từ chia ở vị trí 2 ngay sau gestern.
+  - type: common_mistake
+    wrong: Ich habe gesehen einen Film.
+    right: Ich habe einen Film gesehen.
+    target_lang: de
+    note:
+      vi: Partizip II luôn đứng cuối câu, không đứng ngay sau haben như tiếng Việt "đã xem".
+  - type: common_mistake
+    wrong: Ich habe den Film gesiehen.
+    right: Ich habe den Film gesehen.
+    target_lang: de
+    note:
+      vi: Partizip lấy gốc từ nguyên thể sehen, không lấy dạng du siehst.
+  - type: common_mistake
+    wrong: Wir haben geeinkauft.
+    right: Wir haben eingekauft.
+    target_lang: de
+    note:
+      vi: Với động từ tách, ge chen giữa tiền tố và gốc – ein-ge-kauft.
+  - type: summary
+    points:
+      - vi: "Perfekt = haben (vị trí 2) + … + Partizip II (cuối câu)."
+      - vi: "Động từ thường: ge…t (gemacht, gekauft, gearbeitet)."
+      - vi: "Động từ mạnh: ge…en, học thuộc (gesehen, gelesen, gegessen, getrunken)."
+      - vi: "Động từ tách: ge ở giữa (eingekauft, ferngesehen, aufgeräumt)."
+      - vi: "gestern, letzte Woche, letztes Wochenende đầu câu → haben vẫn ở vị trí 2."
+      - vi: "Das hat Spaß gemacht! – chủ ngữ là hoạt động; toll ↔ langweilig."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u06l3-mcq-satz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-perfekt-haben
+    prompt:
+      stem: "Câu nào đúng nghĩa \"Hôm qua tôi đã xem một bộ phim.\"?"
+      stem_lang: vi
+      options:
+        - { id: g3k, text: Ich habe gestern einen Film gesehen., lang: de }
+        - { id: v7b, text: Ich habe gestern gesehen einen Film., lang: de }
+        - { id: n2w, text: Ich bin gestern einen Film gesehen., lang: de }
+        - { id: q8e, text: Gestern ich habe einen Film gesehen., lang: de }
+    answer:
+      correct_option_id: g3k
+    explanation:
+      vi: "Perfekt = habe ở vị trí 2, gesehen ở cuối câu. Partizip không đứng ngay sau habe; sehen dùng haben chứ không dùng sein; câu bắt đầu bằng Gestern thì động từ habe phải đứng ngay sau."
+    display_answer: Ich habe gestern einen Film gesehen.
+
+  - key: de:exercise:a1u06l3-mcq-eingekauft
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-partizip-ii
+    prompt:
+      stem: "Partizip II của động từ tách einkaufen là gì?"
+      stem_lang: vi
+      options:
+        - { id: e4m, text: eingekauft, lang: de }
+        - { id: s9c, text: gekauft, lang: de }
+        - { id: o1t, text: einkauft, lang: de }
+        - { id: l6p, text: einkaufte, lang: de }
+    answer:
+      correct_option_id: e4m
+    explanation:
+      vi: "Động từ tách: ge chen giữa tiền tố ein và gốc kauf, rồi thêm -t → eingekauft. gekauft là của kaufen (mua), thiếu ein; einkauft không có ge."
+    display_answer: eingekauft
+
+  - key: de:exercise:a1u06l3-listen-ausflug
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-ausflug
+    prompt:
+      audio_asset_id: null
+      fallback_text: Am Sonntag haben wir einen Ausflug gemacht. Das hat viel Spaß gemacht.
+      options:
+        - { id: u2d, text: Chủ nhật chúng tôi đã đi chơi một chuyến. Rất vui., lang: vi }
+        - { id: h7r, text: Chủ nhật chúng tôi sẽ đi chơi một chuyến. Rất vui., lang: vi }
+        - { id: c5n, text: Chủ nhật chúng tôi đã đi chơi một chuyến. Rất chán., lang: vi }
+        - { id: z3x, text: Thứ Bảy chúng tôi đã đi chơi một chuyến. Rất vui., lang: vi }
+    answer:
+      correct_option_id: u2d
+    explanation:
+      vi: "haben … gemacht là Perfekt nên việc đã xảy ra (không phải \"sẽ\"). Am Sonntag = Chủ nhật; Das hat viel Spaß gemacht = rất vui (chán là langweilig)."
+    display_answer: Chủ nhật chúng tôi đã đi chơi một chuyến. Rất vui.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u06l3-fill-partizip
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-partizip-ii
+    prompt:
+      template: "Am Samstag habe ich {{b1}} (einkaufen). Am Abend haben wir Pizza {{b2}} (essen) und Musik {{b3}} (hören)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [eingekauft]
+        b2: [gegessen]
+        b3: [gehört]
+    known_wrong:
+      - answer: geeinkauft
+        feedback_vi: Với động từ tách, ge chen vào giữa – ein-ge-kauft.
+        error_tag: separable_prefix
+      - answer: einkauft
+        feedback_vi: Partizip II cần ge – với động từ tách thì ge ở giữa – eingekauft.
+        error_tag: participle_form
+      - answer: geesst
+        feedback_vi: essen là động từ mạnh – Partizip là gegessen (đuôi -en).
+        error_tag: participle_form
+      - answer: gehören
+        feedback_vi: hören là động từ thường – ge + hör + t = gehört.
+        error_tag: participle_form
+    explanation:
+      vi: "einkaufen (tách) → ein-ge-kauft; essen (mạnh) → gegessen; hören (thường) → gehört. Cả ba đều đi với haben và đứng cuối câu."
+    display_answer: "Am Samstag habe ich eingekauft. Am Abend haben wir Pizza gegessen und Musik gehört."
+
+  - key: de:exercise:a1u06l3-fill-haben
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u02-g-haben
+    prompt:
+      template: "{{b1}} du gestern ferngesehen? – Nein, ich {{b2}} ein Buch gelesen. Und meine Eltern {{b3}} Karten gespielt."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Hast]
+        b2: [habe]
+        b3: [haben]
+    known_wrong:
+      - answer: bist
+        feedback_vi: fernsehen dùng haben ở Perfekt – Hast du ferngesehen?
+        error_tag: aux_verb
+      - answer: bin
+        feedback_vi: lesen dùng haben ở Perfekt – ich habe gelesen.
+        error_tag: aux_verb
+      - answer: sind
+        feedback_vi: spielen dùng haben ở Perfekt – sie haben gespielt.
+        error_tag: aux_verb
+      - answer: hat
+        feedback_vi: hat là của er/sie/es. du → hast, ich → habe, meine Eltern (sie) → haben.
+        error_tag: verb_form
+    explanation:
+      vi: "Cả ba động từ (fernsehen, lesen, spielen) dùng haben. Chia haben theo chủ ngữ: du hast, ich habe, meine Eltern (= sie) haben."
+    display_answer: "Hast du gestern ferngesehen? – Nein, ich habe ein Buch gelesen. Und meine Eltern haben Karten gespielt."
+
+  - key: de:exercise:a1u06l3-tr-gestern-film
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-film
+    prompt:
+      source_text: Hôm qua tôi đã xem một bộ phim.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe gestern einen Film gesehen.
+        - Gestern habe ich einen Film gesehen.
+        - Gestern habe ich mir einen Film angesehen.
+        - Ich habe mir gestern einen Film angesehen.
+    known_wrong:
+      - answer: Gestern ich habe einen Film gesehen.
+        feedback_vi: Gestern ở vị trí 1 thì habe phải ở vị trí 2 – Gestern habe ich …
+        error_tag: verb_position
+      - answer: Ich habe gestern gesehen einen Film.
+        feedback_vi: Partizip gesehen đứng cuối câu.
+        error_tag: word_order
+      - answer: Ich bin gestern einen Film gesehen.
+        feedback_vi: sehen dùng haben – ich habe … gesehen.
+        error_tag: aux_verb
+      - answer: Ich sehe gestern einen Film.
+        feedback_vi: Việc đã xảy ra hôm qua → Perfekt – ich habe … gesehen.
+        error_tag: tense_present
+      - answer: Ich habe gestern einen Film gesiehen.
+        feedback_vi: Partizip của sehen là gesehen (lấy gốc nguyên thể, không phải siehst).
+        error_tag: participle_form
+      - answer: Ich habe gestern ein Film gesehen.
+        feedback_vi: der Film là giống đực, làm tân ngữ → einen Film.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Perfekt: habe (vị trí 2) + gesehen (cuối câu). der Film là giống đực nên làm tân ngữ đổi thành einen Film. gestern đứng sau habe hoặc ở đầu câu."
+    display_answer: Ich habe gestern einen Film gesehen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u06l3-wb-ausflug
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-letzt
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cuối tuần trước chúng tôi đã đi chơi một chuyến.\""
+      tokens:
+        - { id: x-gemacht, text: gemacht }
+        - { id: x-wir, text: wir }
+        - { id: x-einen, text: einen }
+        - { id: x-letztes, text: Letztes }
+        - { id: x-sind, text: sind }
+        - { id: x-ausflug, text: Ausflug }
+        - { id: x-haben, text: haben }
+        - { id: x-we, text: Wochenende }
+    answer:
+      orders:
+        - [x-letztes, x-we, x-haben, x-wir, x-einen, x-ausflug, x-gemacht]
+    explanation:
+      vi: "Letztes Wochenende ở vị trí 1, nên haben ở vị trí 2, chủ ngữ wir đứng sau. einen Ausflug machen dùng haben (không phải sind), Partizip gemacht đứng cuối câu."
+    display_answer: Letztes Wochenende haben wir einen Ausflug gemacht.
+
+  - key: de:exercise:a1u06l3-tr-getroffen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u06-g-partizip-ii
+    prompt:
+      source_text: Am Samstag habe ich eingekauft, und am Abend habe ich Freunde getroffen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thứ Bảy tôi đi mua sắm, và buổi tối tôi gặp bạn bè.
+        - Thứ Bảy tôi đã đi mua sắm, và buổi tối tôi đã gặp bạn bè.
+        - Thứ Bảy tôi đi mua sắm, buổi tối tôi gặp bạn bè.
+        - Thứ Bảy tôi đi mua đồ, và buổi tối tôi gặp bạn bè.
+        - Thứ Bảy tôi đi chợ, và buổi tối tôi gặp bạn bè.
+        - Hôm thứ Bảy tôi đi mua sắm, và buổi tối tôi gặp bạn bè.
+        - Thứ Bảy tôi đi mua sắm, còn buổi tối tôi gặp bạn bè.
+        - Thứ Bảy tôi đi mua sắm và tối thì gặp bạn bè.
+        - Thứ Bảy mình đi mua sắm, và buổi tối mình gặp bạn bè.
+        - Thứ Bảy tôi đi mua sắm, và buổi tối tôi gặp mấy người bạn.
+        - Thứ Bảy tôi đi mua sắm, và buổi tối tôi gặp các bạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thứ Bảy tôi sẽ đi mua sắm, và buổi tối tôi sẽ gặp bạn bè.
+        feedback_vi: habe … eingekauft, habe … getroffen là Perfekt – việc đã xảy ra, không phải "sẽ".
+        error_tag: tense_meaning
+    explanation:
+      vi: "eingekauft là Partizip của einkaufen (mua sắm), getroffen là của treffen (gặp) – động từ mạnh, đổi e → o. Tiếng Việt không bắt buộc thêm \"đã\" khi đã có mốc thời gian."
+    display_answer: Thứ Bảy tôi đi mua sắm, và buổi tối tôi gặp bạn bè.
+
+  - key: de:exercise:a1u06l3-mcq-spass
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u06-spass-machen
+    prompt:
+      stem: "Bạn muốn kể: \"Chuyến đi chơi hôm qua rất vui.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: w5f, text: Der Ausflug hat gestern viel Spaß gemacht., lang: de }
+        - { id: k1j, text: Ich habe gestern viel Spaß gemacht., lang: de }
+        - { id: b8o, text: Der Ausflug ist gestern viel Spaß gemacht., lang: de }
+        - { id: d4a, text: Der Ausflug hat gestern viel Spaß machen., lang: de }
+    answer:
+      correct_option_id: w5f
+    explanation:
+      vi: "Chủ ngữ của Spaß machen là hoạt động (der Ausflug), trợ động từ là haben và Partizip gemacht ở cuối. \"Ich habe Spaß gemacht\" lại có nghĩa \"tôi đã nói đùa\"; ist … gemacht sai trợ động từ; machen là nguyên thể, không phải Partizip."
+    display_answer: Der Ausflug hat gestern viel Spaß gemacht.

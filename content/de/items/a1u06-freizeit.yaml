@@ -1,0 +1,1286 @@
+# Học liệu unit A1U06 "Thời gian rảnh và hẹn gặp" (Freizeit und Verabredungen), chương trình de:program:a1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (A1U06L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Sở thích – gern, lieber, am liebsten =================
+  - key: de:item:a1u06-g-gern-lieber-am-liebsten
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "gern – lieber – am liebsten"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "gern (thích làm) có dạng so sánh bất quy tắc: lieber = thích hơn, am liebsten = thích nhất. Cả ba đứng ở cùng chỗ, thường ngay sau động từ chia. Không nói \"mehr gern\" hay \"am meisten gern\"."
+      examples:
+        - target: Ich spiele gern Fußball, aber ich schwimme lieber.
+          translation:
+            vi: Tôi thích đá bóng, nhưng tôi thích bơi hơn.
+        - target: Am liebsten lese ich am Wochenende.
+          translation:
+            vi: Tôi thích nhất là đọc sách vào cuối tuần.
+        - target: Was machst du am liebsten?
+          translation:
+            vi: Bạn thích làm gì nhất?
+      confusion:
+        vi: "gern/lieber/am liebsten đi với hành động (động từ). Với danh từ, bạn dùng mögen: Ich mag Musik. Viết gern hay gerne đều đúng."
+
+  - key: de:item:a1u06-lesen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: lesen (du liest)
+      ipa: /ˈleːzn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: đọc
+      examples:
+        - target: Ich lese gern Bücher.
+          translation:
+            vi: Tôi thích đọc sách.
+        - target: Liest du oft?
+          translation:
+            vi: Bạn có hay đọc sách không?
+      pronunciation_note:
+        vi: e dài như "ê" kéo dài; s trước nguyên âm đọc gần như "d" giọng Bắc.
+      confusion:
+        vi: "Đổi nguyên âm e → ie ở du và er/sie/es: du liest, er liest (không phải du lest)."
+
+  - key: de:item:a1u06-schwimmen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: schwimmen
+      ipa: /ˈʃvɪmən/
+      pos: động từ
+    back:
+      meaning:
+        vi: bơi
+      examples:
+        - target: Im Sommer schwimme ich oft.
+          translation:
+            vi: Mùa hè tôi hay đi bơi.
+        - target: Ich gehe am Samstag schwimmen.
+          translation:
+            vi: Thứ Bảy tôi đi bơi.
+      pronunciation_note:
+        vi: "schw đọc là \"sch\" + \"v\": /ʃv/; i ngắn vì đứng trước mm."
+
+  - key: de:item:a1u06-tanzen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tanzen
+      ipa: /ˈtantsn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: nhảy, khiêu vũ
+      examples:
+        - target: Tanzt du gern?
+          translation:
+            vi: Bạn có thích nhảy không?
+        - target: Meine Freundin tanzt sehr gut.
+          translation:
+            vi: Bạn gái tôi nhảy rất giỏi.
+      pronunciation_note:
+        vi: z đọc là "ts". Gốc tận cùng -z nên du chỉ thêm -t - du tanzt.
+
+  - key: de:item:a1u06-spielen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: spielen
+      ipa: /ˈʃpiːlən/
+      pos: động từ
+    back:
+      meaning:
+        vi: chơi (thể thao, nhạc cụ, trò chơi)
+      examples:
+        - target: Wir spielen am Samstag Fußball.
+          translation:
+            vi: Thứ Bảy chúng tôi đá bóng.
+        - target: Spielst du Gitarre?
+          translation:
+            vi: Bạn có chơi ghi-ta không?
+      pronunciation_note:
+        vi: sp đầu từ đọc là "schp".
+      confusion:
+        vi: "Chơi thể thao và nhạc cụ không có mạo từ: Fußball spielen, Gitarre spielen (tiếng Anh nói \"play the guitar\")."
+
+  - key: de:item:a1u06-wandern
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wandern
+      ipa: /ˈvandɐn/
+      pos: động từ
+    back:
+      meaning:
+        vi: đi bộ đường dài (ở núi, ở rừng)
+      examples:
+        - target: Am Wochenende wandern wir oft.
+          translation:
+            vi: Cuối tuần chúng tôi hay đi bộ đường dài.
+        - target: Ich wandere gern.
+          translation:
+            vi: Tôi thích đi bộ đường dài.
+      pronunciation_note:
+        vi: w đọc như "v" tiếng Việt; -ern cuối đọc nhẹ như "an".
+      confusion:
+        vi: "Gốc tận cùng -er: ich wandere, du wanderst, er wandert, wir wandern. wandern là đi bộ xa ngoài thiên nhiên, không phải đi dạo trong phố."
+
+  - key: de:item:a1u06-singen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: singen
+      ipa: /ˈzɪŋən/
+      pos: động từ
+    back:
+      meaning:
+        vi: hát
+      examples:
+        - target: Meine Schwester singt sehr gern.
+          translation:
+            vi: Chị/em gái tôi rất thích hát.
+        - target: Wir singen zusammen.
+          translation:
+            vi: Chúng tôi cùng hát.
+      pronunciation_note:
+        vi: ng đọc như "ng" tiếng Việt, không bật thêm âm g.
+
+  - key: de:item:a1u06-freizeit
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Freizeit (Sg.)
+      ipa: /ˈfraɪ̯tsaɪ̯t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian rảnh
+      examples:
+        - target: Was machst du in der Freizeit?
+          translation:
+            vi: Lúc rảnh bạn làm gì?
+        - target: In der Freizeit spiele ich Gitarre.
+          translation:
+            vi: Lúc rảnh tôi chơi ghi-ta.
+      confusion:
+        vi: Từ ghép frei (rảnh, tự do) + die Zeit nên là giống cái. "Lúc rảnh" nói là in der Freizeit.
+
+  - key: de:item:a1u06-konzert
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Konzert, -e
+      ipa: /kɔnˈtsɛrt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi hòa nhạc, buổi biểu diễn ca nhạc
+      examples:
+        - target: Das Konzert ist am Freitag.
+          translation:
+            vi: Buổi hòa nhạc vào thứ Sáu.
+        - target: Das Konzert war toll.
+          translation:
+            vi: Buổi hòa nhạc tuyệt lắm.
+      pronunciation_note:
+        vi: Nhấn âm tiết sau (Kon-ZERT); z đọc là "ts".
+
+  - key: de:item:a1u06-oft
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: oft
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thường, hay (làm gì đó)
+      examples:
+        - target: Ich spiele oft Fußball.
+          translation:
+            vi: Tôi hay đá bóng.
+        - target: Wie oft schwimmst du?
+          translation:
+            vi: Bạn bơi có thường xuyên không? (bao lâu một lần)
+      confusion:
+        vi: "Thang tần suất: immer (luôn luôn) – oft (thường) – manchmal (thỉnh thoảng) – nie (không bao giờ)."
+
+  - key: de:item:a1u06-manchmal
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: manchmal
+      ipa: /ˈmançmaːl/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thỉnh thoảng
+      examples:
+        - target: Manchmal tanze ich am Wochenende.
+          translation:
+            vi: Thỉnh thoảng cuối tuần tôi đi nhảy.
+        - target: Ich lese manchmal.
+          translation:
+            vi: Thỉnh thoảng tôi đọc sách.
+      pronunciation_note:
+        vi: ch sau n đọc như "h" xì nhẹ (ich-Laut).
+      confusion:
+        vi: Khi manchmal đứng đầu câu, động từ vẫn ở vị trí 2 - Manchmal tanze ich (không nói Manchmal ich tanze).
+
+  - key: de:item:a1u06-zum-beispiel
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: zum Beispiel (z. B.)
+      pos: cụm từ
+    back:
+      meaning:
+        vi: ví dụ, chẳng hạn
+      examples:
+        - target: Ich mache viel Sport, zum Beispiel Fußball und Tennis.
+          translation:
+            vi: Tôi chơi nhiều môn thể thao, ví dụ bóng đá và quần vợt.
+      confusion:
+        vi: Khi viết hay dùng dạng tắt z. B. (có dấu cách), nhưng khi đọc vẫn nói đầy đủ zum Beispiel.
+
+  # Zusatzwortschatz bài 1
+  - key: de:item:a1u06-gitarre
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Gitarre, -n
+      ipa: /ɡiˈtarə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đàn ghi-ta
+      examples:
+        - target: Spielst du Gitarre?
+          translation:
+            vi: Bạn có chơi ghi-ta không?
+      pronunciation_note:
+        vi: Nhấn âm tiết giữa (gi-TAR-re); g đọc "g", không đọc "gi" như tiếng Việt.
+      confusion:
+        vi: Gitarre spielen không có mạo từ.
+
+  - key: de:item:a1u06-joggen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: joggen
+      ipa: /ˈdʒɔɡn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: chạy bộ (để tập thể dục)
+      examples:
+        - target: Ich jogge oft im Park.
+          translation:
+            vi: Tôi hay chạy bộ trong công viên.
+      pronunciation_note:
+        vi: Từ mượn tiếng Anh, j đọc như "dj" (khác j tiếng Đức thường đọc như "i").
+
+  - key: de:item:a1u06-malen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: malen
+      ipa: /ˈmaːlən/
+      pos: động từ
+    back:
+      meaning:
+        vi: vẽ (tranh, tô màu)
+      examples:
+        - target: Meine Tochter malt sehr gern.
+          translation:
+            vi: Con gái tôi rất thích vẽ.
+      pronunciation_note:
+        vi: a dài.
+
+  # ================= Bài 2: Bạn có rảnh không? – dürfen, man =================
+  - key: de:item:a1u06-g-duerfen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "dürfen: ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie dürfen"
+      pos: động từ khiếm khuyết
+    back:
+      meaning:
+        vi: "dürfen = được phép; nicht dürfen = không được, cấm. Như können/müssen: ich và er/sie/es không có đuôi, số ít đổi ü → a. Động từ chính ở dạng nguyên thể, đứng cuối câu."
+      examples:
+        - target: Darf ich hier parken?
+          translation:
+            vi: Tôi đỗ xe ở đây được không?
+        - target: Kinder dürfen hier spielen.
+          translation:
+            vi: Trẻ em được chơi ở đây.
+      confusion:
+        vi: "nicht dürfen = cấm (Du darfst hier nicht parken.); nicht müssen = không cần (Du musst nicht kommen.)."
+
+  - key: de:item:a1u06-g-man
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "man (man darf, man spielt, man muss)"
+      pos: đại từ
+    back:
+      meaning:
+        vi: "man = người ta, ai cũng – dùng khi không nói rõ ai làm. Động từ chia như với er/sie/es. Tiếng Việt thường bỏ chủ ngữ (\"Ở đây không được đỗ xe\"), tiếng Đức phải có man."
+      examples:
+        - target: Hier darf man nicht schwimmen.
+          translation:
+            vi: Ở đây không được bơi.
+        - target: Wie sagt man das auf Deutsch?
+          translation:
+            vi: Cái này tiếng Đức nói thế nào?
+      confusion:
+        vi: man (người ta, viết thường, một chữ n) khác der Mann (người đàn ông). Không nói man dürfen, man müssen.
+
+  - key: de:item:a1u06-einladen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: einladen (du lädst ein)
+      ipa: /ˈaɪ̯nlaːdn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: mời
+      examples:
+        - target: Ich mache am Samstag eine Party. Ich lade dich ein!
+          translation:
+            vi: Thứ Bảy mình tổ chức tiệc. Mình mời bạn nhé!
+        - target: Lädst du Anna ein?
+          translation:
+            vi: Bạn có mời Anna không?
+      confusion:
+        vi: "Động từ tách: ein- đứng cuối câu (Ich lade dich ein). Ở du và er đổi a → ä: du lädst ein, er lädt ein."
+
+  - key: de:item:a1u06-treffen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: treffen (du triffst)
+      ipa: /ˈtrɛfn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: gặp (gặp ai đó, thường là có hẹn)
+      examples:
+        - target: Ich treffe Anna um sechs Uhr.
+          translation:
+            vi: Tôi gặp Anna lúc sáu giờ.
+        - target: Triffst du heute Tom?
+          translation:
+            vi: Hôm nay bạn gặp Tom à?
+      confusion:
+        vi: "Đổi e → i: du triffst, er trifft. Partizip II là getroffen."
+
+  - key: de:item:a1u06-party
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Party, -s
+      ipa: /ˈpaːɐ̯ti/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bữa tiệc
+      examples:
+        - target: Die Party ist am Samstag.
+          translation:
+            vi: Bữa tiệc vào thứ Bảy.
+        - target: Machst du eine Party?
+          translation:
+            vi: Bạn có tổ chức tiệc không?
+      confusion:
+        vi: "Tổ chức tiệc: eine Party machen (hoặc feiern). Số nhiều thêm -s như nhiều từ mượn: die Partys."
+
+  - key: de:item:a1u06-zusammen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: zusammen
+      ipa: /tsuˈzamən/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cùng nhau
+      examples:
+        - target: Gehen wir zusammen ins Kino?
+          translation:
+            vi: Mình cùng đi xem phim nhé?
+        - target: Wir wohnen zusammen.
+          translation:
+            vi: Chúng tôi sống chung.
+      pronunciation_note:
+        vi: z đầu từ đọc "ts", s giữa hai nguyên âm đọc gần như "d" giọng Bắc - "tsu-DAM-mơn".
+
+  - key: de:item:a1u06-lust-haben
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Lust haben
+      pos: cụm từ
+    back:
+      meaning:
+        vi: có hứng, muốn (làm gì) – thân mật
+      examples:
+        - target: Hast du heute Abend Lust? Wir gehen ins Kino.
+          translation:
+            vi: Tối nay bạn có hứng không? Bọn mình đi xem phim.
+        - target: Ich habe heute keine Lust.
+          translation:
+            vi: Hôm nay tôi không có hứng.
+      confusion:
+        vi: "Phủ định dùng kein: keine Lust (die Lust). Lust haben thân mật hơn möchten, hợp với bạn bè."
+
+  - key: de:item:a1u06-gute-idee
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: Gute Idee!
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Ý hay đấy!
+      examples:
+        - target: Wollen wir zusammen ins Kino gehen? – Gute Idee!
+          translation:
+            vi: Mình cùng đi xem phim nhé? – Ý hay đấy!
+      confusion:
+        vi: Dùng để nhận lời một đề nghị. Câu đầy đủ là Das ist eine gute Idee.
+
+  - key: de:item:a1u06-vielleicht
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: vielleicht
+      ipa: /fiˈlaɪ̯çt/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: có lẽ, có thể
+      examples:
+        - target: Vielleicht am Sonntag?
+          translation:
+            vi: Hay là Chủ nhật nhé?
+        - target: Vielleicht komme ich später.
+          translation:
+            vi: Có lẽ tôi đến muộn hơn.
+      pronunciation_note:
+        vi: v đọc "ph"; ie trong viel đọc ngắn "i"; nhấn âm tiết sau.
+
+  - key: de:item:a1u06-schade
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: schade
+      ipa: /ˈʃaːdə/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tiếc quá, đáng tiếc
+      examples:
+        - target: Schade, ich kann leider nicht.
+          translation:
+            vi: Tiếc quá, mình không đi được.
+        - target: Du hast keine Zeit? Schade!
+          translation:
+            vi: Bạn không rảnh à? Tiếc thật!
+      confusion:
+        vi: Dùng khi từ chối hoặc khi nghe tin không vui. Câu đầy đủ là Das ist schade.
+
+  - key: de:item:a1u06-immer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: immer
+      pos: trạng từ
+    back:
+      meaning:
+        vi: luôn luôn, lúc nào cũng
+      examples:
+        - target: Am Sonntag schlafe ich immer lange.
+          translation:
+            vi: Chủ nhật tôi lúc nào cũng ngủ dậy muộn.
+        - target: Ich trinke immer Kaffee.
+          translation:
+            vi: Tôi lúc nào cũng uống cà phê.
+      confusion:
+        vi: "immer đứng sau động từ chia, giống oft: Ich tanze immer gern."
+
+  - key: de:item:a1u06-nie
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: nie
+      pos: trạng từ
+    back:
+      meaning:
+        vi: không bao giờ
+      examples:
+        - target: Ich tanze nie.
+          translation:
+            vi: Tôi không bao giờ nhảy.
+        - target: Mein Vater hat nie Zeit.
+          translation:
+            vi: Bố tôi chẳng bao giờ có thời gian.
+      confusion:
+        vi: nie đã mang nghĩa phủ định, không thêm nicht (không nói nicht nie).
+
+  - key: de:item:a1u06-ins-kino-gehen
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: ins Kino gehen
+      pos: cụm từ
+    back:
+      meaning:
+        vi: đi xem phim (ở rạp)
+      examples:
+        - target: Wollen wir heute Abend ins Kino gehen?
+          translation:
+            vi: Tối nay mình đi xem phim nhé?
+        - target: Ich gehe am Freitag ins Kino.
+          translation:
+            vi: Thứ Sáu tôi đi xem phim.
+      confusion:
+        vi: Học như cụm cố định; ins = in das. Cùng kiểu có ins Konzert gehen, ins Museum gehen (quy tắc học ở A2).
+
+  # Zusatzwortschatz bài 2
+  - key: de:item:a1u06-parken
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: parken
+      pos: động từ
+    back:
+      meaning:
+        vi: đỗ xe
+      examples:
+        - target: Hier darf man nicht parken.
+          translation:
+            vi: Ở đây không được đỗ xe.
+      confusion:
+        vi: Hay gặp trên biển báo - Parken verboten (cấm đỗ xe).
+
+  - key: de:item:a1u06-verabredung
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Verabredung, -en
+      ipa: /fɛɐ̯ˈʔapreːdʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc hẹn (với bạn bè)
+      examples:
+        - target: Ich habe heute Abend eine Verabredung.
+          translation:
+            vi: Tối nay tôi có hẹn.
+      confusion:
+        vi: Hẹn với bạn bè là die Verabredung; hẹn chính thức (bác sĩ, công việc) là der Termin.
+
+  # ================= Bài 3: Perfekt với haben =================
+  - key: de:item:a1u06-g-perfekt-haben
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Perfekt mit haben: haben + … + Partizip II"
+      pos: thì quá khứ (văn nói)
+    back:
+      meaning:
+        vi: "Kể việc đã xảy ra khi nói chuyện: haben chia theo chủ ngữ ở vị trí 2, Partizip II ở cuối câu (khung câu). Phần lớn động từ dùng haben."
+      examples:
+        - target: Ich habe gestern einen Film gesehen.
+          translation:
+            vi: Hôm qua tôi đã xem một bộ phim.
+        - target: Was hast du am Wochenende gemacht?
+          translation:
+            vi: Cuối tuần bạn đã làm gì?
+      confusion:
+        vi: "Không đặt Partizip ngay sau haben: Ich habe einen Film gesehen (không nói Ich habe gesehen einen Film)."
+
+  - key: de:item:a1u06-g-partizip-ii
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Partizip II: gemacht, gesehen, eingekauft"
+      pos: dạng động từ
+    back:
+      meaning:
+        vi: "Động từ thường: ge + gốc + t (machen → gemacht, arbeiten → gearbeitet). Động từ mạnh: ge + gốc + en, nhiều từ đổi nguyên âm (sehen → gesehen, trinken → getrunken) – phải học thuộc. Động từ tách: ge chen giữa tiền tố và gốc (einkaufen → eingekauft, fernsehen → ferngesehen)."
+      examples:
+        - target: Wir haben am Samstag eingekauft.
+          translation:
+            vi: Thứ Bảy chúng tôi đã đi mua sắm.
+        - target: Hast du schon gegessen?
+          translation:
+            vi: Bạn ăn chưa?
+      confusion:
+        vi: "Partizip lấy gốc từ nguyên thể, không lấy dạng du/er: sehen → gesehen (không phải gesiehen). Động từ có be-, ver- hay -ieren không thêm ge (besucht) – học ở A2."
+
+  - key: de:item:a1u06-gestern
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: gestern
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hôm qua
+      examples:
+        - target: Gestern habe ich viel gearbeitet.
+          translation:
+            vi: Hôm qua tôi làm việc nhiều.
+        - target: Was hast du gestern Abend gemacht?
+          translation:
+            vi: Tối qua bạn làm gì?
+      confusion:
+        vi: "gestern đứng đầu câu thì động từ chia vẫn ở vị trí 2: Gestern habe ich … (không nói Gestern ich habe …)."
+
+  - key: de:item:a1u06-letzt
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: letzte Woche, letztes Wochenende
+      pos: cụm từ
+    back:
+      meaning:
+        vi: tuần trước, cuối tuần trước (letzt- = vừa qua)
+      examples:
+        - target: Letzte Woche habe ich viel gearbeitet.
+          translation:
+            vi: Tuần trước tôi làm việc nhiều.
+        - target: Was hast du letztes Wochenende gemacht?
+          translation:
+            vi: Cuối tuần trước bạn đã làm gì?
+      confusion:
+        vi: "Đuôi đổi theo giống danh từ: letzte Woche (die), letztes Wochenende (das), letzten Sonntag (der). Không có giới từ phía trước (không nói in letzte Woche)."
+
+  - key: de:item:a1u06-film
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Film, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ phim
+      examples:
+        - target: Der Film ist toll.
+          translation:
+            vi: Bộ phim hay tuyệt.
+        - target: Ich habe einen Film gesehen.
+          translation:
+            vi: Tôi đã xem một bộ phim.
+      confusion:
+        vi: Giống đực nên làm tân ngữ đổi thành einen/den Film.
+
+  - key: de:item:a1u06-sehen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sehen (du siehst)
+      ipa: /ˈzeːən/
+      pos: động từ
+    back:
+      meaning:
+        vi: nhìn thấy, xem
+      examples:
+        - target: Siehst du gern Filme?
+          translation:
+            vi: Bạn có thích xem phim không?
+        - target: Ich habe den Film schon gesehen.
+          translation:
+            vi: Tôi đã xem bộ phim đó rồi.
+      pronunciation_note:
+        vi: h sau nguyên âm không đọc, chỉ làm e dài - "dê-ơn".
+      confusion:
+        vi: "Đổi e → ie: du siehst, er sieht. Partizip II là gesehen. Xem ti vi là fernsehen (động từ tách)."
+
+  - key: de:item:a1u06-besuchen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: besuchen
+      ipa: /bəˈzuːxn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: thăm (người), tham quan (nơi chốn)
+      examples:
+        - target: Am Sonntag besuche ich meine Oma.
+          translation:
+            vi: Chủ nhật tôi đi thăm bà.
+        - target: Besuchst du oft deine Eltern?
+          translation:
+            vi: Bạn có hay về thăm bố mẹ không?
+      pronunciation_note:
+        vi: be- không nhấn, nhấn vào -SU-.
+      confusion:
+        vi: "besuchen + Akkusativ, không cần giới từ: Ich besuche meinen Freund. Partizip II là besucht (không có ge-) – học ở A2."
+
+  - key: de:item:a1u06-museum
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Museum, Museen
+      ipa: /muˈzeːʊm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo tàng
+      examples:
+        - target: Das Museum ist am Montag geschlossen.
+          translation:
+            vi: Bảo tàng đóng cửa vào thứ Hai.
+        - target: In Berlin gibt es viele Museen.
+          translation:
+            vi: Ở Berlin có nhiều bảo tàng.
+      pronunciation_note:
+        vi: Nhấn âm tiết giữa (mu-ZE-um); e và u đọc tách rời.
+      confusion:
+        vi: Số nhiều bất quy tắc - die Museen (bỏ -um, thêm -en).
+
+  - key: de:item:a1u06-ausflug
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Ausflug, ¨-e
+      ipa: /ˈaʊ̯sfluːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến đi chơi (ngắn, thường trong ngày)
+      examples:
+        - target: Wir haben einen Ausflug gemacht.
+          translation:
+            vi: Chúng tôi đã đi chơi một chuyến.
+        - target: Am Sonntag machen wir einen Ausflug.
+          translation:
+            vi: Chủ nhật chúng tôi đi dã ngoại.
+      pronunciation_note:
+        vi: g cuối đọc thành "k" - "AUS-fluk".
+      confusion:
+        vi: "Đi chơi một chuyến nói là einen Ausflug machen (giống đực → einen). Số nhiều: die Ausflüge."
+
+  - key: de:item:a1u06-spass-machen
+    type: phrase
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: Spaß machen
+      pos: cụm từ
+    back:
+      meaning:
+        vi: vui, thú vị (việc gì đó làm mình vui)
+      examples:
+        - target: Tanzen macht Spaß!
+          translation:
+            vi: Nhảy vui lắm!
+        - target: Der Ausflug hat viel Spaß gemacht.
+          translation:
+            vi: Chuyến đi chơi rất vui.
+      confusion:
+        vi: "Chủ ngữ là hoạt động, không phải người: Das macht Spaß. Người thấy vui thì nói Ich habe Spaß (còn Ich mache Spaß = tôi nói đùa)."
+
+  - key: de:item:a1u06-toll
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: toll
+      pos: tính từ
+    back:
+      meaning:
+        vi: tuyệt, hay lắm
+      examples:
+        - target: Der Film ist toll!
+          translation:
+            vi: Bộ phim hay tuyệt!
+        - target: Toll, danke!
+          translation:
+            vi: Tuyệt quá, cảm ơn nhé!
+      confusion:
+        vi: Khẩu ngữ, dùng nhiều khi nói chuyện với bạn bè; gần nghĩa với super, prima.
+
+  - key: de:item:a1u06-langweilig
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: langweilig
+      ipa: /ˈlaŋvaɪ̯lɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: chán, buồn tẻ
+      examples:
+        - target: Der Film ist langweilig.
+          translation:
+            vi: Bộ phim chán.
+        - target: Fußball finde ich langweilig.
+          translation:
+            vi: Tôi thấy bóng đá chán.
+      pronunciation_note:
+        vi: -ig cuối đọc như "ich".
+
+  # Zusatzwortschatz bài 3
+  - key: de:item:a1u06-spaziergang
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Spaziergang, ¨-e
+      ipa: /ʃpaˈtsiːɐ̯ɡaŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc đi dạo
+      examples:
+        - target: Am Sonntag haben wir einen Spaziergang gemacht.
+          translation:
+            vi: Chủ nhật chúng tôi đã đi dạo.
+        - target: Ein Spaziergang im Park ist schön.
+          translation:
+            vi: Đi dạo trong công viên thật dễ chịu.
+      pronunciation_note:
+        vi: sp đầu từ đọc "schp"; z đọc "ts"; nhấn âm tiết thứ hai (spa-ZIER-gang).
+      confusion:
+        vi: "Đi dạo là einen Spaziergang machen (Perfekt với haben: Ich habe einen Spaziergang gemacht). Số nhiều: die Spaziergänge."
+
+  - key: de:item:a1u06-spiel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Spiel, -e
+      ipa: /ʃpiːl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trận đấu; trò chơi
+      examples:
+        - target: Hast du das Spiel gesehen?
+          translation:
+            vi: Bạn đã xem trận đấu chưa?
+        - target: Das Spiel ist um acht Uhr.
+          translation:
+            vi: Trận đấu lúc tám giờ.
+      confusion:
+        vi: Danh từ của spielen. Trận bóng đá là das Fußballspiel.
+
+  # ================= Bài 4: Perfekt với sein, war/hatte, thời tiết =================
+  - key: de:item:a1u06-g-perfekt-sein
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Perfekt mit sein: Ich bin gefahren / geblieben / gewesen."
+      pos: thì quá khứ (văn nói)
+    back:
+      meaning:
+        vi: "Động từ chỉ di chuyển (fahren, fliegen, gehen, kommen) hoặc đổi trạng thái (aufstehen) dùng sein thay haben. bleiben và sein cũng dùng sein: ich bin geblieben, ich bin gewesen. sein chia ở vị trí 2, Partizip cuối câu như với haben."
+      examples:
+        - target: Wir sind am Sonntag Fahrrad gefahren.
+          translation:
+            vi: Chủ nhật chúng tôi đã đạp xe.
+        - target: Wir sind drei Tage in Hamburg geblieben.
+          translation:
+            vi: Chúng tôi đã ở lại Hamburg ba ngày.
+      confusion:
+        vi: "Không nói Ich habe gefahren, Ich habe gewesen. Tiếng Đức chuẩn (miền Bắc) dùng haben cho sitzen, stehen, liegen; miền Nam, Áo, Thụy Sĩ nói ich bin gesessen."
+
+  - key: de:item:a1u06-g-praeteritum-sein-haben
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "war / hatte: ich war, du warst, wir waren; ich hatte, du hattest, wir hatten"
+      pos: thì quá khứ (Präteritum)
+    back:
+      meaning:
+        vi: "Với sein và haben, người Đức thường dùng war/hatte thay cho Perfekt, cả khi nói. war: ich war, du warst, er war, wir waren, ihr wart, sie waren. hatte: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten."
+      examples:
+        - target: Das Wetter war schön.
+          translation:
+            vi: Thời tiết (đã) đẹp.
+        - target: Ich hatte gestern keine Zeit.
+          translation:
+            vi: Hôm qua tôi không có thời gian.
+      confusion:
+        vi: "ich và er có cùng dạng (ich war, er war; ich hatte, er hatte), không có đuôi -t. Ich war in Berlin tự nhiên hơn Ich bin in Berlin gewesen."
+
+  - key: de:item:a1u06-fahren
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: fahren (du fährst)
+      ipa: /ˈfaːrən/
+      pos: động từ
+    back:
+      meaning:
+        vi: đi (bằng xe, tàu…), lái xe
+      examples:
+        - target: Fährst du oft Fahrrad?
+          translation:
+            vi: Bạn có hay đạp xe không?
+        - target: Wir sind am Samstag Auto gefahren.
+          translation:
+            vi: Thứ Bảy chúng tôi đã đi ô tô.
+      confusion:
+        vi: "Đổi a → ä: du fährst, er fährt. Đi bộ là gehen, đi bằng phương tiện là fahren. Perfekt dùng sein: ich bin gefahren."
+
+  - key: de:item:a1u06-fliegen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: fliegen
+      ipa: /ˈfliːɡn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: bay, đi máy bay
+      examples:
+        - target: Wie lange fliegt man von Frankfurt nach Hanoi?
+          translation:
+            vi: Bay từ Frankfurt đến Hà Nội mất bao lâu?
+        - target: Wir sind zwölf Stunden geflogen.
+          translation:
+            vi: Chúng tôi đã bay mười hai tiếng.
+      confusion:
+        vi: "Perfekt dùng sein: ich bin geflogen (nguyên âm ie → o)."
+
+  - key: de:item:a1u06-bleiben
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: bleiben
+      ipa: /ˈblaɪ̯bn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: ở lại
+      examples:
+        - target: Wie lange bleibst du in Berlin?
+          translation:
+            vi: Bạn ở lại Berlin bao lâu?
+        - target: Ich bin im Hotel geblieben.
+          translation:
+            vi: Tôi đã ở lại khách sạn.
+      confusion:
+        vi: "bleiben không chỉ di chuyển nhưng Perfekt vẫn dùng sein: ich bin geblieben."
+
+  - key: de:item:a1u06-wetter
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Wetter (Sg.)
+      ipa: /ˈvɛtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời tiết
+      examples:
+        - target: Wie ist das Wetter heute?
+          translation:
+            vi: Hôm nay thời tiết thế nào?
+        - target: Das Wetter war schön.
+          translation:
+            vi: Thời tiết (đã) đẹp.
+      pronunciation_note:
+        vi: w đọc "v"; -er cuối đọc nhẹ như "a".
+
+  - key: de:item:a1u06-regen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Regen (Sg.)
+      ipa: /ˈreːɡn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mưa (cơn mưa)
+      examples:
+        - target: Morgen kommt Regen.
+          translation:
+            vi: Ngày mai trời sẽ mưa.
+        - target: Ich mag den Regen nicht.
+          translation:
+            vi: Tôi không thích mưa.
+      confusion:
+        vi: der Regen là danh từ (cơn mưa); "trời mưa" dùng động từ - Es regnet.
+
+  - key: de:item:a1u06-regnen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: regnen (es regnet)
+      ipa: /ˈreːɡnən/
+      pos: động từ
+    back:
+      meaning:
+        vi: mưa (trời mưa)
+      examples:
+        - target: Es regnet schon wieder.
+          translation:
+            vi: Trời lại mưa rồi.
+        - target: Gestern hat es viel geregnet.
+          translation:
+            vi: Hôm qua trời mưa nhiều.
+      confusion:
+        vi: "Luôn có chủ ngữ es (tiếng Việt chỉ nói \"trời mưa\"). Perfekt dùng haben: es hat geregnet."
+
+  - key: de:item:a1u06-schnee
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Schnee (Sg.)
+      ipa: /ʃneː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuyết
+      examples:
+        - target: Im Winter gibt es hier viel Schnee.
+          translation:
+            vi: Mùa đông ở đây có nhiều tuyết.
+        - target: Wir hatten viel Schnee.
+          translation:
+            vi: Chỗ chúng tôi (đã) có nhiều tuyết.
+      pronunciation_note:
+        vi: ee là e dài - "schnê".
+
+  - key: de:item:a1u06-warm
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: warm
+      pos: tính từ
+    back:
+      meaning:
+        vi: ấm
+      examples:
+        - target: Heute ist es warm.
+          translation:
+            vi: Hôm nay trời ấm.
+      pronunciation_note:
+        vi: w đọc "v"; r sau a đọc nhẹ, gần như không nghe.
+
+  - key: de:item:a1u06-kalt
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kalt
+      pos: tính từ
+    back:
+      meaning:
+        vi: lạnh
+      examples:
+        - target: Gestern war es sehr kalt.
+          translation:
+            vi: Hôm qua trời rất lạnh.
+        - target: Mir ist kalt.
+          translation:
+            vi: Tôi thấy lạnh.
+      confusion:
+        vi: "Tả thời tiết: Es ist kalt. Tả cảm giác của mình: Mir ist kalt (không nói Ich bin kalt)."
+
+  - key: de:item:a1u06-heiss
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: heiß
+      ipa: /haɪ̯s/
+      pos: tính từ
+    back:
+      meaning:
+        vi: nóng
+      examples:
+        - target: Im Sommer ist es oft heiß.
+          translation:
+            vi: Mùa hè trời thường nóng.
+      pronunciation_note:
+        vi: ei đọc "ai"; ß đọc "x" sau nguyên âm đôi.
+      confusion:
+        vi: heiß (nóng) khác heißen (tên là). Thang nhiệt độ - kalt, warm, heiß.
+
+  # Zusatzwortschatz bài 4
+  - key: de:item:a1u06-sonnig
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: sonnig
+      ipa: /ˈzɔnɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: nắng, có nắng
+      examples:
+        - target: Morgen ist es sonnig und warm.
+          translation:
+            vi: Ngày mai trời nắng và ấm.
+      pronunciation_note:
+        vi: -ig cuối đọc như "ich".
+      confusion:
+        vi: Tính từ từ die Sonne (mặt trời) + -ig.
+
+  - key: de:item:a1u06-windig
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: windig
+      ipa: /ˈvɪndɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: có gió, nhiều gió
+      examples:
+        - target: Heute ist es kalt und windig.
+          translation:
+            vi: Hôm nay trời lạnh và nhiều gió.
+      pronunciation_note:
+        vi: w đọc "v"; -ig cuối đọc như "ich".
+
+  - key: de:item:a1u06-wind
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Wind, -e
+      ipa: /vɪnt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: gió
+      examples:
+        - target: Heute gibt es viel Wind.
+          translation:
+            vi: Hôm nay gió nhiều.
+        - target: Der Wind ist sehr kalt.
+          translation:
+            vi: Gió rất lạnh.
+      pronunciation_note:
+        vi: d cuối đọc "t" - "vint".

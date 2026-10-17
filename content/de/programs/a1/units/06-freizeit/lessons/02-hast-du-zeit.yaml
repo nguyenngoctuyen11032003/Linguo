@@ -1,0 +1,366 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u06-hast-du-zeit
+order_index: 2
+level: a1
+title:
+  vi: Bạn có rảnh không? – dürfen, man (Hast du Zeit?)
+objectives:
+  - vi: Rủ bạn bè đi chơi, nhận lời và từ chối lịch sự có lý do.
+  - vi: Đề xuất ngày giờ khác khi mình bận.
+  - vi: Dùng dürfen và man để xin phép và hiểu biển cấm đơn giản.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u06-hobbys]
+items:
+  - item: de:item:a1u06-g-duerfen
+  - item: de:item:a1u06-g-man
+  - item: de:item:a1u06-einladen
+  - item: de:item:a1u06-treffen
+  - item: de:item:a1u06-party
+  - item: de:item:a1u06-zusammen
+  - item: de:item:a1u06-lust-haben
+  - item: de:item:a1u06-gute-idee
+  - item: de:item:a1u06-vielleicht
+  - item: de:item:a1u06-schade
+  - item: de:item:a1u06-immer
+  - item: de:item:a1u06-nie
+  - item: de:item:a1u06-ins-kino-gehen
+  - item: de:item:a1u06-parken
+  - item: de:item:a1u06-verabredung
+  - item: de:item:a1u02-g-doch
+    role: reuse
+  - item: de:item:a1u03-g-und-aber-oder
+    role: reuse
+  - item: de:item:a1u04-g-modalverben
+    role: reuse
+  - item: de:item:a1u04-g-modal-satzklammer
+    role: reuse
+  - item: de:item:a1u04-g-am-im-um
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn rủ được bạn bè đi xem phim, nhận lời hoặc từ chối khéo rồi hẹn lúc khác, và hiểu những câu như \"Hier darf man nicht parken.\""
+  - type: explain
+    text:
+      vi: "dürfen nghĩa là \"được phép\". Giống können và müssen, ngôi ich và er/sie/es không có đuôi, số ít đổi ü → a: ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie/Sie dürfen. Động từ chính ở dạng nguyên thể và đứng cuối câu: Darf ich hier parken?"
+  - type: explain
+    text:
+      vi: "nicht dürfen là \"không được, cấm\": Hier darf man nicht schwimmen. Đừng nhầm với nicht müssen, chỉ là \"không cần\": Du musst nicht kommen = bạn không cần đến."
+  - type: explain
+    text:
+      vi: "man nghĩa là \"người ta\", \"ai cũng\" – giống câu tiếng Việt không có chủ ngữ rõ (\"Ở đây không được đỗ xe\"). Tiếng Đức vẫn cần chủ ngữ man, và động từ chia như với er/sie/es: man darf, man spielt, man muss. man viết thường, khác der Mann (người đàn ông)."
+  - type: explain
+    text:
+      vi: "Để rủ bạn, bạn có thể nói: Hast du Lust? – Wollen wir zusammen ins Kino gehen? – Gehen wir zusammen ins Kino? Nhận lời bằng Ja, gern! hoặc Gute Idee!"
+  - type: explain
+    text:
+      vi: "Khi từ chối, chỉ nói \"Nein.\" nghe rất cộc. Hãy nói tiếc, nêu lý do rồi đề xuất lúc khác: Schade, ich kann leider nicht. Ich muss arbeiten. Vielleicht am Sonntag?"
+  - type: deep_explain
+    text:
+      vi: "Ở Đức, bạn bè thường hẹn trước vài ngày và đến đúng giờ; trễ hơn 5–10 phút thì nên nhắn tin báo. Lust haben thân mật hơn möchten, hợp với bạn bè. ins Kino gehen học như cụm cố định (ins = in das); quy tắc này bạn học ở A2. Thang tần suất: immer (luôn luôn) – oft – manchmal – nie (không bao giờ). Nếu ai hỏi phủ định \"Hast du keine Lust?\" mà bạn muốn đi, hãy trả lời Doch!, không phải Ja."
+  - type: example
+    target: Hast du am Samstag Zeit? Wollen wir zusammen ins Kino gehen?
+    target_lang: de
+    translation:
+      vi: Thứ Bảy bạn rảnh không? Mình cùng đi xem phim nhé?
+    note:
+      vi: Dùng du khi rủ bạn bè. wollen ở vị trí 2, gehen ở cuối câu (khung câu với động từ khiếm khuyết).
+  - type: example
+    target: Schade, ich kann leider nicht. Ich muss arbeiten. Vielleicht am Sonntag?
+    target_lang: de
+    translation:
+      vi: Tiếc quá, mình không đi được. Mình phải làm việc. Hay là Chủ nhật nhé?
+    note:
+      vi: Từ chối lịch sự = tiếc (schade, leider) + lý do + đề xuất lúc khác (vielleicht …?).
+  - type: example
+    target: Entschuldigung, darf man hier parken? – Nein, hier darf man nicht parken.
+    target_lang: de
+    translation:
+      vi: Xin lỗi, ở đây có được đỗ xe không? – Không, ở đây không được đỗ xe.
+    note:
+      vi: Hỏi người lạ; dùng man nên không cần chọn du hay Sie. man + darf (ngôi 3 số ít); nicht dürfen = cấm.
+  - type: example
+    target: Ich mache am Freitag eine Party. Ich lade dich ein! – Gute Idee! Ich komme gern.
+    target_lang: de
+    translation:
+      vi: Thứ Sáu mình tổ chức tiệc. Mình mời bạn nhé! – Ý hay đấy! Mình sẽ đến.
+    note:
+      vi: Nói với bạn bè (du → dich). einladen là động từ tách – ich lade dich ein; tiền tố ein đứng cuối câu.
+  - type: example
+    target: Hast du keine Lust? – Doch! Ich gehe immer gern ins Kino.
+    target_lang: de
+    translation:
+      vi: Bạn không thích à? – Có chứ! Mình lúc nào cũng thích đi xem phim.
+    note:
+      vi: Câu hỏi phủ định mà muốn trả lời "có" thì dùng Doch. immer đứng sau động từ gehe, như oft.
+  - type: common_mistake
+    wrong: Hier dürfen man nicht parken.
+    right: Hier darf man nicht parken.
+    target_lang: de
+    note:
+      vi: man đi với động từ ngôi 3 số ít – man darf, man muss (không nói man dürfen, man müssen).
+  - type: common_mistake
+    wrong: Hast du am Samstag Lust? – Nein.
+    right: Hast du am Samstag Lust? – Schade, ich habe leider keine Zeit. Vielleicht am Sonntag?
+    target_lang: de
+    note:
+      vi: Chỉ trả lời "Nein." nghe rất cộc. Hãy nói tiếc, nêu lý do và đề xuất lúc khác.
+  - type: common_mistake
+    wrong: Ich einlade dich.
+    right: Ich lade dich ein.
+    target_lang: de
+    note:
+      vi: einladen là động từ tách – phần ein đứng cuối câu.
+  - type: summary
+    points:
+      - vi: "dürfen: ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie/Sie dürfen; nguyên thể cuối câu."
+      - vi: nicht dürfen = cấm; nicht müssen = không cần.
+      - vi: "man (người ta) + động từ ngôi 3 số ít: man darf, man spielt."
+      - vi: "Rủ: Hast du Lust? / Wollen wir zusammen ins Kino gehen? Nhận lời: Ja, gern! / Gute Idee!"
+      - vi: "Từ chối: Schade, ich kann leider nicht. + lý do + Vielleicht am Sonntag?"
+      - vi: "einladen (du lädst ein), treffen (du triffst); immer – oft – manchmal – nie."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u06l2-mcq-darf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-duerfen
+    prompt:
+      stem: "Chọn dạng đúng: ___ ich hier parken?"
+      stem_lang: vi
+      options:
+        - { id: p2v, text: Darf, lang: de }
+        - { id: f8n, text: Darfst, lang: de }
+        - { id: j4k, text: Dürfen, lang: de }
+        - { id: z6q, text: Dürft, lang: de }
+    answer:
+      correct_option_id: p2v
+    explanation:
+      vi: "Chủ ngữ là ich, và dürfen ở ngôi ich không có đuôi, đổi ü → a: ich darf. darfst dùng cho du, dürfen cho wir/sie/Sie, dürft cho ihr."
+    display_answer: Darf
+
+  - key: de:exercise:a1u06l2-listen-keine-zeit
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-schade
+    prompt:
+      audio_asset_id: null
+      fallback_text: Schade, am Samstag habe ich keine Zeit. Ich muss arbeiten.
+      options:
+        - { id: v5r, text: "Tiếc quá, thứ Bảy mình không rảnh. Mình phải làm việc.", lang: vi }
+        - { id: g1e, text: "Tiếc quá, Chủ nhật mình không rảnh. Mình phải làm việc.", lang: vi }
+        - { id: b6s, text: Thứ Bảy mình rảnh. Mình không phải làm việc., lang: vi }
+        - { id: l3w, text: "Tiếc quá, thứ Bảy mình không rảnh. Mình muốn làm việc.", lang: vi }
+    answer:
+      correct_option_id: v5r
+    explanation:
+      vi: "Schade = tiếc quá; am Samstag = thứ Bảy; keine Zeit = không có thời gian, không rảnh; ich muss arbeiten = phải làm việc (müssen), không phải \"muốn\" (wollen)."
+    display_answer: Tiếc quá, thứ Bảy mình không rảnh. Mình phải làm việc.
+
+  - key: de:exercise:a1u06l2-mcq-schild
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-g-man
+    prompt:
+      stem: "Biển ở công viên ghi: \"Hier darf man nicht Fußball spielen.\" Nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: x7a, text: Ở đây không được chơi bóng đá., lang: vi }
+        - { id: c2h, text: Ở đây không cần chơi bóng đá., lang: vi }
+        - { id: t9d, text: Ở đây người ta hay chơi bóng đá., lang: vi }
+        - { id: k5y, text: Ở đây được phép chơi bóng đá., lang: vi }
+    answer:
+      correct_option_id: x7a
+    explanation:
+      vi: "man = người ta (ai cũng vậy); darf … nicht = không được, cấm. \"Không cần\" là nicht müssen; câu có nicht nên không phải \"được phép\"."
+    display_answer: Ở đây không được chơi bóng đá.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u06l2-fill-darf
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-duerfen
+    prompt:
+      template: "{{b1}} ich hier parken? – Nein, hier {{b2}} man nicht parken. Aber da {{b3}} Sie parken."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Darf]
+        b2: [darf]
+        b3: [dürfen]
+    known_wrong:
+      - answer: darft
+        feedback_vi: Ngôi ich và er/man của dürfen không có đuôi – ich darf, man darf.
+        error_tag: verb_form
+      - answer: dürft
+        feedback_vi: dürft là ngôi ihr. Với ich và man là darf, với Sie là dürfen.
+        error_tag: verb_form
+      - answer: kann
+        feedback_vi: Hỏi xin phép và nói điều bị cấm trên biển báo dùng dürfen (darf).
+        error_tag: modal_choice
+    explanation:
+      vi: "ich và man đi với dạng không đuôi darf; Sie (lịch sự) chia như số nhiều: Sie dürfen. Động từ chính parken ở cuối câu."
+    display_answer: "Darf ich hier parken? – Nein, hier darf man nicht parken. Aber da dürfen Sie parken."
+
+  - key: de:exercise:a1u06l2-fill-einladen-treffen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-einladen
+    prompt:
+      template: "Am Samstag mache ich eine Party. Ich {{b1}} dich {{b2}}! – Danke! Am Nachmittag {{b3}} ich Anna, aber am Abend habe ich Zeit."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [lade]
+        b2: [ein]
+        b3: [treffe]
+    known_wrong:
+      - answer: einlade
+        feedback_vi: einladen là động từ tách – ich lade … ein (ein đứng cuối câu).
+        error_tag: separable_prefix
+      - answer: lädt
+        feedback_vi: Chủ ngữ là ich nên không đổi a → ä – ich lade (du lädst, er lädt).
+        error_tag: verb_form
+      - answer: triffe
+        feedback_vi: treffen chỉ đổi e → i ở du và er – ich treffe.
+        error_tag: verb_form
+    explanation:
+      vi: "einladen tách thành lade (vị trí 2) … ein (cuối câu). Với ich không đổi nguyên âm: ich lade, ich treffe (chỉ du lädst, er trifft mới đổi)."
+    display_answer: "Am Samstag mache ich eine Party. Ich lade dich ein! – Danke! Am Nachmittag treffe ich Anna, aber am Abend habe ich Zeit."
+
+  - key: de:exercise:a1u06l2-tr-zusammen-kino
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-ins-kino-gehen
+    prompt:
+      source_text: Mình cùng đi xem phim nhé? (rủ bạn thân)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wollen wir zusammen ins Kino gehen?
+        - Gehen wir zusammen ins Kino?
+        - Wollen wir zusammen ins Kino?
+        - Wollen wir ins Kino gehen?
+        - Gehen wir ins Kino?
+        - Sollen wir zusammen ins Kino gehen?
+        - Wollen wir gemeinsam ins Kino gehen?
+        - Gehen wir gemeinsam ins Kino?
+    known_wrong:
+      - answer: Wollen wir zusammen gehen ins Kino?
+        feedback_vi: Với wollen, động từ nguyên thể gehen đứng cuối câu – Wollen wir zusammen ins Kino gehen?
+        error_tag: verb_position
+      - answer: Wollen wir zusammen in Kino gehen?
+        feedback_vi: Cụm cố định là ins Kino gehen (ins = in das).
+        error_tag: preposition
+      - answer: Wollen wir zusammen ins Kino gehe?
+        feedback_vi: Sau wollen, động từ chính ở dạng nguyên thể – gehen.
+        error_tag: verb_form
+    explanation:
+      vi: "Rủ rê dùng câu hỏi bắt đầu bằng động từ: Wollen wir … gehen? (nguyên thể cuối câu) hoặc Gehen wir …? \"Cùng nhau\" là zusammen; \"đi xem phim\" là cụm ins Kino gehen."
+    display_answer: Wollen wir zusammen ins Kino gehen?
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u06l2-wb-park
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-man
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Trong công viên không được đá bóng.\""
+      tokens:
+        - { id: w-nicht, text: nicht }
+        - { id: w-darf, text: darf }
+        - { id: w-fussball, text: Fußball }
+        - { id: w-im, text: Im }
+        - { id: w-duerfen, text: dürfen }
+        - { id: w-spielen, text: spielen }
+        - { id: w-man, text: man }
+        - { id: w-park, text: Park }
+    answer:
+      orders:
+        - [w-im, w-park, w-darf, w-man, w-nicht, w-fussball, w-spielen]
+    explanation:
+      vi: "Im Park đứng đầu nên động từ chia darf ở vị trí 2, chủ ngữ man đứng sau. man đi với darf (ngôi 3 số ít), không phải dürfen. nicht đứng trước cụm Fußball spielen, nguyên thể spielen ở cuối câu."
+    display_answer: Im Park darf man nicht Fußball spielen.
+
+  - key: de:exercise:a1u06l2-mcq-absage
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-vielleicht
+    prompt:
+      stem: "Bạn của bạn rủ: \"Hast du am Freitag Lust? Wir gehen ins Kino.\" Bạn bận và muốn từ chối lịch sự. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: r8b, text: "Schade, am Freitag kann ich leider nicht. Ich muss arbeiten. Vielleicht am Samstag?", lang: de }
+        - { id: m3s, text: Nein., lang: de }
+        - { id: f6u, text: "Nein, ich habe keine Lust. Tschüss!", lang: de }
+        - { id: y1i, text: "Schade, am Freitag ich kann leider nicht. Ich muss arbeiten.", lang: de }
+        - { id: h4c, text: "Gute Idee! Ich komme gern.", lang: de }
+    answer:
+      correct_option_id: r8b
+    explanation:
+      vi: "Câu đúng có đủ ba phần: tiếc (Schade, leider), lý do (Ich muss arbeiten) và đề xuất (Vielleicht am Samstag?), lại đúng V2: am Freitag kann ich. \"Nein.\" và \"keine Lust. Tschüss!\" quá cộc; câu có \"am Freitag ich kann\" sai vị trí động từ; Gute Idee! là nhận lời."
+    display_answer: "Schade, am Freitag kann ich leider nicht. Ich muss arbeiten. Vielleicht am Samstag?"
+
+  - key: de:exercise:a1u06l2-tr-nie-immer
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u06-nie
+    prompt:
+      source_text: Mein Bruder tanzt nie, aber er singt immer gern.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh trai tôi không bao giờ nhảy, nhưng anh ấy lúc nào cũng thích hát.
+        - Anh trai tôi không bao giờ nhảy, nhưng anh ấy luôn thích hát.
+        - Anh trai tôi không bao giờ nhảy, nhưng lúc nào cũng thích hát.
+        - Anh trai tôi không bao giờ nhảy nhưng luôn thích hát.
+        - Em trai tôi không bao giờ nhảy, nhưng nó lúc nào cũng thích hát.
+        - Em trai tôi không bao giờ nhảy, nhưng em ấy luôn thích hát.
+        - Em trai tôi không bao giờ nhảy, nhưng lúc nào cũng thích hát.
+        - Anh tôi không bao giờ nhảy, nhưng anh ấy lúc nào cũng thích hát.
+        - Anh trai tôi chẳng bao giờ nhảy, nhưng anh ấy lúc nào cũng thích hát.
+        - Anh trai tôi không bao giờ khiêu vũ, nhưng anh ấy luôn thích hát.
+        - Anh trai mình không bao giờ nhảy, nhưng anh ấy lúc nào cũng thích hát.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh trai tôi thỉnh thoảng nhảy, nhưng anh ấy lúc nào cũng thích hát.
+        feedback_vi: nie là "không bao giờ", không phải "thỉnh thoảng" (manchmal).
+        error_tag: frequency_meaning
+      - answer: Anh trai tôi không bao giờ nhảy, nhưng anh ấy thỉnh thoảng thích hát.
+        feedback_vi: immer là "luôn luôn, lúc nào cũng".
+        error_tag: frequency_meaning
+    explanation:
+      vi: "nie = không bao giờ, immer = luôn luôn; gern = thích. der Bruder có thể là anh trai hoặc em trai."
+    display_answer: Anh trai tôi không bao giờ nhảy, nhưng anh ấy lúc nào cũng thích hát.

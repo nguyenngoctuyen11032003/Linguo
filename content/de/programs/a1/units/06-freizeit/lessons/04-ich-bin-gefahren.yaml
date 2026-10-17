@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u06-ich-bin-gefahren
+order_index: 4
+level: a1
+title:
+  vi: Tôi đã đi – Perfekt với sein, war/hatte, thời tiết (Ich bin gefahren.)
+objectives:
+  - vi: Kể một chuyến đi ngắn bằng Perfekt với sein (Ich bin gefahren, geflogen, geblieben).
+  - vi: Dùng war và hatte để nói mình đã ở đâu, trời thế nào, có gì.
+  - vi: Nghe và nói về thời tiết – Es regnet, es war kalt, es hat geregnet.
+estimated_minutes: 15
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:a1u06-was-hast-du-gemacht]
+items:
+  - item: de:item:a1u06-g-perfekt-sein
+  - item: de:item:a1u06-g-praeteritum-sein-haben
+  - item: de:item:a1u06-fahren
+  - item: de:item:a1u06-fliegen
+  - item: de:item:a1u06-bleiben
+  - item: de:item:a1u06-wetter
+  - item: de:item:a1u06-regen
+  - item: de:item:a1u06-regnen
+  - item: de:item:a1u06-schnee
+  - item: de:item:a1u06-warm
+  - item: de:item:a1u06-kalt
+  - item: de:item:a1u06-heiss
+  - item: de:item:a1u06-sonnig
+  - item: de:item:a1u06-windig
+  - item: de:item:a1u06-wind
+  - item: de:item:a1u01-g-sein
+    role: reuse
+  - item: de:item:a1u03-g-vokalwechsel
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-haben
+    role: reuse
+  - item: de:item:a1u06-g-partizip-ii
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được một chuyến đi ngắn và thời tiết hôm đó, ví dụ: \"Am Wochenende war ich in Hamburg. Wir sind drei Tage geblieben. Leider hat es viel geregnet.\""
+  - type: explain
+    text:
+      vi: "Một nhóm động từ dùng sein thay cho haben ở Perfekt: động từ chỉ di chuyển từ chỗ này sang chỗ khác (fahren, fliegen, gehen, kommen) và động từ chỉ đổi trạng thái (aufstehen). Ngoài ra bleiben (ở lại) và chính sein cũng dùng sein: ich bin geblieben, ich bin gewesen."
+  - type: explain
+    text:
+      vi: "Cấu trúc vẫn là khung câu: sein chia ở vị trí 2, Partizip ở cuối câu – Wir sind gestern Fahrrad gefahren. Các Partizip cần nhớ: fahren → gefahren, fliegen → geflogen, gehen → gegangen, kommen → gekommen, bleiben → geblieben, aufstehen → aufgestanden."
+  - type: explain
+    text:
+      vi: "Với sein và haben, người Đức thường dùng dạng ngắn war và hatte thay cho Perfekt, cả khi nói: Ich war in Berlin, Ich hatte keine Zeit. war: ich war, du warst, er war, wir waren, ihr wart, sie waren; hatte: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten."
+  - type: explain
+    text:
+      vi: "Nói thời tiết, tiếng Đức luôn cần chủ ngữ es (tiếng Việt chỉ nói \"trời mưa\"): Es regnet. Es ist kalt. Kể hôm qua: Es war kalt. Es hat geregnet – regnen không chỉ di chuyển nên dùng haben."
+  - type: deep_explain
+    text:
+      vi: "Ở miền Nam nước Đức, Áo và Thụy Sĩ, người ta nói ich bin gesessen/gestanden/gelegen; tiếng Đức chuẩn (miền Bắc) và đề thi dùng ich habe gesessen. Nhiệt độ ở Đức tính bằng độ C: Es sind 20 Grad. Khi kể chuyến đi, nơi đến thường đi với nach (nach Berlin) – giới từ này bạn học ở unit sau; trong bài này bạn kể bằng in + nơi chốn: Ich war in Berlin. Wir sind drei Tage in Berlin geblieben."
+  - type: example
+    target: Am Wochenende bin ich Fahrrad gefahren. Das Wetter war sehr schön.
+    target_lang: de
+    translation:
+      vi: Cuối tuần tôi đạp xe. Thời tiết rất đẹp.
+    note:
+      vi: fahren chỉ di chuyển → bin … gefahren. war là dạng quá khứ của ist.
+  - type: example
+    target: Wir waren drei Tage in Hamburg. Leider hat es viel geregnet.
+    target_lang: de
+    translation:
+      vi: Chúng tôi ở Hamburg ba ngày. Tiếc là trời mưa nhiều.
+    note:
+      vi: wir waren = wir + sein ở quá khứ. regnen dùng haben – es hat geregnet.
+  - type: example
+    target: Wo warst du gestern? – Ich hatte keine Lust und bin im Bett geblieben.
+    target_lang: de
+    translation:
+      vi: Hôm qua bạn ở đâu? – Mình chẳng có hứng nên nằm lì trên giường.
+    note:
+      vi: Hỏi bạn bè (du → du warst). hatte = quá khứ của haben; bleiben dùng sein – bin … geblieben.
+  - type: example
+    target: Wie lange sind Sie geflogen? – Zwölf Stunden.
+    target_lang: de
+    translation:
+      vi: Anh/chị đã bay bao lâu? – Mười hai tiếng.
+    note:
+      vi: Hỏi lịch sự (Sie). fliegen chỉ di chuyển → sind … geflogen.
+  - type: example
+    target: Im Winter hatten wir viel Schnee, und es war sehr kalt.
+    target_lang: de
+    translation:
+      vi: Mùa đông năm ấy chỗ chúng tôi có nhiều tuyết, và trời rất lạnh.
+    note:
+      vi: wir hatten = quá khứ của wir haben; es war = quá khứ của es ist.
+  - type: common_mistake
+    wrong: Wir haben Fahrrad gefahren.
+    right: Wir sind Fahrrad gefahren.
+    target_lang: de
+    note:
+      vi: fahren chỉ di chuyển nên Perfekt dùng sein – wir sind … gefahren.
+  - type: common_mistake
+    wrong: Ich habe in Hamburg gewesen.
+    right: Ich war in Hamburg.
+    target_lang: de
+    note:
+      vi: Perfekt của sein dùng sein (Ich bin in Hamburg gewesen), nhưng tự nhiên nhất là dùng war – Ich war in Hamburg.
+  - type: common_mistake
+    wrong: Gestern es ist kalt.
+    right: Gestern war es kalt.
+    target_lang: de
+    note:
+      vi: Hôm qua là quá khứ nên dùng war; gestern đứng đầu thì động từ ở vị trí 2, es đứng sau.
+  - type: summary
+    points:
+      - vi: "Perfekt với sein: động từ di chuyển/đổi trạng thái (fahren, fliegen, gehen, kommen, aufstehen) + bleiben, sein."
+      - vi: "sein (vị trí 2) + Partizip (cuối câu): Wir sind Fahrrad gefahren."
+      - vi: "war: ich war, du warst, er war, wir waren, ihr wart, sie waren."
+      - vi: "hatte: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten."
+      - vi: "Thời tiết luôn có es: Es regnet. Es war kalt. Es hat geregnet (haben)."
+      - vi: "fahren đổi a → ä: du fährst, er fährt."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u06l4-listen-wetter
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-regnen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Gestern war es kalt, und es hat viel geregnet.
+      options:
+        - { id: a8m, text: Hôm qua trời lạnh và mưa nhiều., lang: vi }
+        - { id: f3q, text: Hôm nay trời lạnh và mưa nhiều., lang: vi }
+        - { id: j6z, text: Hôm qua trời nóng và mưa nhiều., lang: vi }
+        - { id: p1c, text: Hôm qua trời lạnh và có nhiều tuyết., lang: vi }
+    answer:
+      correct_option_id: a8m
+    explanation:
+      vi: "Gestern = hôm qua; war es kalt = trời (đã) lạnh; es hat viel geregnet = trời mưa nhiều. heiß mới là nóng, Schnee là tuyết."
+    display_answer: Hôm qua trời lạnh và mưa nhiều.
+
+  - key: de:exercise:a1u06l4-listen-geflogen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-fliegen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Im August sind wir nach Vietnam geflogen.
+      options:
+        - { id: r4e, text: Tháng Tám chúng tôi đã bay sang Việt Nam., lang: vi }
+        - { id: t9k, text: Tháng Tám chúng tôi sẽ bay sang Việt Nam., lang: vi }
+        - { id: y2s, text: Tháng Tám chúng tôi đã đi tàu sang Việt Nam., lang: vi }
+        - { id: b5w, text: Tháng Tư chúng tôi đã bay sang Việt Nam., lang: vi }
+    answer:
+      correct_option_id: r4e
+    explanation:
+      vi: "sind … geflogen là Perfekt của fliegen (bay) – việc đã xảy ra. Im August = tháng Tám (tháng Tư là April). nach Vietnam = sang Việt Nam."
+    display_answer: Tháng Tám chúng tôi đã bay sang Việt Nam.
+
+  - key: de:exercise:a1u06l4-mcq-sind
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-perfekt-sein
+    prompt:
+      stem: "Chọn trợ động từ đúng: Wir ___ drei Tage in Hamburg geblieben."
+      stem_lang: vi
+      options:
+        - { id: s3n, text: sind, lang: de }
+        - { id: h8g, text: haben, lang: de }
+        - { id: w2v, text: waren, lang: de }
+        - { id: c7l, text: hatten, lang: de }
+    answer:
+      correct_option_id: s3n
+    explanation:
+      vi: "bleiben dùng sein ở Perfekt: wir sind … geblieben. haben sai trợ động từ; waren/hatten là Präteritum, không đi với Partizip geblieben."
+    display_answer: sind
+
+  - key: de:exercise:a1u06l4-listen-wochenende
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-g-praeteritum-sein-haben
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wo warst du am Wochenende? – Ich war in Köln. Das Wetter war super.
+      options:
+        - { id: o6h, text: Cuối tuần bạn ở đâu? – Mình ở Köln. Thời tiết tuyệt lắm., lang: vi }
+        - { id: e1y, text: Cuối tuần bạn sẽ đi đâu? – Mình sẽ đi Köln. Thời tiết sẽ đẹp., lang: vi }
+        - { id: m7p, text: Cuối tuần bạn ở đâu? – Mình ở Köln. Thời tiết tệ lắm., lang: vi }
+        - { id: u4r, text: Hôm qua bạn ở đâu? – Mình ở Köln. Thời tiết tuyệt lắm., lang: vi }
+    answer:
+      correct_option_id: o6h
+    explanation:
+      vi: "warst/war là quá khứ của sein – đã ở đâu, không phải \"sẽ\". am Wochenende = cuối tuần (hôm qua là gestern); super = tuyệt."
+    display_answer: Cuối tuần bạn ở đâu? – Mình ở Köln. Thời tiết tuyệt lắm.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u06l4-fill-bin-haben
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-perfekt-sein
+    prompt:
+      template: "Am Samstag {{b1}} ich früh aufgestanden. Dann {{b2}} wir Fahrrad gefahren und {{b3}} im Park Kaffee getrunken."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [bin]
+        b2: [sind]
+        b3: [haben]
+    known_wrong:
+      - answer: habe
+        feedback_vi: aufstehen là đổi trạng thái (từ nằm sang đứng dậy) nên dùng sein – ich bin aufgestanden.
+        error_tag: aux_verb
+      - answer: hat
+        feedback_vi: Chọn trợ động từ theo động từ chính và chia theo chủ ngữ – ich bin, wir sind, wir haben.
+        error_tag: aux_verb
+      - answer: seid
+        feedback_vi: seid là ngôi ihr. Chủ ngữ wir → wir sind.
+        error_tag: verb_form
+    explanation:
+      vi: "aufstehen (đổi trạng thái) và fahren (di chuyển) dùng sein: ich bin, wir sind. trinken không chỉ di chuyển nên dùng haben: wir haben … getrunken."
+    display_answer: "Am Samstag bin ich früh aufgestanden. Dann sind wir Fahrrad gefahren und haben im Park Kaffee getrunken."
+
+  - key: de:exercise:a1u06l4-fill-war-hatte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-praeteritum-sein-haben
+    prompt:
+      template: "Wie {{b1}} dein Wochenende? – Super! Das Wetter {{b2}} warm und sonnig, und wir {{b3}} viel Spaß."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [war]
+        b2: [war]
+        b3: [hatten]
+    known_wrong:
+      - answer: ist
+        feedback_vi: Hỏi về cuối tuần đã qua nên dùng quá khứ của sein – war.
+        error_tag: tense_present
+      - answer: haben
+        feedback_vi: Cuối tuần đã qua – dùng quá khứ của haben – wir hatten.
+        error_tag: tense_present
+      - answer: hattet
+        feedback_vi: hattet là ngôi ihr. Chủ ngữ wir → wir hatten.
+        error_tag: verb_form
+      - answer: waren
+        feedback_vi: dein Wochenende, das Wetter là số ít → war (waren dùng cho wir/sie).
+        error_tag: verb_form
+    explanation:
+      vi: "Kể chuyện đã qua với sein và haben, người Đức dùng war/hatte. dein Wochenende và das Wetter là ngôi 3 số ít → war; wir → hatten."
+    display_answer: "Wie war dein Wochenende? – Super! Das Wetter war warm und sonnig, und wir hatten viel Spaß."
+
+  - key: de:exercise:a1u06l4-tr-war-kalt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-kalt
+    prompt:
+      source_text: Hôm qua trời rất lạnh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Gestern war es sehr kalt.
+        - Es war gestern sehr kalt.
+        - Gestern ist es sehr kalt gewesen.
+        - Es ist gestern sehr kalt gewesen.
+    known_wrong:
+      - answer: Gestern es war sehr kalt.
+        feedback_vi: Gestern ở vị trí 1 thì động từ war phải ở vị trí 2 – Gestern war es …
+        error_tag: verb_position
+      - answer: Gestern ist es sehr kalt.
+        feedback_vi: Hôm qua là quá khứ → war (ist là hiện tại).
+        error_tag: tense_present
+      - answer: Gestern war sehr kalt.
+        feedback_vi: Thời tiết luôn cần chủ ngữ es – Gestern war es sehr kalt.
+        error_tag: missing_es
+      - answer: Gestern hat es sehr kalt gewesen.
+        feedback_vi: sein dùng sein ở Perfekt – es ist … gewesen (hoặc ngắn gọn – es war).
+        error_tag: aux_verb
+    explanation:
+      vi: "Tả thời tiết cần chủ ngữ es; hôm qua là quá khứ nên dùng war (tự nhiên nhất) hoặc ist … gewesen. Gestern đầu câu → war ở vị trí 2."
+    display_answer: Gestern war es sehr kalt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u06l4-wb-geblieben
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-bleiben
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mùa hè chúng tôi đã ở lại Hamburg hai tuần.\""
+      tokens:
+        - { id: y-geblieben, text: geblieben }
+        - { id: y-hamburg, text: Hamburg }
+        - { id: y-wir, text: wir }
+        - { id: y-im, text: Im }
+        - { id: y-haben, text: haben }
+        - { id: y-wochen, text: Wochen }
+        - { id: y-sind, text: sind }
+        - { id: y-in, text: in }
+        - { id: y-sommer, text: Sommer }
+        - { id: y-zwei, text: zwei }
+    answer:
+      orders:
+        - [y-im, y-sommer, y-sind, y-wir, y-zwei, y-wochen, y-in, y-hamburg, y-geblieben]
+        - [y-im, y-sommer, y-sind, y-wir, y-in, y-hamburg, y-zwei, y-wochen, y-geblieben]
+    explanation:
+      vi: "Im Sommer ở vị trí 1 → sind ở vị trí 2, chủ ngữ wir sau đó. bleiben dùng sein (không phải haben), Partizip geblieben ở cuối câu. zwei Wochen và in Hamburg có thể đổi chỗ, nhưng thời gian trước nơi chốn là tự nhiên hơn."
+    display_answer: Im Sommer sind wir zwei Wochen in Hamburg geblieben.
+
+  - key: de:exercise:a1u06l4-tr-fahrrad
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u06-fahren
+    prompt:
+      source_text: Hôm qua chúng tôi (đã) đạp xe.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Gestern sind wir Fahrrad gefahren.
+        - Wir sind gestern Fahrrad gefahren.
+        - Gestern sind wir Rad gefahren.
+        - Wir sind gestern Rad gefahren.
+    known_wrong:
+      - answer: Gestern haben wir Fahrrad gefahren.
+        feedback_vi: fahren chỉ di chuyển → Perfekt với sein – wir sind … gefahren.
+        error_tag: aux_verb
+      - answer: Gestern wir sind Fahrrad gefahren.
+        feedback_vi: Gestern ở vị trí 1 → sind phải ở vị trí 2 – Gestern sind wir …
+        error_tag: verb_position
+      - answer: Gestern sind wir gefahren Fahrrad.
+        feedback_vi: Partizip gefahren đứng cuối câu – … Fahrrad gefahren.
+        error_tag: word_order
+      - answer: Gestern fahren wir Fahrrad.
+        feedback_vi: Việc đã xảy ra hôm qua → Perfekt – sind … gefahren.
+        error_tag: tense_present
+    explanation:
+      vi: "\"Đạp xe\" là Fahrrad fahren (hoặc Rad fahren), không có mạo từ. fahren là di chuyển nên Perfekt dùng sein: wir sind … gefahren; Partizip ở cuối câu."
+    display_answer: Gestern sind wir Fahrrad gefahren.
+
+  - key: de:exercise:a1u06l4-tr-schnee
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u06-schnee
+    prompt:
+      source_text: Im Januar hatten wir viel Schnee, aber es war nicht sehr kalt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tháng Một chúng tôi có nhiều tuyết, nhưng trời không lạnh lắm.
+        - Tháng Một có nhiều tuyết, nhưng trời không lạnh lắm.
+        - Tháng Giêng chúng tôi có nhiều tuyết, nhưng trời không lạnh lắm.
+        - Tháng Một chỗ chúng tôi có nhiều tuyết, nhưng trời không lạnh lắm.
+        - Tháng Một chúng tôi có nhiều tuyết, nhưng trời không quá lạnh.
+        - Tháng Một có nhiều tuyết nhưng không lạnh lắm.
+        - Tháng 1 chúng tôi có nhiều tuyết, nhưng trời không lạnh lắm.
+        - Tháng 1 có nhiều tuyết, nhưng trời không lạnh lắm.
+        - Tháng Một tuyết rơi nhiều, nhưng trời không lạnh lắm.
+        - Tháng Một chúng tôi đã có nhiều tuyết, nhưng trời không lạnh lắm.
+        - Tháng Một ở chỗ chúng tôi có nhiều tuyết, nhưng trời không lạnh lắm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tháng Một chúng tôi có nhiều tuyết, và trời rất lạnh.
+        feedback_vi: aber … nicht sehr kalt là "nhưng không lạnh lắm".
+        error_tag: negation_missed
+    explanation:
+      vi: "hatten = quá khứ của haben (có); viel Schnee = nhiều tuyết; es war nicht sehr kalt = trời không lạnh lắm. Im Januar = vào tháng Một."
+    display_answer: Tháng Một chúng tôi có nhiều tuyết, nhưng trời không lạnh lắm.

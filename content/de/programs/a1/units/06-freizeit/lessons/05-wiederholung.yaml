@@ -1,0 +1,423 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u06-wiederholung
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập – bưu thiếp, trả lời lời mời (Wiederholung)
+objectives:
+  - vi: Đọc hiểu bưu thiếp và tin nhắn ngắn kể về cuối tuần (Perfekt, war/hatte).
+  - vi: Viết tin nhắn khoảng 30 từ trả lời lời mời – nhận lời hoặc từ chối, nêu lý do, đề xuất (kiểu Schreiben Teil 2).
+  - vi: Hẹn ngày giờ với bạn bè và hỏi về cuối tuần của họ.
+estimated_minutes: 19
+skills: [reading, writing, speaking]
+prerequisites: [de:lesson:a1u06-ich-bin-gefahren]
+items:
+  - item: de:item:a1u06-g-gern-lieber-am-liebsten
+    role: reuse
+  - item: de:item:a1u06-g-duerfen
+    role: reuse
+  - item: de:item:a1u06-g-man
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-haben
+    role: reuse
+  - item: de:item:a1u06-g-partizip-ii
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-sein
+    role: reuse
+  - item: de:item:a1u06-g-praeteritum-sein-haben
+    role: reuse
+  - item: de:item:a1u05-g-possessiv-plural
+    role: reuse
+  - item: de:item:a1u06-einladen
+    role: reuse
+  - item: de:item:a1u06-party
+    role: reuse
+  - item: de:item:a1u06-vielleicht
+    role: reuse
+  - item: de:item:a1u06-ins-kino-gehen
+    role: reuse
+  - item: de:item:a1u06-ausflug
+    role: reuse
+  - item: de:item:a1u06-spass-machen
+    role: reuse
+  - item: de:item:a1u06-wetter
+    role: reuse
+  - item: de:item:a1u06-regnen
+    role: reuse
+  - item: de:item:a1u06-bleiben
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được bưu thiếp kể về cuối tuần, viết được tin nhắn ngắn (khoảng 30 từ) trả lời lời mời và hẹn lại ngày giờ với bạn.
+  - type: explain
+    text:
+      vi: "Khi đọc bưu thiếp hay blog, hãy tìm mốc thời gian (am Samstag, gestern) rồi nhìn xuống cuối câu: Partizip (gemacht, gefahren) cho biết việc gì đã xảy ra. war và hatte cho biết trạng thái lúc đó: Das Wetter war schön."
+  - type: explain
+    text:
+      vi: "Tin nhắn trả lời lời mời gồm: lời chào (Liebe Sara, / Lieber Tom, / Hallo Sara,), cảm ơn, nhận lời hoặc từ chối kèm lý do, đề xuất hay câu hỏi, và lời chào cuối (Viele Grüße / Liebe Grüße + tên). Liebe dùng khi người nhận là nữ, Lieber khi là nam."
+  - type: explain
+    text:
+      vi: "Trong đề Start Deutsch 1 (Schreiben Teil 2), bạn viết khoảng 30 từ theo ba ý cho sẵn. Hãy viết câu ngắn, đúng vị trí động từ, và trả lời đủ cả ba ý – thiếu một ý sẽ mất điểm."
+  - type: explain
+    text:
+      vi: "Nhắc lại Perfekt: phần lớn động từ dùng haben (ich habe gegessen); động từ di chuyển, đổi trạng thái và bleiben dùng sein (ich bin gefahren, ich bin geblieben). Với sein và haben, bạn thường dùng war và hatte."
+  - type: deep_explain
+    text:
+      vi: "Thư thân mật mở đầu bằng Liebe/Lieber + tên hoặc Hallo + tên, có dấu phẩy, và câu tiếp theo viết thường (trừ danh từ). Kết thư: Viele Grüße, Liebe Grüße hoặc Bis bald, rồi xuống dòng ghi tên. Bài Sprechen của Start Deutsch 1 cũng có phần hẹn gặp: một người đề nghị (Wollen wir am Samstag …?), người kia nhận lời hoặc từ chối có lý do (Am Samstag kann ich leider nicht. Ich muss …). unser/euer học ở unit 5 rất hay dùng khi kể chuyện chung: Wie war euer Wochenende? – Unser Ausflug war toll."
+  - type: example
+    target: Viele Grüße aus München! Das Wetter war toll, und wir haben viel gesehen. Am Sonntag sind wir lange im Park geblieben.
+    target_lang: de
+    translation:
+      vi: Gửi lời chào từ München! Thời tiết tuyệt lắm, và chúng mình đã đi xem được nhiều thứ. Chủ nhật chúng mình ở lại công viên rất lâu.
+    note:
+      vi: Bưu thiếp điển hình – war (thời tiết), haben … gesehen (động từ thường dùng haben), sind … geblieben (bleiben dùng sein).
+  - type: example
+    target: Liebe Sara, vielen Dank! Leider kann ich am Samstag nicht kommen. Ich muss arbeiten. Hast du am Sonntag Zeit? Wir können zusammen ins Kino gehen. Viele Grüße, Tom
+    target_lang: de
+    translation:
+      vi: Sara thân mến, cảm ơn bạn nhiều! Tiếc là thứ Bảy mình không đến được. Mình phải làm việc. Chủ nhật bạn có rảnh không? Mình có thể cùng đi xem phim. Thân, Tom
+    note:
+      vi: Tin nhắn từ chối mẫu (khoảng 30 từ) – chào, cảm ơn, từ chối + lý do, đề xuất, chào cuối. Sara là nữ nên Liebe.
+  - type: example
+    target: Hallo Sara, gute Idee! Ich komme gern. Ich bringe einen Kuchen mit. Bis Samstag! Liebe Grüße, Tom
+    target_lang: de
+    translation:
+      vi: Chào Sara, ý hay đấy! Mình sẽ đến. Mình mang theo một cái bánh nhé. Hẹn gặp thứ Bảy! Thân, Tom
+    note:
+      vi: Tin nhắn nhận lời. mitbringen (mang theo) là động từ tách – mit đứng cuối câu.
+  - type: example
+    target: Wie war euer Wochenende? – Toll! Unser Ausflug hat viel Spaß gemacht.
+    target_lang: de
+    translation:
+      vi: Cuối tuần của các bạn thế nào? – Tuyệt! Chuyến đi chơi của bọn mình rất vui.
+    note:
+      vi: Hỏi một nhóm bạn (ihr → euer). das Wochenende là giống trung nên euer Wochenende; der Ausflug → unser Ausflug.
+  - type: common_mistake
+    wrong: Lieber Sara,
+    right: Liebe Sara,
+    target_lang: de
+    note:
+      vi: Người nhận là nữ → Liebe; Lieber chỉ dùng cho nam (Lieber Tom).
+  - type: common_mistake
+    wrong: Wir haben im Hotel geblieben.
+    right: Wir sind im Hotel geblieben.
+    target_lang: de
+    note:
+      vi: bleiben dùng sein ở Perfekt – wir sind … geblieben.
+  - type: common_mistake
+    wrong: Gestern ich war im Kino.
+    right: Gestern war ich im Kino.
+    target_lang: de
+    note:
+      vi: Mốc thời gian đứng đầu thì động từ (war) vẫn ở vị trí 2.
+  - type: summary
+    points:
+      - vi: "Đọc: tìm mốc thời gian + động từ cuối câu (Partizip), war/hatte cho trạng thái."
+      - vi: "Tin nhắn: Liebe (nữ) / Lieber (nam) / Hallo + tên – cảm ơn – nhận lời hoặc từ chối + lý do – đề xuất – Viele Grüße / Liebe Grüße."
+      - vi: "Từ chối lịch sự: Leider kann ich am … nicht. Ich muss … Hast du am … Zeit?"
+      - vi: "Perfekt: haben (đa số) / sein (di chuyển, đổi trạng thái, bleiben, sein); war, hatte."
+      - vi: "unser/euer: Wie war euer Wochenende? – Unser Ausflug war toll."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen) ----------------
+  - key: de:exercise:a1u06l5-mcq-karte-regen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-praeteritum-sein-haben
+    prompt:
+      stem: "Liebe Mia, viele Grüße aus Hamburg! Am Samstag war das Wetter super: Es war warm und sonnig. Wir haben einen Ausflug gemacht und Fisch gegessen. Am Sonntag hat es leider geregnet. Wir sind im Hotel geblieben und haben Karten gespielt. Das hat auch Spaß gemacht! Bis bald, Lena. — Richtig oder falsch? Am Samstag hat es geregnet."
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Bưu thiếp viết: Am Samstag war das Wetter super – warm und sonnig. Trời mưa (hat geregnet) là vào Chủ nhật (am Sonntag), nên câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:a1u06l5-mcq-karte-hotel
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-perfekt-sein
+    prompt:
+      stem: "Liebe Mia, viele Grüße aus Hamburg! Am Samstag war das Wetter super: Es war warm und sonnig. Wir haben einen Ausflug gemacht und Fisch gegessen. Am Sonntag hat es leider geregnet. Wir sind im Hotel geblieben und haben Karten gespielt. Das hat auch Spaß gemacht! Bis bald, Lena. — Richtig oder falsch? Am Sonntag ist Lena im Hotel geblieben."
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Lena viết: Am Sonntag hat es leider geregnet. Wir sind im Hotel geblieben – Chủ nhật trời mưa nên cả nhóm (có Lena) ở lại khách sạn. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:a1u06l5-mcq-karte-samstag
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-perfekt-haben
+    prompt:
+      stem: "Liebe Mia, viele Grüße aus Hamburg! Am Samstag war das Wetter super: Es war warm und sonnig. Wir haben einen Ausflug gemacht und Fisch gegessen. Am Sonntag hat es leider geregnet. Wir sind im Hotel geblieben und haben Karten gespielt. Das hat auch Spaß gemacht! Bis bald, Lena. — Was hat Lena am Samstag gemacht?"
+      stem_lang: de
+      options:
+        - { id: k2a, text: Sie hat einen Ausflug gemacht., lang: de }
+        - { id: k5b, text: Sie hat Karten gespielt., lang: de }
+        - { id: k8c, text: Sie ist im Hotel geblieben., lang: de }
+        - { id: k3d, text: Sie ist ins Kino gegangen., lang: de }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "Thứ Bảy: Wir haben einen Ausflug gemacht und Fisch gegessen. Chơi bài và ở lại khách sạn là việc của Chủ nhật; bưu thiếp không nhắc đến rạp phim."
+    display_answer: Sie hat einen Ausflug gemacht.
+
+  - key: de:exercise:a1u06l5-mcq-einladung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-einladen
+    prompt:
+      stem: "Hallo Tom, am Samstag ist mein Geburtstag, und ich mache eine Party. Ich lade dich ein! Die Party fängt um 20 Uhr an. Hast du Zeit? Bring bitte einen Salat mit! Liebe Grüße, Sara. — Richtig oder falsch? Die Party fängt um acht Uhr abends an."
+      stem_lang: de
+      options:
+        - { id: rf1, text: Richtig, lang: de }
+        - { id: rf2, text: Falsch, lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "20 Uhr (giờ chính thức) = acht Uhr abends, tức 8 giờ tối. Vì vậy câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a1u06l5-listen-max
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-ins-kino-gehen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo Lisa, hier ist Max. Ich kann am Freitag leider nicht ins Kino gehen. Ich muss arbeiten. Hast du am Samstag Zeit?
+      options:
+        - { id: m1x, text: Max không đi xem phim thứ Sáu được vì phải làm việc và hỏi Lisa thứ Bảy có rảnh không., lang: vi }
+        - { id: m2x, text: Max không đi xem phim thứ Bảy được vì phải làm việc và hỏi Lisa thứ Sáu có rảnh không., lang: vi }
+        - { id: m3x, text: Max không đi xem phim thứ Sáu được vì không có hứng., lang: vi }
+        - { id: m4x, text: Max mời Lisa đi xem phim tối thứ Sáu., lang: vi }
+    answer:
+      correct_option_id: m1x
+    explanation:
+      vi: "am Freitag leider nicht = thứ Sáu tiếc là không được; Ich muss arbeiten = phải làm việc (không phải \"không có hứng\" – keine Lust); Hast du am Samstag Zeit? = hỏi lại thứ Bảy."
+    display_answer: Max không đi xem phim thứ Sáu được vì phải làm việc và hỏi Lisa thứ Bảy có rảnh không.
+
+  - key: de:exercise:a1u06l5-listen-muenchen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-g-praeteritum-sein-haben
+    prompt:
+      audio_asset_id: null
+      fallback_text: Am Wochenende war ich in München. Es war kalt, aber wir hatten viel Spaß.
+      options:
+        - { id: n1q, text: Cuối tuần tôi ở München. Trời lạnh nhưng chúng tôi rất vui., lang: vi }
+        - { id: n2q, text: Cuối tuần tôi ở München. Trời nóng nhưng chúng tôi rất vui., lang: vi }
+        - { id: n3q, text: Cuối tuần tôi sẽ đi München. Trời sẽ lạnh nhưng chúng tôi sẽ rất vui., lang: vi }
+        - { id: n4q, text: Cuối tuần tôi ở München. Trời lạnh và chúng tôi thấy chán., lang: vi }
+    answer:
+      correct_option_id: n1q
+    explanation:
+      vi: "war/hatten là quá khứ – đã xảy ra, không phải \"sẽ\". kalt = lạnh; aber wir hatten viel Spaß = nhưng chúng tôi rất vui."
+    display_answer: Cuối tuần tôi ở München. Trời lạnh nhưng chúng tôi rất vui.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u06l5-fill-brief
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-vielleicht
+    prompt:
+      template: "{{b1}} Sara, danke! Leider habe ich am Samstag keine Zeit. Hast du am Sonntag Zeit? {{b2}} Grüße, Tom"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Liebe, Hallo]
+        b2: [Viele, Liebe]
+    known_wrong:
+      - answer: Lieber
+        feedback_vi: Sara là nữ → Liebe Sara; cuối thư là Liebe Grüße hoặc Viele Grüße (Lieber chỉ dùng trước tên nam).
+        error_tag: adj_ending
+      - answer: Viel
+        feedback_vi: Grüße là số nhiều → Viele Grüße.
+        error_tag: adj_ending
+    explanation:
+      vi: "Mở đầu tin nhắn cho bạn nữ: Liebe Sara (hoặc Hallo Sara). Kết thúc: Viele Grüße hoặc Liebe Grüße – Grüße là số nhiều nên tính từ có đuôi -e."
+    display_answer: "Liebe Sara, danke! Leider habe ich am Samstag keine Zeit. Hast du am Sonntag Zeit? Viele Grüße, Tom"
+
+  - key: de:exercise:a1u06l5-fill-kino
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-perfekt-sein
+    prompt:
+      template: "Am Freitag {{b1}} wir ins Kino gegangen. Der Film {{b2}} toll! Danach {{b3}} wir noch Pizza gegessen."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [sind]
+        b2: [war]
+        b3: [haben]
+    known_wrong:
+      - answer: ist
+        feedback_vi: Chuyện đã qua – der Film war toll (ist là hiện tại).
+        error_tag: tense_present
+      - answer: hatten
+        feedback_vi: hatten không đi với Partizip. essen dùng Perfekt với haben – wir haben … gegessen.
+        error_tag: aux_verb
+      - answer: seid
+        feedback_vi: seid là ngôi ihr. Chủ ngữ wir → wir sind.
+        error_tag: verb_form
+    explanation:
+      vi: "gehen là di chuyển → wir sind … gegangen. Tả bộ phim trong quá khứ dùng war. essen dùng haben → wir haben … gegessen."
+    display_answer: "Am Freitag sind wir ins Kino gegangen. Der Film war toll! Danach haben wir noch Pizza gegessen."
+
+  - key: de:exercise:a1u06l5-tr-absage
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-party
+    prompt:
+      source_text: Cảm ơn nhé! Tiếc là thứ Bảy mình phải làm việc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Danke! Leider muss ich am Samstag arbeiten.
+        - Danke! Ich muss leider am Samstag arbeiten.
+        - Danke! Ich muss am Samstag leider arbeiten.
+        - Danke! Am Samstag muss ich leider arbeiten.
+        - Vielen Dank! Leider muss ich am Samstag arbeiten.
+        - Vielen Dank! Ich muss leider am Samstag arbeiten.
+        - Vielen Dank! Ich muss am Samstag leider arbeiten.
+        - Vielen Dank! Am Samstag muss ich leider arbeiten.
+        - Danke schön! Leider muss ich am Samstag arbeiten.
+        - Danke, aber leider muss ich am Samstag arbeiten.
+        - Danke, aber ich muss am Samstag leider arbeiten.
+        - Danke, aber am Samstag muss ich leider arbeiten.
+    known_wrong:
+      - answer: Danke! Leider ich muss am Samstag arbeiten.
+        feedback_vi: Leider ở vị trí 1 thì động từ muss phải ở vị trí 2 – Leider muss ich …
+        error_tag: verb_position
+      - answer: Danke! Leider muss ich am Samstag zu arbeiten.
+        feedback_vi: Sau müssen, nguyên thể không có zu – … muss ich am Samstag arbeiten.
+        error_tag: modal_zu
+      - answer: Danke! Leider muss ich in Samstag arbeiten.
+        feedback_vi: Ngày trong tuần dùng am – am Samstag.
+        error_tag: preposition
+      - answer: Danke! Leider muss arbeiten ich am Samstag.
+        feedback_vi: Nguyên thể arbeiten đứng cuối câu; chủ ngữ ich ngay sau muss.
+        error_tag: word_order
+    explanation:
+      vi: "\"Tiếc là\" = leider; \"phải\" = müssen (ich muss, vị trí 2) với arbeiten ở cuối câu; thứ Bảy = am Samstag. Nếu Leider hoặc Am Samstag đứng đầu thì muss vẫn ở vị trí 2."
+    display_answer: Danke! Leider muss ich am Samstag arbeiten.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u06l5-wb-vielleicht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-vielleicht
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Có lẽ Chủ nhật chúng ta có thể đi xem phim?\""
+      tokens:
+        - { id: v-kino, text: Kino }
+        - { id: v-wir, text: wir }
+        - { id: v-gehen, text: gehen }
+        - { id: v-sonntag, text: Sonntag }
+        - { id: v-vielleicht, text: Vielleicht }
+        - { id: v-ins, text: ins }
+        - { id: v-koennen, text: können }
+        - { id: v-am, text: am }
+        - { id: v-kann, text: kann }
+    answer:
+      orders:
+        - [v-vielleicht, v-koennen, v-wir, v-am, v-sonntag, v-ins, v-kino, v-gehen]
+    explanation:
+      vi: "Vielleicht ở vị trí 1 → động từ khiếm khuyết können ở vị trí 2 (wir → können, không phải kann), rồi chủ ngữ wir. Thời gian am Sonntag trước nơi chốn ins Kino, nguyên thể gehen ở cuối câu."
+    display_answer: Vielleicht können wir am Sonntag ins Kino gehen?
+
+  - key: de:exercise:a1u06l5-wb-euer
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-possessiv-plural
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi (hỏi một nhóm bạn): \"Cuối tuần của các bạn ở Hamburg thế nào?\""
+      tokens:
+        - { id: e-hamburg, text: Hamburg }
+        - { id: e-eure, text: eure }
+        - { id: e-wochenende, text: Wochenende }
+        - { id: e-wie, text: Wie }
+        - { id: e-in, text: in }
+        - { id: e-euer, text: euer }
+        - { id: e-war, text: war }
+        - { id: e-wart, text: wart }
+    answer:
+      orders:
+        - [e-wie, e-war, e-euer, e-wochenende, e-in, e-hamburg]
+    explanation:
+      vi: "Câu hỏi W-: Wie – war – chủ ngữ. das Wochenende là giống trung nên euer Wochenende (eure dùng cho giống cái và số nhiều). Chủ ngữ là euer Wochenende (ngôi 3 số ít) nên dùng war, không phải wart."
+    display_answer: Wie war euer Wochenende in Hamburg?
+
+  - key: de:exercise:a1u06l5-tr-keine-zeit
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u06-g-perfekt-haben
+    prompt:
+      source_text: Letztes Wochenende hatte ich keine Zeit. Ich habe viel gearbeitet.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cuối tuần trước tôi không có thời gian. Tôi làm việc nhiều.
+        - Cuối tuần trước tôi không có thời gian. Tôi đã làm việc nhiều.
+        - Cuối tuần trước tôi không có thời gian. Tôi làm việc rất nhiều.
+        - Cuối tuần trước tôi không có thời gian. Tôi đã làm việc rất nhiều.
+        - Cuối tuần trước tôi không rảnh. Tôi làm việc nhiều.
+        - Cuối tuần trước tôi không rảnh. Tôi đã làm việc rất nhiều.
+        - Cuối tuần trước mình không có thời gian. Mình làm việc nhiều.
+        - Cuối tuần rồi tôi không có thời gian. Tôi làm việc nhiều.
+        - Cuối tuần trước tôi không có thời gian. Tôi phải làm việc nhiều.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuối tuần này tôi không có thời gian. Tôi làm việc nhiều.
+        feedback_vi: letztes Wochenende là "cuối tuần trước", không phải "cuối tuần này".
+        error_tag: time_meaning
+      - answer: Cuối tuần trước tôi có nhiều thời gian. Tôi làm việc nhiều.
+        feedback_vi: keine Zeit là "không có thời gian".
+        error_tag: negation_missed
+    explanation:
+      vi: "hatte = quá khứ của haben (có); keine Zeit = không có thời gian; habe … gearbeitet = Perfekt của arbeiten (đã làm việc). letztes Wochenende = cuối tuần trước."
+    display_answer: Cuối tuần trước tôi không có thời gian. Tôi làm việc nhiều.

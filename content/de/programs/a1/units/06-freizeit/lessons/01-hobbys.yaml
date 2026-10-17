@@ -1,0 +1,349 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u06-hobbys
+order_index: 1
+level: a1
+title:
+  vi: Sở thích – gern, lieber, am liebsten (Hobbys)
+objectives:
+  - vi: Nói mình thích làm gì lúc rảnh và hỏi người khác bằng gern.
+  - vi: So sánh điều mình thích hơn (lieber) và thích nhất (am liebsten).
+  - vi: Nói mình có hay làm việc đó không bằng oft và manchmal.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u05-wiederholung]
+items:
+  - item: de:item:a1u06-g-gern-lieber-am-liebsten
+  - item: de:item:a1u06-lesen
+  - item: de:item:a1u06-schwimmen
+  - item: de:item:a1u06-tanzen
+  - item: de:item:a1u06-spielen
+  - item: de:item:a1u06-wandern
+  - item: de:item:a1u06-singen
+  - item: de:item:a1u06-freizeit
+  - item: de:item:a1u06-konzert
+  - item: de:item:a1u06-oft
+  - item: de:item:a1u06-manchmal
+  - item: de:item:a1u06-zum-beispiel
+  - item: de:item:a1u06-gitarre
+  - item: de:item:a1u06-joggen
+  - item: de:item:a1u06-malen
+  - item: de:item:a1u03-g-gern
+    role: reuse
+  - item: de:item:a1u03-g-moegen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được lúc rảnh mình thích làm gì, thích gì hơn, thích gì nhất và có hay làm không – ví dụ \"Ich lese gern, aber am liebsten tanze ich.\""
+  - type: explain
+    text:
+      vi: "Bạn đã biết gern: đặt sau động từ chia để nói \"thích làm\" – Ich schwimme gern. Muốn nói \"thích hơn\", tiếng Đức không ghép mehr + gern như tiếng Việt \"thích hơn\", mà đổi gern thành lieber. \"Thích nhất\" là am liebsten."
+  - type: explain
+    text:
+      vi: "lieber và am liebsten đứng ở chỗ của gern, thường ngay sau động từ chia: Ich lese lieber. am liebsten hay được đưa lên đầu câu để nhấn mạnh; khi đó động từ vẫn đứng thứ hai và chủ ngữ đứng sau: Am liebsten tanze ich."
+  - type: explain
+    text:
+      vi: "Với hành động, bạn dùng động từ + gern: Ich schwimme gern. Với danh từ, bạn dùng mögen: Ich mag Musik. Câu \"Ich mag schwimmen\" nghe không tự nhiên, người Đức nói Ich schwimme gern."
+  - type: explain
+    text:
+      vi: "oft (thường) và manchmal (thỉnh thoảng) cho biết bạn làm việc đó có hay không. oft thường đứng sau động từ (Ich spiele oft Fußball); manchmal hay đứng đầu câu – nhớ để động từ ở vị trí 2: Manchmal singe ich."
+  - type: deep_explain
+    text:
+      vi: "Ở Đức rất nhiều người chơi thể thao, hát hợp xướng hay chơi nhạc trong câu lạc bộ (der Verein), từ bóng đá đến bơi lội. Muốn hỏi sở thích, bạn nói Was machst du gern in der Freizeit? hoặc Was ist dein Hobby? (với người lạ: Was machen Sie gern?). Chơi thể thao và nhạc cụ không có mạo từ: Ich spiele Fußball, ich spiele Gitarre – khác tiếng Anh \"play the guitar\". Bạn viết gern hay gerne đều đúng; gerne thường gặp hơn khi nói."
+  - type: example
+    target: Ich lese gern, aber ich tanze lieber.
+    target_lang: de
+    translation:
+      vi: Tôi thích đọc sách, nhưng tôi thích nhảy hơn.
+    note:
+      vi: lieber thay cho "gern hơn" và đứng đúng chỗ của gern, ngay sau động từ tanze.
+  - type: example
+    target: Was machst du am liebsten in der Freizeit? – Am liebsten spiele ich Fußball.
+    target_lang: de
+    translation:
+      vi: Lúc rảnh bạn thích làm gì nhất? – Mình thích đá bóng nhất.
+    note:
+      vi: Dùng du khi hỏi bạn bè. Trong câu trả lời, am liebsten đứng đầu nên động từ spiele ở vị trí 2, chủ ngữ ich đứng sau.
+  - type: example
+    target: Spielen Sie gern Gitarre? – Ja, aber ich singe lieber.
+    target_lang: de
+    translation:
+      vi: Anh/chị có thích chơi ghi-ta không? – Có, nhưng tôi thích hát hơn.
+    note:
+      vi: Sie – hỏi lịch sự người lớn tuổi hoặc người mới quen. Gitarre spielen không có mạo từ.
+  - type: example
+    target: Im Sommer schwimme ich oft. Manchmal jogge ich auch im Park.
+    target_lang: de
+    translation:
+      vi: Mùa hè tôi hay đi bơi. Thỉnh thoảng tôi cũng chạy bộ trong công viên.
+    note:
+      vi: Im Sommer và Manchmal đứng đầu câu nên động từ (schwimme, jogge) vẫn ở vị trí 2.
+  - type: common_mistake
+    wrong: Ich lese mehr gern.
+    right: Ich lese lieber.
+    target_lang: de
+    note:
+      vi: Dạng so sánh của gern là lieber – không ghép mehr với gern như "thích hơn" trong tiếng Việt.
+  - type: common_mistake
+    wrong: Am liebste schwimme ich.
+    right: Am liebsten schwimme ich.
+    target_lang: de
+    note:
+      vi: am liebsten luôn có -n ở cuối.
+  - type: common_mistake
+    wrong: Am liebsten ich schwimme.
+    right: Am liebsten schwimme ich.
+    target_lang: de
+    note:
+      vi: Khi am liebsten đứng đầu câu, động từ vẫn phải ở vị trí 2, chủ ngữ đứng sau động từ.
+  - type: summary
+    points:
+      - vi: "gern (thích) → lieber (thích hơn) → am liebsten (thích nhất); không nói mehr gern."
+      - vi: lieber / am liebsten đứng ở chỗ của gern, thường ngay sau động từ chia.
+      - vi: "am liebsten đứng đầu câu → động từ ở vị trí 2: Am liebsten tanze ich."
+      - vi: "Hành động: động từ + gern (Ich schwimme gern); danh từ: mögen (Ich mag Musik)."
+      - vi: "oft = thường, manchmal = thỉnh thoảng; lesen đổi nguyên âm: du liest, er liest."
+      - vi: "Thể thao, nhạc cụ không có mạo từ: Fußball spielen, Gitarre spielen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u06l1-mcq-lieber
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-gern-lieber-am-liebsten
+    prompt:
+      stem: "Chọn từ đúng (nghĩa: thích hơn): Ich trinke gern Tee, aber ich trinke ___ Kaffee."
+      stem_lang: vi
+      options:
+        - { id: k4p, text: lieber, lang: de }
+        - { id: w8t, text: mehr gern, lang: de }
+        - { id: r2m, text: am liebsten, lang: de }
+        - { id: h6z, text: gern, lang: de }
+    answer:
+      correct_option_id: k4p
+    explanation:
+      vi: "\"Thích hơn\" là lieber – dạng so sánh của gern. mehr gern sai vì gern có dạng riêng; am liebsten là \"thích nhất\"; gern không có ý so sánh."
+    display_answer: lieber
+
+  - key: de:exercise:a1u06l1-listen-wandern
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u06-wandern
+    prompt:
+      audio_asset_id: null
+      fallback_text: Am Wochenende wandere ich oft.
+      options:
+        - { id: n3c, text: Cuối tuần tôi hay đi bộ đường dài., lang: vi }
+        - { id: d7v, text: Cuối tuần tôi thỉnh thoảng đi bộ đường dài., lang: vi }
+        - { id: q5j, text: Cuối tuần tôi hay đi bơi., lang: vi }
+        - { id: e9b, text: Cuối tuần tôi không bao giờ đi bộ đường dài., lang: vi }
+    answer:
+      correct_option_id: n3c
+    explanation:
+      vi: wandere là "đi bộ đường dài" (ich wandere), oft là "hay, thường". manchmal mới là "thỉnh thoảng", schwimmen mới là "bơi".
+    display_answer: Cuối tuần tôi hay đi bộ đường dài.
+
+  - key: de:exercise:a1u06l1-mcq-am-liebsten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u06-g-gern-lieber-am-liebsten
+    prompt:
+      stem: "Câu nào đúng nghĩa \"Tôi thích hát nhất.\"?"
+      stem_lang: vi
+      options:
+        - { id: a5x, text: Am liebsten singe ich., lang: de }
+        - { id: m1u, text: Am liebsten ich singe., lang: de }
+        - { id: y7f, text: Ich singe am meisten gern., lang: de }
+        - { id: c3o, text: Am liebste singe ich., lang: de }
+    answer:
+      correct_option_id: a5x
+    explanation:
+      vi: "\"Thích nhất\" là am liebsten (có -n). Khi am liebsten đứng đầu câu, động từ singe đứng thứ hai, chủ ngữ ich đứng sau; \"am meisten gern\" không tồn tại."
+    display_answer: Am liebsten singe ich.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u06l1-fill-lieber-liebsten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-gern-lieber-am-liebsten
+    prompt:
+      template: "Spielst du gern Tennis? – Ja, aber ich spiele {{b1}} Fußball. Und am {{b2}} schwimme ich."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [lieber]
+        b2: [liebsten]
+    known_wrong:
+      - answer: mehr
+        feedback_vi: Không dùng mehr với gern – "thích hơn" là lieber.
+        error_tag: comparison_form
+      - answer: liebste
+        feedback_vi: Thiếu -n – luôn nói am liebsten.
+        error_tag: comparison_form
+      - answer: gern
+        feedback_vi: "\"Ja, aber …\" cho thấy bạn thích môn khác hơn, nên cần lieber; sau am phải là liebsten."
+        error_tag: comparison_form
+    explanation:
+      vi: "\"Ja, aber …\" nghĩa là có thích, nhưng thích đá bóng hơn → lieber. Sau am là dạng \"nhất\" → am liebsten; liebsten đứng đầu câu nên động từ schwimme ở vị trí 2."
+    display_answer: "Spielst du gern Tennis? – Ja, aber ich spiele lieber Fußball. Und am liebsten schwimme ich."
+
+  - key: de:exercise:a1u06l1-fill-liest-spielt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-lesen
+    prompt:
+      template: "Meine Schwester {{b1}} oft Bücher (lesen), und mein Bruder {{b2}} gern Gitarre (spielen)."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [liest]
+        b2: [spielt]
+    known_wrong:
+      - answer: lest
+        feedback_vi: lesen đổi e → ie ở ngôi er/sie – meine Schwester liest.
+        error_tag: verb_form
+      - answer: lesst
+        feedback_vi: lesen đổi e → ie ở ngôi er/sie, và gốc tận cùng -s chỉ thêm -t – sie liest.
+        error_tag: verb_form
+      - answer: spielst
+        feedback_vi: mein Bruder là ngôi er, đuôi -t – er spielt (-st là của du).
+        error_tag: verb_form
+    explanation:
+      vi: "Chủ ngữ là ngôi 3 số ít (sie, er) nên đuôi -t. lesen đổi nguyên âm e → ie và gốc đã tận cùng -s, nên chỉ thêm -t: liest; spielen chia đều: spielt."
+    display_answer: "Meine Schwester liest oft Bücher, und mein Bruder spielt gern Gitarre."
+
+  - key: de:exercise:a1u06l1-tr-schwimme-lieber
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-schwimmen
+    prompt:
+      source_text: Tôi thích đọc sách, nhưng tôi thích bơi hơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich lese gern, aber ich schwimme lieber.
+        - Ich lese gerne, aber ich schwimme lieber.
+        - Ich lese gern Bücher, aber ich schwimme lieber.
+        - Ich lese gerne Bücher, aber ich schwimme lieber.
+        - Ich lese gern, aber lieber schwimme ich.
+        - Ich lese gern, aber ich gehe lieber schwimmen.
+        - Ich lese gerne, aber ich gehe lieber schwimmen.
+        - Ich lese gern Bücher, aber ich gehe lieber schwimmen.
+        - Ich lese gerne Bücher, aber ich gehe lieber schwimmen.
+    known_wrong:
+      - answer: Ich lese gern, aber ich schwimme mehr gern.
+        feedback_vi: "\"Thích hơn\" là lieber, không phải mehr gern."
+        error_tag: comparison_form
+      - answer: Ich lese gern, aber ich lieber schwimme.
+        feedback_vi: Động từ chia (schwimme) phải đứng thứ hai, lieber đứng sau nó.
+        error_tag: verb_position
+      - answer: Ich gern lese, aber ich schwimme lieber.
+        feedback_vi: gern đứng sau động từ chia – Ich lese gern.
+        error_tag: verb_position
+    explanation:
+      vi: "Vế đầu: động từ lese + gern. Vế sau: \"thích hơn\" là lieber, đứng ngay sau động từ schwimme. aber đứng ở vị trí 0 nên không làm đổi trật tự từ."
+    display_answer: Ich lese gern, aber ich schwimme lieber.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u06l1-wb-am-liebsten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-g-gern-lieber-am-liebsten
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: \"Cuối tuần bạn thích làm gì nhất?\""
+      tokens:
+        - { id: t-liebsten, text: liebsten }
+        - { id: t-am1, text: am }
+        - { id: t-we, text: Wochenende }
+        - { id: t-lieber, text: lieber }
+        - { id: t-was, text: Was }
+        - { id: t-du, text: du }
+        - { id: t-am2, text: am }
+        - { id: t-machst, text: machst }
+    answer:
+      orders:
+        - [t-was, t-machst, t-du, t-am1, t-we, t-am2, t-liebsten]
+        - [t-was, t-machst, t-du, t-am2, t-we, t-am1, t-liebsten]
+        - [t-was, t-machst, t-du, t-am1, t-liebsten, t-am2, t-we]
+        - [t-was, t-machst, t-du, t-am2, t-liebsten, t-am1, t-we]
+    explanation:
+      vi: "Câu hỏi W-: Was ở vị trí 1, động từ machst ở vị trí 2, rồi chủ ngữ du. \"Thích nhất\" là am liebsten; am Wochenende và am liebsten có thể đổi chỗ cho nhau. lieber là \"thích hơn\", không dùng ở đây."
+    display_answer: Was machst du am Wochenende am liebsten?
+
+  - key: de:exercise:a1u06l1-tr-singt-tanzt
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u06-tanzen
+    prompt:
+      source_text: Meine Freundin singt oft, aber am liebsten tanzt sie.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn gái tôi hay hát, nhưng cô ấy thích nhảy nhất.
+        - Bạn gái tôi thường hát, nhưng cô ấy thích nhảy nhất.
+        - Bạn gái tôi hay hát, nhưng cô ấy thích nhất là nhảy.
+        - Bạn gái tôi hay hát, nhưng thích nhất là nhảy.
+        - Bạn gái tôi hay hát, nhưng cô ấy thích khiêu vũ nhất.
+        - Bạn tôi hay hát, nhưng cô ấy thích nhảy nhất.
+        - Bạn tôi hay hát, nhưng cô ấy thích nhất là nhảy.
+        - Bạn tôi thường hát, nhưng cô ấy thích nhảy nhất.
+        - Bạn gái của tôi hay hát, nhưng cô ấy thích nhảy nhất.
+        - Bạn gái mình hay hát, nhưng cô ấy thích nhảy nhất.
+        - Bạn gái tôi hay hát, nhưng nhảy là điều cô ấy thích nhất.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn gái tôi hay hát, nhưng cô ấy thích nhảy hơn.
+        feedback_vi: am liebsten là "thích nhất", không phải "thích hơn" (lieber).
+        error_tag: comparison_meaning
+      - answer: Bạn gái tôi thỉnh thoảng hát, nhưng cô ấy thích nhảy nhất.
+        feedback_vi: oft là "hay, thường"; "thỉnh thoảng" là manchmal.
+        error_tag: frequency_meaning
+    explanation:
+      vi: "singt oft = hay hát; am liebsten tanzt sie = cô ấy thích nhảy nhất. meine Freundin có thể là bạn gái (người yêu) hoặc bạn (nữ), tùy ngữ cảnh."
+    display_answer: Bạn gái tôi hay hát, nhưng cô ấy thích nhảy nhất.
+
+  - key: de:exercise:a1u06l1-mcq-sie-freizeit
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u06-freizeit
+    prompt:
+      stem: "Bạn muốn hỏi một đồng nghiệp lớn tuổi (xưng Sie) xem lúc rảnh họ thích làm gì. Câu nào đúng và lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: s2g, text: Was machen Sie gern in der Freizeit?, lang: de }
+        - { id: u6l, text: Was machst du gern in der Freizeit?, lang: de }
+        - { id: i9w, text: Was Sie machen gern in der Freizeit?, lang: de }
+        - { id: o4r, text: Was macht Sie gern in der Freizeit?, lang: de }
+    answer:
+      correct_option_id: s2g
+    explanation:
+      vi: "Với Sie, động từ chia như ngôi số nhiều: machen Sie. Câu hỏi W- cần động từ ở vị trí 2 ngay sau Was. machst du là cách hỏi thân mật với bạn bè; macht Sie chia sai ngôi."
+    display_answer: Was machen Sie gern in der Freizeit?
