@@ -1,0 +1,412 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u04-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập + trình bày – hệ thống giáo dục Việt Nam và Đức (Wiederholung)
+objectives:
+  - vi: Chuẩn bị bài nói kiểu Goethe B1 Sprechen Teil 2 về chủ đề học nghề hay học đại học – giới thiệu chủ đề, kinh nghiệm bản thân, tình hình ở Việt Nam, ưu và nhược điểm, kết luận.
+  - vi: Đọc hiểu một văn bản dài có cấu trúc (kiểu Goethe B1 Lesen Teil 2) và chọn richtig/falsch.
+  - vi: Ôn Konjunktiv II, liên từ hai vế, je … desto, was/wo và brauchen … zu trong một bài nói mạch lạc.
+estimated_minutes: 25
+skills: [reading, speaking, writing]
+prerequisites: [de:lesson:b1u04-weiterbildung]
+items:
+  - item: de:item:b1u04-g-konjunktiv-ii-formen
+    role: reuse
+  - item: de:item:b1u04-g-irrealer-wunsch
+    role: reuse
+  - item: de:item:b1u04-g-irreale-bedingung
+    role: reuse
+  - item: de:item:b1u04-g-konjunktiv-ii-modal
+    role: reuse
+  - item: de:item:b1u04-g-zweiteilige-konnektoren
+    role: reuse
+  - item: de:item:b1u04-g-je-desto
+    role: reuse
+  - item: de:item:b1u04-g-relativ-wo-was
+    role: reuse
+  - item: de:item:b1u04-g-brauchen-zu
+    role: reuse
+  - item: de:item:b1u04-hochschule
+    role: reuse
+  - item: de:item:b1u04-schulsystem
+    role: reuse
+  - item: de:item:a2u01-ausbildung
+    role: reuse
+  - item: de:item:a2u01-berufsschule
+    role: reuse
+  - item: de:item:a2u01-abitur
+    role: reuse
+  - item: de:item:b1u01-studium
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn trình bày được khoảng hai phút về chủ đề \"Ausbildung oder Studium?\", theo đủ năm phần như trong bài thi nói Goethe B1, và đọc hiểu được một văn bản dài về chủ đề này."
+  - type: explain
+    text:
+      vi: "Bài trình bày kiểu Goethe B1 Sprechen Teil 2 thường có năm phần: giới thiệu chủ đề, kinh nghiệm của bạn, tình hình ở nước bạn, ưu và nhược điểm kèm ý kiến riêng, kết luận và cảm ơn. Mở đầu: Ich möchte heute über das Thema … sprechen. Kết thúc: Zum Schluss möchte ich sagen, dass … Vielen Dank fürs Zuhören."
+  - type: explain
+    text:
+      vi: "Phần kinh nghiệm và tình hình ở Việt Nam: Ich habe selbst … gemacht. / In Vietnam ist es so, dass … / Viele Eltern wünschen sich, dass ihre Kinder studieren. Để nói giả định, dùng Konjunktiv II: Wenn ich noch einmal wählen könnte, würde ich …"
+  - type: explain
+    text:
+      vi: "Phần ưu và nhược điểm là chỗ để dùng liên từ hai vế: Eine Ausbildung ist zwar kürzer, aber …; Man verdient nicht nur Geld, sondern sammelt auch Erfahrung. je … desto giúp bạn nêu một nhận định chung: Je besser die Ausbildung ist, desto größer sind die Chancen."
+  - type: explain
+    text:
+      vi: "Khi đọc một văn bản dài (Lesen Teil 2), trước hết đọc tiêu đề và các câu hỏi, rồi tìm đoạn chứa thông tin. Chú ý các từ làm đổi nghĩa: zwar … aber, nicht nur … sondern auch, weder … noch, và Konjunktiv II (Ich wünschte … = thực tế không như vậy)."
+  - type: deep_explain
+    text:
+      vi: "Hệ thống học nghề kép ở Đức (duale Ausbildung) kết hợp làm việc trong doanh nghiệp với học lý thuyết ở Berufsschule, thường kéo dài 2–3,5 năm và người học nhận một khoản trợ cấp học nghề hằng tháng. Nhiều nghề như y tá, thợ điện hay nhân viên văn phòng được học theo cách này, còn bác sĩ hay giáo viên thì phải học đại học. Ở Việt Nam, nhiều gia đình coi việc vào đại học là con đường chính, nên khi trình bày bạn có thể so sánh hai quan niệm này. Trong bài thi, đừng học thuộc lòng cả bài (giám khảo nhận ra ngay); hãy học thuộc các cụm mở bài, chuyển ý và kết bài, phần nội dung thì nói tự nhiên. Ngoài ra, giám khảo và bạn thi cặp sẽ hỏi bạn một câu sau bài trình bày (Teil 3), nên hãy chuẩn bị vài câu như: Das ist eine gute Frage. Ich glaube, … Lưu ý: cấu trúc đề thi có thể thay đổi, hãy kiểm tra thông tin mới nhất của Goethe-Institut."
+  - type: example
+    target: Ich möchte heute über das Thema Ausbildung oder Studium sprechen. Zuerst erzähle ich von meinen eigenen Erfahrungen.
+    target_lang: de
+    translation:
+      vi: Hôm nay tôi muốn nói về chủ đề học nghề hay học đại học. Trước hết tôi sẽ kể về kinh nghiệm của bản thân.
+    note:
+      vi: "Câu mở đầu và câu nêu bố cục – hai câu nên thuộc lòng cho phần thi nói."
+  - type: example
+    target: In Vietnam wünschen sich viele Eltern, dass ihre Kinder an die Universität gehen.
+    target_lang: de
+    translation:
+      vi: Ở Việt Nam, nhiều bậc cha mẹ mong con mình vào đại học.
+    note:
+      vi: "sich wünschen, dass … (hiện tại) nói một mong muốn có thể thành hiện thực – khác với Ich wünschte, … (điều không có thật)."
+  - type: example
+    target: Eine Ausbildung dauert zwar nicht so lange, aber man verdient schon Geld und sammelt Erfahrung.
+    target_lang: de
+    translation:
+      vi: Học nghề tuy không kéo dài bằng, nhưng người học đã có tiền và tích luỹ được kinh nghiệm.
+    note:
+      vi: "zwar … aber nêu ưu điểm và nhược điểm trong cùng một câu; aber không làm đổi trật tự từ."
+  - type: example
+    target: Wenn ich noch einmal wählen könnte, würde ich zuerst eine Ausbildung machen und dann studieren.
+    target_lang: de
+    translation:
+      vi: Nếu được chọn lại, tôi sẽ học nghề trước rồi mới học đại học.
+    note:
+      vi: "Câu điều kiện không thật: könnte (cuối vế wenn), würde … machen (vế chính, bắt đầu bằng động từ)."
+  - type: example
+    target: Zum Schluss möchte ich sagen, dass beide Wege gut sind. Vielen Dank fürs Zuhören!
+    target_lang: de
+    translation:
+      vi: Cuối cùng, tôi muốn nói rằng cả hai con đường đều tốt. Cảm ơn mọi người đã lắng nghe!
+    note:
+      vi: "Câu kết bài: Zum Schluss … + lời cảm ơn. fürs = für das."
+  - type: common_mistake
+    wrong: Wenn ich noch einmal wählen könnte, ich würde eine Ausbildung machen.
+    right: Wenn ich noch einmal wählen könnte, würde ich eine Ausbildung machen.
+    target_lang: de
+    note:
+      vi: "Vế wenn đứng đầu chiếm vị trí 1, nên vế chính bắt đầu ngay bằng động từ würde."
+  - type: common_mistake
+    wrong: In Vietnam gibt es weder genug Studienplätze noch keine guten Berufsschulen.
+    right: In Vietnam gibt es weder genug Studienplätze noch genug gute Berufsschulen.
+    target_lang: de
+    note:
+      vi: "weder … noch đã là phủ định; không thêm kein."
+  - type: common_mistake
+    wrong: Das ist alles, das ich über das Thema sagen möchte.
+    right: Das ist alles, was ich über das Thema sagen möchte.
+    target_lang: de
+    note:
+      vi: "Sau alles dùng was."
+  - type: summary
+    points:
+      - vi: "Bố cục bài nói: chủ đề → kinh nghiệm → tình hình ở Việt Nam → ưu/nhược điểm + ý kiến → kết luận + cảm ơn."
+      - vi: "Mở bài: Ich möchte heute über das Thema … sprechen. Kết bài: Zum Schluss möchte ich sagen, dass … Vielen Dank fürs Zuhören."
+      - vi: "Giả định và ước: Wenn ich … könnte, würde ich …; Ich wünschte, ich hätte …"
+      - vi: "Ưu/nhược điểm: zwar … aber, nicht nur … sondern auch, weder … noch, je … desto."
+      - vi: "alles, was …; die Stadt, wo …; Man braucht nicht/nur … zu …"
+exercises:
+  # ---------------- recognition: đọc hiểu (kiểu Lesen Teil 2) ----------------
+  - key: de:exercise:b1u04l5-mcq-lesen-betrieb
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u01-ausbildung
+    prompt:
+      stem: "Eine duale Ausbildung dauert meistens drei Jahre. Man arbeitet in einem Betrieb und lernt an ein oder zwei Tagen pro Woche in der Berufsschule. So verdient man nicht nur Geld, sondern sammelt auch früh Berufserfahrung. Ein Studium an einer Hochschule ist dagegen eher theoretisch. Studenten bekommen zwar kein Gehalt, aber manche Berufe kann man nur mit einem Studium lernen, zum Beispiel Arzt. — Richtig oder falsch? Bei einer dualen Ausbildung lernt man nur in der Berufsschule."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: Man arbeitet in einem Betrieb und lernt an ein oder zwei Tagen pro Woche in der Berufsschule – người học làm việc ở doanh nghiệp và chỉ học ở trường nghề một hai ngày mỗi tuần. Vì vậy câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u04l5-mcq-lesen-gehalt
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-zweiteilige-konnektoren
+    prompt:
+      stem: "Eine duale Ausbildung dauert meistens drei Jahre. Man arbeitet in einem Betrieb und lernt an ein oder zwei Tagen pro Woche in der Berufsschule. So verdient man nicht nur Geld, sondern sammelt auch früh Berufserfahrung. Ein Studium an einer Hochschule ist dagegen eher theoretisch. Studenten bekommen zwar kein Gehalt, aber manche Berufe kann man nur mit einem Studium lernen, zum Beispiel Arzt. — Richtig oder falsch? Wer studiert, bekommt dafür kein Gehalt."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Studenten bekommen zwar kein Gehalt, aber … – sinh viên tuy không có lương nhưng … zwar thừa nhận ý thứ nhất (không có lương) là đúng, aber chỉ đưa thêm ý ngược lại. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u04l5-mcq-lesen-eltern
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-irrealer-wunsch
+    prompt:
+      stem: "Mai, 22, kommt aus Vietnam und macht in München eine Ausbildung zur Hotelfachfrau. Sie sagt: Ich wünschte, meine Eltern würden das deutsche System besser kennen. Für sie zählt nur die Universität. Aber je länger ich hier arbeite, desto sicherer bin ich, dass die Ausbildung die richtige Wahl für mich ist. — Richtig oder falsch? Die Eltern von Mai kennen das deutsche System gut."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Ich wünschte, meine Eltern würden das deutsche System besser kennen – lời ước bằng Konjunktiv II cho biết thực tế ngược lại: bố mẹ Mai không hiểu rõ hệ thống của Đức. Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u04l5-mcq-lesen-sicher
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-je-desto
+    prompt:
+      stem: "Mai, 22, kommt aus Vietnam und macht in München eine Ausbildung zur Hotelfachfrau. Sie sagt: Ich wünschte, meine Eltern würden das deutsche System besser kennen. Für sie zählt nur die Universität. Aber je länger ich hier arbeite, desto sicherer bin ich, dass die Ausbildung die richtige Wahl für mich ist. — Richtig oder falsch? Mai ist sich immer sicherer, dass die Ausbildung gut für sie ist."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "je länger ich hier arbeite, desto sicherer bin ich = tôi làm ở đây càng lâu thì càng chắc chắn rằng học nghề là lựa chọn đúng. Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u04l5-listen-waehlen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u04-g-irreale-bedingung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wenn ich noch einmal wählen könnte, würde ich zuerst eine Ausbildung machen und dann studieren.
+      options:
+        - { id: h2a, text: "Nếu được chọn lại, tôi sẽ học nghề trước rồi mới học đại học.", lang: vi }
+        - { id: h5b, text: "Nếu được chọn lại, tôi sẽ học đại học trước rồi mới học nghề.", lang: vi }
+        - { id: h8c, text: "Tôi đã học nghề trước rồi mới học đại học.", lang: vi }
+        - { id: h3d, text: "Nếu được chọn lại, tôi sẽ chỉ học nghề, không học đại học.", lang: vi }
+    answer:
+      correct_option_id: h2a
+    explanation:
+      vi: "könnte … würde: câu giả định (thực tế người nói không thể chọn lại). zuerst … und dann = trước … rồi sau đó: học nghề trước (eine Ausbildung machen), học đại học sau (studieren)."
+    display_answer: Nếu được chọn lại, tôi sẽ học nghề trước rồi mới học đại học.
+
+  - key: de:exercise:b1u04l5-listen-eltern
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u04-schulsystem
+    prompt:
+      audio_asset_id: null
+      fallback_text: In Vietnam wünschen sich viele Eltern, dass ihre Kinder an die Universität gehen. Eine Ausbildung finden sie weniger wichtig.
+      options:
+        - { id: e1a, text: "Ở Việt Nam, nhiều cha mẹ mong con vào đại học. Họ thấy học nghề ít quan trọng hơn.", lang: vi }
+        - { id: e4b, text: "Ở Việt Nam, nhiều cha mẹ mong con đi học nghề. Họ thấy đại học ít quan trọng hơn.", lang: vi }
+        - { id: e7c, text: "Ở Việt Nam, ít cha mẹ mong con vào đại học. Họ thấy học nghề quan trọng hơn.", lang: vi }
+        - { id: e9d, text: "Ở Việt Nam, nhiều cha mẹ mong con vào đại học. Họ thấy học nghề cũng quan trọng như vậy.", lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "sich wünschen, dass … = mong rằng; an die Universität gehen = vào đại học. weniger wichtig = ít quan trọng hơn."
+    display_answer: Ở Việt Nam, nhiều cha mẹ mong con vào đại học. Họ thấy học nghề ít quan trọng hơn.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u04l5-fill-waere-wuerde
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-konjunktiv-ii-formen
+    prompt:
+      template: "Wenn ich noch einmal achtzehn {{b1}} (sein), {{b2}} (werden) ich zuerst eine Ausbildung machen."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [wäre]
+        b2: [würde]
+    known_wrong:
+      - answer: war
+        feedback_vi: war là Präteritum. Giả định cần Konjunktiv II – wäre.
+        error_tag: konjunktiv_form
+      - answer: bin
+        feedback_vi: Đây là điều không có thật (bạn không còn mười tám tuổi) nên cần wäre.
+        error_tag: konjunktiv_form
+      - answer: wurde
+        feedback_vi: wurde là Präteritum. Konjunktiv II có umlaut – würde.
+        error_tag: konjunktiv_form
+      - answer: werde
+        feedback_vi: Vế chính của câu điều kiện không thật cũng cần Konjunktiv II – würde.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Điều kiện không thật: sein → wäre (cuối vế wenn), werden → würde (đầu vế chính, ngay sau dấu phẩy), nguyên thể machen ở cuối câu."
+    display_answer: "Wenn ich noch einmal achtzehn wäre, würde ich zuerst eine Ausbildung machen."
+
+  - key: de:exercise:b1u04l5-fill-zum-schluss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-relativ-wo-was
+    prompt:
+      template: "Zum {{b1}} möchte ich sagen: Das ist alles, {{b2}} ich über das Thema weiß. Vielen Dank fürs Zuhören!"
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Schluss, Abschluss]
+        b2: [was]
+    known_wrong:
+      - answer: das
+        feedback_vi: Sau alles dùng was, không dùng das.
+        error_tag: relative_pronoun
+      - answer: Ende
+        feedback_vi: Cụm cố định để kết bài là Zum Schluss (hoặc Zum Abschluss).
+        error_tag: phrase
+    explanation:
+      vi: "Zum Schluss = cuối cùng, cụm mở đầu phần kết luận. Sau alles, đại từ quan hệ là was."
+    display_answer: "Zum Schluss möchte ich sagen: Das ist alles, was ich über das Thema weiß. Vielen Dank fürs Zuhören!"
+
+  - key: de:exercise:b1u04l5-tr-mehr-zeit-lernen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-irrealer-wunsch
+    prompt:
+      source_text: "Ước gì tôi có nhiều thời gian hơn để học. (dùng Ich wünschte, …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich wünschte, ich hätte mehr Zeit zum Lernen.
+        - Ich wünschte, ich hätte mehr Zeit, um zu lernen.
+        - Ich wünschte, ich hätte mehr Zeit für das Lernen.
+        - Ich wünschte, ich hätte mehr Zeit fürs Lernen.
+        - Ich wünschte, ich hätte mehr Zeit zu lernen.
+    known_wrong:
+      - answer: Ich wünschte, ich hatte mehr Zeit zum Lernen.
+        feedback_vi: hatte là Präteritum. Sau Ich wünschte, cần Konjunktiv II – hätte.
+        error_tag: konjunktiv_form
+      - answer: Ich wünschte, ich mehr Zeit zum Lernen hätte.
+        feedback_vi: Sau Ich wünschte, là câu chính – hätte đứng ở vị trí 2, ngay sau ich.
+        error_tag: verb_position
+      - answer: Ich wünsche, ich hätte mehr Zeit zum Lernen.
+        feedback_vi: Để ước điều không có thật, dùng Konjunktiv II của wünschen – Ich wünschte, …
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Ich wünschte, + câu chính có Konjunktiv II ở vị trí 2: ich hätte mehr Zeit. \"để học\" = zum Lernen (hoặc um zu lernen)."
+    display_answer: Ich wünschte, ich hätte mehr Zeit zum Lernen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u04l5-wb-nicht-nur
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u04-g-zweiteilige-konnektoren
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Người ta không chỉ kiếm được tiền mà còn tích luỹ được kinh nghiệm.\""
+      tokens:
+        - { id: m-sammelt, text: sammelt }
+        - { id: m-geld, text: Geld }
+        - { id: m-nicht, text: nicht }
+        - { id: m-man, text: Man }
+        - { id: m-auch, text: auch }
+        - { id: m-komma, text: "," }
+        - { id: m-verdient, text: verdient }
+        - { id: m-erfahrung, text: Erfahrung }
+        - { id: m-sondern, text: sondern }
+        - { id: m-nur, text: nur }
+    answer:
+      orders:
+        - [m-man, m-verdient, m-nicht, m-nur, m-geld, m-komma, m-sondern, m-sammelt, m-auch, m-erfahrung]
+    explanation:
+      vi: "Man verdient nicht nur Geld: động từ ở vị trí 2, nicht nur đứng trước phần được nhấn mạnh. Sau dấu phẩy, sondern ở vị trí 0, chủ ngữ man được lược bỏ vì trùng với vế trước, rồi đến sammelt auch Erfahrung."
+    display_answer: Man verdient nicht nur Geld, sondern sammelt auch Erfahrung.
+
+  - key: de:exercise:b1u04l5-wb-wenn-waehlen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-konjunktiv-ii-modal
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu được chọn, tôi sẽ học đại học.\""
+      tokens:
+        - { id: w-wuerde, text: würde }
+        - { id: w-ich1, text: ich }
+        - { id: w-studieren, text: studieren }
+        - { id: w-koennte, text: könnte }
+        - { id: w-wenn, text: Wenn }
+        - { id: w-komma, text: "," }
+        - { id: w-ich2, text: ich }
+        - { id: w-waehlen, text: wählen }
+    answer:
+      orders:
+        - [w-wenn, w-ich1, w-waehlen, w-koennte, w-komma, w-wuerde, w-ich2, w-studieren]
+        - [w-wenn, w-ich2, w-waehlen, w-koennte, w-komma, w-wuerde, w-ich1, w-studieren]
+    explanation:
+      vi: "Vế wenn: wählen könnte (modal Konjunktiv II đứng cuối, sau nguyên thể). Vế chính bắt đầu ngay bằng würde, rồi ich, nguyên thể studieren ở cuối."
+    display_answer: Wenn ich wählen könnte, würde ich studieren.
+
+  - key: de:exercise:b1u04l5-tr-kein-abitur
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u04-g-brauchen-zu
+    prompt:
+      source_text: Für eine Ausbildung braucht man nicht unbedingt ein Abitur zu haben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Để học nghề, không nhất thiết phải có bằng Abitur.
+        - Để học nghề không nhất thiết phải có bằng Abitur.
+        - Để học nghề, người ta không nhất thiết phải có bằng Abitur.
+        - Để học nghề, không nhất thiết cần có bằng Abitur.
+        - Để học nghề, không nhất thiết phải có Abitur.
+        - Học nghề thì không nhất thiết phải có bằng Abitur.
+        - Muốn học nghề không nhất thiết phải có bằng Abitur.
+        - Để học nghề, không nhất thiết phải có bằng tốt nghiệp phổ thông.
+        - Để học nghề, không nhất thiết phải có bằng tú tài.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Để học nghề, không được có bằng Abitur.
+        feedback_vi: "nicht brauchen … zu = không cần, không phải \"không được\" (nicht dürfen)."
+        error_tag: meaning
+    explanation:
+      vi: "nicht (unbedingt) brauchen + zu = không (nhất thiết) cần/phải. Für eine Ausbildung = để học nghề; das Abitur = bằng tốt nghiệp phổ thông ở Đức (để vào đại học)."
+    display_answer: Để học nghề, không nhất thiết phải có bằng Abitur.

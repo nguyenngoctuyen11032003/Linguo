@@ -1,0 +1,402 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u04-schule
+order_index: 1
+level: b1
+title:
+  vi: Ước gì… – Konjunktiv II hiện tại (Wenn ich doch mehr Zeit hätte!)
+objectives:
+  - vi: Nhận ra và dùng các dạng Konjunktiv II quan trọng nhất – wäre, hätte, würde + nguyên thể – và nhận biết käme, ginge, wüsste, gäbe, bräuchte.
+  - vi: Nói điều ước không có thật bằng Wenn ich doch/nur …! và Ich wünschte, …
+  - vi: Nói và đọc về hệ thống trường học, môn học, điểm số và học bạ.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u03-wiederholung]
+items:
+  - item: de:item:b1u04-g-konjunktiv-ii-formen
+  - item: de:item:b1u04-g-irrealer-wunsch
+  - item: de:item:b1u04-schulsystem
+  - item: de:item:b1u04-fach
+  - item: de:item:b1u04-note
+  - item: de:item:b1u04-zeugnis
+  - item: de:item:b1u04-klasse
+  - item: de:item:b1u04-unterricht
+  - item: de:item:b1u04-sitzenbleiben
+  - item: de:item:b1u04-schulpflicht
+  - item: de:item:b1u04-realschule
+  - item: de:item:b1u04-hauptschule
+  - item: de:item:b1u04-gesamtschule
+  - item: de:item:b1u04-stundenplan
+  - item: de:item:b1u04-klassenarbeit
+  - item: de:item:b1u04-halbjahr
+  - item: de:item:b1u04-schwaenzen
+  - item: de:item:b1u04-loben
+  - item: de:item:b1u04-nachhilfe
+  - item: de:item:a2u04-g-wuerde-hoeflich
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được về trường học và ước những điều không có thật, ví dụ: \"Wenn ich doch bessere Noten hätte! Ich wünschte, der Unterricht würde später anfangen.\""
+  - type: explain
+    text:
+      vi: "Konjunktiv II là dạng động từ dùng cho điều không có thật, điều ước và lời nói lịch sự. Ba dạng quan trọng nhất là wäre (từ sein), hätte (từ haben) và würde (từ werden): ich wäre, du wärst, wir wären; ich hätte, du hättest, wir hätten; ich würde, du würdest, wir würden. Tiếng Việt chỉ thêm \"giá mà\", \"ước gì\", còn tiếng Đức phải đổi dạng động từ."
+  - type: explain
+    text:
+      vi: "Với phần lớn động từ khác, bạn dùng würde (chia theo ngôi) ở vị trí 2 và nguyên thể ở cuối câu, giống khung câu của Perfekt: Ich würde gern Medizin studieren. Bạn đã gặp mẫu này ở A2: An deiner Stelle würde ich …, Würden Sie bitte …?"
+  - type: explain
+    text:
+      vi: "Một số động từ mạnh có dạng Konjunktiv II riêng, đi từ dạng Präteritum, thêm umlaut nếu được và thêm -e: kam → käme, ging → ginge, gab → gäbe, wusste → wüsste; brauchen → bräuchte. Ở bài này bạn chỉ cần nhận ra chúng khi đọc; khi nói, würde kommen, würde gehen là đủ. Riêng es gäbe và ich wüsste rất hay gặp cả khi nói."
+  - type: explain
+    text:
+      vi: "Để ước điều trái với thực tế, bạn nói Wenn ich doch … hätte! hoặc Wenn ich nur … wäre!: wenn đẩy động từ xuống cuối câu, doch/nur biến câu thành lời ước. Cách thứ hai là Ich wünschte, + câu chính có Konjunktiv II ở vị trí 2: Ich wünschte, ich hätte mehr Zeit. Cả hai cách đều ngầm nói thực tế ngược lại: tôi không có thời gian."
+  - type: explain
+    text:
+      vi: "Đừng dùng Präteritum để ước: Wenn ich Zeit hatte nghĩa là \"(những) khi tôi có thời gian\" trong quá khứ. Dấu umlaut tạo ra khác biệt: hatte – hätte, war – wäre, wusste – wüsste."
+  - type: deep_explain
+    text:
+      vi: "Hệ thống trường học Đức: trẻ học tiểu học (Grundschule) thường 4 năm (ở Berlin và Brandenburg là 6 năm), rồi học tiếp Gymnasium, Realschule, Hauptschule hoặc Gesamtschule; tên và hình thức các loại trường khác nhau theo bang. Thang điểm phổ thông ở Đức từ 1 (sehr gut) đến 6 (ungenügend); Áo dùng 1–5, còn Thụy Sĩ ngược lại, 6 là điểm tốt nhất – rất dễ nhầm khi đọc học bạ. Học sinh có điểm kém ở nhiều môn có thể bị sitzenbleiben (lưu ban). Về ngữ pháp, câu ước còn có dạng bỏ wenn, đưa động từ lên đầu: Hätte ich doch mehr Zeit! Wäre ich doch schon fertig! – nghĩa giống Wenn ich doch … hätte!. Chia đủ các ngôi: du wärst, ihr wärt; du hättest, ihr hättet; du würdest, ihr würdet. Các dạng riêng như käme, ginge nghe khá trang trọng; trong văn nói người ta thường dùng würde + nguyên thể, trừ với sein, haben và động từ khiếm khuyết."
+  - type: example
+    target: Wenn ich doch nur bessere Noten hätte!
+    target_lang: de
+    translation:
+      vi: Giá mà tôi được điểm tốt hơn!
+    note:
+      vi: "wenn + doch nur: lời ước. hätte (Konjunktiv II của haben) đứng cuối câu; thực tế là điểm của tôi không tốt."
+  - type: example
+    target: Ich wünschte, der Unterricht würde später anfangen.
+    target_lang: de
+    translation:
+      vi: Ước gì giờ học bắt đầu muộn hơn.
+    note:
+      vi: "Sau Ich wünschte, là một câu chính: würde ở vị trí 2, nguyên thể anfangen ở cuối."
+  - type: example
+    target: Wenn es doch keine Klassenarbeiten gäbe!
+    target_lang: de
+    translation:
+      vi: Giá mà không có bài kiểm tra nào!
+    note:
+      vi: "gäbe là Konjunktiv II của es gibt (Präteritum: es gab). Dạng này rất hay gặp."
+  - type: example
+    target: Wie war dein Zeugnis? – Nicht so gut. Ich wünschte, ich wäre besser in Mathe.
+    target_lang: de
+    translation:
+      vi: Học bạ của cậu thế nào? – Không tốt lắm. Ước gì mình học toán giỏi hơn.
+    note:
+      vi: "Hai bạn học nói chuyện nên dùng du. war là Präteritum (học bạ đã nhận rồi), wäre là Konjunktiv II (điều ước)."
+  - type: example
+    target: Ich wüsste gern, wie das Schulsystem in Österreich funktioniert.
+    target_lang: de
+    translation:
+      vi: Tôi rất muốn biết hệ thống trường học ở Áo vận hành thế nào.
+    note:
+      vi: "Ich wüsste gern … là cách nói lịch sự \"tôi muốn biết\"; wüsste là Konjunktiv II của wissen."
+  - type: common_mistake
+    wrong: Wenn ich würde mehr Zeit haben!
+    right: Wenn ich doch mehr Zeit hätte!
+    target_lang: de
+    note:
+      vi: "Sau wenn, động từ chia phải đứng cuối câu; với haben, dùng luôn hätte thay vì würde … haben."
+  - type: common_mistake
+    wrong: Wenn ich doch mehr Zeit hatte!
+    right: Wenn ich doch mehr Zeit hätte!
+    target_lang: de
+    note:
+      vi: "hatte là Präteritum (quá khứ). Lời ước ở hiện tại cần Konjunktiv II có umlaut: hätte."
+  - type: common_mistake
+    wrong: Ich wünschte, ich bin schon mit der Schule fertig.
+    right: Ich wünschte, ich wäre schon mit der Schule fertig.
+    target_lang: de
+    note:
+      vi: "Sau Ich wünschte, động từ cũng phải ở Konjunktiv II (wäre), vì đó là điều chưa có thật."
+  - type: common_mistake
+    wrong: Ich würde gern studieren Medizin.
+    right: Ich würde gern Medizin studieren.
+    target_lang: de
+    note:
+      vi: "würde tạo khung câu như modal: würde ở vị trí 2, nguyên thể studieren đứng cuối câu."
+  - type: summary
+    points:
+      - vi: "sein → wäre, haben → hätte, werden → würde (ich wäre, du wärst; ich hätte, du hättest; ich würde, du würdest)."
+      - vi: "Động từ khác: würde (vị trí 2) + nguyên thể (cuối câu): Ich würde gern lernen."
+      - vi: "Nhận biết: käme, ginge, gäbe, wüsste, bräuchte (es gäbe, ich wüsste gern …)."
+      - vi: "Lời ước: Wenn ich doch/nur … hätte/wäre! (động từ cuối) – Ich wünschte, ich hätte/wäre …"
+      - vi: "Präteritum hatte/war/wusste ≠ Konjunktiv II hätte/wäre/wüsste (có umlaut)."
+      - vi: "Từ vựng: das Schulsystem, das Fach, die Note, das Zeugnis, die Klasse, der Unterricht, sitzenbleiben, die Schulpflicht, die Realschule."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u04l1-mcq-waere
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-konjunktiv-ii-formen
+    prompt:
+      stem: "Chọn dạng đúng để nói điều ước: Ich wünschte, ich ___ schon mit der Schule fertig."
+      stem_lang: vi
+      options:
+        - { id: w7a, text: "wäre", lang: de }
+        - { id: w2b, text: "war", lang: de }
+        - { id: w5c, text: "bin", lang: de }
+        - { id: w9d, text: "würde", lang: de }
+    answer:
+      correct_option_id: w7a
+    explanation:
+      vi: "Sau Ich wünschte, cần Konjunktiv II vì đó là điều chưa có thật: sein → ich wäre. war là Präteritum (quá khứ), bin là hiện tại; würde một mình không đủ vì thiếu nguyên thể ở cuối câu."
+    display_answer: wäre
+
+  - key: de:exercise:b1u04l1-mcq-wunsch-satz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-irrealer-wunsch
+    prompt:
+      stem: "Câu nào là lời ước \"giá mà\" ở hiện tại?"
+      stem_lang: vi
+      options:
+        - { id: s3k, text: "Wenn ich doch mehr Zeit hätte!", lang: de }
+        - { id: s8m, text: "Wenn ich mehr Zeit hatte, las ich viel.", lang: de }
+        - { id: s1p, text: "Wenn ich mehr Zeit habe, lese ich viel.", lang: de }
+        - { id: s6r, text: "Ich hatte damals mehr Zeit.", lang: de }
+    answer:
+      correct_option_id: s3k
+    explanation:
+      vi: "Lời ước dùng wenn + doch và Konjunktiv II (hätte) ở cuối câu. Wenn ich mehr Zeit hatte, … kể thói quen trong quá khứ; Wenn ich mehr Zeit habe, … là điều kiện thật; câu cuối chỉ kể chuyện đã qua."
+    display_answer: Wenn ich doch mehr Zeit hätte!
+
+  - key: de:exercise:b1u04l1-mcq-wuesste
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-konjunktiv-ii-formen
+    prompt:
+      stem: "Chọn dạng Konjunktiv II của wissen để hỏi lịch sự: Ich ___ gern, wann das zweite Halbjahr beginnt."
+      stem_lang: vi
+      options:
+        - { id: u4a, text: "wüsste", lang: de }
+        - { id: u8b, text: "wusste", lang: de }
+        - { id: u1c, text: "weiß", lang: de }
+        - { id: u6d, text: "würde", lang: de }
+    answer:
+      correct_option_id: u4a
+    explanation:
+      vi: "wissen có dạng Konjunktiv II riêng: wusste (Präteritum) + umlaut → wüsste. Ich wüsste gern … là cách nói lịch sự \"tôi muốn biết …\". wusste là quá khứ, weiß gern không phải cách nói của tiếng Đức, còn würde thiếu nguyên thể."
+    display_answer: wüsste
+
+  - key: de:exercise:b1u04l1-mcq-lesen-mathe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-note
+    prompt:
+      stem: "Lena ist 15 und geht auf eine Realschule. Ihr Lieblingsfach ist Biologie, aber in Mathe hat sie im Zeugnis eine Fünf. Sie sagt: Wenn ich doch nur ein bisschen besser in Mathe wäre! Jetzt bekommt sie zweimal pro Woche Nachhilfe. Außerdem sagt sie: Ich wünschte, der Unterricht würde nicht schon um halb acht anfangen. — Richtig oder falsch? Lena ist gut in Mathe."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Ở Đức, điểm 5 (eine Fünf) là điểm kém. Câu Wenn ich doch nur besser in Mathe wäre! là lời ước, nghĩa là thực tế Lena học toán không giỏi. Vì vậy câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u04l1-fill-haette-waere
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-irrealer-wunsch
+    prompt:
+      template: "Wenn ich doch mehr Zeit {{b1}} (haben)! Ich wünschte, ich {{b2}} (sein) nicht immer so müde."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [hätte]
+        b2: [wäre]
+    known_wrong:
+      - answer: hatte
+        feedback_vi: hatte là Präteritum (quá khứ). Lời ước ở hiện tại cần Konjunktiv II có umlaut – hätte.
+        error_tag: konjunktiv_form
+      - answer: habe
+        feedback_vi: Đây là lời ước không có thật nên cần Konjunktiv II – hätte.
+        error_tag: konjunktiv_form
+      - answer: war
+        feedback_vi: war là Präteritum. Sau Ich wünschte, dùng Konjunktiv II – ich wäre.
+        error_tag: konjunktiv_form
+      - answer: bin
+        feedback_vi: Sau Ich wünschte, dùng Konjunktiv II vì điều đó chưa có thật – ich wäre.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Cả hai câu đều là lời ước trái với thực tế nên dùng Konjunktiv II: haben → hätte, sein → wäre. Câu đầu có wenn nên hätte đứng cuối; sau Ich wünschte, là câu chính nên wäre ở vị trí 2."
+    display_answer: "Wenn ich doch mehr Zeit hätte! Ich wünschte, ich wäre nicht immer so müde."
+
+  - key: de:exercise:b1u04l1-fill-wuerde-waeren
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-konjunktiv-ii-formen
+    prompt:
+      template: "Wenn der Unterricht doch später anfangen {{b1}} (werden)! Ich wünschte, die Klassenarbeiten {{b2}} (sein) nicht so schwer."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [würde]
+        b2: [wären]
+    known_wrong:
+      - answer: wird
+        feedback_vi: wird là hiện tại. Lời ước cần Konjunktiv II của werden – würde.
+        error_tag: konjunktiv_form
+      - answer: wurde
+        feedback_vi: wurde là Präteritum. Konjunktiv II có umlaut – würde.
+        error_tag: konjunktiv_form
+      - answer: waren
+        feedback_vi: waren là Präteritum. Điều ước cần Konjunktiv II – wären.
+        error_tag: konjunktiv_form
+      - answer: wäre
+        feedback_vi: Chủ ngữ die Klassenarbeiten là số nhiều nên cần đuôi -n – wären.
+        error_tag: verb_form
+      - answer: sind
+        feedback_vi: Sau Ich wünschte, dùng Konjunktiv II – wären.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "anfangen đã đứng sẵn ở cuối, nên ô trống là würde (Konjunktiv II của werden) – sau wenn, würde đứng sau cùng. Ô thứ hai: sein ở Konjunktiv II, chủ ngữ số nhiều die Klassenarbeiten → wären."
+    display_answer: "Wenn der Unterricht doch später anfangen würde! Ich wünschte, die Klassenarbeiten wären nicht so schwer."
+
+  - key: de:exercise:b1u04l1-tr-bessere-noten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-irrealer-wunsch
+    prompt:
+      source_text: "Giá mà tôi được điểm tốt hơn! (câu ước với wenn)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wenn ich doch bessere Noten hätte!
+        - Wenn ich nur bessere Noten hätte!
+        - Wenn ich doch nur bessere Noten hätte!
+        - Wenn ich doch eine bessere Note hätte!
+        - Wenn ich nur eine bessere Note hätte!
+        - Wenn ich doch nur eine bessere Note hätte!
+        - Wenn ich doch bessere Noten bekommen würde!
+        - Wenn ich nur bessere Noten bekommen würde!
+        - Wenn ich doch nur bessere Noten bekommen würde!
+    known_wrong:
+      - answer: Wenn ich doch bessere Noten hatte!
+        feedback_vi: hatte là Präteritum. Lời ước ở hiện tại cần hätte (có umlaut).
+        error_tag: konjunktiv_form
+      - answer: Wenn ich doch hätte bessere Noten!
+        feedback_vi: Sau wenn, động từ chia đứng cuối câu – Wenn ich doch bessere Noten hätte!
+        error_tag: verb_position
+      - answer: Wenn ich doch bessere Noten habe!
+        feedback_vi: "habe là hiện tại thật. Lời ước \"giá mà\" cần Konjunktiv II – hätte."
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Lời ước trái với thực tế: wenn + doch/nur, động từ Konjunktiv II ở cuối câu. haben → hätte; điểm số = die Note, số nhiều die Noten."
+    display_answer: Wenn ich doch bessere Noten hätte!
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u04l1-wb-ich-wuenschte
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-irrealer-wunsch
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ước gì tôi học toán giỏi hơn.\""
+      tokens:
+        - { id: k-besser, text: besser }
+        - { id: k-ich2, text: ich }
+        - { id: k-mathe, text: Mathe }
+        - { id: k-komma, text: "," }
+        - { id: k-waere, text: wäre }
+        - { id: k-ich1, text: Ich }
+        - { id: k-in, text: in }
+        - { id: k-wuenschte, text: wünschte }
+    answer:
+      orders:
+        - [k-ich1, k-wuenschte, k-komma, k-ich2, k-waere, k-besser, k-in, k-mathe]
+        - [k-ich1, k-wuenschte, k-komma, k-ich2, k-waere, k-in, k-mathe, k-besser]
+        - [k-ich1, k-wuenschte, k-komma, k-in, k-mathe, k-waere, k-ich2, k-besser]
+    explanation:
+      vi: "Ich wünschte, + một câu chính: động từ Konjunktiv II wäre ở vị trí 2. Vị trí 1 thường là ich; cũng có thể đưa in Mathe lên đầu để nhấn mạnh (in Mathe wäre ich besser)."
+    display_answer: Ich wünschte, ich wäre besser in Mathe.
+
+  - key: de:exercise:b1u04l1-tr-an-deiner-stelle
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-wuerde-hoeflich
+    prompt:
+      source_text: "Nếu mình là bạn, mình sẽ nói chuyện với cô giáo. (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - An deiner Stelle würde ich mit der Lehrerin sprechen.
+        - Ich würde an deiner Stelle mit der Lehrerin sprechen.
+        - An deiner Stelle würde ich mit der Lehrerin reden.
+        - Ich würde an deiner Stelle mit der Lehrerin reden.
+        - Wenn ich du wäre, würde ich mit der Lehrerin sprechen.
+        - Wenn ich du wäre, würde ich mit der Lehrerin reden.
+    known_wrong:
+      - answer: An deiner Stelle ich würde mit der Lehrerin sprechen.
+        feedback_vi: An deiner Stelle chiếm vị trí 1 nên würde phải đứng ngay sau – An deiner Stelle würde ich …
+        error_tag: verb_position
+      - answer: An deiner Stelle würde ich sprechen mit der Lehrerin.
+        feedback_vi: Nguyên thể sprechen đứng cuối câu – … würde ich mit der Lehrerin sprechen.
+        error_tag: word_order
+      - answer: An Ihrer Stelle würde ich mit der Lehrerin sprechen.
+        feedback_vi: Đề bài là nói với bạn thân nên dùng du – An deiner Stelle.
+        error_tag: register_du_sie
+    explanation:
+      vi: "Khuyên bạn bè: An deiner Stelle würde ich … + nguyên thể ở cuối câu. würde ở vị trí 2, nên khi An deiner Stelle đứng đầu, chủ ngữ ich đứng sau würde."
+    display_answer: An deiner Stelle würde ich mit der Lehrerin sprechen.
+
+  - key: de:exercise:b1u04l1-tr-zeugnis
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u04-zeugnis
+    prompt:
+      source_text: Ich wünschte, mein Zeugnis wäre besser.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ước gì học bạ của tôi tốt hơn.
+        - Ước gì học bạ của tôi tốt hơn!
+        - Giá mà học bạ của tôi tốt hơn.
+        - Tôi ước học bạ của tôi tốt hơn.
+        - Tôi ước gì học bạ của mình tốt hơn.
+        - Ước gì học bạ của mình tốt hơn.
+        - Giá mà học bạ của mình tốt hơn.
+        - Mình ước học bạ của mình tốt hơn.
+        - Ước gì bảng điểm của tôi tốt hơn.
+        - Giá mà bảng điểm của tôi tốt hơn.
+        - Tôi ước bảng điểm của tôi tốt hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Học bạ của tôi đã tốt hơn.
+        feedback_vi: "wäre là Konjunktiv II (điều ước, không có thật), không phải quá khứ \"đã\"."
+        error_tag: meaning
+    explanation:
+      vi: "Ich wünschte, … = ước gì, giá mà. wäre là Konjunktiv II của sein: thực tế học bạ không tốt. das Zeugnis = học bạ, bảng điểm cuối kỳ."
+    display_answer: Ước gì học bạ của tôi tốt hơn.

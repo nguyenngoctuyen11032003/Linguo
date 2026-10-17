@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u04-weiterbildung
+order_index: 4
+level: b1
+title:
+  vi: Học tiếp – quan hệ với wo/was, brauchen … zu (Alles, was ich brauche)
+objectives:
+  - vi: Nghe hiểu lời tư vấn về khoá học – thời gian, điều kiện, chi phí, chứng chỉ.
+  - vi: Hỏi về điều kiện tham gia và hiểu câu trả lời với nicht/nur brauchen … zu.
+  - vi: Dùng mệnh đề quan hệ với was (alles, was …; nichts, was …) và wo (die Stadt, wo …).
+estimated_minutes: 20
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:b1u04-sowohl-als-auch]
+items:
+  - item: de:item:b1u04-g-relativ-wo-was
+  - item: de:item:b1u04-g-brauchen-zu
+  - item: de:item:b1u04-weiterbildung
+  - item: de:item:b1u04-volkshochschule
+  - item: de:item:b1u04-teilnehmen-an
+  - item: de:item:b1u04-teilnahme
+  - item: de:item:b1u04-zertifikat
+  - item: de:item:b1u04-berufsbegleitend
+  - item: de:item:b1u04-lehrgang
+  - item: de:item:b1u04-vorkenntnisse
+  - item: de:item:b1u04-beratung
+  - item: de:item:b1u04-umschulung
+  - item: de:item:b1u04-niveau
+  - item: de:item:b1u04-abendkurs
+  - item: de:item:b1u04-kursleiter
+  - item: de:item:b1u04-sich-weiterbilden
+  - item: de:item:a2u06-g-muss-nicht-darf-nicht
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-nom-akk
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-dativ
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-praeposition
+    role: reuse
+  - item: de:item:b1u03-teilnehmer
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nghe hiểu được buổi tư vấn chọn khoá học và hỏi được điều kiện tham gia, ví dụ: \"Was brauche ich für die Teilnahme? – Sie brauchen nur das Formular auszufüllen. Das ist alles, was Sie brauchen.\""
+  - type: explain
+    text:
+      vi: "Sau alles, nichts, etwas, vieles và sau so sánh nhất dùng như danh từ (das Beste, das Einzige), đại từ quan hệ là was chứ không phải das: Das ist alles, was ich weiß. Tiếng Việt nói \"tất cả những gì\", tiếng Đức nói alles, was. Động từ trong mệnh đề quan hệ vẫn đứng cuối."
+  - type: explain
+    text:
+      vi: "Sau tên địa danh hoặc danh từ chỉ nơi chốn, bạn có thể dùng wo thay cho giới từ + đại từ quan hệ: die Stadt, wo ich studiere = die Stadt, in der ich studiere. Cách này giống \"nơi mà\" trong tiếng Việt."
+  - type: explain
+    text:
+      vi: "nicht brauchen + zu + nguyên thể = không cần làm gì, nghĩa giống nicht müssen (bạn đã học ở A2): Sie brauchen nicht zu kommen = Sie müssen nicht kommen. Cũng dùng với kein, nichts: Sie brauchen keine Vorkenntnisse zu haben."
+  - type: explain
+    text:
+      vi: "nur brauchen + zu + nguyên thể = chỉ cần làm gì: Sie brauchen nur anzurufen. zu đứng ngay trước nguyên thể ở cuối câu; với động từ tách, zu chen vào giữa: anzurufen, mitzubringen, auszufüllen."
+  - type: explain
+    text:
+      vi: "Không nhầm với nicht dürfen (không được phép): Sie brauchen nicht zu kommen (không cần đến) khác hẳn Sie dürfen nicht kommen (không được đến). Khi muốn nói \"phải\", dùng müssen; brauchen … zu chỉ đi với nicht, kein, nichts, nur."
+  - type: deep_explain
+    text:
+      vi: "was còn dùng để chỉ cả một câu đứng trước: Ich habe die Prüfung bestanden, was mich sehr freut (điều đó làm tôi rất vui). Sau etwas, cả was lẫn das đều gặp (etwas, was/das mir gefällt); sau alles và nichts, chỉ dùng was. wo sau danh từ chỉ thời gian (in der Zeit, wo …) hay gặp trong văn nói, nhưng khi viết nên dùng in der hoặc als. Khi nói nhanh, người Đức thường bỏ zu sau brauchen (Du brauchst nicht kommen) – bạn nên hiểu được, nhưng khi viết, nhất là trong kỳ thi, hãy giữ zu. Về học tiếp ở Đức: Volkshochschule (VHS) có ở hầu hết các thành phố, mở khoá ngoại ngữ, tin học, nấu ăn… với giá phải chăng; nhiều khoá Weiterbildung được tổ chức berufsbegleitend (buổi tối, cuối tuần). Ở nhiều bang, người lao động có quyền nghỉ vài ngày mỗi năm để học (Bildungsurlaub); quy định khác nhau theo bang và có thể thay đổi."
+  - type: example
+    target: Das ist alles, was Sie für die Anmeldung brauchen.
+    target_lang: de
+    translation:
+      vi: Đó là tất cả những gì ông/bà cần để đăng ký.
+    note:
+      vi: "Nhân viên nói với khách nên dùng Sie. Sau alles dùng was; động từ brauchen đứng cuối mệnh đề quan hệ."
+  - type: example
+    target: Gibt es noch etwas, was Sie wissen möchten?
+    target_lang: de
+    translation:
+      vi: Ông/bà còn muốn biết điều gì nữa không?
+    note:
+      vi: "Sau etwas dùng was (cũng gặp das). möchten là động từ chia, đứng cuối mệnh đề."
+  - type: example
+    target: In Leipzig, wo ich wohne, gibt es viele Abendkurse.
+    target_lang: de
+    translation:
+      vi: Ở Leipzig, nơi tôi sống, có nhiều lớp học buổi tối.
+    note:
+      vi: "wo thay cho in dem sau tên thành phố. Mệnh đề quan hệ có dấu phẩy ở hai đầu, động từ wohne ở cuối."
+  - type: example
+    target: Der Lehrgang, den ich besuche, ist teuer, aber die Firma, bei der ich arbeite, bezahlt ihn.
+    target_lang: de
+    translation:
+      vi: Khoá đào tạo tôi đang học thì đắt, nhưng công ty nơi tôi làm việc trả tiền cho nó.
+    note:
+      vi: "Ôn B1U02: sau danh từ thông thường vẫn dùng der/die/das – den (Akkusativ, der Lehrgang), bei der (giới từ + Dativ, die Firma). was chỉ dùng sau alles, nichts, etwas …"
+  - type: example
+    target: Teilnehmer, denen die Zeit fehlt, können den Kurs auch online machen.
+    target_lang: de
+    translation:
+      vi: Học viên nào không có đủ thời gian có thể học khoá này trực tuyến.
+    note:
+      vi: "denen là đại từ quan hệ Dativ số nhiều (fehlen + Dativ: die Zeit fehlt den Teilnehmern)."
+  - type: example
+    target: Muss ich vorher einen Test machen? – Nein, Sie brauchen keinen Test zu machen.
+    target_lang: de
+    translation:
+      vi: Tôi có phải làm bài kiểm tra trước không? – Không, ông/bà không cần làm bài kiểm tra.
+    note:
+      vi: "Câu hỏi với müssen, câu trả lời phủ định với brauchen … zu: keinen Test zu machen = nicht … müssen."
+  - type: example
+    target: Sie brauchen nur das Formular auszufüllen und die Gebühr zu bezahlen.
+    target_lang: de
+    translation:
+      vi: Ông/bà chỉ cần điền mẫu đơn và trả lệ phí.
+    note:
+      vi: "nur brauchen … zu = chỉ cần. ausfüllen là động từ tách nên zu chen vào giữa: auszufüllen."
+  - type: common_mistake
+    wrong: Das ist alles, das ich weiß.
+    right: Das ist alles, was ich weiß.
+    target_lang: de
+    note:
+      vi: "Sau alles (và nichts, das Beste) đại từ quan hệ là was."
+  - type: common_mistake
+    wrong: Du brauchst nicht kommen.
+    right: Du brauchst nicht zu kommen.
+    target_lang: de
+    note:
+      vi: "Văn nói hay bỏ zu và vẫn hiểu được, nhưng dạng chuẩn (nhất là khi viết) có zu."
+  - type: common_mistake
+    wrong: Sie brauchen nur zu anrufen.
+    right: Sie brauchen nur anzurufen.
+    target_lang: de
+    note:
+      vi: "anrufen là động từ tách: zu chen vào giữa tiền tố và gốc – anzurufen."
+  - type: common_mistake
+    wrong: Du brauchst morgen zu kommen.
+    right: Du musst morgen kommen.
+    target_lang: de
+    note:
+      vi: "brauchen … zu chỉ dùng với nicht, kein, nichts, nur. Để nói \"phải\", dùng müssen."
+  - type: summary
+    points:
+      - vi: "alles / nichts / etwas / das Beste, was …: Das ist alles, was ich weiß."
+      - vi: "Nơi chốn: die Stadt, wo … (= in der …)."
+      - vi: "nicht brauchen + zu + nguyên thể = không cần (= nicht müssen)."
+      - vi: "nur brauchen + zu = chỉ cần; động từ tách: anzurufen, auszufüllen, mitzubringen."
+      - vi: "nicht brauchen zu (không cần) ≠ nicht dürfen (không được phép)."
+      - vi: "Từ vựng: die Weiterbildung, die Volkshochschule, teilnehmen an, die Teilnahme, das Zertifikat, berufsbegleitend, der Lehrgang."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u04l4-listen-anmeldung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u04-g-relativ-wo-was
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist alles, was Sie für die Anmeldung brauchen. Bringen Sie bitte Ihren Ausweis und ein Foto mit.
+      options:
+        - { id: a3k, text: "Đó là tất cả những gì ông/bà cần để đăng ký. Xin mang theo giấy tờ tùy thân và một tấm ảnh.", lang: vi }
+        - { id: a6m, text: "Ông/bà không cần gì để đăng ký. Không cần mang giấy tờ tùy thân hay ảnh.", lang: vi }
+        - { id: a1p, text: "Đó là tất cả những gì ông/bà cần để đăng ký. Xin mang theo giấy tờ tùy thân và hai tấm ảnh.", lang: vi }
+        - { id: a8r, text: "Đó chưa phải là tất cả. Ông/bà còn cần một chứng chỉ và một tấm ảnh.", lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: "alles, was Sie … brauchen = tất cả những gì ông/bà cần. Bringen Sie … mit = hãy mang theo; ein Foto = một tấm ảnh, der Ausweis = giấy tờ tùy thân."
+    display_answer: Đó là tất cả những gì ông/bà cần để đăng ký. Xin mang theo giấy tờ tùy thân và một tấm ảnh.
+
+  - key: de:exercise:b1u04l4-listen-vorkenntnisse
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u04-g-brauchen-zu
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sie brauchen keine Vorkenntnisse zu haben. Der Kurs ist für Anfänger.
+      options:
+        - { id: v2a, text: "Ông/bà không cần biết gì trước. Khoá học dành cho người mới bắt đầu.", lang: vi }
+        - { id: v5b, text: "Ông/bà không được có kiến thức trước. Khoá học dành cho người mới bắt đầu.", lang: vi }
+        - { id: v8c, text: "Ông/bà cần có kiến thức trước. Khoá học dành cho người đã biết.", lang: vi }
+        - { id: v4d, text: "Ông/bà chỉ cần biết một chút. Khoá học dành cho người mới bắt đầu.", lang: vi }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "keine … zu haben brauchen = không cần có (nghĩa như nicht müssen), không phải \"không được phép\" (nicht dürfen). für Anfänger = cho người mới bắt đầu."
+    display_answer: Ông/bà không cần biết gì trước. Khoá học dành cho người mới bắt đầu.
+
+  - key: de:exercise:b1u04l4-listen-lehrgang
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u04-berufsbegleitend
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Lehrgang ist berufsbegleitend. Er findet dienstags und donnerstags am Abend statt und dauert ein Jahr.
+      options:
+        - { id: g3a, text: "Khoá đào tạo dành cho người đi làm, học tối thứ Ba và thứ Năm, kéo dài một năm.", lang: vi }
+        - { id: g6b, text: "Khoá đào tạo học toàn thời gian, từ thứ Ba đến thứ Năm, kéo dài một năm.", lang: vi }
+        - { id: g9c, text: "Khoá đào tạo dành cho người đi làm, học tối thứ Hai và thứ Tư, kéo dài một năm.", lang: vi }
+        - { id: g1d, text: "Khoá đào tạo dành cho người đi làm, học tối thứ Ba và thứ Năm, kéo dài nửa năm.", lang: vi }
+    answer:
+      correct_option_id: g3a
+    explanation:
+      vi: "berufsbegleitend = song song với công việc. dienstags und donnerstags am Abend = các tối thứ Ba và thứ Năm; dauert ein Jahr = kéo dài một năm."
+    display_answer: Khoá đào tạo dành cho người đi làm, học tối thứ Ba và thứ Năm, kéo dài một năm.
+
+  - key: de:exercise:b1u04l4-mcq-alles-was
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-relativ-wo-was
+    prompt:
+      stem: "Chọn từ đúng: Das ist alles, ___ ich über den Kurs weiß."
+      stem_lang: vi
+      options:
+        - { id: x4a, text: "was", lang: de }
+        - { id: x7b, text: "das", lang: de }
+        - { id: x2c, text: "wo", lang: de }
+        - { id: x9d, text: "den", lang: de }
+    answer:
+      correct_option_id: x4a
+    explanation:
+      vi: "Sau alles, đại từ quan hệ là was (tất cả những gì). das dùng sau danh từ giống trung cụ thể (das Buch, das …); wo chỉ nơi chốn; den là giống đực."
+    display_answer: was
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u04l4-fill-was-wo
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-relativ-wo-was
+    prompt:
+      template: "Es gibt nichts, {{b1}} mich mehr interessiert als Sprachen. Heidelberg ist die Stadt, {{b2}} ich meinen ersten Deutschkurs gemacht habe."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [was]
+        b2: [wo, in der]
+    known_wrong:
+      - answer: das
+        feedback_vi: Sau nichts (cũng như alles) dùng was, không dùng das.
+        error_tag: relative_pronoun
+      - answer: die
+        feedback_vi: "Ở đây cần nghĩa \"nơi mà\" – wo (hoặc in der), vì ich habe … in der Stadt gemacht."
+        error_tag: relative_pronoun
+      - answer: wohin
+        feedback_vi: Trong mệnh đề không có chuyển động đến đâu, chỉ là nơi chốn – wo.
+        error_tag: relative_pronoun
+    explanation:
+      vi: "Sau nichts, đại từ quan hệ là was. Sau danh từ chỉ nơi chốn (die Stadt), dùng wo hoặc giới từ + đại từ quan hệ: in der."
+    display_answer: "Es gibt nichts, was mich mehr interessiert als Sprachen. Heidelberg ist die Stadt, wo ich meinen ersten Deutschkurs gemacht habe."
+
+  - key: de:exercise:b1u04l4-fill-zu-anzumelden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-brauchen-zu
+    prompt:
+      template: "Sie brauchen keine Vorkenntnisse {{b1}} haben. Sie brauchen sich nur online {{b2}} (anmelden)."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [zu]
+        b2: [anzumelden]
+    known_wrong:
+      - answer: zu anmelden
+        feedback_vi: anmelden là động từ tách nên zu chen vào giữa – anzumelden.
+        error_tag: zu_infinitive
+      - answer: anmelden
+        feedback_vi: Sau nur brauchen, nguyên thể cần có zu; với động từ tách viết liền – anzumelden.
+        error_tag: zu_infinitive
+      - answer: anmeldet
+        feedback_vi: Sau brauchen … zu cần nguyên thể có zu – anzumelden.
+        error_tag: zu_infinitive
+    explanation:
+      vi: "nicht/kein … brauchen + zu + nguyên thể = không cần; nur brauchen + zu = chỉ cần. Với động từ tách anmelden, zu đứng giữa tiền tố và gốc: anzumelden."
+    display_answer: "Sie brauchen keine Vorkenntnisse zu haben. Sie brauchen sich nur online anzumelden."
+
+  - key: de:exercise:b1u04l4-tr-nichts-mitbringen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-brauchen-zu
+    prompt:
+      source_text: "Bạn không cần mang theo gì cả. (nói với bạn bè; dùng brauchen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Du brauchst nichts mitzubringen.
+        - Du brauchst gar nichts mitzubringen.
+        - Du brauchst nichts mitzunehmen.
+        - Du brauchst gar nichts mitzunehmen.
+    known_wrong:
+      - answer: Du brauchst nichts mitbringen.
+        feedback_vi: Khi viết, giữ zu sau brauchen; với động từ tách, zu chen vào giữa – mitzubringen.
+        error_tag: zu_infinitive
+      - answer: Du brauchst nichts zu mitbringen.
+        feedback_vi: "mitbringen là động từ tách: zu đứng giữa – mitzubringen."
+        error_tag: zu_infinitive
+      - answer: Sie brauchen nichts mitzubringen.
+        feedback_vi: Đề bài là nói với bạn bè nên dùng du – Du brauchst …
+        error_tag: register_du_sie
+    explanation:
+      vi: "nichts brauchen + zu = không cần gì. mitbringen (mang theo) là động từ tách, nên dạng có zu là mitzubringen, đứng cuối câu."
+    display_answer: Du brauchst nichts mitzubringen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u04l4-wb-formular
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-brauchen-zu
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ông/bà chỉ cần điền mẫu đơn.\""
+      tokens:
+        - { id: f-formular, text: Formular }
+        - { id: f-nur, text: nur }
+        - { id: f-sie, text: Sie }
+        - { id: f-aus, text: auszufüllen }
+        - { id: f-brauchen, text: brauchen }
+        - { id: f-das, text: das }
+    answer:
+      orders:
+        - [f-sie, f-brauchen, f-nur, f-das, f-formular, f-aus]
+        - [f-das, f-formular, f-brauchen, f-sie, f-nur, f-aus]
+    explanation:
+      vi: "brauchen ở vị trí 2, nur trước tân ngữ das Formular, nguyên thể có zu (auszufüllen – zu chen giữa động từ tách) đứng cuối câu. Cũng có thể đưa das Formular lên đầu câu để nhấn mạnh: Das Formular brauchen Sie nur auszufüllen."
+    display_answer: Sie brauchen nur das Formular auszufüllen.
+
+  - key: de:exercise:b1u04l4-tr-alles-was
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-relativ-wo-was
+    prompt:
+      source_text: "Đó là tất cả những gì tôi biết về khoá học này."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das ist alles, was ich über diesen Kurs weiß.
+        - Das ist alles, was ich über den Kurs weiß.
+        - Das ist alles, was ich zu diesem Kurs weiß.
+        - Das ist alles, was ich über diesen Lehrgang weiß.
+    known_wrong:
+      - answer: Das ist alles, das ich über diesen Kurs weiß.
+        feedback_vi: Sau alles dùng was, không dùng das.
+        error_tag: relative_pronoun
+      - answer: Das ist alles, was ich weiß über diesen Kurs.
+        feedback_vi: Động từ weiß đứng cuối mệnh đề quan hệ – was ich über diesen Kurs weiß.
+        error_tag: verb_position
+    explanation:
+      vi: "tất cả những gì = alles, was. Mệnh đề quan hệ có động từ ở cuối: was ich über diesen Kurs weiß. Về điều gì: über + Akkusativ (diesen Kurs)."
+    display_answer: Das ist alles, was ich über diesen Kurs weiß.
+
+  - key: de:exercise:b1u04l4-mcq-teilnahme
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-teilnahme
+    prompt:
+      stem: "Bạn gọi điện cho Volkshochschule để hỏi cần những gì để tham gia khoá học. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: t2a, text: "Was brauche ich für die Teilnahme am Kurs?", lang: de }
+        - { id: t5b, text: "Was brauche ich für die Teilnahme an den Kurs?", lang: de }
+        - { id: t8c, text: "Was brauche ich für den Teilnahme am Kurs?", lang: de }
+        - { id: t1d, text: "Was brauche ich für die Teilnahme mit dem Kurs?", lang: de }
+    answer:
+      correct_option_id: t2a
+    explanation:
+      vi: "die Teilnahme (giống cái) đi với an + Dativ: an dem Kurs → am Kurs. an den Kurs là Akkusativ (sai cách); den Teilnahme sai giống; mit không đi với Teilnahme."
+    display_answer: Was brauche ich für die Teilnahme am Kurs?

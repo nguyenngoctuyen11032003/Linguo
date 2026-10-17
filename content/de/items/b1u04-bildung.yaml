@@ -1,0 +1,1532 @@
+# Học liệu unit B1U04 "Giáo dục và học tập" (Bildung und Lernen), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U04L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Ước gì… – Konjunktiv II hiện tại =================
+  - key: de:item:b1u04-g-konjunktiv-ii-formen
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Konjunktiv II: wäre, hätte, würde + Infinitiv · käme, ginge, wüsste, gäbe, bräuchte"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Konjunktiv II diễn tả điều không có thật, điều ước hoặc lời nói lịch sự. sein → wäre, haben → hätte; với phần lớn động từ khác, bạn dùng würde (chia theo ngôi) + nguyên thể ở cuối câu: ich würde lernen. Một số động từ mạnh có dạng riêng, hay gặp trong văn viết: käme (kommen), ginge (gehen), wüsste (wissen), gäbe (geben), bräuchte (brauchen)."
+      examples:
+        - target: Ich wäre gern noch einmal Schülerin.
+          translation:
+            vi: Giá mà tôi được làm học sinh thêm lần nữa.
+        - target: An deiner Stelle würde ich mit der Lehrerin sprechen.
+          translation:
+            vi: Nếu mình là bạn, mình sẽ nói chuyện với cô giáo.
+        - target: Das wäre schön, aber ich habe leider keine Zeit.
+          translation:
+            vi: Thế thì hay quá, nhưng tiếc là tôi không có thời gian.
+      confusion:
+        vi: "Präteritum không có umlaut (ich war, ich hatte = tôi đã là, đã có), Konjunktiv II có umlaut (ich wäre, ich hätte = giá mà tôi là, giá mà tôi có). Khi nói, người Đức thường thay käme, ginge bằng würde kommen, würde gehen; riêng wäre, hätte và modal (könnte, müsste…) thì hầu như không thay bằng würde."
+
+  - key: de:item:b1u04-g-irrealer-wunsch
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Irrealer Wunsch: Wenn ich doch/nur mehr Zeit hätte! Ich wünschte, ich wäre …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để ước điều trái với thực tế, bạn dùng wenn + doch/nur, động từ Konjunktiv II đứng cuối, và kết thúc bằng dấu chấm than: Wenn ich doch mehr Zeit hätte! Cách thứ hai là Ich wünschte, … rồi một câu chính bình thường có động từ Konjunktiv II ở vị trí 2: Ich wünschte, ich hätte mehr Zeit. Câu ước kiểu này luôn ngầm nói rằng thực tế ngược lại (tôi không có thời gian)."
+      examples:
+        - target: Wenn ich doch bessere Noten hätte!
+          translation:
+            vi: Giá mà tôi được điểm tốt hơn!
+        - target: Wenn der Unterricht nur nicht so früh anfangen würde!
+          translation:
+            vi: Giá mà giờ học đừng bắt đầu sớm như vậy!
+        - target: Ich wünschte, ich wäre schon mit der Schule fertig.
+          translation:
+            vi: Ước gì tôi đã học xong phổ thông rồi.
+      confusion:
+        vi: "Ich wünsche mir … (hiện tại) là mong một điều có thể xảy ra: Ich wünsche mir ein Fahrrad. Ich wünschte, … (Konjunktiv II) là ước điều không có thật. Đừng dùng Präteritum để ước: Wenn ich Zeit hatte nghĩa là \"(những) khi tôi có thời gian\" ở quá khứ, không phải \"giá mà\"."
+
+  - key: de:item:b1u04-schulsystem
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Schulsystem, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ thống trường học, hệ thống giáo dục phổ thông
+      examples:
+        - target: In Deutschland ist das Schulsystem in jedem Bundesland ein bisschen anders.
+          translation:
+            vi: Ở Đức, hệ thống trường học ở mỗi bang hơi khác nhau.
+        - target: Ich wünschte, unser Schulsystem wäre nicht so streng.
+          translation:
+            vi: Ước gì hệ thống trường học của chúng ta không nghiêm ngặt như vậy.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Schule + das System → das Schulsystem. Ở Đức, giáo dục phổ thông do từng bang (Bundesland) quản lý, nên tên loại trường và số năm học có thể khác nhau."
+
+  - key: de:item:b1u04-fach
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Fach, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn học; ngành, chuyên môn
+      examples:
+        - target: Mein Lieblingsfach war immer Biologie.
+          translation:
+            vi: Môn học yêu thích của tôi luôn là sinh học.
+        - target: Welche Fächer hast du heute?
+          translation:
+            vi: Hôm nay bạn có những môn gì?
+      confusion:
+        vi: "Số nhiều có umlaut: die Fächer. Fach còn có nghĩa \"ngăn\" (ngăn tủ, ngăn kéo); Fachmann/Fachfrau là người trong nghề."
+
+  - key: de:item:b1u04-note
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Note, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm (số), điểm học tập
+      examples:
+        - target: In Deutschland ist die Eins die beste Note.
+          translation:
+            vi: Ở Đức, điểm 1 là điểm tốt nhất.
+        - target: Sie hat in Englisch eine schlechte Note bekommen.
+          translation:
+            vi: Cô ấy bị điểm kém môn tiếng Anh.
+      confusion:
+        vi: "Thang điểm phổ thông ở Đức: 1 (sehr gut) là tốt nhất, 6 (ungenügend) là kém nhất, ngược với thang 10 của Việt Nam. Áo dùng 1–5, còn ở Thụy Sĩ 6 lại là điểm tốt nhất. Note còn có nghĩa \"nốt nhạc\"."
+
+  - key: de:item:b1u04-zeugnis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Zeugnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: học bạ, bảng điểm (cuối kỳ); giấy chứng nhận
+      examples:
+        - target: Vor den Sommerferien bekommen alle Schüler ihr Zeugnis.
+          translation:
+            vi: Trước kỳ nghỉ hè, tất cả học sinh nhận học bạ.
+        - target: Für die Bewerbung brauchen Sie Kopien Ihrer Zeugnisse.
+          translation:
+            vi: Để nộp hồ sơ xin việc, ông/bà cần bản sao các văn bằng, chứng nhận.
+      confusion:
+        vi: "Danh từ đuôi -nis nhân đôi s ở số nhiều: das Zeugnis → die Zeugnisse. Giấy nhận xét của công ty cũ khi nghỉ việc gọi là das Arbeitszeugnis."
+
+  - key: de:item:b1u04-klasse
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Klasse, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lớp (tập thể học sinh; cấp lớp)
+      examples:
+        - target: Meine Tochter geht in die vierte Klasse.
+          translation:
+            vi: Con gái tôi đang học lớp bốn.
+        - target: In unserer Klasse sind 25 Schüler.
+          translation:
+            vi: Lớp chúng tôi có 25 học sinh.
+      confusion:
+        vi: "Klasse là lớp (nhóm học sinh hoặc cấp lớp); phòng học là das Klassenzimmer. Trong văn nói, Klasse! còn có nghĩa \"tuyệt quá!\"."
+
+  - key: de:item:b1u04-unterricht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Unterricht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ học, việc giảng dạy
+      examples:
+        - target: Der Unterricht beginnt um acht Uhr.
+          translation:
+            vi: Giờ học bắt đầu lúc tám giờ.
+        - target: Im Unterricht dürfen wir das Handy nicht benutzen.
+          translation:
+            vi: Trong giờ học chúng tôi không được dùng điện thoại.
+      confusion:
+        vi: "Unterricht là danh từ không đếm được; một tiết học là eine Stunde hoặc eine Unterrichtsstunde. Động từ: unterrichten (dạy học)."
+
+  - key: de:item:b1u04-sitzenbleiben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sitzenbleiben, bleibt sitzen, blieb sitzen, ist sitzengeblieben
+      pos: động từ
+    back:
+      meaning:
+        vi: bị lưu ban, ở lại lớp
+      examples:
+        - target: Mein Bruder ist in der achten Klasse sitzengeblieben.
+          translation:
+            vi: Anh trai tôi bị lưu ban năm lớp tám.
+        - target: Wenn er nicht mehr lernt, bleibt er sitzen.
+          translation:
+            vi: Nếu nó không học thêm thì sẽ bị ở lại lớp.
+      confusion:
+        vi: "Theo nghĩa \"lưu ban\" (khẩu ngữ), từ này được viết liền hoặc viết rời (sitzen bleiben); nghĩa đen \"cứ ngồi yên\" thì viết rời. Perfekt dùng sein như bleiben: ist sitzengeblieben."
+
+  - key: de:item:b1u04-schulpflicht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Schulpflicht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghĩa vụ đi học, giáo dục bắt buộc
+      examples:
+        - target: In Deutschland gibt es eine Schulpflicht.
+          translation:
+            vi: Ở Đức có quy định giáo dục bắt buộc.
+        - target: Die Schulpflicht beginnt meistens mit sechs Jahren.
+          translation:
+            vi: Nghĩa vụ đi học thường bắt đầu từ năm sáu tuổi.
+      confusion:
+        vi: "die Schule + die Pflicht (nghĩa vụ). Số năm đi học bắt buộc khác nhau theo bang (thường khoảng 9–10 năm học toàn thời gian); quy định có thể thay đổi."
+
+  - key: de:item:b1u04-realschule
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Realschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường Realschule (trung học, thường đến lớp 10)
+      examples:
+        - target: Nach der Realschule hat sie eine Ausbildung gemacht.
+          translation:
+            vi: Sau khi học xong Realschule, cô ấy đi học nghề.
+        - target: Die Realschule endet meistens nach der zehnten Klasse.
+          translation:
+            vi: Realschule thường kết thúc sau lớp mười.
+      confusion:
+        vi: "Sau tiểu học (Grundschule), học sinh ở nhiều bang học tiếp Gymnasium (đến Abitur), Realschule hoặc một loại trường khác. Một số bang đã gộp Realschule với trường khác dưới tên mới, nên tên gọi không giống nhau ở mọi nơi."
+
+  # Zusatzwortschatz bài 1 (8 lemma)
+  - key: de:item:b1u04-hauptschule
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hauptschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường Hauptschule (trung học cơ sở hướng nghề, thường đến lớp 9)
+      examples:
+        - target: Nach der Hauptschule beginnen viele junge Leute eine Ausbildung.
+          translation:
+            vi: Sau Hauptschule, nhiều bạn trẻ bắt đầu học nghề.
+        - target: Er hat den Hauptschulabschluss später nachgeholt.
+          translation:
+            vi: Sau này anh ấy đã học bù để lấy bằng tốt nghiệp Hauptschule.
+      confusion:
+        vi: "Nhiều bang đã bỏ hoặc gộp Hauptschule với Realschule thành một loại trường khác, nên tên gọi khác nhau theo bang. Đừng nhầm với die Hochschule (trường đại học)."
+
+  - key: de:item:b1u04-gesamtschule
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gesamtschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường tổng hợp (nhiều trình độ học chung một trường)
+      examples:
+        - target: An der Gesamtschule kann man verschiedene Abschlüsse machen.
+          translation:
+            vi: Ở trường tổng hợp có thể lấy các loại bằng tốt nghiệp khác nhau.
+        - target: Unsere Kinder gehen auf eine Gesamtschule.
+          translation:
+            vi: Các con chúng tôi học ở một trường tổng hợp.
+      confusion:
+        vi: "Học ở trường nào: auf eine Schule gehen (auf + Akk) hoặc an einer Schule sein. gesamt = toàn bộ: mọi trình độ cùng ở một trường."
+
+  - key: de:item:b1u04-stundenplan
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Stundenplan, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời khoá biểu
+      examples:
+        - target: Laut Stundenplan haben wir heute zwei Stunden Mathe.
+          translation:
+            vi: Theo thời khoá biểu, hôm nay chúng tôi có hai tiết toán.
+        - target: Der neue Stundenplan hängt im Klassenzimmer.
+          translation:
+            vi: Thời khoá biểu mới được treo trong lớp.
+      confusion:
+        vi: "die Stunde + der Plan → der Stundenplan (giống của từ cuối), số nhiều die Stundenpläne. Một tiết học ở Đức thường dài 45 phút nhưng vẫn gọi là eine Stunde."
+
+  - key: de:item:b1u04-klassenarbeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Klassenarbeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài kiểm tra viết trên lớp
+      examples:
+        - target: Morgen schreiben wir eine Klassenarbeit in Deutsch.
+          translation:
+            vi: Ngày mai chúng tôi làm bài kiểm tra môn tiếng Đức.
+        - target: Für die Klassenarbeit muss ich noch viele Vokabeln lernen.
+          translation:
+            vi: Để làm bài kiểm tra, tôi còn phải học nhiều từ vựng.
+      confusion:
+        vi: "Động từ đi kèm là schreiben: eine Klassenarbeit schreiben (không dùng machen). Ở đại học, bài thi viết gọi là die Klausur."
+
+  - key: de:item:b1u04-halbjahr
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Halbjahr, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: học kỳ (ở trường phổ thông), nửa năm
+      examples:
+        - target: Im ersten Halbjahr hatte ich in Mathe eine Drei.
+          translation:
+            vi: Học kỳ một tôi được điểm 3 môn toán.
+        - target: Am Ende des Halbjahres bekommen die Schüler ein Zeugnis.
+          translation:
+            vi: Cuối học kỳ, học sinh nhận học bạ.
+      confusion:
+        vi: "halb (nửa) + das Jahr. Ở trường phổ thông nói das Halbjahr; ở đại học, học kỳ là das Semester."
+
+  - key: de:item:b1u04-schwaenzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schwänzen
+      pos: động từ
+    back:
+      meaning:
+        vi: trốn học, cúp tiết (khẩu ngữ)
+      examples:
+        - target: Er hat heute die Schule geschwänzt.
+          translation:
+            vi: Hôm nay nó trốn học.
+        - target: Wer oft schwänzt, bekommt Probleme mit der Schule.
+          translation:
+            vi: Ai hay trốn học sẽ gặp rắc rối với nhà trường.
+      confusion:
+        vi: "Động từ có quy tắc: schwänzte, hat geschwänzt. Tân ngữ là buổi học hoặc môn học: die Schule / den Unterricht / Mathe schwänzen."
+
+  - key: de:item:b1u04-loben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: loben
+      pos: động từ
+    back:
+      meaning:
+        vi: khen, khen ngợi
+      examples:
+        - target: Die Lehrerin hat ihn für seine gute Arbeit gelobt.
+          translation:
+            vi: Cô giáo đã khen cậu ấy vì bài làm tốt.
+        - target: Kinder lernen besser, wenn man sie lobt.
+          translation:
+            vi: Trẻ con học tốt hơn khi được khen.
+      confusion:
+        vi: "Khen ai về điều gì: jemanden (Akk) für etwas loben. Ngược nghĩa: kritisieren (phê bình)."
+
+  - key: de:item:b1u04-nachhilfe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Nachhilfe (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc dạy kèm, học thêm
+      examples:
+        - target: Mein Sohn bekommt Nachhilfe in Mathe.
+          translation:
+            vi: Con trai tôi được học kèm môn toán.
+        - target: Sie gibt Nachhilfe, um ein bisschen Geld zu verdienen.
+          translation:
+            vi: Cô ấy dạy kèm để kiếm thêm chút tiền.
+      confusion:
+        vi: "Người học: Nachhilfe bekommen/nehmen; người dạy: Nachhilfe geben. Ở Đức, học kèm thường là để gỡ điểm kém ở một môn."
+
+  # ================= Bài 2: Nếu tôi được học lại – câu điều kiện không thật =================
+  - key: de:item:b1u04-g-irreale-bedingung
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Irreale Bedingung: Wenn ich Zeit hätte, würde ich … · Hätte ich Zeit, würde ich …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Câu điều kiện không có thật ở hiện tại dùng Konjunktiv II ở cả hai vế: vế wenn có động từ ở cuối, vế chính dùng würde + nguyên thể (hoặc wäre, hätte, könnte…). Khi vế wenn đứng trước, vế chính bắt đầu ngay bằng động từ: Wenn ich Zeit hätte, würde ich kommen. Bạn cũng có thể bỏ wenn và đưa động từ lên đầu: Hätte ich Zeit, würde ich kommen."
+      examples:
+        - target: Wenn ich noch einmal studieren könnte, würde ich Medizin wählen.
+          translation:
+            vi: Nếu được học đại học lại, tôi sẽ chọn ngành y.
+        - target: Wenn das Studium nicht so teuer wäre, würden mehr junge Leute studieren.
+          translation:
+            vi: Nếu học đại học không đắt như vậy, sẽ có nhiều người trẻ đi học hơn.
+        - target: Hätte ich ein Stipendium, müsste ich nicht nebenbei arbeiten.
+          translation:
+            vi: Nếu có học bổng, tôi sẽ không phải vừa học vừa làm.
+      confusion:
+        vi: "Wenn ich Zeit habe, komme ich: điều kiện thật, có thể xảy ra. Wenn ich Zeit hätte, würde ich kommen: thực tế tôi không có thời gian. Tiếng Việt dùng \"nếu\" cho cả hai, tiếng Đức phải đổi dạng động từ."
+
+  - key: de:item:b1u04-g-konjunktiv-ii-modal
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Konjunktiv II der Modalverben: könnte, müsste, dürfte, sollte, wollte"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "können, müssen, dürfen có umlaut ở Konjunktiv II: könnte, müsste, dürfte; sollte và wollte giống hệt Präteritum. Modal ở Konjunktiv II dùng trực tiếp, không đi với würde, nguyên thể đứng cuối câu: Ich könnte im Ausland studieren. Chúng dùng để nói khả năng giả định (könnte), điều cần làm nếu… (müsste), lời khuyên (solltest) và lời hỏi lịch sự (Könnten Sie …? Dürfte ich …?)."
+      examples:
+        - target: Könnten Sie mir sagen, wann die Vorlesung beginnt?
+          translation:
+            vi: Thầy/cô có thể cho tôi biết khi nào bài giảng bắt đầu không ạ?
+        - target: Du solltest dich bald einschreiben.
+          translation:
+            vi: Bạn nên sớm làm thủ tục nhập học.
+        - target: Dürfte ich kurz Ihr Wörterbuch benutzen?
+          translation:
+            vi: Tôi dùng cuốn từ điển của anh/chị một chút được không ạ?
+      confusion:
+        vi: "Không nói ich würde können, mà nói ich könnte. Präteritum không umlaut (ich konnte = tôi đã có thể), Konjunktiv II có umlaut (ich könnte = tôi có thể (giả định)); với sollte/wollte, chỉ ngữ cảnh mới cho biết là thì nào. Das dürfte stimmen nghĩa là \"chắc là đúng\" (phỏng đoán)."
+
+  - key: de:item:b1u04-hochschule
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hochschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường đại học (nói chung, bậc đại học)
+      examples:
+        - target: An welcher Hochschule studierst du?
+          translation:
+            vi: Bạn học ở trường đại học nào?
+        - target: Sie studiert Klavier an einer Hochschule für Musik.
+          translation:
+            vi: Cô ấy học piano ở một học viện âm nhạc.
+      confusion:
+        vi: "Hochschule là từ chung cho các trường bậc đại học (Universität, Fachhochschule, học viện nghệ thuật…), không phải \"trường trung học\" dù có chữ hoch. Học ở đâu: an einer Hochschule studieren."
+
+  - key: de:item:b1u04-semester
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Semester, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: học kỳ (đại học)
+      examples:
+        - target: Ich bin jetzt im dritten Semester.
+          translation:
+            vi: Tôi đang học học kỳ thứ ba.
+        - target: An vielen Universitäten beginnt das Wintersemester im Oktober.
+          translation:
+            vi: Ở nhiều trường đại học, học kỳ mùa đông bắt đầu vào tháng Mười.
+      confusion:
+        vi: "Số nhiều không đổi: die Semester. Năm học đại học ở Đức chia thành Wintersemester và Sommersemester; ngày bắt đầu khác nhau tuỳ trường."
+
+  - key: de:item:b1u04-vorlesung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vorlesung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài giảng (lớn) ở đại học
+      examples:
+        - target: Die Vorlesung findet im Hörsaal 3 statt.
+          translation:
+            vi: Bài giảng diễn ra ở giảng đường số 3.
+        - target: Heute habe ich zwei Vorlesungen und ein Seminar.
+          translation:
+            vi: Hôm nay tôi có hai buổi giảng và một buổi xêmina.
+      confusion:
+        vi: "Vorlesung: giảng viên nói, rất nhiều sinh viên nghe; Seminar: nhóm nhỏ, sinh viên thảo luận và thuyết trình. Đừng nhầm với vorlesen (đọc to cho ai nghe)."
+
+  - key: de:item:b1u04-seminar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Seminar, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi xêmina, lớp thảo luận
+      examples:
+        - target: Im Seminar muss jeder ein Referat halten.
+          translation:
+            vi: Trong lớp xêmina, ai cũng phải thuyết trình một bài.
+        - target: Das Seminar ist leider schon voll.
+          translation:
+            vi: Tiếc là lớp xêmina đã đủ người rồi.
+      confusion:
+        vi: "Số nhiều: die Seminare. Ở công ty, Seminar còn là một khoá bồi dưỡng ngắn (ein Seminar für Zeitmanagement)."
+
+  - key: de:item:b1u04-studiengang
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Studiengang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình đào tạo (đại học), ngành học
+      examples:
+        - target: Nach zwei Semestern hat sie den Studiengang gewechselt.
+          translation:
+            vi: Sau hai học kỳ, cô ấy đã đổi ngành học.
+        - target: Diese Hochschule bietet viele englischsprachige Studiengänge an.
+          translation:
+            vi: Trường này có nhiều chương trình học bằng tiếng Anh.
+      confusion:
+        vi: "Studiengang là chương trình cụ thể (ví dụ Bachelor Informatik); hỏi chung ngành học thì nói Was studierst du? Số nhiều: die Studiengänge."
+
+  - key: de:item:b1u04-stipendium
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Stipendium, Stipendien
+      pos: danh từ
+    back:
+      meaning:
+        vi: học bổng
+      examples:
+        - target: Sie hat ein Stipendium für ein Jahr in Deutschland bekommen.
+          translation:
+            vi: Cô ấy nhận được học bổng một năm ở Đức.
+        - target: Ohne Stipendium könnte ich nicht im Ausland studieren.
+          translation:
+            vi: Không có học bổng thì tôi không thể du học được.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Stipendien (như das Studium → die Studien). Xin học bổng: sich um ein Stipendium bewerben."
+
+  - key: de:item:b1u04-sich-einschreiben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich einschreiben, schreibt sich ein, schrieb sich ein, hat sich eingeschrieben
+      pos: động từ
+    back:
+      meaning:
+        vi: đăng ký nhập học (vào trường đại học, khoá học)
+      examples:
+        - target: Bis wann muss ich mich an der Universität einschreiben?
+          translation:
+            vi: Tôi phải đăng ký nhập học ở trường đại học trước ngày nào?
+        - target: Er hat sich für Informatik eingeschrieben.
+          translation:
+            vi: Anh ấy đã đăng ký nhập học ngành tin học.
+      confusion:
+        vi: "Động từ phản thân và tách: ich schreibe mich ein, du schreibst dich ein. Danh từ: die Einschreibung (trang trọng: die Immatrikulation)."
+
+  - key: de:item:b1u04-hoersaal
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hörsaal, Hörsäle
+      pos: danh từ
+    back:
+      meaning:
+        vi: giảng đường
+      examples:
+        - target: Der Hörsaal war so voll, dass manche auf der Treppe saßen.
+          translation:
+            vi: Giảng đường đông đến mức có người phải ngồi ở bậc thang.
+        - target: Entschuldigung, wo ist Hörsaal 5?
+          translation:
+            vi: Xin lỗi, giảng đường số 5 ở đâu ạ?
+      confusion:
+        vi: "Số nhiều: die Hörsäle (aa đổi thành một chữ ä, như der Saal → die Säle). hören (nghe) + der Saal (phòng lớn)."
+
+  # Zusatzwortschatz bài 2 (8 lemma)
+  - key: de:item:b1u04-mensa
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Mensa, Mensen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà ăn sinh viên
+      examples:
+        - target: Mittags essen wir meistens in der Mensa.
+          translation:
+            vi: Buổi trưa chúng tôi thường ăn ở nhà ăn sinh viên.
+        - target: Das Essen in der Mensa ist günstig, aber nicht immer lecker.
+          translation:
+            vi: Đồ ăn ở nhà ăn sinh viên rẻ, nhưng không phải lúc nào cũng ngon.
+      confusion:
+        vi: "Số nhiều: die Mensen. Nhà ăn ở công ty gọi là die Kantine."
+
+  - key: de:item:b1u04-klausur
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Klausur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài thi viết (ở đại học)
+      examples:
+        - target: Nächste Woche schreibe ich drei Klausuren.
+          translation:
+            vi: Tuần sau tôi thi viết ba môn.
+        - target: Wenn ich die Klausur nicht bestehe, muss ich sie wiederholen.
+          translation:
+            vi: Nếu không qua bài thi, tôi phải thi lại.
+      confusion:
+        vi: "Đi với schreiben và bestehen: eine Klausur schreiben, eine Klausur bestehen. Ở trường phổ thông, bài kiểm tra viết là die Klassenarbeit."
+
+  - key: de:item:b1u04-hausarbeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hausarbeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tiểu luận (ở đại học); việc nhà
+      examples:
+        - target: Bis Ende März muss ich eine Hausarbeit schreiben.
+          translation:
+            vi: Trước cuối tháng Ba tôi phải viết một bài tiểu luận.
+        - target: Die Hausarbeit soll etwa 15 Seiten lang sein.
+          translation:
+            vi: Bài tiểu luận cần dài khoảng 15 trang.
+      confusion:
+        vi: "Ở đại học, Hausarbeit là bài tiểu luận; bài tập về nhà ở trường phổ thông là die Hausaufgabe. Trong gia đình, Hausarbeit còn có nghĩa \"việc nhà\"."
+
+  - key: de:item:b1u04-studienplatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Studienplatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: suất học (đại học), chỗ học
+      examples:
+        - target: Für Medizin gibt es nur wenige Studienplätze.
+          translation:
+            vi: Ngành y chỉ có ít suất học.
+        - target: Sie hat einen Studienplatz in Leipzig bekommen.
+          translation:
+            vi: Cô ấy đã được nhận vào học ở Leipzig.
+      confusion:
+        vi: "Một số ngành giới hạn số chỗ (gọi là Numerus clausus, viết tắt NC), nên cần điểm Abitur tốt mới được nhận. Số nhiều: die Studienplätze."
+
+  - key: de:item:b1u04-zulassung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zulassung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chấp nhận nhập học, giấy báo trúng tuyển
+      examples:
+        - target: Ich habe die Zulassung zum Masterstudium bekommen!
+          translation:
+            vi: Tôi đã được nhận vào học thạc sĩ!
+        - target: Für die Zulassung brauchen Sie ein Sprachzertifikat.
+          translation:
+            vi: Để được nhận vào học, ông/bà cần một chứng chỉ ngoại ngữ.
+      confusion:
+        vi: "Động từ: zulassen (chấp nhận, cho phép). Zulassung còn dùng cho giấy đăng ký xe (die Zulassung des Autos)."
+
+  - key: de:item:b1u04-wohnheim
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Wohnheim, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ký túc xá
+      examples:
+        - target: Im Wohnheim sind die Zimmer günstig, aber klein.
+          translation:
+            vi: Phòng ở ký túc xá rẻ nhưng nhỏ.
+        - target: Im ersten Semester habe ich im Studentenwohnheim gewohnt.
+          translation:
+            vi: Học kỳ đầu tôi ở ký túc xá sinh viên.
+      confusion:
+        vi: "Dạng đầy đủ: das Studentenwohnheim. Từ ghép lấy giống của từ cuối: das Heim → das Wohnheim."
+
+  - key: de:item:b1u04-professor
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Professor, -en / die Professorin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: giáo sư
+      examples:
+        - target: Die Professorin erklärt sehr verständlich.
+          translation:
+            vi: Cô giáo sư giảng rất dễ hiểu.
+        - target: Ich habe eine Frage an Professor Klein.
+          translation:
+            vi: Tôi có một câu hỏi muốn hỏi giáo sư Klein.
+      confusion:
+        vi: "Số nhiều die Professoren, trọng âm chuyển: Proféssor → Professóren. Trong thư: Sehr geehrter Herr Professor Klein / Sehr geehrte Frau Professorin Klein."
+
+  - key: de:item:b1u04-studiengebuehr
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Studiengebühr, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: học phí đại học
+      examples:
+        - target: An vielen staatlichen Hochschulen gibt es keine Studiengebühren.
+          translation:
+            vi: Nhiều trường đại học công lập không thu học phí.
+        - target: Wenn die Studiengebühren niedriger wären, könnte ich in England studieren.
+          translation:
+            vi: Nếu học phí thấp hơn thì tôi có thể học ở Anh.
+      confusion:
+        vi: "Thường dùng số nhiều: die Studiengebühren. Quy định về học phí ở Đức khác nhau theo bang và có thể thay đổi (một số bang thu phí sinh viên ngoài EU); ngoài ra mỗi học kỳ vẫn phải đóng một khoản phí học kỳ (der Semesterbeitrag)."
+
+  # ================= Bài 3: Liên từ hai vế, je … desto =================
+  - key: de:item:b1u04-g-zweiteilige-konnektoren
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "sowohl … als auch · weder … noch · nicht nur … sondern auch · entweder … oder · zwar … aber"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Liên từ hai vế nối hai ý cùng loại: sowohl … als auch (cả … lẫn), weder … noch (không … cũng không), nicht nur … sondern auch (không chỉ … mà còn), entweder … oder (hoặc … hoặc), zwar … aber (tuy … nhưng). weder … noch đã mang nghĩa phủ định, nên không thêm nicht hay kein. Khi nối hai câu, oder và aber đứng ở vị trí 0 (không tính), nên câu sau giữ trật tự bình thường."
+      examples:
+        - target: Sie spricht sowohl Englisch als auch Französisch.
+          translation:
+            vi: Cô ấy nói được cả tiếng Anh lẫn tiếng Pháp.
+        - target: Ich habe weder Zeit noch Geld für einen Kurs.
+          translation:
+            vi: Tôi không có thời gian mà cũng không có tiền cho một khoá học.
+        - target: Das Studium ist zwar anstrengend, aber es macht Spaß.
+          translation:
+            vi: Học đại học tuy vất vả nhưng vui.
+      confusion:
+        vi: "Không nói weder … noch … nicht (phủ định kép như tiếng Việt \"không … cũng không … không\"). entweder có thể đứng ở vị trí 0 (Entweder ich lerne heute, oder …) hoặc vị trí 1 (Entweder lerne ich heute, oder …), cả hai đều đúng."
+
+  - key: de:item:b1u04-g-je-desto
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "je + Komparativ …, desto/umso + Komparativ …: Je mehr ich übe, desto besser spreche ich."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "je … desto nghĩa là \"càng … càng\". Vế je là câu phụ: je + so sánh hơn, động từ đứng cuối. Vế sau bắt đầu bằng desto (hoặc umso) + so sánh hơn, rồi đến động từ, rồi mới đến chủ ngữ: …, desto besser spreche ich."
+      examples:
+        - target: Je mehr ich übe, desto besser spreche ich.
+          translation:
+            vi: Tôi càng luyện tập nhiều thì nói càng giỏi.
+        - target: Je früher du anfängst, umso leichter wird es.
+          translation:
+            vi: Bạn bắt đầu càng sớm thì càng dễ.
+        - target: Je länger ich in Deutschland lebe, desto besser verstehe ich die Leute.
+          translation:
+            vi: Tôi sống ở Đức càng lâu thì càng hiểu người ở đây.
+      confusion:
+        vi: "Lỗi hay gặp: …, desto ich spreche besser. Sau desto phải là so sánh hơn ngay, rồi động từ, rồi chủ ngữ: desto besser spreche ich. desto và umso nghĩa như nhau."
+
+  - key: de:item:b1u04-methode
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Methode, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương pháp
+      examples:
+        - target: Welche Methode hilft dir beim Vokabellernen?
+          translation:
+            vi: Phương pháp nào giúp bạn học từ vựng?
+        - target: Jeder lernt mit einer anderen Methode.
+          translation:
+            vi: Mỗi người học theo một phương pháp khác nhau.
+      confusion:
+        vi: "Trọng âm ở âm tiết thứ hai: Methóde, chữ o đọc dài. Với phương pháp: mit einer Methode lernen."
+
+  - key: de:item:b1u04-motivation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Motivation (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: động lực
+      examples:
+        - target: Im Winter fehlt mir oft die Motivation.
+          translation:
+            vi: Mùa đông tôi thường thiếu động lực.
+        - target: Je größer die Motivation ist, desto schneller lernt man.
+          translation:
+            vi: Động lực càng lớn thì học càng nhanh.
+      confusion:
+        vi: "Danh từ đuôi -tion là giống cái: die Motivation, die Information. Động từ: motivieren; tính từ: motiviert (có động lực)."
+
+  - key: de:item:b1u04-sich-konzentrieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich konzentrieren (auf + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: tập trung (vào)
+      examples:
+        - target: Wenn es laut ist, kann ich mich nicht konzentrieren.
+          translation:
+            vi: Khi ồn, tôi không tập trung được.
+        - target: Konzentrier dich auf die wichtigsten Wörter!
+          translation:
+            vi: Hãy tập trung vào những từ quan trọng nhất!
+      confusion:
+        vi: "Phải có đại từ phản thân: ich konzentriere mich, du konzentrierst dich. Đuôi -ieren nên Perfekt không có ge-: hat sich konzentriert."
+
+  - key: de:item:b1u04-gedaechtnis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gedächtnis (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trí nhớ
+      examples:
+        - target: Ich habe ein schlechtes Gedächtnis für Namen.
+          translation:
+            vi: Tôi rất kém nhớ tên người.
+        - target: Regelmäßiges Wiederholen ist gut für das Gedächtnis.
+          translation:
+            vi: Ôn tập đều đặn rất tốt cho trí nhớ.
+      confusion:
+        vi: "Gedächtnis là khả năng ghi nhớ; một kỷ niệm cụ thể là die Erinnerung. Gedächtnis là giống trung, dù nhiều danh từ đuôi -nis khác là giống cái (die Erlaubnis)."
+
+  - key: de:item:b1u04-auswendig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: auswendig
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thuộc lòng
+      examples:
+        - target: In der Schule mussten wir viele Gedichte auswendig lernen.
+          translation:
+            vi: Hồi đi học chúng tôi phải học thuộc lòng nhiều bài thơ.
+        - target: Kannst du deine Handynummer auswendig?
+          translation:
+            vi: Bạn có thuộc số điện thoại của mình không?
+      confusion:
+        vi: "Thường đi với lernen hoặc können: etwas auswendig lernen (học thuộc lòng), etwas auswendig können (thuộc lòng)."
+
+  - key: de:item:b1u04-fortschritt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Fortschritt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tiến bộ
+      examples:
+        - target: Du machst große Fortschritte!
+          translation:
+            vi: Bạn tiến bộ nhiều lắm!
+        - target: Beim Sprechen sehe ich leider kaum Fortschritte.
+          translation:
+            vi: Tiếc là phần nói tôi hầu như không thấy tiến bộ.
+      confusion:
+        vi: "Hay dùng số nhiều với machen: Fortschritte machen (tiến bộ). Tính từ fortschrittlich nghĩa là \"tiến bộ, hiện đại\" (một tư tưởng, một đất nước)."
+
+  - key: de:item:b1u04-grammatik
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Grammatik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngữ pháp
+      examples:
+        - target: Die deutsche Grammatik ist nicht leicht, aber logisch.
+          translation:
+            vi: Ngữ pháp tiếng Đức không dễ, nhưng có logic.
+        - target: Ich übe jeden Tag zehn Minuten Grammatik.
+          translation:
+            vi: Mỗi ngày tôi luyện ngữ pháp mười phút.
+      confusion:
+        vi: "Trọng âm ở âm tiết thứ hai: Grammátik. Khi chỉ cuốn sách ngữ pháp, từ này có số nhiều: die Grammatiken."
+
+  - key: de:item:b1u04-wortschatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Wortschatz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: vốn từ (vựng)
+      examples:
+        - target: Mein Wortschatz ist noch ziemlich klein.
+          translation:
+            vi: Vốn từ của tôi còn khá ít.
+        - target: Wer viel liest, erweitert seinen Wortschatz.
+          translation:
+            vi: Ai đọc nhiều thì mở rộng được vốn từ.
+      confusion:
+        vi: "das Wort + der Schatz (kho báu) → der Wortschatz: toàn bộ vốn từ của bạn. Từng từ cần học là die Vokabel."
+
+  - key: de:item:b1u04-fremdsprache
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fremdsprache, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngoại ngữ
+      examples:
+        - target: Wie viele Fremdsprachen sprichst du?
+          translation:
+            vi: Bạn nói được mấy ngoại ngữ?
+        - target: Deutsch ist meine zweite Fremdsprache.
+          translation:
+            vi: Tiếng Đức là ngoại ngữ thứ hai của tôi.
+      confusion:
+        vi: "fremd (lạ, nước ngoài) + die Sprache. Tiếng mẹ đẻ là die Muttersprache. Tên ngôn ngữ viết hoa khi là danh từ (Ich lerne Deutsch), viết thường khi là tính từ (die deutsche Sprache)."
+
+  # Zusatzwortschatz bài 3 (7 lemma)
+  - key: de:item:b1u04-vokabel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vokabel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ vựng (một từ cần học)
+      examples:
+        - target: Ich lerne jeden Tag zwanzig neue Vokabeln.
+          translation:
+            vi: Mỗi ngày tôi học hai mươi từ mới.
+        - target: Vokabeln lerne ich am liebsten mit Karteikarten.
+          translation:
+            vi: Tôi thích học từ vựng bằng thẻ nhất.
+      confusion:
+        vi: "Thường dùng số nhiều: Vokabeln lernen. Toàn bộ vốn từ là der Wortschatz. Ở Áo người ta cũng nói das Vokabel."
+
+  - key: de:item:b1u04-muttersprachler
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Muttersprachler, - / die Muttersprachlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người bản ngữ
+      examples:
+        - target: Ich übe Sprechen mit einer Muttersprachlerin.
+          translation:
+            vi: Tôi luyện nói với một người bản ngữ.
+        - target: Er spricht fast wie ein Muttersprachler.
+          translation:
+            vi: Anh ấy nói gần như người bản ngữ.
+      confusion:
+        vi: "die Muttersprache (tiếng mẹ đẻ) + -ler. Dativ số nhiều thêm -n: mit Muttersprachlern sprechen."
+
+  - key: de:item:b1u04-sich-merken
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich merken (mir/dir … + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: ghi nhớ (điều gì)
+      examples:
+        - target: Neue Wörter kann ich mir schlecht merken.
+          translation:
+            vi: Tôi rất khó nhớ từ mới.
+        - target: Merk dir diese Regel!
+          translation:
+            vi: Nhớ lấy quy tắc này nhé!
+      confusion:
+        vi: "Đại từ phản thân ở Dativ: ich merke mir, du merkst dir (không phải mich/dich), vì điều cần nhớ đã là tân ngữ Akkusativ. So sánh: sich erinnern an = nhớ lại chuyện đã qua."
+
+  - key: de:item:b1u04-fliessend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fließend
+      pos: tính từ
+    back:
+      meaning:
+        vi: lưu loát, trôi chảy
+      examples:
+        - target: Sie spricht fließend Deutsch.
+          translation:
+            vi: Cô ấy nói tiếng Đức lưu loát.
+        - target: Mein Ziel ist es, in zwei Jahren fließend Englisch zu sprechen.
+          translation:
+            vi: Mục tiêu của tôi là hai năm nữa nói tiếng Anh lưu loát.
+      confusion:
+        vi: "fließend đến từ fließen (chảy): nói trôi như nước chảy. Đứng trước tên ngôn ngữ, không cần mạo từ: fließend Deutsch sprechen. Nhà có nước máy: fließendes Wasser."
+
+  - key: de:item:b1u04-karteikarte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Karteikarte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ ghi (dùng để học từ)
+      examples:
+        - target: Auf die Vorderseite der Karteikarte schreibe ich das deutsche Wort.
+          translation:
+            vi: Tôi viết từ tiếng Đức lên mặt trước của tấm thẻ.
+        - target: Mit Karteikarten kann man auch im Bus lernen.
+          translation:
+            vi: Có thẻ học từ thì ngồi xe buýt cũng học được.
+      confusion:
+        vi: "die Kartei (hộp phiếu) + die Karte (tấm thẻ), giống cái theo từ cuối. Thẻ học trong ứng dụng thường gọi là Lernkarten."
+
+  - key: de:item:b1u04-verbessern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verbessern
+      pos: động từ
+    back:
+      meaning:
+        vi: cải thiện; sửa (lỗi)
+      examples:
+        - target: Ich möchte meine Aussprache verbessern.
+          translation:
+            vi: Tôi muốn cải thiện cách phát âm.
+        - target: Die Lehrerin verbessert unsere Fehler mit einem grünen Stift.
+          translation:
+            vi: Cô giáo sửa lỗi cho chúng tôi bằng bút xanh lá.
+      confusion:
+        vi: "Tiền tố ver- không tách, Perfekt không có ge-: hat verbessert. Phản thân sich verbessern = (bản thân) tiến bộ hơn: Er hat sich in Mathe verbessert."
+
+  - key: de:item:b1u04-uebung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Übung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tập; sự luyện tập
+      examples:
+        - target: Diese Übung ist mir zu schwer.
+          translation:
+            vi: Bài tập này quá khó với tôi.
+        - target: Übung macht den Meister.
+          translation:
+            vi: Có công mài sắt có ngày nên kim.
+      confusion:
+        vi: "Động từ: üben (luyện tập). Bài tập về nhà là die Hausaufgabe; die Übung là bài tập trong sách hoặc việc luyện tập nói chung."
+
+  # ================= Bài 4: Học tiếp – was/wo, brauchen … zu =================
+  - key: de:item:b1u04-g-relativ-wo-was
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Relativsatz mit was und wo: alles, was …; nichts, was …; das Beste, was …; die Stadt, wo …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Sau alles, nichts, vieles, etwas và sau so sánh nhất dùng như danh từ (das Beste, das Einzige), đại từ quan hệ là was: Das ist alles, was ich weiß. Sau địa danh hoặc danh từ chỉ nơi chốn, bạn có thể dùng wo thay cho giới từ + đại từ quan hệ: die Stadt, wo ich studiere (= in der ich studiere). Động từ trong mệnh đề quan hệ vẫn đứng cuối, và có dấu phẩy trước was/wo."
+      examples:
+        - target: Das ist alles, was ich über den Kurs weiß.
+          translation:
+            vi: Đó là tất cả những gì tôi biết về khoá học.
+        - target: Der Kurs war das Beste, was ich dieses Jahr gemacht habe.
+          translation:
+            vi: Khoá học là điều tuyệt nhất tôi đã làm trong năm nay.
+        - target: Leipzig ist die Stadt, wo ich meine Ausbildung gemacht habe.
+          translation:
+            vi: Leipzig là thành phố nơi tôi đã học nghề.
+      confusion:
+        vi: "Không nói alles, das ich weiß hay nichts, das mich interessiert; sau alles và nichts dùng was. Sau etwas, cả was lẫn das đều gặp (etwas, was/das mir gefällt). Với danh từ chỉ người hay vật thông thường, vẫn dùng der/die/das: der Kurs, den ich besuche."
+
+  - key: de:item:b1u04-g-brauchen-zu
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "nicht/nur brauchen + zu + Infinitiv: Du brauchst nicht zu kommen. · Sie brauchen nur anzurufen."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "nicht brauchen + zu + nguyên thể nghĩa là \"không cần\" (giống nicht müssen); nur brauchen + zu nghĩa là \"chỉ cần\". zu đứng ngay trước nguyên thể ở cuối câu; với động từ tách, zu chen vào giữa: Sie brauchen nur anzurufen. Cũng dùng với kein và erst: Sie brauchen keine Angst zu haben."
+      examples:
+        - target: Sie brauchen kein Abitur zu haben.
+          translation:
+            vi: Anh/chị không cần có bằng Abitur.
+        - target: Du brauchst dich nur online anzumelden.
+          translation:
+            vi: Bạn chỉ cần đăng ký trên mạng.
+        - target: Für den Kurs brauchen Sie nichts mitzubringen.
+          translation:
+            vi: Anh/chị không cần mang theo gì cho khoá học.
+      confusion:
+        vi: "Khi nói, người Đức hay bỏ zu (Du brauchst nicht kommen); bạn hiểu được, nhưng khi viết nên giữ zu. brauchen + zu chỉ dùng với nicht, kein, nur, erst; để nói \"phải\" thì dùng müssen (Du musst kommen), không nói Du brauchst zu kommen."
+
+  - key: de:item:b1u04-weiterbildung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Weiterbildung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đào tạo nâng cao, bồi dưỡng chuyên môn
+      examples:
+        - target: Meine Firma bezahlt die Weiterbildung.
+          translation:
+            vi: Công ty tôi trả tiền cho khoá bồi dưỡng.
+        - target: Ich mache gerade eine Weiterbildung im Bereich Marketing.
+          translation:
+            vi: Tôi đang học một khoá nâng cao về marketing.
+      confusion:
+        vi: "weiter (tiếp) + die Bildung: học thêm trong nghề mình đang làm. Học để chuyển sang nghề khác là die Umschulung."
+
+  - key: de:item:b1u04-volkshochschule
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Volkshochschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trung tâm giáo dục cộng đồng (viết tắt VHS)
+      examples:
+        - target: An der Volkshochschule gibt es günstige Sprachkurse.
+          translation:
+            vi: Ở trung tâm giáo dục cộng đồng có các khoá ngoại ngữ giá rẻ.
+        - target: Ich mache einen Kochkurs an der Volkshochschule.
+          translation:
+            vi: Tôi đang học một khoá nấu ăn ở VHS.
+      confusion:
+        vi: "Viết tắt: die VHS. Dù có chữ Hochschule, đây không phải trường đại học: ai cũng có thể đăng ký, không cần Abitur."
+
+  - key: de:item:b1u04-teilnehmen-an
+    type: phrase
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: teilnehmen an (+ Dat), nimmt teil, nahm teil, hat teilgenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: tham gia (vào)
+      examples:
+        - target: Ich möchte an dem Kurs teilnehmen.
+          translation:
+            vi: Tôi muốn tham gia khoá học đó.
+        - target: Wie viele Personen nehmen an der Weiterbildung teil?
+          translation:
+            vi: Có bao nhiêu người tham gia khoá bồi dưỡng?
+      confusion:
+        vi: "an + Dativ: am Kurs / an der Weiterbildung teilnehmen. Động từ tách: ich nehme teil; trong câu phụ viết liền: …, dass ich teilnehme."
+
+  - key: de:item:b1u04-teilnahme
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Teilnahme (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tham gia
+      examples:
+        - target: Die Teilnahme ist kostenlos.
+          translation:
+            vi: Tham gia miễn phí.
+        - target: Nach der Teilnahme bekommen Sie eine Bescheinigung.
+          translation:
+            vi: Sau khi tham gia, ông/bà nhận được giấy xác nhận.
+      confusion:
+        vi: "Teilnahme an + Dativ: die Teilnahme am Kurs. Danh từ từ nehmen có dạng -nahme: teilnehmen → die Teilnahme, annehmen → die Annahme."
+
+  - key: de:item:b1u04-zertifikat
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Zertifikat, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng chỉ
+      examples:
+        - target: Am Ende des Kurses bekommen Sie ein Zertifikat.
+          translation:
+            vi: Cuối khoá học, ông/bà sẽ nhận chứng chỉ.
+        - target: Für die Stelle brauche ich ein Deutschzertifikat B1.
+          translation:
+            vi: Để nhận vị trí đó, tôi cần chứng chỉ tiếng Đức B1.
+      confusion:
+        vi: "Trọng âm ở âm tiết cuối: Zertifikát. Số nhiều: die Zertifikate."
+
+  - key: de:item:b1u04-berufsbegleitend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: berufsbegleitend
+      pos: tính từ
+    back:
+      meaning:
+        vi: (học) song song với công việc, vừa học vừa làm
+      examples:
+        - target: Sie studiert berufsbegleitend Informatik.
+          translation:
+            vi: Cô ấy vừa đi làm vừa học tin học.
+        - target: Der Lehrgang ist berufsbegleitend, also abends und am Wochenende.
+          translation:
+            vi: Khoá đào tạo dành cho người đi làm, tức là học buổi tối và cuối tuần.
+      confusion:
+        vi: "der Beruf + begleiten (đi kèm) với âm nối -s-: berufsbegleitend. Ngược lại là học toàn thời gian: in Vollzeit."
+
+  - key: de:item:b1u04-lehrgang
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lehrgang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoá đào tạo (có hệ thống, thường có thi cuối khoá)
+      examples:
+        - target: Der Lehrgang dauert sechs Monate.
+          translation:
+            vi: Khoá đào tạo kéo dài sáu tháng.
+        - target: Ich habe einen Lehrgang für Buchhaltung besucht.
+          translation:
+            vi: Tôi đã theo học một khoá đào tạo kế toán.
+      confusion:
+        vi: "Lehrgang trang trọng hơn der Kurs và thường dài hơn, hay dùng cho đào tạo nghề. Số nhiều: die Lehrgänge."
+
+  # Zusatzwortschatz bài 4 (7 lemma)
+  - key: de:item:b1u04-vorkenntnisse
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vorkenntnisse (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiến thức có sẵn (trước khi học)
+      examples:
+        - target: Für den Anfängerkurs brauchen Sie keine Vorkenntnisse.
+          translation:
+            vi: Với khoá cho người mới bắt đầu, ông/bà không cần biết gì trước.
+        - target: Haben Sie schon Vorkenntnisse in Excel?
+          translation:
+            vi: Anh/chị đã biết dùng Excel chưa?
+      confusion:
+        vi: "vor (trước) + die Kenntnis (hiểu biết), hầu như chỉ dùng số nhiều. Vorkenntnisse in + Dativ: Vorkenntnisse in Englisch."
+
+  - key: de:item:b1u04-beratung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Beratung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tư vấn
+      examples:
+        - target: Die Beratung ist kostenlos.
+          translation:
+            vi: Tư vấn miễn phí.
+        - target: Ich habe morgen einen Termin zur Beratung.
+          translation:
+            vi: Ngày mai tôi có hẹn để được tư vấn.
+      confusion:
+        vi: "Động từ: beraten (tư vấn cho ai), sich beraten lassen (đi nhờ tư vấn). Người tư vấn: der Berater / die Beraterin."
+
+  - key: de:item:b1u04-umschulung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Umschulung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đào tạo lại để chuyển nghề
+      examples:
+        - target: Nach seinem Unfall hat er eine Umschulung zum Bürokaufmann gemacht.
+          translation:
+            vi: Sau tai nạn, anh ấy học chuyển nghề thành nhân viên văn phòng.
+        - target: Das Jobcenter kann unter bestimmten Bedingungen eine Umschulung bezahlen.
+          translation:
+            vi: Trong một số điều kiện, Jobcenter có thể trả tiền cho khoá học chuyển nghề.
+      confusion:
+        vi: "Umschulung là học một nghề mới; Weiterbildung là học thêm trong nghề cũ. Chuyển sang nghề gì: eine Umschulung zur Erzieherin / zum Koch."
+
+  - key: de:item:b1u04-niveau
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Niveau, -s
+      pos: danh từ
+      ipa: /niˈvoː/
+    back:
+      meaning:
+        vi: trình độ, mức độ
+      examples:
+        - target: Auf welchem Niveau ist der Kurs?
+          translation:
+            vi: Khoá học ở trình độ nào?
+        - target: Für diesen Kurs brauchen Sie mindestens das Niveau A2.
+          translation:
+            vi: Để học khoá này, ông/bà cần ít nhất trình độ A2.
+      confusion:
+        vi: "Từ mượn tiếng Pháp: eau đọc như o dài, trọng âm ở cuối /niˈvoː/. Số nhiều: die Niveaus."
+
+  - key: de:item:b1u04-abendkurs
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Abendkurs, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lớp học buổi tối
+      examples:
+        - target: Tagsüber arbeite ich, deshalb besuche ich einen Abendkurs.
+          translation:
+            vi: Ban ngày tôi đi làm nên tôi học lớp buổi tối.
+        - target: Der Abendkurs findet zweimal pro Woche statt.
+          translation:
+            vi: Lớp buổi tối học hai lần mỗi tuần.
+      confusion:
+        vi: "der Abend + der Kurs. Tương tự: der Wochenendkurs, der Intensivkurs (khoá cấp tốc)."
+
+  - key: de:item:b1u04-kursleiter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kursleiter, - / die Kursleiterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: giáo viên phụ trách lớp, người hướng dẫn khoá học
+      examples:
+        - target: Unsere Kursleiterin erklärt alles sehr geduldig.
+          translation:
+            vi: Cô giáo lớp chúng tôi giải thích mọi thứ rất kiên nhẫn.
+        - target: Fragen Sie bitte den Kursleiter.
+          translation:
+            vi: Ông/bà hãy hỏi thầy phụ trách lớp.
+      confusion:
+        vi: "Ở các khoá học cho người lớn (như ở VHS) nói Kursleiter; ở trường phổ thông là Lehrer; ở đại học là Dozent hoặc Professor."
+
+  - key: de:item:b1u04-sich-weiterbilden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich weiterbilden
+      pos: động từ
+    back:
+      meaning:
+        vi: học nâng cao, bồi dưỡng thêm
+      examples:
+        - target: Ich möchte mich im Bereich IT weiterbilden.
+          translation:
+            vi: Tôi muốn học nâng cao về công nghệ thông tin.
+        - target: Wer sich regelmäßig weiterbildet, hat bessere Chancen im Beruf.
+          translation:
+            vi: Ai thường xuyên bồi dưỡng thêm thì có nhiều cơ hội hơn trong nghề.
+      confusion:
+        vi: "Phản thân và tách: ich bilde mich weiter; Perfekt: hat sich weitergebildet. Danh từ: die Weiterbildung."

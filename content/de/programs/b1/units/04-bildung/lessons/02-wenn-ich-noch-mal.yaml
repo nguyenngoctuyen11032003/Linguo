@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u04-wenn-ich-noch-mal
+order_index: 2
+level: b1
+title:
+  vi: Nếu tôi được học lại – câu điều kiện không thật (Wenn ich noch einmal studieren könnte, …)
+objectives:
+  - vi: Phân biệt điều kiện thật (Wenn ich Zeit habe, …) và điều kiện không thật (Wenn ich Zeit hätte, würde ich …).
+  - vi: Dùng Konjunktiv II của động từ khiếm khuyết – könnte, müsste, dürfte, sollte – để giả định và hỏi lịch sự.
+  - vi: Bàn về lựa chọn học đại học và nói điều mình sẽ làm nếu hoàn cảnh khác đi.
+estimated_minutes: 20
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b1u04-schule]
+items:
+  - item: de:item:b1u04-g-irreale-bedingung
+  - item: de:item:b1u04-g-konjunktiv-ii-modal
+  - item: de:item:b1u04-hochschule
+  - item: de:item:b1u04-semester
+  - item: de:item:b1u04-vorlesung
+  - item: de:item:b1u04-seminar
+  - item: de:item:b1u04-studiengang
+  - item: de:item:b1u04-stipendium
+  - item: de:item:b1u04-sich-einschreiben
+  - item: de:item:b1u04-hoersaal
+  - item: de:item:b1u04-mensa
+  - item: de:item:b1u04-klausur
+  - item: de:item:b1u04-hausarbeit
+  - item: de:item:b1u04-studienplatz
+  - item: de:item:b1u04-zulassung
+  - item: de:item:b1u04-wohnheim
+  - item: de:item:b1u04-professor
+  - item: de:item:b1u04-studiengebuehr
+  - item: de:item:a2u04-g-sollte-koennte
+    role: reuse
+  - item: de:item:a2u04-g-wenn-konditional
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được về việc chọn học đại học và về những điều bạn sẽ làm nếu hoàn cảnh khác đi, ví dụ: \"Wenn ich noch einmal studieren könnte, würde ich Informatik wählen.\""
+  - type: explain
+    text:
+      vi: "Ở A2 bạn đã học wenn cho điều kiện thật, có thể xảy ra: Wenn ich Zeit habe, komme ich. Khi điều kiện trái với thực tế, cả hai vế đều dùng Konjunktiv II: Wenn ich Zeit hätte, würde ich kommen (nhưng thực tế tôi không có thời gian). Tiếng Việt dùng \"nếu\" cho cả hai, nên trước khi nói bạn hãy tự hỏi: điều này có thật không?"
+  - type: explain
+    text:
+      vi: "Vế wenn là câu phụ, động từ chia đứng cuối: wenn ich Geld hätte. Khi vế wenn đứng trước, vế chính bắt đầu ngay bằng động từ: Wenn ich Geld hätte, würde ich reisen. Khi vế chính đứng trước, trật tự bình thường: Ich würde reisen, wenn ich Geld hätte."
+  - type: explain
+    text:
+      vi: "Bạn cũng có thể bỏ wenn và đưa động từ Konjunktiv II lên đầu vế điều kiện: Hätte ich Geld, würde ich reisen. Cách này hay gặp trong văn viết, nghĩa không đổi."
+  - type: explain
+    text:
+      vi: "Động từ khiếm khuyết có Konjunktiv II riêng: können → könnte, müssen → müsste, dürfen → dürfte (có umlaut); sollen → sollte, wollen → wollte (giống Präteritum). Bạn dùng chúng trực tiếp, nguyên thể ở cuối câu: Ich könnte im Ausland studieren – không nói Ich würde können."
+  - type: explain
+    text:
+      vi: "könnte nói khả năng giả định hoặc gợi ý (Du könntest dich um ein Stipendium bewerben); müsste là điều phải làm trong tình huống giả định; du solltest là lời khuyên. Könnten Sie …? và Dürfte ich …? là cách hỏi rất lịch sự, ví dụ khi nói với giáo sư."
+  - type: deep_explain
+    text:
+      vi: "Với sein, haben và động từ khiếm khuyết, người Đức gần như luôn dùng dạng riêng (wäre, hätte, könnte) chứ không dùng würde: Wenn ich reich wäre (Wenn ich reich sein würde hiểu được nhưng không chuẩn trong văn viết). Với động từ thường, văn nói hay dùng würde ở cả hai vế: Wenn er mehr lernen würde, würde er die Klausur bestehen. Vế chính có thể mở đầu bằng dann: Wenn ich Zeit hätte, dann würde ich mitkommen. Về đại học ở Đức: Universität thiên về nghiên cứu, còn Hochschule für angewandte Wissenschaften (trước đây gọi là Fachhochschule) thiên về thực hành; chương trình Bachelor thường kéo dài 6–8 học kỳ. Một số ngành như y khoa có giới hạn số chỗ (Numerus clausus), nên cần điểm Abitur rất tốt; sau khi có Zulassung, bạn phải sich einschreiben đúng hạn. Học phí và thủ tục khác nhau theo bang và có thể thay đổi, nên luôn kiểm tra trên trang của trường."
+  - type: example
+    target: Wenn ich noch einmal studieren könnte, würde ich Medizin wählen.
+    target_lang: de
+    translation:
+      vi: Nếu được học đại học lại, tôi sẽ chọn ngành y.
+    note:
+      vi: "könnte (Konjunktiv II của können) đứng cuối vế wenn; vế chính bắt đầu ngay bằng würde, nguyên thể wählen ở cuối."
+  - type: example
+    target: Wenn ich die Zulassung bekomme, ziehe ich nach Leipzig. – Wenn ich die Zulassung hätte, würde ich nach Leipzig ziehen.
+    target_lang: de
+    translation:
+      vi: Nếu tôi được nhận vào học, tôi sẽ chuyển đến Leipzig. – Nếu tôi đã được nhận (nhưng thực tế chưa), tôi sẽ chuyển đến Leipzig.
+    note:
+      vi: "Câu đầu: điều kiện thật, có thể xảy ra (hiện tại). Câu sau: Konjunktiv II – thực tế tôi chưa có giấy báo nhận."
+  - type: example
+    target: Hätte ich ein Stipendium, müsste ich nicht nebenbei arbeiten.
+    target_lang: de
+    translation:
+      vi: Nếu có học bổng, tôi sẽ không phải vừa học vừa đi làm.
+    note:
+      vi: "Bỏ wenn, động từ hätte lên đầu vế điều kiện. müsste là Konjunktiv II của müssen."
+  - type: example
+    target: Entschuldigung, könnten Sie mir sagen, wo Hörsaal 2 ist? – Natürlich, im ersten Stock.
+    target_lang: de
+    translation:
+      vi: Xin lỗi, anh/chị có thể cho tôi biết giảng đường số 2 ở đâu không ạ? – Tất nhiên, ở tầng hai.
+    note:
+      vi: "Hỏi người lạ nên dùng Sie; könnten Sie … lịch sự hơn können Sie … Ở Đức, im ersten Stock là tầng ngay trên tầng trệt, tức tầng hai theo cách đếm Việt Nam."
+  - type: example
+    target: Du solltest dich bald einschreiben, sonst verlierst du deinen Studienplatz.
+    target_lang: de
+    translation:
+      vi: Bạn nên sớm làm thủ tục nhập học, kẻo mất suất học.
+    note:
+      vi: "Khuyên bạn bè (du): du solltest + nguyên thể ở cuối. sich einschreiben là động từ phản thân: dich."
+  - type: common_mistake
+    wrong: Wenn ich reich sein würde, würde ich eine Weltreise machen.
+    right: Wenn ich reich wäre, würde ich eine Weltreise machen.
+    target_lang: de
+    note:
+      vi: "Với sein và haben, dùng wäre/hätte thay vì würde … sein/haben. Câu sai vẫn hiểu được, nhưng không chuẩn khi viết."
+  - type: common_mistake
+    wrong: Wenn ich mehr Zeit hätte, ich würde mehr lesen.
+    right: Wenn ich mehr Zeit hätte, würde ich mehr lesen.
+    target_lang: de
+    note:
+      vi: "Vế wenn chiếm vị trí 1, nên động từ của vế chính (würde) đứng ngay sau dấu phẩy, rồi mới đến ich."
+  - type: common_mistake
+    wrong: Ich würde können im Ausland studieren.
+    right: Ich könnte im Ausland studieren.
+    target_lang: de
+    note:
+      vi: "Động từ khiếm khuyết có dạng Konjunktiv II riêng: können → könnte. Không ghép với würde."
+  - type: common_mistake
+    wrong: Wenn ich ein Stipendium habe, würde ich in Deutschland studieren.
+    right: Wenn ich ein Stipendium hätte, würde ich in Deutschland studieren.
+    target_lang: de
+    note:
+      vi: "Điều kiện không thật thì cả hai vế đều dùng Konjunktiv II: hätte … würde."
+  - type: summary
+    points:
+      - vi: "Điều kiện thật: Wenn ich Zeit habe, komme ich. Không thật: Wenn ich Zeit hätte, würde ich kommen."
+      - vi: "Vế wenn: động từ cuối. Vế wenn đứng trước → vế chính bắt đầu bằng động từ (würde, wäre, könnte…)."
+      - vi: "Bỏ wenn: Hätte ich Zeit, würde ich kommen."
+      - vi: "Modal: könnte, müsste, dürfte (umlaut); sollte, wollte (giống Präteritum); không dùng würde können."
+      - vi: "Lịch sự: Könnten Sie …? Dürfte ich …? Khuyên: Du solltest …"
+      - vi: "Từ vựng: die Hochschule, das Semester, die Vorlesung, das Seminar, der Studiengang, das Stipendium, sich einschreiben, der Hörsaal."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u04l2-mcq-irreal
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-irreale-bedingung
+    prompt:
+      stem: "Thực tế: tôi không có học bổng. Câu nào nói đúng điều giả định này?"
+      stem_lang: vi
+      options:
+        - { id: i4a, text: "Wenn ich ein Stipendium hätte, würde ich in Deutschland studieren.", lang: de }
+        - { id: i7b, text: "Wenn ich ein Stipendium bekomme, studiere ich in Deutschland.", lang: de }
+        - { id: i2c, text: "Als ich ein Stipendium hatte, studierte ich in Deutschland.", lang: de }
+        - { id: i9d, text: "Weil ich ein Stipendium habe, studiere ich in Deutschland.", lang: de }
+    answer:
+      correct_option_id: i4a
+    explanation:
+      vi: "Điều kiện trái với thực tế cần Konjunktiv II ở cả hai vế: hätte … würde. Wenn ich … bekomme là điều kiện thật (có thể xảy ra); câu với als kể chuyện đã qua; câu với weil nói rằng tôi có học bổng – đều không đúng với thực tế đã cho."
+    display_answer: Wenn ich ein Stipendium hätte, würde ich in Deutschland studieren.
+
+  - key: de:exercise:b1u04l2-mcq-koennten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-konjunktiv-ii-modal
+    prompt:
+      stem: "Chọn dạng Konjunktiv II lịch sự của können: ___ Sie mir sagen, wann die Vorlesung beginnt?"
+      stem_lang: vi
+      options:
+        - { id: c3x, text: "Könnten", lang: de }
+        - { id: c6y, text: "Konnten", lang: de }
+        - { id: c1z, text: "Könntest", lang: de }
+        - { id: c8w, text: "Kannst", lang: de }
+    answer:
+      correct_option_id: c3x
+    explanation:
+      vi: "Konjunktiv II của können có umlaut: Sie könnten → Könnten Sie …? (hỏi lịch sự). Konnten là Präteritum (quá khứ); Könntest và Kannst là ngôi du, không đi với Sie."
+    display_answer: Könnten
+
+  - key: de:exercise:b1u04l2-listen-stipendium
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u04-stipendium
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wenn ich ein Stipendium hätte, müsste ich nicht neben dem Studium arbeiten.
+      options:
+        - { id: l2a, text: "Nếu có học bổng, tôi sẽ không phải vừa học vừa đi làm.", lang: vi }
+        - { id: l5b, text: "Vì có học bổng nên tôi không phải vừa học vừa đi làm.", lang: vi }
+        - { id: l8c, text: "Nếu có học bổng, tôi vẫn phải vừa học vừa đi làm.", lang: vi }
+        - { id: l3d, text: "Hồi có học bổng, tôi không phải vừa học vừa đi làm.", lang: vi }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "hätte và müsste là Konjunktiv II: đây là giả định (thực tế người nói không có học bổng), không phải lý do (weil) hay chuyện đã qua. müsste … nicht = sẽ không phải."
+    display_answer: Nếu có học bổng, tôi sẽ không phải vừa học vừa đi làm.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u04l2-fill-haette-wuerde
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-irreale-bedingung
+    prompt:
+      template: "Wenn ich mehr Geld {{b1}} (haben), {{b2}} (werden) ich in Deutschland studieren."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [hätte]
+        b2: [würde]
+    known_wrong:
+      - answer: hatte
+        feedback_vi: hatte là Präteritum. Điều kiện không thật cần Konjunktiv II – hätte.
+        error_tag: konjunktiv_form
+      - answer: habe
+        feedback_vi: Câu này là giả định (thực tế không có tiền) nên cần hätte, không phải habe.
+        error_tag: konjunktiv_form
+      - answer: wurde
+        feedback_vi: wurde là Präteritum. Konjunktiv II của werden có umlaut – würde.
+        error_tag: konjunktiv_form
+      - answer: werde
+        feedback_vi: Vế chính của câu điều kiện không thật cũng cần Konjunktiv II – würde.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Cả hai vế đều dùng Konjunktiv II: haben → hätte (cuối vế wenn), werden → würde. Vế wenn đứng trước nên würde đứng ngay sau dấu phẩy, nguyên thể studieren ở cuối câu."
+    display_answer: "Wenn ich mehr Geld hätte, würde ich in Deutschland studieren."
+
+  - key: de:exercise:b1u04l2-fill-koennte-muesste
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-konjunktiv-ii-modal
+    prompt:
+      template: "Wenn die Vorlesung nicht so früh wäre, {{b1}} (können) ich länger schlafen. Dann {{b2}} (müssen) ich nicht schon um sechs aufstehen."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [könnte]
+        b2: [müsste]
+    known_wrong:
+      - answer: konnte
+        feedback_vi: konnte là Präteritum. Giả định cần Konjunktiv II có umlaut – könnte.
+        error_tag: konjunktiv_form
+      - answer: kann
+        feedback_vi: Đây là giả định (thực tế vẫn phải dậy sớm) nên cần könnte.
+        error_tag: konjunktiv_form
+      - answer: musste
+        feedback_vi: musste là Präteritum. Konjunktiv II của müssen có umlaut – müsste.
+        error_tag: konjunktiv_form
+      - answer: muss
+        feedback_vi: Đây là giả định nên cần Konjunktiv II – müsste.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "können và müssen có Konjunktiv II với umlaut: könnte, müsste. Chúng dùng trực tiếp, không cần würde; nguyên thể schlafen, aufstehen đứng cuối câu."
+    display_answer: "Wenn die Vorlesung nicht so früh wäre, könnte ich länger schlafen. Dann müsste ich nicht schon um sechs aufstehen."
+
+  - key: de:exercise:b1u04l2-tr-mehr-zeit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-irreale-bedingung
+    prompt:
+      source_text: "Nếu tôi có nhiều thời gian hơn, tôi sẽ học tiếng Tây Ban Nha. (thực tế tôi không có thời gian)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wenn ich mehr Zeit hätte, würde ich Spanisch lernen.
+        - Wenn ich mehr Zeit hätte, dann würde ich Spanisch lernen.
+        - Ich würde Spanisch lernen, wenn ich mehr Zeit hätte.
+        - Hätte ich mehr Zeit, würde ich Spanisch lernen.
+        - Hätte ich mehr Zeit, dann würde ich Spanisch lernen.
+    known_wrong:
+      - answer: Wenn ich mehr Zeit hätte, ich würde Spanisch lernen.
+        feedback_vi: Vế wenn chiếm vị trí 1 nên würde đứng ngay sau dấu phẩy – …, würde ich Spanisch lernen.
+        error_tag: verb_position
+      - answer: Wenn ich mehr Zeit habe, lerne ich Spanisch.
+        feedback_vi: Câu này là điều kiện thật. Thực tế bạn không có thời gian nên cần Konjunktiv II – hätte … würde.
+        error_tag: konjunktiv_form
+      - answer: Wenn ich mehr Zeit hatte, würde ich Spanisch lernen.
+        feedback_vi: hatte là Präteritum. Vế wenn cũng cần Konjunktiv II – hätte.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Điều kiện trái với thực tế: Wenn + … hätte (động từ cuối), würde + … lernen ở vế chính. Có thể đặt vế chính trước hoặc bỏ wenn: Hätte ich mehr Zeit, …"
+    display_answer: Wenn ich mehr Zeit hätte, würde ich Spanisch lernen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u04l2-wb-haette-ich
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u04-g-irreale-bedingung
+    prompt:
+      instruction: "Sắp xếp thành câu điều kiện không có wenn: \"Nếu có học bổng, tôi sẽ không phải đi làm.\""
+      tokens:
+        - { id: h-arbeiten, text: arbeiten }
+        - { id: h-ich1, text: ich }
+        - { id: h-muesste, text: müsste }
+        - { id: h-stip, text: Stipendium }
+        - { id: h-komma, text: "," }
+        - { id: h-nicht, text: nicht }
+        - { id: h-haette, text: Hätte }
+        - { id: h-ein, text: ein }
+        - { id: h-ich2, text: ich }
+    answer:
+      orders:
+        - [h-haette, h-ich1, h-ein, h-stip, h-komma, h-muesste, h-ich2, h-nicht, h-arbeiten]
+        - [h-haette, h-ich2, h-ein, h-stip, h-komma, h-muesste, h-ich1, h-nicht, h-arbeiten]
+    explanation:
+      vi: "Bỏ wenn thì động từ Konjunktiv II Hätte đứng đầu vế điều kiện. Vế chính bắt đầu ngay bằng müsste (Konjunktiv II của müssen), rồi chủ ngữ ich, nicht và nguyên thể arbeiten ở cuối."
+    display_answer: Hätte ich ein Stipendium, müsste ich nicht arbeiten.
+
+  - key: de:exercise:b1u04l2-mcq-duerfte
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-hausarbeit
+    prompt:
+      stem: "Bạn muốn hỏi giáo sư thật lịch sự xem bạn có được nộp bài tiểu luận muộn một tuần không. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: d2k, text: "Dürfte ich die Hausarbeit eine Woche später abgeben?", lang: de }
+        - { id: d5m, text: "Darfst du die Hausarbeit eine Woche später abgeben?", lang: de }
+        - { id: d8p, text: "Ich gebe die Hausarbeit eine Woche später ab.", lang: de }
+        - { id: d1r, text: "Musste ich die Hausarbeit eine Woche später abgeben?", lang: de }
+    answer:
+      correct_option_id: d2k
+    explanation:
+      vi: "Dürfte ich …? (Konjunktiv II của dürfen) là cách xin phép rất lịch sự. Darfst du …? hỏi người khác bằng du; câu thứ ba là thông báo chứ không phải xin phép; Musste là Präteritum của müssen (đã phải)."
+    display_answer: Dürfte ich die Hausarbeit eine Woche später abgeben?
+
+  - key: de:exercise:b1u04l2-tr-einschreiben
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u04-g-sollte-koennte
+    prompt:
+      source_text: "Bạn nên sớm làm thủ tục nhập học. (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Du solltest dich bald einschreiben.
+        - Du solltest dich früh einschreiben.
+        - Du solltest dich rechtzeitig einschreiben.
+        - Du solltest dich möglichst bald einschreiben.
+        - Du solltest dich möglichst früh einschreiben.
+    known_wrong:
+      - answer: Du solltest bald einschreiben.
+        feedback_vi: sich einschreiben là động từ phản thân – Du solltest dich bald einschreiben.
+        error_tag: reflexive_missing
+      - answer: Sie sollten sich bald einschreiben.
+        feedback_vi: Đề bài là nói với bạn thân nên dùng du – Du solltest dich …
+        error_tag: register_du_sie
+      - answer: Du solltest dich bald schreiben ein.
+        feedback_vi: Sau modal, động từ tách ở nguyên thể viết liền và đứng cuối – einschreiben.
+        error_tag: separable_prefix
+    explanation:
+      vi: "Lời khuyên: du solltest + nguyên thể ở cuối câu. sich einschreiben là động từ phản thân, với du dùng dich; sau modal, nguyên thể einschreiben viết liền."
+    display_answer: Du solltest dich bald einschreiben.
+
+  - key: de:exercise:b1u04l2-tr-studiengang
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u04-studiengang
+    prompt:
+      source_text: Wenn ich noch einmal studieren könnte, würde ich einen anderen Studiengang wählen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu được học đại học lại, tôi sẽ chọn ngành khác.
+        - Nếu được học đại học lại, tôi sẽ chọn một ngành khác.
+        - Nếu tôi được học đại học lại, tôi sẽ chọn ngành khác.
+        - Nếu tôi được học đại học lại, tôi sẽ chọn một ngành khác.
+        - Nếu có thể học đại học lại, tôi sẽ chọn ngành khác.
+        - Nếu tôi có thể học đại học lại, tôi sẽ chọn một ngành khác.
+        - Nếu được học lại, tôi sẽ chọn ngành khác.
+        - Nếu được học lại, tôi sẽ chọn một ngành học khác.
+        - Nếu được học đại học lại, tôi sẽ chọn một ngành học khác.
+        - Giá mà được học đại học lại, tôi sẽ chọn ngành khác.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi tôi học đại học lại, tôi đã chọn ngành khác.
+        feedback_vi: "könnte và würde là Konjunktiv II: đây là giả định (\"nếu… thì sẽ\"), không phải chuyện đã xảy ra."
+        error_tag: meaning
+    explanation:
+      vi: "Wenn … könnte, würde … = nếu (có thể) …, thì sẽ … – giả định trái với thực tế. noch einmal = lại, thêm một lần; der Studiengang = ngành học, chương trình học."
+    display_answer: Nếu được học đại học lại, tôi sẽ chọn ngành khác.

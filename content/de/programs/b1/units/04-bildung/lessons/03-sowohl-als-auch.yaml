@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u04-sowohl-als-auch
+order_index: 3
+level: b1
+title:
+  vi: Vừa… vừa…, càng… càng… (Sowohl … als auch; je … desto)
+objectives:
+  - vi: Nối hai ý bằng liên từ hai vế – sowohl … als auch, weder … noch, nicht nur … sondern auch, entweder … oder, zwar … aber.
+  - vi: "Nói \"càng … càng …\" bằng je … desto/umso với đúng trật tự từ ở cả hai vế."
+  - vi: Nói về cách học ngoại ngữ, so sánh các phương pháp và liên kết ý rõ ràng.
+estimated_minutes: 19
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b1u04-wenn-ich-noch-mal]
+items:
+  - item: de:item:b1u04-g-zweiteilige-konnektoren
+  - item: de:item:b1u04-g-je-desto
+  - item: de:item:b1u04-methode
+  - item: de:item:b1u04-motivation
+  - item: de:item:b1u04-sich-konzentrieren
+  - item: de:item:b1u04-gedaechtnis
+  - item: de:item:b1u04-auswendig
+  - item: de:item:b1u04-fortschritt
+  - item: de:item:b1u04-grammatik
+  - item: de:item:b1u04-wortschatz
+  - item: de:item:b1u04-fremdsprache
+  - item: de:item:b1u04-vokabel
+  - item: de:item:b1u04-muttersprachler
+  - item: de:item:b1u04-sich-merken
+  - item: de:item:b1u04-fliessend
+  - item: de:item:b1u04-karteikarte
+  - item: de:item:b1u04-verbessern
+  - item: de:item:b1u04-uebung
+  - item: de:item:a1u07-g-komparativ
+    role: reuse
+  - item: de:item:a2u07-g-sondern
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được về cách mình học ngoại ngữ và nối ý mạch lạc, ví dụ: \"Ich lerne sowohl mit Karteikarten als auch mit einer App. Je mehr ich übe, desto besser spreche ich.\""
+  - type: explain
+    text:
+      vi: "sowohl A als auch B = cả A lẫn B; nicht nur A, sondern auch B = không chỉ A mà còn B (nhấn mạnh B hơn). Bạn đã gặp sondern ở A2 (nicht …, sondern …); ở đây sondern đi cùng auch. Đừng dùng aber thay cho sondern sau nicht nur."
+  - type: explain
+    text:
+      vi: "weder A noch B = không A cũng không B: Ich spreche weder Französisch noch Spanisch. weder … noch đã mang nghĩa phủ định, nên không thêm nicht hay kein. Tiếng Việt có thể nói \"không … cũng không …\", nhưng tiếng Đức chỉ có một lần phủ định."
+  - type: explain
+    text:
+      vi: "entweder A oder B = hoặc A hoặc B (chỉ chọn một). zwar … aber = tuy … nhưng: Die Methode ist zwar langsam, aber sie funktioniert. Trong vế đầu, zwar thường đứng sau động từ; aber và oder đứng đầu vế sau mà không làm đổi trật tự từ."
+  - type: explain
+    text:
+      vi: "je … desto (hoặc umso) = càng … càng. Vế je là câu phụ: je + so sánh hơn, động từ ở cuối. Vế sau: desto + so sánh hơn, rồi động từ, rồi chủ ngữ – Je mehr ich lese, desto größer wird mein Wortschatz."
+  - type: explain
+    text:
+      vi: "Nhớ lại dạng so sánh hơn (A1): thêm -er (schnell → schneller), nhiều tính từ ngắn có umlaut (groß → größer, oft → öfter), và vài dạng bất quy tắc: viel → mehr, gut → besser, gern → lieber."
+  - type: deep_explain
+    text:
+      vi: "Khi sowohl … als auch nối hai chủ ngữ, động từ thường chia số nhiều: Sowohl mein Bruder als auch meine Schwester lernen Deutsch. Với weder … noch, nếu cả hai chủ ngữ đều số ít, động từ thường chia số ít (Weder Anna noch Paul kommt heute), dù số nhiều cũng gặp. entweder có thể đứng ở vị trí 0 (Entweder ich lerne jetzt, oder …) hoặc vị trí 1 (Entweder lerne ich jetzt, oder …); cả hai đều đúng. zwar cũng có thể đứng đầu câu: Zwar ist die Methode langsam, aber sie funktioniert. Về cách học: lặp lại theo khoảng cách tăng dần (hôm nay, ngày mai, tuần sau) giúp Gedächtnis giữ từ lâu hơn học dồn một lần; học từ trong câu cũng dễ nhớ hơn học từ đơn lẻ auswendig."
+  - type: example
+    target: Ich lerne sowohl mit Karteikarten als auch mit einer App.
+    target_lang: de
+    translation:
+      vi: Tôi học cả bằng thẻ lẫn bằng ứng dụng.
+    note:
+      vi: "sowohl … als auch nối hai cụm cùng loại (mit Karteikarten / mit einer App); câu không đổi trật tự."
+  - type: example
+    target: Ich habe weder Zeit noch Lust, heute Vokabeln zu lernen.
+    target_lang: de
+    translation:
+      vi: Hôm nay tôi không có thời gian mà cũng chẳng có hứng học từ vựng.
+    note:
+      vi: "weder … noch đã là phủ định: không cần thêm keine trước Zeit."
+  - type: example
+    target: Entweder lernst du jeden Tag ein bisschen, oder du vergisst alles wieder.
+    target_lang: de
+    translation:
+      vi: Hoặc là bạn học mỗi ngày một chút, hoặc là bạn sẽ quên hết.
+    note:
+      vi: "entweder đứng ở vị trí 1 nên động từ lernst theo ngay sau; oder đứng ở vị trí 0, vế sau giữ trật tự bình thường (du vergisst)."
+  - type: example
+    target: Beim Lernen ist nicht nur die Grammatik wichtig, sondern auch der Wortschatz.
+    target_lang: de
+    translation:
+      vi: Khi học, không chỉ ngữ pháp quan trọng mà từ vựng cũng vậy.
+    note:
+      vi: "nicht nur …, sondern auch …: không dùng aber ở đây. Có dấu phẩy trước sondern."
+  - type: example
+    target: Je öfter du mit Muttersprachlern sprichst, desto besser wird dein Deutsch.
+    target_lang: de
+    translation:
+      vi: Bạn càng nói chuyện với người bản ngữ thường xuyên thì tiếng Đức của bạn càng tốt.
+    note:
+      vi: "Vế je: động từ sprichst ở cuối. Vế desto: desto besser + động từ wird + chủ ngữ dein Deutsch. oft → öfter, gut → besser."
+  - type: common_mistake
+    wrong: Ich habe weder Zeit noch kein Geld.
+    right: Ich habe weder Zeit noch Geld.
+    target_lang: de
+    note:
+      vi: "weder … noch đã là phủ định; thêm kein hay nicht thành phủ định kép, sai trong tiếng Đức."
+  - type: common_mistake
+    wrong: Je mehr ich übe, desto ich spreche besser.
+    right: Je mehr ich übe, desto besser spreche ich.
+    target_lang: de
+    note:
+      vi: "So sánh hơn phải đứng ngay sau desto, rồi đến động từ, rồi chủ ngữ."
+  - type: common_mistake
+    wrong: Je ich mehr übe, desto besser spreche ich.
+    right: Je mehr ich übe, desto besser spreche ich.
+    target_lang: de
+    note:
+      vi: "je và so sánh hơn đi liền nhau (je mehr), chủ ngữ đứng sau; động từ của vế je ở cuối."
+  - type: common_mistake
+    wrong: Er lernt nicht nur Vokabeln, aber auch Grammatik.
+    right: Er lernt nicht nur Vokabeln, sondern auch Grammatik.
+    target_lang: de
+    note:
+      vi: "Cặp cố định là nicht nur … sondern auch; aber không đi với nicht nur."
+  - type: summary
+    points:
+      - vi: "sowohl … als auch = cả … lẫn; nicht nur … sondern auch = không chỉ … mà còn."
+      - vi: "weder … noch = không … cũng không (không thêm nicht/kein)."
+      - vi: "entweder … oder = hoặc … hoặc; zwar … aber = tuy … nhưng."
+      - vi: "je + so sánh hơn … (động từ cuối), desto/umso + so sánh hơn + động từ + chủ ngữ."
+      - vi: "So sánh hơn: mehr, besser, lieber, öfter, größer, schneller."
+      - vi: "Từ vựng: die Methode, die Motivation, sich konzentrieren, das Gedächtnis, auswendig, der Fortschritt, die Grammatik, der Wortschatz, die Fremdsprache."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u04l3-mcq-weder-noch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-zweiteilige-konnektoren
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi không có thời gian mà cũng không có tiền cho một khoá học.\""
+      stem_lang: vi
+      options:
+        - { id: n3a, text: "Ich habe weder Zeit noch Geld für einen Kurs.", lang: de }
+        - { id: n7b, text: "Ich habe weder Zeit noch kein Geld für einen Kurs.", lang: de }
+        - { id: n1c, text: "Ich habe nicht weder Zeit noch Geld für einen Kurs.", lang: de }
+        - { id: n5d, text: "Ich habe weder Zeit oder Geld für einen Kurs.", lang: de }
+    answer:
+      correct_option_id: n3a
+    explanation:
+      vi: "weder … noch đã mang nghĩa phủ định cho cả hai vế, nên không thêm kein hay nicht. Cặp đúng là weder … noch, không phải weder … oder."
+    display_answer: Ich habe weder Zeit noch Geld für einen Kurs.
+
+  - key: de:exercise:b1u04l3-mcq-sowohl
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-fremdsprache
+    prompt:
+      stem: "Lan nói được cả hai ngoại ngữ. Chọn cặp liên từ đúng: Lan spricht ___ Englisch ___ Französisch."
+      stem_lang: vi
+      options:
+        - { id: p2a, text: "sowohl … als auch", lang: de }
+        - { id: p6b, text: "weder … noch", lang: de }
+        - { id: p9c, text: "entweder … oder", lang: de }
+        - { id: p4d, text: "zwar … aber", lang: de }
+    answer:
+      correct_option_id: p2a
+    explanation:
+      vi: "Lan nói được cả hai thứ tiếng: sowohl … als auch = cả … lẫn. weder … noch nghĩa là không nói được thứ nào; entweder … oder chỉ một trong hai; zwar … aber dùng để nối hai ý trái ngược, không nối hai danh từ như thế này."
+    display_answer: sowohl … als auch
+
+  - key: de:exercise:b1u04l3-mcq-je-desto
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u04-g-je-desto
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi càng luyện tập nhiều thì nói càng giỏi.\""
+      stem_lang: vi
+      options:
+        - { id: j1x, text: "Je mehr ich übe, desto besser spreche ich.", lang: de }
+        - { id: j4y, text: "Je mehr ich übe, desto ich spreche besser.", lang: de }
+        - { id: j7z, text: "Je mehr übe ich, desto besser spreche ich.", lang: de }
+        - { id: j9w, text: "Je ich mehr übe, desto besser ich spreche.", lang: de }
+    answer:
+      correct_option_id: j1x
+    explanation:
+      vi: "Vế je: je mehr + chủ ngữ + động từ ở cuối (ich übe). Vế desto: desto besser + động từ spreche + chủ ngữ ich. Các câu còn lại đặt sai vị trí động từ hoặc tách je khỏi so sánh hơn."
+    display_answer: Je mehr ich übe, desto besser spreche ich.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u04l3-fill-frueher-leichter
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u07-g-komparativ
+    prompt:
+      template: "Je {{b1}} (früh) du mit einer Fremdsprache anfängst, desto {{b2}} (leicht) wird es."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [früher]
+        b2: [leichter]
+    known_wrong:
+      - answer: früh
+        feedback_vi: Sau je cần dạng so sánh hơn – früher.
+        error_tag: comparative_form
+      - answer: leicht
+        feedback_vi: Sau desto cần dạng so sánh hơn – leichter.
+        error_tag: comparative_form
+    explanation:
+      vi: "je … desto luôn đi với so sánh hơn: früh → früher, leicht → leichter. Vế je có động từ anfängst ở cuối; vế desto có động từ wird ngay sau so sánh hơn."
+    display_answer: "Je früher du mit einer Fremdsprache anfängst, desto leichter wird es."
+
+  - key: de:exercise:b1u04l3-fill-sondern-weder
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-zweiteilige-konnektoren
+    prompt:
+      template: "Paul lernt nicht nur Vokabeln, {{b1}} auch Grammatik. Ich dagegen habe {{b2}} Zeit noch Motivation."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [sondern]
+        b2: [weder]
+    known_wrong:
+      - answer: aber
+        feedback_vi: Sau nicht nur dùng sondern auch, không dùng aber.
+        error_tag: connector
+      - answer: nicht
+        feedback_vi: noch đi thành cặp với weder – weder Zeit noch Motivation.
+        error_tag: connector
+      - answer: keine
+        feedback_vi: noch đi thành cặp với weder; weder … noch đã là phủ định, không cần keine.
+        error_tag: connector
+    explanation:
+      vi: "Cặp cố định: nicht nur … sondern auch (không chỉ … mà còn) và weder … noch (không … cũng không). Vì noch đã có sẵn trong câu, ô trống thứ hai chỉ có thể là weder."
+    display_answer: "Paul lernt nicht nur Vokabeln, sondern auch Grammatik. Ich dagegen habe weder Zeit noch Motivation."
+
+  - key: de:exercise:b1u04l3-tr-nicht-nur
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u07-g-sondern
+    prompt:
+      source_text: "Tôi không chỉ học ngữ pháp mà còn học từ vựng."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich lerne nicht nur Grammatik, sondern auch Vokabeln.
+        - Ich lerne nicht nur Grammatik, sondern auch Wortschatz.
+        - Ich lerne nicht nur die Grammatik, sondern auch die Vokabeln.
+        - Ich lerne nicht nur Grammatik, sondern ich lerne auch Vokabeln.
+        - Ich lerne nicht nur Grammatik, sondern auch neue Wörter.
+        - Ich lerne nicht nur Grammatik, sondern auch Wörter.
+    known_wrong:
+      - answer: Ich lerne nicht nur Grammatik, aber auch Vokabeln.
+        feedback_vi: Cặp cố định là nicht nur … sondern auch, không dùng aber.
+        error_tag: connector
+      - answer: Ich lerne nicht nur Grammatik, sondern Vokabeln.
+        feedback_vi: Thiếu auch – nicht nur …, sondern auch … (không chỉ … mà còn).
+        error_tag: connector
+    explanation:
+      vi: "không chỉ … mà còn = nicht nur …, sondern auch …; có dấu phẩy trước sondern. Từ vựng cần học thường nói là Vokabeln."
+    display_answer: Ich lerne nicht nur Grammatik, sondern auch Vokabeln.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u04l3-wb-je-mehr-lese
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u04-g-je-desto
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi càng đọc nhiều thì vốn từ của tôi càng lớn.\""
+      tokens:
+        - { id: r-wird, text: wird }
+        - { id: r-ich, text: ich }
+        - { id: r-wortschatz, text: Wortschatz }
+        - { id: r-je, text: Je }
+        - { id: r-groesser, text: größer }
+        - { id: r-komma, text: "," }
+        - { id: r-lese, text: lese }
+        - { id: r-mein, text: mein }
+        - { id: r-desto, text: desto }
+        - { id: r-mehr, text: mehr }
+    answer:
+      orders:
+        - [r-je, r-mehr, r-ich, r-lese, r-komma, r-desto, r-groesser, r-wird, r-mein, r-wortschatz]
+    explanation:
+      vi: "Vế je: Je mehr + ich + lese (động từ cuối). Vế desto: desto größer + wird (động từ) + mein Wortschatz (chủ ngữ). groß → größer (so sánh hơn có umlaut)."
+    display_answer: Je mehr ich lese, desto größer wird mein Wortschatz.
+
+  - key: de:exercise:b1u04l3-wb-entweder-oder
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-zweiteilige-konnektoren
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hoặc là bạn học mỗi ngày, hoặc là bạn quên hết.\""
+      tokens:
+        - { id: e-oder, text: oder }
+        - { id: e-du1, text: du }
+        - { id: e-tag, text: Tag }
+        - { id: e-vergisst, text: vergisst }
+        - { id: e-entweder, text: Entweder }
+        - { id: e-komma, text: "," }
+        - { id: e-lernst, text: lernst }
+        - { id: e-alles, text: alles }
+        - { id: e-jeden, text: jeden }
+        - { id: e-du2, text: du }
+    answer:
+      orders:
+        - [e-entweder, e-lernst, e-du1, e-jeden, e-tag, e-komma, e-oder, e-du2, e-vergisst, e-alles]
+        - [e-entweder, e-lernst, e-du2, e-jeden, e-tag, e-komma, e-oder, e-du1, e-vergisst, e-alles]
+        - [e-entweder, e-du1, e-lernst, e-jeden, e-tag, e-komma, e-oder, e-du2, e-vergisst, e-alles]
+        - [e-entweder, e-du2, e-lernst, e-jeden, e-tag, e-komma, e-oder, e-du1, e-vergisst, e-alles]
+    explanation:
+      vi: "entweder có thể đứng ở vị trí 1 (Entweder lernst du …) hoặc vị trí 0 (Entweder du lernst …). oder luôn ở vị trí 0, nên vế sau giữ trật tự bình thường: du vergisst alles."
+    display_answer: Entweder lernst du jeden Tag, oder du vergisst alles.
+
+  - key: de:exercise:b1u04l3-tr-zwar-aber
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u04-g-zweiteilige-konnektoren
+    prompt:
+      source_text: "Phương pháp này tuy chậm nhưng có hiệu quả. (dùng zwar … aber; có hiệu quả = funktioniert)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Diese Methode ist zwar langsam, aber sie funktioniert.
+        - Zwar ist diese Methode langsam, aber sie funktioniert.
+        - Diese Methode ist zwar langsam, funktioniert aber.
+        - Die Methode ist zwar langsam, aber sie funktioniert.
+        - Zwar ist die Methode langsam, aber sie funktioniert.
+        - Die Methode ist zwar langsam, funktioniert aber.
+    known_wrong:
+      - answer: Diese Methode ist zwar langsam, aber funktioniert sie.
+        feedback_vi: aber đứng ở vị trí 0, không đẩy động từ lên trước chủ ngữ – aber sie funktioniert.
+        error_tag: verb_position
+      - answer: Diese Methode ist zwar langsam, sondern sie funktioniert.
+        feedback_vi: zwar đi với aber, không đi với sondern.
+        error_tag: connector
+    explanation:
+      vi: "zwar … aber = tuy … nhưng. zwar đứng sau động từ ist trong vế đầu; aber mở đầu vế sau mà không đổi trật tự từ: aber sie funktioniert. die Methode là giống cái nên đại từ là sie."
+    display_answer: Diese Methode ist zwar langsam, aber sie funktioniert.
+
+  - key: de:exercise:b1u04l3-tr-je-laenger
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u04-g-je-desto
+    prompt:
+      source_text: Je länger ich Deutsch lerne, desto mehr Spaß macht es mir.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi học tiếng Đức càng lâu thì càng thấy vui.
+        - Tôi học tiếng Đức càng lâu thì càng thấy thú vị.
+        - Tôi học tiếng Đức càng lâu thì càng thích.
+        - Tôi càng học tiếng Đức lâu thì càng thấy vui.
+        - Tôi càng học tiếng Đức lâu thì càng thích.
+        - Càng học tiếng Đức lâu, tôi càng thấy vui.
+        - Càng học tiếng Đức lâu, tôi càng thích.
+        - Càng học tiếng Đức lâu tôi càng thấy thú vị.
+        - Mình học tiếng Đức càng lâu thì càng thấy vui.
+        - Tôi học tiếng Đức càng lâu thì càng thấy hứng thú.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi học tiếng Đức lâu rồi nên thấy vui.
+        feedback_vi: "je … desto là \"càng … càng\", không phải quan hệ nguyên nhân (nên)."
+        error_tag: meaning
+    explanation:
+      vi: "Je länger …, desto mehr … = càng lâu …, càng nhiều …. Spaß machen = làm cho vui, thú vị: es macht mir Spaß = tôi thấy vui/thích."
+    display_answer: Tôi học tiếng Đức càng lâu thì càng thấy vui.
