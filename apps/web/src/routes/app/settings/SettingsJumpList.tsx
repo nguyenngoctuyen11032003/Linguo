@@ -13,6 +13,7 @@ const ITEMS: Array<{ id: string; label: string }> = [
   { id: 'nhac-hoc', label: 'Nhắc học' },
   { id: 'ai-rieng-tu', label: 'AI và quyền riêng tư' },
   { id: 'cai-app', label: 'Cài ứng dụng' },
+  { id: 'du-lieu-ngoai-tuyen', label: 'Dữ liệu ngoại tuyến' },
   { id: 'bao-loi', label: 'Báo lỗi của tôi' },
   { id: 'mat-khau', label: 'Mật khẩu' },
   { id: 'tai-khoan-du-lieu', label: 'Tài khoản và dữ liệu' },

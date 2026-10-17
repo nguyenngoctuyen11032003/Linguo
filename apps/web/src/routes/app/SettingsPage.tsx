@@ -33,6 +33,7 @@ import { AiPrivacySection } from './settings/AiPrivacySection';
 import { LearningPathsSection } from './settings/LearningPathsSection';
 import { MotivationSection } from './settings/MotivationSection';
 import { MyReportsSection } from './settings/MyReportsSection';
+import { OfflineContentSection } from './settings/OfflineContentSection';
 import { PasswordSection } from './settings/PasswordSection';
 import { RemindersSection } from './settings/RemindersSection';
 import { SoundSection } from './settings/SoundSection';
@@ -507,6 +508,8 @@ export function SettingsPage() {
       <AiPrivacySection />
 
       <InstallAppSection />
+
+      <OfflineContentSection />
 
       <MyReportsSection />
 

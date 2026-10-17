@@ -403,7 +403,7 @@ describe('SettingsPage', () => {
     const labels = within(nav)
       .getAllByRole('link')
       .map((link) => link.textContent);
-    expect(labels).toEqual(['Hồ sơ', 'Lộ trình học', 'Giao diện', 'Âm thanh', 'Động lực và dữ liệu', 'Nhắc học', 'AI và quyền riêng tư', 'Báo lỗi của tôi', 'Mật khẩu', 'Tài khoản và dữ liệu']);
+    expect(labels).toEqual(['Hồ sơ', 'Lộ trình học', 'Giao diện', 'Âm thanh', 'Động lực và dữ liệu', 'Nhắc học', 'AI và quyền riêng tư', 'Dữ liệu ngoại tuyến', 'Báo lỗi của tôi', 'Mật khẩu', 'Tài khoản và dữ liệu']);
     for (const label of labels) {
       expect(screen.getByRole('heading', { level: 2, name: label! })).toBeInTheDocument();
     }
