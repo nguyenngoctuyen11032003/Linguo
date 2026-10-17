@@ -21,6 +21,16 @@ Chạy trước mỗi bản phát hành có thay đổi giao diện. Ghi kết q
 - [ ] Phóng chữ 200%: không vỡ bố cục, chữ xuống dòng thay vì tràn
 - [ ] "Thêm vào màn hình chính": icon đúng (không có ô ca-rô), mở vào trang chủ (đăng nhập rồi sẽ vào app)
 
+## Offline toàn phần (PWA đã cài)
+Làm trên thiết bị thật đã "Thêm vào màn hình chính", đăng nhập và đã mở app online ít nhất một lần (thấy toast "Sẵn sàng dùng ngoại tuyến" ở lần cài đầu).
+- [ ] Bật chế độ máy bay, mở app từ icon màn hình chính: vào thẳng trang chủ (không về màn đăng nhập, không chờ quá vài giây), banner ngoại tuyến hiện, tên và lộ trình vẫn đúng, có dòng "Đang dùng dữ liệu đã lưu trên thiết bị"
+- [ ] Để máy qua đêm (hoặc >1 giờ) rồi mở lại khi vẫn đang máy bay: vẫn đăng nhập (access token đã hết hạn nhưng phiên còn); bật mạng lại thì không bị đăng xuất và dữ liệu tự làm mới
+- [ ] Wi-Fi bật nhưng không ra Internet (cổng đăng nhập Wi-Fi/modem hỏng): mở app vẫn vào được sau tối đa vài giây; không có màn hình quay vô hạn
+- [ ] Mở lần đầu sau khi cài trong lúc offline và chưa từng online: hiện "Chưa có dữ liệu để học ngoại tuyến" kèm nút thử lại (không lỗi chung chung)
+- [ ] Đăng xuất rồi đăng nhập tài khoản khác khi offline/online: không thấy tên hay lộ trình của tài khoản trước
+- [ ] Mở trang gốc `/` từ icon đã cài khi đã đăng nhập: vào `/app`; mở trong tab trình duyệt thường vẫn thấy trang giới thiệu
+- [ ] Các mục bài học, ôn tập, đồng bộ hàng đợi khi có mạng lại: xem checklist của luồng tải bài offline và hàng đợi (mục "Học bài" bên dưới)
+
 ## Học bài (spec 2)
 - [ ] Mở "Học tập" → chọn bài → đi hết các bước; nút "Tiếp tục" luôn nằm trong tầm ngón cái và không bị bàn phím che
 - [ ] Gõ tiếng Hàn trên bàn phím iOS, Gboard và Samsung Keyboard: nhấn Enter khi đang ghép chữ (ví dụ đang gõ 학생) không nộp bài; chữ cuối không bị mất hay nhân đôi
