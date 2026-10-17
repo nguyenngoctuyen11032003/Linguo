@@ -45,7 +45,7 @@ body:
       vi: "Từ 21 đến 99, tiếng Đức đọc hàng đơn vị trước, rồi und, rồi hàng chục: 47 = sieben-und-vierzig (“bảy và bốn mươi”). Tiếng Việt đọc ngược lại (bốn mươi bảy), nên khi nghe hãy chờ hàng chục ở cuối rồi mới viết số."
   - type: explain
     text:
-      vi: "Hàng chục: zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert. Nhớ ba chỗ lạ: dreißig viết với ß; sechzig bỏ s của sechs; siebzig bỏ en của sieben. Số viết liền thành một từ, và 21 là einundzwanzig (eins mất s)."
+      vi: "Hàng chục: zwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert. Nhớ ba chỗ lạ: dreißig viết với ß; sechzig bỏ s của sechs, siebzig bỏ en của sieben (giống sechzehn, siebzehn). Số viết liền thành một từ, và 21 là einundzwanzig (eins mất s)."
   - type: explain
     text:
       vi: "Nói tuổi dùng sein, không dùng haben: Ich bin 25 Jahre alt (hoặc ngắn: Ich bin 25). Hỏi: Wie alt bist du? (thân mật) / Wie alt sind Sie? (lịch sự)."

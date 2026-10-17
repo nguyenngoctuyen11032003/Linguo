@@ -42,10 +42,10 @@ body:
       vi: Sau bài này, bạn nói được “Mình là Minh”, “Chúng tôi là đồng nghiệp”, “Bà Weber rất dễ mến” bằng tiếng Đức và biết lúc nào xưng du, lúc nào xưng Sie.
   - type: explain
     text:
-      vi: "Tiếng Đức có một bộ đại từ chủ ngữ cố định: ich (tôi), du (bạn), er (anh ấy), sie (cô ấy), es (nó), wir (chúng tôi), ihr (các bạn), sie (họ), Sie (ông/bà/anh/chị – lịch sự). Bạn không cần chọn giữa anh, chị, em, cô, chú như tiếng Việt – tuổi tác không đổi đại từ."
+      vi: "Tiếng Đức có một bộ đại từ chủ ngữ cố định: ich (tôi), du (bạn), er (anh ấy), sie (cô ấy), es (nó), wir (chúng tôi), ihr (các bạn), sie (họ), Sie (ông/bà/anh/chị – lịch sự). Bạn không cần chọn giữa anh, chị, em, cô, chú như tiếng Việt – khi nói với ai, bạn chỉ chọn giữa du (thân mật) và Sie (lịch sự)."
   - type: explain
     text:
-      vi: "Động từ sein (là, thì, ở) đổi dạng theo chủ ngữ: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Tiếng Việt nói “Tôi Minh”, “Cô ấy mệt” mà không cần “là”; tiếng Đức luôn phải có sein: Ich bin Minh. Sie ist müde."
+      vi: "Động từ sein (là, thì, ở) đổi dạng theo chủ ngữ: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Tiếng Việt nói “Cô ấy mệt”, “Anh ấy rất dễ mến” mà không cần “là”; câu tiếng Đức phải có sein: Sie ist müde. Er ist sehr nett."
   - type: explain
     text:
       vi: "du dùng với bạn bè, người nhà, trẻ em và người trẻ cùng lứa; Sie dùng với người lạ, người lớn tuổi, ở cơ quan và nơi làm việc. Với Sie, bạn gọi Herr/Frau + họ (Frau Weber); với du, gọi tên riêng (Lena). Khi chưa chắc, cứ dùng Sie – người Đức sẽ đề nghị chuyển sang du nếu muốn."
@@ -95,7 +95,7 @@ body:
     right: Ich bin Minh.
     target_lang: de
     note:
-      vi: Tiếng Việt có thể nói “Tôi Minh”, nhưng câu tiếng Đức bắt buộc có động từ. Giới thiệu tên dùng ich bin (hoặc ich heiße).
+      vi: Tiếng Việt nói được “Tôi tên Minh” mà không cần “là”, nhưng câu tiếng Đức bắt buộc có động từ. Giới thiệu tên dùng ich bin (hoặc ich heiße).
   - type: common_mistake
     wrong: Herr Becker, sie sind sehr nett.
     right: Herr Becker, Sie sind sehr nett.

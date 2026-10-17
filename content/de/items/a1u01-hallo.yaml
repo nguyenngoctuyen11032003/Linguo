@@ -39,7 +39,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "sein nghĩa là “là / thì / ở” và đổi dạng theo từng chủ ngữ. Tiếng Việt hay bỏ “là” (Tôi Minh, Tôi mệt), còn tiếng Đức không bao giờ bỏ sein. wir, sie (họ) và Sie đều dùng sind."
+        vi: "sein nghĩa là “là / thì / ở” và đổi dạng theo từng chủ ngữ. Tiếng Việt thường không cần “là” (Tôi mệt, Cô ấy rất dễ mến), còn câu tiếng Đức phải có sein: Ich bin müde. wir, sie (họ) và Sie đều dùng sind."
       examples:
         - target: Ich bin Lan, und du bist Tom.
           translation:
@@ -341,7 +341,7 @@ items:
           translation:
             vi: Chúng tôi sống ở Berlin, còn Anna sống ở Vienna.
       confusion:
-        vi: "Ngôi wir và sie/Sie giống hệt nguyên thể (wir kommen, Sie kommen); ngôi er/sie/es và ihr cùng đuôi -t (er kommt, ihr kommt)."
+        vi: "Với động từ có quy tắc, ngôi wir và sie/Sie giống hệt nguyên thể (wir kommen, Sie kommen) – sein là ngoại lệ (wir sind); ngôi er/sie/es và ihr cùng đuôi -t (er kommt, ihr kommt)."
 
   - key: de:item:a1u01-g-laender-artikel
     type: grammar_point
@@ -353,7 +353,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Phần lớn tên nước không có mạo từ: aus Vietnam, in Deutschland. Một số nước luôn đi kèm mạo từ: die Schweiz, die Türkei, die USA (số nhiều), der Iran. Sau aus và in, mạo từ đổi dạng – aus der Schweiz, in der Türkei, aus den USA, aus dem Iran – nên hãy học thuộc cả cụm."
+        vi: "Phần lớn tên nước không có mạo từ: aus Vietnam, in Deutschland. Một số nước đi kèm mạo từ: die Schweiz, die Türkei, die USA (số nhiều) và thường cả der Iran. Sau aus và in, mạo từ đổi dạng – aus der Schweiz, in der Türkei, aus den USA, aus dem Iran – nên hãy học thuộc cả cụm."
       examples:
         - target: Lukas kommt aus der Schweiz.
           translation:
@@ -362,7 +362,7 @@ items:
           translation:
             vi: Sarah sống ở Mỹ.
       confusion:
-        vi: “aus Schweiz” là sai – Schweiz không bao giờ đứng một mình. Lý do đổi die → der sẽ học ở bài về Dativ; bây giờ chỉ cần nhớ cụm.
+        vi: “aus Schweiz” là sai – trong câu, Schweiz luôn đi với mạo từ. Lý do đổi die → der sẽ học ở bài về Dativ; bây giờ chỉ cần nhớ cụm.
 
   - key: de:item:a1u01-kommen
     type: vocab
@@ -440,7 +440,7 @@ items:
           translation:
             vi: Bây giờ tôi sống ở Đức.
       pronunciation_note:
-        vi: eu đọc gần như “oi”, tsch như “ch” tiếng Việt bật mạnh – “Đoi-ch-lant”.
+        vi: eu đọc gần như “oi”; tsch là âm “ch” tròn môi, xì hơi như trong tiếng Anh “church” (không phải “ch” tiếng Việt); d cuối từ đọc t.
 
   - key: de:item:a1u01-oesterreich
     type: vocab
@@ -670,7 +670,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Từ để hỏi (wer, wie, wo, woher, was) đứng đầu câu, động từ đã chia đứng ngay sau ở vị trí 2, rồi đến chủ ngữ. Tiếng Việt thường để từ để hỏi ở cuối (Bạn sống ở đâu?), tiếng Đức đưa nó lên đầu. Giọng hạ xuống ở cuối câu hỏi W-."
+        vi: "Từ để hỏi (wer, wie, wo, woher, was) đứng đầu câu, động từ đã chia đứng ngay sau ở vị trí 2, rồi đến chủ ngữ (trừ khi từ để hỏi chính là chủ ngữ: Wer spricht Deutsch?). Tiếng Việt thường để từ để hỏi ở cuối (Bạn sống ở đâu?), tiếng Đức đưa nó lên đầu. Giọng hạ xuống ở cuối câu hỏi W-."
       examples:
         - target: Wo wohnen Sie?
           translation:
@@ -981,7 +981,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Từ 21 đến 99, tiếng Đức đọc hàng đơn vị trước, rồi und, rồi hàng chục: 47 = siebenundvierzig (“bảy và bốn mươi”) – ngược với tiếng Việt. Hàng chục: zwanzig, dreißig (với ß), vierzig, fünfzig, sechzig (không có -s), siebzig (không có -en), achtzig, neunzig, hundert. Viết liền thành một từ; 21 là einundzwanzig (eins mất -s)."
+        vi: "Từ 21 đến 99, tiếng Đức đọc hàng đơn vị trước, rồi und, rồi hàng chục: 47 = siebenundvierzig (“bảy và bốn mươi”) – ngược với tiếng Việt. Hàng chục: zwanzig, dreißig (với ß), vierzig, fünfzig, sechzig (không có -s, như sechzehn), siebzig (không có -en, như siebzehn), achtzig, neunzig, hundert. Viết liền thành một từ; 21 là einundzwanzig (eins mất -s)."
       examples:
         - target: Die Hausnummer ist siebenundvierzig.
           translation:
@@ -1032,7 +1032,7 @@ items:
           translation:
             vi: Ông Wolf 70 tuổi.
       pronunciation_note:
-        vi: Đuôi -zig đọc gần như “tsích” nhẹ, không bật “k” ở cuối (/t͡sɪç/); dreißig có ß chứ không có z.
+        vi: Đuôi -zig đọc /t͡sɪç/ – “ts-i” rồi kết thúc bằng âm “h” xì nhẹ như trong ich, không đóng bằng “k” hay “ch” tiếng Việt; dreißig có ß chứ không có z.
       confusion:
         vi: "Ba số bất quy tắc: dreißig (không phải dreizig), sechzig (không phải sechszig), siebzig (không phải siebenzig)."
 
@@ -1258,9 +1258,9 @@ items:
       meaning:
         vi: số điện thoại
       examples:
-        - target: Die Telefonnummer ist 0341 225870.
+        - target: Die Telefonnummer ist 030 23125870.
           translation:
-            vi: Số điện thoại là 0341 225870.
+            vi: Số điện thoại là 030 23125870.
       confusion:
         vi: Số điện thoại thường đọc từng chữ số hoặc từng cặp (zweiundzwanzig, achtundfünfzig …).
 

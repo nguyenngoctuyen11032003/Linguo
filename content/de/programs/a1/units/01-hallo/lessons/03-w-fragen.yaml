@@ -37,13 +37,15 @@ items:
     role: reuse
   - item: de:item:p0u1-g-vokallaenge
     role: reuse
+  - item: de:item:p0u1-heute
+    role: reuse
 body:
   - type: objective
     text:
       vi: Sau bài này, bạn hỏi được tên, quê, nơi ở, ngôn ngữ của người khác bằng câu hỏi đúng trật tự, và nói được “Hôm nay tôi học tiếng Đức” mà không đặt sai động từ.
   - type: explain
     text:
-      vi: "Câu hỏi W- bắt đầu bằng từ để hỏi: wer (ai), wie (thế nào), wo (ở đâu), woher (từ đâu), was (gì). Ngay sau đó là động từ đã chia (vị trí 2), rồi mới đến chủ ngữ: Wo wohnst du? Tiếng Việt để từ để hỏi ở cuối (“Bạn sống ở đâu?”), tiếng Đức đưa nó lên đầu."
+      vi: "Câu hỏi W- bắt đầu bằng từ để hỏi: wer (ai), wie (thế nào), wo (ở đâu), woher (từ đâu), was (gì). Ngay sau đó là động từ đã chia (vị trí 2), rồi mới đến chủ ngữ: Wo wohnst du? (Riêng khi từ để hỏi chính là chủ ngữ thì động từ theo ngay sau nó: Wer spricht Deutsch?) Tiếng Việt để từ để hỏi ở cuối (“Bạn sống ở đâu?”), tiếng Đức đưa nó lên đầu."
   - type: explain
     text:
       vi: "Câu hỏi có/không không có từ để hỏi: động từ đã chia đứng đầu câu, chủ ngữ ngay sau – Sprichst du Deutsch? Tiếng Việt thêm “có … không”, tiếng Đức chỉ đảo động từ lên trước và lên giọng ở cuối câu. Trả lời: Ja / Nein."
@@ -95,7 +97,7 @@ body:
     right: Wie heißt du?
     target_lang: de
     note:
-      vi: Tiếng Việt hỏi “tên là gì”, nhưng tiếng Đức hỏi tên bằng Wie (thế nào). Was heißt …? chỉ dùng để hỏi nghĩa của một từ.
+      vi: Tiếng Việt hỏi “tên là gì”, nhưng tiếng Đức hỏi tên bằng Wie (thế nào). Was heißt …? dùng để hỏi nghĩa của một từ (Was heißt „danke“?).
   - type: common_mistake
     wrong: Sprechst du Deutsch?
     right: Sprichst du Deutsch?
@@ -254,6 +256,7 @@ exercises:
         - Sprichst du Deutsch? – Ja, ein bisschen.
         - Sprichst du Deutsch? – Ja, ich spreche ein bisschen Deutsch.
         - Sprichst du Deutsch? – Ja, etwas.
+        - Sprichst du Deutsch? – Ja, ein wenig.
         - Kannst du Deutsch? – Ja, ein bisschen.
     known_wrong:
       - answer: Sprechst du Deutsch? – Ja, ein bisschen.

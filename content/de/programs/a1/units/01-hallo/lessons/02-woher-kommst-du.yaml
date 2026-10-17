@@ -36,6 +36,8 @@ items:
   - item: de:item:a1u01-frankreich
   - item: de:item:p0u2-g-w-v-f-z
     role: reuse
+  - item: de:item:p0u3-jetzt
+    role: reuse
 body:
   - type: objective
     text:
@@ -51,7 +53,7 @@ body:
       vi: "Quê quán: kommen aus + nơi chốn (Ich komme aus Vietnam, aus Hanoi). Nơi ở: wohnen in + nơi chốn (Ich wohne in Berlin). Câu hỏi mẫu Woher kommst du? / Wo wohnst du? – bạn cứ học như mẫu câu, quy tắc câu hỏi sẽ học ở bài 3."
   - type: explain
     text:
-      vi: "Đa số tên nước không có mạo từ: aus Deutschland, in Österreich. Vài nước luôn có mạo từ – die Schweiz, die Türkei, die USA (số nhiều), der Iran – và sau aus/in thì nói aus der Schweiz, in der Türkei, aus den USA, aus dem Iran. Hãy học thuộc cả cụm."
+      vi: "Đa số tên nước không có mạo từ: aus Deutschland, in Österreich. Vài nước có mạo từ – die Schweiz, die Türkei, die USA (số nhiều), thường cả der Iran – và sau aus/in thì nói aus der Schweiz, in der Türkei, aus den USA, aus dem Iran. Hãy học thuộc cả cụm."
   - type: deep_explain
     text:
       vi: "Người Đức rất hay hỏi “Woher kommst du?” khi mới quen; trả lời có thể chỉ một cụm “Aus Vietnam.” hoặc kèm thành phố “Aus Vietnam, aus Da Nang.”. wohnen là ở tại một chỗ cụ thể (thành phố, địa chỉ), leben rộng hơn – sống ở một nước, sống lâu dài; trong nhiều câu cả hai đều đúng (Ich wohne/lebe in Deutschland). Mạo từ der trong “aus der Schweiz” là dạng Dativ của die – bạn sẽ hiểu lý do ở unit 5, giờ chỉ cần nhớ cụm. Lưu ý: hỏi “ở đâu” là wo, hỏi “từ đâu” là woher."
@@ -95,7 +97,7 @@ body:
     right: Du kommst aus Vietnam.
     target_lang: de
     note:
-      vi: Động từ phải đổi đuôi theo chủ ngữ – với du luôn là -st. Nguyên thể kommen chỉ đi với wir, sie (họ) và Sie.
+      vi: Động từ phải đổi đuôi theo chủ ngữ – với du là -st (kommst). Nguyên thể kommen chỉ đi với wir, sie (họ) và Sie.
   - type: common_mistake
     wrong: Du arbeitst in Berlin.
     right: Du arbeitest in Berlin.
@@ -107,7 +109,7 @@ body:
     right: Lukas kommt aus der Schweiz.
     target_lang: de
     note:
-      vi: Schweiz không bao giờ đứng một mình – luôn là die Schweiz, sau aus/in là der Schweiz.
+      vi: Trong câu, Schweiz luôn đi với mạo từ – die Schweiz, sau aus/in là der Schweiz.
   - type: common_mistake
     wrong: Ich komme von Vietnam.
     right: Ich komme aus Vietnam.
@@ -140,7 +142,7 @@ exercises:
     answer:
       correct_option_id: f3w
     explanation:
-      vi: Chủ ngữ du luôn lấy đuôi -st, nên komm- + -st = kommst. komme dùng cho ich, kommt cho er/sie/es và ihr, kommen cho wir, sie/Sie.
+      vi: Chủ ngữ du lấy đuôi -st, nên komm- + -st = kommst. komme dùng cho ich, kommt cho er/sie/es và ihr, kommen cho wir, sie/Sie.
     display_answer: kommst
 
   - key: de:exercise:a1u01l2-mcq-arbeitest

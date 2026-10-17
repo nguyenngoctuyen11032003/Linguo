@@ -62,13 +62,13 @@ body:
       vi: "Phần thi Nói 1 của Start Deutsch 1: bạn tự giới thiệu theo các từ khóa trên thẻ – Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby. Với năm từ khóa đầu, bạn đã có đủ câu mẫu: Ich heiße … / Ich bin … Jahre alt. / Ich komme aus … / Ich wohne in … / Ich spreche … (Beruf và Hobby sẽ học ở unit 2)."
   - type: explain
     text:
-      vi: "Phần thi Viết 1 là điền form: đọc một đoạn văn ngắn về một người rồi điền thông tin vào ô. Đừng nhầm Vorname (tên) với Familienname/Nachname (họ), và Wohnort (nơi đang ở) với Geburtsort hay quê (nơi sinh, nơi đến)."
+      vi: "Phần thi Viết 1 là điền form: đọc một đoạn văn ngắn về một người rồi điền thông tin vào ô. Đừng nhầm Vorname (tên) với Familienname/Nachname (họ), và Wohnort (nơi đang ở) với Geburtsort (nơi sinh) hay quê (nơi bạn đến từ: kommt aus …)."
   - type: explain
     text:
       vi: "Phần đọc thường hỏi Richtig oder falsch? (đúng hay sai). Hãy so từng chi tiết: kommt aus … là quê, wohnt in … là nơi ở; một câu sai chỉ vì đổi một thành phố cũng là falsch."
   - type: deep_explain
     text:
-      vi: "Khi tự giới thiệu, hãy giữ động từ ở vị trí 2 mà vẫn đổi đầu câu cho tự nhiên: Ich komme aus Vietnam. Jetzt wohne ich in Leipzig. – nghe hay hơn lặp “Ich … Ich … Ich …”. Ở bài thi, giám khảo xưng Sie (Woher kommen Sie?), còn khi nói với thí sinh khác thường xưng du. Trước khi viết vào form, đọc lại họ – tên cho đúng thứ tự Đức: Vorname là tên gọi (Lan), Familienname là họ (Pham)."
+      vi: "Khi tự giới thiệu, hãy giữ động từ ở vị trí 2 mà vẫn đổi đầu câu cho tự nhiên: Ich komme aus Vietnam. Jetzt wohne ich in Leipzig. – nghe hay hơn lặp “Ich … Ich … Ich …”. Ở bài thi, giám khảo xưng Sie (Woher kommen Sie?); khi nói với thí sinh khác, bạn có thể xưng du hoặc Sie, miễn là giữ nhất quán. Trước khi viết vào form, đọc lại họ – tên cho đúng thứ tự Đức: Vorname là tên gọi (Lan), Familienname là họ (Pham)."
   - type: example
     target: "Hallo! Ich heiße Lan Pham. Ich bin 24 Jahre alt und komme aus Vietnam. Jetzt wohne ich in Leipzig. Ich spreche Vietnamesisch, Englisch und ein bisschen Deutsch."
     target_lang: de
@@ -120,7 +120,7 @@ body:
       - vi: "Tự giới thiệu: Ich heiße … · Ich bin … Jahre alt. · Ich komme aus … · Ich wohne in … · Ich spreche …"
       - vi: "Form: Vorname = tên, Familienname/Nachname = họ, Wohnort = nơi đang ở."
       - vi: Động từ ở vị trí 2 – đổi đầu câu để nói tự nhiên (Jetzt wohne ich …).
-      - vi: "Với giám khảo: Sie (Woher kommen Sie?); với bạn cùng thi: thường du."
+      - vi: "Với giám khảo: Sie (Woher kommen Sie?); với bạn cùng thi: du hoặc Sie, nhưng giữ nhất quán."
       - vi: "Nước có mạo từ: aus der Schweiz, aus der Türkei, aus den USA."
 exercises:
   # ---------------- recognition: đọc (Lesen) ----------------
@@ -261,7 +261,7 @@ exercises:
     difficulty: 2
     item: de:item:a1u01-g-praesens
     prompt:
-      template: "Hallo! Ich {{b1}} Minh und {{b2}} aus Vietnam. Ich {{b3}} in Köln und {{b4}} Deutsch."
+      template: "Hallo! Ich {{b1}} (heißen) Minh und {{b2}} (kommen) aus Vietnam. Ich {{b3}} (wohnen) in Köln und {{b4}} (lernen) Deutsch."
       blanks:
         - { id: b1, width_hint: 6 }
         - { id: b2, width_hint: 6 }
@@ -269,10 +269,10 @@ exercises:
         - { id: b4, width_hint: 7 }
     answer:
       blanks:
-        b1: [heiße, bin]
-        b2: [komme, bin]
-        b3: [wohne, lebe]
-        b4: [lerne, spreche]
+        b1: [heiße]
+        b2: [komme]
+        b3: [wohne]
+        b4: [lerne]
     known_wrong:
       - answer: heißt
         feedback_vi: heißt là của du/er. Với ich là heiße.
@@ -289,11 +289,11 @@ exercises:
       - answer: lernst
         feedback_vi: lernst là của du. Với ich là lerne.
         error_tag: verb_form
-      - answer: sprichst
-        feedback_vi: sprichst là của du. Với ich là spreche (không đổi e → i).
+      - answer: lernen
+        feedback_vi: lernen là nguyên thể. Với ich là lerne.
         error_tag: verb_form
     explanation:
-      vi: "Mọi động từ đi với ich đều có đuôi -e: heiße, komme, wohne, lerne, spreche (ngôi ich của sprechen không đổi e → i). Sau und, chủ ngữ ich có thể lược."
+      vi: "Với ich, các động từ này đều có đuôi -e: heiße, komme, wohne, lerne. Sau und, chủ ngữ ich có thể lược (… und komme aus Vietnam)."
     display_answer: Hallo! Ich heiße Minh und komme aus Vietnam. Ich wohne in Köln und lerne Deutsch.
 
   - key: de:exercise:a1u01l5-tr-30-hamburg
