@@ -42,6 +42,9 @@ describe('fallbackSpeechLang', () => {
     expect(fallbackSpeechLang('legacy.mp3', 'Hello')).toBe('en');
     expect(fallbackSpeechLang(`ja-${'a'.repeat(32)}`, 'Hello')).toBe('ja');
     expect(fallbackSpeechLang(`fr-${'a'.repeat(32)}`, 'Hello')).toBe('en');
+    // Latin script cannot tell German from English: the id decides.
+    expect(fallbackSpeechLang(`de-${'b'.repeat(32)}`, 'Guten Morgen')).toBe('de');
+    expect(fallbackSpeechLang(null, 'Guten Morgen')).toBe('en');
   });
 });
 

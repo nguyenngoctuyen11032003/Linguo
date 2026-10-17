@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { stubSpeechSynthesis } from '../../../tests/unit/speech-synthesis';
 import { ListenExercise } from './ListenExercise';
-import { detectScriptLang } from './machine-speech';
+import { detectScriptLang, toTtsLanguage } from './machine-speech';
 import { MachineSpeechButton } from './MachineSpeechButton';
 import { renderExercise } from './test-utils';
 
@@ -11,6 +11,7 @@ const VOICES = [
   { lang: 'en-GB', name: 'Brit' },
   { lang: 'en-US', name: 'Yank' },
   { lang: 'ko-KR', name: 'Yuna' },
+  { lang: 'de-DE', name: 'Hedda' },
 ];
 
 afterEach(() => vi.unstubAllGlobals());
@@ -43,7 +44,27 @@ describe('detectScriptLang', () => {
   });
 });
 
+describe('toTtsLanguage', () => {
+  it('passes the four course languages through and ignores the rest', () => {
+    expect(['en', 'ko', 'ja', 'de'].map(toTtsLanguage)).toEqual(['en', 'ko', 'ja', 'de']);
+    expect(toTtsLanguage('vi')).toBeNull();
+    expect(toTtsLanguage(undefined)).toBeNull();
+  });
+
+  it('cannot guess German from its script: Latin text without a language is English', () => {
+    expect(detectScriptLang('Guten Morgen, wie geht es Ihnen?')).toBe('en');
+  });
+});
+
 describe('MachineSpeechButton', () => {
+  it('speaks German with the de-DE voice and without the plural notation', async () => {
+    const { spoken } = stubSpeechSynthesis(VOICES);
+    renderExercise(<MachineSpeechButton text="der Tisch, -e" lang="de" label="Nghe" />);
+    await userEvent.click(screen.getByRole('button', { name: /^Nghe/ }));
+    expect(spoken[0]).toMatchObject({ text: 'der Tisch', lang: 'de-DE' });
+    expect(spoken[0]?.voice?.name).toBe('Hedda');
+  });
+
   it('speaks with the exact-locale voice at 0.9 and shows the speaking state, stop cancels', async () => {
     const { spoken, cancel } = stubSpeechSynthesis(VOICES);
     renderExercise(<MachineSpeechButton text="Hello" lang="en" label="Nghe bằng giọng đọc của máy" slow />);
@@ -111,6 +132,15 @@ describe('ListenExercise machine speech', () => {
     await userEvent.click(screen.getByRole('button', { name: /^Nghe chậm/ }));
     expect(spoken[0]).toMatchObject({ text: 'Hello, my name is Lan.', rate: 0.7 });
     expect(spoken[0]?.text).not.toMatch(/Xin chào/);
+  });
+
+  it('uses the explicit lesson language for Latin-script German', async () => {
+    const { spoken } = stubSpeechSynthesis(VOICES);
+    renderExercise(
+      <ListenExercise prompt={listenPrompt({ fallback_text: 'Guten Morgen, ich heiße Anna.' })} lang="de" seed="s" selectedId={null} onSelect={() => {}} disabled={false} marks={null} />,
+    );
+    await userEvent.click(screen.getByRole('button', { name: /^Nghe bằng giọng đọc của máy/ }));
+    expect(spoken[0]).toMatchObject({ text: 'Guten Morgen, ich heiße Anna.', lang: 'de-DE' });
   });
 
   it('detects Korean scripts', async () => {

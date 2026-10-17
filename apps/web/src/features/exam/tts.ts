@@ -5,6 +5,22 @@ export type TtsLanguage = 'en' | 'ko' | 'ja' | 'de';
 
 const LOCALES: Record<TtsLanguage, string> = { en: 'en-US', ko: 'ko-KR', ja: 'ja-JP', de: 'de-DE' };
 
+/**
+ * German headwords carry their plural / gender notation ("der Tisch, -e", "die Mutter, ¨-", "die Milch (Sg.)"): a voice
+ * would read "-e" as "minus e". Only trailing notation is dropped; verb principal parts ("fahren, fährt, fuhr") stay.
+ */
+export function germanSpeechText(text: string): string {
+  return text
+    .replace(/\s*\((?:Sg|Pl)\.?\)\s*$/i, '')
+    .replace(/,\s*(?:¨-?|-)[a-zäöüß]*-?\s*$/i, '')
+    .trim();
+}
+
+/** The text a voice should get for `lang`. */
+export function textForSpeech(text: string, lang: TtsLanguage): string {
+  return lang === 'de' ? germanSpeechText(text) : text;
+}
+
 function synth(): SpeechSynthesis | null {
   if (typeof window === 'undefined') return null;
   if (!('speechSynthesis' in window) || !window.speechSynthesis) return null;
@@ -57,7 +73,7 @@ export function speak(text: string, lang: TtsLanguage, o: { rate?: number } = {}
   if (!s || !voice) return Promise.reject(new Error('tts_unavailable'));
   s.cancel();
   return new Promise<void>((resolve, reject) => {
-    const utterance = new window.SpeechSynthesisUtterance(text);
+    const utterance = new window.SpeechSynthesisUtterance(textForSpeech(text, lang));
     utterance.lang = LOCALES[lang];
     utterance.voice = voice;
     utterance.rate = o.rate ?? 1;

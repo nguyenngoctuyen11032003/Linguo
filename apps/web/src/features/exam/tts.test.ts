@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { canSpeak, onVoicesChanged, speak, stopSpeaking } from './tts';
+import { canSpeak, germanSpeechText, onVoicesChanged, speak, stopSpeaking } from './tts';
 
 class FakeUtterance {
   lang = '';
@@ -82,6 +82,26 @@ describe('tts', () => {
     expect(canSpeak('ja')).toBe(false);
   });
 
+  it('speaks German with a de-DE voice, or any de voice, and drops the plural notation', async () => {
+    const synth = fakeSynth(['en-US', 'de_AT', 'de-DE']);
+    expect(canSpeak('de')).toBe(true);
+    const done = speak('der Tisch, -e', 'de');
+    const u = synth.spoken[0]!;
+    expect(u.lang).toBe('de-DE');
+    expect(u.voice).toEqual({ lang: 'de-DE', name: 'Voice de-DE' });
+    expect(u.text).toBe('der Tisch');
+    u.onend?.();
+    await done;
+
+    const any = fakeSynth(['de_AT']);
+    void speak('Guten Tag!', 'de');
+    expect(any.spoken[0]!.voice).toEqual({ lang: 'de_AT', name: 'Voice de_AT' });
+    expect(any.spoken[0]!.text).toBe('Guten Tag!');
+
+    fakeSynth(['en-US', 'ko-KR']);
+    expect(canSpeak('de')).toBe(false);
+  });
+
   it('stopSpeaking cancels and resolves the pending speech', async () => {
     const synth = fakeSynth(['ko-KR']);
     const done = speak('천천히 말해 주세요', 'ko');
@@ -113,5 +133,24 @@ describe('tts', () => {
     off();
     synth.fire();
     expect(listener).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('germanSpeechText', () => {
+  it('drops trailing plural and number notation only', () => {
+    expect(germanSpeechText('der Tisch, -e')).toBe('der Tisch');
+    expect(germanSpeechText('die Mutter, ¨-')).toBe('die Mutter');
+    expect(germanSpeechText('der Apfel, ¨-')).toBe('der Apfel');
+    expect(germanSpeechText('das Kind, ¨er')).toBe('das Kind');
+    expect(germanSpeechText('das Auto, -s')).toBe('das Auto');
+    expect(germanSpeechText('der Lehrer, -')).toBe('der Lehrer');
+    expect(germanSpeechText('die Milch (Sg.)')).toBe('die Milch');
+    expect(germanSpeechText('die Leute (Pl.)')).toBe('die Leute');
+  });
+
+  it('keeps verb principal parts and ordinary sentences', () => {
+    expect(germanSpeechText('fahren, fährt, fuhr, ist gefahren')).toBe('fahren, fährt, fuhr, ist gefahren');
+    expect(germanSpeechText('Ja, bitte.')).toBe('Ja, bitte.');
+    expect(germanSpeechText('Ich heiße Anna.')).toBe('Ich heiße Anna.');
   });
 });
