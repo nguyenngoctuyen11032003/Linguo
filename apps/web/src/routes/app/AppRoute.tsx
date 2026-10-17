@@ -3,6 +3,7 @@ import { RouteTracker } from '@/features/analytics';
 import { RequireAuth } from '@/features/auth/guards';
 import { LearningPathsProvider } from '@/features/learning-paths/LearningPathsProvider';
 import { OutboxSyncProvider } from '@/features/lesson-player/OutboxSyncProvider';
+import { OfflineContentProvider } from '@/features/offline/OfflineContentProvider';
 import { OfflineMediaWarmup } from '@/features/offline-media/OfflineMediaWarmup';
 import { ProfileProvider } from '@/features/profile/ProfileProvider';
 
@@ -19,7 +20,9 @@ export function AppRoute() {
         <ProfileProvider>
           <LearningPathsProvider>
             <OfflineMediaWarmup />
-            <Outlet />
+            <OfflineContentProvider>
+              <Outlet />
+            </OfflineContentProvider>
           </LearningPathsProvider>
         </ProfileProvider>
       </OutboxSyncProvider>

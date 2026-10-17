@@ -173,13 +173,13 @@ export function OfflineContentProvider({ children }: { children: ReactNode }) {
 
   // ---- downloads ----------------------------------------------------------------------------------------------
   const runJob = useCallback(
-    async (kind: DownloadRequest['kind'], auto: boolean, forPathId: string, lessonIds: readonly string[], manifest?: Parameters<typeof downloadPacks>[0]['manifest']): Promise<DownloadResult | null> => {
+    async (kind: DownloadRequest['kind'], auto: boolean, forPathId: string, lessonIds: readonly string[], manifest?: Parameters<typeof downloadPacks>[0]['manifest'], scope?: string): Promise<DownloadResult | null> => {
       const { client, store: s } = latest.current;
       if (!client || !s || running.current) return null;
       const controller = new AbortController();
       running.current = controller;
       const id = ++jobSeq.current;
-      const base: DownloadJob = { id, kind, auto, running: true, total: lessonIds.length, done: 0, failed: 0, bytes: 0 };
+      const base: DownloadJob = { id, kind, scope, auto, running: true, total: lessonIds.length, done: 0, failed: 0, bytes: 0 };
       setJob(base);
       let result: DownloadResult | null = null;
       try {
@@ -222,7 +222,7 @@ export function OfflineContentProvider({ children }: { children: ReactNode }) {
         running.current.abort();
         for (let waited = 0; running.current && waited < 40; waited++) await new Promise((r) => setTimeout(r, 50));
       }
-      return runJob(request.kind, false, target, request.lessonIds);
+      return runJob(request.kind, false, target, request.lessonIds, undefined, request.scope);
     },
     [runJob],
   );

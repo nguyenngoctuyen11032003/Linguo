@@ -3,6 +3,8 @@ import type { LanguageCode, PathLesson } from '@linguo/shared';
 import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { getLesson } from '@/features/lesson-player/service';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
+import { getContentStore } from '@/features/offline/content-store';
+import { useOptionalUserId } from '@/features/offline/useUserId';
 import { getSupabase } from '@/lib/supabase';
 import { FALLBACK_SENTENCES, sentencesFromLesson, type SpeakingSentence } from './content';
 import type { SpeakingLanguage } from './ratings';
@@ -51,6 +53,7 @@ export function defaultLessonId(choices: PathLesson[]): string | null {
 export function useSpeakingMaterial(): SpeakingMaterial {
   const { current, currentId, status: pathsStatus, reload } = useLearningPaths();
   const { status: lessonsStatus, lessons } = usePathLessons();
+  const userId = useOptionalUserId();
   const lang = isSpeakingLanguage(current?.language) ? current.language : null;
   const choices = useMemo(() => lessonChoices(lessons), [lessons]);
   const [picked, setPicked] = useState<{ pathId: string | null; lessonId: string } | null>(null);
@@ -60,22 +63,32 @@ export function useSpeakingMaterial(): SpeakingMaterial {
   useEffect(() => {
     if (!lessonId || !currentId || !lang) return;
     const client = getSupabase();
-    if (!client) {
-      setLoaded({ pathId: currentId, lessonId, sentences: [] });
-      return;
-    }
     let active = true;
+    const done = (sentences: SpeakingSentence[]) => {
+      if (active) setLoaded({ pathId: currentId, lessonId, sentences });
+    };
+    // No network (or no answer): the copy downloaded for offline study has the same text.
+    const fromDevice = async () => {
+      try {
+        const stored = userId ? await (await getContentStore(userId)).getPack(lessonId) : null;
+        return stored ? sentencesFromLesson({ lesson: stored.pack.lesson, items: stored.pack.items, exercises: stored.pack.exercises, run: null, attempts: [] }, lang) : [];
+      } catch {
+        return [];
+      }
+    };
+    if (!client) {
+      void fromDevice().then(done);
+      return () => {
+        active = false;
+      };
+    }
     getLesson(client, lessonId, currentId)
-      .then((payload) => {
-        if (active) setLoaded({ pathId: currentId, lessonId, sentences: sentencesFromLesson(payload, lang) });
-      })
-      .catch(() => {
-        if (active) setLoaded({ pathId: currentId, lessonId, sentences: [] });
-      });
+      .then((payload) => done(sentencesFromLesson(payload, lang)))
+      .catch(() => void fromDevice().then(done));
     return () => {
       active = false;
     };
-  }, [lessonId, currentId, lang]);
+  }, [lessonId, currentId, lang, userId]);
 
   const selectLesson = useCallback((id: string) => setPicked({ pathId: currentId, lessonId: id }), [currentId]);
 

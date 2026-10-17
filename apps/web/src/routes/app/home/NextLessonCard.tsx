@@ -1,13 +1,17 @@
-import { Clock, Play } from 'lucide-react';
+import { CheckCircle2, Clock, CloudOff, Play } from 'lucide-react';
 import { Link } from 'react-router';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { usePathLessons } from '@/features/lesson-player/usePathLessons';
+import { useOfflineContent } from '@/features/offline/useOfflineContent';
+import { useOnline } from '@/lib/useOnline';
 import { pickNextLesson } from '../learn/grouping';
 
 /** Home "Bài tiếp theo": a skeleton holds its place while loading; hidden when nothing is available; a load error leaves only a small retry. */
 export function NextLessonCard() {
   const { status, lessons, reload } = usePathLessons();
+  const online = useOnline();
+  const { ready: offlineReady, isDownloaded } = useOfflineContent();
 
   if (status === 'error') {
     return (
@@ -39,8 +43,21 @@ export function NextLessonCard() {
       </SolidCard>
     );
   }
-  const lesson = pickNextLesson(lessons);
-  if (!lesson) return null;
+  // Offline: recommend among the lessons that can actually be opened (downloaded, or already started).
+  const lessonsToPick = !online && offlineReady ? lessons.filter((l) => isDownloaded(l.lesson_id) || l.run_status === 'in_progress') : lessons;
+  const lesson = pickNextLesson(lessonsToPick);
+  if (!lesson) {
+    if (!online && offlineReady && pickNextLesson(lessons)) {
+      return (
+        <p role="status" className="flex items-start gap-2 text-sm text-muted">
+          <CloudOff aria-hidden className="mt-0.5 size-4 shrink-0" />
+          Bài tiếp theo chưa được tải về máy. Hãy kết nối mạng, hoặc tải bài về từ trang Học tập.
+        </p>
+      );
+    }
+    return null;
+  }
+  const savedOnDevice = offlineReady && isDownloaded(lesson.lesson_id);
 
   const resuming = lesson.run_status === 'in_progress';
   return (
@@ -65,6 +82,12 @@ export function NextLessonCard() {
               <span>Khoảng {lesson.estimated_minutes} phút</span>
             </span>
             <span className="min-w-0 truncate">{lesson.unit_title.vi}</span>
+            {savedOnDevice && (
+              <span className="inline-flex items-center gap-1 text-success-text">
+                <CheckCircle2 aria-hidden className="size-3.5" />
+                Đã tải về máy
+              </span>
+            )}
           </p>
         </div>
         {/* The whole card is the target; the link's own text stays for screen readers. */}

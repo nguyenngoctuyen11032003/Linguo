@@ -11,6 +11,8 @@ export interface DownloadJob {
   /** Increases with every job so the UI can tell a new one from the previous one. */
   id: number;
   kind: DownloadKind;
+  /** Which button started it (`path`, `unit:<id>`, ...), so only that control shows the progress. */
+  scope?: string;
   /** Started by the automatic caching, not by the learner. */
   auto: boolean;
   running: boolean;
@@ -24,6 +26,8 @@ export interface DownloadJob {
 
 export interface DownloadRequest {
   kind: DownloadKind;
+  /** Echoed on the job (see DownloadJob.scope). */
+  scope?: string;
   lessonIds: readonly string[];
   /** Defaults to the current path. */
   pathId?: string;

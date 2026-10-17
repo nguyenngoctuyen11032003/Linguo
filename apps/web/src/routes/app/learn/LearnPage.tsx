@@ -12,6 +12,7 @@ import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { cn } from '@/lib/cn';
 import { playSound } from '@/lib/sound';
 import { groupPathLessons, learnedCount, pendingPrerequisiteTitles, pickNextLesson, type UnitGroup } from './grouping';
+import { DownloadControl, LessonOfflineTag, SavedListNotice, useLessonUnavailable } from './OfflineControls';
 import '../home/home.css';
 import { readUnitOpen, writeUnitOpen, type UnitOpenState } from './unit-open';
 
@@ -98,14 +99,23 @@ function LessonNode({ lesson, index, isNext }: { lesson: PathLesson; index: numb
 function LessonRow({ lesson, lessons, nextId, index }: { lesson: PathLesson; lessons: PathLesson[]; nextId: string | null; index: number }) {
   const isNext = lesson.lesson_id === nextId;
   const prerequisites = lesson.prerequisites_met ? [] : pendingPrerequisiteTitles(lesson, lessons);
+  // Offline and never downloaded: the row stays visible (the learner sees what to download) but cannot be opened.
+  const unavailable = useLessonUnavailable(lesson);
+  const rowClass = cn(
+    'group flex min-h-16 items-center gap-3 rounded-[1.25rem] py-2 pl-1 pr-2 sm:gap-4 sm:pr-3 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
+    unavailable ? 'opacity-60' : 'hover:bg-text/[0.04]',
+    isNext && 'bg-accent/[0.07] ring-1 ring-accent/25 ring-inset',
+  );
   return (
     <Link
       to={`/app/hoc-tap/bai/${lesson.lesson_id}`}
-      onClick={() => playSound('tap')}
-      className={cn(
-        'group flex min-h-16 items-center gap-3 rounded-[1.25rem] py-2 pl-1 pr-2 sm:gap-4 sm:pr-3 transition-colors hover:bg-text/[0.04] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/45',
-        isNext && 'bg-accent/[0.07] ring-1 ring-accent/25 ring-inset',
-      )}
+      aria-disabled={unavailable || undefined}
+      tabIndex={unavailable ? -1 : undefined}
+      onClick={(event) => {
+        if (unavailable) event.preventDefault();
+        else playSound('tap');
+      }}
+      className={rowClass}
     >
       <LessonNode lesson={lesson} index={index} isNext={isNext} />
       <span className="min-w-0 flex-1 space-y-1">
@@ -121,6 +131,7 @@ function LessonRow({ lesson, lessons, nextId, index }: { lesson: PathLesson; les
             <Clock aria-hidden className="size-3.5" />
             {lesson.estimated_minutes} phút
           </span>
+          <LessonOfflineTag lesson={lesson} />
         </span>
         {!lesson.prerequisites_met && (
           <span className="flex items-start gap-1.5 text-[13px] text-muted">
@@ -129,7 +140,7 @@ function LessonRow({ lesson, lessons, nextId, index }: { lesson: PathLesson; les
           </span>
         )}
       </span>
-      <ChevronRight aria-hidden className="size-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5" />
+      {!unavailable && <ChevronRight aria-hidden className="size-5 shrink-0 text-muted transition-transform group-hover:translate-x-0.5" />}
     </Link>
   );
 }
@@ -208,6 +219,9 @@ function UnitSection({
           <ChevronDown aria-hidden className="size-5 shrink-0 text-muted transition-transform group-open:rotate-180" />
         </summary>
         {/* The path spine runs through the centre of the lesson nodes. */}
+        <div className="px-4 pb-3">
+          <DownloadControl scope={`unit:${unit.id}`} kind="unit" lessons={unit.lessons} label="Tải về học offline" compact />
+        </div>
         <ul className="relative space-y-1 px-2.5 pb-3 sm:px-3 before:absolute before:bottom-8 before:left-[calc(2.5rem-1px)] sm:before:left-[calc(2.75rem-1px)] before:top-6 before:w-0.5 before:rounded-full before:bg-border">
           {unit.lessons.map((lesson, i) => (
             <li key={lesson.lesson_id}>
@@ -223,7 +237,7 @@ function UnitSection({
 /** /app/hoc-tap: programs → units → lessons of the current learning path. */
 export function LearnPage() {
   const paths = useLearningPaths();
-  const { status, lessons, error, reload } = usePathLessons();
+  const { status, lessons, error, reload, fromCache } = usePathLessons();
   // Units the learner opened/closed in this tab; the others follow the default (open = holds the recommended lesson).
   const [openUnits, setOpenUnits] = useState<UnitOpenState>(readUnitOpen);
   const toggleUnit = (id: string, open: boolean) =>
@@ -301,6 +315,8 @@ export function LearnPage() {
         )}
         </aside>
         <div className="space-y-10 lg:col-span-8 lg:col-start-1 lg:row-start-1">
+        <SavedListNotice fromCache={fromCache} />
+        <DownloadControl scope="path" kind="path" lessons={lessons} label="Tải cả lộ trình" />
         {groupPathLessons(lessons).map((program) => (
           <section key={program.id} aria-labelledby={`program-${program.id}`} className="space-y-4">
             <div className="space-y-2.5">
