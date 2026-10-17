@@ -1,0 +1,332 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u2-ich-heisse
+order_index: 4
+level: pre_a1
+title:
+  vi: Tôi là… – âm r, phụ âm cuối (Ich heiße …)
+objectives:
+  - vi: Nói tên và nơi mình đến bằng câu mẫu – Ich heiße …, Ich bin …, Ich komme aus Vietnam.
+  - vi: Hỏi tên người khác đúng mức thân mật hay lịch sự – Wie heißt du? / Wie heißen Sie? – và hỏi lại Und du? / Und Sie?
+  - vi: Phát âm r lưỡi gà (richtig, drei) và r biến thành “a” nhẹ (Uhr, vier).
+  - vi: Đọc b, d, g cuối từ thành p, t, k và không nuốt phụ âm cuối (Tag, und).
+estimated_minutes: 12
+skills: [pronunciation, speaking, listening]
+prerequisites: [de:lesson:p0u2-sch-sp-st]
+items:
+  - item: de:item:p0u2-g-r-laut
+  - item: de:item:p0u2-g-auslautverhaertung
+  - item: de:item:p0u2-ich-heisse
+  - item: de:item:p0u2-ich-bin
+  - item: de:item:p0u2-wie-heisst-du
+  - item: de:item:p0u2-wie-heissen-sie
+  - item: de:item:p0u2-ich-komme-aus-vietnam
+  - item: de:item:p0u2-freut-mich
+  - item: de:item:p0u2-und
+  - item: de:item:p0u2-auch
+  - item: de:item:p0u2-und-du
+  - item: de:item:p0u2-und-sie
+  - item: de:item:p0u1-g-diphthonge
+    role: reuse
+  - item: de:item:p0u1-uhr
+    role: reuse
+  - item: de:item:p0u2-guten-tag
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự giới thiệu tên và quê bằng tiếng Đức, hỏi lại người kia đúng mức thân mật hay lịch sự, và phát âm rõ âm r cùng các phụ âm cuối.
+  - type: explain
+    text:
+      vi: r đầu âm tiết hoặc sau phụ âm là r lưỡi gà – lưỡi không rung, cuống lưỡi nâng sát về phía sau họng và hơi cọ nhẹ, gần “g/gh” tiếng Việt nhưng lùi sâu hơn – richtig, drei, Frau. Đừng rung đầu lưỡi như “r” miền Nam, cũng đừng đọc thành “z/d” như giọng Bắc.
+  - type: explain
+    text:
+      vi: Khi r đứng sau nguyên âm dài ở cuối âm tiết, hoặc trong đuôi -er, nó không còn là phụ âm mà thành “a” rất nhẹ – Uhr “u-a”, vier “phi-a”, sehr “dê-a”, Lehrer “LÊ-ra”.
+  - type: explain
+    text:
+      vi: b, d, g ở cuối từ hoặc cuối âm tiết đọc thành p, t, k – Tag “taak”, und “unt”, gelb “ghelp”. Tiếng Việt hay nuốt âm cuối, còn tiếng Đức phải bật nhẹ cho nghe rõ, nhưng không thêm “ơ” phía sau (không nói “un-đơ”).
+  - type: explain
+    text:
+      vi: Bạn nói tên bằng Ich heiße … hoặc Ich bin …, nói quê bằng Ich komme aus …. Hỏi bạn bè, người trẻ Wie heißt du?, hỏi người lạ, người lớn tuổi Wie heißen Sie?; muốn hỏi lại thì dùng Und du? hoặc Und Sie?. Học các câu này như cụm cố định, cách chia động từ bạn sẽ học ở A1.
+  - type: explain
+    text:
+      vi: Các câu này ôn lại nguyên âm đôi của P0U1 – heiße có ei = “ai”, Freut có eu = “oi”, aus và auch có au = “ao”.
+  - type: deep_explain
+    text:
+      vi: Ich heiße Minh và Ich bin Minh cùng nghĩa, nhưng không được ghép thành Ich bin heiße Minh. Freut mich! là dạng ngắn của Es freut mich (Tôi rất vui), dùng được cả với du lẫn Sie. Vietnam là từ mượn nên v đọc “v”, trọng âm ở “nam”. r rung đầu lưỡi vẫn có ở Bayern, Áo, Thụy Sĩ và được hiểu, nhưng r lưỡi gà là cách phổ biến nhất. Âm cuối Tag và Tage khác nhau – Tag “taak”, nhưng Tage “TAA-gơ”, vì g không còn ở cuối âm tiết.
+  - type: example
+    target: "Hallo! Ich heiße Lan. Wie heißt du? – Ich bin Jonas."
+    target_lang: de
+    translation:
+      vi: "Chào bạn! Mình tên là Lan. Bạn tên gì? – Mình là Jonas."
+    note:
+      vi: Hai bạn trẻ làm quen, dùng du (thân mật). heiße, heißt có ei = “ai” và ß = “x”.
+  - type: example
+    target: "Guten Tag! Wie heißen Sie? – Ich heiße Anna Becker. Und Sie?"
+    target_lang: de
+    translation:
+      vi: "Xin chào! Chị tên là gì ạ? – Tôi tên là Anna Becker. Còn anh?"
+    note:
+      vi: Hai người lớn gặp nhau lần đầu, dùng Sie (lịch sự) và hỏi lại bằng Und Sie?. Sie viết hoa. g cuối của Tag đọc “k”.
+  - type: example
+    target: "Ich komme aus Vietnam. – Ich komme auch aus Vietnam!"
+    target_lang: de
+    translation:
+      vi: "Tôi đến từ Việt Nam. – Tôi cũng đến từ Việt Nam!"
+    note:
+      vi: auch (cũng) đứng ngay sau komme. aus = “ao-x”, auch = “aokh”.
+  - type: example
+    target: "Ich heiße Minh und ich komme aus Hanoi. – Freut mich! Ich bin Felix."
+    target_lang: de
+    translation:
+      vi: "Mình tên là Minh và mình đến từ Hà Nội. – Rất vui được gặp bạn! Mình là Felix."
+    note:
+      vi: Thân mật (du). und đọc “unt”, d cuối phải nghe thấy. Freut có Fr = “ph” + r lưỡi gà.
+  - type: common_mistake
+    wrong: "Ich bin heiße Minh."
+    right: "Ich heiße Minh."
+    target_lang: de
+    note:
+      vi: Chọn một trong hai – Ich heiße Minh hoặc Ich bin Minh. Không dùng bin và heiße cùng lúc như “tôi là tên là”.
+  - type: common_mistake
+    wrong: "Wie heißt Sie?"
+    right: "Wie heißen Sie?"
+    target_lang: de
+    note:
+      vi: Sie (lịch sự) đi với heißen; heißt chỉ đi với du – Wie heißt du?
+  - type: common_mistake
+    wrong: "Ich komme von Vietnam."
+    right: "Ich komme aus Vietnam."
+    target_lang: de
+    note:
+      vi: Nói nơi xuất thân dùng aus (từ trong ra), không dùng von như tiếng Anh “from”.
+  - type: summary
+    points:
+      - vi: r đầu âm tiết, sau phụ âm = r lưỡi gà (richtig, drei); r cuối âm tiết sau nguyên âm dài, -er = “a” nhẹ (Uhr, vier).
+      - vi: b, d, g cuối từ = p, t, k (Tag, und, gelb); bật rõ, không thêm “ơ”.
+      - vi: Ich heiße … / Ich bin … + tên; Ich komme aus Vietnam.
+      - vi: Thân mật Wie heißt du? – Und du?; lịch sự Wie heißen Sie? – Und Sie?
+      - vi: Freut mich! = Rất vui được gặp bạn; und = và; auch = cũng (đứng sau động từ).
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u2l4-listen-wie-heissen-sie
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-wie-heissen-sie
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Wie heißen Sie?"
+      options:
+        - { id: a7h, text: "Wie heißen Sie?", lang: de }
+        - { id: a2d, text: "Wie heißt du?", lang: de }
+        - { id: a9g, text: "Wie geht's?", lang: de }
+    answer:
+      correct_option_id: a7h
+    explanation:
+      vi: Bạn nghe “HAI-xần di” – đuôi -en và từ Sie ở cuối, đó là câu hỏi tên lịch sự Wie heißen Sie?. Wie heißt du? kết thúc bằng “du”, còn Wie geht's? là câu hỏi thăm.
+    display_answer: "Wie heißen Sie?"
+
+  - key: de:exercise:p0u2l4-listen-drei-frei
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-g-r-laut
+    prompt:
+      audio_asset_id: null
+      fallback_text: "drei"
+      options:
+        - { id: r3d, text: "drei", lang: de }
+        - { id: r2z, text: "zwei", lang: de }
+        - { id: r6f, text: "frei", lang: de }
+    answer:
+      correct_option_id: r3d
+    explanation:
+      vi: Bạn nghe “đ” rồi r lưỡi gà – drei (ba). zwei bắt đầu bằng “tsv”, frei bắt đầu bằng “ph” rồi mới đến r.
+    display_answer: "drei"
+
+  - key: de:exercise:p0u2l4-mcq-und-t
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u2-g-auslautverhaertung
+    prompt:
+      stem: "Chữ d ở cuối und đọc thế nào?"
+      stem_lang: vi
+      options:
+        - { id: d1t, text: "Thành “t”, bật nhẹ cho nghe rõ: “unt”", lang: vi }
+        - { id: d2d, text: "Vẫn là “đ”: “unđ”", lang: vi }
+        - { id: d3n, text: "Không đọc, chỉ còn “un”", lang: vi }
+        - { id: d4o, text: "Thêm “ơ” phía sau: “un-đơ”", lang: vi }
+    answer:
+      correct_option_id: d1t
+    explanation:
+      vi: b, d, g ở cuối từ đọc thành p, t, k, nên und đọc “unt”. Nuốt mất âm cuối hay thêm “ơ” đều là lỗi hay gặp của người Việt.
+    display_answer: "Thành “t”, bật nhẹ cho nghe rõ: “unt”"
+
+  - key: de:exercise:p0u2l4-mcq-r-uhr
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-g-r-laut
+    prompt:
+      stem: "Chữ r ở cuối Uhr và vier (sau nguyên âm dài) đọc thế nào?"
+      stem_lang: vi
+      options:
+        - { id: u5a, text: "Thành “a” rất nhẹ: “u-a”, “phi-a”", lang: vi }
+        - { id: u8r, text: "Rung đầu lưỡi thật rõ", lang: vi }
+        - { id: u1z, text: "Như “z/d” giọng Bắc", lang: vi }
+        - { id: u4g, text: "r lưỡi gà cọ mạnh như ở đầu từ", lang: vi }
+    answer:
+      correct_option_id: u5a
+    explanation:
+      vi: Sau nguyên âm dài ở cuối âm tiết, r không còn là phụ âm mà thành “a” nhẹ – Uhr “u-a”, vier “phi-a”. r lưỡi gà rõ ràng chỉ có ở đầu âm tiết như richtig, drei.
+    display_answer: "Thành “a” rất nhẹ: “u-a”, “phi-a”"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u2l4-fill-heisst-heisse
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-wie-heisst-du
+    prompt:
+      template: "A: Hallo! Wie {{b1}} du? – B: Ich {{b2}} Tuan. Und du?"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [heißt]
+        b2: [heiße, bin]
+    known_wrong:
+      - answer: heißen
+        feedback_vi: heißen đi với Sie (lịch sự). Ở đây dùng Wie heißt du? và Ich heiße …
+        error_tag: verb_form
+    explanation:
+      vi: Hỏi thân mật là Wie heißt du?; trả lời Ich heiße Tuan (hoặc Ich bin Tuan). Đây là các câu mẫu cố định của bài.
+    display_answer: "A: Hallo! Wie heißt du? – B: Ich heiße Tuan. Und du?"
+
+  - key: de:exercise:p0u2l4-tr-aus-vietnam
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-ich-komme-aus-vietnam
+    prompt:
+      source_text: "Tôi đến từ Việt Nam."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "Ich komme aus Vietnam."
+        - "Ich bin aus Vietnam."
+        - "Aus Vietnam komme ich."
+    known_wrong:
+      - answer: "Ich komme von Vietnam."
+        feedback_vi: Nơi xuất thân dùng aus, không dùng von – Ich komme aus Vietnam.
+        error_tag: preposition
+      - answer: "Ich bin von Vietnam."
+        feedback_vi: Nơi xuất thân dùng aus, không dùng von – Ich komme aus Vietnam.
+        error_tag: preposition
+      - answer: "Ich komme Vietnam."
+        feedback_vi: Thiếu aus – Ich komme aus Vietnam.
+        error_tag: preposition
+    explanation:
+      vi: “Đến từ” một nước, một thành phố là kommen aus – Ich komme aus Vietnam. Vietnam là từ mượn nên v đọc “v”.
+    display_answer: "Ich komme aus Vietnam."
+
+  - key: de:exercise:p0u2l4-tr-wie-heissen-sie
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-wie-heissen-sie
+    prompt:
+      source_text: "Ông tên là gì ạ? (hỏi một người lớn tuổi mới gặp, lịch sự)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "Wie heißen Sie?"
+        - "Wie heißen Sie, bitte?"
+        - "Wie ist Ihr Name?"
+    known_wrong:
+      - answer: "Wie heißt du?"
+        feedback_vi: Wie heißt du? là thân mật, dùng với bạn bè, người trẻ. Với người lớn tuổi mới gặp hãy hỏi Wie heißen Sie?
+        error_tag: register_du_sie
+      - answer: "Wie heißt Sie?"
+        feedback_vi: Sie đi với heißen – Wie heißen Sie?
+        error_tag: verb_form
+    explanation:
+      vi: Với người lạ, người lớn tuổi, dùng Sie (lịch sự, luôn viết hoa) và động từ heißen – Wie heißen Sie?
+    display_answer: "Wie heißen Sie?"
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u2l4-wb-kennenlernen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-freut-mich
+    prompt:
+      instruction: "Sắp xếp đoạn làm quen giữa hai bạn trẻ: Lan chào, nói tên mình và hỏi tên Jonas; Jonas trả lời rồi nói “Rất vui được gặp bạn!”."
+      tokens:
+        - { id: k-bin, text: "Ich bin Jonas." }
+        - { id: k-sie, text: "Wie heißen Sie?" }
+        - { id: k-freut, text: "Freut mich!" }
+        - { id: k-hallo, text: "Hallo! Ich heiße Lan." }
+        - { id: k-du, text: "Wie heißt du?" }
+    answer:
+      orders:
+        - [k-hallo, k-du, k-bin, k-freut]
+    explanation:
+      vi: Lan chào và nói tên (Hallo! Ich heiße Lan.), hỏi tên thân mật (Wie heißt du?), Jonas trả lời (Ich bin Jonas.) và nói Freut mich!. Hai bạn trẻ dùng du, nên không dùng Wie heißen Sie?
+    display_answer: "Hallo! Ich heiße Lan. Wie heißt du? Ich bin Jonas. Freut mich!"
+
+  - key: de:exercise:p0u2l4-mcq-sie-situation
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-und-sie
+    prompt:
+      stem: "Ở buổi gặp mặt của công ty, một bà cụ người Đức nói: “Guten Tag! Ich heiße Ingrid Weber.” Bạn giới thiệu tên mình rồi hỏi lại thế nào cho lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: m3s, text: "Ich heiße Hoa. Und Sie?", lang: de }
+        - { id: m6d, text: "Ich heiße Hoa. Und du?", lang: de }
+        - { id: m1t, text: "Ich heiße Hoa. Tschüss!", lang: de }
+        - { id: m8w, text: "Ich heiße Hoa. Wie geht's?", lang: de }
+    answer:
+      correct_option_id: m3s
+    explanation:
+      vi: Với người lớn tuổi mới gặp, bạn dùng Sie – Und Sie? (Còn bà?). Und du? và Wie geht's? là thân mật, còn Tschüss là lời chia tay.
+    display_answer: "Ich heiße Hoa. Und Sie?"
+
+  - key: de:exercise:p0u2l4-listen-anna-becker
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-ich-heisse
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag! Ich heiße Anna Becker und ich komme aus Berlin. Und Sie?"
+      options:
+        - { id: c4b, text: "Bà Anna Becker đến từ Berlin và hỏi lại bạn.", lang: vi }
+        - { id: c7k, text: "Bà Anna Becker hỏi bạn có khoẻ không.", lang: vi }
+        - { id: c2t, text: "Bà Anna Becker chào tạm biệt bạn.", lang: vi }
+        - { id: c9v, text: "Bà Anna Becker đến từ Việt Nam.", lang: vi }
+    answer:
+      correct_option_id: c4b
+    explanation:
+      vi: Ich heiße Anna Becker là “Tôi tên là Anna Becker”, ich komme aus Berlin là “tôi đến từ Berlin”, còn Und Sie? là câu hỏi lại lịch sự “Còn anh/chị?”.
+    display_answer: "Bà Anna Becker đến từ Berlin và hỏi lại bạn."

@@ -1,0 +1,334 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u2-sch-sp-st
+order_index: 3
+level: pre_a1
+title:
+  vi: s, sch, sp, st, ß (Schule, Sport, Straße)
+objectives:
+  - vi: Đọc s trước nguyên âm như “d” giọng Bắc (sehr, Sonne, Musik) và s cuối từ như “x” (Bus, eins).
+  - vi: Đọc đúng sch, và sp/st ở đầu từ là “schp/scht” (Sport, Student, Straße).
+  - vi: Biết khi nào viết ss (sau nguyên âm ngắn) và khi nào viết ß (sau nguyên âm dài hoặc nguyên âm đôi).
+  - vi: Dùng Entschuldigung! để xin lỗi hoặc gọi người lạ.
+estimated_minutes: 12
+skills: [pronunciation, listening, reading]
+prerequisites: [de:lesson:p0u2-zahlen-bis-20]
+items:
+  - item: de:item:p0u2-g-s-laute
+  - item: de:item:p0u2-schule
+  - item: de:item:p0u2-sport
+  - item: de:item:p0u2-strasse
+  - item: de:item:p0u2-student
+  - item: de:item:p0u2-studentin
+  - item: de:item:p0u2-fussball
+  - item: de:item:p0u2-musik
+  - item: de:item:p0u2-sehr
+  - item: de:item:p0u2-entschuldigung
+  - item: de:item:p0u2-schueler
+  - item: de:item:p0u2-schuelerin
+  - item: de:item:p0u1-schoen
+    role: reuse
+  - item: de:item:p0u1-sonne
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc đúng các âm “s” của tiếng Đức, viết đúng ss hay ß, và nói được những từ đầu tiên về trường học và thể thao.
+  - type: explain
+    text:
+      vi: Chữ s đứng trước nguyên âm ở đầu âm tiết đọc như “d” giọng Bắc (như trong “da”) – sehr, Sonne, sieben, Musik. Ở cuối từ hoặc cạnh phụ âm, s đọc “x” – Bus, eins. Người Việt hay đọc Sonne thành “xo-nơ”; hãy để dây thanh rung như khi nói “d”.
+  - type: explain
+    text:
+      vi: Cụm sch là một âm, giống “s” uốn lưỡi của tiếng Việt chuẩn nhưng môi chu tròn ra phía trước – Schule, Schüler, falsch. Đây cũng là âm cuối của tsch trong Tschüss.
+  - type: explain
+    text:
+      vi: Khi sp và st đứng đầu từ, chúng đọc là “schp” và “scht” – Sport, Student, Straße. Đừng đọc kiểu tiếng Anh “xpo”, “xtu”. Ở giữa hay cuối từ, st đọc bình thường “xt” – ist, Post.
+  - type: explain
+    text:
+      vi: ss và ß đọc giống nhau là “x”, chỉ khác cách viết. Sau nguyên âm ngắn viết ss (Tschüss, Wasser); sau nguyên âm dài hoặc nguyên âm đôi viết ß (Straße, Fußball, heißen). Nếu bàn phím không có ß, bạn gõ ss – máy chấm vẫn tính đúng.
+  - type: deep_explain
+    text:
+      vi: sp, st cũng đọc “schp/scht” ở đầu một phần của từ ghép hoặc sau tiền tố – Hauptstraße (Haupt + Straße), verstehen (ver + stehen). Ở miền Nam Đức, Áo và Thụy Sĩ, s đầu từ thường đọc “x”; bạn vẫn được hiểu, nhưng chuẩn phổ biến là “d” rung. Thụy Sĩ không dùng ß mà luôn viết ss (Strasse). Student thuộc nhóm danh từ đổi đuôi ở các cách khác (den Studenten), bạn sẽ học ở B1. Entschuldigung! vừa là lời xin lỗi, vừa là cách lịch sự để gọi một người lạ trước khi hỏi.
+  - type: example
+    target: "Entschuldigung, wo ist die Schule?"
+    target_lang: de
+    translation:
+      vi: "Xin lỗi, trường học ở đâu ạ?"
+    note:
+      vi: Mở lời với người lạ trên phố bằng Entschuldigung. Wo ist …? (… ở đâu?) bạn sẽ học ở A1.
+  - type: example
+    target: "Ich bin Student. Lan ist Studentin."
+    target_lang: de
+    translation:
+      vi: "Tôi là sinh viên. Lan là sinh viên."
+    note:
+      vi: Nam là Student, nữ là Studentin. Nói nghề, vai trò thì không cần mạo từ. st đầu từ đọc “scht”.
+  - type: example
+    target: "Die Straße ist sehr schön."
+    target_lang: de
+    translation:
+      vi: "Con phố rất đẹp."
+    note:
+      vi: Straße có ß vì a dài; sehr có s = “d” giọng Bắc; schön có ö đã học ở P0U1.
+  - type: example
+    target: "Der Schüler spielt Fußball."
+    target_lang: de
+    translation:
+      vi: "Cậu học sinh chơi bóng đá."
+    note:
+      vi: sp trong spielt đọc “schp”; Fußball có ß vì u dài. Động từ spielen (chơi) bạn sẽ học ở A1.
+  - type: example
+    target: "Sport und Musik – sehr gut!"
+    target_lang: de
+    translation:
+      vi: "Thể thao và âm nhạc – rất tuyệt!"
+    note:
+      vi: Sport = “shport”; Musik có s giữa hai nguyên âm nên đọc “mu-DIK”.
+  - type: common_mistake
+    wrong: "Strasse"
+    right: "Straße"
+    target_lang: de
+    note:
+      vi: Ở Đức, sau nguyên âm dài (a trong Straße) viết ß. Strasse chỉ là cách viết của Thụy Sĩ hoặc khi không gõ được ß.
+  - type: common_mistake
+    wrong: "Tschüß"
+    right: "Tschüss"
+    target_lang: de
+    note:
+      vi: ü trong Tschüss ngắn nên viết ss. Tschüß là chính tả cũ trước năm 1996, nay không dùng nữa.
+  - type: common_mistake
+    wrong: "Lan ist Student."
+    right: "Lan ist Studentin."
+    target_lang: de
+    note:
+      vi: Người nữ dùng dạng có đuôi -in – Studentin, Schülerin. Tiếng Việt chỉ nói “sinh viên”, nhưng tiếng Đức phân biệt nam và nữ.
+  - type: summary
+    points:
+      - vi: s + nguyên âm = “d” giọng Bắc (sehr, Sonne); s cuối từ = “x” (Bus, eins).
+      - vi: sch = “s” uốn lưỡi, môi chu (Schule, Schüler).
+      - vi: sp, st đầu từ = “schp”, “scht” (Sport, Student, Straße); giữa, cuối từ st = “xt” (ist).
+      - vi: ss sau nguyên âm ngắn (Tschüss), ß sau nguyên âm dài hoặc đôi (Straße, Fußball, heißen).
+      - vi: Nữ thêm -in – Studentin, Schülerin. Entschuldigung! = xin lỗi, gọi người lạ.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u2l3-mcq-st-student
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-g-s-laute
+    prompt:
+      stem: "Trong từ nào, st đọc là “scht”?"
+      stem_lang: vi
+      options:
+        - { id: t5s, text: "Student", lang: de }
+        - { id: t2i, text: "ist", lang: de }
+        - { id: t8p, text: "Post", lang: de }
+        - { id: t3f, text: "Fenster", lang: de }
+    answer:
+      correct_option_id: t5s
+    explanation:
+      vi: st chỉ đọc “scht” khi đứng đầu từ – Student. Trong ist, Post, Fenster, st nằm giữa hoặc cuối từ nên đọc “xt”.
+    display_answer: "Student"
+
+  - key: de:exercise:p0u2l3-listen-stein-schein
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-g-s-laute
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Stein"
+      options:
+        - { id: l1s, text: "Stein", lang: de }
+        - { id: l2c, text: "Schein", lang: de }
+        - { id: l3z, text: "sein", lang: de }
+    answer:
+      correct_option_id: l1s
+    explanation:
+      vi: Bạn nghe “schtain” – có âm “t” ngay sau “sch”, đó là Stein (hòn đá). Schein đọc “shain” (không có t), còn sein đọc “dain” với s như “d” giọng Bắc.
+    display_answer: "Stein"
+
+  - key: de:exercise:p0u2l3-mcq-s-stimmhaft
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u2-sehr
+    prompt:
+      stem: "Chữ s ở đầu sehr và Sonne đọc gần nhất với âm nào của tiếng Việt?"
+      stem_lang: vi
+      options:
+        - { id: v4d, text: "“d” giọng Bắc, như trong “da”", lang: vi }
+        - { id: v7x, text: "“x” như trong “xa”", lang: vi }
+        - { id: v2s, text: "“s” uốn lưỡi, môi chu như sch", lang: vi }
+        - { id: v9t, text: "“t” như trong “ta”", lang: vi }
+    answer:
+      correct_option_id: v4d
+    explanation:
+      vi: s đứng trước nguyên âm ở đầu âm tiết là âm rung, giống “d” giọng Bắc – sehr đọc “dê-a”, Sonne đọc “DO-nơ”. Âm “x” chỉ dùng cho s cuối từ hoặc ss, ß.
+    display_answer: "“d” giọng Bắc, như trong “da”"
+
+  - key: de:exercise:p0u2l3-mcq-ss-eszett
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-strasse
+    prompt:
+      stem: "Vì sao Straße viết ß, còn Tschüss viết ss?"
+      stem_lang: vi
+      options:
+        - { id: e6a, text: "Vì a trong Straße dài, còn ü trong Tschüss ngắn.", lang: vi }
+        - { id: e1n, text: "Vì ß chỉ dùng trong danh từ.", lang: vi }
+        - { id: e3c, text: "Vì ss chỉ đứng ở cuối từ.", lang: vi }
+        - { id: e8l, text: "Vì ß và ss đọc khác nhau.", lang: vi }
+    answer:
+      correct_option_id: e6a
+    explanation:
+      vi: Sau nguyên âm dài hoặc nguyên âm đôi viết ß, sau nguyên âm ngắn viết ss; hai cách viết đọc giống nhau là “x”. heißen là động từ nhưng vẫn có ß, còn Wasser có ss ở giữa từ.
+    display_answer: "Vì a trong Straße dài, còn ü trong Tschüss ngắn."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u2l3-fill-studentin
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-studentin
+    prompt:
+      template: "Minh ist Student. Lan ist auch {{b1}}. Tom ist Schüler. Mia ist auch {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [Studentin]
+        b2: [Schülerin]
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Student
+        feedback_vi: Lan là nữ nên dùng Studentin (thêm -in).
+        error_tag: gender
+      - answer: Schüler
+        feedback_vi: Mia là nữ nên dùng Schülerin (thêm -in).
+        error_tag: gender
+    explanation:
+      vi: auch nghĩa là “cũng” – Lan cũng là sinh viên, Mia cũng là học sinh. Vì Lan và Mia là nữ, ta thêm -in – Studentin, Schülerin.
+    display_answer: "Minh ist Student. Lan ist auch Studentin. Tom ist Schüler. Mia ist auch Schülerin."
+
+  - key: de:exercise:p0u2l3-tr-entschuldigung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-entschuldigung
+    prompt:
+      source_text: "Xin lỗi! (để gọi một người lạ trên phố)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "Entschuldigung!"
+        - "Entschuldigen Sie!"
+        - "Entschuldigen Sie bitte!"
+        - "Entschuldigung, bitte!"
+        - "Verzeihung!"
+    known_wrong:
+      - answer: "Tschüss!"
+        feedback_vi: Tschüss là “tạm biệt”. Để xin lỗi hay gọi người lạ, nói Entschuldigung!
+        error_tag: meaning
+      - answer: "Danke!"
+        feedback_vi: Danke là “cảm ơn”. “Xin lỗi” là Entschuldigung!
+        error_tag: meaning
+    explanation:
+      vi: Entschuldigung! dùng cả để xin lỗi lẫn để gọi người lạ một cách lịch sự. Trong từ này, tsch đọc gần “ch” bật mạnh, trọng âm ở “SCHUL”.
+    display_answer: "Entschuldigung!"
+
+  - key: de:exercise:p0u2l3-tr-fussball
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-fussball
+    prompt:
+      source_text: "bóng đá (môn thể thao)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "der Fußball"
+        - "Fußball"
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "das Fußball"
+        feedback_vi: Fußball là giống đực – der Fußball.
+        error_tag: article
+      - answer: "die Fußball"
+        feedback_vi: Fußball là giống đực – der Fußball.
+        error_tag: article
+      - answer: "der Fusball"
+        feedback_vi: u trong Fuß dài nên viết ß (hoặc gõ ss), không viết một chữ s.
+        error_tag: spelling_s
+    explanation:
+      vi: “Bóng đá” là der Fußball. u dài nên viết ß; nếu không gõ được ß, bạn gõ ss (Fussball) vẫn được tính đúng.
+    display_answer: "der Fußball"
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u2l3-mcq-entschuldigung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-entschuldigung
+    prompt:
+      stem: "Bạn lạc đường ở Berlin và muốn hỏi một người lạ đang đi ngang qua. Bạn mở lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: g3e, text: "Entschuldigung!", lang: de }
+        - { id: g7t, text: "Tschüss!", lang: de }
+        - { id: g1n, text: "Gute Nacht!", lang: de }
+        - { id: g5d, text: "Danke, gut.", lang: de }
+    answer:
+      correct_option_id: g3e
+    explanation:
+      vi: Entschuldigung! là cách lịch sự để gọi người lạ trước khi hỏi đường. Tschüss và Gute Nacht là lời chia tay, còn Danke, gut. là câu trả lời cho Wie geht's?
+    display_answer: "Entschuldigung!"
+
+  - key: de:exercise:p0u2l3-tr-schule-schoen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-schule
+    prompt:
+      source_text: "Die Schule ist sehr schön."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Trường học rất đẹp."
+        - "Trường rất đẹp."
+        - "Ngôi trường rất đẹp."
+        - "Trường học đẹp lắm."
+        - "Trường đẹp lắm."
+        - "Ngôi trường đẹp lắm."
+        - "Trường học rất là đẹp."
+        - "Ngôi trường rất là đẹp."
+        - "Trường học thật đẹp."
+        - "Ngôi trường thật đẹp."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "Con phố rất đẹp."
+        feedback_vi: Con phố là die Straße; die Schule là trường học.
+        error_tag: meaning
+    explanation:
+      vi: die Schule là trường học, sehr là “rất”, schön là “đẹp”. Trong câu, sch đọc “s” uốn lưỡi, sehr có s = “d” giọng Bắc.
+    display_answer: "Trường học rất đẹp."

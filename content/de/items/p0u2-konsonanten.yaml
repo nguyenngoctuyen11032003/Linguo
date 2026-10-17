@@ -1,0 +1,971 @@
+# Học liệu unit P0U2 "Phụ âm và những câu đầu tiên" (pre-A1). front.ipa theo chuẩn Hochdeutsch (Đức); so sánh âm với tiếng Việt trong pronunciation_note.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- bài 1: chào hỏi – w, v, f, z ----------------
+  - key: de:item:p0u2-g-w-v-f-z
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "Die Laute w, v, f und z: Wasser, Vater, Video, Zeit"
+      ipa: "/v/ Wasser · /f/ Vater · /v/ Video · /f/ Foto · /ts/ Zeit"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "Chữ w đọc như “v” tiếng Việt; chữ v trong từ Đức thường đọc như “ph” (Vater, vier), chỉ trong từ mượn mới là “v” (Video, Vietnam). Chữ f và ph đều là “ph”. Chữ z, zz và tz luôn đọc là “ts”."
+      examples:
+        - target: "Wie geht's?"
+          translation:
+            vi: "Khoẻ không? (w = “v”: “vi”)"
+        - target: "vier, Vater, viel"
+          translation:
+            vi: "bốn, bố, nhiều (v = “ph”)"
+        - target: "zehn, zwei, Zeit, Pizza"
+          translation:
+            vi: "mười, hai, thời gian, pizza (z, zz = “ts”)"
+      pronunciation_note:
+        vi: "z là “t” và “x” dính liền thành một âm “ts”, đừng đọc thành “d” hay “z” kiểu tiếng Anh. w là “v” có răng trên chạm môi dưới, không tròn môi thành “u-ê” như tiếng Anh."
+      confusion:
+        vi: "vier (bốn, đọc “phia”) và wir (chúng tôi, đọc “via”) chỉ khác nhau ở âm đầu ph/v."
+
+  - key: de:item:p0u2-hallo
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Hallo!"
+      ipa: "/ˈhalo/, /haˈloː/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Xin chào! (thân mật, dùng mọi lúc trong ngày với bạn bè, người quen, người trẻ)."
+      examples:
+        - target: "Hallo, Lan!"
+          translation:
+            vi: "Chào Lan!"
+      pronunciation_note:
+        vi: "h đầu từ là “h” bật hơi như tiếng Việt; trọng âm thường ở âm đầu: “HA-lô”."
+
+  - key: de:item:p0u2-guten-morgen
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Guten Morgen!"
+      ipa: "/ˈɡuːtn̩ ˈmɔʁɡn̩/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Chào buổi sáng! (dùng đến khoảng 10–11 giờ sáng; lịch sự hay thân mật đều được). Nói gọn với người quen: Morgen!"
+      examples:
+        - target: "Guten Morgen, Herr Wagner!"
+          translation:
+            vi: "Chào buổi sáng, ông Wagner!"
+      pronunciation_note:
+        vi: "u trong Guten dài; đuôi -en đọc lướt, gần như chỉ còn “n”: “GU-tn MO-gn”."
+
+  - key: de:item:p0u2-guten-tag
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Guten Tag!"
+      ipa: "/ˈɡuːtn̩ ˈtaːk/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Xin chào! (lịch sự, dùng ban ngày với người lạ, ở cửa hàng, cơ quan)."
+      examples:
+        - target: "Guten Tag! Wie heißen Sie?"
+          translation:
+            vi: "Xin chào! Ông/bà tên là gì ạ?"
+      pronunciation_note:
+        vi: "a trong Tag dài; g cuối từ đọc thành “k”: “taak”."
+
+  - key: de:item:p0u2-guten-abend
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Guten Abend!"
+      ipa: "/ˈɡuːtn̩ ˈaːbn̩t/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Chào buổi tối! (khi gặp nhau từ khoảng 18 giờ)."
+      examples:
+        - target: "Guten Abend! Wie geht's?"
+          translation:
+            vi: "Chào buổi tối! Khoẻ không?"
+      pronunciation_note:
+        vi: "a đầu dài, d cuối đọc thành “t”: “AA-bnt”."
+
+  - key: de:item:p0u2-gute-nacht
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Gute Nacht!"
+      ipa: "/ˈɡuːtə ˈnaxt/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Chúc ngủ ngon! (chỉ nói khi đi ngủ hoặc chia tay lúc khuya, không dùng để chào khi gặp)."
+      examples:
+        - target: "Gute Nacht, Mama!"
+          translation:
+            vi: "Mẹ ngủ ngon nhé!"
+      pronunciation_note:
+        vi: "ch sau a đọc như “kh” tiếng Việt: “na-kht”."
+      confusion:
+        vi: "Gute Nacht (không có -n) nhưng Guten Morgen, Guten Tag, Guten Abend (có -n)."
+
+  - key: de:item:p0u2-tschuess
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Tschüss!"
+      ipa: "/tʃʏs/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Tạm biệt! (thân mật). Cũng viết Tschüs."
+      examples:
+        - target: "Tschüss, bis bald!"
+          translation:
+            vi: "Tạm biệt, hẹn sớm gặp lại!"
+      pronunciation_note:
+        vi: "tsch đọc gần như “ch” bật mạnh, môi chu ra; ü là “i” tròn môi; ss là “x”: “chüx”."
+
+  - key: de:item:p0u2-auf-wiedersehen
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Auf Wiedersehen!"
+      ipa: "/aʊ̯f ˈviːdɐˌzeːən/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Tạm biệt! (lịch sự, với người lạ, thầy cô, ở cửa hàng, cơ quan)."
+      examples:
+        - target: "Auf Wiedersehen, Frau Becker!"
+          translation:
+            vi: "Chào bà Becker ạ! (khi ra về)"
+      pronunciation_note:
+        vi: "au = “ao”, W = “v”, ie = “i” dài, -der = “đa” nhẹ, s trước nguyên âm = “d” giọng Bắc, h câm: “ao-ph VI-đa-dê-ần”."
+
+  - key: de:item:p0u2-wie-gehts
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Wie geht's?"
+      ipa: "/viː ˈɡeːts/"
+      pos: câu hỏi thăm
+    back:
+      meaning:
+        vi: "Khoẻ không? / Dạo này thế nào? (thân mật, dạng nói gọn của Wie geht es?)."
+      examples:
+        - target: "Hallo, Jonas! Wie geht's?"
+          translation:
+            vi: "Chào Jonas! Khoẻ không?"
+      pronunciation_note:
+        vi: "Wie = “vi”; h trong geht câm, e dài; -t's cuối = “ts”: “vi GHÊ-ts”."
+      confusion:
+        vi: "Viết geht's hoặc gehts đều đúng. Với người cần lịch sự, ở A1 bạn sẽ học Wie geht es Ihnen?"
+
+  - key: de:item:p0u2-danke-gut
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Danke, gut."
+      ipa: "/ˈdaŋkə ɡuːt/"
+      pos: câu trả lời
+    back:
+      meaning:
+        vi: "Cảm ơn, khoẻ. (câu trả lời ngắn cho Wie geht's?)"
+      examples:
+        - target: "Wie geht's? – Danke, gut."
+          translation:
+            vi: "Khoẻ không? – Cảm ơn, khoẻ."
+      pronunciation_note:
+        vi: "Danke: “ĐANG-kơ”, -e cuối rất nhẹ; gut: u dài, t cuối nghe rõ."
+
+  - key: de:item:p0u2-bis-bald
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Bis bald!"
+      ipa: "/bɪs ˈbalt/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Hẹn sớm gặp lại! (thân mật, hay đi sau Tschüss)."
+      examples:
+        - target: "Tschüss, Anna! Bis bald!"
+          translation:
+            vi: "Tạm biệt Anna! Hẹn sớm gặp lại!"
+      pronunciation_note:
+        vi: "d cuối bald đọc thành “t”: “balt”."
+
+  - key: de:item:p0u2-herzlich-willkommen
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Herzlich willkommen!"
+      ipa: "/ˈhɛʁtslɪç vɪlˈkɔmən/"
+      pos: câu chào
+    back:
+      meaning:
+        vi: "Nhiệt liệt chào mừng! / Chào mừng bạn đến!"
+      examples:
+        - target: "Herzlich willkommen in Berlin!"
+          translation:
+            vi: "Chào mừng bạn đến Berlin!"
+      pronunciation_note:
+        vi: "z trong herzlich = “ts”; ch sau l là âm “ich” nhẹ; w trong willkommen = “v”: “HE-ts-lich vil-KO-mần”."
+
+  # ---------------- bài 2: số 0–20 – ch, -ig ----------------
+  - key: de:item:p0u2-g-ch-laute
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Ich-Laut und Ach-Laut: ich, acht, sechs"
+      ipa: "/ç/ ich · /x/ acht · /ks/ sechs"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "Sau a, o, u, au, chữ ch đọc như “kh” tiếng Việt (acht, Nacht, auch). Sau i, e, ä, ö, ü, ei, eu và sau phụ âm, ch là âm xì nhẹ giữa lưỡi như “h” thì thầm với lưỡi đặt ở “i” (ich, sechzehn, Milch). Cụm chs đọc là “ks” (sechs)."
+      examples:
+        - target: "acht, Nacht, auch"
+          translation:
+            vi: "tám, đêm, cũng (ch = “kh”)"
+        - target: "ich, richtig, sechzehn, Milch"
+          translation:
+            vi: "tôi, đúng, mười sáu, sữa (ch nhẹ, giữa lưỡi)"
+        - target: "sechs"
+          translation:
+            vi: "sáu (chs = “ks”: “zeks”)"
+      pronunciation_note:
+        vi: "Tiếng Việt không có âm ich-Laut. Hãy nói “i” rồi giữ nguyên lưỡi và thổi mạnh hơi ra – không bật “k” ở cuối như “ích”."
+
+  - key: de:item:p0u2-g-ig-endung
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Die Endung -ig: zwanzig, richtig"
+      ipa: "/ɪç/ zwanzig, richtig · /ɪɡə/ richtige"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "Đuôi -ig ở cuối từ đọc như “ich” (zwanzig, richtig). Khi sau -ig còn nguyên âm (richtige) thì g lại đọc là “g”."
+      examples:
+        - target: "zwanzig"
+          translation:
+            vi: "hai mươi (“TSVAN-tsich”)"
+        - target: "Richtig!"
+          translation:
+            vi: "Đúng! (“RICH-tich”)"
+      pronunciation_note:
+        vi: "Ở miền Nam Đức, Áo và Thụy Sĩ nhiều người đọc -ig là “ik”; cách đó vẫn được hiểu, nhưng chuẩn phổ biến là “ich”."
+      confusion:
+        vi: "Phân biệt với g cuối thường đọc “k” (Tag = “taak”): chỉ riêng đuôi -ig mới đọc như ich."
+
+  - key: de:item:p0u2-zahlen-0-12
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Zahlen 0–12: null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf"
+      ipa: "/nʊl aɪ̯ns tsvaɪ̯ dʁaɪ̯ fiːɐ̯ fʏnf zɛks ˈziːbn̩ axt nɔʏ̯n tseːn ɛlf tsvœlf/"
+      pos: số đếm
+    back:
+      meaning:
+        vi: "Các số từ 0 đến 12. elf (11) và zwölf (12) là từ riêng, phải học thuộc."
+      examples:
+        - target: "eins, zwei, drei, vier, fünf"
+          translation:
+            vi: "một, hai, ba, bốn, năm"
+        - target: "zehn, elf, zwölf"
+          translation:
+            vi: "mười, mười một, mười hai"
+      pronunciation_note:
+        vi: "z trong zwei, zehn, zwölf = “ts”; v trong vier = “ph”; ei = “ai”, eu = “oi”; sechs = “zeks”; sieben = “DI-bần” (s đầu = “d” giọng Bắc)."
+
+  - key: de:item:p0u2-zahlen-13-20
+    type: phrase
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Zahlen 13–20: dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig"
+      ipa: "/ˈdʁaɪ̯tseːn ˈfɪʁtseːn ˈfʏnftseːn ˈzɛçtseːn ˈziːptseːn ˈaxtseːn ˈnɔʏ̯ntseːn ˈtsvantsɪç/"
+      pos: số đếm
+    back:
+      meaning:
+        vi: "13–19 = số đơn vị + zehn (dreizehn = 3 + 10), ngược thứ tự với tiếng Việt “mười ba”. 20 là zwanzig."
+      examples:
+        - target: "dreizehn, vierzehn, fünfzehn"
+          translation:
+            vi: "mười ba, mười bốn, mười lăm"
+        - target: "sechzehn, siebzehn, zwanzig"
+          translation:
+            vi: "mười sáu, mười bảy, hai mươi"
+      pronunciation_note:
+        vi: "Trọng âm ở phần đầu: DREI-zehn. sechzehn đọc ch nhẹ (“ZECH-tsên”); i trong vierzehn ngắn."
+      confusion:
+        vi: "Hai số viết bớt chữ: sechzehn (không có s của sechs), siebzehn (không có -en của sieben)."
+
+  - key: de:item:p0u2-nummer
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Nummer, -n"
+      ipa: "/ˈnʊmɐ/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "số (số thứ tự, số điện thoại, số nhà)."
+      examples:
+        - target: "Wer hat die Nummer acht? – Ich!"
+          translation:
+            vi: "Ai có số tám? – Tôi!"
+      pronunciation_note:
+        vi: "u ngắn trước mm; -er cuối = “a” nhẹ: “NU-ma”."
+      confusion:
+        vi: "die Nummer là con số dùng để gọi, đánh số (Nummer acht); die Zahl là con số nói chung (die Zahl 8)."
+
+  - key: de:item:p0u2-handynummer
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Handynummer, -n"
+      ipa: "/ˈhɛndiˌnʊmɐ/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "số điện thoại di động. Handy là từ người Đức dùng cho điện thoại di động."
+      examples:
+        - target: "Meine Handynummer ist null eins sieben sechs, zwei drei acht, neun null vier."
+          translation:
+            vi: "Số di động của mình là 0176 238 904."
+      pronunciation_note:
+        vi: "Handy đọc “HEN-đi” như tiếng Anh."
+
+  - key: de:item:p0u2-richtig
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "richtig"
+      ipa: "/ˈʁɪçtɪç/"
+      pos: tính từ
+    back:
+      meaning:
+        vi: "đúng"
+      examples:
+        - target: "Sechs plus sechs ist zwölf. – Richtig!"
+          translation:
+            vi: "Sáu cộng sáu là mười hai. – Đúng!"
+      pronunciation_note:
+        vi: "Hai lần âm ich nhẹ: ch giữa từ và đuôi -ig: “RICH-tich”."
+
+  - key: de:item:p0u2-falsch
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "falsch"
+      ipa: "/falʃ/"
+      pos: tính từ
+    back:
+      meaning:
+        vi: "sai"
+      examples:
+        - target: "Zwanzig? – Falsch! Zwölf."
+          translation:
+            vi: "Hai mươi à? – Sai! Mười hai."
+      pronunciation_note:
+        vi: "f = “ph”; sch cuối từ là “s” uốn lưỡi, tròn môi: “phalsh”."
+
+  - key: de:item:p0u2-ich
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "ich"
+      ipa: "/ɪç/"
+      pos: đại từ
+    back:
+      meaning:
+        vi: "tôi, mình, em… (đại từ ngôi thứ nhất số ít). Chỉ viết hoa khi đứng đầu câu."
+      examples:
+        - target: "Wer hat die Nummer zwölf? – Ich!"
+          translation:
+            vi: "Ai có số mười hai? – Tôi!"
+      pronunciation_note:
+        vi: "Âm ich-Laut: nói “i” rồi thổi hơi qua mặt lưỡi; không đọc thành “ích” có “k” cuối."
+
+  - key: de:item:p0u2-zahl
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Zahl, -en"
+      ipa: "/tsaːl/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "con số, số"
+      examples:
+        - target: "Welche Zahl ist richtig: zwölf oder zwanzig?"
+          translation:
+            vi: "Số nào đúng: mười hai hay hai mươi?"
+      pronunciation_note:
+        vi: "Z = “ts”, h sau a làm a dài: “tsaal”."
+      confusion:
+        vi: "die Zahl là con số nói chung; die Nummer là số dùng để đánh số, gọi (số nhà, số điện thoại)."
+
+  - key: de:item:p0u2-zaehlen
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "zählen"
+      ipa: "/ˈtsɛːlən/"
+      pos: động từ
+    back:
+      meaning:
+        vi: "đếm"
+      examples:
+        - target: "Wir zählen: eins, zwei, drei!"
+          translation:
+            vi: "Chúng ta đếm nhé: một, hai, ba!"
+      pronunciation_note:
+        vi: "z = “ts”, ä dài như “e” mở kéo dài: “TSE-lần”."
+
+  # ---------------- bài 3: s, sch, sp, st, ß ----------------
+  - key: de:item:p0u2-g-s-laute
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Die S-Laute: Sonne, Schule, Sport, Straße, Fußball"
+      ipa: "/z/ Sonne · /ʃ/ Schule · /ʃp/ Sport · /ʃt/ Straße · /s/ Fuß"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "s đứng trước nguyên âm ở đầu âm tiết đọc như “d” giọng Bắc (Sonne, sehr); sch như “s” uốn lưỡi, tròn môi. sp, st ở đầu từ (hoặc đầu một phần của từ ghép) đọc “schp”, “scht”. Âm “x” sau nguyên âm ngắn viết ss, sau nguyên âm dài hoặc nguyên âm đôi viết ß."
+      examples:
+        - target: "sehr, sieben, Musik"
+          translation:
+            vi: "rất, bảy, âm nhạc (s = “d” giọng Bắc)"
+        - target: "Sport, Student, Straße"
+          translation:
+            vi: "thể thao, sinh viên, đường phố (sp, st đầu từ = “schp”, “scht”)"
+        - target: "Tschüss, Fußball, heißen"
+          translation:
+            vi: "tạm biệt, bóng đá, tên là (ss sau ü ngắn; ß sau u dài, sau ei)"
+      pronunciation_note:
+        vi: "Ở miền Nam Đức, Áo, Thụy Sĩ, s đầu từ thường đọc “x”; vẫn được hiểu. Thụy Sĩ không dùng ß mà viết ss."
+      confusion:
+        vi: "st giữa hoặc cuối từ đọc bình thường “xt”: ist, Post, Fenster."
+
+  - key: de:item:p0u2-schule
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Schule, -n"
+      ipa: "/ˈʃuːlə/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "trường học (phổ thông)"
+      examples:
+        - target: "Die Schule ist sehr groß."
+          translation:
+            vi: "Trường học rất lớn."
+      pronunciation_note:
+        vi: "sch như “s” uốn lưỡi, môi chu; u dài: “SHUU-lơ”."
+
+  - key: de:item:p0u2-sport
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "der Sport (Sg.)"
+      ipa: "/ʃpɔʁt/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "thể thao, môn thể thao"
+      examples:
+        - target: "Sport ist gesund."
+          translation:
+            vi: "Thể thao tốt cho sức khoẻ."
+      pronunciation_note:
+        vi: "sp đầu từ đọc “schp”: “shport”, không đọc “xport” như tiếng Anh."
+
+  - key: de:item:p0u2-strasse
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Straße, -n"
+      ipa: "/ˈʃtʁaːsə/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "đường phố, con đường"
+      examples:
+        - target: "Die Straße ist sehr schön."
+          translation:
+            vi: "Con phố rất đẹp."
+      pronunciation_note:
+        vi: "st đầu từ = “scht”; a dài nên viết ß, ß đọc “x”: “SHTRAA-xơ”."
+      confusion:
+        vi: "Không gõ được ß thì viết Strasse (ở Thụy Sĩ viết như vậy là chuẩn); ở Đức chuẩn là Straße."
+
+  - key: de:item:p0u2-student
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "der Student, -en"
+      ipa: "/ʃtuˈdɛnt/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "sinh viên (nam)"
+      examples:
+        - target: "Ich bin Student."
+          translation:
+            vi: "Tôi là sinh viên."
+      pronunciation_note:
+        vi: "st đầu từ = “scht”, trọng âm ở cuối: “shtu-ĐENT”."
+      confusion:
+        vi: "Từ này đổi đuôi ở các cách khác: den Studenten, dem Studenten (học ở B1). Nói về nghề, vai trò thì không cần mạo từ: Ich bin Student."
+
+  - key: de:item:p0u2-studentin
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Studentin, -nen"
+      ipa: "/ʃtuˈdɛntɪn/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "sinh viên (nữ)"
+      examples:
+        - target: "Lan ist Studentin."
+          translation:
+            vi: "Lan là sinh viên."
+      pronunciation_note:
+        vi: "Như Student, thêm -in: “shtu-ĐEN-tin”."
+      confusion:
+        vi: "Đuôi -in chỉ người nữ: der Student → die Studentin, der Schüler → die Schülerin."
+
+  - key: de:item:p0u2-fussball
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "der Fußball, ¨-e"
+      ipa: "/ˈfuːsbal/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "bóng đá (môn thể thao); quả bóng đá"
+      examples:
+        - target: "Der Schüler spielt Fußball."
+          translation:
+            vi: "Cậu học sinh chơi bóng đá."
+      pronunciation_note:
+        vi: "u dài nên viết ß, ß đọc “x”: “PHUUX-bal”."
+
+  - key: de:item:p0u2-musik
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Musik (Sg.)"
+      ipa: "/muˈziːk/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "âm nhạc"
+      examples:
+        - target: "Die Musik ist sehr schön."
+          translation:
+            vi: "Bản nhạc rất hay."
+      pronunciation_note:
+        vi: "s giữa hai nguyên âm = “d” giọng Bắc; trọng âm ở cuối: “mu-DIK”."
+
+  - key: de:item:p0u2-sehr
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "sehr"
+      ipa: "/zeːɐ̯/"
+      pos: trạng từ
+    back:
+      meaning:
+        vi: "rất"
+      examples:
+        - target: "Sehr gut!"
+          translation:
+            vi: "Rất tốt!"
+      pronunciation_note:
+        vi: "s đầu từ = “d” giọng Bắc, h câm làm e dài, r cuối thành “a” nhẹ: “dê-a”."
+
+  - key: de:item:p0u2-entschuldigung
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Entschuldigung!"
+      ipa: "/ɛntˈʃʊldɪɡʊŋ/"
+      pos: câu xin lỗi
+    back:
+      meaning:
+        vi: "Xin lỗi! Cũng dùng để gọi người lạ: Xin lỗi anh/chị ơi…"
+      examples:
+        - target: "Entschuldigung, wo ist die Schule?"
+          translation:
+            vi: "Xin lỗi, trường học ở đâu ạ?"
+      pronunciation_note:
+        vi: "Trọng âm ở “SCHUL”; tsch giữa từ đọc gần “ch” bật mạnh; -ung cuối là “ung”, không có “k”: “ent-SHUL-đi-gung”."
+
+  - key: de:item:p0u2-schueler
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "der Schüler, -"
+      ipa: "/ˈʃyːlɐ/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "học sinh (nam)"
+      examples:
+        - target: "Der Schüler spielt Fußball."
+          translation:
+            vi: "Cậu học sinh chơi bóng đá."
+      pronunciation_note:
+        vi: "sch + ü dài (lưỡi như “i”, môi tròn như “u”, không đọc thành “uy”); -er cuối = “a” nhẹ: “SCHÜÜ-la”."
+      confusion:
+        vi: "der Schüler học ở trường phổ thông (die Schule); der Student học ở đại học."
+
+  - key: de:item:p0u2-schuelerin
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "die Schülerin, -nen"
+      ipa: "/ˈʃyːləʁɪn/"
+      pos: danh từ
+    back:
+      meaning:
+        vi: "học sinh (nữ)"
+      examples:
+        - target: "Mai ist Schülerin."
+          translation:
+            vi: "Mai là học sinh."
+      pronunciation_note:
+        vi: "Như Schüler thêm -in; r giữa từ lại là r lưỡi gà: “SCHÜÜ-lơ-rin”."
+
+  # ---------------- bài 4: tự giới thiệu – r, phụ âm cuối ----------------
+  - key: de:item:p0u2-g-r-laut
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Der R-Laut: richtig, drei, Frau, Uhr, vier"
+      ipa: "/ʁ/ richtig, drei · /ɐ̯/ Uhr, vier, sehr"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "r đầu âm tiết hoặc sau phụ âm là r lưỡi gà: cuống lưỡi nâng lên sát phía sau, hơi cọ nhẹ, gần “g/gh” tiếng Việt nhưng lùi ra sau (richtig, drei). r sau nguyên âm dài ở cuối âm tiết và đuôi -er biến thành “a” rất nhẹ (Uhr, vier, Lehrer)."
+      examples:
+        - target: "richtig, drei, Frau"
+          translation:
+            vi: "đúng, ba, bà/phụ nữ (r lưỡi gà)"
+        - target: "Uhr, vier, sehr"
+          translation:
+            vi: "đồng hồ, bốn, rất (r thành “a” nhẹ)"
+      pronunciation_note:
+        vi: "Đừng rung đầu lưỡi như “r” miền Nam hay đọc r thành “z/d” như giọng Bắc. r rung đầu lưỡi vẫn có ở Bayern, Áo, Thụy Sĩ và được hiểu, nhưng r lưỡi gà là phổ biến nhất."
+
+  - key: de:item:p0u2-g-auslautverhaertung
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Die Auslautverhärtung: Tag, und, gelb"
+      ipa: "/k/ Tag · /t/ und · /p/ gelb"
+      pos: quy tắc phát âm
+    back:
+      meaning:
+        vi: "b, d, g ở cuối từ hoặc cuối âm tiết đọc thành p, t, k: Tag = “taak”, und = “unt”, gelb = “ghelp”. Phụ âm cuối phải nghe rõ, không nuốt mất như âm cuối tiếng Việt và không thêm “ơ” phía sau."
+      examples:
+        - target: "Tschüss und bis bald!"
+          translation:
+            vi: "Tạm biệt và hẹn sớm gặp lại! (und = “unt”, bald = “balt”)"
+        - target: "Guten Abend!"
+          translation:
+            vi: "Chào buổi tối! (Abend = “AA-bnt”)"
+      pronunciation_note:
+        vi: "Khi thêm đuôi có nguyên âm, chữ cái lại đọc như cũ: Tag “taak” nhưng Tage “TAA-gơ”."
+      confusion:
+        vi: "Riêng đuôi -ig đọc như “ich” (zwanzig), không phải “ik”; ng cuối (Entschuldigung) là “ng”, không có “k”."
+
+  - key: de:item:p0u2-ich-heisse
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Ich heiße …"
+      ipa: "/ɪç ˈhaɪ̯sə/"
+      pos: câu mẫu
+    back:
+      meaning:
+        vi: "Tôi tên là …"
+      examples:
+        - target: "Ich heiße Minh."
+          translation:
+            vi: "Tôi tên là Minh."
+      pronunciation_note:
+        vi: "ei = “ai”; ß sau nguyên âm đôi đọc “x”; -e cuối rất nhẹ: “ich HAI-xơ”."
+
+  - key: de:item:p0u2-ich-bin
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Ich bin …"
+      ipa: "/ɪç bɪn/"
+      pos: câu mẫu
+    back:
+      meaning:
+        vi: "Tôi là … (nói tên, nghề, vai trò)."
+      examples:
+        - target: "Ich bin Lan. Ich bin Studentin."
+          translation:
+            vi: "Mình là Lan. Mình là sinh viên."
+      pronunciation_note:
+        vi: "i trong bin ngắn: “ich bin”."
+      confusion:
+        vi: "Dùng Ich heiße Minh hoặc Ich bin Minh, không ghép hai động từ: không nói Ich bin heiße Minh."
+
+  - key: de:item:p0u2-wie-heisst-du
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Wie heißt du?"
+      ipa: "/viː ˈhaɪ̯st duː/"
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: "Bạn tên là gì? (thân mật: với bạn bè, người trẻ, trẻ em)."
+      examples:
+        - target: "Hallo! Wie heißt du? – Ich heiße Jonas."
+          translation:
+            vi: "Chào bạn! Bạn tên gì? – Mình tên là Jonas."
+      pronunciation_note:
+        vi: "Wie = “vi”; heißt = “haixt”, t cuối nghe rõ."
+      confusion:
+        vi: "du đi với heißt; Sie (lịch sự) đi với heißen: Wie heißen Sie?"
+
+  - key: de:item:p0u2-wie-heissen-sie
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Wie heißen Sie?"
+      ipa: "/viː ˈhaɪ̯sn̩ ziː/"
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: "Ông/bà/anh/chị tên là gì ạ? (lịch sự: với người lạ, người lớn tuổi, ở cơ quan, nơi làm việc)."
+      examples:
+        - target: "Guten Tag! Wie heißen Sie? – Ich heiße Anna Becker."
+          translation:
+            vi: "Xin chào! Chị tên là gì ạ? – Tôi tên là Anna Becker."
+      pronunciation_note:
+        vi: "Sie: s đầu = “d” giọng Bắc, ie dài: “di”. Sie lịch sự luôn viết hoa."
+
+  - key: de:item:p0u2-ich-komme-aus-vietnam
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Ich komme aus Vietnam."
+      ipa: "/ɪç ˈkɔmə aʊ̯s vi̯ɛtˈnam/"
+      pos: câu mẫu
+    back:
+      meaning:
+        vi: "Tôi đến từ Việt Nam. Thay Vietnam bằng tên thành phố, nước khác: Ich komme aus Hanoi."
+      examples:
+        - target: "Ich komme aus Vietnam, aus Hanoi."
+          translation:
+            vi: "Tôi đến từ Việt Nam, từ Hà Nội."
+      pronunciation_note:
+        vi: "Vietnam là từ mượn nên v đọc “v”, trọng âm ở “nam”; aus = “ao-x”."
+      confusion:
+        vi: "Nói nơi xuất thân dùng aus, không dùng von (tiếng Anh from)."
+
+  - key: de:item:p0u2-freut-mich
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Freut mich!"
+      ipa: "/ˈfʁɔʏ̯t mɪç/"
+      pos: câu xã giao
+    back:
+      meaning:
+        vi: "Rất vui được gặp bạn! (nói sau khi làm quen; dùng được cả với du lẫn Sie)."
+      examples:
+        - target: "Ich heiße Lan. – Freut mich! Ich bin Felix."
+          translation:
+            vi: "Mình tên là Lan. – Rất vui được gặp bạn! Mình là Felix."
+      pronunciation_note:
+        vi: "Fr: “ph” + r lưỡi gà; eu = “oi”; mich có ch nhẹ: “phroit mich”."
+
+  - key: de:item:p0u2-und
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "und"
+      ipa: "/ʊnt/"
+      pos: liên từ
+    back:
+      meaning:
+        vi: "và"
+      examples:
+        - target: "Ich heiße Minh und ich komme aus Hanoi."
+          translation:
+            vi: "Tôi tên là Minh và tôi đến từ Hà Nội."
+      pronunciation_note:
+        vi: "d cuối đọc “t” và phải nghe thấy: “unt”, không nói “un”."
+
+  - key: de:item:p0u2-auch
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "auch"
+      ipa: "/aʊ̯x/"
+      pos: trạng từ
+    back:
+      meaning:
+        vi: "cũng"
+      examples:
+        - target: "Ich komme auch aus Vietnam."
+          translation:
+            vi: "Tôi cũng đến từ Việt Nam."
+      pronunciation_note:
+        vi: "au = “ao”; ch sau au = “kh”: “aokh”."
+      confusion:
+        vi: "auch đứng sau động từ: Ich komme auch aus Vietnam, không nói Ich auch komme."
+
+  - key: de:item:p0u2-und-du
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Und du?"
+      ipa: "/ʊnt ˈduː/"
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: "Còn bạn? (hỏi lại người kia, thân mật)."
+      examples:
+        - target: "Ich komme aus Vietnam. Und du?"
+          translation:
+            vi: "Mình đến từ Việt Nam. Còn bạn?"
+      pronunciation_note:
+        vi: "Giọng lên ở cuối câu hỏi; d trong und vẫn đọc “t”: “unt DU?”."
+
+  - key: de:item:p0u2-und-sie
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: "Und Sie?"
+      ipa: "/ʊnt ˈziː/"
+      pos: câu hỏi
+    back:
+      meaning:
+        vi: "Còn ông/bà/anh/chị? (hỏi lại người kia, lịch sự)."
+      examples:
+        - target: "Ich heiße Nam Nguyen. Und Sie?"
+          translation:
+            vi: "Tôi tên là Nam Nguyen. Còn anh?"
+      pronunciation_note:
+        vi: "Sie = “di” (s đầu = “d” giọng Bắc), giọng lên cuối câu."

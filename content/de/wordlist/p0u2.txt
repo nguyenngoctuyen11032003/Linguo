@@ -1,0 +1,7 @@
+# P0U2 (aussprache-basics, Konsonanten): correct words the offline dictionary lacks.
+# Suffix -ig, named as a pronunciation rule ("Die Endung -ig: zwanzig, richtig").
+ig
+# "Wie gehts?": spelling without apostrophe, allowed by the official rules (§ 97) next to "Wie geht's?".
+gehts
+# "zwo": spoken variant of "zwei" (Duden), used on the phone to avoid confusion with "drei".
+zwo

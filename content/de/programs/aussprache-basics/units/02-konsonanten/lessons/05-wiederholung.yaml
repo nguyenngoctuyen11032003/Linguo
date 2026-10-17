@@ -1,0 +1,433 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u2-wiederholung
+order_index: 5
+level: pre_a1
+title:
+  vi: Ôn tập – chào hỏi và số (Wiederholung)
+objectives:
+  - vi: Hiểu và tham gia một đoạn chào hỏi – giới thiệu – trao số điện thoại dài 4–6 lượt lời.
+  - vi: Nghe và viết lại số điện thoại đọc từng chữ số hoặc theo cặp.
+  - vi: Chọn đúng du hay Sie, Hallo hay Guten Tag, Tschüss hay Auf Wiedersehen theo tình huống.
+  - vi: Ôn cách đọc w, v, z, ch, -ig, s, sch, sp, st, r và phụ âm cuối.
+estimated_minutes: 17
+skills: [listening, speaking, reading, writing]
+prerequisites: [de:lesson:p0u2-ich-heisse]
+items:
+  - item: de:item:p0u2-g-w-v-f-z
+    role: reuse
+  - item: de:item:p0u2-g-ch-laute
+    role: reuse
+  - item: de:item:p0u2-g-ig-endung
+    role: reuse
+  - item: de:item:p0u2-g-s-laute
+    role: reuse
+  - item: de:item:p0u2-g-r-laut
+    role: reuse
+  - item: de:item:p0u2-g-auslautverhaertung
+    role: reuse
+  - item: de:item:p0u1-g-umlaute
+    role: reuse
+  - item: de:item:p0u2-hallo
+    role: reuse
+  - item: de:item:p0u2-guten-abend
+    role: reuse
+  - item: de:item:p0u2-auf-wiedersehen
+    role: reuse
+  - item: de:item:p0u2-wie-gehts
+    role: reuse
+  - item: de:item:p0u2-tschuess
+    role: reuse
+  - item: de:item:p0u2-bis-bald
+    role: reuse
+  - item: de:item:p0u2-zahlen-0-12
+    role: reuse
+  - item: de:item:p0u2-zahlen-13-20
+    role: reuse
+  - item: de:item:p0u2-nummer
+    role: reuse
+  - item: de:item:p0u2-handynummer
+    role: reuse
+  - item: de:item:p0u2-student
+    role: reuse
+  - item: de:item:p0u2-ich-heisse
+    role: reuse
+  - item: de:item:p0u2-ich-bin
+    role: reuse
+  - item: de:item:p0u2-wie-heisst-du
+    role: reuse
+  - item: de:item:p0u2-wie-heissen-sie
+    role: reuse
+  - item: de:item:p0u2-ich-komme-aus-vietnam
+    role: reuse
+  - item: de:item:p0u2-freut-mich
+    role: reuse
+  - item: de:item:p0u2-auch
+    role: reuse
+  - item: de:item:p0u2-und-du
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài ôn này, bạn tự tin chào hỏi, giới thiệu tên và quê, hỏi lại người kia và trao đổi số điện thoại trong một đoạn hội thoại ngắn bằng tiếng Đức.
+  - type: explain
+    text:
+      vi: Trước khi mở lời, hãy chọn mức trang trọng – với bạn bè, người trẻ dùng Hallo, Wie heißt du?, Und du?, Tschüss; với người lạ, người lớn tuổi dùng Guten Tag, Wie heißen Sie?, Und Sie?, Auf Wiedersehen. Giữ nguyên một mức trong cả đoạn hội thoại.
+  - type: explain
+    text:
+      vi: Một đoạn làm quen thường có bốn bước – chào, nói tên (Ich heiße …/Ich bin …), nói quê (Ich komme aus …), hỏi lại (Und du?/Und Sie?) rồi nói Freut mich!. Khi chia tay, thêm Bis bald! nếu thân mật.
+  - type: explain
+    text:
+      vi: Số điện thoại được đọc từng chữ số hoặc theo cặp – null eins sieben null, vier vier acht, zwölf sechzehn. Khi nghe, hãy viết ngay từng nhóm, chú ý các cặp dễ nhầm zwei/drei, zwölf/zwanzig, sechzehn/sechzig.
+  - type: explain
+    text:
+      vi: Ôn nhanh cách đọc – w = “v”, v = “ph”, z = “ts”; ch sau a/o/u = “kh”, sau i/e = ch nhẹ, đuôi -ig = “ich”; s + nguyên âm = “d” giọng Bắc, sp/st đầu từ = “schp/scht”; r lưỡi gà hoặc “a” nhẹ ở cuối âm tiết; b/d/g cuối từ = p/t/k.
+  - type: deep_explain
+    text:
+      vi: Nếu không gõ được ä, ö, ü, ß, bạn gõ ae, oe, ue, ss như đã học ở P0U1 – Tschuess, fuenf, zwoelf, heisse đều được máy chấm tính đúng. Khi đọc số dài, người Đức hay đọc nhóm cuối theo cặp (zwölf sechzehn = 12 và 16); bạn chỉ cần ghi lần lượt các chữ số – 1216. Trong đời sống, nhiều người Đức nói Tschüss cả với người quen dùng Sie, nhưng khi chưa chắc, Auf Wiedersehen luôn an toàn.
+  - type: example
+    target: "Hallo! Ich heiße Mai. Wie heißt du? – Ich bin Felix. Freut mich! – Ich komme aus Vietnam. Und du? – Ich komme aus Berlin."
+    target_lang: de
+    translation:
+      vi: "Chào bạn! Mình tên là Mai. Bạn tên gì? – Mình là Felix. Rất vui được gặp bạn! – Mình đến từ Việt Nam. Còn bạn? – Mình đến từ Berlin."
+    note:
+      vi: Hai bạn trẻ làm quen, dùng du từ đầu đến cuối.
+  - type: example
+    target: "Guten Abend! Wie heißen Sie? – Ich heiße Thomas Weber. Und Sie? – Ich heiße Linh. Freut mich!"
+    target_lang: de
+    translation:
+      vi: "Chào buổi tối! Anh tên là gì ạ? – Tôi tên là Thomas Weber. Còn chị? – Tôi tên là Linh. Rất vui được gặp anh!"
+    note:
+      vi: Hai người lớn mới gặp, dùng Sie (lịch sự) cho cả đoạn.
+  - type: example
+    target: "Meine Handynummer ist null eins sieben null, vier vier acht, zwölf sechzehn."
+    target_lang: de
+    translation:
+      vi: "Số di động của tôi là 0170 448 1216."
+    note:
+      vi: Nhóm cuối đọc theo cặp – zwölf (12), sechzehn (16).
+  - type: common_mistake
+    wrong: "Guten Tag! Wie heißen Sie? … Tschüss, Felix!"
+    right: "Guten Tag! Wie heißen Sie? … Auf Wiedersehen, Herr Weber!"
+    target_lang: de
+    note:
+      vi: Đã mở đầu lịch sự bằng Sie thì nên giữ mức lịch sự khi chia tay – Auf Wiedersehen và Herr/Frau + họ. Gọi tên riêng kèm Tschüss là tự chuyển sang thân mật khi người kia chưa mời.
+  - type: common_mistake
+    wrong: "Ich bin heiße Mai. Ich komme von Vietnam."
+    right: "Ich heiße Mai. Ich komme aus Vietnam."
+    target_lang: de
+    note:
+      vi: Chọn Ich heiße hoặc Ich bin, không dùng cả hai; nơi xuất thân dùng aus, không dùng von.
+  - type: common_mistake
+    wrong: "sechszehn"
+    right: "sechzehn"
+    target_lang: de
+    note:
+      vi: Mười sáu bỏ s của sechs. Đây là lỗi chính tả hay gặp khi ghi số điện thoại bằng chữ.
+  - type: summary
+    points:
+      - vi: Thân mật – Hallo, Wie heißt du?, Und du?, Tschüss, bis bald!; lịch sự – Guten Tag, Wie heißen Sie?, Und Sie?, Auf Wiedersehen.
+      - vi: Làm quen – chào → Ich heiße …/Ich bin … → Ich komme aus … → Und du?/Und Sie? → Freut mich!
+      - vi: Số điện thoại đọc từng chữ số hoặc theo cặp; cẩn thận zwei/drei, zwölf/zwanzig, sechzehn/sechzig.
+      - vi: w = “v”, v = “ph”, z = “ts”, ch = “kh” hoặc ch nhẹ, -ig = “ich”, sp/st = “schp/scht”, b/d/g cuối = p/t/k.
+      - vi: Không gõ được ä, ö, ü, ß thì gõ ae, oe, ue, ss.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u2l5-listen-mai-felix
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u2-freut-mich
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hallo, ich heiße Mai. Wie heißt du? – Ich bin Felix. Freut mich!"
+      options:
+        - { id: f1m, text: "Hai người giới thiệu tên mình: Mai và Felix.", lang: vi }
+        - { id: f2g, text: "Mai hỏi Felix có khoẻ không.", lang: vi }
+        - { id: f3t, text: "Felix chào tạm biệt Mai.", lang: vi }
+        - { id: f4n, text: "Mai hỏi số điện thoại của Felix.", lang: vi }
+    answer:
+      correct_option_id: f1m
+    explanation:
+      vi: Ich heiße Mai là “Mình tên là Mai”, Wie heißt du? là “Bạn tên gì?”, Ich bin Felix là “Mình là Felix”, Freut mich! là “Rất vui được gặp bạn”. Không có câu hỏi thăm sức khoẻ, chia tay hay số điện thoại.
+    display_answer: "Hai người giới thiệu tên mình: Mai và Felix."
+
+  - key: de:exercise:p0u2l5-listen-nummer-paare
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-nummer
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Meine Nummer ist null eins sieben null, vier vier acht, zwölf sechzehn."
+      options:
+        - { id: p1k, text: "0170 448 1216", lang: de }
+        - { id: p2k, text: "0170 448 1260", lang: de }
+        - { id: p3k, text: "0170 484 1216", lang: de }
+        - { id: p4k, text: "0107 448 1216", lang: de }
+    answer:
+      correct_option_id: p1k
+    explanation:
+      vi: null eins sieben null = 0170, vier vier acht = 448, rồi nhóm cuối đọc theo cặp – zwölf (12) sechzehn (16) = 1216. sechzig (60) mới cho ra 60.
+    display_answer: "0170 448 1216"
+
+  - key: de:exercise:p0u2l5-mcq-lesen-sie
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u2-wie-heissen-sie
+    prompt:
+      stem: "Đọc đoạn hội thoại. A: Guten Abend! Ich heiße Thomas Weber. Wie heißen Sie? – B: Guten Abend! Ich heiße Linh. Ich komme aus Vietnam. – A: Freut mich! Hai người nói chuyện thân mật hay lịch sự?"
+      stem_lang: vi
+      options:
+        - { id: o1l, text: "Lịch sự – họ dùng Guten Abend và Sie.", lang: vi }
+        - { id: o2t, text: "Thân mật – họ dùng du.", lang: vi }
+        - { id: o3h, text: "Thân mật – họ chào nhau bằng Hallo.", lang: vi }
+        - { id: o4s, text: "Lịch sự – họ chào tạm biệt bằng Auf Wiedersehen.", lang: vi }
+    answer:
+      correct_option_id: o1l
+    explanation:
+      vi: A hỏi Wie heißen Sie? và hai người chào Guten Abend, nên đây là cách nói lịch sự. Trong đoạn không có du, Hallo hay lời tạm biệt nào.
+    display_answer: "Lịch sự – họ dùng Guten Abend và Sie."
+
+  - key: de:exercise:p0u2l5-mcq-umlaut-tippen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u1-g-umlaute
+    prompt:
+      stem: "Bàn phím của bạn không có ü, ö, ß. Bạn gõ Tschüss, fünf, zwölf, heiße thế nào để vẫn đúng?"
+      stem_lang: vi
+      options:
+        - { id: y1u, text: "Tschuess, fuenf, zwoelf, heisse", lang: vi }
+        - { id: y2u, text: "Tschuss, funf, zwolf, heise", lang: vi }
+        - { id: y3u, text: "Tschuyss, fuynf, zwôlf, heibe", lang: vi }
+    answer:
+      correct_option_id: y1u
+    explanation:
+      vi: Theo quy ước của tiếng Đức, ü → ue, ö → oe, ß → ss. Bỏ dấu hai chấm (u, o) là sai chính tả, còn uy, ô là chữ tiếng Việt, không phải tiếng Đức.
+    display_answer: "Tschuess, fuenf, zwoelf, heisse"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u2l5-fill-ziffern
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-handynummer
+    prompt:
+      template: "Handynummer: null eins fünf zwei = {{b1}} · sieben drei neun = {{b2}} · achtzehn = {{b3}}"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 2 }
+    answer:
+      blanks:
+        b1: ["0152"]
+        b2: ["739"]
+        b3: ["18"]
+    known_wrong:
+      - answer: "0125"
+        feedback_vi: Thứ tự là null (0), eins (1), fünf (5), zwei (2) – 0152.
+        error_tag: number_order
+      - answer: "80"
+        feedback_vi: achtzehn là 18 (acht + zehn); 80 là achtzig.
+        error_tag: number_confusion
+    explanation:
+      vi: Ghi từng chữ số theo đúng thứ tự nghe – 0152 và 739. achtzehn = acht (8) + zehn (10) = 18.
+    display_answer: "Handynummer: null eins fünf zwei = 0152 · sieben drei neun = 739 · achtzehn = 18"
+
+  - key: de:exercise:p0u2l5-fill-dialog-sie
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-wie-heissen-sie
+    prompt:
+      template: "A: Guten Tag! Wie {{b1}} Sie? – B: Ich {{b2}} Thomas Becker. – A: {{b3}} mich! Ich heiße Nam."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [heißen]
+        b2: [heiße, bin]
+        b3: [Freut]
+    known_wrong:
+      - answer: heißt
+        feedback_vi: heißt đi với du. Với Sie dùng heißen – Wie heißen Sie?
+        error_tag: verb_form
+    explanation:
+      vi: Câu hỏi lịch sự là Wie heißen Sie?; trả lời Ich heiße … hoặc Ich bin …; sau khi biết tên, nói Freut mich!
+    display_answer: "A: Guten Tag! Wie heißen Sie? – B: Ich heiße Thomas Becker. – A: Freut mich! Ich heiße Nam."
+
+  - key: de:exercise:p0u2l5-tr-vorstellung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-ich-komme-aus-vietnam
+    prompt:
+      source_text: "Xin chào, tôi tên là Hoa. Tôi đến từ Việt Nam."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "Hallo, ich heiße Hoa. Ich komme aus Vietnam."
+        - "Hallo, ich bin Hoa. Ich komme aus Vietnam."
+        - "Hallo, ich heiße Hoa. Ich bin aus Vietnam."
+        - "Hallo, ich bin Hoa. Ich bin aus Vietnam."
+        - "Guten Tag, ich heiße Hoa. Ich komme aus Vietnam."
+        - "Guten Tag, ich bin Hoa. Ich komme aus Vietnam."
+        - "Guten Tag, ich heiße Hoa. Ich bin aus Vietnam."
+        - "Guten Tag, ich bin Hoa. Ich bin aus Vietnam."
+        - "Hallo, ich heiße Hoa und ich komme aus Vietnam."
+        - "Hallo, ich heiße Hoa und komme aus Vietnam."
+        - "Hallo, ich bin Hoa und ich komme aus Vietnam."
+        - "Hallo, ich bin Hoa und komme aus Vietnam."
+        - "Guten Tag, ich heiße Hoa und ich komme aus Vietnam."
+        - "Guten Tag, ich heiße Hoa und komme aus Vietnam."
+        - "Guten Tag, ich bin Hoa und ich komme aus Vietnam."
+        - "Guten Tag, ich bin Hoa und komme aus Vietnam."
+    known_wrong:
+      - answer: "Hallo, ich bin heiße Hoa. Ich komme aus Vietnam."
+        feedback_vi: Chọn ich heiße Hoa hoặc ich bin Hoa, không dùng cả bin lẫn heiße.
+        error_tag: verb_form
+      - answer: "Hallo, ich heiße Hoa. Ich komme von Vietnam."
+        feedback_vi: Nơi xuất thân dùng aus – Ich komme aus Vietnam.
+        error_tag: preposition
+    explanation:
+      vi: “Xin chào” là Hallo (hoặc Guten Tag), “tôi tên là” là ich heiße (hoặc ich bin), “tôi đến từ Việt Nam” là Ich komme aus Vietnam.
+    display_answer: "Hallo, ich heiße Hoa. Ich komme aus Vietnam."
+
+  - key: de:exercise:p0u2l5-mcq-lesen-tim
+    type: mcq
+    stage: recall
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-student
+    prompt:
+      stem: "Đọc đoạn giới thiệu. Hallo! Ich bin Tim. Ich bin Student. Ich komme aus Bonn. Meine Handynummer ist null eins sieben zwei, fünf fünf, drei acht. Câu nào ĐÚNG?"
+      stem_lang: vi
+      options:
+        - { id: i1s, text: "Tim là sinh viên.", lang: vi }
+        - { id: i2b, text: "Tim đến từ Berlin.", lang: vi }
+        - { id: i3n, text: "Số di động của Tim là 0172 55 83.", lang: vi }
+        - { id: i4h, text: "Tim là học sinh phổ thông.", lang: vi }
+    answer:
+      correct_option_id: i1s
+    explanation:
+      vi: Ich bin Student nghĩa là “Tôi là sinh viên”. Tim đến từ Bonn, không phải Berlin; số cuối là drei acht = 38 (không phải 83); học sinh phổ thông là Schüler.
+    display_answer: "Tim là sinh viên."
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u2l5-wb-gespraech
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-und-du
+    prompt:
+      instruction: "Sắp xếp đoạn hội thoại thân mật: Mai chào và hỏi tên; Felix trả lời; Mai nói quê và hỏi lại; Felix trả lời; Mai chào tạm biệt."
+      tokens:
+        - { id: g-berlin, text: "Ich komme aus Berlin." }
+        - { id: g-tschuess, text: "Tschüss, bis bald!" }
+        - { id: g-sie, text: "Wie heißen Sie?" }
+        - { id: g-mai, text: "Hallo! Ich heiße Mai. Wie heißt du?" }
+        - { id: g-vietnam, text: "Ich komme aus Vietnam. Und du?" }
+        - { id: g-felix, text: "Ich bin Felix. Freut mich!" }
+    answer:
+      orders:
+        - [g-mai, g-felix, g-vietnam, g-berlin, g-tschuess]
+    explanation:
+      vi: Mai chào, nói tên và hỏi Wie heißt du?; Felix trả lời và nói Freut mich!; Mai nói quê rồi hỏi lại Und du?; Felix nói mình đến từ Berlin; cuối cùng chia tay thân mật Tschüss, bis bald!. Hai bạn dùng du nên không có Wie heißen Sie?
+    display_answer: "Hallo! Ich heiße Mai. Wie heißt du? Ich bin Felix. Freut mich! Ich komme aus Vietnam. Und du? Ich komme aus Berlin. Tschüss, bis bald!"
+
+  - key: de:exercise:p0u2l5-wb-auch
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-auch
+    prompt:
+      instruction: "Sắp xếp thành câu: “Tôi cũng đến từ Việt Nam.”"
+      tokens:
+        - { id: w-vn, text: "Vietnam." }
+        - { id: w-auch, text: "auch" }
+        - { id: w-von, text: "von" }
+        - { id: w-ich, text: "Ich" }
+        - { id: w-aus, text: "aus" }
+        - { id: w-komme, text: "komme" }
+    answer:
+      orders:
+        - [w-ich, w-komme, w-auch, w-aus, w-vn]
+    explanation:
+      vi: auch (cũng) đứng ngay sau động từ komme, trước aus Vietnam. Nơi xuất thân dùng aus, nên von là từ thừa.
+    display_answer: "Ich komme auch aus Vietnam."
+
+  - key: de:exercise:p0u2l5-tr-peter
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-guten-abend
+    prompt:
+      source_text: "Guten Abend! Ich heiße Peter. Wie heißen Sie?"
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Chào buổi tối! Tôi tên là Peter. Anh tên là gì?"
+        - "Chào buổi tối! Tôi tên là Peter. Chị tên là gì?"
+        - "Chào buổi tối! Tôi tên là Peter. Ông tên là gì?"
+        - "Chào buổi tối! Tôi tên là Peter. Bà tên là gì?"
+        - "Chào buổi tối! Tôi tên là Peter. Bạn tên là gì?"
+        - "Chào buổi tối! Tôi tên là Peter. Anh tên là gì ạ?"
+        - "Chào buổi tối! Tôi tên là Peter. Chị tên là gì ạ?"
+        - "Chào buổi tối! Tôi tên là Peter. Ông tên là gì ạ?"
+        - "Chào buổi tối! Tôi tên là Peter. Bà tên là gì ạ?"
+        - "Chào buổi tối! Tôi là Peter. Anh tên là gì?"
+        - "Chào buổi tối! Tôi là Peter. Chị tên là gì?"
+        - "Chào buổi tối! Tôi là Peter. Ông tên là gì?"
+        - "Chào buổi tối! Tôi là Peter. Bà tên là gì?"
+        - "Chào buổi tối! Tôi là Peter. Bạn tên là gì?"
+        - "Chào buổi tối! Tôi tên Peter. Anh tên gì?"
+        - "Chào buổi tối! Tôi tên Peter. Chị tên gì?"
+        - "Chào buổi tối! Tôi tên Peter. Bạn tên gì?"
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "Chúc ngủ ngon! Tôi tên là Peter. Anh tên là gì?"
+        feedback_vi: Guten Abend là “chào buổi tối” khi gặp; “chúc ngủ ngon” là Gute Nacht.
+        error_tag: greeting_time
+    explanation:
+      vi: Guten Abend = chào buổi tối; Ich heiße Peter = tôi tên là Peter; Wie heißen Sie? là câu hỏi tên lịch sự, nên dịch kèm đại từ tôn trọng như anh, chị, ông, bà.
+    display_answer: "Chào buổi tối! Tôi tên là Peter. Anh tên là gì?"
+
+  - key: de:exercise:p0u2l5-mcq-lesen-sms
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-zahlen-13-20
+    prompt:
+      stem: "Đọc tin nhắn của Anna. Hallo Minh! Wie geht's? Meine neue Handynummer: null eins fünf eins, zwei zwei sieben, neunzehn zwanzig. Tschüss, bis bald! Anna. Số mới của Anna là số nào?"
+      stem_lang: vi
+      options:
+        - { id: q1a, text: "0151 227 1920", lang: de }
+        - { id: q2a, text: "0151 227 1290", lang: de }
+        - { id: q3a, text: "0151 272 1920", lang: de }
+        - { id: q4a, text: "0115 227 1920", lang: de }
+    answer:
+      correct_option_id: q1a
+    explanation:
+      vi: null eins fünf eins = 0151, zwei zwei sieben = 227, nhóm cuối đọc theo cặp – neunzehn (19) zwanzig (20) = 1920. Các phương án khác đảo chỗ chữ số.
+    display_answer: "0151 227 1920"

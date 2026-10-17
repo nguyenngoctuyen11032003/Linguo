@@ -1,0 +1,347 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u2-begruessung
+order_index: 1
+level: pre_a1
+title:
+  vi: Chào hỏi – w, v, f, z (Begrüßung)
+objectives:
+  - vi: Chào và tạm biệt đúng thời điểm trong ngày – Guten Morgen, Guten Tag, Guten Abend, Gute Nacht.
+  - vi: Chọn đúng mức thân mật hay lịch sự – Hallo/Tschüss với bạn bè, Guten Tag/Auf Wiedersehen với người lạ.
+  - vi: Hỏi thăm và trả lời ngắn – Wie geht's? – Danke, gut.
+  - vi: Đọc đúng chữ w (= “v”), v (thường = “ph”), f/ph (= “ph”) và z/tz (= “ts”).
+estimated_minutes: 12
+skills: [pronunciation, speaking, listening]
+prerequisites: [de:lesson:p0u1-wiederholung]
+items:
+  - item: de:item:p0u2-g-w-v-f-z
+  - item: de:item:p0u2-hallo
+  - item: de:item:p0u2-guten-morgen
+  - item: de:item:p0u2-guten-tag
+  - item: de:item:p0u2-guten-abend
+  - item: de:item:p0u2-gute-nacht
+  - item: de:item:p0u2-tschuess
+  - item: de:item:p0u2-auf-wiedersehen
+  - item: de:item:p0u2-wie-gehts
+  - item: de:item:p0u2-danke-gut
+  - item: de:item:p0u2-bis-bald
+  - item: de:item:p0u2-herzlich-willkommen
+  - item: de:item:p0u1-zeit
+    role: reuse
+  - item: de:item:p0u1-pizza
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chào hỏi và tạm biệt bằng tiếng Đức đúng thời điểm trong ngày và đúng mức thân mật – lịch sự, đồng thời đọc đúng bốn chữ cái hay gây nhầm là w, v, f và z.
+  - type: explain
+    text:
+      vi: Chữ w trong tiếng Đức đọc như “v” tiếng Việt – Wie, Wiedersehen, willkommen. Ngược lại, chữ v trong từ gốc Đức thường đọc như “ph” – Vater, vier, viel. Chỉ ở từ mượn như Video, Vietnam thì v mới đọc là “v”.
+  - type: explain
+    text:
+      vi: Chữ f và cụm ph đều đọc như “ph” tiếng Việt – Foto, Telefon. Chữ z, zz và tz luôn đọc là “ts”, như “t” và “x” dính liền – zehn, Zeit, Pizza, jetzt. Đừng đọc z thành “d” hay “z” kiểu tiếng Anh.
+  - type: explain
+    text:
+      vi: Tiếng Việt dùng “xin chào” cả ngày, còn tiếng Đức chọn câu chào theo giờ – Guten Morgen (sáng, đến khoảng 10–11 giờ), Guten Tag (ban ngày), Guten Abend (từ khoảng 18 giờ). Gute Nacht chỉ nói khi đi ngủ hoặc chia tay lúc khuya, không dùng để chào khi gặp.
+  - type: explain
+    text:
+      vi: Hallo và Tschüss là thân mật – với bạn bè, người cùng lứa, người trẻ. Guten Tag và Auf Wiedersehen là lịch sự – với người lạ, thầy cô, ở cửa hàng hay cơ quan. Wie geht's? (Khoẻ không?) là câu hỏi thăm thân mật; trả lời ngắn là Danke, gut.
+  - type: deep_explain
+    text:
+      vi: Người Đức hay nói gọn – Morgen! thay cho Guten Morgen!, Tag! thay cho Guten Tag!. Ở Áo và Bayern bạn sẽ nghe Grüß Gott (lịch sự) và Servus (thân mật, cả lúc gặp lẫn lúc chia tay); ở Thụy Sĩ là Grüezi và Uf Wiederluege. Bạn chỉ cần nhận ra chúng; khi nói, hãy dùng các câu chuẩn trong bài. Tschüss còn được viết Tschüs, cả hai đều đúng. Wie geht's? là dạng nói gọn của Wie geht es?; câu hỏi thăm lịch sự Wie geht es Ihnen? bạn sẽ học ở A1.
+  - type: example
+    target: "Hallo, Lan! Wie geht's? – Danke, gut."
+    target_lang: de
+    translation:
+      vi: "Chào Lan! Khoẻ không? – Cảm ơn, khoẻ."
+    note:
+      vi: Hai người bạn nói chuyện thân mật (du). Wie đọc “vi” vì w = “v”.
+  - type: example
+    target: "Guten Abend, Herr Wagner! – Guten Abend!"
+    target_lang: de
+    translation:
+      vi: "Chào buổi tối, ông Wagner! – Chào buổi tối!"
+    note:
+      vi: Chào lịch sự (Sie) với người lớn tuổi, hàng xóm. Cách gọi Herr/Frau + họ bạn sẽ học ở P0U3.
+  - type: example
+    target: "Tschüss, Anna! Bis bald!"
+    target_lang: de
+    translation:
+      vi: "Tạm biệt Anna! Hẹn sớm gặp lại!"
+    note:
+      vi: Chia tay thân mật (du). tsch đọc gần như “ch” bật mạnh; d cuối của bald đọc “t”.
+  - type: example
+    target: "Auf Wiedersehen und vielen Dank!"
+    target_lang: de
+    translation:
+      vi: "Chào anh/chị, cảm ơn nhiều ạ!"
+    note:
+      vi: Chào lịch sự (Sie) khi rời cửa hàng. Wiedersehen có W = “v”; vielen có v = “ph”.
+  - type: example
+    target: "Herzlich willkommen in Berlin!"
+    target_lang: de
+    translation:
+      vi: "Chào mừng bạn đến Berlin!"
+    note:
+      vi: Câu chào đón khách, dùng được cả thân mật lẫn lịch sự. z trong herzlich = “ts”, w trong willkommen = “v”.
+  - type: common_mistake
+    wrong: "Gute Nacht! Wie geht's?"
+    right: "Guten Abend! Wie geht's?"
+    target_lang: de
+    note:
+      vi: Gặp nhau buổi tối thì chào Guten Abend. Gute Nacht giống “chúc ngủ ngon”, chỉ nói lúc chia tay để đi ngủ.
+  - type: common_mistake
+    wrong: "Gute Morgen!"
+    right: "Guten Morgen!"
+    target_lang: de
+    note:
+      vi: Morgen, Tag, Abend đi với Guten (có -n); chỉ Nacht đi với Gute – Gute Nacht. Lý do ngữ pháp bạn sẽ học sau, giờ hãy học thuộc cả câu.
+  - type: common_mistake
+    wrong: "Schüss!"
+    right: "Tschüss!"
+    target_lang: de
+    note:
+      vi: Đầu từ là tsch – một âm gần “ch” bật mạnh, không phải “s” hay “sch”. Đọc thiếu “t” sẽ thành một âm khác hẳn.
+  - type: summary
+    points:
+      - vi: w = “v” (Wie, Wiedersehen); v thường = “ph” (Vater, vier), từ mượn = “v” (Video, Vietnam).
+      - vi: f, ph = “ph”; z, zz, tz = “ts” (zehn, Zeit, Pizza).
+      - vi: Sáng Guten Morgen, ngày Guten Tag, tối Guten Abend; Gute Nacht chỉ khi đi ngủ.
+      - vi: Thân mật Hallo/Tschüss/Bis bald!; lịch sự Guten Tag/Auf Wiedersehen.
+      - vi: Wie geht's? – Danke, gut. Herzlich willkommen! = Chào mừng bạn!
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u2l1-mcq-guten-morgen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-guten-morgen
+    prompt:
+      stem: "Bây giờ là 8 giờ sáng. Bạn gặp đồng nghiệp ở văn phòng. Bạn chào thế nào?"
+      stem_lang: vi
+      options:
+        - { id: r7k, text: "Guten Morgen!", lang: de }
+        - { id: a2m, text: "Guten Abend!", lang: de }
+        - { id: x9p, text: "Gute Nacht!", lang: de }
+        - { id: h4t, text: "Tschüss!", lang: de }
+    answer:
+      correct_option_id: r7k
+    explanation:
+      vi: Buổi sáng (đến khoảng 10–11 giờ) chào Guten Morgen. Guten Abend dành cho buổi tối, Gute Nacht chỉ nói khi đi ngủ, còn Tschüss là lời tạm biệt, không phải lời chào khi gặp.
+    display_answer: "Guten Morgen!"
+
+  - key: de:exercise:p0u2l1-listen-vier-wir
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-g-w-v-f-z
+    prompt:
+      audio_asset_id: null
+      fallback_text: "vier"
+      options:
+        - { id: f3q, text: "vier", lang: de }
+        - { id: w8n, text: "wir", lang: de }
+        - { id: b5c, text: "Bier", lang: de }
+    answer:
+      correct_option_id: f3q
+    explanation:
+      vi: Bạn nghe âm đầu “ph” – đó là chữ v trong vier (bốn). wir bắt đầu bằng “v” (vì w = “v”), Bier bắt đầu bằng “b”.
+    display_answer: "vier"
+
+  - key: de:exercise:p0u2l1-mcq-z-ts
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u2-g-w-v-f-z
+    prompt:
+      stem: "Chữ z trong zehn, Zeit và Pizza đọc gần nhất với âm nào?"
+      stem_lang: vi
+      options:
+        - { id: k6d, text: "“ts” – “t” và “x” dính liền", lang: vi }
+        - { id: e1s, text: "“d” như trong “da”", lang: vi }
+        - { id: m9g, text: "“gi” giọng Bắc như trong “gió”", lang: vi }
+        - { id: p2v, text: "“x” như trong “xa”", lang: vi }
+    answer:
+      correct_option_id: k6d
+    explanation:
+      vi: Trong tiếng Đức z, zz và tz luôn là “ts” – zehn đọc “tsên”, Zeit đọc “tsait”, Pizza đọc “PI-tsa”. Đọc z thành “d”, “gi” hay “x” là lỗi rất hay gặp của người Việt.
+    display_answer: "“ts” – “t” và “x” dính liền"
+
+  - key: de:exercise:p0u2l1-mcq-v-video
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-g-w-v-f-z
+    prompt:
+      stem: "Trong từ nào, chữ v đọc là “v” (không phải “ph”)?"
+      stem_lang: vi
+      options:
+        - { id: n4j, text: "Video", lang: de }
+        - { id: c8r, text: "Vater", lang: de }
+        - { id: s3h, text: "vier", lang: de }
+        - { id: z7u, text: "viel", lang: de }
+    answer:
+      correct_option_id: n4j
+    explanation:
+      vi: Video là từ mượn nên v đọc “v”. Trong từ gốc Đức như Vater (bố), vier (bốn), viel (nhiều), v đọc “ph”.
+    display_answer: "Video"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u2l1-fill-guten-abend
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-guten-abend
+    prompt:
+      template: "A: Guten {{b1}}, Frau Becker! – B: Guten Abend, Herr Wagner!"
+      blanks:
+        - { id: b1, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Abend]
+    known_wrong:
+      - answer: Nacht
+        feedback_vi: Gute Nacht chỉ nói khi đi ngủ, và đi với Gute, không phải Guten. Gặp nhau buổi tối thì chào Guten Abend.
+        error_tag: greeting_time
+      - answer: Morgen
+        feedback_vi: Bà Becker đáp lại Guten Abend, nghĩa là đang buổi tối. Hai người chào nhau bằng cùng một câu.
+        error_tag: greeting_time
+    explanation:
+      vi: Người B đáp Guten Abend, nên lúc đó là buổi tối và người A cũng chào Guten Abend. Đây là lời chào lịch sự (Sie) giữa hai người hàng xóm.
+    display_answer: "A: Guten Abend, Frau Becker! – B: Guten Abend, Herr Wagner!"
+
+  - key: de:exercise:p0u2l1-fill-wie-gehts
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-wie-gehts
+    prompt:
+      template: "A: Hallo, Jonas! Wie {{b1}}? – B: Danke, {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: ["geht's", gehts]
+        b2: [gut]
+    known_wrong:
+      - answer: geht
+        feedback_vi: Thiếu 's (es) – câu đúng là Wie geht's?, dạng nói gọn của Wie geht es?
+        error_tag: missing_es
+    explanation:
+      vi: Câu hỏi thăm thân mật là Wie geht's? (Khoẻ không?), và câu trả lời ngắn là Danke, gut. (Cảm ơn, khoẻ.)
+    display_answer: "A: Hallo, Jonas! Wie geht's? – B: Danke, gut."
+
+  - key: de:exercise:p0u2l1-tr-guten-abend
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-guten-abend
+    prompt:
+      source_text: "Chào buổi tối! Khoẻ không? (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "Guten Abend! Wie geht's?"
+        - "Guten Abend! Wie gehts?"
+        - "Guten Abend! Wie geht es dir?"
+        - "Abend! Wie geht's?"
+        - "Abend! Wie gehts?"
+    known_wrong:
+      - answer: "Gute Nacht! Wie geht's?"
+        feedback_vi: Gute Nacht là “chúc ngủ ngon”, không dùng để chào khi gặp. Buổi tối chào Guten Abend.
+        error_tag: greeting_time
+      - answer: "Gute Abend! Wie geht's?"
+        feedback_vi: Phải là Guten Abend (có -n); chỉ Nacht mới đi với Gute.
+        error_tag: greeting_form
+      - answer: "Guten Abend! Wie geht es Ihnen?"
+        feedback_vi: Wie geht es Ihnen? là câu lịch sự (Sie); với bạn thân hãy nói Wie geht's?
+        error_tag: register_du_sie
+    explanation:
+      vi: “Chào buổi tối” là Guten Abend; câu hỏi thăm thân mật với bạn là Wie geht's? (hoặc đầy đủ hơn Wie geht es dir?).
+    display_answer: "Guten Abend! Wie geht's?"
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u2l1-mcq-auf-wiedersehen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-auf-wiedersehen
+    prompt:
+      stem: "Bạn làm xong thủ tục ở văn phòng hành chính và muốn chào tạm biệt nhân viên một cách lịch sự, trang trọng. Bạn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: q5w, text: "Auf Wiedersehen!", lang: de }
+        - { id: j2x, text: "Tschüss!", lang: de }
+        - { id: d8f, text: "Gute Nacht!", lang: de }
+        - { id: u6b, text: "Hallo!", lang: de }
+    answer:
+      correct_option_id: q5w
+    explanation:
+      vi: Lời tạm biệt lịch sự, trang trọng là Auf Wiedersehen. Tschüss là tạm biệt thân mật, Gute Nacht chỉ dùng khi đi ngủ, còn Hallo là lời chào khi gặp.
+    display_answer: "Auf Wiedersehen!"
+
+  - key: de:exercise:p0u2l1-wb-dialog
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-tschuess
+    prompt:
+      instruction: "Sắp xếp đoạn hội thoại thân mật giữa hai người bạn: “Chào Anna! – Khoẻ không? – Cảm ơn, khoẻ. – Tạm biệt!”"
+      tokens:
+        - { id: t-gut, text: "Danke, gut." }
+        - { id: t-tsch, text: "Tschüss!" }
+        - { id: t-nacht, text: "Gute Nacht!" }
+        - { id: t-hallo, text: "Hallo, Anna!" }
+        - { id: t-wie, text: "Wie geht's?" }
+    answer:
+      orders:
+        - [t-hallo, t-wie, t-gut, t-tsch]
+    explanation:
+      vi: Hội thoại bắt đầu bằng lời chào thân mật Hallo, sau đó hỏi thăm Wie geht's?, trả lời Danke, gut. và kết thúc bằng Tschüss!. Gute Nacht là “chúc ngủ ngon”, không phải “tạm biệt”.
+    display_answer: "Hallo, Anna! Wie geht's? Danke, gut. Tschüss!"
+
+  - key: de:exercise:p0u2l1-tr-bis-bald
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-bis-bald
+    prompt:
+      source_text: "Tschüss, bis bald!"
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Tạm biệt, hẹn sớm gặp lại!"
+        - "Tạm biệt, hẹn sớm gặp lại nhé!"
+        - "Tạm biệt, hẹn gặp lại sớm!"
+        - "Tạm biệt, hẹn gặp lại sớm nhé!"
+        - "Tạm biệt, sớm gặp lại nhé!"
+        - "Tạm biệt, hẹn gặp lại!"
+        - "Tạm biệt, hẹn gặp lại nhé!"
+        - "Chào nhé, hẹn sớm gặp lại!"
+        - "Chào, hẹn sớm gặp lại!"
+        - "Tạm biệt, gặp lại sau nhé!"
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "Chúc ngủ ngon!"
+        feedback_vi: Chúc ngủ ngon là Gute Nacht. Tschüss là “tạm biệt”, bis bald là “hẹn sớm gặp lại”.
+        error_tag: meaning
+    explanation:
+      vi: Tschüss là lời tạm biệt thân mật; bis bald nghĩa đen là “cho đến sớm thôi”, tức “hẹn sớm gặp lại”.
+    display_answer: "Tạm biệt, hẹn sớm gặp lại!"

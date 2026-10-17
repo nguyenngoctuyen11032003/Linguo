@@ -1,0 +1,360 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u2-zahlen-bis-20
+order_index: 2
+level: pre_a1
+title:
+  vi: Số 0–20 – âm ch và -ig (Zahlen bis 20)
+objectives:
+  - vi: Đếm và nghe hiểu các số từ 0 đến 20.
+  - vi: Đọc một số điện thoại theo từng chữ số.
+  - vi: Phân biệt ch như “kh” (acht) và ch nhẹ giữa lưỡi (ich); đọc chs là “ks” (sechs).
+  - vi: Đọc đuôi -ig như “ich” (zwanzig, richtig).
+estimated_minutes: 12
+skills: [pronunciation, listening, speaking]
+prerequisites: [de:lesson:p0u2-begruessung]
+items:
+  - item: de:item:p0u2-g-ch-laute
+  - item: de:item:p0u2-g-ig-endung
+  - item: de:item:p0u2-zahlen-0-12
+  - item: de:item:p0u2-zahlen-13-20
+  - item: de:item:p0u2-nummer
+  - item: de:item:p0u2-handynummer
+  - item: de:item:p0u2-richtig
+  - item: de:item:p0u2-falsch
+  - item: de:item:p0u2-ich
+  - item: de:item:p0u2-zahl
+  - item: de:item:p0u2-zaehlen
+  - item: de:item:p0u1-g-alphabet
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đếm được từ 0 đến 20, nghe và đọc được số điện thoại, và phát âm đúng hai âm ch khó của tiếng Đức.
+  - type: explain
+    text:
+      vi: Sau a, o, u và au, chữ ch đọc như “kh” tiếng Việt, hơi cọ ở cuống lưỡi – acht, Nacht, auch. Bạn đã quen âm này từ chữ “không”.
+  - type: explain
+    text:
+      vi: Sau i, e, ä, ö, ü, ei, eu và sau phụ âm (l, n, r), ch nhẹ hơn nhiều – ich, sechzehn, Milch. Hãy nói “i”, giữ nguyên lưỡi rồi thổi hơi mạnh qua mặt lưỡi, như tiếng xì nhẹ. Tiếng Việt không có âm này, nên đừng đọc ich thành “ích” có “k” ở cuối.
+  - type: explain
+    text:
+      vi: Cụm chs đọc là “ks” – sechs nghe như “zeks”, không phải “séch”. Đuôi -ig ở cuối từ đọc như ich – zwanzig là “TSVAN-tsich”, richtig là “RICH-tich”.
+  - type: explain
+    text:
+      vi: Số 13–19 ghép số đơn vị với zehn (mười), ngược thứ tự tiếng Việt – dreizehn là “ba-mười” = mười ba. Hai số viết bớt chữ là sechzehn (bỏ s của sechs) và siebzehn (bỏ -en của sieben); elf (11), zwölf (12) và zwanzig (20) là từ riêng.
+  - type: explain
+    text:
+      vi: Số điện thoại thường được đọc từng chữ số, có khi theo cặp – null eins sieben sechs. Qua điện thoại, người Đức hay nói zwo thay cho zwei để khỏi nhầm với drei.
+  - type: deep_explain
+    text:
+      vi: Khi có người hỏi lại cách viết một số, bạn đánh vần bằng tên chữ cái đã học ở P0U1 – zwanzig là Zet-We-A-En-Zet-I-Ge. Ở miền Nam Đức, Áo và Thụy Sĩ, đuôi -ig thường đọc là “ik”; cách đó vẫn được hiểu, nhưng bạn nên tập “ich” cho đúng chuẩn phổ biến. Chú ý i trong vierzehn ngắn, khác i dài trong vier. Handy là từ người Đức dùng cho điện thoại di động, dù nghe giống tiếng Anh.
+  - type: example
+    target: "Wir zählen: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn."
+    target_lang: de
+    translation:
+      vi: "Chúng ta đếm nhé: một, hai, ba, bốn, năm, sáu, bảy, tám, chín, mười."
+    note:
+      vi: z trong zwei, zehn = “ts”; v trong vier = “ph”; sechs = “zeks”; acht có ch = “kh”.
+  - type: example
+    target: "elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig"
+    target_lang: de
+    translation:
+      vi: "mười một, mười hai, mười ba, mười bốn, mười lăm, mười sáu, mười bảy, mười tám, mười chín, hai mươi"
+    note:
+      vi: Trọng âm ở phần đầu (DREI-zehn). sechzehn, siebzehn viết bớt chữ; zwanzig đọc -ig như “ich”.
+  - type: example
+    target: "Meine Handynummer ist null eins sieben sechs, zwei drei acht, neun null vier."
+    target_lang: de
+    translation:
+      vi: "Số di động của mình là 0176 238 904."
+    note:
+      vi: Đọc từng chữ số, ngắt theo nhóm. Meine (của mình) và ist (là) bạn sẽ học ở A1.
+  - type: example
+    target: "Wer hat die Nummer acht? – Ich!"
+    target_lang: de
+    translation:
+      vi: "Ai có số tám? – Tôi!"
+    note:
+      vi: Câu hỏi khi gọi theo số thứ tự (ở phòng chờ, quầy hàng). Ich có âm ch nhẹ, acht có ch = “kh”.
+  - type: example
+    target: "Welche Zahl ist richtig: zwölf oder zwanzig? – Zwölf!"
+    target_lang: de
+    translation:
+      vi: "Số nào đúng: mười hai hay hai mươi? – Mười hai!"
+    note:
+      vi: richtig có hai âm ch nhẹ (ch và đuôi -ig). Welche (nào) bạn sẽ học sau.
+  - type: example
+    target: "Zwanzig: Z-W-A-N-Z-I-G."
+    target_lang: de
+    translation:
+      vi: "Hai mươi: Zet-We-A-En-Zet-I-Ge."
+    note:
+      vi: Đánh vần bằng tên chữ cái tiếng Đức (P0U1) – Z là “tset”, W là “vê”, G là “ghê”.
+  - type: common_mistake
+    wrong: "sechszehn"
+    right: "sechzehn"
+    target_lang: de
+    note:
+      vi: Mười sáu bỏ chữ s của sechs – sechzehn, đọc “ZECH-tsên” với ch nhẹ.
+  - type: common_mistake
+    wrong: "siebenzehn"
+    right: "siebzehn"
+    target_lang: de
+    note:
+      vi: Mười bảy bỏ -en của sieben – siebzehn, đọc “DIIP-tsên”.
+  - type: common_mistake
+    wrong: "Zwei plus zehn ist zwanzig."
+    right: "Zwei plus zehn ist zwölf."
+    target_lang: de
+    note:
+      vi: zwölf (12) và zwanzig (20) đều bắt đầu bằng zw nên rất dễ nhầm. zwölf có ö, zwanzig có đuôi -zig.
+  - type: summary
+    points:
+      - vi: ch sau a, o, u, au = “kh” (acht, auch); sau i, e, ä, ö, ü, ei, eu và phụ âm = ch nhẹ (ich, sechzehn).
+      - vi: chs = “ks” (sechs); đuôi -ig = “ich” (zwanzig, richtig).
+      - vi: 13–19 = đơn vị + zehn; nhớ sechzehn, siebzehn; elf, zwölf, zwanzig là từ riêng.
+      - vi: Số điện thoại đọc từng chữ số; qua điện thoại có thể nói zwo thay cho zwei.
+      - vi: richtig = đúng, falsch = sai; die Zahl = con số, die Nummer = số (để gọi, đánh số).
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u2l2-listen-sechzehn
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-zahlen-13-20
+    prompt:
+      audio_asset_id: null
+      fallback_text: "sechzehn"
+      options:
+        - { id: s6z, text: "sechzehn", lang: de }
+        - { id: s1x, text: "sechs", lang: de }
+        - { id: s7e, text: "siebzehn", lang: de }
+        - { id: s9g, text: "sechzig", lang: de }
+    answer:
+      correct_option_id: s6z
+    explanation:
+      vi: Bạn nghe “ZECH-tsên” – có đuôi -zehn và âm ch nhẹ ở giữa, đó là sechzehn (16). sechs (6) không có -zehn; siebzehn (17) bắt đầu bằng “diip”; sechzig (60) kết thúc bằng -zig.
+    display_answer: "sechzehn"
+
+  - key: de:exercise:p0u2l2-listen-zwoelf
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-zahlen-0-12
+    prompt:
+      audio_asset_id: null
+      fallback_text: "zwölf"
+      options:
+        - { id: z2w, text: "zwölf", lang: de }
+        - { id: z5i, text: "zwei", lang: de }
+        - { id: z8a, text: "zwanzig", lang: de }
+        - { id: e3l, text: "elf", lang: de }
+    answer:
+      correct_option_id: z2w
+    explanation:
+      vi: Bạn nghe “tsvölf” với ö tròn môi và -lf ở cuối – đó là zwölf (12). zwei (2) có “ai”, zwanzig (20) có hai âm tiết và đuôi -ig, elf (11) không có zw.
+    display_answer: "zwölf"
+
+  - key: de:exercise:p0u2l2-mcq-ach-laut
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-g-ch-laute
+    prompt:
+      stem: "Trong từ nào, ch đọc như “kh” tiếng Việt?"
+      stem_lang: vi
+      options:
+        - { id: k4a, text: "acht", lang: de }
+        - { id: k7i, text: "ich", lang: de }
+        - { id: k1r, text: "richtig", lang: de }
+        - { id: k9s, text: "sechzehn", lang: de }
+    answer:
+      correct_option_id: k4a
+    explanation:
+      vi: Trong acht, ch đứng sau a nên đọc “kh”. Trong ich, richtig (sau i) và sechzehn (sau e), ch là âm nhẹ giữa lưỡi.
+    display_answer: "acht"
+
+  - key: de:exercise:p0u2l2-wb-reihenfolge
+    type: word_bank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-zahlen-13-20
+    prompt:
+      instruction: "Sắp xếp các số từ nhỏ đến lớn."
+      tokens:
+        - { id: n-20, text: "zwanzig" }
+        - { id: n-11, text: "elf" }
+        - { id: n-13, text: "dreizehn" }
+        - { id: n-12, text: "zwölf" }
+    answer:
+      orders:
+        - [n-11, n-12, n-13, n-20]
+    explanation:
+      vi: elf = 11, zwölf = 12, dreizehn = 13 (drei + zehn), zwanzig = 20. Đừng nhầm zwölf với zwanzig chỉ vì cùng bắt đầu bằng zw.
+    display_answer: "elf zwölf dreizehn zwanzig"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u2l2-fill-zehn-zwoelf
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u2-zahlen-0-12
+    prompt:
+      template: "acht, neun, {{b1}}, elf, {{b2}}, dreizehn"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [zehn]
+        b2: [zwölf]
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: zwanzig
+        feedback_vi: zwanzig là 20. Sau elf (11) là zwölf (12).
+        error_tag: number_confusion
+    explanation:
+      vi: Dãy số tăng dần từ 8 đến 13 – sau neun (9) là zehn (10), sau elf (11) là zwölf (12).
+    display_answer: "acht, neun, zehn, elf, zwölf, dreizehn"
+
+  - key: de:exercise:p0u2l2-fill-sechzehn-siebzehn
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-zahlen-13-20
+    prompt:
+      template: "fünfzehn, {{b1}}, {{b2}}, achtzehn"
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [sechzehn]
+        b2: [siebzehn]
+    known_wrong:
+      - answer: sechszehn
+        feedback_vi: Mười sáu bỏ chữ s của sechs – viết sechzehn.
+        error_tag: number_spelling
+      - answer: siebenzehn
+        feedback_vi: Mười bảy bỏ -en của sieben – viết siebzehn.
+        error_tag: number_spelling
+    explanation:
+      vi: Sau fünfzehn (15) là sechzehn (16) và siebzehn (17). Hai số này viết bớt chữ so với sechs và sieben.
+    display_answer: "fünfzehn, sechzehn, siebzehn, achtzehn"
+
+  - key: de:exercise:p0u2l2-tr-richtig-siebzehn
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-richtig
+    prompt:
+      source_text: "Đúng, mười bảy!"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - "Richtig, siebzehn!"
+        - "Siebzehn, richtig!"
+        - "Ja, siebzehn!"
+        - "Genau, siebzehn!"
+    known_wrong:
+      - answer: "Richtig, siebenzehn!"
+        feedback_vi: Mười bảy viết siebzehn, bỏ -en của sieben.
+        error_tag: number_spelling
+      - answer: "Falsch, siebzehn!"
+        feedback_vi: falsch là “sai”; “đúng” là richtig.
+        error_tag: meaning
+      - answer: "Richtig, siebzig!"
+        feedback_vi: siebzig là 70; mười bảy là siebzehn.
+        error_tag: number_confusion
+    explanation:
+      vi: “Đúng” là richtig, “mười bảy” là siebzehn (sieben bỏ -en, thêm zehn).
+    display_answer: "Richtig, siebzehn!"
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u2l2-listen-handynummer
+    type: listen
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-handynummer
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Meine Handynummer ist null eins fünf neun, drei sechs zwei, acht null sieben."
+      options:
+        - { id: h1a, text: "0159 362 807", lang: de }
+        - { id: h2b, text: "0159 326 807", lang: de }
+        - { id: h3c, text: "0195 362 807", lang: de }
+        - { id: h4d, text: "0159 362 870", lang: de }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: Người nói đọc từng chữ số – null eins fünf neun (0159), drei sechs zwei (362), acht null sieben (807). Các phương án khác đảo chỗ hai chữ số.
+    display_answer: "0159 362 807"
+
+  - key: de:exercise:p0u2l2-mcq-zwo
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u2-zahlen-0-12
+    prompt:
+      stem: "Bạn đọc số điện thoại qua điện thoại, đường truyền kém, người nghe dễ nhầm zwei với drei. Người Đức thường nói từ nào thay cho zwei?"
+      stem_lang: vi
+      options:
+        - { id: w2o, text: "zwo", lang: de }
+        - { id: w2z, text: "zwanzig", lang: de }
+        - { id: w1e, text: "zwölf", lang: de }
+        - { id: w3e, text: "zehn", lang: de }
+    answer:
+      correct_option_id: w2o
+    explanation:
+      vi: zwo là cách nói khác của zwei (2), dùng khi đọc số qua điện thoại hay trong loa thông báo để khỏi nhầm với drei (3). zwanzig, zwölf, zehn là các số khác.
+    display_answer: "zwo"
+
+  - key: de:exercise:p0u2l2-tr-falsch-zwoelf
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u2-falsch
+    prompt:
+      source_text: "Zwanzig? Falsch! Zwölf."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Hai mươi à? Sai! Mười hai."
+        - "Hai mươi? Sai! Mười hai."
+        - "Hai mươi hả? Sai! Mười hai."
+        - "Hai mươi à? Sai rồi! Mười hai."
+        - "Hai mươi? Sai rồi! Mười hai."
+        - "Hai mươi hả? Sai rồi! Mười hai."
+        - "Hai mươi à? Sai! Là mười hai."
+        - "Hai mươi? Sai! Là mười hai."
+        - "Hai mươi à? Sai rồi! Là mười hai."
+        - "20? Sai! 12."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "Hai mươi à? Đúng! Mười hai."
+        feedback_vi: falsch là “sai”; “đúng” là richtig.
+        error_tag: meaning
+      - answer: "Mười hai? Sai! Hai mươi."
+        feedback_vi: zwanzig là 20, zwölf là 12 – bạn đã đảo hai số.
+        error_tag: number_confusion
+    explanation:
+      vi: zwanzig = hai mươi, falsch = sai, zwölf = mười hai. Người nói sửa lại con số mà người kia nói nhầm.
+    display_answer: "Hai mươi à? Sai! Mười hai."
