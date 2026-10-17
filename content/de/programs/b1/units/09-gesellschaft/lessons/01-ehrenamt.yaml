@@ -48,6 +48,8 @@ items:
     role: reuse
   - item: de:item:b1u04-nachhilfe
     role: reuse
+  - item: de:item:b1u08-g-statt-ohne-zu
+    role: reuse
 body:
   - type: objective
     text:
@@ -63,10 +65,10 @@ body:
       vi: "Cùng chủ ngữ thì dass vẫn đúng ngữ pháp, nhưng thường nặng nề: Ich hoffe, dass ich euch bald wiedersehe. Người Đức hay nói gọn hơn: Ich hoffe, euch bald wiederzusehen. Với động từ tách, zu chen vào giữa (mitzumachen); với động từ phản thân, đại từ đổi theo chủ ngữ (Ich habe vor, mich zu engagieren)."
   - type: explain
     text:
-      vi: "Sau các động từ nói và nhận biết như sagen, erzählen, merken, bạn dùng dass, không dùng cụm zu: Er sagt, dass er morgen hilft (hoặc Er sagt, er hilft morgen). Câu Er sagt, morgen zu helfen là sai."
+      vi: "Khi thuật lại lời nói hay điều nhận thấy với sagen, erzählen, merken, bạn hầu như luôn dùng dass (hoặc câu không có dass): Er sagt, dass er morgen hilft / Er sagt, er hilft morgen; câu Er sagt, morgen zu helfen là sai. Riêng jemandem sagen + cụm zu lại có nghĩa \"bảo ai làm gì\": Er sagt mir, morgen zu kommen (anh ấy bảo tôi mai đến). Còn glauben, behaupten đi được cả hai cách khi cùng chủ ngữ: Ich glaube, ihn zu kennen = Ich glaube, dass ich ihn kenne."
   - type: deep_explain
     text:
-      vi: "Với bitten, empfehlen, raten, người làm việc trong cụm zu là tân ngữ của câu chính: Der Verein bittet alle Mitglieder, beim Fest zu helfen (các thành viên giúp). Sau động từ khuyết thiếu (können, müssen, wollen …) và sau lassen thì không có zu: Ich will helfen. Những chỗ hay dùng cụm zu: hoffen, versuchen, vorhaben, vergessen, beschließen, Lust/Zeit haben, Es ist wichtig/schön/schwer …; còn wollen hay möchten với chủ ngữ khác thì bắt buộc dass: Ich möchte, dass du mitkommst. Dấu phẩy trước cụm zu bắt buộc khi cụm phụ thuộc vào một danh từ (Lust, Zeit) hoặc có từ báo trước như es; các trường hợp còn lại người ta cũng thường đặt dấu phẩy cho dễ đọc. Về văn hoá: ở Đức rất nhiều người làm tình nguyện trong hội (Verein) – từ câu lạc bộ thể thao, dàn hợp xướng đến đội cứu hoả tình nguyện; vào hội thường cần đóng một khoản hội phí nhỏ."
+      vi: "Với bitten, empfehlen, raten, người làm việc trong cụm zu là tân ngữ của câu chính: Der Verein bittet alle Mitglieder, beim Fest zu helfen (các thành viên giúp). Sau động từ khuyết thiếu (können, müssen, wollen …) và sau lassen thì không có zu: Ich will helfen. Những chỗ hay dùng cụm zu: hoffen, versuchen, vorhaben, vergessen, beschließen, Lust/Zeit haben, Es ist wichtig/schön/schwer …; còn wollen hay möchten với chủ ngữ khác thì bắt buộc dass: Ich möchte, dass du mitkommst. Dấu phẩy trước cụm zu bắt buộc khi cụm mở đầu bằng um, ohne, statt, khi cụm phụ thuộc vào một danh từ (Lust, Zeit) hoặc có từ báo trước như es; các trường hợp còn lại người ta cũng thường đặt dấu phẩy cho dễ đọc. Về văn hoá: ở Đức nhiều người làm tình nguyện trong hội (Verein) – từ câu lạc bộ thể thao, dàn hợp xướng đến đội cứu hoả tình nguyện; nhiều hội thu hội phí, mức phí mỗi nơi một khác."
   - type: example
     target: Es ist schön, anderen Menschen zu helfen.
     target_lang: de
@@ -110,18 +112,25 @@ body:
     note:
       vi: "da + câu phụ (động từ arbeitet cuối) nêu lý do đã biết; sich kümmern um + Akkusativ (ôn B1U02)."
   - type: example
-    target: Wenn ich doch nur mehr Zeit hätte! Dann würde ich mich auch engagieren, aber im Moment schaffe ich leider nichts.
+    target: Wenn ich doch nur mehr Zeit hätte! Dann würde ich mich auch engagieren, aber im Moment kann ich leider nichts mehr übernehmen.
     target_lang: de
     translation:
-      vi: Giá mà tôi có nhiều thời gian hơn! Khi đó tôi cũng sẽ tham gia, nhưng hiện giờ tiếc là tôi không làm thêm được gì.
+      vi: Giá mà tôi có nhiều thời gian hơn! Khi đó tôi cũng sẽ tham gia, nhưng hiện giờ tiếc là tôi không thể nhận thêm việc gì nữa.
     note:
       vi: "Wenn ich doch nur … hätte! là ước muốn không thật (ôn B1U04); nichts là đại từ bất định (B1U03)."
+  - type: example
+    target: Statt nur Geld zu spenden, hilft Minh jeden Samstag selbst im Verein mit.
+    target_lang: de
+    translation:
+      vi: Thay vì chỉ quyên góp tiền, thứ Bảy nào Minh cũng tự mình đến hội phụ giúp.
+    note:
+      vi: "statt … zu + nguyên thể (ôn B1U08) cũng là cụm zu: người làm chính là chủ ngữ Minh. Cụm đứng đầu câu nên hilft ở vị trí 2."
   - type: common_mistake
     wrong: Er sagt, morgen zu helfen.
     right: Er sagt, dass er morgen hilft.
     target_lang: de
     note:
-      vi: "sagen không đi với cụm zu; dùng dass + câu phụ (hoặc Er sagt, er hilft morgen)."
+      vi: "Khi thuật lại lời ai đó, sagen không đi với cụm zu; dùng dass + câu phụ (hoặc Er sagt, er hilft morgen)."
   - type: common_mistake
     wrong: Ich hoffe, dass du mitzumachen.
     right: Ich hoffe, dass du mitmachst.
@@ -139,7 +148,7 @@ body:
       - vi: "Cùng chủ ngữ hoặc \"người ta\" nói chung → cụm zu: Es ist schön, anderen zu helfen."
       - vi: "Khác chủ ngữ → dass + động từ chia cuối: Ich hoffe, dass du mitmachst."
       - vi: "Cùng chủ ngữ, dass vẫn đúng nhưng nặng; cụm zu gọn hơn: Ich hoffe, euch bald wiederzusehen."
-      - vi: "sagen, erzählen, merken → dass; không dùng cụm zu."
+      - vi: "Thuật lại với sagen, erzählen, merken → dass (riêng jemandem sagen, … zu … = bảo ai làm gì); glauben đi được cả hai: Ich glaube, ihn zu kennen."
       - vi: "Động từ tách: mitzumachen, mitzubringen; phản thân: mich/dich/sich zu engagieren."
       - vi: "Từ vựng: das Ehrenamt, ehrenamtlich, der Verein, das Mitglied, sich engagieren, spenden, die Spende, unterstützen, die Gemeinschaft."
 exercises:
@@ -181,7 +190,7 @@ exercises:
     answer:
       correct_option_id: s3a
     explanation:
-      vi: "sagen không đi với cụm zu, nên dùng dass + câu phụ. Trong câu dass, động từ chia (hilft) đứng cuối, sau morgen; helfen là nguyên thể, chưa chia theo er."
+      vi: "Khi thuật lại lời ai đó, sagen không đi với cụm zu, nên dùng dass + câu phụ. Trong câu dass, động từ chia (hilft) đứng cuối, sau morgen; helfen là nguyên thể, chưa chia theo er."
     display_answer: Er sagt, dass er morgen hilft.
 
   - key: de:exercise:b1u09l1-mcq-lesen-geld
@@ -296,6 +305,8 @@ exercises:
         - Es ist schön, anderen Leuten zu helfen.
         - Es ist sehr schön, anderen zu helfen.
         - Es ist sehr schön, anderen Menschen zu helfen.
+        - Es ist wirklich schön, anderen zu helfen.
+        - Es ist wirklich schön, anderen Menschen zu helfen.
     known_wrong:
       - answer: Es ist schön, anderen helfen.
         feedback_vi: Sau Es ist schön cần cụm zu – anderen zu helfen.
@@ -354,13 +365,15 @@ exercises:
         - Ich möchte gerne, dass du dieses Projekt unterstützt.
         - Ich möchte, dass du das Projekt unterstützt.
         - Ich will, dass du das Projekt unterstützt.
+        - Ich möchte gern, dass du das Projekt unterstützt.
         - Ich würde mich freuen, wenn du dieses Projekt unterstützt.
+        - Ich würde mich freuen, wenn du dieses Projekt unterstützen würdest.
     known_wrong:
       - answer: Ich möchte, dass du unterstützt dieses Projekt.
         feedback_vi: Trong câu dass, động từ chia đứng cuối – dass du dieses Projekt unterstützt.
         error_tag: verb_position
       - answer: Ich möchte, dieses Projekt zu unterstützen.
-        feedback_vi: Câu này nghĩa là chính mình ủng hộ. Người ủng hộ là du (khác chủ ngữ) → phải dùng dass.
+        feedback_vi: Sau möchte không dùng cụm zu; hơn nữa người ủng hộ là du (khác chủ ngữ) → phải dùng dass.
         error_tag: zu_infinitive
       - answer: Ich möchte dich dieses Projekt unterstützen.
         feedback_vi: Tiếng Đức không nói như vậy; khi người khác làm, dùng Ich möchte, dass du …

@@ -18,7 +18,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Nếu người làm việc ở vế sau cũng là chủ ngữ của câu chính (hoặc là \"người ta\" nói chung), bạn thường dùng cụm zu + nguyên thể: Ich hoffe, dich bald zu sehen. Nếu người làm là một người khác, bạn phải dùng dass + câu phụ, động từ đứng cuối: Ich hoffe, dass du bald kommst. Sau sagen, erzählen, merken bạn dùng dass, không dùng cụm zu."
+        vi: "Nếu người làm việc ở vế sau cũng là chủ ngữ của câu chính (hoặc là \"người ta\" nói chung), bạn thường dùng cụm zu + nguyên thể: Ich hoffe, dich bald zu sehen. Nếu người làm là một người khác, bạn phải dùng dass + câu phụ, động từ đứng cuối: Ich hoffe, dass du bald kommst. Khi thuật lại với sagen, erzählen, merken, bạn hầu như luôn dùng dass; còn glauben đi được cả hai cách: Ich glaube, ihn zu kennen."
       examples:
         - target: Es ist schön, anderen Menschen zu helfen.
           translation:
@@ -30,7 +30,7 @@ items:
           translation:
             vi: Cô ấy dự định tham gia hoạt động trong một hội.
       confusion:
-        vi: "Cùng chủ ngữ thì dass vẫn đúng ngữ pháp (Ich hoffe, dass ich bald komme) nhưng nặng nề; người Đức thường nói gọn bằng cụm zu. Ngược lại, Er sagt, zu kommen là sai: phải nói Er sagt, dass er kommt (hoặc Er sagt, er kommt)."
+        vi: "Cùng chủ ngữ thì dass vẫn đúng ngữ pháp (Ich hoffe, dass ich bald komme) nhưng nặng nề; người Đức thường nói gọn bằng cụm zu. Ngược lại, khi thuật lại lời ai đó, Er sagt, morgen zu kommen là sai: phải nói Er sagt, dass er morgen kommt (hoặc Er sagt, er kommt morgen). Er sagt mir, morgen zu kommen lại đúng nhưng nghĩa là \"anh ấy bảo tôi mai đến\"."
 
   - key: de:item:b1u09-ehrenamt
     type: vocab
@@ -364,7 +364,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "-bar sau gốc động từ nghĩa là \"có thể được …\" (machbar = làm được), -los nghĩa là \"không có\" (arbeitslos), -voll nghĩa là \"đầy, có nhiều\" (rücksichtsvoll). -lich, -ig, -isch biến danh từ hoặc động từ thành tính từ (freundlich, ruhig, praktisch). un- đứng trước tính từ để phủ định (unmöglich, unfreundlich)."
+        vi: "-bar sau gốc động từ thường nghĩa là \"có thể được …\" (machbar = làm được; ngoại lệ gốc danh từ: dankbar = biết ơn), -los nghĩa là \"không có\" (arbeitslos), -voll nghĩa là \"đầy, có nhiều\" (rücksichtsvoll). -lich, -ig, -isch biến danh từ hoặc động từ thành tính từ (freundlich, ruhig, praktisch). un- đứng trước tính từ để phủ định (unmöglich, unfreundlich)."
       examples:
         - target: Das ist schwierig, aber machbar.
           translation:
@@ -372,7 +372,7 @@ items:
         - target: Unsere Nachbarn sind sehr rücksichtsvoll.
           translation:
             vi: Hàng xóm của chúng tôi rất biết nghĩ cho người khác.
-        - target: Bei diesem Lärm ist es unmöglich zu schlafen.
+        - target: Bei diesem Lärm ist es unmöglich, zu schlafen.
           translation:
             vi: Ồn thế này thì không thể ngủ được.
       confusion:
@@ -458,7 +458,7 @@ items:
             vi: Xin lỗi, tôi có làm phiền không?
         - target: Die laute Musik stört mich beim Lernen.
           translation:
-            vi: Tiếng nhạc to làm tôi không học được.
+            vi: Tiếng nhạc to làm phiền tôi khi đang học.
       confusion:
         vi: "Người bị làm phiền ở Akkusativ: Das stört mich (không phải mir). Bị làm phiền khi đang làm gì: bei + Dativ (beim Lernen, beim Schlafen)."
 
@@ -481,7 +481,7 @@ items:
           translation:
             vi: Không biết nghĩ cho nhau thì không thể sống chung yên ổn.
       confusion:
-        vi: "Cụm cố định: Rücksicht nehmen auf + Akkusativ (auf die Nachbarn). Tính từ: rücksichtsvoll ↔ rücksichtslos."
+        vi: "Gần như chỉ dùng số ít (số nhiều die Rücksichten rất hiếm, nghĩa khác: những cân nhắc). Cụm cố định: Rücksicht nehmen auf + Akkusativ (auf die Nachbarn). Tính từ: rücksichtsvoll ↔ rücksichtslos."
 
   - key: de:item:b1u09-ruecksichtsvoll
     type: vocab
@@ -643,7 +643,7 @@ items:
       meaning:
         vi: không thể; (về cách cư xử) quá đáng, không chấp nhận được
       examples:
-        - target: Bei diesem Lärm ist es unmöglich zu schlafen.
+        - target: Bei diesem Lärm ist es unmöglich, zu schlafen.
           translation:
             vi: Ồn thế này thì không thể ngủ được.
         - target: Ich finde sein Verhalten unmöglich.
@@ -760,7 +760,7 @@ items:
       pronunciation_note:
         vi: "Trọng âm ở âm tiết cuối: Po-li-TIK, i cuối đọc dài."
       confusion:
-        vi: "Người làm chính trị: der Politiker / die Politikerin; tính từ: politisch. Quan tâm đến chính trị: sich für Politik interessieren."
+        vi: "Thường chỉ dùng số ít (số nhiều die Politiken rất hiếm). Người làm chính trị: der Politiker / die Politikerin; tính từ: politisch. Quan tâm đến chính trị: sich für Politik interessieren."
 
   - key: de:item:b1u09-wahl
     type: vocab
@@ -1126,7 +1126,7 @@ items:
           translation:
             vi: Hôm qua tôi nghe một bài nói về công việc tình nguyện.
       confusion:
-        vi: "Số nhiều đổi a → ä: die Vorträge. Diễn thuyết: einen Vortrag halten (không dùng machen)."
+        vi: "Số nhiều đổi a → ä: die Vorträge. Diễn thuyết: einen Vortrag halten (cách nói chuẩn; machen chỉ gặp trong khẩu ngữ)."
 
   - key: de:item:b1u09-folie
     type: vocab
@@ -1233,7 +1233,7 @@ items:
           translation:
             vi: Khi nói hãy nhìn về phía người nghe!
       confusion:
-        vi: "Publikum là danh từ tập hợp số ít: Das Publikum war begeistert (thường chỉ dùng số ít, kể cả khi nói \"các khán giả\"). Một người nghe: der Zuhörer / die Zuhörerin."
+        vi: "Publikum là danh từ tập hợp số ít: Das Publikum war begeistert (thường chỉ dùng số ít, kể cả khi nói \"các khán giả\"; số nhiều die Publika rất hiếm). Một người nghe: der Zuhörer / die Zuhörerin."
 
   # Zusatzwortschatz B1U09L4 (4): der Stichpunkt, der Überblick, erwähnen, das Lampenfieber
   - key: de:item:b1u09-stichpunkt

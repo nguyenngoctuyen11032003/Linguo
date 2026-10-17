@@ -36,6 +36,8 @@ items:
     role: reuse
   - item: de:item:b1u06-g-meinung-redemittel
     role: reuse
+  - item: de:item:b1u07-g-nominalisierter-infinitiv
+    role: reuse
 body:
   - type: objective
     text:
@@ -96,7 +98,14 @@ body:
     translation:
       vi: Cảm ơn câu hỏi. Anh/chị muốn biết làm tình nguyện có được trả tiền không ạ? Không, thường thì không.
     note:
-      vi: "Nhắc lại câu hỏi bằng câu hỏi gián tiếp ob … để chắc mình hiểu đúng, rồi mới trả lời."
+      vi: "Nhắc lại câu hỏi bằng câu hỏi gián tiếp ob … để chắc mình hiểu đúng, rồi mới trả lời. (Một số người làm tình nguyện có nhận một khoản bồi hoàn chi phí nhỏ, nên câu trả lời dùng normalerweise.)"
+  - type: example
+    target: Beim Präsentieren sollte man das Publikum ansehen und nicht alles vom Zettel ablesen.
+    target_lang: de
+    translation:
+      vi: Khi thuyết trình, nên nhìn vào người nghe và đừng đọc hết mọi thứ từ tờ giấy.
+    note:
+      vi: "beim + động từ nguyên thể viết hoa (das Präsentieren) = trong khi làm việc đó (ôn B1U07)."
   - type: common_mistake
     wrong: Ehrenamt ist gut. In Vietnam gibt es das auch. Ende.
     right: Ich komme jetzt zu meinem zweiten Punkt. … Zum Schluss möchte ich kurz zusammenfassen.
@@ -288,6 +297,8 @@ exercises:
         - Heute möchte ich euch das Thema Nachbarschaft vorstellen.
         - Ich möchte euch heute das Thema Nachbarschaft präsentieren.
         - Heute möchte ich euch das Thema Nachbarschaft präsentieren.
+        - Ich möchte euch heute gern das Thema Nachbarschaft vorstellen.
+        - Heute möchte ich euch gern das Thema Nachbarschaft vorstellen.
     known_wrong:
       - answer: Ich möchte euch heute das Thema Nachbarschaft zu vorstellen.
         feedback_vi: Sau möchte không dùng zu – … vorstellen.

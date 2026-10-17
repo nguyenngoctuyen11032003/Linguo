@@ -41,25 +41,27 @@ items:
     role: reuse
   - item: de:item:b1u05-g-negation-erweitert
     role: reuse
+  - item: de:item:b1u07-g-zustandspassiv
+    role: reuse
 body:
   - type: objective
     text:
       vi: "Sau bài này, bạn nói được về nội quy toà nhà và nhắc hàng xóm lịch sự, ví dụ: \"Entschuldigung, die Musik ist sehr laut. Könnten Sie sie bitte etwas leiser machen? Laut Hausordnung ist ab 22 Uhr Ruhezeit.\""
   - type: explain
     text:
-      vi: "-bar gắn vào gốc động từ và mang nghĩa \"có thể được …\": machen → machbar (làm được), essen → essbar (ăn được), erreichen → erreichbar (liên lạc được). Gần giống tiếng Việt thêm \"được\" sau động từ."
+      vi: "-bar gắn vào gốc động từ và thường mang nghĩa \"có thể được …\": machen → machbar (làm được), essen → essbar (ăn được), erreichen → erreichbar (đến được, liên lạc được). Gần giống tiếng Việt thêm \"được\" sau động từ. Ngoại lệ: khi -bar gắn vào danh từ, nghĩa khác hẳn: dankbar (biết ơn, từ der Dank), fruchtbar (màu mỡ)."
   - type: explain
     text:
       vi: "-los nghĩa là \"không có\", -voll nghĩa là \"đầy, có nhiều\": arbeitslos (không có việc), rücksichtslos (không biết nghĩ cho người khác) ↔ rücksichtsvoll (biết nghĩ cho người khác). Một số từ có âm nối -s- ở giữa: Rücksicht + s + voll."
   - type: explain
     text:
-      vi: "-lich, -ig, -isch biến danh từ hoặc động từ thành tính từ: der Freund → freundlich, der Friede(n) → friedlich, die Ruhe → ruhig, die Praxis → praktisch. un- đứng đầu để phủ định – giống \"không, bất\" trong tiếng Việt: unmöglich (không thể), unfreundlich (không thân thiện)."
+      vi: "-lich, -ig, -isch thường biến danh từ (đôi khi động từ) thành tính từ: der Freund → freundlich, der Friede(n) → friedlich, die Ruhe → ruhig, die Praxis → praktisch. Nghĩa không phải lúc nào cũng đoán thẳng được: freundlich là \"thân thiện\", không phải \"thuộc về bạn bè\". un- đứng đầu để phủ định – giống \"không, bất\" trong tiếng Việt: unmöglich (không thể), unfreundlich (không thân thiện)."
   - type: explain
     text:
       vi: "Khi có chuyện với hàng xóm, người Đức thường nói trực tiếp nhưng lịch sự, dùng Konjunktiv II: Könnten Sie bitte …? Würden Sie bitte …? Giờ yên tĩnh (Ruhezeit) thường là ban đêm, khoảng 22 đến 6 giờ, và ở nhiều nơi cả Chủ nhật, ngày lễ; giờ cụ thể tuỳ nội quy nhà và quy định địa phương."
   - type: deep_explain
     text:
-      vi: "Cấu tạo từ giúp bạn đoán nghĩa khi đọc: unbezahlbar = không trả nổi (un- + bezahlen + -bar), hilflos = không ai giúp được, bất lực, verständlich = dễ hiểu. Tuy vậy, đừng tự tạo từ mới chỉ theo quy tắc: không phải gốc nào cũng ghép được với mọi hậu tố, và với tính từ đã có từ trái nghĩa riêng (teuer – billig, laut – leise), người Đức dùng từ đó thay vì thêm un-; khi không chắc, dùng nicht: Das ist nicht machbar. Đuôi -ig theo chuẩn phát âm đọc giống -ich (ruhig), ở miền Nam nước Đức và Áo hay đọc là -ik. Chữ laut còn là giới từ \"theo\" trong văn bản: laut Hausordnung = theo nội quy. Nếu nói chuyện trực tiếp không giải quyết được, người thuê nhà thường báo cho chủ nhà hoặc ban quản lý toà nhà (die Hausverwaltung); cách xử lý cụ thể có thể khác nhau."
+      vi: "Cấu tạo từ giúp bạn đoán nghĩa khi đọc: unbezahlbar = không trả nổi (un- + bezahlen + -bar), hilflos = bất lực, không tự xoay xở được (không có sự giúp đỡ), verständlich = hiểu được, dễ hiểu. Tuy vậy, đừng tự tạo từ mới chỉ theo quy tắc: không phải gốc nào cũng ghép được với mọi hậu tố, và với tính từ đã có từ trái nghĩa riêng (teuer – billig, laut – leise), người Đức dùng từ đó thay vì thêm un-; khi không chắc, dùng nicht: Das ist nicht machbar. Đuôi -ig theo chuẩn phát âm đọc giống -ich (ruhig), ở miền Nam nước Đức, Áo và Thụy Sĩ hay đọc là -ik. Chữ laut còn là giới từ \"theo\" trong văn bản: laut Hausordnung = theo nội quy. Nếu nói chuyện trực tiếp không giải quyết được, người thuê nhà thường báo cho chủ nhà hoặc ban quản lý toà nhà (die Hausverwaltung); cách xử lý cụ thể có thể khác nhau."
   - type: example
     target: Laut Hausordnung ist von 22 bis 6 Uhr Ruhezeit.
     target_lang: de
@@ -103,6 +105,13 @@ body:
     note:
       vi: "nicht brauchen + zu = không cần (ôn B1U04); anrufen tách → anzurufen. dem Nachbarn: der Nachbar biến cách yếu."
   - type: example
+    target: Ab 22 Uhr ist die Haustür abgeschlossen.
+    target_lang: de
+    translation:
+      vi: Từ 22 giờ cửa ra vào toà nhà được khoá.
+    note:
+      vi: "sein + Partizip II = bị động trạng thái (ôn B1U07): cửa đang ở trạng thái đã khoá. Đây là ví dụ, giờ khoá cửa tuỳ từng toà nhà."
+  - type: example
     target: Seit unserem Gespräch hört er nachts keine laute Musik mehr.
     target_lang: de
     translation:
@@ -110,11 +119,11 @@ body:
     note:
       vi: "kein … mehr = không còn … nữa (ôn B1U05); seit + Dativ: seit unserem Gespräch."
   - type: common_mistake
-    wrong: Die Wohnung ist unteuer.
-    right: Die Wohnung ist günstig.
+    wrong: Die Nachbarn sind heute unlaut.
+    right: Die Nachbarn sind heute leise.
     target_lang: de
     note:
-      vi: "teuer đã có từ trái nghĩa riêng (billig, günstig), nên không ghép un-. Đừng tự tạo từ un- mới; khi không chắc, dùng nicht teuer."
+      vi: "laut đã có từ trái nghĩa riêng (leise), nên không ghép un-. Đừng tự tạo từ un- mới; khi không chắc, dùng nicht: nicht laut."
   - type: common_mistake
     wrong: Sie sind rücksichtslos! Machen Sie sofort die Musik leiser!
     right: Entschuldigung, könnten Sie die Musik bitte etwas leiser machen?

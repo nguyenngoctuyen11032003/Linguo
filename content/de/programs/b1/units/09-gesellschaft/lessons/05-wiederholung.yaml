@@ -62,7 +62,7 @@ body:
       vi: "Ôn ngữ pháp của unit: cụm zu khi cùng chủ ngữ, dass khi khác chủ ngữ; tính từ phái sinh (-bar, -los, -voll, -lich, un-); câu so sánh als/wie với động từ đứng cuối; Redemittel thuyết trình."
   - type: deep_explain
     text:
-      vi: "Trong thư trang trọng, Sie, Ihnen, Ihr luôn viết hoa; sau lời chào có dấu phẩy, nên dòng tiếp theo bắt đầu bằng chữ thường (Sehr geehrte Damen und Herren, leider …). Sau Mit freundlichen Grüßen không có dấu phẩy, tên viết ở dòng dưới. Với 40 từ, đừng mở đầu quá dài: một câu lý do, một câu xin lỗi hoặc đề nghị, một câu đề xuất giải pháp là đủ. Khi luyện nói, hãy bấm giờ: khoảng 3–4 phút cho phần trình bày, rồi luyện trả lời một hai câu hỏi của bạn học."
+      vi: "Trong thư trang trọng, Sie, Ihnen, Ihr (dạng xưng hô lịch sự) luôn viết hoa; sau lời chào có dấu phẩy, nên dòng tiếp theo bắt đầu bằng chữ thường (Sehr geehrte Damen und Herren, leider …). Sau Mit freundlichen Grüßen không có dấu phẩy, tên viết ở dòng dưới. Với 40 từ, đừng mở đầu quá dài: một câu lý do, một câu xin lỗi hoặc đề nghị, một câu đề xuất giải pháp là đủ. Khi luyện nói, hãy bấm giờ: khoảng 3–4 phút cho phần trình bày, rồi luyện trả lời một hai câu hỏi của bạn học."
   - type: example
     target: "Sehr geehrte Damen und Herren, vielen Dank für die Information über den neuen Garten. Ich finde die Idee sehr gut und helfe gern mit. Leider kann ich am ersten Termin nicht kommen, weil ich arbeiten muss. Ab Juni habe ich samstags Zeit. Mit freundlichen Grüßen Minh Nguyen"
     target_lang: de
@@ -172,7 +172,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u09-nachbarschaft
     prompt:
-      stem: "Liebe Mieterinnen und Mieter, ab Juni gibt es im Hof einen gemeinsamen Garten. Die Arbeit im Garten ist freiwillig. Wer mithelfen möchte, kann sich bis zum 15. Mai bei uns melden. Bitte denken Sie daran, dass die Ruhezeiten auch im Hof gelten: Nach 22 Uhr darf man dort nicht mehr laut feiern. Wir hoffen, dass der Garten die Nachbarschaft stärkt. Ihre Hausverwaltung — Richtig oder falsch? Die Hausverwaltung glaubt, dass der Garten gut für die Nachbarschaft ist."
+      stem: "Liebe Mieterinnen und Mieter, ab Juni gibt es im Hof einen gemeinsamen Garten. Die Arbeit im Garten ist freiwillig. Wer mithelfen möchte, kann sich bis zum 15. Mai bei uns melden. Bitte denken Sie daran, dass die Ruhezeiten auch im Hof gelten: Nach 22 Uhr darf man dort nicht mehr laut feiern. Wir hoffen, dass der Garten die Nachbarschaft stärkt. Ihre Hausverwaltung — Richtig oder falsch? Die Hausverwaltung möchte, dass der Garten die Nachbarn zusammenbringt."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -180,7 +180,7 @@ exercises:
     answer:
       correct_option_id: rf1
     explanation:
-      vi: "Wir hoffen, dass der Garten die Nachbarschaft stärkt – ban quản lý hy vọng khu vườn làm tình hàng xóm gắn bó hơn, tức là tốt cho khu nhà. Câu này đúng."
+      vi: "Wir hoffen, dass der Garten die Nachbarschaft stärkt – ban quản lý hy vọng khu vườn làm tình hàng xóm gắn bó hơn, tức là muốn khu vườn gắn kết mọi người (die Nachbarn zusammenbringen). Câu này đúng."
     display_answer: Richtig
 
   # ---------------- recognition: nghe ----------------
@@ -342,6 +342,8 @@ exercises:
         - Leider kann ich nicht zum Treffen kommen.
         - Ich kann leider nicht zum Treffen kommen.
         - Leider kann ich zum Treffen nicht kommen.
+        - Ich kann leider zum Treffen nicht kommen.
+        - Leider kann ich nicht zu dem Treffen kommen.
         - Es tut mir leid, dass ich nicht zum Treffen kommen kann.
         - Es tut mir leid, nicht zum Treffen kommen zu können.
         - Leider kann ich nicht an dem Treffen teilnehmen.

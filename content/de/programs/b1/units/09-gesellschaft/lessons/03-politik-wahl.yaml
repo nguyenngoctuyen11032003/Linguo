@@ -38,6 +38,8 @@ items:
     role: reuse
   - item: de:item:b1u06-g-futur-i
     role: reuse
+  - item: de:item:b1u08-g-mittelfeld
+    role: reuse
 body:
   - type: objective
     text:
@@ -56,7 +58,7 @@ body:
       vi: "Đức là nhà nước liên bang gồm 16 bang (Bundesländer), quốc hội liên bang là der Bundestag; Áo có 9 bang; Thụy Sĩ có 26 bang (Kantone), và người dân Thụy Sĩ thường bỏ phiếu trực tiếp về nhiều vấn đề. Các quy định cụ thể về bầu cử (tuổi được bầu, cách bỏ phiếu) có thể thay đổi, nên khi cần hãy xem thông tin chính thức."
   - type: deep_explain
     text:
-      vi: "Thì trong câu als/wie đi theo thời điểm của kỳ vọng: als ich dachte (Präteritum), als ich gedacht habe (Perfekt, văn nói) hoặc als ich gedacht hatte (Plusquamperfekt – kỳ vọng có trước kết quả). Các cách so sánh hay gặp trong tin tức: mehr Menschen, als man erwartet hatte; weniger, als viele befürchtet hatten; genauso knapp wie beim letzten Mal; anders, als die Umfragen gezeigt hatten. Đừng nhầm als so sánh với als thời gian (Als ich ein Kind war …) – hãy nhìn xem trước nó có so sánh hơn hay không. Khi đọc tin bầu cử, chú ý từ chỉ mức độ: knapp (sát nút), deutlich (rõ rệt), die Mehrheit (đa số). Ở Đức, đi bầu là quyền chứ không phải nghĩa vụ, và lá phiếu là bí mật – hỏi người khác đã bầu cho ai thường bị coi là tế nhị."
+      vi: "Thì trong câu als/wie đi theo thời điểm của kỳ vọng: als ich dachte (Präteritum), als ich gedacht habe (Perfekt, văn nói) hoặc als ich gedacht hatte (Plusquamperfekt – kỳ vọng có trước kết quả). Các cách so sánh hay gặp trong tin tức: mehr Menschen, als man erwartet hatte; weniger, als viele befürchtet hatten; genauso knapp wie beim letzten Mal; anders, als die Umfragen gezeigt hatten. Đừng nhầm als so sánh với als thời gian (Als ich ein Kind war …) – hãy nhìn xem trước nó có so sánh hơn hay không. Khi đọc tin bầu cử, chú ý từ chỉ mức độ: knapp (sát nút), deutlich (rõ rệt), die Mehrheit (đa số). Theo luật hiện hành, ở Đức không có quy định bắt buộc đi bầu (nhiều người vẫn coi đi bầu là bổn phận công dân); lá phiếu là bí mật – hỏi người khác đã bầu cho ai thường bị coi là tế nhị."
   - type: example
     target: Die Wahl war knapper, als viele gedacht hatten.
     target_lang: de
@@ -84,7 +86,14 @@ body:
     translation:
       vi: Ở Đức, đi bầu là quyền chứ không phải nghĩa vụ.
     note:
-      vi: "das Wählen (danh từ hoá từ wählen) viết hoa. Recht và Pflicht là hai từ hay đi cặp: Rechte und Pflichten."
+      vi: "das Wählen (danh từ hoá từ wählen) viết hoa. Recht và Pflicht là hai từ hay đi cặp: Rechte und Pflichten. Câu này đúng theo luật hiện hành ở Đức (không có nghĩa vụ đi bầu); ở một số nước khác thì có."
+  - type: example
+    target: Viele Bürger sind am Sonntag trotz des Regens zur Wahl gegangen.
+    target_lang: de
+    translation:
+      vi: Nhiều người dân đã đi bầu vào Chủ nhật dù trời mưa.
+    note:
+      vi: "Trật tự Mittelfeld TeKaMoLo (ôn B1U08): thời gian (am Sonntag) – nguyên nhân/nhượng bộ (trotz des Regens) – nơi chốn (zur Wahl); Partizip gegangen ở cuối."
   - type: example
     target: Jeder Mensch hat das Recht, seine Meinung frei zu sagen.
     target_lang: de
@@ -338,7 +347,7 @@ exercises:
     answer:
       correct_option_id: d3a
     explanation:
-      vi: "Đức có 16 bang (Bundesländer), Áo có 9 bang, Thụy Sĩ có 26 bang gọi là Kantone. Từ Kanton chỉ dùng cho Thụy Sĩ."
+      vi: "Đức có 16 bang (Bundesländer), Áo có 9 bang, Thụy Sĩ có 26 bang gọi là Kantone. Trong ba nước này, chỉ Thụy Sĩ gọi bang là Kanton."
     display_answer: Deutschland hat 16 Bundesländer.
 
   - key: de:exercise:b1u09l3-tr-recht-pflicht
