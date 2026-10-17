@@ -51,6 +51,12 @@ items:
     role: reuse
   - item: de:item:a2u04-g-wuerde-hoeflich
     role: reuse
+  - item: de:item:a2u02-g-wechselpraepositionen
+    role: reuse
+  - item: de:item:a2u02-g-adj-unbestimmt-dativ
+    role: reuse
+  - item: de:item:a2u02-dusche
+    role: reuse
 body:
   - type: objective
     text:
@@ -72,7 +78,7 @@ body:
       vi: "Phàn nàn lịch sự: nêu vấn đề bằng Leider … (Leider funktioniert das Licht im Bad nicht. Die Dusche ist kaputt.), rồi đề nghị bằng Könnten Sie …? hoặc Würden Sie …? Câu quá thẳng như \"Das ist schlecht!\" nghe thô lỗ. Muốn khiếu nại chính thức: Ich möchte mich beschweren (sich beschweren über + Akk / bei + Dativ)."
   - type: deep_explain
     text:
-      vi: "Vì sao an với biển? an là \"sát cạnh\": am Meer = ở bên biển, im Meer = ở dưới nước biển (đang bơi); am See – im See cũng vậy. auf dem Land = ở nông thôn, aufs Land = về quê. Một số vùng núi có tên riêng số ít: im Schwarzwald, in den Harz (der Harz). Ở châu Âu, giá phòng có thể đã gồm bữa sáng hoặc chưa, giờ nhận và trả phòng cũng khác nhau tùy khách sạn – hãy hỏi lại khi đặt phòng. Khi phàn nàn với nhân viên khách sạn, bạn thường dùng Sie."
+      vi: "Vì sao an với biển? an là \"sát cạnh\": am Meer = ở bên biển, im Meer = ở dưới nước biển (đang bơi); am See – im See cũng vậy. auf dem Land = ở nông thôn, aufs Land = về quê. Một số vùng núi có tên riêng số ít, dùng in như danh từ thường: in den Harz – im Harz (der Harz), in den Schwarzwald – im Schwarzwald. Ở châu Âu, giá phòng có thể đã gồm bữa sáng hoặc chưa, giờ nhận và trả phòng cũng khác nhau tùy khách sạn – hãy hỏi lại khi đặt phòng. Khi phàn nàn với nhân viên khách sạn, bạn thường dùng Sie."
   - type: example
     target: Im Sommer fahren wir ans Meer, im Winter in die Berge.
     target_lang: de
@@ -81,17 +87,17 @@ body:
     note:
       vi: "Wohin? → ans (= an das) Meer, in die Berge (Akkusativ số nhiều)."
   - type: example
-    target: Letztes Jahr waren wir zwei Wochen auf einer Insel in Griechenland.
+    target: Letztes Jahr waren wir zwei Wochen auf einer kleinen Insel in Griechenland.
     target_lang: de
     translation:
-      vi: Năm ngoái chúng tôi đã ở hai tuần trên một hòn đảo ở Hy Lạp.
+      vi: Năm ngoái chúng tôi đã ở hai tuần trên một hòn đảo nhỏ ở Hy Lạp.
     note:
-      vi: "Wo? → auf einer Insel (Dativ); in Griechenland (nước không mạo từ)."
+      vi: "Wo? → auf einer kleinen Insel (Dativ; sau einer tính từ có đuôi -en như bạn đã học); in Griechenland (nước không mạo từ)."
   - type: example
     target: In den Ferien sind wir bei Freunden in der Schweiz.
     target_lang: de
     translation:
-      vi: Kỳ nghỉ này chúng tôi ở nhà bạn bè ở Thụy Sĩ.
+      vi: Vào kỳ nghỉ, chúng tôi ở nhà bạn bè ở Thụy Sĩ.
     note:
       vi: "bei + Dativ = ở nhà ai; in der Schweiz: nước có mạo từ, Wo? → Dativ."
   - type: example

@@ -333,6 +333,9 @@ exercises:
         - Als ich in Wien war, kaufte ich ein Souvenir.
         - Ich habe ein Souvenir gekauft, als ich in Wien war.
         - Ich kaufte ein Souvenir, als ich in Wien war.
+        - Als ich in Wien war, habe ich mir ein Souvenir gekauft.
+        - Als ich in Wien war, kaufte ich mir ein Souvenir.
+        - Ich habe mir ein Souvenir gekauft, als ich in Wien war.
     known_wrong:
       - answer: Wenn ich in Wien war, habe ich ein Souvenir gekauft.
         feedback_vi: "Một lần trong quá khứ → als."

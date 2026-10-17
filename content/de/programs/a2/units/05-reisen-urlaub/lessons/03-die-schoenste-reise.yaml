@@ -62,13 +62,13 @@ body:
       vi: "So sánh nhất sau động từ: am + tính từ + -sten: Die Insel ist am schönsten. Trước danh từ: tính từ + -st- + đuôi theo bảng: der schönste Strand, den schönsten Strand, auf dem höchsten Berg. Tính từ có umlaut ở so sánh hơn thì so sánh nhất cũng có: alt → älter → am ältesten, lang → länger → am längsten."
   - type: explain
     text:
-      vi: "Sau -t, -d, -s, -ß, -z ở âm tiết mang trọng âm, thêm -e- cho dễ đọc: am ältesten, am breitesten, am heißesten, am kürzesten; riêng groß → am größten. Dạng đặc biệt cần thuộc: gut → am besten, viel → am meisten, gern → am liebsten, hoch → am höchsten, nah → am nächsten."
+      vi: "Tính từ tận cùng bằng -t, -d, -s, -ß, -sch, -z thường thêm -e- cho dễ đọc: am ältesten, am breitesten, am heißesten, am kürzesten, am frischesten; ngoại lệ: groß → am größten. Dạng đặc biệt cần thuộc: gut → am besten, viel → am meisten, gern → am liebsten, hoch → am höchsten, nah → am nächsten."
   - type: explain
     text:
       vi: "hoch mất chữ c khi có đuôi: Der Berg ist hoch, nhưng der hohe Berg, die hohen Berge. Từ mới: die Landschaft, die Natur, der Wald, der Fluss, das Tal, tief, breit, wunderbar, spannend."
   - type: deep_explain
     text:
-      vi: "Âm cuối không mang trọng âm thì không thêm -e-: spannend → am spannendsten. Sau mein, dein, unser … (bảng sau ein) so sánh nhất cũng lấy đuôi của bảng đó: mein schönster Urlaub, meine schönste Reise. Tính từ có -el, -er thường bỏ e khi có đuôi: dunkel → der dunkle Wald, teuer → das teure Hotel. Câu hỏi welcher/welche/welches cũng đi với so sánh nhất: Welche Insel ist am schönsten? Sau welcher, đuôi tính từ giống sau der: welcher hohe Berg."
+      vi: "Âm tiết cuối không mang trọng âm thì thường không thêm -e-: spannend → am spannendsten. Sau mein, dein, unser … (bảng sau ein) so sánh nhất cũng lấy đuôi của bảng đó: mein schönster Urlaub, meine schönste Reise. Tính từ có -el, -er thường bỏ e khi có đuôi: dunkel → der dunkle Wald, teuer → das teure Hotel. Câu hỏi welcher/welche/welches cũng đi với so sánh nhất: Welche Insel ist am schönsten? Sau welcher, đuôi tính từ giống sau der: welcher hohe Berg."
   - type: example
     target: Der breite Fluss fließt durch das grüne Tal.
     target_lang: de
@@ -96,7 +96,7 @@ body:
     translation:
       vi: Sông Rhein dài hơn sông Main, nhưng sông Danube dài nhất.
     note:
-      vi: "So sánh hơn: länger als; so sánh nhất sau sein: am längsten."
+      vi: "So sánh hơn: länger als; so sánh nhất sau sein: am längsten. (Tính cả chiều dài thì Donau dài nhất; riêng đoạn chảy trong nước Đức thì Rhein dài nhất.)"
   - type: example
     target: Ich mache am liebsten Urlaub in den Bergen. Dort ist die Luft am besten.
     target_lang: de
@@ -140,7 +140,7 @@ body:
       - vi: "Sau der/die/das: -e ở Nominativ số ít và Akkusativ die/das; còn lại -en."
       - vi: "der schöne Strand – den schönen Strand – dem schönen Strand – die schönen Strände."
       - vi: "So sánh nhất: am schönsten (sau động từ); der/die/das schönste … (trước danh từ)."
-      - vi: "-esten sau -t, -d, -s, -ß, -z có trọng âm: am ältesten; nhưng am größten."
+      - vi: "-esten sau -t, -d, -s, -ß, -sch, -z: am ältesten; nhưng am größten, am spannendsten."
       - vi: "Đặc biệt: am besten, am meisten, am liebsten, am höchsten, am nächsten."
       - vi: "hoch → der hohe Berg; dunkel → der dunkle Wald."
 exercises:
@@ -335,12 +335,12 @@ exercises:
     difficulty: 3
     item: de:item:a2u05-g-superlativ
     prompt:
-      stem: "Đọc: \"Letzten Sommer waren wir drei Wochen in Österreich. Am besten hat mir der Wolfgangsee gefallen: Das Wasser war sauber und nicht so kalt wie in den Bergen. Am spannendsten war die Wanderung auf den höchsten Berg in der Gegend.\" Người viết thích nơi nào nhất?"
+      stem: "Đọc: \"Letzten Sommer waren wir drei Wochen in Österreich. Am besten hat mir der Wolfgangsee gefallen: Das Wasser war sauber und angenehm warm. Am spannendsten war die Wanderung auf den höchsten Berg in der Gegend.\" Người viết thích nơi nào nhất?"
       stem_lang: vi
       options:
         - { id: o1a, text: "Hồ Wolfgangsee.", lang: vi }
         - { id: o2b, text: "Ngọn núi cao nhất trong vùng.", lang: vi }
-        - { id: o3c, text: "Những hồ nước lạnh trên núi.", lang: vi }
+        - { id: o3c, text: "Một khu rừng trong vùng.", lang: vi }
         - { id: o4d, text: "Một thành phố ở Thụy Sĩ.", lang: vi }
     answer:
       correct_option_id: o1a

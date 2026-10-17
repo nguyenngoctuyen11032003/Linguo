@@ -134,7 +134,7 @@ body:
       - vi: "Gốc -t/-d: -ete (arbeitete, übernachtete)."
       - vi: "Bất quy tắc: đổi nguyên âm, không -te: ging, kam, fuhr, sah, blieb, flog …"
       - vi: "ich = er/sie/es ở Präteritum (ich fuhr, er fuhr)."
-      - vi: "Từ mới: der Urlaub, die Reise, der Koffer, packen, buchen, der Strand, das Meer, die Insel, der Berg."
+      - vi: "Từ mới: der Urlaub, die Reise, der Koffer, packen, buchen, das Reisebüro, der Strand, das Meer, die Insel, der Berg."
 exercises:
   # ---------------- recognition ----------------
   - key: de:exercise:a2u05l1-mcq-fuhr-fahren

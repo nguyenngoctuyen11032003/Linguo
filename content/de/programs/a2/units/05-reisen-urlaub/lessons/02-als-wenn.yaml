@@ -207,7 +207,7 @@ exercises:
         - { id: b2, width_hint: 5 }
     answer:
       blanks:
-        b1: [Als, Während]
+        b1: [Als]
         b2: [wenn]
     known_wrong:
       - answer: wann
@@ -272,6 +272,12 @@ exercises:
         - Ich habe in Da Lat gelebt, als ich ein Kind war.
         - Ich wohnte in Da Lat, als ich klein war.
         - Ich habe in Da Lat gewohnt, als ich klein war.
+        - Ich lebte in Da Lat, als ich klein war.
+        - Ich habe in Da Lat gelebt, als ich klein war.
+        - Als Kind wohnte ich in Da Lat.
+        - Als Kind habe ich in Da Lat gewohnt.
+        - Als Kind lebte ich in Da Lat.
+        - Als Kind habe ich in Da Lat gelebt.
     known_wrong:
       - answer: Wenn ich ein Kind war, wohnte ich in Da Lat.
         feedback_vi: "Thời thơ ấu là một giai đoạn trong quá khứ → als."

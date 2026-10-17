@@ -17,7 +17,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Động từ có quy tắc ở Präteritum: gốc + -te + đuôi: ich machte, du machtest, er/sie/es machte, wir machten, ihr machtet, sie/Sie machten. Gốc tận cùng bằng -t hoặc -d thêm -ete: arbeitete, wartete, übernachtete. Präteritum chủ yếu dùng trong văn viết kể chuyện; khi nói, người Đức thường dùng Perfekt, trừ sein, haben và động từ khiếm khuyết."
+        vi: "Động từ có quy tắc ở Präteritum: gốc + -te + đuôi: ich machte, du machtest, er/sie/es machte, wir machten, ihr machtet, sie/Sie machten. Gốc tận cùng bằng -t hoặc -d thêm -ete: arbeitete, wartete, übernachtete (một số gốc khác cũng vậy: regnen → regnete, öffnen → öffnete). Präteritum chủ yếu dùng trong văn viết kể chuyện; khi nói, người Đức thường dùng Perfekt, trừ sein, haben và động từ khiếm khuyết."
       examples:
         - target: Letzten Sommer machten wir Urlaub an der Küste.
           translation:
@@ -214,7 +214,7 @@ items:
           translation:
             vi: Rügen là một hòn đảo ở biển Baltic.
       confusion:
-        vi: "Ở trên đảo: auf einer Insel (không dùng in)."
+        vi: "Ở trên đảo: auf einer Insel (không nói in einer Insel); ra đảo: auf eine Insel."
 
   - key: de:item:a2u05-berg
     type: vocab
@@ -718,7 +718,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Sau động từ: am + tính từ + -sten (Die Insel ist am schönsten). Trước danh từ: tính từ + -st- + đuôi theo bảng (der schönste Strand, den schönsten Strand). Sau -t, -d, -s, -ß, -z ở âm tiết mang trọng âm thêm -e-: am ältesten, am heißesten (riêng groß → am größten)."
+        vi: "Sau động từ: am + tính từ + -sten (Die Insel ist am schönsten). Trước danh từ: tính từ + -st- + đuôi theo bảng (der schönste Strand, den schönsten Strand). Tính từ tận cùng bằng -t, -d, -s, -ß, -sch, -z thường thêm -e-: am ältesten, am heißesten, am frischesten; ngoại lệ: groß → am größten, và khi âm tiết cuối không mang trọng âm thì không thêm (spannend → am spannendsten)."
       examples:
         - target: Die Zugspitze ist der höchste Berg in Deutschland.
           translation:
@@ -727,7 +727,7 @@ items:
           translation:
             vi: Sông Rhein dài hơn sông Main, nhưng sông Danube dài nhất.
       confusion:
-        vi: "Dạng đặc biệt: gut → am besten, viel → am meisten, gern → am liebsten, hoch → am höchsten, nah → am nächsten."
+        vi: "Dạng đặc biệt: gut → am besten, viel → am meisten, gern → am liebsten, hoch → am höchsten, nah → am nächsten. (Ví dụ sông: tính cả chiều dài, Donau dài nhất; riêng đoạn chảy trong nước Đức thì Rhein dài nhất.)"
 
   - key: de:item:a2u05-landschaft
     type: vocab
@@ -761,7 +761,7 @@ items:
       examples:
         - target: Im Urlaub möchte ich viel in der Natur sein.
           translation:
-            vi: Kỳ nghỉ này tôi muốn ở giữa thiên nhiên thật nhiều.
+            vi: Trong kỳ nghỉ, tôi muốn ở giữa thiên nhiên thật nhiều.
 
   - key: de:item:a2u05-wald
     type: vocab
@@ -985,9 +985,9 @@ items:
       meaning:
         vi: vùng, khu vực (quanh đâu đó)
       examples:
-        - target: In der Gegend gibt es viele Seen.
+        - target: Hier in der Gegend gibt es viele Seen.
           translation:
-            vi: Vùng này có nhiều hồ.
+            vi: Ở vùng này có nhiều hồ.
 
   - key: de:item:a2u05-steil
     type: vocab
