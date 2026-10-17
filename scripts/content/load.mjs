@@ -36,6 +36,7 @@ function walk(dir) {
 
 const YAML_FILE = /\.ya?ml$/i;
 const DOC_FILE = /\.md$/i;
+const TEXT_FILE = /\.txt$/i;
 const BOM = '\u{FEFF}';
 
 /**
@@ -44,6 +45,15 @@ const BOM = '\u{FEFF}';
  */
 export function effectiveStatus(status, demo) {
   return status ?? (demo ? 'published' : undefined);
+}
+
+/**
+ * Non-YAML files the German lint owns: content/de/wordlist/<name>.txt (one word per line, the spelling
+ * allow-list) and content/de/lexicon.json (generated noun lexicon).
+ */
+export function isWordlistPath(parts) {
+  if (parts.length === 2) return parts[0] === 'de' && parts[1] === 'lexicon.json';
+  return parts.length === 3 && parts[0] === 'de' && parts[1] === 'wordlist' && TEXT_FILE.test(parts[2]);
 }
 
 /** Classifies a path relative to the content root (posix segments) per spec 2 §4.1. */
@@ -92,6 +102,8 @@ export function loadContent(dir, { label } = {}) {
     const parts = relative(dir, full).split(sep);
     const file = `${prefix}/${parts.join('/')}`;
     if (DOC_FILE.test(full)) continue; // README.md and other docs
+    // German spelling allow-lists (read by scripts/content/german-lint.mjs): content/de/wordlist/*.txt only.
+    if (isWordlistPath(parts)) continue;
     if (!YAML_FILE.test(full)) {
       errors.push(`${file}: unexpected file (content/ holds only .yaml/.yml content files and .md docs)`);
       continue;

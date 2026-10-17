@@ -1,4 +1,4 @@
-// Exam practice forms (spec 9 §2): content/exams/<en|ko|ja>/<form>.yaml → checks → bundle for
+// Exam practice forms (spec 9 §2): content/exams/<en|ko|ja|de>/<form>.yaml → checks → bundle for
 // public.import_exam_content_bundle(jsonb). Loading lives in load.mjs (kind `exam`); checkContent()
 // claims the form and question keys with every other key and calls examErrors().
 import * as shared from '@linguo/shared';
@@ -7,7 +7,7 @@ import { contentId } from './ids.mjs';
 import { formatIssues } from './load.mjs';
 import { seededShuffle } from './build.mjs';
 
-const { LEVELS, EXAM_BUNDLE_VERSION, EXAM_SECTIONS, examBundleSchema, gradeExamAnswer, isLevelOf, levelOrdinal, normalizeExamText } = shared;
+const { LEVELS, EXAM_BUNDLE_VERSION, EXAM_SECTIONS, GOETHE_PASS_RATIO, examBundleSchema, gradeExamAnswer, isCefrLikeFamily, isLevelOf, levelOrdinal, normalizeExamText } = shared;
 
 const DOLLAR_TAG = '$exam$';
 const q = (s) => JSON.stringify(s);
@@ -135,9 +135,11 @@ export function examErrors(files, { sourceKeys = new Set() } = {}) {
     // Scoring.
     const sc = form.scoring;
     for (const s of Object.keys(sc.section_max)) if (!used.has(s)) err(f.file, `scoring.section_max.${s} is set but the section has no questions`);
-    if (form.family === 'cefr') {
-      if (sc.bands.length) err(f.file, 'cefr forms have no score bands (bands: [])');
-      if (sc.pass_ratio === null) err(f.file, 'cefr forms need scoring.pass_ratio');
+    if (isCefrLikeFamily(form.family)) {
+      // cefr and goethe: no score conversion, a section passes at pass_ratio of its points.
+      if (sc.bands.length) err(f.file, `${form.family} forms have no score bands (bands: [])`);
+      if (sc.pass_ratio === null) err(f.file, `${form.family} forms need scoring.pass_ratio`);
+      else if (form.family === 'goethe' && sc.pass_ratio !== GOETHE_PASS_RATIO) err(f.file, `goethe forms need scoring.pass_ratio ${GOETHE_PASS_RATIO}`);
     } else {
       if (!sc.bands.length) err(f.file, `${form.family} forms need scoring.bands`);
       if (sc.pass_ratio !== null) err(f.file, `${form.family} forms have pass_ratio null`);

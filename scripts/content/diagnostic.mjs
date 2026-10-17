@@ -1,4 +1,4 @@
-// Diagnostic item bank (spec 4 §3): content/diagnostic/<en|ko|ja>/<skill>.yaml → checks → bundle for
+// Diagnostic item bank (spec 4 §3): content/diagnostic/<en|ko|ja|de>/<skill>.yaml → checks → bundle for
 // content_private.import_diagnostic_bundle(jsonb). Loading lives in load.mjs (kind `diagnostic`);
 // checkContent() calls diagnosticErrors() and claims the item keys with the lesson keys.
 import * as shared from '@linguo/shared';
