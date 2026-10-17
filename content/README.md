@@ -15,8 +15,11 @@ content/
   en/programs/<program>/units/<nn>-<unit>/lessons/<nn>-<lesson>.yaml
   ko/...                                         # giống en
   ja/...                                         # giống en (tiếng Nhật: kana-basics = Kana→N5, n4, n3, n2, n1)
-  diagnostic/<en|ko|ja>/<kỹ-năng>.yaml            # kho câu hỏi kiểm tra đầu vào (spec 4)
-  exams/<en|ko|ja>/<tên-đề>.yaml                  # đề luyện thi mô phỏng (spec 9)
+  de/...                                         # giống en (tiếng Đức, xem mục "Tiếng Đức")
+  de/wordlist/<tên>.txt                          # danh sách từ cho phép của công cụ kiểm tra chính tả tiếng Đức (mỗi dòng một từ)
+  de/lexicon.json                                # từ điển danh từ sinh tự động (pnpm content:lint-de --write-lexicon)
+  diagnostic/<en|ko|ja|de>/<kỹ-năng>.yaml         # kho câu hỏi kiểm tra đầu vào (spec 4)
+  exams/<en|ko|ja|de>/<tên-đề>.yaml               # đề luyện thi mô phỏng (spec 9)
 ```
 
 - Unit thuộc chương trình chứa thư mục của nó; bài thuộc unit chứa thư mục của nó. Nguồn (`source`) của unit, bài và bài tập lấy từ `program.yaml`; của học liệu lấy từ file items.
@@ -29,7 +32,7 @@ content/
 - Trạng thái duyệt (`status`, `reviewed_by`, `reviewed_at`): chương trình, unit, bài đặt ở đầu file; học liệu đặt ở đầu file items (áp dụng cho mọi item trong file); nguồn đặt trong từng mục của `sources.yaml`. Nội dung demo bỏ trống `status` thì được nhập là `published`; nội dung **không** demo phải ghi rõ `status`, và khi `approved`/`published` phải có cả `reviewed_by` lẫn `reviewed_at`.
 - Bài `published` chỉ được liên kết (và dùng trong bài tập) học liệu `published`, nếu không học liệu sẽ không hiện ra.
 - **Key** ổn định, không đổi sau khi xuất bản (id trong DB sinh từ key): `<lang>:<loại>:<tên>`, ví dụ `en:lesson:i-am`, `ko:item:vowel-eo`, `en:exercise:i-am-translate-student`; nguồn dùng `src:<tên>`. Chỉ chữ thường, số, gạch ngang.
-- Cấp độ: EN `pre_a1 … c2`, KO `hangul, topik1 … topik6`, JA `kana, n5, n4, n3, n2, n1` (tăng dần: N5 thấp nhất); cấp của bài phải nằm trong khoảng `level_from…level_to` của chương trình.
+- Cấp độ: EN `pre_a1 … c2`, KO `hangul, topik1 … topik6`, JA `kana, n5, n4, n3, n2, n1` (tăng dần: N5 thấp nhất), DE `pre_a1, a1, a2, b1, b2` (mã CEFR như EN); cấp của bài phải nằm trong khoảng `level_from…level_to` của chương trình.
 - Mỗi học liệu chỉ được `introduce` ở một bài; các bài khác dùng `role: reuse`.
 - Văn bản tiếng Việt đủ dấu, chuẩn hoá **NFC** (gõ bằng bộ gõ Unicode dựng sẵn). Công cụ kiểm tra từng chuỗi sau khi đọc YAML, nên cả chuỗi viết bằng escape (`"Tôi"`) cũng bị bắt; ký tự điều khiển (trừ xuống dòng và tab) và U+FFFE/U+FFFF bị cấm.
 - Trong `content/` chỉ có file `.yaml`/`.yml` (nội dung) và `.md` (tài liệu); file khác bị báo lỗi.
@@ -76,7 +79,7 @@ Câu trả lời được chấm trên server theo thuật toán trong `packages
 
 ## Kho câu hỏi kiểm tra đầu vào (spec 4)
 
-`content/diagnostic/<en|ko|ja>/<kỹ-năng>.yaml`, một file cho mỗi kỹ năng `vocabulary`, `grammar`, `reading` (schema: `packages/shared/src/diagnostic/authoring.ts`).
+`content/diagnostic/<en|ko|ja|de>/<kỹ-năng>.yaml`, một file cho mỗi kỹ năng `vocabulary`, `grammar`, `reading` (schema: `packages/shared/src/diagnostic/authoring.ts`).
 
 ```yaml
 # DEMO — chưa kiểm duyệt
@@ -102,7 +105,7 @@ items:
       vi: "“Dog” là con chó; “cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
 ```
 
-- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu cho en/ko với 7 cấp, 90 câu cho ja với 6 cấp); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
+- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu cho en/ko với 7 cấp, 90 câu cho ja với 6 cấp, 75 câu cho de với 5 cấp); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
 - `difficulty` (tuỳ chọn) mặc định là thứ tự cấp độ + 0,5 (pre_a1/hangul = 0,5 … c2/topik6 = 6,5); nếu ghi thì phải nằm trong dải của cấp.
 - Thứ tự và id phương án trong YAML không lộ ra ngoài: `pnpm content:build` xáo trộn cố định theo key và đổi id thành chuỗi ngẫu nhiên ổn định.
 - File demo giữ `key_confidence: unreviewed` (mặc định), không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
@@ -120,7 +123,7 @@ demo: true
 language: ko
 form:
   key: ko:exam:topik-i-mock-1
-  family: topik_i                 # topik_i | topik_ii (ko), cefr (en)
+  family: topik_i                 # topik_i | topik_ii (ko), cefr (en), jlpt (ja), goethe (de)
   title_vi: TOPIK I — Bài luyện mô phỏng số 1
   description_vi: ...
   level_from: topik1
@@ -159,7 +162,7 @@ questions:
 - `short_text` (chỉ phần viết, kiểu câu 51–52): `answer` là danh sách mọi đáp án chấp nhận. Máy chấm (`normalizeExamText` trong `packages/shared/src/exam/grading.ts`, SQL dùng cùng quy tắc) chỉ chuẩn hoá NFC, bỏ khoảng trắng đầu cuối, gộp khoảng trắng liên tiếp, bỏ dấu câu ở cuối (`.?!,;:。、…`) và không phân biệt hoa thường; **không** sửa cách chữ hay biến thể ngữ pháp, nên phải liệt kê từng biến thể hợp lệ. Hai đáp án giống nhau sau chuẩn hoá bị báo lỗi.
 - `essay` (chỉ phần viết): không có `answer`, bắt buộc `rubric` (ví dụ `content`/`organization`/`language`), nên có `sample_answer` và `min_chars`/`max_chars`. Bài luận không được chấm tự động.
 - Phần nghe chưa có audio: `audio_asset_id: null` và `script` bằng ngôn ngữ đích (ứng dụng đọc bằng giọng máy). Viết số bằng chữ số (`1층`, `30%`) như văn bản thông thường.
-- Thang điểm: TOPIK cần `section_max` cho mọi phần có câu hỏi, `bands` tăng dần, `pass_ratio: null`; CEFR cần `bands: []` và `pass_ratio`. File demo: header `# DEMO — chưa kiểm duyệt`, `scoring.verified: false`, không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
+- Thang điểm: TOPIK cần `section_max` cho mọi phần có câu hỏi, `bands` tăng dần, `pass_ratio: null`; CEFR và Goethe cần `bands: []` và `pass_ratio` (Goethe: đúng `0.6`). File demo: header `# DEMO — chưa kiểm duyệt`, `scoring.verified: false`, không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
 - Đề được nhập bằng `public.import_exam_content_bundle` (câu lệnh thứ ba trong `supabase/seed.sql`, sau kho kiểm tra đầu vào; `pnpm content:push` gọi cùng RPC sau diagnostic). Bundle theo `examBundleSchema` (`packages/shared/src/exam/bundle.ts`): `prompt` công khai không chứa `script`; `answer`, `explanation`, `script`, `rubric`, `sample_answer` được tách sang `content_private.exam_keys`.
 
 ## Tiếng Nhật (ja)
@@ -172,6 +175,71 @@ questions:
 - Kho kiểm tra đầu vào: `diagnostic/ja/<vocabulary|grammar|reading>.yaml`, `language: ja`, key `ja:diag:<tên>`; mỗi ô kỹ năng × cấp cần ≥ 5 câu. Bài kiểm tra `ja:assessment:diagnostic:v1` đã có sẵn trong DB (migration `20261018130000_japanese.sql`).
 - Đề luyện thi: `exams/ja/<tên-đề>.yaml`, `family: jlpt`, key `ja:exam:<tên>`, câu `ja:examq:<tên>`; chấm như TOPIK: `section_max` cho mọi phần có câu hỏi, `bands` tăng dần theo `n5…n1`, `pass_ratio: null`.
 
+## Tiếng Đức (de)
+
+Tiếng Đức là ngôn ngữ thứ tư. Thang trình độ `pre_a1, a1, a2, b1, b2` (mã CEFR như tiếng Anh); mục tiêu học `foundation`, `daily_communication`, `goethe`, `skill_focus`; họ đề thi `goethe`. Nội dung `de` dùng chung toàn bộ quy ước ở trên; mục này chỉ ghi phần riêng của tiếng Đức. Chuẩn: Hochdeutsch (Đức), tự soạn, không chép giáo trình hay đề Goethe thật.
+
+**Bố cục**
+
+```
+de/items/<chủ-đề>.yaml                                          # học liệu, key de:item:<tiền-tố-unit>-<tên>
+de/programs/<program>/program.yaml                              # key de:program:<tên>
+de/programs/<program>/units/<nn>-<unit>/unit.yaml               # key de:unit:<tên>
+de/programs/<program>/units/<nn>-<unit>/lessons/<nn>-<bài>.yaml # key de:lesson:<tên>, bài tập de:exercise:<tên>
+diagnostic/de/<vocabulary|grammar|reading>.yaml                 # key de:diag:<tên>, ≥ 5 câu mỗi kỹ năng × cấp (75 câu)
+exams/de/<tên-đề>.yaml                                          # family: goethe, key de:exam:<tên>, câu de:examq:<tên>
+de/wordlist/<tên-của-bạn>.txt                                   # từ cho phép (xem "Chính tả")
+```
+
+- **Khoá có tiền tố unit**: khoá học liệu, bài, bài tập của một unit bắt đầu bằng mã unit (`de:item:a1u03-kaffee`, `de:exercise:a1u03-kaffee-bestellen-mcq`) để các tác giả khác nhau không bao giờ trùng khoá. Chỉ chữ thường, số, gạch ngang.
+- **Danh từ** luôn kèm mạo từ và số nhiều trong `front.text` (loại `vocab`, `pos: Nomen`): `der Tisch, -e`, `die Frau, -en`, `das Kind, -er`, `der Apfel, ¨-`, `die Mutter, ¨-`, `der Lehrer, -`, `das Auto, -s`; không có số nhiều: `die Milch (Sg.)`; chỉ có số nhiều: `die Eltern (Pl.)`. Các dạng số nhiều hợp lệ: `-e`, `-en`, `-n`, `-nen`, `-er`, `-s`, `-se`, `-`, `¨-e`, `¨-er`, `¨-` (dấu `¨` là biến âm). Câu ví dụ phải đúng giống và viết hoa danh từ.
+- **Động từ** ghi nguyên thể; bất quy tắc kèm dạng: ở A1 `fahren (du fährst)`, từ A2 `fahren, fährt, fuhr, ist gefahren`.
+- **du/Sie**: trước B1, mọi ví dụ nêu rõ ngữ vực (du với bạn bè, Sie với người lạ/công việc) và giữ nhất quán trong cùng một đoạn hội thoại. `Sie`, `Ihnen`, `Ihr…` (lịch sự) viết hoa; `du`, `dich`… viết thường.
+- IPA `/…/` cho từ khó đọc ở pre-A1/A1 (tuỳ chọn các cấp sau).
+
+**Đáp án: ä/ö/ü/ß và ae/oe/ue/ss**
+
+- Máy chấm gấp mọi đáp án và câu trả lời sau NFC + chữ thường: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`. Người học gõ `fuer`/`Strasse`/`schoen` được **đúng** cho `für`/`Straße`/`schön`; chữ hoa chữ thường không quan trọng, khoảng trắng được giữ, không mở rộng dạng rút gọn.
+- Vì vậy trong `accepted` luôn ghi **dạng chuẩn** có `ä/ö/ü/ß`; **không** liệt kê dạng `ae/oe/ue/ss` hay dạng bỏ dấu chấm (`fur`, `schon`). Công cụ kiểm tra coi dạng gõ tắt trong nội dung là lỗi chính tả.
+- Với `rubric.diacritics: lenient`, câu bỏ dấu chấm (`fur`, `schon`) là "gần đúng" (tag `missing_diacritics`); với `strict` là sai; không bao giờ là đúng. `lenient` không tha lỗi thiếu đuôi từ.
+- `rubric.typo_tolerance` **không** có tác dụng với `de` (bị bỏ qua): đừng dựa vào nó.
+- **Không** có luật mạo từ riêng: `die Tisch` cho `der Tisch` là sai thuần tuý, nên tác giả phải tự thêm `known_wrong` cho lỗi dễ gặp.
+- Phép gấp mất thông tin (`Masse` ≙ `Maße`, `Busse` ≙ `Buße`): bài dạy sự khác biệt này phải dùng `mcq`/`word_bank`, không dùng bài gõ. Công cụ kiểm tra cảnh báo khi hai phương án `mcq` chỉ khác nhau ở `ä/ö/ü/ß`.
+- `known_wrong` không được trùng (sau phép gấp) với đáp án đúng: `fuer` cho `für` sẽ chấm đúng nên bị báo lỗi.
+- **Đề thi (`exams/de`)**: câu `short_text` **không** được gấp (`exam_normalize_text` chỉ NFC, chữ thường, bỏ dấu câu cuối). Đáp án có `ä/ö/ü/ß` phải liệt kê cả dạng `ae/oe/ue/ss` (`[für, fuer]`), hoặc dùng câu `mcq` (khuyến nghị cho Goethe). Công cụ kiểm tra báo lỗi nếu thiếu dạng gõ tắt.
+
+**`known_wrong` điển hình**: `article` (der/die/das sai), `case_dat_akk`, `verb_position`, `adj_ending`, `plural_form`, `capitalization`, `aux_verb` (haben/sein), `word_order`, `gender`. Tag chỉ chữ thường và gạch dưới (`snake_case`); mỗi mục kèm `feedback_vi` ngắn nói rõ lỗi.
+
+**Chính tả và công cụ kiểm tra (`german-lint`)**
+
+`pnpm content:check` chạy thêm công cụ kiểm tra tiếng Đức (`scripts/content/german-lint.mjs`, từ điển Hunspell offline `dictionary-de` + `nspell`, có tách từ ghép). Lỗi làm `content:check` thất bại, cảnh báo chỉ in ra. Chạy riêng trên file của bạn (nhanh, không cần tsx):
+
+```bash
+node scripts/content/german-lint.mjs content/de/items/a1-food.yaml     # một file hoặc thư mục
+node scripts/content/german-lint.mjs                                   # mặc định: content/de, content/diagnostic/de, content/exams/de
+node scripts/content/german-lint.mjs --errors-only <file>              # ẩn cảnh báo
+node scripts/content/german-lint.mjs --write-lexicon                   # sinh lại content/de/lexicon.json từ các item danh từ
+```
+
+Mỗi dòng kết quả là `<file>: <đường dẫn trong file>: <thông báo>`. Quy tắc:
+
+| Mức | Quy tắc |
+|---|---|
+| Lỗi | Chính tả: từ không có trong từ điển, không có trong danh sách cho phép; danh từ viết thường (`tisch`); dạng gõ tắt `ae/oe/ue/ss` thay `ä/ö/ü/ß` (`fuer`, `Strassenbahn`) |
+| Lỗi | Hình dạng item: danh từ `vocab` phải là `der/die/das Danh-từ, <số nhiều>` hoặc `(Sg.)`/`(Pl.)`; động từ bắt đầu bằng nguyên thể |
+| Lỗi | Trùng lemma: hai item `vocab`/`phrase` cùng lemma và cùng mạo từ ở bất kỳ file `de` nào (hai agent không được tạo cùng một từ với hai khoá) |
+| Lỗi | `known_wrong` gấp thành đáp án đúng; đề `short_text` thiếu dạng `ae/oe/ue/ss` |
+| Cảnh báo | Mạo từ không thể đi với danh từ đã có trong `lexicon` ở mọi cách (`die Tisch`, `eine Kind`); cùng lemma khác mạo từ (`der/die Leiter`, kiểm tra có chủ ý); từ chức năng viết hoa giữa câu (`Heute`); câu đầy đủ mở đầu bằng chữ thường; hai phương án `mcq` chỉ khác `ä/ö/ü/ß`; `typo_tolerance` bị bỏ qua |
+
+Không kiểm tra chính tả: văn bản tiếng Việt, `common_mistake.wrong`, `known_wrong` (cố ý sai), ví dụ của ngôn ngữ khác, phương án `mcq`/`listen` không bị kiểm tra luật mạo từ (mạo từ sai là phương án nhiễu hợp lệ).
+
+**Danh sách từ cho phép**: tên riêng (Minh, Anna, Hanoi…), chữ viết tắt và từ vay mượn thông dụng đã có sẵn trong công cụ (`scripts/content/german-data.mjs`). Từ đúng nhưng chưa có trong từ điển thì thêm vào `content/de/wordlist/<tên-của-bạn>.txt`: **mỗi agent/tác giả một file riêng** (ví dụ `a1-food.txt`) để không xung đột khi làm song song; file dùng chung `_names.txt` và `_dictionary-gaps.txt` chỉ nối thêm. Mỗi dòng một từ, `#` bắt đầu ghi chú, không phân biệt hoa thường; `Handy/Tisch` nghĩa là "Handy biến cách như Tisch". Chỉ thêm từ **đúng** tiếng Đức (hoặc tên riêng có chủ ý), không dùng để che lỗi gõ.
+
+**Từ điển danh từ (`lexicon.json`)** sinh bằng `--write-lexicon` từ mọi item danh từ (lemma → mạo từ, số nhiều, key của item); công cụ dùng nó (cùng các item hiện có) để bắt lỗi mạo từ trong câu ví dụ và đáp án. Chạy lại và commit sau khi thêm nhiều danh từ.
+
+**Giới hạn đã biết**: tách từ ghép có thể chấp nhận vài lỗi gõ tình cờ ghép được thành hai từ thật; từ đồng âm khác giống (`der/die/das Band`) có thể gây cảnh báo mạo từ nhầm; từ hiếm hoặc mới (`entkalken`, từ vay mượn) có thể bị báo lỗi, khi đó thêm vào wordlist.
+
+
 ## Lệnh
 
 ```bash
@@ -179,6 +247,7 @@ pnpm content:check          # kiểm tra schema, key, tiền quyết, cấp đ�
 pnpm content:build          # sinh supabase/seed.sql từ content/
 pnpm content:build --check  # CI: báo lỗi nếu seed.sql lệch với content/
 pnpm content:push           # nhập lên Supabase hosted (cần SUPABASE_URL và SUPABASE_SERVICE_ROLE_KEY)
+pnpm content:lint-de        # chỉ chạy công cụ kiểm tra tiếng Đức (đã nằm trong content:check)
 ```
 
 Xem thêm `docs/DEPLOY.md`, mục "Xuất bản nội dung".

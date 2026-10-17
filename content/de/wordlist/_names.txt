@@ -1,0 +1,10 @@
+# Allow-list of the German content lint (scripts/content/german-lint.mjs): one word per line, `#` starts a comment.
+# This shared file only holds proper names and places that are not in the built-in list (scripts/content/german-data.mjs).
+# Every content agent owns its OWN file next to this one (e.g. a1-food.txt) so that parallel edits never conflict.
+# `Word/Model` makes Word inflect like the dictionary word Model (Handy/Tisch accepts Handys, Handies...). Matching is
+# case-insensitive. Add a word only when it is correct German (or a deliberate name/loan word), never to silence a typo.
+Hoi
+Lat
+Phan
+Thiet
+Quy

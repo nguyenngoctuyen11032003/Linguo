@@ -1,0 +1,2 @@
+# Correct German words that the offline dictionary (igerman98 via dictionary-de) lacks. Shared, append-only.
+entkalken
