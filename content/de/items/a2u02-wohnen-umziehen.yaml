@@ -1,0 +1,1368 @@
+# Học liệu unit A2U02 "Nhà ở và chuyển nhà" (Wohnen und Umziehen), tiếng Đức A2.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: giới từ hai cách, động từ vị trí, chuyển nhà =================
+  - key: de:item:a2u02-g-wechselpraepositionen
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Wechselpräpositionen: in, an, auf, über, unter, vor, hinter, neben, zwischen. Wohin? + Akkusativ. Wo? + Dativ."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Chín giới từ này đi với Akkusativ khi trả lời Wohin? (chuyển đồ/người tới một chỗ) và với Dativ khi trả lời Wo? (đang ở yên một chỗ). Rút gọn: in das → ins, an das → ans; Dativ: in dem → im, an dem → am."
+      examples:
+        - target: Ich stelle die Lampe neben das Sofa. – Jetzt steht die Lampe neben dem Sofa.
+          translation:
+            vi: Tôi đặt cái đèn cạnh ghế sofa. – Bây giờ cái đèn đứng cạnh ghế sofa.
+        - target: Wir hängen das Bild an die Wand. – Das Bild hängt an der Wand.
+          translation:
+            vi: Chúng tôi treo bức tranh lên tường. – Bức tranh treo trên tường.
+        - target: Stell die Bücher bitte ins Regal!
+          translation:
+            vi: Bạn xếp sách vào giá nhé!
+      confusion:
+        vi: "Hỏi thử: Wohin? (tới đâu – có chuyển động tới một chỗ mới) → Akkusativ: den/die/das, einen/eine/ein. Wo? (ở đâu – đứng yên) → Dativ: dem/der/dem, einem/einer/einem. Số nhiều: Akk die, Dat den + -n (in die Kartons – in den Kartons)."
+
+  - key: de:item:a2u02-g-positionsverben
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "stellen – stehen · legen – liegen · setzen – sitzen · hängen (hängte – hing)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ \"đặt\" (stellen = đặt đứng, legen = đặt nằm, setzen = đặt ngồi, hängen = treo) là động từ có quy tắc, có tân ngữ Akkusativ và đi với Wohin? + Akkusativ. Động từ \"ở\" (stehen, liegen, sitzen, hängen) là động từ bất quy tắc, không có tân ngữ và đi với Wo? + Dativ."
+      examples:
+        - target: Ich lege das Handy auf den Tisch. – Das Handy liegt auf dem Tisch.
+          translation:
+            vi: Tôi đặt điện thoại lên bàn. – Điện thoại nằm trên bàn.
+        - target: Wir haben den Schrank an die Wand gestellt. – Jetzt steht der Schrank an der Wand.
+          translation:
+            vi: Chúng tôi đã kê cái tủ sát tường. – Bây giờ cái tủ đứng sát tường.
+        - target: Er hängt die Jacke in den Schrank. – Die Jacke hängt im Schrank.
+          translation:
+            vi: Anh ấy treo áo khoác vào tủ. – Áo khoác treo trong tủ.
+      confusion:
+        vi: "Đặt đứng hay nằm tuỳ hình dáng đồ vật: chai, tủ, sách xếp trên giá thường stehen; điện thoại, thảm, chìa khoá thường liegen. hängen đặt: hängte, hat gehängt; hängen ở: hing, hat gehangen."
+
+  - key: de:item:a2u02-stellen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: stellen
+      ipa: /ˈʃtɛlən/
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt, để (cho đứng thẳng); kê (đồ đạc)
+      examples:
+        - target: Wohin stellen wir das Sofa? – Ans Fenster.
+          translation:
+            vi: Mình kê ghế sofa ở đâu? – Sát cửa sổ.
+        - target: Ich habe die Flaschen in den Kühlschrank gestellt.
+          translation:
+            vi: Tôi đã để mấy cái chai vào tủ lạnh.
+      confusion:
+        vi: "stellen + Akkusativ, hỏi Wohin?; Perfekt: hat gestellt. Kết quả của stellen là stehen (Das Sofa steht am Fenster)."
+
+  - key: de:item:a2u02-stehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "stehen, stand, hat gestanden"
+      ipa: /ˈʃteːən/
+      pos: động từ
+    back:
+      meaning:
+        vi: đứng; (đồ vật) được đặt đứng ở đâu
+      examples:
+        - target: Der Schrank steht im Schlafzimmer.
+          translation:
+            vi: Cái tủ ở trong phòng ngủ.
+        - target: Wo steht die Lampe? – Neben dem Sofa.
+          translation:
+            vi: Cái đèn ở đâu? – Cạnh ghế sofa.
+      confusion:
+        vi: "stehen không có tân ngữ, hỏi Wo? + Dativ. Ở miền Nam nước Đức, Áo và Thụy Sĩ, Perfekt thường là ist gestanden; ở miền Bắc và miền Trung nước Đức dùng hat gestanden."
+
+  - key: de:item:a2u02-legen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: legen
+      ipa: /ˈleːɡn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt (cho nằm), để nằm
+      examples:
+        - target: Leg das Handy bitte auf den Tisch!
+          translation:
+            vi: Bạn để điện thoại lên bàn nhé!
+        - target: Wir legen den Teppich ins Wohnzimmer.
+          translation:
+            vi: Chúng mình trải tấm thảm ở phòng khách.
+      confusion:
+        vi: "legen + Akkusativ, hỏi Wohin?; Perfekt: hat gelegt. Kết quả của legen là liegen (Das Handy liegt auf dem Tisch)."
+
+  - key: de:item:a2u02-liegen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "liegen, lag, hat gelegen"
+      ipa: /ˈliːɡn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: nằm; (đồ vật) nằm ở đâu; (nơi chốn) nằm ở, toạ lạc
+      examples:
+        - target: Die Schlüssel liegen auf dem Tisch.
+          translation:
+            vi: Chùm chìa khoá nằm trên bàn.
+        - target: Die Wohnung liegt im Zentrum.
+          translation:
+            vi: Căn hộ nằm ở trung tâm.
+      confusion:
+        vi: "liegen không có tân ngữ, hỏi Wo? + Dativ. Đừng nhầm Partizip: liegen → hat gelegen, legen → hat gelegt. Ở miền Nam Đức, Áo, Thụy Sĩ hay nói ist gelegen."
+
+  - key: de:item:a2u02-setzen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: setzen
+      ipa: /ˈzɛtsn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt (ai/cái gì) ngồi vào chỗ
+      examples:
+        - target: Der Vater setzt das Kind auf den Stuhl.
+          translation:
+            vi: Người bố đặt đứa bé ngồi lên ghế.
+        - target: Ich setze die Puppe aufs Sofa.
+          translation:
+            vi: Tôi đặt con búp bê ngồi lên ghế sofa.
+      confusion:
+        vi: "setzen + Akkusativ, hỏi Wohin?; Perfekt: hat gesetzt. Kết quả là sitzen (Das Kind sitzt auf dem Stuhl). \"Tự ngồi xuống\" là sich setzen – động từ phản thân, bạn sẽ học ở unit sau."
+
+  - key: de:item:a2u02-sitzen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "sitzen, saß, hat gesessen"
+      ipa: /ˈzɪtsn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: ngồi, đang ngồi
+      examples:
+        - target: Das Kind sitzt auf dem Stuhl.
+          translation:
+            vi: Đứa bé đang ngồi trên ghế.
+        - target: Wir sitzen auf dem Balkon und trinken Kaffee.
+          translation:
+            vi: Chúng tôi ngồi ngoài ban công uống cà phê.
+      confusion:
+        vi: "sitzen không có tân ngữ, hỏi Wo? + Dativ. Ở miền Nam Đức, Áo, Thụy Sĩ hay nói ist gesessen."
+
+  - key: de:item:a2u02-haengen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "hängen, hängte/hing, hat gehängt/gehangen"
+      ipa: /ˈhɛŋən/
+      pos: động từ
+    back:
+      meaning:
+        vi: treo (cái gì lên đâu); (đang) treo ở đâu
+      examples:
+        - target: Ich hänge das Bild über das Sofa.
+          translation:
+            vi: Tôi treo bức tranh phía trên ghế sofa.
+        - target: Das Bild hängt über dem Sofa.
+          translation:
+            vi: Bức tranh treo phía trên ghế sofa.
+      confusion:
+        vi: "Một động từ, hai nghĩa: treo cái gì (có tân ngữ Akk, Wohin?) → hängte, hat gehängt; đang treo (không tân ngữ, Wo? + Dativ) → hing, hat gehangen."
+
+  - key: de:item:a2u02-umzug
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Umzug, ¨-e"
+      ipa: /ˈʊmtsuːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc chuyển nhà, cuộc chuyển nhà
+      examples:
+        - target: Der Umzug ist am Samstag. Hilfst du mir?
+          translation:
+            vi: Thứ Bảy mình chuyển nhà. Bạn giúp mình nhé?
+      pronunciation_note:
+        vi: "z đọc là \"ts\"; g cuối từ đọc như \"k\": um-tsúk."
+
+  - key: de:item:a2u02-umziehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "umziehen, zog um, ist umgezogen"
+      ipa: /ˈʊmtsiːən/
+      pos: động từ
+    back:
+      meaning:
+        vi: chuyển nhà
+      examples:
+        - target: Im Mai ziehen wir nach Leipzig um.
+          translation:
+            vi: Tháng Năm chúng tôi chuyển nhà đến Leipzig.
+        - target: Meine Schwester ist letztes Jahr umgezogen.
+          translation:
+            vi: Chị gái tôi đã chuyển nhà năm ngoái.
+      confusion:
+        vi: "Động từ tách (um đứng cuối câu), Perfekt với sein: ist umgezogen. sich umziehen (phản thân) lại nghĩa là thay quần áo."
+
+  - key: de:item:a2u02-karton
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Karton, -s"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thùng các-tông
+      examples:
+        - target: Die Bücher sind noch im Karton.
+          translation:
+            vi: Sách vẫn còn trong thùng.
+        - target: Stell die Kartons bitte in den Keller!
+          translation:
+            vi: Bạn để mấy cái thùng xuống tầng hầm nhé!
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết thứ hai: Kar-TON."
+
+  - key: de:item:a2u02-boden
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Boden, ¨-"
+      pos: danh từ
+    back:
+      meaning:
+        vi: sàn nhà; mặt đất
+      examples:
+        - target: Stell den Karton einfach auf den Boden!
+          translation:
+            vi: Cứ để cái thùng xuống sàn!
+        - target: Die Kissen liegen auf dem Boden.
+          translation:
+            vi: Mấy cái gối nằm dưới sàn.
+      confusion:
+        vi: "Sàn nhà là auf dem Boden (\"trên sàn\"), không dùng unter."
+
+  - key: de:item:a2u02-vorhang
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Vorhang, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: rèm cửa, màn che
+      examples:
+        - target: Wir hängen die Vorhänge morgen auf.
+          translation:
+            vi: Ngày mai chúng tôi treo rèm.
+        - target: Der Vorhang hängt am Fenster.
+          translation:
+            vi: Tấm rèm treo ở cửa sổ.
+
+  - key: de:item:a2u02-kissen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Kissen, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái gối, gối tựa
+      examples:
+        - target: Leg die Kissen bitte aufs Sofa!
+          translation:
+            vi: Bạn để mấy cái gối lên ghế sofa nhé!
+      confusion:
+        vi: "Số nhiều giống số ít: ein Kissen, zwei Kissen."
+
+  - key: de:item:a2u02-pflanze
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Pflanze, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây (trồng), cây cảnh
+      examples:
+        - target: Die Pflanze stellen wir ans Fenster.
+          translation:
+            vi: Cây cảnh thì mình đặt sát cửa sổ.
+      pronunciation_note:
+        vi: "pf đọc liền: môi khép như p rồi bật ra f ngay."
+
+  - key: de:item:a2u02-einbaukueche
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "die Einbauküche, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bếp lắp sẵn (tủ bếp, bếp nấu, bồn rửa lắp liền thành bộ)
+      examples:
+        - target: Die Wohnung hat leider keine Einbauküche.
+          translation:
+            vi: Tiếc là căn hộ không có bếp lắp sẵn.
+      confusion:
+        vi: "Ở Đức, không ít căn hộ cho thuê không có bếp sẵn; người thuê tự mua và khi chuyển đi có thể mang bếp theo. Vì vậy hãy hỏi trước khi thuê."
+
+  - key: de:item:a2u02-auspacken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: auspacken
+      pos: động từ
+    back:
+      meaning:
+        vi: dỡ đồ ra (khỏi thùng, va li), mở (gói đồ)
+      examples:
+        - target: Heute Abend packen wir die Kartons aus.
+          translation:
+            vi: Tối nay chúng mình dỡ đồ trong các thùng ra.
+        - target: Hast du die Bücher schon ausgepackt?
+          translation:
+            vi: Bạn đã dỡ sách ra chưa?
+      confusion:
+        vi: "Động từ tách: Ich packe … aus; Perfekt: hat ausgepackt."
+
+  # ================= bài 2: hai tân ngữ, hàng xóm, chìa khoá =================
+  - key: de:item:a2u02-g-dat-akk-verben
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "geben, schenken, zeigen, bringen, leihen, erklären + Dativ (Person) + Akkusativ (Sache)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Những động từ \"đưa – trao\" này có hai tân ngữ: người nhận ở Dativ (cho ai? – Wem?), đồ vật ở Akkusativ (cái gì? – Was?). Tiếng Việt nói \"đưa chìa khoá cho anh ấy\", tiếng Đức không có chữ \"cho\" mà dùng Dativ: Ich gebe ihm den Schlüssel."
+      examples:
+        - target: Ich gebe dem Hausmeister den Schlüssel.
+          translation:
+            vi: Tôi đưa chìa khoá cho người quản lý nhà.
+        - target: Kannst du mir deine Bohrmaschine leihen?
+          translation:
+            vi: Bạn cho mình mượn máy khoan được không?
+        - target: Frau Becker zeigt uns die Wohnung.
+          translation:
+            vi: Bà Becker dẫn chúng tôi xem căn hộ.
+      confusion:
+        vi: "Người nhận luôn ở Dativ: dem/einem (der, das), der/einer (die), den + -n (số nhiều); đại từ mir, dir, ihm, ihr, uns, euch, ihnen/Ihnen."
+
+  - key: de:item:a2u02-g-objekt-stellung
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Dativ vor Akkusativ – aber Akkusativpronomen zuerst: Ich gebe ihn ihm."
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Hai danh từ: Dativ (người) thường đứng trước Akkusativ (vật). Đại từ đứng trước danh từ. Hai đại từ: Akkusativ đứng trước Dativ (ihn ihm, es ihr)."
+      examples:
+        - target: Ich gebe der Nachbarin den Schlüssel.
+          translation:
+            vi: Tôi đưa chìa khoá cho cô hàng xóm.
+        - target: Ich gebe ihr den Schlüssel.
+          translation:
+            vi: Tôi đưa chìa khoá cho cô ấy.
+        - target: Ich gebe ihn der Nachbarin.
+          translation:
+            vi: Tôi đưa nó (chìa khoá) cho cô hàng xóm.
+        - target: Ich gebe ihn ihr.
+          translation:
+            vi: Tôi đưa nó cho cô ấy.
+      confusion:
+        vi: "Mẹo: đại từ ngắn đứng trước; hai đại từ thì \"Akk trước\" (ihn ihm, sie ihr, es ihm). Nói \"Ich gebe ihm ihn\" là sai."
+
+  - key: de:item:a2u02-schluessel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Schlüssel, -"
+      ipa: /ˈʃlʏsl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chìa khoá
+      examples:
+        - target: Wo ist mein Schlüssel? – Er liegt auf dem Tisch.
+          translation:
+            vi: Chìa khoá của tôi đâu? – Nó nằm trên bàn.
+        - target: Ich habe zwei Schlüssel für die Wohnung.
+          translation:
+            vi: Tôi có hai chìa khoá căn hộ.
+      pronunciation_note:
+        vi: "ü ngắn: tròn môi như \"u\" nhưng lưỡi đặt như \"i\". Số nhiều giống số ít: die Schlüssel."
+
+  - key: de:item:a2u02-nachbar
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Nachbar, -n"
+      ipa: /ˈnaxbaːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: người hàng xóm (nam)
+      examples:
+        - target: Unser Nachbar heißt Herr Krüger.
+          translation:
+            vi: Ông hàng xóm của chúng tôi tên là Krüger.
+        - target: Ich gebe dem Nachbarn den Schlüssel.
+          translation:
+            vi: Tôi đưa chìa khoá cho ông hàng xóm.
+      pronunciation_note:
+        vi: "ch sau a đọc gần như \"kh\" của tiếng Việt: NAKH-bar."
+      confusion:
+        vi: "Ở số ít, Akkusativ và Dativ thêm -n: den Nachbarn, dem Nachbarn (quy tắc này học ở B1). Số nhiều: die Nachbarn."
+
+  - key: de:item:a2u02-nachbarin
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Nachbarin, -nen"
+      pos: danh từ
+    back:
+      meaning:
+        vi: người hàng xóm (nữ)
+      examples:
+        - target: Meine Nachbarin gießt meine Blumen.
+          translation:
+            vi: Cô hàng xóm tưới hoa cho tôi.
+
+  - key: de:item:a2u02-schenken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: schenken
+      pos: động từ
+    back:
+      meaning:
+        vi: tặng (quà)
+      examples:
+        - target: Wir schenken unserer Nachbarin eine Pflanze.
+          translation:
+            vi: Chúng tôi tặng cô hàng xóm một chậu cây.
+      confusion:
+        vi: "schenken = tặng hẳn (không trả lại); leihen = cho mượn (sẽ trả lại); geben = đưa."
+
+  - key: de:item:a2u02-zeigen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zeigen
+      pos: động từ
+    back:
+      meaning:
+        vi: chỉ, cho xem
+      examples:
+        - target: Zeig mir bitte die Fotos!
+          translation:
+            vi: Cho mình xem ảnh với!
+        - target: Der Vermieter zeigt uns den Keller.
+          translation:
+            vi: Chủ nhà dẫn chúng tôi xem tầng hầm.
+
+  - key: de:item:a2u02-bringen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "bringen, brachte, hat gebracht"
+      pos: động từ
+    back:
+      meaning:
+        vi: mang đến, đem đến
+      examples:
+        - target: Bringst du mir bitte noch einen Karton?
+          translation:
+            vi: Bạn mang cho mình thêm một cái thùng nhé?
+        - target: Die Nachbarin hat uns einen Kuchen gebracht.
+          translation:
+            vi: Cô hàng xóm đã mang bánh sang cho chúng tôi.
+
+  - key: de:item:a2u02-leihen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "leihen, lieh, hat geliehen"
+      pos: động từ
+    back:
+      meaning:
+        vi: cho (ai) mượn
+      examples:
+        - target: Kannst du mir deine Leiter leihen?
+          translation:
+            vi: Bạn cho mình mượn cái thang được không?
+      confusion:
+        vi: "Muốn hỏi mượn, người Đức thường nói: Kannst du mir … leihen? (Bạn cho mình mượn … được không?). Chú ý ei – ie: leihen, lieh, geliehen."
+
+  - key: de:item:a2u02-erklaeren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: erklären
+      pos: động từ
+    back:
+      meaning:
+        vi: giải thích
+      examples:
+        - target: Können Sie mir das bitte erklären?
+          translation:
+            vi: Ông/bà giải thích giúp tôi điều đó được không?
+      confusion:
+        vi: "Perfekt không có ge- vì tiền tố er-: hat erklärt."
+
+  - key: de:item:a2u02-hausmeister
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hausmeister, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: người quản lý, trông coi toà nhà (lo sửa chữa nhỏ, vệ sinh chung)
+      examples:
+        - target: Die Heizung ist kaputt. Ich rufe den Hausmeister an.
+          translation:
+            vi: Lò sưởi hỏng rồi. Tôi gọi điện cho người quản lý nhà.
+      confusion:
+        vi: "Hausmeister không phải chủ nhà (der Vermieter); người này chỉ trông coi và sửa chữa toà nhà."
+
+  - key: de:item:a2u02-klingel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Klingel, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuông cửa
+      examples:
+        - target: Die Klingel ist kaputt. Bitte klopfen!
+          translation:
+            vi: Chuông cửa hỏng. Xin gõ cửa!
+
+  - key: de:item:a2u02-klingeln
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: klingeln
+      pos: động từ
+    back:
+      meaning:
+        vi: bấm chuông; (chuông, điện thoại) reo
+      examples:
+        - target: Es klingelt. Ist das der Hausmeister?
+          translation:
+            vi: Có chuông cửa. Có phải người quản lý nhà không?
+        - target: Bitte klingeln Sie bei Nguyen!
+          translation:
+            vi: Xin ông/bà bấm chuông nhà Nguyễn!
+      confusion:
+        vi: "bei + tên = bấm chuông nhà ai (tên ghi trên bảng chuông ở cửa toà nhà)."
+
+  - key: de:item:a2u02-blume
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Blume, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoa, cây hoa
+      examples:
+        - target: Ich bringe meiner Nachbarin Blumen.
+          translation:
+            vi: Tôi mang hoa đến tặng cô hàng xóm.
+
+  - key: de:item:a2u02-giessen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "gießen, goss, hat gegossen"
+      pos: động từ
+    back:
+      meaning:
+        vi: tưới (cây, hoa)
+      examples:
+        - target: Kannst du nächste Woche meine Blumen gießen?
+          translation:
+            vi: Tuần sau bạn tưới hoa giúp mình được không?
+      confusion:
+        vi: "ß sau nguyên âm dài (gießen), ss sau nguyên âm ngắn (goss, gegossen)."
+
+  - key: de:item:a2u02-zurueckgeben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "zurückgeben, gibt zurück, gab zurück, hat zurückgegeben"
+      pos: động từ
+    back:
+      meaning:
+        vi: trả lại
+      examples:
+        - target: Ich gebe dir die Leiter morgen zurück.
+          translation:
+            vi: Mai mình trả bạn cái thang.
+      confusion:
+        vi: "Động từ tách, đổi nguyên âm như geben: du gibst … zurück, er gibt … zurück."
+
+  - key: de:item:a2u02-bohrmaschine
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Bohrmaschine, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy khoan
+      examples:
+        - target: Ich brauche eine Bohrmaschine für die Lampe.
+          translation:
+            vi: Tôi cần một cái máy khoan để lắp đèn.
+      confusion:
+        vi: "Ở Đức, nhiều toà nhà có quy định giờ yên tĩnh; tránh khoan vào buổi tối hay ngày Chủ nhật (chi tiết tuỳ nội quy từng nhà)."
+
+  - key: de:item:a2u02-werkzeug
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Werkzeug, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: dụng cụ, đồ nghề
+      examples:
+        - target: Der Hausmeister hat viel Werkzeug im Keller.
+          translation:
+            vi: Người quản lý nhà có nhiều đồ nghề dưới tầng hầm.
+      confusion:
+        vi: "Thường dùng số ít để nói chung về đồ nghề: viel Werkzeug."
+
+  # ================= bài 3: đuôi tính từ sau ein (Nom, Akk), tả nhà =================
+  - key: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "ein großer Balkon · eine helle Küche · ein ruhiges Zimmer – Akk: einen großen Balkon"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Tính từ đứng trước danh từ sau ein/kein/mein… phải có đuôi. Nominativ: -er (der), -e (die), -es (das); Akkusativ chỉ giống đực đổi thành -en (einen großen Balkon). Số nhiều sau keine/meine: luôn -en (keine großen Zimmer)."
+      examples:
+        - target: Die Wohnung hat einen großen Balkon und eine helle Küche.
+          translation:
+            vi: Căn hộ có một ban công rộng và một căn bếp sáng sủa.
+        - target: Das ist ein ruhiges Zimmer.
+          translation:
+            vi: Đây là một căn phòng yên tĩnh.
+        - target: Meine alten Möbel passen nicht in die Wohnung.
+          translation:
+            vi: Đồ đạc cũ của tôi không vừa căn hộ.
+      confusion:
+        vi: "Sau sein tính từ không có đuôi: Die Küche ist hell (không phải helle). Tính từ tận cùng -el, -er bỏ e: dunkel → eine dunkle Küche, teuer → eine teure Wohnung."
+
+  - key: de:item:a2u02-dunkel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: dunkel
+      pos: tính từ
+    back:
+      meaning:
+        vi: tối, thiếu ánh sáng; (màu) sẫm
+      examples:
+        - target: Das Schlafzimmer ist leider ein bisschen dunkel.
+          translation:
+            vi: Tiếc là phòng ngủ hơi tối.
+        - target: Wir haben eine dunkle Küche.
+          translation:
+            vi: Nhà chúng tôi có căn bếp tối.
+      confusion:
+        vi: "Khi có đuôi, bỏ chữ e trước l: eine dunkle Küche, ein dunkler Flur (không viết dunkele)."
+
+  - key: de:item:a2u02-laut
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: laut
+      pos: tính từ
+    back:
+      meaning:
+        vi: ồn, to tiếng
+      examples:
+        - target: Das ist eine laute Straße.
+          translation:
+            vi: Đây là một con đường ồn ào.
+        - target: Die Musik ist zu laut.
+          translation:
+            vi: Nhạc to quá.
+      confusion:
+        vi: "Trái nghĩa: leise (nhỏ tiếng – về âm thanh), ruhig (yên tĩnh – về nơi chốn)."
+
+  - key: de:item:a2u02-leise
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: leise
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhỏ tiếng, khẽ
+      examples:
+        - target: Bitte seid nach zehn Uhr leise!
+          translation:
+            vi: Sau mười giờ các bạn giữ yên lặng nhé!
+        - target: Der Kühlschrank ist sehr leise.
+          translation:
+            vi: Cái tủ lạnh chạy rất êm.
+      confusion:
+        vi: "leise nói về âm thanh (người, máy, nhạc); muốn khen căn hộ, khu phố yên tĩnh thì dùng ruhig: eine ruhige Wohnung."
+
+  - key: de:item:a2u02-sauber
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sauber
+      pos: tính từ
+    back:
+      meaning:
+        vi: sạch sẽ
+      examples:
+        - target: Das Bad ist sehr sauber.
+          translation:
+            vi: Phòng tắm rất sạch.
+      confusion:
+        vi: "Khi đứng trước danh từ: ein sauberes Bad, eine saubere Küche."
+
+  - key: de:item:a2u02-schmutzig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: schmutzig
+      pos: tính từ
+    back:
+      meaning:
+        vi: bẩn
+      examples:
+        - target: Der Teppich ist schmutzig.
+          translation:
+            vi: Tấm thảm bẩn.
+      pronunciation_note:
+        vi: "-ig ở cuối đọc gần như \"-ích\": SCHMUT-tsich."
+
+  - key: de:item:a2u02-moebliert
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: möbliert
+      ipa: /møˈbliːɐ̯t/
+      pos: tính từ
+    back:
+      meaning:
+        vi: có sẵn đồ đạc (nội thất)
+      examples:
+        - target: Ich suche ein möbliertes Zimmer.
+          translation:
+            vi: Tôi tìm một phòng có sẵn đồ đạc.
+      confusion:
+        vi: "Cùng gốc với die Möbel (đồ đạc). Trọng âm ở âm tiết sau: mö-BLIERT."
+
+  - key: de:item:a2u02-altbau
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Altbau, Altbauten"
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà xây từ lâu (thường trần cao, cửa sổ lớn)
+      examples:
+        - target: Wir wohnen in einem Altbau. Die Zimmer sind hoch und hell.
+          translation:
+            vi: Chúng tôi ở trong một toà nhà cũ. Các phòng trần cao và sáng.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Altbauten. Giống của từ ghép theo từ cuối: der Bau → der Altbau."
+
+  - key: de:item:a2u02-neubau
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Neubau, Neubauten"
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà mới xây
+      examples:
+        - target: Die Wohnung ist in einem Neubau und hat einen Aufzug.
+          translation:
+            vi: Căn hộ nằm trong một toà nhà mới xây và có thang máy.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Neubauten."
+
+  - key: de:item:a2u02-lage
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Lage, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: vị trí (của nhà, khu vực)
+      examples:
+        - target: Die Wohnung ist klein, aber die Lage ist super.
+          translation:
+            vi: Căn hộ nhỏ nhưng vị trí thì tuyệt vời.
+      confusion:
+        vi: "Cùng gốc với liegen: Die Wohnung liegt zentral → Die Lage ist zentral."
+
+  - key: de:item:a2u02-zentral
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zentral
+      pos: tính từ
+    back:
+      meaning:
+        vi: ở trung tâm, gần trung tâm
+      examples:
+        - target: Die Wohnung liegt sehr zentral.
+          translation:
+            vi: Căn hộ nằm rất gần trung tâm.
+      pronunciation_note:
+        vi: "z đọc là \"ts\", trọng âm ở âm tiết sau: tsen-TRAL."
+
+  - key: de:item:a2u02-renoviert
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: renoviert
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã được sửa sang, cải tạo lại
+      examples:
+        - target: Das Bad ist neu renoviert.
+          translation:
+            vi: Phòng tắm mới được sửa sang lại.
+        - target: Wir suchen eine renovierte Wohnung.
+          translation:
+            vi: Chúng tôi tìm một căn hộ đã sửa sang lại.
+
+  - key: de:item:a2u02-schmal
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: schmal
+      pos: tính từ
+    back:
+      meaning:
+        vi: hẹp, hẹp bề ngang
+      examples:
+        - target: Die Wohnung hat einen langen, schmalen Flur.
+          translation:
+            vi: Căn hộ có một hành lang dài và hẹp.
+      confusion:
+        vi: "schmal = hẹp bề ngang (hành lang, cầu thang); eng = chật, bó (quần áo, phòng chật chội)."
+
+  - key: de:item:a2u02-terrasse
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Terrasse, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân hiên, hiên (thường ở tầng trệt hoặc trên mái)
+      examples:
+        - target: Die Wohnung im Erdgeschoss hat eine kleine Terrasse.
+          translation:
+            vi: Căn hộ ở tầng trệt có một sân hiên nhỏ.
+
+  - key: de:item:a2u02-aussicht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Aussicht, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tầm nhìn, quang cảnh (nhìn ra từ cửa sổ)
+      examples:
+        - target: Vom Balkon hat man eine schöne Aussicht.
+          translation:
+            vi: Từ ban công nhìn ra cảnh rất đẹp.
+
+  - key: de:item:a2u02-dusche
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Dusche, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: vòi sen, buồng tắm vòi sen
+      examples:
+        - target: Das Bad hat eine Dusche, aber keine Badewanne.
+          translation:
+            vi: Phòng tắm có vòi sen nhưng không có bồn tắm.
+
+  - key: de:item:a2u02-badewanne
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Badewanne, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: bồn tắm
+      examples:
+        - target: Im Bad gibt es eine Badewanne und eine Dusche.
+          translation:
+            vi: Trong phòng tắm có một bồn tắm và một vòi sen.
+
+  # ================= bài 4: xem nhà, thuê nhà, đuôi tính từ Dativ sau ein =================
+  - key: de:item:a2u02-g-adj-unbestimmt-dativ
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Dativ nach ein/kein/mein: in einer kleinen Wohnung, mit einem netten Vermieter"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Sau einem/einer/keinem/meinen… (Dativ), tính từ luôn có đuôi -en ở mọi giống và số nhiều. Mạo từ đã cho biết Dativ, nên tính từ chỉ cần -en."
+      examples:
+        - target: Wir wohnen in einer kleinen Wohnung.
+          translation:
+            vi: Chúng tôi sống trong một căn hộ nhỏ.
+        - target: Das Haus liegt neben einem schönen Park.
+          translation:
+            vi: Ngôi nhà nằm cạnh một công viên đẹp.
+        - target: Ich spreche mit meinen neuen Nachbarn.
+          translation:
+            vi: Tôi nói chuyện với những người hàng xóm mới.
+      confusion:
+        vi: "So với Nominativ: eine kleine Wohnung → in einer kleinen Wohnung; ein schöner Park → neben einem schönen Park. Lỗi hay gặp: \"in einer kleiner Wohnung\"."
+
+  - key: de:item:a2u02-vermieter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Vermieter, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chủ nhà (người cho thuê)
+      examples:
+        - target: Der Vermieter wohnt im Erdgeschoss.
+          translation:
+            vi: Chủ nhà sống ở tầng trệt.
+      confusion:
+        vi: "Vermieter = người cho thuê (vermieten); Mieter = người thuê (mieten). Nữ: die Vermieterin, die Mieterin."
+
+  - key: de:item:a2u02-mieter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Mieter, -"
+      pos: danh từ
+    back:
+      meaning:
+        vi: người thuê nhà
+      examples:
+        - target: Der Mieter zahlt jeden Monat die Miete.
+          translation:
+            vi: Người thuê trả tiền thuê nhà hằng tháng.
+
+  - key: de:item:a2u02-nebenkosten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Nebenkosten (Pl.)"
+      pos: danh từ
+    back:
+      meaning:
+        vi: phí phụ (nước, sưởi, rác, vệ sinh chung… trả thêm ngoài tiền thuê)
+      examples:
+        - target: Die Nebenkosten sind 150 Euro im Monat.
+          translation:
+            vi: Phí phụ là 150 euro mỗi tháng.
+      confusion:
+        vi: "Chỉ dùng số nhiều: die Nebenkosten sind … Tiền điện thường không nằm trong đó, người thuê tự ký hợp đồng điện."
+
+  - key: de:item:a2u02-kaution
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kaution, -en"
+      ipa: /kaʊ̯ˈtsi̯oːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền đặt cọc (thuê nhà)
+      examples:
+        - target: Die Kaution beträgt zwei Monatsmieten.
+          translation:
+            vi: Tiền đặt cọc là hai tháng tiền thuê.
+      pronunciation_note:
+        vi: "-tion đọc là \"tsi-ôn\", trọng âm ở âm tiết cuối: kau-TSION."
+      confusion:
+        vi: "Ở Đức, theo luật hiện hành tiền cọc tối đa là ba tháng tiền thuê lạnh (Kaltmiete); quy định có thể thay đổi, nên kiểm tra lại."
+
+  - key: de:item:a2u02-anzeige
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Anzeige, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẩu quảng cáo, tin rao (nhà, việc làm…)
+      examples:
+        - target: Ich habe eine Anzeige im Internet gelesen.
+          translation:
+            vi: Tôi đã đọc một tin rao trên mạng.
+
+  - key: de:item:a2u02-besichtigung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Besichtigung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi đi xem (nhà); tham quan
+      examples:
+        - target: Die Besichtigung ist am Donnerstag um 17 Uhr.
+          translation:
+            vi: Buổi xem nhà vào thứ Năm lúc 17 giờ.
+      confusion:
+        vi: "Từ động từ besichtigen (đi xem, tham quan). Từ ghép: die Wohnungsbesichtigung = buổi xem căn hộ."
+
+  - key: de:item:a2u02-quadratmeter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Quadratmeter, -"
+      ipa: /kvaˈdʁaːtˌmeːtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: mét vuông (m²)
+      examples:
+        - target: Die Wohnung hat 60 Quadratmeter.
+          translation:
+            vi: Căn hộ rộng 60 mét vuông.
+      pronunciation_note:
+        vi: "qu đọc là \"kv\": kva-DRAT-me-ter. Trong quảng cáo viết tắt là m²."
+
+  - key: de:item:a2u02-mieten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: mieten
+      pos: động từ
+    back:
+      meaning:
+        vi: thuê (nhà, xe…)
+      examples:
+        - target: Wir möchten die Wohnung gern mieten.
+          translation:
+            vi: Chúng tôi rất muốn thuê căn hộ này.
+      confusion:
+        vi: "mieten = thuê (người thuê làm); vermieten = cho thuê (chủ nhà làm). Hai từ trái chiều nhau giống \"thuê\" và \"cho thuê\"."
+
+  - key: de:item:a2u02-stockwerk
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Stockwerk, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tầng (của toà nhà)
+      examples:
+        - target: Das Haus hat fünf Stockwerke.
+          translation:
+            vi: Toà nhà có năm tầng.
+        - target: Die Wohnung ist im dritten Stock.
+          translation:
+            vi: Căn hộ ở tầng ba (tính từ tầng trệt lên).
+      confusion:
+        vi: "Khi nói tầng mấy, người Đức thường rút gọn thành der Stock: im ersten Stock. Tầng trệt là das Erdgeschoss, nên erster Stock là \"tầng hai\" theo cách gọi miền Bắc, \"lầu một\" theo cách gọi miền Nam."
+
+  - key: de:item:a2u02-heizung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Heizung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lò sưởi, hệ thống sưởi
+      examples:
+        - target: Die Heizung im Bad funktioniert nicht.
+          translation:
+            vi: Lò sưởi trong phòng tắm không hoạt động.
+      pronunciation_note:
+        vi: "ei đọc là \"ai\", z là \"ts\": HAI-tsung."
+
+  - key: de:item:a2u02-kaltmiete
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kaltmiete, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền thuê lạnh (chỉ tiền thuê nhà, chưa gồm phí phụ)
+      examples:
+        - target: Die Kaltmiete ist 550 Euro.
+          translation:
+            vi: Tiền thuê lạnh là 550 euro.
+      confusion:
+        vi: "Kaltmiete + Nebenkosten = Warmmiete. Khi đọc quảng cáo, hãy xem giá ghi là kalt hay warm."
+
+  - key: de:item:a2u02-warmmiete
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Warmmiete, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền thuê ấm (tiền thuê đã gồm phí phụ)
+      examples:
+        - target: Die Warmmiete ist 700 Euro im Monat.
+          translation:
+            vi: Tiền thuê ấm là 700 euro một tháng.
+      confusion:
+        vi: "Gọi là \"ấm\" vì đã gồm cả tiền sưởi và các phí phụ khác."
+
+  - key: de:item:a2u02-vermieten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: vermieten
+      pos: động từ
+    back:
+      meaning:
+        vi: cho thuê
+      examples:
+        - target: Herr Lang vermietet eine Wohnung im Zentrum.
+          translation:
+            vi: Ông Lang cho thuê một căn hộ ở trung tâm.
+      confusion:
+        vi: "Chủ nhà vermietet (cho thuê), người thuê mietet (thuê). Perfekt không có ge-: hat vermietet."
+
+  - key: de:item:a2u02-mietvertrag
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Mietvertrag, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: hợp đồng thuê nhà
+      examples:
+        - target: Lesen Sie den Mietvertrag genau!
+          translation:
+            vi: Ông/bà hãy đọc kỹ hợp đồng thuê nhà!
+      confusion:
+        vi: "Từ ghép: die Miete + der Vertrag → der Mietvertrag (giống theo từ cuối)."
+
+  - key: de:item:a2u02-einziehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "einziehen, zog ein, ist eingezogen"
+      pos: động từ
+    back:
+      meaning:
+        vi: dọn vào (nhà mới)
+      examples:
+        - target: Wann können wir einziehen? – Am ersten Mai.
+          translation:
+            vi: Khi nào chúng tôi dọn vào được? – Ngày mồng một tháng Năm.
+      confusion:
+        vi: "einziehen = dọn vào, umziehen = chuyển nhà (từ nơi này sang nơi khác). Cả hai đều tách và đi với sein: ist eingezogen, ist umgezogen."
+
+  - key: de:item:a2u02-erdgeschoss
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Erdgeschoss, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tầng trệt
+      examples:
+        - target: Der Hausmeister wohnt im Erdgeschoss.
+          translation:
+            vi: Người quản lý nhà sống ở tầng trệt.
+      confusion:
+        vi: "Tầng ngay trên Erdgeschoss là der erste Stock."

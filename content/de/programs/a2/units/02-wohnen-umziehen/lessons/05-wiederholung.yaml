@@ -1,0 +1,401 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u02-wiederholung
+order_index: 5
+level: a2
+title:
+  vi: Ôn tập – e-mail gửi chủ nhà (Wiederholung)
+objectives:
+  - vi: Đọc hiểu nội quy nhà, tin rao cho thuê nhà, e-mail của chủ nhà và lời nhắn của hàng xóm.
+  - vi: Nghe lời nhắn ngắn của hàng xóm và người quản lý nhà, bắt đúng ai, làm gì, ở đâu.
+  - vi: Viết e-mail trang trọng khoảng 40 từ cho chủ nhà – báo hỏng hóc, xin hẹn – theo 3 ý cho trước.
+  - vi: Ôn giới từ hai cách, động từ vị trí, động từ hai tân ngữ và đuôi tính từ sau ein-từ.
+estimated_minutes: 23
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:a2u02-wohnungsbesichtigung]
+items:
+  - item: de:item:a2u02-g-wechselpraepositionen
+    role: reuse
+  - item: de:item:a2u02-g-positionsverben
+    role: reuse
+  - item: de:item:a2u02-g-dat-akk-verben
+    role: reuse
+  - item: de:item:a2u02-g-objekt-stellung
+    role: reuse
+  - item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    role: reuse
+  - item: de:item:a2u02-g-adj-unbestimmt-dativ
+    role: reuse
+  - item: de:item:a1u08-g-anrede-gruss
+    role: reuse
+  - item: de:item:a2u02-schluessel
+    role: reuse
+  - item: de:item:a2u02-hausmeister
+    role: reuse
+  - item: de:item:a2u02-nachbarin
+    role: reuse
+  - item: de:item:a2u02-giessen
+    role: reuse
+  - item: de:item:a2u02-heizung
+    role: reuse
+  - item: de:item:a2u02-vermieter
+    role: reuse
+  - item: de:item:a2u02-anzeige
+    role: reuse
+  - item: de:item:a2u02-nebenkosten
+    role: reuse
+  - item: de:item:a2u02-kaltmiete
+    role: reuse
+  - item: de:item:a2u02-klingel
+    role: reuse
+  - item: de:item:a2u02-stellen
+    role: reuse
+  - item: de:item:a2u02-legen
+    role: reuse
+  - item: de:item:a2u02-erdgeschoss
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn này luyện các tình huống thật khi sống trong một khu nhà ở Đức – đọc nội quy, đọc tin rao, nhận lời nhắn của hàng xóm – và viết e-mail ngắn, lịch sự cho chủ nhà như phần Schreiben của đề Goethe A2.
+  - type: explain
+    text:
+      vi: "Đọc tin rao và thư: trước tiên tìm thông tin câu hỏi cần (ai, làm gì, khi nào, ở đâu, bao nhiêu tiền). Chú ý các cặp dễ nhầm: Kaltmiete/Warmmiete, mieten/vermieten, im Keller (ở dưới hầm) / in den Keller (mang xuống hầm)."
+  - type: explain
+    text:
+      vi: "E-mail trang trọng cho chủ nhà: mở đầu Sehr geehrter Herr …, / Sehr geehrte Frau …, rồi viết thường chữ đầu dòng sau. Viết đủ ba ý đề cho (ví dụ: cái gì hỏng, từ khi nào, bao giờ bạn ở nhà) và kết thúc bằng Mit freundlichen Grüßen + tên. Dùng Sie, Ihnen, Ihr viết hoa."
+  - type: explain
+    text:
+      vi: "Nhiệm vụ viết: bạn là Lan Pham. Chuông cửa nhà bạn hỏng từ thứ Hai. Hãy viết cho chủ nhà, ông Berger, khoảng 40 từ: (1) báo cái gì hỏng và từ khi nào, (2) nhờ ông ấy gửi người quản lý nhà đến, (3) nói khi nào bạn ở nhà. Viết xong, so với e-mail mẫu dưới đây."
+  - type: deep_explain
+    text:
+      vi: "Câu hữu ích khi viết cho chủ nhà: Seit Montag funktioniert … nicht. (seit + thì hiện tại) · … ist kaputt. · Können Sie bitte den Hausmeister schicken? · Ich bin am … ab … Uhr zu Hause. · Meine Nachbarin hat einen Schlüssel. Đề thi có thể đòi thư thân mật hoặc trang trọng; với chủ nhà, cơ quan, người lạ luôn chọn trang trọng (Sie). Đừng quên đuôi tính từ sau ein-từ (in meiner kleinen Wohnung) và thứ tự hai tân ngữ (Können Sie ihm den Schlüssel geben?). Cấu trúc đề có thể thay đổi; hãy xem mô tả đề Goethe A2 hiện hành trước khi thi."
+  - type: example
+    target: "Sehr geehrter Herr Berger, seit Montag funktioniert die Klingel an meiner Tür nicht. Können Sie bitte den Hausmeister schicken? Ich bin am Dienstag und am Mittwoch ab 16 Uhr zu Hause. Mit freundlichen Grüßen, Lan Pham"
+    target_lang: de
+    translation:
+      vi: Kính gửi ông Berger, từ thứ Hai chuông cửa nhà tôi không hoạt động. Ông có thể cử người quản lý nhà đến không ạ? Thứ Ba và thứ Tư tôi ở nhà từ 16 giờ. Trân trọng, Lan Pham
+    note:
+      vi: "E-mail mẫu khoảng 40 từ, đủ 3 ý. an meiner Tür: an + Dativ (Wo?), mein + -er cho giống cái."
+  - type: example
+    target: "Liebe Frau Pham, ich bin am Wochenende nicht da. Können Sie bitte meine Blumen gießen? Den Schlüssel gebe ich Ihnen morgen. Viele Grüße, Sabine Roth"
+    target_lang: de
+    translation:
+      vi: Chị Pham thân mến, cuối tuần tôi không có nhà. Chị tưới hoa giúp tôi được không? Mai tôi đưa chị chìa khoá. Thân, Sabine Roth
+    note:
+      vi: "Hàng xóm quen nhau vẫn có thể dùng Sie nhưng mở đầu thân mật Liebe Frau … Đầu câu là den Schlüssel (Akkusativ) để nhấn mạnh; Ihnen là Dativ lịch sự."
+  - type: common_mistake
+    wrong: Sehr geehrter Herr Berger, Seit Montag funktioniert die Heizung nicht.
+    right: Sehr geehrter Herr Berger, seit Montag funktioniert die Heizung nicht.
+    target_lang: de
+    note:
+      vi: "Sau dấu phẩy của lời chào, câu đầu tiên viết thường (trừ danh từ và Sie)."
+  - type: common_mistake
+    wrong: Ich wohne in einer kleiner Wohnung im Erdgeschoss.
+    right: Ich wohne in einer kleinen Wohnung im Erdgeschoss.
+    target_lang: de
+    note:
+      vi: "Dativ sau einer → tính từ luôn -en."
+  - type: common_mistake
+    wrong: Können Sie den Schlüssel mir geben?
+    right: Können Sie mir den Schlüssel geben?
+    target_lang: de
+    note:
+      vi: "Đại từ Dativ (mir) đứng trước danh từ Akkusativ (den Schlüssel)."
+  - type: summary
+    points:
+      - vi: "Wohin? → Akk (in den Keller), Wo? → Dat (im Keller); stellen/stehen, legen/liegen, hängen."
+      - vi: "geben, zeigen, bringen … + Dativ (người) + Akkusativ (vật); hai đại từ: ihn ihm."
+      - vi: "Đuôi tính từ sau ein-từ: ein großer Balkon, einen großen Balkon, in einer kleinen Wohnung."
+      - vi: "Kaltmiete + Nebenkosten = Warmmiete."
+      - vi: "E-mail trang trọng: Sehr geehrte/r … – 3 ý – Mit freundlichen Grüßen."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a2u02l5-mcq-lesen-hausordnung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-g-wechselpraepositionen
+    prompt:
+      stem: "Đọc nội quy nhà: \"Hausordnung: Bitte stellen Sie Fahrräder nur in den Keller, nicht in den Flur. Den Müll bringen Sie bitte in die Container im Hof. Von 22 bis 7 Uhr ist Ruhezeit.\" Bạn để xe đạp ở đâu?"
+      stem_lang: vi
+      options:
+        - { id: k3r, text: "Dưới tầng hầm.", lang: vi }
+        - { id: p8v, text: "Ở hành lang.", lang: vi }
+        - { id: d5n, text: "Ngoài sân, cạnh thùng rác.", lang: vi }
+        - { id: w2t, text: "Ở đâu cũng được, trừ từ 22 đến 7 giờ.", lang: vi }
+    answer:
+      correct_option_id: k3r
+    explanation:
+      vi: "in den Keller = vào tầng hầm (Akkusativ, Wohin?); nicht in den Flur = không để ở hành lang. Container im Hof là chỗ bỏ rác; 22 bis 7 Uhr là giờ yên tĩnh."
+    display_answer: "Dưới tầng hầm."
+
+  - key: de:exercise:a2u02l5-mcq-lesen-anzeige
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-anzeige
+    prompt:
+      stem: "Đọc tin rao: \"Vermiete eine helle 3-Zimmer-Wohnung im Neubau, 75 Quadratmeter, 2. Stock, mit Balkon. Kaltmiete 820 Euro, Nebenkosten 190 Euro. Frei ab 1. März.\" Mỗi tháng bạn trả tổng cộng bao nhiêu (Warmmiete)?"
+      stem_lang: vi
+      options:
+        - { id: z6m, text: "1010 euro.", lang: vi }
+        - { id: h1c, text: "820 euro.", lang: vi }
+        - { id: n4x, text: "190 euro.", lang: vi }
+        - { id: s9b, text: "630 euro.", lang: vi }
+    answer:
+      correct_option_id: z6m
+    explanation:
+      vi: "Warmmiete = Kaltmiete + Nebenkosten = 820 + 190 = 1010 euro. 820 chỉ là tiền thuê lạnh, 190 là phí phụ."
+    display_answer: "1010 euro."
+
+  - key: de:exercise:a2u02l5-mcq-lesen-vermieter-mail
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-g-dat-akk-verben
+    prompt:
+      stem: "Đọc e-mail: \"Sehr geehrte Frau Pham, vielen Dank für Ihre E-Mail. Der Hausmeister kommt am Dienstag um zehn Uhr und repariert die Heizung. Bitte zeigen Sie ihm das Bad. Mit freundlichen Grüßen, Klaus Berger\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: b7k, text: "Thứ Ba lúc 10 giờ người quản lý nhà đến sửa lò sưởi; chị Pham chỉ cho ông ấy phòng tắm.", lang: vi }
+        - { id: e2w, text: "Ông Berger tự đến sửa lò sưởi vào thứ Ba.", lang: vi }
+        - { id: m9q, text: "Người quản lý nhà chỉ cho chị Pham phòng tắm mới.", lang: vi }
+        - { id: r4f, text: "Thứ Hai lúc 10 giờ người quản lý nhà đến sửa phòng tắm.", lang: vi }
+    answer:
+      correct_option_id: b7k
+    explanation:
+      vi: "Der Hausmeister kommt am Dienstag um zehn Uhr = người quản lý nhà đến thứ Ba lúc 10 giờ; repariert die Heizung = sửa lò sưởi. zeigen Sie ihm das Bad: Sie (chị Pham) chỉ cho ihm (người quản lý, Dativ) das Bad (Akkusativ)."
+    display_answer: "Thứ Ba lúc 10 giờ người quản lý nhà đến sửa lò sưởi; chị Pham chỉ cho ông ấy phòng tắm."
+
+  - key: de:exercise:a2u02l5-mcq-lesen-nachbarin
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-giessen
+    prompt:
+      stem: "Đọc lời nhắn: \"Liebe Frau Pham, ich bin von Freitag bis Sonntag nicht da. Können Sie bitte meine Blumen gießen? Der Schlüssel liegt bei Herrn Krüger im Erdgeschoss. Vielen Dank! Sabine Roth\" Chị Pham lấy chìa khoá ở đâu?"
+      stem_lang: vi
+      options:
+        - { id: c8j, text: "Ở nhà ông Krüger, tầng trệt.", lang: vi }
+        - { id: y3p, text: "Trên bàn trong căn hộ của chị Roth.", lang: vi }
+        - { id: g6s, text: "Chị Roth đưa tận tay vào thứ Sáu.", lang: vi }
+        - { id: t1h, text: "Ở nhà ông Krüger, tầng một.", lang: vi }
+    answer:
+      correct_option_id: c8j
+    explanation:
+      vi: "Der Schlüssel liegt bei Herrn Krüger im Erdgeschoss = chìa khoá ở chỗ ông Krüger, tầng trệt. liegen + Wo? → bei + Dativ, im Erdgeschoss."
+    display_answer: "Ở nhà ông Krüger, tầng trệt."
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a2u02l5-listen-paket-nachbar
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-g-positionsverben
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Hallo, hier ist Ihr Nachbar aus dem ersten Stock. Ich habe ein Paket für Sie. Es steht vor meiner Tür."
+      options:
+        - { id: o5v, text: "Hàng xóm tầng một (ngay trên tầng trệt) có một bưu kiện cho bạn, để trước cửa nhà anh ấy.", lang: vi }
+        - { id: l2d, text: "Hàng xóm tầng trệt gửi bưu kiện cho người ở tầng một.", lang: vi }
+        - { id: f7k, text: "Bưu kiện của bạn đang ở trước cửa nhà bạn.", lang: vi }
+        - { id: u9n, text: "Hàng xóm muốn mượn của bạn một cái thùng.", lang: vi }
+    answer:
+      correct_option_id: o5v
+    explanation:
+      vi: "aus dem ersten Stock = từ tầng một (kiểu Đức); ein Paket für Sie = một bưu kiện cho bạn; Es steht vor meiner Tür = nó ở trước cửa nhà tôi (nhà người hàng xóm), stehen + vor + Dativ."
+    display_answer: "Hàng xóm tầng một (ngay trên tầng trệt) có một bưu kiện cho bạn, để trước cửa nhà anh ấy."
+
+  - key: de:exercise:a2u02l5-listen-hausmeister-klingel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-klingel
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag, hier spricht der Hausmeister. Ich komme morgen um neun Uhr und repariere die Klingel. Bitte stellen Sie Ihr Fahrrad bis morgen in den Keller."
+      options:
+        - { id: a4y, text: "Mai 9 giờ người quản lý nhà đến sửa chuông; bạn cần đưa xe đạp xuống tầng hầm.", lang: vi }
+        - { id: i8c, text: "Mai 9 giờ người quản lý nhà đến sửa xe đạp dưới tầng hầm.", lang: vi }
+        - { id: x3r, text: "Hôm nay người quản lý nhà đã sửa chuông xong.", lang: vi }
+        - { id: q5g, text: "Mai 9 giờ người quản lý nhà đến lấy xe đạp của bạn.", lang: vi }
+    answer:
+      correct_option_id: a4y
+    explanation:
+      vi: "morgen um neun Uhr = mai lúc 9 giờ; repariere die Klingel = sửa chuông cửa. stellen Sie Ihr Fahrrad in den Keller = đưa xe đạp của bạn xuống tầng hầm (Wohin? → Akkusativ)."
+    display_answer: "Mai 9 giờ người quản lý nhà đến sửa chuông; bạn cần đưa xe đạp xuống tầng hầm."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u02l5-fill-anrede-gruss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u08-g-anrede-gruss
+    prompt:
+      template: "{{b1}} geehrter Herr Berger, … Mit {{b2}} Grüßen, Lan Pham"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [Sehr]
+        b2: [freundlichen]
+    known_wrong:
+      - answer: freundliche
+        feedback_vi: "Cụm cố định cuối thư trang trọng: Mit freundlichen Grüßen (đuôi -en)."
+        error_tag: adj_ending
+      - answer: Viele
+        feedback_vi: "Viele Grüße là lời chào thân mật và không đi sau Mit. Thư trang trọng: Mit freundlichen Grüßen."
+        error_tag: register_du_sie
+    explanation:
+      vi: "Thư trang trọng gửi chủ nhà: Sehr geehrter Herr … (nam) và kết bằng cụm cố định Mit freundlichen Grüßen."
+    display_answer: "Sehr geehrter Herr Berger, … Mit freundlichen Grüßen, Lan Pham"
+
+  - key: de:exercise:a2u02l5-fill-mail-heizung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-g-adj-unbestimmt-dativ
+    prompt:
+      template: "Ich wohne in einer {{b1}} (klein) Wohnung im Erdgeschoss. Leider ist die Heizung kaputt. Können Sie {{b2}} (ich) bitte einen Termin geben?"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [kleinen]
+        b2: [mir]
+    known_wrong:
+      - answer: kleiner
+        feedback_vi: "Sau einer (Dativ) tính từ luôn -en: in einer kleinen Wohnung."
+        error_tag: adj_ending
+      - answer: kleine
+        feedback_vi: "wohnen in (Wo?) → Dativ; sau einer tính từ có đuôi -en."
+        error_tag: adj_ending
+      - answer: mich
+        feedback_vi: "geben: người nhận ở Dativ → mir, không phải mich."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "in + Dativ: einer kleinen Wohnung (tính từ -en). geben + Dativ (người nhận: mir) + Akkusativ (einen Termin)."
+    display_answer: "Ich wohne in einer kleinen Wohnung im Erdgeschoss. Leider ist die Heizung kaputt. Können Sie mir bitte einen Termin geben?"
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u02l5-wb-termin-geben
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-g-objekt-stellung
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi trong e-mail: \"Ông có thể cho tôi một lịch hẹn không?\""
+      tokens:
+        - { id: t-termin, text: Termin }
+        - { id: t-mir, text: mir }
+        - { id: t-geben, text: geben }
+        - { id: t-mich, text: mich }
+        - { id: t-koennen, text: Können }
+        - { id: t-einen, text: einen }
+        - { id: t-sie, text: Sie }
+    answer:
+      orders:
+        - [t-koennen, t-sie, t-mir, t-einen, t-termin, t-geben]
+    explanation:
+      vi: "Câu hỏi có/không: Können đứng đầu, Sie thứ hai, động từ nguyên thể geben ở cuối. Người nhận ở Dativ (mir, không phải mich); đại từ mir đứng trước danh từ einen Termin."
+    display_answer: Können Sie mir einen Termin geben?
+
+  - key: de:exercise:a2u02l5-wb-ihn-ihm-gegeben
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-schluessel
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hôm qua tôi đã đưa nó (cái chìa khoá) cho anh ấy.\""
+      tokens:
+        - { id: t-gegeben, text: gegeben }
+        - { id: t-ihm, text: ihm }
+        - { id: t-gestern, text: gestern }
+        - { id: t-habe, text: habe }
+        - { id: t-er, text: er }
+        - { id: t-ich, text: ich }
+        - { id: t-ihn, text: ihn }
+    answer:
+      orders:
+        - [t-ich, t-habe, t-ihn, t-ihm, t-gestern, t-gegeben]
+        - [t-gestern, t-habe, t-ich, t-ihn, t-ihm, t-gegeben]
+    explanation:
+      vi: "der Schlüssel → ihn (Akkusativ), anh ấy → ihm (Dativ); hai đại từ thì Akkusativ trước: ihn ihm. habe ở vị trí 2, Partizip gegeben ở cuối; er là Nominativ nên không dùng."
+    display_answer: Ich habe ihn ihm gestern gegeben.
+
+  - key: de:exercise:a2u02l5-tr-schluessel-tisch
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-legen
+    prompt:
+      source_text: Tôi đã đặt chìa khoá lên bàn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe den Schlüssel auf den Tisch gelegt.
+        - Den Schlüssel habe ich auf den Tisch gelegt.
+        - Auf den Tisch habe ich den Schlüssel gelegt.
+        - Ich habe die Schlüssel auf den Tisch gelegt.
+        - Die Schlüssel habe ich auf den Tisch gelegt.
+        - Auf den Tisch habe ich die Schlüssel gelegt.
+    known_wrong:
+      - answer: Ich habe den Schlüssel auf dem Tisch gelegt.
+        feedback_vi: "Đặt lên bàn là Wohin? → Akkusativ: auf den Tisch."
+        error_tag: case_dat_akk
+      - answer: Ich habe den Schlüssel auf den Tisch gelegen.
+        feedback_vi: "legen (đặt) có quy tắc: hat gelegt. gelegen là Partizip của liegen (nằm)."
+        error_tag: verb_form
+      - answer: Ich bin den Schlüssel auf den Tisch gelegt.
+        feedback_vi: "legen có tân ngữ nên Perfekt dùng haben: Ich habe … gelegt."
+        error_tag: aux_verb
+    explanation:
+      vi: "Chìa khoá được đặt nằm → legen; đặt lên bàn (Wohin?) → auf + Akkusativ: auf den Tisch. Perfekt: habe … gelegt."
+    display_answer: Ich habe den Schlüssel auf den Tisch gelegt.
+
+  - key: de:exercise:a2u02l5-tr-nebenkosten-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u02-nebenkosten
+    prompt:
+      source_text: Die Wohnung liegt in einem ruhigen Stadtteil, aber die Nebenkosten sind sehr hoch.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Căn hộ nằm ở một khu yên tĩnh, nhưng phí phụ rất cao.
+        - Căn hộ nằm trong một khu yên tĩnh, nhưng phí phụ rất cao.
+        - Căn hộ ở một khu yên tĩnh nhưng chi phí phụ rất cao.
+        - Căn hộ nằm ở một khu phố yên tĩnh, nhưng phí phụ rất cao.
+        - Căn hộ nằm ở một quận yên tĩnh, nhưng phí phụ rất cao.
+        - Căn hộ nằm ở một khu yên tĩnh, nhưng các khoản phí phụ rất cao.
+        - Căn hộ ở trong một khu yên tĩnh, nhưng tiền phí phụ rất cao.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Căn hộ nằm ở một khu yên tĩnh, nhưng tiền thuê rất cao.
+        feedback_vi: "Nebenkosten là phí phụ (sưởi, nước, rác…), không phải tiền thuê nhà (Miete)."
+        error_tag: vocabulary
+    explanation:
+      vi: "in einem ruhigen Stadtteil = ở một khu yên tĩnh (Dativ, tính từ -en); die Nebenkosten sind sehr hoch = phí phụ rất cao."
+    display_answer: Căn hộ nằm ở một khu yên tĩnh, nhưng phí phụ rất cao.

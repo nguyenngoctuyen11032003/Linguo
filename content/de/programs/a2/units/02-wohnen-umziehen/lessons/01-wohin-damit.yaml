@@ -1,0 +1,432 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u02-wohin-damit
+order_index: 1
+level: a2
+title:
+  vi: Để cái này ở đâu? – giới từ hai cách (Wohin stellen wir das Sofa?)
+objectives:
+  - vi: Sắp xếp đồ khi chuyển nhà – nói đặt cái gì vào đâu với Wohin? + Akkusativ (Ich stelle das Sofa ans Fenster).
+  - vi: Nói đồ vật đang ở đâu với Wo? + Dativ (Das Sofa steht am Fenster).
+  - vi: Phân biệt cặp động từ stellen/stehen, legen/liegen, setzen/sitzen và hai nghĩa của hängen.
+  - vi: Nhờ người cùng chuyển nhà đặt đồ bằng câu mệnh lệnh (Stell den Karton bitte in den Keller!).
+estimated_minutes: 18
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u01-wiederholung]
+items:
+  - item: de:item:a2u02-g-wechselpraepositionen
+  - item: de:item:a2u02-g-positionsverben
+  - item: de:item:a2u02-stellen
+  - item: de:item:a2u02-stehen
+  - item: de:item:a2u02-legen
+  - item: de:item:a2u02-liegen
+  - item: de:item:a2u02-setzen
+  - item: de:item:a2u02-sitzen
+  - item: de:item:a2u02-haengen
+  - item: de:item:a2u02-umzug
+  - item: de:item:a2u02-umziehen
+  - item: de:item:a2u02-karton
+  - item: de:item:a2u02-boden
+  - item: de:item:a2u02-vorhang
+  - item: de:item:a2u02-kissen
+  - item: de:item:a2u02-pflanze
+  - item: de:item:a2u02-einbaukueche
+  - item: de:item:a2u02-auspacken
+  - item: de:item:a1u05-g-dativ-artikel
+    role: reuse
+  - item: de:item:a1u05-g-wo-praep-dativ
+    role: reuse
+  - item: de:item:a1u05-g-possessiv-plural
+    role: reuse
+  - item: de:item:a1u05-g-imperativ
+    role: reuse
+  - item: de:item:a1u08-g-akk-praepositionen
+    role: reuse
+  - item: de:item:a1u05-sofa
+    role: reuse
+  - item: de:item:a1u05-schrank
+    role: reuse
+  - item: de:item:a1u05-regal
+    role: reuse
+  - item: de:item:a1u05-lampe
+    role: reuse
+  - item: de:item:a1u05-teppich
+    role: reuse
+  - item: de:item:a1u05-bild
+    role: reuse
+  - item: de:item:a1u05-wand
+    role: reuse
+  - item: de:item:a1u05-flur
+    role: reuse
+  - item: de:item:p0u3-tisch
+    role: reuse
+  - item: de:item:p0u3-fenster
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chỉ huy được một buổi chuyển nhà bằng tiếng Đức – "Kê sofa sát cửa sổ!", "Đèn để cạnh giá sách" – và nói đúng đồ nào đang đứng, nằm hay treo ở đâu.
+  - type: explain
+    text:
+      vi: "Ở bài \"Ngân hàng ở đâu?\" (A1) bạn đã dùng in, an, auf, über, unter, vor, hinter, neben, zwischen + Dativ để nói vị trí (Wo?). Chín giới từ này còn có cách dùng thứ hai: khi bạn chuyển cái gì tới một chỗ (Wohin?), chúng đi với Akkusativ. Vì đổi được hai cách nên gọi là Wechselpräpositionen (giới từ hai cách)."
+  - type: explain
+    text:
+      vi: "Tiếng Việt phân biệt bằng từ khác nhau: \"đặt lên bàn\" (hướng tới) và \"ở trên bàn\" (vị trí). Tiếng Đức giữ nguyên giới từ auf mà đổi mạo từ: auf den Tisch (Akk, Wohin?) – auf dem Tisch (Dat, Wo?). Rút gọn hay gặp: in das → ins, an das → ans (Akk); in dem → im, an dem → am (Dat)."
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ cần \"để, đặt\" cho mọi đồ vật, còn tiếng Đức chọn động từ theo tư thế: stellen (đặt đứng – tủ, chai, đèn), legen (đặt nằm – điện thoại, thảm), setzen (đặt ngồi – em bé), hängen (treo – tranh, rèm). Bốn động từ này có tân ngữ Akkusativ và hỏi Wohin? + Akkusativ."
+  - type: explain
+    text:
+      vi: "Kết quả của việc đặt là trạng thái: stehen (đứng), liegen (nằm), sitzen (ngồi), hängen (đang treo). Các động từ này không có tân ngữ, hỏi Wo? + Dativ và là động từ bất quy tắc: stand – hat gestanden, lag – hat gelegen, saß – hat gesessen, hing – hat gehangen. hängen với nghĩa \"treo cái gì\" thì có quy tắc: hängte – hat gehängt."
+  - type: deep_explain
+    text:
+      vi: "Quy tắc Wo?/Wohin? áp dụng cho mọi động từ chuyển động, không chỉ bốn động từ \"đặt\": Ich gehe in die Küche (đi vào bếp – Akk) – Ich bin in der Küche (ở trong bếp – Dat). Vì vậy cụm \"ins Kino gehen\" mà bạn học thuộc ở A1 thật ra là in das Kino + Akkusativ. Khi phân vân, hãy hỏi: có di chuyển tới một chỗ mới không? Có → Akkusativ; chỉ ở yên hoặc đi lại bên trong một chỗ (Wir laufen im Park) → Dativ. Ngoài ra, khi viết thân mật người Đức còn rút gọn auf das → aufs (aufs Sofa). Ở miền Nam nước Đức, Áo và Thụy Sĩ, Perfekt của stehen, liegen, sitzen thường dùng sein (ist gestanden); bạn chỉ cần nhận ra, còn khi viết hãy dùng hat."
+  - type: example
+    target: "Wohin stellen wir das Sofa? – Ans Fenster."
+    target_lang: de
+    translation:
+      vi: Mình kê ghế sofa ở đâu? – Sát cửa sổ.
+    note:
+      vi: "Hai người bạn cùng chuyển nhà. Wohin? → Akkusativ: das Fenster → an das → ans Fenster."
+  - type: example
+    target: Jetzt steht das Sofa am Fenster, und der Teppich liegt vor dem Sofa.
+    target_lang: de
+    translation:
+      vi: Bây giờ ghế sofa đứng sát cửa sổ, còn tấm thảm nằm trước ghế sofa.
+    note:
+      vi: "Wo? → Dativ: an dem → am Fenster, vor dem Sofa. Sofa đứng (stehen), thảm nằm (liegen)."
+  - type: example
+    target: Häng das Bild bitte über den Schreibtisch!
+    target_lang: de
+    translation:
+      vi: Bạn treo bức tranh phía trên bàn làm việc nhé!
+    note:
+      vi: "Nói với bạn (du): mệnh lệnh Häng! hängen + Akkusativ (der Schreibtisch → über den Schreibtisch). Sau đó: Das Bild hängt über dem Schreibtisch."
+  - type: example
+    target: Wir sind im Mai umgezogen. Die Kartons haben drei Wochen im Flur gestanden.
+    target_lang: de
+    translation:
+      vi: Chúng tôi chuyển nhà hồi tháng Năm. Mấy cái thùng đã nằm ở hành lang suốt ba tuần.
+    note:
+      vi: "umziehen đi với sein (ist umgezogen); stehen đi với haben (hat gestanden). Thùng các-tông đặt đứng trên sàn nên tiếng Đức dùng stehen, dù tiếng Việt hay nói \"nằm\"."
+  - type: example
+    target: "Wo ist die Pflanze? – Sie steht auf dem Boden neben dem Regal."
+    target_lang: de
+    translation:
+      vi: Cái cây cảnh đâu rồi? – Nó ở dưới sàn, cạnh giá sách.
+    note:
+      vi: "die Pflanze → sie. Wo? → Dativ: auf dem Boden, neben dem Regal."
+  - type: example
+    target: Der Karton ist für den Keller. Stell ihn bitte in den Keller!
+    target_lang: de
+    translation:
+      vi: Cái thùng này để dưới tầng hầm. Bạn mang nó xuống tầng hầm nhé!
+    note:
+      vi: "für + Akkusativ (den Keller) như ở A1. Câu 2 là Wohin? → in den Keller (Akkusativ); der Karton → ihn."
+  - type: common_mistake
+    wrong: Ich stelle die Lampe auf dem Tisch.
+    right: Ich stelle die Lampe auf den Tisch.
+    target_lang: de
+    note:
+      vi: "stellen là đặt tới một chỗ (Wohin?) nên cần Akkusativ: auf den Tisch. auf dem Tisch dùng sau steht: Die Lampe steht auf dem Tisch."
+  - type: common_mistake
+    wrong: Das Bild hängt an die Wand.
+    right: Das Bild hängt an der Wand.
+    target_lang: de
+    note:
+      vi: "Bức tranh đang treo yên (Wo?) nên dùng Dativ: an der Wand. an die Wand chỉ dùng khi bạn treo nó lên: Ich hänge das Bild an die Wand."
+  - type: common_mistake
+    wrong: Ich mache das Buch ins Regal.
+    right: Ich stelle das Buch ins Regal.
+    target_lang: de
+    note:
+      vi: "Tiếng Việt nói \"để sách lên giá\", nhưng tiếng Đức không dùng machen cho việc đặt đồ. Chọn stellen (sách đứng trên giá) hoặc legen (đặt nằm)."
+  - type: common_mistake
+    wrong: Mein Handy legt auf dem Tisch.
+    right: Mein Handy liegt auf dem Tisch.
+    target_lang: de
+    note:
+      vi: "legen cần tân ngữ (ai đặt cái gì). Đồ vật tự nằm ở đâu thì dùng liegen."
+  - type: summary
+    points:
+      - vi: "Wohin? (chuyển tới) → Akkusativ: in den Keller, auf den Tisch, ins Regal, ans Fenster."
+      - vi: "Wo? (ở yên) → Dativ: im Keller, auf dem Tisch, im Regal, am Fenster."
+      - vi: "stellen → stehen (đứng), legen → liegen (nằm), setzen → sitzen (ngồi), hängen → hängen (treo)."
+      - vi: "Động từ \"đặt\" có quy tắc + Akk: hat gestellt, gelegt, gesetzt, gehängt."
+      - vi: "Động từ \"ở\" bất quy tắc + Dat: stand – gestanden, lag – gelegen, saß – gesessen, hing – gehangen."
+      - vi: "umziehen: Wir ziehen um. – Wir sind umgezogen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u02l1-mcq-lampe-auf-den-tisch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u02-g-wechselpraepositionen
+    prompt:
+      stem: "Chọn câu đúng cho: \"Tôi đặt cái đèn lên bàn.\""
+      stem_lang: vi
+      options:
+        - { id: q7d, text: Ich stelle die Lampe auf den Tisch., lang: de }
+        - { id: b3n, text: Ich stelle die Lampe auf dem Tisch., lang: de }
+        - { id: x5k, text: Ich stehe die Lampe auf den Tisch., lang: de }
+        - { id: m8r, text: Ich stelle die Lampe auf der Tisch., lang: de }
+    answer:
+      correct_option_id: q7d
+    explanation:
+      vi: "Đặt tới một chỗ là Wohin? nên auf + Akkusativ: der Tisch → auf den Tisch. auf dem Tisch là vị trí (Wo?); stehen không có tân ngữ nên không thể \"stehe die Lampe\"; der sau auf không phải dạng Akkusativ của der Tisch."
+    display_answer: Ich stelle die Lampe auf den Tisch.
+
+  - key: de:exercise:a2u02l1-mcq-bild-an-der-wand
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u02-haengen
+    prompt:
+      stem: "Chọn từ đúng: \"Das Bild hängt schon ___ Wand.\" (Bức tranh đã treo trên tường rồi.)"
+      stem_lang: vi
+      options:
+        - { id: h2c, text: an der, lang: de }
+        - { id: w9p, text: an die, lang: de }
+        - { id: f4t, text: am, lang: de }
+        - { id: k6s, text: an den, lang: de }
+    answer:
+      correct_option_id: h2c
+    explanation:
+      vi: "Bức tranh đang treo yên một chỗ (Wo?) nên dùng Dativ. die Wand là giống cái, Dativ là der: an der Wand. an die Wand là Akkusativ (khi treo lên); am = an dem chỉ dùng cho giống đực và giống trung."
+    display_answer: an der
+
+  - key: de:exercise:a2u02l1-fill-ins-im-schlafzimmer
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-g-wechselpraepositionen
+    prompt:
+      template: "Wir stellen den Schrank {{b1}} Schlafzimmer. Jetzt steht der Schrank {{b2}} Schlafzimmer."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa: Chúng tôi kê tủ vào phòng ngủ. Bây giờ cái tủ ở trong phòng ngủ."
+        - "das Schlafzimmer: Wohin? → in das = ?; Wo? → in dem = ?"
+    answer:
+      blanks:
+        b1: [ins, in das]
+        b2: [im, in dem]
+    known_wrong:
+      - answer: in den
+        feedback_vi: "den là Akkusativ giống đực, nhưng das Schlafzimmer là giống trung: in das → ins (Wohin?) hoặc in dem → im (Wo?)."
+        error_tag: article
+      - answer: in der
+        feedback_vi: "der dùng cho Dativ giống cái. das Schlafzimmer là giống trung: im (Wo?) hoặc ins (Wohin?)."
+        error_tag: article
+    explanation:
+      vi: "Câu 1 có stellen – đặt tới chỗ (Wohin?) → Akkusativ: in das, rút gọn ins. Câu 2 có stehen – đứng yên (Wo?) → Dativ: in dem, rút gọn im."
+    display_answer: "Wir stellen den Schrank ins Schlafzimmer. Jetzt steht der Schrank im Schlafzimmer."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u02l1-fill-liegt-lege
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-g-positionsverben
+    prompt:
+      template: "Der Teppich {{b1}} (liegen/legen) schon im Wohnzimmer. Jetzt {{b2}} (liegen/legen) ich die Kissen aufs Sofa."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [liegt]
+        b2: [lege]
+    known_wrong:
+      - answer: legt
+        feedback_vi: "Tấm thảm tự nằm đó, không có tân ngữ → liegen: Der Teppich liegt."
+        error_tag: verb_choice
+      - answer: liege
+        feedback_vi: "Ở câu 2 bạn đặt mấy cái gối (tân ngữ die Kissen) lên sofa → legen: ich lege."
+        error_tag: verb_choice
+      - answer: liegen
+        feedback_vi: "Cần chia động từ theo chủ ngữ: der Teppich → liegt."
+        error_tag: verb_form
+    explanation:
+      vi: "Câu 1: thảm đang nằm yên (Wo? – im Wohnzimmer) → liegen, chia er liegt. Câu 2: tôi đặt cái gì (die Kissen) tới đâu (aufs Sofa = auf das Sofa, Akkusativ) → legen, chia ich lege."
+    display_answer: "Der Teppich liegt schon im Wohnzimmer. Jetzt lege ich die Kissen aufs Sofa."
+
+  - key: de:exercise:a2u02l1-fill-artikel-umzug
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u05-g-dativ-artikel
+    prompt:
+      template: "Stell die Pflanze bitte neben {{b1}} Sofa! Die Kartons stellen wir auf {{b2}} Schrank. Der Tisch steht schon in {{b3}} Küche."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [das]
+        b2: [den]
+        b3: [der]
+    known_wrong:
+      - answer: dem
+        feedback_vi: "dem là Dativ (Wo?). Hai câu đầu có stellen – đặt tới (Wohin?) → Akkusativ: das Sofa → das, der Schrank → den."
+        error_tag: case_dat_akk
+      - answer: die
+        feedback_vi: "Câu 3 có steht – vị trí (Wo?) → Dativ. die Küche ở Dativ là der: in der Küche."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "stellen → Wohin? → Akkusativ: neben das Sofa (giống trung giữ das), auf den Schrank (der → den). steht → Wo? → Dativ: in der Küche (die → der)."
+    display_answer: "Stell die Pflanze bitte neben das Sofa! Die Kartons stellen wir auf den Schrank. Der Tisch steht schon in der Küche."
+
+  - key: de:exercise:a2u02l1-tr-bild-an-die-wand
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-bild
+    prompt:
+      source_text: Chúng tôi treo bức tranh lên tường.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir hängen das Bild an die Wand.
+        - Das Bild hängen wir an die Wand.
+        - An die Wand hängen wir das Bild.
+        - Wir hängen das Bild an der Wand auf.
+        - Das Bild hängen wir an der Wand auf.
+    known_wrong:
+      - answer: Wir hängen das Bild an der Wand.
+        feedback_vi: "Treo lên là Wohin? → Akkusativ: an die Wand. an der Wand (Dativ) dùng khi tranh đã treo yên: Das Bild hängt an der Wand."
+        error_tag: case_dat_akk
+      - answer: Wir hängen das Bild auf die Wand.
+        feedback_vi: "Với mặt đứng như bức tường, tiếng Đức dùng an (sát vào), không dùng auf (trên mặt ngang)."
+        error_tag: preposition
+      - answer: Wir hängen das Bild an den Wand.
+        feedback_vi: "die Wand là giống cái; Akkusativ giống cái vẫn là die: an die Wand."
+        error_tag: article
+    explanation:
+      vi: "hängen (treo cái gì) + Wohin? → an + Akkusativ: die Wand → an die Wand. Tường là mặt đứng nên dùng an, không dùng auf. Với động từ tách aufhängen, người Đức hay nói an der Wand aufhängen – cũng đúng."
+    display_answer: Wir hängen das Bild an die Wand.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u02l1-wb-schrank-gestellt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-stellen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi đã kê cái tủ vào phòng ngủ.\""
+      tokens:
+        - { id: t-gestellt, text: gestellt }
+        - { id: t-im, text: im }
+        - { id: t-schrank, text: Schrank }
+        - { id: t-wir, text: wir }
+        - { id: t-ins, text: ins }
+        - { id: t-gestanden, text: gestanden }
+        - { id: t-haben, text: haben }
+        - { id: t-schlafzimmer, text: Schlafzimmer }
+        - { id: t-den, text: den }
+    answer:
+      orders:
+        - [t-wir, t-haben, t-den, t-schrank, t-ins, t-schlafzimmer, t-gestellt]
+        - [t-den, t-schrank, t-haben, t-wir, t-ins, t-schlafzimmer, t-gestellt]
+        - [t-ins, t-schlafzimmer, t-haben, t-wir, t-den, t-schrank, t-gestellt]
+    explanation:
+      vi: "Kê tủ vào phòng là đặt tới một chỗ: stellen + Wohin? → ins (in das) Schlafzimmer, Perfekt hat gestellt. im và gestanden dùng cho vị trí (Der Schrank hat im Schlafzimmer gestanden). haben đứng ở vị trí 2, Partizip gestellt ở cuối câu."
+    display_answer: Wir haben den Schrank ins Schlafzimmer gestellt.
+
+  - key: de:exercise:a2u02l1-tr-kartons-im-flur-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u02-umziehen
+    prompt:
+      source_text: Wir sind gestern umgezogen. Die Kartons stehen noch im Flur.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm qua chúng tôi đã chuyển nhà. Các thùng vẫn còn ở hành lang.
+        - Hôm qua chúng tôi chuyển nhà. Mấy cái thùng vẫn còn ở hành lang.
+        - Hôm qua chúng tôi đã chuyển nhà. Mấy cái thùng vẫn còn ở hành lang.
+        - Hôm qua chúng tôi chuyển nhà. Các thùng vẫn còn ở hành lang.
+        - Chúng tôi đã chuyển nhà hôm qua. Các thùng vẫn còn ở hành lang.
+        - Hôm qua chúng mình chuyển nhà. Mấy cái thùng vẫn còn ở hành lang.
+        - Hôm qua chúng tôi đã chuyển nhà. Các thùng các-tông vẫn còn ở hành lang.
+        - Hôm qua chúng tôi đã chuyển nhà. Những cái thùng vẫn còn ở ngoài hành lang.
+        - Hôm qua chúng tôi đã chuyển nhà. Các thùng vẫn đang ở hành lang.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hôm qua chúng tôi đã chuyển nhà. Các thùng vẫn còn ở phòng khách.
+        feedback_vi: "der Flur là hành lang (lối đi trong nhà); phòng khách là das Wohnzimmer."
+        error_tag: vocabulary
+      - answer: Ngày mai chúng tôi chuyển nhà. Các thùng vẫn còn ở hành lang.
+        feedback_vi: "sind … umgezogen là Perfekt – việc đã xảy ra; gestern là hôm qua."
+        error_tag: tense
+    explanation:
+      vi: "Wir sind umgezogen = chúng tôi đã chuyển nhà (Perfekt với sein); gestern = hôm qua. Die Kartons stehen noch im Flur = các thùng vẫn còn ở hành lang (stehen + Dativ: im Flur)."
+    display_answer: Hôm qua chúng tôi đã chuyển nhà. Các thùng vẫn còn ở hành lang.
+
+  - key: de:exercise:a2u02l1-mcq-handy-liegt
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-liegen
+    prompt:
+      stem: "Bạn cùng phòng hỏi: \"Wo ist mein Handy?\" Điện thoại đang nằm trên bàn. Bạn trả lời câu nào?"
+      stem_lang: vi
+      options:
+        - { id: r5v, text: Es liegt auf dem Tisch., lang: de }
+        - { id: d1g, text: Es legt auf dem Tisch., lang: de }
+        - { id: n7j, text: Es liegt auf den Tisch., lang: de }
+        - { id: s3y, text: Es lag auf den Tisch., lang: de }
+    answer:
+      correct_option_id: r5v
+    explanation:
+      vi: "Điện thoại đang nằm yên một chỗ: liegen (không tân ngữ) + Wo? → Dativ: auf dem Tisch. legen cần tân ngữ (ai đặt cái gì); auf den Tisch là Akkusativ (đặt tới); lag là quá khứ và vẫn sai cách."
+    display_answer: Es liegt auf dem Tisch.
+
+  - key: de:exercise:a2u02l1-tr-tisch-unsere-kueche
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u05-g-possessiv-plural
+    prompt:
+      source_text: Chúng tôi kê cái bàn vào bếp của chúng tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir stellen den Tisch in unsere Küche.
+        - Den Tisch stellen wir in unsere Küche.
+        - In unsere Küche stellen wir den Tisch.
+        - Wir stellen den Tisch in die Küche.
+        - Den Tisch stellen wir in die Küche.
+    known_wrong:
+      - answer: Wir stellen den Tisch in unserer Küche.
+        feedback_vi: "Kê vào bếp là Wohin? → Akkusativ: in unsere Küche. in unserer Küche (Dativ) là vị trí: Der Tisch steht in unserer Küche."
+        error_tag: case_dat_akk
+      - answer: Wir legen den Tisch in unsere Küche.
+        feedback_vi: "Cái bàn đứng trên bốn chân nên dùng stellen; legen là đặt nằm."
+        error_tag: verb_choice
+      - answer: Wir stellen der Tisch in unsere Küche.
+        feedback_vi: "der Tisch là tân ngữ của stellen nên ở Akkusativ: den Tisch."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Cái bàn được đặt đứng → stellen; đặt tới bếp (Wohin?) → in + Akkusativ: die Küche → in unsere Küche (unser + -e cho giống cái). Tân ngữ der Tisch → den Tisch."
+    display_answer: Wir stellen den Tisch in unsere Küche.

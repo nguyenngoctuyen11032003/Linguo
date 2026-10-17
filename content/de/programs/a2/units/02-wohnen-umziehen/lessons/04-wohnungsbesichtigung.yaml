@@ -1,0 +1,359 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u02-wohnungsbesichtigung
+order_index: 4
+level: a2
+title:
+  vi: Xem nhà – Dativ sau ein (Die Wohnungsbesichtigung)
+objectives:
+  - vi: Gọi điện hỏi về căn hộ trong tin rao và hẹn đi xem nhà.
+  - vi: Hỏi và hiểu các khoản chi phí – Kaltmiete, Nebenkosten, Warmmiete, Kaution.
+  - vi: Nghe cuộc xem nhà và ghi lại thông tin chính (diện tích, tầng, giá, ngày dọn vào).
+  - vi: Dùng tính từ sau einem/einer/meinen ở Dativ với đuôi -en (in einer kleinen Wohnung).
+estimated_minutes: 18
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a2u02-eine-helle-wohnung]
+items:
+  - item: de:item:a2u02-g-adj-unbestimmt-dativ
+  - item: de:item:a2u02-vermieter
+  - item: de:item:a2u02-mieter
+  - item: de:item:a2u02-nebenkosten
+  - item: de:item:a2u02-kaution
+  - item: de:item:a2u02-anzeige
+  - item: de:item:a2u02-besichtigung
+  - item: de:item:a2u02-quadratmeter
+  - item: de:item:a2u02-mieten
+  - item: de:item:a2u02-stockwerk
+  - item: de:item:a2u02-heizung
+  - item: de:item:a2u02-kaltmiete
+  - item: de:item:a2u02-warmmiete
+  - item: de:item:a2u02-vermieten
+  - item: de:item:a2u02-mietvertrag
+  - item: de:item:a2u02-einziehen
+  - item: de:item:a2u02-erdgeschoss
+  - item: de:item:a1u05-g-es-gibt
+    role: reuse
+  - item: de:item:a1u05-miete
+    role: reuse
+  - item: de:item:a1u07-g-dativ-praepositionen
+    role: reuse
+  - item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    role: reuse
+  - item: de:item:a2u01-besichtigen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được cho chủ nhà để hỏi một căn hộ trong tin rao, hiểu người ta nói về giá, tầng, diện tích, và tả nơi mình sống bằng câu như "Tôi sống trong một căn hộ nhỏ ở một khu yên tĩnh".
+  - type: explain
+    text:
+      vi: "Sau mạo từ Dativ einem/einer/keinem/meinen…, tính từ luôn có đuôi -en, với mọi giống và cả số nhiều: in einer kleinen Wohnung, mit einem netten Vermieter, neben einem großen Park, mit meinen neuen Nachbarn. Mạo từ đã cho biết là Dativ, nên tính từ chỉ cần -en."
+  - type: explain
+    text:
+      vi: "Dativ xuất hiện sau giới từ chỉ vị trí (Wo? in, an, neben…) và sau aus, bei, mit, nach, von, zu. So sánh: eine kleine Wohnung (Nominativ) → Wir wohnen in einer kleinen Wohnung (Dativ). Người Việt hay giữ đuôi -er/-e của Nominativ: \"in einer kleiner Wohnung\" là sai."
+  - type: explain
+    text:
+      vi: "Tiền nhà ở Đức thường có hai phần: Kaltmiete (tiền thuê \"lạnh\" – chỉ tiền nhà) và Nebenkosten (phí phụ: sưởi, nước, rác…). Cộng lại là Warmmiete. Khi đọc tin rao, hãy xem con số là kalt hay warm."
+  - type: explain
+    text:
+      vi: "mieten là thuê, vermieten là cho thuê – giống \"thuê\" và \"cho thuê\" trong tiếng Việt. Người thuê là der Mieter, chủ nhà là der Vermieter (nữ: die Mieterin, die Vermieterin)."
+  - type: deep_explain
+    text:
+      vi: "Một số điều nên biết khi thuê nhà ở Đức (có thể thay đổi, hãy kiểm tra quy định hiện hành): theo luật hiện tại, tiền cọc (Kaution) tối đa ba tháng tiền thuê lạnh. Trong tin rao, số phòng (2-Zimmer-Wohnung) thường không tính bếp và phòng tắm. Tầng trệt là das Erdgeschoss, tầng ngay trên là der erste Stock – tức \"tầng hai\" theo cách gọi miền Bắc hay \"lầu một\" theo cách gọi miền Nam. Trước khi ký Mietvertrag, nên hỏi rõ ngày dọn vào (Wann kann ich einziehen?) và Nebenkosten gồm những gì."
+  - type: example
+    target: "Guten Tag, ich habe Ihre Anzeige gelesen. Ist die Wohnung noch frei?"
+    target_lang: de
+    translation:
+      vi: Chào ông/bà, tôi đã đọc tin rao của ông/bà. Căn hộ còn trống không ạ?
+    note:
+      vi: "Gọi cho chủ nhà – người lạ – nên dùng Sie và Ihre (viết hoa)."
+  - type: example
+    target: Die Wohnung hat 65 Quadratmeter und liegt im zweiten Stock. Die Kaltmiete ist 600 Euro, die Nebenkosten sind 150 Euro.
+    target_lang: de
+    translation:
+      vi: Căn hộ rộng 65 mét vuông, ở tầng ba (tính cả tầng trệt). Tiền thuê lạnh là 600 euro, phí phụ là 150 euro.
+    note:
+      vi: "Warmmiete = 600 + 150 = 750 Euro. die Nebenkosten luôn ở số nhiều nên động từ là sind."
+  - type: example
+    target: Wir suchen eine Wohnung in einem ruhigen Stadtteil.
+    target_lang: de
+    translation:
+      vi: Chúng tôi tìm một căn hộ ở một khu yên tĩnh.
+    note:
+      vi: "in + Dativ (Wo?): der Stadtteil → in einem ruhigen Stadtteil – đuôi -en."
+  - type: example
+    target: "Gibt es einen Keller? – Ja, und im Erdgeschoss gibt es einen Raum für Fahrräder."
+    target_lang: de
+    translation:
+      vi: Có tầng hầm không ạ? – Có, và ở tầng trệt có một phòng để xe đạp.
+    note:
+      vi: "es gibt + Akkusativ: einen Keller, einen Raum."
+  - type: example
+    target: Ich wohne mit einer netten Kollegin in einer hellen Wohnung.
+    target_lang: de
+    translation:
+      vi: Tôi sống cùng một chị đồng nghiệp dễ mến trong một căn hộ sáng sủa.
+    note:
+      vi: "mit + Dativ và in + Dativ: einer netten Kollegin, einer hellen Wohnung – cả hai đều -en."
+  - type: common_mistake
+    wrong: Wir wohnen in einer kleiner Wohnung.
+    right: Wir wohnen in einer kleinen Wohnung.
+    target_lang: de
+    note:
+      vi: "Sau einer (Dativ) tính từ luôn -en. -er chỉ là đuôi của mạo từ, không phải của tính từ."
+  - type: common_mistake
+    wrong: Wir möchten die Wohnung gern vermieten.
+    right: Wir möchten die Wohnung gern mieten.
+    target_lang: de
+    note:
+      vi: "Bạn là người đi thuê nên dùng mieten. vermieten là việc của chủ nhà (cho thuê)."
+  - type: common_mistake
+    wrong: Die Nebenkosten ist 150 Euro.
+    right: Die Nebenkosten sind 150 Euro.
+    target_lang: de
+    note:
+      vi: "Nebenkosten chỉ có số nhiều nên động từ chia số nhiều: sind."
+  - type: summary
+    points:
+      - vi: "Dativ sau ein-từ: luôn -en – in einer kleinen Wohnung, mit einem netten Vermieter, mit meinen neuen Nachbarn."
+      - vi: "Kaltmiete + Nebenkosten = Warmmiete; Kaution = tiền cọc."
+      - vi: "mieten (thuê) ≠ vermieten (cho thuê); Mieter ≠ Vermieter."
+      - vi: "Erdgeschoss = tầng trệt; im ersten Stock = ngay trên tầng trệt."
+      - vi: "Câu hỏi khi xem nhà: Ist die Wohnung noch frei? Wie hoch sind die Nebenkosten? Wann kann ich einziehen?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u02l4-listen-quadratmeter-stock
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-quadratmeter
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Die Wohnung hat sechzig Quadratmeter und liegt im dritten Stock. Die Kaltmiete ist fünfhundertfünfzig Euro."
+      options:
+        - { id: c4h, text: "Căn hộ 60 m², ở tầng ba (Stock), tiền thuê lạnh 550 euro.", lang: vi }
+        - { id: t8n, text: "Căn hộ 50 m², ở tầng sáu (Stock), tiền thuê lạnh 550 euro.", lang: vi }
+        - { id: r2p, text: "Căn hộ 60 m², ở tầng ba (Stock), tiền thuê ấm 550 euro.", lang: vi }
+        - { id: k7m, text: "Căn hộ 16 m², ở tầng trệt, tiền thuê lạnh 515 euro.", lang: vi }
+    answer:
+      correct_option_id: c4h
+    explanation:
+      vi: "sechzig = 60 (không phải sechzehn = 16), im dritten Stock = tầng ba theo cách đếm của Đức, fünfhundertfünfzig = 550. Kaltmiete là tiền thuê lạnh, chưa gồm phí phụ."
+    display_answer: "Căn hộ 60 m², ở tầng ba (Stock), tiền thuê lạnh 550 euro."
+
+  - key: de:exercise:a2u02l4-listen-nebenkosten-kaution
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u02-nebenkosten
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Die Nebenkosten sind hundertachtzig Euro im Monat. Die Kaution beträgt zwei Kaltmieten."
+      options:
+        - { id: f9w, text: "Phí phụ 180 euro mỗi tháng; tiền cọc bằng hai tháng tiền thuê lạnh.", lang: vi }
+        - { id: d3s, text: "Phí phụ 118 euro mỗi tháng; tiền cọc bằng hai tháng tiền thuê lạnh.", lang: vi }
+        - { id: h6x, text: "Tiền thuê 180 euro mỗi tháng; không cần tiền cọc.", lang: vi }
+        - { id: b1q, text: "Phí phụ 180 euro mỗi năm; tiền cọc 2 euro.", lang: vi }
+    answer:
+      correct_option_id: f9w
+    explanation:
+      vi: "hundertachtzig = 180 (achtzehn mới là 18); im Monat = mỗi tháng; zwei Kaltmieten = hai lần tiền thuê lạnh."
+    display_answer: "Phí phụ 180 euro mỗi tháng; tiền cọc bằng hai tháng tiền thuê lạnh."
+
+  - key: de:exercise:a2u02l4-mcq-einer-kleinen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u02-g-adj-unbestimmt-dativ
+    prompt:
+      stem: "Chọn từ đúng: \"Wir wohnen in ___ Wohnung.\" (Chúng tôi sống trong một căn hộ nhỏ.)"
+      stem_lang: vi
+      options:
+        - { id: m6t, text: einer kleinen, lang: de }
+        - { id: w3j, text: einer kleiner, lang: de }
+        - { id: p9d, text: eine kleine, lang: de }
+        - { id: s5g, text: einem kleinen, lang: de }
+    answer:
+      correct_option_id: m6t
+    explanation:
+      vi: "wohnen in (Wo?) → Dativ. die Wohnung là giống cái: einer; tính từ sau einer luôn -en: einer kleinen Wohnung. eine kleine là Nominativ/Akkusativ; einem dành cho giống đực và giống trung."
+    display_answer: einer kleinen
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u02l4-fill-dativ-ruhigen-netten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-g-adj-unbestimmt-dativ
+    prompt:
+      template: "Die Wohnung liegt in einem {{b1}} (ruhig) Stadtteil, neben einem {{b2}} (klein) Park. Am Freitag haben wir einen Termin mit einer {{b3}} (nett) Vermieterin."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [ruhigen]
+        b2: [kleinen]
+        b3: [netten]
+    known_wrong:
+      - answer: ruhiger
+        feedback_vi: "Sau einem (Dativ) tính từ luôn -en: in einem ruhigen Stadtteil."
+        error_tag: adj_ending
+      - answer: kleinem
+        feedback_vi: "Đuôi -em đã nằm ở mạo từ einem; tính từ chỉ cần -en: neben einem kleinen Park."
+        error_tag: adj_ending
+      - answer: nette
+        feedback_vi: "mit + Dativ: einer netten Vermieterin – tính từ sau einer luôn -en."
+        error_tag: adj_ending
+    explanation:
+      vi: "in, neben (Wo?) và mit đều đi với Dativ. Sau einem/einer tính từ luôn có đuôi -en, dù giống đực hay giống cái."
+    display_answer: "Die Wohnung liegt in einem ruhigen Stadtteil, neben einem kleinen Park. Am Freitag haben wir einen Termin mit einer netten Vermieterin."
+
+  - key: de:exercise:a2u02l4-fill-vermietet-mieten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-mieten
+    prompt:
+      template: "Herr Lang {{b1}} (mieten/vermieten) eine Wohnung im Zentrum. Wir möchten sie gern {{b2}} (mieten/vermieten)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [vermietet]
+        b2: [mieten]
+    known_wrong:
+      - answer: mietet
+        feedback_vi: "Herr Lang là chủ nhà, ông ấy cho thuê: vermietet."
+        error_tag: vocabulary
+      - answer: vermieten
+        feedback_vi: "Chúng tôi là người đi thuê nên dùng mieten; vermieten là cho thuê."
+        error_tag: vocabulary
+    explanation:
+      vi: "vermieten = cho thuê (chủ nhà làm), chia er vermietet. mieten = thuê (người thuê làm); sau möchten động từ ở nguyên thể cuối câu: mieten."
+    display_answer: "Herr Lang vermietet eine Wohnung im Zentrum. Wir möchten sie gern mieten."
+
+  - key: de:exercise:a2u02l4-tr-kleinen-wohnung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-g-adj-unbestimmt-dativ
+    prompt:
+      source_text: Chúng tôi sống trong một căn hộ nhỏ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir wohnen in einer kleinen Wohnung.
+        - In einer kleinen Wohnung wohnen wir.
+        - Wir leben in einer kleinen Wohnung.
+    known_wrong:
+      - answer: Wir wohnen in einer kleiner Wohnung.
+        feedback_vi: "Sau einer (Dativ) tính từ có đuôi -en: in einer kleinen Wohnung."
+        error_tag: adj_ending
+      - answer: Wir wohnen in eine kleine Wohnung.
+        feedback_vi: "wohnen in là vị trí (Wo?) → Dativ: in einer kleinen Wohnung."
+        error_tag: case_dat_akk
+      - answer: Wir wohnen in einer kleine Wohnung.
+        feedback_vi: "Sau einer tính từ không dùng -e mà dùng -en: kleinen."
+        error_tag: adj_ending
+    explanation:
+      vi: "wohnen in + Dativ (Wo?): die Wohnung → in einer kleinen Wohnung. Ở Dativ, tính từ sau ein-từ luôn -en."
+    display_answer: Wir wohnen in einer kleinen Wohnung.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u02l4-listen-anruf-besichtigung
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u02-anzeige
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Guten Tag, hier ist Minh Nguyen. Ich habe Ihre Anzeige gelesen. Ist die Wohnung noch frei? Kann ich sie am Donnerstag um siebzehn Uhr besichtigen?"
+      options:
+        - { id: x2v, text: "Minh đã đọc tin rao và muốn đi xem căn hộ chiều thứ Năm lúc 17 giờ.", lang: vi }
+        - { id: g8k, text: "Minh muốn cho thuê căn hộ của mình từ thứ Năm.", lang: vi }
+        - { id: n4r, text: "Minh đã xem căn hộ hôm thứ Năm và muốn thuê.", lang: vi }
+        - { id: e7c, text: "Minh muốn đăng tin rao vào thứ Ba lúc 7 giờ.", lang: vi }
+    answer:
+      correct_option_id: x2v
+    explanation:
+      vi: "Ich habe Ihre Anzeige gelesen = tôi đã đọc tin rao của ông/bà; besichtigen = đi xem (nhà); am Donnerstag um siebzehn Uhr = thứ Năm lúc 17 giờ. Minh là người hỏi thuê, không phải chủ nhà."
+    display_answer: "Minh đã đọc tin rao và muốn đi xem căn hộ chiều thứ Năm lúc 17 giờ."
+
+  - key: de:exercise:a2u02l4-listen-einziehen-keller
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u02-einziehen
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Die Heizung ist neu, und es gibt einen Keller. Sie können am ersten Juni einziehen. Den Mietvertrag schicke ich Ihnen morgen."
+      options:
+        - { id: u5b, text: "Hệ thống sưởi mới, có tầng hầm; dọn vào từ ngày 1 tháng 6; mai chủ nhà gửi hợp đồng.", lang: vi }
+        - { id: j1y, text: "Hệ thống sưởi hỏng, không có tầng hầm; dọn vào từ ngày 1 tháng 7.", lang: vi }
+        - { id: q6f, text: "Hệ thống sưởi mới; người thuê phải dọn đi ngày 1 tháng 6.", lang: vi }
+        - { id: a3z, text: "Có tầng hầm; người thuê gửi hợp đồng cho chủ nhà ngày mai.", lang: vi }
+    answer:
+      correct_option_id: u5b
+    explanation:
+      vi: "neu = mới; es gibt einen Keller = có tầng hầm; einziehen = dọn vào, am ersten Juni = ngày 1 tháng 6. Den Mietvertrag schicke ich Ihnen: chủ nhà (ich) gửi cho người thuê (Ihnen, Dativ)."
+    display_answer: "Hệ thống sưởi mới, có tầng hầm; dọn vào từ ngày 1 tháng 6; mai chủ nhà gửi hợp đồng."
+
+  - key: de:exercise:a2u02l4-wb-ruhigen-stadtteil
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-g-adj-unbestimmt-dativ
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Căn hộ nằm ở một khu yên tĩnh.\""
+      tokens:
+        - { id: t-ruhigen, text: ruhigen }
+        - { id: t-liegt, text: liegt }
+        - { id: t-stadtteil, text: Stadtteil }
+        - { id: t-die, text: die }
+        - { id: t-ruhiger, text: ruhiger }
+        - { id: t-in, text: in }
+        - { id: t-wohnung, text: Wohnung }
+        - { id: t-einem, text: einem }
+    answer:
+      orders:
+        - [t-die, t-wohnung, t-liegt, t-in, t-einem, t-ruhigen, t-stadtteil]
+        - [t-in, t-einem, t-ruhigen, t-stadtteil, t-liegt, t-die, t-wohnung]
+    explanation:
+      vi: "liegen in + Dativ (Wo?): der Stadtteil → in einem ruhigen Stadtteil – sau einem tính từ luôn -en (ruhiger là đuôi Nominativ). Động từ liegt ở vị trí 2."
+    display_answer: Die Wohnung liegt in einem ruhigen Stadtteil.
+
+  - key: de:exercise:a2u02l4-mcq-warmmiete-fragen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-warmmiete
+    prompt:
+      stem: "Bạn gọi cho chủ nhà và muốn hỏi tổng tiền thuê mỗi tháng, đã gồm cả phí phụ. Bạn hỏi câu nào?"
+      stem_lang: vi
+      options:
+        - { id: v7p, text: Wie hoch ist die Warmmiete?, lang: de }
+        - { id: i2m, text: Wie hoch ist die Kaution?, lang: de }
+        - { id: o9w, text: Wie hoch ist die Kaltmiete?, lang: de }
+        - { id: y4s, text: Wie viele Quadratmeter hat die Wohnung?, lang: de }
+    answer:
+      correct_option_id: v7p
+    explanation:
+      vi: "Warmmiete = tiền thuê đã gồm Nebenkosten (phí phụ). Kaltmiete chưa gồm phí phụ; Kaution là tiền cọc trả một lần; Quadratmeter hỏi diện tích."
+    display_answer: Wie hoch ist die Warmmiete?

@@ -1,0 +1,412 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u02-eine-helle-wohnung
+order_index: 3
+level: a2
+title:
+  vi: Một căn hộ sáng sủa – đuôi tính từ sau ein (Eine helle Wohnung)
+objectives:
+  - vi: Tả căn hộ, căn phòng chi tiết bằng tính từ đứng trước danh từ (eine helle Küche, ein ruhiges Zimmer).
+  - vi: Chọn đúng đuôi tính từ sau ein/kein/mein ở Nominativ và Akkusativ (Wir haben einen großen Balkon).
+  - vi: Phân biệt tính từ đứng sau sein (không đuôi) với tính từ đứng trước danh từ (có đuôi).
+  - vi: Đọc hiểu đoạn mô tả căn hộ ngắn.
+estimated_minutes: 18
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:a2u02-gib-ihm-den-schluessel]
+items:
+  - item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+  - item: de:item:a2u02-dunkel
+  - item: de:item:a2u02-laut
+  - item: de:item:a2u02-leise
+  - item: de:item:a2u02-sauber
+  - item: de:item:a2u02-schmutzig
+  - item: de:item:a2u02-moebliert
+  - item: de:item:a2u02-altbau
+  - item: de:item:a2u02-neubau
+  - item: de:item:a2u02-lage
+  - item: de:item:a2u02-zentral
+  - item: de:item:a2u02-renoviert
+  - item: de:item:a2u02-schmal
+  - item: de:item:a2u02-terrasse
+  - item: de:item:a2u02-aussicht
+  - item: de:item:a2u02-dusche
+  - item: de:item:a2u02-badewanne
+  - item: de:item:a1u02-g-adjektiv-praedikativ
+    role: reuse
+  - item: de:item:a1u02-g-unbestimmter-artikel
+    role: reuse
+  - item: de:item:a1u02-g-negation-nicht-kein
+    role: reuse
+  - item: de:item:a1u05-wohnung
+    role: reuse
+  - item: de:item:a1u05-zimmer
+    role: reuse
+  - item: de:item:a1u05-kueche
+    role: reuse
+  - item: de:item:a1u05-balkon
+    role: reuse
+  - item: de:item:a1u05-hell
+    role: reuse
+  - item: de:item:a1u05-ruhig
+    role: reuse
+  - item: de:item:a1u02-gross
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả được căn hộ mơ ước hay căn hộ đang ở bằng những câu như "Nhà mình có một căn bếp sáng sủa và một ban công rộng", với đúng đuôi tính từ.
+  - type: explain
+    text:
+      vi: "Tiếng Việt đặt tính từ sau danh từ và không bao giờ đổi dạng (\"căn bếp sáng\"). Tiếng Đức đặt tính từ trước danh từ, và khi đó tính từ phải có đuôi: eine helle Küche. Đuôi cho biết giống và cách của danh từ."
+  - type: explain
+    text:
+      vi: "Sau ein/kein/mein… ở Nominativ: giống đực -er (ein großer Balkon), giống cái -e (eine helle Küche), giống trung -es (ein ruhiges Zimmer). Mẹo: ein không cho biết der hay das, nên tính từ \"mượn\" đuôi của der/das: -er, -es."
+  - type: explain
+    text:
+      vi: "Ở Akkusativ chỉ giống đực đổi: einen großen Balkon; giống cái và giống trung giữ nguyên (eine helle Küche, ein ruhiges Zimmer). Số nhiều sau keine/meine/unsere: luôn -en (keine großen Zimmer, meine alten Möbel)."
+  - type: explain
+    text:
+      vi: "Sau sein tính từ vẫn không có đuôi như bạn đã học ở A1: Die Küche ist hell. Tính từ tận cùng -el, -er bỏ e khi thêm đuôi: dunkel → eine dunkle Küche, teuer → eine teure Wohnung."
+  - type: deep_explain
+    text:
+      vi: "Bảng này (sau ein-từ) là một trong ba bảng đuôi tính từ. Bảng sau mạo từ xác định (das große Zimmer) học ở A2U05, bảng không mạo từ (große Zimmer, ruhige Lage – kiểu chữ trong quảng cáo nhà) học ở A2U07; khi đọc quảng cáo bạn sẽ gặp chúng trước, chỉ cần hiểu nghĩa. Một ngoại lệ hay gặp: hoch mất c khi có đuôi (ein hohes Zimmer). Nhiều tính từ cùng đứng trước một danh từ thì đều có cùng đuôi: ein langer, schmaler Flur. Với Altbau và Neubau, chú ý số nhiều bất quy tắc: die Altbauten, die Neubauten."
+  - type: example
+    target: Wir haben eine helle Küche und einen großen Balkon.
+    target_lang: de
+    translation:
+      vi: Nhà chúng tôi có một căn bếp sáng sủa và một ban công rộng.
+    note:
+      vi: "haben + Akkusativ: die Küche → eine helle Küche (giống cái giữ -e); der Balkon → einen großen Balkon (giống đực -en)."
+  - type: example
+    target: Das ist ein ruhiges Zimmer, aber es ist ein bisschen dunkel.
+    target_lang: de
+    translation:
+      vi: Đây là một căn phòng yên tĩnh, nhưng hơi tối.
+    note:
+      vi: "ein ruhiges Zimmer: giống trung, Nominativ -es. Sau ist thì dunkel không có đuôi."
+  - type: example
+    target: Unsere alte Wohnung hatte keine Badewanne, nur eine kleine Dusche.
+    target_lang: de
+    translation:
+      vi: Căn hộ cũ của chúng tôi không có bồn tắm, chỉ có một vòi sen nhỏ.
+    note:
+      vi: "unsere alte Wohnung (Nominativ giống cái -e); eine kleine Dusche (Akkusativ giống cái vẫn -e)."
+  - type: example
+    target: Meine Eltern haben keine großen Zimmer, aber einen schönen Garten.
+    target_lang: de
+    translation:
+      vi: Nhà bố mẹ tôi không có phòng rộng, nhưng có một khu vườn đẹp.
+    note:
+      vi: "Số nhiều sau keine → -en: keine großen Zimmer. der Garten ở Akkusativ → einen schönen Garten."
+  - type: example
+    target: Ich wohne in einem Altbau. Die Lage ist zentral, aber die Straße ist laut.
+    target_lang: de
+    translation:
+      vi: Tôi sống trong một toà nhà cũ. Vị trí ở trung tâm, nhưng con đường thì ồn.
+    note:
+      vi: "zentral và laut đứng sau ist nên không có đuôi."
+  - type: common_mistake
+    wrong: Wir haben ein groß Balkon.
+    right: Wir haben einen großen Balkon.
+    target_lang: de
+    note:
+      vi: "Tính từ đứng trước danh từ phải có đuôi; der Balkon ở Akkusativ cần einen và đuôi -en."
+  - type: common_mistake
+    wrong: Die Küche ist helle.
+    right: Die Küche ist hell.
+    target_lang: de
+    note:
+      vi: "Sau sein tính từ không có đuôi. Đuôi chỉ xuất hiện khi tính từ đứng trước danh từ: eine helle Küche."
+  - type: common_mistake
+    wrong: Das ist eine dunkele Küche.
+    right: Das ist eine dunkle Küche.
+    target_lang: de
+    note:
+      vi: "dunkel bỏ e khi thêm đuôi: dunkle, dunkler, dunkles."
+  - type: summary
+    points:
+      - vi: "Nominativ sau ein/kein/mein: ein großer Balkon, eine helle Küche, ein ruhiges Zimmer."
+      - vi: "Akkusativ: chỉ giống đực đổi – einen großen Balkon."
+      - vi: "Số nhiều sau keine/meine: -en – keine großen Zimmer."
+      - vi: "Sau sein: không đuôi – Die Küche ist hell."
+      - vi: "dunkel → dunkle, teuer → teure."
+      - vi: "Tả nhà: laut/leise, sauber/schmutzig, möbliert, renoviert, Altbau/Neubau, Lage – Die Lage ist zentral."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u02l3-mcq-einen-grossen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    prompt:
+      stem: "Chọn từ đúng: \"Die Wohnung hat ___ Balkon.\" (Căn hộ có một ban công rộng.)"
+      stem_lang: vi
+      options:
+        - { id: z2h, text: einen großen, lang: de }
+        - { id: n5c, text: einen großer, lang: de }
+        - { id: r8w, text: ein großen, lang: de }
+        - { id: f3m, text: einen groß, lang: de }
+    answer:
+      correct_option_id: z2h
+    explanation:
+      vi: "haben cần Akkusativ; der Balkon là giống đực → einen, và tính từ sau einen có đuôi -en: einen großen Balkon. -er là đuôi Nominativ; ein không phải Akkusativ giống đực; tính từ trước danh từ không thể thiếu đuôi."
+    display_answer: einen großen
+
+  - key: de:exercise:a2u02l3-mcq-kueche-ist-hell
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u02-g-adjektiv-praedikativ
+    prompt:
+      stem: "Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: k1s, text: Die Küche ist hell., lang: de }
+        - { id: b6v, text: Die Küche ist helle., lang: de }
+        - { id: e4p, text: Das ist eine hell Küche., lang: de }
+        - { id: x9t, text: Das ist ein helle Küche., lang: de }
+    answer:
+      correct_option_id: k1s
+    explanation:
+      vi: "Sau ist tính từ không có đuôi: Die Küche ist hell. Khi đứng trước danh từ thì cần cả mạo từ đúng giống lẫn đuôi: eine helle Küche (die Küche là giống cái nên không dùng ein)."
+    display_answer: Die Küche ist hell.
+
+  - key: de:exercise:a2u02l3-fill-endungen-nom-akk
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    prompt:
+      template: "Wir haben ein {{b1}} (ruhig) Zimmer, eine {{b2}} (hell) Küche und einen {{b3}} (klein) Balkon."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 7 }
+      hint_levels:
+        - "Nghĩa: Chúng tôi có một phòng yên tĩnh, một bếp sáng sủa và một ban công nhỏ."
+        - "Akkusativ sau haben: das → -es, die → -e, der (einen) → -en."
+    answer:
+      blanks:
+        b1: [ruhiges]
+        b2: [helle]
+        b3: [kleinen]
+    known_wrong:
+      - answer: kleiner
+        feedback_vi: "kleiner là dạng Nominativ giống đực (ein kleiner Balkon). Sau haben là Akkusativ: einen kleinen Balkon."
+        error_tag: adj_ending
+      - answer: ruhige
+        feedback_vi: "das Zimmer là giống trung; sau ein cần đuôi -es: ein ruhiges Zimmer."
+        error_tag: adj_ending
+      - answer: hell
+        feedback_vi: "Tính từ đứng trước danh từ phải có đuôi: eine helle Küche."
+        error_tag: adj_ending
+    explanation:
+      vi: "Sau haben là Akkusativ. Giống trung và giống cái giữ đuôi như Nominativ: ein ruhiges Zimmer, eine helle Küche. Chỉ giống đực đổi: einen kleinen Balkon."
+    display_answer: "Wir haben ein ruhiges Zimmer, eine helle Küche und einen kleinen Balkon."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u02l3-fill-moebliertes-zimmer
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-moebliert
+    prompt:
+      template: "Ich suche ein {{b1}} (möbliert) Zimmer. Mein altes Zimmer hat keinen {{b2}} (groß) Schrank und keine {{b3}} (sauber) Dusche."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [möbliertes]
+        b2: [großen]
+        b3: [saubere]
+    known_wrong:
+      - answer: möblierte
+        feedback_vi: "das Zimmer là giống trung; sau ein cần đuôi -es: ein möbliertes Zimmer."
+        error_tag: adj_ending
+      - answer: großer
+        feedback_vi: "der Schrank ở Akkusativ (sau haben) → keinen großen Schrank."
+        error_tag: adj_ending
+      - answer: sauberen
+        feedback_vi: "die Dusche là giống cái số ít; Akkusativ giống cái giữ -e: keine saubere Dusche."
+        error_tag: adj_ending
+    explanation:
+      vi: "suchen và haben cần Akkusativ. das Zimmer → ein möbliertes Zimmer; der Schrank → keinen großen Schrank; die Dusche → keine saubere Dusche."
+    display_answer: "Ich suche ein möbliertes Zimmer. Mein altes Zimmer hat keinen großen Schrank und keine saubere Dusche."
+
+  - key: de:exercise:a2u02l3-fill-dunkle-teuer
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-dunkel
+    prompt:
+      template: "Das ist eine {{b1}} (dunkel) Küche, und die Wohnung ist auch sehr {{b2}} (teuer)."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [dunkle]
+        b2: [teuer]
+    known_wrong:
+      - answer: dunkele
+        feedback_vi: "dunkel bỏ chữ e trước l khi có đuôi: dunkle."
+        error_tag: adj_ending
+      - answer: teure
+        feedback_vi: "Sau ist tính từ không có đuôi: die Wohnung ist teuer."
+        error_tag: adj_ending
+      - answer: dunkel
+        feedback_vi: "Tính từ đứng trước danh từ Küche nên phải có đuôi: eine dunkle Küche."
+        error_tag: adj_ending
+    explanation:
+      vi: "eine … Küche: Nominativ giống cái → -e, và dunkel bỏ e → dunkle. ist teuer: tính từ sau sein không có đuôi."
+    display_answer: "Das ist eine dunkle Küche, und die Wohnung ist auch sehr teuer."
+
+  - key: de:exercise:a2u02l3-tr-grossen-balkon
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-balkon
+    prompt:
+      source_text: Căn hộ có một ban công lớn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Wohnung hat einen großen Balkon.
+        - Einen großen Balkon hat die Wohnung.
+        - In der Wohnung gibt es einen großen Balkon.
+    known_wrong:
+      - answer: Die Wohnung hat einen großer Balkon.
+        feedback_vi: "Sau einen (Akkusativ) tính từ có đuôi -en: einen großen Balkon."
+        error_tag: adj_ending
+      - answer: Die Wohnung hat ein großen Balkon.
+        feedback_vi: "der Balkon ở Akkusativ cần einen: einen großen Balkon."
+        error_tag: case_dat_akk
+      - answer: Die Wohnung hat einen groß Balkon.
+        feedback_vi: "Tính từ đứng trước danh từ phải có đuôi: einen großen Balkon."
+        error_tag: adj_ending
+      - answer: Die Wohnung hat ein großer Balkon.
+        feedback_vi: "haben cần Akkusativ; ein großer Balkon là Nominativ. Viết: einen großen Balkon."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "haben + Akkusativ; der Balkon là giống đực → einen großen Balkon (cả mạo từ và tính từ đều -en)."
+    display_answer: Die Wohnung hat einen großen Balkon.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u02l3-wb-schoenen-balkon
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-g-adj-unbestimmt-nom-akk
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Bây giờ chúng tôi có một ban công đẹp.\""
+      tokens:
+        - { id: t-schoenen, text: schönen }
+        - { id: t-haben, text: haben }
+        - { id: t-balkon, text: Balkon }
+        - { id: t-schoener, text: schöner }
+        - { id: t-jetzt, text: jetzt }
+        - { id: t-einen, text: einen }
+        - { id: t-wir, text: wir }
+    answer:
+      orders:
+        - [t-wir, t-haben, t-jetzt, t-einen, t-schoenen, t-balkon]
+        - [t-jetzt, t-haben, t-wir, t-einen, t-schoenen, t-balkon]
+        - [t-einen, t-schoenen, t-balkon, t-haben, t-wir, t-jetzt]
+    explanation:
+      vi: "haben + Akkusativ: der Balkon → einen schönen Balkon (schöner là đuôi Nominativ). haben ở vị trí 2; nếu mở đầu bằng jetzt thì wir đứng sau haben."
+    display_answer: Wir haben jetzt einen schönen Balkon.
+
+  - key: de:exercise:a2u02l3-mcq-lesen-wohnung
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u02-moebliert
+    prompt:
+      stem: "Đọc mô tả: \"Die Wohnung ist in einem Neubau. Sie hat ein helles Wohnzimmer, eine kleine Küche und ein modernes Bad mit Dusche. Sie ist nicht möbliert.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: g5d, text: "Phòng khách sáng sủa, nhưng căn hộ không có sẵn đồ đạc.", lang: vi }
+        - { id: m2k, text: "Căn hộ nằm trong một toà nhà cũ và có sẵn đồ đạc.", lang: vi }
+        - { id: s7r, text: "Căn bếp rộng, phòng tắm có bồn tắm.", lang: vi }
+        - { id: w1b, text: "Phòng khách tối nhưng phòng tắm hiện đại.", lang: vi }
+    answer:
+      correct_option_id: g5d
+    explanation:
+      vi: "ein helles Wohnzimmer = phòng khách sáng sủa; nicht möbliert = không có sẵn đồ đạc. Neubau là nhà mới xây; Küche là kleine (nhỏ); Bad có Dusche (vòi sen), không phải bồn tắm."
+    display_answer: "Phòng khách sáng sủa, nhưng căn hộ không có sẵn đồ đạc."
+
+  - key: de:exercise:a2u02l3-tr-altbau-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u02-altbau
+    prompt:
+      source_text: Wir wohnen in einem Altbau. Die Lage ist zentral, aber die Straße ist laut.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi sống trong một toà nhà cũ. Vị trí ở trung tâm, nhưng con đường thì ồn.
+        - Chúng tôi sống trong một toà nhà cũ. Vị trí ở trung tâm nhưng đường phố ồn ào.
+        - Chúng tôi ở trong một toà nhà cũ. Vị trí ở trung tâm, nhưng đường ồn.
+        - Chúng tôi sống trong một ngôi nhà cũ. Vị trí ở trung tâm, nhưng con đường ồn ào.
+        - Chúng tôi sống trong một toà nhà cũ. Vị trí gần trung tâm, nhưng đường phố ồn.
+        - Chúng mình sống trong một toà nhà cũ. Vị trí ở trung tâm, nhưng con đường thì ồn ào.
+        - Chúng tôi sống trong một toà nhà cũ. Nhà ở trung tâm, nhưng đường phố ồn ào.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Chúng tôi sống trong một toà nhà mới. Vị trí ở trung tâm, nhưng con đường thì ồn.
+        feedback_vi: "Altbau là nhà xây từ lâu (nhà cũ); nhà mới xây là Neubau."
+        error_tag: vocabulary
+      - answer: Chúng tôi sống trong một toà nhà cũ. Vị trí ở trung tâm và con đường yên tĩnh.
+        feedback_vi: "laut là ồn; yên tĩnh là ruhig. aber = nhưng."
+        error_tag: vocabulary
+    explanation:
+      vi: "in einem Altbau = trong một toà nhà cũ; die Lage ist zentral = vị trí ở trung tâm; aber die Straße ist laut = nhưng con đường thì ồn."
+    display_answer: Chúng tôi sống trong một toà nhà cũ. Vị trí ở trung tâm, nhưng con đường thì ồn.
+
+  - key: de:exercise:a2u02l3-tr-keinen-balkon-aussicht
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-aussicht
+    prompt:
+      source_text: Phòng của tôi không có ban công, nhưng có tầm nhìn đẹp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mein Zimmer hat keinen Balkon, aber eine schöne Aussicht.
+        - Mein Zimmer hat keinen Balkon, aber es hat eine schöne Aussicht.
+        - Mein Zimmer hat zwar keinen Balkon, aber eine schöne Aussicht.
+        - Mein Zimmer hat zwar keinen Balkon, aber es hat eine schöne Aussicht.
+    known_wrong:
+      - answer: Mein Zimmer hat keinen Balkon, aber eine schönen Aussicht.
+        feedback_vi: "die Aussicht là giống cái; Akkusativ giống cái giữ -e: eine schöne Aussicht."
+        error_tag: adj_ending
+      - answer: Mein Zimmer hat kein Balkon, aber eine schöne Aussicht.
+        feedback_vi: "der Balkon ở Akkusativ → keinen Balkon."
+        error_tag: case_dat_akk
+      - answer: Mein Zimmer hat keinen Balkon, aber eine schön Aussicht.
+        feedback_vi: "Tính từ trước danh từ phải có đuôi: eine schöne Aussicht."
+        error_tag: adj_ending
+    explanation:
+      vi: "haben + Akkusativ: der Balkon → keinen Balkon; die Aussicht → eine schöne Aussicht (giống cái, đuôi -e ở cả Nominativ lẫn Akkusativ)."
+    display_answer: Mein Zimmer hat keinen Balkon, aber eine schöne Aussicht.

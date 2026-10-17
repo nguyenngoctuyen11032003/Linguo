@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u02-gib-ihm-den-schluessel
+order_index: 2
+level: a2
+title:
+  vi: Đưa anh ấy chìa khoá – hai tân ngữ (Gib ihm den Schlüssel!)
+objectives:
+  - vi: Nhờ, đưa, tặng, cho mượn ai cái gì khi nói chuyện với hàng xóm, người quản lý nhà, chủ nhà.
+  - vi: Dùng động từ có hai tân ngữ – người ở Dativ, vật ở Akkusativ (Ich gebe der Nachbarin den Schlüssel).
+  - vi: Sắp xếp đúng thứ tự hai tân ngữ khi là danh từ hoặc đại từ (Ich gebe ihn ihr).
+estimated_minutes: 18
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u02-wohin-damit]
+items:
+  - item: de:item:a2u02-g-dat-akk-verben
+  - item: de:item:a2u02-g-objekt-stellung
+  - item: de:item:a2u02-schluessel
+  - item: de:item:a2u02-nachbar
+  - item: de:item:a2u02-nachbarin
+  - item: de:item:a2u02-schenken
+  - item: de:item:a2u02-zeigen
+  - item: de:item:a2u02-bringen
+  - item: de:item:a2u02-leihen
+  - item: de:item:a2u02-erklaeren
+  - item: de:item:a2u02-hausmeister
+  - item: de:item:a2u02-klingel
+  - item: de:item:a2u02-klingeln
+  - item: de:item:a2u02-blume
+  - item: de:item:a2u02-giessen
+  - item: de:item:a2u02-zurueckgeben
+  - item: de:item:a2u02-bohrmaschine
+  - item: de:item:a2u02-werkzeug
+  - item: de:item:a1u03-g-akkusativ
+    role: reuse
+  - item: de:item:a1u05-g-personalpronomen-akk
+    role: reuse
+  - item: de:item:a1u05-g-pronomen-genus
+    role: reuse
+  - item: de:item:a1u07-g-personalpronomen-dativ
+    role: reuse
+  - item: de:item:a1u05-geben
+    role: reuse
+  - item: de:item:a2u02-umzug
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được những câu rất hay dùng trong khu nhà ở Đức – "Bạn đưa chìa khoá cho ông quản lý nhé!", "Cho mình mượn máy khoan được không?", "Mai mình trả lại cho bạn" – với đúng cách và đúng thứ tự.
+  - type: explain
+    text:
+      vi: "Các động từ geben, schenken, zeigen, bringen, leihen, erklären thường có hai tân ngữ: người nhận ở Dativ (Wem? – cho ai) và đồ vật ở Akkusativ (Was? – cái gì). Tiếng Việt dùng chữ \"cho\": \"đưa chìa khoá cho anh ấy\"; tiếng Đức không thêm giới từ mà đặt người nhận ở Dativ: Ich gebe ihm den Schlüssel."
+  - type: explain
+    text:
+      vi: "Nhắc lại dạng Dativ: dem/einem (der, das), der/einer (die), den + -n (số nhiều); đại từ mir, dir, ihm, ihr, uns, euch, ihnen/Ihnen. Dạng Akkusativ: den/einen (der), die (die), das (das); đại từ mich, dich, ihn, sie, es, uns, euch, sie/Sie."
+  - type: explain
+    text:
+      vi: "Thứ tự trong câu: hai danh từ thì người (Dativ) thường đứng trước vật (Akkusativ): Ich gebe der Nachbarin den Schlüssel. Đại từ luôn đứng trước danh từ: Ich gebe ihr den Schlüssel / Ich gebe ihn der Nachbarin. Hai đại từ thì Akkusativ trước: Ich gebe ihn ihr."
+  - type: explain
+    text:
+      vi: "der Nachbar là danh từ đặc biệt: ở số ít, Akkusativ và Dativ thêm -n (den Nachbarn, dem Nachbarn). Bạn chỉ cần học thuộc hai dạng này; quy tắc đầy đủ sẽ học ở B1. Với người hàng xóm nữ thì bình thường: der Nachbarin (Dativ)."
+  - type: deep_explain
+    text:
+      vi: "Vì sao đại từ đứng trước? Tiếng Đức đặt thông tin đã biết (đại từ) lên trước và thông tin mới, quan trọng (danh từ) về sau. Vì vậy khi cả hai đều là danh từ xác định, người Đức đôi khi cũng nói vật trước người để nhấn mạnh người nhận (Ich gebe den Schlüssel dem Hausmeister, nicht dem Nachbarn) – câu này không sai, nhưng bạn nên dùng thứ tự Dativ – Akkusativ làm mặc định. Hai đại từ thì gần như luôn theo thứ tự Akkusativ – Dativ (es ihm, ihn ihr). Trong câu mệnh lệnh với du, geben đổi e → i như ở thì hiện tại: du gibst → Gib!; dạng \"Gebe!\" không dùng trong tiếng Đức chuẩn."
+  - type: example
+    target: Gib ihm bitte den Schlüssel!
+    target_lang: de
+    translation:
+      vi: Bạn đưa chìa khoá cho anh ấy nhé!
+    note:
+      vi: "Nói với bạn (du): Gib! ihm là Dativ (cho anh ấy), den Schlüssel là Akkusativ (cái gì)."
+  - type: example
+    target: Können Sie mir bitte die Waschmaschine im Keller zeigen?
+    target_lang: de
+    translation:
+      vi: Ông có thể chỉ cho tôi máy giặt dưới tầng hầm được không ạ?
+    note:
+      vi: "Nói với người quản lý nhà nên dùng Sie. mir (Dativ) – người được xem; die Waschmaschine (Akkusativ) – vật."
+  - type: example
+    target: "Kannst du mir deine Bohrmaschine leihen? – Klar, ich bringe sie dir gleich."
+    target_lang: de
+    translation:
+      vi: Bạn cho mình mượn máy khoan được không? – Được chứ, mình mang sang cho bạn ngay.
+    note:
+      vi: "Hai người hàng xóm thân nói du. sie (= die Bohrmaschine, Akk) đứng trước dir (Dat) vì cả hai đều là đại từ."
+  - type: example
+    target: "Der Schlüssel? Den gebe ich dem Hausmeister. – Gut, dann gib ihn ihm heute!"
+    target_lang: de
+    translation:
+      vi: Chìa khoá à? Cái đó mình đưa cho ông quản lý nhà. – Ừ, vậy hôm nay đưa cho ông ấy luôn nhé!
+    note:
+      vi: "der Schlüssel → Akk ihn (hoặc den khi đứng đầu câu để nhấn mạnh). ihn ihm: hai đại từ, Akkusativ trước."
+  - type: example
+    target: Wir schenken unserer Nachbarin Blumen. Sie gießt im Urlaub unsere Pflanzen.
+    target_lang: de
+    translation:
+      vi: Chúng tôi tặng hoa cho cô hàng xóm. Cô ấy tưới cây giúp chúng tôi khi chúng tôi đi nghỉ.
+    note:
+      vi: "unserer Nachbarin là Dativ giống cái (unser + -er). Ở Đức, nhờ hàng xóm tưới cây hay nhận bưu phẩm rồi cảm ơn bằng một món quà nhỏ là chuyện thường."
+  - type: common_mistake
+    wrong: Ich gebe die Nachbarin den Schlüssel.
+    right: Ich gebe der Nachbarin den Schlüssel.
+    target_lang: de
+    note:
+      vi: "Người nhận phải ở Dativ: die Nachbarin → der Nachbarin. Câu sai có hai Akkusativ."
+  - type: common_mistake
+    wrong: Ich gebe ihm ihn.
+    right: Ich gebe ihn ihm.
+    target_lang: de
+    note:
+      vi: "Hai đại từ thì Akkusativ đứng trước Dativ: ihn ihm, es ihr, sie ihm."
+  - type: common_mistake
+    wrong: Ich gebe den Schlüssel zu ihm.
+    right: Ich gebe ihm den Schlüssel.
+    target_lang: de
+    note:
+      vi: "Dịch từng chữ \"đưa … cho anh ấy\" sẽ thừa giới từ. Với geben, người nhận chỉ cần ở Dativ: ihm."
+  - type: summary
+    points:
+      - vi: "geben, schenken, zeigen, bringen, leihen, erklären + Dativ (người) + Akkusativ (vật)."
+      - vi: "Hai danh từ: Dativ trước – Ich gebe der Nachbarin den Schlüssel."
+      - vi: "Đại từ trước danh từ: Ich gebe ihr den Schlüssel. / Ich gebe ihn der Nachbarin."
+      - vi: "Hai đại từ: Akkusativ trước – Ich gebe ihn ihr."
+      - vi: "der Nachbar → den Nachbarn, dem Nachbarn (học thuộc)."
+      - vi: "Bất quy tắc: bringen – brachte – hat gebracht; leihen – lieh – hat geliehen; mệnh lệnh: Gib!"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u02l2-mcq-der-nachbarin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u02-g-dat-akk-verben
+    prompt:
+      stem: "Chọn câu đúng cho: \"Tôi đưa chìa khoá cho cô hàng xóm.\""
+      stem_lang: vi
+      options:
+        - { id: v3k, text: Ich gebe der Nachbarin den Schlüssel., lang: de }
+        - { id: c8m, text: Ich gebe die Nachbarin den Schlüssel., lang: de }
+        - { id: p2x, text: Ich gebe der Nachbarin der Schlüssel., lang: de }
+        - { id: t6w, text: Ich gebe zu der Nachbarin den Schlüssel., lang: de }
+    answer:
+      correct_option_id: v3k
+    explanation:
+      vi: "Người nhận ở Dativ (die Nachbarin → der Nachbarin), vật ở Akkusativ (der Schlüssel → den Schlüssel). die Nachbarin là Akkusativ; der Schlüssel là Nominativ; geben không cần giới từ zu trước người nhận."
+    display_answer: Ich gebe der Nachbarin den Schlüssel.
+
+  - key: de:exercise:a2u02l2-mcq-ihn-ihm
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-g-objekt-stellung
+    prompt:
+      stem: "Bạn nói về chìa khoá (der Schlüssel) và ông Krüger: \"Ich gebe ___ morgen.\" (Mai tôi đưa nó cho ông ấy.)"
+      stem_lang: vi
+      options:
+        - { id: j4n, text: ihn ihm, lang: de }
+        - { id: e9b, text: ihm ihn, lang: de }
+        - { id: u1z, text: er ihm, lang: de }
+        - { id: g7q, text: ihn ihn, lang: de }
+    answer:
+      correct_option_id: j4n
+    explanation:
+      vi: "der Schlüssel là tân ngữ Akkusativ → ihn; ông Krüger là người nhận, Dativ → ihm. Hai đại từ thì Akkusativ đứng trước: ihn ihm. er là Nominativ (chủ ngữ)."
+    display_answer: ihn ihm
+
+  - key: de:exercise:a2u02l2-fill-mir-dir
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-leihen
+    prompt:
+      template: "Kannst du {{b1}} (ich) deine Leiter leihen? – Ja, ich bringe sie {{b2}} (du) morgen."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa: Bạn cho mình mượn cái thang được không? – Được, mai mình mang sang cho bạn."
+        - "Người nhận ở Dativ: ich → m…, du → d…"
+    answer:
+      blanks:
+        b1: [mir]
+        b2: [dir]
+    known_wrong:
+      - answer: mich
+        feedback_vi: "mich là Akkusativ. Người được cho mượn là người nhận → Dativ: mir."
+        error_tag: case_dat_akk
+      - answer: dich
+        feedback_vi: "dich là Akkusativ. Mang cho ai → Dativ: dir."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "leihen và bringen: người nhận ở Dativ, đồ vật ở Akkusativ. ich → mir, du → dir. sie (= die Leiter, Akkusativ) là đại từ nên đứng trước dir."
+    display_answer: "Kannst du mir deine Leiter leihen? – Ja, ich bringe sie dir morgen."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u02l2-fill-hausmeister-klingel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u02-zeigen
+    prompt:
+      template: "Wir zeigen {{b1}} Hausmeister {{b2}} Klingel. Sie ist kaputt. Dann erklärt er {{b3}} Nachbarin das Problem."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [dem]
+        b2: [die]
+        b3: [der]
+    known_wrong:
+      - answer: den
+        feedback_vi: "den là Akkusativ giống đực. der Hausmeister là người được xem (người nhận) → Dativ: dem Hausmeister."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "zeigen và erklären: người ở Dativ, vật ở Akkusativ. der Hausmeister → dem; die Klingel (vật, Akkusativ giống cái) → die; die Nachbarin (người, Dativ giống cái) → der."
+    display_answer: "Wir zeigen dem Hausmeister die Klingel. Sie ist kaputt. Dann erklärt er der Nachbarin das Problem."
+
+  - key: de:exercise:a2u02l2-fill-geliehen-zurueck
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-zurueckgeben
+    prompt:
+      template: "Gestern hat mir die Nachbarin ihre Leiter {{b1}} (leihen). Heute {{b2}} ich sie ihr {{b3}} (zurückgeben)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [geliehen]
+        b2: [gebe]
+        b3: [zurück]
+    known_wrong:
+      - answer: geleiht
+        feedback_vi: "leihen là động từ bất quy tắc: leihen – lieh – hat geliehen."
+        error_tag: verb_form
+      - answer: gelieht
+        feedback_vi: "Partizip của leihen là geliehen (đuôi -en, ei → ie)."
+        error_tag: verb_form
+      - answer: zurückgebe
+        feedback_vi: "zurückgeben là động từ tách: động từ chia ở vị trí 2 (gebe), zurück đứng cuối câu."
+        error_tag: separable_prefix
+    explanation:
+      vi: "Perfekt của leihen: hat … geliehen. zurückgeben tách đôi trong câu hiện tại: Heute gebe ich sie ihr zurück – gebe ở vị trí 2, zurück ở cuối. sie ihr: hai đại từ, Akkusativ trước."
+    display_answer: "Gestern hat mir die Nachbarin ihre Leiter geliehen. Heute gebe ich sie ihr zurück."
+
+  - key: de:exercise:a2u02l2-tr-gib-dem-hausmeister
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-hausmeister
+    prompt:
+      source_text: (Nói với bạn) Bạn đưa chìa khoá cho ông quản lý nhà nhé!
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Gib dem Hausmeister bitte den Schlüssel!
+        - Gib bitte dem Hausmeister den Schlüssel!
+        - Bitte gib dem Hausmeister den Schlüssel!
+        - Gib dem Hausmeister den Schlüssel!
+        - Gib den Schlüssel bitte dem Hausmeister!
+        - Gib den Schlüssel dem Hausmeister!
+    known_wrong:
+      - answer: Gib den Hausmeister den Schlüssel!
+        feedback_vi: "Người nhận ở Dativ: der Hausmeister → dem Hausmeister."
+        error_tag: case_dat_akk
+      - answer: Gebe dem Hausmeister den Schlüssel!
+        feedback_vi: "Mệnh lệnh với du của geben giữ i như du gibst: Gib!"
+        error_tag: verb_form
+      - answer: Gib den Schlüssel zu dem Hausmeister!
+        feedback_vi: "geben không cần giới từ zu; người nhận chỉ cần ở Dativ: dem Hausmeister."
+        error_tag: preposition
+    explanation:
+      vi: "Mệnh lệnh với du: Gib! (du gibst → bỏ -st và du). Người nhận ở Dativ (dem Hausmeister), vật ở Akkusativ (den Schlüssel); thứ tự thường gặp là Dativ trước."
+    display_answer: Gib dem Hausmeister bitte den Schlüssel!
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u02l2-wb-ihn-ihr-morgen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-g-objekt-stellung
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mai mình đưa nó (cái chìa khoá) cho cô ấy.\""
+      tokens:
+        - { id: t-ihr, text: ihr }
+        - { id: t-morgen, text: morgen }
+        - { id: t-ihm, text: ihm }
+        - { id: t-gebe, text: gebe }
+        - { id: t-ihn, text: ihn }
+        - { id: t-ich, text: ich }
+    answer:
+      orders:
+        - [t-morgen, t-gebe, t-ich, t-ihn, t-ihr]
+        - [t-ich, t-gebe, t-ihn, t-ihr, t-morgen]
+    explanation:
+      vi: "der Schlüssel → ihn (Akkusativ), cô ấy → ihr (Dativ); ihm là \"anh ấy\", không đúng người. Hai đại từ: Akkusativ trước Dativ (ihn ihr). Động từ gebe ở vị trí 2; mở đầu bằng morgen thì ich đứng sau gebe."
+    display_answer: Morgen gebe ich ihn ihr.
+
+  - key: de:exercise:a2u02l2-tr-umzug-helfen-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u02-bringen
+    prompt:
+      source_text: Hilfst du mir am Samstag beim Umzug? Ich bringe dir dann einen Kuchen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thứ Bảy bạn giúp mình chuyển nhà nhé? Mình sẽ mang cho bạn một cái bánh.
+        - Thứ Bảy bạn giúp mình chuyển nhà được không? Mình sẽ mang bánh cho bạn.
+        - Thứ Bảy bạn giúp tôi chuyển nhà nhé? Tôi sẽ mang cho bạn một cái bánh.
+        - Thứ Bảy bạn giúp tôi chuyển nhà được không? Tôi sẽ mang cho bạn một cái bánh.
+        - Bạn giúp mình chuyển nhà vào thứ Bảy nhé? Rồi mình mang cho bạn một cái bánh.
+        - Thứ Bảy bạn có giúp mình chuyển nhà không? Mình sẽ mang cho bạn một cái bánh.
+        - Thứ Bảy bạn giúp mình chuyển nhà nhé? Rồi mình mang bánh cho bạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thứ Bảy bạn giúp mình chuyển nhà nhé? Bạn mang cho mình một cái bánh.
+        feedback_vi: "Ich bringe dir = mình mang cho bạn (ich là người mang, dir là người nhận), không phải ngược lại."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "beim Umzug helfen = giúp chuyển nhà; ich bringe dir einen Kuchen = mình mang cho bạn một cái bánh – dir (Dativ) là người nhận, einen Kuchen (Akkusativ) là vật."
+    display_answer: Thứ Bảy bạn giúp mình chuyển nhà nhé? Mình sẽ mang cho bạn một cái bánh.
+
+  - key: de:exercise:a2u02l2-mcq-bohrmaschine-ihnen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-bohrmaschine
+    prompt:
+      stem: "Ông hàng xóm hỏi bạn: \"Können Sie mir Ihre Bohrmaschine leihen?\" Bạn đồng ý và nói sẽ mang sang ngay. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a6f, text: "Ja, gern. Ich bringe sie Ihnen gleich.", lang: de }
+        - { id: o2h, text: "Ja, gern. Ich bringe Ihnen sie gleich.", lang: de }
+        - { id: y8c, text: "Ja, gern. Ich bringe sie Sie gleich.", lang: de }
+        - { id: l5r, text: "Ja, gern. Ich bringe ihr Ihnen gleich.", lang: de }
+    answer:
+      correct_option_id: a6f
+    explanation:
+      vi: "die Bohrmaschine → sie (Akkusativ); ông hàng xóm dùng Sie nên người nhận là Ihnen (Dativ lịch sự). Hai đại từ: Akkusativ trước – sie Ihnen. Sie là Akkusativ/Nominativ, không phải Dativ; ihr là Dativ \"cô ấy\", không phải vật được mang."
+    display_answer: "Ja, gern. Ich bringe sie Ihnen gleich."
+
+  - key: de:exercise:a2u02l2-tr-blumen-nachbarin
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u02-schenken
+    prompt:
+      source_text: Chúng tôi tặng hoa cho cô hàng xóm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir schenken der Nachbarin Blumen.
+        - Der Nachbarin schenken wir Blumen.
+        - Wir schenken unserer Nachbarin Blumen.
+        - Unserer Nachbarin schenken wir Blumen.
+        - Blumen schenken wir der Nachbarin.
+        - Blumen schenken wir unserer Nachbarin.
+    known_wrong:
+      - answer: Wir schenken die Nachbarin Blumen.
+        feedback_vi: "Người được tặng ở Dativ: die Nachbarin → der Nachbarin."
+        error_tag: case_dat_akk
+      - answer: Wir schenken zu der Nachbarin Blumen.
+        feedback_vi: "schenken không cần giới từ; người nhận chỉ cần ở Dativ: der Nachbarin."
+        error_tag: preposition
+      - answer: Wir schenken der Nachbarin Blume.
+        feedback_vi: "Blume là danh từ đếm được; số ít cần mạo từ (eine Blume), còn \"hoa\" nói chung dùng số nhiều Blumen."
+        error_tag: plural_form
+    explanation:
+      vi: "schenken + Dativ (người nhận: der Nachbarin hoặc unserer Nachbarin) + Akkusativ (vật: Blumen). Tiếng Việt có \"cho\", tiếng Đức không dùng giới từ."
+    display_answer: Wir schenken der Nachbarin Blumen.
