@@ -84,6 +84,34 @@ describe('OutboxSyncProvider (lesson runs)', () => {
     expect(mocks.rpc.mock.calls.map((c) => c[0]).slice(-3)).toEqual(['start_lesson', 'submit_exercise', 'complete_lesson']);
   });
 
+  it('sends a start and a completion queued while online right away, without waiting for the next tick', async () => {
+    mocks.rpc.mockImplementation((fn: string) =>
+      Promise.resolve(fn === 'start_lesson' ? { data: run(), error: null } : { data: COMPLETE, error: null }),
+    );
+    mount();
+    await act(async () => {
+      enqueueLessonStart(USER_ID, { runId: RUN_ID, lessonId: LESSON_ID, pathId: PATH_ID, clientAt: AT });
+      enqueueLessonCompletion(USER_ID, RUN_ID, AT);
+    });
+    await waitFor(() => expect(screen.getByTestId('completions')).toHaveTextContent(RUN_ID));
+    expect(mocks.rpc.mock.calls.map((c) => c[0])).toEqual(['start_lesson', 'complete_lesson']);
+  });
+
+  it('does not touch the network while the browser is offline', async () => {
+    Object.defineProperty(navigator, 'onLine', { value: false, configurable: true });
+    try {
+      enqueueLessonStart(USER_ID, { runId: RUN_ID, lessonId: LESSON_ID, pathId: PATH_ID, clientAt: AT });
+      mount();
+      await act(async () => {
+        enqueueLessonCompletion(USER_ID, RUN_ID, AT);
+      });
+      expect(mocks.rpc).not.toHaveBeenCalled();
+      expect(screen.getByTestId('all')).toHaveTextContent('2');
+    } finally {
+      Object.defineProperty(navigator, 'onLine', { value: true, configurable: true });
+    }
+  });
+
   it('records a persisted report and toasts once when the server refuses a queued run', async () => {
     mocks.rpc.mockImplementation((fn: string) =>
       Promise.resolve(fn === 'start_lesson' ? { data: null, error: { message: 'lesson_not_in_path', code: 'P0001' } } : { data: result(), error: null }),

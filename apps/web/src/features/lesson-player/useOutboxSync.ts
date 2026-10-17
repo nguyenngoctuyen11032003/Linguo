@@ -150,8 +150,8 @@ function useOutboxEngine({ client, userId, lockName, storageKeys, read, drain, d
   const snap = state.userId === userId ? state.snap : read();
   const [syncing, setSyncing] = useState(false);
   const inFlight = useRef<Promise<void> | null>(null);
-  /** A forced replay (online, tab visible, Sync now) asked for while a pass was running: repeat once it ends. */
-  const rerunForced = useRef(false);
+  /** A replay asked for while a pass was running (forced: online, tab visible, Sync now): repeat once it ends. */
+  const rerun = useRef<'none' | 'soft' | 'forced'>('none');
   const wakeTimer = useRef<number | undefined>(undefined);
   const runRef = useRef<(force: boolean) => Promise<void>>(() => Promise.resolve());
   // The client is read through a ref so a caller that hands out a new object each render cannot re-trigger the replay.
@@ -159,7 +159,6 @@ function useOutboxEngine({ client, userId, lockName, storageKeys, read, drain, d
   useLayoutEffect(() => {
     clientRef.current = client;
   });
-  const hasClient = client !== null;
 
   const refresh = useCallback(() => {
     const next = read();
@@ -191,7 +190,8 @@ function useOutboxEngine({ client, userId, lockName, storageKeys, read, drain, d
       // A browser that says it is offline is right: nothing would get through, so do not burn a request (or a timeout).
       if (navigator.onLine === false) return Promise.resolve();
       if (inFlight.current) {
-        if (force) rerunForced.current = true;
+        if (force) rerun.current = 'forced';
+        else if (rerun.current === 'none') rerun.current = 'soft';
         return inFlight.current;
       }
       const task = async () => {
@@ -211,14 +211,13 @@ function useOutboxEngine({ client, userId, lockName, storageKeys, read, drain, d
       const promise = (locks ? locks.request(lockName, task) : task()).catch(() => undefined);
       inFlight.current = promise.finally(() => {
         inFlight.current = null;
-        if (rerunForced.current) {
-          rerunForced.current = false;
-          void runRef.current(true);
-        }
+        const again = rerun.current;
+        rerun.current = 'none';
+        if (again !== 'none') void runRef.current(again === 'forced');
       });
       return inFlight.current;
     },
-    [hasClient, userId, lockName, drain],
+    [userId, lockName, drain],
   );
 
   useLayoutEffect(() => {

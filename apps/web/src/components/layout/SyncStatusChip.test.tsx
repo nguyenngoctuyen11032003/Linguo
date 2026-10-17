@@ -3,7 +3,8 @@ import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { OutboxSyncContext, type OutboxSyncContextValue, type SyncStatus } from '@/features/lesson-player/OutboxSyncProvider';
 import type { SyncReportEntry } from '@/features/lesson-player/sync-report';
-import { SyncStatusChip, syncStatusText } from './SyncStatusChip';
+import { SyncStatusChip } from './SyncStatusChip';
+import { syncStatusText } from './sync-status';
 
 const IDLE: SyncStatus = { pending: 0, failing: false, syncing: false, expiring: 0 };
 

@@ -1,22 +1,14 @@
 import { useContext } from 'react';
 import { CircleAlert, CloudOff, RefreshCw, TriangleAlert } from 'lucide-react';
-import { OutboxSyncContext, type SyncStatus } from '@/features/lesson-player/OutboxSyncProvider';
+import { OutboxSyncContext } from '@/features/lesson-player/OutboxSyncProvider';
 import { syncReportMessage, type SyncReportEntry } from '@/features/lesson-player/sync-report';
 import { useOnline } from '@/lib/useOnline';
+import { syncStatusText } from './sync-status';
 
 const STRIP =
   'flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-b border-border px-3 py-1.5 text-sm leading-snug';
 const ACTION =
   '-my-1 inline-flex min-h-9 items-center gap-1.5 rounded-full px-3 font-semibold text-primary underline-offset-4 hover:underline disabled:opacity-60';
-
-/** The line of the strip for what is waiting to sync; null when nothing is. Exported for tests. */
-export function syncStatusText(status: SyncStatus, online: boolean): string | null {
-  if (status.pending <= 0) return null;
-  if (status.syncing) return `Đang đồng bộ ${status.pending} mục…`;
-  if (status.failing && online) return `Chưa gửi được ${status.pending} mục, sẽ tự thử lại`;
-  if (!online) return `${status.pending} mục sẽ được gửi khi có mạng`;
-  return `Đang chờ đồng bộ ${status.pending} mục`;
-}
 
 function Report({ report, onDismiss }: { report: SyncReportEntry; onDismiss: () => void }) {
   return (

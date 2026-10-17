@@ -133,7 +133,8 @@ export function OutboxSyncProvider({ children }: { children: ReactNode }) {
     userId,
     list: userId ? readSyncReports(userId) : [],
   }));
-  const currentReports = reports.userId === userId ? reports.list : userId ? readSyncReports(userId) : [];
+  const reportsFor = reports.userId === userId ? reports.list : null;
+  const currentReports = useMemo(() => reportsFor ?? (userId ? readSyncReports(userId) : NO_REPORTS), [reportsFor, userId]);
   useEffect(() => {
     if (!userId) return;
     const refresh = () => setReports({ userId, list: readSyncReports(userId) });
@@ -274,6 +275,7 @@ export function OutboxSyncProvider({ children }: { children: ReactNode }) {
 }
 
 const NO_COMPLETIONS: Record<string, CompleteResult> = {};
+const NO_REPORTS: SyncReportEntry[] = [];
 
 export function useOutboxSyncContext(): OutboxSyncContextValue {
   const ctx = useContext(OutboxSyncContext);
