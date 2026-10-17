@@ -1,0 +1,352 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u3-wortakzent
+order_index: 3
+level: pre_a1
+title:
+  vi: Trọng âm và từ ghép (Wortakzent und Komposita)
+objectives:
+  - vi: Nhấn đúng âm tiết trong từ gốc Đức (âm đầu của gốc từ, không nhấn ver-, be-, ge-…).
+  - vi: Nhấn đúng âm tiết cuối ở từ quốc tế như Restaurant, Café, Universität, Information.
+  - vi: Nhấn phần đầu của từ ghép và đoán đúng giống của từ ghép theo phần cuối.
+estimated_minutes: 12
+skills: [pronunciation, listening, vocabulary]
+prerequisites: [de:lesson:p0u3-im-kurs-sprechen]
+items:
+  - item: de:item:p0u3-g-wortakzent
+  - item: de:item:p0u3-g-komposita
+  - item: de:item:p0u3-restaurant
+  - item: de:item:p0u3-cafe
+  - item: de:item:p0u3-kino
+  - item: de:item:p0u3-universitaet
+  - item: de:item:p0u3-telefon
+  - item: de:item:p0u3-computer
+  - item: de:item:p0u3-information
+  - item: de:item:p0u3-problem
+  - item: de:item:p0u3-woerterbuch
+  - item: de:item:p0u3-buero
+  - item: de:item:p0u3-g-genus-artikel
+    role: reuse
+  - item: de:item:p0u3-buch
+    role: reuse
+  - item: de:item:p0u3-tisch
+    role: reuse
+  - item: de:item:p0u3-handy
+    role: reuse
+  - item: de:item:p0u3-verstehen
+    role: reuse
+  - item: de:item:p0u1-hotel
+    role: reuse
+  - item: de:item:p0u2-handynummer
+    role: reuse
+  - item: de:item:p0u2-nummer
+    role: reuse
+  - item: de:item:p0u2-schule
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc đúng trọng âm những từ quốc tế quen thuộc (Restaurant, Café, Universität…) và hiểu vì sao das Wörterbuch là das chứ không phải die.
+  - type: explain
+    text:
+      vi: Tiếng Việt đọc mỗi tiếng rõ và đều nhau; tiếng Đức có một âm tiết được nhấn mạnh, dài và rõ hơn, còn các âm khác đọc nhẹ đi. Nhấn sai chỗ thì người Đức rất khó nhận ra từ của bạn.
+  - type: explain
+    text:
+      vi: Từ gốc Đức thường nhấn âm tiết đầu – TA-fel, FENS-ter, TA-sche. Riêng tiền tố be-, ge-, ver-, er-, ent-, zer- không bao giờ nhấn, nên nhấn âm sau đó – ver-STE-hen.
+  - type: explain
+    text:
+      vi: Từ vay mượn (gốc Pháp, Latinh) thường nhấn âm cuối – Restau-RANT, Ca-FÉ, Bü-RO, Pro-BLEM, Universi-TÄT, Informa-TION. Đừng nhấn theo tiếng Anh; ngoại lệ hay gặp là KI-no và Com-PU-ter.
+  - type: explain
+    text:
+      vi: "Từ ghép tiếng Đức viết liền thành một từ, phần cuối là từ chính – ngược tiếng Việt (“sách giáo khoa”: từ chính “sách” đứng trước). Giống và số nhiều của từ ghép lấy theo phần cuối, còn trọng âm rơi vào phần đầu – das WÖR-ter-buch."
+  - type: deep_explain
+    text:
+      vi: "Mẹo đoán giống từ ghép: che phần đầu lại, nhìn phần cuối. die Schule + das Buch → das Schulbuch; das Handy + die Nummer → die Handynummer; das Telefon + die Nummer → die Telefonnummer. Nhiều đuôi vay mượn còn cho biết luôn giống: -tion và -tät luôn là die (die Information, die Universität). Có từ ghép cần thêm âm nối như -s- hay -n- (die Arbeit + der Platz → der Arbeitsplatz) – bạn sẽ học dần ở A1–B1, bài này chỉ dùng từ ghép nối thẳng."
+  - type: example
+    target: das Hotel, das Café und das Büro
+    target_lang: de
+    translation:
+      vi: khách sạn, quán cà phê và văn phòng
+    note:
+      vi: Cả ba từ gốc Pháp đều nhấn âm cuối – hô-TEL, ca-PHÊ, bü-RÔ; đừng nhấn HO-tel như tiếng Anh.
+  - type: example
+    target: Das Wörterbuch ist hier.
+    target_lang: de
+    translation:
+      vi: Cuốn từ điển ở đây.
+    note:
+      vi: die Wörter + das Buch → das Wörterbuch; nhấn phần đầu WÖR-.
+  - type: example
+    target: die Handynummer und die Telefonnummer
+    target_lang: de
+    translation:
+      vi: số điện thoại di động và số điện thoại (bàn)
+    note:
+      vi: Handy và Telefon là das, nhưng từ chính Nummer là die, nên cả hai từ ghép là die.
+  - type: example
+    target: "Die Universität ist da. – Wie bitte? – Die Universität!"
+    target_lang: de
+    translation:
+      vi: Trường đại học ở kia. – Gì cơ? – Trường đại học!
+    note:
+      vi: Nhấn rõ -TÄT ở cuối; đuôi -tät luôn là giống cái (die).
+  - type: common_mistake
+    wrong: das Problem (đọc PRO-blem như tiếng Anh)
+    right: das Problem
+    target_lang: de
+    note:
+      vi: Người Việt hay nhấn theo tiếng Anh. Tiếng Đức nhấn âm cuối – pro-BLEM, ho-TEL, ca-PHÊ.
+  - type: common_mistake
+    wrong: die Schulbuch
+    right: das Schulbuch
+    target_lang: de
+    note:
+      vi: Đừng lấy giống của phần đầu (die Schule). Từ chính là Buch nên cả từ ghép là das.
+  - type: common_mistake
+    wrong: Uni-ver-si-tät (nhấn đều mọi âm)
+    right: die Universität
+    target_lang: de
+    note:
+      vi: Đọc đều từng tiếng như tiếng Việt nghe rất lạ tai. Chỉ một âm được nhấn mạnh (-TÄT), các âm còn lại đọc nhẹ và nhanh.
+  - type: summary
+    points:
+      - vi: "Từ gốc Đức: nhấn âm đầu của gốc (TA-fel); be-, ge-, ver-, er-, ent-, zer- không nhấn (ver-STE-hen)."
+      - vi: "Từ vay mượn: thường nhấn cuối – Restaurant, Café, Büro, Problem, Universität, Information."
+      - vi: "Ngoại lệ hay gặp: KI-no, Com-PU-ter, HAN-dy."
+      - vi: "Từ ghép: viết liền, nhấn phần đầu, giống và số nhiều theo phần cuối (das Wörterbuch, die Handynummer)."
+      - vi: "-tion, -tät luôn là die."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u3l3-mcq-akzent-ende
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-problem
+    prompt:
+      stem: Từ nào nhấn âm tiết CUỐI?
+      stem_lang: vi
+      options:
+        - { id: q3e, text: das Problem, lang: de }
+        - { id: w8r, text: das Fenster, lang: de }
+        - { id: e2t, text: die Tasche, lang: de }
+        - { id: r6y, text: das Kino, lang: de }
+    answer:
+      correct_option_id: q3e
+    explanation:
+      vi: Problem là từ vay mượn, nhấn cuối – pro-BLEM. Fenster và Tasche là từ gốc Đức nên nhấn âm đầu; Kino là ngoại lệ, cũng nhấn đầu (KI-no).
+    display_answer: das Problem
+
+  - key: de:exercise:p0u3l3-mcq-verstehen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-g-wortakzent
+    prompt:
+      stem: "Trong từ verstehen (ver-ste-hen), âm tiết nào được nhấn?"
+      stem_lang: vi
+      options:
+        - { id: v1a, text: ver, lang: vi }
+        - { id: v2b, text: ste, lang: vi }
+        - { id: v3c, text: hen, lang: vi }
+    answer:
+      correct_option_id: v2b
+    explanation:
+      vi: Tiền tố ver- không bao giờ nhấn, nên trọng âm rơi vào âm đầu của gốc từ – ver-STE-hen. -hen ở cuối chỉ là đuôi động từ, đọc nhẹ.
+    display_answer: ste
+
+  - key: de:exercise:p0u3l3-listen-cafe
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-cafe
+    prompt:
+      audio_asset_id: null
+      fallback_text: das Café
+      options:
+        - { id: c1f, text: quán cà phê, lang: vi }
+        - { id: c2k, text: rạp chiếu phim, lang: vi }
+        - { id: c3r, text: nhà hàng, lang: vi }
+        - { id: c4b, text: văn phòng, lang: vi }
+    answer:
+      correct_option_id: c1f
+    explanation:
+      vi: Bạn nghe “ca-PHÊ”, nhấn âm cuối – das Café là quán cà phê. Rạp chiếu phim là das Kino, nhà hàng là das Restaurant, văn phòng là das Büro.
+    display_answer: quán cà phê
+
+  - key: de:exercise:p0u3l3-mcq-schulbuch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-g-komposita
+    prompt:
+      stem: "die Schule (trường học) + das Buch (sách) = ___ Schulbuch (sách giáo khoa). Chọn mạo từ đúng."
+      stem_lang: vi
+      options:
+        - { id: s1d, text: das Schulbuch, lang: de }
+        - { id: s2d, text: die Schulbuch, lang: de }
+        - { id: s3d, text: der Schulbuch, lang: de }
+    answer:
+      correct_option_id: s1d
+    explanation:
+      vi: Giống của từ ghép theo phần cuối. Phần cuối là das Buch nên cả từ là das Schulbuch, dù phần đầu là die Schule.
+    display_answer: das Schulbuch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u3l3-fill-komposita-artikel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-woerterbuch
+    prompt:
+      template: "{{b1}} Wörterbuch · {{b2}} Handynummer · {{b3}} Schreibtisch"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [das]
+        b2: [die]
+        b3: [der]
+    explanation:
+      vi: Nhìn phần cuối của từ ghép – Buch là das, Nummer là die, Tisch là der. Phần đầu (Wörter, Handy, schreiben) không quyết định giống.
+    display_answer: das Wörterbuch · die Handynummer · der Schreibtisch
+
+  - key: de:exercise:p0u3l3-fill-telefonnummer
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-telefon
+    prompt:
+      template: "das Telefon + die Nummer = {{b1}} {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 14 }
+    answer:
+      blanks:
+        b1: [die]
+        b2: [Telefonnummer]
+    known_wrong:
+      - answer: das
+        feedback_vi: Giống theo phần cuối – die Nummer, nên là die Telefonnummer.
+        error_tag: gender
+      - answer: Nummertelefon
+        feedback_vi: Từ chính (Nummer) đứng cuối, phần bổ nghĩa (Telefon) đứng trước – Telefonnummer.
+        error_tag: word_order
+      - answer: Telefon Nummer
+        feedback_vi: Từ ghép tiếng Đức viết liền thành một từ – Telefonnummer.
+        error_tag: compound_spelling
+    explanation:
+      vi: Ghép Telefon + Nummer thành một từ viết liền, giữ cả hai chữ n – Telefonnummer. Giống lấy theo phần cuối die Nummer, nên là die Telefonnummer.
+    display_answer: die Telefonnummer
+
+  - key: de:exercise:p0u3l3-tr-restaurant-cafe
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-restaurant
+    prompt:
+      source_text: nhà hàng và quán cà phê
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Restaurant und das Café
+        - das Café und das Restaurant
+        - die Restaurants und die Cafés
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: der Restaurant und das Café
+        feedback_vi: Restaurant là giống trung – das Restaurant.
+        error_tag: article
+      - answer: das Restaurant und die Café
+        feedback_vi: Café là giống trung – das Café.
+        error_tag: article
+    explanation:
+      vi: Cả hai từ đều là das – das Restaurant, das Café. Nhớ nhấn âm cuối khi đọc – res-tô-RĂNG, ca-PHÊ.
+    display_answer: das Restaurant und das Café
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u3l3-wb-woerterbuch-tisch
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-g-komposita
+    prompt:
+      instruction: "Ghép thành cụm tiếng Đức: “cuốn từ điển và cái bàn làm việc”"
+      tokens:
+        - { id: k-der, text: der }
+        - { id: k-wb, text: Wörterbuch }
+        - { id: k-und, text: und }
+        - { id: k-die, text: die }
+        - { id: k-das, text: das }
+        - { id: k-st, text: Schreibtisch }
+    answer:
+      orders:
+        - [k-das, k-wb, k-und, k-der, k-st]
+        - [k-der, k-st, k-und, k-das, k-wb]
+    explanation:
+      vi: Wörterbuch lấy giống của Buch (das), Schreibtisch lấy giống của Tisch (der). die là token thừa – không phần cuối nào là giống cái.
+    display_answer: das Wörterbuch und der Schreibtisch
+
+  - key: de:exercise:p0u3l3-mcq-kinokarte
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-kino
+    prompt:
+      stem: "Bạn gặp từ mới Kinokarte (vé xem phim) = das Kino + die Karte. Nhận xét nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m1k, text: Nhấn phần đầu KI-; giống cái (die) vì Karte là die, lang: vi }
+        - { id: m2k, text: Nhấn -KAR-; giống trung (das) vì Kino là das, lang: vi }
+        - { id: m3k, text: Nhấn phần đầu KI-; giống trung (das) vì Kino là das, lang: vi }
+        - { id: m4k, text: Nhấn âm cuối -TE; giống cái (die), lang: vi }
+    answer:
+      correct_option_id: m1k
+    explanation:
+      vi: Từ ghép nhấn phần đầu (KI-no-kar-te) nhưng lấy giống của phần cuối – die Karte, nên là die Kinokarte.
+    display_answer: Nhấn phần đầu KI-; giống cái (die) vì Karte là die
+
+  - key: de:exercise:p0u3l3-tr-telefon-computer
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-computer
+    prompt:
+      source_text: das Telefon und der Computer
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - điện thoại và máy tính
+        - cái điện thoại và cái máy tính
+        - chiếc điện thoại và chiếc máy tính
+        - điện thoại và máy vi tính
+        - cái điện thoại và máy tính
+        - chiếc điện thoại và máy tính
+        - điện thoại bàn và máy tính
+        - cái điện thoại và chiếc máy tính
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: điện thoại di động và máy tính
+        feedback_vi: Điện thoại di động là das Handy; das Telefon là điện thoại nói chung.
+        error_tag: word_choice
+    explanation:
+      vi: das Telefon là điện thoại (nói chung, nhất là điện thoại bàn), der Computer là máy tính, und là “và”. Đọc tê-lê-PHÔN nhấn cuối, com-PIU-ta nhấn giữa.
+    display_answer: điện thoại và máy tính

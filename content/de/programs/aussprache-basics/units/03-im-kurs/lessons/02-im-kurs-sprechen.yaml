@@ -1,0 +1,346 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u3-im-kurs-sprechen
+order_index: 2
+level: pre_a1
+title:
+  vi: Câu dùng trong lớp (Wie bitte? Noch einmal, bitte.)
+objectives:
+  - vi: Lịch sự xin nhắc lại, xin nói chậm khi chưa nghe kịp.
+  - vi: Hỏi nghĩa một từ (Was heißt … auf Deutsch?) và hỏi cách viết (Wie schreibt man das?).
+  - vi: Nói “tôi không hiểu” và “tôi không biết” đúng tình huống.
+  - vi: Hạ giọng ở câu kể và câu hỏi có từ để hỏi, lên giọng ở câu hỏi có/không.
+estimated_minutes: 11
+skills: [speaking, listening, pronunciation]
+prerequisites: [de:lesson:p0u3-der-die-das]
+items:
+  - item: de:item:p0u3-g-satzmelodie
+  - item: de:item:p0u3-bitte
+  - item: de:item:p0u3-wie-bitte
+  - item: de:item:p0u3-noch-einmal-bitte
+  - item: de:item:p0u3-langsam-bitte
+  - item: de:item:p0u3-verstehen
+  - item: de:item:p0u3-was-heisst-auf-deutsch
+  - item: de:item:p0u3-wie-schreibt-man-das
+  - item: de:item:p0u3-ich-weiss-es-nicht
+  - item: de:item:p0u3-frage
+  - item: de:item:p0u3-wort
+  - item: de:item:p0u3-tafel
+    role: reuse
+  - item: de:item:p0u1-g-buchstabieren
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn “sống sót” được trong giờ học tiếng Đức – xin nhắc lại, xin nói chậm, hỏi từ này nghĩa là gì và viết thế nào – với ngữ điệu tự nhiên.
+  - type: explain
+    text:
+      vi: Khi không nghe rõ, hãy nói “Wie bitte?” (gì cơ ạ?), rồi “Noch einmal, bitte.” (xin nhắc lại) hoặc “Langsam, bitte.” (xin nói chậm). Chỉ nói “Was?” thì giống “Hả?” trong tiếng Việt – nghe cộc, không dùng với giáo viên.
+  - type: explain
+    text:
+      vi: "bitte là “làm ơn”, gắn vào cuối hoặc đầu lời đề nghị cho lịch sự. Khác tiếng Việt cần “ạ”, “dạ”, tiếng Đức lịch sự nhờ bitte và giọng nói nhẹ nhàng."
+  - type: explain
+    text:
+      vi: Để hỏi từ vựng, dùng hai câu mẫu – “Was heißt das auf Deutsch?” (cái này tiếng Đức gọi là gì?) và “Wie schreibt man das?” (viết thế nào?). Người kia sẽ đánh vần bằng tên chữ cái bạn đã học ở unit 1.
+  - type: explain
+    text:
+      vi: Tiếng Việt lên xuống giọng ở từng từ (thanh điệu); tiếng Đức lên xuống theo cả câu. Câu kể và câu hỏi có từ để hỏi (wie, was, wer) hạ giọng ở cuối ↘; câu hỏi có/không, như “Verstehen Sie das?”, lên giọng ở cuối ↗.
+  - type: deep_explain
+    text:
+      vi: "“Ich verstehe das nicht.” là không hiểu điều vừa nghe hay đọc; “Ich weiß es nicht.” là không biết thông tin (không biết câu trả lời). Hai câu này bạn học như câu mẫu, cách chia động từ học ở A1. “Wie bitte?” tuy bắt đầu bằng wie nhưng là câu hỏi lại, nên thường lên giọng ↗. Trong lớp học ở Đức, học viên thường xưng du với nhau và Sie với giáo viên (tuỳ lớp) – vì vậy bạn sẽ nghe “Verstehst du das?” giữa bạn bè và “Verstehen Sie das?” khi hỏi giáo viên."
+  - type: example
+    target: "Wie bitte? Noch einmal, bitte."
+    target_lang: de
+    translation:
+      vi: Gì cơ ạ? Xin nhắc lại một lần nữa.
+    note:
+      vi: Dùng được với cả giáo viên (Sie) và bạn cùng lớp (du) – không có đại từ nên không phải chọn.
+  - type: example
+    target: "Langsam, bitte. Ich verstehe das nicht."
+    target_lang: de
+    translation:
+      vi: Xin nói chậm thôi ạ. Tôi không hiểu.
+    note:
+      vi: Câu kể nên hạ giọng ở cuối ↘.
+  - type: example
+    target: "Was heißt das auf Deutsch? – Tafel. Die Tafel."
+    target_lang: de
+    translation:
+      vi: Cái này tiếng Đức gọi là gì? – Tafel. Die Tafel (cái bảng).
+    note:
+      vi: Người trả lời nhắc lại cả mạo từ – đúng thói quen bạn học ở bài 1.
+  - type: example
+    target: "Wie schreibt man das? – T-A-F-E-L."
+    target_lang: de
+    translation:
+      vi: Từ đó viết thế nào? – T-A-F-E-L.
+    note:
+      vi: Câu hỏi có từ để hỏi wie nên hạ giọng ↘; câu trả lời đánh vần bằng tên chữ cái tiếng Đức (te, a, ef, e, el).
+  - type: example
+    target: Verstehen Sie das?
+    target_lang: de
+    translation:
+      vi: Anh/chị có hiểu không ạ?
+    note:
+      vi: Câu hỏi có/không (động từ đứng đầu) nên lên giọng ↗. Sie viết hoa – lịch sự, dùng với giáo viên hoặc người lạ.
+  - type: common_mistake
+    wrong: "What? / Was?"
+    right: Wie bitte?
+    target_lang: de
+    note:
+      vi: Đừng buột miệng nói tiếng Anh “What?” hay chỉ “Was?” – cả hai nghe cộc. “Wie bitte?” là cách lịch sự.
+  - type: common_mistake
+    wrong: Ich nicht verstehe.
+    right: Ich verstehe das nicht.
+    target_lang: de
+    note:
+      vi: Tiếng Việt nói “tôi không hiểu” với “không” đứng trước động từ; tiếng Đức đặt nicht ở cuối câu này. Học nguyên câu mẫu.
+  - type: common_mistake
+    wrong: Verstehen Sie das? ↘
+    right: Verstehen Sie das? ↗
+    target_lang: de
+    note:
+      vi: Đọc câu hỏi có/không mà hạ giọng thì người nghe tưởng bạn đang nói câu kể. Hãy lên giọng ở từ cuối, đừng lên xuống từng từ như thanh điệu tiếng Việt.
+  - type: summary
+    points:
+      - vi: "Không nghe rõ: Wie bitte? – Noch einmal, bitte. – Langsam, bitte."
+      - vi: "Hỏi từ: Was heißt das auf Deutsch? Hỏi cách viết: Wie schreibt man das?"
+      - vi: "Ich verstehe das nicht. = không hiểu; Ich weiß es nicht. = không biết."
+      - vi: bitte làm lời đề nghị lịch sự hơn; tránh nói “Was?” trống không.
+      - vi: Câu kể và câu hỏi wie/was/wer hạ giọng ↘; câu hỏi có/không lên giọng ↗.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u3l2-mcq-wie-bitte
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-wie-bitte
+    prompt:
+      stem: Giáo viên vừa nói một câu nhưng bạn không nghe rõ. Bạn lịch sự hỏi lại thế nào?
+      stem_lang: vi
+      options:
+        - { id: d4k, text: Wie bitte?, lang: de }
+        - { id: x2m, text: Ich weiß es nicht., lang: de }
+        - { id: h8r, text: Tschüss!, lang: de }
+        - { id: p5c, text: "Danke, gut.", lang: de }
+    answer:
+      correct_option_id: d4k
+    explanation:
+      vi: “Wie bitte?” là cách lịch sự để xin nghe lại. “Ich weiß es nicht.” là “tôi không biết”, “Tschüss!” là tạm biệt, “Danke, gut.” là đáp lời hỏi thăm sức khoẻ.
+    display_answer: Wie bitte?
+
+  - key: de:exercise:p0u3l2-listen-langsam
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-langsam-bitte
+    prompt:
+      audio_asset_id: null
+      fallback_text: Langsam, bitte.
+      options:
+        - { id: s7a, text: Xin nói chậm thôi ạ., lang: vi }
+        - { id: g1t, text: Xin nhắc lại một lần nữa., lang: vi }
+        - { id: o6e, text: Tôi không biết., lang: vi }
+        - { id: l3w, text: Từ đó viết thế nào?, lang: vi }
+    answer:
+      correct_option_id: s7a
+    explanation:
+      vi: langsam nghĩa là “chậm”, thêm bitte thành lời đề nghị lịch sự. Xin nhắc lại là “Noch einmal, bitte.”.
+    display_answer: Xin nói chậm thôi ạ.
+
+  - key: de:exercise:p0u3l2-mcq-melodie-steigend
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-g-satzmelodie
+    prompt:
+      stem: Câu nào lên giọng ↗ ở cuối?
+      stem_lang: vi
+      options:
+        - { id: i2v, text: Verstehen Sie das?, lang: de }
+        - { id: c9u, text: Wie schreibt man das?, lang: de }
+        - { id: f4o, text: Ich weiß es nicht., lang: de }
+        - { id: k7z, text: "Langsam, bitte.", lang: de }
+    answer:
+      correct_option_id: i2v
+    explanation:
+      vi: “Verstehen Sie das?” là câu hỏi có/không (động từ đứng đầu, trả lời Ja/Nein) nên lên giọng. “Wie schreibt man das?” có từ để hỏi wie nên hạ giọng; câu kể và lời đề nghị cũng hạ giọng.
+    display_answer: Verstehen Sie das?
+
+  - key: de:exercise:p0u3l2-listen-was-heisst
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-was-heisst-auf-deutsch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Was heißt das auf Deutsch?
+      options:
+        - { id: r5n, text: Cái này tiếng Đức gọi là gì?, lang: vi }
+        - { id: e8b, text: Cái này viết thế nào?, lang: vi }
+        - { id: t1q, text: Bạn có hiểu không?, lang: vi }
+        - { id: m9j, text: Đây là cái gì?, lang: vi }
+    answer:
+      correct_option_id: r5n
+    explanation:
+      vi: heißt nghĩa là “gọi là / có nghĩa là”, auf Deutsch là “bằng tiếng Đức”. Hỏi cách viết là “Wie schreibt man das?”; hỏi “đây là cái gì” là “Was ist das?”.
+    display_answer: Cái này tiếng Đức gọi là gì?
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u3l2-fill-noch-einmal
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-noch-einmal-bitte
+    prompt:
+      template: "A: Wie schreibt man das? B: T-A-F-E-L. A: Wie bitte? {{b1}} einmal, {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Noch]
+        b2: [bitte]
+    known_wrong:
+      - answer: Nach
+        feedback_vi: "“Một lần nữa” là noch einmal (o, đọc “nokh”), không phải nach."
+        error_tag: word_choice
+      - answer: danke
+        feedback_vi: Đây là lời đề nghị nên dùng bitte (làm ơn); danke là cảm ơn.
+        error_tag: word_choice
+    explanation:
+      vi: A chưa nghe kịp phần đánh vần nên xin nhắc lại – “Noch einmal, bitte.”. noch einmal là “thêm một lần nữa”, bitte làm lời đề nghị lịch sự.
+    display_answer: "A: Wie schreibt man das? B: T-A-F-E-L. A: Wie bitte? Noch einmal, bitte."
+
+  - key: de:exercise:p0u3l2-tr-verstehe-nicht
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-verstehen
+    prompt:
+      source_text: Tôi không hiểu cái đó.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich verstehe das nicht.
+        - Das verstehe ich nicht.
+        - Ich verstehe es nicht.
+    known_wrong:
+      - answer: Ich nicht verstehe das.
+        feedback_vi: nicht không đứng trước động từ như “không” tiếng Việt. Câu mẫu là Ich verstehe das nicht.
+        error_tag: word_order
+      - answer: Ich verstehe nicht das.
+        feedback_vi: Ở câu này nicht đứng cuối, sau das – Ich verstehe das nicht.
+        error_tag: word_order
+      - answer: Ich weiß es nicht.
+        feedback_vi: Ich weiß es nicht là “tôi không biết”; “không hiểu” là Ich verstehe das nicht.
+        error_tag: word_choice
+    explanation:
+      vi: “Tôi không hiểu cái đó” là câu mẫu Ich verstehe das nicht – nicht đứng cuối câu, khác vị trí của “không” trong tiếng Việt.
+    display_answer: Ich verstehe das nicht.
+
+  - key: de:exercise:p0u3l2-tr-was-heisst
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-was-heisst-auf-deutsch
+    prompt:
+      source_text: Cái này tiếng Đức gọi là gì?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Was heißt das auf Deutsch?
+        - Wie heißt das auf Deutsch?
+        - Wie sagt man das auf Deutsch?
+    known_wrong:
+      - answer: Was heißt das Deutsch?
+        feedback_vi: Thiếu auf – “bằng tiếng Đức” là auf Deutsch.
+        error_tag: preposition
+    explanation:
+      vi: Câu mẫu là “Was heißt das auf Deutsch?” – heißt (gọi là), auf Deutsch (bằng tiếng Đức). Người Đức cũng nói “Wie heißt das auf Deutsch?” với cùng nghĩa.
+    display_answer: Was heißt das auf Deutsch?
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u3l2-wb-wie-schreibt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-wie-schreibt-man-das
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: “Từ đó viết thế nào?”"
+      tokens:
+        - { id: w-man, text: man }
+        - { id: w-das, text: das }
+        - { id: w-schreibt, text: schreibt }
+        - { id: w-wie, text: Wie }
+        - { id: w-heisst, text: heißt }
+        - { id: w-ist, text: ist }
+    answer:
+      orders:
+        - [w-wie, w-schreibt, w-man, w-das]
+    explanation:
+      vi: Câu hỏi có từ để hỏi – Wie đứng đầu, động từ schreibt đứng thứ hai, rồi man (người ta) và das. Đây là câu mẫu, học thuộc nguyên câu; heißt và ist là token thừa.
+    display_answer: Wie schreibt man das?
+
+  - key: de:exercise:p0u3l2-mcq-situation-langsam
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-bitte
+    prompt:
+      stem: Bạn cùng lớp đánh vần tên mình rất nhanh, bạn chưa kịp chép. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - { id: n6y, text: "Langsam, bitte.", lang: de }
+        - { id: u3h, text: Ich weiß es nicht., lang: de }
+        - { id: a2f, text: Gute Nacht!, lang: de }
+        - { id: z9d, text: Freut mich!, lang: de }
+    answer:
+      correct_option_id: n6y
+    explanation:
+      vi: Bạn cần người kia nói chậm lại – “Langsam, bitte.”. “Ich weiß es nicht.” là không biết, “Gute Nacht!” chúc ngủ ngon, “Freut mich!” là “rất vui được gặp”.
+    display_answer: "Langsam, bitte."
+
+  - key: de:exercise:p0u3l2-tr-weiss-nicht-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-ich-weiss-es-nicht
+    prompt:
+      source_text: Ich weiß es nicht.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi không biết.
+        - Mình không biết.
+        - Em không biết.
+        - Tớ không biết.
+        - Tôi không biết ạ.
+        - Em không biết ạ.
+        - Tôi không biết điều đó.
+        - Tôi không biết cái đó.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi không hiểu.
+        feedback_vi: “Không hiểu” là Ich verstehe das nicht; weiß là “biết”.
+        error_tag: word_choice
+    explanation:
+      vi: “Ich weiß es nicht.” nghĩa là “Tôi không biết” – weiß (biết), es (điều đó), nicht (không). Tiếng Việt thường bỏ “điều đó” cho tự nhiên.
+    display_answer: Tôi không biết.

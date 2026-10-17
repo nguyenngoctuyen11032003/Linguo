@@ -1,0 +1,985 @@
+# Học liệu unit P0U3 "Trong lớp học và đọc câu ngắn" (Im Deutschkurs), chương trình aussprache-basics (pre-A1).
+# Danh từ ghi kèm mạo từ và ký hiệu số nhiều; IPA theo chuẩn Hochdeutsch (Đức).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: der, die, das – đồ vật trong lớp =================
+  - key: de:item:p0u3-g-genus-artikel
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Genus und Artikel: der / die / das"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Mỗi danh từ tiếng Đức có một giống: giống đực (der), giống cái (die) hoặc giống trung (das); số nhiều luôn dùng die. Giống không đoán được theo nghĩa, nên hãy học cả cụm mạo từ + danh từ + số nhiều. Ký hiệu trên thẻ từ: -e (Tisch → Tische), ¨-er (Buch → Bücher), - (Fenster → Fenster), -s (Handy → Handys)."
+      examples:
+        - target: der Tisch – die Tische
+          translation:
+            vi: cái bàn – những cái bàn
+        - target: das Buch – die Bücher
+          translation:
+            vi: quyển sách – những quyển sách
+        - target: die Tafel – die Tafeln
+          translation:
+            vi: cái bảng – những cái bảng
+      pronunciation_note:
+        vi: "der đọc gần như “đe-a” (r cuối thành a nhẹ), die đọc “đi” dài, das đọc “đát” với s cuối rõ."
+      confusion:
+        vi: "Giống ngữ pháp không phải giới tính: das Mädchen (cô bé) là giống trung. die ở số ít (die Tafel) và die ở số nhiều (die Tische) viết giống nhau, nhìn danh từ để biết."
+
+  - key: de:item:p0u3-g-nomen-gross
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Nomen schreibt man groß: der Tisch, das Buch"
+      pos: chính tả
+    back:
+      meaning:
+        vi: "Mọi danh từ tiếng Đức viết hoa chữ cái đầu, ở bất kỳ vị trí nào trong câu. Mạo từ, động từ, tính từ thì viết thường (trừ khi đứng đầu câu). Tiếng Việt chỉ viết hoa tên riêng và đầu câu, nên đây là lỗi người Việt hay mắc nhất khi viết."
+      examples:
+        - target: Das Buch und das Heft sind neu.
+          translation:
+            vi: Quyển sách và quyển vở đều mới.
+        - target: Der Stift ist hier, das Handy ist da.
+          translation:
+            vi: Cây bút ở đây, điện thoại ở kia.
+      confusion:
+        vi: "Khi gõ đáp án, máy chấm không phân biệt hoa thường; nhưng khi viết thư, viết bài thi, chữ thường ở danh từ bị tính là lỗi chính tả."
+
+  - key: de:item:p0u3-tisch
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Tisch, -e
+      ipa: /tɪʃ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái bàn
+      examples:
+        - target: Der Tisch ist neu.
+          translation:
+            vi: Cái bàn mới.
+      pronunciation_note:
+        vi: "i ngắn, sch như “s” uốn lưỡi và tròn môi: “tisch”. Số nhiều die Tische đọc “ti-sơ”."
+
+  - key: de:item:p0u3-stuhl
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Stuhl, ¨-e
+      ipa: /ʃtuːl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái ghế (ghế tựa, không phải ghế sofa)
+      examples:
+        - target: Der Stuhl ist hier.
+          translation:
+            vi: Cái ghế ở đây.
+      pronunciation_note:
+        vi: "st đầu từ đọc “scht”; u dài vì có h câm phía sau: “schtuul”. Số nhiều die Stühle có ü."
+
+  - key: de:item:p0u3-buch
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Buch, ¨-er
+      ipa: /buːx/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyển sách
+      examples:
+        - target: Das Buch ist gut.
+          translation:
+            vi: Quyển sách hay.
+      pronunciation_note:
+        vi: "u dài, ch sau u đọc như “kh” tiếng Việt: “buukh”. Số nhiều die Bücher: ü + ch nhẹ như “ích”."
+
+  - key: de:item:p0u3-heft
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Heft, -e
+      ipa: /hɛft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyển vở
+      examples:
+        - target: Das Heft ist neu.
+          translation:
+            vi: Quyển vở mới.
+      pronunciation_note:
+        vi: "h đầu từ bật hơi nhẹ như “h” tiếng Việt; e ngắn; bật rõ cả f và t ở cuối."
+      confusion:
+        vi: "das Heft là vở để viết; das Buch là sách in sẵn."
+
+  - key: de:item:p0u3-stift
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Stift, -e
+      ipa: /ʃtɪft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây bút (từ chung cho mọi loại bút)
+      examples:
+        - target: Der Stift ist da.
+          translation:
+            vi: Cây bút ở kia.
+      pronunciation_note:
+        vi: "st đầu từ đọc “scht”: “schtift”. Đừng đọc “xtíp” kiểu tiếng Anh."
+
+  - key: de:item:p0u3-kuli
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Kuli, -s
+      ipa: /ˈkuːli/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây bút bi (nói tắt của der Kugelschreiber)
+      examples:
+        - target: Der Kuli ist neu.
+          translation:
+            vi: Cây bút bi mới.
+      pronunciation_note:
+        vi: "Nhấn âm đầu, u dài: “KUU-li”."
+
+  - key: de:item:p0u3-tafel
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: die Tafel, -n
+      ipa: /ˈtaːfl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái bảng (bảng đen, bảng trắng trong lớp)
+      examples:
+        - target: Die Tafel ist da.
+          translation:
+            vi: Cái bảng ở kia.
+      pronunciation_note:
+        vi: "a dài, nhấn âm đầu: “TAA-fơl”; âm -el cuối rất nhẹ."
+
+  - key: de:item:p0u3-fenster
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Fenster, -
+      ipa: /ˈfɛnstɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa sổ
+      examples:
+        - target: Das Fenster ist hier.
+          translation:
+            vi: Cửa sổ ở đây.
+      pronunciation_note:
+        vi: "-er cuối đọc như “a” nhẹ, không cuộn r: “FEN-sta”. Số nhiều giữ nguyên: die Fenster."
+
+  - key: de:item:p0u3-handy
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Handy, -s
+      ipa: /ˈhɛndi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện thoại di động
+      examples:
+        - target: Das Handy ist neu.
+          translation:
+            vi: Chiếc điện thoại di động mới.
+      pronunciation_note:
+        vi: "Đọc “HEN-đi” theo kiểu tiếng Anh, dù a viết là a."
+      confusion:
+        vi: "Handy là từ người Đức tự đặt, người nói tiếng Anh không dùng từ này để chỉ điện thoại."
+
+  - key: de:item:p0u3-tasche
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: die Tasche, -n
+      ipa: /ˈtaʃə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái túi, cái cặp
+      examples:
+        - target: Die Tasche ist hier.
+          translation:
+            vi: Cái túi ở đây.
+      pronunciation_note:
+        vi: "a ngắn, -e cuối đọc “ơ” rất nhẹ: “TA-sơ”."
+
+  - key: de:item:p0u3-bleistift
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Bleistift, -e
+      ipa: /ˈblaɪ̯ʃtɪft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bút chì
+      examples:
+        - target: Der Bleistift ist da.
+          translation:
+            vi: Bút chì ở kia.
+      pronunciation_note:
+        vi: "ei đọc “ai”; st ở đầu phần -stift vẫn đọc “scht”: “BLAI-schtift”."
+      confusion:
+        vi: "Từ ghép của das Blei (chì) + der Stift (bút), nên giống theo Stift: der."
+
+  - key: de:item:p0u3-radiergummi
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Radiergummi, -s
+      ipa: /ʁaˈdiːɐ̯ˌɡʊmi/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cục tẩy, cục gôm
+      examples:
+        - target: Der Radiergummi ist hier.
+          translation:
+            vi: Cục tẩy ở đây.
+      pronunciation_note:
+        vi: "Nhấn âm thứ hai: “ra-ĐIA-gu-mi”; r đầu đọc ở cổ họng, ie là i dài."
+
+  # ================= bài 2: câu dùng trong lớp =================
+  - key: de:item:p0u3-g-satzmelodie
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [pronunciation]
+    front:
+      text: "Satzmelodie: Aussage und W-Frage fallend, Ja-Nein-Frage steigend"
+      pos: ngữ điệu
+    back:
+      meaning:
+        vi: "Câu kể và câu hỏi có từ để hỏi (wie, was, wer…) hạ giọng ở cuối ↘. Câu hỏi có/không (động từ đứng đầu) lên giọng ở cuối ↗. Ngữ điệu đi theo cả câu, không theo từng từ như thanh điệu tiếng Việt; thêm bitte làm lời đề nghị lịch sự hơn."
+      examples:
+        - target: Wie schreibt man das?
+          translation:
+            vi: Cái đó viết thế nào? (hạ giọng ở cuối ↘)
+        - target: Verstehen Sie das?
+          translation:
+            vi: Anh/chị/thầy/cô có hiểu cái đó không? (lên giọng ở cuối ↗)
+        - target: Ich weiß es nicht.
+          translation:
+            vi: Tôi không biết. (câu kể, hạ giọng ↘)
+      confusion:
+        vi: "Riêng “Wie bitte?” (hỏi lại vì không nghe rõ) thường lên giọng ↗, dù bắt đầu bằng wie."
+
+  - key: de:item:p0u3-bitte
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: bitte
+      ipa: /ˈbɪtə/
+      pos: tiểu từ
+    back:
+      meaning:
+        vi: "làm ơn, xin vui lòng; cũng dùng để đáp lại lời cảm ơn (Danke! – Bitte!)"
+      examples:
+        - target: Noch einmal, bitte.
+          translation:
+            vi: Xin nhắc lại một lần nữa ạ.
+        - target: "Danke! – Bitte!"
+          translation:
+            vi: Cảm ơn! – Không có gì!
+      pronunciation_note:
+        vi: "i ngắn, tt đọc “t” rõ, -e cuối là “ơ” nhẹ: “BI-tơ”."
+      confusion:
+        vi: "bitte (tiểu từ, viết thường) khác die Bitte (lời thỉnh cầu, danh từ, học ở B1)."
+
+  - key: de:item:p0u3-wie-bitte
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: Wie bitte?
+      ipa: /viː ˈbɪtə/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Xin lỗi, gì cơ ạ? (lịch sự xin nhắc lại khi không nghe rõ)
+      examples:
+        - target: "Wie bitte? Noch einmal, bitte."
+          translation:
+            vi: Gì cơ ạ? Xin nhắc lại một lần nữa.
+      pronunciation_note:
+        vi: "w đọc như “v”: “vii BI-tơ”, thường lên giọng ở cuối."
+      confusion:
+        vi: "Chỉ nói “Was?” thì nghe cộc lốc; trong lớp và với người lạ, dùng “Wie bitte?”."
+
+  - key: de:item:p0u3-noch-einmal-bitte
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: Noch einmal, bitte.
+      ipa: /nɔx ˈaɪ̯nmaːl ˈbɪtə/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Xin nhắc lại một lần nữa.
+      examples:
+        - target: "Wie bitte? Noch einmal, bitte."
+          translation:
+            vi: Gì cơ ạ? Xin nói lại một lần nữa.
+      pronunciation_note:
+        vi: "ch sau o đọc “kh”: “nokh”; ei đọc “ai”: “AIN-maal”."
+
+  - key: de:item:p0u3-langsam-bitte
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: Langsam, bitte.
+      ipa: /ˈlaŋzaːm ˈbɪtə/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Xin nói chậm thôi ạ.
+      examples:
+        - target: "Langsam, bitte. Ich verstehe das nicht."
+          translation:
+            vi: Xin nói chậm thôi ạ. Tôi không hiểu.
+      pronunciation_note:
+        vi: "ng như “ng” tiếng Việt, s trước nguyên âm đọc gần “d” giọng Bắc: “LANG-daam”."
+
+  - key: de:item:p0u3-verstehen
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: verstehen
+      ipa: /fɛɐ̯ˈʃteːən/
+      pos: động từ
+    back:
+      meaning:
+        vi: "hiểu; học trước như câu mẫu: Ich verstehe das nicht. (Tôi không hiểu.)"
+      examples:
+        - target: Ich verstehe das nicht.
+          translation:
+            vi: Tôi không hiểu cái đó.
+        - target: Verstehen Sie das?
+          translation:
+            vi: Anh/chị có hiểu cái đó không? (lịch sự, xưng Sie)
+      pronunciation_note:
+        vi: "v đọc “ph”, ver- không nhấn; st đọc “scht”, nhấn âm -ste-: “phe-SCHTEE-ơn”."
+
+  - key: de:item:p0u3-was-heisst-auf-deutsch
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: Was heißt … auf Deutsch?
+      ipa: /vas haɪ̯st … aʊ̯f dɔʏ̯tʃ/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: … tiếng Đức gọi là gì? / … trong tiếng Đức nghĩa là gì?
+      examples:
+        - target: "Was heißt das auf Deutsch? – Tafel. Die Tafel."
+          translation:
+            vi: Cái này tiếng Đức gọi là gì? – Tafel. Die Tafel (cái bảng).
+      pronunciation_note:
+        vi: "ß đọc “s”: “haist”; eu đọc “oi”: “đoitsch”."
+
+  - key: de:item:p0u3-wie-schreibt-man-das
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: Wie schreibt man das?
+      ipa: /viː ʃʁaɪ̯pt man das/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Cái đó viết thế nào?
+      examples:
+        - target: "Wie schreibt man das? – T-A-F-E-L."
+          translation:
+            vi: Từ đó viết thế nào? – T-A-F-E-L.
+      pronunciation_note:
+        vi: "sch + r đọc liền “schr”; b cuối âm tiết đọc “p”: “schraipt”."
+
+  - key: de:item:p0u3-ich-weiss-es-nicht
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: Ich weiß es nicht.
+      ipa: /ɪç vaɪ̯s ɛs nɪçt/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Tôi không biết.
+      examples:
+        - target: "Was heißt das auf Deutsch? – Ich weiß es nicht."
+          translation:
+            vi: Cái này tiếng Đức gọi là gì? – Tôi không biết.
+      pronunciation_note:
+        vi: "ich và nicht có ch nhẹ, xì giữa lưỡi, không bật “k”; weiß đọc “vais”."
+      confusion:
+        vi: "Ich weiß es nicht = không biết (thông tin); Ich verstehe das nicht = không hiểu (nghe/đọc mà không hiểu)."
+
+  - key: de:item:p0u3-frage
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: die Frage, -n
+      ipa: /ˈfʁaːɡə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu hỏi
+      examples:
+        - target: Die Frage ist gut.
+          translation:
+            vi: Câu hỏi hay.
+      pronunciation_note:
+        vi: "r sau f đọc ở cổ họng như “g/gh” nhẹ, a dài: “FRAA-gơ”."
+
+  - key: de:item:p0u3-wort
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Wort, ¨-er
+      ipa: /vɔʁt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ (một từ trong câu)
+      examples:
+        - target: "Das Wort ist neu. Wie schreibt man das?"
+          translation:
+            vi: Từ này mới. Viết thế nào nhỉ?
+      pronunciation_note:
+        vi: "w đọc “v”, o ngắn: “vort”. Số nhiều die Wörter có ö."
+
+  # ================= bài 3: trọng âm và từ ghép =================
+  - key: de:item:p0u3-g-wortakzent
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [pronunciation]
+    front:
+      text: "Wortakzent: Tafel, verstehen, Universität"
+      pos: trọng âm
+    back:
+      meaning:
+        vi: "Từ gốc Đức nhấn âm tiết đầu của gốc từ (TA-fel, FENS-ter); tiền tố be-, ge-, ver-, er-, ent-, zer- không bao giờ nhấn (ver-STE-hen). Từ vay mượn thường nhấn cuối: -ion, -tät, -ie, -ieren, -ant/-ent, -é (Informa-TION, Universi-TÄT, Ca-FÉ)."
+      examples:
+        - target: Das Problem ist neu.
+          translation:
+            vi: Vấn đề này mới. (Pro-BLEM nhấn cuối)
+        - target: Ich verstehe das nicht.
+          translation:
+            vi: "Tôi không hiểu. (ver-STE-he, ver- không nhấn)"
+        - target: Das Kino ist da.
+          translation:
+            vi: Rạp chiếu phim ở kia. (KI-no nhấn đầu, ngoại lệ)
+      confusion:
+        vi: "Có ngoại lệ: das Kino, das Handy, der Computer theo trọng âm riêng; gặp từ mới hãy nghe và ghi trọng âm lên thẻ từ."
+
+  - key: de:item:p0u3-g-komposita
+    type: grammar_point
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Komposita: die Schule + das Buch = das Schulbuch"
+      pos: từ ghép
+    back:
+      meaning:
+        vi: "Từ ghép tiếng Đức viết liền thành một từ; phần cuối là từ chính, phần đầu chỉ bổ nghĩa (ngược với tiếng Việt: “sách giáo khoa” – từ chính đứng trước). Giống và số nhiều luôn theo phần cuối. Trọng âm rơi vào phần đầu."
+      examples:
+        - target: das Schulbuch (die Schule + das Buch)
+          translation:
+            vi: sách giáo khoa (trường học + sách) – giống theo Buch
+        - target: die Handynummer (das Handy + die Nummer)
+          translation:
+            vi: số điện thoại di động – giống theo Nummer
+        - target: der Schreibtisch (schreiben + der Tisch)
+          translation:
+            vi: bàn làm việc, bàn viết – giống theo Tisch
+      confusion:
+        vi: "Đừng lấy giống của phần đầu: die Schule nhưng das Schulbuch. Có từ ghép cần thêm âm nối (-s-, -n-), học dần ở A1–B1."
+
+  - key: de:item:p0u3-restaurant
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Restaurant, -s
+      ipa: /ʁɛstoˈʁɑ̃ː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà hàng
+      examples:
+        - target: Das Restaurant ist gut.
+          translation:
+            vi: Nhà hàng này ngon.
+      pronunciation_note:
+        vi: "Từ gốc Pháp, nhấn âm cuối và không đọc t cuối: “res-tô-RĂNG” (âm mũi)."
+
+  - key: de:item:p0u3-cafe
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Café, -s
+      ipa: /kaˈfeː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quán cà phê
+      examples:
+        - target: Das Café ist da.
+          translation:
+            vi: Quán cà phê ở kia.
+      pronunciation_note:
+        vi: "Nhấn âm cuối, é là ê dài: “ca-PHÊ”."
+      confusion:
+        vi: "das Café là quán; der Kaffee là đồ uống cà phê (học ở A1)."
+
+  - key: de:item:p0u3-kino
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Kino, -s
+      ipa: /ˈkiːno/
+      pos: danh từ
+    back:
+      meaning:
+        vi: rạp chiếu phim
+      examples:
+        - target: Das Kino ist neu.
+          translation:
+            vi: Rạp chiếu phim mới.
+      pronunciation_note:
+        vi: "Nhấn âm đầu, i dài: “KII-nô”."
+
+  - key: de:item:p0u3-universitaet
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: die Universität, -en
+      ipa: /univɛʁziˈtɛːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường đại học
+      examples:
+        - target: Die Universität ist da.
+          translation:
+            vi: Trường đại học ở kia.
+      pronunciation_note:
+        vi: "Đuôi -tät luôn nhấn: “u-ni-ver-si-TÄT”; v ở đây đọc như “v” tiếng Việt vì là từ gốc Latinh."
+
+  - key: de:item:p0u3-telefon
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Telefon, -e
+      ipa: /teleˈfoːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện thoại (nói chung, nhất là điện thoại bàn)
+      examples:
+        - target: Das Telefon ist hier.
+          translation:
+            vi: Điện thoại ở đây.
+      pronunciation_note:
+        vi: "Nhấn âm cuối, o dài: “tê-lê-PHÔN”."
+      confusion:
+        vi: "das Telefon là điện thoại nói chung; das Handy là điện thoại di động."
+
+  - key: de:item:p0u3-computer
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Computer, -
+      ipa: /kɔmˈpjuːtɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy tính
+      examples:
+        - target: Der Computer ist neu.
+          translation:
+            vi: Máy tính mới.
+      pronunciation_note:
+        vi: "Đọc gần như tiếng Anh, nhấn âm giữa: “com-PIU-ta”; -er cuối đọc “a” nhẹ."
+
+  - key: de:item:p0u3-information
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: die Information, -en
+      ipa: /ɪnfɔʁmaˈt͡si̯oːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông tin; quầy thông tin (die Information ở nhà ga, sân bay)
+      examples:
+        - target: Die Information ist da.
+          translation:
+            vi: Quầy thông tin ở kia.
+      pronunciation_note:
+        vi: "-tion đọc “tsi-ôn” và luôn nhấn: “in-phor-ma-TSIÔN”. Mọi từ đuôi -tion đều là giống cái (die)."
+
+  - key: de:item:p0u3-problem
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Problem, -e
+      ipa: /pʁoˈbleːm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vấn đề
+      examples:
+        - target: "Kein Problem!"
+          translation:
+            vi: Không vấn đề gì! / Không sao!
+      pronunciation_note:
+        vi: "Nhấn âm cuối, e dài: “prô-BLÊM”, khác tiếng Anh (nhấn đầu)."
+
+  - key: de:item:p0u3-woerterbuch
+    type: vocab
+    level: pre_a1
+    difficulty: 2
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Wörterbuch, ¨-er
+      ipa: /ˈvœʁtɐˌbuːx/
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ điển
+      examples:
+        - target: Das Wörterbuch ist hier.
+          translation:
+            vi: Cuốn từ điển ở đây.
+      pronunciation_note:
+        vi: "Nhấn phần đầu: “VÖR-ta-buukh”; ö tròn môi như “ô” nhưng lưỡi như “ê”."
+      confusion:
+        vi: "die Wörter (các từ) + das Buch (sách) = das Wörterbuch: giống theo Buch. Số nhiều die Wörterbücher."
+
+  - key: de:item:p0u3-buero
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: das Büro, -s
+      ipa: /byˈʁoː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn phòng
+      examples:
+        - target: Das Büro ist da.
+          translation:
+            vi: Văn phòng ở kia.
+      pronunciation_note:
+        vi: "Từ gốc Pháp, nhấn âm cuối: “bü-RÔ”; ü giữ lưỡi như “i” và tròn môi."
+
+  # ================= bài 4: Das ist … – Herr/Frau =================
+  - key: de:item:p0u3-g-das-ist
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Das ist … / Ist das …?"
+      pos: mẫu câu
+    back:
+      meaning:
+        vi: "Das ist + tên người hoặc danh từ = “Đây là / Đó là …”, dùng để giới thiệu và chỉ vật; das ở đây không đổi theo giống. Muốn hỏi có/không, đưa ist lên đầu: Ist das …? và trả lời Ja. / Nein."
+      examples:
+        - target: Das ist Frau Wagner.
+          translation:
+            vi: Đây là bà Wagner.
+        - target: "Ist das Herr Becker? – Nein, das ist Herr Weber."
+          translation:
+            vi: Đó có phải ông Becker không? – Không, đó là ông Weber.
+        - target: "Was ist das? – Das ist die Tafel."
+          translation:
+            vi: Cái gì đây? – Đây là cái bảng.
+      confusion:
+        vi: "Đừng dịch “Đây là” thành “Hier ist”: Hier ist das Buch nghĩa là “Sách đây này” (khi đưa hay tìm thấy), không dùng để giới thiệu người."
+
+  - key: de:item:p0u3-g-anrede
+    type: grammar_point
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [grammar]
+    front:
+      text: "Anrede: Herr / Frau + Nachname"
+      pos: xưng hô
+    back:
+      meaning:
+        vi: "Khi xưng Sie (lịch sự), gọi người lớn bằng Herr (ông/anh) hoặc Frau (bà/chị/cô) + HỌ: Herr Becker, Frau Wagner. Không ghép Herr/Frau với tên riêng (không nói Herr Thomas). Người Việt Trần Thị Lan được gọi là Frau Tran, vì Tran là họ (Nachname)."
+      examples:
+        - target: "Guten Tag, Frau Wagner!"
+          translation:
+            vi: Chào cô Wagner! (lịch sự, xưng Sie)
+        - target: Das ist Herr Nguyen.
+          translation:
+            vi: Đây là anh/ông Nguyễn. (Nguyen là họ)
+      confusion:
+        vi: "Tiếng Việt gọi “thầy Minh, chị Lan” theo tên; tiếng Đức gọi theo họ: Herr Nguyen, Frau Tran. Frau dùng cho mọi phụ nữ trưởng thành, dù đã kết hôn hay chưa."
+
+  - key: de:item:p0u3-ja
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: ja
+      ipa: /jaː/
+      pos: từ trả lời
+    back:
+      meaning:
+        vi: vâng, có, đúng (trả lời câu hỏi có/không)
+      examples:
+        - target: "Ist das Frau Wagner? – Ja."
+          translation:
+            vi: Đó có phải bà Wagner không? – Vâng, đúng.
+      pronunciation_note:
+        vi: "j đọc như “gi” giọng Nam (giống y trong tiếng Anh “yes”), a dài: “jaa”."
+
+  - key: de:item:p0u3-nein
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: nein
+      ipa: /naɪ̯n/
+      pos: từ trả lời
+    back:
+      meaning:
+        vi: không (trả lời câu hỏi có/không)
+      examples:
+        - target: "Ist das Herr Klein? – Nein, das ist Herr Koch."
+          translation:
+            vi: Đó có phải ông Klein không? – Không, đó là ông Koch.
+      pronunciation_note:
+        vi: "ei đọc “ai”: “nain”."
+
+  - key: de:item:p0u3-herr
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Herr, -en
+      ipa: /hɛʁ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ông, anh (dùng trước họ khi xưng hô lịch sự); quý ông
+      examples:
+        - target: Das ist Herr Becker.
+          translation:
+            vi: Đây là ông Becker.
+      pronunciation_note:
+        vi: "e ngắn, r cuối gần như “a” nhẹ: “he-a”."
+      confusion:
+        vi: "Khi gọi trực tiếp vẫn là Herr (Guten Tag, Herr Becker!); ở các cách khác Herr thành Herrn (an Herrn Becker, học ở A1). Số nhiều die Herren (Sehr geehrte Damen und Herren)."
+
+  - key: de:item:p0u3-hier
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: hier
+      ipa: /hiːɐ̯/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ở đây
+      examples:
+        - target: Herr Weber ist jetzt hier.
+          translation:
+            vi: Bây giờ ông Weber ở đây.
+      pronunciation_note:
+        vi: "ie là i dài, r cuối thành “a” nhẹ: “hia”."
+
+  - key: de:item:p0u3-da
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: da
+      ipa: /daː/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ở đó, ở kia; có mặt (ist da = đã đến, có mặt)
+      examples:
+        - target: Frau Wagner ist da.
+          translation:
+            vi: Cô Wagner đến rồi. / Cô Wagner có mặt.
+      pronunciation_note:
+        vi: "a dài: “đaa”; d đầu từ hữu thanh như “đ” tiếng Việt."
+
+  - key: de:item:p0u3-gut
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: gut
+      ipa: /ɡuːt/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tốt, hay, giỏi; được (đồng ý)
+      examples:
+        - target: Das ist gut!
+          translation:
+            vi: Tốt quá! / Hay đấy!
+      pronunciation_note:
+        vi: "u dài, t cuối bật rõ: “guut”."
+
+  - key: de:item:p0u3-jetzt
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: jetzt
+      ipa: /jɛt͡st/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: bây giờ
+      examples:
+        - target: Frau Wagner ist jetzt hier.
+          translation:
+            vi: Bây giờ cô Wagner ở đây.
+      pronunciation_note:
+        vi: "tz đọc “ts”, thêm t cuối: “jetst” – đừng nuốt âm cuối."
+
+  - key: de:item:p0u3-wer-ist-das
+    type: phrase
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: Wer ist das?
+      ipa: /veːɐ̯ ɪst das/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Đó là ai? / Ai đấy?
+      examples:
+        - target: "Wer ist das? – Das ist Herr Schmidt."
+          translation:
+            vi: Đó là ai? – Đó là ông Schmidt.
+      pronunciation_note:
+        vi: "Wer đọc “vê-a” (không phải “uơ” như tiếng Anh), hạ giọng ở cuối câu."
+      confusion:
+        vi: "Wer = ai; Was = cái gì. Wer ist das? hỏi về người, Was ist das? hỏi về vật."
+
+  - key: de:item:p0u3-nachname
+    type: vocab
+    level: pre_a1
+    difficulty: 1
+    skill_tags: [vocabulary, pronunciation]
+    front:
+      text: der Nachname, -n
+      ipa: /ˈnaːxˌnaːmə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: họ (trong họ tên)
+      examples:
+        - target: Tran ist der Nachname.
+          translation:
+            vi: Trần là họ.
+      pronunciation_note:
+        vi: "Nhấn phần đầu: “NAAKH-naa-mơ”; ch sau a đọc “kh”."
+      confusion:
+        vi: "Trên form của Đức, Nachname (hay Familienname) là HỌ, ghi trước hoặc ở ô riêng; tên gọi ghi vào ô Vorname. Người Việt hay điền nhầm tên vào ô Nachname."

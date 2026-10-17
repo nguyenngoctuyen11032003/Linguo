@@ -1,0 +1,3 @@
+# Wordlist of unit P0U3 (Im Deutschkurs): correct words the German lint dictionary lacks.
+# Vietnamese middle name without diacritics (Tran Thi Lan → Frau Tran), used as a distractor in a reading task.
+Thi

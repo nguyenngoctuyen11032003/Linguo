@@ -1,0 +1,340 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u3-der-die-das
+order_index: 1
+level: pre_a1
+title:
+  vi: der, die, das – đồ vật trong lớp (Der Tisch, die Tafel, das Buch)
+objectives:
+  - vi: Gọi tên đồ vật trong lớp học luôn kèm mạo từ der, die hoặc das.
+  - vi: Đọc hiểu ký hiệu số nhiều trên thẻ từ và trong từ điển (-e, ¨-er, -, -s, -n).
+  - vi: Viết hoa mọi danh từ khi viết tiếng Đức.
+estimated_minutes: 12
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:p0u2-wiederholung]
+items:
+  - item: de:item:p0u3-g-genus-artikel
+  - item: de:item:p0u3-g-nomen-gross
+  - item: de:item:p0u3-tisch
+  - item: de:item:p0u3-stuhl
+  - item: de:item:p0u3-buch
+  - item: de:item:p0u3-heft
+  - item: de:item:p0u3-stift
+  - item: de:item:p0u3-kuli
+  - item: de:item:p0u3-tafel
+  - item: de:item:p0u3-fenster
+  - item: de:item:p0u3-handy
+  - item: de:item:p0u3-tasche
+  - item: de:item:p0u3-bleistift
+  - item: de:item:p0u3-radiergummi
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được mười mấy đồ vật quanh bàn học bằng tiếng Đức – der Tisch, die Tafel, das Buch… – và đọc được thẻ từ kiểu “das Buch, ¨-er”.
+  - type: explain
+    text:
+      vi: Tiếng Việt nói “cái bàn, quyển sách” mà không có giống; tiếng Đức chia mọi danh từ thành ba giống, nhận ra qua mạo từ đi trước. der là giống đực, die là giống cái, das là giống trung; ở số nhiều thì mọi giống đều dùng die.
+  - type: explain
+    text:
+      vi: Giống không đoán được theo nghĩa – cái bàn là der Tisch nhưng cái bảng là die Tafel, quyển sách là das Buch. Vì vậy bạn luôn học cả cụm mạo từ + danh từ, giống như học chữ “cái, quyển, cây” đi kèm danh từ trong tiếng Việt nhưng phải nhớ chính xác.
+  - type: explain
+    text:
+      vi: Thẻ từ ghi luôn cách tạo số nhiều sau dấu phẩy. “-e” là thêm e (der Tisch → die Tische), “¨-er” là thêm dấu hai chấm lên nguyên âm và thêm er (das Buch → die Bücher), “-” là giữ nguyên (das Fenster → die Fenster).
+  - type: explain
+    text:
+      vi: Mọi danh từ tiếng Đức viết hoa chữ cái đầu, kể cả ở giữa câu – der Tisch, das Handy. Mạo từ der/die/das thì viết thường, trừ khi đứng đầu câu.
+  - type: deep_explain
+    text:
+      vi: Một số đuôi gợi ý giống khá tin cậy và bạn sẽ gặp dần – -e thường là giống cái (die Tasche, die Frage), -chen luôn là giống trung (das Mädchen), -er chỉ người làm nghề thường là giống đực (der Lehrer). Nhưng có rất nhiều ngoại lệ, nên cách chắc chắn nhất vẫn là học cụm “der/die/das + danh từ + số nhiều” ngay từ đầu. Một mẹo hay là ghi màu cho thẻ từ (xanh cho der, đỏ cho die, xanh lá cho das) để mắt nhớ giống. Ký hiệu số nhiều còn có -n (die Tafel → die Tafeln), -en, -s (das Handy → die Handys) và ¨-e (der Stuhl → die Stühle); số nhiều luôn đi với die.
+  - type: example
+    target: der Tisch – die Tische
+    target_lang: de
+    translation:
+      vi: cái bàn – những cái bàn
+    note:
+      vi: "Thẻ từ ghi “der Tisch, -e”: số nhiều thêm -e và mạo từ đổi thành die."
+  - type: example
+    target: das Buch – die Bücher
+    target_lang: de
+    translation:
+      vi: quyển sách – những quyển sách
+    note:
+      vi: "Thẻ từ ghi “das Buch, ¨-er”: u thành ü, thêm -er."
+  - type: example
+    target: der Stuhl, die Tafel und das Fenster
+    target_lang: de
+    translation:
+      vi: cái ghế, cái bảng và cửa sổ
+    note:
+      vi: Ba danh từ, ba giống khác nhau – không có quy tắc theo nghĩa, phải nhớ từng từ.
+  - type: example
+    target: Das Buch und das Heft sind neu.
+    target_lang: de
+    translation:
+      vi: Quyển sách và quyển vở đều mới.
+    note:
+      vi: Câu đọc để thấy cách viết hoa – Buch và Heft là danh từ nên viết hoa; das giữa câu viết thường, Das đầu câu viết hoa (sind = là, học ở A1).
+  - type: common_mistake
+    wrong: Tisch, Tafel, Buch
+    right: der Tisch, die Tafel, das Buch
+    target_lang: de
+    note:
+      vi: Học từ trơ không có mạo từ thì sau này không biết dùng der, die hay das. Luôn ghi và đọc to cả cụm.
+  - type: common_mistake
+    wrong: das buch und der tisch
+    right: das Buch und der Tisch
+    target_lang: de
+    note:
+      vi: Theo thói quen tiếng Việt, người Việt hay viết thường danh từ. Trong tiếng Đức, Buch và Tisch là danh từ nên luôn viết hoa.
+  - type: common_mistake
+    wrong: der Tasche
+    right: die Tasche
+    target_lang: de
+    note:
+      vi: Đừng đoán giống theo nghĩa hay theo cảm giác (“cái túi” không có giống trong tiếng Việt). Tra thẻ từ – die Tasche, -n.
+  - type: summary
+    points:
+      - vi: "Ba giống: der (đực), die (cái), das (trung); số nhiều luôn là die."
+      - vi: Giống không theo nghĩa – học cụm mạo từ + danh từ + số nhiều.
+      - vi: "Ký hiệu số nhiều: -e (Tische), ¨-e (Stühle), ¨-er (Bücher), - (Fenster), -n (Tafeln), -s (Handys)."
+      - vi: Mọi danh từ viết hoa chữ cái đầu, kể cả giữa câu.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u3l1-mcq-der-tisch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-tisch
+    prompt:
+      stem: "Chọn mạo từ đúng: ___ Tisch (cái bàn)"
+      stem_lang: vi
+      options:
+        - { id: k4r, text: der, lang: de }
+        - { id: p9m, text: die, lang: de }
+        - { id: w2t, text: das, lang: de }
+    answer:
+      correct_option_id: k4r
+    explanation:
+      vi: Thẻ từ ghi “der Tisch, -e” – Tisch là giống đực. Giống không suy ra được từ nghĩa “cái bàn”, nên phải nhớ cả cụm der Tisch.
+    display_answer: der
+
+  - key: de:exercise:p0u3l1-listen-die-tafel
+    type: listen
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-tafel
+    prompt:
+      audio_asset_id: null
+      fallback_text: die Tafel
+      options:
+        - { id: a7c, text: die Tafel, lang: de }
+        - { id: m3x, text: die Tasche, lang: de }
+        - { id: z8q, text: der Tisch, lang: de }
+        - { id: e5n, text: das Heft, lang: de }
+    answer:
+      correct_option_id: a7c
+    explanation:
+      vi: Bạn nghe “die TAA-fơl” – a dài và kết thúc bằng -el. die Tasche có a ngắn và kết thúc bằng âm “sơ”.
+    display_answer: die Tafel
+
+  - key: de:exercise:p0u3l1-fill-artikel-hint
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-g-genus-artikel
+    prompt:
+      template: "{{b1}} Buch · {{b2}} Stuhl · {{b3}} Tasche"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa: quyển sách · cái ghế · cái túi."
+        - "Gợi ý: das Buch, ¨-er · der Stuhl, ¨-e · die Tasche, -n."
+    answer:
+      blanks:
+        b1: [das]
+        b2: [der]
+        b3: [die]
+    explanation:
+      vi: Mỗi danh từ có giống riêng ghi trên thẻ từ – das Buch (trung), der Stuhl (đực), die Tasche (cái). Ở số ít, mạo từ là dấu hiệu duy nhất cho biết giống.
+    display_answer: das Buch · der Stuhl · die Tasche
+
+  - key: de:exercise:p0u3l1-mcq-gross-schreiben
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-g-nomen-gross
+    prompt:
+      stem: "Bạn chép danh sách đồ vật vào vở như sau: das buch, das heft, der stift. Những chữ nào phải viết hoa?"
+      stem_lang: vi
+      options:
+        - { id: c6h, text: "buch, heft, stift", lang: vi }
+        - { id: r1d, text: "das, das, der", lang: vi }
+        - { id: j5v, text: Tất cả các chữ, lang: vi }
+        - { id: u9s, text: Không chữ nào – viết thường như tiếng Việt, lang: vi }
+    answer:
+      correct_option_id: c6h
+    explanation:
+      vi: Buch, Heft và Stift là danh từ nên luôn viết hoa – das Buch, das Heft, der Stift. Mạo từ der/das giữa danh sách vẫn viết thường.
+    display_answer: "buch, heft, stift"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u3l1-fill-plural-umlaut
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-buch
+    prompt:
+      template: "das Buch, ¨-er → die {{b1}} · der Stuhl, ¨-e → die {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Bücher]
+        b2: [Stühle]
+    known_wrong:
+      - answer: Buche
+        feedback_vi: "¨-er nghĩa là thêm dấu hai chấm (u → ü) và thêm -er: Bücher."
+        error_tag: plural_form
+      - answer: Buchs
+        feedback_vi: "Buch không lấy -s ở số nhiều; ký hiệu ¨-er cho dạng Bücher."
+        error_tag: plural_form
+      - answer: Stuhle
+        feedback_vi: "Dấu ¨ trong ¨-e nghĩa là u → ü: Stühle."
+        error_tag: plural_form
+      - answer: Stuhls
+        feedback_vi: "Stuhl không lấy -s ở số nhiều; ký hiệu ¨-e cho dạng Stühle."
+        error_tag: plural_form
+    explanation:
+      vi: Dấu ¨ trên ký hiệu số nhiều nghĩa là nguyên âm chính đổi thành ä/ö/ü. Buch + ¨-er = Bücher, Stuhl + ¨-e = Stühle. Nếu bàn phím không có ü, bạn có thể gõ ue (Buecher).
+    display_answer: die Bücher · die Stühle
+
+  - key: de:exercise:p0u3l1-fill-artikel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-g-genus-artikel
+    prompt:
+      template: "{{b1}} Fenster · {{b2}} Kuli · {{b3}} Handy · {{b4}} Tafel"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+        - { id: b4, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [das]
+        b2: [der]
+        b3: [das]
+        b4: [die]
+    explanation:
+      vi: das Fenster, der Kuli, das Handy, die Tafel – bốn từ này không có quy tắc nghĩa nào, chỉ có thể nhớ cụm. Nếu sai, hãy đọc to cả cụm ba lần.
+    display_answer: das Fenster · der Kuli · das Handy · die Tafel
+
+  - key: de:exercise:p0u3l1-tr-buch-kuli
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-kuli
+    prompt:
+      source_text: quyển sách và cây bút bi
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Buch und der Kuli
+        - der Kuli und das Buch
+        - das Buch und der Kugelschreiber
+        - der Kugelschreiber und das Buch
+    known_wrong:
+      - answer: die Buch und der Kuli
+        feedback_vi: Buch là giống trung – das Buch.
+        error_tag: article
+      - answer: das Buch und die Kuli
+        feedback_vi: Kuli là giống đực – der Kuli.
+        error_tag: article
+      - answer: Buch und Kuli
+        feedback_vi: Thiếu mạo từ. Tiếng Đức gọi đồ vật cụ thể phải có mạo từ – das Buch, der Kuli.
+        error_tag: article
+    explanation:
+      vi: Quyển sách là das Buch, cây bút bi là der Kuli (dạng nói tắt của der Kugelschreiber). “và” là und. Mỗi danh từ mang mạo từ của riêng nó.
+    display_answer: das Buch und der Kuli
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u3l1-wb-tisch-stuhl
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-stuhl
+    prompt:
+      instruction: "Ghép thành cụm tiếng Đức: “cái bàn và cái ghế”"
+      tokens:
+        - { id: t-stuhl, text: Stuhl }
+        - { id: t-der1, text: der }
+        - { id: t-und, text: und }
+        - { id: t-das, text: das }
+        - { id: t-tisch, text: Tisch }
+        - { id: t-der2, text: der }
+        - { id: t-die, text: die }
+    answer:
+      orders:
+        - [t-der1, t-tisch, t-und, t-der2, t-stuhl]
+        - [t-der2, t-tisch, t-und, t-der1, t-stuhl]
+        - [t-der1, t-stuhl, t-und, t-der2, t-tisch]
+        - [t-der2, t-stuhl, t-und, t-der1, t-tisch]
+    explanation:
+      vi: Tisch và Stuhl đều là giống đực nên cả hai đi với der – der Tisch und der Stuhl. die và das là phương án thừa.
+    display_answer: der Tisch und der Stuhl
+
+  - key: de:exercise:p0u3l1-mcq-karteikarte
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-handy
+    prompt:
+      stem: "Bạn làm thẻ từ cho “điện thoại di động”. Thẻ nào ghi đầy đủ và đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: f2g, text: "das Handy, -s", lang: de }
+        - { id: y7k, text: Handy, lang: de }
+        - { id: n4b, text: "der Handy, -s", lang: de }
+        - { id: q8w, text: "das Handy, -e", lang: de }
+    answer:
+      correct_option_id: f2g
+    explanation:
+      vi: Một thẻ từ tốt có mạo từ đúng (das), danh từ viết hoa và ký hiệu số nhiều (-s → die Handys). “Handy” trơ thiếu giống; der là sai giống; -e là sai số nhiều.
+    display_answer: "das Handy, -s"
+
+  - key: de:exercise:p0u3l1-mcq-plural-fenster
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-fenster
+    prompt:
+      stem: "Từ điển ghi: das Fenster, -. Vậy “những cửa sổ” là gì?"
+      stem_lang: vi
+      options:
+        - { id: h3p, text: die Fenster, lang: de }
+        - { id: v6m, text: die Fensters, lang: de }
+        - { id: s1z, text: das Fenster, lang: de }
+        - { id: b9e, text: die Fenstern, lang: de }
+    answer:
+      correct_option_id: h3p
+    explanation:
+      vi: Ký hiệu “-” nghĩa là danh từ giữ nguyên ở số nhiều, chỉ mạo từ đổi thành die. das Fenster là số ít; Fensters và Fenstern là dạng khác, không phải số nhiều cơ bản.
+    display_answer: die Fenster

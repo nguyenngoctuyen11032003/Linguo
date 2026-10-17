@@ -1,0 +1,433 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u3-wiederholung
+order_index: 5
+level: pre_a1
+title:
+  vi: "Ôn P0: đọc to, nghe hiểu, chép chính tả ngắn (Wiederholung)"
+objectives:
+  - vi: Đọc to và hiểu một đoạn tự giới thiệu 4 câu.
+  - vi: Nghe hiểu lời giới thiệu ngắn và các câu dùng trong lớp.
+  - vi: Viết đúng chính tả câu ngắn – viết hoa danh từ, đúng ä/ö/ü/ß và mạo từ.
+estimated_minutes: 16
+skills: [reading, listening, writing, pronunciation]
+prerequisites: [de:lesson:p0u3-das-ist]
+items:
+  - item: de:item:p0u3-g-genus-artikel
+    role: reuse
+  - item: de:item:p0u3-g-nomen-gross
+    role: reuse
+  - item: de:item:p0u3-g-satzmelodie
+    role: reuse
+  - item: de:item:p0u3-g-wortakzent
+    role: reuse
+  - item: de:item:p0u3-g-komposita
+    role: reuse
+  - item: de:item:p0u3-g-das-ist
+    role: reuse
+  - item: de:item:p0u3-g-anrede
+    role: reuse
+  - item: de:item:p0u3-tafel
+    role: reuse
+  - item: de:item:p0u3-stuhl
+    role: reuse
+  - item: de:item:p0u3-buch
+    role: reuse
+  - item: de:item:p0u3-wort
+    role: reuse
+  - item: de:item:p0u3-woerterbuch
+    role: reuse
+  - item: de:item:p0u3-radiergummi
+    role: reuse
+  - item: de:item:p0u3-universitaet
+    role: reuse
+  - item: de:item:p0u3-noch-einmal-bitte
+    role: reuse
+  - item: de:item:p0u3-langsam-bitte
+    role: reuse
+  - item: de:item:p0u3-verstehen
+    role: reuse
+  - item: de:item:p0u3-was-heisst-auf-deutsch
+    role: reuse
+  - item: de:item:p0u3-wie-schreibt-man-das
+    role: reuse
+  - item: de:item:p0u3-herr
+    role: reuse
+  - item: de:item:p0u3-da
+    role: reuse
+  - item: de:item:p0u3-jetzt
+    role: reuse
+  - item: de:item:p0u1-g-vokallaenge
+    role: reuse
+  - item: de:item:p0u1-g-schwa-er
+    role: reuse
+  - item: de:item:p0u1-frau
+    role: reuse
+  - item: de:item:p0u1-lehrer
+    role: reuse
+  - item: de:item:p0u2-g-w-v-f-z
+    role: reuse
+  - item: de:item:p0u2-g-ch-laute
+    role: reuse
+  - item: de:item:p0u2-g-s-laute
+    role: reuse
+  - item: de:item:p0u2-g-r-laut
+    role: reuse
+  - item: de:item:p0u2-g-auslautverhaertung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn lại cả chương trình nhập môn – bạn đọc to một đoạn tự giới thiệu, nghe hiểu lời giới thiệu trong lớp và viết đúng chính tả những câu đầu tiên.
+  - type: explain
+    text:
+      vi: Khi đọc to, nhớ ba điều đã học – nguyên âm dài/ngắn (Tafel có a dài, Tasche có a ngắn), trọng âm (TA-fel nhưng Universi-TÄT) và ngữ điệu câu (câu kể hạ giọng, câu hỏi có/không lên giọng).
+  - type: explain
+    text:
+      vi: Khi viết, kiểm tra ba điều – danh từ viết hoa (das Buch, Frau Wagner), đúng ä/ö/ü/ß (Bücher, Wörter, heißt) và đúng mạo từ (die Tafel, das Wörterbuch). Không có ü trên bàn phím thì gõ ue, máy chấm vẫn hiểu.
+  - type: explain
+    text:
+      vi: Khi nghe, đừng cố hiểu từng tiếng như tiếng Việt; hãy bắt tên người, Herr/Frau, das ist, ja/nein. Không nghe kịp thì dùng ngay “Wie bitte? Noch einmal, bitte.”.
+  - type: deep_explain
+    text:
+      vi: "Một đoạn tự giới thiệu ngắn của bạn có thể dùng đủ những gì đã học – Guten Tag! Ich heiße … Ich komme aus Vietnam. Das ist Frau Wagner. Từ A1 bạn sẽ học chia động từ (ich bin, du bist…), nên những câu mẫu như Ich heiße …, Ich verstehe das nicht. sẽ được giải thích đầy đủ. Hãy luyện đọc to đoạn văn trong bài, ghi âm lại và so với giọng đọc mẫu: chú ý âm cuối (jetzt, heißt) phải bật rõ."
+  - type: example
+    target: "Guten Tag! Ich heiße Minh. Ich komme aus Vietnam. Das ist Frau Wagner."
+    target_lang: de
+    translation:
+      vi: Xin chào! Tôi tên là Minh. Tôi đến từ Việt Nam. Đây là cô Wagner.
+    note:
+      vi: Bốn câu kể – mỗi câu hạ giọng ở cuối. Frau Wagner – Frau + họ, lịch sự.
+  - type: example
+    target: "Was heißt das auf Deutsch? – Radiergummi. Der Radiergummi."
+    target_lang: de
+    translation:
+      vi: Cái này tiếng Đức gọi là gì? – Radiergummi. Der Radiergummi (cục tẩy).
+    note:
+      vi: Câu hỏi có từ để hỏi was – hạ giọng; câu trả lời nhắc cả mạo từ der.
+  - type: example
+    target: "Ist das Herr Becker? – Ja. Herr Becker ist jetzt da."
+    target_lang: de
+    translation:
+      vi: Đó có phải ông Becker không? – Vâng. Ông Becker đến rồi.
+    note:
+      vi: Câu hỏi có/không lên giọng ↗; ist da ở đây nghĩa là “có mặt, đã đến”.
+  - type: example
+    target: die Tafel – die Tasche – der Lehrer
+    target_lang: de
+    translation:
+      vi: cái bảng – cái túi – thầy giáo
+    note:
+      vi: "Đọc to để ôn unit 1 – a dài trong Tafel (TAA-fơl), a ngắn trong Tasche (TA-sơ); -e cuối là “ơ” rất nhẹ, -er cuối trong Lehrer đọc như “a” nhẹ, không cuộn r."
+  - type: example
+    target: Wie – noch – ich – schreibt – verstehen – Frage – und – Tag
+    target_lang: de
+    translation:
+      vi: thế nào – nữa – tôi – viết – hiểu – câu hỏi – và – ngày
+    note:
+      vi: "Đọc to để ôn unit 2 – w đọc “v” (Wie), ch sau o là “kh” (noch), ch sau i xì nhẹ (ich), sch và st đầu gốc từ là “sch/scht” (schreibt, verstehen), r đầu âm tiết đọc ở cổ họng (Frage), d/g cuối từ đọc t/k (und, Tag)."
+  - type: common_mistake
+    wrong: das ist frau wagner.
+    right: Das ist Frau Wagner.
+    target_lang: de
+    note:
+      vi: Đầu câu viết hoa (Das); Frau là danh từ nên viết hoa; Wagner là tên riêng nên viết hoa.
+  - type: common_mistake
+    wrong: die Buchs, die Stuhls
+    right: die Bücher, die Stühle
+    target_lang: de
+    note:
+      vi: Đừng tự thêm -s như tiếng Anh. Thẻ từ ghi das Buch, ¨-er và der Stuhl, ¨-e – đổi u thành ü rồi thêm -er hoặc -e.
+  - type: summary
+    points:
+      - vi: "Đọc to: nguyên âm dài/ngắn, trọng âm đúng chỗ, câu kể ↘, câu hỏi có/không ↗."
+      - vi: "Viết: danh từ viết hoa, đúng ä/ö/ü/ß, luôn kèm mạo từ đúng."
+      - vi: "Nghe: bắt tên, Herr/Frau, das ist, ja/nein; không kịp thì Wie bitte? Noch einmal, bitte."
+      - vi: "Giới thiệu người: Das ist Frau/Herr + họ."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u3l5-listen-vorstellung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-g-das-ist
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Tag! Ich heiße Lena Fischer. Das ist Herr Klein. Herr Klein ist jetzt hier.
+      options:
+        - { id: v1a, text: "Lena Fischer chào và giới thiệu ông Klein; bây giờ ông Klein ở đây.", lang: vi }
+        - { id: v1b, text: Ông Klein chào và giới thiệu Lena Fischer., lang: vi }
+        - { id: v1c, text: Lena Fischer giới thiệu bà Klein., lang: vi }
+        - { id: v1d, text: Lena Fischer hỏi ông Klein là ai., lang: vi }
+    answer:
+      correct_option_id: v1a
+    explanation:
+      vi: Người nói là Lena Fischer (Ich heiße …), giới thiệu Herr Klein (Herr = ông, nam giới) bằng Das ist …; câu cuối cho biết ông Klein đang ở đây (jetzt hier).
+    display_answer: "Lena Fischer chào và giới thiệu ông Klein; bây giờ ông Klein ở đây."
+
+  - key: de:exercise:p0u3l5-listen-noch-einmal
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-noch-einmal-bitte
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wie bitte? Noch einmal, bitte. Langsam, bitte.
+      options:
+        - { id: v2a, text: "Gì cơ ạ? Xin nhắc lại một lần nữa, nói chậm thôi ạ.", lang: vi }
+        - { id: v2b, text: Từ đó viết thế nào? Tôi không hiểu., lang: vi }
+        - { id: v2c, text: Cảm ơn! Tôi biết rồi., lang: vi }
+        - { id: v2d, text: Xin chào! Rất vui được gặp bạn., lang: vi }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: Ba câu xin nhắc lại quen thuộc – Wie bitte? (gì cơ?), Noch einmal, bitte. (xin nhắc lại), Langsam, bitte. (xin nói chậm).
+    display_answer: "Gì cơ ạ? Xin nhắc lại một lần nữa, nói chậm thôi ạ."
+
+  - key: de:exercise:p0u3l5-mcq-gross-satz
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-g-nomen-gross
+    prompt:
+      stem: "Một bạn viết: “das ist frau wagner. das buch ist hier.” Những chữ nào phải viết hoa?"
+      stem_lang: vi
+      options:
+        - { id: g1a, text: "das (cả hai lần, vì đứng đầu câu), frau, wagner, buch", lang: vi }
+        - { id: g1b, text: "frau, wagner, buch", lang: vi }
+        - { id: g1c, text: "Chỉ wagner (tên riêng) và chữ đầu câu", lang: vi }
+        - { id: g1d, text: Tất cả các chữ, lang: vi }
+    answer:
+      correct_option_id: g1a
+    explanation:
+      vi: Đầu câu viết hoa (Das… Das…), danh từ viết hoa (Frau, Buch), tên riêng viết hoa (Wagner) – Das ist Frau Wagner. Das Buch ist hier. ist và hier không phải danh từ nên viết thường.
+    display_answer: "das (cả hai lần, vì đứng đầu câu), frau, wagner, buch"
+
+  - key: de:exercise:p0u3l5-mcq-lesen-minh
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-da
+    prompt:
+      stem: "Đọc đoạn văn: “Hallo! Ich heiße Minh. Ich komme aus Vietnam. Das ist Frau Wagner. Frau Wagner ist jetzt da.” Câu nào đúng (richtig)?"
+      stem_lang: vi
+      options:
+        - { id: r1a, text: Minh đến từ Việt Nam., lang: vi }
+        - { id: r1b, text: Cô Wagner đến từ Việt Nam., lang: vi }
+        - { id: r1c, text: Minh giới thiệu một người đàn ông., lang: vi }
+        - { id: r1d, text: Cô Wagner không có mặt., lang: vi }
+    answer:
+      correct_option_id: r1a
+    explanation:
+      vi: “Ich komme aus Vietnam” là câu Minh nói về mình. Frau Wagner là phụ nữ (Frau), và ist jetzt da nghĩa là cô ấy đang có mặt.
+    display_answer: Minh đến từ Việt Nam.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u3l5-fill-artikel-mix
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-g-genus-artikel
+    prompt:
+      template: "{{b1}} Tafel · {{b2}} Wörterbuch · {{b3}} Stuhl · {{b4}} Universität"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 3 }
+        - { id: b4, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [die]
+        b2: [das]
+        b3: [der]
+        b4: [die]
+    explanation:
+      vi: die Tafel, das Wörterbuch (theo phần cuối das Buch), der Stuhl, die Universität (đuôi -tät luôn là die).
+    display_answer: die Tafel · das Wörterbuch · der Stuhl · die Universität
+
+  - key: de:exercise:p0u3l5-fill-plural-woerter
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-wort
+    prompt:
+      template: "das Buch, ¨-er → die {{b1}} · das Wort, ¨-er → die {{b2}}"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Bücher]
+        b2: [Wörter]
+    known_wrong:
+      - answer: Buchs
+        feedback_vi: "Không thêm -s như tiếng Anh; ¨-er cho dạng Bücher."
+        error_tag: plural_form
+      - answer: Worts
+        feedback_vi: "Không thêm -s như tiếng Anh; ¨-er cho dạng Wörter."
+        error_tag: plural_form
+      - answer: Bucher
+        feedback_vi: "Dấu ¨ nghĩa là u → ü: Bücher."
+        error_tag: plural_form
+      - answer: Worter
+        feedback_vi: "Dấu ¨ nghĩa là o → ö: Wörter."
+        error_tag: plural_form
+    explanation:
+      vi: Ký hiệu ¨-er nghĩa là đổi nguyên âm thành ä/ö/ü và thêm -er – Buch → Bücher, Wort → Wörter. Gõ ue/oe (Buecher, Woerter) cũng được chấp nhận.
+    display_answer: die Bücher · die Wörter
+
+  - key: de:exercise:p0u3l5-tr-langsam-verstehe
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-langsam-bitte
+    prompt:
+      source_text: Xin nói chậm thôi ạ. Tôi không hiểu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Langsam, bitte. Ich verstehe das nicht.
+        - Bitte langsam. Ich verstehe das nicht.
+        - Langsam, bitte. Ich verstehe es nicht.
+        - Langsam, bitte. Das verstehe ich nicht.
+        - Bitte langsam. Ich verstehe es nicht.
+        - Bitte langsam. Das verstehe ich nicht.
+    known_wrong:
+      - answer: Langsam, bitte. Ich nicht verstehe.
+        feedback_vi: nicht không đứng trước động từ; câu mẫu là Ich verstehe das nicht.
+        error_tag: word_order
+      - answer: Langsam, bitte. Ich weiß es nicht.
+        feedback_vi: Ich weiß es nicht là “tôi không biết”; “không hiểu” là Ich verstehe das nicht.
+        error_tag: word_choice
+    explanation:
+      vi: Ghép hai câu mẫu – Langsam, bitte. (xin nói chậm) và Ich verstehe das nicht. (tôi không hiểu), nicht đứng cuối câu.
+    display_answer: Langsam, bitte. Ich verstehe das nicht.
+
+  - key: de:exercise:p0u3l5-tr-wie-schreibt-vi
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-wie-schreibt-man-das
+    prompt:
+      source_text: Wie schreibt man das?
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái đó viết thế nào?
+        - Cái đó viết như thế nào?
+        - Từ đó viết thế nào?
+        - Từ đó viết như thế nào?
+        - Từ này viết thế nào?
+        - Từ này viết như thế nào?
+        - Cái này viết thế nào?
+        - Cái này viết như thế nào?
+        - Viết cái đó thế nào?
+        - Viết thế nào?
+        - Viết như thế nào?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái đó gọi là gì?
+        feedback_vi: Đó là Was heißt das?; schreibt là “viết”.
+        error_tag: word_choice
+    explanation:
+      vi: schreibt là “viết”, man là “người ta”, das là “cái đó” – câu hỏi cách viết một từ. Tiếng Việt tự nhiên chỉ cần “Từ đó viết thế nào?”.
+    display_answer: Từ đó viết thế nào?
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u3l5-wb-herr-wagner
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-g-anrede
+    prompt:
+      instruction: "Giới thiệu thầy giáo với bạn: “Đây là thầy Wagner.”"
+      tokens:
+        - { id: h-herr, text: Herr }
+        - { id: h-ist, text: ist }
+        - { id: h-wagner, text: Wagner }
+        - { id: h-das, text: Das }
+        - { id: h-hier, text: Hier }
+        - { id: h-frau, text: Frau }
+    answer:
+      orders:
+        - [h-das, h-ist, h-herr, h-wagner]
+    explanation:
+      vi: Giới thiệu người dùng Das ist …, rồi Herr + họ (thầy là nam nên Herr). Hier ist là lỗi dịch từng chữ “Đây là”; Frau dùng cho nữ.
+    display_answer: Das ist Herr Wagner.
+
+  - key: de:exercise:p0u3l5-wb-was-heisst
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-was-heisst-auf-deutsch
+    prompt:
+      instruction: "Hỏi giáo viên: “Cái này tiếng Đức gọi là gì?”"
+      tokens:
+        - { id: f-deutsch, text: Deutsch }
+        - { id: f-heisst, text: heißt }
+        - { id: f-auf, text: auf }
+        - { id: f-was, text: Was }
+        - { id: f-das, text: das }
+        - { id: f-ist, text: ist }
+    answer:
+      orders:
+        - [f-was, f-heisst, f-das, f-auf, f-deutsch]
+    explanation:
+      vi: Từ để hỏi Was đứng đầu, động từ heißt đứng thứ hai, rồi das và auf Deutsch (bằng tiếng Đức). ist là token thừa.
+    display_answer: Was heißt das auf Deutsch?
+
+  - key: de:exercise:p0u3l5-mcq-lesen-radiergummi
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-radiergummi
+    prompt:
+      stem: "Đọc đoạn hội thoại: “A: Was heißt das auf Deutsch? – B: Radiergummi. Der Radiergummi. – A: Wie bitte? Wie schreibt man das? – B: R-A-D-I-E-R-G-U-M-M-I.” Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: d1a, text: "A hỏi tên một đồ vật, rồi xin nhắc lại và hỏi cách viết.", lang: vi }
+        - { id: d1b, text: B hỏi A cách viết từ Radiergummi., lang: vi }
+        - { id: d1c, text: A hỏi B có hiểu không., lang: vi }
+        - { id: d1d, text: A không biết B là ai., lang: vi }
+    answer:
+      correct_option_id: d1a
+    explanation:
+      vi: A hỏi Was heißt das auf Deutsch? (tên đồ vật), rồi Wie bitte? (xin nhắc lại) và Wie schreibt man das? (cách viết); B trả lời và đánh vần.
+    display_answer: "A hỏi tên một đồ vật, rồi xin nhắc lại và hỏi cách viết."
+
+  - key: de:exercise:p0u3l5-mcq-akzent-mix
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-g-wortakzent
+    prompt:
+      stem: "Bạn đọc to: die Universität und das Wörterbuch. Cách nhấn nào đúng (chữ in hoa là âm tiết được nhấn)?"
+      stem_lang: vi
+      options:
+        - { id: k1a, text: "universiTÄT – WÖRterbuch", lang: vi }
+        - { id: k1b, text: "UNIversität – wörterBUCH", lang: vi }
+        - { id: k1c, text: "uniVERsität – WÖRterbuch", lang: vi }
+        - { id: k1d, text: "universiTÄT – wörterBUCH", lang: vi }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: Universität là từ vay mượn đuôi -tät nên nhấn cuối; Wörterbuch là từ ghép nên nhấn phần đầu WÖR-, dù từ chính (Buch) đứng cuối.
+    display_answer: "universiTÄT – WÖRterbuch"

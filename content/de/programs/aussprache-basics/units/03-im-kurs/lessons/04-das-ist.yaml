@@ -1,0 +1,348 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:p0u3-das-ist
+order_index: 4
+level: pre_a1
+title:
+  vi: Đây là… – đọc đoạn ngắn (Das ist Frau Wagner.)
+objectives:
+  - vi: Giới thiệu người khác bằng “Das ist …” và hỏi “Wer ist das?”, “Ist das …?” – trả lời Ja./Nein.
+  - vi: Gọi người khác lịch sự bằng Herr/Frau + họ, kể cả với tên người Việt.
+  - vi: Nghe và đọc hiểu một đoạn ngắn 3–4 câu về người trong lớp học.
+estimated_minutes: 12
+skills: [reading, listening, speaking]
+prerequisites: [de:lesson:p0u3-wortakzent]
+items:
+  - item: de:item:p0u3-g-das-ist
+  - item: de:item:p0u3-g-anrede
+  - item: de:item:p0u3-ja
+  - item: de:item:p0u3-nein
+  - item: de:item:p0u3-herr
+  - item: de:item:p0u3-hier
+  - item: de:item:p0u3-da
+  - item: de:item:p0u3-gut
+  - item: de:item:p0u3-jetzt
+  - item: de:item:p0u3-wer-ist-das
+  - item: de:item:p0u3-nachname
+  - item: de:item:p0u3-g-genus-artikel
+    role: reuse
+  - item: de:item:p0u3-tafel
+    role: reuse
+  - item: de:item:p0u1-frau
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giới thiệu được giáo viên và bạn cùng lớp (“Das ist Frau Wagner.”), hỏi “Wer ist das?” và đọc hiểu một đoạn văn ngắn 3–4 câu.
+  - type: explain
+    text:
+      vi: "“Das ist …” nghĩa là “Đây là / Đó là …”, theo sau là tên người hoặc danh từ – Das ist Frau Wagner. Das ist die Tafel. Ở mẫu câu này das không đổi theo giống của danh từ phía sau."
+  - type: explain
+    text:
+      vi: "Muốn hỏi có/không, bạn đưa ist lên đầu – Ist das Herr Becker? – và lên giọng ở cuối. Trả lời Ja. (vâng) hoặc Nein. (không). Hỏi “ai đấy?” thì dùng Wer ist das? và hạ giọng."
+  - type: explain
+    text:
+      vi: Người Việt gọi nhau theo tên (thầy Minh, chị Lan); người Đức lịch sự (xưng Sie) gọi theo HỌ – Herr Becker (ông/anh/thầy Becker), Frau Wagner (bà/chị/cô Wagner). Không nói “Herr Thomas”.
+  - type: explain
+    text:
+      vi: Tên người Việt đặt họ trước – Trần Thị Lan có họ (Nachname) là Trần. Vì vậy ở Đức, người ta gọi bạn ấy là Frau Tran, không phải Frau Lan.
+  - type: deep_explain
+    text:
+      vi: "“Hier ist …” không phải “Đây là …” để giới thiệu: “Hier ist das Buch.” nghĩa là “Sách đây này” (khi tìm thấy hoặc đưa cho ai). hier và da chỉ vị trí – Herr Weber ist hier. (ông Weber ở đây), Frau Wagner ist da. (cô Wagner có mặt / ở kia). Trên form của Đức, ô Nachname (hoặc Familienname) ghi họ, ô Vorname ghi tên gọi; người Việt nên ghi tên đệm cùng tên gọi theo đúng giấy tờ. Frau dùng cho mọi phụ nữ trưởng thành, không phân biệt đã kết hôn hay chưa; từ “Fräulein” ngày nay không dùng để xưng hô nữa."
+  - type: example
+    target: "Wer ist das? – Das ist Frau Wagner."
+    target_lang: de
+    translation:
+      vi: Đó là ai? – Đó là cô Wagner.
+    note:
+      vi: Frau + họ khi nói về giáo viên hay người lớn (lịch sự, Sie).
+  - type: example
+    target: "Ist das Herr Becker? – Nein, das ist Herr Weber."
+    target_lang: de
+    translation:
+      vi: Đó có phải ông Becker không? – Không, đó là ông Weber.
+    note:
+      vi: Ist đứng đầu – câu hỏi có/không, lên giọng ở cuối. Câu trả lời bắt đầu bằng Nein rồi giới thiệu lại bằng das ist.
+  - type: example
+    target: "Ist das Frau Tran? – Ja, das ist Frau Tran."
+    target_lang: de
+    translation:
+      vi: Đó có phải chị Trần không? – Vâng, đó là chị Trần.
+    note:
+      vi: Người Việt tên Trần Thị Lan được gọi lịch sự là Frau Tran (theo họ).
+  - type: example
+    target: "Herr Weber ist jetzt hier. Gut!"
+    target_lang: de
+    translation:
+      vi: Bây giờ ông Weber ở đây rồi. Tốt quá!
+    note:
+      vi: Câu đọc hiểu – hier (ở đây) và jetzt (bây giờ) cho biết vị trí và thời điểm; Gut! dùng như một lời cảm thán.
+  - type: common_mistake
+    wrong: Das ist Herr Minh.
+    right: Das ist Herr Nguyen.
+    target_lang: de
+    note:
+      vi: Herr/Frau đi với HỌ, không đi với tên gọi. Nguyễn Văn Minh là Herr Nguyen; nếu thân mật (du) thì chỉ gọi Minh.
+  - type: common_mistake
+    wrong: Hier ist Frau Wagner.
+    right: Das ist Frau Wagner.
+    target_lang: de
+    note:
+      vi: Đừng dịch từng chữ “Đây là” thành “Hier ist”. Để giới thiệu người, tiếng Đức dùng Das ist …
+  - type: common_mistake
+    wrong: Das ist Wagner Frau.
+    right: Das ist Frau Wagner.
+    target_lang: de
+    note:
+      vi: Herr/Frau luôn đứng trước họ, giống “cô Wagner” trong tiếng Việt.
+  - type: summary
+    points:
+      - vi: "Giới thiệu: Das ist + tên/danh từ. Hỏi ai: Wer ist das?"
+      - vi: "Hỏi có/không: Ist das …? ↗ – Ja. / Nein."
+      - vi: "Lịch sự (Sie): Herr/Frau + HỌ – Herr Becker, Frau Tran; không ghép với tên gọi."
+      - vi: "Đây là (giới thiệu) = Das ist, không phải Hier ist."
+      - vi: "hier = ở đây, da = ở kia / có mặt, jetzt = bây giờ, gut = tốt."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:p0u3l4-listen-frau-wagner
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-g-das-ist
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist Frau Wagner.
+      options:
+        - { id: l1a, text: Đây là cô Wagner., lang: vi }
+        - { id: l1b, text: Cô Wagner ở đây., lang: vi }
+        - { id: l1c, text: Đây là ông Wagner., lang: vi }
+        - { id: l1d, text: Đây có phải cô Wagner không?, lang: vi }
+    answer:
+      correct_option_id: l1a
+    explanation:
+      vi: Das ist … là “Đây là …”, câu kể hạ giọng ở cuối. Frau chỉ phụ nữ (ông là Herr); “Cô Wagner ở đây” sẽ là Frau Wagner ist hier.
+    display_answer: Đây là cô Wagner.
+
+  - key: de:exercise:p0u3l4-listen-nein-weber
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-nein
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ist das Herr Schmidt? Nein, das ist Herr Weber.
+      options:
+        - { id: l2a, text: "Đó có phải ông Schmidt không? – Không, đó là ông Weber.", lang: vi }
+        - { id: l2b, text: "Đó có phải ông Schmidt không? – Vâng, đó là ông Schmidt.", lang: vi }
+        - { id: l2c, text: Đây là ông Schmidt và ông Weber., lang: vi }
+        - { id: l2d, text: Ông Schmidt không có ở đây., lang: vi }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: Ist das …? là câu hỏi có/không; câu trả lời bắt đầu bằng Nein (không) rồi giới thiệu người khác – das ist Herr Weber.
+    display_answer: "Đó có phải ông Schmidt không? – Không, đó là ông Weber."
+
+  - key: de:exercise:p0u3l4-listen-jetzt-hier
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:p0u3-hier
+    prompt:
+      audio_asset_id: null
+      fallback_text: Herr Weber ist jetzt hier.
+      options:
+        - { id: l3a, text: Bây giờ ông Weber ở đây., lang: vi }
+        - { id: l3b, text: Đây là ông Weber., lang: vi }
+        - { id: l3c, text: Ông Weber ở kia., lang: vi }
+        - { id: l3d, text: Bây giờ ông Weber không ở đây., lang: vi }
+    answer:
+      correct_option_id: l3a
+    explanation:
+      vi: jetzt là “bây giờ”, hier là “ở đây”. Câu này nói vị trí, không giới thiệu – giới thiệu sẽ là Das ist Herr Weber. “Ở kia” là da, và câu không có nicht nên không phủ định.
+    display_answer: Bây giờ ông Weber ở đây.
+
+  - key: de:exercise:p0u3l4-mcq-frau-wagner
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-g-anrede
+    prompt:
+      stem: Cô giáo của bạn tên là Anna Wagner. Bạn chào cô lịch sự (xưng Sie) thế nào?
+      stem_lang: vi
+      options:
+        - { id: a1w, text: "Guten Tag, Frau Wagner!", lang: de }
+        - { id: a2w, text: "Guten Tag, Frau Anna!", lang: de }
+        - { id: a3w, text: "Guten Tag, Herr Wagner!", lang: de }
+        - { id: a4w, text: "Guten Tag, Wagner Frau!", lang: de }
+    answer:
+      correct_option_id: a1w
+    explanation:
+      vi: Khi xưng Sie, gọi Frau + họ – Frau Wagner. Không ghép Frau với tên gọi (Anna); Herr dùng cho nam; Frau luôn đứng trước họ.
+    display_answer: "Guten Tag, Frau Wagner!"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:p0u3l4-fill-das-ist
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 1
+    item: de:item:p0u3-wer-ist-das
+    prompt:
+      template: "A: Wer ist das? B: {{b1}} {{b2}} Frau Wagner."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [Das, Dies]
+        b2: [ist]
+    known_wrong:
+      - answer: Hier
+        feedback_vi: Để giới thiệu người, dùng Das ist …, không dịch “Đây là” thành Hier ist.
+        error_tag: word_choice
+      - answer: Wer
+        feedback_vi: Wer (ai) dùng để hỏi; câu trả lời bắt đầu bằng Das ist.
+        error_tag: word_choice
+    explanation:
+      vi: Trả lời Wer ist das? bằng mẫu Das ist + tên – Das ist Frau Wagner.
+    display_answer: "A: Wer ist das? B: Das ist Frau Wagner."
+
+  - key: de:exercise:p0u3l4-fill-ist-das-ja
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-ja
+    prompt:
+      template: "A: {{b1}} das Herr Becker? B: {{b2}}, das ist Herr Becker."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Ist]
+        b2: [Ja]
+    known_wrong:
+      - answer: Nein
+        feedback_vi: B xác nhận “đó là ông Becker”, nên trả lời Ja (vâng).
+        error_tag: word_choice
+      - answer: Wer
+        feedback_vi: Câu hỏi có/không về một người cụ thể bắt đầu bằng Ist – Ist das Herr Becker?
+        error_tag: verb_position
+    explanation:
+      vi: Câu hỏi có/không đưa ist lên đầu – Ist das Herr Becker? B nhắc lại đúng người đó nên trả lời Ja.
+    display_answer: "A: Ist das Herr Becker? B: Ja, das ist Herr Becker."
+
+  - key: de:exercise:p0u3l4-tr-wagner-weber
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-herr
+    prompt:
+      source_text: Đây là cô Wagner, còn đó là ông Weber.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das ist Frau Wagner und das ist Herr Weber.
+        - Das ist Frau Wagner und das da ist Herr Weber.
+        - Das hier ist Frau Wagner und das da ist Herr Weber.
+        - Das hier ist Frau Wagner und das ist Herr Weber.
+        - Das ist Frau Wagner, das ist Herr Weber.
+    known_wrong:
+      - answer: Hier ist Frau Wagner und da ist Herr Weber.
+        feedback_vi: Giới thiệu người dùng Das ist …; Hier ist / da ist chỉ vị trí.
+        error_tag: word_choice
+      - answer: Das ist Wagner Frau und das ist Weber Herr.
+        feedback_vi: Frau/Herr đứng trước họ – Frau Wagner, Herr Weber.
+        error_tag: word_order
+      - answer: Das ist Herr Wagner und das ist Frau Weber.
+        feedback_vi: Cô Wagner là nữ nên Frau Wagner; ông Weber là nam nên Herr Weber.
+        error_tag: word_choice
+    explanation:
+      vi: Mỗi vế dùng mẫu Das ist + Frau/Herr + họ, nối bằng und. “Đây/đó” trong câu giới thiệu đều là das.
+    display_answer: Das ist Frau Wagner und das ist Herr Weber.
+
+  # ---------------- application ----------------
+  - key: de:exercise:p0u3l4-wb-ist-das-frau
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-g-das-ist
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi: “Đó có phải cô Wagner không?”"
+      tokens:
+        - { id: q-frau, text: Frau }
+        - { id: q-das, text: das }
+        - { id: q-wagner, text: Wagner }
+        - { id: q-ist, text: Ist }
+        - { id: q-herr, text: Herr }
+        - { id: q-hier, text: hier }
+    answer:
+      orders:
+        - [q-ist, q-das, q-frau, q-wagner]
+    explanation:
+      vi: Câu hỏi có/không đưa Ist lên đầu, tiếp theo là das rồi Frau + họ. Herr (nam) và hier (ở đây) là token thừa.
+    display_answer: Ist das Frau Wagner?
+
+  - key: de:exercise:p0u3l4-mcq-lesen-frau-tran
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:p0u3-nachname
+    prompt:
+      stem: "Đọc đoạn văn: “Guten Tag! Ich heiße Tran Thi Lan. Tran ist der Nachname. Das ist Herr Becker. Herr Becker ist jetzt hier.” – Herr Becker gọi Lan lịch sự (xưng Sie) thế nào?"
+      stem_lang: vi
+      options:
+        - { id: t1n, text: Frau Tran, lang: de }
+        - { id: t2n, text: Frau Lan, lang: de }
+        - { id: t3n, text: Frau Thi, lang: de }
+        - { id: t4n, text: Herr Tran, lang: de }
+    answer:
+      correct_option_id: t1n
+    explanation:
+      vi: Đoạn văn nói Tran là Nachname (họ). Gọi lịch sự là Frau + họ, nên là Frau Tran; Lan là tên gọi, Thi là tên đệm, Herr dùng cho nam.
+    display_answer: Frau Tran
+
+  - key: de:exercise:p0u3l4-tr-nein-klein-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:p0u3-wer-ist-das
+    prompt:
+      source_text: "Wer ist das? – Das ist Herr Klein."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Đó là ai? – Đó là ông Klein."
+        - "Đây là ai? – Đây là ông Klein."
+        - "Ai đấy? – Đó là ông Klein."
+        - "Ai vậy? – Đó là ông Klein."
+        - "Đó là ai? – Đó là anh Klein."
+        - "Đó là ai? – Đó là thầy Klein."
+        - "Đó là ai? – Là ông Klein."
+        - "Người đó là ai? – Đó là ông Klein."
+        - "Kia là ai? – Đó là ông Klein."
+        - "Đây là ai? – Đây là anh Klein."
+        - "Ai đây? – Đây là ông Klein."
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: "Đó là ai? – Đó là bà Klein."
+        feedback_vi: Herr chỉ nam giới (ông/anh); bà/cô là Frau.
+        error_tag: word_choice
+    explanation:
+      vi: Wer ist das? là “Đó là ai?”, Das ist Herr Klein là “Đó là ông Klein”. Herr dịch là ông, anh hoặc thầy tuỳ tuổi và tình huống.
+    display_answer: "Đó là ai? – Đó là ông Klein."
