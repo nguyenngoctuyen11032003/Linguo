@@ -57,9 +57,10 @@ export default defineConfig(({ mode }) => {
           rollupFormat: 'iife',
           sourcemap: false,
           minify: true,
-          // App shell only; 404.html is a copy of index.html (GitHub Pages deep links), big brand art is landing-only.
+          // App shell + the 21 self-hosted font subsets (440 KB: offline launches must render with the real fonts).
+          // 404.html is a copy of index.html (GitHub Pages deep links), big brand art is landing-only.
           globPatterns: ['**/*.{html,js,css,woff,woff2,ico,png,svg,webmanifest}'],
-          globIgnores: ['404.html', 'brand/*.{png,webp}', 'fonts/*'],
+          globIgnores: ['404.html', 'brand/*.{png,webp}'],
           // The main chunk must never be skipped silently (workbox drops files over the limit with a warning).
           maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         },

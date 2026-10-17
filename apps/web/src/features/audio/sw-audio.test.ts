@@ -19,6 +19,7 @@ describe('sw-audio', () => {
     expect(CLIP).toContain(`/public/${CONTENT_AUDIO_BUCKET}/`);
     expect(CONTENT_AUDIO_CACHE_NAME).not.toBe(MEDIA_CACHE_NAME);
     expect(CONTENT_AUDIO_MAX_ENTRIES).toBeGreaterThan(0);
+    expect(CONTENT_AUDIO_MAX_ENTRIES).toBeGreaterThanOrEqual(400);
   });
 
   it('matches a plain GET of a recorded clip (any Supabase origin, local stack included)', () => {

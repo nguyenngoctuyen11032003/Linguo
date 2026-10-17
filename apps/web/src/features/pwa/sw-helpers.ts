@@ -7,10 +7,23 @@ export const SW_MESSAGE_SKIP_WAITING = 'linguo:skip-waiting';
 /** SW → app, mirrors SW_MESSAGE_NOTIFICATION_CLICKED in packages/shared/src/notifications/contract.ts. */
 export const SW_NOTIFICATION_CLICKED = 'linguo:notification-clicked';
 
-/** Content media cached CacheFirst at runtime (spec 10 §4). */
+/** App → SW: warm the Pretendard (Korean) font subsets into the font cache while online (offline learning). */
+export const SW_MESSAGE_WARM_FONTS = 'linguo:warm-fonts';
+
+/** Content media cached CacheFirst at runtime (spec 10 §4). The limits are generous: lessons are used offline. */
 export const MEDIA_CACHE_NAME = 'linguo-media-v1';
-export const MEDIA_MAX_ENTRIES = 200;
-export const MEDIA_MAX_AGE_SECONDS = 7 * 24 * 60 * 60;
+export const MEDIA_MAX_ENTRIES = 300;
+export const MEDIA_MAX_AGE_SECONDS = 30 * 24 * 60 * 60;
+
+/** Web fonts: self-hosted subsets are precached; Pretendard's ~90 subsets are cached at runtime. */
+export const FONTS_CACHE_NAME = 'linguo-fonts';
+export const FONT_CSS_CACHE_NAME = 'linguo-font-css';
+/** ~90 Pretendard subsets (Korean) plus headroom for any self-hosted subset that is not precached. */
+export const FONTS_MAX_ENTRIES = 200;
+export const FONT_FILE_RE = /\.(?:woff2?|ttf|otf)$/i;
+/** The Pretendard stylesheet index.html appends (a test pins the two together). */
+export const PRETENDARD_CSS_URL =
+  'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css';
 
 const DEFAULT_TITLE = 'Linguo';
 const DEFAULT_BODY = 'Bạn có thông báo mới từ Linguo.';
@@ -130,6 +143,44 @@ export function isNotificationClickedMessage(data: unknown): data is Notificatio
 
 export function isSkipWaitingMessage(data: unknown): boolean {
   return Boolean(data && typeof data === 'object' && (data as { type?: unknown }).type === SW_MESSAGE_SKIP_WAITING);
+}
+
+export function isWarmFontsMessage(data: unknown): boolean {
+  return Boolean(data && typeof data === 'object' && (data as { type?: unknown }).type === SW_MESSAGE_WARM_FONTS);
+}
+
+/** Versioned runtime caches (`linguo-<name>-v<N>`); the unversioned font caches are never swept. */
+const VERSIONED_RUNTIME_CACHE = /^linguo-.+-v\d+$/;
+/** Caches the learner filled on purpose (downloaded lessons). Never swept, whatever the version. */
+const PROTECTED_CACHE_PREFIX = 'linguo-offline-media-';
+
+/**
+ * Caches to delete on activate: old `linguo-*-v<N>` runtime caches that are not in `current`. The downloaded-media cache
+ * (`linguo-offline-media-*`) is never listed, and neither are Workbox's precache caches (cleanupOutdatedCaches owns them).
+ */
+export function staleRuntimeCaches(existing: readonly string[], current: readonly string[]): string[] {
+  const keep = new Set(current);
+  return existing.filter((name) => VERSIONED_RUNTIME_CACHE.test(name) && !name.startsWith(PROTECTED_CACHE_PREFIX) && !keep.has(name));
+}
+
+/**
+ * Absolute font file URLs referenced by a stylesheet's `url(...)` values (resolved against the stylesheet URL),
+ * deduplicated, https only, font extensions only. Used to warm Pretendard's unicode-range subsets.
+ */
+export function extractFontUrls(css: string, baseUrl: string): string[] {
+  const urls = new Set<string>();
+  for (const match of css.matchAll(/url\(\s*(?:"([^"]*)"|'([^']*)'|([^)\s'"]*))\s*\)/g)) {
+    const raw = (match[1] ?? match[2] ?? match[3] ?? '').trim();
+    if (!raw || raw.startsWith('data:')) continue;
+    try {
+      const url = new URL(raw, baseUrl);
+      url.hash = '';
+      if (url.protocol === 'https:' && FONT_FILE_RE.test(url.pathname)) urls.add(url.href);
+    } catch {
+      // not a URL
+    }
+  }
+  return [...urls];
 }
 
 /** Pick the window to reuse for a notification click: the focused one first, then any inside the scope. */
