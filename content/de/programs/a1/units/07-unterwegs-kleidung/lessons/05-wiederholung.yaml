@@ -1,0 +1,425 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u07-wiederholung
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập – biển báo, thông báo nhà ga, tin nhắn (Wiederholung)
+objectives:
+  - vi: Đọc biển báo, giờ mở cửa, bảng giờ tàu và quảng cáo cửa hàng ngắn (kiểu Lesen Teil 3).
+  - vi: Nghe thông báo ở nhà ga và bắt đúng số đường ray, giờ, số phút trễ (kiểu Hören Teil 2).
+  - vi: Viết tin nhắn ngắn báo mình đến muộn vì tàu trễ.
+  - vi: Ôn giới từ + Dativ, nach/zu Hause, welcher, đại từ Dativ với gefallen/passen/stehen và so sánh hơn.
+estimated_minutes: 20
+skills: [reading, listening, writing]
+prerequisites: [de:lesson:a1u07-vergleiche]
+items:
+  - item: de:item:a1u07-g-dativ-praepositionen
+    role: reuse
+  - item: de:item:a1u07-g-nach-zu-hause
+    role: reuse
+  - item: de:item:a1u07-g-welcher
+    role: reuse
+  - item: de:item:a1u07-g-personalpronomen-dativ
+    role: reuse
+  - item: de:item:a1u07-g-gefallen-passen-stehen
+    role: reuse
+  - item: de:item:a1u07-g-komparativ
+    role: reuse
+  - item: de:item:a1u07-zug
+    role: reuse
+  - item: de:item:a1u07-gleis
+    role: reuse
+  - item: de:item:a1u07-abfahrt
+    role: reuse
+  - item: de:item:a1u07-ankunft
+    role: reuse
+  - item: de:item:a1u07-verspaetung
+    role: reuse
+  - item: de:item:a1u07-nach-hause
+    role: reuse
+  - item: de:item:a1u07-pullover
+    role: reuse
+  - item: de:item:a1u07-jacke
+    role: reuse
+  - item: de:item:a1u07-groesse
+    role: reuse
+  - item: de:item:a1u07-eng
+    role: reuse
+  - item: de:item:a1u07-kaufhaus
+    role: reuse
+  - item: de:item:a1u07-angebot
+    role: reuse
+  - item: de:item:p0u1-bus
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài này ôn toàn bộ unit qua ba việc rất hay gặp khi sống ở Đức và trong đề Start Deutsch 1 – đọc biển báo, nghe thông báo ở ga, nhắn tin báo mình đến muộn.
+  - type: explain
+    text:
+      vi: "Đọc biển báo (Lesen Teil 3): trước khi đọc, xem câu hỏi cần thông tin gì – ngày, giờ, nơi chốn hay giá. Rồi tìm đúng chỗ đó trên biển, đặc biệt các chữ như geschlossen (đóng cửa), geöffnet (mở cửa), heute, Sonntag."
+  - type: explain
+    text:
+      vi: "Nghe thông báo ở ga (Hören Teil 2): bạn chỉ cần bắt ba thông tin – tàu đi đâu (nach …) hay từ đâu đến (aus …), đường ray (Gleis …) và giờ hoặc số phút trễ (… Minuten Verspätung). Chú ý cặp số dễ nhầm: -zehn (15) và -zig (50), elf (11) và acht (8)."
+  - type: explain
+    text:
+      vi: "Tin nhắn báo đến muộn (Schreiben): một câu chào, một câu lý do (Mein Zug hat 20 Minuten Verspätung.), một câu giờ mới (Ich komme um … an.) và câu chào cuối (Bis später!). Với bạn bè dùng du, với người lạ hoặc đồng nghiệp chưa thân dùng Sie."
+  - type: deep_explain
+    text:
+      vi: "Trong tin nhắn, người Đức hay dùng erst trước giờ để nhấn mạnh \"mãi tới\": Ich komme erst um 18 Uhr an = mãi 18 giờ tôi mới tới. später (muộn hơn) là dạng so sánh của spät mà bạn vừa học: Ich komme später. Thông báo ở ga thường mở đầu bằng \"Meine Damen und Herren\" (thưa quý vị) hoặc \"Achtung\" (chú ý), bạn có thể bỏ qua phần này và tập trung vào số. Biển giờ mở cửa thường ghi Öffnungszeiten (giờ mở cửa) với dạng Montag bis Freitag 9 bis 20 Uhr."
+  - type: example
+    target: "Hallo Lena, mein Zug hat leider 30 Minuten Verspätung. Ich komme erst um 18.30 Uhr in Köln an. Bis später! Tuan"
+    target_lang: de
+    translation:
+      vi: "Chào Lena, tiếc là tàu của mình trễ 30 phút. Mãi 18 giờ 30 mình mới tới Köln. Lát gặp nhé! Tuấn"
+    note:
+      vi: "Tin nhắn cho bạn nên dùng giọng thân mật. Đủ ba ý: lý do – giờ mới – lời chào."
+  - type: example
+    target: "Meine Damen und Herren, der Zug nach Hannover fährt heute von Gleis 11 ab, nicht von Gleis 8."
+    target_lang: de
+    translation:
+      vi: "Thưa quý vị, hôm nay tàu đi Hannover chạy từ đường ray số 11, không phải số 8."
+    note:
+      vi: Thông báo đổi đường ray rất hay gặp – nghe kỹ số sau chữ Gleis.
+  - type: example
+    target: "Öffnungszeiten: Montag bis Freitag 9 bis 20 Uhr, Samstag 9 bis 16 Uhr, Sonntag geschlossen."
+    target_lang: de
+    translation:
+      vi: "Giờ mở cửa: thứ Hai đến thứ Sáu 9 đến 20 giờ, thứ Bảy 9 đến 16 giờ, Chủ nhật đóng cửa."
+    note:
+      vi: Ở Đức, phần lớn cửa hàng đóng cửa Chủ nhật.
+  - type: common_mistake
+    wrong: Ich komme heute später zu Hause.
+    right: Ich komme heute später nach Hause.
+    target_lang: de
+    note:
+      vi: "Đi về nhà (hướng đi) là nach Hause; zu Hause chỉ là ở nhà."
+  - type: common_mistake
+    wrong: Mein Zug ist 20 Minuten Verspätung.
+    right: Mein Zug hat 20 Minuten Verspätung.
+    target_lang: de
+    note:
+      vi: "Verspätung đi với haben."
+  - type: common_mistake
+    wrong: Der Pullover gefällt mich besser.
+    right: Der Pullover gefällt mir besser.
+    target_lang: de
+    note:
+      vi: "gefallen cần Dativ: mir, không phải mich."
+  - type: summary
+    points:
+      - vi: "Biển báo: tìm đúng thông tin câu hỏi cần (ngày, giờ, geschlossen/geöffnet)."
+      - vi: "Thông báo ở ga: nach/aus + thành phố, Gleis + số, … Minuten Verspätung."
+      - vi: "Tin nhắn đến muộn: lý do + giờ mới + lời chào."
+      - vi: "mit dem Zug, zum Bahnhof, nach Hause, zu Hause."
+      - vi: "welcher Zug / welchen Zug; Die Jacke gefällt mir; billiger als, so teuer wie."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:a1u07l5-mcq-lesen-sonntag
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u07-kaufhaus
+    prompt:
+      stem: "Đọc biển ở cửa một cửa hàng bách hóa: \"Öffnungszeiten: Montag bis Freitag 9 bis 20 Uhr, Samstag 9 bis 16 Uhr, Sonntag geschlossen.\" Chủ nhật lúc 11 giờ bạn có mua đồ ở đây được không?"
+      stem_lang: vi
+      options:
+        - { id: s3w, text: "Không, Chủ nhật cửa hàng đóng cửa.", lang: vi }
+        - { id: h8p, text: "Có, Chủ nhật cửa hàng mở từ 9 đến 16 giờ.", lang: vi }
+        - { id: m1x, text: "Có, Chủ nhật cửa hàng mở từ 9 đến 20 giờ.", lang: vi }
+        - { id: z5k, text: "Chỉ được vào buổi chiều.", lang: vi }
+    answer:
+      correct_option_id: s3w
+    explanation:
+      vi: "Sonntag geschlossen = Chủ nhật đóng cửa. 9 bis 16 Uhr là giờ thứ Bảy, 9 bis 20 Uhr là giờ từ thứ Hai đến thứ Sáu."
+    display_answer: "Không, Chủ nhật cửa hàng đóng cửa."
+
+  - key: de:exercise:a1u07l5-mcq-lesen-abfahrt
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-abfahrt
+    prompt:
+      stem: "Đọc bảng điện tử ở ga: \"Abfahrt 10.42 Uhr – Zug nach Leipzig – Gleis 4 – heute 15 Minuten Verspätung\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: c7r, text: "Hôm nay tàu đi Leipzig chạy khoảng 10 giờ 57.", lang: vi }
+        - { id: f2m, text: "Hôm nay tàu đi Leipzig chạy từ đường ray số 15.", lang: vi }
+        - { id: k9t, text: "Hôm nay tàu đi Leipzig chạy đúng giờ lúc 10 giờ 42.", lang: vi }
+        - { id: w4b, text: "Tàu từ Leipzig đến đường ray số 4 lúc 10 giờ 42.", lang: vi }
+    answer:
+      correct_option_id: c7r
+    explanation:
+      vi: "Giờ chạy theo lịch là 10.42 Uhr, nhưng heute 15 Minuten Verspätung = hôm nay trễ 15 phút, nên tàu chạy khoảng 10 giờ 57. 15 là số phút trễ, không phải số đường ray; Abfahrt là giờ đi, không phải giờ đến."
+    display_answer: "Hôm nay tàu đi Leipzig chạy khoảng 10 giờ 57."
+
+  - key: de:exercise:a1u07l5-mcq-lesen-sms
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-verspaetung
+    prompt:
+      stem: "Đọc tin nhắn: \"Hallo Lena, mein Zug hat leider 30 Minuten Verspätung. Ich komme erst um 18.30 Uhr in Köln an. Kannst du um sieben zum Bahnhof kommen? Tuan\". Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: p6v, text: "Tàu của Tuấn trễ 30 phút; Tuấn nhờ Lena ra ga lúc 7 giờ.", lang: vi }
+        - { id: t1n, text: "Tàu của Tuấn chạy đúng giờ và đến Köln lúc 18 giờ 30.", lang: vi }
+        - { id: e8q, text: "Lena đi tàu đến Köln lúc 18 giờ 30.", lang: vi }
+        - { id: y3d, text: "Tuấn muốn gặp Lena ở nhà lúc 7 giờ.", lang: vi }
+    answer:
+      correct_option_id: p6v
+    explanation:
+      vi: "mein Zug hat 30 Minuten Verspätung = tàu của mình trễ 30 phút; Kannst du um sieben zum Bahnhof kommen? = bạn ra ga lúc bảy giờ được không? zum Bahnhof là ra ga, không phải ở nhà."
+    display_answer: "Tàu của Tuấn trễ 30 phút; Tuấn nhờ Lena ra ga lúc 7 giờ."
+
+  - key: de:exercise:a1u07l5-mcq-lesen-angebot
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-angebot
+    prompt:
+      stem: "Đọc quảng cáo: \"Kaufhaus Sommer – diese Woche im Angebot: Jacken 20 Prozent billiger, Schuhe ab 25 Euro. Montag bis Samstag 10 bis 20 Uhr.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a5j, text: "Tuần này áo khoác rẻ hơn 20 phần trăm.", lang: vi }
+        - { id: g9c, text: "Tuần này áo khoác đắt hơn 20 phần trăm.", lang: vi }
+        - { id: n2s, text: "Tuần này mọi đôi giày đều giá 20 euro.", lang: vi }
+        - { id: r7h, text: "Cửa hàng mở cửa cả Chủ nhật.", lang: vi }
+    answer:
+      correct_option_id: a5j
+    explanation:
+      vi: "im Angebot = khuyến mãi; 20 Prozent billiger = rẻ hơn 20 %. Giày từ 25 euro (ab 25 Euro), và giờ mở cửa chỉ từ thứ Hai đến thứ Bảy."
+    display_answer: "Tuần này áo khoác rẻ hơn 20 phần trăm."
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:a1u07l5-listen-gleis-elf
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-gleis
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Achtung, eine Information: Der Zug nach Hannover fährt heute von Gleis elf ab, nicht von Gleis acht."
+      options:
+        - { id: d4z, text: "Hôm nay tàu đi Hannover chạy từ đường ray số 11, không phải số 8.", lang: vi }
+        - { id: l8f, text: "Hôm nay tàu đi Hannover chạy từ đường ray số 8, không phải số 11.", lang: vi }
+        - { id: q2y, text: "Hôm nay tàu đi Hannover chạy từ đường ray số 11 và trễ 8 phút.", lang: vi }
+        - { id: v6m, text: "Hôm nay tàu từ Hannover đến đường ray số 11.", lang: vi }
+    answer:
+      correct_option_id: d4z
+    explanation:
+      vi: "von Gleis elf ab = chạy từ đường ray 11; nicht von Gleis acht = không phải đường ray 8. nach Hannover là đi Hannover, không phải từ Hannover đến."
+    display_answer: "Hôm nay tàu đi Hannover chạy từ đường ray số 11, không phải số 8."
+
+  - key: de:exercise:a1u07l5-listen-ankunft
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-ankunft
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Meine Damen und Herren, der Zug aus Frankfurt hat etwa zwanzig Minuten Verspätung. Die Ankunft ist jetzt um vierzehn Uhr fünfzig."
+      options:
+        - { id: b9e, text: "Tàu từ Frankfurt trễ khoảng 20 phút, đến lúc 14 giờ 50.", lang: vi }
+        - { id: x3g, text: "Tàu đi Frankfurt trễ khoảng 20 phút, chạy lúc 14 giờ 50.", lang: vi }
+        - { id: j7u, text: "Tàu từ Frankfurt trễ khoảng 20 phút, đến lúc 14 giờ 15.", lang: vi }
+        - { id: o1w, text: "Tàu từ Frankfurt trễ khoảng 50 phút, đến lúc 14 giờ 20.", lang: vi }
+    answer:
+      correct_option_id: b9e
+    explanation:
+      vi: "aus Frankfurt = từ Frankfurt đến; zwanzig Minuten Verspätung = trễ 20 phút; Ankunft … vierzehn Uhr fünfzig = giờ đến 14 giờ 50 (fünfzig = 50, khác fünfzehn = 15)."
+    display_answer: "Tàu từ Frankfurt trễ khoảng 20 phút, đến lúc 14 giờ 50."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u07l5-fill-sms-verspaetung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-verspaetung
+    prompt:
+      template: "Hallo Tom, mein Zug hat leider 20 Minuten {{b1}}. Ich komme erst um 17 Uhr {{b2}} Hause. Bis später! Mai"
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Verspätung]
+        b2: [nach]
+    known_wrong:
+      - answer: zu
+        feedback_vi: "Đi về nhà là nach Hause; zu Hause là ở nhà."
+        error_tag: preposition
+      - answer: Verspätungen
+        feedback_vi: "Trong câu \"hat … Minuten Verspätung\", Verspätung luôn ở số ít."
+        error_tag: plural_form
+      - answer: spät
+        feedback_vi: "Sau \"hat 20 Minuten\" cần danh từ: Verspätung."
+        error_tag: vocabulary
+    explanation:
+      vi: "Tàu trễ: hat … Minuten Verspätung (danh từ, số ít). Về nhà là nach Hause vì câu nói hướng đi."
+    display_answer: Hallo Tom, mein Zug hat leider 20 Minuten Verspätung. Ich komme erst um 17 Uhr nach Hause. Bis später! Mai
+
+  - key: de:exercise:a1u07l5-fill-welche-groesser
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-groesse
+    prompt:
+      template: "{{b1}} Größe haben Sie? – Ich habe Größe 40, aber die Hose ist zu eng. Haben Sie sie eine Nummer {{b2}}?"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Welche]
+        b2: [größer]
+    known_wrong:
+      - answer: Welcher
+        feedback_vi: "die Größe là giống cái nên welche."
+        error_tag: article
+      - answer: Welches
+        feedback_vi: "die Größe là giống cái nên welche."
+        error_tag: article
+      - answer: großer
+        feedback_vi: "groß so sánh hơn có umlaut: größer."
+        error_tag: umlaut_missing
+      - answer: mehr groß
+        feedback_vi: "Không dùng mehr: groß → größer."
+        error_tag: komparativ_form
+    explanation:
+      vi: "die Größe là giống cái nên hỏi welche Größe. Quần chật thì cần cỡ lớn hơn: eine Nummer größer (groß → größer)."
+    display_answer: "Welche Größe haben Sie? – Ich habe Größe 40, aber die Hose ist zu eng. Haben Sie sie eine Nummer größer?"
+
+  - key: de:exercise:a1u07l5-tr-bus-zu-dir
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-dativ-praepositionen
+    prompt:
+      source_text: Mình đi xe buýt đến chỗ bạn. (nói với bạn thân)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich fahre mit dem Bus zu dir.
+        - Ich komme mit dem Bus zu dir.
+        - Mit dem Bus fahre ich zu dir.
+        - Mit dem Bus komme ich zu dir.
+        - Ich fahre zu dir mit dem Bus.
+        - Ich komme zu dir mit dem Bus.
+        - Ich nehme den Bus zu dir.
+    known_wrong:
+      - answer: Ich fahre mit dem Bus zu dich.
+        feedback_vi: "zu đi với Dativ: du → dir, không phải dich."
+        error_tag: case_dat_akk
+      - answer: Ich fahre mit der Bus zu dir.
+        feedback_vi: "der Bus là giống đực; sau mit dùng dem: mit dem Bus."
+        error_tag: case_dat_akk
+      - answer: Ich fahre mit dem Bus nach dir.
+        feedback_vi: "Đến chỗ một người dùng zu, không dùng nach."
+        error_tag: preposition
+      - answer: Ich fahre mit Bus zu dir.
+        feedback_vi: "Thiếu mạo từ: mit dem Bus."
+        error_tag: article
+    explanation:
+      vi: "mit + Dativ: der Bus → mit dem Bus. Đến chỗ một người: zu + Dativ, du → dir."
+    display_answer: Ich fahre mit dem Bus zu dir.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u07l5-wb-spaeter-nach-hause
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-nach-hause
+    prompt:
+      instruction: "Bạn nhắn tin cho gia đình. Sắp xếp thành câu: \"Hôm nay mình về nhà muộn hơn.\""
+      tokens:
+        - { id: t-hause, text: Hause }
+        - { id: t-spaeter, text: später }
+        - { id: t-ich, text: ich }
+        - { id: t-zu, text: zu }
+        - { id: t-nach, text: nach }
+        - { id: t-heute, text: heute }
+        - { id: t-komme, text: komme }
+    answer:
+      orders:
+        - [t-ich, t-komme, t-heute, t-spaeter, t-nach, t-hause]
+        - [t-heute, t-komme, t-ich, t-spaeter, t-nach, t-hause]
+    explanation:
+      vi: "Về nhà là nach Hause (zu Hause là ở nhà). später = muộn hơn (so sánh của spät). Động từ komme ở vị trí 2: Ich komme heute … hoặc Heute komme ich …"
+    display_answer: Ich komme heute später nach Hause.
+
+  - key: de:exercise:a1u07l5-wb-gefaellt-mir-besser
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u07-g-gefallen-passen-stehen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Mình thích cái áo len hơn cái áo khoác.\""
+      tokens:
+        - { id: t-als, text: als }
+        - { id: t-mir, text: mir }
+        - { id: t-jacke, text: Jacke }
+        - { id: t-besser, text: besser }
+        - { id: t-mich, text: mich }
+        - { id: t-der, text: der }
+        - { id: t-gefaellt, text: gefällt }
+        - { id: t-pullover, text: Pullover }
+        - { id: t-die, text: die }
+        - { id: t-wie, text: wie }
+    answer:
+      orders:
+        - [t-der, t-pullover, t-gefaellt, t-mir, t-besser, t-als, t-die, t-jacke]
+        - [t-mir, t-gefaellt, t-der, t-pullover, t-besser, t-als, t-die, t-jacke]
+    explanation:
+      vi: "Với gefallen, đồ vật (der Pullover) là chủ ngữ, người ở Dativ (mir). \"Thích hơn\" là gefällt mir besser (gut → besser) + als."
+    display_answer: Der Pullover gefällt mir besser als die Jacke.
+
+  - key: de:exercise:a1u07l5-tr-steht-dir-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-g-personalpronomen-dativ
+    prompt:
+      source_text: Der Pullover steht dir sehr gut.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái áo len rất hợp với bạn.
+        - Áo len rất hợp với bạn.
+        - Cái áo len này rất hợp với bạn.
+        - Áo len này rất hợp với bạn.
+        - Bạn mặc cái áo len rất đẹp.
+        - Bạn mặc áo len này rất đẹp.
+        - Bạn mặc áo len rất đẹp.
+        - Cái áo len rất hợp với cậu.
+        - Bạn mặc cái áo len này rất hợp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái áo len rất vừa với bạn.
+        feedback_vi: "stehen + Dativ là \"hợp, mặc lên đẹp\"; \"vừa cỡ\" là passen."
+        error_tag: vocabulary
+      - answer: Cái áo len đứng rất tốt.
+        feedback_vi: "Ở đây stehen + Dativ nghĩa là \"hợp với ai\", không phải \"đứng\"."
+        error_tag: vocabulary
+    explanation:
+      vi: "stehen + Dativ (dir) nói về quần áo nghĩa là \"hợp với ai, ai mặc lên đẹp\". dir là Dativ của du, nên câu nói với bạn bè."
+    display_answer: Cái áo len rất hợp với bạn.

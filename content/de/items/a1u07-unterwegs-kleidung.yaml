@@ -1,0 +1,1182 @@
+# Học liệu unit A1U07 "Đi lại và quần áo" (Unterwegs und Kleidung), tiếng Đức A1.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= bài 1: giới từ đi với Dativ, phương tiện =================
+  - key: de:item:a1u07-g-dativ-praepositionen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "aus, bei, mit, nach, von, zu + Dativ (zum, zur, beim, vom)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Sáu giới từ aus (từ … ra), bei (ở chỗ ai), mit (với, bằng), nach (đến – thành phố, nước), von (từ), zu (đến – người, địa điểm) luôn đi với Dativ: dem / der / dem / den + -n. Thường rút gọn: zu dem → zum, zu der → zur, bei dem → beim, von dem → vom."
+      examples:
+        - target: Ich fahre mit dem Bus zum Bahnhof.
+          translation:
+            vi: Tôi đi xe buýt ra ga.
+        - target: Am Wochenende bin ich bei meinen Eltern.
+          translation:
+            vi: Cuối tuần tôi ở nhà bố mẹ.
+        - target: Meine Freundin kommt gerade vom Flughafen.
+          translation:
+            vi: Bạn gái tôi đang từ sân bay về.
+      confusion:
+        vi: "aus = từ bên trong ra, hoặc quê quán (aus dem Haus, aus Vietnam); von = từ một điểm hay một người (vom Bahnhof, von meiner Freundin)."
+
+  - key: de:item:a1u07-g-nach-zu-hause
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "nach / zu; nach Hause / zu Hause"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "nach + tên thành phố, tên nước không có mạo từ (nach Berlin, nach Österreich); zu + người hoặc địa điểm có mạo từ (zu meiner Oma, zum Supermarkt). nach Hause = về nhà (đi đâu?), zu Hause = ở nhà (ở đâu?)."
+      examples:
+        - target: Morgen fliegen wir nach Wien.
+          translation:
+            vi: Ngày mai chúng tôi bay sang Vienna.
+        - target: Heute bleibe ich zu Hause.
+          translation:
+            vi: Hôm nay tôi ở nhà.
+        - target: Um sechs fahre ich nach Hause.
+          translation:
+            vi: Sáu giờ tôi về nhà.
+      confusion:
+        vi: "Câu hỏi Wohin? (đi đâu) → nach Hause; câu hỏi Wo? (ở đâu) → zu Hause. Nước có mạo từ thì khác: aus der Schweiz (từ Thụy Sĩ)."
+
+  - key: de:item:a1u07-zug
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Zug, ¨-e"
+      ipa: /tsuːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu hỏa, chuyến tàu
+      examples:
+        - target: Der Zug nach Berlin fährt um acht Uhr.
+          translation:
+            vi: Tàu đi Berlin chạy lúc tám giờ.
+      pronunciation_note:
+        vi: "z đọc là \"ts\"; g ở cuối từ đọc như \"k\" – nghe gần như \"tsúk\". Số nhiều: die Züge."
+
+  - key: de:item:a1u07-u-bahn
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die U-Bahn, -en"
+      ipa: /ˈuːbaːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu điện ngầm
+      examples:
+        - target: Ich fahre jeden Tag mit der U-Bahn zur Arbeit.
+          translation:
+            vi: Ngày nào tôi cũng đi tàu điện ngầm đi làm.
+      confusion:
+        vi: "U là viết tắt của Untergrund (dưới lòng đất). Trong ga, biển chữ U trắng trên nền xanh dương."
+
+  - key: de:item:a1u07-s-bahn
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die S-Bahn, -en"
+      ipa: /ˈɛsbaːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu điện đô thị (nối trung tâm với vùng ven)
+      examples:
+        - target: Die S-Bahn fährt zum Flughafen.
+          translation:
+            vi: Tàu S-Bahn chạy ra sân bay.
+      confusion:
+        vi: "S-Bahn chủ yếu chạy trên mặt đất, nối thành phố với vùng ven; U-Bahn chủ yếu chạy ngầm trong nội đô."
+
+  - key: de:item:a1u07-strassenbahn
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Straßenbahn, -en"
+      ipa: /ˈʃtʁaːsn̩baːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu điện (chạy trên đường phố)
+      examples:
+        - target: Mit der Straßenbahn bin ich in zehn Minuten im Zentrum.
+          translation:
+            vi: Đi tàu điện thì mười phút là tôi tới trung tâm.
+      pronunciation_note:
+        vi: "st ở đầu từ đọc là \"sht\"; ß là âm s mạnh, không phải b."
+      confusion:
+        vi: "Ở Thụy Sĩ gọi là das Tram; ở Vienna (Áo) người ta nói thân mật die Bim."
+
+  - key: de:item:a1u07-flugzeug
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Flugzeug, -e"
+      ipa: /ˈfluːktsɔʏ̯k/
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy bay
+      examples:
+        - target: Das Flugzeug aus Hanoi ist pünktlich.
+          translation:
+            vi: Máy bay từ Hà Nội đến đúng giờ.
+      pronunciation_note:
+        vi: "eu đọc là \"oi\"; z là \"ts\": gần như \"flúk-tsoik\"."
+
+  - key: de:item:a1u07-flughafen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Flughafen, ¨-"
+      ipa: /ˈfluːkhaːfn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân bay
+      examples:
+        - target: Wie komme ich zum Flughafen?
+          translation:
+            vi: Tôi đi đến sân bay bằng cách nào?
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: der Hafen (bến cảng) → der Flughafen. Số nhiều: die Flughäfen."
+
+  - key: de:item:a1u07-fahrkarte
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Fahrkarte, -n"
+      ipa: /ˈfaːɐ̯kaʁtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé (tàu, xe buýt)
+      examples:
+        - target: Die Fahrkarte nach Hamburg kostet vierzig Euro.
+          translation:
+            vi: Vé đi Hamburg giá bốn mươi euro.
+      confusion:
+        vi: "Fahrkarte là vé đi tàu, xe; vé máy bay hay vé xem hòa nhạc thường gọi là das Ticket."
+
+  - key: de:item:a1u07-gleis
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Gleis, -e"
+      ipa: /ɡlaɪ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường ray (số …) ở nhà ga, chỗ tàu đỗ
+      examples:
+        - target: Der Zug nach Köln fährt von Gleis 3 ab.
+          translation:
+            vi: Tàu đi Köln chạy từ đường ray số 3.
+      pronunciation_note:
+        vi: "ei đọc là \"ai\": \"glais\"."
+      confusion:
+        vi: "Trước số đường ray không có mạo từ: von Gleis 3, auf Gleis 3."
+
+  - key: de:item:a1u07-nach-hause
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: nach Hause
+      pos: cụm từ
+    back:
+      meaning:
+        vi: về nhà (chỉ hướng đi)
+      examples:
+        - target: Ich gehe jetzt nach Hause.
+          translation:
+            vi: Bây giờ tôi về nhà đây.
+      confusion:
+        vi: "nach Hause trả lời câu hỏi Wohin? (đi đâu); ở nhà là zu Hause."
+
+  - key: de:item:a1u07-zu-hause
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: zu Hause
+      pos: cụm từ
+    back:
+      meaning:
+        vi: ở nhà (chỉ vị trí)
+      examples:
+        - target: Am Sonntag bin ich zu Hause.
+          translation:
+            vi: Chủ nhật tôi ở nhà.
+      confusion:
+        vi: "zu Hause trả lời câu hỏi Wo? (ở đâu). Viết liền zuhause cũng đúng, nhưng Linguo thống nhất viết zu Hause."
+
+  - key: de:item:a1u07-schiff
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Schiff, -e"
+      ipa: /ʃɪf/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu thủy, con tàu
+      examples:
+        - target: Mit dem Schiff fahren wir von Hamburg nach Helgoland.
+          translation:
+            vi: Chúng tôi đi tàu thủy từ Hamburg ra đảo Helgoland.
+
+  - key: de:item:a1u07-motorrad
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Motorrad, ¨-er"
+      ipa: /ˈmoːtoːɐ̯ʁaːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe mô tô, xe máy
+      examples:
+        - target: Mein Bruder fährt mit dem Motorrad zur Arbeit.
+          translation:
+            vi: Anh trai tôi đi xe máy đi làm.
+      confusion:
+        vi: "Từ ghép: der Motor + das Rad → das Motorrad (giống trung theo das Rad). Số nhiều: die Motorräder."
+
+  - key: de:item:a1u07-ticket
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Ticket, -s"
+      ipa: /ˈtɪkət/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé (máy bay, hòa nhạc; trong văn nói cũng là vé tàu)
+      examples:
+        - target: Ich habe die Tickets auf dem Handy.
+          translation:
+            vi: Vé thì tôi có trên điện thoại.
+
+  # ================= bài 2: ở nhà ga, welcher =================
+  - key: de:item:a1u07-g-welcher
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "welcher / welche / welches (Nominativ, Akkusativ)"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "welch- nghĩa là \"nào\", đứng trước danh từ và có đuôi giống mạo từ xác định: welcher Zug (der), welche Fahrkarte (die), welches Gleis (das), welche Züge (số nhiều). Ở Akkusativ chỉ giống đực đổi: welchen Zug (den Zug)."
+      examples:
+        - target: Welcher Zug fährt nach Hamburg?
+          translation:
+            vi: Tàu nào đi Hamburg?
+        - target: Welchen Zug nimmst du?
+          translation:
+            vi: Bạn đi chuyến tàu nào?
+        - target: Welches Gleis ist das?
+          translation:
+            vi: Đây là đường ray số mấy?
+      confusion:
+        vi: "Tiếng Việt \"nào\" đứng sau danh từ (tàu nào); tiếng Đức welch- đứng trước danh từ và ở đầu câu hỏi."
+
+  - key: de:item:a1u07-abfahren
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: abfahren (du fährst ab)
+      ipa: /ˈapfaːʁən/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: (tàu, xe) khởi hành, rời đi
+      examples:
+        - target: Der Zug fährt um 9.15 Uhr ab.
+          translation:
+            vi: Tàu chạy lúc 9 giờ 15.
+      confusion:
+        vi: "Động từ tách và đổi nguyên âm như fahren: du fährst ab, er fährt ab."
+
+  - key: de:item:a1u07-ankommen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: ankommen
+      ipa: /ˈankɔmən/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: đến nơi
+      examples:
+        - target: Wann kommen wir in München an?
+          translation:
+            vi: Mấy giờ chúng ta đến München?
+      confusion:
+        vi: "Đến một thành phố: in + tên thành phố (in München ankommen), không dùng nach."
+
+  - key: de:item:a1u07-umsteigen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: umsteigen
+      ipa: /ˈʊmʃtaɪ̯ɡn̩/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: đổi tàu, chuyển xe
+      examples:
+        - target: In Frankfurt müssen Sie umsteigen.
+          translation:
+            vi: Ông/bà phải đổi tàu ở Frankfurt.
+      pronunciation_note:
+        vi: "Trọng âm ở tiền tố um-; st đọc là \"sht\"."
+
+  - key: de:item:a1u07-abfahrt
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Abfahrt, -en"
+      ipa: /ˈapfaːɐ̯t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ khởi hành, sự khởi hành
+      examples:
+        - target: "Die Abfahrt ist um 14.35 Uhr."
+          translation:
+            vi: Giờ tàu chạy là 14 giờ 35.
+
+  - key: de:item:a1u07-ankunft
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Ankunft, ¨-e"
+      ipa: /ˈankʊnft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ đến, sự đến nơi
+      examples:
+        - target: Die Ankunft in Berlin ist um 18.02 Uhr.
+          translation:
+            vi: Giờ đến Berlin là 18 giờ 02.
+      confusion:
+        vi: "Trên bảng điện tử ở ga: Abfahrt = tàu đi, Ankunft = tàu đến."
+
+  - key: de:item:a1u07-verspaetung
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Verspätung, -en"
+      ipa: /fɛɐ̯ˈʃpɛːtʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chậm trễ, trễ giờ
+      examples:
+        - target: Der Zug hat zehn Minuten Verspätung.
+          translation:
+            vi: Tàu trễ mười phút.
+      confusion:
+        vi: "Nói tàu trễ bao lâu: Der Zug hat … Verspätung (dùng haben, không dùng sein)."
+
+  - key: de:item:a1u07-puenktlich
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: pünktlich
+      ipa: /ˈpʏŋktlɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: đúng giờ
+      examples:
+        - target: Der Bus ist heute pünktlich.
+          translation:
+            vi: Hôm nay xe buýt đến đúng giờ.
+      pronunciation_note:
+        vi: "ü: miệng nói \"i\" nhưng tròn môi như \"u\"; ch cuối từ là âm gió nhẹ như \"h\" nói sát răng."
+
+  - key: de:item:a1u07-fahrplan
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Fahrplan, ¨-e"
+      ipa: /ˈfaːɐ̯plaːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảng giờ tàu xe, lịch chạy
+      examples:
+        - target: Hast du den Fahrplan?
+          translation:
+            vi: Bạn có bảng giờ tàu không?
+
+  - key: de:item:a1u07-einfach
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: einfach
+      ipa: /ˈaɪ̯nfax/
+      pos: tính từ
+    back:
+      meaning:
+        vi: (vé) một chiều; đơn giản, dễ
+      examples:
+        - target: Einmal einfach nach Bonn, bitte.
+          translation:
+            vi: Cho tôi một vé một chiều đi Bonn.
+        - target: Das ist einfach.
+          translation:
+            vi: Cái này dễ.
+      confusion:
+        vi: "Ở quầy vé, einfach là vé một chiều; vé khứ hồi là hin und zurück."
+
+  - key: de:item:a1u07-hin-und-zurueck
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: hin und zurück
+      pos: cụm từ
+    back:
+      meaning:
+        vi: khứ hồi (đi và về)
+      examples:
+        - target: Einmal hin und zurück nach Köln, bitte.
+          translation:
+            vi: Cho tôi một vé khứ hồi đi Köln.
+
+  - key: de:item:a1u07-platz
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Platz, ¨-e"
+      ipa: /plats/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ ngồi; quảng trường
+      examples:
+        - target: Ist der Platz hier frei?
+          translation:
+            vi: Chỗ này còn trống không?
+      confusion:
+        vi: "der Platz còn nghĩa là quảng trường trong thành phố. Số nhiều: die Plätze."
+
+  - key: de:item:a1u07-wagen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Wagen, -"
+      ipa: /ˈvaːɡn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: toa tàu; xe ô tô
+      examples:
+        - target: Ihr Platz ist in Wagen 9.
+          translation:
+            vi: Chỗ của ông/bà ở toa số 9.
+      pronunciation_note:
+        vi: "w đọc là \"v\": \"va-gần\"."
+
+  - key: de:item:a1u07-richtung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Richtung, -en"
+      ipa: /ˈʁɪçtʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hướng, chiều
+      examples:
+        - target: Die U-Bahn in Richtung Zentrum fährt von Gleis 2 ab.
+          translation:
+            vi: Tàu điện ngầm hướng đi trung tâm chạy từ đường ray số 2.
+
+  # ================= bài 3: quần áo, đại từ Dativ =================
+  - key: de:item:a1u07-g-personalpronomen-dativ
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Personalpronomen im Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen / Ihnen"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Đại từ Dativ đứng sau động từ hoặc giới từ cần Dativ: ich → mir, du → dir, er → ihm, sie → ihr, es → ihm, wir → uns, ihr → euch, sie → ihnen, Sie → Ihnen."
+      examples:
+        - target: Ich fahre mit dir zum Bahnhof.
+          translation:
+            vi: Mình đi ra ga cùng bạn.
+        - target: Das Hemd gefällt ihm nicht.
+          translation:
+            vi: Anh ấy không thích cái áo sơ mi.
+      confusion:
+        vi: "Đừng nhầm với Akkusativ: mich/mir, dich/dir, ihn/ihm. ihr vừa là \"cô ấy\" ở Dativ, vừa là \"các bạn\" ở Nominativ."
+
+  - key: de:item:a1u07-g-gefallen-passen-stehen
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "gefallen / passen / stehen + Dativ"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "Với gefallen (làm ai thích), passen (vừa với ai) và stehen (hợp với ai), đồ vật là chủ ngữ, người ở Dativ: Die Jacke gefällt mir. Động từ chia theo đồ vật: số nhiều thì gefallen, passen, stehen."
+      examples:
+        - target: Die Hose passt mir nicht.
+          translation:
+            vi: Cái quần không vừa với tôi.
+        - target: Die Schuhe gefallen mir.
+          translation:
+            vi: Tôi thích đôi giày.
+        - target: Das Kleid steht dir gut.
+          translation:
+            vi: Cái váy hợp với bạn lắm.
+      confusion:
+        vi: "Tiếng Việt nói \"tôi thích…\" nên người Việt hay nói sai \"Ich gefalle die Jacke\"; \"ich gefalle\" nghĩa là \"tôi làm (ai đó) thích tôi\"."
+
+  - key: de:item:a1u07-kleidung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kleidung (Sg.)"
+      ipa: /ˈklaɪ̯dʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần áo (nói chung)
+      examples:
+        - target: Kleidung ist in Deutschland oft teuer.
+          translation:
+            vi: Ở Đức quần áo thường đắt.
+      confusion:
+        vi: "die Kleidung luôn ở số ít; muốn nói từng món thì gọi tên cụ thể: eine Hose, ein Hemd. Đừng nhầm với das Kleid (cái váy)."
+
+  - key: de:item:a1u07-hose
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Hose, -n"
+      ipa: /ˈhoːzə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái quần (dài)
+      examples:
+        - target: Die Hose ist schwarz.
+          translation:
+            vi: Cái quần màu đen.
+      pronunciation_note:
+        vi: "s giữa hai nguyên âm đọc gần như \"d\" giọng Bắc: \"hô-dờ\"."
+      confusion:
+        vi: "Khác tiếng Anh pants (số nhiều): die Hose là số ít – một cái quần."
+
+  - key: de:item:a1u07-hemd
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Hemd, -en"
+      ipa: /hɛmt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo sơ mi
+      examples:
+        - target: Das Hemd ist weiß.
+          translation:
+            vi: Cái áo sơ mi màu trắng.
+      pronunciation_note:
+        vi: "d ở cuối từ đọc như \"t\": \"hemt\"."
+
+  - key: de:item:a1u07-jacke
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Jacke, -n"
+      ipa: /ˈjakə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo khoác (ngắn)
+      examples:
+        - target: Die Jacke gefällt mir.
+          translation:
+            vi: Tôi thích cái áo khoác này.
+      pronunciation_note:
+        vi: "j đọc như \"i\" lướt (giống \"d\" của giọng miền Nam): \"ia-kờ\"."
+
+  - key: de:item:a1u07-pullover
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Pullover, -"
+      ipa: /pʊˈloːvɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo len (chui đầu)
+      examples:
+        - target: Im Winter trage ich oft einen Pullover.
+          translation:
+            vi: Mùa đông tôi hay mặc áo len.
+      pronunciation_note:
+        vi: "Trọng âm ở âm \"lo\"; v đọc là \"v\"; -er cuối đọc nhẹ như \"ơ\". Văn nói hay gọi tắt là Pulli."
+
+  - key: de:item:a1u07-kleid
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Kleid, -er"
+      ipa: /klaɪ̯t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: váy liền, đầm
+      examples:
+        - target: Das Kleid steht dir gut.
+          translation:
+            vi: Cái váy hợp với bạn lắm.
+      confusion:
+        vi: "das Kleid (cái váy) khác die Kleidung (quần áo nói chung). Số nhiều die Kleider đôi khi cũng nghĩa là quần áo."
+
+  - key: de:item:a1u07-schuh
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Schuh, -e"
+      ipa: /ʃuː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiếc giày; die Schuhe = giày, đôi giày
+      examples:
+        - target: Die Schuhe passen mir nicht.
+          translation:
+            vi: Đôi giày không vừa với tôi.
+      pronunciation_note:
+        vi: "sch đọc như \"s\" uốn lưỡi, tròn môi; h sau u không đọc: \"shu\"."
+
+  - key: de:item:a1u07-farben
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Farben: rot, blau, grün, gelb, schwarz, weiß, grau"
+      pos: cụm từ
+    back:
+      meaning:
+        vi: "màu sắc: đỏ, xanh dương, xanh lá, vàng, đen, trắng, xám"
+      examples:
+        - target: Der Pullover ist blau.
+          translation:
+            vi: Cái áo len màu xanh dương.
+        - target: Meine Schuhe sind schwarz.
+          translation:
+            vi: Giày của tôi màu đen.
+      confusion:
+        vi: "Tên màu là tính từ nên viết thường; đứng sau sein thì không đổi đuôi. Hỏi màu: Welche Farbe hat die Jacke?"
+
+  - key: de:item:a1u07-tragen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: tragen (du trägst)
+      ipa: /ˈtʁaːɡn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: mặc, mang (quần áo); xách, mang (đồ)
+      examples:
+        - target: Was trägst du heute?
+          translation:
+            vi: Hôm nay bạn mặc gì?
+        - target: Anna trägt einen Rock.
+          translation:
+            vi: Anna mặc chân váy.
+      confusion:
+        vi: "Đổi nguyên âm a → ä: du trägst, er trägt. tragen + Akkusativ: Ich trage einen Mantel."
+
+  - key: de:item:a1u07-gefallen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gefallen (es gefällt)
+      ipa: /ɡəˈfalən/
+      pos: động từ
+    back:
+      meaning:
+        vi: làm (ai) thích, vừa ý (ai)
+      examples:
+        - target: Wie gefällt Ihnen die Jacke?
+          translation:
+            vi: Ông/bà thấy cái áo khoác thế nào?
+      confusion:
+        vi: "Vật thích là chủ ngữ, người thích ở Dativ: Die Jacke gefällt mir. Đổi nguyên âm: es gefällt, sie gefallen (số nhiều)."
+
+  - key: de:item:a1u07-passen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: passen
+      ipa: /ˈpasn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: vừa (cỡ); hợp
+      examples:
+        - target: Passt dir der Pullover?
+          translation:
+            vi: Áo len có vừa với bạn không?
+      confusion:
+        vi: "passen + Dativ = vừa với ai (Die Hose passt mir); passen zu + Dativ = hợp với cái gì (Die Schuhe passen zur Hose)."
+
+  - key: de:item:a1u07-rock
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Rock, ¨-e"
+      ipa: /ʁɔk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chân váy
+      examples:
+        - target: Der Rock gefällt mir.
+          translation:
+            vi: Tôi thích cái chân váy này.
+      confusion:
+        vi: "der Rock là chân váy (chỉ phần dưới); váy liền là das Kleid. Số nhiều: die Röcke."
+
+  - key: de:item:a1u07-t-shirt
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das T-Shirt, -s"
+      ipa: /ˈtiːʃœːɐ̯t/
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo phông, áo thun
+      examples:
+        - target: Im Sommer trage ich oft ein T-Shirt.
+          translation:
+            vi: Mùa hè tôi hay mặc áo phông.
+
+  - key: de:item:a1u07-mantel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Mantel, ¨-"
+      ipa: /ˈmantl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo khoác dài, áo măng tô
+      examples:
+        - target: Im Winter brauchst du einen Mantel.
+          translation:
+            vi: Mùa đông bạn cần một cái áo măng tô.
+      confusion:
+        vi: "der Mantel dài và dày hơn die Jacke. Số nhiều: die Mäntel."
+
+  - key: de:item:a1u07-socke
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Socke, -n"
+      ipa: /ˈzɔkə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiếc tất (vớ)
+      examples:
+        - target: Wo sind meine Socken?
+          translation:
+            vi: Tất của tôi đâu rồi?
+      pronunciation_note:
+        vi: "s ở đầu từ đọc gần như \"d\" giọng Bắc: \"dó-kờ\"."
+
+  # ================= bài 4: so sánh, cửa hàng quần áo =================
+  - key: de:item:a1u07-g-komparativ
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Komparativ: billiger als; so teuer wie"
+      pos: ngữ pháp
+    back:
+      meaning:
+        vi: "So sánh hơn: tính từ + -er + als (billiger als); nhiều tính từ một âm tiết thêm umlaut (groß → größer, alt → älter); bất quy tắc: gut → besser, viel → mehr. So sánh bằng: so + tính từ + wie (so teuer wie)."
+      examples:
+        - target: Die Jacke ist billiger als der Mantel.
+          translation:
+            vi: Cái áo khoác rẻ hơn cái áo măng tô.
+        - target: Mein Bruder ist größer als ich.
+          translation:
+            vi: Anh trai tôi cao hơn tôi.
+        - target: Die Hose ist so teuer wie die Jacke.
+          translation:
+            vi: Cái quần đắt bằng cái áo khoác.
+      confusion:
+        vi: "Không nói \"mehr billig\" như tiếng Anh \"more\"; \"größer wie\" chỉ là văn nói, văn viết và bài thi dùng als."
+
+  - key: de:item:a1u07-groesse
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Größe, -n"
+      ipa: /ˈɡʁøːsə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cỡ, kích cỡ
+      examples:
+        - target: Welche Größe haben Sie? – Größe 38.
+          translation:
+            vi: Ông/bà mặc cỡ nào? – Cỡ 38.
+      pronunciation_note:
+        vi: "ö: miệng nói \"ê\" nhưng tròn môi; ß là s mạnh."
+
+  - key: de:item:a1u07-kurz
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: kurz
+      ipa: /kʊʁts/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngắn
+      examples:
+        - target: Der Rock ist zu kurz.
+          translation:
+            vi: Chân váy ngắn quá.
+      confusion:
+        vi: "So sánh hơn có umlaut: kurz → kürzer."
+
+  - key: de:item:a1u07-lang
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: lang
+      ipa: /laŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: dài
+      examples:
+        - target: Die Hose ist zu lang.
+          translation:
+            vi: Cái quần dài quá.
+      confusion:
+        vi: "So sánh hơn có umlaut: lang → länger."
+
+  - key: de:item:a1u07-eng
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: eng
+      ipa: /ɛŋ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: chật, bó
+      examples:
+        - target: Die Schuhe sind zu eng.
+          translation:
+            vi: Đôi giày chật quá.
+
+  - key: de:item:a1u07-bequem
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: bequem
+      ipa: /bəˈkveːm/
+      pos: tính từ
+    back:
+      meaning:
+        vi: thoải mái, dễ chịu (khi mặc, khi ngồi)
+      examples:
+        - target: Die Schuhe sind sehr bequem.
+          translation:
+            vi: Đôi giày đi rất êm chân.
+      pronunciation_note:
+        vi: "qu đọc là \"kv\"; trọng âm ở âm thứ hai: \"bơ-kvêm\"."
+
+  - key: de:item:a1u07-schick
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: schick
+      ipa: /ʃɪk/
+      pos: tính từ
+    back:
+      meaning:
+        vi: sành điệu, thanh lịch
+      examples:
+        - target: Das Kleid ist schick.
+          translation:
+            vi: Cái váy trông sang trọng.
+
+  - key: de:item:a1u07-kaufhaus
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "das Kaufhaus, ¨-er"
+      ipa: /ˈkaʊ̯fhaʊ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng bách hóa
+      examples:
+        - target: Am Sonntag ist das Kaufhaus geschlossen.
+          translation:
+            vi: Chủ nhật cửa hàng bách hóa đóng cửa.
+      confusion:
+        vi: "Từ ghép: kaufen + das Haus → das Kaufhaus. Số nhiều: die Kaufhäuser."
+
+  - key: de:item:a1u07-preis
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "der Preis, -e"
+      ipa: /pʁaɪ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá (tiền); giải thưởng
+      examples:
+        - target: Der Preis ist gut.
+          translation:
+            vi: Giá này được đấy.
+
+  - key: de:item:a1u07-angebot
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Angebot, -e"
+      ipa: /ˈanɡəboːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hàng khuyến mãi, ưu đãi; lời đề nghị
+      examples:
+        - target: Die Jacken sind heute im Angebot.
+          translation:
+            vi: Hôm nay áo khoác đang khuyến mãi.
+      confusion:
+        vi: "im Angebot = đang giảm giá, khuyến mãi."
+
+  - key: de:item:a1u07-kasse
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Kasse, -n"
+      ipa: /ˈkasə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quầy thu ngân, quầy tính tiền
+      examples:
+        - target: Bitte zahlen Sie an der Kasse.
+          translation:
+            vi: Xin ông/bà thanh toán ở quầy thu ngân.
+
+  - key: de:item:a1u07-guenstig
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: günstig
+      ipa: /ˈɡʏnstɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: rẻ, giá hời
+      examples:
+        - target: Die Schuhe sind heute günstig.
+          translation:
+            vi: Hôm nay giày bán rẻ.
+      confusion:
+        vi: "günstig nghe lịch sự hơn billig; billig đôi khi mang nghĩa \"rẻ tiền, kém chất lượng\"."
+
+  - key: de:item:a1u07-haesslich
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: hässlich
+      ipa: /ˈhɛslɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: xấu (vẻ ngoài)
+      examples:
+        - target: Die Farbe finde ich hässlich.
+          translation:
+            vi: Tôi thấy màu này xấu.
+
+  - key: de:item:a1u07-anprobieren
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: anprobieren
+      ipa: /ˈanpʁobiːʁən/
+      pos: động từ (tách)
+    back:
+      meaning:
+        vi: thử (quần áo, giày)
+      examples:
+        - target: Kann ich die Hose anprobieren?
+          translation:
+            vi: Tôi thử cái quần này được không?
+      confusion:
+        vi: "Động từ tách: Ich probiere die Jacke an."
+
+  - key: de:item:a1u07-umkleidekabine
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Umkleidekabine, -n"
+      ipa: /ˈʊmklaɪ̯dəkabiːnə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng thử đồ
+      examples:
+        - target: Die Umkleidekabine ist dort hinten.
+          translation:
+            vi: Phòng thử đồ ở đằng sau kia.

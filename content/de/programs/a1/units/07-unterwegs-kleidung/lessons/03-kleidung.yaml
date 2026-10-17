@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u07-kleidung
+order_index: 3
+level: a1
+title:
+  vi: Quần áo – đại từ Dativ (Die Jacke gefällt mir.)
+objectives:
+  - vi: Nói mình và người khác đang mặc gì (Ich trage einen Pullover. Der Pullover ist blau.).
+  - vi: Khen hoặc chê quần áo bằng gefallen (Die Jacke gefällt mir. Die Schuhe gefallen mir nicht.).
+  - vi: Nói quần áo vừa hay không vừa, hợp hay không hợp với ai (passen, stehen).
+  - vi: Dùng đại từ Dativ mir, dir, ihm, ihr, uns, euch, ihnen / Ihnen.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u07-am-bahnhof]
+items:
+  - item: de:item:a1u07-g-personalpronomen-dativ
+  - item: de:item:a1u07-g-gefallen-passen-stehen
+  - item: de:item:a1u07-kleidung
+  - item: de:item:a1u07-hose
+  - item: de:item:a1u07-hemd
+  - item: de:item:a1u07-jacke
+  - item: de:item:a1u07-pullover
+  - item: de:item:a1u07-kleid
+  - item: de:item:a1u07-schuh
+  - item: de:item:a1u07-farben
+  - item: de:item:a1u07-tragen
+  - item: de:item:a1u07-gefallen
+  - item: de:item:a1u07-passen
+  - item: de:item:a1u07-rock
+  - item: de:item:a1u07-t-shirt
+  - item: de:item:a1u07-mantel
+  - item: de:item:a1u07-socke
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Mình thích cái áo khoác này", "Cái quần không vừa với mình", "Cái váy hợp với bạn lắm" và kể hôm nay mình mặc gì.
+  - type: explain
+    text:
+      vi: "Đại từ Dativ: ich → mir, du → dir, er → ihm, sie → ihr, es → ihm, wir → uns, ihr → euch, sie → ihnen, Sie → Ihnen. Hãy học theo cặp với Akkusativ đã biết: mich/mir, dich/dir, ihn/ihm, sie/ihr."
+  - type: explain
+    text:
+      vi: "gefallen ngược với tiếng Việt: \"Tôi thích cái áo\" thì tôi là chủ ngữ, còn tiếng Đức nói Die Jacke gefällt mir – cái áo làm tôi vừa ý. Đồ vật là chủ ngữ, nên động từ chia theo đồ vật: Die Schuhe gefallen mir (số nhiều)."
+  - type: explain
+    text:
+      vi: "passen (vừa cỡ) và stehen (hợp, mặc lên đẹp) cũng theo khuôn đó: Die Hose passt mir nicht. Das Kleid steht dir gut. Người luôn ở Dativ (mir, dir, Ihnen), không phải Akkusativ (mich, dich, Sie)."
+  - type: explain
+    text:
+      vi: "Nói mình mặc gì: tragen (du trägst, er trägt) + Akkusativ – Ich trage heute einen Pullover. Muốn nói màu, dùng sein + tên màu viết thường, không thêm đuôi: Der Pullover ist blau."
+  - type: explain
+    text:
+      vi: "Trong cửa hàng, người bán nói Sie: Wie gefällt Ihnen die Jacke? (Ihnen viết hoa). Với bạn bè: Wie gefällt dir die Jacke?"
+  - type: deep_explain
+    text:
+      vi: "Câu \"Wie geht es Ihnen?\" bạn học từ bài đầu tiên cũng có Dativ: Ihnen. \"Ich mag die Jacke\" cũng đúng, nhưng gefallen là cách nói tự nhiên nhất khi nhận xét vẻ ngoài của thứ mình vừa thấy, vừa thử. Đồ vật được thay bằng đại từ theo giống ngữ pháp: die Hose → sie, der Mantel → er, das Kleid → es (Die Hose ist schön, aber sie passt mir nicht). Cỡ quần áo ở Đức theo chuẩn châu Âu (nữ thường 36, 38, 40…; giày 38, 39, 42…), khác cỡ S/M/L hay cỡ Việt Nam – nên thử trước khi mua."
+  - type: example
+    target: Die Jacke gefällt mir sehr gut.
+    target_lang: de
+    translation:
+      vi: Tôi rất thích cái áo khoác này.
+    note:
+      vi: "Chủ ngữ là die Jacke nên gefällt (ngôi 3 số ít); người thích ở Dativ: mir."
+  - type: example
+    target: "Gefallen dir meine Schuhe? – Ja, sie gefallen mir."
+    target_lang: de
+    translation:
+      vi: "Bạn có thích đôi giày của mình không? – Có, mình thích."
+    note:
+      vi: "Hai người bạn dùng du → dir. die Schuhe là số nhiều nên gefallen; sie thay cho die Schuhe."
+  - type: example
+    target: Die Hose ist schön, aber sie passt mir nicht.
+    target_lang: de
+    translation:
+      vi: Cái quần đẹp, nhưng không vừa với tôi.
+    note:
+      vi: "sie thay cho die Hose (giống cái). passen + Dativ: mir."
+  - type: example
+    target: Das Kleid steht Ihnen sehr gut!
+    target_lang: de
+    translation:
+      vi: Cái váy rất hợp với chị!
+    note:
+      vi: "Người bán hàng nói với khách nên dùng Sie → Ihnen (viết hoa)."
+  - type: example
+    target: Heute trägt Anna einen Rock und ein T-Shirt. Der Rock ist grün.
+    target_lang: de
+    translation:
+      vi: Hôm nay Anna mặc chân váy và áo phông. Chân váy màu xanh lá.
+    note:
+      vi: "tragen đổi a → ä: Anna trägt. der Rock là tân ngữ nên einen Rock."
+  - type: example
+    target: "Wie findest du den Mantel? – Ich finde ihn schön. Er gefällt mir."
+    target_lang: de
+    translation:
+      vi: "Bạn thấy cái áo măng tô thế nào? – Mình thấy đẹp. Mình thích nó."
+    note:
+      vi: "finden + Akkusativ: ihn; gefallen: er là chủ ngữ, mir ở Dativ – cùng một cái áo nhưng hai cách."
+  - type: common_mistake
+    wrong: Ich gefalle die Jacke.
+    right: Die Jacke gefällt mir.
+    target_lang: de
+    note:
+      vi: Đừng dịch từng chữ "tôi thích". Với gefallen, đồ vật là chủ ngữ và người ở Dativ.
+  - type: common_mistake
+    wrong: Die Hose passt mich nicht.
+    right: Die Hose passt mir nicht.
+    target_lang: de
+    note:
+      vi: "passen đi với Dativ: mir, không phải mich (Akkusativ)."
+  - type: common_mistake
+    wrong: Die Schuhe gefällt mir.
+    right: Die Schuhe gefallen mir.
+    target_lang: de
+    note:
+      vi: "Chủ ngữ die Schuhe là số nhiều nên động từ cũng số nhiều: gefallen."
+  - type: summary
+    points:
+      - vi: "Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen / Ihnen."
+      - vi: "gefallen, passen, stehen: đồ vật là chủ ngữ, người ở Dativ (Die Jacke gefällt mir)."
+      - vi: "Động từ chia theo đồ vật: es gefällt / sie gefallen."
+      - vi: "tragen + Akkusativ: Ich trage einen Pullover; du trägst, er trägt."
+      - vi: "Màu sau sein không đổi đuôi: Der Pullover ist blau."
+      - vi: "Trong cửa hàng: Wie gefällt Ihnen …?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u07l3-mcq-kleid-gefaellt
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-g-gefallen-passen-stehen
+    prompt:
+      stem: "Chọn câu đúng cho: \"Tôi thích cái váy này.\""
+      stem_lang: vi
+      options:
+        - { id: r8b, text: Ich gefalle das Kleid., lang: de }
+        - { id: t3k, text: Das Kleid gefällt mir., lang: de }
+        - { id: m6q, text: Das Kleid gefällt mich., lang: de }
+        - { id: e9s, text: Ich gefällt das Kleid., lang: de }
+    answer:
+      correct_option_id: t3k
+    explanation:
+      vi: "Với gefallen, đồ vật (das Kleid) là chủ ngữ, người thích ở Dativ (mir). mich là Akkusativ nên sai; \"Ich gefalle …\" nghĩa là tôi làm người khác thích mình."
+    display_answer: Das Kleid gefällt mir.
+
+  - key: de:exercise:a1u07l3-mcq-ihm
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-g-personalpronomen-dativ
+    prompt:
+      stem: "Chọn đại từ đúng: Die Schuhe passen ___ nicht. (er = anh ấy)"
+      stem_lang: vi
+      options:
+        - { id: c2v, text: ihn, lang: de }
+        - { id: l7p, text: ihm, lang: de }
+        - { id: x4j, text: er, lang: de }
+        - { id: f1w, text: ihr, lang: de }
+    answer:
+      correct_option_id: l7p
+    explanation:
+      vi: "passen đi với Dativ; er ở Dativ là ihm. ihn là Akkusativ, er là Nominativ, còn ihr là Dativ của sie (cô ấy)."
+    display_answer: ihm
+
+  - key: de:exercise:a1u07l3-fill-dir-mir
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-g-personalpronomen-dativ
+    prompt:
+      template: "Gefällt {{b1}} (du) die Jacke? – Ja, sie gefällt {{b2}} (ich) sehr gut."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+      hint_levels:
+        - "Nghĩa của câu: Bạn có thích cái áo khoác không? – Có, mình rất thích."
+        - "Gợi ý: gefallen cần Dativ – du → d…, ich → m…"
+    answer:
+      blanks:
+        b1: [dir]
+        b2: [mir]
+    known_wrong:
+      - answer: dich
+        feedback_vi: "dich là Akkusativ. gefallen đi với Dativ: du → dir."
+        error_tag: case_dat_akk
+      - answer: mich
+        feedback_vi: "mich là Akkusativ. gefallen đi với Dativ: ich → mir."
+        error_tag: case_dat_akk
+      - answer: du
+        feedback_vi: "Người thích không phải chủ ngữ; với gefallen người ở Dativ: dir."
+        error_tag: case_dat_akk
+      - answer: ich
+        feedback_vi: "Người thích không phải chủ ngữ; với gefallen người ở Dativ: mir."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Chủ ngữ là die Jacke (sie); người thích đứng ở Dativ: du → dir, ich → mir."
+    display_answer: "Gefällt dir die Jacke? – Ja, sie gefällt mir sehr gut."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u07l3-fill-traegt-ihr
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-tragen
+    prompt:
+      template: "Anna {{b1}} (tragen) heute ein Kleid. Das Kleid steht {{b2}} (sie) sehr gut."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [trägt]
+        b2: [ihr]
+    known_wrong:
+      - answer: tragt
+        feedback_vi: "tragen đổi a → ä ở ngôi du và er/sie/es: Anna trägt."
+        error_tag: verb_form
+      - answer: sie
+        feedback_vi: "stehen (hợp với ai) đi với Dativ: sie → ihr."
+        error_tag: case_dat_akk
+      - answer: ihn
+        feedback_vi: "ihn là Akkusativ của er. Dativ của sie (cô ấy) là ihr."
+        error_tag: case_dat_akk
+      - answer: ihm
+        feedback_vi: "ihm là Dativ của er/es. Anna là nữ: ihr."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "tragen đổi nguyên âm ở ngôi thứ ba: sie trägt. stehen theo nghĩa \"hợp với ai\" cần Dativ, và Dativ của sie (cô ấy) là ihr."
+    display_answer: Anna trägt heute ein Kleid. Das Kleid steht ihr sehr gut.
+
+  - key: de:exercise:a1u07l3-fill-gefallen-passen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-gefallen-passen-stehen
+    prompt:
+      template: "Die Schuhe {{b1}} (gefallen) mir, aber sie {{b2}} (passen) mir nicht."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [gefallen]
+        b2: [passen]
+    known_wrong:
+      - answer: gefällt
+        feedback_vi: "Chủ ngữ die Schuhe là số nhiều, nên động từ chia số nhiều: gefallen."
+        error_tag: verb_form
+      - answer: passt
+        feedback_vi: "Chủ ngữ sie (= die Schuhe) là số nhiều, nên chia passen."
+        error_tag: verb_form
+    explanation:
+      vi: "Với gefallen và passen, đồ vật là chủ ngữ. die Schuhe là số nhiều nên dùng dạng gefallen, passen – giống nguyên thể."
+    display_answer: Die Schuhe gefallen mir, aber sie passen mir nicht.
+
+  - key: de:exercise:a1u07l3-tr-hose-passt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-passen
+    prompt:
+      source_text: Cái quần không vừa với tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Hose passt mir nicht.
+        - Mir passt die Hose nicht.
+        - Diese Hose passt mir nicht.
+        - Mir passt diese Hose nicht.
+    known_wrong:
+      - answer: Die Hose passt mich nicht.
+        feedback_vi: "passen đi với Dativ: mir, không phải mich."
+        error_tag: case_dat_akk
+      - answer: Ich passe die Hose nicht.
+        feedback_vi: "Cái quần là chủ ngữ: Die Hose passt mir nicht."
+        error_tag: word_order
+      - answer: Die Hose nicht passt mir.
+        feedback_vi: "Động từ passt phải ở vị trí 2; nicht đứng sau mir."
+        error_tag: verb_position
+    explanation:
+      vi: "Với passen, đồ vật là chủ ngữ (die Hose → passt), người ở Dativ (mir), nicht đứng cuối câu."
+    display_answer: Die Hose passt mir nicht.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u07l3-wb-wie-gefaellt-ihnen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-gefallen
+    prompt:
+      instruction: "Người bán hàng hỏi khách (Sie): \"Ông thấy cái áo sơ mi thế nào?\" Sắp xếp thành câu."
+      tokens:
+        - { id: t-ihnen, text: Ihnen }
+        - { id: t-hemd, text: Hemd }
+        - { id: t-wie, text: wie }
+        - { id: t-sie, text: Sie }
+        - { id: t-das, text: das }
+        - { id: t-gefaellt, text: gefällt }
+        - { id: t-gefallen, text: gefallen }
+    answer:
+      orders:
+        - [t-wie, t-gefaellt, t-ihnen, t-das, t-hemd]
+        - [t-wie, t-gefaellt, t-das, t-hemd, t-ihnen]
+    explanation:
+      vi: "Chủ ngữ là das Hemd nên gefällt (ngôi 3 số ít); khách được nói Sie nên ở Dativ là Ihnen. Đại từ ngắn thường đứng trước danh từ: Wie gefällt Ihnen das Hemd?"
+    display_answer: Wie gefällt Ihnen das Hemd?
+
+  - key: de:exercise:a1u07l3-wb-passt-meinem-bruder
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u07-g-gefallen-passen-stehen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cái áo khoác không vừa với anh trai tôi.\""
+      tokens:
+        - { id: t-nicht, text: nicht }
+        - { id: t-bruder, text: Bruder }
+        - { id: t-meinen, text: meinen }
+        - { id: t-jacke, text: Jacke }
+        - { id: t-passt, text: passt }
+        - { id: t-meinem, text: meinem }
+        - { id: t-die, text: die }
+        - { id: t-passen, text: passen }
+    answer:
+      orders:
+        - [t-die, t-jacke, t-passt, t-meinem, t-bruder, t-nicht]
+        - [t-meinem, t-bruder, t-passt, t-die, t-jacke, t-nicht]
+    explanation:
+      vi: "die Jacke là chủ ngữ nên passt; người ở Dativ: der Bruder → meinem Bruder (meinen là Akkusativ). Nếu mở đầu bằng meinem Bruder thì passt vẫn ở vị trí 2, nicht ở cuối."
+    display_answer: Die Jacke passt meinem Bruder nicht.
+
+  - key: de:exercise:a1u07l3-tr-t-shirt-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-t-shirt
+    prompt:
+      source_text: Das T-Shirt gefällt mir nicht.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi không thích cái áo phông này.
+        - Tôi không thích cái áo phông.
+        - Tôi không thích áo phông này.
+        - Tôi không thích chiếc áo phông này.
+        - Mình không thích cái áo phông này.
+        - Tôi không thích cái áo thun này.
+        - Tôi không thích cái áo thun.
+        - Tôi không thích áo thun này.
+        - Tôi không thích chiếc áo thun này.
+        - Mình không thích cái áo thun này.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái áo phông không thích tôi.
+        feedback_vi: "Đừng dịch ngược: Das T-Shirt gefällt mir nicht nghĩa là \"tôi không thích cái áo phông\"."
+        error_tag: gefallen_direction
+      - answer: Tôi thích cái áo phông này.
+        feedback_vi: "Câu có nicht nên là \"không thích\"."
+        error_tag: negation_missed
+    explanation:
+      vi: "gefallen đảo vai so với tiếng Việt: das T-Shirt là chủ ngữ, mir là người thích. Dịch sang tiếng Việt thì \"tôi\" làm chủ ngữ: Tôi không thích cái áo phông này."
+    display_answer: Tôi không thích cái áo phông này.
+
+  - key: de:exercise:a1u07l3-mcq-verkaeufer-sie
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-personalpronomen-dativ
+    prompt:
+      stem: "Bạn là nhân viên bán hàng và muốn hỏi một khách hàng lớn tuổi thấy đôi giày thế nào. Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: s5d, text: Wie gefallen Ihnen die Schuhe?, lang: de }
+        - { id: k8u, text: Wie gefallen dir die Schuhe?, lang: de }
+        - { id: z3n, text: Wie gefällt Ihnen die Schuhe?, lang: de }
+        - { id: p6g, text: Wie gefallen Sie die Schuhe?, lang: de }
+    answer:
+      correct_option_id: s5d
+    explanation:
+      vi: "Với khách hàng dùng Sie, ở Dativ là Ihnen. die Schuhe là số nhiều nên gefallen, không phải gefällt; dir là cách nói với bạn bè."
+    display_answer: Wie gefallen Ihnen die Schuhe?

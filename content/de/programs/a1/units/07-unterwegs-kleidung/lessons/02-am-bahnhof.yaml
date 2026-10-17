@@ -1,0 +1,420 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u07-am-bahnhof
+order_index: 2
+level: a1
+title:
+  vi: Ở nhà ga – welcher (Welcher Zug fährt nach München?)
+objectives:
+  - vi: Mua vé tàu một chiều hoặc khứ hồi ở quầy vé (Einmal nach Köln, bitte. – Einfach oder hin und zurück?).
+  - vi: Hỏi tàu nào, đường ray nào, mấy giờ với welcher / welche / welches.
+  - vi: Nghe giờ tàu chính thức (14.35 Uhr) và hiểu thông báo tàu trễ, đổi tàu.
+  - vi: Dùng các động từ tách abfahren, ankommen, umsteigen đúng vị trí.
+estimated_minutes: 15
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:a1u07-mit-dem-zug]
+items:
+  - item: de:item:a1u07-g-welcher
+  - item: de:item:a1u07-abfahren
+  - item: de:item:a1u07-ankommen
+  - item: de:item:a1u07-umsteigen
+  - item: de:item:a1u07-abfahrt
+  - item: de:item:a1u07-ankunft
+  - item: de:item:a1u07-verspaetung
+  - item: de:item:a1u07-puenktlich
+  - item: de:item:a1u07-fahrplan
+  - item: de:item:a1u07-einfach
+  - item: de:item:a1u07-hin-und-zurueck
+  - item: de:item:a1u07-platz
+  - item: de:item:a1u07-wagen
+  - item: de:item:a1u07-richtung
+  - item: de:item:a1u07-zug
+    role: reuse
+  - item: de:item:a1u07-gleis
+    role: reuse
+  - item: de:item:a1u07-fahrkarte
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tự mua được vé tàu, hỏi được "Tàu nào đi München? Chạy từ đường ray nào?" và nghe hiểu thông báo kiểu "Tàu trễ mười phút".
+  - type: explain
+    text:
+      vi: "welch- nghĩa là \"nào\" và có đuôi giống hệt mạo từ xác định: der Zug → welcher Zug, die Fahrkarte → welche Fahrkarte, das Gleis → welches Gleis, die Züge → welche Züge. Tiếng Việt \"nào\" đứng sau danh từ (tàu nào), còn tiếng Đức welch- đứng trước danh từ, ở đầu câu hỏi."
+  - type: explain
+    text:
+      vi: "Khi danh từ là tân ngữ (Akkusativ), chỉ giống đực đổi, giống như der → den: Welchen Zug nimmst du? Giống cái, giống trung và số nhiều giữ nguyên: Welche Fahrkarte möchten Sie?"
+  - type: explain
+    text:
+      vi: "abfahren (khởi hành), ankommen (đến nơi), umsteigen (đổi tàu) là động từ tách: phần chính ở vị trí 2, tiền tố về cuối câu – Der Zug fährt um 9.15 Uhr ab. Danh từ đi kèm thì không tách: die Abfahrt, die Ankunft."
+  - type: explain
+    text:
+      vi: "Ở ga, giờ luôn đọc theo kiểu chính thức 24 giờ: 14.35 Uhr = vierzehn Uhr fünfunddreißig. Hãy nghe số giờ trước, rồi số phút sau chữ Uhr, và chú ý -zehn (15) khác -zig (50)."
+  - type: explain
+    text:
+      vi: "Mua vé: Einmal nach Köln, bitte. – Einfach oder hin und zurück? einfach là vé một chiều, hin und zurück là vé khứ hồi; Einmal ở đây là \"một vé\"."
+  - type: deep_explain
+    text:
+      vi: "Tàu trễ nói bằng haben: Der Zug hat zehn Minuten Verspätung – tàu \"có\" mười phút trễ, không dùng sein. Tàu ở Đức khá hay trễ nên bạn sẽ nghe câu này rất nhiều; tàu đúng giờ là pünktlich. Ở Đức có vé tháng toàn quốc cho tàu địa phương và giao thông công cộng (Deutschlandticket), nhưng giá và điều kiện có thể thay đổi – hãy kiểm tra thông tin mới nhất trước khi mua. Vé đặt chỗ ghi toa và ghế, ví dụ Wagen 9, Platz 45. Cách nói welch- ở Dativ (von welchem Gleis?) bạn sẽ học sau; trong bài này chỉ cần Nominativ và Akkusativ."
+  - type: example
+    target: "Welcher Zug fährt nach München? – Der Zug um 10.28 Uhr. Er fährt von Gleis 12 ab."
+    target_lang: de
+    translation:
+      vi: "Tàu nào đi München? – Chuyến 10 giờ 28. Tàu chạy từ đường ray số 12."
+    note:
+      vi: "der Zug → welcher Zug. Er thay cho der Zug (giống đực). Trước số đường ray không có mạo từ."
+  - type: example
+    target: "Guten Tag! Einmal nach Köln, bitte. – Einfach oder hin und zurück? – Hin und zurück, bitte. – Das kostet 89,90 Euro."
+    target_lang: de
+    translation:
+      vi: "Chào anh! Cho tôi một vé đi Köln. – Một chiều hay khứ hồi ạ? – Khứ hồi. – Giá 89 euro 90."
+    note:
+      vi: "Ở quầy vé, khách và nhân viên nói với nhau bằng Sie. 89,90 Euro đọc là neunundachtzig Euro neunzig."
+  - type: example
+    target: "Welchen Zug nimmst du? – Den Zug um acht. Ich muss in Frankfurt umsteigen."
+    target_lang: de
+    translation:
+      vi: "Bạn đi chuyến nào? – Chuyến tám giờ. Mình phải đổi tàu ở Frankfurt."
+    note:
+      vi: "Hai người bạn dùng du. Zug là tân ngữ của nimmst nên welchen, den. Với müssen, umsteigen ở cuối câu và không tách."
+  - type: example
+    target: "Der Zug aus Berlin hat zwanzig Minuten Verspätung. Die Ankunft ist jetzt um 16.50 Uhr."
+    target_lang: de
+    translation:
+      vi: "Tàu từ Berlin trễ hai mươi phút. Giờ đến bây giờ là 16 giờ 50."
+    note:
+      vi: "16.50 Uhr đọc là sechzehn Uhr fünfzig."
+  - type: example
+    target: "Entschuldigung, ist der Platz hier frei? – Nein, leider nicht. Das ist mein Platz: Wagen 9, Platz 45."
+    target_lang: de
+    translation:
+      vi: "Xin lỗi, chỗ này còn trống không? – Tiếc là không. Đây là chỗ của tôi: toa 9, ghế 45."
+    note:
+      vi: "Người lạ trên tàu: câu hỏi lịch sự không cần du hay Sie. Wagen = toa tàu."
+  - type: example
+    target: Die U-Bahn in Richtung Zentrum fährt von Gleis 2 ab.
+    target_lang: de
+    translation:
+      vi: Tàu điện ngầm hướng đi trung tâm chạy từ đường ray số 2.
+    note:
+      vi: "in Richtung … = theo hướng …; trên biển báo thường chỉ ghi Richtung Zentrum."
+  - type: common_mistake
+    wrong: Welche Zug fährt nach Hamburg?
+    right: Welcher Zug fährt nach Hamburg?
+    target_lang: de
+    note:
+      vi: "der Zug là giống đực nên welcher (đuôi -er như der)."
+  - type: common_mistake
+    wrong: Welcher Zug nimmst du?
+    right: Welchen Zug nimmst du?
+    target_lang: de
+    note:
+      vi: "Zug là tân ngữ của nimmst (Akkusativ): der → den, welcher → welchen."
+  - type: common_mistake
+    wrong: Der Zug abfährt um neun Uhr.
+    right: Der Zug fährt um neun Uhr ab.
+    target_lang: de
+    note:
+      vi: Động từ tách – fährt ở vị trí 2, ab về cuối câu.
+  - type: common_mistake
+    wrong: Der Zug ist zehn Minuten Verspätung.
+    right: Der Zug hat zehn Minuten Verspätung.
+    target_lang: de
+    note:
+      vi: "Verspätung là danh từ, đi với haben: Der Zug hat … Verspätung."
+  - type: summary
+    points:
+      - vi: "welcher / welche / welches = nào; đuôi như der / die / das."
+      - vi: "Akkusativ chỉ giống đực đổi: welchen Zug."
+      - vi: "abfahren, ankommen, umsteigen: tiền tố về cuối câu (Der Zug kommt um 9 Uhr an)."
+      - vi: "Giờ tàu: 14.35 Uhr = vierzehn Uhr fünfunddreißig."
+      - vi: "Vé: einfach = một chiều; hin und zurück = khứ hồi."
+      - vi: "Tàu trễ: Der Zug hat zehn Minuten Verspätung; đúng giờ: pünktlich."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u07l2-mcq-welches-gleis
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-g-welcher
+    prompt:
+      stem: "Chọn từ đúng: ___ Gleis ist das? (das Gleis)"
+      stem_lang: vi
+      options:
+        - { id: n5c, text: Welcher, lang: de }
+        - { id: j2w, text: Welche, lang: de }
+        - { id: g8k, text: Welches, lang: de }
+        - { id: b3y, text: Welchen, lang: de }
+    answer:
+      correct_option_id: g8k
+    explanation:
+      vi: "das Gleis là giống trung, nên welch- lấy đuôi -es như das: Welches Gleis? Welcher dành cho giống đực, welche cho giống cái và số nhiều, welchen cho giống đực ở Akkusativ."
+    display_answer: Welches
+
+  - key: de:exercise:a1u07l2-listen-gleis-sieben
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u07-abfahren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Zug nach München fährt heute von Gleis sieben ab.
+      options:
+        - { id: q4r, text: Hôm nay tàu đi München chạy từ đường ray số 7., lang: vi }
+        - { id: u7d, text: Hôm nay tàu từ München đến đường ray số 7., lang: vi }
+        - { id: e1m, text: Hôm nay tàu đi München chạy từ đường ray số 17., lang: vi }
+        - { id: y6h, text: Hôm nay tàu đi München bị trễ bảy phút., lang: vi }
+    answer:
+      correct_option_id: q4r
+    explanation:
+      vi: "nach München = đi München (không phải từ München); fährt … ab = khởi hành; von Gleis sieben = từ đường ray số 7 (17 là siebzehn)."
+    display_answer: Hôm nay tàu đi München chạy từ đường ray số 7.
+
+  - key: de:exercise:a1u07l2-listen-verspaetung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u07-verspaetung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Zug nach Stuttgart hat heute fünfzehn Minuten Verspätung.
+      options:
+        - { id: a9t, text: Hôm nay tàu đi Stuttgart trễ 15 phút., lang: vi }
+        - { id: h5n, text: Hôm nay tàu đi Stuttgart trễ 50 phút., lang: vi }
+        - { id: o2z, text: Hôm nay tàu đi Stuttgart chạy đúng giờ., lang: vi }
+        - { id: w8e, text: Hôm nay tàu từ Stuttgart đến sớm 15 phút., lang: vi }
+    answer:
+      correct_option_id: a9t
+    explanation:
+      vi: "fünfzehn (-zehn) là 15, còn 50 là fünfzig (-zig). hat … Verspätung = bị trễ."
+    display_answer: Hôm nay tàu đi Stuttgart trễ 15 phút.
+
+  - key: de:exercise:a1u07l2-fill-kommt-an
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-ankommen
+    prompt:
+      template: "Der Zug {{b1}} um 9.15 Uhr in Berlin {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 3 }
+      hint_levels:
+        - "Nghĩa của câu: Tàu đến Berlin lúc 9 giờ 15."
+        - "Gợi ý: ankommen là động từ tách – kommen ở vị trí 2, an ở cuối câu."
+    answer:
+      blanks:
+        b1: [kommt]
+        b2: [an]
+    known_wrong:
+      - answer: ankommt
+        feedback_vi: "ankommen là động từ tách: kommt ở vị trí 2, an về cuối câu."
+        error_tag: separable_prefix
+      - answer: ab
+        feedback_vi: "Câu nói tàu đến nơi nên dùng ankommen (… kommt … an); ab thuộc abfahren (khởi hành)."
+        error_tag: separable_prefix
+      - answer: kommen
+        feedback_vi: "Chủ ngữ der Zug là ngôi thứ ba số ít: er kommt."
+        error_tag: verb_form
+    explanation:
+      vi: "ankommen (đến nơi) là động từ tách: kommt chia theo der Zug ở vị trí 2, tiền tố an đứng cuối câu."
+    display_answer: Der Zug kommt um 9.15 Uhr in Berlin an.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u07l2-fill-welchen-den
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-welcher
+    prompt:
+      template: "{{b1}} Zug nimmst du? – Ich nehme {{b2}} Zug um acht."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [Welchen]
+        b2: [den]
+    known_wrong:
+      - answer: Welcher
+        feedback_vi: "Zug là tân ngữ của nimmst (Akkusativ), nên welcher → welchen."
+        error_tag: case_dat_akk
+      - answer: der
+        feedback_vi: "Tân ngữ giống đực ở Akkusativ: der → den Zug."
+        error_tag: case_dat_akk
+      - answer: Welche
+        feedback_vi: "der Zug là giống đực; ở Akkusativ là welchen."
+        error_tag: article
+      - answer: dem
+        feedback_vi: "nehmen đi với Akkusativ, không phải Dativ: den Zug."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "nehmen cần tân ngữ Akkusativ. der Zug ở Akkusativ thành den Zug, nên câu hỏi cũng là welchen Zug (đuôi -en như den)."
+    display_answer: "Welchen Zug nimmst du? – Ich nehme den Zug um acht."
+
+  - key: de:exercise:a1u07l2-fill-steige-um
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-umsteigen
+    prompt:
+      template: "Mein Zug kommt um 13 Uhr in Hannover an. Dort {{b1}} ich {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [steige]
+        b2: [um]
+    known_wrong:
+      - answer: umsteige
+        feedback_vi: "umsteigen là động từ tách: ich steige … um."
+        error_tag: separable_prefix
+      - answer: steigt
+        feedback_vi: "Chủ ngữ là ich nên chia steige."
+        error_tag: verb_form
+      - answer: umsteigen
+        feedback_vi: "Không có động từ khiếm khuyết nên phải chia động từ: ich steige … um."
+        error_tag: verb_form
+    explanation:
+      vi: "\"Ở đó tôi đổi tàu\": umsteigen tách thành steige (vị trí 2, chia theo ich) và um ở cuối câu. Câu mở đầu bằng Dort nên ich đứng sau động từ."
+    display_answer: Mein Zug kommt um 13 Uhr in Hannover an. Dort steige ich um.
+
+  - key: de:exercise:a1u07l2-tr-verspaetung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-verspaetung
+    prompt:
+      source_text: Tàu trễ mười phút.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Zug hat zehn Minuten Verspätung.
+        - Der Zug hat 10 Minuten Verspätung.
+        - Der Zug hat eine Verspätung von zehn Minuten.
+        - Der Zug hat eine Verspätung von 10 Minuten.
+        - Der Zug ist zehn Minuten verspätet.
+        - Der Zug ist 10 Minuten verspätet.
+        - Der Zug kommt zehn Minuten zu spät.
+        - Der Zug kommt 10 Minuten zu spät.
+    known_wrong:
+      - answer: Der Zug ist zehn Minuten Verspätung.
+        feedback_vi: "Danh từ Verspätung đi với haben: Der Zug hat zehn Minuten Verspätung."
+        error_tag: verb_choice
+      - answer: Der Zug hat zehn Minute Verspätung.
+        feedback_vi: "Sau zehn cần số nhiều: zehn Minuten."
+        error_tag: plural_form
+      - answer: Der Zug hat Verspätung zehn Minuten.
+        feedback_vi: "Khoảng thời gian đứng trước Verspätung: zehn Minuten Verspätung."
+        error_tag: word_order
+    explanation:
+      vi: "Cách nói thường gặp nhất là Der Zug hat zehn Minuten Verspätung (haben + khoảng thời gian + Verspätung). Minute sau số đếm phải ở số nhiều: Minuten."
+    display_answer: Der Zug hat zehn Minuten Verspätung.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u07l2-wb-welchen-zug
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-welcher
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi (nói với bạn): \"Bạn đi chuyến tàu nào đến Hamburg?\""
+      tokens:
+        - { id: t-nimmst, text: nimmst }
+        - { id: t-hamburg, text: Hamburg }
+        - { id: t-welchen, text: welchen }
+        - { id: t-du, text: du }
+        - { id: t-welcher, text: welcher }
+        - { id: t-zug, text: Zug }
+        - { id: t-nach, text: nach }
+        - { id: t-nimmt, text: nimmt }
+    answer:
+      orders:
+        - [t-welchen, t-zug, t-nimmst, t-du, t-nach, t-hamburg]
+        - [t-welchen, t-zug, t-nach, t-hamburg, t-nimmst, t-du]
+    explanation:
+      vi: "Zug là tân ngữ của nehmen nên dùng welchen (Akkusativ giống đực). Từ để hỏi đứng đầu, động từ nimmst (chia theo du) ở vị trí 2; nach Hamburg có thể đứng cuối câu hoặc ngay sau Zug."
+    display_answer: Welchen Zug nimmst du nach Hamburg?
+
+  - key: de:exercise:a1u07l2-wb-kommt-an-dresden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-ankommen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tàu đến Dresden lúc 18 giờ.\""
+      tokens:
+        - { id: t-an, text: an }
+        - { id: t-uhr, text: Uhr }
+        - { id: t-der, text: der }
+        - { id: t-in, text: in }
+        - { id: t-kommt, text: kommt }
+        - { id: t-dresden, text: Dresden }
+        - { id: t-um, text: um }
+        - { id: t-zug, text: Zug }
+        - { id: t-18, text: "18" }
+        - { id: t-ankommt, text: ankommt }
+    answer:
+      orders:
+        - [t-der, t-zug, t-kommt, t-um, t-18, t-uhr, t-in, t-dresden, t-an]
+        - [t-um, t-18, t-uhr, t-kommt, t-der, t-zug, t-in, t-dresden, t-an]
+        - [t-in, t-dresden, t-kommt, t-der, t-zug, t-um, t-18, t-uhr, t-an]
+        - [t-der, t-zug, t-kommt, t-in, t-dresden, t-um, t-18, t-uhr, t-an]
+    explanation:
+      vi: "ankommen là động từ tách: kommt ở vị trí 2, an ở cuối câu (ankommt liền là sai). Vị trí 1 có thể là der Zug, um 18 Uhr hoặc in Dresden; nếu không phải chủ ngữ thì der Zug đứng ngay sau kommt."
+    display_answer: Der Zug kommt um 18 Uhr in Dresden an.
+
+  - key: de:exercise:a1u07l2-tr-hin-und-zurueck
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u07-hin-und-zurueck
+    prompt:
+      source_text: Cho tôi một vé khứ hồi đi Leipzig.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Einmal hin und zurück nach Leipzig, bitte.
+        - Einmal nach Leipzig hin und zurück, bitte.
+        - Einmal nach Leipzig und zurück, bitte.
+        - Einmal Leipzig hin und zurück, bitte.
+        - Bitte einmal hin und zurück nach Leipzig.
+        - Einmal hin und zurück nach Leipzig.
+        - Einmal nach Leipzig hin und zurück.
+        - Eine Fahrkarte nach Leipzig, hin und zurück, bitte.
+        - Eine Fahrkarte hin und zurück nach Leipzig, bitte.
+        - Eine Fahrkarte nach Leipzig, hin und zurück.
+        - Eine Fahrkarte hin und zurück nach Leipzig.
+        - Ein Ticket nach Leipzig, hin und zurück, bitte.
+        - Ich möchte eine Fahrkarte nach Leipzig, hin und zurück.
+        - Ich möchte eine Fahrkarte hin und zurück nach Leipzig.
+        - Ich hätte gern eine Fahrkarte nach Leipzig, hin und zurück.
+        - Ich hätte gern eine Fahrkarte hin und zurück nach Leipzig.
+        - Ich möchte einmal hin und zurück nach Leipzig.
+        - Ich hätte gern einmal hin und zurück nach Leipzig.
+    known_wrong:
+      - answer: Einmal einfach nach Leipzig, bitte.
+        feedback_vi: "einfach là vé một chiều; vé khứ hồi là hin und zurück."
+        error_tag: vocabulary
+      - answer: Einmal hin und zurück zu Leipzig, bitte.
+        feedback_vi: "Đi đến thành phố dùng nach: nach Leipzig."
+        error_tag: preposition
+    explanation:
+      vi: "Ở quầy vé, cách ngắn và tự nhiên nhất là Einmal hin und zurück nach Leipzig, bitte (Einmal = một vé). Thành phố đi với nach; một chiều là einfach, khứ hồi là hin und zurück."
+    display_answer: Einmal hin und zurück nach Leipzig, bitte.

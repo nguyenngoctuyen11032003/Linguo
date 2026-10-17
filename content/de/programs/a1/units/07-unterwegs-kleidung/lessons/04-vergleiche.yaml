@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u07-vergleiche
+order_index: 4
+level: a1
+title:
+  vi: Rẻ hơn, đẹp hơn – so sánh (Größer und billiger)
+objectives:
+  - vi: So sánh giá, cỡ, kiểu dáng bằng tính từ + -er + als (billiger als, größer als).
+  - vi: Nói hai thứ bằng nhau hoặc không bằng nhau với so … wie, nicht so … wie.
+  - vi: Dùng đúng các dạng có umlaut và bất quy tắc (größer, älter, kürzer, besser, mehr).
+  - vi: Nghe hiểu hội thoại ngắn trong cửa hàng quần áo (cỡ, giá, khuyến mãi, phòng thử đồ, quầy thu ngân).
+estimated_minutes: 15
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:a1u07-kleidung]
+items:
+  - item: de:item:a1u07-g-komparativ
+  - item: de:item:a1u07-groesse
+  - item: de:item:a1u07-kurz
+  - item: de:item:a1u07-lang
+  - item: de:item:a1u07-eng
+  - item: de:item:a1u07-bequem
+  - item: de:item:a1u07-schick
+  - item: de:item:a1u07-kaufhaus
+  - item: de:item:a1u07-preis
+  - item: de:item:a1u07-angebot
+  - item: de:item:a1u07-kasse
+  - item: de:item:a1u07-guenstig
+  - item: de:item:a1u07-haesslich
+  - item: de:item:a1u07-anprobieren
+  - item: de:item:a1u07-umkleidekabine
+  - item: de:item:a1u07-g-welcher
+    role: reuse
+  - item: de:item:a1u07-g-gefallen-passen-stehen
+    role: reuse
+  - item: de:item:a1u07-mantel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được "Cái áo khoác rẻ hơn cái áo măng tô", "Đôi giày này êm bằng đôi ở nhà", "Có cỡ lớn hơn không ạ?" và nghe hiểu người bán hàng nói về giá, cỡ, khuyến mãi.
+  - type: explain
+    text:
+      vi: "So sánh hơn: thêm -er vào tính từ rồi dùng als: billig → billiger als, schön → schöner als. Tiếng Việt thêm chữ \"hơn\", tiếng Đức đổi chính tính từ – đừng nói \"mehr billig\" như tiếng Anh \"more\"."
+  - type: explain
+    text:
+      vi: "Nhiều tính từ một âm tiết có a, o, u thì thêm umlaut: groß → größer, alt → älter, kurz → kürzer, lang → länger, warm → wärmer. Ba dạng bất quy tắc cần thuộc: gut → besser, viel → mehr, gern → lieber (bạn đã gặp ở bài sở thích)."
+  - type: explain
+    text:
+      vi: "So sánh bằng: so + tính từ nguyên dạng + wie: Die Hose ist so teuer wie die Jacke. Phủ định nicht so … wie = không … bằng: Der Rock ist nicht so schick wie das Kleid."
+  - type: explain
+    text:
+      vi: "Nhớ cặp: khác nhau → -er + als; giống nhau → so … wie. Trong văn nói đôi khi nghe \"größer wie\", nhưng văn viết và bài thi luôn dùng als."
+  - type: explain
+    text:
+      vi: "Trong cửa hàng: die Größe (cỡ), der Preis (giá), im Angebot (đang khuyến mãi), die Umkleidekabine (phòng thử đồ), die Kasse (quầy thu ngân). Xin cỡ khác: Haben Sie die Hose auch eine Nummer größer?"
+  - type: deep_explain
+    text:
+      vi: "teuer bỏ chữ e khi so sánh: teuer → teurer (không viết teuerer). Trong bài này tính từ so sánh chỉ đứng sau sein hoặc làm trạng từ (eine Nummer größer); khi đứng trước danh từ nó còn thêm đuôi (ein billigeres Hemd) – bạn sẽ học ở A2 cùng đuôi tính từ. viel + Komparativ nghĩa là \"hơn nhiều\": viel billiger = rẻ hơn nhiều. Ở Đức, phần lớn cửa hàng và Kaufhaus đóng cửa vào Chủ nhật và ngày lễ (Ladenschluss), chỉ cửa hàng ở nhà ga, sân bay hay trạm xăng thường mở – đề đọc Start Deutsch 1 hay hỏi về giờ mở cửa."
+  - type: example
+    target: Die Jacke ist billiger als der Mantel.
+    target_lang: de
+    translation:
+      vi: Cái áo khoác rẻ hơn cái áo măng tô.
+    note:
+      vi: "billig + -er = billiger, rồi als + vật được so sánh (vẫn ở Nominativ: der Mantel)."
+  - type: example
+    target: "Der Mantel ist teurer, aber er ist auch wärmer."
+    target_lang: de
+    translation:
+      vi: Áo măng tô đắt hơn, nhưng cũng ấm hơn.
+    note:
+      vi: "teuer → teurer (bỏ e); warm → wärmer (thêm umlaut)."
+  - type: example
+    target: Die Schuhe hier sind so bequem wie meine Schuhe zu Hause.
+    target_lang: de
+    translation:
+      vi: Đôi giày ở đây êm chân bằng đôi giày ở nhà của tôi.
+    note:
+      vi: "So sánh bằng: so + bequem (không thêm -er) + wie."
+  - type: example
+    target: "Die Hose ist zu kurz. Haben Sie sie auch eine Nummer größer?"
+    target_lang: de
+    translation:
+      vi: Cái quần ngắn quá. Chị có cái này cỡ lớn hơn một số không?
+    note:
+      vi: "Khách nói với người bán nên dùng Sie (viết hoa); sie (viết thường) thay cho die Hose. zu kurz = ngắn quá."
+  - type: example
+    target: "Welche Jacke gefällt dir besser, die hier oder die dort? – Die hier. Sie ist schicker."
+    target_lang: de
+    translation:
+      vi: "Bạn thích cái áo khoác nào hơn, cái này hay cái kia? – Cái này. Nó sành điệu hơn."
+    note:
+      vi: "Hai người bạn dùng du → dir. gut → besser: gefällt mir besser = mình thích hơn."
+  - type: example
+    target: "Im Kaufhaus sind die Schuhe heute im Angebot. Sie sind viel günstiger!"
+    target_lang: de
+    translation:
+      vi: Hôm nay ở cửa hàng bách hóa giày đang khuyến mãi. Rẻ hơn nhiều!
+    note:
+      vi: "im Angebot = đang giảm giá; viel günstiger = rẻ hơn nhiều."
+  - type: common_mistake
+    wrong: Die Jacke ist mehr billig als der Mantel.
+    right: Die Jacke ist billiger als der Mantel.
+    target_lang: de
+    note:
+      vi: Tiếng Đức không dùng mehr để so sánh tính từ như tiếng Anh "more"; chỉ cần thêm -er.
+  - type: common_mistake
+    wrong: Mein Bruder ist größer wie ich.
+    right: Mein Bruder ist größer als ich.
+    target_lang: de
+    note:
+      vi: "So sánh hơn dùng als; wie chỉ dùng trong so … wie (bằng nhau)."
+  - type: common_mistake
+    wrong: Der Rock ist kurzer als das Kleid.
+    right: Der Rock ist kürzer als das Kleid.
+    target_lang: de
+    note:
+      vi: "kurz là tính từ một âm tiết có u nên thêm umlaut: kürzer."
+  - type: summary
+    points:
+      - vi: "So sánh hơn: tính từ + -er + als (billiger als)."
+      - vi: "Umlaut: größer, älter, kürzer, länger, wärmer."
+      - vi: "Bất quy tắc: gut → besser, viel → mehr, gern → lieber; teuer → teurer."
+      - vi: "Bằng nhau: so … wie; không bằng: nicht so … wie."
+      - vi: "Không nói mehr billig, không nói größer wie."
+      - vi: "Cửa hàng: die Größe, der Preis, im Angebot, die Umkleidekabine, die Kasse."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u07l4-listen-billiger-waermer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u07-g-komparativ
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Jacke ist billiger als der Mantel, aber der Mantel ist wärmer.
+      options:
+        - { id: v2c, text: "Áo khoác rẻ hơn áo măng tô, nhưng áo măng tô ấm hơn.", lang: vi }
+        - { id: b7x, text: "Áo khoác đắt hơn áo măng tô, nhưng áo măng tô ấm hơn.", lang: vi }
+        - { id: n4k, text: "Áo khoác rẻ hơn áo măng tô, và cũng ấm hơn.", lang: vi }
+        - { id: h9q, text: "Áo khoác rẻ bằng áo măng tô, nhưng áo măng tô ấm hơn.", lang: vi }
+    answer:
+      correct_option_id: v2c
+    explanation:
+      vi: "billiger als = rẻ hơn; aber der Mantel ist wärmer = nhưng áo măng tô ấm hơn. Rẻ bằng sẽ là so billig wie."
+    display_answer: "Áo khoác rẻ hơn áo măng tô, nhưng áo măng tô ấm hơn."
+
+  - key: de:exercise:a1u07l4-listen-groesse-kabine
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u07-umkleidekabine
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Haben Sie die Hose auch in Größe vierzig? – Ja, hier bitte. Die Umkleidekabine ist dort hinten."
+      options:
+        - { id: d5f, text: "Khách hỏi cái quần cỡ 40; phòng thử đồ ở đằng sau.", lang: vi }
+        - { id: g1m, text: "Khách hỏi cái quần cỡ 14; phòng thử đồ ở đằng sau.", lang: vi }
+        - { id: u8t, text: "Khách hỏi cái quần cỡ 40; quầy thu ngân ở đằng sau.", lang: vi }
+        - { id: j6w, text: "Khách hỏi giá cái quần; phòng thử đồ ở đằng trước.", lang: vi }
+    answer:
+      correct_option_id: d5f
+    explanation:
+      vi: "Größe vierzig = cỡ 40 (14 là vierzehn). Umkleidekabine là phòng thử đồ, còn quầy thu ngân là Kasse; dort hinten = ở đằng sau kia."
+    display_answer: "Khách hỏi cái quần cỡ 40; phòng thử đồ ở đằng sau."
+
+  - key: de:exercise:a1u07l4-mcq-kuerzer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-kurz
+    prompt:
+      stem: "Chọn dạng đúng: Der Rock ist ___ als das Kleid. (kurz)"
+      stem_lang: vi
+      options:
+        - { id: w3r, text: kurzer, lang: de }
+        - { id: a8n, text: kürzer, lang: de }
+        - { id: q5e, text: mehr kurz, lang: de }
+        - { id: y2b, text: kurz, lang: de }
+    answer:
+      correct_option_id: a8n
+    explanation:
+      vi: "kurz là tính từ một âm tiết có u nên so sánh hơn thêm umlaut: kürzer. Không dùng mehr; trước als bắt buộc phải có dạng -er."
+    display_answer: kürzer
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u07l4-fill-billiger-so-wie
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-komparativ
+    prompt:
+      template: "Das Hemd ist {{b1}} (billig) {{b2}} das T-Shirt, aber es ist nicht so {{b3}} (bequem) {{b4}} das T-Shirt."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 7 }
+        - { id: b4, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [billiger]
+        b2: [als]
+        b3: [bequem]
+        b4: [wie]
+    known_wrong:
+      - answer: mehr billig
+        feedback_vi: "Không dùng mehr: billig → billiger."
+        error_tag: komparativ_form
+      - answer: billig
+        feedback_vi: "Có als phía sau nên cần dạng so sánh hơn: billiger."
+        error_tag: komparativ_form
+      - answer: bequemer
+        feedback_vi: "Sau so … wie, tính từ giữ nguyên dạng: so bequem wie."
+        error_tag: komparativ_form
+    explanation:
+      vi: "Khác nhau (rẻ hơn): billiger als. Không bằng: nicht so + tính từ nguyên dạng + wie, nên bequem không thêm -er."
+    display_answer: "Das Hemd ist billiger als das T-Shirt, aber es ist nicht so bequem wie das T-Shirt."
+
+  - key: de:exercise:a1u07l4-fill-aelter-groesser
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-komparativ
+    prompt:
+      template: "Mein Bruder ist {{b1}} (alt) als ich, aber ich bin {{b2}} (groß) als er."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [älter]
+        b2: [größer]
+    known_wrong:
+      - answer: alter
+        feedback_vi: "alt có một âm tiết với a nên so sánh hơn thêm umlaut: älter."
+        error_tag: umlaut_missing
+      - answer: großer
+        feedback_vi: "groß có một âm tiết với o nên so sánh hơn thêm umlaut: größer."
+        error_tag: umlaut_missing
+      - answer: mehr alt
+        feedback_vi: "Không dùng mehr: alt → älter."
+        error_tag: komparativ_form
+    explanation:
+      vi: "alt và groß là tính từ một âm tiết có a, o, nên so sánh hơn thêm cả umlaut lẫn -er: älter, größer."
+    display_answer: Mein Bruder ist älter als ich, aber ich bin größer als er.
+
+  - key: de:exercise:a1u07l4-tr-hose-billiger
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-komparativ
+    prompt:
+      source_text: Cái quần rẻ hơn cái áo khoác.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Hose ist billiger als die Jacke.
+        - Die Hose ist günstiger als die Jacke.
+        - Diese Hose ist billiger als die Jacke.
+        - Diese Hose ist günstiger als die Jacke.
+        - Die Hose kostet weniger als die Jacke.
+    known_wrong:
+      - answer: Die Hose ist mehr billig als die Jacke.
+        feedback_vi: "Không dùng mehr: billig → billiger."
+        error_tag: komparativ_form
+      - answer: Die Hose ist billiger wie die Jacke.
+        feedback_vi: "So sánh hơn đi với als, không phải wie."
+        error_tag: komparativ_als
+      - answer: Die Hose ist billig als die Jacke.
+        feedback_vi: "Trước als cần dạng so sánh hơn: billiger."
+        error_tag: komparativ_form
+      - answer: Die Hose ist billiger als der Jacke.
+        feedback_vi: "die Jacke là giống cái; sau als vẫn dùng Nominativ: die Jacke."
+        error_tag: article
+    explanation:
+      vi: "So sánh hơn: billig + -er + als. Vật được so sánh sau als vẫn ở Nominativ: als die Jacke."
+    display_answer: Die Hose ist billiger als die Jacke.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u07l4-listen-angebot
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-angebot
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Schuhe sind heute im Angebot. Sie kosten nur dreißig Euro, nicht fünfzig.
+      options:
+        - { id: c6h, text: "Hôm nay giày đang khuyến mãi, chỉ 30 euro thay vì 50 euro.", lang: vi }
+        - { id: m3z, text: "Hôm nay giày đang khuyến mãi, chỉ 13 euro thay vì 50 euro.", lang: vi }
+        - { id: t9p, text: "Hôm nay giày giá 50 euro, không có khuyến mãi.", lang: vi }
+        - { id: f4v, text: "Hôm nay giày đang khuyến mãi, chỉ 50 euro thay vì 30 euro.", lang: vi }
+    answer:
+      correct_option_id: c6h
+    explanation:
+      vi: "im Angebot = đang khuyến mãi; nur dreißig Euro, nicht fünfzig = chỉ 30 euro, không phải 50. dreißig (30) viết với ß, khác dreizehn (13)."
+    display_answer: "Hôm nay giày đang khuyến mãi, chỉ 30 euro thay vì 50 euro."
+
+  - key: de:exercise:a1u07l4-wb-so-teuer-wie
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-komparativ
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cái áo khoác đắt bằng cái áo măng tô.\""
+      tokens:
+        - { id: t-wie, text: wie }
+        - { id: t-mantel, text: Mantel }
+        - { id: t-ist, text: ist }
+        - { id: t-teuer, text: teuer }
+        - { id: t-die, text: die }
+        - { id: t-als, text: als }
+        - { id: t-so, text: so }
+        - { id: t-jacke, text: Jacke }
+        - { id: t-der, text: der }
+        - { id: t-teurer, text: teurer }
+    answer:
+      orders:
+        - [t-die, t-jacke, t-ist, t-so, t-teuer, t-wie, t-der, t-mantel]
+        - [t-der, t-mantel, t-ist, t-so, t-teuer, t-wie, t-die, t-jacke]
+    explanation:
+      vi: "\"Đắt bằng\" là so + tính từ nguyên dạng + wie: so teuer wie. als và teurer dùng cho so sánh hơn nên không cần ở đây. Vì hai thứ bằng nhau, đảo der Mantel và die Jacke vẫn cùng nghĩa."
+    display_answer: Die Jacke ist so teuer wie der Mantel.
+
+  - key: de:exercise:a1u07l4-mcq-eine-nummer-groesser
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-eng
+    prompt:
+      stem: "Bạn thử một cái quần nhưng nó chật quá. Bạn nói gì với người bán hàng (dùng Sie)?"
+      stem_lang: vi
+      options:
+        - { id: k1s, text: Die Hose ist zu eng. Haben Sie sie eine Nummer größer?, lang: de }
+        - { id: o5d, text: Die Hose ist zu eng. Hast du sie eine Nummer größer?, lang: de }
+        - { id: r7j, text: Die Hose ist zu eng. Haben Sie sie eine Nummer kleiner?, lang: de }
+        - { id: e2y, text: Die Hose ist mehr eng. Haben Sie sie eine Nummer größer?, lang: de }
+    answer:
+      correct_option_id: k1s
+    explanation:
+      vi: "zu eng = chật quá, nên cần cỡ lớn hơn: eine Nummer größer. Với người bán hàng dùng Sie (Haben Sie), không dùng du; mehr eng không phải tiếng Đức chuẩn."
+    display_answer: Die Hose ist zu eng. Haben Sie sie eine Nummer größer?
+
+  - key: de:exercise:a1u07l4-tr-kaufhaus-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-kaufhaus
+    prompt:
+      source_text: Das Kaufhaus ist größer als der Supermarkt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cửa hàng bách hóa lớn hơn siêu thị.
+        - Cửa hàng bách hóa to hơn siêu thị.
+        - Cửa hàng bách hóa rộng hơn siêu thị.
+        - Bách hóa lớn hơn siêu thị.
+        - Trung tâm thương mại lớn hơn siêu thị.
+        - Trung tâm thương mại to hơn siêu thị.
+        - Cửa hàng bách hóa thì lớn hơn siêu thị.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cửa hàng bách hóa nhỏ hơn siêu thị.
+        feedback_vi: "größer là \"lớn hơn\" (so sánh của groß), không phải \"nhỏ hơn\" (kleiner)."
+        error_tag: meaning
+      - answer: Cửa hàng bách hóa lớn bằng siêu thị.
+        feedback_vi: "größer als = lớn hơn; \"lớn bằng\" là so groß wie."
+        error_tag: komparativ_als
+    explanation:
+      vi: "größer als = lớn hơn (groß → größer). das Kaufhaus là cửa hàng bách hóa, der Supermarkt là siêu thị."
+    display_answer: Cửa hàng bách hóa lớn hơn siêu thị.

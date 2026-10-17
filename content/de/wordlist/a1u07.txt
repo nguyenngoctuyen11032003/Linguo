@@ -1,0 +1,2 @@
+# A1U07 Unterwegs und Kleidung: correct words the German lint dictionary does not know.
+Shirt

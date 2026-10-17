@@ -1,0 +1,417 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u07-mit-dem-zug
+order_index: 1
+level: a1
+title:
+  vi: Đi bằng tàu – giới từ đi với Dativ (Mit dem Zug nach Berlin)
+objectives:
+  - vi: Nói mình đi đâu và đi bằng phương tiện gì (mit dem Zug, mit der U-Bahn, mit dem Flugzeug).
+  - vi: Dùng aus, bei, mit, nach, von, zu luôn kèm Dativ, kể cả với mạo từ sở hữu (mit meiner Mutter) và dạng rút gọn zum, zur, beim, vom.
+  - vi: Phân biệt nach Berlin với zu meiner Oma, nach Hause (về nhà) với zu Hause (ở nhà).
+  - vi: Nói mình đi cùng ai và từ đâu về (Ich komme vom Flughafen zurück).
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u06-wiederholung]
+items:
+  - item: de:item:a1u07-g-dativ-praepositionen
+  - item: de:item:a1u07-g-nach-zu-hause
+  - item: de:item:a1u07-zug
+  - item: de:item:a1u07-u-bahn
+  - item: de:item:a1u07-s-bahn
+  - item: de:item:a1u07-strassenbahn
+  - item: de:item:a1u07-flugzeug
+  - item: de:item:a1u07-flughafen
+  - item: de:item:a1u07-fahrkarte
+  - item: de:item:a1u07-gleis
+  - item: de:item:a1u07-nach-hause
+  - item: de:item:a1u07-zu-hause
+  - item: de:item:a1u07-schiff
+  - item: de:item:a1u07-motorrad
+  - item: de:item:a1u07-ticket
+  - item: de:item:p0u1-bus
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được những câu như "Mình đi tàu đến Berlin", "Cuối tuần mình ở nhà bố mẹ", "Sáu giờ mình từ sân bay về" với đúng giới từ và đúng mạo từ Dativ.
+  - type: explain
+    text:
+      vi: "Sáu giới từ aus, bei, mit, nach, von, zu lúc nào cũng đi với Dativ, dù câu hỏi là Wo?, Wohin? hay Woher?. Mạo từ Dativ bạn đã học ở bài \"Ngân hàng ở đâu?\" – dem (der, das), der (die), den + -n (số nhiều). Mẹo nhớ: đọc liền \"aus – bei – mit – nach – von – zu\" như một câu hát."
+  - type: explain
+    text:
+      vi: "\"Đi bằng gì\" là mit + Dativ, và tiếng Đức luôn cần mạo từ: mit dem Zug, mit der U-Bahn, mit dem Auto. Tiếng Việt chỉ nói \"đi tàu\", \"đi xe buýt\" nên người Việt rất hay quên mạo từ. Ngoại lệ cố định: zu Fuß (đi bộ)."
+  - type: explain
+    text:
+      vi: "Mạo từ sở hữu cũng mang đuôi Dativ giống ein: mit meinem Bruder (der), mit meiner Mutter (die), mit meinem Kind (das), bei meinen Eltern (số nhiều). Khi không cần nhấn mạnh, người Đức luôn rút gọn: zu dem → zum, zu der → zur, bei dem → beim, von dem → vom."
+  - type: explain
+    text:
+      vi: "nach hay zu? nach + tên thành phố, tên nước không có mạo từ (nach Berlin, nach Österreich); zu + người hoặc địa điểm có mạo từ (zu meiner Oma, zum Bahnhof). \"Về nhà\" là nach Hause, \"ở nhà\" là zu Hause – học thuộc như hai cụm cố định."
+  - type: deep_explain
+    text:
+      vi: "aus và von đều dịch là \"từ\": aus dùng khi đi ra từ bên trong hoặc nói quê quán (aus dem Haus, aus Vietnam), von dùng cho một điểm hay một người (vom Bahnhof, von meiner Freundin). bei là \"ở chỗ ai\" (bei meinen Eltern = ở nhà bố mẹ, beim Arzt = ở chỗ bác sĩ). Nước có mạo từ vẫn theo luật Dativ: aus der Schweiz, aus der Türkei; còn \"đi sang Thụy Sĩ\" là in die Schweiz – bạn chỉ cần nhận ra, cách dùng in + Akkusativ học ở A2. Ở Thụy Sĩ tàu điện là das Tram và vé là das Billett; ở Vienna người ta gọi tàu điện thân mật là die Bim."
+  - type: example
+    target: Ich fahre jeden Tag mit der U-Bahn zur Arbeit.
+    target_lang: de
+    translation:
+      vi: Ngày nào tôi cũng đi tàu điện ngầm đi làm.
+    note:
+      vi: "die U-Bahn → mit der U-Bahn; die Arbeit → zu der → zur Arbeit."
+  - type: example
+    target: Meine Eltern kommen morgen mit dem Zug aus Hamburg.
+    target_lang: de
+    translation:
+      vi: Ngày mai bố mẹ tôi đi tàu từ Hamburg tới.
+    note:
+      vi: "der Zug → mit dem Zug. aus Hamburg: từ thành phố Hamburg đến."
+  - type: example
+    target: Am Wochenende bin ich bei meiner Oma. Am Sonntagabend fahre ich nach Hause.
+    target_lang: de
+    translation:
+      vi: Cuối tuần tôi ở nhà bà. Tối Chủ nhật tôi về nhà.
+    note:
+      vi: "bei meiner Oma = ở nhà bà (die Oma → meiner); nach Hause = về nhà."
+  - type: example
+    target: "Wann kommst du vom Flughafen zurück? – Um acht. Dann bin ich zu Hause."
+    target_lang: de
+    translation:
+      vi: "Mấy giờ bạn từ sân bay về? – Tám giờ. Lúc đó mình ở nhà rồi."
+    note:
+      vi: "Hai người bạn nói với nhau nên dùng du. vom = von dem (der Flughafen); zurückkommen là động từ tách."
+  - type: example
+    target: "Fahren Sie mit dem Bus oder mit der Straßenbahn zum Bahnhof?"
+    target_lang: de
+    translation:
+      vi: Ông/bà ra ga bằng xe buýt hay bằng tàu điện?
+    note:
+      vi: "Nói với người lạ nên dùng Sie. der Bahnhof → zu dem → zum Bahnhof."
+  - type: common_mistake
+    wrong: Ich fahre mit der Bus.
+    right: Ich fahre mit dem Bus.
+    target_lang: de
+    note:
+      vi: "der Bus là giống đực; sau mit phải dùng Dativ dem, không giữ der."
+  - type: common_mistake
+    wrong: Ich fahre mit Zug nach Berlin.
+    right: Ich fahre mit dem Zug nach Berlin.
+    target_lang: de
+    note:
+      vi: Tiếng Việt nói "đi tàu" không có mạo từ, nhưng tiếng Đức bắt buộc có mạo từ sau mit.
+  - type: common_mistake
+    wrong: Wir fahren zu Berlin.
+    right: Wir fahren nach Berlin.
+    target_lang: de
+    note:
+      vi: Đi đến thành phố hay nước không có mạo từ thì dùng nach; zu dành cho người và địa điểm (zum Bahnhof).
+  - type: common_mistake
+    wrong: Ich bin heute nach Hause.
+    right: Ich bin heute zu Hause.
+    target_lang: de
+    note:
+      vi: "Ở nhà (vị trí) là zu Hause; nach Hause chỉ dùng khi đi về nhà (Ich gehe nach Hause)."
+  - type: summary
+    points:
+      - vi: "aus, bei, mit, nach, von, zu luôn + Dativ: dem / der / dem / den + -n."
+      - vi: "Đi bằng phương tiện: mit + mạo từ (mit dem Zug, mit der U-Bahn); riêng đi bộ là zu Fuß."
+      - vi: "Mạo từ sở hữu ở Dativ: meinem, meiner, meinem, meinen."
+      - vi: "Rút gọn: zum, zur, beim, vom."
+      - vi: "nach + thành phố/nước; zu + người/địa điểm."
+      - vi: "nach Hause = về nhà; zu Hause = ở nhà."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u07l1-mcq-mit-der-u-bahn
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-g-dativ-praepositionen
+    prompt:
+      stem: "Chọn mạo từ đúng: Ich fahre mit ___ U-Bahn zur Arbeit."
+      stem_lang: vi
+      options:
+        - { id: k4f, text: die, lang: de }
+        - { id: p8m, text: der, lang: de }
+        - { id: w2s, text: dem, lang: de }
+        - { id: z6r, text: den, lang: de }
+    answer:
+      correct_option_id: p8m
+    explanation:
+      vi: "mit luôn đi với Dativ. die U-Bahn là giống cái, Dativ giống cái là der. die là dạng Nominativ/Akkusativ; dem dành cho giống đực và giống trung."
+    display_answer: der
+
+  - key: de:exercise:a1u07l1-mcq-zu-hause
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-zu-hause
+    prompt:
+      stem: "Chọn câu đúng cho: \"Tối nay tôi ở nhà.\""
+      stem_lang: vi
+      options:
+        - { id: h3t, text: Heute Abend bin ich nach Hause., lang: de }
+        - { id: c9v, text: Heute Abend bin ich zu Hause., lang: de }
+        - { id: m5x, text: Heute Abend ich bin zu Hause., lang: de }
+        - { id: r1q, text: Heute Abend bin ich zum Haus., lang: de }
+    answer:
+      correct_option_id: c9v
+    explanation:
+      vi: "\"Ở nhà\" là vị trí (Wo?) nên dùng zu Hause. nach Hause là \"về nhà\" (đi đâu). Câu bắt đầu bằng Heute Abend thì động từ bin phải đứng thứ hai, trước ich."
+    display_answer: Heute Abend bin ich zu Hause.
+
+  - key: de:exercise:a1u07l1-fill-nach-zum
+    type: fill_blank
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u07-g-nach-zu-hause
+    prompt:
+      template: "Morgen fahre ich {{b1}} Hamburg, und heute gehe ich {{b2}} Arzt."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+      hint_levels:
+        - "Nghĩa của câu: Ngày mai tôi đi Hamburg, còn hôm nay tôi đi khám bác sĩ."
+        - "Gợi ý: thành phố → nach; der Arzt là một người → zu + dem = ?"
+    answer:
+      blanks:
+        b1: [nach]
+        b2: [zum, zu dem]
+    known_wrong:
+      - answer: zu
+        feedback_vi: "Trước tên thành phố dùng nach; trước der Arzt thì zu + dem rút gọn thành zum."
+        error_tag: preposition
+      - answer: in
+        feedback_vi: "in + thành phố nghĩa là \"ở\" (vị trí). Đi đến thành phố dùng nach, đến chỗ một người dùng zu (zum Arzt)."
+        error_tag: preposition
+      - answer: zur
+        feedback_vi: "zur = zu der, dành cho giống cái. der Arzt là giống đực nên là zum (zu dem)."
+        error_tag: article
+    explanation:
+      vi: "Hamburg là tên thành phố không có mạo từ nên dùng nach. Đến chỗ một người (der Arzt) dùng zu + Dativ: zu dem, thường rút gọn thành zum."
+    display_answer: "Morgen fahre ich nach Hamburg, und heute gehe ich zum Arzt."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u07l1-fill-meiner-meinem
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-g-dativ-praepositionen
+    prompt:
+      template: "Am Samstag fahre ich mit {{b1}} (mein) Schwester und {{b2}} (mein) Bruder zu {{b3}} (unser) Eltern."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [meiner]
+        b2: [meinem]
+        b3: [unseren]
+    known_wrong:
+      - answer: meine
+        feedback_vi: "Sau mit cần Dativ: die Schwester → meiner. meine là Nominativ/Akkusativ."
+        error_tag: case_dat_akk
+      - answer: meinen
+        feedback_vi: "meinen là Akkusativ giống đực. der Bruder sau mit ở Dativ → meinem."
+        error_tag: case_dat_akk
+      - answer: unsere
+        feedback_vi: "die Eltern là số nhiều; sau zu, Dativ số nhiều có đuôi -en: unseren."
+        error_tag: case_dat_akk
+      - answer: mein
+        feedback_vi: "Sau mit phải có đuôi Dativ: meiner (giống cái), meinem (giống đực)."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "mit và zu luôn + Dativ. Đuôi Dativ của mạo từ sở hữu giống ein: giống cái -er (meiner Schwester), giống đực -em (meinem Bruder), số nhiều -en (unseren Eltern)."
+    display_answer: "Am Samstag fahre ich mit meiner Schwester und meinem Bruder zu unseren Eltern."
+
+  - key: de:exercise:a1u07l1-fill-von-nach-hause
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-nach-hause
+    prompt:
+      template: "Kommst du heute {{b1}} der Arbeit direkt {{b2}} Hause?"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [von]
+        b2: [nach]
+    known_wrong:
+      - answer: zu
+        feedback_vi: "zu Hause là \"ở nhà\". Câu hỏi về việc đi về nhà nên dùng nach Hause."
+        error_tag: preposition
+      - answer: vom
+        feedback_vi: "Sau chỗ trống đã có mạo từ der; vom = von dem nên không dùng thêm der. Viết von der Arbeit."
+        error_tag: article
+      - answer: zum
+        feedback_vi: "\"Về nhà\" là cụm cố định nach Hause, không có mạo từ."
+        error_tag: preposition
+    explanation:
+      vi: "Từ chỗ làm về: von der Arbeit (von + Dativ, die Arbeit → der). Đi về nhà là nach Hause; zu Hause chỉ dùng khi đã ở nhà."
+    display_answer: Kommst du heute von der Arbeit direkt nach Hause?
+
+  - key: de:exercise:a1u07l1-tr-zug-berlin
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-zug
+    prompt:
+      source_text: Tôi đi tàu hỏa đến Berlin.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich fahre mit dem Zug nach Berlin.
+        - Mit dem Zug fahre ich nach Berlin.
+        - Nach Berlin fahre ich mit dem Zug.
+        - Ich fahre nach Berlin mit dem Zug.
+        - Ich fahre mit der Bahn nach Berlin.
+        - Ich nehme den Zug nach Berlin.
+    known_wrong:
+      - answer: Ich fahre mit Zug nach Berlin.
+        feedback_vi: "Thiếu mạo từ: sau mit phải có mạo từ Dativ – mit dem Zug."
+        error_tag: article
+      - answer: Ich fahre mit der Zug nach Berlin.
+        feedback_vi: "der Zug là giống đực; Dativ giống đực là dem – mit dem Zug."
+        error_tag: case_dat_akk
+      - answer: Ich fahre mit den Zug nach Berlin.
+        feedback_vi: "den là Akkusativ. mit luôn đi với Dativ: mit dem Zug."
+        error_tag: case_dat_akk
+      - answer: Ich fahre mit dem Zug zu Berlin.
+        feedback_vi: "Đi đến thành phố dùng nach, không dùng zu: nach Berlin."
+        error_tag: preposition
+      - answer: Ich gehe mit dem Zug nach Berlin.
+        feedback_vi: "Đi bằng phương tiện dùng fahren; gehen là đi bộ."
+        error_tag: verb_choice
+    explanation:
+      vi: "\"Đi bằng tàu\" là fahren + mit dem Zug (der Zug → Dativ dem). Thành phố không có mạo từ nên dùng nach Berlin. Động từ fahre luôn đứng thứ hai."
+    display_answer: Ich fahre mit dem Zug nach Berlin.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u07l1-wb-schwester-flughafen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-flughafen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi đi ra sân bay cùng chị gái.\""
+      tokens:
+        - { id: t-zum, text: zum }
+        - { id: t-meiner, text: meiner }
+        - { id: t-ich, text: ich }
+        - { id: t-flughafen, text: Flughafen }
+        - { id: t-meine, text: meine }
+        - { id: t-fahre, text: fahre }
+        - { id: t-mit, text: mit }
+        - { id: t-schwester, text: Schwester }
+        - { id: t-zur, text: zur }
+    answer:
+      orders:
+        - [t-ich, t-fahre, t-mit, t-meiner, t-schwester, t-zum, t-flughafen]
+        - [t-mit, t-meiner, t-schwester, t-fahre, t-ich, t-zum, t-flughafen]
+        - [t-zum, t-flughafen, t-fahre, t-ich, t-mit, t-meiner, t-schwester]
+        - [t-ich, t-fahre, t-zum, t-flughafen, t-mit, t-meiner, t-schwester]
+    explanation:
+      vi: "mit + Dativ: die Schwester → meiner Schwester. der Flughafen → zu dem → zum Flughafen (zur dành cho giống cái). Động từ fahre luôn ở vị trí thứ hai, nên nếu mở đầu bằng mit meiner Schwester hay zum Flughafen thì ich đứng sau fahre."
+    display_answer: Ich fahre mit meiner Schwester zum Flughafen.
+
+  - key: de:exercise:a1u07l1-tr-strassenbahn-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u07-strassenbahn
+    prompt:
+      source_text: Am Abend fahre ich mit der Straßenbahn nach Hause.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Buổi tối tôi đi tàu điện về nhà.
+        - Buổi tối tôi về nhà bằng tàu điện.
+        - Vào buổi tối tôi đi tàu điện về nhà.
+        - Tối tôi đi tàu điện về nhà.
+        - Tối tôi về nhà bằng tàu điện.
+        - Buổi tối mình đi tàu điện về nhà.
+        - Buổi tối tôi đi xe điện về nhà.
+        - Buổi tối tôi về nhà bằng xe điện.
+        - Tôi đi tàu điện về nhà vào buổi tối.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Buổi tối tôi đi tàu điện ngầm về nhà.
+        feedback_vi: "die Straßenbahn là tàu điện chạy trên đường phố; tàu điện ngầm là die U-Bahn."
+        error_tag: vocabulary
+      - answer: Buổi tối tôi ở nhà.
+        feedback_vi: "nach Hause là \"về nhà\" (đi), không phải \"ở nhà\" (zu Hause)."
+        error_tag: preposition
+    explanation:
+      vi: "Am Abend = buổi tối; mit der Straßenbahn = bằng tàu điện; nach Hause = về nhà (chỉ hướng đi)."
+    display_answer: Buổi tối tôi đi tàu điện về nhà.
+
+  - key: de:exercise:a1u07l1-mcq-nach-hause-situation
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u07-nach-hause
+    prompt:
+      stem: "Bạn đang chơi ở nhà một người bạn và muốn chào ra về: \"Bây giờ mình về nhà đây.\" Bạn nói câu nào?"
+      stem_lang: vi
+      options:
+        - { id: f7n, text: Ich gehe jetzt zu Hause., lang: de }
+        - { id: d2b, text: Ich gehe jetzt nach Hause., lang: de }
+        - { id: s8j, text: Ich gehe jetzt zum Haus., lang: de }
+        - { id: v4l, text: Jetzt ich gehe nach Hause., lang: de }
+    answer:
+      correct_option_id: d2b
+    explanation:
+      vi: "Đi về nhà (Wohin?) là nach Hause. zu Hause là ở nhà; zum Haus là \"đến một ngôi nhà nào đó\", không phải nhà mình. Câu mở đầu bằng Jetzt thì động từ gehe phải đứng trước ich."
+    display_answer: Ich gehe jetzt nach Hause.
+
+  - key: de:exercise:a1u07l1-tr-u-bahn-arbeit
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u07-u-bahn
+    prompt:
+      source_text: Hôm nay tôi đi tàu điện ngầm đi làm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich fahre heute mit der U-Bahn zur Arbeit.
+        - Heute fahre ich mit der U-Bahn zur Arbeit.
+        - Mit der U-Bahn fahre ich heute zur Arbeit.
+        - Zur Arbeit fahre ich heute mit der U-Bahn.
+        - Ich fahre heute zur Arbeit mit der U-Bahn.
+        - Heute fahre ich zur Arbeit mit der U-Bahn.
+        - Ich nehme heute die U-Bahn zur Arbeit.
+        - Heute nehme ich die U-Bahn zur Arbeit.
+    known_wrong:
+      - answer: Ich fahre heute mit die U-Bahn zur Arbeit.
+        feedback_vi: "Sau mit cần Dativ: die U-Bahn → mit der U-Bahn."
+        error_tag: case_dat_akk
+      - answer: Ich fahre heute mit U-Bahn zur Arbeit.
+        feedback_vi: "Thiếu mạo từ: mit der U-Bahn."
+        error_tag: article
+      - answer: Heute ich fahre mit der U-Bahn zur Arbeit.
+        feedback_vi: "Câu mở đầu bằng Heute thì động từ fahre đứng thứ hai: Heute fahre ich …"
+        error_tag: verb_position
+      - answer: Ich fahre heute mit der U-Bahn zum Arbeit.
+        feedback_vi: "die Arbeit là giống cái: zu der → zur Arbeit."
+        error_tag: article
+    explanation:
+      vi: "die U-Bahn → mit der U-Bahn; die Arbeit → zu der → zur Arbeit. Đi bằng phương tiện dùng fahren, động từ luôn ở vị trí thứ hai."
+    display_answer: Ich fahre heute mit der U-Bahn zur Arbeit.
