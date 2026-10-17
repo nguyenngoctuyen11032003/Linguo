@@ -64,7 +64,7 @@ body:
       vi: "Đọc biển báo (Lesen Teil 3): trước khi đọc, xem câu hỏi cần thông tin gì – ngày, giờ, nơi chốn hay giá. Rồi tìm đúng chỗ đó trên biển, đặc biệt các chữ như geschlossen (đóng cửa), geöffnet (mở cửa), heute, Sonntag."
   - type: explain
     text:
-      vi: "Nghe thông báo ở ga (Hören Teil 2): bạn chỉ cần bắt ba thông tin – tàu đi đâu (nach …) hay từ đâu đến (aus …), đường ray (Gleis …) và giờ hoặc số phút trễ (… Minuten Verspätung). Chú ý cặp số dễ nhầm: -zehn (15) và -zig (50), elf (11) và acht (8)."
+      vi: "Nghe thông báo ở ga (Hören Teil 2): bạn chỉ cần bắt ba thông tin – tàu đi đâu (nach …) hay từ đâu đến (aus …), đường ray (Gleis …) và giờ hoặc số phút trễ (… Minuten Verspätung). Chú ý cặp số dễ nhầm: -zehn (15) và -zig (50); ở ga người ta hay đọc zwei thành zwo để khỏi nhầm với drei."
   - type: explain
     text:
       vi: "Tin nhắn báo đến muộn (Schreiben): một câu chào, một câu lý do (Mein Zug hat 20 Minuten Verspätung.), một câu giờ mới (Ich komme um … an.) và câu chào cuối (Bis später!). Với bạn bè dùng du, với người lạ hoặc đồng nghiệp chưa thân dùng Sie."
@@ -91,7 +91,7 @@ body:
     translation:
       vi: "Giờ mở cửa: thứ Hai đến thứ Sáu 9 đến 20 giờ, thứ Bảy 9 đến 16 giờ, Chủ nhật đóng cửa."
     note:
-      vi: Ở Đức, phần lớn cửa hàng đóng cửa Chủ nhật.
+      vi: Ở Đức, phần lớn cửa hàng đóng cửa Chủ nhật (quy định có thể khác theo bang và có thể thay đổi).
   - type: common_mistake
     wrong: Ich komme heute später zu Hause.
     right: Ich komme heute später nach Hause.
@@ -318,8 +318,6 @@ exercises:
         - Ich komme mit dem Bus zu dir.
         - Mit dem Bus fahre ich zu dir.
         - Mit dem Bus komme ich zu dir.
-        - Ich fahre zu dir mit dem Bus.
-        - Ich komme zu dir mit dem Bus.
         - Ich nehme den Bus zu dir.
     known_wrong:
       - answer: Ich fahre mit dem Bus zu dich.

@@ -59,7 +59,7 @@ body:
       vi: "Trong cửa hàng: die Größe (cỡ), der Preis (giá), im Angebot (đang khuyến mãi), die Umkleidekabine (phòng thử đồ), die Kasse (quầy thu ngân). Xin cỡ khác: Haben Sie die Hose auch eine Nummer größer?"
   - type: deep_explain
     text:
-      vi: "teuer bỏ chữ e khi so sánh: teuer → teurer (không viết teuerer). Trong bài này tính từ so sánh chỉ đứng sau sein hoặc làm trạng từ (eine Nummer größer); khi đứng trước danh từ nó còn thêm đuôi (ein billigeres Hemd) – bạn sẽ học ở A2 cùng đuôi tính từ. viel + Komparativ nghĩa là \"hơn nhiều\": viel billiger = rẻ hơn nhiều. Ở Đức, phần lớn cửa hàng và Kaufhaus đóng cửa vào Chủ nhật và ngày lễ (Ladenschluss), chỉ cửa hàng ở nhà ga, sân bay hay trạm xăng thường mở – đề đọc Start Deutsch 1 hay hỏi về giờ mở cửa."
+      vi: "teuer bỏ chữ e khi so sánh: teuer → teurer (không viết teuerer). Trong bài này tính từ so sánh chỉ đứng sau sein hoặc làm trạng từ (eine Nummer größer); khi đứng trước danh từ nó còn thêm đuôi (ein billigeres Hemd) – bạn sẽ học ở A2 cùng đuôi tính từ. viel + Komparativ nghĩa là \"hơn nhiều\": viel billiger = rẻ hơn nhiều. Ở Đức, phần lớn cửa hàng và Kaufhaus đóng cửa vào Chủ nhật và ngày lễ (Ladenschluss), thường chỉ cửa hàng ở nhà ga, sân bay hay trạm xăng mở; quy định khác nhau theo bang và có thể thay đổi, nên hãy kiểm tra giờ mở cửa thực tế. Biển giờ mở cửa rất hay gặp trong bài đọc trình độ A1."
   - type: example
     target: Die Jacke ist billiger als der Mantel.
     target_lang: de

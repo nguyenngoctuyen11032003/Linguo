@@ -281,8 +281,8 @@ exercises:
         feedback_vi: "passen đi với Dativ: mir, không phải mich."
         error_tag: case_dat_akk
       - answer: Ich passe die Hose nicht.
-        feedback_vi: "Cái quần là chủ ngữ: Die Hose passt mir nicht."
-        error_tag: word_order
+        feedback_vi: "Với passen, cái quần là chủ ngữ và người ở Dativ: Die Hose passt mir nicht."
+        error_tag: dativ_verb_subject
       - answer: Die Hose nicht passt mir.
         feedback_vi: "Động từ passt phải ở vị trí 2; nicht đứng sau mir."
         error_tag: verb_position
@@ -310,9 +310,8 @@ exercises:
     answer:
       orders:
         - [t-wie, t-gefaellt, t-ihnen, t-das, t-hemd]
-        - [t-wie, t-gefaellt, t-das, t-hemd, t-ihnen]
     explanation:
-      vi: "Chủ ngữ là das Hemd nên gefällt (ngôi 3 số ít); khách được nói Sie nên ở Dativ là Ihnen. Đại từ ngắn thường đứng trước danh từ: Wie gefällt Ihnen das Hemd?"
+      vi: "Chủ ngữ là das Hemd nên gefällt (ngôi 3 số ít); khách được nói Sie nên ở Dativ là Ihnen. Đại từ ngắn đứng ngay sau động từ, trước danh từ chủ ngữ: Wie gefällt Ihnen das Hemd?"
     display_answer: Wie gefällt Ihnen das Hemd?
 
   - key: de:exercise:a1u07l3-wb-passt-meinem-bruder

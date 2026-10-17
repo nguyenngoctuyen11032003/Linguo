@@ -188,7 +188,7 @@ items:
           translation:
             vi: Vé đi Hamburg giá bốn mươi euro.
       confusion:
-        vi: "Fahrkarte là vé đi tàu, xe; vé máy bay hay vé xem hòa nhạc thường gọi là das Ticket."
+        vi: "Fahrkarte là vé đi tàu, xe; vé máy bay hay vé xem hòa nhạc người ta hay gọi là das Ticket."
 
   - key: de:item:a1u07-gleis
     type: vocab
@@ -610,7 +610,7 @@ items:
           translation:
             vi: Cái váy hợp với bạn lắm.
       confusion:
-        vi: "Tiếng Việt nói \"tôi thích…\" nên người Việt hay nói sai \"Ich gefalle die Jacke\"; \"ich gefalle\" nghĩa là \"tôi làm (ai đó) thích tôi\"."
+        vi: "Tiếng Việt nói \"tôi thích…\" nên người Việt hay nói sai \"Ich gefalle die Jacke\". Ich gefalle dir lại có nghĩa ngược hẳn: \"bạn thích tôi\"."
 
   - key: de:item:a1u07-kleidung
     type: vocab

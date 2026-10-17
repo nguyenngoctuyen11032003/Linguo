@@ -46,7 +46,7 @@ body:
       vi: "\"Đi bằng gì\" là mit + Dativ, và tiếng Đức luôn cần mạo từ: mit dem Zug, mit der U-Bahn, mit dem Auto. Tiếng Việt chỉ nói \"đi tàu\", \"đi xe buýt\" nên người Việt rất hay quên mạo từ. Ngoại lệ cố định: zu Fuß (đi bộ)."
   - type: explain
     text:
-      vi: "Mạo từ sở hữu cũng mang đuôi Dativ giống ein: mit meinem Bruder (der), mit meiner Mutter (die), mit meinem Kind (das), bei meinen Eltern (số nhiều). Khi không cần nhấn mạnh, người Đức luôn rút gọn: zu dem → zum, zu der → zur, bei dem → beim, von dem → vom."
+      vi: "Mạo từ sở hữu cũng mang đuôi Dativ giống ein: mit meinem Bruder (der), mit meiner Mutter (die), mit meinem Kind (das), bei meinen Eltern (số nhiều). Khi không cần nhấn mạnh, người Đức thường rút gọn: zu dem → zum, zu der → zur, bei dem → beim, von dem → vom."
   - type: explain
     text:
       vi: "nach hay zu? nach + tên thành phố, tên nước không có mạo từ (nach Berlin, nach Österreich); zu + người hoặc địa điểm có mạo từ (zu meiner Oma, zum Bahnhof). \"Về nhà\" là nach Hause, \"ở nhà\" là zu Hause – học thuộc như hai cụm cố định."
@@ -246,7 +246,7 @@ exercises:
         b2: [nach]
     known_wrong:
       - answer: zu
-        feedback_vi: "zu Hause là \"ở nhà\". Câu hỏi về việc đi về nhà nên dùng nach Hause."
+        feedback_vi: "Từ chỗ làm ra về là von der Arbeit; zu Hause là \"ở nhà\", còn đi về nhà là nach Hause."
         error_tag: preposition
       - answer: vom
         feedback_vi: "Sau chỗ trống đã có mạo từ der; vom = von dem nên không dùng thêm der. Viết von der Arbeit."
@@ -273,7 +273,6 @@ exercises:
         - Ich fahre mit dem Zug nach Berlin.
         - Mit dem Zug fahre ich nach Berlin.
         - Nach Berlin fahre ich mit dem Zug.
-        - Ich fahre nach Berlin mit dem Zug.
         - Ich fahre mit der Bahn nach Berlin.
         - Ich nehme den Zug nach Berlin.
     known_wrong:
@@ -320,9 +319,8 @@ exercises:
         - [t-ich, t-fahre, t-mit, t-meiner, t-schwester, t-zum, t-flughafen]
         - [t-mit, t-meiner, t-schwester, t-fahre, t-ich, t-zum, t-flughafen]
         - [t-zum, t-flughafen, t-fahre, t-ich, t-mit, t-meiner, t-schwester]
-        - [t-ich, t-fahre, t-zum, t-flughafen, t-mit, t-meiner, t-schwester]
     explanation:
-      vi: "mit + Dativ: die Schwester → meiner Schwester. der Flughafen → zu dem → zum Flughafen (zur dành cho giống cái). Động từ fahre luôn ở vị trí thứ hai, nên nếu mở đầu bằng mit meiner Schwester hay zum Flughafen thì ich đứng sau fahre."
+      vi: "mit + Dativ: die Schwester → meiner Schwester. der Flughafen → zu dem → zum Flughafen (zur dành cho giống cái). Động từ fahre luôn ở vị trí thứ hai, nên nếu mở đầu bằng mit meiner Schwester hay zum Flughafen thì ich đứng sau fahre; giữa câu, \"đi với ai\" đứng trước \"đi đâu\"."
     display_answer: Ich fahre mit meiner Schwester zum Flughafen.
 
   - key: de:exercise:a1u07l1-tr-strassenbahn-vi
@@ -395,8 +393,6 @@ exercises:
         - Heute fahre ich mit der U-Bahn zur Arbeit.
         - Mit der U-Bahn fahre ich heute zur Arbeit.
         - Zur Arbeit fahre ich heute mit der U-Bahn.
-        - Ich fahre heute zur Arbeit mit der U-Bahn.
-        - Heute fahre ich zur Arbeit mit der U-Bahn.
         - Ich nehme heute die U-Bahn zur Arbeit.
         - Heute nehme ich die U-Bahn zur Arbeit.
     known_wrong:
