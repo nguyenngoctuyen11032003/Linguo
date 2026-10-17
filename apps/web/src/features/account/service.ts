@@ -1,4 +1,5 @@
 import { clearLessonCache, LESSON_CACHE_PREFIX } from '@/features/lesson-player/lessonCache';
+import { wipeOfflineContent } from '@/features/offline/account-wipe';
 import { LESSON_OPS_KEY_PREFIX, lessonOpsKey } from '@/features/lesson-player/offline-queue';
 import { OUTBOX_CHANGE_EVENT, OUTBOX_KEY_PREFIX, outboxKey } from '@/features/lesson-player/outbox';
 import { SYNC_REPORT_KEY_PREFIX, syncReportKey } from '@/features/lesson-player/sync-report';
@@ -146,6 +147,8 @@ export function clearAllLocalLearnerData(userId?: string | null, options: { mode
   } catch {
     // No window: nothing is listening.
   }
+  // IndexedDB (offline lesson packs, local runs): answer keys go on sign-out, everything of the user on deletion.
+  void wipeOfflineContent(userId, signOut ? 'sign-out' : 'delete');
 }
 
 /** After the account is gone: nothing of it may stay on the device. */

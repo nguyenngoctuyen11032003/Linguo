@@ -6,11 +6,19 @@ import { z } from 'zod';
 // (a second outbox kind, see features/reviews/outbox.ts).
 
 export const OUTBOX_KEY_PREFIX = 'linguo-outbox-v1:';
-export const OUTBOX_CAP = 200;
+/**
+ * Entries one outbox keeps. A full outbox refuses new entries (`add` returns false) instead of silently dropping the
+ * oldest answer: the caller then tells the learner it was not saved.
+ */
+export const OUTBOX_CAP = 2000;
 export const OUTBOX_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
+/** Entries older than this are about to expire: the UI warns the learner to get online. */
+export const OUTBOX_WARN_AGE_MS = 5 * 24 * 60 * 60 * 1000;
 export const OUTBOX_MAX_BACKOFF_MS = 60_000;
 /** Dispatched on window after every write so hooks in the same tab can refresh their count. */
 export const OUTBOX_CHANGE_EVENT = 'linguo-outbox-change';
+/** Dispatched when something that should be sent soon was queued (a lesson start/complete): the provider drains. */
+export const OUTBOX_ENQUEUED_EVENT = 'linguo-outbox-enqueued';
 
 /** What every queued RPC call carries: the key the server dedupes (and replays) on. */
 export interface IdempotentArgs {
@@ -35,14 +43,24 @@ export interface OutboxOf<A extends IdempotentArgs> {
   list: () => OutboxEntryOf<A>[];
   /**
    * Ignored when an entry with the same idempotency key is already queued. Returns false when the entry could not be
-   * persisted (no storage, quota exceeded, blocked): the caller must not show it as waiting for sync.
+   * persisted (no storage, quota exceeded, blocked, or the outbox holds OUTBOX_CAP entries): the caller must not show
+   * it as waiting for sync.
    */
   add: (entry: NewOutboxEntryOf<A>) => boolean;
   remove: (idempotencyKey: string) => void;
-  /** Counts a failed send and schedules the next try with exponential backoff and jitter. */
-  markFailed: (idempotencyKey: string, now?: number) => void;
+  /**
+   * Counts a failed send and schedules the next try with exponential backoff and jitter, or `delayMs` from now when
+   * the server said how long to wait (a rate limit).
+   */
+  markFailed: (idempotencyKey: string, now?: number, delayMs?: number) => void;
   /** Drops entries older than 7 days; returns what is left. */
   prune: (now?: number) => OutboxEntryOf<A>[];
+  /** Like `prune`, and also returns the entries that expired so the caller can report them. */
+  pruneExpired: (now?: number) => { left: OutboxEntryOf<A>[]; expired: OutboxEntryOf<A>[] };
+  /** Removes every entry for which `predicate` holds and returns them. */
+  removeWhere: (predicate: (entry: OutboxEntryOf<A>) => boolean) => OutboxEntryOf<A>[];
+  /** Replaces entries in place (same order, same count); an unchanged entry must be returned as the same object. */
+  update: (fn: (entry: OutboxEntryOf<A>) => OutboxEntryOf<A>) => boolean;
 }
 
 /** A kind of outbox: its storage key prefix (`<keyPrefix><userId>`) and the schema queued args must satisfy. */
@@ -132,44 +150,99 @@ export function openOutbox<A extends IdempotentArgs>(
     return saved;
   };
 
+  /**
+   * Read-modify-write with a read-back check. Tabs share this key and a synchronous API cannot hold a Web Lock
+   * (the drain does, around its sends), so a write from another tab could land between our read and write; the
+   * read-back notices a lost update and the change is applied again on fresh data. `fn` returns the new list, or
+   * null for "nothing to change".
+   */
+  const mutate = (fn: (entries: Entry[]) => Entry[] | null): boolean => {
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      const next = fn(read());
+      if (next === null) return true;
+      if (!write(next)) return false;
+      try {
+        const stored = storage?.getItem(key) ?? null;
+        if (next.length === 0 ? stored === null : stored === JSON.stringify(next)) return true;
+      } catch {
+        return false;
+      }
+    }
+    return false;
+  };
+
+  const expired = (e: Entry, now: number): boolean => {
+    const created = Date.parse(e.createdAt);
+    return !Number.isFinite(created) || now - created > OUTBOX_MAX_AGE_MS;
+  };
+
+  const pruneExpired = (now = Date.now()) => {
+    let gone: Entry[] = [];
+    let left: Entry[] | null = null;
+    mutate((entries) => {
+      gone = entries.filter((e) => expired(e, now));
+      left = entries.filter((e) => !expired(e, now));
+      return gone.length > 0 ? left : null;
+    });
+    return { left: left ?? read(), expired: gone };
+  };
+
   return {
     key,
     list: read,
     add(entry) {
-      const entries = read();
-      if (entries.some((e) => e.args.p_idempotency_key === entry.args.p_idempotency_key)) return true;
-      const full: Entry = {
-        args: entry.args,
-        queueIndex: entry.queueIndex,
-        createdAt: entry.createdAt ?? new Date().toISOString(),
-        tries: entry.tries ?? 0,
-        nextAttemptAt: entry.nextAttemptAt ?? 0,
-      };
-      return write([...entries, full].slice(-OUTBOX_CAP));
+      let refused = false;
+      const saved = mutate((entries) => {
+        if (entries.some((e) => e.args.p_idempotency_key === entry.args.p_idempotency_key)) return null;
+        if (entries.length >= OUTBOX_CAP) {
+          refused = true;
+          return null;
+        }
+        return [
+          ...entries,
+          {
+            args: entry.args,
+            queueIndex: entry.queueIndex,
+            createdAt: entry.createdAt ?? new Date().toISOString(),
+            tries: entry.tries ?? 0,
+            nextAttemptAt: entry.nextAttemptAt ?? 0,
+          },
+        ];
+      });
+      return saved && !refused;
     },
     remove(idempotencyKey) {
-      const entries = read();
-      const left = entries.filter((e) => e.args.p_idempotency_key !== idempotencyKey);
-      if (left.length !== entries.length) write(left);
-    },
-    markFailed(idempotencyKey, now = Date.now()) {
-      const entries = read();
-      let changed = false;
-      const next = entries.map((e) => {
-        if (e.args.p_idempotency_key !== idempotencyKey) return e;
-        changed = true;
-        return { ...e, tries: e.tries + 1, nextAttemptAt: now + backoffMs(e.tries) };
+      mutate((entries) => {
+        const left = entries.filter((e) => e.args.p_idempotency_key !== idempotencyKey);
+        return left.length !== entries.length ? left : null;
       });
-      if (changed) write(next);
     },
-    prune(now = Date.now()) {
-      const entries = read();
-      const left = entries.filter((e) => {
-        const created = Date.parse(e.createdAt);
-        return Number.isFinite(created) && now - created <= OUTBOX_MAX_AGE_MS;
+    markFailed(idempotencyKey, now = Date.now(), delayMs) {
+      mutate((entries) => {
+        let changed = false;
+        const next = entries.map((e) => {
+          if (e.args.p_idempotency_key !== idempotencyKey) return e;
+          changed = true;
+          return { ...e, tries: e.tries + 1, nextAttemptAt: now + (delayMs ?? backoffMs(e.tries)) };
+        });
+        return changed ? next : null;
       });
-      if (left.length !== entries.length) write(left);
-      return left;
+    },
+    prune: (now = Date.now()) => pruneExpired(now).left,
+    pruneExpired,
+    removeWhere(predicate) {
+      let removed: Entry[] = [];
+      mutate((entries) => {
+        removed = entries.filter(predicate);
+        return removed.length > 0 ? entries.filter((e) => !predicate(e)) : null;
+      });
+      return removed;
+    },
+    update(fn) {
+      return mutate((entries) => {
+        const next = entries.map(fn);
+        return next.some((e, i) => e !== entries[i]) ? next : null;
+      });
     },
   };
 }
@@ -177,4 +250,12 @@ export function openOutbox<A extends IdempotentArgs>(
 /** The lesson outbox (`linguo-outbox-v1:<userId>`). */
 export function createOutbox(userId: string, storage: Storage | null = defaultStorage()): Outbox {
   return openOutbox(LESSON_OUTBOX, userId, storage);
+}
+
+/** How many entries are older than OUTBOX_WARN_AGE_MS (they expire after OUTBOX_MAX_AGE_MS). */
+export function countExpiringSoon<A extends IdempotentArgs>(entries: OutboxEntryOf<A>[], now = Date.now()): number {
+  return entries.filter((e) => {
+    const created = Date.parse(e.createdAt);
+    return Number.isFinite(created) && now - created >= OUTBOX_WARN_AGE_MS;
+  }).length;
 }
