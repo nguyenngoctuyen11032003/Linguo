@@ -1,4 +1,4 @@
-import type { LessonAttempt, LessonPayload, LessonRun, PathLesson, PublicExercise, SubmitArgs, SubmitResult } from '@linguo/shared';
+import type { LessonAttempt, LessonPayload, LessonRun, OfflineKey, OfflinePack, PathLesson, PublicExercise, SubmitArgs, SubmitResult } from '@linguo/shared';
 
 // Valid (zod-parseable) payloads shared by the lesson-player unit tests.
 
@@ -125,4 +125,20 @@ export function pathLesson(overrides: Partial<PathLesson> = {}): PathLesson {
     run_status: 'not_started',
     ...overrides,
   };
+}
+
+/** The pack offline_lesson_packs returns for the fixture lesson: payload() without run/attempts, plus the keys (EX1: 'a', EX2: 'a'). */
+export function offlinePack(overrides: Partial<OfflinePack> = {}): OfflinePack {
+  const { lesson, items, exercises } = payload();
+  const key = (id: string): OfflineKey => ({
+    exercise_id: id,
+    version: 1,
+    answer_key: { correct_option_id: 'a' },
+    rubric: {},
+    known_wrong: [],
+    explanation: { vi: 'Hello là lời chào.' },
+    display_answer: 'Hello',
+    created_at: '2026-10-01T00:00:00Z',
+  });
+  return { lesson, items, exercises, content_version: lesson.content_version, keys: [key(EX1), key(EX2)], ...overrides };
 }

@@ -4,7 +4,7 @@ import { SolidCard } from '@/components/ui/SolidCard';
 import { useOfflineContent } from '@/features/offline/useOfflineContent';
 import { isPersisted, offlineMediaSize, requestPersistence, storageEstimate } from '@/features/offline-media';
 import { cn } from '@/lib/cn';
-import { formatBytes } from '../learn/OfflineControls';
+import { formatBytes } from '../learn/offline-format';
 import { SECTION_HEADING_CLASS, SECTION_SCROLL_MARGIN } from './section-state';
 
 function SwitchRow({ id, label, description, checked, onToggle }: { id: string; label: string; description: string; checked: boolean; onToggle: () => void }) {

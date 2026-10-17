@@ -1,4 +1,5 @@
-export { OfflineContentProvider, AUTO_CACHE_LESSONS, MANIFEST_CHECK_INTERVAL_MS, nextUnfinished } from './OfflineContentProvider';
+export { OfflineContentProvider } from './OfflineContentProvider';
+export { AUTO_CACHE_LESSONS, MANIFEST_CHECK_INTERVAL_MS, nextUnfinished } from './policy';
 export { useOfflineContent } from './useOfflineContent';
 export type { DownloadJob, DownloadKind, DownloadOutcome, DownloadRequest, OfflineContentValue } from './offline-context';
 export { getContentStore, type ContentStore, type PackMeta, type StoredRun } from './content-store';

@@ -12,7 +12,8 @@ import { usePathLessons } from '@/features/lesson-player/usePathLessons';
 import { cn } from '@/lib/cn';
 import { playSound } from '@/lib/sound';
 import { groupPathLessons, learnedCount, pendingPrerequisiteTitles, pickNextLesson, type UnitGroup } from './grouping';
-import { DownloadControl, LessonOfflineTag, SavedListNotice, useLessonUnavailable } from './OfflineControls';
+import { useLessonUnavailable } from './offline-format';
+import { DownloadControl, LessonOfflineTag, SavedListNotice } from './OfflineControls';
 import '../home/home.css';
 import { readUnitOpen, writeUnitOpen, type UnitOpenState } from './unit-open';
 
