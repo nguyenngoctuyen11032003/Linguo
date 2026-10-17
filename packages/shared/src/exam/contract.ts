@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { LANGUAGE_CODES } from '../constants';
 import { contentKeySchema, localizedTextSchema } from '../content/authoring';
 
-// Spec 9: exam practice (PRD §9). Authoring schema for content/exams/<en|ko|ja>/*.yaml,
+// Spec 9: exam practice (PRD §9). Authoring schema for content/exams/<en|ko|ja|de>/*.yaml,
 // the bundle for content_private.import_exam_bundle(jsonb), and the JSON exchanged
 // with the exam RPCs. snake_case mirrors the SQL jsonb exactly.
 
@@ -12,6 +12,27 @@ export const EXAM_BUNDLE_VERSION = 1;
 /** Exam families. Forms are always "bài luyện mô phỏng", never official papers. */
 export const EXAM_FAMILIES = ['topik_i', 'topik_ii', 'cefr', 'jlpt', 'goethe'] as const;
 export type ExamFamily = (typeof EXAM_FAMILIES)[number];
+
+/** The only language each family exists for (mirrors exam_forms_family_language and FAMILY_LANGUAGE in scripts/content/exam.mjs). */
+export const EXAM_FAMILY_LANGUAGE = {
+  topik_i: 'ko',
+  topik_ii: 'ko',
+  cefr: 'en',
+  jlpt: 'ja',
+  goethe: 'de',
+} as const satisfies Record<ExamFamily, (typeof LANGUAGE_CODES)[number]>;
+
+/**
+ * Families judged per section against the form's level instead of converted to a scaled score: no bands, no
+ * estimated_level; the result carries cefr_sections ("đạt mức"), reached at scoring.pass_ratio. cefr: pass_ratio is
+ * required; goethe (Goethe-Zertifikat modules pass at 60%): pass_ratio is 0.6, and SQL falls back to 0.6 when null.
+ */
+export const CEFR_LIKE_EXAM_FAMILIES = ['cefr', 'goethe'] as const satisfies readonly ExamFamily[];
+export function isCefrLikeFamily(family: ExamFamily): boolean {
+  return (CEFR_LIKE_EXAM_FAMILIES as readonly string[]).includes(family);
+}
+/** Goethe-Zertifikat: a module is passed at this ratio of its points. */
+export const GOETHE_PASS_RATIO = 0.6;
 
 export const EXAM_SECTIONS = ['listening', 'reading', 'writing'] as const;
 export type ExamSection = (typeof EXAM_SECTIONS)[number];
@@ -66,10 +87,10 @@ export const examScoringSchema = z.strictObject({
   /**
    * Level bands on the full-paper total, ascending. A mini mock's raw score is scaled
    * linearly to section_max before banding and labelled "quy đổi tham khảo".
-   * Empty for CEFR forms: no score conversion (PRD §9.3).
+   * Empty for CEFR-like forms (cefr, goethe): no score conversion (PRD §9.3).
    */
   bands: z.array(z.strictObject({ level_code: z.string(), min_total: z.number().int().min(0) })),
-  /** CEFR: a section counts as "đạt mức <level>" at >= this ratio of its points. */
+  /** CEFR-like (cefr, goethe): a section counts as "đạt mức <level>" at >= this ratio of its points (goethe: 0.6). */
   pass_ratio: z.number().min(0).max(1).nullable(),
 });
 export type ExamScoring = z.infer<typeof examScoringSchema>;
@@ -81,7 +102,7 @@ export const examAuthoredQuestionSchema = z.strictObject({
   key: contentKeySchema,
   section: z.enum(EXAM_SECTIONS),
   kind: z.enum(EXAM_QUESTION_KINDS),
-  /** Drill tag, e.g. "topik_i_read_topic", "cefr_read_gist", "topik_ii_write_51". */
+  /** Drill tag, prefixed by the family: "topik_i_read_topic", "cefr_read_gist", "goethe_read_detail", "topik_ii_write_51". */
   question_type: z.string().regex(/^[a-z0-9_]{3,48}$/),
   level_code: z.string().min(1),
   points: z.number().int().min(1).max(50),
@@ -234,7 +255,7 @@ export const examResultSchema = z.object({
   by_question_type: z.array(z.object({ question_type: z.string(), section: z.enum(EXAM_SECTIONS), ...scoreRow })),
   /** TOPIK and JLPT full mocks only: band on the scaled total; null otherwise. */
   estimated_level: z.object({ level_code: z.string().nullable(), scaled_total: z.number(), label_vi: z.string() }).nullable(),
-  /** CEFR: per-section "đạt mức" judgement (no score conversion). */
+  /** cefr and goethe: per-section "đạt mức" judgement against the form's level (no score conversion); null otherwise. */
   cefr_sections: z.array(z.object({ section: z.enum(EXAM_SECTIONS), level_code: z.string(), reached: z.boolean() })).nullable(),
   scoring_verified: z.boolean(),
   scoring_source_vi: z.string(),
