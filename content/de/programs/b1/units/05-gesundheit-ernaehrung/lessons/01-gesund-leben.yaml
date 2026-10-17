@@ -273,7 +273,7 @@ exercises:
         b2: [auf]
     known_wrong:
       - answer: ihn
-        feedback_vi: Người ăn và người được nuôi là cùng một người (er), nên dùng đại từ phản thân sich.
+        feedback_vi: Ở đây anh ấy tự ăn uống (không nuôi người khác), chủ ngữ và tân ngữ là cùng một người, nên dùng đại từ phản thân sich.
         error_tag: reflexive_missing
       - answer: von
         feedback_vi: verzichten đi với auf + Akkusativ – verzichtet auf Fleisch.
@@ -306,6 +306,8 @@ exercises:
         - Gemüse und Obst sollten gewaschen werden, bevor man sie isst.
         - Obst und Gemüse sollten gewaschen werden, bevor sie gegessen werden.
         - Gemüse und Obst sollten gewaschen werden, bevor sie gegessen werden.
+        - Obst und Gemüse sollte vor dem Essen gewaschen werden.
+        - Vor dem Essen sollte Obst und Gemüse gewaschen werden.
     known_wrong:
       - answer: Obst und Gemüse sollten vor dem Essen werden gewaschen.
         feedback_vi: werden đứng sau Partizip II ở cuối câu – gewaschen werden.
@@ -313,11 +315,8 @@ exercises:
       - answer: Obst und Gemüse sollten vor dem Essen gewaschen wird.
         feedback_vi: Sau modal cần nguyên thể werden, không dùng dạng đã chia wird.
         error_tag: verb_form
-      - answer: Obst und Gemüse sollte vor dem Essen gewaschen werden.
-        feedback_vi: Chủ ngữ Obst und Gemüse là hai thứ (số nhiều), nên modal chia sollten.
-        error_tag: verb_form
     explanation:
-      vi: "\"nên được rửa\" = sollten + gewaschen werden. Chủ ngữ gồm hai danh từ nối bằng und nên chia số nhiều sollten. vor dem Essen = trước bữa ăn, trước khi ăn."
+      vi: "\"nên được rửa\" = sollten + gewaschen werden. Chủ ngữ gồm hai danh từ nối bằng und nên thường chia số nhiều sollten; vì \"Obst und Gemüse\" hay được coi là một khối, số ít sollte cũng gặp và được chấp nhận. vor dem Essen = trước bữa ăn, trước khi ăn."
     display_answer: Obst und Gemüse sollten vor dem Essen gewaschen werden.
 
   # ---------------- application ----------------

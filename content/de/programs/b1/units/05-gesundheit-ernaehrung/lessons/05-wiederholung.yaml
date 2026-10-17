@@ -266,7 +266,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u05-g-nominalisierte-adjektive
     prompt:
-      template: "Lieber Tom, ich wünsche dir alles {{b1}} (gut) für deinen {{b2}} (neu) Vorsatz! Ich rauche übrigens auch {{b3}} mehr."
+      template: "Lieber Tom, ich wünsche dir alles {{b1}} (gut) für deinen {{b2}} (neu) Vorsatz! Ich rauche übrigens auch {{b3}} (nicht/kein) mehr."
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 6 }
@@ -308,6 +308,8 @@ exercises:
         - Falls du weniger Fleisch essen willst, solltest du Schritt für Schritt anfangen.
         - Falls du weniger Fleisch essen möchtest, solltest du mit kleinen Schritten anfangen.
         - Falls du weniger Fleisch essen willst, solltest du mit kleinen Schritten anfangen.
+        - Falls du weniger Fleisch essen möchtest, solltest du langsam damit anfangen.
+        - Falls du weniger Fleisch essen willst, solltest du langsam damit anfangen.
     known_wrong:
       - answer: Falls du weniger Fleisch essen möchtest, du solltest langsam anfangen.
         feedback_vi: Câu falls là vị trí 1, nên solltest đứng ngay sau dấu phẩy – …, solltest du …

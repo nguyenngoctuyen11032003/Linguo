@@ -468,7 +468,7 @@ items:
           translation:
             vi: Đó là giải pháp tốt nhất cho gia đình chúng tôi.
       confusion:
-        vi: "Danh từ giống đực và trung ở Genitiv thêm -s/-es (des Fiebers, des Arztes), giống cái và số nhiều thì không. Tính từ so sánh hơn giữ -er rồi mới thêm đuôi: ein besserer Arzt, eine bessere Ärztin."
+        vi: "Danh từ giống đực và trung ở Genitiv thường thêm -s/-es (des Fiebers, des Arztes; nhưng n-Deklination: des Patienten), giống cái và số nhiều thì không. Tính từ so sánh hơn giữ -er rồi mới thêm đuôi: ein besserer Arzt, eine bessere Ärztin."
 
   - key: de:item:b1u05-g-nominalisierte-adjektive
     type: grammar_point
@@ -637,7 +637,7 @@ items:
           translation:
             vi: Trong phòng chờ đã có năm bệnh nhân đang đợi.
       pronunciation_note:
-        vi: "ti ở đây đọc là \"tsi\": pa-TSI-ent."
+        vi: "ti ở đây đọc là \"tsi\", trọng âm ở âm tiết cuối: pa-TSIENT."
       confusion:
         vi: "n-Deklination: den/dem/des Patienten. Nữ: die Patientin, -nen."
 
@@ -844,7 +844,7 @@ items:
             vi: Sáng mai ông/bà sẽ được lấy máu.
         - target: Ich kann kein Blut sehen.
           translation:
-            vi: Tôi không thể nhìn thấy máu.
+            vi: Tôi sợ nhìn thấy máu.
       confusion:
         vi: "Lấy máu (xét nghiệm): Blut abnehmen. Xét nghiệm máu: die Blutuntersuchung."
 
@@ -934,7 +934,7 @@ items:
           translation:
             vi: Ăn chay ngày càng được ưa chuộng ở Đức.
       confusion:
-        vi: "Chỉ xét đúng hậu tố, không xét chữ cái cuối ngẫu nhiên: der Kuchen (không có hậu tố -chen), das Labor (ngoại lệ của -or), die Butter, das Fenster, die Mutter (không phải -er chỉ người)."
+        vi: "Chỉ xét đúng hậu tố, không xét chữ cái cuối ngẫu nhiên: der Kuchen (không có hậu tố -chen), das Labor (ngoại lệ của -or), der Moment, der Irrtum (ngoại lệ của -ment, -um), die Butter, das Fenster, die Mutter (không phải -er chỉ người)."
 
   - key: de:item:b1u05-lebensmittel
     type: vocab
@@ -1242,7 +1242,7 @@ items:
           translation:
             vi: Cửa hàng thịt ở góc phố hôm nay đóng cửa.
       confusion:
-        vi: "Đuôi -ei → giống cái: die Metzgerei, die Bäckerei. Ở miền Bắc nước Đức người ta hay nói die Fleischerei."
+        vi: "Đuôi -ei → giống cái: die Metzgerei, die Bäckerei. Ở một số vùng (nhất là miền Bắc và miền Đông nước Đức) người ta hay nói die Fleischerei."
 
   - key: de:item:b1u05-biologisch
     type: vocab
@@ -1351,7 +1351,7 @@ items:
           translation:
             vi: Hôm nay tôi không đi tập gym.
       confusion:
-        vi: "\"không … nữa\" là nicht mehr (không nói nicht noch), \"chưa\" là noch nicht. Phủ định cả câu: nicht đứng gần cuối, trước phần cuối khung câu hoặc cụm nơi chốn (heute nicht ins Fitnessstudio); phủ định riêng một thành phần: nicht đứng ngay trước nó (nicht heute, sondern morgen)."
+        vi: "\"không … nữa\" là nicht mehr (không nói nicht noch), \"chưa\" là noch nicht. Phủ định cả câu: nicht đứng gần cuối, trước phần cuối khung câu hoặc cụm chỉ hướng, nơi chốn (heute nicht ins Fitnessstudio); phủ định riêng một thành phần: nicht đứng ngay trước nó (nicht heute, sondern morgen)."
 
   - key: de:item:b1u05-sucht
     type: vocab

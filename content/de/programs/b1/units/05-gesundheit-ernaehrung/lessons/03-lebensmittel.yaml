@@ -59,7 +59,7 @@ body:
       vi: "Đừng đoán giống theo nghĩa như khi dịch từ tiếng Việt: \"sức khoẻ\" không có giống, nhưng đuôi -heit cho biết die Gesundheit. Với từ ghép, chỉ cần nhìn từ cuối: das Leben + das Mittel → das Lebensmittel, der Inhalt + der Stoff → der Inhaltsstoff."
   - type: deep_explain
     text:
-      vi: "Quy tắc hậu tố chỉ áp dụng khi đó thật sự là hậu tố: der Kuchen không có hậu tố -chen, das Ei không có hậu tố -ei, das Labor là ngoại lệ của -or. Trên bao bì thực phẩm ở Đức thường có: Zutaten (thành phần), Nährwerte (giá trị dinh dưỡng), mindestens haltbar bis (hạn sử dụng tốt nhất trước ngày), Kann Spuren von Nüssen enthalten (có thể chứa vết các loại hạt) và nhãn Bio cho sản phẩm hữu cơ. Công thức nấu ăn (das Rezept – cùng từ với \"đơn thuốc\") thường viết động từ nguyên thể ở cuối thay cho câu mệnh lệnh: Die Kartoffeln schälen und in Stücke schneiden. Danh từ nguyên thể thì luôn viết hoa và là giống trung: das Essen, das Rauchen."
+      vi: "Quy tắc hậu tố chỉ áp dụng khi đó thật sự là hậu tố: der Kuchen không có hậu tố -chen, das Ei không có hậu tố -ei, das Labor là ngoại lệ của -or, der Moment và der Irrtum là ngoại lệ của -ment, -um. Trên bao bì thực phẩm ở Đức thường có: Zutaten (thành phần), Nährwerte (giá trị dinh dưỡng), mindestens haltbar bis (hạn sử dụng tốt nhất trước ngày), Kann Spuren von Nüssen enthalten (có thể chứa vết các loại hạt) và nhãn Bio cho sản phẩm hữu cơ. Công thức nấu ăn (das Rezept – cùng từ với \"đơn thuốc\") thường viết động từ nguyên thể ở cuối thay cho câu mệnh lệnh: Die Kartoffeln schälen und in Stücke schneiden. Danh từ nguyên thể thì luôn viết hoa và là giống trung: das Essen, das Rauchen."
   - type: example
     target: Auf der Verpackung stehen alle Zutaten und Nährwerte.
     target_lang: de
@@ -338,7 +338,6 @@ exercises:
       accepted:
         - Tôi thích nhất là mua thực phẩm tươi của địa phương, không có nhiều bao bì.
         - Tôi thích nhất là mua thực phẩm tươi của địa phương mà không có nhiều bao bì.
-        - Tôi thích mua thực phẩm tươi của địa phương, không có nhiều bao bì nhất.
         - Tôi thích nhất là mua thực phẩm tươi, của địa phương, không nhiều bao bì.
         - Tôi thích nhất là mua thực phẩm tươi trong vùng, không có nhiều bao bì.
         - Tôi thích mua nhất là thực phẩm tươi của địa phương, không có nhiều bao bì.

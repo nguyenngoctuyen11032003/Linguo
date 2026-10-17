@@ -53,10 +53,10 @@ body:
       vi: "Sau bài này, bạn kể được thói quen đã thay đổi, ví dụ: \"Seit einem Jahr rauche ich nicht mehr, und ich trinke auch keinen Alkohol mehr. Einen Rückfall hatte ich noch nicht.\""
   - type: explain
     text:
-      vi: "Tiếng Việt nói \"không … nữa\", tiếng Đức nói nicht mehr: Ich rauche nicht mehr. Với danh từ không có mạo từ hoặc đi với ein, dùng kein … mehr, mehr đứng sau danh từ: Ich trinke keinen Alkohol mehr, Ich habe keine Zigaretten mehr. Không nói nicht mehr Zigaretten – cụm này nghĩa là \"không nhiều thuốc hơn\"."
+      vi: "Tiếng Việt nói \"không … nữa\", tiếng Đức nói nicht mehr: Ich rauche nicht mehr. Với danh từ không có mạo từ hoặc đi với ein, dùng kein … mehr, mehr đứng sau danh từ: Ich trinke keinen Alkohol mehr, Ich habe keine Zigaretten mehr. Muốn nói \"không hút thuốc nữa\" thì đừng dùng nicht mehr Zigaretten: cụm này mang nghĩa so sánh \"không nhiều điếu hơn\" (Ich rauche nicht mehr Zigaretten als früher)."
   - type: explain
     text:
-      vi: "\"Chưa\" là noch nicht, với danh từ là noch kein: Ich habe noch nicht gefrühstückt, Ich habe noch keinen Termin. Người Việt hay dịch \"không … nữa\" thành nicht noch – dạng này sai, còn noch nicht lại có nghĩa ngược hẳn (\"chưa\")."
+      vi: "\"Chưa\" là noch nicht, với danh từ là noch kein: Ich habe noch nicht gefrühstückt, Ich habe noch keinen Termin. Người Việt hay dịch \"không … nữa\" thành nicht noch – Ich rauche nicht noch là câu sai, còn noch nicht lại có nghĩa ngược hẳn (\"chưa\")."
   - type: explain
     text:
       vi: "Muốn nhấn mạnh \"hoàn toàn không\", bạn thêm gar hoặc überhaupt: Ich schlafe gar nicht gut, Das schmeckt mir überhaupt nicht. nie wieder = không bao giờ … nữa (Nie wieder Zigaretten!), còn nur noch = chỉ còn (Ich trinke nur noch eine Tasse Kaffee am Tag)."
@@ -112,7 +112,7 @@ body:
     right: Ich rauche keine Zigaretten mehr.
     target_lang: de
     note:
-      vi: "Danh từ không mạo từ phủ định bằng kein, và mehr đứng sau danh từ."
+      vi: "Với nghĩa \"không hút thuốc nữa\": danh từ không mạo từ phủ định bằng kein, mehr đứng sau danh từ. Câu bên trái có nghĩa khác (\"không hút nhiều điếu hơn\"), chỉ dùng khi so sánh với als."
   - type: common_mistake
     wrong: Ich habe keinen Termin noch.
     right: Ich habe noch keinen Termin.
@@ -251,7 +251,7 @@ exercises:
         - { id: b1, width_hint: 5 }
     answer:
       blanks:
-        b1: [noch]
+        b1: [noch, gar, überhaupt]
     known_wrong:
       - answer: schon
         feedback_vi: "\"chưa có\" là noch kein – noch keinen."
@@ -260,7 +260,7 @@ exercises:
         feedback_vi: Người nói chưa từng có lịch hẹn, nên là noch keinen (chưa), không phải keinen mehr (không còn).
         error_tag: meaning
     explanation:
-      vi: "Người nói chưa có lịch nhưng sẽ gọi điện đặt: noch kein(en) = chưa có. keinen thay cho keinen Termin."
+      vi: "Người nói chưa có lịch nhưng sẽ gọi điện đặt: noch kein(en) = chưa có. keinen thay cho keinen Termin. gar keinen / überhaupt keinen (hoàn toàn không có) cũng đúng ngữ pháp, nhưng noch keinen hợp ý nhất."
     display_answer: "Hast du schon einen Termin bei der Hautärztin? – Nein, ich habe noch keinen. Ich rufe morgen in der Praxis an."
 
   - key: de:exercise:b1u05l4-tr-seit-januar
@@ -291,7 +291,7 @@ exercises:
         feedback_vi: Seit Januar ở vị trí 1 thì động từ rauche đứng ở vị trí 2 – Seit Januar rauche ich …
         error_tag: verb_position
       - answer: Seit Januar rauche ich nicht mehr Zigaretten.
-        feedback_vi: Danh từ không mạo từ phủ định bằng kein, mehr đứng sau – keine Zigaretten mehr.
+        feedback_vi: "Nghĩa \"không … nữa\" với danh từ là keine Zigaretten mehr; nicht mehr Zigaretten lại nghĩa là \"không nhiều điếu hơn\"."
         error_tag: word_order
     explanation:
       vi: "\"không … nữa\" = nicht mehr (hoặc keine Zigaretten mehr). seit + mốc thời gian, động từ ở hiện tại vì đến giờ vẫn không hút."
