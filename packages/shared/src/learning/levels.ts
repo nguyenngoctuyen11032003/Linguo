@@ -23,7 +23,7 @@ export type LevelCode = EnLevel | KoLevel | JaLevel | DeLevel;
  * Every language now has content on its whole scale (JLPT N2/N1 shipped as `content/ja/programs/n2` and `n1`);
  * the ceiling stays so a new language or scale can ship partially.
  */
-export const CONTENT_MAX_LEVEL: Record<LanguageCode, LevelCode> = { en: 'c2', ko: 'topik6', ja: 'n1', de: 'pre_a1' };
+export const CONTENT_MAX_LEVEL: Record<LanguageCode, LevelCode> = { en: 'c2', ko: 'topik6', ja: 'n1', de: 'b2' };
 
 export interface LevelInfo {
   label: string;

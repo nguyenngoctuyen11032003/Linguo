@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+key: de:program:aussprache-basics
+language: de
+title:
+  vi: Phát âm và chữ cái tiếng Đức (nhập môn)
+description:
+  vi: Bảng chữ cái, nguyên âm dài – ngắn, ä ö ü, nguyên âm đôi, các phụ âm khó với người Việt (ch, r, s/sch/sp/st, z, w/v), trọng âm và ngữ điệu, der/die/das lần đầu, chào hỏi, số 0–20, câu tự giới thiệu mẫu và câu dùng trong lớp.
+kind: core
+goal_types: []
+level_from: pre_a1
+level_to: pre_a1
+order_index: 1

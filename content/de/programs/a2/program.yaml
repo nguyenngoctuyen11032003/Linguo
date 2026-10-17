@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+key: de:program:a2
+language: de
+title:
+  vi: Tiếng Đức sơ cấp 2 (A2 – Goethe-Zertifikat A2)
+description:
+  vi: Kể chuyện (Perfekt, Präteritum), chuyển nhà (giới từ hai cách, đuôi tính từ), công việc (câu phụ weil/dass), sức khoẻ (động từ phản thân, lời khuyên), du lịch (als/wenn, so sánh nhất), dịch vụ (câu hỏi gián tiếp, zu-Infinitiv, um…zu, lassen), lễ hội – truyền thông – tiêu dùng; luyện đề Goethe A2.
+kind: core
+goal_types: []
+level_from: a2
+level_to: a2
+order_index: 3

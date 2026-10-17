@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+key: de:program:a1
+language: de
+title:
+  vi: Tiếng Đức sơ cấp 1 (A1 – Start Deutsch 1)
+description:
+  vi: Làm quen, gia đình và nghề, ăn uống – mua sắm, một ngày của tôi, nhà ở và thành phố, thời gian rảnh và hẹn gặp, đi lại và quần áo, sức khoẻ và cơ quan; sein/haben, chia động từ, vị trí động từ, Akkusativ, Dativ cơ bản, động từ tách, Modalverben, Imperativ, Perfekt; luyện dạng bài Start Deutsch 1.
+kind: core
+goal_types: []
+level_from: a1
+level_to: a1
+order_index: 2

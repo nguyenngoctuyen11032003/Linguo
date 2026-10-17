@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+key: de:program:b1
+language: de
+title:
+  vi: Tiếng Đức trung cấp (B1 – Goethe-Zertifikat B1)
+description:
+  vi: Câu chuyện đời người, quan hệ và cảm xúc, thế giới việc làm, giáo dục, sức khoẻ và dinh dưỡng, môi trường, truyền thông và công nghệ, khác biệt văn hoá, xã hội; mệnh đề quan hệ, bị động, Konjunktiv II, Genitiv, liên từ B1, phân từ làm tính từ, Futur I; luyện đề Goethe B1.
+kind: core
+goal_types: []
+level_from: b1
+level_to: b1
+order_index: 4

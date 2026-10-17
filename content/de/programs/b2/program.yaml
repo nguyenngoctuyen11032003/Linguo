@@ -1,0 +1,17 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+key: de:program:b2
+language: de
+title:
+  vi: Tiếng Đức trung cao cấp (B2 – Goethe-Zertifikat B2)
+description:
+  vi: Giáo dục và sự nghiệp, kinh tế, khoa học – công nghệ, truyền thông, chính trị – xã hội, di cư và hội nhập, môi trường bền vững, nghệ thuật – văn học, luật pháp; Nominalstil, thay thế bị động, Konjunktiv I và lời nói gián tiếp, Konjunktiv II quá khứ, cụm phân từ, Funktionsverbgefüge, liên từ B2; luyện đề Goethe B2.
+kind: core
+goal_types: []
+level_from: b2
+level_to: b2
+order_index: 5
