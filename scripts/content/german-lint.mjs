@@ -35,11 +35,12 @@ const q = (s) => JSON.stringify(s);
 // Nouns: shape, plural forms, lexicon
 // ---------------------------------------------------------------------------------------------------------
 
-const PLURAL_SPEC = '(?:¨?-(?:e|en|er|n|nen|s|se)?)';
+// A suffix spec (-e, ¨-er …) or, for irregular plurals, the full plural word (das Museum, Museen / die Firma, Firmen).
+const PLURAL_SPEC = '(?:¨?-(?:e|en|er|n|nen|s|se)?|\\p{Lu}[\\p{L}-]*)';
 const NOUN_SHAPE = new RegExp(`^(der|die|das) (\\p{Lu}[\\p{L}-]*(?: \\p{L}[\\p{L}-]*)*)(?:, (${PLURAL_SPEC})| \\((Sg|Pl)\\.\\))$`, 'u');
 const NOUN_POS = /nomen|danh từ|\bnoun\b|substantiv/i;
 const VERB_POS = /\bverb\b|động từ/i;
-const NOUN_FORMAT_HELP = 'expected "der|die|das Noun, <plural>" with <plural> one of -e -en -n -nen -er -s -se - ¨-e ¨-er ¨-, or "die Milch (Sg.)" / "die Leute (Pl.)"';
+const NOUN_FORMAT_HELP = 'expected "der|die|das Noun, <plural>" with <plural> one of -e -en -n -nen -er -s -se - ¨-e ¨-er ¨-, or the full plural word of an irregular plural ("das Museum, Museen"), or "die Milch (Sg.)" / "die Leute (Pl.)"';
 
 /** Parses one noun spec ("der Tisch, -e") → { article, lemma, spec, sg, pl } or null when the shape is wrong. */
 export function parseNoun(text) {
@@ -59,6 +60,7 @@ function umlautLast(word) {
 /** Plural form of a lemma from its spec ("-e" → Tische, "¨-" → Äpfel); null for (Sg.)/(Pl.) nouns. */
 export function pluralForm(lemma, spec) {
   if (spec === null) return null;
+  if (!/^[¨-]/.test(spec)) return spec; // irregular plural written out in full
   const umlaut = spec.startsWith('¨');
   const suffix = spec.replace('¨', '').slice(1);
   return (umlaut ? umlautLast(lemma) : lemma) + suffix;

@@ -627,3 +627,10 @@ test('the lint never writes outside the temp tree (no lexicon.json unless asked)
   await lint(content);
   assert.equal(existsSync(join(content, 'de', 'lexicon.json')), false);
 });
+
+test('irregular plurals are written out in full (das Museum, Museen)', () => {
+  assert.deepEqual(parseNoun('das Museum, Museen'), { article: 'das', lemma: 'Museum', spec: 'Museen', sg: false, pl: false });
+  assert.equal(pluralForm('Museum', 'Museen'), 'Museen');
+  assert.equal(parseNoun('das Museum, museen'), null);
+  assert.equal(pluralForm('Tisch', '-e'), 'Tische');
+});
