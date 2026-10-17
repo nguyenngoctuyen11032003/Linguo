@@ -1,0 +1,390 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u09-ehrenamt
+order_index: 1
+level: b1
+title:
+  vi: Làm tình nguyện – zu-Infinitiv hay dass? (Es ist schön, anderen zu helfen.)
+objectives:
+  - vi: Kể về hoạt động tình nguyện, hội nhóm mà bạn hoặc người khác tham gia.
+  - vi: Chọn đúng cấu trúc – cụm zu + nguyên thể khi cùng chủ ngữ, dass khi khác chủ ngữ.
+  - vi: Đọc hiểu một đoạn giới thiệu ngắn về một người làm tình nguyện.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u08-wiederholung]
+items:
+  - item: de:item:b1u09-g-zu-infinitiv-dass
+  - item: de:item:b1u09-ehrenamt
+  - item: de:item:b1u09-ehrenamtlich
+  - item: de:item:b1u09-verein
+  - item: de:item:b1u09-mitglied
+  - item: de:item:b1u09-sich-engagieren
+  - item: de:item:b1u09-spenden
+  - item: de:item:b1u09-spende
+  - item: de:item:b1u09-unterstuetzen
+  - item: de:item:b1u09-gemeinschaft
+  - item: de:item:b1u09-freiwillig
+  - item: de:item:b1u09-organisation
+  - item: de:item:b1u09-betreuen
+  - item: de:item:b1u09-helfer
+  - item: de:item:b1u09-sammeln
+  - item: de:item:b1u09-einsatz
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
+  - item: de:item:a2u03-g-dass
+    role: reuse
+  - item: de:item:b1u01-g-seitdem
+    role: reuse
+  - item: de:item:b1u02-g-verben-praeposition-b1
+    role: reuse
+  - item: de:item:b1u03-g-indefinitpronomen
+    role: reuse
+  - item: de:item:b1u04-g-irrealer-wunsch
+    role: reuse
+  - item: de:item:b1u06-g-da-naemlich
+    role: reuse
+  - item: de:item:b1u04-nachhilfe
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được về việc tình nguyện và chọn đúng giữa cụm zu và dass, ví dụ: \"Ich habe vor, mich in einem Verein zu engagieren. Ich hoffe, dass viele Nachbarn mitmachen.\""
+  - type: explain
+    text:
+      vi: "Ở A2 bạn đã dùng zu + nguyên thể sau Es ist schön, Lust haben, versuchen. Cụm zu không có chủ ngữ riêng: người làm việc đó chính là chủ ngữ của câu chính, hoặc là \"người ta\" nói chung: Es ist schön, anderen zu helfen."
+  - type: explain
+    text:
+      vi: "Khi người làm việc ở vế sau khác với chủ ngữ của câu chính, bạn phải dùng dass, động từ chia đứng cuối: Ich hoffe, dass du mitmachst. Tiếng Việt chỉ nói \"tôi hy vọng (là) bạn tham gia\", nên trước khi nói, hãy tự hỏi: ai làm việc đó?"
+  - type: explain
+    text:
+      vi: "Cùng chủ ngữ thì dass vẫn đúng ngữ pháp, nhưng thường nặng nề: Ich hoffe, dass ich euch bald wiedersehe. Người Đức hay nói gọn hơn: Ich hoffe, euch bald wiederzusehen. Với động từ tách, zu chen vào giữa (mitzumachen); với động từ phản thân, đại từ đổi theo chủ ngữ (Ich habe vor, mich zu engagieren)."
+  - type: explain
+    text:
+      vi: "Sau các động từ nói và nhận biết như sagen, erzählen, merken, bạn dùng dass, không dùng cụm zu: Er sagt, dass er morgen hilft (hoặc Er sagt, er hilft morgen). Câu Er sagt, morgen zu helfen là sai."
+  - type: deep_explain
+    text:
+      vi: "Với bitten, empfehlen, raten, người làm việc trong cụm zu là tân ngữ của câu chính: Der Verein bittet alle Mitglieder, beim Fest zu helfen (các thành viên giúp). Sau động từ khuyết thiếu (können, müssen, wollen …) và sau lassen thì không có zu: Ich will helfen. Những chỗ hay dùng cụm zu: hoffen, versuchen, vorhaben, vergessen, beschließen, Lust/Zeit haben, Es ist wichtig/schön/schwer …; còn wollen hay möchten với chủ ngữ khác thì bắt buộc dass: Ich möchte, dass du mitkommst. Dấu phẩy trước cụm zu bắt buộc khi cụm phụ thuộc vào một danh từ (Lust, Zeit) hoặc có từ báo trước như es; các trường hợp còn lại người ta cũng thường đặt dấu phẩy cho dễ đọc. Về văn hoá: ở Đức rất nhiều người làm tình nguyện trong hội (Verein) – từ câu lạc bộ thể thao, dàn hợp xướng đến đội cứu hoả tình nguyện; vào hội thường cần đóng một khoản hội phí nhỏ."
+  - type: example
+    target: Es ist schön, anderen Menschen zu helfen.
+    target_lang: de
+    translation:
+      vi: Giúp đỡ người khác là một điều thật đẹp.
+    note:
+      vi: "Người giúp là \"người ta\" nói chung, không có chủ ngữ riêng → cụm zu, zu helfen đứng cuối."
+  - type: example
+    target: Ich habe vor, mich in einem Verein zu engagieren.
+    target_lang: de
+    translation:
+      vi: Tôi dự định tham gia hoạt động trong một hội.
+    note:
+      vi: "Người dự định và người tham gia đều là ich → cụm zu. Đại từ phản thân mich theo chủ ngữ ich."
+  - type: example
+    target: Ich hoffe, dass viele Nachbarn mitmachen.
+    target_lang: de
+    translation:
+      vi: Tôi hy vọng nhiều hàng xóm sẽ tham gia.
+    note:
+      vi: "Người hy vọng là ich, người tham gia là viele Nachbarn → khác chủ ngữ, phải dùng dass; động từ tách mitmachen đứng cuối và viết liền."
+  - type: example
+    target: Seitdem ich ehrenamtlich arbeite, verstehe ich meine Stadt viel besser.
+    target_lang: de
+    translation:
+      vi: Từ khi làm tình nguyện, tôi hiểu thành phố của mình hơn nhiều.
+    note:
+      vi: "seitdem + Präsens vì việc vẫn còn tiếp diễn; câu phụ đứng đầu nên verstehe đứng ngay sau dấu phẩy."
+  - type: example
+    target: Der Verein bittet alle Mitglieder, am Samstag beim Fest zu helfen.
+    target_lang: de
+    translation:
+      vi: Hội đề nghị tất cả thành viên thứ Bảy này phụ giúp lễ hội.
+    note:
+      vi: "Sau bitten, người làm việc là tân ngữ (alle Mitglieder), nên vẫn dùng được cụm zu."
+  - type: example
+    target: Da Lan gern mit Kindern arbeitet, gibt sie im Verein ehrenamtlich Nachhilfe und kümmert sich um die neuen Mitglieder.
+    target_lang: de
+    translation:
+      vi: Vì thích làm việc với trẻ em nên Lan dạy kèm tình nguyện ở hội và chăm lo cho các thành viên mới.
+    note:
+      vi: "da + câu phụ (động từ arbeitet cuối) nêu lý do đã biết; sich kümmern um + Akkusativ (ôn B1U02)."
+  - type: example
+    target: Wenn ich doch nur mehr Zeit hätte! Dann würde ich mich auch engagieren, aber im Moment schaffe ich leider nichts.
+    target_lang: de
+    translation:
+      vi: Giá mà tôi có nhiều thời gian hơn! Khi đó tôi cũng sẽ tham gia, nhưng hiện giờ tiếc là tôi không làm thêm được gì.
+    note:
+      vi: "Wenn ich doch nur … hätte! là ước muốn không thật (ôn B1U04); nichts là đại từ bất định (B1U03)."
+  - type: common_mistake
+    wrong: Er sagt, morgen zu helfen.
+    right: Er sagt, dass er morgen hilft.
+    target_lang: de
+    note:
+      vi: "sagen không đi với cụm zu; dùng dass + câu phụ (hoặc Er sagt, er hilft morgen)."
+  - type: common_mistake
+    wrong: Ich hoffe, dass du mitzumachen.
+    right: Ich hoffe, dass du mitmachst.
+    target_lang: de
+    note:
+      vi: "Câu dass có chủ ngữ riêng và động từ chia ở cuối – không dùng zu trong câu dass."
+  - type: common_mistake
+    wrong: Ich möchte, du mir hilfst.
+    right: Ich möchte, dass du mir hilfst.
+    target_lang: de
+    note:
+      vi: "möchten/wollen với người khác làm thì phải có dass. Tiếng Việt nói \"tôi muốn bạn giúp\", nhưng tiếng Đức không bỏ dass được ở đây."
+  - type: summary
+    points:
+      - vi: "Cùng chủ ngữ hoặc \"người ta\" nói chung → cụm zu: Es ist schön, anderen zu helfen."
+      - vi: "Khác chủ ngữ → dass + động từ chia cuối: Ich hoffe, dass du mitmachst."
+      - vi: "Cùng chủ ngữ, dass vẫn đúng nhưng nặng; cụm zu gọn hơn: Ich hoffe, euch bald wiederzusehen."
+      - vi: "sagen, erzählen, merken → dass; không dùng cụm zu."
+      - vi: "Động từ tách: mitzumachen, mitzubringen; phản thân: mich/dich/sich zu engagieren."
+      - vi: "Từ vựng: das Ehrenamt, ehrenamtlich, der Verein, das Mitglied, sich engagieren, spenden, die Spende, unterstützen, die Gemeinschaft."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u09l1-mcq-hoffe-dass
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-g-zu-infinitiv-dass
+    prompt:
+      stem: "Chọn câu đúng nghĩa: \"Mình hy vọng (là) bạn cũng tham gia.\""
+      stem_lang: vi
+      options:
+        - { id: h4a, text: "Ich hoffe, dass du auch mitmachst.", lang: de }
+        - { id: h7b, text: "Ich hoffe, auch mitzumachen.", lang: de }
+        - { id: h2c, text: "Ich hoffe, du auch mitzumachen.", lang: de }
+        - { id: h9d, text: "Ich hoffe, dass du auch mitzumachen.", lang: de }
+    answer:
+      correct_option_id: h4a
+    explanation:
+      vi: "Người hy vọng là ich, người tham gia là du → khác chủ ngữ nên dùng dass, động từ chia mitmachst đứng cuối. Ich hoffe, auch mitzumachen đúng ngữ pháp nhưng nghĩa là chính tôi tham gia; cụm zu không có chủ ngữ riêng (du … mitzumachen sai), và câu dass không dùng zu."
+    display_answer: Ich hoffe, dass du auch mitmachst.
+
+  - key: de:exercise:b1u09l1-mcq-sagen-dass
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-g-zu-infinitiv-dass
+    prompt:
+      stem: "Câu nào đúng? (Anh ấy nói rằng ngày mai anh ấy sẽ giúp.)"
+      stem_lang: vi
+      options:
+        - { id: s3a, text: "Er sagt, dass er morgen hilft.", lang: de }
+        - { id: s8b, text: "Er sagt, morgen zu helfen.", lang: de }
+        - { id: s5c, text: "Er sagt, dass er hilft morgen.", lang: de }
+        - { id: s1d, text: "Er sagt, dass er morgen helfen.", lang: de }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "sagen không đi với cụm zu, nên dùng dass + câu phụ. Trong câu dass, động từ chia (hilft) đứng cuối, sau morgen; helfen là nguyên thể, chưa chia theo er."
+    display_answer: Er sagt, dass er morgen hilft.
+
+  - key: de:exercise:b1u09l1-mcq-lesen-geld
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-ehrenamtlich
+    prompt:
+      stem: "Seit zwei Jahren engagiert sich Lan ehrenamtlich in einem Verein in Leipzig. Jeden Samstag hilft sie Kindern aus vietnamesischen Familien bei den Hausaufgaben. Sie bekommt kein Geld dafür, aber sie findet es schön, anderen zu helfen. Seitdem sie im Verein ist, hat sie viele neue Freunde gefunden. Der Verein lebt von Spenden und sucht immer neue Mitglieder. Lan hofft, dass bald mehr Studenten mitmachen. — Richtig oder falsch? Lan bekommt für ihre Arbeit im Verein Geld."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: Sie bekommt kein Geld dafür – Lan không nhận tiền; đó chính là nghĩa của ehrenamtlich. Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u09l1-mcq-lesen-mitglieder
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-mitglied
+    prompt:
+      stem: "Seit zwei Jahren engagiert sich Lan ehrenamtlich in einem Verein in Leipzig. Jeden Samstag hilft sie Kindern aus vietnamesischen Familien bei den Hausaufgaben. Sie bekommt kein Geld dafür, aber sie findet es schön, anderen zu helfen. Seitdem sie im Verein ist, hat sie viele neue Freunde gefunden. Der Verein lebt von Spenden und sucht immer neue Mitglieder. Lan hofft, dass bald mehr Studenten mitmachen. — Richtig oder falsch? Lan möchte, dass mehr Leute im Verein mitmachen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Lan hofft, dass bald mehr Studenten mitmachen – Lan hy vọng sẽ có thêm sinh viên tham gia; hội cũng đang tìm thành viên mới (sucht immer neue Mitglieder). Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u09l1-fill-sammeln-mitbringen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-sammeln
+    prompt:
+      template: "Hast du Lust, am Samstag im Park Müll {{b1}} (sammeln)? – Gern! Ich versuche auch, meine Schwester {{b2}} (mitbringen)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [zu sammeln]
+        b2: [mitzubringen]
+    known_wrong:
+      - answer: sammeln
+        feedback_vi: Sau Lust haben cần cụm zu – zu sammeln.
+        error_tag: zu_infinitive
+      - answer: zu mitbringen
+        feedback_vi: Với động từ tách, zu chen vào giữa tiền tố và gốc – mitzubringen.
+        error_tag: zu_infinitive
+      - answer: mit zu bringen
+        feedback_vi: Dạng zu của động từ tách viết liền thành một từ – mitzubringen.
+        error_tag: zu_infinitive
+    explanation:
+      vi: "Lust haben và versuchen đi với cụm zu; người làm là chủ ngữ du/ich nên không cần dass. sammeln không tách → zu sammeln; mitbringen là động từ tách → mitzubringen (viết liền)."
+    display_answer: "Hast du Lust, am Samstag im Park Müll zu sammeln? – Gern! Ich versuche auch, meine Schwester mitzubringen."
+
+  - key: de:exercise:b1u09l1-fill-dass-kennenlernen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-zu-infinitiv-dass
+    prompt:
+      template: "Es ist wichtig, {{b1}} alle Nachbarn mithelfen. Ich hoffe, beim Fest viele neue Leute {{b2}} (kennenlernen)."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 14 }
+    answer:
+      blanks:
+        b1: [dass]
+        b2: [kennenzulernen]
+    known_wrong:
+      - answer: zu
+        feedback_vi: Vế sau có chủ ngữ riêng (alle Nachbarn) và động từ chia (mithelfen) nên phải dùng dass.
+        error_tag: zu_infinitive
+      - answer: zu kennenlernen
+        feedback_vi: kennenlernen có phần đầu kennen- như tiền tố tách, zu chen vào giữa – kennenzulernen.
+        error_tag: zu_infinitive
+      - answer: kennenlernen
+        feedback_vi: Người hy vọng và người làm quen đều là ich → cần cụm zu – kennenzulernen.
+        error_tag: zu_infinitive
+    explanation:
+      vi: "Ô 1: alle Nachbarn là chủ ngữ khác, động từ mithelfen đứng cuối → dass. Ô 2: cùng chủ ngữ ich → cụm zu; kennenlernen được chia như động từ tách nên zu đứng giữa: kennenzulernen."
+    display_answer: "Es ist wichtig, dass alle Nachbarn mithelfen. Ich hoffe, beim Fest viele neue Leute kennenzulernen."
+
+  - key: de:exercise:b1u09l1-tr-anderen-helfen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-zu-infinitiv-dass
+    prompt:
+      source_text: "Giúp đỡ người khác là một điều thật đẹp. (bắt đầu bằng Es ist schön, …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Es ist schön, anderen zu helfen.
+        - Es ist schön, anderen Menschen zu helfen.
+        - Es ist schön, anderen Leuten zu helfen.
+        - Es ist sehr schön, anderen zu helfen.
+        - Es ist sehr schön, anderen Menschen zu helfen.
+    known_wrong:
+      - answer: Es ist schön, anderen helfen.
+        feedback_vi: Sau Es ist schön cần cụm zu – anderen zu helfen.
+        error_tag: zu_infinitive
+      - answer: Es ist schön, zu helfen anderen.
+        feedback_vi: Trong cụm zu, zu + nguyên thể đứng cuối – anderen zu helfen.
+        error_tag: word_order
+      - answer: Es ist schön, andere zu helfen.
+        feedback_vi: helfen đi với Dativ – anderen (không phải andere).
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Người giúp là \"người ta\" nói chung → cụm zu sau Es ist schön. helfen + Dativ: anderen (Menschen). zu helfen đứng cuối cụm."
+    display_answer: Es ist schön, anderen zu helfen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u09l1-wb-sich-engagieren
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-sich-engagieren
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cô ấy dự định tham gia hoạt động trong hội.\""
+      tokens:
+        - { id: e-verein, text: Verein }
+        - { id: e-zu, text: zu }
+        - { id: e-sie, text: Sie }
+        - { id: e-vor, text: vor }
+        - { id: e-sich, text: sich }
+        - { id: e-komma, text: "," }
+        - { id: e-engagieren, text: engagieren }
+        - { id: e-hat, text: hat }
+        - { id: e-im, text: im }
+    answer:
+      orders:
+        - [e-sie, e-hat, e-vor, e-komma, e-sich, e-im, e-verein, e-zu, e-engagieren]
+    explanation:
+      vi: "vorhaben là động từ tách: Sie hat … vor. Cụm zu đứng sau dấu phẩy: đại từ phản thân sich đứng đầu cụm, zu engagieren ở cuối."
+    display_answer: Sie hat vor, sich im Verein zu engagieren.
+
+  - key: de:exercise:b1u09l1-tr-projekt-unterstuetzen
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u09-unterstuetzen
+    prompt:
+      source_text: "Mình muốn bạn ủng hộ dự án này. (nói với bạn thân)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte, dass du dieses Projekt unterstützt.
+        - Ich will, dass du dieses Projekt unterstützt.
+        - Ich möchte gern, dass du dieses Projekt unterstützt.
+        - Ich möchte gerne, dass du dieses Projekt unterstützt.
+        - Ich möchte, dass du das Projekt unterstützt.
+        - Ich will, dass du das Projekt unterstützt.
+        - Ich würde mich freuen, wenn du dieses Projekt unterstützt.
+    known_wrong:
+      - answer: Ich möchte, dass du unterstützt dieses Projekt.
+        feedback_vi: Trong câu dass, động từ chia đứng cuối – dass du dieses Projekt unterstützt.
+        error_tag: verb_position
+      - answer: Ich möchte, dieses Projekt zu unterstützen.
+        feedback_vi: Câu này nghĩa là chính mình ủng hộ. Người ủng hộ là du (khác chủ ngữ) → phải dùng dass.
+        error_tag: zu_infinitive
+      - answer: Ich möchte dich dieses Projekt unterstützen.
+        feedback_vi: Tiếng Đức không nói như vậy; khi người khác làm, dùng Ich möchte, dass du …
+        error_tag: zu_infinitive
+    explanation:
+      vi: "Người muốn là ich, người ủng hộ là du → khác chủ ngữ, dùng dass. unterstützen (không tách) chia theo du: unterstützt, đứng cuối câu phụ."
+    display_answer: Ich möchte, dass du dieses Projekt unterstützt.
+
+  - key: de:exercise:b1u09l1-mcq-wiedersehen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-zu-infinitiv-dass
+    prompt:
+      stem: "Bạn viết cho nhóm tình nguyện (dùng ihr): \"Mình hy vọng sớm gặp lại mọi người.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: w5a, text: "Ich hoffe, euch bald wiederzusehen.", lang: de }
+        - { id: w2b, text: "Ich hoffe, euch bald zu wiedersehen.", lang: de }
+        - { id: w8c, text: "Ich hoffe, dass euch bald wiedersehe.", lang: de }
+        - { id: w6d, text: "Ich hoffe, euch bald wiedersehen.", lang: de }
+    answer:
+      correct_option_id: w5a
+    explanation:
+      vi: "Cùng chủ ngữ ich → cụm zu; wiedersehen tách được nên zu chen vào giữa: wiederzusehen. Câu dass thì cần chủ ngữ riêng (dass ich euch bald wiedersehe – đúng nhưng dài hơn); thiếu zu sau hoffen là sai."
+    display_answer: Ich hoffe, euch bald wiederzusehen.

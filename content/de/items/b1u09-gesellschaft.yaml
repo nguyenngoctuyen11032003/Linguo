@@ -1,0 +1,1321 @@
+# Học liệu unit B1U09 "Xã hội và cuộc sống chung" (Gesellschaft und Zusammenleben), chương trình de:program:b1.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B1U09L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Làm tình nguyện – zu-Infinitiv hay dass =================
+  - key: de:item:b1u09-g-zu-infinitiv-dass
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "zu-Infinitiv oder dass? Ich hoffe, dich bald zu sehen. – Ich hoffe, dass du bald kommst."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nếu người làm việc ở vế sau cũng là chủ ngữ của câu chính (hoặc là \"người ta\" nói chung), bạn thường dùng cụm zu + nguyên thể: Ich hoffe, dich bald zu sehen. Nếu người làm là một người khác, bạn phải dùng dass + câu phụ, động từ đứng cuối: Ich hoffe, dass du bald kommst. Sau sagen, erzählen, merken bạn dùng dass, không dùng cụm zu."
+      examples:
+        - target: Es ist schön, anderen Menschen zu helfen.
+          translation:
+            vi: Giúp đỡ người khác là một điều thật đẹp.
+        - target: Ich hoffe, dass viele Nachbarn mitmachen.
+          translation:
+            vi: Tôi hy vọng nhiều hàng xóm sẽ tham gia.
+        - target: Sie hat vor, sich in einem Verein zu engagieren.
+          translation:
+            vi: Cô ấy dự định tham gia hoạt động trong một hội.
+      confusion:
+        vi: "Cùng chủ ngữ thì dass vẫn đúng ngữ pháp (Ich hoffe, dass ich bald komme) nhưng nặng nề; người Đức thường nói gọn bằng cụm zu. Ngược lại, Er sagt, zu kommen là sai: phải nói Er sagt, dass er kommt (hoặc Er sagt, er kommt)."
+
+  - key: de:item:b1u09-ehrenamt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ehrenamt, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc tình nguyện (không lương), chức vụ danh dự
+      examples:
+        - target: Meine Mutter hat ein Ehrenamt im Krankenhaus.
+          translation:
+            vi: Mẹ tôi làm tình nguyện ở bệnh viện.
+        - target: Viele Menschen arbeiten neben ihrem Beruf im Ehrenamt.
+          translation:
+            vi: Nhiều người làm tình nguyện bên cạnh nghề chính của mình.
+      confusion:
+        vi: "Số nhiều đổi a → ä: die Ehrenämter. Từ ghép lấy giống của từ cuối: das Amt → das Ehrenamt."
+
+  - key: de:item:b1u09-ehrenamtlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ehrenamtlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: tình nguyện, không nhận lương
+      examples:
+        - target: Er arbeitet ehrenamtlich bei der Feuerwehr.
+          translation:
+            vi: Anh ấy làm tình nguyện trong đội cứu hoả.
+        - target: Die Helferinnen im Café sind alle ehrenamtlich.
+          translation:
+            vi: Các cô phụ giúp ở quán cà phê đều làm tình nguyện.
+      confusion:
+        vi: "ehrenamtlich = làm không lương, thường trong một hội hay tổ chức; freiwillig = tự nguyện, không bị ai ép."
+
+  - key: de:item:b1u09-verein
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verein, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hội, câu lạc bộ (có tổ chức)
+      examples:
+        - target: Ich bin seit drei Jahren in einem Sportverein.
+          translation:
+            vi: Tôi ở trong một câu lạc bộ thể thao đã ba năm.
+        - target: Der Verein sucht neue Mitglieder.
+          translation:
+            vi: Hội đang tìm thành viên mới.
+      confusion:
+        vi: "Ở Đức có rất nhiều hội: der Sportverein, der Musikverein, der Gartenverein. Nói \"ở trong hội\": in einem Verein sein hoặc Mitglied in einem Verein sein."
+
+  - key: de:item:b1u09-mitglied
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Mitglied, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành viên, hội viên
+      examples:
+        - target: Sie ist Mitglied im Tennisverein.
+          translation:
+            vi: Cô ấy là hội viên câu lạc bộ quần vợt.
+        - target: Wie viele Mitglieder hat euer Chor?
+          translation:
+            vi: Dàn hợp xướng của các bạn có bao nhiêu thành viên?
+      confusion:
+        vi: "Mitglied là giống trung dù chỉ nam hay nữ: Sie ist ein neues Mitglied. Số nhiều: die Mitglieder."
+
+  - key: de:item:b1u09-sich-engagieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich engagieren (für + Akk)
+      ipa: /ãɡaˈʒiːʁən/
+      pos: động từ
+    back:
+      meaning:
+        vi: tích cực tham gia, dấn thân (vì một việc chung)
+      examples:
+        - target: Er engagiert sich für den Umweltschutz.
+          translation:
+            vi: Anh ấy tích cực hoạt động vì việc bảo vệ môi trường.
+        - target: Ich möchte mich in meiner Stadt engagieren.
+          translation:
+            vi: Tôi muốn tham gia đóng góp cho thành phố của mình.
+      pronunciation_note:
+        vi: "Từ gốc Pháp: g thứ hai đọc là /ʒ/ như j trong tiếng Pháp (journal), không đọc thành g cứng; trọng âm ở -gie-."
+      confusion:
+        vi: "Động từ phản thân: ich engagiere mich, du engagierst dich. Perfekt: Ich habe mich engagiert (không có ge- vì đuôi -ieren)."
+
+  - key: de:item:b1u09-spenden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: spenden
+      pos: động từ
+    back:
+      meaning:
+        vi: quyên góp, ủng hộ (tiền, đồ); hiến (máu)
+      examples:
+        - target: Wir spenden jedes Jahr Geld für Familien in Not.
+          translation:
+            vi: Năm nào chúng tôi cũng quyên góp tiền cho các gia đình gặp khó khăn.
+        - target: Kann man hier Blut spenden?
+          translation:
+            vi: Ở đây có thể hiến máu không?
+      confusion:
+        vi: "Nơi nhận: einem Verein Geld spenden (Dativ) hoặc Geld an einen Verein spenden. Danh từ: die Spende."
+
+  - key: de:item:b1u09-spende
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Spende, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản quyên góp, tiền ủng hộ
+      examples:
+        - target: Vielen Dank für Ihre Spende!
+          translation:
+            vi: Xin chân thành cảm ơn khoản ủng hộ của quý vị!
+        - target: Der Verein lebt von Spenden.
+          translation:
+            vi: Hội hoạt động nhờ tiền quyên góp.
+      confusion:
+        vi: "die Spende (danh từ, viết hoa) – spenden (động từ). Đi quyên góp tiền: Spenden sammeln."
+
+  - key: de:item:b1u09-unterstuetzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unterstützen
+      pos: động từ
+    back:
+      meaning:
+        vi: hỗ trợ, ủng hộ, giúp đỡ
+      examples:
+        - target: Die Nachbarn unterstützen die alte Dame beim Einkaufen.
+          translation:
+            vi: Hàng xóm giúp bà cụ đi mua sắm.
+        - target: Wir unterstützen das Projekt mit einer Spende.
+          translation:
+            vi: Chúng tôi ủng hộ dự án bằng một khoản quyên góp.
+      confusion:
+        vi: "unter- ở đây không tách: ich unterstütze, Perfekt hat unterstützt (không có ge-). Tân ngữ ở Akkusativ: Ich unterstütze dich (khác helfen + Dativ: Ich helfe dir)."
+
+  - key: de:item:b1u09-gemeinschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gemeinschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cộng đồng, tập thể (gắn bó)
+      examples:
+        - target: Im Chor fühle ich mich als Teil einer Gemeinschaft.
+          translation:
+            vi: Trong dàn hợp xướng, tôi thấy mình là một phần của một tập thể.
+        - target: In unserem Dorf ist die Gemeinschaft sehr stark.
+          translation:
+            vi: Ở làng chúng tôi, tình cộng đồng rất gắn bó.
+      confusion:
+        vi: "Danh từ đuôi -schaft là giống cái: die Gemeinschaft, die Nachbarschaft. Gemeinschaft là nhóm người gắn bó (hội, làng, khu xóm); xã hội nói chung là die Gesellschaft."
+
+  # Zusatzwortschatz B1U09L1 (6): freiwillig, die Organisation, betreuen, der Helfer, sammeln, der Einsatz
+  - key: de:item:b1u09-freiwillig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: freiwillig
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự nguyện
+      examples:
+        - target: Die Arbeit im Verein ist freiwillig.
+          translation:
+            vi: Công việc trong hội là tự nguyện.
+        - target: Niemand muss mitmachen, alles ist freiwillig.
+          translation:
+            vi: Không ai bắt buộc phải tham gia, tất cả đều tự nguyện.
+      confusion:
+        vi: "freiwillig ↔ Pflicht (bắt buộc). Người tình nguyện: der/die Freiwillige (biến đổi đuôi như tính từ: ein Freiwilliger, eine Freiwillige)."
+
+  - key: de:item:b1u09-organisation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Organisation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tổ chức; việc tổ chức
+      examples:
+        - target: Sie arbeitet für eine Organisation, die Kindern beim Lernen hilft.
+          translation:
+            vi: Cô ấy làm việc cho một tổ chức giúp trẻ em học tập.
+        - target: Die Organisation des Festes hat viel Zeit gekostet.
+          translation:
+            vi: Việc tổ chức lễ hội đã tốn nhiều thời gian.
+      pronunciation_note:
+        vi: "Đuôi -tion đọc là /tsi̯oːn/ và mang trọng âm: Or-ga-ni-sa-TION."
+      confusion:
+        vi: "Danh từ đuôi -tion là giống cái: die Organisation, die Situation."
+
+  - key: de:item:b1u09-betreuen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: betreuen
+      pos: động từ
+    back:
+      meaning:
+        vi: trông nom, chăm lo, phụ trách (người, nhóm)
+      examples:
+        - target: Am Wochenende betreut sie Kinder in einem Jugendzentrum.
+          translation:
+            vi: Cuối tuần cô ấy trông nom trẻ em ở một trung tâm thanh thiếu niên.
+        - target: Wer betreut die neuen Mitglieder?
+          translation:
+            vi: Ai phụ trách các thành viên mới?
+      confusion:
+        vi: "Perfekt: hat betreut (be- không có ge-). betreuen = chăm lo, đồng hành; pflegen = chăm sóc người bệnh hoặc người già cần điều dưỡng."
+
+  - key: de:item:b1u09-helfer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Helfer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người giúp đỡ, người phụ giúp (trong một hoạt động)
+      examples:
+        - target: Für das Straßenfest suchen wir noch Helfer.
+          translation:
+            vi: Chúng tôi vẫn đang tìm người phụ giúp cho lễ hội đường phố.
+        - target: Alle Helferinnen und Helfer bekommen ein kostenloses Mittagessen.
+          translation:
+            vi: Tất cả những người phụ giúp đều được ăn trưa miễn phí.
+      confusion:
+        vi: "Nữ: die Helferin, -nen. Từ động từ helfen (+ Dativ): Ich helfe dir. Người làm tình nguyện không lương: ehrenamtliche Helfer."
+
+  - key: de:item:b1u09-sammeln
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sammeln
+      pos: động từ
+    back:
+      meaning:
+        vi: thu gom, quyên góp; sưu tầm
+      examples:
+        - target: Wir sammeln Kleidung für Menschen ohne Wohnung.
+          translation:
+            vi: Chúng tôi thu gom quần áo cho những người không có nhà ở.
+        - target: Am Samstag sammeln die Kinder Müll im Park.
+          translation:
+            vi: Thứ Bảy bọn trẻ nhặt rác trong công viên.
+      confusion:
+        vi: "Ở ngôi ich thường bỏ e của gốc -el: ich sammle. Danh từ: die Sammlung (bộ sưu tập; đợt quyên góp)."
+
+  - key: de:item:b1u09-einsatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Einsatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tận tâm, công sức bỏ ra; một lần làm nhiệm vụ
+      examples:
+        - target: Vielen Dank für Ihren Einsatz!
+          translation:
+            vi: Cảm ơn sự nhiệt tình đóng góp của anh/chị!
+        - target: Die Feuerwehr hatte gestern drei Einsätze.
+          translation:
+            vi: Hôm qua đội cứu hoả có ba lần xuất quân.
+      confusion:
+        vi: "Số nhiều đổi a → ä: die Einsätze. Hay dùng trong lời cảm ơn người làm tình nguyện: Danke für Ihren Einsatz."
+
+  # ================= Bài 2: Hàng xóm – tính từ phái sinh =================
+  - key: de:item:b1u09-g-wortbildung-adjektiv
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Adjektive bilden: machbar, arbeitslos, rücksichtsvoll, freundlich, ruhig, praktisch, unmöglich"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "-bar sau gốc động từ nghĩa là \"có thể được …\" (machbar = làm được), -los nghĩa là \"không có\" (arbeitslos), -voll nghĩa là \"đầy, có nhiều\" (rücksichtsvoll). -lich, -ig, -isch biến danh từ hoặc động từ thành tính từ (freundlich, ruhig, praktisch). un- đứng trước tính từ để phủ định (unmöglich, unfreundlich)."
+      examples:
+        - target: Das ist schwierig, aber machbar.
+          translation:
+            vi: Việc đó khó, nhưng làm được.
+        - target: Unsere Nachbarn sind sehr rücksichtsvoll.
+          translation:
+            vi: Hàng xóm của chúng tôi rất biết nghĩ cho người khác.
+        - target: Bei diesem Lärm ist es unmöglich zu schlafen.
+          translation:
+            vi: Ồn thế này thì không thể ngủ được.
+      confusion:
+        vi: "Không phải tính từ nào cũng ghép được với un-: với tính từ đã có từ trái nghĩa riêng, người Đức dùng từ đó (teuer – billig, laut – leise). Khi không chắc, hãy dùng nicht: Das ist nicht machbar."
+
+  - key: de:item:b1u09-hausordnung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hausordnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nội quy toà nhà (chung cư)
+      examples:
+        - target: Die Hausordnung hängt im Treppenhaus.
+          translation:
+            vi: Nội quy toà nhà được treo ở cầu thang chung.
+        - target: In unserer Hausordnung steht, dass man den Hof sauber halten muss.
+          translation:
+            vi: Nội quy nhà chúng tôi ghi rằng phải giữ sân sạch sẽ.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Ordnung → die Hausordnung. \"Trong nội quy ghi …\": In der Hausordnung steht, dass …"
+
+  - key: de:item:b1u09-ruhezeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ruhezeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ yên tĩnh (không gây ồn)
+      examples:
+        - target: In der Ruhezeit sollte man keine laute Musik hören.
+          translation:
+            vi: Trong giờ yên tĩnh không nên nghe nhạc to.
+        - target: Die Ruhezeiten stehen in der Hausordnung.
+          translation:
+            vi: Giờ yên tĩnh được ghi trong nội quy toà nhà.
+      confusion:
+        vi: "Thường là ban đêm (khoảng 22 đến 6 giờ) và ở nhiều nơi cả Chủ nhật, ngày lễ; giờ cụ thể tuỳ nội quy nhà và quy định địa phương, có thể khác nhau. Ban đêm còn gọi là die Nachtruhe."
+
+  - key: de:item:b1u09-laerm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lärm (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng ồn
+      examples:
+        - target: Der Lärm von der Baustelle ist schrecklich.
+          translation:
+            vi: Tiếng ồn từ công trường thật kinh khủng.
+        - target: Bitte machen Sie nach 22 Uhr keinen Lärm.
+          translation:
+            vi: Xin anh/chị đừng gây ồn sau 22 giờ.
+      confusion:
+        vi: "Gây ồn: Lärm machen (Akkusativ: keinen Lärm). Trong văn nói còn có der Krach. Tính từ: laut (ồn) ↔ leise, ruhig (yên tĩnh)."
+
+  - key: de:item:b1u09-stoeren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: stören
+      pos: động từ
+    back:
+      meaning:
+        vi: làm phiền, quấy rầy
+      examples:
+        - target: Entschuldigung, störe ich?
+          translation:
+            vi: Xin lỗi, tôi có làm phiền không?
+        - target: Die laute Musik stört mich beim Lernen.
+          translation:
+            vi: Tiếng nhạc to làm tôi không học được.
+      confusion:
+        vi: "Người bị làm phiền ở Akkusativ: Das stört mich (không phải mir). Bị làm phiền khi đang làm gì: bei + Dativ (beim Lernen, beim Schlafen)."
+
+  - key: de:item:b1u09-ruecksicht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Rücksicht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự ý tứ, sự quan tâm đến người khác
+      examples:
+        - target: Bitte nehmen Sie Rücksicht auf Ihre Nachbarn.
+          translation:
+            vi: Xin hãy nghĩ đến hàng xóm của mình.
+        - target: Ohne gegenseitige Rücksicht funktioniert das Zusammenleben nicht.
+          translation:
+            vi: Không biết nghĩ cho nhau thì không thể sống chung yên ổn.
+      confusion:
+        vi: "Cụm cố định: Rücksicht nehmen auf + Akkusativ (auf die Nachbarn). Tính từ: rücksichtsvoll ↔ rücksichtslos."
+
+  - key: de:item:b1u09-ruecksichtsvoll
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: rücksichtsvoll
+      pos: tính từ
+    back:
+      meaning:
+        vi: ý tứ, biết nghĩ cho người khác
+      examples:
+        - target: Unsere Nachbarn sind sehr rücksichtsvoll.
+          translation:
+            vi: Hàng xóm của chúng tôi rất biết nghĩ cho người khác.
+        - target: Es war sehr rücksichtsvoll von dir, leise zu sein.
+          translation:
+            vi: Bạn giữ yên lặng như vậy là rất ý tứ.
+      confusion:
+        vi: "Có âm nối -s- giữa hai phần: Rücksicht + s + voll (không viết rücksichtvoll)."
+
+  - key: de:item:b1u09-konflikt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Konflikt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mâu thuẫn, xung đột
+      examples:
+        - target: Wir hatten einen Konflikt wegen der Mülltonnen.
+          translation:
+            vi: Chúng tôi từng có mâu thuẫn vì chuyện thùng rác.
+        - target: Wie löst man einen Konflikt mit dem Nachbarn?
+          translation:
+            vi: Làm sao giải quyết mâu thuẫn với hàng xóm?
+      confusion:
+        vi: "Giải quyết mâu thuẫn: einen Konflikt lösen. Mâu thuẫn với ai: ein Konflikt mit + Dativ."
+
+  - key: de:item:b1u09-sich-einigen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich einigen (auf + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: thống nhất, đi đến thoả thuận
+      examples:
+        - target: Wir haben uns auf eine Lösung geeinigt.
+          translation:
+            vi: Chúng tôi đã thống nhất được một giải pháp.
+        - target: Könnt ihr euch nicht einigen?
+          translation:
+            vi: Các bạn không thống nhất được với nhau à?
+      confusion:
+        vi: "Động từ phản thân: wir einigen uns. Thống nhất về điều gì: sich auf + Akkusativ einigen (auf einen Kompromiss); thống nhất với ai: sich mit + Dativ einigen."
+
+  - key: de:item:b1u09-kompromiss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kompromiss, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thoả hiệp, giải pháp dung hoà
+      examples:
+        - target: "Wir haben einen Kompromiss gefunden: Er übt nur bis 20 Uhr Klavier."
+          translation:
+            vi: "Chúng tôi đã tìm được giải pháp dung hoà: anh ấy chỉ tập piano đến 20 giờ."
+        - target: Ohne Kompromisse geht es nicht.
+          translation:
+            vi: Không có thoả hiệp thì không được.
+      confusion:
+        vi: "Số nhiều viết ss: die Kompromisse. Tìm được thoả hiệp: einen Kompromiss finden."
+
+  # Zusatzwortschatz B1U09L2 (7): machbar, rücksichtslos, ärgerlich, unmöglich, friedlich, das Treppenhaus, die Nachbarschaft
+  - key: de:item:b1u09-machbar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: machbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: làm được, khả thi
+      examples:
+        - target: Ist das bis Freitag machbar?
+          translation:
+            vi: Đến thứ Sáu thì có làm kịp không?
+        - target: Der Plan ist teuer, aber machbar.
+          translation:
+            vi: Kế hoạch tốn kém nhưng khả thi.
+      confusion:
+        vi: "machen + -bar = có thể làm được. Phủ định thường nói: nicht machbar."
+
+  - key: de:item:b1u09-ruecksichtslos
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: rücksichtslos
+      pos: tính từ
+    back:
+      meaning:
+        vi: vô ý tứ, không nghĩ đến người khác
+      examples:
+        - target: Es ist rücksichtslos, nachts laut Musik zu hören.
+          translation:
+            vi: Nghe nhạc to vào ban đêm là thiếu ý tứ.
+        - target: Er parkt immer rücksichtslos vor der Einfahrt.
+          translation:
+            vi: Anh ta lúc nào cũng đỗ xe chắn lối ra vào, chẳng nghĩ gì đến người khác.
+      confusion:
+        vi: "Rücksicht + s + los = không có sự ý tứ. Đây là lời chê khá nặng, nên tránh nói thẳng với hàng xóm."
+
+  - key: de:item:b1u09-aergerlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ärgerlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng bực mình; bực bội
+      examples:
+        - target: Das ist wirklich ärgerlich!
+          translation:
+            vi: Chuyện này thật đáng bực mình!
+        - target: Sie war ärgerlich, weil niemand den Müll weggebracht hatte.
+          translation:
+            vi: Cô ấy bực vì không ai đem rác đi đổ.
+      confusion:
+        vi: "Từ danh từ der Ärger (sự bực tức) + -lich. Động từ: sich ärgern über + Akkusativ (Ich ärgere mich über den Lärm)."
+
+  - key: de:item:b1u09-unmoeglich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unmöglich
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể; (về cách cư xử) quá đáng, không chấp nhận được
+      examples:
+        - target: Bei diesem Lärm ist es unmöglich zu schlafen.
+          translation:
+            vi: Ồn thế này thì không thể ngủ được.
+        - target: Ich finde sein Verhalten unmöglich.
+          translation:
+            vi: Tôi thấy cách cư xử của anh ta thật quá đáng.
+      confusion:
+        vi: "un- + möglich = không thể. Nói về người hay hành vi, unmöglich nghĩa là quá đáng: Das ist ja unmöglich!"
+
+  - key: de:item:b1u09-friedlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: friedlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: hoà thuận, yên bình, ôn hoà
+      examples:
+        - target: Wir wollen friedlich mit unseren Nachbarn zusammenleben.
+          translation:
+            vi: Chúng tôi muốn sống hoà thuận với hàng xóm.
+        - target: Der Konflikt wurde friedlich gelöst.
+          translation:
+            vi: Mâu thuẫn đã được giải quyết êm đẹp.
+      confusion:
+        vi: "der Frieden (hoà bình) + -lich → friedlich. Hay đi với: friedlich zusammenleben, einen Konflikt friedlich lösen."
+  - key: de:item:b1u09-treppenhaus
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Treppenhaus, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu cầu thang chung (trong toà nhà)
+      examples:
+        - target: Im Treppenhaus dürfen keine Fahrräder stehen.
+          translation:
+            vi: Không được để xe đạp ở cầu thang chung.
+        - target: Wir putzen das Treppenhaus abwechselnd.
+          translation:
+            vi: Chúng tôi thay phiên nhau lau cầu thang chung.
+      confusion:
+        vi: "die Treppe = cầu thang (các bậc); das Treppenhaus = cả khu cầu thang chung của toà nhà. Từ ghép lấy giống của từ cuối: das Haus."
+
+  - key: de:item:b1u09-nachbarschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Nachbarschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu xóm, láng giềng; tình hàng xóm
+      examples:
+        - target: In unserer Nachbarschaft gibt es einen schönen Park.
+          translation:
+            vi: Ở khu nhà chúng tôi có một công viên đẹp.
+        - target: Eine gute Nachbarschaft ist mir wichtig.
+          translation:
+            vi: Tình hàng xóm tốt đẹp rất quan trọng với tôi.
+      confusion:
+        vi: "der Nachbar (người hàng xóm, giống đực, biến cách yếu: den/dem Nachbarn) – die Nachbarschaft (khu xóm, quan hệ hàng xóm, giống cái vì đuôi -schaft)."
+
+  # ================= Bài 3: Chính trị dễ hiểu – câu so sánh =================
+  - key: de:item:b1u09-g-vergleichssatz
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Vergleichssätze: knapper, als man dachte · so schnell, wie es geht · wie erwartet"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "So sánh với cả một câu: so sánh hơn + als + câu phụ, động từ chia đứng cuối và có dấu phẩy trước als: Die Wahl war knapper, als viele gedacht hatten. Bằng nhau hoặc phủ định: (nicht) so + tính từ + wie + câu phụ: Es war nicht so schwer, wie ich dachte. Không có động từ thì không có dấu phẩy: knapper als erwartet, wie erwartet."
+      examples:
+        - target: Die Wahl war knapper, als viele gedacht hatten.
+          translation:
+            vi: Cuộc bầu cử sát nút hơn nhiều người đã nghĩ.
+        - target: Wir zählen die Stimmen so schnell, wie es geht.
+          translation:
+            vi: Chúng tôi đếm phiếu nhanh nhất có thể.
+        - target: Wie erwartet hat die Kandidatin gewonnen.
+          translation:
+            vi: Đúng như dự đoán, nữ ứng cử viên đã thắng.
+      confusion:
+        vi: "Trong văn nói ở một số vùng có \"besser wie\", nhưng tiếng Đức chuẩn nói besser als. Trong câu phụ als, động từ chia đứng cuối: als ich gedacht habe (không phải als ich habe gedacht)."
+
+  - key: de:item:b1u09-politik
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Politik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chính trị; chính sách
+      examples:
+        - target: Interessierst du dich für Politik?
+          translation:
+            vi: Bạn có quan tâm đến chính trị không?
+        - target: Die Stadt braucht eine bessere Politik für Familien.
+          translation:
+            vi: Thành phố cần một chính sách tốt hơn cho các gia đình.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: Po-li-TIK, i cuối đọc dài."
+      confusion:
+        vi: "Người làm chính trị: der Politiker / die Politikerin; tính từ: politisch. Quan tâm đến chính trị: sich für Politik interessieren."
+
+  - key: de:item:b1u09-wahl
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wahl, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc bầu cử; sự lựa chọn
+      examples:
+        - target: Am Sonntag findet die Wahl statt.
+          translation:
+            vi: Chủ nhật này diễn ra cuộc bầu cử.
+        - target: Ich hatte keine andere Wahl.
+          translation:
+            vi: Tôi không có lựa chọn nào khác.
+      confusion:
+        vi: "Hai nghĩa: bầu cử và lựa chọn (keine Wahl haben = không có lựa chọn). Từ ghép: die Bürgermeisterwahl (bầu thị trưởng)."
+
+  - key: de:item:b1u09-waehlen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: wählen
+      pos: động từ
+    back:
+      meaning:
+        vi: bầu, bỏ phiếu; chọn
+      examples:
+        - target: Am Sonntag gehen wir wählen.
+          translation:
+            vi: Chủ nhật này chúng tôi đi bầu cử.
+        - target: Wen hast du gewählt? – Das sage ich nicht, die Wahl ist geheim.
+          translation:
+            vi: Bạn đã bầu cho ai? – Mình không nói đâu, bỏ phiếu là bí mật mà.
+      confusion:
+        vi: "wählen gehen = đi bầu. Ở Đức, hỏi người khác đã bầu cho ai thường bị coi là tế nhị. wählen còn có nghĩa bấm số điện thoại: eine Nummer wählen."
+
+  - key: de:item:b1u09-partei
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Partei, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đảng (chính trị)
+      examples:
+        - target: In Deutschland gibt es viele Parteien.
+          translation:
+            vi: Ở Đức có nhiều đảng phái.
+        - target: Er ist Mitglied einer Partei.
+          translation:
+            vi: Ông ấy là đảng viên của một đảng.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: Par-TEI; ei đọc như \"ai\"."
+      confusion:
+        vi: "die Partei (đảng) khác die Party (bữa tiệc, từ tiếng Anh)."
+
+  - key: de:item:b1u09-regierung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Regierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chính phủ
+      examples:
+        - target: Die neue Regierung will mehr Wohnungen bauen.
+          translation:
+            vi: Chính phủ mới muốn xây thêm nhiều nhà ở.
+        - target: Die Regierung wird vom Parlament kontrolliert.
+          translation:
+            vi: Chính phủ chịu sự giám sát của quốc hội.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Regierung (từ động từ regieren = cai quản, điều hành)."
+
+  - key: de:item:b1u09-buerger
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Bürger, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: công dân, người dân
+      examples:
+        - target: Die Bürger können ihre Meinung frei sagen.
+          translation:
+            vi: Người dân có thể tự do nói lên ý kiến của mình.
+        - target: Liebe Bürgerinnen und Bürger, die Bibliothek ist ab Montag wieder geöffnet.
+          translation:
+            vi: Kính gửi bà con, thư viện mở cửa trở lại từ thứ Hai.
+      confusion:
+        vi: "Nữ: die Bürgerin, -nen. Thông báo chính thức hay viết cả hai: Bürgerinnen und Bürger."
+
+  - key: de:item:b1u09-demokratie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Demokratie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: (nền) dân chủ
+      examples:
+        - target: In einer Demokratie wählen die Bürger das Parlament.
+          translation:
+            vi: Trong một nền dân chủ, người dân bầu ra quốc hội.
+        - target: Freie Wahlen sind wichtig für die Demokratie.
+          translation:
+            vi: Bầu cử tự do rất quan trọng đối với nền dân chủ.
+      pronunciation_note:
+        vi: "Trọng âm ở -tie: De-mo-kra-TIE (ie dài như \"i\" kéo dài); số nhiều Demokratien đọc De-mo-kra-TI-en."
+      confusion:
+        vi: "Danh từ đuôi -ie mang trọng âm thường là giống cái: die Demokratie, die Biologie. Tính từ: demokratisch."
+
+  - key: de:item:b1u09-recht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Recht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyền; luật pháp
+      examples:
+        - target: Jeder Mensch hat das Recht, seine Meinung zu sagen.
+          translation:
+            vi: Mỗi người đều có quyền nói lên ý kiến của mình.
+        - target: Kinder haben ein Recht auf Bildung.
+          translation:
+            vi: Trẻ em có quyền được học hành.
+      confusion:
+        vi: "Quyền được hưởng điều gì: das Recht auf + Akkusativ; quyền làm gì: das Recht, … zu + nguyên thể. Đừng nhầm với cụm recht haben (nói đúng): Du hast recht."
+
+  - key: de:item:b1u09-pflicht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Pflicht, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghĩa vụ, bổn phận
+      examples:
+        - target: Bürger haben Rechte und Pflichten.
+          translation:
+            vi: Công dân có quyền và nghĩa vụ.
+        - target: In Deutschland ist Wählen ein Recht, aber keine Pflicht.
+          translation:
+            vi: Ở Đức, đi bầu là quyền chứ không phải nghĩa vụ.
+      confusion:
+        vi: "Ngược nghĩa: freiwillig (tự nguyện). Từ ghép thường gặp: die Schulpflicht (nghĩa vụ đi học)."
+
+  # Zusatzwortschatz B1U09L3 (6): die Stimme, die Mehrheit, der Politiker, politisch, knapp, erwarten
+  - key: de:item:b1u09-stimme
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Stimme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lá phiếu; giọng nói
+      examples:
+        - target: Jede Stimme zählt!
+          translation:
+            vi: Mỗi lá phiếu đều có giá trị!
+        - target: Sie hat eine sehr schöne Stimme.
+          translation:
+            vi: Cô ấy có giọng rất hay.
+      confusion:
+        vi: "Trong bầu cử, Stimme là lá phiếu: seine Stimme abgeben = bỏ phiếu. Trong đời thường, Stimme là giọng nói."
+
+  - key: de:item:b1u09-mehrheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Mehrheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đa số
+      examples:
+        - target: Die Mehrheit der Bürger war für das neue Schwimmbad.
+          translation:
+            vi: Đa số người dân ủng hộ bể bơi mới.
+        - target: Die Kandidatin hat die Mehrheit der Stimmen bekommen.
+          translation:
+            vi: Nữ ứng cử viên đã giành được đa số phiếu.
+      confusion:
+        vi: "Ngược nghĩa: die Minderheit (thiểu số). Đa số của ai/cái gì dùng Genitiv: die Mehrheit der Bürger."
+
+  - key: de:item:b1u09-politiker
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Politiker, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: chính trị gia, nhà chính trị
+      examples:
+        - target: Vor der Wahl sprechen viele Politiker mit den Bürgern.
+          translation:
+            vi: Trước bầu cử, nhiều chính trị gia nói chuyện với người dân.
+        - target: Meine Tante ist Politikerin in ihrer Stadt.
+          translation:
+            vi: Cô tôi là chính trị gia ở thành phố của cô ấy.
+      confusion:
+        vi: "Nữ: die Politikerin, -nen. Nói nghề không dùng mạo từ: Sie ist Politikerin."
+
+  - key: de:item:b1u09-politisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: politisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: (thuộc về) chính trị
+      examples:
+        - target: Im Kurs sprechen wir auch über politische Themen.
+          translation:
+            vi: Trong lớp chúng tôi cũng nói về các chủ đề chính trị.
+        - target: Er ist politisch sehr aktiv.
+          translation:
+            vi: Anh ấy hoạt động chính trị rất tích cực.
+      confusion:
+        vi: "die Politik + -isch → politisch. Đứng trước danh từ thì có đuôi: ein politisches Thema, politische Themen."
+
+  - key: de:item:b1u09-knapp
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: knapp
+      pos: tính từ
+    back:
+      meaning:
+        vi: sát nút, suýt soát; eo hẹp; gần (một con số)
+      examples:
+        - target: Das Ergebnis der Wahl war sehr knapp.
+          translation:
+            vi: Kết quả bầu cử rất sát nút.
+        - target: Die Zeit ist knapp, wir müssen uns beeilen.
+          translation:
+            vi: Thời gian eo hẹp, chúng ta phải nhanh lên.
+      confusion:
+        vi: "Trước con số, knapp nghĩa là \"gần, chưa đến\": knapp 50 Prozent = gần 50%. So sánh hơn: knapper."
+
+  - key: de:item:b1u09-erwarten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erwarten
+      pos: động từ
+    back:
+      meaning:
+        vi: mong đợi, dự đoán (trước)
+      examples:
+        - target: Ich habe ein besseres Ergebnis erwartet.
+          translation:
+            vi: Tôi đã mong đợi một kết quả tốt hơn.
+        - target: Wie erwartet war die Wahl sehr knapp.
+          translation:
+            vi: Đúng như dự đoán, cuộc bầu cử rất sát nút.
+      confusion:
+        vi: "erwarten + Akkusativ = trông đợi, dự đoán điều gì; warten auf + Akkusativ = chờ đợi ai/cái gì: Ich warte auf den Bus. Perfekt: hat erwartet (không có ge-)."
+
+  # ================= Bài 4: Trình bày một chủ đề =================
+  - key: de:item:b1u09-g-praesentation-redemittel
+    type: grammar_point
+    level: b1
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Redemittel zum Präsentieren: Ich spreche heute über das Thema Ehrenamt. Ich komme jetzt zu meinen Erfahrungen. Zum Schluss möchte ich kurz zusammenfassen."
+      pos: cụm từ (Redemittel)
+    back:
+      meaning:
+        vi: "Bài trình bày B1 có khung rõ ràng: mở đầu và dàn ý (Ich spreche heute über … / Mein Vortrag hat drei Teile), chuyển ý (Ich komme jetzt zu …), kinh nghiệm bản thân (Ich habe selbst erlebt, dass …), so sánh với Việt Nam (In Vietnam ist das anders: …), kết luận (Zum Schluss möchte ich kurz zusammenfassen). Cuối cùng cảm ơn và mời hỏi: Vielen Dank für Ihre Aufmerksamkeit! Haben Sie Fragen?"
+      examples:
+        - target: Ich möchte euch heute mein Thema vorstellen.
+          translation:
+            vi: Hôm nay mình muốn giới thiệu với các bạn chủ đề của mình.
+        - target: Damit komme ich zum nächsten Punkt.
+          translation:
+            vi: Đến đây tôi chuyển sang ý tiếp theo.
+        - target: Zum Schluss möchte ich das Wichtigste kurz zusammenfassen.
+          translation:
+            vi: Cuối cùng, tôi xin tóm tắt ngắn gọn những điểm quan trọng nhất.
+      confusion:
+        vi: "Đừng đọc thuộc lòng: nhìn Stichpunkte trên Folie và nói tự nhiên với người nghe. Câu chuyển ý rõ ràng giúp người nghe biết bạn đang ở phần nào."
+
+  - key: de:item:b1u09-praesentation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Präsentation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài thuyết trình
+      examples:
+        - target: Morgen halte ich eine Präsentation über Vietnam.
+          translation:
+            vi: Ngày mai tôi thuyết trình về Việt Nam.
+        - target: Deine Präsentation war sehr interessant.
+          translation:
+            vi: Bài thuyết trình của bạn rất thú vị.
+      confusion:
+        vi: "Thuyết trình: eine Präsentation halten (hoặc machen). Động từ: präsentieren."
+
+  - key: de:item:b1u09-vortrag
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Vortrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài nói, bài diễn thuyết
+      examples:
+        - target: Der Vortrag dauert etwa zehn Minuten.
+          translation:
+            vi: Bài nói kéo dài khoảng mười phút.
+        - target: Gestern habe ich einen Vortrag über das Ehrenamt gehört.
+          translation:
+            vi: Hôm qua tôi nghe một bài nói về công việc tình nguyện.
+      confusion:
+        vi: "Số nhiều đổi a → ä: die Vorträge. Diễn thuyết: einen Vortrag halten (không dùng machen)."
+
+  - key: de:item:b1u09-folie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Folie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trang trình chiếu (slide); màng bọc
+      examples:
+        - target: Auf der ersten Folie steht die Gliederung.
+          translation:
+            vi: Trang chiếu đầu tiên ghi dàn ý.
+        - target: Schreib nicht zu viel Text auf eine Folie!
+          translation:
+            vi: Đừng viết quá nhiều chữ trên một trang chiếu!
+      pronunciation_note:
+        vi: "-ie cuối ở đây không đọc thành i dài như trong Demokratie: /ˈfoːli̯ə/, i lướt rất nhanh."
+      confusion:
+        vi: "Nghĩa khác: màng bọc thực phẩm (die Frischhaltefolie). Trình chiếu bằng nhiều Folien: eine Präsentation mit Folien."
+
+  - key: de:item:b1u09-gliederung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gliederung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: dàn ý, bố cục
+      examples:
+        - target: Hier sehen Sie die Gliederung meines Vortrags.
+          translation:
+            vi: Đây là dàn ý bài nói của tôi.
+        - target: Eine klare Gliederung hilft dem Publikum.
+          translation:
+            vi: Bố cục rõ ràng giúp ích cho người nghe.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái. Genitiv của der Vortrag: meines Vortrags."
+
+  - key: de:item:b1u09-thema
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Thema, Themen
+      pos: danh từ
+    back:
+      meaning:
+        vi: chủ đề, đề tài
+      examples:
+        - target: Mein Thema heute ist das Leben in der Nachbarschaft.
+          translation:
+            vi: Chủ đề của tôi hôm nay là cuộc sống hàng xóm láng giềng.
+        - target: Das ist ein wichtiges Thema.
+          translation:
+            vi: Đây là một chủ đề quan trọng.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Themen. Nói về một chủ đề: über ein Thema sprechen; zum Thema … = về chủ đề …"
+
+  - key: de:item:b1u09-zusammenfassen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zusammenfassen (fasst zusammen, hat zusammengefasst)
+      pos: động từ
+    back:
+      meaning:
+        vi: tóm tắt
+      examples:
+        - target: "Ich fasse kurz zusammen: Ehrenamt macht Spaß und hilft anderen."
+          translation:
+            vi: "Tôi xin tóm tắt ngắn gọn: làm tình nguyện vừa vui vừa giúp được người khác."
+        - target: Kannst du den Text in drei Sätzen zusammenfassen?
+          translation:
+            vi: Bạn có thể tóm tắt bài đọc trong ba câu không?
+      confusion:
+        vi: "Động từ tách: ich fasse … zusammen; với zu: zusammenzufassen. Danh từ: die Zusammenfassung."
+
+  - key: de:item:b1u09-publikum
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Publikum (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khán giả, người nghe
+      examples:
+        - target: Das Publikum hat viele Fragen gestellt.
+          translation:
+            vi: Khán giả đã đặt nhiều câu hỏi.
+        - target: Schau beim Sprechen ins Publikum!
+          translation:
+            vi: Khi nói hãy nhìn về phía người nghe!
+      confusion:
+        vi: "Publikum là danh từ tập hợp số ít: Das Publikum war begeistert (thường chỉ dùng số ít, kể cả khi nói \"các khán giả\"). Một người nghe: der Zuhörer / die Zuhörerin."
+
+  # Zusatzwortschatz B1U09L4 (4): der Stichpunkt, der Überblick, erwähnen, das Lampenfieber
+  - key: de:item:b1u09-stichpunkt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Stichpunkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý chính (ghi vắn tắt), gạch đầu dòng
+      examples:
+        - target: Schreib dir nur Stichpunkte auf, keine ganzen Sätze.
+          translation:
+            vi: Chỉ ghi các ý chính thôi, đừng viết cả câu.
+        - target: Auf jeder Folie stehen nur drei Stichpunkte.
+          translation:
+            vi: Mỗi trang chiếu chỉ có ba gạch đầu dòng.
+      confusion:
+        vi: "Hay dùng ở số nhiều: in Stichpunkten (ghi vắn tắt theo ý)."
+
+  - key: de:item:b1u09-ueberblick
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Überblick, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái nhìn tổng quan
+      examples:
+        - target: Zuerst gebe ich Ihnen einen kurzen Überblick.
+          translation:
+            vi: Trước hết tôi xin trình bày tổng quan ngắn gọn.
+        - target: Bei so vielen Zahlen verliere ich schnell den Überblick.
+          translation:
+            vi: Nhiều con số thế này thì tôi nhanh chóng bị rối.
+      confusion:
+        vi: "einen Überblick geben = trình bày tổng quan; den Überblick verlieren = không còn nắm được toàn cảnh, bị rối."
+
+  - key: de:item:b1u09-erwaehnen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erwähnen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhắc đến, đề cập
+      examples:
+        - target: Wie ich schon erwähnt habe, ist die Arbeit freiwillig.
+          translation:
+            vi: Như tôi đã đề cập, công việc này là tự nguyện.
+        - target: Das hast du gar nicht erwähnt!
+          translation:
+            vi: Bạn đâu có nhắc gì đến chuyện đó!
+      confusion:
+        vi: "Perfekt: hat erwähnt (không có ge-, vì tiền tố er-). Tân ngữ ở Akkusativ: etwas erwähnen."
+
+  - key: de:item:b1u09-lampenfieber
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Lampenfieber (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hồi hộp, run trước khi lên nói/biểu diễn
+      examples:
+        - target: Vor jeder Präsentation habe ich Lampenfieber.
+          translation:
+            vi: Trước mỗi bài thuyết trình tôi đều run.
+        - target: Lampenfieber ist ganz normal.
+          translation:
+            vi: Hồi hộp trước khi lên nói là chuyện hoàn toàn bình thường.
+      confusion:
+        vi: "Nghĩa đen là \"sốt đèn sân khấu\". Hay dùng với haben: Lampenfieber haben."

@@ -1,0 +1,401 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u09-wiederholung
+order_index: 5
+level: b1
+title:
+  vi: Ôn tập – bài trình bày và tin nhắn trang trọng (Wiederholung)
+objectives:
+  - vi: Chuẩn bị đầy đủ một bài trình bày về chủ đề tình nguyện hoặc hàng xóm theo cấu trúc thi (kiểu Goethe B1 Sprechen Teil 2).
+  - vi: Đọc hiểu một thông báo của ban quản lý toà nhà và chọn richtig/falsch.
+  - vi: Viết tin nhắn trang trọng khoảng 40 từ cho ban quản lý toà nhà (kiểu Goethe B1 Schreiben Teil 3).
+estimated_minutes: 24
+skills: [speaking, reading, writing]
+prerequisites: [de:lesson:b1u09-praesentieren]
+items:
+  - item: de:item:b1u09-g-zu-infinitiv-dass
+    role: reuse
+  - item: de:item:b1u09-g-wortbildung-adjektiv
+    role: reuse
+  - item: de:item:b1u09-g-vergleichssatz
+    role: reuse
+  - item: de:item:b1u09-g-praesentation-redemittel
+    role: reuse
+  - item: de:item:b1u09-freiwillig
+    role: reuse
+  - item: de:item:b1u09-ruhezeit
+    role: reuse
+  - item: de:item:b1u09-nachbarschaft
+    role: reuse
+  - item: de:item:b1u09-hausordnung
+    role: reuse
+  - item: de:item:b1u09-sich-engagieren
+    role: reuse
+  - item: de:item:b1u09-ruecksicht
+    role: reuse
+  - item: de:item:b1u09-sich-einigen
+    role: reuse
+  - item: de:item:b1u09-praesentation
+    role: reuse
+  - item: de:item:b1u09-erwarten
+    role: reuse
+  - item: de:item:b1u06-sinnvoll
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn chuẩn bị được một bài trình bày ngắn về tình nguyện hoặc hàng xóm, đọc hiểu thông báo trong toà nhà và viết được tin nhắn trang trọng khoảng 40 từ cho ban quản lý toà nhà.
+  - type: explain
+    text:
+      vi: "Chuẩn bị bài trình bày: ghi Stichpunkte cho năm phần – chủ đề và dàn ý, kinh nghiệm bản thân, tình hình ở Việt Nam, ưu nhược điểm và ý kiến, kết luận. Mỗi phần bắt đầu bằng một câu chuyển ý đã học (Ich komme jetzt zu …), và nên có ít nhất một câu so sánh (besser, als ich dachte) và một câu dass hoặc cụm zu."
+  - type: explain
+    text:
+      vi: "Khi đọc thông báo (Aushang) trong toà nhà, hãy tìm: ai viết, việc gì, hạn chót, điều gì bắt buộc và điều gì tự nguyện. Chú ý các từ khoá: freiwillig (tự nguyện), darf nicht (không được), muss nicht (không cần), bis zum … (đến hạn …)."
+  - type: explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, Goethe B1 Schreiben Teil 3 là tin nhắn trang trọng khoảng 40 từ, ví dụ xin lỗi vì không đến được hoặc hỏi thông tin; định dạng có thể thay đổi. Khung: Sehr geehrte Damen und Herren, / Sehr geehrte Frau …, – lý do viết – xin lỗi hoặc đề nghị – Mit freundlichen Grüßen + tên."
+  - type: explain
+    text:
+      vi: "Ôn ngữ pháp của unit: cụm zu khi cùng chủ ngữ, dass khi khác chủ ngữ; tính từ phái sinh (-bar, -los, -voll, -lich, un-); câu so sánh als/wie với động từ đứng cuối; Redemittel thuyết trình."
+  - type: deep_explain
+    text:
+      vi: "Trong thư trang trọng, Sie, Ihnen, Ihr luôn viết hoa; sau lời chào có dấu phẩy, nên dòng tiếp theo bắt đầu bằng chữ thường (Sehr geehrte Damen und Herren, leider …). Sau Mit freundlichen Grüßen không có dấu phẩy, tên viết ở dòng dưới. Với 40 từ, đừng mở đầu quá dài: một câu lý do, một câu xin lỗi hoặc đề nghị, một câu đề xuất giải pháp là đủ. Khi luyện nói, hãy bấm giờ: khoảng 3–4 phút cho phần trình bày, rồi luyện trả lời một hai câu hỏi của bạn học."
+  - type: example
+    target: "Sehr geehrte Damen und Herren, vielen Dank für die Information über den neuen Garten. Ich finde die Idee sehr gut und helfe gern mit. Leider kann ich am ersten Termin nicht kommen, weil ich arbeiten muss. Ab Juni habe ich samstags Zeit. Mit freundlichen Grüßen Minh Nguyen"
+    target_lang: de
+    translation:
+      vi: "Kính gửi quý ông bà, cảm ơn quý vị về thông tin khu vườn mới. Tôi thấy ý tưởng này rất hay và sẵn lòng phụ giúp. Tiếc là tôi không thể đến buổi đầu tiên vì phải đi làm. Từ tháng Sáu tôi rảnh vào các ngày thứ Bảy. Trân trọng, Minh Nguyen"
+    note:
+      vi: "Tin nhắn mẫu khoảng 45 từ: chào trang trọng – cảm ơn – ý kiến – xin lỗi và lý do (weil, động từ cuối) – đề xuất – chào cuối."
+  - type: example
+    target: "Ich spreche heute über das Thema Nachbarschaft. Ich habe selbst erlebt, dass gute Nachbarn sehr wichtig sind. In meinem Viertel in Hanoi ist das etwas anders als hier: Dort kennt jeder jeden. Zum Schluss möchte ich kurz zusammenfassen: Mit Rücksicht und Kompromissen klappt das Zusammenleben besser, als man denkt."
+    target_lang: de
+    translation:
+      vi: "Hôm nay tôi nói về chủ đề hàng xóm láng giềng. Chính tôi đã trải nghiệm rằng hàng xóm tốt rất quan trọng. Ở khu phố của tôi tại Hà Nội thì hơi khác ở đây: ở đó ai cũng biết mặt nhau. Cuối cùng tôi xin tóm tắt ngắn gọn: biết nghĩ cho nhau và biết nhường nhịn thì sống chung dễ hơn người ta tưởng."
+    note:
+      vi: "Bài trình bày rút gọn với đủ Redemittel: mở đầu, kinh nghiệm (dass), so sánh với Việt Nam, kết luận có câu so sánh als."
+  - type: example
+    target: Bitte denken Sie daran, dass die Ruhezeiten auch im Hof gelten.
+    target_lang: de
+    translation:
+      vi: Xin quý vị lưu ý rằng giờ yên tĩnh cũng áp dụng ở sân.
+    note:
+      vi: "Câu hay gặp trong thông báo: denken an + Akkusativ → daran, dass … (động từ gelten ở cuối)."
+  - type: common_mistake
+    wrong: Mit freundlichen Grüße
+    right: Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: "mit + Dativ số nhiều: thêm -n – Grüßen."
+  - type: common_mistake
+    wrong: Sehr geehrte Damen und Herren, Leider kann ich nicht kommen.
+    right: Sehr geehrte Damen und Herren, leider kann ich nicht kommen.
+    target_lang: de
+    note:
+      vi: "Sau dấu phẩy của lời chào, câu tiếp theo bắt đầu bằng chữ thường (trừ danh từ và Sie)."
+  - type: common_mistake
+    wrong: Es ist wichtig, dass alle zu helfen.
+    right: Es ist wichtig, dass alle helfen.
+    target_lang: de
+    note:
+      vi: "Câu dass có chủ ngữ riêng (alle) và động từ chia ở cuối, không có zu."
+  - type: summary
+    points:
+      - vi: "Trình bày: 5 phần, Stichpunkte, câu chuyển ý, ít nhất một câu so sánh và một câu dass/zu."
+      - vi: "Đọc thông báo: ai – việc gì – hạn chót – bắt buộc hay tự nguyện (freiwillig, darf nicht, muss nicht)."
+      - vi: "Tin nhắn trang trọng ~40 từ: Sehr geehrte … – lý do – xin lỗi/đề nghị – Mit freundlichen Grüßen."
+      - vi: "Sau lời chào: chữ thường; Sie/Ihnen/Ihr viết hoa; mit freundlichen Grüßen (Dativ số nhiều)."
+      - vi: "Ngữ pháp: zu khi cùng chủ ngữ, dass khi khác chủ ngữ; -bar/-los/-voll/un-; als/wie + câu phụ."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen) ----------------
+  - key: de:exercise:b1u09l5-mcq-aushang-freiwillig
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-freiwillig
+    prompt:
+      stem: "Liebe Mieterinnen und Mieter, ab Juni gibt es im Hof einen gemeinsamen Garten. Die Arbeit im Garten ist freiwillig. Wer mithelfen möchte, kann sich bis zum 15. Mai bei uns melden. Bitte denken Sie daran, dass die Ruhezeiten auch im Hof gelten: Nach 22 Uhr darf man dort nicht mehr laut feiern. Wir hoffen, dass der Garten die Nachbarschaft stärkt. Ihre Hausverwaltung — Richtig oder falsch? Alle Mieter müssen im Garten mitarbeiten."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Thông báo viết: Die Arbeit im Garten ist freiwillig – việc làm vườn là tự nguyện, ai muốn mới đăng ký (Wer mithelfen möchte …). Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u09l5-mcq-aushang-melden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-sich-engagieren
+    prompt:
+      stem: "Liebe Mieterinnen und Mieter, ab Juni gibt es im Hof einen gemeinsamen Garten. Die Arbeit im Garten ist freiwillig. Wer mithelfen möchte, kann sich bis zum 15. Mai bei uns melden. Bitte denken Sie daran, dass die Ruhezeiten auch im Hof gelten: Nach 22 Uhr darf man dort nicht mehr laut feiern. Wir hoffen, dass der Garten die Nachbarschaft stärkt. Ihre Hausverwaltung — Richtig oder falsch? Wer mitmachen möchte, soll sich bis Mitte Mai melden."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "kann sich bis zum 15. Mai bei uns melden = đăng ký đến ngày 15 tháng Năm, tức là giữa tháng Năm (Mitte Mai). mitmachen và mithelfen cùng ý tham gia, nên câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u09l5-mcq-aushang-ruhezeit
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-ruhezeit
+    prompt:
+      stem: "Liebe Mieterinnen und Mieter, ab Juni gibt es im Hof einen gemeinsamen Garten. Die Arbeit im Garten ist freiwillig. Wer mithelfen möchte, kann sich bis zum 15. Mai bei uns melden. Bitte denken Sie daran, dass die Ruhezeiten auch im Hof gelten: Nach 22 Uhr darf man dort nicht mehr laut feiern. Wir hoffen, dass der Garten die Nachbarschaft stärkt. Ihre Hausverwaltung — Richtig oder falsch? Im Garten darf man auch nach 22 Uhr laut feiern."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "die Ruhezeiten gelten auch im Hof: Nach 22 Uhr darf man dort nicht mehr laut feiern – sau 22 giờ không được tiệc tùng ồn ào ở sân (nơi có khu vườn). Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u09l5-mcq-aushang-nachbarschaft
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-nachbarschaft
+    prompt:
+      stem: "Liebe Mieterinnen und Mieter, ab Juni gibt es im Hof einen gemeinsamen Garten. Die Arbeit im Garten ist freiwillig. Wer mithelfen möchte, kann sich bis zum 15. Mai bei uns melden. Bitte denken Sie daran, dass die Ruhezeiten auch im Hof gelten: Nach 22 Uhr darf man dort nicht mehr laut feiern. Wir hoffen, dass der Garten die Nachbarschaft stärkt. Ihre Hausverwaltung — Richtig oder falsch? Die Hausverwaltung glaubt, dass der Garten gut für die Nachbarschaft ist."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Wir hoffen, dass der Garten die Nachbarschaft stärkt – ban quản lý hy vọng khu vườn làm tình hàng xóm gắn bó hơn, tức là tốt cho khu nhà. Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b1u09l5-listen-verein
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-g-praesentation-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich habe selbst erlebt, wie schön es ist, in einem Verein mitzumachen. Seitdem engagiere ich mich jeden Samstag ehrenamtlich.
+      options:
+        - { id: v2a, text: "Người nói đã tự trải nghiệm niềm vui khi tham gia một hội, và từ đó thứ Bảy nào cũng làm tình nguyện.", lang: vi }
+        - { id: v6b, text: "Người nói muốn tham gia một hội nhưng chưa có thời gian.", lang: vi }
+        - { id: v9c, text: "Người nói làm việc có lương ở một hội vào mỗi thứ Bảy.", lang: vi }
+        - { id: v4d, text: "Người nói đã từng tham gia một hội nhưng bây giờ thì không nữa.", lang: vi }
+    answer:
+      correct_option_id: v2a
+    explanation:
+      vi: "Ich habe selbst erlebt, wie schön es ist, … mitzumachen = chính tôi đã thấy tham gia vui thế nào. Seitdem engagiere ich mich … ehrenamtlich = từ đó tôi làm tình nguyện (không lương), và vẫn đang làm (Präsens)."
+    display_answer: Người nói đã tự trải nghiệm niềm vui khi tham gia một hội, và từ đó thứ Bảy nào cũng làm tình nguyện.
+
+  - key: de:exercise:b1u09l5-listen-streit
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-sich-einigen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Danke für Ihre Frage. Der Streit mit den Nachbarn war schwieriger, als ich gedacht hatte. Aber am Ende haben wir uns geeinigt.
+      options:
+        - { id: t3a, text: "Mâu thuẫn với hàng xóm khó hơn người nói nghĩ, nhưng cuối cùng họ đã thống nhất được.", lang: vi }
+        - { id: t7b, text: "Mâu thuẫn với hàng xóm dễ hơn người nói nghĩ, và họ thống nhất ngay.", lang: vi }
+        - { id: t1c, text: "Mâu thuẫn với hàng xóm khó hơn người nói nghĩ, và đến giờ vẫn chưa giải quyết được.", lang: vi }
+        - { id: t5d, text: "Người nói không muốn trả lời câu hỏi về hàng xóm.", lang: vi }
+    answer:
+      correct_option_id: t3a
+    explanation:
+      vi: "schwieriger, als ich gedacht hatte = khó hơn tôi đã nghĩ; am Ende haben wir uns geeinigt = cuối cùng chúng tôi đã thống nhất được (sich einigen)."
+    display_answer: Mâu thuẫn với hàng xóm khó hơn người nói nghĩ, nhưng cuối cùng họ đã thống nhất được.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u09l5-fill-formell
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-hausordnung
+    prompt:
+      template: "Sehr geehrte Damen und {{b1}}, ich habe eine Frage zur Hausordnung: Darf man im Hof grillen? Ich freue mich auf Ihre {{b2}}. Mit freundlichen {{b3}} Minh Nguyen"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Herren]
+        b2: [Antwort]
+        b3: [Grüßen]
+    known_wrong:
+      - answer: Herr
+        feedback_vi: Lời chào chung dùng số nhiều – Damen und Herren.
+        error_tag: plural_form
+      - answer: Grüße
+        feedback_vi: mit + Dativ số nhiều cần thêm -n – Mit freundlichen Grüßen.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Khung tin nhắn trang trọng: Sehr geehrte Damen und Herren (số nhiều), câu hỏi ngắn, Ich freue mich auf Ihre Antwort (sich freuen auf + Akkusativ; Ihre viết hoa), Mit freundlichen Grüßen (mit + Dativ số nhiều, đuôi -en)."
+    display_answer: "Sehr geehrte Damen und Herren, ich habe eine Frage zur Hausordnung: Darf man im Hof grillen? Ich freue mich auf Ihre Antwort. Mit freundlichen Grüßen Minh Nguyen"
+
+  - key: de:exercise:b1u09l5-fill-sinnvoll-anlegen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-wortbildung-adjektiv
+    prompt:
+      template: "Ich finde es {{b1}} (Sinn + voll), im Hof einen gemeinsamen Garten {{b2}} (anlegen)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [sinnvoll]
+        b2: [anzulegen]
+    known_wrong:
+      - answer: zu anlegen
+        feedback_vi: anlegen là động từ tách, zu chen vào giữa – anzulegen.
+        error_tag: zu_infinitive
+      - answer: anlegen
+        feedback_vi: Sau Ich finde es + tính từ cần cụm zu – anzulegen.
+        error_tag: zu_infinitive
+    explanation:
+      vi: "der Sinn + -voll = sinnvoll (hợp lý, có ý nghĩa). Ich finde es sinnvoll, … zu + nguyên thể: anlegen (tạo, làm vườn) là động từ tách nên thành anzulegen."
+    display_answer: Ich finde es sinnvoll, im Hof einen gemeinsamen Garten anzulegen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u09l5-wb-ruecksicht-nehmen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-ruecksicht
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi hy vọng tất cả hàng xóm đều biết nghĩ cho người khác.\""
+      tokens:
+        - { id: w-nehmen, text: nehmen }
+        - { id: w-dass, text: dass }
+        - { id: w-wir, text: Wir }
+        - { id: w-ruecksicht, text: Rücksicht }
+        - { id: w-komma, text: "," }
+        - { id: w-alle, text: alle }
+        - { id: w-hoffen, text: hoffen }
+        - { id: w-nachbarn, text: Nachbarn }
+    answer:
+      orders:
+        - [w-wir, w-hoffen, w-komma, w-dass, w-alle, w-nachbarn, w-ruecksicht, w-nehmen]
+    explanation:
+      vi: "Người hy vọng (wir) khác người làm (alle Nachbarn) → dass. Trong câu dass, động từ chia nehmen đứng cuối, sau Rücksicht (Rücksicht nehmen = biết nghĩ cho người khác)."
+    display_answer: Wir hoffen, dass alle Nachbarn Rücksicht nehmen.
+
+  - key: de:exercise:b1u09l5-wb-wichtig-zu-sein
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-zu-infinitiv-dass
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Biết nghĩ cho người khác là điều quan trọng.\""
+      tokens:
+        - { id: z-sein, text: sein }
+        - { id: z-wichtig, text: wichtig }
+        - { id: z-es, text: Es }
+        - { id: z-zu, text: zu }
+        - { id: z-rv, text: rücksichtsvoll }
+        - { id: z-komma, text: "," }
+        - { id: z-ist, text: ist }
+    answer:
+      orders:
+        - [z-es, z-ist, z-wichtig, z-komma, z-rv, z-zu, z-sein]
+    explanation:
+      vi: "Es ist wichtig + cụm zu (người làm là \"người ta\" nói chung). Trong cụm zu, tính từ rücksichtsvoll đứng trước, zu sein ở cuối."
+    display_answer: Es ist wichtig, rücksichtsvoll zu sein.
+
+  - key: de:exercise:b1u09l5-tr-treffen-absagen
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u09-g-zu-infinitiv-dass
+    prompt:
+      source_text: "Rất tiếc tôi không thể đến buổi họp. (thư trang trọng; buổi họp = das Treffen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Leider kann ich nicht zum Treffen kommen.
+        - Ich kann leider nicht zum Treffen kommen.
+        - Leider kann ich zum Treffen nicht kommen.
+        - Es tut mir leid, dass ich nicht zum Treffen kommen kann.
+        - Es tut mir leid, nicht zum Treffen kommen zu können.
+        - Leider kann ich nicht an dem Treffen teilnehmen.
+        - Ich kann leider nicht an dem Treffen teilnehmen.
+        - Leider kann ich am Treffen nicht teilnehmen.
+        - Ich kann leider am Treffen nicht teilnehmen.
+        - Es tut mir leid, dass ich nicht an dem Treffen teilnehmen kann.
+        - Es tut mir leid, dass ich am Treffen nicht teilnehmen kann.
+    known_wrong:
+      - answer: Es tut mir leid, dass ich kann nicht zum Treffen kommen.
+        feedback_vi: Trong câu dass, động từ chia kann đứng cuối – dass ich nicht zum Treffen kommen kann.
+        error_tag: verb_position
+      - answer: Es tut mir leid, nicht zum Treffen zu kommen können.
+        feedback_vi: Trong cụm zu có modal, zu đứng trước modal ở cuối – kommen zu können.
+        error_tag: zu_infinitive
+      - answer: Leider ich kann nicht zum Treffen kommen.
+        feedback_vi: Leider đứng ở vị trí 1 thì động từ kann ở vị trí 2 – Leider kann ich …
+        error_tag: verb_position
+    explanation:
+      vi: "Cách gọn nhất: Leider kann ich nicht zum Treffen kommen (kann vị trí 2, kommen cuối câu). Cũng có thể dùng Es tut mir leid, dass … (động từ kann ở cuối) hoặc cụm zu cùng chủ ngữ: …, nicht zum Treffen kommen zu können."
+    display_answer: Leider kann ich nicht zum Treffen kommen.
+
+  - key: de:exercise:b1u09l5-tr-besser-erwartet
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u09-g-vergleichssatz
+    prompt:
+      source_text: Die Präsentation war besser, als ich erwartet hatte.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bài thuyết trình tốt hơn tôi mong đợi.
+        - Bài thuyết trình tốt hơn tôi đã mong đợi.
+        - Bài thuyết trình tốt hơn tôi nghĩ.
+        - Bài thuyết trình tốt hơn tôi đã nghĩ.
+        - Bài thuyết trình hay hơn tôi mong đợi.
+        - Bài thuyết trình hay hơn tôi đã mong đợi.
+        - Bài thuyết trình hay hơn tôi nghĩ.
+        - Bài thuyết trình tốt hơn tôi tưởng.
+        - Bài thuyết trình hay hơn tôi tưởng.
+        - Bài thuyết trình tốt hơn so với tôi mong đợi.
+        - Bài thuyết trình tốt hơn những gì tôi mong đợi.
+        - Bài thuyết trình đã tốt hơn tôi mong đợi.
+        - Bài thuyết trình tốt hơn mong đợi của tôi.
+        - Bài thuyết trình tốt hơn tôi dự đoán.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bài thuyết trình không tốt như tôi mong đợi.
+        feedback_vi: "besser, als … = tốt hơn …; không tốt bằng sẽ là nicht so gut, wie …"
+        error_tag: meaning
+    explanation:
+      vi: "besser, als ich erwartet hatte = tốt hơn tôi (đã) mong đợi; erwartet hatte là Plusquamperfekt vì sự mong đợi có trước bài thuyết trình."
+    display_answer: Bài thuyết trình tốt hơn tôi mong đợi.

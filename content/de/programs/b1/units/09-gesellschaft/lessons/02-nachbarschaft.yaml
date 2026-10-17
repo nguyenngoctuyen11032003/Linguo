@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u09-nachbarschaft
+order_index: 2
+level: b1
+title:
+  vi: Hàng xóm – tính từ phái sinh (Rücksichtsvoll, unmöglich, machbar)
+objectives:
+  - vi: Hiểu và dùng tính từ phái sinh với -bar, -los, -voll, -lich, -ig, -isch và un-; đoán nghĩa từ mới từ cấu tạo của nó.
+  - vi: Nói về nội quy chung cư và giờ yên tĩnh.
+  - vi: Nhắc hàng xóm một cách lịch sự và cùng tìm thoả hiệp khi có mâu thuẫn.
+estimated_minutes: 19
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b1u09-ehrenamt]
+items:
+  - item: de:item:b1u09-g-wortbildung-adjektiv
+  - item: de:item:b1u09-hausordnung
+  - item: de:item:b1u09-ruhezeit
+  - item: de:item:b1u09-laerm
+  - item: de:item:b1u09-stoeren
+  - item: de:item:b1u09-ruecksicht
+  - item: de:item:b1u09-ruecksichtsvoll
+  - item: de:item:b1u09-konflikt
+  - item: de:item:b1u09-sich-einigen
+  - item: de:item:b1u09-kompromiss
+  - item: de:item:b1u09-machbar
+  - item: de:item:b1u09-ruecksichtslos
+  - item: de:item:b1u09-aergerlich
+  - item: de:item:b1u09-unmoeglich
+  - item: de:item:b1u09-friedlich
+  - item: de:item:b1u09-treppenhaus
+  - item: de:item:b1u09-nachbarschaft
+  - item: de:item:a2u06-g-muss-nicht-darf-nicht
+    role: reuse
+  - item: de:item:b1u09-g-zu-infinitiv-dass
+    role: reuse
+  - item: de:item:b1u04-g-brauchen-zu
+    role: reuse
+  - item: de:item:b1u05-g-negation-erweitert
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được về nội quy toà nhà và nhắc hàng xóm lịch sự, ví dụ: \"Entschuldigung, die Musik ist sehr laut. Könnten Sie sie bitte etwas leiser machen? Laut Hausordnung ist ab 22 Uhr Ruhezeit.\""
+  - type: explain
+    text:
+      vi: "-bar gắn vào gốc động từ và mang nghĩa \"có thể được …\": machen → machbar (làm được), essen → essbar (ăn được), erreichen → erreichbar (liên lạc được). Gần giống tiếng Việt thêm \"được\" sau động từ."
+  - type: explain
+    text:
+      vi: "-los nghĩa là \"không có\", -voll nghĩa là \"đầy, có nhiều\": arbeitslos (không có việc), rücksichtslos (không biết nghĩ cho người khác) ↔ rücksichtsvoll (biết nghĩ cho người khác). Một số từ có âm nối -s- ở giữa: Rücksicht + s + voll."
+  - type: explain
+    text:
+      vi: "-lich, -ig, -isch biến danh từ hoặc động từ thành tính từ: der Freund → freundlich, der Friede(n) → friedlich, die Ruhe → ruhig, die Praxis → praktisch. un- đứng đầu để phủ định – giống \"không, bất\" trong tiếng Việt: unmöglich (không thể), unfreundlich (không thân thiện)."
+  - type: explain
+    text:
+      vi: "Khi có chuyện với hàng xóm, người Đức thường nói trực tiếp nhưng lịch sự, dùng Konjunktiv II: Könnten Sie bitte …? Würden Sie bitte …? Giờ yên tĩnh (Ruhezeit) thường là ban đêm, khoảng 22 đến 6 giờ, và ở nhiều nơi cả Chủ nhật, ngày lễ; giờ cụ thể tuỳ nội quy nhà và quy định địa phương."
+  - type: deep_explain
+    text:
+      vi: "Cấu tạo từ giúp bạn đoán nghĩa khi đọc: unbezahlbar = không trả nổi (un- + bezahlen + -bar), hilflos = không ai giúp được, bất lực, verständlich = dễ hiểu. Tuy vậy, đừng tự tạo từ mới chỉ theo quy tắc: không phải gốc nào cũng ghép được với mọi hậu tố, và với tính từ đã có từ trái nghĩa riêng (teuer – billig, laut – leise), người Đức dùng từ đó thay vì thêm un-; khi không chắc, dùng nicht: Das ist nicht machbar. Đuôi -ig theo chuẩn phát âm đọc giống -ich (ruhig), ở miền Nam nước Đức và Áo hay đọc là -ik. Chữ laut còn là giới từ \"theo\" trong văn bản: laut Hausordnung = theo nội quy. Nếu nói chuyện trực tiếp không giải quyết được, người thuê nhà thường báo cho chủ nhà hoặc ban quản lý toà nhà (die Hausverwaltung); cách xử lý cụ thể có thể khác nhau."
+  - type: example
+    target: Laut Hausordnung ist von 22 bis 6 Uhr Ruhezeit.
+    target_lang: de
+    translation:
+      vi: Theo nội quy toà nhà, từ 22 giờ đến 6 giờ là giờ yên tĩnh.
+    note:
+      vi: "laut ở đây là giới từ \"theo\", không phải tính từ \"ồn\". Ruhezeit đứng không mạo từ sau ist, giống Feierabend."
+  - type: example
+    target: Entschuldigung, die Musik ist sehr laut. Könnten Sie sie bitte etwas leiser machen?
+    target_lang: de
+    translation:
+      vi: Xin lỗi, nhạc to quá. Anh/chị có thể vặn nhỏ một chút được không?
+    note:
+      vi: "Nói với hàng xóm không thân: dùng Sie. Könnten Sie bitte …? lịch sự hơn nhiều so với câu mệnh lệnh."
+  - type: example
+    target: Unsere neue Nachbarin ist sehr rücksichtsvoll. Sie lässt nach 22 Uhr nie die Waschmaschine laufen.
+    target_lang: de
+    translation:
+      vi: Cô hàng xóm mới của chúng tôi rất ý tứ. Cô ấy không bao giờ cho máy giặt chạy sau 22 giờ.
+    note:
+      vi: "rücksichtsvoll = Rücksicht + s + voll: đầy sự ý tứ."
+  - type: example
+    target: In der Ruhezeit darf man nicht bohren, aber man muss natürlich nicht flüstern.
+    target_lang: de
+    translation:
+      vi: Trong giờ yên tĩnh không được khoan tường, nhưng tất nhiên không cần phải nói thì thầm.
+    note:
+      vi: "nicht dürfen = không được phép; nicht müssen = không cần (ôn A2)."
+  - type: example
+    target: Wir haben lange diskutiert und uns schließlich auf einen Kompromiss geeinigt.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đã bàn bạc lâu và cuối cùng thống nhất được một giải pháp dung hoà.
+    note:
+      vi: "sich einigen auf + Akkusativ; Perfekt: haben … geeinigt, đại từ uns đứng ngay sau haben và chủ ngữ."
+  - type: example
+    target: Wir brauchen nicht gleich die Hausverwaltung anzurufen. Reden wir zuerst mit dem Nachbarn!
+    target_lang: de
+    translation:
+      vi: Chúng ta không cần gọi ngay cho ban quản lý toà nhà. Trước hết hãy nói chuyện với hàng xóm đã!
+    note:
+      vi: "nicht brauchen + zu = không cần (ôn B1U04); anrufen tách → anzurufen. dem Nachbarn: der Nachbar biến cách yếu."
+  - type: example
+    target: Seit unserem Gespräch hört er nachts keine laute Musik mehr.
+    target_lang: de
+    translation:
+      vi: Từ sau cuộc nói chuyện của chúng tôi, anh ấy không còn nghe nhạc to vào ban đêm nữa.
+    note:
+      vi: "kein … mehr = không còn … nữa (ôn B1U05); seit + Dativ: seit unserem Gespräch."
+  - type: common_mistake
+    wrong: Die Wohnung ist unteuer.
+    right: Die Wohnung ist günstig.
+    target_lang: de
+    note:
+      vi: "teuer đã có từ trái nghĩa riêng (billig, günstig), nên không ghép un-. Đừng tự tạo từ un- mới; khi không chắc, dùng nicht teuer."
+  - type: common_mistake
+    wrong: Sie sind rücksichtslos! Machen Sie sofort die Musik leiser!
+    right: Entschuldigung, könnten Sie die Musik bitte etwas leiser machen?
+    target_lang: de
+    note:
+      vi: "Câu đầu đúng ngữ pháp nhưng quá nặng và ra lệnh; với hàng xóm, hãy mở đầu bằng Entschuldigung và hỏi bằng Könnten Sie bitte …?"
+  - type: common_mistake
+    wrong: Die Musik stört mir.
+    right: Die Musik stört mich.
+    target_lang: de
+    note:
+      vi: "stören đi với Akkusativ: mich, dich, uns."
+  - type: common_mistake
+    wrong: Unsere Nachbarn sind sehr rücksichtvoll.
+    right: Unsere Nachbarn sind sehr rücksichtsvoll.
+    target_lang: de
+    note:
+      vi: "Có âm nối -s-: Rücksicht + s + voll, cũng như rücksichtslos."
+  - type: summary
+    points:
+      - vi: "-bar = có thể được (machbar); -los = không có (rücksichtslos); -voll = đầy (rücksichtsvoll)."
+      - vi: "-lich, -ig, -isch tạo tính từ: freundlich, friedlich, ruhig, praktisch; un- = phủ định: unmöglich."
+      - vi: "Đoán nghĩa từ mới bằng cấu tạo, nhưng đừng tự ghép un- với mọi tính từ."
+      - vi: "Nhắc lịch sự: Entschuldigung, könnten Sie bitte …? – Das stört mich (Akk)."
+      - vi: "Ruhezeit: thường ban đêm và Chủ nhật, tuỳ nội quy; In der Ruhezeit darf man nicht bohren."
+      - vi: "Giải quyết mâu thuẫn: einen Konflikt lösen, sich auf einen Kompromiss einigen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u09l2-mcq-machbar
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-machbar
+    prompt:
+      stem: "Der Plan ist teuer, aber machbar. – machbar nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: m3a, text: "có thể thực hiện được", lang: vi }
+        - { id: m7b, text: "đã được thực hiện xong", lang: vi }
+        - { id: m1c, text: "không thể thực hiện được", lang: vi }
+        - { id: m9d, text: "bắt buộc phải thực hiện", lang: vi }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "machen + -bar: hậu tố -bar sau gốc động từ mang nghĩa \"có thể được …\", nên machbar = có thể làm được, khả thi. Chữ aber (nhưng) cũng cho thấy ý tích cực trái với teuer (đắt)."
+    display_answer: có thể thực hiện được
+
+  - key: de:exercise:b1u09l2-mcq-ruecksichtslos
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-ruecksichtslos
+    prompt:
+      stem: "Herr Braun hört nachts sehr laut Musik und denkt nie an die anderen Mieter. Er ist …"
+      stem_lang: de
+      options:
+        - { id: r2a, text: "rücksichtslos", lang: de }
+        - { id: r6b, text: "rücksichtsvoll", lang: de }
+        - { id: r4c, text: "friedlich", lang: de }
+        - { id: r8d, text: "machbar", lang: de }
+    answer:
+      correct_option_id: r2a
+    explanation:
+      vi: "Không nghĩ đến người khác = không có Rücksicht → Rücksicht + s + los = rücksichtslos. rücksichtsvoll là nghĩa ngược lại; friedlich = hoà thuận; machbar chỉ dùng cho việc, không dùng cho người."
+    display_answer: rücksichtslos
+
+  - key: de:exercise:b1u09l2-listen-musik-leiser
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-laerm
+    prompt:
+      audio_asset_id: null
+      fallback_text: Entschuldigung, ich wohne unter Ihnen. Ihre Musik ist abends oft sehr laut. Könnten Sie sie nach zehn Uhr bitte etwas leiser machen?
+      options:
+        - { id: l1a, text: "Người nói sống ở tầng dưới và lịch sự nhờ hàng xóm vặn nhỏ nhạc sau mười giờ tối.", lang: vi }
+        - { id: l5b, text: "Người nói sống ở tầng trên và yêu cầu hàng xóm tắt nhạc ngay lập tức.", lang: vi }
+        - { id: l8c, text: "Người nói phàn nàn về tiếng khoan tường vào buổi sáng.", lang: vi }
+        - { id: l3d, text: "Người nói mời hàng xóm đến nghe nhạc lúc mười giờ.", lang: vi }
+    answer:
+      correct_option_id: l1a
+    explanation:
+      vi: "ich wohne unter Ihnen = tôi sống ở tầng dưới anh/chị. Könnten Sie … bitte etwas leiser machen? = anh/chị có thể vặn nhỏ một chút không – lời nhờ lịch sự, không phải tắt hẳn. nach zehn Uhr = sau mười giờ."
+    display_answer: Người nói sống ở tầng dưới và lịch sự nhờ hàng xóm vặn nhỏ nhạc sau mười giờ tối.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u09l2-fill-voll-los-lich
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-wortbildung-adjektiv
+    prompt:
+      template: "Unsere Nachbarn sind meistens sehr {{b1}} (Rücksicht + voll). Nur der Mann im dritten Stock ist leider {{b2}} (Rücksicht + los). Das ist wirklich {{b3}} (der Ärger)."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 14 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [rücksichtsvoll]
+        b2: [rücksichtslos]
+        b3: [ärgerlich]
+    known_wrong:
+      - answer: rücksichtvoll
+        feedback_vi: Giữa Rücksicht và voll có âm nối -s- – rücksichtsvoll.
+        error_tag: word_formation
+      - answer: rücksichtlos
+        feedback_vi: Giữa Rücksicht và los có âm nối -s- – rücksichtslos.
+        error_tag: word_formation
+      - answer: Ärger
+        feedback_vi: Sau ist wirklich cần tính từ – der Ärger + -lich = ärgerlich.
+        error_tag: word_formation
+    explanation:
+      vi: "-voll = đầy, -los = không có, cả hai đều cần âm nối -s- sau Rücksicht. Từ danh từ der Ärger thêm -lich thành tính từ ärgerlich (đáng bực mình); tính từ sau sein không có đuôi."
+    display_answer: "Unsere Nachbarn sind meistens sehr rücksichtsvoll. Nur der Mann im dritten Stock ist leider rücksichtslos. Das ist wirklich ärgerlich."
+
+  - key: de:exercise:b1u09l2-fill-hausordnung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-hausordnung
+    prompt:
+      template: "Im Treppenhaus hängt die {{b1}}. Dort steht: Von 22 bis 6 Uhr ist {{b2}}. In dieser Zeit darf man keinen {{b3}} machen, aber man muss natürlich nicht flüstern."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Hausordnung]
+        b2: [Ruhezeit, Nachtruhe]
+        b3: [Lärm, Krach]
+    known_wrong:
+      - answer: laut
+        feedback_vi: Sau keinen cần danh từ – keinen Lärm machen (gây ồn).
+        error_tag: word_choice
+    explanation:
+      vi: "Nội quy treo ở cầu thang chung là die Hausordnung. Từ 22 đến 6 giờ là Ruhezeit (hoặc Nachtruhe). Lärm machen = gây ồn, Lärm là giống đực nên keinen Lärm. darf nicht = không được phép, muss nicht = không cần."
+    display_answer: "Im Treppenhaus hängt die Hausordnung. Dort steht: Von 22 bis 6 Uhr ist Ruhezeit. In dieser Zeit darf man keinen Lärm machen, aber man muss natürlich nicht flüstern."
+
+  - key: de:exercise:b1u09l2-tr-stoert-mich
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-stoeren
+    prompt:
+      source_text: "Tiếng nhạc làm phiền tôi."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Musik stört mich.
+        - Mich stört die Musik.
+        - Die Musik stört mich sehr.
+    known_wrong:
+      - answer: Die Musik stört mir.
+        feedback_vi: stören đi với Akkusativ – mich (không phải mir).
+        error_tag: case_dat_akk
+      - answer: Die Musik störe mich.
+        feedback_vi: Chủ ngữ là die Musik (ngôi thứ ba) – stört.
+        error_tag: verb_form
+    explanation:
+      vi: "Chủ ngữ là die Musik, động từ stören chia ngôi er/sie/es: stört. Người bị làm phiền ở Akkusativ: mich."
+    display_answer: Die Musik stört mich.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u09l2-wb-kompromiss
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-sich-einigen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi đã thống nhất được một giải pháp dung hoà.\""
+      tokens:
+        - { id: k-geeinigt, text: geeinigt }
+        - { id: k-einen, text: einen }
+        - { id: k-wir, text: Wir }
+        - { id: k-auf, text: auf }
+        - { id: k-uns, text: uns }
+        - { id: k-kompromiss, text: Kompromiss }
+        - { id: k-haben, text: haben }
+    answer:
+      orders:
+        - [k-wir, k-haben, k-uns, k-auf, k-einen, k-kompromiss, k-geeinigt]
+    explanation:
+      vi: "Perfekt: haben ở vị trí 2, Partizip geeinigt ở cuối. Đại từ phản thân uns đứng ngay sau haben, rồi đến cụm auf einen Kompromiss (auf + Akkusativ)."
+    display_answer: Wir haben uns auf einen Kompromiss geeinigt.
+
+  - key: de:exercise:b1u09l2-wb-nachts-musik
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-ruecksichtslos
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nghe nhạc to vào ban đêm là thiếu ý tứ.\""
+      tokens:
+        - { id: n-hoeren, text: hören }
+        - { id: n-ist, text: ist }
+        - { id: n-musik, text: Musik }
+        - { id: n-es, text: Es }
+        - { id: n-zu, text: zu }
+        - { id: n-nachts, text: nachts }
+        - { id: n-komma, text: "," }
+        - { id: n-laut, text: laut }
+        - { id: n-rs, text: rücksichtslos }
+    answer:
+      orders:
+        - [n-es, n-ist, n-rs, n-komma, n-nachts, n-laut, n-musik, n-zu, n-hoeren]
+        - [n-es, n-ist, n-rs, n-komma, n-nachts, n-musik, n-laut, n-zu, n-hoeren]
+    explanation:
+      vi: "Es ist + tính từ, rồi cụm zu sau dấu phẩy (ôn bài 1). Trong cụm zu, thời gian (nachts) đứng trước, zu hören ở cuối; laut Musik và Musik laut đều được."
+    display_answer: Es ist rücksichtslos, nachts laut Musik zu hören.
+
+  - key: de:exercise:b1u09l2-mcq-sonntag-bohren
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-ruhezeit
+    prompt:
+      stem: "Hàng xóm tầng trên (bạn chưa quen) khoan tường vào sáng Chủ nhật. Bạn muốn nhắc một cách lịch sự. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: b4a, text: "Entschuldigen Sie, könnten Sie bitte am Sonntag nicht bohren? Das stört uns sehr.", lang: de }
+        - { id: b9b, text: "Hören Sie sofort auf! Sie sind total rücksichtslos!", lang: de }
+        - { id: b2c, text: "Du darfst am Sonntag nicht bohren, das weißt du doch!", lang: de }
+        - { id: b7d, text: "Bohren Sie ruhig weiter, das ist kein Problem.", lang: de }
+    answer:
+      correct_option_id: b4a
+    explanation:
+      vi: "Với hàng xóm chưa quen, dùng Sie và hỏi bằng Könnten Sie bitte …? rồi nói lý do (Das stört uns). Câu 2 là mệnh lệnh và chê bai; câu 3 dùng du với người lạ; câu 4 lại cho phép tiếp tục khoan."
+    display_answer: "Entschuldigen Sie, könnten Sie bitte am Sonntag nicht bohren? Das stört uns sehr."
+
+  - key: de:exercise:b1u09l2-tr-friedlich-geloest
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u09-friedlich
+    prompt:
+      source_text: Zum Glück haben wir den Konflikt friedlich gelöst.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - May mà chúng tôi đã giải quyết mâu thuẫn một cách êm đẹp.
+        - May mắn là chúng tôi đã giải quyết mâu thuẫn một cách êm đẹp.
+        - May mà chúng tôi đã giải quyết mâu thuẫn một cách hoà bình.
+        - May mắn là chúng tôi đã giải quyết mâu thuẫn một cách hoà bình.
+        - May mà chúng tôi đã giải quyết êm đẹp mâu thuẫn.
+        - May mà chúng tôi đã giải quyết xung đột một cách hoà bình.
+        - May mắn là chúng tôi đã giải quyết xung đột một cách hoà bình.
+        - May mà chúng tôi đã giải quyết ổn thoả mâu thuẫn.
+        - May mà chúng tôi đã giải quyết mâu thuẫn một cách ổn thoả.
+        - May mà chúng tôi đã giải quyết mâu thuẫn một cách hoà thuận.
+        - May là chúng tôi đã giải quyết mâu thuẫn một cách êm đẹp.
+        - Thật may là chúng tôi đã giải quyết mâu thuẫn một cách êm đẹp.
+        - May mà chúng ta đã giải quyết mâu thuẫn một cách êm đẹp.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: May mà chúng tôi đã tránh được mâu thuẫn.
+        feedback_vi: "gelöst là đã giải quyết (lösen), không phải tránh được – mâu thuẫn đã xảy ra rồi."
+        error_tag: meaning
+    explanation:
+      vi: "zum Glück = may mà; den Konflikt lösen = giải quyết mâu thuẫn (Perfekt: haben … gelöst); friedlich (der Frieden + -lich) = một cách hoà bình, êm đẹp."
+    display_answer: May mà chúng tôi đã giải quyết mâu thuẫn một cách êm đẹp.

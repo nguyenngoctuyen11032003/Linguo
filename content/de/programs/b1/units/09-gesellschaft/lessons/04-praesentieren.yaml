@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u09-praesentieren
+order_index: 4
+level: b1
+title:
+  vi: Trình bày một chủ đề (Ich möchte euch heute … vorstellen.)
+objectives:
+  - vi: Trình bày một chủ đề trong 3–4 phút theo cấu trúc 5 phần, dùng đúng câu mở đầu, chuyển ý và kết luận (kiểu Goethe B1 Sprechen Teil 2).
+  - vi: Nghe nhận ra người nói đang ở phần nào của bài trình bày.
+  - vi: Trả lời câu hỏi của người nghe và hỏi lại lịch sự khi chưa hiểu câu hỏi (kiểu Sprechen Teil 3).
+estimated_minutes: 20
+skills: [speaking, listening]
+prerequisites: [de:lesson:b1u09-politik-wahl]
+items:
+  - item: de:item:b1u09-g-praesentation-redemittel
+  - item: de:item:b1u09-praesentation
+  - item: de:item:b1u09-vortrag
+  - item: de:item:b1u09-folie
+  - item: de:item:b1u09-gliederung
+  - item: de:item:b1u09-thema
+  - item: de:item:b1u09-zusammenfassen
+  - item: de:item:b1u09-publikum
+  - item: de:item:b1u09-stichpunkt
+  - item: de:item:b1u09-ueberblick
+  - item: de:item:b1u09-erwaehnen
+  - item: de:item:b1u09-lampenfieber
+  - item: de:item:b1u09-ehrenamt
+    role: reuse
+  - item: de:item:b1u09-nachbarschaft
+    role: reuse
+  - item: de:item:b1u09-g-zu-infinitiv-dass
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn trình bày được một chủ đề có mở đầu, chuyển ý và kết luận rõ ràng, ví dụ: \"Ich spreche heute über das Thema Ehrenamt. … Damit komme ich zum nächsten Punkt. … Zum Schluss möchte ich kurz zusammenfassen. Vielen Dank für Ihre Aufmerksamkeit!\""
+  - type: explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, ở Goethe-Zertifikat B1 phần Sprechen Teil 2 bạn trình bày một chủ đề khoảng 3–4 phút theo năm trang chiếu (Folien), rồi trả lời câu hỏi của người nghe; định dạng có thể thay đổi, hãy xem tài liệu mẫu chính thức. Năm phần thường là: giới thiệu chủ đề và dàn ý – kinh nghiệm bản thân – tình hình ở Việt Nam – ưu, nhược điểm và ý kiến – kết luận, cảm ơn."
+  - type: explain
+    text:
+      vi: "Mở đầu: Ich spreche heute über das Thema … / Ich möchte euch (Ihnen) heute … vorstellen. Giới thiệu dàn ý: Mein Vortrag hat drei Teile. Zuerst …, dann …, zum Schluss … – giống \"đầu tiên, sau đó, cuối cùng\" trong tiếng Việt."
+  - type: explain
+    text:
+      vi: "Chuyển ý: Ich komme jetzt zu … / Damit komme ich zum nächsten Punkt. Kinh nghiệm: Ich habe selbst erlebt, dass … So sánh với Việt Nam: In Vietnam ist das anders: … / Bei uns in Vietnam …"
+  - type: explain
+    text:
+      vi: "Kết luận: Zum Schluss möchte ich kurz zusammenfassen: … Rồi cảm ơn và mời hỏi: Vielen Dank für eure (Ihre) Aufmerksamkeit! Habt ihr (Haben Sie) Fragen? Khi chưa hiểu câu hỏi, đừng đoán – hãy hỏi lại: Könnten Sie die Frage bitte wiederholen?"
+  - type: deep_explain
+    text:
+      vi: "Người nghe Đức đánh giá cao bài nói có cấu trúc rõ và nhìn vào người nghe hơn là đọc thật trôi chảy từ giấy. Vì vậy, chỉ ghi Stichpunkte (ý chính), không viết cả câu, và luyện nói tự do vài lần trước gương hoặc với bạn. Trong lớp thường dùng ihr/euch với các bạn học; trước người nghe không quen hoặc giám khảo, dùng Sie/Ihnen. Khi trả lời câu hỏi, bạn có thể mở đầu bằng Danke für die Frage. hoặc Das ist eine gute Frage., kiểm tra lại mình hiểu đúng chưa (Sie möchten wissen, ob …?) và nói thật khi không chắc (Da bin ich nicht ganz sicher, aber ich glaube, dass …). Lampenfieber là chuyện bình thường; một câu mở đầu đã thuộc kỹ giúp bạn bắt đầu tự tin hơn."
+  - type: example
+    target: Ich spreche heute über das Thema Ehrenamt. Zuerst erzähle ich von meinen Erfahrungen, dann spreche ich über die Situation in Vietnam, und zum Schluss sage ich meine Meinung.
+    target_lang: de
+    translation:
+      vi: Hôm nay tôi nói về chủ đề công việc tình nguyện. Đầu tiên tôi kể về kinh nghiệm của mình, sau đó nói về tình hình ở Việt Nam, và cuối cùng tôi nêu ý kiến của mình.
+    note:
+      vi: "Mở đầu + dàn ý. Zuerst, dann, zum Schluss đứng đầu vế nên động từ đứng ngay sau (V2)."
+  - type: example
+    target: Ich habe selbst erlebt, dass ehrenamtliche Arbeit viel Freude macht.
+    target_lang: de
+    translation:
+      vi: Chính tôi đã trải nghiệm rằng làm tình nguyện mang lại nhiều niềm vui.
+    note:
+      vi: "Kinh nghiệm bản thân: Ich habe selbst erlebt, dass … – câu dass, động từ macht ở cuối."
+  - type: example
+    target: In Vietnam ist das etwas anders. Viele helfen eher in der Familie und in der Nachbarschaft als in einem Verein.
+    target_lang: de
+    translation:
+      vi: Ở Việt Nam thì hơi khác. Nhiều người thường giúp đỡ trong gia đình và hàng xóm hơn là trong một hội.
+    note:
+      vi: "So sánh với Việt Nam: In Vietnam ist das anders. eher … als … = thường … hơn là …"
+  - type: example
+    target: Ein Nachteil ist, dass man wenig Freizeit hat. Meiner Meinung nach ist ein Ehrenamt aber eine gute Chance, Deutsch zu sprechen.
+    target_lang: de
+    translation:
+      vi: Một nhược điểm là mình có ít thời gian rảnh. Nhưng theo tôi, làm tình nguyện là một cơ hội tốt để nói tiếng Đức.
+    note:
+      vi: "Phần ưu, nhược điểm và ý kiến: Ein Nachteil ist, dass …; Meiner Meinung nach + động từ ở vị trí 2 (ôn B1U06)."
+  - type: example
+    target: Zum Schluss möchte ich kurz zusammenfassen. Vielen Dank für eure Aufmerksamkeit! Habt ihr Fragen?
+    target_lang: de
+    translation:
+      vi: Cuối cùng mình xin tóm tắt ngắn gọn. Cảm ơn các bạn đã chú ý lắng nghe! Các bạn có câu hỏi nào không?
+    note:
+      vi: "Nói với lớp học (ihr): eure, habt ihr. Với người nghe không quen: Ihre, haben Sie."
+  - type: example
+    target: Danke für die Frage. Sie möchten wissen, ob man für ein Ehrenamt Geld bekommt? Nein, normalerweise nicht.
+    target_lang: de
+    translation:
+      vi: Cảm ơn câu hỏi. Anh/chị muốn biết làm tình nguyện có được trả tiền không ạ? Không, thường thì không.
+    note:
+      vi: "Nhắc lại câu hỏi bằng câu hỏi gián tiếp ob … để chắc mình hiểu đúng, rồi mới trả lời."
+  - type: common_mistake
+    wrong: Ehrenamt ist gut. In Vietnam gibt es das auch. Ende.
+    right: Ich komme jetzt zu meinem zweiten Punkt. … Zum Schluss möchte ich kurz zusammenfassen.
+    target_lang: de
+    note:
+      vi: "Thiếu câu chuyển ý thì người nghe không biết bạn đang ở phần nào; dùng Ich komme jetzt zu … và Zum Schluss …"
+  - type: common_mistake
+    wrong: Ich spreche heute von das Thema Nachbarschaft.
+    right: Ich spreche heute über das Thema Nachbarschaft.
+    target_lang: de
+    note:
+      vi: "Nói về một chủ đề: sprechen über + Akkusativ (über das Thema)."
+  - type: common_mistake
+    wrong: Was? Ich verstehe nicht.
+    right: Entschuldigung, könnten Sie die Frage bitte wiederholen?
+    target_lang: de
+    note:
+      vi: "Câu đầu cộc lốc. Khi chưa hiểu, hãy hỏi lại lịch sự thay vì đoán hoặc im lặng."
+  - type: common_mistake
+    wrong: Zum Schluss möchte ich kurz zusammenzufassen.
+    right: Zum Schluss möchte ich kurz zusammenfassen.
+    target_lang: de
+    note:
+      vi: "Sau động từ khuyết thiếu (möchte) dùng nguyên thể không có zu."
+  - type: summary
+    points:
+      - vi: "Năm phần: chủ đề + dàn ý – kinh nghiệm – Việt Nam – ưu, nhược điểm và ý kiến – kết luận."
+      - vi: "Mở đầu: Ich spreche heute über … / Ich möchte euch heute … vorstellen."
+      - vi: "Chuyển ý: Ich komme jetzt zu … / Damit komme ich zum nächsten Punkt."
+      - vi: "Kinh nghiệm: Ich habe selbst erlebt, dass …; so sánh: In Vietnam ist das anders: …"
+      - vi: "Kết: Zum Schluss möchte ich kurz zusammenfassen. Vielen Dank für Ihre Aufmerksamkeit!"
+      - vi: "Chưa hiểu câu hỏi: Könnten Sie die Frage bitte wiederholen?"
+      - vi: "Từ vựng: die Präsentation, der Vortrag, die Folie, die Gliederung, das Thema (Themen), zusammenfassen, das Publikum."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u09l4-listen-einleitung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-g-praesentation-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo zusammen! Ich spreche heute über das Thema Ehrenamt. Mein Vortrag hat drei Teile.
+      options:
+        - { id: i2a, text: "Người nói giới thiệu chủ đề công việc tình nguyện và cho biết bài nói có ba phần.", lang: vi }
+        - { id: i6b, text: "Người nói kết thúc bài nói về công việc tình nguyện và mời đặt câu hỏi.", lang: vi }
+        - { id: i9c, text: "Người nói giới thiệu chủ đề hàng xóm và cho biết bài nói có ba phần.", lang: vi }
+        - { id: i4d, text: "Người nói kể rằng mình đã làm tình nguyện ba năm.", lang: vi }
+    answer:
+      correct_option_id: i2a
+    explanation:
+      vi: "Ich spreche heute über das Thema Ehrenamt = hôm nay tôi nói về chủ đề tình nguyện (phần mở đầu); Mein Vortrag hat drei Teile = bài nói có ba phần (giới thiệu dàn ý)."
+    display_answer: Người nói giới thiệu chủ đề công việc tình nguyện và cho biết bài nói có ba phần.
+
+  - key: de:exercise:b1u09l4-listen-erfahrungen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-g-praesentation-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: So, damit komme ich zum nächsten Punkt, zu meinen eigenen Erfahrungen. Ich habe selbst erlebt, dass ehrenamtliche Arbeit viel Freude macht.
+      options:
+        - { id: x3a, text: "Người nói chuyển sang phần kinh nghiệm bản thân: chính họ thấy làm tình nguyện mang lại nhiều niềm vui.", lang: vi }
+        - { id: x7b, text: "Người nói chuyển sang phần tình hình ở Việt Nam.", lang: vi }
+        - { id: x1c, text: "Người nói kể rằng làm tình nguyện rất mệt và không vui.", lang: vi }
+        - { id: x5d, text: "Người nói tóm tắt toàn bộ bài nói và cảm ơn người nghe.", lang: vi }
+    answer:
+      correct_option_id: x3a
+    explanation:
+      vi: "damit komme ich zum nächsten Punkt = câu chuyển ý; zu meinen eigenen Erfahrungen = sang kinh nghiệm của chính mình. viel Freude macht = mang lại nhiều niềm vui."
+    display_answer: "Người nói chuyển sang phần kinh nghiệm bản thân: chính họ thấy làm tình nguyện mang lại nhiều niềm vui."
+
+  - key: de:exercise:b1u09l4-listen-schluss
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-zusammenfassen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Zum Schluss möchte ich kurz zusammenfassen. Vielen Dank für Ihre Aufmerksamkeit! Haben Sie noch Fragen?
+      options:
+        - { id: c4a, text: "Người nói tóm tắt, cảm ơn người nghe và mời đặt câu hỏi.", lang: vi }
+        - { id: c8b, text: "Người nói bắt đầu bài nói và giới thiệu dàn ý.", lang: vi }
+        - { id: c2c, text: "Người nói hỏi người nghe có muốn làm tình nguyện không.", lang: vi }
+        - { id: c6d, text: "Người nói xin lỗi vì không trả lời được câu hỏi.", lang: vi }
+    answer:
+      correct_option_id: c4a
+    explanation:
+      vi: "Zum Schluss … zusammenfassen = cuối cùng tóm tắt; Vielen Dank für Ihre Aufmerksamkeit = cảm ơn đã lắng nghe; Haben Sie noch Fragen? = mời người nghe hỏi."
+    display_answer: Người nói tóm tắt, cảm ơn người nghe và mời đặt câu hỏi.
+
+  - key: de:exercise:b1u09l4-mcq-erfahrung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-g-praesentation-redemittel
+    prompt:
+      stem: "Bạn đang ở trang chiếu thứ hai: kể kinh nghiệm bản thân. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: f5a, text: "Ich habe selbst erlebt, dass Nachbarn sich gegenseitig helfen.", lang: de }
+        - { id: f1b, text: "Hier sehen Sie die Gliederung meines Vortrags.", lang: de }
+        - { id: f8c, text: "Vielen Dank für Ihre Aufmerksamkeit.", lang: de }
+        - { id: f3d, text: "Zum Schluss möchte ich kurz zusammenfassen.", lang: de }
+    answer:
+      correct_option_id: f5a
+    explanation:
+      vi: "Ich habe selbst erlebt, dass … là câu kể kinh nghiệm bản thân. Câu về Gliederung thuộc phần mở đầu; cảm ơn và Zum Schluss thuộc phần kết."
+    display_answer: Ich habe selbst erlebt, dass Nachbarn sich gegenseitig helfen.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u09l4-fill-ueberblick
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-ueberblick
+    prompt:
+      template: "Ich {{b1}} heute über das Thema Nachbarschaft. Zuerst gebe ich Ihnen einen kurzen {{b2}}. Dann {{b3}} ich zu meinen eigenen Erfahrungen."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [spreche, rede]
+        b2: [Überblick]
+        b3: [komme]
+    known_wrong:
+      - answer: spricht
+        feedback_vi: Chủ ngữ là ich – ich spreche.
+        error_tag: verb_form
+      - answer: Gliederung
+        feedback_vi: die Gliederung là giống cái nên không đi với einen kurzen; ở đây cần der Überblick (tổng quan).
+        error_tag: gender
+      - answer: kommt
+        feedback_vi: Chủ ngữ là ich – Dann komme ich zu …
+        error_tag: verb_form
+    explanation:
+      vi: "sprechen über + Akkusativ: Ich spreche über das Thema …; einen Überblick geben = trình bày tổng quan (der Überblick → einen kurzen Überblick). Câu chuyển ý: Dann komme ich zu … – Dann đứng đầu nên komme ở vị trí 2."
+    display_answer: "Ich spreche heute über das Thema Nachbarschaft. Zuerst gebe ich Ihnen einen kurzen Überblick. Dann komme ich zu meinen eigenen Erfahrungen."
+
+  - key: de:exercise:b1u09l4-fill-zum-schluss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-zusammenfassen
+    prompt:
+      template: "Zum {{b1}} möchte ich das Wichtigste kurz {{b2}} (zusammenfassen). Vielen Dank für Ihre {{b3}}!"
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 14 }
+        - { id: b3, width_hint: 14 }
+    answer:
+      blanks:
+        b1: [Schluss, Abschluss]
+        b2: [zusammenfassen]
+        b3: [Aufmerksamkeit]
+    known_wrong:
+      - answer: zusammenzufassen
+        feedback_vi: Sau möchte (động từ khuyết thiếu) dùng nguyên thể không có zu – zusammenfassen.
+        error_tag: zu_infinitive
+      - answer: zusammengefasst
+        feedback_vi: Sau möchte cần nguyên thể – zusammenfassen.
+        error_tag: verb_form
+    explanation:
+      vi: "Zum Schluss = cuối cùng (câu kết quen thuộc). möchte + nguyên thể ở cuối câu: zusammenfassen. Câu cảm ơn cố định: Vielen Dank für Ihre Aufmerksamkeit!"
+    display_answer: "Zum Schluss möchte ich das Wichtigste kurz zusammenfassen. Vielen Dank für Ihre Aufmerksamkeit!"
+
+  - key: de:exercise:b1u09l4-tr-thema-vorstellen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-thema
+    prompt:
+      source_text: "Hôm nay mình muốn giới thiệu với các bạn chủ đề hàng xóm. (nói với cả lớp, dùng ihr; chủ đề = das Thema Nachbarschaft)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte euch heute das Thema Nachbarschaft vorstellen.
+        - Heute möchte ich euch das Thema Nachbarschaft vorstellen.
+        - Ich möchte euch heute das Thema Nachbarschaft präsentieren.
+        - Heute möchte ich euch das Thema Nachbarschaft präsentieren.
+    known_wrong:
+      - answer: Ich möchte euch heute das Thema Nachbarschaft zu vorstellen.
+        feedback_vi: Sau möchte không dùng zu – … vorstellen.
+        error_tag: zu_infinitive
+      - answer: Ich möchte heute euch vorstellen das Thema Nachbarschaft.
+        feedback_vi: Nguyên thể vorstellen đứng cuối câu; đại từ euch thường đứng ngay sau ich.
+        error_tag: word_order
+      - answer: Ich möchte Ihnen heute das Thema Nachbarschaft vorstellen.
+        feedback_vi: Đề yêu cầu nói với cả lớp bằng ihr – dùng euch (Ihnen là dạng lịch sự Sie).
+        error_tag: register_du_sie
+    explanation:
+      vi: "jemandem etwas vorstellen: người nghe ở Dativ (euch), chủ đề ở Akkusativ (das Thema Nachbarschaft). möchte ở vị trí 2, vorstellen ở cuối câu."
+    display_answer: Ich möchte euch heute das Thema Nachbarschaft vorstellen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u09l4-wb-naechster-punkt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-praesentation-redemittel
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đến đây tôi chuyển sang ý tiếp theo.\""
+      tokens:
+        - { id: p-punkt, text: Punkt }
+        - { id: p-ich, text: ich }
+        - { id: p-damit, text: Damit }
+        - { id: p-naechsten, text: nächsten }
+        - { id: p-komme, text: komme }
+        - { id: p-zum, text: zum }
+    answer:
+      orders:
+        - [p-damit, p-komme, p-ich, p-zum, p-naechsten, p-punkt]
+    explanation:
+      vi: "Damit đứng ở vị trí 1 nên động từ komme ở vị trí 2, sau đó là chủ ngữ ich. zum = zu dem (der Punkt, Dativ): zum nächsten Punkt."
+    display_answer: Damit komme ich zum nächsten Punkt.
+
+  - key: de:exercise:b1u09l4-mcq-nachfragen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-publikum
+    prompt:
+      stem: "Sau bài trình bày, một người trong số người nghe hỏi một câu bạn chưa hiểu rõ. Bạn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: q2a, text: "Entschuldigung, könnten Sie die Frage bitte wiederholen?", lang: de }
+        - { id: q7b, text: "Das ist keine gute Frage.", lang: de }
+        - { id: q4c, text: "Ich komme jetzt zum Schluss.", lang: de }
+        - { id: q9d, text: "Vielen Dank für Ihre Aufmerksamkeit.", lang: de }
+    answer:
+      correct_option_id: q2a
+    explanation:
+      vi: "Khi chưa hiểu câu hỏi, hãy hỏi lại lịch sự bằng Könnten Sie … bitte wiederholen? Chê câu hỏi là bất lịch sự; hai câu còn lại dùng để kết thúc bài nói, không phải để trả lời câu hỏi."
+    display_answer: Entschuldigung, könnten Sie die Frage bitte wiederholen?
+
+  - key: de:exercise:b1u09l4-tr-selbst-erlebt
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u09-g-praesentation-redemittel
+    prompt:
+      source_text: Ich habe selbst erlebt, dass Nachbarn sich gegenseitig helfen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chính tôi đã chứng kiến hàng xóm giúp đỡ lẫn nhau.
+        - Chính tôi đã chứng kiến những người hàng xóm giúp đỡ lẫn nhau.
+        - Bản thân tôi đã chứng kiến hàng xóm giúp đỡ lẫn nhau.
+        - Bản thân tôi đã trải nghiệm việc hàng xóm giúp đỡ lẫn nhau.
+        - Tôi đã tự mình chứng kiến hàng xóm giúp đỡ lẫn nhau.
+        - Tôi đã tận mắt chứng kiến hàng xóm giúp đỡ lẫn nhau.
+        - Chính tôi đã thấy hàng xóm giúp đỡ lẫn nhau.
+        - Tôi đã tự mình trải qua việc hàng xóm giúp đỡ nhau.
+        - Chính tôi đã chứng kiến hàng xóm giúp đỡ nhau.
+        - Bản thân tôi đã thấy hàng xóm giúp nhau.
+        - Chính tôi đã trải nghiệm rằng hàng xóm giúp đỡ lẫn nhau.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đã giúp đỡ hàng xóm của mình.
+        feedback_vi: "Câu gốc nói hàng xóm giúp đỡ lẫn nhau (sich gegenseitig), không phải tôi giúp hàng xóm."
+        error_tag: meaning
+    explanation:
+      vi: "Ich habe selbst erlebt, dass … = chính tôi đã trải nghiệm/chứng kiến rằng … (câu kể kinh nghiệm trong bài trình bày). sich gegenseitig helfen = giúp đỡ lẫn nhau."
+    display_answer: Chính tôi đã chứng kiến hàng xóm giúp đỡ lẫn nhau.

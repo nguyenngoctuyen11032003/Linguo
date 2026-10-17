@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b1u09-politik-wahl
+order_index: 3
+level: b1
+title:
+  vi: Chính trị dễ hiểu – câu so sánh (Die Wahl war knapper, als man dachte.)
+objectives:
+  - vi: Đọc hiểu một bản tin bầu cử đơn giản.
+  - vi: So sánh kỳ vọng và thực tế bằng câu so sánh – knapper, als man dachte; nicht so …, wie …; wie erwartet.
+  - vi: Biết các từ cơ bản về nhà nước và bầu cử, và khung chính trị của Đức, Áo, Thụy Sĩ.
+estimated_minutes: 19
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b1u09-nachbarschaft]
+items:
+  - item: de:item:b1u09-g-vergleichssatz
+  - item: de:item:b1u09-politik
+  - item: de:item:b1u09-wahl
+  - item: de:item:b1u09-waehlen
+  - item: de:item:b1u09-partei
+  - item: de:item:b1u09-regierung
+  - item: de:item:b1u09-buerger
+  - item: de:item:b1u09-demokratie
+  - item: de:item:b1u09-recht
+  - item: de:item:b1u09-pflicht
+  - item: de:item:b1u09-stimme
+  - item: de:item:b1u09-mehrheit
+  - item: de:item:b1u09-politiker
+  - item: de:item:b1u09-politisch
+  - item: de:item:b1u09-knapp
+  - item: de:item:b1u09-erwarten
+  - item: de:item:a1u07-g-komparativ
+    role: reuse
+  - item: de:item:b1u09-g-zu-infinitiv-dass
+    role: reuse
+  - item: de:item:b1u06-g-futur-i
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc được một bản tin bầu cử ngắn và so sánh kỳ vọng với kết quả, ví dụ: \"Die Wahl war knapper, als viele gedacht hatten. Wie erwartet hat die Kandidatin gewonnen.\""
+  - type: explain
+    text:
+      vi: "Ở A1 bạn đã so sánh với một danh từ: größer als Berlin. Khi phần sau là cả một câu, als mở đầu câu phụ: động từ chia đứng cuối và trước als có dấu phẩy – Die Wahl war knapper, als viele gedacht hatten."
+  - type: explain
+    text:
+      vi: "Để nói \"(không) … bằng\" với một câu, dùng so + tính từ + wie + câu phụ: Es war nicht so schwer, wie ich dachte. Cách nói cố định: so schnell, wie es geht = nhanh nhất có thể (cũng nói so schnell wie möglich)."
+  - type: explain
+    text:
+      vi: "Không có động từ thì không cần dấu phẩy: besser als erwartet, wie erwartet, anders als gedacht. Trong văn nói một số vùng có \"besser wie\", nhưng tiếng Đức chuẩn sau so sánh hơn dùng als."
+  - type: explain
+    text:
+      vi: "Đức là nhà nước liên bang gồm 16 bang (Bundesländer), quốc hội liên bang là der Bundestag; Áo có 9 bang; Thụy Sĩ có 26 bang (Kantone), và người dân Thụy Sĩ thường bỏ phiếu trực tiếp về nhiều vấn đề. Các quy định cụ thể về bầu cử (tuổi được bầu, cách bỏ phiếu) có thể thay đổi, nên khi cần hãy xem thông tin chính thức."
+  - type: deep_explain
+    text:
+      vi: "Thì trong câu als/wie đi theo thời điểm của kỳ vọng: als ich dachte (Präteritum), als ich gedacht habe (Perfekt, văn nói) hoặc als ich gedacht hatte (Plusquamperfekt – kỳ vọng có trước kết quả). Các cách so sánh hay gặp trong tin tức: mehr Menschen, als man erwartet hatte; weniger, als viele befürchtet hatten; genauso knapp wie beim letzten Mal; anders, als die Umfragen gezeigt hatten. Đừng nhầm als so sánh với als thời gian (Als ich ein Kind war …) – hãy nhìn xem trước nó có so sánh hơn hay không. Khi đọc tin bầu cử, chú ý từ chỉ mức độ: knapp (sát nút), deutlich (rõ rệt), die Mehrheit (đa số). Ở Đức, đi bầu là quyền chứ không phải nghĩa vụ, và lá phiếu là bí mật – hỏi người khác đã bầu cho ai thường bị coi là tế nhị."
+  - type: example
+    target: Die Wahl war knapper, als viele gedacht hatten.
+    target_lang: de
+    translation:
+      vi: Cuộc bầu cử sát nút hơn nhiều người đã nghĩ.
+    note:
+      vi: "knapp → knapper (so sánh hơn) + als + câu phụ; động từ hatten đứng cuối."
+  - type: example
+    target: Das Ergebnis war nicht so schlecht, wie die Zeitungen geschrieben hatten.
+    target_lang: de
+    translation:
+      vi: Kết quả không tệ như báo chí đã viết.
+    note:
+      vi: "nicht so + tính từ nguyên dạng + wie + câu phụ; trước wie có dấu phẩy vì sau đó là cả một câu."
+  - type: example
+    target: Wie erwartet hat die Mehrheit für das neue Schwimmbad gestimmt.
+    target_lang: de
+    translation:
+      vi: Đúng như dự đoán, đa số đã bỏ phiếu ủng hộ bể bơi mới.
+    note:
+      vi: "wie erwartet không có động từ chia nên không cần dấu phẩy; cả cụm đứng đầu câu nên hat ở vị trí 2."
+  - type: example
+    target: In Deutschland ist Wählen ein Recht, aber keine Pflicht.
+    target_lang: de
+    translation:
+      vi: Ở Đức, đi bầu là quyền chứ không phải nghĩa vụ.
+    note:
+      vi: "das Wählen (danh từ hoá từ wählen) viết hoa. Recht và Pflicht là hai từ hay đi cặp: Rechte und Pflichten."
+  - type: example
+    target: Jeder Mensch hat das Recht, seine Meinung frei zu sagen.
+    target_lang: de
+    translation:
+      vi: Mỗi người đều có quyền tự do nói lên ý kiến của mình.
+    note:
+      vi: "das Recht, … zu + nguyên thể (ôn bài 1): người nói ý kiến chính là chủ ngữ jeder Mensch."
+  - type: example
+    target: Die nächste Wahl wird wahrscheinlich knapper werden, als viele denken.
+    target_lang: de
+    translation:
+      vi: Cuộc bầu cử tới có lẽ sẽ sát nút hơn nhiều người nghĩ.
+    note:
+      vi: "Futur I (werden + nguyên thể, ôn B1U06) kết hợp với câu so sánh: knapper werden, als …"
+  - type: common_mistake
+    wrong: Das Ergebnis war besser wie ich dachte.
+    right: Das Ergebnis war besser, als ich dachte.
+    target_lang: de
+    note:
+      vi: "Sau so sánh hơn, tiếng Đức chuẩn dùng als (besser wie chỉ là khẩu ngữ vùng miền); trước câu phụ cần dấu phẩy."
+  - type: common_mistake
+    wrong: Die Wahl war knapper, als ich habe gedacht.
+    right: Die Wahl war knapper, als ich gedacht habe.
+    target_lang: de
+    note:
+      vi: "als mở đầu câu phụ nên động từ chia (habe) đứng cuối, sau Partizip gedacht."
+  - type: common_mistake
+    wrong: Die Wahl war mehr knapp, als man dachte.
+    right: Die Wahl war knapper, als man dachte.
+    target_lang: de
+    note:
+      vi: "Tiếng Đức tạo so sánh hơn bằng đuôi -er (knapper), không dùng mehr như \"hơn\" trong tiếng Việt."
+  - type: summary
+    points:
+      - vi: "So sánh hơn + als + câu phụ (động từ cuối): knapper, als viele gedacht hatten."
+      - vi: "(nicht) so + tính từ + wie + câu phụ: nicht so schwer, wie ich dachte."
+      - vi: "Không có động từ → không dấu phẩy: besser als erwartet, wie erwartet."
+      - vi: "Chuẩn: besser als (không phải besser wie)."
+      - vi: "Từ vựng: die Politik, die Wahl, wählen, die Partei, die Regierung, der Bürger, die Demokratie, das Recht, die Pflicht."
+      - vi: "Đức 16 bang (Bundestag), Áo 9 bang, Thụy Sĩ 26 Kantone và dân chủ trực tiếp."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b1u09l3-mcq-lesen-knapp
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-knapp
+    prompt:
+      stem: "Bürgermeisterwahl: Das Ergebnis war knapper, als viele erwartet hatten. Die Kandidatin Anna Keller bekam 50,8 Prozent der Stimmen, ihr Gegenkandidat Peter Brandt 49,2 Prozent. Es sind mehr Bürgerinnen und Bürger wählen gegangen als bei der letzten Wahl. Am Abend sagte Frau Keller: Ich freue mich sehr, aber es war nicht so leicht, wie manche gedacht haben. — Richtig oder falsch? Anna Keller hat mit großem Abstand gewonnen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Das Ergebnis war knapper, als viele erwartet hatten – kết quả sát nút hơn dự đoán: 50,8 so với 49,2 phần trăm. mit großem Abstand = cách biệt lớn, nên câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b1u09l3-mcq-lesen-mehr-waehler
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-waehlen
+    prompt:
+      stem: "Bürgermeisterwahl: Das Ergebnis war knapper, als viele erwartet hatten. Die Kandidatin Anna Keller bekam 50,8 Prozent der Stimmen, ihr Gegenkandidat Peter Brandt 49,2 Prozent. Es sind mehr Bürgerinnen und Bürger wählen gegangen als bei der letzten Wahl. Am Abend sagte Frau Keller: Ich freue mich sehr, aber es war nicht so leicht, wie manche gedacht haben. — Richtig oder falsch? Dieses Mal haben mehr Menschen gewählt als bei der letzten Wahl."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Es sind mehr Bürgerinnen und Bürger wählen gegangen als bei der letzten Wahl – nhiều người đi bầu hơn lần trước. wählen gehen và wählen cùng nghĩa ở đây, nên câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b1u09l3-mcq-als-wie
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u09-g-vergleichssatz
+    prompt:
+      stem: "Chọn từ đúng: Die Wahl war knapper, ___ viele gedacht hatten."
+      stem_lang: vi
+      options:
+        - { id: a2a, text: "als", lang: de }
+        - { id: a6b, text: "wie", lang: de }
+        - { id: a9c, text: "dass", lang: de }
+        - { id: a4d, text: "wenn", lang: de }
+    answer:
+      correct_option_id: a2a
+    explanation:
+      vi: "Trước ô trống là so sánh hơn knapper, nên dùng als. wie dùng sau so + tính từ nguyên dạng (so knapp, wie …); besser wie chỉ là khẩu ngữ vùng miền. dass và wenn không dùng để so sánh."
+    display_answer: als
+
+  - key: de:exercise:b1u09l3-listen-erwartet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b1u09-erwarten
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wie erwartet hat die Kandidatin gewonnen. Aber das Ergebnis war viel knapper, als man dachte.
+      options:
+        - { id: e1a, text: "Đúng như dự đoán, nữ ứng cử viên đã thắng, nhưng kết quả sát nút hơn nhiều so với người ta nghĩ.", lang: vi }
+        - { id: e5b, text: "Trái với dự đoán, nữ ứng cử viên đã thắng với cách biệt lớn.", lang: vi }
+        - { id: e8c, text: "Đúng như dự đoán, nữ ứng cử viên đã thua sát nút.", lang: vi }
+        - { id: e3d, text: "Nữ ứng cử viên đã thắng, và kết quả đúng như người ta nghĩ.", lang: vi }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "Wie erwartet = đúng như dự đoán; hat … gewonnen = đã thắng. viel knapper, als man dachte = sát nút hơn nhiều so với người ta nghĩ (không phải đúng như người ta nghĩ)."
+    display_answer: Đúng như dự đoán, nữ ứng cử viên đã thắng, nhưng kết quả sát nút hơn nhiều so với người ta nghĩ.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b1u09l3-fill-knapper-als-so
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-vergleichssatz
+    prompt:
+      template: "Die Wahl war {{b1}} (knapp), {{b2}} viele gedacht haben. Und der Wahlabend war nicht {{b3}} langweilig, wie ich befürchtet hatte."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [knapper]
+        b2: [als]
+        b3: [so]
+    known_wrong:
+      - answer: knapp
+        feedback_vi: Có so sánh (… als …) nên cần so sánh hơn – knapper.
+        error_tag: comparative_form
+      - answer: wie
+        feedback_vi: Sau so sánh hơn (knapper), tiếng Đức chuẩn dùng als.
+        error_tag: comparative_form
+      - answer: sehr
+        feedback_vi: Cặp so sánh bằng là so … wie – nicht so langweilig, wie …
+        error_tag: comparative_form
+    explanation:
+      vi: "knapp → knapper; sau so sánh hơn là als + câu phụ (động từ haben ở cuối). So sánh bằng/phủ định: nicht so + tính từ + wie + câu phụ."
+    display_answer: "Die Wahl war knapper, als viele gedacht haben. Und der Wahlabend war nicht so langweilig, wie ich befürchtet hatte."
+
+  - key: de:exercise:b1u09l3-tr-besser-als
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-vergleichssatz
+    prompt:
+      source_text: "Kết quả tốt hơn tôi nghĩ. (das Ergebnis; dùng câu phụ als … dachte)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das Ergebnis war besser, als ich dachte.
+        - Das Ergebnis ist besser, als ich dachte.
+        - Das Ergebnis war besser, als ich gedacht habe.
+        - Das Ergebnis war besser, als ich gedacht hatte.
+        - Das Ergebnis ist besser, als ich gedacht habe.
+        - Das Ergebnis ist besser, als ich gedacht hatte.
+    known_wrong:
+      - answer: Das Ergebnis war besser, wie ich dachte.
+        feedback_vi: Sau so sánh hơn (besser) dùng als, không dùng wie.
+        error_tag: comparative_form
+      - answer: Das Ergebnis war besser, als ich habe gedacht.
+        feedback_vi: "Câu phụ als: động từ chia đứng cuối – als ich gedacht habe."
+        error_tag: verb_position
+      - answer: Das Ergebnis war mehr gut, als ich dachte.
+        feedback_vi: So sánh hơn của gut là besser (bất quy tắc), không dùng mehr gut.
+        error_tag: comparative_form
+    explanation:
+      vi: "gut → besser (bất quy tắc). Sau so sánh hơn: dấu phẩy + als + câu phụ, động từ chia (dachte) đứng cuối."
+    display_answer: Das Ergebnis war besser, als ich dachte.
+
+  - key: de:exercise:b1u09l3-tr-jede-stimme
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-stimme
+    prompt:
+      source_text: "Mỗi lá phiếu đều có giá trị!"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Jede Stimme zählt!
+        - Jede Stimme zählt.
+        - Jede Stimme ist wichtig!
+        - Jede Stimme ist wichtig.
+    known_wrong:
+      - answer: Jeder Stimme zählt!
+        feedback_vi: die Stimme là giống cái – jede Stimme.
+        error_tag: gender
+      - answer: Jede Stimme zählen!
+        feedback_vi: Chủ ngữ jede Stimme là số ít – zählt.
+        error_tag: verb_form
+    explanation:
+      vi: "die Stimme (lá phiếu) giống cái → jede Stimme. zählen ở đây nghĩa là \"có giá trị, được tính\": Jede Stimme zählt."
+    display_answer: Jede Stimme zählt!
+
+  # ---------------- application ----------------
+  - key: de:exercise:b1u09l3-wb-so-schnell-wie
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-g-vergleichssatz
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi đếm phiếu nhanh nhất có thể.\""
+      tokens:
+        - { id: v-geht, text: geht }
+        - { id: v-stimmen, text: Stimmen }
+        - { id: v-wir, text: Wir }
+        - { id: v-wie, text: wie }
+        - { id: v-so, text: so }
+        - { id: v-zaehlen, text: zählen }
+        - { id: v-komma, text: "," }
+        - { id: v-schnell, text: schnell }
+        - { id: v-die, text: die }
+        - { id: v-es, text: es }
+    answer:
+      orders:
+        - [v-wir, v-zaehlen, v-die, v-stimmen, v-so, v-schnell, v-komma, v-wie, v-es, v-geht]
+    explanation:
+      vi: "Câu chính: Wir zählen die Stimmen; so schnell đứng sau tân ngữ; sau dấu phẩy là câu phụ wie es geht với động từ geht ở cuối."
+    display_answer: Wir zählen die Stimmen so schnell, wie es geht.
+
+  - key: de:exercise:b1u09l3-mcq-bundeslaender
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u09-politik
+    prompt:
+      stem: "Câu nào đúng về Đức, Áo và Thụy Sĩ?"
+      stem_lang: vi
+      options:
+        - { id: d3a, text: "Deutschland hat 16 Bundesländer.", lang: de }
+        - { id: d7b, text: "Österreich hat 26 Bundesländer.", lang: de }
+        - { id: d1c, text: "Die Schweiz hat 9 Kantone.", lang: de }
+        - { id: d5d, text: "Deutschland hat 26 Kantone.", lang: de }
+    answer:
+      correct_option_id: d3a
+    explanation:
+      vi: "Đức có 16 bang (Bundesländer), Áo có 9 bang, Thụy Sĩ có 26 bang gọi là Kantone. Từ Kanton chỉ dùng cho Thụy Sĩ."
+    display_answer: Deutschland hat 16 Bundesländer.
+
+  - key: de:exercise:b1u09l3-tr-recht-pflicht
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u09-pflicht
+    prompt:
+      source_text: In Deutschland ist Wählen ein Recht, aber keine Pflicht.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở Đức, đi bầu là quyền chứ không phải nghĩa vụ.
+        - Ở Đức, bầu cử là quyền chứ không phải nghĩa vụ.
+        - Ở Đức, đi bầu là một quyền chứ không phải nghĩa vụ.
+        - Ở Đức, bầu cử là một quyền chứ không phải là nghĩa vụ.
+        - Ở Đức, đi bầu là quyền, nhưng không phải nghĩa vụ.
+        - Ở Đức, bầu cử là quyền, nhưng không phải nghĩa vụ.
+        - Ở Đức, đi bầu là quyền chứ không phải bổn phận.
+        - Ở Đức, bỏ phiếu là quyền chứ không phải nghĩa vụ.
+        - Ở Đức, bỏ phiếu là quyền, nhưng không phải nghĩa vụ.
+        - Tại Đức, đi bầu là quyền chứ không phải nghĩa vụ.
+        - Ở Đức, việc đi bầu là quyền chứ không phải nghĩa vụ.
+        - Ở Đức, đi bầu là quyền chứ không bắt buộc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở Đức, đi bầu là nghĩa vụ chứ không phải quyền.
+        feedback_vi: "Ngược nghĩa: Recht = quyền, Pflicht = nghĩa vụ; keine Pflicht = không phải nghĩa vụ."
+        error_tag: meaning
+    explanation:
+      vi: "das Wählen = việc đi bầu; ein Recht = một quyền; keine Pflicht = không phải nghĩa vụ (không bắt buộc)."
+    display_answer: Ở Đức, đi bầu là quyền chứ không phải nghĩa vụ.
