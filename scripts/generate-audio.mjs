@@ -47,10 +47,11 @@ export const VOICES = {
   en: { single: 'Kore', female: 'Kore', male: 'Charon', a: 'Kore', b: 'Charon' },
   ko: { single: 'Kore', female: 'Kore', male: 'Charon', a: 'Kore', b: 'Charon' },
   ja: { single: 'Kore', female: 'Kore', male: 'Charon', a: 'Kore', b: 'Charon' },
+  de: { single: 'Kore', female: 'Kore', male: 'Charon', a: 'Kore', b: 'Charon' },
 };
 
-const FEMALE = /^(woman|women|female|girl|lady|mother|mom|mum|w|f|여자|여|여성|엄마|어머니|女|女性|女の人|母)$/i;
-const MALE = /^(man|men|male|boy|gentleman|father|dad|m|남자|남|남성|아빠|아버지|男|男性|男の人|父)$/i;
+const FEMALE = /^(woman|women|female|girl|lady|mother|mom|mum|w|f|여자|여|여성|엄마|어머니|女|女性|女の人|母|frau|weiblich|mädchen|mutter|mama|tochter)$/i;
+const MALE = /^(man|men|male|boy|gentleman|father|dad|m|남자|남|남성|아빠|아버지|男|男性|男の人|父|mann|herr|männlich|junge|vater|papa|sohn)$/i;
 
 // ---------------------------------------------------------------------------
 // Pure helpers

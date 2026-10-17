@@ -30,6 +30,7 @@ import {
   parseDialogue,
   parseWav,
   pcmToWav,
+  VOICES,
   planSpeech,
   publicAudioUrl,
   rateLimiter,
@@ -422,4 +423,18 @@ test('main --apply stops on a daily quota and keeps finished work', async () => 
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
+});
+
+test('German (de): voices, gendered dialogue labels, ids and file language', () => {
+  assert.deepEqual(Object.keys(VOICES.de).sort(), Object.keys(VOICES.en).sort());
+  const dialogue = planSpeech('de', 'Frau: Guten Tag, ich möchte einen Tisch reservieren.\nMann: Gern, für wie viele Personen?');
+  assert.equal(dialogue.mode, 'multi');
+  assert.deepEqual(dialogue.speakers.map((s) => [s.label, s.voice]), [['Frau', 'Kore'], ['Mann', 'Charon']]);
+  assert.equal(planSpeech('de', 'Herr: Wie spät ist es?').voice, 'Charon');
+  assert.equal(planSpeech('de', 'Das Wetter ist heute schön.').voiceKey, 'Kore');
+  const id = audioAssetId('de', 'Kore', 'Das Wetter ist heute schön.');
+  assert.match(id, /^de-[0-9a-f]{32}$/);
+  assert.equal(shared.audioAssetLang(id), 'de');
+  assert.equal(fileLang('de/a1/u01/l1.yaml'), 'de');
+  assert.equal(fileLang('exams/de/goethe-a1-mock-1.yaml'), 'de');
 });

@@ -31,7 +31,7 @@ Id đi qua các RPC hiện có mà không cần đổi gì: bài học trả `pr
 
 - Bài học: `exercises[type: listen].prompt.fallback_text`.
 - Đề thi: `questions[section: listening].prompt.script`; ngôn ngữ lấy từ `prompt.stem_lang`.
-- Ngôn ngữ của file: `content/<lang>/…` hoặc `content/exams/<lang>/…`. Ngôn ngữ mới (ví dụ `ja`) chỉ cần thêm vào `VOICES` trong script.
+- Ngôn ngữ của file: `content/<lang>/…` hoặc `content/exams/<lang>/…`. `VOICES` trong script hiện có en, ko, ja, de (de: nhãn người nói Frau/Mann/Herr… được nhận ra như Woman/Man); ngôn ngữ mới chỉ cần thêm một mục vào `VOICES`.
 
 Hội thoại dạng `Nhãn: lời thoại` trên mọi dòng được đọc bằng nhiều giọng: hai người nói dùng chế độ multi-speaker của Gemini (tối đa hai giọng), nhãn nữ (`Woman`, `여자`, `女`…) dùng giọng nữ, nhãn nam dùng giọng nam, nhãn khác thì gán A/B theo thứ tự xuất hiện. Một người nói: một giọng theo nhãn, bỏ nhãn khi đọc. Từ ba người trở lên: một giọng, bỏ nhãn. Văn bản không có nhãn: đọc nguyên văn bằng giọng mặc định.
 
