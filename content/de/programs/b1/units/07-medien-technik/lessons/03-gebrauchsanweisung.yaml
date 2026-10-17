@@ -307,6 +307,9 @@ exercises:
         - Das Gerät ist ausgeschaltet, also kannst du den Stecker ziehen.
         - Das Gerät ist ausgeschaltet, du kannst den Stecker herausziehen.
         - Das Gerät ist schon ausgeschaltet, du kannst den Stecker herausziehen.
+        - Das Gerät ist schon ausgeschaltet, du kannst jetzt den Stecker ziehen.
+        - Das Gerät ist schon ausgeschaltet, also kannst du den Stecker ziehen.
+        - Das Gerät ist jetzt ausgeschaltet, du kannst den Stecker herausziehen.
     known_wrong:
       - answer: Das Gerät wird ausgeschaltet, du kannst den Stecker ziehen.
         feedback_vi: wird ausgeschaltet là quá trình (đang được tắt). Máy đã tắt rồi là trạng thái – ist ausgeschaltet.

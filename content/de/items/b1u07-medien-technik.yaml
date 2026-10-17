@@ -516,7 +516,7 @@ items:
           translation:
             vi: Bạn có hoạt động trên mạng xã hội nào không?
       confusion:
-        vi: "sozial đổi đuôi như mọi tính từ: in den sozialen Netzwerken, in einem sozialen Netzwerk. Trong khẩu ngữ người ta cũng nói die sozialen Medien hoặc Social Media."
+        vi: "sozial đổi đuôi như mọi tính từ: in den sozialen Netzwerken, in einem sozialen Netzwerk. Người ta cũng hay nói die sozialen Medien hoặc Social Media."
 
   - key: de:item:b1u07-abhaengig
     type: vocab
@@ -642,7 +642,7 @@ items:
           translation:
             vi: Tôi đã tắt thông báo của ứng dụng này.
       confusion:
-        vi: "die Benachrichtigung là thông báo tự động của máy; die Nachricht là tin nhắn hoặc tin tức. Danh từ đuôi -ung là giống cái."
+        vi: "die Benachrichtigung là thông báo tự động của máy; die Nachricht là tin nhắn hoặc tin tức. Danh từ nhiều âm tiết đuôi -ung là giống cái."
 
   # Từ bổ sung (Zusatzwortschatz) bài 2 – trường thói quen số
   - key: de:item:b1u07-surfen
@@ -741,14 +741,14 @@ items:
       meaning:
         vi: im lặng, không tiếng; (điện thoại) ở chế độ im lặng
       examples:
-        - target: Im Kino stelle ich mein Handy lautlos.
+        - target: Im Kino stelle ich mein Handy auf lautlos.
           translation:
             vi: Trong rạp chiếu phim tôi để điện thoại ở chế độ im lặng.
-        - target: Mein Handy war lautlos, deshalb habe ich deinen Anruf nicht gehört.
+        - target: Mein Handy war auf lautlos gestellt, deshalb habe ich deinen Anruf nicht gehört.
           translation:
             vi: Điện thoại mình để im lặng nên mình không nghe thấy bạn gọi.
       confusion:
-        vi: "Hậu tố -los = không có: lautlos = không có tiếng. Đừng nhầm với leise (nhỏ tiếng nhưng vẫn có tiếng)."
+        vi: "Hậu tố -los = không có: lautlos = không có tiếng. Với điện thoại: das Handy auf lautlos stellen hoặc das Handy stumm schalten. Đừng nhầm với leise (nhỏ tiếng nhưng vẫn có tiếng)."
 
   - key: de:item:b1u07-ablenkung
     type: vocab
@@ -769,7 +769,7 @@ items:
           translation:
             vi: Sau giờ làm tôi cần giải khuây một chút.
       confusion:
-        vi: "Danh từ của ablenken; đuôi -ung là giống cái."
+        vi: "Danh từ của ablenken; danh từ nhiều âm tiết đuôi -ung là giống cái."
 
   - key: de:item:b1u07-reagieren
     type: vocab
@@ -1294,7 +1294,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "gegen + giờ và um … herum đều có nghĩa là khoảng (giờ đó): gegen acht Uhr, um acht Uhr herum. Anfang, Mitte, Ende đứng thẳng trước tên tháng, không có giới từ: Anfang Mai, Mitte Mai, Ende Mai. ab sofort = kể từ bây giờ; innerhalb von + Dativ = trong vòng: innerhalb von zwei Tagen."
+        vi: "gegen + giờ và um … herum đều có nghĩa là khoảng (giờ đó): gegen acht Uhr, um acht Uhr herum. Anfang, Mitte, Ende đứng thẳng trước tên tháng, không có mạo từ và không cần giới từ: Anfang Mai, Mitte Mai, Ende Mai (chỉ thêm ab/bis/seit khi cần nghĩa từ/đến: bis Ende Mai). ab sofort = kể từ bây giờ; innerhalb von + Dativ = trong vòng: innerhalb von zwei Tagen."
       examples:
         - target: Der Unfall passierte gegen acht Uhr.
           translation:

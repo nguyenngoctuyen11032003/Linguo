@@ -66,7 +66,7 @@ body:
       vi: "Khi nghe tin vắn, bạn thường chỉ được nghe một lần. Hãy đọc câu hỏi trước, rồi tập trung vào một ý: giờ (gegen acht Uhr), ngày (ab Donnerstag, Mitte Juni) hay địa điểm."
   - type: explain
     text:
-      vi: "Bình luận trên diễn đàn gồm: nêu ý kiến (Meiner Meinung nach …, Ich bin der Meinung, dass …), lý do và ví dụ, và một câu kết luận (Deshalb …). Cặp einerseits … andererseits (một mặt … mặt khác) giúp so sánh hai phía. Dùng thêm während, sobald, solange để câu văn mạch lạc và đạt mức B1."
+      vi: "Bình luận trên diễn đàn gồm: nêu ý kiến (Meiner Meinung nach …, Ich bin der Meinung, dass …), lý do và ví dụ, và một câu kết luận (Deshalb …). Cặp einerseits … andererseits (một mặt … mặt khác) bạn chỉ cần nhận ra khi đọc (sẽ học kỹ ở B2). Dùng thêm während, sobald, solange để câu văn mạch lạc và đạt mức B1."
   - type: explain
     text:
       vi: "Sau Meiner Meinung nach, động từ đứng ngay ở vị trí 2: Meiner Meinung nach sind soziale Netzwerke nützlich. Không nói Meiner Meinung nach ich finde … – đó là lỗi người Việt rất hay mắc."
@@ -74,7 +74,7 @@ body:
     text:
       vi: "Theo cấu trúc tại thời điểm soạn bài, phần Schreiben của Goethe-Zertifikat B1 có một nhiệm vụ viết bài diễn đàn khoảng 80 từ để nêu ý kiến về một chủ đề; cấu trúc, số từ và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Bài viết nên trả lời đúng chủ đề, có ý kiến rõ ràng và ít nhất một lý do hoặc ví dụ. Trong phần Hören, tin vắn và thông báo thường có số, giờ và ngày; hãy ghi nhanh bằng chữ số khi nghe. Khi bình luận về công nghệ, nên viết theo kinh nghiệm của mình (Ich selbst …, Bei mir …) thay vì đưa ra con số mà bạn không chắc chắn."
   - type: example
-    target: "Meiner Meinung nach haben soziale Netzwerke Vor- und Nachteile. Einerseits kann man leicht mit Freunden in Kontakt bleiben, die weit weg wohnen. Andererseits sind viele Menschen ständig online und werden von Benachrichtigungen abgelenkt. Deshalb finde ich ein Handyverbot im Unterricht richtig, solange die Schüler in den Pausen erreichbar sind. Ich selbst stelle mein Handy lautlos, während ich arbeite. Und bevor ich eine Meldung teile, prüfe ich immer die Quelle."
+    target: "Meiner Meinung nach haben soziale Netzwerke Vor- und Nachteile. Einerseits kann man leicht mit Freunden in Kontakt bleiben, die weit weg wohnen. Andererseits sind viele Menschen ständig online und werden von Benachrichtigungen abgelenkt. Deshalb finde ich ein Handyverbot im Unterricht richtig, solange die Schüler in den Pausen erreichbar sind. Ich selbst stelle mein Handy auf lautlos, während ich arbeite. Und bevor ich eine Meldung teile, prüfe ich immer die Quelle."
     target_lang: de
     translation:
       vi: "Theo tôi, mạng xã hội có cả ưu điểm lẫn nhược điểm. Một mặt, người ta dễ dàng giữ liên lạc với những người bạn sống ở xa. Mặt khác, nhiều người lúc nào cũng online và bị các thông báo làm sao nhãng. Vì vậy tôi thấy cấm điện thoại trong giờ học là đúng, miễn là học sinh vẫn liên lạc được trong giờ ra chơi. Bản thân tôi để điện thoại im lặng trong khi làm việc. Và trước khi chia sẻ một tin, tôi luôn kiểm tra nguồn."
@@ -107,16 +107,16 @@ body:
     note:
       vi: "Trong văn viết chuẩn, giới từ während đi với Genitiv: während des Unterrichts. während dem chỉ gặp trong khẩu ngữ."
   - type: common_mistake
-    wrong: In Mitte Juni gibt es kostenloses WLAN.
-    right: Ab Mitte Juni gibt es kostenloses WLAN.
+    wrong: Die Bibliothek bekommt in Mitte Juni kostenloses WLAN.
+    right: Die Bibliothek bekommt Mitte Juni kostenloses WLAN.
     target_lang: de
     note:
-      vi: "Mitte + tháng không đi với in. Muốn nói \"từ giữa tháng Sáu\" thì dùng ab Mitte Juni."
+      vi: "Mitte + tháng không đi với in: Mitte Juni. Chỉ khi muốn nói \"từ giữa tháng Sáu\" mới thêm ab: ab Mitte Juni."
   - type: summary
     points:
       - vi: "Đọc: tít + câu đầu → chủ đề; richtig/falsch: so ai, khi nào, bao nhiêu (alle ↔ manche)."
       - vi: "Nghe tin vắn: đọc câu hỏi trước, bắt giờ, ngày, địa điểm."
-      - vi: "Bình luận: Meiner Meinung nach + động từ; Einerseits … andererseits …; Deshalb …; Ich selbst …"
+      - vi: "Bình luận: Meiner Meinung nach + động từ; Deshalb …; Ich selbst …; nhận biết Einerseits … andererseits …"
       - vi: "Ôn ngữ pháp: das klingelnde Handy / die gespeicherten Daten; während, sobald, solange; ist eingeschaltet; beim Laden; gegen acht Uhr, Mitte Mai."
 exercises:
   # ---------------- recognition: đọc (kiểu Lesen) ----------------

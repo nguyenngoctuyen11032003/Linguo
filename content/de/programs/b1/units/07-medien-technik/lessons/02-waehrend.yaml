@@ -44,7 +44,7 @@ items:
 body:
   - type: objective
     text:
-      vi: "Sau bài này, bạn kể được về thói quen số của mình, ví dụ: \"Während ich koche, höre ich Musik. Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy. Aber solange ich arbeite, ist mein Handy lautlos.\""
+      vi: "Sau bài này, bạn kể được về thói quen số của mình, ví dụ: \"Während ich koche, höre ich Musik. Sobald ich eine Benachrichtigung bekomme, schaue ich aufs Handy. Aber solange ich arbeite, stelle ich mein Handy auf lautlos.\""
   - type: explain
     text:
       vi: "während có thể mở đầu một câu phụ, và như mọi câu phụ, động từ chia đứng cuối: Während ich koche, … Nghĩa thường gặp nhất là hai việc diễn ra cùng lúc (trong khi): Während ich koche, höre ich Musik. Câu phụ đứng đầu chiếm vị trí 1, nên động từ câu chính đứng ngay sau dấu phẩy."
@@ -259,7 +259,7 @@ exercises:
         b2: [lerne]
     known_wrong:
       - answer: dem
-        feedback_vi: Giới từ während trong văn viết chuẩn đi với Genitiv – während des Unterrichts (während dem chỉ là khẩu ngữ).
+        feedback_vi: Unterrichts có đuôi -s của Genitiv, nên mạo từ phải là des – während des Unterrichts. Trong văn viết chuẩn, giới từ während đi với Genitiv (während dem Unterricht chỉ là khẩu ngữ).
         error_tag: preposition
       - answer: den
         feedback_vi: Giới từ während đi với Genitiv, không đi với Akkusativ – während des Unterrichts.

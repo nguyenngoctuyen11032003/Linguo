@@ -59,13 +59,13 @@ body:
       vi: "gegen + giờ nghĩa là khoảng giờ đó: gegen acht Uhr = khoảng tám giờ. um … herum cũng có nghĩa gần đúng: um acht Uhr herum; còn um acht Uhr (không có herum) là đúng tám giờ. Tin tức thường dùng gegen khi chưa biết giờ chính xác."
   - type: explain
     text:
-      vi: "Anfang, Mitte, Ende đứng thẳng trước tên tháng, không có giới từ và mạo từ: Anfang Mai, Mitte Mai, Ende Mai. Tiếng Việt nói \"vào giữa tháng Năm\", nhưng tiếng Đức không có từ tương ứng với \"vào\". Nếu sau đó là danh từ có mạo từ thì dùng Genitiv: Ende des Monats, Anfang der Woche."
+      vi: "Anfang, Mitte, Ende đứng thẳng trước tên tháng, không có mạo từ và không cần giới từ: Anfang Mai, Mitte Mai, Ende Mai (tiếng Việt nói \"vào giữa tháng Năm\", nhưng tiếng Đức không có từ ứng với \"vào\"). Chỉ khi cần nghĩa \"từ\", \"đến\", \"kể từ\" mới thêm ab, bis, seit: ab Mitte Mai, bis Ende Juni. Nếu sau đó là danh từ có mạo từ thì dùng Genitiv: Ende des Monats, Anfang der Woche."
   - type: explain
     text:
       vi: "ab sofort = kể từ bây giờ (Ab sofort gilt eine neue Regel). innerhalb von + Dativ = trong vòng: innerhalb von zwei Stunden. Bạn đã học ab Montag, seit Montag, bis Freitag; các mốc này hay đi cùng nhau trong tin tức."
   - type: explain
     text:
-      vi: "Tin trên radio và TV thường dùng Präteritum (passierte, kam, sagte) và câu bị động (wurde verletzt). Giờ được đọc theo hệ 24 giờ: 21.15 Uhr = einundzwanzig Uhr fünfzehn. Khi nghe, chỉ cần bắt bốn ý: Wer? Was? Wann? Wo?"
+      vi: "Tin trên radio và TV thường mở đầu bằng Perfekt (ist … ausgebrochen), rồi kể tiếp bằng Präteritum (passierte, kam, sagte) và câu bị động (wurde verletzt). Giờ được đọc theo hệ 24 giờ: 21.15 Uhr = einundzwanzig Uhr fünfzehn. Khi nghe, chỉ cần bắt bốn ý: Wer? Was? Wann? Wo?"
   - type: explain
     text:
       vi: "Khi kể lại tin cho bạn bè, người Đức thường chuyển sang Perfekt: In den Nachrichten haben sie gesagt, dass … Câu mở đầu hay dùng: Hast du schon gehört? In den Nachrichten ging es heute um …"
@@ -142,7 +142,7 @@ body:
   - type: summary
     points:
       - vi: "gegen acht Uhr, um acht Uhr herum = khoảng tám giờ; um acht Uhr = đúng tám giờ."
-      - vi: "Anfang/Mitte/Ende Mai: không giới từ, không mạo từ; có mạo từ thì dùng Genitiv (Ende des Monats)."
+      - vi: "Anfang/Mitte/Ende Mai: không mạo từ, không cần giới từ (chỉ thêm ab/bis/seit khi cần: bis Ende Juni); có mạo từ thì dùng Genitiv (Ende des Monats)."
       - vi: "ab sofort = kể từ bây giờ; innerhalb von + Dativ = trong vòng."
       - vi: "Tin tức: Präteritum, bị động, giờ 24 giờ (21.15 Uhr = einundzwanzig Uhr fünfzehn)."
       - vi: "Nghe tin: Wer? Was? Wann? Wo? Kể lại: Perfekt, In den Nachrichten ging es um …"
@@ -294,7 +294,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u07-g-zeitangaben-praezise
     prompt:
-      source_text: "Kể từ bây giờ, cửa hàng mở cửa đến 20 giờ. (cửa hàng = das Geschäft)"
+      source_text: "Kể từ bây giờ, cửa hàng mở cửa đến 20 giờ. (dùng ab sofort; cửa hàng = das Geschäft)"
       source_lang: vi
       direction: vi_to_target
     answer:
