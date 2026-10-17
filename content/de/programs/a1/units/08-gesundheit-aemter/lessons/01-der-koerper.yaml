@@ -57,10 +57,10 @@ body:
       vi: "sollen dùng khi bạn nhắc lại điều người khác dặn, yêu cầu: Der Arzt sagt, ich soll im Bett bleiben. Chia như các modal đã học: ich soll, du sollst, er soll (ngôi ich và er không có đuôi), động từ chính ở nguyên thể cuối câu."
   - type: explain
     text:
-      vi: "Đừng dịch sollen là \"nên\": soll gần với \"bảo, dặn là phải\" (Bác sĩ bảo tôi phải nằm nghỉ). Lời khuyên \"nên\" là sollte, bạn học ở A2; müssen là \"phải\" vì bắt buộc, không cần ai dặn."
+      vi: "Khi kể lại lời dặn, đừng dịch soll là \"nên\": soll gần với \"được bảo, được dặn là phải\" (Bác sĩ bảo tôi phải nằm nghỉ). Lời khuyên \"nên\" là sollte, bạn học ở A2. müssen cũng là \"phải\", nhưng nói về sự bắt buộc nói chung, không nhấn mạnh ai yêu cầu."
   - type: deep_explain
     text:
-      vi: "Trong câu Der Arzt sagt, ich soll …, phần sau dấu phẩy là một câu chính bình thường (soll ở vị trí 2), không cần dass. Câu hỏi Soll ich …? dùng khi bạn hỏi người khác muốn mình làm gì: Soll ich morgen wiederkommen? = Tôi có cần mai quay lại không? Ngoài Mir tut der Kopf weh, người Đức cũng rất hay nói Ich habe Kopfschmerzen (đau đầu), Bauchschmerzen, Rückenschmerzen – từ ghép với Schmerzen (cơn đau); Mein Kopf tut weh cũng đúng. Chú ý tiếng Việt gọi chung là \"chân\", \"tay\", còn tiếng Đức tách ra: das Bein (cả chân) – der Fuß (bàn chân), der Arm (cánh tay) – die Hand (bàn tay)."
+      vi: "Trong câu Der Arzt sagt, ich soll …, phần sau dấu phẩy là một câu chính bình thường (soll ở vị trí 2), không cần dass. Câu hỏi Soll ich …? dùng khi bạn hỏi người khác muốn mình làm gì: Soll ich morgen wiederkommen? = Tôi có cần mai quay lại không? (ở câu hỏi này, tiếng Việt cũng có thể nói \"có nên\"). Ngoài Mir tut der Kopf weh, người Đức cũng rất hay nói Ich habe Kopfschmerzen (đau đầu), Bauchschmerzen, Rückenschmerzen – từ ghép với Schmerzen (cơn đau); Mein Kopf tut weh cũng đúng. Chú ý tiếng Việt gọi chung là \"chân\", \"tay\", còn tiếng Đức tách ra: das Bein (cả chân) – der Fuß (bàn chân), der Arm (cánh tay) – die Hand (bàn tay)."
   - type: example
     target: Mir tut der Kopf weh.
     target_lang: de
@@ -134,7 +134,7 @@ body:
       - vi: "Mir tut der Kopf weh. – Mir tun die Füße weh. (chỗ đau là chủ ngữ, người ở Dativ)"
       - vi: "Was tut dir weh? (bạn bè) – Was tut Ihnen weh? (lịch sự)"
       - vi: "sollen: ich soll, du sollst, er soll, wir sollen, ihr sollt, sie/Sie sollen + nguyên thể cuối câu."
-      - vi: "sollen = được dặn, được yêu cầu (Der Arzt sagt, ich soll …), không phải \"nên\"."
+      - vi: "sollen = được dặn, được yêu cầu (Der Arzt sagt, ich soll …); lời khuyên \"nên\" là sollte (A2)."
 exercises:
   # ---------------- recognition ----------------
   - key: de:exercise:a1u08l1-mcq-kopf-weh
@@ -273,7 +273,7 @@ exercises:
     known_wrong:
       - answer: Ich tue Rücken weh.
         feedback_vi: "Chỗ đau là chủ ngữ, người đau ở Dativ: Mir tut der Rücken weh."
-        error_tag: wehtun_pattern
+        error_tag: case_dat_akk
       - answer: Mich tut der Rücken weh.
         feedback_vi: "wehtun cần Dativ: mir, không phải mich."
         error_tag: case_dat_akk
@@ -380,15 +380,23 @@ exercises:
         - Mẹ tôi nói tôi gọi điện cho bác sĩ.
         - Mẹ mình bảo mình gọi điện cho bác sĩ.
         - Mẹ tôi bảo tôi gọi điện thoại cho bác sĩ.
+        - Mẹ tôi bảo là tôi phải gọi điện cho bác sĩ.
+        - Mẹ tôi bảo tôi phải gọi bác sĩ.
+        - Mẹ tôi nói tôi phải gọi cho bác sĩ.
+        - Mẹ tôi dặn tôi phải gọi cho bác sĩ.
+        - Mẹ tôi yêu cầu tôi gọi điện cho bác sĩ.
     rubric:
       diacritics: lenient
     known_wrong:
       - answer: Mẹ tôi gọi điện cho bác sĩ.
         feedback_vi: "Người gọi điện là ich (tôi), mẹ chỉ dặn: Mẹ tôi bảo tôi gọi điện cho bác sĩ."
-        error_tag: subject_missed
+        error_tag: meaning
       - answer: Mẹ tôi muốn gọi điện cho bác sĩ.
         feedback_vi: "soll không phải \"muốn\" (wollen). Ở đây là lời mẹ dặn tôi làm."
-        error_tag: modal_meaning
+        error_tag: meaning
+      - answer: Mẹ tôi bảo tôi nên gọi điện cho bác sĩ.
+        feedback_vi: "Gần đúng, nhưng soll ở đây là lời dặn: \"bảo tôi (phải) gọi\". \"Nên\" (lời khuyên) là sollte, học ở A2."
+        error_tag: meaning
     explanation:
       vi: "ich soll … anrufen = tôi được dặn là phải gọi điện; người dặn là meine Mutter. anrufen là động từ tách, ở nguyên thể cuối câu vì có modal."
     display_answer: Mẹ tôi bảo tôi gọi điện cho bác sĩ.

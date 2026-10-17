@@ -29,7 +29,7 @@ items:
           translation:
             vi: Tôi có cần ngày mai quay lại không?
       confusion:
-        vi: "sollen không phải \"nên\": soll là \"được dặn là phải\" (lời yêu cầu của người khác). Lời khuyên \"nên\" là sollte, bạn học ở A2. müssen là \"phải\" vì bắt buộc, không cần ai dặn."
+        vi: "Khi kể lại lời dặn, sollen không phải \"nên\": soll là \"được dặn là phải\" (lời yêu cầu của người khác); riêng câu hỏi Soll ich …? có thể dịch \"có cần/có nên … không\". Lời khuyên \"nên\" là sollte, bạn học ở A2. müssen là \"phải\" do bắt buộc nói chung, không nhấn mạnh ai yêu cầu."
 
   - key: de:item:a1u08-g-wehtun
     type: grammar_point
@@ -818,7 +818,7 @@ items:
           translation:
             vi: Xin ông/bà đến quầy lễ tân trước.
       confusion:
-        vi: "Danh từ đuôi -ung luôn là giống cái: die Anmeldung, die Erkältung, die Einladung."
+        vi: "Danh từ tạo từ động từ + đuôi -ung là giống cái: die Anmeldung, die Erkältung, die Einladung."
 
   - key: de:item:a1u08-geoeffnet
     type: vocab
@@ -1116,7 +1116,7 @@ items:
           translation:
             vi: Cảm ơn nhiều vì lời mời!
       confusion:
-        vi: "Từ động từ einladen (mời) mà bạn đã học. Đuôi -ung luôn là giống cái."
+        vi: "Từ động từ einladen (mời) mà bạn đã học. Danh từ tạo từ động từ + -ung là giống cái."
 
   - key: de:item:a1u08-gruss
     type: vocab
@@ -1156,7 +1156,7 @@ items:
           translation:
             vi: Nhiệt liệt chào mừng đến Berlin!
       pronunciation_note:
-        vi: "z là \"ts\"; -lich cuối đọc nhẹ với âm ich: HERTS-likh."
+        vi: "z là \"ts\"; ch trong -lich là ich-Laut (như trong ich), không đọc thành \"kh\": HERTS-lich."
       confusion:
         vi: "Trong các cụm Herzliche Grüße, Herzlichen Glückwunsch, đuôi -e/-en là đuôi tính từ – học như cụm, quy tắc ở A2."
 
@@ -1193,7 +1193,7 @@ items:
       examples:
         - target: Die Postkarte aus Wien ist sehr schön.
           translation:
-            vi: Tấm bưu thiếp từ Vienna rất đẹp.
+            vi: Tấm bưu thiếp từ Viên rất đẹp.
       confusion:
         vi: "Từ ghép die Post + die Karte → die Postkarte."
 

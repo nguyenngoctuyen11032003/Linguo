@@ -75,7 +75,7 @@ body:
       vi: "Sprechen: Teil 1 giới thiệu bản thân (Name, Alter, Land, Wohnort, Sprachen, Beruf, Hobby); Teil 2 hỏi và trả lời theo thẻ chủ đề (Gesundheit – Arzt? → Wie oft gehst du zum Arzt?); Teil 3 nhờ hay đề nghị theo thẻ hình (Können Sie bitte das Fenster aufmachen?)."
   - type: deep_explain
     text:
-      vi: "Mẹo làm bài: ở phần nghe thông báo, con số thường là đáp án – luyện phân biệt -zehn (15) và -zig (50), elf (11) và acht (8). Ở phần đọc quảng cáo, đề thường cho hai quảng cáo gần giống nhau; khác biệt nằm ở ngày, giờ hoặc điều kiện (ohne Termin, nur am Wochenende). Trong phần nói theo nhóm, bạn hỏi bạn cùng thi bằng du hoặc Sie tuỳ theo hướng dẫn của giám khảo – khi không chắc, Sie luôn an toàn. Phần viết dùng lại những cụm bạn đã học: Vielen Dank für …, Leider kann ich nicht …, Haben Sie / Hast du am … Zeit?"
+      vi: "Mẹo làm bài: ở phần nghe thông báo, con số thường là đáp án – luyện phân biệt -zehn (15) và -zig (50), elf (11) và acht (8). Ở phần đọc quảng cáo, các đề luyện thường cho hai quảng cáo gần giống nhau; khác biệt nằm ở ngày, giờ hoặc điều kiện (ohne Termin, nur am Wochenende). Trong phần nói theo nhóm, bạn hỏi bạn cùng thi bằng du hoặc Sie tuỳ theo hướng dẫn của giám khảo – khi không chắc, dùng Sie thường an toàn hơn. Phần viết dùng lại những cụm bạn đã học: Vielen Dank für …, Leider kann ich nicht …, Haben Sie / Hast du am … Zeit?"
   - type: example
     target: "Hallo, hier ist die Praxis Doktor Schäfer. Frau Nguyen, Ihr Termin am Donnerstag ist leider nicht möglich. Können Sie am Freitag um zehn Uhr kommen?"
     target_lang: de
@@ -109,7 +109,7 @@ body:
     right: Ich habe Fieber und soll im Bett bleiben.
     target_lang: de
     note:
-      vi: "Triệu chứng đi với haben. Trong bài viết, lỗi nhỏ như vậy làm mất điểm phần ngôn ngữ."
+      vi: "Triệu chứng đi với haben. Trong bài viết, lỗi như vậy có thể bị trừ điểm."
   - type: common_mistake
     wrong: "Sehr geehrte Damen und Herren, Ich bin krank."
     right: "Sehr geehrte Damen und Herren, ich bin krank."
@@ -267,7 +267,7 @@ exercises:
         b2: [freundlichen]
     known_wrong:
       - answer: Liebe
-        feedback_vi: "Thư gửi cơ quan, không biết tên người nhận: Sehr geehrte Damen und Herren."
+        feedback_vi: "Liebe … quá thân mật cho thư gửi cơ quan; không biết tên người nhận thì dùng Sehr geehrte Damen und Herren."
         error_tag: register
       - answer: Hallo
         feedback_vi: "Không dùng Hallo trong thư trang trọng: Sehr geehrte Damen und Herren."
@@ -300,6 +300,8 @@ exercises:
         - Ich komme aus Vietnam und ich lebe in Berlin.
         - Ich komme aus Vietnam und wohne jetzt in Berlin.
         - Ich komme aus Vietnam und lebe jetzt in Berlin.
+        - Ich bin aus Vietnam und wohne in Berlin.
+        - Ich bin aus Vietnam und lebe in Berlin.
     known_wrong:
       - answer: Ich komme von Vietnam und wohne in Berlin.
         feedback_vi: "Quê quán dùng aus: Ich komme aus Vietnam."
@@ -346,7 +348,7 @@ exercises:
     difficulty: 2
     item: de:item:a1u05-g-hoefliche-bitte
     prompt:
-      instruction: "Sprechen Teil 3: thẻ hình vẽ một cửa sổ. Bạn nhờ giám khảo (Sie) mở cửa sổ một cách lịch sự. Sắp xếp thành câu."
+      instruction: "Sprechen Teil 3: thẻ hình vẽ một cửa sổ. Bạn nhờ một bạn cùng thi mở cửa sổ một cách lịch sự, dùng Sie. Sắp xếp thành câu."
       tokens:
         - { id: t-fenster, text: Fenster }
         - { id: t-bitte, text: bitte }

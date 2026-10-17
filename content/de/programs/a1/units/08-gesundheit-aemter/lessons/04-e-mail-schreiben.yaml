@@ -60,7 +60,7 @@ body:
     target: "Liebe Anna, vielen Dank für die Einladung! Ich komme gern am Samstag. Soll ich einen Kuchen mitbringen? Viele Grüße, Lan"
     target_lang: de
     translation:
-      vi: "Anna thân mến, cảm ơn bạn nhiều vì lời mời! Thứ Bảy mình sẽ đến. Mình có cần mang bánh theo không? Thân, Lan"
+      vi: "Anna thân mến, cảm ơn bạn nhiều vì lời mời! Thứ Bảy mình rất vui được đến. Mình có cần mang bánh theo không? Thân, Lan"
     note:
       vi: "Thư thân mật cho bạn nữ: Liebe Anna; sau dấu phẩy viết thường vielen. Ba ý: cảm ơn – nhận lời – câu hỏi."
   - type: example
@@ -298,6 +298,10 @@ exercises:
         - Vielen herzlichen Dank für die Einladung!
         - Vielen Dank für eure Einladung!
         - Ich danke dir für die Einladung!
+        - Ich danke dir für deine Einladung!
+        - Danke schön für deine Einladung!
+        - Vielen lieben Dank für die Einladung!
+        - Vielen lieben Dank für deine Einladung!
     known_wrong:
       - answer: Vielen Dank für der Einladung!
         feedback_vi: "für đi với Akkusativ: für die Einladung."
@@ -306,7 +310,7 @@ exercises:
         feedback_vi: "Cụm cố định: Vielen Dank."
         error_tag: word_form
       - answer: Vielen Dank für das Einladung!
-        feedback_vi: "Danh từ đuôi -ung là giống cái: die Einladung."
+        feedback_vi: "Danh từ tạo từ động từ + đuôi -ung là giống cái: einladen → die Einladung."
         error_tag: article
     explanation:
       vi: "Cảm ơn vì điều gì: Vielen Dank für + Akkusativ. die Einladung giống cái nên giữ die."

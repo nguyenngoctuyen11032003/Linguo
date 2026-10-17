@@ -264,6 +264,9 @@ exercises:
         - Ich nehme die Tabletten jeden Tag zweimal.
         - Ich nehme die Tabletten zwei Mal am Tag.
         - Ich nehme die Tabletten zweimal pro Tag.
+        - Ich nehme diese Tabletten zweimal pro Tag.
+        - Ich nehme diese Tabletten jeden Tag zweimal.
+        - Ich nehme diese Tabletten zwei Mal am Tag.
     known_wrong:
       - answer: Ich trinke die Tabletten zweimal am Tag.
         feedback_vi: "Viên thuốc thì dùng nehmen, không dùng trinken."
@@ -320,7 +323,7 @@ exercises:
     answer:
       correct_option_id: f6a
     explanation:
-      vi: "Ich hätte gern … là cách xin lịch sự, dùng Sie ngầm. \"Gib mir …!\" là mệnh lệnh với du – không lịch sự với phòng khám; \"ich bin einen Termin\" sai động từ; Rezept là đơn thuốc, không phải lịch hẹn."
+      vi: "Ich hätte gern … là cụm cố định để xin một cách lịch sự. \"Gib mir …!\" là mệnh lệnh với du – không lịch sự với phòng khám; \"ich bin einen Termin\" sai động từ; Rezept là đơn thuốc, không phải lịch hẹn."
     display_answer: "Guten Tag, ich hätte gern einen Termin."
 
   - key: de:exercise:a1u08l2-tr-gestern-fieber-vi
