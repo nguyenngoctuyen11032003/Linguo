@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u08-durchsagen
+order_index: 3
+level: a2
+title:
+  vi: Thông báo ở nhà ga – giới từ thời gian (Ab Montag, in zwei Wochen)
+objectives:
+  - vi: Nghe hiểu thông báo ở nhà ga, siêu thị, trên radio và tin nhắn thoại.
+  - vi: Dùng đúng giới từ thời gian ab, bis, in, für, über, zwischen và phân biệt với seit, vor.
+  - vi: Luyện kỹ năng nghe theo kiểu Goethe-Zertifikat A2, phần thi Hören.
+estimated_minutes: 17
+skills: [listening, vocabulary, grammar]
+prerequisites: [de:lesson:a2u08-muell-trennen]
+items:
+  - item: de:item:a2u08-g-zeit-praepositionen
+  - item: de:item:a2u08-durchsage
+  - item: de:item:a2u08-bahnsteig
+  - item: de:item:a2u08-ausfallen
+  - item: de:item:a2u08-baustelle
+  - item: de:item:a2u08-umleitung
+  - item: de:item:a2u08-hinweis
+  - item: de:item:a2u08-einsteigen
+  - item: de:item:a2u08-aussteigen
+  - item: de:item:a2u08-wiederholen
+  - item: de:item:a2u08-ersatzverkehr
+  - item: de:item:a2u08-linie
+  - item: de:item:a2u08-fahrgast
+  - item: de:item:a2u08-voraussichtlich
+  - item: de:item:a2u08-gepaeck
+  - item: de:item:a2u08-gesperrt
+  - item: de:item:a2u08-stoerung
+  - item: de:item:a1u04-g-uhrzeit
+    role: reuse
+  - item: de:item:a1u04-g-am-im-um
+    role: reuse
+  - item: de:item:a1u07-gleis
+    role: reuse
+  - item: de:item:a1u07-zug
+    role: reuse
+  - item: de:item:a1u07-verspaetung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nghe hiểu thông báo ở ga, siêu thị, trên radio và tin nhắn thoại, ví dụ: \"Ab Montag fährt die Linie 5 eine Umleitung. Die Baustelle dauert voraussichtlich bis Freitag.\""
+  - type: explain
+    text:
+      vi: "Giới từ thời gian giúp bạn bắt ý chính của thông báo: ab Montag (từ thứ Hai trở đi), bis Freitag (đến thứ Sáu), zwischen acht und zehn Uhr (trong khoảng 8–10 giờ). Trước thứ, giờ thường không có mạo từ; trước ngày tháng có mạo từ thì dùng bis zum, ab dem: bis zum 5. Mai."
+  - type: explain
+    text:
+      vi: "in + Dativ nói việc sẽ xảy ra sau bao lâu tính từ bây giờ: in zehn Minuten (mười phút nữa), in einer Woche (một tuần nữa). Đừng nhầm với vor + Dativ (vor zehn Minuten = cách đây mười phút) và seit + Dativ (seit zehn Minuten = đã mười phút nay, việc vẫn đang tiếp diễn)."
+  - type: explain
+    text:
+      vi: "für + Akkusativ nói khoảng thời gian dự định: Ich fahre für eine Woche nach Wien (cũng có thể bỏ für: Ich fahre eine Woche nach Wien). über + Akkusativ nói suốt một dịp: über das Wochenende (übers Wochenende), über Ostern."
+  - type: explain
+    text:
+      vi: "Phần thi Hören của Goethe-Zertifikat A2 gồm các bài nghe như thông báo, tin nhắn thoại, hội thoại ngắn và phỏng vấn (theo mô tả tại thời điểm soạn, cần đối chiếu quy định hiện hành). Mẹo: đọc câu hỏi trước để biết cần nghe gì – giờ, ngày, đường ray hay số tuyến – rồi chú ý các từ ab, bis, in, fällt aus, Verspätung."
+  - type: deep_explain
+    text:
+      vi: "Thông báo thật thường mở đầu bằng Achtung …, Meine Damen und Herren … hoặc Liebe Fahrgäste … và hay lặp lại thông tin quan trọng (Ich wiederhole …). Khi có công trường hay sự cố, tàu có thể đổi đường ray hoặc có xe buýt chạy thay (Ersatzverkehr, viết tắt SEV); bảng điện tử và ứng dụng của hãng tàu thường cập nhật nhanh hơn. Qua loa, số 2 hay được đọc là zwo để khỏi nhầm với drei."
+  - type: example
+    target: "Achtung am Gleis 3: Der Zug nach Köln fällt heute aus."
+    target_lang: de
+    translation:
+      vi: "Chú ý ở đường ray số 3: hôm nay chuyến tàu đi Köln bị hủy."
+    note:
+      vi: ausfallen là động từ tách – fällt … aus. Thông tin chính – đường ray, nơi đến, bị hủy.
+  - type: example
+    target: Ab Montag fährt die Linie 5 eine Umleitung. Die Baustelle dauert voraussichtlich bis Freitag.
+    target_lang: de
+    translation:
+      vi: Từ thứ Hai, tuyến số 5 chạy đường vòng. Công trường dự kiến kéo dài đến thứ Sáu.
+    note:
+      vi: ab = từ … trở đi; bis = đến; voraussichtlich = dự kiến (có thể thay đổi).
+  - type: example
+    target: "Wir warten schon seit zwanzig Minuten. Auf der Anzeige steht: Der Bus kommt in fünf Minuten."
+    target_lang: de
+    translation:
+      vi: "Chúng tôi đã chờ hai mươi phút rồi. Trên bảng điện tử ghi: năm phút nữa xe buýt đến."
+    note:
+      vi: seit = đã … nay (vẫn đang chờ); in = … nữa (tương lai). die Anzeige = bảng điện tử.
+  - type: example
+    target: Wir fahren für zwei Wochen nach Spanien, zwischen dem 1. und dem 15. August.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đi Tây Ban Nha hai tuần, trong khoảng từ ngày 1 đến ngày 15 tháng Tám.
+    note:
+      vi: für + Akkusativ = (đi) trong bao lâu; zwischen + Dativ – zwischen dem ersten und dem fünfzehnten August.
+  - type: example
+    target: Hallo Frau Weber, hier ist die Praxis Doktor Klein. Ihr Termin am Dienstag fällt leider aus. Können Sie am Donnerstag zwischen neun und elf Uhr kommen?
+    target_lang: de
+    translation:
+      vi: Chào bà Weber, đây là phòng khám bác sĩ Klein. Rất tiếc buổi hẹn hôm thứ Ba của bà bị hủy. Bà có thể đến vào thứ Năm trong khoảng chín đến mười một giờ không?
+    note:
+      vi: Tin nhắn thoại trang trọng (Sie, Ihr). Bắt ý chính – buổi nào bị hủy, đề nghị thời gian nào.
+  - type: common_mistake
+    wrong: Der Zug kommt seit zehn Minuten.
+    right: Der Zug kommt in zehn Minuten.
+    target_lang: de
+    note:
+      vi: Mười phút nữa (tương lai) là in zehn Minuten; seit dùng cho việc đã bắt đầu và vẫn đang tiếp diễn.
+  - type: common_mistake
+    wrong: Für Montag ist die Straße gesperrt.
+    right: Ab Montag ist die Straße gesperrt.
+    target_lang: de
+    note:
+      vi: Từ thứ Hai trở đi là ab Montag; für đi với khoảng thời gian (für eine Woche).
+  - type: common_mistake
+    wrong: Der Zug ist heute ausgefallt.
+    right: Der Zug ist heute ausgefallen.
+    target_lang: de
+    note:
+      vi: fallen là động từ bất quy tắc – Partizip ausgefallen, Perfekt với sein.
+  - type: summary
+    points:
+      - vi: "ab Montag = từ thứ Hai trở đi; bis Freitag = đến thứ Sáu; bis zum / ab dem + ngày tháng."
+      - vi: "in + Dativ = … nữa (in zehn Minuten); vor + Dativ = cách đây; seit + Dativ = đã … nay."
+      - vi: "für + Akkusativ = (dự định) trong bao lâu; über + Akkusativ = suốt dịp (über das Wochenende)."
+      - vi: "zwischen + Dativ: zwischen neun und elf Uhr, zwischen dem 1. und dem 15. August."
+      - vi: "Thông báo: fällt aus, Verspätung, Gleis, Umleitung, Baustelle, Ersatzverkehr, voraussichtlich."
+      - vi: "Nghe thi: đọc câu hỏi trước, nghe đúng con số và giới từ thời gian."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u08l3-listen-faellt-aus
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u08-ausfallen
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Achtung am Gleis drei: Der Zug nach Köln fällt heute aus."
+      options:
+        - { id: c4n, text: Hôm nay chuyến tàu đi Köln ở đường ray số 3 bị hủy., lang: vi }
+        - { id: t8w, text: Hôm nay chuyến tàu đi Köln trễ ba phút., lang: vi }
+        - { id: e2k, text: Hôm nay chuyến tàu từ Köln đến đường ray số 3., lang: vi }
+        - { id: z7g, text: Hôm nay chuyến tàu đi Köln chạy đúng giờ từ đường ray số 3., lang: vi }
+    answer:
+      correct_option_id: c4n
+    explanation:
+      vi: "fällt … aus (ausfallen) = bị hủy; nach Köln = đi Köln (từ Köln là aus Köln); drei là số đường ray, không phải số phút trễ."
+    display_answer: Hôm nay chuyến tàu đi Köln ở đường ray số 3 bị hủy.
+
+  - key: de:exercise:a2u08l3-listen-baustelle
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-ersatzverkehr
+    prompt:
+      audio_asset_id: null
+      fallback_text: Liebe Fahrgäste, ab Montag gibt es zwischen Bonn und Köln eine Baustelle. Bis Freitag fahren dort keine Züge. Es gibt einen Ersatzverkehr mit Bussen.
+      options:
+        - { id: b6r, text: Từ thứ Hai đến thứ Sáu không có tàu giữa Bonn và Köln; có xe buýt chạy thay., lang: vi }
+        - { id: j3d, text: Từ thứ Hai có thêm nhiều chuyến tàu giữa Bonn và Köln., lang: vi }
+        - { id: s9a, text: Đến thứ Hai không có tàu giữa Bonn và Köln; có xe buýt chạy thay., lang: vi }
+        - { id: o5y, text: Từ thứ Sáu không có tàu giữa Bonn và Köln; không có xe thay thế., lang: vi }
+    answer:
+      correct_option_id: b6r
+    explanation:
+      vi: "ab Montag = từ thứ Hai; bis Freitag fahren keine Züge = đến thứ Sáu không có tàu; Ersatzverkehr mit Bussen = xe buýt chạy thay tàu. zwischen Bonn und Köln = giữa Bonn và Köln."
+    display_answer: Từ thứ Hai đến thứ Sáu không có tàu giữa Bonn và Köln; có xe buýt chạy thay.
+
+  - key: de:exercise:a2u08l3-mcq-in-zwei-wochen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      stem: "Chọn giới từ đúng: Der Deutschkurs beginnt ___ zwei Wochen. (Hai tuần nữa khóa học bắt đầu.)"
+      stem_lang: vi
+      options:
+        - { id: f1h, text: in, lang: de }
+        - { id: y6c, text: vor, lang: de }
+        - { id: l3v, text: seit, lang: de }
+        - { id: p8m, text: für, lang: de }
+    answer:
+      correct_option_id: f1h
+    explanation:
+      vi: "\"… nữa\" (tính từ bây giờ về tương lai) là in + Dativ: in zwei Wochen. vor zwei Wochen = cách đây hai tuần; seit zwei Wochen = đã hai tuần nay; für zwei Wochen = (kéo dài) trong hai tuần."
+    display_answer: in
+
+  - key: de:exercise:a2u08l3-listen-praxis
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Hallo Frau Weber, hier ist die Praxis Doktor Klein. Ihr Termin am Dienstag fällt leider aus. Können Sie am Donnerstag zwischen neun und elf Uhr kommen? Bitte rufen Sie uns zurück.
+      options:
+        - { id: k8u, text: Buổi hẹn thứ Ba bị hủy; phòng khám đề nghị bà đến vào thứ Năm trong khoảng 9 đến 11 giờ., lang: vi }
+        - { id: a1e, text: Buổi hẹn thứ Năm bị hủy; phòng khám đề nghị bà đến vào thứ Ba trong khoảng 9 đến 11 giờ., lang: vi }
+        - { id: g5x, text: Buổi hẹn thứ Ba vẫn giữ nguyên nhưng dời sang 11 giờ., lang: vi }
+        - { id: r2b, text: Bà Weber phải đến phòng khám vào thứ Năm đúng 9 giờ., lang: vi }
+    answer:
+      correct_option_id: k8u
+    explanation:
+      vi: "Ihr Termin am Dienstag fällt aus = buổi hẹn thứ Ba bị hủy; am Donnerstag zwischen neun und elf Uhr = thứ Năm, trong khoảng 9 đến 11 giờ (không phải đúng 9 giờ). Đây là dạng tin nhắn thoại hay gặp trong phần Hören."
+    display_answer: Buổi hẹn thứ Ba bị hủy; phòng khám đề nghị bà đến vào thứ Năm trong khoảng 9 đến 11 giờ.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u08l3-fill-ab-fuer-in
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      template: "Achtung! {{b1}} sofort ist die Hauptstraße gesperrt. – Beeil dich, der Zug fährt {{b2}} zwei Minuten ab! – Im August fahren wir {{b3}} zwei Wochen nach Spanien."
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Ab]
+        b2: [in]
+        b3: [für]
+    known_wrong:
+      - answer: seit
+        feedback_vi: "seit dùng cho việc đã bắt đầu trong quá khứ và còn tiếp diễn. \"Từ bây giờ trở đi\" là ab sofort; \"… nữa\" là in."
+        error_tag: preposition
+      - answer: nach
+        feedback_vi: "\"Hai phút nữa\" tính từ bây giờ là in zwei Minuten, không phải nach."
+        error_tag: preposition
+      - answer: vor
+        feedback_vi: "vor + thời gian = cách đây (quá khứ). Tương lai dùng in; từ … trở đi dùng ab."
+        error_tag: preposition
+    explanation:
+      vi: "ab sofort = từ bây giờ trở đi (cụm rất hay gặp trong thông báo); in zwei Minuten = hai phút nữa (in + Dativ); für zwei Wochen = (đi) trong hai tuần – khoảng thời gian dự định (für + Akkusativ)."
+    display_answer: "Achtung! Ab sofort ist die Hauptstraße gesperrt. – Beeil dich, der Zug fährt in zwei Minuten ab! – Im August fahren wir für zwei Wochen nach Spanien."
+
+  - key: de:exercise:a2u08l3-fill-seit-in
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      template: "Ich warte schon {{b1}} zwanzig Minuten auf den Bus. Auf der Anzeige steht: Der Bus kommt {{b2}} fünf Minuten."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [seit]
+        b2: [in]
+    known_wrong:
+      - answer: für
+        feedback_vi: "Việc chờ đã bắt đầu và vẫn đang tiếp diễn → seit (không dịch \"for\" của tiếng Anh thành für)."
+        error_tag: preposition
+      - answer: vor
+        feedback_vi: "vor + thời gian = cách đây. Đã chờ được bao lâu → seit; bao lâu nữa → in."
+        error_tag: preposition
+      - answer: ab
+        feedback_vi: "ab = từ một mốc trở đi (ab Montag). Với khoảng thời gian dùng seit (đã … nay) hoặc in (… nữa)."
+        error_tag: preposition
+    explanation:
+      vi: "schon seit zwanzig Minuten = đã chờ hai mươi phút rồi và vẫn đang chờ (thì hiện tại + seit). in fünf Minuten = năm phút nữa."
+    display_answer: "Ich warte schon seit zwanzig Minuten auf den Bus. Auf der Anzeige steht: Der Bus kommt in fünf Minuten."
+
+  - key: de:exercise:a2u08l3-tr-in-zehn-minuten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      source_text: Mười phút nữa tàu đến.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Zug kommt in zehn Minuten.
+        - In zehn Minuten kommt der Zug.
+        - Der Zug kommt in 10 Minuten.
+        - In 10 Minuten kommt der Zug.
+        - Der Zug kommt in zehn Minuten an.
+        - In zehn Minuten kommt der Zug an.
+        - Der Zug kommt in 10 Minuten an.
+        - In 10 Minuten kommt der Zug an.
+    known_wrong:
+      - answer: Der Zug kommt nach zehn Minuten.
+        feedback_vi: "\"… nữa\" tính từ bây giờ là in + Dativ: in zehn Minuten."
+        error_tag: preposition
+      - answer: Der Zug kommt vor zehn Minuten.
+        feedback_vi: "vor zehn Minuten = cách đây mười phút (quá khứ)."
+        error_tag: preposition
+      - answer: Der Zug kommt seit zehn Minuten.
+        feedback_vi: "seit dùng cho việc đã bắt đầu; tương lai dùng in."
+        error_tag: preposition
+      - answer: In zehn Minuten der Zug kommt.
+        feedback_vi: "In zehn Minuten ở vị trí 1 thì động từ kommt phải ở vị trí 2: In zehn Minuten kommt der Zug."
+        error_tag: verb_position
+    explanation:
+      vi: "\"Mười phút nữa\" = in zehn Minuten (in + Dativ số nhiều). Có thể dùng kommen hoặc ankommen (kommt … an). Nếu In zehn Minuten đứng đầu, động từ đứng ngay sau."
+    display_answer: Der Zug kommt in zehn Minuten.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u08l3-wb-faellt-aus
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-ausfallen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hôm nay chuyến tàu đi Hamburg bị hủy.\""
+      tokens:
+        - { id: f-aus, text: aus }
+        - { id: f-hamburg, text: Hamburg }
+        - { id: f-heute, text: heute }
+        - { id: f-ausfaellt, text: ausfällt }
+        - { id: f-zug, text: Zug }
+        - { id: f-faellt, text: fällt }
+        - { id: f-der, text: der }
+        - { id: f-nach, text: nach }
+        - { id: f-ist, text: ist }
+    answer:
+      orders:
+        - [f-der, f-zug, f-nach, f-hamburg, f-faellt, f-heute, f-aus]
+        - [f-heute, f-faellt, f-der, f-zug, f-nach, f-hamburg, f-aus]
+    explanation:
+      vi: "ausfallen là động từ tách: trong câu chính, fällt ở vị trí 2 và aus đứng cuối câu. der Zug nach Hamburg (tàu đi Hamburg) là một cụm, có thể đứng đầu, hoặc heute đứng đầu rồi đến fällt."
+    display_answer: Der Zug nach Hamburg fällt heute aus.
+
+  - key: de:exercise:a2u08l3-listen-supermarkt
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u08-durchsage
+    prompt:
+      audio_asset_id: null
+      fallback_text: Liebe Kundinnen und Kunden, ab heute ist unser Markt bis zweiundzwanzig Uhr geöffnet. Übers Wochenende sind alle Getränke zehn Prozent billiger.
+      options:
+        - { id: m4c, text: Từ hôm nay siêu thị mở cửa đến 22 giờ; suốt cuối tuần mọi đồ uống rẻ hơn 10%., lang: vi }
+        - { id: v9o, text: Từ hôm nay siêu thị mở cửa từ 22 giờ; cuối tuần đồ uống đắt hơn 10%., lang: vi }
+        - { id: h2t, text: Chỉ đến hôm nay siêu thị mở cửa đến 22 giờ; cuối tuần mọi đồ uống rẻ hơn 10%., lang: vi }
+        - { id: q7l, text: Từ hôm nay siêu thị mở cửa đến 20 giờ; suốt cuối tuần mọi đồ uống rẻ hơn 10%., lang: vi }
+    answer:
+      correct_option_id: m4c
+    explanation:
+      vi: "ab heute = từ hôm nay trở đi; bis zweiundzwanzig Uhr = đến 22 giờ; übers Wochenende (= über das Wochenende) = suốt cuối tuần; billiger = rẻ hơn. Nghe kỹ số: zweiundzwanzig = 22."
+    display_answer: Từ hôm nay siêu thị mở cửa đến 22 giờ; suốt cuối tuần mọi đồ uống rẻ hơn 10%.
+
+  - key: de:exercise:a2u08l3-tr-ab-naechster-woche
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      source_text: Ab nächster Woche fährt der Bus alle zwanzig Minuten.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ tuần sau xe buýt chạy hai mươi phút một chuyến.
+        - Từ tuần sau, xe buýt chạy hai mươi phút một chuyến.
+        - Từ tuần sau xe buýt chạy 20 phút một chuyến.
+        - Từ tuần tới xe buýt chạy hai mươi phút một chuyến.
+        - Từ tuần tới xe buýt chạy 20 phút một chuyến.
+        - Bắt đầu từ tuần sau xe buýt chạy hai mươi phút một chuyến.
+        - Từ tuần sau xe buýt sẽ chạy hai mươi phút một chuyến.
+        - Từ tuần sau cứ hai mươi phút có một chuyến xe buýt.
+        - Từ tuần sau cứ 20 phút có một chuyến xe buýt.
+        - Từ tuần sau xe buýt chạy cứ hai mươi phút một chuyến.
+        - Từ tuần sau xe buýt chạy mỗi hai mươi phút một chuyến.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Ab nächster Woche = từ tuần sau trở đi (ab + Dativ; dạng Akkusativ ab nächste Woche cũng được dùng). alle zwanzig Minuten = cứ hai mươi phút một lần."
+    display_answer: Từ tuần sau xe buýt chạy hai mươi phút một chuyến.

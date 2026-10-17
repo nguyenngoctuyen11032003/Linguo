@@ -1,0 +1,423 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u08-modelltest-a2
+order_index: 5
+level: a2
+title:
+  vi: Đề mô phỏng Goethe-Zertifikat A2 (Modelltest A2)
+objectives:
+  - vi: Làm quen với các dạng bài của bốn phần Lesen, Hören, Schreiben, Sprechen trong Goethe-Zertifikat A2.
+  - vi: Đọc tin ngắn, e-mail, quảng cáo và nghe thông báo, hội thoại để tìm thông tin chính.
+  - vi: Viết tin nhắn ngắn (SMS) và e-mail thân mật hoặc trang trọng ngắn.
+  - vi: Đặt câu hỏi theo thẻ từ khóa và cùng bạn thi lên kế hoạch.
+estimated_minutes: 22
+skills: [listening, reading, writing, speaking]
+prerequisites: [de:lesson:a2u08-gemeinsam-planen]
+items:
+  - item: de:item:a2u08-g-verben-praeposition
+    role: reuse
+  - item: de:item:a2u08-g-praesens-zukunft
+    role: reuse
+  - item: de:item:a2u08-g-infinitiv-aufforderung
+    role: reuse
+  - item: de:item:a2u08-g-zeit-praepositionen
+    role: reuse
+  - item: de:item:a2u08-g-vorschlag-wir
+    role: reuse
+  - item: de:item:a2u08-warten-auf
+    role: reuse
+  - item: de:item:a2u08-sich-freuen-auf
+    role: reuse
+  - item: de:item:a2u08-sparen
+    role: reuse
+  - item: de:item:a2u08-trennen
+    role: reuse
+  - item: de:item:a2u08-gesperrt
+    role: reuse
+  - item: de:item:a2u08-umleitung
+    role: reuse
+  - item: de:item:a2u08-baustelle
+    role: reuse
+  - item: de:item:a2u08-organisieren
+    role: reuse
+  - item: de:item:a2u08-mitbringen
+    role: reuse
+  - item: de:item:a2u08-verschieben
+    role: reuse
+  - item: de:item:a2u08-treffpunkt
+    role: reuse
+  - item: de:item:a2u08-wiederholen
+    role: reuse
+  - item: de:item:a1u01-g-w-fragen
+    role: reuse
+  - item: de:item:a1u05-g-imperativ
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Bài này là một đề luyện ngắn mô phỏng bốn phần của Goethe-Zertifikat A2 – Lesen, Hören, Schreiben, Sprechen – đồng thời ôn lại cả unit: động từ + giới từ, kế hoạch tương lai, biển báo nguyên thể, giới từ thời gian và lời đề nghị."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), đề Goethe-Zertifikat A2 cho người lớn gồm bốn phần: Lesen, Hören, Schreiben và Sprechen (thi nói theo cặp). Số câu, thời gian và cách tính điểm có thể thay đổi, nên trước khi thi hãy xem tài liệu chính thức mới nhất."
+  - type: explain
+    text:
+      vi: "Lesen và Hören dùng văn bản, bài nghe ngắn gần với đời sống: tin ngắn, biển chỉ dẫn, e-mail, quảng cáo, thông báo, tin nhắn thoại, hội thoại, phỏng vấn. Đọc câu hỏi trước, tìm từ khóa và chú ý những từ làm đổi nghĩa như nicht, kein, nur, ab, bis."
+  - type: explain
+    text:
+      vi: "Schreiben gồm một tin nhắn ngắn (SMS) và một e-mail ngắn, thân mật hoặc trang trọng, phải trả lời đủ các ý đề nêu. Kiểm tra lời chào đầu – cuối (Liebe …, Viele Grüße / Sehr geehrte …, Mit freundlichen Grüßen), du hay Sie, và vị trí động từ."
+  - type: explain
+    text:
+      vi: "Sprechen gồm hỏi – đáp theo thẻ từ khóa, kể về cuộc sống của mình theo một câu hỏi, và cùng bạn thi lên kế hoạch một việc. Nói câu ngắn nhưng đúng; không hiểu thì hỏi lại: Können Sie das bitte wiederholen?"
+  - type: deep_explain
+    text:
+      vi: "Mẹo: (1) Đừng bỏ trống câu trắc nghiệm. (2) Trong bài nghe, thường có một con số hoặc ngày \"bẫy\" được nhắc trước rồi mới sửa lại – hãy nghe đến hết câu. (3) Trong bài viết, viết đủ từng ý quan trọng hơn viết dài; đọc lại để kiểm tra du/Sie, đuôi động từ và vị trí động từ. (4) Trong phần nói lên kế hoạch, hãy đề nghị, phản hồi đề nghị của bạn thi và thống nhất một kết quả. Đề luyện trong bài này do Linguo tự soạn, không phải đề thi thật."
+  - type: example
+    target: "Hallo Jonas, mein Bus hat Verspätung. Ich komme erst in zwanzig Minuten. Wartet bitte nicht auf mich und bestellt schon! Bis gleich, Lan"
+    target_lang: de
+    translation:
+      vi: "Chào Jonas, xe buýt của mình bị trễ. Hai mươi phút nữa mình mới tới. Các bạn đừng chờ mình, cứ gọi món trước đi! Lát gặp nhé, Lan"
+    note:
+      vi: "Tin nhắn thân mật gửi một nhóm bạn (ihr → wartet, bestellt): lý do, giờ đến, lời nhờ. in zwanzig Minuten = hai mươi phút nữa; warten auf + Akkusativ."
+  - type: example
+    target: "Sehr geehrte Frau Schmidt, leider kann ich am Montag nicht zum Kurs kommen, weil ich krank bin. Können Sie mir bitte die Hausaufgaben schicken? Mit freundlichen Grüßen, Minh Tran"
+    target_lang: de
+    translation:
+      vi: "Kính gửi cô Schmidt, rất tiếc thứ Hai em không đến lớp được vì em bị ốm. Cô có thể gửi bài tập về nhà cho em được không ạ? Trân trọng, Minh Trần"
+    note:
+      vi: "E-mail trang trọng (Sie): Sehr geehrte … – Mit freundlichen Grüßen. Lý do với weil, động từ bin ở cuối câu phụ."
+  - type: example
+    target: "Wohnort? – Wo wohnst du? – Ich wohne seit zwei Jahren in Leipzig."
+    target_lang: de
+    translation:
+      vi: "Nơi ở? – Bạn sống ở đâu? – Mình sống ở Leipzig được hai năm rồi."
+    note:
+      vi: "Kiểu Sprechen Teil 1: từ một từ khóa trên thẻ, bạn đặt câu hỏi cho bạn thi. Chọn du hoặc Sie và giữ nhất quán."
+  - type: example
+    target: "Wann hast du am Samstag Zeit? – Vormittags muss ich einkaufen, aber ab drei Uhr habe ich Zeit. – Super, dann lass uns um vier Uhr ins Café gehen!"
+    target_lang: de
+    translation:
+      vi: "Thứ Bảy lúc nào bạn rảnh? – Buổi sáng mình phải đi mua đồ, nhưng từ ba giờ thì mình rảnh. – Tuyệt, vậy bốn giờ mình đi cà phê nhé!"
+    note:
+      vi: "Kiểu Sprechen Teil 3: hỏi thời gian, nói mình bận lúc nào, đề nghị và thống nhất. ab drei Uhr = từ ba giờ trở đi."
+  - type: common_mistake
+    wrong: Sehr geehrte Frau Schmidt, wie geht es dir?
+    right: Sehr geehrte Frau Schmidt, wie geht es Ihnen?
+    target_lang: de
+    note:
+      vi: Thư trang trọng dùng Sie, Ihnen (viết hoa) từ đầu đến cuối, không trộn với du.
+  - type: common_mistake
+    wrong: Mit freundliche Grüßen
+    right: Mit freundlichen Grüßen
+    target_lang: de
+    note:
+      vi: Sau mit là Dativ số nhiều, không có mạo từ – tính từ có đuôi -en.
+  - type: common_mistake
+    wrong: Ich komme später, weil mein Bus hat Verspätung.
+    right: Ich komme später, weil mein Bus Verspätung hat.
+    target_lang: de
+    note:
+      vi: Trong bài viết, sau weil động từ đứng cuối câu (trong khẩu ngữ đôi khi nghe weil + động từ vị trí 2, nhưng khi viết bài thi nên tránh).
+  - type: summary
+    points:
+      - vi: "Bốn phần thi: Lesen, Hören, Schreiben, Sprechen (mô tả tại thời điểm soạn – cần đối chiếu quy định hiện hành)."
+      - vi: "Đọc, nghe: đọc câu hỏi trước, tìm từ khóa, chú ý nicht, kein, nur, ab, bis."
+      - vi: "SMS: lý do + thời gian + lời nhờ; e-mail: chào đầu, đủ các ý, chào cuối."
+      - vi: "Thân mật: Liebe/Lieber …, Viele Grüße; trang trọng: Sehr geehrte/Sehr geehrter …, Mit freundlichen Grüßen."
+      - vi: "Nói: đặt câu hỏi từ từ khóa; kể kế hoạch bằng Präsens + thời gian; đề nghị bằng Wollen wir …? / Lass uns …!"
+exercises:
+  # ---------------- recognition: Lesen ----------------
+  - key: de:exercise:a2u08l5-mcq-lesen-repair-cafe
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-g-zeit-praepositionen
+    prompt:
+      stem: "Đọc tin ngắn trên báo địa phương (kiểu Lesen Teil 1): \"Neu in Neustadt: Ab nächstem Samstag gibt es im Gemeindehaus ein Repair-Café. Jeden Samstag zwischen 10 und 14 Uhr kann man dort alte Lampen, Fahrräder oder Kleidung reparieren lassen. Die Hilfe ist kostenlos, und man muss sich nicht anmelden.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: r1k, text: "Mỗi thứ Bảy, từ 10 đến 14 giờ, bạn có thể mang đồ cũ đến nhờ sửa miễn phí.", lang: vi }
+        - { id: r2p, text: Phải đăng ký trước mới được nhờ sửa đồ., lang: vi }
+        - { id: r3w, text: Quán mở cửa mỗi ngày từ 10 đến 14 giờ., lang: vi }
+        - { id: r4z, text: Nhờ sửa đồ ở đây phải trả tiền., lang: vi }
+    answer:
+      correct_option_id: r1k
+    explanation:
+      vi: "Jeden Samstag zwischen 10 und 14 Uhr = mỗi thứ Bảy, trong khoảng 10–14 giờ; reparieren lassen = nhờ sửa; kostenlos = miễn phí. man muss sich nicht anmelden = không cần đăng ký (nicht müssen = không cần, khác nicht dürfen)."
+    display_answer: "Mỗi thứ Bảy, từ 10 đến 14 giờ, bạn có thể mang đồ cũ đến nhờ sửa miễn phí."
+
+  - key: de:exercise:a2u08l5-mcq-lesen-email-grillparty
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-verschieben
+    prompt:
+      stem: "Đọc e-mail (kiểu Lesen Teil 3): \"Liebe Mai, nächsten Samstag organisiere ich eine Grillparty im Garten. Kannst du einen Salat mitbringen? Die Getränke kauft Tom. Wir fangen um 18 Uhr an. Wenn es regnet, verschieben wir die Party auf Sonntag. Viele Grüße, Jana\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: m1a, text: "Nếu trời mưa, bữa tiệc sẽ dời sang Chủ nhật.", lang: vi }
+        - { id: m2b, text: Mai phải mua đồ uống., lang: vi }
+        - { id: m3c, text: Bữa tiệc bắt đầu lúc 8 giờ tối., lang: vi }
+        - { id: m4d, text: Bữa tiệc diễn ra vào thứ Bảy tuần này dù trời mưa hay nắng., lang: vi }
+    answer:
+      correct_option_id: m1a
+    explanation:
+      vi: "Wenn es regnet, verschieben wir die Party auf Sonntag = nếu trời mưa, bữa tiệc dời sang Chủ nhật. Mai mang salad (einen Salat mitbringen), Tom mua đồ uống; 18 Uhr là 6 giờ chiều."
+    display_answer: "Nếu trời mưa, bữa tiệc sẽ dời sang Chủ nhật."
+
+  - key: de:exercise:a2u08l5-mcq-lesen-anzeigen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-trennen
+    prompt:
+      stem: "Kiểu Lesen Teil 4: Anh Hưng muốn biết cách phân loại rác ở Đức và chỉ rảnh vào tối thứ Tư. Quảng cáo nào phù hợp với anh ấy?"
+      stem_lang: vi
+      options:
+        - { id: a1x, text: "Infoabend: Müll richtig trennen – Mittwoch, 19 Uhr, Volkshochschule, Eintritt frei", lang: de }
+        - { id: a2y, text: "Kochkurs: Gesund kochen mit Gemüse – Mittwoch, 19 Uhr, Volkshochschule", lang: de }
+        - { id: a3u, text: "Workshop: Müll trennen leicht gemacht – Samstag, 10 Uhr, Rathaus", lang: de }
+        - { id: a4v, text: "Fahrradtour durch den Stadtpark – jeden Mittwoch, 18.30 Uhr", lang: de }
+    answer:
+      correct_option_id: a1x
+    explanation:
+      vi: "Chỉ buổi Infoabend (buổi tối thông tin) vừa đúng chủ đề Müll trennen vừa vào Mittwoch, 19 Uhr. Workshop cùng chủ đề nhưng vào thứ Bảy; lớp nấu ăn và tour xe đạp không đúng chủ đề. Dạng ghép người với quảng cáo cần khớp cả hai điều kiện."
+    display_answer: "Infoabend: Müll richtig trennen – Mittwoch, 19 Uhr, Volkshochschule, Eintritt frei"
+
+  # ---------------- recognition: Hören ----------------
+  - key: de:exercise:a2u08l5-listen-verkehr
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-gesperrt
+    prompt:
+      audio_asset_id: null
+      fallback_text: Und nun der Verkehr. Ab Montag ist die Goethestraße für drei Wochen gesperrt, denn dort gibt es eine Baustelle. Die Linie sieben fährt eine Umleitung.
+      options:
+        - { id: v1a, text: "Từ thứ Hai, đường Goethe bị chặn ba tuần; tuyến số 7 đi đường vòng.", lang: vi }
+        - { id: v2b, text: "Đến thứ Hai, đường Goethe bị chặn; tuyến số 7 không chạy.", lang: vi }
+        - { id: v3c, text: "Từ thứ Hai, đường Goethe bị chặn ba ngày; tuyến số 7 đi đường vòng.", lang: vi }
+        - { id: v4d, text: "Ba tuần nữa đường Goethe mới bị chặn; tuyến số 7 đi đường vòng.", lang: vi }
+    answer:
+      correct_option_id: v1a
+    explanation:
+      vi: "ab Montag = từ thứ Hai; für drei Wochen = trong ba tuần (in drei Wochen mới là \"ba tuần nữa\"); gesperrt = bị chặn; fährt eine Umleitung = đi đường vòng. Kiểu bài nghe thông báo trên radio (Hören)."
+    display_answer: "Từ thứ Hai, đường Goethe bị chặn ba tuần; tuyến số 7 đi đường vòng."
+
+  - key: de:exercise:a2u08l5-listen-sommerferien
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u08-sparen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Was machst du in den Sommerferien, Paul? – Zuerst arbeite ich zwei Wochen im Supermarkt. Ich spare für eine Reise. Im August fliege ich dann mit meiner Freundin nach Portugal. Ich freue mich schon sehr auf das Meer.
+      options:
+        - { id: p1a, text: "Paul làm ở siêu thị hai tuần để dành tiền, rồi tháng Tám bay đi Bồ Đào Nha với bạn gái.", lang: vi }
+        - { id: p2b, text: "Paul bay đi Bồ Đào Nha hai tuần, rồi tháng Tám làm ở siêu thị.", lang: vi }
+        - { id: p3c, text: Paul làm ở siêu thị cả mùa hè và không đi du lịch., lang: vi }
+        - { id: p4d, text: Tháng Tám Paul bay đi Bồ Đào Nha một mình., lang: vi }
+    answer:
+      correct_option_id: p1a
+    explanation:
+      vi: "Zuerst … zwei Wochen im Supermarkt = trước tiên làm hai tuần ở siêu thị; Ich spare für eine Reise = để dành tiền cho chuyến đi; Im August … mit meiner Freundin nach Portugal = tháng Tám đi Bồ Đào Nha với bạn gái. Kế hoạch được kể bằng Präsens + mốc thời gian."
+    display_answer: "Paul làm ở siêu thị hai tuần để dành tiền, rồi tháng Tám bay đi Bồ Đào Nha với bạn gái."
+
+  # ---------------- recognition: Sprechen Teil 1 ----------------
+  - key: de:exercise:a2u08l5-mcq-sprechen-wohnort
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u01-g-w-fragen
+    prompt:
+      stem: "Kiểu Sprechen Teil 1: bạn rút được thẻ có từ khóa \"Wohnort?\". Câu hỏi nào đúng để hỏi bạn thi?"
+      stem_lang: vi
+      options:
+        - { id: w1a, text: Wo wohnst du?, lang: de }
+        - { id: w2b, text: Woher wohnst du?, lang: de }
+        - { id: w3c, text: Wohin wohnst du?, lang: de }
+        - { id: w4d, text: Wann wohnst du?, lang: de }
+    answer:
+      correct_option_id: w1a
+    explanation:
+      vi: "Wohnort = nơi ở, nên hỏi bằng wo (ở đâu): Wo wohnst du? woher hỏi \"từ đâu đến\" (Woher kommst du?), wohin hỏi \"đi đâu\", wann hỏi \"khi nào\"."
+    display_answer: Wo wohnst du?
+
+  # ---------------- recall: Schreiben ----------------
+  - key: de:exercise:a2u08l5-fill-sms
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-warten-auf
+    prompt:
+      template: "Hallo Jonas, mein Bus hat Verspätung. Ich komme {{b1}} zwanzig Minuten. Bitte wartet {{b2}} mich! Bis gleich, Lan"
+      blanks:
+        - { id: b1, width_hint: 3 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [in]
+        b2: [auf]
+    known_wrong:
+      - answer: nach
+        feedback_vi: "\"… nữa\" tính từ bây giờ là in zwanzig Minuten; chờ ai là warten auf."
+        error_tag: preposition
+      - answer: für
+        feedback_vi: "\"Hai mươi phút nữa\" là in zwanzig Minuten; \"chờ ai\" là warten auf (không phải für như tiếng Anh)."
+        error_tag: preposition
+      - answer: seit
+        feedback_vi: "seit dùng cho việc đã bắt đầu. Tương lai dùng in; chờ ai là warten auf."
+        error_tag: preposition
+    explanation:
+      vi: "Kiểu Schreiben Teil 1 (SMS): báo lý do, giờ đến, lời nhờ. in zwanzig Minuten = hai mươi phút nữa; warten auf + Akkusativ (auf mich). wartet là mệnh lệnh với ihr vì Lan viết cho nhóm bạn."
+    display_answer: "Hallo Jonas, mein Bus hat Verspätung. Ich komme in zwanzig Minuten. Bitte wartet auf mich! Bis gleich, Lan"
+
+  - key: de:exercise:a2u08l5-fill-email-formell
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-g-verben-praeposition
+    prompt:
+      template: "{{b1}} geehrte Frau Schmidt, leider kann ich am Montag nicht zum Kurs kommen, weil ich krank {{b2}}. Können Sie mir bitte die Hausaufgaben schicken? Mit {{b3}} Grüßen, Minh Tran"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [Sehr]
+        b2: [bin]
+        b3: [freundlichen]
+    known_wrong:
+      - answer: freundliche
+        feedback_vi: "Sau mit là Dativ số nhiều, không có mạo từ: Mit freundlichen Grüßen."
+        error_tag: adj_ending
+      - answer: freundlichem
+        feedback_vi: "Grüßen là số nhiều Dativ, nên tính từ có đuôi -en: Mit freundlichen Grüßen."
+        error_tag: adj_ending
+    explanation:
+      vi: "Kiểu Schreiben Teil 2 (e-mail trang trọng): mở đầu Sehr geehrte Frau …, kết thúc Mit freundlichen Grüßen. Trong câu phụ với weil, động từ bin đứng cuối."
+    display_answer: "Sehr geehrte Frau Schmidt, leider kann ich am Montag nicht zum Kurs kommen, weil ich krank bin. Können Sie mir bitte die Hausaufgaben schicken? Mit freundlichen Grüßen, Minh Tran"
+
+  - key: de:exercise:a2u08l5-tr-vor-dem-kino
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-warten-auf
+    prompt:
+      source_text: Mình đang chờ bạn ở trước rạp chiếu phim. (tin nhắn cho bạn thân)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich warte vor dem Kino auf dich.
+        - Vor dem Kino warte ich auf dich.
+        - Ich warte auf dich vor dem Kino.
+        - Ich warte gerade vor dem Kino auf dich.
+    known_wrong:
+      - answer: Ich warte vor dem Kino für dich.
+        feedback_vi: "warten đi với auf: Ich warte auf dich."
+        error_tag: preposition
+      - answer: Ich warte vor das Kino auf dich.
+        feedback_vi: "Chỉ chỗ đứng (Wo?) thì vor + Dativ: vor dem Kino."
+        error_tag: case_dat_akk
+      - answer: Ich warte vor dem Kino auf dir.
+        feedback_vi: "warten auf + Akkusativ: du → dich."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "warten auf + Akkusativ (auf dich); vor dem Kino = trước rạp chiếu phim (vor + Dativ vì chỉ nơi chốn, trả lời câu hỏi Wo?)."
+    display_answer: Ich warte vor dem Kino auf dich.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u08l5-wb-weil-arbeiten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-g-verben-praeposition
+    prompt:
+      instruction: "Bạn trả lời một lời mời bằng e-mail. Sắp xếp thành câu: \"Tôi không đến được, vì tôi phải làm việc.\""
+      tokens:
+        - { id: k-muss, text: muss }
+        - { id: k-ich1, text: ich }
+        - { id: k-kommen, text: kommen }
+        - { id: k-weil, text: weil }
+        - { id: k-arbeiten, text: arbeiten }
+        - { id: k-nicht, text: nicht }
+        - { id: k-ich2, text: ich }
+        - { id: k-kann, text: kann }
+    answer:
+      orders:
+        - [k-ich1, k-kann, k-nicht, k-kommen, k-weil, k-ich2, k-arbeiten, k-muss]
+        - [k-ich2, k-kann, k-nicht, k-kommen, k-weil, k-ich1, k-arbeiten, k-muss]
+        - [k-weil, k-ich1, k-arbeiten, k-muss, k-kann, k-ich2, k-nicht, k-kommen]
+        - [k-weil, k-ich2, k-arbeiten, k-muss, k-kann, k-ich1, k-nicht, k-kommen]
+    explanation:
+      vi: "Câu chính: kann ở vị trí 2, nguyên thể kommen cuối. Câu phụ weil: động từ chia muss đứng cuối, sau arbeiten. Nếu câu weil đứng đầu, động từ kann của câu chính đứng ngay sau dấu phẩy: Weil ich arbeiten muss, kann ich nicht kommen."
+    display_answer: Ich kann nicht kommen, weil ich arbeiten muss.
+
+  - key: de:exercise:a2u08l5-wb-treffen-bahnhof
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-g-vorschlag-wir
+    prompt:
+      instruction: "Kiểu Sprechen Teil 3. Sắp xếp thành lời đề nghị: \"Ba giờ mình gặp nhau ở nhà ga nhé?\""
+      tokens:
+        - { id: t-bahnhof, text: Bahnhof }
+        - { id: t-uns, text: uns }
+        - { id: t-treffen, text: treffen }
+        - { id: t-um, text: um }
+        - { id: t-wollen, text: wollen }
+        - { id: t-uhr, text: Uhr }
+        - { id: t-am, text: am }
+        - { id: t-drei, text: drei }
+        - { id: t-wir, text: wir }
+    answer:
+      orders:
+        - [t-wollen, t-wir, t-uns, t-um, t-drei, t-uhr, t-am, t-bahnhof, t-treffen]
+        - [t-wollen, t-wir, t-uns, t-am, t-bahnhof, t-um, t-drei, t-uhr, t-treffen]
+    explanation:
+      vi: "Wollen wir …? + nguyên thể cuối câu (treffen). sich treffen là động từ phản thân: wir … uns, uns đứng ngay sau wir. Thời gian (um drei Uhr) thường đứng trước nơi chốn (am Bahnhof)."
+    display_answer: Wollen wir uns um drei Uhr am Bahnhof treffen?
+
+  - key: de:exercise:a2u08l5-tr-deutschkurs-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u08-g-praesens-zukunft
+    prompt:
+      source_text: Im Sommer mache ich einen Deutschkurs, weil ich in Deutschland studieren möchte.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mùa hè này tôi học một khóa tiếng Đức vì tôi muốn học đại học ở Đức.
+        - Mùa hè tôi học một khóa tiếng Đức vì tôi muốn học đại học ở Đức.
+        - Mùa hè này tôi sẽ học một khóa tiếng Đức vì tôi muốn học đại học ở Đức.
+        - Mùa hè tôi sẽ học một khóa tiếng Đức vì tôi muốn học đại học ở Đức.
+        - Mùa hè này tôi đi học một khóa tiếng Đức vì tôi muốn học đại học ở Đức.
+        - Vào mùa hè tôi học một khóa tiếng Đức vì tôi muốn học đại học ở Đức.
+        - Mùa hè này tôi học một khóa tiếng Đức, vì tôi muốn học đại học ở Đức.
+        - Mùa hè này tôi học tiếng Đức vì tôi muốn học đại học ở Đức.
+        - Mùa hè này tôi học một khóa tiếng Đức vì tôi muốn đi du học Đức.
+        - Mùa hè này tôi học một khóa tiếng Đức vì tôi muốn du học ở Đức.
+        - Mùa hè này mình học một khóa tiếng Đức vì mình muốn học đại học ở Đức.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Im Sommer + Präsens (mache) = kế hoạch mùa hè sắp tới; weil = vì, động từ möchte đứng cuối câu phụ; studieren = học đại học."
+    display_answer: Mùa hè này tôi học một khóa tiếng Đức vì tôi muốn học đại học ở Đức.

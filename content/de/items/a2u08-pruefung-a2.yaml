@@ -1,0 +1,1454 @@
+# Học liệu unit A2U08 "Tương lai, môi trường và thi A2" (Zukunft, Umwelt, Goethe-Zertifikat A2), chương trình de:program:a2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (A2U08L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# Động từ đi với giới từ ghi dạng `phrase` ("warten auf (+ Akkusativ)") để không trùng lemma với động từ đơn (denken ở A2U03).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Kế hoạch và mong muốn – động từ + giới từ =================
+  - key: de:item:a2u08-g-verben-praeposition
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Verben mit Präposition: warten auf, denken an, sich freuen auf/über, Angst haben vor"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nhiều động từ đi với một giới từ cố định, và giới từ đó quyết định cách: warten auf + Akkusativ, denken an + Akkusativ, sich interessieren für + Akkusativ, Angst haben vor + Dativ, träumen von + Dativ. Giới từ ở đây thường không dịch sát sang tiếng Việt (warten auf = chờ, không phải \"chờ trên\"), nên bạn học thuộc cả cụm: động từ + giới từ + cách."
+      examples:
+        - target: Ich warte auf den Bus.
+          translation:
+            vi: Tôi đang chờ xe buýt.
+        - target: Wir denken oft an unsere Familie in Vietnam.
+          translation:
+            vi: Chúng tôi hay nghĩ đến gia đình ở Việt Nam.
+        - target: Hast du Angst vor der Prüfung?
+          translation:
+            vi: Bạn có sợ kỳ thi không?
+      confusion:
+        vi: "Trong các cụm của bài này, auf, an, für, über đi với Akkusativ (auf den Bus, an dich); von và vor đi với Dativ (von einer Reise, vor der Prüfung). Đừng dịch theo tiếng Anh: wait for = warten auf, không phải warten für."
+
+  - key: de:item:a2u08-g-praesens-zukunft
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Präsens für die Zukunft: Nächstes Jahr mache ich einen Sprachkurs."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để nói việc sắp làm hoặc đã lên kế hoạch, người Đức thường dùng thì hiện tại kèm một mốc thời gian tương lai (morgen, nächste Woche, im Sommer). Giống tiếng Việt \"Mai tôi đi Hà Nội\": mốc thời gian đã cho biết là tương lai. Mốc thời gian đứng đầu câu thì động từ vẫn ở vị trí 2."
+      examples:
+        - target: Morgen fahre ich nach Hamburg.
+          translation:
+            vi: Ngày mai tôi đi Hamburg.
+        - target: Im Sommer fliegen wir nach Vietnam.
+          translation:
+            vi: Mùa hè này chúng tôi bay về Việt Nam.
+        - target: Was machst du nächstes Wochenende?
+          translation:
+            vi: Cuối tuần sau bạn làm gì?
+      confusion:
+        vi: "Tiếng Đức còn có thì tương lai werden + nguyên thể (Futur I, học ở B1), nhưng khi đã có mốc thời gian rõ ràng, Präsens thường tự nhiên hơn trong giao tiếp. Không có mốc thời gian hay ngữ cảnh, câu Präsens thường được hiểu là việc hiện tại."
+
+  - key: de:item:a2u08-sich-freuen-auf
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "sich freuen auf / über (+ Akkusativ)"
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: "mong chờ, háo hức (auf: việc sắp tới); vui vì, mừng vì (über: việc đã có, đã xảy ra)"
+      examples:
+        - target: Ich freue mich auf die Ferien.
+          translation:
+            vi: Tôi đang mong tới kỳ nghỉ.
+        - target: Ich habe mich sehr über dein Geschenk gefreut.
+          translation:
+            vi: Mình rất vui vì món quà của bạn.
+        - target: Freust du dich auf das Konzert?
+          translation:
+            vi: Bạn có háo hức chờ buổi hòa nhạc không?
+      confusion:
+        vi: "Động từ phản thân: ich freue mich, du freust dich, er freut sich. Ngoài ra có sich freuen für + Akkusativ = mừng cho ai: Ich freue mich für dich."
+
+  - key: de:item:a2u08-warten-auf
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "warten auf (+ Akkusativ)"
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: chờ, đợi (ai, cái gì)
+      examples:
+        - target: Ich warte schon zehn Minuten auf den Bus.
+          translation:
+            vi: Tôi đã chờ xe buýt mười phút rồi.
+        - target: Wartest du auf mich?
+          translation:
+            vi: Bạn có đợi mình không?
+      confusion:
+        vi: "Không dùng für như tiếng Anh \"wait for\": Ich warte auf dich. Chỉ nói chờ bao lâu thì không cần giới từ: Ich warte zehn Minuten."
+
+  - key: de:item:a2u08-denken-an
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "denken an (+ Akkusativ)"
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: nghĩ đến, nhớ đến (ai, cái gì)
+      examples:
+        - target: Ich denke oft an meine Oma.
+          translation:
+            vi: Tôi hay nghĩ đến bà.
+        - target: Denk bitte an den Termin am Montag!
+          translation:
+            vi: Nhớ cái hẹn hôm thứ Hai nhé!
+      confusion:
+        vi: "denken an = nghĩ đến, nhớ đến (đừng quên); nêu ý kiến thì dùng denken, dass … hoặc finden. Dạng quá khứ bất quy tắc: dachte, hat gedacht."
+
+  - key: de:item:a2u08-sich-interessieren-fuer
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "sich interessieren für (+ Akkusativ)"
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: quan tâm đến, thích tìm hiểu về
+      examples:
+        - target: Ich interessiere mich für Fotografie.
+          translation:
+            vi: Tôi thích tìm hiểu về nhiếp ảnh.
+        - target: Interessierst du dich für Fußball?
+          translation:
+            vi: Bạn có quan tâm đến bóng đá không?
+      confusion:
+        vi: "Đừng quên đại từ phản thân: ich interessiere mich, du interessierst dich. Tính từ interessant nghĩa là \"thú vị\": Das Buch ist interessant."
+
+  - key: de:item:a2u08-angst-haben-vor
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "Angst haben vor (+ Dativ)"
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: sợ (ai, cái gì)
+      examples:
+        - target: Mein Sohn hat Angst vor Hunden.
+          translation:
+            vi: Con trai tôi sợ chó.
+        - target: Ich habe ein bisschen Angst vor der Prüfung.
+          translation:
+            vi: Tôi hơi sợ kỳ thi.
+      confusion:
+        vi: "vor trong cụm này đi với Dativ: vor dem Hund, vor der Prüfung, vor Hunden (danh từ số nhiều ở Dativ thêm -n). Angst là danh từ (die Angst) nên viết hoa."
+
+  - key: de:item:a2u08-traeumen-von
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "träumen von (+ Dativ)"
+      pos: cụm động từ
+    back:
+      meaning:
+        vi: mơ về, mơ ước (điều gì)
+      examples:
+        - target: Ich träume von einer Reise nach Japan.
+          translation:
+            vi: Tôi mơ được đi du lịch Nhật Bản.
+        - target: Sie träumt von einem eigenen Café.
+          translation:
+            vi: Cô ấy mơ có một quán cà phê của riêng mình.
+      confusion:
+        vi: "von đi với Dativ: von einem Haus, von einer Reise. Danh từ tương ứng: der Traum, die Träume."
+
+  - key: de:item:a2u08-plan
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Plan, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: kế hoạch, dự định
+      examples:
+        - target: Hast du schon Pläne für den Sommer?
+          translation:
+            vi: Bạn đã có kế hoạch gì cho mùa hè chưa?
+        - target: Das ist ein guter Plan!
+          translation:
+            vi: Kế hoạch hay đấy!
+      confusion:
+        vi: "Số nhiều có biến âm: die Pläne. der Fahrplan (lịch tàu xe) và der Stadtplan (bản đồ thành phố) là từ ghép với Plan."
+
+  - key: de:item:a2u08-wunsch
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Wunsch, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: mong muốn, điều ước
+      examples:
+        - target: Hast du einen Wunsch zum Geburtstag?
+          translation:
+            vi: Sinh nhật bạn muốn quà gì không?
+        - target: Mein größter Wunsch ist eine Reise um die Welt.
+          translation:
+            vi: Mong muốn lớn nhất của tôi là một chuyến đi vòng quanh thế giới.
+      confusion:
+        vi: "Số nhiều: die Wünsche. Động từ: wünschen – Ich wünsche dir alles Gute!"
+
+  - key: de:item:a2u08-zukunft
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Zukunft (Sg.)
+      ipa: /ˈtsuːkʊnft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tương lai
+      examples:
+        - target: Was sind deine Pläne für die Zukunft?
+          translation:
+            vi: Kế hoạch tương lai của bạn là gì?
+        - target: In Zukunft fahre ich mit dem Fahrrad zur Arbeit.
+          translation:
+            vi: Từ nay về sau tôi sẽ đi làm bằng xe đạp.
+      pronunciation_note:
+        vi: z đầu từ đọc là "ts"; nhấn vào âm tiết đầu ZU-kunft, u đầu dài.
+      confusion:
+        vi: "in Zukunft = từ nay về sau; in der Zukunft = trong tương lai (nói chung, thường xa hơn)."
+
+  - key: de:item:a2u08-vorhaben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: vorhaben, hat vor, hatte vor, hat vorgehabt
+      pos: động từ
+    back:
+      meaning:
+        vi: dự định, có kế hoạch (làm gì)
+      examples:
+        - target: Was hast du am Wochenende vor?
+          translation:
+            vi: Cuối tuần bạn định làm gì?
+        - target: Wir haben vor, im Sommer nach Vietnam zu fliegen.
+          translation:
+            vi: Chúng tôi định mùa hè bay về Việt Nam.
+      confusion:
+        vi: "Động từ tách: Ich habe heute nichts vor. Có thể nối với zu + nguyên thể: Ich habe vor, … zu …"
+
+  # Zusatzwortschatz (từ bổ sung, trường: dự định)
+  - key: de:item:a2u08-traum
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Traum, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấc mơ; ước mơ
+      examples:
+        - target: Mein Traum ist ein kleines Haus am Meer.
+          translation:
+            vi: Ước mơ của tôi là một ngôi nhà nhỏ bên biển.
+        - target: Ich hatte heute Nacht einen komischen Traum.
+          translation:
+            vi: Đêm qua tôi có một giấc mơ kỳ lạ.
+      confusion:
+        vi: "Số nhiều: die Träume. Động từ: träumen von + Dativ."
+
+  # Zusatzwortschatz (từ bổ sung, trường: dự định)
+  - key: de:item:a2u08-hoffen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: hoffen
+      pos: động từ
+    back:
+      meaning:
+        vi: hy vọng
+      examples:
+        - target: Ich hoffe, du hast am Samstag Zeit.
+          translation:
+            vi: Mình hy vọng thứ Bảy bạn rảnh.
+        - target: Wir hoffen, dass das Wetter schön bleibt.
+          translation:
+            vi: Chúng tôi hy vọng trời vẫn đẹp.
+      confusion:
+        vi: "Sau hoffen có thể dùng câu phụ với dass (động từ cuối) hoặc câu chính bình thường. hoffen auf + Akkusativ = trông mong vào: Wir hoffen auf gutes Wetter."
+
+  # Zusatzwortschatz (từ bổ sung, trường: dự định)
+  - key: de:item:a2u08-irgendwann
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: irgendwann
+      pos: trạng từ
+    back:
+      meaning:
+        vi: một lúc nào đó (chưa biết khi nào)
+      examples:
+        - target: Irgendwann möchte ich in Deutschland arbeiten.
+          translation:
+            vi: Một lúc nào đó tôi muốn làm việc ở Đức.
+        - target: Wir sehen uns bestimmt irgendwann wieder.
+          translation:
+            vi: Chắc chắn một lúc nào đó chúng ta sẽ gặp lại nhau.
+
+  # Zusatzwortschatz (từ bổ sung, trường: dự định)
+  - key: de:item:a2u08-weltreise
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Weltreise, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến du lịch vòng quanh thế giới
+      examples:
+        - target: Nach dem Studium macht sie eine Weltreise.
+          translation:
+            vi: Học xong đại học, cô ấy sẽ đi du lịch vòng quanh thế giới.
+        - target: Eine Weltreise ist mein großer Traum.
+          translation:
+            vi: Đi vòng quanh thế giới là ước mơ lớn của tôi.
+      confusion:
+        vi: "Từ ghép die Welt (thế giới) + die Reise (chuyến đi), giống theo từ cuối: die Weltreise. Đi chuyến này: eine Weltreise machen."
+
+  # ================= Bài 2: Phân loại rác – nguyên thể làm mệnh lệnh =================
+  - key: de:item:a2u08-g-infinitiv-aufforderung
+    type: grammar_point
+    level: a2
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Infinitiv als Aufforderung: Bitte nicht rauchen! Flaschen hier einwerfen."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Trên biển báo, nội quy, hướng dẫn, người Đức hay dùng động từ nguyên thể đặt cuối câu thay cho câu mệnh lệnh: Bitte nicht rauchen! Động từ tách giữ nguyên, không bị tách: Flaschen hier einwerfen. Cách viết này ngắn, trung tính, không cần chọn du hay Sie."
+      examples:
+        - target: Bitte nicht rauchen!
+          translation:
+            vi: Xin đừng hút thuốc!
+        - target: Papier hier einwerfen.
+          translation:
+            vi: Bỏ giấy vào đây.
+        - target: Bitte den Müll trennen!
+          translation:
+            vi: Vui lòng phân loại rác!
+      confusion:
+        vi: "Không chia động từ: Bitte nicht rauchen (không phải Bitte nicht raucht). Khi nói trực tiếp với một người, bạn vẫn dùng câu mệnh lệnh: Bitte rauchen Sie hier nicht!"
+
+  - key: de:item:a2u08-muell
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Müll (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: rác
+      examples:
+        - target: Wer bringt heute den Müll weg?
+          translation:
+            vi: Hôm nay ai đi đổ rác?
+        - target: Wir produzieren zu viel Müll.
+          translation:
+            vi: Chúng ta thải ra quá nhiều rác.
+      pronunciation_note:
+        vi: ü ngắn (trước ll) – đọc như "i" nhưng tròn môi.
+      confusion:
+        vi: "Không đếm được: viel Müll, keinen Müll. der Abfall gần nghĩa, hay gặp trên biển báo và văn bản."
+
+  - key: de:item:a2u08-trennen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: trennen
+      pos: động từ
+    back:
+      meaning:
+        vi: tách riêng, phân loại (rác)
+      examples:
+        - target: In Deutschland trennt man den Müll.
+          translation:
+            vi: Ở Đức người ta phân loại rác.
+        - target: Trennst du zu Hause den Müll?
+          translation:
+            vi: Ở nhà bạn có phân loại rác không?
+      confusion:
+        vi: "sich trennen (chia tay) là nghĩa khác, bạn sẽ học ở B1."
+
+  - key: de:item:a2u08-umwelt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: die Umwelt (Sg.)
+      ipa: /ˈʊmvɛlt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: môi trường
+      examples:
+        - target: Plastik ist schlecht für die Umwelt.
+          translation:
+            vi: Nhựa có hại cho môi trường.
+        - target: Ich fahre mit dem Fahrrad – das ist gut für die Umwelt.
+          translation:
+            vi: Tôi đi xe đạp – như vậy tốt cho môi trường.
+      pronunciation_note:
+        vi: w đọc như "v"; nhấn âm đầu UM-welt.
+
+  - key: de:item:a2u08-pfand
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Pfand (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền cọc (cho chai, lon – được trả lại khi mang vỏ trả)
+      examples:
+        - target: Auf diese Flasche gibt es Pfand.
+          translation:
+            vi: Chai này có tiền cọc.
+        - target: Ich bringe die Flaschen in den Supermarkt und bekomme das Pfand zurück.
+          translation:
+            vi: Tôi mang chai đến siêu thị và nhận lại tiền cọc.
+      pronunciation_note:
+        vi: pf đọc liền một hơi – môi khép như p rồi bật ra thành f.
+      confusion:
+        vi: "Ở Đức nhiều chai nhựa, chai thủy tinh và lon đồ uống có Pfand; bạn trả vỏ ở máy hoặc quầy trong siêu thị. Mức tiền và loại vỏ có Pfand có thể thay đổi."
+
+  - key: de:item:a2u08-muelltonne
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Mülltonne, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thùng rác lớn (ở sân, trước nhà)
+      examples:
+        - target: Die Mülltonnen stehen im Hof.
+          translation:
+            vi: Các thùng rác để ở sân trong.
+        - target: Bei uns ist die gelbe Tonne für Verpackungen aus Plastik und Metall.
+          translation:
+            vi: Ở chỗ chúng tôi, thùng vàng dành cho bao bì bằng nhựa và kim loại.
+      confusion:
+        vi: "Ở nhiều nơi: thùng vàng cho bao bì nhựa, kim loại; thùng xanh dương cho giấy; thùng nâu cho rác hữu cơ; thùng đen hoặc xám cho rác còn lại. Màu và quy định khác nhau tùy địa phương; thùng nhỏ trong nhà gọi là der Mülleimer."
+
+  - key: de:item:a2u08-papier
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Papier (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy
+      examples:
+        - target: Bei uns kommt altes Papier in die blaue Tonne.
+          translation:
+            vi: Ở chỗ chúng tôi, giấy cũ bỏ vào thùng xanh dương.
+        - target: Hast du ein Blatt Papier für mich?
+          translation:
+            vi: Bạn có tờ giấy nào cho mình không?
+      confusion:
+        vi: "Số nhiều die Papiere thường mang nghĩa khác: giấy tờ (tùy thân)."
+
+  - key: de:item:a2u08-plastik
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Plastik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhựa, đồ nhựa
+      examples:
+        - target: Die Flasche ist aus Plastik.
+          translation:
+            vi: Cái chai làm bằng nhựa.
+        - target: Ich kaufe Obst ohne Plastik.
+          translation:
+            vi: Tôi mua trái cây không bọc nhựa.
+      confusion:
+        vi: "Viết với k: Plastik. die Plastik (giống cái) là từ khác, nghĩa là tác phẩm điêu khắc."
+
+  - key: de:item:a2u08-biomuell
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: der Biomüll (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: rác hữu cơ (vỏ rau quả, thức ăn thừa)
+      examples:
+        - target: Kartoffelschalen sind Biomüll.
+          translation:
+            vi: Vỏ khoai tây là rác hữu cơ.
+        - target: Bei uns kommt der Biomüll in die braune Tonne.
+          translation:
+            vi: Ở chỗ chúng tôi, rác hữu cơ bỏ vào thùng nâu.
+      confusion:
+        vi: "Từ ghép bio + der Müll nên là der Biomüll. Thùng đựng: die Biotonne."
+
+  - key: de:item:a2u08-sparen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: sparen
+      pos: động từ
+    back:
+      meaning:
+        vi: tiết kiệm; để dành (tiền)
+      examples:
+        - target: Wir sparen Wasser und Strom.
+          translation:
+            vi: Chúng tôi tiết kiệm nước và điện.
+        - target: Ich spare für eine Weltreise.
+          translation:
+            vi: Tôi để dành tiền cho một chuyến đi vòng quanh thế giới.
+      confusion:
+        vi: "sparen + Akkusativ: Geld sparen, Wasser sparen. sparen für + Akkusativ = để dành tiền cho việc gì."
+
+  - key: de:item:a2u08-wegwerfen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wegwerfen, wirft weg, warf weg, hat weggeworfen
+      pos: động từ
+    back:
+      meaning:
+        vi: vứt đi, bỏ đi
+      examples:
+        - target: Wir werfen zu viele Lebensmittel weg.
+          translation:
+            vi: Chúng ta vứt đi quá nhiều thực phẩm.
+        - target: Wirf die Flasche nicht weg – es gibt Pfand!
+          translation:
+            vi: Đừng vứt cái chai – có tiền cọc đấy!
+      confusion:
+        vi: "Động từ tách: ich werfe … weg. Trên biển báo dùng nguyên thể, không tách: Keinen Müll wegwerfen!"
+
+  # Zusatzwortschatz (từ bổ sung, trường: rác, môi trường)
+  - key: de:item:a2u08-dose
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Dose, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lon, hộp (kim loại)
+      examples:
+        - target: Ich kaufe eine Dose Tomaten.
+          translation:
+            vi: Tôi mua một hộp cà chua.
+        - target: Auf diese Dose gibt es Pfand.
+          translation:
+            vi: Lon này có tiền cọc.
+      confusion:
+        vi: "Lon đồ uống ở Đức thường có Pfand nên mang trả ở siêu thị; hộp đựng thực phẩm thì thường bỏ vào thùng cho bao bì (quy định tùy nơi)."
+
+  # Zusatzwortschatz (từ bổ sung, trường: rác, môi trường)
+  - key: de:item:a2u08-batterie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Batterie, -n"
+      ipa: /batəˈʁiː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: pin
+      examples:
+        - target: Alte Batterien gehören nicht in den Hausmüll.
+          translation:
+            vi: Pin cũ không được bỏ vào rác sinh hoạt.
+        - target: Wo kann ich alte Batterien abgeben?
+          translation:
+            vi: Tôi có thể nộp pin cũ ở đâu?
+      pronunciation_note:
+        vi: Nhấn vào âm tiết cuối -RIE, ie đọc "i" dài.
+      confusion:
+        vi: "Pin cũ không bỏ vào thùng rác thường; ở Đức thường có hộp thu gom trong siêu thị, cửa hàng (quy định có thể thay đổi)."
+
+  # Zusatzwortschatz (từ bổ sung, trường: rác, môi trường)
+  - key: de:item:a2u08-abfall
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Abfall, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: rác, chất thải
+      examples:
+        - target: Bitte keinen Abfall auf den Boden werfen!
+          translation:
+            vi: Vui lòng không vứt rác xuống đất!
+        - target: Im Park liegt viel Abfall.
+          translation:
+            vi: Trong công viên có nhiều rác.
+      confusion:
+        vi: "Gần nghĩa der Müll; der Abfall hơi trang trọng hơn, hay gặp trên biển báo và trong văn bản. Số nhiều die Abfälle (các loại rác)."
+
+  # Zusatzwortschatz (từ bổ sung, trường: rác, môi trường)
+  - key: de:item:a2u08-tuete
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Tüte, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: túi (ni lông, giấy – loại dùng khi mua hàng)
+      examples:
+        - target: Brauchen Sie eine Tüte?
+          translation:
+            vi: Anh/chị có cần túi không?
+        - target: Ich nehme meine eigene Tasche mit, dann brauche ich keine Tüte.
+          translation:
+            vi: Tôi mang túi riêng theo, nên không cần túi ni lông.
+      confusion:
+        vi: "die Tasche là túi xách, túi dùng nhiều lần; die Tüte là túi đựng hàng. Ở siêu thị Đức, túi thường phải trả tiền (có thể thay đổi)."
+
+  # Zusatzwortschatz (từ bổ sung, trường: rác, môi trường)
+  - key: de:item:a2u08-altglas
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Altglas (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chai lọ thủy tinh cũ (để tái chế)
+      examples:
+        - target: Das Altglas bringen wir zum Container an der Ecke.
+          translation:
+            vi: Chai lọ thủy tinh cũ thì chúng tôi mang ra thùng thu gom ở góc phố.
+        - target: Altglas trennt man nach Farben – weiß, grün und braun.
+          translation:
+            vi: Thủy tinh cũ được phân theo màu – trắng, xanh lá và nâu.
+      confusion:
+        vi: "Từ ghép alt (cũ) + das Glas. Chai có Pfand thì mang trả ở siêu thị, không bỏ vào thùng Altglas."
+
+  # Zusatzwortschatz (từ bổ sung, trường: rác, môi trường)
+  - key: de:item:a2u08-schild
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "das Schild, -er"
+      pos: danh từ
+    back:
+      meaning:
+        vi: biển báo, tấm biển
+      examples:
+        - target: Was steht auf dem Schild?
+          translation:
+            vi: Trên biển ghi gì vậy?
+        - target: "Auf dem Schild steht: Bitte nicht rauchen!"
+          translation:
+            vi: "Trên biển ghi: Xin đừng hút thuốc!"
+      confusion:
+        vi: "Biển báo là das Schild, số nhiều die Schilder. der Schild (cái khiên) là từ khác."
+
+  # ================= Bài 3: Thông báo ở nhà ga – giới từ thời gian =================
+  - key: de:item:a2u08-g-zeit-praepositionen
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Temporale Präpositionen: ab Montag, bis Freitag, in zwei Tagen, für eine Woche, über das Wochenende, zwischen acht und zehn Uhr"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "ab = bắt đầu từ (thường từ nay về sau), bis = cho đến, zwischen + Dativ = trong khoảng giữa hai mốc. in + Dativ nói \"… nữa\" (in zwei Tagen = hai ngày nữa), für + Akkusativ nói thời gian dự định (für eine Woche = (đi) một tuần). über + Akkusativ = suốt dịp: über das Wochenende, über Ostern."
+      examples:
+        - target: Ab Montag fährt der Bus alle zehn Minuten.
+          translation:
+            vi: Từ thứ Hai xe buýt chạy mười phút một chuyến.
+        - target: In zwei Wochen beginnt mein Deutschkurs.
+          translation:
+            vi: Hai tuần nữa khóa tiếng Đức của tôi bắt đầu.
+        - target: Wir fahren für eine Woche nach Italien.
+          translation:
+            vi: Chúng tôi đi Ý một tuần.
+      confusion:
+        vi: "Đừng nhầm: seit = từ … đến nay (việc đã bắt đầu), ab = từ … trở đi; vor zwei Tagen = cách đây hai ngày, in zwei Tagen = hai ngày nữa. Trước ngày tháng có mạo từ thì dùng bis zum, ab dem: bis zum 5. Mai."
+
+  - key: de:item:a2u08-durchsage
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Durchsage, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông báo (qua loa phóng thanh)
+      examples:
+        - target: Hast du die Durchsage verstanden?
+          translation:
+            vi: Bạn có nghe rõ thông báo không?
+        - target: Am Bahnhof gibt es oft Durchsagen.
+          translation:
+            vi: Ở ga thường có thông báo qua loa.
+      confusion:
+        vi: "Gốc từ durchsagen (thông báo qua loa). Thông báo trên giấy, trên bảng thì gọi là die Information hoặc der Hinweis."
+
+  - key: de:item:a2u08-bahnsteig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Bahnsteig, -e"
+      ipa: /ˈbaːnʃtaɪ̯k/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân ga, ke ga
+      examples:
+        - target: Wir treffen uns am Bahnsteig.
+          translation:
+            vi: Chúng ta gặp nhau ở sân ga.
+        - target: Bitte warten Sie auf dem Bahnsteig hinter der weißen Linie.
+          translation:
+            vi: Xin quý khách đứng chờ trên sân ga, sau vạch trắng.
+      pronunciation_note:
+        vi: st ở đầu phần từ steig đọc "scht"; g cuối từ đọc như "k".
+      confusion:
+        vi: "das Gleis là đường ray (có số: Gleis 5); der Bahnsteig là sân ga nơi bạn đứng chờ; một sân ga có thể phục vụ hai đường ray."
+
+  - key: de:item:a2u08-ausfallen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausfallen, fällt aus, fiel aus, ist ausgefallen
+      pos: động từ
+    back:
+      meaning:
+        vi: bị hủy, không diễn ra (chuyến tàu, buổi học …)
+      examples:
+        - target: Der Zug nach Köln fällt heute aus.
+          translation:
+            vi: Hôm nay chuyến tàu đi Köln bị hủy.
+        - target: Der Deutschkurs ist gestern ausgefallen.
+          translation:
+            vi: Hôm qua buổi học tiếng Đức bị hủy.
+      confusion:
+        vi: "Chủ ngữ là sự việc (Zug, Kurs). Perfekt dùng sein: ist ausgefallen. Người chủ động hủy hẹn thì dùng absagen (bài 4)."
+
+  - key: de:item:a2u08-baustelle
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Baustelle, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: công trường (chỗ đang xây, đang sửa đường)
+      examples:
+        - target: Vor unserem Haus ist eine Baustelle.
+          translation:
+            vi: Trước nhà chúng tôi có công trường.
+        - target: Zwischen Bonn und Köln gibt es eine Baustelle.
+          translation:
+            vi: Giữa Bonn và Köln có một đoạn đang thi công.
+      confusion:
+        vi: "Từ ghép bauen (xây) + die Stelle (chỗ), giống theo từ cuối: die Baustelle."
+
+  - key: de:item:a2u08-umleitung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Umleitung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường vòng, lộ trình tạm (khi đường bị chặn)
+      examples:
+        - target: Der Bus fährt heute eine Umleitung.
+          translation:
+            vi: Hôm nay xe buýt đi đường vòng.
+        - target: Wegen der Baustelle gibt es eine Umleitung.
+          translation:
+            vi: Vì công trường nên có đường vòng.
+      confusion:
+        vi: "Danh từ tạo bằng hậu tố -ung (từ động từ) là giống cái: die Umleitung, die Störung, die Verspätung. (wegen = vì, bạn học kỹ ở B1.)"
+
+  - key: de:item:a2u08-hinweis
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Hinweis, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lưu ý, chỉ dẫn
+      examples:
+        - target: Danke für den Hinweis!
+          translation:
+            vi: Cảm ơn bạn đã nhắc!
+        - target: Auf dem Schild steht ein wichtiger Hinweis.
+          translation:
+            vi: Trên biển có một lưu ý quan trọng.
+      confusion:
+        vi: "Thông báo ở ga hay mở đầu: Ein Hinweis für Reisende … (một lưu ý cho hành khách)."
+
+  - key: de:item:a2u08-einsteigen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: einsteigen, steigt ein, stieg ein, ist eingestiegen
+      pos: động từ
+    back:
+      meaning:
+        vi: lên (tàu, xe)
+      examples:
+        - target: Bitte einsteigen!
+          translation:
+            vi: Mời lên tàu!
+        - target: Ich bin in Köln eingestiegen.
+          translation:
+            vi: Tôi lên tàu ở Köln.
+      confusion:
+        vi: "Động từ tách, Perfekt với sein. Nhóm cùng gốc: einsteigen (lên), aussteigen (xuống), umsteigen (đổi tàu)."
+
+  - key: de:item:a2u08-aussteigen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: aussteigen, steigt aus, stieg aus, ist ausgestiegen
+      pos: động từ
+    back:
+      meaning:
+        vi: xuống (tàu, xe)
+      examples:
+        - target: Wo müssen wir aussteigen?
+          translation:
+            vi: Chúng ta phải xuống ở đâu?
+        - target: An der nächsten Haltestelle steigen wir aus.
+          translation:
+            vi: Đến trạm sau chúng ta xuống.
+      confusion:
+        vi: "Động từ tách: Wir steigen hier aus. Perfekt với sein: Ich bin am Bahnhof ausgestiegen."
+
+  - key: de:item:a2u08-wiederholen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: wiederholen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhắc lại, lặp lại
+      examples:
+        - target: Können Sie das bitte wiederholen?
+          translation:
+            vi: Anh/chị có thể nhắc lại được không?
+        - target: "Ich wiederhole: Der Zug fährt heute von Gleis sieben ab."
+          translation:
+            vi: "Xin nhắc lại: hôm nay tàu chạy từ đường ray số bảy."
+      confusion:
+        vi: "Với nghĩa \"nhắc lại\", wiederholen không tách và không có ge-: ich wiederhole, ich habe wiederholt."
+
+  - key: de:item:a2u08-ersatzverkehr
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ersatzverkehr (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương tiện chạy thay (thường là xe buýt chạy thay tàu)
+      examples:
+        - target: Zwischen Bonn und Köln gibt es einen Ersatzverkehr mit Bussen.
+          translation:
+            vi: Giữa Bonn và Köln có xe buýt chạy thay tàu.
+        - target: Der Ersatzverkehr fährt vor dem Bahnhof ab.
+          translation:
+            vi: Xe chạy thay xuất phát ở trước nhà ga.
+      confusion:
+        vi: "Trên bảng thông báo bạn hay gặp chữ viết tắt SEV (Schienenersatzverkehr = xe chạy thay tàu)."
+
+  # Zusatzwortschatz (từ bổ sung, trường: thông báo giao thông)
+  - key: de:item:a2u08-linie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Linie, -n"
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuyến (xe buýt, tàu điện); đường kẻ, vạch
+      examples:
+        - target: Nehmen Sie die Linie 3 bis zum Bahnhof.
+          translation:
+            vi: Anh/chị đi tuyến số 3 đến nhà ga.
+        - target: Die Linie 5 fährt heute nicht.
+          translation:
+            vi: Hôm nay tuyến số 5 không chạy.
+
+  # Zusatzwortschatz (từ bổ sung, trường: thông báo giao thông)
+  - key: de:item:a2u08-fahrgast
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Fahrgast, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành khách (trên tàu, xe)
+      examples:
+        - target: Liebe Fahrgäste, wir kommen in wenigen Minuten in Hamburg an.
+          translation:
+            vi: Kính thưa quý khách, vài phút nữa chúng ta sẽ đến Hamburg.
+        - target: Alle Fahrgäste müssen hier aussteigen.
+          translation:
+            vi: Tất cả hành khách phải xuống ở đây.
+      confusion:
+        vi: "Số nhiều có biến âm: die Fahrgäste. Thông báo trên tàu, xe hay mở đầu bằng Liebe Fahrgäste …"
+
+  # Zusatzwortschatz (từ bổ sung, trường: thông báo giao thông)
+  - key: de:item:a2u08-voraussichtlich
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: voraussichtlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: dự kiến, theo dự tính
+      examples:
+        - target: Der Zug hat voraussichtlich zwanzig Minuten Verspätung.
+          translation:
+            vi: Tàu dự kiến trễ hai mươi phút.
+        - target: Die Baustelle dauert voraussichtlich bis Mai.
+          translation:
+            vi: Công trường dự kiến kéo dài đến tháng Năm.
+      confusion:
+        vi: "Từ rất hay gặp trong thông báo: thông tin chưa chắc chắn, có thể thay đổi."
+
+  # Zusatzwortschatz (từ bổ sung, trường: thông báo giao thông)
+  - key: de:item:a2u08-gepaeck
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: das Gepäck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành lý
+      examples:
+        - target: Hast du viel Gepäck?
+          translation:
+            vi: Bạn có nhiều hành lý không?
+        - target: Ist das Ihr Gepäck?
+          translation:
+            vi: Đây có phải hành lý của anh/chị không?
+      confusion:
+        vi: "Không đếm được: viel Gepäck (không nói die Gepäcke). Một kiện hành lý: ein Gepäckstück."
+
+  # Zusatzwortschatz (từ bổ sung, trường: thông báo giao thông)
+  - key: de:item:a2u08-gesperrt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gesperrt
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị chặn, bị đóng (đường, ga, lối đi)
+      examples:
+        - target: Die Straße ist bis Freitag gesperrt.
+          translation:
+            vi: Con đường bị chặn đến thứ Sáu.
+        - target: Gleis 4 ist heute gesperrt.
+          translation:
+            vi: Hôm nay đường ray số 4 bị đóng.
+      confusion:
+        vi: "Dùng với sein: Die Straße ist gesperrt. Với cửa hàng, cơ quan thì dùng geschlossen (đóng cửa)."
+
+  # Zusatzwortschatz (từ bổ sung, trường: thông báo giao thông)
+  - key: de:item:a2u08-stoerung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "die Störung, -en"
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cố (kỹ thuật), trục trặc
+      examples:
+        - target: Es gibt eine technische Störung.
+          translation:
+            vi: Có sự cố kỹ thuật.
+        - target: Auf der Linie 2 gibt es zurzeit eine Störung.
+          translation:
+            vi: Hiện tuyến số 2 đang gặp sự cố.
+      confusion:
+        vi: "Hậu tố -ung (stören → die Störung) cho danh từ giống cái. Biển hay gặp: Bitte nicht stören! (Xin đừng làm phiền!)"
+
+  # ================= Bài 4: Cùng lên kế hoạch – đề nghị =================
+  - key: de:item:a2u08-g-vorschlag-wir
+    type: grammar_point
+    level: a2
+    difficulty: 3
+    skill_tags: [grammar]
+    front:
+      text: "Vorschläge: Gehen wir …! Lass uns … gehen! Wollen wir …? Wie wäre es mit …?"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Đề nghị cùng làm gì có bốn mẫu: Gehen wir ins Kino! (động từ đầu câu + wir), Lass uns ins Kino gehen! (nguyên thể cuối câu), Wollen wir ins Kino gehen? (câu hỏi), Wie wäre es mit + Dativ? Tất cả tương đương \"… nhé!\", \"… đi!\" trong tiếng Việt."
+      examples:
+        - target: Gehen wir heute Abend essen!
+          translation:
+            vi: Tối nay mình đi ăn đi!
+        - target: Lass uns am Samstag grillen!
+          translation:
+            vi: Thứ Bảy mình nướng thịt đi!
+        - target: Wollen wir zusammen kochen?
+          translation:
+            vi: Mình cùng nấu ăn nhé?
+        - target: Wie wäre es mit einem Picknick im Park?
+          translation:
+            vi: Đi picnic ở công viên thì sao?
+      confusion:
+        vi: "Lass uns dùng khi nói với một người bạn (du); với nhiều người bạn: Lasst uns …; trang trọng: Lassen Sie uns … Nguyên thể đứng cuối câu: Lass uns ins Kino gehen (không phải Lass uns gehen ins Kino)."
+
+  - key: de:item:a2u08-planen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: planen
+      pos: động từ
+    back:
+      meaning:
+        vi: lên kế hoạch
+      examples:
+        - target: Wir planen eine Party für Lena.
+          translation:
+            vi: Chúng tôi đang lên kế hoạch tổ chức một bữa tiệc cho Lena.
+        - target: Was plant ihr für den Sommer?
+          translation:
+            vi: Các bạn định làm gì vào mùa hè?
+      confusion:
+        vi: "Danh từ: der Plan, die Pläne. planen là động từ có quy tắc: ich plane, ich habe geplant."
+
+  - key: de:item:a2u08-vorschlagen
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vorschlagen, schlägt vor, schlug vor, hat vorgeschlagen
+      pos: động từ
+    back:
+      meaning:
+        vi: đề nghị, đề xuất
+      examples:
+        - target: Was schlägst du vor?
+          translation:
+            vi: Bạn đề xuất gì?
+        - target: Ich schlage vor, wir treffen uns um acht.
+          translation:
+            vi: Mình đề nghị tám giờ gặp nhau.
+      confusion:
+        vi: "Động từ tách và đổi nguyên âm: ich schlage vor, du schlägst vor. Danh từ: der Vorschlag."
+
+  - key: de:item:a2u08-organisieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: organisieren
+      pos: động từ
+    back:
+      meaning:
+        vi: tổ chức, lo liệu
+      examples:
+        - target: Wer organisiert die Party?
+          translation:
+            vi: Ai tổ chức bữa tiệc?
+        - target: Ich habe schon alles organisiert.
+          translation:
+            vi: Mình đã lo xong mọi thứ rồi.
+      confusion:
+        vi: "Động từ đuôi -ieren không có ge- ở Partizip: organisiert."
+
+  - key: de:item:a2u08-idee
+    type: vocab
+    level: a2
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: "die Idee, -n"
+      ipa: /iˈdeː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý tưởng, ý kiến
+      examples:
+        - target: Hast du eine Idee für das Wochenende?
+          translation:
+            vi: Bạn có ý tưởng gì cho cuối tuần không?
+        - target: Das ist eine tolle Idee!
+          translation:
+            vi: Ý tưởng tuyệt quá!
+      pronunciation_note:
+        vi: Nhấn âm sau i-DEE, ee đọc "ê" dài. Số nhiều die Ideen có ba âm tiết i-DE-en.
+      confusion:
+        vi: "Câu đáp ngắn Gute Idee! (đã học) dùng để đồng ý với một đề nghị."
+
+  - key: de:item:a2u08-einverstanden
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: einverstanden
+      pos: tính từ
+    back:
+      meaning:
+        vi: đồng ý
+      examples:
+        - target: Treffen wir uns um sieben? – Einverstanden!
+          translation:
+            vi: Bảy giờ mình gặp nhau nhé? – Đồng ý!
+        - target: Bist du einverstanden?
+          translation:
+            vi: Bạn có đồng ý không?
+      confusion:
+        vi: "Đi với sein: Ich bin einverstanden (không nói Ich einverstanden). Đứng một mình như câu đáp ngắn cũng được: Einverstanden!"
+
+  - key: de:item:a2u08-absagen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: absagen
+      pos: động từ
+    back:
+      meaning:
+        vi: hủy (hẹn), báo không đến được
+      examples:
+        - target: Ich muss leider absagen, ich bin krank.
+          translation:
+            vi: Tiếc là mình phải hủy, mình bị ốm.
+        - target: Lena hat das Treffen abgesagt.
+          translation:
+            vi: Lena đã hủy buổi gặp.
+      confusion:
+        vi: "Ngược nghĩa: zusagen (nhận lời). Khác ausfallen: absagen là người chủ động hủy, ausfallen là sự việc bị hủy."
+
+  - key: de:item:a2u08-zusagen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: zusagen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận lời, xác nhận sẽ đến
+      examples:
+        - target: Tom hat schon zugesagt.
+          translation:
+            vi: Tom đã nhận lời rồi.
+        - target: Fünf Freunde haben für die Party zugesagt.
+          translation:
+            vi: Năm người bạn đã nhận lời đến bữa tiệc.
+      confusion:
+        vi: "Động từ tách: ich sage zu, Partizip zugesagt (ge nằm sau tiền tố)."
+
+  - key: de:item:a2u08-verschieben
+    type: vocab
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verschieben, verschob, hat verschoben
+      pos: động từ
+    back:
+      meaning:
+        vi: dời, hoãn (sang lúc khác)
+      examples:
+        - target: Können wir das Treffen auf Montag verschieben?
+          translation:
+            vi: Mình dời buổi gặp sang thứ Hai được không?
+        - target: Wir haben die Party verschoben.
+          translation:
+            vi: Chúng tôi đã hoãn bữa tiệc.
+      confusion:
+        vi: "Dời sang ngày nào: verschieben auf + Akkusativ (auf Montag, auf nächste Woche). Tiền tố ver- không tách và không có ge-: verschoben."
+
+  - key: de:item:a2u08-treffpunkt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Treffpunkt, -e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm hẹn, chỗ gặp
+      examples:
+        - target: Unser Treffpunkt ist vor dem Kino.
+          translation:
+            vi: Điểm hẹn của chúng ta là trước rạp chiếu phim.
+        - target: Wo ist der Treffpunkt?
+          translation:
+            vi: Điểm hẹn ở đâu?
+      confusion:
+        vi: "Từ ghép treffen (gặp) + der Punkt (điểm), giống theo từ cuối: der Treffpunkt."
+
+  - key: de:item:a2u08-wie-waere-es-mit
+    type: phrase
+    level: a2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "Wie wäre es mit …? (+ Dativ)"
+      pos: cụm từ
+    back:
+      meaning:
+        vi: "… thì sao? (đưa ra đề nghị)"
+      examples:
+        - target: Wie wäre es mit Samstag?
+          translation:
+            vi: Thứ Bảy thì sao?
+        - target: Wie wäre es mit einem Picknick im Park?
+          translation:
+            vi: Đi picnic ở công viên thì sao?
+      confusion:
+        vi: "Học như một mẫu cố định. Sau mit là danh từ ở Dativ (mit einem Picknick, mit der Pizzeria) hoặc ngày, giờ (mit Samstag, mit acht Uhr); muốn dùng động từ thì hỏi: Wollen wir …?"
+
+  # Zusatzwortschatz (từ bổ sung, trường: sắp xếp)
+  - key: de:item:a2u08-vorschlag
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "der Vorschlag, ¨-e"
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời đề nghị, đề xuất
+      examples:
+        - target: "Ich habe einen Vorschlag: Wir kochen zusammen."
+          translation:
+            vi: "Mình có một đề nghị: chúng ta cùng nấu ăn."
+        - target: Danke für deinen Vorschlag!
+          translation:
+            vi: Cảm ơn đề nghị của bạn!
+      confusion:
+        vi: "Số nhiều có biến âm: die Vorschläge. Động từ: vorschlagen."
+
+  # Zusatzwortschatz (từ bổ sung, trường: sắp xếp)
+  - key: de:item:a2u08-mitbringen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: mitbringen, bringt mit, brachte mit, hat mitgebracht
+      pos: động từ
+    back:
+      meaning:
+        vi: mang theo (đến)
+      examples:
+        - target: Was soll ich mitbringen?
+          translation:
+            vi: Mình nên mang gì đến?
+        - target: Ich bringe einen Salat mit.
+          translation:
+            vi: Mình sẽ mang một món salad đến.
+      confusion:
+        vi: "Động từ tách, quá khứ bất quy tắc: brachte mit, hat mitgebracht."
+
+  # Zusatzwortschatz (từ bổ sung, trường: sắp xếp)
+  - key: de:item:a2u08-grillen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: grillen
+      pos: động từ
+    back:
+      meaning:
+        vi: nướng (thịt, rau – thường ngoài trời)
+      examples:
+        - target: Am Sonntag grillen wir im Garten.
+          translation:
+            vi: Chủ nhật chúng tôi nướng thịt ngoài vườn.
+        - target: Wollen wir am See grillen?
+          translation:
+            vi: Mình ra hồ nướng thịt nhé?
+      confusion:
+        vi: "Ở nhiều công viên chỉ được nướng ở khu cho phép – hãy xem biển báo (quy định khác nhau tùy nơi)."
+
+  # Zusatzwortschatz (từ bổ sung, trường: sắp xếp)
+  - key: de:item:a2u08-gemeinsam
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: gemeinsam
+      pos: tính từ, trạng từ
+    back:
+      meaning:
+        vi: cùng nhau; chung
+      examples:
+        - target: Wir planen den Ausflug gemeinsam.
+          translation:
+            vi: Chúng tôi cùng nhau lên kế hoạch cho chuyến đi chơi.
+        - target: Wir haben ein gemeinsames Hobby.
+          translation:
+            vi: Chúng tôi có một sở thích chung.
+      confusion:
+        vi: "Gần nghĩa zusammen; nhưng chỉ gemeinsam dùng được làm tính từ trước danh từ: ein gemeinsames Hobby."
+
+  # Zusatzwortschatz (từ bổ sung, trường: sắp xếp)
+  - key: de:item:a2u08-bescheid-sagen
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: "Bescheid sagen (+ Dativ)"
+      pos: cụm từ
+    back:
+      meaning:
+        vi: báo cho (ai) biết
+      examples:
+        - target: Sag mir bitte bis Freitag Bescheid!
+          translation:
+            vi: Chậm nhất thứ Sáu báo mình biết nhé!
+        - target: Ich sage dir morgen Bescheid.
+          translation:
+            vi: Mai mình báo bạn.
+      confusion:
+        vi: "Bescheid là danh từ nên viết hoa, không có mạo từ; người được báo ở Dativ (mir, dir, Ihnen). Trang trọng: Bitte geben Sie mir Bescheid."

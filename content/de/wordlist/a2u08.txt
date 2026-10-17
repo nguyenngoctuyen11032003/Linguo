@@ -1,0 +1,2 @@
+# A2U08 Zukunft, Umwelt, Goethe-Zertifikat A2: correct words the German lint dictionary does not know.
+Biomüll

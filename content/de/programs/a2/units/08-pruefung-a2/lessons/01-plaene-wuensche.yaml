@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u08-plaene-wuensche
+order_index: 1
+level: a2
+title:
+  vi: Kế hoạch và mong muốn – động từ đi với giới từ (Ich freue mich auf …)
+objectives:
+  - vi: Nói kế hoạch của mình bằng thì hiện tại + mốc thời gian (Nächstes Jahr mache ich …).
+  - vi: Nói điều mình mong chờ, quan tâm, lo sợ, mơ ước bằng động từ đi với giới từ (sich freuen auf, sich interessieren für, Angst haben vor, träumen von).
+  - vi: Trả lời câu hỏi về cuộc sống của mình theo kiểu Goethe-Zertifikat A2, phần thi nói Teil 2.
+estimated_minutes: 17
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a2u07-wiederholung]
+items:
+  - item: de:item:a2u08-g-verben-praeposition
+  - item: de:item:a2u08-g-praesens-zukunft
+  - item: de:item:a2u08-sich-freuen-auf
+  - item: de:item:a2u08-warten-auf
+  - item: de:item:a2u08-denken-an
+  - item: de:item:a2u08-sich-interessieren-fuer
+  - item: de:item:a2u08-angst-haben-vor
+  - item: de:item:a2u08-traeumen-von
+  - item: de:item:a2u08-plan
+  - item: de:item:a2u08-wunsch
+  - item: de:item:a2u08-zukunft
+  - item: de:item:a2u08-vorhaben
+  - item: de:item:a2u08-traum
+  - item: de:item:a2u08-hoffen
+  - item: de:item:a2u08-irgendwann
+  - item: de:item:a2u08-weltreise
+  - item: de:item:a1u01-g-v2
+    role: reuse
+  - item: de:item:a1u05-g-personalpronomen-akk
+    role: reuse
+  - item: de:item:a1u04-wochenende
+    role: reuse
+  - item: de:item:a1u06-fliegen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được kế hoạch và mong muốn của mình, ví dụ: \"Nächstes Jahr mache ich einen Deutschkurs in Berlin. Ich freue mich schon sehr auf die Stadt.\""
+  - type: explain
+    text:
+      vi: "Nhiều động từ tiếng Đức đi kèm một giới từ cố định: warten auf (chờ), denken an (nghĩ đến), sich interessieren für (quan tâm đến), Angst haben vor (sợ), träumen von (mơ về). Tiếng Việt nói \"chờ bạn\", \"sợ chó\" mà không cần giới từ, nên người Việt hay quên giới từ hoặc chọn theo tiếng Anh. Hãy học cả cụm như một từ: warten auf + Akkusativ."
+  - type: explain
+    text:
+      vi: "Giới từ trong cụm quyết định cách của danh từ phía sau: với auf, an, für (và über) trong các cụm này dùng Akkusativ – auf den Bus, an meinen Bruder; với von, vor dùng Dativ – von einem Haus, vor dem Hund. Đại từ cũng đổi theo: auf dich, an ihn, von dir, vor ihm."
+  - type: explain
+    text:
+      vi: "sich freuen có hai giới từ: auf cho việc sắp tới (Ich freue mich auf die Ferien – đang mong chờ), über cho việc đã có, đã xảy ra (Ich freue mich über das Geschenk – vui vì món quà). Đây là động từ phản thân: ich freue mich, du freust dich, wir freuen uns."
+  - type: explain
+    text:
+      vi: "Nói kế hoạch, bạn dùng thì hiện tại + mốc thời gian: Morgen fahre ich nach Hamburg. Nächstes Jahr mache ich eine Ausbildung. Giống tiếng Việt \"Mai tôi đi Hamburg\", mốc thời gian đã cho biết là tương lai; mốc thời gian đứng đầu câu thì động từ vẫn ở vị trí 2."
+  - type: explain
+    text:
+      vi: "Phần thi nói Teil 2 của Goethe-Zertifikat A2 (theo mô tả tại thời điểm soạn, cần đối chiếu quy định hiện hành) yêu cầu bạn kể về cuộc sống của mình theo một câu hỏi, ví dụ Was machst du am Wochenende? Hãy nói 3–4 câu: kế hoạch (Präsens + thời gian), điều mình mong chờ (Ich freue mich auf …) và một lý do (weil …)."
+  - type: deep_explain
+    text:
+      vi: "Hỏi về người, bạn đặt giới từ trước wen/wem: Auf wen wartest du? – Auf meinen Bruder. Hỏi về vật, người Đức hay dùng dạng wo(r)- + giới từ (Worauf wartest du?) và trả lời bằng da(r)- + giới từ (Ich freue mich darauf) – bạn sẽ học kỹ ở B1; trong bài này hãy nhắc lại danh từ: Ich freue mich auf die Ferien. Thì tương lai werden + nguyên thể (Futur I) cũng học ở B1; còn werden đứng một mình nghĩa là \"trở thành\": Ich werde Ärztin."
+  - type: example
+    target: Nächsten Sommer fliegen wir nach Vietnam. Ich freue mich schon sehr auf meine Familie.
+    target_lang: de
+    translation:
+      vi: Mùa hè năm sau chúng tôi bay về Việt Nam. Tôi đang rất mong được gặp gia đình.
+    note:
+      vi: Präsens + nächsten Sommer = việc trong tương lai. sich freuen auf + Akkusativ cho điều sắp tới.
+  - type: example
+    target: Was hast du am Wochenende vor? – Ich besuche meine Oma. Ich denke oft an sie.
+    target_lang: de
+    translation:
+      vi: Cuối tuần bạn định làm gì? – Mình đi thăm bà. Mình hay nghĩ đến bà.
+    note:
+      vi: Hỏi bạn bè (du). vorhaben tách – hast … vor; denken an + Akkusativ – an sie.
+  - type: example
+    target: Interessieren Sie sich für Musik? – Ja, ich spiele seit zwei Jahren Gitarre.
+    target_lang: de
+    translation:
+      vi: Anh/chị có quan tâm đến âm nhạc không? – Có, tôi chơi ghi-ta được hai năm rồi.
+    note:
+      vi: Hỏi lịch sự (Sie) – đại từ phản thân của Sie là sich. seit + thì hiện tại cho việc vẫn đang tiếp diễn.
+  - type: example
+    target: Mein Bruder hat Angst vor der Prüfung, aber er träumt von einem Job in Deutschland.
+    target_lang: de
+    translation:
+      vi: Anh trai tôi sợ kỳ thi, nhưng anh ấy mơ có một công việc ở Đức.
+    note:
+      vi: vor và von đi với Dativ – vor der Prüfung, von einem Job.
+  - type: example
+    target: Danke für die Blumen! Ich freue mich sehr über dein Geschenk.
+    target_lang: de
+    translation:
+      vi: Cảm ơn bạn vì bó hoa! Mình rất vui vì món quà của bạn.
+    note:
+      vi: Món quà đã nhận rồi nên dùng über, không dùng auf. Nói với bạn bè (dein).
+  - type: common_mistake
+    wrong: Ich warte für dich.
+    right: Ich warte auf dich.
+    target_lang: de
+    note:
+      vi: Tiếng Anh nói "wait for", nhưng tiếng Đức là warten auf + Akkusativ.
+  - type: common_mistake
+    wrong: Ich interessiere für Musik.
+    right: Ich interessiere mich für Musik.
+    target_lang: de
+    note:
+      vi: sich interessieren là động từ phản thân – cần mich, dich, sich … theo chủ ngữ.
+  - type: common_mistake
+    wrong: Ich habe Angst vor den Hund.
+    right: Ich habe Angst vor dem Hund.
+    target_lang: de
+    note:
+      vi: Trong Angst haben vor, vor đi với Dativ – vor dem Hund.
+  - type: summary
+    points:
+      - vi: "Học cả cụm: warten auf, denken an, sich interessieren für, sich freuen auf/über + Akkusativ."
+      - vi: "Angst haben vor, träumen von + Dativ."
+      - vi: "sich freuen auf = mong chờ (sắp tới); sich freuen über = vui vì (đã có)."
+      - vi: "Phản thân: ich freue mich, du interessierst dich, Sie interessieren sich."
+      - vi: "Kế hoạch: Präsens + mốc thời gian – Nächstes Jahr mache ich …; động từ ở vị trí 2."
+      - vi: "vorhaben tách: Was hast du am Wochenende vor?"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u08l1-mcq-warten-auf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u08-warten-auf
+    prompt:
+      stem: "Chọn giới từ đúng: Ich warte schon zwanzig Minuten ___ den Bus."
+      stem_lang: vi
+      options:
+        - { id: k2q, text: auf, lang: de }
+        - { id: m7d, text: für, lang: de }
+        - { id: t4x, text: an, lang: de }
+        - { id: w9e, text: von, lang: de }
+    answer:
+      correct_option_id: k2q
+    explanation:
+      vi: "\"Chờ ai, chờ cái gì\" là warten auf + Akkusativ (auf den Bus). für là lỗi hay gặp do dịch từ tiếng Anh \"wait for\"; an và von không đi với warten."
+    display_answer: auf
+
+  - key: de:exercise:a2u08l1-mcq-freuen-auf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-sich-freuen-auf
+    prompt:
+      stem: "Nächste Woche beginnen die Ferien. Chọn giới từ đúng: Ich freue mich schon ___ die Ferien."
+      stem_lang: vi
+      options:
+        - { id: p3s, text: auf, lang: de }
+        - { id: c8v, text: über, lang: de }
+        - { id: h1n, text: an, lang: de }
+        - { id: z6b, text: vor, lang: de }
+    answer:
+      correct_option_id: p3s
+    explanation:
+      vi: "Kỳ nghỉ bắt đầu tuần sau – là việc sắp tới, nên dùng sich freuen auf (mong chờ). über dùng khi điều vui đã có hoặc đã xảy ra (Ich freue mich über das Geschenk); an và vor không đi với sich freuen."
+    display_answer: auf
+
+  - key: de:exercise:a2u08l1-listen-deutschkurs
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-g-praesens-zukunft
+    prompt:
+      audio_asset_id: null
+      fallback_text: Nächstes Jahr mache ich einen Deutschkurs in Berlin. Ich freue mich schon sehr auf die Stadt.
+      options:
+        - { id: r5a, text: Năm sau tôi học một khóa tiếng Đức ở Berlin. Tôi rất mong được đến thành phố đó., lang: vi }
+        - { id: f2u, text: Năm ngoái tôi học một khóa tiếng Đức ở Berlin. Tôi rất thích thành phố đó., lang: vi }
+        - { id: j8o, text: Năm sau tôi học một khóa tiếng Đức ở Berlin. Tôi hơi sợ thành phố đó., lang: vi }
+        - { id: y4i, text: Tuần sau tôi học một khóa tiếng Đức ở Berlin. Tôi rất mong được đến thành phố đó., lang: vi }
+    answer:
+      correct_option_id: r5a
+    explanation:
+      vi: "Nächstes Jahr = năm sau; động từ mache ở thì hiện tại nhưng có mốc tương lai nên nói về kế hoạch. Ich freue mich auf … = mong chờ, không phải sợ (Angst haben vor). Tuần sau là nächste Woche."
+    display_answer: Năm sau tôi học một khóa tiếng Đức ở Berlin. Tôi rất mong được đến thành phố đó.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u08l1-fill-fuer-vor-an
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-g-verben-praeposition
+    prompt:
+      template: "Ich interessiere mich {{b1}} Fotografie. Mein kleiner Bruder hat Angst {{b2}} Hunden. Im Ausland denke ich oft {{b3}} meine Familie."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [für]
+        b2: [vor]
+        b3: [an]
+    known_wrong:
+      - answer: auf
+        feedback_vi: "Mỗi động từ có giới từ riêng: sich interessieren für, Angst haben vor, denken an. auf đi với warten và sich freuen."
+        error_tag: preposition
+      - answer: von
+        feedback_vi: "von đi với träumen (träumen von). Sợ là Angst haben vor; nghĩ đến là denken an."
+        error_tag: preposition
+    explanation:
+      vi: "sich interessieren für + Akkusativ (für Fotografie); Angst haben vor + Dativ (vor Hunden – số nhiều Dativ thêm -n); denken an + Akkusativ (an meine Familie). Ba giới từ này phải học thuộc cùng động từ."
+    display_answer: "Ich interessiere mich für Fotografie. Mein kleiner Bruder hat Angst vor Hunden. Im Ausland denke ich oft an meine Familie."
+
+  - key: de:exercise:a2u08l1-fill-dich-mich
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-sich-freuen-auf
+    prompt:
+      template: "Freust du {{b1}} auf das Wochenende? – Ja, ich freue {{b2}} sehr. Wir fahren nach Hamburg!"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [dich]
+        b2: [mich]
+    known_wrong:
+      - answer: sich
+        feedback_vi: "sich chỉ dùng cho er/sie/es, sie (họ) và Sie. Với du là dich, với ich là mich."
+        error_tag: reflexive_missing
+      - answer: dir
+        feedback_vi: "sich freuen cần đại từ phản thân ở Akkusativ: du → dich (dir là Dativ)."
+        error_tag: case_dat_akk
+      - answer: mir
+        feedback_vi: "sich freuen cần đại từ phản thân ở Akkusativ: ich → mich (mir là Dativ)."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Đại từ phản thân đổi theo chủ ngữ và ở Akkusativ: du freust dich, ich freue mich. Câu hỏi nói với bạn bè nên dùng du."
+    display_answer: "Freust du dich auf das Wochenende? – Ja, ich freue mich sehr. Wir fahren nach Hamburg!"
+
+  - key: de:exercise:a2u08l1-tr-warte-auf-dich
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-warten-auf
+    prompt:
+      source_text: Mình đang chờ bạn ở nhà ga. (nói với bạn thân)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich warte am Bahnhof auf dich.
+        - Am Bahnhof warte ich auf dich.
+        - Ich warte auf dich am Bahnhof.
+        - Ich warte gerade am Bahnhof auf dich.
+        - Ich warte im Bahnhof auf dich.
+    known_wrong:
+      - answer: Ich warte am Bahnhof für dich.
+        feedback_vi: "warten đi với auf, không phải für: Ich warte auf dich."
+        error_tag: preposition
+      - answer: Ich warte am Bahnhof auf dir.
+        feedback_vi: "auf trong warten auf đi với Akkusativ: du → dich."
+        error_tag: case_dat_akk
+      - answer: Ich warte am Bahnhof dich.
+        feedback_vi: "warten cần giới từ auf: Ich warte auf dich."
+        error_tag: preposition
+    explanation:
+      vi: "\"Chờ ai\" là warten auf + Akkusativ; nói với bạn thân nên du → dich. \"Đang\" chỉ cần thì hiện tại; am Bahnhof (ở nhà ga) thường đứng trước auf dich."
+    display_answer: Ich warte am Bahnhof auf dich.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u08l1-wb-naechstes-jahr
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-g-praesens-zukunft
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Năm sau tôi học đại học ở Đức.\""
+      tokens:
+        - { id: n-deutschland, text: Deutschland }
+        - { id: n-studiere, text: studiere }
+        - { id: n-jahr, text: Jahr }
+        - { id: n-ich, text: ich }
+        - { id: n-studiert, text: studiert }
+        - { id: n-in, text: in }
+        - { id: n-naechstes, text: nächstes }
+        - { id: n-im, text: im }
+    answer:
+      orders:
+        - [n-naechstes, n-jahr, n-studiere, n-ich, n-in, n-deutschland]
+        - [n-ich, n-studiere, n-naechstes, n-jahr, n-in, n-deutschland]
+        - [n-in, n-deutschland, n-studiere, n-ich, n-naechstes, n-jahr]
+    explanation:
+      vi: "Kế hoạch tương lai dùng thì hiện tại + mốc thời gian nächstes Jahr. Động từ chia theo ich (studiere) luôn ở vị trí 2: Nächstes Jahr studiere ich … hoặc Ich studiere nächstes Jahr …; thời gian thường đứng trước nơi chốn."
+    display_answer: Nächstes Jahr studiere ich in Deutschland.
+
+  - key: de:exercise:a2u08l1-tr-freue-mich-wochenende
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-sich-freuen-auf
+    prompt:
+      source_text: Tôi rất mong đến cuối tuần.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich freue mich sehr auf das Wochenende.
+        - Ich freue mich schon sehr auf das Wochenende.
+        - Ich freue mich sehr aufs Wochenende.
+        - Ich freue mich schon sehr aufs Wochenende.
+        - Auf das Wochenende freue ich mich sehr.
+        - Aufs Wochenende freue ich mich sehr.
+    known_wrong:
+      - answer: Ich freue sehr auf das Wochenende.
+        feedback_vi: "sich freuen là động từ phản thân: Ich freue mich …"
+        error_tag: reflexive_missing
+      - answer: Ich freue mich sehr über das Wochenende.
+        feedback_vi: "Cuối tuần còn chưa tới nên dùng auf (mong chờ); über dùng cho điều đã có."
+        error_tag: preposition
+      - answer: Ich freue mich sehr für das Wochenende.
+        feedback_vi: "Mong chờ điều gì là sich freuen auf + Akkusativ."
+        error_tag: preposition
+    explanation:
+      vi: "\"Mong đến\" một việc sắp tới là sich freuen auf + Akkusativ: auf das Wochenende (dạng rút gọn aufs Wochenende). Đừng quên đại từ phản thân mich."
+    display_answer: Ich freue mich sehr auf das Wochenende.
+
+  - key: de:exercise:a2u08l1-mcq-sprechen-teil2
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-vorhaben
+    prompt:
+      stem: "Luyện kiểu thi nói Teil 2 (kể về cuộc sống của mình). Thẻ câu hỏi: \"Was hast du nächsten Sommer vor?\" Câu trả lời nào phù hợp và đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: s5g, text: Nächsten Sommer fliege ich nach Vietnam. Ich freue mich schon auf meine Familie., lang: de }
+        - { id: b2l, text: Letzten Sommer bin ich nach Vietnam geflogen. Es war sehr schön., lang: de }
+        - { id: e7w, text: Nächsten Sommer fliege ich nach Vietnam. Ich warte schon für meine Familie., lang: de }
+        - { id: o3m, text: "Ja, ich habe nächsten Sommer vor.", lang: de }
+    answer:
+      correct_option_id: s5g
+    explanation:
+      vi: "Câu hỏi về kế hoạch mùa hè năm sau, nên trả lời bằng Präsens + nächsten Sommer và thêm một ý (sich freuen auf). Câu kể mùa hè năm ngoái không trả lời đúng câu hỏi; warten für sai giới từ; \"Ja, ich habe … vor\" thiếu nội dung kế hoạch."
+    display_answer: Nächsten Sommer fliege ich nach Vietnam. Ich freue mich schon auf meine Familie.
+
+  - key: de:exercise:a2u08l1-tr-angst-zukunft
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-angst-haben-vor
+    prompt:
+      source_text: Ich habe ein bisschen Angst vor der Zukunft.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi hơi sợ tương lai.
+        - Tôi hơi lo về tương lai.
+        - Tôi hơi lo lắng về tương lai.
+        - Tôi có chút sợ tương lai.
+        - Tôi hơi sợ về tương lai.
+        - Mình hơi sợ tương lai.
+        - Mình hơi lo về tương lai.
+        - Tôi có hơi sợ tương lai.
+        - Tôi cảm thấy hơi sợ tương lai.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Angst haben vor + Dativ = sợ, lo về; ein bisschen = hơi, một chút; die Zukunft = tương lai."
+    display_answer: Tôi hơi sợ tương lai.

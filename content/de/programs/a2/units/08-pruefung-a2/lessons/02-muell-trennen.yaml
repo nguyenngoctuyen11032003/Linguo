@@ -1,0 +1,389 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u08-muell-trennen
+order_index: 2
+level: a2
+title:
+  vi: Phân loại rác – biển báo nguyên thể (Müll trennen)
+objectives:
+  - vi: Đọc hiểu biển báo, nội quy nhà và hướng dẫn phân loại rác.
+  - vi: Hiểu và viết câu yêu cầu dạng nguyên thể (Bitte nicht rauchen! Flaschen hier einwerfen.).
+  - vi: Tìm thông tin cụ thể trong văn bản ngắn theo kiểu Goethe-Zertifikat A2, phần thi Lesen.
+estimated_minutes: 17
+skills: [reading, vocabulary, grammar]
+prerequisites: [de:lesson:a2u08-plaene-wuensche]
+items:
+  - item: de:item:a2u08-g-infinitiv-aufforderung
+  - item: de:item:a2u08-muell
+  - item: de:item:a2u08-trennen
+  - item: de:item:a2u08-umwelt
+  - item: de:item:a2u08-pfand
+  - item: de:item:a2u08-muelltonne
+  - item: de:item:a2u08-papier
+  - item: de:item:a2u08-plastik
+  - item: de:item:a2u08-biomuell
+  - item: de:item:a2u08-sparen
+  - item: de:item:a2u08-wegwerfen
+  - item: de:item:a2u08-dose
+  - item: de:item:a2u08-batterie
+  - item: de:item:a2u08-abfall
+  - item: de:item:a2u08-tuete
+  - item: de:item:a2u08-altglas
+  - item: de:item:a2u08-schild
+  - item: de:item:a1u06-g-man
+    role: reuse
+  - item: de:item:a1u06-g-duerfen
+    role: reuse
+  - item: de:item:a1u05-g-imperativ
+    role: reuse
+  - item: de:item:a1u03-flasche
+    role: reuse
+  - item: de:item:a1u05-spielplatz
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu biển báo và nội quy về rác, ví dụ: \"Bitte Müll trennen! Glas hier einwerfen. Nach 20 Uhr kein Glas einwerfen.\""
+  - type: explain
+    text:
+      vi: "Biển báo, nội quy và hướng dẫn thường dùng động từ nguyên thể đặt cuối câu thay cho câu mệnh lệnh: Bitte nicht rauchen! Bitte den Müll trennen! Bạn không chia động từ và không phải chọn du hay Sie – giống tiếng Việt viết \"Không hút thuốc\" trên biển."
+  - type: explain
+    text:
+      vi: "Động từ tách ở dạng nguyên thể thì không bị tách: Flaschen hier einwerfen, Keinen Müll wegwerfen. Phủ định: nicht đứng trước động từ (Bitte nicht rauchen), kein/keine đứng trước danh từ (Kein Glas einwerfen)."
+  - type: explain
+    text:
+      vi: "Nội quy cũng hay dùng man + động từ khiếm khuyết: Hier darf man nicht rauchen (không được phép). Cẩn thận: nicht dürfen = không được phép, còn nicht müssen = không cần, không bắt buộc."
+  - type: explain
+    text:
+      vi: "Ở Đức người ta phân loại rác: thường có thùng cho giấy, cho bao bì nhựa và kim loại, cho rác hữu cơ và cho rác còn lại; thủy tinh mang ra thùng thu gom, chai và lon có Pfand mang trả siêu thị. Màu thùng và quy định khác nhau theo từng nơi, nên hãy đọc bảng hướng dẫn ở chỗ bạn ở."
+  - type: explain
+    text:
+      vi: "Phần thi Lesen của Goethe-Zertifikat A2 dùng các văn bản ngắn như thông báo, biển chỉ dẫn, e-mail, quảng cáo (theo mô tả tại thời điểm soạn, cần đối chiếu quy định hiện hành). Mẹo: đọc câu hỏi trước, gạch chân từ khóa (ngày, giờ, nơi chốn, nicht/kein), rồi tìm đúng chỗ đó trong văn bản."
+  - type: deep_explain
+    text:
+      vi: "Biển báo còn có dạng phân từ: Rauchen verboten! (cấm hút thuốc), Geöffnet / Geschlossen (mở cửa / đóng cửa). Trong hướng dẫn dài hơn, người ta cũng dùng câu mệnh lệnh với Sie: Bitte bringen Sie alte Batterien in den Supermarkt. Những từ bạn sẽ gặp hằng ngày: die gelbe Tonne hoặc der gelbe Sack (bao bì), der Pfandautomat (máy nhận vỏ chai), der Restmüll (rác còn lại)."
+  - type: example
+    target: Bitte nicht rauchen!
+    target_lang: de
+    translation:
+      vi: Xin đừng hút thuốc!
+    note:
+      vi: Nguyên thể rauchen đứng cuối; nicht đứng trước động từ. Không chia, không có du/Sie.
+  - type: example
+    target: Glas bitte nach Farben trennen. Nach 20 Uhr kein Glas einwerfen!
+    target_lang: de
+    translation:
+      vi: Vui lòng phân loại thủy tinh theo màu. Sau 20 giờ không bỏ thủy tinh vào thùng!
+    note:
+      vi: Hai yêu cầu dạng nguyên thể; einwerfen là động từ tách nhưng ở nguyên thể thì viết liền. kein đứng trước danh từ Glas.
+  - type: example
+    target: "Hausordnung: Den Müll bitte trennen. Papier kommt in die blaue Tonne, Biomüll in die braune Tonne."
+    target_lang: de
+    translation:
+      vi: "Nội quy nhà: Vui lòng phân loại rác. Giấy bỏ vào thùng xanh dương, rác hữu cơ bỏ vào thùng nâu."
+    note:
+      vi: Nội quy kết hợp câu nguyên thể (trennen) và câu bình thường (kommt … in die … Tonne – in + Akkusativ vì chỉ hướng).
+  - type: example
+    target: Auf dem Spielplatz darf man nicht rauchen.
+    target_lang: de
+    translation:
+      vi: Ở sân chơi trẻ em không được hút thuốc.
+    note:
+      vi: man + darf (ngôi 3 số ít); nicht dürfen = không được phép.
+  - type: example
+    target: Wirf die Flasche nicht weg, bring sie zurück – es gibt Pfand!
+    target_lang: de
+    translation:
+      vi: Đừng vứt cái chai, mang trả lại đi – có tiền cọc đấy!
+    note:
+      vi: Nói trực tiếp với bạn bè (du) thì dùng câu mệnh lệnh có chia, động từ tách bị tách (wirf … weg). Biển báo sẽ viết – Flaschen zurückbringen.
+  - type: common_mistake
+    wrong: Bitte nicht raucht!
+    right: Bitte nicht rauchen!
+    target_lang: de
+    note:
+      vi: Biển báo dùng nguyên thể, không chia động từ.
+  - type: common_mistake
+    wrong: Flaschen hier werfen ein.
+    right: Flaschen hier einwerfen.
+    target_lang: de
+    note:
+      vi: Ở dạng nguyên thể cuối câu, động từ tách viết liền – einwerfen.
+  - type: common_mistake
+    wrong: Hier muss man nicht rauchen.
+    right: Hier darf man nicht rauchen.
+    target_lang: de
+    note:
+      vi: Cấm là nicht dürfen. nicht müssen chỉ có nghĩa là không cần.
+  - type: summary
+    points:
+      - vi: "Biển báo, hướng dẫn: nguyên thể cuối câu – Bitte nicht rauchen! Bitte den Müll trennen!"
+      - vi: "Động từ tách ở nguyên thể viết liền: einwerfen, wegwerfen."
+      - vi: "nicht + động từ; kein/keine + danh từ: Kein Glas einwerfen."
+      - vi: "Nội quy: man darf nicht = không được; man muss nicht = không cần."
+      - vi: "Rác: der Müll, der Biomüll, das Papier, das Plastik, das Altglas; die Mülltonne; das Pfand."
+      - vi: "Đọc thi: xem câu hỏi trước, tìm từ khóa (ngày, giờ, nơi, nicht/kein)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u08l2-mcq-schild-rauchen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u08-g-infinitiv-aufforderung
+    prompt:
+      stem: "Bạn thấy tấm biển ở cửa nhà ga: \"Bitte nicht rauchen!\" Biển này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q4m, text: Xin đừng hút thuốc., lang: vi }
+        - { id: d9k, text: Khu vực dành cho người hút thuốc., lang: vi }
+        - { id: v2c, text: Xin mời hút thuốc ở đây., lang: vi }
+        - { id: l6p, text: Xin đừng ăn uống., lang: vi }
+    answer:
+      correct_option_id: q4m
+    explanation:
+      vi: "Biển báo dùng nguyên thể làm lời yêu cầu: nicht rauchen = đừng hút thuốc; bitte làm câu lịch sự hơn. rauchen là hút thuốc, không phải ăn uống (essen, trinken)."
+    display_answer: Xin đừng hút thuốc.
+
+  - key: de:exercise:a2u08l2-mcq-lesen-glas-sonntag
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-altglas
+    prompt:
+      stem: "Đọc nội quy về rác của một tòa nhà: \"Müll bitte trennen! Papier: blaue Tonne. Biomüll: braune Tonne. Plastik und Metall: gelbe Tonne. Glas: Container an der Ecke – nicht nach 20 Uhr und nicht am Sonntag einwerfen.\" Bạn có một chai thủy tinh rỗng (không có Pfand). Chủ nhật lúc 10 giờ sáng, bạn nên làm gì?"
+      stem_lang: vi
+      options:
+        - { id: a3t, text: Đợi đến thứ Hai rồi mang ra thùng thu gom ở góc phố., lang: vi }
+        - { id: g8r, text: Bỏ vào thùng vàng., lang: vi }
+        - { id: n5h, text: Mang ra thùng thu gom ở góc phố ngay., lang: vi }
+        - { id: x1j, text: Bỏ vào thùng xanh dương., lang: vi }
+    answer:
+      correct_option_id: a3t
+    explanation:
+      vi: "Glas: Container an der Ecke = thủy tinh bỏ vào thùng thu gom ở góc phố; nhưng nicht am Sonntag einwerfen = Chủ nhật không được bỏ vào. Thùng vàng dành cho nhựa và kim loại, thùng xanh dương cho giấy."
+    display_answer: Đợi đến thứ Hai rồi mang ra thùng thu gom ở góc phố.
+
+  - key: de:exercise:a2u08l2-mcq-bananenschale
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2u08-biomuell
+    prompt:
+      stem: "Vỏ chuối thuộc loại rác nào?"
+      stem_lang: vi
+      options:
+        - { id: u7b, text: der Biomüll, lang: de }
+        - { id: i2w, text: das Papier, lang: de }
+        - { id: c5e, text: das Plastik, lang: de }
+        - { id: m9a, text: das Altglas, lang: de }
+    answer:
+      correct_option_id: u7b
+    explanation:
+      vi: "Vỏ trái cây, vỏ rau, thức ăn thừa là rác hữu cơ – der Biomüll. das Papier là giấy, das Plastik là nhựa, das Altglas là chai lọ thủy tinh cũ."
+    display_answer: der Biomüll
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u08l2-fill-schilder
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-g-infinitiv-aufforderung
+    prompt:
+      template: "Schreiben Sie die Schilder. Bringen Sie die Flaschen bitte zurück! → Flaschen bitte {{b1}}! – Trennen Sie bitte den Müll! → Bitte den Müll {{b2}}! – Werfen Sie hier keinen Müll weg! → Bitte hier keinen Müll {{b3}}!"
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [zurückbringen]
+        b2: [trennen]
+        b3: [wegwerfen]
+    known_wrong:
+      - answer: bringen zurück
+        feedback_vi: "Ở dạng nguyên thể cuối câu, động từ tách viết liền: zurückbringen."
+        error_tag: separable_prefix
+      - answer: zurück bringen
+        feedback_vi: "zurückbringen viết liền thành một từ ở dạng nguyên thể."
+        error_tag: separable_prefix
+      - answer: werfen weg
+        feedback_vi: "Ở dạng nguyên thể cuối câu, động từ tách viết liền: wegwerfen."
+        error_tag: separable_prefix
+      - answer: weg werfen
+        feedback_vi: "wegwerfen viết liền thành một từ ở dạng nguyên thể."
+        error_tag: separable_prefix
+    explanation:
+      vi: "Đổi câu mệnh lệnh với Sie thành biển báo: bỏ Sie, đưa động từ về nguyên thể và đặt cuối câu. Động từ tách thì tiền tố ghép lại: bringen … zurück → zurückbringen, werfen … weg → wegwerfen."
+    display_answer: "Schreiben Sie die Schilder. Bringen Sie die Flaschen bitte zurück! → Flaschen bitte zurückbringen! – Trennen Sie bitte den Müll! → Bitte den Müll trennen! – Werfen Sie hier keinen Müll weg! → Bitte hier keinen Müll wegwerfen!"
+
+  - key: de:exercise:a2u08l2-fill-leere-kaputten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-pfand
+    prompt:
+      template: "Pfandautomat: Bitte nur {{b1}} Flaschen zurückgeben (leer). Keine {{b2}} Flaschen (kaputt)!"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [leere]
+        b2: [kaputten]
+    known_wrong:
+      - answer: leeren
+        feedback_vi: "Không có mạo từ trước Flaschen (số nhiều), tính từ mang đuôi -e: leere Flaschen."
+        error_tag: adj_ending
+      - answer: leer
+        feedback_vi: "Tính từ đứng trước danh từ cần đuôi: leere Flaschen."
+        error_tag: adj_ending
+      - answer: kaputte
+        feedback_vi: "Sau keine (số nhiều), tính từ có đuôi -en: keine kaputten Flaschen."
+        error_tag: adj_ending
+      - answer: kaputt
+        feedback_vi: "Tính từ đứng trước danh từ cần đuôi: keine kaputten Flaschen."
+        error_tag: adj_ending
+    explanation:
+      vi: "Số nhiều không có mạo từ: tính từ mang đuôi -e (leere Flaschen). Sau keine ở số nhiều, tính từ có đuôi -en (keine kaputten Flaschen). Cả hai câu là biển hướng dẫn dạng nguyên thể/rút gọn."
+    display_answer: "Pfandautomat: Bitte nur leere Flaschen zurückgeben (leer). Keine kaputten Flaschen (kaputt)!"
+
+  - key: de:exercise:a2u08l2-tr-keinen-muell
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-wegwerfen
+    prompt:
+      source_text: Không vứt rác ở đây! (viết như biển báo, dùng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Hier keinen Müll wegwerfen!
+        - Bitte hier keinen Müll wegwerfen!
+        - Hier bitte keinen Müll wegwerfen!
+        - Bitte keinen Müll hier wegwerfen!
+        - Keinen Müll hier wegwerfen!
+        - Hier keinen Abfall wegwerfen!
+        - Bitte hier keinen Abfall wegwerfen!
+        - Hier bitte keinen Abfall wegwerfen!
+        - Bitte keinen Abfall hier wegwerfen!
+        - Keinen Abfall hier wegwerfen!
+    known_wrong:
+      - answer: Hier keinen Müll werfen weg!
+        feedback_vi: "Ở dạng nguyên thể cuối câu, động từ tách viết liền: wegwerfen."
+        error_tag: separable_prefix
+      - answer: Hier kein Müll wegwerfen!
+        feedback_vi: "der Müll là giống đực, làm tân ngữ (Akkusativ) nên dùng keinen."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Biển báo: nguyên thể wegwerfen ở cuối, không tách. Phủ định danh từ dùng kein; der Müll (giống đực) ở Akkusativ → keinen Müll. Có thể thêm bitte cho lịch sự."
+    display_answer: Hier keinen Müll wegwerfen!
+
+  - key: de:exercise:a2u08l2-tr-trennt-man
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-trennen
+    prompt:
+      source_text: Ở Đức người ta phân loại rác.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In Deutschland trennt man den Müll.
+        - Man trennt in Deutschland den Müll.
+        - In Deutschland trennt man Müll.
+        - Man trennt den Müll in Deutschland.
+        - In Deutschland wird der Müll getrennt.
+    known_wrong:
+      - answer: In Deutschland man trennt den Müll.
+        feedback_vi: "In Deutschland đứng ở vị trí 1 thì động từ trennt phải ở vị trí 2: In Deutschland trennt man …"
+        error_tag: verb_position
+    explanation:
+      vi: "\"Người ta\" là man, động từ chia như er/sie/es: man trennt. Trạng ngữ In Deutschland đầu câu → động từ đứng ngay sau, rồi mới đến man."
+    display_answer: In Deutschland trennt man den Müll.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u08l2-wb-darf-man-nicht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-schild
+    prompt:
+      instruction: "Bạn giải thích tấm biển cho một người bạn. Sắp xếp thành câu: \"Ở sân chơi không được hút thuốc.\""
+      tokens:
+        - { id: d-rauchen, text: rauchen }
+        - { id: d-man, text: man }
+        - { id: d-muss, text: muss }
+        - { id: d-spielplatz, text: Spielplatz }
+        - { id: d-nicht, text: nicht }
+        - { id: d-auf, text: auf }
+        - { id: d-darf, text: darf }
+        - { id: d-dem, text: dem }
+    answer:
+      orders:
+        - [d-auf, d-dem, d-spielplatz, d-darf, d-man, d-nicht, d-rauchen]
+        - [d-man, d-darf, d-auf, d-dem, d-spielplatz, d-nicht, d-rauchen]
+    explanation:
+      vi: "\"Không được\" là nicht dürfen: man darf nicht (muss nicht chỉ là \"không cần\"). darf ở vị trí 2, nguyên thể rauchen ở cuối câu; auf dem Spielplatz (Dativ, chỉ nơi chốn) có thể đứng đầu câu hoặc sau darf man."
+    display_answer: Auf dem Spielplatz darf man nicht rauchen.
+
+  - key: de:exercise:a2u08l2-mcq-lesen-pfandautomat
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u08-pfand
+    prompt:
+      stem: "Đọc thông báo ở siêu thị: \"Liebe Kundinnen und Kunden, unser Pfandautomat ist zurzeit kaputt. Bitte geben Sie Ihre Flaschen an der Kasse ab. Das Pfand bekommen Sie dort zurück. Vielen Dank!\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h6s, text: Máy nhận vỏ chai đang hỏng; bạn trả chai ở quầy thu ngân và nhận lại tiền cọc ở đó., lang: vi }
+        - { id: k3z, text: Siêu thị không nhận vỏ chai nữa., lang: vi }
+        - { id: r8q, text: Bạn phải bỏ chai vào thùng thu gom thủy tinh., lang: vi }
+        - { id: w1f, text: Bạn trả chai ở quầy thu ngân nhưng không được nhận lại tiền cọc., lang: vi }
+    answer:
+      correct_option_id: h6s
+    explanation:
+      vi: "Pfandautomat ist kaputt = máy nhận vỏ chai bị hỏng; Flaschen an der Kasse abgeben = trả chai ở quầy thu ngân; Das Pfand bekommen Sie dort zurück = bạn nhận lại tiền cọc ở đó. Kiểu bài này giống Lesen: tìm đúng câu chứa thông tin."
+    display_answer: Máy nhận vỏ chai đang hỏng; bạn trả chai ở quầy thu ngân và nhận lại tiền cọc ở đó.
+
+  - key: de:exercise:a2u08l2-tr-plastikmuell
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u08-plastik
+    prompt:
+      source_text: In dem Artikel geht es um Plastikmüll im Meer.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bài báo nói về rác nhựa ở biển.
+        - Bài báo này nói về rác nhựa ở biển.
+        - Bài báo nói về rác thải nhựa ở biển.
+        - Bài báo nói về rác nhựa trong biển.
+        - Bài báo nói về rác nhựa trên biển.
+        - Bài báo viết về rác nhựa ở biển.
+        - Bài viết nói về rác nhựa ở biển.
+        - Bài báo đề cập đến rác nhựa ở biển.
+        - Trong bài báo nói về rác nhựa ở biển.
+        - Bài báo nói về rác nhựa ở đại dương.
+        - Bài báo nói về chuyện rác nhựa ở biển.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Es geht um + Akkusativ = (nội dung) nói về; in dem Artikel = trong bài báo. Plastikmüll là từ ghép das Plastik + der Müll = rác nhựa; im Meer = ở biển."
+    display_answer: Bài báo nói về rác nhựa ở biển.

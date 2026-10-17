@@ -1,0 +1,366 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a2u08-gemeinsam-planen
+order_index: 4
+level: a2
+title:
+  vi: Cùng lên kế hoạch – đề nghị (Wollen wir …? Lass uns …!)
+objectives:
+  - vi: Đưa ra đề nghị bằng Gehen wir …!, Lass uns …!, Wollen wir …? và Wie wäre es mit …?
+  - vi: Đồng ý, từ chối có lý do và đề nghị thời gian khác (kiểu Goethe-Zertifikat A2, phần thi nói Teil 3).
+  - vi: Viết tin nhắn, e-mail ngắn để hẹn, hủy hoặc dời hẹn.
+estimated_minutes: 17
+skills: [speaking, writing, listening]
+prerequisites: [de:lesson:a2u08-durchsagen]
+items:
+  - item: de:item:a2u08-g-vorschlag-wir
+  - item: de:item:a2u08-planen
+  - item: de:item:a2u08-vorschlagen
+  - item: de:item:a2u08-organisieren
+  - item: de:item:a2u08-idee
+  - item: de:item:a2u08-einverstanden
+  - item: de:item:a2u08-absagen
+  - item: de:item:a2u08-zusagen
+  - item: de:item:a2u08-verschieben
+  - item: de:item:a2u08-treffpunkt
+  - item: de:item:a2u08-wie-waere-es-mit
+  - item: de:item:a2u08-vorschlag
+  - item: de:item:a2u08-mitbringen
+  - item: de:item:a2u08-grillen
+  - item: de:item:a2u08-gemeinsam
+  - item: de:item:a2u08-bescheid-sagen
+  - item: de:item:a1u06-gute-idee
+    role: reuse
+  - item: de:item:a1u06-lust-haben
+    role: reuse
+  - item: de:item:a1u07-passen
+    role: reuse
+  - item: de:item:a1u04-g-modalverben
+    role: reuse
+  - item: de:item:a1u05-g-imperativ
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn cùng một người bạn lên kế hoạch được: đề nghị, đồng ý hoặc từ chối có lý do và đề nghị thời gian khác, ví dụ: \"Wollen wir am Samstag grillen? – Am Samstag kann ich leider nicht. Wie wäre es mit Sonntag? – Einverstanden!\""
+  - type: explain
+    text:
+      vi: "Có bốn mẫu để rủ nhau cùng làm gì: Gehen wir ins Kino! (động từ đứng đầu + wir), Lass uns ins Kino gehen! (nguyên thể cuối câu), Wollen wir ins Kino gehen? (câu hỏi, nguyên thể cuối câu) và Wie wäre es mit + Dativ? Tiếng Việt chỉ thêm \"nhé\", \"đi\" vào cuối câu, còn tiếng Đức đổi vị trí động từ."
+  - type: explain
+    text:
+      vi: "Lass uns dùng khi nói với một người bạn (du); nói với nhiều người bạn là Lasst uns …, trang trọng là Lassen Sie uns … Sau Lass uns, động từ chính ở nguyên thể và đứng cuối câu: Lass uns am Samstag zusammen kochen."
+  - type: explain
+    text:
+      vi: "Trả lời đề nghị: đồng ý – Gute Idee! / Einverstanden! / Gern!; từ chối lịch sự – Da kann ich leider nicht, kèm lý do (weil …, denn …) và một đề nghị khác (Wie wäre es mit …? Geht es am …?). Từ chối mà không đề nghị gì khác nghe khá cụt."
+  - type: explain
+    text:
+      vi: "Phần thi nói Teil 3 của Goethe-Zertifikat A2 là cùng bạn thi lên kế hoạch một việc, mỗi người có lịch riêng (theo mô tả tại thời điểm soạn, cần đối chiếu quy định hiện hành). Phần thi viết có tin nhắn hoặc e-mail ngắn, thường phải trả lời đủ các ý đề bài nêu, ví dụ hẹn, hủy hoặc dời hẹn."
+  - type: deep_explain
+    text:
+      vi: "Muốn nhẹ nhàng hơn, bạn có thể dùng könnten: Wir könnten am Samstag grillen. Hỏi đối phương có tiện không: Hast du am Samstag Zeit? Passt dir Samstag? (passen + Dativ ở đây nghĩa là \"tiện, hợp\"). Trong e-mail hẹn, nhớ xin trả lời: Sag mir bitte Bescheid, ob du kommst – câu phụ với ob (động từ cuối) bạn đã học ở unit trước."
+  - type: example
+    target: Wollen wir am Samstag grillen? – Gute Idee! Ich bringe einen Salat mit.
+    target_lang: de
+    translation:
+      vi: Thứ Bảy mình nướng thịt nhé? – Ý hay đấy! Mình sẽ mang một món salad.
+    note:
+      vi: Bạn bè nói với nhau (du). Wollen wir … grillen – nguyên thể cuối câu; mitbringen tách – bringe … mit.
+  - type: example
+    target: Lass uns ins Kino gehen! – Heute kann ich leider nicht. Wie wäre es mit Freitag?
+    target_lang: de
+    translation:
+      vi: Mình đi xem phim đi! – Hôm nay tiếc là mình không đi được. Thứ Sáu thì sao?
+    note:
+      vi: Lass uns + … + nguyên thể cuối câu. Từ chối kèm đề nghị khác bằng Wie wäre es mit …?
+  - type: example
+    target: Gehen wir doch ins Schwimmbad! Das Wetter ist so schön.
+    target_lang: de
+    translation:
+      vi: Mình đi bơi đi! Trời đẹp thế này cơ mà.
+    note:
+      vi: Động từ đứng đầu + wir = lời rủ. doch làm lời đề nghị tự nhiên, mềm hơn.
+  - type: example
+    target: Leider muss ich für Samstag absagen. Können wir das Treffen auf nächste Woche verschieben?
+    target_lang: de
+    translation:
+      vi: Tiếc là mình phải hủy hẹn thứ Bảy. Mình dời buổi gặp sang tuần sau được không?
+    note:
+      vi: absagen = hủy (hẹn); verschieben auf + Akkusativ = dời sang. Câu hỏi với können lịch sự hơn.
+  - type: example
+    target: "Liebe Anna, wir planen am Sonntag ein Picknick im Park. Wir treffen uns um zwölf Uhr am Eingang. Hast du Lust? Sag mir bitte bis Freitag Bescheid. Viele Grüße, Minh"
+    target_lang: de
+    translation:
+      vi: "Anna thân mến, Chủ nhật bọn mình định đi picnic ở công viên. Bọn mình gặp nhau lúc mười hai giờ ở cổng vào. Bạn có muốn đi không? Chậm nhất thứ Sáu báo mình biết nhé. Thân chào, Minh"
+    note:
+      vi: "E-mail thân mật (du) đủ các ý: làm gì, khi nào, ở đâu, hỏi ý kiến và xin trả lời. der Eingang = cổng vào."
+  - type: common_mistake
+    wrong: Lass uns gehen ins Kino!
+    right: Lass uns ins Kino gehen!
+    target_lang: de
+    note:
+      vi: Sau Lass uns, động từ chính ở nguyên thể và đứng cuối câu.
+  - type: common_mistake
+    wrong: Lassen uns am Samstag grillen!
+    right: Lass uns am Samstag grillen!
+    target_lang: de
+    note:
+      vi: Với một người bạn dùng Lass uns. Lassen chỉ đi với Sie – Lassen Sie uns … (trang trọng).
+  - type: common_mistake
+    wrong: Wie wäre es mit Samstag grillen?
+    right: Wollen wir am Samstag grillen?
+    target_lang: de
+    note:
+      vi: Sau Wie wäre es mit chỉ có danh từ (Wie wäre es mit Samstag?). Muốn nói cả hoạt động thì dùng Wollen wir … grillen?
+  - type: summary
+    points:
+      - vi: "Rủ nhau: Gehen wir …! · Lass uns … + nguyên thể! · Wollen wir … + nguyên thể? · Wie wäre es mit + Dativ?"
+      - vi: "Lass uns (với du) – Lasst uns (với ihr) – Lassen Sie uns (với Sie)."
+      - vi: "Đồng ý: Gute Idee! Einverstanden! Gern!"
+      - vi: "Từ chối: Da kann ich leider nicht + lý do + đề nghị khác."
+      - vi: "zusagen (nhận lời) – absagen (hủy) – verschieben auf + Akkusativ (dời sang)."
+      - vi: "E-mail hẹn: làm gì – khi nào – ở đâu – Sag mir bitte Bescheid."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a2u08l4-listen-grillen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2u08-g-vorschlag-wir
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wollen wir am Samstag zusammen grillen?
+      options:
+        - { id: x5d, text: Thứ Bảy mình cùng nướng thịt nhé?, lang: vi }
+        - { id: n2k, text: Thứ Bảy vừa rồi bọn mình đã cùng nướng thịt., lang: vi }
+        - { id: u8f, text: Thứ Bảy bọn mình có phải nướng thịt không?, lang: vi }
+        - { id: b3s, text: Chủ nhật mình cùng nướng thịt nhé?, lang: vi }
+    answer:
+      correct_option_id: x5d
+    explanation:
+      vi: "Wollen wir … grillen? là lời rủ (… nhé?), không phải câu hỏi \"có phải … không\" (müssen) hay chuyện đã qua. am Samstag = thứ Bảy (Chủ nhật là Sonntag)."
+    display_answer: Thứ Bảy mình cùng nướng thịt nhé?
+
+  - key: de:exercise:a2u08l4-listen-lieber-sonntag
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-g-vorschlag-wir
+    prompt:
+      audio_asset_id: null
+      fallback_text: Am Samstag muss ich arbeiten. Lass uns lieber am Sonntag gehen.
+      options:
+        - { id: f9w, text: Thứ Bảy mình phải làm việc. Mình đi vào Chủ nhật thì hơn., lang: vi }
+        - { id: c1q, text: Thứ Bảy mình phải làm việc nên mình không đi nữa., lang: vi }
+        - { id: i6t, text: Chủ nhật mình phải làm việc. Mình đi vào thứ Bảy thì hơn., lang: vi }
+        - { id: z4h, text: Thứ Bảy mình được nghỉ. Mình đi vào thứ Bảy nhé., lang: vi }
+    answer:
+      correct_option_id: f9w
+    explanation:
+      vi: "Am Samstag muss ich arbeiten = thứ Bảy mình phải làm việc; Lass uns lieber am Sonntag gehen = mình đi vào Chủ nhật thì hơn (lieber = thích hơn, tốt hơn). Người nói từ chối thứ Bảy nhưng đề nghị ngày khác."
+    display_answer: Thứ Bảy mình phải làm việc. Mình đi vào Chủ nhật thì hơn.
+
+  - key: de:exercise:a2u08l4-listen-einverstanden
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a2u08-einverstanden
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wie wäre es mit Freitagabend? – Da kann ich leider nicht. Geht es am Samstag? – Ja, Samstag passt mir gut. Einverstanden!
+      options:
+        - { id: d7m, text: Hai người hẹn vào thứ Bảy., lang: vi }
+        - { id: w2n, text: Hai người hẹn vào tối thứ Sáu., lang: vi }
+        - { id: g8b, text: Hai người không hẹn được ngày nào., lang: vi }
+        - { id: k5y, text: Người thứ nhất không rảnh vào thứ Bảy., lang: vi }
+    answer:
+      correct_option_id: d7m
+    explanation:
+      vi: "Tối thứ Sáu người thứ hai không được (Da kann ich leider nicht), nên đề nghị thứ Bảy (Geht es am Samstag?). Người thứ nhất trả lời Samstag passt mir gut – Einverstanden! = thứ Bảy tiện, đồng ý."
+    display_answer: Hai người hẹn vào thứ Bảy.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a2u08l4-fill-wollen-lass
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-g-vorschlag-wir
+    prompt:
+      template: "Mai: {{b1}} (wollen) wir am Samstag ins Schwimmbad gehen? – Tom: Gute Idee! Und danach {{b2}} (lassen) uns zusammen Pizza essen!"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Wollen]
+        b2: [lass]
+    known_wrong:
+      - answer: lassen
+        feedback_vi: "Tom nói với một người bạn (du) nên dùng lass uns. Lassen chỉ dùng trong Lassen Sie uns … (trang trọng)."
+        error_tag: register_du_sie
+      - answer: lasst
+        feedback_vi: "lasst uns dùng khi nói với nhiều người (ihr). Tom chỉ nói với Mai → lass uns."
+        error_tag: register_du_sie
+    explanation:
+      vi: "Wollen wir …? = mình … nhé? (wollen chia theo wir, nguyên thể gehen ở cuối). Với một người bạn: lass uns + nguyên thể cuối câu (essen)."
+    display_answer: "Mai: Wollen (wollen) wir am Samstag ins Schwimmbad gehen? – Tom: Gute Idee! Und danach lass (lassen) uns zusammen Pizza essen!"
+
+  - key: de:exercise:a2u08l4-fill-zusagen-absagen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-verschieben
+    prompt:
+      template: "Wählen Sie: verschieben – zugesagt – abgesagt. Ich kann am Freitag nicht. Können wir das Treffen auf Samstag {{b1}}? – Tom kommt gern, er hat schon {{b2}}. – Lena ist krank, sie hat leider {{b3}}."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [verschieben]
+        b2: [zugesagt]
+        b3: [abgesagt]
+    known_wrong:
+      - answer: gezusagt
+        feedback_vi: "zusagen là động từ tách: ge nằm sau tiền tố – zugesagt."
+        error_tag: separable_prefix
+      - answer: geabsagt
+        feedback_vi: "absagen là động từ tách: ge nằm sau tiền tố – abgesagt."
+        error_tag: separable_prefix
+    explanation:
+      vi: "Können wir … verschieben? – sau können là nguyên thể (dời hẹn). Tom kommt gern → er hat zugesagt (nhận lời). Lena ist krank → sie hat abgesagt (hủy). Hai Partizip đều có ge nằm sau tiền tố tách."
+    display_answer: "Wählen Sie: verschieben – zugesagt – abgesagt. Ich kann am Freitag nicht. Können wir das Treffen auf Samstag verschieben? – Tom kommt gern, er hat schon zugesagt. – Lena ist krank, sie hat leider abgesagt."
+
+  - key: de:exercise:a2u08l4-tr-lass-uns-kino
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2u08-g-vorschlag-wir
+    prompt:
+      source_text: Mình đi xem phim ở rạp đi! (nói với một người bạn, dùng Lass uns …)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Lass uns ins Kino gehen!
+        - Lass uns doch ins Kino gehen!
+        - Lass uns zusammen ins Kino gehen!
+        - Komm, lass uns ins Kino gehen!
+    known_wrong:
+      - answer: Lass uns gehen ins Kino!
+        feedback_vi: "Sau Lass uns, nguyên thể gehen đứng cuối câu: Lass uns ins Kino gehen!"
+        error_tag: word_order
+      - answer: Lass wir ins Kino gehen!
+        feedback_vi: "Sau lassen là đại từ Akkusativ: uns, không phải wir."
+        error_tag: case_dat_akk
+      - answer: Lassen uns ins Kino gehen!
+        feedback_vi: "Nói với một người bạn (du) thì dùng Lass uns …; Lassen chỉ đi với Sie."
+        error_tag: register_du_sie
+    explanation:
+      vi: "\"Đi xem phim ở rạp\" là ins Kino gehen. Lời rủ với một người bạn: Lass uns + … + nguyên thể cuối câu."
+    display_answer: Lass uns ins Kino gehen!
+
+  - key: de:exercise:a2u08l4-tr-bescheid
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-bescheid-sagen
+    prompt:
+      source_text: Chậm nhất thứ Sáu báo mình biết nhé! (viết cho một người bạn)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Sag mir bitte bis Freitag Bescheid!
+        - Sag mir bis Freitag Bescheid!
+        - Bitte sag mir bis Freitag Bescheid!
+        - Sag mir bitte bis spätestens Freitag Bescheid!
+        - Sag mir bis spätestens Freitag Bescheid!
+        - Gib mir bitte bis Freitag Bescheid!
+        - Gib mir bis Freitag Bescheid!
+    known_wrong:
+      - answer: Sag mich bitte bis Freitag Bescheid!
+        feedback_vi: "Người được báo ở Dativ: mir (không phải mich)."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Bescheid sagen + Dativ = báo cho ai biết; với bạn bè dùng mệnh lệnh du: Sag mir … Bescheid. \"Chậm nhất thứ Sáu\" = bis Freitag (hoặc bis spätestens Freitag)."
+    display_answer: Sag mir bitte bis Freitag Bescheid!
+
+  # ---------------- application ----------------
+  - key: de:exercise:a2u08l4-wb-wollen-wir-grillen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-grillen
+    prompt:
+      instruction: "Sắp xếp thành lời rủ: \"Chủ nhật mình cùng nướng thịt nhé?\""
+      tokens:
+        - { id: g-grillen, text: grillen }
+        - { id: g-sonntag, text: Sonntag }
+        - { id: g-uns, text: uns }
+        - { id: g-wir, text: wir }
+        - { id: g-zusammen, text: zusammen }
+        - { id: g-wollen, text: wollen }
+        - { id: g-am, text: am }
+        - { id: g-lass, text: lass }
+    answer:
+      orders:
+        - [g-wollen, g-wir, g-am, g-sonntag, g-zusammen, g-grillen]
+        - [g-wollen, g-wir, g-zusammen, g-am, g-sonntag, g-grillen]
+    explanation:
+      vi: "Lời rủ dạng câu hỏi: Wollen wir … ? – wollen đứng đầu, wir ngay sau, nguyên thể grillen ở cuối. lass và uns là phương án nhiễu (Lass uns … là câu cảm thán, không phải câu hỏi)."
+    display_answer: Wollen wir am Sonntag zusammen grillen?
+
+  - key: de:exercise:a2u08l4-mcq-sprechen-teil3
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-wie-waere-es-mit
+    prompt:
+      stem: "Luyện kiểu thi nói Teil 3 (cùng lên kế hoạch). Bạn thi nói: \"Am Freitag kann ich leider nicht, da habe ich einen Arzttermin.\" Câu đáp nào phù hợp và đúng nhất?"
+      stem_lang: vi
+      options:
+        - { id: s2v, text: Schade. Wie wäre es dann mit Samstag?, lang: de }
+        - { id: e6p, text: Wie wäre es mit Samstag gehen?, lang: de }
+        - { id: t9j, text: "Gut, dann gehen wir am Freitag.", lang: de }
+        - { id: a4c, text: "Einverstanden, du hast am Freitag Zeit.", lang: de }
+    answer:
+      correct_option_id: s2v
+    explanation:
+      vi: "Bạn thi bận thứ Sáu, nên bạn tỏ ra tiếc (Schade) và đề nghị ngày khác: Wie wäre es dann mit Samstag? Sau mit chỉ có danh từ, nên \"mit Samstag gehen\" sai; hai câu còn lại bỏ qua việc bạn thi không rảnh thứ Sáu."
+    display_answer: Schade. Wie wäre es dann mit Samstag?
+
+  - key: de:exercise:a2u08l4-wb-weisst-du-wann
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a2u08-planen
+    prompt:
+      instruction: "Bạn viết e-mail hẹn đi xem phim. Sắp xếp thành câu: \"Bạn có biết mấy giờ phim bắt đầu không?\""
+      tokens:
+        - { id: w-beginnt, text: beginnt }
+        - { id: w-film, text: Film }
+        - { id: w-wann, text: wann }
+        - { id: w-du, text: du }
+        - { id: w-der, text: der }
+        - { id: w-ob, text: ob }
+        - { id: w-weisst, text: weißt }
+    answer:
+      orders:
+        - [w-weisst, w-du, w-wann, w-der, w-film, w-beginnt]
+    explanation:
+      vi: "Câu hỏi gián tiếp: Weißt du, + từ hỏi wann + chủ ngữ + động từ cuối (beginnt). ob chỉ dùng cho câu hỏi có/không, ở đây có từ hỏi wann."
+    display_answer: Weißt du, wann der Film beginnt?
