@@ -50,7 +50,7 @@ body:
       vi: "Tiếng Việt nói \"mẹ tôi\", từ sở hữu đứng sau; tiếng Đức đặt từ sở hữu trước danh từ: mein Vater, meine Mutter. Danh từ giống đực (der) và giống trung (das) đi với mein; giống cái (die) và số nhiều đi với meine."
   - type: explain
     text:
-      vi: "Năm cặp cần nhớ: mein/meine (của tôi), dein/deine (của bạn – nói với bạn thân), sein/seine (của anh ấy), ihr/ihre (của cô ấy, của họ), Ihr/Ihre (của ông, bà, anh, chị – lịch sự, luôn viết hoa). Đuôi -e giống hệt quy tắc của mein: meine Mutter, deine Eltern, seine Schwester, Ihre Familie."
+      vi: "Năm cặp cần nhớ: mein/meine (của tôi), dein/deine (của bạn – khi xưng du với bạn bè, người nhà), sein/seine (của anh ấy), ihr/ihre (của cô ấy, của họ), Ihr/Ihre (của ông, bà, anh, chị – lịch sự, luôn viết hoa). Đuôi -e giống hệt quy tắc của mein: meine Mutter, deine Eltern, seine Schwester, Ihre Familie."
   - type: explain
     text:
       vi: "Chọn sein hay ihr theo NGƯỜI sở hữu, không theo người được nói tới: Minh và mẹ anh ấy là Minh und seine Mutter, Lan và anh trai cô ấy là Lan und ihr Bruder. Đuôi -e thì theo danh từ đứng sau (Mutter giống cái → seine)."
@@ -158,7 +158,7 @@ exercises:
     difficulty: 1
     item: de:item:a1u02-g-possessiv-singular
     prompt:
-      stem: Anna kể về anh trai của cô ấy. Câu nào đúng?
+      stem: "Bạn kể với người khác về anh trai của Anna: \"Anh trai cô ấy cao.\" Câu nào đúng?"
       stem_lang: vi
       options:
         - { id: q3w, text: Ihr Bruder ist groß., lang: de }
@@ -207,10 +207,10 @@ exercises:
         - "Gợi ý: die Eltern là số nhiều; der Bruder là giống đực."
     answer:
       blanks:
-        b1: [Meine]
-        b2: [mein]
+        b1: [Meine, Deine, Seine, Ihre]
+        b2: [mein, dein, sein, ihr]
     explanation:
-      vi: "Eltern là số nhiều nên dùng meine (có -e); Bruder là giống đực nên dùng mein (không -e)."
+      vi: "Eltern là số nhiều nên dùng meine (có -e); Bruder là giống đực nên dùng mein (không -e). Deine/dein, Seine/sein, Ihre/ihr cũng đúng ngữ pháp, miễn là đuôi -e theo đúng danh từ."
     display_answer: Meine Eltern wohnen in Hue und mein Bruder wohnt in Hanoi.
 
   # ---------------- recall ----------------
@@ -286,6 +286,7 @@ exercises:
         - Meine Eltern sind sehr sympathisch.
         - Meine Eltern sind wirklich nett.
         - Meine Eltern sind wirklich sehr nett.
+        - Meine Eltern sind sehr lieb.
     known_wrong:
       - answer: Mein Eltern sind sehr nett.
         feedback_vi: die Eltern là số nhiều nên cần -e - meine Eltern.
@@ -363,6 +364,8 @@ exercises:
         - Meine Schwester ist noch klein, aber mein Bruder ist groß.
         - Meine Schwester ist noch klein und mein Bruder ist schon groß.
         - Meine Schwester ist klein und mein Bruder ist groß.
+        - Meine Schwester ist noch klein, aber mein Bruder ist schon groß.
+        - Meine Schwester ist noch klein, mein Bruder ist schon groß.
         - Mein Bruder ist groß und meine Schwester ist noch klein.
     known_wrong:
       - answer: Mein Schwester ist noch klein und mein Bruder ist groß.

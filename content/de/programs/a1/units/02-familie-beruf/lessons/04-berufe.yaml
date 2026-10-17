@@ -48,7 +48,7 @@ body:
       vi: "Sau bài này, bạn hỏi được \"Anh/chị làm nghề gì?\", trả lời \"Tôi là kỹ sư\", \"Mẹ tôi là bác sĩ, làm ở bệnh viện\" và nghe hiểu một người giới thiệu nghề của mình."
   - type: explain
     text:
-      vi: "Nói nghề với sein, tiếng Đức KHÔNG dùng mạo từ: Ich bin Lehrerin. Er ist Arzt. Tiếng Anh nói \"I am a teacher\", còn tiếng Đức giống tiếng Việt hơn: \"Tôi là giáo viên\"."
+      vi: "Khi chỉ nói nghề với sein, tiếng Đức thường KHÔNG dùng mạo từ: Ich bin Lehrerin. Er ist Arzt. Tiếng Anh nói \"I am a teacher\", còn tiếng Đức giống tiếng Việt hơn: \"Tôi là giáo viên\"."
   - type: explain
     text:
       vi: "Nghề của người nữ thường thêm -in và luôn là giống cái: der Verkäufer → die Verkäuferin, der Ingenieur → die Ingenieurin. Một số từ còn thêm biến âm: der Arzt → die Ärztin, der Koch → die Köchin. Số nhiều của -in là -innen: die Ärztinnen."
@@ -60,10 +60,10 @@ body:
       vi: "arbeiten có gốc tận cùng -t nên thêm -e- trước đuôi: du arbeitest, er arbeitet. arbeiten als + nghề, cũng không có mạo từ: Ich arbeite als Koch. Nơi làm việc \"ở bệnh viện\" là im Krankenhaus – học như một cụm, cách dùng in + Dativ sẽ học ở Unit 5."
   - type: explain
     text:
-      vi: "Ngành điều dưỡng (die Pflege) ở Đức tuyển nhiều người Việt. Tên nghề chính thức hiện nay là Pflegefachfrau/Pflegefachmann; trong giao tiếp hằng ngày người ta vẫn nói Pfleger/Pflegerin, còn Krankenschwester là tên gọi cũ."
+      vi: "Ngành điều dưỡng (die Pflege) ở Đức tuyển nhiều người Việt. Tên nghề chính thức hiện nay là Pflegefachfrau/Pflegefachmann; trong giao tiếp hằng ngày người ta vẫn nói Pfleger/Pflegerin; Krankenschwester là tên gọi cũ nhưng vẫn hay nghe."
   - type: deep_explain
     text:
-      vi: "Phủ định nghề dùng kein: Ich bin kein Arzt (tôi không phải bác sĩ). Khi có tính từ đứng trước nghề thì lại cần mạo từ (Er ist ein guter Koch – \"anh ấy là một đầu bếp giỏi\"); dạng này bạn sẽ học ở A2. Không phải nghề nào cũng thêm -in: der Hausmann → die Hausfrau đổi cả phần cuối. Trên báo và thông báo tuyển dụng bạn sẽ gặp cách viết cả hai giới như Ärztinnen und Ärzte hoặc Mitarbeiter (m/w/d)."
+      vi: "Phủ định nghề dùng kein: Ich bin kein Arzt (tôi không phải bác sĩ). Khi có tính từ đứng trước nghề thì lại cần mạo từ (Er ist ein guter Koch – \"anh ấy là một đầu bếp giỏi\"); dạng này bạn sẽ học ở A2. Câu Er ist ein Koch cũng đúng ngữ pháp, nhưng mang ý xếp loại hay nhấn mạnh; khi chỉ giới thiệu nghề, hãy nói Er ist Koch. Không phải nghề nào cũng thêm -in: der Hausmann → die Hausfrau đổi cả phần cuối. Trên báo và thông báo tuyển dụng bạn sẽ gặp cách viết cả hai giới như Ärztinnen und Ärzte hoặc Mitarbeiter (m/w/d)."
   - type: example
     target: "Was sind Sie von Beruf? – Ich bin Ingenieur. Meine Firma ist in Hamburg."
     target_lang: de
@@ -111,7 +111,7 @@ body:
     right: Ich bin Lehrer.
     target_lang: de
     note:
-      vi: "Do ảnh hưởng tiếng Anh (a teacher). Nói nghề với sein thì bỏ mạo từ."
+      vi: "Do ảnh hưởng tiếng Anh (a teacher). Câu có ein không sai ngữ pháp nhưng nghe như nhấn mạnh; khi chỉ giới thiệu nghề, người Đức bỏ mạo từ."
   - type: common_mistake
     wrong: Lan ist Arzt.
     right: Lan ist Ärztin.
@@ -217,7 +217,7 @@ exercises:
     answer:
       correct_option_id: b1l
     explanation:
-      vi: "Nói nghề với sein không dùng mạo từ, và Lan là nữ nên dùng Lehrerin (số ít). Lehrerinnen là số nhiều; eine Lehrer sai cả mạo từ lẫn dạng nữ."
+      vi: "Giới thiệu nghề với sein thường không dùng mạo từ, và Lan là nữ nên dùng Lehrerin (số ít). Ein Lehrer là dạng nam, Lehrerinnen là số nhiều, eine Lehrer sai giống. (Có tính từ hoặc khi nhấn mạnh thì có thể dùng mạo từ: Lan ist eine gute Lehrerin.)"
     display_answer: Lan ist Lehrerin.
 
   # ---------------- recall ----------------
@@ -233,18 +233,15 @@ exercises:
         - { id: b1, width_hint: 8 }
     answer:
       blanks:
-        b1: [Köchin]
+        b1: [Köchin, eine Köchin]
     rubric:
       diacritics: lenient
     known_wrong:
       - answer: Koch
         feedback_vi: Chị/em gái là nữ nên dùng dạng -in - Köchin (có biến âm ö).
         error_tag: feminine_form
-      - answer: eine Köchin
-        feedback_vi: Nói nghề với sein không dùng mạo từ - chỉ Köchin.
-        error_tag: beruf_article
     explanation:
-      vi: "meine Schwester là nữ nên nghề phải ở dạng nữ: Koch → Köchin (thêm -in và biến âm o → ö). Không có mạo từ trước nghề."
+      vi: "meine Schwester là nữ nên nghề phải ở dạng nữ: Koch → Köchin (thêm -in và biến âm o → ö). Giống vế đầu (ist Koch), cách nói thông thường không có mạo từ: ist auch Köchin; eine Köchin cũng đúng ngữ pháp nhưng ít dùng khi chỉ nói nghề."
     display_answer: Mein Bruder ist Koch und meine Schwester ist auch Köchin.
 
   - key: de:exercise:a1u02l4-fill-bist-arbeite
@@ -290,25 +287,24 @@ exercises:
       accepted:
         - Meine Mutter ist Ärztin.
         - Meine Mutter ist Ärztin von Beruf.
+        - Meine Mutter ist von Beruf Ärztin.
         - Meine Mutter arbeitet als Ärztin.
         - Meine Mama ist Ärztin.
+        - Meine Mutter ist eine Ärztin.
     rubric:
       diacritics: lenient
     known_wrong:
       - answer: Meine Mutter ist Arzt.
         feedback_vi: Mẹ là nữ nên dùng dạng nữ - Ärztin.
         error_tag: feminine_form
-      - answer: Meine Mutter ist eine Ärztin.
-        feedback_vi: Khi chỉ nói nghề, người Đức bỏ mạo từ - Meine Mutter ist Ärztin.
-        error_tag: beruf_article
       - answer: Meine Mutter ist ein Arzt.
-        feedback_vi: Bỏ mạo từ trước nghề và dùng dạng nữ - Meine Mutter ist Ärztin.
-        error_tag: beruf_article
+        feedback_vi: Mẹ là nữ nên dùng dạng nữ - Ärztin; khi chỉ nói nghề thường bỏ mạo từ - Meine Mutter ist Ärztin.
+        error_tag: feminine_form
       - answer: Mein Mutter ist Ärztin.
         feedback_vi: die Mutter giống cái nên cần -e - meine Mutter.
         error_tag: possessive_ending
     explanation:
-      vi: "die Mutter → meine Mutter. Nghề của người nữ dùng dạng -in: Ärztin; nói nghề với sein không có mạo từ."
+      vi: "die Mutter → meine Mutter. Nghề của người nữ dùng dạng -in: Ärztin. Cách nói nghề thông thường không có mạo từ (Meine Mutter ist Ärztin); eine Ärztin cũng đúng ngữ pháp nhưng mang ý nhấn mạnh."
     display_answer: Meine Mutter ist Ärztin.
 
   # ---------------- application ----------------

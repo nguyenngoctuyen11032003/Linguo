@@ -354,7 +354,7 @@ items:
           translation:
             vi: Những đứa con đã lớn.
       confusion:
-        vi: "Mẹo: die …-e → -n (Tante → Tanten); -in → -innen (Freundin → Freundinnen); der/das …-er, -el, -chen không đổi (Onkel → Onkel); từ mượn -o, -a, -y → -s (Auto → Autos)."
+        vi: "Mẹo (có ngoại lệ): die …-e → -n (Tante → Tanten); -in → -innen (Freundin → Freundinnen); der/das …-er, -el, -chen không thêm đuôi, có từ thêm biến âm (Onkel → Onkel, Bruder → Brüder); từ mượn -o, -a, -y thường thêm -s (Auto → Autos, nhưng Firma → Firmen)."
 
   - key: de:item:a1u02-sohn
     type: vocab
@@ -806,7 +806,7 @@ items:
           translation:
             vi: Các con tôi nuôi hai con thỏ.
       confusion:
-        vi: "Đuôi -chen luôn là giống trung (das) và số nhiều không đổi: die Kaninchen."
+        vi: "Đuôi -chen (vốn mang nghĩa \"nhỏ\") làm danh từ thành giống trung (das), số nhiều không đổi: die Kaninchen."
 
   - key: de:item:a1u02-hamster
     type: vocab
@@ -825,7 +825,7 @@ items:
           translation:
             vi: Đây không phải là con hamster. Đây là con thỏ.
       confusion:
-        vi: "Danh từ giống đực tận cùng -er không đổi ở số nhiều: der Hamster → die Hamster."
+        vi: "Danh từ giống đực tận cùng -er thường không thêm đuôi ở số nhiều: der Hamster → die Hamster (có từ thêm biến âm: der Bruder → die Brüder)."
 
   - key: de:item:a1u02-laptop
     type: vocab
@@ -855,7 +855,7 @@ items:
       pos: ngữ pháp
     back:
       meaning:
-        vi: "Nói nghề với sein hoặc arbeiten als, tiếng Đức không dùng mạo từ: Ich bin Ingenieur. Er arbeitet als Koch. Khác tiếng Anh (a teacher), giống tiếng Việt (tôi là giáo viên)."
+        vi: "Khi chỉ nói nghề với sein, tiếng Đức thường không dùng mạo từ: Ich bin Ingenieur. Sau arbeiten als thì không có mạo từ: Er arbeitet als Koch. Khác tiếng Anh (a teacher), giống tiếng Việt (tôi là giáo viên)."
       examples:
         - target: Ich bin Ingenieur.
           translation:
@@ -864,7 +864,7 @@ items:
           translation:
             vi: Chị tôi làm nhân viên bán hàng.
       confusion:
-        vi: "Phủ định nghề dùng kein: Ich bin kein Arzt (tôi không phải bác sĩ)."
+        vi: "Phủ định nghề dùng kein: Ich bin kein Arzt (tôi không phải bác sĩ). Có tính từ trước nghề thì cần mạo từ (Er ist ein guter Koch); Er ist ein Koch cũng đúng ngữ pháp nhưng mang ý xếp loại, nhấn mạnh, không phải cách nói nghề thông thường."
 
   - key: de:item:a1u02-g-feminin-in
     type: grammar_point
@@ -885,7 +885,7 @@ items:
           translation:
             vi: Lan là đầu bếp, còn Mai là nhân viên bán hàng.
       confusion:
-        vi: "Với người nữ, dùng dạng -in: Sie ist Lehrerin (không nói Sie ist Lehrer)."
+        vi: "Nói về một người nữ, hãy dùng dạng -in: Sie ist Lehrerin, Lan ist Ärztin."
 
   - key: de:item:a1u02-beruf
     type: vocab
@@ -1048,7 +1048,7 @@ items:
         vi: "Tên nghề chính thức hiện nay là Pflegefachfrau / Pflegefachmann; trong giao tiếp vẫn nói Pfleger/Pflegerin."
 
   - key: de:item:a1u02-firma
-    type: phrase
+    type: vocab
     level: a1
     difficulty: 1
     skill_tags: [vocabulary]
@@ -1094,7 +1094,7 @@ items:
     skill_tags: [vocabulary]
     front:
       text: "als (arbeiten als …)"
-      pos: giới từ
+      pos: liên từ
     back:
       meaning:
         vi: "với vai trò là, làm (nghề): arbeiten als + nghề, không có mạo từ"

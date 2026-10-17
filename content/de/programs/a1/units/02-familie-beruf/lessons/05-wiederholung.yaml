@@ -117,11 +117,11 @@ body:
     note:
       vi: "Nói tuổi dùng sein + Jahre alt, không dịch \"có\" bằng haben."
   - type: common_mistake
-    wrong: Meine Mutter ist eine Lehrerin.
-    right: Meine Mutter ist Lehrerin.
+    wrong: Meine Mutter arbeitet als eine Lehrerin.
+    right: Meine Mutter arbeitet als Lehrerin.
     target_lang: de
     note:
-      vi: "Khi chỉ nói nghề, bỏ mạo từ."
+      vi: "Sau als + nghề không có mạo từ. Với sein cũng vậy khi chỉ giới thiệu nghề: Meine Mutter ist Lehrerin."
   - type: common_mistake
     wrong: Ich habe zwei Bruder.
     right: Ich habe zwei Brüder.
@@ -183,7 +183,7 @@ exercises:
     difficulty: 1
     item: de:item:a1u02-arzt
     prompt:
-      stem: "Das ist Familie Becker aus Bremen. Herr Becker ist 45 Jahre alt und Koch von Beruf. Seine Frau heißt Sabine. Sie ist Ärztin und arbeitet im Krankenhaus. Die zwei Kinder heißen Mia und Finn. Mia ist 12 und Finn ist 9 Jahre alt. Die Familie hat eine Katze. Ein Auto hat die Familie nicht.\n\nWas ist richtig?"
+      stem: "Das ist Familie Becker aus Bremen. Herr Becker ist 45 Jahre alt und Koch von Beruf. Seine Frau heißt Sabine. Sie ist Ärztin und arbeitet im Krankenhaus. Die zwei Kinder heißen Mia und Finn. Mia ist 12 und Finn ist 9 Jahre alt. Die Familie hat eine Katze, aber kein Auto.\n\nWas ist richtig?"
       stem_lang: de
       options:
         - { id: r3a, text: Sabine Becker ist Ärztin., lang: de }
@@ -193,7 +193,7 @@ exercises:
     answer:
       correct_option_id: r3a
     explanation:
-      vi: "\"Seine Frau heißt Sabine. Sie ist Ärztin\" – vợ ông Becker, Sabine, là bác sĩ. Ông Becker là đầu bếp (Koch); gia đình có hai con và không có xe hơi (Ein Auto hat die Familie nicht)."
+      vi: "\"Seine Frau heißt Sabine. Sie ist Ärztin\" – vợ ông Becker, Sabine, là bác sĩ. Ông Becker là đầu bếp (Koch); gia đình có hai con và không có xe hơi (kein Auto)."
     display_answer: Sabine Becker ist Ärztin.
 
   - key: de:exercise:a1u02l5-mcq-lesen-wer-koch
@@ -203,7 +203,7 @@ exercises:
     difficulty: 2
     item: de:item:a1u02-g-possessiv-singular
     prompt:
-      stem: "Das ist Familie Becker aus Bremen. Herr Becker ist 45 Jahre alt und Koch von Beruf. Seine Frau heißt Sabine. Sie ist Ärztin und arbeitet im Krankenhaus. Die zwei Kinder heißen Mia und Finn. Mia ist 12 und Finn ist 9 Jahre alt. Die Familie hat eine Katze. Ein Auto hat die Familie nicht.\n\nWer ist Koch von Beruf?"
+      stem: "Das ist Familie Becker aus Bremen. Herr Becker ist 45 Jahre alt und Koch von Beruf. Seine Frau heißt Sabine. Sie ist Ärztin und arbeitet im Krankenhaus. Die zwei Kinder heißen Mia und Finn. Mia ist 12 und Finn ist 9 Jahre alt. Die Familie hat eine Katze, aber kein Auto.\n\nWer ist Koch von Beruf?"
       stem_lang: de
       options:
         - { id: r4a, text: Herr Becker, lang: de }
@@ -369,13 +369,12 @@ exercises:
         - Mein Vater ist kein Arzt. Er arbeitet als Ingenieur.
         - Mein Vater ist nicht Arzt. Er ist Ingenieur.
         - Mein Vater ist nicht Arzt, sondern Ingenieur.
+        - Mein Vater ist kein Arzt. Er ist ein Ingenieur.
+        - Mein Vater ist kein Arzt. Er ist von Beruf Ingenieur.
     known_wrong:
       - answer: Mein Vater ist nicht ein Arzt. Er ist Ingenieur.
         feedback_vi: Không nói nicht ein - phủ định nghề dùng kein Arzt.
         error_tag: negation_kein
-      - answer: Mein Vater ist kein Arzt. Er ist ein Ingenieur.
-        feedback_vi: Nói nghề không dùng mạo từ - Er ist Ingenieur.
-        error_tag: beruf_article
       - answer: Mein Vater ist keine Arzt. Er ist Ingenieur.
         feedback_vi: der Arzt giống đực nên dùng kein, không có -e.
         error_tag: negation_ending
@@ -383,7 +382,7 @@ exercises:
         feedback_vi: der Vater giống đực nên dùng mein, không có -e.
         error_tag: possessive_ending
     explanation:
-      vi: "Phủ định nghề dùng kein: kein Arzt (der Arzt → kein, không -e). Câu khẳng định nghề không có mạo từ: Er ist Ingenieur."
+      vi: "Phủ định nghề dùng kein: kein Arzt (der Arzt → kein, không -e). Câu khẳng định nghề thường không có mạo từ: Er ist Ingenieur (ein Ingenieur cũng đúng, nhấn mạnh sự đối lập)."
     display_answer: Mein Vater ist kein Arzt. Er ist Ingenieur.
 
   - key: de:exercise:a1u02l5-wb-schwester-nicht
@@ -405,9 +404,8 @@ exercises:
     answer:
       orders:
         - [c-meine, c-schwester, c-ist, c-nicht, c-verheiratet]
-        - [c-verheiratet, c-ist, c-meine, c-schwester, c-nicht]
     explanation:
-      vi: "Phủ định tính từ (verheiratet) dùng nicht, đặt ngay trước tính từ. die Schwester giống cái → meine. Cách nói nhấn mạnh Verheiratet ist meine Schwester nicht cũng đúng."
+      vi: "Phủ định tính từ (verheiratet) dùng nicht, đặt ngay trước tính từ; kein chỉ dùng trước danh từ. die Schwester giống cái → meine."
     display_answer: Meine Schwester ist nicht verheiratet.
 
   - key: de:exercise:a1u02l5-wb-von-beruf
@@ -417,7 +415,7 @@ exercises:
     difficulty: 2
     item: de:item:a1u02-beruf
     prompt:
-      instruction: "Thẻ chủ đề Beruf. Hỏi một giám khảo bạn chưa quen (xưng Sie): \"Ông/bà làm nghề gì?\""
+      instruction: "Thẻ chủ đề Beruf. Hỏi một thí sinh thi cùng mà bạn chưa quen (xưng Sie): \"Ông/bà làm nghề gì?\""
       tokens:
         - { id: v-beruf, text: Beruf }
         - { id: v-sie, text: Sie }

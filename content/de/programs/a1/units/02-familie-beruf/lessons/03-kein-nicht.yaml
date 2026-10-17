@@ -59,7 +59,7 @@ body:
       vi: "Bài này chỉ dùng kein/ein với danh từ giống đực ở chủ ngữ hoặc sau sein (Das ist kein Hund). Sau haben, danh từ giống đực đổi dạng (einen, keinen) – bạn học ở Unit 3; vì vậy ở đây chỉ nói Ich habe eine Katze, kein Auto, keine Kinder."
   - type: deep_explain
     text:
-      vi: "Ja chỉ dùng để trả lời câu hỏi khẳng định (Hast du ein Auto? – Ja.). Với câu hỏi có kein/nicht, ja gần như không dùng: muốn phản bác thì nói Doch, kèm câu đầy đủ cho rõ (Doch, ich habe eine Katze). Kein và nicht không đi chung với một danh từ: nói kein Hund hoặc nicht mein Hund, không có \"kein mein Hund\" hay \"nicht ein Hund\". Danh từ không đếm được cũng phủ định bằng kein: Ich habe keine Zeit. Câu \"Mein Fahrrad ist das nicht\" (đảo vị trí) cũng đúng, dùng khi muốn nhấn mạnh."
+      vi: "Ja chỉ dùng để trả lời câu hỏi khẳng định (Hast du ein Auto? – Ja.). Với câu hỏi có kein/nicht, ja gần như không dùng: muốn phản bác thì nói Doch, kèm câu đầy đủ cho rõ (Doch, ich habe eine Katze). Kein và nicht không đi chung với một danh từ: nói kein Hund hoặc nicht mein Hund, không có \"kein mein Hund\" hay \"nicht ein Hund\". Danh từ không đếm được cũng phủ định bằng kein: Ich habe keine Zeit."
   - type: example
     target: "Ist das ein Hund? – Nein, das ist kein Hund. Das ist eine Katze."
     target_lang: de
@@ -103,12 +103,12 @@ body:
     note:
       vi: "Doch cũng dùng để phản bác một câu nói phủ định, không chỉ câu hỏi."
   - type: example
-    target: "Hast du ein Hobby? – Ja, Vögel! Ich habe zwei Vögel."
+    target: "Hast du ein Haustier? – Ja, ich habe zwei Vögel. Das ist mein Hobby."
     target_lang: de
     translation:
-      vi: "Bạn có sở thích gì không? – Có, chim! Mình nuôi hai con chim."
+      vi: "Bạn có nuôi thú cưng không? – Có, mình nuôi hai con chim. Đó là sở thích của mình."
     note:
-      vi: "das Hobby giống trung → ein Hobby. der Vogel số nhiều là die Vögel (thêm biến âm)."
+      vi: "das Haustier, das Hobby giống trung → ein Haustier, mein Hobby. der Vogel số nhiều là die Vögel (thêm biến âm)."
   - type: common_mistake
     wrong: Das ist nicht ein Hund.
     right: Das ist kein Hund.
@@ -159,7 +159,7 @@ exercises:
     answer:
       correct_option_id: n1e
     explanation:
-      vi: "die Katze là giống cái nên \"một con mèo\" là eine Katze. Ein dùng cho der/das; der Katze, das Katze sai giống và không mang nghĩa \"một\"."
+      vi: "die Katze là giống cái nên \"một con mèo\" là eine Katze. Ein dùng cho der/das; der, das là mạo từ xác định (không mang nghĩa \"một\") và cũng không hợp với giống của die Katze."
     display_answer: eine
 
   - key: de:exercise:a1u02l3-mcq-kein-hund
@@ -358,9 +358,8 @@ exercises:
     answer:
       orders:
         - [r-das, r-ist, r-nicht, r-mein, r-fahrrad]
-        - [r-mein, r-fahrrad, r-ist, r-das, r-nicht]
     explanation:
-      vi: "Có mein thì phủ định bằng nicht, đặt trước mein: Das ist nicht mein Fahrrad. das Fahrrad giống trung nên là mein (không -e). Cách nói nhấn mạnh Mein Fahrrad ist das nicht cũng đúng."
+      vi: "Có mein thì phủ định bằng nicht, đặt trước mein: Das ist nicht mein Fahrrad. das Fahrrad giống trung nên là mein (không -e); kein không đi chung với mein."
     display_answer: Das ist nicht mein Fahrrad.
 
   - key: de:exercise:a1u02l3-tr-keine-zeit-doch

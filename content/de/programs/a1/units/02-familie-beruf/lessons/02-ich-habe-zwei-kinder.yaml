@@ -57,7 +57,7 @@ body:
       vi: "Có 5 kiểu số nhiều: -e (der Sohn → die Söhne), -(e)n (die Tante → die Tanten), -er (das Kind → die Kinder), -s (die Oma → die Omas), không thêm đuôi (der Onkel → die Onkel). Nhiều từ còn thêm biến âm: der Bruder → die Brüder, die Tochter → die Töchter."
   - type: explain
     text:
-      vi: "Mẹo đoán: danh từ giống cái tận cùng -e thêm -n (Tante → Tanten); -in thêm -nen (Freundin → Freundinnen); giống đực, giống trung tận cùng -er, -el, -chen giữ nguyên (Onkel → Onkel); từ mượn tận cùng -o, -a, -y thêm -s (Opa → Opas). Mẹo có ngoại lệ, nên luôn học danh từ kèm số nhiều như trên thẻ từ: der Sohn, ¨-e."
+      vi: "Mẹo đoán: danh từ giống cái tận cùng -e thêm -n (Tante → Tanten); -in thêm -nen (Freundin → Freundinnen); giống đực, giống trung tận cùng -er, -el, -chen không thêm đuôi, có từ thêm biến âm (Onkel → Onkel, Bruder → Brüder); từ mượn tận cùng -o, -a, -y thường thêm -s (Opa → Opas). Mẹo có ngoại lệ, nên luôn học danh từ kèm số nhiều như trên thẻ từ: der Sohn, ¨-e."
   - type: explain
     text:
       vi: "Hỏi tình trạng hôn nhân: Sind Sie verheiratet? – Ja, ich bin verheiratet. / Nein, ich bin ledig. / Ich bin geschieden. Ba từ này đi với sein, không đi với haben; ở Đức người ta ít hỏi chuyện này với người mới quen."
@@ -73,7 +73,7 @@ body:
     translation:
       vi: "Tôi có ba con: một con gái và hai con trai."
     note:
-      vi: "Kinder, Söhne là số nhiều (sau số đếm). eine Tochter đứng sau haben vẫn giữ nguyên dạng vì Tochter là giống cái."
+      vi: "Kinder, Söhne là số nhiều (sau số đếm). eine Tochter = một con gái (ein/eine học kỹ ở bài 3); sau haben vẫn giữ nguyên dạng vì Tochter là giống cái."
   - type: example
     target: "Hast du Geschwister? – Ja, ich habe zwei Brüder und eine Schwester."
     target_lang: de
@@ -296,6 +296,7 @@ exercises:
         - Ich bin verheiratet und ich habe zwei Kinder.
         - Ich bin verheiratet und habe 2 Kinder.
         - Ich bin verheiratet und ich habe 2 Kinder.
+        - Ich bin verheiratet, ich habe zwei Kinder.
     rubric:
       diacritics: lenient
     known_wrong:
