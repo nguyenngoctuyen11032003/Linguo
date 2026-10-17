@@ -1,0 +1,1586 @@
+# Học liệu unit A1U05 "Nhà ở và thành phố / Wohnen und Orte" (A1). Danh từ kèm mạo từ và số nhiều; IPA cho từ khó đọc.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ---------------- Bài 1: Meine Wohnung – es gibt ----------------
+  - key: de:item:a1u05-g-es-gibt
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "es gibt + Akkusativ: Es gibt einen Balkon."
+      pos: cấu trúc
+    back:
+      meaning:
+        vi: "Ở đâu đó có cái gì: es gibt + tân ngữ ở Akkusativ (giống đực: einen/keinen). Động từ luôn là gibt, kể cả khi sau đó là danh từ số nhiều. Câu hỏi: Gibt es …?"
+      examples:
+        - target: Es gibt einen Balkon, aber es gibt keinen Aufzug.
+          translation:
+            vi: Có ban công nhưng không có thang máy.
+        - target: Hier gibt es zwei Supermärkte.
+          translation:
+            vi: Ở đây có hai siêu thị.
+      confusion:
+        vi: "Tiếng Việt dùng \"có\" cho cả sở hữu lẫn tồn tại. Ai/cái gì sở hữu thì dùng haben (Die Wohnung hat einen Balkon.); ở một nơi có cái gì thì dùng es gibt (Hier gibt es einen Supermarkt.), không nói \"Hier hat einen Supermarkt\"."
+
+  - key: de:item:a1u05-g-possessiv-plural
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "unser / unsere · euer / eure"
+      ipa: /ˈʊnzɐ/ · /ˈɔʏ̯ɐ/ · /ˈɔʏ̯ʁə/
+      pos: mạo từ sở hữu
+    back:
+      meaning:
+        vi: "unser = của chúng tôi (wir), euer = của các bạn (ihr). Giống mein/dein: thêm -e trước danh từ giống cái và số nhiều (unsere Küche, unsere Zimmer). euer thường bỏ chữ e ở giữa khi có đuôi: eure Wohnung."
+      examples:
+        - target: Unsere Wohnung ist klein, aber hell.
+          translation:
+            vi: Căn hộ của chúng tôi nhỏ nhưng sáng sủa.
+        - target: Wie ist eure Küche?
+          translation:
+            vi: Bếp nhà các bạn thế nào?
+      confusion:
+        vi: "unser/euer là \"của\" (mạo từ đứng trước danh từ), còn wir/ihr là chủ ngữ. Akkusativ giống đực thêm -en: unseren Balkon, euren Garten."
+
+  - key: de:item:a1u05-geben
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: geben (du gibst)
+      ipa: /ˈɡeːbn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: cho, đưa; trong cụm es gibt = có
+      examples:
+        - target: Wir geben am Samstag eine Party.
+          translation:
+            vi: Thứ Bảy này chúng tôi tổ chức một bữa tiệc.
+        - target: Gibt es hier einen Aufzug?
+          translation:
+            vi: Ở đây có thang máy không?
+      confusion:
+        vi: "Đổi nguyên âm e → i ở du và er/sie/es: du gibst, er gibt (i ngắn). Các ngôi khác giữ e: wir geben."
+
+  - key: de:item:a1u05-wohnung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Wohnung, -en
+      ipa: /ˈvoːnʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: căn hộ
+      examples:
+        - target: Meine Wohnung hat drei Zimmer.
+          translation:
+            vi: Căn hộ của tôi có ba phòng.
+        - target: Die Wohnung ist hell und ruhig.
+          translation:
+            vi: Căn hộ sáng sủa và yên tĩnh.
+      pronunciation_note:
+        vi: "w đọc như \"v\" tiếng Việt; -ung đọc gần \"ung\" nhưng âm ng cuối nhẹ."
+      confusion:
+        vi: "die Wohnung là căn hộ (thường trong một toà nhà); das Haus là cả ngôi nhà."
+
+  - key: de:item:a1u05-zimmer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Zimmer, -
+      ipa: /ˈtsɪmɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng, căn phòng
+      examples:
+        - target: Die Wohnung hat zwei Zimmer.
+          translation:
+            vi: Căn hộ có hai phòng.
+        - target: Das Zimmer ist klein, aber hell.
+          translation:
+            vi: Căn phòng nhỏ nhưng sáng.
+      pronunciation_note:
+        vi: "z đọc là \"ts\"; -er cuối đọc như \"a\" nhẹ."
+      confusion:
+        vi: "Số nhiều giống số ít (das Zimmer → die Zimmer). Trong quảng cáo nhà, Zimmer chỉ tính phòng ở, không tính bếp và phòng tắm."
+
+  - key: de:item:a1u05-kueche
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Küche, -n
+      ipa: /ˈkʏçə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: (gian) bếp
+      examples:
+        - target: Die Küche ist klein, aber hell.
+          translation:
+            vi: Bếp nhỏ nhưng sáng.
+        - target: Gibt es eine Küche?
+          translation:
+            vi: Có bếp không?
+      pronunciation_note:
+        vi: "ü là \"i\" tròn môi; ch sau ü là âm \"h\" xì nhẹ giữa lưỡi (ich-Laut), không phải \"kh\"."
+
+  - key: de:item:a1u05-bad
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Bad, ¨-er
+      ipa: /baːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng tắm
+      examples:
+        - target: Das Bad ist neu.
+          translation:
+            vi: Phòng tắm còn mới.
+        - target: Die Wohnung hat ein Bad und eine Toilette.
+          translation:
+            vi: Căn hộ có một phòng tắm và một nhà vệ sinh.
+      pronunciation_note:
+        vi: "a dài; d cuối từ đọc thành \"t\": /baːt/. Số nhiều die Bäder."
+      confusion:
+        vi: "das Bad thường có cả bồn cầu; die Toilette chỉ là nhà vệ sinh."
+
+  - key: de:item:a1u05-wohnzimmer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Wohnzimmer, -
+      ipa: /ˈvoːnˌtsɪmɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng khách
+      examples:
+        - target: Das Wohnzimmer ist groß und hell.
+          translation:
+            vi: Phòng khách rộng và sáng.
+        - target: Unser Wohnzimmer ist sehr gemütlich.
+          translation:
+            vi: Phòng khách nhà chúng tôi rất ấm cúng.
+      confusion:
+        vi: "Từ ghép wohnen + das Zimmer: giống theo từ cuối nên là das Wohnzimmer; trọng âm ở phần đầu (WOHN-zimmer)."
+
+  - key: de:item:a1u05-schlafzimmer
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Schlafzimmer, -
+      ipa: /ˈʃlaːfˌtsɪmɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng ngủ
+      examples:
+        - target: Das Schlafzimmer ist ruhig.
+          translation:
+            vi: Phòng ngủ yên tĩnh.
+        - target: Unsere Wohnung hat zwei Schlafzimmer.
+          translation:
+            vi: Căn hộ của chúng tôi có hai phòng ngủ.
+      confusion:
+        vi: "schlafen (ngủ) + das Zimmer → das Schlafzimmer."
+
+  - key: de:item:a1u05-balkon
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Balkon, -e
+      ipa: /balˈkoːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban công
+      examples:
+        - target: Es gibt einen Balkon.
+          translation:
+            vi: Có ban công.
+        - target: Der Balkon ist klein, aber schön.
+          translation:
+            vi: Ban công nhỏ nhưng đẹp.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: bal-KON. Ở miền Nam nước Đức và Áo nhiều người đọc /balˈkɔŋ/."
+      confusion:
+        vi: "Giống đực: Akkusativ là einen Balkon. Số nhiều die Balkone (cũng gặp die Balkons)."
+
+  - key: de:item:a1u05-hell
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: hell
+      ipa: /hɛl/
+      pos: tính từ
+    back:
+      meaning:
+        vi: sáng, sáng sủa
+      examples:
+        - target: Die Wohnung ist sehr hell.
+          translation:
+            vi: Căn hộ rất sáng sủa.
+        - target: Das Zimmer ist klein, aber hell.
+          translation:
+            vi: Căn phòng nhỏ nhưng sáng.
+      confusion:
+        vi: "Trái nghĩa: dunkel (tối). hell dùng cho phòng, ánh sáng, màu (hellblau = xanh nhạt)."
+
+  - key: de:item:a1u05-ruhig
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: ruhig
+      ipa: /ˈʁuːɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: yên tĩnh; bình tĩnh
+      examples:
+        - target: Die Straße ist ruhig.
+          translation:
+            vi: Con phố yên tĩnh.
+        - target: Das Schlafzimmer ist sehr ruhig.
+          translation:
+            vi: Phòng ngủ rất yên tĩnh.
+      pronunciation_note:
+        vi: "-ig cuối từ đọc như \"ich\" (âm h xì nhẹ): RU-ich."
+
+  - key: de:item:a1u05-miete
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Miete, -n
+      ipa: /ˈmiːtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền thuê nhà
+      examples:
+        - target: Die Miete ist leider sehr teuer.
+          translation:
+            vi: Tiếc là tiền thuê nhà rất đắt.
+        - target: Wie hoch ist die Miete?
+          translation:
+            vi: Tiền thuê nhà là bao nhiêu?
+      confusion:
+        vi: "Quảng cáo nhà ở Đức hay ghi Kaltmiete (chưa gồm sưởi, nước…) và Warmmiete (đã gồm); bạn sẽ học kỹ ở A2."
+
+  - key: de:item:a1u05-flur
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Flur, -e
+      ipa: /fluːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành lang (lối đi trong căn hộ, ngay sau cửa ra vào)
+      examples:
+        - target: Der Flur ist klein.
+          translation:
+            vi: Hành lang nhỏ.
+        - target: Es gibt einen Flur, eine Küche und zwei Zimmer.
+          translation:
+            vi: Có một hành lang, một bếp và hai phòng.
+      pronunciation_note:
+        vi: "u dài; r cuối đọc như \"a\" rất nhẹ."
+
+  - key: de:item:a1u05-toilette
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Toilette, -n
+      ipa: /toaˈlɛtə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà vệ sinh; bồn cầu
+      examples:
+        - target: Wo ist die Toilette?
+          translation:
+            vi: Nhà vệ sinh ở đâu?
+        - target: Die Wohnung hat ein Bad und eine Toilette.
+          translation:
+            vi: Căn hộ có một phòng tắm và một nhà vệ sinh.
+      pronunciation_note:
+        vi: "Từ gốc Pháp: oi đọc \"oa\", trọng âm ở -LET-."
+
+  - key: de:item:a1u05-garten
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Garten, ¨-
+      ipa: /ˈɡaʁtn̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vườn
+      examples:
+        - target: Das Haus hat einen Garten.
+          translation:
+            vi: Ngôi nhà có một khu vườn.
+        - target: Es gibt leider keinen Garten.
+          translation:
+            vi: Tiếc là không có vườn.
+      confusion:
+        vi: "Số nhiều có biến âm: die Gärten."
+
+  - key: de:item:a1u05-keller
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Keller, -
+      ipa: /ˈkɛlɐ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tầng hầm, kho dưới tầng hầm
+      examples:
+        - target: Es gibt auch einen Keller.
+          translation:
+            vi: Còn có cả một kho dưới tầng hầm.
+        - target: Der Keller ist sehr klein.
+          translation:
+            vi: Kho dưới hầm rất nhỏ.
+      confusion:
+        vi: "Ở Đức, mỗi căn hộ trong chung cư thường có một ngăn kho riêng dưới tầng hầm, cũng gọi là Keller."
+
+  - key: de:item:a1u05-aufzug
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Aufzug, ¨-e
+      ipa: /ˈaʊ̯fˌtsuːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thang máy
+      examples:
+        - target: Gibt es einen Aufzug?
+          translation:
+            vi: Có thang máy không?
+        - target: Das Haus ist alt, es gibt keinen Aufzug.
+          translation:
+            vi: Toà nhà cũ, không có thang máy.
+      confusion:
+        vi: "Đồng nghĩa: der Fahrstuhl. Số nhiều die Aufzüge."
+
+  # ---------------- Bài 2: Möbel – Personalpronomen im Akkusativ ----------------
+  - key: de:item:a1u05-g-personalpronomen-akk
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Personalpronomen im Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie/Sie"
+      pos: đại từ nhân xưng (tân ngữ)
+    back:
+      meaning:
+        vi: "Đại từ làm tân ngữ trực tiếp: ich → mich, du → dich, er → ihn, sie → sie, es → es, wir → uns, ihr → euch, sie/Sie → sie/Sie. Chỉ ich, du, er, wir, ihr đổi dạng."
+      examples:
+        - target: Hörst du mich? – Ja, ich höre dich gut.
+          translation:
+            vi: Bạn có nghe thấy mình không? – Có, mình nghe rõ.
+        - target: Der Schrank ist neu. Ich finde ihn schön.
+          translation:
+            vi: Cái tủ mới. Tôi thấy nó đẹp.
+      confusion:
+        vi: "er → ihn có đuôi -n giống der → den. Đừng nói \"Ich finde er schön\": sau finden cần tân ngữ Akkusativ."
+
+  - key: de:item:a1u05-g-pronomen-genus
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "der Tisch → er/ihn · die Lampe → sie · das Sofa → es · die Möbel → sie"
+      pos: đại từ theo giống
+    back:
+      meaning:
+        vi: "Đại từ thay cho đồ vật theo giống ngữ pháp của danh từ: der → er (Akkusativ ihn), die → sie, das → es, số nhiều → sie. Tiếng Việt gọi mọi đồ vật là \"nó\", tiếng Đức thì không."
+      examples:
+        - target: Die Lampe ist neu. Sie ist sehr modern.
+          translation:
+            vi: Cái đèn mới. Nó rất hiện đại.
+        - target: Wie findest du den Teppich? – Ich finde ihn schön.
+          translation:
+            vi: Bạn thấy tấm thảm thế nào? – Mình thấy nó đẹp.
+      confusion:
+        vi: "er không chỉ dùng cho đàn ông: er thay cho mọi danh từ giống đực (der Tisch, der Schrank). Đừng dùng es cho mọi đồ vật."
+
+  - key: de:item:a1u05-sofa
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Sofa, -s
+      ipa: /ˈzoːfa/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ghế sofa, ghế xô-pha
+      examples:
+        - target: Das Sofa ist sehr gemütlich.
+          translation:
+            vi: Ghế sofa rất êm và dễ chịu.
+        - target: Wie findest du das Sofa? – Ich finde es schön.
+          translation:
+            vi: Bạn thấy ghế sofa thế nào? – Mình thấy nó đẹp.
+      pronunciation_note:
+        vi: "s đầu từ trước nguyên âm đọc gần \"d\" nhẹ (giọng Bắc): /ˈzoːfa/."
+
+  - key: de:item:a1u05-schrank
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Schrank, ¨-e
+      ipa: /ʃʁaŋk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tủ (tủ quần áo, tủ đựng đồ)
+      examples:
+        - target: Der Schrank ist praktisch.
+          translation:
+            vi: Cái tủ rất tiện.
+        - target: Wie findest du den Schrank? – Ich finde ihn zu groß.
+          translation:
+            vi: Bạn thấy cái tủ thế nào? – Mình thấy nó to quá.
+      confusion:
+        vi: "Số nhiều có biến âm: die Schränke. Tủ quần áo cụ thể là der Kleiderschrank."
+
+  - key: de:item:a1u05-regal
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Regal, -e
+      ipa: /ʁeˈɡaːl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: kệ, giá (để sách, để đồ)
+      examples:
+        - target: Das Regal ist sehr praktisch.
+          translation:
+            vi: Cái kệ rất tiện.
+        - target: Ich brauche ein Regal für meine Bücher.
+          translation:
+            vi: Tôi cần một cái kệ cho sách của mình.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết sau: re-GAL."
+
+  - key: de:item:a1u05-lampe
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Lampe, -n
+      ipa: /ˈlampə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái đèn
+      examples:
+        - target: Die Lampe ist modern.
+          translation:
+            vi: Cái đèn hiện đại.
+        - target: Wie findest du die Lampe? – Ich finde sie schön.
+          translation:
+            vi: Bạn thấy cái đèn thế nào? – Mình thấy nó đẹp.
+
+  - key: de:item:a1u05-teppich
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Teppich, -e
+      ipa: /ˈtɛpɪç/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tấm thảm
+      examples:
+        - target: Der Teppich ist alt, aber schön.
+          translation:
+            vi: Tấm thảm cũ nhưng đẹp.
+        - target: Ich finde den Teppich sehr gemütlich.
+          translation:
+            vi: Tôi thấy tấm thảm rất ấm cúng.
+      pronunciation_note:
+        vi: "-ich cuối đọc âm \"h\" xì nhẹ (ich-Laut), không đọc \"ích\" hay \"khích\"."
+
+  - key: de:item:a1u05-moebel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Möbel (Pl.)
+      ipa: /ˈmøːbl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ đạc, đồ nội thất (bàn, ghế, tủ…)
+      examples:
+        - target: Die Möbel sind neu.
+          translation:
+            vi: Đồ đạc còn mới.
+        - target: Die Wohnung hat keine Möbel.
+          translation:
+            vi: Căn hộ không có đồ đạc.
+      pronunciation_note:
+        vi: "ö dài: lưỡi như \"ê\", môi tròn như \"ô\"."
+      confusion:
+        vi: "Gần như luôn dùng số nhiều (die Möbel → đại từ sie). Một món đồ là das Möbelstück."
+
+  - key: de:item:a1u05-finden
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: finden
+      ipa: /ˈfɪndn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: thấy (đánh giá, nhận xét); tìm thấy
+      examples:
+        - target: Wie findest du die Wohnung?
+          translation:
+            vi: Bạn thấy căn hộ thế nào?
+        - target: Ich finde das Sofa sehr gemütlich.
+          translation:
+            vi: Tôi thấy ghế sofa rất ấm cúng.
+      confusion:
+        vi: "Gốc tận cùng -d nên thêm -e-: du findest, er findet, ihr findet. Wie findest du …? là hỏi ý kiến, không phải hỏi \"tìm\"."
+
+  - key: de:item:a1u05-gemuetlich
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: gemütlich
+      ipa: /ɡəˈmyːtlɪç/
+      pos: tính từ
+    back:
+      meaning:
+        vi: ấm cúng, dễ chịu, thoải mái
+      examples:
+        - target: Das Wohnzimmer ist sehr gemütlich.
+          translation:
+            vi: Phòng khách rất ấm cúng.
+        - target: Ich finde das Sofa gemütlich.
+          translation:
+            vi: Tôi thấy ghế sofa êm ái dễ chịu.
+      pronunciation_note:
+        vi: "ge- đọc nhẹ, trọng âm ở -MÜT-; ü là \"i\" tròn môi."
+      confusion:
+        vi: "Một khái niệm rất Đức: không gian ấm áp, dễ chịu khiến bạn muốn ngồi lâu (phòng, quán cà phê, buổi tối với bạn bè)."
+
+  - key: de:item:a1u05-modern
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: modern
+      ipa: /moˈdɛʁn/
+      pos: tính từ
+    back:
+      meaning:
+        vi: hiện đại
+      examples:
+        - target: Die Küche ist sehr modern.
+          translation:
+            vi: Bếp rất hiện đại.
+        - target: Ich finde die Lampe modern und schön.
+          translation:
+            vi: Tôi thấy cái đèn hiện đại và đẹp.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết sau: mo-DERN (khác tiếng Anh MO-dern)."
+
+  - key: de:item:a1u05-praktisch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: praktisch
+      ipa: /ˈpʁaktɪʃ/
+      pos: tính từ
+    back:
+      meaning:
+        vi: tiện lợi, thiết thực
+      examples:
+        - target: Das Regal ist klein, aber praktisch.
+          translation:
+            vi: Cái kệ nhỏ nhưng tiện.
+        - target: Ich finde den Schrank sehr praktisch.
+          translation:
+            vi: Tôi thấy cái tủ rất tiện.
+
+  - key: de:item:a1u05-sessel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Sessel, -
+      ipa: /ˈzɛsl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ghế bành (ghế đơn có tay vịn, đệm êm)
+      examples:
+        - target: Der Sessel ist alt, aber sehr gemütlich.
+          translation:
+            vi: Ghế bành cũ nhưng rất êm.
+        - target: Wie findest du den Sessel? – Ich finde ihn schön.
+          translation:
+            vi: Bạn thấy ghế bành thế nào? – Mình thấy nó đẹp.
+
+  - key: de:item:a1u05-spiegel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Spiegel, -
+      ipa: /ˈʃpiːɡl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái gương
+      examples:
+        - target: Der Spiegel ist neu.
+          translation:
+            vi: Cái gương còn mới.
+        - target: Ich finde den Spiegel zu klein.
+          translation:
+            vi: Tôi thấy cái gương nhỏ quá.
+      pronunciation_note:
+        vi: "sp đầu từ đọc là \"schp\": /ˈʃpiːɡl̩/."
+
+  - key: de:item:a1u05-bild
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Bild, -er
+      ipa: /bɪlt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bức tranh, bức ảnh
+      examples:
+        - target: Das Bild ist sehr schön.
+          translation:
+            vi: Bức tranh rất đẹp.
+        - target: Wie findest du das Bild? – Ich finde es toll.
+          translation:
+            vi: Bạn thấy bức tranh thế nào? – Mình thấy nó tuyệt lắm.
+      pronunciation_note:
+        vi: "d cuối từ đọc thành \"t\": /bɪlt/."
+
+  - key: de:item:a1u05-kuehlschrank
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Kühlschrank, ¨-e
+      ipa: /ˈkyːlʃʁaŋk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tủ lạnh
+      examples:
+        - target: Der Kühlschrank ist sehr groß.
+          translation:
+            vi: Tủ lạnh rất to.
+        - target: Die Küche hat einen Kühlschrank.
+          translation:
+            vi: Bếp có tủ lạnh.
+      confusion:
+        vi: "Từ ghép kühl (mát) + der Schrank: giống đực theo Schrank, số nhiều die Kühlschränke."
+
+  - key: de:item:a1u05-schreibtisch
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Schreibtisch, -e
+      ipa: /ˈʃʁaɪ̯pˌtɪʃ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bàn làm việc, bàn học
+      examples:
+        - target: Der Schreibtisch ist praktisch.
+          translation:
+            vi: Cái bàn làm việc rất tiện.
+        - target: Ich brauche einen Schreibtisch.
+          translation:
+            vi: Tôi cần một cái bàn làm việc.
+      confusion:
+        vi: "schreiben (viết) + der Tisch → der Schreibtisch, giống đực theo Tisch."
+
+  - key: de:item:a1u05-wand
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Wand, ¨-e
+      ipa: /vant/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bức tường (trong nhà)
+      examples:
+        - target: Die Wand ist weiß.
+          translation:
+            vi: Bức tường màu trắng.
+        - target: Das Bild ist an der Wand.
+          translation:
+            vi: Bức tranh treo trên tường.
+      pronunciation_note:
+        vi: "w đọc \"v\"; d cuối từ đọc \"t\": /vant/. Số nhiều die Wände."
+      confusion:
+        vi: "Treo trên tường là an der Wand (an = sát vào mặt đứng), không phải auf der Wand."
+
+  # ---------------- Bài 3: Wo ist die Bank? – Dativ ----------------
+  - key: de:item:a1u05-g-dativ-artikel
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Dativ: dem / der / dem / den …-n · einem / einer / einem · im, am"
+      pos: mạo từ (cách 3)
+    back:
+      meaning:
+        vi: "Dativ của mạo từ: der → dem, das → dem, die → der, số nhiều die → den (danh từ thêm -n, trừ khi đã tận cùng -n hoặc -s). Không xác định: einem, einer, einem; kein/mein cùng đuôi (keinem, meiner). Rút gọn: in dem = im, an dem = am."
+      examples:
+        - target: Die Apotheke ist neben dem Bahnhof.
+          translation:
+            vi: Hiệu thuốc ở cạnh nhà ga.
+        - target: Wir wohnen im Zentrum.
+          translation:
+            vi: Chúng tôi sống ở trung tâm.
+      confusion:
+        vi: "der là mạo từ Nominativ giống đực nhưng cũng là Dativ giống cái: neben der Post (die Post), nhưng neben dem Bahnhof (der Bahnhof)."
+
+  - key: de:item:a1u05-g-wo-praep-dativ
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Wo? in, an, auf, neben, hinter, vor, über, unter, zwischen + Dativ"
+      pos: giới từ chỉ vị trí
+    back:
+      meaning:
+        vi: "Trả lời câu hỏi Wo? (vị trí đứng yên) thì sau các giới từ này dùng Dativ. in = bên trong, an = sát cạnh, auf = trên bề mặt, neben = bên cạnh, hinter = phía sau, vor = phía trước, über = phía trên, unter = phía dưới, zwischen = ở giữa."
+      examples:
+        - target: Die Lampe ist über dem Tisch.
+          translation:
+            vi: Cái đèn ở phía trên cái bàn.
+        - target: Die Haltestelle ist vor der Kirche.
+          translation:
+            vi: Trạm xe buýt ở trước nhà thờ.
+      confusion:
+        vi: "an = sát cạnh, chạm vào mép hoặc mặt đứng (an der Wand, am Fenster, an der Haltestelle); auf = nằm trên mặt ngang (auf dem Tisch); in = bên trong (im Schrank)."
+
+  - key: de:item:a1u05-bank
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Bank, -en
+      ipa: /baŋk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngân hàng
+      examples:
+        - target: Wo ist die Bank?
+          translation:
+            vi: Ngân hàng ở đâu?
+        - target: Die Bank ist neben der Post.
+          translation:
+            vi: Ngân hàng ở cạnh bưu điện.
+      confusion:
+        vi: "die Bank (ngân hàng) số nhiều die Banken; die Bank (ghế băng trong công viên) số nhiều die Bänke."
+
+  - key: de:item:a1u05-post
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Post (Sg.)
+      ipa: /pɔst/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bưu điện; thư từ, bưu phẩm
+      examples:
+        - target: Die Post ist im Zentrum.
+          translation:
+            vi: Bưu điện ở trung tâm.
+        - target: Ist die Post neben der Bank?
+          translation:
+            vi: Bưu điện có ở cạnh ngân hàng không?
+      pronunciation_note:
+        vi: "o ngắn; st cuối từ đọc \"st\" bình thường (chỉ đầu từ mới đọc \"scht\")."
+
+  - key: de:item:a1u05-bahnhof
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Bahnhof, ¨-e
+      ipa: /ˈbaːnhoːf/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà ga (tàu hoả)
+      examples:
+        - target: Der Bahnhof ist nicht weit.
+          translation:
+            vi: Nhà ga không xa.
+        - target: Die Haltestelle ist vor dem Bahnhof.
+          translation:
+            vi: Trạm xe buýt ở trước nhà ga.
+      confusion:
+        vi: "Từ ghép die Bahn (tàu) + der Hof (sân) → giống đực. Nhà ga chính của thành phố: der Hauptbahnhof."
+
+  - key: de:item:a1u05-apotheke
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Apotheke, -n
+      ipa: /apoˈteːkə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu thuốc
+      examples:
+        - target: Gibt es hier eine Apotheke?
+          translation:
+            vi: Ở đây có hiệu thuốc không?
+        - target: Die Apotheke ist neben der Bank.
+          translation:
+            vi: Hiệu thuốc ở cạnh ngân hàng.
+      pronunciation_note:
+        vi: "th đọc như \"t\"; trọng âm ở -TE-: a-po-TE-ke."
+
+  - key: de:item:a1u05-park
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Park, -s
+      ipa: /paʁk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: công viên
+      examples:
+        - target: Der Park ist sehr schön.
+          translation:
+            vi: Công viên rất đẹp.
+        - target: Die Kinder sind im Park.
+          translation:
+            vi: Bọn trẻ đang ở trong công viên.
+
+  - key: de:item:a1u05-zentrum
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Zentrum, Zentren
+      ipa: /ˈtsɛntʁʊm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trung tâm (thành phố)
+      examples:
+        - target: Ich wohne im Zentrum.
+          translation:
+            vi: Tôi sống ở trung tâm.
+        - target: Das Zentrum ist nicht weit.
+          translation:
+            vi: Trung tâm không xa.
+      pronunciation_note:
+        vi: "z đọc \"ts\": TSEN-trum."
+      confusion:
+        vi: "Số nhiều đổi đuôi: die Zentren. in dem Zentrum → im Zentrum."
+
+  - key: de:item:a1u05-kirche
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Kirche, -n
+      ipa: /ˈkɪʁçə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà thờ
+      examples:
+        - target: Die Kirche ist sehr alt.
+          translation:
+            vi: Nhà thờ rất cổ.
+        - target: Das Café ist neben der Kirche.
+          translation:
+            vi: Quán cà phê ở cạnh nhà thờ.
+      pronunciation_note:
+        vi: "ch sau r là âm \"h\" xì nhẹ (ich-Laut)."
+
+  - key: de:item:a1u05-haltestelle
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Haltestelle, -n
+      ipa: /ˈhaltəˌʃtɛlə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: trạm, bến (xe buýt, tàu điện)
+      examples:
+        - target: Wo ist die Haltestelle?
+          translation:
+            vi: Trạm xe buýt ở đâu?
+        - target: Die Haltestelle ist vor dem Bahnhof.
+          translation:
+            vi: Trạm xe ở trước nhà ga.
+      pronunciation_note:
+        vi: "st ở đầu thành phần -stelle đọc là \"scht\"."
+      confusion:
+        vi: "Từ ghép halten (dừng) + die Stelle (chỗ) → giống cái."
+
+  - key: de:item:a1u05-neben
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: neben
+      ipa: /ˈneːbn̩/
+      pos: giới từ
+    back:
+      meaning:
+        vi: bên cạnh
+      examples:
+        - target: Die Post ist neben der Bank.
+          translation:
+            vi: Bưu điện ở cạnh ngân hàng.
+        - target: Das Regal ist neben dem Schrank.
+          translation:
+            vi: Cái kệ ở cạnh cái tủ.
+      confusion:
+        vi: "Chỉ vị trí (Wo?) thì neben + Dativ: neben dem Park, neben der Kirche."
+
+  - key: de:item:a1u05-zwischen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: zwischen
+      ipa: /ˈtsvɪʃn̩/
+      pos: giới từ
+    back:
+      meaning:
+        vi: ở giữa
+      examples:
+        - target: Die Post ist zwischen der Bank und der Apotheke.
+          translation:
+            vi: Bưu điện ở giữa ngân hàng và hiệu thuốc.
+        - target: Der Tisch ist zwischen dem Sofa und dem Sessel.
+          translation:
+            vi: Cái bàn ở giữa ghế sofa và ghế bành.
+      pronunciation_note:
+        vi: "zw đọc là \"tsv\": TSVI-schen."
+      confusion:
+        vi: "Cả hai danh từ sau zwischen đều ở Dativ."
+
+  - key: de:item:a1u05-marktplatz
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Marktplatz, ¨-e
+      ipa: /ˈmaʁktˌplats/
+      pos: danh từ
+    back:
+      meaning:
+        vi: quảng trường chợ (quảng trường chính của thị trấn, thành phố)
+      examples:
+        - target: Das Café ist am Marktplatz.
+          translation:
+            vi: Quán cà phê ở bên quảng trường chợ.
+        - target: Die Kirche ist am Marktplatz, neben der Post.
+          translation:
+            vi: Nhà thờ ở bên quảng trường chợ, cạnh bưu điện.
+      confusion:
+        vi: "der Markt (chợ) + der Platz (quảng trường) → der Marktplatz, số nhiều die Marktplätze. Thị trấn Đức nào cũng có một Marktplatz ở trung tâm, thường cạnh nhà thờ."
+
+  - key: de:item:a1u05-spielplatz
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Spielplatz, ¨-e
+      ipa: /ˈʃpiːlˌplats/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân chơi (cho trẻ em)
+      examples:
+        - target: Der Spielplatz ist im Park.
+          translation:
+            vi: Sân chơi ở trong công viên.
+        - target: Gibt es hier einen Spielplatz?
+          translation:
+            vi: Ở đây có sân chơi cho trẻ em không?
+      pronunciation_note:
+        vi: "sp đầu từ đọc là \"schp\": SCHPIL-platz."
+      confusion:
+        vi: "spielen (chơi) + der Platz → der Spielplatz, số nhiều die Spielplätze."
+
+  - key: de:item:a1u05-geschaeft
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Geschäft, -e
+      ipa: /ɡəˈʃɛft/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng; công việc kinh doanh
+      examples:
+        - target: Im Zentrum gibt es viele Geschäfte.
+          translation:
+            vi: Ở trung tâm có nhiều cửa hàng.
+        - target: Das Geschäft ist neben der Bank.
+          translation:
+            vi: Cửa hàng ở cạnh ngân hàng.
+
+  - key: de:item:a1u05-hochhaus
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Hochhaus, ¨-er
+      ipa: /ˈhoːxˌhaʊ̯s/
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà cao tầng, toà nhà cao
+      examples:
+        - target: Wir wohnen in einem Hochhaus.
+          translation:
+            vi: Chúng tôi sống trong một toà nhà cao tầng.
+        - target: Hinter dem Bahnhof ist ein Hochhaus.
+          translation:
+            vi: Phía sau nhà ga có một toà nhà cao tầng.
+      pronunciation_note:
+        vi: "ch sau o là âm \"kh\" (ach-Laut); trọng âm ở HOCH-."
+      confusion:
+        vi: "hoch (cao) + das Haus → das Hochhaus, số nhiều die Hochhäuser."
+
+  - key: de:item:a1u05-schwimmbad
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: das Schwimmbad, ¨-er
+      ipa: /ˈʃvɪmbaːt/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bể bơi (công cộng)
+      examples:
+        - target: Das Schwimmbad ist neben dem Park.
+          translation:
+            vi: Bể bơi ở cạnh công viên.
+        - target: Gibt es hier ein Schwimmbad?
+          translation:
+            vi: Ở đây có bể bơi không?
+      confusion:
+        vi: "schwimmen (bơi) + das Bad → das Schwimmbad, số nhiều die Schwimmbäder."
+
+  # ---------------- Bài 4: Wie komme ich zum …? – Imperativ ----------------
+  - key: de:item:a1u05-g-imperativ
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Imperativ: Gehen Sie! · Geh! · Geht! · Sei! / Seien Sie!"
+      pos: câu mệnh lệnh
+    back:
+      meaning:
+        vi: "Sie: động từ nguyên thể + Sie (Gehen Sie!). du: dạng du bỏ -st và bỏ du (du nimmst → Nimm!); a → ä thì bỏ dấu (du fährst → Fahr!). ihr: dạng ihr bỏ ihr (Geht!). sein: Sei! / Seid! / Seien Sie!"
+      examples:
+        - target: Gehen Sie bitte geradeaus!
+          translation:
+            vi: Ông/bà cứ đi thẳng ạ.
+        - target: Nimm bitte den Bus!
+          translation:
+            vi: Cậu đi xe buýt đi!
+      confusion:
+        vi: "Mệnh lệnh với Sie không được bỏ Sie (không nói \"Gehen geradeaus!\"). Với du, e → i/ie được giữ (Nimm!, Lies!), còn a → ä thì không (Fahr!, không \"Fähr!\")."
+
+  - key: de:item:a1u05-g-hoefliche-bitte
+    type: grammar_point
+    level: a1
+    difficulty: 2
+    skill_tags: [grammar]
+    front:
+      text: "Bitte …! · Können Sie mir helfen?"
+      pos: lời nhờ lịch sự
+    back:
+      meaning:
+        vi: "Thêm bitte vào câu mệnh lệnh cho lịch sự (sau Sie hoặc cuối câu): Gehen Sie bitte links! Nhờ người lạ giúp: Können Sie mir helfen? (mir = tôi; học thuộc cả câu)."
+      examples:
+        - target: Entschuldigung, können Sie mir helfen?
+          translation:
+            vi: Xin lỗi, ông/bà có thể giúp tôi không ạ?
+        - target: Nehmen Sie bitte die erste Straße rechts.
+          translation:
+            vi: Ông/bà rẽ vào con đường thứ nhất bên phải ạ.
+      confusion:
+        vi: "Mệnh lệnh không có bitte nghe rất cộc, kể cả khi dùng Sie. Câu hỏi với können (Können Sie …?) còn lịch sự hơn mệnh lệnh."
+
+  - key: de:item:a1u05-gehen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: gehen
+      ipa: /ˈɡeːən/
+      pos: động từ
+    back:
+      meaning:
+        vi: đi (đi bộ)
+      examples:
+        - target: Gehen Sie hier geradeaus.
+          translation:
+            vi: Ông/bà đi thẳng ở đây.
+        - target: Ich gehe zu Fuß.
+          translation:
+            vi: Tôi đi bộ.
+      confusion:
+        vi: "gehen là đi bộ hoặc đi nói chung; đi bằng xe là fahren (du fährst). Mệnh lệnh: Geh! (du), Geht! (ihr), Gehen Sie! (Sie)."
+
+  - key: de:item:a1u05-geradeaus
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: geradeaus
+      ipa: /ɡəʁaːdəˈʔaʊ̯s/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thẳng (về phía trước)
+      examples:
+        - target: Gehen Sie immer geradeaus.
+          translation:
+            vi: Ông/bà cứ đi thẳng mãi.
+        - target: Der Bahnhof ist geradeaus.
+          translation:
+            vi: Nhà ga ở phía thẳng trước mặt.
+      pronunciation_note:
+        vi: "Trọng âm ở cuối: ge-ra-de-AUS."
+
+  - key: de:item:a1u05-links
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: links
+      ipa: /lɪŋks/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: (bên) trái, sang trái
+      examples:
+        - target: Gehen Sie an der Ampel links.
+          translation:
+            vi: Đến đèn giao thông thì ông/bà rẽ trái.
+        - target: Die Post ist links.
+          translation:
+            vi: Bưu điện ở bên trái.
+
+  - key: de:item:a1u05-rechts
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: rechts
+      ipa: /ʁɛçts/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: (bên) phải, sang phải
+      examples:
+        - target: Gehen Sie die zweite Straße rechts.
+          translation:
+            vi: Ông/bà rẽ phải vào con đường thứ hai.
+        - target: Die Bank ist rechts.
+          translation:
+            vi: Ngân hàng ở bên phải.
+      pronunciation_note:
+        vi: "ch giữa e và ts là âm \"h\" xì nhẹ (ich-Laut)."
+      confusion:
+        vi: "Mẹo nhớ: rechts có r như \"right\"; links có l như \"left\"."
+
+  - key: de:item:a1u05-ampel
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Ampel, -n
+      ipa: /ˈampl̩/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đèn giao thông
+      examples:
+        - target: An der Ampel gehen Sie rechts.
+          translation:
+            vi: Đến đèn giao thông thì ông/bà rẽ phải.
+        - target: Die Ampel ist rot.
+          translation:
+            vi: Đèn đang đỏ.
+      confusion:
+        vi: "Ở đèn giao thông = an der Ampel (an + Dativ, giống cái)."
+
+  - key: de:item:a1u05-kreuzung
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Kreuzung, -en
+      ipa: /ˈkʁɔʏ̯tsʊŋ/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngã tư, giao lộ
+      examples:
+        - target: An der Kreuzung gehen Sie links.
+          translation:
+            vi: Đến ngã tư thì ông/bà rẽ trái.
+        - target: Die Apotheke ist an der Kreuzung.
+          translation:
+            vi: Hiệu thuốc ở chỗ ngã tư.
+      pronunciation_note:
+        vi: "eu đọc \"oi\"; z đọc \"ts\": KROI-tsung."
+
+  - key: de:item:a1u05-ecke
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Ecke, -n
+      ipa: /ˈɛkə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: góc (phố, phòng)
+      examples:
+        - target: Die Bäckerei ist an der Ecke.
+          translation:
+            vi: Tiệm bánh ở góc phố.
+        - target: In der Ecke ist eine Lampe.
+          translation:
+            vi: Trong góc phòng có một cái đèn.
+      confusion:
+        vi: "Góc phố (bên ngoài) = an der Ecke; góc phòng (bên trong) = in der Ecke."
+
+  - key: de:item:a1u05-weit
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: weit
+      ipa: /vaɪ̯t/
+      pos: tính từ
+    back:
+      meaning:
+        vi: xa
+      examples:
+        - target: Ist es weit? – Nein, nicht sehr weit.
+          translation:
+            vi: Có xa không? – Không, không xa lắm.
+        - target: Der Bahnhof ist zu weit. Nehmen Sie den Bus.
+          translation:
+            vi: Nhà ga xa quá. Ông/bà đi xe buýt đi.
+      pronunciation_note:
+        vi: "w đọc \"v\"; ei đọc \"ai\": /vaɪ̯t/."
+
+  - key: de:item:a1u05-nah
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: nah
+      ipa: /naː/
+      pos: tính từ
+    back:
+      meaning:
+        vi: gần
+      examples:
+        - target: Die Post ist ganz nah.
+          translation:
+            vi: Bưu điện ở rất gần.
+        - target: Ist der Park nah? – Ja, sehr nah.
+          translation:
+            vi: Công viên có gần không? – Có, rất gần.
+      pronunciation_note:
+        vi: "h sau nguyên âm không đọc, chỉ làm a dài: /naː/."
+      confusion:
+        vi: "Trái nghĩa với weit. Nói \"ở gần đây\" thường dùng in der Nähe."
+
+  - key: de:item:a1u05-zu-fuss
+    type: phrase
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: zu Fuß
+      ipa: /tsuː ˈfuːs/
+      pos: cụm từ
+    back:
+      meaning:
+        vi: đi bộ (bằng chân)
+      examples:
+        - target: Das sind nur fünf Minuten zu Fuß.
+          translation:
+            vi: Đi bộ chỉ mất năm phút.
+        - target: Ich gehe zu Fuß.
+          translation:
+            vi: Tôi đi bộ.
+      confusion:
+        vi: "Fuß viết ß vì u dài. Học cả cụm: zu Fuß gehen = đi bộ."
+
+  - key: de:item:a1u05-suchen
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: suchen
+      ipa: /ˈzuːxn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: tìm, tìm kiếm
+      examples:
+        - target: Entschuldigung, ich suche die Post.
+          translation:
+            vi: Xin lỗi, tôi đang tìm bưu điện.
+        - target: Wir suchen eine Wohnung.
+          translation:
+            vi: Chúng tôi đang tìm căn hộ.
+      pronunciation_note:
+        vi: "ch sau u là âm \"kh\" tiếng Việt (ach-Laut)."
+      confusion:
+        vi: "suchen = đang tìm; finden = tìm thấy (hoặc thấy, đánh giá). Ich suche den Bahnhof, aber ich finde ihn nicht."
+
+  - key: de:item:a1u05-weg
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Weg, -e
+      ipa: /veːk/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường đi, lối đi
+      examples:
+        - target: Ist das der Weg zum Bahnhof?
+          translation:
+            vi: Đây có phải đường ra nhà ga không?
+        - target: Der Weg ist nicht weit.
+          translation:
+            vi: Đường không xa.
+      pronunciation_note:
+        vi: "e dài; g cuối từ đọc \"k\": /veːk/."
+      confusion:
+        vi: "der Weg là lộ trình để đi tới đâu đó; die Straße là con phố cụ thể (có tên)."
+
+  - key: de:item:a1u05-naehe
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: die Nähe (Sg.)
+      ipa: /ˈnɛːə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: vùng lân cận, chỗ gần; in der Nähe = ở gần đây
+      examples:
+        - target: Gibt es hier in der Nähe eine Apotheke?
+          translation:
+            vi: Ở gần đây có hiệu thuốc không?
+        - target: Der Park ist ganz in der Nähe.
+          translation:
+            vi: Công viên ở ngay gần đây.
+      confusion:
+        vi: "Học cả cụm in der Nähe (in + Dativ giống cái). Danh từ của tính từ nah."
+
+  - key: de:item:a1u05-stadtplan
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: der Stadtplan, ¨-e
+      ipa: /ˈʃtatplaːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản đồ thành phố
+      examples:
+        - target: Haben Sie einen Stadtplan?
+          translation:
+            vi: Ông/bà có bản đồ thành phố không?
+        - target: Der Bahnhof ist hier auf dem Stadtplan.
+          translation:
+            vi: Nhà ga ở chỗ này trên bản đồ.
+      confusion:
+        vi: "die Stadt + der Plan → der Stadtplan (giống đực theo Plan). Trên bản đồ = auf dem Stadtplan."
+
+  - key: de:item:a1u05-ungefaehr
+    type: vocab
+    level: a1
+    difficulty: 1
+    skill_tags: [vocabulary]
+    front:
+      text: ungefähr
+      ipa: /ˈʊnɡəfɛːɐ̯/
+      pos: trạng từ
+    back:
+      meaning:
+        vi: khoảng, chừng, xấp xỉ
+      examples:
+        - target: Das sind ungefähr zehn Minuten zu Fuß.
+          translation:
+            vi: Đi bộ khoảng mười phút.
+        - target: Die Miete ist ungefähr 700 Euro.
+          translation:
+            vi: Tiền thuê nhà khoảng 700 euro.
+
+  - key: de:item:a1u05-abbiegen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags: [vocabulary]
+    front:
+      text: abbiegen
+      ipa: /ˈapˌbiːɡn̩/
+      pos: động từ
+    back:
+      meaning:
+        vi: rẽ (sang đường khác)
+      examples:
+        - target: Biegen Sie an der Ampel links ab.
+          translation:
+            vi: Đến đèn giao thông thì ông/bà rẽ trái.
+        - target: Ich biege hier rechts ab.
+          translation:
+            vi: Tôi rẽ phải ở đây.
+      pronunciation_note:
+        vi: "Động từ tách, trọng âm ở tiền tố: AB-biegen; b cuối của ab đọc \"p\"."
+      confusion:
+        vi: "Tiền tố ab- tách ra đứng cuối câu, kể cả trong câu mệnh lệnh: Biegen Sie links ab! / Bieg links ab! Trong lời chỉ đường hằng ngày, người Đức cũng hay nói gọn: Gehen Sie links."

@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u05-moebel
+order_index: 2
+level: a1
+title:
+  vi: Đồ đạc – đại từ Akkusativ (Ich finde ihn schön.)
+objectives:
+  - vi: Hỏi và nêu nhận xét về đồ đạc với Wie findest du …? / Wie finden Sie …? và Ich finde … .
+  - vi: Thay danh từ chỉ đồ vật bằng đại từ đúng giống - er/ihn, sie, es, số nhiều sie.
+  - vi: Dùng đại từ Akkusativ mich, dich, ihn, sie, es, uns, euch, sie/Sie.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u05-meine-wohnung]
+items:
+  - item: de:item:a1u05-g-personalpronomen-akk
+  - item: de:item:a1u05-g-pronomen-genus
+  - item: de:item:a1u05-sofa
+  - item: de:item:a1u05-schrank
+  - item: de:item:a1u05-regal
+  - item: de:item:a1u05-lampe
+  - item: de:item:a1u05-teppich
+  - item: de:item:a1u05-moebel
+  - item: de:item:a1u05-finden
+  - item: de:item:a1u05-gemuetlich
+  - item: de:item:a1u05-modern
+  - item: de:item:a1u05-praktisch
+  - item: de:item:a1u05-sessel
+  - item: de:item:a1u05-spiegel
+  - item: de:item:a1u05-bild
+  - item: de:item:a1u05-kuehlschrank
+  - item: de:item:a1u05-schreibtisch
+  - item: de:item:a1u05-wand
+  - item: de:item:a1u05-wohnung
+    role: reuse
+  - item: de:item:a1u05-g-possessiv-plural
+    role: reuse
+  - item: de:item:a1u03-g-akkusativ
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hỏi được ý kiến về đồ đạc (Wie findest du das Sofa?) và trả lời bằng đại từ đúng giống: Ich finde es gemütlich. Ich finde ihn praktisch."
+  - type: explain
+    text:
+      vi: Tiếng Việt gọi mọi đồ vật là "nó". Tiếng Đức chọn đại từ theo giống ngữ pháp của danh từ, không theo nghĩa - der Tisch → er, die Lampe → sie, das Sofa → es, số nhiều die Möbel → sie. Vì vậy, học danh từ luôn phải học kèm der/die/das.
+  - type: explain
+    text:
+      vi: Khi đại từ làm tân ngữ (Akkusativ), cũng như mạo từ ở A1U03, chỉ giống đực thay đổi - er → ihn (giống der → den). sie và es giữ nguyên - Ich finde ihn schön (der Schrank), Ich finde sie schön (die Lampe), Ich finde es schön (das Sofa).
+  - type: explain
+    text:
+      vi: Bảng đại từ Akkusativ - ich → mich, du → dich, er → ihn, sie → sie, es → es, wir → uns, ihr → euch, sie/Sie → sie/Sie. Trong câu ngắn, đại từ tân ngữ đứng ngay sau động từ chia - Ich finde dich nett.
+  - type: explain
+    text:
+      vi: Wie findest du …? là cách hỏi ý kiến (Bạn thấy … thế nào?); với người lạ, khách hàng thì hỏi Wie finden Sie …?. Trả lời bằng Ich finde + đại từ + tính từ; tính từ đứng cuối và không có đuôi.
+  - type: explain
+    text:
+      vi: gemütlich là một từ rất Đức - ấm cúng, dễ chịu, khiến bạn muốn ngồi lâu. Một căn phòng, một quán cà phê, một buổi tối với bạn bè đều có thể gemütlich; đây là lời khen nhà cửa rất được ưa chuộng.
+  - type: deep_explain
+    text:
+      vi: Người Việt hay tưởng er chỉ dùng cho đàn ông, sie cho phụ nữ. Thực ra er chỉ có nghĩa "danh từ giống đực vừa nhắc tới" - Der Schrank ist neu. Er ist sehr groß. Mẹo - nhìn mạo từ của danh từ rồi đổi der → er/ihn, die → sie, das → es; đuôi -n của ihn giống đuôi -n của den/einen. Số nhiều luôn là sie dù số ít của danh từ là giống gì. Khi nghe sie, hãy dựa vào động từ để biết là "cô ấy/nó" (sie ist) hay "họ/chúng" (sie sind); Sie viết hoa giữa câu là "ông/bà" lịch sự.
+  - type: example
+    target: Wie findest du das Sofa? – Ich finde es sehr gemütlich.
+    target_lang: de
+    translation:
+      vi: Bạn thấy ghế sofa thế nào? – Mình thấy nó rất êm ái dễ chịu.
+    note:
+      vi: Nói với bạn bè nên dùng du. das Sofa → es; es làm tân ngữ vẫn là es.
+  - type: example
+    target: Der Schrank ist neu. Ich finde ihn praktisch, aber ein bisschen groß.
+    target_lang: de
+    translation:
+      vi: Cái tủ mới. Tôi thấy nó tiện nhưng hơi to.
+    note:
+      vi: der Schrank → er khi làm chủ ngữ, ihn khi làm tân ngữ sau finden.
+  - type: example
+    target: Wie finden Sie die Lampe? – Ich finde sie modern und schön.
+    target_lang: de
+    translation:
+      vi: Anh/chị thấy cái đèn thế nào? – Tôi thấy nó hiện đại và đẹp.
+    note:
+      vi: Nhân viên bán hàng nói với khách nên dùng Sie (viết hoa). die Lampe → sie (viết thường).
+  - type: example
+    target: Die Möbel sind alt, aber wir finden sie gemütlich.
+    target_lang: de
+    translation:
+      vi: Đồ đạc cũ nhưng chúng tôi thấy chúng ấm cúng.
+    note:
+      vi: die Möbel là số nhiều nên thay bằng sie; sind là động từ số nhiều.
+  - type: example
+    target: Hallo? Hörst du mich? – Ja, ich höre dich gut.
+    target_lang: de
+    translation:
+      vi: A lô? Bạn có nghe thấy mình không? – Có, mình nghe rõ.
+    note:
+      vi: Nói chuyện điện thoại với bạn (du). ich → mich, du → dich khi làm tân ngữ.
+  - type: common_mistake
+    wrong: Wie findest du den Teppich? – Ich finde es schön.
+    right: Wie findest du den Teppich? – Ich finde ihn schön.
+    target_lang: de
+    note:
+      vi: der Teppich giống đực nên đại từ tân ngữ là ihn. Đừng dùng es cho mọi đồ vật như "nó" trong tiếng Việt.
+  - type: common_mistake
+    wrong: Ich finde er schön.
+    right: Ich finde ihn schön.
+    target_lang: de
+    note:
+      vi: Sau finden cần tân ngữ Akkusativ - er → ihn.
+  - type: common_mistake
+    wrong: Die Lampe ist neu. Er ist modern.
+    right: Die Lampe ist neu. Sie ist modern.
+    target_lang: de
+    note:
+      vi: die Lampe giống cái nên đại từ là sie, dù cái đèn chẳng phải "phụ nữ".
+  - type: summary
+    points:
+      - vi: Đại từ cho đồ vật theo giống - der → er (Akk ihn), die → sie, das → es, số nhiều → sie.
+      - vi: Akkusativ - mich, dich, ihn, sie, es, uns, euch, sie/Sie; chỉ ich, du, er, wir, ihr đổi dạng.
+      - vi: Hỏi ý kiến - Wie findest du …? (bạn bè) / Wie finden Sie …? (lịch sự).
+      - vi: Trả lời - Ich finde ihn/sie/es + tính từ (không đuôi).
+      - vi: Đồ đạc - das Sofa, der Sessel, der Schrank, das Regal, die Lampe, der Teppich, das Bild, der Spiegel; tất cả gọi chung die Möbel.
+      - vi: Nhận xét - gemütlich, modern, praktisch, schön, groß, klein, neu, alt.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u05l2-mcq-ihn-schrank
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-g-personalpronomen-akk
+    prompt:
+      stem: "Chọn từ đúng: Der Schrank ist neu. Ich finde ___ praktisch."
+      stem_lang: vi
+      options:
+        - { id: q4z, text: ihn, lang: de }
+        - { id: j8r, text: er, lang: de }
+        - { id: d2m, text: es, lang: de }
+        - { id: v6h, text: sie, lang: de }
+    answer:
+      correct_option_id: q4z
+    explanation:
+      vi: der Schrank giống đực nên đại từ là er; sau finden nó làm tân ngữ nên đổi thành ihn. es dành cho danh từ giống trung, sie cho giống cái hoặc số nhiều.
+    display_answer: ihn
+
+  - key: de:exercise:a1u05l2-mcq-sie-lampe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-g-pronomen-genus
+    prompt:
+      stem: "Chọn đại từ đúng: Die Lampe ist neu. ___ ist sehr modern."
+      stem_lang: vi
+      options:
+        - { id: x3a, text: Sie, lang: de }
+        - { id: l7u, text: Er, lang: de }
+        - { id: o5f, text: Es, lang: de }
+        - { id: s1n, text: Ihn, lang: de }
+    answer:
+      correct_option_id: x3a
+    explanation:
+      vi: die Lampe giống cái nên thay bằng sie (viết hoa vì đứng đầu câu). Er dành cho giống đực, Es cho giống trung; Ihn là dạng tân ngữ, không làm chủ ngữ được.
+    display_answer: Sie
+
+  - key: de:exercise:a1u05l2-listen-teppich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u05-teppich
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wie findest du den Teppich? – Ich finde ihn schön, aber er ist zu teuer.
+      options:
+        - { id: i9t, text: "Bạn thấy tấm thảm thế nào? – Mình thấy nó đẹp, nhưng đắt quá.", lang: vi }
+        - { id: c2y, text: "Bạn thấy tấm thảm thế nào? – Mình thấy nó đẹp và không đắt.", lang: vi }
+        - { id: w5g, text: "Bạn thấy cái tủ thế nào? – Mình thấy nó đẹp, nhưng đắt quá.", lang: vi }
+        - { id: k8e, text: "Bạn có tấm thảm không? – Có, nó đẹp nhưng hơi cũ.", lang: vi }
+    answer:
+      correct_option_id: i9t
+    explanation:
+      vi: der Teppich là tấm thảm; ihn và er đều thay cho Teppich (giống đực). zu teuer là "đắt quá".
+    display_answer: "Bạn thấy tấm thảm thế nào? – Mình thấy nó đẹp, nhưng đắt quá."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u05l2-fill-ihn-sie-es
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-pronomen-genus
+    prompt:
+      template: "A: Wie findest du den Sessel? B: Ich finde {{b1}} gemütlich. A: Und die Lampe? B: Ich finde {{b2}} nicht so schön. A: Und das Regal? B: Ich finde {{b3}} sehr praktisch."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ihn]
+        b2: [sie]
+        b3: [es]
+    known_wrong:
+      - answer: er
+        feedback_vi: der Sessel giống đực; làm tân ngữ sau finden thì er → ihn.
+        error_tag: case_dat_akk
+      - answer: ihm
+        feedback_vi: ihm là Dativ. Sau finden dùng Akkusativ - ihn.
+        error_tag: case_dat_akk
+      - answer: ihr
+        feedback_vi: die Lampe làm tân ngữ vẫn là sie; ihr là dạng khác (Dativ hoặc "các bạn").
+        error_tag: case_dat_akk
+    explanation:
+      vi: der Sessel → ihn (giống đực, Akkusativ đổi), die Lampe → sie, das Regal → es (giống cái và giống trung giữ nguyên ở Akkusativ).
+    display_answer: "A: Wie findest du den Sessel? B: Ich finde ihn gemütlich. A: Und die Lampe? B: Ich finde sie nicht so schön. A: Und das Regal? B: Ich finde es sehr praktisch."
+
+  - key: de:exercise:a1u05l2-fill-mich-dich
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-personalpronomen-akk
+    prompt:
+      template: "A: Hallo, Lan? Ich höre {{b1}} (du) nicht! B: Und jetzt? Hörst du {{b2}} (ich)? A: Ja, jetzt höre ich {{b3}} (du) gut."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [dich]
+        b2: [mich]
+        b3: [dich]
+    known_wrong:
+      - answer: du
+        feedback_vi: du là chủ ngữ. Làm tân ngữ của hören thì du → dich.
+        error_tag: case_dat_akk
+      - answer: ich
+        feedback_vi: ich là chủ ngữ. Làm tân ngữ thì ich → mich.
+        error_tag: case_dat_akk
+      - answer: dir
+        feedback_vi: dir là Dativ. hören cần Akkusativ - dich.
+        error_tag: case_dat_akk
+      - answer: mir
+        feedback_vi: mir là Dativ. hören cần Akkusativ - mich.
+        error_tag: case_dat_akk
+    explanation:
+      vi: hören (nghe) cần tân ngữ Akkusativ - du → dich, ich → mich. Hai người nói chuyện thân mật nên dùng du.
+    display_answer: "A: Hallo, Lan? Ich höre dich nicht! B: Und jetzt? Hörst du mich? A: Ja, jetzt höre ich dich gut."
+
+  - key: de:exercise:a1u05l2-tr-gemuetlich
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-finden
+    prompt:
+      source_text: (nói với bạn thân) Bạn thấy căn hộ thế nào? – Mình thấy nó rất ấm cúng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wie findest du die Wohnung? – Ich finde sie sehr gemütlich.
+        - Wie findest du deine Wohnung? – Ich finde sie sehr gemütlich.
+        - Wie findest du die Wohnung? – Sie ist sehr gemütlich.
+        - Wie gefällt dir die Wohnung? – Ich finde sie sehr gemütlich.
+    known_wrong:
+      - answer: Wie findest du die Wohnung? – Ich finde es sehr gemütlich.
+        feedback_vi: die Wohnung giống cái nên "nó" là sie, không phải es.
+        error_tag: gender
+      - answer: Wie findest du die Wohnung? – Ich finde ihn sehr gemütlich.
+        feedback_vi: ihn dành cho danh từ giống đực; die Wohnung → sie.
+        error_tag: gender
+      - answer: Wie finden Sie die Wohnung? – Ich finde sie sehr gemütlich.
+        feedback_vi: Nói với bạn thân thì dùng du - Wie findest du …?
+        error_tag: register_du_sie
+    explanation:
+      vi: Hỏi ý kiến bạn thân dùng Wie findest du …?; "nó" thay cho die Wohnung (giống cái) là sie; gemütlich là ấm cúng.
+    display_answer: Wie findest du die Wohnung? – Ich finde sie sehr gemütlich.
+
+  - key: de:exercise:a1u05l2-tr-euch-nett
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-personalpronomen-akk
+    prompt:
+      source_text: Chúng mình thấy các bạn rất dễ mến.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir finden euch sehr nett.
+        - Wir finden euch wirklich nett.
+        - Wir finden euch sehr sympathisch.
+        - Euch finden wir sehr nett.
+    known_wrong:
+      - answer: Wir finden ihr sehr nett.
+        feedback_vi: ihr là chủ ngữ. Làm tân ngữ sau finden thì ihr → euch.
+        error_tag: case_dat_akk
+      - answer: Wir finden uns sehr nett.
+        feedback_vi: uns là "chúng mình". "Các bạn" làm tân ngữ là euch.
+        error_tag: pronoun_person
+      - answer: Wir finden Sie sehr nett.
+        feedback_vi: "\"Các bạn\" thân mật là ihr → euch; Sie dùng cho người lạ hoặc trang trọng."
+        error_tag: register_du_sie
+    explanation:
+      vi: Chủ ngữ wir (chúng mình) + finden; "các bạn" (ihr) làm tân ngữ nên đổi thành euch. nett là dễ mến, tử tế.
+    display_answer: Wir finden euch sehr nett.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u05l2-wb-wie-findet-ihr
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-finden
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Đức: \"Các bạn thấy căn hộ của chúng mình thế nào?\""
+      tokens:
+        - { id: w-findet, text: findet }
+        - { id: w-wohnung, text: Wohnung }
+        - { id: w-euch, text: euch }
+        - { id: w-ihr, text: ihr }
+        - { id: w-unsere, text: unsere }
+        - { id: w-wie, text: Wie }
+        - { id: w-unser, text: unser }
+        - { id: w-findest, text: findest }
+    answer:
+      orders:
+        - [w-wie, w-findet, w-ihr, w-unsere, w-wohnung]
+    explanation:
+      vi: Từ để hỏi Wie đứng đầu, động từ chia ở vị trí 2. Hỏi nhóm bạn nên chủ ngữ là ihr và động từ là findet (không phải findest); die Wohnung giống cái nên là unsere. euch là dạng tân ngữ, không làm chủ ngữ.
+    display_answer: Wie findet ihr unsere Wohnung?
+
+  - key: de:exercise:a1u05l2-mcq-sessel-sie
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u05-sessel
+    prompt:
+      stem: "Ở cửa hàng nội thất, nhân viên hỏi bạn: \"Wie finden Sie den Sessel?\" Bạn thấy chiếc ghế bành rất êm và dễ chịu. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: f6b, text: Ich finde ihn sehr gemütlich., lang: de }
+        - { id: h3k, text: Ich finde er sehr gemütlich., lang: de }
+        - { id: t8q, text: Ich finde es sehr gemütlich., lang: de }
+        - { id: y2v, text: Ich finde Sie sehr gemütlich., lang: de }
+    answer:
+      correct_option_id: f6b
+    explanation:
+      vi: der Sessel giống đực, làm tân ngữ nên là ihn. er là dạng chủ ngữ, es dành cho giống trung; còn Ich finde Sie gemütlich nghĩa là "Tôi thấy anh/chị rất ấm cúng" - nói về người bán hàng chứ không phải cái ghế!
+    display_answer: Ich finde ihn sehr gemütlich.
+
+  - key: de:exercise:a1u05l2-tr-regal-praktisch
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u05-regal
+    prompt:
+      source_text: Das Regal ist nicht schön, aber ich finde es sehr praktisch.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái kệ không đẹp, nhưng tôi thấy nó rất tiện.
+        - Cái kệ không đẹp, nhưng tôi thấy nó rất tiện lợi.
+        - Cái kệ không đẹp, nhưng mình thấy nó rất tiện.
+        - Cái kệ không đẹp, nhưng tôi thấy nó rất tiện dụng.
+        - Cái giá không đẹp, nhưng tôi thấy nó rất tiện.
+        - Cái kệ thì không đẹp, nhưng tôi thấy nó rất tiện.
+        - Kệ sách không đẹp, nhưng tôi thấy nó rất tiện.
+        - Cái kệ không đẹp, nhưng tôi thấy nó rất thực dụng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái kệ đẹp, nhưng tôi thấy nó rất tiện.
+        feedback_vi: nicht schön là "không đẹp".
+        error_tag: negation_missed
+    explanation:
+      vi: das Regal là cái kệ (giá); es trong câu sau thay cho das Regal nên dịch là "nó". praktisch là tiện, tiện lợi.
+    display_answer: Cái kệ không đẹp, nhưng tôi thấy nó rất tiện.

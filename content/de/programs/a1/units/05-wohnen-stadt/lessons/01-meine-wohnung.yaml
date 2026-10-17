@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u05-meine-wohnung
+order_index: 1
+level: a1
+title:
+  vi: Căn hộ của tôi – es gibt (Meine Wohnung)
+objectives:
+  - vi: Tả căn hộ của mình - có mấy phòng, có những phòng nào, phòng như thế nào.
+  - vi: Dùng es gibt + Akkusativ để nói ở một nơi có (hoặc không có) cái gì.
+  - vi: Phân biệt "có" sở hữu (haben) với "có" tồn tại (es gibt).
+  - vi: Dùng unser/unsere, euer/eure để nói về nhà của chúng tôi, của các bạn.
+estimated_minutes: 14
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u04-wiederholung]
+items:
+  - item: de:item:a1u05-g-es-gibt
+  - item: de:item:a1u05-g-possessiv-plural
+  - item: de:item:a1u05-geben
+  - item: de:item:a1u05-wohnung
+  - item: de:item:a1u05-zimmer
+  - item: de:item:a1u05-kueche
+  - item: de:item:a1u05-bad
+  - item: de:item:a1u05-wohnzimmer
+  - item: de:item:a1u05-schlafzimmer
+  - item: de:item:a1u05-balkon
+  - item: de:item:a1u05-hell
+  - item: de:item:a1u05-ruhig
+  - item: de:item:a1u05-miete
+  - item: de:item:a1u05-flur
+  - item: de:item:a1u05-toilette
+  - item: de:item:a1u05-garten
+  - item: de:item:a1u05-keller
+  - item: de:item:a1u05-aufzug
+  - item: de:item:p0u3-g-komposita
+    role: reuse
+  - item: de:item:a1u03-g-akkusativ
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn tả được căn hộ của mình bằng tiếng Đức: Meine Wohnung hat drei Zimmer. Es gibt einen Balkon. Unsere Küche ist klein, aber hell."
+  - type: explain
+    text:
+      vi: Tiếng Việt dùng một chữ "có" cho hai ý - sở hữu (Căn hộ có ban công) và tồn tại (Ở đây có siêu thị). Tiếng Đức tách hai ý này - sở hữu dùng haben, tồn tại ở một nơi dùng es gibt. Es gibt luôn giữ nguyên dạng gibt, dù sau đó là một hay nhiều thứ.
+  - type: explain
+    text:
+      vi: Thứ "được có" sau es gibt là tân ngữ, nên đứng ở Akkusativ như bạn đã học ở A1U03. Chỉ giống đực thay đổi - Es gibt einen Balkon, Es gibt keinen Aufzug. Giống cái, giống trung và số nhiều giữ nguyên - Es gibt eine Küche, ein Bad, zwei Zimmer.
+  - type: explain
+    text:
+      vi: Es gibt cũng theo luật động từ ở vị trí 2. Khi Hier đứng đầu, es chuyển ra sau động từ - Hier gibt es einen Supermarkt. Câu hỏi Có/Không đưa gibt lên đầu - Gibt es einen Balkon?
+  - type: explain
+    text:
+      vi: unser là "của chúng tôi/chúng mình" (wir), euer là "của các bạn" (ihr - nhiều người thân quen). Giống mein/dein, chúng thêm -e trước danh từ giống cái và số nhiều - unsere Küche, unsere Zimmer. Với euer, chữ e ở giữa thường rơi khi có đuôi - eure Wohnung.
+  - type: explain
+    text:
+      vi: Quảng cáo nhà ở Đức đếm số phòng không tính bếp, phòng tắm và hành lang - một căn "2-Zimmer-Wohnung" có hai phòng ở (thường là phòng khách và phòng ngủ) cộng bếp và bad. Tiền thuê (die Miete) thường ghi hai mức Kaltmiete (chưa gồm sưởi, nước) và Warmmiete (đã gồm); bạn sẽ học kỹ ở A2.
+  - type: deep_explain
+    text:
+      vi: Es trong es gibt chỉ là chủ ngữ "giữ chỗ", giống it trong tiếng Anh, nên động từ luôn ở ngôi 3 số ít - Es gibt zwei Bäder, không bao giờ là "es geben". Haben vẫn đúng khi chủ ngữ là căn nhà hoặc người - Die Wohnung hat einen Balkon nghĩa gần như Es gibt einen Balkon. Nhưng khi nói về một khu vực, một thành phố (ở đây có…, ở Hà Nội có…), người Đức gần như luôn dùng es gibt - In Hanoi gibt es viele Cafés. Phủ định es gibt bằng kein - Es gibt keinen Garten, không nói "Es gibt nicht einen Garten" trong câu bình thường.
+  - type: example
+    target: Meine Wohnung hat drei Zimmer, eine Küche und ein Bad.
+    target_lang: de
+    translation:
+      vi: Căn hộ của tôi có ba phòng, một bếp và một phòng tắm.
+    note:
+      vi: Chủ ngữ là căn hộ (sở hữu) nên dùng haben (hat). Theo cách đếm ở Đức, đây là căn hộ 3 phòng vì bếp và bad không tính.
+  - type: example
+    target: Es gibt einen Balkon, aber es gibt keinen Aufzug.
+    target_lang: de
+    translation:
+      vi: Có ban công nhưng không có thang máy.
+    note:
+      vi: der Balkon và der Aufzug đều giống đực nên đổi thành einen/keinen (Akkusativ).
+  - type: example
+    target: Hier gibt es einen Supermarkt und zwei Cafés.
+    target_lang: de
+    translation:
+      vi: Ở đây có một siêu thị và hai quán cà phê.
+    note:
+      vi: Hier đứng đầu nên gibt ở vị trí 2, es đứng ngay sau. Có cả danh từ số nhiều (zwei Cafés) nhưng động từ vẫn là gibt.
+  - type: example
+    target: Wie ist eure Wohnung? – Unsere Wohnung ist klein, aber sehr hell und ruhig.
+    target_lang: de
+    translation:
+      vi: Căn hộ của các bạn thế nào? – Căn hộ của bọn mình nhỏ nhưng rất sáng sủa và yên tĩnh.
+    note:
+      vi: Hỏi một nhóm bạn thân (ihr) nên dùng eure; trả lời cho cả nhóm (wir) nên dùng unsere. Wohnung giống cái nên có đuôi -e; tính từ sau ist không có đuôi.
+  - type: example
+    target: Das Wohnzimmer ist groß, aber das Schlafzimmer ist klein.
+    target_lang: de
+    translation:
+      vi: Phòng khách rộng nhưng phòng ngủ thì nhỏ.
+    note:
+      vi: Từ ghép lấy giống của từ cuối - wohnen + das Zimmer → das Wohnzimmer, schlafen + das Zimmer → das Schlafzimmer.
+  - type: common_mistake
+    wrong: Hier hat einen Supermarkt.
+    right: Hier gibt es einen Supermarkt.
+    target_lang: de
+    note:
+      vi: Nói ở một nơi "có" cái gì thì dùng es gibt. Haben cần một chủ ngữ là người hoặc vật sở hữu (Die Stadt hat einen Supermarkt).
+  - type: common_mistake
+    wrong: Es gibt ein Balkon.
+    right: Es gibt einen Balkon.
+    target_lang: de
+    note:
+      vi: Sau es gibt là Akkusativ - der Balkon giống đực nên ein → einen.
+  - type: common_mistake
+    wrong: Es geben zwei Zimmer.
+    right: Es gibt zwei Zimmer.
+    target_lang: de
+    note:
+      vi: Chủ ngữ là es nên động từ luôn là gibt, kể cả khi theo sau là danh từ số nhiều.
+  - type: common_mistake
+    wrong: Unser Küche ist klein.
+    right: Unsere Küche ist klein.
+    target_lang: de
+    note:
+      vi: die Küche giống cái nên unser thêm -e, giống như meine Küche.
+  - type: summary
+    points:
+      - vi: Sở hữu → haben (Die Wohnung hat einen Balkon); ở một nơi có cái gì → es gibt (Hier gibt es einen Supermarkt).
+      - vi: es gibt + Akkusativ - giống đực đổi thành einen/keinen; giống cái, giống trung, số nhiều giữ nguyên.
+      - vi: gibt không đổi theo số nhiều; Hier gibt es…; câu hỏi Gibt es…?
+      - vi: unser/unsere (của chúng tôi), euer/eure (của các bạn) - thêm -e trước danh từ giống cái và số nhiều.
+      - vi: Phòng trong nhà - das Zimmer, das Wohnzimmer, das Schlafzimmer, die Küche, das Bad, die Toilette, der Flur, der Balkon.
+      - vi: Quảng cáo nhà - số phòng không tính bếp và bad; die Miete là tiền thuê.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u05l1-mcq-es-gibt-einen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-g-es-gibt
+    prompt:
+      stem: "Chọn từ đúng cho chỗ trống: Es gibt ___ Balkon."
+      stem_lang: vi
+      options:
+        - { id: k7m, text: einen, lang: de }
+        - { id: p2x, text: ein, lang: de }
+        - { id: w9c, text: eine, lang: de }
+        - { id: h4t, text: der, lang: de }
+    answer:
+      correct_option_id: k7m
+    explanation:
+      vi: Sau es gibt, danh từ là tân ngữ nên ở Akkusativ; der Balkon giống đực nên ein → einen. Ein là dạng Nominativ, eine dành cho giống cái, còn der là Nominativ của mạo từ xác định.
+    display_answer: einen
+
+  - key: de:exercise:a1u05l1-mcq-hier-gibt-es
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-g-es-gibt
+    prompt:
+      stem: "Bạn muốn nói: \"Ở đây có một tiệm bánh.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: a3r, text: Hier gibt es eine Bäckerei., lang: de }
+        - { id: m8q, text: Hier hat eine Bäckerei., lang: de }
+        - { id: z5n, text: Hier gibt eine Bäckerei., lang: de }
+        - { id: u1d, text: Hier gibt es einen Bäckerei., lang: de }
+    answer:
+      correct_option_id: a3r
+    explanation:
+      vi: "Nói ở một nơi có cái gì thì dùng es gibt; Hier đứng đầu nên gibt ở vị trí 2 và es theo sau. \"Hier hat…\" dịch chữ \"có\" sai, \"Hier gibt eine…\" thiếu es, còn die Bäckerei giống cái nên là eine chứ không phải einen."
+    display_answer: Hier gibt es eine Bäckerei.
+
+  - key: de:exercise:a1u05l1-listen-zwei-zimmer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u05-wohnung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Wohnung hat zwei Zimmer, eine Küche und ein Bad. Es gibt auch einen Balkon.
+      options:
+        - { id: c6v, text: "Căn hộ có hai phòng, một bếp, một phòng tắm và có cả ban công.", lang: vi }
+        - { id: f2j, text: "Căn hộ có ba phòng, một bếp và một phòng tắm, nhưng không có ban công.", lang: vi }
+        - { id: r8b, text: "Căn hộ có hai phòng và một bếp, nhưng không có phòng tắm.", lang: vi }
+        - { id: y3e, text: "Căn hộ có hai phòng tắm, một bếp và một ban công.", lang: vi }
+    answer:
+      correct_option_id: c6v
+    explanation:
+      vi: zwei Zimmer là hai phòng, eine Küche là một bếp, ein Bad là một phòng tắm. Es gibt auch einen Balkon nghĩa là "còn có cả ban công" - auch là "cũng, cả".
+    display_answer: "Căn hộ có hai phòng, một bếp, một phòng tắm và có cả ban công."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u05l1-fill-einen-keinen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-es-gibt
+    prompt:
+      template: "Unsere Wohnung ist klein. Es gibt {{b1}} (ein) Balkon und {{b2}} (ein) Küche, aber es gibt {{b3}} (kein) Aufzug."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [einen]
+        b2: [eine]
+        b3: [keinen]
+    known_wrong:
+      - answer: ein
+        feedback_vi: Sau es gibt cần Akkusativ - Balkon giống đực nên là einen; Küche giống cái nên là eine.
+        error_tag: case_dat_akk
+      - answer: kein
+        feedback_vi: der Aufzug giống đực, sau es gibt là Akkusativ nên kein → keinen.
+        error_tag: case_dat_akk
+      - answer: einem
+        feedback_vi: einem là Dativ. Sau es gibt dùng Akkusativ - einen.
+        error_tag: case_dat_akk
+      - answer: einer
+        feedback_vi: die Küche ở Akkusativ vẫn là eine; einer là Dativ.
+        error_tag: case_dat_akk
+    explanation:
+      vi: Thứ "được có" sau es gibt ở Akkusativ. der Balkon và der Aufzug giống đực nên thành einen, keinen; die Küche giống cái nên giữ nguyên eine.
+    display_answer: Unsere Wohnung ist klein. Es gibt einen Balkon und eine Küche, aber es gibt keinen Aufzug.
+
+  - key: de:exercise:a1u05l1-fill-unser-euer
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-possessiv-plural
+    prompt:
+      template: "A: Wie ist {{b1}} (euer) Wohnung? B: {{b2}} (unser) Wohnung ist hell, und {{b3}} (unser) Balkon ist groß."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [eure]
+        b2: [unsere]
+        b3: [unser]
+    known_wrong:
+      - answer: euer
+        feedback_vi: die Wohnung giống cái nên cần đuôi -e, và chữ e ở giữa rơi đi - eure.
+        error_tag: possessive_ending
+      - answer: unseren
+        feedback_vi: der Balkon ở đây là chủ ngữ (Nominativ) nên giữ unser; unseren chỉ dùng khi làm tân ngữ.
+        error_tag: case_dat_akk
+      - answer: ihre
+        feedback_vi: Hỏi nhóm bạn (ihr) thì "của các bạn" là eure; ihre là "của cô ấy/của họ".
+        error_tag: possessive_ending
+    explanation:
+      vi: euer (của các bạn) và unser (của chúng tôi) thêm -e trước danh từ giống cái - eure Wohnung, unsere Wohnung. der Balkon là chủ ngữ giống đực nên giữ nguyên unser.
+    display_answer: "A: Wie ist eure Wohnung? B: Unsere Wohnung ist hell, und unser Balkon ist groß."
+
+  - key: de:exercise:a1u05l1-tr-kein-supermarkt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-es-gibt
+    prompt:
+      source_text: Ở đây không có siêu thị.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Hier gibt es keinen Supermarkt.
+        - Es gibt hier keinen Supermarkt.
+        - Hier gibt's keinen Supermarkt.
+        - Es gibt keinen Supermarkt hier.
+    known_wrong:
+      - answer: Hier hat keinen Supermarkt.
+        feedback_vi: Nói ở một nơi có/không có gì thì dùng es gibt, không dùng haben.
+        error_tag: verb_choice
+      - answer: Hier gibt es kein Supermarkt.
+        feedback_vi: der Supermarkt giống đực, sau es gibt là Akkusativ nên kein → keinen.
+        error_tag: case_dat_akk
+      - answer: Hier es gibt keinen Supermarkt.
+        feedback_vi: Hier đứng đầu thì động từ gibt phải ở vị trí 2 - Hier gibt es…
+        error_tag: verb_position
+      - answer: Hier gibt es nicht Supermarkt.
+        feedback_vi: Phủ định danh từ không có mạo từ xác định thì dùng kein - keinen Supermarkt.
+        error_tag: negation_kein
+    explanation:
+      vi: "\"Ở đây có/không có…\" là tồn tại nên dùng es gibt; phủ định danh từ bằng kein. der Supermarkt giống đực nên ở Akkusativ là keinen."
+    display_answer: Hier gibt es keinen Supermarkt.
+
+  - key: de:exercise:a1u05l1-tr-klein-aber-hell
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-hell
+    prompt:
+      source_text: Căn hộ của chúng tôi nhỏ nhưng sáng sủa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Unsere Wohnung ist klein, aber hell.
+        - Unsere Wohnung ist klein, aber sie ist hell.
+        - Unsere Wohnung ist zwar klein, aber hell.
+    known_wrong:
+      - answer: Unser Wohnung ist klein, aber hell.
+        feedback_vi: die Wohnung giống cái nên là unsere.
+        error_tag: possessive_ending
+      - answer: Unsere Wohnung ist kleine, aber helle.
+        feedback_vi: Tính từ đứng sau ist không có đuôi - klein, hell.
+        error_tag: adj_ending
+      - answer: Unsere Wohnung klein, aber hell.
+        feedback_vi: Tiếng Việt không cần "là", nhưng tiếng Đức phải có ist trước tính từ.
+        error_tag: missing_verb
+    explanation:
+      vi: "\"Của chúng tôi\" + danh từ giống cái → unsere Wohnung. Tả tính chất dùng sein (ist) + tính từ không đuôi; \"nhưng\" là aber."
+    display_answer: Unsere Wohnung ist klein, aber hell.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u05l1-wb-hier-gibt-es
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-es-gibt
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Ở đây có hai siêu thị và một tiệm bánh.\""
+      tokens:
+        - { id: t-eine, text: eine }
+        - { id: t-gibt, text: gibt }
+        - { id: t-sm, text: Supermärkte }
+        - { id: t-hat, text: hat }
+        - { id: t-hier, text: Hier }
+        - { id: t-baeck, text: Bäckerei }
+        - { id: t-es, text: es }
+        - { id: t-zwei, text: zwei }
+        - { id: t-und, text: und }
+        - { id: t-geben, text: geben }
+    answer:
+      orders:
+        - [t-hier, t-gibt, t-es, t-zwei, t-sm, t-und, t-eine, t-baeck]
+        - [t-es, t-gibt, t-hier, t-zwei, t-sm, t-und, t-eine, t-baeck]
+        - [t-hier, t-gibt, t-es, t-eine, t-baeck, t-und, t-zwei, t-sm]
+        - [t-es, t-gibt, t-hier, t-eine, t-baeck, t-und, t-zwei, t-sm]
+        - [t-zwei, t-sm, t-und, t-eine, t-baeck, t-gibt, t-es, t-hier]
+        - [t-eine, t-baeck, t-und, t-zwei, t-sm, t-gibt, t-es, t-hier]
+    explanation:
+      vi: Ở một nơi có gì → es gibt; gibt luôn ở vị trí 2 và không đổi dù có hai siêu thị. Hier đứng đầu thì es đứng sau gibt; hat và geben là bẫy.
+    display_answer: Hier gibt es zwei Supermärkte und eine Bäckerei.
+
+  - key: de:exercise:a1u05l1-tr-drei-zimmer
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u05-zimmer
+    prompt:
+      source_text: Unsere Wohnung hat drei Zimmer, aber es gibt keinen Balkon.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Căn hộ của chúng tôi có ba phòng, nhưng không có ban công.
+        - Căn hộ của bọn mình có ba phòng, nhưng không có ban công.
+        - Căn hộ của chúng mình có ba phòng, nhưng không có ban công.
+        - Căn hộ chúng tôi có ba phòng, nhưng không có ban công.
+        - Căn hộ của chúng tôi có 3 phòng, nhưng không có ban công.
+        - Căn hộ của chúng tôi có ba phòng, nhưng lại không có ban công.
+        - Nhà chúng tôi có ba phòng, nhưng không có ban công.
+        - Căn hộ của chúng tôi có ba phòng nhưng không có ban công nào.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Căn hộ của chúng tôi có ba phòng và một ban công.
+        feedback_vi: keinen Balkon là "không có ban công".
+        error_tag: negation_missed
+      - answer: Căn hộ của các bạn có ba phòng, nhưng không có ban công.
+        feedback_vi: unsere là "của chúng tôi", không phải "của các bạn" (eure).
+        error_tag: possessive_meaning
+    explanation:
+      vi: unsere Wohnung là "căn hộ của chúng tôi"; hat drei Zimmer là "có ba phòng" (sở hữu); es gibt keinen Balkon là "không có ban công".
+    display_answer: Căn hộ của chúng tôi có ba phòng, nhưng không có ban công.
+
+  - key: de:exercise:a1u05l1-mcq-eure-wohnung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u05-g-possessiv-plural
+    prompt:
+      stem: "Bạn hỏi hai người bạn thân (ihr): \"Căn hộ của các bạn có ban công không?\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: e4w, text: Hat eure Wohnung einen Balkon?, lang: de }
+        - { id: g9s, text: Hat euer Wohnung einen Balkon?, lang: de }
+        - { id: n1k, text: Hat eure Wohnung ein Balkon?, lang: de }
+        - { id: b7p, text: Hat Ihre Wohnung einen Balkon?, lang: de }
+    answer:
+      correct_option_id: e4w
+    explanation:
+      vi: Nói với nhiều bạn thân (ihr) thì dùng euer; die Wohnung giống cái nên là eure. Balkon là tân ngữ giống đực nên einen. Ihre là cách nói lịch sự với Sie, không hợp với bạn thân.
+    display_answer: Hat eure Wohnung einen Balkon?

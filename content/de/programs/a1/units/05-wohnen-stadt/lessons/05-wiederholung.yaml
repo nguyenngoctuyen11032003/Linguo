@@ -1,0 +1,432 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u05-wiederholung
+order_index: 5
+level: a1
+title:
+  vi: Ôn tập – quảng cáo nhà, e-mail tả nhà (Wiederholung)
+objectives:
+  - vi: Đọc quảng cáo cho thuê nhà ngắn và tìm thông tin chính - số phòng, vị trí, giá thuê (kiểu bài Lesen Teil 2).
+  - vi: Viết e-mail ngắn cho bạn để tả căn hộ mới - phòng, đồ đạc, vị trí.
+  - vi: Nghe chỉ đường và chọn đúng đường đi.
+estimated_minutes: 19
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:a1u05-wie-komme-ich]
+items:
+  - item: de:item:a1u05-g-es-gibt
+    role: reuse
+  - item: de:item:a1u05-g-possessiv-plural
+    role: reuse
+  - item: de:item:a1u05-g-personalpronomen-akk
+    role: reuse
+  - item: de:item:a1u05-g-pronomen-genus
+    role: reuse
+  - item: de:item:a1u05-g-dativ-artikel
+    role: reuse
+  - item: de:item:a1u05-g-wo-praep-dativ
+    role: reuse
+  - item: de:item:a1u05-g-imperativ
+    role: reuse
+  - item: de:item:a1u05-g-hoefliche-bitte
+    role: reuse
+  - item: de:item:a1u05-wohnung
+    role: reuse
+  - item: de:item:a1u05-zimmer
+    role: reuse
+  - item: de:item:a1u05-balkon
+    role: reuse
+  - item: de:item:a1u05-miete
+    role: reuse
+  - item: de:item:a1u05-garten
+    role: reuse
+  - item: de:item:a1u05-moebel
+    role: reuse
+  - item: de:item:a1u05-gemuetlich
+    role: reuse
+  - item: de:item:a1u05-zentrum
+    role: reuse
+  - item: de:item:a1u05-haltestelle
+    role: reuse
+  - item: de:item:a1u05-park
+    role: reuse
+  - item: de:item:a1u05-kreuzung
+    role: reuse
+  - item: de:item:a1u05-naehe
+    role: reuse
+  - item: de:item:a1u03-g-moechten
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Bài ôn gom cả unit vào ba việc thật - đọc quảng cáo cho thuê nhà, viết e-mail tả căn hộ mới cho bạn và nghe người khác chỉ đường. Sau bài, bạn tự viết được 5-6 câu về căn hộ và khu phố của mình.
+  - type: explain
+    text:
+      vi: Quảng cáo nhà ở Đức rất ngắn, thường bỏ động từ và mạo từ, hay viết tắt (Zi. = Zimmer, Kü. = Küche, Blk. = Balkon). Khi đọc, hãy tìm bốn thông tin - số phòng, vị trí (im Zentrum, in der Nähe), tiền thuê (Miete) và cách liên hệ.
+  - type: explain
+    text:
+      vi: E-mail thân mật gồm lời chào (Liebe Anna, với nữ / Lieber Tom, với nam), nội dung, lời chào cuối (Viele Grüße / Liebe Grüße) và tên. Sau dấu phẩy ở lời chào, câu đầu viết thường (trừ danh từ và tên) - Liebe Anna, ich habe eine neue Wohnung!
+  - type: explain
+    text:
+      vi: Để tả căn hộ, bạn dùng đủ công cụ của unit - Die Wohnung hat…, Es gibt…, Das Wohnzimmer ist hell, Ich finde es gemütlich, Die Haltestelle ist vor dem Haus. Mỗi câu một ý, động từ chia luôn ở vị trí 2.
+  - type: explain
+    text:
+      vi: Khi nghe chỉ đường, ghi nhanh theo thứ tự - mốc (Ampel, Kreuzung, Ecke) → hướng (geradeaus, links, rechts) → nơi đến và vị trí (neben der Post). Bài nghe kiểu Start Deutsch 1 thường hỏi bạn chọn đúng đường đi hoặc đúng bản đồ.
+  - type: deep_explain
+    text:
+      vi: Phần đọc của Start Deutsch 1 có dạng bài cho một tình huống và hai quảng cáo, bạn chọn quảng cáo phù hợp. Mẹo - gạch chân điều kiện trong tình huống (yên tĩnh, có vườn, gần trung tâm, giá bao nhiêu) rồi loại dần quảng cáo không đạt; đừng chỉ tìm từ giống hệt, vì quảng cáo có thể nói cùng ý bằng từ khác (kein Garten, nicht ruhig). Khi viết e-mail, hãy kiểm tra ba lỗi hay gặp của unit - Akkusativ sau es gibt (einen Balkon), Dativ sau giới từ vị trí (vor dem Haus) và đại từ đúng giống (Ich finde ihn/sie/es…).
+  - type: example
+    target: "2-Zimmer-Wohnung im Zentrum: 55 Quadratmeter, Küche, Bad, Balkon. Hell und ruhig, die Haltestelle ist direkt vor dem Haus. Miete: 650 Euro. Kontakt: Frau Becker, ab 18 Uhr."
+    target_lang: de
+    translation:
+      vi: "Căn hộ 2 phòng ở trung tâm: 55 mét vuông, bếp, phòng tắm, ban công. Sáng sủa và yên tĩnh, trạm xe ở ngay trước nhà. Tiền thuê: 650 euro. Liên hệ: bà Becker, từ 18 giờ."
+    note:
+      vi: Quảng cáo bỏ bớt động từ và mạo từ. 2-Zimmer-Wohnung có hai phòng ở, chưa tính bếp và bad. vor dem Haus là Dativ (Wo?).
+  - type: example
+    target: "Liebe Anna, ich habe jetzt eine neue Wohnung in Leipzig! Sie hat zwei Zimmer, eine Küche und ein Bad. Das Wohnzimmer ist groß und hell, und es gibt einen Balkon. Die Möbel sind alt, aber ich finde sie gemütlich. Die Wohnung ist im Zentrum, neben einem Park. Ich möchte bald eine Party geben. Besuch mich! Viele Grüße, Minh"
+    target_lang: de
+    translation:
+      vi: "Anna thân mến, giờ mình có căn hộ mới ở Leipzig rồi! Căn hộ có hai phòng, một bếp và một phòng tắm. Phòng khách rộng và sáng, lại có ban công. Đồ đạc cũ nhưng mình thấy chúng ấm cúng. Căn hộ ở trung tâm, cạnh một công viên. Mình muốn sớm tổ chức một bữa tiệc. Đến chơi với mình nhé! Thân, Minh"
+    note:
+      vi: Sie thay cho die Wohnung, sie thay cho die Möbel. Ich möchte … geben - möchten ở vị trí 2, nguyên thể ở cuối câu. Besuch mich! là mệnh lệnh với du (besuchen = đến thăm), mich là tân ngữ Akkusativ.
+  - type: example
+    target: Entschuldigung, gibt es hier in der Nähe eine Bank? – Ja. Gehen Sie hier geradeaus. An der Kreuzung gehen Sie rechts. Die Bank ist dann links, neben der Post.
+    target_lang: de
+    translation:
+      vi: Xin lỗi, ở gần đây có ngân hàng không ạ? – Có. Ông/bà đi thẳng ở đây. Đến ngã tư thì rẽ phải. Ngân hàng ở bên trái, cạnh bưu điện.
+    note:
+      vi: Hỏi người lạ nên dùng Sie. Mốc (an der Kreuzung) → hướng (rechts) → vị trí (links, neben der Post).
+  - type: common_mistake
+    wrong: Liebe Tom,
+    right: Lieber Tom,
+    target_lang: de
+    note:
+      vi: Lời chào thư thân mật đổi theo người nhận - Lieber với nam, Liebe với nữ.
+  - type: common_mistake
+    wrong: Es gibt ein Balkon, und die Haltestelle ist vor das Haus.
+    right: Es gibt einen Balkon, und die Haltestelle ist vor dem Haus.
+    target_lang: de
+    note:
+      vi: Sau es gibt là Akkusativ (einen Balkon); sau giới từ chỉ vị trí là Dativ (vor dem Haus). Đây là hai quy tắc khác nhau trong cùng một câu.
+  - type: common_mistake
+    wrong: Die Möbel sind alt, aber ich finde es gemütlich.
+    right: Die Möbel sind alt, aber ich finde sie gemütlich.
+    target_lang: de
+    note:
+      vi: die Möbel là số nhiều nên đại từ là sie, không phải es.
+  - type: summary
+    points:
+      - vi: Đọc quảng cáo - tìm số phòng, vị trí, tiền thuê, liên hệ; 2-Zimmer-Wohnung không tính bếp và bad.
+      - vi: E-mail thân mật - Liebe …, / Lieber …, → nội dung → Viele Grüße / Liebe Grüße → tên.
+      - vi: es gibt + Akkusativ; giới từ vị trí (Wo?) + Dativ; im = in dem, am = an dem.
+      - vi: Đại từ theo giống - ihn, sie, es; số nhiều sie.
+      - vi: Chỉ đường - Gehen Sie…, Biegen Sie … ab; geradeaus, links, rechts; an der Ampel/Kreuzung/Ecke.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u05l5-mcq-anzeige-info
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u05-haltestelle
+    prompt:
+      stem: "Đọc quảng cáo: \"2-Zimmer-Wohnung im Zentrum: 55 Quadratmeter, Küche, Bad, Balkon. Hell und ruhig, die Haltestelle ist direkt vor dem Haus. Miete: 650 Euro.\" Câu nào đúng với quảng cáo?"
+      stem_lang: vi
+      options:
+        - { id: p3h, text: Căn hộ có ban công và trạm xe ở ngay trước nhà., lang: vi }
+        - { id: x8c, text: Căn hộ có ba phòng ở và một ban công., lang: vi }
+        - { id: g5k, text: Căn hộ ở ngoại ô và rất yên tĩnh., lang: vi }
+        - { id: u2r, text: Tiền thuê nhà là 550 euro., lang: vi }
+    answer:
+      correct_option_id: p3h
+    explanation:
+      vi: Quảng cáo ghi Balkon và die Haltestelle ist direkt vor dem Haus (trạm xe ngay trước nhà). Căn hộ có 2 phòng (2-Zimmer), ở trung tâm (im Zentrum), tiền thuê 650 euro.
+    display_answer: Căn hộ có ban công và trạm xe ở ngay trước nhà.
+
+  - key: de:exercise:a1u05l5-mcq-richtig-falsch-balkon
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-balkon
+    prompt:
+      stem: "Vẫn quảng cáo trên. Câu sau đúng (richtig) hay sai (falsch): \"Die Wohnung hat keinen Balkon.\""
+      stem_lang: vi
+      options:
+        - { id: r1t, text: richtig, lang: de }
+        - { id: f9l, text: falsch, lang: de }
+    answer:
+      correct_option_id: f9l
+    explanation:
+      vi: Quảng cáo liệt kê Küche, Bad, Balkon - căn hộ có ban công, nên câu "không có ban công" (keinen Balkon) là sai.
+    display_answer: falsch
+
+  - key: de:exercise:a1u05l5-mcq-email-moebel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u05-g-pronomen-genus
+    prompt:
+      stem: "Đọc e-mail: \"Liebe Anna, ich habe jetzt eine neue Wohnung in Leipzig! Sie hat zwei Zimmer, eine Küche und ein Bad. Das Wohnzimmer ist groß und hell, und es gibt einen Balkon. Die Möbel sind alt, aber ich finde sie gemütlich. Viele Grüße, Minh\" Minh thấy đồ đạc thế nào?"
+      stem_lang: vi
+      options:
+        - { id: m4d, text: Cũ nhưng ấm cúng., lang: vi }
+        - { id: e7s, text: Mới và hiện đại., lang: vi }
+        - { id: w2b, text: Cũ và không đẹp., lang: vi }
+        - { id: k6n, text: Mới nhưng không tiện., lang: vi }
+    answer:
+      correct_option_id: m4d
+    explanation:
+      vi: Die Möbel sind alt là "đồ đạc cũ"; ich finde sie gemütlich là "mình thấy chúng ấm cúng" - sie thay cho die Möbel (số nhiều).
+    display_answer: Cũ nhưng ấm cúng.
+
+  - key: de:exercise:a1u05l5-mcq-anzeige-garten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-garten
+    prompt:
+      stem: "Chị Hoa có con nhỏ, muốn tìm một căn hộ yên tĩnh có vườn. Quảng cáo nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: a5v, text: "3-Zimmer-Wohnung, sehr ruhig, Garten, Spielplatz in der Nähe.", lang: de }
+        - { id: o3j, text: "1-Zimmer-Wohnung im Zentrum, kein Garten, direkt am Bahnhof.", lang: de }
+        - { id: i8q, text: "2-Zimmer-Wohnung, Balkon, kein Garten, an der Kreuzung.", lang: de }
+        - { id: z6y, text: "Büro, 40 Quadratmeter, sehr hell, am Marktplatz.", lang: de }
+    answer:
+      correct_option_id: a5v
+    explanation:
+      vi: Chỉ quảng cáo đầu có cả sehr ruhig (rất yên tĩnh) và Garten (vườn), lại có sân chơi gần đó. Hai quảng cáo kia ghi kein Garten (không có vườn), còn quảng cáo cuối là văn phòng (Büro).
+    display_answer: "3-Zimmer-Wohnung, sehr ruhig, Garten, Spielplatz in der Nähe."
+
+  - key: de:exercise:a1u05l5-listen-weg-bank
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u05-kreuzung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Gehen Sie hier geradeaus. An der Kreuzung gehen Sie rechts. Die Bank ist dann links, neben der Post.
+      options:
+        - { id: b6m, text: "Đi thẳng, đến ngã tư rẽ phải; ngân hàng ở bên trái, cạnh bưu điện.", lang: vi }
+        - { id: h1x, text: "Đi thẳng, đến ngã tư rẽ trái; ngân hàng ở bên phải, cạnh bưu điện.", lang: vi }
+        - { id: s4f, text: "Đi thẳng, đến đèn giao thông rẽ phải; ngân hàng ở bên trái, cạnh hiệu thuốc.", lang: vi }
+        - { id: n9w, text: "Rẽ phải ngay; ngân hàng ở bên trái, phía sau bưu điện.", lang: vi }
+    answer:
+      correct_option_id: b6m
+    explanation:
+      vi: geradeaus → đi thẳng; an der Kreuzung … rechts → đến ngã tư rẽ phải; links, neben der Post → bên trái, cạnh bưu điện.
+    display_answer: "Đi thẳng, đến ngã tư rẽ phải; ngân hàng ở bên trái, cạnh bưu điện."
+
+  - key: de:exercise:a1u05l5-listen-handy-sofa
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u05-g-wo-praep-dativ
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wo ist mein Handy? – Es ist im Wohnzimmer, auf dem Sofa.
+      options:
+        - { id: c3p, text: "Điện thoại ở phòng khách, trên ghế sofa.", lang: vi }
+        - { id: t7g, text: "Điện thoại ở phòng ngủ, trên ghế sofa.", lang: vi }
+        - { id: y5a, text: "Điện thoại ở phòng khách, dưới ghế sofa.", lang: vi }
+        - { id: l2e, text: "Điện thoại ở trong bếp, trên bàn.", lang: vi }
+    answer:
+      correct_option_id: c3p
+    explanation:
+      vi: im Wohnzimmer là ở phòng khách (im = in dem), auf dem Sofa là trên ghế sofa. Es thay cho das Handy.
+    display_answer: "Điện thoại ở phòng khách, trên ghế sofa."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u05l5-fill-email-gruss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-personalpronomen-akk
+    prompt:
+      template: "{{b1}} Tom, wir haben eine neue Wohnung! Besuch {{b2}} (wir) bald! {{b3}} Grüße, Lan und Minh"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [lieber, hallo]
+        b2: [uns]
+        b3: [viele, liebe, herzliche, beste]
+    known_wrong:
+      - answer: wir
+        feedback_vi: wir là chủ ngữ. Làm tân ngữ của besuchen thì wir → uns.
+        error_tag: case_dat_akk
+      - answer: unser
+        feedback_vi: unser là "của chúng tôi" (đứng trước danh từ). Ở đây cần đại từ tân ngữ uns.
+        error_tag: pronoun_form
+      - answer: vielen
+        feedback_vi: Lời chào cuối thư là Viele Grüße (Grüße số nhiều, Nominativ).
+        error_tag: adj_ending
+    explanation:
+      vi: Tom là nam nên mở thư bằng Lieber Tom (hoặc Hallo Tom). besuchen cần tân ngữ Akkusativ - wir → uns. Cuối thư thân mật - Viele Grüße hoặc Liebe Grüße.
+    display_answer: Lieber Tom, wir haben eine neue Wohnung! Besuch uns bald! Viele Grüße, Lan und Minh
+
+  - key: de:exercise:a1u05l5-fill-im-einen-dem
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-dativ-artikel
+    prompt:
+      template: "Die Wohnung ist {{b1}} (in) Zentrum. Es gibt {{b2}} (ein) Balkon, und die Haltestelle ist direkt vor {{b3}} (das) Haus."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [im, in dem]
+        b2: [einen]
+        b3: [dem]
+    known_wrong:
+      - answer: in
+        feedback_vi: Zentrum cần mạo từ - in dem Zentrum, nói gọn là im Zentrum.
+        error_tag: article_missing
+      - answer: ein
+        feedback_vi: Sau es gibt là Akkusativ - der Balkon → einen Balkon.
+        error_tag: case_dat_akk
+      - answer: einem
+        feedback_vi: Sau es gibt không dùng Dativ - einen Balkon (Akkusativ).
+        error_tag: case_dat_akk
+      - answer: das
+        feedback_vi: vor chỉ vị trí (Wo?) nên dùng Dativ - das Haus → dem Haus.
+        error_tag: case_dat_akk
+      - answer: den
+        feedback_vi: das Haus ở Dativ là dem, không phải den.
+        error_tag: case_dat_akk
+    explanation:
+      vi: Vị trí (Wo?) dùng Dativ - in dem → im Zentrum, vor dem Haus. Còn sau es gibt là Akkusativ - einen Balkon.
+    display_answer: Die Wohnung ist im Zentrum. Es gibt einen Balkon, und die Haltestelle ist direkt vor dem Haus.
+
+  - key: de:exercise:a1u05l5-tr-zwei-zimmer-balkon
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-zimmer
+    prompt:
+      source_text: Căn hộ của chúng tôi có hai phòng và một ban công.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Unsere Wohnung hat zwei Zimmer und einen Balkon.
+        - Unsere Wohnung hat 2 Zimmer und einen Balkon.
+        - Unsere Wohnung hat einen Balkon und zwei Zimmer.
+        - In unserer Wohnung gibt es zwei Zimmer und einen Balkon.
+    known_wrong:
+      - answer: Unsere Wohnung hat zwei Zimmer und ein Balkon.
+        feedback_vi: Balkon là tân ngữ giống đực của hat nên ein → einen.
+        error_tag: case_dat_akk
+      - answer: Unser Wohnung hat zwei Zimmer und einen Balkon.
+        feedback_vi: die Wohnung giống cái nên là unsere.
+        error_tag: possessive_ending
+      - answer: Unsere Wohnung hat zwei Zimmern und einen Balkon.
+        feedback_vi: Số nhiều của das Zimmer là die Zimmer (không thêm đuôi); -n chỉ thêm ở Dativ số nhiều.
+        error_tag: plural_form
+    explanation:
+      vi: Căn hộ (chủ ngữ) sở hữu phòng nên dùng hat. unsere vì Wohnung giống cái; zwei Zimmer (số nhiều không đổi); einen Balkon (Akkusativ giống đực).
+    display_answer: Unsere Wohnung hat zwei Zimmer und einen Balkon.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u05l5-wb-neben-dem-haus
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u05-g-es-gibt
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Cạnh ngôi nhà có một công viên.\""
+      tokens:
+        - { id: n-es, text: es }
+        - { id: n-park, text: Park }
+        - { id: n-dem, text: dem }
+        - { id: n-neben, text: Neben }
+        - { id: n-einen, text: einen }
+        - { id: n-gibt, text: gibt }
+        - { id: n-haus, text: Haus }
+        - { id: n-den, text: den }
+        - { id: n-ein, text: ein }
+    answer:
+      orders:
+        - [n-neben, n-dem, n-haus, n-gibt, n-es, n-einen, n-park]
+        - [n-es, n-gibt, n-neben, n-dem, n-haus, n-einen, n-park]
+        - [n-es, n-gibt, n-einen, n-park, n-neben, n-dem, n-haus]
+    explanation:
+      vi: Hai quy tắc trong một câu - neben (vị trí) + Dativ → neben dem Haus; es gibt + Akkusativ → einen Park. Khi neben dem Haus đứng đầu, gibt vẫn ở vị trí 2 và es theo sau.
+    display_answer: Neben dem Haus gibt es einen Park.
+
+  - key: de:exercise:a1u05l5-wb-ist-die-apotheke
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-wo-praep-dativ
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi tiếng Đức: \"Hiệu thuốc có ở cạnh ngân hàng không?\""
+      tokens:
+        - { id: i-neben, text: neben }
+        - { id: i-bank, text: Bank }
+        - { id: i-ist, text: Ist }
+        - { id: i-der, text: der }
+        - { id: i-apo, text: Apotheke }
+        - { id: i-die, text: die }
+        - { id: i-dem, text: dem }
+        - { id: i-gibt, text: Gibt }
+    answer:
+      orders:
+        - [i-ist, i-die, i-apo, i-neben, i-der, i-bank]
+    explanation:
+      vi: Câu hỏi Có/Không đưa động từ ist lên đầu. die Apotheke là chủ ngữ (Nominativ); neben chỉ vị trí nên die Bank → der Bank (Dativ).
+    display_answer: Ist die Apotheke neben der Bank?
+
+  - key: de:exercise:a1u05l5-tr-post-nicht-weit
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u05-g-imperativ
+    prompt:
+      source_text: Die Post ist nicht weit. Gehen Sie hier geradeaus und dann links.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bưu điện không xa. Ông cứ đi thẳng ở đây rồi rẽ trái.
+        - Bưu điện không xa. Bà cứ đi thẳng ở đây rồi rẽ trái.
+        - Bưu điện không xa. Anh đi thẳng ở đây rồi rẽ trái.
+        - Bưu điện không xa. Chị đi thẳng ở đây rồi rẽ trái.
+        - Bưu điện không xa. Đi thẳng ở đây rồi rẽ trái.
+        - Bưu điện không xa. Đi thẳng rồi rẽ trái.
+        - Bưu điện không xa. Đi thẳng rồi sau đó rẽ trái.
+        - Bưu điện không xa. Hãy đi thẳng rồi rẽ trái.
+        - Bưu điện không xa đâu. Đi thẳng rồi rẽ trái.
+        - Bưu điện không xa. Ông cứ đi thẳng rồi rẽ trái.
+        - Bưu điện không xa. Đi thẳng đường này rồi rẽ trái.
+        - Bưu điện không xa. Đi thẳng ở đây và sau đó rẽ trái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bưu điện không xa. Đi thẳng rồi rẽ phải.
+        feedback_vi: links là "trái"; "phải" là rechts.
+        error_tag: direction
+      - answer: Bưu điện rất xa. Đi thẳng rồi rẽ trái.
+        feedback_vi: nicht weit là "không xa".
+        error_tag: negation_missed
+    explanation:
+      vi: nicht weit là "không xa"; Gehen Sie… là lời chỉ đường lịch sự (ông/bà/anh/chị cứ đi…); geradeaus là thẳng, dann links là rồi rẽ trái.
+    display_answer: Bưu điện không xa. Ông cứ đi thẳng ở đây rồi rẽ trái.

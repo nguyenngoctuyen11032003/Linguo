@@ -1,0 +1,412 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u05-wo-ist-die-bank
+order_index: 3
+level: a1
+title:
+  vi: Ngân hàng ở đâu? – Dativ chỉ nơi chốn (Wo ist die Bank?)
+objectives:
+  - vi: Hỏi Wo ist …? và nói vị trí của các địa điểm trong thành phố, đồ vật trong phòng.
+  - vi: Dùng in, an, auf, neben, hinter, vor, über, unter, zwischen + Dativ cho vị trí đứng yên.
+  - vi: Đổi mạo từ sang Dativ - dem, der, dem, den …-n; einem, einer; rút gọn im, am.
+estimated_minutes: 15
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:a1u05-moebel]
+items:
+  - item: de:item:a1u05-g-dativ-artikel
+  - item: de:item:a1u05-g-wo-praep-dativ
+  - item: de:item:a1u05-bank
+  - item: de:item:a1u05-post
+  - item: de:item:a1u05-bahnhof
+  - item: de:item:a1u05-apotheke
+  - item: de:item:a1u05-park
+  - item: de:item:a1u05-zentrum
+  - item: de:item:a1u05-kirche
+  - item: de:item:a1u05-haltestelle
+  - item: de:item:a1u05-neben
+  - item: de:item:a1u05-zwischen
+  - item: de:item:a1u05-marktplatz
+  - item: de:item:a1u05-spielplatz
+  - item: de:item:a1u05-geschaeft
+  - item: de:item:a1u05-schwimmbad
+  - item: de:item:a1u05-hochhaus
+  - item: de:item:a1u05-g-es-gibt
+    role: reuse
+  - item: de:item:a1u05-g-pronomen-genus
+    role: reuse
+  - item: de:item:a1u05-sofa
+    role: reuse
+  - item: de:item:a1u05-lampe
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hỏi và nói được vị trí trong thành phố và trong nhà: Wo ist die Bank? – Sie ist neben der Post. Die Lampe ist über dem Tisch."
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ cần thêm "cạnh", "trước", "trong" - danh từ không đổi. Tiếng Đức thì sau các giới từ chỉ vị trí (trả lời câu hỏi Wo? - ở đâu), mạo từ phải đổi sang cách thứ ba, gọi là Dativ.
+  - type: explain
+    text:
+      vi: Bảng Dativ - der → dem, das → dem, die → der, số nhiều die → den và danh từ số nhiều thêm -n (trừ khi đã tận cùng bằng -n hoặc -s). Mạo từ không xác định - einem (der/das), einer (die); kein, mein… cũng theo đuôi này - keinem, meiner.
+  - type: explain
+    text:
+      vi: Hai dạng rút gọn rất hay dùng - in dem → im (im Zentrum, im Park), an dem → am (am Bahnhof, am Marktplatz). Với giống cái thì không rút gọn - in der Stadt, an der Haltestelle.
+  - type: explain
+    text:
+      vi: Chín giới từ vị trí - in (bên trong), an (sát cạnh, chạm vào mép hoặc mặt đứng), auf (trên bề mặt), neben (bên cạnh), hinter (phía sau), vor (phía trước), über (phía trên, không chạm), unter (phía dưới), zwischen (ở giữa). Hình dung - cái cốc auf dem Tisch, bức tranh an der Wand, quần áo im Schrank.
+  - type: explain
+    text:
+      vi: die Bank (ngân hàng) có số nhiều die Banken; die Bank (ghế băng trong công viên) lại có số nhiều die Bänke. Ngữ cảnh sẽ cho bạn biết đang nói nghĩa nào.
+  - type: deep_explain
+    text:
+      vi: Chín giới từ này là "giới từ hai cách" - khi chỉ vị trí đứng yên (Wo? - ở đâu) chúng đi với Dativ; khi chỉ hướng chuyển động tới đâu (Wohin? - đi đâu) chúng đi với Akkusativ. Phần Wohin bạn sẽ học ở A2, nên ở bài này mọi câu đều trả lời Wo? và luôn dùng Dativ. Mẹo nhớ đuôi - dem/einem cho der và das (hai giống này giống nhau ở Dativ), der/einer cho die, den + -n cho số nhiều. Chú ý chữ der có hai vai - Nominativ giống đực (der Bahnhof) và Dativ giống cái (neben der Post); hãy luôn nghĩ đến giống của danh từ đi sau.
+  - type: example
+    target: Wo ist die Bank? – Sie ist neben der Post.
+    target_lang: de
+    translation:
+      vi: Ngân hàng ở đâu? – Nó ở cạnh bưu điện.
+    note:
+      vi: die Post giống cái nên sau neben thành der Post. Sie thay cho die Bank (giống cái).
+  - type: example
+    target: Die Haltestelle ist vor dem Bahnhof.
+    target_lang: de
+    translation:
+      vi: Trạm xe buýt ở trước nhà ga.
+    note:
+      vi: der Bahnhof giống đực nên sau vor thành dem Bahnhof.
+  - type: example
+    target: Wir wohnen im Zentrum, zwischen dem Park und der Kirche.
+    target_lang: de
+    translation:
+      vi: Chúng tôi sống ở trung tâm, giữa công viên và nhà thờ.
+    note:
+      vi: im = in dem (das Zentrum). Sau zwischen, cả hai danh từ đều ở Dativ - dem Park (der), der Kirche (die).
+  - type: example
+    target: Die Lampe ist über dem Tisch, und die Katze ist unter dem Tisch.
+    target_lang: de
+    translation:
+      vi: Cái đèn ở phía trên cái bàn, còn con mèo ở dưới gầm bàn.
+    note:
+      vi: der Tisch → dem Tisch; über là phía trên không chạm, unter là phía dưới.
+  - type: example
+    target: Gibt es hier ein Schwimmbad? – Ja, am Marktplatz, hinter den Hochhäusern.
+    target_lang: de
+    translation:
+      vi: Ở đây có bể bơi không? – Có, ở quảng trường chợ, phía sau mấy toà nhà cao tầng.
+    note:
+      vi: am = an dem (der Marktplatz). Số nhiều die Hochhäuser → den Hochhäusern (thêm -n).
+  - type: common_mistake
+    wrong: Die Apotheke ist neben der Bahnhof.
+    right: Die Apotheke ist neben dem Bahnhof.
+    target_lang: de
+    note:
+      vi: der Bahnhof giống đực nên Dativ là dem. der chỉ đúng khi danh từ là giống cái (neben der Post).
+  - type: common_mistake
+    wrong: Das Buch ist in dem Tisch.
+    right: Das Buch ist auf dem Tisch.
+    target_lang: de
+    note:
+      vi: Nằm trên bề mặt là auf; in là bên trong (in dem Schrank = im Schrank), an là sát cạnh (an der Wand).
+  - type: common_mistake
+    wrong: Wir wohnen zwischen dem Park und die Kirche.
+    right: Wir wohnen zwischen dem Park und der Kirche.
+    target_lang: de
+    note:
+      vi: Sau zwischen, cả hai danh từ đều phải ở Dativ - die Kirche → der Kirche.
+  - type: common_mistake
+    wrong: Der Spielplatz ist hinter den Hochhäuser.
+    right: Der Spielplatz ist hinter den Hochhäusern.
+    target_lang: de
+    note:
+      vi: Ở Dativ số nhiều, danh từ thêm -n - den Hochhäusern, den Kindern.
+  - type: summary
+    points:
+      - vi: Wo? (vị trí đứng yên) + in, an, auf, neben, hinter, vor, über, unter, zwischen → Dativ.
+      - vi: der → dem, das → dem, die → der, số nhiều → den + danh từ thêm -n.
+      - vi: ein → einem (der/das), eine → einer (die); kein/mein theo cùng đuôi.
+      - vi: in dem = im, an dem = am; giống cái không rút gọn (in der, an der).
+      - vi: an = sát cạnh / mặt đứng, auf = trên bề mặt, in = bên trong.
+      - vi: Địa điểm - die Bank, die Post, der Bahnhof, die Apotheke, der Park, das Zentrum, die Kirche, die Haltestelle, der Marktplatz.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u05l3-mcq-neben-dem
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-g-dativ-artikel
+    prompt:
+      stem: "Chọn từ đúng: Die Apotheke ist neben ___ Bahnhof."
+      stem_lang: vi
+      options:
+        - { id: r5c, text: dem, lang: de }
+        - { id: n2w, text: der, lang: de }
+        - { id: e9j, text: den, lang: de }
+        - { id: z4p, text: das, lang: de }
+    answer:
+      correct_option_id: r5c
+    explanation:
+      vi: neben chỉ vị trí (Wo?) nên đi với Dativ; der Bahnhof giống đực nên thành dem Bahnhof. der là Dativ của giống cái, den là Akkusativ giống đực.
+    display_answer: dem
+
+  - key: de:exercise:a1u05l3-mcq-auf-dem-sofa
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-g-wo-praep-dativ
+    prompt:
+      stem: "Chọn câu đúng cho nghĩa: \"Con mèo ở trên ghế sofa.\""
+      stem_lang: vi
+      options:
+        - { id: s7d, text: Die Katze ist auf dem Sofa., lang: de }
+        - { id: b3q, text: Die Katze ist auf das Sofa., lang: de }
+        - { id: m6x, text: Die Katze ist auf der Sofa., lang: de }
+        - { id: g1t, text: Die Katze ist unter dem Sofa., lang: de }
+    answer:
+      correct_option_id: s7d
+    explanation:
+      vi: Con mèo nằm trên bề mặt ghế → auf; chỉ vị trí đứng yên nên dùng Dativ, das Sofa → dem Sofa. auf das là Akkusativ (chỉ hướng), der dành cho giống cái, còn unter là "ở dưới".
+    display_answer: Die Katze ist auf dem Sofa.
+
+  - key: de:exercise:a1u05l3-listen-post-zwischen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u05-zwischen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Entschuldigung, wo ist die Post? – Die Post ist zwischen der Bank und dem Supermarkt.
+      options:
+        - { id: p8m, text: "Bưu điện ở giữa ngân hàng và siêu thị.", lang: vi }
+        - { id: u4s, text: "Bưu điện ở cạnh ngân hàng, đối diện siêu thị.", lang: vi }
+        - { id: a2k, text: "Ngân hàng ở giữa bưu điện và siêu thị.", lang: vi }
+        - { id: d9h, text: "Bưu điện ở phía sau ngân hàng và siêu thị.", lang: vi }
+    answer:
+      correct_option_id: p8m
+    explanation:
+      vi: zwischen là "ở giữa"; der Bank và dem Supermarkt là hai mốc hai bên. Câu hỏi và câu trả lời đều nói về die Post (bưu điện).
+    display_answer: "Bưu điện ở giữa ngân hàng và siêu thị."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u05l3-fill-der-dem
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-dativ-artikel
+    prompt:
+      template: "Die Haltestelle ist vor {{b1}} (die) Kirche, das Café ist neben {{b2}} (das) Schwimmbad, und die Bank ist hinter {{b3}} (der) Bahnhof."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [der]
+        b2: [dem]
+        b3: [dem]
+    known_wrong:
+      - answer: die
+        feedback_vi: Sau vor (chỉ vị trí) cần Dativ - die Kirche → der Kirche.
+        error_tag: case_dat_akk
+      - answer: das
+        feedback_vi: das Schwimmbad sau neben ở Dativ là dem.
+        error_tag: case_dat_akk
+      - answer: den
+        feedback_vi: den là Akkusativ giống đực (hoặc Dativ số nhiều). der Bahnhof sau hinter ở Dativ là dem.
+        error_tag: case_dat_akk
+    explanation:
+      vi: Ba câu đều trả lời Wo? nên dùng Dativ - die → der (giống cái), das → dem, der → dem.
+    display_answer: Die Haltestelle ist vor der Kirche, das Café ist neben dem Schwimmbad, und die Bank ist hinter dem Bahnhof.
+
+  - key: de:exercise:a1u05l3-fill-im-am-einem
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-dativ-artikel
+    prompt:
+      template: "Ich bin {{b1}} (in) Park, Anna ist {{b2}} (an) Bahnhof, und die Bank ist neben {{b3}} (ein) Geschäft."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [im, in dem]
+        b2: [am, an dem]
+        b3: [einem]
+    known_wrong:
+      - answer: in
+        feedback_vi: Park cần mạo từ - in + dem Park, thường rút gọn thành im.
+        error_tag: article_missing
+      - answer: an
+        feedback_vi: Bahnhof cần mạo từ - an + dem Bahnhof, thường rút gọn thành am.
+        error_tag: article_missing
+      - answer: in den
+        feedback_vi: in den Park là chỉ hướng (Wohin?). Đang ở đâu (Wo?) thì dùng Dativ - im Park.
+        error_tag: case_dat_akk
+      - answer: an den
+        feedback_vi: Đang ở đâu (Wo?) thì dùng Dativ - am Bahnhof.
+        error_tag: case_dat_akk
+      - answer: ein
+        feedback_vi: das Geschäft sau neben ở Dativ là einem.
+        error_tag: case_dat_akk
+      - answer: einen
+        feedback_vi: einen là Akkusativ giống đực. das Geschäft ở Dativ là einem.
+        error_tag: case_dat_akk
+    explanation:
+      vi: der Park và der Bahnhof giống đực - in dem → im, an dem → am. das Geschäft giống trung - ein → einem ở Dativ.
+    display_answer: Ich bin im Park, Anna ist am Bahnhof, und die Bank ist neben einem Geschäft.
+
+  - key: de:exercise:a1u05l3-tr-neben-der-bank
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-apotheke
+    prompt:
+      source_text: Hiệu thuốc ở cạnh ngân hàng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Apotheke ist neben der Bank.
+        - Neben der Bank ist die Apotheke.
+        - Die Apotheke liegt neben der Bank.
+        - Neben der Bank liegt die Apotheke.
+        - Die Apotheke befindet sich neben der Bank.
+        - Neben der Bank ist eine Apotheke.
+    known_wrong:
+      - answer: Die Apotheke ist neben die Bank.
+        feedback_vi: Chỉ vị trí (Wo?) nên neben + Dativ - die Bank → der Bank.
+        error_tag: case_dat_akk
+      - answer: Die Apotheke ist neben dem Bank.
+        feedback_vi: die Bank giống cái nên Dativ là der Bank, không phải dem.
+        error_tag: gender
+      - answer: Die Apotheke ist neben Bank.
+        feedback_vi: Danh từ đếm được cần mạo từ - neben der Bank.
+        error_tag: article_missing
+    explanation:
+      vi: neben chỉ vị trí đứng yên nên đi với Dativ; die Bank giống cái → der Bank. Có thể đưa neben der Bank lên đầu, khi đó động từ vẫn ở vị trí 2.
+    display_answer: Die Apotheke ist neben der Bank.
+
+  - key: de:exercise:a1u05l3-tr-hochhaeusern
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-hochhaus
+    prompt:
+      source_text: Sân chơi ở giữa các toà nhà cao tầng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Spielplatz ist zwischen den Hochhäusern.
+        - Zwischen den Hochhäusern ist der Spielplatz.
+        - Der Spielplatz liegt zwischen den Hochhäusern.
+        - Zwischen den Hochhäusern liegt der Spielplatz.
+        - Zwischen den Hochhäusern ist ein Spielplatz.
+    known_wrong:
+      - answer: Der Spielplatz ist zwischen den Hochhäuser.
+        feedback_vi: Ở Dativ số nhiều, danh từ thêm -n - den Hochhäusern.
+        error_tag: plural_form
+      - answer: Der Spielplatz ist zwischen die Hochhäuser.
+        feedback_vi: Chỉ vị trí (Wo?) nên zwischen + Dativ - số nhiều die → den Hochhäusern.
+        error_tag: case_dat_akk
+      - answer: Der Spielplatz ist zwischen dem Hochhäusern.
+        feedback_vi: Dativ số nhiều dùng den, không phải dem.
+        error_tag: article
+    explanation:
+      vi: Các toà nhà cao tầng là số nhiều die Hochhäuser. Sau zwischen (vị trí) dùng Dativ - den, và danh từ số nhiều thêm -n - den Hochhäusern.
+    display_answer: Der Spielplatz ist zwischen den Hochhäusern.
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u05l3-wb-haltestelle-zwischen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u05-haltestelle
+    prompt:
+      instruction: "Sắp xếp thành câu tiếng Đức: \"Trạm xe buýt ở giữa nhà thờ và công viên.\""
+      tokens:
+        - { id: h-park, text: Park }
+        - { id: h-ist, text: ist }
+        - { id: h-den, text: den }
+        - { id: h-der, text: der }
+        - { id: h-hs, text: Haltestelle }
+        - { id: h-und, text: und }
+        - { id: h-zw, text: zwischen }
+        - { id: h-die, text: Die }
+        - { id: h-kirche, text: Kirche }
+        - { id: h-dem, text: dem }
+        - { id: h-das, text: das }
+    answer:
+      orders:
+        - [h-die, h-hs, h-ist, h-zw, h-der, h-kirche, h-und, h-dem, h-park]
+        - [h-die, h-hs, h-ist, h-zw, h-dem, h-park, h-und, h-der, h-kirche]
+        - [h-zw, h-der, h-kirche, h-und, h-dem, h-park, h-ist, h-die, h-hs]
+        - [h-zw, h-dem, h-park, h-und, h-der, h-kirche, h-ist, h-die, h-hs]
+    explanation:
+      vi: zwischen chỉ vị trí nên cả hai danh từ ở Dativ - die Kirche → der Kirche, der Park → dem Park. Nếu đưa cụm zwischen… lên đầu, động từ ist vẫn ở vị trí 2.
+    display_answer: Die Haltestelle ist zwischen der Kirche und dem Park.
+
+  - key: de:exercise:a1u05l3-mcq-bank-neben-post
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-bank
+    prompt:
+      stem: "Một người lạ hỏi bạn: \"Entschuldigung, wo ist hier eine Bank?\" Ngân hàng ở ngay cạnh bưu điện. Bạn trả lời thế nào?"
+      stem_lang: vi
+      options:
+        - { id: c8n, text: Die Bank ist neben der Post., lang: de }
+        - { id: t3f, text: Die Bank ist neben die Post., lang: de }
+        - { id: k5y, text: Die Bank ist neben dem Post., lang: de }
+        - { id: o7r, text: Die Bank ist neben Post., lang: de }
+    answer:
+      correct_option_id: c8n
+    explanation:
+      vi: Hỏi Wo? nên neben + Dativ; die Post giống cái → der Post. neben die Post là Akkusativ, dem chỉ dùng cho der/das, còn thiếu mạo từ là sai.
+    display_answer: Die Bank ist neben der Post.
+
+  - key: de:exercise:a1u05l3-tr-apotheke-zentrum
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:a1u05-zentrum
+    prompt:
+      source_text: Gibt es hier eine Apotheke? – Ja, im Zentrum, hinter der Kirche.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở đây có hiệu thuốc không? – Có, ở trung tâm, phía sau nhà thờ.
+        - Ở đây có hiệu thuốc không? – Có, ở trung tâm, sau nhà thờ.
+        - Ở đây có hiệu thuốc nào không? – Có, ở trung tâm, phía sau nhà thờ.
+        - Ở đây có nhà thuốc không? – Có, ở trung tâm, phía sau nhà thờ.
+        - Ở đây có hiệu thuốc không? – Có, ở trung tâm thành phố, phía sau nhà thờ.
+        - Quanh đây có hiệu thuốc không? – Có, ở trung tâm, phía sau nhà thờ.
+        - Ở đây có hiệu thuốc không? – Có, trong trung tâm, đằng sau nhà thờ.
+        - Ở đây có hiệu thuốc không? – Có, ở trung tâm, đằng sau nhà thờ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở đây có hiệu thuốc không? – Có, ở trung tâm, phía trước nhà thờ.
+        feedback_vi: hinter là "phía sau"; "phía trước" là vor.
+        error_tag: preposition
+      - answer: Ở đây có hiệu thuốc không? – Có, ở trung tâm, cạnh nhà thờ.
+        feedback_vi: hinter là "phía sau"; "cạnh" là neben.
+        error_tag: preposition
+    explanation:
+      vi: Gibt es hier…? là "Ở đây có… không?"; im Zentrum là "ở trung tâm"; hinter der Kirche là "phía sau nhà thờ".
+    display_answer: Ở đây có hiệu thuốc không? – Có, ở trung tâm, phía sau nhà thờ.

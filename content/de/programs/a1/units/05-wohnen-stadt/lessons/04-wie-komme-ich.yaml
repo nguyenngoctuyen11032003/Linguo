@@ -1,0 +1,400 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:a1u05-wie-komme-ich
+order_index: 4
+level: a1
+title:
+  vi: Hỏi đường – câu mệnh lệnh (Wie komme ich zum …? Gehen Sie geradeaus!)
+objectives:
+  - vi: Hỏi đường lịch sự - Entschuldigung, wie komme ich zum Bahnhof? Können Sie mir helfen?
+  - vi: Hiểu và chỉ đường đơn giản - geradeaus, links, rechts, an der Ampel, an der Kreuzung, an der Ecke.
+  - vi: Dùng câu mệnh lệnh với Sie, du, ihr (Gehen Sie! Geh! Geht!) và thêm bitte cho lịch sự.
+estimated_minutes: 15
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:a1u05-wo-ist-die-bank]
+items:
+  - item: de:item:a1u05-g-imperativ
+  - item: de:item:a1u05-g-hoefliche-bitte
+  - item: de:item:a1u05-gehen
+  - item: de:item:a1u05-geradeaus
+  - item: de:item:a1u05-links
+  - item: de:item:a1u05-rechts
+  - item: de:item:a1u05-ampel
+  - item: de:item:a1u05-kreuzung
+  - item: de:item:a1u05-ecke
+  - item: de:item:a1u05-weit
+  - item: de:item:a1u05-nah
+  - item: de:item:a1u05-zu-fuss
+  - item: de:item:a1u05-suchen
+  - item: de:item:a1u05-weg
+  - item: de:item:a1u05-naehe
+  - item: de:item:a1u05-stadtplan
+  - item: de:item:a1u05-ungefaehr
+  - item: de:item:a1u05-abbiegen
+  - item: de:item:a1u05-g-wo-praep-dativ
+    role: reuse
+  - item: de:item:a1u05-g-dativ-artikel
+    role: reuse
+  - item: de:item:a1u05-bahnhof
+    role: reuse
+  - item: de:item:a1u05-apotheke
+    role: reuse
+  - item: de:item:a1u05-post
+    role: reuse
+  - item: de:item:a1u04-g-modalverben
+    role: reuse
+  - item: de:item:a1u03-g-vokalwechsel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hỏi được đường (Entschuldigung, wie komme ich zum Bahnhof?), hiểu câu trả lời và tự chỉ đường: Gehen Sie geradeaus und an der Ampel links."
+  - type: explain
+    text:
+      vi: Câu mệnh lệnh lịch sự với Sie - động từ nguyên thể đứng đầu, ngay sau là Sie - Gehen Sie geradeaus! Tiếng Việt nói "Đi thẳng!" không cần chủ ngữ, nhưng tiếng Đức bỏ Sie là sai ngữ pháp.
+  - type: explain
+    text:
+      vi: Với du - lấy dạng du ở hiện tại, bỏ đuôi -st và bỏ du - du gehst → Geh!, du nimmst → Nimm!, du liest → Lies!. Động từ đổi e → i/ie thì giữ nguyên âm đã đổi; còn a → ä thì bỏ dấu - du fährst → Fahr!, du schläfst → Schlaf!.
+  - type: explain
+    text:
+      vi: Với ihr - dùng đúng dạng ihr ở hiện tại, chỉ bỏ ihr - ihr geht → Geht!, ihr nehmt → Nehmt!. Động từ sein bất quy tắc - Sei ruhig! (du), Seid ruhig! (ihr), Seien Sie ruhig! (Sie).
+  - type: explain
+    text:
+      vi: Mệnh lệnh không có bitte nghe rất cộc. Thêm bitte ngay sau Sie/động từ hoặc ở cuối câu - Gehen Sie bitte geradeaus! Muốn nhờ người lạ, hỏi Können Sie mir helfen? (mir = "tôi"; học thuộc cả câu, Dativ của đại từ học ở A1U07).
+  - type: explain
+    text:
+      vi: Hỏi đường - Wie komme ich zum Bahnhof / zum Park? (zum = zu dem, cho der/das) và Wie komme ich zur Post / zur Apotheke? (zur = zu der, cho die). Ở bài này bạn học thuộc như cụm cố định; giới từ zu + Dativ sẽ học ở A1U07.
+  - type: explain
+    text:
+      vi: Chỉ đường thường dùng - geradeaus (thẳng), links/rechts (trái/phải), an der Ampel, an der Kreuzung, an der Ecke (đều là an + Dativ đã học), die erste/zweite Straße links (con đường thứ nhất/thứ hai bên trái). Rẽ là abbiegen - động từ tách nên ab đứng cuối - Biegen Sie links ab!
+  - type: deep_explain
+    text:
+      vi: Mệnh lệnh với du có thể thêm -e (Gehe!, Komme!) - dạng này cũ và trang trọng, hằng ngày người Đức nói Geh!, Komm!. Động từ có gốc tận cùng -t/-d giữ -e - Warte!, Finde!. Khi chỉ đường, người Đức cũng hay dùng câu kể ở hiện tại thay cho mệnh lệnh - Sie gehen geradeaus und dann links. - cách này cũng đúng và lịch sự. Động từ tách ở mệnh lệnh vẫn tách - Biegen Sie ab!, Ruf mich an!. Nghe chỉ đường, hãy để ý ba thứ - hướng (links/rechts/geradeaus), mốc (Ampel/Kreuzung/Ecke) và thứ tự (zuerst, dann).
+  - type: example
+    target: Entschuldigung, wie komme ich zum Bahnhof? – Gehen Sie hier geradeaus und dann an der Ampel links.
+    target_lang: de
+    translation:
+      vi: Xin lỗi, làm sao để đến nhà ga ạ? – Ông/bà cứ đi thẳng ở đây, rồi đến đèn giao thông thì rẽ trái.
+    note:
+      vi: Hỏi người lạ nên dùng Sie. an der Ampel là an + Dativ (die Ampel → der Ampel).
+  - type: example
+    target: Ist es weit? – Nein, das sind nur fünf Minuten zu Fuß.
+    target_lang: de
+    translation:
+      vi: Có xa không ạ? – Không, đi bộ chỉ năm phút thôi.
+    note:
+      vi: Người Đức nói "Das sind … Minuten" (số nhiều). zu Fuß là đi bộ.
+  - type: example
+    target: Lan, nimm bitte den Bus! Die Post ist zu weit.
+    target_lang: de
+    translation:
+      vi: Lan ơi, đi xe buýt đi! Bưu điện xa quá.
+    note:
+      vi: Nói với bạn (du) - du nimmst → Nimm! (giữ i). bitte làm câu mềm hơn.
+  - type: example
+    target: Kinder, geht bitte langsam und seid ruhig!
+    target_lang: de
+    translation:
+      vi: Các con ơi, đi chậm thôi và trật tự nào!
+    note:
+      vi: Nói với nhiều người thân quen (ihr) - Geht!, Seid! - không có ihr.
+  - type: example
+    target: Können Sie mir helfen? Ich suche die Apotheke. – Ja, gern. Biegen Sie an der Kreuzung rechts ab. Sie ist dann an der Ecke.
+    target_lang: de
+    translation:
+      vi: Ông/bà có thể giúp tôi không? Tôi đang tìm hiệu thuốc. – Vâng, sẵn lòng. Đến ngã tư thì ông/bà rẽ phải. Hiệu thuốc ở ngay góc phố.
+    note:
+      vi: Nhờ giúp lịch sự với Können Sie mir helfen?; abbiegen tách - Biegen Sie … ab.
+  - type: common_mistake
+    wrong: Gehen geradeaus!
+    right: Gehen Sie bitte geradeaus!
+    target_lang: de
+    note:
+      vi: Mệnh lệnh lịch sự bắt buộc có Sie ngay sau động từ; thêm bitte để không bị cộc.
+  - type: common_mistake
+    wrong: Fährst langsam!
+    right: Fahr langsam!
+    target_lang: de
+    note:
+      vi: Với du - bỏ đuôi -st và bỏ du; a → ä không giữ trong mệnh lệnh - Fahr!
+  - type: common_mistake
+    wrong: Nehm den Bus!
+    right: Nimm den Bus!
+    target_lang: de
+    note:
+      vi: nehmen đổi e → i ở du (du nimmst) nên mệnh lệnh giữ i - Nimm! (chú ý hai chữ m).
+  - type: common_mistake
+    wrong: Abbiegen Sie links!
+    right: Biegen Sie links ab!
+    target_lang: de
+    note:
+      vi: Động từ tách vẫn tách trong câu mệnh lệnh - biegen đứng đầu, ab đứng cuối.
+  - type: summary
+    points:
+      - vi: Sie - Gehen Sie! (không bỏ Sie); du - Geh!, Nimm!, Lies!, Fahr! (bỏ -st và du); ihr - Geht!, Nehmt!
+      - vi: sein - Sei! / Seid! / Seien Sie!
+      - vi: Lịch sự - thêm bitte; nhờ giúp - Können Sie mir helfen?
+      - vi: Hỏi đường - Wie komme ich zum Bahnhof / zur Post? (học như cụm).
+      - vi: Chỉ đường - geradeaus, links, rechts, an der Ampel / Kreuzung / Ecke, die erste Straße links, Biegen Sie … ab.
+      - vi: Khoảng cách - weit, nah, ganz in der Nähe, ungefähr fünf Minuten zu Fuß.
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:a1u05l4-listen-zweite-strasse
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u05-rechts
+    prompt:
+      audio_asset_id: null
+      fallback_text: Gehen Sie hier geradeaus und dann die zweite Straße rechts.
+      options:
+        - { id: v2n, text: "Đi thẳng rồi rẽ phải vào con đường thứ hai.", lang: vi }
+        - { id: j6c, text: "Đi thẳng rồi rẽ trái vào con đường thứ hai.", lang: vi }
+        - { id: q9k, text: "Rẽ phải ngay vào con đường thứ nhất.", lang: vi }
+        - { id: x1s, text: "Đi thẳng đến đèn giao thông rồi rẽ phải.", lang: vi }
+    answer:
+      correct_option_id: v2n
+    explanation:
+      vi: geradeaus là đi thẳng, die zweite Straße là con đường thứ hai, rechts là bên phải. Câu không nhắc tới đèn giao thông (Ampel).
+    display_answer: "Đi thẳng rồi rẽ phải vào con đường thứ hai."
+
+  - key: de:exercise:a1u05l4-listen-ampel-ecke
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u05-ampel
+    prompt:
+      audio_asset_id: null
+      fallback_text: An der Ampel biegen Sie links ab. Die Apotheke ist dann an der Ecke.
+      options:
+        - { id: f4m, text: "Đến đèn giao thông thì rẽ trái; hiệu thuốc ở ngay góc phố.", lang: vi }
+        - { id: r7b, text: "Đến ngã tư thì rẽ trái; hiệu thuốc ở ngay góc phố.", lang: vi }
+        - { id: h2d, text: "Đến đèn giao thông thì rẽ phải; hiệu thuốc ở ngay góc phố.", lang: vi }
+        - { id: a8w, text: "Đến đèn giao thông thì rẽ trái; hiệu thuốc ở cạnh ngân hàng.", lang: vi }
+    answer:
+      correct_option_id: f4m
+    explanation:
+      vi: an der Ampel là ở đèn giao thông (ngã tư là Kreuzung); links abbiegen là rẽ trái; an der Ecke là ở góc phố.
+    display_answer: "Đến đèn giao thông thì rẽ trái; hiệu thuốc ở ngay góc phố."
+
+  - key: de:exercise:a1u05l4-listen-nah-zu-fuss
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1u05-zu-fuss
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ist die Post weit? – Nein, sie ist ganz nah. Das sind nur drei Minuten zu Fuß.
+      options:
+        - { id: n5e, text: "Bưu điện rất gần, đi bộ chỉ mất ba phút.", lang: vi }
+        - { id: s3g, text: "Bưu điện khá xa, đi xe buýt mất ba phút.", lang: vi }
+        - { id: y7p, text: "Bưu điện gần, đi bộ mất khoảng mười ba phút.", lang: vi }
+        - { id: l1z, text: "Bưu điện không xa, đi xe đạp mất ba phút.", lang: vi }
+    answer:
+      correct_option_id: n5e
+    explanation:
+      vi: ganz nah là rất gần; drei Minuten zu Fuß là đi bộ ba phút (dreizehn mới là mười ba).
+    display_answer: "Bưu điện rất gần, đi bộ chỉ mất ba phút."
+
+  - key: de:exercise:a1u05l4-mcq-biegen-sie-ab
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1u05-g-imperativ
+    prompt:
+      stem: "Nói lịch sự với người lạ: \"Đến ngã tư thì ông/bà rẽ trái.\" Câu mệnh lệnh nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: d6u, text: Biegen Sie an der Kreuzung links ab., lang: de }
+        - { id: k2h, text: Biegen an der Kreuzung links ab., lang: de }
+        - { id: e5x, text: Abbiegen Sie an der Kreuzung links., lang: de }
+        - { id: w8j, text: Biegt Sie an der Kreuzung links ab., lang: de }
+    answer:
+      correct_option_id: d6u
+    explanation:
+      vi: Mệnh lệnh với Sie - nguyên thể + Sie đứng đầu; abbiegen là động từ tách nên ab đứng cuối câu. Câu thiếu Sie, câu không tách ab và câu dùng biegt (dạng ihr) đều sai.
+    display_answer: Biegen Sie an der Kreuzung links ab.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:a1u05l4-fill-nimm-fahr-sei
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-imperativ
+    prompt:
+      template: "Minh, {{b1}} (nehmen) bitte den Stadtplan! Lan, {{b2}} (fahren) bitte langsam! Tom, {{b3}} (sein) bitte ruhig!"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [nimm]
+        b2: [fahr, fahre]
+        b3: [sei]
+    known_wrong:
+      - answer: nehm
+        feedback_vi: nehmen đổi e → i ở du (du nimmst) nên mệnh lệnh là Nimm!
+        error_tag: imperative_form
+      - answer: nimmst
+        feedback_vi: Mệnh lệnh với du bỏ đuôi -st - Nimm!
+        error_tag: imperative_form
+      - answer: fähr
+        feedback_vi: a → ä không giữ trong mệnh lệnh - Fahr!
+        error_tag: imperative_form
+      - answer: fährst
+        feedback_vi: Mệnh lệnh với du bỏ đuôi -st và bỏ biến âm - Fahr!
+        error_tag: imperative_form
+      - answer: bist
+        feedback_vi: sein có mệnh lệnh riêng - Sei! (du).
+        error_tag: imperative_form
+    explanation:
+      vi: Ba câu nói với một người bạn (du). du nimmst → Nimm! (giữ i), du fährst → Fahr! (bỏ dấu ä), sein → Sei!
+    display_answer: Minh, nimm bitte den Stadtplan! Lan, fahr bitte langsam! Tom, sei bitte ruhig!
+
+  - key: de:exercise:a1u05l4-fill-gehen-sie-geht
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-gehen
+    prompt:
+      template: "Herr Weber, {{b1}} (gehen) Sie bitte hier links! Kinder, {{b2}} (gehen) bitte langsam!"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [gehen]
+        b2: [geht]
+    known_wrong:
+      - answer: gehst
+        feedback_vi: gehst là dạng du ở hiện tại. Với Sie dùng nguyên thể (Gehen Sie!), với ihr dùng Geht!
+        error_tag: imperative_form
+      - answer: geh
+        feedback_vi: Geh! chỉ dùng cho một người thân (du). Với Herr Weber dùng Gehen Sie!, với các cháu (ihr) dùng Geht!
+        error_tag: register_du_sie
+    explanation:
+      vi: Herr Weber là người lạ/lớn tuổi nên dùng Sie - Gehen Sie! Kinder là nhiều người thân quen (ihr) nên dùng Geht! (dạng ihr, bỏ ihr).
+    display_answer: Herr Weber, gehen Sie bitte hier links! Kinder, geht bitte langsam!
+
+  - key: de:exercise:a1u05l4-tr-zum-bahnhof
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-bahnhof
+    prompt:
+      source_text: Xin lỗi, làm sao để đến nhà ga ạ?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Entschuldigung, wie komme ich zum Bahnhof?
+        - Entschuldigen Sie, wie komme ich zum Bahnhof?
+        - Entschuldigung, wie komme ich bitte zum Bahnhof?
+        - Entschuldigung, wie kommt man zum Bahnhof?
+        - Entschuldigung, wie komme ich zum Bahnhof, bitte?
+    known_wrong:
+      - answer: Entschuldigung, wie komme ich zu Bahnhof?
+        feedback_vi: Cần mạo từ - zu dem Bahnhof, nói gọn là zum Bahnhof.
+        error_tag: article_missing
+      - answer: Entschuldigung, wie ich komme zum Bahnhof?
+        feedback_vi: Sau từ để hỏi wie, động từ đứng ở vị trí 2 - wie komme ich…
+        error_tag: verb_position
+      - answer: Entschuldigung, wie komme ich zur Bahnhof?
+        feedback_vi: der Bahnhof giống đực nên là zum (zu dem); zur chỉ dùng cho giống cái.
+        error_tag: article
+    explanation:
+      vi: Mẫu hỏi đường cố định - Wie komme ich zum …? zum = zu dem, dùng với danh từ giống đực/giống trung như der Bahnhof. Mở đầu lịch sự bằng Entschuldigung.
+    display_answer: Entschuldigung, wie komme ich zum Bahnhof?
+
+  # ---------------- application ----------------
+  - key: de:exercise:a1u05l4-wb-an-der-ampel
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-ampel
+    prompt:
+      instruction: "Sắp xếp thành câu chỉ đường lịch sự: \"Đến đèn giao thông thì ông/bà rẽ phải.\""
+      tokens:
+        - { id: a-an, text: an }
+        - { id: a-rechts, text: rechts }
+        - { id: a-sie, text: Sie }
+        - { id: a-der, text: der }
+        - { id: a-gehen, text: Gehen }
+        - { id: a-ampel, text: Ampel }
+        - { id: a-die, text: die }
+        - { id: a-gehst, text: gehst }
+    answer:
+      orders:
+        - [a-gehen, a-sie, a-an, a-der, a-ampel, a-rechts]
+        - [a-gehen, a-sie, a-rechts, a-an, a-der, a-ampel]
+        - [a-an, a-der, a-ampel, a-gehen, a-sie, a-rechts]
+    explanation:
+      vi: Mệnh lệnh lịch sự - Gehen Sie đứng đầu. Vị trí đứng yên an der Ampel dùng Dativ (die Ampel → der Ampel). Cũng có thể đưa an der Ampel lên đầu thành câu kể - An der Ampel gehen Sie rechts.
+    display_answer: Gehen Sie an der Ampel rechts.
+
+  - key: de:exercise:a1u05l4-mcq-geh-freund
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1u05-g-imperativ
+    prompt:
+      stem: "Bạn chỉ đường cho một người bạn thân (du): \"Cậu cứ đi thẳng, rồi đến ngã tư thì rẽ trái.\" Câu nào đúng và hợp ngữ cảnh?"
+      stem_lang: vi
+      options:
+        - { id: b4r, text: Geh geradeaus und dann an der Kreuzung links., lang: de }
+        - { id: o9t, text: Gehen Sie geradeaus und dann an der Kreuzung links., lang: de }
+        - { id: c1v, text: Gehst geradeaus und dann an der Kreuzung links., lang: de }
+        - { id: m3y, text: Geht geradeaus und dann an der Kreuzung links., lang: de }
+    answer:
+      correct_option_id: b4r
+    explanation:
+      vi: Một người bạn thân → du → Geh! (bỏ -st và du). Gehen Sie quá trang trọng với bạn thân, Gehst thiếu sự bỏ đuôi -st, còn Geht! là mệnh lệnh cho nhiều người (ihr).
+    display_answer: Geh geradeaus und dann an der Kreuzung links.
+
+  - key: de:exercise:a1u05l4-tr-helfen-apotheke
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u05-g-hoefliche-bitte
+    prompt:
+      source_text: (nói với người lạ) Ông có thể giúp tôi không? Tôi đang tìm hiệu thuốc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Können Sie mir helfen? Ich suche die Apotheke.
+        - Können Sie mir helfen? Ich suche eine Apotheke.
+        - Können Sie mir bitte helfen? Ich suche die Apotheke.
+        - Können Sie mir bitte helfen? Ich suche eine Apotheke.
+        - Entschuldigung, können Sie mir helfen? Ich suche eine Apotheke.
+        - Entschuldigung, können Sie mir helfen? Ich suche die Apotheke.
+    known_wrong:
+      - answer: Können Sie mich helfen? Ich suche die Apotheke.
+        feedback_vi: helfen đi với mir (Dativ), không phải mich - học thuộc cả câu Können Sie mir helfen?
+        error_tag: case_dat_akk
+      - answer: Kannst du mir helfen? Ich suche die Apotheke.
+        feedback_vi: Nói với người lạ thì dùng Sie - Können Sie …?
+        error_tag: register_du_sie
+      - answer: Können Sie mir helfen? Ich suche der Apotheke.
+        feedback_vi: die Apotheke là tân ngữ (Akkusativ) của suchen nên giữ die.
+        error_tag: case_dat_akk
+      - answer: Können Sie helfen mir? Ich suche die Apotheke.
+        feedback_vi: Động từ nguyên thể helfen đứng cuối câu - Können Sie mir helfen?
+        error_tag: verb_position
+    explanation:
+      vi: Nhờ người lạ - Können Sie mir helfen? (können ở vị trí đầu, helfen ở cuối). suchen + Akkusativ - die Apotheke giữ nguyên.
+    display_answer: Können Sie mir helfen? Ich suche die Apotheke.
