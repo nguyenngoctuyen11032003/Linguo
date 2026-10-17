@@ -62,7 +62,7 @@ body:
       vi: "Khi đọc một văn bản dài (Lesen Teil 2), trước hết đọc tiêu đề và các câu hỏi, rồi tìm đoạn chứa thông tin. Chú ý các từ làm đổi nghĩa: zwar … aber, nicht nur … sondern auch, weder … noch, và Konjunktiv II (Ich wünschte … = thực tế không như vậy)."
   - type: deep_explain
     text:
-      vi: "Hệ thống học nghề kép ở Đức (duale Ausbildung) kết hợp làm việc trong doanh nghiệp với học lý thuyết ở Berufsschule, thường kéo dài 2–3,5 năm và người học nhận một khoản trợ cấp học nghề hằng tháng. Nhiều nghề như y tá, thợ điện hay nhân viên văn phòng được học theo cách này, còn bác sĩ hay giáo viên thì phải học đại học. Ở Việt Nam, nhiều gia đình coi việc vào đại học là con đường chính, nên khi trình bày bạn có thể so sánh hai quan niệm này. Trong bài thi, đừng học thuộc lòng cả bài (giám khảo nhận ra ngay); hãy học thuộc các cụm mở bài, chuyển ý và kết bài, phần nội dung thì nói tự nhiên. Ngoài ra, giám khảo và bạn thi cặp sẽ hỏi bạn một câu sau bài trình bày (Teil 3), nên hãy chuẩn bị vài câu như: Das ist eine gute Frage. Ich glaube, … Lưu ý: cấu trúc đề thi có thể thay đổi, hãy kiểm tra thông tin mới nhất của Goethe-Institut."
+      vi: "Hệ thống học nghề kép ở Đức (duale Ausbildung) kết hợp làm việc trong doanh nghiệp với học lý thuyết ở Berufsschule, thường kéo dài 2–3,5 năm và người học nhận một khoản trợ cấp học nghề hằng tháng. Nhiều nghề như thợ điện, thợ cơ khí ô tô hay nhân viên văn phòng được học theo cách này, còn bác sĩ hay giáo viên thì phải học đại học. Ở Việt Nam, nhiều gia đình coi việc vào đại học là con đường chính, nên khi trình bày bạn có thể so sánh hai quan niệm này. Trong bài thi, đừng học thuộc lòng cả bài (giám khảo thường nhận ra); hãy học thuộc các cụm mở bài, chuyển ý và kết bài, phần nội dung thì nói tự nhiên. Ngoài ra, sau bài trình bày, bạn thi cặp và giám khảo thường phản hồi và hỏi bạn một câu (Teil 3), nên hãy chuẩn bị vài câu như: Das ist eine gute Frage. Ich glaube, … Lưu ý: cấu trúc đề thi có thể thay đổi, hãy kiểm tra thông tin mới nhất của Goethe-Institut."
   - type: example
     target: Ich möchte heute über das Thema Ausbildung oder Studium sprechen. Zuerst erzähle ich von meinen eigenen Erfahrungen.
     target_lang: de
@@ -132,7 +132,7 @@ exercises:
     difficulty: 2
     item: de:item:a2u01-ausbildung
     prompt:
-      stem: "Eine duale Ausbildung dauert meistens drei Jahre. Man arbeitet in einem Betrieb und lernt an ein oder zwei Tagen pro Woche in der Berufsschule. So verdient man nicht nur Geld, sondern sammelt auch früh Berufserfahrung. Ein Studium an einer Hochschule ist dagegen eher theoretisch. Studenten bekommen zwar kein Gehalt, aber manche Berufe kann man nur mit einem Studium lernen, zum Beispiel Arzt. — Richtig oder falsch? Bei einer dualen Ausbildung lernt man nur in der Berufsschule."
+      stem: "Eine duale Ausbildung dauert meistens drei Jahre. Man arbeitet in einem Betrieb und lernt an ein oder zwei Tagen pro Woche in der Berufsschule. So verdient man nicht nur Geld, sondern sammelt auch früh Berufserfahrung. Ein Studium an einer Hochschule ist dagegen eher theoretisch. Studenten bekommen zwar kein Gehalt, aber für manche Berufe, zum Beispiel Arzt oder Lehrer, braucht man ein Studium. — Richtig oder falsch? Bei einer dualen Ausbildung lernt man nur in der Berufsschule."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -150,7 +150,7 @@ exercises:
     difficulty: 2
     item: de:item:b1u04-g-zweiteilige-konnektoren
     prompt:
-      stem: "Eine duale Ausbildung dauert meistens drei Jahre. Man arbeitet in einem Betrieb und lernt an ein oder zwei Tagen pro Woche in der Berufsschule. So verdient man nicht nur Geld, sondern sammelt auch früh Berufserfahrung. Ein Studium an einer Hochschule ist dagegen eher theoretisch. Studenten bekommen zwar kein Gehalt, aber manche Berufe kann man nur mit einem Studium lernen, zum Beispiel Arzt. — Richtig oder falsch? Wer studiert, bekommt dafür kein Gehalt."
+      stem: "Eine duale Ausbildung dauert meistens drei Jahre. Man arbeitet in einem Betrieb und lernt an ein oder zwei Tagen pro Woche in der Berufsschule. So verdient man nicht nur Geld, sondern sammelt auch früh Berufserfahrung. Ein Studium an einer Hochschule ist dagegen eher theoretisch. Studenten bekommen zwar kein Gehalt, aber für manche Berufe, zum Beispiel Arzt oder Lehrer, braucht man ein Studium. — Richtig oder falsch? Wer studiert, bekommt dafür kein Gehalt."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -322,7 +322,7 @@ exercises:
         feedback_vi: Sau Ich wünschte, là câu chính – hätte đứng ở vị trí 2, ngay sau ich.
         error_tag: verb_position
       - answer: Ich wünsche, ich hätte mehr Zeit zum Lernen.
-        feedback_vi: Để ước điều không có thật, dùng Konjunktiv II của wünschen – Ich wünschte, …
+        feedback_vi: Đề yêu cầu Ich wünschte (Konjunktiv II của wünschen) – Ich wünschte, ich hätte … (cũng gặp Ich wünsche mir, ich hätte …, nhưng cần có mir).
         error_tag: konjunktiv_form
     explanation:
       vi: "Ich wünschte, + câu chính có Konjunktiv II ở vị trí 2: ich hätte mehr Zeit. \"để học\" = zum Lernen (hoặc um zu lernen)."
@@ -387,7 +387,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u04-g-brauchen-zu
     prompt:
-      source_text: Für eine Ausbildung braucht man nicht unbedingt ein Abitur zu haben.
+      source_text: Für eine Ausbildung braucht man nicht unbedingt das Abitur zu haben.
       source_lang: de
       direction: target_to_vi
     answer:

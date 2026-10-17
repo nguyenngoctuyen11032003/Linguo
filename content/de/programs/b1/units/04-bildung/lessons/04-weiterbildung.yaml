@@ -48,7 +48,7 @@ body:
       vi: "Sau bài này, bạn nghe hiểu được buổi tư vấn chọn khoá học và hỏi được điều kiện tham gia, ví dụ: \"Was brauche ich für die Teilnahme? – Sie brauchen nur das Formular auszufüllen. Das ist alles, was Sie brauchen.\""
   - type: explain
     text:
-      vi: "Sau alles, nichts, etwas, vieles và sau so sánh nhất dùng như danh từ (das Beste, das Einzige), đại từ quan hệ là was chứ không phải das: Das ist alles, was ich weiß. Tiếng Việt nói \"tất cả những gì\", tiếng Đức nói alles, was. Động từ trong mệnh đề quan hệ vẫn đứng cuối."
+      vi: "Sau alles, nichts, vieles và sau tính từ giống trung dùng như danh từ (nhất là so sánh nhất: das Beste; cả das Einzige), đại từ quan hệ là was chứ không phải das: Das ist alles, was ich weiß. Sau etwas, was hay dùng hơn (das cũng gặp). Tiếng Việt nói \"tất cả những gì\", tiếng Đức nói alles, was; động từ trong mệnh đề quan hệ vẫn đứng cuối."
   - type: explain
     text:
       vi: "Sau tên địa danh hoặc danh từ chỉ nơi chốn, bạn có thể dùng wo thay cho giới từ + đại từ quan hệ: die Stadt, wo ich studiere = die Stadt, in der ich studiere. Cách này giống \"nơi mà\" trong tiếng Việt."
@@ -60,7 +60,7 @@ body:
       vi: "nur brauchen + zu + nguyên thể = chỉ cần làm gì: Sie brauchen nur anzurufen. zu đứng ngay trước nguyên thể ở cuối câu; với động từ tách, zu chen vào giữa: anzurufen, mitzubringen, auszufüllen."
   - type: explain
     text:
-      vi: "Không nhầm với nicht dürfen (không được phép): Sie brauchen nicht zu kommen (không cần đến) khác hẳn Sie dürfen nicht kommen (không được đến). Khi muốn nói \"phải\", dùng müssen; brauchen … zu chỉ đi với nicht, kein, nichts, nur."
+      vi: "Không nhầm với nicht dürfen (không được phép): Sie brauchen nicht zu kommen (không cần đến) khác hẳn Sie dürfen nicht kommen (không được đến). Khi muốn nói \"phải\", dùng müssen; brauchen … zu chỉ dùng khi có từ phủ định hoặc giới hạn (nicht, kein, nichts, nur, erst …)."
   - type: deep_explain
     text:
       vi: "was còn dùng để chỉ cả một câu đứng trước: Ich habe die Prüfung bestanden, was mich sehr freut (điều đó làm tôi rất vui). Sau etwas, cả was lẫn das đều gặp (etwas, was/das mir gefällt); sau alles và nichts, chỉ dùng was. wo sau danh từ chỉ thời gian (in der Zeit, wo …) hay gặp trong văn nói, nhưng khi viết nên dùng in der hoặc als. Khi nói nhanh, người Đức thường bỏ zu sau brauchen (Du brauchst nicht kommen) – bạn nên hiểu được, nhưng khi viết, nhất là trong kỳ thi, hãy giữ zu. Về học tiếp ở Đức: Volkshochschule (VHS) có ở hầu hết các thành phố, mở khoá ngoại ngữ, tin học, nấu ăn… với giá phải chăng; nhiều khoá Weiterbildung được tổ chức berufsbegleitend (buổi tối, cuối tuần). Ở nhiều bang, người lao động có quyền nghỉ vài ngày mỗi năm để học (Bildungsurlaub); quy định khác nhau theo bang và có thể thay đổi."
@@ -136,7 +136,7 @@ body:
     right: Du musst morgen kommen.
     target_lang: de
     note:
-      vi: "brauchen … zu chỉ dùng với nicht, kein, nichts, nur. Để nói \"phải\", dùng müssen."
+      vi: "brauchen … zu chỉ dùng khi có từ phủ định hoặc giới hạn (nicht, kein, nichts, nur …). Để nói \"phải\", dùng müssen."
   - type: summary
     points:
       - vi: "alles / nichts / etwas / das Beste, was …: Das ist alles, was ich weiß."
@@ -336,8 +336,9 @@ exercises:
       orders:
         - [f-sie, f-brauchen, f-nur, f-das, f-formular, f-aus]
         - [f-das, f-formular, f-brauchen, f-sie, f-nur, f-aus]
+        - [f-sie, f-brauchen, f-das, f-formular, f-nur, f-aus]
     explanation:
-      vi: "brauchen ở vị trí 2, nur trước tân ngữ das Formular, nguyên thể có zu (auszufüllen – zu chen giữa động từ tách) đứng cuối câu. Cũng có thể đưa das Formular lên đầu câu để nhấn mạnh: Das Formular brauchen Sie nur auszufüllen."
+      vi: "brauchen ở vị trí 2, nur trước phần được giới hạn (nur das Formular; hoặc das Formular nur auszufüllen), nguyên thể có zu (auszufüllen – zu chen giữa động từ tách) đứng cuối câu. Cũng có thể đưa das Formular lên đầu câu để nhấn mạnh: Das Formular brauchen Sie nur auszufüllen."
     display_answer: Sie brauchen nur das Formular auszufüllen.
 
   - key: de:exercise:b1u04l4-tr-alles-was
@@ -356,6 +357,8 @@ exercises:
         - Das ist alles, was ich über den Kurs weiß.
         - Das ist alles, was ich zu diesem Kurs weiß.
         - Das ist alles, was ich über diesen Lehrgang weiß.
+        - Das ist alles, was ich über den Lehrgang weiß.
+        - Das ist alles, was ich zu dem Kurs weiß.
     known_wrong:
       - answer: Das ist alles, das ich über diesen Kurs weiß.
         feedback_vi: Sau alles dùng was, không dùng das.

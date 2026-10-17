@@ -49,7 +49,7 @@ body:
       vi: "Với phần lớn động từ khác, bạn dùng würde (chia theo ngôi) ở vị trí 2 và nguyên thể ở cuối câu, giống khung câu của Perfekt: Ich würde gern Medizin studieren. Bạn đã gặp mẫu này ở A2: An deiner Stelle würde ich …, Würden Sie bitte …?"
   - type: explain
     text:
-      vi: "Một số động từ mạnh có dạng Konjunktiv II riêng, đi từ dạng Präteritum, thêm umlaut nếu được và thêm -e: kam → käme, ging → ginge, gab → gäbe, wusste → wüsste; brauchen → bräuchte. Ở bài này bạn chỉ cần nhận ra chúng khi đọc; khi nói, würde kommen, würde gehen là đủ. Riêng es gäbe và ich wüsste rất hay gặp cả khi nói."
+      vi: "Một số động từ (chủ yếu là động từ mạnh) có dạng Konjunktiv II riêng, đi từ dạng Präteritum, thêm umlaut nếu được và thêm -e nếu chưa có: kam → käme, ging → ginge, gab → gäbe; wusste → wüsste, brauchte → bräuchte (văn nói). Ở bài này bạn chỉ cần nhận ra chúng khi đọc; khi nói, würde kommen, würde gehen là đủ. Riêng es gäbe và ich wüsste rất hay gặp cả khi nói."
   - type: explain
     text:
       vi: "Để ước điều trái với thực tế, bạn nói Wenn ich doch … hätte! hoặc Wenn ich nur … wäre!: wenn đẩy động từ xuống cuối câu, doch/nur biến câu thành lời ước. Cách thứ hai là Ich wünschte, + câu chính có Konjunktiv II ở vị trí 2: Ich wünschte, ich hätte mehr Zeit. Cả hai cách đều ngầm nói thực tế ngược lại: tôi không có thời gian."
@@ -58,7 +58,7 @@ body:
       vi: "Đừng dùng Präteritum để ước: Wenn ich Zeit hatte nghĩa là \"(những) khi tôi có thời gian\" trong quá khứ. Dấu umlaut tạo ra khác biệt: hatte – hätte, war – wäre, wusste – wüsste."
   - type: deep_explain
     text:
-      vi: "Hệ thống trường học Đức: trẻ học tiểu học (Grundschule) thường 4 năm (ở Berlin và Brandenburg là 6 năm), rồi học tiếp Gymnasium, Realschule, Hauptschule hoặc Gesamtschule; tên và hình thức các loại trường khác nhau theo bang. Thang điểm phổ thông ở Đức từ 1 (sehr gut) đến 6 (ungenügend); Áo dùng 1–5, còn Thụy Sĩ ngược lại, 6 là điểm tốt nhất – rất dễ nhầm khi đọc học bạ. Học sinh có điểm kém ở nhiều môn có thể bị sitzenbleiben (lưu ban). Về ngữ pháp, câu ước còn có dạng bỏ wenn, đưa động từ lên đầu: Hätte ich doch mehr Zeit! Wäre ich doch schon fertig! – nghĩa giống Wenn ich doch … hätte!. Chia đủ các ngôi: du wärst, ihr wärt; du hättest, ihr hättet; du würdest, ihr würdet. Các dạng riêng như käme, ginge nghe khá trang trọng; trong văn nói người ta thường dùng würde + nguyên thể, trừ với sein, haben và động từ khiếm khuyết."
+      vi: "Hệ thống trường học Đức: trẻ học tiểu học (Grundschule) thường 4 năm (ở Berlin và Brandenburg là 6 năm), rồi học tiếp Gymnasium, Realschule, Hauptschule hoặc Gesamtschule; tên và hình thức các loại trường khác nhau theo bang. Thang điểm phổ thông ở Đức từ 1 (sehr gut) đến 6 (ungenügend); Áo dùng 1–5, còn Thụy Sĩ ngược lại, 6 là điểm tốt nhất – rất dễ nhầm khi đọc học bạ. Học sinh có điểm kém ở nhiều môn có thể phải sitzenbleiben (lưu ban; quy định cụ thể khác nhau theo bang). Về ngữ pháp, câu ước còn có dạng bỏ wenn, đưa động từ lên đầu: Hätte ich doch mehr Zeit! Wäre ich doch schon fertig! – nghĩa giống Wenn ich doch … hätte!. Chia đủ các ngôi: du wärst, ihr wärt; du hättest, ihr hättet; du würdest, ihr würdet. Các dạng riêng như käme, ginge nghe khá trang trọng; trong văn nói người ta thường dùng würde + nguyên thể, trừ với sein, haben, động từ khiếm khuyết và vài dạng rất thông dụng (gäbe, wüsste)."
   - type: example
     target: Wenn ich doch nur bessere Noten hätte!
     target_lang: de
@@ -295,6 +295,9 @@ exercises:
         - Wenn ich doch bessere Noten bekommen würde!
         - Wenn ich nur bessere Noten bekommen würde!
         - Wenn ich doch nur bessere Noten bekommen würde!
+        - Wenn ich doch bessere Noten bekäme!
+        - Wenn ich nur bessere Noten bekäme!
+        - Wenn ich doch nur bessere Noten bekäme!
     known_wrong:
       - answer: Wenn ich doch bessere Noten hatte!
         feedback_vi: hatte là Präteritum. Lời ước ở hiện tại cần hätte (có umlaut).
@@ -354,6 +357,10 @@ exercises:
         - Ich würde an deiner Stelle mit der Lehrerin reden.
         - Wenn ich du wäre, würde ich mit der Lehrerin sprechen.
         - Wenn ich du wäre, würde ich mit der Lehrerin reden.
+        - An deiner Stelle würde ich mit deiner Lehrerin sprechen.
+        - Ich würde an deiner Stelle mit deiner Lehrerin sprechen.
+        - An deiner Stelle würde ich mit deiner Lehrerin reden.
+        - Wenn ich du wäre, würde ich mit deiner Lehrerin sprechen.
     known_wrong:
       - answer: An deiner Stelle ich würde mit der Lehrerin sprechen.
         feedback_vi: An deiner Stelle chiếm vị trí 1 nên würde phải đứng ngay sau – An deiner Stelle würde ich …

@@ -50,7 +50,7 @@ body:
       vi: "weder A noch B = không A cũng không B: Ich spreche weder Französisch noch Spanisch. weder … noch đã mang nghĩa phủ định, nên không thêm nicht hay kein. Tiếng Việt có thể nói \"không … cũng không …\", nhưng tiếng Đức chỉ có một lần phủ định."
   - type: explain
     text:
-      vi: "entweder A oder B = hoặc A hoặc B (chỉ chọn một). zwar … aber = tuy … nhưng: Die Methode ist zwar langsam, aber sie funktioniert. Trong vế đầu, zwar thường đứng sau động từ; aber và oder đứng đầu vế sau mà không làm đổi trật tự từ."
+      vi: "entweder A oder B = hoặc A hoặc B (chỉ chọn một). zwar … aber = tuy … nhưng: Die Methode ist zwar langsam, aber sie funktioniert. Trong vế đầu, zwar thường đứng sau động từ; aber và oder thường đứng đầu vế sau mà không làm đổi trật tự từ (aber cũng có thể đứng sau động từ: …, funktioniert aber)."
   - type: explain
     text:
       vi: "je … desto (hoặc umso) = càng … càng. Vế je là câu phụ: je + so sánh hơn, động từ ở cuối. Vế sau: desto + so sánh hơn, rồi động từ, rồi chủ ngữ – Je mehr ich lese, desto größer wird mein Wortschatz."
@@ -235,9 +235,6 @@ exercises:
       - answer: aber
         feedback_vi: Sau nicht nur dùng sondern auch, không dùng aber.
         error_tag: connector
-      - answer: nicht
-        feedback_vi: noch đi thành cặp với weder – weder Zeit noch Motivation.
-        error_tag: connector
       - answer: keine
         feedback_vi: noch đi thành cặp với weder; weder … noch đã là phủ định, không cần keine.
         error_tag: connector
@@ -263,6 +260,9 @@ exercises:
         - Ich lerne nicht nur Grammatik, sondern ich lerne auch Vokabeln.
         - Ich lerne nicht nur Grammatik, sondern auch neue Wörter.
         - Ich lerne nicht nur Grammatik, sondern auch Wörter.
+        - Ich lerne nicht nur die Grammatik, sondern auch Vokabeln.
+        - Ich lerne nicht nur die Grammatik, sondern auch den Wortschatz.
+        - Ich lerne nicht nur Grammatik, sondern auch den Wortschatz.
     known_wrong:
       - answer: Ich lerne nicht nur Grammatik, aber auch Vokabeln.
         feedback_vi: Cặp cố định là nicht nur … sondern auch, không dùng aber.

@@ -71,7 +71,7 @@ body:
     target: Wenn ich die Zulassung bekomme, ziehe ich nach Leipzig. – Wenn ich die Zulassung hätte, würde ich nach Leipzig ziehen.
     target_lang: de
     translation:
-      vi: Nếu tôi được nhận vào học, tôi sẽ chuyển đến Leipzig. – Nếu tôi đã được nhận (nhưng thực tế chưa), tôi sẽ chuyển đến Leipzig.
+      vi: Nếu tôi được nhận vào học, tôi sẽ chuyển đến Leipzig. – Giá như tôi có giấy báo nhận rồi (nhưng thực tế chưa có), tôi sẽ chuyển đến Leipzig.
     note:
       vi: "Câu đầu: điều kiện thật, có thể xảy ra (hiện tại). Câu sau: Konjunktiv II – thực tế tôi chưa có giấy báo nhận."
   - type: example

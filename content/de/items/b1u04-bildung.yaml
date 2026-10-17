@@ -197,9 +197,9 @@ items:
         - target: Mein Bruder ist in der achten Klasse sitzengeblieben.
           translation:
             vi: Anh trai tôi bị lưu ban năm lớp tám.
-        - target: Wenn er nicht mehr lernt, bleibt er sitzen.
+        - target: Wenn er nicht fleißiger lernt, bleibt er sitzen.
           translation:
-            vi: Nếu nó không học thêm thì sẽ bị ở lại lớp.
+            vi: Nếu nó không chăm học hơn thì sẽ bị ở lại lớp.
       confusion:
         vi: "Theo nghĩa \"lưu ban\" (khẩu ngữ), từ này được viết liền hoặc viết rời (sitzen bleiben); nghĩa đen \"cứ ngồi yên\" thì viết rời. Perfekt dùng sein như bleiben: ist sitzengeblieben."
 
@@ -328,7 +328,7 @@ items:
           translation:
             vi: Để làm bài kiểm tra, tôi còn phải học nhiều từ vựng.
       confusion:
-        vi: "Động từ đi kèm là schreiben: eine Klassenarbeit schreiben (không dùng machen). Ở đại học, bài thi viết gọi là die Klausur."
+        vi: "Động từ đi kèm thường là schreiben: eine Klassenarbeit schreiben. Ở đại học, bài thi viết gọi là die Klausur."
 
   - key: de:item:b1u04-halbjahr
     type: vocab
@@ -651,7 +651,7 @@ items:
           translation:
             vi: Đồ ăn ở nhà ăn sinh viên rẻ, nhưng không phải lúc nào cũng ngon.
       confusion:
-        vi: "Số nhiều: die Mensen. Nhà ăn ở công ty gọi là die Kantine."
+        vi: "Số nhiều: die Mensen (văn nói cũng gặp die Mensas). Nhà ăn ở công ty gọi là die Kantine."
 
   - key: de:item:b1u04-klausur
     type: vocab
@@ -735,7 +735,7 @@ items:
           translation:
             vi: Để được nhận vào học, ông/bà cần một chứng chỉ ngoại ngữ.
       confusion:
-        vi: "Động từ: zulassen (chấp nhận, cho phép). Zulassung còn dùng cho giấy đăng ký xe (die Zulassung des Autos)."
+        vi: "Động từ: zulassen (chấp nhận, cho phép). Zulassung còn dùng cho việc đăng ký xe (die Zulassung des Autos)."
 
   - key: de:item:b1u04-wohnheim
     type: vocab
@@ -823,7 +823,7 @@ items:
           translation:
             vi: Học đại học tuy vất vả nhưng vui.
       confusion:
-        vi: "Không nói weder … noch … nicht (phủ định kép như tiếng Việt \"không … cũng không … không\"). entweder có thể đứng ở vị trí 0 (Entweder ich lerne heute, oder …) hoặc vị trí 1 (Entweder lerne ich heute, oder …), cả hai đều đúng."
+        vi: "Không thêm nicht/kein vào câu có weder … noch (sai: Ich habe weder Zeit noch kein Geld) – tiếng Đức chuẩn không dùng phủ định kép. entweder có thể đứng ở vị trí 0 (Entweder ich lerne heute, oder …) hoặc vị trí 1 (Entweder lerne ich heute, oder …), cả hai đều đúng."
 
   - key: de:item:b1u04-g-je-desto
     type: grammar_point
@@ -931,7 +931,7 @@ items:
           translation:
             vi: Ôn tập đều đặn rất tốt cho trí nhớ.
       confusion:
-        vi: "Gedächtnis là khả năng ghi nhớ; một kỷ niệm cụ thể là die Erinnerung. Gedächtnis là giống trung, dù nhiều danh từ đuôi -nis khác là giống cái (die Erlaubnis)."
+        vi: "Gedächtnis là khả năng ghi nhớ; một kỷ niệm cụ thể là die Erinnerung. Phần lớn danh từ đuôi -nis là giống trung (das Gedächtnis, das Zeugnis), nhưng một số là giống cái (die Erlaubnis)."
 
   - key: de:item:b1u04-auswendig
     type: vocab
@@ -1197,7 +1197,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Sau alles, nichts, vieles, etwas và sau so sánh nhất dùng như danh từ (das Beste, das Einzige), đại từ quan hệ là was: Das ist alles, was ich weiß. Sau địa danh hoặc danh từ chỉ nơi chốn, bạn có thể dùng wo thay cho giới từ + đại từ quan hệ: die Stadt, wo ich studiere (= in der ich studiere). Động từ trong mệnh đề quan hệ vẫn đứng cuối, và có dấu phẩy trước was/wo."
+        vi: "Sau alles, nichts, vieles, etwas và sau tính từ giống trung dùng như danh từ (nhất là so sánh nhất: das Beste; cả das Einzige), đại từ quan hệ là was: Das ist alles, was ich weiß. Sau địa danh hoặc danh từ chỉ nơi chốn, bạn có thể dùng wo thay cho giới từ + đại từ quan hệ: die Stadt, wo ich studiere (= in der ich studiere). Động từ trong mệnh đề quan hệ vẫn đứng cuối, và có dấu phẩy trước was/wo."
       examples:
         - target: Das ist alles, was ich über den Kurs weiß.
           translation:
@@ -1233,7 +1233,7 @@ items:
           translation:
             vi: Anh/chị không cần mang theo gì cho khoá học.
       confusion:
-        vi: "Khi nói, người Đức hay bỏ zu (Du brauchst nicht kommen); bạn hiểu được, nhưng khi viết nên giữ zu. brauchen + zu chỉ dùng với nicht, kein, nur, erst; để nói \"phải\" thì dùng müssen (Du musst kommen), không nói Du brauchst zu kommen."
+        vi: "Khi nói, người Đức hay bỏ zu (Du brauchst nicht kommen); bạn hiểu được, nhưng khi viết nên giữ zu. brauchen + zu chỉ dùng khi có từ phủ định hoặc giới hạn (nicht, kein, nichts, nur, erst …); để nói \"phải\" thì dùng müssen (Du musst kommen), không nói Du brauchst zu kommen."
 
   - key: de:item:b1u04-weiterbildung
     type: vocab
@@ -1437,14 +1437,14 @@ items:
       meaning:
         vi: đào tạo lại để chuyển nghề
       examples:
-        - target: Nach seinem Unfall hat er eine Umschulung zum Bürokaufmann gemacht.
+        - target: Nach seinem Unfall hat er eine Umschulung zum Erzieher gemacht.
           translation:
-            vi: Sau tai nạn, anh ấy học chuyển nghề thành nhân viên văn phòng.
+            vi: Sau tai nạn, anh ấy học chuyển nghề để trở thành giáo viên mầm non.
         - target: Das Jobcenter kann unter bestimmten Bedingungen eine Umschulung bezahlen.
           translation:
             vi: Trong một số điều kiện, Jobcenter có thể trả tiền cho khoá học chuyển nghề.
       confusion:
-        vi: "Umschulung là học một nghề mới; Weiterbildung là học thêm trong nghề cũ. Chuyển sang nghề gì: eine Umschulung zur Erzieherin / zum Koch."
+        vi: "Umschulung là học một nghề mới; Weiterbildung là học thêm trong nghề cũ. Chuyển sang nghề gì: eine Umschulung zur Köchin / zum Elektriker."
 
   - key: de:item:b1u04-niveau
     type: vocab
