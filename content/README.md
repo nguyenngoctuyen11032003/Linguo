@@ -206,7 +206,7 @@ de/wordlist/<tên-của-bạn>.txt                                   # từ cho 
 - **Không** có luật mạo từ riêng: `die Tisch` cho `der Tisch` là sai thuần tuý, nên tác giả phải tự thêm `known_wrong` cho lỗi dễ gặp.
 - Phép gấp mất thông tin (`Masse` ≙ `Maße`, `Busse` ≙ `Buße`): bài dạy sự khác biệt này phải dùng `mcq`/`word_bank`, không dùng bài gõ. Công cụ kiểm tra cảnh báo khi hai phương án `mcq` chỉ khác nhau ở `ä/ö/ü/ß`.
 - `known_wrong` không được trùng (sau phép gấp) với đáp án đúng: `fuer` cho `für` sẽ chấm đúng nên bị báo lỗi.
-- **Đề thi (`exams/de`)**: câu `short_text` **không** được gấp (`exam_normalize_text` chỉ NFC, chữ thường, bỏ dấu câu cuối). Đáp án có `ä/ö/ü/ß` phải liệt kê cả dạng `ae/oe/ue/ss` (`[für, fuer]`), hoặc dùng câu `mcq` (khuyến nghị cho Goethe). Công cụ kiểm tra báo lỗi nếu thiếu dạng gõ tắt.
+- **Đề thi (`exams/de`)**: câu `short_text` của đề tiếng Đức cũng được gấp `ä/ö/ü/ß` ↔ `ae/oe/ue/ss` như bài tập (`exam_normalize_text(p_text, p_lang)`, `normalizeExamText(s, language)`; chạy cùng quy tắc ở SQL và TS). Ghi đáp án ở **dạng chuẩn** có `ä/ö/ü/ß`; liệt kê cả `für` và `fuer` trong cùng danh sách là lỗi (trùng sau chuẩn hoá). Dạng bỏ dấu chấm (`fur`) vẫn sai. Câu `mcq` vẫn là lựa chọn đơn giản nhất cho phần Lesen/Hören.
 
 **`known_wrong` điển hình**: `article` (der/die/das sai), `case_dat_akk`, `verb_position`, `adj_ending`, `plural_form`, `capitalization`, `aux_verb` (haben/sein), `word_order`, `gender`. Tag chỉ chữ thường và gạch dưới (`snake_case`); mỗi mục kèm `feedback_vi` ngắn nói rõ lỗi.
 
@@ -228,7 +228,7 @@ Mỗi dòng kết quả là `<file>: <đường dẫn trong file>: <thông báo>
 | Lỗi | Chính tả: từ không có trong từ điển, không có trong danh sách cho phép; danh từ viết thường (`tisch`); dạng gõ tắt `ae/oe/ue/ss` thay `ä/ö/ü/ß` (`fuer`, `Strassenbahn`) |
 | Lỗi | Hình dạng item: danh từ `vocab` phải là `der/die/das Danh-từ, <số nhiều>` hoặc `(Sg.)`/`(Pl.)`; động từ bắt đầu bằng nguyên thể |
 | Lỗi | Trùng lemma: hai item `vocab`/`phrase` cùng lemma và cùng mạo từ ở bất kỳ file `de` nào (hai agent không được tạo cùng một từ với hai khoá) |
-| Lỗi | `known_wrong` gấp thành đáp án đúng; đề `short_text` thiếu dạng `ae/oe/ue/ss` |
+| Lỗi | `known_wrong` gấp thành đáp án đúng; đề `short_text` liệt kê hai đáp án trùng sau phép gấp (`für` và `fuer`) |
 | Cảnh báo | Mạo từ không thể đi với danh từ đã có trong `lexicon` ở mọi cách (`die Tisch`, `eine Kind`); cùng lemma khác mạo từ (`der/die Leiter`, kiểm tra có chủ ý); từ chức năng viết hoa giữa câu (`Heute`); câu đầy đủ mở đầu bằng chữ thường; hai phương án `mcq` chỉ khác `ä/ö/ü/ß`; `typo_tolerance` bị bỏ qua |
 
 Không kiểm tra chính tả: văn bản tiếng Việt, `common_mistake.wrong`, `known_wrong` (cố ý sai), ví dụ của ngôn ngữ khác, phương án `mcq`/`listen` không bị kiểm tra luật mạo từ (mạo từ sai là phương án nhiễu hợp lệ).
