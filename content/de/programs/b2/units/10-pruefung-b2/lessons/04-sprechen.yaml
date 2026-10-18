@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u10-sprechen
+order_index: 4
+level: b2
+title:
+  vi: Nói – thuyết trình và thảo luận B2 (Gespräche lenken)
+objectives:
+  - vi: Trình bày một chủ đề theo khung mở đầu – nội dung chính – kết luận với Redemittel thuyết trình, rồi đưa nhận xét và câu hỏi cho phần trình bày của bạn thi.
+  - vi: Trong thảo luận, đồng ý, phản bác, câu giờ và ngắt lời một cách lịch sự.
+  - vi: Điều phối lượt lời – nối tiếp ý, mời người khác nói, quay lại một điểm, tóm tắt – và giữ thời gian, không lạc đề.
+estimated_minutes: 22
+skills: [speaking, listening]
+prerequisites: [de:lesson:b2u10-schreiben]
+items:
+  - item: de:item:b2u10-g-moderation-redemittel
+  - item: de:item:b2u10-moderation
+  - item: de:item:b2u10-moderieren
+  - item: de:item:b2u10-redezeit
+  - item: de:item:b2u10-stichwort
+  - item: de:item:b2u10-notiz
+  - item: de:item:b2u10-spontan
+  - item: de:item:b2u10-rueckmeldung
+  - item: de:item:b2u10-anknuepfen
+  - item: de:item:b2u10-redebeitrag
+  - item: de:item:b2u10-wortmeldung
+  - item: de:item:b2u10-zeitrahmen
+  - item: de:item:b2u10-pruefer
+  - item: de:item:b2u10-abschweifen
+  - item: de:item:b2u10-handout
+  - item: de:item:b2u10-aufgreifen
+  - item: de:item:b2u03-g-vortrag-redemittel
+    role: reuse
+  - item: de:item:b2u05-g-diskussion-redemittel
+    role: reuse
+  - item: de:item:b1u10-g-gespraechsstrategien
+    role: reuse
+  - item: de:item:b2u09-g-einander
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, trong một cuộc thảo luận bạn không chỉ nói ý mình mà còn dẫn dắt được: \"Darf ich direkt daran anknüpfen?\", \"Was meinen Sie dazu?\", \"Ich fasse kurz zusammen: …\""
+  - type: explain
+    text:
+      vi: "Bài thuyết trình B2 có khung rõ ràng và bạn nói khung đó ra: mở đầu (In meinem Vortrag geht es um …; Zunächst … , im Anschluss daran …), nội dung chính (kinh nghiệm, ví dụ, ưu nhược điểm, so sánh với Việt Nam), kết luận (Abschließend lässt sich sagen, dass …). Chuẩn bị bằng Stichworte, đừng viết cả câu rồi đọc thuộc."
+  - type: explain
+    text:
+      vi: "Thảo luận có bốn \"nước đi\" cơ bản: đồng ý (Da stimme ich Ihnen zu), phản bác lịch sự (Das mag sein, aber …; Da muss ich Ihnen widersprechen), câu giờ (Das ist eine interessante Frage. Lassen Sie mich kurz überlegen.) và ngắt lời lịch sự (Entschuldigung, wenn ich Sie unterbreche, aber …). Phản bác mà không có câu đệm nghe gay gắt hơn nhiều so với trong tiếng Việt."
+  - type: explain
+    text:
+      vi: "Điều phối lượt lời: nối tiếp (Darf ich direkt daran anknüpfen?), mời người khác (Was meinen Sie dazu?), quay lại một điểm (Um noch einmal auf … zurückzukommen: …) và tóm tắt (Ich fasse kurz zusammen: …). Những câu này cho thấy bạn đang nghe và giúp cuộc thảo luận không lạc đề."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), phần nói B2 thi theo cặp gồm hai phần: mỗi người trình bày một chủ đề (chọn từ các đề cho sẵn) rồi phản hồi và đặt câu hỏi cho phần trình bày của người kia; sau đó hai người cùng thảo luận một vấn đề. Thời lượng, thời gian chuẩn bị và cách chấm có thể thay đổi; hãy xem tài liệu chính thức mới nhất."
+  - type: deep_explain
+    text:
+      vi: "Quản lý thời gian (gợi ý của Linguo): trong lúc chuẩn bị, chỉ ghi Stichworte cho từng phần của bài trình bày; chia trước một ý cho mở đầu, hai hoặc ba ý cho nội dung chính, một câu kết. Nếu thấy mình đang abschweifen, hãy tự kéo về: Aber zurück zu meinem Thema … Khi giám khảo hoặc bạn thi hỏi điều bạn chưa chuẩn bị, trả lời spontan nhưng có khung: câu giờ ngắn → ý kiến → một lý do → một ví dụ. Trong thảo luận, đừng độc thoại: sau hai hay ba câu, hãy trao lời (Was meinen Sie dazu?) hoặc nối tiếp ý người kia (Darf ich direkt daran anknüpfen?). Chọn du hay Sie với bạn thi rồi giữ nhất quán; với giám khảo dùng Sie. Cuối cùng, một câu tóm tắt (Ich fasse kurz zusammen: Wir sind uns einig, dass …, aber …) là cách kết thúc thảo luận gọn gàng."
+  - type: example
+    target: In meinem Vortrag geht es um das Thema Homeoffice. Zunächst berichte ich von meinen eigenen Erfahrungen, im Anschluss daran vergleiche ich die Situation in Deutschland und in Vietnam.
+    target_lang: de
+    translation:
+      vi: Bài thuyết trình của tôi nói về chủ đề làm việc tại nhà. Trước hết tôi kể về kinh nghiệm của bản thân, sau đó tôi so sánh tình hình ở Đức và ở Việt Nam.
+    note:
+      vi: "Mở đầu bài trình bày bằng Redemittel của B2U03: nêu chủ đề và cấu trúc (Zunächst …, im Anschluss daran …)."
+  - type: example
+    target: Darf ich direkt daran anknüpfen? Auch in meiner Firma arbeiten viele von zu Hause aus.
+    target_lang: de
+    translation:
+      vi: Tôi xin nói tiếp ngay ý đó được không? Ở công ty tôi cũng có nhiều người làm việc tại nhà.
+    note:
+      vi: "Nối tiếp ý người vừa nói; daran = an das, điều người kia vừa nói."
+  - type: example
+    target: Das mag sein, aber ich gebe zu bedenken, dass nicht jeder zu Hause einen ruhigen Arbeitsplatz hat. Was meinen Sie dazu?
+    target_lang: de
+    translation:
+      vi: Có thể là vậy, nhưng tôi xin lưu ý rằng không phải ai ở nhà cũng có chỗ làm việc yên tĩnh. Anh/chị nghĩ sao về điều này?
+    note:
+      vi: "Phản bác lịch sự (B2U05) rồi trao lời cho người kia bằng Was meinen Sie dazu? – xưng Sie."
+  - type: example
+    target: "Um noch einmal auf die Kosten zurückzukommen: Wer bezahlt eigentlich die Ausstattung im Homeoffice?"
+    target_lang: de
+    translation:
+      vi: "Để quay lại vấn đề chi phí: rốt cuộc ai trả tiền trang bị cho chỗ làm việc tại nhà?"
+    note:
+      vi: "Quay lại một điểm đã nói trước đó; zurückzukommen: zu chen giữa tiền tố tách và gốc động từ."
+  - type: example
+    target: "Ich fasse kurz zusammen: Wir sind uns einig, dass Homeoffice Zeit spart. Unterschiedlicher Meinung sind wir bei der Frage, wer die Kosten trägt."
+    target_lang: de
+    translation:
+      vi: "Tôi xin tóm tắt ngắn: chúng ta nhất trí rằng làm việc tại nhà tiết kiệm thời gian. Chúng ta có ý kiến khác nhau ở câu hỏi ai chịu chi phí."
+    note:
+      vi: "Kết thúc thảo luận bằng một câu tóm tắt: điểm đồng ý và điểm còn khác nhau."
+  - type: example
+    target: Vielen Dank für deinen Vortrag! Besonders interessant fand ich deine Erfahrungen im Verein. Darf ich dazu eine Frage stellen?
+    target_lang: de
+    translation:
+      vi: Cảm ơn bài thuyết trình của bạn! Mình thấy đặc biệt thú vị là những trải nghiệm của bạn ở câu lạc bộ. Mình hỏi một câu về điều đó được không?
+    note:
+      vi: "Rückmeldung cho bạn thi (ở đây hai người xưng du): cảm ơn, khen một điểm cụ thể, rồi hỏi."
+  - type: example
+    target: Wir sollten einander ausreden lassen und aufeinander eingehen.
+    target_lang: de
+    translation:
+      vi: Chúng ta nên để nhau nói hết và lắng nghe, đáp lại ý của nhau.
+    note:
+      vi: "einander, aufeinander (B2U09) = lẫn nhau. Hai quy tắc của một cuộc thảo luận tốt: không cắt ngang khi người kia chưa nói xong, và phản hồi đúng điều người kia vừa nói."
+  - type: common_mistake
+    wrong: Nein, das ist falsch.
+    right: Da muss ich Ihnen leider widersprechen. Meiner Erfahrung nach ist das anders.
+    target_lang: de
+    note:
+      vi: "Phản bác cụt lủn nghe thô trong thảo luận. Dùng câu đệm (Da muss ich Ihnen widersprechen; Das mag sein, aber …) và nêu lý do."
+  - type: common_mistake
+    wrong: Um noch einmal auf die Kosten zu zurückkommen, …
+    right: Um noch einmal auf die Kosten zurückzukommen, …
+    target_lang: de
+    note:
+      vi: "Với động từ tách, zu đứng giữa tiền tố và gốc và viết liền: zurückzukommen, anzuknüpfen."
+  - type: common_mistake
+    wrong: Darf ich direkt darauf anknüpfen?
+    right: Darf ich direkt daran anknüpfen?
+    target_lang: de
+    note:
+      vi: "anknüpfen đi với an (an etwas anknüpfen), nên là daran, không phải darauf."
+  - type: summary
+    points:
+      - vi: "Thuyết trình: In meinem Vortrag geht es um … – Zunächst … – Im Anschluss daran … – Abschließend lässt sich sagen, dass …"
+      - vi: "Thảo luận: Da stimme ich Ihnen zu / Das mag sein, aber … / Da muss ich Ihnen widersprechen / Lassen Sie mich kurz überlegen / Entschuldigung, wenn ich Sie unterbreche, aber …"
+      - vi: "Điều phối: Darf ich direkt daran anknüpfen? · Was meinen Sie dazu? · Um noch einmal auf … zurückzukommen · Ich fasse kurz zusammen."
+      - vi: "Rückmeldung: cảm ơn – khen điểm cụ thể – đặt câu hỏi."
+      - vi: "Chuẩn bị bằng Stichworte, giữ Zeitrahmen, không abschweifen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u10l4-listen-anknuepfen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u10-g-moderation-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Darf ich direkt daran anknüpfen? Auch in unserer Firma arbeiten viele im Homeoffice, und die Erfahrungen sind eigentlich gut.
+      options:
+        - { id: a1n, text: "Người nói nối tiếp ý người trước và bổ sung kinh nghiệm ở công ty mình.", lang: vi }
+        - { id: a2n, text: "Người nói phản bác người trước vì công ty mình không cho làm tại nhà.", lang: vi }
+        - { id: a3n, text: "Người nói tóm tắt kết quả cuộc thảo luận.", lang: vi }
+        - { id: a4n, text: "Người nói xin thời gian suy nghĩ.", lang: vi }
+    answer:
+      correct_option_id: a1n
+    explanation:
+      vi: "Darf ich direkt daran anknüpfen? = tôi xin nói tiếp ngay ý đó; sau đó Auch in unserer Firma … bổ sung kinh nghiệm tương tự (auch), không phản bác."
+    display_answer: "Người nói nối tiếp ý người trước và bổ sung kinh nghiệm ở công ty mình."
+
+  - key: de:exercise:b2u10l4-listen-zurueckkommen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u10-g-moderation-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Um noch einmal auf die Kosten zurückzukommen, wer soll die neuen Radwege eigentlich bezahlen?
+      options:
+        - { id: k1z, text: "Người nói quay lại vấn đề chi phí đã nêu trước đó và hỏi ai sẽ trả tiền.", lang: vi }
+        - { id: k2z, text: "Người nói đề nghị tự mình trả tiền làm đường xe đạp.", lang: vi }
+        - { id: k3z, text: "Người nói bắt đầu một chủ đề hoàn toàn mới.", lang: vi }
+        - { id: k4z, text: "Người nói cho rằng đường xe đạp không tốn tiền.", lang: vi }
+    answer:
+      correct_option_id: k1z
+    explanation:
+      vi: "Um noch einmal auf … zurückzukommen = để quay lại (một lần nữa) điểm đã bàn. Câu hỏi wer soll … bezahlen = ai sẽ trả tiền; eigentlich trong câu hỏi làm câu hỏi nghe nhấn hơn (rốt cuộc)."
+    display_answer: "Người nói quay lại vấn đề chi phí đã nêu trước đó và hỏi ai sẽ trả tiền."
+
+  - key: de:exercise:b2u10l4-listen-zeit-gewinnen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u10-g-gespraechsstrategien
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist eine interessante Frage. Darüber habe ich ehrlich gesagt noch nicht nachgedacht. Aber ich würde sagen, dass kleine Schulen hier einen Vorteil haben.
+      options:
+        - { id: z1g, text: "Người nói câu giờ, thừa nhận chưa nghĩ về điều đó, rồi vẫn đưa ra một ý kiến.", lang: vi }
+        - { id: z2g, text: "Người nói từ chối trả lời câu hỏi.", lang: vi }
+        - { id: z3g, text: "Người nói ngắt lời người hỏi.", lang: vi }
+        - { id: z4g, text: "Người nói cho rằng trường nhỏ có bất lợi.", lang: vi }
+    answer:
+      correct_option_id: z1g
+    explanation:
+      vi: "Das ist eine interessante Frage là câu giờ; Darüber habe ich noch nicht nachgedacht thừa nhận thành thật; Aber ich würde sagen, dass … vẫn trả lời: trường nhỏ có lợi thế (einen Vorteil)."
+    display_answer: "Người nói câu giờ, thừa nhận chưa nghĩ về điều đó, rồi vẫn đưa ra một ý kiến."
+
+  - key: de:exercise:b2u10l4-mcq-was-meinen-sie
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u10-g-moderation-redemittel
+    prompt:
+      stem: "Bạn vừa nói ý kiến của mình và kết thúc bằng câu \"Was meinen Sie dazu?\". Câu này có chức năng gì?"
+      stem_lang: vi
+      options:
+        - { id: w1m, text: "Mời người kia nói ý kiến của họ về điều bạn vừa nói.", lang: vi }
+        - { id: w2m, text: "Hỏi lại vì bạn chưa hiểu người kia.", lang: vi }
+        - { id: w3m, text: "Tóm tắt cuộc thảo luận.", lang: vi }
+        - { id: w4m, text: "Ngắt lời người kia.", lang: vi }
+    answer:
+      correct_option_id: w1m
+    explanation:
+      vi: "Was meinen Sie dazu? = anh/chị nghĩ sao về điều này? Đó là câu trao lời, giúp thảo luận không thành độc thoại. Hỏi lại khi chưa hiểu là Habe ich Sie richtig verstanden, dass …?"
+    display_answer: "Mời người kia nói ý kiến của họ về điều bạn vừa nói."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u10l4-fill-moderation
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-g-moderation-redemittel
+    prompt:
+      template: "Darf ich direkt {{b1}} anknüpfen? … Um noch einmal auf die Kosten {{b2}} (zurückkommen): Wer bezahlt das? … Ich {{b3}} (zusammenfassen) kurz zusammen."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 16 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [daran]
+        b2: [zurückzukommen]
+        b3: [fasse]
+    known_wrong:
+      - answer: darauf
+        feedback_vi: "anknüpfen đi với an: an etwas anknüpfen → daran."
+        error_tag: preposition
+      - answer: zu zurückkommen
+        feedback_vi: "Với động từ tách, zu nằm giữa và viết liền: zurückzukommen."
+        error_tag: zu_infinitive
+      - answer: zurückkommen
+        feedback_vi: "Cụm um … zu cần zu: zurückzukommen."
+        error_tag: zu_infinitive
+      - answer: zusammenfasse
+        feedback_vi: "zusammenfassen là động từ tách: Ich fasse … zusammen; tiền tố zusammen đã có ở cuối câu."
+        error_tag: separable_prefix
+    explanation:
+      vi: "anknüpfen an + Akkusativ → daran. Trong cụm um … zu, động từ tách nhận zu ở giữa: zurückzukommen. zusammenfassen tách: ich fasse … zusammen."
+    display_answer: "Darf ich direkt daran anknüpfen? … Um noch einmal auf die Kosten zurückzukommen: Wer bezahlt das? … Ich fasse kurz zusammen."
+
+  - key: de:exercise:b2u10l4-tr-widersprechen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-diskussion-redemittel
+    prompt:
+      source_text: "Ở điểm này tôi phải phản bác ý anh/chị. (thảo luận, xưng Sie, dùng widersprechen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Da muss ich Ihnen widersprechen.
+        - In diesem Punkt muss ich Ihnen widersprechen.
+        - Hier muss ich Ihnen widersprechen.
+        - Da muss ich Ihnen leider widersprechen.
+        - In diesem Punkt muss ich Ihnen leider widersprechen.
+        - Hier muss ich Ihnen leider widersprechen.
+    known_wrong:
+      - answer: Da muss ich Sie widersprechen.
+        feedback_vi: "widersprechen + Dativ: jemandem widersprechen → Ihnen."
+        error_tag: case_dat_akk
+      - answer: Da muss ich Ihnen widerspreche.
+        feedback_vi: "Sau muss, động từ chính ở nguyên thể cuối câu: widersprechen."
+        error_tag: verb_form
+      - answer: Da muss ich dir widersprechen.
+        feedback_vi: "Đề yêu cầu xưng Sie: Ihnen."
+        error_tag: register_du_sie
+    explanation:
+      vi: "widersprechen đi với Dativ (Ihnen) và không tách. Da/Hier/In diesem Punkt ở vị trí 1, động từ khiếm khuyết muss ở vị trí 2, nguyên thể ở cuối."
+    display_answer: Da muss ich Ihnen widersprechen.
+
+  - key: de:exercise:b2u10l4-tr-vortrag-thema
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-vortrag-redemittel
+    prompt:
+      source_text: "Bài thuyết trình của tôi nói về chủ đề làm việc tại nhà. (dùng In meinem Vortrag geht es um …; làm việc tại nhà = Homeoffice)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - In meinem Vortrag geht es um das Thema Homeoffice.
+        - In meinem Vortrag geht es um Homeoffice.
+        - In meinem Vortrag geht es um das Homeoffice.
+        - In meinem Vortrag geht es um das Arbeiten im Homeoffice.
+    known_wrong:
+      - answer: In meinem Vortrag geht es über das Thema Homeoffice.
+        feedback_vi: "Cụm cố định là es geht um + Akkusativ, không dùng über."
+        error_tag: preposition
+      - answer: In meinem Vortrag es geht um das Thema Homeoffice.
+        feedback_vi: "In meinem Vortrag ở vị trí 1 nên động từ geht đứng ngay sau: … geht es um …"
+        error_tag: verb_position
+    explanation:
+      vi: "Câu mở đầu thuyết trình: In meinem Vortrag geht es um + Akkusativ. Trạng ngữ ở vị trí 1, động từ geht ở vị trí 2, es sau động từ."
+    display_answer: In meinem Vortrag geht es um das Thema Homeoffice.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u10l4-listen-zusammenfassung
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u10-moderieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Gut, ich fasse kurz zusammen. Wir sind uns einig, dass die Schulbibliothek länger geöffnet sein sollte. Uneinig sind wir uns nur bei der Frage, ob Eltern oder Studierende die Aufsicht übernehmen sollen. Was meinen Sie, sollen wir dazu noch einen Kompromiss suchen?
+      options:
+        - { id: s1z, text: "Hai bên nhất trí mở thư viện trường lâu hơn; chỉ còn khác nhau ở chuyện ai trông coi.", lang: vi }
+        - { id: s2z, text: "Hai bên nhất trí rằng phụ huynh sẽ trông coi thư viện.", lang: vi }
+        - { id: s3z, text: "Hai bên không đồng ý về việc mở thư viện lâu hơn.", lang: vi }
+        - { id: s4z, text: "Người nói kết thúc thảo luận mà không hỏi ý người kia.", lang: vi }
+    answer:
+      correct_option_id: s1z
+    explanation:
+      vi: "Kiểu phần thảo luận. Ich fasse kurz zusammen mở phần tóm tắt: einig (nhất trí) về giờ mở cửa dài hơn; uneinig (chưa thống nhất) ở câu hỏi ai trông coi (die Aufsicht). Cuối cùng người nói trao lời bằng Was meinen Sie …?"
+    display_answer: "Hai bên nhất trí mở thư viện trường lâu hơn; chỉ còn khác nhau ở chuyện ai trông coi."
+
+  - key: de:exercise:b2u10l4-wb-zurueckzukommen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-g-moderation-redemittel
+    prompt:
+      instruction: "Sắp xếp câu quay lại một điểm trước đó: \"Để quay lại một lần nữa vấn đề thời gian làm việc: …\""
+      tokens:
+        - { id: q-auf, text: auf }
+        - { id: q-einmal, text: einmal }
+        - { id: q-zurueckzukommen, text: zurückzukommen }
+        - { id: q-um, text: Um }
+        - { id: q-arbeitszeiten, text: Arbeitszeiten }
+        - { id: q-noch, text: noch }
+        - { id: q-die, text: die }
+    answer:
+      orders:
+        - [q-um, q-noch, q-einmal, q-auf, q-die, q-arbeitszeiten, q-zurueckzukommen]
+        - [q-um, q-auf, q-die, q-arbeitszeiten, q-noch, q-einmal, q-zurueckzukommen]
+    explanation:
+      vi: "Khung um … zu: Um mở đầu, nguyên thể có zu (zurückzukommen) đứng cuối. noch einmal thường đứng trước cụm giới từ auf die Arbeitszeiten (zurückkommen auf + Akkusativ), cũng có thể đứng sau nó."
+    display_answer: "Um noch einmal auf die Arbeitszeiten zurückzukommen: …"
+
+  - key: de:exercise:b2u10l4-mcq-rueckmeldung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-rueckmeldung
+    prompt:
+      stem: "Kiểu phần thuyết trình: bạn thi (hai người xưng du) vừa trình bày về chủ đề \"Ehrenamt\". Bạn cần phản hồi và đặt một câu hỏi. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: f1r, text: "Vielen Dank für deinen Vortrag! Besonders interessant fand ich deine Erfahrungen im Sportverein. Wie viele Stunden pro Woche engagierst du dich dort?", lang: de }
+        - { id: f2r, text: "Gut.", lang: de }
+        - { id: f3r, text: "Dein Vortrag war zu lang. Jetzt spreche ich über mein Thema.", lang: de }
+        - { id: f4r, text: "Vielen Dank für Ihren Vortrag, Herr Professor! Ich habe keine Fragen.", lang: de }
+    answer:
+      correct_option_id: f1r
+    explanation:
+      vi: "Rückmeldung tốt có ba bước: cảm ơn, khen một điểm cụ thể, đặt câu hỏi liên quan. Gut quá ngắn; câu thứ ba chê và bỏ qua phần hỏi; câu cuối sai ngữ vực (hai bạn thi xưng du) và không có câu hỏi."
+    display_answer: "Vielen Dank für deinen Vortrag! Besonders interessant fand ich deine Erfahrungen im Sportverein. Wie viele Stunden pro Woche engagierst du dich dort?"

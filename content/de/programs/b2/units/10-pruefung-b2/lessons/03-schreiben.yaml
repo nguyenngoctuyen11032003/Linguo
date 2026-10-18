@@ -1,0 +1,414 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u10-schreiben
+order_index: 3
+level: b2
+title:
+  vi: Viết – bài diễn đàn và thư trang trọng B2 (Textaufbau)
+objectives:
+  - vi: Viết bài diễn đàn khoảng 150 từ theo bố cục mở bài – thân bài – kết bài (ý kiến, lý do, ví dụ, ưu nhược điểm, đề xuất).
+  - vi: Viết thư trang trọng khoảng 100 từ đúng ngữ vực (Sie, lời chào đầu – cuối, yêu cầu lịch sự).
+  - vi: Nối đoạn bằng câu chủ đề, từ nối, từ đồng nghĩa và từ quy chiếu thay vì lặp từ.
+  - vi: Tự kiểm tra bài viết theo bốn tiêu chí gợi ý của Linguo (đủ ý, mạch lạc, vốn từ, cấu trúc câu).
+estimated_minutes: 22
+skills: [writing, reading]
+prerequisites: [de:lesson:b2u10-hoeren]
+items:
+  - item: de:item:b2u10-g-textaufbau
+  - item: de:item:b2u10-zusammenfassung
+  - item: de:item:b2u10-forum
+  - item: de:item:b2u10-eroertern
+  - item: de:item:b2u10-eroerterung
+  - item: de:item:b2u10-darlegen
+  - item: de:item:b2u10-synonym
+  - item: de:item:b2u10-formulierung
+  - item: de:item:b2u10-wortwahl
+  - item: de:item:b2u10-ueberleitung
+  - item: de:item:b2u10-ausblick
+  - item: de:item:b2u10-loesungsvorschlag
+  - item: de:item:b2u10-ueberarbeiten
+  - item: de:item:b2u10-aufgabenstellung
+  - item: de:item:b2u02-g-relativsatz-partizip-umformung
+    role: reuse
+  - item: de:item:b2u05-g-textkonnektoren
+    role: reuse
+  - item: de:item:b2u07-g-infinitiv-perfekt
+    role: reuse
+  - item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    role: reuse
+  - item: de:item:b2u07-g-argumentation-redemittel
+    role: reuse
+  - item: de:item:b1u10-g-formeller-brief
+    role: reuse
+  - item: de:item:b2u08-g-register
+    role: reuse
+  - item: de:item:b2u08-g-bewerten-redemittel
+    role: reuse
+  - item: de:item:b2u09-g-konditional-verbspitze
+    role: reuse
+  - item: de:item:b2u09-g-beschwerde-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được một bài diễn đàn có bố cục rõ ràng, mở đầu đoạn bằng câu chủ đề như \"Für ein autofreies Zentrum spricht vor allem, dass …\", và một bức thư trang trọng ngắn với yêu cầu lịch sự \"Ich wäre Ihnen dankbar, wenn …\"."
+  - type: explain
+    text:
+      vi: "Bài diễn đàn (Forumsbeitrag) có ba phần. Mở bài: dẫn vào chủ đề và nêu ý kiến ngắn gọn. Thân bài: mỗi đoạn một ý (lý do, ví dụ, ưu nhược điểm), kết bài: kết luận và đề xuất giải pháp hoặc cái nhìn về tương lai (Ausblick)."
+  - type: explain
+    text:
+      vi: "Mỗi đoạn thân bài nên mở bằng câu chủ đề (Themensatz) nói ngay ý chính: Für … spricht vor allem, dass … / Dagegen lässt sich einwenden, dass … Người Việt hay kể lể trước rồi mới nêu ý ở cuối đoạn; người đọc tiếng Đức chờ ý chính ở đầu đoạn."
+  - type: explain
+    text:
+      vi: "Tránh lặp từ: thay danh từ bằng từ đồng nghĩa (das Fahrrad → das Rad), từ khái quát (das Smartphone → das Gerät) hoặc từ quy chiếu (dies, diese Entwicklung, dabei). Nối câu bằng từ nối (zudem, darüber hinaus, dagegen, deshalb) và mệnh đề was/wodurch bình luận cả câu (B2U07)."
+  - type: explain
+    text:
+      vi: "Thư trang trọng (khoảng 100 từ): Sehr geehrte Frau …/Sehr geehrter Herr …, lý do viết, yêu cầu lịch sự bằng Konjunktiv II (Ich wäre Ihnen dankbar, wenn …; Könnten Sie …?), lời kết (Für Rückfragen stehe ich gern zur Verfügung) và Mit freundlichen Grüßen. Sie, Ihnen, Ihr luôn viết hoa; tránh khẩu ngữ như mal, kriegen, okay."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), phần viết B2 có hai bài: một bài nêu ý kiến trên diễn đàn (khoảng 150 từ) và một bức thư hoặc e-mail trang trọng (khoảng 100 từ). Thời gian, cách chấm và yêu cầu cụ thể có thể thay đổi; hãy xem tài liệu chính thức mới nhất."
+  - type: deep_explain
+    text:
+      vi: "Bảng tự kiểm tra (gợi ý của Linguo, không phải thang điểm chính thức): (1) Đủ ý đề yêu cầu (Erfüllung der Aufgabe) – đã trả lời mọi điểm trong Aufgabenstellung chưa, đúng loại văn bản và ngữ vực chưa? (2) Mạch lạc (Kohärenz) – mở bài, thân bài, kết bài rõ ràng; câu chủ đề; từ nối và từ quy chiếu đúng chỗ. (3) Vốn từ (Wortschatz) – từ đa dạng, không lặp; Redemittel lập luận như Für … spricht, Dagegen lässt sich einwenden, Alles in allem. (4) Cấu trúc (Strukturen) – động từ ở vị trí 2 sau từ nối (Zudem gewinnt man …), động từ cuối câu phụ, đuôi tính từ, cụm phân từ (die von der Stadt geplanten Maßnahmen), nguyên thể quá khứ (… reduziert zu haben). Khi còn thời gian, hãy überarbeiten bài: đọc một lượt chỉ để kiểm tra động từ, một lượt cho giống và đuôi danh từ, một lượt cho chính tả (ä, ö, ü, ß, danh từ viết hoa). Đếm sơ số từ: viết quá ngắn thường thiếu ý; viết quá dài dễ sai nhiều hơn."
+  - type: example
+    target: "In vielen Städten wird zurzeit darüber diskutiert, ob Autos aus der Innenstadt verbannt werden sollten. Ich halte diese Idee grundsätzlich für richtig. Für ein autofreies Zentrum spricht vor allem, dass die Luft sauberer und die Straßen ruhiger werden. Zudem gewinnt man Platz für Cafés, Spielplätze und Radwege, was die Innenstadt für alle attraktiver macht."
+    target_lang: de
+    translation:
+      vi: "Hiện nay ở nhiều thành phố người ta đang thảo luận về việc có nên cấm ô tô vào trung tâm hay không. Về cơ bản tôi cho rằng ý tưởng này đúng. Lý lẽ ủng hộ một trung tâm không ô tô trước hết là không khí sẽ sạch hơn và đường phố yên tĩnh hơn. Hơn nữa, sẽ có thêm chỗ cho quán cà phê, sân chơi và đường xe đạp, điều này khiến trung tâm hấp dẫn hơn với mọi người."
+    note:
+      vi: "Bài diễn đàn mẫu (khoảng 150 từ, chia làm ba phần), phần 1: mở bài + ý kiến → lý lẽ ủng hộ mở bằng câu chủ đề (Für … spricht, dass …), thêm ý bằng Zudem và mệnh đề was."
+  - type: example
+    target: "Dagegen lässt sich einwenden, dass ältere Menschen und Familien mit kleinen Kindern oft auf das Auto angewiesen sind. Auch viele Geschäfte befürchten, Kunden zu verlieren. Diese Sorgen sollte man ernst nehmen."
+    target_lang: de
+    translation:
+      vi: "Mặt khác, có thể phản bác rằng người cao tuổi và các gia đình có con nhỏ thường phụ thuộc vào ô tô. Nhiều cửa hàng cũng lo mất khách. Cần coi trọng những lo ngại này."
+    note:
+      vi: "Phần 2: phản biện (Dagegen lässt sich einwenden, dass …) và thừa nhận lo ngại của phía bên kia – Diese Sorgen là từ quy chiếu, tránh lặp lại cả câu."
+  - type: example
+    target: "Meiner Ansicht nach braucht man deshalb eine Übergangszeit und gute Alternativen: günstige Busse und Bahnen, Parkplätze am Stadtrand und Lieferdienste für die Geschäfte. Alles in allem bin ich überzeugt, dass ein autofreies Zentrum die Lebensqualität verbessert, vorausgesetzt, dass dabei niemand vergessen wird."
+    target_lang: de
+    translation:
+      vi: "Vì thế, theo tôi cần có một giai đoạn chuyển tiếp và những phương án thay thế tốt: xe buýt và tàu giá rẻ, chỗ đỗ xe ở rìa thành phố và dịch vụ giao hàng cho các cửa hàng. Nhìn chung, tôi tin rằng một trung tâm không ô tô sẽ nâng cao chất lượng sống, với điều kiện là không ai bị bỏ quên."
+    note:
+      vi: "Phần 3: đề xuất giải pháp (Lösungsvorschlag) rồi kết luận bằng Alles in allem."
+  - type: example
+    target: "Sehr geehrte Frau Hoffmann, vielen Dank für Ihre Einladung zum Informationsabend am 12. März. Leider kann ich an diesem Termin nicht teilnehmen, da ich beruflich verreist bin. Ich interessiere mich jedoch sehr für das neue Weiterbildungsprogramm und wäre Ihnen dankbar, wenn Sie mir die Präsentation und die Anmeldeunterlagen zusenden könnten."
+    target_lang: de
+    translation:
+      vi: "Kính gửi bà Hoffmann, cảm ơn bà đã mời tôi dự buổi tối thông tin ngày 12 tháng Ba. Rất tiếc tôi không thể tham dự vào hôm đó vì tôi đi công tác. Tuy nhiên tôi rất quan tâm đến chương trình bồi dưỡng mới và sẽ rất cảm ơn nếu bà có thể gửi cho tôi bài trình bày cùng hồ sơ đăng ký."
+    note:
+      vi: "Thư trang trọng mẫu (khoảng 100 từ, nhân vật và sự kiện hư cấu), phần 1: lời chào, cảm ơn, lý do không đến (da …), yêu cầu lịch sự (wäre Ihnen dankbar, wenn …)."
+  - type: example
+    target: "Darüber hinaus hätte ich eine Frage: Ist es möglich, einzelne Module auch online zu besuchen? Für Rückfragen stehe ich Ihnen gern zur Verfügung. Mit freundlichen Grüßen Minh Tran"
+    target_lang: de
+    translation:
+      vi: "Ngoài ra tôi có một câu hỏi: có thể học một số học phần trực tuyến được không? Nếu cần thêm thông tin, tôi luôn sẵn lòng. Trân trọng, Minh Tran"
+    note:
+      vi: "Phần 2: câu hỏi thêm (Darüber hinaus + hätte), lời kết và chào cuối trang trọng. Sie, Ihnen, Ihre luôn viết hoa."
+  - type: example
+    target: Ich habe mir ein neues Fahrrad gekauft. Das Rad ist leicht, und ich fahre damit jeden Tag zur Arbeit.
+    target_lang: de
+    translation:
+      vi: Tôi mới mua một chiếc xe đạp. Chiếc xe nhẹ, và ngày nào tôi cũng đạp nó đi làm.
+    note:
+      vi: "Tránh lặp: Fahrrad → das Rad (đồng nghĩa) → damit (từ quy chiếu, = mit dem Rad)."
+  - type: example
+    target: Die Stadt behauptet, den Verkehr im Zentrum bereits deutlich reduziert zu haben.
+    target_lang: de
+    translation:
+      vi: Thành phố khẳng định đã giảm đáng kể giao thông ở trung tâm.
+    note:
+      vi: "Nguyên thể quá khứ (B2U07): việc giảm giao thông xảy ra trước lời khẳng định → reduziert zu haben."
+  - type: example
+    target: Die von der Stadt geplanten Maßnahmen sind sinnvoll, aber teuer.
+    target_lang: de
+    translation:
+      vi: Những biện pháp mà thành phố lên kế hoạch là hợp lý nhưng tốn kém.
+    note:
+      vi: "Cụm phân từ thay cho mệnh đề quan hệ die Maßnahmen, die von der Stadt geplant werden (B2U02) – gọn hơn trong văn viết."
+  - type: example
+    target: Sollte die Lieferung bis Freitag nicht eintreffen, gehe ich davon aus, dass Sie mir den vollen Betrag erstatten.
+    target_lang: de
+    translation:
+      vi: Nếu đến thứ Sáu hàng vẫn chưa tới, tôi tin chắc rằng quý công ty sẽ hoàn lại cho tôi toàn bộ số tiền.
+    note:
+      vi: "Thư trang trọng có thể là thư khiếu nại: điều kiện không có wenn (Sollte …, động từ đứng đầu) và Ich gehe davon aus, dass … (B2U09) – lịch sự nhưng kiên quyết."
+  - type: example
+    target: Besonders gelungen ist an dem Konzept, dass auch an die Geschäfte gedacht wurde.
+    target_lang: de
+    translation:
+      vi: Điểm đặc biệt thành công của bản đề án là đã tính đến cả các cửa hàng.
+    note:
+      vi: "Redemittel đánh giá (B2U08) cũng dùng được trong bài diễn đàn khi bạn nhận xét một đề xuất."
+  - type: common_mistake
+    wrong: Leider habe ich die Unterlagen noch nicht gekriegt.
+    right: Leider habe ich die Unterlagen noch nicht erhalten.
+    target_lang: de
+    note:
+      vi: "kriegen là khẩu ngữ; trong thư trang trọng dùng erhalten hoặc bekommen (B2U08: các tầng ngôn ngữ)."
+  - type: common_mistake
+    wrong: Zudem man gewinnt Platz für Radwege.
+    right: Zudem gewinnt man Platz für Radwege.
+    target_lang: de
+    note:
+      vi: "zudem, darüber hinaus, dagegen là trạng từ chiếm vị trí 1: động từ đứng ngay sau, chủ ngữ sau động từ."
+  - type: common_mistake
+    wrong: "Hallo Frau Hoffmann, schicken Sie mir mal die Unterlagen. Tschüss, Minh"
+    right: "Sehr geehrte Frau Hoffmann, ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen zusenden könnten. Mit freundlichen Grüßen Minh Tran"
+    target_lang: de
+    note:
+      vi: "Trong thư trang trọng, Hallo, mal và Tschüss nghe quá thân mật. Dùng lời chào trang trọng và yêu cầu bằng Konjunktiv II."
+  - type: common_mistake
+    wrong: Viele Menschen fahren Auto. Die Autos machen Lärm. Die Autos verschmutzen die Luft.
+    right: Viele Menschen fahren Auto, was nicht nur Lärm verursacht, sondern auch die Luft verschmutzt.
+    target_lang: de
+    note:
+      vi: "Lặp danh từ và câu ngắn rời rạc làm bài kém mạch lạc. Mệnh đề was và nicht nur …, sondern auch … nối các ý lại."
+  - type: summary
+    points:
+      - vi: "Bố cục: Einleitung (chủ đề + ý kiến) – Hauptteil (mỗi đoạn một ý, câu chủ đề) – Schluss (kết luận, Lösungsvorschlag, Ausblick)."
+      - vi: "Nối ý: zudem, darüber hinaus, dagegen, deshalb (+ động từ vị trí 2); …, was …; …, wodurch …"
+      - vi: "Tránh lặp: từ đồng nghĩa, từ khái quát, từ quy chiếu."
+      - vi: "Thư trang trọng: Sehr geehrte/r …, Ich wäre Ihnen dankbar, wenn …, Für Rückfragen stehe ich gern zur Verfügung, Mit freundlichen Grüßen."
+      - vi: "Tự kiểm (gợi ý của Linguo): đủ ý – mạch lạc – vốn từ – cấu trúc; rồi überarbeiten."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u10l3-mcq-einleitung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u10-g-textaufbau
+    prompt:
+      stem: "Bạn viết bài diễn đàn về chủ đề \"Autofreie Innenstädte\". Câu nào phù hợp nhất để mở bài?"
+      stem_lang: vi
+      options:
+        - { id: o1e, text: "In vielen Städten wird zurzeit diskutiert, ob Autos aus der Innenstadt verbannt werden sollten.", lang: de }
+        - { id: o2s, text: "Alles in allem bin ich also für ein autofreies Zentrum.", lang: de }
+        - { id: o3h, text: "Ein weiteres Argument ist der Lärm.", lang: de }
+        - { id: o4g, text: "Mit freundlichen Grüßen", lang: de }
+    answer:
+      correct_option_id: o1e
+    explanation:
+      vi: "Mở bài dẫn vào chủ đề đang được bàn luận. Alles in allem … also là câu kết bài; Ein weiteres Argument ist … là câu trong thân bài; Mit freundlichen Grüßen là lời chào cuối thư trang trọng, không hợp với bài diễn đàn."
+    display_answer: "In vielen Städten wird zurzeit diskutiert, ob Autos aus der Innenstadt verbannt werden sollten."
+
+  - key: de:exercise:b2u10l3-mcq-synonym-rad
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u10-synonym
+    prompt:
+      stem: "Chọn cách nói tiếp không lặp từ và đúng ngữ pháp: \"Ich habe mir ein neues Fahrrad gekauft. ___ ist leicht und schnell.\""
+      stem_lang: vi
+      options:
+        - { id: r1d, text: "Das Rad", lang: de }
+        - { id: r2d, text: "Der Rad", lang: de }
+        - { id: r3w, text: "Der Wagen", lang: de }
+        - { id: r4d, text: "Die Rad", lang: de }
+    answer:
+      correct_option_id: r1d
+    explanation:
+      vi: "das Rad là từ đồng nghĩa ngắn của das Fahrrad và giữ giống trung (das). der Wagen là ô tô (nghĩa khác); der Rad, die Rad sai giống."
+    display_answer: Das Rad
+
+  - key: de:exercise:b2u10l3-mcq-register-brief
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      stem: "Câu nào phù hợp với một bức thư trang trọng gửi phòng đào tạo?"
+      stem_lang: vi
+      options:
+        - { id: b1f, text: "Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen zusenden könnten.", lang: de }
+        - { id: b2f, text: "Schick mir mal die Unterlagen!", lang: de }
+        - { id: b3f, text: "Könntest du mir die Unterlagen schicken?", lang: de }
+        - { id: b4f, text: "Ich will die Unterlagen sofort haben.", lang: de }
+    answer:
+      correct_option_id: b1f
+    explanation:
+      vi: "Thư trang trọng dùng Sie (viết hoa) và Konjunktiv II: Ich wäre Ihnen dankbar, wenn … Hai câu dùng du/mal quá thân mật; Ich will … sofort nghe như ra lệnh, thiếu lịch sự."
+    display_answer: "Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen zusenden könnten."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u10l3-fill-konnektoren
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-textkonnektoren
+    prompt:
+      template: "Für ein autofreies Zentrum spricht, dass die Luft sauberer wird. {{b1}} (weiteres Argument) gewinnt man Platz für Radwege. {{b2}} (Gegenargument) lässt sich einwenden, dass viele Menschen auf das Auto angewiesen sind."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [Zudem, Außerdem, Darüber hinaus, Ferner]
+        b2: [Dagegen]
+    known_wrong:
+      - answer: Trotzdem
+        feedback_vi: "trotzdem (tuy vậy) chỉ sự nhượng bộ; ở đây cần thêm một lý lẽ: zudem, außerdem, darüber hinaus."
+        error_tag: word_choice
+      - answer: Deshalb
+        feedback_vi: "deshalb nêu kết quả. Mở phần phản bác dùng Dagegen lässt sich einwenden, dass …"
+        error_tag: word_choice
+    explanation:
+      vi: "Thêm lý lẽ cùng chiều: Zudem/Außerdem/Darüber hinaus/Ferner + động từ vị trí 2 (gewinnt). Chuyển sang phản biện: Dagegen lässt sich einwenden, dass … (B2U07)."
+    display_answer: "Für ein autofreies Zentrum spricht, dass die Luft sauberer wird. Zudem gewinnt man Platz für Radwege. Dagegen lässt sich einwenden, dass viele Menschen auf das Auto angewiesen sind."
+
+  - key: de:exercise:b2u10l3-fill-was-wodurch
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    prompt:
+      template: "Man gewinnt Platz für Cafés und Spielplätze, {{b1}} die Innenstadt attraktiver macht. Die Stadt hat den Durchgangsverkehr umgeleitet, {{b2}} es im Zentrum deutlich leiser geworden ist."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [was]
+        b2: [wodurch]
+    known_wrong:
+      - answer: das
+        feedback_vi: "Mệnh đề bình luận cả câu trước (không phải một danh từ) mở đầu bằng was."
+        error_tag: word_choice
+      - answer: die
+        feedback_vi: "die sẽ trỏ về một danh từ (die Spielplätze) và động từ phải là machen; ở đây cả việc có thêm chỗ làm trung tâm hấp dẫn → was."
+        error_tag: word_choice
+    explanation:
+      vi: "was trỏ về cả câu trước (việc có thêm chỗ cho quán và sân chơi). Ô thứ hai cần nghĩa \"nhờ đó\" (durch) → wodurch; trong mệnh đề này es là chủ ngữ, nên không thể dùng was. Động từ đứng cuối cả hai mệnh đề (B2U07)."
+    display_answer: "Man gewinnt Platz für Cafés und Spielplätze, was die Innenstadt attraktiver macht. Die Stadt hat den Durchgangsverkehr umgeleitet, wodurch es im Zentrum deutlich leiser geworden ist."
+
+  - key: de:exercise:b2u10l3-tr-dankbar-unterlagen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      source_text: "Tôi sẽ rất biết ơn nếu bà có thể gửi cho tôi hồ sơ. (thư trang trọng; dùng Ich wäre Ihnen dankbar, wenn …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen schicken könnten.
+        - Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen zusenden könnten.
+        - Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen zuschicken könnten.
+        - Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen senden könnten.
+        - Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen schicken könnten.
+        - Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen zusenden könnten.
+        - Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen zuschicken könnten.
+        - Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen schicken würden.
+        - Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen zusenden würden.
+        - Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen zuschicken würden.
+    known_wrong:
+      - answer: Ich wäre Ihnen sehr dankbar, wenn Sie könnten mir die Unterlagen schicken.
+        feedback_vi: "Trong câu phụ wenn, động từ chia könnten đứng cuối: wenn Sie mir die Unterlagen schicken könnten."
+        error_tag: verb_position
+      - answer: Ich wäre Sie sehr dankbar, wenn Sie mir die Unterlagen schicken könnten.
+        feedback_vi: "dankbar sein + Dativ: Ich wäre Ihnen dankbar."
+        error_tag: case_dat_akk
+      - answer: Ich wäre dir sehr dankbar, wenn du mir die Unterlagen schicken könntest.
+        feedback_vi: "Thư trang trọng dùng Sie: Ihnen, Sie."
+        error_tag: register_du_sie
+    explanation:
+      vi: "jemandem dankbar sein (Dativ: Ihnen). Câu wenn: động từ chia könnten/würden ở cuối, sau nguyên thể. die Unterlagen = hồ sơ, giấy tờ (luôn số nhiều)."
+    display_answer: Ich wäre Ihnen sehr dankbar, wenn Sie mir die Unterlagen zusenden könnten.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u10l3-wb-dafuer-spricht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      instruction: "Hoàn thành câu chủ đề của đoạn: \"Für ein autofreies Zentrum spricht, …\" – \"… rằng không khí trong thành phố sẽ sạch hơn.\""
+      tokens:
+        - { id: s-sauberer, text: sauberer }
+        - { id: s-stadt, text: Stadt }
+        - { id: s-dass, text: dass }
+        - { id: s-wird, text: wird }
+        - { id: s-luft, text: Luft }
+        - { id: s-der, text: der }
+        - { id: s-in, text: in }
+        - { id: s-die, text: die }
+    answer:
+      orders:
+        - [s-dass, s-die, s-luft, s-in, s-der, s-stadt, s-sauberer, s-wird]
+        - [s-dass, s-in, s-der, s-stadt, s-die, s-luft, s-sauberer, s-wird]
+    explanation:
+      vi: "Für … spricht, dass … mở đoạn bằng lý lẽ ủng hộ. Trong câu dass, động từ chia wird đứng cuối, sau tính từ sauberer. Trạng ngữ in der Stadt có thể đứng trước hoặc sau chủ ngữ die Luft."
+    display_answer: Für ein autofreies Zentrum spricht, dass die Luft in der Stadt sauberer wird.
+
+  - key: de:exercise:b2u10l3-wb-infinitiv-perfekt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-infinitiv-perfekt
+    prompt:
+      instruction: "Hoàn thành câu: \"Die Stadt behauptet, …\" – \"… đã giảm đáng kể giao thông.\""
+      tokens:
+        - { id: n-haben, text: haben }
+        - { id: n-verkehr, text: Verkehr }
+        - { id: n-zu, text: zu }
+        - { id: n-deutlich, text: deutlich }
+        - { id: n-den, text: den }
+        - { id: n-reduziert, text: reduziert }
+    answer:
+      orders:
+        - [n-den, n-verkehr, n-deutlich, n-reduziert, n-zu, n-haben]
+    explanation:
+      vi: "Việc giảm giao thông xảy ra trước lời khẳng định nên dùng nguyên thể quá khứ: Partizip II + zu haben, zu đứng ngay trước haben ở cuối cụm (B2U07)."
+    display_answer: Die Stadt behauptet, den Verkehr deutlich reduziert zu haben.
+
+  - key: de:exercise:b2u10l3-mcq-partizip-umformung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-relativsatz-partizip-umformung
+    prompt:
+      stem: "Để bài viết gọn hơn, hãy chuyển cụm \"die Maßnahmen, die von der Stadt geplant werden\" thành cụm phân từ. Cách nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: u1p, text: "die von der Stadt geplanten Maßnahmen", lang: de }
+        - { id: u2p, text: "die von der Stadt planenden Maßnahmen", lang: de }
+        - { id: u3p, text: "die geplanten von der Stadt Maßnahmen", lang: de }
+        - { id: u4p, text: "die von der Stadt geplante Maßnahmen", lang: de }
+    answer:
+      correct_option_id: u1p
+    explanation:
+      vi: "Mệnh đề bị động (geplant werden) → giữ Partizip II, bỏ werden; bổ ngữ von der Stadt đứng trước phân từ; sau die số nhiều, đuôi tính từ là -en: geplanten. planenden mang nghĩa chủ động (các biện pháp tự lên kế hoạch) nên sai nghĩa."
+    display_answer: die von der Stadt geplanten Maßnahmen
+
+  - key: de:exercise:b2u10l3-mcq-kriterium-erfuellung
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u10-aufgabenstellung
+    prompt:
+      stem: "Đề bài (Aufgabenstellung) yêu cầu nêu ý kiến, nêu một ví dụ và đưa ra đề xuất. Bài của bạn có lý lẽ hay, từ nối tốt, nhưng quên phần đề xuất. Theo bảng tự kiểm của Linguo, điều cần sửa trước tiên thuộc mặt nào?"
+      stem_lang: vi
+      options:
+        - { id: k1e, text: "Đủ ý đề yêu cầu (Erfüllung der Aufgabe)", lang: vi }
+        - { id: k2k, text: "Mạch lạc (Kohärenz)", lang: vi }
+        - { id: k3w, text: "Vốn từ (Wortschatz)", lang: vi }
+        - { id: k4s, text: "Cấu trúc câu (Strukturen)", lang: vi }
+    answer:
+      correct_option_id: k1e
+    explanation:
+      vi: "Thiếu một điểm mà đề yêu cầu là vấn đề về đủ ý. Bài đã có từ nối tốt (mạch lạc ổn); vốn từ và cấu trúc câu không phải là chỗ thiếu ở đây. Hãy đọc lại Aufgabenstellung và đánh dấu từng điểm trước khi viết."
+    display_answer: "Đủ ý đề yêu cầu (Erfüllung der Aufgabe)"

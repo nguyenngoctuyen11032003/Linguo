@@ -1,0 +1,364 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u10-hoeren
+order_index: 2
+level: b2
+title:
+  vi: Nghe hiểu – bài nói dài và thảo luận (Signalwörter beim Hören)
+objectives:
+  - vi: Nhận ra các câu tín hiệu cấu trúc bài nói (Ich möchte vorausschicken …, Entscheidend ist …, Was ich damit sagen will …, Im Gegensatz dazu …, Zusammenfassend …) và nghe kỹ ý đứng ngay sau chúng.
+  - vi: Làm quen bốn dạng bài nghe B2 (đoạn ngắn nhiều chủ đề, phỏng vấn, thảo luận nhiều người – ai nói gì, bài giảng hoặc thuyết trình).
+  - vi: Phân biệt người nói ủng hộ, phản đối hay hoài nghi trong một buổi tọa đàm và thuật lại ý kiến bằng lời gián tiếp.
+estimated_minutes: 22
+skills: [listening, vocabulary]
+prerequisites: [de:lesson:b2u10-lesen]
+items:
+  - item: de:item:b2u10-g-signalwoerter-hoeren
+  - item: de:item:b2u10-gespraechsrunde
+  - item: de:item:b2u10-podiumsdiskussion
+  - item: de:item:b2u10-beitrag
+  - item: de:item:b2u10-einschaetzung
+  - item: de:item:b2u10-einschaetzen
+  - item: de:item:b2u10-skeptisch
+  - item: de:item:b2u10-vertreten
+  - item: de:item:b2u10-gegenposition
+  - item: de:item:b2u10-ablehnung
+  - item: de:item:b2u10-widerspruch
+  - item: de:item:b2u10-gegensatz
+  - item: de:item:b2u10-entscheidend
+  - item: de:item:b2u10-sichtweise
+  - item: de:item:b2u10-diskussionsteilnehmer
+  - item: de:item:b2u04-g-indirekte-rede
+    role: reuse
+  - item: de:item:b2u04-g-indirekte-frage-aufforderung
+    role: reuse
+  - item: de:item:b2u04-g-modalpartikeln-2
+    role: reuse
+  - item: de:item:b2u08-g-relativ-wer-was
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, khi nghe một chuyên gia nói \"Entscheidend ist aber, dass …\", bạn biết ngay câu tiếp theo là ý quan trọng nhất và tập trung nghe kỹ phần đó."
+  - type: explain
+    text:
+      vi: "Bài nói dài ở B2 có \"biển báo\": Ich möchte vorausschicken, dass … (nói trước một điều làm nền), Entscheidend ist … (ý quyết định), Was ich damit sagen will: … (giải thích lại bằng lời khác), Im Gegensatz dazu … (chuyển sang ý đối lập), Zusammenfassend lässt sich sagen, dass … (kết luận). Như khi nghe giảng bằng tiếng Việt, câu \"điều quan trọng nhất là…\" báo cho bạn biết cần ghi lại."
+  - type: explain
+    text:
+      vi: "Sau Entscheidend ist và Zusammenfassend thường là đáp án của câu hỏi về ý chính. Sau Ich möchte vorausschicken thường là thông tin nền (người nói là ai, góc nhìn của họ), ít khi là ý chính. Was ich damit sagen will giúp bạn có cơ hội thứ hai nếu chưa hiểu câu trước."
+  - type: explain
+    text:
+      vi: "Trong thảo luận, hãy ghi cho mỗi người một ký hiệu: + (ủng hộ), – (phản đối), ? (hoài nghi, skeptisch). Câu mở đầu bằng eigentlich, Schön und gut, aber … hoặc Das mag sein, aber … thường đổi hướng: phần sau aber mới là ý thật của người nói."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), phần nghe B2 có bốn dạng: nhiều đoạn ngắn về các chủ đề khác nhau, một cuộc phỏng vấn, một cuộc thảo luận nhiều người (ai nói gì) và một bài giảng hoặc thuyết trình. Số câu, số lần nghe và thời gian có thể thay đổi; hãy xem tài liệu chính thức mới nhất trước khi thi."
+  - type: deep_explain
+    text:
+      vi: "Phân biệt im Gegensatz dazu và im Gegenteil: im Gegensatz dazu so sánh hai sự vật khác nhau (Thành phố thì … Im Gegensatz dazu, ở nông thôn …); im Gegenteil phủ nhận điều vừa nói và khẳng định điều ngược lại (Ist das teuer? – Nein, im Gegenteil, es ist sehr günstig). Trong phần nghe thảo luận, im Gegenteil ngay sau Nein là dấu hiệu phản bác mạnh. Tiểu từ cũng mang thông tin: eigentlich (thật ra – thường báo trước một chữ aber), wohl (chắc là – phỏng đoán, B2U04). Khi đáp án được viết bằng lời gián tiếp (Die Expertin sagt, die Zahl der Mitglieder sinke …), hãy nhớ rằng đó chỉ là thuật lại: hãy so nội dung, đừng để Konjunktiv I làm bạn bối rối. Thói quen tốt: đọc câu hỏi trước, gạch chân tên người và từ khóa, nghe đến hết câu vì tiếng Đức hay để động từ quyết định ở cuối (… nicht zustimmen kann)."
+  - type: example
+    target: Ich möchte vorausschicken, dass ich selbst in einem kleinen Dorf aufgewachsen bin.
+    target_lang: de
+    translation:
+      vi: Tôi xin nói trước rằng chính tôi lớn lên ở một ngôi làng nhỏ.
+    note:
+      vi: "Thông tin nền về người nói, giúp hiểu góc nhìn (Sichtweise) của họ; ý chính thường đến sau."
+  - type: example
+    target: Viele denken, der Preis sei das Problem. Entscheidend ist aber, ob die Menschen das Angebot überhaupt kennen.
+    target_lang: de
+    translation:
+      vi: Nhiều người nghĩ giá cả là vấn đề. Nhưng điều quyết định là liệu mọi người có biết đến dịch vụ này hay không.
+    note:
+      vi: "Câu đầu thuật ý kiến người khác bằng Konjunktiv I (sei); ý của người nói đến sau Entscheidend ist aber."
+  - type: example
+    target: In den Großstädten gibt es immer mehr Radwege. Im Gegensatz dazu fährt auf dem Land oft nur zweimal am Tag ein Bus.
+    target_lang: de
+    translation:
+      vi: Ở các thành phố lớn ngày càng có nhiều đường xe đạp. Ngược lại, ở nông thôn nhiều khi mỗi ngày chỉ có hai chuyến xe buýt.
+    note:
+      vi: "Im Gegensatz dazu chiếm vị trí 1, động từ fährt đứng ngay sau."
+  - type: example
+    target: "Das Angebot ist eigentlich gut. Was ich damit sagen will: Es fehlt nicht an Geld, sondern an Information."
+    target_lang: de
+    translation:
+      vi: "Dịch vụ này thật ra là tốt. Ý tôi muốn nói là: cái thiếu không phải là tiền mà là thông tin."
+    note:
+      vi: "eigentlich (thật ra) là tiểu từ đã học ở B2U04. Was ich damit sagen will diễn đạt lại ý vừa nói rõ hơn."
+  - type: example
+    target: Zusammenfassend lässt sich sagen, dass beide Seiten wohl Recht haben.
+    target_lang: de
+    translation:
+      vi: Tóm lại có thể nói rằng có lẽ cả hai bên đều có lý.
+    note:
+      vi: "Kết luận của bài nói; wohl = có lẽ, chắc là (phỏng đoán)."
+  - type: example
+    target: Die Moderatorin fragte die Expertin, wie sie die Lage einschätze.
+    target_lang: de
+    translation:
+      vi: Nữ người dẫn chương trình hỏi nữ chuyên gia đánh giá tình hình thế nào.
+    note:
+      vi: "Câu hỏi gián tiếp với Konjunktiv I (einschätze, B2U04): động từ tách viết liền ở cuối câu phụ."
+  - type: example
+    target: Wer nur auf einzelne Wörter achtet, verpasst oft die Kernaussage.
+    target_lang: de
+    translation:
+      vi: Ai chỉ chú ý đến từng chữ riêng lẻ thì thường bỏ lỡ ý chính.
+    note:
+      vi: "Câu quan hệ Wer …, (der) … (B2U08): người nào … thì người đó … Ở đây der được lược bỏ vì cả hai vế đều ở Nominativ."
+  - type: common_mistake
+    wrong: "Nein, im Gegensatz dazu, ich finde das Projekt sehr gut."
+    right: "Nein, im Gegenteil, ich finde das Projekt sehr gut."
+    target_lang: de
+    note:
+      vi: "Để phủ nhận ý người khác vừa nói rồi khẳng định điều ngược lại, dùng im Gegenteil. Im Gegensatz dazu dùng để so sánh hai sự vật."
+  - type: common_mistake
+    wrong: "Herr Kraus sagt: Die Idee ist eigentlich gut, aber zu teuer. → Herr Kraus ist für die Idee."
+    right: "Herr Kraus sagt: Die Idee ist eigentlich gut, aber zu teuer. → Herr Kraus ist skeptisch."
+    target_lang: de
+    note:
+      vi: "Dừng nghe ở nửa câu đầu là lỗi hay gặp. eigentlich … aber báo hiệu ý thật nằm sau aber."
+  - type: common_mistake
+    wrong: Was ich damit sagen will, ist es nicht so einfach.
+    right: "Was ich damit sagen will: Es ist nicht so einfach."
+    target_lang: de
+    note:
+      vi: "Sau Was ich damit sagen will là một câu chính độc lập (thường sau dấu hai chấm), hoặc dùng cấu trúc Was ich damit sagen will, ist, dass es nicht so einfach ist."
+  - type: summary
+    points:
+      - vi: "Ich möchte vorausschicken, dass … → thông tin nền."
+      - vi: "Entscheidend ist … / Zusammenfassend lässt sich sagen, dass … → ý chính, thường là đáp án."
+      - vi: "Was ich damit sagen will: … → giải thích lại, cơ hội nghe lần hai."
+      - vi: "Im Gegensatz dazu (so sánh) ≠ im Gegenteil (phủ nhận)."
+      - vi: "Thảo luận: ghi +, –, ? cho từng người; chú ý eigentlich … aber, Das mag sein, aber …"
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u10l2-listen-vorausschicken
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u10-g-signalwoerter-hoeren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich möchte vorausschicken, dass ich selbst in einer kleinen Stadt aufgewachsen bin. Deshalb sehe ich das Thema vielleicht etwas anders als meine Kollegen.
+      options:
+        - { id: v1h, text: "Người nói cho biết trước bối cảnh của mình (lớn lên ở thị trấn nhỏ), vì thế góc nhìn có thể khác.", lang: vi }
+        - { id: v2z, text: "Người nói tóm tắt kết luận của cả bài.", lang: vi }
+        - { id: v3w, text: "Người nói phản bác ý kiến của đồng nghiệp.", lang: vi }
+        - { id: v4s, text: "Người nói cho biết mình đang sống ở một thành phố lớn.", lang: vi }
+    answer:
+      correct_option_id: v1h
+    explanation:
+      vi: "Ich möchte vorausschicken, dass … = tôi xin nói trước rằng …: người nói đưa thông tin nền về bản thân. Deshalb sehe ich das Thema vielleicht etwas anders chỉ nói góc nhìn có thể khác, chưa phải phản bác ai."
+    display_answer: "Người nói cho biết trước bối cảnh của mình (lớn lên ở thị trấn nhỏ), vì thế góc nhìn có thể khác."
+
+  - key: de:exercise:b2u10l2-listen-entscheidend
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u10-entscheidend
+    prompt:
+      audio_asset_id: null
+      fallback_text: Viele glauben, dass vor allem der Preis wichtig ist. Entscheidend ist aber, ob die Menschen das Angebot überhaupt kennen.
+      options:
+        - { id: e1k, text: "Theo người nói, điều quan trọng nhất là mọi người có biết đến dịch vụ hay không.", lang: vi }
+        - { id: e2p, text: "Theo người nói, điều quan trọng nhất là giá cả.", lang: vi }
+        - { id: e3q, text: "Theo người nói, dịch vụ quá đắt nên không ai dùng.", lang: vi }
+        - { id: e4u, text: "Người nói không biết dịch vụ này.", lang: vi }
+    answer:
+      correct_option_id: e1k
+    explanation:
+      vi: "Câu đầu là ý của nhiều người (Viele glauben …). Ý của người nói đến sau Entscheidend ist aber: liệu mọi người có biết đến dịch vụ hay không (ob … überhaupt kennen)."
+    display_answer: "Theo người nói, điều quan trọng nhất là mọi người có biết đến dịch vụ hay không."
+
+  - key: de:exercise:b2u10l2-mcq-gegensatz-gegenteil
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u10-gegensatz
+    prompt:
+      stem: "Chọn tín hiệu phù hợp: \"In den Großstädten investiert man viel in neue Radwege. ___ fehlt auf dem Land oft schon eine einfache Busverbindung.\""
+      stem_lang: vi
+      options:
+        - { id: g1d, text: "Im Gegensatz dazu", lang: de }
+        - { id: g2t, text: "Im Gegenteil", lang: de }
+        - { id: g3z, text: "Zusammenfassend", lang: de }
+        - { id: g4e, text: "Entscheidend", lang: de }
+    answer:
+      correct_option_id: g1d
+    explanation:
+      vi: "Câu so sánh hai nơi khác nhau (thành phố – nông thôn) nên dùng Im Gegensatz dazu. Im Gegenteil dùng để phủ nhận điều vừa nói; Zusammenfassend mở đầu phần kết luận; Entscheidend cần đi với ist (Entscheidend ist …)."
+    display_answer: Im Gegensatz dazu
+
+  - key: de:exercise:b2u10l2-mcq-indirekte-frage
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-indirekte-frage-aufforderung
+    prompt:
+      stem: "Người dẫn chương trình hỏi: \"Können Sie das genauer erklären?\" Thuật lại câu hỏi này như trong một bản tin. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f1o, text: "Die Moderatorin fragte, ob er das genauer erklären könne.", lang: de }
+        - { id: f2o, text: "Die Moderatorin fragte, ob könne er das genauer erklären.", lang: de }
+        - { id: f3o, text: "Die Moderatorin fragte, dass er das genauer erklären könne.", lang: de }
+        - { id: f4o, text: "Die Moderatorin fragte, ob er könne das genauer erklären.", lang: de }
+    answer:
+      correct_option_id: f1o
+    explanation:
+      vi: "Câu hỏi có/không được thuật bằng ob, động từ chia (könne, Konjunktiv I) đứng cuối câu phụ, sau nguyên thể erklären. dass không dùng cho câu hỏi."
+    display_answer: "Die Moderatorin fragte, ob er das genauer erklären könne."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u10l2-fill-signale
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-g-signalwoerter-hoeren
+    prompt:
+      template: "Ich möchte vorausschicken, dass ich selbst kein Auto {{b1}} (besitzen). In der Stadt braucht man kaum ein Auto. Im Gegensatz {{b2}} ist man auf dem Land oft darauf angewiesen. Zusammenfassend lässt {{b3}} sagen, dass es keine einfache Lösung gibt."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [besitze]
+        b2: [dazu]
+        b3: [sich]
+    known_wrong:
+      - answer: besitzt
+        feedback_vi: "Chủ ngữ là ich: ich besitze, động từ đứng cuối câu dass."
+        error_tag: verb_form
+      - answer: davon
+        feedback_vi: "Cụm cố định là im Gegensatz dazu (zu + das), vì im Gegensatz zu + Dativ."
+        error_tag: preposition
+      - answer: es
+        feedback_vi: "Cụm cố định là Zusammenfassend lässt sich sagen, dass … (lassen + sich = có thể)."
+        error_tag: reflexive_missing
+    explanation:
+      vi: "Sau dass, động từ chia đứng cuối: dass ich … besitze. Im Gegensatz dazu (= im Gegensatz zu dem) so sánh thành phố với nông thôn. sich lassen + nguyên thể nghĩa là có thể: Zusammenfassend lässt sich sagen = tóm lại có thể nói."
+    display_answer: "Ich möchte vorausschicken, dass ich selbst kein Auto besitze. In der Stadt braucht man kaum ein Auto. Im Gegensatz dazu ist man auf dem Land oft darauf angewiesen. Zusammenfassend lässt sich sagen, dass es keine einfache Lösung gibt."
+
+  - key: de:exercise:b2u10l2-tr-einschaetzen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u10-einschaetzen
+    prompt:
+      source_text: "Anh/chị đánh giá tình hình thế nào? (nói với khách mời, dùng Sie và einschätzen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wie schätzen Sie die Lage ein?
+        - Wie schätzen Sie die Situation ein?
+        - Wie schätzen Sie die aktuelle Lage ein?
+        - Wie schätzen Sie die aktuelle Situation ein?
+    known_wrong:
+      - answer: Wie einschätzen Sie die Lage?
+        feedback_vi: "einschätzen là động từ tách: schätzen ở vị trí 2, ein ở cuối câu."
+        error_tag: separable_prefix
+      - answer: Wie schätzt du die Lage ein?
+        feedback_vi: "Đề yêu cầu nói với khách mời bằng Sie: Wie schätzen Sie …?"
+        error_tag: register_du_sie
+    explanation:
+      vi: "einschätzen tách: Wie schätzen Sie … ein? die Lage hay die Situation đều là \"tình hình\". Câu hỏi quen thuộc của người dẫn chương trình trong phỏng vấn."
+    display_answer: Wie schätzen Sie die Lage ein?
+
+  - key: de:exercise:b2u10l2-tr-entscheidend-ob
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-entscheidend
+    prompt:
+      source_text: "Điều quyết định là liệu người dân có ủng hộ dự án hay không. (bắt đầu bằng Entscheidend ist)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Entscheidend ist, ob die Bürger das Projekt unterstützen.
+        - Entscheidend ist, ob die Bürgerinnen und Bürger das Projekt unterstützen.
+        - Entscheidend ist, ob die Menschen das Projekt unterstützen.
+        - Entscheidend ist, ob die Einwohner das Projekt unterstützen.
+        - Entscheidend ist, ob die Bevölkerung das Projekt unterstützt.
+        - Entscheidend ist, ob die Leute das Projekt unterstützen.
+    known_wrong:
+      - answer: Entscheidend ist, ob die Bürger unterstützen das Projekt.
+        feedback_vi: "Câu phụ ob: động từ chia unterstützen đứng cuối."
+        error_tag: verb_position
+      - answer: Entscheidend ist, dass die Bürger das Projekt unterstützen.
+        feedback_vi: "\"liệu … hay không\" là câu hỏi có/không gián tiếp: dùng ob, không dùng dass."
+        error_tag: word_choice
+    explanation:
+      vi: "Entscheidend ist + câu phụ: \"liệu … hay không\" → ob, động từ đứng cuối. die Bevölkerung (số ít) đi với unterstützt; die Bürger, die Menschen (số nhiều) đi với unterstützen."
+    display_answer: Entscheidend ist, ob die Bürger das Projekt unterstützen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u10l2-listen-interview-ehrenamt
+    type: listen
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-indirekte-rede
+    prompt:
+      audio_asset_id: null
+      fallback_text: Frau Brandt, viele Vereine in unserer Stadt finden kaum noch neue Mitglieder. Engagieren sich die Menschen weniger als früher? – Ich möchte vorausschicken, dass die Zahl der Ehrenamtlichen bei uns gar nicht sinkt. Was sich ändert, ist die Art des Engagements. Viele wollen sich nicht mehr für zehn Jahre an einen Verein binden. Entscheidend ist heute, dass man flexibel und auch kurzfristig helfen kann.
+      options:
+        - { id: i1a, text: "Frau Brandt sagt, die Menschen wollten sich heute eher kurzfristig engagieren.", lang: de }
+        - { id: i2b, text: "Frau Brandt sagt, die Zahl der Ehrenamtlichen sinke stark.", lang: de }
+        - { id: i3c, text: "Frau Brandt sagt, die Vereine bräuchten keine neuen Mitglieder.", lang: de }
+        - { id: i4d, text: "Frau Brandt sagt, man müsse sich für zehn Jahre an einen Verein binden.", lang: de }
+    answer:
+      correct_option_id: i1a
+    explanation:
+      vi: "Kiểu bài phỏng vấn. Sau Ich möchte vorausschicken: số người tình nguyện không giảm (gar nicht sinkt) – loại phương án 2. Ý chính sau Entscheidend ist: giúp đỡ linh hoạt, ngắn hạn. Phương án đúng thuật lại bằng lời gián tiếp; wollten là Konjunktiv II thay cho Konjunktiv I trùng với hiện tại (sie wollen)."
+    display_answer: "Frau Brandt sagt, die Menschen wollten sich heute eher kurzfristig engagieren."
+
+  - key: de:exercise:b2u10l2-listen-diskussion-ganztag
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u10-skeptisch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Herr Kraus, Sie sind skeptisch, was die Ganztagsschule betrifft? – Na ja, die Idee ist eigentlich gut. Aber sie kostet viel Geld, und ich bezweifle, dass alle Kinder davon profitieren. – Frau Lindner, sehen Sie das genauso? – Nein, im Gegenteil. Gerade Kinder, deren Eltern beide arbeiten, profitieren davon. Was ich damit sagen will, ist, dass es nicht nur um Unterricht geht, sondern auch um Betreuung.
+      options:
+        - { id: d1l, text: "Bà Lindner ủng hộ trường cả ngày; ông Kraus thấy ý tưởng tốt nhưng hoài nghi vì tốn kém.", lang: vi }
+        - { id: d2k, text: "Ông Kraus ủng hộ trường cả ngày; bà Lindner hoài nghi.", lang: vi }
+        - { id: d3b, text: "Cả hai đều phản đối trường cả ngày vì quá tốn kém.", lang: vi }
+        - { id: d4u, text: "Bà Lindner cho rằng trường cả ngày chỉ là chuyện dạy học.", lang: vi }
+    answer:
+      correct_option_id: d1l
+    explanation:
+      vi: "Kiểu bài thảo luận – ai nói gì. Ông Kraus: eigentlich gut, aber … ich bezweifle – thấy hay nhưng hoài nghi (skeptisch). Bà Lindner: Nein, im Gegenteil – phủ nhận sự hoài nghi, rồi giải thích: không chỉ là dạy học mà còn là trông trẻ (Betreuung)."
+    display_answer: "Bà Lindner ủng hộ trường cả ngày; ông Kraus thấy ý tưởng tốt nhưng hoài nghi vì tốn kém."
+
+  - key: de:exercise:b2u10l2-listen-vortrag-fazit
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u10-g-signalwoerter-hoeren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Im ersten Teil habe ich über die Vorteile des Homeoffice gesprochen, im zweiten über die Nachteile. Zusammenfassend lässt sich sagen, dass Homeoffice Zeit und Geld spart, aber auch einsam machen kann. Deshalb empfehle ich eine Mischung aus Büro und Homeoffice.
+      options:
+        - { id: h1m, text: "Người nói khuyên kết hợp làm ở văn phòng và làm tại nhà.", lang: vi }
+        - { id: h2h, text: "Người nói khuyên mọi người chỉ nên làm việc tại nhà để tiết kiệm.", lang: vi }
+        - { id: h3b, text: "Người nói khuyên quay lại làm việc hoàn toàn ở văn phòng.", lang: vi }
+        - { id: h4e, text: "Người nói cho rằng làm tại nhà không có ưu điểm nào.", lang: vi }
+    answer:
+      correct_option_id: h1m
+    explanation:
+      vi: "Kiểu bài giảng, thuyết trình. Sau Zusammenfassend lässt sich sagen là kết luận cân bằng (tiết kiệm nhưng có thể cô đơn), và Deshalb empfehle ich eine Mischung = vì thế tôi khuyên kết hợp cả hai."
+    display_answer: "Người nói khuyên kết hợp làm ở văn phòng và làm tại nhà."

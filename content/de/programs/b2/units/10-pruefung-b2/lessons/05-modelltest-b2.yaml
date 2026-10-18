@@ -1,0 +1,386 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u10-modelltest-b2
+order_index: 5
+level: b2
+title:
+  vi: Đề mô phỏng Goethe-Zertifikat B2 (Modelltest B2)
+objectives:
+  - vi: Làm một lượt các dạng bài của bốn phần Lesen, Hören, Schreiben, Sprechen trình độ B2 trong khuôn khổ bài tập của ứng dụng.
+  - vi: Đọc bài báo, thư bạn đọc, quy chế và nghe bài nói, thảo luận để tìm ý chính, thái độ người viết/người nói và chi tiết.
+  - vi: Dùng đúng Redemittel của bài diễn đàn, thư trang trọng và phần thảo luận; tự kiểm tra bài viết, bài nói theo tiêu chí gợi ý.
+estimated_minutes: 27
+skills: [reading, listening, writing, speaking]
+prerequisites: [de:lesson:b2u10-sprechen]
+items:
+  - item: de:item:b2u10-g-textsorten-signale
+    role: reuse
+  - item: de:item:b2u10-g-signalwoerter-hoeren
+    role: reuse
+  - item: de:item:b2u10-g-textaufbau
+    role: reuse
+  - item: de:item:b2u10-g-moderation-redemittel
+    role: reuse
+  - item: de:item:b2u10-skeptisch
+    role: reuse
+  - item: de:item:b2u10-vertreten
+    role: reuse
+  - item: de:item:b2u10-gegenposition
+    role: reuse
+  - item: de:item:b2u10-anknuepfen
+    role: reuse
+  - item: de:item:b2u10-verfasser
+    role: reuse
+  - item: de:item:b1u10-zutreffen
+    role: reuse
+  - item: de:item:b1u10-g-formeller-brief
+    role: reuse
+  - item: de:item:b2u04-g-indirekte-rede
+    role: reuse
+  - item: de:item:b2u07-g-argumentation-redemittel
+    role: reuse
+  - item: de:item:b2u05-g-diskussion-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Bài này là một đề luyện ngắn mô phỏng bốn phần của Goethe-Zertifikat B2 – Lesen, Hören, Schreiben, Sprechen – đồng thời ôn cả unit: dấu hiệu loại văn bản, tín hiệu bài nói, bố cục bài viết và điều phối thảo luận. Đề do Linguo tự soạn, không phải đề thi thật."
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), Goethe-Zertifikat B2 gồm bốn phần: Lesen (năm dạng bài), Hören (bốn dạng), Schreiben (bài diễn đàn và thư trang trọng) và Sprechen (thi theo cặp, thuyết trình và thảo luận). Số câu, thời gian, cách tính điểm và việc thi từng phần riêng có thể thay đổi; trước khi đăng ký hãy xem tài liệu chính thức mới nhất."
+  - type: explain
+    text:
+      vi: "Lesen: xác định trước loại văn bản và giọng người viết (Bericht hay Kommentar, ủng hộ hay hoài nghi), rồi mới tìm chi tiết. Đáp án đúng thường diễn đạt lại ý của bài; phương án lặp nguyên chữ hay bị đảo nghĩa (nicht, kaum, nur, nicht für jede …)."
+  - type: explain
+    text:
+      vi: "Hören: đọc câu hỏi trước, nghe kỹ sau các tín hiệu Entscheidend ist, Was ich damit sagen will, Zusammenfassend. Trong thảo luận, ghi +, –, ? cho từng người và nhớ rằng ý thật thường nằm sau aber."
+  - type: explain
+    text:
+      vi: "Schreiben và Sprechen: ứng dụng không chấm tự động bài viết dài hay bài nói. Hãy viết ra giấy hoặc ghi âm, rồi tự kiểm tra theo bảng tiêu chí ở phần đọc thêm; trong bài tập, bạn luyện những câu then chốt."
+  - type: deep_explain
+    text:
+      vi: "Bảng tự kiểm (gợi ý của Linguo, không phải thang điểm chính thức). Bài diễn đàn: có mở bài, ý kiến rõ, ít nhất hai lý lẽ có ví dụ, một phản biện và đề xuất ở kết bài? Có từ nối (zudem, dagegen, deshalb, alles in allem) và không lặp từ? Thư trang trọng: lời chào và lời kết trang trọng, lý do viết, yêu cầu cụ thể bằng Konjunktiv II, Sie/Ihnen viết hoa, không khẩu ngữ? Bài nói: mở đầu nêu chủ đề và cấu trúc, nội dung có kinh nghiệm và ví dụ, kết luận; khi thảo luận có đồng ý, phản bác lịch sự, trao lời và tóm tắt? Mẹo chung: ghi lại lỗi bạn hay mắc (động từ cuối câu phụ, đuôi tính từ, giống danh từ) và kiểm tra riêng những lỗi đó ở cuối mỗi bài viết. Về thời gian, cách tính điểm và quy định phòng thi (được ghi chú hay không, mang gì vào), hãy đọc tài liệu chính thức hiện hành."
+  - type: example
+    target: Nach Angaben der Geschäftsführerin sind die Beschäftigten seltener krank, und die Firma habe kaum noch Probleme, neue Fachkräfte zu finden.
+    target_lang: de
+    translation:
+      vi: Theo bà giám đốc, nhân viên ít ốm hơn, và công ty hầu như không còn khó khăn trong việc tìm người lao động có chuyên môn.
+    note:
+      vi: "Dấu hiệu Bericht: nguồn tin (Nach Angaben …) và Konjunktiv I (habe) – người viết thuật lại, không đánh giá."
+  - type: example
+    target: "Ich halte ein komplettes Verbot für übertrieben. Was ich damit sagen will: Feste Zonen, in denen Feuerwerk erlaubt ist, wären ein fairer Kompromiss."
+    target_lang: de
+    translation:
+      vi: "Tôi cho rằng cấm hoàn toàn là quá mức. Ý tôi muốn nói là: những khu vực cố định được phép bắn pháo hoa sẽ là một thỏa hiệp công bằng."
+    note:
+      vi: "Thảo luận: ý kiến → Was ich damit sagen will → đề xuất bằng Konjunktiv II (wären)."
+  - type: example
+    target: "Sehr geehrte Damen und Herren, ich wäre Ihnen dankbar, wenn Sie mir mitteilen könnten, ob der Kurs auch online angeboten wird. Für Rückfragen stehe ich Ihnen gern zur Verfügung. Mit freundlichen Grüßen Minh Tran"
+    target_lang: de
+    translation:
+      vi: "Kính gửi quý ông bà, tôi sẽ rất biết ơn nếu quý vị có thể cho tôi biết khóa học có được tổ chức trực tuyến không. Nếu cần thêm thông tin, tôi luôn sẵn lòng. Trân trọng, Minh Tran"
+    note:
+      vi: "Khung thư trang trọng khi không biết tên người nhận: Sehr geehrte Damen und Herren; câu hỏi gián tiếp với ob, động từ cuối câu."
+  - type: example
+    target: "Darf ich direkt daran anknüpfen? Ich sehe das ähnlich wie Sie, gebe aber zu bedenken, dass solche Zonen kontrolliert werden müssen."
+    target_lang: de
+    translation:
+      vi: "Tôi xin nói tiếp ngay ý đó được không? Tôi thấy cũng giống như anh/chị, nhưng xin lưu ý rằng những khu vực như vậy cần được kiểm soát."
+    note:
+      vi: "Nối tiếp ý người kia (anknüpfen), đồng ý một phần rồi nêu lo ngại (Ich gebe zu bedenken, dass …, B2U05)."
+  - type: common_mistake
+    wrong: "Im Text steht: Das Modell ist nicht für jede Branche geeignet. → Das Modell ist für keine Branche geeignet."
+    right: "Im Text steht: Das Modell ist nicht für jede Branche geeignet. → Das Modell passt nicht zu allen Branchen."
+    target_lang: de
+    note:
+      vi: "nicht für jede = không phải cho mọi (một số thì không), khác với für keine = không cho ngành nào. Đọc kỹ phạm vi của phủ định."
+  - type: common_mistake
+    wrong: Sehr geehrter Damen und Herren,
+    right: Sehr geehrte Damen und Herren,
+    target_lang: de
+    note:
+      vi: "Damen und Herren là số nhiều nên tính từ có đuôi -e: geehrte. Sehr geehrter chỉ dùng với một người nam: Sehr geehrter Herr Weber."
+  - type: summary
+    points:
+      - vi: "Bốn phần: Lesen, Hören, Schreiben, Sprechen (mô tả tại thời điểm soạn – cần đối chiếu quy định hiện hành)."
+      - vi: "Đọc: Textsorte và giọng người viết trước, chi tiết sau; chú ý phạm vi phủ định."
+      - vi: "Nghe: tín hiệu Entscheidend ist / Was ich damit sagen will / Zusammenfassend; ý thật sau aber."
+      - vi: "Viết: bố cục ba phần, từ nối, không lặp từ; thư trang trọng với Konjunktiv II và lời chào chuẩn."
+      - vi: "Nói: trình bày có khung; thảo luận có đồng ý, phản bác lịch sự, trao lời, tóm tắt."
+exercises:
+  # ---------------- recognition: Lesen ----------------
+  - key: de:exercise:b2u10l5-mcq-lesen-viertagewoche
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-g-textsorten-signale
+    prompt:
+      stem: "Kiểu bài báo. \"Vier Tage arbeiten bei gleichem Gehalt: Eine Softwarefirma hat dieses Modell vor einem Jahr eingeführt. Die Bilanz fällt überwiegend positiv aus: Die Beschäftigten sind seltener krank, neue Fachkräfte findet man leichter. Ganz ohne Probleme verlief die Umstellung allerdings nicht, denn der Kundenservice muss weiterhin an fünf Tagen erreichbar sein. Die Geschäftsführerin räumt ein, das Modell sei nicht für jede Branche geeignet.\" Welche Aussage trifft zu?"
+      stem_lang: vi
+      options:
+        - { id: v1t, text: "Die Umstellung hat der Firma Vorteile gebracht, verlief aber nicht ohne Probleme.", lang: de }
+        - { id: v2t, text: "Seit der Umstellung verdienen die Beschäftigten weniger.", lang: de }
+        - { id: v3t, text: "Der Kundenservice ist jetzt nur noch an vier Tagen erreichbar.", lang: de }
+        - { id: v4t, text: "Laut der Geschäftsführerin passt das Modell zu allen Branchen.", lang: de }
+    answer:
+      correct_option_id: v1t
+    explanation:
+      vi: "Die Bilanz fällt überwiegend positiv aus (nhìn chung tích cực) + Ganz ohne Probleme verlief die Umstellung allerdings nicht (không hoàn toàn suôn sẻ) = phương án 1. Lương giữ nguyên (bei gleichem Gehalt); dịch vụ khách hàng vẫn phải hoạt động năm ngày; nicht für jede Branche = không phải ngành nào cũng hợp. Lời bà giám đốc được thuật bằng Konjunktiv I (sei) – dấu hiệu của bản tin."
+    display_answer: "Die Umstellung hat der Firma Vorteile gebracht, verlief aber nicht ohne Probleme."
+
+  - key: de:exercise:b2u10l5-mcq-lesen-leserbrief
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-skeptisch
+    prompt:
+      stem: "Kiểu bài ý kiến bạn đọc. \"Natürlich klingt es verlockend, nur noch vier Tage zu arbeiten. Doch wer profitiert eigentlich davon? Die Angestellten im Büro – ja. Die Pflegekraft, der Busfahrer und die Verkäuferin dagegen kaum. Bevor wir die Vier-Tage-Woche feiern, sollten wir dafür sorgen, dass sie nicht nur einer kleinen Gruppe nützt.\" – Karin M. Welche Haltung hat die Verfasserin?"
+      stem_lang: vi
+      options:
+        - { id: h1s, text: "Sie ist skeptisch, weil nicht alle Berufsgruppen von dem Modell profitieren.", lang: de }
+        - { id: h2b, text: "Sie ist begeistert und möchte das Modell sofort überall einführen.", lang: de }
+        - { id: h3n, text: "Sie informiert neutral, ohne eine eigene Meinung zu äußern.", lang: de }
+        - { id: h4a, text: "Sie lehnt jede Verkürzung der Arbeitszeit grundsätzlich ab.", lang: de }
+    answer:
+      correct_option_id: h1s
+    explanation:
+      vi: "Natürlich klingt es verlockend là nhượng bộ; câu hỏi tu từ Doch wer profitiert eigentlich davon? và ví dụ điều dưỡng, tài xế, người bán hàng cho thấy bà hoài nghi vì mô hình chỉ có lợi cho một nhóm. Bà không phản đối mọi việc giảm giờ làm, mà muốn nó công bằng hơn (sollten wir dafür sorgen …)."
+    display_answer: "Sie ist skeptisch, weil nicht alle Berufsgruppen von dem Modell profitieren."
+
+  - key: de:exercise:b2u10l5-mcq-lesen-hausordnung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-zutreffen
+    prompt:
+      stem: "Kiểu bài quy chế. \"Aus der Benutzungsordnung der Stadtbibliothek: Gruppenräume können für höchstens drei Stunden pro Tag reserviert werden. Eine Reservierung ist nur mit gültigem Bibliotheksausweis möglich. Wird ein reservierter Raum nicht innerhalb von fünfzehn Minuten nach Beginn der Reservierung genutzt, kann er an andere Besucher vergeben werden. Speisen sind in den Gruppenräumen nicht gestattet, Getränke in verschließbaren Flaschen sind erlaubt.\" Welche Aussage trifft zu?"
+      stem_lang: vi
+      options:
+        - { id: o1r, text: "Wer zwanzig Minuten zu spät kommt, kann seinen reservierten Raum verlieren.", lang: de }
+        - { id: o2r, text: "Gruppenräume kann man für einen ganzen Tag reservieren.", lang: de }
+        - { id: o3r, text: "Ohne Ausweis kann man reservieren, wenn man früh genug kommt.", lang: de }
+        - { id: o4r, text: "In den Gruppenräumen darf man überhaupt nichts trinken.", lang: de }
+    answer:
+      correct_option_id: o1r
+    explanation:
+      vi: "Phòng không được dùng trong vòng mười lăm phút thì có thể giao cho người khác – đến muộn hai mươi phút có thể mất phòng. Tối đa ba tiếng mỗi ngày; phải có thẻ thư viện còn hạn; đồ uống trong chai có nắp đậy thì được phép."
+    display_answer: "Wer zwanzig Minuten zu spät kommt, kann seinen reservierten Raum verlieren."
+
+  # ---------------- recognition: Hören ----------------
+  - key: de:exercise:b2u10l5-listen-vortrag-kochen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u10-g-signalwoerter-hoeren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich möchte vorausschicken, dass ich keine Ernährungswissenschaftlerin bin, sondern Köchin. Viele meinen, gesund zu kochen sei teuer. Im Gegensatz dazu zeigt meine Erfahrung, dass Gemüse der Saison oft sogar günstiger ist. Entscheidend ist also nicht der Preis, sondern die Planung. Zusammenfassend lässt sich sagen, dass man gesünder isst und Geld spart, wenn man seine Woche plant.
+      options:
+        - { id: k1p, text: "Điều quan trọng nhất để ăn uống lành mạnh là lên kế hoạch, không phải giá cả.", lang: vi }
+        - { id: k2p, text: "Ăn uống lành mạnh nhất định đắt hơn.", lang: vi }
+        - { id: k3p, text: "Người nói là một nhà khoa học dinh dưỡng.", lang: vi }
+        - { id: k4p, text: "Rau theo mùa thường đắt hơn rau nhập khẩu.", lang: vi }
+    answer:
+      correct_option_id: k1p
+    explanation:
+      vi: "Kiểu bài thuyết trình. Sau Ich möchte vorausschicken: người nói là đầu bếp, không phải nhà khoa học dinh dưỡng. Viele meinen … sei teuer là ý của người khác; Im Gegensatz dazu và Entscheidend ist … nicht der Preis, sondern die Planung cho ý chính, được nhắc lại sau Zusammenfassend."
+    display_answer: "Điều quan trọng nhất để ăn uống lành mạnh là lên kế hoạch, không phải giá cả."
+
+  - key: de:exercise:b2u10l5-listen-diskussion-feuerwerk
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u10-vertreten
+    prompt:
+      audio_asset_id: null
+      fallback_text: Herr Weber, Sie befürworten ein Verbot von privatem Feuerwerk an Silvester. Frau Seidel, Sie vertreten die Gegenposition. – Richtig. Ich verstehe die Sorgen wegen Müll und Lärm, aber ein komplettes Verbot geht mir zu weit. Was ich damit sagen will, ist Folgendes. Feste Zonen, in denen Feuerwerk erlaubt ist, wären ein fairer Kompromiss.
+      options:
+        - { id: s1f, text: "Bà Seidel phản đối cấm hoàn toàn và đề xuất những khu vực cố định được phép bắn pháo hoa.", lang: vi }
+        - { id: s2f, text: "Bà Seidel ủng hộ cấm hoàn toàn pháo hoa tư nhân.", lang: vi }
+        - { id: s3f, text: "Bà Seidel cho rằng rác và tiếng ồn không phải là vấn đề.", lang: vi }
+        - { id: s4f, text: "Ông Weber và bà Seidel có cùng quan điểm.", lang: vi }
+    answer:
+      correct_option_id: s1f
+    explanation:
+      vi: "Kiểu bài thảo luận – ai nói gì. Bà Seidel vertritt die Gegenposition (giữ quan điểm đối lập với ông Weber). Bà hiểu lo ngại về rác và tiếng ồn, nhưng cấm hoàn toàn là quá mức; sau Was ich damit sagen will là đề xuất: feste Zonen."
+    display_answer: "Bà Seidel phản đối cấm hoàn toàn và đề xuất những khu vực cố định được phép bắn pháo hoa."
+
+  # ---------------- recall: Schreiben ----------------
+  - key: de:exercise:b2u10l5-fill-brief-formell
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      template: "Sehr {{b1}} Damen und Herren, ich wäre Ihnen dankbar, wenn Sie mir {{b2}} könnten, ob der Kurs auch online angeboten wird. Für Rückfragen stehe ich Ihnen gern zur {{b3}}. Mit freundlichen {{b4}}"
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 10 }
+        - { id: b4, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [mitteilen, sagen]
+        b3: [Verfügung]
+        b4: [Grüßen]
+    known_wrong:
+      - answer: geehrter
+        feedback_vi: "Damen und Herren là số nhiều: Sehr geehrte. geehrter chỉ dùng với một người nam (Sehr geehrter Herr …)."
+        error_tag: adj_ending
+      - answer: Gruß
+        feedback_vi: "Sau freundlichen cần số nhiều Dativ: Mit freundlichen Grüßen (hoặc dạng số ít đầy đủ Mit freundlichem Gruß)."
+        error_tag: plural_form
+      - answer: mitteilt
+        feedback_vi: "Sau könnten, động từ chính ở nguyên thể: mitteilen."
+        error_tag: verb_form
+    explanation:
+      vi: "Khung thư trang trọng: Sehr geehrte Damen und Herren (đuôi -e vì số nhiều), Ich wäre Ihnen dankbar, wenn Sie mir mitteilen könnten, ob …, Für Rückfragen stehe ich Ihnen gern zur Verfügung, Mit freundlichen Grüßen."
+    display_answer: "Sehr geehrte Damen und Herren, ich wäre Ihnen dankbar, wenn Sie mir mitteilen könnten, ob der Kurs auch online angeboten wird. Für Rückfragen stehe ich Ihnen gern zur Verfügung. Mit freundlichen Grüßen"
+
+  - key: de:exercise:b2u10l5-fill-forum-aufbau
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      template: "{{b1}} ein Verbot von privatem Feuerwerk spricht, dass es weniger Müll und Verletzungen gibt. {{b2}} lässt sich einwenden, dass Feuerwerk für viele Menschen zur Tradition gehört. {{b3}} in allem halte ich feste Zonen für die beste Lösung."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Für]
+        b2: [Dagegen]
+        b3: [Alles]
+    known_wrong:
+      - answer: Gegen
+        feedback_vi: "Lý lẽ \"ít rác, ít thương tích\" ủng hộ lệnh cấm: Für ein Verbot spricht, dass …"
+        error_tag: word_choice
+      - answer: Dafür
+        feedback_vi: "Câu này nêu ý ngược lại (truyền thống), nên mở bằng Dagegen lässt sich einwenden."
+        error_tag: word_choice
+    explanation:
+      vi: "Bố cục lập luận (B2U07): ủng hộ – Für … spricht, dass …; phản biện – Dagegen lässt sich einwenden, dass …; kết luận – Alles in allem …"
+    display_answer: "Für ein Verbot von privatem Feuerwerk spricht, dass es weniger Müll und Verletzungen gibt. Dagegen lässt sich einwenden, dass Feuerwerk für viele Menschen zur Tradition gehört. Alles in allem halte ich feste Zonen für die beste Lösung."
+
+  - key: de:exercise:b2u10l5-tr-ki-branche
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-indirekte-rede
+    prompt:
+      source_text: "Bà Petersen nói rằng mô hình này không phù hợp với mọi ngành. (thuật lại kiểu bản tin, Konjunktiv I; bắt đầu bằng Frau Petersen sagt, …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Frau Petersen sagt, das Modell sei nicht für jede Branche geeignet.
+        - Frau Petersen sagt, das Modell sei nicht für alle Branchen geeignet.
+        - Frau Petersen sagt, dass das Modell nicht für jede Branche geeignet sei.
+        - Frau Petersen sagt, dass das Modell nicht für alle Branchen geeignet sei.
+        - Frau Petersen sagt, dieses Modell sei nicht für jede Branche geeignet.
+        - Frau Petersen sagt, dieses Modell sei nicht für alle Branchen geeignet.
+    known_wrong:
+      - answer: Frau Petersen sagt, das Modell ist nicht für jede Branche geeignet.
+        feedback_vi: "Đề yêu cầu Konjunktiv I như trong bản tin: das Modell sei …"
+        error_tag: konjunktiv_form
+      - answer: Frau Petersen sagt, das Modell sei für keine Branche geeignet.
+        feedback_vi: "\"không phù hợp với mọi ngành\" = nicht für jede Branche; für keine Branche là không phù hợp với ngành nào cả."
+        error_tag: meaning
+      - answer: Frau Petersen sagt, dass das Modell sei nicht für jede Branche geeignet.
+        feedback_vi: "Sau dass, động từ chia sei đứng cuối: dass das Modell nicht für jede Branche geeignet sei."
+        error_tag: verb_position
+    explanation:
+      vi: "Lời gián tiếp trong bản tin: Konjunktiv I của sein là sei. Không có dass thì sei đứng ở vị trí 2; có dass thì sei ở cuối. Chú ý phạm vi phủ định: nicht für jede (không phải mọi) ≠ für keine (không ngành nào)."
+    display_answer: Frau Petersen sagt, das Modell sei nicht für jede Branche geeignet.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u10l5-wb-zusammenfassend
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-g-textaufbau
+    prompt:
+      instruction: "Viết câu kết của bài diễn đàn: \"Zusammenfassend lässt sich sagen, …\" – \"… rằng mô hình này không phù hợp với mọi ngành.\""
+      tokens:
+        - { id: z-geeignet, text: geeignet }
+        - { id: z-modell, text: Modell }
+        - { id: z-jede, text: jede }
+        - { id: z-dass, text: dass }
+        - { id: z-ist, text: ist }
+        - { id: z-fuer, text: für }
+        - { id: z-das, text: das }
+        - { id: z-branche, text: Branche }
+        - { id: z-nicht, text: nicht }
+    answer:
+      orders:
+        - [z-dass, z-das, z-modell, z-nicht, z-fuer, z-jede, z-branche, z-geeignet, z-ist]
+    explanation:
+      vi: "Câu kết mở bằng Zusammenfassend lässt sich sagen, dass …; trong câu dass, động từ chia ist đứng cuối, sau tính từ geeignet. nicht đứng trước für jede Branche để phủ định phạm vi \"mọi ngành\"."
+    display_answer: Zusammenfassend lässt sich sagen, dass das Modell nicht für jede Branche geeignet ist.
+
+  - key: de:exercise:b2u10l5-wb-kompromiss
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-g-moderation-redemittel
+    prompt:
+      instruction: "Kết thúc phần thảo luận bằng một câu tóm tắt: \"Ich fasse kurz zusammen: Wir sind uns einig, …\" – \"… rằng những khu vực cố định sẽ là một thỏa hiệp tốt.\""
+      tokens:
+        - { id: c-kompromiss, text: Kompromiss }
+        - { id: c-dass, text: dass }
+        - { id: c-waeren, text: wären }
+        - { id: c-feste, text: feste }
+        - { id: c-guter, text: guter }
+        - { id: c-zonen, text: Zonen }
+        - { id: c-ein, text: ein }
+    answer:
+      orders:
+        - [c-dass, c-feste, c-zonen, c-ein, c-guter, c-kompromiss, c-waeren]
+    explanation:
+      vi: "Ich fasse kurz zusammen mở phần tóm tắt. Trong câu dass, chủ ngữ feste Zonen đứng trước, động từ chia wären (Konjunktiv II: sẽ là) đứng cuối; ein guter Kompromiss là Nominativ vì đi với sein."
+    display_answer: "Ich fasse kurz zusammen: Wir sind uns einig, dass feste Zonen ein guter Kompromiss wären."
+
+  - key: de:exercise:b2u10l5-tr-anknuepfen-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u10-anknuepfen
+    prompt:
+      source_text: Darf ich direkt daran anknüpfen? Ich sehe das ähnlich wie Sie.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi xin nói tiếp ngay ý đó được không? Tôi cũng thấy giống như anh/chị.
+        - Tôi có thể nói tiếp ngay ý đó không? Tôi cũng thấy giống anh/chị.
+        - Tôi xin nối tiếp ngay ý đó được không? Tôi thấy tương tự như anh/chị.
+        - Tôi xin nói tiếp ý đó được không? Tôi cũng nghĩ giống như anh/chị.
+        - Cho phép tôi nói tiếp ngay ý này được không? Tôi thấy cũng giống như anh chị.
+        - Tôi xin nói tiếp ngay ý đó được không? Tôi thấy điều đó tương tự như anh chị.
+        - Tôi nói tiếp ngay ý đó được không? Tôi cũng nghĩ như ông/bà.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi xin ngắt lời anh/chị được không? Tôi thấy khác anh/chị.
+        feedback_vi: "anknüpfen là nối tiếp, không phải ngắt lời; ähnlich wie Sie = giống như anh/chị, không phải khác."
+        error_tag: meaning
+    explanation:
+      vi: "Darf ich direkt daran anknüpfen? = xin nói tiếp ngay ý (người kia vừa nói). Ich sehe das ähnlich wie Sie = tôi thấy cũng tương tự như anh/chị – đồng ý trước khi bổ sung ý mới."
+    display_answer: Tôi xin nói tiếp ngay ý đó được không? Tôi cũng thấy giống như anh/chị.

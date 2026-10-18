@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u10-lesen
+order_index: 1
+level: b2
+title:
+  vi: Đọc hiểu – loại văn bản và ý định tác giả (Textsorten und Absichten)
+objectives:
+  - vi: Nhận diện bản tin (Bericht), bài bình luận (Kommentar) và phóng sự (Reportage) qua dấu hiệu ngôn ngữ như Präteritum, Konjunktiv I, từ đánh giá và thì hiện tại miêu tả.
+  - vi: Nhận ra ý định của tác giả (phê phán, ủng hộ, mỉa mai), kể cả khi nó chỉ được nói ngầm.
+  - vi: Làm quen năm dạng bài đọc B2 (ý kiến nhiều người, bài báo chọn đáp án, điền câu vào văn bản, ghép ý kiến, quy chế – hướng dẫn) với chiến lược tìm dấu hiệu.
+estimated_minutes: 22
+skills: [reading, vocabulary]
+prerequisites: [de:lesson:b2u09-wiederholung]
+items:
+  - item: de:item:b2u10-g-textsorten-signale
+  - item: de:item:b2u10-leitartikel
+  - item: de:item:b2u10-reportage
+  - item: de:item:b2u10-sachlich
+  - item: de:item:b2u10-absicht
+  - item: de:item:b2u10-verfasser
+  - item: de:item:b2u10-kernaussage
+  - item: de:item:b2u10-implizit
+  - item: de:item:b2u10-explizit
+  - item: de:item:b2u10-kritisieren
+  - item: de:item:b2u10-einseitig
+  - item: de:item:b2u10-neutral
+  - item: de:item:b2u10-darstellung
+  - item: de:item:b2u10-textsorte
+  - item: de:item:b2u10-zielgruppe
+  - item: de:item:b2u10-uebertreibung
+  - item: de:item:b2u10-kolumne
+  - item: de:item:a2u07-g-es-geht-um
+    role: reuse
+  - item: de:item:b1u01-g-praeteritum-perfekt-gebrauch
+    role: reuse
+  - item: de:item:b1u10-g-textverweise
+    role: reuse
+  - item: de:item:b2u02-g-partizipialattribut-erweitert
+    role: reuse
+  - item: de:item:b2u04-g-konjunktiv-i-formen
+    role: reuse
+  - item: de:item:b2u04-g-indirekte-rede-vergangenheit
+    role: reuse
+  - item: de:item:b2u04-g-sollen-wollen-fremd
+    role: reuse
+  - item: de:item:b2u06-g-nominalisierte-partizipien
+    role: reuse
+  - item: de:item:b2u06-g-gendergerechte-sprache
+    role: reuse
+  - item: de:item:b2u07-befuerworten
+    role: reuse
+  - item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    role: reuse
+  - item: de:item:b2u09-g-dativ-praep-formal
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, đọc một đoạn báo tiếng Đức, bạn nói được đó là bản tin, bình luận hay phóng sự và tác giả muốn gì, ví dụ: \"Die Ministerin sagte, das Gesetz sei notwendig.\" – Konjunktiv I cho thấy người viết chỉ thuật lại lời người khác, chưa nói ý mình."
+  - type: explain
+    text:
+      vi: "Bản tin (der Bericht, die Meldung) viết sachlich: ai, làm gì, khi nào, ở đâu. Người viết kể bằng Präteritum (văn viết, B1U01) và thuật lời người khác bằng Konjunktiv I: Sie sagte, sie habe keine Zeit. Trong bản tin hầu như không có từ đánh giá như leider, endlich, zum Glück."
+  - type: explain
+    text:
+      vi: "Bài bình luận (der Kommentar, der Leitartikel, die Kolumne) nói ý kiến của người viết. Dấu hiệu: từ đánh giá (unverständlich, überfällig), cụm meiner Ansicht nach, Konjunktiv II (Es wäre besser, …; Die Stadt sollte …) và tiểu từ (ja, doch, eben). Giống như trong tiếng Việt, những chữ \"rõ ràng là\", \"đáng tiếc\" cho biết người viết đứng về phía nào."
+  - type: explain
+    text:
+      vi: "Phóng sự (die Reportage) kéo người đọc đến tận nơi: thì hiện tại, cảnh cụ thể, tiếng động, mùi, lời nói trực tiếp của người thật. Đoạn mở đầu kiểu Es ist sechs Uhr morgens … thường gặp ở phóng sự hơn là ở bản tin."
+  - type: explain
+    text:
+      vi: "Ý định tác giả (die Absicht) có thể explizit (Ich halte das für falsch) hoặc implizit: câu hỏi tu từ (Braucht die Stadt wirklich ein drittes Stadion?), lời mỉa mai và sự phóng đại. Khi gặp lời khen quá mức trong một bài bình luận, hãy tự hỏi: tác giả khen thật hay đang mỉa mai?"
+  - type: explain
+    text:
+      vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), phần đọc B2 có năm dạng: ý kiến của nhiều người về một chủ đề, bài báo có câu hỏi chọn đáp án, điền câu vào chỗ trống trong văn bản, ghép ý kiến hoặc bình luận, và quy chế hay hướng dẫn. Số câu, thời gian và cách chấm có thể thay đổi; trước khi thi hãy xem tài liệu chính thức mới nhất."
+  - type: deep_explain
+    text:
+      vi: "Ở B2, văn bản đọc dày đặc cấu trúc bạn đã học: cụm phân từ mở rộng (die von der Stadt geplanten Maßnahmen, B2U02), Konjunktiv I (er sei, sie habe … gesagt, B2U04), sollen/wollen chỉ thông tin chưa kiểm chứng (Der Täter soll geflohen sein), phân từ danh từ hóa (die Reisenden, die Betroffenen, B2U06) và cách viết trung lập về giới (Bürgerinnen und Bürger, Studierende). Đừng dịch từng chữ: hãy xác định nhanh ai nói, nói với giọng gì, rồi mới đọc chi tiết. Với dạng điền câu vào văn bản, từ quy chiếu là chìa khóa: câu sau khoảng trống bắt đầu bằng Dadurch hay Dies thì câu điền vào phải chứa đúng việc mà từ đó trỏ tới. Với dạng ghép ý kiến, đánh dấu từng người là dafür, dagegen hay ambivalent (vừa ủng hộ vừa lo ngại); các câu nhượng bộ như Schön und gut, aber … thường mở đầu cho sự phản đối."
+  - type: example
+    target: Am Montag beschloss der Stadtrat, die Kita-Gebühren zu erhöhen. Die Bürgermeisterin erklärte, die Stadt habe keine andere Wahl.
+    target_lang: de
+    translation:
+      vi: Hôm thứ Hai, hội đồng thành phố quyết định tăng học phí nhà trẻ. Bà thị trưởng giải thích rằng thành phố không còn lựa chọn nào khác.
+    note:
+      vi: "Bericht: Präteritum (beschloss, erklärte) và Konjunktiv I (habe) để thuật lời bà thị trưởng; người viết không đánh giá."
+  - type: example
+    target: Wieder einmal sollen die Familien zahlen. Für den neuen Rathausplatz war dagegen genug Geld da – erstaunlich, wie schnell man sparen kann, wenn es um Kinder geht.
+    target_lang: de
+    translation:
+      vi: Lại một lần nữa các gia đình phải trả tiền. Còn cho quảng trường tòa thị chính mới thì lại có đủ tiền – thật đáng kinh ngạc khi người ta tiết kiệm nhanh đến thế, mỗi khi chuyện liên quan đến trẻ em.
+    note:
+      vi: "Kommentar có giọng mỉa mai: erstaunlich ở đây không phải lời khen mà là phê phán implizit. es geht um + Akkusativ (A2U07)."
+  - type: example
+    target: Es ist kurz nach fünf. In der Bäckerei von Familie Yilmaz ist es warm, aus dem Ofen kommen die ersten Brötchen, und das Radio läuft leise.
+    target_lang: de
+    translation:
+      vi: Lúc ấy vừa quá năm giờ. Trong tiệm bánh của gia đình Yilmaz trời ấm áp, những chiếc bánh mì nhỏ đầu tiên ra lò, và radio đang bật khe khẽ.
+    note:
+      vi: "Reportage: thì hiện tại, cảnh cụ thể, chi tiết giác quan, người thật – đặt người đọc vào giữa khung cảnh."
+  - type: example
+    target: Nach Angaben der Polizei wurden zwei Reisende leicht verletzt. Der Fahrer soll zu schnell gefahren sein.
+    target_lang: de
+    translation:
+      vi: Theo thông tin của cảnh sát, hai hành khách bị thương nhẹ. Nghe nói người lái xe đã chạy quá nhanh.
+    note:
+      vi: "die Reisenden: phân từ danh từ hóa (B2U06), sau zwei có đuôi -e như tính từ: zwei Reisende. soll … gefahren sein = thông tin chưa được kiểm chứng (B2U04)."
+  - type: example
+    target: Gemäß dem Beschluss des Stadtrats tritt die neue Regelung im Januar in Kraft.
+    target_lang: de
+    translation:
+      vi: Theo nghị quyết của hội đồng thành phố, quy định mới có hiệu lực từ tháng Giêng.
+    note:
+      vi: "Văn phong bản tin, quy chế: giới từ trang trọng gemäß + Dativ và cụm động từ – danh từ in Kraft treten (B2U09), không có từ đánh giá."
+  - type: example
+    target: Die Stadt lädt alle Bürgerinnen und Bürger zu einer Informationsveranstaltung ein.
+    target_lang: de
+    translation:
+      vi: Thành phố mời toàn thể người dân đến một buổi thông tin.
+    note:
+      vi: "Bürgerinnen und Bürger: gọi cả hai giới, kiểu viết hay gặp trong thông báo chính thức (B2U06)."
+  - type: common_mistake
+    wrong: "Im Bericht steht: Die Ministerin sagte, das Gesetz sei notwendig. Also findet auch der Verfasser das Gesetz notwendig."
+    right: "Im Bericht steht: Die Ministerin sagte, das Gesetz sei notwendig. Das ist die Meinung der Ministerin, nicht die des Verfassers."
+    target_lang: de
+    note:
+      vi: "Konjunktiv I thuật lại lời người khác. Đừng nhầm ý kiến của người được trích dẫn với ý kiến của người viết."
+  - type: common_mistake
+    wrong: "Die Kommentatorin schreibt: Was für eine großartige Idee, noch ein Parkhaus mitten in der Altstadt! Sie befürwortet das Parkhaus."
+    right: "Die Kommentatorin schreibt: Was für eine großartige Idee, noch ein Parkhaus mitten in der Altstadt! Sie kritisiert das Parkhaus ironisch."
+    target_lang: de
+    note:
+      vi: "Hiểu lời mỉa mai theo nghĩa đen là lỗi hay gặp. Lời khen quá mức cộng với chi tiết vô lý (noch ein Parkhaus mitten in der Altstadt) thường là dấu hiệu mỉa mai."
+  - type: common_mistake
+    wrong: "Der Täter soll geflohen sein. → Der Täter muss fliehen."
+    right: "Der Täter soll geflohen sein. → Man sagt, dass der Täter geflohen ist."
+    target_lang: de
+    note:
+      vi: "sollen + Infinitiv Perfekt trong bản tin không phải \"phải\" mà là \"nghe nói, theo tin chưa kiểm chứng\"."
+  - type: summary
+    points:
+      - vi: "Bericht: sachlich, Präteritum, Konjunktiv I (sei, habe) để thuật lời người khác."
+      - vi: "Kommentar, Leitartikel, Kolumne: từ đánh giá, meiner Ansicht nach, wäre/sollte, ja/doch."
+      - vi: "Reportage: thì hiện tại, cảnh cụ thể, chi tiết giác quan."
+      - vi: "Ý định: kritisieren, befürworten, ironisch darstellen – explizit hoặc implizit (câu hỏi tu từ, phóng đại)."
+      - vi: "Đọc B2: xác định Textsorte và giọng văn trước, rồi mới tìm chi tiết; dùng từ quy chiếu cho dạng điền câu."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u10l1-mcq-textsorte-bericht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u10-g-textsorten-signale
+    prompt:
+      stem: "Đọc đoạn văn rồi chọn loại văn bản. \"Am Montagabend hat der Stadtrat beschlossen, die Gebühren für Kitas ab Januar zu erhöhen. Die Bürgermeisterin erklärte, die Stadt habe keine andere Wahl. Elternvertreter kündigten Proteste an.\" Um welche Textsorte handelt es sich?"
+      stem_lang: vi
+      options:
+        - { id: t1b, text: "ein Bericht", lang: de }
+        - { id: t2k, text: "ein Kommentar", lang: de }
+        - { id: t3r, text: "eine Reportage", lang: de }
+        - { id: t4g, text: "eine Glosse", lang: de }
+    answer:
+      correct_option_id: t1b
+    explanation:
+      vi: "Đoạn văn chỉ thuật lại sự việc: Präteritum (erklärte, kündigten … an), lời bà thị trưởng ở Konjunktiv I (habe) và không có từ đánh giá nào. Bình luận hay bài châm biếm (Glosse) sẽ có ý kiến của người viết; phóng sự sẽ miêu tả cảnh ở thì hiện tại."
+    display_answer: ein Bericht
+
+  - key: de:exercise:b2u10l1-mcq-absicht-ironie
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u10-absicht
+    prompt:
+      stem: "Đọc trích đoạn bình luận: \"Wieder einmal sollen die Familien zahlen. Natürlich ist die Kasse der Stadt leer – das ist sie ja immer, wenn es um Kinder geht. Für den neuen Rathausplatz war dagegen genug Geld da.\" Welche Absicht hat die Verfasserin?"
+      stem_lang: vi
+      options:
+        - { id: a1k, text: "Sie kritisiert die Entscheidung der Stadt mit Ironie.", lang: de }
+        - { id: a2b, text: "Sie befürwortet die höheren Gebühren.", lang: de }
+        - { id: a3n, text: "Sie informiert neutral über die Kosten des Rathausplatzes.", lang: de }
+        - { id: a4l, text: "Sie lobt die Stadt, weil sie spart.", lang: de }
+    answer:
+      correct_option_id: a1k
+    explanation:
+      vi: "Natürlich … das ist sie ja immer, wenn es um Kinder geht là lời mỉa mai: tác giả không tin rằng thành phố hết tiền thật. Chi tiết đối lập (có đủ tiền cho quảng trường tòa thị chính) là lời phê phán ngầm. Văn bản có giọng đánh giá rõ nên không phải thông tin trung lập."
+    display_answer: "Sie kritisiert die Entscheidung der Stadt mit Ironie."
+
+  - key: de:exercise:b2u10l1-mcq-rhetorische-frage
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u10-implizit
+    prompt:
+      stem: "Tác giả kết thúc bài bình luận bằng câu: \"Braucht eine Stadt mit geschlossenen Schwimmbädern wirklich ein drittes Fußballstadion?\" Lời phê phán ở đây là gì?"
+      stem_lang: vi
+      options:
+        - { id: i1m, text: "implizit", lang: de }
+        - { id: i2x, text: "explizit", lang: de }
+        - { id: i3s, text: "sachlich und neutral", lang: de }
+        - { id: i4z, text: "zustimmend", lang: de }
+    answer:
+      correct_option_id: i1m
+    explanation:
+      vi: "Đây là câu hỏi tu từ: tác giả không cần câu trả lời mà muốn người đọc tự nghĩ \"không, không cần\". Lời phê phán không được nói thẳng (Ich bin gegen das Stadion) nên là implizit."
+    display_answer: implizit
+
+  - key: de:exercise:b2u10l1-mcq-soll-geflohen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u04-g-sollen-wollen-fremd
+    prompt:
+      stem: "Trong một bản tin: \"Nach Angaben von Zeugen soll der Täter mit einem gestohlenen Fahrrad geflohen sein.\" Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s1n, text: "Theo lời nhân chứng, thủ phạm đã bỏ trốn bằng một chiếc xe đạp bị đánh cắp; tin này chưa được kiểm chứng.", lang: vi }
+        - { id: s2p, text: "Thủ phạm phải bỏ trốn bằng một chiếc xe đạp bị đánh cắp.", lang: vi }
+        - { id: s3w, text: "Thủ phạm muốn bỏ trốn bằng một chiếc xe đạp bị đánh cắp.", lang: vi }
+        - { id: s4f, text: "Cảnh sát đã xác nhận thủ phạm bỏ trốn bằng xe đạp.", lang: vi }
+    answer:
+      correct_option_id: s1n
+    explanation:
+      vi: "sollen + Infinitiv Perfekt (geflohen sein) trong bản tin nghĩa là \"nghe nói, theo người khác\" – người viết không khẳng định. Không phải nghĩa \"phải\" hay \"muốn\", và nguồn tin là nhân chứng, không phải cảnh sát xác nhận."
+    display_answer: "Theo lời nhân chứng, thủ phạm đã bỏ trốn bằng một chiếc xe đạp bị đánh cắp; tin này chưa được kiểm chứng."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u10l1-fill-bericht-ki
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-indirekte-rede-vergangenheit
+    prompt:
+      template: "Die Ministerin sagte, das neue Gesetz {{b1}} (sein, Konjunktiv I) notwendig. Sie {{b2}} (betonen, Präteritum) außerdem, man {{b3}} (haben, Konjunktiv I) lange darüber diskutiert."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [sei]
+        b2: [betonte]
+        b3: [habe]
+    known_wrong:
+      - answer: ist
+        feedback_vi: "Đề yêu cầu Konjunktiv I của sein: er/sie/es sei – dạng điển hình của bản tin khi thuật lời."
+        error_tag: konjunktiv_form
+      - answer: wäre
+        feedback_vi: "wäre là Konjunktiv II. Ở đây đề yêu cầu Konjunktiv I: sei."
+        error_tag: konjunktiv_form
+      - answer: hat
+        feedback_vi: "Đề yêu cầu Konjunktiv I của haben: man habe … diskutiert."
+        error_tag: konjunktiv_form
+      - answer: betont
+        feedback_vi: "Đề yêu cầu Präteritum: sie betonte."
+        error_tag: verb_form
+    explanation:
+      vi: "Bản tin kể bằng Präteritum (betonte) và thuật lời bằng Konjunktiv I: das Gesetz sei notwendig. Lời gốc nói về quá khứ (Wir haben lange diskutiert) được thuật bằng habe + Partizip II (B2U04)."
+    display_answer: "Die Ministerin sagte, das neue Gesetz sei notwendig. Sie betonte außerdem, man habe lange darüber diskutiert."
+
+  - key: de:exercise:b2u10l1-tr-einseitig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u10-einseitig
+    prompt:
+      source_text: "Bài bình luận rất phiến diện, vì nó chỉ nêu các nhược điểm. (dùng weil)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Kommentar ist sehr einseitig, weil er nur die Nachteile nennt.
+        - Der Kommentar ist sehr einseitig, weil er nur Nachteile nennt.
+        - Der Kommentar ist sehr einseitig, weil er nur die Nachteile erwähnt.
+        - Der Kommentar ist sehr einseitig, weil er nur Nachteile erwähnt.
+        - Der Kommentar ist sehr einseitig, weil er nur die Nachteile aufzählt.
+    known_wrong:
+      - answer: Der Kommentar ist sehr einseitig, weil er nennt nur die Nachteile.
+        feedback_vi: "Trong câu phụ weil, động từ chia đứng cuối: weil er nur die Nachteile nennt."
+        error_tag: verb_position
+      - answer: Der Kommentar ist sehr einseitig, weil es nur die Nachteile nennt.
+        feedback_vi: "der Kommentar là giống đực, nên đại từ thay thế là er."
+        error_tag: gender
+    explanation:
+      vi: "einseitig = phiến diện, chỉ nhìn một phía. Sau weil, động từ nennt đứng cuối; đại từ er thay cho der Kommentar."
+    display_answer: Der Kommentar ist sehr einseitig, weil er nur die Nachteile nennt.
+
+  - key: de:exercise:b2u10l1-tr-implizit-vi
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u10-explizit
+    prompt:
+      source_text: Die Verfasserin kritisiert die Regierung nicht explizit, sondern nur implizit.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nữ tác giả không phê phán chính phủ một cách rõ ràng mà chỉ phê phán ngầm.
+        - Nữ tác giả không phê phán chính phủ rõ ràng mà chỉ ngầm phê phán.
+        - Tác giả không phê phán chính phủ một cách rõ ràng mà chỉ phê phán ngầm.
+        - Tác giả không phê phán chính phủ rõ ràng mà chỉ ngầm phê phán.
+        - Nữ tác giả không chỉ trích chính phủ một cách công khai mà chỉ chỉ trích ngầm.
+        - Tác giả không chỉ trích chính phủ trực tiếp mà chỉ chỉ trích ngầm.
+        - Người viết không phê phán chính phủ một cách rõ ràng mà chỉ phê phán ngầm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nữ tác giả phê phán chính phủ một cách rõ ràng.
+        feedback_vi: "nicht explizit = không rõ ràng; câu gốc nói tác giả chỉ phê phán ngầm."
+        error_tag: meaning
+    explanation:
+      vi: "nicht …, sondern … = không phải …, mà là … explizit = nói thẳng, rõ ràng; implizit = ngầm, hàm ý. Die Verfasserin là người viết nữ."
+    display_answer: Nữ tác giả không phê phán chính phủ một cách rõ ràng mà chỉ phê phán ngầm.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u10l1-wb-partizipialattribut
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-partizipialattribut-erweitert
+    prompt:
+      instruction: "Hoàn thành câu bằng một cụm phân từ mở rộng: \"Der Kommentar kritisiert …\" – \"… các biện pháp mà thành phố đã lên kế hoạch vào mùa hè.\""
+      tokens:
+        - { id: p-geplanten, text: geplanten }
+        - { id: p-stadt, text: Stadt }
+        - { id: p-die, text: die }
+        - { id: p-sommer, text: Sommer }
+        - { id: p-massnahmen, text: Maßnahmen }
+        - { id: p-von, text: von }
+        - { id: p-im, text: im }
+        - { id: p-der, text: der }
+    answer:
+      orders:
+        - [p-die, p-von, p-der, p-stadt, p-im, p-sommer, p-geplanten, p-massnahmen]
+        - [p-die, p-im, p-sommer, p-von, p-der, p-stadt, p-geplanten, p-massnahmen]
+    explanation:
+      vi: "Khung là die … Maßnahmen; phần giữa là bổ ngữ (von der Stadt, im Sommer) rồi Partizip II có đuôi tính từ geplanten đứng ngay trước danh từ. Hai bổ ngữ có thể đổi chỗ cho nhau (B2U02)."
+    display_answer: Der Kommentar kritisiert die von der Stadt im Sommer geplanten Maßnahmen.
+
+  - key: de:exercise:b2u10l1-mcq-meinungen-tempo30
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-befuerworten
+    prompt:
+      stem: "Kiểu bài ghép ý kiến. Chủ đề: Tempo 30 in der ganzen Stadt. Jonas: \"Endlich! Weniger Lärm, weniger Unfälle – ich verstehe nicht, warum man so lange gewartet hat.\" Petra: \"Schön und gut, aber wer täglich mit dem Auto zur Arbeit pendelt, verliert so jeden Tag eine Viertelstunde. Das kann doch niemand ernsthaft wollen.\" Aylin: \"Ich fahre ohnehin Rad. Wie schnell die Autos fahren, ist mir eigentlich egal, solange es sichere Radwege gibt.\" Wer befürwortet Tempo 30 ohne Einschränkung?"
+      stem_lang: vi
+      options:
+        - { id: m1j, text: "Jonas", lang: de }
+        - { id: m2p, text: "Petra", lang: de }
+        - { id: m3a, text: "Aylin", lang: de }
+        - { id: m4n, text: "niemand", lang: de }
+    answer:
+      correct_option_id: m1j
+    explanation:
+      vi: "Jonas mở đầu bằng Endlich! (cuối cùng cũng có) và chỉ nêu ưu điểm – ủng hộ hoàn toàn. Petra mở đầu bằng nhượng bộ Schön und gut, aber … rồi phản đối. Aylin không quan tâm đến tốc độ ô tô, chỉ đòi đường xe đạp an toàn."
+    display_answer: Jonas
+
+  - key: de:exercise:b2u10l1-mcq-satz-einfuegen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u10-g-textverweise
+    prompt:
+      stem: "Kiểu bài điền câu vào văn bản. \"Immer mehr Städte richten Bibliotheken für Werkzeug ein. ___ Dadurch muss nicht jeder Haushalt eine eigene Bohrmaschine kaufen, die er vielleicht zweimal im Jahr benutzt.\" Welcher Satz passt in die Lücke?"
+      stem_lang: vi
+      options:
+        - { id: e1d, text: "Dort kann man zum Beispiel eine Bohrmaschine für ein paar Tage ausleihen.", lang: de }
+        - { id: e2t, text: "Werkzeug ist in den letzten Jahren deutlich teurer geworden.", lang: de }
+        - { id: e3k, text: "Viele Menschen kaufen deshalb immer mehr Werkzeug.", lang: de }
+        - { id: e4w, text: "Die erste Bibliothek dieser Art hatte nur wenige Besucher.", lang: de }
+    answer:
+      correct_option_id: e1d
+    explanation:
+      vi: "Dadurch (nhờ đó) phải trỏ về một việc giúp người ta khỏi phải mua máy khoan – đó là việc mượn máy khoan vài ngày. Giá đắt hơn hay số khách ít không dẫn tới kết quả \"không phải mua\"; câu \"mua ngày càng nhiều\" mâu thuẫn với câu sau."
+    display_answer: "Dort kann man zum Beispiel eine Bohrmaschine für ein paar Tage ausleihen."

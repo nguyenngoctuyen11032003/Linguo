@@ -1,0 +1,1288 @@
+# Học liệu unit B2U10 "Ôn B2 và thi Goethe-Zertifikat B2" (Prüfungstraining B2), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U10L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Đọc hiểu – loại văn bản và ý định tác giả =================
+  - key: de:item:b2u10-g-textsorten-signale
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Textsorten-Signale: Bericht (sachlich, Präteritum, er sagte, … sei) · Kommentar (meiner Ansicht nach, wäre, sollte, ja/doch) · Reportage (Präsens, Szene) · Absicht: kritisieren, befürworten, ironisch darstellen"
+      pos: cấu trúc văn bản
+    back:
+      meaning:
+        vi: "Mỗi loại văn bản để lại dấu hiệu trong ngôn ngữ: bản tin (Bericht) viết khách quan, kể bằng Präteritum và dẫn lời người khác bằng Konjunktiv I (sei, habe); bài bình luận (Kommentar) có từ đánh giá, Konjunktiv II (wäre, sollte) và tiểu từ (ja, doch, eben); phóng sự (Reportage) hay dùng thì hiện tại và miêu tả cảnh, người cụ thể. Ý định của tác giả – phê phán, ủng hộ hay mỉa mai – lộ ra qua từ đánh giá, câu hỏi tu từ và sự phóng đại."
+      examples:
+        - target: Der Bürgermeister sagte, die Stadt habe kein Geld für neue Radwege.
+          translation:
+            vi: Ông thị trưởng nói rằng thành phố không có tiền làm đường xe đạp mới.
+        - target: Diese Entscheidung ist meiner Ansicht nach ein Fehler. Die Stadt sollte zuerst die Bürger fragen.
+          translation:
+            vi: Theo tôi, quyết định này là một sai lầm. Thành phố nên hỏi ý kiến người dân trước.
+        - target: Es ist sechs Uhr morgens. Auf dem Markt riecht es nach frischem Brot, und die ersten Händler bauen ihre Stände auf.
+          translation:
+            vi: Lúc ấy là sáu giờ sáng. Ở chợ thoang thoảng mùi bánh mì mới nướng, và những người bán hàng đầu tiên đang dựng sạp.
+      confusion:
+        vi: "Konjunktiv I trong bản tin (er sagte, die Stadt habe …) là lời của người được dẫn, không phải ý kiến của tác giả. Ngược lại, wäre, sollte và các từ như leider, endlich, unverständlich thường cho thấy tác giả đang bình luận."
+
+  - key: de:item:b2u10-leitartikel
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Leitartikel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài xã luận (bài bình luận chính của một tờ báo)
+      examples:
+        - target: Im heutigen Leitartikel kritisiert die Chefredakteurin die neue Steuerreform.
+          translation:
+            vi: Trong bài xã luận hôm nay, nữ tổng biên tập phê phán cuộc cải cách thuế mới.
+        - target: Ein Leitartikel gibt die Meinung der Redaktion wieder.
+          translation:
+            vi: Một bài xã luận thể hiện quan điểm của ban biên tập.
+      confusion:
+        vi: "der Leitartikel là bài có ý kiến (giống Kommentar), không phải bản tin trung lập (Bericht, Meldung)."
+
+  - key: de:item:b2u10-reportage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Reportage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: phóng sự
+      examples:
+        - target: Die Reportage beschreibt einen Tag im Leben einer Krankenpflegerin.
+          translation:
+            vi: Bài phóng sự miêu tả một ngày trong cuộc sống của một nữ điều dưỡng.
+        - target: Für ihre Reportage war die Journalistin drei Wochen auf einem Containerschiff.
+          translation:
+            vi: Để làm bài phóng sự, nữ nhà báo đã ở ba tuần trên một tàu container.
+      pronunciation_note:
+        vi: "Từ gốc Pháp, trọng âm ở -ta-: /ʁepɔʁˈtaːʒə/. Chữ g đọc là /ʒ/ như trong tiếng Pháp, không đọc là g cứng."
+
+  - key: de:item:b2u10-sachlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sachlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: khách quan, đúng trọng tâm, không cảm tính
+      examples:
+        - target: Der Bericht ist sachlich geschrieben und enthält keine Wertungen.
+          translation:
+            vi: Bản tin được viết khách quan và không có lời đánh giá nào.
+        - target: Bitte bleiben Sie sachlich!
+          translation:
+            vi: Xin anh/chị hãy giữ thái độ khách quan, bình tĩnh!
+      confusion:
+        vi: "sachlich (khách quan, không cảm tính) khác với neutral (không đứng về phía nào). Một văn bản có thể sachlich mà vẫn ủng hộ một bên bằng lý lẽ."
+
+  - key: de:item:b2u10-absicht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Absicht, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý định, chủ ý
+      examples:
+        - target: Welche Absicht verfolgt der Autor mit diesem Text?
+          translation:
+            vi: Tác giả có ý định gì khi viết văn bản này?
+        - target: Das war keine Absicht, entschuldige bitte!
+          translation:
+            vi: Mình không cố ý đâu, xin lỗi nhé!
+      confusion:
+        vi: "eine Absicht verfolgen = theo đuổi một ý định. mit Absicht = cố ý; absichtlich là tính từ/trạng từ tương ứng."
+
+  - key: de:item:b2u10-verfasser
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verfasser, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người viết, tác giả (của một văn bản)
+      examples:
+        - target: Der Verfasser des Artikels ist Wirtschaftsjournalist.
+          translation:
+            vi: Người viết bài báo là một nhà báo kinh tế.
+        - target: Die Verfasserin hält das neue Gesetz für unnötig.
+          translation:
+            vi: Nữ tác giả cho rằng đạo luật mới là không cần thiết.
+      confusion:
+        vi: "Dạng nữ: die Verfasserin, -nen. Trong đề đọc hay gặp câu hỏi: Was meint der Verfasser / die Verfasserin? – tức là hỏi ý kiến người viết, không phải ý kiến của người được trích dẫn."
+
+  - key: de:item:b2u10-kernaussage
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Kernaussage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý chính, thông điệp cốt lõi
+      examples:
+        - target: Die Kernaussage des Textes steht schon im ersten Absatz.
+          translation:
+            vi: Ý chính của văn bản nằm ngay ở đoạn đầu tiên.
+        - target: Fassen Sie die Kernaussage in einem Satz zusammen.
+          translation:
+            vi: Hãy tóm tắt ý chính trong một câu.
+
+  - key: de:item:b2u10-implizit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: implizit
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngầm, hàm ý (không nói thẳng)
+      examples:
+        - target: Der Autor kritisiert die Regierung nur implizit.
+          translation:
+            vi: Tác giả chỉ ngầm phê phán chính phủ.
+        - target: In der Frage steckt eine implizite Kritik.
+          translation:
+            vi: Trong câu hỏi có ẩn một lời phê phán.
+      confusion:
+        vi: "Trái nghĩa: explizit (nói rõ ra). Câu hỏi tu từ và lời mỉa mai thường là cách phê phán implizit."
+
+  - key: de:item:b2u10-explizit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: explizit
+      pos: tính từ
+    back:
+      meaning:
+        vi: rõ ràng, nói thẳng ra
+      examples:
+        - target: Im letzten Absatz befürwortet die Autorin das Projekt explizit.
+          translation:
+            vi: Ở đoạn cuối, nữ tác giả nói rõ là mình ủng hộ dự án.
+        - target: Das steht nicht explizit im Text, man kann es aber erschließen.
+          translation:
+            vi: Điều đó không được viết rõ trong văn bản, nhưng có thể suy ra được.
+
+  # Zusatzwortschatz (L1)
+  - key: de:item:b2u10-kritisieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: kritisieren
+      pos: động từ
+    back:
+      meaning:
+        vi: phê phán, chỉ trích
+      examples:
+        - target: Die Kommentatorin kritisiert, dass die Mieten immer weiter steigen.
+          translation:
+            vi: Nữ bình luận viên phê phán việc giá thuê nhà cứ tiếp tục tăng.
+        - target: Viele Eltern kritisieren die neuen Schulzeiten.
+          translation:
+            vi: Nhiều phụ huynh chỉ trích giờ học mới.
+      confusion:
+        vi: "kritisieren + Akkusativ (etwas/jemanden kritisieren) hoặc + câu dass. Đuôi -ieren nên Partizip II không có ge-: hat kritisiert."
+
+  - key: de:item:b2u10-einseitig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: einseitig
+      pos: tính từ
+    back:
+      meaning:
+        vi: phiến diện, một chiều
+      examples:
+        - target: Der Artikel ist sehr einseitig, denn er nennt nur die Nachteile.
+          translation:
+            vi: Bài báo rất phiến diện, vì nó chỉ nêu các nhược điểm.
+        - target: Eine einseitige Ernährung ist ungesund.
+          translation:
+            vi: Ăn uống thiếu cân bằng thì không tốt cho sức khỏe.
+      confusion:
+        vi: "Nghĩa thứ hai: một mặt (ein einseitiges Blatt = tờ giấy viết một mặt). Trái nghĩa trong đánh giá văn bản: ausgewogen (cân bằng)."
+
+  - key: de:item:b2u10-neutral
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: neutral
+      pos: tính từ
+    back:
+      meaning:
+        vi: trung lập, không thiên về bên nào
+      examples:
+        - target: Eine Nachrichtenmeldung sollte möglichst neutral sein.
+          translation:
+            vi: Một tin tức nên càng trung lập càng tốt.
+        - target: Der Moderator bleibt in der Diskussion neutral.
+          translation:
+            vi: Người dẫn chương trình giữ thái độ trung lập trong cuộc thảo luận.
+
+  - key: de:item:b2u10-darstellung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Darstellung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự trình bày, cách miêu tả
+      examples:
+        - target: Die Darstellung der Fakten ist sachlich und genau.
+          translation:
+            vi: Cách trình bày các sự kiện khách quan và chính xác.
+        - target: Nach Darstellung der Polizei war der Fahrer zu schnell.
+          translation:
+            vi: Theo trình bày của cảnh sát, người lái xe đã chạy quá nhanh.
+      confusion:
+        vi: "Danh từ của darstellen (trình bày, miêu tả). ironisch darstellen = miêu tả một cách mỉa mai."
+
+  - key: de:item:b2u10-textsorte
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Textsorte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: loại văn bản, thể loại văn bản
+      examples:
+        - target: Um welche Textsorte handelt es sich hier?
+          translation:
+            vi: Đây là loại văn bản nào?
+        - target: Ein Kommentar und eine Reportage sind unterschiedliche Textsorten.
+          translation:
+            vi: Bài bình luận và bài phóng sự là hai loại văn bản khác nhau.
+
+  - key: de:item:b2u10-zielgruppe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zielgruppe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhóm đối tượng (người đọc, khách hàng mà văn bản hướng tới)
+      examples:
+        - target: Die Zielgruppe der Zeitschrift sind junge Eltern.
+          translation:
+            vi: Nhóm độc giả mà tạp chí hướng tới là các cặp cha mẹ trẻ.
+        - target: Der Text richtet sich an eine junge Zielgruppe.
+          translation:
+            vi: Văn bản hướng tới nhóm đối tượng trẻ.
+
+  - key: de:item:b2u10-uebertreibung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Übertreibung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phóng đại, cường điệu
+      examples:
+        - target: Die Glosse arbeitet mit Ironie und Übertreibung.
+          translation:
+            vi: Bài châm biếm dùng lối mỉa mai và phóng đại.
+        - target: Das ist eine maßlose Übertreibung!
+          translation:
+            vi: Đó là một sự phóng đại quá mức!
+      confusion:
+        vi: "Động từ: übertreiben, übertreibt, übertrieb, hat übertrieben. Phóng đại rõ rệt trong một bài bình luận thường là dấu hiệu của lối viết mỉa mai."
+
+  - key: de:item:b2u10-kolumne
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Kolumne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyên mục (bài viết định kỳ của một tác giả cố định trên báo)
+      examples:
+        - target: In ihrer Kolumne schreibt sie jede Woche über das Leben in der Großstadt.
+          translation:
+            vi: Trong chuyên mục của mình, mỗi tuần cô ấy viết về cuộc sống ở thành phố lớn.
+        - target: Die Kolumne ist persönlich und oft humorvoll.
+          translation:
+            vi: Chuyên mục mang tính cá nhân và thường hài hước.
+
+  # ================= Bài 2: Nghe hiểu – bài nói dài, thảo luận =================
+  - key: de:item:b2u10-g-signalwoerter-hoeren
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Signale im Vortrag: Ich möchte vorausschicken, dass … · Entscheidend ist … · Was ich damit sagen will: … · Im Gegensatz dazu … · Zusammenfassend lässt sich sagen, dass …"
+      pos: cấu trúc bài nói
+    back:
+      meaning:
+        vi: "Người nói dùng câu tín hiệu để báo trước cấu trúc bài nói: Ich möchte vorausschicken, dass … (xin nói trước rằng), Entscheidend ist … (điều quyết định là), Was ich damit sagen will: … (ý tôi muốn nói là), Im Gegensatz dazu … (ngược lại với điều đó), Zusammenfassend lässt sich sagen, dass … (tóm lại có thể nói rằng). Ý quan trọng thường đứng ngay sau những tín hiệu này. Khi nghe, hãy dùng chúng như biển báo để biết lúc nào cần nghe kỹ."
+      examples:
+        - target: Ich möchte vorausschicken, dass ich selbst kein Auto besitze.
+          translation:
+            vi: Tôi xin nói trước rằng bản thân tôi không có ô tô.
+        - target: Entscheidend ist aber nicht der Preis, sondern die Qualität.
+          translation:
+            vi: Nhưng điều quyết định không phải là giá cả mà là chất lượng.
+        - target: Zusammenfassend lässt sich sagen, dass das Projekt erfolgreich war.
+          translation:
+            vi: Tóm lại có thể nói rằng dự án đã thành công.
+      confusion:
+        vi: "Im Gegensatz dazu (ngược lại, khi so sánh hai điều) khác với im Gegenteil (trái lại, dùng để phủ nhận điều vừa nói): Er ist nicht faul, im Gegenteil, er arbeitet sehr viel."
+
+  - key: de:item:b2u10-gespraechsrunde
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gesprächsrunde, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi tọa đàm, nhóm thảo luận
+      examples:
+        - target: In unserer Gesprächsrunde begrüße ich heute drei Gäste.
+          translation:
+            vi: Trong buổi tọa đàm hôm nay, tôi xin chào đón ba vị khách.
+        - target: Die Gesprächsrunde dauert etwa eine Stunde.
+          translation:
+            vi: Buổi tọa đàm kéo dài khoảng một tiếng.
+
+  - key: de:item:b2u10-podiumsdiskussion
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Podiumsdiskussion, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc thảo luận trước khán giả (các diễn giả ngồi trên bục)
+      examples:
+        - target: Nach dem Vortrag findet eine Podiumsdiskussion statt.
+          translation:
+            vi: Sau bài thuyết trình có một buổi thảo luận với các diễn giả trước khán giả.
+        - target: An der Podiumsdiskussion nehmen eine Ärztin, ein Politiker und eine Schülerin teil.
+          translation:
+            vi: Tham gia buổi thảo luận có một nữ bác sĩ, một chính trị gia và một nữ học sinh.
+      confusion:
+        vi: "Từ ghép có âm nối -s-: Podium + s + Diskussion; giống theo từ cuối: die Diskussion → die Podiumsdiskussion."
+
+  - key: de:item:b2u10-beitrag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Beitrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài (đóng góp) phát biểu, bài viết, phóng sự ngắn; khoản đóng góp
+      examples:
+        - target: Vielen Dank für Ihren Beitrag!
+          translation:
+            vi: Cảm ơn anh/chị về ý kiến đóng góp!
+        - target: Im nächsten Beitrag geht es um das Wohnen im Alter.
+          translation:
+            vi: Phóng sự tiếp theo nói về chuyện nhà ở cho người cao tuổi.
+      confusion:
+        vi: "Nghĩa phụ thuộc ngữ cảnh: bài phát biểu trong thảo luận, bài trên diễn đàn (Forumsbeitrag), phóng sự trên radio, hoặc phí hội viên (Mitgliedsbeitrag). einen Beitrag leisten zu + Dativ = góp phần vào."
+
+  - key: de:item:b2u10-einschaetzung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Einschätzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đánh giá, nhận định
+      examples:
+        - target: Wie ist Ihre Einschätzung der Lage?
+          translation:
+            vi: Anh/chị đánh giá tình hình thế nào?
+        - target: Nach meiner Einschätzung wird das Projekt teurer als geplant.
+          translation:
+            vi: Theo đánh giá của tôi, dự án sẽ tốn kém hơn dự kiến.
+
+  - key: de:item:b2u10-einschaetzen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: einschätzen
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh giá, ước lượng (tình hình, khả năng)
+      examples:
+        - target: Wie schätzen Sie die Chancen des Projekts ein?
+          translation:
+            vi: Anh/chị đánh giá cơ hội của dự án như thế nào?
+        - target: Ich habe die Situation falsch eingeschätzt.
+          translation:
+            vi: Tôi đã đánh giá sai tình hình.
+      confusion:
+        vi: "Động từ tách: Ich schätze … ein; Partizip II eingeschätzt. Khác với schätzen (quý trọng; ước đoán con số): Ich schätze ihn sehr."
+
+  - key: de:item:b2u10-skeptisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: skeptisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: hoài nghi, ngờ vực
+      examples:
+        - target: Viele Experten sind skeptisch, ob das Gesetz wirklich hilft.
+          translation:
+            vi: Nhiều chuyên gia hoài nghi liệu đạo luật có thực sự giúp ích không.
+        - target: Ich stehe dem Plan eher skeptisch gegenüber.
+          translation:
+            vi: Tôi khá hoài nghi về kế hoạch này.
+      confusion:
+        vi: "skeptisch sein gegenüber + Dativ hoặc + câu ob. Hoài nghi chưa phải là phản đối: người skeptisch còn chờ thêm lý lẽ."
+
+  # Zusatzwortschatz (L2)
+  - key: de:item:b2u10-vertreten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: vertreten, vertritt, vertrat, hat vertreten
+      pos: động từ
+    back:
+      meaning:
+        vi: bảo vệ, giữ (một quan điểm); đại diện cho
+      examples:
+        - target: Frau Keller vertritt die Meinung, dass Schulen mehr Geld brauchen.
+          translation:
+            vi: Bà Keller giữ quan điểm rằng các trường học cần nhiều tiền hơn.
+        - target: Er vertritt in der Runde die Interessen der Mieter.
+          translation:
+            vi: Trong buổi thảo luận, ông ấy đại diện cho quyền lợi của người thuê nhà.
+      confusion:
+        vi: "eine Meinung / einen Standpunkt vertreten = giữ, bảo vệ một quan điểm. Không tách: er vertritt; Partizip II giống nguyên thể: hat vertreten."
+
+  - key: de:item:b2u10-gegenposition
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Gegenposition, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: quan điểm đối lập
+      examples:
+        - target: Herr Brandt vertritt in der Runde die Gegenposition.
+          translation:
+            vi: Trong buổi thảo luận, ông Brandt bảo vệ quan điểm đối lập.
+        - target: Nennen Sie auch eine mögliche Gegenposition.
+          translation:
+            vi: Hãy nêu cả một quan điểm đối lập có thể có.
+      confusion:
+        vi: "Trong bài nghị luận và bài nói, nêu Gegenposition rồi phản bác nó giúp lập luận thuyết phục hơn."
+
+  - key: de:item:b2u10-ablehnung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ablehnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự từ chối, phản đối
+      examples:
+        - target: Die Ablehnung des Plans kam für viele überraschend.
+          translation:
+            vi: Việc kế hoạch bị bác bỏ khiến nhiều người bất ngờ.
+        - target: Im Publikum war deutliche Ablehnung zu spüren.
+          translation:
+            vi: Có thể cảm nhận rõ sự phản đối trong khán giả.
+      confusion:
+        vi: "Động từ: ablehnen (từ chối, bác bỏ), tách: Sie lehnt den Vorschlag ab."
+
+  - key: de:item:b2u10-widerspruch
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Widerspruch, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phản bác; mâu thuẫn
+      examples:
+        - target: Seine Aussage stieß auf Widerspruch.
+          translation:
+            vi: Phát biểu của ông ấy vấp phải sự phản bác.
+        - target: "Das ist ein Widerspruch: Erst sagt sie ja, dann nein."
+          translation:
+            vi: "Thế là mâu thuẫn: lúc đầu cô ấy nói có, sau lại nói không."
+      confusion:
+        vi: "Động từ: widersprechen + Dativ (Da muss ich Ihnen widersprechen), không tách: er widerspricht. Chữ wider (chống lại) khác wieder (lại lần nữa)."
+
+  - key: de:item:b2u10-gegensatz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gegensatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đối lập, sự trái ngược
+      examples:
+        - target: Im Gegensatz zu ihrem Bruder liest sie sehr gern.
+          translation:
+            vi: Trái với anh trai, cô ấy rất thích đọc sách.
+        - target: Zwischen Stadt und Land gibt es große Gegensätze.
+          translation:
+            vi: Giữa thành thị và nông thôn có những khác biệt lớn.
+      confusion:
+        vi: "im Gegensatz zu + Dativ; im Gegensatz dazu = ngược lại với điều vừa nói. Đừng nhầm với im Gegenteil (trái lại, phủ nhận ý trước)."
+
+  - key: de:item:b2u10-entscheidend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: entscheidend
+      pos: tính từ
+    back:
+      meaning:
+        vi: quyết định, then chốt
+      examples:
+        - target: Entscheidend ist, dass alle mitmachen.
+          translation:
+            vi: Điều then chốt là mọi người đều tham gia.
+        - target: Das war der entscheidende Fehler.
+          translation:
+            vi: Đó là sai lầm mang tính quyết định.
+
+  - key: de:item:b2u10-sichtweise
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Sichtweise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách nhìn, góc nhìn
+      examples:
+        - target: Diese Sichtweise teile ich nicht.
+          translation:
+            vi: Tôi không đồng tình với cách nhìn này.
+        - target: In der Diskussion prallen zwei Sichtweisen aufeinander.
+          translation:
+            vi: Trong cuộc thảo luận, hai cách nhìn va chạm nhau.
+
+  - key: de:item:b2u10-diskussionsteilnehmer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Diskussionsteilnehmer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người tham gia thảo luận
+      examples:
+        - target: Alle Diskussionsteilnehmer bekommen drei Minuten Redezeit.
+          translation:
+            vi: Mỗi người tham gia thảo luận có ba phút phát biểu.
+        - target: Eine Diskussionsteilnehmerin widerspricht dem Bürgermeister.
+          translation:
+            vi: Một nữ thành viên tham gia thảo luận phản bác ông thị trưởng.
+      confusion:
+        vi: "Dạng nữ: die Diskussionsteilnehmerin, -nen. Âm nối -s-: Diskussion + s + Teilnehmer."
+
+  # ================= Bài 3: Viết – bài diễn đàn và thư trang trọng =================
+  - key: de:item:b2u10-g-textaufbau
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Textaufbau: Einleitung – Hauptteil – Schluss · Themensatz · Synonyme und Verweise statt Wiederholungen · Selbstkontrolle: Aufgabe erfüllt? Kohärenz? Wortschatz? Strukturen?"
+      pos: cấu trúc văn bản
+    back:
+      meaning:
+        vi: "Bài viết B2 có ba phần: mở bài (dẫn vào chủ đề), thân bài (mỗi đoạn một ý, mở đầu bằng câu chủ đề) và kết bài (kết luận hoặc đề xuất). Để không lặp từ, bạn thay bằng từ đồng nghĩa (das Smartphone → das Gerät) hoặc từ quy chiếu (dies, diese Entwicklung). Khi tự kiểm tra, Linguo gợi ý xét bốn mặt: đủ các ý đề yêu cầu, mạch lạc, vốn từ và cấu trúc câu."
+      examples:
+        - target: Immer mehr Menschen arbeiten im Homeoffice. Diese Entwicklung hat Vorteile und Nachteile.
+          translation:
+            vi: Ngày càng nhiều người làm việc tại nhà. Xu hướng này có cả ưu điểm lẫn nhược điểm.
+        - target: Ich habe mir ein neues Smartphone gekauft. Das Gerät ist schnell, aber leider sehr teuer.
+          translation:
+            vi: Tôi mới mua một chiếc điện thoại thông minh. Thiết bị này nhanh nhưng tiếc là rất đắt.
+        - target: Ein wichtiger Vorteil ist die Zeitersparnis. Wer zu Hause arbeitet, muss nicht pendeln.
+          translation:
+            vi: Một ưu điểm quan trọng là tiết kiệm thời gian. Ai làm việc ở nhà thì không phải đi lại xa.
+      confusion:
+        vi: "Câu chủ đề (Themensatz) nêu ý chính ở đầu đoạn; người Việt hay để ý chính ở cuối đoạn. Từ thay thế phải đúng giống: das Smartphone → das Gerät → es."
+
+  - key: de:item:b2u10-zusammenfassung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zusammenfassung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản tóm tắt, phần tóm tắt
+      examples:
+        - target: Am Ende des Textes steht eine kurze Zusammenfassung.
+          translation:
+            vi: Ở cuối văn bản có một phần tóm tắt ngắn.
+        - target: Schreiben Sie eine Zusammenfassung von etwa 100 Wörtern.
+          translation:
+            vi: Hãy viết một bản tóm tắt khoảng 100 từ.
+      confusion:
+        vi: "Động từ: zusammenfassen (tách): Ich fasse kurz zusammen. In der Zusammenfassung = trong phần tóm tắt; zusammenfassend = tóm lại."
+
+  - key: de:item:b2u10-forum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Forum, Foren
+      pos: danh từ
+    back:
+      meaning:
+        vi: diễn đàn
+      examples:
+        - target: In einem Forum diskutieren Leser über das Thema Homeoffice.
+          translation:
+            vi: Trên một diễn đàn, các độc giả thảo luận về chủ đề làm việc tại nhà.
+        - target: Ich habe meinen Beitrag im Forum veröffentlicht.
+          translation:
+            vi: Tôi đã đăng bài của mình lên diễn đàn.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Foren (giống das Museum → die Museen). Bài trên diễn đàn: der Forumsbeitrag."
+
+  - key: de:item:b2u10-eroertern
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: erörtern
+      pos: động từ
+    back:
+      meaning:
+        vi: bàn luận kỹ, phân tích (một vấn đề từ nhiều mặt)
+      examples:
+        - target: Im Aufsatz sollen Sie das Problem von mehreren Seiten erörtern.
+          translation:
+            vi: Trong bài luận, bạn cần phân tích vấn đề từ nhiều phía.
+        - target: Wir haben die Frage gestern lange erörtert.
+          translation:
+            vi: Hôm qua chúng tôi đã bàn luận câu hỏi đó rất lâu.
+      confusion:
+        vi: "Không tách và có tiền tố er-, nên Partizip II không có ge-: hat erörtert. Từ này trang trọng, thường gặp trong văn viết và đề thi."
+
+  - key: de:item:b2u10-eroerterung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Erörterung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài nghị luận, sự bàn luận (cân nhắc ủng hộ – phản đối)
+      examples:
+        - target: Eine Erörterung beginnt mit einer Einleitung und endet mit einem Fazit.
+          translation:
+            vi: Một bài nghị luận bắt đầu bằng phần mở bài và kết thúc bằng phần kết luận.
+        - target: In der Erörterung wägen Sie Argumente dafür und dagegen ab.
+          translation:
+            vi: Trong bài nghị luận, bạn cân nhắc các lý lẽ ủng hộ và phản đối.
+
+  - key: de:item:b2u10-darlegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: darlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: trình bày rõ, giải thích cặn kẽ (lý do, quan điểm)
+      examples:
+        - target: Legen Sie Ihre Meinung dar und begründen Sie sie.
+          translation:
+            vi: Hãy trình bày ý kiến của bạn và nêu lý do.
+        - target: Im Brief hat sie ihre Gründe ausführlich dargelegt.
+          translation:
+            vi: Trong thư, cô ấy đã trình bày lý do của mình một cách chi tiết.
+      confusion:
+        vi: "Động từ tách: Ich lege … dar; Partizip II dargelegt. Trang trọng hơn erklären; hay gặp trong yêu cầu đề viết."
+
+  # Zusatzwortschatz (L3)
+  - key: de:item:b2u10-synonym
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Synonym, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ đồng nghĩa
+      examples:
+        - target: Benutzen Sie Synonyme, damit sich Wörter nicht ständig wiederholen.
+          translation:
+            vi: Hãy dùng từ đồng nghĩa để từ ngữ không bị lặp lại liên tục.
+        - target: Ein Synonym für beginnen ist anfangen.
+          translation:
+            vi: Một từ đồng nghĩa với beginnen là anfangen.
+
+  - key: de:item:b2u10-formulierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Formulierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách diễn đạt, cách dùng từ đặt câu
+      examples:
+        - target: Diese Formulierung ist für einen formellen Brief zu umgangssprachlich.
+          translation:
+            vi: Cách diễn đạt này quá khẩu ngữ đối với một bức thư trang trọng.
+        - target: Achten Sie auf höfliche Formulierungen.
+          translation:
+            vi: Hãy chú ý những cách diễn đạt lịch sự.
+      confusion:
+        vi: "Động từ: formulieren (diễn đạt), Partizip II formuliert (đuôi -ieren, không có ge-)."
+
+  - key: de:item:b2u10-wortwahl
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wortwahl (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách chọn từ, cách dùng từ
+      examples:
+        - target: Die Wortwahl zeigt, dass der Autor das Projekt ablehnt.
+          translation:
+            vi: Cách chọn từ cho thấy tác giả phản đối dự án.
+        - target: Achten Sie in der Prüfung auf eine abwechslungsreiche Wortwahl.
+          translation:
+            vi: Trong bài thi, hãy chú ý dùng từ phong phú.
+
+  - key: de:item:b2u10-ueberleitung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Überleitung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu chuyển ý, đoạn chuyển tiếp
+      examples:
+        - target: Eine gute Überleitung verbindet zwei Absätze.
+          translation:
+            vi: Một câu chuyển ý tốt nối hai đoạn văn với nhau.
+        - target: Als Überleitung eignet sich zum Beispiel ein Satz wie Ein weiterer Aspekt ist …
+          translation:
+            vi: Để chuyển ý, có thể dùng ví dụ một câu như Ein weiterer Aspekt ist …
+
+  - key: de:item:b2u10-ausblick
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Ausblick, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái nhìn về tương lai (ở phần kết); tầm nhìn, quang cảnh
+      examples:
+        - target: Am Schluss gibt die Autorin einen kurzen Ausblick auf die Zukunft.
+          translation:
+            vi: Ở phần kết, nữ tác giả đưa ra một cái nhìn ngắn về tương lai.
+        - target: Vom Balkon hat man einen schönen Ausblick auf die Berge.
+          translation:
+            vi: Từ ban công có thể ngắm cảnh núi rất đẹp.
+      confusion:
+        vi: "Trong bài viết, einen Ausblick geben = nói về hướng phát triển sắp tới, thường ở phần kết. Nghĩa thường ngày là quang cảnh nhìn ra."
+
+  - key: de:item:b2u10-loesungsvorschlag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lösungsvorschlag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đề xuất giải pháp
+      examples:
+        - target: Am Ende Ihres Beitrags sollten Sie einen Lösungsvorschlag machen.
+          translation:
+            vi: Ở cuối bài viết, bạn nên đưa ra một đề xuất giải pháp.
+        - target: Haben Sie einen konkreten Lösungsvorschlag?
+          translation:
+            vi: Anh/chị có đề xuất giải pháp cụ thể nào không?
+      confusion:
+        vi: "Âm nối -s-: Lösung + s + Vorschlag. Số nhiều đổi nguyên âm: die Lösungsvorschläge."
+
+  - key: de:item:b2u10-ueberarbeiten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: überarbeiten
+      pos: động từ
+    back:
+      meaning:
+        vi: chỉnh sửa, sửa lại (bài viết)
+      examples:
+        - target: Lesen Sie Ihren Text noch einmal und überarbeiten Sie ihn.
+          translation:
+            vi: Hãy đọc lại văn bản của bạn và chỉnh sửa nó.
+        - target: Ich habe die Einleitung zweimal überarbeitet.
+          translation:
+            vi: Tôi đã sửa lại phần mở bài hai lần.
+      confusion:
+        vi: "Theo nghĩa \"chỉnh sửa\", über- không tách: ich überarbeite, hat überarbeitet. sich überarbeiten nghĩa là làm việc quá sức."
+
+  - key: de:item:b2u10-aufgabenstellung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Aufgabenstellung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: yêu cầu đề bài, cách nêu nhiệm vụ
+      examples:
+        - target: Lesen Sie die Aufgabenstellung genau.
+          translation:
+            vi: Hãy đọc kỹ yêu cầu đề bài.
+        - target: Der Text passt nicht zur Aufgabenstellung.
+          translation:
+            vi: Bài viết không khớp với yêu cầu đề bài.
+
+  # ================= Bài 4: Nói – thuyết trình và thảo luận =================
+  - key: de:item:b2u10-g-moderation-redemittel
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Gespräche lenken: Darf ich direkt daran anknüpfen? · Was meinen Sie dazu? · Um noch einmal auf … zurückzukommen: … · Ich fasse kurz zusammen: …"
+      pos: cấu trúc hội thoại
+    back:
+      meaning:
+        vi: "Trong thảo luận B2, bạn không chỉ nói ý của mình mà còn điều phối lượt lời: nối tiếp ý người khác (Darf ich direkt daran anknüpfen?), mời người khác nói (Was meinen Sie dazu?), quay lại một điểm trước đó (Um noch einmal auf die Kosten zurückzukommen: …) và tóm tắt (Ich fasse kurz zusammen: …). Những câu này giúp cuộc thảo luận có trật tự và cho thấy bạn đang lắng nghe."
+      examples:
+        - target: Darf ich direkt daran anknüpfen? Auch in meiner Firma gibt es dieses Problem.
+          translation:
+            vi: Tôi xin nói tiếp ngay ý đó được không? Ở công ty tôi cũng có vấn đề này.
+        - target: Um noch einmal auf die Kosten zurückzukommen, wer soll das eigentlich bezahlen?
+          translation:
+            vi: Để quay lại vấn đề chi phí, rốt cuộc ai sẽ trả tiền cho việc đó?
+        - target: "Ich fasse kurz zusammen: Wir sind beide für mehr Radwege, aber nicht für höhere Parkgebühren."
+          translation:
+            vi: "Tôi xin tóm tắt ngắn: cả hai chúng ta đều ủng hộ có thêm đường xe đạp, nhưng không ủng hộ tăng phí đỗ xe."
+      confusion:
+        vi: "anknüpfen an + Akkusativ → daran anknüpfen (nối tiếp vào điều vừa nói). zurückkommen auf + Akkusativ; trong cụm um … zu, zu chen giữa tiền tố và gốc: zurückzukommen."
+
+  - key: de:item:b2u10-moderation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Moderation (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc dẫn dắt, điều phối (chương trình, cuộc thảo luận)
+      examples:
+        - target: Die Moderation der Diskussion übernimmt Frau Albers.
+          translation:
+            vi: Bà Albers đảm nhận việc điều phối cuộc thảo luận.
+        - target: Eine gute Moderation sorgt dafür, dass alle zu Wort kommen.
+          translation:
+            vi: Điều phối tốt giúp ai cũng có lượt nói.
+
+  - key: de:item:b2u10-moderieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: moderieren
+      pos: động từ
+    back:
+      meaning:
+        vi: dẫn chương trình, điều phối (thảo luận)
+      examples:
+        - target: Wer moderiert heute die Gesprächsrunde?
+          translation:
+            vi: Hôm nay ai dẫn buổi tọa đàm?
+        - target: Sie hat die Sendung zehn Jahre lang moderiert.
+          translation:
+            vi: Cô ấy đã dẫn chương trình đó suốt mười năm.
+      confusion:
+        vi: "Đuôi -ieren: Partizip II không có ge- (hat moderiert). Người dẫn: der Moderator, die Moderatorin."
+
+  - key: de:item:b2u10-redezeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Redezeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian phát biểu
+      examples:
+        - target: Jeder Gast hat zwei Minuten Redezeit.
+          translation:
+            vi: Mỗi vị khách có hai phút phát biểu.
+        - target: Ihre Redezeit ist leider schon vorbei.
+          translation:
+            vi: Rất tiếc thời gian phát biểu của anh/chị đã hết.
+
+  - key: de:item:b2u10-stichwort
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Stichwort, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ khóa, ý ghi vắn tắt (để nhắc khi nói)
+      examples:
+        - target: Ich mache mir vor dem Vortrag ein paar Stichworte.
+          translation:
+            vi: Trước bài thuyết trình, tôi ghi vài từ khóa.
+        - target: Schreiben Sie nur Stichworte, keine ganzen Sätze.
+          translation:
+            vi: Chỉ ghi từ khóa thôi, đừng viết cả câu.
+      confusion:
+        vi: "Theo nghĩa ý ghi nhắc khi nói, số nhiều thường là die Stichworte; die Stichwörter dùng cho các mục từ trong từ điển."
+
+  - key: de:item:b2u10-notiz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Notiz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ghi chú
+      examples:
+        - target: Während der Vorbereitung dürfen Sie sich Notizen machen.
+          translation:
+            vi: Trong lúc chuẩn bị, bạn được phép ghi chú.
+        - target: Lies nicht einfach deine Notizen vor!
+          translation:
+            vi: Đừng chỉ đọc to các ghi chú của bạn!
+      confusion:
+        vi: "sich (Dativ) Notizen machen = ghi chú. Hãy xem quy định hiện hành về việc được mang gì vào phòng thi."
+
+  - key: de:item:b2u10-spontan
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: spontan
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự phát, ứng biến, không chuẩn bị trước
+      examples:
+        - target: Auf Fragen der Prüfer muss man spontan reagieren.
+          translation:
+            vi: Với câu hỏi của giám khảo, bạn phải phản ứng ngay, không có chuẩn bị trước.
+        - target: Wir sind ganz spontan ans Meer gefahren.
+          translation:
+            vi: Chúng tôi đã đi biển hoàn toàn ngẫu hứng.
+
+  - key: de:item:b2u10-rueckmeldung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Rückmeldung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phản hồi, nhận xét (về bài nói, công việc)
+      examples:
+        - target: Nach dem Vortrag gibt die Partnerin eine kurze Rückmeldung.
+          translation:
+            vi: Sau bài thuyết trình, bạn thi nữ đưa ra một nhận xét ngắn.
+        - target: Danke für die Rückmeldung!
+          translation:
+            vi: Cảm ơn bạn đã phản hồi!
+      confusion:
+        vi: "Gần nghĩa với das Feedback. Rückmeldung cũng có nghĩa là trả lời lại, báo lại (Bitte geben Sie uns bis Freitag Rückmeldung)."
+
+  # Zusatzwortschatz (L4)
+  - key: de:item:b2u10-anknuepfen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: anknüpfen
+      pos: động từ
+    back:
+      meaning:
+        vi: nối tiếp, tiếp nối (ý, chủ đề)
+      examples:
+        - target: Ich möchte an das anknüpfen, was Herr Roth gerade gesagt hat.
+          translation:
+            vi: Tôi muốn nói tiếp điều ông Roth vừa nói.
+        - target: Der zweite Teil knüpft direkt an den ersten an.
+          translation:
+            vi: Phần thứ hai tiếp nối trực tiếp phần thứ nhất.
+      confusion:
+        vi: "Động từ tách, đi với an + Akkusativ: an etwas anknüpfen → daran anknüpfen. Partizip II: angeknüpft."
+
+  - key: de:item:b2u10-redebeitrag
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Redebeitrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lượt phát biểu, bài phát biểu (trong thảo luận)
+      examples:
+        - target: Bitte halten Sie Ihre Redebeiträge kurz.
+          translation:
+            vi: Xin anh chị phát biểu ngắn gọn.
+        - target: Ihr Redebeitrag hat die Diskussion in eine neue Richtung gelenkt.
+          translation:
+            vi: Lượt phát biểu của bà ấy đã đưa cuộc thảo luận sang một hướng mới.
+
+  - key: de:item:b2u10-wortmeldung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Wortmeldung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc xin phát biểu (giơ tay xin nói)
+      examples:
+        - target: Gibt es weitere Wortmeldungen?
+          translation:
+            vi: Còn ai muốn phát biểu nữa không?
+        - target: Ich sehe eine Wortmeldung in der dritten Reihe.
+          translation:
+            vi: Tôi thấy có người ở hàng thứ ba xin phát biểu.
+      confusion:
+        vi: "Động từ: sich zu Wort melden (xin phát biểu). Người điều phối trao lời: Frau Kim, bitte, Sie haben das Wort."
+
+  - key: de:item:b2u10-zeitrahmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zeitrahmen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: khung thời gian, giới hạn thời gian
+      examples:
+        - target: Bleiben Sie bitte im vorgegebenen Zeitrahmen.
+          translation:
+            vi: Xin hãy giữ đúng khung thời gian đã định.
+        - target: Der Zeitrahmen für das Projekt ist sehr knapp.
+          translation:
+            vi: Khung thời gian cho dự án rất eo hẹp.
+
+  - key: de:item:b2u10-pruefer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Prüfer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: giám khảo, người chấm thi
+      examples:
+        - target: Die Prüfer stellen nach der Präsentation eine Frage.
+          translation:
+            vi: Sau bài trình bày, các giám khảo đặt một câu hỏi.
+        - target: Die Prüferin bittet uns, mit Teil zwei zu beginnen.
+          translation:
+            vi: Nữ giám khảo mời chúng tôi bắt đầu phần hai.
+      confusion:
+        vi: "Dạng nữ: die Prüferin, -nen. Người dự thi: der Prüfling hoặc der Teilnehmer, die Teilnehmerin."
+
+  - key: de:item:b2u10-abschweifen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: abschweifen
+      pos: động từ
+    back:
+      meaning:
+        vi: lạc đề, đi chệch khỏi chủ đề
+      examples:
+        - target: Entschuldigung, ich bin vom Thema abgeschweift.
+          translation:
+            vi: Xin lỗi, tôi đã lạc đề.
+        - target: Wenn die Diskussion abschweift, führt der Moderator sie zurück zum Thema.
+          translation:
+            vi: Khi cuộc thảo luận lạc đề, người điều phối đưa nó trở lại chủ đề.
+      confusion:
+        vi: "Động từ tách; Perfekt dùng sein: ich bin abgeschweift. vom Thema abschweifen = lạc khỏi chủ đề."
+
+  - key: de:item:b2u10-handout
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Handout, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài liệu phát tay (tóm tắt bài thuyết trình)
+      examples:
+        - target: Zu meinem Vortrag habe ich ein Handout vorbereitet.
+          translation:
+            vi: Tôi đã chuẩn bị một tài liệu phát tay cho bài thuyết trình.
+        - target: Auf dem Handout stehen die wichtigsten Punkte.
+          translation:
+            vi: Trên tài liệu phát tay có ghi những ý quan trọng nhất.
+      confusion:
+        vi: "Từ vay mượn tiếng Anh, đọc gần như tiếng Anh; trong tiếng Đức viết hoa vì là danh từ."
+
+  - key: de:item:b2u10-aufgreifen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: aufgreifen, greift auf, griff auf, hat aufgegriffen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhắc lại và bàn tiếp (một ý, một chủ đề)
+      examples:
+        - target: Ich möchte einen Punkt aus Ihrem Vortrag aufgreifen.
+          translation:
+            vi: Tôi muốn nhắc lại và bàn tiếp một ý trong bài thuyết trình của anh/chị.
+        - target: Die Zeitung hat das Thema am nächsten Tag noch einmal aufgegriffen.
+          translation:
+            vi: Ngày hôm sau, tờ báo lại đề cập tiếp chủ đề đó.
