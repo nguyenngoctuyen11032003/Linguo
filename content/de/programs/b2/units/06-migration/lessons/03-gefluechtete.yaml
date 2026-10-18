@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u06-gefluechtete
+order_index: 3
+level: b2
+title:
+  vi: Người đến sau – phân từ danh từ hoá, cách nói bao hàm giới (Geflüchtete, Studierende)
+objectives:
+  - vi: Đọc văn bản xã hội dùng phân từ danh từ hoá (die Geflüchteten, die Reisenden, die Angestellten).
+  - vi: Chia đúng đuôi của phân từ danh từ hoá sau der/die, ein/eine và khi không có mạo từ.
+  - vi: Nhận biết các cách nói trung lập về giới (Bürgerinnen und Bürger, Studierende, Lehrer*innen) và sắc thái của từ ngữ về nguồn gốc.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u06-als-ob]
+items:
+  - item: de:item:b2u06-g-nominalisierte-partizipien
+  - item: de:item:b2u06-g-gendergerechte-sprache
+  - item: de:item:b2u06-fluechtling
+  - item: de:item:b2u06-flucht
+  - item: de:item:b2u06-fliehen
+  - item: de:item:b2u06-asyl
+  - item: de:item:b2u06-diskriminierung
+  - item: de:item:b2u06-vielfalt
+  - item: de:item:b2u06-toleranz
+  - item: de:item:b2u06-asylantrag
+  - item: de:item:b2u06-aufnehmen
+  - item: de:item:b2u06-verfolgen
+  - item: de:item:b2u06-minderheit
+  - item: de:item:b2u06-benachteiligen
+  - item: de:item:b2u06-vielfaeltig
+  - item: de:item:b2u06-tolerant
+  - item: de:item:b2u06-lehrkraft
+  - item: de:item:b2u06-schreibweise
+  - item: de:item:b2u06-schutz
+  - item: de:item:b1u05-g-nominalisierte-adjektive
+    role: reuse
+  - item: de:item:b1u07-g-partizip-i-attribut
+    role: reuse
+  - item: de:item:a1u02-g-feminin-in
+    role: reuse
+  - item: de:item:b1u08-vorurteil
+    role: reuse
+  - item: de:item:b1u09-buerger
+    role: reuse
+  - item: de:item:b1u09-mehrheit
+    role: reuse
+  - item: de:item:b2u06-herkunft
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu được văn bản về tị nạn và đa dạng có những từ như die Geflüchteten, die Studierenden, Bürgerinnen und Bürger, và tự chia đúng đuôi của chúng, ví dụ: \"Ein Geflüchteter aus unserem Haus gibt jetzt Deutschkurse.\""
+  - type: explain
+    text:
+      vi: "Ở B1 bạn đã học tính từ làm danh từ: der Kranke, ein Kranker. Phân từ (Partizip) cũng làm được như vậy: geflüchtet → der/die Geflüchtete (người đã chạy nạn), reisend → die Reisenden (hành khách), angestellt → der/die Angestellte (nhân viên). Danh từ này viết hoa nhưng đuôi biến đổi y như tính từ."
+  - type: explain
+    text:
+      vi: "Đuôi phụ thuộc vào từ đứng trước: der Geflüchtete / ein Geflüchteter (nam), die Geflüchtete / eine Geflüchtete (nữ), die Geflüchteten / viele Geflüchtete (số nhiều). Ở Dativ: dem Geflüchteten, einer Geflüchteten, den Geflüchteten. Tiếng Việt chỉ thêm \"người\", còn tiếng Đức thể hiện giới, số và cách bằng đuôi."
+  - type: explain
+    text:
+      vi: "Flüchtling và Geflüchtete đều đúng, nhưng sắc thái không hoàn toàn giống nhau. Flüchtling là từ thông dụng và cũng là thuật ngữ pháp lý; một số người thấy đuôi -ling nghe hơi coi nhẹ, nên báo chí và các tổ chức hay dùng Geflüchtete. Ngoài ra Geflüchtete cho biết giới qua mạo từ (der/die), còn Flüchtling về ngữ pháp luôn là der."
+  - type: explain
+    text:
+      vi: "Để nói về cả nam và nữ, văn bản Đức hay gọi cả hai dạng (Bürgerinnen und Bürger), dùng từ trung tính (Studierende, Lehrkräfte) hoặc ký hiệu (Lehrer*innen, Lehrer:innen). Các ký hiệu đang gây tranh luận, một số cơ quan và trường học ở vài bang hạn chế dùng, và quy tắc chính tả chính thức hiện chưa công nhận chúng (có thể thay đổi). Bạn chỉ cần nhận biết; khi tự viết, gọi cả hai dạng hoặc dùng từ trung tính là an toàn."
+  - type: deep_explain
+    text:
+      vi: "Từ Partizip I (đang làm gì): die Reisenden, die Studierenden, die Lehrenden, die Auszubildenden (người học nghề, nói tắt Azubis). Từ Partizip II (đã ở trạng thái nào): der/die Angestellte, der/die Verletzte, die Geflüchteten. Trên báo về di cư bạn còn gặp Schutzsuchende, Asylsuchende, Zugewanderte – tất cả theo cùng quy tắc biến cách như tính từ. Một số từ quen như der Beamte (công chức) cũng biến cách như tính từ (ein Beamter), nhưng dạng nữ lại là die Beamtin. Về pháp lý: quy chế tị nạn, quy trình xin Asyl và quyền lợi đi kèm do luật quy định và có thể thay đổi, hãy kiểm tra cơ quan có thẩm quyền; các người trong ví dụ đều là hư cấu."
+  - type: example
+    target: Ein Geflüchteter aus unserem Haus gibt jetzt selbst Deutschkurse.
+    target_lang: de
+    translation:
+      vi: Một anh tị nạn sống trong toà nhà chúng tôi giờ tự mở lớp dạy tiếng Đức.
+    note:
+      vi: "ein + Geflüchteter: sau ein (giống đực, Nominativ) đuôi -er, như ein junger Mann."
+  - type: example
+    target: Die Geflüchteten wurden in der Stadt herzlich aufgenommen.
+    target_lang: de
+    translation:
+      vi: Những người tị nạn được thành phố đón nhận nồng hậu.
+    note:
+      vi: "die + Geflüchteten (số nhiều): đuôi -en. aufnehmen = tiếp nhận; ở đây là bị động Präteritum (wurden … aufgenommen)."
+  - type: example
+    target: Alle Reisenden müssen bei der Einreise ihren Pass zeigen.
+    target_lang: de
+    translation:
+      vi: Tất cả hành khách phải xuất trình hộ chiếu khi nhập cảnh.
+    note:
+      vi: "Partizip I reisend → die Reisenden. Sau alle, đuôi là -en như sau die."
+  - type: example
+    target: Liebe Kolleginnen und Kollegen, liebe Auszubildende, herzlich willkommen!
+    target_lang: de
+    translation:
+      vi: Kính chào các đồng nghiệp và các bạn học nghề, chào mừng mọi người!
+    note:
+      vi: "Gọi cả hai dạng (Kolleginnen und Kollegen) và từ trung tính Auszubildende. Sau liebe (số nhiều, không mạo từ), đuôi là -e."
+  - type: example
+    target: An unserer Schule unterrichten Lehrkräfte aus acht Ländern.
+    target_lang: de
+    translation:
+      vi: Ở trường chúng tôi có giáo viên đến từ tám nước giảng dạy.
+    note:
+      vi: "die Lehrkraft (số nhiều Lehrkräfte) là từ trung tính, dùng cho cả Lehrer và Lehrerin."
+  - type: example
+    target: Vorurteile gegenüber Geflüchteten können aus Unwissenheit entstehen.
+    target_lang: de
+    translation:
+      vi: Định kiến với người tị nạn có thể nảy sinh từ sự thiếu hiểu biết.
+    note:
+      vi: "gegenüber + Dativ; số nhiều không mạo từ ở Dativ: Geflüchteten (đuôi -en)."
+  - type: example
+    target: Die Bürgerinnen und Bürger haben abgestimmt – die Mehrheit ist für ein neues Begegnungszentrum.
+    target_lang: de
+    translation:
+      vi: Người dân đã bỏ phiếu – đa số ủng hộ một trung tâm giao lưu mới.
+    note:
+      vi: "Bürgerinnen und Bürger: gọi cả dạng nữ (-innen) và dạng nam. die Mehrheit = đa số."
+  - type: common_mistake
+    wrong: Ein Geflüchtete hat mir den Weg erklärt.
+    right: Ein Geflüchteter hat mir den Weg erklärt.
+    target_lang: de
+    note:
+      vi: "Sau ein (giống đực, Nominativ) phân từ danh từ hoá cần đuôi -er, như ein netter Mann."
+  - type: common_mistake
+    wrong: Die Geflüchtete haben eine Wohnung gefunden.
+    right: Die Geflüchteten haben eine Wohnung gefunden.
+    target_lang: de
+    note:
+      vi: "Số nhiều sau die cần đuôi -en: die Geflüchteten. Die Geflüchtete là một người nữ (đi với hat)."
+  - type: common_mistake
+    wrong: Alle Studierende müssen sich bis Freitag anmelden.
+    right: Alle Studierenden müssen sich bis Freitag anmelden.
+    target_lang: de
+    note:
+      vi: "Sau alle đuôi giống sau die: -en. Không mạo từ thì mới là Studierende (viele Studierende)."
+  - type: common_mistake
+    wrong: Der Geflüchtete heißt Amira. Er kommt aus Syrien.
+    right: Die Geflüchtete heißt Amira. Sie kommt aus Syrien.
+    target_lang: de
+    note:
+      vi: "Với Geflüchtete, mạo từ cho biết giới: một người nữ là die Geflüchtete. (Flüchtling thì luôn là der, kể cả với phụ nữ.)"
+  - type: summary
+    points:
+      - vi: "Partizip làm danh từ: viết hoa, đuôi như tính từ (der Geflüchtete, die Reisenden, der Angestellte)."
+      - vi: "der/die …e – ein …er (nam) / eine …e (nữ) – die …en / viele …e (số nhiều)."
+      - vi: "Dativ: dem/den Geflüchteten, einer Geflüchteten; sau alle: -en."
+      - vi: "Flüchtling (thông dụng, thuật ngữ pháp lý, luôn der) – Geflüchtete (thường nghe trung tính hơn); cả hai đều đúng."
+      - vi: "Trung lập giới: Bürgerinnen und Bürger · Studierende, Lehrkräfte · Lehrer*innen/Lehrer:innen (nhận biết, đang tranh luận)."
+      - vi: "Từ vựng: der Flüchtling, die Flucht, fliehen (ist geflohen), das Asyl, die Diskriminierung, die Vielfalt, die Toleranz."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u06l3-mcq-ein-gefluechteter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u06-g-nominalisierte-partizipien
+    prompt:
+      stem: "Chọn dạng đúng (một người nam): In unserem Kurs ist ___ aus Afghanistan."
+      stem_lang: vi
+      options:
+        - { id: e1a, text: "ein Geflüchteter", lang: de }
+        - { id: e2b, text: "ein Geflüchtete", lang: de }
+        - { id: e3c, text: "ein Geflüchteten", lang: de }
+        - { id: e4d, text: "eine Geflüchteter", lang: de }
+    answer:
+      correct_option_id: e1a
+    explanation:
+      vi: "Phân từ danh từ hoá biến cách như tính từ. Sau ein (giống đực, Nominativ) đuôi là -er: ein Geflüchteter, giống ein netter Mann. eine dùng cho người nữ và khi đó đuôi là -e."
+    display_answer: ein Geflüchteter
+
+  - key: de:exercise:b2u06l3-mcq-fluechtling-nuance
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u06-fluechtling
+    prompt:
+      stem: "Một bài báo viết: \"Die Stadt unterstützt Geflüchtete bei der Wohnungssuche.\" Vì sao nhiều văn bản chọn Geflüchtete thay vì Flüchtlinge?"
+      stem_lang: vi
+      options:
+        - { id: n1a, text: "Vì một số người thấy đuôi -ling có sắc thái coi nhẹ; Geflüchtete thường nghe trung tính hơn, nhưng cả hai từ đều đúng.", lang: vi }
+        - { id: n2b, text: "Vì Flüchtling là từ sai, không còn dùng trong tiếng Đức.", lang: vi }
+        - { id: n3c, text: "Vì Geflüchtete chỉ dùng cho phụ nữ.", lang: vi }
+        - { id: n4d, text: "Vì Flüchtling chỉ dùng cho trẻ em.", lang: vi }
+    answer:
+      correct_option_id: n1a
+    explanation:
+      vi: "Flüchtling vẫn là từ thông dụng và là thuật ngữ pháp lý, dùng cho mọi người (luôn der). Geflüchtete được nhiều tổ chức, báo chí chọn vì nghe trung tính hơn và cho thấy giới qua mạo từ (der/die Geflüchtete)."
+    display_answer: Vì một số người thấy đuôi -ling có sắc thái coi nhẹ; Geflüchtete thường nghe trung tính hơn, nhưng cả hai từ đều đúng.
+
+  - key: de:exercise:b2u06l3-mcq-neutral
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u06-g-gendergerechte-sprache
+    prompt:
+      stem: "Câu nào dùng từ trung tính về giới (không gọi hai dạng, không dùng ký hiệu * hay :)?"
+      stem_lang: vi
+      options:
+        - { id: t1a, text: "Alle Studierenden sind herzlich eingeladen.", lang: de }
+        - { id: t2b, text: "Alle Studentinnen und Studenten sind herzlich eingeladen.", lang: de }
+        - { id: t3c, text: "Alle Student*innen sind herzlich eingeladen.", lang: de }
+        - { id: t4d, text: "Alle Student:innen sind herzlich eingeladen.", lang: de }
+    answer:
+      correct_option_id: t1a
+    explanation:
+      vi: "Studierende (từ Partizip I studierend) là từ trung tính. Studentinnen und Studenten là gọi cả hai dạng; Student*innen và Student:innen dùng ký hiệu – cách viết đang gây tranh luận."
+    display_answer: Alle Studierenden sind herzlich eingeladen.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u06l3-fill-gefluechtete
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-g-nominalisierte-partizipien
+    prompt:
+      template: "Die Stadt hat im Sommer zwanzig {{b1}} (geflüchtet) aufgenommen. Ein {{b2}} (geflüchtet) aus unserem Viertel arbeitet jetzt als Erzieher."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [Geflüchtete]
+        b2: [Geflüchteter]
+    known_wrong:
+      - answer: Geflüchteten
+        feedback_vi: Sau số đếm (không mạo từ) dùng đuôi mạnh -e – zwanzig Geflüchtete. Đuôi -en chỉ dùng sau die/alle hoặc ở Dativ.
+        error_tag: adj_ending
+      - answer: Geflüchteten
+        feedback_vi: Sau ein (giống đực, Nominativ) cần đuôi -er – ein Geflüchteter, như ein junger Mann.
+        error_tag: adj_ending
+    explanation:
+      vi: "Phân từ danh từ hoá viết hoa và chia đuôi như tính từ. zwanzig + số nhiều không mạo từ → Geflüchtete; ein + người nam, Nominativ → Geflüchteter (đuôi -er như ein junger Mann)."
+    display_answer: "Die Stadt hat im Sommer zwanzig Geflüchtete aufgenommen. Ein Geflüchteter aus unserem Viertel arbeitet jetzt als Erzieher."
+
+  - key: de:exercise:b2u06l3-fill-dativ-angestellte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-g-nominalisierte-partizipien
+    prompt:
+      template: "Die Beratungsstelle hilft {{b1}} (die Geflüchteten) bei der Wohnungssuche, und die {{b2}} (angestellt) dort sprechen viele Sprachen."
+      blanks:
+        - { id: b1, width_hint: 16 }
+        - { id: b2, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [den Geflüchteten]
+        b2: [Angestellten]
+    known_wrong:
+      - answer: die Geflüchteten
+        feedback_vi: helfen đi với Dativ, số nhiều là den Geflüchteten.
+        error_tag: case_dat_akk
+      - answer: Angestellte
+        feedback_vi: Sau die ở số nhiều (sprechen) đuôi là -en – die Angestellten.
+        error_tag: adj_ending
+    explanation:
+      vi: "helfen + Dativ: den Geflüchteten (Dativ số nhiều, đuôi -en). Động từ sprechen cho thấy chủ ngữ số nhiều: die Angestellten."
+    display_answer: "Die Beratungsstelle hilft den Geflüchteten bei der Wohnungssuche, und die Angestellten dort sprechen viele Sprachen."
+
+  - key: de:exercise:b2u06l3-tr-reisenden
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u07-g-partizip-i-attribut
+    prompt:
+      source_text: "Tất cả hành khách phải xuất trình hộ chiếu. (dùng Reisende)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Alle Reisenden müssen ihren Pass zeigen.
+        - Alle Reisenden müssen ihre Pässe zeigen.
+        - Alle Reisenden müssen ihren Pass vorzeigen.
+        - Alle Reisenden müssen ihre Pässe vorzeigen.
+        - Alle Reisenden müssen den Pass zeigen.
+        - Alle Reisenden müssen den Pass vorzeigen.
+        - Alle Reisenden müssen ihren Reisepass zeigen.
+        - Alle Reisenden müssen ihren Reisepass vorzeigen.
+    known_wrong:
+      - answer: Alle Reisende müssen ihren Pass zeigen.
+        feedback_vi: Sau alle, phân từ danh từ hoá có đuôi -en – alle Reisenden.
+        error_tag: adj_ending
+      - answer: Alle Reisenden müssen zeigen ihren Pass.
+        feedback_vi: Sau động từ khiếm khuyết, nguyên thể zeigen đứng cuối câu.
+        error_tag: verb_position
+    explanation:
+      vi: "reisen → Partizip I reisend → die Reisenden (hành khách). Sau alle dùng đuôi -en. müssen ở vị trí 2, nguyên thể zeigen/vorzeigen ở cuối."
+    display_answer: Alle Reisenden müssen ihren Pass zeigen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u06l3-mcq-lesen-schule
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-vielfalt
+    prompt:
+      stem: "Aus einer Schulzeitung: An unserer Schule lernen Kinder aus über zwanzig Ländern. Einige sind mit ihren Familien geflohen, andere sind hier geboren. Unsere Lehrkräfte sprechen zusammen mehr als zehn Sprachen. Für neue Schülerinnen und Schüler gibt es Paten: Ältere Jugendliche helfen ihnen in den ersten Wochen. Diskriminierung hat bei uns keinen Platz – Vielfalt ist unsere Stärke. — Was steht im Text?"
+      stem_lang: de
+      options:
+        - { id: c1a, text: "Alle Kinder an der Schule sind mit ihren Familien geflohen.", lang: de }
+        - { id: c2b, text: "Ältere Jugendliche unterstützen neue Schülerinnen und Schüler am Anfang.", lang: de }
+        - { id: c3c, text: "Die Lehrkräfte sprechen nur Deutsch.", lang: de }
+        - { id: c4d, text: "Die Schule möchte weniger Vielfalt.", lang: de }
+    answer:
+      correct_option_id: c2b
+    explanation:
+      vi: "Ältere Jugendliche helfen ihnen in den ersten Wochen = các thiếu niên lớn hơn giúp học sinh mới trong những tuần đầu (Jugendliche là tính từ danh từ hoá, B1). Chỉ một số em đã chạy nạn (einige … andere), giáo viên nói hơn mười thứ tiếng, và trường coi đa dạng là thế mạnh."
+    display_answer: Ältere Jugendliche unterstützen neue Schülerinnen und Schüler am Anfang.
+
+  - key: de:exercise:b2u06l3-wb-einer-gefluechteten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u05-g-nominalisierte-adjektive
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cô ấy đã giúp một chị tị nạn tìm nhà.\""
+      tokens:
+        - { id: w-wohnungssuche, text: Wohnungssuche }
+        - { id: w-hat, text: hat }
+        - { id: w-geholfen, text: geholfen }
+        - { id: w-sie, text: Sie }
+        - { id: w-der, text: der }
+        - { id: w-einer, text: einer }
+        - { id: w-bei, text: bei }
+        - { id: w-gefluechteten, text: Geflüchteten }
+    answer:
+      orders:
+        - [w-sie, w-hat, w-einer, w-gefluechteten, w-bei, w-der, w-wohnungssuche, w-geholfen]
+    explanation:
+      vi: "helfen + Dativ: einer Geflüchteten (giống cái, Dativ, sau einer đuôi -en – như tính từ danh từ hoá einer Kranken ở B1). Tân ngữ Dativ đứng trước cụm giới từ bei der Wohnungssuche; Partizip II geholfen ở cuối."
+    display_answer: Sie hat einer Geflüchteten bei der Wohnungssuche geholfen.
+
+  - key: de:exercise:b2u06l3-tr-benachteiligt
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u06-benachteiligen
+    prompt:
+      source_text: Niemand darf wegen seiner Herkunft benachteiligt werden.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không ai được phép bị đối xử bất công vì nguồn gốc của mình.
+        - Không ai được phép bị đối xử bất lợi vì nguồn gốc của mình.
+        - Không ai được phép bị thiệt thòi vì nguồn gốc của mình.
+        - Không ai được phép bị phân biệt đối xử vì nguồn gốc của mình.
+        - Không ai được bị đối xử bất công vì nguồn gốc của mình.
+        - Không ai được bị phân biệt đối xử vì nguồn gốc của mình.
+        - Không ai được phép bị đối xử bất công vì xuất thân của mình.
+        - Không ai được phép bị phân biệt đối xử vì xuất thân của mình.
+        - Không ai được phép bị đối xử bất công vì nguồn gốc.
+        - Không ai được phép bị đối xử bất công vì nguồn gốc của họ.
+        - Không một ai được phép bị đối xử bất công vì nguồn gốc của mình.
+        - Không được phép đối xử bất công với ai vì nguồn gốc của họ.
+        - Không ai được phép bị đối xử thiệt thòi vì nguồn gốc của mình.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Không ai muốn bị đối xử bất công vì nguồn gốc của mình.
+        feedback_vi: "darf … nicht/niemand darf = không được phép, không phải \"không muốn\" (wollen)."
+        error_tag: meaning
+    explanation:
+      vi: "Niemand darf … werden = không ai được phép bị … (bị động với động từ khiếm khuyết). benachteiligen = đối xử bất lợi, làm chịu thiệt; wegen seiner Herkunft = vì nguồn gốc của mình."
+    display_answer: Không ai được phép bị đối xử bất công vì nguồn gốc của mình.

@@ -1,0 +1,7 @@
+# Allow-list của unit B2U06 (Migration und Integration): từ đúng mà từ điển offline thiếu.
+# gesollt: Partizip II của sollen khi dùng như động từ chính (Duden); dùng làm phương án nhiễu khi dạy Ersatzinfinitiv.
+gesollt
+# Amira: tên riêng (hư cấu) trong ví dụ.
+Amira
+# Thu Ha: tên riêng tiếng Việt (hư cấu) trong bài đọc L5.
+Ha

@@ -1,0 +1,414 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u06-haette-ich-gewusst
+order_index: 1
+level: b2
+title:
+  vi: Giá mà tôi đã biết – Konjunktiv II quá khứ (Hätte ich das gewusst, …)
+objectives:
+  - vi: Nói về những quyết định trong quá khứ, chẳng hạn quyết định di cư, và điều mình tiếc.
+  - vi: Dùng hätte/wäre + Partizip II để giả định ngược với quá khứ (Wenn ich das gewusst hätte, wäre ich früher gekommen).
+  - vi: Ước về quá khứ với Wenn ich doch … hätte! và Ich wünschte, …
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u05-wiederholung]
+items:
+  - item: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+  - item: de:item:b2u06-g-irreale-vergangenheit
+  - item: de:item:b2u06-migration
+  - item: de:item:b2u06-einwanderung
+  - item: de:item:b2u06-einwandern
+  - item: de:item:b2u06-migrant
+  - item: de:item:b2u06-integration
+  - item: de:item:b2u06-sich-integrieren
+  - item: de:item:b2u06-herkunft
+  - item: de:item:b2u06-herkunftsland
+  - item: de:item:b2u06-auswanderung
+  - item: de:item:b2u06-einwanderer
+  - item: de:item:b2u06-migrantin
+  - item: de:item:b2u06-rueckkehr
+  - item: de:item:b2u06-bereuen
+  - item: de:item:b2u06-zielland
+  - item: de:item:b2u06-sehnsucht
+  - item: de:item:b2u06-wurzel
+  - item: de:item:b2u06-zuwanderung
+  - item: de:item:b1u04-g-konjunktiv-ii-formen
+    role: reuse
+  - item: de:item:b1u04-g-irrealer-wunsch
+    role: reuse
+  - item: de:item:b1u04-g-irreale-bedingung
+    role: reuse
+  - item: de:item:b1u01-g-plusquamperfekt
+    role: reuse
+  - item: de:item:b1u03-g-n-deklination
+    role: reuse
+  - item: de:item:b2u01-g-auch-wenn
+    role: reuse
+  - item: de:item:b1u01-auswandern
+    role: reuse
+  - item: de:item:b1u01-zurueckkehren
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn kể được về những quyết định trong quá khứ và nói điều mình tiếc hoặc giả định ngược với quá khứ, ví dụ: \"Wenn ich das gewusst hätte, hätte ich früher Deutsch gelernt.\""
+  - type: explain
+    text:
+      vi: "Ở B1 bạn đã dùng Konjunktiv II cho hiện tại: Wenn ich Zeit hätte, würde ich kommen. Khi điều không có thật nằm ở quá khứ, bạn dùng hätte hoặc wäre + Partizip II: Wenn ich Zeit gehabt hätte, wäre ich gekommen (thực tế hôm đó tôi không có thời gian và đã không đến). Tiếng Việt thêm \"giá mà… thì đã…\" hoặc \"lẽ ra\"; tiếng Đức đổi chính dạng động từ."
+  - type: explain
+    text:
+      vi: "Chọn hätte hay wäre giống hệt chọn haben hay sein ở Perfekt: ich habe gewartet → ich hätte gewartet; ich bin geblieben → ich wäre geblieben. Phần lớn động từ chỉ sự di chuyển hoặc thay đổi trạng thái (gehen, kommen, einwandern, umziehen) cùng sein và bleiben đi với wäre. Nếu không chắc, hãy tự đặt câu Perfekt trước."
+  - type: explain
+    text:
+      vi: "Trật tự từ như câu điều kiện B1: trong vế wenn, hätte/wäre đứng cuối (wenn ich das gewusst hätte); vế chính bắt đầu bằng hätte/wäre, Partizip II ở cuối (…, wäre ich früher gekommen). Bỏ wenn thì đưa hätte/wäre lên đầu: Hätte ich das gewusst, wäre ich früher gekommen."
+  - type: explain
+    text:
+      vi: "Ước về quá khứ: Wenn ich doch früher Deutsch gelernt hätte! hoặc Ich wünschte, ich hätte früher Deutsch gelernt. Đừng nhầm hätte/wäre (có umlaut, không có thật) với hatte/war (Plusquamperfekt, chuyện có thật): Ich hatte das schon gewusst = tôi đã biết từ trước; Ich hätte das gewusst = lẽ ra tôi đã biết."
+  - type: deep_explain
+    text:
+      vi: "Điều kiện và kết quả có thể ở hai thời điểm khác nhau: Wenn ich damals nicht eingewandert wäre, würde ich heute nicht in Hamburg leben (điều kiện quá khứ, kết quả hiện tại); Wenn ich besser Deutsch könnte, hätte ich die Stelle damals bekommen (điều kiện lâu dài, kết quả quá khứ). Dạng würde + Partizip II + haben/sein (ich würde das gemacht haben) có tồn tại nhưng nặng nề và hiếm; hãy dùng hätte/wäre + Partizip II. Với auch wenn / selbst wenn (B2U01) bạn nói rằng kết quả vẫn không đổi: Selbst wenn ich das gewusst hätte, hätte ich nichts anders gemacht. Về từ vựng: Migration là từ chung; Einwanderung/Zuwanderung nhìn từ nước đến, Auswanderung nhìn từ nước đi; der Migrant theo n-Deklination (den/dem/des Migranten), còn die Migrantin thì không."
+  - type: example
+    target: Wenn ich das gewusst hätte, wäre ich früher zur Beratung gegangen.
+    target_lang: de
+    translation:
+      vi: Nếu biết điều đó thì tôi đã đi tư vấn sớm hơn.
+    note:
+      vi: "wissen → ich habe gewusst → gewusst hätte (cuối vế wenn). gehen → ich bin gegangen → vế chính bắt đầu bằng wäre, gegangen ở cuối."
+  - type: example
+    target: Wären meine Eltern damals nicht ausgewandert, wäre ich in Hanoi aufgewachsen.
+    target_lang: de
+    translation:
+      vi: Nếu hồi đó bố mẹ tôi không ra nước ngoài sinh sống thì tôi đã lớn lên ở Hà Nội.
+    note:
+      vi: "Bỏ wenn: wären đứng đầu vế điều kiện. auswandern và aufwachsen đều đi với sein ở Perfekt nên dùng wären/wäre."
+  - type: example
+    target: Wenn ich doch nur früher mit dem Deutschkurs angefangen hätte!
+    target_lang: de
+    translation:
+      vi: Giá mà tôi bắt đầu học khoá tiếng Đức sớm hơn!
+    note:
+      vi: "Ước về quá khứ: wenn + doch/nur, hätte … angefangen ở cuối, dấu chấm than. anfangen → ich habe angefangen → hätte angefangen."
+  - type: example
+    target: Ohne die Hilfe meiner Nachbarin hätte ich mich nicht so schnell integriert.
+    target_lang: de
+    translation:
+      vi: Nếu không có chị hàng xóm giúp thì tôi đã không hoà nhập nhanh như vậy.
+    note:
+      vi: "ohne + danh từ cũng thay được vế wenn. sich integrieren → ich habe mich integriert → hätte mich integriert."
+  - type: example
+    target: Als wir in Deutschland ankamen, hatte mein Bruder schon eine Wohnung gefunden. Sonst wären wir zuerst bei Freunden geblieben.
+    target_lang: de
+    translation:
+      vi: Khi chúng tôi đến Đức, anh trai tôi đã tìm được nhà rồi. Nếu không thì lúc đầu chúng tôi đã phải ở nhờ nhà bạn bè.
+    note:
+      vi: "hatte … gefunden là Plusquamperfekt: chuyện có thật, xảy ra trước. wären … geblieben là Konjunktiv II quá khứ: chuyện không xảy ra. sonst = nếu không thì."
+  - type: example
+    target: Wenn mein Vater nicht krank geworden wäre, wären wir nie in unser Herkunftsland zurückgekehrt.
+    target_lang: de
+    translation:
+      vi: Nếu bố tôi không bị ốm thì chúng tôi đã không bao giờ trở về nước mình.
+    note:
+      vi: "werden và zurückkehren đều đi với sein: geworden wäre, wären … zurückgekehrt."
+  - type: common_mistake
+    wrong: Wenn ich das wusste, würde ich früher kommen.
+    right: Wenn ich das gewusst hätte, wäre ich früher gekommen.
+    target_lang: de
+    note:
+      vi: "wusste là Präteritum (khi tôi biết), không diễn tả giả định. Chuyện đã qua mà không có thật thì cả hai vế dùng hätte/wäre + Partizip II."
+  - type: common_mistake
+    wrong: Wenn wir früher eingewandert hätten, hätten die Kinder schneller Deutsch gelernt.
+    right: Wenn wir früher eingewandert wären, hätten die Kinder schneller Deutsch gelernt.
+    target_lang: de
+    note:
+      vi: "einwandern đi với sein (wir sind eingewandert) nên dùng wären eingewandert; lernen đi với haben nên dùng hätten gelernt."
+  - type: common_mistake
+    wrong: Ich hatte das gern gewusst.
+    right: Ich hätte das gern gewusst.
+    target_lang: de
+    note:
+      vi: "Không có umlaut là Plusquamperfekt (chuyện có thật). Muốn nói \"tôi đã rất muốn biết điều đó\" cần hätte."
+  - type: common_mistake
+    wrong: Wenn ich mehr Zeit gehabt hätte, ich hätte dich besucht.
+    right: Wenn ich mehr Zeit gehabt hätte, hätte ich dich besucht.
+    target_lang: de
+    note:
+      vi: "Vế wenn chiếm vị trí 1, nên hätte của vế chính đứng ngay sau dấu phẩy, rồi mới đến ich."
+  - type: summary
+    points:
+      - vi: "Quá khứ không có thật: hätte/wäre + Partizip II (ich hätte gewusst, ich wäre gekommen)."
+      - vi: "hätte hay wäre: theo haben/sein của Perfekt (gegangen → wäre, gelernt → hätte)."
+      - vi: "Wenn ich das gewusst hätte, wäre ich gekommen. = Hätte ich das gewusst, wäre ich gekommen."
+      - vi: "Ước: Wenn ich doch … hätte! · Ich wünschte, ich hätte …"
+      - vi: "hatte/war + Partizip II (Plusquamperfekt) = có thật; hätte/wäre + Partizip II = không có thật."
+      - vi: "Trộn thời: Wenn ich damals … hätte, würde ich heute …"
+      - vi: "Từ vựng: die Migration, die Einwanderung, einwandern (ist eingewandert), der Migrant (den Migranten), die Integration, sich integrieren, die Herkunft, das Herkunftsland."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u06l1-mcq-bedeutung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+    prompt:
+      stem: "\"Hätte ich das gewusst, wäre ich früher gekommen.\" – Điều nào đúng với thực tế?"
+      stem_lang: vi
+      options:
+        - { id: b1a, text: "Người nói đã không biết và đã không đến sớm.", lang: vi }
+        - { id: b2b, text: "Người nói đã biết nên đã đến sớm.", lang: vi }
+        - { id: b3c, text: "Người nói sẽ đến sớm vào lần sau.", lang: vi }
+        - { id: b4d, text: "Người nói đã biết điều đó từ trước khi đến.", lang: vi }
+    answer:
+      correct_option_id: b1a
+    explanation:
+      vi: "hätte … gewusst và wäre … gekommen là Konjunktiv II quá khứ: cả điều kiện lẫn kết quả đều không xảy ra. Thực tế người nói không biết, nên đã không đến sớm."
+    display_answer: Người nói đã không biết và đã không đến sớm.
+
+  - key: de:exercise:b2u06l1-mcq-geblieben-waeren
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u06-g-irreale-vergangenheit
+    prompt:
+      stem: "Chọn dạng đúng: Wenn wir damals länger in Köln ___, hätten wir mehr Freunde gefunden."
+      stem_lang: vi
+      options:
+        - { id: g1a, text: "geblieben wären", lang: de }
+        - { id: g2b, text: "geblieben hätten", lang: de }
+        - { id: g3c, text: "geblieben waren", lang: de }
+        - { id: g4d, text: "bleiben würden", lang: de }
+    answer:
+      correct_option_id: g1a
+    explanation:
+      vi: "damals cho thấy điều kiện ở quá khứ và không có thật (vế chính hätten … gefunden). bleiben đi với sein (wir sind geblieben) nên dùng geblieben wären. geblieben hätten sai trợ động từ; geblieben waren là Plusquamperfekt (có thật); bleiben würden là giả định ở hiện tại, không hợp với damals."
+    display_answer: geblieben wären
+
+  - key: de:exercise:b2u06l1-mcq-plusquamperfekt
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b1u01-g-plusquamperfekt
+    prompt:
+      stem: "Câu nào kể một việc CÓ THẬT đã xảy ra trước một việc khác trong quá khứ?"
+      stem_lang: vi
+      options:
+        - { id: p1a, text: "Als ich ankam, hatte das Büro schon geschlossen.", lang: de }
+        - { id: p2b, text: "Wenn ich früher angekommen wäre, wäre das Büro noch offen gewesen.", lang: de }
+        - { id: p3c, text: "Hätte ich das gewusst, wäre ich früher losgefahren.", lang: de }
+        - { id: p4d, text: "Ich wünschte, ich wäre früher losgefahren.", lang: de }
+    answer:
+      correct_option_id: p1a
+    explanation:
+      vi: "hatte … geschlossen là Plusquamperfekt (không umlaut): văn phòng thật sự đã đóng cửa trước khi tôi đến. Ba câu còn lại dùng hätte/wäre – Konjunktiv II quá khứ – nói về điều đã không xảy ra."
+    display_answer: Als ich ankam, hatte das Büro schon geschlossen.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u06l1-fill-eingewandert-haette
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-einwandern
+    prompt:
+      template: "Wenn meine Großeltern damals nicht {{b1}} (einwandern) wären, {{b2}} (haben) ich nie Deutsch gelernt."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [eingewandert]
+        b2: [hätte]
+    known_wrong:
+      - answer: einwanderten
+        feedback_vi: Sau wären cần Partizip II – eingewandert (ge- đứng giữa tiền tố tách ein- và gốc).
+        error_tag: participle_form
+      - answer: hatte
+        feedback_vi: hatte là Präteritum/Plusquamperfekt (có thật). Kết quả không có thật cần Konjunktiv II – hätte.
+        error_tag: konjunktiv_form
+      - answer: wäre
+        feedback_vi: lernen đi với haben (ich habe gelernt), nên dùng hätte … gelernt.
+        error_tag: aux_verb
+      - answer: würde
+        feedback_vi: Câu nói về quá khứ với Partizip II gelernt, nên dùng hätte … gelernt, không phải würde.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Điều kiện và kết quả đều ở quá khứ và không có thật. einwandern là động từ tách: Partizip II eingewandert, đi với wären (ist eingewandert). lernen đi với haben → hätte … gelernt; vế wenn đứng trước nên hätte đứng ngay sau dấu phẩy."
+    display_answer: "Wenn meine Großeltern damals nicht eingewandert wären, hätte ich nie Deutsch gelernt."
+
+  - key: de:exercise:b2u06l1-fill-migranten-waere
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-migrant
+    prompt:
+      template: "Die Kursleiterin hat {{b1}} (der Migrant) aus Brasilien in den ersten Wochen viel geholfen. Ohne ihre Hilfe {{b2}} (sein) er im Kurs ganz allein gewesen."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [dem Migranten]
+        b2: [wäre]
+    known_wrong:
+      - answer: dem Migrant
+        feedback_vi: Migrant thuộc n-Deklination – Dativ là dem Migranten.
+        error_tag: n_declension
+      - answer: den Migranten
+        feedback_vi: helfen đi với Dativ – dem Migranten.
+        error_tag: case_dat_akk
+      - answer: war
+        feedback_vi: war là Präteritum (có thật). Ohne ihre Hilfe … nói điều không xảy ra, cần wäre.
+        error_tag: konjunktiv_form
+      - answer: hätte
+        feedback_vi: sein đi với sein ở Perfekt (er ist gewesen), nên dùng wäre … gewesen.
+        error_tag: aux_verb
+    explanation:
+      vi: "helfen + Dativ, và der Migrant theo n-Deklination: dem Migranten. ohne + danh từ thay cho vế wenn; thực tế cô giáo đã giúp, nên câu sau là Konjunktiv II quá khứ: wäre … gewesen."
+    display_answer: "Die Kursleiterin hat dem Migranten aus Brasilien in den ersten Wochen viel geholfen. Ohne ihre Hilfe wäre er im Kurs ganz allein gewesen."
+
+  - key: de:exercise:b2u06l1-tr-frueher-gelernt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u04-g-irrealer-wunsch
+    prompt:
+      source_text: "Giá mà tôi đã học tiếng Đức sớm hơn! (bắt đầu bằng Wenn)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wenn ich doch früher Deutsch gelernt hätte!
+        - Wenn ich nur früher Deutsch gelernt hätte!
+        - Wenn ich doch nur früher Deutsch gelernt hätte!
+        - Wenn ich bloß früher Deutsch gelernt hätte!
+        - Wenn ich früher Deutsch gelernt hätte!
+        - Wenn ich doch schon früher Deutsch gelernt hätte!
+        - Wenn ich nur schon früher Deutsch gelernt hätte!
+        - Wenn ich doch eher Deutsch gelernt hätte!
+        - Wenn ich nur eher Deutsch gelernt hätte!
+    known_wrong:
+      - answer: Wenn ich doch früher Deutsch gelernt habe!
+        feedback_vi: Ước điều không có thật ở quá khứ cần Konjunktiv II – gelernt hätte.
+        error_tag: konjunktiv_form
+      - answer: Wenn ich doch früher Deutsch gelernt hatte!
+        feedback_vi: hatte (không umlaut) là Plusquamperfekt. Câu ước cần hätte.
+        error_tag: konjunktiv_form
+      - answer: Wenn ich doch früher Deutsch lernen würde!
+        feedback_vi: würde + nguyên thể là ước ở hiện tại/tương lai. Ước về quá khứ cần gelernt hätte.
+        error_tag: konjunktiv_form
+      - answer: Wenn ich doch früher hätte Deutsch gelernt!
+        feedback_vi: Trong câu wenn, động từ chia hätte đứng cuối, sau Partizip II – … Deutsch gelernt hätte!
+        error_tag: verb_position
+    explanation:
+      vi: "Ước về quá khứ: Wenn + doch/nur/bloß + … + Partizip II + hätte (động từ chia ở cuối), kết thúc bằng dấu chấm than. lernen đi với haben nên dùng hätte."
+    display_answer: Wenn ich doch früher Deutsch gelernt hätte!
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u06l1-mcq-lesen-lan
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-bereuen
+    prompt:
+      stem: "Lan (34, Person erfunden) erzählt: Ich bin vor acht Jahren nach Deutschland eingewandert. Am Anfang habe ich in einem Restaurant gearbeitet und kaum Deutsch gesprochen. Hätte ich gleich einen Sprachkurs gemacht, hätte ich schneller eine Stelle in meinem Beruf gefunden. Heute arbeite ich als Pflegerin im Krankenhaus. Ich bereue meine Entscheidung nicht, aber ich wäre gern früher unabhängiger gewesen. — Was stimmt?"
+      stem_lang: de
+      options:
+        - { id: r1a, text: "Lan hat sofort nach ihrer Ankunft einen Sprachkurs gemacht.", lang: de }
+        - { id: r2b, text: "Lan glaubt, dass ein früher Sprachkurs ihr geholfen hätte.", lang: de }
+        - { id: r3c, text: "Lan bereut, dass sie nach Deutschland gekommen ist.", lang: de }
+        - { id: r4d, text: "Lan arbeitet heute immer noch im Restaurant.", lang: de }
+    answer:
+      correct_option_id: r2b
+    explanation:
+      vi: "Hätte ich gleich einen Sprachkurs gemacht, hätte ich schneller eine Stelle … gefunden: Lan đã KHÔNG học ngay (nên phương án đầu sai) và tin rằng nếu học thì đã tìm được việc nhanh hơn. Ich bereue meine Entscheidung nicht = cô không hối tiếc; heute arbeite ich … im Krankenhaus = nay làm ở bệnh viện."
+    display_answer: Lan glaubt, dass ein früher Sprachkurs ihr geholfen hätte.
+
+  - key: de:exercise:b2u06l1-wb-haette-ich
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-g-irreale-vergangenheit
+    prompt:
+      instruction: "Sắp xếp thành câu điều kiện không có wenn: \"Nếu biết điều đó thì tôi đã đến sớm hơn.\""
+      tokens:
+        - { id: h-frueher, text: früher }
+        - { id: h-ich1, text: ich }
+        - { id: h-waere, text: wäre }
+        - { id: h-das, text: das }
+        - { id: h-komma, text: "," }
+        - { id: h-gekommen, text: gekommen }
+        - { id: h-haette, text: Hätte }
+        - { id: h-ich2, text: ich }
+        - { id: h-gewusst, text: gewusst }
+    answer:
+      orders:
+        - [h-haette, h-ich1, h-das, h-gewusst, h-komma, h-waere, h-ich2, h-frueher, h-gekommen]
+        - [h-haette, h-ich2, h-das, h-gewusst, h-komma, h-waere, h-ich1, h-frueher, h-gekommen]
+    explanation:
+      vi: "Bỏ wenn thì Hätte đứng đầu vế điều kiện, Partizip II gewusst ở cuối vế. Vế chính bắt đầu ngay bằng wäre (kommen đi với sein), rồi ich, früher và gekommen ở cuối."
+    display_answer: Hätte ich das gewusst, wäre ich früher gekommen.
+
+  - key: de:exercise:b2u06l1-tr-eingewandert-heute
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b1u04-g-konjunktiv-ii-formen
+    prompt:
+      source_text: Wenn meine Eltern nicht nach Deutschland eingewandert wären, würde ich heute in Vietnam leben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu bố mẹ tôi không nhập cư vào Đức thì bây giờ tôi đang sống ở Việt Nam.
+        - Nếu bố mẹ tôi không nhập cư vào Đức thì bây giờ tôi sẽ sống ở Việt Nam.
+        - Nếu bố mẹ tôi không nhập cư vào Đức thì hôm nay tôi sẽ sống ở Việt Nam.
+        - Nếu bố mẹ tôi không di cư sang Đức thì bây giờ tôi đang sống ở Việt Nam.
+        - Nếu bố mẹ tôi không di cư sang Đức thì bây giờ tôi sẽ sống ở Việt Nam.
+        - Nếu bố mẹ tôi đã không nhập cư vào Đức thì bây giờ tôi sẽ sống ở Việt Nam.
+        - Nếu bố mẹ tôi đã không di cư sang Đức thì bây giờ tôi đang sống ở Việt Nam.
+        - Nếu ba mẹ tôi không nhập cư vào Đức thì bây giờ tôi sẽ sống ở Việt Nam.
+        - Nếu ba mẹ tôi không di cư sang Đức thì bây giờ tôi đang sống ở Việt Nam.
+        - Nếu bố mẹ tôi không sang Đức thì bây giờ tôi sẽ sống ở Việt Nam.
+        - Nếu bố mẹ tôi không nhập cư vào Đức, bây giờ tôi sẽ sống ở Việt Nam.
+        - Giá mà bố mẹ tôi không nhập cư vào Đức thì bây giờ tôi đang sống ở Việt Nam.
+        - Nếu bố mẹ không nhập cư vào Đức thì bây giờ tôi sẽ sống ở Việt Nam.
+        - Nếu bố mẹ tôi không di cư đến Đức thì bây giờ tôi sẽ sống ở Việt Nam.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì bố mẹ tôi không nhập cư vào Đức nên bây giờ tôi sống ở Việt Nam.
+        feedback_vi: "wären … eingewandert là Konjunktiv II: thực tế bố mẹ ĐÃ nhập cư vào Đức, và người nói hiện không sống ở Việt Nam."
+        error_tag: meaning
+    explanation:
+      vi: "Vế wenn là Konjunktiv II quá khứ (eingewandert wären: chuyện đã qua không có thật), vế chính là Konjunktiv II hiện tại (würde … leben: hệ quả ở hiện tại). Thực tế: bố mẹ đã sang Đức và người nói đang sống ở Đức."
+    display_answer: Nếu bố mẹ tôi không nhập cư vào Đức thì bây giờ tôi đang sống ở Việt Nam.
+
+  - key: de:exercise:b2u06l1-mcq-selbst-wenn
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-auch-wenn
+    prompt:
+      stem: "Bạn muốn nói: \"Kể cả nếu hồi đó tôi biết trước mọi khó khăn thì tôi vẫn sẽ di cư.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: s1a, text: "Selbst wenn ich alle Probleme vorher gekannt hätte, wäre ich trotzdem ausgewandert.", lang: de }
+        - { id: s2b, text: "Selbst wenn ich alle Probleme vorher gekannt hätte, hätte ich trotzdem ausgewandert.", lang: de }
+        - { id: s3c, text: "Selbst wenn ich alle Probleme vorher kannte, wäre ich trotzdem ausgewandert.", lang: de }
+        - { id: s4d, text: "Selbst wenn ich alle Probleme vorher gekannt hätte, würde ich trotzdem ausgewandert.", lang: de }
+    answer:
+      correct_option_id: s1a
+    explanation:
+      vi: "selbst wenn (B2U01) + Konjunktiv II quá khứ: kết quả vẫn không đổi (trotzdem = vẫn). kennen → ich habe gekannt → gekannt hätte; auswandern → ich bin ausgewandert → wäre ausgewandert. Phương án 2 sai trợ động từ, phương án 3 dùng Präteritum kannte (không phải giả định), phương án 4 ghép würde với Partizip II – không có dạng này."
+    display_answer: Selbst wenn ich alle Probleme vorher gekannt hätte, wäre ich trotzdem ausgewandert.

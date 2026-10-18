@@ -1,0 +1,1643 @@
+# Học liệu unit B2U06 "Di cư và hội nhập" (Migration und Integration), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U06L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# Mọi người và câu chuyện trong ví dụ là hư cấu. Thông tin pháp lý/hành chính chỉ ở mức chung, có thể thay đổi.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Giá mà tôi đã biết – Konjunktiv II quá khứ =================
+  - key: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Konjunktiv II der Vergangenheit: hätte / wäre + Partizip II (ich hätte gewusst, ich wäre gekommen)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để nói điều không có thật trong quá khứ, bạn dùng hätte hoặc wäre (chia theo ngôi) + Partizip II ở cuối câu. Chọn hätte hay wäre giống hệt chọn haben hay sein ở Perfekt: ich habe gewartet → ich hätte gewartet; ich bin geblieben → ich wäre geblieben. Dạng này dùng cho mọi chuyện đã qua, không chia riêng theo Präteritum, Perfekt hay Plusquamperfekt."
+      examples:
+        - target: Ich hätte gern länger in Hamburg gewohnt.
+          translation:
+            vi: Tôi đã rất muốn sống ở Hamburg lâu hơn (nhưng không được).
+        - target: Ohne die Hilfe meiner Nachbarin wäre ich am Anfang sehr allein gewesen.
+          translation:
+            vi: Nếu không có chị hàng xóm giúp đỡ thì lúc đầu tôi đã rất cô đơn.
+        - target: Das hätte ich nicht gedacht!
+          translation:
+            vi: Tôi không ngờ đấy!
+      confusion:
+        vi: "Đừng nhầm với Plusquamperfekt (hatte/war + Partizip II, không có umlaut), dùng cho chuyện có thật xảy ra trước một chuyện khác. Ich hatte gewartet = tôi đã đợi (thật); ich hätte gewartet = lẽ ra tôi đã đợi (nhưng thực tế không)."
+
+  - key: de:item:b2u06-g-irreale-vergangenheit
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Irreale Vergangenheit: Wenn ich das gewusst hätte, wäre ich früher gekommen. · Wenn ich doch früher … hätte!"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Điều kiện trái với thực tế ở quá khứ dùng Konjunktiv II quá khứ ở cả hai vế: Wenn ich das gewusst hätte, wäre ich früher gekommen (thực tế tôi không biết, nên không đến sớm). Có thể bỏ wenn và đưa hätte/wäre lên đầu: Hätte ich das gewusst, wäre ich früher gekommen. Để ước về quá khứ: Wenn ich doch früher Deutsch gelernt hätte! hoặc Ich wünschte, ich hätte früher Deutsch gelernt."
+      examples:
+        - target: Hätte ich damals besser Deutsch gesprochen, hätte ich schneller Arbeit gefunden.
+          translation:
+            vi: Nếu hồi đó tôi nói tiếng Đức giỏi hơn thì tôi đã tìm được việc nhanh hơn.
+        - target: Wenn ich doch nur früher mit dem Deutschkurs angefangen hätte!
+          translation:
+            vi: Giá mà tôi bắt đầu học khoá tiếng Đức sớm hơn!
+        - target: Ich wünschte, ich wäre nicht so lange allein geblieben.
+          translation:
+            vi: Ước gì tôi đã không ở một mình lâu như vậy.
+      confusion:
+        vi: "Điều kiện ở quá khứ, kết quả ở hiện tại: Wenn ich damals Deutsch gelernt hätte, könnte ich jetzt besser arbeiten. Không nói Wenn ich das wusste, würde ich …: wusste là Präteritum, nghĩa là \"khi tôi biết\" chứ không phải \"giá mà tôi đã biết\"."
+
+  - key: de:item:b2u06-migration
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Migration (Sg.)
+      ipa: /miɡʁaˈtsi̯oːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự di cư (chuyển đến sống ở nước hoặc vùng khác)
+      examples:
+        - target: Das Museum zeigt eine Ausstellung über die Geschichte der Migration in unserer Stadt.
+          translation:
+            vi: Bảo tàng trưng bày một triển lãm về lịch sử di cư ở thành phố chúng tôi.
+        - target: Die Gründe für Migration sind sehr unterschiedlich.
+          translation:
+            vi: Lý do di cư rất khác nhau.
+      pronunciation_note:
+        vi: "-tion đọc là /tsi̯oːn/ (âm \"ts\" như z tiếng Đức), trọng âm ở âm tiết cuối: Mi-gra-TION."
+      confusion:
+        vi: "Migration là từ chung, trung tính, cho cả việc đi và đến. Einwanderung nhìn từ nước đến (nhập cư), Auswanderung nhìn từ nước đi (xuất cư)."
+
+  - key: de:item:b2u06-einwanderung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Einwanderung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nhập cư (đến sống lâu dài ở một nước khác)
+      examples:
+        - target: Der Roman erzählt von der Einwanderung einer Familie aus Vietnam nach Kanada.
+          translation:
+            vi: Cuốn tiểu thuyết kể chuyện một gia đình từ Việt Nam nhập cư vào Canada.
+        - target: Für die Einwanderung braucht man meistens viele Dokumente.
+          translation:
+            vi: Để nhập cư, thường người ta cần rất nhiều giấy tờ.
+      confusion:
+        vi: "Động từ: einwandern (ist eingewandert). Ngược hướng: die Auswanderung (rời nước mình ra nước ngoài)."
+
+  - key: de:item:b2u06-einwandern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: einwandern, wandert ein, wanderte ein, ist eingewandert
+      pos: động từ
+    back:
+      meaning:
+        vi: nhập cư (vào một nước)
+      examples:
+        - target: Meine Großeltern sind in den Siebzigerjahren nach Kanada eingewandert.
+          translation:
+            vi: Ông bà tôi nhập cư vào Canada trong những năm bảy mươi.
+        - target: Wenn wir nicht eingewandert wären, hätte ich nie Deutsch gelernt.
+          translation:
+            vi: Nếu chúng tôi không nhập cư thì tôi đã chẳng bao giờ học tiếng Đức.
+      confusion:
+        vi: "Động từ tách, Perfekt với sein vì là sự chuyển chỗ: wir sind eingewandert → Konjunktiv II quá khứ: wir wären eingewandert. Đi với nach + tên nước không mạo từ (nach Deutschland) hoặc in + Akkusativ (in die Schweiz)."
+
+  - key: de:item:b2u06-migrant
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Migrant, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: người di cư (nam, hoặc chung khi nói số nhiều)
+      examples:
+        - target: In unserem Kurs sitzen Migranten aus zwölf Ländern.
+          translation:
+            vi: Trong lớp chúng tôi có những người di cư đến từ mười hai nước.
+        - target: Die Beratungsstelle hilft jungen Migranten bei der Jobsuche.
+          translation:
+            vi: Văn phòng tư vấn giúp những người di cư trẻ tìm việc.
+      confusion:
+        vi: "n-Deklination như der Student: der Migrant, nhưng den/dem/des Migranten. Dạng nữ: die Migrantin, -nen (không theo n-Deklination)."
+
+  - key: de:item:b2u06-integration
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Integration (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hội nhập
+      examples:
+        - target: Die Sprache ist ein wichtiger Schlüssel zur Integration.
+          translation:
+            vi: Ngôn ngữ là một chìa khoá quan trọng để hội nhập.
+        - target: Hätte ich keine Freunde gefunden, wäre die Integration viel schwerer gewesen.
+          translation:
+            vi: Nếu tôi không tìm được bạn bè thì việc hội nhập đã khó hơn nhiều.
+      confusion:
+        vi: "Integration thường được hiểu là quá trình hai chiều: người mới đến học hỏi, và xã hội cũng tạo cơ hội cho họ. Động từ: sich integrieren."
+
+  - key: de:item:b2u06-sich-integrieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich integrieren
+      pos: động từ
+    back:
+      meaning:
+        vi: hoà nhập, hội nhập (vào một cộng đồng)
+      examples:
+        - target: Meine Tochter hat sich in der neuen Schule schnell integriert.
+          translation:
+            vi: Con gái tôi đã hoà nhập rất nhanh ở trường mới.
+        - target: Es dauert eine Weile, bis man sich in einem neuen Land integriert hat.
+          translation:
+            vi: Phải mất một thời gian người ta mới hoà nhập được ở một đất nước mới.
+      confusion:
+        vi: "Động từ -ieren: Partizip II không có ge- (integriert). Phản thân: ich integriere mich, du integrierst dich. Cũng dùng với tân ngữ: jemanden in ein Team integrieren (đưa ai vào nhóm)."
+
+  - key: de:item:b2u06-herkunft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Herkunft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguồn gốc, xuất thân
+      examples:
+        - target: Sie ist stolz auf ihre vietnamesische Herkunft.
+          translation:
+            vi: Cô ấy tự hào về nguồn gốc Việt Nam của mình.
+        - target: Niemand darf wegen seiner Herkunft benachteiligt werden.
+          translation:
+            vi: Không ai được phép bị đối xử bất công vì nguồn gốc của mình.
+      confusion:
+        vi: "Hỏi thẳng về Herkunft có thể bị coi là tế nhị, nhất là với người sinh ra và lớn lên ở Đức. Từ ghép: das Herkunftsland."
+
+  - key: de:item:b2u06-herkunftsland
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Herkunftsland, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước xuất thân, đất nước nơi mình đến từ đó
+      examples:
+        - target: In seinem Herkunftsland hat er als Lehrer gearbeitet.
+          translation:
+            vi: Ở đất nước của mình, anh ấy từng làm giáo viên.
+        - target: Viele Migranten halten engen Kontakt zu ihrem Herkunftsland.
+          translation:
+            vi: Nhiều người di cư giữ liên lạc chặt chẽ với đất nước của họ.
+      confusion:
+        vi: "Từ ghép Herkunft + s + Land, giống theo từ cuối → das. Ngược nghĩa: das Zielland (nước đến)."
+
+  # --- Zusatzwortschatz bài 1 ---
+  - key: de:item:b2u06-auswanderung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Auswanderung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự di cư ra nước ngoài, sự xuất cư
+      examples:
+        - target: Die Auswanderung nach Australien war eine große Entscheidung für die ganze Familie.
+          translation:
+            vi: Việc di cư sang Úc là một quyết định lớn đối với cả gia đình.
+        - target: Nach ihrer Auswanderung hat sie ihre Eltern jahrelang nicht gesehen.
+          translation:
+            vi: Sau khi ra nước ngoài, cô ấy đã nhiều năm không gặp bố mẹ.
+      confusion:
+        vi: "Động từ: auswandern (B1). Auswanderung nhìn từ nước mình rời đi, Einwanderung nhìn từ nước mình đến."
+
+  - key: de:item:b2u06-einwanderer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Einwanderer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người nhập cư
+      examples:
+        - target: Die ersten Einwanderer in unserer Straße kamen aus Italien.
+          translation:
+            vi: Những người nhập cư đầu tiên ở phố chúng tôi đến từ Ý.
+        - target: Als junger Einwanderer hätte ich mir mehr Unterstützung gewünscht.
+          translation:
+            vi: Khi còn là một người nhập cư trẻ, tôi đã mong được hỗ trợ nhiều hơn.
+      confusion:
+        vi: "Dạng nữ: die Einwanderin, -nen. Einwanderer nhấn mạnh việc đến để ở lâu dài; Migrant là từ chung hơn."
+
+  - key: de:item:b2u06-migrantin
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Migrantin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người di cư (nữ)
+      examples:
+        - target: Eine Migrantin aus Kolumbien leitet heute das kleine Restaurant an der Ecke.
+          translation:
+            vi: Một phụ nữ di cư từ Colombia nay quản lý nhà hàng nhỏ ở góc phố.
+        - target: Im Projekt erzählen Migrantinnen von ihrem ersten Jahr in Deutschland.
+          translation:
+            vi: Trong dự án, những phụ nữ di cư kể về năm đầu tiên của họ ở Đức.
+      confusion:
+        vi: "Dạng nữ thêm -in vào der Migrant. Khác dạng nam, Migrantin không theo n-Deklination: die Migrantin, der Migrantin; số nhiều -nen."
+
+  - key: de:item:b2u06-rueckkehr
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Rückkehr (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự trở về
+      examples:
+        - target: Nach ihrer Rückkehr nach Vietnam hat sie eine Sprachschule gegründet.
+          translation:
+            vi: Sau khi trở về Việt Nam, cô ấy đã mở một trường ngoại ngữ.
+        - target: An eine Rückkehr in ihr Herkunftsland denkt die Familie nicht mehr.
+          translation:
+            vi: Gia đình ấy không còn nghĩ đến việc trở về đất nước của mình nữa.
+      confusion:
+        vi: "Động từ: zurückkehren (ist zurückgekehrt). Trọng âm ở âm tiết đầu: RÜCK-kehr."
+
+  - key: de:item:b2u06-bereuen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bereuen
+      pos: động từ
+    back:
+      meaning:
+        vi: hối tiếc, ân hận (về điều đã làm)
+      examples:
+        - target: Ich habe nie bereut, dass ich nach Leipzig gezogen bin.
+          translation:
+            vi: Tôi chưa bao giờ hối tiếc vì đã chuyển đến Leipzig.
+        - target: Bereust du deine Entscheidung?
+          translation:
+            vi: Bạn có hối tiếc về quyết định của mình không?
+      confusion:
+        vi: "bereuen + Akkusativ hoặc + dass-Satz. be- là tiền tố không tách, nên Partizip II không có ge-: hat bereut. Muốn nói cụ thể điều lẽ ra nên làm, dùng Konjunktiv II quá khứ: Ich hätte früher anfangen sollen."
+
+  - key: de:item:b2u06-zielland
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Zielland, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước đến, nước đích (nơi người di cư muốn đến)
+      examples:
+        - target: Bevor man auswandert, sollte man die Sprache des Ziellandes lernen.
+          translation:
+            vi: Trước khi ra nước ngoài, người ta nên học ngôn ngữ của nước đến.
+        - target: Kanada war lange ihr Zielland, aber dann ist sie in Deutschland geblieben.
+          translation:
+            vi: Canada từng là nơi cô ấy muốn đến từ lâu, nhưng rồi cô ấy ở lại Đức.
+      confusion:
+        vi: "Từ ghép das Ziel + das Land → das Zielland; Genitiv: des Ziellandes hoặc des Ziellands. Ngược nghĩa: das Herkunftsland."
+
+  - key: de:item:b2u06-sehnsucht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Sehnsucht, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nỗi nhớ mong, sự khao khát
+      examples:
+        - target: Sie hat große Sehnsucht nach ihrer Familie.
+          translation:
+            vi: Cô ấy rất nhớ gia đình.
+        - target: Die Sehnsucht nach dem Meer ist geblieben.
+          translation:
+            vi: Nỗi nhớ biển vẫn còn đó.
+      confusion:
+        vi: "Sehnsucht nach + Dativ. Heimweh (bài 4) là nhớ nhà, nhớ quê; Sehnsucht rộng hơn: nhớ người, nơi chốn hoặc khao khát một điều gì."
+
+  - key: de:item:b2u06-wurzel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wurzel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: rễ (cây); (nghĩa bóng) cội nguồn, gốc gác
+      examples:
+        - target: Meine Wurzeln liegen in Vietnam, aber ich lebe gern in Köln.
+          translation:
+            vi: Cội nguồn của tôi ở Việt Nam, nhưng tôi thích sống ở Köln.
+        - target: Nach zehn Jahren hat die Familie in Dresden Wurzeln geschlagen.
+          translation:
+            vi: Sau mười năm, gia đình ấy đã bén rễ ở Dresden.
+      confusion:
+        vi: "Wurzeln schlagen = bén rễ, ổn định cuộc sống ở nơi mới. Nghĩa \"gốc gác\" thường dùng số nhiều: seine Wurzeln."
+
+  - key: de:item:b2u06-zuwanderung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zuwanderung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nhập cư, dòng người đến (từ hay dùng trong văn bản hành chính, báo chí)
+      examples:
+        - target: Die kleine Stadt ist durch Zuwanderung wieder gewachsen.
+          translation:
+            vi: Thị trấn nhỏ ấy đã đông dân trở lại nhờ có người nhập cư.
+        - target: In der Zeitung wird oft über Zuwanderung diskutiert.
+          translation:
+            vi: Trên báo, người ta thường thảo luận về vấn đề nhập cư.
+      confusion:
+        vi: "Zuwanderung và Einwanderung gần nghĩa; Zuwanderung thường rộng hơn, có thể chỉ cả việc đến ở trong một thời gian chứ chưa chắc ở lâu dài."
+
+  # ================= Bài 2: Như thể – modal quá khứ, als ob =================
+  - key: de:item:b2u06-g-konj-ii-modal-vergangenheit
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "hätte + Infinitiv + Modalverb (Infinitiv): Du hättest früher fragen sollen. · Ich hätte das nicht machen müssen."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để nói \"lẽ ra nên/có thể/phải … (nhưng đã không)\", bạn dùng hätte + nguyên thể động từ chính + nguyên thể động từ khiếm khuyết ở cuối câu: Du hättest früher fragen sollen. Động từ khiếm khuyết không ở dạng Partizip II (gesollt, gekonnt) mà ở nguyên thể – gọi là Ersatzinfinitiv, giống Perfekt ich habe arbeiten müssen. Trợ động từ là hätte, kể cả khi động từ chính đi với sein: Ich hätte früher kommen sollen."
+      examples:
+        - target: Sie hätten den Antrag früher stellen sollen.
+          translation:
+            vi: Lẽ ra ông/bà nên nộp đơn sớm hơn.
+        - target: Wir hätten auch online einen Termin buchen können.
+          translation:
+            vi: Lẽ ra chúng tôi cũng đã có thể đặt lịch hẹn trực tuyến.
+        - target: Das hätte ich allein nicht schaffen können.
+          translation:
+            vi: Một mình thì tôi đã không thể làm được việc đó.
+      confusion:
+        vi: "hätte … sollen = lẽ ra nên (phê bình, tiếc); hätte … können = lẽ ra đã có thể (khả năng không dùng đến, hoặc lời trách); hätte … müssen = lẽ ra phải. Trong câu phụ, hätte đứng trước hai nguyên thể chứ không ở cuối: …, dass du hättest fragen sollen (chỉ cần nhận biết)."
+
+  - key: de:item:b2u06-g-als-ob
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "als ob / als wenn + Konjunktiv II (Verb am Ende) · als + Konjunktiv II (Verb direkt nach als): Er tut, als wäre er hier zu Hause."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "als ob và als wenn nghĩa là \"như thể\" và mở câu phụ, nên động từ chia đứng cuối: Er tut, als ob er alles wüsste. Nếu chỉ dùng als, động từ chia đứng ngay sau als: Er tut, als wüsste er alles. Vì so sánh với điều không có thật, động từ thường ở Konjunktiv II: hiện tại wäre, hätte, würde + nguyên thể; quá khứ hätte/wäre + Partizip II."
+      examples:
+        - target: Sie spricht Deutsch, als ob sie in Berlin aufgewachsen wäre.
+          translation:
+            vi: Cô ấy nói tiếng Đức như thể đã lớn lên ở Berlin.
+        - target: Er tut so, als würde er mich nicht kennen.
+          translation:
+            vi: Anh ta làm như thể không quen tôi.
+        - target: Ich fühle mich hier, als wäre ich schon immer hier gewesen.
+          translation:
+            vi: Tôi thấy mình ở đây như thể đã luôn sống ở đây.
+      confusion:
+        vi: "Không viết als ob er ist reich (động từ phải ở cuối và ở Konjunktiv II: als ob er reich wäre). Trong văn viết trang trọng còn gặp Konjunktiv I (als ob er reich sei); trong văn nói đôi khi gặp thể thường, nhưng khi viết bài thi hãy dùng Konjunktiv II."
+
+  - key: de:item:b2u06-aufenthaltserlaubnis
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Aufenthaltserlaubnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy phép cư trú
+      examples:
+        - target: Meine Aufenthaltserlaubnis läuft im März ab.
+          translation:
+            vi: Giấy phép cư trú của tôi hết hạn vào tháng Ba.
+        - target: Sie hätte ihre Aufenthaltserlaubnis früher verlängern sollen.
+          translation:
+            vi: Lẽ ra cô ấy nên gia hạn giấy phép cư trú sớm hơn.
+      confusion:
+        vi: "Từ ghép der Aufenthalt + s + die Erlaubnis → die Aufenthaltserlaubnis. Các loại giấy phép, tên gọi và điều kiện cấp do luật quy định và có thể thay đổi, hãy kiểm tra cơ quan có thẩm quyền."
+
+  - key: de:item:b2u06-visum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Visum, Visa
+      ipa: /ˈviːzʊm/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thị thực, visa
+      examples:
+        - target: Mein Bruder braucht für den Besuch ein Visum.
+          translation:
+            vi: Anh trai tôi cần visa cho chuyến thăm.
+        - target: Hätten wir das Visum früher beantragt, hätten wir schon im Mai fliegen können.
+          translation:
+            vi: Nếu chúng tôi xin visa sớm hơn thì đã có thể bay từ tháng Năm.
+      pronunciation_note:
+        vi: "V trong Visum đọc như \"v\" tiếng Việt (từ gốc Latinh), không phải \"ph\"."
+      confusion:
+        vi: "Số nhiều: die Visa (cũng gặp die Visen). Ai cần visa và loại visa nào do quy định hiện hành, có thể thay đổi – hãy kiểm tra cơ quan có thẩm quyền."
+
+  - key: de:item:b2u06-staatsangehoerigkeit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Staatsangehörigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: quốc tịch
+      examples:
+        - target: Welche Staatsangehörigkeit haben Sie?
+          translation:
+            vi: Ông/bà mang quốc tịch nào?
+        - target: Seit letztem Jahr hat er die deutsche Staatsangehörigkeit.
+          translation:
+            vi: Từ năm ngoái anh ấy có quốc tịch Đức.
+      confusion:
+        vi: "Trong hồ sơ, giấy tờ hay dùng Staatsangehörigkeit; die Nationalität (A1) nghĩa gần giống, thường gặp trong văn nói."
+
+  - key: de:item:b2u06-einbuergerung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Einbürgerung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nhập quốc tịch
+      examples:
+        - target: Für die Einbürgerung muss man bestimmte Voraussetzungen erfüllen.
+          translation:
+            vi: Để nhập quốc tịch, người ta phải đáp ứng những điều kiện nhất định.
+        - target: Nach ihrer Einbürgerung hat sie eine große Feier gemacht.
+          translation:
+            vi: Sau khi nhập quốc tịch, cô ấy đã tổ chức một bữa tiệc lớn.
+      confusion:
+        vi: "Gốc: der Bürger → einbürgern; sich einbürgern lassen = xin nhập quốc tịch. Điều kiện nhập quốc tịch do luật quy định và có thể thay đổi, hãy kiểm tra cơ quan có thẩm quyền."
+
+  - key: de:item:b2u06-integrationskurs
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Integrationskurs, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoá hội nhập (khoá học tiếng Đức kèm phần tìm hiểu về xã hội Đức)
+      examples:
+        - target: Im Integrationskurs lernt man Deutsch und erfährt viel über das Leben in Deutschland.
+          translation:
+            vi: Trong khoá hội nhập, người ta học tiếng Đức và biết thêm nhiều điều về cuộc sống ở Đức.
+        - target: Ich hätte mich früher für den Integrationskurs anmelden sollen.
+          translation:
+            vi: Lẽ ra tôi nên đăng ký khoá hội nhập sớm hơn.
+      confusion:
+        vi: "Ai được hoặc phải tham gia, học phí và số giờ học do quy định hiện hành và có thể thay đổi; hãy hỏi cơ quan có thẩm quyền hoặc một văn phòng tư vấn."
+
+  - key: de:item:b2u06-behoerde
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Behörde, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ quan nhà nước, cơ quan công quyền
+      examples:
+        - target: Bei welcher Behörde muss ich den Antrag stellen?
+          translation:
+            vi: Tôi phải nộp đơn ở cơ quan nào?
+        - target: Die Behörde hat mir einen Brief geschickt.
+          translation:
+            vi: Cơ quan nhà nước đã gửi cho tôi một lá thư.
+      confusion:
+        vi: "Behörde là từ chung cho cơ quan nhà nước; das Amt (A1) thường chỉ một cơ quan cụ thể: das Bürgeramt, das Standesamt."
+
+  - key: de:item:b2u06-beantragen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: beantragen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm đơn xin (cái gì)
+      examples:
+        - target: Ich möchte eine Verlängerung meines Visums beantragen.
+          translation:
+            vi: Tôi muốn làm đơn xin gia hạn visa.
+        - target: Wo kann man das Kindergeld beantragen?
+          translation:
+            vi: Có thể làm đơn xin trợ cấp nuôi con ở đâu?
+      confusion:
+        vi: "beantragen + Akkusativ, không có giới từ: ein Visum beantragen = einen Antrag auf ein Visum stellen. be- không tách, Partizip II không có ge-: hat beantragt."
+
+  - key: de:item:b2u06-antrag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Antrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn (xin, đề nghị)
+      examples:
+        - target: Ich habe den Antrag letzte Woche gestellt.
+          translation:
+            vi: Tôi đã nộp đơn vào tuần trước.
+        - target: Der Antrag muss vollständig ausgefüllt sein.
+          translation:
+            vi: Đơn phải được điền đầy đủ.
+      confusion:
+        vi: "Cụm cố định: einen Antrag stellen (nộp đơn), einen Antrag auf + Akkusativ (đơn xin cái gì). Số nhiều có umlaut: die Anträge."
+
+  # --- Zusatzwortschatz bài 2 ---
+  - key: de:item:b2u06-auslaenderbehoerde
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Ausländerbehörde, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sở/phòng quản lý người nước ngoài (cơ quan phụ trách cư trú)
+      examples:
+        - target: Morgen habe ich einen Termin bei der Ausländerbehörde.
+          translation:
+            vi: Ngày mai tôi có lịch hẹn ở phòng quản lý người nước ngoài.
+        - target: Die Ausländerbehörde ist für meine Aufenthaltserlaubnis zuständig.
+          translation:
+            vi: Phòng quản lý người nước ngoài phụ trách giấy phép cư trú của tôi.
+      confusion:
+        vi: "Tên gọi khác nhau theo thành phố và có thể thay đổi (ví dụ Einwanderungsbehörde, Ausländeramt); hãy kiểm tra trên trang của thành phố nơi bạn sống."
+
+  - key: de:item:b2u06-verlaengern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verlängern
+      pos: động từ
+    back:
+      meaning:
+        vi: gia hạn; kéo dài
+      examples:
+        - target: Ich muss meine Aufenthaltserlaubnis verlängern lassen.
+          translation:
+            vi: Tôi phải đi làm thủ tục gia hạn giấy phép cư trú.
+        - target: Wir haben unseren Urlaub um eine Woche verlängert.
+          translation:
+            vi: Chúng tôi đã kéo dài kỳ nghỉ thêm một tuần.
+      confusion:
+        vi: "verlängern um + Akkusativ = kéo dài thêm bao lâu. Danh từ: die Verlängerung. Gốc là länger (dài hơn): verlängern = làm cho dài hơn."
+
+  - key: de:item:b2u06-ablaufen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ablaufen, läuft ab, lief ab, ist abgelaufen
+      pos: động từ
+    back:
+      meaning:
+        vi: hết hạn (giấy tờ, thời hạn); diễn ra
+      examples:
+        - target: Mein Visum läuft nächste Woche ab.
+          translation:
+            vi: Visa của tôi hết hạn vào tuần sau.
+        - target: Die Frist ist leider schon abgelaufen.
+          translation:
+            vi: Tiếc là đã quá hạn rồi.
+      confusion:
+        vi: "Perfekt với sein: ist abgelaufen. Nghĩa khác: diễn ra – Wie ist das Gespräch abgelaufen? (Cuộc nói chuyện diễn ra thế nào?)"
+
+  - key: de:item:b2u06-gueltig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gültig
+      pos: tính từ
+    back:
+      meaning:
+        vi: có hiệu lực, còn hạn
+      examples:
+        - target: Ist mein Ausweis noch gültig?
+          translation:
+            vi: Thẻ căn cước của tôi còn hạn không?
+        - target: Das Ticket ist nur heute gültig.
+          translation:
+            vi: Vé này chỉ có giá trị trong hôm nay.
+      confusion:
+        vi: "Ngược nghĩa: ungültig. Danh từ: die Gültigkeit. Trước danh từ có đuôi: ein gültiger Pass."
+
+  - key: de:item:b2u06-einreichen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: einreichen
+      pos: động từ
+    back:
+      meaning:
+        vi: nộp (hồ sơ, giấy tờ chính thức)
+      examples:
+        - target: Bitte reichen Sie alle Unterlagen bis zum 15. Mai ein.
+          translation:
+            vi: Xin ông/bà nộp tất cả giấy tờ trước ngày 15 tháng Năm.
+        - target: Ich hätte die Kopien gleich mit dem Antrag einreichen sollen.
+          translation:
+            vi: Lẽ ra tôi nên nộp các bản sao ngay cùng với đơn.
+      confusion:
+        vi: "Động từ tách: Ich reiche den Antrag ein; Partizip II: eingereicht. einreichen dùng cho giấy tờ chính thức; nói thường: abgeben."
+
+  - key: de:item:b2u06-einreise
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Einreise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nhập cảnh
+      examples:
+        - target: Bei der Einreise wurde mein Pass kontrolliert.
+          translation:
+            vi: Khi nhập cảnh, hộ chiếu của tôi đã được kiểm tra.
+        - target: Für die Einreise brauchen Sie einen gültigen Pass.
+          translation:
+            vi: Để nhập cảnh, ông/bà cần hộ chiếu còn hạn.
+      confusion:
+        vi: "Ngược nghĩa: die Ausreise (xuất cảnh). Động từ: einreisen (ist eingereist). Khác die Anreise (B1U08): chuyến đi đến nơi nghỉ, không liên quan đến biên giới."
+
+  - key: de:item:b2u06-sachbearbeiter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Sachbearbeiter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cán bộ/nhân viên phụ trách hồ sơ
+      examples:
+        - target: Der Sachbearbeiter hat sich meine Unterlagen genau angesehen.
+          translation:
+            vi: Cán bộ phụ trách đã xem kỹ giấy tờ của tôi.
+        - target: Fragen Sie am besten Ihre Sachbearbeiterin.
+          translation:
+            vi: Tốt nhất ông/bà hãy hỏi cán bộ phụ trách hồ sơ của mình.
+      confusion:
+        vi: "Dạng nữ: die Sachbearbeiterin, -nen. Là người xử lý hồ sơ của bạn ở cơ quan hoặc công ty."
+
+  - key: de:item:b2u06-wartezeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wartezeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian chờ
+      examples:
+        - target: Die Wartezeit für einen Termin kann mehrere Wochen betragen.
+          translation:
+            vi: Thời gian chờ để có lịch hẹn có thể kéo dài vài tuần.
+        - target: Ich habe die Wartezeit genutzt, um Deutsch zu lernen.
+          translation:
+            vi: Tôi đã tận dụng thời gian chờ để học tiếng Đức.
+      confusion:
+        vi: "Từ ghép warten + die Zeit → die Wartezeit; tương tự das Wartezimmer (phòng chờ)."
+
+  - key: de:item:b2u06-ablehnen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ablehnen
+      pos: động từ
+    back:
+      meaning:
+        vi: từ chối, bác (đơn, đề nghị)
+      examples:
+        - target: Mein erster Antrag wurde abgelehnt.
+          translation:
+            vi: Đơn đầu tiên của tôi đã bị bác.
+        - target: Warum hat die Behörde den Antrag abgelehnt?
+          translation:
+            vi: Vì sao cơ quan nhà nước bác đơn?
+      confusion:
+        vi: "Động từ tách: Sie lehnen den Antrag ab. Danh từ: die Ablehnung. Ngược nghĩa: genehmigen (B1U03)."
+
+  - key: de:item:b2u06-einbuergerungstest
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Einbürgerungstest, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài kiểm tra (kiến thức) khi xin nhập quốc tịch
+      examples:
+        - target: Sie hat den Einbürgerungstest beim ersten Versuch bestanden.
+          translation:
+            vi: Cô ấy đã đỗ bài kiểm tra nhập quốc tịch ngay lần đầu.
+        - target: Für den Einbürgerungstest hat er wochenlang geübt.
+          translation:
+            vi: Anh ấy đã luyện nhiều tuần cho bài kiểm tra nhập quốc tịch.
+      confusion:
+        vi: "Bài kiểm tra về pháp luật, xã hội và đời sống ở Đức. Ai phải làm và nội dung ra sao do quy định hiện hành, có thể thay đổi – hãy kiểm tra cơ quan có thẩm quyền."
+
+  # ================= Bài 3: Người đến sau – phân từ danh từ hoá, ngôn ngữ trung lập giới =================
+  - key: de:item:b2u06-g-nominalisierte-partizipien
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Partizipien als Nomen: der/die Geflüchtete, ein Geflüchteter · die Reisenden · der Angestellte · die Auszubildenden"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Partizip I (reisend) và Partizip II (geflüchtet, angestellt) có thể làm danh từ chỉ người: viết hoa, nhưng đuôi biến đổi y như tính từ. Sau der/die: der Geflüchtete, die Geflüchtete, die Geflüchteten; sau ein hoặc khi không có mạo từ: ein Geflüchteter, eine Geflüchtete, (viele) Geflüchtete. Đây là cùng quy tắc bạn đã học ở B1 với der Kranke, ein Kranker."
+      examples:
+        - target: Ein Geflüchteter aus unserem Haus gibt jetzt selbst Deutschkurse.
+          translation:
+            vi: Một anh tị nạn sống trong toà nhà chúng tôi giờ tự mở lớp dạy tiếng Đức.
+        - target: Alle Reisenden müssen bei der Einreise ihren Pass zeigen.
+          translation:
+            vi: Tất cả hành khách phải xuất trình hộ chiếu khi nhập cảnh.
+        - target: Mein Bruder ist Angestellter bei einer Bank.
+          translation:
+            vi: Anh trai tôi là nhân viên ngân hàng.
+      confusion:
+        vi: "Một người nam: der Geflüchtete nhưng ein Geflüchteter. Một người nữ: die/eine Geflüchtete. Số nhiều: die Geflüchteten, nhưng (viele, zwei) Geflüchtete."
+
+  - key: de:item:b2u06-g-gendergerechte-sprache
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Gendergerechte Sprache: Bürgerinnen und Bürger · Studierende, Lehrkräfte · Lehrer*innen / Lehrer:innen (erkennen)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để nói về cả nam và nữ, văn bản tiếng Đức hay dùng: gọi cả hai dạng (Bürgerinnen und Bürger), dùng từ trung tính (Studierende, Lehrkräfte) hoặc ký hiệu (Lehrer*innen, Lehrer:innen). Các ký hiệu đang gây tranh luận, một số cơ quan và trường học ở vài bang hạn chế dùng, và quy tắc chính tả chính thức hiện chưa công nhận chúng (có thể thay đổi). Bạn chỉ cần nhận biết ký hiệu; khi tự viết, gọi cả hai dạng hoặc dùng từ trung tính là cách an toàn."
+      examples:
+        - target: Liebe Kolleginnen und Kollegen, herzlich willkommen!
+          translation:
+            vi: Kính chào các đồng nghiệp, chào mừng mọi người!
+        - target: Alle Studierenden bekommen einen Ausweis der Hochschule.
+          translation:
+            vi: Tất cả sinh viên đều được nhận thẻ của trường.
+        - target: Die Lehrkräfte treffen sich am Montag.
+          translation:
+            vi: Các giáo viên họp vào thứ Hai.
+      confusion:
+        vi: "Khi đọc Lehrer*innen hoặc Lehrer:innen, nhiều người ngắt rất ngắn trước -innen. Không phải từ nào cũng có dạng trung tính tự nhiên; khi không có, gọi cả hai dạng là cách phổ biến."
+
+  - key: de:item:b2u06-fluechtling
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Flüchtling, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: người tị nạn, người chạy nạn
+      examples:
+        - target: Meine Großeltern kamen als Flüchtlinge nach Deutschland.
+          translation:
+            vi: Ông bà tôi đến Đức với tư cách người tị nạn.
+        - target: Viele Flüchtlinge mussten ihre Familie zurücklassen.
+          translation:
+            vi: Nhiều người tị nạn đã phải bỏ lại gia đình.
+      confusion:
+        vi: "Flüchtling là từ thông dụng và cũng là thuật ngữ pháp lý; về ngữ pháp luôn là der, dùng cho cả nam và nữ. Một số người thấy đuôi -ling có sắc thái coi nhẹ, nên báo chí và các tổ chức hay dùng Geflüchtete; cả hai đều đúng nhưng sắc thái không hoàn toàn trùng nhau."
+
+  - key: de:item:b2u06-flucht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Flucht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chạy trốn, cuộc chạy nạn
+      examples:
+        - target: Auf der Flucht hat die Familie fast alles verloren.
+          translation:
+            vi: Trên đường chạy nạn, gia đình ấy mất gần hết mọi thứ.
+        - target: Er spricht nicht gern über seine Flucht.
+          translation:
+            vi: Anh ấy không thích nói về cuộc chạy nạn của mình.
+      confusion:
+        vi: "Họ từ: die Flucht (danh từ) – fliehen (động từ) – der Flüchtling, die Geflüchteten (người). auf der Flucht sein = đang chạy trốn."
+
+  - key: de:item:b2u06-fliehen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fliehen, flieht, floh, ist geflohen
+      pos: động từ
+    back:
+      meaning:
+        vi: chạy trốn, chạy nạn
+      examples:
+        - target: Die Familie ist vor dem Krieg geflohen.
+          translation:
+            vi: Gia đình ấy đã chạy trốn chiến tranh.
+        - target: Er floh als junger Mann aus seiner Heimat.
+          translation:
+            vi: Khi còn trẻ, anh ấy đã chạy khỏi quê hương.
+      confusion:
+        vi: "fliehen vor + Dativ (chạy trốn khỏi cái gì), fliehen aus + Dativ (khỏi nơi nào). Perfekt với sein: ist geflohen. Đừng nhầm với fliegen (bay): flog, ist geflogen."
+
+  - key: de:item:b2u06-asyl
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Asyl (Sg.)
+      ipa: /aˈzyːl/
+      pos: danh từ
+    back:
+      meaning:
+        vi: (quyền, sự) tị nạn, tị nạn chính trị
+      examples:
+        - target: Er hat in Deutschland Asyl beantragt.
+          translation:
+            vi: Anh ấy đã xin tị nạn ở Đức.
+        - target: Menschen, die verfolgt werden, können Asyl beantragen.
+          translation:
+            vi: Những người bị ngược đãi có thể xin tị nạn.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết sau: a-SYL; y đọc như ü (\"i\" tròn môi), s trước nguyên âm đọc gần như \"d\" giọng Bắc."
+      confusion:
+        vi: "Asyl beantragen = einen Asylantrag stellen. Quy trình xin tị nạn và quyền lợi đi kèm do luật quy định và có thể thay đổi, hãy kiểm tra cơ quan có thẩm quyền."
+
+  - key: de:item:b2u06-diskriminierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Diskriminierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phân biệt đối xử
+      examples:
+        - target: Sie hat bei der Wohnungssuche Diskriminierung erlebt.
+          translation:
+            vi: Cô ấy đã bị phân biệt đối xử khi tìm nhà.
+        - target: Die Schule hat ein Projekt gegen Diskriminierung gestartet.
+          translation:
+            vi: Nhà trường đã bắt đầu một dự án chống phân biệt đối xử.
+      confusion:
+        vi: "Động từ: jemanden diskriminieren (Partizip II: diskriminiert, không có ge-). Gần nghĩa: benachteiligen (làm cho ai chịu thiệt)."
+
+  - key: de:item:b2u06-vielfalt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vielfalt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đa dạng
+      examples:
+        - target: Die Vielfalt der Sprachen an unserer Schule ist beeindruckend.
+          translation:
+            vi: Sự đa dạng ngôn ngữ ở trường chúng tôi thật ấn tượng.
+        - target: Beim Stadtfest feiern wir die kulturelle Vielfalt in unserem Viertel.
+          translation:
+            vi: Trong lễ hội thành phố, chúng tôi tôn vinh sự đa dạng văn hoá ở khu phố mình.
+      confusion:
+        vi: "Tính từ: vielfältig. Khác viel (nhiều): Vielfalt là có nhiều loại khác nhau, không phải chỉ số lượng lớn."
+
+  - key: de:item:b2u06-toleranz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Toleranz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự khoan dung, sự tôn trọng khác biệt
+      examples:
+        - target: Zusammenleben braucht Toleranz und Respekt.
+          translation:
+            vi: Chung sống cần sự khoan dung và tôn trọng.
+        - target: Toleranz bedeutet nicht, dass man alles gut finden muss.
+          translation:
+            vi: Khoan dung không có nghĩa là phải thấy mọi thứ đều tốt.
+      confusion:
+        vi: "Toleranz gegenüber + Dativ (khoan dung với ai/cái gì). Tính từ: tolerant. Trọng âm ở âm tiết cuối: to-le-RANZ."
+
+  # --- Zusatzwortschatz bài 3 ---
+  - key: de:item:b2u06-asylantrag
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Asylantrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn xin tị nạn
+      examples:
+        - target: Er hat seinen Asylantrag im Frühling gestellt.
+          translation:
+            vi: Anh ấy đã nộp đơn xin tị nạn vào mùa xuân.
+        - target: Über ihren Asylantrag wurde noch nicht entschieden.
+          translation:
+            vi: Đơn xin tị nạn của cô ấy vẫn chưa được quyết định.
+      confusion:
+        vi: "Từ ghép das Asyl + der Antrag → der Asylantrag; số nhiều: die Asylanträge. Đi với stellen: einen Asylantrag stellen."
+
+  - key: de:item:b2u06-aufnehmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: aufnehmen, nimmt auf, nahm auf, hat aufgenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: tiếp nhận, đón nhận (người); thu âm, quay (phim); nhận vào (trường, hội)
+      examples:
+        - target: Wir wurden von unseren Nachbarn sehr herzlich aufgenommen.
+          translation:
+            vi: Chúng tôi được hàng xóm đón nhận rất nồng hậu.
+        - target: Die Gemeinde hat im letzten Jahr mehrere Familien aufgenommen.
+          translation:
+            vi: Năm ngoái xã đã tiếp nhận nhiều gia đình.
+      confusion:
+        vi: "Nhiều nghĩa tuỳ ngữ cảnh: Menschen aufnehmen (tiếp nhận), ein Video aufnehmen (quay), Kontakt aufnehmen (bắt liên lạc). Danh từ: die Aufnahme."
+
+  - key: de:item:b2u06-verfolgen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: verfolgen
+      pos: động từ
+    back:
+      meaning:
+        vi: ngược đãi, đàn áp (vì chính kiến, tôn giáo …); đuổi theo; theo dõi (tin tức)
+      examples:
+        - target: Er wurde in seinem Land wegen seiner Meinung verfolgt.
+          translation:
+            vi: Anh ấy đã bị ngược đãi ở nước mình vì quan điểm của mình.
+        - target: Ich verfolge die Nachrichten aus meiner Heimat jeden Tag.
+          translation:
+            vi: Ngày nào tôi cũng theo dõi tin tức từ quê nhà.
+      confusion:
+        vi: "Nghĩa phụ thuộc ngữ cảnh: verfolgt werden (bị ngược đãi) – die Nachrichten verfolgen (theo dõi tin). ver- không tách, Partizip II: verfolgt. Danh từ: die Verfolgung."
+
+  - key: de:item:b2u06-minderheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Minderheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiểu số, nhóm thiểu số
+      examples:
+        - target: In vielen Ländern leben sprachliche Minderheiten.
+          translation:
+            vi: Ở nhiều nước có các nhóm thiểu số về ngôn ngữ.
+        - target: Bei der Abstimmung war sie mit ihrer Meinung in der Minderheit.
+          translation:
+            vi: Trong cuộc biểu quyết, ý kiến của cô ấy thuộc về phía thiểu số.
+      confusion:
+        vi: "Ngược nghĩa: die Mehrheit (B1U09). Gốc là minder (ít hơn) + -heit; danh từ -heit luôn giống cái."
+
+  - key: de:item:b2u06-benachteiligen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: benachteiligen
+      pos: động từ
+    back:
+      meaning:
+        vi: đối xử bất lợi, làm cho (ai) chịu thiệt thòi
+      examples:
+        - target: Niemand darf wegen seiner Herkunft benachteiligt werden.
+          translation:
+            vi: Không ai được phép bị đối xử bất công vì nguồn gốc của mình.
+        - target: Sie fühlte sich bei der Bewerbung benachteiligt.
+          translation:
+            vi: Cô ấy cảm thấy mình bị thiệt thòi khi nộp đơn xin việc.
+      confusion:
+        vi: "Gốc: der Nachteil (bất lợi). be- không tách, Partizip II không có ge-: benachteiligt. Ngược nghĩa: bevorzugen (ưu ái)."
+
+  - key: de:item:b2u06-vielfaeltig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vielfältig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đa dạng, phong phú
+      examples:
+        - target: Das Kulturprogramm in unserer Stadt ist sehr vielfältig.
+          translation:
+            vi: Chương trình văn hoá ở thành phố chúng tôi rất phong phú.
+        - target: Die Gründe für eine Auswanderung sind vielfältig.
+          translation:
+            vi: Lý do ra nước ngoài sinh sống rất đa dạng.
+      confusion:
+        vi: "Danh từ: die Vielfalt. Đuôi -fältig (có umlaut) như einfältig, mannigfaltig."
+
+  - key: de:item:b2u06-tolerant
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: tolerant
+      pos: tính từ
+    back:
+      meaning:
+        vi: khoan dung, cởi mở với sự khác biệt
+      examples:
+        - target: Meine Gastfamilie war sehr offen und tolerant.
+          translation:
+            vi: Gia đình chủ nhà của tôi rất cởi mở và khoan dung.
+        - target: Man sollte gegenüber anderen Meinungen tolerant sein.
+          translation:
+            vi: Người ta nên khoan dung với những ý kiến khác.
+      confusion:
+        vi: "Ngược nghĩa: intolerant. Trọng âm ở âm tiết cuối: to-le-RANT."
+
+  - key: de:item:b2u06-lehrkraft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Lehrkraft, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giáo viên (từ trung tính về giới, dùng cho cả nam và nữ)
+      examples:
+        - target: An unserer Schule unterrichten Lehrkräfte aus acht Ländern.
+          translation:
+            vi: Ở trường chúng tôi có giáo viên đến từ tám nước giảng dạy.
+        - target: Jede Lehrkraft bekommt einen eigenen Laptop.
+          translation:
+            vi: Mỗi giáo viên được nhận một máy tính xách tay riêng.
+      confusion:
+        vi: "Lehrkraft luôn là die (theo die Kraft), dù người đó là nam hay nữ; hay gặp trong văn bản chính thức. Từ ghép tương tự: die Fachkraft, die Pflegekraft."
+
+  - key: de:item:b2u06-schreibweise
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Schreibweise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách viết
+      examples:
+        - target: Welche Schreibweise ist richtig?
+          translation:
+            vi: Cách viết nào đúng?
+        - target: Die Schreibweise mit Sternchen ist umstritten.
+          translation:
+            vi: Cách viết có dấu sao đang gây tranh cãi.
+      confusion:
+        vi: "Từ ghép schreiben + die Weise (cách) → die Schreibweise; tương tự die Denkweise, die Arbeitsweise."
+
+  - key: de:item:b2u06-schutz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự bảo vệ, sự che chở
+      examples:
+        - target: Die Familie suchte Schutz in einem Nachbarland.
+          translation:
+            vi: Gia đình ấy tìm nơi che chở ở một nước láng giềng.
+        - target: Kinder brauchen besonderen Schutz.
+          translation:
+            vi: Trẻ em cần được bảo vệ đặc biệt.
+      confusion:
+        vi: "Schutz vor + Dativ (bảo vệ khỏi cái gì). Động từ: schützen. Báo chí còn dùng die Schutzsuchenden (những người tìm sự che chở) – Partizip I danh từ hoá."
+
+  # ================= Bài 4: Mà không… – ohne dass, anstatt dass =================
+  - key: de:item:b2u06-g-ohne-anstatt-dass
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "ohne dass / (an)statt dass + Nebensatz: Er ist gegangen, ohne dass ich es gemerkt habe."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "ohne dass (mà không …) và (an)statt dass (thay vì …) mở câu phụ, động từ chia đứng cuối. Khi hai vế có chủ ngữ khác nhau, bạn phải dùng dass: Sie hat mir geholfen, ohne dass ich sie gefragt habe. Khi cùng chủ ngữ, cách tự nhiên là ohne … zu / statt … zu (B1): Sie ist gegangen, ohne etwas zu sagen."
+      examples:
+        - target: Ich habe die Stelle bekommen, ohne dass mir jemand geholfen hat.
+          translation:
+            vi: Tôi đã có được chỗ làm mà không có ai giúp.
+        - target: Statt dass die Behörde mir schreibt, muss ich jedes Mal selbst anrufen.
+          translation:
+            vi: Đáng lẽ cơ quan nhà nước phải viết thư cho tôi, vậy mà lần nào tôi cũng phải tự gọi điện.
+        - target: Er hat den Kurs gewechselt, ohne dass es jemand gemerkt hat.
+          translation:
+            vi: Anh ấy đã đổi lớp mà không ai để ý.
+      confusion:
+        vi: "Không trộn hai cấu trúc: ohne dass zu fragen là sai. Câu ohne dass đã mang nghĩa phủ định, nên không thêm nicht: ohne dass er etwas gesagt hat = mà anh ấy chẳng nói gì."
+
+  - key: de:item:b2u06-sprachbarriere
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Sprachbarriere, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: rào cản ngôn ngữ
+      examples:
+        - target: Am Anfang war die Sprachbarriere mein größtes Problem.
+          translation:
+            vi: Lúc đầu, rào cản ngôn ngữ là vấn đề lớn nhất của tôi.
+        - target: Mit der Zeit hat sie die Sprachbarriere überwunden.
+          translation:
+            vi: Dần dần cô ấy đã vượt qua rào cản ngôn ngữ.
+      confusion:
+        vi: "Cụm hay dùng: die Sprachbarriere überwinden (vượt qua). Từ ghép die Sprache + die Barriere, bỏ -e cuối của Sprache: Sprach-barriere."
+
+  - key: de:item:b2u06-heimweh
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Heimweh (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nỗi nhớ nhà, nhớ quê
+      examples:
+        - target: In den ersten Monaten hatte ich schreckliches Heimweh.
+          translation:
+            vi: Những tháng đầu tôi nhớ nhà khủng khiếp.
+        - target: Wenn ich vietnamesisch koche, habe ich weniger Heimweh.
+          translation:
+            vi: Khi nấu món Việt, tôi đỡ nhớ nhà hơn.
+      confusion:
+        vi: "Heimweh haben (nach + Dativ). Ngược nghĩa vui: das Fernweh (khao khát đi xa). Sehnsucht (bài 1) rộng hơn Heimweh."
+
+  - key: de:item:b2u06-identitaet
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Identität, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản sắc; danh tính
+      examples:
+        - target: Meine Muttersprache ist ein wichtiger Teil meiner Identität.
+          translation:
+            vi: Tiếng mẹ đẻ là một phần quan trọng trong bản sắc của tôi.
+        - target: Am Schalter wurde meine Identität geprüft.
+          translation:
+            vi: Ở quầy, người ta đã kiểm tra danh tính của tôi.
+      confusion:
+        vi: "Hai nghĩa: bản sắc (cá nhân, văn hoá) và danh tính (trên giấy tờ). Trọng âm ở âm tiết cuối: I-den-ti-TÄT."
+
+  - key: de:item:b2u06-zweisprachig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zweisprachig
+      pos: tính từ
+    back:
+      meaning:
+        vi: song ngữ, nói hai thứ tiếng
+      examples:
+        - target: Unsere Kinder wachsen zweisprachig auf.
+          translation:
+            vi: Các con chúng tôi lớn lên với hai thứ tiếng.
+        - target: In unserem Viertel gibt es einen zweisprachigen Kindergarten.
+          translation:
+            vi: Khu phố chúng tôi có một trường mẫu giáo song ngữ.
+      confusion:
+        vi: "Danh từ: die Zweisprachigkeit. Tương tự: mehrsprachig (đa ngữ), einsprachig (đơn ngữ)."
+
+  - key: de:item:b2u06-muttersprache
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Muttersprache, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng mẹ đẻ
+      examples:
+        - target: Meine Muttersprache ist Vietnamesisch.
+          translation:
+            vi: Tiếng mẹ đẻ của tôi là tiếng Việt.
+        - target: Mit meinen Kindern spreche ich in meiner Muttersprache.
+          translation:
+            vi: Với các con, tôi nói bằng tiếng mẹ đẻ.
+      confusion:
+        vi: "Tên ngôn ngữ dùng như danh từ thì viết hoa (Vietnamesisch, Deutsch), còn tính từ viết thường (vietnamesische Musik). Ngược nghĩa: die Fremdsprache (B1U04)."
+
+  - key: de:item:b2u06-zugehoerigkeit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Zugehörigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thuộc về, cảm giác gắn bó (với một nhóm, một nơi)
+      examples:
+        - target: Im Sportverein hatte ich zum ersten Mal ein Gefühl der Zugehörigkeit.
+          translation:
+            vi: Ở câu lạc bộ thể thao, lần đầu tiên tôi có cảm giác mình thuộc về một nơi.
+        - target: Zugehörigkeit hat nicht nur mit dem Pass zu tun.
+          translation:
+            vi: Cảm giác thuộc về không chỉ liên quan đến tấm hộ chiếu.
+      confusion:
+        vi: "Gốc: gehören zu + Dativ (thuộc về) → die Zugehörigkeit zu + Dativ. Hay đi với das Gefühl der Zugehörigkeit."
+
+  - key: de:item:b2u06-sich-anpassen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich anpassen
+      pos: động từ
+    back:
+      meaning:
+        vi: thích nghi, thích ứng (với cái gì)
+      examples:
+        - target: Wir mussten uns erst an das kalte Wetter anpassen.
+          translation:
+            vi: Chúng tôi phải làm quen với thời tiết lạnh trước đã.
+        - target: Man muss sich nicht in allem anpassen, um dazuzugehören.
+          translation:
+            vi: Người ta không cần phải thích nghi trong mọi chuyện thì mới thuộc về một nơi.
+      confusion:
+        vi: "sich anpassen an + Akkusativ. Động từ tách: Ich passe mich an; Partizip II: angepasst. Danh từ: die Anpassung."
+
+  - key: de:item:b2u06-anpassung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Anpassung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thích nghi
+      examples:
+        - target: Die Anpassung an das neue Leben hat Zeit gebraucht.
+          translation:
+            vi: Việc thích nghi với cuộc sống mới đã cần thời gian.
+        - target: Integration bedeutet nicht vollständige Anpassung.
+          translation:
+            vi: Hội nhập không có nghĩa là thích nghi hoàn toàn.
+      confusion:
+        vi: "die Anpassung an + Akkusativ, giống động từ sich anpassen an. Danh từ -ung luôn giống cái."
+
+  # --- Zusatzwortschatz bài 4 ---
+  - key: de:item:b2u06-mehrsprachig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: mehrsprachig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đa ngữ, nói nhiều thứ tiếng
+      examples:
+        - target: In unserer Familie sind alle mehrsprachig.
+          translation:
+            vi: Trong gia đình tôi, ai cũng nói được nhiều thứ tiếng.
+        - target: Mehrsprachige Kinder wechseln oft ganz natürlich zwischen den Sprachen.
+          translation:
+            vi: Trẻ đa ngữ thường chuyển qua lại giữa các ngôn ngữ một cách rất tự nhiên.
+      confusion:
+        vi: "mehr (nhiều hơn) + Sprache + -ig. zweisprachig là đúng hai thứ tiếng; mehrsprachig là từ hai trở lên."
+
+  - key: de:item:b2u06-dazugehoeren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: dazugehören
+      pos: động từ
+    back:
+      meaning:
+        vi: thuộc về (nhóm), là một phần (của cái gì)
+      examples:
+        - target: Nach zwei Jahren hatte ich endlich das Gefühl, dazuzugehören.
+          translation:
+            vi: Sau hai năm, cuối cùng tôi đã có cảm giác mình thuộc về nơi này.
+        - target: Er gehört jetzt einfach dazu.
+          translation:
+            vi: Giờ anh ấy đơn giản là một phần của nhóm.
+      confusion:
+        vi: "Động từ tách: Ich gehöre dazu; với zu viết liền: dazuzugehören. Danh từ liên quan: die Zugehörigkeit."
+
+  - key: de:item:b2u06-zuhause
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Zuhause (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: mái ấm, nơi mình coi là nhà
+      examples:
+        - target: Leipzig ist mein neues Zuhause.
+          translation:
+            vi: Leipzig là mái nhà mới của tôi.
+        - target: Sie hat in Hamburg ein zweites Zuhause gefunden.
+          translation:
+            vi: Cô ấy đã tìm thấy mái nhà thứ hai ở Hamburg.
+      confusion:
+        vi: "das Zuhause (danh từ, viết hoa, viết liền) khác zu Hause (trạng ngữ: ở nhà): Ich bin zu Hause. Hamburg ist mein Zuhause."
+
+  - key: de:item:b2u06-akzent
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Akzent, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giọng (nói), chất giọng nước ngoài; trọng âm
+      examples:
+        - target: Man hört bei ihr noch einen leichten Akzent.
+          translation:
+            vi: Người ta vẫn nghe thấy một chút giọng nước ngoài ở cô ấy.
+        - target: Ein Akzent ist kein Fehler.
+          translation:
+            vi: Có giọng nước ngoài không phải là lỗi.
+      confusion:
+        vi: "Trọng âm ở âm tiết sau: Ak-ZENT. Akzent là cách phát âm mang dấu ấn tiếng mẹ đẻ hoặc vùng miền; der Dialekt là cả một biến thể ngôn ngữ (từ, ngữ pháp riêng)."
+
+  - key: de:item:b2u06-dialekt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Dialekt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương ngữ, tiếng địa phương
+      examples:
+        - target: Am Anfang habe ich den Dialekt meiner Kollegen kaum verstanden.
+          translation:
+            vi: Lúc đầu tôi hầu như không hiểu tiếng địa phương của đồng nghiệp.
+        - target: Meine Nachbarin spricht Schwäbisch, einen Dialekt aus dem Südwesten.
+          translation:
+            vi: Chị hàng xóm của tôi nói tiếng Schwaben, một phương ngữ ở vùng tây nam.
+      confusion:
+        vi: "Dialekt sprechen (không mạo từ) = nói tiếng địa phương. Trọng âm ở âm tiết cuối: Di-a-LEKT."
+
+  - key: de:item:b2u06-einsamkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Einsamkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cô đơn
+      examples:
+        - target: Gegen die Einsamkeit hat mir der Sportverein geholfen.
+          translation:
+            vi: Câu lạc bộ thể thao đã giúp tôi bớt cô đơn.
+        - target: Viele Menschen in einem neuen Land kennen das Gefühl der Einsamkeit.
+          translation:
+            vi: Nhiều người ở một đất nước mới đều biết cảm giác cô đơn.
+      confusion:
+        vi: "Tính từ: einsam (cô đơn). Khác allein (một mình): có thể allein mà không einsam, và ngược lại."
+
+  - key: de:item:b2u06-praegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: prägen
+      pos: động từ
+    back:
+      meaning:
+        vi: định hình, để lại dấu ấn sâu sắc (lên ai, cái gì)
+      examples:
+        - target: Die Jahre in Deutschland haben mich sehr geprägt.
+          translation:
+            vi: Những năm ở Đức đã định hình con người tôi rất nhiều.
+        - target: Beide Kulturen prägen meinen Alltag.
+          translation:
+            vi: Cả hai nền văn hoá đều in dấu trong cuộc sống hằng ngày của tôi.
+      confusion:
+        vi: "prägen + Akkusativ; Partizip II: geprägt. Nghĩa gốc là dập, đúc (tiền xu)."
+
+  - key: de:item:b2u06-dolmetscher
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Dolmetscher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phiên dịch viên (dịch nói)
+      examples:
+        - target: Für das Gespräch bei der Behörde brauchen wir einen Dolmetscher.
+          translation:
+            vi: Cho buổi làm việc ở cơ quan, chúng tôi cần một phiên dịch viên.
+        - target: Beim Arzt hat mir eine Dolmetscherin geholfen.
+          translation:
+            vi: Ở chỗ bác sĩ, một nữ phiên dịch viên đã giúp tôi.
+      confusion:
+        vi: "Dolmetscher dịch nói, Übersetzer dịch viết. Dạng nữ: die Dolmetscherin, -nen. Động từ: dolmetschen."
+
+  - key: de:item:b2u06-verwurzelt
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: verwurzelt
+      pos: tính từ
+    back:
+      meaning:
+        vi: bám rễ, gắn bó sâu sắc (với một nơi, một nền văn hoá)
+      examples:
+        - target: Sie ist in zwei Kulturen verwurzelt.
+          translation:
+            vi: Cô ấy gắn bó sâu sắc với cả hai nền văn hoá.
+        - target: Inzwischen fühle ich mich in meiner neuen Stadt verwurzelt.
+          translation:
+            vi: Giờ đây tôi cảm thấy mình đã bám rễ ở thành phố mới.
+      confusion:
+        vi: "Gốc: die Wurzel (rễ, bài 1). verwurzelt sein in + Dativ (gắn bó với)."

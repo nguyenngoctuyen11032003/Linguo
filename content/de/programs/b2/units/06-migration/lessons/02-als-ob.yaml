@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u06-als-ob
+order_index: 2
+level: b2
+title:
+  vi: Như thể – Konjunktiv II của động từ khiếm khuyết ở quá khứ, als ob (Ich hätte mich früher anmelden sollen. Als ob …)
+objectives:
+  - vi: Phê bình hoặc nuối tiếc một cách lịch sự về thủ tục giấy tờ (Sie hätten mir das früher sagen können).
+  - vi: Dùng hätte + nguyên thể + sollen/können/müssen để nói điều lẽ ra nên, có thể hoặc phải làm.
+  - vi: So sánh không thật với als ob / als wenn / als + Konjunktiv II.
+estimated_minutes: 22
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b2u06-haette-ich-gewusst]
+items:
+  - item: de:item:b2u06-g-konj-ii-modal-vergangenheit
+  - item: de:item:b2u06-g-als-ob
+  - item: de:item:b2u06-aufenthaltserlaubnis
+  - item: de:item:b2u06-visum
+  - item: de:item:b2u06-staatsangehoerigkeit
+  - item: de:item:b2u06-einbuergerung
+  - item: de:item:b2u06-integrationskurs
+  - item: de:item:b2u06-behoerde
+  - item: de:item:b2u06-beantragen
+  - item: de:item:b2u06-antrag
+  - item: de:item:b2u06-auslaenderbehoerde
+  - item: de:item:b2u06-verlaengern
+  - item: de:item:b2u06-ablaufen
+  - item: de:item:b2u06-gueltig
+  - item: de:item:b2u06-einreichen
+  - item: de:item:b2u06-einreise
+  - item: de:item:b2u06-sachbearbeiter
+  - item: de:item:b2u06-wartezeit
+  - item: de:item:b2u06-ablehnen
+  - item: de:item:b2u06-einbuergerungstest
+  - item: de:item:b1u01-g-modal-perfekt
+    role: reuse
+  - item: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+    role: reuse
+  - item: de:item:b1u04-g-konjunktiv-ii-formen
+    role: reuse
+  - item: de:item:a1u08-termin
+    role: reuse
+  - item: de:item:b1u03-frist
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được một cách lịch sự rằng ai đó lẽ ra nên làm khác đi khi làm thủ tục, ví dụ: \"Ich hätte mich früher für den Integrationskurs anmelden sollen.\", và so sánh không thật với als ob."
+  - type: explain
+    text:
+      vi: "Để phê bình hoặc tiếc về điều lẽ ra nên làm, bạn dùng hätte + nguyên thể động từ chính + nguyên thể động từ khiếm khuyết ở cuối câu: Du hättest früher fragen sollen (lẽ ra bạn nên hỏi sớm hơn). hätte … sollen = lẽ ra nên; hätte … können = lẽ ra đã có thể; hätte … müssen = lẽ ra phải. Đây là Ersatzinfinitiv như ở Perfekt B1 (ich habe arbeiten müssen), chỉ đổi habe thành hätte."
+  - type: explain
+    text:
+      vi: "Không dùng Partizip II của động từ khiếm khuyết (gesollt, gekonnt) và không dùng wäre, kể cả khi động từ chính đi với sein: Ich hätte früher kommen sollen. Lời phê bình với Sie nghe lịch sự hơn khi thêm vielleicht hoặc eigentlich: Sie hätten mir das vielleicht früher sagen können."
+  - type: explain
+    text:
+      vi: "Trong câu phụ, hätte không đứng cuối mà đứng trước hai nguyên thể: Ich weiß, dass ich den Antrag früher hätte stellen sollen. Bạn chỉ cần nhận biết dạng này; khi tự nói, có thể dùng câu chính: Ich hätte den Antrag früher stellen sollen, das weiß ich."
+  - type: explain
+    text:
+      vi: "als ob và als wenn nghĩa là \"như thể\"; chúng mở câu phụ nên động từ Konjunktiv II đứng cuối: Er tut, als ob er alles wüsste. Nếu chỉ dùng als, động từ chia đứng ngay sau als: Er tut, als wüsste er alles. Chuyện đã qua thì dùng hätte/wäre + Partizip II: Sie spricht, als ob sie hier aufgewachsen wäre."
+  - type: explain
+    text:
+      vi: "Các động từ hay đi với cấu trúc này: (so) tun, aussehen, klingen, sich fühlen: Es klingt, als hätte die Behörde den Antrag verloren. Trong văn viết trang trọng còn gặp Konjunktiv I (als ob er reich sei), còn trong văn nói đôi khi gặp thể thường; khi viết bài thi, hãy dùng Konjunktiv II."
+  - type: deep_explain
+    text:
+      vi: "Ersatzinfinitiv cũng xuất hiện với lassen: Ich hätte die Unterlagen übersetzen lassen sollen (nhận biết). hätte … können có hai sắc thái: lời trách (Du hättest mich anrufen können! = sao bạn không gọi cho tôi?) và khả năng chưa dùng đến (Wir hätten auch online einen Termin buchen können). Phân biệt với Perfekt có thật: Ich habe drei Stunden warten müssen (tôi đã phải đợi thật) – Ich hätte nicht so lange warten müssen (lẽ ra tôi không phải đợi lâu như vậy). Về thủ tục: tên các loại giấy phép cư trú, cơ quan phụ trách, thời gian chờ và lệ phí do luật và từng thành phố quy định và có thể thay đổi; các ví dụ trong bài chỉ để minh hoạ, hãy kiểm tra cơ quan có thẩm quyền. Cụm từ hay dùng: einen Antrag stellen (= beantragen), die Aufenthaltserlaubnis verlängern, das Visum läuft ab, Unterlagen einreichen."
+  - type: example
+    target: Sie hätten Ihre Aufenthaltserlaubnis früher verlängern sollen.
+    target_lang: de
+    translation:
+      vi: Lẽ ra ông/bà nên gia hạn giấy phép cư trú sớm hơn.
+    note:
+      vi: "Phê bình lịch sự với Sie: hätten + verlängern + sollen ở cuối câu."
+  - type: example
+    target: Ich hätte den Antrag auch online stellen können, aber das wusste ich nicht.
+    target_lang: de
+    translation:
+      vi: Lẽ ra tôi cũng đã có thể nộp đơn trực tuyến, nhưng tôi không biết điều đó.
+    note:
+      vi: "hätte … können: một khả năng có thật nhưng đã không được dùng đến."
+  - type: example
+    target: Wir hätten nicht so lange warten müssen, wenn wir alle Unterlagen gleich eingereicht hätten.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đã không phải đợi lâu như vậy nếu nộp đủ giấy tờ ngay từ đầu.
+    note:
+      vi: "nicht müssen = không cần, không phải. Vế wenn dùng Konjunktiv II quá khứ của bài 1: eingereicht hätten."
+  - type: example
+    target: Ich habe drei Stunden warten müssen. – Du hättest vorher einen Termin machen sollen.
+    target_lang: de
+    translation:
+      vi: Tôi đã phải đợi ba tiếng. – Lẽ ra bạn nên đặt lịch hẹn trước.
+    note:
+      vi: "Câu đầu là Perfekt của modal (chuyện có thật): habe … warten müssen. Câu sau là Konjunktiv II: hättest … machen sollen (lời khuyên muộn, nói với bạn bè)."
+  - type: example
+    target: Die Frist ist schon abgelaufen. Sie hätten den Antrag spätestens im Januar stellen müssen.
+    target_lang: de
+    translation:
+      vi: Hạn đã hết rồi. Lẽ ra ông/bà phải nộp đơn chậm nhất vào tháng Một.
+    note:
+      vi: "ablaufen đi với sein: ist abgelaufen. hätten … müssen = lẽ ra phải (một nghĩa vụ đã không thực hiện)."
+  - type: example
+    target: Der Sachbearbeiter tat so, als ob er meinen Antrag noch nie gesehen hätte.
+    target_lang: de
+    translation:
+      vi: Cán bộ phụ trách làm như thể chưa bao giờ nhìn thấy đơn của tôi.
+    note:
+      vi: "als ob + Konjunktiv II quá khứ: gesehen hätte ở cuối. so trước als ob rất hay gặp: so tun, als ob …"
+  - type: example
+    target: Sie spricht Deutsch, als wäre sie hier geboren.
+    target_lang: de
+    translation:
+      vi: Cô ấy nói tiếng Đức như thể sinh ra ở đây.
+    note:
+      vi: "Chỉ dùng als: động từ wäre đứng ngay sau als, geboren ở cuối."
+  - type: common_mistake
+    wrong: Du hättest früher fragen gesollt.
+    right: Du hättest früher fragen sollen.
+    target_lang: de
+    note:
+      vi: "Khi có hai động từ ở cuối, động từ khiếm khuyết dùng nguyên thể (Ersatzinfinitiv): sollen, không phải gesollt."
+  - type: common_mistake
+    wrong: Ich wäre früher kommen sollen.
+    right: Ich hätte früher kommen sollen.
+    target_lang: de
+    note:
+      vi: "Trợ động từ đi theo động từ khiếm khuyết (sollen → haben), nên luôn là hätte, dù kommen đi với sein."
+  - type: common_mistake
+    wrong: Er tut, als ob er ist reich.
+    right: Er tut, als ob er reich wäre.
+    target_lang: de
+    note:
+      vi: "als ob mở câu phụ: động từ đứng cuối và ở Konjunktiv II – wäre."
+  - type: common_mistake
+    wrong: Er tut, als er wäre reich.
+    right: Er tut, als wäre er reich.
+    target_lang: de
+    note:
+      vi: "Chỉ có als (không ob/wenn) thì động từ đứng ngay sau als, chủ ngữ theo sau."
+  - type: summary
+    points:
+      - vi: "hätte + nguyên thể + sollen/können/müssen: lẽ ra nên / có thể / phải (nhưng đã không)."
+      - vi: "Không dùng gesollt/gekonnt; không dùng wäre: Ich hätte früher kommen sollen."
+      - vi: "Câu phụ (nhận biết): …, dass ich es hätte wissen müssen."
+      - vi: "als ob / als wenn + … + Konjunktiv II ở cuối; als + Konjunktiv II ngay sau als."
+      - vi: "Quá khứ: als ob er es gesehen hätte; hiện tại: als ob er es wüsste / als würde er es wissen."
+      - vi: "Lịch sự: Sie hätten mir das vielleicht früher sagen können."
+      - vi: "Từ vựng: die Aufenthaltserlaubnis, das Visum (Visa), die Staatsangehörigkeit, die Einbürgerung, der Integrationskurs, die Behörde, beantragen, der Antrag (einen Antrag stellen)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u06l2-mcq-fragen-sollen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u06-g-konj-ii-modal-vergangenheit
+    prompt:
+      stem: "\"Lẽ ra bạn nên hỏi sớm hơn.\" (nói với bạn thân) – Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: f1a, text: "Du hättest früher fragen sollen.", lang: de }
+        - { id: f2b, text: "Du hättest früher fragen gesollt.", lang: de }
+        - { id: f3c, text: "Du wärst früher fragen sollen.", lang: de }
+        - { id: f4d, text: "Du hättest früher gefragt sollen.", lang: de }
+    answer:
+      correct_option_id: f1a
+    explanation:
+      vi: "Mẫu: hätte (chia theo du: hättest) + nguyên thể fragen + nguyên thể sollen ở cuối. gesollt và gefragt sollen sai dạng; wärst sai trợ động từ – với động từ khiếm khuyết luôn dùng hätte."
+    display_answer: Du hättest früher fragen sollen.
+
+  - key: de:exercise:b2u06l2-mcq-als-ob-wuesste
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u06-g-als-ob
+    prompt:
+      stem: "Chọn phần đúng: Er tut so, ___"
+      stem_lang: vi
+      options:
+        - { id: o1a, text: "als ob er alles wüsste.", lang: de }
+        - { id: o2b, text: "als ob er wüsste alles.", lang: de }
+        - { id: o3c, text: "als er alles wüsste.", lang: de }
+        - { id: o4d, text: "als ob wüsste er alles.", lang: de }
+    answer:
+      correct_option_id: o1a
+    explanation:
+      vi: "als ob mở câu phụ: chủ ngữ er rồi động từ Konjunktiv II wüsste ở cuối. Nếu chỉ dùng als thì động từ phải đứng ngay sau als (als wüsste er alles) – phương án als er alles wüsste vì thế sai."
+    display_answer: als ob er alles wüsste.
+
+  - key: de:exercise:b2u06l2-listen-frist
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u03-frist
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sie hätten den Antrag eigentlich schon im Januar stellen müssen. Jetzt ist die Frist leider abgelaufen.
+      options:
+        - { id: l1a, text: "Lẽ ra phải nộp đơn từ tháng Một; giờ đã quá hạn.", lang: vi }
+        - { id: l2b, text: "Phải nộp đơn trước tháng Một; hiện vẫn còn hạn.", lang: vi }
+        - { id: l3c, text: "Người nghe đã nộp đơn đúng hạn vào tháng Một.", lang: vi }
+        - { id: l4d, text: "Có thể nộp đơn đến tháng Một, sau đó đơn sẽ hết hạn.", lang: vi }
+    answer:
+      correct_option_id: l1a
+    explanation:
+      vi: "hätten … stellen müssen = lẽ ra phải nộp (nhưng đã không nộp). die Frist ist abgelaufen = thời hạn đã hết."
+    display_answer: Lẽ ra phải nộp đơn từ tháng Một; giờ đã quá hạn.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u06l2-fill-termin-buchen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:a1u08-termin
+    prompt:
+      template: "Schade, wir haben zwei Stunden gewartet. Wir {{b1}} (haben) vorher online einen Termin buchen {{b2}} (können), aber das wussten wir nicht."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [hätten]
+        b2: [können]
+    known_wrong:
+      - answer: hatten
+        feedback_vi: hatten là Präteritum. Khả năng đã không dùng đến cần Konjunktiv II – hätten.
+        error_tag: konjunktiv_form
+      - answer: wären
+        feedback_vi: Động từ khiếm khuyết luôn đi với haben – hätten … buchen können.
+        error_tag: aux_verb
+      - answer: gekonnt
+        feedback_vi: Có hai động từ ở cuối nên dùng nguyên thể (Ersatzinfinitiv) – können.
+        error_tag: participle_form
+      - answer: könnten
+        feedback_vi: Động từ chia đã là hätten; ở cuối câu chỉ cần nguyên thể können.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Schade và aber das wussten wir nicht cho thấy đây là khả năng đã không dùng đến trong quá khứ: hätten + buchen + können. Động từ khiếm khuyết ở cuối giữ dạng nguyên thể."
+    display_answer: "Schade, wir haben zwei Stunden gewartet. Wir hätten vorher online einen Termin buchen können, aber das wussten wir nicht."
+
+  - key: de:exercise:b2u06l2-fill-als-ob-waere
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-g-als-ob
+    prompt:
+      template: "Mein Nachbar spricht so gut Deutsch, als ob er hier aufgewachsen {{b1}} (sein). Aber manchmal tut er so, als {{b2}} (haben) er keine Zeit für uns."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [wäre, sei]
+        b2: [hätte, habe]
+    known_wrong:
+      - answer: ist
+        feedback_vi: So sánh không thật sau als ob cần Konjunktiv II – aufgewachsen wäre.
+        error_tag: konjunktiv_form
+      - answer: war
+        feedback_vi: war là Präteritum. Sau als ob dùng Konjunktiv II – wäre.
+        error_tag: konjunktiv_form
+      - answer: hat
+        feedback_vi: Sau als (không ob) động từ Konjunktiv II đứng ngay sau – als hätte er keine Zeit.
+        error_tag: konjunktiv_form
+      - answer: hatte
+        feedback_vi: hatte là Präteritum. Cần Konjunktiv II – hätte.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "aufwachsen đi với sein nên quá khứ không thật là aufgewachsen wäre (cuối câu phụ als ob). Với als đứng một mình, động từ hätte đứng ngay sau als. Dạng Konjunktiv I (sei, habe) cũng gặp trong văn viết trang trọng nên cũng được chấp nhận."
+    display_answer: "Mein Nachbar spricht so gut Deutsch, als ob er hier aufgewachsen wäre. Aber manchmal tut er so, als hätte er keine Zeit für uns."
+
+  - key: de:exercise:b2u06l2-tr-visum-verlaengern
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-verlaengern
+    prompt:
+      source_text: "Lẽ ra tôi nên gia hạn visa sớm hơn."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich hätte das Visum früher verlängern sollen.
+        - Ich hätte mein Visum früher verlängern sollen.
+        - Ich hätte das Visum eher verlängern sollen.
+        - Ich hätte mein Visum eher verlängern sollen.
+        - Ich hätte das Visum schon früher verlängern sollen.
+        - Ich hätte mein Visum schon früher verlängern sollen.
+        - Ich hätte das Visum früher verlängern lassen sollen.
+        - Ich hätte mein Visum früher verlängern lassen sollen.
+    known_wrong:
+      - answer: Ich hätte das Visum früher verlängern gesollt.
+        feedback_vi: Hai động từ ở cuối thì modal giữ nguyên thể – verlängern sollen.
+        error_tag: participle_form
+      - answer: Ich hätte das Visum früher verlängert sollen.
+        feedback_vi: Động từ chính cũng ở nguyên thể – verlängern sollen.
+        error_tag: participle_form
+      - answer: Ich sollte das Visum früher verlängern.
+        feedback_vi: "Câu này là lời khuyên ở hiện tại. \"Lẽ ra nên\" (quá khứ) cần hätte … verlängern sollen."
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "\"Lẽ ra nên\" về quá khứ = hätte + nguyên thể + sollen ở cuối câu. das/mein Visum verlängern = gia hạn visa."
+    display_answer: Ich hätte das Visum früher verlängern sollen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u06l2-wb-frueher-sagen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-g-konj-ii-modal-vergangenheit
+    prompt:
+      instruction: "Sắp xếp thành câu nói với cán bộ (Sie): \"Lẽ ra ông/bà nên nói với tôi điều đó sớm hơn.\""
+      tokens:
+        - { id: s-sollen, text: sollen }
+        - { id: s-das, text: das }
+        - { id: s-sie, text: Sie }
+        - { id: s-frueher, text: früher }
+        - { id: s-haetten, text: hätten }
+        - { id: s-sagen, text: sagen }
+        - { id: s-mir, text: mir }
+    answer:
+      orders:
+        - [s-sie, s-haetten, s-mir, s-das, s-frueher, s-sagen, s-sollen]
+        - [s-das, s-haetten, s-sie, s-mir, s-frueher, s-sagen, s-sollen]
+    explanation:
+      vi: "hätten ở vị trí 2; trước nó là Sie (hoặc das, nếu bạn muốn nhấn mạnh: Das hätten Sie mir früher sagen sollen). Đại từ chỉ định das thường đứng sau mir, rồi đến früher. Cuối câu: sagen rồi sollen."
+    display_answer: Sie hätten mir das früher sagen sollen.
+
+  - key: de:exercise:b2u06l2-wb-als-waere
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u04-g-konjunktiv-ii-formen
+    prompt:
+      instruction: "Sắp xếp thành câu (chỉ dùng als): \"Anh ấy làm như thể mọi thứ rất đơn giản.\""
+      tokens:
+        - { id: a-einfach, text: einfach }
+        - { id: a-er, text: Er }
+        - { id: a-waere, text: wäre }
+        - { id: a-so, text: so }
+        - { id: a-komma, text: "," }
+        - { id: a-alles, text: alles }
+        - { id: a-tut, text: tut }
+        - { id: a-als, text: als }
+        - { id: a-ganz, text: ganz }
+    answer:
+      orders:
+        - [a-er, a-tut, a-so, a-komma, a-als, a-waere, a-alles, a-ganz, a-einfach]
+    explanation:
+      vi: "so tun, als … : sau als (không ob) động từ Konjunktiv II wäre đứng ngay sau, rồi chủ ngữ alles, cuối cùng ganz einfach."
+    display_answer: Er tut so, als wäre alles ganz einfach.
+
+  - key: de:exercise:b2u06l2-mcq-hoeflich-kritik
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-sachbearbeiter
+    prompt:
+      stem: "Bạn muốn nói lịch sự với cán bộ phụ trách rằng lẽ ra họ đã có thể báo sớm hơn cho bạn biết hồ sơ còn thiếu giấy tờ. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: k1a, text: "Sie hätten mich vielleicht früher informieren können.", lang: de }
+        - { id: k2b, text: "Du hättest mich früher informieren können.", lang: de }
+        - { id: k3c, text: "Sie haben mich nicht informiert, das ist eine Katastrophe!", lang: de }
+        - { id: k4d, text: "Sie konnten mich früher informieren.", lang: de }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: "Sie hätten … informieren können là lời phê bình nhẹ nhàng; vielleicht làm câu mềm hơn. du không hợp với cán bộ; câu thứ ba quá gay gắt; Sie konnten là Präteritum (đã có thể – thông tin có thật), không phải lời trách."
+    display_answer: Sie hätten mich vielleicht früher informieren können.

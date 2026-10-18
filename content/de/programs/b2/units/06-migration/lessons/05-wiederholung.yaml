@@ -1,0 +1,424 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u06-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – e-mail trang trọng gửi cơ quan, đọc phỏng vấn (Wiederholung)
+objectives:
+  - vi: Viết thư trang trọng khoảng 100 từ hỏi về khoá hội nhập hoặc thủ tục công nhận bằng cấp (kiểu Goethe B2 Schreiben Teil 2).
+  - vi: Đọc một bài phỏng vấn dài và ghép câu hỏi với đoạn trả lời (dạng mô phỏng bài đọc Goethe B2).
+  - vi: Nghe hiểu tin nhắn của cơ quan và lời kể ngắn về hội nhập.
+estimated_minutes: 27
+skills: [writing, reading, listening]
+prerequisites: [de:lesson:b2u06-ohne-dass]
+items:
+  - item: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+    role: reuse
+  - item: de:item:b2u06-g-irreale-vergangenheit
+    role: reuse
+  - item: de:item:b2u06-g-konj-ii-modal-vergangenheit
+    role: reuse
+  - item: de:item:b2u06-g-als-ob
+    role: reuse
+  - item: de:item:b2u06-g-nominalisierte-partizipien
+    role: reuse
+  - item: de:item:b2u06-g-gendergerechte-sprache
+    role: reuse
+  - item: de:item:b2u06-g-ohne-anstatt-dass
+    role: reuse
+  - item: de:item:b2u06-integrationskurs
+    role: reuse
+  - item: de:item:b2u06-antrag
+    role: reuse
+  - item: de:item:b2u06-einreichen
+    role: reuse
+  - item: de:item:b2u06-auslaenderbehoerde
+    role: reuse
+  - item: de:item:b2u06-heimweh
+    role: reuse
+  - item: de:item:b2u06-zweisprachig
+    role: reuse
+  - item: de:item:b2u06-muttersprache
+    role: reuse
+  - item: de:item:b2u06-einwandern
+    role: reuse
+  - item: de:item:b2u01-anerkennung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được một e-mail trang trọng khoảng 100 từ gửi cơ quan để hỏi về khoá hội nhập, đọc hiểu một bài phỏng vấn về di cư và nghe hiểu tin nhắn ngắn của cơ quan."
+  - type: explain
+    text:
+      vi: "Thư trang trọng gồm: Betreff (tiêu đề ngắn), lời chào Sehr geehrte Damen und Herren, (hoặc Sehr geehrte Frau …/Sehr geehrter Herr …), lý do viết, các câu hỏi cụ thể, lời cảm ơn và Mit freundlichen Grüßen. Sau dấu phẩy của lời chào, câu đầu viết thường: ich lebe seit …"
+  - type: explain
+    text:
+      vi: "Để hỏi lịch sự, hãy dùng Konjunktiv II và câu hỏi gián tiếp: Könnten Sie mir bitte mitteilen, wann der nächste Kurs beginnt? Ich würde gern wissen, ob … Für eine kurze Antwort wäre ich Ihnen sehr dankbar. Trong thư, Sie, Ihnen, Ihr luôn viết hoa."
+  - type: explain
+    text:
+      vi: "Với bài đọc ghép câu hỏi – đoạn trả lời, hãy đọc các câu hỏi trước và gạch chân từ khoá (warum, am Anfang, heute anders, Familie). Sau đó tìm đoạn trả lời đúng ý, không chỉ có từ giống; thường có một câu hỏi thừa không khớp đoạn nào."
+  - type: deep_explain
+    text:
+      vi: "Theo hiểu biết lúc soạn bài, Goethe-Zertifikat B2 có phần viết một thư trang trọng khoảng 100 từ, và các phần đọc có nhiều dạng ghép; số câu, thời gian và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut. Trong thư, bạn có thể dùng ngữ pháp của unit để giải thích hoàn cảnh: Ich hätte mich gern früher angemeldet, aber … (tiếc nuối lịch sự); Leider habe ich die Frist verpasst, ohne es zu wissen (cùng chủ ngữ nên dùng ohne … zu, không dùng ohne dass). Kiểm tra lại cuối bài: động từ ở cuối câu phụ (ob, wann, dass, weil), Konjunktiv II đúng dạng (könnten, würde, wäre), và mọi đại từ lịch sự viết hoa. Thông tin về khoá hội nhập và công nhận bằng cấp (điều kiện, chi phí, thời gian) có thể thay đổi, hãy kiểm tra cơ quan có thẩm quyền."
+  - type: example
+    target: "Betreff: Anfrage zum Integrationskurs – Sehr geehrte Damen und Herren, ich lebe seit drei Monaten in Leipzig und möchte so bald wie möglich einen Integrationskurs besuchen. Leider habe ich mich nicht rechtzeitig angemeldet, weil ich nicht wusste, wo ich mich informieren kann. Könnten Sie mir bitte mitteilen, wann der nächste Kurs beginnt und welche Unterlagen ich einreichen muss?"
+    target_lang: de
+    translation:
+      vi: "Tiêu đề: Hỏi về khoá hội nhập – Kính gửi Quý cơ quan, tôi sống ở Leipzig được ba tháng và muốn tham gia khoá hội nhập càng sớm càng tốt. Tiếc là tôi chưa đăng ký kịp vì tôi không biết có thể tìm hiểu thông tin ở đâu. Quý cơ quan có thể cho tôi biết khi nào khoá tiếp theo bắt đầu và tôi cần nộp những giấy tờ gì không?"
+    note:
+      vi: "Phần 1 của thư mẫu (khoảng 60 từ): tiêu đề, lời chào, hoàn cảnh, câu hỏi gián tiếp (wann …, welche … – động từ ở cuối)."
+  - type: example
+    target: "Außerdem würde ich gern wissen, ob es auch Abendkurse gibt, da ich tagsüber arbeite. Ich hätte mich gern früher bei Ihnen gemeldet, aber ich habe Ihre Adresse erst gestern gefunden. Für eine kurze Antwort wäre ich Ihnen sehr dankbar. Mit freundlichen Grüßen – Minh Tran"
+    target_lang: de
+    translation:
+      vi: "Ngoài ra tôi muốn biết liệu có lớp buổi tối không, vì ban ngày tôi đi làm. Lẽ ra tôi đã liên hệ với Quý cơ quan sớm hơn, nhưng đến hôm qua tôi mới tìm được địa chỉ. Tôi rất biết ơn nếu nhận được hồi âm. Trân trọng – Minh Tran"
+    note:
+      vi: "Phần 2 (khoảng 45 từ): ob-Satz, Konjunktiv II quá khứ để tiếc nuối lịch sự (hätte … gemeldet), lời cảm ơn (wäre … dankbar) và lời chào cuối."
+  - type: example
+    target: Ich würde gern wissen, wie lange die Anerkennung meines Abschlusses ungefähr dauert.
+    target_lang: de
+    translation:
+      vi: Tôi muốn biết việc công nhận bằng cấp của tôi mất khoảng bao lâu.
+    note:
+      vi: "Câu hỏi gián tiếp với wie lange: động từ dauert ở cuối. die Anerkennung (B2U01) + Genitiv meines Abschlusses."
+  - type: common_mistake
+    wrong: Sehr geehrte Damen und Herren, Ich möchte mich über den Integrationskurs informieren.
+    right: Sehr geehrte Damen und Herren, ich möchte mich über den Integrationskurs informieren.
+    target_lang: de
+    note:
+      vi: "Sau dấu phẩy của lời chào, câu đầu tiên bắt đầu bằng chữ thường (trừ danh từ và Sie)."
+  - type: common_mistake
+    wrong: Könnten Sie mir sagen, wann beginnt der nächste Kurs?
+    right: Könnten Sie mir sagen, wann der nächste Kurs beginnt?
+    target_lang: de
+    note:
+      vi: "Câu hỏi gián tiếp là câu phụ: động từ beginnt đứng cuối."
+  - type: common_mistake
+    wrong: Ich hätte mich früher anmelden gesollt.
+    right: Ich hätte mich früher anmelden sollen.
+    target_lang: de
+    note:
+      vi: "hätte + nguyên thể + sollen (Ersatzinfinitiv), không dùng gesollt."
+  - type: summary
+    points:
+      - vi: "Thư trang trọng: Betreff – Sehr geehrte Damen und Herren, – lý do – câu hỏi – lời cảm ơn – Mit freundlichen Grüßen."
+      - vi: "Hỏi lịch sự: Könnten Sie mir bitte mitteilen, wann/ob …? Ich würde gern wissen, … (động từ ở cuối)."
+      - vi: "Tiếc nuối, phê bình lịch sự: Ich hätte mich gern früher gemeldet. Sie hätten … können."
+      - vi: "Quá khứ không thật: Wenn ich das gewusst hätte, wäre ich …; als ob + Konjunktiv II."
+      - vi: "Partizip danh từ hoá và trung lập giới: die Geflüchteten, die Kursteilnehmenden, Bürgerinnen und Bürger."
+      - vi: "ohne dass / anstatt dass khi hai chủ ngữ khác nhau; cùng chủ ngữ: ohne … zu."
+      - vi: "Ghép câu hỏi – đoạn: tìm đúng ý, cẩn thận câu hỏi thừa."
+exercises:
+  # ---------------- recognition: đọc (ghép câu hỏi – đoạn trả lời) ----------------
+  - key: de:exercise:b2u06l5-mcq-interview-anfang
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-heimweh
+    prompt:
+      stem: "Interview mit Thu Ha (Person erfunden), Pflegerin in Bremen. Antwort: Ganz klar die Sprache. Ich hatte zwar in Hanoi einen Kurs gemacht, aber im Alltag habe ich kaum etwas verstanden, weil alle so schnell sprachen. Dazu kam das Heimweh: In den ersten Wintern habe ich meine Familie sehr vermisst, ohne dass jemand hier davon wusste. — Welche Frage passt zu dieser Antwort?"
+      stem_lang: de
+      options:
+        - { id: q1, text: "Warum haben Sie sich für Deutschland entschieden?", lang: de }
+        - { id: q2, text: "Was war am Anfang am schwierigsten?", lang: de }
+        - { id: q3, text: "Was würden Sie heute anders machen?", lang: de }
+        - { id: q4, text: "Welche Rolle spielt Ihre Muttersprache in Ihrer Familie?", lang: de }
+        - { id: q5, text: "Wie haben Sie Ihre Freizeit in Vietnam verbracht?", lang: de }
+    answer:
+      correct_option_id: q2
+    explanation:
+      vi: "Ganz klar die Sprache trả lời câu \"Điều gì khó nhất lúc đầu?\": cô kể về khó khăn ngôn ngữ và nỗi nhớ nhà trong những mùa đông đầu tiên. ohne dass jemand hier davon wusste = mà không ai ở đây biết."
+    display_answer: Was war am Anfang am schwierigsten?
+
+  - key: de:exercise:b2u06l5-mcq-interview-anders
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-g-konj-ii-modal-vergangenheit
+    prompt:
+      stem: "Interview mit Thu Ha (Person erfunden). Antwort: Ich hätte mich viel früher um die Anerkennung meines Abschlusses kümmern sollen. Ich habe zwei Jahre als Hilfskraft gearbeitet, obwohl ich eigentlich ausgebildete Pflegerin war. Wenn ich das gewusst hätte, hätte ich gleich in der ersten Woche einen Antrag gestellt. — Welche Frage passt zu dieser Antwort?"
+      stem_lang: de
+      options:
+        - { id: q1, text: "Warum haben Sie sich für Deutschland entschieden?", lang: de }
+        - { id: q2, text: "Was war am Anfang am schwierigsten?", lang: de }
+        - { id: q3, text: "Was würden Sie heute anders machen?", lang: de }
+        - { id: q4, text: "Welche Rolle spielt Ihre Muttersprache in Ihrer Familie?", lang: de }
+        - { id: q5, text: "Wie haben Sie Ihre Freizeit in Vietnam verbracht?", lang: de }
+    answer:
+      correct_option_id: q3
+    explanation:
+      vi: "hätte … kümmern sollen (lẽ ra nên lo) và Wenn ich das gewusst hätte, hätte ich … gestellt là lời tiếc nuối về quá khứ – trả lời câu \"Hôm nay chị sẽ làm gì khác đi?\"."
+    display_answer: Was würden Sie heute anders machen?
+
+  - key: de:exercise:b2u06l5-mcq-interview-sprache
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-zweisprachig
+    prompt:
+      stem: "Interview mit Thu Ha (Person erfunden). Antwort: Zu Hause sprechen wir Vietnamesisch, das ist mir sehr wichtig. Meine Kinder wachsen zweisprachig auf. Manchmal antworten sie auf Deutsch, als ob sie mich auf Vietnamesisch nicht verstehen würden – aber das ist in ihrem Alter wohl normal. — Welche Frage passt zu dieser Antwort?"
+      stem_lang: de
+      options:
+        - { id: q1, text: "Warum haben Sie sich für Deutschland entschieden?", lang: de }
+        - { id: q2, text: "Was war am Anfang am schwierigsten?", lang: de }
+        - { id: q3, text: "Was würden Sie heute anders machen?", lang: de }
+        - { id: q4, text: "Welche Rolle spielt Ihre Muttersprache in Ihrer Familie?", lang: de }
+        - { id: q5, text: "Wie haben Sie Ihre Freizeit in Vietnam verbracht?", lang: de }
+    answer:
+      correct_option_id: q4
+    explanation:
+      vi: "Đoạn này nói về việc nói tiếng Việt ở nhà và con cái lớn lên song ngữ – trả lời câu về vai trò của tiếng mẹ đẻ trong gia đình. als ob … nicht verstehen würden = như thể không hiểu."
+    display_answer: Welche Rolle spielt Ihre Muttersprache in Ihrer Familie?
+
+  - key: de:exercise:b2u06l5-mcq-interview-warum
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-einwandern
+    prompt:
+      stem: "Interview mit Thu Ha (Person erfunden). Antwort: Eine Freundin von mir hat schon in Bremen gelebt und mir erzählt, dass Pflegekräfte hier gesucht werden. Außerdem wollte ich in einem Land arbeiten, in dem ich mich weiterbilden kann. Meine Eltern waren zuerst dagegen, aber heute sind sie stolz auf mich. — Welche Frage passt zu dieser Antwort?"
+      stem_lang: de
+      options:
+        - { id: q1, text: "Warum haben Sie sich für Deutschland entschieden?", lang: de }
+        - { id: q2, text: "Was war am Anfang am schwierigsten?", lang: de }
+        - { id: q3, text: "Was würden Sie heute anders machen?", lang: de }
+        - { id: q4, text: "Welche Rolle spielt Ihre Muttersprache in Ihrer Familie?", lang: de }
+        - { id: q5, text: "Wie haben Sie Ihre Freizeit in Vietnam verbracht?", lang: de }
+    answer:
+      correct_option_id: q1
+    explanation:
+      vi: "Đoạn này nêu lý do chọn Đức: một người bạn kể rằng ở đây cần điều dưỡng, và cô muốn được học nâng cao. Câu hỏi về thời gian rảnh ở Việt Nam là câu thừa, không khớp đoạn nào."
+    display_answer: Warum haben Sie sich für Deutschland entschieden?
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b2u06l5-listen-behoerde
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u06-auslaenderbehoerde
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Tag, hier spricht Frau Keller von der Ausländerbehörde. Ihre Unterlagen sind leider nicht vollständig. Sie hätten auch eine Kopie Ihres Mietvertrags einreichen müssen. Bitte schicken Sie uns die Kopie bis zum Ende des Monats.
+      options:
+        - { id: a1a, text: "Hồ sơ còn thiếu bản sao hợp đồng thuê nhà; cần gửi trước cuối tháng.", lang: vi }
+        - { id: a2b, text: "Hồ sơ đã đầy đủ và đơn đã được duyệt.", lang: vi }
+        - { id: a3c, text: "Cần đến gặp trực tiếp trước cuối tuần.", lang: vi }
+        - { id: a4d, text: "Cần gửi bản sao hộ chiếu trước cuối tháng.", lang: vi }
+    answer:
+      correct_option_id: a1a
+    explanation:
+      vi: "nicht vollständig = chưa đầy đủ. Sie hätten auch eine Kopie Ihres Mietvertrags einreichen müssen = lẽ ra ông/bà phải nộp cả bản sao hợp đồng thuê nhà. bis zum Ende des Monats = trước cuối tháng."
+    display_answer: Hồ sơ còn thiếu bản sao hợp đồng thuê nhà; cần gửi trước cuối tháng.
+
+  - key: de:exercise:b2u06l5-listen-gruppen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u06-g-ohne-anstatt-dass
+    prompt:
+      audio_asset_id: null
+      fallback_text: Viele unserer Teilnehmenden sagen am Ende des Kurses, sie hätten nie gedacht, dass sie so schnell Freunde finden. Anstatt dass jeder allein lernt, arbeiten bei uns alle in kleinen Gruppen.
+      options:
+        - { id: k1a, text: "Học viên không ngờ lại kết bạn nhanh như vậy; ở đây mọi người học theo nhóm nhỏ thay vì học một mình.", lang: vi }
+        - { id: k2b, text: "Học viên đã đoán trước sẽ kết bạn nhanh; mọi người học một mình.", lang: vi }
+        - { id: k3c, text: "Học viên khó kết bạn vì ai cũng học một mình.", lang: vi }
+        - { id: k4d, text: "Khoá học chỉ dành cho những nhóm bạn đã quen nhau từ trước.", lang: vi }
+    answer:
+      correct_option_id: k1a
+    explanation:
+      vi: "die Teilnehmenden = học viên (Partizip I danh từ hoá, trung lập giới). sie hätten nie gedacht = họ không bao giờ nghĩ (Konjunktiv trong lời gián tiếp). Anstatt dass jeder allein lernt = thay vì mỗi người tự học một mình."
+    display_answer: Học viên không ngờ lại kết bạn nhanh như vậy; ở đây mọi người học theo nhóm nhỏ thay vì học một mình.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u06l5-fill-anrede
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-integrationskurs
+    prompt:
+      template: "Sehr {{b1}} Damen und Herren, ich {{b2}} (werden, Konjunktiv II) gern wissen, ob ich mich noch für den Integrationskurs im März anmelden kann."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [geehrte]
+        b2: [würde]
+    known_wrong:
+      - answer: geehrten
+        feedback_vi: Lời chào cố định – Sehr geehrte Damen und Herren (đuôi -e).
+        error_tag: adj_ending
+      - answer: geehrter
+        feedback_vi: geehrter dùng cho một người nam (Sehr geehrter Herr …). Với Damen und Herren dùng geehrte.
+        error_tag: adj_ending
+      - answer: werde
+        feedback_vi: Đề yêu cầu Konjunktiv II của werden – würde (lịch sự hơn).
+        error_tag: konjunktiv_form
+      - answer: wurde
+        feedback_vi: wurde là Präteritum. Konjunktiv II có umlaut – würde.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Sehr geehrte Damen und Herren là lời chào cố định khi không biết tên người nhận. Ich würde gern wissen, ob … là cách hỏi lịch sự; câu ob có động từ kann ở cuối."
+    display_answer: "Sehr geehrte Damen und Herren, ich würde gern wissen, ob ich mich noch für den Integrationskurs im März anmelden kann."
+
+  - key: de:exercise:b2u06l5-fill-dankbar
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+    prompt:
+      template: "Ich {{b1}} (haben, Konjunktiv II) mich gern früher bei Ihnen gemeldet. Für eine kurze Antwort {{b2}} (sein, Konjunktiv II) ich Ihnen sehr dankbar."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [hätte]
+        b2: [wäre]
+    known_wrong:
+      - answer: hatte
+        feedback_vi: hatte là Präteritum/Plusquamperfekt. Tiếc nuối lịch sự cần Konjunktiv II – hätte … gemeldet.
+        error_tag: konjunktiv_form
+      - answer: war
+        feedback_vi: war là Präteritum. Lời cảm ơn trước cần Konjunktiv II – wäre.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "sich melden đi với haben (ich habe mich gemeldet) → ich hätte mich gern früher gemeldet (lẽ ra tôi đã muốn liên hệ sớm hơn). Für eine Antwort wäre ich Ihnen dankbar là câu kết thư lịch sự."
+    display_answer: "Ich hätte mich gern früher bei Ihnen gemeldet. Für eine kurze Antwort wäre ich Ihnen sehr dankbar."
+
+  - key: de:exercise:b2u06l5-tr-antrag-frueher
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-g-irreale-vergangenheit
+    prompt:
+      source_text: "Nếu biết điều đó thì tôi đã nộp đơn (Antrag) sớm hơn."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wenn ich das gewusst hätte, hätte ich den Antrag früher gestellt.
+        - Wenn ich das gewusst hätte, hätte ich den Antrag früher eingereicht.
+        - Wenn ich das gewusst hätte, hätte ich meinen Antrag früher gestellt.
+        - Wenn ich das gewusst hätte, hätte ich meinen Antrag früher eingereicht.
+        - Wenn ich das gewusst hätte, hätte ich früher einen Antrag gestellt.
+        - Wenn ich das gewusst hätte, dann hätte ich den Antrag früher gestellt.
+        - Hätte ich das gewusst, hätte ich den Antrag früher gestellt.
+        - Hätte ich das gewusst, hätte ich den Antrag früher eingereicht.
+        - Hätte ich das gewusst, hätte ich meinen Antrag früher gestellt.
+        - Hätte ich das gewusst, hätte ich früher einen Antrag gestellt.
+        - Ich hätte den Antrag früher gestellt, wenn ich das gewusst hätte.
+        - Ich hätte den Antrag früher eingereicht, wenn ich das gewusst hätte.
+        - Ich hätte meinen Antrag früher gestellt, wenn ich das gewusst hätte.
+        - Wenn ich das gewusst hätte, hätte ich den Antrag eher gestellt.
+        - Hätte ich das gewusst, hätte ich den Antrag eher gestellt.
+    known_wrong:
+      - answer: Wenn ich das wusste, würde ich den Antrag früher stellen.
+        feedback_vi: wusste là Präteritum. Chuyện đã qua không có thật cần gewusst hätte … hätte … gestellt.
+        error_tag: konjunktiv_form
+      - answer: Wenn ich das gewusst hätte, ich hätte den Antrag früher gestellt.
+        feedback_vi: Vế wenn ở vị trí 1, nên hätte đứng ngay sau dấu phẩy – …, hätte ich …
+        error_tag: verb_position
+      - answer: Wenn ich das gewusst hatte, hätte ich den Antrag früher gestellt.
+        feedback_vi: hatte (không umlaut) là Plusquamperfekt. Vế wenn cũng cần Konjunktiv II – gewusst hätte.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Điều kiện quá khứ không có thật: Wenn ich das gewusst hätte (hätte ở cuối), vế chính hätte ich … gestellt/eingereicht. einen Antrag stellen = nộp đơn. Có thể bỏ wenn (Hätte ich das gewusst, …) hoặc đặt vế chính trước."
+    display_answer: Wenn ich das gewusst hätte, hätte ich den Antrag früher gestellt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u06l5-wb-mitteilen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-einreichen
+    prompt:
+      instruction: "Sắp xếp thành câu hỏi lịch sự trong thư: \"Quý cơ quan có thể cho tôi biết tôi phải nộp những giấy tờ nào không?\""
+      tokens:
+        - { id: m-muss, text: muss }
+        - { id: m-koennten, text: Könnten }
+        - { id: m-welche, text: welche }
+        - { id: m-mir, text: mir }
+        - { id: m-einreichen, text: einreichen }
+        - { id: m-komma, text: "," }
+        - { id: m-sie, text: Sie }
+        - { id: m-unterlagen, text: Unterlagen }
+        - { id: m-mitteilen, text: mitteilen }
+        - { id: m-ich, text: ich }
+    answer:
+      orders:
+        - [m-koennten, m-sie, m-mir, m-mitteilen, m-komma, m-welche, m-unterlagen, m-ich, m-einreichen, m-muss]
+    explanation:
+      vi: "Câu hỏi có/không: Könnten đứng đầu, rồi Sie, mir, nguyên thể mitteilen. Câu hỏi gián tiếp welche Unterlagen ich einreichen muss: động từ chia muss ở cuối, sau nguyên thể einreichen."
+    display_answer: Könnten Sie mir mitteilen, welche Unterlagen ich einreichen muss?
+
+  - key: de:exercise:b2u06l5-wb-frueher-anmelden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-antrag
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Lẽ ra tôi nên nộp đơn sớm hơn.\""
+      tokens:
+        - { id: n-sollen, text: sollen }
+        - { id: n-antrag, text: Antrag }
+        - { id: n-ich, text: Ich }
+        - { id: n-stellen, text: stellen }
+        - { id: n-den, text: den }
+        - { id: n-haette, text: hätte }
+        - { id: n-frueher, text: früher }
+    answer:
+      orders:
+        - [n-ich, n-haette, n-den, n-antrag, n-frueher, n-stellen, n-sollen]
+    explanation:
+      vi: "hätte ở vị trí 2, tân ngữ den Antrag rồi früher; cuối câu là hai nguyên thể: stellen (động từ chính) + sollen (Ersatzinfinitiv)."
+    display_answer: Ich hätte den Antrag früher stellen sollen.
+
+  - key: de:exercise:b2u06l5-tr-als-waere
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u06-g-als-ob
+    prompt:
+      source_text: Sie spricht Deutsch, als wäre sie in Deutschland aufgewachsen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cô ấy nói tiếng Đức như thể đã lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức như thể cô ấy lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức như thể cô ấy đã lớn lên ở Đức.
+        - Chị ấy nói tiếng Đức như thể đã lớn lên ở Đức.
+        - Chị ấy nói tiếng Đức như thể chị ấy lớn lên ở Đức.
+        - Bà ấy nói tiếng Đức như thể đã lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức cứ như thể đã lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức như là đã lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức như người lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức như thể sinh ra và lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức giống như đã lớn lên ở Đức.
+        - Cô ấy nói tiếng Đức như thể được nuôi lớn ở Đức.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cô ấy nói tiếng Đức vì đã lớn lên ở Đức.
+        feedback_vi: "als wäre … = như thể (thực tế cô ấy không lớn lên ở Đức), không phải lý do."
+        error_tag: meaning
+    explanation:
+      vi: "als + Konjunktiv II quá khứ (wäre … aufgewachsen) = như thể đã lớn lên: so sánh không thật, ngụ ý cô ấy không lớn lên ở Đức nhưng nói rất giỏi."
+    display_answer: Cô ấy nói tiếng Đức như thể đã lớn lên ở Đức.

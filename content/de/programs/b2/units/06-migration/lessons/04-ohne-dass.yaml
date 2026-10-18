@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u06-ohne-dass
+order_index: 4
+level: b2
+title:
+  vi: Mà không… – ohne dass, anstatt dass (Ohne dass jemand geholfen hat)
+objectives:
+  - vi: Nghe hiểu lời kể, phỏng vấn ngắn của người di cư về ngôn ngữ, nỗi nhớ nhà và bản sắc.
+  - vi: Kể trải nghiệm hội nhập của mình với ohne dass / (an)statt dass khi hai vế có chủ ngữ khác nhau.
+  - vi: Phân biệt ohne dass với ohne … zu, anstatt dass với anstatt … zu.
+estimated_minutes: 22
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:b2u06-gefluechtete]
+items:
+  - item: de:item:b2u06-g-ohne-anstatt-dass
+  - item: de:item:b2u06-sprachbarriere
+  - item: de:item:b2u06-heimweh
+  - item: de:item:b2u06-identitaet
+  - item: de:item:b2u06-zweisprachig
+  - item: de:item:b2u06-muttersprache
+  - item: de:item:b2u06-zugehoerigkeit
+  - item: de:item:b2u06-sich-anpassen
+  - item: de:item:b2u06-anpassung
+  - item: de:item:b2u06-mehrsprachig
+  - item: de:item:b2u06-dazugehoeren
+  - item: de:item:b2u06-zuhause
+  - item: de:item:b2u06-akzent
+  - item: de:item:b2u06-dialekt
+  - item: de:item:b2u06-einsamkeit
+  - item: de:item:b2u06-praegen
+  - item: de:item:b2u06-dolmetscher
+  - item: de:item:b2u06-verwurzelt
+  - item: de:item:b1u08-g-statt-ohne-zu
+    role: reuse
+  - item: de:item:b1u01-heimat
+    role: reuse
+  - item: de:item:b1u01-fremd
+    role: reuse
+  - item: de:item:b1u01-sich-einleben
+    role: reuse
+  - item: de:item:b1u01-vermissen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nghe hiểu và kể được về trải nghiệm hội nhập, ngôn ngữ và bản sắc, ví dụ: \"Ich habe die Stelle bekommen, ohne dass mir jemand geholfen hat.\""
+  - type: explain
+    text:
+      vi: "ohne dass nghĩa là \"mà không (có ai/điều gì) …\", (an)statt dass nghĩa là \"thay vì (ai đó) …\". Cả hai mở câu phụ nên động từ chia đứng cuối: Sie hat Deutsch gelernt, ohne dass ihr jemand geholfen hat."
+  - type: explain
+    text:
+      vi: "Ở B1 bạn đã học ohne … zu và statt … zu. Khi hai vế có cùng chủ ngữ, cách tự nhiên là dùng zu: Ich bin gegangen, ohne etwas zu sagen. Khi chủ ngữ khác nhau thì bắt buộc dùng dass: Ich bin gegangen, ohne dass mich jemand gesehen hat."
+  - type: explain
+    text:
+      vi: "Không trộn hai cấu trúc: ohne dass zu fragen là sai. Câu ohne dass đã mang nghĩa phủ định nên không thêm nicht: …, ohne dass er etwas gesagt hat = … mà anh ấy chẳng nói gì."
+  - type: explain
+    text:
+      vi: "Thì trong câu phụ theo đúng thực tế: chuyện đã qua dùng Perfekt hoặc Präteritum (…, ohne dass ich es gemerkt habe / merkte). Câu với (an)statt dass thường so sánh hai việc và hơi mang ý phê bình: Statt dass die Behörde mir schreibt, muss ich jedes Mal anrufen."
+  - type: deep_explain
+    text:
+      vi: "anstatt dass và statt dass cùng nghĩa; anstatt nghe hơi trang trọng hơn một chút. Khi cùng chủ ngữ, ohne dass vẫn đúng ngữ pháp nhưng nghe nặng: Er ging, ohne dass er sich verabschiedete → tự nhiên hơn: Er ging, ohne sich zu verabschieden. Trong câu phụ, đại từ thường đứng trước chủ ngữ là danh từ hoặc jemand: ohne dass es jemand gemerkt hat. Về chủ đề: Muttersprache là tiếng học đầu tiên; ai lớn lên với hai thứ tiếng là zweisprachig, với nhiều hơn là mehrsprachig. Heimweh là nhớ nhà, nhớ quê; das Zuhause (nơi mình coi là nhà) khác zu Hause (ở nhà). Cụm hay dùng khi kể: sich an + Akkusativ anpassen, sich fremd fühlen, das Gefühl haben dazuzugehören, die Sprachbarriere überwinden."
+  - type: example
+    target: Ich habe die Stelle bekommen, ohne dass mir jemand geholfen hat.
+    target_lang: de
+    translation:
+      vi: Tôi đã có được chỗ làm mà không có ai giúp.
+    note:
+      vi: "Hai chủ ngữ khác nhau (ich – jemand) → ohne dass; động từ chia hat ở cuối câu phụ."
+  - type: example
+    target: Er ist nach Hamburg gezogen, ohne ein Wort Deutsch zu können.
+    target_lang: de
+    translation:
+      vi: Anh ấy chuyển đến Hamburg mà không biết một chữ tiếng Đức nào.
+    note:
+      vi: "Cùng chủ ngữ (er) → ohne … zu + nguyên thể (B1), không cần dass."
+  - type: example
+    target: Anstatt dass die Kinder Vietnamesisch lernen, sprechen wir zu Hause fast nur Deutsch.
+    target_lang: de
+    translation:
+      vi: Thay vì để bọn trẻ học tiếng Việt, ở nhà chúng tôi lại hầu như chỉ nói tiếng Đức.
+    note:
+      vi: "Chủ ngữ khác nhau (die Kinder – wir) → anstatt dass. Câu phụ đứng đầu chiếm vị trí 1, nên sprechen đứng ngay sau dấu phẩy."
+  - type: example
+    target: Statt dass die Behörde mir schreibt, muss ich jedes Mal selbst anrufen.
+    target_lang: de
+    translation:
+      vi: Đáng lẽ cơ quan nhà nước phải viết thư cho tôi, vậy mà lần nào tôi cũng phải tự gọi điện.
+    note:
+      vi: "statt dass = anstatt dass; câu mang ý phê bình nhẹ."
+  - type: example
+    target: Am Anfang hatte ich oft Heimweh und fühlte mich fremd. Heute ist Leipzig mein Zuhause.
+    target_lang: de
+    translation:
+      vi: Lúc đầu tôi hay nhớ nhà và thấy mình xa lạ. Giờ Leipzig là mái nhà của tôi.
+    note:
+      vi: "Heimweh haben; sich fremd fühlen. das Zuhause là danh từ (viết hoa, viết liền)."
+  - type: example
+    target: Ich habe mich gut eingelebt, aber manchmal vermisse ich meine Heimat sehr.
+    target_lang: de
+    translation:
+      vi: Tôi đã quen với cuộc sống ở đây, nhưng đôi khi tôi rất nhớ quê hương.
+    note:
+      vi: "sich einleben (Perfekt: habe mich eingelebt); vermissen + Akkusativ."
+  - type: example
+    target: Unsere Tochter wächst zweisprachig auf. Deutsch und Vietnamesisch sind beide ihre Muttersprachen.
+    target_lang: de
+    translation:
+      vi: Con gái chúng tôi lớn lên với hai thứ tiếng. Tiếng Đức và tiếng Việt đều là tiếng mẹ đẻ của cháu.
+    note:
+      vi: "zweisprachig aufwachsen = lớn lên song ngữ; một người có thể có hai Muttersprachen."
+  - type: common_mistake
+    wrong: Sie ist gegangen, ohne dass zu fragen.
+    right: Sie ist gegangen, ohne zu fragen.
+    target_lang: de
+    note:
+      vi: "Cùng chủ ngữ thì dùng ohne … zu; không bao giờ ghép dass với zu."
+  - type: common_mistake
+    wrong: Ich habe den Brief abgeschickt, ohne dass mein Mann hat ihn gelesen.
+    right: Ich habe den Brief abgeschickt, ohne dass mein Mann ihn gelesen hat.
+    target_lang: de
+    note:
+      vi: "ohne dass mở câu phụ: động từ chia hat đứng cuối."
+  - type: common_mistake
+    wrong: Er hat mir geholfen, ohne dass ich ihn nicht gefragt habe.
+    right: Er hat mir geholfen, ohne dass ich ihn gefragt habe.
+    target_lang: de
+    note:
+      vi: "ohne dass đã có nghĩa \"mà không\"; thêm nicht là phủ định hai lần."
+  - type: common_mistake
+    wrong: Ich habe Heimweh nach meine Familie.
+    right: Ich habe Heimweh nach meiner Familie.
+    target_lang: de
+    note:
+      vi: "nach + Dativ: nach meiner Familie."
+  - type: summary
+    points:
+      - vi: "ohne dass = mà không …; (an)statt dass = thay vì …; động từ chia ở cuối."
+      - vi: "Chủ ngữ khác nhau → dass bắt buộc: …, ohne dass mich jemand gesehen hat."
+      - vi: "Cùng chủ ngữ → tự nhiên hơn là ohne … zu / statt … zu: …, ohne etwas zu sagen."
+      - vi: "Không viết ohne dass zu …; không thêm nicht sau ohne dass."
+      - vi: "Từ vựng: die Sprachbarriere, das Heimweh, die Identität, zweisprachig, die Muttersprache, die Zugehörigkeit, sich anpassen (an + Akk), die Anpassung."
+      - vi: "das Zuhause (mái nhà) ≠ zu Hause (ở nhà); dazugehören → das Gefühl, dazuzugehören."
+exercises:
+  # ---------------- recognition (nghe) ----------------
+  - key: de:exercise:b2u06l4-listen-ohne-hilfe
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u06-g-ohne-anstatt-dass
+    prompt:
+      audio_asset_id: null
+      fallback_text: Meine Mutter hat in Deutschland Arbeit gefunden, ohne dass ihr jemand geholfen hat.
+      options:
+        - { id: m1a, text: "Mẹ tôi tìm được việc ở Đức mà không có ai giúp.", lang: vi }
+        - { id: m2b, text: "Mẹ tôi tìm được việc ở Đức nhờ có người giúp.", lang: vi }
+        - { id: m3c, text: "Mẹ tôi giúp người khác tìm việc ở Đức.", lang: vi }
+        - { id: m4d, text: "Mẹ tôi chưa tìm được việc ở Đức vì không có ai giúp.", lang: vi }
+    answer:
+      correct_option_id: m1a
+    explanation:
+      vi: "hat … Arbeit gefunden = đã tìm được việc. ohne dass ihr jemand geholfen hat = mà không có ai giúp bà (ihr là Dativ của sie)."
+    display_answer: Mẹ tôi tìm được việc ở Đức mà không có ai giúp.
+
+  - key: de:exercise:b2u06l4-listen-heimweh
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u06-heimweh
+    prompt:
+      audio_asset_id: null
+      fallback_text: Am Anfang war die Sprachbarriere groß, und ich hatte oft Heimweh. Heute fühle ich mich hier zu Hause, aber ich vermisse meine Familie noch.
+      options:
+        - { id: h1a, text: "Lúc đầu rào cản ngôn ngữ lớn và người nói hay nhớ nhà; giờ người nói thấy như ở nhà nhưng vẫn nhớ gia đình.", lang: vi }
+        - { id: h2b, text: "Lúc đầu rào cản ngôn ngữ lớn; giờ người nói thấy như ở nhà và không còn nhớ gia đình.", lang: vi }
+        - { id: h3c, text: "Lúc đầu người nói không gặp khó khăn về ngôn ngữ nhưng hay nhớ nhà.", lang: vi }
+        - { id: h4d, text: "Người nói muốn trở về quê vì vẫn nhớ nhà.", lang: vi }
+    answer:
+      correct_option_id: h1a
+    explanation:
+      vi: "die Sprachbarriere war groß = rào cản ngôn ngữ lớn; Heimweh haben = nhớ nhà; sich zu Hause fühlen = cảm thấy như ở nhà; ich vermisse meine Familie noch = tôi vẫn nhớ gia đình."
+    display_answer: Lúc đầu rào cản ngôn ngữ lớn và người nói hay nhớ nhà; giờ người nói thấy như ở nhà nhưng vẫn nhớ gia đình.
+
+  - key: de:exercise:b2u06l4-listen-uebersetzen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u06-dolmetscher
+    prompt:
+      audio_asset_id: null
+      fallback_text: Früher war ich immer der Dolmetscher meiner Eltern. Anstatt dass ich für sie übersetze, besuchen sie jetzt selbst einen Deutschkurs.
+      options:
+        - { id: u1a, text: "Trước đây người nói luôn phiên dịch cho bố mẹ; giờ thay vì để người nói dịch, bố mẹ tự đi học tiếng Đức.", lang: vi }
+        - { id: u2b, text: "Người nói vẫn luôn phiên dịch cho bố mẹ.", lang: vi }
+        - { id: u3c, text: "Bố mẹ trước đây phiên dịch cho người nói.", lang: vi }
+        - { id: u4d, text: "Người nói đi học tiếng Đức thay cho bố mẹ.", lang: vi }
+    answer:
+      correct_option_id: u1a
+    explanation:
+      vi: "Früher war ich … der Dolmetscher meiner Eltern = trước đây tôi là người phiên dịch của bố mẹ. Anstatt dass ich für sie übersetze = thay vì tôi dịch cho họ (chủ ngữ khác: ich – sie); besuchen sie jetzt selbst einen Deutschkurs = giờ họ tự học tiếng Đức."
+    display_answer: Trước đây người nói luôn phiên dịch cho bố mẹ; giờ thay vì để người nói dịch, bố mẹ tự đi học tiếng Đức.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u06l4-fill-ohne-dass
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-g-ohne-anstatt-dass
+    prompt:
+      template: "Sie hat die Prüfung bestanden, ohne {{b1}} ihr jemand geholfen hat."
+      blanks:
+        - { id: b1, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [dass]
+    known_wrong:
+      - answer: zu
+        feedback_vi: Câu sau có chủ ngữ riêng (jemand) và động từ chia hat, nên cần ohne dass, không phải ohne … zu.
+        error_tag: zu_infinitive
+    explanation:
+      vi: "Hai chủ ngữ khác nhau (sie – jemand) và câu phụ có động từ chia ở cuối (hat), nên dùng ohne dass."
+    display_answer: Sie hat die Prüfung bestanden, ohne dass ihr jemand geholfen hat.
+
+  - key: de:exercise:b2u06l4-fill-angepasst
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u06-sich-anpassen
+    prompt:
+      template: "Unsere Kinder haben sich schnell {{b1}} (anpassen), ohne dass wir unsere Traditionen {{b2}} (aufgeben) haben."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [angepasst]
+        b2: [aufgegeben]
+    known_wrong:
+      - answer: geanpasst
+        feedback_vi: Ở động từ tách, ge- đứng giữa tiền tố và gốc – angepasst.
+        error_tag: separable_prefix
+      - answer: aufgeben
+        feedback_vi: Trước haben ở cuối câu cần Partizip II – aufgegeben.
+        error_tag: participle_form
+      - answer: geaufgeben
+        feedback_vi: ge- đứng giữa tiền tố auf và gốc – aufgegeben.
+        error_tag: separable_prefix
+    explanation:
+      vi: "Perfekt: haben … angepasst (an-ge-passt) và câu phụ ohne dass … aufgegeben haben (auf-ge-geben, động từ chia haben ở cuối). Hai chủ ngữ khác nhau (unsere Kinder – wir) nên dùng ohne dass."
+    display_answer: Unsere Kinder haben sich schnell angepasst, ohne dass wir unsere Traditionen aufgegeben haben.
+
+  - key: de:exercise:b2u06l4-tr-ohne-gefragt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-g-ohne-anstatt-dass
+    prompt:
+      source_text: "Anh ấy đã giúp tôi mà tôi không hề phải hỏi (nhờ) anh ấy. (dùng ohne dass)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Er hat mir geholfen, ohne dass ich ihn gefragt habe.
+        - Er hat mir geholfen, ohne dass ich ihn darum gebeten habe.
+        - Er hat mir geholfen, ohne dass ich ihn fragen musste.
+        - Er hat mir geholfen, ohne dass ich ihn gefragt hatte.
+        - Er hat mir geholfen, ohne dass ich ihn darum gebeten hatte.
+        - Er half mir, ohne dass ich ihn gefragt habe.
+        - Er half mir, ohne dass ich ihn fragte.
+        - Er half mir, ohne dass ich ihn darum bat.
+        - Er half mir, ohne dass ich ihn gefragt hatte.
+        - Er half mir, ohne dass ich ihn fragen musste.
+    known_wrong:
+      - answer: Er hat mir geholfen, ohne dass ich ihn nicht gefragt habe.
+        feedback_vi: ohne dass đã mang nghĩa phủ định; bỏ nicht.
+        error_tag: negation
+      - answer: Er hat mir geholfen, ohne dass ich habe ihn gefragt.
+        feedback_vi: Trong câu phụ ohne dass, động từ chia habe đứng cuối – … ihn gefragt habe.
+        error_tag: verb_position
+      - answer: Er hat mir geholfen, ohne ihn zu fragen.
+        feedback_vi: "ohne … zu lấy chủ ngữ của câu chính (er), nên nghĩa là \"anh ấy không hỏi\". Người không hỏi là tôi, nên cần ohne dass ich …"
+        error_tag: zu_infinitive
+    explanation:
+      vi: "Chủ ngữ hai vế khác nhau (er giúp – ich không hỏi) nên dùng ohne dass + ich + … + động từ chia ở cuối. jemanden fragen / jemanden um etwas bitten (darum bitten)."
+    display_answer: Er hat mir geholfen, ohne dass ich ihn gefragt habe.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u06l4-wb-ohne-dass-half
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-g-ohne-anstatt-dass
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cô ấy tìm được việc mà tôi không giúp gì.\""
+      tokens:
+        - { id: o-ich, text: ich }
+        - { id: o-fand, text: fand }
+        - { id: o-half, text: half }
+        - { id: o-sie, text: Sie }
+        - { id: o-komma, text: "," }
+        - { id: o-dass, text: dass }
+        - { id: o-arbeit, text: Arbeit }
+        - { id: o-ihr, text: ihr }
+        - { id: o-ohne, text: ohne }
+    answer:
+      orders:
+        - [o-sie, o-fand, o-arbeit, o-komma, o-ohne, o-dass, o-ich, o-ihr, o-half]
+    explanation:
+      vi: "Câu chính: Sie fand Arbeit (V2). Câu phụ: ohne dass + chủ ngữ ich + tân ngữ Dativ ihr + động từ chia half ở cuối."
+    display_answer: Sie fand Arbeit, ohne dass ich ihr half.
+
+  - key: de:exercise:b2u06l4-mcq-ohne-zu
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u08-g-statt-ohne-zu
+    prompt:
+      stem: "Bạn muốn nói: \"Tôi đã thích nghi mà không từ bỏ bản sắc của mình.\" (cùng một chủ ngữ) Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: z1a, text: "Ich habe mich angepasst, ohne meine Identität aufzugeben.", lang: de }
+        - { id: z2b, text: "Ich habe mich angepasst, ohne dass meine Identität aufzugeben.", lang: de }
+        - { id: z3c, text: "Ich habe mich angepasst, ohne dass ich aufgebe meine Identität.", lang: de }
+        - { id: z4d, text: "Ich habe mich angepasst, ohne zu meine Identität aufgeben.", lang: de }
+    answer:
+      correct_option_id: z1a
+    explanation:
+      vi: "Cùng chủ ngữ (ich) nên tự nhiên nhất là ohne … zu (B1); với động từ tách, zu đứng giữa: aufzugeben. Phương án 2 ghép dass với zu; phương án 3 đặt động từ không ở cuối; phương án 4 đặt zu sai chỗ."
+    display_answer: Ich habe mich angepasst, ohne meine Identität aufzugeben.
+
+  - key: de:exercise:b2u06l4-tr-identitaet
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u06-identitaet
+    prompt:
+      source_text: Beide Kulturen prägen meine Identität, und ich möchte keine davon verlieren.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cả hai nền văn hoá đều định hình bản sắc của tôi, và tôi không muốn mất nền văn hoá nào.
+        - Cả hai nền văn hoá đều định hình bản sắc của tôi, và tôi không muốn đánh mất nền văn hoá nào.
+        - Cả hai nền văn hoá đều định hình bản sắc của tôi và tôi không muốn mất cái nào.
+        - Cả hai nền văn hoá đều định hình bản sắc của tôi, và tôi không muốn đánh mất cái nào cả.
+        - Cả hai nền văn hoá đều tạo nên bản sắc của tôi, và tôi không muốn mất nền văn hoá nào.
+        - Cả hai nền văn hoá đều tạo nên bản sắc của tôi, và tôi không muốn đánh mất cái nào.
+        - Hai nền văn hoá đều định hình bản sắc của tôi, và tôi không muốn mất nền văn hoá nào.
+        - Cả hai nền văn hóa đều định hình bản sắc của tôi, và tôi không muốn mất nền văn hóa nào.
+        - Cả hai nền văn hoá đều in dấu lên bản sắc của tôi, và tôi không muốn mất nền văn hoá nào.
+        - Cả hai nền văn hoá đều hình thành nên bản sắc của tôi, và tôi không muốn mất nền văn hoá nào.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cả hai nền văn hoá đều định hình bản sắc của tôi, nhưng tôi muốn bỏ một nền văn hoá.
+        feedback_vi: "keine davon verlieren = không muốn mất nền văn hoá nào cả."
+        error_tag: meaning
+    explanation:
+      vi: "prägen = định hình, để lại dấu ấn; die Identität = bản sắc; keine davon = không cái nào trong số đó (ở đây là hai nền văn hoá)."
+    display_answer: Cả hai nền văn hoá đều định hình bản sắc của tôi, và tôi không muốn mất nền văn hoá nào.
