@@ -1,3 +1,5 @@
 # B2U08 Kunst, Kultur und Literatur
 # Wörterbuchkürzel für umgangssprachlich
 ugs
+# Fiktiver Ortsname in der Musterrezension (B2U08L5)
+Krummhöft

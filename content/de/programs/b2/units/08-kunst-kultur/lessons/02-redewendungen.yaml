@@ -56,13 +56,13 @@ body:
       vi: "Thành ngữ (die Redewendung) có nghĩa bóng, không đoán được từ nghĩa từng chữ: Schwein haben không liên quan đến con lợn mà là \"gặp may\". Vài thành ngữ có hình ảnh giống tiếng Việt (ein Auge zudrücken ≈ nhắm một mắt mở một mắt), nhưng đa số khác hẳn, nên đừng dịch từng chữ từ tiếng Việt sang."
   - type: explain
     text:
-      vi: "Phần cố định của thành ngữ giữ nguyên, chỉ động từ được chia và có thể đứng ở vị trí 2 hoặc cuối câu như bình thường: Ich drücke dir die Daumen. – Ich bin ins Fettnäpfchen getreten. Danh từ trong thành ngữ không đổi số: luôn là Tomaten (số nhiều), die Daumen, zwei Fliegen."
+      vi: "Phần cố định của thành ngữ giữ nguyên, chỉ động từ được chia và có thể đứng ở vị trí 2 hoặc cuối câu như bình thường: Ich drücke dir die Daumen. – Ich bin ins Fettnäpfchen getreten. Danh từ trong thành ngữ thường không được đổi số: Tomaten (số nhiều), zwei Fliegen; học thuộc đúng dạng như từ điển ghi."
   - type: explain
     text:
-      vi: "Ngữ vực (Sprachebene) có bốn mức chính: umgangssprachlich (khẩu ngữ, với bạn bè), neutral (chuẩn), gehoben (trang trọng, văn viết) và Fachsprache (thuật ngữ của một ngành, ví dụ die Inszenierung trong sân khấu). Cùng một ý: kriegen – bekommen – erhalten; kapieren – verstehen; Kohle – Geld – finanzielle Mittel."
+      vi: "Ngữ vực (Sprachebene) có ba mức chính: umgangssprachlich (khẩu ngữ, với bạn bè), neutral (chuẩn) và förmlich/gehoben (trang trọng: thư từ, văn bản chính thức; nhãn geh. trong từ điển còn chỉ lối văn chương như das Antlitz thay cho das Gesicht). Ngoài ra có Fachsprache (thuật ngữ của một ngành, ví dụ die Inszenierung trong sân khấu). Cùng một ý: kriegen – bekommen – erhalten; kapieren – verstehen; Kohle – Geld – finanzielle Mittel."
   - type: explain
     text:
-      vi: "Thành ngữ khẩu ngữ (Tomaten auf den Augen haben, Schwein haben, die Nase voll haben, nur Bahnhof verstehen) chỉ dùng với người thân quen. Các thành ngữ trung tính (den Nagel auf den Kopf treffen, auf dem Holzweg sein, jemandem die Daumen drücken, ein Auge zudrücken) dùng được cả ở nơi làm việc. Trong thư trang trọng và bài viết thi B2, tránh từ và thành ngữ khẩu ngữ."
+      vi: "Từ điển ghi ugs. cho phần lớn thành ngữ, nhưng mức độ khác nhau: Tomaten auf den Augen haben, Schwein haben, die Nase voll haben, nur Bahnhof verstehen khá suồng sã, chỉ dùng với người thân quen. Những thành ngữ rất phổ biến như den Nagel auf den Kopf treffen, jemandem die Daumen drücken, ein Auge zudrücken (cũng ugs.) hay auf dem Holzweg sein (trung tính) nghe tự nhiên cả khi nói chuyện ở nơi làm việc. Trong thư trang trọng và bài viết thi B2, nên tránh thành ngữ khẩu ngữ."
   - type: deep_explain
     text:
       vi: "Từ điển Đức ghi ngữ vực bằng chữ viết tắt: ugs. (umgangssprachlich), geh. (gehoben), fachspr. (fachsprachlich), salopp (suồng sã hơn ugs.), derb (thô tục). Khi học một thành ngữ mới, hãy tra luôn nhãn này. Ngữ vực không phải là đúng hay sai: kriegen hoàn toàn đúng khi nói chuyện với bạn, nhưng trong thư gửi cơ quan thì làm văn bản kém lịch sự. Ngược lại, từ quá trang trọng như erhalten hay finanzielle Mittel trong tin nhắn cho bạn bè nghe cứng nhắc, thậm chí buồn cười. Một số cặp không đồng nghĩa hoàn toàn: nachvollziehen là hiểu được lý lẽ hay cảm xúc của ai (Ich kann Ihre Entscheidung nachvollziehen), không dùng cho \"hiểu bài\"."
@@ -79,14 +79,14 @@ body:
     translation:
       vi: Hỏi tuổi bà ấy là tôi đã lỡ lời rồi.
     note:
-      vi: "Perfekt với sein vì treten là chuyển động. Nghĩa bóng: vô ý làm người khác khó chịu."
+      vi: "treten + nơi đến (ins …) chỉ chuyển động nên Perfekt với sein (khác với jemanden treten = đá ai, dùng haben). Nghĩa bóng: vô ý làm người khác khó chịu, ngượng."
   - type: example
     target: Wenn du glaubst, dass das so einfach ist, bist du auf dem Holzweg.
     target_lang: de
     translation:
       vi: Nếu cậu nghĩ chuyện đó dễ như vậy thì cậu nhầm to rồi.
     note:
-      vi: "Câu wenn đứng đầu nên bist ở vị trí 2. auf dem Holzweg sein là thành ngữ trung tính."
+      vi: "Câu wenn đứng đầu nên bist ở vị trí 2. auf dem Holzweg sein (nghĩ sai hoàn toàn) là thành ngữ trung tính, gặp cả trên báo."
   - type: example
     target: Wer Redewendungen wörtlich übersetzt, wird leicht missverstanden.
     target_lang: de
@@ -119,9 +119,9 @@ body:
     target: Sag bloß nicht, dass du schon wieder alles auf die lange Bank geschoben hast!
     target_lang: de
     translation:
-      vi: Đừng có nói là cậu lại để đấy mọi việc nữa nhé!
+      vi: Đừng có bảo là cậu lại trì hoãn hết mọi việc đấy nhé!
     note:
-      vi: "Ôn B2U04: bloß trong câu mệnh lệnh mang ý cảnh báo (đừng có mà …). etwas auf die lange Bank schieben = trì hoãn (khẩu ngữ)."
+      vi: "Ôn B2U04: bloß trong câu mệnh lệnh mang ý cảnh báo (đừng có mà …). etwas auf die lange Bank schieben = trì hoãn, để đấy mãi (ugs.)."
   - type: common_mistake
     wrong: Ich drücke dich die Daumen.
     right: Ich drücke dir die Daumen.
@@ -144,7 +144,7 @@ body:
     points:
       - vi: "Thành ngữ có nghĩa bóng; học cả cụm, chỉ chia động từ: Ich drücke dir die Daumen / Ich bin ins Fettnäpfchen getreten."
       - vi: "Khẩu ngữ: Tomaten auf den Augen haben, Schwein haben, die Nase voll haben, nur Bahnhof verstehen, kriegen, kapieren."
-      - vi: "Trung tính: den Nagel auf den Kopf treffen, auf dem Holzweg sein, die Daumen drücken, ein Auge zudrücken, zwei Fliegen mit einer Klappe schlagen."
+      - vi: "Phổ biến, nói được ở nơi làm việc (từ điển vẫn ghi ugs.): den Nagel auf den Kopf treffen, jemandem die Daumen drücken, ein Auge zudrücken, zwei Fliegen mit einer Klappe schlagen; trung tính: auf dem Holzweg sein."
       - vi: "Ngữ vực: kriegen – bekommen – erhalten; kapieren – verstehen; Kohle – Geld – finanzielle Mittel."
       - vi: "Thư trang trọng và bài viết thi: không dùng khẩu ngữ."
 exercises:
@@ -260,7 +260,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u08-g-register
     prompt:
-      template: "Sehr geehrter Herr Schmidt, haben Sie meine E-Mail vom 3. Mai {{b1}} (gehoben: e…)? Leider fehlen uns für das Projekt die finanziellen {{b2}} (= Geld)."
+      template: "Sehr geehrter Herr Schmidt, haben Sie meine E-Mail vom 3. Mai {{b1}} (förmlich: e…)? Leider fehlen uns für das Projekt die finanziellen {{b2}} (= Geld)."
       blanks:
         - { id: b1, width_hint: 9 }
         - { id: b2, width_hint: 7 }
@@ -305,18 +305,19 @@ exercises:
         - Ich drücke dir bei deiner Prüfung die Daumen!
         - Ich drücke dir fest die Daumen für die Prüfung!
         - Ich drücke dir ganz fest die Daumen für die Prüfung!
+        - Ich drück dir die Daumen für die Prüfung!
+        - Ich drück dir für die Prüfung die Daumen!
+        - Ich drücke dir für die Prüfung ganz fest die Daumen!
+        - Ich drücke dir den Daumen für die Prüfung!
     known_wrong:
       - answer: Ich drücke dich die Daumen für die Prüfung!
         feedback_vi: Người được chúc ở Dativ – dir, không phải dich.
         error_tag: case_dat_akk
       - answer: Ich drücke deine Daumen für die Prüfung!
         feedback_vi: Thành ngữ là jemandem die Daumen drücken (bấm ngón cái của mình cho ai), không phải bấm ngón cái của người kia.
-        error_tag: idiom_form
-      - answer: Ich drücke dir den Daumen für die Prüfung!
-        feedback_vi: Thành ngữ dùng số nhiều – die Daumen.
-        error_tag: plural_form
+        error_tag: word_choice
     explanation:
-      vi: "jemandem die Daumen drücken: người được chúc ở Dativ (dir), die Daumen số nhiều; dịp chúc thêm bằng für hoặc bei: für die Prüfung / bei der Prüfung."
+      vi: "jemandem die Daumen drücken: người được chúc ở Dativ (dir), thường dùng số nhiều die Daumen (từ điển cũng ghi den Daumen); dịp chúc thêm bằng für hoặc bei: für die Prüfung / bei der Prüfung."
     display_answer: Ich drücke dir die Daumen für die Prüfung!
 
   # ---------------- application ----------------
@@ -357,7 +358,7 @@ exercises:
     answer:
       correct_option_id: n7a
     explanation:
-      vi: "Mọi người gật đầu \"Đúng là thế!\" → Lan đã nói trúng vấn đề: den Nagel auf den Kopf treffen (trung tính, hợp với cuộc họp). Lan không lỡ lời, không nhờ may mắn và cũng không bỏ sót điều gì."
+      vi: "Mọi người gật đầu \"Đúng là thế!\" → Lan đã nói trúng vấn đề: den Nagel auf den Kopf treffen (rất phổ biến, nói được cả trong cuộc họp). Lan không lỡ lời, không nhờ may mắn và cũng không bỏ sót điều gì."
     display_answer: Lan hat den Nagel auf den Kopf getroffen.
 
   - key: de:exercise:b2u08l2-wb-heisser-brei

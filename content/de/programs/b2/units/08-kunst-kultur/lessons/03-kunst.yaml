@@ -59,7 +59,7 @@ body:
       vi: "Phần Dativ thường đứng trước tính từ: Der Name ist mir bekannt. Với wichtig và nützlich, cách nói với für + Akkusativ cũng đúng (Das ist für mich wichtig); với dankbar, người được cảm ơn ở Dativ, còn lý do đi với für: Ich bin Ihnen dankbar für die Führung."
   - type: explain
     text:
-      vi: "Ba tính từ đi với Genitiv, mang văn phong trang trọng: sich (Dat) einer Sache bewusst sein (ý thức được), sich einer Sache sicher sein (chắc chắn về), einer Sache würdig sein (xứng đáng với). Người ý thức ở Dativ (mir, dir, sich), sự việc ở Genitiv: Ich bin mir der Gefahr bewusst; thay cho cả câu thì dùng dessen: Ich bin mir dessen bewusst."
+      vi: "Một số ít tính từ đi với Genitiv, mang văn phong trang trọng; hay gặp nhất là: sich (Dat) einer Sache bewusst sein (ý thức được), sich einer Sache sicher sein (chắc chắn về), einer Sache würdig sein (xứng đáng với). Người ý thức ở Dativ (mir, dir, sich), sự việc ở Genitiv: Ich bin mir der Gefahr bewusst; thay cho cả câu thì dùng dessen: Ich bin mir dessen bewusst."
   - type: explain
     text:
       vi: "Số đo đứng trước tính từ chỉ kích thước, tuổi, trọng lượng ở Akkusativ: einen Meter hoch, einen Monat alt, zwei Kilo schwer. Akkusativ chỉ lộ ra ở danh từ giống đực số ít (einen Meter, einen Monat); với số nhiều thì nhìn không khác: drei Meter hoch."
@@ -84,7 +84,7 @@ body:
     target: Ich bin Ihnen sehr dankbar für die interessante Führung durch das Museum.
     target_lang: de
     translation:
-      vi: Tôi rất biết ơn anh/chị về chuyến tham quan có hướng dẫn thú vị qua bảo tàng.
+      vi: Tôi rất biết ơn anh/chị về buổi hướng dẫn tham quan bảo tàng thú vị.
     note:
       vi: "Người được cảm ơn ở Dativ (Ihnen), lý do đi với für + Akkusativ."
   - type: example
@@ -140,7 +140,7 @@ body:
     right: Ich bin mir dessen bewusst.
     target_lang: de
     note:
-      vi: "bewusst cần Genitiv: dessen (của das), der Sache, der Gefahr. Trong khẩu ngữ có thể nói Das ist mir bewusst (das làm chủ ngữ)."
+      vi: "Trong cấu trúc sich einer Sache bewusst sein, sự việc ở Genitiv: dessen (của das), der Sache, der Gefahr. Cũng đúng và rất hay gặp: Das ist mir bewusst (das làm chủ ngữ, người ở Dativ)."
   - type: common_mistake
     wrong: Die Leinwand ist ein Meter breit.
     right: Die Leinwand ist einen Meter breit.
@@ -152,7 +152,7 @@ body:
       - vi: "+ Dativ: ähnlich, bekannt, dankbar, fremd, nützlich, peinlich, wichtig – Das ist mir peinlich."
       - vi: "+ Genitiv (trang trọng): sich einer Sache bewusst/sicher sein, einer Sache würdig sein – Ich bin mir dessen bewusst."
       - vi: "+ Akkusativ (số đo): einen Meter hoch, einen Monat alt, zwei Kilo schwer."
-      - vi: "Không thêm wie/für khi tính từ đã đi với một cách (dem Original ähnlich)."
+      - vi: "Không thêm wie hay giới từ trước phần Dativ (dem Original ähnlich, không phải ähnlich wie dem Original); riêng wichtig, nützlich còn có cách nói với für + Akk (für mich wichtig)."
       - vi: "Từ vựng: die Kunst, der Künstler, das Gemälde, die Skulptur, die Epoche, zeitgenössisch, abstrakt, die Ausstellung."
 exercises:
   # ---------------- recognition ----------------
@@ -315,6 +315,8 @@ exercises:
         - Mir ist der Name des Künstlers bekannt.
         - Der Name dieses Künstlers ist mir schon bekannt.
         - Der Name des Künstlers ist mir schon bekannt.
+        - Der Name von diesem Künstler ist mir bekannt.
+        - Mir ist der Name von diesem Künstler bekannt.
     known_wrong:
       - answer: Der Name dieses Künstlers ist mich bekannt.
         feedback_vi: bekannt đi với Dativ – mir, không phải mich.
@@ -377,7 +379,6 @@ exercises:
         - Tôi hơi ngại với câu hỏi này.
         - Tôi thấy hơi ngại với câu hỏi này.
         - Tôi hơi ngại khi hỏi câu này.
-        - Câu hỏi này hơi khó nói với tôi.
         - Câu hỏi này làm tôi thấy hơi ngại.
     rubric:
       diacritics: lenient

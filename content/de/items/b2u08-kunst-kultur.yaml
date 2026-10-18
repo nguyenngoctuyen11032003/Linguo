@@ -181,7 +181,7 @@ items:
           translation:
             vi: Nhân vật quan trọng nhất là một nữ bác sĩ trẻ.
       confusion:
-        vi: "Nhân vật trong truyện là die Figur (không dùng die Person); der Charakter thường là tính cách. Trọng âm ở âm tiết sau: fi-GUR."
+        vi: "Khi phân tích truyện, nhân vật thường gọi là die Figur; der Charakter cũng gặp nhưng nghĩa chính là tính cách. Trọng âm ở âm tiết sau: fi-GUR."
 
   - key: de:item:b2u08-erzaehler
     type: vocab
@@ -422,11 +422,11 @@ items:
     difficulty: 4
     skill_tags: [grammar]
     front:
-      text: "Sprachebenen: umgangssprachlich – neutral – gehoben: kriegen – bekommen – erhalten · kapieren – verstehen – nachvollziehen · Kohle – Geld – finanzielle Mittel"
+      text: "Sprachebenen: umgangssprachlich – neutral – förmlich/gehoben: kriegen – bekommen – erhalten · kapieren – verstehen – nachvollziehen · Kohle – Geld – finanzielle Mittel"
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Cùng một ý, tiếng Đức có nhiều mức (Sprachebenen): umgangssprachlich (khẩu ngữ, với bạn bè), neutral (chuẩn, dùng được hầu hết mọi nơi), gehoben (trang trọng, văn viết, thư từ) và Fachsprache (thuật ngữ chuyên ngành). Trong thư trang trọng và bài viết thi B2, tránh từ khẩu ngữ như kriegen, kapieren, Kohle và phần lớn thành ngữ khẩu ngữ. Từ chuẩn (bekommen, verstehen, Geld) không bao giờ sai; từ trang trọng làm văn bản lịch sự, khách quan hơn."
+        vi: "Cùng một ý, tiếng Đức có nhiều mức (Sprachebenen): umgangssprachlich (khẩu ngữ, với bạn bè), neutral (chuẩn, dùng được hầu hết mọi nơi), förmlich/gehoben (trang trọng: thư từ, văn bản chính thức; nhãn geh. trong từ điển còn chỉ lối văn chương như das Antlitz) và Fachsprache (thuật ngữ chuyên ngành). Trong thư trang trọng và bài viết thi B2, tránh từ khẩu ngữ như kriegen, kapieren, Kohle và phần lớn thành ngữ khẩu ngữ. Từ chuẩn (bekommen, verstehen, Geld) hầu như chỗ nào cũng dùng được; từ trang trọng làm văn bản lịch sự, khách quan hơn."
       examples:
         - target: Hast du meine Nachricht gekriegt?
           translation:
@@ -476,11 +476,11 @@ items:
         - target: Mit der Frage nach ihrem Alter bin ich ins Fettnäpfchen getreten.
           translation:
             vi: Hỏi tuổi bà ấy là tôi đã lỡ lời rồi.
-        - target: Wer die Kultur nicht kennt, tritt leicht ins Fettnäpfchen.
+        - target: Wer die Kultur eines Landes nicht kennt, tritt leicht ins Fettnäpfchen.
           translation:
-            vi: Ai không biết văn hoá thì dễ lỡ lời, làm phật lòng người khác.
+            vi: Ai không hiểu văn hoá của một nước thì dễ lỡ lời, làm phật lòng người khác.
       confusion:
-        vi: "Perfekt với sein vì treten ở đây là chuyển động: ich bin ins Fettnäpfchen getreten. Đây là vô ý, khác với cố tình xúc phạm (jemanden beleidigen)."
+        vi: "Perfekt với sein vì treten + nơi đến (ins …) là chuyển động: ich bin ins Fettnäpfchen getreten (còn jemanden treten = đá ai thì dùng haben). Đây là vô ý, khác với cố tình xúc phạm (jemanden beleidigen)."
 
   - key: de:item:b2u08-jemandem-die-daumen-druecken
     type: phrase
@@ -488,7 +488,7 @@ items:
     difficulty: 3
     skill_tags: [vocabulary]
     front:
-      text: jemandem die Daumen drücken
+      text: jemandem die Daumen drücken (ugs.)
       pos: thành ngữ
     back:
       meaning:
@@ -501,7 +501,7 @@ items:
           translation:
             vi: Chúng tôi chúc anh/chị phỏng vấn thành công.
       confusion:
-        vi: "Người được chúc ở Dativ: dir, Ihnen (không phải dich, Sie). Thành ngữ này thân thiện nhưng không thô, nên dùng được cả với đồng nghiệp; người ta thường giơ hai nắm tay, ngón cái gập vào trong."
+        vi: "Người được chúc ở Dativ: dir, Ihnen (không phải dich, Sie). Thường nói die Daumen (từ điển cũng ghi den Daumen). Từ điển ghi ugs., nhưng thành ngữ này thân thiện, không thô, nên nói được cả với đồng nghiệp; người ta thường giơ nắm tay, ngón cái gập vào trong."
 
   - key: de:item:b2u08-schwein-haben
     type: phrase
@@ -551,7 +551,7 @@ items:
     difficulty: 4
     skill_tags: [vocabulary]
     front:
-      text: den Nagel auf den Kopf treffen, trifft, traf, hat getroffen
+      text: den Nagel auf den Kopf treffen, trifft, traf, hat getroffen (ugs.)
       pos: thành ngữ
     back:
       meaning:
@@ -564,7 +564,7 @@ items:
           translation:
             vi: "Nhà phê bình nói rất trúng: bộ phim đơn giản là quá dài."
       confusion:
-        vi: "Ngữ vực trung tính, dùng được cả trong cuộc họp và bài phê bình. Perfekt với haben: hat … getroffen."
+        vi: "Từ điển ghi ugs., nhưng thành ngữ này rất phổ biến, nói được cả trong cuộc họp và gặp trong bài phê bình báo chí; thư trang trọng thì nên tránh. Perfekt với haben: hat … getroffen."
 
   - key: de:item:b2u08-kriegen
     type: vocab
@@ -663,14 +663,14 @@ items:
       meaning:
         vi: trang trọng, văn hoa (về ngữ vực); cao cấp
       examples:
-        - target: Erhalten klingt gehobener als bekommen.
+        - target: Antlitz ist ein gehobenes Wort für Gesicht.
           translation:
-            vi: erhalten nghe trang trọng hơn bekommen.
+            vi: Antlitz là từ văn chương, trang trọng để chỉ khuôn mặt.
         - target: Das Restaurant bietet gehobene Küche.
           translation:
             vi: Nhà hàng phục vụ ẩm thực cao cấp.
       confusion:
-        vi: "Từ điển ghi geh. cho từ trang trọng. gehoben vốn là Partizip II của heben (nâng lên), nên nghĩa gốc là \"được nâng cao\"."
+        vi: "Từ điển ghi geh. cho từ mang sắc thái văn chương, trang trọng (Antlitz, entschlafen). Từ dùng trong thư từ, văn bản chính thức như erhalten thường được gọi là förmlich (trang trọng) hơn là gehoben. gehoben vốn là Partizip II của heben (nâng lên), nên nghĩa gốc là \"được nâng cao\"."
 
   - key: de:item:b2u08-erhalten
     type: vocab
@@ -712,7 +712,7 @@ items:
           translation:
             vi: Sau ba tiếng tranh luận, ai cũng chán ngấy.
       confusion:
-        vi: "Cái mình chán đi với von + Dativ: vom Regen, davon. Văn trang trọng: genug von etwas haben hoặc einer Sache überdrüssig sein."
+        vi: "Cái mình chán đi với von + Dativ: vom Regen, davon. Trung tính: genug von etwas haben; rất trang trọng, ít gặp: einer Sache (Genitiv) überdrüssig sein."
 
   - key: de:item:b2u08-nur-bahnhof-verstehen
     type: phrase
@@ -741,7 +741,7 @@ items:
     difficulty: 4
     skill_tags: [vocabulary]
     front:
-      text: ein Auge zudrücken
+      text: ein Auge zudrücken (ugs.)
       pos: thành ngữ
     back:
       meaning:
@@ -754,7 +754,7 @@ items:
           translation:
             vi: Cô giáo đã bỏ qua lỗi nhỏ đó.
       confusion:
-        vi: "zudrücken là động từ tách: ich drücke ein Auge zu; Perfekt hat … zugedrückt. Ngữ vực trung tính."
+        vi: "zudrücken là động từ tách: ich drücke ein Auge zu; Perfekt hat … zugedrückt. Từ điển ghi ugs., nhưng thành ngữ rất phổ biến, nói được cả ở nơi làm việc."
 
   - key: de:item:b2u08-um-den-heissen-brei-herumreden
     type: phrase
@@ -783,7 +783,7 @@ items:
     difficulty: 4
     skill_tags: [vocabulary]
     front:
-      text: zwei Fliegen mit einer Klappe schlagen
+      text: zwei Fliegen mit einer Klappe schlagen (ugs.)
       pos: thành ngữ
     back:
       meaning:
@@ -796,7 +796,7 @@ items:
           translation:
             vi: Chuyến đi Berlin giúp chúng tôi làm được hai việc một lúc.
       confusion:
-        vi: "Ngữ vực trung tính. Không đổi số lượng hay đồ vật trong cụm: luôn là zwei Fliegen, mit einer Klappe."
+        vi: "Từ điển ghi ugs., nhưng thành ngữ rất phổ biến, nói được cả ở nơi làm việc. Không đổi số lượng hay đồ vật trong cụm: zwei Fliegen, mit einer Klappe (die Klappe ở đây là cái vỉ đập ruồi)."
 
   - key: de:item:b2u08-auf-die-lange-bank-schieben
     type: phrase
@@ -1077,7 +1077,7 @@ items:
           translation:
             vi: Nhiếp ảnh gia chụp chân dung người cao tuổi.
       confusion:
-        vi: "Từ gốc Pháp: t cuối không đọc, trọng âm ở cuối (por-TRÄ). Chân dung tự hoạ: das Selbstporträt."
+        vi: "Từ gốc Pháp, trọng âm ở cuối (por-TRÄ), thường không đọc t cuối (số nhiều die Porträts). Từ điển cũng ghi cách đọc có t /pɔʁˈtʁɛːt/, khi đó số nhiều là die Porträte. Chân dung tự hoạ: das Selbstporträt."
 
   - key: de:item:b2u08-galerie
     type: vocab

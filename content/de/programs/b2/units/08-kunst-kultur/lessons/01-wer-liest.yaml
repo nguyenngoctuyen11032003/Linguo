@@ -59,7 +59,7 @@ body:
       vi: "Câu chính có thể nhắc lại bằng đại từ chỉ định der/den/dem ngay sau dấu phẩy, chia theo vai trò trong câu chính: Wer Hilfe braucht, dem helfen wir (helfen + Dativ). Khi hai vế cùng cách (Nom – Nom), der bỏ được: Wer viel liest, (der) weiß viel. Khi khác cách thì phải giữ: Wem das Buch gefällt, der sollte es lesen."
   - type: explain
     text:
-      vi: "Với was cũng vậy: Was mich überrascht hat, war das Ende. Vì Nominativ và Akkusativ của was/das cùng một dạng, das thường bỏ được (Was er schreibt, gefällt mir); nhưng nếu câu chính cần Dativ thì phải có dem: Was er sagt, dem stimme ich zu. Không bao giờ dùng er/sie/es để nhắc lại: Wer viel liest, er weiß viel là sai."
+      vi: "Với was cũng vậy: Was mich überrascht hat, war das Ende. Vì Nominativ và Akkusativ của was/das cùng một dạng, das bỏ được cả khi hai vế khác cách Nom/Akk (Was er schreibt, gefällt mir); nhưng nếu câu chính cần Dativ hay giới từ thì phải giữ: Was er sagt, dem stimme ich zu. Đừng dùng er/sie/es để nhắc lại: Wer viel liest, er weiß viel là sai."
   - type: explain
     text:
       vi: "Từ vựng văn học: der Roman (tiểu thuyết), die Erzählung (truyện vừa), die Kurzgeschichte (truyện ngắn), das Gedicht (bài thơ). Câu chuyện diễn ra ở đâu: Die Handlung spielt in …; nhân vật là die Figur, nhân vật chính die Hauptfigur. Người kể chuyện (der Erzähler) là một vai trong truyện, không nhất thiết là tác giả (der Autor)."
@@ -98,14 +98,14 @@ body:
     target: Alles, was die Hauptfigur erlebt, erzählt sie ihrer Schwester.
     target_lang: de
     translation:
-      vi: Mọi điều nhân vật chính trải qua, cô đều kể cho em gái.
+      vi: Mọi điều nhân vật chính trải qua, cô đều kể cho chị (em) gái mình.
     note:
-      vi: "Ôn B1: sau alles, nichts, das Beste … dùng was (alles, was …). Khác với bài này, ở đây đã có từ đứng trước là alles."
+      vi: "Ôn B1: sau alles, etwas, nichts, vieles, das Beste và tính từ so sánh nhất danh từ hoá dùng was (alles, was …). Khác với bài này, ở đây đã có từ đứng trước là alles."
   - type: example
     target: Die Autorin, deren erster Roman ein großer Erfolg war, liest heute in unserer Buchhandlung.
     target_lang: de
     translation:
-      vi: Nữ tác giả, người có cuốn tiểu thuyết đầu tay rất thành công, hôm nay đọc sách ở hiệu sách của chúng tôi.
+      vi: Nữ tác giả, người có cuốn tiểu thuyết đầu tay rất thành công, hôm nay đến đọc tác phẩm tại hiệu sách của chúng tôi.
     note:
       vi: "Ôn B2U03: deren (của bà ấy) vì danh từ đứng trước là die Autorin; danh từ Roman sau deren không có mạo từ."
   - type: example
@@ -151,7 +151,7 @@ body:
     points:
       - vi: "Wer/Was + … + động từ cuối, + (đại từ chỉ định) + động từ câu chính: Wer viel liest, (der) weiß viel."
       - vi: "Đại từ chỉ định chia theo câu chính: der (Nom), den (Akk), dem (Dat); với was: das (Nom/Akk), dem (Dat)."
-      - vi: "Cùng cách → bỏ được; khác cách → phải giữ: Wer zu spät kommt, den bestraft das Leben."
+      - vi: "Cùng cách → bỏ được; khác cách → phải giữ: Wer zu spät kommt, den bestraft das Leben. Với was, Nom và Akk cùng dạng nên das vẫn bỏ được (Was er schreibt, gefällt mir)."
       - vi: "Không dùng er/sie để nhắc lại; không mở đầu bằng der thay wer."
       - vi: "Từ vựng: die Literatur, der Roman, der Schriftsteller, das Gedicht, der Leser, die Handlung, die Figur, der Erzähler."
 exercises:
@@ -313,6 +313,8 @@ exercises:
         - Wer nicht liest, der verpasst vieles.
         - Wer keine Bücher liest, verpasst eine Menge.
         - Wer keine Bücher liest, der verpasst eine Menge.
+        - Wer keine Bücher liest, verpasst einiges.
+        - Wer keine Bücher liest, der verpasst einiges.
     known_wrong:
       - answer: Wer keine Bücher liest, er verpasst viel.
         feedback_vi: Không nhắc lại bằng er; bỏ đi hoặc dùng der.
@@ -380,11 +382,12 @@ exercises:
         - Điều làm tôi ngạc nhiên trong cuốn sách là cái kết.
         - Cái làm tôi bất ngờ ở cuốn sách là cái kết.
         - Điều đã làm tôi bất ngờ ở cuốn sách là cái kết.
+        - Điều khiến tôi bất ngờ trong cuốn sách là cái kết.
     rubric:
       diacritics: lenient
     known_wrong:
-      - answer: Cuốn sách làm tôi bất ngờ vì cái kết của nó.
-        feedback_vi: Gần nghĩa nhưng câu Đức nhấn mạnh "điều làm tôi bất ngờ … là cái kết" (Was …, war …); hãy giữ cấu trúc đó.
+      - answer: Cuốn sách không làm tôi bất ngờ, trừ cái kết.
+        feedback_vi: Câu Đức không nói phần còn lại của sách không gây bất ngờ; chỉ nói điều làm tôi bất ngờ là cái kết.
         error_tag: meaning
     explanation:
       vi: "Was mich … überrascht hat = điều làm tôi bất ngờ; an dem Buch = ở cuốn sách; war das Ende = là cái kết. was không có danh từ đứng trước, nên dịch là \"điều mà\"."

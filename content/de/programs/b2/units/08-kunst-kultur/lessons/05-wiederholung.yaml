@@ -64,12 +64,12 @@ body:
     text:
       vi: "Bài mẫu dưới đây dài khoảng 150 từ. Để ý cách nối ý: Besonders gelungen ist … (khen), Auch … (thêm ý), Was mich weniger überzeugt hat, war … (chuyển sang chê), Trotzdem … (cân bằng), Wer …, dem … (lời khuyên cho đối tượng phù hợp). Cuốn tiểu thuyết trong bài mẫu là hư cấu; khi viết về tác phẩm thật, hãy kiểm tra lại tên tác giả, năm xuất bản và tên nhân vật."
   - type: example
-    target: "In ihrem zweiten Roman erzählt die Autorin von einer jungen Frau, die nach dem Tod ihrer Großmutter in deren altes Haus an der Ostsee zieht. Dort findet sie Briefe, die ein lange gehütetes Familiengeheimnis verraten."
+    target: "In ihrem zweiten Roman „Sommer in Krummhöft“ erzählt die Hamburger Autorin Marie Ostendorf von einer jungen Frau, die nach dem Tod ihrer Großmutter in deren altes Haus an der Ostsee zieht. Dort findet sie Briefe, die ein lange gehütetes Familiengeheimnis verraten. Nach und nach muss sie sich fragen, wie gut sie ihre eigene Familie eigentlich kennt."
     target_lang: de
     translation:
-      vi: "Trong cuốn tiểu thuyết thứ hai, nữ tác giả kể về một cô gái trẻ chuyển đến ngôi nhà cũ bên bờ biển Baltic của bà mình sau khi bà qua đời. Ở đó cô tìm thấy những lá thư hé lộ một bí mật gia đình được giữ kín từ lâu."
+      vi: "Trong cuốn tiểu thuyết thứ hai „Sommer in Krummhöft“ (Mùa hè ở Krummhöft), nữ tác giả người Hamburg Marie Ostendorf kể về một cô gái trẻ chuyển đến ngôi nhà cũ bên bờ biển Baltic của bà mình sau khi bà qua đời. Ở đó cô tìm thấy những lá thư hé lộ một bí mật gia đình được giữ kín từ lâu. Dần dần cô phải tự hỏi mình thực ra hiểu gia đình mình đến đâu."
     note:
-      vi: "Bài mẫu (khoảng 150 từ, chia ba đoạn; tác phẩm hư cấu) – đoạn 1: giới thiệu và tóm tắt ở Präsens (erzählt, zieht, findet), không kể cái kết."
+      vi: "Bài mẫu (khoảng 150 từ, chia ba đoạn; tác phẩm, tác giả và địa danh Krummhöft đều hư cấu) – đoạn 1: giới thiệu (tên sách, tác giả) và tóm tắt ở Präsens (erzählt, zieht, findet), không kể cái kết."
   - type: example
     target: "Besonders gelungen ist die Sprache: Die Autorin beschreibt die Landschaft so genau, dass man das Meer fast riechen kann. Auch die Hauptfigur wirkt lebendig und glaubwürdig. Was mich weniger überzeugt hat, war der Mittelteil. Hier wird die Handlung etwas langatmig, und manche Entwicklungen sind leider vorhersehbar. Außerdem hätte ich mir ein mutigeres Ende gewünscht."
     target_lang: de
@@ -337,7 +337,6 @@ exercises:
         - Ich würde eher von diesem Film abraten.
         - Von diesem Film kann ich nur abraten.
         - Ich kann von diesem Film nur abraten.
-        - Ich kann nur von diesem Film abraten.
         - Von diesem Film rate ich ab.
         - Ich rate von diesem Film ab.
         - Von dem Film würde ich eher abraten.

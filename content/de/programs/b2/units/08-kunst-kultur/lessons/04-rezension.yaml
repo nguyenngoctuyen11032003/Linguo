@@ -294,7 +294,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u08-g-bewerten-redemittel
     prompt:
-      template: "Das Stück {{b1}} (leben) von seinen starken Schauspielern. Von der neuen Inszenierung kann ich aber nur {{b2}} (ab…)."
+      template: "Der erste Film {{b1}} (leben) von seinen starken Schauspielern. Von der Fortsetzung kann ich aber nur {{b2}} (ab…)."
       blanks:
         - { id: b1, width_hint: 6 }
         - { id: b2, width_hint: 9 }
@@ -304,7 +304,7 @@ exercises:
         b2: [abraten]
     known_wrong:
       - answer: leben
-        feedback_vi: Chủ ngữ là das Stück (số ít) → lebt.
+        feedback_vi: Chủ ngữ là der erste Film (số ít) → lebt.
         error_tag: verb_conjugation
       - answer: abgeraten
         feedback_vi: Sau động từ khuyết thiếu kann cần nguyên thể – abraten.
@@ -313,8 +313,8 @@ exercises:
         feedback_vi: Sau kann cần nguyên thể ở cuối câu – abraten.
         error_tag: verb_form
     explanation:
-      vi: "Ô 1: leben von + Dativ (bộ phim/vở kịch hấp dẫn nhờ …), chủ ngữ das Stück → lebt. Ô 2: von + Dativ đi với abraten; sau kann động từ ở dạng nguyên thể cuối câu: kann … nur abraten."
-    display_answer: "Das Stück lebt von seinen starken Schauspielern. Von der neuen Inszenierung kann ich aber nur abraten."
+      vi: "Ô 1: leben von + Dativ (bộ phim hấp dẫn nhờ …), chủ ngữ der erste Film → lebt. Ô 2: abraten đi với von + Dativ (von der Fortsetzung = phần tiếp theo); sau kann động từ ở dạng nguyên thể cuối câu: kann … nur abraten."
+    display_answer: "Der erste Film lebt von seinen starken Schauspielern. Von der Fortsetzung kann ich aber nur abraten."
 
   - key: de:exercise:b2u08l4-tr-nur-empfehlen
     type: translate
