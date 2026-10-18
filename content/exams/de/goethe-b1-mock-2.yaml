@@ -1,0 +1,701 @@
+# Bài luyện mô phỏng theo phong cách Goethe-Zertifikat B1 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề
+# thi của Goethe-Institut, không chép đề thật. Số câu, thời lượng và thang điểm của kỳ thi thật chưa được đối chiếu
+# (syllabus §5.6, "to be verified"): thời gian là gợi ý luyện tập của Linguo, ngưỡng 60% do Linguo tự đặt.
+# Chủ đề (khác đề số 1): nhà ở và hàng xóm, sức khỏe và thể thao, công việc và đào tạo, sự kiện văn hóa, sự cố khi
+# đi lại, bảo vệ môi trường tại nhà. Mọi tên người, tên nơi chốn là hư cấu.
+schema_version: 1
+demo: false
+language: de
+form:
+  key: de:exam:goethe-b1-mock-2
+  family: goethe
+  title_vi: Goethe B1 — Bài luyện mô phỏng số 2
+  description_vi: >-
+    Bài luyện tự soạn mô phỏng phong cách Goethe-Zertifikat B1: 12 câu nghe, 12 câu đọc, 1 email thân mật, 1 bài
+    đăng diễn đàn và 1 tin nhắn trang trọng. Đây không phải đề thi chính thức và không chép đề thật; số câu, thời gian
+    làm bài (gợi ý luyện tập của Linguo) và ngưỡng đạt không trùng với quy chế của kỳ thi thật.
+  level_from: a2
+  level_to: b1
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 30
+    reading: 45
+    writing: 60
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng đạt (đúng từ 60% số điểm mỗi phần) do Linguo tự đặt để luyện tập, không phải quy định chấm điểm chính thức
+      của Goethe-Institut; thang điểm, số câu và thời lượng của kỳ thi thật chưa được đối chiếu. Bài viết không được
+      chấm tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-18T12:00:00+07:00"
+questions:
+  # ============================== HÖREN (Nghe) ==============================
+  - key: de:examq:goethe-b1-m2-l01
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was passiert am Donnerstag?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, Frau Kowalski, hier spricht Herr Brandt von der Hausverwaltung. Am Donnerstag bekommt Ihr Haus neue Wasserleitungen. Deshalb gibt es an diesem Tag von 9 bis 15 Uhr kein Wasser. Am besten füllen Sie vorher ein paar Flaschen ab. Der Aufzug funktioniert ganz normal. Bei Fragen erreichen Sie mich bis Mittwoch im Büro.
+      options:
+        - { id: a, text: "Der Aufzug wird repariert.", lang: de }
+        - { id: b, text: "Ein paar Stunden lang gibt es kein Wasser.", lang: de }
+        - { id: c, text: "Herr Brandt kommt in die Wohnung von Frau Kowalski.", lang: de }
+    answer: b
+    explanation:
+      vi: "Ông Brandt báo thứ Năm thay ống nước nên “von 9 bis 15 Uhr kein Wasser” (mất nước vài tiếng). Thang máy vẫn chạy bình thường (“funktioniert ganz normal”), không bị sửa; tin nhắn không nói ông Brandt sẽ vào căn hộ, ông chỉ nói có thể gọi đến văn phòng trước thứ Tư."
+
+  - key: de:examq:goethe-b1-m2-l02
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo ở nhà ga và chọn đáp án đúng cho câu hỏi.
+      stem: Was sollen die Fahrgäste nach Bergheim machen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Meine Damen und Herren, wegen einer Störung auf der Strecke fällt der Regionalzug nach Bergheim um 14:20 Uhr heute leider aus. Fahrgäste nach Bergheim nehmen bitte den Ersatzbus. Er fährt um 14:35 Uhr vor dem Haupteingang ab. Ihre Fahrkarten gelten auch im Bus. Wir bitten um Ihr Verständnis.
+      options:
+        - { id: a, text: "Sie sollen auf den nächsten Zug um 14:35 Uhr warten.", lang: de }
+        - { id: b, text: "Sie sollen eine neue Fahrkarte kaufen.", lang: de }
+        - { id: c, text: "Sie sollen mit dem Ersatzbus fahren.", lang: de }
+    answer: c
+    explanation:
+      vi: "Tàu đi Bergheim bị hủy (“fällt … aus”), hành khách được yêu cầu đi xe buýt thay thế (“nehmen bitte den Ersatzbus”). 14:35 là giờ xe buýt chạy, không phải giờ của một chuyến tàu khác; vé cũ vẫn dùng được trên xe buýt (“Ihre Fahrkarten gelten auch im Bus”), nên không cần mua vé mới."
+
+  - key: de:examq:goethe-b1-m2-l03
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was ist morgen beim Lauftreff anders als sonst?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Hallo Jana, hier ist Mehmet vom Lauftreff. Du, morgen laufen wir nicht wie immer im Stadtpark, weil dort ein Fest aufgebaut wird. Wir treffen uns stattdessen am Sportplatz hinter der Schule. Die Uhrzeit bleibt gleich, also 18 Uhr. Und vergiss nicht, genug zu trinken mitzubringen. Morgen soll es sehr warm werden. Bis morgen!
+      options:
+        - { id: a, text: "Die Gruppe trifft sich an einem anderen Ort.", lang: de }
+        - { id: b, text: "Die Gruppe trifft sich später.", lang: de }
+        - { id: c, text: "Das Training fällt wegen der Hitze aus.", lang: de }
+    answer: a
+    explanation:
+      vi: "Ngày mai nhóm chạy không gặp ở công viên như mọi khi mà ở sân thể thao sau trường (“stattdessen am Sportplatz hinter der Schule”): đổi địa điểm. Giờ vẫn giữ nguyên (“Die Uhrzeit bleibt gleich”); trời nóng chỉ là lý do để nhắc mang đủ nước, buổi tập không bị hủy."
+
+  - key: de:examq:goethe-b1-m2-l04
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo trong nhà hát và chọn câu đúng.
+      stem: Was ist richtig?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Liebe Besucherinnen und Besucher, wegen eines technischen Problems beginnt die Vorstellung heute etwa eine Viertelstunde später, also erst um 20:15 Uhr. Dafür wird die Pause etwas kürzer. Getränke bekommen Sie bis zum Beginn an der Bar im ersten Stock. Bitte schalten Sie während der Vorstellung Ihre Handys aus. Vielen Dank!
+      options:
+        - { id: a, text: "Die Vorstellung beginnt später als geplant.", lang: de }
+        - { id: b, text: "Heute gibt es keine Pause.", lang: de }
+        - { id: c, text: "Während der Vorstellung kann man an der Bar Getränke kaufen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Vì sự cố kỹ thuật, buổi diễn bắt đầu muộn khoảng 15 phút (“eine Viertelstunde später”, lúc 20:15). Giờ nghỉ giữa buổi chỉ ngắn hơn (“etwas kürzer”), không bị bỏ; quầy bar chỉ bán đồ uống đến lúc bắt đầu (“bis zum Beginn”), không phải trong lúc diễn."
+
+  - key: de:examq:goethe-b1-m2-l05
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo ở sân bay và chọn đáp án đúng cho câu hỏi.
+      stem: Wo bekommen die Fluggäste ihr Gepäck?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Eine Information für die Fluggäste aus Porto: Wegen eines technischen Problems kommt Ihr Gepäck heute nicht an Band 4, sondern an Band 7 an. Das dauert noch etwa 20 Minuten. Wenn Ihr Koffer danach fehlt, melden Sie sich bitte am Gepäckschalter neben dem Ausgang B. Wir bitten um Entschuldigung.
+      options:
+        - { id: a, text: "an Band 4", lang: de }
+        - { id: b, text: "an Band 7", lang: de }
+        - { id: c, text: "am Ausgang B", lang: de }
+    answer: b
+    explanation:
+      vi: "“Nicht an Band 4, sondern an Band 7”: hôm nay hành lý ra ở băng chuyền số 7, không phải số 4 như thường lệ. Lối ra B là nơi có quầy hành lý, chỉ đến đó nếu vali bị thiếu (“Wenn Ihr Koffer danach fehlt”), không phải nơi nhận hành lý."
+
+  - key: de:examq:goethe-b1-m2-l06
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo tại lễ hội phố cổ và chọn đáp án đúng cho câu hỏi.
+      stem: Wo findet das Konzert heute statt?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Herzlich willkommen beim Altstadtfest! Ein kurzer Hinweis zum Programm: Wegen des Regens findet das Konzert heute nicht auf dem Marktplatz statt, sondern in der Stadthalle. Der Eintritt bleibt frei. Der Flohmarkt am Fluss beginnt wie geplant um 11 Uhr, und Kinder können im Zelt neben dem Rathaus malen. Viel Spaß!
+      options:
+        - { id: a, text: "auf dem Marktplatz", lang: de }
+        - { id: b, text: "in der Stadthalle", lang: de }
+        - { id: c, text: "am Fluss", lang: de }
+    answer: b
+    explanation:
+      vi: "Vì trời mưa, buổi hòa nhạc chuyển từ quảng trường chợ vào hội trường thành phố (“nicht auf dem Marktplatz …, sondern in der Stadthalle”). Quảng trường là địa điểm ban đầu; bờ sông là nơi họp chợ đồ cũ (“Flohmarkt am Fluss”), không phải nơi hòa nhạc."
+
+  - key: de:examq:goethe-b1-m2-l07
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_truefalse
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại giữa hai người hàng xóm và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Die Müllabfuhr nimmt die Papiertonne manchmal nicht mit.
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Guten Abend, Herr Weber. Haben Sie kurz Zeit? Es geht um die Mülltonnen.
+        Mann: Natürlich, Frau Schulz. Gibt es ein Problem?
+        Frau: Ja, in der Papiertonne liegen oft Plastikflaschen. Dann nimmt die Müllabfuhr die Tonne nicht mit.
+        Mann: Ach, das wusste ich nicht. Ich glaube, das sind die neuen Mieter im dritten Stock.
+        Frau: Könnten wir zusammen einen Zettel im Treppenhaus aufhängen?
+        Mann: Gute Idee. Ich schreibe ihn heute Abend und hänge ihn morgen früh auf.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "Bà Schulz nói trong thùng giấy thường có chai nhựa, “Dann nimmt die Müllabfuhr die Tonne nicht mit”: khi đó xe rác không lấy thùng đi. Vì chuyện này xảy ra mỗi khi có chai nhựa (“oft”), nên câu “manchmal nicht mit” (đôi khi không lấy) là đúng."
+
+  - key: de:examq:goethe-b1-m2-l08
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wer wirft nach Meinung von Herrn Weber Plastik in die Papiertonne?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Guten Abend, Herr Weber. Haben Sie kurz Zeit? Es geht um die Mülltonnen.
+        Mann: Natürlich, Frau Schulz. Gibt es ein Problem?
+        Frau: Ja, in der Papiertonne liegen oft Plastikflaschen. Dann nimmt die Müllabfuhr die Tonne nicht mit.
+        Mann: Ach, das wusste ich nicht. Ich glaube, das sind die neuen Mieter im dritten Stock.
+        Frau: Könnten wir zusammen einen Zettel im Treppenhaus aufhängen?
+        Mann: Gute Idee. Ich schreibe ihn heute Abend und hänge ihn morgen früh auf.
+      options:
+        - { id: a, text: "Frau Schulz", lang: de }
+        - { id: b, text: "die neuen Mieter im dritten Stock", lang: de }
+        - { id: c, text: "die Müllabfuhr", lang: de }
+    answer: b
+    explanation:
+      vi: "Ông Weber đoán: “Ich glaube, das sind die neuen Mieter im dritten Stock” (chắc là những người thuê mới ở tầng ba). Bà Schulz là người phát hiện và phàn nàn về chuyện này; đội thu gom rác (“Müllabfuhr”) chỉ là bên không chịu lấy thùng rác."
+
+  - key: de:examq:goethe-b1-m2-l09
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was macht Herr Weber morgen früh?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Guten Abend, Herr Weber. Haben Sie kurz Zeit? Es geht um die Mülltonnen.
+        Mann: Natürlich, Frau Schulz. Gibt es ein Problem?
+        Frau: Ja, in der Papiertonne liegen oft Plastikflaschen. Dann nimmt die Müllabfuhr die Tonne nicht mit.
+        Mann: Ach, das wusste ich nicht. Ich glaube, das sind die neuen Mieter im dritten Stock.
+        Frau: Könnten wir zusammen einen Zettel im Treppenhaus aufhängen?
+        Mann: Gute Idee. Ich schreibe ihn heute Abend und hänge ihn morgen früh auf.
+      options:
+        - { id: a, text: "Er hängt einen Zettel im Treppenhaus auf.", lang: de }
+        - { id: b, text: "Er spricht mit den neuen Mietern.", lang: de }
+        - { id: c, text: "Er schreibt einen Zettel.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Ich schreibe ihn heute Abend und hänge ihn morgen früh auf”: tối nay ông viết tờ thông báo, sáng mai mới dán lên ở cầu thang. Phương án c là bẫy vì việc viết làm vào tối nay, không phải sáng mai; ông không nói sẽ nói chuyện trực tiếp với người thuê mới."
+
+  - key: de:examq:goethe-b1-m2-l10
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn thảo luận trên radio về đào tạo nâng cao và chọn người nói phù hợp với ý kiến.
+      stem: Wer ist der Meinung, dass die Arbeitgeber mehr für die Weiterbildung tun sollten?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Heute geht es um Weiterbildung im Beruf. Herr Lorenz, Sie haben neben der Arbeit einen Abendkurs gemacht.
+        Herr Lorenz: Ja, zwei Jahre lang, dreimal pro Woche. Das war anstrengend, aber es hat sich gelohnt: Ich verdiene jetzt mehr.
+        Moderatorin: Frau Hartmann, Sie leiten eine Personalabteilung. Wie sehen Sie das?
+        Frau Hartmann: Weiterbildung ist wichtig. Aber die Firmen sollten die Kurse bezahlen und die Mitarbeiter dafür auch mal früher gehen lassen.
+      options:
+        - { id: a, text: "die Moderatorin", lang: de }
+        - { id: b, text: "Herr Lorenz", lang: de }
+        - { id: c, text: "Frau Hartmann", lang: de }
+    answer: c
+    explanation:
+      vi: "Bà Hartmann nói “die Firmen sollten die Kurse bezahlen …”: các công ty nên trả tiền khóa học và cho nhân viên về sớm để đi học, tức là chủ lao động nên làm nhiều hơn. Ông Lorenz chỉ kể kinh nghiệm của mình; người dẫn chương trình chỉ đặt câu hỏi, không nêu ý kiến."
+
+  - key: de:examq:goethe-b1-m2-l11
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn thảo luận và chọn đáp án đúng cho câu hỏi.
+      stem: Wie beurteilt Herr Lorenz seinen Abendkurs?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Heute geht es um Weiterbildung im Beruf. Herr Lorenz, Sie haben neben der Arbeit einen Abendkurs gemacht.
+        Herr Lorenz: Ja, zwei Jahre lang, dreimal pro Woche. Das war anstrengend, aber es hat sich gelohnt: Ich verdiene jetzt mehr.
+        Moderatorin: Frau Hartmann, Sie leiten eine Personalabteilung. Wie sehen Sie das?
+        Frau Hartmann: Weiterbildung ist wichtig. Aber die Firmen sollten die Kurse bezahlen und die Mitarbeiter dafür auch mal früher gehen lassen.
+      options:
+        - { id: a, text: "Der Kurs war anstrengend, aber er hat sich gelohnt.", lang: de }
+        - { id: b, text: "Der Kurs war leicht, weil er nur einmal pro Woche war.", lang: de }
+        - { id: c, text: "Er hat den Kurs nach einem Jahr abgebrochen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Ông Lorenz nói “Das war anstrengend, aber es hat sich gelohnt”: vất vả nhưng đáng công, vì giờ ông có thu nhập cao hơn. Khóa học diễn ra ba buổi mỗi tuần (“dreimal pro Woche”), không phải một buổi; ông học suốt hai năm (“zwei Jahre lang”), không bỏ dở sau một năm."
+
+  - key: de:examq:goethe-b1-m2-l12
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn thảo luận và chọn đáp án đúng cho câu hỏi.
+      stem: Was sollen die Firmen nach Meinung von Frau Hartmann außer den Kurskosten noch tun?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Heute geht es um Weiterbildung im Beruf. Herr Lorenz, Sie haben neben der Arbeit einen Abendkurs gemacht.
+        Herr Lorenz: Ja, zwei Jahre lang, dreimal pro Woche. Das war anstrengend, aber es hat sich gelohnt: Ich verdiene jetzt mehr.
+        Moderatorin: Frau Hartmann, Sie leiten eine Personalabteilung. Wie sehen Sie das?
+        Frau Hartmann: Weiterbildung ist wichtig. Aber die Firmen sollten die Kurse bezahlen und die Mitarbeiter dafür auch mal früher gehen lassen.
+      options:
+        - { id: a, text: "Sie sollen allen Mitarbeitern mehr Lohn zahlen.", lang: de }
+        - { id: b, text: "Sie sollen die Mitarbeiter für die Kurse manchmal früher Feierabend machen lassen.", lang: de }
+        - { id: c, text: "Sie sollen selbst Abendkurse anbieten.", lang: de }
+    answer: b
+    explanation:
+      vi: "Ngoài việc trả tiền khóa học, bà Hartmann muốn công ty “die Mitarbeiter dafür auch mal früher gehen lassen”: thỉnh thoảng cho nhân viên về sớm để đi học. Tăng lương cho mọi người là bẫy từ câu của ông Lorenz (“Ich verdiene jetzt mehr”); bà không nói công ty tự mở lớp buổi tối."
+
+  # ============================== LESEN (Đọc) ==============================
+  - key: de:examq:goethe-b1-m2-r01
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Was schreibt Tobias über seine neue Wohnung?
+      stem_lang: de
+      passage: |-
+        Liebe Clara,
+        endlich habe ich Zeit, dir zu schreiben! Seit drei Wochen wohne ich jetzt in Lindenau. Die Wohnung ist kleiner als meine alte, aber sie hat einen Balkon und ist viel ruhiger. Am Anfang kannte ich niemanden im Haus. Dann hat meine Nachbarin Frau Albers ein Hoffest organisiert, und jetzt grüßen mich alle. Nur der Weg zur Arbeit ist leider länger: Mit dem Bus brauche ich 40 Minuten. Besuchst du mich bald?
+        Viele Grüße
+        Tobias
+      options:
+        - { id: a, text: "Sie ist ruhiger als seine alte Wohnung.", lang: de }
+        - { id: b, text: "Sie ist größer als seine alte Wohnung.", lang: de }
+        - { id: c, text: "Sie hat leider keinen Balkon.", lang: de }
+    answer: a
+    explanation:
+      vi: "Tobias viết căn hộ mới “kleiner als meine alte, aber … viel ruhiger”: nhỏ hơn nhưng yên tĩnh hơn nhiều. Phương án b ngược nghĩa (kleiner = nhỏ hơn, không phải größer = lớn hơn); phương án c sai vì căn hộ có ban công (“sie hat einen Balkon”)."
+
+  - key: de:examq:goethe-b1-m2-r02
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Wie hat Tobias die Leute im Haus kennengelernt?
+      stem_lang: de
+      passage: |-
+        Liebe Clara,
+        endlich habe ich Zeit, dir zu schreiben! Seit drei Wochen wohne ich jetzt in Lindenau. Die Wohnung ist kleiner als meine alte, aber sie hat einen Balkon und ist viel ruhiger. Am Anfang kannte ich niemanden im Haus. Dann hat meine Nachbarin Frau Albers ein Hoffest organisiert, und jetzt grüßen mich alle. Nur der Weg zur Arbeit ist leider länger: Mit dem Bus brauche ich 40 Minuten. Besuchst du mich bald?
+        Viele Grüße
+        Tobias
+      options:
+        - { id: a, text: "auf einem Fest, das eine Nachbarin organisiert hat", lang: de }
+        - { id: b, text: "auf einer Party, die er selbst gemacht hat", lang: de }
+        - { id: c, text: "Die Nachbarn haben ihm beim Umzug geholfen.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Dann hat meine Nachbarin Frau Albers ein Hoffest organisiert, und jetzt grüßen mich alle”: bà hàng xóm Albers tổ chức một buổi tiệc ngoài sân, từ đó mọi người đều chào anh. Tobias không tự tổ chức tiệc, và email không nhắc đến chuyện hàng xóm giúp chuyển nhà."
+
+  - key: de:examq:goethe-b1-m2-r03
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Was ist für Tobias ein Nachteil der neuen Wohnung?
+      stem_lang: de
+      passage: |-
+        Liebe Clara,
+        endlich habe ich Zeit, dir zu schreiben! Seit drei Wochen wohne ich jetzt in Lindenau. Die Wohnung ist kleiner als meine alte, aber sie hat einen Balkon und ist viel ruhiger. Am Anfang kannte ich niemanden im Haus. Dann hat meine Nachbarin Frau Albers ein Hoffest organisiert, und jetzt grüßen mich alle. Nur der Weg zur Arbeit ist leider länger: Mit dem Bus brauche ich 40 Minuten. Besuchst du mich bald?
+        Viele Grüße
+        Tobias
+      options:
+        - { id: a, text: "Er braucht länger zur Arbeit.", lang: de }
+        - { id: b, text: "Die Nachbarn sind unfreundlich.", lang: de }
+        - { id: c, text: "Es ist dort sehr laut.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Nur der Weg zur Arbeit ist leider länger”: điều bất tiện duy nhất Tobias than là đường đi làm xa hơn (40 phút đi xe buýt); “leider” báo hiệu nhược điểm. Hàng xóm thân thiện (“jetzt grüßen mich alle”), và căn hộ yên tĩnh hơn (“viel ruhiger”), không ồn."
+
+  - key: de:examq:goethe-b1-m2-r04
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gist
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo ngắn và chọn chủ đề chính của bài.
+      stem: Worum geht es in dem Text?
+      stem_lang: de
+      passage: |-
+        Treppe statt Aufzug
+        Viele Menschen sitzen den ganzen Tag: im Büro, im Auto und am Abend vor dem Fernseher. Ärztinnen und Ärzte empfehlen deshalb mehr Bewegung im Alltag. Dafür muss man nicht ins Fitnessstudio gehen. Schon kleine Änderungen helfen: die Treppe nehmen, mit dem Rad zur Arbeit fahren oder in der Mittagspause spazieren gehen. In einer Firma in Hellbach turnen alle seit einem Jahr jeden Morgen zehn Minuten. Seitdem haben weniger Mitarbeiter Rückenschmerzen.
+      options:
+        - { id: a, text: "um mehr Bewegung im Alltag", lang: de }
+        - { id: b, text: "um die Preise in Fitnessstudios", lang: de }
+        - { id: c, text: "um neue Aufzüge in Bürohäusern", lang: de }
+    answer: a
+    explanation:
+      vi: "Cả bài khuyên vận động nhiều hơn trong sinh hoạt hằng ngày (“mehr Bewegung im Alltag”) bằng những thay đổi nhỏ như đi cầu thang, đạp xe, đi dạo. Phòng tập thể hình chỉ được nhắc để nói là không cần đến đó, không nói gì về giá; thang máy chỉ xuất hiện trong tiêu đề “Treppe statt Aufzug” (cầu thang thay cho thang máy)."
+
+  - key: de:examq:goethe-b1-m2-r05
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại bài báo và chọn câu đúng theo nội dung bài.
+      stem: Was ist richtig?
+      stem_lang: de
+      passage: |-
+        Treppe statt Aufzug
+        Viele Menschen sitzen den ganzen Tag: im Büro, im Auto und am Abend vor dem Fernseher. Ärztinnen und Ärzte empfehlen deshalb mehr Bewegung im Alltag. Dafür muss man nicht ins Fitnessstudio gehen. Schon kleine Änderungen helfen: die Treppe nehmen, mit dem Rad zur Arbeit fahren oder in der Mittagspause spazieren gehen. In einer Firma in Hellbach turnen alle seit einem Jahr jeden Morgen zehn Minuten. Seitdem haben weniger Mitarbeiter Rückenschmerzen.
+      options:
+        - { id: a, text: "Man kann sich auch ohne Fitnessstudio mehr bewegen.", lang: de }
+        - { id: b, text: "Ärzte empfehlen, jeden Tag ins Fitnessstudio zu gehen.", lang: de }
+        - { id: c, text: "Nur große Änderungen im Alltag helfen wirklich.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Dafür muss man nicht ins Fitnessstudio gehen. Schon kleine Änderungen helfen”: không cần đến phòng tập, chỉ những thay đổi nhỏ cũng có ích. Phương án b ngược với câu đó; phương án c ngược với “Schon kleine Änderungen helfen” (chỉ thay đổi nhỏ thôi cũng đã có tác dụng)."
+
+  - key: de:examq:goethe-b1-m2-r06
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: Was hat sich in der Firma in Hellbach verändert?
+      stem_lang: de
+      passage: |-
+        Treppe statt Aufzug
+        Viele Menschen sitzen den ganzen Tag: im Büro, im Auto und am Abend vor dem Fernseher. Ärztinnen und Ärzte empfehlen deshalb mehr Bewegung im Alltag. Dafür muss man nicht ins Fitnessstudio gehen. Schon kleine Änderungen helfen: die Treppe nehmen, mit dem Rad zur Arbeit fahren oder in der Mittagspause spazieren gehen. In einer Firma in Hellbach turnen alle seit einem Jahr jeden Morgen zehn Minuten. Seitdem haben weniger Mitarbeiter Rückenschmerzen.
+      options:
+        - { id: a, text: "Weniger Mitarbeiter haben Rückenschmerzen.", lang: de }
+        - { id: b, text: "Alle Mitarbeiter fahren jetzt mit dem Rad zur Arbeit.", lang: de }
+        - { id: c, text: "Die Mittagspause ist zehn Minuten länger.", lang: de }
+    answer: a
+    explanation:
+      vi: "Ở công ty tại Hellbach, mọi người tập thể dục 10 phút mỗi sáng, và “Seitdem haben weniger Mitarbeiter Rückenschmerzen” (từ đó ít nhân viên bị đau lưng hơn). Đạp xe đi làm chỉ là một gợi ý chung của bài; “zehn Minuten” là thời gian tập buổi sáng, không phải giờ nghỉ trưa dài thêm."
+
+  - key: de:examq:goethe-b1-m2-r07
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc các mẩu quảng cáo A–E và chọn mẩu phù hợp với người được mô tả.
+      stem: Herr Nowak möchte am Wochenende mit seiner Enkelin (5 Jahre) etwas unternehmen. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A  Stadtmuseum: Ausstellung „Alte Berufe“, Montag bis Freitag 10–17 Uhr, Führungen für Gruppen nach Anmeldung.
+        B  Kino am Kanal: Filme im Original mit deutschen Untertiteln, jeden Mittwoch um 20 Uhr.
+        C  Bildungszentrum Nord: Kurs „Bewerbungen schreiben“, an drei Samstagen von 9 bis 13 Uhr.
+        D  Chor „Hellbacher Stimmen“ sucht neue Mitglieder. Probe montags um 19 Uhr, keine Vorkenntnisse nötig.
+        E  Theater im Hof: Kindertheater „Der kleine Drache“, sonntags um 15 Uhr, für Kinder ab 4 Jahren.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige C", lang: de }
+        - { id: c, text: "Anzeige D", lang: de }
+        - { id: d, text: "Anzeige E", lang: de }
+    answer: d
+    explanation:
+      vi: "Mẩu E là kịch thiếu nhi vào chiều Chủ nhật, cho trẻ từ 4 tuổi: hợp với ông Nowak và cháu gái 5 tuổi vào cuối tuần. Bảo tàng (A) chỉ mở từ thứ Hai đến thứ Sáu; khóa học thứ Bảy (C) là lớp viết hồ sơ xin việc cho người lớn; dàn hợp xướng (D) tập tối thứ Hai."
+
+  - key: de:examq:goethe-b1-m2-r08
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc các mẩu quảng cáo A–E và chọn mẩu phù hợp với người được mô tả.
+      stem: Ayşe singt gern, hat aber noch nie in einer Gruppe gesungen. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A  Stadtmuseum: Ausstellung „Alte Berufe“, Montag bis Freitag 10–17 Uhr, Führungen für Gruppen nach Anmeldung.
+        B  Kino am Kanal: Filme im Original mit deutschen Untertiteln, jeden Mittwoch um 20 Uhr.
+        C  Bildungszentrum Nord: Kurs „Bewerbungen schreiben“, an drei Samstagen von 9 bis 13 Uhr.
+        D  Chor „Hellbacher Stimmen“ sucht neue Mitglieder. Probe montags um 19 Uhr, keine Vorkenntnisse nötig.
+        E  Theater im Hof: Kindertheater „Der kleine Drache“, sonntags um 15 Uhr, für Kinder ab 4 Jahren.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige D", lang: de }
+        - { id: d, text: "Anzeige E", lang: de }
+    answer: c
+    explanation:
+      vi: "Mẩu D: dàn hợp xướng tìm thành viên mới, “keine Vorkenntnisse nötig” (không cần kinh nghiệm), hợp với Ayşe thích hát nhưng chưa từng hát theo nhóm. Mẩu A có từ “Gruppen” nhưng là tham quan bảo tàng theo đoàn; B là chiếu phim, E là kịch thiếu nhi, đều không phải để hát."
+
+  - key: de:examq:goethe-b1-m2-r09
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc các mẩu quảng cáo A–E và chọn mẩu phù hợp với người được mô tả.
+      stem: Pablo sucht eine neue Stelle und möchte lernen, wie man gute Bewerbungen schreibt. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A  Stadtmuseum: Ausstellung „Alte Berufe“, Montag bis Freitag 10–17 Uhr, Führungen für Gruppen nach Anmeldung.
+        B  Kino am Kanal: Filme im Original mit deutschen Untertiteln, jeden Mittwoch um 20 Uhr.
+        C  Bildungszentrum Nord: Kurs „Bewerbungen schreiben“, an drei Samstagen von 9 bis 13 Uhr.
+        D  Chor „Hellbacher Stimmen“ sucht neue Mitglieder. Probe montags um 19 Uhr, keine Vorkenntnisse nötig.
+        E  Theater im Hof: Kindertheater „Der kleine Drache“, sonntags um 15 Uhr, für Kinder ab 4 Jahren.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: c
+    explanation:
+      vi: "Mẩu C là khóa học “Bewerbungen schreiben” (viết hồ sơ xin việc), đúng điều Pablo cần. Mẩu A là bẫy vì có chữ “Berufe” (nghề nghiệp), nhưng đó là triển lãm về các nghề xưa; mẩu B chiếu phim có phụ đề tiếng Đức, có thể giúp học tiếng nhưng không dạy viết hồ sơ."
+
+  - key: de:examq:goethe-b1-m2-r10
+    section: reading
+    kind: mcq
+    question_type: goethe_read_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc các bình luận trên diễn đàn và chọn người có ý kiến phù hợp.
+      stem: Wer meint, dass vor allem eine andere Person etwas ändern muss?
+      stem_lang: de
+      passage: |-
+        Wie spart ihr zu Hause Energie?
+        Mira: Ich wasche nur noch mit 30 Grad und trockne die Wäsche auf dem Balkon. Einen Trockner brauche ich nicht.
+        Jonas: Ehrlich gesagt mache ich nicht viel. Meine Fenster sind so alt, dass die Wärme sowieso verloren geht. Da muss zuerst mein Vermieter etwas tun.
+        Elif: Wir haben alle Lampen gegen LED-Lampen getauscht. Und abends schalten wir den Fernseher und den Computer ganz aus und ziehen die Stecker.
+      options:
+        - { id: a, text: "Mira", lang: de }
+        - { id: b, text: "Jonas", lang: de }
+        - { id: c, text: "Elif", lang: de }
+    answer: b
+    explanation:
+      vi: "Jonas thừa nhận mình không làm gì nhiều vì cửa sổ quá cũ, và “Da muss zuerst mein Vermieter etwas tun”: trước hết chủ nhà phải làm gì đó. Mira và Elif đều kể những việc chính họ đang làm để tiết kiệm năng lượng (giặt 30 độ, phơi đồ; đổi đèn LED, tắt hẳn tivi và máy tính)."
+
+  - key: de:examq:goethe-b1-m2-r11
+    section: reading
+    kind: mcq
+    question_type: goethe_read_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại các bình luận và chọn đáp án đúng cho câu hỏi.
+      stem: Was macht Elif, um Energie zu sparen?
+      stem_lang: de
+      passage: |-
+        Wie spart ihr zu Hause Energie?
+        Mira: Ich wasche nur noch mit 30 Grad und trockne die Wäsche auf dem Balkon. Einen Trockner brauche ich nicht.
+        Jonas: Ehrlich gesagt mache ich nicht viel. Meine Fenster sind so alt, dass die Wärme sowieso verloren geht. Da muss zuerst mein Vermieter etwas tun.
+        Elif: Wir haben alle Lampen gegen LED-Lampen getauscht. Und abends schalten wir den Fernseher und den Computer ganz aus und ziehen die Stecker.
+      options:
+        - { id: a, text: "Sie schaltet am Abend den Fernseher und den Computer ganz aus.", lang: de }
+        - { id: b, text: "Sie trocknet die Wäsche auf dem Balkon.", lang: de }
+        - { id: c, text: "Sie wäscht nur noch mit 30 Grad.", lang: de }
+    answer: a
+    explanation:
+      vi: "Elif viết “abends schalten wir den Fernseher und den Computer ganz aus und ziehen die Stecker”: buổi tối tắt hẳn tivi, máy tính và rút phích cắm (ngoài ra còn đổi sang đèn LED). Phơi đồ ngoài ban công và chỉ giặt ở 30 độ là việc của Mira, không phải của Elif."
+
+  - key: de:examq:goethe-b1-m2-r12
+    section: reading
+    kind: mcq
+    question_type: goethe_read_sign
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo trong nhà nghỉ và chọn đáp án đúng cho câu hỏi.
+      stem: Ein Gast muss am Abreisetag das Zimmer verlassen, sein Zug fährt aber erst um 16 Uhr. Was kann er machen?
+      stem_lang: de
+      passage: |-
+        Pension Seeblick – Hinweise für unsere Gäste
+        Frühstück: 7:30 bis 10 Uhr im Wintergarten.
+        Bitte geben Sie den Zimmerschlüssel ab, wenn Sie das Haus verlassen.
+        Abreise: Die Zimmer müssen bis 11 Uhr frei sein. Ihr Gepäck können Sie danach kostenlos an der Rezeption lassen.
+        Von 22 bis 7 Uhr ist die Rezeption nicht besetzt.
+      options:
+        - { id: a, text: "Er kann seine Koffer an der Rezeption lassen.", lang: de }
+        - { id: b, text: "Er kann bis 16 Uhr im Zimmer bleiben.", lang: de }
+        - { id: c, text: "Er kann bis 11 Uhr frühstücken.", lang: de }
+    answer: a
+    explanation:
+      vi: "Thông báo ghi “Ihr Gepäck können Sie danach kostenlos an der Rezeption lassen”: sau khi trả phòng có thể gửi hành lý miễn phí ở lễ tân. Phòng phải trả trước 11 giờ (“bis 11 Uhr frei sein”), nên không ở đến 16 giờ được; bữa sáng chỉ đến 10 giờ, 11 giờ là giờ trả phòng."
+
+  # ============================== SCHREIBEN (Viết) ==============================
+  - key: de:examq:goethe-b1-m2-w01
+    section: writing
+    kind: essay
+    question_type: goethe_write_email
+    level_code: b1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết một email thân mật bằng tiếng Đức (khoảng 80 từ) cho bạn, dùng “du”, trả lời đủ ba ý trong đề. Viết thành
+        đoạn văn mạch lạc, có lời chào, câu mở đầu, câu nối giữa các ý và lời kết.
+      stem: |-
+        Sie waren letztes Wochenende auf einer Reise, aber es gab ein Problem. Schreiben Sie Ihrer Freundin Sophie eine E-Mail:
+        • Beschreiben Sie: Was ist passiert?
+        • Erklären Sie, wie Sie das Problem gelöst haben.
+        • Machen Sie einen Vorschlag für eine gemeinsame Reise.
+        Schreiben Sie circa 80 Wörter.
+      stem_lang: de
+      min_chars: 300
+      max_chars: 1200
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Đủ ba ý (chuyện gì đã xảy ra, đã giải quyết thế nào, đề nghị một chuyến đi chung) và mỗi ý được phát triển ít nhất một hai câu; thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Lời chào thân mật (Liebe Sophie), câu mở đầu, các ý nối bằng zuerst, dann, deshalb, zum Glück, trotzdem; lời kết và tên (Viele Grüße …).
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng “du” nhất quán; Perfekt/Präteritum đúng trợ động từ (bin gefahren, habe verpasst); động từ cuối câu sau weil/dass/als; vốn từ B1 đủ đa dạng, lỗi không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Liebe Sophie,
+      wie geht es dir? Ich muss dir erzählen, was mir letztes Wochenende passiert ist. Ich wollte mit dem Zug zu meiner Tante nach Bergheim fahren, aber der Zug ist wegen einer Störung ausgefallen. Zuerst war ich ziemlich sauer. Zum Glück gab es einen Ersatzbus, und so bin ich nur eine Stunde später angekommen. Hast du Lust, im Sommer mit mir an einen See zu fahren? Wir könnten zelten und wandern.
+      Viele Grüße
+      Minh
+    explanation:
+      vi: "Email thân mật B1 được chấm ở việc trả lời đủ ba ý với độ dài gần 80 từ và câu nối tự nhiên. Lỗi hay gặp: dùng sai trợ động từ (“ich habe gefahren” thay vì “ich bin gefahren”, “der Zug hat ausgefallen” thay vì “ist ausgefallen”), quên đặt động từ ở vị trí 2 sau “Zuerst/Zum Glück”, hoặc chỉ kể chuyện mà quên đề nghị chuyến đi chung."
+
+  - key: de:examq:goethe-b1-m2-w02
+    section: writing
+    kind: essay
+    question_type: goethe_write_forum
+    level_code: b1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết ý kiến của bạn bằng tiếng Đức (khoảng 80 từ) cho diễn đàn của một chương trình truyền hình. Nêu rõ bạn đồng ý
+        hay không, đưa ra lý do và ví dụ, có thể nhắc đến ý kiến của Lukas.
+      stem: |-
+        Sie haben im Fernsehen eine Diskussionssendung zum Thema „Homeoffice – gut für alle?“ gesehen. Im Online-Gästebuch der Sendung finden Sie folgende Meinung:
+        Lukas: „Im Homeoffice arbeite ich viel ruhiger und spare jeden Tag eine Stunde Fahrzeit. Ich finde, alle sollten zu Hause arbeiten dürfen.“
+        Schreiben Sie nun Ihre Meinung (circa 80 Wörter).
+      stem_lang: de
+      min_chars: 300
+      max_chars: 1200
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Nêu rõ quan điểm của mình về làm việc tại nhà, có ít nhất hai lý do hoặc một lý do kèm ví dụ cụ thể, có phản hồi ý kiến của Lukas.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Mở bài nêu quan điểm (Ich finde/Meiner Meinung nach …), thân bài nối lý do bằng einerseits … andererseits, außerdem, aber; câu kết luận ngắn.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Redemittel nêu ý kiến đúng (Ich bin der Meinung, dass …; Ich stimme Lukas zu/nicht zu), động từ cuối câu sau dass/weil/wenn, vốn từ về công việc đa dạng; lỗi không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Ich stimme Lukas nur teilweise zu. Einerseits ist das Homeoffice praktisch: Man spart Zeit und kann flexibler arbeiten. Andererseits fehlt mir zu Hause der Kontakt zu meinen Kollegen. Im Büro kann ich schnell eine Frage stellen, und viele Ideen entstehen bei einem Gespräch in der Kaffeepause. Außerdem gibt es Berufe, die man nicht zu Hause machen kann, zum Beispiel Krankenpfleger oder Verkäuferin. Meiner Meinung nach ist eine Mischung am besten: zwei Tage zu Hause, drei Tage im Büro.
+    explanation:
+      vi: "Bài diễn đàn B1 cần quan điểm rõ ràng có lý do, không chỉ liệt kê. Lỗi hay gặp: đặt sai động từ sau trạng từ mở câu (“Andererseits mir fehlt …” thay vì “Andererseits fehlt mir …”), nhầm “Ich stimme Lukas zu” (Dativ) thành “Ich stimme mit Lukas zu”, hoặc đặt dấu phẩy và sai vị trí động từ sau “Meiner Meinung nach” (“Meiner Meinung nach, das ist …” thay vì “Meiner Meinung nach ist das …”)."
+
+  - key: de:examq:goethe-b1-m2-w03
+    section: writing
+    kind: essay
+    question_type: goethe_write_email
+    level_code: b1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết một tin nhắn trang trọng bằng tiếng Đức (khoảng 40 từ) cho người hướng dẫn khóa học, dùng “Sie”. Viết thành
+        câu hoàn chỉnh, có lời chào và lời kết trang trọng.
+      stem: |-
+        Sie besuchen einen Yogakurs bei Frau Roth. Am nächsten Dienstag können Sie nicht zum Kurs kommen. Schreiben Sie Frau Roth eine Nachricht. Entschuldigen Sie sich höflich und erklären Sie, warum Sie nicht kommen können. Fragen Sie, ob Sie die Stunde nachholen können.
+        Schreiben Sie circa 40 Wörter.
+      stem_lang: de
+      min_chars: 150
+      max_chars: 600
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Có lời xin lỗi lịch sự, lý do vắng mặt vào thứ Ba và câu hỏi về việc học bù; thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Lời chào và lời kết trang trọng (Sehr geehrte Frau Roth, … Mit freundlichen Grüßen + họ tên); các ý theo thứ tự hợp lý.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng “Sie/Ihnen” viết hoa nhất quán; câu hỏi gián tiếp lịch sự (Könnten Sie mir sagen, ob …?), động từ cuối câu sau ob/weil/dass; lỗi không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Sehr geehrte Frau Roth,
+      leider kann ich am nächsten Dienstag nicht zum Yogakurs kommen, weil ich an diesem Abend länger arbeiten muss. Das tut mir sehr leid. Könnten Sie mir bitte sagen, ob ich die Stunde in einem anderen Kurs nachholen kann?
+      Mit freundlichen Grüßen
+      Nguyen Thi Lan
+    explanation:
+      vi: "Tin nhắn trang trọng B1 chủ yếu kiểm tra ngữ vực lịch sự. Lỗi hay gặp: mở đầu bằng “Hallo Frau Roth” hoặc dùng “du”, viết thường “sie/ihnen”, đặt động từ sai trong câu hỏi gián tiếp (“ob ich kann die Stunde nachholen” thay vì “ob ich die Stunde nachholen kann”), hoặc đặt dấu phẩy sau “Mit freundlichen Grüßen”."

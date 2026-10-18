@@ -1,0 +1,8 @@
+# content/exams/de/goethe-b1-mock-2.yaml (agent G14)
+# Tên riêng (hư cấu)
+Kowalski
+Nowak
+Ayşe
+Mira
+# Tên địa danh hư cấu (tính từ chỉ nơi chốn: Hellbach → Hellbacher)
+Hellbacher
