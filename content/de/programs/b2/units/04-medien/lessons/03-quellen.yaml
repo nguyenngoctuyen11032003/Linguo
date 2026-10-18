@@ -1,0 +1,349 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u04-quellen
+order_index: 3
+level: b2
+title:
+  vi: Theo nguồn tin… – laut, zufolge, sollen/wollen (Laut Polizei soll der Täter geflohen sein.)
+objectives:
+  - vi: Nêu nguồn tin bằng laut, … zufolge, nach Angaben, wie … berichtet.
+  - vi: Hiểu và dùng sollen (nghe nói) và wollen (tự nhận) với nguyên thể hiện tại và quá khứ.
+  - vi: Phân biệt sự thật – tin chưa xác minh – lời tự nhận khi đọc báo.
+estimated_minutes: 21
+skills: [grammar, reading, vocabulary]
+prerequisites: [de:lesson:b2u04-indirekte-rede-vergangenheit]
+items:
+  - item: de:item:b2u04-g-quellenangabe
+  - item: de:item:b2u04-g-sollen-wollen-fremd
+  - item: de:item:b2u04-angeblich
+  - item: de:item:b2u04-augenzeuge
+  - item: de:item:b2u04-behauptung
+  - item: de:item:b2u04-bestreiten
+  - item: de:item:b2u04-dementieren
+  - item: de:item:b2u04-angabe
+  - item: de:item:b2u04-stellungnahme
+  - item: de:item:b2u04-vorfall
+  - item: de:item:b2u04-taeter
+  - item: de:item:b2u04-ermittlung
+  - item: de:item:b2u04-ermitteln
+  - item: de:item:b2u04-verdaechtig
+  - item: de:item:b2u04-festnehmen
+  - item: de:item:b2u04-unbestaetigt
+  - item: de:item:b2u04-offiziell
+  - item: de:item:b2u04-luege
+  - item: de:item:b2u04-luegen
+  - item: de:item:a1u08-g-sollen
+    role: reuse
+  - item: de:item:b1u03-g-n-deklination
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b2u04-g-indirekte-rede
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc một bản tin và biết câu nào là sự thật đã xác nhận, câu nào là tin nghe nói, câu nào là lời tự nhận, ví dụ: \"Laut Polizei soll der Täter geflohen sein.\" (Theo cảnh sát, nghe nói thủ phạm đã bỏ trốn.) Mọi vụ việc trong bài đều là hư cấu."
+  - type: explain
+    text:
+      vi: "Để nói \"theo …\", báo chí dùng laut + danh từ (laut Polizei, laut dem Bericht; trong văn viết trang trọng cũng gặp laut des Berichts) hoặc nach Angaben + Genitiv (nach Angaben der Polizei). Cũng có thể dùng câu phụ: Wie die Zeitung berichtet, … (động từ câu chính đứng ngay sau dấu phẩy)."
+  - type: explain
+    text:
+      vi: "zufolge là giới từ đứng sau danh từ, đi với Dativ: dem Bericht zufolge, Augenzeugen zufolge. Tiếng Việt luôn đặt \"theo\" trước, nên người Việt hay viết sai \"zufolge dem Bericht\"."
+  - type: explain
+    text:
+      vi: "Ở A1 bạn học sollen = phải, nên (theo yêu cầu của người khác). Trong tin tức, sollen còn có nghĩa \"nghe nói, người ta bảo\": Der Politiker soll reich sein = nghe nói ông chính khách giàu (chưa xác nhận). Tiếng Việt diễn đạt bằng \"nghe nói\", \"được cho là\"."
+  - type: explain
+    text:
+      vi: "wollen trong tin tức có thể mang nghĩa \"tự nhận, khăng khăng\": Er will nichts gesehen haben = anh ta khăng khăng là không thấy gì (người viết không chắc điều đó đúng). Với việc đã qua, cả sollen và wollen đi với nguyên thể quá khứ ở cuối câu: Partizip II + haben/sein (gesehen haben, geflohen sein)."
+  - type: deep_explain
+    text:
+      vi: "Ba mức độ chắc chắn trong một bản tin: (1) sự thật đã xác nhận – Indikativ: Die Polizei hat zwei Männer festgenommen; (2) lời của nguồn được nêu rõ – laut/zufolge + Indikativ hoặc Konjunktiv I: Laut Polizei gab es keine Verletzten; (3) tin chưa xác minh – sollen, angeblich, unbestätigt: Der Täter soll geflohen sein. Lời tự nhận của chính người liên quan – wollen: Der Fahrer will nichts getrunken haben. Ngữ cảnh quyết định nghĩa: Du sollst sofort kommen (người khác yêu cầu) khác Er soll krank sein (nghe nói); Ich will Ärztin werden (muốn) khác Er will krank gewesen sein (tự nhận). Danh từ n-Deklination hay gặp trong tin tức: der Augenzeuge – laut einem Augenzeugen, nach Angaben des Augenzeugen; der Korrespondent – des Korrespondenten."
+  - type: example
+    target: Laut Polizei soll der Täter ins Ausland geflohen sein.
+    target_lang: de
+    translation:
+      vi: Theo cảnh sát, nghe nói thủ phạm đã trốn ra nước ngoài.
+    note:
+      vi: "laut Polizei: nguồn tin (không mạo từ). soll … geflohen sein: tin chưa xác nhận về việc đã qua; fliehen dùng sein."
+  - type: example
+    target: Dem Bericht zufolge ist der Schaden geringer als erwartet.
+    target_lang: de
+    translation:
+      vi: Theo bản báo cáo, thiệt hại nhỏ hơn dự kiến.
+    note:
+      vi: "zufolge đứng sau danh từ ở Dativ (dem Bericht)."
+  - type: example
+    target: Nach Angaben eines Augenzeugen soll der Fahrer während der Fahrt telefoniert haben.
+    target_lang: de
+    translation:
+      vi: Theo lời một nhân chứng, nghe nói tài xế đã gọi điện thoại trong lúc lái xe.
+    note:
+      vi: "nach Angaben + Genitiv: eines Augenzeugen (n-Deklination: -en). soll … telefoniert haben: nguyên thể quá khứ với haben."
+  - type: example
+    target: Der Verdächtige will zur Tatzeit zu Hause gewesen sein, doch die Polizei hat Zweifel an dieser Behauptung.
+    target_lang: de
+    translation:
+      vi: Nghi phạm khăng khăng là vào thời điểm gây án mình ở nhà, nhưng cảnh sát nghi ngờ lời khẳng định này.
+    note:
+      vi: "will … gewesen sein: lời tự nhận về quá khứ (sein → gewesen sein). Người viết không khẳng định điều đó đúng."
+  - type: example
+    target: Wie der Sender berichtet, hat die Firma die Meldung inzwischen dementiert.
+    target_lang: de
+    translation:
+      vi: Theo đài đưa tin, công ty đã cải chính bản tin đó.
+    note:
+      vi: "Câu phụ Wie … berichtet chiếm vị trí 1, nên động từ hat đứng ngay sau dấu phẩy."
+  - type: common_mistake
+    wrong: Zufolge dem Bericht gab es keine Verletzten.
+    right: Dem Bericht zufolge gab es keine Verletzten.
+    target_lang: de
+    note:
+      vi: "zufolge đứng sau danh từ, không đứng trước như \"theo\" trong tiếng Việt."
+  - type: common_mistake
+    wrong: Er will den Unfall gesehen.
+    right: Er will den Unfall gesehen haben.
+    target_lang: de
+    note:
+      vi: "Sau wollen/sollen cần nguyên thể; với việc đã qua, đó là nguyên thể quá khứ: gesehen haben."
+  - type: common_mistake
+    wrong: Laut mir ist die Meldung falsch.
+    right: Meiner Meinung nach ist die Meldung falsch.
+    target_lang: de
+    note:
+      vi: "laut chỉ dùng để nêu nguồn tin bên ngoài (laut Polizei). Ý kiến của chính mình: meiner Meinung nach."
+  - type: summary
+    points:
+      - vi: "laut + Dativ/Genitiv (laut Polizei, laut dem Bericht); nach Angaben + Genitiv; wie … berichtet."
+      - vi: "zufolge đứng SAU danh từ ở Dativ: dem Bericht zufolge."
+      - vi: "sollen = nghe nói (tin chưa xác nhận): Er soll reich sein."
+      - vi: "wollen = tự nhận, khăng khăng: Er will nichts gesehen haben."
+      - vi: "Việc đã qua: Partizip II + haben/sein ở cuối câu (geflohen sein, gesehen haben)."
+      - vi: "Từ vựng: angeblich, der Augenzeuge, die Behauptung, bestreiten, dementieren, die Angabe, die Stellungnahme."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u04l3-mcq-zufolge
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u04-g-quellenangabe
+    prompt:
+      stem: "Dem Bericht ___ ist der Schaden geringer als erwartet."
+      stem_lang: de
+      options:
+        - { id: z3a, text: "zufolge", lang: de }
+        - { id: z7b, text: "laut", lang: de }
+        - { id: z1c, text: "nach", lang: de }
+        - { id: z5d, text: "wegen", lang: de }
+    answer:
+      correct_option_id: z3a
+    explanation:
+      vi: "Giới từ đứng sau danh từ ở Dativ (dem Bericht) chỉ có thể là zufolge. laut và nach đứng trước danh từ (laut dem Bericht); wegen nghĩa là \"vì\"."
+    display_answer: zufolge
+
+  - key: de:exercise:b2u04l3-mcq-soll-bedeutung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u04-g-sollen-wollen-fremd
+    prompt:
+      stem: "Der Täter soll ins Ausland geflohen sein. – Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n2a, text: "Nghe nói thủ phạm đã trốn ra nước ngoài.", lang: vi }
+        - { id: n6b, text: "Thủ phạm phải trốn ra nước ngoài.", lang: vi }
+        - { id: n9c, text: "Thủ phạm khăng khăng là đã trốn ra nước ngoài.", lang: vi }
+        - { id: n4d, text: "Thủ phạm sẽ trốn ra nước ngoài.", lang: vi }
+    answer:
+      correct_option_id: n2a
+    explanation:
+      vi: "soll + nguyên thể quá khứ (geflohen sein) trong tin tức = nghe nói, người ta cho rằng đã … – tin chưa xác nhận. \"Phải\" là nghĩa A1 của sollen, không hợp với việc đã xảy ra; \"khăng khăng\" là nghĩa của wollen."
+    display_answer: Nghe nói thủ phạm đã trốn ra nước ngoài.
+
+  - key: de:exercise:b2u04l3-mcq-will-bedeutung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u04-g-sollen-wollen-fremd
+    prompt:
+      stem: "Der Fahrer will die rote Ampel nicht gesehen haben. – Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: w5a, text: "Tài xế khăng khăng là mình đã không nhìn thấy đèn đỏ.", lang: vi }
+        - { id: w1b, text: "Tài xế không muốn nhìn thấy đèn đỏ.", lang: vi }
+        - { id: w8c, text: "Nghe nói tài xế đã không nhìn thấy đèn đỏ.", lang: vi }
+        - { id: w3d, text: "Tài xế chắc chắn đã không nhìn thấy đèn đỏ.", lang: vi }
+    answer:
+      correct_option_id: w5a
+    explanation:
+      vi: "will + nguyên thể quá khứ (gesehen haben) = tự nhận về việc đã qua; người viết không xác nhận điều đó. \"Nghe nói\" là nghĩa của soll; \"không muốn\" là nghĩa thường của wollen + nguyên thể hiện tại."
+    display_answer: Tài xế khăng khăng là mình đã không nhìn thấy đèn đỏ.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u04l3-fill-angaben-zufolge
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-quellenangabe
+    prompt:
+      template: "Nach {{b1}} der Feuerwehr brach das Feuer in der Küche aus. Den Augenzeugen {{b2}} kam der Rauch zuerst aus einem Fenster im dritten Stock."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Angaben]
+        b2: [zufolge]
+    known_wrong:
+      - answer: Angabe
+        feedback_vi: Cụm cố định dùng số nhiều – nach Angaben der Feuerwehr.
+        error_tag: plural_form
+      - answer: laut
+        feedback_vi: laut đứng trước danh từ (laut den Augenzeugen); sau danh từ ở Dativ phải là zufolge.
+        error_tag: word_order
+    explanation:
+      vi: "nach Angaben + Genitiv (der Feuerwehr) là cụm cố định, Angaben ở số nhiều. Den Augenzeugen (Dativ số nhiều) đứng trước chỗ trống, nên giới từ phải là zufolge – giới từ đứng sau danh từ."
+    display_answer: "Nach Angaben der Feuerwehr brach das Feuer in der Küche aus. Den Augenzeugen zufolge kam der Rauch zuerst aus einem Fenster im dritten Stock."
+
+  - key: de:exercise:b2u04l3-fill-soll-will
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-sollen-wollen-fremd
+    prompt:
+      template: 'Nachbarn: "Der Fahrer ist viel zu schnell gefahren." → Der Fahrer soll viel zu schnell gefahren {{b1}}. Der Fahrer selbst: "Ich habe die Ampel nicht gesehen." → Der Fahrer {{b2}} (wollen) die Ampel nicht gesehen {{b3}}.'
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [sein]
+        b2: [will]
+        b3: [haben]
+    known_wrong:
+      - answer: wollte
+        feedback_vi: Lời tự nhận đang được nói bây giờ, nên wollen ở hiện tại – will; việc đã qua thể hiện bằng gesehen haben.
+        error_tag: verb_form
+      - answer: sei
+        feedback_vi: Sau soll cần nguyên thể – gefahren sein, không phải dạng chia sei.
+        error_tag: verb_form
+    explanation:
+      vi: "fahren dùng sein ở Perfekt → nguyên thể quá khứ gefahren sein. Lời tự nhận của chính tài xế → wollen: er will … gesehen haben (sehen dùng haben)."
+    display_answer: 'Der Fahrer soll viel zu schnell gefahren sein. Der Fahrer will die Ampel nicht gesehen haben.'
+
+  - key: de:exercise:b2u04l3-tr-taeter-geflohen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-taeter
+    prompt:
+      source_text: "Nghe nói thủ phạm (nam) đã trốn ra nước ngoài. (dùng sollen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Täter soll ins Ausland geflohen sein.
+        - Der Täter soll ins Ausland geflüchtet sein.
+        - Ins Ausland soll der Täter geflohen sein.
+        - Der Täter soll sich ins Ausland abgesetzt haben.
+    known_wrong:
+      - answer: Der Täter soll ins Ausland geflohen.
+        feedback_vi: Sau soll cần nguyên thể quá khứ đầy đủ – geflohen sein.
+        error_tag: verb_form
+      - answer: Der Täter soll ins Ausland geflohen haben.
+        feedback_vi: fliehen là động từ chuyển động, dùng sein – geflohen sein.
+        error_tag: aux_verb
+      - answer: Der Täter muss ins Ausland geflohen sein.
+        feedback_vi: muss … sein là người nói tự suy luận (chắc chắn là), không phải nghe nói – dùng soll.
+        error_tag: meaning
+    explanation:
+      vi: "nghe nói (tin chưa xác nhận) = sollen. Việc đã qua: Partizip II geflohen + sein (fliehen dùng sein) ở cuối câu."
+    display_answer: Der Täter soll ins Ausland geflohen sein.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u04l3-wb-laut-polizei
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-quellenangabe
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Theo cảnh sát, nghe nói thủ phạm đã trốn ra nước ngoài.\" (bắt đầu bằng Der Täter)"
+      tokens:
+        - { id: p-sein, text: sein }
+        - { id: p-laut, text: laut }
+        - { id: p-ausland, text: Ausland }
+        - { id: p-der, text: Der }
+        - { id: p-geflohen, text: geflohen }
+        - { id: p-polizei, text: Polizei }
+        - { id: p-soll, text: soll }
+        - { id: p-ins, text: ins }
+        - { id: p-taeter, text: Täter }
+    answer:
+      orders:
+        - [p-der, p-taeter, p-soll, p-laut, p-polizei, p-ins, p-ausland, p-geflohen, p-sein]
+    explanation:
+      vi: "soll ở vị trí 2, nguyên thể quá khứ geflohen sein đóng khung ở cuối. Nguồn tin laut Polizei đứng ngay sau động từ, trước chỉ hướng ins Ausland."
+    display_answer: Der Täter soll laut Polizei ins Ausland geflohen sein.
+
+  - key: de:exercise:b2u04l3-tr-angaben-vorfall
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u04-vorfall
+    prompt:
+      source_text: Nach Angaben der Polizei wurde bei dem Vorfall niemand verletzt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Theo thông tin của cảnh sát, không ai bị thương trong vụ việc.
+        - Theo thông tin của cảnh sát, không có ai bị thương trong vụ việc.
+        - Theo thông tin từ cảnh sát, không ai bị thương trong vụ việc.
+        - Theo cảnh sát, không ai bị thương trong vụ việc.
+        - Theo cảnh sát, không có ai bị thương trong vụ việc.
+        - Theo cảnh sát, trong vụ việc không ai bị thương.
+        - Theo thông tin của cảnh sát, trong vụ việc không ai bị thương.
+        - Theo thông tin của cảnh sát, không ai bị thương trong sự việc.
+        - Theo lời cảnh sát, không ai bị thương trong vụ việc.
+        - Theo cảnh sát cho biết, không ai bị thương trong vụ việc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Theo thông tin của cảnh sát, không ai bị thương nặng trong vụ việc.
+        feedback_vi: "niemand verletzt = không ai bị thương (câu gốc không nói \"nặng\")."
+        error_tag: meaning
+    explanation:
+      vi: "nach Angaben der Polizei = theo thông tin của cảnh sát; wurde … verletzt là bị động Präteritum (bị thương); bei dem Vorfall = trong vụ việc."
+    display_answer: Theo thông tin của cảnh sát, không ai bị thương trong vụ việc.
+
+  - key: de:exercise:b2u04l3-mcq-selbstaussage
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-sollen-wollen-fremd
+    prompt:
+      stem: "Câu nào thuật lại lời tự nhận của chính ông thị trưởng (người viết không xác nhận)?"
+      stem_lang: vi
+      options:
+        - { id: b6a, text: "Der Bürgermeister will von dem Plan nichts gewusst haben.", lang: de }
+        - { id: b2b, text: "Der Bürgermeister soll von dem Plan gewusst haben.", lang: de }
+        - { id: b9c, text: "Der Bürgermeister hat von dem Plan gewusst.", lang: de }
+        - { id: b4d, text: "Laut der Zeitung hat der Bürgermeister von dem Plan gewusst.", lang: de }
+    answer:
+      correct_option_id: b6a
+    explanation:
+      vi: "will … gewusst haben = ông ấy tự khẳng định (là không biết gì). soll … gewusst haben là tin đồn từ người khác; hat … gewusst là sự thật người viết khẳng định; laut der Zeitung nêu nguồn là tờ báo, không phải lời của ông thị trưởng."
+    display_answer: Der Bürgermeister will von dem Plan nichts gewusst haben.

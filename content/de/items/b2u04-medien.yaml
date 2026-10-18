@@ -1,0 +1,1616 @@
+# Học liệu unit B2U04 "Truyền thông và giao tiếp" (Medien und Kommunikation), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U04L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên nhóm item.
+# Mọi bản tin, phát ngôn và tên người trong ví dụ đều là hư cấu để luyện tập.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Ông ấy nói rằng… – Konjunktiv I =================
+  - key: de:item:b2u04-g-konjunktiv-i-formen
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Konjunktiv I: er sei, habe, werde, könne, müsse, gehe, komme"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Konjunktiv I lấy gốc của nguyên thể rồi thêm đuôi -e, -est, -e, -en, -et, -en (kommen → er komme, können → er könne, wissen → er wisse); riêng sein: ich sei, du seist, er sei, wir seien, ihr seiet, sie seien. Trên thực tế, dạng hay dùng nhất là ngôi thứ ba số ít (er/sie/es, man): er sei, habe, werde, könne, müsse, gehe, komme. Vì gốc lấy từ nguyên thể nên không đổi nguyên âm như thì hiện tại: er fährt → er fahre, er gibt → er gebe, er kann → er könne."
+      examples:
+        - target: Der Minister sagte, er sei mit dem Ergebnis zufrieden.
+          translation:
+            vi: Ông bộ trưởng nói rằng ông hài lòng với kết quả.
+        - target: Die Sprecherin erklärte, die Firma habe keine finanziellen Probleme.
+          translation:
+            vi: Nữ phát ngôn viên tuyên bố rằng công ty không gặp khó khăn tài chính.
+        - target: Der Trainer meint, der Spieler könne am Samstag wieder spielen.
+          translation:
+            vi: Huấn luyện viên cho rằng cầu thủ đó có thể thi đấu trở lại vào thứ Bảy.
+      confusion:
+        vi: "er habe, er sei, er komme không phải lỗi chia động từ mà là dạng chuẩn của văn báo chí. Đừng nhầm er sei (Konjunktiv I – thuật lại) với er wäre (Konjunktiv II – điều không có thật), hay er fahre (Konjunktiv I) với er fährt (thì hiện tại)."
+
+  - key: de:item:b2u04-g-indirekte-rede
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Indirekte Rede: Er sagt, er sei müde. · Sie sagen, sie hätten keine Zeit."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi thuật lại lời người khác một cách trung lập (nhất là trong tin tức), bạn dùng Konjunktiv I và đổi đại từ theo góc nhìn người thuật: \"Ich bin müde\" → Er sagt, er sei müde. Nếu Konjunktiv I trùng với thì hiện tại (ich habe, wir haben, sie kommen), bạn thay bằng Konjunktiv II (hätten, kämen) hoặc würde + nguyên thể. Có thể dùng dass (động từ đứng cuối: …, dass er müde sei) hoặc bỏ dass (động từ ở vị trí 2: …, er sei müde)."
+      examples:
+        - target: 'Die Eltern: "Wir haben keine Zeit." – Die Eltern sagen, sie hätten keine Zeit.'
+          translation:
+            vi: 'Bố mẹ: "Chúng tôi không có thời gian." – Bố mẹ nói rằng họ không có thời gian.'
+        - target: Die Ministerin betonte, dass die Regierung die Pressefreiheit schütze.
+          translation:
+            vi: Bà bộ trưởng nhấn mạnh rằng chính phủ bảo vệ tự do báo chí.
+        - target: Mein Kollege schreibt, er komme heute etwas später.
+          translation:
+            vi: Đồng nghiệp tôi nhắn rằng hôm nay anh ấy sẽ đến muộn một chút.
+      confusion:
+        vi: "Konjunktiv I chủ yếu thuộc văn viết: tin tức, biên bản, văn bản trang trọng. Khi nói chuyện hằng ngày, người Đức thường dùng thì hiện tại (Er sagt, er kommt später) hoặc Konjunktiv II (Er hat gesagt, er hätte keine Zeit)."
+
+  - key: de:item:b2u04-presse
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Presse (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: báo chí, giới báo chí
+      examples:
+        - target: Die Presse hat ausführlich über den Fall berichtet.
+          translation:
+            vi: Báo chí đã đưa tin chi tiết về vụ việc.
+        - target: Der Minister wollte nicht mit der Presse sprechen.
+          translation:
+            vi: Ông bộ trưởng không muốn nói chuyện với báo chí.
+      confusion:
+        vi: "die Presse là báo chí nói chung; một tờ báo cụ thể là die Zeitung. die Presse còn có nghĩa là máy ép (die Saftpresse = máy ép nước quả)."
+
+  - key: de:item:b2u04-pressefreiheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Pressefreiheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tự do báo chí
+      examples:
+        - target: In Deutschland schützt das Grundgesetz die Pressefreiheit.
+          translation:
+            vi: Ở Đức, Luật Cơ bản (hiến pháp) bảo vệ tự do báo chí.
+        - target: Ohne Pressefreiheit können Journalisten nicht unabhängig arbeiten.
+          translation:
+            vi: Không có tự do báo chí, nhà báo không thể làm việc độc lập.
+      confusion:
+        vi: "Từ ghép Presse + Freiheit lấy giống của từ cuối (die Freiheit). Tương tự: die Meinungsfreiheit (tự do ngôn luận)."
+
+  - key: de:item:b2u04-sender
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Sender, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: đài (phát thanh, truyền hình), kênh
+      examples:
+        - target: Welcher Sender zeigt heute das Spiel?
+          translation:
+            vi: Hôm nay kênh nào chiếu trận đấu?
+        - target: Der Sender hat das Interview noch am selben Abend ausgestrahlt.
+          translation:
+            vi: Đài đã phát sóng cuộc phỏng vấn ngay trong tối hôm đó.
+      confusion:
+        vi: "Người gửi thư hay e-mail là der Absender, không phải der Sender."
+
+  - key: de:item:b2u04-redaktion
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Redaktion, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban biên tập, tòa soạn
+      examples:
+        - target: Die Redaktion hat den Artikel vor der Veröffentlichung noch einmal geprüft.
+          translation:
+            vi: Ban biên tập đã kiểm tra lại bài báo trước khi đăng.
+        - target: Sie arbeitet seit drei Jahren in der Redaktion einer Tageszeitung.
+          translation:
+            vi: Cô ấy làm việc ở tòa soạn một tờ nhật báo đã ba năm nay.
+      confusion:
+        vi: "Người làm biên tập là der Redakteur, -e / die Redakteurin, -nen."
+
+  - key: de:item:b2u04-zitieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zitieren
+      pos: động từ
+    back:
+      meaning:
+        vi: trích dẫn, trích lời
+      examples:
+        - target: 'Die Zeitung zitiert den Bürgermeister mit den Worten: "Wir haben keine andere Wahl."'
+          translation:
+            vi: 'Tờ báo trích lời ông thị trưởng: "Chúng tôi không có lựa chọn nào khác."'
+        - target: Wenn Sie aus einem Buch zitieren, müssen Sie die Quelle angeben.
+          translation:
+            vi: Khi trích dẫn từ một cuốn sách, bạn phải ghi nguồn.
+      confusion:
+        vi: "Trích lời ai: jemanden zitieren (Akkusativ); trích từ đâu: aus + Dativ. Động từ đuôi -ieren nên Partizip II không có ge-: zitiert."
+
+  - key: de:item:b2u04-zitat
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Zitat, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu trích dẫn, lời trích
+      examples:
+        - target: Das Zitat stammt aus einem Interview vom letzten Jahr.
+          translation:
+            vi: Câu trích dẫn này lấy từ một cuộc phỏng vấn năm ngoái.
+        - target: Im Internet werden oft falsche Zitate verbreitet.
+          translation:
+            vi: Trên mạng thường có những câu trích dẫn sai được lan truyền.
+      confusion:
+        vi: "Lời trích nguyên văn đặt trong ngoặc kép; báo in tiếng Đức thường dùng kiểu „…“."
+
+  - key: de:item:b2u04-aeusserung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Äußerung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phát ngôn, lời phát biểu
+      examples:
+        - target: Nach seiner Äußerung im Fernsehen gab es viel Kritik.
+          translation:
+            vi: Sau phát ngôn của ông ấy trên truyền hình, đã có nhiều chỉ trích.
+        - target: Die Sängerin hat sich für ihre Äußerung entschuldigt.
+          translation:
+            vi: Nữ ca sĩ đã xin lỗi vì phát ngôn của mình.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái: die Äußerung. Nghĩa trung tính (một lời nói ra), khác die Behauptung (lời khẳng định chưa được chứng minh)."
+
+  - key: de:item:b2u04-aeussern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: äußern
+      pos: động từ
+    back:
+      meaning:
+        vi: bày tỏ, phát biểu; sich äußern zu + Dat = lên tiếng về
+      examples:
+        - target: Viele Leser haben in den Kommentaren Kritik geäußert.
+          translation:
+            vi: Nhiều độc giả đã bày tỏ sự phê phán trong phần bình luận.
+        - target: Der Minister wollte sich zu dem Vorwurf nicht äußern.
+          translation:
+            vi: Ông bộ trưởng không muốn lên tiếng về lời cáo buộc đó.
+      confusion:
+        vi: "Hai cách dùng: etwas äußern (bày tỏ điều gì: Kritik, eine Meinung äußern) và sich zu etwas äußern (lên tiếng, bình luận về việc gì)."
+
+  # Zusatzwortschatz bài 1 (báo chí, đưa tin)
+  - key: de:item:b2u04-pressekonferenz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Pressekonferenz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc họp báo
+      examples:
+        - target: Auf der Pressekonferenz sagte die Trainerin, ihre Mannschaft sei gut vorbereitet.
+          translation:
+            vi: Tại cuộc họp báo, nữ huấn luyện viên nói rằng đội của bà đã chuẩn bị tốt.
+        - target: Die Polizei hat für morgen eine Pressekonferenz angekündigt.
+          translation:
+            vi: Cảnh sát đã thông báo sẽ họp báo vào ngày mai.
+      confusion:
+        vi: "Thường nói auf der Pressekonferenz (tại cuộc họp báo) và eine Pressekonferenz geben (tổ chức họp báo)."
+
+  - key: de:item:b2u04-nachrichtenagentur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Nachrichtenagentur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hãng thông tấn
+      examples:
+        - target: Die Meldung kam zuerst von einer Nachrichtenagentur.
+          translation:
+            vi: Bản tin đến đầu tiên từ một hãng thông tấn.
+        - target: Viele Zeitungen übernehmen Texte von Nachrichtenagenturen.
+          translation:
+            vi: Nhiều tờ báo lấy lại bài của các hãng thông tấn.
+      confusion:
+        vi: "Từ ghép die Nachrichten (tin tức) + die Agentur, nên là giống cái."
+
+  - key: de:item:b2u04-korrespondent
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Korrespondent, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phóng viên thường trú
+      examples:
+        - target: Unser Korrespondent in Berlin berichtet, die Verhandlungen seien schwierig.
+          translation:
+            vi: Phóng viên thường trú của chúng tôi ở Berlin cho biết các cuộc đàm phán đang khó khăn.
+        - target: Sie arbeitet als Korrespondentin in Südostasien.
+          translation:
+            vi: Cô ấy làm phóng viên thường trú ở Đông Nam Á.
+      confusion:
+        vi: "Danh từ n-Deklination: den/dem/des Korrespondenten. Nữ: die Korrespondentin, -nen."
+
+  - key: de:item:b2u04-berichterstattung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Berichterstattung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc đưa tin, cách đưa tin
+      examples:
+        - target: Die Berichterstattung über den Unfall war sehr sachlich.
+          translation:
+            vi: Việc đưa tin về vụ tai nạn rất khách quan.
+        - target: Viele Leser kritisieren die einseitige Berichterstattung.
+          translation:
+            vi: Nhiều độc giả phê phán cách đưa tin một chiều.
+      confusion:
+        vi: "Đi với über + Akkusativ. Đây là từ khá trang trọng; khi nói thường dùng động từ berichten."
+
+  - key: de:item:b2u04-oeffentlichkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Öffentlichkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: công chúng, dư luận
+      examples:
+        - target: Die Firma hat die Öffentlichkeit erst spät informiert.
+          translation:
+            vi: Công ty mãi sau mới thông báo cho công chúng.
+        - target: Der Fall wurde in der Öffentlichkeit heftig diskutiert.
+          translation:
+            vi: Vụ việc đã được dư luận tranh luận gay gắt.
+      confusion:
+        vi: "in der Öffentlichkeit = trước công chúng, ở nơi công cộng. Tính từ gốc: öffentlich (công khai, công cộng)."
+
+  - key: de:item:b2u04-unabhaengig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unabhängig (von + Dat)
+      pos: tính từ
+    back:
+      meaning:
+        vi: độc lập (với)
+      examples:
+        - target: Eine unabhängige Presse ist wichtig für die Demokratie.
+          translation:
+            vi: Một nền báo chí độc lập rất quan trọng đối với nền dân chủ.
+        - target: Die beiden Zeugen haben die Geschichte unabhängig voneinander bestätigt.
+          translation:
+            vi: Hai nhân chứng đã xác nhận câu chuyện một cách độc lập với nhau.
+      confusion:
+        vi: "Trái nghĩa: abhängig von + Dativ (phụ thuộc vào). Cụm hay gặp: unabhängige Medien, unabhängig davon, ob … (bất kể …)."
+
+  - key: de:item:b2u04-betonen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: betonen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhấn mạnh
+      examples:
+        - target: Die Ministerin betonte, die Entscheidung sei noch nicht gefallen.
+          translation:
+            vi: Bà bộ trưởng nhấn mạnh rằng quyết định vẫn chưa được đưa ra.
+        - target: Das Wort "Zitat" wird auf der zweiten Silbe betont.
+          translation:
+            vi: Từ "Zitat" được nhấn trọng âm ở âm tiết thứ hai.
+      confusion:
+        vi: "betonen dùng cả cho ý (nhấn mạnh một điều) lẫn cho phát âm (nhấn trọng âm). Tiền tố be- không tách: Partizip II là betont."
+
+  - key: de:item:b2u04-pressemitteilung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Pressemitteilung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông cáo báo chí
+      examples:
+        - target: In einer Pressemitteilung erklärte das Unternehmen, es plane keine Entlassungen.
+          translation:
+            vi: Trong một thông cáo báo chí, doanh nghiệp tuyên bố rằng họ không có kế hoạch sa thải.
+        - target: Die Stadt hat am Montag eine Pressemitteilung veröffentlicht.
+          translation:
+            vi: Thành phố đã công bố một thông cáo báo chí vào thứ Hai.
+      confusion:
+        vi: "die Mitteilung (thông báo) đến từ động từ mitteilen. Đuôi -ung nên là giống cái."
+
+  - key: de:item:b2u04-medium
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Medium, Medien
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương tiện truyền thông; die Medien = giới truyền thông
+      examples:
+        - target: Soziale Medien verändern die Art, wie wir Nachrichten lesen.
+          translation:
+            vi: Mạng xã hội thay đổi cách chúng ta đọc tin tức.
+        - target: Das Thema war tagelang in allen Medien.
+          translation:
+            vi: Chủ đề này xuất hiện trên mọi phương tiện truyền thông suốt nhiều ngày.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Medien (không phải Mediums). Khi nói về truyền thông, người ta hầu như luôn dùng số nhiều die Medien."
+
+  - key: de:item:b2u04-rundfunk
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Rundfunk (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: phát thanh truyền hình (ngành, hệ thống đài)
+      examples:
+        - target: Der öffentlich-rechtliche Rundfunk wird in Deutschland vor allem durch den Rundfunkbeitrag finanziert.
+          translation:
+            vi: Ở Đức, hệ thống phát thanh truyền hình công được tài trợ chủ yếu bằng phí phát thanh truyền hình (Rundfunkbeitrag).
+        - target: Sie hat viele Jahre beim Rundfunk gearbeitet.
+          translation:
+            vi: Bà ấy đã làm việc nhiều năm trong ngành phát thanh truyền hình.
+      confusion:
+        vi: "der Rundfunk chỉ ngành hoặc tổ chức (gồm cả radio lẫn truyền hình); cái máy radio là das Radio."
+
+  # ================= Bài 2: Bà ấy nói đã… – lời gián tiếp quá khứ, câu hỏi, yêu cầu =================
+  - key: de:item:b2u04-g-indirekte-rede-vergangenheit
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Indirekte Rede (Vergangenheit): er habe gesagt, sie sei gekommen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Lời gốc nói về quá khứ (dù ở Präteritum, Perfekt hay Plusquamperfekt) được thuật lại bằng Konjunktiv I của haben/sein + Partizip II: \"Ich kam gestern\" → Er sagt, er sei gestern gekommen. Chọn habe hay sei giống như ở Perfekt: động từ chuyển động, đổi trạng thái dùng sei, phần lớn động từ khác dùng habe. Khi dạng này trùng thì hiện tại (sie haben gewusst), bạn thay bằng hätten/wären: Sie sagen, sie hätten nichts gewusst."
+      examples:
+        - target: Die Zeugin sagte, sie habe nichts gesehen.
+          translation:
+            vi: Nữ nhân chứng nói rằng bà không nhìn thấy gì.
+        - target: Der Sprecher erklärte, der Zug sei wegen eines Unwetters ausgefallen.
+          translation:
+            vi: Người phát ngôn giải thích rằng chuyến tàu bị hủy vì một trận giông bão.
+        - target: Die Schüler behaupten, sie hätten die Hausaufgaben schon gemacht.
+          translation:
+            vi: Đám học sinh khẳng định rằng chúng đã làm bài tập về nhà rồi.
+      confusion:
+        vi: "Không dùng würde cho quá khứ: không viết \"Er sagte, er würde gestern kommen\" mà viết Er sagte, er sei gestern gekommen. Không có \"er habe gekommen\": kommen dùng sein."
+
+  - key: de:item:b2u04-g-indirekte-frage-aufforderung
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Indirekte Frage und Aufforderung: Er fragte, ob sie Zeit habe. · Sie sagte, er solle warten."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Câu hỏi có/không được thuật bằng ob, câu hỏi có từ để hỏi giữ nguyên W-Wort; cả hai là câu phụ nên động từ (ở Konjunktiv I) đứng cuối: Er fragte, ob sie Zeit habe / wann der Zug ankomme. Câu mệnh lệnh được thuật bằng sollen ở Konjunktiv I: \"Warten Sie!\" → Sie sagte, er solle warten. Lời thỉnh cầu rất trang trọng đôi khi dùng mögen: Er bat, man möge ihn zurückrufen."
+      examples:
+        - target: Die Journalistin fragte den Minister, ob er zurücktreten wolle.
+          translation:
+            vi: Nữ nhà báo hỏi ông bộ trưởng liệu ông có muốn từ chức không.
+        - target: Der Arzt sagte, die Patientin solle viel trinken.
+          translation:
+            vi: Bác sĩ dặn rằng bệnh nhân nên uống nhiều nước.
+        - target: Die Leser wollten wissen, woher die Zeitung diese Information habe.
+          translation:
+            vi: Độc giả muốn biết tờ báo lấy thông tin này từ đâu.
+      confusion:
+        vi: "ob = liệu … có … không; không dùng wenn ở đây. Câu hỏi gián tiếp không đảo ngữ: …, wann der Zug ankomme (không viết …, wann kommt der Zug an)."
+
+  - key: de:item:b2u04-geruecht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gerücht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin đồn
+      examples:
+        - target: Im Büro gibt es das Gerücht, der Chef werde die Firma verlassen.
+          translation:
+            vi: Ở văn phòng có tin đồn rằng sếp sẽ rời công ty.
+        - target: Das ist nur ein Gerücht – niemand weiß etwas Genaues.
+          translation:
+            vi: Đó chỉ là tin đồn thôi – không ai biết gì chắc chắn cả.
+      confusion:
+        vi: "Cụm hay gặp: ein Gerücht verbreiten (tung tin đồn), ein Gerücht dementieren (cải chính tin đồn)."
+
+  - key: de:item:b2u04-falschmeldung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Falschmeldung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin sai, tin giả
+      examples:
+        - target: Die Falschmeldung wurde tausendfach geteilt.
+          translation:
+            vi: Tin giả đó đã được chia sẻ hàng nghìn lần.
+        - target: Die Redaktion hat die Falschmeldung korrigiert und sich entschuldigt.
+          translation:
+            vi: Ban biên tập đã đính chính tin sai và xin lỗi.
+      confusion:
+        vi: "Falschmeldung có thể sai do vô tình hoặc cố ý; die Fälschung là đồ cố ý làm giả. Người Đức cũng nói Fake News (mượn tiếng Anh)."
+
+  - key: de:item:b2u04-verbreiten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verbreiten
+      pos: động từ
+    back:
+      meaning:
+        vi: lan truyền, phát tán
+      examples:
+        - target: Solche Gerüchte verbreiten sich im Netz sehr schnell.
+          translation:
+            vi: Những tin đồn như vậy lan truyền trên mạng rất nhanh.
+        - target: Wer Falschmeldungen verbreitet, schadet allen.
+          translation:
+            vi: Ai phát tán tin giả là gây hại cho tất cả mọi người.
+      confusion:
+        vi: "etwas verbreiten = (ai đó) phát tán điều gì; sich verbreiten = (tin) tự lan ra. Danh từ: die Verbreitung."
+
+  - key: de:item:b2u04-manipulieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: manipulieren
+      pos: động từ
+    back:
+      meaning:
+        vi: thao túng; chỉnh sửa (ảnh, số liệu) để đánh lừa
+      examples:
+        - target: Das Foto wurde offensichtlich manipuliert.
+          translation:
+            vi: Bức ảnh rõ ràng đã bị chỉnh sửa.
+        - target: Manche Videos werden gemacht, um die Zuschauer zu manipulieren.
+          translation:
+            vi: Một số video được làm ra để thao túng người xem.
+      confusion:
+        vi: "Động từ đuôi -ieren: Partizip II không có ge- (manipuliert)."
+
+  - key: de:item:b2u04-glaubwuerdigkeit
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Glaubwürdigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: độ tin cậy, uy tín
+      examples:
+        - target: Falsche Zahlen schaden der Glaubwürdigkeit einer Zeitung.
+          translation:
+            vi: Số liệu sai làm tổn hại uy tín của một tờ báo.
+        - target: Die Glaubwürdigkeit einer Quelle sollte man immer prüfen.
+          translation:
+            vi: Lúc nào cũng nên kiểm tra độ tin cậy của một nguồn tin.
+      confusion:
+        vi: "Danh từ đuôi -keit là giống cái. schaden đi với Dativ: der Glaubwürdigkeit schaden."
+
+  - key: de:item:b2u04-glaubwuerdig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: glaubwürdig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng tin
+      examples:
+        - target: Die Zeugin wirkt sehr glaubwürdig.
+          translation:
+            vi: Nữ nhân chứng trông rất đáng tin.
+        - target: Ist diese Quelle wirklich glaubwürdig?
+          translation:
+            vi: Nguồn tin này có thật sự đáng tin không?
+      confusion:
+        vi: "Trái nghĩa: unglaubwürdig (không đáng tin). Đừng nhầm với unglaublich (khó tin, không thể tưởng tượng)."
+
+  - key: de:item:b2u04-faktencheck
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Faktencheck, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: (bài) kiểm chứng thông tin
+      examples:
+        - target: Ein Faktencheck zeigte, dass das Zitat erfunden war.
+          translation:
+            vi: Một bài kiểm chứng cho thấy câu trích dẫn đó là bịa đặt.
+        - target: Viele Redaktionen haben ein eigenes Team für Faktenchecks.
+          translation:
+            vi: Nhiều tòa soạn có riêng một nhóm chuyên kiểm chứng thông tin.
+      confusion:
+        vi: "Ghép die Fakten (số nhiều) + der Check (mượn tiếng Anh), nên là giống đực."
+
+  - key: de:item:b2u04-ueberpruefen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: überprüfen
+      pos: động từ
+    back:
+      meaning:
+        vi: kiểm tra (lại), xác minh
+      examples:
+        - target: Bevor Sie eine Nachricht teilen, sollten Sie die Quelle überprüfen.
+          translation:
+            vi: Trước khi chia sẻ một tin, bạn nên kiểm tra lại nguồn.
+        - target: Die Polizei überprüft die Angaben des Fahrers.
+          translation:
+            vi: Cảnh sát đang xác minh lời khai của tài xế.
+      confusion:
+        vi: "Tiền tố über- ở đây không tách: ich überprüfe, ich habe überprüft (không có ge-)."
+
+  # Zusatzwortschatz bài 2 (tin giả, kiểm chứng)
+  - key: de:item:b2u04-serioes
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: seriös
+      pos: tính từ
+    back:
+      meaning:
+        vi: nghiêm túc, đứng đắn, đáng tin (về báo, công ty, nguồn tin)
+      examples:
+        - target: Seriöse Zeitungen trennen Nachricht und Meinung.
+          translation:
+            vi: Các tờ báo nghiêm túc tách bạch tin tức và bình luận.
+        - target: Das Angebot klingt nicht besonders seriös.
+          translation:
+            vi: Lời mời chào này nghe không đáng tin lắm.
+      confusion:
+        vi: "seriös khác ernst: ernst là nghiêm trọng hoặc nghiêm nghị (Die Lage ist ernst)."
+
+  - key: de:item:b2u04-faelschung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fälschung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ giả, việc làm giả
+      examples:
+        - target: Das Dokument ist eine Fälschung.
+          translation:
+            vi: Tài liệu này là đồ giả.
+        - target: Experten haben die Fälschung sofort erkannt.
+          translation:
+            vi: Các chuyên gia đã nhận ra ngay đó là đồ giả.
+      confusion:
+        vi: "Động từ: fälschen (làm giả); tính từ: gefälscht (ein gefälschtes Foto = một bức ảnh giả)."
+
+  - key: de:item:b2u04-zweifel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zweifel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nghi ngờ, mối hoài nghi
+      examples:
+        - target: Ich habe Zweifel an dieser Meldung.
+          translation:
+            vi: Tôi nghi ngờ bản tin này.
+        - target: Ohne Zweifel ist das eine Falschmeldung.
+          translation:
+            vi: Chắc chắn đó là tin giả.
+      confusion:
+        vi: "Zweifel an + Dativ (nghi ngờ điều gì). ohne Zweifel = không còn nghi ngờ gì, chắc chắn. Động từ: zweifeln an + Dativ."
+
+  - key: de:item:b2u04-irrefuehrend
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: irreführend
+      pos: tính từ
+    back:
+      meaning:
+        vi: gây hiểu lầm, dễ khiến người ta hiểu sai
+      examples:
+        - target: Die Überschrift ist irreführend.
+          translation:
+            vi: Cái tít này gây hiểu lầm.
+        - target: Die Grafik zeigt die Zahlen auf irreführende Weise.
+          translation:
+            vi: Biểu đồ trình bày các con số theo cách gây hiểu lầm.
+      confusion:
+        vi: "Từ Partizip I của irreführen (dẫn sai hướng), dùng như tính từ: eine irreführende Überschrift."
+
+  - key: de:item:b2u04-wahrheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wahrheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thật
+      examples:
+        - target: Sag mir bitte die Wahrheit!
+          translation:
+            vi: Nói thật với mình đi!
+        - target: Die Meldung enthält nur einen Teil der Wahrheit.
+          translation:
+            vi: Bản tin chỉ chứa một phần sự thật.
+      confusion:
+        vi: "die Wahrheit sagen = nói thật; in Wahrheit = thực ra. Danh từ đuôi -heit là giống cái."
+
+  - key: de:item:b2u04-hinterfragen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: hinterfragen
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt câu hỏi, xem xét một cách phản biện
+      examples:
+        - target: Man sollte auch Meldungen aus seriösen Quellen hinterfragen.
+          translation:
+            vi: Ngay cả tin từ các nguồn nghiêm túc cũng nên được xem xét một cách phản biện.
+        - target: Sie hinterfragt jede Statistik, die sie liest.
+          translation:
+            vi: Cô ấy đặt câu hỏi với mọi số liệu thống kê mình đọc.
+      confusion:
+        vi: "hinter- ở đây không tách: ich hinterfrage, ich habe hinterfragt (không có ge-)."
+
+  - key: de:item:b2u04-screenshot
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Screenshot, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: ảnh chụp màn hình
+      examples:
+        - target: Ein Screenshot lässt sich leicht fälschen.
+          translation:
+            vi: Ảnh chụp màn hình rất dễ làm giả.
+        - target: Er hat einen Screenshot von dem Beitrag gemacht.
+          translation:
+            vi: Anh ấy đã chụp màn hình bài đăng đó.
+      confusion:
+        vi: "Từ mượn tiếng Anh, dùng với giống đực: der Screenshot, einen Screenshot machen."
+
+  - key: de:item:b2u04-taeuschen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: täuschen
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh lừa; sich täuschen = nhầm
+      examples:
+        - target: Mit dem gefälschten Video wollte man die Zuschauer täuschen.
+          translation:
+            vi: Người ta muốn dùng video giả để đánh lừa người xem.
+        - target: Ich glaube, du täuschst dich.
+          translation:
+            vi: Mình nghĩ là bạn nhầm rồi.
+      confusion:
+        vi: "jemanden täuschen = lừa người khác; sich täuschen = chính mình nhầm. Đừng quên đại từ phản thân khi muốn nói \"nhầm\"."
+
+  - key: de:item:b2u04-verschwoerungstheorie
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Verschwörungstheorie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuyết âm mưu
+      examples:
+        - target: Verschwörungstheorien verbreiten sich oft schnell in sozialen Netzwerken.
+          translation:
+            vi: Thuyết âm mưu thường lan nhanh trên mạng xã hội.
+        - target: Mein Onkel glaubt an jede Verschwörungstheorie.
+          translation:
+            vi: Chú tôi tin vào mọi thuyết âm mưu.
+      confusion:
+        vi: "Từ ghép die Verschwörung (âm mưu) + die Theorie. Tin vào điều gì: glauben an + Akkusativ."
+
+  # ================= Bài 3: Theo nguồn tin… – laut, zufolge, sollen/wollen =================
+  - key: de:item:b2u04-g-quellenangabe
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Quellenangabe: laut Polizei · dem Bericht zufolge · nach Angaben der Polizei · wie … berichtet"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để nêu nguồn tin, báo chí dùng: laut + Dativ hoặc Genitiv (laut Polizei, laut dem Bericht / laut des Berichts), … zufolge đứng sau danh từ ở Dativ (dem Bericht zufolge), nach Angaben + Genitiv (nach Angaben der Polizei), hoặc câu phụ wie … berichtet (Wie die Zeitung berichtet, …). Cả nhóm tương ứng với \"theo …\" trong tiếng Việt. Vì nguồn đã được nêu rõ, câu chính thường để ở thức thường (Indikativ); Konjunktiv I cũng có thể gặp."
+      examples:
+        - target: Laut Polizei wurde niemand verletzt.
+          translation:
+            vi: Theo cảnh sát, không ai bị thương.
+        - target: Dem Bericht zufolge ist der Schaden geringer als erwartet.
+          translation:
+            vi: Theo bản báo cáo, thiệt hại nhỏ hơn dự kiến.
+        - target: Nach Angaben der Feuerwehr brach das Feuer in der Küche aus.
+          translation:
+            vi: Theo thông tin của lính cứu hỏa, đám cháy bùng lên từ nhà bếp.
+      confusion:
+        vi: "zufolge đứng sau danh từ (dem Bericht zufolge), không đứng trước như laut. laut không dùng cho ý kiến của chính mình: không nói \"laut mir\" mà nói meiner Meinung nach."
+
+  - key: de:item:b2u04-g-sollen-wollen-fremd
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "sollen / wollen: Er soll reich sein. · Er will nichts gesehen haben."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sollen có thể mang nghĩa \"nghe nói, người ta bảo\" – thông tin từ người khác, chưa kiểm chứng: Der Täter soll geflohen sein (nghe nói thủ phạm đã bỏ trốn). wollen có thể mang nghĩa \"tự nhận, khăng khăng rằng\" – người thuật nghi ngờ lời tự nhận đó: Er will nichts gesehen haben (anh ta khăng khăng là không thấy gì). Khi nói về việc đã qua, dùng nguyên thể quá khứ ở cuối câu: Partizip II + haben/sein (gesehen haben, geflohen sein)."
+      examples:
+        - target: Die Sängerin soll schwer krank sein.
+          translation:
+            vi: Nghe nói nữ ca sĩ bị ốm nặng.
+        - target: Der Fahrer soll viel zu schnell gefahren sein.
+          translation:
+            vi: Nghe nói tài xế đã chạy quá nhanh.
+        - target: Der Nachbar will um Mitternacht einen Schrei gehört haben.
+          translation:
+            vi: Người hàng xóm khẳng định là đã nghe thấy một tiếng hét lúc nửa đêm.
+      confusion:
+        vi: "Đừng dịch soll ở đây là \"phải\": Er soll reich sein = nghe nói ông ta giàu. Với việc đã qua, thiếu haben/sein là sai: không viết \"Er will es gesehen\" mà viết Er will es gesehen haben."
+
+  - key: de:item:b2u04-angeblich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: angeblich
+      pos: trạng từ, tính từ
+    back:
+      meaning:
+        vi: được cho là, nghe nói (người nói nghi ngờ)
+      examples:
+        - target: Angeblich ist der Täter ins Ausland geflohen.
+          translation:
+            vi: Nghe nói thủ phạm đã trốn ra nước ngoài.
+        - target: Die angebliche Expertin hatte gar kein Studium abgeschlossen.
+          translation:
+            vi: Cái bà được gọi là chuyên gia ấy thậm chí chưa học xong đại học.
+      confusion:
+        vi: "angeblich gần nghĩa với soll (nghe nói, chưa chắc thật). vermutlich thì khác: chính người nói phỏng đoán (chắc là)."
+
+  - key: de:item:b2u04-augenzeuge
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Augenzeuge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân chứng (tận mắt chứng kiến)
+      examples:
+        - target: Ein Augenzeuge hat den Unfall mit dem Handy gefilmt.
+          translation:
+            vi: Một nhân chứng đã quay lại vụ tai nạn bằng điện thoại.
+        - target: Die Polizei sucht weitere Augenzeugen.
+          translation:
+            vi: Cảnh sát đang tìm thêm nhân chứng.
+      confusion:
+        vi: "Danh từ n-Deklination: den/dem/des Augenzeugen. Nữ: die Augenzeugin, -nen."
+
+  - key: de:item:b2u04-behauptung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Behauptung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời khẳng định (chưa được chứng minh)
+      examples:
+        - target: Diese Behauptung ist falsch.
+          translation:
+            vi: Lời khẳng định này sai.
+        - target: Für seine Behauptung hat er keine Beweise.
+          translation:
+            vi: Anh ta không có bằng chứng cho lời khẳng định của mình.
+      confusion:
+        vi: "Động từ: behaupten (khẳng định, cho rằng); thường hàm ý người nghe chưa tin."
+
+  - key: de:item:b2u04-bestreiten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: bestreiten, bestritt, hat bestritten
+      pos: động từ
+    back:
+      meaning:
+        vi: phủ nhận, bác bỏ (cáo buộc)
+      examples:
+        - target: Der Angeklagte bestreitet die Tat.
+          translation:
+            vi: Bị cáo phủ nhận hành vi phạm tội.
+        - target: Sie bestritt, das Geld genommen zu haben.
+          translation:
+            vi: Bà ấy phủ nhận việc đã lấy số tiền.
+      confusion:
+        vi: "bestreiten: phủ nhận điều người khác nói về mình. dementieren: chính thức cải chính một tin đã đưa ra."
+
+  - key: de:item:b2u04-dementieren
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: dementieren
+      pos: động từ
+    back:
+      meaning:
+        vi: (chính thức) cải chính, bác bỏ (tin tức, tin đồn)
+      examples:
+        - target: Die Firma hat die Meldung sofort dementiert.
+          translation:
+            vi: Công ty đã lập tức cải chính bản tin.
+        - target: Das Ministerium dementierte das Gerücht noch am selben Tag.
+          translation:
+            vi: Bộ đã bác bỏ tin đồn ngay trong ngày hôm đó.
+      confusion:
+        vi: "Từ trang trọng của báo chí; tân ngữ thường là một tin, một tin đồn. Đuôi -ieren nên Partizip II không có ge-: dementiert."
+
+  - key: de:item:b2u04-angabe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Angabe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông tin (được cung cấp, khai báo), số liệu
+      examples:
+        - target: Nach Angaben der Polizei gab es zwei Verletzte.
+          translation:
+            vi: Theo thông tin của cảnh sát, có hai người bị thương.
+        - target: Bitte machen Sie genaue Angaben zu Ihrer Person.
+          translation:
+            vi: Xin ông/bà cung cấp thông tin chính xác về bản thân.
+      confusion:
+        vi: "Hay dùng ở số nhiều die Angaben. nach eigenen Angaben = theo lời chính người đó."
+
+  - key: de:item:b2u04-stellungnahme
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Stellungnahme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuyên bố, ý kiến chính thức
+      examples:
+        - target: Die Firma hat bisher keine Stellungnahme abgegeben.
+          translation:
+            vi: Đến nay công ty vẫn chưa đưa ra tuyên bố nào.
+        - target: In einer schriftlichen Stellungnahme wies der Verein alle Vorwürfe zurück.
+          translation:
+            vi: Trong một tuyên bố bằng văn bản, câu lạc bộ đã bác bỏ mọi cáo buộc.
+      confusion:
+        vi: "Cụm cố định: eine Stellungnahme abgeben (đưa ra tuyên bố); động từ tương ứng: Stellung nehmen zu + Dativ."
+
+  # Zusatzwortschatz bài 3 (tin tức sự vụ)
+  - key: de:item:b2u04-vorfall
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Vorfall, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vụ việc, sự việc (bất thường)
+      examples:
+        - target: Bei dem Vorfall wurde niemand verletzt.
+          translation:
+            vi: Trong vụ việc, không ai bị thương.
+        - target: Die Schule hat die Eltern über den Vorfall informiert.
+          translation:
+            vi: Nhà trường đã thông báo cho phụ huynh về vụ việc.
+      confusion:
+        vi: "Số nhiều có biến âm: die Vorfälle."
+
+  - key: de:item:b2u04-taeter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Täter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thủ phạm, kẻ gây án
+      examples:
+        - target: Der Täter ist bisher unbekannt.
+          translation:
+            vi: Đến nay thủ phạm vẫn chưa được xác định.
+        - target: Die Polizei hat den Täter noch in der Nacht gefasst.
+          translation:
+            vi: Cảnh sát đã bắt được thủ phạm ngay trong đêm.
+      confusion:
+        vi: "Nữ: die Täterin, -nen. die Tat = hành vi (phạm tội)."
+
+  - key: de:item:b2u04-ermittlung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Ermittlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc điều tra
+      examples:
+        - target: Die Ermittlungen dauern noch an.
+          translation:
+            vi: Cuộc điều tra vẫn đang tiếp diễn.
+        - target: Die Staatsanwaltschaft hat Ermittlungen gegen den Fahrer eingeleitet.
+          translation:
+            vi: Viện công tố đã mở cuộc điều tra đối với người tài xế.
+      confusion:
+        vi: "Thường dùng số nhiều: die Ermittlungen."
+
+  - key: de:item:b2u04-ermitteln
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: ermitteln
+      pos: động từ
+    back:
+      meaning:
+        vi: điều tra; xác định (được)
+      examples:
+        - target: Die Polizei ermittelt wegen Betrugs.
+          translation:
+            vi: Cảnh sát đang điều tra về tội lừa đảo.
+        - target: Die Ursache des Brandes konnte noch nicht ermittelt werden.
+          translation:
+            vi: Nguyên nhân vụ cháy vẫn chưa xác định được.
+      confusion:
+        vi: "gegen jemanden ermitteln = điều tra ai đó; wegen + Genitiv = vì tội gì."
+
+  - key: de:item:b2u04-verdaechtig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verdächtig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng ngờ, khả nghi
+      examples:
+        - target: Eine Nachbarin hat einen verdächtigen Mann vor dem Haus gesehen.
+          translation:
+            vi: Một bà hàng xóm đã thấy một người đàn ông khả nghi trước nhà.
+        - target: Das kam mir sofort verdächtig vor.
+          translation:
+            vi: Tôi thấy chuyện đó đáng ngờ ngay lập tức.
+      confusion:
+        vi: "Danh từ hoá: der/die Verdächtige (nghi phạm), biến đổi đuôi như tính từ: ein Verdächtiger."
+
+  - key: de:item:b2u04-festnehmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: festnehmen, nimmt fest, nahm fest, hat festgenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: bắt giữ
+      examples:
+        - target: Die Polizei hat zwei Männer festgenommen.
+          translation:
+            vi: Cảnh sát đã bắt giữ hai người đàn ông.
+        - target: Der Verdächtige wurde am Bahnhof festgenommen.
+          translation:
+            vi: Nghi phạm đã bị bắt giữ ở nhà ga.
+      confusion:
+        vi: "Động từ tách: Die Polizei nahm den Mann fest. Danh từ: die Festnahme."
+
+  - key: de:item:b2u04-unbestaetigt
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: unbestätigt
+      pos: tính từ
+    back:
+      meaning:
+        vi: chưa được xác nhận
+      examples:
+        - target: Die Meldung ist bisher unbestätigt.
+          translation:
+            vi: Đến giờ bản tin vẫn chưa được xác nhận.
+        - target: Nach unbestätigten Berichten gibt es mehrere Verletzte.
+          translation:
+            vi: Theo những tin chưa được xác nhận, có nhiều người bị thương.
+      confusion:
+        vi: "Tiền tố un- phủ định + bestätigt (Partizip II của bestätigen = xác nhận)."
+
+  - key: de:item:b2u04-offiziell
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: offiziell
+      pos: tính từ
+    back:
+      meaning:
+        vi: chính thức
+      examples:
+        - target: Offiziell hat die Regierung noch nichts bestätigt.
+          translation:
+            vi: Chính phủ vẫn chưa chính thức xác nhận điều gì.
+        - target: Die offizielle Stellungnahme kommt erst morgen.
+          translation:
+            vi: Tuyên bố chính thức mãi đến mai mới có.
+      confusion:
+        vi: "Chính tả: hai chữ f, hai chữ l (offiziell). Trái nghĩa: inoffiziell."
+
+  - key: de:item:b2u04-luege
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Lüge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nói dối
+      examples:
+        - target: Das ist eine glatte Lüge!
+          translation:
+            vi: Đó hoàn toàn là nói dối!
+        - target: Lügen haben kurze Beine.
+          translation:
+            vi: Nói dối thì chẳng giấu được lâu. (tục ngữ)
+      confusion:
+        vi: "Động từ: lügen, log, hat gelogen. Đừng nhầm với die Lücke (chỗ trống, lỗ hổng)."
+
+  - key: de:item:b2u04-luegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: lügen, lügt, log, hat gelogen
+      pos: động từ
+    back:
+      meaning:
+        vi: nói dối
+      examples:
+        - target: Er hat gelogen, als er sagte, er sei krank.
+          translation:
+            vi: Anh ta đã nói dối khi bảo rằng mình bị ốm.
+        - target: Ich lüge nicht – das ist die Wahrheit!
+          translation:
+            vi: Tôi không nói dối – đó là sự thật!
+      confusion:
+        vi: "Động từ mạnh: Präteritum log, Partizip II gelogen. Nói dối ai: jemanden anlügen."
+
+  # ================= Bài 4: Giao tiếp hằng ngày – tiểu từ tình thái 2 =================
+  - key: de:item:b2u04-g-modalpartikeln-2
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Modalpartikeln 2: eigentlich, wohl, schon, ruhig, bloß/nur, etwa"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Các tiểu từ này thêm thái độ chứ không đổi nội dung câu: eigentlich (thật ra; trong câu hỏi: mà này, khi chuyển chủ đề), wohl (chắc là – phỏng đoán), schon (trấn an: rồi sẽ…; nhượng bộ: đúng là … nhưng), ruhig (cứ tự nhiên), bloß/nur (cảnh báo: đừng có mà…; ước: giá mà…), etwa (trong câu hỏi: chẳng lẽ…?). Chúng đứng ở giữa câu, thường sau động từ chia và sau đại từ. Đây là đặc trưng của văn nói; trong văn viết trang trọng (thư xin việc, bài luận, tin tức) gần như không dùng."
+      examples:
+        - target: Wie heißt du eigentlich?
+          translation:
+            vi: Mà này, bạn tên là gì nhỉ?
+        - target: Keine Sorge, das schaffst du schon!
+          translation:
+            vi: Đừng lo, rồi bạn sẽ làm được thôi!
+        - target: Komm ruhig rein!
+          translation:
+            vi: Cứ vào đi!
+        - target: Hast du etwa keine Zeit?
+          translation:
+            vi: Chẳng lẽ bạn không có thời gian à?
+      confusion:
+        vi: "schon ở đây không có nghĩa \"rồi\": Das wird schon! = Rồi sẽ ổn thôi! etwa trong câu hỏi khác etwa = khoảng (etwa zehn Minuten)."
+
+  - key: de:item:b2u04-koerpersprache
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Körpersprache (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngôn ngữ cơ thể
+      examples:
+        - target: Seine Körpersprache zeigt, dass er nervös ist.
+          translation:
+            vi: Ngôn ngữ cơ thể của anh ấy cho thấy anh ấy đang hồi hộp.
+        - target: Im Vorstellungsgespräch achten viele Firmen auf die Körpersprache.
+          translation:
+            vi: Trong buổi phỏng vấn xin việc, nhiều công ty chú ý đến ngôn ngữ cơ thể.
+      confusion:
+        vi: "Từ ghép der Körper + die Sprache (không có chữ s nối), giống cái theo die Sprache."
+
+  - key: de:item:b2u04-blickkontakt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Blickkontakt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: (sự) giao tiếp bằng mắt, nhìn vào mắt nhau
+      examples:
+        - target: Im Gespräch halten viele Deutsche Blickkontakt; das wirkt offen und aufmerksam.
+          translation:
+            vi: Khi trò chuyện, nhiều người Đức nhìn vào mắt người đối diện; điều đó tạo cảm giác cởi mở và chú tâm.
+        - target: Er vermeidet den Blickkontakt mit dem Publikum.
+          translation:
+            vi: Anh ấy tránh nhìn vào khán giả.
+      confusion:
+        vi: "Cụm hay gặp: Blickkontakt halten (giữ ánh mắt), Blickkontakt vermeiden (tránh nhìn)."
+
+  - key: de:item:b2u04-geste
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Geste, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cử chỉ
+      examples:
+        - target: Mit einer kurzen Geste bat sie um Ruhe.
+          translation:
+            vi: Bằng một cử chỉ ngắn, cô ấy ra hiệu xin mọi người im lặng.
+        - target: Gesten haben nicht in jeder Kultur dieselbe Bedeutung.
+          translation:
+            vi: Cử chỉ không mang cùng một ý nghĩa ở mọi nền văn hoá.
+      confusion:
+        vi: "Phát âm g trong Geste giống g trong Gast (không đọc như tiếng Anh gesture). Cũng có nghĩa bóng: eine nette Geste = một cử chỉ đẹp."
+
+  - key: de:item:b2u04-mimik
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Mimik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nét mặt, biểu cảm khuôn mặt
+      examples:
+        - target: An ihrer Mimik konnte ich sehen, dass sie enttäuscht war.
+          translation:
+            vi: Nhìn nét mặt cô ấy, tôi thấy được là cô ấy thất vọng.
+        - target: Schauspieler müssen ihre Mimik gut kontrollieren.
+          translation:
+            vi: Diễn viên phải kiểm soát tốt nét mặt của mình.
+      confusion:
+        vi: "die Mimik là cách khuôn mặt biểu cảm nói chung; một nét mặt cụ thể là der Gesichtsausdruck."
+
+  - key: de:item:b2u04-tonfall
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Tonfall (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giọng điệu, ngữ điệu
+      examples:
+        - target: Ihr Tonfall war freundlich, aber bestimmt.
+          translation:
+            vi: Giọng điệu của bà ấy thân thiện nhưng dứt khoát.
+        - target: Am Tonfall merkt man, ob jemand etwas ironisch meint.
+          translation:
+            vi: Qua giọng điệu, người ta nhận ra ai đó có đang nói mỉa hay không.
+      confusion:
+        vi: "Đi với am để nói \"qua …\": am Tonfall erkennen/merken."
+
+  - key: de:item:b2u04-ironisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ironisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: mỉa mai, châm biếm
+      examples:
+        - target: Das war doch nur ironisch gemeint!
+          translation:
+            vi: Đó chỉ là nói mỉa thôi mà!
+        - target: '"Super, schon wieder Regen", sagte sie ironisch.'
+          translation:
+            vi: '"Tuyệt thật, lại mưa nữa rồi", cô ấy nói mỉa.'
+      confusion:
+        vi: "Cụm hay gặp: etwas ironisch meinen (nói với ý mỉa mai)."
+
+  - key: de:item:b2u04-ironie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ironie (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự mỉa mai, lối nói ngược
+      examples:
+        - target: Er hat die Ironie nicht verstanden.
+          translation:
+            vi: Anh ấy không hiểu đó là nói mỉa.
+        - target: In E-Mails ist Ironie oft schwer zu erkennen.
+          translation:
+            vi: Trong e-mail, lối nói mỉa thường khó nhận ra.
+      confusion:
+        vi: "Trọng âm ở âm cuối: I-ro-NIE, đuôi -ie đọc như \"i\" dài."
+
+  - key: de:item:b2u04-andeuten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: andeuten
+      pos: động từ
+    back:
+      meaning:
+        vi: ám chỉ, nói bóng gió; ra hiệu
+      examples:
+        - target: Sie hat angedeutet, dass sie die Firma verlassen will.
+          translation:
+            vi: Cô ấy đã nói bóng gió rằng cô ấy muốn rời công ty.
+        - target: Er deutete mit dem Kopf auf die Tür.
+          translation:
+            vi: Anh ấy hất đầu ra hiệu về phía cửa.
+      confusion:
+        vi: "Động từ tách: Sie deutete an, dass … ; Partizip II: angedeutet."
+
+  # Zusatzwortschatz bài 4 (giao tiếp phi ngôn ngữ)
+  - key: de:item:b2u04-laecheln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: lächeln
+      pos: động từ
+    back:
+      meaning:
+        vi: mỉm cười
+      examples:
+        - target: Sie lächelte, aber ihre Augen blieben ernst.
+          translation:
+            vi: Cô ấy mỉm cười, nhưng ánh mắt vẫn nghiêm.
+        - target: Bitte lächeln Sie für das Foto!
+          translation:
+            vi: Xin mời ông/bà cười lên để chụp ảnh!
+      confusion:
+        vi: "lachen = cười thành tiếng; lächeln = mỉm cười. Danh từ: das Lächeln."
+
+  - key: de:item:b2u04-fluestern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: flüstern
+      pos: động từ
+    back:
+      meaning:
+        vi: thì thầm, nói thầm
+      examples:
+        - target: Im Kino flüsterte er mir etwas ins Ohr.
+          translation:
+            vi: Trong rạp chiếu phim, anh ấy thì thầm vào tai tôi điều gì đó.
+        - target: Warum flüsterst du denn?
+          translation:
+            vi: Sao bạn lại nói thầm thế?
+      confusion:
+        vi: "Trái nghĩa: schreien (la hét). jemandem etwas ins Ohr flüstern = thì thầm vào tai ai."
+
+  - key: de:item:b2u04-schweigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schweigen, schweigt, schwieg, hat geschwiegen
+      pos: động từ
+    back:
+      meaning:
+        vi: im lặng, không nói gì
+      examples:
+        - target: Nach der Frage schwieg sie eine Weile.
+          translation:
+            vi: Sau câu hỏi, cô ấy im lặng một lúc.
+        - target: Manchmal sagt Schweigen mehr als Worte.
+          translation:
+            vi: Đôi khi im lặng nói được nhiều hơn lời nói.
+      confusion:
+        vi: "schweigen là không nói; still/leise sein là không gây tiếng ồn. Danh từ hoá: das Schweigen."
+
+  - key: de:item:b2u04-haltung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Haltung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tư thế; thái độ, quan điểm
+      examples:
+        - target: Eine aufrechte Haltung wirkt selbstbewusst.
+          translation:
+            vi: Tư thế thẳng lưng trông tự tin.
+        - target: Wie ist Ihre Haltung zu diesem Thema?
+          translation:
+            vi: Quan điểm của ông/bà về chủ đề này thế nào?
+      confusion:
+        vi: "Hai nghĩa: tư thế cơ thể và thái độ, quan điểm (Haltung zu + Dativ)."
+
+  - key: de:item:b2u04-gesichtsausdruck
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gesichtsausdruck, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nét mặt, vẻ mặt
+      examples:
+        - target: An seinem Gesichtsausdruck sah ich, dass etwas nicht stimmte.
+          translation:
+            vi: Nhìn vẻ mặt anh ấy, tôi biết là có chuyện không ổn.
+        - target: Sie hatte einen ernsten Gesichtsausdruck.
+          translation:
+            vi: Cô ấy có vẻ mặt nghiêm nghị.
+      confusion:
+        vi: "Từ ghép das Gesicht + s + der Ausdruck: giống đực theo der Ausdruck; số nhiều die Gesichtsausdrücke."
+
+  - key: de:item:b2u04-den-kopf-schuetteln
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: den Kopf schütteln
+      pos: cụm từ
+    back:
+      meaning:
+        vi: lắc đầu
+      examples:
+        - target: Sie schüttelte nur den Kopf und ging.
+          translation:
+            vi: Cô ấy chỉ lắc đầu rồi bỏ đi.
+        - target: Er nickte, aber sie schüttelte den Kopf.
+          translation:
+            vi: Anh ấy gật đầu, còn cô ấy lắc đầu.
+      confusion:
+        vi: "Gật đầu là nicken (không có den Kopf). Lắc đầu có thể là \"không\" hoặc tỏ ý không tin nổi."
+
+  - key: de:item:b2u04-andeutung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Andeutung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời ám chỉ, lời bóng gió
+      examples:
+        - target: Er machte eine Andeutung über seine Pläne.
+          translation:
+            vi: Anh ấy úp mở về kế hoạch của mình.
+        - target: Sie hat meine Andeutung nicht verstanden.
+          translation:
+            vi: Cô ấy không hiểu lời bóng gió của tôi.
+      confusion:
+        vi: "Danh từ của andeuten; cụm hay gặp: eine Andeutung machen."
+
+  - key: de:item:b2u04-abstand
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Abstand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoảng cách
+      examples:
+        - target: Im Gespräch halten viele Menschen etwa eine Armlänge Abstand.
+          translation:
+            vi: Khi nói chuyện, nhiều người giữ khoảng cách chừng một sải tay.
+        - target: Bitte halten Sie Abstand!
+          translation:
+            vi: Xin vui lòng giữ khoảng cách!
+      confusion:
+        vi: "Cụm cố định: Abstand halten (giữ khoảng cách). Số nhiều có biến âm: die Abstände."

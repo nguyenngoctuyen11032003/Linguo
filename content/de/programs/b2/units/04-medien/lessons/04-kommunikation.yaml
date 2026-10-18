@@ -1,0 +1,351 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u04-kommunikation
+order_index: 4
+level: b2
+title:
+  vi: Giao tiếp hằng ngày – tiểu từ tình thái 2 (Das ist eigentlich ganz einfach.)
+objectives:
+  - vi: Nghe và hiểu sắc thái (mỉa mai, nhượng bộ, trấn an, nghi ngờ) trong hội thoại thật.
+  - vi: Dùng tự nhiên các tiểu từ eigentlich, wohl, schon, ruhig, bloß/nur, etwa khi nói.
+  - vi: Biết giữ tiểu từ cho văn nói, không đưa vào văn viết trang trọng.
+  - vi: Nói về ngôn ngữ cơ thể, nét mặt và giọng điệu.
+estimated_minutes: 21
+skills: [listening, speaking, grammar]
+prerequisites: [de:lesson:b2u04-quellen]
+items:
+  - item: de:item:b2u04-g-modalpartikeln-2
+  - item: de:item:b2u04-koerpersprache
+  - item: de:item:b2u04-blickkontakt
+  - item: de:item:b2u04-geste
+  - item: de:item:b2u04-mimik
+  - item: de:item:b2u04-tonfall
+  - item: de:item:b2u04-ironisch
+  - item: de:item:b2u04-ironie
+  - item: de:item:b2u04-andeuten
+  - item: de:item:b2u04-laecheln
+  - item: de:item:b2u04-fluestern
+  - item: de:item:b2u04-schweigen
+  - item: de:item:b2u04-haltung
+  - item: de:item:b2u04-gesichtsausdruck
+  - item: de:item:b2u04-den-kopf-schuetteln
+  - item: de:item:b2u04-andeutung
+  - item: de:item:b2u04-abstand
+  - item: de:item:b1u08-g-modalpartikeln-1
+    role: reuse
+  - item: de:item:b1u10-g-gesprochene-sprache
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nghe ra được người Đức đang trấn an, nghi ngờ hay mỉa mai qua những từ nhỏ như schon, etwa, eigentlich, và tự dùng chúng khi nói, ví dụ: \"Keine Sorge, das klappt schon!\" (Đừng lo, rồi sẽ ổn thôi!)"
+  - type: explain
+    text:
+      vi: "Ở B1 bạn đã gặp doch, mal, ja, denn, eben/halt. Bài này thêm sáu tiểu từ nữa; giống \"nhỉ, mà, chứ, thôi\" trong tiếng Việt, chúng không đổi nội dung câu mà cho biết thái độ người nói. Chúng thuộc văn nói và tin nhắn thân mật; trong thư xin việc, bài luận hay tin tức thì gần như không dùng."
+  - type: explain
+    text:
+      vi: "eigentlich trong câu kể = thật ra (Das ist eigentlich ganz einfach); trong câu hỏi = mà này, nhân tiện, thường để chuyển sang chủ đề mới (Wie heißt du eigentlich?). wohl = chắc là, người nói phỏng đoán: Er ist wohl krank (chắc anh ấy ốm)."
+  - type: explain
+    text:
+      vi: "schon không chỉ là \"rồi\": khi trấn an, nó nghĩa là \"rồi sẽ… thôi\" (Das schaffst du schon!); khi nhượng bộ, nó nghĩa là \"đúng là …, nhưng\" (Das ist schon richtig, aber …). ruhig trong lời mời, lời cho phép nghĩa là \"cứ tự nhiên\": Komm ruhig rein! / Du kannst ruhig fragen."
+  - type: explain
+    text:
+      vi: "bloß và nur trong câu mệnh lệnh là lời cảnh báo mạnh: Mach das bloß nicht! (Đừng có mà làm thế!); trong câu ước với Konjunktiv II chúng nghĩa là \"giá mà\": Wenn ich bloß mehr Zeit hätte! etwa trong câu hỏi có/không cho thấy người nói ngạc nhiên, nghi ngờ, mong câu trả lời là \"không\": Hast du etwa keine Zeit? (Chẳng lẽ bạn không có thời gian à?)"
+  - type: explain
+    text:
+      vi: "Giao tiếp còn nằm ở cơ thể: Blickkontakt (nhìn vào mắt), Mimik (nét mặt), Gesten (cử chỉ), Abstand (khoảng cách) và Tonfall (giọng điệu). Ở Đức, nhiều người coi việc nhìn vào mắt người đối diện là dấu hiệu cởi mở, thẳng thắn, trong khi ở Việt Nam đôi khi tránh nhìn thẳng lại là phép lịch sự với người lớn tuổi. Ironie (nói ngược) thường chỉ nhận ra qua giọng điệu: \"Na toll!\" có thể là \"tệ thật!\"."
+  - type: deep_explain
+    text:
+      vi: "Vị trí: tiểu từ đứng ở giữa câu (Mittelfeld), sau động từ chia và thường sau đại từ, trước phần thông tin mới: Das ist ja eigentlich ganz einfach. Có thể ghép nhiều tiểu từ theo thứ tự quen dùng: ja doch, doch mal, denn eigentlich (Was machst du denn eigentlich hier?). Một số từ có nghĩa khác khi không phải tiểu từ: etwa = khoảng (etwa zehn Minuten), schon = rồi (Ich bin schon fertig), ruhig = yên tĩnh (eine ruhige Straße), wohl = khoẻ (sich wohlfühlen), nur = chỉ. Hãy để ý trọng âm: tiểu từ thường không nhấn, còn nghĩa \"rồi\" của schon hay nghĩa \"khoảng\" của etwa thì đứng trước con số hoặc mang trọng âm. Dùng quá nhiều tiểu từ trong một câu cũng nghe không tự nhiên; mỗi câu một hai tiểu từ là đủ."
+  - type: example
+    target: Das ist eigentlich ganz einfach – ich zeige es dir.
+    target_lang: de
+    translation:
+      vi: Thật ra cái này dễ lắm – để mình chỉ cho.
+    note:
+      vi: "eigentlich làm nhẹ câu, giống \"thật ra\". Nói với bạn bè (du)."
+  - type: example
+    target: Keine Sorge, du findest schon eine Wohnung.
+    target_lang: de
+    translation:
+      vi: Đừng lo, rồi bạn sẽ tìm được nhà thôi.
+    note:
+      vi: "schon trấn an, không có nghĩa \"đã\". Câu ở thì hiện tại nhưng nói về tương lai."
+  - type: example
+    target: Lukas ist nicht ans Telefon gegangen. Er ist wohl noch im Büro.
+    target_lang: de
+    translation:
+      vi: Lukas không nghe máy. Chắc là cậu ấy vẫn còn ở văn phòng.
+    note:
+      vi: "wohl = chắc là: người nói phỏng đoán, không biết chắc."
+  - type: example
+    target: Sie können Ihre Jacke ruhig hier aufhängen.
+    target_lang: de
+    translation:
+      vi: Anh/chị cứ treo áo khoác ở đây.
+    note:
+      vi: "ruhig + können: lời cho phép thân thiện. Lịch sự với khách (Sie) vẫn dùng được tiểu từ khi nói."
+  - type: example
+    target: Pass bloß auf, die Treppe ist glatt! – Na ja, ich bin halt vorsichtig.
+    target_lang: de
+    translation:
+      vi: Cẩn thận đấy, cầu thang trơn lắm! – Ờ thì, mình vốn cẩn thận mà.
+    note:
+      vi: "bloß trong mệnh lệnh: cảnh báo mạnh. na ja (tiếng đệm) và halt (đã học ở B1) là đặc trưng văn nói."
+  - type: example
+    target: Bist du etwa schon wieder krank?
+    target_lang: de
+    translation:
+      vi: Chẳng lẽ bạn lại ốm nữa à?
+    note:
+      vi: "etwa: ngạc nhiên, nghi ngờ (mong là không phải vậy). schon wieder = lại nữa."
+  - type: common_mistake
+    wrong: Sehr geehrte Damen und Herren, ich habe eigentlich schon halt viel Erfahrung.
+    right: Sehr geehrte Damen und Herren, ich verfüge bereits über viel Erfahrung.
+    target_lang: de
+    note:
+      vi: "Thư trang trọng không dùng tiểu từ tình thái; câu có eigentlich, halt nghe như nói chuyện và thiếu tự tin."
+  - type: common_mistake
+    wrong: Eigentlich, wie heißt du?
+    right: Wie heißt du eigentlich?
+    target_lang: de
+    note:
+      vi: "Tiểu từ tình thái đứng giữa câu, sau động từ và đại từ, không tách ra đầu câu bằng dấu phẩy. Cũng đừng hiểu schon trong Das schaffst du schon! là \"rồi\": nó nghĩa là \"rồi bạn sẽ làm được thôi\"."
+  - type: summary
+    points:
+      - vi: "eigentlich: thật ra; trong câu hỏi: mà này (chuyển chủ đề)."
+      - vi: "wohl: chắc là (phỏng đoán)."
+      - vi: "schon: trấn an (rồi sẽ … thôi) hoặc nhượng bộ (đúng là …, nhưng)."
+      - vi: "ruhig: cứ tự nhiên (lời mời, cho phép)."
+      - vi: "bloß/nur: cảnh báo trong mệnh lệnh; giá mà trong câu ước."
+      - vi: "etwa: chẳng lẽ…? (câu hỏi có/không, ngạc nhiên, nghi ngờ)."
+      - vi: "Tiểu từ thuộc văn nói; không dùng trong văn viết trang trọng."
+      - vi: "Từ vựng: die Körpersprache, der Blickkontakt, die Geste, die Mimik, der Tonfall, ironisch, die Ironie, andeuten."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u04l4-listen-eigentlich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sag mal, was machst du eigentlich beruflich?
+      options:
+        - { id: e2a, text: "Mà này, bạn làm nghề gì vậy?", lang: vi }
+        - { id: e7b, text: "Bạn phải làm nghề gì?", lang: vi }
+        - { id: e4c, text: "Trước đây bạn đã làm nghề gì?", lang: vi }
+        - { id: e9d, text: "Bạn có thật sự đi làm không?", lang: vi }
+    answer:
+      correct_option_id: e2a
+    explanation:
+      vi: "eigentlich trong câu hỏi = mà này, nhân tiện – người nói chuyển sang một chủ đề mới. Câu ở thì hiện tại (machst), không có nghĩa \"phải\" hay \"trước đây\"."
+    display_answer: Mà này, bạn làm nghề gì vậy?
+
+  - key: de:exercise:b2u04l4-listen-wohl
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      audio_asset_id: null
+      fallback_text: Lukas ist heute nicht zum Training gekommen. Er ist wohl krank.
+      options:
+        - { id: k3a, text: "Hôm nay Lukas không đến buổi tập. Chắc là cậu ấy bị ốm.", lang: vi }
+        - { id: k8b, text: "Hôm nay Lukas không đến buổi tập. Cậu ấy bị ốm thật.", lang: vi }
+        - { id: k1c, text: "Hôm nay Lukas không đến buổi tập. Cậu ấy khỏe rồi.", lang: vi }
+        - { id: k6d, text: "Hôm nay Lukas đến buổi tập dù đang bị ốm.", lang: vi }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: "wohl = chắc là: người nói chỉ phỏng đoán Lukas ốm, không khẳng định. nicht … gekommen = đã không đến."
+    display_answer: Hôm nay Lukas không đến buổi tập. Chắc là cậu ấy bị ốm.
+
+  - key: de:exercise:b2u04l4-listen-schon
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      audio_asset_id: null
+      fallback_text: Keine Sorge, du findest schon eine Wohnung. Das dauert eben ein bisschen.
+      options:
+        - { id: w2a, text: "Đừng lo, rồi bạn sẽ tìm được nhà thôi. Chỉ là mất một chút thời gian.", lang: vi }
+        - { id: w5b, text: "Đừng lo, bạn đã tìm được nhà rồi. Chỉ là mất một chút thời gian.", lang: vi }
+        - { id: w9c, text: "Đừng lo, bạn không cần tìm nhà nữa.", lang: vi }
+        - { id: w3d, text: "Bạn nên lo đi, tìm nhà rất lâu đấy.", lang: vi }
+    answer:
+      correct_option_id: w2a
+    explanation:
+      vi: "schon ở đây là tiểu từ trấn an (rồi sẽ … thôi), không có nghĩa \"đã … rồi\". eben (B1) = thì vậy thôi, chấp nhận thực tế."
+    display_answer: Đừng lo, rồi bạn sẽ tìm được nhà thôi. Chỉ là mất một chút thời gian.
+
+  - key: de:exercise:b2u04l4-listen-ironie
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u04-ironisch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Na toll, der Zug fällt aus, und jetzt regnet es auch noch. Das ist ja ein super Tag!
+      options:
+        - { id: r4a, text: "Người nói đang mỉa mai: hôm nay là một ngày tệ.", lang: vi }
+        - { id: r1b, text: "Người nói rất vui vì hôm nay trời mưa.", lang: vi }
+        - { id: r7c, text: "Người nói khen tàu chạy đúng giờ.", lang: vi }
+        - { id: r5d, text: "Người nói đang kể về một ngày tuyệt vời.", lang: vi }
+    answer:
+      correct_option_id: r4a
+    explanation:
+      vi: "Tàu bị hủy (der Zug fällt aus), trời lại mưa, nên \"Na toll\" và \"ein super Tag\" là nói ngược (Ironie): ý thật là \"tệ quá\". Khi nghe, giọng điệu (Tonfall) giúp bạn nhận ra."
+    display_answer: "Người nói đang mỉa mai: hôm nay là một ngày tệ."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u04l4-fill-kopf-laecheln
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-den-kopf-schuetteln
+    prompt:
+      template: "Er sagte kein Wort. Er {{b1}} (schütteln) nur den Kopf und {{b2}} (lächeln) ironisch."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [schüttelte]
+        b2: [lächelte]
+    known_wrong:
+      - answer: schüttelt
+        feedback_vi: Câu kể chuyện ở Präteritum (sagte), nên schütteln → schüttelte.
+        error_tag: verb_form
+      - answer: lächelt
+        feedback_vi: Câu kể chuyện ở Präteritum – er lächelte.
+        error_tag: verb_form
+    explanation:
+      vi: "Câu đầu dùng Präteritum (sagte), nên giữ cùng thì: schütteln và lächeln là động từ yếu, gốc + -te: schüttelte, lächelte."
+    display_answer: "Er sagte kein Wort. Er schüttelte nur den Kopf und lächelte ironisch."
+
+  - key: de:exercise:b2u04l4-tr-eigentlich-heissen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      source_text: "Mà này, bạn tên là gì nhỉ? (nói với bạn cùng lớp, dùng eigentlich)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wie heißt du eigentlich?
+        - Sag mal, wie heißt du eigentlich?
+        - Wie heißt du denn eigentlich?
+        - Wie heißt du eigentlich noch mal?
+    known_wrong:
+      - answer: Eigentlich, wie heißt du?
+        feedback_vi: Tiểu từ tình thái đứng giữa câu, sau động từ và đại từ – Wie heißt du eigentlich?
+        error_tag: word_order
+      - answer: Wie heißen Sie eigentlich?
+        feedback_vi: Đề nói với bạn cùng lớp nên dùng du – Wie heißt du eigentlich?
+        error_tag: register_du_sie
+    explanation:
+      vi: "eigentlich trong câu hỏi = mà này, nhân tiện. Tiểu từ đứng sau động từ và đại từ: Wie heißt du eigentlich? Có thể thêm Sag mal ở đầu (văn nói)."
+    display_answer: Wie heißt du eigentlich?
+
+  - key: de:exercise:b2u04l4-tr-etwa-zeit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      source_text: "Chẳng lẽ bạn không có thời gian à? (nói với bạn thân, dùng etwa)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Hast du etwa keine Zeit?
+        - Hast du denn etwa keine Zeit?
+        - Du hast etwa keine Zeit?
+    known_wrong:
+      - answer: Hast du keine Zeit etwa?
+        feedback_vi: etwa đứng giữa câu, trước phần thông tin chính – Hast du etwa keine Zeit?
+        error_tag: word_order
+      - answer: Hast du schon keine Zeit?
+        feedback_vi: Nghi ngờ, ngạc nhiên (chẳng lẽ…?) dùng etwa; schon không có nghĩa này.
+        error_tag: word_choice
+    explanation:
+      vi: "etwa trong câu hỏi có/không = chẳng lẽ…? (ngạc nhiên, mong câu trả lời là không). Nó đứng sau du và trước keine Zeit."
+    display_answer: Hast du etwa keine Zeit?
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u04l4-mcq-pruefung-mut
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      stem: "Bạn của bạn rất lo trước kỳ thi ngày mai. Câu nào trấn an bạn ấy?"
+      stem_lang: vi
+      options:
+        - { id: m3a, text: "Keine Sorge, das schaffst du schon!", lang: de }
+        - { id: m8b, text: "Schaffst du das etwa nicht?", lang: de }
+        - { id: m1c, text: "Schaffst du das eigentlich?", lang: de }
+        - { id: m6d, text: "Mach das bloß nicht!", lang: de }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "schon trấn an: rồi bạn sẽ làm được thôi. etwa (chẳng lẽ …?) nghe nghi ngờ; eigentlich trong câu hỏi nghe như hỏi tình cờ; bloß trong mệnh lệnh là lời cảnh báo (đừng có mà làm)."
+    display_answer: Keine Sorge, das schaffst du schon!
+
+  - key: de:exercise:b2u04l4-mcq-bewerbung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      stem: "Bạn viết thư xin việc (văn viết trang trọng). Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: v5a, text: "Ich verfüge über mehrjährige Erfahrung im Verkauf.", lang: de }
+        - { id: v2b, text: "Ich habe eigentlich schon viel Erfahrung im Verkauf.", lang: de }
+        - { id: v9c, text: "Erfahrung im Verkauf habe ich ja halt schon.", lang: de }
+        - { id: v4d, text: "Im Verkauf habe ich doch wohl genug Erfahrung.", lang: de }
+    answer:
+      correct_option_id: v5a
+    explanation:
+      vi: "Thư trang trọng không dùng tiểu từ tình thái. eigentlich, ja, halt, doch, wohl khiến câu nghe như nói chuyện, thiếu chắc chắn hoặc thậm chí hơi khó chịu (doch wohl)."
+    display_answer: Ich verfüge über mehrjährige Erfahrung im Verkauf.
+
+  - key: de:exercise:b2u04l4-wb-bloss-nicht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-modalpartikeln-2
+    prompt:
+      instruction: "Sắp xếp thành câu cảnh báo (nói với bạn): \"Đừng có mà làm thế lần nữa đấy!\""
+      tokens:
+        - { id: b-nicht, text: nicht }
+        - { id: b-einmal, text: einmal }
+        - { id: b-mach, text: Mach }
+        - { id: b-noch, text: noch }
+        - { id: b-bloss, text: bloß }
+        - { id: b-das, text: das }
+        - { id: b-ausruf, text: "!" }
+    answer:
+      orders:
+        - [b-mach, b-das, b-bloss, b-nicht, b-noch, b-einmal, b-ausruf]
+    explanation:
+      vi: "Câu mệnh lệnh: động từ Mach đứng đầu. Đại từ das đứng ngay sau động từ, rồi đến tiểu từ bloß, sau đó là phủ định nicht noch einmal."
+    display_answer: Mach das bloß nicht noch einmal!

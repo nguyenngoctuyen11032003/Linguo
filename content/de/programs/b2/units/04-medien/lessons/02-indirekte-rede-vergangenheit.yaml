@@ -1,0 +1,362 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u04-indirekte-rede-vergangenheit
+order_index: 2
+level: b2
+title:
+  vi: Bà ấy nói đã… – lời gián tiếp quá khứ, câu hỏi, yêu cầu (Sie habe nichts gewusst.)
+objectives:
+  - vi: Thuật lại phát ngôn về quá khứ bằng habe/sei + Partizip II (er habe gesagt, sie sei gekommen).
+  - vi: Thuật lại câu hỏi (ob, W-Wort) và câu yêu cầu (solle, möge) ở văn viết.
+  - vi: Nhận diện tin đồn và tin giả, phân biệt lời gốc với lời được thuật lại.
+estimated_minutes: 22
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b2u04-konjunktiv-i]
+items:
+  - item: de:item:b2u04-g-indirekte-rede-vergangenheit
+  - item: de:item:b2u04-g-indirekte-frage-aufforderung
+  - item: de:item:b2u04-geruecht
+  - item: de:item:b2u04-falschmeldung
+  - item: de:item:b2u04-verbreiten
+  - item: de:item:b2u04-manipulieren
+  - item: de:item:b2u04-glaubwuerdigkeit
+  - item: de:item:b2u04-glaubwuerdig
+  - item: de:item:b2u04-faktencheck
+  - item: de:item:b2u04-ueberpruefen
+  - item: de:item:b2u04-serioes
+  - item: de:item:b2u04-faelschung
+  - item: de:item:b2u04-zweifel
+  - item: de:item:b2u04-irrefuehrend
+  - item: de:item:b2u04-wahrheit
+  - item: de:item:b2u04-hinterfragen
+  - item: de:item:b2u04-screenshot
+  - item: de:item:b2u04-taeuschen
+  - item: de:item:b2u04-verschwoerungstheorie
+  - item: de:item:b2u04-g-konjunktiv-i-formen
+    role: reuse
+  - item: de:item:b2u04-g-indirekte-rede
+    role: reuse
+  - item: de:item:a2u06-g-ob
+    role: reuse
+  - item: de:item:a1u06-g-perfekt-sein
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn thuật lại được lời người khác về chuyện đã qua, câu hỏi và lời yêu cầu theo kiểu báo chí, ví dụ: \"Die Ministerin sagte, sie habe nichts gewusst.\" (Bà bộ trưởng nói rằng bà đã không hề biết gì.) Các bản tin trong bài đều là hư cấu."
+  - type: explain
+    text:
+      vi: "Konjunktiv I chỉ có một thì quá khứ: habe/sei (Konjunktiv I) + Partizip II. Dù lời gốc ở Präteritum (Ich kam), Perfekt (Ich bin gekommen) hay Plusquamperfekt (Ich war gekommen), khi thuật lại đều thành: Er sagt, er sei gekommen."
+  - type: explain
+    text:
+      vi: "Chọn habe hay sei giống hệt Perfekt bạn học từ A1: động từ chỉ chuyển động hay đổi trạng thái (kommen, gehen, fahren, passieren, sterben) và sein, bleiben dùng sei; phần lớn động từ khác dùng habe. Nếu dạng trùng thì hiện tại (wir/sie haben gewusst), thay bằng Konjunktiv II: sie hätten gewusst, sie wären gekommen."
+  - type: explain
+    text:
+      vi: "Câu hỏi có/không được thuật bằng ob (liệu … có … không), câu hỏi có từ để hỏi giữ nguyên wer, wann, woher…; cả hai là câu phụ nên động từ đứng cuối: Sie fragte, ob er Zeit habe / woher er das wisse. Bạn đã gặp ob ở A2 (Ich weiß nicht, ob …); ở đây chỉ thêm Konjunktiv I."
+  - type: explain
+    text:
+      vi: "Câu mệnh lệnh không thể thuật bằng dạng mệnh lệnh, mà dùng sollen ở Konjunktiv I: \"Warten Sie!\" → Er sagte, ich solle warten / sie solle warten. Lời thỉnh cầu rất lịch sự, trang trọng đôi khi dùng mögen: Sie bat, man möge sie zurückrufen (văn viết, nghe khá cổ điển)."
+  - type: explain
+    text:
+      vi: "Với tin giả, hãy tách ai nói và nói gì: Konjunktiv I báo hiệu \"đây là lời người khác\", chưa phải sự thật đã kiểm chứng. Trước khi chia sẻ, hãy hỏi: Nguồn có seriös không? Lời trích có đầy đủ không? Ảnh có bị chỉnh sửa (manipuliert) không?"
+  - type: deep_explain
+    text:
+      vi: "Bảng ánh xạ thì: Gegenwart (er ist krank) → er sei krank; Vergangenheit (er war / ist krank gewesen) → er sei krank gewesen; Zukunft (er wird kommen) → er werde kommen. Không dùng würde cho quá khứ: \"er würde gestern kommen\" là sai; würde chỉ thay cho tương lai hoặc thay Konjunktiv I trùng hiện tại (sie würden kommen). Với câu hỏi gián tiếp ở ngôi ich/wir/sie, Konjunktiv I lại trùng hiện tại, nên viết: Sie fragten, ob wir Zeit hätten. Trong văn nói, người Đức thường dùng Indikativ: Sie hat gefragt, ob ich Zeit habe; Er hat gesagt, ich soll warten. Ở số nhiều, sollen ở Konjunktiv I trùng hiện tại (sie sollen), nên văn viết dùng sie sollten."
+  - type: example
+    target: Die Ministerin sagte, sie habe von dem Gerücht nichts gewusst.
+    target_lang: de
+    translation:
+      vi: Bà bộ trưởng nói rằng bà đã không hề biết gì về tin đồn đó.
+    note:
+      vi: "wissen dùng haben ở Perfekt (hat gewusst) → Konjunktiv I quá khứ: habe gewusst."
+  - type: example
+    target: Der Sprecher erklärte, der Zug sei wegen eines Unwetters ausgefallen.
+    target_lang: de
+    translation:
+      vi: Người phát ngôn giải thích rằng chuyến tàu đã bị hủy vì một trận giông bão.
+    note:
+      vi: "ausfallen đổi trạng thái nên dùng sein ở Perfekt (ist ausgefallen) → sei ausgefallen."
+  - type: example
+    target: 'Die Studenten: "Wir haben das Foto nicht manipuliert." – Die Studenten behaupten, sie hätten das Foto nicht manipuliert.'
+    target_lang: de
+    translation:
+      vi: 'Nhóm sinh viên: "Chúng tôi không chỉnh sửa bức ảnh." – Nhóm sinh viên khẳng định rằng họ đã không chỉnh sửa bức ảnh.'
+    note:
+      vi: "sie haben manipuliert trùng thì hiện tại của Perfekt, nên thay bằng Konjunktiv II: sie hätten manipuliert."
+  - type: example
+    target: Die Journalistin fragte, wer den Screenshot verbreitet habe und ob er echt sei.
+    target_lang: de
+    translation:
+      vi: Nữ nhà báo hỏi ai đã phát tán ảnh chụp màn hình và liệu nó có thật không.
+    note:
+      vi: "Hai câu hỏi gián tiếp: wer … habe (W-Frage, quá khứ) và ob … sei (có/không, hiện tại). Động từ đứng cuối."
+  - type: example
+    target: 'Die Polizei: "Verbreiten Sie keine Gerüchte!" – Die Polizei bat die Bürger, sie sollten keine Gerüchte verbreiten.'
+    target_lang: de
+    translation:
+      vi: 'Cảnh sát: "Đừng phát tán tin đồn!" – Cảnh sát đề nghị người dân không phát tán tin đồn.'
+    note:
+      vi: "Mệnh lệnh → sollen. Chủ ngữ sie (số nhiều): sie sollen trùng hiện tại nên dùng Konjunktiv II sie sollten."
+  - type: common_mistake
+    wrong: Er sagte, er habe gestern zu spät gekommen.
+    right: Er sagte, er sei gestern zu spät gekommen.
+    target_lang: de
+    note:
+      vi: "kommen dùng sein ở Perfekt (ist gekommen), nên lời thuật là sei gekommen, không phải habe gekommen."
+  - type: common_mistake
+    wrong: Sie sagte, sie würde gestern einen Faktencheck machen.
+    right: Sie sagte, sie habe gestern einen Faktencheck gemacht.
+    target_lang: de
+    note:
+      vi: "würde chỉ dùng cho tương lai (hoặc thay dạng trùng hiện tại), không dùng cho việc đã qua. Quá khứ: habe/sei + Partizip II."
+  - type: common_mistake
+    wrong: Der Leser fragte, wenn die Meldung stimme.
+    right: Der Leser fragte, ob die Meldung stimme.
+    target_lang: de
+    note:
+      vi: "\"liệu … có … không\" là ob; wenn nghĩa là \"nếu/khi\"."
+  - type: summary
+    points:
+      - vi: "Quá khứ trong lời thuật: habe/sei + Partizip II (er habe gesagt, sie sei gekommen), cho mọi thì quá khứ của lời gốc."
+      - vi: "habe/sei chọn như Perfekt; trùng hiện tại → hätten/wären + Partizip II."
+      - vi: "Không dùng würde cho quá khứ; tương lai: er werde kommen."
+      - vi: "Câu hỏi: ob / W-Wort + động từ (Konjunktiv I) ở cuối câu."
+      - vi: "Yêu cầu: er solle …, số nhiều sie sollten …; rất trang trọng: man möge …"
+      - vi: "Từ vựng: das Gerücht, die Falschmeldung, verbreiten, manipulieren, glaubwürdig, der Faktencheck, überprüfen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u04l2-mcq-sei-gekommen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u04-g-indirekte-rede-vergangenheit
+    prompt:
+      stem: 'Chọn dạng đúng (văn báo chí). Der Spieler: "Ich bin zu spät gekommen." → Der Spieler sagte, er ___ zu spät gekommen.'
+      stem_lang: vi
+      options:
+        - { id: g2a, text: "sei", lang: de }
+        - { id: g7b, text: "habe", lang: de }
+        - { id: g4c, text: "werde", lang: de }
+        - { id: g9d, text: "seien", lang: de }
+    answer:
+      correct_option_id: g2a
+    explanation:
+      vi: "kommen dùng sein ở Perfekt (ich bin gekommen), nên lời thuật quá khứ là er sei gekommen. habe sai trợ động từ, werde là tương lai, seien là số nhiều."
+    display_answer: sei
+
+  - key: de:exercise:b2u04l2-mcq-ob
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u04-g-indirekte-frage-aufforderung
+    prompt:
+      stem: 'Die Journalistin: "Treten Sie zurück, Herr Minister?" → Die Journalistin fragte den Minister, ___ er zurücktrete.'
+      stem_lang: de
+      options:
+        - { id: o3a, text: "ob", lang: de }
+        - { id: o8b, text: "wenn", lang: de }
+        - { id: o5c, text: "dass", lang: de }
+        - { id: o1d, text: "was", lang: de }
+    answer:
+      correct_option_id: o3a
+    explanation:
+      vi: "Câu hỏi gốc là câu có/không (không có từ để hỏi), nên thuật bằng ob (liệu … có … không). wenn = nếu/khi, dass dùng cho câu kể, was dùng khi câu gốc hỏi \"cái gì\"."
+    display_answer: ob
+
+  - key: de:exercise:b2u04l2-mcq-solle
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-indirekte-frage-aufforderung
+    prompt:
+      stem: 'Chọn dạng Konjunktiv I đúng (văn báo chí). Der Arzt zur Patientin: "Bleiben Sie im Bett!" → Der Arzt sagte, die Patientin ___ im Bett bleiben.'
+      stem_lang: vi
+      options:
+        - { id: l6a, text: "solle", lang: de }
+        - { id: l2b, text: "sollen", lang: de }
+        - { id: l9c, text: "werde", lang: de }
+        - { id: l4d, text: "sollest", lang: de }
+    answer:
+      correct_option_id: l6a
+    explanation:
+      vi: "Câu mệnh lệnh được thuật bằng sollen; chủ ngữ die Patientin (ngôi thứ ba số ít) → Konjunktiv I: solle. sollen là số nhiều, sollest là ngôi du, werde biến lời dặn thành dự báo tương lai."
+    display_answer: solle
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u04l2-fill-zeugin
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-indirekte-rede-vergangenheit
+    prompt:
+      template: 'Die Zeugin: "Ich habe nichts gesehen. Ich bin sofort nach Hause gegangen." → Die Zeugin sagte, sie {{b1}} nichts gesehen. Sie {{b2}} sofort nach Hause gegangen.'
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [habe]
+        b2: [sei]
+    known_wrong:
+      - answer: hat
+        feedback_vi: Đây là thì hiện tại (Indikativ); văn báo chí cần Konjunktiv I – sie habe gesehen.
+        error_tag: konjunktiv_form
+      - answer: ist
+        feedback_vi: Văn báo chí cần Konjunktiv I – sie sei gegangen.
+        error_tag: konjunktiv_form
+      - answer: würde
+        feedback_vi: würde không dùng cho việc đã qua; quá khứ là habe/sei + Partizip II.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "sehen dùng haben ở Perfekt → sie habe gesehen; gehen là động từ chuyển động, dùng sein → sie sei gegangen. Ngôi sie (số ít) có dạng Konjunktiv I riêng nên không cần thay."
+    display_answer: "Die Zeugin sagte, sie habe nichts gesehen. Sie sei sofort nach Hause gegangen."
+
+  - key: de:exercise:b2u04l2-fill-woher-habe
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-indirekte-frage-aufforderung
+    prompt:
+      template: 'Ein Leser: "Woher hat die Zeitung diese Information?" → Ein Leser wollte wissen, {{b1}} die Zeitung diese Information {{b2}}.'
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [woher]
+        b2: [habe]
+    known_wrong:
+      - answer: ob
+        feedback_vi: Câu gốc có từ để hỏi (woher), nên giữ nguyên woher; ob chỉ dùng cho câu hỏi có/không.
+        error_tag: conjunction
+      - answer: hat
+        feedback_vi: Văn báo chí dùng Konjunktiv I – woher die Zeitung die Information habe.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Câu hỏi W giữ nguyên từ để hỏi woher; vì là câu phụ, động từ habe (Konjunktiv I của haben, ngôi die Zeitung) đứng cuối."
+    display_answer: "Ein Leser wollte wissen, woher die Zeitung diese Information habe."
+
+  - key: de:exercise:b2u04l2-tr-arzt-trinken
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-indirekte-frage-aufforderung
+    prompt:
+      source_text: "Bác sĩ (der Arzt) dặn rằng ông Krüger nên uống nhiều nước. (văn báo chí, dùng Konjunktiv I của sollen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Arzt sagte, Herr Krüger solle viel trinken.
+        - Der Arzt sagte, Herr Krüger solle viel Wasser trinken.
+        - Der Arzt sagte, dass Herr Krüger viel trinken solle.
+        - Der Arzt sagte, dass Herr Krüger viel Wasser trinken solle.
+        - Der Arzt sagt, Herr Krüger solle viel trinken.
+        - Der Arzt sagt, Herr Krüger solle viel Wasser trinken.
+        - Der Arzt sagt, dass Herr Krüger viel trinken solle.
+        - Der Arzt sagt, dass Herr Krüger viel Wasser trinken solle.
+        - Der Arzt hat gesagt, Herr Krüger solle viel trinken.
+        - Der Arzt hat gesagt, Herr Krüger solle viel Wasser trinken.
+        - Der Arzt hat gesagt, dass Herr Krüger viel trinken solle.
+        - Der Arzt hat gesagt, dass Herr Krüger viel Wasser trinken solle.
+    known_wrong:
+      - answer: Der Arzt sagte, Herr Krüger soll viel trinken.
+        feedback_vi: Câu này dùng được khi nói chuyện, nhưng đề yêu cầu Konjunktiv I – Herr Krüger solle.
+        error_tag: konjunktiv_form
+      - answer: Der Arzt sagte, Herr Krüger muss viel trinken.
+        feedback_vi: Lời dặn, mệnh lệnh được thuật bằng sollen ở Konjunktiv I – solle.
+        error_tag: konjunktiv_form
+      - answer: Der Arzt sagte, dass Herr Krüger solle viel trinken.
+        feedback_vi: Có dass thì động từ chia đứng cuối – dass Herr Krüger viel trinken solle.
+        error_tag: verb_position
+    explanation:
+      vi: "Lời dặn gốc là mệnh lệnh (Trinken Sie viel!), nên thuật bằng sollen; ngôi Herr Krüger (số ít) → solle. Không dass: solle ở vị trí 2; có dass: solle đứng cuối, sau trinken."
+    display_answer: Der Arzt sagte, Herr Krüger solle viel trinken.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u04l2-wb-minister-geruecht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-geruecht
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ông bộ trưởng tuyên bố rằng ông đã không hề biết gì về tin đồn đó.\""
+      tokens:
+        - { id: m-gewusst, text: gewusst }
+        - { id: m-er, text: er }
+        - { id: m-dem, text: dem }
+        - { id: m-erklaerte, text: erklärte }
+        - { id: m-minister, text: Minister }
+        - { id: m-nichts, text: nichts }
+        - { id: m-komma, text: "," }
+        - { id: m-geruecht, text: Gerücht }
+        - { id: m-der, text: Der }
+        - { id: m-habe, text: habe }
+        - { id: m-von, text: von }
+    answer:
+      orders:
+        - [m-der, m-minister, m-erklaerte, m-komma, m-er, m-habe, m-von, m-dem, m-geruecht, m-nichts, m-gewusst]
+        - [m-der, m-minister, m-erklaerte, m-komma, m-er, m-habe, m-nichts, m-von, m-dem, m-geruecht, m-gewusst]
+    explanation:
+      vi: "Không có dass nên lời thuật giữ vị trí 2: er habe …; Partizip II gewusst đứng cuối (khung câu). von dem Gerücht có thể đứng trước hoặc sau nichts."
+    display_answer: Der Minister erklärte, er habe von dem Gerücht nichts gewusst.
+
+  - key: de:exercise:b2u04l2-tr-ob-glaubwuerdig
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-glaubwuerdig
+    prompt:
+      source_text: "Cô ấy hỏi liệu bản tin đó có đáng tin không. (văn viết, dùng Konjunktiv I; bản tin: die Meldung)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Sie fragte, ob die Meldung glaubwürdig sei.
+        - Sie fragte, ob diese Meldung glaubwürdig sei.
+        - Sie hat gefragt, ob die Meldung glaubwürdig sei.
+        - Sie hat gefragt, ob diese Meldung glaubwürdig sei.
+        - Sie fragt, ob die Meldung glaubwürdig sei.
+        - Sie fragt, ob diese Meldung glaubwürdig sei.
+    known_wrong:
+      - answer: Sie fragte, ob die Meldung sei glaubwürdig.
+        feedback_vi: Câu ob là câu phụ, động từ đứng cuối – ob die Meldung glaubwürdig sei.
+        error_tag: verb_position
+      - answer: Sie fragte, wenn die Meldung glaubwürdig sei.
+        feedback_vi: "\"liệu … có … không\" là ob, không phải wenn."
+        error_tag: conjunction
+      - answer: Sie fragte, ob die Meldung glaubwürdig ist.
+        feedback_vi: Câu này dùng được khi nói chuyện, nhưng đề yêu cầu Konjunktiv I – sei.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Câu hỏi có/không → ob; động từ sein ở Konjunktiv I (ngôi die Meldung) là sei, đứng cuối câu phụ."
+    display_answer: Sie fragte, ob die Meldung glaubwürdig sei.
+
+  - key: de:exercise:b2u04l2-mcq-faktencheck-lesen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-faktencheck
+    prompt:
+      stem: "Seit Tagen wird im Netz ein Zitat der Bürgermeisterin von Musterstadt geteilt. Sie habe gesagt, die Stadt werde alle Spielplätze schließen. Unsere Redaktion hat einen Faktencheck gemacht: Die Bürgermeisterin hat das nie gesagt, der Screenshot ist manipuliert. Ein Sprecher der Stadt erklärte, man plane keine Schließungen. — Richtig oder falsch? Die Bürgermeisterin hat wirklich angekündigt, die Spielplätze zu schließen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Câu \"Sie habe gesagt, die Stadt werde …\" ở Konjunktiv I chỉ thuật lại tin đang lan trên mạng. Phần kiểm chứng viết ở Indikativ: Die Bürgermeisterin hat das nie gesagt, der Screenshot ist manipuliert – bà chưa bao giờ nói vậy. Câu này sai."
+    display_answer: Falsch

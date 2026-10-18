@@ -1,0 +1,370 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u04-konjunktiv-i
+order_index: 1
+level: b2
+title:
+  vi: Ông ấy nói rằng… – Konjunktiv I (Der Minister sagte, er sei zufrieden.)
+objectives:
+  - vi: Nhận ra và tạo dạng Konjunktiv I, nhất là ngôi thứ ba số ít (er sei, habe, werde, könne, müsse, gehe, komme).
+  - vi: Thuật lại lời người khác theo cách báo chí (gián tiếp, giữ khoảng cách), đổi đại từ cho đúng người thuật.
+  - vi: Biết khi nào phải thay Konjunktiv I bằng Konjunktiv II (sie hätten, sie kämen).
+  - vi: Đọc hiểu câu tường thuật trong tin tức và họp báo.
+estimated_minutes: 21
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u03-wiederholung]
+items:
+  - item: de:item:b2u04-g-konjunktiv-i-formen
+  - item: de:item:b2u04-g-indirekte-rede
+  - item: de:item:b2u04-presse
+  - item: de:item:b2u04-pressefreiheit
+  - item: de:item:b2u04-sender
+  - item: de:item:b2u04-redaktion
+  - item: de:item:b2u04-zitieren
+  - item: de:item:b2u04-zitat
+  - item: de:item:b2u04-aeusserung
+  - item: de:item:b2u04-aeussern
+  - item: de:item:b2u04-pressekonferenz
+  - item: de:item:b2u04-nachrichtenagentur
+  - item: de:item:b2u04-korrespondent
+  - item: de:item:b2u04-berichterstattung
+  - item: de:item:b2u04-oeffentlichkeit
+  - item: de:item:b2u04-unabhaengig
+  - item: de:item:b2u04-betonen
+  - item: de:item:b2u04-pressemitteilung
+  - item: de:item:b2u04-medium
+  - item: de:item:b2u04-rundfunk
+  - item: de:item:b1u01-g-praeteritum-system
+    role: reuse
+  - item: de:item:b1u04-g-konjunktiv-ii-formen
+    role: reuse
+  - item: de:item:b1u07-sprecher
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn thuật lại được lời người khác theo kiểu tin tức, ví dụ: \"Der Minister sagte, er sei mit dem Ergebnis zufrieden.\" (Bộ trưởng nói rằng ông hài lòng với kết quả.) Mọi bản tin và tên người trong bài đều là hư cấu để luyện tập."
+  - type: explain
+    text:
+      vi: "Tiếng Việt thuật lời người khác chỉ cần thêm \"nói rằng\", động từ không đổi. Tiếng Đức trong văn báo chí đổi động từ sang Konjunktiv I để cho thấy: đây là lời của người khác, nhà báo không khẳng định là đúng. Vì vậy er sei, er habe không phải lỗi chính tả mà là dạng chuẩn của văn viết."
+  - type: explain
+    text:
+      vi: "Cách tạo: lấy gốc của nguyên thể + đuôi -e ở ngôi er/sie/es: kommen → er komme, gehen → er gehe, werden → er werde, können → er könne, müssen → er müsse, haben → er habe. Riêng sein: er sei (số nhiều: sie seien). Gốc lấy từ nguyên thể nên không đổi nguyên âm như thì hiện tại: er fährt → er fahre, er gibt → er gebe."
+  - type: explain
+    text:
+      vi: "Khi thuật lại, bạn đổi đại từ theo góc nhìn người thuật: Lan: \"Ich bin müde.\" → Lan sagt, sie sei müde. Có thể bỏ dass (động từ ở vị trí 2: …, sie sei müde) hoặc dùng dass (động từ cuối: …, dass sie müde sei); nghĩa như nhau."
+  - type: explain
+    text:
+      vi: "Nếu dạng Konjunktiv I giống hệt thì hiện tại (thường ở ich, wir, sie/Sie: wir haben, sie kommen), người đọc không nhận ra đó là lời gián tiếp. Khi đó bạn dùng Konjunktiv II đã học ở B1: sie hätten, sie kämen, hoặc würde + nguyên thể (sie würden kommen). Riêng sein không cần thay, vì sie seien đã khác thì hiện tại."
+  - type: explain
+    text:
+      vi: "Ngữ vực: Konjunktiv I thuộc văn viết (tin tức, thông cáo, biên bản) và lời nói trang trọng như bản tin truyền hình. Khi trò chuyện hằng ngày, người Đức thường dùng thì hiện tại hoặc Konjunktiv II: Er hat gesagt, er hat keine Zeit / er hätte keine Zeit. Bạn cần đọc hiểu cả ba cách, còn khi viết bản tin hay tóm tắt thì dùng Konjunktiv I."
+  - type: deep_explain
+    text:
+      vi: "Bảng đầy đủ: sein – ich sei, du seist, er sei, wir seien, ihr seiet, sie seien; haben – ich habe, du habest, er habe, wir haben, ihr habet, sie haben; können – ich könne, du könnest, er könne, wir können, ihr könnet, sie können. Các dạng du/ihr (habest, könnet) rất hiếm, nghe cổ; người ta thay bằng Konjunktiv II. Quy tắc thực dụng: ngôi er/sie/es luôn có dạng Konjunktiv I riêng (đuôi -e, khác dạng hiện tại -t), còn ich/wir/sie thì phần lớn trùng hiện tại (trừ sein), nên phải thay bằng Konjunktiv II. Động từ dẫn lời trong tin tức thường ở Präteritum: sagte, erklärte, betonte, teilte mit, äußerte; thì của động từ dẫn không ảnh hưởng đến Konjunktiv I trong lời thuật. Nếu thuật lại vào ngày khác, các từ chỉ thời gian, nơi chốn cũng đổi cho hợp: heute → an diesem Tag, morgen → am nächsten Tag, hier → dort."
+  - type: example
+    target: Der Minister sagte, er sei mit dem Ergebnis zufrieden.
+    target_lang: de
+    translation:
+      vi: Ông bộ trưởng nói rằng ông hài lòng với kết quả.
+    note:
+      vi: "sei là Konjunktiv I của sein (ngôi er). sagte là Präteritum của sagen – động từ dẫn lời hay dùng trong tin tức."
+  - type: example
+    target: In einer Pressemitteilung erklärte die Firma, sie habe keine finanziellen Probleme und plane keine Entlassungen.
+    target_lang: de
+    translation:
+      vi: Trong một thông cáo báo chí, công ty tuyên bố rằng họ không gặp khó khăn tài chính và không có kế hoạch sa thải.
+    note:
+      vi: "die Firma → đại từ sie (giống cái, số ít) nên dùng habe, plane (ngôi thứ ba số ít, đuôi -e)."
+  - type: example
+    target: 'Die Eltern: "Wir haben keine Zeit." – Die Eltern sagten, sie hätten keine Zeit.'
+    target_lang: de
+    translation:
+      vi: 'Bố mẹ: "Chúng tôi không có thời gian." – Bố mẹ nói rằng họ không có thời gian.'
+    note:
+      vi: "Konjunktiv I của sie (họ) là haben, trùng với thì hiện tại, nên thay bằng Konjunktiv II: hätten. wir của người nói đổi thành sie."
+  - type: example
+    target: 'Ein Sprecher des Senders betonte, die Redaktion arbeite unabhängig, und niemand könne ihr Anweisungen geben.'
+    target_lang: de
+    translation:
+      vi: Một người phát ngôn của đài nhấn mạnh rằng ban biên tập làm việc độc lập và không ai có thể ra chỉ thị cho họ.
+    note:
+      vi: "arbeite (arbeiten), könne (können): gốc nguyên thể + -e. Hai lời thuật nối bằng und, cả hai đều ở Konjunktiv I."
+  - type: example
+    target: 'Lan: "Ich kann morgen nicht kommen." – Lan schreibt, sie könne morgen nicht kommen.'
+    target_lang: de
+    translation:
+      vi: 'Lan: "Mai mình không đến được." – Lan nhắn rằng mai cô ấy không đến được.'
+    note:
+      vi: "ich → sie. Thuật lại ngay trong ngày nên morgen giữ nguyên; nếu kể lại vào hôm khác thì đổi thành am nächsten Tag."
+  - type: common_mistake
+    wrong: Der Trainer sagt, der Bus fähre um acht Uhr ab.
+    right: Der Trainer sagt, der Bus fahre um acht Uhr ab.
+    target_lang: de
+    note:
+      vi: "Konjunktiv I lấy gốc nguyên thể (fahren) nên không có biến âm: er fahre. fährt chỉ là thì hiện tại."
+  - type: common_mistake
+    wrong: 'Anna: "Ich bin krank." – Anna sagt, ich sei krank.'
+    right: 'Anna: "Ich bin krank." – Anna sagt, sie sei krank.'
+    target_lang: de
+    note:
+      vi: "Phải đổi đại từ theo người thuật: ich của Anna thành sie. Giữ ich nghĩa là chính người thuật bị ốm."
+  - type: common_mistake
+    wrong: Der Minister sagte, er wäre zufrieden, weil er sei optimistisch.
+    right: Der Minister sagte, er sei zufrieden, weil er optimistisch sei.
+    target_lang: de
+    note:
+      vi: "Trong văn báo chí, ngôi er có dạng Konjunktiv I riêng (sei) nên không cần wäre. Câu phụ weil vẫn đặt động từ ở cuối, kể cả khi ở Konjunktiv I."
+  - type: summary
+    points:
+      - vi: "Konjunktiv I = gốc nguyên thể + -e: er komme, gehe, habe, werde, könne, müsse; sein: er sei, sie seien."
+      - vi: "Không biến âm như thì hiện tại: er fahre, er gebe, er könne."
+      - vi: "Thuật lại: đổi đại từ theo người thuật; có dass → động từ cuối, không dass → vị trí 2."
+      - vi: "Trùng thì hiện tại (wir/sie haben, sie kommen) → Konjunktiv II: hätten, kämen hoặc würden + nguyên thể."
+      - vi: "Ngữ vực: Konjunktiv I của văn viết, tin tức; khi nói thường dùng thì hiện tại hoặc Konjunktiv II."
+      - vi: "Từ vựng: die Presse, die Pressefreiheit, der Sender, die Redaktion, zitieren, das Zitat, die Äußerung, äußern."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u04l1-mcq-sei
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u04-g-konjunktiv-i-formen
+    prompt:
+      stem: 'Chọn dạng Konjunktiv I đúng (văn báo chí). Der Bürgermeister: "Ich bin zufrieden." → Der Bürgermeister sagte, er ___ zufrieden.'
+      stem_lang: vi
+      options:
+        - { id: s4k, text: "sei", lang: de }
+        - { id: s7p, text: "seien", lang: de }
+        - { id: s2m, text: "seist", lang: de }
+        - { id: s9w, text: "sein", lang: de }
+    answer:
+      correct_option_id: s4k
+    explanation:
+      vi: "Chủ ngữ er (ngôi thứ ba số ít) → Konjunktiv I của sein là sei. seien dùng cho wir/sie (số nhiều), seist cho du, sein là nguyên thể."
+    display_answer: sei
+
+  - key: de:exercise:b2u04l1-mcq-fahre
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u04-g-konjunktiv-i-formen
+    prompt:
+      stem: 'Chọn dạng Konjunktiv I đúng. Die Lehrerin: "Der Bus fährt um acht Uhr." → Die Lehrerin sagte, der Bus ___ um acht Uhr.'
+      stem_lang: vi
+      options:
+        - { id: f3a, text: "fahre", lang: de }
+        - { id: f6b, text: "fahren", lang: de }
+        - { id: f1c, text: "fuhr", lang: de }
+        - { id: f8d, text: "gefahren", lang: de }
+    answer:
+      correct_option_id: f3a
+    explanation:
+      vi: "Konjunktiv I lấy gốc nguyên thể fahr- + -e: der Bus fahre (không biến âm như fährt). fahren là nguyên thể hoặc ngôi số nhiều, fuhr là Präteritum (đổi nghĩa thành quá khứ), gefahren là Partizip II."
+    display_answer: fahre
+
+  - key: de:exercise:b2u04l1-mcq-haetten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-indirekte-rede
+    prompt:
+      stem: 'Văn báo chí: Konjunktiv I, nếu trùng thì hiện tại thì thay bằng Konjunktiv II. Die Gäste: "Wir haben keinen Hunger." → Die Gäste sagten, sie ___ keinen Hunger.'
+      stem_lang: vi
+      options:
+        - { id: h5a, text: "hätten", lang: de }
+        - { id: h2b, text: "habe", lang: de }
+        - { id: h8c, text: "hättet", lang: de }
+        - { id: h4d, text: "hatten", lang: de }
+    answer:
+      correct_option_id: h5a
+    explanation:
+      vi: "Chủ ngữ sie (họ) – Konjunktiv I là sie haben, trùng thì hiện tại, nên thay bằng Konjunktiv II: sie hätten. habe là ngôi số ít, hättet là ngôi ihr, hatten là Präteritum (chỉ quá khứ, không phải lời gián tiếp)."
+    display_answer: hätten
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u04l1-fill-buergermeisterin
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-konjunktiv-i-formen
+    prompt:
+      template: 'Die Bürgermeisterin: "Die Stadt hat kein Geld. Sie kann das Schwimmbad nicht renovieren. Ich werde mit dem Land sprechen." → Die Bürgermeisterin sagte, die Stadt {{b1}} kein Geld, sie {{b2}} das Schwimmbad nicht renovieren. Sie {{b3}} mit dem Land sprechen.'
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [habe]
+        b2: [könne]
+        b3: [werde]
+    known_wrong:
+      - answer: hat
+        feedback_vi: Đây là thì hiện tại; văn báo chí cần Konjunktiv I – die Stadt habe.
+        error_tag: konjunktiv_form
+      - answer: kann
+        feedback_vi: Konjunktiv I của können lấy gốc nguyên thể – sie könne.
+        error_tag: konjunktiv_form
+      - answer: wird
+        feedback_vi: Konjunktiv I của werden là er/sie werde (không phải wird).
+        error_tag: konjunktiv_form
+      - answer: könnte
+        feedback_vi: könnte là Konjunktiv II; ngôi sie (số ít) có dạng Konjunktiv I riêng là könne.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Cả ba chủ ngữ đều là ngôi thứ ba số ít (die Stadt, sie = bà thị trưởng/thành phố), nên dùng gốc nguyên thể + -e: habe, könne, werde. Ngôi này luôn khác thì hiện tại, nên không cần thay bằng Konjunktiv II."
+    display_answer: "Die Bürgermeisterin sagte, die Stadt habe kein Geld, sie könne das Schwimmbad nicht renovieren. Sie werde mit dem Land sprechen."
+
+  - key: de:exercise:b2u04l1-fill-sohn-krank
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-indirekte-rede
+    prompt:
+      template: 'Herr Krüger: "Mein Sohn ist krank, und ich muss zu Hause bleiben." → Herr Krüger sagt, {{b1}} Sohn {{b2}} krank, und er {{b3}} zu Hause bleiben.'
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [sein]
+        b2: [sei]
+        b3: [müsse]
+    known_wrong:
+      - answer: mein
+        feedback_vi: Phải đổi đại từ theo người thuật – con trai của Herr Krüger là sein Sohn.
+        error_tag: pronoun
+      - answer: ist
+        feedback_vi: Văn báo chí dùng Konjunktiv I – sein Sohn sei krank.
+        error_tag: konjunktiv_form
+      - answer: muss
+        feedback_vi: Konjunktiv I của müssen là er müsse (gốc nguyên thể + -e).
+        error_tag: konjunktiv_form
+      - answer: müsste
+        feedback_vi: müsste là Konjunktiv II; ngôi er có dạng Konjunktiv I riêng – er müsse.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "mein (của tôi, theo lời Herr Krüger) → sein (của ông ấy). sein Sohn sei (Konjunktiv I của sein), er müsse (gốc müss- + -e). Không có dass nên động từ đứng ở vị trí 2."
+    display_answer: "Herr Krüger sagt, sein Sohn sei krank, und er müsse zu Hause bleiben."
+
+  - key: de:exercise:b2u04l1-tr-weber-zeit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u04-g-indirekte-rede
+    prompt:
+      source_text: "Ông Weber nói rằng ông không có thời gian. (văn báo chí, dùng Konjunktiv I)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Herr Weber sagt, er habe keine Zeit.
+        - Herr Weber sagt, dass er keine Zeit habe.
+        - Herr Weber sagte, er habe keine Zeit.
+        - Herr Weber sagte, dass er keine Zeit habe.
+        - Herr Weber hat gesagt, er habe keine Zeit.
+        - Herr Weber hat gesagt, dass er keine Zeit habe.
+    known_wrong:
+      - answer: Herr Weber sagt, ich habe keine Zeit.
+        feedback_vi: Phải đổi đại từ theo người thuật – ông Weber là er, không phải ich.
+        error_tag: pronoun
+      - answer: Herr Weber sagt, er hat keine Zeit.
+        feedback_vi: Câu này dùng được khi nói chuyện, nhưng đề yêu cầu văn báo chí – Konjunktiv I là er habe.
+        error_tag: konjunktiv_form
+      - answer: Herr Weber sagt, dass er habe keine Zeit.
+        feedback_vi: Có dass thì động từ đứng cuối – dass er keine Zeit habe.
+        error_tag: verb_position
+    explanation:
+      vi: "Ngôi er của haben ở Konjunktiv I là habe. Bỏ dass: er habe keine Zeit (vị trí 2); dùng dass: dass er keine Zeit habe (động từ cuối). Động từ dẫn sagt/sagte/hat gesagt đều được."
+    display_answer: Herr Weber sagt, er habe keine Zeit.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u04l1-wb-sendung-ausfalle
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-sender
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đài thông báo rằng chương trình hôm nay bị hủy.\""
+      tokens:
+        - { id: s-heute, text: heute }
+        - { id: s-mit, text: mit }
+        - { id: s-sendung, text: Sendung }
+        - { id: s-der, text: Der }
+        - { id: s-ausfalle, text: ausfalle }
+        - { id: s-dass, text: dass }
+        - { id: s-sender, text: Sender }
+        - { id: s-komma, text: "," }
+        - { id: s-die, text: die }
+        - { id: s-teilte, text: teilte }
+    answer:
+      orders:
+        - [s-der, s-sender, s-teilte, s-mit, s-komma, s-dass, s-die, s-sendung, s-heute, s-ausfalle]
+        - [s-der, s-sender, s-teilte, s-mit, s-komma, s-dass, s-heute, s-die, s-sendung, s-ausfalle]
+    explanation:
+      vi: "mitteilen là động từ tách: teilte … mit. Câu dass đặt động từ ở cuối, và ở văn báo chí động từ đó ở Konjunktiv I: ausfalle (gốc nguyên thể ausfall- + -e). heute có thể đứng trước hoặc sau die Sendung."
+    display_answer: Der Sender teilte mit, dass die Sendung heute ausfalle.
+
+  - key: de:exercise:b2u04l1-tr-korrespondent
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u04-korrespondent
+    prompt:
+      source_text: Unsere Korrespondentin berichtet, die Lage sei ruhig, aber viele Menschen hätten Angst.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phóng viên thường trú của chúng tôi cho biết tình hình yên ổn, nhưng nhiều người lo sợ.
+        - Phóng viên thường trú của chúng tôi cho biết tình hình yên ổn, nhưng nhiều người sợ hãi.
+        - Phóng viên thường trú của chúng tôi cho biết tình hình yên ổn, nhưng nhiều người đang lo sợ.
+        - Phóng viên thường trú của chúng tôi đưa tin rằng tình hình yên ổn, nhưng nhiều người lo sợ.
+        - Phóng viên thường trú của chúng tôi cho biết tình hình yên tĩnh, nhưng nhiều người lo sợ.
+        - Phóng viên thường trú của chúng tôi cho biết tình hình bình yên, nhưng nhiều người lo sợ.
+        - Phóng viên thường trú của chúng tôi cho biết tình hình bình yên, nhưng nhiều người sợ hãi.
+        - Nữ phóng viên thường trú của chúng tôi cho biết tình hình yên ổn, nhưng nhiều người lo sợ.
+        - Phóng viên của chúng tôi cho biết tình hình yên ổn, nhưng nhiều người lo sợ.
+        - Phóng viên của chúng tôi đưa tin rằng tình hình yên ổn, nhưng nhiều người lo sợ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Phóng viên thường trú của chúng tôi cho biết tình hình yên ổn, và không ai lo sợ.
+        feedback_vi: "aber viele Menschen hätten Angst = nhưng nhiều người lo sợ (hätten Angst là Konjunktiv II thay cho Konjunktiv I trùng hiện tại, nghĩa vẫn là hiện tại)."
+        error_tag: meaning
+    explanation:
+      vi: "sei và hätten cho biết đây là lời của phóng viên được thuật lại; tiếng Việt diễn đạt bằng \"cho biết (rằng)\". hätten ở đây không mang nghĩa \"giá mà\": nó chỉ thay Konjunktiv I haben vốn trùng thì hiện tại."
+    display_answer: Phóng viên thường trú của chúng tôi cho biết tình hình yên ổn, nhưng nhiều người lo sợ.
+
+  - key: de:exercise:b2u04l1-mcq-schulzeitung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-indirekte-rede
+    prompt:
+      stem: 'Bạn viết bản tin cho báo trường. Thầy hiệu trưởng nói: "Die Schule bekommt im Herbst neue Computer." Câu nào hợp nhất với văn báo chí?'
+      stem_lang: vi
+      options:
+        - { id: c1a, text: "Der Direktor sagte, die Schule bekomme im Herbst neue Computer.", lang: de }
+        - { id: c5b, text: "Der Direktor sagte, die Schule bekommt im Herbst neue Computer.", lang: de }
+        - { id: c8c, text: "Der Direktor sagte, die Schule habe im Herbst neue Computer bekommen.", lang: de }
+        - { id: c3d, text: "Der Direktor sagte, die Schule bekommen im Herbst neue Computer.", lang: de }
+    answer:
+      correct_option_id: c1a
+    explanation:
+      vi: "bekomme là Konjunktiv I (ngôi die Schule = es/sie số ít), đúng văn báo chí. bekommt là thì hiện tại – dùng được khi nói chuyện nhưng không giữ khoảng cách như tin tức. habe … bekommen đổi nghĩa thành quá khứ; bekommen (số nhiều) sai chia ngôi."
+    display_answer: Der Direktor sagte, die Schule bekomme im Herbst neue Computer.
