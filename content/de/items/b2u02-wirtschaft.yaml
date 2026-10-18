@@ -92,7 +92,7 @@ items:
           translation:
             vi: Cuộc khủng hoảng đã gây thiệt hại nặng cho nền kinh tế.
       confusion:
-        vi: "Từ ghép thường gặp: die Wirtschaftskrise (khủng hoảng kinh tế), der Wirtschaftsteil (mục kinh tế trên báo). Trong khẩu ngữ, die Wirtschaft còn có nghĩa là quán ăn bình dân."
+        vi: "Từ ghép thường gặp: die Wirtschaftskrise (khủng hoảng kinh tế), der Wirtschaftsteil (mục kinh tế trên báo). Ở miền Nam nước Đức và Áo, die Wirtschaft trong khẩu ngữ còn có nghĩa là quán ăn bình dân."
 
   - key: de:item:b2u02-wirtschaftlich
     type: vocab
@@ -505,7 +505,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Chuyển mệnh đề quan hệ thành cụm phân từ qua 4 bước: (1) bỏ đại từ quan hệ; (2) động từ chủ động → Partizip I (steigen → steigend), câu bị động (werden + Partizip II) → giữ Partizip II, bỏ werden; (3) đặt phần còn lại của mệnh đề giữa mạo từ và Partizip, giữ thứ tự; (4) thêm đuôi tính từ theo mạo từ và cách. Khi đọc thì làm ngược lại: bóc cụm ra thành mệnh đề quan hệ."
+        vi: "Chuyển mệnh đề quan hệ thành cụm phân từ qua 4 bước: (1) bỏ đại từ quan hệ; (2) động từ chủ động diễn ra cùng lúc → Partizip I (steigen → steigend), câu bị động (werden + Partizip II) → giữ Partizip II, bỏ werden; (3) đặt phần còn lại của mệnh đề giữa mạo từ và Partizip, giữ thứ tự; (4) thêm đuôi tính từ theo mạo từ và cách. Điều kiện: đại từ quan hệ là chủ ngữ; mệnh đề Akkusativ chủ động (die Waren, die wir importieren) phải đổi sang bị động trước (die von uns importierten Waren), mệnh đề Dativ thì không chuyển được. Khi đọc thì làm ngược lại: bóc cụm ra thành mệnh đề quan hệ."
       examples:
         - target: "die Waren, die aus Asien importiert werden → die aus Asien importierten Waren"
           translation:
@@ -655,9 +655,9 @@ items:
       meaning:
         vi: thu nhập
       examples:
-        - target: Ein großer Teil ihres Einkommens geht für die Miete weg.
+        - target: Einen großen Teil ihres Einkommens gibt sie für die Miete aus.
           translation:
-            vi: Một phần lớn thu nhập của cô ấy dành cho tiền thuê nhà.
+            vi: Cô ấy chi một phần lớn thu nhập cho tiền thuê nhà.
         - target: Familien mit niedrigem Einkommen sparen vor allem beim Essen.
           translation:
             vi: Các gia đình thu nhập thấp tiết kiệm chủ yếu ở khoản ăn uống.
@@ -943,7 +943,7 @@ items:
           translation:
             vi: Dựa vào bảng số liệu có thể thấy rõ diễn biến.
       confusion:
-        vi: "Một số từ viết liền hoặc tách đều đúng: aufgrund / auf Grund, mithilfe / mit Hilfe, zugunsten / zu Gunsten. Danh từ không có mạo từ và không có tính từ thì dùng von + Dativ: mithilfe von Daten, anhand von Beispielen."
+        vi: "Một số từ viết liền hoặc tách đều đúng: aufgrund / auf Grund, mithilfe / mit Hilfe, zugunsten / zu Gunsten. Danh từ không có mạo từ và không có tính từ thì thường dùng von + Dativ: mithilfe von Daten, anhand von Beispielen."
 
   # --- Từ mới theo ma trận (trường: chiến lược doanh nghiệp) ---
   - key: de:item:b2u02-massnahme

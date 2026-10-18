@@ -103,12 +103,12 @@ body:
     note:
       vi: "zunehmen ở đây là \"tăng (về số lượng)\", không phải tăng cân như ở A2; Perfekt với haben: hat zugenommen. Trái nghĩa: abnehmen."
   - type: example
-    target: Durchschnittlich gibt ein Kunde 25 Euro aus. Ein Drittel der Kunden kauft aber mehr als 50 Euro ein.
+    target: Durchschnittlich gibt ein Kunde 25 Euro aus. Ein Drittel der Kunden gibt aber mehr als 50 Euro aus.
     target_lang: de
     translation:
-      vi: Trung bình một khách hàng chi 25 euro. Nhưng một phần ba số khách mua hơn 50 euro.
+      vi: Trung bình một khách hàng chi 25 euro. Nhưng một phần ba số khách chi hơn 50 euro.
     note:
-      vi: "Ein Drittel der Kunden: chủ ngữ là Drittel (số ít) → kauft. der Kunden là Genitiv số nhiều."
+      vi: "Ein Drittel der Kunden: chủ ngữ là das Drittel (số ít) → gibt … aus. der Kunden là Genitiv số nhiều."
   - type: common_mistake
     wrong: Die Zahl der Kunden hat um zehn Prozent gestiegen.
     right: Die Zahl der Kunden ist um zehn Prozent gestiegen.

@@ -62,16 +62,16 @@ body:
       vi: "Cách đọc: gặp mạo từ mà ngay sau đó không có danh từ đi kèm, hãy tìm Partizip có đuôi tính từ (steigenden, beschlossenen); danh từ đứng ngay sau nó là danh từ chính, khớp với mạo từ ở đầu cụm (die … Preise). Đọc mạo từ + danh từ trước, rồi mới đọc phần giữa như một mệnh đề \"mà …\"."
   - type: explain
     text:
-      vi: "Chuyển mệnh đề quan hệ → cụm phân từ qua 4 bước, ví dụ die Maßnahmen, die von der Regierung beschlossen wurden: (1) bỏ đại từ quan hệ die; (2) câu bị động → giữ Partizip II beschlossen, bỏ wurden (câu chủ động → Partizip I: steigen → steigend); (3) đặt phần còn lại (von der Regierung) giữa mạo từ và Partizip, giữ nguyên thứ tự; (4) thêm đuôi tính từ như sau die số nhiều: die von der Regierung beschlossenen Maßnahmen."
+      vi: "Chuyển mệnh đề quan hệ → cụm phân từ qua 4 bước, ví dụ die Maßnahmen, die von der Regierung beschlossen wurden: (1) bỏ đại từ quan hệ die; (2) câu bị động → giữ Partizip II beschlossen, bỏ wurden (câu chủ động diễn ra cùng lúc → Partizip I: steigen → steigend; động từ Perfekt với sein đã xong → Partizip II: gestiegen); (3) đặt phần còn lại (von der Regierung) giữa mạo từ và Partizip, giữ nguyên thứ tự; (4) thêm đuôi tính từ như sau die số nhiều: die von der Regierung beschlossenen Maßnahmen."
   - type: explain
     text:
-      vi: "Partizip I (nguyên thể + d: steigend, wachsend) mang nghĩa chủ động, đang diễn ra. Partizip II mang nghĩa bị động (die beschlossenen Maßnahmen = được thông qua) hoặc đã xong với động từ chia Perfekt bằng sein (die gestiegenen Preise = giá đã tăng). Thì của mệnh đề (wird, wurde, ist …) biến mất trong cụm."
+      vi: "Partizip I (nguyên thể + d: steigend, wachsend) mang nghĩa chủ động, diễn ra cùng lúc với động từ chính. Partizip II mang nghĩa bị động (die beschlossenen Maßnahmen = được thông qua) hoặc đã xong với động từ chia Perfekt bằng sein (die gestiegenen Preise = giá đã tăng). Thì của mệnh đề (wird, wurde, ist …) biến mất trong cụm."
   - type: explain
     text:
       vi: "Từ vựng giá cả – thu nhập: die Inflation, der Preisanstieg, die Kaufkraft (sức mua), die Lebenshaltungskosten (chỉ có số nhiều), der Verbraucher, das Einkommen, die Steuer. Phân biệt erhöhen / senken (ai tăng / hạ cái gì, Perfekt với haben) với steigen / sinken (cái gì tự tăng / giảm, Perfekt với sein)."
   - type: deep_explain
     text:
-      vi: "Cụm phân từ mở rộng chủ yếu dùng trong văn viết (báo, báo cáo, văn bản luật); khi nói, người Đức thường dùng mệnh đề quan hệ. Cụm có thể rất dài: die in den letzten Jahren für viele Familien deutlich gestiegenen Lebenshaltungskosten. Chỉ chuyển được mệnh đề quan hệ mà đại từ quan hệ là chủ ngữ (Nominativ): die Familien, denen das Geld fehlt (Dativ) không thành cụm phân từ được. Cũng không dùng Partizip II của động từ chia Perfekt với haben cho nghĩa chủ động: die Firma, die die Preise erhöht hat không thể thành \"die die Preise erhöhte Firma\". Khi đọc bạn còn gặp dạng zu + Partizip I: die bis Freitag zu klärenden Fragen = những câu hỏi phải được làm rõ trước thứ Sáu (giống sein + zu ở bài 1); chỉ cần nhận ra, chưa cần tự viết."
+      vi: "Cụm phân từ mở rộng chủ yếu dùng trong văn viết (báo, báo cáo, văn bản luật); khi nói, người Đức thường dùng mệnh đề quan hệ. Cụm có thể rất dài: die in den letzten Jahren für viele Familien deutlich gestiegenen Lebenshaltungskosten. Điều kiện: đại từ quan hệ phải là chủ ngữ (Nominativ) của mệnh đề. Mệnh đề Akkusativ chủ động (die Waren, die wir importieren) phải đổi sang bị động trước (die Waren, die von uns importiert werden → die von uns importierten Waren); mệnh đề Dativ hay có giới từ (die Familien, denen das Geld fehlt) thì không chuyển được. Cũng không dùng Partizip II của động từ chia Perfekt với haben cho nghĩa chủ động: die Firma, die die Preise erhöht hat không thể thành \"die die Preise erhöhte Firma\"; với động từ đi với sein, chỉ những động từ chỉ sự thay đổi trạng thái mới dùng được (die gestiegenen Preise). Khi đọc bạn còn gặp dạng zu + Partizip I: die bis Freitag zu klärenden Fragen = những câu hỏi phải được làm rõ trước thứ Sáu (giống sein + zu ở bài 1); chỉ cần nhận ra, chưa cần tự viết."
   - type: example
     target: Die seit Monaten steigenden Preise belasten viele Haushalte.
     target_lang: de
@@ -94,10 +94,10 @@ body:
     note:
       vi: "= die Lebenshaltungskosten, die stark gestiegen sind. steigen chia Perfekt với sein → Partizip II mang nghĩa \"đã tăng\". wegen + Genitiv số nhiều: der … -en."
   - type: example
-    target: Ein ständig wachsender Teil des Einkommens geht für die Miete weg.
+    target: Ein ständig wachsender Teil des Einkommens wird für die Miete ausgegeben.
     target_lang: de
     translation:
-      vi: Một phần thu nhập ngày càng lớn bị tiêu vào tiền thuê nhà.
+      vi: Một phần thu nhập ngày càng lớn được chi cho tiền thuê nhà.
     note:
       vi: "= ein Teil, der ständig wächst. Sau ein, danh từ giống đực ở Nominativ → đuôi -er: wachsender."
   - type: example
@@ -138,7 +138,7 @@ body:
       - vi: "Đọc: mạo từ → nhảy tới danh từ sau Partizip → đọc phần giữa."
       - vi: "Partizip I = chủ động, đang diễn ra (steigend); Partizip II = bị động (beschlossen) hoặc đã xong với động từ đi với sein (gestiegen)."
       - vi: "4 bước: bỏ đại từ quan hệ → chọn Partizip, bỏ trợ động từ → đặt phần còn lại trước Partizip → thêm đuôi tính từ."
-      - vi: "Chỉ chuyển được khi đại từ quan hệ là chủ ngữ."
+      - vi: "Chỉ chuyển được khi đại từ quan hệ là chủ ngữ; mệnh đề Akkusativ chủ động phải đổi sang bị động trước, mệnh đề Dativ thì không chuyển được."
       - vi: "Từ vựng: die Inflation, die Kaufkraft, die Lebenshaltungskosten (Pl.), das Einkommen, die Steuer; erhöhen / senken (haben) ≠ steigen / sinken (sein)."
 exercises:
   # ---------------- recognition ----------------
@@ -287,6 +287,8 @@ exercises:
         - Steigende Preise bereiten den Verbrauchern Sorgen.
         - Die steigenden Preise beunruhigen die Verbraucher.
         - Steigende Preise beunruhigen die Verbraucher.
+        - Wegen der steigenden Preise machen sich die Verbraucher Sorgen.
+        - Die Verbraucher machen sich wegen der steigenden Preise Sorgen.
     known_wrong:
       - answer: Die steigende Preise machen den Verbrauchern Sorgen.
         feedback_vi: "Sau die với danh từ số nhiều, đuôi là -en: die steigenden Preise."

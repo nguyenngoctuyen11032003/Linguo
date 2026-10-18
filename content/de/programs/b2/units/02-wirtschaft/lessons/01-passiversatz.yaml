@@ -64,13 +64,13 @@ body:
       vi: "Sau bài này, bạn hiểu và viết được những câu như \"Das Problem lässt sich lösen\", \"Der Antrag ist bis Freitag einzureichen\" và \"Wir haben noch einige Fragen zu klären\" trong văn bản kinh tế."
   - type: explain
     text:
-      vi: "Bạn đã biết bị động với động từ khuyết thiếu: Das Problem kann gelöst werden. Văn viết hay thay câu này bằng sich lassen + nguyên thể: Das Problem lässt sich lösen – giống tiếng Việt \"vấn đề này giải quyết được\". lassen chia theo chủ ngữ (lässt / lassen), sich đứng ngay sau, nguyên thể ở cuối câu."
+      vi: "Bạn đã biết bị động với động từ khuyết thiếu: Das Problem kann gelöst werden. Văn viết hay thay câu này bằng sich lassen + nguyên thể: Das Problem lässt sich lösen – giống tiếng Việt \"vấn đề này giải quyết được\". lassen chia theo chủ ngữ (lässt / lassen), trong câu chính sich thường đứng ngay sau lassen, nguyên thể ở cuối câu."
   - type: explain
     text:
       vi: "sein + zu + nguyên thể cũng thay cho bị động nhưng có hai nghĩa: \"phải được\" (Der Bericht ist bis Freitag abzugeben = muss abgegeben werden) hoặc \"có thể được\" (Das ist leicht zu verstehen = kann leicht verstanden werden). Hạn chót, quy định thường cho nghĩa \"phải\"; leicht, schwer, kaum, nicht thường cho nghĩa \"có thể / không thể\"."
   - type: explain
     text:
-      vi: "haben + zu + nguyên thể là câu chủ động, nghĩa như müssen: Wir haben den Bericht bis Freitag abzugeben = Wir müssen den Bericht bis Freitag abgeben. Hãy nhìn chủ ngữ: người phải làm → haben zu; việc phải được làm → sein zu."
+      vi: "haben + zu + nguyên thể là câu chủ động, nghĩa như müssen: Wir haben den Bericht bis Freitag abzugeben = Wir müssen den Bericht bis Freitag abgeben. Cách nói này nghe trang trọng, có tính yêu cầu (quy định, chỉ thị); khi nói chuyện thường ngày người ta dùng müssen. Hãy nhìn chủ ngữ: người phải làm → haben zu; việc phải được làm → sein zu."
   - type: explain
     text:
       vi: "Với động từ tách, zu chen giữa tiền tố và gốc, viết liền: abzugeben, einzureichen. Trong câu phụ, động từ chia đứng sau cùng: …, dass der Bericht bis Freitag abzugeben ist; …, dass sich das Problem lösen lässt. Cẩn thận: \"ist zu\" không phải lúc nào cũng là \"đóng\" – Das Geschäft ist zu (cửa hàng đóng cửa), nhưng Das Problem ist zu lösen (vấn đề phải / có thể giải quyết)."
@@ -114,7 +114,7 @@ body:
     translation:
       vi: Chúng ta phải xong việc này trước ngày mai, nếu không sẽ mất khách hàng.
     note:
-      vi: "= Wir müssen das bis morgen erledigen. Chủ ngữ wir là người phải làm → haben zu. Câu nói trong nhóm đồng nghiệp."
+      vi: "= Wir müssen das bis morgen erledigen. Chủ ngữ wir là người phải làm → haben zu. Cách nói khá cứng, nhấn mạnh nghĩa vụ; trong hội thoại thân mật người ta hay nói müssen."
   - type: example
     target: Auf einem freien Markt bestimmen Angebot und Nachfrage den Preis.
     target_lang: de

@@ -60,7 +60,7 @@ body:
       vi: "Các cụm của bài: eine Entscheidung treffen (= entscheiden) · eine Frage stellen (= fragen) · in Frage / infrage kommen (= có thể được xem xét) · zur Verfügung stellen (= cấp, cung cấp) / zur Verfügung stehen (= có sẵn) · Kritik üben an + Dat (= kritisieren) · in Anspruch nehmen (= sử dụng) · Rücksicht nehmen auf + Akk (= quan tâm, tôn trọng) · zum Ausdruck bringen (= ausdrücken) · eine Rolle spielen · in Betracht ziehen (= cân nhắc) · in Kraft treten (= có hiệu lực)."
   - type: explain
     text:
-      vi: "Trong câu, phần danh từ hay giới từ + danh từ của cụm đứng cuối như tiền tố của động từ tách: Die Firma stellt den Mitarbeitern einen Laptop zur Verfügung; trong câu phụ: …, weil die Firma einen Laptop zur Verfügung stellt. Phủ định: cụm có mạo từ dùng kein (keine Entscheidung treffen), cụm có giới từ dùng nicht đặt trước (nicht in Frage kommen)."
+      vi: "Trong câu, phần danh từ hay giới từ + danh từ của cụm đứng cuối như tiền tố của động từ tách: Die Firma stellt den Mitarbeitern einen Laptop zur Verfügung; trong câu phụ: …, weil die Firma einen Laptop zur Verfügung stellt. Phủ định: cụm mà danh từ làm tân ngữ, không có giới từ, thường dùng kein (keine Entscheidung treffen, keine Rücksicht nehmen); cụm có giới từ dùng nicht đặt trước (nicht in Frage kommen, nicht zur Verfügung stehen)."
   - type: explain
     text:
       vi: "Giới từ Genitiv trang trọng: aufgrund (do), angesichts (trước tình hình), infolge (do hậu quả của), bezüglich / hinsichtlich (về), mithilfe (nhờ), anhand (dựa vào), zugunsten (có lợi cho), anlässlich (nhân dịp). Mạo từ và tính từ sau chúng ở Genitiv: aufgrund der hohen Nachfrage, anlässlich des Jubiläums. Khi nói chuyện hằng ngày, người ta hay dùng wegen hoặc câu weil thay vì aufgrund."
@@ -69,7 +69,7 @@ body:
       vi: "Từ vựng chiến lược: die Maßnahme, die Strategie, die Investition / investieren in + Akk, der Standort, die Globalisierung, der Handel, die Branche; die Geschäftsführung, der Vorstand, der Export ↔ der Import, die Produktion verlagern, die Lieferkette, der Zulieferer."
   - type: deep_explain
     text:
-      vi: "Cụm động từ chức năng không chỉ \"sang\" hơn động từ đơn mà đôi khi còn đổi sắc thái: zur Verfügung stehen là có sẵn (trạng thái), zur Verfügung stellen là đem ra cho dùng (hành động); in Kraft treten nhấn mạnh thời điểm bắt đầu có hiệu lực. Hãy cảnh giác với việc dịch từng chữ từ tiếng Anh hay tiếng Việt: make a decision ≠ eine Entscheidung machen, take into consideration ≠ in Betracht nehmen, \"cho ai sử dụng\" ≠ zu Verfügung geben. in Frage kommen và infrage kommen đều là chính tả đúng; tương tự aufgrund / auf Grund, mithilfe / mit Hilfe. Danh từ đứng sau giới từ Genitiv mà không có mạo từ hay tính từ thì thường thêm von: mithilfe von Daten, anhand von Beispielen. Cụm danh từ với giới từ Genitiv là một phần của văn phong danh từ (Nominalstil) bạn đã học: weil die Kosten hoch sind → aufgrund der hohen Kosten."
+      vi: "Cụm động từ chức năng không chỉ \"sang\" hơn động từ đơn mà đôi khi còn đổi sắc thái: zur Verfügung stehen là có sẵn (trạng thái), zur Verfügung stellen là đem ra cho dùng (hành động); in Kraft treten nhấn mạnh thời điểm bắt đầu có hiệu lực. Hãy cảnh giác với việc dịch từng chữ từ tiếng Anh hay tiếng Việt: make a decision ≠ eine Entscheidung machen, take into consideration ≠ in Betracht nehmen, \"cho ai sử dụng\" ≠ zu Verfügung geben. in Frage kommen và infrage kommen đều là chính tả đúng; đừng nhầm với in Frage / infrage stellen (= nghi ngờ, đặt dấu hỏi về: Er stellt die Strategie infrage); tương tự aufgrund / auf Grund, mithilfe / mit Hilfe. Danh từ đứng sau giới từ Genitiv mà không có mạo từ hay tính từ thì thường thêm von: mithilfe von Daten, anhand von Beispielen. Cụm danh từ với giới từ Genitiv là một phần của văn phong danh từ (Nominalstil) bạn đã học: weil die Kosten hoch sind → aufgrund der hohen Kosten."
   - type: example
     target: Die Geschäftsführung hat noch keine Entscheidung getroffen.
     target_lang: de
@@ -88,7 +88,7 @@ body:
     target: Ein Standort im Ausland kommt für uns nicht in Frage.
     target_lang: de
     translation:
-      vi: Một địa điểm ở nước ngoài thì chúng tôi không xem xét.
+      vi: Đặt cơ sở ở nước ngoài thì không nằm trong phương án của chúng tôi.
     note:
       vi: "nicht in Frage kommen = không thể được xem xét. Cũng viết: kommt nicht infrage. nicht đứng trước cụm giới từ."
   - type: example
@@ -298,6 +298,8 @@ exercises:
         - Die Geschäftsführung hat immer noch keine Entscheidung getroffen.
         - Bisher hat die Geschäftsführung keine Entscheidung getroffen.
         - Bis jetzt hat die Geschäftsführung keine Entscheidung getroffen.
+        - Die Geschäftsführung hat noch immer keine Entscheidung getroffen.
+        - Die Geschäftsführung hat bislang keine Entscheidung getroffen.
     known_wrong:
       - answer: Die Geschäftsführung hat noch keine Entscheidung gemacht.
         feedback_vi: "Cụm cố định là eine Entscheidung treffen → getroffen."
@@ -370,7 +372,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u02-g-genitiv-praep-formal
     prompt:
-      stem: "Bạn viết e-mail công việc trang trọng cho một nhà cung cấp về đơn đặt hàng ngày 3 tháng 3. Câu mở đầu nào phù hợp và đúng?"
+      stem: "Bạn viết e-mail công việc trang trọng trả lời một khách hàng về đơn đặt hàng mà khách đã gửi ngày 3 tháng 3. Câu mở đầu nào phù hợp và đúng?"
       stem_lang: vi
       options:
         - { id: z4a, text: "Bezüglich Ihrer Bestellung vom 3. März habe ich noch eine Frage.", lang: de }
