@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u09-konditional-ohne-wenn
+order_index: 2
+level: b2
+title:
+  vi: Nếu quý vị có câu hỏi – điều kiện không có wenn (Sollten Sie Fragen haben, …)
+objectives:
+  - vi: Hiểu điều khoản trong hợp đồng và điều kiện bảo hiểm, nhận ra câu điều kiện không có wenn.
+  - vi: Viết câu điều kiện trang trọng với động từ đứng đầu (Sollten Sie …, Liegt … vor, …) và câu chính bắt đầu bằng động từ hoặc so/dann.
+  - vi: Dùng từ vựng về hợp đồng và bảo hiểm (der Vertrag, der Widerruf, die Haftung, die Versicherung, der Schaden).
+estimated_minutes: 22
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b2u09-gericht]
+items:
+  - item: de:item:b2u09-g-konditional-verbspitze
+  - item: de:item:b2u09-vertrag
+  - item: de:item:b2u09-widerruf
+  - item: de:item:b2u09-widerrufen
+  - item: de:item:b2u09-haftung
+  - item: de:item:b2u09-haften
+  - item: de:item:b2u09-versicherung
+  - item: de:item:b2u09-schaden
+  - item: de:item:b2u09-kostenpflichtig
+  - item: de:item:b2u09-klausel
+  - item: de:item:b2u09-anspruch
+  - item: de:item:b2u09-kleingedruckte
+  - item: de:item:b2u09-laufzeit
+  - item: de:item:b2u09-abschliessen
+  - item: de:item:b2u09-versicherungsschutz
+  - item: de:item:b2u09-vorliegen
+  - item: de:item:b2u09-einverstaendnis
+  - item: de:item:b2u09-verpflichtet
+  - item: de:item:b2u09-zustimmung
+  - item: de:item:b1u04-g-irreale-bedingung
+    role: reuse
+  - item: de:item:b1u07-g-sobald-solange
+    role: reuse
+  - item: de:item:b2u02-g-sein-zu
+    role: reuse
+  - item: de:item:b2u05-g-sofern-soweit
+    role: reuse
+  - item: de:item:b2u05-g-bedingung-nominal
+    role: reuse
+  - item: de:item:b2u01-kuendigen
+    role: reuse
+  - item: de:item:b2u01-kuendigung
+    role: reuse
+  - item: de:item:b1u07-kundendienst
+    role: reuse
+  - item: de:item:b1u07-garantie
+    role: reuse
+  - item: de:item:a2u02-mietvertrag
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hiểu và viết được câu điều kiện kiểu văn bản hợp đồng: \"Sollten Sie Fragen haben, wenden Sie sich bitte an unseren Kundendienst.\" (Nếu quý khách có câu hỏi, xin liên hệ bộ phận chăm sóc khách hàng.)"
+  - type: explain
+    text:
+      vi: "Trong hợp đồng, điều kiện bảo hiểm, hướng dẫn, người Đức hay bỏ wenn và đưa động từ chia lên đầu câu điều kiện: Wenn ein Schaden vorliegt, … → Liegt ein Schaden vor, … Nghĩa không đổi, chỉ trang trọng và ngắn gọn hơn. Tiếng Việt cũng có thể bỏ \"nếu\" (\"Có câu hỏi thì gọi cho chúng tôi\"), nhưng tiếng Đức đánh dấu bằng vị trí động từ."
+  - type: explain
+    text:
+      vi: "Vế điều kiện đứng đầu chiếm vị trí 1, nên câu chính tiếp theo bắt đầu ngay bằng động từ: Liegt ein Schaden vor, zahlt die Versicherung. Bạn có thể thêm so hoặc dann để nối, rồi mới đến động từ: …, so zahlt die Versicherung. Đừng đặt chủ ngữ ngay sau dấu phẩy (\"…, die Versicherung zahlt\" là sai)."
+  - type: explain
+    text:
+      vi: "Sollte/Sollten ở đầu câu không có nghĩa \"nên\": đây là Konjunktiv II của sollen, nghĩa là \"nếu như, trong trường hợp\", cho thấy người viết nghĩ điều đó ít khi xảy ra: Sollten Sie Fragen haben, … Với điều kiện không có thật, bạn đã quen kiểu Hätte ich …, würde ich … (B1U04): Wäre der Vertrag klarer, gäbe es keinen Streit."
+  - type: explain
+    text:
+      vi: "Câu bắt đầu bằng động từ cũng có thể là câu hỏi, nên hãy nhìn dấu câu: Haben Sie Fragen? là câu hỏi; Haben Sie Fragen, rufen Sie uns an. là điều kiện, vì sau dấu phẩy là một câu chính. Khi đọc điều khoản dài, hãy tìm dấu phẩy và động từ thứ hai."
+  - type: deep_explain
+    text:
+      vi: "Vế đảo thường đứng trước câu chính; riêng vế với sollte đôi khi đứng sau trong thư từ: Rufen Sie uns an, sollten Sie Fragen haben. Các cách nói điều kiện khác cùng ngữ vực: sofern/soweit + câu phụ (B2U05), im Falle + Genitiv, bei + Dativ (bei Verlust der Karte). Trong văn bản pháp lý bạn còn gặp sein + zu (B2U02): Ein Schaden ist sofort zu melden (= muss gemeldet werden). Lưu ý: điều khoản trong bài là hư cấu, chỉ để luyện ngôn ngữ, không phải tư vấn pháp lý; quy định thật (thời hạn, quyền huỷ hợp đồng …) có thể thay đổi, hãy đọc kỹ hợp đồng của chính bạn."
+  - type: example
+    target: Sollten Sie Fragen haben, wenden Sie sich bitte an unseren Kundendienst.
+    target_lang: de
+    translation:
+      vi: Nếu quý khách có câu hỏi, xin vui lòng liên hệ bộ phận chăm sóc khách hàng của chúng tôi.
+    note:
+      vi: "Sollten Sie … haben = Falls Sie … haben. Câu chính là câu mệnh lệnh lịch sự, động từ wenden đứng ngay sau dấu phẩy."
+  - type: example
+    target: Liegt kein Einverständnis vor, so wird der Vertrag nicht verlängert.
+    target_lang: de
+    translation:
+      vi: Nếu không có sự đồng ý, hợp đồng sẽ không được gia hạn.
+    note:
+      vi: "vorliegen là động từ tách: Liegt … vor. so nối hai vế, động từ wird theo ngay sau so."
+  - type: example
+    target: Entsteht ein Schaden, ist er sofort der Versicherung zu melden.
+    target_lang: de
+    translation:
+      vi: Nếu có thiệt hại xảy ra, phải báo ngay cho công ty bảo hiểm.
+    note:
+      vi: "Vế điều kiện đảo + sein + zu (ôn B2U02: ist … zu melden = muss gemeldet werden) – kiểu câu điển hình của điều kiện bảo hiểm."
+  - type: example
+    target: Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr.
+    target_lang: de
+    translation:
+      vi: Nếu hợp đồng không bị chấm dứt, nó sẽ tự gia hạn thêm một năm.
+    note:
+      vi: "Vế điều kiện ở bị động: Wird … gekündigt (kündigen ôn B2U01). Câu chính bắt đầu bằng động từ verlängert."
+  - type: example
+    target: Sollte das Gerät während der Garantie kaputtgehen, ist die Reparatur nicht kostenpflichtig.
+    target_lang: de
+    translation:
+      vi: Nếu thiết bị hỏng trong thời gian bảo hành, việc sửa chữa không mất phí.
+    note:
+      vi: "Sollte + nguyên thể ở cuối vế: kaputtgehen. die Garantie (ôn B1U07)."
+  - type: example
+    target: Hätte ich eine Versicherung, müsste ich den Schaden nicht selbst bezahlen.
+    target_lang: de
+    translation:
+      vi: Nếu có bảo hiểm thì tôi đã không phải tự trả tiền thiệt hại.
+    note:
+      vi: "Điều kiện không có thật (ôn B1U04): Konjunktiv II ở cả hai vế, hätte đứng đầu thay cho wenn."
+  - type: example
+    target: Sofern nichts anderes vereinbart ist, hat der Mietvertrag eine Laufzeit von einem Jahr.
+    target_lang: de
+    translation:
+      vi: Trừ khi có thoả thuận khác, hợp đồng thuê nhà có thời hạn một năm.
+    note:
+      vi: "sofern + câu phụ (ôn B2U05) là cách nói điều kiện trang trọng khác; ở đây vẫn cần liên từ và động từ đứng cuối."
+  - type: example
+    target: Im Falle einer Kündigung erhalten Sie eine schriftliche Bestätigung. Sobald diese bei Ihnen eingegangen ist, ist der Vertrag beendet.
+    target_lang: de
+    translation:
+      vi: Trong trường hợp chấm dứt hợp đồng, quý khách sẽ nhận được xác nhận bằng văn bản. Ngay khi nhận được xác nhận, hợp đồng kết thúc.
+    note:
+      vi: "im Falle + Genitiv (ôn B2U05) = điều kiện bằng danh từ; sobald (ôn B1U07) = ngay khi."
+  - type: common_mistake
+    wrong: Sollten Sie Fragen haben, Sie können uns jederzeit anrufen.
+    right: Sollten Sie Fragen haben, können Sie uns jederzeit anrufen.
+    target_lang: de
+    note:
+      vi: "Vế điều kiện đã chiếm vị trí 1, nên động từ của câu chính (können) phải đứng ngay sau dấu phẩy."
+  - type: common_mistake
+    wrong: Sollen Sie Fragen haben, rufen Sie uns an.
+    right: Sollten Sie Fragen haben, rufen Sie uns an.
+    target_lang: de
+    note:
+      vi: "Nghĩa \"nếu như\" cần Konjunktiv II: sollten, không phải sollen."
+  - type: common_mistake
+    wrong: Liegt ein Schaden vor? Die Versicherung zahlt.
+    right: Liegt ein Schaden vor, zahlt die Versicherung.
+    target_lang: de
+    note:
+      vi: "Đây là câu điều kiện, không phải câu hỏi: dùng dấu phẩy và câu chính bắt đầu bằng động từ."
+  - type: summary
+    points:
+      - vi: "Bỏ wenn → động từ chia lên đầu: Liegt ein Schaden vor, … = Wenn ein Schaden vorliegt, …"
+      - vi: "Câu chính sau đó bắt đầu bằng động từ, hoặc bằng so/dann + động từ."
+      - vi: "Sollten Sie … = nếu như (khả năng thấp); không có nghĩa \"nên\"."
+      - vi: "Điều kiện không thật: Hätte ich …, würde/müsste ich …; Wäre …, gäbe es …"
+      - vi: "Dấu phẩy + câu chính → điều kiện; dấu hỏi → câu hỏi."
+      - vi: "Từ vựng: der Vertrag, der Widerruf, widerrufen, die Haftung, haften, die Versicherung, der Schaden, kostenpflichtig."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u09l2-mcq-sollten-bedeutung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u09-g-konditional-verbspitze
+    prompt:
+      stem: "Câu \"Sollten Sie Fragen haben, wenden Sie sich bitte an unseren Kundendienst.\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q4a, text: "Nếu quý khách có câu hỏi, xin liên hệ bộ phận chăm sóc khách hàng.", lang: vi }
+        - { id: q8b, text: "Quý khách nên đặt câu hỏi cho bộ phận chăm sóc khách hàng.", lang: vi }
+        - { id: q2c, text: "Quý khách có câu hỏi không? Bộ phận chăm sóc khách hàng sẽ liên hệ.", lang: vi }
+        - { id: q6d, text: "Quý khách phải gửi câu hỏi trước khi liên hệ.", lang: vi }
+    answer:
+      correct_option_id: q4a
+    explanation:
+      vi: "Sollten ở đầu câu, sau đó là dấu phẩy và câu chính → câu điều kiện: Sollten Sie Fragen haben = Falls Sie Fragen haben. sollten ở đây không có nghĩa \"nên\", và câu không phải câu hỏi."
+    display_answer: Nếu quý khách có câu hỏi, xin liên hệ bộ phận chăm sóc khách hàng.
+
+  - key: de:exercise:b2u09l2-mcq-frage-oder-bedingung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-konditional-verbspitze
+    prompt:
+      stem: "Câu nào là câu HỎI, không phải câu điều kiện?"
+      stem_lang: vi
+      options:
+        - { id: f3a, text: "Haben Sie den Vertrag schon unterschrieben?", lang: de }
+        - { id: f7b, text: "Haben Sie den Vertrag gelesen, so unterschreiben Sie bitte unten.", lang: de }
+        - { id: f1c, text: "Liegt ein Schaden vor, zahlt die Versicherung.", lang: de }
+        - { id: f5d, text: "Sollte es Probleme geben, rufen wir Sie an.", lang: de }
+    answer:
+      correct_option_id: f3a
+    explanation:
+      vi: "Chỉ câu đầu kết thúc bằng dấu hỏi và không có câu chính đi sau. Ba câu còn lại có động từ đứng đầu, rồi dấu phẩy và một câu chính (so unterschreiben, zahlt, rufen) → đều là điều kiện không có wenn."
+    display_answer: Haben Sie den Vertrag schon unterschrieben?
+
+  - key: de:exercise:b2u09l2-mcq-lesen-verlaengert
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-versicherung
+    prompt:
+      stem: "Aus den Bedingungen einer Fahrradversicherung (fiktiv): Sollte ein Schaden entstehen, ist er innerhalb einer Woche schriftlich zu melden. Liegt keine Meldung vor, kann die Versicherung die Zahlung ablehnen. Reparaturen ohne vorherige Zustimmung der Versicherung werden nicht bezahlt. Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr. — Richtig oder falsch? Wenn man den Vertrag nicht kündigt, läuft er ein weiteres Jahr."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr = nếu hợp đồng không bị chấm dứt, nó tự gia hạn thêm một năm. Vế đầu là điều kiện không có wenn. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b2u09l2-mcq-lesen-reparatur
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-zustimmung
+    prompt:
+      stem: "Aus den Bedingungen einer Fahrradversicherung (fiktiv): Sollte ein Schaden entstehen, ist er innerhalb einer Woche schriftlich zu melden. Liegt keine Meldung vor, kann die Versicherung die Zahlung ablehnen. Reparaturen ohne vorherige Zustimmung der Versicherung werden nicht bezahlt. Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr. — Richtig oder falsch? Man kann das Fahrrad reparieren lassen und die Versicherung erst danach fragen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Reparaturen ohne vorherige Zustimmung … werden nicht bezahlt: sửa mà chưa được bảo hiểm đồng ý trước thì không được trả tiền. Vì vậy phải hỏi trước, không phải sau. Câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u09l2-fill-sollten-schicken
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-konditional-verbspitze
+    prompt:
+      template: "{{b1}} (sollen, Konjunktiv II) Sie den Vertrag widerrufen wollen, so {{b2}} (schicken) Sie uns bitte eine kurze E-Mail."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [Sollten]
+        b2: [schicken]
+    known_wrong:
+      - answer: Sollen
+        feedback_vi: Nghĩa "nếu như" cần Konjunktiv II – Sollten.
+        error_tag: konjunktiv_form
+      - answer: Sollte
+        feedback_vi: Chủ ngữ là Sie nên chia sollten (có -n).
+        error_tag: verb_form
+      - answer: schickt
+        feedback_vi: Câu mệnh lệnh lịch sự với Sie dùng nguyên thể – schicken Sie.
+        error_tag: verb_form
+    explanation:
+      vi: "Ô 1: điều kiện không có wenn, động từ đứng đầu ở Konjunktiv II: Sollten Sie … Ô 2: sau so là động từ của câu chính; với Sie lịch sự dùng schicken Sie."
+    display_answer: "Sollten Sie den Vertrag widerrufen wollen, so schicken Sie uns bitte eine kurze E-Mail."
+
+  - key: de:exercise:b2u09l2-fill-liegt-vor
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-vorliegen
+    prompt:
+      template: "{{b1}} (vorliegen, Präsens) bis Ende Mai kein Einverständnis {{b2}}, so wird der Vertrag nicht verlängert."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Liegt]
+        b2: [vor]
+    known_wrong:
+      - answer: Vorliegt
+        feedback_vi: vorliegen là động từ tách – Liegt … vor.
+        error_tag: separable_prefix
+      - answer: Liegen
+        feedback_vi: Chủ ngữ là kein Einverständnis (số ít) – liegt.
+        error_tag: verb_form
+    explanation:
+      vi: "Bỏ wenn, động từ chia lên đầu: Liegt … vor (tiền tố vor tách ra, đứng cuối vế điều kiện). Chủ ngữ das Einverständnis là số ít nên liegt."
+    display_answer: "Liegt bis Ende Mai kein Einverständnis vor, so wird der Vertrag nicht verlängert."
+
+  - key: de:exercise:b2u09l2-tr-fragen-anrufen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-konditional-verbspitze
+    prompt:
+      source_text: "Nếu quý khách có câu hỏi, xin vui lòng gọi cho chúng tôi. (bắt đầu bằng Sollten Sie …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Sollten Sie Fragen haben, rufen Sie uns bitte an.
+        - Sollten Sie Fragen haben, so rufen Sie uns bitte an.
+        - Sollten Sie Fragen haben, dann rufen Sie uns bitte an.
+        - Sollten Sie Fragen haben, rufen Sie uns an.
+        - Sollten Sie eine Frage haben, rufen Sie uns bitte an.
+        - Sollten Sie eine Frage haben, so rufen Sie uns bitte an.
+        - Sollten Sie noch Fragen haben, rufen Sie uns bitte an.
+    known_wrong:
+      - answer: Sollten Sie Fragen haben, Sie rufen uns bitte an.
+        feedback_vi: Sau vế điều kiện, câu chính bắt đầu bằng động từ – rufen Sie uns bitte an.
+        error_tag: verb_position
+      - answer: Sollen Sie Fragen haben, rufen Sie uns bitte an.
+        feedback_vi: Nghĩa "nếu như" cần Konjunktiv II – Sollten.
+        error_tag: konjunktiv_form
+      - answer: Sollten Sie haben Fragen, rufen Sie uns bitte an.
+        feedback_vi: Trong vế điều kiện, nguyên thể haben đứng cuối – Sollten Sie Fragen haben.
+        error_tag: verb_position
+    explanation:
+      vi: "Sollten đứng đầu thay cho wenn, nguyên thể haben ở cuối vế. Câu chính là mệnh lệnh lịch sự rufen Sie … an (anrufen tách), có thể mở đầu bằng so/dann."
+    display_answer: Sollten Sie Fragen haben, rufen Sie uns bitte an.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u09l2-wb-waere-klausel
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-klausel
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu điều khoản rõ ràng hơn thì đã không có tranh chấp.\""
+      tokens:
+        - { id: k-streit, text: Streit }
+        - { id: k-gaebe, text: gäbe }
+        - { id: k-klausel, text: Klausel }
+        - { id: k-komma, text: "," }
+        - { id: k-waere, text: Wäre }
+        - { id: k-keinen, text: keinen }
+        - { id: k-die, text: die }
+        - { id: k-es, text: es }
+        - { id: k-klarer, text: klarer }
+    answer:
+      orders:
+        - [k-waere, k-die, k-klausel, k-klarer, k-komma, k-gaebe, k-es, k-keinen, k-streit]
+    explanation:
+      vi: "Điều kiện không có thật, bỏ wenn: Wäre die Klausel klarer (Konjunktiv II đứng đầu). Câu chính bắt đầu ngay bằng động từ: gäbe es keinen Streit (es gibt → es gäbe)."
+    display_answer: Wäre die Klausel klarer, gäbe es keinen Streit.
+
+  - key: de:exercise:b2u09l2-wb-schaden-melden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-schaden
+    prompt:
+      instruction: "Sắp xếp thành câu (điều kiện bảo hiểm): \"Nếu có thiệt hại xảy ra, phải báo ngay.\""
+      tokens:
+        - { id: d-melden, text: melden }
+        - { id: d-ein, text: ein }
+        - { id: d-ist, text: ist }
+        - { id: d-entsteht, text: Entsteht }
+        - { id: d-sofort, text: sofort }
+        - { id: d-komma, text: "," }
+        - { id: d-er, text: er }
+        - { id: d-zu, text: zu }
+        - { id: d-schaden, text: Schaden }
+    answer:
+      orders:
+        - [d-entsteht, d-ein, d-schaden, d-komma, d-ist, d-er, d-sofort, d-zu, d-melden]
+    explanation:
+      vi: "Vế điều kiện bỏ wenn: Entsteht ein Schaden. Câu chính bắt đầu bằng động từ ist, rồi chủ ngữ er (= der Schaden); sein + zu + nguyên thể (ôn B2U02) = phải được báo."
+    display_answer: Entsteht ein Schaden, ist er sofort zu melden.
+
+  - key: de:exercise:b2u09l2-mcq-rechnung-umformen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-konditional-verbspitze
+    prompt:
+      stem: "Viết lại trang trọng, không dùng wenn: \"Wenn die Rechnung nicht bezahlt wird, erhalten Sie eine Mahnung.\""
+      stem_lang: vi
+      options:
+        - { id: u6a, text: "Wird die Rechnung nicht bezahlt, so erhalten Sie eine Mahnung.", lang: de }
+        - { id: u2b, text: "Wird die Rechnung nicht bezahlt, so Sie erhalten eine Mahnung.", lang: de }
+        - { id: u9c, text: "Die Rechnung wird nicht bezahlt, erhalten Sie eine Mahnung.", lang: de }
+        - { id: u4d, text: "Wird die Rechnung nicht bezahlt wird, erhalten Sie eine Mahnung.", lang: de }
+    answer:
+      correct_option_id: u6a
+    explanation:
+      vi: "Bỏ wenn thì động từ chia wird lên đầu, bezahlt giữ ở cuối vế (không lặp wird). Sau so, động từ erhalten đứng trước chủ ngữ Sie. Câu bắt đầu bằng chủ ngữ (Die Rechnung wird …) là câu khẳng định, không còn là điều kiện."
+    display_answer: Wird die Rechnung nicht bezahlt, so erhalten Sie eine Mahnung.

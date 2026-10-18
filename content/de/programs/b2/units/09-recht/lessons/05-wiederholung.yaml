@@ -1,0 +1,418 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u09-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – thư khiếu nại khoảng 100 từ (Wiederholung)
+objectives:
+  - vi: Viết thư khiếu nại trang trọng khoảng 100 từ (kiểu Goethe B2 Schreiben Teil 2), có yêu cầu cụ thể và thời hạn.
+  - vi: Đọc nội quy, điều kiện sử dụng và thư trả lời của công ty (kiểu Goethe B2 Lesen Teil 5) rồi chọn ý đúng.
+  - vi: Ôn cụm động từ chức năng nghĩa bị động, điều kiện không có wenn, gemäß/entsprechend, einander và Redemittel khiếu nại.
+estimated_minutes: 27
+skills: [writing, reading, listening]
+prerequisites: [de:lesson:b2u09-beschwerde]
+items:
+  - item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    role: reuse
+  - item: de:item:b2u09-g-konditional-verbspitze
+    role: reuse
+  - item: de:item:b2u09-g-dativ-praep-formal
+    role: reuse
+  - item: de:item:b2u09-g-einander
+    role: reuse
+  - item: de:item:b2u09-g-beschwerde-redemittel
+    role: reuse
+  - item: de:item:b2u09-vertrag
+    role: reuse
+  - item: de:item:b2u09-widerrufen
+    role: reuse
+  - item: de:item:b2u09-haften
+    role: reuse
+  - item: de:item:b2u09-schaden
+    role: reuse
+  - item: de:item:b2u09-zustimmung
+    role: reuse
+  - item: de:item:b2u09-verstoss
+    role: reuse
+  - item: de:item:b2u09-verstossen-gegen
+    role: reuse
+  - item: de:item:b2u09-nachtruhe
+    role: reuse
+  - item: de:item:b2u09-unverzueglich
+    role: reuse
+  - item: de:item:b2u09-kulanz
+    role: reuse
+  - item: de:item:b2u09-erstatten
+    role: reuse
+  - item: de:item:b2u09-beschaedigt
+    role: reuse
+  - item: de:item:b2u09-mangelhaft
+    role: reuse
+  - item: de:item:b2u09-fristgerecht
+    role: reuse
+  - item: de:item:b2u09-kaufbeleg
+    role: reuse
+  - item: de:item:b2u09-bestellnummer
+    role: reuse
+  - item: de:item:b1u10-g-formeller-brief
+    role: reuse
+  - item: de:item:b1u10-betreff
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được một thư khiếu nại khoảng 100 từ cho kiểu bài Goethe B2 Schreiben Teil 2 và đọc được nội quy, điều kiện hợp đồng để tìm thông tin đúng."
+  - type: explain
+    text:
+      vi: "Đề viết B2 Teil 2 thường cho một tình huống (hàng lỗi, dịch vụ kém, chỗ ở có vấn đề) và vài ý phải trả lời. Hãy viết đủ mọi ý, theo thứ tự: Betreff → Sehr geehrte Damen und Herren, → sự việc → vấn đề → yêu cầu + thời hạn → bước tiếp theo → Mit freundlichen Grüßen. Khoảng 100 từ là đủ; ít ý mà rõ tốt hơn nhiều ý mà lan man."
+  - type: explain
+    text:
+      vi: "Ngôn ngữ \"ghi điểm\" trong bài này: Hiermit möchte ich mich über … beschweren; Ich fordere Sie auf, … bis zum … zu …; Ich gehe davon aus, dass …; Sollte ich bis dahin nichts von Ihnen hören, …; Andernfalls sehe ich mich gezwungen, … Cuối thư có thể thêm Ich wäre Ihnen für eine schnelle Antwort dankbar."
+  - type: explain
+    text:
+      vi: "Khi đọc nội quy hay điều kiện hợp đồng, hãy tìm dấu hiệu: động từ đứng đầu + dấu phẩy = điều kiện (Sollten Gäste übernachten wollen, …); sein + zu = phải (ist … zu melden); gemäß/entsprechend = theo quy định. Câu hỏi richtig/falsch thường diễn đạt lại bằng từ khác, ví dụ ohne Erlaubnis thay cho ohne Zustimmung."
+  - type: deep_explain
+    text:
+      vi: "Trong bài thi, giám khảo thường chấm cả việc hoàn thành nhiệm vụ, sự mạch lạc, vốn từ và ngữ pháp, và cả giọng văn phù hợp với người nhận (theo hiểu biết của người soạn, cần đối chiếu quy chế thi hiện hành của Goethe-Institut). Viết hoa Sie/Ihnen/Ihr ở ngôi lịch sự trong cả bức thư, và sau lời chào có dấu phẩy thì chữ đầu dòng sau viết thường (am 3. Oktober …). Mọi tình huống và thư trong bài là hư cấu; đây là bài luyện ngôn ngữ, không phải tư vấn pháp lý."
+  - type: example
+    target: "Betreff: Reklamation, Bestellnummer 48213"
+    target_lang: de
+    translation:
+      vi: "Về việc: Khiếu nại, đơn hàng số 48213"
+    note:
+      vi: "Dòng Betreff (ôn B1U10) ngắn, không có động từ; nêu luôn mã đơn hàng để công ty tìm nhanh."
+  - type: example
+    target: "Sehr geehrte Damen und Herren, am 3. Oktober habe ich in Ihrem Online-Shop einen Staubsauger bestellt. Leider kam das Gerät beschädigt an und lässt sich nicht einschalten."
+    target_lang: de
+    translation:
+      vi: "Kính gửi Quý công ty, ngày 3 tháng 10 tôi đã đặt mua một máy hút bụi trên cửa hàng trực tuyến của Quý công ty. Đáng tiếc là máy đến nơi đã bị hỏng và không bật lên được."
+    note:
+      vi: "Sự việc + vấn đề. Sau dấu phẩy của lời chào, câu tiếp theo bắt đầu bằng chữ thường (am)."
+  - type: example
+    target: Hiermit möchte ich mich über diese mangelhafte Lieferung beschweren. Ich fordere Sie auf, mir bis zum 15. November ein neues Gerät zu schicken oder den Kaufpreis zu erstatten.
+    target_lang: de
+    translation:
+      vi: Bằng thư này, tôi muốn khiếu nại về lô hàng bị lỗi này. Tôi yêu cầu Quý công ty gửi cho tôi một máy mới hoặc hoàn trả tiền hàng, chậm nhất là ngày 15 tháng 11.
+    note:
+      vi: "Yêu cầu cụ thể (máy mới hoặc trả tiền) + thời hạn rõ ràng."
+  - type: example
+    target: Ich gehe davon aus, dass Sie die Kosten für die Rücksendung übernehmen. Sollte ich bis dahin nichts von Ihnen hören, sehe ich mich gezwungen, mich an die Verbraucherzentrale zu wenden. Eine Kopie des Kaufbelegs finden Sie im Anhang.
+    target_lang: de
+    translation:
+      vi: Tôi tin chắc Quý công ty sẽ chịu chi phí gửi trả hàng. Nếu đến lúc đó tôi không nhận được hồi âm, tôi buộc phải liên hệ trung tâm tư vấn người tiêu dùng. Bản sao hoá đơn mua hàng có trong tệp đính kèm.
+    note:
+      vi: "Điều kiện không có wenn (Sollte ich …) + bước tiếp theo; cuối thư: Mit freundlichen Grüßen và họ tên."
+  - type: common_mistake
+    wrong: Ich bitte Sie, das Problem irgendwann zu lösen.
+    right: Ich bitte Sie, das Problem bis zum 15. November zu lösen.
+    target_lang: de
+    note:
+      vi: "Thiếu thời hạn cụ thể thì yêu cầu không có sức nặng; luôn ghi ngày."
+  - type: common_mistake
+    wrong: Sollten Sie nicht antworten, ich wende mich an die Verbraucherzentrale.
+    right: Sollten Sie nicht antworten, wende ich mich an die Verbraucherzentrale.
+    target_lang: de
+    note:
+      vi: "Sau vế điều kiện không có wenn, câu chính bắt đầu bằng động từ."
+  - type: common_mistake
+    wrong: Gemäß des Vertrags haben Sie die Ware fristgerecht zu liefern.
+    right: Gemäß dem Vertrag haben Sie die Ware fristgerecht zu liefern.
+    target_lang: de
+    note:
+      vi: "gemäß đi với Dativ: dem Vertrag."
+  - type: summary
+    points:
+      - vi: "Thư khiếu nại: Betreff → lời chào → sự việc → vấn đề → yêu cầu + thời hạn → bước tiếp theo → Mit freundlichen Grüßen."
+      - vi: "Hiermit möchte ich mich über … beschweren · Ich fordere Sie auf, … zu … · Ich gehe davon aus, dass …"
+      - vi: "Sollte ich … / Liegt … vor, … → câu chính bắt đầu bằng động từ."
+      - vi: "Funktionsverbgefüge nghĩa bị động: Anerkennung finden, zur Sprache kommen, in Kraft treten."
+      - vi: "gemäß/entsprechend/entgegen/gegenüber + Dativ; einander, miteinander, aufeinander."
+exercises:
+  # ---------------- recognition: Lesen ----------------
+  - key: de:exercise:b2u09l5-mcq-lesen-gaeste
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-konditional-verbspitze
+    prompt:
+      stem: "Hausordnung eines Studentenwohnheims (fiktiv): Besuch ist gemäß dieser Ordnung bis 22 Uhr erlaubt. Sollten Gäste übernachten wollen, ist vorher die Zustimmung der Verwaltung einzuholen. Schäden an Möbeln sind unverzüglich zu melden; für selbst verursachte Schäden haften die Bewohner. Die Küche ist nach jeder Benutzung zu reinigen. — Richtig oder falsch? Gäste dürfen ohne Erlaubnis im Wohnheim übernachten."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Sollten Gäste übernachten wollen, ist vorher die Zustimmung der Verwaltung einzuholen = nếu khách muốn ngủ lại thì phải xin phép ban quản lý trước. Không có phép thì không được. Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b2u09l5-mcq-lesen-haften
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-haften
+    prompt:
+      stem: "Hausordnung eines Studentenwohnheims (fiktiv): Besuch ist gemäß dieser Ordnung bis 22 Uhr erlaubt. Sollten Gäste übernachten wollen, ist vorher die Zustimmung der Verwaltung einzuholen. Schäden an Möbeln sind unverzüglich zu melden; für selbst verursachte Schäden haften die Bewohner. Die Küche ist nach jeder Benutzung zu reinigen. — Richtig oder falsch? Wer einen Schaden selbst verursacht, muss dafür bezahlen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "für selbst verursachte Schäden haften die Bewohner = người ở phải chịu trách nhiệm bồi thường cho thiệt hại do chính mình gây ra. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b2u09l5-mcq-lesen-antwort-geld
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-erstatten
+    prompt:
+      stem: "Antwort eines Online-Shops (fiktiv): Sehr geehrte Frau Tran, wir bedauern sehr, dass Ihr Staubsauger beschädigt bei Ihnen angekommen ist. Selbstverständlich erstatten wir Ihnen die Kosten für die Rücksendung. Ein Ersatzgerät wird innerhalb von fünf Werktagen geliefert. Aus Kulanz erhalten Sie zusätzlich einen Gutschein über zwanzig Euro. Mit freundlichen Grüßen, Ihr Kundendienst — Richtig oder falsch? Frau Tran bekommt den Kaufpreis für den Staubsauger zurück."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Công ty chỉ hoàn chi phí gửi trả (die Kosten für die Rücksendung) và gửi máy thay thế (ein Ersatzgerät); không trả lại tiền mua máy. Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b2u09l5-mcq-lesen-gutschein
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-kulanz
+    prompt:
+      stem: "Antwort eines Online-Shops (fiktiv): Sehr geehrte Frau Tran, wir bedauern sehr, dass Ihr Staubsauger beschädigt bei Ihnen angekommen ist. Selbstverständlich erstatten wir Ihnen die Kosten für die Rücksendung. Ein Ersatzgerät wird innerhalb von fünf Werktagen geliefert. Aus Kulanz erhalten Sie zusätzlich einen Gutschein über zwanzig Euro. Mit freundlichen Grüßen, Ihr Kundendienst — Warum bekommt Frau Tran den Gutschein?"
+      stem_lang: de
+      options:
+        - { id: g3a, text: "Der Shop möchte ihr freiwillig entgegenkommen.", lang: de }
+        - { id: g7b, text: "Ein Gericht hat den Shop dazu verurteilt.", lang: de }
+        - { id: g1c, text: "Sie hat das Gerät nicht fristgerecht zurückgeschickt.", lang: de }
+        - { id: g5d, text: "Der Gutschein ersetzt das neue Gerät.", lang: de }
+    answer:
+      correct_option_id: g3a
+    explanation:
+      vi: "aus Kulanz = vì thiện chí, tự nguyện (freiwillig entgegenkommen), không phải do toà xử. Máy thay thế vẫn được gửi; phiếu mua hàng là thêm (zusätzlich)."
+    display_answer: Der Shop möchte ihr freiwillig entgegenkommen.
+
+  # ---------------- recognition: Hören ----------------
+  - key: de:exercise:b2u09l5-listen-widerruf
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u09-widerrufen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sollten Sie Ihre Bestellung widerrufen wollen, senden Sie die Ware bitte innerhalb der Frist an uns zurück. Die Kosten für die Rücksendung werden Ihnen erstattet.
+      options:
+        - { id: h2a, text: "Nếu muốn huỷ đơn, hãy gửi trả hàng trong thời hạn; phí gửi trả sẽ được hoàn lại.", lang: vi }
+        - { id: h6b, text: "Đơn hàng đã bị huỷ và khách phải tự trả phí gửi lại hàng.", lang: vi }
+        - { id: h4c, text: "Khách nên gửi trả hàng ngay, nếu không sẽ mất phí.", lang: vi }
+        - { id: h8d, text: "Khách không được huỷ đơn sau khi đã nhận hàng.", lang: vi }
+    answer:
+      correct_option_id: h2a
+    explanation:
+      vi: "Sollten Sie … widerrufen wollen = nếu quý khách muốn huỷ (điều kiện không có wenn, không phải \"nên\"); innerhalb der Frist = trong thời hạn; werden Ihnen erstattet = được hoàn lại."
+    display_answer: "Nếu muốn huỷ đơn, hãy gửi trả hàng trong thời hạn; phí gửi trả sẽ được hoàn lại."
+
+  - key: de:exercise:b2u09l5-listen-nachtruhe
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      audio_asset_id: null
+      fallback_text: In der Verhandlung kam auch der Lärm zur Sprache. Gemäß der Hausordnung gilt ab zweiundzwanzig Uhr Nachtruhe, und der Nachbar hatte mehrmals dagegen verstoßen.
+      options:
+        - { id: n5a, text: "Trong phiên toà, chuyện tiếng ồn cũng được nêu ra: theo nội quy, sau 22 giờ phải yên tĩnh, và người hàng xóm đã nhiều lần vi phạm.", lang: vi }
+        - { id: n1b, text: "Trong phiên toà, không ai nhắc tới tiếng ồn vì người hàng xóm chưa từng vi phạm.", lang: vi }
+        - { id: n7c, text: "Theo nội quy, sau 22 giờ được phép mở nhạc to nếu hàng xóm đồng ý.", lang: vi }
+        - { id: n3d, text: "Người hàng xóm đã kiện toà nhà vì nội quy quá nghiêm.", lang: vi }
+    answer:
+      correct_option_id: n5a
+    explanation:
+      vi: "kam … zur Sprache = được nêu ra (nghĩa bị động); gemäß der Hausordnung = theo nội quy; Nachtruhe = giờ yên tĩnh ban đêm; dagegen verstoßen = vi phạm điều đó."
+    display_answer: "Trong phiên toà, chuyện tiếng ồn cũng được nêu ra: theo nội quy, sau 22 giờ phải yên tĩnh, và người hàng xóm đã nhiều lần vi phạm."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u09l5-fill-ueber-fordere
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-beschwerde-redemittel
+    prompt:
+      template: "Hiermit möchte ich mich {{b1}} die verspätete Lieferung beschweren. Ich {{b2}} (auffordern) Sie auf, mir die Versandkosten zu erstatten."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [über]
+        b2: [fordere]
+    known_wrong:
+      - answer: für
+        feedback_vi: sich beschweren đi với über + Akkusativ – über die Lieferung.
+        error_tag: preposition
+      - answer: von
+        feedback_vi: sich beschweren über (không phải von) – über die verspätete Lieferung.
+        error_tag: preposition
+      - answer: auffordere
+        feedback_vi: auffordern là động từ tách; auf đã đứng ở cuối – Ich fordere Sie auf.
+        error_tag: separable_prefix
+    explanation:
+      vi: "Ô 1: sich beschweren über + Akk. Ô 2: auffordern tách: ich fordere … auf (auf đã có sẵn trong câu)."
+    display_answer: "Hiermit möchte ich mich über die verspätete Lieferung beschweren. Ich fordere Sie auf, mir die Versandkosten zu erstatten."
+
+  - key: de:exercise:b2u09l5-fill-gemaess-miteinander
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-einander
+    prompt:
+      template: "Der Verordnung {{b1}} (= entsprechend; beginnt mit g) ist das Parken vor dem Haus untersagt. Nach dem Streit reden die Nachbarn jetzt wieder {{b2}} (mit + einander)."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [gemäß]
+        b2: [miteinander]
+    known_wrong:
+      - answer: mit einander
+        feedback_vi: Giới từ + einander viết liền thành một từ – miteinander.
+        error_tag: spelling
+      - answer: mit sich
+        feedback_vi: mit sich reden = tự nói với mình; "với nhau" là miteinander.
+        error_tag: word_choice
+    explanation:
+      vi: "Ô 1: gemäß có thể đứng sau danh từ Dativ: der Verordnung gemäß. Ô 2: mit + einander viết liền: miteinander reden = nói chuyện với nhau."
+    display_answer: "Der Verordnung gemäß ist das Parken vor dem Haus untersagt. Nach dem Streit reden die Nachbarn jetzt wieder miteinander."
+
+  - key: de:exercise:b2u09l5-tr-anerkennung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      source_text: "Đề xuất đã được nhiều người công nhận. (dùng der Vorschlag, Anerkennung finden, Präteritum)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Vorschlag fand breite Anerkennung.
+        - Der Vorschlag fand große Anerkennung.
+        - Der Vorschlag fand viel Anerkennung.
+    known_wrong:
+      - answer: Der Vorschlag wurde Anerkennung gefunden.
+        feedback_vi: Anerkennung finden đã mang nghĩa bị động, không thêm werden – fand Anerkennung.
+        error_tag: aux_verb
+      - answer: Der Vorschlag findete breite Anerkennung.
+        feedback_vi: finden là động từ bất quy tắc – Präteritum fand.
+        error_tag: verb_form
+      - answer: Der Vorschlag fand breite Anerkennungen.
+        feedback_vi: Anerkennung ở đây không có số nhiều – breite Anerkennung.
+        error_tag: plural_form
+    explanation:
+      vi: "Anerkennung finden = anerkannt werden; chỉ cần chia finden ở Präteritum: fand. breit/groß/viel diễn đạt \"nhiều người\"."
+    display_answer: Der Vorschlag fand breite Anerkennung.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u09l5-wb-sollten-fragen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-konditional-verbspitze
+    prompt:
+      instruction: "Sắp xếp thành câu kết thư: \"Nếu quý vị có câu hỏi, xin liên hệ với tôi.\""
+      tokens:
+        - { id: q-wenden, text: wenden }
+        - { id: q-sie1, text: Sie }
+        - { id: q-fragen, text: Fragen }
+        - { id: q-mich, text: mich }
+        - { id: q-sollten, text: Sollten }
+        - { id: q-sich, text: sich }
+        - { id: q-komma, text: "," }
+        - { id: q-an, text: an }
+        - { id: q-haben, text: haben }
+        - { id: q-sie2, text: Sie }
+    answer:
+      orders:
+        - [q-sollten, q-sie1, q-fragen, q-haben, q-komma, q-wenden, q-sie2, q-sich, q-an, q-mich]
+        - [q-sollten, q-sie2, q-fragen, q-haben, q-komma, q-wenden, q-sie1, q-sich, q-an, q-mich]
+    explanation:
+      vi: "Vế điều kiện không có wenn: Sollten Sie Fragen haben (haben ở cuối vế). Câu chính bắt đầu bằng động từ: wenden Sie sich an mich (sich wenden an + Akk = liên hệ)."
+    display_answer: Sollten Sie Fragen haben, wenden Sie sich an mich.
+
+  - key: de:exercise:b2u09l5-wb-gemaess-vertrag
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-dativ-praep-formal
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Theo hợp đồng, quý công ty phải giao hàng đúng hạn.\""
+      tokens:
+        - { id: v-zu, text: zu }
+        - { id: v-vertrag, text: Vertrag }
+        - { id: v-haben, text: haben }
+        - { id: v-fristgerecht, text: fristgerecht }
+        - { id: v-gemaess, text: Gemäß }
+        - { id: v-liefern, text: liefern }
+        - { id: v-sie, text: Sie }
+        - { id: v-ware, text: Ware }
+        - { id: v-dem, text: dem }
+        - { id: v-die, text: die }
+    answer:
+      orders:
+        - [v-gemaess, v-dem, v-vertrag, v-haben, v-sie, v-die, v-ware, v-fristgerecht, v-zu, v-liefern]
+    explanation:
+      vi: "gemäß + Dativ (dem Vertrag) đứng đầu → haben ở vị trí 2, rồi chủ ngữ Sie. haben + zu + nguyên thể (= müssen) đặt zu liefern ở cuối."
+    display_answer: Gemäß dem Vertrag haben Sie die Ware fristgerecht zu liefern.
+
+  - key: de:exercise:b2u09l5-tr-ruecksicht
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-einander
+    prompt:
+      source_text: "Những người thuê nhà phải biết nhường nhịn nhau. (dùng müssen, Rücksicht nehmen, einander)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Mieter müssen aufeinander Rücksicht nehmen.
+        - Die Mieter müssen Rücksicht aufeinander nehmen.
+        - Mieter müssen aufeinander Rücksicht nehmen.
+        - Mieter müssen Rücksicht aufeinander nehmen.
+    known_wrong:
+      - answer: Die Mieter müssen auf einander Rücksicht nehmen.
+        feedback_vi: Giới từ + einander viết liền – aufeinander.
+        error_tag: spelling
+      - answer: Die Mieter müssen auf sich Rücksicht nehmen.
+        feedback_vi: auf sich = cho chính mình; "nhau" là aufeinander.
+        error_tag: word_choice
+      - answer: Die Mieter müssen Rücksicht nehmen aufeinander.
+        feedback_vi: Nguyên thể nehmen đứng cuối câu – aufeinander Rücksicht nehmen.
+        error_tag: verb_position
+    explanation:
+      vi: "Rücksicht nehmen auf + Akk → aufeinander (lẫn nhau, viết liền). müssen ở vị trí 2, nguyên thể nehmen ở cuối."
+    display_answer: Die Mieter müssen aufeinander Rücksicht nehmen.

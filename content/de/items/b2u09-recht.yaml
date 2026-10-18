@@ -1,0 +1,1587 @@
+# Học liệu unit B2U09 "Luật pháp và cuộc sống chung" (Recht und Zusammenleben), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U09L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên nhóm item.
+# Lưu ý chung: đây chỉ là học liệu luyện ngôn ngữ, không phải tư vấn pháp lý; mọi tình huống, tên người, tên công ty là hư cấu.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Toà án – Funktionsverbgefüge mang nghĩa bị động =================
+  - key: de:item:b2u09-g-funktionsverbgefuege-passiv
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Funktionsverbgefüge mit passivischer Bedeutung: Anerkennung finden · zur Sprache kommen · in Kraft treten · zur Anwendung kommen · in Betracht kommen · unter Druck stehen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Một số cụm danh từ + động từ chức năng có nghĩa bị động dù động từ ở dạng chủ động: Die Regel kommt zur Anwendung (= wird angewendet), Der Vorschlag findet Anerkennung (= wird anerkannt). Động từ kommen, finden, stehen, treten thường cho nghĩa bị động; cụm chủ động tương ứng thường dùng bringen, setzen, ziehen (zur Sprache bringen, in Kraft setzen, in Betracht ziehen, unter Druck setzen). Bạn phải học nguyên cụm: đúng động từ, đúng giới từ và mạo từ (zur = zu der)."
+      examples:
+        - target: Das neue Gesetz tritt im Januar in Kraft.
+          translation:
+            vi: Luật mới có hiệu lực từ tháng Một.
+        - target: Der Vorschlag der Richterin fand breite Anerkennung.
+          translation:
+            vi: Đề xuất của bà thẩm phán được nhiều người công nhận.
+        - target: In der Verhandlung kamen auch die hohen Kosten zur Sprache.
+          translation:
+            vi: Trong phiên toà, chi phí cao cũng được nhắc tới.
+      confusion:
+        vi: "Đừng ghép thêm werden: Der Vorschlag findet Anerkennung (không nói \"wird Anerkennung gefunden\"). in Kraft treten dùng sein ở Perfekt: Das Gesetz ist in Kraft getreten."
+
+  - key: de:item:b2u09-gericht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gericht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: toà án
+      examples:
+        - target: Der Streit mit dem Vermieter landete schließlich vor Gericht.
+          translation:
+            vi: Vụ tranh chấp với chủ nhà cuối cùng phải đưa ra toà.
+        - target: Das Gericht entscheidet nächste Woche über den Fall.
+          translation:
+            vi: Tuần sau toà sẽ phán quyết về vụ việc.
+      confusion:
+        vi: "das Gericht còn có nghĩa \"món ăn\" (ein leckeres Gericht); nghĩa nào thì xem ngữ cảnh. \"Ra toà\" là vor Gericht (Dativ): vor Gericht gehen, vor Gericht stehen."
+
+  - key: de:item:b2u09-richter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Richter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: "thẩm phán (nữ: die Richterin, -nen)"
+      examples:
+        - target: Die Richterin hörte zuerst die Zeugen an.
+          translation:
+            vi: Bà thẩm phán nghe các nhân chứng trình bày trước.
+        - target: Der Richter hat das Urteil am Nachmittag verkündet.
+          translation:
+            vi: Thẩm phán đã tuyên án vào buổi chiều.
+      confusion:
+        vi: "der Richter (thẩm phán) khác der Anwalt (luật sư): thẩm phán phán quyết, luật sư đại diện cho một bên."
+
+  - key: de:item:b2u09-anwalt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Anwalt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: "luật sư (nữ: die Anwältin, -nen)"
+      examples:
+        - target: Bei solchen Fragen sollten Sie mit einer Anwältin sprechen.
+          translation:
+            vi: Với những câu hỏi như thế, anh/chị nên nói chuyện với một luật sư.
+        - target: Sein Anwalt hält das Urteil für zu hart.
+          translation:
+            vi: Luật sư của anh ta cho rằng bản án quá nặng.
+      confusion:
+        vi: "Số nhiều đổi a → ä: die Anwälte. der Rechtsanwalt cùng nghĩa, hay gặp trên biển tên và trong văn bản."
+
+  - key: de:item:b2u09-klage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Klage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn kiện, vụ kiện (ở toà)
+      examples:
+        - target: Die Mieterin hat Klage gegen die Kündigung erhoben.
+          translation:
+            vi: Người thuê nhà đã nộp đơn kiện việc bị chấm dứt hợp đồng.
+        - target: Das Gericht hat die Klage abgewiesen.
+          translation:
+            vi: Toà đã bác đơn kiện.
+      confusion:
+        vi: "die Klage là vụ kiện ở toà; die Beschwerde là lời khiếu nại thông thường (với cửa hàng, khách sạn, cơ quan)."
+
+  - key: de:item:b2u09-klagen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: klagen
+      pos: động từ
+    back:
+      meaning:
+        vi: kiện (gegen + Akk); than phiền (über + Akk)
+      examples:
+        - target: Der Mieter klagt gegen die hohe Nachzahlung.
+          translation:
+            vi: Người thuê nhà kiện khoản tiền phải đóng thêm quá cao.
+        - target: Viele Nachbarn klagen über den Lärm der Baustelle.
+          translation:
+            vi: Nhiều hàng xóm than phiền về tiếng ồn của công trường.
+      confusion:
+        vi: "klagen gegen + Akk = kiện ai/việc gì; klagen über + Akk = than phiền. verklagen + Akk cũng là kiện, nhưng đi thẳng với người bị kiện: Sie verklagt die Firma."
+
+  - key: de:item:b2u09-urteil
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Urteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản án, phán quyết; nhận định
+      examples:
+        - target: Das Urteil soll nächste Woche fallen.
+          translation:
+            vi: Theo dự kiến, tuần sau sẽ có phán quyết.
+        - target: Bilden Sie sich selbst ein Urteil!
+          translation:
+            vi: Anh/chị hãy tự rút ra nhận định của mình!
+      confusion:
+        vi: "Cụm hay gặp: ein Urteil sprechen/fällen (tuyên án), das Urteil fällt (phán quyết được đưa ra), sich ein Urteil bilden (tự đánh giá)."
+
+  - key: de:item:b2u09-verurteilen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verurteilen
+      pos: động từ
+    back:
+      meaning:
+        vi: kết án; lên án
+      examples:
+        - target: Der Mann wurde zu einer Geldstrafe verurteilt.
+          translation:
+            vi: Người đàn ông bị phạt tiền.
+        - target: Die Regierung verurteilt die Gewalt scharf.
+          translation:
+            vi: Chính phủ lên án mạnh mẽ bạo lực.
+      confusion:
+        vi: "Kết án với hình phạt gì: zu + Dativ (zu einer Geldstrafe). Partizip không có ge-: verurteilt."
+
+  - key: de:item:b2u09-strafe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Strafe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hình phạt; tiền phạt
+      examples:
+        - target: Viele finden die Strafe zu mild.
+          translation:
+            vi: Nhiều người thấy hình phạt quá nhẹ.
+        - target: Wer schwarzfährt, muss mit einer Strafe rechnen.
+          translation:
+            vi: Ai đi tàu xe không vé thì phải tính đến chuyện bị phạt.
+      confusion:
+        vi: "die Strafe là từ chung; die Geldstrafe là hình phạt bằng tiền do toà tuyên, das Bußgeld là tiền phạt hành chính (ví dụ vi phạm giao thông)."
+
+  # --- Từ bổ sung B2U09L1 (10 lemma: toà án, vụ án) ---
+  - key: de:item:b2u09-zeuge
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zeuge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: "nhân chứng (nữ: die Zeugin, -nen)"
+      examples:
+        - target: Die Polizei sucht Zeugen des Unfalls.
+          translation:
+            vi: Cảnh sát đang tìm nhân chứng của vụ tai nạn.
+        - target: Der Richter befragt den Zeugen.
+          translation:
+            vi: Thẩm phán thẩm vấn nhân chứng.
+      confusion:
+        vi: "n-Deklination: den Zeugen, dem Zeugen, des Zeugen (chỉ Nominativ số ít là der Zeuge)."
+
+  - key: de:item:b2u09-beweis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Beweis, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng chứng, chứng cứ
+      examples:
+        - target: Gegen ihn gibt es keine Beweise.
+          translation:
+            vi: Không có bằng chứng nào chống lại anh ta.
+        - target: Das Video ist ein wichtiger Beweis.
+          translation:
+            vi: Đoạn video là một bằng chứng quan trọng.
+      confusion:
+        vi: "Động từ: beweisen (chứng minh). Cụm hay gặp: einen Beweis vorlegen (đưa ra bằng chứng)."
+
+  - key: de:item:b2u09-verhandlung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verhandlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phiên toà; cuộc đàm phán
+      examples:
+        - target: Die Verhandlung beginnt um neun Uhr im Saal drei.
+          translation:
+            vi: Phiên toà bắt đầu lúc chín giờ ở phòng số ba.
+        - target: Die Verhandlungen über den neuen Vertrag laufen noch.
+          translation:
+            vi: Các cuộc đàm phán về hợp đồng mới vẫn đang diễn ra.
+      confusion:
+        vi: "Từ verhandeln (đàm phán). Ở toà, die Verhandlung là phiên xét xử; trong kinh doanh là cuộc đàm phán."
+
+  - key: de:item:b2u09-schuldig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schuldig
+      pos: tính từ
+    back:
+      meaning:
+        vi: có tội; (jemandem etwas schuldig sein) nợ ai cái gì
+      examples:
+        - target: Das Gericht hat den Mann schuldig gesprochen.
+          translation:
+            vi: Toà đã tuyên người đàn ông có tội.
+        - target: Ich bin dir noch zehn Euro schuldig.
+          translation:
+            vi: Mình còn nợ cậu mười euro.
+      confusion:
+        vi: "schuldig sprechen = tuyên có tội; ngược lại là freisprechen (tuyên vô tội). Danh từ: die Schuld (lỗi, tội; nợ)."
+
+  - key: de:item:b2u09-unschuldig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unschuldig
+      pos: tính từ
+    back:
+      meaning:
+        vi: vô tội
+      examples:
+        - target: Bis zum Urteil gilt er als unschuldig.
+          translation:
+            vi: Cho đến khi có bản án, anh ta được coi là vô tội.
+        - target: Sie hat immer gesagt, dass sie unschuldig ist.
+          translation:
+            vi: Cô ấy luôn nói rằng mình vô tội.
+      confusion:
+        vi: "Tiền tố un- tạo nghĩa ngược: schuldig ↔ unschuldig. Cụm als unschuldig gelten = được coi là vô tội."
+
+  - key: de:item:b2u09-freisprechen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: freisprechen, spricht frei, sprach frei, hat freigesprochen
+      pos: động từ
+    back:
+      meaning:
+        vi: tuyên vô tội, tha bổng
+      examples:
+        - target: Das Gericht hat die Frau freigesprochen.
+          translation:
+            vi: Toà đã tuyên người phụ nữ vô tội.
+        - target: Der Mann wurde freigesprochen, weil es keine Beweise gab.
+          translation:
+            vi: Người đàn ông được tha bổng vì không có bằng chứng.
+      confusion:
+        vi: "Động từ tách: Das Gericht spricht ihn frei. Danh từ: der Freispruch."
+
+  - key: de:item:b2u09-geldstrafe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Geldstrafe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hình phạt tiền (do toà tuyên)
+      examples:
+        - target: Sie wurde zu einer Geldstrafe verurteilt.
+          translation:
+            vi: Cô ấy bị toà phạt tiền.
+        - target: Die Geldstrafe war höher als erwartet.
+          translation:
+            vi: Khoản phạt tiền cao hơn dự kiến.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Strafe → die Geldstrafe."
+
+  - key: de:item:b2u09-prozess
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Prozess, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vụ xử án, phiên xét xử; quá trình
+      examples:
+        - target: Der Prozess gegen den Firmenchef beginnt im Mai.
+          translation:
+            vi: Phiên xử giám đốc công ty bắt đầu vào tháng Năm.
+        - target: Eine neue Sprache zu lernen ist ein langer Prozess.
+          translation:
+            vi: Học một ngôn ngữ mới là một quá trình dài.
+      confusion:
+        vi: "Hai nghĩa: ở toà = vụ xử án (einen Prozess führen/gewinnen/verlieren); nói chung = quá trình."
+
+  - key: de:item:b2u09-anklagen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: anklagen
+      pos: động từ
+    back:
+      meaning:
+        vi: khởi tố, truy tố; buộc tội
+      examples:
+        - target: Zwei Männer wurden wegen Betrugs angeklagt.
+          translation:
+            vi: Hai người đàn ông bị truy tố vì tội lừa đảo.
+        - target: Der Journalist klagt die Behörden an, nichts getan zu haben.
+          translation:
+            vi: Nhà báo buộc tội các cơ quan chức năng đã không làm gì cả.
+      confusion:
+        vi: "Động từ tách: Man klagt ihn an. Truy tố vì tội gì: wegen + Genitiv. Người bị truy tố: der/die Angeklagte (danh từ hoá từ tính từ)."
+
+  - key: de:item:b2u09-opfer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Opfer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nạn nhân; sự hy sinh
+      examples:
+        - target: Die Opfer des Betrugs bekommen ihr Geld zurück.
+          translation:
+            vi: Các nạn nhân của vụ lừa đảo được nhận lại tiền.
+        - target: Er ist Opfer eines Diebstahls geworden.
+          translation:
+            vi: Anh ấy đã trở thành nạn nhân của một vụ trộm.
+      confusion:
+        vi: "das Opfer là giống trung, dùng cho cả nam và nữ: Sie ist das Opfer."
+
+  # ================= Bài 2: Hợp đồng, bảo hiểm – điều kiện không có wenn =================
+  - key: de:item:b2u09-g-konditional-verbspitze
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Bedingung ohne wenn: Sollten Sie Fragen haben, (so) wenden Sie sich an uns. · Liegt ein Schaden vor, (dann) … · Hätte ich Zeit, würde ich …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Trong văn bản trang trọng, bạn có thể bỏ wenn và đưa động từ chia lên đầu câu điều kiện: Liegt ein Schaden vor, … (= Wenn ein Schaden vorliegt, …). Câu chính theo sau mở đầu bằng động từ, hoặc bằng so/dann rồi đến động từ. Sollte/Sollten ở đầu câu nghĩa là \"nếu như, trong trường hợp\" và cho thấy khả năng không cao: Sollten Sie Fragen haben, …"
+      examples:
+        - target: Sollten Sie Fragen haben, wenden Sie sich bitte an unseren Kundendienst.
+          translation:
+            vi: Nếu quý khách có câu hỏi, xin vui lòng liên hệ bộ phận chăm sóc khách hàng của chúng tôi.
+        - target: Liegt kein Einverständnis vor, so wird der Vertrag nicht verlängert.
+          translation:
+            vi: Nếu không có sự đồng ý, hợp đồng sẽ không được gia hạn.
+        - target: Hätte ich eine Versicherung, müsste ich den Schaden nicht selbst bezahlen.
+          translation:
+            vi: Nếu có bảo hiểm thì tôi đã không phải tự trả tiền thiệt hại.
+      confusion:
+        vi: "Đừng đọc nhầm thành câu hỏi: sau vế có động từ đứng đầu là dấu phẩy và một câu chính, không có dấu hỏi. Haben Sie Fragen? (câu hỏi) ≠ Haben Sie Fragen, rufen Sie uns an. (= nếu có câu hỏi …)."
+
+  - key: de:item:b2u09-vertrag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Vertrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hợp đồng
+      examples:
+        - target: Lesen Sie den Vertrag genau, bevor Sie unterschreiben.
+          translation:
+            vi: Anh/chị hãy đọc kỹ hợp đồng trước khi ký.
+        - target: Der Vertrag läuft zwei Jahre.
+          translation:
+            vi: Hợp đồng có thời hạn hai năm.
+      confusion:
+        vi: "Số nhiều: die Verträge. Cụm hay gặp: einen Vertrag abschließen (ký kết), unterschreiben (ký), kündigen (chấm dứt), verlängern (gia hạn)."
+
+  - key: de:item:b2u09-widerruf
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Widerruf, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự rút lại, huỷ bỏ (một hợp đồng, một lời tuyên bố)
+      examples:
+        - target: Informationen zum Widerruf finden Sie in den Vertragsbedingungen.
+          translation:
+            vi: Thông tin về việc huỷ hợp đồng có trong các điều kiện hợp đồng.
+        - target: Ich habe den Widerruf per E-Mail geschickt.
+          translation:
+            vi: Tôi đã gửi thông báo huỷ hợp đồng qua email.
+      confusion:
+        vi: "Widerruf (huỷ, rút lại một thoả thuận vừa ký) khác Kündigung (chấm dứt một hợp đồng đang chạy). Điều kiện và thời hạn cụ thể tuỳ quy định hiện hành, bài này chỉ luyện ngôn ngữ."
+
+  - key: de:item:b2u09-widerrufen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: widerrufen, widerrief, hat widerrufen
+      pos: động từ
+    back:
+      meaning:
+        vi: huỷ, rút lại (hợp đồng, lời nói)
+      examples:
+        - target: Ich möchte meinen Vertrag widerrufen.
+          translation:
+            vi: Tôi muốn huỷ hợp đồng của mình.
+        - target: Der Zeuge hat seine Aussage später widerrufen.
+          translation:
+            vi: Sau đó nhân chứng đã rút lại lời khai.
+      confusion:
+        vi: "Không tách: ich widerrufe. Partizip không có ge-: hat widerrufen (giống nguyên thể)."
+
+  - key: de:item:b2u09-haftung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Haftung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trách nhiệm pháp lý (bồi thường)
+      examples:
+        - target: Für Garderobe wird keine Haftung übernommen.
+          translation:
+            vi: Chúng tôi không chịu trách nhiệm về áo khoác, đồ gửi.
+        - target: Wer trägt die Haftung für den Schaden?
+          translation:
+            vi: Ai chịu trách nhiệm bồi thường thiệt hại?
+      confusion:
+        vi: "Cụm cố định: die Haftung übernehmen / tragen. Câu \"Für Garderobe wird keine Haftung übernommen\" là biển báo quen thuộc ở nhà hàng, phòng gửi đồ."
+
+  - key: de:item:b2u09-haften
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: haften
+      pos: động từ
+    back:
+      meaning:
+        vi: chịu trách nhiệm bồi thường (für + Akk)
+      examples:
+        - target: Wer haftet für den Schaden?
+          translation:
+            vi: Ai chịu trách nhiệm bồi thường thiệt hại?
+        - target: Die Firma haftet für Fehler ihrer Produkte.
+          translation:
+            vi: Công ty chịu trách nhiệm về lỗi của sản phẩm.
+      confusion:
+        vi: "haften còn có nghĩa \"dính\": Der Aufkleber haftet gut. Nghĩa pháp lý luôn đi với für + Akkusativ."
+
+  - key: de:item:b2u09-versicherung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Versicherung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo hiểm; công ty bảo hiểm
+      examples:
+        - target: Ich habe eine Versicherung für mein Fahrrad abgeschlossen.
+          translation:
+            vi: Tôi đã mua bảo hiểm cho xe đạp của mình.
+        - target: Die Versicherung zahlt nur einen Teil des Schadens.
+          translation:
+            vi: Công ty bảo hiểm chỉ trả một phần thiệt hại.
+      confusion:
+        vi: "\"Mua bảo hiểm\" = eine Versicherung abschließen (không nói \"kaufen\"). Động từ: versichern."
+
+  - key: de:item:b2u09-schaden
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schaden, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiệt hại, hư hỏng
+      examples:
+        - target: Der Sturm hat große Schäden verursacht.
+          translation:
+            vi: Cơn bão đã gây thiệt hại lớn.
+        - target: Bitte melden Sie den Schaden sofort Ihrer Versicherung.
+          translation:
+            vi: Xin anh/chị báo ngay thiệt hại cho công ty bảo hiểm.
+      confusion:
+        vi: "Số nhiều đổi a → ä: die Schäden. Cụm: einen Schaden melden (báo), ersetzen (bồi thường), verursachen (gây ra)."
+
+  - key: de:item:b2u09-kostenpflichtig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: kostenpflichtig
+      pos: tính từ
+    back:
+      meaning:
+        vi: phải trả phí, mất phí
+      examples:
+        - target: Die Reparatur nach Ablauf der Garantie ist kostenpflichtig.
+          translation:
+            vi: Sửa chữa sau khi hết bảo hành thì phải trả phí.
+        - target: Falsch geparkte Autos werden kostenpflichtig abgeschleppt.
+          translation:
+            vi: Ô tô đỗ sai chỗ sẽ bị kéo đi và chủ xe phải trả phí.
+      confusion:
+        vi: "Ngược nghĩa: kostenlos (miễn phí). -pflichtig = bắt buộc phải: kostenpflichtig, meldepflichtig."
+
+  # --- Từ bổ sung B2U09L2 (10 lemma: hợp đồng, bảo hiểm) ---
+  - key: de:item:b2u09-klausel
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Klausel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều khoản (trong hợp đồng)
+      examples:
+        - target: Diese Klausel verstehe ich nicht.
+          translation:
+            vi: Tôi không hiểu điều khoản này.
+        - target: Im Vertrag gibt es eine Klausel zur Kündigung.
+          translation:
+            vi: Trong hợp đồng có một điều khoản về việc chấm dứt hợp đồng.
+      confusion:
+        vi: "Klausel là một điều khoản cụ thể; die Bedingungen (Pl.) là toàn bộ các điều kiện."
+
+  - key: de:item:b2u09-anspruch
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Anspruch, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyền được hưởng/đòi; yêu cầu, đòi hỏi
+      examples:
+        - target: Habe ich in diesem Fall Anspruch auf Ersatz?
+          translation:
+            vi: Trong trường hợp này tôi có quyền được bồi thường không?
+        - target: Er stellt hohe Ansprüche an sich selbst.
+          translation:
+            vi: Anh ấy đặt ra yêu cầu cao cho chính mình.
+      confusion:
+        vi: "Anspruch auf + Akk haben = có quyền hưởng cái gì; Ansprüche an + Akk stellen = đòi hỏi ở ai."
+
+  - key: de:item:b2u09-kleingedruckte
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Kleingedruckte (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần chữ nhỏ (các điều khoản chi tiết dễ bị bỏ qua)
+      examples:
+        - target: Lesen Sie immer auch das Kleingedruckte!
+          translation:
+            vi: Hãy luôn đọc cả phần chữ nhỏ!
+        - target: Im Kleingedruckten stand, dass der Versand kostenpflichtig ist.
+          translation:
+            vi: Trong phần chữ nhỏ có ghi là phí vận chuyển phải tự trả.
+      confusion:
+        vi: "Tính từ danh từ hoá nên biến đuôi như tính từ: das Kleingedruckte, im Kleingedruckten."
+
+  - key: de:item:b2u09-laufzeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Laufzeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời hạn (hiệu lực) của hợp đồng
+      examples:
+        - target: Der Handyvertrag hat eine Laufzeit von zwei Jahren.
+          translation:
+            vi: Hợp đồng điện thoại có thời hạn hai năm.
+        - target: Wie lang ist die Laufzeit des Vertrags?
+          translation:
+            vi: Hợp đồng có thời hạn bao lâu?
+      confusion:
+        vi: "Từ laufen: hợp đồng \"chạy\" (Der Vertrag läuft zwei Jahre). Laufzeit cũng dùng cho thời lượng phim."
+
+  - key: de:item:b2u09-abschliessen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abschließen, schloss ab, hat abgeschlossen
+      pos: động từ
+    back:
+      meaning:
+        vi: ký kết (hợp đồng, bảo hiểm); khoá (cửa); hoàn tất
+      examples:
+        - target: Wir haben einen neuen Mietvertrag abgeschlossen.
+          translation:
+            vi: Chúng tôi đã ký một hợp đồng thuê nhà mới.
+        - target: Hast du die Tür abgeschlossen?
+          translation:
+            vi: Cậu đã khoá cửa chưa?
+      confusion:
+        vi: "Động từ tách: Wir schließen den Vertrag ab. Với hợp đồng, bảo hiểm người Đức dùng abschließen chứ không dùng machen."
+
+  - key: de:item:b2u09-versicherungsschutz
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Versicherungsschutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: phạm vi bảo hiểm, sự bảo vệ của bảo hiểm
+      examples:
+        - target: Gilt der Versicherungsschutz auch im Urlaub?
+          translation:
+            vi: Bảo hiểm có áp dụng cả khi đi nghỉ không?
+        - target: Bitte prüfen Sie vor der Reise Ihren Versicherungsschutz.
+          translation:
+            vi: Trước chuyến đi, anh/chị hãy kiểm tra phạm vi bảo hiểm của mình.
+      confusion:
+        vi: "Từ ghép có s nối: Versicherung + s + Schutz. Giống theo từ cuối: der Schutz → der Versicherungsschutz."
+
+  - key: de:item:b2u09-vorliegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: vorliegen, lag vor, hat vorgelegen
+      pos: động từ
+    back:
+      meaning:
+        vi: "có, hiện có (trang trọng: giấy tờ, lý do, sự đồng ý …)"
+      examples:
+        - target: Liegt ein Schaden vor, melden Sie ihn bitte sofort.
+          translation:
+            vi: Nếu có hư hỏng, xin báo ngay.
+        - target: Uns liegen noch keine Unterlagen vor.
+          translation:
+            vi: Chúng tôi chưa nhận được giấy tờ nào.
+      confusion:
+        vi: "Động từ tách: Es liegt kein Grund vor. Perfekt ở miền Bắc nước Đức thường là hat vorgelegen; miền Nam và Áo hay dùng ist vorgelegen."
+
+  - key: de:item:b2u09-einverstaendnis
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Einverständnis (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đồng ý, sự chấp thuận
+      examples:
+        - target: Wir brauchen Ihr schriftliches Einverständnis.
+          translation:
+            vi: Chúng tôi cần sự đồng ý bằng văn bản của ông/bà.
+        - target: Ohne das Einverständnis der Eltern darf das Kind nicht mitfahren.
+          translation:
+            vi: Không có sự đồng ý của bố mẹ thì đứa trẻ không được đi cùng.
+      confusion:
+        vi: "Lời nói hằng ngày dùng einverstanden sein (mit + Dat): Ich bin einverstanden. Danh từ das Einverständnis trang trọng hơn; số nhiều rất hiếm."
+
+  - key: de:item:b2u09-verpflichtet
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: verpflichtet
+      pos: tính từ
+    back:
+      meaning:
+        vi: có nghĩa vụ, buộc phải (zu + Dat / zu + nguyên thể)
+      examples:
+        - target: Ich bin nicht verpflichtet, dieses Angebot anzunehmen.
+          translation:
+            vi: Tôi không có nghĩa vụ phải nhận lời đề nghị này.
+        - target: Der Kunde ist zur Zahlung verpflichtet.
+          translation:
+            vi: Khách hàng có nghĩa vụ thanh toán.
+      confusion:
+        vi: "verpflichtet sein zu + Dat (zur Zahlung) hoặc verpflichtet sein, … zu + nguyên thể. Danh từ: die Pflicht."
+
+  - key: de:item:b2u09-zustimmung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zustimmung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tán thành, sự đồng ý
+      examples:
+        - target: Der Plan fand große Zustimmung.
+          translation:
+            vi: Kế hoạch được nhiều người tán thành.
+        - target: Ohne die Zustimmung aller Mitglieder geht das nicht.
+          translation:
+            vi: Không có sự đồng ý của tất cả thành viên thì không làm được.
+      confusion:
+        vi: "Động từ: zustimmen + Dat (Ich stimme Ihnen zu). Zustimmung finden = được tán thành (nghĩa bị động)."
+
+  # ================= Bài 3: Quy định – gemäß/entsprechend/gegenüber/entgegen, einander =================
+  - key: de:item:b2u09-g-dativ-praep-formal
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Präpositionen mit Dativ (formell): gemäß · entsprechend · gegenüber · entgegen – gemäß der Vorschrift / der Vorschrift gemäß"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "gemäß (theo, đúng với), entsprechend (phù hợp với, theo), entgegen (trái với) và gegenüber (đối diện; đối với) đi với Dativ. gemäß, entsprechend, gegenüber đứng được trước hoặc sau danh từ (gemäß der Vorschrift / der Vorschrift gemäß); entgegen thường đứng trước; với đại từ nhân xưng, gegenüber đứng sau (mir gegenüber). Đây là giới từ của văn bản hành chính; khi nói chuyện hằng ngày người ta hay dùng nach hoặc wie … steht."
+      examples:
+        - target: Gemäß der Hausordnung ist das Grillen auf dem Balkon untersagt.
+          translation:
+            vi: Theo nội quy toà nhà, cấm nướng thịt trên ban công.
+        - target: Entgegen der Vorschrift stand das Fahrrad im Treppenhaus.
+          translation:
+            vi: Trái với quy định, chiếc xe đạp để ở cầu thang.
+        - target: Das Rathaus liegt dem Bahnhof gegenüber.
+          translation:
+            vi: Toà thị chính nằm đối diện nhà ga.
+      confusion:
+        vi: "gemäß đi với Dativ: gemäß dem Vertrag (không phải \"gemäß des Vertrags\"). Đừng nhầm với các giới từ Genitiv trang trọng như aufgrund, infolge, bezüglich."
+
+  - key: de:item:b2u09-g-einander
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "einander / miteinander, voneinander, aufeinander: Wir helfen einander. = Wir helfen uns gegenseitig."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "einander nghĩa là \"lẫn nhau\", dùng khi chủ ngữ là số nhiều, và không bao giờ đổi dạng. Đi sau giới từ thì viết liền thành một từ: miteinander, voneinander, aufeinander, füreinander. Trong lời nói hằng ngày, người Đức hay dùng sich gegenseitig (Sie helfen sich gegenseitig); einander nghe trang trọng hơn."
+      examples:
+        - target: Die Nachbarn helfen einander, wo sie können.
+          translation:
+            vi: Hàng xóm giúp đỡ lẫn nhau khi có thể.
+        - target: Wir sollten mehr miteinander reden.
+          translation:
+            vi: Chúng ta nên nói chuyện với nhau nhiều hơn.
+        - target: In einem Mehrfamilienhaus muss man aufeinander Rücksicht nehmen.
+          translation:
+            vi: Trong một toà nhà nhiều hộ, mọi người phải biết nhường nhịn nhau.
+      confusion:
+        vi: "Viết liền: miteinander (không viết \"mit einander\"). mit sich reden = tự nói với mình, khác miteinander reden = nói chuyện với nhau."
+
+  - key: de:item:b2u09-vorschrift
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Vorschrift, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy định (bắt buộc)
+      examples:
+        - target: Bitte halten Sie sich an die Vorschriften.
+          translation:
+            vi: Xin vui lòng tuân thủ các quy định.
+        - target: Laut Vorschrift muss die Haustür nachts abgeschlossen sein.
+          translation:
+            vi: Theo quy định, ban đêm cửa chính phải được khoá.
+      confusion:
+        vi: "die Vorschrift là giống cái (die Schrift): gemäß der Vorschrift, không phải \"dem Vorschrift\". Động từ: vorschreiben."
+
+  - key: de:item:b2u09-regel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Regel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy tắc, luật lệ
+      examples:
+        - target: In unserem Haus gibt es klare Regeln.
+          translation:
+            vi: Trong toà nhà của chúng tôi có những quy tắc rõ ràng.
+        - target: In der Regel ist es hier abends ruhig.
+          translation:
+            vi: Thường thì buổi tối ở đây yên tĩnh.
+      confusion:
+        vi: "in der Regel = thường thì, theo lệ thường. sich an die Regeln halten = tuân thủ quy tắc."
+
+  - key: de:item:b2u09-verordnung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Verordnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghị định, quy định (do cơ quan nhà nước ban hành)
+      examples:
+        - target: Die Stadt hat eine neue Verordnung zum Lärmschutz erlassen.
+          translation:
+            vi: Thành phố đã ban hành một quy định mới về chống tiếng ồn.
+        - target: Die Verordnung tritt im Sommer in Kraft.
+          translation:
+            vi: Quy định này có hiệu lực từ mùa hè.
+      confusion:
+        vi: "Verordnung do cơ quan nhà nước ban hành; Hausordnung là nội quy của một toà nhà. Bác sĩ cũng \"verordnet\" thuốc (kê đơn)."
+
+  - key: de:item:b2u09-zulaessig
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: zulässig
+      pos: tính từ
+    back:
+      meaning:
+        vi: được phép (theo quy định)
+      examples:
+        - target: Ist das überhaupt zulässig?
+          translation:
+            vi: Việc đó có được phép không vậy?
+        - target: Diese Klausel ist nach Ansicht des Gerichts nicht zulässig.
+          translation:
+            vi: Theo nhận định của toà, điều khoản này không hợp lệ.
+      confusion:
+        vi: "zulässig mang sắc thái quy định, văn bản; erlaubt là từ chung hằng ngày. Ngược nghĩa: unzulässig."
+
+  - key: de:item:b2u09-untersagen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: untersagen
+      pos: động từ
+    back:
+      meaning:
+        vi: cấm (trang trọng)
+      examples:
+        - target: Das Rauchen ist im ganzen Gebäude untersagt.
+          translation:
+            vi: Cấm hút thuốc trong toàn bộ toà nhà.
+        - target: Die Hausverwaltung hat uns das Grillen auf dem Balkon untersagt.
+          translation:
+            vi: Ban quản lý toà nhà đã cấm chúng tôi nướng thịt trên ban công.
+      confusion:
+        vi: "Không tách: Partizip là untersagt (không có ge-). jemandem (Dat) etwas (Akk) untersagen, giống verbieten."
+
+  - key: de:item:b2u09-verstoss
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Verstoß, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự vi phạm (gegen + Akk)
+      examples:
+        - target: Laute Musik nach 22 Uhr ist ein Verstoß gegen die Hausordnung.
+          translation:
+            vi: Mở nhạc to sau 22 giờ là vi phạm nội quy toà nhà.
+        - target: Bei wiederholten Verstößen droht ein Bußgeld.
+          translation:
+            vi: Nếu vi phạm nhiều lần thì có thể bị phạt tiền.
+      confusion:
+        vi: "Số nhiều: die Verstöße. Vi phạm cái gì: gegen + Akkusativ."
+
+  - key: de:item:b2u09-verstossen-gegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: verstoßen, verstößt, verstieß, hat verstoßen (gegen + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: vi phạm
+      examples:
+        - target: Wer gegen die Regeln verstößt, muss mit Konsequenzen rechnen.
+          translation:
+            vi: Ai vi phạm quy tắc thì phải tính đến hậu quả.
+        - target: Damit haben Sie gegen den Mietvertrag verstoßen.
+          translation:
+            vi: Như vậy là anh/chị đã vi phạm hợp đồng thuê nhà.
+      confusion:
+        vi: "Không tách; Partizip giống nguyên thể: hat verstoßen. Luôn đi với gegen + Akkusativ."
+
+  - key: de:item:b2u09-bussgeld
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Bußgeld, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền phạt hành chính
+      examples:
+        - target: Wer zu schnell fährt, muss oft ein Bußgeld zahlen.
+          translation:
+            vi: Ai chạy quá tốc độ thường phải nộp tiền phạt.
+        - target: Die Höhe des Bußgelds hängt vom Verstoß ab.
+          translation:
+            vi: Mức phạt tuỳ vào hành vi vi phạm.
+      confusion:
+        vi: "Bußgeld là phạt hành chính (giao thông, trật tự); Geldstrafe là hình phạt tiền do toà tuyên. Mức phạt cụ thể tuỳ quy định hiện hành."
+
+  # --- Từ bổ sung B2U09L3 (8 lemma: nội quy, cuộc sống chung) ---
+  - key: de:item:b2u09-genehmigung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Genehmigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy phép, sự cho phép (chính thức)
+      examples:
+        - target: Für ein Fest im Hof braucht man eine Genehmigung der Hausverwaltung.
+          translation:
+            vi: Muốn tổ chức tiệc ở sân thì cần sự cho phép của ban quản lý toà nhà.
+        - target: Haben Sie dafür eine Genehmigung?
+          translation:
+            vi: Anh/chị có giấy phép cho việc này không?
+      confusion:
+        vi: "Từ động từ genehmigen (cho phép, phê duyệt). Genehmigung là sự cho phép chính thức, thường bằng văn bản."
+
+  - key: de:item:b2u09-hausverwaltung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hausverwaltung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban quản lý toà nhà (công ty quản lý nhà cho thuê)
+      examples:
+        - target: Bitte melden Sie Schäden direkt der Hausverwaltung.
+          translation:
+            vi: Xin báo hư hỏng trực tiếp cho ban quản lý toà nhà.
+        - target: Die Hausverwaltung hat die Hausordnung geändert.
+          translation:
+            vi: Ban quản lý toà nhà đã thay đổi nội quy.
+      confusion:
+        vi: "Hausverwaltung quản lý giấy tờ, hợp đồng thay chủ nhà; der Hausmeister là người trông coi, sửa chữa trong toà nhà."
+
+  - key: de:item:b2u09-nachtruhe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Nachtruhe (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ yên tĩnh ban đêm
+      examples:
+        - target: In vielen Häusern beginnt die Nachtruhe um 22 Uhr.
+          translation:
+            vi: Ở nhiều toà nhà, giờ yên tĩnh ban đêm bắt đầu lúc 22 giờ.
+        - target: Bitte stören Sie die Nachtruhe Ihrer Nachbarn nicht.
+          translation:
+            vi: Xin đừng làm phiền giờ nghỉ đêm của hàng xóm.
+      confusion:
+        vi: "Giờ cụ thể ghi trong nội quy từng nhà và có thể khác nhau. Die Ruhezeit là các khung giờ yên tĩnh nói chung (cả buổi trưa, Chủ nhật)."
+
+  - key: de:item:b2u09-ordnungsgemaess
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: ordnungsgemäß
+      pos: tính từ
+    back:
+      meaning:
+        vi: đúng quy định, đúng thủ tục
+      examples:
+        - target: Bitte entsorgen Sie den Müll ordnungsgemäß.
+          translation:
+            vi: Xin vứt rác đúng quy định.
+        - target: Der Antrag wurde ordnungsgemäß eingereicht.
+          translation:
+            vi: Đơn đã được nộp đúng thủ tục.
+      confusion:
+        vi: "-gemäß ở cuối từ = \"theo, đúng với\": ordnungsgemäß, vorschriftsgemäß, fristgemäß. Viết liền thành một tính từ."
+
+  - key: de:item:b2u09-ruecksichtnahme
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Rücksichtnahme (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự quan tâm, nhường nhịn người khác
+      examples:
+        - target: Wir bitten alle Mieter um gegenseitige Rücksichtnahme.
+          translation:
+            vi: Chúng tôi đề nghị tất cả người thuê nhà biết nhường nhịn lẫn nhau.
+        - target: Ohne Rücksichtnahme funktioniert das Zusammenleben nicht.
+          translation:
+            vi: Thiếu sự nhường nhịn thì không thể sống chung được.
+      confusion:
+        vi: "Danh từ hoá từ cụm Rücksicht nehmen (auf + Akk). Văn bản thông báo hay dùng Rücksichtnahme; khi nói thường dùng Rücksicht."
+
+  - key: de:item:b2u09-miteinander
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Miteinander (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chung sống, quan hệ với nhau
+      examples:
+        - target: Ein gutes Miteinander im Haus ist uns wichtig.
+          translation:
+            vi: Quan hệ tốt đẹp giữa mọi người trong toà nhà rất quan trọng với chúng tôi.
+        - target: Das Miteinander der Generationen funktioniert hier gut.
+          translation:
+            vi: Ở đây các thế hệ sống chung với nhau rất hoà hợp.
+      confusion:
+        vi: "Danh từ (viết hoa, có mạo từ das) khác trạng từ miteinander (viết thường): Wir reden miteinander."
+
+  - key: de:item:b2u09-gegenseitig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gegenseitig
+      pos: tính từ
+    back:
+      meaning:
+        vi: lẫn nhau, qua lại
+      examples:
+        - target: Die Nachbarn helfen sich gegenseitig.
+          translation:
+            vi: Hàng xóm giúp đỡ lẫn nhau.
+        - target: Gegenseitiger Respekt ist die Grundlage.
+          translation:
+            vi: Tôn trọng lẫn nhau là nền tảng.
+      confusion:
+        vi: "sich gegenseitig là cách nói hằng ngày cho \"lẫn nhau\"; einander trang trọng hơn. Không dùng cả hai cùng lúc (\"sich gegenseitig einander\" là sai)."
+
+  - key: de:item:b2u09-vorschreiben
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: vorschreiben, schrieb vor, hat vorgeschrieben
+      pos: động từ
+    back:
+      meaning:
+        vi: quy định, bắt buộc; ra lệnh cho ai phải làm gì
+      examples:
+        - target: Die Hausordnung schreibt vor, dass Fahrräder im Keller stehen.
+          translation:
+            vi: Nội quy quy định xe đạp phải để dưới tầng hầm.
+        - target: Du kannst mir nicht vorschreiben, was ich anziehe.
+          translation:
+            vi: Cậu không thể bắt mình phải mặc gì.
+      confusion:
+        vi: "Động từ tách: Das Gesetz schreibt es vor. Danh từ: die Vorschrift."
+
+  # ================= Bài 4: Khiếu nại trang trọng =================
+  - key: de:item:b2u09-g-beschwerde-redemittel
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Redemittel für Beschwerden: Hiermit möchte ich mich über … beschweren. · Ich fordere Sie auf, … zu … · Ich gehe davon aus, dass … · Andernfalls sehe ich mich gezwungen, …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Thư khiếu nại trang trọng thường đi theo thứ tự: sự việc (Am 3. Mai habe ich … bestellt), vấn đề, yêu cầu cụ thể kèm thời hạn (Ich fordere Sie auf, … bis zum … zu …) và bước tiếp theo nếu không được giải quyết (Andernfalls sehe ich mich gezwungen, …). Giọng văn kiên quyết nhưng lịch sự: Konjunktiv II làm lời yêu cầu mềm hơn (Ich wäre Ihnen dankbar, wenn …), còn lời lẽ gay gắt (Das ist eine Frechheit!) làm thư mất tác dụng. Ich gehe davon aus, dass … (tôi tin chắc rằng …) cho thấy bạn mong đợi một cách đương nhiên."
+      examples:
+        - target: Hiermit möchte ich mich über die mangelhafte Reparatur beschweren.
+          translation:
+            vi: Bằng thư này, tôi muốn khiếu nại về việc sửa chữa kém chất lượng.
+        - target: Ich fordere Sie auf, mir den Kaufpreis bis zum 30. November zu erstatten.
+          translation:
+            vi: Tôi yêu cầu quý công ty hoàn trả tiền hàng cho tôi chậm nhất là ngày 30 tháng 11.
+        - target: Andernfalls sehe ich mich gezwungen, mich an die Verbraucherzentrale zu wenden.
+          translation:
+            vi: Nếu không, tôi buộc phải liên hệ trung tâm tư vấn người tiêu dùng.
+      confusion:
+        vi: "Ich fordere Sie auf (yêu cầu dứt khoát) mạnh hơn Ich bitte Sie (đề nghị). Đừng quá rụt rè (Vielleicht könnten Sie eventuell …) nhưng cũng đừng đe doạ; luôn nêu yêu cầu cụ thể và thời hạn."
+
+  - key: de:item:b2u09-reklamation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Reklamation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khiếu nại về hàng hoá/dịch vụ bị lỗi
+      examples:
+        - target: Ich habe eine Reklamation zu meiner Bestellung.
+          translation:
+            vi: Tôi có khiếu nại về đơn hàng của mình.
+        - target: Ihre Reklamation wird so schnell wie möglich bearbeitet.
+          translation:
+            vi: Khiếu nại của quý khách sẽ được xử lý nhanh nhất có thể.
+      confusion:
+        vi: "Reklamation là khiếu nại về hàng lỗi (đòi sửa, đổi, trả tiền); die Beschwerde rộng hơn (cả thái độ phục vụ, tiếng ồn …). Không nhầm với die Reklame (quảng cáo)."
+
+  - key: de:item:b2u09-reklamieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: reklamieren
+      pos: động từ
+    back:
+      meaning:
+        vi: khiếu nại (hàng lỗi), đòi đổi/sửa
+      examples:
+        - target: Ich möchte diesen Wasserkocher reklamieren.
+          translation:
+            vi: Tôi muốn khiếu nại chiếc ấm đun nước này.
+        - target: Sie hat die kaputte Lampe beim Händler reklamiert.
+          translation:
+            vi: Cô ấy đã khiếu nại chiếc đèn hỏng với cửa hàng.
+      confusion:
+        vi: "Đuôi -ieren nên Partizip không có ge-: hat reklamiert. Tân ngữ là món hàng (Akk): etwas reklamieren."
+
+  - key: de:item:b2u09-erstattung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Erstattung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hoàn trả (tiền)
+      examples:
+        - target: Ich bitte um Erstattung des Kaufpreises.
+          translation:
+            vi: Tôi đề nghị được hoàn trả tiền hàng.
+        - target: Wann erhalte ich die Erstattung?
+          translation:
+            vi: Khi nào tôi nhận được tiền hoàn trả?
+      confusion:
+        vi: "Từ erstatten. Cụm trang trọng: um Erstattung bitten; die Erstattung + Genitiv (des Kaufpreises, der Kosten)."
+
+  - key: de:item:b2u09-erstatten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: erstatten
+      pos: động từ
+    back:
+      meaning:
+        vi: hoàn trả (tiền, chi phí)
+      examples:
+        - target: Wir erstatten Ihnen den vollen Betrag.
+          translation:
+            vi: Chúng tôi hoàn trả cho quý khách toàn bộ số tiền.
+        - target: Die Fahrtkosten werden erstattet.
+          translation:
+            vi: Chi phí đi lại được hoàn trả.
+      confusion:
+        vi: "jemandem (Dat) etwas (Akk) erstatten. Cụm khác: Anzeige erstatten (trình báo với cảnh sát)."
+
+  - key: de:item:b2u09-mangel
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Mangel, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: khuyết tật, lỗi (của hàng hoá, nhà); sự thiếu
+      examples:
+        - target: Das Gerät hat einen technischen Mangel.
+          translation:
+            vi: Thiết bị có một lỗi kỹ thuật.
+        - target: Bei der Übergabe der Wohnung haben wir mehrere Mängel festgestellt.
+          translation:
+            vi: Khi nhận bàn giao căn hộ, chúng tôi phát hiện nhiều chỗ hư hỏng.
+      confusion:
+        vi: "Số nhiều đổi a → ä: die Mängel. Mangel an + Dat = sự thiếu (Mangel an Zeit, aus Mangel an Beweisen)."
+
+  - key: de:item:b2u09-entschaedigung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Entschädigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền bồi thường, sự đền bù
+      examples:
+        - target: Wegen der Verspätung habe ich eine Entschädigung bekommen.
+          translation:
+            vi: Vì chuyến đi bị trễ, tôi đã nhận được tiền bồi thường.
+        - target: Die Firma bot uns eine kleine Entschädigung an.
+          translation:
+            vi: Công ty đề nghị bồi thường cho chúng tôi một khoản nhỏ.
+      confusion:
+        vi: "Entschädigung (bồi thường cho thiệt hại, phiền phức) khác Erstattung (trả lại đúng số tiền đã trả)."
+
+  - key: de:item:b2u09-kulanz
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Kulanz (Sg.)
+      ipa: /kuˈlants/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiện chí (người bán tự nguyện giải quyết dù không bắt buộc)
+      examples:
+        - target: Aus Kulanz hat der Händler das Gerät umgetauscht.
+          translation:
+            vi: Vì thiện chí, cửa hàng đã đổi thiết bị cho tôi.
+        - target: Vielleicht repariert die Firma das Handy auf Kulanz.
+          translation:
+            vi: Có thể công ty sẽ sửa điện thoại theo diện thiện chí.
+      confusion:
+        vi: "Cụm cố định: aus Kulanz, auf Kulanz, eine Kulanzlösung. Kulanz là thiện chí, không phải nghĩa vụ."
+
+  - key: de:item:b2u09-fristgerecht
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: fristgerecht
+      pos: tính từ
+    back:
+      meaning:
+        vi: đúng hạn, trong thời hạn
+      examples:
+        - target: Ich habe die Ware fristgerecht zurückgeschickt.
+          translation:
+            vi: Tôi đã gửi trả hàng đúng hạn.
+        - target: Bitte zahlen Sie die Rechnung fristgerecht.
+          translation:
+            vi: Xin thanh toán hoá đơn đúng hạn.
+      confusion:
+        vi: "die Frist (thời hạn) + gerecht (phù hợp). Gần nghĩa: rechtzeitig (kịp lúc) – từ hằng ngày hơn."
+
+  # --- Từ bổ sung B2U09L4 (9 lemma: khiếu nại, quyền người tiêu dùng) ---
+  - key: de:item:b2u09-mangelhaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: mangelhaft
+      pos: tính từ
+    back:
+      meaning:
+        vi: có lỗi, kém chất lượng
+      examples:
+        - target: Die gelieferte Ware war mangelhaft.
+          translation:
+            vi: Hàng được giao bị lỗi.
+        - target: Die Reparatur wurde mangelhaft ausgeführt.
+          translation:
+            vi: Việc sửa chữa được làm kém chất lượng.
+      confusion:
+        vi: "Ở trường học Đức, mangelhaft còn là điểm 5 (kém, không đạt) trong thang điểm 1–6."
+
+  - key: de:item:b2u09-beschaedigt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: beschädigt
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị hư hỏng
+      examples:
+        - target: Das Paket kam beschädigt an.
+          translation:
+            vi: Gói hàng đến nơi trong tình trạng bị hỏng.
+        - target: Die beschädigte Ware schicke ich Ihnen zurück.
+          translation:
+            vi: Tôi gửi trả quý công ty món hàng bị hỏng.
+      confusion:
+        vi: "Phân từ của beschädigen (làm hỏng), dùng như tính từ nên có đuôi: die beschädigte Ware, ein beschädigtes Paket."
+
+  - key: de:item:b2u09-bestellnummer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bestellnummer, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: mã số đơn hàng
+      examples:
+        - target: Nennen Sie mir bitte Ihre Bestellnummer.
+          translation:
+            vi: Xin quý khách cho tôi biết mã đơn hàng.
+        - target: Die Bestellnummer finden Sie in der Bestätigungsmail.
+          translation:
+            vi: Mã đơn hàng có trong email xác nhận.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Nummer → die Bestellnummer."
+
+  - key: de:item:b2u09-ersatz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ersatz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ thay thế; sự bồi thường
+      examples:
+        - target: Als Ersatz bekommen Sie ein neues Gerät.
+          translation:
+            vi: Quý khách sẽ nhận một thiết bị mới để thay thế.
+        - target: Ich erwarte umgehend Ersatz.
+          translation:
+            vi: Tôi mong được thay thế ngay.
+      confusion:
+        vi: "als Ersatz = để thay thế. Từ ghép hay gặp: das Ersatzteil (phụ tùng), der Schadensersatz (tiền bồi thường thiệt hại)."
+
+  - key: de:item:b2u09-kaufbeleg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kaufbeleg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng từ mua hàng (hoá đơn, biên lai)
+      examples:
+        - target: Bitte legen Sie eine Kopie des Kaufbelegs bei.
+          translation:
+            vi: Xin gửi kèm bản sao chứng từ mua hàng.
+        - target: Ohne Kaufbeleg ist ein Umtausch oft schwierig.
+          translation:
+            vi: Không có hoá đơn thì việc đổi hàng thường khó khăn.
+      confusion:
+        vi: "der Beleg = chứng từ; der Kassenbon/der Kassenzettel là cách nói thường ngày cho biên lai ở quầy thu ngân."
+
+  - key: de:item:b2u09-gutschrift
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Gutschrift, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản ghi có, tiền được trả lại vào tài khoản; phiếu ghi có
+      examples:
+        - target: Die Gutschrift erscheint in wenigen Tagen auf Ihrem Konto.
+          translation:
+            vi: Khoản tiền hoàn sẽ hiện trong tài khoản của quý khách sau vài ngày.
+        - target: Statt Bargeld hat sie eine Gutschrift bekommen.
+          translation:
+            vi: Thay vì tiền mặt, cô ấy nhận được phiếu ghi có.
+      confusion:
+        vi: "Gutschrift khác der Gutschein (phiếu quà tặng, phiếu mua hàng), dù nghĩa gần nhau."
+
+  - key: de:item:b2u09-verbraucherzentrale
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verbraucherzentrale, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trung tâm tư vấn bảo vệ người tiêu dùng
+      examples:
+        - target: Bei Problemen kann man sich an die Verbraucherzentrale wenden.
+          translation:
+            vi: Khi gặp vấn đề, có thể liên hệ trung tâm tư vấn người tiêu dùng.
+        - target: Die Verbraucherzentrale hat mich gut beraten.
+          translation:
+            vi: Trung tâm tư vấn người tiêu dùng đã tư vấn cho tôi rất tốt.
+      confusion:
+        vi: "Mỗi bang ở Đức có một trung tâm như vậy; dịch vụ tư vấn có thể mất phí, nên hỏi trước."
+
+  - key: de:item:b2u09-unverzueglich
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: unverzüglich
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngay lập tức, không chậm trễ (trang trọng)
+      examples:
+        - target: Bitte melden Sie Schäden unverzüglich.
+          translation:
+            vi: Xin báo hư hỏng ngay lập tức.
+        - target: Ich bitte Sie, den Fehler unverzüglich zu beheben.
+          translation:
+            vi: Tôi đề nghị quý công ty khắc phục lỗi ngay.
+      confusion:
+        vi: "Từ văn bản trang trọng; khi nói hằng ngày dùng sofort. Gần nghĩa: umgehend."
+
+  - key: de:item:b2u09-zumutung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Zumutung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều quá đáng, khó chấp nhận
+      examples:
+        - target: Drei Wochen ohne Heizung sind eine Zumutung.
+          translation:
+            vi: Ba tuần không có lò sưởi là điều không thể chấp nhận được.
+        - target: Diese Wartezeit ist eine Zumutung für die Kunden.
+          translation:
+            vi: Thời gian chờ như thế này là quá đáng với khách hàng.
+      confusion:
+        vi: "Từ khá mạnh: trong thư trang trọng, bạn có thể viết mềm hơn (Das ist für mich nicht akzeptabel). Động từ: jemandem etwas zumuten."

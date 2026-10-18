@@ -1,0 +1,413 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u09-vorschriften
+order_index: 3
+level: b2
+title:
+  vi: Theo quy định – giới từ Dativ trang trọng, einander (Gemäß der Vorschrift; miteinander)
+objectives:
+  - vi: Đọc hiểu nội quy, quy định (Hausordnung, Verordnung) và nhận ra điều được phép, điều bị cấm.
+  - vi: Dùng gemäß, entsprechend, gegenüber, entgegen + Dativ, kể cả khi chúng đứng sau danh từ.
+  - vi: Nói về sự tôn trọng lẫn nhau với einander, miteinander, aufeinander, voneinander và sich gegenseitig.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u09-konditional-ohne-wenn]
+items:
+  - item: de:item:b2u09-g-dativ-praep-formal
+  - item: de:item:b2u09-g-einander
+  - item: de:item:b2u09-vorschrift
+  - item: de:item:b2u09-regel
+  - item: de:item:b2u09-verordnung
+  - item: de:item:b2u09-zulaessig
+  - item: de:item:b2u09-untersagen
+  - item: de:item:b2u09-verstoss
+  - item: de:item:b2u09-verstossen-gegen
+  - item: de:item:b2u09-bussgeld
+  - item: de:item:b2u09-genehmigung
+  - item: de:item:b2u09-hausverwaltung
+  - item: de:item:b2u09-nachtruhe
+  - item: de:item:b2u09-ordnungsgemaess
+  - item: de:item:b2u09-ruecksichtnahme
+  - item: de:item:b2u09-miteinander
+  - item: de:item:b2u09-gegenseitig
+  - item: de:item:b2u09-vorschreiben
+  - item: de:item:a2u08-g-infinitiv-aufforderung
+    role: reuse
+  - item: de:item:b2u02-g-sein-zu
+    role: reuse
+  - item: de:item:b2u02-g-genitiv-praep-formal
+    role: reuse
+  - item: de:item:b2u03-g-unpersoenliches-passiv
+    role: reuse
+  - item: de:item:b2u05-g-sofern-soweit
+    role: reuse
+  - item: de:item:b1u09-hausordnung
+    role: reuse
+  - item: de:item:b1u09-ruhezeit
+    role: reuse
+  - item: de:item:b1u09-ruecksicht
+    role: reuse
+  - item: de:item:b2u05-ausnahme
+    role: reuse
+  - item: de:item:b2u05-verbindlich
+    role: reuse
+  - item: de:item:b2u07-einhalten
+    role: reuse
+  - item: de:item:b2u08-g-relativ-wer-was
+    role: reuse
+  - item: de:item:b2u08-g-adjektive-kasus
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc được nội quy như \"Gemäß der Hausordnung ist das Grillen auf dem Balkon untersagt.\" và nói được về việc sống chung: \"Im Haus nehmen alle Rücksicht aufeinander.\""
+  - type: explain
+    text:
+      vi: "gemäß (theo, đúng với) và entsprechend (phù hợp với, theo) là hai giới từ của văn bản quy định, đi với Dativ: gemäß der Vorschrift, entsprechend Ihrem Wunsch. Cả hai có thể đứng sau danh từ mà nghĩa không đổi: der Vorschrift gemäß, Ihrem Wunsch entsprechend. Khi nói hằng ngày, người ta thường dùng nach hoặc wie … steht."
+  - type: explain
+    text:
+      vi: "entgegen + Dativ nghĩa là \"trái với\": entgegen der Vereinbarung (trái với thoả thuận), và thường đứng trước danh từ. gegenüber + Dativ vừa chỉ vị trí \"đối diện\" (gegenüber dem Rathaus / dem Rathaus gegenüber), vừa chỉ thái độ \"đối với\" (Er ist mir gegenüber höflich). Với đại từ nhân xưng, gegenüber đứng sau: mir gegenüber, ihr gegenüber."
+  - type: explain
+    text:
+      vi: "Hãy để ý giống của danh từ để chia mạo từ Dativ đúng: die Vorschrift → gemäß der Vorschrift; der Vertrag → gemäß dem Vertrag. Đừng nhầm với nhóm giới từ Genitiv trang trọng (aufgrund, bezüglich, infolge – B2U02): \"gemäß des Vertrags\" bị coi là sai trong văn viết chuẩn."
+  - type: explain
+    text:
+      vi: "einander nghĩa là \"lẫn nhau\", không bao giờ đổi dạng: Die Nachbarn helfen einander. Đi với giới từ thì viết liền: miteinander (với nhau), voneinander (từ nhau), aufeinander (đến nhau), füreinander (vì nhau). Tiếng Việt chỉ cần \"nhau\", còn tiếng Đức lấy đúng giới từ mà động từ đòi hỏi: Rücksicht nehmen auf → aufeinander Rücksicht nehmen."
+  - type: deep_explain
+    text:
+      vi: "Trong lời nói hằng ngày, sich gegenseitig thông dụng hơn einander: Sie helfen sich gegenseitig. Chỉ dùng sich thì có thể hiểu hai cách (Sie waschen sich = tự rửa hoặc rửa cho nhau), nên gegenseitig/einander làm rõ nghĩa. Ở B2U04 bạn đã gặp laut và zufolge để dẫn nguồn: laut Vertrag (laut thường đi với Dativ, đôi khi Genitiv), dem Bericht zufolge (zufolge đứng sau danh từ, Dativ). Nội quy trong bài là hư cấu; nội quy thật mỗi toà nhà một khác, và đây chỉ là bài luyện ngôn ngữ, không phải tư vấn pháp lý."
+  - type: example
+    target: Gemäß der Hausordnung ist das Grillen auf dem Balkon untersagt.
+    target_lang: de
+    translation:
+      vi: Theo nội quy toà nhà, cấm nướng thịt trên ban công.
+    note:
+      vi: "gemäß + Dativ: die Hausordnung (ôn B1U09) → der Hausordnung. untersagt = verboten (trang trọng)."
+  - type: example
+    target: Ihrem Wunsch entsprechend haben wir den Vertrag verlängert.
+    target_lang: de
+    translation:
+      vi: Theo mong muốn của ông/bà, chúng tôi đã gia hạn hợp đồng.
+    note:
+      vi: "entsprechend đứng sau danh từ, vẫn Dativ: Ihrem Wunsch. Cũng nói được: Entsprechend Ihrem Wunsch …"
+  - type: example
+    target: Entgegen der Vereinbarung hat der Nachbar sein Fahrrad im Treppenhaus abgestellt.
+    target_lang: de
+    translation:
+      vi: Trái với thoả thuận, người hàng xóm để xe đạp ở cầu thang.
+    note:
+      vi: "entgegen + Dativ = trái với; die Vereinbarung → der Vereinbarung."
+  - type: example
+    target: Die Bäckerei liegt dem Rathaus gegenüber. Die Verkäuferin war mir gegenüber immer sehr freundlich.
+    target_lang: de
+    translation:
+      vi: Tiệm bánh nằm đối diện toà thị chính. Cô bán hàng lúc nào cũng rất thân thiện với tôi.
+    note:
+      vi: "gegenüber + Dativ: chỉ vị trí (dem Rathaus gegenüber) và thái độ (mir gegenüber); với đại từ, gegenüber đứng sau."
+  - type: example
+    target: In unserem Haus helfen die Nachbarn einander und nehmen Rücksicht aufeinander.
+    target_lang: de
+    translation:
+      vi: Trong toà nhà của chúng tôi, hàng xóm giúp đỡ nhau và biết nhường nhịn nhau.
+    note:
+      vi: "helfen + Dativ → einander; Rücksicht nehmen auf (ôn B1U09) → aufeinander (viết liền)."
+  - type: example
+    target: Während der Ruhezeiten ist unnötiger Lärm zu vermeiden. Nach 22 Uhr wird im Hof nicht mehr gefeiert.
+    target_lang: de
+    translation:
+      vi: Trong giờ yên tĩnh, phải tránh gây tiếng ồn không cần thiết. Sau 22 giờ không được tổ chức tiệc ngoài sân nữa.
+    note:
+      vi: "sein + zu (ôn B2U02) = muss vermieden werden; bị động không chủ ngữ wird … gefeiert (ôn B2U03) – văn phong nội quy."
+  - type: example
+    target: Aufgrund der neuen Verordnung sind Ausnahmen nur noch mit Genehmigung zulässig. Die Regeln sind für alle verbindlich und müssen eingehalten werden.
+    target_lang: de
+    translation:
+      vi: Do quy định mới, ngoại lệ chỉ còn được chấp nhận khi có giấy phép. Các quy tắc ràng buộc với tất cả mọi người và phải được tuân thủ.
+    note:
+      vi: "aufgrund + Genitiv (ôn B2U02) khác gemäß + Dativ. die Ausnahme, verbindlich (ôn B2U05), einhalten (ôn B2U07)."
+  - type: example
+    target: Sofern alle Nachbarn zustimmen, darf im Hof gegrillt werden. Bitte Müll ordnungsgemäß trennen!
+    target_lang: de
+    translation:
+      vi: Nếu tất cả hàng xóm đồng ý thì được phép nướng thịt ngoài sân. Xin phân loại rác đúng quy định!
+    note:
+      vi: "sofern + câu phụ (ôn B2U05); nguyên thể làm lời yêu cầu trên biển báo, nội quy (ôn A2U08): Müll trennen!"
+  - type: example
+    target: Wer die Ruhezeiten nicht einhält, der muss mit Beschwerden rechnen. Die meisten Mieter sind sich der Regeln aber bewusst.
+    target_lang: de
+    translation:
+      vi: Ai không giữ giờ yên tĩnh thì phải tính đến chuyện bị phàn nàn. Nhưng phần lớn người thuê nhà đều ý thức được các quy tắc.
+    note:
+      vi: "Wer …, (der) … (ôn B2U08) – kiểu câu hay gặp trong nội quy; sich (Dat) einer Sache (Gen) bewusst sein: tính từ đi với Genitiv (ôn B2U08)."
+  - type: common_mistake
+    wrong: gemäß dem Vorschrift
+    right: gemäß der Vorschrift
+    target_lang: de
+    note:
+      vi: "die Vorschrift là giống cái, Dativ là der: gemäß der Vorschrift."
+  - type: common_mistake
+    wrong: Wir sollten mehr mit einander reden.
+    right: Wir sollten mehr miteinander reden.
+    target_lang: de
+    note:
+      vi: "Giới từ + einander viết liền thành một từ: miteinander, aufeinander, voneinander."
+  - type: common_mistake
+    wrong: Gemäß des Vertrags ist die Miete am Monatsanfang zu zahlen.
+    right: Gemäß dem Vertrag ist die Miete am Monatsanfang zu zahlen.
+    target_lang: de
+    note:
+      vi: "gemäß đi với Dativ (dem Vertrag), không phải Genitiv như aufgrund hay bezüglich."
+  - type: summary
+    points:
+      - vi: "gemäß, entsprechend, gegenüber, entgegen + Dativ."
+      - vi: "Đứng trước hoặc sau danh từ: gemäß der Vorschrift / der Vorschrift gemäß; entgegen thường đứng trước."
+      - vi: "gegenüber + đại từ: luôn đứng sau (mir gegenüber); nghĩa đối diện hoặc đối với."
+      - vi: "einander = lẫn nhau, không đổi dạng; giới từ + einander viết liền: miteinander, aufeinander."
+      - vi: "Nói hằng ngày: sich gegenseitig; không dùng sich + einander cùng lúc."
+      - vi: "Từ vựng: die Vorschrift, die Regel, die Verordnung, zulässig, untersagen, der Verstoß, verstoßen gegen, das Bußgeld."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u09l3-mcq-gemaess-der
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u09-g-dativ-praep-formal
+    prompt:
+      stem: "Chọn mạo từ đúng: \"Gemäß ___ Vorschrift muss die Haustür nachts abgeschlossen sein.\""
+      stem_lang: vi
+      options:
+        - { id: v3a, text: "der", lang: de }
+        - { id: v7b, text: "dem", lang: de }
+        - { id: v1c, text: "die", lang: de }
+        - { id: v5d, text: "des", lang: de }
+    answer:
+      correct_option_id: v3a
+    explanation:
+      vi: "gemäß đi với Dativ; die Vorschrift là giống cái → Dativ der. dem là Dativ giống đực/trung, die là Nominativ/Akkusativ, des là Genitiv giống đực/trung."
+    display_answer: der
+
+  - key: de:exercise:b2u09l3-mcq-miteinander
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-einander
+    prompt:
+      stem: "Câu nào viết đúng? (Chúng ta nên nói chuyện với nhau nhiều hơn.)"
+      stem_lang: vi
+      options:
+        - { id: n6a, text: "Wir sollten mehr miteinander reden.", lang: de }
+        - { id: n2b, text: "Wir sollten mehr mit einander reden.", lang: de }
+        - { id: n8c, text: "Wir sollten mehr mit sich reden.", lang: de }
+        - { id: n4d, text: "Wir sollten mehr einander mit reden.", lang: de }
+    answer:
+      correct_option_id: n6a
+    explanation:
+      vi: "Giới từ + einander viết liền: miteinander. sich không dùng cho chủ ngữ wir (phải là uns), và mit sich reden nghĩa là tự nói với mình; giới từ cũng không đứng sau einander."
+    display_answer: Wir sollten mehr miteinander reden.
+
+  - key: de:exercise:b2u09l3-mcq-lesen-grillen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-genehmigung
+    prompt:
+      stem: "Auszug aus einer Hausordnung (fiktiv): Gemäß der Verordnung der Stadt gilt von 22 bis 6 Uhr Nachtruhe. Fahrräder sind im Keller abzustellen. Das Grillen auf dem Balkon ist untersagt; Ausnahmen sind nur mit Genehmigung der Hausverwaltung zulässig. Wer gegen die Hausordnung verstößt, muss mit Konsequenzen rechnen. Wir bitten alle Mieter, aufeinander Rücksicht zu nehmen. — Richtig oder falsch? Mit Erlaubnis der Hausverwaltung darf man auf dem Balkon grillen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Das Grillen … ist untersagt; Ausnahmen sind nur mit Genehmigung der Hausverwaltung zulässig: nướng thịt bị cấm, nhưng ngoại lệ được phép nếu ban quản lý cho phép. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b2u09l3-mcq-lesen-fahrrad
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-vorschrift
+    prompt:
+      stem: "Auszug aus einer Hausordnung (fiktiv): Gemäß der Verordnung der Stadt gilt von 22 bis 6 Uhr Nachtruhe. Fahrräder sind im Keller abzustellen. Das Grillen auf dem Balkon ist untersagt; Ausnahmen sind nur mit Genehmigung der Hausverwaltung zulässig. Wer gegen die Hausordnung verstößt, muss mit Konsequenzen rechnen. Wir bitten alle Mieter, aufeinander Rücksicht zu nehmen. — Richtig oder falsch? Fahrräder dürfen im Treppenhaus stehen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Fahrräder sind im Keller abzustellen = xe đạp phải để dưới tầng hầm (sein + zu = müssen). Không được để ở cầu thang. Câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u09l3-fill-gemaess-entgegen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-dativ-praep-formal
+    prompt:
+      template: "Gemäß {{b1}} Mietvertrag (der Mietvertrag) sind Haustiere nur mit Genehmigung erlaubt. Entgegen {{b2}} Vereinbarung (die Vereinbarung) hat der Mieter aber einen Hund."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [dem]
+        b2: [der]
+    known_wrong:
+      - answer: des
+        feedback_vi: gemäß đi với Dativ, không phải Genitiv – dem Mietvertrag.
+        error_tag: case_genitive
+      - answer: den
+        feedback_vi: Không phải Akkusativ; gemäß cần Dativ – dem Mietvertrag.
+        error_tag: case_dat_akk
+      - answer: die
+        feedback_vi: entgegen đi với Dativ; die Vereinbarung → der Vereinbarung.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Cả gemäß và entgegen đều đi với Dativ. der Mietvertrag (giống đực) → dem; die Vereinbarung (giống cái) → der."
+    display_answer: "Gemäß dem Mietvertrag sind Haustiere nur mit Genehmigung erlaubt. Entgegen der Vereinbarung hat der Mieter aber einen Hund."
+
+  - key: de:exercise:b2u09l3-fill-gegenseitig-aufeinander
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-einander
+    prompt:
+      template: "Die Nachbarn helfen sich {{b1}} (= einander; Wort auf -seitig). Im ganzen Haus nehmen alle Rücksicht {{b2}} (auf + einander)."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [gegenseitig]
+        b2: [aufeinander]
+    known_wrong:
+      - answer: auf einander
+        feedback_vi: Giới từ + einander viết liền thành một từ – aufeinander.
+        error_tag: spelling
+      - answer: auf sich
+        feedback_vi: Nghĩa "lẫn nhau" sau giới từ phải dùng einander – aufeinander.
+        error_tag: word_choice
+      - answer: einander
+        feedback_vi: Ô 1 đã có sich, không thêm einander; dùng sich gegenseitig. Ô 2 cần cả giới từ auf – aufeinander.
+        error_tag: word_choice
+    explanation:
+      vi: "Ô 1: sich gegenseitig = lẫn nhau (cách nói hằng ngày). Ô 2: Rücksicht nehmen auf + einander → aufeinander, viết liền."
+    display_answer: "Die Nachbarn helfen sich gegenseitig. Im ganzen Haus nehmen alle Rücksicht aufeinander."
+
+  - key: de:exercise:b2u09l3-tr-gemaess-rauchen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-untersagen
+    prompt:
+      source_text: "Theo nội quy toà nhà, cấm hút thuốc ở cầu thang. (dùng gemäß, untersagt, das Treppenhaus)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Gemäß der Hausordnung ist das Rauchen im Treppenhaus untersagt.
+        - Gemäß der Hausordnung ist Rauchen im Treppenhaus untersagt.
+        - Der Hausordnung gemäß ist das Rauchen im Treppenhaus untersagt.
+        - Das Rauchen ist gemäß der Hausordnung im Treppenhaus untersagt.
+        - Das Rauchen im Treppenhaus ist gemäß der Hausordnung untersagt.
+        - Im Treppenhaus ist das Rauchen gemäß der Hausordnung untersagt.
+        - Gemäß der Hausordnung ist im Treppenhaus das Rauchen untersagt.
+    known_wrong:
+      - answer: Gemäß die Hausordnung ist das Rauchen im Treppenhaus untersagt.
+        feedback_vi: "gemäß + Dativ: die Hausordnung → der Hausordnung."
+        error_tag: case_dat_akk
+      - answer: Gemäß der Hausordnung das Rauchen ist im Treppenhaus untersagt.
+        feedback_vi: Cụm gemäß … đứng đầu chiếm vị trí 1, động từ ist phải đứng ngay sau.
+        error_tag: verb_position
+      - answer: Gemäß der Hausordnung ist das Rauchen im Treppenhaus untersagen.
+        feedback_vi: "Cần Partizip II: ist … untersagt (không ge- vì unter- không tách)."
+        error_tag: participle_form
+    explanation:
+      vi: "gemäß + Dativ: der Hausordnung. Cụm này đứng đầu nên ist ở vị trí 2; untersagt (Partizip II, không có ge-) ở cuối câu như trong bị động trạng thái."
+    display_answer: Gemäß der Hausordnung ist das Rauchen im Treppenhaus untersagt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u09l3-wb-ruecksicht-aufeinander
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-einander
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Những người thuê nhà nên nhường nhịn nhau nhiều hơn.\""
+      tokens:
+        - { id: r-nehmen, text: nehmen }
+        - { id: r-mieter, text: Mieter }
+        - { id: r-aufeinander, text: aufeinander }
+        - { id: r-sollten, text: sollten }
+        - { id: r-die, text: Die }
+        - { id: r-ruecksicht, text: Rücksicht }
+        - { id: r-mehr, text: mehr }
+    answer:
+      orders:
+        - [r-die, r-mieter, r-sollten, r-mehr, r-ruecksicht, r-aufeinander, r-nehmen]
+        - [r-die, r-mieter, r-sollten, r-aufeinander, r-mehr, r-ruecksicht, r-nehmen]
+        - [r-die, r-mieter, r-sollten, r-mehr, r-aufeinander, r-ruecksicht, r-nehmen]
+    explanation:
+      vi: "Modal sollten ở vị trí 2, nguyên thể nehmen ở cuối. Rücksicht nehmen auf → aufeinander (viết liền); aufeinander có thể đứng trước hoặc sau (mehr) Rücksicht."
+    display_answer: Die Mieter sollten mehr Rücksicht aufeinander nehmen.
+
+  - key: de:exercise:b2u09l3-tr-helfen-einander
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-einander
+    prompt:
+      source_text: "Hàng xóm giúp đỡ lẫn nhau. (dùng einander)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Nachbarn helfen einander.
+        - Nachbarn helfen einander.
+    known_wrong:
+      - answer: Die Nachbarn helfen sich einander.
+        feedback_vi: einander đã có nghĩa "lẫn nhau", không thêm sich.
+        error_tag: word_choice
+      - answer: Die Nachbarn helfen einanders.
+        feedback_vi: einander không bao giờ đổi dạng.
+        error_tag: spelling
+      - answer: Die Nachbarn helfen mit einander.
+        feedback_vi: helfen đi thẳng với Dativ, không cần mit – helfen einander.
+        error_tag: preposition
+    explanation:
+      vi: "helfen + Dativ, và einander thay cho tân ngữ \"nhau\". Không đổi dạng, không thêm sich (Sie helfen sich gegenseitig là cách nói khác)."
+    display_answer: Die Nachbarn helfen einander.
+
+  - key: de:exercise:b2u09l3-mcq-aushang-verordnung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-verordnung
+    prompt:
+      stem: "Bạn viết thông báo trang trọng cho toà nhà: \"Theo quy định mới, cấm nướng thịt ngoài sân.\" Câu nào đúng cả ngữ pháp lẫn nghĩa?"
+      stem_lang: vi
+      options:
+        - { id: o4a, text: "Entsprechend der neuen Verordnung ist das Grillen im Hof untersagt.", lang: de }
+        - { id: o8b, text: "Entgegen der neuen Verordnung ist das Grillen im Hof untersagt.", lang: de }
+        - { id: o2c, text: "Entsprechend die neue Verordnung ist das Grillen im Hof untersagt.", lang: de }
+        - { id: o6d, text: "Entsprechend der neuen Verordnung das Grillen ist im Hof untersagt.", lang: de }
+    answer:
+      correct_option_id: o4a
+    explanation:
+      vi: "entsprechend + Dativ = theo, phù hợp với: der neuen Verordnung (đuôi -en sau der). entgegen nghĩa là \"trái với\" – sai nghĩa; die neue Verordnung là Nominativ/Akkusativ; sau cụm giới từ đứng đầu, động từ ist phải ở vị trí 2."
+    display_answer: Entsprechend der neuen Verordnung ist das Grillen im Hof untersagt.

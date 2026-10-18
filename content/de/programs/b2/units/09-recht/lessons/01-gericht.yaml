@@ -1,0 +1,406 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u09-gericht
+order_index: 1
+level: b2
+title:
+  vi: Được công nhận – cụm động từ chức năng mang nghĩa bị động (Anerkennung finden, in Kraft treten)
+objectives:
+  - vi: Đọc hiểu một bản tin pháp luật đơn giản về một phiên toà.
+  - vi: Hiểu và dùng các cụm cố định mang nghĩa bị động của văn bản hành chính (Anerkennung finden, zur Sprache kommen, in Kraft treten, zur Anwendung kommen, in Betracht kommen, unter Druck stehen).
+  - vi: Dùng từ vựng về toà án (das Gericht, der Richter, der Anwalt, die Klage, das Urteil, die Strafe).
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u08-wiederholung]
+items:
+  - item: de:item:b2u09-g-funktionsverbgefuege-passiv
+  - item: de:item:b2u09-gericht
+  - item: de:item:b2u09-richter
+  - item: de:item:b2u09-anwalt
+  - item: de:item:b2u09-klage
+  - item: de:item:b2u09-klagen
+  - item: de:item:b2u09-urteil
+  - item: de:item:b2u09-verurteilen
+  - item: de:item:b2u09-strafe
+  - item: de:item:b2u09-zeuge
+  - item: de:item:b2u09-beweis
+  - item: de:item:b2u09-verhandlung
+  - item: de:item:b2u09-schuldig
+  - item: de:item:b2u09-unschuldig
+  - item: de:item:b2u09-freisprechen
+  - item: de:item:b2u09-geldstrafe
+  - item: de:item:b2u09-prozess
+  - item: de:item:b2u09-anklagen
+  - item: de:item:b2u09-opfer
+  - item: de:item:b2u02-g-funktionsverbgefuege
+    role: reuse
+  - item: de:item:b2u01-g-nominalisierung
+    role: reuse
+  - item: de:item:b2u03-g-passiv-modal-vergangenheit
+    role: reuse
+  - item: de:item:b2u04-g-sollen-wollen-fremd
+    role: reuse
+  - item: de:item:b2u07-g-kausale-praepositionen
+    role: reuse
+  - item: de:item:b2u01-anerkennung
+    role: reuse
+  - item: de:item:b2u05-gesetz
+    role: reuse
+  - item: de:item:b2u03-verfahren
+    role: reuse
+  - item: de:item:b2u04-taeter
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc được bản tin ngắn về một phiên toà và hiểu những cụm cố định như \"Das Gesetz tritt in Kraft\" (luật có hiệu lực) hay \"Der Vorschlag fand Anerkennung\" (đề xuất được công nhận)."
+  - type: explain
+    text:
+      vi: "Ở B2U02 bạn đã gặp Funktionsverbgefüge: một danh từ mang nghĩa chính, còn động từ (treffen, stellen, ziehen …) gần như chỉ làm chức năng ngữ pháp: eine Entscheidung treffen = entscheiden. Bài này học những cụm có nghĩa bị động: chủ ngữ không làm gì, mà là cái được tác động. Der Vorschlag findet Anerkennung = Der Vorschlag wird anerkannt."
+  - type: explain
+    text:
+      vi: "Sáu cụm cần thuộc: Anerkennung finden (được công nhận), zur Sprache kommen (được nêu ra, được bàn tới), in Kraft treten (có hiệu lực), zur Anwendung kommen (được áp dụng), in Betracht kommen (được xem xét, có thể là một lựa chọn), unter Druck stehen (bị áp lực). Động từ kommen, finden, stehen, treten là dấu hiệu nghĩa bị động; cụm chủ động tương ứng dùng bringen, setzen, ziehen: ein Thema zur Sprache bringen, jemanden unter Druck setzen, etwas in Betracht ziehen."
+  - type: explain
+    text:
+      vi: "Tiếng Việt nói \"được công nhận\", \"được áp dụng\" nên người Việt hay thêm werden vào cụm: \"wird Anerkennung gefunden\" là sai. Cụm đã mang nghĩa bị động rồi, bạn chỉ chia động từ chức năng: Die Methode findet Anerkennung. Giới từ và mạo từ cố định, không đổi: zur (= zu der) Sprache, zur Anwendung, in Kraft, in Betracht, unter Druck."
+  - type: explain
+    text:
+      vi: "Các cụm này chia như động từ thường: Das Gesetz trat 2020 in Kraft (Präteritum), Das Gesetz ist in Kraft getreten (Perfekt với sein vì treten chỉ sự chuyển trạng thái). kommen cũng dùng sein: Das Thema ist zur Sprache gekommen; finden và stehen dùng haben."
+  - type: deep_explain
+    text:
+      vi: "Một số cụm khác cùng kiểu: zum Abschluss kommen (được kết thúc), Verwendung finden (được sử dụng), Beachtung finden (được chú ý), zur Diskussion stehen (đang được thảo luận). Nominalstil (B2U01) thích những cụm này vì chúng biến hành động thành danh từ: Seit dem Inkrafttreten des Gesetzes … (từ khi luật có hiệu lực). Về nội dung: bài này chỉ luyện ngôn ngữ, không phải tư vấn pháp lý; các vụ án, tên người, tên thành phố trong bài là hư cấu và quy định thật có thể thay đổi."
+  - type: example
+    target: Das neue Gesetz tritt am ersten Januar in Kraft.
+    target_lang: de
+    translation:
+      vi: Luật mới có hiệu lực từ ngày mùng một tháng Một.
+    note:
+      vi: "in Kraft treten = có hiệu lực (= gültig werden). treten đổi nguyên âm: er tritt."
+  - type: example
+    target: Der Vorschlag der Anwältin fand breite Anerkennung.
+    target_lang: de
+    translation:
+      vi: Đề xuất của nữ luật sư được nhiều người công nhận.
+    note:
+      vi: "Anerkennung finden = anerkannt werden. Không có werden trong câu, nhưng nghĩa là bị động."
+  - type: example
+    target: In der Verhandlung kam auch die Rolle des Zeugen zur Sprache.
+    target_lang: de
+    translation:
+      vi: Trong phiên toà, vai trò của nhân chứng cũng được nhắc tới.
+    note:
+      vi: "zur Sprache kommen = được nêu ra. Zeuge thuộc n-Deklination: des Zeugen."
+  - type: example
+    target: In diesem Verfahren kommt die neue Regel noch nicht zur Anwendung.
+    target_lang: de
+    translation:
+      vi: Trong vụ việc này, quy định mới chưa được áp dụng.
+    note:
+      vi: "zur Anwendung kommen = angewendet werden. das Verfahren (ôn B2U03) ở đây là vụ việc, thủ tục tố tụng."
+  - type: example
+    target: Für den jungen Mann kommt auch eine Geldstrafe in Betracht.
+    target_lang: de
+    translation:
+      vi: Với chàng trai trẻ này, phạt tiền cũng là một khả năng được xem xét.
+    note:
+      vi: "in Betracht kommen = có thể được chọn, được xem xét. Chủ động: Das Gericht zieht eine Geldstrafe in Betracht."
+  - type: example
+    target: Seit Wochen steht die Richterin unter großem Druck.
+    target_lang: de
+    translation:
+      vi: Từ nhiều tuần nay bà thẩm phán bị áp lực rất lớn.
+    note:
+      vi: "unter Druck stehen = bị áp lực; ai gây áp lực thì dùng chủ động: Die Medien setzen sie unter Druck."
+  - type: example
+    target: Der Täter soll das Geld ins Ausland gebracht haben.
+    target_lang: de
+    translation:
+      vi: Nghe nói kẻ phạm tội đã mang tiền ra nước ngoài.
+    note:
+      vi: "sollen + nguyên thể quá khứ = nghe nói, người ta bảo (ôn B2U04) – kiểu câu rất hay gặp trong bản tin pháp luật khi chưa có bản án."
+  - type: example
+    target: Der Zeuge musste mehrmals befragt werden. Aufgrund fehlender Beweise wurde der Angeklagte schließlich freigesprochen.
+    target_lang: de
+    translation:
+      vi: Nhân chứng đã phải bị thẩm vấn nhiều lần. Do thiếu bằng chứng, cuối cùng bị cáo được tuyên vô tội.
+    note:
+      vi: "musste … befragt werden = bị động với modal ở quá khứ (ôn B2U03); aufgrund + Genitiv nêu nguyên nhân (ôn B2U07)."
+  - type: example
+    target: Seit dem Inkrafttreten des Gesetzes gibt es deutlich weniger Klagen.
+    target_lang: de
+    translation:
+      vi: Từ khi luật có hiệu lực, số vụ kiện đã giảm rõ rệt.
+    note:
+      vi: "Nominalstil (ôn B2U01): in Kraft treten → das Inkrafttreten (danh từ hoá, viết liền và viết hoa), theo sau là Genitiv des Gesetzes."
+  - type: common_mistake
+    wrong: Die Methode wird Anerkennung gefunden.
+    right: Die Methode findet Anerkennung.
+    target_lang: de
+    note:
+      vi: "Cụm Anerkennung finden tự nó đã có nghĩa \"được công nhận\"; thêm werden là thừa và sai."
+  - type: common_mistake
+    wrong: Das Gesetz hat am ersten Januar in Kraft getreten.
+    right: Das Gesetz ist am ersten Januar in Kraft getreten.
+    target_lang: de
+    note:
+      vi: "in Kraft treten chỉ sự chuyển sang trạng thái mới, nên Perfekt dùng sein."
+  - type: common_mistake
+    wrong: Das Thema kam in die Sprache.
+    right: Das Thema kam zur Sprache.
+    target_lang: de
+    note:
+      vi: "Giới từ và mạo từ trong cụm là cố định: zur Sprache kommen, không đổi thành in die."
+  - type: summary
+    points:
+      - vi: "Anerkennung finden = anerkannt werden; zur Sprache kommen = besprochen werden."
+      - vi: "in Kraft treten = gültig werden; zur Anwendung kommen = angewendet werden."
+      - vi: "in Betracht kommen = möglich sein, erwogen werden; unter Druck stehen = bị áp lực."
+      - vi: "kommen/finden/stehen/treten → nghĩa bị động; bringen/setzen/ziehen → nghĩa chủ động."
+      - vi: "Không thêm werden vào cụm; Perfekt của treten/kommen dùng sein."
+      - vi: "Từ vựng: das Gericht, der Richter, der Anwalt, die Klage, klagen, das Urteil, verurteilen, die Strafe."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u09l1-mcq-anerkennung-bedeutung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      stem: "Câu \"Der Vorschlag der Anwältin fand breite Anerkennung.\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a3k, text: "Đề xuất của nữ luật sư được nhiều người công nhận.", lang: vi }
+        - { id: a7m, text: "Nữ luật sư đã tìm thấy một đề xuất được công nhận.", lang: vi }
+        - { id: a1p, text: "Nữ luật sư công nhận đề xuất của nhiều người.", lang: vi }
+        - { id: a5r, text: "Đề xuất của nữ luật sư không được ai chú ý.", lang: vi }
+    answer:
+      correct_option_id: a3k
+    explanation:
+      vi: "Anerkennung finden không có nghĩa là \"tìm thấy\": cả cụm = anerkannt werden (được công nhận). Chủ ngữ der Vorschlag là cái được công nhận; breit = rộng rãi, nhiều người."
+    display_answer: Đề xuất của nữ luật sư được nhiều người công nhận.
+
+  - key: de:exercise:b2u09l1-mcq-wird-gefunden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      stem: "Chọn câu đúng nghĩa: \"Phương pháp mới được công nhận rộng rãi.\""
+      stem_lang: vi
+      options:
+        - { id: m2a, text: "Die neue Methode findet breite Anerkennung.", lang: de }
+        - { id: m6b, text: "Die neue Methode wird breite Anerkennung gefunden.", lang: de }
+        - { id: m4c, text: "Die neue Methode findet zur Anerkennung.", lang: de }
+        - { id: m8d, text: "Die neue Methode bringt breite Anerkennung.", lang: de }
+    answer:
+      correct_option_id: m2a
+    explanation:
+      vi: "Anerkennung finden đã mang nghĩa bị động, chỉ cần chia finden theo chủ ngữ. Thêm werden là sai; \"findet zur Anerkennung\" không phải cụm có thật; bringt Anerkennung đúng ngữ pháp nhưng nghĩa là \"mang lại sự công nhận (cho ai đó)\", không phải \"được công nhận\"."
+    display_answer: Die neue Methode findet breite Anerkennung.
+
+  - key: de:exercise:b2u09l1-mcq-lesen-gefaengnis
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-urteil
+    prompt:
+      stem: "Prozess in Neustadt (fiktiv): Das Gericht hat einen Mann zu einer Geldstrafe verurteilt. Er hatte im Internet gefälschte Konzertkarten verkauft. In der Verhandlung kamen auch die Folgen für die Opfer zur Sprache. Eine Gefängnisstrafe kam nicht in Betracht, weil der Mann den Schaden bereits ersetzt hatte. Ein zweiter Angeklagter wurde aus Mangel an Beweisen freigesprochen. — Richtig oder falsch? Der Mann muss ins Gefängnis."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết: Eine Gefängnisstrafe kam … nicht in Betracht – án tù không được xem xét; người đàn ông chỉ bị phạt tiền (zu einer Geldstrafe verurteilt). Câu này sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b2u09l1-mcq-lesen-opfer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-verhandlung
+    prompt:
+      stem: "Prozess in Neustadt (fiktiv): Das Gericht hat einen Mann zu einer Geldstrafe verurteilt. Er hatte im Internet gefälschte Konzertkarten verkauft. In der Verhandlung kamen auch die Folgen für die Opfer zur Sprache. Eine Gefängnisstrafe kam nicht in Betracht, weil der Mann den Schaden bereits ersetzt hatte. Ein zweiter Angeklagter wurde aus Mangel an Beweisen freigesprochen. — Richtig oder falsch? In der Verhandlung wurde auch über die Opfer gesprochen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "die Folgen für die Opfer kamen zur Sprache = hậu quả đối với các nạn nhân được nêu ra, tức là đã được bàn tới (wurde … gesprochen). Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u09l1-fill-tritt-ist
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      template: "Die neue Verordnung {{b1}} (treten, Präsens) am ersten Juli in Kraft. Das alte Gesetz {{b2}} (Hilfsverb, Perfekt) schon vor fünf Jahren in Kraft getreten."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [tritt]
+        b2: [ist]
+    known_wrong:
+      - answer: trittet
+        feedback_vi: treten đổi nguyên âm ở ngôi er/sie/es và chỉ thêm -t một lần – tritt.
+        error_tag: verb_form
+      - answer: hat
+        feedback_vi: in Kraft treten chỉ sự chuyển trạng thái, Perfekt dùng sein – ist in Kraft getreten.
+        error_tag: aux_verb
+      - answer: wird
+        feedback_vi: Cụm đã mang nghĩa bị động, không cần werden; ở đây cần trợ động từ Perfekt – ist.
+        error_tag: aux_verb
+    explanation:
+      vi: "Ô 1: die Verordnung (sie) → tritt (e → i, chỉ một chữ t ở cuối). Ô 2: Perfekt của in Kraft treten dùng sein vì đây là thay đổi trạng thái: ist … in Kraft getreten."
+    display_answer: "Die neue Verordnung tritt am ersten Juli in Kraft. Das alte Gesetz ist schon vor fünf Jahren in Kraft getreten."
+
+  - key: de:exercise:b2u09l1-fill-zur-in
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      template: "Im Prozess kamen auch die Folgen für die Opfer {{b1}} Sprache. Eine Gefängnisstrafe kam aber nicht {{b2}} Betracht."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [zur]
+        b2: [in]
+    known_wrong:
+      - answer: zu der
+        feedback_vi: Trong cụm cố định luôn dùng dạng rút gọn – zur Sprache kommen.
+        error_tag: preposition
+      - answer: in die
+        feedback_vi: Cụm cố định là zur Sprache kommen (không phải in die Sprache).
+        error_tag: preposition
+      - answer: im
+        feedback_vi: in Betracht kommen không có mạo từ – in Betracht.
+        error_tag: preposition
+    explanation:
+      vi: "Hai cụm cố định mang nghĩa bị động: zur Sprache kommen (được nêu ra) và in Betracht kommen (được xem xét). Giới từ và mạo từ phải học thuộc theo cụm."
+    display_answer: "Im Prozess kamen auch die Folgen für die Opfer zur Sprache. Eine Gefängnisstrafe kam aber nicht in Betracht."
+
+  - key: de:exercise:b2u09l1-tr-gesetz-kraft
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      source_text: "Luật mới có hiệu lực vào tháng Một. (dùng in Kraft treten)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das neue Gesetz tritt im Januar in Kraft.
+        - Im Januar tritt das neue Gesetz in Kraft.
+        - Das neue Gesetz tritt ab Januar in Kraft.
+        - Ab Januar tritt das neue Gesetz in Kraft.
+        - Das neue Gesetz wird im Januar in Kraft treten.
+        - Im Januar wird das neue Gesetz in Kraft treten.
+    known_wrong:
+      - answer: Das neue Gesetz wird im Januar in Kraft getreten.
+        feedback_vi: Không dùng werden + Partizip với cụm này; chỉ cần chia treten – tritt … in Kraft.
+        error_tag: aux_verb
+      - answer: Das neue Gesetz tritt in Kraft im Januar.
+        feedback_vi: in Kraft là phần thứ hai của cụm, đứng cuối câu – tritt im Januar in Kraft.
+        error_tag: word_order
+      - answer: Das neue Gesetz tretet im Januar in Kraft.
+        feedback_vi: treten đổi nguyên âm ở ngôi thứ ba số ít – tritt.
+        error_tag: verb_form
+    explanation:
+      vi: "in Kraft treten chia như treten: es tritt; phần in Kraft đứng cuối câu giống phần thứ hai của khung câu. Thời gian (im Januar) nằm giữa, hoặc đưa lên đầu câu."
+    display_answer: Das neue Gesetz tritt im Januar in Kraft.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u09l1-wb-zur-sprache
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi hy vọng vụ việc của tôi được đem ra bàn.\""
+      tokens:
+        - { id: s-sprache, text: Sprache }
+        - { id: s-dass, text: dass }
+        - { id: s-hoffe, text: hoffe }
+        - { id: s-kommt, text: kommt }
+        - { id: s-ich, text: Ich }
+        - { id: s-fall, text: Fall }
+        - { id: s-komma, text: "," }
+        - { id: s-zur, text: zur }
+        - { id: s-mein, text: mein }
+    answer:
+      orders:
+        - [s-ich, s-hoffe, s-komma, s-dass, s-mein, s-fall, s-zur, s-sprache, s-kommt]
+    explanation:
+      vi: "Trong câu dass, động từ chia (kommt) đứng cuối; phần danh từ của cụm (zur Sprache) đứng ngay trước nó, giống tiền tố tách hay Partizip trong khung câu."
+    display_answer: Ich hoffe, dass mein Fall zur Sprache kommt.
+
+  - key: de:exercise:b2u09l1-tr-taeter-soll
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u04-g-sollen-wollen-fremd
+    prompt:
+      source_text: "Nghe nói kẻ phạm tội đã mang tiền ra nước ngoài. (dùng sollen, der Täter)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Täter soll das Geld ins Ausland gebracht haben.
+        - Der Täter soll das Geld ins Ausland geschafft haben.
+        - Das Geld soll der Täter ins Ausland gebracht haben.
+    known_wrong:
+      - answer: Der Täter soll das Geld ins Ausland bringen.
+        feedback_vi: Việc đã xảy ra trong quá khứ nên cần nguyên thể quá khứ – gebracht haben.
+        error_tag: verb_form
+      - answer: Der Täter soll das Geld ins Ausland gebracht hat.
+        feedback_vi: "Sau sollen là nguyên thể quá khứ: gebracht haben (không chia hat)."
+        error_tag: verb_form
+      - answer: Der Täter soll das Geld im Ausland gebracht haben.
+        feedback_vi: Chỉ hướng đi tới (Wohin?) cần Akkusativ – ins Ausland.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "sollen + Partizip II + haben = người ta nói rằng ai đó đã làm gì (người nói không khẳng định). bringen → gebracht haben ở cuối câu; ins Ausland (Wohin? → Akkusativ)."
+    display_answer: Der Täter soll das Geld ins Ausland gebracht haben.
+
+  - key: de:exercise:b2u09l1-mcq-aktiv-passiv
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-funktionsverbgefuege-passiv
+    prompt:
+      stem: "Câu nào có nghĩa bị động (chủ ngữ là cái được tác động, không phải người làm)?"
+      stem_lang: vi
+      options:
+        - { id: p5a, text: "Das Thema kam in der Sitzung zur Sprache.", lang: de }
+        - { id: p1b, text: "Der Anwalt brachte das Thema zur Sprache.", lang: de }
+        - { id: p8c, text: "Die Medien setzen die Richterin unter Druck.", lang: de }
+        - { id: p3d, text: "Das Gericht zieht eine Geldstrafe in Betracht.", lang: de }
+    answer:
+      correct_option_id: p5a
+    explanation:
+      vi: "kommen trong zur Sprache kommen cho nghĩa bị động: das Thema wurde besprochen. Ba câu còn lại dùng động từ chủ động bringen, setzen, ziehen: chủ ngữ (der Anwalt, die Medien, das Gericht) là người làm."
+    display_answer: Das Thema kam in der Sitzung zur Sprache.

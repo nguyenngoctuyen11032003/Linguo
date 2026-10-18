@@ -1,0 +1,415 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u09-beschwerde
+order_index: 4
+level: b2
+title:
+  vi: Khiếu nại trang trọng (Reklamation und Beschwerde)
+objectives:
+  - vi: Khiếu nại qua điện thoại hoặc bằng thư, nêu rõ vấn đề, yêu cầu cụ thể và thời hạn.
+  - vi: Nghe hiểu một cuộc gọi tới bộ phận chăm sóc khách hàng (lời xin lỗi, đề nghị giải quyết, yêu cầu của khách).
+  - vi: Giữ đúng giọng văn – kiên quyết nhưng lịch sự, không gay gắt cũng không rụt rè.
+estimated_minutes: 22
+skills: [listening, speaking, writing]
+prerequisites: [de:lesson:b2u09-vorschriften]
+items:
+  - item: de:item:b2u09-g-beschwerde-redemittel
+  - item: de:item:b2u09-reklamation
+  - item: de:item:b2u09-reklamieren
+  - item: de:item:b2u09-erstattung
+  - item: de:item:b2u09-erstatten
+  - item: de:item:b2u09-mangel
+  - item: de:item:b2u09-entschaedigung
+  - item: de:item:b2u09-kulanz
+  - item: de:item:b2u09-fristgerecht
+  - item: de:item:b2u09-mangelhaft
+  - item: de:item:b2u09-beschaedigt
+  - item: de:item:b2u09-bestellnummer
+  - item: de:item:b2u09-ersatz
+  - item: de:item:b2u09-kaufbeleg
+  - item: de:item:b2u09-gutschrift
+  - item: de:item:b2u09-verbraucherzentrale
+  - item: de:item:b2u09-unverzueglich
+  - item: de:item:b2u09-zumutung
+  - item: de:item:b2u02-g-haben-zu
+    role: reuse
+  - item: de:item:b2u06-g-irreale-vergangenheit
+    role: reuse
+  - item: de:item:b2u06-g-konj-ii-modal-vergangenheit
+    role: reuse
+  - item: de:item:b2u06-g-ohne-anstatt-dass
+    role: reuse
+  - item: de:item:b2u07-g-infinitiv-passiv
+    role: reuse
+  - item: de:item:b1u10-g-formeller-brief
+    role: reuse
+  - item: de:item:a2u05-beschwerde
+    role: reuse
+  - item: de:item:a2u05-sich-beschweren
+    role: reuse
+  - item: de:item:b2u08-g-register
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn khiếu nại được một cách trang trọng: \"Hiermit möchte ich mich über die mangelhafte Lieferung beschweren. Ich fordere Sie auf, mir bis zum 15. November Ersatz zu schicken.\""
+  - type: explain
+    text:
+      vi: "Một lời khiếu nại có tác dụng gồm bốn phần: sự việc (Am 3. Oktober habe ich … bestellt), vấn đề (Leider kam das Gerät beschädigt an), yêu cầu cụ thể kèm thời hạn (Ich fordere Sie auf, … bis zum … zu …) và bước tiếp theo nếu không được giải quyết (Andernfalls sehe ich mich gezwungen, …). Thiếu yêu cầu hoặc thời hạn là lỗi người Việt hay mắc: người nhận sẽ không biết bạn muốn gì."
+  - type: explain
+    text:
+      vi: "Câu mở đầu cố định: Hiermit möchte ich mich über … (Akk) beschweren (bằng thư này tôi muốn khiếu nại về …). Ich gehe davon aus, dass … (tôi tin chắc rằng …) nói lên điều bạn coi là đương nhiên: Ich gehe davon aus, dass Sie die Versandkosten übernehmen. Ich fordere Sie auf, … zu … là yêu cầu dứt khoát, mạnh hơn Ich bitte Sie, … zu …"
+  - type: explain
+    text:
+      vi: "Giọng văn: kiên quyết nhưng lịch sự. Quá gay gắt (Das ist eine Frechheit! Sie sind Betrüger!) làm thư mất uy tín; quá rụt rè (Vielleicht könnten Sie eventuell mal nachsehen?) thì không ai làm gì cả. Konjunktiv II làm lời đề nghị mềm mà vẫn rõ: Ich wäre Ihnen dankbar, wenn Sie mir bis Freitag antworten könnten."
+  - type: explain
+    text:
+      vi: "Reklamation là khiếu nại về hàng lỗi (đòi sửa, đổi, trả tiền); Beschwerde rộng hơn (cả thái độ phục vụ, tiếng ồn, chậm trễ). Khi gọi điện, hãy chuẩn bị Bestellnummer và Kaufbeleg, nói ngắn gọn vấn đề rồi nêu yêu cầu: Ich möchte das Gerät reklamieren und hätte gern Ersatz."
+  - type: deep_explain
+    text:
+      vi: "Trong thư, bạn có thể dùng ngữ pháp B2 đã học để nói chặt chẽ hơn: điều không thật ở quá khứ (Hätten Sie mich rechtzeitig informiert, hätte ich …), hätte … sollen (Das Paket hätte längst ankommen sollen), ohne dass (… abgebucht, ohne dass ich die Ware erhalten habe), nguyên thể bị động (Ich erwarte, informiert zu werden). Kulanz là thiện chí của người bán, không phải quyền của bạn, nên bạn hỏi lịch sự (Wäre eine Kulanzlösung möglich?). Bài này chỉ luyện ngôn ngữ, không phải tư vấn pháp lý: quyền đổi trả, thời hạn và bảo hành thật tuỳ hợp đồng và quy định hiện hành; khi cần, hãy hỏi trung tâm tư vấn người tiêu dùng hoặc luật sư. Tên cửa hàng và đơn hàng trong bài là hư cấu."
+  - type: example
+    target: Hiermit möchte ich mich über die mangelhafte Lieferung vom 3. Oktober beschweren.
+    target_lang: de
+    translation:
+      vi: Bằng thư này, tôi muốn khiếu nại về lô hàng giao ngày 3 tháng 10 bị lỗi.
+    note:
+      vi: "sich beschweren über + Akk (ôn A2U05). Hiermit = bằng (thư) này – câu mở đầu trang trọng."
+  - type: example
+    target: Leider kam der Staubsauger beschädigt an. Ein Foto des Mangels und den Kaufbeleg finden Sie im Anhang.
+    target_lang: de
+    translation:
+      vi: Đáng tiếc là máy hút bụi đến nơi đã bị hỏng. Ảnh chụp chỗ hỏng và hoá đơn mua hàng có trong tệp đính kèm.
+    note:
+      vi: "Mô tả vấn đề ngắn, kèm bằng chứng. des Mangels: Genitiv của der Mangel."
+  - type: example
+    target: Ich fordere Sie auf, mir bis zum 15. November einen Ersatz zu schicken oder den Kaufpreis zu erstatten.
+    target_lang: de
+    translation:
+      vi: Tôi yêu cầu quý công ty gửi cho tôi hàng thay thế hoặc hoàn trả tiền hàng, chậm nhất là ngày 15 tháng 11.
+    note:
+      vi: "Yêu cầu cụ thể + thời hạn. auffordern tách: Ich fordere Sie auf, … zu …"
+  - type: example
+    target: Ich gehe davon aus, dass Sie die Kosten für die Rücksendung übernehmen.
+    target_lang: de
+    translation:
+      vi: Tôi tin chắc rằng quý công ty sẽ chịu chi phí gửi trả hàng.
+    note:
+      vi: "davon ausgehen, dass … = coi là đương nhiên. davon là từ báo trước cho câu dass."
+  - type: example
+    target: Andernfalls sehe ich mich gezwungen, mich an die Verbraucherzentrale zu wenden.
+    target_lang: de
+    translation:
+      vi: Nếu không, tôi buộc phải liên hệ trung tâm tư vấn người tiêu dùng.
+    note:
+      vi: "Nêu bước tiếp theo một cách bình tĩnh, không đe doạ. sich gezwungen sehen, … zu … = thấy mình buộc phải."
+  - type: example
+    target: Das Paket hätte schon vor zwei Wochen ankommen sollen. Trotzdem wurde der Betrag abgebucht, ohne dass ich die Ware erhalten habe.
+    target_lang: de
+    translation:
+      vi: Lẽ ra gói hàng phải đến từ hai tuần trước. Vậy mà tiền đã bị trừ, dù tôi chưa nhận được hàng.
+    note:
+      vi: "hätte … sollen (ôn B2U06) = lẽ ra phải; ohne dass + câu phụ (ôn B2U06) = mà không …"
+  - type: example
+    target: Hätten Sie mich rechtzeitig informiert, hätte ich die Bestellung storniert. Ich erwarte, über den Stand meiner Reklamation informiert zu werden.
+    target_lang: de
+    translation:
+      vi: Nếu quý công ty báo cho tôi kịp thời thì tôi đã huỷ đơn hàng. Tôi mong được thông báo về tình trạng khiếu nại của mình.
+    note:
+      vi: "Điều kiện không thật ở quá khứ, bỏ wenn (ôn B2U06 + bài 2); nguyên thể bị động informiert zu werden (ôn B2U07)."
+  - type: example
+    target: Laut Vertrag haben Sie die Reparatur innerhalb von zwei Wochen durchzuführen. Ich wäre Ihnen dankbar, wenn Sie mir bis Freitag einen Termin nennen könnten.
+    target_lang: de
+    translation:
+      vi: Theo hợp đồng, quý công ty phải tiến hành sửa chữa trong vòng hai tuần. Tôi sẽ rất cảm ơn nếu quý công ty có thể cho tôi một lịch hẹn trước thứ Sáu.
+    note:
+      vi: "haben + zu (ôn B2U02) = müssen, giọng văn bản; Ich wäre Ihnen dankbar, wenn … (ôn B1U10) làm lời yêu cầu lịch sự."
+  - type: example
+    target: Ihre Beschwerde ist bei uns eingegangen und wird so schnell wie möglich bearbeitet.
+    target_lang: de
+    translation:
+      vi: Khiếu nại của quý khách đã đến chỗ chúng tôi và sẽ được xử lý nhanh nhất có thể.
+    note:
+      vi: "die Beschwerde (ôn A2U05) – câu trả lời thường gặp của bộ phận chăm sóc khách hàng; eingehen = (thư, đơn) đến nơi."
+  - type: example
+    target: Das Gerät weist mehrere Mängel auf.
+    target_lang: de
+    translation:
+      vi: Thiết bị có nhiều lỗi.
+    note:
+      vi: "Ngữ vực trang trọng (ôn B2U08): trong thư viết Das Gerät weist Mängel auf thay cho khẩu ngữ Das Ding ist kaputt."
+  - type: common_mistake
+    wrong: Das ist eine Frechheit! Schicken Sie mir sofort mein Geld!
+    right: Ich fordere Sie auf, mir den Betrag bis zum 30. November zu erstatten.
+    target_lang: de
+    note:
+      vi: "Quá gay gắt và không có thời hạn cụ thể. Hãy kiên quyết nhưng lịch sự, nêu rõ yêu cầu và ngày."
+  - type: common_mistake
+    wrong: Vielleicht könnten Sie eventuell irgendwann mal nachsehen, ob man da etwas machen kann.
+    right: Ich bitte Sie, den Mangel bis zum 20. Mai zu beheben.
+    target_lang: de
+    note:
+      vi: "Quá rụt rè: không có yêu cầu cụ thể, không có thời hạn, nên người nhận dễ bỏ qua."
+  - type: common_mistake
+    wrong: Hiermit möchte ich mich über die Lieferung beschweren mich.
+    right: Hiermit möchte ich mich über die Lieferung beschweren.
+    target_lang: de
+    note:
+      vi: "Đại từ phản thân mich chỉ xuất hiện một lần, đứng sau động từ khuyết thiếu; beschweren (nguyên thể) ở cuối."
+  - type: summary
+    points:
+      - vi: "Cấu trúc: sự việc → vấn đề → yêu cầu + thời hạn → bước tiếp theo → lời chào."
+      - vi: "Hiermit möchte ich mich über … beschweren."
+      - vi: "Ich fordere Sie auf, … bis zum … zu … / Ich bitte Sie, … zu …"
+      - vi: "Ich gehe davon aus, dass … · Andernfalls sehe ich mich gezwungen, … zu …"
+      - vi: "Lịch sự bằng Konjunktiv II: Ich wäre Ihnen dankbar, wenn Sie … könnten."
+      - vi: "Từ vựng: die Reklamation, reklamieren, die Erstattung, erstatten, der Mangel, die Entschädigung, die Kulanz, fristgerecht."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u09l4-listen-anruf
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u09-reklamation
+    prompt:
+      audio_asset_id: null
+      fallback_text: Guten Tag, mein Name ist Nguyen. Ich rufe an, weil ich eine Reklamation habe. Die Waschmaschine, die Sie mir letzte Woche geliefert haben, verliert Wasser.
+      options:
+        - { id: w3a, text: "Khách gọi để khiếu nại: máy giặt giao tuần trước bị rò nước.", lang: vi }
+        - { id: w7b, text: "Khách gọi để đặt mua một máy giặt mới vào tuần sau.", lang: vi }
+        - { id: w1c, text: "Khách gọi để hỏi khi nào máy giặt được giao.", lang: vi }
+        - { id: w5d, text: "Khách gọi để cảm ơn vì máy giặt chạy rất tốt.", lang: vi }
+    answer:
+      correct_option_id: w3a
+    explanation:
+      vi: "Ich habe eine Reklamation = tôi có khiếu nại; die Waschmaschine, die Sie mir letzte Woche geliefert haben = máy giặt giao tuần trước; verliert Wasser = bị rò nước."
+    display_answer: "Khách gọi để khiếu nại: máy giặt giao tuần trước bị rò nước."
+
+  - key: de:exercise:b2u09l4-listen-kulanz
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u09-kulanz
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das tut mir sehr leid. Aus Kulanz können wir Ihnen eine Gutschrift über fünfzig Euro anbieten. Außerdem schicken wir Ihnen noch diese Woche einen Techniker.
+      options:
+        - { id: k2a, text: "Nhân viên xin lỗi, vì thiện chí đề nghị ghi có 50 euro và cử thợ đến ngay trong tuần.", lang: vi }
+        - { id: k6b, text: "Nhân viên nói khách phải trả 50 euro cho thợ sửa máy.", lang: vi }
+        - { id: k4c, text: "Nhân viên từ chối khiếu nại vì máy đã hết bảo hành.", lang: vi }
+        - { id: k8d, text: "Nhân viên hứa hoàn lại toàn bộ tiền máy trong tuần này.", lang: vi }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "Das tut mir leid = xin lỗi; aus Kulanz = vì thiện chí (không bắt buộc); eine Gutschrift über fünfzig Euro = khoản ghi có 50 euro; einen Techniker schicken = cử thợ kỹ thuật đến."
+    display_answer: Nhân viên xin lỗi, vì thiện chí đề nghị ghi có 50 euro và cử thợ đến ngay trong tuần.
+
+  - key: de:exercise:b2u09l4-listen-forderung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u09-g-beschwerde-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich gehe davon aus, dass das Gerät bis Freitag ersetzt wird. Andernfalls sehe ich mich gezwungen, mich an die Verbraucherzentrale zu wenden.
+      options:
+        - { id: f5a, text: "Khách mong máy được thay thế trước thứ Sáu; nếu không, sẽ liên hệ trung tâm tư vấn người tiêu dùng.", lang: vi }
+        - { id: f9b, text: "Khách sẽ tự sửa máy trước thứ Sáu nếu cửa hàng không có thời gian.", lang: vi }
+        - { id: f3c, text: "Khách đã liên hệ trung tâm tư vấn người tiêu dùng vào thứ Sáu.", lang: vi }
+        - { id: f7d, text: "Khách không cần máy thay thế, chỉ muốn được xin lỗi.", lang: vi }
+    answer:
+      correct_option_id: f5a
+    explanation:
+      vi: "Ich gehe davon aus, dass … ersetzt wird = tôi tin chắc máy sẽ được thay thế; bis Freitag = chậm nhất thứ Sáu; Andernfalls sehe ich mich gezwungen, … = nếu không, tôi buộc phải …"
+    display_answer: "Khách mong máy được thay thế trước thứ Sáu; nếu không, sẽ liên hệ trung tâm tư vấn người tiêu dùng."
+
+  - key: de:exercise:b2u09l4-mcq-ton
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-beschwerde-redemittel
+    prompt:
+      stem: "Câu nào phù hợp nhất cho một thư khiếu nại trang trọng (kiên quyết nhưng lịch sự)?"
+      stem_lang: vi
+      options:
+        - { id: t1a, text: "Ich fordere Sie auf, den Mangel bis zum 20. Mai zu beheben.", lang: de }
+        - { id: t5b, text: "Das ist eine Frechheit! Reparieren Sie das sofort!", lang: de }
+        - { id: t3c, text: "Vielleicht könnten Sie eventuell irgendwann mal nachsehen?", lang: de }
+        - { id: t7d, text: "Hey, das Ding ist kaputt, macht mal was!", lang: de }
+    answer:
+      correct_option_id: t1a
+    explanation:
+      vi: "Câu đầu nêu yêu cầu cụ thể (beheben = khắc phục) và thời hạn, giọng trang trọng. Câu hai quá gay gắt, câu ba quá rụt rè và không có thời hạn, câu bốn là khẩu ngữ thân mật (du/ihr), không hợp thư gửi công ty."
+    display_answer: Ich fordere Sie auf, den Mangel bis zum 20. Mai zu beheben.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u09l4-fill-beschweren-gezwungen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u09-g-beschwerde-redemittel
+    prompt:
+      template: "Hiermit möchte ich mich über die mangelhafte Reparatur {{b1}} (sich beschweren). Andernfalls sehe ich mich {{b2}} (zwingen, Partizip II), weitere Schritte einzuleiten."
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [beschweren]
+        b2: [gezwungen]
+    known_wrong:
+      - answer: zu beschweren
+        feedback_vi: Sau möchte (động từ khuyết thiếu) dùng nguyên thể không có zu – beschweren.
+        error_tag: zu_infinitive
+      - answer: beschwere
+        feedback_vi: Động từ chia là möchte; beschweren giữ nguyên thể ở cuối câu.
+        error_tag: verb_form
+      - answer: gezwingt
+        feedback_vi: zwingen là động từ bất quy tắc – gezwungen.
+        error_tag: participle_form
+    explanation:
+      vi: "Ô 1: möchte + nguyên thể ở cuối (mich đã có sẵn). Ô 2: cụm cố định sich gezwungen sehen, … zu … (zwingen, zwang, gezwungen)."
+    display_answer: "Hiermit möchte ich mich über die mangelhafte Reparatur beschweren. Andernfalls sehe ich mich gezwungen, weitere Schritte einzuleiten."
+
+  - key: de:exercise:b2u09l4-fill-davon-waere
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-beschwerde-redemittel
+    prompt:
+      template: "Ich gehe {{b1}} aus, dass Sie den Betrag fristgerecht überweisen. Ich {{b2}} (sein, Konjunktiv II) Ihnen dankbar, wenn Sie mir den Eingang kurz bestätigen könnten."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [davon]
+        b2: [wäre]
+    known_wrong:
+      - answer: darauf
+        feedback_vi: Cụm cố định là von etwas ausgehen – davon ausgehen, dass …
+        error_tag: preposition
+      - answer: bin
+        feedback_vi: Đề yêu cầu Konjunktiv II của sein để lịch sự – wäre.
+        error_tag: konjunktiv_form
+      - answer: würde
+        feedback_vi: Với sein dùng thẳng dạng Konjunktiv II – Ich wäre Ihnen dankbar.
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Ô 1: ausgehen von → davon ausgehen, dass … (tin chắc rằng). Ô 2: Ich wäre Ihnen dankbar, wenn … là công thức lịch sự quen thuộc của thư trang trọng."
+    display_answer: "Ich gehe davon aus, dass Sie den Betrag fristgerecht überweisen. Ich wäre Ihnen dankbar, wenn Sie mir den Eingang kurz bestätigen könnten."
+
+  - key: de:exercise:b2u09l4-tr-auffordern-erstatten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-erstatten
+    prompt:
+      source_text: "Tôi yêu cầu quý công ty hoàn trả tiền hàng cho tôi. (dùng Ich fordere Sie auf, …; der Kaufpreis, erstatten)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich fordere Sie auf, mir den Kaufpreis zu erstatten.
+        - Ich fordere Sie hiermit auf, mir den Kaufpreis zu erstatten.
+        - Hiermit fordere ich Sie auf, mir den Kaufpreis zu erstatten.
+        - Ich fordere Sie auf, mir den Kaufpreis zurückzuerstatten.
+        - Ich fordere Sie auf, den Kaufpreis zu erstatten.
+    known_wrong:
+      - answer: Ich fordere Sie auf, mir den Kaufpreis erstatten.
+        feedback_vi: Sau auffordern cần cụm zu – zu erstatten.
+        error_tag: zu_infinitive
+      - answer: Ich fordere Sie, mir den Kaufpreis zu erstatten.
+        feedback_vi: auffordern là động từ tách, phải có auf – Ich fordere Sie auf, …
+        error_tag: separable_prefix
+      - answer: Ich fordere Ihnen auf, mir den Kaufpreis zu erstatten.
+        feedback_vi: auffordern đi với Akkusativ – Sie (không phải Ihnen).
+        error_tag: case_dat_akk
+    explanation:
+      vi: "auffordern + Akk (Sie), tiền tố auf đứng cuối câu chính; sau dấu phẩy là cụm zu: mir (Dativ, người nhận) den Kaufpreis (Akkusativ) zu erstatten."
+    display_answer: Ich fordere Sie auf, mir den Kaufpreis zu erstatten.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u09l4-wb-andernfalls
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u09-g-beschwerde-redemittel
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nếu không, tôi buộc phải tiến hành các bước pháp lý.\""
+      tokens:
+        - { id: a-schritte, text: Schritte }
+        - { id: a-mich, text: mich }
+        - { id: a-andernfalls, text: Andernfalls }
+        - { id: a-einzuleiten, text: einzuleiten }
+        - { id: a-sehe, text: sehe }
+        - { id: a-komma, text: "," }
+        - { id: a-rechtliche, text: rechtliche }
+        - { id: a-ich, text: ich }
+        - { id: a-gezwungen, text: gezwungen }
+    answer:
+      orders:
+        - [a-andernfalls, a-sehe, a-ich, a-mich, a-gezwungen, a-komma, a-rechtliche, a-schritte, a-einzuleiten]
+    explanation:
+      vi: "Andernfalls ở vị trí 1, nên động từ sehe đứng thứ hai, rồi chủ ngữ ich và đại từ mich. Sau dấu phẩy là cụm zu: einleiten tách nên zu chen vào giữa – einzuleiten."
+    display_answer: Andernfalls sehe ich mich gezwungen, rechtliche Schritte einzuleiten.
+
+  - key: de:exercise:b2u09l4-tr-haetten-informiert
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u06-g-irreale-vergangenheit
+    prompt:
+      source_text: "Nếu quý công ty báo cho tôi kịp thời thì tôi đã huỷ đơn hàng. (bắt đầu bằng Hätten Sie …; rechtzeitig informieren, die Bestellung stornieren)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Hätten Sie mich rechtzeitig informiert, hätte ich die Bestellung storniert.
+        - Hätten Sie mich rechtzeitig informiert, so hätte ich die Bestellung storniert.
+        - Hätten Sie mich rechtzeitig informiert, dann hätte ich die Bestellung storniert.
+    known_wrong:
+      - answer: Hätten Sie mich rechtzeitig informiert, ich hätte die Bestellung storniert.
+        feedback_vi: Sau vế điều kiện, câu chính bắt đầu bằng động từ – hätte ich …
+        error_tag: verb_position
+      - answer: Hätten Sie mich rechtzeitig informiert, würde ich die Bestellung storniert.
+        feedback_vi: Quá khứ không thật dùng hätte + Partizip II – hätte ich … storniert.
+        error_tag: konjunktiv_form
+      - answer: Haben Sie mich rechtzeitig informiert, hätte ich die Bestellung storniert.
+        feedback_vi: Điều kiện không có thật cần Konjunktiv II – Hätten Sie …
+        error_tag: konjunktiv_form
+    explanation:
+      vi: "Điều không thật ở quá khứ (ôn B2U06): hätte + Partizip II ở cả hai vế. Bỏ wenn thì Hätten đứng đầu; câu chính bắt đầu bằng hätte (có thể thêm so/dann)."
+    display_answer: Hätten Sie mich rechtzeitig informiert, hätte ich die Bestellung storniert.
+
+  - key: de:exercise:b2u09l4-mcq-aufbau
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b1u10-g-formeller-brief
+    prompt:
+      stem: "Thứ tự nào hợp lý nhất cho phần thân một thư khiếu nại trang trọng (sau dòng Betreff và lời chào)?"
+      stem_lang: vi
+      options:
+        - { id: s2a, text: "Sự việc (đã mua gì, khi nào) → vấn đề → yêu cầu cụ thể + thời hạn → bước tiếp theo nếu không được giải quyết → lời chào cuối thư", lang: vi }
+        - { id: s6b, text: "Đe doạ đưa ra toà → mô tả vấn đề → lời chào cuối thư", lang: vi }
+        - { id: s4c, text: "Vấn đề → lời chào cuối thư → sự việc → yêu cầu (không cần thời hạn)", lang: vi }
+        - { id: s8d, text: "Lời xin lỗi vì làm phiền → vấn đề → hỏi xem công ty có thể làm gì không", lang: vi }
+    answer:
+      correct_option_id: s2a
+    explanation:
+      vi: "Người nhận cần biết chuyện gì đã xảy ra, vấn đề là gì, bạn muốn gì và đến khi nào, rồi mới đến hậu quả nếu không giải quyết. Mở đầu bằng đe doạ thì quá gay gắt; thư không có yêu cầu và thời hạn thì quá rụt rè."
+    display_answer: "Sự việc (đã mua gì, khi nào) → vấn đề → yêu cầu cụ thể + thời hạn → bước tiếp theo nếu không được giải quyết → lời chào cuối thư"
