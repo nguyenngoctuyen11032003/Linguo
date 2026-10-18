@@ -1,0 +1,386 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u03-zukunftstechnologien
+order_index: 2
+level: b2
+title:
+  vi: Công nghệ tương lai – Futur II, modal phỏng đoán (Bis 2040 wird man … entwickelt haben. Das dürfte stimmen.)
+objectives:
+  - vi: Dự báo việc sẽ hoàn thành trước một mốc tương lai bằng Futur II (Bis Freitag werden wir die Daten ausgewertet haben).
+  - vi: Phỏng đoán về việc đã xảy ra bằng Futur II với wohl (Er wird den Bus verpasst haben).
+  - vi: Phỏng đoán với mức độ chắc chắn khác nhau bằng muss, dürfte, kann/könnte và kann nicht.
+estimated_minutes: 21
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b2u03-forschung]
+items:
+  - item: de:item:b2u03-g-futur-ii
+  - item: de:item:b2u03-g-modalverben-subjektiv
+  - item: de:item:b2u03-kuenstliche-intelligenz
+  - item: de:item:b2u03-technologie
+  - item: de:item:b2u03-roboter
+  - item: de:item:b2u03-automatisieren
+  - item: de:item:b2u03-digitalisierung
+  - item: de:item:b2u03-innovation
+  - item: de:item:b2u03-ersetzen
+  - item: de:item:b2u03-risiko
+  - item: de:item:b2u03-erfindung
+  - item: de:item:b2u03-erfinden
+  - item: de:item:b2u03-entwicklung
+  - item: de:item:b2u03-algorithmus
+  - item: de:item:b2u03-vorhersagen
+  - item: de:item:b2u03-selbstfahrend
+  - item: de:item:b2u03-datenschutz
+  - item: de:item:b2u03-programmieren
+  - item: de:item:b2u03-anwendung
+  - item: de:item:b2u03-vernetzt
+  - item: de:item:b2u03-raumfahrt
+  - item: de:item:b2u03-spracherkennung
+  - item: de:item:b2u03-maschine
+  - item: de:item:b1u06-g-futur-i
+    role: reuse
+  - item: de:item:b1u06-g-vermutung-wohl
+    role: reuse
+  - item: de:item:b1u04-g-konjunktiv-ii-modal
+    role: reuse
+  - item: de:item:b1u04-fortschritt
+    role: reuse
+  - item: de:item:b1u06-prognose
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được về công nghệ tương lai và phỏng đoán có chừng mực, ví dụ: \"Bis 2040 wird man vielleicht viele einfache Arbeiten automatisiert haben. Das dürfte aber nicht alle Berufe betreffen.\""
+  - type: explain
+    text:
+      vi: "Futur I (B1U06) nói việc sẽ xảy ra: Man wird neue Roboter entwickeln. Futur II nói việc sẽ đã xong trước một mốc tương lai: Bis 2040 wird man neue Roboter entwickelt haben. Cấu tạo: werden ở vị trí 2, cuối câu là Partizip II + haben/sein – chọn haben hay sein như ở Perfekt."
+  - type: explain
+    text:
+      vi: "Khi nói hằng ngày, Futur II thường dùng để đoán về việc đã xảy ra, hay kèm wohl: Paul ist nicht da. Er wird wohl den Bus verpasst haben (chắc cậu ấy lỡ xe buýt rồi). Bạn đã gặp cách đoán về hiện tại: Er wird wohl krank sein (B1U06); Futur II là phiên bản quá khứ của nó."
+  - type: explain
+    text:
+      vi: "Modal cũng dùng để phỏng đoán, theo thang chắc chắn giảm dần: muss (gần như chắc, có căn cứ rõ) > dürfte (khá chắc, \"chắc là\") > kann/könnte (có thể). kann nicht nghĩa là \"không thể nào\": Das kann nicht stimmen. Tiếng Việt dùng \"chắc chắn là / chắc là / có thể\", tiếng Đức dùng chính các modal này."
+  - type: explain
+    text:
+      vi: "Đoán về quá khứ: modal + Partizip II + haben/sein ở cuối câu: Er muss den Termin vergessen haben. Die Prüfung muss schwer gewesen sein. Đừng hiểu muss ở đây là \"bắt buộc\", hay dürfte là \"được phép\": ngữ cảnh phỏng đoán (có bằng chứng, có dấu hiệu) cho bạn biết nghĩa."
+  - type: deep_explain
+    text:
+      vi: "dürfte là Konjunktiv II của dürfen (B1U04) nhưng trong phỏng đoán nó không còn nghĩa \"được phép\": Das dürfte stimmen = chắc là đúng. Phủ định của muss (phỏng đoán) là kann nicht (Er kann nicht zu Hause sein), vì muss nicht nghĩa là \"không cần/không nhất thiết\". Khi dự báo tương lai, người viết cẩn thận thường làm mềm câu bằng vielleicht, wahrscheinlich, dürfte: Bis 2050 dürfte sich vieles verändert haben. Trong câu phụ, werden của Futur II đứng cuối cùng: …, dass man bis dahin vieles automatisiert haben wird."
+  - type: example
+    target: Bis Ende des Jahres werden die Forscher die Studie abgeschlossen haben.
+    target_lang: de
+    translation:
+      vi: Đến cuối năm các nhà nghiên cứu sẽ hoàn thành xong nghiên cứu.
+    note:
+      vi: "Futur II: werden + abgeschlossen + haben – việc xong trước mốc bis Ende des Jahres."
+  - type: example
+    target: Bis wir ankommen, wird der Vortrag schon angefangen haben.
+    target_lang: de
+    translation:
+      vi: Đến lúc chúng ta tới thì bài thuyết trình chắc đã bắt đầu rồi.
+    note:
+      vi: "anfangen có Perfekt với haben (hat angefangen) nên Futur II: wird … angefangen haben."
+  - type: example
+    target: Im Labor brennt noch Licht. Frau Berg muss noch da sein.
+    target_lang: de
+    translation:
+      vi: Phòng thí nghiệm vẫn còn sáng đèn. Chắc chắn bà Berg vẫn còn ở đó.
+    note:
+      vi: "muss = gần như chắc chắn, dựa trên bằng chứng (đèn còn sáng). Không có nghĩa bà ấy bắt buộc phải ở lại."
+  - type: example
+    target: Selbstfahrende Autos dürften in Zukunft häufiger werden, aber das kann noch dauern.
+    target_lang: de
+    translation:
+      vi: Ô tô tự lái chắc là sẽ phổ biến hơn trong tương lai, nhưng điều đó có thể còn lâu.
+    note:
+      vi: "dürften = khá chắc, dự báo thận trọng; kann noch dauern = có thể còn lâu."
+  - type: example
+    target: Das kann nicht sein. Die Maschine muss falsch programmiert worden sein.
+    target_lang: de
+    translation:
+      vi: Không thể nào. Chắc chắn máy đã bị lập trình sai.
+    note:
+      vi: "kann nicht = không thể nào. muss … worden sein là phỏng đoán quá khứ ở bị động – bạn chỉ cần hiểu dạng này."
+  - type: example
+    target: Alle Prognosen sind unsicher, aber der technische Fortschritt wird wohl weitergehen.
+    target_lang: de
+    translation:
+      vi: Mọi dự báo đều không chắc chắn, nhưng tiến bộ kỹ thuật chắc là sẽ còn tiếp tục.
+    note:
+      vi: "werden + wohl + nguyên thể (B1U06): phỏng đoán; so sánh với Futur II + wohl khi đoán việc đã xảy ra."
+  - type: common_mistake
+    wrong: Bis Freitag werden wir die Daten ausgewertet sein.
+    right: Bis Freitag werden wir die Daten ausgewertet haben.
+    target_lang: de
+    note:
+      vi: "auswerten có Perfekt với haben (hat ausgewertet), nên Futur II cũng dùng haben."
+  - type: common_mistake
+    wrong: Er muss krank gewesen haben.
+    right: Er muss krank gewesen sein.
+    target_lang: de
+    note:
+      vi: "sein có Perfekt với sein (ist gewesen), nên phỏng đoán quá khứ là muss … gewesen sein."
+  - type: common_mistake
+    wrong: Er muss nicht im Büro sein, er ist doch im Urlaub.
+    right: Er kann nicht im Büro sein, er ist doch im Urlaub.
+    target_lang: de
+    note:
+      vi: "\"Không thể nào\" là kann nicht; muss nicht nghĩa là \"không cần, không nhất thiết\"."
+  - type: summary
+    points:
+      - vi: "Futur II: werden + Partizip II + haben/sein – việc sẽ xong trước một mốc (bis …)."
+      - vi: "Futur II + wohl: đoán việc đã xảy ra (Er wird den Bus verpasst haben)."
+      - vi: "Thang phỏng đoán: muss > dürfte > kann/könnte; kann nicht = không thể nào."
+      - vi: "Đoán quá khứ: muss/dürfte/könnte + Partizip II + haben/sein."
+      - vi: "muss phỏng đoán ≠ bắt buộc; dürfte phỏng đoán ≠ được phép."
+      - vi: "Từ vựng: die künstliche Intelligenz (KI), die Technologie, der Roboter, automatisieren, die Digitalisierung, die Innovation, ersetzen, das Risiko, die Erfindung, erfinden."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u03l2-mcq-muss-licht
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u03-g-modalverben-subjektiv
+    prompt:
+      stem: "Im Labor brennt noch Licht. Dr. Weber muss noch da sein. — Was bedeutet der zweite Satz?"
+      stem_lang: de
+      options:
+        - { id: l1, text: "Chắc chắn là TS Weber vẫn còn ở đó.", lang: vi }
+        - { id: l2, text: "TS Weber bắt buộc phải ở lại đó.", lang: vi }
+        - { id: l3, text: "TS Weber được phép ở lại đó.", lang: vi }
+        - { id: l4, text: "Có lẽ TS Weber đã về rồi.", lang: vi }
+    answer:
+      correct_option_id: l1
+    explanation:
+      vi: "Câu đầu là bằng chứng (đèn còn sáng), câu sau là kết luận: muss ở đây là phỏng đoán gần như chắc chắn, không phải nghĩa bắt buộc."
+    display_answer: Chắc chắn là TS Weber vẫn còn ở đó.
+
+  - key: de:exercise:b2u03l2-mcq-duerfte
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u03-g-modalverben-subjektiv
+    prompt:
+      stem: "Die Reparatur der Maschine dürfte etwa zwei Stunden dauern. — Was bedeutet dieser Satz?"
+      stem_lang: de
+      options:
+        - { id: d1, text: "Việc sửa máy chắc là mất khoảng hai tiếng.", lang: vi }
+        - { id: d2, text: "Việc sửa máy được phép kéo dài khoảng hai tiếng.", lang: vi }
+        - { id: d3, text: "Việc sửa máy bắt buộc phải kéo dài hai tiếng.", lang: vi }
+        - { id: d4, text: "Việc sửa máy đã kéo dài khoảng hai tiếng.", lang: vi }
+    answer:
+      correct_option_id: d1
+    explanation:
+      vi: "dürfte ở đây là phỏng đoán khá chắc (\"chắc là\"), không phải \"được phép\". Câu nói về tương lai gần, không phải việc đã xong."
+    display_answer: Việc sửa máy chắc là mất khoảng hai tiếng.
+
+  - key: de:exercise:b2u03l2-listen-roboter-2040
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u03-roboter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Manche Fachleute glauben, dass Roboter bis zum Jahr 2040 viele einfache Arbeiten übernommen haben werden.
+      options:
+        - { id: r1, text: "Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đã đảm nhận nhiều công việc đơn giản.", lang: vi }
+        - { id: r2, text: "Một số chuyên gia tin rằng từ năm 2040 rô-bốt mới bắt đầu làm những công việc đơn giản.", lang: vi }
+        - { id: r3, text: "Một số chuyên gia tin rằng đến năm 2040 rô-bốt vẫn chưa thể làm những công việc đơn giản.", lang: vi }
+        - { id: r4, text: "Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đảm nhận nhiều công việc phức tạp.", lang: vi }
+    answer:
+      correct_option_id: r1
+    explanation:
+      vi: "übernommen haben werden (Futur II trong câu phụ) = sẽ đã đảm nhận xong trước mốc bis zum Jahr 2040. einfache Arbeiten = công việc đơn giản, không phải phức tạp."
+    display_answer: Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đã đảm nhận nhiều công việc đơn giản.
+
+  - key: de:exercise:b2u03l2-mcq-futur2-form
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-futur-ii
+    prompt:
+      stem: "Câu nào đúng? (Đến thứ Sáu chúng tôi sẽ phân tích xong dữ liệu. – Futur II)"
+      stem_lang: vi
+      options:
+        - { id: f1, text: "Bis Freitag werden wir die Daten ausgewertet haben.", lang: de }
+        - { id: f2, text: "Bis Freitag werden wir die Daten ausgewertet sein.", lang: de }
+        - { id: f3, text: "Bis Freitag werden wir die Daten auswerten haben.", lang: de }
+        - { id: f4, text: "Bis Freitag haben wir die Daten ausgewertet werden.", lang: de }
+    answer:
+      correct_option_id: f1
+    explanation:
+      vi: "Futur II: werden (vị trí 2) + Partizip II (ausgewertet) + haben, vì auswerten có Perfekt với haben. Không dùng nguyên thể auswerten, và haben … werden là trật tự sai."
+    display_answer: Bis Freitag werden wir die Daten ausgewertet haben.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u03l2-fill-futur2
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-futur-ii
+    prompt:
+      template: "Bis Ende des Jahres {{b1}} (werden) das Team die Studie {{b2}} (abschließen) {{b3}}. Bis dahin {{b4}} (werden) auch das neue Messgerät angekommen {{b5}}."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 13 }
+        - { id: b3, width_hint: 5 }
+        - { id: b4, width_hint: 5 }
+        - { id: b5, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [wird]
+        b2: [abgeschlossen]
+        b3: [haben]
+        b4: [wird]
+        b5: [sein]
+    known_wrong:
+      - answer: werden
+        feedback_vi: Chủ ngữ das Team và das Messgerät là số ít – wird.
+        error_tag: verb_form
+      - answer: geabschlossen
+        feedback_vi: abschließen là động từ tách, ge- đứng giữa – abgeschlossen.
+        error_tag: participle_form
+      - answer: abschließen
+        feedback_vi: Futur II cần Partizip II – abgeschlossen.
+        error_tag: participle_form
+    explanation:
+      vi: "Futur II: wird + Partizip II + haben/sein. abschließen → hat abgeschlossen → abgeschlossen haben; ankommen → ist angekommen → angekommen sein."
+    display_answer: "Bis Ende des Jahres wird das Team die Studie abgeschlossen haben. Bis dahin wird auch das neue Messgerät angekommen sein."
+
+  - key: de:exercise:b2u03l2-fill-muss-duerfte-kann
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-modalverben-subjektiv
+    prompt:
+      template: "Im Labor brennt noch Licht. Frau Berg {{b1}} (müssen) noch da sein. Sie {{b2}} (dürfen, Vermutung) gerade an ihrem Bericht arbeiten. Aber Herr Krause {{b3}} (können) nicht im Labor sein, er ist doch im Urlaub."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [muss]
+        b2: [dürfte]
+        b3: [kann]
+    known_wrong:
+      - answer: darf
+        feedback_vi: "Phỏng đoán dùng dạng Konjunktiv II dürfte (chắc là); darf là \"được phép\"."
+        error_tag: konjunktiv_form
+      - answer: musst
+        feedback_vi: Chủ ngữ Frau Berg là ngôi thứ ba số ít – muss (không có đuôi).
+        error_tag: verb_form
+      - answer: könnt
+        feedback_vi: Chủ ngữ Herr Krause là ngôi thứ ba số ít – kann.
+        error_tag: verb_form
+    explanation:
+      vi: "muss = gần như chắc (đèn còn sáng); dürfte = khá chắc, là Konjunktiv II của dürfen; kann nicht = không thể nào (anh ấy đang nghỉ phép). Modal ngôi thứ ba số ít không có đuôi."
+    display_answer: "Im Labor brennt noch Licht. Frau Berg muss noch da sein. Sie dürfte gerade an ihrem Bericht arbeiten. Aber Herr Krause kann nicht im Labor sein, er ist doch im Urlaub."
+
+  - key: de:exercise:b2u03l2-tr-termin-vergessen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-modalverben-subjektiv
+    prompt:
+      source_text: "Chắc chắn anh ấy đã quên cuộc hẹn. (dùng müssen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Er muss den Termin vergessen haben.
+        - Er muss die Verabredung vergessen haben.
+        - Er muss das Treffen vergessen haben.
+        - Den Termin muss er vergessen haben.
+    known_wrong:
+      - answer: Er muss den Termin vergessen.
+        feedback_vi: "Câu này nghĩa là \"anh ấy phải quên cuộc hẹn\". Đoán về quá khứ cần Partizip II + haben: vergessen haben."
+        error_tag: meaning
+      - answer: Er muss den Termin vergessen sein.
+        feedback_vi: vergessen có Perfekt với haben (hat vergessen) – vergessen haben.
+        error_tag: aux_verb
+      - answer: Er muss den Termin vergessen hat.
+        feedback_vi: Sau modal, động từ ở cuối câu là nguyên thể – vergessen haben.
+        error_tag: verb_form
+    explanation:
+      vi: "Phỏng đoán về quá khứ: muss + Partizip II + haben ở cuối câu. vergessen có Perfekt với haben nên là vergessen haben."
+    display_answer: Er muss den Termin vergessen haben.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u03l2-wb-fehler-gemacht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-futur-ii
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chắc là các nhà nghiên cứu đã mắc một lỗi.\""
+      tokens:
+        - { id: g-gemacht, text: gemacht }
+        - { id: g-forscher, text: Die Forscher }
+        - { id: g-haben, text: haben }
+        - { id: g-wohl, text: wohl }
+        - { id: g-werden, text: werden }
+        - { id: g-fehler, text: einen Fehler }
+    answer:
+      orders:
+        - [g-forscher, g-werden, g-wohl, g-fehler, g-gemacht, g-haben]
+    explanation:
+      vi: "Futur II để đoán về quá khứ: werden (vị trí 2) + wohl + tân ngữ + Partizip II + haben ở cuối câu. wohl thường đứng trước tân ngữ không xác định (einen Fehler)."
+    display_answer: Die Forscher werden wohl einen Fehler gemacht haben.
+
+  - key: de:exercise:b2u03l2-wb-dass-uebernommen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-maschine
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nhiều người tin rằng đến năm 2040 máy móc sẽ đã đảm nhận nhiều công việc.\""
+      tokens:
+        - { id: u-werden, text: werden }
+        - { id: u-viele1, text: Viele }
+        - { id: u-dass, text: dass }
+        - { id: u-maschinen, text: Maschinen }
+        - { id: u-glauben, text: glauben }
+        - { id: u-bis, text: bis 2040 }
+        - { id: u-komma, text: "," }
+        - { id: u-viele2, text: viele Tätigkeiten }
+        - { id: u-uebernommen, text: übernommen }
+        - { id: u-haben, text: haben }
+    answer:
+      orders:
+        - [u-viele1, u-glauben, u-komma, u-dass, u-maschinen, u-bis, u-viele2, u-uebernommen, u-haben, u-werden]
+        - [u-viele1, u-glauben, u-komma, u-dass, u-bis, u-maschinen, u-viele2, u-uebernommen, u-haben, u-werden]
+    explanation:
+      vi: "Trong câu phụ dass, Futur II có thứ tự cuối câu: Partizip II + haben + werden (werden chia đứng sau cùng). bis 2040 có thể đứng trước hoặc sau Maschinen."
+    display_answer: Viele glauben, dass Maschinen bis 2040 viele Tätigkeiten übernommen haben werden.
+
+  - key: de:exercise:b2u03l2-mcq-situation-wert
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-modalverben-subjektiv
+    prompt:
+      stem: "Bạn đã đo ba lần bằng hai thiết bị khác nhau và lần nào kết quả cũng giống nhau. Bạn muốn nói: gần như chắc chắn giá trị này đúng. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: s1, text: "Der Wert muss stimmen.", lang: de }
+        - { id: s2, text: "Der Wert dürfte stimmen.", lang: de }
+        - { id: s3, text: "Der Wert könnte stimmen.", lang: de }
+        - { id: s4, text: "Der Wert kann nicht stimmen.", lang: de }
+    answer:
+      correct_option_id: s1
+    explanation:
+      vi: "Có bằng chứng mạnh và bạn gần như chắc chắn → muss. dürfte chỉ là \"chắc là\" (yếu hơn), könnte là \"có thể\", còn kann nicht nghĩa ngược lại: \"không thể nào đúng\"."
+    display_answer: Der Wert muss stimmen.

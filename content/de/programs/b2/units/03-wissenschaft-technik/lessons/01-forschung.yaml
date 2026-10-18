@@ -1,0 +1,418 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u03-forschung
+order_index: 1
+level: b2
+title:
+  vi: Nghiên cứu – bị động không chủ ngữ, bị động có modal ở quá khứ (Es wird geforscht. Das musste getestet werden.)
+objectives:
+  - vi: Đọc hiểu bài báo khoa học phổ thông ngắn về một nghiên cứu.
+  - vi: Dùng bị động không chủ ngữ (Es wird viel geforscht. Hier wird nicht geraucht.) để mô tả hoạt động mà không nêu người làm.
+  - vi: Mô tả quy trình nghiên cứu đã qua bằng bị động có modal (musste getestet werden, hat getestet werden müssen).
+estimated_minutes: 21
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u02-wiederholung]
+items:
+  - item: de:item:b2u03-g-unpersoenliches-passiv
+  - item: de:item:b2u03-g-passiv-modal-vergangenheit
+  - item: de:item:b2u03-forschung
+  - item: de:item:b2u03-forschen
+  - item: de:item:b2u03-wissenschaftler
+  - item: de:item:b2u03-studie
+  - item: de:item:b2u03-experiment
+  - item: de:item:b2u03-ergebnis
+  - item: de:item:b2u03-beweisen
+  - item: de:item:b2u03-erkenntnis
+  - item: de:item:b2u03-labor
+  - item: de:item:b2u03-forscher
+  - item: de:item:b2u03-wissenschaft
+  - item: de:item:b2u03-wissenschaftlich
+  - item: de:item:b2u03-hypothese
+  - item: de:item:b2u03-versuch
+  - item: de:item:b2u03-messen
+  - item: de:item:b2u03-messung
+  - item: de:item:b2u03-beobachten
+  - item: de:item:b2u03-auswerten
+  - item: de:item:b2u03-fachzeitschrift
+  - item: de:item:b2u03-verfahren
+  - item: de:item:b1u03-g-passiv-praeteritum
+    role: reuse
+  - item: de:item:b1u03-g-passiv-perfekt
+    role: reuse
+  - item: de:item:b1u05-g-passiv-modal
+    role: reuse
+  - item: de:item:b1u01-g-modal-perfekt
+    role: reuse
+  - item: de:item:b1u07-g-zustandspassiv
+    role: reuse
+  - item: de:item:b2u01-g-genitivattribut
+    role: reuse
+  - item: de:item:b2u01-g-indem
+    role: reuse
+  - item: de:item:b2u01-g-es-korrelat
+    role: reuse
+  - item: de:item:b1u07-daten
+    role: reuse
+  - item: de:item:b2u02-g-partizipialattribut-erweitert
+    role: reuse
+  - item: de:item:b1u07-veroeffentlichen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc được tin khoa học ngắn và kể lại quá trình một nghiên cứu, ví dụ: \"An unserem Institut wird seit Jahren zum Thema Schlaf geforscht. Die Studie musste wiederholt werden, weil ein Messgerät defekt war.\""
+  - type: explain
+    text:
+      vi: "Bạn đã biết bị động có chủ ngữ: Die Daten werden ausgewertet. Với động từ không có tân ngữ Akkusativ như forschen, arbeiten, rauchen, diskutieren über, tiếng Đức vẫn dùng bị động nhưng câu không có chủ ngữ: Hier wird nicht geraucht (ở đây không được hút thuốc). Động từ werden luôn ở ngôi thứ ba số ít: wird (hiện tại), wurde (quá khứ)."
+  - type: explain
+    text:
+      vi: "Câu chính tiếng Đức cần một thành phần ở vị trí 1. Nếu không có gì khác, ta đặt es vào để giữ chỗ: Es wird viel geforscht. Khi trạng ngữ đứng đầu (Hier, In diesem Labor, Am Wochenende) hoặc trong câu phụ, es biến mất: In diesem Labor wird viel geforscht; …, dass viel geforscht wird."
+  - type: explain
+    text:
+      vi: "Bị động có modal ở quá khứ, cách thường dùng là Präteritum: modal (musste, konnte, sollte, durfte) ở vị trí 2 + Partizip II + werden ở cuối: Das Medikament musste lange getestet werden. Ở Perfekt, trợ động từ là haben và cuối câu có ba động từ: Das Medikament hat lange getestet werden müssen. Thứ tự cuối câu luôn là Partizip II – werden – modal nguyên thể."
+  - type: explain
+    text:
+      vi: "Trong câu phụ ở Perfekt, hat đứng trước cả cụm ba động từ: …, weil das Medikament hat getestet werden müssen. Dạng này nặng nề, bạn chỉ cần nhận ra; khi viết, hãy chọn Präteritum: …, weil das Medikament getestet werden musste. Câu Das hätte getestet werden müssen (lẽ ra phải được kiểm tra) dùng Konjunktiv II quá khứ, sẽ học ở B2U06."
+  - type: deep_explain
+    text:
+      vi: "So sánh ba loại câu: Es wird geforscht (bị động không chủ ngữ, động từ không có tân ngữ), Es wurden neue Verfahren entwickelt (es chỉ giữ chỗ cho chủ ngữ thật neue Verfahren, nên động từ số nhiều wurden – như B2U01), và Das Labor ist geschlossen (Zustandspassiv, chỉ trạng thái, B1U07). Động từ đi với Dativ cũng tạo bị động không chủ ngữ, Dativ vẫn giữ nguyên: Den Patienten wird geholfen. Văn bản khoa học dùng nhiều bị động vì người làm (die Forscher) ít quan trọng hơn quá trình; khi muốn nêu cách làm, có thể thêm câu indem: Die Daten wurden ausgewertet, indem man sie mit älteren Studien verglich."
+  - type: example
+    target: An unserem Institut wird seit vielen Jahren zum Thema Schlaf geforscht.
+    target_lang: de
+    translation:
+      vi: Ở viện của chúng tôi, người ta nghiên cứu về chủ đề giấc ngủ đã nhiều năm nay.
+    note:
+      vi: "Bị động không chủ ngữ: trạng ngữ An unserem Institut đứng đầu nên không có es; wird ở vị trí 2, geforscht cuối câu."
+  - type: example
+    target: Es wird zurzeit viel über die Ergebnisse der Studie diskutiert.
+    target_lang: de
+    translation:
+      vi: Dạo này người ta bàn luận nhiều về kết quả của nghiên cứu.
+    note:
+      vi: "Không có gì khác ở vị trí 1 nên cần es. diskutieren über + Akk không có tân ngữ trực tiếp. die Ergebnisse der Studie là Genitivattribut."
+  - type: example
+    target: Die Studie musste wiederholt werden, weil ein Messgerät defekt war.
+    target_lang: de
+    translation:
+      vi: Nghiên cứu phải được làm lại vì một thiết bị đo bị hỏng.
+    note:
+      vi: "Präteritum của bị động có modal: musste (vị trí 2) + wiederholt + werden (cuối câu)."
+  - type: example
+    target: Die Daten haben zweimal ausgewertet werden müssen, bevor sie veröffentlicht werden konnten.
+    target_lang: de
+    translation:
+      vi: Dữ liệu đã phải được phân tích hai lần rồi mới có thể được công bố.
+    note:
+      vi: "Câu chính ở Perfekt: haben + ausgewertet werden müssen. Câu phụ bevor ở Präteritum: veröffentlicht werden konnten – động từ chia konnten đứng cuối."
+  - type: example
+    target: Die im Labor gemessenen Werte mussten noch einmal überprüft werden.
+    target_lang: de
+    translation:
+      vi: Các giá trị đo được trong phòng thí nghiệm đã phải được kiểm tra lại một lần nữa.
+    note:
+      vi: "die im Labor gemessenen Werte là cụm phân từ mở rộng (B2U02) = die Werte, die im Labor gemessen wurden. mussten … überprüft werden: bị động + modal, Präteritum."
+  - type: example
+    target: Das Experiment hätte besser vorbereitet werden müssen.
+    target_lang: de
+    translation:
+      vi: Lẽ ra thí nghiệm phải được chuẩn bị tốt hơn.
+    note:
+      vi: "Chỉ cần nhận ra: hätte + … werden müssen = lẽ ra phải được …; dạng Konjunktiv II quá khứ này sẽ học ở B2U06."
+  - type: common_mistake
+    wrong: Hier es wird nicht geraucht.
+    right: Hier wird nicht geraucht.
+    target_lang: de
+    note:
+      vi: "es chỉ giữ chỗ ở vị trí 1; khi Hier đã đứng đầu thì bỏ es và wird đứng ngay ở vị trí 2."
+  - type: common_mistake
+    wrong: Das Medikament musste lange getestet.
+    right: Das Medikament musste lange getestet werden.
+    target_lang: de
+    note:
+      vi: "Bị động với modal luôn cần werden nguyên thể ở cuối câu, sau Partizip II."
+  - type: common_mistake
+    wrong: Das Medikament ist lange getestet werden müssen.
+    right: Das Medikament hat lange getestet werden müssen.
+    target_lang: de
+    note:
+      vi: "Động từ chia là modal (müssen), nên Perfekt dùng haben, không dùng sein."
+  - type: summary
+    points:
+      - vi: "Bị động không chủ ngữ: (Es) wird/wurde + Partizip II – forschen, arbeiten, rauchen, diskutieren."
+      - vi: "es chỉ đứng ở vị trí 1; có trạng ngữ đứng đầu hoặc trong câu phụ thì bỏ es."
+      - vi: "Động từ luôn ở số ít: Es wird viel gelacht (không phải werden)."
+      - vi: "Präteritum: musste/konnte/sollte + Partizip II + werden."
+      - vi: "Perfekt: hat + Partizip II + werden + modal (hat getestet werden müssen); câu phụ: …, dass es hat getestet werden müssen (nhận biết)."
+      - vi: "Từ vựng: die Forschung, forschen, der Wissenschaftler, die Studie, das Experiment, das Ergebnis, beweisen, die Erkenntnis, das Labor."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u03l1-mcq-hier-wird
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u03-g-unpersoenliches-passiv
+    prompt:
+      stem: "Câu nào đúng? (Ở đây không được hút thuốc.)"
+      stem_lang: vi
+      options:
+        - { id: h1, text: "Hier wird nicht geraucht.", lang: de }
+        - { id: h2, text: "Hier es wird nicht geraucht.", lang: de }
+        - { id: h3, text: "Hier wird es nicht geraucht.", lang: de }
+        - { id: h4, text: "Hier werden nicht geraucht.", lang: de }
+    answer:
+      correct_option_id: h1
+    explanation:
+      vi: "Hier đứng ở vị trí 1 nên không cần es, wird đứng ngay vị trí 2. es chỉ giữ chỗ ở vị trí 1, không đứng sau động từ trong câu này; động từ của bị động không chủ ngữ luôn là số ít (wird)."
+    display_answer: Hier wird nicht geraucht.
+
+  - key: de:exercise:b2u03l1-mcq-hat-werden-muessen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-passiv-modal-vergangenheit
+    prompt:
+      stem: "Câu nào đúng? (Thuốc đã phải được thử nghiệm rất lâu. – Perfekt)"
+      stem_lang: vi
+      options:
+        - { id: m1, text: "Das Medikament hat sehr lange getestet werden müssen.", lang: de }
+        - { id: m2, text: "Das Medikament ist sehr lange getestet werden müssen.", lang: de }
+        - { id: m3, text: "Das Medikament hat sehr lange getestet worden müssen.", lang: de }
+        - { id: m4, text: "Das Medikament hat sehr lange getestet müssen werden.", lang: de }
+    answer:
+      correct_option_id: m1
+    explanation:
+      vi: "Perfekt của bị động có modal: hat + Partizip II + werden + modal nguyên thể. Trợ động từ là haben vì động từ chia là modal; sau Partizip dùng werden (không phải worden), và werden đứng trước müssen."
+    display_answer: Das Medikament hat sehr lange getestet werden müssen.
+
+  - key: de:exercise:b2u03l1-listen-wochenende
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u03-labor
+    prompt:
+      audio_asset_id: null
+      fallback_text: In unserem Labor wird auch am Wochenende gearbeitet, weil die Messungen nicht unterbrochen werden dürfen.
+      options:
+        - { id: w1, text: "Phòng thí nghiệm làm việc cả cuối tuần vì các phép đo không được phép bị gián đoạn.", lang: vi }
+        - { id: w2, text: "Phòng thí nghiệm làm việc cả cuối tuần vì các phép đo phải được lặp lại.", lang: vi }
+        - { id: w3, text: "Phòng thí nghiệm nghỉ vào cuối tuần để các phép đo không bị gián đoạn.", lang: vi }
+        - { id: w4, text: "Phòng thí nghiệm làm việc cả cuối tuần vì thiếu nhân viên.", lang: vi }
+    answer:
+      correct_option_id: w1
+    explanation:
+      vi: "wird auch am Wochenende gearbeitet = người ta làm việc cả cuối tuần (bị động không chủ ngữ). nicht unterbrochen werden dürfen = không được phép bị gián đoạn; không có ý \"lặp lại\" hay \"thiếu người\"."
+    display_answer: Phòng thí nghiệm làm việc cả cuối tuần vì các phép đo không được phép bị gián đoạn.
+
+  - key: de:exercise:b2u03l1-mcq-lesen-schlaf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-studie
+    prompt:
+      stem: "An einem Institut wird zum Thema Schlaf geforscht. In einer Studie lernten 60 Studierende abends Vokabeln. Eine Gruppe durfte danach schlafen, die andere musste wach bleiben. Am nächsten Tag wurde getestet, wie viele Wörter sie noch wussten. Wer geschlafen hatte, wusste mehr. Die Forscher betonen aber, dass die Studie klein war und die Ergebnisse noch bestätigt werden müssen. — Richtig oder falsch? Die Forscher halten ihr Ergebnis schon für bewiesen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Câu cuối nói các nhà nghiên cứu nhấn mạnh nghiên cứu còn nhỏ và kết quả vẫn còn phải được xác nhận (noch bestätigt werden müssen). Vậy họ chưa coi kết quả là đã được chứng minh – câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u03l1-fill-wird-diskutiert
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-unpersoenliches-passiv
+    prompt:
+      template: "Über das Thema {{b1}} (werden) zurzeit viel {{b2}} (diskutieren). Auch an unserem Institut {{b3}} (werden) im Moment intensiv {{b4}} (forschen)."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 5 }
+        - { id: b4, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [wird]
+        b2: [diskutiert]
+        b3: [wird]
+        b4: [geforscht]
+    known_wrong:
+      - answer: werden
+        feedback_vi: Bị động không chủ ngữ luôn dùng ngôi thứ ba số ít – wird.
+        error_tag: verb_form
+      - answer: gediskutiert
+        feedback_vi: Động từ đuôi -ieren không có ge- – diskutiert.
+        error_tag: participle_form
+      - answer: forscht
+        feedback_vi: Bị động cần Partizip II – geforscht.
+        error_tag: participle_form
+    explanation:
+      vi: "Câu không có chủ ngữ (diskutieren über, forschen không có tân ngữ Akkusativ), nên werden luôn là wird. zurzeit, im Moment chỉ hiện tại. diskutieren → diskutiert (không ge-), forschen → geforscht. Trạng ngữ đứng đầu nên không có es."
+    display_answer: "Über das Thema wird zurzeit viel diskutiert. Auch an unserem Institut wird im Moment intensiv geforscht."
+
+  - key: de:exercise:b2u03l1-fill-musste-werden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-passiv-modal-vergangenheit
+    prompt:
+      template: "Die Studie {{b1}} (müssen, Präteritum) wiederholt {{b2}}, weil ein Messgerät defekt war. Die alten Daten {{b3}} (können, Präteritum) nicht mehr verwendet {{b4}}."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 8 }
+        - { id: b4, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [musste]
+        b2: [werden]
+        b3: [konnten]
+        b4: [werden]
+    known_wrong:
+      - answer: worden
+        feedback_vi: Sau modal dùng werden nguyên thể – wiederholt werden, không phải worden.
+        error_tag: participle_form
+      - answer: muss
+        feedback_vi: Đề yêu cầu Präteritum – musste.
+        error_tag: verb_form
+      - answer: konnte
+        feedback_vi: Chủ ngữ die alten Daten là số nhiều – konnten.
+        error_tag: verb_form
+    explanation:
+      vi: "Präteritum bị động có modal: modal chia ở vị trí 2 (die Studie → musste; die Daten số nhiều → konnten) + Partizip II + werden nguyên thể ở cuối câu."
+    display_answer: "Die Studie musste wiederholt werden, weil ein Messgerät defekt war. Die alten Daten konnten nicht mehr verwendet werden."
+
+  - key: de:exercise:b2u03l1-tr-daten-ausgewertet
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-auswerten
+    prompt:
+      source_text: "Dữ liệu đã không thể được phân tích. (bị động với können, quá khứ)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Daten konnten nicht ausgewertet werden.
+        - Die Daten konnten nicht analysiert werden.
+        - Die Daten haben nicht ausgewertet werden können.
+        - Die Daten haben nicht analysiert werden können.
+    known_wrong:
+      - answer: Die Daten konnten nicht ausgewertet worden.
+        feedback_vi: Sau modal dùng werden nguyên thể, không dùng worden.
+        error_tag: participle_form
+      - answer: Die Daten konnten nicht ausgewertet.
+        feedback_vi: Thiếu werden – bị động với modal cần Partizip II + werden.
+        error_tag: verb_form
+      - answer: Die Daten sind nicht ausgewertet werden können.
+        feedback_vi: Perfekt của modal dùng haben – Die Daten haben … werden können.
+        error_tag: aux_verb
+    explanation:
+      vi: "Präteritum: Die Daten (số nhiều) konnten nicht ausgewertet werden. Perfekt cũng đúng: Die Daten haben nicht ausgewertet werden können. auswerten hoặc analysieren đều là \"phân tích dữ liệu\"."
+    display_answer: Die Daten konnten nicht ausgewertet werden.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u03l1-wb-tag-und-nacht
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-forschen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi đã đọc được rằng ở phòng thí nghiệm này người ta nghiên cứu ngày đêm.\""
+      tokens:
+        - { id: t-labor, text: Labor }
+        - { id: t-wird, text: wird }
+        - { id: t-ich, text: Ich }
+        - { id: t-tagnacht, text: Tag und Nacht }
+        - { id: t-dass, text: dass }
+        - { id: t-gelesen, text: gelesen }
+        - { id: t-diesem, text: diesem }
+        - { id: t-habe, text: habe }
+        - { id: t-geforscht, text: geforscht }
+        - { id: t-in, text: in }
+        - { id: t-komma, text: "," }
+    answer:
+      orders:
+        - [t-ich, t-habe, t-gelesen, t-komma, t-dass, t-in, t-diesem, t-labor, t-tagnacht, t-geforscht, t-wird]
+        - [t-ich, t-habe, t-gelesen, t-komma, t-dass, t-tagnacht, t-in, t-diesem, t-labor, t-geforscht, t-wird]
+    explanation:
+      vi: "Trong câu phụ dass không cần es (es chỉ giữ chỗ ở vị trí 1 của câu chính). Động từ chia wird đứng cuối, sau geforscht. in diesem Labor và Tag und Nacht có thể đổi chỗ cho nhau."
+    display_answer: Ich habe gelesen, dass in diesem Labor Tag und Nacht geforscht wird.
+
+  - key: de:exercise:b2u03l1-wb-studie-wiederholt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-passiv-modal-vergangenheit
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nghiên cứu đã phải được làm lại vì dữ liệu không thể được phân tích.\""
+      tokens:
+        - { id: s-konnten, text: konnten }
+        - { id: s-studie, text: Die Studie }
+        - { id: s-werden1, text: werden }
+        - { id: s-weil, text: weil }
+        - { id: s-ausgewertet, text: ausgewertet }
+        - { id: s-musste, text: musste }
+        - { id: s-daten, text: die Daten }
+        - { id: s-komma, text: "," }
+        - { id: s-nicht, text: nicht }
+        - { id: s-wiederholt, text: wiederholt }
+        - { id: s-werden2, text: werden }
+    answer:
+      orders:
+        - [s-studie, s-musste, s-wiederholt, s-werden1, s-komma, s-weil, s-daten, s-nicht, s-ausgewertet, s-werden2, s-konnten]
+        - [s-studie, s-musste, s-wiederholt, s-werden2, s-komma, s-weil, s-daten, s-nicht, s-ausgewertet, s-werden1, s-konnten]
+    explanation:
+      vi: "Câu chính: musste ở vị trí 2, wiederholt werden ở cuối. Câu phụ weil: động từ chia konnten đứng sau cùng, sau ausgewertet werden."
+    display_answer: Die Studie musste wiederholt werden, weil die Daten nicht ausgewertet werden konnten.
+
+  - key: de:exercise:b2u03l1-tr-haette-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u03-experiment
+    prompt:
+      source_text: Das Experiment hätte besser vorbereitet werden müssen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Lẽ ra thí nghiệm phải được chuẩn bị tốt hơn.
+        - Lẽ ra thí nghiệm phải được chuẩn bị kỹ hơn.
+        - Thí nghiệm lẽ ra phải được chuẩn bị tốt hơn.
+        - Thí nghiệm lẽ ra phải được chuẩn bị kỹ hơn.
+        - Lẽ ra thí nghiệm cần được chuẩn bị tốt hơn.
+        - Lẽ ra thí nghiệm cần được chuẩn bị kỹ hơn.
+        - Thí nghiệm lẽ ra cần được chuẩn bị tốt hơn.
+        - Lẽ ra phải chuẩn bị thí nghiệm tốt hơn.
+        - Lẽ ra phải chuẩn bị thí nghiệm kỹ hơn.
+        - Đáng lẽ thí nghiệm phải được chuẩn bị tốt hơn.
+        - Đáng lẽ thí nghiệm phải được chuẩn bị kỹ hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thí nghiệm đã phải được chuẩn bị tốt hơn.
+        feedback_vi: "hätte … müssen là \"lẽ ra phải\" (điều đã không xảy ra), không phải \"đã phải\" (musste)."
+        error_tag: meaning
+      - answer: Thí nghiệm phải được chuẩn bị tốt hơn.
+        feedback_vi: "Câu nói về quá khứ: hätte … werden müssen = lẽ ra phải …."
+        error_tag: meaning
+    explanation:
+      vi: "hätte + Partizip II + werden + müssen = lẽ ra phải được … (nhưng thực tế đã không làm). Bạn chỉ cần hiểu dạng này; cách tạo câu Konjunktiv II quá khứ sẽ học ở B2U06."
+    display_answer: Lẽ ra thí nghiệm phải được chuẩn bị tốt hơn.

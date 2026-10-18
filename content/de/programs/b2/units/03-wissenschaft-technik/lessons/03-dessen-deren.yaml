@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u03-dessen-deren
+order_index: 3
+level: b2
+title:
+  vi: Phát hiện mà… – quan hệ Genitiv, tiền tố mang nghĩa (Ein Forscher, dessen Theorie …)
+objectives:
+  - vi: Viết câu học thuật mô tả nhà khoa học và lý thuyết bằng mệnh đề quan hệ Genitiv (dessen, deren).
+  - vi: Chia đúng đuôi tính từ sau dessen/deren (dessen neue Theorie, in dessen modernem Labor).
+  - vi: Đoán nghĩa động từ qua các tiền tố ent-, ver-, zer-, miss-, er-, be-.
+estimated_minutes: 21
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u03-zukunftstechnologien]
+items:
+  - item: de:item:b2u03-g-relativ-genitiv
+  - item: de:item:b2u03-g-verbpraefixe-bedeutung
+  - item: de:item:b2u03-entdeckung
+  - item: de:item:b2u03-entdecken
+  - item: de:item:b2u03-theorie
+  - item: de:item:b2u03-these
+  - item: de:item:b2u03-widerlegen
+  - item: de:item:b2u03-bestaetigen
+  - item: de:item:b2u03-zerstoeren
+  - item: de:item:b2u03-missverstehen
+  - item: de:item:b2u03-erforschen
+  - item: de:item:b2u03-entschluesseln
+  - item: de:item:b2u03-zerlegen
+  - item: de:item:b2u03-misslingen
+  - item: de:item:b2u03-missbrauchen
+  - item: de:item:b2u03-bewirken
+  - item: de:item:b2u03-entstehen
+  - item: de:item:b2u03-veraendern
+  - item: de:item:b2u03-physiker
+  - item: de:item:b2u03-annahme
+  - item: de:item:b2u03-irrtum
+  - item: de:item:b1u02-g-relativpronomen-wahl
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b1u08-g-verbpraefixe-wechsel
+    role: reuse
+  - item: de:item:b1u03-entwickeln
+    role: reuse
+  - item: de:item:b2u02-g-sich-lassen
+    role: reuse
+  - item: de:item:b2u02-g-relativsatz-partizip-umformung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được câu như: \"Die Physikerin, deren Theorie lange umstritten war, hat jetzt einen Preis bekommen.\" và đoán được nghĩa của zerlegen, misslingen hay entschlüsseln từ tiền tố."
+  - type: explain
+    text:
+      vi: "dessen và deren nối hai câu có quan hệ sở hữu: Der Forscher hält einen Vortrag. Seine Theorie ist neu. → Der Forscher, dessen Theorie neu ist, hält einen Vortrag. Tiếng Việt nói \"nhà nghiên cứu mà lý thuyết của ông ấy …\", tiếng Đức gói \"của ông ấy\" vào một từ. Động từ của mệnh đề quan hệ đứng cuối, mệnh đề nằm giữa hai dấu phẩy."
+  - type: explain
+    text:
+      vi: "Chọn theo danh từ đứng TRƯỚC dấu phẩy (người sở hữu), không theo danh từ phía sau: der Forscher / das Institut → dessen; die Forscherin / die Forscher (số nhiều) → deren. Vì vậy: die Forscherin, deren Vater …; der Forscher, dessen Mutter …. Đây giống như chọn sein/ihr: sein Buch (của anh ấy) ↔ ihr Buch (của cô ấy)."
+  - type: explain
+    text:
+      vi: "Danh từ đứng sau dessen/deren không có mạo từ, còn tính từ mang đuôi như khi không có mạo từ (bảng 3, A2U07): dessen neue Theorie (Nom, giống cái), deren erstes Buch (Nom, giống trung), in dessen modernem Labor (Dativ, giống trung). Bản thân dessen/deren không bao giờ đổi đuôi."
+  - type: explain
+    text:
+      vi: "Các tiền tố không tách ent-, ver-, zer-, miss-, er-, be- thường gợi ý nghĩa: zer- = vỡ vụn (zerstören, zerlegen), miss- = sai, hỏng (missverstehen, misslingen), ent- = bỏ đi hoặc bắt đầu (entdecken, entstehen), ver- = làm thay đổi, làm sai (verändern, sich verrechnen), er- = đạt tới kết quả (erfinden, erforschen), be- = tạo tân ngữ Akkusativ (wirken → etwas bewirken). Partizip II của chúng không có ge-: entdeckt, zerstört, missverstanden. Đây chỉ là gợi ý, nhiều động từ không theo quy tắc (verstehen, bekommen)."
+  - type: deep_explain
+    text:
+      vi: "Cách thì của danh từ sau dessen/deren do vai trò của nó trong mệnh đề quan hệ, còn dessen/deren chỉ do người sở hữu: der Forscher, dessen Theorie ich kenne (Theorie là tân ngữ Akk), der Forscher, mit dessen Team wir arbeiten (Dativ sau mit). Giới từ đứng trước dessen/deren: die Ärztin, in deren Praxis …. Ở B1U08 bạn đã học tiền tố tách/không tách theo trọng âm (übersetzen); các tiền tố của bài này luôn không tách và không mang trọng âm: ent-DE-cken, zer-STÖ-ren. Riêng miss- thường có trọng âm nhẹ (MISS-verstehen) nhưng vẫn không tách khi chia: ich missverstehe."
+  - type: example
+    target: Der Forscher, dessen neue Theorie viel diskutiert wird, hält morgen einen Vortrag.
+    target_lang: de
+    translation:
+      vi: Nhà nghiên cứu mà lý thuyết mới của ông ấy đang được bàn luận nhiều sẽ thuyết trình vào ngày mai.
+    note:
+      vi: "der Forscher → dessen; neue: đuôi tính từ không mạo từ, Nominativ giống cái."
+  - type: example
+    target: Die Physikerin, deren Entdeckung zuerst niemand glauben wollte, ist heute sehr bekannt.
+    target_lang: de
+    translation:
+      vi: Nữ nhà vật lý mà ban đầu không ai muốn tin phát hiện của bà ấy, nay rất nổi tiếng.
+    note:
+      vi: "die Physikerin (giống cái) → deren. Entdeckung là tân ngữ của glauben trong mệnh đề quan hệ; động từ chia wollte đứng cuối."
+  - type: example
+    target: Das Institut, in dessen modernem Labor wir arbeiten, liegt in Dresden.
+    target_lang: de
+    translation:
+      vi: Viện mà chúng tôi làm việc trong phòng thí nghiệm hiện đại của nó nằm ở Dresden.
+    note:
+      vi: "Giới từ in đứng trước dessen; in + Dativ, không mạo từ → modernem."
+  - type: example
+    target: Viele Forscher, deren Ergebnisse widerlegt wurden, haben daraus Neues entwickelt.
+    target_lang: de
+    translation:
+      vi: Nhiều nhà nghiên cứu mà kết quả của họ bị bác bỏ đã từ đó phát triển ra điều mới.
+    note:
+      vi: "Số nhiều (Forscher) → deren. widerlegt, entwickelt: tiền tố không tách, không có ge-. Neues là tính từ danh từ hóa nên viết hoa."
+  - type: example
+    target: Der erste Versuch ist misslungen, weil wir die Anleitung missverstanden hatten.
+    target_lang: de
+    translation:
+      vi: Lần thử đầu tiên đã thất bại vì chúng tôi đã hiểu sai hướng dẫn.
+    note:
+      vi: "miss- = sai, hỏng. misslingen dùng sein (ist misslungen); missverstehen dùng haben (hatten missverstanden – Plusquamperfekt)."
+  - type: example
+    target: Die These, die lange vertreten wurde, ließ sich nicht beweisen. – Die lange vertretene These ließ sich nicht beweisen.
+    target_lang: de
+    translation:
+      vi: Luận điểm từng được bảo vệ suốt thời gian dài đã không chứng minh được.
+    note:
+      vi: "Mệnh đề quan hệ ↔ cụm phân từ (B2U02): die These, die lange vertreten wurde = die lange vertretene These. ließ sich nicht beweisen = sich lassen (B2U02): không thể chứng minh được."
+  - type: common_mistake
+    wrong: Der Forscher, dessen die Theorie bekannt ist, kommt aus Wien.
+    right: Der Forscher, dessen Theorie bekannt ist, kommt aus Wien.
+    target_lang: de
+    note:
+      vi: "Sau dessen/deren không có mạo từ."
+  - type: common_mistake
+    wrong: Die Forscherin, dessen Vater auch Arzt war, arbeitet in Bonn.
+    right: Die Forscherin, deren Vater auch Arzt war, arbeitet in Bonn.
+    target_lang: de
+    note:
+      vi: "Chọn theo danh từ đứng trước (die Forscherin → deren), không theo danh từ phía sau (der Vater)."
+  - type: common_mistake
+    wrong: Die Forscher haben eine neue Art geentdeckt.
+    right: Die Forscher haben eine neue Art entdeckt.
+    target_lang: de
+    note:
+      vi: "Tiền tố không tách ent- → Partizip II không có ge-."
+  - type: summary
+    points:
+      - vi: "dessen: người/vật sở hữu là der hoặc das; deren: die (giống cái) hoặc số nhiều."
+      - vi: "Chọn theo danh từ đứng trước, không theo danh từ phía sau."
+      - vi: "Sau dessen/deren: không mạo từ, tính từ theo bảng không mạo từ (dessen neue Theorie)."
+      - vi: "Giới từ đứng trước: in dessen Labor, mit deren Hilfe."
+      - vi: "ent- (bỏ/bắt đầu), ver- (đổi/sai), zer- (vỡ vụn), miss- (sai), er- (đạt tới), be- (tạo tân ngữ) – không tách, không ge-."
+      - vi: "Từ vựng: die Entdeckung, entdecken, die Theorie, die These, widerlegen, bestätigen, zerstören, missverstehen."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u03l3-mcq-deren-studie
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u03-g-relativ-genitiv
+    prompt:
+      stem: "Chọn từ đúng: Die Forscherin, ___ Studie ich gelesen habe, kommt aus Wien."
+      stem_lang: vi
+      options:
+        - { id: a1, text: "deren", lang: de }
+        - { id: a2, text: "dessen", lang: de }
+        - { id: a3, text: "die", lang: de }
+        - { id: a4, text: "der", lang: de }
+    answer:
+      correct_option_id: a1
+    explanation:
+      vi: "Nghĩa sở hữu (nghiên cứu của bà ấy) cần đại từ quan hệ Genitiv. Danh từ đứng trước là die Forscherin (giống cái) → deren. die/der không diễn tả sở hữu."
+    display_answer: deren
+
+  - key: de:exercise:b2u03l3-mcq-dessen-theorie
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-relativ-genitiv
+    prompt:
+      stem: "Chọn từ đúng: Der Physiker, ___ Theorie lange umstritten war, bekommt einen Preis."
+      stem_lang: vi
+      options:
+        - { id: b1, text: "dessen", lang: de }
+        - { id: b2, text: "deren", lang: de }
+        - { id: b3, text: "dessen die", lang: de }
+        - { id: b4, text: "den", lang: de }
+    answer:
+      correct_option_id: b1
+    explanation:
+      vi: "Chọn theo danh từ đứng trước: der Physiker → dessen, dù Theorie là giống cái. Sau dessen không có mạo từ, nên dessen die sai."
+    display_answer: dessen
+
+  - key: de:exercise:b2u03l3-mcq-zerlegen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u03-g-verbpraefixe-bedeutung
+    prompt:
+      stem: "Der Techniker zerlegt das alte Gerät, um es zu untersuchen. — Was bedeutet zerlegen?"
+      stem_lang: de
+      options:
+        - { id: z1, text: "tháo rời thành từng phần", lang: vi }
+        - { id: z2, text: "lắp ráp lại", lang: vi }
+        - { id: z3, text: "đặt sang chỗ khác", lang: vi }
+        - { id: z4, text: "vứt đi", lang: vi }
+    answer:
+      correct_option_id: z1
+    explanation:
+      vi: "zer- gợi ý \"thành từng mảnh\" + legen (đặt): đặt ra thành từng phần, tức là tháo rời. Người thợ tháo máy ra để kiểm tra."
+    display_answer: tháo rời thành từng phần
+
+  - key: de:exercise:b2u03l3-mcq-lesen-musik
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-these
+    prompt:
+      stem: "Viele Schüler glauben, dass Musik beim Lernen immer hilft. Die Psychologin Anna Keller, deren Team zum Thema Lernen forscht, wollte diese These überprüfen. Zwei Gruppen lasen schwierige Texte, eine mit Musik, eine ohne. Die Gruppe ohne Musik erinnerte sich an mehr. Damit wurde die These zumindest für diese Gruppe widerlegt. Keller betont aber, dass ihre Studie klein war. — Richtig oder falsch? Laut Text ist jetzt bewiesen, dass Musik beim Lernen immer schadet."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản chỉ nói luận điểm \"nhạc luôn giúp ích\" bị bác bỏ cho nhóm này (zumindest für diese Gruppe), và nhà nghiên cứu nhấn mạnh nghiên cứu còn nhỏ. Không có chỗ nào nói đã chứng minh nhạc luôn có hại."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u03l3-fill-dessen-deren
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-relativ-genitiv
+    prompt:
+      template: "Das ist der Wissenschaftler, {{b1}} Buch ich gerade lese. Kennst du die Biologin, {{b2}} Labor neben unserem liegt? Die Studierenden, {{b3}} Ergebnisse am besten waren, bekommen einen Preis."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [dessen]
+        b2: [deren]
+        b3: [deren]
+    known_wrong:
+      - answer: dem
+        feedback_vi: "Câu cần nghĩa sở hữu (\"mà … của người đó\") – dùng dessen/deren."
+        error_tag: case_dat_akk
+      - answer: die
+        feedback_vi: "die không diễn tả sở hữu; ở đây cần deren (\"mà … của bà ấy / của họ\")."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "der Wissenschaftler → dessen; die Biologin (giống cái) → deren; die Studierenden (số nhiều) → deren. Chọn theo danh từ đứng trước, không theo Buch, Labor hay Ergebnisse."
+    display_answer: "Das ist der Wissenschaftler, dessen Buch ich gerade lese. Kennst du die Biologin, deren Labor neben unserem liegt? Die Studierenden, deren Ergebnisse am besten waren, bekommen einen Preis."
+
+  - key: de:exercise:b2u03l3-fill-adj-endung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-relativ-genitiv
+    prompt:
+      template: "Der Forscher, dessen {{b1}} (neu) Theorie viel diskutiert wird, hält heute einen Vortrag. Die Ärztin, deren {{b2}} (erst) Buch ein großer Erfolg war, schreibt jetzt ein zweites. Das Institut, in dessen {{b3}} (modern) Labor wir arbeiten, liegt in Dresden."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 7 }
+        - { id: b3, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [neue]
+        b2: [erstes]
+        b3: [modernem]
+    known_wrong:
+      - answer: neuen
+        feedback_vi: die Theorie, Nominativ, không mạo từ → neue.
+        error_tag: adj_ending
+      - answer: erste
+        feedback_vi: das Buch, Nominativ, không mạo từ → đuôi -es mang dấu hiệu giống trung – erstes.
+        error_tag: adj_ending
+      - answer: modernen
+        feedback_vi: in + Dativ, giống trung, không mạo từ → đuôi -em – modernem.
+        error_tag: adj_ending
+    explanation:
+      vi: "Sau dessen/deren, tính từ chia theo bảng không mạo từ: Nominativ giống cái -e (neue Theorie), Nominativ giống trung -es (erstes Buch), Dativ giống trung -em (modernem Labor)."
+    display_answer: "Der Forscher, dessen neue Theorie viel diskutiert wird, hält heute einen Vortrag. Die Ärztin, deren erstes Buch ein großer Erfolg war, schreibt jetzt ein zweites. Das Institut, in dessen modernem Labor wir arbeiten, liegt in Dresden."
+
+  - key: de:exercise:b2u03l3-fill-partizip-praefix
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-verbpraefixe-bedeutung
+    prompt:
+      template: "Die Forscher haben eine neue Pflanzenart {{b1}} (entdecken). Der Sturm hat das alte Labor {{b2}} (zerstören). Leider haben Sie mich {{b3}} (missverstehen)."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 13 }
+    answer:
+      blanks:
+        b1: [entdeckt]
+        b2: [zerstört]
+        b3: [missverstanden]
+    known_wrong:
+      - answer: geentdeckt
+        feedback_vi: ent- không tách → không thêm ge- – entdeckt.
+        error_tag: participle_form
+      - answer: gezerstört
+        feedback_vi: zer- không tách → không thêm ge- – zerstört.
+        error_tag: participle_form
+      - answer: gemissverstanden
+        feedback_vi: miss- không tách → không thêm ge- – missverstanden.
+        error_tag: participle_form
+      - answer: missverstehte
+        feedback_vi: missverstehen là động từ mạnh – Partizip II missverstanden.
+        error_tag: participle_form
+    explanation:
+      vi: "Động từ có tiền tố không tách (ent-, zer-, miss-) không thêm ge- ở Partizip II: entdeckt, zerstört. missverstehen chia như verstehen: missverstanden."
+    display_answer: "Die Forscher haben eine neue Pflanzenart entdeckt. Der Sturm hat das alte Labor zerstört. Leider haben Sie mich missverstanden."
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u03l3-wb-physikerin
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-bestaetigen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi biết một nhà vật lý nữ mà lý thuyết của bà ấy về sau đã được xác nhận.\""
+      tokens:
+        - { id: p-wurde, text: wurde }
+        - { id: p-kenne, text: kenne }
+        - { id: p-deren, text: deren }
+        - { id: p-ich, text: Ich }
+        - { id: p-spaeter, text: später }
+        - { id: p-physikerin, text: eine Physikerin }
+        - { id: p-theorie, text: Theorie }
+        - { id: p-komma, text: "," }
+        - { id: p-bestaetigt, text: bestätigt }
+    answer:
+      orders:
+        - [p-ich, p-kenne, p-physikerin, p-komma, p-deren, p-theorie, p-spaeter, p-bestaetigt, p-wurde]
+    explanation:
+      vi: "eine Physikerin (giống cái) → deren; Theorie đứng ngay sau, không mạo từ. Mệnh đề quan hệ: động từ chia wurde đứng cuối, sau bestätigt (bị động Präteritum)."
+    display_answer: Ich kenne eine Physikerin, deren Theorie später bestätigt wurde.
+
+  - key: de:exercise:b2u03l3-tr-erfindung-bekannt
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-relativ-genitiv
+    prompt:
+      source_text: "Tôi biết một nhà khoa học nữ mà phát minh của bà ấy rất nổi tiếng."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich kenne eine Wissenschaftlerin, deren Erfindung sehr bekannt ist.
+        - Ich kenne eine Wissenschaftlerin, deren Erfindung sehr berühmt ist.
+        - Ich kenne eine Forscherin, deren Erfindung sehr bekannt ist.
+        - Ich kenne eine Forscherin, deren Erfindung sehr berühmt ist.
+    known_wrong:
+      - answer: Ich kenne eine Wissenschaftlerin, dessen Erfindung sehr bekannt ist.
+        feedback_vi: eine Wissenschaftlerin là giống cái → deren.
+        error_tag: gender
+      - answer: Ich kenne eine Wissenschaftlerin, deren die Erfindung sehr bekannt ist.
+        feedback_vi: Sau deren không có mạo từ – deren Erfindung.
+        error_tag: article
+      - answer: Ich kenne eine Wissenschaftlerin, deren Erfindung ist sehr bekannt.
+        feedback_vi: Trong mệnh đề quan hệ, động từ chia đứng cuối – … sehr bekannt ist.
+        error_tag: verb_position
+    explanation:
+      vi: "Danh từ đứng trước là eine Wissenschaftlerin (giống cái) → deren, sau đó là Erfindung không mạo từ, động từ ist đứng cuối mệnh đề quan hệ."
+    display_answer: Ich kenne eine Wissenschaftlerin, deren Erfindung sehr bekannt ist.
+
+  - key: de:exercise:b2u03l3-mcq-misslungen
+    type: mcq
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u03-misslingen
+    prompt:
+      stem: "Der Plan der Forscher ist leider misslungen. — Was bedeutet der Satz?"
+      stem_lang: de
+      options:
+        - { id: n1, text: "Tiếc là kế hoạch của các nhà nghiên cứu đã thất bại.", lang: vi }
+        - { id: n2, text: "Tiếc là kế hoạch của các nhà nghiên cứu đã bị hiểu lầm.", lang: vi }
+        - { id: n3, text: "Tiếc là kế hoạch của các nhà nghiên cứu đã bị phá hủy.", lang: vi }
+        - { id: n4, text: "May là kế hoạch của các nhà nghiên cứu đã thành công.", lang: vi }
+    answer:
+      correct_option_id: n1
+    explanation:
+      vi: "miss- = sai, hỏng; misslingen là ngược nghĩa với gelingen (thành công), nên ist misslungen = đã thất bại. Hiểu lầm là missverstanden, phá hủy là zerstört."
+    display_answer: Tiếc là kế hoạch của các nhà nghiên cứu đã thất bại.

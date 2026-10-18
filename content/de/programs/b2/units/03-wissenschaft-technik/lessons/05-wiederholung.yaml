@@ -1,0 +1,366 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u03-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – văn bản khoa học phổ thông (Wiederholung)
+objectives:
+  - vi: Đọc bài báo khoa học phổ thông dài và chọn câu phù hợp điền vào chỗ trống (kiểu Goethe B2 Lesen, dạng cấu trúc văn bản).
+  - vi: Viết tóm tắt khoảng 100 từ cho một bài báo.
+  - vi: Chuẩn bị bài thuyết trình về chủ đề "AI trong giáo dục".
+estimated_minutes: 26
+skills: [reading, writing, speaking]
+prerequisites: [de:lesson:b2u03-vortrag]
+items:
+  - item: de:item:b2u03-g-unpersoenliches-passiv
+    role: reuse
+  - item: de:item:b2u03-g-passiv-modal-vergangenheit
+    role: reuse
+  - item: de:item:b2u03-g-futur-ii
+    role: reuse
+  - item: de:item:b2u03-g-modalverben-subjektiv
+    role: reuse
+  - item: de:item:b2u03-g-relativ-genitiv
+    role: reuse
+  - item: de:item:b2u03-g-verbpraefixe-bedeutung
+    role: reuse
+  - item: de:item:b2u03-g-vortrag-redemittel
+    role: reuse
+  - item: de:item:b2u03-kuenstliche-intelligenz
+    role: reuse
+  - item: de:item:b2u03-ersetzen
+    role: reuse
+  - item: de:item:b2u03-risiko
+    role: reuse
+  - item: de:item:b2u03-datenschutz
+    role: reuse
+  - item: de:item:b2u03-these
+    role: reuse
+  - item: de:item:b2u03-studie
+    role: reuse
+  - item: de:item:b2u03-ergebnis
+    role: reuse
+  - item: de:item:b2u03-fazit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc được một bài báo về \"KI in der Schule\", tóm tắt nó trong khoảng 100 từ (Der Text handelt von …) và lập dàn ý cho bài thuyết trình 4 phút cùng chủ đề."
+  - type: explain
+    text:
+      vi: "Dạng bài chọn câu điền vào chỗ trống kiểm tra xem bạn hiểu mạch văn hay không. Hãy đọc kỹ câu trước và câu sau chỗ trống: tìm từ nối (aber, dagegen, deshalb, außerdem), đại từ (das, diese, sie) và từ lặp lại. Câu đúng phải khớp với cả hai phía, chứ không chỉ cùng chủ đề."
+  - type: explain
+    text:
+      vi: "Tóm tắt (Zusammenfassung) khoảng 100 từ: câu mở đầu nêu nguồn và chủ đề (Der Text handelt von …), sau đó là luận điểm chính (Die Autorin vertritt die These, dass …), các lý lẽ chính, rồi kết luận (Zusammenfassend lässt sich sagen, dass …). Không thêm ý kiến riêng, viết bằng lời của mình và ở Präsens."
+  - type: explain
+    text:
+      vi: "Ôn nhanh ngữ pháp của unit: Es wird viel diskutiert (bị động không chủ ngữ); Das musste getestet werden (bị động + modal quá khứ); Bis 2030 werden viele Schulen … eingeführt haben (Futur II); muss > dürfte > kann/könnte (phỏng đoán); ein Programm, dessen Aufgaben …; deren Ergebnisse … (Genitiv quan hệ)."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, Goethe-Zertifikat B2 Lesen có một phần chọn câu hoặc đoạn phù hợp cho văn bản có chỗ trống, thường có thêm câu thừa không dùng đến; số câu và thời gian có thể thay đổi, hãy xem tài liệu mẫu chính thức của Goethe-Institut. Khi chuẩn bị thuyết trình \"KI in der Bildung\", hãy ghi chú theo khung của B2U03L4: Einleitung (In meinem Vortrag geht es um …), hai phương án (KI als Hilfe für Lehrkräfte / KI als Lernprogramm für Schüler), ví dụ ở Việt Nam, ưu nhược điểm (Datenschutz, Abschreiben), ý kiến riêng và Fazit. Đừng đưa số liệu bạn không chắc chắn vào bài nói; dùng cách nói thận trọng như dürfte, könnte, vielleicht."
+  - type: example
+    target: "Der Text handelt von den Chancen und Risiken der künstlichen Intelligenz in der Schule. Die Autorin vertritt die These, dass KI Lehrkräfte unterstützen, aber nicht ersetzen kann. Zusammenfassend lässt sich sagen, dass der Einsatz von KI gut geplant werden muss."
+    target_lang: de
+    translation:
+      vi: "Văn bản nói về cơ hội và rủi ro của trí tuệ nhân tạo trong trường học. Tác giả (nữ) bảo vệ luận điểm rằng AI có thể hỗ trợ nhưng không thể thay thế giáo viên. Tóm lại có thể nói rằng việc sử dụng AI cần được lên kế hoạch kỹ."
+    note:
+      vi: "Khung tóm tắt: handeln von + Dativ (chủ đề) – die These vertreten (luận điểm) – Zusammenfassend lässt sich sagen (kết luận)."
+  - type: example
+    target: Ein Programm, dessen Aufgaben sich an das Niveau der Lernenden anpassen, könnte schwächere Schüler gezielt fördern.
+    target_lang: de
+    translation:
+      vi: Một chương trình mà bài tập của nó tự điều chỉnh theo trình độ người học có thể hỗ trợ có mục tiêu cho học sinh yếu hơn.
+    note:
+      vi: "das Programm → dessen; könnte = có thể (phỏng đoán thận trọng)."
+  - type: example
+    target: Bis 2030 dürften viele Schulen digitale Lernprogramme eingeführt haben.
+    target_lang: de
+    translation:
+      vi: Đến năm 2030 chắc là nhiều trường học đã đưa vào các chương trình học kỹ thuật số.
+    note:
+      vi: "dürften + Partizip II + haben: dự báo thận trọng về việc sẽ xong trước một mốc."
+  - type: common_mistake
+    wrong: Der Text handelt über künstliche Intelligenz.
+    right: Der Text handelt von künstlicher Intelligenz.
+    target_lang: de
+    note:
+      vi: "handeln von + Dativ (von künstlicher Intelligenz – không mạo từ, Dativ giống cái: -er)."
+  - type: common_mistake
+    wrong: Ich finde, dass der Text sehr gut ist, und ich benutze KI jeden Tag.
+    right: Die Autorin vertritt die These, dass KI Lehrkräfte unterstützen kann.
+    target_lang: de
+    note:
+      vi: "Bản tóm tắt chỉ nêu nội dung của văn bản, không đưa ý kiến hay trải nghiệm của bạn vào."
+  - type: summary
+    points:
+      - vi: "Chọn câu điền: kiểm tra từ nối, đại từ và ý của câu trước lẫn câu sau."
+      - vi: "Tóm tắt: Der Text handelt von … – Die Autorin vertritt die These, dass … – Zusammenfassend lässt sich sagen, dass …"
+      - vi: "Tóm tắt viết ở Präsens, bằng lời của mình, không có ý kiến riêng."
+      - vi: "Thuyết trình: Einleitung – hai phương án – ví dụ Việt Nam – ưu nhược điểm – ý kiến – Fazit."
+      - vi: "Ngữ pháp unit: es wird geforscht; musste getestet werden; Futur II; muss/dürfte/könnte; dessen/deren; tiền tố ent-/ver-/zer-/miss-/er-/be-."
+exercises:
+  # ---------------- recognition: đọc (chọn câu điền) ----------------
+  - key: de:exercise:b2u03l5-mcq-luecke-1
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-kuenstliche-intelligenz
+    prompt:
+      stem: "Lernen mit KI (1): Seit einigen Jahren wird an Schulen viel über künstliche Intelligenz diskutiert. [LÜCKE] Befürworter betonen, dass Programme, deren Aufgaben sich an das Niveau der Lernenden anpassen, den Unterricht individueller machen könnten. — Welcher Satz passt in die Lücke?"
+      stem_lang: de
+      options:
+        - { id: s1, text: "Dabei gehen die Meinungen weit auseinander.", lang: de }
+        - { id: s2, text: "Lehrkräfte hätten dann mehr Zeit für Gespräche mit einzelnen Schülern.", lang: de }
+        - { id: s3, text: "Schulen sollten daher genau prüfen, wo diese Daten gespeichert werden.", lang: de }
+        - { id: s4, text: "Viele Eltern finden, dass Kinder zu viel Zeit am Handy verbringen.", lang: de }
+    answer:
+      correct_option_id: s1
+    explanation:
+      vi: "Câu trước nói người ta bàn luận nhiều, câu sau bắt đầu trình bày ý của phe ủng hộ (Befürworter). Câu \"ý kiến rất khác nhau\" nối hai ý đó. Các câu còn lại nói về thời gian của giáo viên, dữ liệu hoặc điện thoại – chưa khớp với chỗ này."
+    display_answer: Dabei gehen die Meinungen weit auseinander.
+
+  - key: de:exercise:b2u03l5-mcq-luecke-2
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-relativ-genitiv
+    prompt:
+      stem: "Lernen mit KI (2): Schwächere Schülerinnen und Schüler könnten so gezielt gefördert werden. [LÜCKE] Kritiker weisen dagegen auf Risiken hin: Wer seine Hausaufgaben von einem Programm schreiben lässt, lernt selbst wenig. — Welcher Satz passt in die Lücke?"
+      stem_lang: de
+      options:
+        - { id: s1, text: "Dabei gehen die Meinungen weit auseinander.", lang: de }
+        - { id: s2, text: "Lehrkräfte hätten dann mehr Zeit für Gespräche mit einzelnen Schülern.", lang: de }
+        - { id: s3, text: "Schulen sollten daher genau prüfen, wo diese Daten gespeichert werden.", lang: de }
+        - { id: s4, text: "Viele Eltern finden, dass Kinder zu viel Zeit am Handy verbringen.", lang: de }
+    answer:
+      correct_option_id: s2
+    explanation:
+      vi: "Chỗ trống vẫn thuộc phần ưu điểm (trước câu \"Kritiker … dagegen\"): thêm một lợi ích nữa – giáo viên có thêm thời gian cho từng học sinh. dann (khi đó) nối với ý chương trình hỗ trợ học sinh yếu ở câu trước."
+    display_answer: Lehrkräfte hätten dann mehr Zeit für Gespräche mit einzelnen Schülern.
+
+  - key: de:exercise:b2u03l5-mcq-luecke-3
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-datenschutz
+    prompt:
+      stem: "Lernen mit KI (3): Außerdem müssen die persönlichen Daten der Kinder geschützt werden. [LÜCKE] Viele Fachleute meinen deshalb: KI wird Lehrkräfte nicht ersetzen, aber sie kann sie unterstützen. — Welcher Satz passt in die Lücke?"
+      stem_lang: de
+      options:
+        - { id: s1, text: "Dabei gehen die Meinungen weit auseinander.", lang: de }
+        - { id: s2, text: "Lehrkräfte hätten dann mehr Zeit für Gespräche mit einzelnen Schülern.", lang: de }
+        - { id: s3, text: "Schulen sollten daher genau prüfen, wo diese Daten gespeichert werden.", lang: de }
+        - { id: s4, text: "Viele Eltern finden, dass Kinder zu viel Zeit am Handy verbringen.", lang: de }
+    answer:
+      correct_option_id: s3
+    explanation:
+      vi: "diese Daten trỏ về die persönlichen Daten der Kinder ở câu trước; daher (vì vậy) nối với yêu cầu bảo vệ dữ liệu. Câu về phụ huynh và điện thoại không liên quan đến dữ liệu."
+    display_answer: Schulen sollten daher genau prüfen, wo diese Daten gespeichert werden.
+
+  - key: de:exercise:b2u03l5-mcq-richtig-falsch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-ersetzen
+    prompt:
+      stem: "Lernen mit KI (3): Außerdem müssen die persönlichen Daten der Kinder geschützt werden. Schulen sollten daher genau prüfen, wo diese Daten gespeichert werden. Viele Fachleute meinen deshalb: KI wird Lehrkräfte nicht ersetzen, aber sie kann sie unterstützen. — Richtig oder falsch? Nach Meinung vieler Fachleute werden Lehrkräfte bald nicht mehr gebraucht."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Văn bản viết KI wird Lehrkräfte nicht ersetzen – AI sẽ không thay thế giáo viên, chỉ hỗ trợ họ. Vậy câu \"giáo viên sắp không còn cần thiết\" là sai."
+    display_answer: Falsch
+
+  - key: de:exercise:b2u03l5-listen-fazit
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u03-fazit
+    prompt:
+      audio_asset_id: null
+      fallback_text: Abschließend lässt sich sagen, dass künstliche Intelligenz im Unterricht sinnvoll sein kann, aber nur, wenn die Lehrkräfte gut darauf vorbereitet werden.
+      options:
+        - { id: f1, text: "AI có thể hữu ích trong lớp học, nhưng chỉ khi giáo viên được chuẩn bị tốt.", lang: vi }
+        - { id: f2, text: "AI luôn hữu ích trong lớp học, kể cả khi giáo viên chưa được chuẩn bị.", lang: vi }
+        - { id: f3, text: "AI không hữu ích trong lớp học vì giáo viên chưa được chuẩn bị.", lang: vi }
+        - { id: f4, text: "Giáo viên nên chuẩn bị bài giảng bằng AI.", lang: vi }
+    answer:
+      correct_option_id: f1
+    explanation:
+      vi: "sinnvoll sein kann = có thể hữu ích; aber nur, wenn … = nhưng chỉ khi …; gut darauf vorbereitet werden = được chuẩn bị tốt cho việc đó."
+    display_answer: AI có thể hữu ích trong lớp học, nhưng chỉ khi giáo viên được chuẩn bị tốt.
+
+  - key: de:exercise:b2u03l5-listen-ueberprueft
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u03-g-passiv-modal-vergangenheit
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Ergebnisse der Studie mussten zweimal überprüft werden, bevor sie veröffentlicht werden konnten.
+      options:
+        - { id: u1, text: "Kết quả nghiên cứu đã phải được kiểm tra hai lần rồi mới có thể được công bố.", lang: vi }
+        - { id: u2, text: "Kết quả nghiên cứu đã được công bố hai lần.", lang: vi }
+        - { id: u3, text: "Kết quả nghiên cứu lẽ ra phải được kiểm tra hai lần.", lang: vi }
+        - { id: u4, text: "Kết quả nghiên cứu được kiểm tra sau khi công bố.", lang: vi }
+    answer:
+      correct_option_id: u1
+    explanation:
+      vi: "mussten … überprüft werden = đã phải được kiểm tra (bị động + modal, Präteritum); bevor = trước khi; veröffentlicht werden konnten = có thể được công bố. \"Lẽ ra\" sẽ là hätten … müssen."
+    display_answer: Kết quả nghiên cứu đã phải được kiểm tra hai lần rồi mới có thể được công bố.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u03l5-fill-zusammenfassung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-these
+    prompt:
+      template: "Der Text {{b1}} (handeln) von den Chancen und Risiken der KI in der Schule. Die Autorin {{b2}} (vertreten) die These, dass KI Lehrkräfte unterstützen, aber nicht ersetzen kann. Zusammenfassend {{b3}} (lassen) sich sagen, dass der Einsatz von KI gut geplant werden muss."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [handelt]
+        b2: [vertritt]
+        b3: [lässt]
+    known_wrong:
+      - answer: vertretet
+        feedback_vi: vertreten đổi nguyên âm e → i ở ngôi thứ ba – sie vertritt.
+        error_tag: verb_form
+      - answer: lasst
+        feedback_vi: lassen có biến âm ở ngôi thứ ba số ít – es lässt.
+        error_tag: verb_form
+    explanation:
+      vi: "Tóm tắt viết ở Präsens: der Text handelt von …; vertreten như treten: sie vertritt; lassen: es lässt (có biến âm). Zusammenfassend lässt sich sagen là cụm cố định để kết luận."
+    display_answer: "Der Text handelt von den Chancen und Risiken der KI in der Schule. Die Autorin vertritt die These, dass KI Lehrkräfte unterstützen, aber nicht ersetzen kann. Zusammenfassend lässt sich sagen, dass der Einsatz von KI gut geplant werden muss."
+
+  - key: de:exercise:b2u03l5-tr-pruefung-schwer
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-modalverben-subjektiv
+    prompt:
+      source_text: "Chắc hẳn bài kiểm tra đã rất khó. (dùng müssen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Test muss sehr schwer gewesen sein.
+        - Der Test muss sehr schwierig gewesen sein.
+        - Die Prüfung muss sehr schwer gewesen sein.
+        - Die Prüfung muss sehr schwierig gewesen sein.
+        - Die Klausur muss sehr schwer gewesen sein.
+        - Die Klausur muss sehr schwierig gewesen sein.
+    known_wrong:
+      - answer: Der Test muss sehr schwer gewesen haben.
+        feedback_vi: sein có Perfekt với sein (ist gewesen) – gewesen sein.
+        error_tag: aux_verb
+      - answer: Der Test muss sehr schwer sein.
+        feedback_vi: "Câu nói về quá khứ (\"đã rất khó\"): cần gewesen sein ở cuối câu."
+        error_tag: meaning
+    explanation:
+      vi: "Phỏng đoán chắc chắn về quá khứ: muss + Partizip II + haben/sein; sein → gewesen sein. der Test, die Prüfung, die Klausur đều là \"bài kiểm tra\"."
+    display_answer: Die Prüfung muss sehr schwer gewesen sein.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u03l5-wb-diskutiert
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-unpersoenliches-passiv
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ở trường chúng tôi, người ta bàn luận về AI đã nhiều năm nay.\""
+      tokens:
+        - { id: d-diskutiert, text: diskutiert }
+        - { id: d-schule, text: An unserer Schule }
+        - { id: d-ueber, text: über }
+        - { id: d-wird, text: wird }
+        - { id: d-ki, text: KI }
+        - { id: d-seit, text: seit Jahren }
+    answer:
+      orders:
+        - [d-schule, d-wird, d-seit, d-ueber, d-ki, d-diskutiert]
+    explanation:
+      vi: "Bị động không chủ ngữ: trạng ngữ An unserer Schule đứng đầu nên không cần es; wird ở vị trí 2; thời gian (seit Jahren) đứng trước cụm giới từ über KI; diskutiert ở cuối câu."
+    display_answer: An unserer Schule wird seit Jahren über KI diskutiert.
+
+  - key: de:exercise:b2u03l5-wb-programm-dessen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-g-relativ-genitiv
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Một chương trình mà bài tập của nó tự điều chỉnh có thể hỗ trợ học sinh yếu hơn.\""
+      tokens:
+        - { id: p-anpassen, text: anpassen }
+        - { id: p-programm, text: Ein Programm }
+        - { id: p-komma1, text: "," }
+        - { id: p-kann, text: kann }
+        - { id: p-dessen, text: dessen }
+        - { id: p-sich, text: sich }
+        - { id: p-aufgaben, text: Aufgaben }
+        - { id: p-komma2, text: "," }
+        - { id: p-schueler, text: schwächere Schüler }
+        - { id: p-foerdern, text: fördern }
+    answer:
+      orders:
+        - [p-programm, p-komma1, p-dessen, p-aufgaben, p-sich, p-anpassen, p-komma2, p-kann, p-schueler, p-foerdern]
+        - [p-programm, p-komma2, p-dessen, p-aufgaben, p-sich, p-anpassen, p-komma1, p-kann, p-schueler, p-foerdern]
+    explanation:
+      vi: "das Programm → dessen, Aufgaben đứng ngay sau, không mạo từ. Mệnh đề quan hệ nằm giữa hai dấu phẩy, động từ anpassen đứng cuối; sau đó câu chính tiếp tục với kann ở vị trí 2 và fördern ở cuối."
+    display_answer: Ein Programm, dessen Aufgaben sich anpassen, kann schwächere Schüler fördern.
+
+  - key: de:exercise:b2u03l5-tr-zug-vi
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u03-g-futur-ii
+    prompt:
+      source_text: Er wird den Termin wohl vergessen haben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chắc là anh ấy đã quên cuộc hẹn.
+        - Chắc anh ấy đã quên cuộc hẹn.
+        - Chắc là anh ấy quên cuộc hẹn rồi.
+        - Chắc anh ấy quên cuộc hẹn rồi.
+        - Có lẽ anh ấy đã quên cuộc hẹn.
+        - Có lẽ anh ấy quên cuộc hẹn rồi.
+        - Chắc là anh ấy đã quên lịch hẹn.
+        - Chắc anh ấy đã quên lịch hẹn.
+        - Có lẽ anh ấy đã quên lịch hẹn.
+        - Chắc là anh ấy quên lịch hẹn rồi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh ấy sẽ quên cuộc hẹn.
+        feedback_vi: "Futur II + wohl ở đây là phỏng đoán việc đã xảy ra (\"chắc là đã …\"), không phải tương lai."
+        error_tag: meaning
+      - answer: Anh ấy sẽ đã quên cuộc hẹn.
+        feedback_vi: "Trong câu này Futur II mang nghĩa phỏng đoán quá khứ: \"chắc là anh ấy đã quên\"."
+        error_tag: meaning
+    explanation:
+      vi: "werden + wohl + Partizip II + haben = phỏng đoán về việc đã xảy ra: chắc là anh ấy đã quên cuộc hẹn."
+    display_answer: Chắc là anh ấy đã quên cuộc hẹn.

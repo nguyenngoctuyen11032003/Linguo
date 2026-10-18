@@ -1,0 +1,1805 @@
+# Học liệu unit B2U03 "Khoa học và công nghệ" (Wissenschaft und Technik), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U03L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# Nội dung khoa học chỉ dùng nhận định chung, đã được công nhận rộng rãi; các nghiên cứu, viện và nhân vật trong ví dụ là hư cấu.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Nghiên cứu – bị động không chủ ngữ, bị động có modal ở quá khứ =================
+  - key: de:item:b2u03-g-unpersoenliches-passiv
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Unpersönliches Passiv: Es wird viel geforscht. Hier wird nicht geraucht."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Động từ không có tân ngữ Akkusativ (forschen, arbeiten, rauchen, diskutieren über) vẫn dùng được ở bị động để nói \"người ta làm việc đó\", câu không có chủ ngữ và werden luôn ở ngôi thứ ba số ít (wird, wurde). Nếu không có gì khác đứng ở vị trí 1, ta đặt es vào đó: Es wird viel geforscht. Khi trạng ngữ hay thành phần khác đứng ở vị trí 1, và trong câu phụ, es biến mất: Hier wird nicht geraucht; …, dass viel geforscht wird."
+      examples:
+        - target: In diesem Labor wird auch am Wochenende gearbeitet.
+          translation:
+            vi: Ở phòng thí nghiệm này người ta làm việc cả vào cuối tuần.
+        - target: Es wird zurzeit viel über dieses Thema diskutiert.
+          translation:
+            vi: Dạo này người ta bàn luận nhiều về chủ đề này.
+        - target: Im ganzen Gebäude wird nicht geraucht.
+          translation:
+            vi: Trong toàn bộ tòa nhà không được hút thuốc.
+      confusion:
+        vi: "es ở đây chỉ giữ chỗ vị trí 1, không phải chủ ngữ thật: nói Hier wird nicht geraucht, không nói Hier es wird … hay Hier wird es nicht geraucht. Động từ không đổi sang số nhiều dù nói về nhiều người: Es wird viel gelacht (không phải Es werden …). Tiếng Việt cũng có câu không chủ ngữ (\"Ở đây cấm hút thuốc\"), nhưng tiếng Đức vẫn cần một thành phần ở vị trí 1."
+
+  - key: de:item:b2u03-g-passiv-modal-vergangenheit
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Passiv mit Modalverb in der Vergangenheit: Das Medikament musste getestet werden. · Das Medikament hat getestet werden müssen."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Ở Präteritum, modal chia ở vị trí 2 (musste, konnte, sollte, durfte), cuối câu là Partizip II + werden: Das Medikament musste lange getestet werden. Ở Perfekt, trợ động từ là haben (vì động từ chia là modal) và cuối câu có ba động từ theo thứ tự Partizip II + werden + modal nguyên thể: Das Medikament hat lange getestet werden müssen. Trong câu phụ, hat đứng trước cả cụm ba động từ (…, dass es hat getestet werden müssen); dạng này nặng nề, nên khi viết người Đức thường chọn Präteritum."
+      examples:
+        - target: Die Studie musste wiederholt werden, weil ein Messgerät defekt war.
+          translation:
+            vi: Nghiên cứu phải được làm lại vì một thiết bị đo bị hỏng.
+        - target: Die Ergebnisse konnten leider nicht bestätigt werden.
+          translation:
+            vi: Đáng tiếc là các kết quả đã không thể được xác nhận.
+        - target: Die Daten haben zweimal ausgewertet werden müssen.
+          translation:
+            vi: Dữ liệu đã phải được phân tích hai lần.
+      confusion:
+        vi: "Đừng bỏ werden: Das musste getestet werden, không phải Das musste getestet. Perfekt dùng haben, không dùng sein: hat … getestet werden müssen, không phải ist … getestet worden. Das hätte getestet werden müssen (lẽ ra phải được kiểm tra) là Konjunktiv II quá khứ, bạn chỉ cần nhận ra; dạng này sẽ học kỹ ở B2U06."
+
+  - key: de:item:b2u03-forschung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Forschung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: (công việc, ngành) nghiên cứu khoa học
+      examples:
+        - target: Meine Schwester arbeitet in der Forschung.
+          translation:
+            vi: Chị gái tôi làm việc trong ngành nghiên cứu.
+        - target: Für gute Forschung braucht man viel Zeit und Geduld.
+          translation:
+            vi: Muốn nghiên cứu tốt thì cần nhiều thời gian và sự kiên nhẫn.
+      confusion:
+        vi: "Forschung là hoạt động hay lĩnh vực nghiên cứu nói chung; một công trình cụ thể là eine Studie. Nói nghiên cứu về chủ đề gì: Forschung zu + Dativ (die Forschung zum Klimawandel)."
+
+  - key: de:item:b2u03-forschen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: forschen
+      pos: động từ
+    back:
+      meaning:
+        vi: nghiên cứu, làm nghiên cứu
+      examples:
+        - target: Sie forscht seit Jahren an einem neuen Impfstoff.
+          translation:
+            vi: Bà ấy nghiên cứu một loại vắc-xin mới đã nhiều năm nay.
+        - target: An unserem Institut wird viel zum Thema Schlaf geforscht.
+          translation:
+            vi: Ở viện của chúng tôi người ta nghiên cứu nhiều về chủ đề giấc ngủ.
+      confusion:
+        vi: "forschen không có tân ngữ Akkusativ: nói forschen an + Dativ (đang làm về cái gì) hoặc forschen zu + Dativ (về chủ đề). Vì vậy bị động của nó là bị động không chủ ngữ: Es wird geforscht. Muốn có tân ngữ trực tiếp, dùng erforschen (etwas erforschen)."
+
+  - key: de:item:b2u03-wissenschaftler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Wissenschaftler, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà khoa học
+      examples:
+        - target: Viele Wissenschaftler arbeiten heute in internationalen Teams.
+          translation:
+            vi: Ngày nay nhiều nhà khoa học làm việc trong các nhóm quốc tế.
+        - target: Die Wissenschaftlerin erklärt ihre Ergebnisse in einfachen Worten.
+          translation:
+            vi: Nữ nhà khoa học giải thích kết quả của mình bằng lời lẽ đơn giản.
+      confusion:
+        vi: "Dạng nữ: die Wissenschaftlerin, -nen. Wissenschaftler là người làm khoa học nói chung; der Forscher nhấn mạnh người đang trực tiếp làm nghiên cứu."
+
+  - key: de:item:b2u03-studie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Studie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: công trình nghiên cứu, cuộc nghiên cứu (khảo sát)
+      examples:
+        - target: Eine neue Studie untersucht, wie Kinder Sprachen lernen.
+          translation:
+            vi: Một nghiên cứu mới tìm hiểu xem trẻ em học ngôn ngữ như thế nào.
+        - target: Laut dieser Studie schlafen viele Studierende zu wenig.
+          translation:
+            vi: Theo nghiên cứu này, nhiều sinh viên ngủ quá ít.
+      confusion:
+        vi: "die Studie (một công trình nghiên cứu) khác das Studium (việc học đại học). laut einer Studie = theo một nghiên cứu; số nhiều die Studien đọc là Stu-di-en."
+
+  - key: de:item:b2u03-experiment
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Experiment, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thí nghiệm
+      examples:
+        - target: Im Experiment wurden zwei Gruppen miteinander verglichen.
+          translation:
+            vi: Trong thí nghiệm, hai nhóm đã được so sánh với nhau.
+        - target: Für das Experiment braucht man ein gut ausgestattetes Labor.
+          translation:
+            vi: Để làm thí nghiệm này cần một phòng thí nghiệm được trang bị tốt.
+      confusion:
+        vi: "ein Experiment machen/durchführen = làm/tiến hành thí nghiệm. der Versuch cũng có nghĩa \"thí nghiệm\" nhưng còn có nghĩa \"lần thử, sự cố gắng\"."
+
+  - key: de:item:b2u03-ergebnis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ergebnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: kết quả
+      examples:
+        - target: Die Ergebnisse der Studie werden im nächsten Monat veröffentlicht.
+          translation:
+            vi: Kết quả của nghiên cứu sẽ được công bố vào tháng sau.
+        - target: Das Ergebnis hat alle überrascht.
+          translation:
+            vi: Kết quả làm mọi người ngạc nhiên.
+      confusion:
+        vi: "Danh từ đuôi -nis nhân đôi s ở số nhiều: das Ergebnis → die Ergebnisse (như das Erlebnis → die Erlebnisse). zu einem Ergebnis kommen = đi đến một kết quả."
+
+  - key: de:item:b2u03-beweisen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: beweisen, bewies, hat bewiesen
+      pos: động từ
+    back:
+      meaning:
+        vi: chứng minh
+      examples:
+        - target: Bisher konnte niemand beweisen, dass diese Annahme stimmt.
+          translation:
+            vi: Cho đến nay chưa ai chứng minh được rằng giả định này đúng.
+        - target: Mit dem Experiment wollte sie ihre These beweisen.
+          translation:
+            vi: Bằng thí nghiệm đó, bà ấy muốn chứng minh luận điểm của mình.
+      confusion:
+        vi: "be- là tiền tố không tách, nên Partizip II là bewiesen (không có ge-). Danh từ: der Beweis, -e (bằng chứng)."
+
+  - key: de:item:b2u03-erkenntnis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erkenntnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiểu biết mới, phát hiện (về mặt tri thức)
+      examples:
+        - target: Die Studie bringt neue Erkenntnisse über den Schlaf von Kindern.
+          translation:
+            vi: Nghiên cứu mang lại những hiểu biết mới về giấc ngủ của trẻ em.
+        - target: Aus diesen Erkenntnissen kann man praktische Tipps ableiten.
+          translation:
+            vi: Từ những hiểu biết này có thể rút ra các lời khuyên thực tế.
+      confusion:
+        vi: "Erkenntnis là điều mới hiểu ra; das Ergebnis là con số hay kết quả đo được. Hay dùng ở số nhiều: neue Erkenntnisse gewinnen (thu được hiểu biết mới); số nhiều nhân đôi s: Erkenntnisse."
+
+  - key: de:item:b2u03-labor
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Labor, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng thí nghiệm
+      examples:
+        - target: Die Proben werden im Labor untersucht.
+          translation:
+            vi: Các mẫu được xét nghiệm trong phòng thí nghiệm.
+        - target: Im Labor muss man eine Schutzbrille tragen.
+          translation:
+            vi: Trong phòng thí nghiệm phải đeo kính bảo hộ.
+      confusion:
+        vi: "Trọng âm rơi vào âm tiết sau: La-BOR. Số nhiều thường là die Labore, cũng gặp die Labors."
+
+  # Zusatzwortschatz (B2U03L1)
+  - key: de:item:b2u03-forscher
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Forscher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà nghiên cứu
+      examples:
+        - target: Die Forscher haben drei Jahre an dem Projekt gearbeitet.
+          translation:
+            vi: Các nhà nghiên cứu đã làm dự án này ba năm.
+        - target: Eine junge Forscherin hat den Fehler in den Daten gefunden.
+          translation:
+            vi: Một nữ nhà nghiên cứu trẻ đã tìm ra lỗi trong dữ liệu.
+      confusion:
+        vi: "Dạng nữ: die Forscherin, -nen. Cùng gốc với forschen và die Forschung."
+
+  - key: de:item:b2u03-wissenschaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wissenschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoa học; ngành khoa học
+      examples:
+        - target: Die Wissenschaft kann nicht alle Fragen beantworten.
+          translation:
+            vi: Khoa học không thể trả lời mọi câu hỏi.
+        - target: Physik und Chemie gehören zu den Naturwissenschaften.
+          translation:
+            vi: Vật lý và hóa học thuộc các ngành khoa học tự nhiên.
+      confusion:
+        vi: "Số ít thường chỉ khoa học nói chung; số nhiều chỉ các ngành: die Naturwissenschaften (khoa học tự nhiên), die Sozialwissenschaften (khoa học xã hội)."
+
+  - key: de:item:b2u03-wissenschaftlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: wissenschaftlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: (thuộc về) khoa học, có tính khoa học
+      examples:
+        - target: Für diese Behauptung gibt es keine wissenschaftlichen Beweise.
+          translation:
+            vi: Không có bằng chứng khoa học nào cho khẳng định này.
+        - target: Sie hat einen wissenschaftlichen Artikel geschrieben.
+          translation:
+            vi: Cô ấy đã viết một bài báo khoa học.
+      confusion:
+        vi: "Là tính từ nên viết thường và có đuôi: ein wissenschaftlicher Artikel, wissenschaftliche Methoden. Không nhầm với danh từ die Wissenschaft."
+
+  - key: de:item:b2u03-hypothese
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hypothese, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: giả thuyết (điều cần kiểm chứng)
+      examples:
+        - target: Zuerst stellt man eine Hypothese auf, dann wird sie im Experiment überprüft.
+          translation:
+            vi: Trước hết người ta đặt ra một giả thuyết, sau đó giả thuyết được kiểm tra bằng thí nghiệm.
+        - target: Die Hypothese konnte nicht bestätigt werden.
+          translation:
+            vi: Giả thuyết đã không thể được xác nhận.
+      confusion:
+        vi: "eine Hypothese aufstellen = đặt ra giả thuyết. Hypothese là điều chưa được kiểm chứng; die Theorie là hệ thống giải thích đã được xây dựng và kiểm tra nhiều hơn."
+
+  - key: de:item:b2u03-versuch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Versuch, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thí nghiệm; lần thử, sự cố gắng
+      examples:
+        - target: Der Versuch wurde mit hundert Personen durchgeführt.
+          translation:
+            vi: Thí nghiệm được tiến hành với một trăm người.
+        - target: Erst beim dritten Versuch hat es geklappt.
+          translation:
+            vi: Đến lần thử thứ ba mới thành công.
+      confusion:
+        vi: "Cùng gốc với versuchen (thử, cố gắng). einen Versuch durchführen = tiến hành thí nghiệm; beim ersten Versuch = ngay lần thử đầu."
+
+  - key: de:item:b2u03-messen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: messen, misst, maß, hat gemessen
+      pos: động từ
+    back:
+      meaning:
+        vi: đo
+      examples:
+        - target: Die Forscher messen jeden Tag die Temperatur des Wassers.
+          translation:
+            vi: Các nhà nghiên cứu đo nhiệt độ nước mỗi ngày.
+        - target: Wie hast du das gemessen?
+          translation:
+            vi: Bạn đã đo cái đó bằng cách nào?
+      confusion:
+        vi: "Đổi nguyên âm e → i ở du/er: du misst, er misst. Präteritum maß (nguyên âm dài, viết ß)."
+
+  - key: de:item:b2u03-messung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Messung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phép đo, việc đo
+      examples:
+        - target: Die Messungen wurden dreimal wiederholt.
+          translation:
+            vi: Các phép đo đã được lặp lại ba lần.
+        - target: Bei der ersten Messung ist ein Fehler passiert.
+          translation:
+            vi: Ở lần đo đầu tiên đã xảy ra một lỗi.
+      confusion:
+        vi: "Danh từ từ động từ + -ung luôn giống cái: messen → die Messung. Thiết bị đo là das Messgerät, -e."
+
+  - key: de:item:b2u03-beobachten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: beobachten
+      pos: động từ
+    back:
+      meaning:
+        vi: quan sát, theo dõi
+      examples:
+        - target: Die Biologin beobachtet die Vögel seit drei Jahren.
+          translation:
+            vi: Nhà sinh vật học (nữ) quan sát đàn chim đã ba năm nay.
+        - target: Haben Sie bei dem Versuch etwas Ungewöhnliches beobachtet?
+          translation:
+            vi: Anh/chị có quan sát thấy điều gì bất thường trong thí nghiệm không?
+      confusion:
+        vi: "be- không tách: Partizip II beobachtet (không có ge-). Danh từ: die Beobachtung, -en."
+
+  - key: de:item:b2u03-auswerten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "auswerten (wertet aus, hat ausgewertet)"
+      pos: động từ
+    back:
+      meaning:
+        vi: phân tích, đánh giá (dữ liệu, kết quả)
+      examples:
+        - target: Im Moment werten wir die Daten aus.
+          translation:
+            vi: Hiện giờ chúng tôi đang phân tích dữ liệu.
+        - target: Die Fragebögen wurden noch nicht ausgewertet.
+          translation:
+            vi: Các bảng câu hỏi vẫn chưa được phân tích.
+      confusion:
+        vi: "Động từ tách: wertet … aus, Partizip ausgewertet. Danh từ: die Auswertung, -en (việc phân tích dữ liệu)."
+
+  - key: de:item:b2u03-fachzeitschrift
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Fachzeitschrift, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tạp chí chuyên ngành
+      examples:
+        - target: Die Studie ist in einer medizinischen Fachzeitschrift erschienen.
+          translation:
+            vi: Nghiên cứu đã được đăng trên một tạp chí chuyên ngành y học.
+        - target: Er liest jeden Monat zwei Fachzeitschriften.
+          translation:
+            vi: Mỗi tháng anh ấy đọc hai tạp chí chuyên ngành.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Zeitschrift → die Fachzeitschrift. erscheinen (ist erschienen) = được xuất bản, được đăng."
+
+  - key: de:item:b2u03-verfahren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Verfahren, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương pháp, quy trình (kỹ thuật)
+      examples:
+        - target: Mit diesem Verfahren kann man Wasser billiger reinigen.
+          translation:
+            vi: Với quy trình này người ta có thể làm sạch nước rẻ hơn.
+        - target: Das neue Verfahren muss noch getestet werden.
+          translation:
+            vi: Quy trình mới còn phải được thử nghiệm.
+      confusion:
+        vi: "Danh từ hóa từ động từ nên giống trung, số nhiều không đổi: das Verfahren, die Verfahren. Khác die Methode (cách làm nói chung); Verfahren thường chỉ quy trình kỹ thuật hay thủ tục hành chính."
+
+  # ================= Bài 2: Công nghệ tương lai – Futur II, modal phỏng đoán =================
+  - key: de:item:b2u03-g-futur-ii
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Futur II: werden + Partizip II + haben/sein (Bis Freitag werde ich den Bericht geschrieben haben.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Futur II gồm werden chia ở vị trí 2, cuối câu là Partizip II + haben hoặc sein (chọn như ở Perfekt của động từ đó): Bis Freitag werde ich den Bericht geschrieben haben. Nghĩa thứ nhất: một việc sẽ xong trước một mốc trong tương lai, thường có bis …. Nghĩa thứ hai, rất hay gặp khi nói: phỏng đoán về việc đã xảy ra, thường kèm wohl: Er wird den Zug verpasst haben = chắc là anh ấy đã lỡ tàu."
+      examples:
+        - target: Bis Ende des Jahres werden die Forscher die Studie abgeschlossen haben.
+          translation:
+            vi: Đến cuối năm các nhà nghiên cứu sẽ hoàn thành xong nghiên cứu.
+        - target: Bis wir ankommen, wird der Vortrag schon angefangen haben.
+          translation:
+            vi: Đến lúc chúng ta tới nơi thì bài thuyết trình chắc đã bắt đầu rồi.
+        - target: Paul ist noch nicht da. Er wird wohl den Bus verpasst haben.
+          translation:
+            vi: Paul vẫn chưa đến. Chắc là cậu ấy đã lỡ chuyến xe buýt.
+      confusion:
+        vi: "haben hay sein theo Perfekt: Er wird angekommen sein (vì ist angekommen), Er wird gegessen haben (vì hat gegessen). Khi nói về việc sẽ xong trong tương lai, người Đức thường dùng Perfekt + mốc thời gian: Bis morgen habe ich das erledigt. Trong câu phụ, werden đứng cuối cùng: …, dass er den Zug verpasst haben wird."
+
+  - key: de:item:b2u03-g-modalverben-subjektiv
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Modalverben der Vermutung: muss > dürfte > kann/könnte · kann nicht (Das dürfte stimmen.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Modal còn dùng để phỏng đoán, theo mức độ chắc chắn giảm dần: muss (gần như chắc chắn, có căn cứ) > dürfte (khá chắc, \"chắc là\") > kann/könnte (có thể, chưa chắc). kann nicht nghĩa là \"không thể nào\": Das kann nicht stimmen. Phỏng đoán về quá khứ dùng modal + Partizip II + haben/sein: Er muss krank gewesen sein, Sie dürfte den Termin vergessen haben."
+      examples:
+        - target: Im Labor brennt noch Licht. Frau Berg muss noch da sein.
+          translation:
+            vi: Trong phòng thí nghiệm vẫn còn sáng đèn. Chắc chắn bà Berg vẫn còn ở đó.
+        - target: Die Reparatur dürfte etwa zwei Stunden dauern.
+          translation:
+            vi: Việc sửa chữa chắc mất khoảng hai tiếng.
+        - target: Der Fehler könnte an der Software liegen.
+          translation:
+            vi: Lỗi có thể nằm ở phần mềm.
+        - target: Das kann nicht sein, ich habe die Messung dreimal wiederholt.
+          translation:
+            vi: Không thể nào như thế được, tôi đã lặp lại phép đo ba lần.
+      confusion:
+        vi: "Ở đây muss không phải \"bắt buộc\" mà là \"chắc chắn là\", dürfte không phải \"được phép\" mà là \"chắc là\"; ngữ cảnh quyết định: Du musst mehr schlafen (bắt buộc) ↔ Er muss krank sein (phỏng đoán). Phủ định của muss (phỏng đoán) là kann nicht, không phải muss nicht. soll và will cũng có cách dùng riêng (truyền lại lời người khác), không thuộc thang này."
+
+  - key: de:item:b2u03-kuenstliche-intelligenz
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die künstliche Intelligenz (KI)
+      pos: cụm từ
+    back:
+      meaning:
+        vi: trí tuệ nhân tạo (AI)
+      examples:
+        - target: Viele Menschen nutzen künstliche Intelligenz zum Übersetzen.
+          translation:
+            vi: Nhiều người dùng trí tuệ nhân tạo để dịch.
+        - target: Über die Chancen und Risiken der KI wird viel diskutiert.
+          translation:
+            vi: Người ta bàn luận nhiều về cơ hội và rủi ro của trí tuệ nhân tạo.
+      confusion:
+        vi: "künstlich là tính từ nên đổi đuôi: die künstliche Intelligenz, mit künstlicher Intelligenz (không mạo từ, Dativ). Tiếng Đức viết tắt là KI (đọc \"ka-i\"), không phải AI; KI là giống cái: die KI."
+
+  - key: de:item:b2u03-technologie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Technologie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: công nghệ
+      examples:
+        - target: Neue Technologien verändern die Arbeitswelt.
+          translation:
+            vi: Các công nghệ mới làm thay đổi thế giới việc làm.
+        - target: Die Firma setzt auf moderne Technologie.
+          translation:
+            vi: Công ty đặt cược vào công nghệ hiện đại.
+      confusion:
+        vi: "Trọng âm ở âm tiết cuối -gie; số nhiều Technologien đọc tách -gi-en. die Technik là kỹ thuật, thiết bị nói chung; die Technologie là công nghệ, phương pháp kỹ thuật cụ thể."
+
+  - key: de:item:b2u03-roboter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Roboter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: rô-bốt, người máy
+      examples:
+        - target: In vielen Fabriken arbeiten heute Roboter.
+          translation:
+            vi: Ngày nay rô-bốt làm việc trong nhiều nhà máy.
+        - target: Der Roboter kann schwere Teile heben.
+          translation:
+            vi: Rô-bốt này có thể nâng những bộ phận nặng.
+      confusion:
+        vi: "Danh từ đuôi -er giống đực, số nhiều không đổi: der Roboter, die Roboter (Dativ số nhiều: mit den Robotern)."
+
+  - key: de:item:b2u03-automatisieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: automatisieren
+      pos: động từ
+    back:
+      meaning:
+        vi: tự động hóa
+      examples:
+        - target: Viele einfache Arbeiten werden heute automatisiert.
+          translation:
+            vi: Ngày nay nhiều công việc đơn giản được tự động hóa.
+        - target: Die Firma hat ihre Produktion fast vollständig automatisiert.
+          translation:
+            vi: Công ty đã tự động hóa gần như toàn bộ quá trình sản xuất.
+      confusion:
+        vi: "Động từ đuôi -ieren không có ge- ở Partizip II: automatisiert. Danh từ: die Automatisierung (Sg.)."
+
+  - key: de:item:b2u03-digitalisierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Digitalisierung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: (quá trình) số hóa, chuyển đổi số
+      examples:
+        - target: Die Digitalisierung verändert auch die Schulen.
+          translation:
+            vi: Chuyển đổi số cũng làm thay đổi các trường học.
+        - target: Durch die Digitalisierung kann man viele Behördengänge online erledigen.
+          translation:
+            vi: Nhờ số hóa, người ta có thể làm nhiều thủ tục hành chính trực tuyến.
+      confusion:
+        vi: "Từ tính từ digital → động từ digitalisieren → danh từ die Digitalisierung (đuôi -ung luôn giống cái)."
+
+  - key: de:item:b2u03-innovation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Innovation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đổi mới, sáng kiến đổi mới
+      examples:
+        - target: Ohne Innovationen kann ein Unternehmen nicht lange erfolgreich sein.
+          translation:
+            vi: Không có đổi mới thì một doanh nghiệp không thể thành công lâu dài.
+        - target: Das Smartphone war eine wichtige Innovation.
+          translation:
+            vi: Điện thoại thông minh từng là một bước đổi mới quan trọng.
+      confusion:
+        vi: "Đuôi -tion luôn giống cái, trọng âm ở -on: die Innovation. Tính từ: innovativ (có tính đổi mới)."
+
+  - key: de:item:b2u03-ersetzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ersetzen
+      pos: động từ
+    back:
+      meaning:
+        vi: thay thế
+      examples:
+        - target: Können Maschinen Menschen in der Pflege ersetzen?
+          translation:
+            vi: Máy móc có thể thay thế con người trong ngành chăm sóc không?
+        - target: Das alte Verfahren wurde durch ein neues ersetzt.
+          translation:
+            vi: Quy trình cũ đã được thay bằng một quy trình mới.
+      confusion:
+        vi: "etwas durch etwas ersetzen = thay cái này bằng cái kia (durch + Akk). er- không tách: Partizip ersetzt, không có ge-."
+
+  - key: de:item:b2u03-risiko
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Risiko, Risiken
+      pos: danh từ
+    back:
+      meaning:
+        vi: rủi ro, nguy cơ
+      examples:
+        - target: Jede neue Technologie hat Chancen und Risiken.
+          translation:
+            vi: Mỗi công nghệ mới đều có cơ hội và rủi ro.
+        - target: Das Risiko ist mir zu groß.
+          translation:
+            vi: Rủi ro này quá lớn đối với tôi.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Risiken. ein Risiko eingehen = chấp nhận rủi ro; riskant = rủi ro, mạo hiểm (tính từ)."
+
+  - key: de:item:b2u03-erfindung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erfindung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phát minh, sáng chế
+      examples:
+        - target: Der Buchdruck war eine der wichtigsten Erfindungen der Geschichte.
+          translation:
+            vi: Nghề in sách là một trong những phát minh quan trọng nhất trong lịch sử.
+        - target: Ihre Erfindung soll Wasser sparen helfen.
+          translation:
+            vi: Phát minh của bà ấy nhằm giúp tiết kiệm nước.
+      confusion:
+        vi: "die Erfindung là cái mới được tạo ra; die Entdeckung là việc tìm ra cái đã có sẵn trong tự nhiên."
+
+  - key: de:item:b2u03-erfinden
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erfinden, erfand, hat erfunden
+      pos: động từ
+    back:
+      meaning:
+        vi: phát minh; bịa ra
+      examples:
+        - target: Wer hat das Telefon erfunden?
+          translation:
+            vi: Ai đã phát minh ra điện thoại?
+        - target: Er hat eine Ausrede erfunden.
+          translation:
+            vi: Anh ấy đã bịa ra một lời bào chữa.
+      confusion:
+        vi: "erfinden = tạo ra cái chưa từng có; entdecken = tìm ra cái đã có (eine Insel entdecken). er- không tách: Partizip erfunden."
+
+  # Zusatzwortschatz (B2U03L2)
+  - key: de:item:b2u03-entwicklung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Entwicklung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phát triển; việc phát triển (sản phẩm)
+      examples:
+        - target: Die Entwicklung eines neuen Medikaments dauert oft viele Jahre.
+          translation:
+            vi: Việc phát triển một loại thuốc mới thường kéo dài nhiều năm.
+        - target: Diese Entwicklung macht vielen Menschen Sorgen.
+          translation:
+            vi: Diễn biến này khiến nhiều người lo lắng.
+      confusion:
+        vi: "Danh từ của entwickeln (phát triển). Tùy ngữ cảnh dịch là \"sự phát triển\", \"việc phát triển\" hay \"diễn biến, xu hướng\"."
+
+  - key: de:item:b2u03-algorithmus
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Algorithmus, Algorithmen
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuật toán
+      examples:
+        - target: Ein Algorithmus ist eine genaue Folge von Rechenschritten.
+          translation:
+            vi: Thuật toán là một chuỗi các bước tính toán chính xác.
+        - target: Ein Algorithmus wählt aus, welche Videos man als Nächstes sieht.
+          translation:
+            vi: Một thuật toán chọn xem người dùng sẽ xem video nào tiếp theo.
+      confusion:
+        vi: "Số nhiều bất quy tắc: die Algorithmen. Viết với th: Algo-rith-mus."
+
+  - key: de:item:b2u03-vorhersagen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "vorhersagen (sagt vorher, hat vorhergesagt)"
+      pos: động từ
+    back:
+      meaning:
+        vi: dự báo, tiên đoán
+      examples:
+        - target: Niemand kann genau vorhersagen, wie sich die Technik entwickeln wird.
+          translation:
+            vi: Không ai có thể dự báo chính xác kỹ thuật sẽ phát triển thế nào.
+        - target: Das Wetter für morgen wurde falsch vorhergesagt.
+          translation:
+            vi: Thời tiết ngày mai đã bị dự báo sai.
+      confusion:
+        vi: "Động từ tách: sagt … vorher, Partizip vorhergesagt. Danh từ: die Vorhersage, -n (die Wettervorhersage = dự báo thời tiết)."
+
+  - key: de:item:b2u03-selbstfahrend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: selbstfahrend
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự lái (xe)
+      examples:
+        - target: In einigen Städten wurden schon selbstfahrende Busse getestet.
+          translation:
+            vi: Ở một số thành phố, xe buýt tự lái đã được thử nghiệm.
+        - target: Würdest du in ein selbstfahrendes Auto steigen?
+          translation:
+            vi: Bạn có dám lên một chiếc ô tô tự lái không?
+      confusion:
+        vi: "Là Partizip I dùng làm tính từ nên có đuôi như tính từ: ein selbstfahrendes Auto, selbstfahrende Busse."
+
+  - key: de:item:b2u03-datenschutz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Datenschutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: (việc) bảo vệ dữ liệu cá nhân
+      examples:
+        - target: Beim Thema KI spielt der Datenschutz eine große Rolle.
+          translation:
+            vi: Trong chủ đề trí tuệ nhân tạo, việc bảo vệ dữ liệu đóng vai trò lớn.
+        - target: Aus Gründen des Datenschutzes dürfen wir Ihre Adresse nicht weitergeben.
+          translation:
+            vi: Vì lý do bảo vệ dữ liệu, chúng tôi không được phép chuyển địa chỉ của anh/chị cho người khác.
+      confusion:
+        vi: "Từ ghép die Daten + der Schutz → der Datenschutz (giống đực theo từ cuối). Genitiv: des Datenschutzes."
+
+  - key: de:item:b2u03-programmieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: programmieren
+      pos: động từ
+    back:
+      meaning:
+        vi: lập trình
+      examples:
+        - target: Mein Bruder programmiert Apps für Smartphones.
+          translation:
+            vi: Anh trai tôi lập trình ứng dụng cho điện thoại thông minh.
+        - target: Der Roboter wurde so programmiert, dass er Hindernisse erkennt.
+          translation:
+            vi: Rô-bốt được lập trình để nhận ra chướng ngại vật.
+      confusion:
+        vi: "Viết hai chữ m; đuôi -ieren nên Partizip là programmiert (không có ge-). Người lập trình: der Programmierer, -."
+
+  - key: de:item:b2u03-anwendung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Anwendung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự ứng dụng, áp dụng; phần mềm ứng dụng
+      examples:
+        - target: Die Erfindung hat viele praktische Anwendungen.
+          translation:
+            vi: Phát minh này có nhiều ứng dụng thực tế.
+        - target: Die Anwendung startet nach dem Update nicht mehr.
+          translation:
+            vi: Sau khi cập nhật, phần mềm ứng dụng không khởi động được nữa.
+      confusion:
+        vi: "Danh từ của anwenden (áp dụng). Với điện thoại, người Đức thường nói die App, -s; die Anwendung trang trọng hơn và dùng cả cho phần mềm máy tính."
+
+  - key: de:item:b2u03-vernetzt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: vernetzt
+      pos: tính từ
+    back:
+      meaning:
+        vi: được kết nối (mạng), liên kết với nhau
+      examples:
+        - target: In einem vernetzten Haus kann man die Heizung mit dem Handy steuern.
+          translation:
+            vi: Trong một ngôi nhà được kết nối mạng, có thể điều khiển lò sưởi bằng điện thoại.
+        - target: Heute sind fast alle Geräte miteinander vernetzt.
+          translation:
+            vi: Ngày nay gần như mọi thiết bị đều được kết nối với nhau.
+      confusion:
+        vi: "Partizip II của vernetzen (das Netz = mạng) dùng như tính từ: ein vernetztes Gerät. Cũng dùng cho người: gut vernetzt sein = có nhiều mối quan hệ."
+
+  - key: de:item:b2u03-raumfahrt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Raumfahrt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngành du hành vũ trụ, hàng không vũ trụ
+      examples:
+        - target: Manche Technologien aus der Raumfahrt werden heute auch im Alltag genutzt.
+          translation:
+            vi: Một số công nghệ từ ngành vũ trụ ngày nay cũng được dùng trong đời sống hằng ngày.
+        - target: Sie interessiert sich schon seit ihrer Kindheit für Raumfahrt.
+          translation:
+            vi: Cô ấy quan tâm đến du hành vũ trụ từ khi còn nhỏ.
+      confusion:
+        vi: "der Raum (không gian, vũ trụ) + die Fahrt (chuyến đi) → die Raumfahrt (giống cái theo từ cuối). Nhà du hành vũ trụ: der Astronaut, -en."
+
+  - key: de:item:b2u03-spracherkennung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Spracherkennung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: (công nghệ) nhận dạng giọng nói
+      examples:
+        - target: Mit Spracherkennung kann man Nachrichten diktieren.
+          translation:
+            vi: Với công nghệ nhận dạng giọng nói, người ta có thể đọc tin nhắn cho máy ghi.
+        - target: Die Spracherkennung versteht mich nicht, wenn es laut ist.
+          translation:
+            vi: Chức năng nhận dạng giọng nói không hiểu tôi khi xung quanh ồn ào.
+      confusion:
+        vi: "die Sprache + die Erkennung (sự nhận ra, từ erkennen) → die Spracherkennung; chữ e cuối của Sprache rơi mất khi ghép."
+
+  - key: de:item:b2u03-maschine
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Maschine, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy, máy móc
+      examples:
+        - target: Diese Maschine verpackt tausend Flaschen pro Stunde.
+          translation:
+            vi: Chiếc máy này đóng gói một nghìn chai mỗi giờ.
+        - target: Kann eine Maschine wirklich denken?
+          translation:
+            vi: Máy móc có thực sự biết suy nghĩ không?
+      confusion:
+        vi: "Trọng âm ở âm tiết giữa: Ma-SCHI-ne. die Waschmaschine = máy giặt; khi nói về máy bay, die Maschine cũng có nghĩa là chiếc máy bay."
+
+  # ================= Bài 3: Phát hiện mà… – quan hệ Genitiv, tiền tố mang nghĩa =================
+  - key: de:item:b2u03-g-relativ-genitiv
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Relativpronomen im Genitiv: dessen / deren (der Forscher, dessen neue Theorie …)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "dessen và deren nghĩa là \"mà … của người/vật đó\": der Forscher, dessen Theorie bekannt ist = nhà nghiên cứu mà lý thuyết của ông ấy nổi tiếng. Chọn theo danh từ đứng TRƯỚC dấu phẩy: der/das → dessen, die (giống cái) và số nhiều → deren; danh từ đứng ngay sau dessen/deren không có mạo từ. Tính từ sau dessen/deren mang đuôi như khi không có mạo từ: dessen neue Theorie, deren erstes Buch, in dessen modernem Labor."
+      examples:
+        - target: Der Forscher, dessen neue Theorie viel diskutiert wird, hält morgen einen Vortrag.
+          translation:
+            vi: Nhà nghiên cứu mà lý thuyết mới của ông ấy đang được bàn luận nhiều sẽ thuyết trình vào ngày mai.
+        - target: Die Ärztin, deren Studie ich gelesen habe, arbeitet in Hamburg.
+          translation:
+            vi: Nữ bác sĩ mà tôi đã đọc nghiên cứu của bà ấy làm việc ở Hamburg.
+        - target: Wissenschaftler, deren Ergebnisse nicht bestätigt werden, müssen ihre These überprüfen.
+          translation:
+            vi: Những nhà khoa học mà kết quả của họ không được xác nhận phải xem lại luận điểm của mình.
+      confusion:
+        vi: "Đừng chọn theo danh từ phía sau: die Forscherin, deren Vater … (không phải dessen Vater, dù Vater giống đực). Không thêm mạo từ: dessen Theorie, không phải dessen die Theorie. Tiếng Việt nói \"mà … của ông ấy\", tiếng Đức gói cả ý \"của người đó\" vào một từ."
+
+  - key: de:item:b2u03-g-verbpraefixe-bedeutung
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Untrennbare Verbpräfixe mit Bedeutung: entdecken, verändern, zerstören, missverstehen, erfinden, beantworten"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Các tiền tố không tách này thường gợi ý nghĩa: ent- (bỏ đi, tách ra hoặc bắt đầu: entdecken, entstehen), ver- (làm sai, làm thay đổi hoặc dùng hết: sich verrechnen, verändern, verbrauchen), zer- (vỡ vụn, tan rã: zerstören, zerlegen), miss- (sai, hỏng: missverstehen, misslingen), er- (đạt tới kết quả: erfinden, erreichen), be- (biến động từ thành ngoại động, có tân ngữ Akkusativ: antworten auf → etwas beantworten). Khi chia, chúng không tách khỏi động từ và Partizip II không có ge-: entdeckt, zerstört, missverstanden. Đây chỉ là gợi ý để đoán nghĩa, vì nhiều động từ thông dụng không theo quy tắc này (verstehen, bekommen, erzählen)."
+      examples:
+        - target: Die Forscher haben eine neue Pflanzenart entdeckt.
+          translation:
+            vi: Các nhà nghiên cứu đã phát hiện ra một loài thực vật mới.
+        - target: Der Sturm hat einen Teil des Gebäudes zerstört.
+          translation:
+            vi: Cơn bão đã phá hủy một phần tòa nhà.
+        - target: Entschuldigung, da habe ich Sie missverstanden.
+          translation:
+            vi: Xin lỗi, chỗ đó tôi đã hiểu lầm ý anh/chị.
+      confusion:
+        vi: "Đừng thêm ge-: entdeckt (không phải geentdeckt), missverstanden (không phải gemissverstanden). Một số tiền tố khác như über-, um- có lúc tách, lúc không, tùy trọng âm; các tiền tố của bài này luôn không tách khi chia động từ."
+
+  - key: de:item:b2u03-entdeckung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Entdeckung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự khám phá, phát hiện
+      examples:
+        - target: Das Team hat eine wichtige Entdeckung gemacht.
+          translation:
+            vi: Nhóm nghiên cứu đã có một phát hiện quan trọng.
+        - target: Die Entdeckung war ein reiner Zufall.
+          translation:
+            vi: Phát hiện đó hoàn toàn là tình cờ.
+      confusion:
+        vi: "eine Entdeckung machen = có một phát hiện (không dùng tun). Khác die Erfindung (tạo ra cái mới)."
+
+  - key: de:item:b2u03-entdecken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: entdecken
+      pos: động từ
+    back:
+      meaning:
+        vi: khám phá, phát hiện ra
+      examples:
+        - target: Im Weltall werden immer wieder neue Planeten entdeckt.
+          translation:
+            vi: Trong vũ trụ người ta liên tục phát hiện ra những hành tinh mới.
+        - target: Ich habe einen Fehler in deiner Rechnung entdeckt.
+          translation:
+            vi: Mình phát hiện ra một lỗi trong phép tính của bạn.
+      confusion:
+        vi: "ent- (bỏ đi) + decken (che phủ): bỏ lớp che đi → khám phá. Không tách, Partizip entdeckt."
+
+  - key: de:item:b2u03-theorie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Theorie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lý thuyết, học thuyết
+      examples:
+        - target: Ihre Theorie wurde später durch viele Experimente bestätigt.
+          translation:
+            vi: Lý thuyết của bà ấy sau này được nhiều thí nghiệm xác nhận.
+        - target: In der Theorie klingt das gut, aber in der Praxis funktioniert es nicht.
+          translation:
+            vi: Trên lý thuyết thì nghe hay, nhưng trong thực tế thì không hiệu quả.
+      confusion:
+        vi: "Số nhiều die Theorien (đọc tách -ri-en). in der Theorie ↔ in der Praxis = trên lý thuyết ↔ trong thực tế."
+
+  - key: de:item:b2u03-these
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die These, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: luận điểm, luận đề
+      examples:
+        - target: Die Autorin vertritt die These, dass Schüler mit Musik schlechter lernen.
+          translation:
+            vi: Tác giả (nữ) bảo vệ luận điểm rằng học sinh học kém hơn khi có nhạc.
+        - target: Für diese These gibt es bisher keine Belege.
+          translation:
+            vi: Cho đến nay chưa có bằng chứng cho luận điểm này.
+      confusion:
+        vi: "eine These vertreten = bảo vệ, chủ trương một luận điểm; eine These aufstellen = đưa ra luận điểm. These là một khẳng định cần lập luận; Hypothese là giả thuyết cần kiểm chứng bằng thí nghiệm."
+
+  - key: de:item:b2u03-widerlegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: widerlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: bác bỏ (bằng lập luận, bằng chứng)
+      examples:
+        - target: Die neue Studie widerlegt eine alte These.
+          translation:
+            vi: Nghiên cứu mới bác bỏ một luận điểm cũ.
+        - target: Seine Annahme wurde durch das Experiment widerlegt.
+          translation:
+            vi: Giả định của anh ấy đã bị thí nghiệm bác bỏ.
+      confusion:
+        vi: "wider- (chống lại) viết không có e, khác wieder (lại). Trong widerlegen, wider- không tách: Sie widerlegt die These, Partizip widerlegt (không có ge-)."
+
+  - key: de:item:b2u03-bestaetigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bestätigen
+      pos: động từ
+    back:
+      meaning:
+        vi: xác nhận, khẳng định (là đúng)
+      examples:
+        - target: Weitere Experimente haben die Ergebnisse bestätigt.
+          translation:
+            vi: Các thí nghiệm tiếp theo đã xác nhận kết quả.
+        - target: Können Sie mir den Termin bitte schriftlich bestätigen?
+          translation:
+            vi: Anh/chị có thể xác nhận lịch hẹn bằng văn bản cho tôi được không?
+      confusion:
+        vi: "be- không tách: Partizip bestätigt. Danh từ: die Bestätigung, -en (sự xác nhận, giấy xác nhận). Trái nghĩa trong khoa học: widerlegen."
+
+  - key: de:item:b2u03-zerstoeren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zerstören
+      pos: động từ
+    back:
+      meaning:
+        vi: phá hủy, tàn phá
+      examples:
+        - target: Das Feuer hat das alte Labor fast vollständig zerstört.
+          translation:
+            vi: Đám cháy đã thiêu hủy gần như toàn bộ phòng thí nghiệm cũ.
+        - target: Durch den Bau der Straße wurde viel Natur zerstört.
+          translation:
+            vi: Việc làm con đường đã tàn phá nhiều thiên nhiên.
+      confusion:
+        vi: "zer- (vỡ vụn) + stören: phá hỏng hoàn toàn. Không tách, Partizip zerstört (không có ge-). Danh từ: die Zerstörung."
+
+  - key: de:item:b2u03-missverstehen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: missverstehen, missverstand, hat missverstanden
+      pos: động từ
+    back:
+      meaning:
+        vi: hiểu lầm, hiểu sai
+      examples:
+        - target: Da haben Sie mich leider missverstanden.
+          translation:
+            vi: Tiếc là chỗ đó anh/chị đã hiểu lầm tôi.
+        - target: Die Ergebnisse der Studie werden oft missverstanden.
+          translation:
+            vi: Kết quả của nghiên cứu thường bị hiểu sai.
+      confusion:
+        vi: "miss- không tách khi chia: ich missverstehe, Partizip missverstanden (không có ge-). Danh từ: das Missverständnis, -se (sự hiểu lầm)."
+
+  # Zusatzwortschatz (B2U03L3)
+  - key: de:item:b2u03-erforschen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erforschen
+      pos: động từ
+    back:
+      meaning:
+        vi: nghiên cứu kỹ, tìm hiểu (một đối tượng)
+      examples:
+        - target: Die Tiefsee ist bis heute nur wenig erforscht.
+          translation:
+            vi: Cho đến nay biển sâu mới chỉ được nghiên cứu rất ít.
+        - target: Das Team will erforschen, wie Bienen miteinander kommunizieren.
+          translation:
+            vi: Nhóm nghiên cứu muốn tìm hiểu loài ong giao tiếp với nhau như thế nào.
+      confusion:
+        vi: "erforschen có tân ngữ Akkusativ (etwas erforschen), còn forschen thì không (forschen an/zu + Dativ). er- không tách: Partizip erforscht."
+
+  - key: de:item:b2u03-entschluesseln
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: entschlüsseln
+      pos: động từ
+    back:
+      meaning:
+        vi: giải mã
+      examples:
+        - target: Es hat lange gedauert, bis man die alte Schrift entschlüsseln konnte.
+          translation:
+            vi: Phải mất rất lâu người ta mới giải mã được loại chữ cổ đó.
+        - target: Die Nachricht wurde automatisch entschlüsselt.
+          translation:
+            vi: Tin nhắn đã được giải mã tự động.
+      confusion:
+        vi: "ent- (bỏ đi) + der Schlüssel (chìa khóa, mã): gỡ mã ra. Trái nghĩa: verschlüsseln (mã hóa)."
+
+  - key: de:item:b2u03-zerlegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zerlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: tháo rời, chia nhỏ thành từng phần
+      examples:
+        - target: Der Techniker zerlegt das alte Gerät in seine Einzelteile.
+          translation:
+            vi: Người kỹ thuật viên tháo rời chiếc máy cũ thành từng bộ phận.
+        - target: Ein schwieriges Problem kann man in kleinere Aufgaben zerlegen.
+          translation:
+            vi: Một vấn đề khó có thể chia nhỏ thành những nhiệm vụ nhỏ hơn.
+      confusion:
+        vi: "zer- (thành từng mảnh) + legen. Khác zerstören: zerlegen là tháo có chủ ý, có thể lắp lại; zerstören là phá hỏng."
+
+  - key: de:item:b2u03-misslingen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: misslingen, misslang, ist misslungen
+      pos: động từ
+    back:
+      meaning:
+        vi: thất bại, không thành (về một việc)
+      examples:
+        - target: Der erste Versuch ist leider misslungen.
+          translation:
+            vi: Tiếc là lần thử đầu tiên đã thất bại.
+        - target: Mir ist der Kuchen misslungen.
+          translation:
+            vi: Tôi làm hỏng mất cái bánh rồi.
+      confusion:
+        vi: "Chủ ngữ là việc (der Versuch, der Kuchen), người làm đứng ở Dativ: Mir ist es misslungen. Perfekt dùng sein. Trái nghĩa: gelingen (gelang, ist gelungen)."
+
+  - key: de:item:b2u03-missbrauchen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: missbrauchen
+      pos: động từ
+    back:
+      meaning:
+        vi: lạm dụng, dùng sai mục đích
+      examples:
+        - target: Persönliche Daten dürfen nicht missbraucht werden.
+          translation:
+            vi: Dữ liệu cá nhân không được phép bị lạm dụng.
+        - target: Er hat das Vertrauen seiner Kollegen missbraucht.
+          translation:
+            vi: Anh ta đã lạm dụng lòng tin của các đồng nghiệp.
+      confusion:
+        vi: "miss- (sai) + brauchen (dùng): dùng sai. Không tách, Partizip missbraucht. Danh từ: der Missbrauch (Sg.)."
+
+  - key: de:item:b2u03-bewirken
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: bewirken
+      pos: động từ
+    back:
+      meaning:
+        vi: tạo ra, gây ra (một tác dụng, thay đổi)
+      examples:
+        - target: Die neue Regel hat leider wenig bewirkt.
+          translation:
+            vi: Tiếc là quy định mới đã tạo ra ít thay đổi.
+        - target: Schon kleine Änderungen können viel bewirken.
+          translation:
+            vi: Ngay cả những thay đổi nhỏ cũng có thể tạo ra nhiều tác động.
+      confusion:
+        vi: "wirken (có tác dụng) không có tân ngữ: Das Medikament wirkt. Thêm be- thì có tân ngữ Akkusativ: etwas bewirken (gây ra điều gì) – ví dụ điển hình của tiền tố be-."
+
+  - key: de:item:b2u03-entstehen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: entstehen, entstand, ist entstanden
+      pos: động từ
+    back:
+      meaning:
+        vi: hình thành, nảy sinh, phát sinh
+      examples:
+        - target: So ist die Idee für die Erfindung entstanden.
+          translation:
+            vi: Ý tưởng cho phát minh đã nảy sinh như thế.
+        - target: Bei der Produktion entstehen hohe Kosten.
+          translation:
+            vi: Trong quá trình sản xuất phát sinh chi phí cao.
+      confusion:
+        vi: "ent- ở đây mang nghĩa bắt đầu: bắt đầu có, hình thành. Perfekt dùng sein: ist entstanden. Không nhầm với verstehen (hiểu)."
+
+  - key: de:item:b2u03-veraendern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verändern
+      pos: động từ
+    back:
+      meaning:
+        vi: "làm thay đổi; sich verändern: thay đổi"
+      examples:
+        - target: Das Internet hat unseren Alltag stark verändert.
+          translation:
+            vi: Internet đã làm thay đổi mạnh mẽ cuộc sống hằng ngày của chúng ta.
+        - target: Die Stadt hat sich in den letzten Jahren sehr verändert.
+          translation:
+            vi: Thành phố đã thay đổi rất nhiều trong những năm gần đây.
+      confusion:
+        vi: "ver- mang nghĩa làm cho khác đi (anders → verändern). Có tân ngữ: etwas verändern; không có tân ngữ thì cần sich: Die Stadt verändert sich. Không có ge-: verändert."
+
+  - key: de:item:b2u03-physiker
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Physiker, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà vật lý
+      examples:
+        - target: Der Physiker erklärt komplizierte Dinge sehr anschaulich.
+          translation:
+            vi: Nhà vật lý giải thích những điều phức tạp rất dễ hình dung.
+        - target: Sie wollte schon als Kind Physikerin werden.
+          translation:
+            vi: Ngay từ nhỏ cô ấy đã muốn trở thành nhà vật lý.
+      confusion:
+        vi: "Dạng nữ: die Physikerin, -nen. Môn vật lý: die Physik (Sg.); trọng âm khác nhau: PHY-si-ker nhưng Phy-SIK."
+
+  - key: de:item:b2u03-annahme
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Annahme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: giả định, sự cho rằng
+      examples:
+        - target: Die Forscher gehen von der Annahme aus, dass das Verfahren sicher ist.
+          translation:
+            vi: Các nhà nghiên cứu xuất phát từ giả định rằng quy trình này an toàn.
+        - target: Diese Annahme hat sich als falsch herausgestellt.
+          translation:
+            vi: Giả định này hóa ra là sai.
+      confusion:
+        vi: "von der Annahme ausgehen, dass … = xuất phát từ giả định rằng …. Từ annehmen (cho rằng; nhận lấy); die Annahme còn có nghĩa \"việc nhận\" (die Annahme eines Pakets)."
+
+  - key: de:item:b2u03-irrtum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Irrtum, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nhầm lẫn, quan niệm sai
+      examples:
+        - target: Das ist ein weit verbreiteter Irrtum.
+          translation:
+            vi: Đó là một quan niệm sai rất phổ biến.
+        - target: Es handelt sich um einen Irrtum, die Rechnung ist schon bezahlt.
+          translation:
+            vi: Đây là một sự nhầm lẫn, hóa đơn đã được thanh toán rồi.
+      confusion:
+        vi: "Số nhiều có biến âm: die Irrtümer. Cùng gốc với sich irren (nhầm). der Fehler là lỗi nói chung; der Irrtum nhấn mạnh việc tin sai, nghĩ sai."
+
+  # ================= Bài 4: Thuyết trình khoa học (Goethe B2 Sprechen Teil 1) =================
+  - key: de:item:b2u03-g-vortrag-redemittel
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Redemittel für den Kurzvortrag: In meinem Vortrag geht es um … · Zunächst … · Im Anschluss daran … · Ein Beispiel dafür ist … · Abschließend lässt sich sagen, dass …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Bài thuyết trình B2 cần cấu trúc rõ và nói cấu trúc đó ra thành lời: mở đầu (In meinem Vortrag geht es um …), dẫn từng phần (Zunächst …, Im Anschluss daran …, Danach komme ich zu …), ví dụ (Ein Beispiel dafür ist …), đánh giá (Ein Vorteil ist …, Meiner Meinung nach …) và kết luận (Abschließend lässt sich sagen, dass …). Các câu mở đầu bằng trạng ngữ vẫn giữ động từ ở vị trí 2: Zunächst möchte ich …, Im Anschluss daran gehe ich auf … ein. Abschließend lässt sich sagen là cụm cố định, nghĩa \"tóm lại có thể nói rằng\"."
+      examples:
+        - target: In meinem Vortrag geht es um die Frage, ob Roboter in der Pflege eingesetzt werden sollten.
+          translation:
+            vi: Bài thuyết trình của tôi xoay quanh câu hỏi liệu có nên dùng rô-bốt trong ngành chăm sóc hay không.
+        - target: Zunächst stelle ich zwei Möglichkeiten vor. Im Anschluss daran gehe ich auf die Situation in Vietnam ein.
+          translation:
+            vi: Trước hết tôi giới thiệu hai phương án. Tiếp theo đó tôi sẽ nói về tình hình ở Việt Nam.
+        - target: Abschließend lässt sich sagen, dass die Vorteile überwiegen.
+          translation:
+            vi: Tóm lại có thể nói rằng ưu điểm nhiều hơn nhược điểm.
+      confusion:
+        vi: "es geht um + Akkusativ (In meinem Vortrag geht es um die Digitalisierung), không dùng über. Sau Zunächst hay Im Anschluss daran, động từ đứng ngay sau: Zunächst möchte ich …, không phải Zunächst ich möchte …."
+
+  - key: de:item:b2u03-einleitung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Einleitung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần mở đầu, lời dẫn
+      examples:
+        - target: In der Einleitung nennt man das Thema und die Gliederung.
+          translation:
+            vi: Ở phần mở đầu, người ta nêu chủ đề và bố cục.
+        - target: Die Einleitung sollte kurz und interessant sein.
+          translation:
+            vi: Phần mở đầu nên ngắn gọn và hấp dẫn.
+      confusion:
+        vi: "Ba phần của bài nói hay bài viết: die Einleitung – der Hauptteil – der Schluss (hoặc das Fazit). Cùng gốc với einleiten (mở đầu)."
+
+  - key: de:item:b2u03-hauptteil
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hauptteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần chính, thân bài
+      examples:
+        - target: Im Hauptteil stelle ich die Vor- und Nachteile dar.
+          translation:
+            vi: Ở phần chính, tôi trình bày các ưu điểm và nhược điểm.
+        - target: Der Hauptteil ist der längste Teil des Vortrags.
+          translation:
+            vi: Phần chính là phần dài nhất của bài thuyết trình.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: der Teil → der Hauptteil. Dativ: im Hauptteil (in dem)."
+
+  - key: de:item:b2u03-fazit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Fazit, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: kết luận, tổng kết
+      examples:
+        - target: Mein Fazit ist, dass wir mehr in Bildung investieren sollten.
+          translation:
+            vi: Kết luận của tôi là chúng ta nên đầu tư nhiều hơn vào giáo dục.
+        - target: Am Ende des Vortrags zieht die Rednerin ein kurzes Fazit.
+          translation:
+            vi: Cuối bài thuyết trình, nữ diễn giả đưa ra một kết luận ngắn.
+      confusion:
+        vi: "ein Fazit ziehen = rút ra kết luận (không dùng machen). Số nhiều ít dùng: die Fazits, cũng gặp die Fazite."
+
+  - key: de:item:b2u03-veranschaulichen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: veranschaulichen
+      pos: động từ
+    back:
+      meaning:
+        vi: minh họa, làm cho dễ hình dung
+      examples:
+        - target: Ich möchte das an einem Beispiel veranschaulichen.
+          translation:
+            vi: Tôi muốn minh họa điều đó bằng một ví dụ.
+        - target: Das Schaubild veranschaulicht, wie das Verfahren funktioniert.
+          translation:
+            vi: Sơ đồ minh họa quy trình này hoạt động như thế nào.
+      confusion:
+        vi: "Từ tính từ anschaulich (dễ hình dung) + ver-: làm cho trở nên dễ hình dung. etwas an einem Beispiel veranschaulichen = minh họa bằng một ví dụ; Partizip veranschaulicht."
+
+  - key: de:item:b2u03-zuhoerer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zuhörer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người nghe, thính giả
+      examples:
+        - target: Der Redner sollte Blickkontakt mit den Zuhörern halten.
+          translation:
+            vi: Người thuyết trình nên giữ giao tiếp bằng mắt với người nghe.
+        - target: Liebe Zuhörerinnen und Zuhörer, vielen Dank für Ihre Aufmerksamkeit.
+          translation:
+            vi: Thưa quý vị thính giả, xin cảm ơn sự chú ý của quý vị.
+      confusion:
+        vi: "Từ zuhören (lắng nghe). Dativ số nhiều thêm -n: mit den Zuhörern. Dạng nữ: die Zuhörerin, -nen."
+
+  - key: de:item:b2u03-darstellen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: "darstellen (stellt dar, hat dargestellt)"
+      pos: động từ
+    back:
+      meaning:
+        vi: trình bày, mô tả; thể hiện
+      examples:
+        - target: Zunächst möchte ich die Situation in Deutschland darstellen.
+          translation:
+            vi: Trước hết tôi muốn trình bày tình hình ở Đức.
+        - target: Die Grafik stellt die Entwicklung der letzten zehn Jahre dar.
+          translation:
+            vi: Biểu đồ thể hiện diễn biến trong mười năm qua.
+      confusion:
+        vi: "Động từ tách: stellt … dar, Partizip dargestellt. Danh từ: die Darstellung, -en (sự trình bày)."
+
+  - key: de:item:b2u03-erlaeutern
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: erläutern
+      pos: động từ
+    back:
+      meaning:
+        vi: giải thích chi tiết, làm rõ
+      examples:
+        - target: Im Folgenden möchte ich die wichtigsten Begriffe kurz erläutern.
+          translation:
+            vi: Sau đây tôi muốn giải thích ngắn gọn những khái niệm quan trọng nhất.
+        - target: Könnten Sie diesen Punkt bitte noch etwas genauer erläutern?
+          translation:
+            vi: Anh/chị có thể giải thích điểm này kỹ hơn một chút được không?
+      confusion:
+        vi: "erläutern trang trọng hơn erklären, hay dùng trong bài thuyết trình và văn bản học thuật. er- không tách: Partizip erläutert."
+
+  # Zusatzwortschatz (B2U03L4)
+  - key: de:item:b2u03-hervorheben
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: hervorheben, hebt hervor, hob hervor, hat hervorgehoben
+      pos: động từ
+    back:
+      meaning:
+        vi: nhấn mạnh, làm nổi bật
+      examples:
+        - target: Ich möchte besonders einen Punkt hervorheben.
+          translation:
+            vi: Tôi muốn đặc biệt nhấn mạnh một điểm.
+        - target: Die wichtigsten Zahlen sind auf der Folie farbig hervorgehoben.
+          translation:
+            vi: Những con số quan trọng nhất được làm nổi bật bằng màu trên trang chiếu.
+      confusion:
+        vi: "Động từ tách, gốc heben (nâng) là động từ mạnh: hebt … hervor, hob … hervor, hervorgehoben. Gần nghĩa với betonen."
+
+  - key: de:item:b2u03-zwischenfrage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Zwischenfrage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu hỏi chen ngang (trong lúc người khác đang nói)
+      examples:
+        - target: Darf ich eine kurze Zwischenfrage stellen?
+          translation:
+            vi: Tôi có thể hỏi chen một câu ngắn được không?
+        - target: Bei Zwischenfragen bitte einfach die Hand heben.
+          translation:
+            vi: Nếu có câu hỏi trong lúc thuyết trình, xin quý vị cứ giơ tay.
+      confusion:
+        vi: "zwischen (ở giữa) + die Frage → die Zwischenfrage. eine Frage stellen = đặt câu hỏi (không dùng machen)."
+
+  - key: de:item:b2u03-anschaulich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: anschaulich
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ hình dung, sinh động, trực quan
+      examples:
+        - target: Die Lehrerin erklärt die Grammatik sehr anschaulich.
+          translation:
+            vi: Cô giáo giải thích ngữ pháp rất dễ hình dung.
+        - target: Mit einem anschaulichen Beispiel versteht das Publikum mehr.
+          translation:
+            vi: Với một ví dụ trực quan, khán giả hiểu được nhiều hơn.
+      confusion:
+        vi: "Từ anschauen (nhìn, xem). Động từ cùng gốc: veranschaulichen (minh họa). Làm tính từ trước danh từ thì có đuôi: ein anschauliches Beispiel."
+
+  - key: de:item:b2u03-gesichtspunkt
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Gesichtspunkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khía cạnh, góc độ (xem xét)
+      examples:
+        - target: Unter wirtschaftlichen Gesichtspunkten ist das sinnvoll.
+          translation:
+            vi: Xét về góc độ kinh tế thì điều đó hợp lý.
+        - target: Ein weiterer wichtiger Gesichtspunkt ist der Datenschutz.
+          translation:
+            vi: Một khía cạnh quan trọng khác là việc bảo vệ dữ liệu.
+      confusion:
+        vi: "das Gesicht (mặt) + -s- + der Punkt → der Gesichtspunkt (giống đực theo từ cuối, có âm nối -s-). unter diesem Gesichtspunkt = xét từ góc độ này."
+
+  - key: de:item:b2u03-schaubild
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Schaubild, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: sơ đồ, hình minh họa, biểu đồ
+      examples:
+        - target: Auf diesem Schaubild sehen Sie den Aufbau einer Zelle.
+          translation:
+            vi: Trên hình minh họa này quý vị thấy cấu tạo của một tế bào.
+        - target: Das Schaubild zeigt, wie sich die Zahl der Nutzer verändert hat.
+          translation:
+            vi: Biểu đồ cho thấy số người dùng đã thay đổi như thế nào.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: das Bild → das Schaubild, số nhiều die Schaubilder. Gần nghĩa die Grafik, das Diagramm."
+
+  - key: de:item:b2u03-belegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: belegen
+      pos: động từ
+    back:
+      meaning:
+        vi: chứng minh (bằng số liệu, dẫn chứng); đăng ký (khóa học)
+      examples:
+        - target: Können Sie diese Behauptung mit Zahlen belegen?
+          translation:
+            vi: Anh/chị có thể chứng minh khẳng định này bằng số liệu không?
+        - target: Im nächsten Semester belege ich einen Kurs in Statistik.
+          translation:
+            vi: Học kỳ tới tôi đăng ký một khóa thống kê.
+      confusion:
+        vi: "be- không tách: Partizip belegt. Danh từ: der Beleg, -e (dẫn chứng; hóa đơn). Khác beweisen: belegen là đưa ra dẫn chứng, chưa chắc đã chứng minh trọn vẹn."
+
+  - key: de:item:b2u03-redner
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Redner, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người diễn thuyết, người phát biểu
+      examples:
+        - target: Der Redner hat frei gesprochen, ohne auf seine Notizen zu schauen.
+          translation:
+            vi: Người diễn thuyết đã nói tự nhiên mà không nhìn vào ghi chú.
+        - target: Die nächste Rednerin kommt aus Vietnam.
+          translation:
+            vi: Nữ diễn giả tiếp theo đến từ Việt Nam.
+      confusion:
+        vi: "Từ reden (nói) + -er. Dạng nữ: die Rednerin, -nen. frei sprechen = nói không cần đọc giấy."
+
+  - key: de:item:b2u03-einstieg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Einstieg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần vào đề, cách bắt đầu; lối lên (xe)
+      examples:
+        - target: Als Einstieg möchte ich Ihnen eine kurze Geschichte erzählen.
+          translation:
+            vi: Để vào đề, tôi muốn kể cho quý vị một câu chuyện ngắn.
+        - target: Eine Frage an das Publikum ist ein guter Einstieg.
+          translation:
+            vi: Một câu hỏi dành cho khán giả là cách vào đề hay.
+      confusion:
+        vi: "Từ einsteigen (lên xe; bắt đầu tham gia). Trong bài thuyết trình: als Einstieg = để mở đầu, vào đề."
+
+  - key: de:item:b2u03-ausfuehrlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: ausführlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: chi tiết, đầy đủ
+      examples:
+        - target: Auf diesen Punkt gehe ich später noch ausführlich ein.
+          translation:
+            vi: Điểm này lát nữa tôi sẽ nói chi tiết hơn.
+        - target: Sie hat einen ausführlichen Bericht geschrieben.
+          translation:
+            vi: Cô ấy đã viết một bản báo cáo chi tiết.
+      confusion:
+        vi: "Trái nghĩa: kurz, knapp (ngắn gọn). Làm trạng từ thì không đổi đuôi (ausführlich erklären), đứng trước danh từ thì có đuôi (ein ausführlicher Bericht)."
+
+  - key: de:item:b2u03-schwerpunkt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schwerpunkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trọng tâm, điểm chính
+      examples:
+        - target: Der Schwerpunkt meines Vortrags liegt auf den Risiken.
+          translation:
+            vi: Trọng tâm bài thuyết trình của tôi là các rủi ro.
+        - target: In diesem Semester liegt der Schwerpunkt auf der Praxis.
+          translation:
+            vi: Học kỳ này trọng tâm là thực hành.
+      confusion:
+        vi: "Der Schwerpunkt liegt auf + Dativ (auf den Risiken). Nghĩa gốc trong vật lý là trọng tâm (điểm đặt trọng lực)."

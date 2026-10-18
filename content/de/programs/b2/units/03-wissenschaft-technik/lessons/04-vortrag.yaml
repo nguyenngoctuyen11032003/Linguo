@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u03-vortrag
+order_index: 4
+level: b2
+title:
+  vi: Thuyết trình khoa học (Ein Kurzvortrag)
+objectives:
+  - vi: Thuyết trình khoảng 4 phút có cấu trúc rõ ràng – giới thiệu chủ đề, nêu các phương án, ví dụ ở Việt Nam, ưu nhược điểm, ý kiến riêng, kết luận (kiểu Goethe B2 Sprechen Teil 1).
+  - vi: Dùng đúng các mẫu câu dẫn dắt (In meinem Vortrag geht es um …, Zunächst …, Im Anschluss daran …, Abschließend lässt sich sagen, …).
+  - vi: Nghe một bài giảng ngắn và ghi lại ý chính.
+estimated_minutes: 21
+skills: [speaking, listening]
+prerequisites: [de:lesson:b2u03-dessen-deren]
+items:
+  - item: de:item:b2u03-g-vortrag-redemittel
+  - item: de:item:b2u03-einleitung
+  - item: de:item:b2u03-hauptteil
+  - item: de:item:b2u03-fazit
+  - item: de:item:b2u03-veranschaulichen
+  - item: de:item:b2u03-zuhoerer
+  - item: de:item:b2u03-darstellen
+  - item: de:item:b2u03-erlaeutern
+  - item: de:item:b2u03-hervorheben
+  - item: de:item:b2u03-zwischenfrage
+  - item: de:item:b2u03-anschaulich
+  - item: de:item:b2u03-gesichtspunkt
+  - item: de:item:b2u03-schaubild
+  - item: de:item:b2u03-belegen
+  - item: de:item:b2u03-redner
+  - item: de:item:b2u03-einstieg
+  - item: de:item:b2u03-ausfuehrlich
+  - item: de:item:b2u03-schwerpunkt
+  - item: de:item:b1u09-g-praesentation-redemittel
+    role: reuse
+  - item: de:item:b1u09-vortrag
+    role: reuse
+  - item: de:item:b1u09-folie
+    role: reuse
+  - item: de:item:b1u09-gliederung
+    role: reuse
+  - item: de:item:b1u06-vorteil
+    role: reuse
+  - item: de:item:b1u06-nachteil
+    role: reuse
+  - item: de:item:b2u02-g-grafik-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn trình bày được một chủ đề khoa học – công nghệ trong khoảng 4 phút, ví dụ: \"In meinem Vortrag geht es um Roboter in der Pflege. Zunächst stelle ich zwei Möglichkeiten vor. Im Anschluss daran gehe ich auf die Situation in Vietnam ein …\""
+  - type: explain
+    text:
+      vi: "Ở B1U09 bạn đã trình bày đơn giản (Ich spreche heute über …, Zum Schluss …). Ở B2, người nghe chờ một cấu trúc rõ ràng hơn: Einleitung (mở đầu, nêu chủ đề và bố cục) – Hauptteil (các phương án, ví dụ, ưu nhược điểm) – Fazit (kết luận và ý kiến riêng). Hãy nói cấu trúc ra thành lời để người nghe biết bạn đang ở phần nào."
+  - type: explain
+    text:
+      vi: "Mở đầu: In meinem Vortrag geht es um … (es geht um + Akkusativ) hoặc Als Einstieg möchte ich … . Dẫn dắt: Zunächst …, Im Anschluss daran …, Danach komme ich zu …. Sau các trạng ngữ này động từ đứng ngay ở vị trí 2: Zunächst stelle ich … vor."
+  - type: explain
+    text:
+      vi: "Ví dụ và đánh giá: Ein Beispiel dafür ist …, In Vietnam ist die Situation anders: …; Ein großer Vorteil ist, dass …; Ein Nachteil besteht darin, dass …; Meiner Meinung nach …. Kết luận: Abschließend lässt sich sagen, dass … (cụm cố định: tóm lại có thể nói rằng), rồi cảm ơn: Vielen Dank für Ihre Aufmerksamkeit."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, phần Sprechen của Goethe-Zertifikat B2 thi theo cặp; ở Teil 1 mỗi người trình bày một chủ đề khoảng 4 phút, sau đó người kia và giám khảo phản hồi, đặt câu hỏi. Thời lượng và yêu cầu có thể thay đổi, hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Người chấm thường xem bạn có đủ các phần của đề, có cấu trúc rõ, có ví dụ (nhất là ví dụ từ nước mình) và ý kiến riêng có lý do; đừng học thuộc nguyên bài mà hãy chuẩn bị ghi chú theo từ khóa. Khi người nghe hỏi chen (eine Zwischenfrage), bạn có thể nói: Darauf komme ich gleich noch ausführlich zurück."
+  - type: example
+    target: In meinem Vortrag geht es um die Frage, ob Roboter in der Pflege eingesetzt werden sollten.
+    target_lang: de
+    translation:
+      vi: Bài thuyết trình của tôi xoay quanh câu hỏi có nên dùng rô-bốt trong ngành chăm sóc hay không.
+    note:
+      vi: "es geht um + Akkusativ (die Frage). Câu phụ ob: động từ chia sollten đứng cuối."
+  - type: example
+    target: Zunächst stelle ich zwei Möglichkeiten vor. Im Anschluss daran gehe ich auf die Situation in Vietnam ein.
+    target_lang: de
+    translation:
+      vi: Trước hết tôi giới thiệu hai phương án. Tiếp theo đó tôi sẽ nói về tình hình ở Việt Nam.
+    note:
+      vi: "Trạng ngữ ở vị trí 1, động từ ở vị trí 2; vorstellen và eingehen auf là động từ tách."
+  - type: example
+    target: Auf der ersten Folie sehen Sie die Gliederung meines Vortrags.
+    target_lang: de
+    translation:
+      vi: Trên trang chiếu đầu tiên, quý vị thấy bố cục bài thuyết trình của tôi.
+    note:
+      vi: "Nói rõ bố cục ngay trong phần mở đầu (die Einleitung). meines Vortrags là Genitiv (der Vortrag → des/meines Vortrags)."
+  - type: example
+    target: Ein Beispiel dafür ist die Spracherkennung, die man heute auf fast jedem Handy findet.
+    target_lang: de
+    translation:
+      vi: Một ví dụ cho điều đó là nhận dạng giọng nói, thứ mà ngày nay có trên hầu hết điện thoại.
+    note:
+      vi: "Ein Beispiel dafür ist … giới thiệu ví dụ; dafür chỉ ý vừa nói."
+  - type: example
+    target: Die Grafik zeigt, dass der Anteil der Menschen, die Spracherkennung nutzen, in den letzten Jahren gestiegen ist.
+    target_lang: de
+    translation:
+      vi: Biểu đồ cho thấy tỉ lệ người dùng công nghệ nhận dạng giọng nói đã tăng trong những năm gần đây.
+    note:
+      vi: "Mẫu câu tả biểu đồ từ B2U02 (Die Grafik zeigt, dass …; der Anteil … ist gestiegen) dùng tốt trong phần Hauptteil. Đây là ví dụ để luyện câu, không phải số liệu thật."
+  - type: example
+    target: Abschließend lässt sich sagen, dass die Vorteile überwiegen, solange der Datenschutz beachtet wird.
+    target_lang: de
+    translation:
+      vi: Tóm lại có thể nói rằng ưu điểm nhiều hơn, miễn là việc bảo vệ dữ liệu được tôn trọng.
+    note:
+      vi: "Abschließend lässt sich sagen là cụm cố định để kết luận. überwiegen = nhiều hơn, chiếm ưu thế."
+  - type: common_mistake
+    wrong: In meinem Vortrag geht es über künstliche Intelligenz.
+    right: In meinem Vortrag geht es um künstliche Intelligenz.
+    target_lang: de
+    note:
+      vi: "Cụm cố định là es geht um + Akkusativ; über đi với sprechen (Ich spreche über …)."
+  - type: common_mistake
+    wrong: Zunächst ich möchte die Situation in Deutschland darstellen.
+    right: Zunächst möchte ich die Situation in Deutschland darstellen.
+    target_lang: de
+    note:
+      vi: "Zunächst chiếm vị trí 1, động từ chia (möchte) phải đứng ngay vị trí 2."
+  - type: common_mistake
+    wrong: Mein Vortrag ist zu Ende. Danke.
+    right: Abschließend lässt sich sagen, dass … Meiner Meinung nach … Vielen Dank für Ihre Aufmerksamkeit.
+    target_lang: de
+    note:
+      vi: "Đừng kết thúc đột ngột hay bỏ quan điểm cá nhân: tóm tắt, nêu ý kiến của bạn, rồi mới cảm ơn."
+  - type: summary
+    points:
+      - vi: "Cấu trúc: Einleitung – Hauptteil – Fazit; nói rõ bạn đang ở phần nào."
+      - vi: "Mở đầu: In meinem Vortrag geht es um … (um + Akk)."
+      - vi: "Dẫn dắt: Zunächst …, Im Anschluss daran …, Danach komme ich zu … (động từ vị trí 2)."
+      - vi: "Ví dụ: Ein Beispiel dafür ist …; In Vietnam …."
+      - vi: "Đánh giá: Ein Vorteil/Nachteil ist, dass …; Meiner Meinung nach …."
+      - vi: "Kết luận: Abschließend lässt sich sagen, dass … – Vielen Dank für Ihre Aufmerksamkeit."
+      - vi: "Từ vựng: die Einleitung, der Hauptteil, das Fazit, veranschaulichen, der Zuhörer, darstellen, erläutern."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u03l4-listen-einleitung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u03-einleitung
+    prompt:
+      audio_asset_id: null
+      fallback_text: In meinem Vortrag geht es um die Frage, ob Roboter in Zukunft in der Pflege eingesetzt werden sollten.
+      options:
+        - { id: e1, text: "Bài thuyết trình bàn về việc có nên dùng rô-bốt trong ngành chăm sóc trong tương lai hay không.", lang: vi }
+        - { id: e2, text: "Bài thuyết trình giải thích cách lập trình rô-bốt chăm sóc người bệnh.", lang: vi }
+        - { id: e3, text: "Bài thuyết trình kể về những rô-bốt đang làm việc trong bệnh viện.", lang: vi }
+        - { id: e4, text: "Bài thuyết trình bàn về việc thiếu nhân viên chăm sóc hiện nay.", lang: vi }
+    answer:
+      correct_option_id: e1
+    explanation:
+      vi: "In meinem Vortrag geht es um die Frage, ob … = bài thuyết trình xoay quanh câu hỏi liệu …. ob … eingesetzt werden sollten = có nên được sử dụng hay không, không phải cách lập trình hay tình hình hiện nay."
+    display_answer: Bài thuyết trình bàn về việc có nên dùng rô-bốt trong ngành chăm sóc trong tương lai hay không.
+
+  - key: de:exercise:b2u03l4-listen-gliederung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u03-g-vortrag-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Zunächst stelle ich zwei Möglichkeiten vor. Im Anschluss daran gehe ich auf die Situation in Vietnam ein, und zum Schluss sage ich Ihnen meine eigene Meinung.
+      options:
+        - { id: g1, text: "Hai phương án → tình hình ở Việt Nam → ý kiến riêng.", lang: vi }
+        - { id: g2, text: "Tình hình ở Việt Nam → hai phương án → ý kiến riêng.", lang: vi }
+        - { id: g3, text: "Ý kiến riêng → hai phương án → tình hình ở Việt Nam.", lang: vi }
+        - { id: g4, text: "Hai phương án → ý kiến riêng → tình hình ở Việt Nam.", lang: vi }
+    answer:
+      correct_option_id: g1
+    explanation:
+      vi: "Zunächst (trước hết) – zwei Möglichkeiten; Im Anschluss daran (tiếp theo đó) – Situation in Vietnam; zum Schluss (cuối cùng) – meine eigene Meinung."
+    display_answer: Hai phương án → tình hình ở Việt Nam → ý kiến riêng.
+
+  - key: de:exercise:b2u03l4-listen-spracherkennung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u03-erlaeutern
+    prompt:
+      audio_asset_id: null
+      fallback_text: Heute möchte ich kurz erläutern, wie Spracherkennung funktioniert. Das Programm wandelt gesprochene Sprache in Text um. Ein Vorteil ist, dass man schneller schreiben kann. Ein Nachteil betrifft den Datenschutz, denn die Aufnahmen können auf fremden Servern gespeichert werden.
+      options:
+        - { id: s1, text: "Bảo vệ dữ liệu, vì bản ghi âm có thể được lưu trên máy chủ của người khác.", lang: vi }
+        - { id: s2, text: "Viết chậm hơn so với gõ phím.", lang: vi }
+        - { id: s3, text: "Chương trình không hiểu được giọng nói.", lang: vi }
+        - { id: s4, text: "Giá của chương trình quá đắt.", lang: vi }
+    answer:
+      correct_option_id: s1
+    explanation:
+      vi: "Câu hỏi: nhược điểm được nêu là gì? Ein Nachteil betrifft den Datenschutz – nhược điểm liên quan đến bảo vệ dữ liệu, vì bản ghi có thể được lưu trên máy chủ lạ. Viết nhanh hơn là ưu điểm (Vorteil), không phải nhược điểm."
+    display_answer: Bảo vệ dữ liệu, vì bản ghi âm có thể được lưu trên máy chủ của người khác.
+
+  - key: de:exercise:b2u03l4-mcq-uebergang
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u03-g-vortrag-redemittel
+    prompt:
+      stem: "Bạn đã nói xong về ưu điểm và muốn chuyển sang phần tiếp theo. Câu nào phù hợp?"
+      stem_lang: vi
+      options:
+        - { id: u1, text: "Im Anschluss daran möchte ich auf die Nachteile eingehen.", lang: de }
+        - { id: u2, text: "Abschließend lässt sich sagen, dass die Technik nützlich ist.", lang: de }
+        - { id: u3, text: "In meinem Vortrag geht es um künstliche Intelligenz.", lang: de }
+        - { id: u4, text: "Vielen Dank für Ihre Aufmerksamkeit.", lang: de }
+    answer:
+      correct_option_id: u1
+    explanation:
+      vi: "Im Anschluss daran (tiếp theo đó) dùng để chuyển phần. Abschließend … dùng khi kết luận, In meinem Vortrag geht es um … dùng để mở đầu, còn Vielen Dank … là lời cảm ơn cuối bài."
+    display_answer: Im Anschluss daran möchte ich auf die Nachteile eingehen.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u03l4-fill-geht-um
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-vortrag-redemittel
+    prompt:
+      template: "In meinem Vortrag {{b1}} es {{b2}} die Digitalisierung in der Schule. Ein Beispiel {{b3}} ist eine Lern-App, die sich an das Niveau der Lernenden anpasst. {{b4}} lässt sich sagen, dass digitale Medien den Unterricht ergänzen, aber nicht ersetzen können."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 3 }
+        - { id: b3, width_hint: 7 }
+        - { id: b4, width_hint: 15 }
+    answer:
+      blanks:
+        b1: [geht]
+        b2: [um]
+        b3: [dafür, hierfür]
+        b4: [Abschließend, Zusammenfassend]
+    known_wrong:
+      - answer: über
+        feedback_vi: Cụm cố định là es geht um + Akkusativ.
+        error_tag: preposition
+      - answer: ist
+        feedback_vi: "Mẫu câu mở đầu dùng động từ gehen: In meinem Vortrag geht es um …."
+        error_tag: verb_form
+    explanation:
+      vi: "In meinem Vortrag geht es um + Akk (mở đầu); Ein Beispiel dafür ist … (giới thiệu ví dụ); Abschließend / Zusammenfassend lässt sich sagen, dass … (kết luận)."
+    display_answer: "In meinem Vortrag geht es um die Digitalisierung in der Schule. Ein Beispiel dafür ist eine Lern-App, die sich an das Niveau der Lernenden anpasst. Abschließend lässt sich sagen, dass digitale Medien den Unterricht ergänzen, aber nicht ersetzen können."
+
+  - key: de:exercise:b2u03l4-fill-teile
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-hauptteil
+    prompt:
+      template: "Ein guter Vortrag besteht aus drei Teilen: aus der {{b1}}, dem {{b2}} und dem {{b3}}. Ein {{b4}} (Bild mit Erklärungen) kann den Zuhörern helfen, einen Prozess besser zu verstehen."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 7 }
+        - { id: b4, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [Einleitung, Einführung]
+        b2: [Hauptteil]
+        b3: [Fazit, Schluss]
+        b4: [Schaubild]
+    known_wrong:
+      - answer: Hauptteile
+        feedback_vi: "dem Hauptteil: Dativ số ít, không có đuôi -e."
+        error_tag: plural_form
+    explanation:
+      vi: "Ba phần: die Einleitung (mở đầu, giống cái → der), der Hauptteil (phần chính → dem), das Fazit hoặc der Schluss (kết luận → dem). Ein Schaubild (giống trung, ein không đuôi) là hình minh họa có chú thích."
+    display_answer: "Ein guter Vortrag besteht aus drei Teilen: aus der Einleitung, dem Hauptteil und dem Fazit. Ein Schaubild kann den Zuhörern helfen, einen Prozess besser zu verstehen."
+
+  - key: de:exercise:b2u03l4-tr-zunaechst
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-darstellen
+    prompt:
+      source_text: "Trước hết tôi muốn trình bày tình hình ở Việt Nam. (darstellen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Zunächst möchte ich die Situation in Vietnam darstellen.
+        - Zuerst möchte ich die Situation in Vietnam darstellen.
+        - Zunächst möchte ich die Lage in Vietnam darstellen.
+        - Zuerst möchte ich die Lage in Vietnam darstellen.
+        - Ich möchte zunächst die Situation in Vietnam darstellen.
+        - Ich möchte zuerst die Situation in Vietnam darstellen.
+        - Ich möchte zunächst die Lage in Vietnam darstellen.
+        - Ich möchte zuerst die Lage in Vietnam darstellen.
+    known_wrong:
+      - answer: Zunächst ich möchte die Situation in Vietnam darstellen.
+        feedback_vi: Sau Zunächst động từ đứng ngay vị trí 2 – Zunächst möchte ich …
+        error_tag: verb_position
+      - answer: Zunächst möchte ich die Situation in Vietnam dargestellt.
+        feedback_vi: Sau möchte dùng nguyên thể ở cuối câu – darstellen.
+        error_tag: verb_form
+      - answer: Zunächst möchte ich darstellen die Situation in Vietnam.
+        feedback_vi: Nguyên thể darstellen đứng cuối câu.
+        error_tag: word_order
+    explanation:
+      vi: "Zunächst/Zuerst ở vị trí 1 → möchte ở vị trí 2, chủ ngữ ich sau đó, nguyên thể darstellen ở cuối câu. die Situation hoặc die Lage đều là \"tình hình\"."
+    display_answer: Zunächst möchte ich die Situation in Vietnam darstellen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u03l4-wb-abschliessend
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u03-fazit
+    prompt:
+      instruction: "Sắp xếp thành câu kết luận: \"Tóm lại có thể nói rằng trí tuệ nhân tạo mang lại nhiều cơ hội.\""
+      tokens:
+        - { id: a-bietet, text: bietet }
+        - { id: a-sagen, text: sagen }
+        - { id: a-abschl, text: Abschließend }
+        - { id: a-dass, text: dass }
+        - { id: a-sich, text: sich }
+        - { id: a-ki, text: künstliche Intelligenz }
+        - { id: a-laesst, text: lässt }
+        - { id: a-komma, text: "," }
+        - { id: a-chancen, text: viele Chancen }
+    answer:
+      orders:
+        - [a-abschl, a-laesst, a-sich, a-sagen, a-komma, a-dass, a-ki, a-chancen, a-bietet]
+    explanation:
+      vi: "Cụm cố định Abschließend lässt sich sagen (lässt ở vị trí 2). Câu phụ dass: chủ ngữ künstliche Intelligenz, tân ngữ viele Chancen, động từ chia bietet đứng cuối."
+    display_answer: Abschließend lässt sich sagen, dass künstliche Intelligenz viele Chancen bietet.
+
+  - key: de:exercise:b2u03l4-listen-beispiel-vietnam
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u03-veranschaulichen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich möchte das an einem Beispiel aus Vietnam veranschaulichen. Dort lernen viele junge Leute mit Apps auf dem Handy Englisch, oft auf dem Weg zur Arbeit.
+      options:
+        - { id: v1, text: "Người nói minh họa bằng ví dụ ở Việt Nam: nhiều người trẻ học tiếng Anh bằng ứng dụng trên điện thoại, thường là trên đường đi làm.", lang: vi }
+        - { id: v2, text: "Người nói minh họa bằng ví dụ ở Việt Nam: nhiều người trẻ lập trình ứng dụng học tiếng Anh.", lang: vi }
+        - { id: v3, text: "Người nói minh họa bằng ví dụ ở Việt Nam: nhiều người trẻ học tiếng Anh ở nơi làm việc.", lang: vi }
+        - { id: v4, text: "Người nói minh họa bằng ví dụ ở Việt Nam: ít người trẻ dùng điện thoại để học.", lang: vi }
+    answer:
+      correct_option_id: v1
+    explanation:
+      vi: "an einem Beispiel veranschaulichen = minh họa bằng một ví dụ. mit Apps auf dem Handy Englisch lernen = học tiếng Anh bằng ứng dụng trên điện thoại; auf dem Weg zur Arbeit = trên đường đi làm, không phải ở nơi làm việc."
+    display_answer: "Người nói minh họa bằng ví dụ ở Việt Nam: nhiều người trẻ học tiếng Anh bằng ứng dụng trên điện thoại, thường là trên đường đi làm."
+
+  - key: de:exercise:b2u03l4-mcq-meinung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u03-g-vortrag-redemittel
+    prompt:
+      stem: "Bạn muốn nêu ý kiến riêng trong phần kết. Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: o1, text: "Meiner Meinung nach überwiegen die Vorteile.", lang: de }
+        - { id: o2, text: "Meiner Meinung nach die Vorteile überwiegen.", lang: de }
+        - { id: o3, text: "Meine Meinung nach überwiegen die Vorteile.", lang: de }
+        - { id: o4, text: "Meiner Meinung überwiegen nach die Vorteile.", lang: de }
+    answer:
+      correct_option_id: o1
+    explanation:
+      vi: "Meiner Meinung nach (Dativ: meiner, nach đứng sau) là một khối ở vị trí 1, nên động từ überwiegen đứng ngay sau, ở vị trí 2."
+    display_answer: Meiner Meinung nach überwiegen die Vorteile.
