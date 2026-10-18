@@ -265,7 +265,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u01-kuendigungsfrist
     prompt:
-      template: "Die {{b1}} (die Zeit am Anfang, in der man getestet wird) dauert sechs Monate. In dieser Zeit gilt eine kürzere {{b2}} (Frist für die Kündigung). Über das Gehalt kann man oft {{b3}} (diskutieren, um sich zu einigen)."
+      template: "Die {{b1}} (die Zeit am Anfang, in der man getestet wird) dauert sechs Monate. In dieser Zeit gilt meist eine kürzere {{b2}} (Frist für die Kündigung). Über das Gehalt kann man oft {{b3}} (Verb mit v-: diskutieren, um sich zu einigen)."
       blanks:
         - { id: b1, width_hint: 10 }
         - { id: b2, width_hint: 15 }
@@ -278,13 +278,13 @@ exercises:
     known_wrong:
       - answer: Kündigung
         feedback_vi: die Kündigung là việc chấm dứt hợp đồng; thời hạn báo trước là die Kündigungsfrist (có chữ s nối).
-        error_tag: word_choice
+        error_tag: meaning
       - answer: Kündigungfrist
         feedback_vi: Từ ghép này có chữ s nối – Kündigungsfrist.
         error_tag: spelling
     explanation:
       vi: "die Probezeit = thời gian thử việc; die Kündigungsfrist = thời hạn báo trước khi nghỉ việc (Kündigung + s + Frist); über etwas verhandeln = thương lượng về điều gì."
-    display_answer: "Die Probezeit dauert sechs Monate. In dieser Zeit gilt eine kürzere Kündigungsfrist. Über das Gehalt kann man oft verhandeln."
+    display_answer: "Die Probezeit dauert sechs Monate. In dieser Zeit gilt meist eine kürzere Kündigungsfrist. Über das Gehalt kann man oft verhandeln."
 
   - key: de:exercise:b2u01l4-tr-team
     type: translate

@@ -97,7 +97,7 @@ body:
     translation:
       vi: Nhờ tự học đều đặn, cô ấy đã đào sâu kiến thức của mình.
     note:
-      vi: "Nominalstil của: Indem sie regelmäßig selbst studiert hat, … → durch + Akkusativ, trạng từ regelmäßig thành tính từ regelmäßiges."
+      vi: "Nominalstil của: Indem sie regelmäßig selbstständig gelernt hat, … → durch + Akkusativ, trạng từ regelmäßig thành tính từ regelmäßiges."
   - type: example
     target: Die Firma fördert Weiterbildung; folglich sind die Mitarbeiter gut qualifiziert.
     target_lang: de

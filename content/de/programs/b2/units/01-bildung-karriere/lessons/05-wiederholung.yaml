@@ -73,15 +73,15 @@ body:
       vi: "Thư B2 nên có vài cụm Nominalstil (wegen einer Fortbildung, nach Abschluss des Kurses), từ nối trang trọng (allerdings, folglich, auch wenn) và câu lịch sự với es (Es wäre sehr hilfreich, wenn …). Sie, Ihnen, Ihr luôn viết hoa khi là cách xưng hô lịch sự."
   - type: explain
     text:
-      vi: "Theo cấu trúc tại thời điểm soạn bài, phần Schreiben của Goethe-Zertifikat B2 có một bài viết nêu ý kiến và một thư trang trọng khoảng 100 từ theo các ý cho sẵn; cấu trúc, thời gian và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Thiếu một ý của đề là mất điểm, dù tiếng Đức đúng."
+      vi: "Theo cấu trúc tại thời điểm soạn bài, phần Schreiben của Goethe-Zertifikat B2 có một bài viết nêu ý kiến và một thư trang trọng khoảng 100 từ theo các ý cho sẵn; cấu trúc, thời gian và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Thiếu một ý của đề thường bị trừ điểm, dù tiếng Đức đúng."
   - type: deep_explain
     text:
       vi: "Một thư tốt không cần nhiều cấu trúc khó, nhưng mỗi câu phải rõ chức năng: nêu lý do (wegen …, da …), đề nghị (Ich möchte Sie bitten, … zu …; Könnten Sie …?), đề xuất giải pháp (indem …; Es wäre hilfreich, wenn …), kết thư. Tránh lẫn ngữ vực: không dùng du, Hallo, Liebe Grüße trong thư trang trọng. Khi đọc ý kiến, chú ý từ phủ định và nhượng bộ: zunächst nicht (lúc đầu thì không), kaum weniger (hầu như không ít hơn), auch wenn (dù cho) thường là chỗ đề bài cài bẫy."
   - type: example
-    target: "Sehr geehrte Frau Becker, wegen einer beruflichen Fortbildung kann ich vom 10. bis 14. März leider nicht am Abendkurs teilnehmen. Die Fortbildung wird von meinem Arbeitgeber gefördert; folglich kann ich den Termin nicht verschieben. Ich möchte Sie daher bitten, mir die Unterlagen per E-Mail zu schicken."
+    target: "Sehr geehrte Frau Becker, wegen einer beruflichen Fortbildung kann ich vom 10. bis 14. März leider nicht am Abendkurs teilnehmen. Die Fortbildung ist für meine Stelle verpflichtend; folglich kann ich den Termin nicht verschieben. Ich möchte Sie daher bitten, mir die Unterlagen per E-Mail zu schicken."
     target_lang: de
     translation:
-      vi: "Kính gửi bà Becker, vì tham gia một khoá bồi dưỡng nghiệp vụ, rất tiếc từ ngày 10 đến 14 tháng Ba tôi không thể dự lớp buổi tối. Khoá bồi dưỡng do công ty tôi tài trợ; vì vậy tôi không thể dời lịch. Do đó, tôi xin phép đề nghị bà gửi tài liệu cho tôi qua e-mail."
+      vi: "Kính gửi bà Becker, vì tham gia một khoá bồi dưỡng nghiệp vụ, rất tiếc từ ngày 10 đến 14 tháng Ba tôi không thể dự lớp buổi tối. Khoá bồi dưỡng này là bắt buộc đối với vị trí của tôi; vì vậy tôi không thể dời lịch. Do đó, tôi xin phép đề nghị bà gửi tài liệu cho tôi qua e-mail."
     note:
       vi: "Phần đầu thư mẫu: lời chào (Frau → Sehr geehrte), lý do bằng Nominalstil (wegen + Genitiv), hệ quả với folglich (đảo động từ), lời đề nghị Ich möchte Sie bitten, … zu …"
   - type: example
@@ -254,7 +254,7 @@ exercises:
     stage: recall
     answer_lang: de
     difficulty: 3
-    item: de:item:b2u01-g-es-korrelat
+    item: de:item:b1u10-g-formeller-brief
     prompt:
       template: "Sehr {{b1}} Damen und Herren, … Ich würde mich über eine kurze Rückmeldung {{b2}}. Mit freundlichen {{b3}}"
       blanks:
@@ -294,9 +294,9 @@ exercises:
         - { id: b3, width_hint: 10 }
     answer:
       blanks:
-        b1: [Krankheit]
+        b1: [Krankheit, Erkrankung]
         b2: [Anmeldung]
-        b3: [Beginn, dem Beginn]
+        b3: [Beginn, dem Beginn, Anfang, dem Anfang]
     known_wrong:
       - answer: Anmelden
         feedback_vi: Sau meiner (giống cái) cần danh từ giống cái đuôi -ung – die Anmeldung.
@@ -305,7 +305,7 @@ exercises:
         feedback_vi: krank là tính từ; danh từ là die Krankheit (đuôi -heit, giống cái).
         error_tag: word_choice
     explanation:
-      vi: "krank sein → die Krankheit (wegen meiner Krankheit, Genitiv); sich anmelden → die Anmeldung (nach meiner Anmeldung, Dativ); beginnen → der Beginn (vor Beginn des Kurses, cụm thường bỏ mạo từ; vor dem Beginn cũng đúng)."
+      vi: "krank sein → die Krankheit (wegen meiner Krankheit, Genitiv); sich anmelden → die Anmeldung (nach meiner Anmeldung, Dativ); beginnen → der Beginn (vor Beginn des Kurses, cụm thường bỏ mạo từ; vor dem Beginn hay vor Anfang des Kurses cũng đúng). Ở ô đầu, die Erkrankung cũng đúng."
     display_answer: "Weil ich krank war → wegen meiner Krankheit · Nachdem ich mich angemeldet hatte → nach meiner Anmeldung · Bevor der Kurs beginnt → vor Beginn des Kurses"
 
   - key: de:exercise:b2u01l5-tr-antwort
@@ -328,6 +328,7 @@ exercises:
         - Es freut mich sehr, dass Sie so rasch geantwortet haben.
         - Es hat mich sehr gefreut, dass Sie so schnell geantwortet haben.
         - Es hat mich gefreut, dass Sie so schnell geantwortet haben.
+        - Es hat mich sehr gefreut, dass Sie mir so schnell geantwortet haben.
     known_wrong:
       - answer: Es freut mich, dass du so schnell geantwortet hast.
         feedback_vi: Thư trang trọng dùng Sie (viết hoa) – dass Sie so schnell geantwortet haben.
@@ -348,7 +349,7 @@ exercises:
     stage: application
     answer_lang: de
     difficulty: 4
-    item: de:item:b2u01-g-es-korrelat
+    item: de:item:b1u10-g-formeller-brief
     prompt:
       instruction: "Sắp xếp thành câu trong thư trang trọng: \"Tôi xin đề nghị anh/chị dời buổi hẹn sang thứ Năm.\""
       tokens:

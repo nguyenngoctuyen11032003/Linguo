@@ -227,7 +227,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u01-g-adversativ-konzessiv
     prompt:
-      template: "{{b1}} (ein Wort: auf der einen Seite) verdient man als Führungskraft mehr Geld, {{b2}} (ein Wort: auf der anderen Seite) trägt man mehr Verantwortung. {{b3}} (ein Wort: trotzdem, formeller) möchte ich aufsteigen."
+      template: "{{b1}} (ein Wort: auf der einen Seite) verdient man als Führungskraft mehr Geld, {{b2}} (ein Wort: auf der anderen Seite) trägt man mehr Verantwortung. {{b3}} (ein Wort: formelleres Synonym von trotzdem, nicht trotzdem selbst) möchte ich aufsteigen."
       blanks:
         - { id: b1, width_hint: 11 }
         - { id: b2, width_hint: 13 }
@@ -239,7 +239,7 @@ exercises:
         b3: [Dennoch, Gleichwohl, Nichtsdestotrotz]
     known_wrong:
       - answer: Trotzdem
-        feedback_vi: trotzdem đúng nghĩa, nhưng đề yêu cầu từ trang trọng hơn có cùng nghĩa – dennoch.
+        feedback_vi: Trotzdem là tiếng Đức đúng và cùng nghĩa, nhưng đề yêu cầu một từ khác, trang trọng hơn – dennoch.
         error_tag: word_choice
     explanation:
       vi: "einerseits … andererseits = một mặt … mặt khác; cả hai đứng ở vị trí 1 nên động từ (verdient, trägt) theo ngay sau. dennoch là từ trang trọng cùng nghĩa với trotzdem, cũng đứng ở vị trí 1 kèm đảo: Dennoch möchte ich …"
@@ -267,6 +267,8 @@ exercises:
         - Auch wenn die Arbeit hart ist, gebe ich trotzdem nicht auf.
         - Auch wenn die Arbeit schwer ist, gebe ich trotzdem nicht auf.
         - Auch wenn die Arbeit anstrengend ist, ich gebe trotzdem nicht auf.
+        - Auch wenn die Arbeit hart ist, ich gebe trotzdem nicht auf.
+        - Auch wenn die Arbeit schwer ist, ich gebe trotzdem nicht auf.
     known_wrong:
       - answer: Auch wenn die Arbeit ist anstrengend, gebe ich nicht auf.
         feedback_vi: Trong câu phụ auch wenn, động từ chia ist đứng cuối – Auch wenn die Arbeit anstrengend ist, …
@@ -303,6 +305,8 @@ exercises:
         - Das Gehalt ist gut, ich muss allerdings häufig Überstunden machen.
         - Der Lohn ist hoch, allerdings muss ich oft Überstunden machen.
         - Der Lohn ist gut, allerdings muss ich oft Überstunden machen.
+        - Das Gehalt ist zwar hoch, allerdings muss ich oft Überstunden machen.
+        - Das Gehalt ist zwar gut, allerdings muss ich oft Überstunden machen.
     known_wrong:
       - answer: Das Gehalt ist hoch, allerdings ich muss oft Überstunden machen.
         feedback_vi: allerdings chiếm vị trí 1 của vế sau, nên muss đứng ngay sau – allerdings muss ich …

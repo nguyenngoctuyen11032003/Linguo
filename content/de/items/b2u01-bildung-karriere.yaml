@@ -49,7 +49,7 @@ items:
             vi: Việc công nhận bằng cấp nước ngoài có thể mất nhiều tháng.
         - target: Nach Abschluss des Studiums beginnt für viele die Stellensuche.
           translation:
-            vi: Học xong đại học, với nhiều người là bắt đầu cuộc tìm việc.
+            vi: Học xong đại học, nhiều người bắt đầu đi tìm việc.
         - target: Deutschlands Hochschulen bieten auch englischsprachige Studiengänge an.
           translation:
             vi: Các trường đại học của Đức cũng có những ngành học bằng tiếng Anh.
@@ -112,7 +112,7 @@ items:
       meaning:
         vi: con đường học vấn, quá trình học tập
       examples:
-        - target: Über den zweiten Bildungsweg kann man das Abitur auch als Erwachsener nachholen.
+        - target: Auf dem zweiten Bildungsweg kann man das Abitur auch als Erwachsener nachholen.
           translation:
             vi: Qua hệ giáo dục dành cho người đi làm (zweiter Bildungsweg), người lớn cũng có thể học bù để lấy bằng Abitur.
         - target: Ihr Bildungsweg führte von der Realschule über eine Ausbildung zum Studium.
@@ -374,7 +374,7 @@ items:
           translation:
             vi: Để làm hồ sơ, anh/chị cần giấy tờ chứng minh kinh nghiệm làm việc.
       confusion:
-        vi: "Nachweis + Genitiv (eines Nachweises Ihrer Kenntnisse) hoặc Nachweis über + Akkusativ. Trong văn bản hành chính, Nachweis hay đứng cạnh Zeugnis, Zertifikat, Bescheinigung."
+        vi: "Nachweis + Genitiv (der Nachweis Ihrer Kenntnisse) hoặc Nachweis über + Akkusativ. Trong văn bản hành chính, Nachweis hay đứng cạnh Zeugnis, Zertifikat, Bescheinigung."
 
   - key: de:item:b2u01-nachweisen
     type: vocab
@@ -483,7 +483,7 @@ items:
           translation:
             vi: Anh tôi muốn nhanh chóng thăng tiến, còn tôi thì muốn có nhiều thời gian hơn cho gia đình.
       confusion:
-        vi: "jedoch không đứng một mình kèm dấu phẩy như \"however,\" trong tiếng Anh: viết Die Arbeit ist jedoch anstrengend hoặc Jedoch ist die Arbeit anstrengend. wohingegen chỉ sự đối lập giữa hai việc (còn …), không mang nghĩa \"mặc dù\" như obwohl."
+        vi: "jedoch không đứng một mình kèm dấu phẩy như \"however,\" trong tiếng Anh: viết Die Arbeit ist jedoch anstrengend hoặc Jedoch ist die Arbeit anstrengend (dạng jedoch không đảo như aber có tồn tại nhưng hiếm). wohingegen chỉ sự đối lập giữa hai việc (còn …), không mang nghĩa \"mặc dù\" như obwohl."
 
   - key: de:item:b2u01-g-auch-wenn
     type: grammar_point
@@ -1341,9 +1341,9 @@ items:
         - target: Ich finde es wichtig, im Team zu arbeiten.
           translation:
             vi: Tôi thấy làm việc nhóm là điều quan trọng.
-        - target: Auf die Stellenanzeige meldeten sich viele Bewerber.
+        - target: Es meldeten sich viele Bewerber auf die Anzeige.
           translation:
-            vi: Có nhiều ứng viên đã liên hệ sau tin tuyển dụng.
+            vi: Đã có nhiều ứng viên liên hệ sau khi thấy tin tuyển dụng.
       confusion:
         vi: "Ở câu có es giữ chỗ (Es meldeten sich viele Bewerber), động từ chia theo chủ ngữ thật (viele Bewerber → meldeten), không theo es. Với một số động từ, es trước câu dass là tuỳ chọn (Ich bedauere [es], dass …); với finden + tính từ, văn viết nên luôn có es."
 
@@ -1366,7 +1366,7 @@ items:
           translation:
             vi: Xin anh/chị ghi mức lương mong muốn trong hồ sơ ứng tuyển.
       confusion:
-        vi: "Trong phỏng vấn hay dùng số nhiều: Ihre Gehaltsvorstellungen. Thường nói theo lương năm trước thuế (brutto im Jahr)."
+        vi: "Trong phỏng vấn hay dùng số nhiều: Ihre Gehaltsvorstellungen. Ở Đức thường nêu theo lương năm trước thuế (brutto im Jahr), nhưng tuỳ ngành và công ty."
 
   - key: de:item:b2u01-probezeit
     type: vocab

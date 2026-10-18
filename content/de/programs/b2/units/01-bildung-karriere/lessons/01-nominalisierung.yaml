@@ -75,7 +75,7 @@ body:
       vi: "Mỗi liên từ có một giới từ tương ứng: weil → wegen/aufgrund + Gen, obwohl → trotz + Gen, während → während + Gen, nachdem → nach + Dat, bevor → vor + Dat, wenn → bei + Dat, um … zu → zum/zur + Dat. Giới từ quyết định cách của danh từ đi sau: wegen des Gehalts, nach dem Studium, bei der Bewerbung."
   - type: explain
     text:
-      vi: "Động từ thành danh từ theo ba cách chính: thêm -ung (bewerben → die Bewerbung, anerkennen → die Anerkennung), viết hoa nguyên thể (lernen → das Lernen) hoặc dùng dạng gốc (abschließen → der Abschluss). Danh từ đuôi -ung là giống cái, nguyên thể danh từ hoá là giống trung; dạng gốc thì phải học thuộc giống."
+      vi: "Động từ thành danh từ theo ba cách chính: thêm -ung (bewerben → die Bewerbung, anerkennen → die Anerkennung), viết hoa nguyên thể (lernen → das Lernen) hoặc dùng dạng gốc (abschließen → der Abschluss). Danh từ tạo bằng hậu tố -ung là giống cái (khác với từ một âm tiết như der Sprung), nguyên thể danh từ hoá là giống trung; dạng gốc thì phải học thuộc giống."
   - type: explain
     text:
       vi: "Chủ ngữ hoặc tân ngữ của động từ trở thành Genitiv đứng sau danh từ mới: man erkennt den Abschluss an → die Anerkennung des Abschlusses. Trạng từ trở thành tính từ có đuôi: man lernt regelmäßig → das regelmäßige Lernen; chủ ngữ là đại từ thì thành mạo từ sở hữu: ich bewerbe mich → meine Bewerbung."
@@ -110,7 +110,7 @@ body:
     target: Vor dem Umzug nach Deutschland kann man die Anerkennung des Abschlusses schon beantragen.
     target_lang: de
     translation:
-      vi: Ngay trước khi chuyển sang Đức, bạn đã có thể nộp đơn xin công nhận bằng.
+      vi: Ngay từ trước khi chuyển sang Đức, người ta đã có thể nộp đơn xin công nhận bằng.
     note:
       vi: "Verbalstil: Bevor man nach Deutschland umzieht, … → bevor thành vor + Dativ (der Umzug → vor dem Umzug)."
   - type: example
@@ -309,6 +309,13 @@ exercises:
         - Sie ist nach Abschluss des Studiums nach Berlin gezogen.
         - Sie zog nach dem Studium nach Berlin.
         - Sie ist nach dem Studium nach Berlin gezogen.
+        - Sie zog nach Abschluss ihres Studiums nach Berlin.
+        - Nach Abschluss des Studiums zog sie nach Berlin um.
+        - Nach Abschluss des Studiums ist sie nach Berlin umgezogen.
+        - Nach dem Studium zog sie nach Berlin um.
+        - Nach dem Studium ist sie nach Berlin umgezogen.
+        - Nach ihrem Studienabschluss zog sie nach Berlin.
+        - Nach ihrem Studienabschluss ist sie nach Berlin gezogen.
     known_wrong:
       - answer: Nachdem Abschluss des Studiums zog sie nach Berlin.
         feedback_vi: nachdem là liên từ, cần cả một câu. Trước danh từ dùng giới từ nach – Nach Abschluss des Studiums …
@@ -402,5 +409,5 @@ exercises:
     answer:
       correct_option_id: g3a
     explanation:
-      vi: "Annas Abschluss (tên riêng + s đứng trước) là cách nói \"bằng của Anna\"; sau Anerkennung, cụm này được nối bằng von + Dativ. Không có von thì Abschluss phải ở Genitiv (Abschlusses) nên câu thứ hai sai; der Abschluss là Nominativ, còn des Abschluss thiếu đuôi -es."
+      vi: "Annas Abschluss (tên riêng + s đứng trước) là cách nói \"bằng của Anna\"; sau Anerkennung, cụm này được nối bằng von + Dativ. Câu thứ hai thiếu von mà Abschluss lại không ở Genitiv nên sai; một cách tự nhiên khác là die Anerkennung des Abschlusses von Anna. der Abschluss là Nominativ, còn des Abschluss thiếu đuôi -es."
     display_answer: Die Anerkennung von Annas Abschluss dauerte drei Monate.
