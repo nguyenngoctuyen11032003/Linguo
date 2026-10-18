@@ -67,7 +67,7 @@ body:
       vi: "Để nói về cả nam và nữ, văn bản Đức hay gọi cả hai dạng (Bürgerinnen und Bürger), dùng từ trung tính (Studierende, Lehrkräfte) hoặc ký hiệu (Lehrer*innen, Lehrer:innen). Các ký hiệu đang gây tranh luận, một số cơ quan và trường học ở vài bang hạn chế dùng, và quy tắc chính tả chính thức hiện chưa công nhận chúng (có thể thay đổi). Bạn chỉ cần nhận biết; khi tự viết, gọi cả hai dạng hoặc dùng từ trung tính là an toàn."
   - type: deep_explain
     text:
-      vi: "Từ Partizip I (đang làm gì): die Reisenden, die Studierenden, die Lehrenden, die Auszubildenden (người học nghề, nói tắt Azubis). Từ Partizip II (đã ở trạng thái nào): der/die Angestellte, der/die Verletzte, die Geflüchteten. Trên báo về di cư bạn còn gặp Schutzsuchende, Asylsuchende, Zugewanderte – tất cả theo cùng quy tắc biến cách như tính từ. Một số từ quen như der Beamte (công chức) cũng biến cách như tính từ (ein Beamter), nhưng dạng nữ lại là die Beamtin. Về pháp lý: quy chế tị nạn, quy trình xin Asyl và quyền lợi đi kèm do luật quy định và có thể thay đổi, hãy kiểm tra cơ quan có thẩm quyền; các người trong ví dụ đều là hư cấu."
+      vi: "Từ Partizip I (đang làm gì): die Reisenden, die Studierenden, die Lehrenden, die Auszubildenden (người học nghề, nói tắt Azubis). Từ Partizip II (đã ở trạng thái nào): der/die Angestellte, der/die Verletzte, die Geflüchteten. Trên báo về di cư bạn còn gặp Schutzsuchende, Asylsuchende, Zugewanderte – tất cả theo cùng quy tắc biến cách như tính từ. Một số từ quen như der Beamte (công chức) cũng biến cách như tính từ (ein Beamter), nhưng dạng nữ lại là die Beamtin. Về pháp lý: quy chế tị nạn, quy trình xin Asyl và quyền lợi đi kèm do luật quy định và có thể thay đổi, hãy kiểm tra cơ quan có thẩm quyền; những người trong ví dụ đều là hư cấu."
   - type: example
     target: Ein Geflüchteter aus unserem Haus gibt jetzt selbst Deutschkurse.
     target_lang: de
@@ -229,10 +229,7 @@ exercises:
         b2: [Geflüchteter]
     known_wrong:
       - answer: Geflüchteten
-        feedback_vi: Sau số đếm (không mạo từ) dùng đuôi mạnh -e – zwanzig Geflüchtete. Đuôi -en chỉ dùng sau die/alle hoặc ở Dativ.
-        error_tag: adj_ending
-      - answer: Geflüchteten
-        feedback_vi: Sau ein (giống đực, Nominativ) cần đuôi -er – ein Geflüchteter, như ein junger Mann.
+        feedback_vi: Ở cả hai chỗ đều không dùng đuôi -en (đuôi này dùng ví dụ sau die/alle ở số nhiều hoặc ở Dativ). Sau số đếm không mạo từ – zwanzig Geflüchtete; sau ein (giống đực, Nominativ) – ein Geflüchteter.
         error_tag: adj_ending
     explanation:
       vi: "Phân từ danh từ hoá viết hoa và chia đuôi như tính từ. zwanzig + số nhiều không mạo từ → Geflüchtete; ein + người nam, Nominativ → Geflüchteter (đuôi -er như ein junger Mann)."
@@ -284,6 +281,10 @@ exercises:
         - Alle Reisenden müssen den Pass vorzeigen.
         - Alle Reisenden müssen ihren Reisepass zeigen.
         - Alle Reisenden müssen ihren Reisepass vorzeigen.
+        - Alle Reisenden müssen ihre Reisepässe zeigen.
+        - Alle Reisenden müssen ihre Reisepässe vorzeigen.
+        - Alle Reisenden müssen den Reisepass zeigen.
+        - Alle Reisenden müssen den Reisepass vorzeigen.
     known_wrong:
       - answer: Alle Reisende müssen ihren Pass zeigen.
         feedback_vi: Sau alle, phân từ danh từ hoá có đuôi -en – alle Reisenden.
@@ -303,7 +304,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u06-vielfalt
     prompt:
-      stem: "Aus einer Schulzeitung: An unserer Schule lernen Kinder aus über zwanzig Ländern. Einige sind mit ihren Familien geflohen, andere sind hier geboren. Unsere Lehrkräfte sprechen zusammen mehr als zehn Sprachen. Für neue Schülerinnen und Schüler gibt es Paten: Ältere Jugendliche helfen ihnen in den ersten Wochen. Diskriminierung hat bei uns keinen Platz – Vielfalt ist unsere Stärke. — Was steht im Text?"
+      stem: "Aus einer Schulzeitung: An unserer Schule lernen Kinder aus über zwanzig Ländern. Einige sind mit ihren Familien geflohen, andere sind hier geboren. Unsere Lehrkräfte sprechen zusammen mehr als zehn Sprachen. Für neue Schülerinnen und Schüler gibt es Patinnen und Paten: Ältere Jugendliche helfen ihnen in den ersten Wochen. Diskriminierung hat bei uns keinen Platz – Vielfalt ist unsere Stärke. — Was steht im Text?"
       stem_lang: de
       options:
         - { id: c1a, text: "Alle Kinder an der Schule sind mit ihren Familien geflohen.", lang: de }
@@ -328,7 +329,7 @@ exercises:
         - { id: w-wohnungssuche, text: Wohnungssuche }
         - { id: w-hat, text: hat }
         - { id: w-geholfen, text: geholfen }
-        - { id: w-sie, text: Sie }
+        - { id: w-sie, text: sie }
         - { id: w-der, text: der }
         - { id: w-einer, text: einer }
         - { id: w-bei, text: bei }
@@ -336,8 +337,9 @@ exercises:
     answer:
       orders:
         - [w-sie, w-hat, w-einer, w-gefluechteten, w-bei, w-der, w-wohnungssuche, w-geholfen]
+        - [w-bei, w-der, w-wohnungssuche, w-hat, w-sie, w-einer, w-gefluechteten, w-geholfen]
     explanation:
-      vi: "helfen + Dativ: einer Geflüchteten (giống cái, Dativ, sau einer đuôi -en – như tính từ danh từ hoá einer Kranken ở B1). Tân ngữ Dativ đứng trước cụm giới từ bei der Wohnungssuche; Partizip II geholfen ở cuối."
+      vi: "helfen + Dativ: einer Geflüchteten (giống cái, Dativ, sau einer đuôi -en – như tính từ danh từ hoá einer Kranken ở B1). Tân ngữ Dativ đứng trước cụm giới từ bei der Wohnungssuche; Partizip II geholfen ở cuối. Cũng có thể mở đầu bằng cụm giới từ: Bei der Wohnungssuche hat sie einer Geflüchteten geholfen."
     display_answer: Sie hat einer Geflüchteten bei der Wohnungssuche geholfen.
 
   - key: de:exercise:b2u06l3-tr-benachteiligt

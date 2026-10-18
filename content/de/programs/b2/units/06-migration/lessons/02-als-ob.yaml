@@ -262,13 +262,13 @@ exercises:
         b2: [hätte, habe]
     known_wrong:
       - answer: ist
-        feedback_vi: So sánh không thật sau als ob cần Konjunktiv II – aufgewachsen wäre.
+        feedback_vi: So sánh không thật sau als ob, trong văn chuẩn, cần Konjunktiv II – aufgewachsen wäre (Indikativ chỉ gặp trong khẩu ngữ).
         error_tag: konjunktiv_form
       - answer: war
         feedback_vi: war là Präteritum. Sau als ob dùng Konjunktiv II – wäre.
         error_tag: konjunktiv_form
       - answer: hat
-        feedback_vi: Sau als (không ob) động từ Konjunktiv II đứng ngay sau – als hätte er keine Zeit.
+        feedback_vi: hat là Indikativ. Sau als (không ob) cần Konjunktiv II, đứng ngay sau als – als hätte er keine Zeit.
         error_tag: konjunktiv_form
       - answer: hatte
         feedback_vi: hatte là Präteritum. Cần Konjunktiv II – hätte.
@@ -305,7 +305,7 @@ exercises:
         feedback_vi: Động từ chính cũng ở nguyên thể – verlängern sollen.
         error_tag: participle_form
       - answer: Ich sollte das Visum früher verlängern.
-        feedback_vi: "Câu này là lời khuyên ở hiện tại. \"Lẽ ra nên\" (quá khứ) cần hätte … verlängern sollen."
+        feedback_vi: "Câu này là lời khuyên ở hiện tại (hoặc Präteritum: tôi đã được yêu cầu gia hạn). \"Lẽ ra nên\" (quá khứ, đã không làm) cần hätte … verlängern sollen."
         error_tag: konjunktiv_form
     explanation:
       vi: "\"Lẽ ra nên\" về quá khứ = hätte + nguyên thể + sollen ở cuối câu. das/mein Visum verlängern = gia hạn visa."
@@ -332,8 +332,10 @@ exercises:
       orders:
         - [s-sie, s-haetten, s-mir, s-das, s-frueher, s-sagen, s-sollen]
         - [s-das, s-haetten, s-sie, s-mir, s-frueher, s-sagen, s-sollen]
+        - [s-frueher, s-haetten, s-sie, s-mir, s-das, s-sagen, s-sollen]
+        - [s-mir, s-haetten, s-sie, s-das, s-frueher, s-sagen, s-sollen]
     explanation:
-      vi: "hätten ở vị trí 2; trước nó là Sie (hoặc das, nếu bạn muốn nhấn mạnh: Das hätten Sie mir früher sagen sollen). Đại từ chỉ định das thường đứng sau mir, rồi đến früher. Cuối câu: sagen rồi sollen."
+      vi: "hätten ở vị trí 2; trước nó thường là Sie, hoặc một thành phần bạn muốn nhấn mạnh: Das hätten Sie mir früher sagen sollen / Früher hätten Sie mir das sagen sollen. Đại từ chỉ định das thường đứng sau mir, rồi đến früher. Cuối câu: sagen rồi sollen."
     display_answer: Sie hätten mir das früher sagen sollen.
 
   - key: de:exercise:b2u06l2-wb-als-waere

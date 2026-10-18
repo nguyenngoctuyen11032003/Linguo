@@ -66,7 +66,7 @@ body:
       vi: "Trật tự từ như câu điều kiện B1: trong vế wenn, hätte/wäre đứng cuối (wenn ich das gewusst hätte); vế chính bắt đầu bằng hätte/wäre, Partizip II ở cuối (…, wäre ich früher gekommen). Bỏ wenn thì đưa hätte/wäre lên đầu: Hätte ich das gewusst, wäre ich früher gekommen."
   - type: explain
     text:
-      vi: "Ước về quá khứ: Wenn ich doch früher Deutsch gelernt hätte! hoặc Ich wünschte, ich hätte früher Deutsch gelernt. Đừng nhầm hätte/wäre (có umlaut, không có thật) với hatte/war (Plusquamperfekt, chuyện có thật): Ich hatte das schon gewusst = tôi đã biết từ trước; Ich hätte das gewusst = lẽ ra tôi đã biết."
+      vi: "Ước về quá khứ: Wenn ich doch früher Deutsch gelernt hätte! hoặc Ich wünschte, ich hätte früher Deutsch gelernt. Đừng nhầm hätte/wäre (có umlaut, không có thật) với hatte/war (Plusquamperfekt, chuyện có thật): Ich hatte das schon gewusst = tôi đã biết từ trước (thật); Ich hätte das gern gewusst = tôi đã rất muốn biết điều đó (nhưng đã không được biết)."
   - type: deep_explain
     text:
       vi: "Điều kiện và kết quả có thể ở hai thời điểm khác nhau: Wenn ich damals nicht eingewandert wäre, würde ich heute nicht in Hamburg leben (điều kiện quá khứ, kết quả hiện tại); Wenn ich besser Deutsch könnte, hätte ich die Stelle damals bekommen (điều kiện lâu dài, kết quả quá khứ). Dạng würde + Partizip II + haben/sein (ich würde das gemacht haben) có tồn tại nhưng nặng nề và hiếm; hãy dùng hätte/wäre + Partizip II. Với auch wenn / selbst wenn (B2U01) bạn nói rằng kết quả vẫn không đổi: Selbst wenn ich das gewusst hätte, hätte ich nichts anders gemacht. Về từ vựng: Migration là từ chung; Einwanderung/Zuwanderung nhìn từ nước đến, Auswanderung nhìn từ nước đi; der Migrant theo n-Deklination (den/dem/des Migranten), còn die Migrantin thì không."
@@ -102,7 +102,7 @@ body:
     target: Als wir in Deutschland ankamen, hatte mein Bruder schon eine Wohnung gefunden. Sonst wären wir zuerst bei Freunden geblieben.
     target_lang: de
     translation:
-      vi: Khi chúng tôi đến Đức, anh trai tôi đã tìm được nhà rồi. Nếu không thì lúc đầu chúng tôi đã phải ở nhờ nhà bạn bè.
+      vi: Khi chúng tôi đến Đức, anh trai tôi đã tìm được nhà rồi. Nếu không thì lúc đầu chúng tôi đã ở nhờ nhà bạn bè.
     note:
       vi: "hatte … gefunden là Plusquamperfekt: chuyện có thật, xảy ra trước. wären … geblieben là Konjunktiv II quá khứ: chuyện không xảy ra. sonst = nếu không thì."
   - type: example
@@ -288,6 +288,8 @@ exercises:
         - Wenn ich nur früher Deutsch gelernt hätte!
         - Wenn ich doch nur früher Deutsch gelernt hätte!
         - Wenn ich bloß früher Deutsch gelernt hätte!
+        - Wenn ich doch bloß früher Deutsch gelernt hätte!
+        - Wenn ich bloß eher Deutsch gelernt hätte!
         - Wenn ich früher Deutsch gelernt hätte!
         - Wenn ich doch schon früher Deutsch gelernt hätte!
         - Wenn ich nur schon früher Deutsch gelernt hätte!
@@ -410,5 +412,5 @@ exercises:
     answer:
       correct_option_id: s1a
     explanation:
-      vi: "selbst wenn (B2U01) + Konjunktiv II quá khứ: kết quả vẫn không đổi (trotzdem = vẫn). kennen → ich habe gekannt → gekannt hätte; auswandern → ich bin ausgewandert → wäre ausgewandert. Phương án 2 sai trợ động từ, phương án 3 dùng Präteritum kannte (không phải giả định), phương án 4 ghép würde với Partizip II – không có dạng này."
+      vi: "selbst wenn (B2U01) + Konjunktiv II quá khứ: kết quả vẫn không đổi (trotzdem = vẫn). kennen → ich habe gekannt → gekannt hätte; auswandern → ich bin ausgewandert → wäre ausgewandert. Phương án 2 sai trợ động từ, phương án 3 dùng Präteritum kannte (không phải giả định), phương án 4 ghép würde với Partizip II mà thiếu sein (dạng đầy đủ würde … ausgewandert sein có tồn tại nhưng nặng nề, hiếm dùng; hãy dùng wäre … ausgewandert)."
     display_answer: Selbst wenn ich alle Probleme vorher gekannt hätte, wäre ich trotzdem ausgewandert.

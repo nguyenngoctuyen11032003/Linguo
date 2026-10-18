@@ -31,7 +31,7 @@ items:
           translation:
             vi: Tôi không ngờ đấy!
       confusion:
-        vi: "Đừng nhầm với Plusquamperfekt (hatte/war + Partizip II, không có umlaut), dùng cho chuyện có thật xảy ra trước một chuyện khác. Ich hatte gewartet = tôi đã đợi (thật); ich hätte gewartet = lẽ ra tôi đã đợi (nhưng thực tế không)."
+        vi: "Đừng nhầm với Plusquamperfekt (hatte/war + Partizip II, không có umlaut), dùng cho chuyện có thật xảy ra trước một chuyện khác. Ich hatte gewartet = tôi đã đợi (thật); ich hätte gewartet = (nếu …) thì tôi đã đợi (nhưng thực tế không đợi)."
 
   - key: de:item:b2u06-g-irreale-vergangenheit
     type: grammar_point
@@ -1173,7 +1173,7 @@ items:
           translation:
             vi: Lý do ra nước ngoài sinh sống rất đa dạng.
       confusion:
-        vi: "Danh từ: die Vielfalt. Đuôi -fältig (có umlaut) như einfältig, mannigfaltig."
+        vi: "Danh từ: die Vielfalt. Đuôi -fältig có umlaut (như einfältig); riêng mannigfaltig không có umlaut."
 
   - key: de:item:b2u06-tolerant
     type: vocab
@@ -1472,7 +1472,7 @@ items:
           translation:
             vi: Trẻ đa ngữ thường chuyển qua lại giữa các ngôn ngữ một cách rất tự nhiên.
       confusion:
-        vi: "mehr (nhiều hơn) + Sprache + -ig. zweisprachig là đúng hai thứ tiếng; mehrsprachig là từ hai trở lên."
+        vi: "mehr (nhiều hơn) + Sprache + -ig. zweisprachig là đúng hai thứ tiếng; mehrsprachig thường chỉ nhiều hơn hai thứ tiếng, nhưng theo nghĩa rộng cũng bao gồm người song ngữ."
 
   - key: de:item:b2u06-dazugehoeren
     type: vocab

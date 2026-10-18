@@ -62,7 +62,7 @@ body:
       vi: "Thì trong câu phụ theo đúng thực tế: chuyện đã qua dùng Perfekt hoặc Präteritum (…, ohne dass ich es gemerkt habe / merkte). Câu với (an)statt dass thường so sánh hai việc và hơi mang ý phê bình: Statt dass die Behörde mir schreibt, muss ich jedes Mal anrufen."
   - type: deep_explain
     text:
-      vi: "anstatt dass và statt dass cùng nghĩa; anstatt nghe hơi trang trọng hơn một chút. Khi cùng chủ ngữ, ohne dass vẫn đúng ngữ pháp nhưng nghe nặng: Er ging, ohne dass er sich verabschiedete → tự nhiên hơn: Er ging, ohne sich zu verabschieden. Trong câu phụ, đại từ thường đứng trước chủ ngữ là danh từ hoặc jemand: ohne dass es jemand gemerkt hat. Về chủ đề: Muttersprache là tiếng học đầu tiên; ai lớn lên với hai thứ tiếng là zweisprachig, với nhiều hơn là mehrsprachig. Heimweh là nhớ nhà, nhớ quê; das Zuhause (nơi mình coi là nhà) khác zu Hause (ở nhà). Cụm hay dùng khi kể: sich an + Akkusativ anpassen, sich fremd fühlen, das Gefühl haben dazuzugehören, die Sprachbarriere überwinden."
+      vi: "anstatt dass và statt dass cùng nghĩa và dùng như nhau. Trong văn viết đôi khi gặp Konjunktiv II sau ohne dass mà nghĩa không đổi: ohne dass es jemand gemerkt hätte (chỉ cần nhận biết). Khi cùng chủ ngữ, ohne dass vẫn đúng ngữ pháp nhưng nghe nặng: Er ging, ohne dass er sich verabschiedete → tự nhiên hơn: Er ging, ohne sich zu verabschieden. Trong câu phụ, đại từ thường đứng trước chủ ngữ là danh từ hoặc jemand: ohne dass es jemand gemerkt hat. Về chủ đề: Muttersprache là tiếng học đầu tiên; ai lớn lên với hai thứ tiếng là zweisprachig, với nhiều hơn là mehrsprachig. Heimweh là nhớ nhà, nhớ quê; das Zuhause (nơi mình coi là nhà) khác zu Hause (ở nhà). Cụm hay dùng khi kể: sich an + Akkusativ anpassen, sich fremd fühlen, das Gefühl haben dazuzugehören, die Sprachbarriere überwinden."
   - type: example
     target: Ich habe die Stelle bekommen, ohne dass mir jemand geholfen hat.
     target_lang: de
@@ -78,12 +78,12 @@ body:
     note:
       vi: "Cùng chủ ngữ (er) → ohne … zu + nguyên thể (B1), không cần dass."
   - type: example
-    target: Anstatt dass die Kinder Vietnamesisch lernen, sprechen wir zu Hause fast nur Deutsch.
+    target: Anstatt dass meine Eltern Deutsch gelernt haben, habe ich jahrelang für sie übersetzt.
     target_lang: de
     translation:
-      vi: Thay vì để bọn trẻ học tiếng Việt, ở nhà chúng tôi lại hầu như chỉ nói tiếng Đức.
+      vi: Thay vì bố mẹ tôi học tiếng Đức, tôi đã phiên dịch cho họ suốt nhiều năm.
     note:
-      vi: "Chủ ngữ khác nhau (die Kinder – wir) → anstatt dass. Câu phụ đứng đầu chiếm vị trí 1, nên sprechen đứng ngay sau dấu phẩy."
+      vi: "Chủ ngữ khác nhau (meine Eltern – ich) → anstatt dass. Câu phụ đứng đầu chiếm vị trí 1, nên habe đứng ngay sau dấu phẩy."
   - type: example
     target: Statt dass die Behörde mir schreibt, muss ich jedes Mal selbst anrufen.
     target_lang: de
@@ -117,7 +117,7 @@ body:
     right: Sie ist gegangen, ohne zu fragen.
     target_lang: de
     note:
-      vi: "Cùng chủ ngữ thì dùng ohne … zu; không bao giờ ghép dass với zu."
+      vi: "Cùng chủ ngữ thì dùng ohne … zu + nguyên thể; ohne dass luôn mở một câu phụ có chủ ngữ và động từ chia, không đi với zu + nguyên thể."
   - type: common_mistake
     wrong: Ich habe den Brief abgeschickt, ohne dass mein Mann hat ihn gelesen.
     right: Ich habe den Brief abgeschickt, ohne dass mein Mann ihn gelesen hat.
@@ -279,6 +279,12 @@ exercises:
         - Er half mir, ohne dass ich ihn darum bat.
         - Er half mir, ohne dass ich ihn gefragt hatte.
         - Er half mir, ohne dass ich ihn fragen musste.
+        - Er half mir, ohne dass ich ihn darum gebeten habe.
+        - Er half mir, ohne dass ich ihn darum gebeten hatte.
+        - Er hat mir geholfen, ohne dass ich ihn darum bitten musste.
+        - Er hat mir geholfen, ohne dass ich ihn um Hilfe gebeten habe.
+        - Er hat mir geholfen, ohne dass ich ihn gefragt hätte.
+        - Er hat mir geholfen, ohne dass ich ihn darum gebeten hätte.
     known_wrong:
       - answer: Er hat mir geholfen, ohne dass ich ihn nicht gefragt habe.
         feedback_vi: ohne dass đã mang nghĩa phủ định; bỏ nicht.
@@ -306,7 +312,7 @@ exercises:
         - { id: o-ich, text: ich }
         - { id: o-fand, text: fand }
         - { id: o-half, text: half }
-        - { id: o-sie, text: Sie }
+        - { id: o-sie, text: sie }
         - { id: o-komma, text: "," }
         - { id: o-dass, text: dass }
         - { id: o-arbeit, text: Arbeit }
@@ -315,8 +321,9 @@ exercises:
     answer:
       orders:
         - [o-sie, o-fand, o-arbeit, o-komma, o-ohne, o-dass, o-ich, o-ihr, o-half]
+        - [o-ohne, o-dass, o-ich, o-ihr, o-half, o-komma, o-fand, o-sie, o-arbeit]
     explanation:
-      vi: "Câu chính: Sie fand Arbeit (V2). Câu phụ: ohne dass + chủ ngữ ich + tân ngữ Dativ ihr + động từ chia half ở cuối."
+      vi: "Câu chính: Sie fand Arbeit (V2). Câu phụ: ohne dass + chủ ngữ ich + tân ngữ Dativ ihr + động từ chia half ở cuối. Câu phụ cũng có thể đứng đầu, khi đó fand đứng ngay sau dấu phẩy: Ohne dass ich ihr half, fand sie Arbeit."
     display_answer: Sie fand Arbeit, ohne dass ich ihr half.
 
   - key: de:exercise:b2u06l4-mcq-ohne-zu
