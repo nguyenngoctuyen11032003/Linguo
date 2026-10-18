@@ -1,0 +1,748 @@
+# Bài luyện mô phỏng trình độ B1 theo kiểu Goethe-Zertifikat B1 do Linguo tự soạn (nguồn src:linguo-demo). Không
+# phải đề thi của Goethe-Institut, không chép đề thật, sách luyện thi hay Modelltest nào; mọi tên người, địa điểm,
+# cửa hàng là hư cấu (trừ tên thành phố Leipzig), không có số điện thoại hay địa chỉ thật. Nghe: lời thoại trong
+# `script`, ứng dụng đọc bằng giọng máy khi chưa có audio (audio_asset_id: null).
+#
+# Giả định về cấu trúc và thang điểm (ghi lại để người duyệt kiểm tra; syllabus §5.6: "to be verified"):
+# - Chỉ mô phỏng dạng bài theo hiểu biết của người soạn: Hören (thông báo/đài/tin nhắn thoại ngắn; bài nói hướng
+#   dẫn; hội thoại đúng/sai; thảo luận trên đài – ai nói ý nào), Lesen (blog đúng/sai; bài báo; ghép quảng cáo;
+#   bài dài điền chỗ trống và suy luận; thư bạn đọc – ai nói ý nào), Schreiben (e-mail thân mật ≈ 80 từ; bài diễn
+#   đàn ≈ 80 từ; tin nhắn trang trọng ≈ 40 từ). Số câu ít hơn và không cố ý khớp số câu, số Teil của đề thật; không
+#   có phần Sprechen (schema đề chỉ có listening/reading/writing).
+# - Thời gian (time_limits) là gợi ý luyện tập của Linguo, không phải thời lượng chính thức.
+# - Ngưỡng "đạt mức" 60% mỗi phần là ngưỡng luyện tập Linguo tự đặt, chưa đối chiếu Prüfungsordnung hiện hành, nên
+#   scoring.verified: false. Điểm bài viết (10/10/6) là trọng số của Linguo; bài viết không được chấm tự động.
+# - Câu đúng/sai dùng 2 phương án Richtig/Falsch; câu "ai nói ý nào" dùng tên người nói làm phương án.
+schema_version: 1
+demo: false
+language: de
+form:
+  key: de:exam:goethe-b1-mock-1
+  family: goethe
+  title_vi: Goethe B1 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng trình độ B1 theo kiểu Goethe-Zertifikat B1: 12 câu nghe, 14 câu đọc và 3 bài viết (e-mail
+    thân mật, bài diễn đàn, tin nhắn trang trọng). Nội dung do Linguo tự soạn, không chép đề thật, không phải đề thi
+    chính thức; kết quả cho biết bạn đạt mức B1 ở từng phần hay chưa (ngưỡng luyện tập 60%), không quy đổi sang điểm
+    của kỳ thi Goethe.
+  level_from: a2
+  level_to: b1
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 25
+    reading: 45
+    writing: 50
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng đạt (đúng từ 60% số điểm mỗi phần) là ngưỡng luyện tập Linguo tự đặt, không phải cách chấm chính thức
+      của Goethe-Institut (chưa đối chiếu quy chế thi). Thời gian là gợi ý của Linguo. Bài viết không được chấm tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-18T12:00:00+07:00"
+questions:
+  # ============================== NGHE (Hören) ==============================
+  # --- Văn bản ngắn: dự báo thời tiết, tin nhắn thoại, thông báo ---
+  - key: de:examq:goethe-b1-m1-l01
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe bản tin thời tiết trên đài và chọn đáp án đúng cho câu hỏi.
+      stem: Was empfiehlt der Sprecher für morgen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Und nun das Wetter für morgen: Am Vormittag bleibt es im ganzen Land trocken und sonnig, aber am Nachmittag kommen von Westen starke Gewitter. Die Temperaturen steigen auf 28 Grad. Wer einen Ausflug plant, sollte also am besten früh losfahren und spätestens um 14 Uhr wieder zu Hause sein. Am Sonntag wird es dann deutlich kühler, mit Regen und höchstens 18 Grad.
+      options:
+        - { id: a, text: "Einen Ausflug am Vormittag machen.", lang: de }
+        - { id: b, text: "Den Ausflug auf Sonntag verschieben.", lang: de }
+        - { id: c, text: "Wegen der Hitze den ganzen Tag zu Hause bleiben.", lang: de }
+    answer: a
+    explanation:
+      vi: "Buổi sáng trời khô ráo, buổi chiều có giông, nên người nói khuyên ai muốn đi chơi thì đi sớm và về nhà muộn nhất lúc 14 giờ (“früh losfahren und spätestens um 14 Uhr wieder zu Hause sein”). Chủ nhật trời mát hơn nhưng có mưa, và người nói không khuyên dời sang Chủ nhật (b sai); 28 độ không phải lý do để ở nhà cả ngày (c sai)."
+
+  - key: de:examq:goethe-b1-m1-l02
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wann kann Frau Becker ihr Auto abholen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, Frau Becker, hier spricht Jana Lorenz von der Autowerkstatt Lorenz. Ihr Auto ist fertig. Wir haben die Bremsen repariert und außerdem das Licht vorne links gewechselt, weil es kaputt war. Das kostet zusammen 240 Euro. Sie können das Auto heute bis 18 Uhr abholen. Morgen ist die Werkstatt leider geschlossen, sonst geht es erst wieder ab Donnerstag. Auf Wiederhören!
+      options:
+        - { id: a, text: "Heute bis 18 Uhr oder ab Donnerstag.", lang: de }
+        - { id: b, text: "Morgen ab 18 Uhr.", lang: de }
+        - { id: c, text: "Erst nächste Woche.", lang: de }
+    answer: a
+    explanation:
+      vi: "Xưởng sửa xe báo bà Becker có thể lấy xe hôm nay đến 18 giờ (“heute bis 18 Uhr”), nếu không thì từ thứ Năm (“sonst … erst wieder ab Donnerstag”). Ngày mai xưởng đóng cửa (“Morgen ist die Werkstatt leider geschlossen”), nên b sai; “tuần sau” không được nhắc đến (c sai)."
+
+  - key: de:examq:goethe-b1-m1-l03
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo trong bảo tàng và chọn đáp án đúng cho câu hỏi.
+      stem: Was können die Besucher noch bis 19 Uhr machen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Liebe Besucherinnen und Besucher, in 30 Minuten schließt unser Museum. Bitte beachten Sie: Die Ausstellung im zweiten Stock ist heute schon geschlossen, weil dort ein Fest vorbereitet wird. Unser Café im Erdgeschoss ist noch bis 19 Uhr für Sie geöffnet. Wer seine Tasche an der Garderobe abgegeben hat, wird gebeten, sie bis spätestens 18 Uhr abzuholen. Vielen Dank für Ihren Besuch!
+      options:
+        - { id: a, text: "Im Café etwas trinken.", lang: de }
+        - { id: b, text: "Die Ausstellung im zweiten Stock besuchen.", lang: de }
+        - { id: c, text: "Ihre Tasche an der Garderobe abholen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Chỉ có quán cà phê ở tầng trệt mở đến 19 giờ (“Unser Café … ist noch bis 19 Uhr für Sie geöffnet”). Phòng trưng bày ở tầng hai hôm nay đã đóng vì đang chuẩn bị một bữa tiệc (b sai); túi gửi ở quầy giữ đồ phải lấy muộn nhất lúc 18 giờ, không phải 19 giờ (c sai)."
+
+  # --- Bài nói: hướng dẫn viên trong bảo tàng ---
+  - key: de:examq:goethe-b1-m1-l04
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_lecture
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lời giới thiệu của hướng dẫn viên và chọn đáp án đúng cho câu hỏi.
+      stem: Wer hat früher in der Fabrik gearbeitet?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Herzlich willkommen in der alten Tuchfabrik! Mein Name ist Martin Hoffmann, und ich begleite Sie heute durch das Museum. Die Fabrik wurde 1872 gebaut. Bis 1965 haben hier bis zu 800 Menschen gearbeitet, die meisten davon Frauen. Zuerst sehen wir uns die großen Maschinen im Erdgeschoss an. Danach gehen wir in den ersten Stock, wo Sie selbst ein kleines Stück Stoff weben dürfen. Fotografieren ist überall erlaubt, aber bitte ohne Blitz. Die Führung dauert etwa 90 Minuten.
+      options:
+        - { id: a, text: "Vor allem Frauen.", lang: de }
+        - { id: b, text: "Vor allem Kinder.", lang: de }
+        - { id: c, text: "Vor allem Männer.", lang: de }
+    answer: a
+    explanation:
+      vi: "Hướng dẫn viên nói có tới 800 người làm việc ở đây, “die meisten davon Frauen” (phần lớn trong số đó là phụ nữ). Trẻ em và đàn ông không được nhắc đến như nhóm đông nhất, nên b và c sai. “Bis zu 800” nghĩa là “tối đa 800”, không phải “cho đến năm 800”."
+
+  - key: de:examq:goethe-b1-m1-l05
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_lecture
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lời giới thiệu của hướng dẫn viên và chọn đáp án đúng cho câu hỏi.
+      stem: Was können die Besucher im ersten Stock machen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Herzlich willkommen in der alten Tuchfabrik! Mein Name ist Martin Hoffmann, und ich begleite Sie heute durch das Museum. Die Fabrik wurde 1872 gebaut. Bis 1965 haben hier bis zu 800 Menschen gearbeitet, die meisten davon Frauen. Zuerst sehen wir uns die großen Maschinen im Erdgeschoss an. Danach gehen wir in den ersten Stock, wo Sie selbst ein kleines Stück Stoff weben dürfen. Fotografieren ist überall erlaubt, aber bitte ohne Blitz. Die Führung dauert etwa 90 Minuten.
+      options:
+        - { id: a, text: "Selbst ein Stück Stoff weben.", lang: de }
+        - { id: b, text: "Die großen Maschinen ansehen.", lang: de }
+        - { id: c, text: "Kleidung aus Stoff kaufen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Mệnh đề quan hệ “in den ersten Stock, wo Sie selbst ein kleines Stück Stoff weben dürfen” cho biết ở tầng một khách được tự dệt một mảnh vải nhỏ. Những cỗ máy lớn nằm ở tầng trệt (“im Erdgeschoss”), nên b sai; việc mua quần áo không được nhắc đến (c sai)."
+
+  - key: de:examq:goethe-b1-m1-l06
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_lecture
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lời giới thiệu của hướng dẫn viên và chọn đáp án đúng cho câu hỏi.
+      stem: Was sagt Herr Hoffmann zum Fotografieren?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Herzlich willkommen in der alten Tuchfabrik! Mein Name ist Martin Hoffmann, und ich begleite Sie heute durch das Museum. Die Fabrik wurde 1872 gebaut. Bis 1965 haben hier bis zu 800 Menschen gearbeitet, die meisten davon Frauen. Zuerst sehen wir uns die großen Maschinen im Erdgeschoss an. Danach gehen wir in den ersten Stock, wo Sie selbst ein kleines Stück Stoff weben dürfen. Fotografieren ist überall erlaubt, aber bitte ohne Blitz. Die Führung dauert etwa 90 Minuten.
+      options:
+        - { id: a, text: "Man darf überall fotografieren, aber ohne Blitz.", lang: de }
+        - { id: b, text: "Man darf nur im Erdgeschoss fotografieren.", lang: de }
+        - { id: c, text: "Fotografieren ist im Museum verboten.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Fotografieren ist überall erlaubt, aber bitte ohne Blitz” nghĩa là được chụp ảnh ở mọi nơi, chỉ không dùng đèn flash. Không có giới hạn chỉ chụp ở tầng trệt (b sai), và chụp ảnh không bị cấm (c sai)."
+
+  # --- Hội thoại (đúng/sai) ---
+  - key: de:examq:goethe-b1-m1-l07
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại giữa hai người bạn và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Alle vier Freunde haben Tim beim Umzug geholfen.
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Paula: Hallo Tim! Wie war denn dein Umzug am Samstag?
+        Tim: Anstrengend! Eigentlich wollten mir vier Freunde helfen, aber zwei sind krank geworden. Zum Glück hat mir mein Nachbar sein Auto geliehen.
+        Paula: Und wie gefällt dir die neue Wohnung?
+        Tim: Sie ist kleiner als die alte, aber viel heller. Und ich brauche nur noch zehn Minuten zur Arbeit, früher war es fast eine Stunde.
+        Paula: Super! Machst du eine Party?
+        Tim: Ja, sobald die Küche da ist. Die wird erst nächste Woche geliefert.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Tim nói bốn người bạn định giúp (“Eigentlich wollten mir vier Freunde helfen”), nhưng hai người bị ốm (“aber zwei sind krank geworden”), nên chỉ hai người giúp được. “Eigentlich wollten …” thường báo hiệu một dự định không thành."
+
+  - key: de:examq:goethe-b1-m1-l08
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại giữa hai người bạn và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Tim ist jetzt schneller bei der Arbeit als früher.
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Paula: Hallo Tim! Wie war denn dein Umzug am Samstag?
+        Tim: Anstrengend! Eigentlich wollten mir vier Freunde helfen, aber zwei sind krank geworden. Zum Glück hat mir mein Nachbar sein Auto geliehen.
+        Paula: Und wie gefällt dir die neue Wohnung?
+        Tim: Sie ist kleiner als die alte, aber viel heller. Und ich brauche nur noch zehn Minuten zur Arbeit, früher war es fast eine Stunde.
+        Paula: Super! Machst du eine Party?
+        Tim: Ja, sobald die Küche da ist. Die wird erst nächste Woche geliefert.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "Bây giờ Tim chỉ cần mười phút để đến chỗ làm (“nur noch zehn Minuten”), trước đây mất gần một tiếng (“früher war es fast eine Stunde”), nên câu đúng. Đừng nhầm với chi tiết căn hộ mới nhỏ hơn: câu hỏi nói về thời gian đi làm, không nói về diện tích."
+
+  - key: de:examq:goethe-b1-m1-l09
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại giữa hai người bạn và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Die neue Küche ist schon geliefert worden.
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Paula: Hallo Tim! Wie war denn dein Umzug am Samstag?
+        Tim: Anstrengend! Eigentlich wollten mir vier Freunde helfen, aber zwei sind krank geworden. Zum Glück hat mir mein Nachbar sein Auto geliehen.
+        Paula: Und wie gefällt dir die neue Wohnung?
+        Tim: Sie ist kleiner als die alte, aber viel heller. Und ich brauche nur noch zehn Minuten zur Arbeit, früher war es fast eine Stunde.
+        Paula: Super! Machst du eine Party?
+        Tim: Ja, sobald die Küche da ist. Die wird erst nächste Woche geliefert.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Tim nói căn bếp “wird erst nächste Woche geliefert” (tuần sau mới được giao), nên bếp chưa được giao. Câu hỏi dùng bị động Perfekt (“ist … geliefert worden” = đã được giao), còn lời thoại dùng bị động hiện tại với “erst nächste Woche” chỉ tương lai."
+
+  # --- Thảo luận trên đài: ai nói ý nào? ---
+  - key: de:examq:goethe-b1-m1-l10
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe cuộc thảo luận trên đài và cho biết ai nói ý sau – người dẫn chương trình, ông Kaya hay bà Brandt.
+      stem: "Wer sagt das? – Bus und Bahn müssen günstiger werden."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Heute diskutieren wir: Brauchen wir in der Stadt noch Autos? Herr Kaya, Sie sind Busfahrer.
+        Herr Kaya: Ja, und ich finde, mehr Menschen sollten Bus und Bahn nehmen. Aber dafür müssen die Tickets billiger werden.
+        Moderatorin: Frau Brandt, Sie wohnen auf dem Land.
+        Frau Brandt: Genau. Bei uns fährt der Bus nur zweimal am Tag. Ohne Auto käme ich nicht zur Arbeit.
+        Moderatorin: Ich selbst fahre übrigens jeden Tag mit dem Fahrrad ins Studio.
+      options:
+        - { id: a, text: "Moderatorin", lang: de }
+        - { id: b, text: "Herr Kaya", lang: de }
+        - { id: c, text: "Frau Brandt", lang: de }
+    answer: b
+    explanation:
+      vi: "Ông Kaya muốn nhiều người đi xe buýt và tàu hơn, nhưng “dafür müssen die Tickets billiger werden” (để vậy thì vé phải rẻ hơn) – cùng ý với “günstiger werden”. Bà Brandt chỉ nói xe buýt ở quê quá ít chuyến, không nói về giá vé; người dẫn chương trình chỉ kể mình đi xe đạp."
+
+  - key: de:examq:goethe-b1-m1-l11
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe cuộc thảo luận trên đài và cho biết ai nói ý sau – người dẫn chương trình, ông Kaya hay bà Brandt.
+      stem: "Wer sagt das? – Ohne eigenes Auto hätte ich ein großes Problem."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Heute diskutieren wir: Brauchen wir in der Stadt noch Autos? Herr Kaya, Sie sind Busfahrer.
+        Herr Kaya: Ja, und ich finde, mehr Menschen sollten Bus und Bahn nehmen. Aber dafür müssen die Tickets billiger werden.
+        Moderatorin: Frau Brandt, Sie wohnen auf dem Land.
+        Frau Brandt: Genau. Bei uns fährt der Bus nur zweimal am Tag. Ohne Auto käme ich nicht zur Arbeit.
+        Moderatorin: Ich selbst fahre übrigens jeden Tag mit dem Fahrrad ins Studio.
+      options:
+        - { id: a, text: "Moderatorin", lang: de }
+        - { id: b, text: "Herr Kaya", lang: de }
+        - { id: c, text: "Frau Brandt", lang: de }
+    answer: c
+    explanation:
+      vi: "Bà Brandt sống ở nông thôn, xe buýt chỉ chạy hai chuyến mỗi ngày, nên “Ohne Auto käme ich nicht zur Arbeit” (không có ô tô thì tôi không đến chỗ làm được – Konjunktiv II của kommen). Ông Kaya lái xe buýt và ủng hộ phương tiện công cộng; người dẫn chương trình đi làm bằng xe đạp."
+
+  - key: de:examq:goethe-b1-m1-l12
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe cuộc thảo luận trên đài và cho biết ai nói ý sau – người dẫn chương trình, ông Kaya hay bà Brandt.
+      stem: "Wer sagt das? – Ich fahre mit dem Rad zur Arbeit."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Heute diskutieren wir: Brauchen wir in der Stadt noch Autos? Herr Kaya, Sie sind Busfahrer.
+        Herr Kaya: Ja, und ich finde, mehr Menschen sollten Bus und Bahn nehmen. Aber dafür müssen die Tickets billiger werden.
+        Moderatorin: Frau Brandt, Sie wohnen auf dem Land.
+        Frau Brandt: Genau. Bei uns fährt der Bus nur zweimal am Tag. Ohne Auto käme ich nicht zur Arbeit.
+        Moderatorin: Ich selbst fahre übrigens jeden Tag mit dem Fahrrad ins Studio.
+      options:
+        - { id: a, text: "Moderatorin", lang: de }
+        - { id: b, text: "Herr Kaya", lang: de }
+        - { id: c, text: "Frau Brandt", lang: de }
+    answer: a
+    explanation:
+      vi: "Người dẫn chương trình kể “Ich selbst fahre … jeden Tag mit dem Fahrrad ins Studio” – trường quay là nơi cô làm việc, “Rad” là cách nói ngắn của “Fahrrad”. Ông Kaya là tài xế xe buýt, còn bà Brandt đi làm bằng ô tô."
+
+  # ============================== ĐỌC (Lesen) ==============================
+  # --- Blog (đúng/sai) ---
+  - key: de:examq:goethe-b1-m1-r01
+    section: reading
+    kind: mcq
+    question_type: goethe_read_truefalse
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài blog và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Duc hatte in Leipzig von Anfang an viele Kontakte.
+      stem_lang: de
+      passage: |-
+        Mein erstes Jahr in Deutschland – von Duc
+        Vor einem Jahr bin ich für mein Studium nach Leipzig gezogen. Am Anfang war es schwierig: Ich kannte kaum jemanden, und die Leute sprachen für mich viel zu schnell. Dann hat mir eine Kommilitonin von einem Sprachcafé erzählt, das jeden Mittwoch in der Bibliothek stattfindet. Dort habe ich Lukas kennengelernt, der Vietnamesisch lernt. Seitdem treffen wir uns jede Woche. Inzwischen verstehe ich fast alles, nur am Telefon noch nicht.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Duc viết “Ich kannte kaum jemanden” (tôi hầu như không quen ai) lúc mới đến, nên câu “ngay từ đầu đã có nhiều mối quen biết” là sai. “Kaum” nghĩa là “hầu như không”, không phải “một ít”."
+
+  - key: de:examq:goethe-b1-m1-r02
+    section: reading
+    kind: mcq
+    question_type: goethe_read_truefalse
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài blog và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Duc hat durch eine Kommilitonin von dem Sprachcafé erfahren.
+      stem_lang: de
+      passage: |-
+        Mein erstes Jahr in Deutschland – von Duc
+        Vor einem Jahr bin ich für mein Studium nach Leipzig gezogen. Am Anfang war es schwierig: Ich kannte kaum jemanden, und die Leute sprachen für mich viel zu schnell. Dann hat mir eine Kommilitonin von einem Sprachcafé erzählt, das jeden Mittwoch in der Bibliothek stattfindet. Dort habe ich Lukas kennengelernt, der Vietnamesisch lernt. Seitdem treffen wir uns jede Woche. Inzwischen verstehe ich fast alles, nur am Telefon noch nicht.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "“Dann hat mir eine Kommilitonin von einem Sprachcafé erzählt” – một bạn nữ cùng học đã kể cho Duc về quán cà phê ngôn ngữ, tức Duc biết đến nó qua bạn ấy (“erfahren von” = biết được). Câu đúng. Lukas là người Duc gặp sau đó ở quán, không phải người giới thiệu."
+
+  - key: de:examq:goethe-b1-m1-r03
+    section: reading
+    kind: mcq
+    question_type: goethe_read_truefalse
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài blog và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Duc versteht inzwischen auch am Telefon alles.
+      stem_lang: de
+      passage: |-
+        Mein erstes Jahr in Deutschland – von Duc
+        Vor einem Jahr bin ich für mein Studium nach Leipzig gezogen. Am Anfang war es schwierig: Ich kannte kaum jemanden, und die Leute sprachen für mich viel zu schnell. Dann hat mir eine Kommilitonin von einem Sprachcafé erzählt, das jeden Mittwoch in der Bibliothek stattfindet. Dort habe ich Lukas kennengelernt, der Vietnamesisch lernt. Seitdem treffen wir uns jede Woche. Inzwischen verstehe ich fast alles, nur am Telefon noch nicht.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Duc viết “Inzwischen verstehe ich fast alles, nur am Telefon noch nicht” – giờ cậu hiểu gần hết, chỉ riêng khi nghe điện thoại thì chưa. Vì vậy câu “nghe điện thoại cũng hiểu hết” là sai; chú ý “fast alles” (gần hết) và “nur … noch nicht” (chỉ … là chưa)."
+
+  # --- Bài báo ---
+  - key: de:examq:goethe-b1-m1-r04
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn đáp án đúng cho câu hỏi.
+      stem: Wer hatte die Idee für den Bücherschrank?
+      stem_lang: de
+      passage: |-
+        KLEINWALDE. Seit Mai steht am Marktplatz ein ungewöhnlicher Bücherschrank: eine alte Telefonzelle, die von Schülern der Realschule bunt angemalt wurde. Jeder darf dort kostenlos Bücher hineinstellen oder mitnehmen. Die Idee hatte die Rentnerin Erika Vogt, die selbst keinen Platz mehr für ihre vielen Romane hatte. Die Gemeinde hat die Telefonzelle gekauft, die Farbe wurde mit Spenden bezahlt. Schon nach zwei Wochen war der Schrank voll. Nun wünschen sich viele Bewohner einen zweiten am Bahnhof.
+      options:
+        - { id: a, text: "Erika Vogt, eine Rentnerin.", lang: de }
+        - { id: b, text: "Schüler der Realschule.", lang: de }
+        - { id: c, text: "Die Gemeinde.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Die Idee hatte die Rentnerin Erika Vogt” – ý tưởng là của bà Erika Vogt, một người về hưu không còn chỗ để sách. Học sinh trường Realschule chỉ sơn bốt điện thoại (“von Schülern … angemalt”, bị động), còn chính quyền xã mua bốt điện thoại; cả hai đều không nghĩ ra ý tưởng."
+
+  - key: de:examq:goethe-b1-m1-r05
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo và chọn câu đúng với nội dung bài.
+      stem: Was steht im Text?
+      stem_lang: de
+      passage: |-
+        KLEINWALDE. Seit Mai steht am Marktplatz ein ungewöhnlicher Bücherschrank: eine alte Telefonzelle, die von Schülern der Realschule bunt angemalt wurde. Jeder darf dort kostenlos Bücher hineinstellen oder mitnehmen. Die Idee hatte die Rentnerin Erika Vogt, die selbst keinen Platz mehr für ihre vielen Romane hatte. Die Gemeinde hat die Telefonzelle gekauft, die Farbe wurde mit Spenden bezahlt. Schon nach zwei Wochen war der Schrank voll. Nun wünschen sich viele Bewohner einen zweiten am Bahnhof.
+      options:
+        - { id: a, text: "Die Farbe wurde mit Spenden bezahlt.", lang: de }
+        - { id: b, text: "Für jedes Buch muss man etwas bezahlen.", lang: de }
+        - { id: c, text: "Am Bahnhof gibt es schon einen zweiten Bücherschrank.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bài báo viết “die Farbe wurde mit Spenden bezahlt” (tiền sơn được trả bằng tiền quyên góp). Lấy và đặt sách là miễn phí (“kostenlos”), nên b sai; tủ sách thứ hai ở nhà ga mới chỉ là mong muốn của người dân (“wünschen sich”), chưa có (c sai)."
+
+  # --- Ghép quảng cáo ---
+  - key: de:examq:goethe-b1-m1-r06
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn mẩu quảng cáo, chọn quảng cáo phù hợp (A, B, C hoặc D).
+      stem: Ihr Sohn ist in der 7. Klasse und hat Probleme in Mathematik.
+      stem_lang: de
+      passage: |-
+        A: Sprachtandem gesucht! Spanierin (29) möchte ihr Deutsch verbessern und hilft dir dafür mit Spanisch.
+        B: Fahrradwerkstatt für alle: Jeden Samstag reparieren wir Ihr Rad gemeinsam mit Ihnen. Werkzeug ist vorhanden.
+        C: Nachhilfe in Mathe und Physik für Schüler der Klassen 5 bis 10, auch online. Die erste Stunde ist kostenlos.
+        D: Vegetarischer Kochkurs: An vier Abenden lernen Sie schnelle Gerichte ohne Fleisch.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: c
+    explanation:
+      vi: "Quảng cáo C là lớp học kèm (“Nachhilfe”) môn Toán và Vật lý cho học sinh lớp 5 đến 10, nên hợp với con trai đang học lớp 7 gặp khó khăn môn Toán. A là tìm bạn học trao đổi ngôn ngữ, B là xưởng sửa xe đạp, D là lớp nấu ăn chay, đều không liên quan đến môn Toán."
+
+  - key: de:examq:goethe-b1-m1-r07
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn mẩu quảng cáo, chọn quảng cáo phù hợp (A, B, C hoặc D).
+      stem: Ihr Fahrrad ist kaputt, und Sie möchten lernen, wie man es selbst repariert.
+      stem_lang: de
+      passage: |-
+        A: Sprachtandem gesucht! Spanierin (29) möchte ihr Deutsch verbessern und hilft dir dafür mit Spanisch.
+        B: Fahrradwerkstatt für alle: Jeden Samstag reparieren wir Ihr Rad gemeinsam mit Ihnen. Werkzeug ist vorhanden.
+        C: Nachhilfe in Mathe und Physik für Schüler der Klassen 5 bis 10, auch online. Die erste Stunde ist kostenlos.
+        D: Vegetarischer Kochkurs: An vier Abenden lernen Sie schnelle Gerichte ohne Fleisch.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: b
+    explanation:
+      vi: "Ở xưởng B, người ta sửa xe đạp “gemeinsam mit Ihnen” (cùng với bạn) và có sẵn dụng cụ, nên bạn vừa sửa được xe vừa học cách tự sửa. C có chữ “Physik” nhưng là học kèm cho học sinh; A và D không liên quan đến xe đạp."
+
+  - key: de:examq:goethe-b1-m1-r08
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn mẩu quảng cáo, chọn quảng cáo phù hợp (A, B, C hoặc D).
+      stem: Ihre Freundin spricht gut Deutsch und möchte ihr Spanisch verbessern.
+      stem_lang: de
+      passage: |-
+        A: Sprachtandem gesucht! Spanierin (29) möchte ihr Deutsch verbessern und hilft dir dafür mit Spanisch.
+        B: Fahrradwerkstatt für alle: Jeden Samstag reparieren wir Ihr Rad gemeinsam mit Ihnen. Werkzeug ist vorhanden.
+        C: Nachhilfe in Mathe und Physik für Schüler der Klassen 5 bis 10, auch online. Die erste Stunde ist kostenlos.
+        D: Vegetarischer Kochkurs: An vier Abenden lernen Sie schnelle Gerichte ohne Fleisch.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: a
+    explanation:
+      vi: "Quảng cáo A là “Sprachtandem” (học trao đổi ngôn ngữ): một cô gái Tây Ban Nha muốn luyện tiếng Đức và đổi lại sẽ giúp người kia học tiếng Tây Ban Nha (“hilft dir dafür mit Spanisch”). Bạn của bạn nói tốt tiếng Đức nên là người cùng học phù hợp. B, C, D không có lớp tiếng Tây Ban Nha."
+
+  # --- Bài dài: điền chỗ trống và suy luận ---
+  - key: de:examq:goethe-b1-m1-r09
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn từ đúng cho chỗ trống (1).
+      stem: Welches Wort passt in Lücke (1)?
+      stem_lang: de
+      passage: |-
+        Seit drei Jahren helfe ich sonntags ehrenamtlich in einem Tierheim. Ich gehe mit Hunden spazieren, (1) ______ bisher niemand ein Zuhause gegeben hat. Freunde fragen oft, warum ich umsonst arbeite. Ich antworte dann, dass ich selbst keinen Hund haben kann, (2) ______ meine Wohnung zu klein ist. Im Tierheim kann ich trotzdem Zeit mit Tieren verbringen. Letzten Monat wurde Bruno adoptiert, ein alter Hund, mit dem ich zwei Jahre spazieren gegangen bin. Ich war traurig, aber vor allem froh für ihn.
+      options:
+        - { id: a, text: "denen", lang: de }
+        - { id: b, text: "die", lang: de }
+        - { id: c, text: "deren", lang: de }
+    answer: a
+    explanation:
+      vi: "Đại từ quan hệ thay cho “Hunden” (số nhiều) và đóng vai tân ngữ gián tiếp của “geben” (jemandem etwas geben: cho ai cái gì → Dativ). Dativ số nhiều của đại từ quan hệ là “denen”. “Die” là Nominativ/Akkusativ, dùng khi những con chó là chủ ngữ hoặc tân ngữ trực tiếp; “deren” là Genitiv (của chúng), không hợp nghĩa."
+
+  - key: de:examq:goethe-b1-m1-r10
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn từ đúng cho chỗ trống (2).
+      stem: Welches Wort passt in Lücke (2)?
+      stem_lang: de
+      passage: |-
+        Seit drei Jahren helfe ich sonntags ehrenamtlich in einem Tierheim. Ich gehe mit Hunden spazieren, (1) ______ bisher niemand ein Zuhause gegeben hat. Freunde fragen oft, warum ich umsonst arbeite. Ich antworte dann, dass ich selbst keinen Hund haben kann, (2) ______ meine Wohnung zu klein ist. Im Tierheim kann ich trotzdem Zeit mit Tieren verbringen. Letzten Monat wurde Bruno adoptiert, ein alter Hund, mit dem ich zwei Jahre spazieren gegangen bin. Ich war traurig, aber vor allem froh für ihn.
+      options:
+        - { id: a, text: "weil", lang: de }
+        - { id: b, text: "obwohl", lang: de }
+        - { id: c, text: "trotzdem", lang: de }
+    answer: a
+    explanation:
+      vi: "Căn hộ quá nhỏ là lý do người viết không nuôi chó được, nên cần liên từ chỉ nguyên nhân “weil”; động từ “ist” đứng cuối mệnh đề phụ, đúng với “weil”. “Obwohl” (mặc dù) ngược nghĩa. “Trotzdem” là trạng từ, không mở đầu mệnh đề phụ, sau nó động từ phải đứng ngay vị trí thứ hai (“trotzdem ist meine Wohnung …”)."
+
+  - key: de:examq:goethe-b1-m1-r11
+    section: reading
+    kind: mcq
+    question_type: goethe_read_inference
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn câu trả lời phù hợp nhất với nội dung.
+      stem: Warum arbeitet die Person im Tierheim?
+      stem_lang: de
+      passage: |-
+        Seit drei Jahren helfe ich sonntags ehrenamtlich in einem Tierheim. Ich gehe mit Hunden spazieren, (1) ______ bisher niemand ein Zuhause gegeben hat. Freunde fragen oft, warum ich umsonst arbeite. Ich antworte dann, dass ich selbst keinen Hund haben kann, (2) ______ meine Wohnung zu klein ist. Im Tierheim kann ich trotzdem Zeit mit Tieren verbringen. Letzten Monat wurde Bruno adoptiert, ein alter Hund, mit dem ich zwei Jahre spazieren gegangen bin. Ich war traurig, aber vor allem froh für ihn.
+      options:
+        - { id: a, text: "Sie ist gern mit Tieren zusammen, kann aber zu Hause keinen Hund haben.", lang: de }
+        - { id: b, text: "Sie verdient dort zusätzliches Geld.", lang: de }
+        - { id: c, text: "Ihre Freunde haben ihr diese Arbeit empfohlen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Người viết không nuôi chó được vì căn hộ quá nhỏ, nhưng ở trại động vật “trotzdem” (dù vậy) vẫn có thời gian bên động vật; từ đó suy ra họ thích ở cạnh động vật. B sai vì họ làm tình nguyện, không được trả tiền (“ehrenamtlich”, “umsonst”); c sai vì bạn bè chỉ thắc mắc vì sao họ làm không công, không hề khuyên họ làm."
+
+  # --- Thư bạn đọc: ai nói ý nào? ---
+  - key: de:examq:goethe-b1-m1-r12
+    section: reading
+    kind: mcq
+    question_type: goethe_read_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc ba thư bạn đọc gửi báo và chọn người có ý kiến được nêu trong câu hỏi.
+      stem: Wer ist der Meinung, dass nur kleine Geschäfte sonntags öffnen sollten?
+      stem_lang: de
+      passage: |-
+        Zum Artikel „Bald auch sonntags einkaufen?“
+        Sabine K.: Ich arbeite selbst in einem Supermarkt. Wenn die Läden auch sonntags öffnen, sehe ich meine Kinder noch seltener. Der Sonntag sollte ein freier Tag für Familien bleiben.
+        Jonas M.: Ich arbeite unter der Woche oft bis 20 Uhr. Für mich wäre es praktisch, wenn ich am Sonntag in Ruhe einkaufen könnte.
+        Ahmet T.: Kleine Bäckereien und Kioske dürfen gern sonntags öffnen, große Supermärkte aber nicht. Sonst haben kleine Geschäfte keine Chance mehr.
+      options:
+        - { id: a, text: "Sabine K.", lang: de }
+        - { id: b, text: "Jonas M.", lang: de }
+        - { id: c, text: "Ahmet T.", lang: de }
+    answer: c
+    explanation:
+      vi: "Ahmet T. cho rằng tiệm bánh nhỏ và ki-ốt được mở Chủ nhật, còn siêu thị lớn thì không (“große Supermärkte aber nicht”), để cửa hàng nhỏ còn cơ hội. Sabine K. muốn Chủ nhật là ngày nghỉ cho mọi gia đình (không phân biệt cửa hàng lớn nhỏ); Jonas M. muốn được đi mua sắm vào Chủ nhật."
+
+  - key: de:examq:goethe-b1-m1-r13
+    section: reading
+    kind: mcq
+    question_type: goethe_read_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc ba thư bạn đọc gửi báo và chọn người có ý kiến được nêu trong câu hỏi.
+      stem: Wer denkt vor allem an die Menschen, die im Verkauf arbeiten?
+      stem_lang: de
+      passage: |-
+        Zum Artikel „Bald auch sonntags einkaufen?“
+        Sabine K.: Ich arbeite selbst in einem Supermarkt. Wenn die Läden auch sonntags öffnen, sehe ich meine Kinder noch seltener. Der Sonntag sollte ein freier Tag für Familien bleiben.
+        Jonas M.: Ich arbeite unter der Woche oft bis 20 Uhr. Für mich wäre es praktisch, wenn ich am Sonntag in Ruhe einkaufen könnte.
+        Ahmet T.: Kleine Bäckereien und Kioske dürfen gern sonntags öffnen, große Supermärkte aber nicht. Sonst haben kleine Geschäfte keine Chance mehr.
+      options:
+        - { id: a, text: "Sabine K.", lang: de }
+        - { id: b, text: "Jonas M.", lang: de }
+        - { id: c, text: "Ahmet T.", lang: de }
+    answer: a
+    explanation:
+      vi: "Sabine K. tự làm việc ở siêu thị và lo nếu mở cửa Chủ nhật thì người bán hàng như chị sẽ càng ít gặp con (“sehe ich meine Kinder noch seltener”). Jonas M. nghĩ đến lợi ích của khách mua hàng như mình; Ahmet T. nghĩ đến chủ các cửa hàng nhỏ và sự cạnh tranh, không phải nhân viên bán hàng."
+
+  - key: de:examq:goethe-b1-m1-r14
+    section: reading
+    kind: mcq
+    question_type: goethe_read_opinion
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc ba thư bạn đọc gửi báo và chọn người có ý kiến được nêu trong câu hỏi.
+      stem: Wer hätte persönlich einen Vorteil, wenn die Supermärkte sonntags öffnen würden?
+      stem_lang: de
+      passage: |-
+        Zum Artikel „Bald auch sonntags einkaufen?“
+        Sabine K.: Ich arbeite selbst in einem Supermarkt. Wenn die Läden auch sonntags öffnen, sehe ich meine Kinder noch seltener. Der Sonntag sollte ein freier Tag für Familien bleiben.
+        Jonas M.: Ich arbeite unter der Woche oft bis 20 Uhr. Für mich wäre es praktisch, wenn ich am Sonntag in Ruhe einkaufen könnte.
+        Ahmet T.: Kleine Bäckereien und Kioske dürfen gern sonntags öffnen, große Supermärkte aber nicht. Sonst haben kleine Geschäfte keine Chance mehr.
+      options:
+        - { id: a, text: "Sabine K.", lang: de }
+        - { id: b, text: "Jonas M.", lang: de }
+        - { id: c, text: "Ahmet T.", lang: de }
+    answer: b
+    explanation:
+      vi: "Jonas M. thường làm đến 20 giờ các ngày trong tuần nên “Für mich wäre es praktisch” (với tôi sẽ tiện) nếu được mua sắm vào Chủ nhật – Konjunktiv II diễn tả lợi ích giả định. Sabine K. sẽ chịu thiệt (ít gặp con hơn); Ahmet T. phản đối siêu thị lớn mở cửa Chủ nhật."
+
+  # ============================== VIẾT (Schreiben) ==============================
+  # --- E-mail thân mật ≈ 80 từ ---
+  - key: de:examq:goethe-b1-m1-w01
+    section: writing
+    kind: essay
+    question_type: goethe_write_email
+    level_code: b1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết e-mail bằng tiếng Đức (khoảng 80 từ) cho một người bạn, trả lời đủ ba ý. Dùng “du” (thân mật), có lời
+        chào, phần mở đầu, các ý theo thứ tự và lời kết.
+      stem: |-
+        Sie waren am Wochenende auf einem Stadtfest. Ihr Freund Max konnte leider nicht mitkommen. Schreiben Sie Max eine E-Mail.
+        – Beschreiben Sie: Wie war das Fest?
+        – Begründen Sie: Was hat Ihnen besonders gut gefallen und warum?
+        – Machen Sie einen Vorschlag für ein Treffen.
+        Schreiben Sie zu jedem Punkt zwei bis drei Sätze (circa 80 Wörter). Vergessen Sie Anrede und Gruß nicht.
+      stem_lang: de
+      min_chars: 350
+      max_chars: 1000
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Trả lời đủ ba ý (lễ hội thế nào, điều thích nhất kèm lý do, đề nghị một buổi gặp cụ thể); mỗi ý được phát triển, thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có lời chào (Lieber Max,) và lời kết (Viele Grüße + tên); các ý theo thứ tự, nối bằng weil, deshalb, außerdem, dann; không viết thành danh sách gạch đầu dòng.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng Perfekt/Präteritum cho chuyện đã qua, mệnh đề phụ (weil, dass) với động từ cuối câu, đề nghị bằng Konjunktiv II (Wir könnten …); “du” nhất quán; lỗi không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Lieber Max,
+      schade, dass du am Samstag nicht beim Stadtfest warst! Es war wirklich toll: Auf dem Marktplatz haben drei Bands gespielt, und es gab Essen aus vielen Ländern. Am besten hat mir das Konzert am Abend gefallen, weil die Sängerin eine fantastische Stimme hatte. Außerdem habe ich dort alte Schulfreunde getroffen. Hast du nächsten Freitag Zeit? Wir könnten zusammen ins Kino gehen und danach eine Pizza essen.
+      Viele Grüße
+      Linh
+    explanation:
+      vi: "E-mail B1 được chấm trước hết ở việc trả lời đủ cả ba ý và nói thêm lý do hoặc chi tiết, không chỉ liệt kê. Lỗi hay gặp: quên lý do ở ý thứ hai, đặt sai động từ trong mệnh đề “weil” (“weil die Sängerin hatte eine Stimme”), trộn “du” với “Sie”, hoặc đề nghị mơ hồ mà không nêu thời gian, hoạt động cụ thể."
+
+  # --- Bài diễn đàn ≈ 80 từ ---
+  - key: de:examq:goethe-b1-m1-w02
+    section: writing
+    kind: essay
+    question_type: goethe_write_forum
+    level_code: b1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Đọc bài đăng trên diễn đàn và viết ý kiến của bạn bằng tiếng Đức (khoảng 80 từ). Nêu rõ quan điểm, đưa ra lý
+        do hoặc ví dụ và phản hồi lại ý của người viết.
+      stem: |-
+        Sie lesen in einem Online-Forum zum Thema „Arbeiten von zu Hause“ diesen Beitrag:
+        Kai_87: „Seit einem Jahr arbeite ich nur noch von zu Hause. Ich spare viel Zeit, aber mir fehlen meine Kollegen. Was meint ihr: Ist Homeoffice die Zukunft?“
+        Schreiben Sie Ihre Meinung zum Thema (circa 80 Wörter).
+      stem_lang: de
+      min_chars: 350
+      max_chars: 1000
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Nêu quan điểm rõ ràng về làm việc tại nhà, có ít nhất hai lý do hoặc ví dụ và nhắc lại ý của Kai (tiết kiệm thời gian, nhớ đồng nghiệp).
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Mở đầu bằng quan điểm, sau đó lý do và kết luận; nối ý bằng einerseits … andererseits, außerdem, deshalb, trotzdem.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng cách nêu ý kiến (Ich finde, dass …; Meiner Meinung nach …), mệnh đề wenn/weil/dass, Konjunktiv II (wäre ideal); không cần lời chào trang trọng; lỗi không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Ich finde Homeoffice grundsätzlich gut, aber nicht jeden Tag. Wenn man zu Hause arbeitet, steht man nicht im Stau und kann seine Zeit freier planen. Das ist besonders für Eltern ein großer Vorteil. Andererseits verstehe ich Kai gut: Ohne Kollegen fühlt man sich schnell allein, und manche Probleme kann man im Büro leichter lösen. Deshalb wäre für mich eine Mischung ideal, zum Beispiel zwei Tage zu Hause und drei Tage im Büro.
+    explanation:
+      vi: "Bài diễn đàn B1 được chấm ở việc nêu rõ quan điểm và lý do, đồng thời phản hồi bài đăng gốc. Lỗi hay gặp: chỉ kể chuyện bản thân mà không nêu ý kiến, đặt sai động từ sau “Deshalb” (“Deshalb eine Mischung wäre ideal” thay vì “Deshalb wäre eine Mischung ideal”), hoặc viết “Ich denke dass” thiếu dấu phẩy trước “dass”."
+
+  # --- Tin nhắn trang trọng ≈ 40 từ ---
+  - key: de:examq:goethe-b1-m1-w03
+    section: writing
+    kind: essay
+    question_type: goethe_write_message
+    level_code: b1
+    points: 6
+    prompt:
+      instruction_vi: >-
+        Viết một tin nhắn trang trọng bằng tiếng Đức (khoảng 40 từ). Dùng “Sie”, xin lỗi lịch sự, nêu lý do và đề
+        nghị thời gian khác; có lời chào và lời kết trang trọng.
+      stem: |-
+        Sie haben am Donnerstag um 10 Uhr einen Termin mit Ihrem Vermieter, Herrn Albrecht. Sie wollen über die Reparatur der Heizung sprechen. Leider können Sie nicht kommen.
+        Schreiben Sie Herrn Albrecht eine Nachricht. Entschuldigen Sie sich höflich, nennen Sie einen Grund und schlagen Sie einen neuen Termin vor (circa 40 Wörter).
+      stem_lang: de
+      min_chars: 180
+      max_chars: 600
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Có lời xin lỗi, một lý do cụ thể và đề nghị thời gian mới rõ ràng (ngày, giờ).
+        max_points: 2
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Lời chào trang trọng (Sehr geehrter Herr Albrecht,) và lời kết (Mit freundlichen Grüßen + họ tên, không có dấu phẩy sau Grüßen).
+        max_points: 2
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng Sie/Ihnen viết hoa nhất quán, lời đề nghị lịch sự bằng Konjunktiv II (Wäre es Ihnen … recht? Könnten wir …?), weil với động từ cuối câu.
+        max_points: 2
+    sample_answer: |-
+      Sehr geehrter Herr Albrecht,
+      leider kann ich am Donnerstag um 10 Uhr nicht zu unserem Termin kommen, weil ich kurzfristig an einer Schulung teilnehmen muss. Das tut mir sehr leid. Wäre es Ihnen am Freitagnachmittag oder am Montag nach 16 Uhr recht?
+      Mit freundlichen Grüßen
+      Thu Nguyen
+    explanation:
+      vi: "Tin nhắn trang trọng được chấm ở ba ý (xin lỗi, lý do, thời gian mới) và văn phong lịch sự. Lỗi hay gặp: viết “Lieber Herr Albrecht” hoặc “Hallo” với người cho thuê nhà mình không thân, viết thường “sie/ihnen” khi xưng hô lịch sự, chỉ nói “Ich habe keine Zeit” mà không đề nghị thời gian khác."
