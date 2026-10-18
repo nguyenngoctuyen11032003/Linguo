@@ -85,7 +85,7 @@ body:
     translation:
       vi: 'Nhóm sinh viên: "Chúng tôi không chỉnh sửa bức ảnh." – Nhóm sinh viên khẳng định rằng họ đã không chỉnh sửa bức ảnh.'
     note:
-      vi: "sie haben manipuliert trùng thì hiện tại của Perfekt, nên thay bằng Konjunktiv II: sie hätten manipuliert."
+      vi: "Konjunktiv I sie haben … manipuliert trùng hệt Perfekt Indikativ, nên thay bằng Konjunktiv II: sie hätten … manipuliert."
   - type: example
     target: Die Journalistin fragte, wer den Screenshot verbreitet habe und ob er echt sei.
     target_lang: de
@@ -94,12 +94,12 @@ body:
     note:
       vi: "Hai câu hỏi gián tiếp: wer … habe (W-Frage, quá khứ) và ob … sei (có/không, hiện tại). Động từ đứng cuối."
   - type: example
-    target: 'Die Polizei: "Verbreiten Sie keine Gerüchte!" – Die Polizei bat die Bürger, sie sollten keine Gerüchte verbreiten.'
+    target: 'Die Polizei: "Verbreiten Sie keine Gerüchte!" – Die Polizei warnte, die Bürger sollten keine Gerüchte verbreiten.'
     target_lang: de
     translation:
-      vi: 'Cảnh sát: "Đừng phát tán tin đồn!" – Cảnh sát đề nghị người dân không phát tán tin đồn.'
+      vi: 'Cảnh sát: "Đừng phát tán tin đồn!" – Cảnh sát cảnh báo rằng người dân không nên phát tán tin đồn.'
     note:
-      vi: "Mệnh lệnh → sollen. Chủ ngữ sie (số nhiều): sie sollen trùng hiện tại nên dùng Konjunktiv II sie sollten."
+      vi: "Mệnh lệnh → sollen. Chủ ngữ die Bürger (số nhiều): Konjunktiv I sie sollen trùng hiện tại nên dùng Konjunktiv II sollten."
   - type: common_mistake
     wrong: Er sagte, er habe gestern zu spät gekommen.
     right: Er sagte, er sei gestern zu spät gekommen.
@@ -196,7 +196,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u04-g-indirekte-rede-vergangenheit
     prompt:
-      template: 'Die Zeugin: "Ich habe nichts gesehen. Ich bin sofort nach Hause gegangen." → Die Zeugin sagte, sie {{b1}} nichts gesehen. Sie {{b2}} sofort nach Hause gegangen.'
+      template: 'Pressetext (Konjunktiv I). Die Zeugin: "Ich habe nichts gesehen. Ich bin sofort nach Hause gegangen." → Die Zeugin sagte, sie {{b1}} nichts gesehen. Sie {{b2}} sofort nach Hause gegangen.'
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 5 }
@@ -206,10 +206,10 @@ exercises:
         b2: [sei]
     known_wrong:
       - answer: hat
-        feedback_vi: Đây là thì hiện tại (Indikativ); văn báo chí cần Konjunktiv I – sie habe gesehen.
+        feedback_vi: sie hat … gesehen là Perfekt Indikativ, dùng được khi nói chuyện; đề yêu cầu Konjunktiv I – sie habe gesehen.
         error_tag: konjunktiv_form
       - answer: ist
-        feedback_vi: Văn báo chí cần Konjunktiv I – sie sei gegangen.
+        feedback_vi: sie ist … gegangen là Perfekt Indikativ; đề yêu cầu Konjunktiv I – sie sei gegangen.
         error_tag: konjunktiv_form
       - answer: würde
         feedback_vi: würde không dùng cho việc đã qua; quá khứ là habe/sei + Partizip II.
@@ -225,7 +225,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u04-g-indirekte-frage-aufforderung
     prompt:
-      template: 'Ein Leser: "Woher hat die Zeitung diese Information?" → Ein Leser wollte wissen, {{b1}} die Zeitung diese Information {{b2}}.'
+      template: 'Pressetext (Konjunktiv I). Ein Leser: "Woher hat die Zeitung diese Information?" → Ein Leser wollte wissen, {{b1}} die Zeitung diese Information {{b2}}.'
       blanks:
         - { id: b1, width_hint: 6 }
         - { id: b2, width_hint: 5 }
@@ -238,7 +238,7 @@ exercises:
         feedback_vi: Câu gốc có từ để hỏi (woher), nên giữ nguyên woher; ob chỉ dùng cho câu hỏi có/không.
         error_tag: conjunction
       - answer: hat
-        feedback_vi: Văn báo chí dùng Konjunktiv I – woher die Zeitung die Information habe.
+        feedback_vi: hat (Indikativ) dùng được khi nói chuyện, nhưng đề yêu cầu Konjunktiv I – woher die Zeitung diese Information habe.
         error_tag: konjunktiv_form
     explanation:
       vi: "Câu hỏi W giữ nguyên từ để hỏi woher; vì là câu phụ, động từ habe (Konjunktiv I của haben, ngôi die Zeitung) đứng cuối."

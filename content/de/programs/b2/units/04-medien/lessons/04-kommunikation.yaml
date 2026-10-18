@@ -53,13 +53,13 @@ body:
       vi: "schon không chỉ là \"rồi\": khi trấn an, nó nghĩa là \"rồi sẽ… thôi\" (Das schaffst du schon!); khi nhượng bộ, nó nghĩa là \"đúng là …, nhưng\" (Das ist schon richtig, aber …). ruhig trong lời mời, lời cho phép nghĩa là \"cứ tự nhiên\": Komm ruhig rein! / Du kannst ruhig fragen."
   - type: explain
     text:
-      vi: "bloß và nur trong câu mệnh lệnh là lời cảnh báo mạnh: Mach das bloß nicht! (Đừng có mà làm thế!); trong câu ước với Konjunktiv II chúng nghĩa là \"giá mà\": Wenn ich bloß mehr Zeit hätte! etwa trong câu hỏi có/không cho thấy người nói ngạc nhiên, nghi ngờ, mong câu trả lời là \"không\": Hast du etwa keine Zeit? (Chẳng lẽ bạn không có thời gian à?)"
+      vi: "bloß (và nur) trong câu mệnh lệnh thường là lời cảnh báo mạnh: Mach das bloß nicht! (Đừng có mà làm thế!); trong câu ước với Konjunktiv II chúng nghĩa là \"giá mà\": Wenn ich bloß mehr Zeit hätte! etwa trong câu hỏi có/không cho thấy người nói ngạc nhiên, nghi ngờ và không mong điều mình đoán là thật: Hast du etwa keine Zeit? (Chẳng lẽ bạn không có thời gian à?)"
   - type: explain
     text:
       vi: "Giao tiếp còn nằm ở cơ thể: Blickkontakt (nhìn vào mắt), Mimik (nét mặt), Gesten (cử chỉ), Abstand (khoảng cách) và Tonfall (giọng điệu). Ở Đức, nhiều người coi việc nhìn vào mắt người đối diện là dấu hiệu cởi mở, thẳng thắn, trong khi ở Việt Nam đôi khi tránh nhìn thẳng lại là phép lịch sự với người lớn tuổi. Ironie (nói ngược) thường chỉ nhận ra qua giọng điệu: \"Na toll!\" có thể là \"tệ thật!\"."
   - type: deep_explain
     text:
-      vi: "Vị trí: tiểu từ đứng ở giữa câu (Mittelfeld), sau động từ chia và thường sau đại từ, trước phần thông tin mới: Das ist ja eigentlich ganz einfach. Có thể ghép nhiều tiểu từ theo thứ tự quen dùng: ja doch, doch mal, denn eigentlich (Was machst du denn eigentlich hier?). Một số từ có nghĩa khác khi không phải tiểu từ: etwa = khoảng (etwa zehn Minuten), schon = rồi (Ich bin schon fertig), ruhig = yên tĩnh (eine ruhige Straße), wohl = khoẻ (sich wohlfühlen), nur = chỉ. Hãy để ý trọng âm: tiểu từ thường không nhấn, còn nghĩa \"rồi\" của schon hay nghĩa \"khoảng\" của etwa thì đứng trước con số hoặc mang trọng âm. Dùng quá nhiều tiểu từ trong một câu cũng nghe không tự nhiên; mỗi câu một hai tiểu từ là đủ."
+      vi: "Vị trí: tiểu từ đứng ở giữa câu (Mittelfeld), sau động từ chia và thường sau đại từ, trước phần thông tin mới: Das ist ja eigentlich ganz einfach. Có thể ghép nhiều tiểu từ theo thứ tự quen dùng: ja doch, doch mal, denn eigentlich (Was machst du denn eigentlich hier?). Một số từ có nghĩa khác khi không phải tiểu từ: etwa = khoảng (etwa zehn Minuten), schon = rồi (Ich bin schon fertig), ruhig = yên tĩnh (eine ruhige Straße), wohl = khoẻ (sich wohlfühlen), nur = chỉ. Trọng âm và vị trí cũng giúp phân biệt: tiểu từ thường không nhấn (riêng schon nhượng bộ hay được nhấn: Das ist SCHON richtig, aber …), còn etwa = khoảng thì đứng ngay trước con số. Dùng quá nhiều tiểu từ trong một câu cũng nghe không tự nhiên; mỗi câu một hai tiểu từ là đủ."
   - type: example
     target: Das ist eigentlich ganz einfach – ich zeige es dir.
     target_lang: de
@@ -89,12 +89,12 @@ body:
     note:
       vi: "ruhig + können: lời cho phép thân thiện. Lịch sự với khách (Sie) vẫn dùng được tiểu từ khi nói."
   - type: example
-    target: Pass bloß auf, die Treppe ist glatt! – Na ja, ich bin halt vorsichtig.
+    target: Pass bloß auf, die Treppe ist glatt! – Ja, ja, ich pass schon auf.
     target_lang: de
     translation:
-      vi: Cẩn thận đấy, cầu thang trơn lắm! – Ờ thì, mình vốn cẩn thận mà.
+      vi: Cẩn thận đấy, cầu thang trơn lắm! – Ừ ừ, mình cẩn thận mà.
     note:
-      vi: "bloß trong mệnh lệnh: cảnh báo mạnh. na ja (tiếng đệm) và halt (đã học ở B1) là đặc trưng văn nói."
+      vi: "bloß trong mệnh lệnh: cảnh báo mạnh. schon trong câu đáp: trấn an. ich pass = ich passe (dạng nói rút gọn, đã gặp ở B1)."
   - type: example
     target: Bist du etwa schon wieder krank?
     target_lang: de
@@ -225,10 +225,10 @@ exercises:
     known_wrong:
       - answer: schüttelt
         feedback_vi: Câu kể chuyện ở Präteritum (sagte), nên schütteln → schüttelte.
-        error_tag: verb_form
+        error_tag: tense
       - answer: lächelt
         feedback_vi: Câu kể chuyện ở Präteritum – er lächelte.
-        error_tag: verb_form
+        error_tag: tense
     explanation:
       vi: "Câu đầu dùng Präteritum (sagte), nên giữ cùng thì: schütteln và lächeln là động từ yếu, gốc + -te: schüttelte, lächelte."
     display_answer: "Er sagte kein Wort. Er schüttelte nur den Kopf und lächelte ironisch."

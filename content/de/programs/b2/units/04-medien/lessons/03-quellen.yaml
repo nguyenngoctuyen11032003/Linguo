@@ -43,6 +43,8 @@ items:
     role: reuse
   - item: de:item:b2u04-g-indirekte-rede
     role: reuse
+  - item: de:item:b2u03-g-modalverben-subjektiv
+    role: reuse
 body:
   - type: objective
     text:
@@ -52,10 +54,10 @@ body:
       vi: "Để nói \"theo …\", báo chí dùng laut + danh từ (laut Polizei, laut dem Bericht; trong văn viết trang trọng cũng gặp laut des Berichts) hoặc nach Angaben + Genitiv (nach Angaben der Polizei). Cũng có thể dùng câu phụ: Wie die Zeitung berichtet, … (động từ câu chính đứng ngay sau dấu phẩy)."
   - type: explain
     text:
-      vi: "zufolge là giới từ đứng sau danh từ, đi với Dativ: dem Bericht zufolge, Augenzeugen zufolge. Tiếng Việt luôn đặt \"theo\" trước, nên người Việt hay viết sai \"zufolge dem Bericht\"."
+      vi: "zufolge thường đứng sau danh từ và đi với Dativ: dem Bericht zufolge, Augenzeugen zufolge (đứng trước thì phải dùng Genitiv, rất hiếm và cứng). Tiếng Việt đặt \"theo\" trước, nên người Việt hay viết sai \"zufolge dem Bericht\"."
   - type: explain
     text:
-      vi: "Ở A1 bạn học sollen = phải, nên (theo yêu cầu của người khác). Trong tin tức, sollen còn có nghĩa \"nghe nói, người ta bảo\": Der Politiker soll reich sein = nghe nói ông chính khách giàu (chưa xác nhận). Tiếng Việt diễn đạt bằng \"nghe nói\", \"được cho là\"."
+      vi: "Ở A1 bạn học sollen = phải, nên (theo yêu cầu của người khác). Trong tin tức, sollen còn có nghĩa \"nghe nói, người ta bảo\": Der Politiker soll reich sein = nghe nói ông chính khách giàu (chưa xác nhận). Tiếng Việt diễn đạt bằng \"nghe nói\", \"được cho là\" – khác muss/dürfte (B2U03), nơi chính người nói phỏng đoán."
   - type: explain
     text:
       vi: "wollen trong tin tức có thể mang nghĩa \"tự nhận, khăng khăng\": Er will nichts gesehen haben = anh ta khăng khăng là không thấy gì (người viết không chắc điều đó đúng). Với việc đã qua, cả sollen và wollen đi với nguyên thể quá khứ ở cuối câu: Partizip II + haben/sein (gesehen haben, geflohen sein)."
@@ -94,7 +96,7 @@ body:
     target: Wie der Sender berichtet, hat die Firma die Meldung inzwischen dementiert.
     target_lang: de
     translation:
-      vi: Theo đài đưa tin, công ty đã cải chính bản tin đó.
+      vi: Theo đài đưa tin, công ty nay đã cải chính bản tin đó.
     note:
       vi: "Câu phụ Wie … berichtet chiếm vị trí 1, nên động từ hat đứng ngay sau dấu phẩy."
   - type: common_mistake
@@ -137,12 +139,12 @@ exercises:
       options:
         - { id: z3a, text: "zufolge", lang: de }
         - { id: z7b, text: "laut", lang: de }
-        - { id: z1c, text: "nach", lang: de }
+        - { id: z1c, text: "trotz", lang: de }
         - { id: z5d, text: "wegen", lang: de }
     answer:
       correct_option_id: z3a
     explanation:
-      vi: "Giới từ đứng sau danh từ ở Dativ (dem Bericht) chỉ có thể là zufolge. laut và nach đứng trước danh từ (laut dem Bericht); wegen nghĩa là \"vì\"."
+      vi: "Trong các phương án, giới từ đứng sau danh từ ở Dativ (dem Bericht) với nghĩa \"theo\" chỉ có zufolge. laut đứng trước danh từ (laut dem Bericht); trotz (\"mặc dù\") và wegen (\"vì\") sai nghĩa."
     display_answer: zufolge
 
   - key: de:exercise:b2u04l3-mcq-soll-bedeutung
@@ -193,7 +195,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u04-g-quellenangabe
     prompt:
-      template: "Nach {{b1}} der Feuerwehr brach das Feuer in der Küche aus. Den Augenzeugen {{b2}} kam der Rauch zuerst aus einem Fenster im dritten Stock."
+      template: "Nach {{b1}} (Angabe, Plural) der Feuerwehr brach das Feuer in der Küche aus. Den Augenzeugen {{b2}} (z…) kam der Rauch zuerst aus einem Fenster im dritten Stock."
       blanks:
         - { id: b1, width_hint: 8 }
         - { id: b2, width_hint: 8 }
@@ -203,13 +205,13 @@ exercises:
         b2: [zufolge]
     known_wrong:
       - answer: Angabe
-        feedback_vi: Cụm cố định dùng số nhiều – nach Angaben der Feuerwehr.
+        feedback_vi: Đề yêu cầu số nhiều; cụm quen dùng trong tin tức là nach Angaben der Feuerwehr.
         error_tag: plural_form
       - answer: laut
         feedback_vi: laut đứng trước danh từ (laut den Augenzeugen); sau danh từ ở Dativ phải là zufolge.
         error_tag: word_order
     explanation:
-      vi: "nach Angaben + Genitiv (der Feuerwehr) là cụm cố định, Angaben ở số nhiều. Den Augenzeugen (Dativ số nhiều) đứng trước chỗ trống, nên giới từ phải là zufolge – giới từ đứng sau danh từ."
+      vi: "nach Angaben + Genitiv (der Feuerwehr) là cụm quen dùng, Angaben ở số nhiều. Den Augenzeugen (Dativ số nhiều) đứng trước chỗ trống, nên giới từ phải là zufolge – giới từ đứng sau danh từ."
     display_answer: "Nach Angaben der Feuerwehr brach das Feuer in der Küche aus. Den Augenzeugen zufolge kam der Rauch zuerst aus einem Fenster im dritten Stock."
 
   - key: de:exercise:b2u04l3-fill-soll-will

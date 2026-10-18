@@ -202,7 +202,7 @@ items:
           translation:
             vi: Nữ ca sĩ đã xin lỗi vì phát ngôn của mình.
       confusion:
-        vi: "Danh từ đuôi -ung là giống cái: die Äußerung. Nghĩa trung tính (một lời nói ra), khác die Behauptung (lời khẳng định chưa được chứng minh)."
+        vi: "Danh từ đuôi -ung (từ động từ) là giống cái: die Äußerung (ngoại lệ hiếm như der Sprung). Nghĩa trung tính (một lời nói ra), khác die Behauptung (lời khẳng định chưa được chứng minh)."
 
   - key: de:item:b2u04-aeussern
     type: vocab
@@ -392,7 +392,7 @@ items:
           translation:
             vi: Thành phố đã công bố một thông cáo báo chí vào thứ Hai.
       confusion:
-        vi: "die Mitteilung (thông báo) đến từ động từ mitteilen. Đuôi -ung nên là giống cái."
+        vi: "die Mitteilung (thông báo) đến từ động từ mitteilen; danh từ -ung tạo từ động từ là giống cái."
 
   - key: de:item:b2u04-medium
     type: vocab
@@ -413,7 +413,7 @@ items:
           translation:
             vi: Chủ đề này xuất hiện trên mọi phương tiện truyền thông suốt nhiều ngày.
       confusion:
-        vi: "Số nhiều bất quy tắc: die Medien (không phải Mediums). Khi nói về truyền thông, người ta hầu như luôn dùng số nhiều die Medien."
+        vi: "Số nhiều bất quy tắc: die Medien (không phải Mediums). Khi nói về giới truyền thông nói chung, người ta thường dùng số nhiều die Medien; số ít chỉ một loại phương tiện (das Medium Radio)."
 
   - key: de:item:b2u04-rundfunk
     type: vocab
@@ -854,7 +854,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Để nêu nguồn tin, báo chí dùng: laut + Dativ hoặc Genitiv (laut Polizei, laut dem Bericht / laut des Berichts), … zufolge đứng sau danh từ ở Dativ (dem Bericht zufolge), nach Angaben + Genitiv (nach Angaben der Polizei), hoặc câu phụ wie … berichtet (Wie die Zeitung berichtet, …). Cả nhóm tương ứng với \"theo …\" trong tiếng Việt. Vì nguồn đã được nêu rõ, câu chính thường để ở thức thường (Indikativ); Konjunktiv I cũng có thể gặp."
+        vi: "Để nêu nguồn tin, báo chí dùng: laut + Dativ hoặc Genitiv (laut Polizei, laut dem Bericht / laut des Berichts), … zufolge thường đứng sau danh từ ở Dativ (dem Bericht zufolge; đứng trước + Genitiv thì rất hiếm), nach Angaben + Genitiv (nach Angaben der Polizei), hoặc câu phụ wie … berichtet (Wie die Zeitung berichtet, …). Cả nhóm tương ứng với \"theo …\" trong tiếng Việt. Vì nguồn đã được nêu rõ, câu chính thường để ở thức thường (Indikativ); Konjunktiv I cũng có thể gặp."
       examples:
         - target: Laut Polizei wurde niemand verletzt.
           translation:

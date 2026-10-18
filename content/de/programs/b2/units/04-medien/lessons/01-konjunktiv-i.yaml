@@ -64,7 +64,7 @@ body:
       vi: "Ngữ vực: Konjunktiv I thuộc văn viết (tin tức, thông cáo, biên bản) và lời nói trang trọng như bản tin truyền hình. Khi trò chuyện hằng ngày, người Đức thường dùng thì hiện tại hoặc Konjunktiv II: Er hat gesagt, er hat keine Zeit / er hätte keine Zeit. Bạn cần đọc hiểu cả ba cách, còn khi viết bản tin hay tóm tắt thì dùng Konjunktiv I."
   - type: deep_explain
     text:
-      vi: "Bảng đầy đủ: sein – ich sei, du seist, er sei, wir seien, ihr seiet, sie seien; haben – ich habe, du habest, er habe, wir haben, ihr habet, sie haben; können – ich könne, du könnest, er könne, wir können, ihr könnet, sie können. Các dạng du/ihr (habest, könnet) rất hiếm, nghe cổ; người ta thay bằng Konjunktiv II. Quy tắc thực dụng: ngôi er/sie/es luôn có dạng Konjunktiv I riêng (đuôi -e, khác dạng hiện tại -t), còn ich/wir/sie thì phần lớn trùng hiện tại (trừ sein), nên phải thay bằng Konjunktiv II. Động từ dẫn lời trong tin tức thường ở Präteritum: sagte, erklärte, betonte, teilte mit, äußerte; thì của động từ dẫn không ảnh hưởng đến Konjunktiv I trong lời thuật. Nếu thuật lại vào ngày khác, các từ chỉ thời gian, nơi chốn cũng đổi cho hợp: heute → an diesem Tag, morgen → am nächsten Tag, hier → dort."
+      vi: "Bảng đầy đủ: sein – ich sei, du seist, er sei, wir seien, ihr seiet, sie seien; haben – ich habe, du habest, er habe, wir haben, ihr habet, sie haben; können – ich könne, du könnest, er könne, wir können, ihr könnet, sie können. Các dạng du/ihr (habest, könnet) rất hiếm, nghe cổ; người ta thay bằng Konjunktiv II. Quy tắc thực dụng: ở ngôi er/sie/es, Konjunktiv I luôn khác thì hiện tại (er habe ≠ er hat, er könne ≠ er kann), nên dùng được ngay; ở wir/sie (số nhiều) nó trùng hiện tại (trừ sein: seien), nên phải thay bằng Konjunktiv II. Ngôi ich phần lớn cũng trùng (ich habe, ich komme), trừ sein và động từ khuyết thiếu, wissen (ich sei, ich könne, ich wisse). Động từ dẫn lời trong tin tức thường ở Präteritum: sagte, erklärte, betonte, teilte mit, äußerte; thì của động từ dẫn không ảnh hưởng đến Konjunktiv I trong lời thuật. Nếu thuật lại vào ngày khác, các từ chỉ thời gian, nơi chốn cũng đổi cho hợp: heute → an diesem Tag, morgen → am nächsten Tag, hier → dort."
   - type: example
     target: Der Minister sagte, er sei mit dem Ergebnis zufrieden.
     target_lang: de
@@ -196,7 +196,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u04-g-konjunktiv-i-formen
     prompt:
-      template: 'Die Bürgermeisterin: "Die Stadt hat kein Geld. Sie kann das Schwimmbad nicht renovieren. Ich werde mit dem Land sprechen." → Die Bürgermeisterin sagte, die Stadt {{b1}} kein Geld, sie {{b2}} das Schwimmbad nicht renovieren. Sie {{b3}} mit dem Land sprechen.'
+      template: 'Pressetext (Konjunktiv I). Die Bürgermeisterin: "Die Stadt hat kein Geld. Sie kann das Schwimmbad nicht renovieren. Ich werde mit dem Land sprechen." → Die Bürgermeisterin sagte, die Stadt {{b1}} kein Geld, sie {{b2}} das Schwimmbad nicht renovieren. Sie {{b3}} mit dem Land sprechen.'
       blanks:
         - { id: b1, width_hint: 6 }
         - { id: b2, width_hint: 6 }
@@ -208,19 +208,19 @@ exercises:
         b3: [werde]
     known_wrong:
       - answer: hat
-        feedback_vi: Đây là thì hiện tại; văn báo chí cần Konjunktiv I – die Stadt habe.
+        feedback_vi: die Stadt hat (Indikativ) dùng được khi nói chuyện, nhưng đề yêu cầu Konjunktiv I – die Stadt habe.
         error_tag: konjunktiv_form
       - answer: kann
-        feedback_vi: Konjunktiv I của können lấy gốc nguyên thể – sie könne.
+        feedback_vi: kann là Indikativ; đề yêu cầu Konjunktiv I, lấy gốc nguyên thể – sie könne.
         error_tag: konjunktiv_form
       - answer: wird
         feedback_vi: Konjunktiv I của werden là er/sie werde (không phải wird).
         error_tag: konjunktiv_form
       - answer: könnte
-        feedback_vi: könnte là Konjunktiv II; ngôi sie (số ít) có dạng Konjunktiv I riêng là könne.
+        feedback_vi: könnte (Konjunktiv II) chỉ cần khi Konjunktiv I trùng thì hiện tại; ngôi sie (số ít) có dạng Konjunktiv I riêng là könne.
         error_tag: konjunktiv_form
     explanation:
-      vi: "Cả ba chủ ngữ đều là ngôi thứ ba số ít (die Stadt, sie = bà thị trưởng/thành phố), nên dùng gốc nguyên thể + -e: habe, könne, werde. Ngôi này luôn khác thì hiện tại, nên không cần thay bằng Konjunktiv II."
+      vi: "Cả ba chủ ngữ đều là ngôi thứ ba số ít (die Stadt, sie = bà thị trưởng/thành phố), nên dùng gốc nguyên thể + -e: habe, könne, werde. Ở ngôi này Konjunktiv I khác thì hiện tại, nên không cần thay bằng Konjunktiv II."
     display_answer: "Die Bürgermeisterin sagte, die Stadt habe kein Geld, sie könne das Schwimmbad nicht renovieren. Sie werde mit dem Land sprechen."
 
   - key: de:exercise:b2u04l1-fill-sohn-krank
@@ -230,7 +230,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u04-g-indirekte-rede
     prompt:
-      template: 'Herr Krüger: "Mein Sohn ist krank, und ich muss zu Hause bleiben." → Herr Krüger sagt, {{b1}} Sohn {{b2}} krank, und er {{b3}} zu Hause bleiben.'
+      template: 'Pressetext (Konjunktiv I). Herr Krüger: "Mein Sohn ist krank, und ich muss zu Hause bleiben." → Herr Krüger sagt, {{b1}} Sohn {{b2}} krank, und er {{b3}} zu Hause bleiben.'
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 4 }
@@ -245,10 +245,10 @@ exercises:
         feedback_vi: Phải đổi đại từ theo người thuật – con trai của Herr Krüger là sein Sohn.
         error_tag: pronoun
       - answer: ist
-        feedback_vi: Văn báo chí dùng Konjunktiv I – sein Sohn sei krank.
+        feedback_vi: ist (Indikativ) dùng được khi nói chuyện, nhưng đề yêu cầu Konjunktiv I – sein Sohn sei krank.
         error_tag: konjunktiv_form
       - answer: muss
-        feedback_vi: Konjunktiv I của müssen là er müsse (gốc nguyên thể + -e).
+        feedback_vi: muss là Indikativ; Konjunktiv I của müssen là er müsse (gốc nguyên thể + -e).
         error_tag: konjunktiv_form
       - answer: müsste
         feedback_vi: müsste là Konjunktiv II; ngôi er có dạng Konjunktiv I riêng – er müsse.

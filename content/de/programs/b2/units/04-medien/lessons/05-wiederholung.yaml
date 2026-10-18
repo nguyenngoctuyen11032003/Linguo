@@ -70,7 +70,7 @@ body:
     target: "In dem Artikel aus der Musterstädter Zeitung geht es um eine Falschmeldung über das städtische Schwimmbad. Im Internet wurde behauptet, das Bad werde wegen giftiger Stoffe im Wasser geschlossen. Die Stadtverwaltung erklärt jedoch, diese Behauptung sei falsch. Das Wasser sei regelmäßig überprüft worden und völlig sauber."
     target_lang: de
     translation:
-      vi: "Bài báo của tờ báo Musterstadt viết về một tin giả liên quan đến bể bơi thành phố. Trên mạng có người khẳng định rằng bể bơi sẽ bị đóng cửa vì trong nước có chất độc. Tuy nhiên chính quyền thành phố tuyên bố rằng lời khẳng định này sai. Nước được kiểm tra thường xuyên và hoàn toàn sạch."
+      vi: "Bài báo của tờ báo Musterstadt viết về một tin giả liên quan đến bể bơi thành phố. Trên mạng có người khẳng định rằng bể bơi sẽ bị đóng cửa vì trong nước có chất độc. Tuy nhiên chính quyền thành phố tuyên bố rằng lời khẳng định này sai. Nước đã được kiểm tra thường xuyên và hoàn toàn sạch."
     note:
       vi: "Phần 1 của bản tóm tắt mẫu: câu mở đầu (geht es um), lời gián tiếp hiện tại (werde, sei) và quá khứ bị động (sei … überprüft worden)."
   - type: example
@@ -79,7 +79,7 @@ body:
     translation:
       vi: "Theo thông tin của thành phố, mấy ngày qua có nhiều cuộc gọi lo lắng. Một nữ phát ngôn viên nhấn mạnh rằng chỉ nên chia sẻ thông tin từ các nguồn đáng tin. Đến nay vẫn chưa rõ ai là người đầu tiên phát tán tin này. Cảnh sát đang điều tra."
     note:
-      vi: "Phần 2: nêu nguồn (nach Angaben + Genitiv), thuật lời khuyên bằng solle, kết bằng điều chưa rõ. Hai phần cộng lại khoảng 90 từ; bạn có thể thêm một hai câu để đạt 120 từ."
+      vi: "Phần 2: nêu nguồn (nach Angaben + Genitiv), thuật lời khuyên bằng solle, kết bằng điều chưa rõ. Hai phần cộng lại khoảng 80 từ; bạn có thể thêm một hai câu để đạt 120 từ."
   - type: example
     target: Eine Leserin wollte wissen, ob das Schwimmbad am Wochenende geöffnet sei.
     target_lang: de
@@ -191,7 +191,7 @@ exercises:
       audio_asset_id: null
       fallback_text: Frau Berger, Sie leiten ein Faktencheck-Team. Wie erkennt man eine Falschmeldung? – Zuerst sollte man immer fragen, woher die Information kommt. Seriöse Medien nennen ihre Quellen.
       options:
-        - { id: q2a, text: "Theo bà Berger, trước tiên nên hỏi thông tin đến từ đâu, vì báo chí nghiêm túc luôn nêu nguồn.", lang: vi }
+        - { id: q2a, text: "Theo bà Berger, trước tiên nên hỏi thông tin đến từ đâu, vì báo chí nghiêm túc nêu nguồn của mình.", lang: vi }
         - { id: q6b, text: "Theo bà Berger, trước tiên nên hỏi tin đó đã được chia sẻ bao nhiêu lần.", lang: vi }
         - { id: q9c, text: "Theo bà Berger, báo chí nghiêm túc không bao giờ nêu nguồn.", lang: vi }
         - { id: q4d, text: "Bà Berger nói rằng không thể nhận ra tin giả.", lang: vi }
@@ -199,7 +199,7 @@ exercises:
       correct_option_id: q2a
     explanation:
       vi: "woher die Information kommt = thông tin đến từ đâu (tức là nguồn); Seriöse Medien nennen ihre Quellen = báo chí nghiêm túc nêu nguồn của mình."
-    display_answer: Theo bà Berger, trước tiên nên hỏi thông tin đến từ đâu, vì báo chí nghiêm túc luôn nêu nguồn.
+    display_answer: Theo bà Berger, trước tiên nên hỏi thông tin đến từ đâu, vì báo chí nghiêm túc nêu nguồn của mình.
 
   - key: de:exercise:b2u04l5-listen-teilen
     type: listen
@@ -229,7 +229,7 @@ exercises:
     difficulty: 4
     item: de:item:a2u07-g-es-geht-um
     prompt:
-      template: "In dem Artikel {{b1}} es um eine Falschmeldung. Die Stadt erklärt, das Wasser {{b2}} (sein) sauber. Den Angaben der Polizei {{b3}} wird noch ermittelt."
+      template: "In dem Artikel {{b1}} es um eine Falschmeldung. Die Stadt erklärt, das Wasser {{b2}} (sein, Konjunktiv I) sauber. Den Angaben der Polizei {{b3}} (z…) wird noch ermittelt."
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 4 }
@@ -241,7 +241,7 @@ exercises:
         b3: [zufolge]
     known_wrong:
       - answer: ist
-        feedback_vi: Bản tóm tắt thuật lời của thành phố, nên dùng Konjunktiv I – das Wasser sei sauber.
+        feedback_vi: ist (Indikativ) không sai ngữ pháp, nhưng bản tóm tắt thuật lời thành phố và đề yêu cầu Konjunktiv I – das Wasser sei sauber.
         error_tag: konjunktiv_form
       - answer: laut
         feedback_vi: laut đứng trước danh từ; danh từ đứng trước chỗ trống thì phải là zufolge.
@@ -271,9 +271,12 @@ exercises:
         - Der Polizei zufolge wurde niemand verletzt.
         - Laut Polizei wurde keiner verletzt.
         - Niemand wurde laut Polizei verletzt.
+        - Laut der Polizei wurde keiner verletzt.
+        - Nach Angaben der Polizei wurde keiner verletzt.
+        - Der Polizei zufolge wurde keiner verletzt.
     known_wrong:
       - answer: Zufolge der Polizei wurde niemand verletzt.
-        feedback_vi: zufolge đứng sau danh từ – der Polizei zufolge.
+        feedback_vi: zufolge đứng trước danh từ (+ Genitiv) rất hiếm và nghe cứng; cách tự nhiên là đặt sau – der Polizei zufolge.
         error_tag: word_order
       - answer: Laut Polizei niemand wurde verletzt.
         feedback_vi: laut Polizei chiếm vị trí 1, động từ wurde phải ở vị trí 2 – Laut Polizei wurde niemand verletzt.
