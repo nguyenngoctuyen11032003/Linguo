@@ -1,0 +1,352 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u02-statistik
+order_index: 4
+level: b2
+title:
+  vi: Mô tả biểu đồ – số liệu (Der Anteil ist um 5 % gestiegen.)
+objectives:
+  - vi: Mô tả và bình luận biểu đồ, bảng số liệu trong bài nói (Die Grafik zeigt …, Im Vergleich zu …, Auffällig ist, dass …).
+  - vi: Dùng đúng um (mức thay đổi) và auf (giá trị mới), von … auf …, Prozent và Prozentpunkt.
+  - vi: Nghe hiểu bản tin kinh tế ngắn có số liệu.
+estimated_minutes: 21
+skills: [listening, speaking, vocabulary]
+prerequisites: [de:lesson:b2u02-funktionsverbgefuege]
+items:
+  - item: de:item:b2u02-g-grafik-redemittel
+  - item: de:item:b2u02-statistik
+  - item: de:item:b2u02-grafik
+  - item: de:item:b2u02-anteil
+  - item: de:item:b2u02-durchschnitt
+  - item: de:item:b2u02-durchschnittlich
+  - item: de:item:b2u02-sinken
+  - item: de:item:b2u02-anstieg
+  - item: de:item:b2u02-rueckgang
+  - item: de:item:b2u02-sich-verdoppeln
+  - item: de:item:b2u02-prozentpunkt
+  - item: de:item:b2u02-wert
+  - item: de:item:b2u02-haelfte
+  - item: de:item:b2u02-drittel
+  - item: de:item:b2u02-stagnieren
+  - item: de:item:b2u02-schwanken
+  - item: de:item:b2u02-sich-halbieren
+  - item: de:item:b2u02-zeitraum
+  - item: de:item:b2u02-hoechststand
+  - item: de:item:b2u02-tabelle
+  - item: de:item:a2u04-zunehmen
+    role: reuse
+  - item: de:item:a2u04-abnehmen
+    role: reuse
+  - item: de:item:b2u02-umsatz
+    role: reuse
+  - item: de:item:b2u02-gewinn
+    role: reuse
+  - item: de:item:b2u02-g-genitiv-praep-formal
+    role: reuse
+  - item: de:item:b1u09-g-vergleichssatz
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn mô tả được một biểu đồ bằng tiếng Đức, ví dụ: \"Die Grafik zeigt, dass der Umsatz von 2 auf 3 Millionen Euro gestiegen ist. Auffällig ist, dass sich der Gewinn im gleichen Zeitraum halbiert hat.\""
+  - type: explain
+    text:
+      vi: "Hai giới từ quan trọng nhất: um + số = mức thay đổi (tăng / giảm BAO NHIÊU), auf + số = giá trị mới (tăng / giảm ĐẾN mức nào). Der Preis ist um 1 Euro gestiegen (tăng thêm 1 euro) – Der Preis ist auf 5 Euro gestiegen (giờ là 5 euro). von … auf … nêu cả điểm đầu và điểm cuối: von 4 auf 5 Euro."
+  - type: explain
+    text:
+      vi: "steigen, sinken, zurückgehen là động từ chỉ sự thay đổi trạng thái nên chia Perfekt với sein: Die Zahl ist gestiegen (không phải hat gestiegen). Ngược lại zunehmen / abnehmen (ở đây là tăng / giảm về số lượng, không phải tăng / giảm cân), sich verdoppeln, sich halbieren, stagnieren, schwanken chia với haben."
+  - type: explain
+    text:
+      vi: "Khi chính các giá trị là phần trăm, mức chênh lệch tính bằng Prozentpunkte: từ 10 lên 12 Prozent là tăng 2 Prozentpunkte, nhưng so với giá trị ban đầu thì là tăng 20 Prozent. Tiếng Việt nói \"điểm phần trăm\"; nói nhầm \"tăng 2 %\" sẽ sai nội dung."
+  - type: explain
+    text:
+      vi: "Khung bài nói về biểu đồ: giới thiệu (Die Grafik zeigt … / In der Tabelle sieht man …), nêu số liệu chính (Der Anteil liegt bei … / ist von … auf … gestiegen), so sánh (Im Vergleich zu …), điểm nổi bật (Auffällig ist, dass …), rồi kết luận hoặc giải thích (Das liegt vermutlich daran, dass …)."
+  - type: deep_explain
+    text:
+      vi: "Trong phần nói của kỳ thi B2 và trong công việc, bạn thường phải tả số liệu rồi bình luận. Hãy nói thận trọng về nguyên nhân (vermutlich, wahrscheinlich, möglicherweise), vì biểu đồ chỉ cho thấy diễn biến chứ không chứng minh nguyên nhân. Danh từ cũng đi với um / auf: ein Anstieg um 5 Prozent, ein Rückgang auf 3 Prozent; với Genitiv: der Anstieg der Preise. liegen bei + số nêu giá trị tại một thời điểm: Der Anteil lag 2020 bei 15 Prozent. Phân số: die Hälfte (giống cái), còn das Drittel, das Viertel (giống trung). Mọi số liệu trong bài là giả định để luyện ngôn ngữ."
+  - type: example
+    target: Die Grafik zeigt die Entwicklung des Umsatzes im Zeitraum von 2015 bis 2025.
+    target_lang: de
+    translation:
+      vi: Biểu đồ cho thấy diễn biến doanh thu trong giai đoạn từ 2015 đến 2025.
+    note:
+      vi: "Câu mở đầu điển hình. im Zeitraum von … bis … = trong giai đoạn từ … đến …"
+  - type: example
+    target: Der Preis ist um einen Euro gestiegen, nämlich von vier auf fünf Euro.
+    target_lang: de
+    translation:
+      vi: Giá đã tăng một euro, cụ thể là từ bốn lên năm euro.
+    note:
+      vi: "um = mức tăng (1 Euro); von … auf … = điểm đầu và điểm cuối. Perfekt với sein: ist gestiegen."
+  - type: example
+    target: Im Vergleich zum Vorjahr ist der Anteil um zwei Prozentpunkte gesunken.
+    target_lang: de
+    translation:
+      vi: So với năm trước, tỉ lệ đã giảm hai điểm phần trăm.
+    note:
+      vi: "im Vergleich zu + Dativ (zum = zu dem). Giá trị là phần trăm nên mức giảm tính bằng Prozentpunkte."
+  - type: example
+    target: Auffällig ist, dass sich der Gewinn im gleichen Zeitraum halbiert hat.
+    target_lang: de
+    translation:
+      vi: Điều đáng chú ý là lợi nhuận đã giảm một nửa trong cùng giai đoạn.
+    note:
+      vi: "Auffällig ist, dass … đưa ra điểm nổi bật; trong câu dass, hat đứng cuối. sich halbieren chia với haben."
+  - type: example
+    target: Die Zahl der Online-Bestellungen hat stark zugenommen.
+    target_lang: de
+    translation:
+      vi: Số đơn đặt hàng trực tuyến đã tăng mạnh.
+    note:
+      vi: "zunehmen ở đây là \"tăng (về số lượng)\", không phải tăng cân như ở A2; Perfekt với haben: hat zugenommen. Trái nghĩa: abnehmen."
+  - type: example
+    target: Durchschnittlich gibt ein Kunde 25 Euro aus. Ein Drittel der Kunden kauft aber mehr als 50 Euro ein.
+    target_lang: de
+    translation:
+      vi: Trung bình một khách hàng chi 25 euro. Nhưng một phần ba số khách mua hơn 50 euro.
+    note:
+      vi: "Ein Drittel der Kunden: chủ ngữ là Drittel (số ít) → kauft. der Kunden là Genitiv số nhiều."
+  - type: common_mistake
+    wrong: Die Zahl der Kunden hat um zehn Prozent gestiegen.
+    right: Die Zahl der Kunden ist um zehn Prozent gestiegen.
+    target_lang: de
+    note:
+      vi: "steigen (cũng như sinken) chia Perfekt với sein: ist gestiegen."
+  - type: common_mistake
+    wrong: Der Umsatz ist auf zehn Prozent gestiegen.
+    right: Der Umsatz ist um zehn Prozent gestiegen.
+    target_lang: de
+    note:
+      vi: "Muốn nói doanh thu tăng thêm 10 % thì dùng um; auf chỉ giá trị mới sau khi thay đổi (và doanh thu tính bằng tiền, không phải phần trăm)."
+  - type: common_mistake
+    wrong: Die Quote ist von 5 auf 6 Prozent gestiegen, also um 1 Prozent.
+    right: Die Quote ist von 5 auf 6 Prozent gestiegen, also um 1 Prozentpunkt.
+    target_lang: de
+    note:
+      vi: "Chênh lệch giữa hai giá trị phần trăm tính bằng Prozentpunkte (thực tế đó là tăng 20 Prozent)."
+  - type: summary
+    points:
+      - vi: "um = mức thay đổi; auf = giá trị mới; von … auf … = từ … lên / xuống …"
+      - vi: "steigen, sinken: Perfekt với sein; zunehmen, abnehmen, sich verdoppeln, sich halbieren: với haben."
+      - vi: "Prozentpunkt = chênh lệch giữa hai giá trị phần trăm."
+      - vi: "Mẫu câu: Die Grafik zeigt … · Im Vergleich zu … · Auffällig ist, dass … · Der Wert liegt bei …"
+      - vi: "Từ vựng: der Anteil, der Durchschnitt, der Anstieg, der Rückgang, der Höchststand, der Zeitraum, die Hälfte, das Drittel, stagnieren, schwanken."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u02l4-listen-um-acht-prozent
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u02-g-grafik-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Umsatz ist im Vergleich zum Vorjahr um acht Prozent gestiegen.
+      options:
+        - { id: u2a, text: "Doanh thu đã tăng 8 % so với năm trước.", lang: vi }
+        - { id: u6b, text: "Doanh thu đã tăng lên mức 8 % so với năm trước.", lang: vi }
+        - { id: u9c, text: "Doanh thu đã giảm 8 % so với năm trước.", lang: vi }
+        - { id: u4d, text: "Lợi nhuận đã tăng 8 % so với năm trước.", lang: vi }
+    answer:
+      correct_option_id: u2a
+    explanation:
+      vi: "um acht Prozent = tăng thêm 8 % (mức thay đổi). \"tăng lên mức 8 %\" sẽ là auf acht Prozent. der Umsatz là doanh thu, không phải lợi nhuận (der Gewinn)."
+    display_answer: Doanh thu đã tăng 8 % so với năm trước.
+
+  - key: de:exercise:b2u02l4-listen-von-auf
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u02-sinken
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Zahl der Mitarbeiter ist von zweihundert auf hundertfünfzig gesunken.
+      options:
+        - { id: m3a, text: "Số nhân viên đã giảm từ 200 xuống còn 150.", lang: vi }
+        - { id: m7b, text: "Số nhân viên đã giảm 150 người, từ 200 xuống còn 50.", lang: vi }
+        - { id: m1c, text: "Số nhân viên đã tăng từ 150 lên 200.", lang: vi }
+        - { id: m5d, text: "Số nhân viên đã giảm 200 người.", lang: vi }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "von … auf … = từ … xuống / lên …: von zweihundert auf hundertfünfzig = từ 200 xuống còn 150 (tức là giảm 50 người). gesunken = đã giảm."
+    display_answer: Số nhân viên đã giảm từ 200 xuống còn 150.
+
+  - key: de:exercise:b2u02l4-listen-prozentpunkte
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u02-prozentpunkt
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Anteil der Online-Käufe ist von zehn auf zwölf Prozent gestiegen, also um zwei Prozentpunkte.
+      options:
+        - { id: k4a, text: "Tỉ lệ mua hàng trực tuyến tăng từ 10 % lên 12 %, tức là tăng 2 điểm phần trăm.", lang: vi }
+        - { id: k8b, text: "Tỉ lệ mua hàng trực tuyến tăng từ 10 % lên 12 %, tức là tăng 12 điểm phần trăm.", lang: vi }
+        - { id: k2c, text: "Tỉ lệ mua hàng trực tuyến giảm từ 12 % xuống 10 %, tức là giảm 2 điểm phần trăm.", lang: vi }
+        - { id: k6d, text: "Tỉ lệ mua hàng trực tuyến tăng thêm 12 %, tức là gấp đôi.", lang: vi }
+    answer:
+      correct_option_id: k4a
+    explanation:
+      vi: "von zehn auf zwölf Prozent = từ 10 lên 12 %; chênh lệch giữa hai giá trị phần trăm là 2 Prozentpunkte (điểm phần trăm). gestiegen = tăng."
+    display_answer: Tỉ lệ mua hàng trực tuyến tăng từ 10 % lên 12 %, tức là tăng 2 điểm phần trăm.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u02l4-fill-ist-auf-um
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-g-grafik-redemittel
+    prompt:
+      template: "Die Zahl der Kunden {{b1}} (Perfekt, Hilfsverb) im letzten Jahr stark gestiegen: von 5000 {{b2}} 6000, also {{b3}} 20 Prozent."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [ist]
+        b2: [auf]
+        b3: [um]
+    known_wrong:
+      - answer: hat
+        feedback_vi: "steigen chỉ sự thay đổi trạng thái → Perfekt với sein: ist gestiegen."
+        error_tag: aux_verb
+      - answer: bis
+        feedback_vi: "Điểm đầu và điểm cuối của sự thay đổi: von … auf … (không dùng bis)."
+        error_tag: preposition
+      - answer: mit
+        feedback_vi: "Mức thay đổi dùng um: um 20 Prozent."
+        error_tag: preposition
+    explanation:
+      vi: "Ô 1: steigen → ist gestiegen. Ô 2: von 5000 auf 6000 = từ 5000 lên 6000 (giá trị mới). Ô 3: mức tăng 1000 là 20 % của 5000 → um 20 Prozent."
+    display_answer: "Die Zahl der Kunden ist im letzten Jahr stark gestiegen: von 5000 auf 6000, also um 20 Prozent."
+
+  - key: de:exercise:b2u02l4-fill-redemittel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-grafik-redemittel
+    prompt:
+      template: "Im {{b1}} (vergleichen) zum Vorjahr ist der Anteil gesunken. {{b2}} (auffallen) ist, dass die Kosten fast doppelt so hoch sind wie früher: Sie haben sich fast {{b3}} (doppelt)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [Vergleich]
+        b2: [Auffällig, Auffallend]
+        b3: [verdoppelt]
+    known_wrong:
+      - answer: Vergleichen
+        feedback_vi: "Cụm cố định là im Vergleich zu + Dativ (danh từ der Vergleich)."
+        error_tag: word_form
+      - answer: gedoppelt
+        feedback_vi: "Động từ là sich verdoppeln → Partizip II verdoppelt."
+        error_tag: participle_form
+    explanation:
+      vi: "im Vergleich zu = so với; doppelt so hoch wie früher = cao gấp đôi so với trước (so + tính từ + wie). Auffällig ist, dass … = điều đáng chú ý là … (Auffallend cũng đúng); sich verdoppeln = tăng gấp đôi, Perfekt: haben sich verdoppelt."
+    display_answer: "Im Vergleich zum Vorjahr ist der Anteil gesunken. Auffällig ist, dass die Kosten fast doppelt so hoch sind wie früher: Sie haben sich fast verdoppelt."
+
+  - key: de:exercise:b2u02l4-tr-umsatz-fuenf-prozent
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-umsatz
+    prompt:
+      source_text: "Doanh thu đã tăng (thêm) năm phần trăm. (thì Perfekt, động từ steigen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Umsatz ist um fünf Prozent gestiegen.
+        - Der Umsatz ist um 5 Prozent gestiegen.
+        - Der Umsatz ist um 5 % gestiegen.
+        - Der Umsatz ist um 5% gestiegen.
+    known_wrong:
+      - answer: Der Umsatz hat um fünf Prozent gestiegen.
+        feedback_vi: "steigen chia Perfekt với sein: ist gestiegen."
+        error_tag: aux_verb
+      - answer: Der Umsatz ist auf fünf Prozent gestiegen.
+        feedback_vi: "auf = lên tới mức (giá trị mới); tăng thêm bao nhiêu thì dùng um."
+        error_tag: preposition
+      - answer: Der Umsatz ist fünf Prozent gestiegen.
+        feedback_vi: "Mức thay đổi cần giới từ um: um fünf Prozent."
+        error_tag: preposition
+    explanation:
+      vi: "Mức tăng → um + số; steigen → ist … gestiegen. Số có thể viết bằng chữ hoặc chữ số."
+    display_answer: Der Umsatz ist um fünf Prozent gestiegen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u02l4-listen-nachrichten
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u02-sich-halbieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wie das Unternehmen Nordtextil heute mitteilte, ist sein Umsatz im vergangenen Jahr um zwölf Prozent auf achtundvierzig Millionen Euro gestiegen. Der Gewinn hat sich dagegen fast halbiert, vor allem aufgrund der stark gestiegenen Energiekosten.
+      options:
+        - { id: n2a, text: "Doanh thu tăng 12 %, lên 48 triệu euro, nhưng lợi nhuận giảm gần một nửa, chủ yếu do chi phí năng lượng tăng mạnh.", lang: vi }
+        - { id: n6b, text: "Doanh thu tăng lên 12 triệu euro, còn lợi nhuận tăng gần gấp đôi nhờ chi phí năng lượng giảm.", lang: vi }
+        - { id: n9c, text: "Doanh thu tăng 48 %, lên 12 triệu euro, và lợi nhuận giữ nguyên.", lang: vi }
+        - { id: n4d, text: "Doanh thu giảm 12 % xuống 48 triệu euro, và lợi nhuận giảm một nửa vì chi phí nhân sự.", lang: vi }
+    answer:
+      correct_option_id: n2a
+    explanation:
+      vi: "um zwölf Prozent auf achtundvierzig Millionen Euro = tăng 12 %, lên 48 triệu euro. Der Gewinn hat sich fast halbiert = lợi nhuận giảm gần một nửa; aufgrund der … Energiekosten = do chi phí năng lượng. (Nordtextil là công ty hư cấu.)"
+    display_answer: Doanh thu tăng 12 %, lên 48 triệu euro, nhưng lợi nhuận giảm gần một nửa, chủ yếu do chi phí năng lượng tăng mạnh.
+
+  - key: de:exercise:b2u02l4-wb-prozentpunkte
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-anteil
+    prompt:
+      instruction: "Sắp xếp thành câu: \"So với năm trước, tỉ lệ đã giảm ba điểm phần trăm.\""
+      tokens:
+        - { id: p-gesunken, text: gesunken }
+        - { id: p-anteil, text: Anteil }
+        - { id: p-im-vergleich, text: Im Vergleich zum Vorjahr }
+        - { id: p-um, text: um }
+        - { id: p-der, text: der }
+        - { id: p-prozentpunkte, text: Prozentpunkte }
+        - { id: p-ist, text: ist }
+        - { id: p-drei, text: drei }
+    answer:
+      orders:
+        - [p-im-vergleich, p-ist, p-der, p-anteil, p-um, p-drei, p-prozentpunkte, p-gesunken]
+    explanation:
+      vi: "Im Vergleich zum Vorjahr chiếm vị trí 1, nên trợ động từ ist đứng ngay sau, rồi chủ ngữ der Anteil. Mức giảm um drei Prozentpunkte trước Partizip gesunken ở cuối câu."
+    display_answer: Im Vergleich zum Vorjahr ist der Anteil um drei Prozentpunkte gesunken.
+
+  - key: de:exercise:b2u02l4-mcq-verdoppelt
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-sich-verdoppeln
+    prompt:
+      stem: "Bảng số liệu (giả định): số khách hàng năm 2020 là 4000, năm 2025 là 8000. Bạn trình bày bằng lời. Câu nào đúng cả nội dung lẫn ngữ pháp?"
+      stem_lang: vi
+      options:
+        - { id: d3a, text: "Die Zahl der Kunden hat sich von 2020 bis 2025 verdoppelt.", lang: de }
+        - { id: d7b, text: "Die Zahl der Kunden ist von 2020 bis 2025 um 8000 gestiegen.", lang: de }
+        - { id: d1c, text: "Die Zahl der Kunden hat sich von 2020 bis 2025 halbiert.", lang: de }
+        - { id: d5d, text: "Die Zahl der Kunden hat von 2020 bis 2025 um 4000 gestiegen.", lang: de }
+    answer:
+      correct_option_id: d3a
+    explanation:
+      vi: "Từ 4000 lên 8000 là tăng gấp đôi → hat sich verdoppelt. um 8000 sai nội dung (mức tăng là 4000, giá trị mới mới là 8000); halbiert là giảm một nửa; \"hat … gestiegen\" sai trợ động từ (phải là ist gestiegen)."
+    display_answer: Die Zahl der Kunden hat sich von 2020 bis 2025 verdoppelt.

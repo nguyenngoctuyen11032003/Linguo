@@ -1,0 +1,415 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u02-funktionsverbgefuege
+order_index: 3
+level: b2
+title:
+  vi: Ra quyết định – cụm động từ chức năng, giới từ Genitiv trang trọng (Eine Entscheidung treffen, aufgrund …)
+objectives:
+  - vi: Viết câu văn phong công sở – kinh tế với cụm danh từ – động từ cố định (Funktionsverbgefüge).
+  - vi: Dùng đúng giới từ Genitiv trang trọng (aufgrund, angesichts, infolge, bezüglich …) với đuôi Genitiv.
+  - vi: Nói về chiến lược doanh nghiệp, đầu tư, địa điểm, thương mại và chuỗi cung ứng.
+estimated_minutes: 21
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b2u02-partizipialattribut]
+items:
+  - item: de:item:b2u02-g-funktionsverbgefuege
+  - item: de:item:b2u02-g-genitiv-praep-formal
+  - item: de:item:b2u02-massnahme
+  - item: de:item:b2u02-strategie
+  - item: de:item:b2u02-investition
+  - item: de:item:b2u02-investieren
+  - item: de:item:b2u02-standort
+  - item: de:item:b2u02-globalisierung
+  - item: de:item:b2u02-handel
+  - item: de:item:b2u02-branche
+  - item: de:item:b2u02-geschaeftsfuehrung
+  - item: de:item:b2u02-vorstand
+  - item: de:item:b2u02-kooperation
+  - item: de:item:b2u02-export
+  - item: de:item:b2u02-import
+  - item: de:item:b2u02-produzieren
+  - item: de:item:b2u02-verlagern
+  - item: de:item:b2u02-lieferkette
+  - item: de:item:b2u02-zulieferer
+  - item: de:item:b2u02-expandieren
+  - item: de:item:b1u01-entscheidung
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b1u03-unternehmen
+    role: reuse
+  - item: de:item:b2u02-konkurrent
+    role: reuse
+  - item: de:item:b1u06-g-genitiv-praepositionen
+    role: reuse
+  - item: de:item:b2u01-g-nominalisierung
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được câu văn phong kinh tế như \"Die Geschäftsführung hat noch keine Entscheidung getroffen\" hay \"Aufgrund der hohen Kosten verlagert die Firma ihre Produktion\"."
+  - type: explain
+    text:
+      vi: "Funktionsverbgefüge (cụm động từ chức năng) là một danh từ mang nghĩa chính đi với một động từ gần như \"rỗng\" như treffen, stellen, nehmen, bringen. Tiếng Việt cũng có kiểu này (\"đưa ra quyết định\", \"đặt câu hỏi\"), nhưng động từ đi kèm khác: tiếng Đức nói eine Entscheidung treffen, eine Frage stellen. Vì vậy phải học thuộc cả cụm, kể cả giới từ và mạo từ."
+  - type: explain
+    text:
+      vi: "Các cụm của bài: eine Entscheidung treffen (= entscheiden) · eine Frage stellen (= fragen) · in Frage / infrage kommen (= có thể được xem xét) · zur Verfügung stellen (= cấp, cung cấp) / zur Verfügung stehen (= có sẵn) · Kritik üben an + Dat (= kritisieren) · in Anspruch nehmen (= sử dụng) · Rücksicht nehmen auf + Akk (= quan tâm, tôn trọng) · zum Ausdruck bringen (= ausdrücken) · eine Rolle spielen · in Betracht ziehen (= cân nhắc) · in Kraft treten (= có hiệu lực)."
+  - type: explain
+    text:
+      vi: "Trong câu, phần danh từ hay giới từ + danh từ của cụm đứng cuối như tiền tố của động từ tách: Die Firma stellt den Mitarbeitern einen Laptop zur Verfügung; trong câu phụ: …, weil die Firma einen Laptop zur Verfügung stellt. Phủ định: cụm có mạo từ dùng kein (keine Entscheidung treffen), cụm có giới từ dùng nicht đặt trước (nicht in Frage kommen)."
+  - type: explain
+    text:
+      vi: "Giới từ Genitiv trang trọng: aufgrund (do), angesichts (trước tình hình), infolge (do hậu quả của), bezüglich / hinsichtlich (về), mithilfe (nhờ), anhand (dựa vào), zugunsten (có lợi cho), anlässlich (nhân dịp). Mạo từ và tính từ sau chúng ở Genitiv: aufgrund der hohen Nachfrage, anlässlich des Jubiläums. Khi nói chuyện hằng ngày, người ta hay dùng wegen hoặc câu weil thay vì aufgrund."
+  - type: explain
+    text:
+      vi: "Từ vựng chiến lược: die Maßnahme, die Strategie, die Investition / investieren in + Akk, der Standort, die Globalisierung, der Handel, die Branche; die Geschäftsführung, der Vorstand, der Export ↔ der Import, die Produktion verlagern, die Lieferkette, der Zulieferer."
+  - type: deep_explain
+    text:
+      vi: "Cụm động từ chức năng không chỉ \"sang\" hơn động từ đơn mà đôi khi còn đổi sắc thái: zur Verfügung stehen là có sẵn (trạng thái), zur Verfügung stellen là đem ra cho dùng (hành động); in Kraft treten nhấn mạnh thời điểm bắt đầu có hiệu lực. Hãy cảnh giác với việc dịch từng chữ từ tiếng Anh hay tiếng Việt: make a decision ≠ eine Entscheidung machen, take into consideration ≠ in Betracht nehmen, \"cho ai sử dụng\" ≠ zu Verfügung geben. in Frage kommen và infrage kommen đều là chính tả đúng; tương tự aufgrund / auf Grund, mithilfe / mit Hilfe. Danh từ đứng sau giới từ Genitiv mà không có mạo từ hay tính từ thì thường thêm von: mithilfe von Daten, anhand von Beispielen. Cụm danh từ với giới từ Genitiv là một phần của văn phong danh từ (Nominalstil) bạn đã học: weil die Kosten hoch sind → aufgrund der hohen Kosten."
+  - type: example
+    target: Die Geschäftsführung hat noch keine Entscheidung getroffen.
+    target_lang: de
+    translation:
+      vi: Ban giám đốc vẫn chưa đưa ra quyết định.
+    note:
+      vi: "eine Entscheidung treffen (không phải machen); phủ định bằng keine vì danh từ có mạo từ."
+  - type: example
+    target: Die Firma stellt allen Mitarbeitern einen Laptop zur Verfügung.
+    target_lang: de
+    translation:
+      vi: Công ty cấp cho mọi nhân viên một máy tính xách tay.
+    note:
+      vi: "zur Verfügung (zu + der) đứng cuối câu như tiền tố tách. Người nhận ở Dativ (allen Mitarbeitern), vật ở Akkusativ (einen Laptop)."
+  - type: example
+    target: Ein Standort im Ausland kommt für uns nicht in Frage.
+    target_lang: de
+    translation:
+      vi: Một địa điểm ở nước ngoài thì chúng tôi không xem xét.
+    note:
+      vi: "nicht in Frage kommen = không thể được xem xét. Cũng viết: kommt nicht infrage. nicht đứng trước cụm giới từ."
+  - type: example
+    target: Wir sollten auch eine Kooperation mit einem Konkurrenten in Betracht ziehen.
+    target_lang: de
+    translation:
+      vi: Chúng ta cũng nên cân nhắc việc hợp tác với một đối thủ cạnh tranh.
+    note:
+      vi: "in Betracht ziehen = erwägen, cân nhắc. der Konkurrent theo n-Deklination: mit einem Konkurrenten."
+  - type: example
+    target: Aufgrund der hohen Energiekosten verlagert das Unternehmen einen Teil seiner Produktion ins Ausland.
+    target_lang: de
+    translation:
+      vi: Do chi phí năng lượng cao, doanh nghiệp chuyển một phần sản xuất ra nước ngoài.
+    note:
+      vi: "aufgrund + Genitiv số nhiều: der hohen Energiekosten. Cụm giới từ ở vị trí 1 nên động từ verlagert đứng ngay sau."
+  - type: example
+    target: Anlässlich des 50. Firmenjubiläums lädt die Geschäftsführung alle Mitarbeiter zu einem Fest ein.
+    target_lang: de
+    translation:
+      vi: Nhân dịp kỷ niệm 50 năm thành lập công ty, ban giám đốc mời toàn thể nhân viên dự tiệc.
+    note:
+      vi: "anlässlich + Genitiv: das Jubiläum → des Jubiläums. 50. đọc là fünfzigsten."
+  - type: example
+    target: Die Gewerkschaft übt scharfe Kritik an den geplanten Maßnahmen.
+    target_lang: de
+    translation:
+      vi: Công đoàn chỉ trích gay gắt các biện pháp dự kiến.
+    note:
+      vi: "Kritik üben an + Dativ = kritisieren. Văn phong báo chí."
+  - type: example
+    target: Bei der Wahl des Standorts spielt die Nähe zu den Zulieferern eine wichtige Rolle.
+    target_lang: de
+    translation:
+      vi: Khi chọn địa điểm, việc gần các nhà cung cấp linh kiện đóng vai trò quan trọng.
+    note:
+      vi: "eine Rolle spielen = đóng vai trò. des Standorts là Genitiv của der Standort."
+  - type: common_mistake
+    wrong: Wir müssen bis Freitag eine Entscheidung machen.
+    right: Wir müssen bis Freitag eine Entscheidung treffen.
+    target_lang: de
+    note:
+      vi: "Không dịch từng chữ từ make a decision: tiếng Đức dùng eine Entscheidung treffen."
+  - type: common_mistake
+    wrong: Wir nehmen den Kunden Rücksicht.
+    right: Wir nehmen Rücksicht auf die Kunden.
+    target_lang: de
+    note:
+      vi: "Rücksicht nehmen đi với auf + Akkusativ; giới từ là một phần cố định của cụm."
+  - type: common_mistake
+    wrong: Aufgrund die hohe Nachfrage ist das Produkt ausverkauft.
+    right: Aufgrund der hohen Nachfrage ist das Produkt ausverkauft.
+    target_lang: de
+    note:
+      vi: "aufgrund đi với Genitiv: die Nachfrage → der hohen Nachfrage."
+  - type: summary
+    points:
+      - vi: "Funktionsverbgefüge = danh từ mang nghĩa + động từ \"rỗng\"; học thuộc cả cụm, kể cả giới từ và mạo từ."
+      - vi: "eine Entscheidung treffen, eine Frage stellen, zur Verfügung stellen / stehen, in Frage kommen, in Anspruch nehmen, Rücksicht nehmen auf, zum Ausdruck bringen, Kritik üben an, eine Rolle spielen, in Betracht ziehen, in Kraft treten."
+      - vi: "Phần danh từ của cụm đứng cuối câu như tiền tố tách; phủ định: kein / nicht."
+      - vi: "aufgrund, angesichts, infolge, bezüglich, hinsichtlich, mithilfe, anhand, zugunsten, anlässlich + Genitiv."
+      - vi: "Từ vựng: die Maßnahme, die Strategie, die Investition, der Standort, der Handel, die Branche, die Lieferkette, verlagern."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u02l3-mcq-entscheidung-treffen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u02-g-funktionsverbgefuege
+    prompt:
+      stem: "Chọn động từ đúng: Der Vorstand muss bis Ende des Monats eine Entscheidung ___."
+      stem_lang: vi
+      options:
+        - { id: t4a, text: "treffen", lang: de }
+        - { id: t8b, text: "machen", lang: de }
+        - { id: t2c, text: "geben", lang: de }
+        - { id: t6d, text: "tun", lang: de }
+    answer:
+      correct_option_id: t4a
+    explanation:
+      vi: "Cụm cố định: eine Entscheidung treffen = quyết định. \"eine Entscheidung machen\" là dịch từng chữ từ tiếng Anh (make a decision), không phải tiếng Đức chuẩn."
+    display_answer: treffen
+
+  - key: de:exercise:b2u02l3-mcq-in-anspruch-nehmen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-g-funktionsverbgefuege
+    prompt:
+      stem: "Cụm nào có nghĩa gần với \"nutzen\" (sử dụng một dịch vụ, một sự trợ giúp)? Kunden können unsere Beratung kostenlos ___."
+      stem_lang: vi
+      options:
+        - { id: a3a, text: "in Anspruch nehmen", lang: de }
+        - { id: a7b, text: "zum Ausdruck bringen", lang: de }
+        - { id: a1c, text: "in Kraft treten", lang: de }
+        - { id: a5d, text: "zur Verfügung stehen", lang: de }
+    answer:
+      correct_option_id: a3a
+    explanation:
+      vi: "in Anspruch nehmen = sử dụng, tận dụng (một dịch vụ). zum Ausdruck bringen = bày tỏ; in Kraft treten = có hiệu lực (luật); zur Verfügung stehen = có sẵn (chủ ngữ phải là dịch vụ, không phải khách hàng)."
+    display_answer: in Anspruch nehmen
+
+  - key: de:exercise:b2u02l3-mcq-angesichts
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u02-g-genitiv-praep-formal
+    prompt:
+      stem: "\"Angesichts der hohen Energiekosten verlagert die Firma ihre Produktion.\" Từ angesichts ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: g2a, text: "trước tình hình, xét đến", lang: vi }
+        - { id: g6b, text: "mặc dù", lang: vi }
+        - { id: g9c, text: "thay vì", lang: vi }
+        - { id: g4d, text: "nhân dịp", lang: vi }
+    answer:
+      correct_option_id: g2a
+    explanation:
+      vi: "angesichts + Genitiv = trước tình hình / xét đến (chi phí năng lượng cao), nên công ty chuyển sản xuất đi. \"mặc dù\" là trotz, \"thay vì\" là statt, \"nhân dịp\" là anlässlich."
+    display_answer: trước tình hình, xét đến
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u02l3-fill-fvg
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-funktionsverbgefuege
+    prompt:
+      template: "Wir müssen auch einen anderen Standort in Betracht {{b1}}. Bei der Planung nehmen wir Rücksicht {{b2}} die Wünsche der Kunden. Das neue Gesetz {{b3}} im nächsten Jahr in Kraft."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [ziehen]
+        b2: [auf]
+        b3: [tritt]
+    known_wrong:
+      - answer: nehmen
+        feedback_vi: "Cụm cố định là in Betracht ziehen (cân nhắc), không phải in Betracht nehmen."
+        error_tag: collocation
+      - answer: für
+        feedback_vi: "Rücksicht nehmen đi với auf + Akkusativ: Rücksicht nehmen auf die Wünsche."
+        error_tag: preposition
+      - answer: kommt
+        feedback_vi: "Luật bắt đầu có hiệu lực: in Kraft treten → das Gesetz tritt in Kraft."
+        error_tag: collocation
+      - answer: trittet
+        feedback_vi: "treten là động từ mạnh: er / sie / es tritt (đổi e → i, không thêm -et)."
+        error_tag: verb_form
+    explanation:
+      vi: "Ba cụm cố định: in Betracht ziehen (cân nhắc), Rücksicht nehmen auf + Akk (quan tâm đến), in Kraft treten (có hiệu lực). treten ở ngôi 3 số ít: tritt."
+    display_answer: "Wir müssen auch einen anderen Standort in Betracht ziehen. Bei der Planung nehmen wir Rücksicht auf die Wünsche der Kunden. Das neue Gesetz tritt im nächsten Jahr in Kraft."
+
+  - key: de:exercise:b2u02l3-fill-genitiv
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-g-genitiv-praep-formal
+    prompt:
+      template: "Aufgrund {{b1}} hohen Nachfrage ist das Produkt ausverkauft. Angesichts {{b2}} steigenden Kosten muss der Betrieb sparen. Anlässlich {{b3}} 50. Jubiläums lädt die Firma alle Kunden ein."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [der]
+        b2: [der]
+        b3: [des]
+    known_wrong:
+      - answer: die
+        feedback_vi: "Sau aufgrund / angesichts cần Genitiv: die Nachfrage → der Nachfrage, die Kosten → der Kosten."
+        error_tag: case_genitive
+      - answer: dem
+        feedback_vi: "anlässlich đi với Genitiv, không phải Dativ: das Jubiläum → des Jubiläums."
+        error_tag: case_genitive
+      - answer: den
+        feedback_vi: "Không dùng Akkusativ / Dativ số nhiều; Genitiv số nhiều là der: angesichts der Kosten."
+        error_tag: case_genitive
+    explanation:
+      vi: "Cả ba giới từ đi với Genitiv. die Nachfrage (giống cái) → der; die Kosten (số nhiều) → der; das Jubiläum (trung tính) → des … Jubiläums (danh từ thêm -s). Tính từ sau mạo từ Genitiv có đuôi -en: der hohen, der steigenden."
+    display_answer: "Aufgrund der hohen Nachfrage ist das Produkt ausverkauft. Angesichts der steigenden Kosten muss der Betrieb sparen. Anlässlich des 50. Jubiläums lädt die Firma alle Kunden ein."
+
+  - key: de:exercise:b2u02l3-tr-keine-entscheidung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-geschaeftsfuehrung
+    prompt:
+      source_text: "Ban giám đốc vẫn chưa đưa ra quyết định. (dùng die Geschäftsführung và eine Entscheidung treffen, thì Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Geschäftsführung hat noch keine Entscheidung getroffen.
+        - Die Geschäftsführung hat bisher keine Entscheidung getroffen.
+        - Die Geschäftsführung hat bis jetzt keine Entscheidung getroffen.
+        - Die Geschäftsführung hat bisher noch keine Entscheidung getroffen.
+        - Die Geschäftsführung hat immer noch keine Entscheidung getroffen.
+        - Bisher hat die Geschäftsführung keine Entscheidung getroffen.
+        - Bis jetzt hat die Geschäftsführung keine Entscheidung getroffen.
+    known_wrong:
+      - answer: Die Geschäftsführung hat noch keine Entscheidung gemacht.
+        feedback_vi: "Cụm cố định là eine Entscheidung treffen → getroffen."
+        error_tag: collocation
+      - answer: Die Geschäftsführung hat noch nicht eine Entscheidung getroffen.
+        feedback_vi: "Danh từ có mạo từ không xác định được phủ định bằng kein: keine Entscheidung."
+        error_tag: negation
+      - answer: Die Geschäftsführung hat noch keine Entscheidung getrofft.
+        feedback_vi: "treffen là động từ mạnh: Partizip II là getroffen."
+        error_tag: participle_form
+    explanation:
+      vi: "eine Entscheidung treffen → Perfekt: hat … getroffen (treffen – traf – getroffen). \"chưa\" = noch keine (phủ định danh từ bằng kein)."
+    display_answer: Die Geschäftsführung hat noch keine Entscheidung getroffen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u02l3-wb-zur-verfuegung
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-funktionsverbgefuege
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Công ty cấp cho mỗi nhân viên một máy tính xách tay.\""
+      tokens:
+        - { id: v-verfuegung, text: Verfügung }
+        - { id: v-firma, text: Firma }
+        - { id: v-einen, text: einen }
+        - { id: v-zur, text: zur }
+        - { id: v-die, text: Die }
+        - { id: v-mitarbeiter, text: Mitarbeiter }
+        - { id: v-stellt, text: stellt }
+        - { id: v-laptop, text: Laptop }
+        - { id: v-jedem, text: jedem }
+    answer:
+      orders:
+        - [v-die, v-firma, v-stellt, v-jedem, v-mitarbeiter, v-einen, v-laptop, v-zur, v-verfuegung]
+    explanation:
+      vi: "jemandem etwas zur Verfügung stellen: động từ stellt ở vị trí 2, người nhận (jedem Mitarbeiter, Dativ) trước vật (einen Laptop, Akkusativ), cụm zur Verfügung đứng cuối câu như tiền tố tách."
+    display_answer: Die Firma stellt jedem Mitarbeiter einen Laptop zur Verfügung.
+
+  - key: de:exercise:b2u02l3-wb-aufgrund-kosten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-verlagern
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Do chi phí cao, doanh nghiệp chuyển hoạt động sản xuất của mình đi nơi khác.\""
+      tokens:
+        - { id: a-produktion, text: Produktion }
+        - { id: a-hohen, text: hohen }
+        - { id: a-das, text: das }
+        - { id: a-aufgrund, text: Aufgrund }
+        - { id: a-seine, text: seine }
+        - { id: a-kosten, text: Kosten }
+        - { id: a-verlagert, text: verlagert }
+        - { id: a-der, text: der }
+        - { id: a-unternehmen, text: Unternehmen }
+    answer:
+      orders:
+        - [a-aufgrund, a-der, a-hohen, a-kosten, a-verlagert, a-das, a-unternehmen, a-seine, a-produktion]
+    explanation:
+      vi: "Aufgrund + Genitiv số nhiều: der hohen Kosten. Cụm giới từ chiếm vị trí 1, nên động từ verlagert đứng ngay sau, rồi đến chủ ngữ das Unternehmen và tân ngữ seine Produktion."
+    display_answer: Aufgrund der hohen Kosten verlagert das Unternehmen seine Produktion.
+
+  - key: de:exercise:b2u02l3-mcq-bezueglich-mail
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-genitiv-praep-formal
+    prompt:
+      stem: "Bạn viết e-mail công việc trang trọng cho một nhà cung cấp về đơn đặt hàng ngày 3 tháng 3. Câu mở đầu nào phù hợp và đúng?"
+      stem_lang: vi
+      options:
+        - { id: z4a, text: "Bezüglich Ihrer Bestellung vom 3. März habe ich noch eine Frage.", lang: de }
+        - { id: z8b, text: "Wegen deiner Bestellung vom 3. März hab ich noch eine Frage.", lang: de }
+        - { id: z2c, text: "Bezüglich Ihre Bestellung vom 3. März habe ich noch eine Frage.", lang: de }
+        - { id: z6d, text: "Bezüglich Ihrer Bestellung vom 3. März ich habe noch eine Frage.", lang: de }
+    answer:
+      correct_option_id: z4a
+    explanation:
+      vi: "bezüglich + Genitiv: die Bestellung → Ihrer Bestellung; thư trang trọng dùng Sie / Ihr viết hoa. Cụm giới từ ở vị trí 1 nên habe đứng ngay sau. Phương án dùng deiner / hab là văn nói thân mật, không hợp e-mail công việc."
+    display_answer: Bezüglich Ihrer Bestellung vom 3. März habe ich noch eine Frage.
+
+  - key: de:exercise:b2u02l3-tr-kritik-ueben
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u02-massnahme
+    prompt:
+      source_text: Die Gewerkschaft übt scharfe Kritik an den Maßnahmen, die der Vorstand beschlossen hat.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Công đoàn chỉ trích gay gắt các biện pháp mà ban điều hành đã thông qua.
+        - Công đoàn chỉ trích gay gắt những biện pháp mà ban điều hành đã thông qua.
+        - Công đoàn phê phán gay gắt các biện pháp mà ban điều hành đã thông qua.
+        - Công đoàn chỉ trích gay gắt các biện pháp do ban điều hành thông qua.
+        - Công đoàn phê phán gay gắt các biện pháp do ban điều hành thông qua.
+        - Công đoàn chỉ trích gay gắt các biện pháp mà ban giám đốc đã quyết định.
+        - Công đoàn chỉ trích gay gắt các biện pháp mà ban lãnh đạo đã thông qua.
+        - Công đoàn chỉ trích mạnh mẽ các biện pháp mà ban điều hành đã thông qua.
+        - Công đoàn kịch liệt phê phán các biện pháp mà ban điều hành đã thông qua.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ban điều hành chỉ trích gay gắt các biện pháp của công đoàn.
+        feedback_vi: "Chủ ngữ là die Gewerkschaft (công đoàn); der Vorstand là người đã thông qua các biện pháp."
+        error_tag: meaning
+    explanation:
+      vi: "Kritik üben an + Dativ = chỉ trích, phê phán; scharf = gay gắt. Mệnh đề quan hệ die der Vorstand beschlossen hat: die là tân ngữ (các biện pháp), der Vorstand là chủ ngữ (ban điều hành đã thông qua)."
+    display_answer: Công đoàn chỉ trích gay gắt các biện pháp mà ban điều hành đã thông qua.

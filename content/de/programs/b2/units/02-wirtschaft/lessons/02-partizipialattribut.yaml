@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u02-partizipialattribut
+order_index: 2
+level: b2
+title:
+  vi: Giá tăng – cụm phân từ mở rộng (Die seit Monaten steigenden Preise)
+objectives:
+  - vi: Đọc và tách cụm phân từ dài trong báo kinh tế (mạo từ … Partizip + danh từ).
+  - vi: Chuyển mệnh đề quan hệ thành cụm phân từ và ngược lại theo từng bước.
+  - vi: Nói về lạm phát, giá cả, thu nhập, thuế và sức mua.
+estimated_minutes: 21
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u02-passiversatz]
+items:
+  - item: de:item:b2u02-g-partizipialattribut-erweitert
+  - item: de:item:b2u02-g-relativsatz-partizip-umformung
+  - item: de:item:b2u02-inflation
+  - item: de:item:b2u02-preisanstieg
+  - item: de:item:b2u02-kaufkraft
+  - item: de:item:b2u02-lebenshaltungskosten
+  - item: de:item:b2u02-verbraucher
+  - item: de:item:b2u02-konsum
+  - item: de:item:b2u02-einkommen
+  - item: de:item:b2u02-steuer
+  - item: de:item:b2u02-erhoehen
+  - item: de:item:b2u02-senken
+  - item: de:item:b2u02-erhoehung
+  - item: de:item:b2u02-zins
+  - item: de:item:b2u02-ersparnis
+  - item: de:item:b2u02-entlasten
+  - item: de:item:b2u02-entlastung
+  - item: de:item:b2u02-beschliessen
+  - item: de:item:b2u02-haushalt
+  - item: de:item:b2u02-schulden
+  - item: de:item:b1u02-g-relativsatz-nom-akk
+    role: reuse
+  - item: de:item:b1u02-g-relativsatz-dativ
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praeteritum
+    role: reuse
+  - item: de:item:b2u02-g-sein-zu
+    role: reuse
+  - item: de:item:b1u05-g-adj-dekl-vollstaendig
+    role: reuse
+  - item: de:item:b1u07-g-partizip-i-attribut
+    role: reuse
+  - item: de:item:b1u07-g-partizip-ii-attribut
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc và tách được những cụm dài như \"die von der Regierung beschlossenen Maßnahmen\" trong báo kinh tế, và tự chuyển qua lại giữa mệnh đề quan hệ và cụm phân từ."
+  - type: explain
+    text:
+      vi: "Ở B1 bạn đã gặp Partizip làm tính từ: die steigenden Preise (Partizip I), die reduzierten Waren (Partizip II). Ở B2, giữa mạo từ và Partizip còn có thể chen thêm bổ ngữ: die seit Monaten steigenden Preise. Tiếng Việt đặt phần bổ nghĩa SAU danh từ (giá cả tăng từ nhiều tháng nay), tiếng Đức đặt TRƯỚC danh từ."
+  - type: explain
+    text:
+      vi: "Cách đọc: gặp mạo từ mà ngay sau đó không có danh từ đi kèm, hãy tìm Partizip có đuôi tính từ (steigenden, beschlossenen); danh từ đứng ngay sau nó là danh từ chính, khớp với mạo từ ở đầu cụm (die … Preise). Đọc mạo từ + danh từ trước, rồi mới đọc phần giữa như một mệnh đề \"mà …\"."
+  - type: explain
+    text:
+      vi: "Chuyển mệnh đề quan hệ → cụm phân từ qua 4 bước, ví dụ die Maßnahmen, die von der Regierung beschlossen wurden: (1) bỏ đại từ quan hệ die; (2) câu bị động → giữ Partizip II beschlossen, bỏ wurden (câu chủ động → Partizip I: steigen → steigend); (3) đặt phần còn lại (von der Regierung) giữa mạo từ và Partizip, giữ nguyên thứ tự; (4) thêm đuôi tính từ như sau die số nhiều: die von der Regierung beschlossenen Maßnahmen."
+  - type: explain
+    text:
+      vi: "Partizip I (nguyên thể + d: steigend, wachsend) mang nghĩa chủ động, đang diễn ra. Partizip II mang nghĩa bị động (die beschlossenen Maßnahmen = được thông qua) hoặc đã xong với động từ chia Perfekt bằng sein (die gestiegenen Preise = giá đã tăng). Thì của mệnh đề (wird, wurde, ist …) biến mất trong cụm."
+  - type: explain
+    text:
+      vi: "Từ vựng giá cả – thu nhập: die Inflation, der Preisanstieg, die Kaufkraft (sức mua), die Lebenshaltungskosten (chỉ có số nhiều), der Verbraucher, das Einkommen, die Steuer. Phân biệt erhöhen / senken (ai tăng / hạ cái gì, Perfekt với haben) với steigen / sinken (cái gì tự tăng / giảm, Perfekt với sein)."
+  - type: deep_explain
+    text:
+      vi: "Cụm phân từ mở rộng chủ yếu dùng trong văn viết (báo, báo cáo, văn bản luật); khi nói, người Đức thường dùng mệnh đề quan hệ. Cụm có thể rất dài: die in den letzten Jahren für viele Familien deutlich gestiegenen Lebenshaltungskosten. Chỉ chuyển được mệnh đề quan hệ mà đại từ quan hệ là chủ ngữ (Nominativ): die Familien, denen das Geld fehlt (Dativ) không thành cụm phân từ được. Cũng không dùng Partizip II của động từ chia Perfekt với haben cho nghĩa chủ động: die Firma, die die Preise erhöht hat không thể thành \"die die Preise erhöhte Firma\". Khi đọc bạn còn gặp dạng zu + Partizip I: die bis Freitag zu klärenden Fragen = những câu hỏi phải được làm rõ trước thứ Sáu (giống sein + zu ở bài 1); chỉ cần nhận ra, chưa cần tự viết."
+  - type: example
+    target: Die seit Monaten steigenden Preise belasten viele Haushalte.
+    target_lang: de
+    translation:
+      vi: Giá cả tăng liên tục từ nhiều tháng nay đang đè nặng lên nhiều hộ gia đình.
+    note:
+      vi: "= Die Preise, die seit Monaten steigen, … Câu chủ động → Partizip I steigend; seit Monaten đứng giữa die và steigenden; đuôi -en sau die số nhiều."
+  - type: example
+    target: Die von der Regierung beschlossenen Maßnahmen sollen die Verbraucher entlasten.
+    target_lang: de
+    translation:
+      vi: Các biện pháp do chính phủ thông qua nhằm giảm gánh nặng cho người tiêu dùng.
+    note:
+      vi: "= Die Maßnahmen, die von der Regierung beschlossen wurden, … Câu bị động Präteritum → giữ Partizip II beschlossen, bỏ wurden. Đọc die … Maßnahmen trước."
+  - type: example
+    target: Viele Verbraucher sparen wegen der stark gestiegenen Lebenshaltungskosten.
+    target_lang: de
+    translation:
+      vi: Nhiều người tiêu dùng tiết kiệm vì chi phí sinh hoạt đã tăng mạnh.
+    note:
+      vi: "= die Lebenshaltungskosten, die stark gestiegen sind. steigen chia Perfekt với sein → Partizip II mang nghĩa \"đã tăng\". wegen + Genitiv số nhiều: der … -en."
+  - type: example
+    target: Ein ständig wachsender Teil des Einkommens geht für die Miete weg.
+    target_lang: de
+    translation:
+      vi: Một phần thu nhập ngày càng lớn bị tiêu vào tiền thuê nhà.
+    note:
+      vi: "= ein Teil, der ständig wächst. Sau ein, danh từ giống đực ở Nominativ → đuôi -er: wachsender."
+  - type: example
+    target: Die Regierung will den von der Inflation stark betroffenen Familien helfen.
+    target_lang: de
+    translation:
+      vi: Chính phủ muốn giúp đỡ các gia đình bị lạm phát ảnh hưởng nặng.
+    note:
+      vi: "= den Familien, die von der Inflation stark betroffen sind. helfen + Dativ → den … Familien, đuôi -en."
+  - type: example
+    target: Familien, denen am Monatsende das Geld fehlt, können oft keine Ersparnisse bilden.
+    target_lang: de
+    translation:
+      vi: Những gia đình mà cuối tháng đã hết tiền thường không thể để dành được.
+    note:
+      vi: "Mệnh đề quan hệ Dativ (denen … fehlt) không chuyển được thành cụm phân từ, vì đại từ quan hệ không phải là chủ ngữ."
+  - type: common_mistake
+    wrong: Die steigende seit Monaten Preise belasten viele Haushalte.
+    right: Die seit Monaten steigenden Preise belasten viele Haushalte.
+    target_lang: de
+    note:
+      vi: "Phần bổ nghĩa (seit Monaten) đứng TRƯỚC Partizip, Partizip đứng sát danh từ; sau die số nhiều đuôi là -en."
+  - type: common_mistake
+    wrong: Die von der Regierung beschlossene Maßnahmen helfen kaum.
+    right: Die von der Regierung beschlossenen Maßnahmen helfen kaum.
+    target_lang: de
+    note:
+      vi: "Partizip vẫn cần đuôi tính từ đúng như mọi tính từ: die + danh từ số nhiều → -en."
+  - type: common_mistake
+    wrong: Die die Preise erhöhte Firma verliert Kunden.
+    right: Die Firma, die die Preise erhöht hat, verliert Kunden.
+    target_lang: de
+    note:
+      vi: "erhöhen chia Perfekt với haben, nên Partizip II erhöht chỉ mang nghĩa bị động (được tăng). Nghĩa chủ động đã xong thì giữ mệnh đề quan hệ."
+  - type: summary
+    points:
+      - vi: "Cụm phân từ: mạo từ + [bổ ngữ] + Partizip có đuôi + danh từ."
+      - vi: "Đọc: mạo từ → nhảy tới danh từ sau Partizip → đọc phần giữa."
+      - vi: "Partizip I = chủ động, đang diễn ra (steigend); Partizip II = bị động (beschlossen) hoặc đã xong với động từ đi với sein (gestiegen)."
+      - vi: "4 bước: bỏ đại từ quan hệ → chọn Partizip, bỏ trợ động từ → đặt phần còn lại trước Partizip → thêm đuôi tính từ."
+      - vi: "Chỉ chuyển được khi đại từ quan hệ là chủ ngữ."
+      - vi: "Từ vựng: die Inflation, die Kaufkraft, die Lebenshaltungskosten (Pl.), das Einkommen, die Steuer; erhöhen / senken (haben) ≠ steigen / sinken (sein)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u02l2-mcq-bezugsnomen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u02-g-partizipialattribut-erweitert
+    prompt:
+      stem: "Trong câu \"Die von vielen Verbrauchern kritisierte Preiserhöhung wurde verschoben.\", cụm \"von vielen Verbrauchern kritisierte\" bổ nghĩa cho từ nào?"
+      stem_lang: vi
+      options:
+        - { id: p2a, text: "Preiserhöhung", lang: de }
+        - { id: p6b, text: "Verbrauchern", lang: de }
+        - { id: p9c, text: "vielen", lang: de }
+        - { id: p4d, text: "verschoben", lang: de }
+    answer:
+      correct_option_id: p2a
+    explanation:
+      vi: "Mạo từ Die ở đầu câu không đi với Verbrauchern (Dativ số nhiều sau von) mà đi với danh từ đứng ngay sau Partizip kritisierte: Die … Preiserhöhung. = Die Preiserhöhung, die von vielen Verbrauchern kritisiert wurde, wurde verschoben."
+    display_answer: Preiserhöhung
+
+  - key: de:exercise:b2u02l2-mcq-steigenden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u02-g-relativsatz-partizip-umformung
+    prompt:
+      stem: "Chọn dạng đúng (chi phí đang tăng): Die seit Monaten ___ Lebenshaltungskosten belasten viele Familien."
+      stem_lang: vi
+      options:
+        - { id: s3a, text: "steigenden", lang: de }
+        - { id: s7b, text: "steigende", lang: de }
+        - { id: s1c, text: "gestiegenen", lang: de }
+        - { id: s5d, text: "steigend", lang: de }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "\"đang tăng\" → Partizip I steigend. Sau die với danh từ số nhiều, đuôi tính từ là -en: steigenden. gestiegenen là \"đã tăng\" (Partizip II); steigende, steigend sai đuôi."
+    display_answer: steigenden
+
+  - key: de:exercise:b2u02l2-mcq-importierten-waren
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u02-g-partizipialattribut-erweitert
+    prompt:
+      stem: "\"Die aus Vietnam importierten Waren sind günstiger geworden.\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: w4a, text: "Hàng hóa được nhập khẩu từ Việt Nam đã rẻ hơn.", lang: vi }
+        - { id: w8b, text: "Hàng hóa mà Việt Nam nhập khẩu đã rẻ hơn.", lang: vi }
+        - { id: w2c, text: "Hàng hóa đang được nhập khẩu vào Việt Nam sẽ rẻ hơn.", lang: vi }
+        - { id: w6d, text: "Việt Nam đã nhập khẩu hàng hóa rẻ hơn.", lang: vi }
+    answer:
+      correct_option_id: w4a
+    explanation:
+      vi: "die … Waren là chủ ngữ; aus Vietnam importierten = die aus Vietnam importiert werden/wurden (được nhập khẩu từ Việt Nam, Partizip II mang nghĩa bị động). aus = từ (nơi xuất phát), không phải \"vào\". günstiger geworden = đã rẻ hơn."
+    display_answer: Hàng hóa được nhập khẩu từ Việt Nam đã rẻ hơn.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u02l2-fill-umformung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-g-relativsatz-partizip-umformung
+    prompt:
+      template: "Die Maßnahmen, die von der Regierung beschlossen wurden → die von der Regierung {{b1}} Maßnahmen. Die Preise, die seit Monaten steigen → die seit Monaten {{b2}} Preise."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [beschlossenen]
+        b2: [steigenden]
+    known_wrong:
+      - answer: beschlossene
+        feedback_vi: "Sau die với danh từ số nhiều, đuôi tính từ là -en: beschlossenen."
+        error_tag: adj_ending
+      - answer: beschließenden
+        feedback_vi: "Mệnh đề là bị động (beschlossen wurden) → giữ Partizip II beschlossen, không dùng Partizip I."
+        error_tag: participle_form
+      - answer: steigende
+        feedback_vi: "Sau die số nhiều cần đuôi -en: steigenden."
+        error_tag: adj_ending
+      - answer: gestiegenen
+        feedback_vi: "Mệnh đề dùng hiện tại chủ động (steigen = đang tăng) → Partizip I steigend; gestiegen là \"đã tăng\"."
+        error_tag: participle_form
+    explanation:
+      vi: "Câu 1 bị động → Partizip II beschlossen, bỏ wurden; câu 2 chủ động hiện tại → Partizip I steigend. Phần còn lại (von der Regierung / seit Monaten) đứng trước Partizip; đuôi -en sau die số nhiều."
+    display_answer: "Die Maßnahmen, die von der Regierung beschlossen wurden → die von der Regierung beschlossenen Maßnahmen. Die Preise, die seit Monaten steigen → die seit Monaten steigenden Preise."
+
+  - key: de:exercise:b2u02l2-fill-endungen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-partizipialattribut-erweitert
+    prompt:
+      template: "Mit dem stark {{b1}} (sinken, Partizip II) Einkommen können viele Familien kaum noch sparen. Wegen der seit Jahren {{b2}} (steigen, Partizip I) Mieten ziehen viele Menschen aufs Land. Ein schnell {{b3}} (wachsen, Partizip I) Markt zieht neue Anbieter an."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [gesunkenen]
+        b2: [steigenden]
+        b3: [wachsender]
+    known_wrong:
+      - answer: gesunkene
+        feedback_vi: "mit dem + danh từ trung tính ở Dativ → đuôi -en: gesunkenen."
+        error_tag: adj_ending
+      - answer: steigende
+        feedback_vi: "wegen der + danh từ số nhiều ở Genitiv → đuôi -en: steigenden."
+        error_tag: adj_ending
+      - answer: wachsende
+        feedback_vi: "ein + danh từ giống đực (der Markt) ở Nominativ → đuôi -er: wachsender."
+        error_tag: adj_ending
+      - answer: gesenkten
+        feedback_vi: "senken là \"ai hạ cái gì\"; thu nhập tự giảm là sinken → gesunken."
+        error_tag: participle_form
+    explanation:
+      vi: "Partizip nhận đuôi như tính từ: dem (Dat, trung tính) → -en; der (Gen, số nhiều) → -en; ein + der Markt (Nom, giống đực) → -er. sinken → gesunken (Partizip II, nghĩa \"đã giảm\"); steigen, wachsen → steigend, wachsend (Partizip I)."
+    display_answer: "Mit dem stark gesunkenen Einkommen können viele Familien kaum noch sparen. Wegen der seit Jahren steigenden Mieten ziehen viele Menschen aufs Land. Ein schnell wachsender Markt zieht neue Anbieter an."
+
+  - key: de:exercise:b2u02l2-tr-steigende-preise
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-verbraucher
+    prompt:
+      source_text: "Giá cả đang tăng làm người tiêu dùng lo lắng. (dùng Partizip I của steigen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die steigenden Preise machen den Verbrauchern Sorgen.
+        - Steigende Preise machen den Verbrauchern Sorgen.
+        - Die steigenden Preise bereiten den Verbrauchern Sorgen.
+        - Steigende Preise bereiten den Verbrauchern Sorgen.
+        - Die steigenden Preise beunruhigen die Verbraucher.
+        - Steigende Preise beunruhigen die Verbraucher.
+    known_wrong:
+      - answer: Die steigende Preise machen den Verbrauchern Sorgen.
+        feedback_vi: "Sau die với danh từ số nhiều, đuôi là -en: die steigenden Preise."
+        error_tag: adj_ending
+      - answer: Die steigenden Preise machen die Verbraucher Sorgen.
+        feedback_vi: "jemandem Sorgen machen: người lo lắng ở Dativ → den Verbrauchern."
+        error_tag: case_dat_akk
+    explanation:
+      vi: "steigen → Partizip I steigend, đuôi -en sau die số nhiều (không mạo từ thì -e: steigende Preise). jemandem Sorgen machen = làm ai lo lắng, người ở Dativ số nhiều: den Verbrauchern (thêm -n)."
+    display_answer: Die steigenden Preise machen den Verbrauchern Sorgen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u02l2-wb-beschlossenen
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-entlasten
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Các biện pháp do chính phủ thông qua nhằm giảm gánh nặng cho các hộ gia đình.\""
+      tokens:
+        - { id: m-entlasten, text: entlasten }
+        - { id: m-regierung, text: Regierung }
+        - { id: m-sollen, text: sollen }
+        - { id: m-die-gross, text: Die }
+        - { id: m-haushalte, text: Haushalte }
+        - { id: m-beschlossenen, text: beschlossenen }
+        - { id: m-von, text: von }
+        - { id: m-die-klein, text: die }
+        - { id: m-massnahmen, text: Maßnahmen }
+        - { id: m-der, text: der }
+    answer:
+      orders:
+        - [m-die-gross, m-von, m-der, m-regierung, m-beschlossenen, m-massnahmen, m-sollen, m-die-klein, m-haushalte, m-entlasten]
+    explanation:
+      vi: "Chủ ngữ là cả cụm Die von der Regierung beschlossenen Maßnahmen: mạo từ – bổ ngữ von der Regierung – Partizip beschlossenen – danh từ. Modal sollen ở vị trí 2, nguyên thể entlasten ở cuối."
+    display_answer: Die von der Regierung beschlossenen Maßnahmen sollen die Haushalte entlasten.
+
+  - key: de:exercise:b2u02l2-wb-relativsatz
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-relativsatz-partizip-umformung
+    prompt:
+      instruction: "Viết lại bằng mệnh đề quan hệ: \"Der stark gestiegene Umsatz überrascht alle.\" (Doanh thu đã tăng mạnh làm mọi người bất ngờ.)"
+      tokens:
+        - { id: r-ist, text: ist }
+        - { id: r-alle, text: alle }
+        - { id: r-komma1, text: "," }
+        - { id: r-umsatz, text: Umsatz }
+        - { id: r-gestiegen, text: gestiegen }
+        - { id: r-der-klein, text: der }
+        - { id: r-ueberrascht, text: überrascht }
+        - { id: r-stark, text: stark }
+        - { id: r-der-gross, text: Der }
+        - { id: r-komma2, text: "," }
+    answer:
+      orders:
+        - [r-der-gross, r-umsatz, r-komma1, r-der-klein, r-stark, r-gestiegen, r-ist, r-komma2, r-ueberrascht, r-alle]
+        - [r-der-gross, r-umsatz, r-komma2, r-der-klein, r-stark, r-gestiegen, r-ist, r-komma1, r-ueberrascht, r-alle]
+    explanation:
+      vi: "Làm ngược 4 bước: danh từ der Umsatz đứng trước, thêm đại từ quan hệ der (chủ ngữ, giống đực); gestiegen (Partizip II của động từ đi với sein) → ist gestiegen, động từ chia ist đứng cuối mệnh đề. Mệnh đề chen giữa câu nên có dấu phẩy hai đầu."
+    display_answer: Der Umsatz, der stark gestiegen ist, überrascht alle.
+
+  - key: de:exercise:b2u02l2-mcq-betroffenen-familien
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-partizipialattribut-erweitert
+    prompt:
+      stem: "Câu nào đúng? (Những gia đình bị lạm phát ảnh hưởng nặng cần được hỗ trợ.)"
+      stem_lang: vi
+      options:
+        - { id: f3a, text: "Die von der Inflation stark betroffenen Familien brauchen Unterstützung.", lang: de }
+        - { id: f7b, text: "Die stark betroffenen von der Inflation Familien brauchen Unterstützung.", lang: de }
+        - { id: f1c, text: "Die von der Inflation stark betroffene Familien brauchen Unterstützung.", lang: de }
+        - { id: f5d, text: "Die von der Inflation stark betreffenden Familien brauchen Unterstützung.", lang: de }
+    answer:
+      correct_option_id: f3a
+    explanation:
+      vi: "= die Familien, die von der Inflation stark betroffen sind. Mọi bổ ngữ (von der Inflation, stark) đứng trước Partizip; Partizip đứng sát danh từ và có đuôi -en sau die số nhiều. betreffend (Partizip I) là chủ động \"đang gây ảnh hưởng\", sai nghĩa."
+    display_answer: Die von der Inflation stark betroffenen Familien brauchen Unterstützung.
+
+  - key: de:exercise:b2u02l2-tr-steuererhoehung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u02-erhoehung
+    prompt:
+      source_text: Die von vielen Verbrauchern kritisierte Steuererhöhung wurde verschoben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Việc tăng thuế bị nhiều người tiêu dùng phê phán đã bị hoãn lại.
+        - Việc tăng thuế bị nhiều người tiêu dùng chỉ trích đã bị hoãn lại.
+        - Việc tăng thuế mà nhiều người tiêu dùng phê phán đã bị hoãn lại.
+        - Việc tăng thuế mà nhiều người tiêu dùng chỉ trích đã bị hoãn lại.
+        - Việc tăng thuế bị nhiều người tiêu dùng chỉ trích đã được hoãn lại.
+        - Đợt tăng thuế bị nhiều người tiêu dùng chỉ trích đã bị hoãn lại.
+        - Đợt tăng thuế bị nhiều người tiêu dùng phê phán đã bị hoãn.
+        - Việc tăng thuế bị nhiều người tiêu dùng chỉ trích đã bị hoãn.
+        - Việc tăng thuế bị nhiều người tiêu dùng phê phán đã bị lùi lại.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nhiều người tiêu dùng đã hoãn việc tăng thuế mà họ chỉ trích.
+        feedback_vi: "Chủ ngữ là die … Steuererhöhung; người tiêu dùng chỉ là người chỉ trích (von vielen Verbrauchern kritisiert), không phải người hoãn."
+        error_tag: meaning
+    explanation:
+      vi: "Đọc die … Steuererhöhung trước (việc tăng thuế), rồi phần giữa: von vielen Verbrauchern kritisiert = bị nhiều người tiêu dùng chỉ trích. wurde verschoben = đã bị hoãn lại (bị động Präteritum)."
+    display_answer: Việc tăng thuế bị nhiều người tiêu dùng phê phán đã bị hoãn lại.

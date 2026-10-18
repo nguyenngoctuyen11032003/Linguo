@@ -1,0 +1,1756 @@
+# Học liệu unit B2U02 "Kinh tế và thế giới lao động" (Wirtschaft und Arbeitswelt), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U02L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên nhóm item.
+# Mọi số liệu trong ví dụ là số giả định để luyện ngôn ngữ, không phải số liệu thật.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Thay thế bị động (sich lassen, sein/haben + zu) =================
+  - key: de:item:b2u02-g-sich-lassen
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "sich lassen + Infinitiv: Das Problem lässt sich lösen. (= kann gelöst werden)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sich lassen + nguyên thể diễn tả một việc CÓ THỂ được làm, giống \"… được\" trong \"vấn đề này giải quyết được\". Chủ ngữ là vật hay việc chịu tác động, lassen chia theo chủ ngữ, nguyên thể đứng cuối: Das Problem lässt sich lösen = Das Problem kann gelöst werden. Phủ định bằng nicht: Das lässt sich nicht ändern."
+      examples:
+        - target: Viele Probleme lassen sich durch eine bessere Planung lösen.
+          translation:
+            vi: Nhiều vấn đề có thể giải quyết được nhờ lập kế hoạch tốt hơn.
+        - target: Der Verlust ließ sich leider nicht vermeiden.
+          translation:
+            vi: Tiếc là khoản lỗ đã không thể tránh được.
+      confusion:
+        vi: "Khác với lassen ở A2 (Ich lasse mein Auto reparieren = tôi mang xe đi sửa): ở đây có sich và chủ ngữ là vật, không phải người nhờ. Cấu trúc này thường dùng với động từ có tân ngữ Akkusativ như lösen, ändern, erklären, vermeiden."
+
+  - key: de:item:b2u02-g-sein-zu
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "sein + zu + Infinitiv: Der Antrag ist bis Freitag einzureichen."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sein + zu + nguyên thể thay cho câu bị động, mang nghĩa \"phải được\" hoặc \"có thể được\" tùy ngữ cảnh: Der Antrag ist bis Freitag einzureichen = muss eingereicht werden; Das Problem ist leicht zu lösen = kann leicht gelöst werden. Với động từ tách, zu chen giữa tiền tố và gốc, viết liền: einzureichen, abzugeben."
+      examples:
+        - target: Die Rechnung ist innerhalb von 14 Tagen zu bezahlen.
+          translation:
+            vi: Hóa đơn phải được thanh toán trong vòng 14 ngày.
+        - target: Der Rückgang des Umsatzes ist kaum zu erklären.
+          translation:
+            vi: Sự sụt giảm doanh thu hầu như không thể giải thích được.
+      confusion:
+        vi: "Đừng đọc \"ist zu …\" thành \"đóng\": Die Tür ist zu = cửa đóng, nhưng Die Tür ist leicht zu öffnen = cửa dễ mở. Hạn chót, quy định thường cho nghĩa \"phải\"; leicht, schwer, kaum, nicht thường cho nghĩa \"có thể / không thể\"."
+
+  - key: de:item:b2u02-g-haben-zu
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "haben + zu + Infinitiv: Wir haben das bis morgen zu erledigen. (= müssen)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "haben + zu + nguyên thể là câu chủ động có nghĩa như müssen, nghe trang trọng hoặc mang tính yêu cầu hơn. Chủ ngữ là người phải làm việc đó, khác với sein + zu (chủ ngữ là việc được làm). Wir haben den Bericht bis Freitag abzugeben = Wir müssen den Bericht bis Freitag abgeben."
+      examples:
+        - target: Wir haben noch einige Fragen zu klären.
+          translation:
+            vi: Chúng tôi còn phải làm rõ một vài câu hỏi.
+        - target: Ich habe heute noch viel zu tun.
+          translation:
+            vi: Hôm nay tôi còn nhiều việc phải làm.
+      confusion:
+        vi: "Người làm → haben zu (Wir haben den Bericht abzugeben); việc được làm → sein zu (Der Bericht ist abzugeben). Ich habe nichts zu tun = tôi không có việc gì để làm."
+
+  # --- Từ mới theo ma trận (trường: thị trường) ---
+  - key: de:item:b2u02-wirtschaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wirtschaft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nền kinh tế, kinh tế
+      examples:
+        - target: Der Tourismus spielt für die Wirtschaft vieler Länder eine wichtige Rolle.
+          translation:
+            vi: Du lịch đóng vai trò quan trọng đối với nền kinh tế của nhiều nước.
+        - target: Die Krise hat der Wirtschaft stark geschadet.
+          translation:
+            vi: Cuộc khủng hoảng đã gây thiệt hại nặng cho nền kinh tế.
+      confusion:
+        vi: "Từ ghép thường gặp: die Wirtschaftskrise (khủng hoảng kinh tế), der Wirtschaftsteil (mục kinh tế trên báo). Trong khẩu ngữ, die Wirtschaft còn có nghĩa là quán ăn bình dân."
+
+  - key: de:item:b2u02-wirtschaftlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: wirtschaftlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: (thuộc về) kinh tế; tiết kiệm, có hiệu quả kinh tế
+      examples:
+        - target: Die wirtschaftliche Lage des Unternehmens ist schwierig.
+          translation:
+            vi: Tình hình kinh tế của doanh nghiệp đang khó khăn.
+        - target: Dieses Auto fährt sehr wirtschaftlich.
+          translation:
+            vi: Chiếc xe này chạy rất tiết kiệm (nhiên liệu).
+      confusion:
+        vi: "Hai nghĩa: \"thuộc về kinh tế\" (die wirtschaftliche Entwicklung) và \"tiết kiệm, hiệu quả\" (wirtschaftlich arbeiten). Danh từ: die Wirtschaftlichkeit."
+
+  - key: de:item:b2u02-markt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Markt, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chợ; thị trường
+      examples:
+        - target: Samstags kaufe ich Gemüse auf dem Markt.
+          translation:
+            vi: Thứ Bảy nào tôi cũng mua rau ở chợ.
+        - target: Das Unternehmen will ein neues Produkt auf den Markt bringen.
+          translation:
+            vi: Doanh nghiệp muốn tung một sản phẩm mới ra thị trường.
+      confusion:
+        vi: "Dùng giới từ auf: auf dem Markt (ở chợ, trên thị trường), auf den Markt bringen (tung ra thị trường). Số nhiều: die Märkte."
+
+  - key: de:item:b2u02-nachfrage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Nachfrage (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cầu, nhu cầu (mua hàng)
+      examples:
+        - target: Im Sommer steigt die Nachfrage nach Klimaanlagen.
+          translation:
+            vi: Vào mùa hè, nhu cầu mua máy điều hòa tăng lên.
+        - target: Angebot und Nachfrage bestimmen den Preis.
+          translation:
+            vi: Cung và cầu quyết định giá cả.
+      confusion:
+        vi: "die Nachfrage nach + Dativ (nhu cầu về cái gì). Cặp từ: das Angebot (cung) – die Nachfrage (cầu)."
+
+  - key: de:item:b2u02-wettbewerb
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Wettbewerb, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cạnh tranh; cuộc thi
+      examples:
+        - target: Der Wettbewerb zwischen den Supermärkten ist hart.
+          translation:
+            vi: Sự cạnh tranh giữa các siêu thị rất gay gắt.
+        - target: Sie hat einen Wettbewerb für junge Gründer gewonnen.
+          translation:
+            vi: Cô ấy đã thắng một cuộc thi dành cho những người khởi nghiệp trẻ.
+      confusion:
+        vi: "der Wettbewerb nói về sự cạnh tranh như một hiện tượng (hoặc một cuộc thi); die Konkurrenz cũng là sự cạnh tranh nhưng còn chỉ các đối thủ: zur Konkurrenz wechseln."
+
+  - key: de:item:b2u02-konkurrenz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Konkurrenz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cạnh tranh; các đối thủ cạnh tranh
+      examples:
+        - target: Die Konkurrenz aus dem Ausland ist groß.
+          translation:
+            vi: Sự cạnh tranh từ nước ngoài rất lớn.
+        - target: Viele Kunden sind zur Konkurrenz gewechselt.
+          translation:
+            vi: Nhiều khách hàng đã chuyển sang đối thủ cạnh tranh.
+      confusion:
+        vi: "die Konkurrenz là danh từ tập hợp (các đối thủ nói chung). Một đối thủ cụ thể: der Konkurrent / die Konkurrentin."
+
+  - key: de:item:b2u02-umsatz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Umsatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: doanh thu
+      examples:
+        - target: Der Umsatz ist im letzten Quartal gestiegen.
+          translation:
+            vi: Doanh thu đã tăng trong quý vừa rồi.
+        - target: Die Firma macht einen Umsatz von zwei Millionen Euro im Jahr.
+          translation:
+            vi: Công ty đạt doanh thu hai triệu euro mỗi năm.
+      confusion:
+        vi: "der Umsatz (doanh thu: tổng tiền bán được) khác der Gewinn (lợi nhuận: doanh thu trừ chi phí). Một công ty có thể có doanh thu cao mà vẫn lỗ."
+
+  - key: de:item:b2u02-gewinn
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gewinn, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lợi nhuận; giải thưởng (xổ số, trò chơi)
+      examples:
+        - target: Trotz des hohen Umsatzes war der Gewinn gering.
+          translation:
+            vi: Mặc dù doanh thu cao, lợi nhuận vẫn thấp.
+        - target: Im ersten Jahr hat die Firma noch keinen Gewinn gemacht.
+          translation:
+            vi: Năm đầu tiên công ty chưa có lãi.
+      confusion:
+        vi: "Gewinn machen / erzielen = có lãi. Động từ gewinnen = thắng, giành được. Trái nghĩa: der Verlust."
+
+  - key: de:item:b2u02-verlust
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verlust, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản lỗ; sự mất mát
+      examples:
+        - target: Das Geschäft hat zwei Jahre lang Verluste gemacht.
+          translation:
+            vi: Cửa hàng đã thua lỗ suốt hai năm.
+        - target: Der Verlust des Arbeitsplatzes ist für viele Menschen ein Schock.
+          translation:
+            vi: Mất việc làm là một cú sốc với nhiều người.
+      confusion:
+        vi: "Verluste machen = bị lỗ. Động từ tương ứng là verlieren (mất)."
+
+  # --- Từ bổ sung bài 1 (Zusatzwortschatz, trường thị trường) ---
+  - key: de:item:b2u02-anbieter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Anbieter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà cung cấp (hàng hóa, dịch vụ)
+      examples:
+        - target: Ich habe zu einem günstigeren Stromanbieter gewechselt.
+          translation:
+            vi: Tôi đã chuyển sang một nhà cung cấp điện rẻ hơn.
+        - target: Auf dem Markt gibt es viele Anbieter von Sprachkursen.
+          translation:
+            vi: Trên thị trường có nhiều nơi cung cấp khóa học ngoại ngữ.
+      confusion:
+        vi: "Từ động từ anbieten (chào bán, cung cấp). Giống cái: die Anbieterin."
+
+  - key: de:item:b2u02-hersteller
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Hersteller, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà sản xuất
+      examples:
+        - target: Der Hersteller gibt auf das Gerät zwei Jahre Garantie.
+          translation:
+            vi: Nhà sản xuất bảo hành thiết bị này hai năm.
+        - target: Viele Hersteller lassen ihre Produkte im Ausland produzieren.
+          translation:
+            vi: Nhiều nhà sản xuất cho sản xuất sản phẩm của họ ở nước ngoài.
+      confusion:
+        vi: "Từ herstellen (sản xuất). der Hersteller làm ra hàng, der Händler bán hàng."
+
+  - key: de:item:b2u02-dienstleistung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Dienstleistung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: dịch vụ
+      examples:
+        - target: Unsere Firma verkauft keine Waren, sondern Dienstleistungen.
+          translation:
+            vi: Công ty chúng tôi không bán hàng hóa mà bán dịch vụ.
+        - target: Banken und Versicherungen bieten Dienstleistungen an.
+          translation:
+            vi: Ngân hàng và công ty bảo hiểm cung cấp dịch vụ.
+      confusion:
+        vi: "die Ware (hàng hóa, vật cụ thể) – die Dienstleistung (dịch vụ). der Dienstleistungssektor = khu vực dịch vụ."
+
+  - key: de:item:b2u02-krise
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Krise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc khủng hoảng
+      examples:
+        - target: Das Unternehmen steckt in einer tiefen Krise.
+          translation:
+            vi: Doanh nghiệp đang lâm vào khủng hoảng sâu.
+        - target: Während der Krise haben viele Betriebe Personal abgebaut.
+          translation:
+            vi: Trong thời kỳ khủng hoảng, nhiều cơ sở đã cắt giảm nhân sự.
+      confusion:
+        vi: "in einer Krise stecken = đang lâm vào khủng hoảng. Từ ghép: die Wirtschaftskrise, die Finanzkrise."
+
+  - key: de:item:b2u02-aufschwung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Aufschwung, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phục hồi, đà tăng trưởng (kinh tế)
+      examples:
+        - target: Nach der Krise kam nur ein langsamer Aufschwung.
+          translation:
+            vi: Sau khủng hoảng chỉ có một sự phục hồi chậm.
+        - target: Der Tourismus in der Region erlebt einen Aufschwung.
+          translation:
+            vi: Du lịch trong vùng đang khởi sắc.
+      confusion:
+        vi: "Trái nghĩa: der Abschwung (suy thoái) hoặc die Krise. Số nhiều die Aufschwünge ít dùng."
+
+  - key: de:item:b2u02-wachstum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Wachstum (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tăng trưởng
+      examples:
+        - target: Ein schnelles Wachstum bringt auch Risiken.
+          translation:
+            vi: Tăng trưởng nhanh cũng mang lại rủi ro.
+        - target: Das Wachstum der Firma hat sich verlangsamt.
+          translation:
+            vi: Tốc độ tăng trưởng của công ty đã chậm lại.
+      confusion:
+        vi: "Danh từ đuôi -tum phần lớn là giống trung (das Wachstum), nhưng có ngoại lệ: der Irrtum, der Reichtum. Động từ: wachsen (wuchs, ist gewachsen)."
+
+  - key: de:item:b2u02-erzielen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: erzielen
+      pos: động từ
+    back:
+      meaning:
+        vi: đạt được (kết quả, lợi nhuận, doanh thu)
+      examples:
+        - target: Das Unternehmen hat einen hohen Gewinn erzielt.
+          translation:
+            vi: Doanh nghiệp đã đạt lợi nhuận cao.
+        - target: Mit der neuen Strategie wollen wir bessere Ergebnisse erzielen.
+          translation:
+            vi: Với chiến lược mới, chúng tôi muốn đạt kết quả tốt hơn.
+      confusion:
+        vi: "erzielen đi với Gewinn, Umsatz, Ergebnis, Erfolg; với Ziel (mục tiêu) thì dùng erreichen: ein Ziel erreichen."
+
+  - key: de:item:b2u02-ware
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ware, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hàng hóa
+      examples:
+        - target: Die Ware wird morgen geliefert.
+          translation:
+            vi: Hàng sẽ được giao vào ngày mai.
+        - target: Im Hamburger Hafen kommen Waren aus der ganzen Welt an.
+          translation:
+            vi: Hàng hóa từ khắp thế giới cập cảng Hamburg.
+      confusion:
+        vi: "Số ít die Ware thường dùng như danh từ tập hợp (lô hàng, hàng). Từ ghép: das Warenhaus (cửa hàng bách hóa)."
+
+  - key: de:item:b2u02-konkurrent
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Konkurrent, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đối thủ cạnh tranh
+      examples:
+        - target: Unser größter Konkurrent hat die Preise gesenkt.
+          translation:
+            vi: Đối thủ cạnh tranh lớn nhất của chúng tôi đã hạ giá.
+        - target: Wir müssen schneller sein als unsere Konkurrenten.
+          translation:
+            vi: Chúng tôi phải nhanh hơn các đối thủ.
+      confusion:
+        vi: "n-Deklination: den/dem/des Konkurrenten. Giống cái: die Konkurrentin; nói chung các đối thủ: die Konkurrenz."
+
+  - key: de:item:b2u02-klaeren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: klären
+      pos: động từ
+    back:
+      meaning:
+        vi: làm rõ, giải quyết (một câu hỏi, một việc)
+      examples:
+        - target: Diese Frage müssen wir noch mit der Chefin klären.
+          translation:
+            vi: Câu hỏi này chúng ta còn phải làm rõ với chị trưởng phòng.
+        - target: Die Sache ist noch nicht geklärt.
+          translation:
+            vi: Việc này vẫn chưa được làm rõ.
+      confusion:
+        vi: "klären dùng với câu hỏi, sự việc chưa rõ; lösen dùng với vấn đề, bài toán. Tính từ gốc: klar (rõ ràng)."
+
+  # ================= Bài 2: Cụm phân từ mở rộng =================
+  - key: de:item:b2u02-g-partizipialattribut-erweitert
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Erweitertes Partizipialattribut: die von der Regierung beschlossenen Maßnahmen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Giữa mạo từ và danh từ có thể chen cả một cụm dài: mạo từ + [bổ ngữ] + Partizip I/II có đuôi tính từ + danh từ. Khi đọc, đi từ mạo từ nhảy thẳng tới danh từ (die … Maßnahmen), rồi mới đọc phần giữa như một mệnh đề quan hệ rút gọn. Partizip I (steigend) mang nghĩa chủ động, đang diễn ra; Partizip II (beschlossen) thường mang nghĩa bị động hoặc đã xong."
+      examples:
+        - target: Die seit Monaten steigenden Preise belasten viele Familien.
+          translation:
+            vi: Giá cả tăng liên tục từ nhiều tháng nay đang đè nặng lên nhiều gia đình.
+        - target: Die von der Regierung beschlossenen Maßnahmen sollen die Verbraucher entlasten.
+          translation:
+            vi: Các biện pháp do chính phủ thông qua nhằm giảm gánh nặng cho người tiêu dùng.
+      confusion:
+        vi: "Partizip vẫn nhận đuôi như mọi tính từ đứng trước danh từ: die steigenden Preise, ein stark gestiegener Umsatz. Tiếng Việt đặt phần bổ nghĩa sau danh từ, tiếng Đức đặt trước."
+
+  - key: de:item:b2u02-g-relativsatz-partizip-umformung
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Relativsatz ↔ Partizipialattribut: die Preise, die seit Monaten steigen ↔ die seit Monaten steigenden Preise"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Chuyển mệnh đề quan hệ thành cụm phân từ qua 4 bước: (1) bỏ đại từ quan hệ; (2) động từ chủ động → Partizip I (steigen → steigend), câu bị động (werden + Partizip II) → giữ Partizip II, bỏ werden; (3) đặt phần còn lại của mệnh đề giữa mạo từ và Partizip, giữ thứ tự; (4) thêm đuôi tính từ theo mạo từ và cách. Khi đọc thì làm ngược lại: bóc cụm ra thành mệnh đề quan hệ."
+      examples:
+        - target: "die Waren, die aus Asien importiert werden → die aus Asien importierten Waren"
+          translation:
+            vi: hàng hóa được nhập khẩu từ châu Á
+        - target: "der Umsatz, der stark gestiegen ist → der stark gestiegene Umsatz"
+          translation:
+            vi: doanh thu đã tăng mạnh
+      confusion:
+        vi: "Động từ chia Perfekt với sein (steigen, sinken) cũng dùng Partizip II nhưng nghĩa chủ động đã xong: die gestiegenen Preise = giá đã tăng; die steigenden Preise = giá đang tăng."
+
+  # --- Từ mới theo ma trận (trường: giá cả, thu nhập) ---
+  - key: de:item:b2u02-inflation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Inflation (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lạm phát
+      examples:
+        - target: Bei hoher Inflation verliert das Geld an Wert.
+          translation:
+            vi: Khi lạm phát cao, đồng tiền mất giá.
+        - target: Die Zentralbank versucht, die Inflation niedrig zu halten.
+          translation:
+            vi: Ngân hàng trung ương cố gắng giữ lạm phát ở mức thấp.
+      confusion:
+        vi: "Inflation là khi giá cả nói chung tăng và đồng tiền mua được ít hơn. die Inflationsrate = tỉ lệ lạm phát."
+
+  - key: de:item:b2u02-preisanstieg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Preisanstieg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tăng giá
+      examples:
+        - target: Der Preisanstieg bei Lebensmitteln trifft vor allem Familien mit wenig Geld.
+          translation:
+            vi: Việc giá thực phẩm tăng ảnh hưởng nhất tới các gia đình ít tiền.
+        - target: Viele Verbraucher klagen über den Preisanstieg.
+          translation:
+            vi: Nhiều người tiêu dùng than phiền về việc tăng giá.
+      confusion:
+        vi: "Từ ghép der Preis + der Anstieg, giống đực theo từ cuối. Gần nghĩa: die Preiserhöhung (việc người bán chủ động tăng giá)."
+
+  - key: de:item:b2u02-kaufkraft
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Kaufkraft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sức mua
+      examples:
+        - target: Wenn die Preise schneller steigen als die Löhne, sinkt die Kaufkraft.
+          translation:
+            vi: Khi giá cả tăng nhanh hơn tiền lương, sức mua giảm.
+        - target: Durch die Inflation verliert das Einkommen an Kaufkraft.
+          translation:
+            vi: Do lạm phát, thu nhập bị giảm sức mua.
+      confusion:
+        vi: "kaufen + die Kraft (sức) → giống cái theo Kraft."
+
+  - key: de:item:b2u02-lebenshaltungskosten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Lebenshaltungskosten (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chi phí sinh hoạt
+      examples:
+        - target: In Großstädten sind die Lebenshaltungskosten meist höher als auf dem Land.
+          translation:
+            vi: Ở các thành phố lớn, chi phí sinh hoạt thường cao hơn ở nông thôn.
+        - target: Wenn die Lebenshaltungskosten steigen, müssen viele Familien sparen.
+          translation:
+            vi: Khi chi phí sinh hoạt tăng, nhiều gia đình phải tiết kiệm.
+      confusion:
+        vi: "Chỉ có số nhiều như die Kosten, nên động từ chia số nhiều: Die Lebenshaltungskosten sind … / steigen."
+
+  - key: de:item:b2u02-verbraucher
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verbraucher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người tiêu dùng
+      examples:
+        - target: Die neuen Regeln sollen die Verbraucher besser schützen.
+          translation:
+            vi: Các quy định mới nhằm bảo vệ người tiêu dùng tốt hơn.
+        - target: Viele Verbraucher kaufen inzwischen auch Lebensmittel online.
+          translation:
+            vi: Nhiều người tiêu dùng nay mua cả thực phẩm qua mạng.
+      confusion:
+        vi: "Từ verbrauchen (tiêu thụ). Giống cái: die Verbraucherin. Đồng nghĩa trang trọng hơn: der Konsument."
+
+  - key: de:item:b2u02-konsum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Konsum (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tiêu dùng
+      examples:
+        - target: Der private Konsum ist für die Wirtschaft sehr wichtig.
+          translation:
+            vi: Tiêu dùng của tư nhân rất quan trọng đối với nền kinh tế.
+        - target: Viele junge Leute wollen ihren Konsum bewusst reduzieren.
+          translation:
+            vi: Nhiều người trẻ muốn có ý thức giảm bớt tiêu dùng.
+      confusion:
+        vi: "Động từ: konsumieren. Trọng âm ở âm tiết thứ hai: Kon-SUM."
+
+  - key: de:item:b2u02-einkommen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Einkommen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thu nhập
+      examples:
+        - target: Ein großer Teil ihres Einkommens geht für die Miete weg.
+          translation:
+            vi: Một phần lớn thu nhập của cô ấy dành cho tiền thuê nhà.
+        - target: Familien mit niedrigem Einkommen sparen vor allem beim Essen.
+          translation:
+            vi: Các gia đình thu nhập thấp tiết kiệm chủ yếu ở khoản ăn uống.
+      confusion:
+        vi: "das Einkommen (mọi khoản thu) – das Gehalt (lương tháng) – der Lohn (tiền công, thường theo giờ). Genitiv: des Einkommens."
+
+  - key: de:item:b2u02-steuer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Steuer, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuế
+      examples:
+        - target: Die Regierung will die Steuern für kleine Unternehmen senken.
+          translation:
+            vi: Chính phủ muốn giảm thuế cho các doanh nghiệp nhỏ.
+        - target: Auf fast alle Waren zahlt man Mehrwertsteuer.
+          translation:
+            vi: Hầu như mọi hàng hóa đều phải chịu thuế giá trị gia tăng.
+      confusion:
+        vi: "Đừng nhầm: das Steuer, - = tay lái, vô lăng (am Steuer sitzen). die Steuer = thuế; Steuern zahlen = nộp thuế."
+
+  # --- Từ bổ sung bài 2 (Zusatzwortschatz, trường giá cả – thu nhập) ---
+  - key: de:item:b2u02-erhoehen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erhöhen
+      pos: động từ
+    back:
+      meaning:
+        vi: tăng, nâng (giá, thuế, lương)
+      examples:
+        - target: Der Vermieter will die Miete erhöhen.
+          translation:
+            vi: Chủ nhà muốn tăng tiền thuê.
+        - target: Die Firma hat die Löhne um drei Prozent erhöht.
+          translation:
+            vi: Công ty đã tăng lương thêm ba phần trăm.
+      confusion:
+        vi: "erhöhen: ai tăng cái gì (Perfekt với haben); steigen: cái gì tự tăng (Perfekt với sein). Die Händler haben die Preise erhöht ↔ Die Preise sind gestiegen."
+
+  - key: de:item:b2u02-senken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: senken
+      pos: động từ
+    back:
+      meaning:
+        vi: hạ, giảm (giá, thuế, chi phí)
+      examples:
+        - target: Der Supermarkt hat die Preise für Obst gesenkt.
+          translation:
+            vi: Siêu thị đã hạ giá trái cây.
+        - target: Wir müssen die Kosten senken.
+          translation:
+            vi: Chúng ta phải giảm chi phí.
+      confusion:
+        vi: "senken (ai hạ cái gì, haben gesenkt) khác sinken (cái gì tự giảm, ist gesunken): Die Preise sind gesunken."
+
+  - key: de:item:b2u02-erhoehung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erhöhung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tăng (giá, lương, thuế)
+      examples:
+        - target: Die Gewerkschaft fordert eine Erhöhung der Löhne.
+          translation:
+            vi: Công đoàn đòi tăng lương.
+        - target: Die Erhöhung der Miete kam überraschend.
+          translation:
+            vi: Việc tăng tiền thuê nhà đến bất ngờ.
+      confusion:
+        vi: "Từ ghép: die Preiserhöhung, die Steuererhöhung, die Gehaltserhöhung. Trái nghĩa: die Senkung."
+
+  - key: de:item:b2u02-zins
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Zins, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền lãi; lãi suất (thường dùng số nhiều)
+      examples:
+        - target: Für den Kredit zahlen wir vier Prozent Zinsen.
+          translation:
+            vi: Chúng tôi trả lãi bốn phần trăm cho khoản vay.
+        - target: Wenn die Zinsen steigen, werden Kredite teurer.
+          translation:
+            vi: Khi lãi suất tăng, vay tiền trở nên đắt hơn.
+      confusion:
+        vi: "Thường dùng số nhiều die Zinsen. der Zinssatz = mức lãi suất (tính bằng phần trăm)."
+
+  - key: de:item:b2u02-ersparnis
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Ersparnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản tiết kiệm được; (số nhiều) tiền dành dụm
+      examples:
+        - target: Durch die Inflation verlieren die Ersparnisse an Wert.
+          translation:
+            vi: Do lạm phát, tiền dành dụm bị mất giá.
+        - target: Mit dem neuen Tarif ergibt sich eine Ersparnis von 20 Euro im Monat.
+          translation:
+            vi: Với gói cước mới, mỗi tháng tiết kiệm được 20 euro.
+      confusion:
+        vi: "Từ sparen (tiết kiệm). Danh từ đuôi -nis là giống cái hoặc trung: die Ersparnis, nhưng das Ergebnis."
+
+  - key: de:item:b2u02-entlasten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: entlasten
+      pos: động từ
+    back:
+      meaning:
+        vi: giảm gánh nặng (cho ai), hỗ trợ
+      examples:
+        - target: Die Regierung will Familien mit niedrigem Einkommen entlasten.
+          translation:
+            vi: Chính phủ muốn giảm gánh nặng cho các gia đình thu nhập thấp.
+        - target: Eine neue Kollegin soll das Team entlasten.
+          translation:
+            vi: Một đồng nghiệp mới sẽ đỡ việc cho cả nhóm.
+      confusion:
+        vi: "entlasten (giảm gánh nặng) ngược nghĩa với belasten (gây gánh nặng). Danh từ: die Entlastung."
+
+  - key: de:item:b2u02-entlastung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Entlastung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự giảm gánh nặng, khoản hỗ trợ
+      examples:
+        - target: Viele Bürger wünschen sich eine Entlastung bei den Energiekosten.
+          translation:
+            vi: Nhiều người dân mong được giảm gánh nặng chi phí năng lượng.
+        - target: Die niedrigere Steuer ist eine Entlastung für kleine Betriebe.
+          translation:
+            vi: Mức thuế thấp hơn là một sự hỗ trợ cho các cơ sở nhỏ.
+      confusion:
+        vi: "eine Entlastung für + Akkusativ (cho ai); eine Entlastung bei + Dativ (ở khoản nào). Trái nghĩa: die Belastung."
+
+  - key: de:item:b2u02-beschliessen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: beschließen, beschloss, hat beschlossen
+      pos: động từ
+    back:
+      meaning:
+        vi: quyết định (chính thức), thông qua
+      examples:
+        - target: Das Parlament hat ein neues Gesetz beschlossen.
+          translation:
+            vi: Quốc hội đã thông qua một đạo luật mới.
+        - target: Der Vorstand hat beschlossen, einen neuen Standort zu eröffnen.
+          translation:
+            vi: Ban điều hành đã quyết định mở một địa điểm mới.
+      confusion:
+        vi: "beschließen thường dùng cho quyết định chính thức của một tập thể (quốc hội, ban lãnh đạo); entscheiden dùng chung hơn. Danh từ: der Beschluss."
+
+  - key: de:item:b2u02-haushalt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Haushalt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hộ gia đình; ngân sách (nhà nước); việc nhà
+      examples:
+        - target: In unserem Haushalt leben vier Personen.
+          translation:
+            vi: Hộ của chúng tôi có bốn người.
+        - target: Die Stadt muss im nächsten Haushalt sparen.
+          translation:
+            vi: Thành phố phải tiết kiệm trong ngân sách năm tới.
+      confusion:
+        vi: "Ba nghĩa: hộ gia đình (private Haushalte), ngân sách (der Staatshaushalt), việc nhà (im Haushalt helfen)."
+
+  - key: de:item:b2u02-schulden
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Schulden (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nợ, khoản nợ
+      examples:
+        - target: Er hat Schulden bei der Bank.
+          translation:
+            vi: Anh ấy nợ ngân hàng.
+        - target: Wir haben endlich alle Schulden zurückgezahlt.
+          translation:
+            vi: Cuối cùng chúng tôi đã trả hết nợ.
+      confusion:
+        vi: "Nghĩa \"nợ (tiền)\" dùng số nhiều: Schulden machen (vay nợ), Schulden zurückzahlen (trả nợ). Số ít die Schuld thường có nghĩa \"lỗi, tội\": Das ist nicht meine Schuld."
+
+  # ================= Bài 3: Funktionsverbgefüge, giới từ Genitiv trang trọng =================
+  - key: de:item:b2u02-g-funktionsverbgefuege
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Funktionsverbgefüge: eine Entscheidung treffen, zur Verfügung stellen, in Betracht ziehen, in Kraft treten …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Funktionsverbgefüge (cụm động từ chức năng) là một danh từ mang nghĩa chính + một động từ gần như \"rỗng\" (treffen, stellen, nehmen, bringen, kommen …); cả cụm thường tương đương một động từ đơn: eine Entscheidung treffen = entscheiden. Danh từ, giới từ, mạo từ và động từ trong cụm là cố định, nên phải học thuộc cả cụm. Văn bản kinh tế, hành chính dùng rất nhiều cụm này."
+      examples:
+        - target: Die Geschäftsführung hat noch keine Entscheidung getroffen.
+          translation:
+            vi: Ban giám đốc vẫn chưa đưa ra quyết định.
+        - target: Die Firma stellt allen Mitarbeitern einen Laptop zur Verfügung.
+          translation:
+            vi: Công ty cấp cho mọi nhân viên một máy tính xách tay.
+        - target: Das neue Gesetz tritt im nächsten Jahr in Kraft.
+          translation:
+            vi: Đạo luật mới có hiệu lực vào năm sau.
+      confusion:
+        vi: "Các cụm của bài: eine Frage stellen (= fragen) · in Frage / infrage kommen (= có thể được xem xét) · zur Verfügung stehen (= có sẵn) · Kritik üben an + Dat (= kritisieren) · in Anspruch nehmen (= sử dụng) · Rücksicht nehmen auf + Akk · zum Ausdruck bringen (= ausdrücken) · eine Rolle spielen · in Betracht ziehen (= cân nhắc) · in Kraft treten (= có hiệu lực). Không dịch từng chữ từ tiếng Anh: make a decision ≠ eine Entscheidung machen."
+
+  - key: de:item:b2u02-g-genitiv-praep-formal
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Präpositionen mit Genitiv (formell): aufgrund, angesichts, infolge, bezüglich, hinsichtlich, mithilfe, anhand, zugunsten, anlässlich"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Các giới từ này đi với Genitiv và chủ yếu gặp trong văn viết trang trọng (báo chí, thư công việc): aufgrund (do, vì), angesichts (trước tình hình), infolge (do hậu quả của), bezüglich / hinsichtlich (về, liên quan đến), mithilfe (nhờ, bằng), anhand (dựa vào), zugunsten (có lợi cho), anlässlich (nhân dịp). Mạo từ và tính từ phía sau ở Genitiv: aufgrund der hohen Nachfrage, angesichts steigender Kosten."
+      examples:
+        - target: Aufgrund der hohen Nachfrage sind die Preise gestiegen.
+          translation:
+            vi: Do nhu cầu cao, giá cả đã tăng.
+        - target: Bezüglich Ihrer Anfrage melden wir uns bis Freitag.
+          translation:
+            vi: Về yêu cầu của anh/chị, chúng tôi sẽ liên hệ lại trước thứ Sáu.
+        - target: Anhand der Tabelle lässt sich die Entwicklung gut erkennen.
+          translation:
+            vi: Dựa vào bảng số liệu có thể thấy rõ diễn biến.
+      confusion:
+        vi: "Một số từ viết liền hoặc tách đều đúng: aufgrund / auf Grund, mithilfe / mit Hilfe, zugunsten / zu Gunsten. Danh từ không có mạo từ và không có tính từ thì dùng von + Dativ: mithilfe von Daten, anhand von Beispielen."
+
+  # --- Từ mới theo ma trận (trường: chiến lược doanh nghiệp) ---
+  - key: de:item:b2u02-massnahme
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Maßnahme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: biện pháp
+      examples:
+        - target: Die Regierung hat neue Maßnahmen gegen die Inflation beschlossen.
+          translation:
+            vi: Chính phủ đã thông qua các biện pháp mới chống lạm phát.
+        - target: Welche Maßnahmen schlagen Sie vor?
+          translation:
+            vi: Anh/chị đề xuất những biện pháp nào?
+      confusion:
+        vi: "Maßnahmen ergreifen = áp dụng biện pháp. Viết ß vì a trong Maß đọc dài."
+
+  - key: de:item:b2u02-strategie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Strategie, -n
+      ipa: /ʃtʁateˈɡiː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiến lược
+      examples:
+        - target: Das Unternehmen braucht eine neue Strategie.
+          translation:
+            vi: Doanh nghiệp cần một chiến lược mới.
+        - target: Unsere Strategie hat sich bewährt.
+          translation:
+            vi: Chiến lược của chúng tôi đã chứng tỏ hiệu quả.
+      pronunciation_note:
+        vi: "St đầu từ đọc là \"scht\"; trọng âm ở âm cuối: Stra-te-GIE. Số nhiều die Strategien có thêm âm tiết -en ở cuối."
+      confusion:
+        vi: "Tính từ: strategisch. Danh từ đuôi -ie nhấn âm cuối thường là giống cái: die Strategie, die Industrie."
+
+  - key: de:item:b2u02-investition
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Investition, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản đầu tư, sự đầu tư
+      examples:
+        - target: Die Investition in neue Maschinen hat sich gelohnt.
+          translation:
+            vi: Khoản đầu tư vào máy móc mới đã có lời.
+        - target: Für den neuen Standort sind hohe Investitionen nötig.
+          translation:
+            vi: Địa điểm mới cần những khoản đầu tư lớn.
+      confusion:
+        vi: "die Investition in + Akkusativ (đầu tư vào cái gì). Danh từ đuôi -tion là giống cái."
+
+  - key: de:item:b2u02-investieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: investieren
+      pos: động từ
+    back:
+      meaning:
+        vi: đầu tư
+      examples:
+        - target: Die Firma investiert viel Geld in die Forschung.
+          translation:
+            vi: Công ty đầu tư nhiều tiền vào nghiên cứu.
+        - target: Wir haben in eine neue Software investiert.
+          translation:
+            vi: Chúng tôi đã đầu tư vào một phần mềm mới.
+      confusion:
+        vi: "investieren in + Akkusativ. Động từ đuôi -ieren có Partizip II không có ge-: investiert."
+
+  - key: de:item:b2u02-standort
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Standort, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: địa điểm (đặt nhà máy, chi nhánh)
+      examples:
+        - target: Das Unternehmen hat Standorte in drei Ländern.
+          translation:
+            vi: Doanh nghiệp có cơ sở ở ba nước.
+        - target: Der Standort in der Nähe des Hafens ist ideal für uns.
+          translation:
+            vi: Địa điểm gần cảng là lý tưởng với chúng tôi.
+      confusion:
+        vi: "der Standort là nơi đặt cơ sở; der Wirtschaftsstandort là một vùng hay một nước được xét về điều kiện kinh doanh."
+
+  - key: de:item:b2u02-globalisierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Globalisierung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: toàn cầu hóa
+      examples:
+        - target: Die Globalisierung hat den internationalen Handel stark verändert.
+          translation:
+            vi: Toàn cầu hóa đã làm thay đổi mạnh mẽ thương mại quốc tế.
+        - target: Die Globalisierung bringt Vorteile und Nachteile.
+          translation:
+            vi: Toàn cầu hóa mang lại cả lợi ích lẫn bất lợi.
+      confusion:
+        vi: "Danh từ đuôi -ung là giống cái. Tính từ: global (toàn cầu)."
+
+  - key: de:item:b2u02-handel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Handel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thương mại, buôn bán; ngành bán lẻ
+      examples:
+        - target: Der Handel zwischen den beiden Ländern ist wichtig für beide Seiten.
+          translation:
+            vi: Thương mại giữa hai nước quan trọng với cả hai bên.
+        - target: Der Online-Handel macht kleinen Geschäften Konkurrenz.
+          translation:
+            vi: Thương mại trực tuyến cạnh tranh với các cửa hàng nhỏ.
+      confusion:
+        vi: "der Handel (thương mại) khác das Handeln (hành động) và der Händler (người buôn bán). Động từ: handeln mit + Dativ (buôn bán mặt hàng gì)."
+
+  - key: de:item:b2u02-branche
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Branche, -n
+      ipa: /ˈbʁãːʃə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngành (kinh doanh)
+      examples:
+        - target: In welcher Branche arbeiten Sie?
+          translation:
+            vi: Anh/chị làm việc trong ngành nào?
+        - target: Die IT-Branche sucht dringend Fachkräfte.
+          translation:
+            vi: Ngành công nghệ thông tin đang rất cần lao động có chuyên môn.
+      pronunciation_note:
+        vi: "Từ gốc Pháp: ch đọc như \"sch\", an là nguyên âm a đọc giọng mũi và kéo dài như trong tiếng Pháp; trọng âm ở âm tiết đầu."
+
+  # --- Từ bổ sung bài 3 (Zusatzwortschatz, trường chiến lược doanh nghiệp) ---
+  - key: de:item:b2u02-geschaeftsfuehrung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Geschäftsführung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban giám đốc (điều hành), ban lãnh đạo công ty
+      examples:
+        - target: Die Geschäftsführung hat eine wichtige Entscheidung getroffen.
+          translation:
+            vi: Ban giám đốc đã đưa ra một quyết định quan trọng.
+        - target: Bitte wenden Sie sich direkt an die Geschäftsführung.
+          translation:
+            vi: Xin anh/chị liên hệ thẳng với ban giám đốc.
+      confusion:
+        vi: "der Geschäftsführer / die Geschäftsführerin = giám đốc điều hành, nhất là của công ty TNHH (GmbH). Âm nối -s-: Geschäft + s + Führung."
+
+  - key: de:item:b2u02-vorstand
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Vorstand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban điều hành (công ty cổ phần, hội)
+      examples:
+        - target: Der Vorstand hat eine neue Strategie vorgestellt.
+          translation:
+            vi: Ban điều hành đã trình bày một chiến lược mới.
+        - target: Sie ist seit zwei Jahren Mitglied im Vorstand des Vereins.
+          translation:
+            vi: Chị ấy là thành viên ban điều hành của hội từ hai năm nay.
+      confusion:
+        vi: "Thường dùng cho ban lãnh đạo của công ty cổ phần (AG) hoặc của một hội (Verein); với GmbH thường nói die Geschäftsführung."
+
+  - key: de:item:b2u02-kooperation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kooperation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hợp tác
+      examples:
+        - target: Die beiden Firmen haben eine Kooperation vereinbart.
+          translation:
+            vi: Hai công ty đã thỏa thuận hợp tác.
+        - target: In Kooperation mit einer Universität entwickeln wir ein neues Produkt.
+          translation:
+            vi: Chúng tôi hợp tác với một trường đại học để phát triển một sản phẩm mới.
+      confusion:
+        vi: "die Kooperation mit + Dativ. Từ thường ngày cùng nghĩa: die Zusammenarbeit."
+
+  - key: de:item:b2u02-export
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Export, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: (sự) xuất khẩu; hàng xuất khẩu
+      examples:
+        - target: Der Export von Maschinen ist für Deutschland sehr wichtig.
+          translation:
+            vi: Xuất khẩu máy móc rất quan trọng đối với nước Đức.
+        - target: Ein großer Teil der Produktion geht in den Export.
+          translation:
+            vi: Một phần lớn sản lượng được đem xuất khẩu.
+      confusion:
+        vi: "Động từ: exportieren. Trái nghĩa: der Import."
+
+  - key: de:item:b2u02-import
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Import, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: (sự) nhập khẩu; hàng nhập khẩu
+      examples:
+        - target: Viele Länder sind auf den Import von Energie angewiesen.
+          translation:
+            vi: Nhiều nước phụ thuộc vào việc nhập khẩu năng lượng.
+        - target: Die kleine Firma lebt vom Import von Kaffee aus Vietnam.
+          translation:
+            vi: Công ty nhỏ ấy sống nhờ nhập khẩu cà phê từ Việt Nam.
+      confusion:
+        vi: "Động từ: importieren. angewiesen sein auf + Akkusativ = phụ thuộc vào."
+
+  - key: de:item:b2u02-produzieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: produzieren
+      pos: động từ
+    back:
+      meaning:
+        vi: sản xuất
+      examples:
+        - target: Das Werk produziert jeden Tag 500 Fahrräder.
+          translation:
+            vi: Nhà máy sản xuất 500 chiếc xe đạp mỗi ngày.
+        - target: Wir lassen unsere Kleidung in Vietnam produzieren.
+          translation:
+            vi: Chúng tôi đặt sản xuất quần áo của mình ở Việt Nam.
+      confusion:
+        vi: "Partizip II không có ge-: produziert. Gần nghĩa: herstellen (động từ tách: stellt … her)."
+
+  - key: de:item:b2u02-verlagern
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: verlagern
+      pos: động từ
+    back:
+      meaning:
+        vi: chuyển (sản xuất, địa điểm) sang nơi khác
+      examples:
+        - target: Das Unternehmen verlagert seine Produktion ins Ausland.
+          translation:
+            vi: Doanh nghiệp chuyển hoạt động sản xuất ra nước ngoài.
+        - target: Ein Teil der Arbeit wurde nach Polen verlagert.
+          translation:
+            vi: Một phần công việc đã được chuyển sang Ba Lan.
+      confusion:
+        vi: "etwas nach / in + Akkusativ verlagern (ins Ausland, nach Asien). Danh từ: die Verlagerung."
+
+  - key: de:item:b2u02-lieferkette
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Lieferkette, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuỗi cung ứng
+      examples:
+        - target: Während der Krise waren viele Lieferketten unterbrochen.
+          translation:
+            vi: Trong thời kỳ khủng hoảng, nhiều chuỗi cung ứng bị gián đoạn.
+        - target: Unternehmen müssen ihre Lieferketten besser kontrollieren.
+          translation:
+            vi: Các doanh nghiệp phải kiểm soát chuỗi cung ứng của mình tốt hơn.
+      confusion:
+        vi: "liefern (giao hàng) + die Kette (chuỗi, dây xích) → giống cái theo Kette."
+
+  - key: de:item:b2u02-zulieferer
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Zulieferer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà cung cấp linh kiện, nguyên liệu (cho nhà sản xuất)
+      examples:
+        - target: Die Autoindustrie arbeitet mit vielen kleinen Zulieferern zusammen.
+          translation:
+            vi: Ngành ô tô làm việc với nhiều nhà cung cấp linh kiện nhỏ.
+        - target: Ein Zulieferer konnte die Teile nicht rechtzeitig liefern.
+          translation:
+            vi: Một nhà cung cấp đã không giao linh kiện kịp thời.
+      confusion:
+        vi: "der Zulieferer cung cấp linh kiện cho nhà sản xuất; der Anbieter cung cấp hàng hóa, dịch vụ cho khách hàng nói chung. Dativ số nhiều: mit den Zulieferern."
+
+  - key: de:item:b2u02-expandieren
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: expandieren
+      pos: động từ
+    back:
+      meaning:
+        vi: mở rộng (kinh doanh, thị trường)
+      examples:
+        - target: Die Firma will nach Asien expandieren.
+          translation:
+            vi: Công ty muốn mở rộng sang châu Á.
+        - target: Das junge Unternehmen expandiert sehr schnell.
+          translation:
+            vi: Doanh nghiệp trẻ đó đang mở rộng rất nhanh.
+      confusion:
+        vi: "Danh từ: die Expansion. Gần nghĩa thường ngày: wachsen, sich vergrößern."
+
+  # ================= Bài 4: Mô tả biểu đồ – số liệu =================
+  - key: de:item:b2u02-g-grafik-redemittel
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Grafiken beschreiben: steigen um / auf, von … auf …, der Anstieg um …, Prozent oder Prozentpunkt"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "um + số là mức thay đổi (tăng THÊM bao nhiêu), auf + số là giá trị mới (tăng LÊN tới bao nhiêu): Der Umsatz ist um 10 Prozent gestiegen / auf 2 Millionen Euro gestiegen; von … auf … nêu cả điểm đầu và điểm cuối. steigen, sinken đi với sein ở Perfekt: ist gestiegen. Khi chính các giá trị là phần trăm, mức chênh lệch tính bằng Prozentpunkte: von 4 auf 6 Prozent = um 2 Prozentpunkte (tức là tăng 50 Prozent)."
+      examples:
+        - target: Die Grafik zeigt die Entwicklung des Umsatzes von 2015 bis 2025.
+          translation:
+            vi: Biểu đồ cho thấy diễn biến doanh thu từ năm 2015 đến 2025.
+        - target: Im Vergleich zum Vorjahr ist der Anteil um drei Prozentpunkte gesunken.
+          translation:
+            vi: So với năm trước, tỉ lệ đã giảm ba điểm phần trăm.
+        - target: Auffällig ist, dass die Zahl der Kunden stark gestiegen ist.
+          translation:
+            vi: Điều đáng chú ý là số khách hàng đã tăng mạnh.
+      confusion:
+        vi: "Danh từ cũng đi với um / auf: der Anstieg um 5 Prozent, der Rückgang auf 3 Prozent. Mẫu câu: Die Grafik zeigt … · Im Vergleich zu … · Auffällig ist, dass … · Der Wert liegt bei …"
+
+  # --- Từ mới theo ma trận (trường: thống kê) ---
+  - key: de:item:b2u02-statistik
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Statistik, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: (bản) thống kê
+      examples:
+        - target: Die Statistik zeigt, wie sich die Preise entwickelt haben.
+          translation:
+            vi: Bản thống kê cho thấy giá cả đã diễn biến như thế nào.
+        - target: Statistiken muss man immer genau lesen.
+          translation:
+            vi: Số liệu thống kê lúc nào cũng phải đọc kỹ.
+      confusion:
+        vi: "laut Statistik = theo thống kê. Tính từ: statistisch."
+
+  - key: de:item:b2u02-grafik
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Grafik, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: biểu đồ, hình minh họa
+      examples:
+        - target: Die Grafik zeigt den Umsatz der Firma in den letzten fünf Jahren.
+          translation:
+            vi: Biểu đồ cho thấy doanh thu của công ty trong năm năm gần đây.
+        - target: Auf der Grafik sieht man deutlich einen Anstieg.
+          translation:
+            vi: Trên biểu đồ thấy rõ một sự gia tăng.
+      confusion:
+        vi: "Gần nghĩa: das Diagramm, -e. Cách viết Graphik cũng được chấp nhận nhưng Grafik phổ biến hơn."
+
+  - key: de:item:b2u02-anteil
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Anteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tỉ lệ, phần (trong tổng thể)
+      examples:
+        - target: In unserer Firma liegt der Anteil der Teilzeitkräfte bei 30 Prozent.
+          translation:
+            vi: Ở công ty chúng tôi, tỉ lệ nhân viên bán thời gian là 30 phần trăm.
+        - target: Jeder Partner bekommt einen Anteil am Gewinn.
+          translation:
+            vi: Mỗi đối tác nhận một phần lợi nhuận.
+      confusion:
+        vi: "der Anteil an + Dativ (am Gewinn, am Umsatz); der Anteil + Genitiv (der Anteil der Frauen). liegen bei + số = ở mức."
+
+  - key: de:item:b2u02-durchschnitt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Durchschnitt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mức trung bình
+      examples:
+        - target: Im Durchschnitt arbeiten unsere Mitarbeiter 38 Stunden pro Woche.
+          translation:
+            vi: Trung bình nhân viên của chúng tôi làm 38 giờ mỗi tuần.
+        - target: Sein Einkommen liegt über dem Durchschnitt.
+          translation:
+            vi: Thu nhập của anh ấy trên mức trung bình.
+      confusion:
+        vi: "im Durchschnitt = tính trung bình; über / unter dem Durchschnitt = trên / dưới mức trung bình."
+
+  - key: de:item:b2u02-durchschnittlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: durchschnittlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: trung bình; bình thường
+      examples:
+        - target: Ein Kunde gibt bei uns durchschnittlich 25 Euro pro Einkauf aus.
+          translation:
+            vi: Mỗi lần mua hàng ở chỗ chúng tôi, một khách trung bình chi 25 euro.
+        - target: Das war ein durchschnittliches Jahr für die Branche.
+          translation:
+            vi: Đó là một năm bình thường đối với ngành.
+      confusion:
+        vi: "Dùng như trạng từ (durchschnittlich 25 Euro = trung bình 25 euro) hoặc tính từ có đuôi (ein durchschnittliches Jahr)."
+
+  - key: de:item:b2u02-sinken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sinken, sank, ist gesunken
+      pos: động từ
+    back:
+      meaning:
+        vi: giảm, hạ xuống; chìm
+      examples:
+        - target: Die Zahl der Arbeitslosen ist leicht gesunken.
+          translation:
+            vi: Số người thất nghiệp đã giảm nhẹ.
+        - target: Im Winter sinken die Temperaturen oft unter null Grad.
+          translation:
+            vi: Vào mùa đông, nhiệt độ thường xuống dưới không độ.
+      confusion:
+        vi: "Perfekt với sein: ist gesunken (không nói hat gesunken). Động từ ngoại động tương ứng: senken (ai hạ cái gì)."
+
+  - key: de:item:b2u02-anstieg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Anstieg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự gia tăng
+      examples:
+        - target: Die Grafik zeigt einen deutlichen Anstieg der Mieten.
+          translation:
+            vi: Biểu đồ cho thấy tiền thuê nhà tăng rõ rệt.
+        - target: Wir rechnen mit einem Anstieg um fünf Prozent.
+          translation:
+            vi: Chúng tôi dự tính sẽ tăng năm phần trăm.
+      confusion:
+        vi: "der Anstieg um (mức tăng) / auf (giá trị mới); der Anstieg + Genitiv (der Anstieg der Preise). Động từ: steigen, ansteigen."
+
+  - key: de:item:b2u02-rueckgang
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Rückgang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự giảm sút, sụt giảm
+      examples:
+        - target: Bei den Verkaufszahlen gab es einen Rückgang um zehn Prozent.
+          translation:
+            vi: Số lượng bán ra đã giảm mười phần trăm.
+        - target: Der Rückgang der Nachfrage macht der Branche Sorgen.
+          translation:
+            vi: Việc nhu cầu sụt giảm khiến cả ngành lo lắng.
+      confusion:
+        vi: "Động từ: zurückgehen (ging zurück, ist zurückgegangen). Số nhiều: die Rückgänge."
+
+  - key: de:item:b2u02-sich-verdoppeln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich verdoppeln
+      pos: động từ
+    back:
+      meaning:
+        vi: tăng gấp đôi
+      examples:
+        - target: Der Umsatz hat sich innerhalb von fünf Jahren verdoppelt.
+          translation:
+            vi: Doanh thu đã tăng gấp đôi trong vòng năm năm.
+        - target: Die Zahl der Online-Kunden hat sich fast verdoppelt.
+          translation:
+            vi: Số khách hàng trực tuyến đã tăng gần gấp đôi.
+      confusion:
+        vi: "Phản thân, Perfekt với haben: hat sich verdoppelt. Tương tự: sich verdreifachen (gấp ba), sich halbieren (giảm một nửa)."
+
+  # --- Từ bổ sung bài 4 (Zusatzwortschatz, trường thống kê) ---
+  - key: de:item:b2u02-prozentpunkt
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Prozentpunkt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm phần trăm
+      examples:
+        - target: Die Quote ist von sechs auf fünf Prozent gesunken, also um einen Prozentpunkt.
+          translation:
+            vi: Tỉ lệ đã giảm từ sáu xuống năm phần trăm, tức là giảm một điểm phần trăm.
+        - target: Der Anteil ist um zwei Prozentpunkte gestiegen.
+          translation:
+            vi: Tỉ lệ đã tăng hai điểm phần trăm.
+      confusion:
+        vi: "Từ 10 lên 12 Prozent là tăng 2 Prozentpunkte, nhưng tính theo tỉ lệ thì là tăng 20 Prozent. Nói \"um 2 Prozent\" ở đây là sai về nội dung."
+
+  - key: de:item:b2u02-wert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Wert, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá trị; trị số
+      examples:
+        - target: Im Jahr 2024 lag der Wert bei 15 Prozent.
+          translation:
+            vi: Năm 2024, trị số ở mức 15 phần trăm.
+        - target: Die Wohnung hat in den letzten Jahren stark an Wert gewonnen.
+          translation:
+            vi: Căn hộ đã tăng giá trị mạnh trong mấy năm qua.
+      confusion:
+        vi: "an Wert gewinnen / verlieren = tăng / mất giá trị. Tính từ wert: Das ist 100 Euro wert (đáng giá 100 euro)."
+
+  - key: de:item:b2u02-haelfte
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hälfte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: một nửa
+      examples:
+        - target: In unserer Umfrage kauft fast die Hälfte der Befragten regelmäßig online ein.
+          translation:
+            vi: Trong khảo sát của chúng tôi, gần một nửa số người được hỏi thường xuyên mua sắm trực tuyến.
+        - target: Die Hälfte des Gewinns geht an die Mitarbeiter.
+          translation:
+            vi: Một nửa lợi nhuận được chia cho nhân viên.
+      confusion:
+        vi: "die Hälfte + Genitiv (die Hälfte der Kunden) hoặc + von. Tính từ halb: eine halbe Stunde."
+
+  - key: de:item:b2u02-drittel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Drittel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: một phần ba
+      examples:
+        - target: Ein Drittel der Mitarbeiter arbeitet im Homeoffice.
+          translation:
+            vi: Một phần ba số nhân viên làm việc tại nhà.
+        - target: Zwei Drittel der Kosten sind Personalkosten.
+          translation:
+            vi: Hai phần ba chi phí là chi phí nhân sự.
+      confusion:
+        vi: "Phân số đuôi -tel là giống trung: das Drittel, das Viertel, das Fünftel; riêng \"một nửa\" là die Hälfte."
+
+  - key: de:item:b2u02-stagnieren
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: stagnieren
+      pos: động từ
+    back:
+      meaning:
+        vi: đình trệ, giậm chân tại chỗ
+      examples:
+        - target: Seit zwei Jahren stagniert der Umsatz.
+          translation:
+            vi: Từ hai năm nay doanh thu giậm chân tại chỗ.
+        - target: Die Löhne stagnieren, aber die Preise steigen.
+          translation:
+            vi: Lương thì đứng yên, còn giá cả thì tăng.
+      confusion:
+        vi: "Partizip II: hat stagniert (không có ge-). Danh từ: die Stagnation."
+
+  - key: de:item:b2u02-schwanken
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: schwanken
+      pos: động từ
+    back:
+      meaning:
+        vi: dao động, lên xuống thất thường
+      examples:
+        - target: Die Preise für Gemüse schwanken stark.
+          translation:
+            vi: Giá rau lên xuống thất thường.
+        - target: Der Umsatz schwankte zwischen zwei und drei Millionen Euro.
+          translation:
+            vi: Doanh thu dao động trong khoảng từ hai đến ba triệu euro.
+      confusion:
+        vi: "schwanken zwischen … und … (dao động giữa … và …). Perfekt: hat geschwankt."
+
+  - key: de:item:b2u02-sich-halbieren
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: sich halbieren
+      pos: động từ
+    back:
+      meaning:
+        vi: giảm (còn) một nửa
+      examples:
+        - target: Der Gewinn hat sich im letzten Jahr halbiert.
+          translation:
+            vi: Năm ngoái lợi nhuận đã giảm còn một nửa.
+        - target: Die Zahl der Briefe hat sich fast halbiert.
+          translation:
+            vi: Số thư từ đã giảm gần một nửa.
+      confusion:
+        vi: "Có sich khi cái gì tự giảm một nửa; không có sich khi ai đó làm giảm: Wir haben die Kosten halbiert. Trái nghĩa: sich verdoppeln."
+
+  - key: de:item:b2u02-zeitraum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Zeitraum, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoảng thời gian, giai đoạn
+      examples:
+        - target: Die Grafik zeigt den Zeitraum von 2015 bis 2025.
+          translation:
+            vi: Biểu đồ thể hiện giai đoạn từ 2015 đến 2025.
+        - target: Im gleichen Zeitraum ist der Gewinn um zehn Prozent gestiegen.
+          translation:
+            vi: Trong cùng giai đoạn đó, lợi nhuận tăng mười phần trăm.
+      confusion:
+        vi: "im Zeitraum von … bis … = trong giai đoạn từ … đến …; im gleichen Zeitraum = cùng giai đoạn."
+
+  - key: de:item:b2u02-hoechststand
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Höchststand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mức cao nhất, đỉnh
+      examples:
+        - target: Im Sommer erreichten die Preise einen Höchststand.
+          translation:
+            vi: Vào mùa hè, giá cả đạt mức cao nhất.
+        - target: Danach ist der Wert vom Höchststand wieder gesunken.
+          translation:
+            vi: Sau đó trị số lại giảm từ mức đỉnh.
+      confusion:
+        vi: "höchst- = cao nhất; trái nghĩa: der Tiefststand (mức thấp nhất). einen Höchststand erreichen = đạt đỉnh."
+
+  - key: de:item:b2u02-tabelle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Tabelle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảng (số liệu)
+      examples:
+        - target: In der Tabelle sehen Sie die Zahlen für das letzte Jahr.
+          translation:
+            vi: Trong bảng, anh/chị thấy các số liệu của năm ngoái.
+        - target: Die Tabelle vergleicht die Mieten in drei Städten.
+          translation:
+            vi: Bảng so sánh giá thuê nhà ở ba thành phố.
+      confusion:
+        vi: "die Tabelle là bảng có hàng và cột; die Grafik, das Diagramm là biểu đồ (cột, đường, tròn)."

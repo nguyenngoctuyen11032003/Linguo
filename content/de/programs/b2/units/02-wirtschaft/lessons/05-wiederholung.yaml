@@ -1,0 +1,401 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u02-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – bài diễn đàn về tiêu dùng (Wiederholung)
+objectives:
+  - vi: Đọc nhiều ý kiến trên diễn đàn về mua sắm trực tuyến và xác định quan điểm của từng người.
+  - vi: Nghe hiểu bản tin kinh tế ngắn có số liệu (kiểu Goethe B2 Hören Teil 3).
+  - vi: Viết bài diễn đàn khoảng 150 từ (kiểu Goethe B2 Schreiben Teil 1) – ý kiến, lý do, ví dụ, ưu nhược, đề xuất – về câu hỏi "Mua sắm online có hại cho cửa hàng nhỏ?".
+estimated_minutes: 26
+skills: [reading, writing, listening]
+prerequisites: [de:lesson:b2u02-statistik]
+items:
+  - item: de:item:b2u02-g-sich-lassen
+    role: reuse
+  - item: de:item:b2u02-g-sein-zu
+    role: reuse
+  - item: de:item:b2u02-g-haben-zu
+    role: reuse
+  - item: de:item:b2u02-g-partizipialattribut-erweitert
+    role: reuse
+  - item: de:item:b2u02-g-relativsatz-partizip-umformung
+    role: reuse
+  - item: de:item:b2u02-g-funktionsverbgefuege
+    role: reuse
+  - item: de:item:b2u02-g-genitiv-praep-formal
+    role: reuse
+  - item: de:item:b2u02-g-grafik-redemittel
+    role: reuse
+  - item: de:item:b2u02-handel
+    role: reuse
+  - item: de:item:b2u02-konkurrenz
+    role: reuse
+  - item: de:item:b2u02-verbraucher
+    role: reuse
+  - item: de:item:b2u02-umsatz
+    role: reuse
+  - item: de:item:b2u02-anteil
+    role: reuse
+  - item: de:item:b2u02-lebenshaltungskosten
+    role: reuse
+  - item: de:item:b2u02-massnahme
+    role: reuse
+  - item: de:item:b2u02-rueckgang
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu được nhiều ý kiến trên một diễn đàn về mua sắm trực tuyến, nghe hiểu một bản tin kinh tế ngắn, và viết được bài diễn đàn khoảng 150 từ nêu ý kiến có lý do, ví dụ và đề xuất."
+  - type: explain
+    text:
+      vi: "Khi đọc ý kiến trên diễn đàn, đừng chỉ tìm từ khóa: hãy tìm câu nêu quan điểm (Ich bin überzeugt, dass … / Das sehe ich anders) và chú ý chỗ có allerdings, jedoch, trotzdem, vì người viết thường nêu mặt trái trước rồi mới kết luận. Đọc đến câu cuối trước khi quyết định."
+  - type: explain
+    text:
+      vi: "Bài diễn đàn B2 khoảng 150 từ cần: ý kiến rõ ràng, lý do, một ví dụ, ưu và nhược điểm, và một đề xuất hay giải pháp. Mỗi ý nên có một câu chuyển: Meiner Meinung nach … · Ein wichtiger Grund dafür ist … · Ein Beispiel: … · Einerseits …, andererseits … · Deshalb schlage ich vor, dass …"
+  - type: explain
+    text:
+      vi: "Để bài viết đạt mức B2, hãy dùng vài cấu trúc của unit: sich lassen (Das lässt sich nicht vermeiden), sein + zu (Das ist kaum zu ändern), cụm phân từ (die stark gestiegenen Mieten), Funktionsverbgefüge (eine Rolle spielen, in Betracht ziehen) và giới từ Genitiv (aufgrund, angesichts)."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, Goethe-Zertifikat B2 có nhiệm vụ viết bài diễn đàn / bày tỏ ý kiến khoảng 150 từ và một phần nghe với bản tin hoặc chương trình phát thanh; cấu trúc, thời lượng và thang điểm có thể thay đổi, nên hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi. Khi nghe bản tin kinh tế, hãy chú ý um / auf (mức thay đổi hay giá trị mới) và từ chỉ nguyên nhân (aufgrund, infolge, wegen). Khi viết, đừng đưa số liệu thật mà bạn không chắc chắn; nói chung chung và thận trọng (viele, immer mehr, vermutlich) thì an toàn hơn."
+  - type: example
+    target: "Schadet der Online-Handel kleinen Geschäften? Meiner Meinung nach ja, aber nicht nur. Ein wichtiger Grund dafür ist der Preis: Große Online-Anbieter können ihre Waren oft günstiger verkaufen, weil sie keine teuren Läden in der Innenstadt brauchen. Angesichts der stark gestiegenen Mieten lässt sich dieser Nachteil für kleine Geschäfte kaum ausgleichen. Ein Beispiel aus meiner Stadt: Die Buchhandlung, in der ich als Kind oft war, musste letztes Jahr schließen."
+    target_lang: de
+    translation:
+      vi: "Thương mại trực tuyến có hại cho các cửa hàng nhỏ không? Theo tôi là có, nhưng không chỉ có thế. Một lý do quan trọng là giá cả: các nhà cung cấp trực tuyến lớn thường bán hàng rẻ hơn, vì họ không cần những cửa hàng đắt đỏ ở trung tâm. Trước tình hình tiền thuê nhà tăng mạnh, các cửa hàng nhỏ khó bù đắp được bất lợi này. Một ví dụ ở thành phố tôi: hiệu sách mà hồi nhỏ tôi hay ghé đã phải đóng cửa năm ngoái."
+    note:
+      vi: "Bài mẫu (phần 1/2, cả bài khoảng 150 từ): ý kiến – lý do – ví dụ. Có dùng angesichts + Genitiv, cụm phân từ (der stark gestiegenen Mieten) và sich lassen."
+  - type: example
+    target: "Einerseits ist Online-Shopping bequem, andererseits verlieren unsere Innenstädte dadurch an Leben. Allerdings haben einige kleine Läden auch Erfolg, weil sie eine persönliche Beratung anbieten, die im Internet nicht zu finden ist. Deshalb schlage ich vor, dass die Städte kleine Geschäfte stärker unterstützen und dass wir als Verbraucher bewusster einkaufen. Wer regelmäßig im Laden um die Ecke kauft, spielt eine wichtige Rolle für die Zukunft der Innenstadt."
+    target_lang: de
+    translation:
+      vi: "Một mặt mua sắm online tiện lợi, mặt khác trung tâm thành phố vì thế mất đi sức sống. Tuy vậy, một số cửa hàng nhỏ vẫn thành công vì họ tư vấn tận tình – điều không tìm thấy trên mạng. Vì vậy tôi đề xuất các thành phố hỗ trợ cửa hàng nhỏ nhiều hơn và người tiêu dùng chúng ta mua sắm có ý thức hơn. Ai thường xuyên mua ở cửa hàng đầu ngõ là đang đóng vai trò quan trọng cho tương lai của trung tâm thành phố."
+    note:
+      vi: "Bài mẫu (phần 2/2): ưu / nhược (Einerseits … andererseits) – mặt trái (Allerdings) – đề xuất (Deshalb schlage ich vor) – kết luận. Có dùng sein + zu (nicht zu finden) và eine Rolle spielen."
+  - type: example
+    target: Aufgrund der hohen Mieten lässt sich ein kleiner Laden in der Innenstadt kaum noch finanzieren.
+    target_lang: de
+    translation:
+      vi: Do tiền thuê cao, một cửa hàng nhỏ ở trung tâm hầu như không thể trang trải nổi nữa.
+    note:
+      vi: "aufgrund + Genitiv số nhiều (der hohen Mieten); lässt sich … finanzieren = có thể được chi trả."
+  - type: example
+    target: Der Anteil des Online-Handels am Umsatz ist in vielen Branchen deutlich gestiegen.
+    target_lang: de
+    translation:
+      vi: Tỉ trọng thương mại trực tuyến trong doanh thu đã tăng rõ rệt ở nhiều ngành.
+    note:
+      vi: "der Anteil an + Dativ (am Umsatz); Perfekt với sein: ist gestiegen. Nói chung chung, không đưa số liệu cụ thể."
+  - type: common_mistake
+    wrong: Meiner Meinung nach der Online-Handel schadet kleinen Geschäften.
+    right: Meiner Meinung nach schadet der Online-Handel kleinen Geschäften.
+    target_lang: de
+    note:
+      vi: "Meiner Meinung nach chiếm vị trí 1, nên động từ schadet đứng ngay sau."
+  - type: common_mistake
+    wrong: Kleine Geschäfte spielen eine wichtige Rolle zu der Innenstadt.
+    right: Kleine Geschäfte spielen eine wichtige Rolle für die Innenstadt.
+    target_lang: de
+    note:
+      vi: "eine Rolle spielen für + Akkusativ (đóng vai trò đối với)."
+  - type: summary
+    points:
+      - vi: "Đọc diễn đàn: tìm câu nêu quan điểm, chú ý allerdings / jedoch / trotzdem, đọc đến câu cuối."
+      - vi: "Bài diễn đàn ~150 từ: ý kiến – lý do – ví dụ – ưu nhược – đề xuất."
+      - vi: "Nghe bản tin: um = mức thay đổi, auf = giá trị mới; aufgrund / infolge = nguyên nhân."
+      - vi: "Dùng cấu trúc unit: sich lassen, sein + zu, cụm phân từ, Funktionsverbgefüge, giới từ Genitiv."
+exercises:
+  # ---------------- recognition: đọc ----------------
+  - key: de:exercise:b2u02l5-mcq-forum-sabine
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-handel
+    prompt:
+      stem: "Forum: Schadet der Online-Handel kleinen Geschäften? — Sabine, 52: Ich besitze seit zwanzig Jahren ein kleines Schuhgeschäft. Früher kamen die Kunden zu mir, heute probieren viele die Schuhe bei mir an und bestellen sie danach im Internet, weil sie dort ein paar Euro sparen. Gegen diese Konkurrenz lässt sich mit ehrlicher Beratung allein kaum etwas ausrichten. Mein Umsatz ist in den letzten Jahren deutlich zurückgegangen. — Meint Sabine, dass der Online-Handel kleinen Geschäften schadet?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn1
+    explanation:
+      vi: "Khách thử giày ở cửa hàng của Sabine rồi đặt mua qua mạng; lässt sich … kaum etwas ausrichten = hầu như không làm gì được; doanh thu của bà giảm rõ (zurückgegangen). Sabine đồng ý rằng thương mại online gây hại."
+    display_answer: Ja
+
+  - key: de:exercise:b2u02l5-mcq-forum-jonas
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-konkurrenz
+    prompt:
+      stem: "Forum: Schadet der Online-Handel kleinen Geschäften? — Jonas, 29: Das sehe ich anders. Viele kleine Läden verkaufen ihre Produkte inzwischen selbst online und erreichen so Kunden im ganzen Land. Ich habe zum Beispiel einen Teeladen aus meiner Heimatstadt entdeckt, der seine Waren auch im Internet anbietet. Wer die Möglichkeiten des Internets in Anspruch nimmt, kann von der Digitalisierung sogar profitieren. — Meint Jonas, dass der Online-Handel kleinen Geschäften schadet?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn2
+    explanation:
+      vi: "Das sehe ich anders = tôi nghĩ khác. Jonas cho rằng cửa hàng nhỏ có thể tự bán online và thậm chí hưởng lợi (profitieren). Anh không đồng ý."
+    display_answer: Nein
+
+  - key: de:exercise:b2u02l5-mcq-forum-mehmet
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-lebenshaltungskosten
+    prompt:
+      stem: "Forum: Schadet der Online-Handel kleinen Geschäften? — Mehmet, 44: Natürlich ist es bequem, abends vom Sofa aus zu bestellen, und angesichts der hohen Lebenshaltungskosten achten viele Familien auf jeden Euro. Das kann ich gut verstehen. Trotzdem bin ich überzeugt, dass unsere Innenstädte ohne kleine Läden langsam sterben. In meiner Straße stehen schon drei Geschäfte leer. — Meint Mehmet, dass der Online-Handel kleinen Geschäften schadet?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn1
+    explanation:
+      vi: "Mehmet nêu mặt tiện lợi trước (Natürlich …, Das kann ich gut verstehen), nhưng sau Trotzdem anh tin rằng trung tâm thành phố sẽ chết dần nếu không có cửa hàng nhỏ. Ý chính nằm sau trotzdem: anh đồng ý."
+    display_answer: Ja
+
+  - key: de:exercise:b2u02l5-mcq-forum-lena
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-verbraucher
+    prompt:
+      stem: "Forum: Schadet der Online-Handel kleinen Geschäften? — Lena, 36: Man macht es sich zu einfach, wenn man alles auf das Internet schiebt. Viele kleine Geschäfte haben vor allem wegen der hohen Mieten Probleme, nicht wegen der Online-Konkurrenz. Außerdem entscheiden am Ende die Verbraucher selbst, wo sie einkaufen. Nicht der Online-Handel ist das Problem, sondern die Politik der Städte. — Meint Lena, dass der Online-Handel kleinen Geschäften schadet?"
+      stem_lang: de
+      options:
+        - { id: jn1, text: "Ja", lang: de }
+        - { id: jn2, text: "Nein", lang: de }
+    answer:
+      correct_option_id: jn2
+    explanation:
+      vi: "Lena cho rằng nguyên nhân chính là tiền thuê nhà cao và chính sách của thành phố: Nicht der Online-Handel ist das Problem = vấn đề không phải là thương mại online. Cô không đồng ý."
+    display_answer: Nein
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b2u02l5-listen-einzelhandel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u02-rueckgang
+    prompt:
+      audio_asset_id: null
+      fallback_text: In der Innenstadt von Neustadt hat der Einzelhandel im vergangenen Jahr einen Rückgang des Umsatzes um sieben Prozent verzeichnet. Als Grund nennen die Händler vor allem die Konkurrenz aus dem Internet und die gestiegenen Mieten.
+      options:
+        - { id: e2a, text: "Doanh thu bán lẻ ở trung tâm Neustadt giảm 7 %; các nhà buôn cho rằng nguyên nhân chủ yếu là cạnh tranh từ Internet và tiền thuê nhà tăng.", lang: vi }
+        - { id: e6b, text: "Doanh thu bán lẻ ở trung tâm Neustadt giảm xuống còn 7 %; nguyên nhân là thiếu khách du lịch.", lang: vi }
+        - { id: e9c, text: "Doanh thu bán lẻ ở trung tâm Neustadt tăng 7 % nhờ Internet.", lang: vi }
+        - { id: e4d, text: "Tiền thuê nhà ở trung tâm Neustadt giảm 7 %, nên các cửa hàng mới mở thêm.", lang: vi }
+    answer:
+      correct_option_id: e2a
+    explanation:
+      vi: "einen Rückgang des Umsatzes um sieben Prozent = doanh thu giảm 7 % (um = mức thay đổi). Als Grund nennen die Händler … = các nhà buôn nêu lý do là cạnh tranh từ Internet và tiền thuê đã tăng. (Neustadt ở đây là ví dụ hư cấu.)"
+    display_answer: Doanh thu bán lẻ ở trung tâm Neustadt giảm 7 %; các nhà buôn cho rằng nguyên nhân chủ yếu là cạnh tranh từ Internet và tiền thuê nhà tăng.
+
+  - key: de:exercise:b2u02l5-listen-massnahmen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u02-massnahme
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die von der Stadt beschlossenen Maßnahmen sollen kleine Geschäfte entlasten. So stellt die Stadt leere Läden für ein Jahr kostenlos zur Verfügung. Anträge sind bis Ende März einzureichen.
+      options:
+        - { id: s3a, text: "Thành phố đã thông qua các biện pháp hỗ trợ cửa hàng nhỏ, ví dụ cho dùng miễn phí cửa hàng trống trong một năm; đơn phải nộp trước cuối tháng Ba.", lang: vi }
+        - { id: s7b, text: "Thành phố đang cân nhắc các biện pháp; cửa hàng nhỏ phải trả tiền thuê cho mặt bằng trống từ tháng Ba.", lang: vi }
+        - { id: s1c, text: "Các cửa hàng nhỏ đã quyết định đóng cửa một năm; thành phố nhận đơn đến cuối tháng Ba.", lang: vi }
+        - { id: s5d, text: "Thành phố đã thông qua các biện pháp, nhưng đơn chỉ có thể nộp sau tháng Ba.", lang: vi }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "Die von der Stadt beschlossenen Maßnahmen = các biện pháp do thành phố thông qua; entlasten = giảm gánh nặng; zur Verfügung stellen = cho sử dụng; Anträge sind bis Ende März einzureichen = đơn phải được nộp chậm nhất cuối tháng Ba."
+    display_answer: Thành phố đã thông qua các biện pháp hỗ trợ cửa hàng nhỏ, ví dụ cho dùng miễn phí cửa hàng trống trong một năm; đơn phải nộp trước cuối tháng Ba.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u02l5-fill-forum-redemittel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-g-funktionsverbgefuege
+    prompt:
+      template: "Meiner {{b1}} nach schadet der Online-Handel kleinen Geschäften. Einerseits ist Online-Shopping bequem, {{b2}} verlieren die Innenstädte an Leben. Kleine Läden spielen eine wichtige {{b3}} für das Leben in der Stadt."
+      blanks:
+        - { id: b1, width_hint: 7 }
+        - { id: b2, width_hint: 12 }
+        - { id: b3, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Meinung]
+        b2: [andererseits]
+        b3: [Rolle]
+    known_wrong:
+      - answer: Meinungen
+        feedback_vi: "Cụm cố định: meiner Meinung nach (số ít, Dativ)."
+        error_tag: collocation
+      - answer: aber
+        feedback_vi: "Einerseits … đi cặp với andererseits; sau đó động từ verlieren đứng ngay sau, nên cần trạng từ andererseits."
+        error_tag: conjunction
+    explanation:
+      vi: "meiner Meinung nach = theo ý kiến của tôi; einerseits … andererseits = một mặt … mặt khác (andererseits chiếm vị trí 1 của vế sau nên verlieren đứng ngay sau); eine Rolle spielen = đóng vai trò."
+    display_answer: "Meiner Meinung nach schadet der Online-Handel kleinen Geschäften. Einerseits ist Online-Shopping bequem, andererseits verlieren die Innenstädte an Leben. Kleine Läden spielen eine wichtige Rolle für das Leben in der Stadt."
+
+  - key: de:exercise:b2u02l5-fill-lassen-zu
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-sich-lassen
+    prompt:
+      template: "Dieser Nachteil {{b1}} (lassen, Präsens) sich kaum ausgleichen. Eine gute Beratung ist im Internet nur schwer {{b2}} (finden). Wegen der stark {{b3}} (steigen, Partizip II) Mieten müssen viele Läden schließen."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [lässt]
+        b2: [zu finden]
+        b3: [gestiegenen]
+    known_wrong:
+      - answer: lasst
+        feedback_vi: "Ngôi 3 số ít: der Nachteil → lässt."
+        error_tag: verb_form
+      - answer: gefunden
+        feedback_vi: "sein + zu + nguyên thể: ist … zu finden (có thể tìm được)."
+        error_tag: zu_infinitive
+      - answer: gestiegene
+        feedback_vi: "wegen der + danh từ số nhiều (Genitiv) → đuôi -en: gestiegenen."
+        error_tag: adj_ending
+    explanation:
+      vi: "Ô 1: sich lassen, chủ ngữ số ít → lässt. Ô 2: sein + zu: schwer zu finden = khó tìm được. Ô 3: Partizip II gestiegen (giá đã tăng) có đuôi -en sau wegen der (Genitiv số nhiều)."
+    display_answer: "Dieser Nachteil lässt sich kaum ausgleichen. Eine gute Beratung ist im Internet nur schwer zu finden. Wegen der stark gestiegenen Mieten müssen viele Läden schließen."
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u02l5-wb-schlage-vor
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-funktionsverbgefuege
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Vì vậy tôi đề xuất rằng thành phố cân nhắc các biện pháp mới.\""
+      tokens:
+        - { id: w-betracht, text: Betracht }
+        - { id: w-dass, text: dass }
+        - { id: w-deshalb, text: Deshalb }
+        - { id: w-schlage, text: schlage }
+        - { id: w-stadt, text: die Stadt }
+        - { id: w-ich, text: ich }
+        - { id: w-massnahmen, text: neue Maßnahmen }
+        - { id: w-in, text: in }
+        - { id: w-vor, text: vor }
+        - { id: w-komma, text: "," }
+        - { id: w-zieht, text: zieht }
+    answer:
+      orders:
+        - [w-deshalb, w-schlage, w-ich, w-vor, w-komma, w-dass, w-stadt, w-massnahmen, w-in, w-betracht, w-zieht]
+    explanation:
+      vi: "Deshalb ở vị trí 1 → schlage ich … vor (động từ tách). Trong câu dass, cụm in Betracht ziehen giữ nguyên và động từ chia zieht (ngôi 3 số ít theo die Stadt) đứng cuối."
+    display_answer: Deshalb schlage ich vor, dass die Stadt neue Maßnahmen in Betracht zieht.
+
+  - key: de:exercise:b2u02l5-wb-aufgrund-mieten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-genitiv-praep-formal
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Do tiền thuê cao, cửa hàng nhỏ hầu như không còn trang trải nổi.\""
+      tokens:
+        - { id: f-finanzieren, text: finanzieren }
+        - { id: f-mieten, text: Mieten }
+        - { id: f-laden, text: der kleine Laden }
+        - { id: f-aufgrund, text: Aufgrund }
+        - { id: f-sich, text: sich }
+        - { id: f-kaum, text: kaum }
+        - { id: f-hohen, text: hohen }
+        - { id: f-laesst, text: lässt }
+        - { id: f-der, text: der }
+    answer:
+      orders:
+        - [f-aufgrund, f-der, f-hohen, f-mieten, f-laesst, f-sich, f-laden, f-kaum, f-finanzieren]
+        - [f-aufgrund, f-der, f-hohen, f-mieten, f-laesst, f-laden, f-sich, f-kaum, f-finanzieren]
+    explanation:
+      vi: "Aufgrund + Genitiv số nhiều (der hohen Mieten) ở vị trí 1, nên lässt đứng ngay sau. sich có thể đứng trước hoặc sau chủ ngữ der kleine Laden; kaum trước nguyên thể finanzieren ở cuối."
+    display_answer: Aufgrund der hohen Mieten lässt sich der kleine Laden kaum finanzieren.
+
+  - key: de:exercise:b2u02l5-tr-anteil-gestiegen
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-anteil
+    prompt:
+      source_text: "Tỉ lệ khách hàng mua trực tuyến đã tăng hai điểm phần trăm. (Perfekt; der Anteil der Online-Kunden)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Anteil der Online-Kunden ist um zwei Prozentpunkte gestiegen.
+        - Der Anteil der Online-Kunden ist um 2 Prozentpunkte gestiegen.
+        - Der Anteil der Onlinekunden ist um zwei Prozentpunkte gestiegen.
+        - Der Anteil der Onlinekunden ist um 2 Prozentpunkte gestiegen.
+    known_wrong:
+      - answer: Der Anteil der Online-Kunden hat um zwei Prozentpunkte gestiegen.
+        feedback_vi: "steigen chia Perfekt với sein: ist gestiegen."
+        error_tag: aux_verb
+      - answer: Der Anteil der Online-Kunden ist um zwei Prozent gestiegen.
+        feedback_vi: "Chênh lệch giữa hai giá trị phần trăm tính bằng Prozentpunkte."
+        error_tag: meaning
+      - answer: Der Anteil der Online-Kunden ist auf zwei Prozentpunkte gestiegen.
+        feedback_vi: "Mức tăng dùng um, không dùng auf."
+        error_tag: preposition
+    explanation:
+      vi: "Mức thay đổi → um; tỉ lệ là phần trăm nên đơn vị là Prozentpunkte; steigen → ist gestiegen."
+    display_answer: Der Anteil der Online-Kunden ist um zwei Prozentpunkte gestiegen.
+
+  - key: de:exercise:b2u02l5-tr-innenstadt
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u02-konkurrenz
+    prompt:
+      source_text: Angesichts der wachsenden Konkurrenz aus dem Internet müssen kleine Geschäfte neue Strategien entwickeln.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước sự cạnh tranh ngày càng tăng từ Internet, các cửa hàng nhỏ phải phát triển những chiến lược mới.
+        - Trước sự cạnh tranh ngày càng lớn từ Internet, các cửa hàng nhỏ phải phát triển những chiến lược mới.
+        - Trước sự cạnh tranh ngày càng tăng từ Internet, các cửa hàng nhỏ phải xây dựng chiến lược mới.
+        - Trước sự cạnh tranh ngày càng lớn từ Internet, các cửa hàng nhỏ phải xây dựng chiến lược mới.
+        - Trước sự cạnh tranh ngày càng tăng từ mạng Internet, các cửa hàng nhỏ phải đưa ra chiến lược mới.
+        - Xét đến sự cạnh tranh ngày càng tăng từ Internet, các cửa hàng nhỏ phải phát triển chiến lược mới.
+        - Do cạnh tranh ngày càng tăng từ Internet, các cửa hàng nhỏ phải phát triển những chiến lược mới.
+        - Trước sự cạnh tranh ngày càng gay gắt từ Internet, các cửa hàng nhỏ phải phát triển những chiến lược mới.
+        - Trước sự cạnh tranh ngày càng tăng từ thương mại trực tuyến, các cửa hàng nhỏ phải phát triển chiến lược mới.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mặc dù cạnh tranh từ Internet ngày càng tăng, các cửa hàng nhỏ không cần chiến lược mới.
+        feedback_vi: "angesichts = trước tình hình, xét đến (không phải \"mặc dù\"); müssen = phải."
+        error_tag: meaning
+    explanation:
+      vi: "angesichts + Genitiv = trước tình hình; der wachsenden Konkurrenz = sự cạnh tranh đang tăng (Partizip I wachsend, đuôi -en ở Genitiv). neue Strategien entwickeln = phát triển chiến lược mới."
+    display_answer: Trước sự cạnh tranh ngày càng tăng từ Internet, các cửa hàng nhỏ phải phát triển những chiến lược mới.

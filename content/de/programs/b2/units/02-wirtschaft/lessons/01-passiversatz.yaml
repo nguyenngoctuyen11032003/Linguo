@@ -1,0 +1,410 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u02-passiversatz
+order_index: 1
+level: b2
+title:
+  vi: Việc này giải quyết được – thay thế bị động (Das lässt sich lösen. Das ist zu klären.)
+objectives:
+  - vi: Diễn đạt khả năng và nghĩa vụ khách quan bằng các cấu trúc thay bị động trong văn bản kinh tế.
+  - vi: Dùng sich lassen + nguyên thể (= có thể được), sein + zu (= phải / có thể được) và haben + zu (= phải).
+  - vi: Đọc và nói về thị trường, cạnh tranh, doanh thu, lợi nhuận và thua lỗ.
+estimated_minutes: 21
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u01-wiederholung]
+items:
+  - item: de:item:b2u02-g-sich-lassen
+  - item: de:item:b2u02-g-sein-zu
+  - item: de:item:b2u02-g-haben-zu
+  - item: de:item:b2u02-wirtschaft
+  - item: de:item:b2u02-wirtschaftlich
+  - item: de:item:b2u02-markt
+  - item: de:item:b2u02-nachfrage
+  - item: de:item:b2u02-wettbewerb
+  - item: de:item:b2u02-konkurrenz
+  - item: de:item:b2u02-umsatz
+  - item: de:item:b2u02-gewinn
+  - item: de:item:b2u02-verlust
+  - item: de:item:b2u02-anbieter
+  - item: de:item:b2u02-hersteller
+  - item: de:item:b2u02-dienstleistung
+  - item: de:item:b2u02-krise
+  - item: de:item:b2u02-aufschwung
+  - item: de:item:b2u02-wachstum
+  - item: de:item:b2u02-erzielen
+  - item: de:item:b2u02-ware
+  - item: de:item:b2u02-konkurrent
+  - item: de:item:b2u02-klaeren
+  - item: de:item:a2u06-g-lassen
+    role: reuse
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praesens
+    role: reuse
+  - item: de:item:a1u07-angebot
+    role: reuse
+  - item: de:item:b1u03-unternehmen
+    role: reuse
+  - item: de:item:b1u03-erledigen
+    role: reuse
+  - item: de:item:b1u03-urlaubsantrag
+    role: reuse
+  - item: de:item:b1u04-g-brauchen-zu
+    role: reuse
+  - item: de:item:b1u05-g-passiv-modal
+    role: reuse
+  - item: de:item:b1u09-g-wortbildung-adjektiv
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hiểu và viết được những câu như \"Das Problem lässt sich lösen\", \"Der Antrag ist bis Freitag einzureichen\" và \"Wir haben noch einige Fragen zu klären\" trong văn bản kinh tế."
+  - type: explain
+    text:
+      vi: "Bạn đã biết bị động với động từ khuyết thiếu: Das Problem kann gelöst werden. Văn viết hay thay câu này bằng sich lassen + nguyên thể: Das Problem lässt sich lösen – giống tiếng Việt \"vấn đề này giải quyết được\". lassen chia theo chủ ngữ (lässt / lassen), sich đứng ngay sau, nguyên thể ở cuối câu."
+  - type: explain
+    text:
+      vi: "sein + zu + nguyên thể cũng thay cho bị động nhưng có hai nghĩa: \"phải được\" (Der Bericht ist bis Freitag abzugeben = muss abgegeben werden) hoặc \"có thể được\" (Das ist leicht zu verstehen = kann leicht verstanden werden). Hạn chót, quy định thường cho nghĩa \"phải\"; leicht, schwer, kaum, nicht thường cho nghĩa \"có thể / không thể\"."
+  - type: explain
+    text:
+      vi: "haben + zu + nguyên thể là câu chủ động, nghĩa như müssen: Wir haben den Bericht bis Freitag abzugeben = Wir müssen den Bericht bis Freitag abgeben. Hãy nhìn chủ ngữ: người phải làm → haben zu; việc phải được làm → sein zu."
+  - type: explain
+    text:
+      vi: "Với động từ tách, zu chen giữa tiền tố và gốc, viết liền: abzugeben, einzureichen. Trong câu phụ, động từ chia đứng sau cùng: …, dass der Bericht bis Freitag abzugeben ist; …, dass sich das Problem lösen lässt. Cẩn thận: \"ist zu\" không phải lúc nào cũng là \"đóng\" – Das Geschäft ist zu (cửa hàng đóng cửa), nhưng Das Problem ist zu lösen (vấn đề phải / có thể giải quyết)."
+  - type: explain
+    text:
+      vi: "Từ vựng thị trường: der Markt, die Nachfrage và das Angebot – ở đây mang nghĩa \"cung\": Angebot und Nachfrage = cung và cầu. der Wettbewerb và die Konkurrenz đều là cạnh tranh; der Umsatz (doanh thu) khác der Gewinn (lợi nhuận) và der Verlust (khoản lỗ)."
+  - type: deep_explain
+    text:
+      vi: "Ba cấu trúc này làm câu ngắn và khách quan, nên gặp nhiều trong báo kinh tế, quy định và thư công việc. sich lassen hầu như chỉ mang nghĩa khả năng; sein + zu mang nghĩa khả năng hoặc nghĩa vụ, nên hãy dựa vào ngữ cảnh: Die Rechnung ist sofort zu bezahlen (phải trả ngay) – Der Fehler ist leicht zu finden (dễ tìm). Muốn nói quá khứ, chỉ cần đổi thì của lassen, sein hoặc haben: Das ließ sich nicht vermeiden; Die Frist war unbedingt einzuhalten; Wir hatten viel zu tun. Phân biệt với lassen ở A2 (Ich lasse mein Auto reparieren = tôi mang xe đi sửa): ở đó chủ ngữ là người nhờ làm và không có sich mang nghĩa \"có thể\". Tính từ đuôi -bar cũng mang nghĩa khả năng này: Das Problem ist lösbar = lässt sich lösen. Phủ định của haben zu thường dùng nicht brauchen zu: Sie brauchen den Antrag nicht persönlich abzugeben (không cần nộp trực tiếp)."
+  - type: example
+    target: Das Problem mit dem Hersteller lässt sich schnell lösen.
+    target_lang: de
+    translation:
+      vi: Vấn đề với nhà sản xuất có thể giải quyết nhanh.
+    note:
+      vi: "= Das Problem kann schnell gelöst werden. lässt chia theo chủ ngữ das Problem (ngôi 3 số ít, đổi nguyên âm a → ä), nguyên thể lösen ở cuối."
+  - type: example
+    target: Die Verluste des Unternehmens lassen sich nicht mehr ausgleichen.
+    target_lang: de
+    translation:
+      vi: Các khoản lỗ của doanh nghiệp không thể bù lại được nữa.
+    note:
+      vi: "Chủ ngữ số nhiều die Verluste → lassen sich. nicht mehr phủ định khả năng: không thể … được nữa. ausgleichen = bù đắp."
+  - type: example
+    target: Der Urlaubsantrag ist spätestens zwei Wochen vorher einzureichen.
+    target_lang: de
+    translation:
+      vi: Đơn xin nghỉ phép phải được nộp chậm nhất hai tuần trước đó.
+    note:
+      vi: "= muss … eingereicht werden. einreichen (nộp đơn) là động từ tách nên zu chen vào giữa: einzureichen. Câu quy định → nghĩa \"phải\"."
+  - type: example
+    target: Der Rückgang des Umsatzes ist kaum zu erklären.
+    target_lang: de
+    translation:
+      vi: Sự sụt giảm doanh thu hầu như không thể giải thích được.
+    note:
+      vi: "kaum + sein zu = khó mà / hầu như không thể (nghĩa khả năng). der Rückgang = sự sụt giảm (sẽ học ở bài 4)."
+  - type: example
+    target: Wir haben das bis morgen zu erledigen, sonst verlieren wir den Kunden.
+    target_lang: de
+    translation:
+      vi: Chúng ta phải xong việc này trước ngày mai, nếu không sẽ mất khách hàng.
+    note:
+      vi: "= Wir müssen das bis morgen erledigen. Chủ ngữ wir là người phải làm → haben zu. Câu nói trong nhóm đồng nghiệp."
+  - type: example
+    target: Auf einem freien Markt bestimmen Angebot und Nachfrage den Preis.
+    target_lang: de
+    translation:
+      vi: Trên thị trường tự do, cung và cầu quyết định giá cả.
+    note:
+      vi: "das Angebot ở đây là \"cung\" (lượng hàng được chào bán), không phải \"hàng khuyến mãi\" như ở A1."
+  - type: example
+    target: Nach der Krise erlebt die Wirtschaft einen Aufschwung, und viele Anbieter erzielen wieder Gewinne.
+    target_lang: de
+    translation:
+      vi: Sau khủng hoảng, nền kinh tế đang phục hồi và nhiều nhà cung cấp lại có lãi.
+    note:
+      vi: "einen Aufschwung erleben = đang phục hồi, khởi sắc; Gewinne erzielen = đạt lợi nhuận. Ngược lại: Verluste machen."
+  - type: common_mistake
+    wrong: Das Problem lässt schnell lösen.
+    right: Das Problem lässt sich schnell lösen.
+    target_lang: de
+    note:
+      vi: "Nghĩa \"có thể được\" cần có sich. Thiếu sich thì câu sai (lassen không có sich là \"để, nhờ\" và cần một người làm)."
+  - type: common_mistake
+    wrong: Der Antrag ist bis Freitag zu einreichen.
+    right: Der Antrag ist bis Freitag einzureichen.
+    target_lang: de
+    note:
+      vi: "Với động từ tách, zu chen giữa tiền tố và gốc và viết liền: ein + zu + reichen."
+  - type: common_mistake
+    wrong: Wir sind den Bericht bis Montag abzugeben.
+    right: Wir haben den Bericht bis Montag abzugeben.
+    target_lang: de
+    note:
+      vi: "Chủ ngữ là người phải làm → haben zu. sein zu chỉ dùng khi chủ ngữ là việc: Der Bericht ist bis Montag abzugeben."
+  - type: summary
+    points:
+      - vi: "sich lassen + nguyên thể = có thể được: Das lässt sich lösen = Das kann gelöst werden."
+      - vi: "sein + zu + nguyên thể = phải được / có thể được (dựa vào ngữ cảnh): Der Antrag ist einzureichen."
+      - vi: "haben + zu + nguyên thể = phải (chủ ngữ là người làm): Wir haben das zu erledigen."
+      - vi: "Động từ tách: einzureichen, abzugeben; trong câu phụ động từ chia đứng cuối."
+      - vi: "ist zu + nguyên thể không phải \"đã đóng\"."
+      - vi: "Từ vựng: der Markt, die Nachfrage, das Angebot (cung), der Wettbewerb, die Konkurrenz, der Umsatz, der Gewinn, der Verlust."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u02l1-mcq-laesst-sich-loesen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u02-g-sich-lassen
+    prompt:
+      stem: "Câu \"Der Konflikt mit dem Hersteller lässt sich lösen.\" nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: l3a, text: "Xung đột với nhà sản xuất có thể giải quyết được.", lang: vi }
+        - { id: l7b, text: "Xung đột với nhà sản xuất phải được giải quyết ngay.", lang: vi }
+        - { id: l1c, text: "Nhà sản xuất để chúng tôi tự giải quyết xung đột.", lang: vi }
+        - { id: l5d, text: "Xung đột với nhà sản xuất đã được giải quyết.", lang: vi }
+    answer:
+      correct_option_id: l3a
+    explanation:
+      vi: "sich lassen + nguyên thể = có thể được: lässt sich lösen = kann gelöst werden. Câu không nói về nghĩa vụ (phải), không nói việc đã xong, và chủ ngữ là der Konflikt chứ không phải nhà sản xuất."
+    display_answer: Xung đột với nhà sản xuất có thể giải quyết được.
+
+  - key: de:exercise:b2u02l1-mcq-rechnung-zu-bezahlen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u02-g-sein-zu
+    prompt:
+      stem: "Đọc thông báo: \"Sehr geehrte Kundin, sehr geehrter Kunde, die Rechnung ist innerhalb von 14 Tagen zu bezahlen. Bei Fragen ist unser Kundenservice von Montag bis Freitag zu erreichen.\" Câu nào đúng với nội dung?"
+      stem_lang: vi
+      options:
+        - { id: r2a, text: "Khách hàng phải thanh toán trong vòng 14 ngày và có thể liên hệ bộ phận chăm sóc khách hàng từ thứ Hai đến thứ Sáu.", lang: vi }
+        - { id: r6b, text: "Hóa đơn đã được thanh toán, bộ phận chăm sóc khách hàng đóng cửa từ thứ Hai đến thứ Sáu.", lang: vi }
+        - { id: r9c, text: "Khách hàng có thể thanh toán sau 14 ngày; bộ phận chăm sóc khách hàng phải gọi lại cho khách.", lang: vi }
+        - { id: r4d, text: "Hóa đơn bị hủy sau 14 ngày; bộ phận chăm sóc khách hàng chỉ làm việc cuối tuần.", lang: vi }
+    answer:
+      correct_option_id: r2a
+    explanation:
+      vi: "ist … zu bezahlen trong một thông báo có hạn chót → nghĩa \"phải được trả\". ist … zu erreichen → nghĩa \"có thể liên lạc được\". \"ist zu\" ở đây không có nghĩa là \"đóng cửa\"."
+    display_answer: Khách hàng phải thanh toán trong vòng 14 ngày và có thể liên hệ bộ phận chăm sóc khách hàng từ thứ Hai đến thứ Sáu.
+
+  - key: de:exercise:b2u02l1-mcq-einzureichen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u02-g-sein-zu
+    prompt:
+      stem: "Chọn dạng đúng (nghĩa: giấy tờ phải được nộp chậm nhất cuối tháng Năm): Die Unterlagen sind bis Ende Mai ___."
+      stem_lang: vi
+      options:
+        - { id: e5a, text: "einzureichen", lang: de }
+        - { id: e1b, text: "zu einreichen", lang: de }
+        - { id: e8c, text: "einreichen zu", lang: de }
+        - { id: e3d, text: "eingereicht", lang: de }
+    answer:
+      correct_option_id: e5a
+    explanation:
+      vi: "sein + zu + nguyên thể; einreichen là động từ tách nên zu chen giữa: einzureichen. \"sind … eingereicht\" là bị động trạng thái (đã được nộp rồi), không mang nghĩa \"phải nộp trước cuối tháng Năm\"."
+    display_answer: einzureichen
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u02l1-fill-laesst-lassen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-g-sich-lassen
+    prompt:
+      template: "Der Verlust {{b1}} (lassen, Präsens) sich leider nicht vermeiden, aber die Kosten {{b2}} (lassen, Präsens) sich deutlich reduzieren."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [lässt]
+        b2: [lassen]
+    known_wrong:
+      - answer: lasst
+        feedback_vi: "Ngôi 3 số ít đổi nguyên âm: er / sie / es lässt (der Verlust → lässt). lasst là ngôi ihr."
+        error_tag: verb_form
+      - answer: lässen
+        feedback_vi: "Không có dạng lässen. Số nhiều (die Kosten) dùng lassen."
+        error_tag: verb_form
+    explanation:
+      vi: "lassen chia theo chủ ngữ: der Verlust (số ít) → lässt; die Kosten (số nhiều) → lassen. sich đứng ngay sau, nguyên thể vermeiden / reduzieren ở cuối."
+    display_answer: "Der Verlust lässt sich leider nicht vermeiden, aber die Kosten lassen sich deutlich reduzieren."
+
+  - key: de:exercise:b2u02l1-fill-abzugeben
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-g-sein-zu
+    prompt:
+      template: "Der Bericht über den Umsatz ist bis Montag {{b1}} (abgeben). Die neuen Regeln für den Wettbewerb sind ab sofort {{b2}} (beachten)."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 11 }
+    answer:
+      blanks:
+        b1: [abzugeben]
+        b2: [zu beachten]
+    known_wrong:
+      - answer: zu abgeben
+        feedback_vi: "abgeben là động từ tách: zu chen giữa tiền tố và gốc → abzugeben."
+        error_tag: zu_infinitive
+      - answer: abgegeben
+        feedback_vi: "Cấu trúc sein + zu cần zu + nguyên thể: abzugeben. ist abgegeben nghĩa là \"đã nộp rồi\"."
+        error_tag: zu_infinitive
+      - answer: beachten
+        feedback_vi: "Cấu trúc sein + zu cần có zu; beachten không tách (be- không tách được) → zu beachten."
+        error_tag: zu_infinitive
+    explanation:
+      vi: "Ô 1: abgeben tách được → abzugeben (viết liền). Ô 2: beachten có tiền tố không tách be- → zu beachten (hai từ). Cả hai câu là quy định nên mang nghĩa \"phải\"."
+    display_answer: "Der Bericht über den Umsatz ist bis Montag abzugeben. Die neuen Regeln für den Wettbewerb sind ab sofort zu beachten."
+
+  - key: de:exercise:b2u02l1-tr-problem-hersteller
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u02-hersteller
+    prompt:
+      source_text: "Vấn đề với nhà sản xuất có thể giải quyết nhanh. (dùng sich lassen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das Problem mit dem Hersteller lässt sich schnell lösen.
+        - Das Problem mit dem Hersteller lässt sich rasch lösen.
+        - Dieses Problem mit dem Hersteller lässt sich schnell lösen.
+        - Das Problem mit dem Hersteller lässt sich schnell klären.
+        - Das Problem mit dem Hersteller lässt sich schnell beheben.
+    known_wrong:
+      - answer: Das Problem mit dem Hersteller lässt schnell lösen.
+        feedback_vi: "Thiếu sich: nghĩa \"có thể được\" là sich lassen – lässt sich … lösen."
+        error_tag: reflexive_missing
+      - answer: Das Problem mit dem Hersteller lässt sich schnell zu lösen.
+        feedback_vi: "Sau lassen dùng nguyên thể không có zu: lässt sich … lösen."
+        error_tag: zu_infinitive
+      - answer: Das Problem mit dem Hersteller lässt sich lösen schnell.
+        feedback_vi: "Nguyên thể đứng cuối câu: lässt sich schnell lösen."
+        error_tag: word_order
+    explanation:
+      vi: "sich lassen + nguyên thể: das Problem (số ít) → lässt sich; schnell nằm giữa, nguyên thể lösen ở cuối. mit dem Hersteller: mit + Dativ."
+    display_answer: Das Problem mit dem Hersteller lässt sich schnell lösen.
+
+  - key: de:exercise:b2u02l1-tr-verluste-umsatz
+    type: translate
+    stage: recall
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u02-verlust
+    prompt:
+      source_text: Die Verluste lassen sich nicht vermeiden, aber der Umsatz ist leicht zu steigern.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Không thể tránh được các khoản lỗ, nhưng doanh thu có thể dễ dàng tăng lên.
+        - Các khoản lỗ không thể tránh được, nhưng doanh thu có thể tăng lên dễ dàng.
+        - Các khoản lỗ không thể tránh khỏi, nhưng doanh thu có thể dễ dàng tăng.
+        - Các khoản lỗ không tránh được, nhưng doanh thu dễ tăng.
+        - Các khoản lỗ không thể tránh được, nhưng có thể dễ dàng tăng doanh thu.
+        - Không tránh được thua lỗ, nhưng doanh thu thì dễ tăng.
+        - Không thể tránh được thua lỗ, nhưng có thể dễ dàng tăng doanh thu.
+        - Những khoản lỗ không thể tránh được, nhưng doanh thu có thể dễ dàng được nâng lên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Các khoản lỗ không thể tránh được, nhưng doanh thu phải tăng lên.
+        feedback_vi: "leicht zu steigern = dễ tăng (nghĩa khả năng, do có leicht), không phải \"phải tăng\"."
+        error_tag: meaning
+    explanation:
+      vi: "lassen sich nicht vermeiden = không thể tránh được (sich lassen = có thể được). ist leicht zu steigern = có thể tăng dễ dàng: leicht cho thấy nghĩa khả năng. der Umsatz = doanh thu, không phải lợi nhuận."
+    display_answer: Không thể tránh được các khoản lỗ, nhưng doanh thu có thể dễ dàng tăng lên.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u02l1-wb-zu-klaeren-haben
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-haben-zu
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Đó là một câu hỏi mà chúng tôi còn phải làm rõ.\""
+      tokens:
+        - { id: k-klaeren, text: klären }
+        - { id: k-frage, text: Frage }
+        - { id: k-wir, text: wir }
+        - { id: k-das, text: Das }
+        - { id: k-haben, text: haben }
+        - { id: k-komma, text: "," }
+        - { id: k-noch, text: noch }
+        - { id: k-eine, text: eine }
+        - { id: k-zu, text: zu }
+        - { id: k-die, text: die }
+        - { id: k-ist, text: ist }
+    answer:
+      orders:
+        - [k-das, k-ist, k-eine, k-frage, k-komma, k-die, k-wir, k-noch, k-zu, k-klaeren, k-haben]
+    explanation:
+      vi: "Câu chính: Das ist eine Frage. Mệnh đề quan hệ: die (tân ngữ, die Frage giống cái) – wir – noch – zu klären – haben. haben + zu = phải; trong mệnh đề quan hệ động từ chia haben đứng cuối, sau zu klären."
+    display_answer: Das ist eine Frage, die wir noch zu klären haben.
+
+  - key: de:exercise:b2u02l1-wb-dass-sich-loesen-laesst
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-sich-lassen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi tin rằng vấn đề này có thể giải quyết nhanh.\""
+      tokens:
+        - { id: d-laesst, text: lässt }
+        - { id: d-problem, text: Problem }
+        - { id: d-ich, text: Ich }
+        - { id: d-schnell, text: schnell }
+        - { id: d-dass, text: dass }
+        - { id: d-glaube, text: glaube }
+        - { id: d-sich, text: sich }
+        - { id: d-komma, text: "," }
+        - { id: d-loesen, text: lösen }
+        - { id: d-das, text: das }
+    answer:
+      orders:
+        - [d-ich, d-glaube, d-komma, d-dass, d-sich, d-das, d-problem, d-schnell, d-loesen, d-laesst]
+        - [d-ich, d-glaube, d-komma, d-dass, d-das, d-problem, d-sich, d-schnell, d-loesen, d-laesst]
+    explanation:
+      vi: "Trong câu dass, động từ chia lässt đứng cuối, sau nguyên thể lösen. sich có thể đứng trước hoặc sau chủ ngữ danh từ das Problem – cả hai thứ tự đều đúng."
+    display_answer: Ich glaube, dass sich das Problem schnell lösen lässt.
+
+  - key: de:exercise:b2u02l1-mcq-urlaubsantraege
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u02-g-sein-zu
+    prompt:
+      stem: "Bạn soạn thông báo nội bộ: mọi đơn xin nghỉ phép PHẢI được nộp chậm nhất ngày 30 tháng 11. Câu nào đúng cả về ngữ pháp lẫn nghĩa?"
+      stem_lang: vi
+      options:
+        - { id: u4a, text: "Urlaubsanträge sind bis zum 30. November einzureichen.", lang: de }
+        - { id: u8b, text: "Urlaubsanträge haben bis zum 30. November einzureichen.", lang: de }
+        - { id: u2c, text: "Urlaubsanträge lassen sich bis zum 30. November einreichen.", lang: de }
+        - { id: u6d, text: "Urlaubsanträge sind bis zum 30. November zu einreichen.", lang: de }
+    answer:
+      correct_option_id: u4a
+    explanation:
+      vi: "Chủ ngữ là việc (Urlaubsanträge) → sein + zu, và hạn chót cho nghĩa \"phải\". haben zu cần chủ ngữ là người. lassen sich … einreichen đúng ngữ pháp nhưng chỉ nghĩa là \"có thể nộp\", không phải \"phải nộp\". zu einreichen sai: phải là einzureichen."
+    display_answer: Urlaubsanträge sind bis zum 30. November einzureichen.
