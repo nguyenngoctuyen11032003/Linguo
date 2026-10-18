@@ -27,8 +27,12 @@ function levelError(lang, level, field) {
   return isLevelOf(lang, level) ? null : `${field} ${q(level)} is not a ${lang} level (${LEVELS[lang].join(', ')})`;
 }
 
-/** Rules for one question that zod cannot express (kind ↔ answer/options/rubric, listening script). */
-function questionErrors(qn) {
+/**
+ * Rules for one question that zod cannot express (kind ↔ answer/options/rubric, listening script).
+ * @param language the form's language (exam_forms.language_code): short_text answers are normalised as the
+ *   grader does for it (de folds ä/ö/ü/ß to ae/oe/ue/ss, so `für` next to `fuer` is a duplicate)
+ */
+function questionErrors(qn, language) {
   const errors = [];
   const p = qn.prompt;
   if (qn.kind === 'mcq') {
@@ -53,9 +57,9 @@ function questionErrors(qn) {
     else {
       const seen = new Map();
       for (const a of qn.answer) {
-        const n = normalizeExamText(a);
+        const n = normalizeExamText(a, language);
         if (n === '') errors.push(`accepted answer ${q(a)} is empty after normalisation`);
-        else if (gradeExamAnswer('short_text', a, qn.answer) !== true) errors.push(`accepted answer ${q(a)} does not grade correct`);
+        else if (gradeExamAnswer('short_text', a, qn.answer, language) !== true) errors.push(`accepted answer ${q(a)} does not grade correct`);
         if (seen.has(n)) errors.push(`accepted answers ${q(seen.get(n))} and ${q(a)} are the same after normalisation`);
         else seen.set(n, a);
       }
@@ -168,7 +172,7 @@ export function examErrors(files, { sourceKeys = new Set() } = {}) {
       else if (owner.section !== qn.section || owner.kind !== qn.kind) {
         err(f.file, `${at}: question_type ${qn.question_type} is ${owner.section}/${owner.kind} elsewhere in ${form.family} (one section and kind per type)`);
       }
-      for (const e of questionErrors(qn)) err(f.file, `${at}: ${e}`);
+      for (const e of questionErrors(qn, d.language)) err(f.file, `${at}: ${e}`);
     }
   }
 

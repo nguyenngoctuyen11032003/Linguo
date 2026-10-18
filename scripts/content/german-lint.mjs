@@ -17,7 +17,8 @@
 //   W homograph      same lemma with different articles (der/die Leiter): check it is intended
 //   W article        `der|die|das|ein… <Noun>` where the lexicon says the article cannot fit the noun in any case
 //   E known-wrong    known_wrong folds (ä=ae, ö=oe, ü=ue, ß=ss) to a correct answer: the grader marks it correct
-//   E exam-fold      exam short_text answers with ä/ö/ü/ß lacking their digraph variant (exam text is not folded)
+//   E exam-fold      two exam short_text answers that fold to the same text (für / fuer): redundant, the exam
+//                    grader folds ä/ö/ü/ß for de forms (answers are linted like exercises: `fuer` is a spelling error)
 //   W option-fold    two mcq options that fold to the same text (Masse / Maße)
 //   W rubric         rubric.typo_tolerance is ignored for de
 import { existsSync, readdirSync, readFileSync, realpathSync, statSync, writeFileSync } from 'node:fs';
@@ -202,11 +203,6 @@ function sentencePosition(clean, index) {
   return 'mid';
 }
 
-/** Digraph variant of a standard spelling (für → fuer) preserving the capital of the first letter. */
-export function digraphVariant(s) {
-  return s.replaceAll('ä', 'ae').replaceAll('ö', 'oe').replaceAll('ü', 'ue').replaceAll('ß', 'ss').replaceAll('Ä', 'Ae').replaceAll('Ö', 'Oe').replaceAll('Ü', 'Ue');
-}
-
 const foldNorm = (s) => foldDigraphs(s).replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
 
 // ---------------------------------------------------------------------------------------------------------
@@ -310,7 +306,7 @@ function examStrings(doc) {
     out.push(...optionStrings(`${base}.prompt`, p.options, base));
     if (qn.kind === 'short_text' && Array.isArray(qn.answer)) {
       qn.answer.forEach((a, k) => {
-        if (typeof a === 'string') out.push({ path: `${base}.answer[${k}]`, text: a, role: 'text', group: base, examShortText: true });
+        if (typeof a === 'string') out.push({ path: `${base}.answer[${k}]`, text: a, role: 'text', group: base, accepted: true });
       });
     }
     if (typeof qn.sample_answer === 'string') out.push({ path: `${base}.sample_answer`, text: qn.sample_answer, role: 'text' });
@@ -478,7 +474,7 @@ export async function lintGerman({ contentDir, targets = null, label = 'content'
   if (spoken.length) {
     const sp = speller ?? (await createSpeller({ words: readWordlists(contentDir) }));
     for (const s of spoken) {
-      for (const issue of analyse(s, sp, forms, s.examShortText)) report(s.f, issue.severity, s.path, issue.message);
+      for (const issue of analyse(s, sp, forms)) report(s.f, issue.severity, s.path, issue.message);
     }
   }
 
@@ -487,7 +483,7 @@ export async function lintGerman({ contentDir, targets = null, label = 'content'
 }
 
 /** Spelling, capitalisation, sentence start and article rules for one string. */
-function analyse(s, sp, forms, examShortText) {
+function analyse(s, sp, forms) {
   const issues = [];
   let text = s.text.normalize('NFC');
   if (s.stripPlural) {
@@ -508,8 +504,7 @@ function analyse(s, sp, forms, examShortText) {
       if (result) {
         const hint = result.suggestions.length ? ` (${result.kind === 'unknown' ? 'did you mean' : 'use'}: ${result.suggestions.join(', ')})` : '';
         if (result.kind === 'digraph') {
-          // Exam short_text answers are not folded: the digraph variant must be listed next to the standard one.
-          if (!examShortText) issues.push({ severity: 'error', message: `${q(part)} is a digraph spelling; write the standard spelling with ä/ö/ü/ß${hint}. The grader accepts typed ae/oe/ue/ss on its own` });
+          issues.push({ severity: 'error', message: `${q(part)} is a digraph spelling; write the standard spelling with ä/ö/ü/ß${hint}. The grader accepts typed ae/oe/ue/ss on its own` });
         } else if (result.kind === 'capital') {
           issues.push({ severity: 'error', message: `${q(part)} must be capitalised (noun)${hint}` });
         } else {
@@ -591,17 +586,23 @@ function exerciseRules(f, report) {
   });
 }
 
-/** Exam short_text answers are NOT folded by the exam grader: umlaut words need their digraph variant listed. */
+/**
+ * Exam short_text answers ARE folded by the exam grader for de forms (für = fuer): an answer that folds to an
+ * earlier one in the same list is redundant. (Exact duplicates are left to content:check.)
+ */
 function examRules(f, report) {
+  // normalizeExamText without the de fold (packages/shared/src/exam/grading.ts), then the fold.
+  const plain = (s) => s.normalize('NFC').trim().replace(/\s+/g, ' ').replace(/[.?!,;:。、…]+$/u, '').toLowerCase();
   (f.doc.questions ?? []).forEach((qn, i) => {
     if (qn?.kind !== 'short_text' || !Array.isArray(qn.answer)) return;
-    const have = new Set(qn.answer.filter((a) => typeof a === 'string').map((a) => a.normalize('NFC').trim().toLowerCase()));
+    const seen = new Map();
     qn.answer.forEach((a, k) => {
-      if (typeof a !== 'string' || !/[äöüßÄÖÜ]/.test(a)) return;
-      const variant = digraphVariant(a).normalize('NFC').trim().toLowerCase();
-      if (!have.has(variant)) {
-        report(f, 'error', `questions[${i}].answer[${k}]`, `exam short_text answers are not folded: also list ${q(digraphVariant(a))} next to ${q(a)} (or use an mcq question)`);
-      }
+      if (typeof a !== 'string') return;
+      const n = foldDigraphs(plain(a));
+      const first = seen.get(n);
+      if (first !== undefined && plain(first) !== plain(a)) {
+        report(f, 'error', `questions[${i}].answer[${k}]`, `${q(a)} folds (ä=ae, ö=oe, ü=ue, ß=ss) to ${q(first)}: the exam grader folds de answers, so list only the standard spelling`);
+      } else if (first === undefined) seen.set(n, a);
     });
   });
 }

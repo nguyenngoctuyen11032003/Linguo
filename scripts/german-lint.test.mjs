@@ -5,7 +5,7 @@ import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, write
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildLexicon, digraphVariant, formatIssue, lintGerman, main, parseNoun, pluralForm, readWordlists, tokenize, writeLexicon } from './content/german-lint.mjs';
+import { buildLexicon, formatIssue, lintGerman, main, parseNoun, pluralForm, readWordlists, tokenize, writeLexicon } from './content/german-lint.mjs';
 import { createSpeller, fixDictionary, foldDigraphs, restoreDigraphs } from './content/german-spell.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -460,17 +460,30 @@ questions:
     explanation: { vi: x }
 ${extra}`;
 
-test('exam short_text: answers with ä/ö/ü/ß need their digraph variants (exam text is not folded)', async (t) => {
-  const content = tree(t, { 'exams/de/a.yaml': EXAM('[für, Straße]') });
-  const r = await lint(content);
-  assert.deepEqual(r.errors.map((e) => e.path), ['questions[0].answer[0]', 'questions[0].answer[1]']);
-  assert.match(r.errors[0].message, /exam short_text answers are not folded: also list "fuer" next to "für"/);
-  assert.match(r.errors[1].message, /also list "Strasse" next to "Straße"/);
+test('exam short_text: standard spellings alone pass (the exam grader folds de answers)', async (t) => {
+  const ok = tree(t, { 'exams/de/a.yaml': EXAM('[für, Straße, "Grüße aus Köln."]') });
+  const r = await lint(ok);
+  assert.deepEqual(messages(r.errors), []);
+  assert.deepEqual(messages(r.warnings), []);
+});
 
-  const ok = tree(t, { 'exams/de/a.yaml': EXAM('[für, fuer, Straße, Strasse]') });
-  assert.deepEqual(messages((await lint(ok)).errors), []);
-  const plain = tree(t, { 'exams/de/a.yaml': EXAM('[Brot]') });
-  assert.deepEqual(messages((await lint(plain)).errors), []);
+test('exam short_text: digraph spellings are spelling errors, like in exercises', async (t) => {
+  const content = tree(t, { 'exams/de/a.yaml': EXAM('[Strasse]') });
+  const r = await lint(content);
+  assert.deepEqual(r.errors.map((e) => e.path), ['questions[0].answer[0]']);
+  assert.match(r.errors[0].message, /"Strasse" is a digraph spelling; write the standard spelling/);
+});
+
+test('exam short_text: an answer that folds to an earlier one is redundant', async (t) => {
+  const content = tree(t, { 'exams/de/a.yaml': EXAM('[für, fuer, Straße, STRASSE., Brot, brot]') });
+  const r = await lint(content);
+  const fold = r.errors.filter((e) => /folds \(ä=ae/.test(e.message));
+  assert.deepEqual(fold.map((e) => e.path), ['questions[0].answer[1]', 'questions[0].answer[3]']);
+  assert.match(fold[0].message, /"fuer" folds \(ä=ae, ö=oe, ü=ue, ß=ss\) to "für": the exam grader folds de answers/);
+  // `brot` next to `Brot` is a case duplicate: left to content:check, not a fold error.
+  assert.ok(!fold.some((e) => e.path === 'questions[0].answer[5]'));
+  // The digraph spellings are spelling errors too.
+  assert.ok(has(r.errors, 'questions[0].answer[1]: "fuer" is a digraph spelling'));
 });
 
 test('exam and diagnostic prompts, passages, scripts and de options are spell-checked; vi text is not', async (t) => {
@@ -589,13 +602,12 @@ test('speller: zu-infinitives and bare imperatives', () => {
   for (const w of ['aufzustehen', 'anzurufen', 'zuzumachen', 'geh', 'lern', 'schließ']) assert.equal(speller.ok(w), true, w);
 });
 
-test('speller helpers: fixDictionary, foldDigraphs, restoreDigraphs, digraphVariant', () => {
+test('speller helpers: fixDictionary, foldDigraphs, restoreDigraphs', () => {
   assert.equal(fixDictionary('4\ngehen/DIVXW\ngehen/Sozm\ntisch/hke\nTisch/E\n'), '2\ngehen/DIVXW\nTisch/E\n');
   assert.equal(foldDigraphs('Straße für Öl Müller'), 'strasse fuer oel mueller');
   assert.ok(restoreDigraphs('Strasse').includes('Straße'));
   assert.ok(restoreDigraphs('fuer').includes('für'));
   assert.deepEqual(restoreDigraphs('Tisch'), []);
-  assert.equal(digraphVariant('Äpfel für Öl'), 'Aepfel fuer Oel');
 });
 
 test('false-positive guard: ordinary A1-B1 German passes without errors or warnings', async (t) => {
