@@ -103,7 +103,7 @@ body:
     target: Abschließend lässt sich sagen, dass die Vorteile überwiegen, solange der Datenschutz beachtet wird.
     target_lang: de
     translation:
-      vi: Tóm lại có thể nói rằng ưu điểm nhiều hơn, miễn là việc bảo vệ dữ liệu được tôn trọng.
+      vi: Tóm lại có thể nói rằng ưu điểm nhiều hơn, miễn là các quy định bảo vệ dữ liệu được tuân thủ.
     note:
       vi: "Abschließend lässt sich sagen là cụm cố định để kết luận. überwiegen = nhiều hơn, chiếm ưu thế."
   - type: common_mistake
@@ -234,7 +234,7 @@ exercises:
         b1: [geht]
         b2: [um]
         b3: [dafür, hierfür]
-        b4: [Abschließend, Zusammenfassend]
+        b4: [Abschließend, Zusammenfassend, Insgesamt]
     known_wrong:
       - answer: über
         feedback_vi: Cụm cố định là es geht um + Akkusativ.
@@ -243,7 +243,7 @@ exercises:
         feedback_vi: "Mẫu câu mở đầu dùng động từ gehen: In meinem Vortrag geht es um …."
         error_tag: verb_form
     explanation:
-      vi: "In meinem Vortrag geht es um + Akk (mở đầu); Ein Beispiel dafür ist … (giới thiệu ví dụ); Abschließend / Zusammenfassend lässt sich sagen, dass … (kết luận)."
+      vi: "In meinem Vortrag geht es um + Akk (mở đầu); Ein Beispiel dafür ist … (giới thiệu ví dụ); Abschließend / Zusammenfassend / Insgesamt lässt sich sagen, dass … (kết luận). Đề không hỏi sự khác nhau giữa dafür/hierfür hay giữa các từ kết luận này, nên đều được chấp nhận."
     display_answer: "In meinem Vortrag geht es um die Digitalisierung in der Schule. Ein Beispiel dafür ist eine Lern-App, die sich an das Niveau der Lernenden anpasst. Abschließend lässt sich sagen, dass digitale Medien den Unterricht ergänzen, aber nicht ersetzen können."
 
   - key: de:exercise:b2u03l4-fill-teile
@@ -253,7 +253,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u03-hauptteil
     prompt:
-      template: "Ein guter Vortrag besteht aus drei Teilen: aus der {{b1}}, dem {{b2}} und dem {{b3}}. Ein {{b4}} (Bild mit Erklärungen) kann den Zuhörern helfen, einen Prozess besser zu verstehen."
+      template: "Ein guter Vortrag besteht aus drei Teilen: aus der {{b1}}, dem {{b2}} und dem {{b3}}. Ein {{b4}} (S…, = Grafik, Diagramm) kann den Zuhörern helfen, einen Prozess besser zu verstehen."
       blanks:
         - { id: b1, width_hint: 10 }
         - { id: b2, width_hint: 9 }
@@ -270,7 +270,7 @@ exercises:
         feedback_vi: "dem Hauptteil: Dativ số ít, không có đuôi -e."
         error_tag: plural_form
     explanation:
-      vi: "Ba phần: die Einleitung (mở đầu, giống cái → der), der Hauptteil (phần chính → dem), das Fazit hoặc der Schluss (kết luận → dem). Ein Schaubild (giống trung, ein không đuôi) là hình minh họa có chú thích."
+      vi: "Ba phần: die Einleitung (mở đầu, giống cái → der), der Hauptteil (phần chính → dem), das Fazit hoặc der Schluss (kết luận → dem). Ein Schaubild (giống trung, ein không đuôi) là sơ đồ, hình minh họa hay biểu đồ. Einleitung/Einführung và Fazit/Schluss đều đúng vì đề không hỏi sự khác nhau giữa chúng."
     display_answer: "Ein guter Vortrag besteht aus drei Teilen: aus der Einleitung, dem Hauptteil und dem Fazit. Ein Schaubild kann den Zuhörern helfen, einen Prozess besser zu verstehen."
 
   - key: de:exercise:b2u03l4-tr-zunaechst
@@ -293,6 +293,8 @@ exercises:
         - Ich möchte zuerst die Situation in Vietnam darstellen.
         - Ich möchte zunächst die Lage in Vietnam darstellen.
         - Ich möchte zuerst die Lage in Vietnam darstellen.
+        - Als Erstes möchte ich die Situation in Vietnam darstellen.
+        - Als Erstes möchte ich die Lage in Vietnam darstellen.
     known_wrong:
       - answer: Zunächst ich möchte die Situation in Vietnam darstellen.
         feedback_vi: Sau Zunächst động từ đứng ngay vị trí 2 – Zunächst möchte ich …

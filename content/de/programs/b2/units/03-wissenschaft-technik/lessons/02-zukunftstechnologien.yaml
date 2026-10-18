@@ -55,7 +55,7 @@ body:
       vi: "Sau bài này, bạn nói được về công nghệ tương lai và phỏng đoán có chừng mực, ví dụ: \"Bis 2040 wird man vielleicht viele einfache Arbeiten automatisiert haben. Das dürfte aber nicht alle Berufe betreffen.\""
   - type: explain
     text:
-      vi: "Futur I (B1U06) nói việc sẽ xảy ra: Man wird neue Roboter entwickeln. Futur II nói việc sẽ đã xong trước một mốc tương lai: Bis 2040 wird man neue Roboter entwickelt haben. Cấu tạo: werden ở vị trí 2, cuối câu là Partizip II + haben/sein – chọn haben hay sein như ở Perfekt."
+      vi: "Futur I (B1U06) nói việc sẽ xảy ra: Man wird neue Roboter entwickeln. Futur II nói việc sẽ hoàn tất trước một mốc tương lai: Bis 2040 wird man neue Roboter entwickelt haben. Cấu tạo: werden ở vị trí 2, cuối câu là Partizip II + haben/sein – chọn haben hay sein như ở Perfekt."
   - type: explain
     text:
       vi: "Khi nói hằng ngày, Futur II thường dùng để đoán về việc đã xảy ra, hay kèm wohl: Paul ist nicht da. Er wird wohl den Bus verpasst haben (chắc cậu ấy lỡ xe buýt rồi). Bạn đã gặp cách đoán về hiện tại: Er wird wohl krank sein (B1U06); Futur II là phiên bản quá khứ của nó."
@@ -67,7 +67,7 @@ body:
       vi: "Đoán về quá khứ: modal + Partizip II + haben/sein ở cuối câu: Er muss den Termin vergessen haben. Die Prüfung muss schwer gewesen sein. Đừng hiểu muss ở đây là \"bắt buộc\", hay dürfte là \"được phép\": ngữ cảnh phỏng đoán (có bằng chứng, có dấu hiệu) cho bạn biết nghĩa."
   - type: deep_explain
     text:
-      vi: "dürfte là Konjunktiv II của dürfen (B1U04) nhưng trong phỏng đoán nó không còn nghĩa \"được phép\": Das dürfte stimmen = chắc là đúng. Phủ định của muss (phỏng đoán) là kann nicht (Er kann nicht zu Hause sein), vì muss nicht nghĩa là \"không cần/không nhất thiết\". Khi dự báo tương lai, người viết cẩn thận thường làm mềm câu bằng vielleicht, wahrscheinlich, dürfte: Bis 2050 dürfte sich vieles verändert haben. Trong câu phụ, werden của Futur II đứng cuối cùng: …, dass man bis dahin vieles automatisiert haben wird."
+      vi: "dürfte là Konjunktiv II của dürfen (B1U04) nhưng trong phỏng đoán nó không còn nghĩa \"được phép\": Das dürfte stimmen = chắc là đúng. Phủ định của muss (phỏng đoán) là kann nicht (Er kann nicht zu Hause sein), vì muss nicht nghĩa là \"không cần/không nhất thiết\". Khi nói hằng ngày về việc sẽ xong, người Đức thường dùng Perfekt + mốc thời gian thay cho Futur II: Bis Freitag habe ich die Daten ausgewertet. werden + wohl (B1U06) cũng là phỏng đoán khá chắc, gần mức dürfte. Khi dự báo tương lai, người viết cẩn thận thường làm mềm câu bằng vielleicht, wahrscheinlich, dürfte: Bis 2050 dürfte sich vieles verändert haben. Trong câu phụ, werden của Futur II đứng cuối cùng: …, dass man bis dahin vieles automatisiert haben wird."
   - type: example
     target: Bis Ende des Jahres werden die Forscher die Studie abgeschlossen haben.
     target_lang: de
@@ -188,15 +188,15 @@ exercises:
       audio_asset_id: null
       fallback_text: Manche Fachleute glauben, dass Roboter bis zum Jahr 2040 viele einfache Arbeiten übernommen haben werden.
       options:
-        - { id: r1, text: "Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đã đảm nhận nhiều công việc đơn giản.", lang: vi }
+        - { id: r1, text: "Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đảm nhận được nhiều công việc đơn giản rồi.", lang: vi }
         - { id: r2, text: "Một số chuyên gia tin rằng từ năm 2040 rô-bốt mới bắt đầu làm những công việc đơn giản.", lang: vi }
         - { id: r3, text: "Một số chuyên gia tin rằng đến năm 2040 rô-bốt vẫn chưa thể làm những công việc đơn giản.", lang: vi }
         - { id: r4, text: "Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đảm nhận nhiều công việc phức tạp.", lang: vi }
     answer:
       correct_option_id: r1
     explanation:
-      vi: "übernommen haben werden (Futur II trong câu phụ) = sẽ đã đảm nhận xong trước mốc bis zum Jahr 2040. einfache Arbeiten = công việc đơn giản, không phải phức tạp."
-    display_answer: Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đã đảm nhận nhiều công việc đơn giản.
+      vi: "übernommen haben werden (Futur II trong câu phụ) = đến mốc bis zum Jahr 2040 việc đảm nhận đó đã thành sự thật. einfache Arbeiten = công việc đơn giản, không phải phức tạp."
+    display_answer: Một số chuyên gia tin rằng đến năm 2040 rô-bốt sẽ đảm nhận được nhiều công việc đơn giản rồi.
 
   - key: de:exercise:b2u03l2-mcq-futur2-form
     type: mcq
@@ -345,7 +345,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u03-maschine
     prompt:
-      instruction: "Sắp xếp thành câu: \"Nhiều người tin rằng đến năm 2040 máy móc sẽ đã đảm nhận nhiều công việc.\""
+      instruction: "Sắp xếp thành câu: \"Nhiều người tin rằng đến năm 2040 máy móc sẽ đảm nhận được nhiều công việc rồi.\""
       tokens:
         - { id: u-werden, text: werden }
         - { id: u-viele1, text: Viele }

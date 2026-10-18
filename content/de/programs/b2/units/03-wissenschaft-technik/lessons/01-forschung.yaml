@@ -235,7 +235,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u03-g-unpersoenliches-passiv
     prompt:
-      template: "Über das Thema {{b1}} (werden) zurzeit viel {{b2}} (diskutieren). Auch an unserem Institut {{b3}} (werden) im Moment intensiv {{b4}} (forschen)."
+      template: "Über dieses Thema {{b1}} (werden) zurzeit viel {{b2}} (diskutieren). Auch an unserem Institut {{b3}} (werden) im Moment intensiv {{b4}} (forschen)."
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 10 }
@@ -259,7 +259,7 @@ exercises:
         error_tag: participle_form
     explanation:
       vi: "Câu không có chủ ngữ (diskutieren über, forschen không có tân ngữ Akkusativ), nên werden luôn là wird. zurzeit, im Moment chỉ hiện tại. diskutieren → diskutiert (không ge-), forschen → geforscht. Trạng ngữ đứng đầu nên không có es."
-    display_answer: "Über das Thema wird zurzeit viel diskutiert. Auch an unserem Institut wird im Moment intensiv geforscht."
+    display_answer: "Über dieses Thema wird zurzeit viel diskutiert. Auch an unserem Institut wird im Moment intensiv geforscht."
 
   - key: de:exercise:b2u03l1-fill-musste-werden
     type: fill_blank

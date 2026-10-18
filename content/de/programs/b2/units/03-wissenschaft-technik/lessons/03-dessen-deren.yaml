@@ -61,13 +61,13 @@ body:
       vi: "Chọn theo danh từ đứng TRƯỚC dấu phẩy (người sở hữu), không theo danh từ phía sau: der Forscher / das Institut → dessen; die Forscherin / die Forscher (số nhiều) → deren. Vì vậy: die Forscherin, deren Vater …; der Forscher, dessen Mutter …. Đây giống như chọn sein/ihr: sein Buch (của anh ấy) ↔ ihr Buch (của cô ấy)."
   - type: explain
     text:
-      vi: "Danh từ đứng sau dessen/deren không có mạo từ, còn tính từ mang đuôi như khi không có mạo từ (bảng 3, A2U07): dessen neue Theorie (Nom, giống cái), deren erstes Buch (Nom, giống trung), in dessen modernem Labor (Dativ, giống trung). Bản thân dessen/deren không bao giờ đổi đuôi."
+      vi: "Danh từ đứng sau dessen/deren không có mạo từ, còn tính từ mang đuôi như khi không có mạo từ (bảng 3, A2U07): dessen neue Theorie (Nom, giống cái), deren erstes Buch (Nom, giống trung), in dessen modernem Labor (Dativ, giống trung). Bản thân dessen/deren không đổi dạng theo cách hay giống của danh từ đi sau."
   - type: explain
     text:
       vi: "Các tiền tố không tách ent-, ver-, zer-, miss-, er-, be- thường gợi ý nghĩa: zer- = vỡ vụn (zerstören, zerlegen), miss- = sai, hỏng (missverstehen, misslingen), ent- = bỏ đi hoặc bắt đầu (entdecken, entstehen), ver- = làm thay đổi, làm sai (verändern, sich verrechnen), er- = đạt tới kết quả (erfinden, erforschen), be- = tạo tân ngữ Akkusativ (wirken → etwas bewirken). Partizip II của chúng không có ge-: entdeckt, zerstört, missverstanden. Đây chỉ là gợi ý, nhiều động từ không theo quy tắc (verstehen, bekommen)."
   - type: deep_explain
     text:
-      vi: "Cách thì của danh từ sau dessen/deren do vai trò của nó trong mệnh đề quan hệ, còn dessen/deren chỉ do người sở hữu: der Forscher, dessen Theorie ich kenne (Theorie là tân ngữ Akk), der Forscher, mit dessen Team wir arbeiten (Dativ sau mit). Giới từ đứng trước dessen/deren: die Ärztin, in deren Praxis …. Ở B1U08 bạn đã học tiền tố tách/không tách theo trọng âm (übersetzen); các tiền tố của bài này luôn không tách và không mang trọng âm: ent-DE-cken, zer-STÖ-ren. Riêng miss- thường có trọng âm nhẹ (MISS-verstehen) nhưng vẫn không tách khi chia: ich missverstehe."
+      vi: "Cách thì của danh từ sau dessen/deren do vai trò của nó trong mệnh đề quan hệ, còn dessen/deren chỉ do người sở hữu: der Forscher, dessen Theorie ich kenne (Theorie là tân ngữ Akk), der Forscher, mit dessen Team wir arbeiten (Dativ sau mit). Giới từ đứng trước dessen/deren: die Ärztin, in deren Praxis …. Ở B1U08 bạn đã học tiền tố tách/không tách theo trọng âm (übersetzen); các tiền tố của bài này không tách khi chia và thường không mang trọng âm: ent-DE-cken, zer-STÖ-ren. Riêng miss- đôi khi mang trọng âm (MISS-verstehen, nhưng miss-LIN-gen) mà vẫn không tách khi chia: ich missverstehe."
   - type: example
     target: Der Forscher, dessen neue Theorie viel diskutiert wird, hält morgen einen Vortrag.
     target_lang: de
@@ -76,12 +76,12 @@ body:
     note:
       vi: "der Forscher → dessen; neue: đuôi tính từ không mạo từ, Nominativ giống cái."
   - type: example
-    target: Die Physikerin, deren Entdeckung zuerst niemand glauben wollte, ist heute sehr bekannt.
+    target: Die Physikerin, deren Entdeckung zuerst kaum jemand ernst nahm, ist heute sehr bekannt.
     target_lang: de
     translation:
-      vi: Nữ nhà vật lý mà ban đầu không ai muốn tin phát hiện của bà ấy, nay rất nổi tiếng.
+      vi: Nữ nhà vật lý mà lúc đầu hầu như không ai coi trọng phát hiện của bà ấy nay rất nổi tiếng.
     note:
-      vi: "die Physikerin (giống cái) → deren. Entdeckung là tân ngữ của glauben trong mệnh đề quan hệ; động từ chia wollte đứng cuối."
+      vi: "die Physikerin (giống cái) → deren. Entdeckung là tân ngữ Akkusativ của ernst nehmen trong mệnh đề quan hệ; động từ chia nahm đứng cuối."
   - type: example
     target: Das Institut, in dessen modernem Labor wir arbeiten, liegt in Dresden.
     target_lang: de
@@ -237,10 +237,10 @@ exercises:
     known_wrong:
       - answer: dem
         feedback_vi: "Câu cần nghĩa sở hữu (\"mà … của người đó\") – dùng dessen/deren."
-        error_tag: case_dat_akk
+        error_tag: relative_pronoun
       - answer: die
         feedback_vi: "die không diễn tả sở hữu; ở đây cần deren (\"mà … của bà ấy / của họ\")."
-        error_tag: case_dat_akk
+        error_tag: relative_pronoun
     explanation:
       vi: "der Wissenschaftler → dessen; die Biologin (giống cái) → deren; die Studierenden (số nhiều) → deren. Chọn theo danh từ đứng trước, không theo Buch, Labor hay Ergebnisse."
     display_answer: "Das ist der Wissenschaftler, dessen Buch ich gerade lese. Kennst du die Biologin, deren Labor neben unserem liegt? Die Studierenden, deren Ergebnisse am besten waren, bekommen einen Preis."

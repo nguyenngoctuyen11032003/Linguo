@@ -19,7 +19,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Động từ không có tân ngữ Akkusativ (forschen, arbeiten, rauchen, diskutieren über) vẫn dùng được ở bị động để nói \"người ta làm việc đó\", câu không có chủ ngữ và werden luôn ở ngôi thứ ba số ít (wird, wurde). Nếu không có gì khác đứng ở vị trí 1, ta đặt es vào đó: Es wird viel geforscht. Khi trạng ngữ hay thành phần khác đứng ở vị trí 1, và trong câu phụ, es biến mất: Hier wird nicht geraucht; …, dass viel geforscht wird."
+        vi: "Động từ không có tân ngữ Akkusativ (forschen, arbeiten, rauchen, diskutieren über) vẫn dùng được ở bị động để nói \"người ta làm việc đó\", câu không có chủ ngữ và werden luôn ở ngôi thứ ba số ít (wird, wurde). Nếu không có gì khác đứng ở vị trí 1, ta đặt es vào đó: Es wird viel geforscht. Khi trạng ngữ hay thành phần khác đứng ở vị trí 1, và trong câu phụ, es biến mất: Hier wird nicht geraucht; …, dass viel geforscht wird. Động từ đi với Dativ (helfen, danken) cũng tạo bị động không chủ ngữ, Dativ giữ nguyên: Mir wird geholfen. Den Patienten wird geholfen."
       examples:
         - target: In diesem Labor wird auch am Wochenende gearbeitet.
           translation:
@@ -55,7 +55,7 @@ items:
           translation:
             vi: Dữ liệu đã phải được phân tích hai lần.
       confusion:
-        vi: "Đừng bỏ werden: Das musste getestet werden, không phải Das musste getestet. Perfekt dùng haben, không dùng sein: hat … getestet werden müssen, không phải ist … getestet worden. Das hätte getestet werden müssen (lẽ ra phải được kiểm tra) là Konjunktiv II quá khứ, bạn chỉ cần nhận ra; dạng này sẽ học kỹ ở B2U06."
+        vi: "Đừng bỏ werden: Das musste getestet werden, không phải Das musste getestet. Perfekt dùng haben, không dùng sein: hat … getestet werden müssen, không phải ist … getestet werden müssen (còn ist … getestet worden là Perfekt bị động không có modal). Das hätte getestet werden müssen (lẽ ra phải được kiểm tra) là Konjunktiv II quá khứ, bạn chỉ cần nhận ra; dạng này sẽ học kỹ ở B2U06."
 
   - key: de:item:b2u03-forschung
     type: vocab
@@ -392,7 +392,7 @@ items:
           translation:
             vi: Ở lần đo đầu tiên đã xảy ra một lỗi.
       confusion:
-        vi: "Danh từ từ động từ + -ung luôn giống cái: messen → die Messung. Thiết bị đo là das Messgerät, -e."
+        vi: "Danh từ tạo từ động từ + -ung hầu như luôn giống cái (ngoại lệ hiếm như der Sprung): messen → die Messung. Thiết bị đo là das Messgerät, -e."
 
   - key: de:item:b2u03-beobachten
     type: vocab
@@ -513,7 +513,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Modal còn dùng để phỏng đoán, theo mức độ chắc chắn giảm dần: muss (gần như chắc chắn, có căn cứ) > dürfte (khá chắc, \"chắc là\") > kann/könnte (có thể, chưa chắc). kann nicht nghĩa là \"không thể nào\": Das kann nicht stimmen. Phỏng đoán về quá khứ dùng modal + Partizip II + haben/sein: Er muss krank gewesen sein, Sie dürfte den Termin vergessen haben."
+        vi: "Modal còn dùng để phỏng đoán, theo mức độ chắc chắn giảm dần: muss (gần như chắc chắn, có căn cứ) > dürfte (khá chắc, \"chắc là\") > kann/könnte (có thể, chưa chắc); werden + wohl (B1U06) cũng là phỏng đoán khá chắc, gần mức dürfte. kann nicht nghĩa là \"không thể nào\": Das kann nicht stimmen. Phỏng đoán về quá khứ dùng modal + Partizip II + haben/sein: Er muss krank gewesen sein, Sie dürfte den Termin vergessen haben."
       examples:
         - target: Im Labor brennt noch Licht. Frau Berg muss noch da sein.
           translation:
@@ -591,7 +591,7 @@ items:
           translation:
             vi: Rô-bốt này có thể nâng những bộ phận nặng.
       confusion:
-        vi: "Danh từ đuôi -er giống đực, số nhiều không đổi: der Roboter, die Roboter (Dativ số nhiều: mit den Robotern)."
+        vi: "Như nhiều danh từ đuôi -er chỉ người hay máy móc, Roboter giống đực; số nhiều không đổi: der Roboter, die Roboter (Dativ số nhiều: mit den Robotern)."
 
   - key: de:item:b2u03-automatisieren
     type: vocab
@@ -633,7 +633,7 @@ items:
           translation:
             vi: Nhờ số hóa, người ta có thể làm nhiều thủ tục hành chính trực tuyến.
       confusion:
-        vi: "Từ tính từ digital → động từ digitalisieren → danh từ die Digitalisierung (đuôi -ung luôn giống cái)."
+        vi: "Từ tính từ digital → động từ digitalisieren → danh từ die Digitalisierung (danh từ động từ đuôi -ung hầu như luôn giống cái)."
 
   - key: de:item:b2u03-innovation
     type: vocab
@@ -798,9 +798,9 @@ items:
         - target: Niemand kann genau vorhersagen, wie sich die Technik entwickeln wird.
           translation:
             vi: Không ai có thể dự báo chính xác kỹ thuật sẽ phát triển thế nào.
-        - target: Das Wetter für morgen wurde falsch vorhergesagt.
+        - target: Der starke Regen gestern wurde nicht vorhergesagt.
           translation:
-            vi: Thời tiết ngày mai đã bị dự báo sai.
+            vi: Trận mưa lớn hôm qua đã không được dự báo trước.
       confusion:
         vi: "Động từ tách: sagt … vorher, Partizip vorhergesagt. Danh từ: die Vorhersage, -n (die Wettervorhersage = dự báo thời tiết)."
 
@@ -970,7 +970,7 @@ items:
           translation:
             vi: Máy móc có thực sự biết suy nghĩ không?
       confusion:
-        vi: "Trọng âm ở âm tiết giữa: Ma-SCHI-ne. die Waschmaschine = máy giặt; khi nói về máy bay, die Maschine cũng có nghĩa là chiếc máy bay."
+        vi: "Trọng âm ở âm tiết giữa: Ma-SCHI-ne. die Waschmaschine = máy giặt. Trong ngữ cảnh hàng không (tin tức, thông báo ở sân bay), die Maschine còn chỉ chiếc máy bay: Die Maschine aus Frankfurt ist pünktlich gelandet."
 
   # ================= Bài 3: Phát hiện mà… – quan hệ Genitiv, tiền tố mang nghĩa =================
   - key: de:item:b2u03-g-relativ-genitiv
@@ -1507,7 +1507,7 @@ items:
           translation:
             vi: Cuối bài thuyết trình, nữ diễn giả đưa ra một kết luận ngắn.
       confusion:
-        vi: "ein Fazit ziehen = rút ra kết luận (không dùng machen). Số nhiều ít dùng: die Fazits, cũng gặp die Fazite."
+        vi: "ein Fazit ziehen = rút ra kết luận (không dùng machen). Số nhiều rất ít dùng; từ điển Duden ghi cả hai dạng die Fazite và die Fazits."
 
   - key: de:item:b2u03-veranschaulichen
     type: vocab
