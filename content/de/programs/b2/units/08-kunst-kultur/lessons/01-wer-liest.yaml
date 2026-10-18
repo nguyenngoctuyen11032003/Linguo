@@ -1,0 +1,411 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u08-wer-liest
+order_index: 1
+level: b2
+title:
+  vi: Ai đọc nhiều thì … – mệnh đề quan hệ với wer/was (Wer viel liest, (der) weiß viel.)
+objectives:
+  - vi: Đọc hiểu một đoạn review sách ngắn và các câu khái quát kiểu tục ngữ.
+  - vi: Dùng mệnh đề wer/was không có danh từ đứng trước, chọn đúng đại từ chỉ định der/den/dem, das/dem ở câu chính.
+  - vi: Nói về sách và văn học với từ vựng cơ bản (der Roman, die Handlung, die Figur, der Erzähler …).
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u07-wiederholung]
+items:
+  - item: de:item:b2u08-g-relativ-wer-was
+  - item: de:item:b2u08-literatur
+  - item: de:item:b2u08-roman
+  - item: de:item:b2u08-schriftsteller
+  - item: de:item:b2u08-gedicht
+  - item: de:item:b2u08-leser
+  - item: de:item:b2u08-handlung
+  - item: de:item:b2u08-figur
+  - item: de:item:b2u08-erzaehler
+  - item: de:item:b2u08-erzaehlung
+  - item: de:item:b2u08-autor
+  - item: de:item:b2u08-kapitel
+  - item: de:item:b2u08-hauptfigur
+  - item: de:item:b2u08-verlag
+  - item: de:item:b2u08-kurzgeschichte
+  - item: de:item:b2u08-werk
+  - item: de:item:b2u08-dichter
+  - item: de:item:b2u08-sprichwort
+  - item: de:item:b2u08-lesung
+  - item: de:item:b1u04-g-relativ-wo-was
+    role: reuse
+  - item: de:item:b2u01-g-es-korrelat
+    role: reuse
+  - item: de:item:b2u03-g-relativ-genitiv
+    role: reuse
+  - item: de:item:b2u06-g-als-ob
+    role: reuse
+  - item: de:item:b2u06-g-nominalisierte-partizipien
+    role: reuse
+  - item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hiểu và tự nói được những câu khái quát như \"Wer viel liest, weiß viel\" hay \"Wem der Roman gefällt, der sollte auch die Fortsetzung lesen\", và đọc được một đoạn review sách ngắn."
+  - type: explain
+    text:
+      vi: "wer (ai mà …) và was (cái gì mà …) có thể mở một mệnh đề quan hệ không có danh từ đứng trước, giống câu tiếng Việt \"Ai … thì …\": Wer viel liest, weiß viel. Trong mệnh đề wer, động từ chia đứng cuối (liest); mệnh đề làm vị trí 1, nên động từ câu chính (weiß) đứng ngay sau dấu phẩy."
+  - type: explain
+    text:
+      vi: "Câu chính có thể nhắc lại bằng đại từ chỉ định der/den/dem ngay sau dấu phẩy, chia theo vai trò trong câu chính: Wer Hilfe braucht, dem helfen wir (helfen + Dativ). Khi hai vế cùng cách (Nom – Nom), der bỏ được: Wer viel liest, (der) weiß viel. Khi khác cách thì phải giữ: Wem das Buch gefällt, der sollte es lesen."
+  - type: explain
+    text:
+      vi: "Với was cũng vậy: Was mich überrascht hat, war das Ende. Vì Nominativ và Akkusativ của was/das cùng một dạng, das thường bỏ được (Was er schreibt, gefällt mir); nhưng nếu câu chính cần Dativ thì phải có dem: Was er sagt, dem stimme ich zu. Không bao giờ dùng er/sie/es để nhắc lại: Wer viel liest, er weiß viel là sai."
+  - type: explain
+    text:
+      vi: "Từ vựng văn học: der Roman (tiểu thuyết), die Erzählung (truyện vừa), die Kurzgeschichte (truyện ngắn), das Gedicht (bài thơ). Câu chuyện diễn ra ở đâu: Die Handlung spielt in …; nhân vật là die Figur, nhân vật chính die Hauptfigur. Người kể chuyện (der Erzähler) là một vai trong truyện, không nhất thiết là tác giả (der Autor)."
+  - type: deep_explain
+    text:
+      vi: "Nhiều tục ngữ Đức có dạng wer …: Wer A sagt, muss auch B sagen (đã bắt đầu thì phải làm đến cùng); Wer zuletzt lacht, lacht am besten (cười người hôm trước, hôm sau người cười); Wer anderen eine Grube gräbt, fällt selbst hinein (gậy ông đập lưng ông). Câu Wer nicht wagt, der nicht gewinnt giữ trật tự từ cổ (động từ ở cuối) – chỉ dùng nguyên câu, đừng bắt chước khi tự đặt câu. wer luôn đi với động từ ngôi thứ ba số ít, kể cả khi ý chỉ nhiều người: Wer Lust hat, kann mitkommen. Mở đầu bằng der thay cho wer (Der viel liest, …) là lối cũ, ngày nay coi là sai."
+  - type: example
+    target: Wer viel liest, weiß viel.
+    target_lang: de
+    translation:
+      vi: Ai đọc nhiều thì biết nhiều.
+    note:
+      vi: "wer là chủ ngữ (Nom) của liest, và \"người đó\" cũng là chủ ngữ của weiß → cùng cách, nên không cần der. Viết Wer viel liest, der weiß viel cũng đúng, nhấn mạnh hơn."
+  - type: example
+    target: Wer zu spät kommt, den bestraft das Leben.
+    target_lang: de
+    translation:
+      vi: Ai đến muộn thì sẽ bị cuộc đời trừng phạt.
+    note:
+      vi: "Một câu nói rất quen thuộc. wer là Nom, còn trong câu chính \"người đó\" là tân ngữ Akkusativ của bestrafen → phải có den, không bỏ được."
+  - type: example
+    target: Wem der Roman gefällt, der sollte auch die anderen Bücher der Autorin lesen.
+    target_lang: de
+    translation:
+      vi: Ai thích cuốn tiểu thuyết này thì cũng nên đọc các cuốn khác của nữ tác giả.
+    note:
+      vi: "gefallen đi với Dativ → wem; câu chính cần chủ ngữ cho sollte → der. Khác cách nên der bắt buộc."
+  - type: example
+    target: Was mich überrascht hat, war das Ende.
+    target_lang: de
+    translation:
+      vi: Điều làm tôi bất ngờ là cái kết.
+    note:
+      vi: "was là chủ ngữ của überrascht hat, \"điều đó\" cũng là chủ ngữ của war → không cần das. Đây cũng là mẫu câu đánh giá bạn sẽ dùng ở bài 4."
+  - type: example
+    target: Alles, was die Hauptfigur erlebt, erzählt sie ihrer Schwester.
+    target_lang: de
+    translation:
+      vi: Mọi điều nhân vật chính trải qua, cô đều kể cho em gái.
+    note:
+      vi: "Ôn B1: sau alles, nichts, das Beste … dùng was (alles, was …). Khác với bài này, ở đây đã có từ đứng trước là alles."
+  - type: example
+    target: Die Autorin, deren erster Roman ein großer Erfolg war, liest heute in unserer Buchhandlung.
+    target_lang: de
+    translation:
+      vi: Nữ tác giả, người có cuốn tiểu thuyết đầu tay rất thành công, hôm nay đọc sách ở hiệu sách của chúng tôi.
+    note:
+      vi: "Ôn B2U03: deren (của bà ấy) vì danh từ đứng trước là die Autorin; danh từ Roman sau deren không có mạo từ."
+  - type: example
+    target: Ich finde es wichtig, dass Kinder schon früh Gedichte kennenlernen.
+    target_lang: de
+    translation:
+      vi: Tôi thấy việc trẻ em sớm được làm quen với thơ là điều quan trọng.
+    note:
+      vi: "Ôn B2U01: es báo trước câu dass đứng sau (Ich finde es wichtig, dass …)."
+  - type: example
+    target: Der Erzähler beobachtet die Reisenden im Zug und tut so, als ob er schlafen würde.
+    target_lang: de
+    translation:
+      vi: Người kể chuyện quan sát những hành khách trên tàu và làm như thể mình đang ngủ.
+    note:
+      vi: "Ôn B2U06: die Reisenden là Partizip I danh từ hoá (biến đuôi như tính từ); als ob + Konjunktiv II, động từ chia (würde) ở cuối."
+  - type: example
+    target: Am Ende verrät der Erzähler, dass er die ganze Geschichte erfunden hat, was viele Leser überrascht.
+    target_lang: de
+    translation:
+      vi: Cuối truyện, người kể chuyện tiết lộ rằng mình đã bịa ra toàn bộ câu chuyện, điều khiến nhiều độc giả bất ngờ.
+    note:
+      vi: "Ôn B2U07: …, was … bình luận cả câu đứng trước (đứng sau câu chính). Khác với Was …, (das) … của bài này, mệnh đề đứng đầu câu và không trỏ về câu nào."
+  - type: common_mistake
+    wrong: Wer viel liest, er weiß viel.
+    right: Wer viel liest, (der) weiß viel.
+    target_lang: de
+    note:
+      vi: "Không nhắc lại bằng đại từ nhân xưng er. Hoặc bỏ hẳn, hoặc dùng đại từ chỉ định der."
+  - type: common_mistake
+    wrong: Der viel liest, weiß viel.
+    right: Wer viel liest, weiß viel.
+    target_lang: de
+    note:
+      vi: "Mệnh đề chung không có danh từ đứng trước mở đầu bằng wer, không phải der."
+  - type: common_mistake
+    wrong: Wer Hilfe braucht, helfen wir.
+    right: Wer Hilfe braucht, dem helfen wir.
+    target_lang: de
+    note:
+      vi: "wer là Nominativ, nhưng helfen cần Dativ → khác cách, nên phải có dem."
+  - type: summary
+    points:
+      - vi: "Wer/Was + … + động từ cuối, + (đại từ chỉ định) + động từ câu chính: Wer viel liest, (der) weiß viel."
+      - vi: "Đại từ chỉ định chia theo câu chính: der (Nom), den (Akk), dem (Dat); với was: das (Nom/Akk), dem (Dat)."
+      - vi: "Cùng cách → bỏ được; khác cách → phải giữ: Wer zu spät kommt, den bestraft das Leben."
+      - vi: "Không dùng er/sie để nhắc lại; không mở đầu bằng der thay wer."
+      - vi: "Từ vựng: die Literatur, der Roman, der Schriftsteller, das Gedicht, der Leser, die Handlung, die Figur, der Erzähler."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u08l1-mcq-wer-liest
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      stem: "Chọn câu đúng: \"Ai đọc nhiều thì biết nhiều.\""
+      stem_lang: vi
+      options:
+        - { id: w3a, text: "Wer viel liest, weiß viel.", lang: de }
+        - { id: w8b, text: "Wer viel liest, er weiß viel.", lang: de }
+        - { id: w1c, text: "Der viel liest, weiß viel.", lang: de }
+        - { id: w6d, text: "Wer viel liest, weiß er viel.", lang: de }
+    answer:
+      correct_option_id: w3a
+    explanation:
+      vi: "Mệnh đề chung mở đầu bằng wer, động từ liest ở cuối; câu chính tiếp ngay bằng động từ weiß. Không nhắc lại bằng er (er weiß, weiß er), và không dùng der thay cho wer."
+    display_answer: Wer viel liest, weiß viel.
+
+  - key: de:exercise:b2u08l1-mcq-wem-der
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      stem: "Wem der Roman gefällt, ___ sollte auch die anderen Bücher der Autorin lesen."
+      stem_lang: de
+      options:
+        - { id: m2a, text: "der", lang: de }
+        - { id: m5b, text: "dem", lang: de }
+        - { id: m7c, text: "den", lang: de }
+        - { id: m9d, text: "wer", lang: de }
+    answer:
+      correct_option_id: m2a
+    explanation:
+      vi: "Trong câu chính, \"người đó\" là chủ ngữ của sollte → Nominativ der. Vế trước dùng wem (Dativ, vì gefallen + Dativ), hai vế khác cách nên der không bỏ được. dem/den sai cách; wer không đứng ở vị trí này."
+    display_answer: der
+
+  - key: de:exercise:b2u08l1-mcq-lesen-erzaehlerin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-erzaehler
+    prompt:
+      stem: "Wer Familiengeschichten mag, wird diesen Roman lieben. Lena Hartmann erzählt in ihrem dritten Buch von drei Generationen einer Familie aus Leipzig. Erzählerin ist die zwölfjährige Mia, die alles beobachtet, was die Erwachsenen vor ihr verstecken. Die Handlung beginnt langsam, doch ab dem vierten Kapitel kann man das Buch kaum aus der Hand legen. Wem gute Literatur wichtig ist, dem kann ich diesen Roman empfehlen. — Richtig oder falsch? Die Geschichte wird von einem Kind erzählt."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Erzählerin ist die zwölfjährige Mia – người kể chuyện là cô bé Mia mười hai tuổi, tức là một đứa trẻ. Câu này đúng. (Lena Hartmann và cuốn sách là hư cấu.)"
+    display_answer: Richtig
+
+  - key: de:exercise:b2u08l1-mcq-lesen-handlung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-handlung
+    prompt:
+      stem: "Wer Familiengeschichten mag, wird diesen Roman lieben. Lena Hartmann erzählt in ihrem dritten Buch von drei Generationen einer Familie aus Leipzig. Erzählerin ist die zwölfjährige Mia, die alles beobachtet, was die Erwachsenen vor ihr verstecken. Die Handlung beginnt langsam, doch ab dem vierten Kapitel kann man das Buch kaum aus der Hand legen. Wem gute Literatur wichtig ist, dem kann ich diesen Roman empfehlen. — Richtig oder falsch? Die Handlung ist von der ersten Seite an sehr spannend."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Die Handlung beginnt langsam – cốt truyện bắt đầu chậm; chỉ từ chương bốn mới khó rời mắt (kaum aus der Hand legen). Câu này sai."
+    display_answer: Falsch
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u08l1-fill-wem-der
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      template: "{{b1}} das Ende des Romans nicht gefällt, {{b2}} kann ja selbst ein besseres schreiben."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Wem]
+        b2: [der]
+    known_wrong:
+      - answer: Wer
+        feedback_vi: gefallen đi với Dativ (Das Ende gefällt mir) → Wem, không phải Wer.
+        error_tag: case_dat_akk
+      - answer: er
+        feedback_vi: Không nhắc lại bằng đại từ nhân xưng; dùng đại từ chỉ định der.
+        error_tag: relative_pronoun
+      - answer: dem
+        feedback_vi: Trong câu chính, "người đó" là chủ ngữ của kann → Nominativ der.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Ô 1: das Ende là chủ ngữ của gefällt, người thích ở Dativ → Wem. Ô 2: câu chính cần chủ ngữ cho kann → der; hai vế khác cách (Dat – Nom) nên der không bỏ được."
+    display_answer: "Wem das Ende des Romans nicht gefällt, der kann ja selbst ein besseres schreiben."
+
+  - key: de:exercise:b2u08l1-fill-wer-dem
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      template: "{{b1}} viel liest, lernt andere Welten kennen. Aber was manche Kritiker über Bücher schreiben, {{b2}} kann ich nicht immer zustimmen."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [Wer]
+        b2: [dem]
+    known_wrong:
+      - answer: Der
+        feedback_vi: Mệnh đề chung không có danh từ đứng trước mở đầu bằng Wer, không phải Der.
+        error_tag: relative_pronoun
+      - answer: das
+        feedback_vi: zustimmen đi với Dativ (Ich stimme dir zu) → dem; das chỉ dùng khi câu chính cần Nom/Akk.
+        error_tag: case_dat_akk
+      - answer: Wen
+        feedback_vi: Người đọc là chủ ngữ của liest → Nominativ Wer.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Ô 1: người đọc là chủ ngữ của liest → Wer (cùng là chủ ngữ của lernt nên không cần der). Ô 2: was … schreiben là Akkusativ, nhưng zustimmen cần Dativ → dem, bắt buộc vì khác cách."
+    display_answer: "Wer viel liest, lernt andere Welten kennen. Aber was manche Kritiker über Bücher schreiben, dem kann ich nicht immer zustimmen."
+
+  - key: de:exercise:b2u08l1-tr-verpasst-viel
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      source_text: "Ai không đọc sách thì bỏ lỡ nhiều điều. (bỏ lỡ = verpassen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wer keine Bücher liest, verpasst viel.
+        - Wer keine Bücher liest, der verpasst viel.
+        - Wer keine Bücher liest, verpasst vieles.
+        - Wer keine Bücher liest, der verpasst vieles.
+        - Wer nicht liest, verpasst viel.
+        - Wer nicht liest, der verpasst viel.
+        - Wer nicht liest, verpasst vieles.
+        - Wer nicht liest, der verpasst vieles.
+        - Wer keine Bücher liest, verpasst eine Menge.
+        - Wer keine Bücher liest, der verpasst eine Menge.
+    known_wrong:
+      - answer: Wer keine Bücher liest, er verpasst viel.
+        feedback_vi: Không nhắc lại bằng er; bỏ đi hoặc dùng der.
+        error_tag: relative_pronoun
+      - answer: Der keine Bücher liest, verpasst viel.
+        feedback_vi: Mệnh đề chung mở đầu bằng Wer, không phải Der.
+        error_tag: relative_pronoun
+      - answer: Wer keine Bücher liest, verpasst er viel.
+        feedback_vi: Câu chính không thêm er; động từ verpasst đứng ngay sau dấu phẩy.
+        error_tag: word_order
+      - answer: Wer liest keine Bücher, verpasst viel.
+        feedback_vi: Trong mệnh đề wer, động từ chia đứng cuối – Wer keine Bücher liest.
+        error_tag: verb_position
+    explanation:
+      vi: "Cả hai vế đều cần chủ ngữ (Nominativ) nên der có thể bỏ: Wer keine Bücher liest, (der) verpasst viel. Trong mệnh đề wer, liest đứng cuối; động từ câu chính verpasst đứng ngay sau dấu phẩy (hoặc sau der)."
+    display_answer: Wer keine Bücher liest, verpasst viel.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u08l1-wb-wen-literatur
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ai quan tâm đến văn học thì nên đọc cuốn tiểu thuyết này.\""
+      tokens:
+        - { id: l-roman, text: Roman }
+        - { id: l-der, text: der }
+        - { id: l-interessiert, text: interessiert }
+        - { id: l-wen, text: Wen }
+        - { id: l-lesen, text: lesen }
+        - { id: l-komma, text: "," }
+        - { id: l-sollte, text: sollte }
+        - { id: l-literatur, text: Literatur }
+        - { id: l-diesen, text: diesen }
+    answer:
+      orders:
+        - [l-wen, l-literatur, l-interessiert, l-komma, l-der, l-sollte, l-diesen, l-roman, l-lesen]
+    explanation:
+      vi: "interessieren: chủ ngữ là Literatur, người quan tâm ở Akkusativ → Wen, động từ interessiert ở cuối mệnh đề. Câu chính cần chủ ngữ cho sollte → der (khác cách nên bắt buộc), lesen ở cuối."
+    display_answer: Wen Literatur interessiert, der sollte diesen Roman lesen.
+
+  - key: de:exercise:b2u08l1-tr-was-ueberrascht
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      source_text: Was mich an dem Buch überrascht hat, war das Ende.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Điều làm tôi bất ngờ ở cuốn sách là cái kết.
+        - Điều khiến tôi bất ngờ ở cuốn sách là cái kết.
+        - Điều làm tôi ngạc nhiên ở cuốn sách là cái kết.
+        - Điều khiến tôi ngạc nhiên ở cuốn sách là cái kết.
+        - Điều làm tôi bất ngờ ở cuốn sách này là cái kết.
+        - Điều khiến tôi bất ngờ ở cuốn sách này là cái kết.
+        - Điều làm tôi bất ngờ trong cuốn sách là cái kết.
+        - Điều làm tôi bất ngờ ở cuốn sách là phần kết.
+        - Điều làm tôi bất ngờ ở cuốn sách là đoạn kết.
+        - Điều làm tôi ngạc nhiên trong cuốn sách là cái kết.
+        - Cái làm tôi bất ngờ ở cuốn sách là cái kết.
+        - Điều đã làm tôi bất ngờ ở cuốn sách là cái kết.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cuốn sách làm tôi bất ngờ vì cái kết của nó.
+        feedback_vi: Gần nghĩa nhưng câu Đức nhấn mạnh "điều làm tôi bất ngờ … là cái kết" (Was …, war …); hãy giữ cấu trúc đó.
+        error_tag: meaning
+    explanation:
+      vi: "Was mich … überrascht hat = điều làm tôi bất ngờ; an dem Buch = ở cuốn sách; war das Ende = là cái kết. was không có danh từ đứng trước, nên dịch là \"điều mà\"."
+    display_answer: Điều làm tôi bất ngờ ở cuốn sách là cái kết.
+
+  - key: de:exercise:b2u08l1-mcq-dem-helfen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      stem: "Bạn soạn khẩu hiệu cho thư viện: \"Ai cần giúp đỡ thì chúng tôi giúp.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: h4a, text: "Wer Hilfe braucht, dem helfen wir.", lang: de }
+        - { id: h7b, text: "Wer Hilfe braucht, helfen wir.", lang: de }
+        - { id: h2c, text: "Wer Hilfe braucht, den helfen wir.", lang: de }
+        - { id: h9d, text: "Wem Hilfe braucht, dem helfen wir.", lang: de }
+    answer:
+      correct_option_id: h4a
+    explanation:
+      vi: "Người cần giúp là chủ ngữ của braucht → Wer (Nom). helfen đi với Dativ → dem. Hai vế khác cách nên dem không bỏ được; den là Akkusativ, sai với helfen; Wem không thể làm chủ ngữ của braucht."
+    display_answer: Wer Hilfe braucht, dem helfen wir.

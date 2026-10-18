@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u08-redewendungen
+order_index: 2
+level: b2
+title:
+  vi: Thành ngữ và ngữ vực (Tomaten auf den Augen haben)
+objectives:
+  - vi: Hiểu các thành ngữ (Redewendungen) phổ biến và từ khẩu ngữ, phân biệt nghĩa đen và nghĩa bóng.
+  - vi: Chọn ngữ vực phù hợp – khẩu ngữ với bạn bè, trung tính hoặc trang trọng ở nơi làm việc và trong bài viết thi.
+  - vi: Nghe hiểu một lời kể ngắn có thành ngữ và một lời nhắn trang trọng.
+estimated_minutes: 22
+skills: [vocabulary, listening, speaking]
+prerequisites: [de:lesson:b2u08-wer-liest]
+items:
+  - item: de:item:b2u08-g-register
+  - item: de:item:b2u08-tomaten-auf-den-augen-haben
+  - item: de:item:b2u08-ins-fettnaepfchen-treten
+  - item: de:item:b2u08-jemandem-die-daumen-druecken
+  - item: de:item:b2u08-schwein-haben
+  - item: de:item:b2u08-auf-dem-holzweg-sein
+  - item: de:item:b2u08-den-nagel-auf-den-kopf-treffen
+  - item: de:item:b2u08-kriegen
+  - item: de:item:b2u08-kapieren
+  - item: de:item:b2u08-redewendung
+  - item: de:item:b2u08-umgangssprachlich
+  - item: de:item:b2u08-gehoben
+  - item: de:item:b2u08-erhalten
+  - item: de:item:b2u08-die-nase-voll-haben
+  - item: de:item:b2u08-nur-bahnhof-verstehen
+  - item: de:item:b2u08-ein-auge-zudruecken
+  - item: de:item:b2u08-um-den-heissen-brei-herumreden
+  - item: de:item:b2u08-zwei-fliegen-mit-einer-klappe-schlagen
+  - item: de:item:b2u08-auf-die-lange-bank-schieben
+  - item: de:item:b2u08-g-relativ-wer-was
+    role: reuse
+  - item: de:item:b2u04-g-modalpartikeln-2
+    role: reuse
+  - item: de:item:b2u03-g-verbpraefixe-bedeutung
+    role: reuse
+  - item: de:item:b1u10-g-gesprochene-sprache
+    role: reuse
+  - item: de:item:b1u10-woertlich
+    role: reuse
+  - item: de:item:b2u05-nachvollziehen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn hiểu những thành ngữ hay gặp như \"Ich drücke dir die Daumen!\" hay \"Da bist du auf dem Holzweg\", và biết lúc nào nên nói kriegen, lúc nào phải viết erhalten."
+  - type: explain
+    text:
+      vi: "Thành ngữ (die Redewendung) có nghĩa bóng, không đoán được từ nghĩa từng chữ: Schwein haben không liên quan đến con lợn mà là \"gặp may\". Vài thành ngữ có hình ảnh giống tiếng Việt (ein Auge zudrücken ≈ nhắm một mắt mở một mắt), nhưng đa số khác hẳn, nên đừng dịch từng chữ từ tiếng Việt sang."
+  - type: explain
+    text:
+      vi: "Phần cố định của thành ngữ giữ nguyên, chỉ động từ được chia và có thể đứng ở vị trí 2 hoặc cuối câu như bình thường: Ich drücke dir die Daumen. – Ich bin ins Fettnäpfchen getreten. Danh từ trong thành ngữ không đổi số: luôn là Tomaten (số nhiều), die Daumen, zwei Fliegen."
+  - type: explain
+    text:
+      vi: "Ngữ vực (Sprachebene) có bốn mức chính: umgangssprachlich (khẩu ngữ, với bạn bè), neutral (chuẩn), gehoben (trang trọng, văn viết) và Fachsprache (thuật ngữ của một ngành, ví dụ die Inszenierung trong sân khấu). Cùng một ý: kriegen – bekommen – erhalten; kapieren – verstehen; Kohle – Geld – finanzielle Mittel."
+  - type: explain
+    text:
+      vi: "Thành ngữ khẩu ngữ (Tomaten auf den Augen haben, Schwein haben, die Nase voll haben, nur Bahnhof verstehen) chỉ dùng với người thân quen. Các thành ngữ trung tính (den Nagel auf den Kopf treffen, auf dem Holzweg sein, jemandem die Daumen drücken, ein Auge zudrücken) dùng được cả ở nơi làm việc. Trong thư trang trọng và bài viết thi B2, tránh từ và thành ngữ khẩu ngữ."
+  - type: deep_explain
+    text:
+      vi: "Từ điển Đức ghi ngữ vực bằng chữ viết tắt: ugs. (umgangssprachlich), geh. (gehoben), fachspr. (fachsprachlich), salopp (suồng sã hơn ugs.), derb (thô tục). Khi học một thành ngữ mới, hãy tra luôn nhãn này. Ngữ vực không phải là đúng hay sai: kriegen hoàn toàn đúng khi nói chuyện với bạn, nhưng trong thư gửi cơ quan thì làm văn bản kém lịch sự. Ngược lại, từ quá trang trọng như erhalten hay finanzielle Mittel trong tin nhắn cho bạn bè nghe cứng nhắc, thậm chí buồn cười. Một số cặp không đồng nghĩa hoàn toàn: nachvollziehen là hiểu được lý lẽ hay cảm xúc của ai (Ich kann Ihre Entscheidung nachvollziehen), không dùng cho \"hiểu bài\"."
+  - type: example
+    target: Morgen habe ich meine Prüfung. – Ich drücke dir die Daumen!
+    target_lang: de
+    translation:
+      vi: Mai mình thi rồi. – Chúc cậu may mắn nhé!
+    note:
+      vi: "Người được chúc ở Dativ (dir). Câu này thân thiện, dùng được với bạn bè lẫn đồng nghiệp (với người nói Sie: Ich drücke Ihnen die Daumen)."
+  - type: example
+    target: Mit der Frage nach ihrem Alter bin ich ins Fettnäpfchen getreten.
+    target_lang: de
+    translation:
+      vi: Hỏi tuổi bà ấy là tôi đã lỡ lời rồi.
+    note:
+      vi: "Perfekt với sein vì treten là chuyển động. Nghĩa bóng: vô ý làm người khác khó chịu."
+  - type: example
+    target: Wenn du glaubst, dass das so einfach ist, bist du auf dem Holzweg.
+    target_lang: de
+    translation:
+      vi: Nếu cậu nghĩ chuyện đó dễ như vậy thì cậu nhầm to rồi.
+    note:
+      vi: "Câu wenn đứng đầu nên bist ở vị trí 2. auf dem Holzweg sein là thành ngữ trung tính."
+  - type: example
+    target: Wer Redewendungen wörtlich übersetzt, wird leicht missverstanden.
+    target_lang: de
+    translation:
+      vi: Ai dịch thành ngữ từng chữ thì dễ bị hiểu lầm.
+    note:
+      vi: "Ôn bài 1 (Wer …, cùng cách nên không cần der) và B2U03: miss- là tiền tố không tách, nghĩa \"sai\": missverstehen → missverstanden (không có ge-)."
+  - type: example
+    target: "Hast du meine Nachricht gekriegt? – Ja, aber ich hab sie nicht ganz kapiert."
+    target_lang: de
+    translation:
+      vi: Cậu nhận được tin nhắn của tớ chưa? – Rồi, nhưng tớ không hiểu lắm.
+    note:
+      vi: "Khẩu ngữ: kriegen, kapieren và hab thay cho habe (ôn B1U10: ngôn ngữ nói). Chỉ dùng với bạn bè."
+  - type: example
+    target: Wir haben Ihre Nachricht erhalten und melden uns in Kürze bei Ihnen.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đã nhận được tin nhắn của quý vị và sẽ sớm liên hệ lại.
+    note:
+      vi: "Cùng ý \"nhận được\" nhưng ở mức trang trọng (erhalten, in Kürze), dùng trong thư của công ty, cơ quan."
+  - type: example
+    target: Ich kann Ihre Entscheidung gut nachvollziehen.
+    target_lang: de
+    translation:
+      vi: Tôi rất hiểu quyết định của anh/chị.
+    note:
+      vi: "Ôn B2U05: nachvollziehen = hiểu được lý lẽ, cảm xúc của ai – trang trọng hơn verstehen, hợp với cuộc họp hay thư từ. Không dùng nachvollziehen cho \"hiểu bài\"."
+  - type: example
+    target: Sag bloß nicht, dass du schon wieder alles auf die lange Bank geschoben hast!
+    target_lang: de
+    translation:
+      vi: Đừng có nói là cậu lại để đấy mọi việc nữa nhé!
+    note:
+      vi: "Ôn B2U04: bloß trong câu mệnh lệnh mang ý cảnh báo (đừng có mà …). etwas auf die lange Bank schieben = trì hoãn (khẩu ngữ)."
+  - type: common_mistake
+    wrong: Ich drücke dich die Daumen.
+    right: Ich drücke dir die Daumen.
+    target_lang: de
+    note:
+      vi: "Người được chúc ở Dativ: dir, Ihnen, euch."
+  - type: common_mistake
+    wrong: "Sehr geehrte Frau Weber, ich habe Ihre Mail gekriegt."
+    right: "Sehr geehrte Frau Weber, ich habe Ihre E-Mail erhalten."
+    target_lang: de
+    note:
+      vi: "Thư trang trọng không dùng từ khẩu ngữ như kriegen; dùng bekommen hoặc trang trọng hơn là erhalten."
+  - type: common_mistake
+    wrong: Er hat Glück wie ein Schwein.
+    right: Er hat Schwein gehabt.
+    target_lang: de
+    note:
+      vi: "Thành ngữ là cụm cố định, không tự chế từ hình ảnh của nó. Nói gặp may: Schwein haben (khẩu ngữ) hoặc Glück haben."
+  - type: summary
+    points:
+      - vi: "Thành ngữ có nghĩa bóng; học cả cụm, chỉ chia động từ: Ich drücke dir die Daumen / Ich bin ins Fettnäpfchen getreten."
+      - vi: "Khẩu ngữ: Tomaten auf den Augen haben, Schwein haben, die Nase voll haben, nur Bahnhof verstehen, kriegen, kapieren."
+      - vi: "Trung tính: den Nagel auf den Kopf treffen, auf dem Holzweg sein, die Daumen drücken, ein Auge zudrücken, zwei Fliegen mit einer Klappe schlagen."
+      - vi: "Ngữ vực: kriegen – bekommen – erhalten; kapieren – verstehen; Kohle – Geld – finanzielle Mittel."
+      - vi: "Thư trang trọng và bài viết thi: không dùng khẩu ngữ."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u08l2-mcq-daumen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u08-jemandem-die-daumen-druecken
+    prompt:
+      stem: "Lan: Morgen habe ich mein Vorstellungsgespräch. – Tom: Ich drücke dir die Daumen! Tom muốn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: d3a, text: "Chúc Lan may mắn, mong Lan thành công.", lang: vi }
+        - { id: d6b, text: "Tom sẽ giúp Lan chuẩn bị phỏng vấn.", lang: vi }
+        - { id: d1c, text: "Tom thấy lo cho Lan.", lang: vi }
+        - { id: d8d, text: "Tom không tin Lan sẽ thành công.", lang: vi }
+    answer:
+      correct_option_id: d3a
+    explanation:
+      vi: "jemandem die Daumen drücken (nghĩa đen: bấm ngón cái cho ai) nghĩa bóng là cầu chúc may mắn. Đây là thành ngữ thân thiện, dùng được cả với đồng nghiệp."
+    display_answer: Chúc Lan may mắn, mong Lan thành công.
+
+  - key: de:exercise:b2u08l2-listen-fettnaepfchen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-ins-fettnaepfchen-treten
+    prompt:
+      audio_asset_id: null
+      fallback_text: Gestern habe ich meine neue Kollegin gefragt, wann ihr Baby kommt. Leider war sie gar nicht schwanger. Da bin ich echt ins Fettnäpfchen getreten.
+      options:
+        - { id: f2a, text: "Người nói đã lỡ lời: hỏi đồng nghiệp mới khi nào sinh em bé, nhưng cô ấy không hề mang thai.", lang: vi }
+        - { id: f5b, text: "Người nói giẫm phải một hũ mỡ trong bếp ở cơ quan.", lang: vi }
+        - { id: f8c, text: "Đồng nghiệp mới của người nói sắp sinh em bé.", lang: vi }
+        - { id: f4d, text: "Người nói cố tình hỏi để chọc tức đồng nghiệp mới.", lang: vi }
+    answer:
+      correct_option_id: f2a
+    explanation:
+      vi: "Leider war sie gar nicht schwanger = tiếc là cô ấy không hề mang thai. ins Fettnäpfchen treten là vô ý lỡ lời làm người khác ngượng, không phải nghĩa đen giẫm vào hũ mỡ, và cũng không phải cố tình."
+    display_answer: "Người nói đã lỡ lời: hỏi đồng nghiệp mới khi nào sinh em bé, nhưng cô ấy không hề mang thai."
+
+  - key: de:exercise:b2u08l2-listen-schwein
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-schwein-haben
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich hatte heute echt Schwein. Ich war zehn Minuten zu spät am Bahnhof, aber mein Zug hatte Verspätung. So habe ich ihn doch noch erreicht.
+      options:
+        - { id: s3a, text: "Người nói gặp may: đến ga muộn nhưng tàu cũng bị trễ, nên vẫn kịp chuyến.", lang: vi }
+        - { id: s7b, text: "Người nói bị lỡ tàu vì đến ga muộn mười phút.", lang: vi }
+        - { id: s1c, text: "Người nói gặp một con lợn ở nhà ga.", lang: vi }
+        - { id: s6d, text: "Tàu đến đúng giờ nên người nói phải chờ chuyến sau.", lang: vi }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "Schwein haben (khẩu ngữ) = gặp may. zu spät am Bahnhof = đến ga muộn; mein Zug hatte Verspätung = tàu bị trễ; doch noch erreicht = rốt cuộc vẫn kịp."
+    display_answer: "Người nói gặp may: đến ga muộn nhưng tàu cũng bị trễ, nên vẫn kịp chuyến."
+
+  - key: de:exercise:b2u08l2-listen-erhalten
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-g-register
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sehr geehrte Frau Weber, vielen Dank für Ihre Bewerbung. Wir haben Ihre Unterlagen erhalten und melden uns in den nächsten Tagen bei Ihnen.
+      options:
+        - { id: e4a, text: "Lời nhắn trang trọng: công ty đã nhận được hồ sơ và sẽ liên hệ trong vài ngày tới.", lang: vi }
+        - { id: e9b, text: "Lời nhắn thân mật giữa hai người bạn về một buổi hẹn.", lang: vi }
+        - { id: e2c, text: "Lời nhắn trang trọng: hồ sơ còn thiếu giấy tờ, bà Weber cần gửi lại.", lang: vi }
+        - { id: e6d, text: "Công ty thông báo từ chối hồ sơ của bà Weber.", lang: vi }
+    answer:
+      correct_option_id: e4a
+    explanation:
+      vi: "Sehr geehrte Frau …, Ihre và erhalten (thay cho bekommen/kriegen) là dấu hiệu của ngữ vực trang trọng. Unterlagen erhalten = đã nhận hồ sơ; melden uns … bei Ihnen = sẽ liên hệ lại."
+    display_answer: "Lời nhắn trang trọng: công ty đã nhận được hồ sơ và sẽ liên hệ trong vài ngày tới."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u08l2-fill-tomaten-holzweg
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-tomaten-auf-den-augen-haben
+    prompt:
+      template: "Mein Bruder sucht seit zehn Minuten seine Brille, dabei liegt sie direkt vor ihm. Ich frage ihn: Hast du {{b1}} auf den Augen? Außerdem glaubt er, dass ich die Brille versteckt habe. Da ist er aber auf dem {{b2}}."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [Tomaten]
+        b2: [Holzweg]
+    known_wrong:
+      - answer: Tomate
+        feedback_vi: Thành ngữ cố định dùng số nhiều – Tomaten auf den Augen haben.
+        error_tag: plural_form
+    explanation:
+      vi: "Ô 1: không thấy cái kính ở ngay trước mặt → Tomaten auf den Augen haben (khẩu ngữ, hợp khi nói với anh em). Ô 2: anh ấy nghĩ sai (tôi không giấu kính) → auf dem Holzweg sein."
+    display_answer: "Mein Bruder sucht seit zehn Minuten seine Brille, dabei liegt sie direkt vor ihm. Ich frage ihn: Hast du Tomaten auf den Augen? Außerdem glaubt er, dass ich die Brille versteckt habe. Da ist er aber auf dem Holzweg."
+
+  - key: de:exercise:b2u08l2-fill-erhalten-mittel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-register
+    prompt:
+      template: "Sehr geehrter Herr Schmidt, haben Sie meine E-Mail vom 3. Mai {{b1}} (gehoben: e…)? Leider fehlen uns für das Projekt die finanziellen {{b2}} (= Geld)."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [erhalten]
+        b2: [Mittel]
+    known_wrong:
+      - answer: gekriegt
+        feedback_vi: kriegen là khẩu ngữ, không dùng trong thư trang trọng; đề yêu cầu từ trang trọng bắt đầu bằng e- → erhalten.
+        error_tag: register
+      - answer: bekommen
+        feedback_vi: bekommen là từ chuẩn, không sai, nhưng đề yêu cầu từ trang trọng bắt đầu bằng e- → erhalten.
+        error_tag: register
+      - answer: Kohle
+        feedback_vi: Kohle (tiền) là khẩu ngữ, không dùng trong thư; cụm trang trọng là die finanziellen Mittel.
+        error_tag: register
+    explanation:
+      vi: "Thư trang trọng (Sehr geehrter Herr …, Sie) cần từ trang trọng: erhalten (Partizip II trùng nguyên thể, không có ge-) thay cho kriegen/bekommen; die finanziellen Mittel thay cho Kohle/Geld."
+    display_answer: "Sehr geehrter Herr Schmidt, haben Sie meine E-Mail vom 3. Mai erhalten? Leider fehlen uns für das Projekt die finanziellen Mittel."
+
+  - key: de:exercise:b2u08l2-tr-daumen-pruefung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-jemandem-die-daumen-druecken
+    prompt:
+      source_text: "Mình chúc cậu thi tốt nhé! (nói với bạn thân; dùng thành ngữ với die Daumen; kỳ thi = die Prüfung)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich drücke dir die Daumen für die Prüfung!
+        - Ich drücke dir für die Prüfung die Daumen!
+        - Für die Prüfung drücke ich dir die Daumen!
+        - Ich drücke dir die Daumen für deine Prüfung!
+        - Ich drücke dir für deine Prüfung die Daumen!
+        - Für deine Prüfung drücke ich dir die Daumen!
+        - Ich drücke dir bei der Prüfung die Daumen!
+        - Bei der Prüfung drücke ich dir die Daumen!
+        - Ich drücke dir bei deiner Prüfung die Daumen!
+        - Ich drücke dir fest die Daumen für die Prüfung!
+        - Ich drücke dir ganz fest die Daumen für die Prüfung!
+    known_wrong:
+      - answer: Ich drücke dich die Daumen für die Prüfung!
+        feedback_vi: Người được chúc ở Dativ – dir, không phải dich.
+        error_tag: case_dat_akk
+      - answer: Ich drücke deine Daumen für die Prüfung!
+        feedback_vi: Thành ngữ là jemandem die Daumen drücken (bấm ngón cái của mình cho ai), không phải bấm ngón cái của người kia.
+        error_tag: idiom_form
+      - answer: Ich drücke dir den Daumen für die Prüfung!
+        feedback_vi: Thành ngữ dùng số nhiều – die Daumen.
+        error_tag: plural_form
+    explanation:
+      vi: "jemandem die Daumen drücken: người được chúc ở Dativ (dir), die Daumen số nhiều; dịp chúc thêm bằng für hoặc bei: für die Prüfung / bei der Prüfung."
+    display_answer: Ich drücke dir die Daumen für die Prüfung!
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u08l2-mcq-professorin
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-register
+    prompt:
+      stem: "Bạn viết e-mail cho giáo sư hướng dẫn: muốn nói \"Phần thứ hai em vẫn chưa hiểu hết.\" Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: p5a, text: "Den zweiten Teil habe ich leider noch nicht ganz verstanden.", lang: de }
+        - { id: p2b, text: "Den zweiten Teil hab ich echt nicht kapiert.", lang: de }
+        - { id: p8c, text: "Beim zweiten Teil verstehe ich nur Bahnhof.", lang: de }
+        - { id: p3d, text: "Beim zweiten Teil habe ich Tomaten auf den Augen.", lang: de }
+    answer:
+      correct_option_id: p5a
+    explanation:
+      vi: "Thư cho giáo sư cần ngữ vực chuẩn, lịch sự: verstanden, habe (không rút gọn), leider. kapiert, hab, echt và nur Bahnhof verstehen là khẩu ngữ; Tomaten auf den Augen haben còn sai nghĩa (không nhìn thấy, chứ không phải không hiểu)."
+    display_answer: Den zweiten Teil habe ich leider noch nicht ganz verstanden.
+
+  - key: de:exercise:b2u08l2-mcq-nagel
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-den-nagel-auf-den-kopf-treffen
+    prompt:
+      stem: "Im Team wird seit einer Stunde diskutiert, warum das Projekt nicht vorankommt. Dann sagt Lan: Das Problem ist, dass niemand Verantwortung übernimmt. Alle nicken: Genau das ist es! – Was passt?"
+      stem_lang: de
+      options:
+        - { id: n7a, text: "Lan hat den Nagel auf den Kopf getroffen.", lang: de }
+        - { id: n3b, text: "Lan ist ins Fettnäpfchen getreten.", lang: de }
+        - { id: n9c, text: "Lan hat Schwein gehabt.", lang: de }
+        - { id: n1d, text: "Lan hat Tomaten auf den Augen gehabt.", lang: de }
+    answer:
+      correct_option_id: n7a
+    explanation:
+      vi: "Mọi người gật đầu \"Đúng là thế!\" → Lan đã nói trúng vấn đề: den Nagel auf den Kopf treffen (trung tính, hợp với cuộc họp). Lan không lỡ lời, không nhờ may mắn và cũng không bỏ sót điều gì."
+    display_answer: Lan hat den Nagel auf den Kopf getroffen.
+
+  - key: de:exercise:b2u08l2-wb-heisser-brei
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-um-den-heissen-brei-herumreden
+    prompt:
+      instruction: "Sắp xếp thành câu (nói với bạn thân): \"Đừng có vòng vo nữa!\""
+      tokens:
+        - { id: b-brei, text: Brei }
+        - { id: b-nicht, text: nicht }
+        - { id: b-herum, text: herum }
+        - { id: b-rede, text: Rede }
+        - { id: b-den, text: den }
+        - { id: b-doch, text: doch }
+        - { id: b-heissen, text: heißen }
+        - { id: b-um, text: um }
+    answer:
+      orders:
+        - [b-rede, b-doch, b-nicht, b-um, b-den, b-heissen, b-brei, b-herum]
+    explanation:
+      vi: "Câu mệnh lệnh với du: động từ Rede đứng đầu, tiền tố tách herum ở cuối. doch đứng trước nicht và làm lời nhắc mạnh hơn; um den heißen Brei là phần cố định của thành ngữ."
+    display_answer: Rede doch nicht um den heißen Brei herum!

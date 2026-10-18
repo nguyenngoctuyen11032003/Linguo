@@ -1,0 +1,1616 @@
+# Học liệu unit B2U08 "Nghệ thuật, văn hoá và văn học" (Kunst, Kultur und Literatur), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U08L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# Mọi tác phẩm, tác giả, triển lãm nêu trong ví dụ đều là hư cấu.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Ai đọc nhiều thì … – wer/was =================
+  - key: de:item:b2u08-g-relativ-wer-was
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Wer …, (der) …: Wer viel liest, (der) weiß viel. · Wem …, der … · Was …, (das) …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "wer (ai mà …) và was (cái gì mà …) mở một mệnh đề quan hệ chung, không có danh từ đứng trước; mệnh đề này thường đứng đầu câu, động từ chia ở cuối. Ngay sau dấu phẩy, câu chính có thể nhắc lại bằng đại từ chỉ định (der/den/dem sau wer; das/dem sau was) rồi mới đến động từ. Đại từ này bỏ được khi hai vế cùng cách (Wer viel liest, weiß viel); khác cách thì phải giữ (Wem das Buch gefällt, der sollte es kaufen)."
+      examples:
+        - target: Wer viel liest, weiß viel.
+          translation:
+            vi: Ai đọc nhiều thì biết nhiều.
+        - target: Wem der Roman gefällt, der sollte auch die anderen Bücher der Autorin lesen.
+          translation:
+            vi: Ai thích cuốn tiểu thuyết này thì cũng nên đọc các cuốn khác của nữ tác giả.
+        - target: Was mich überrascht hat, war das Ende.
+          translation:
+            vi: Điều làm tôi bất ngờ là cái kết.
+      confusion:
+        vi: "Không dùng đại từ nhân xưng er để nhắc lại (Wer viel liest, er weiß viel là sai) và không mở đầu bằng der thay cho wer (Der viel liest, … là lối cũ, nay coi là sai). Với was, Nominativ và Akkusativ cùng một dạng, nên das thường bỏ được (Was er sagt, stimmt); nhưng khi câu chính cần Dativ hay giới từ thì phải giữ: Was er sagt, dem stimme ich zu."
+
+  - key: de:item:b2u08-literatur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Literatur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn học; tài liệu (tham khảo)
+      examples:
+        - target: Sie studiert deutsche Literatur in Leipzig.
+          translation:
+            vi: Cô ấy học văn học Đức ở Leipzig.
+        - target: Ich lese gern Literatur aus anderen Ländern.
+          translation:
+            vi: Tôi thích đọc văn học của các nước khác.
+      confusion:
+        vi: "Số nhiều die Literaturen hiếm gặp (các nền văn học). Ở đại học, Literatur còn là tài liệu tham khảo: die Literaturliste = danh mục tài liệu."
+
+  - key: de:item:b2u08-roman
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Roman, -e
+      ipa: /roˈmaːn/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiểu thuyết
+      examples:
+        - target: Der Roman hat über 600 Seiten.
+          translation:
+            vi: Cuốn tiểu thuyết dày hơn 600 trang.
+        - target: Sie schreibt gerade an ihrem ersten Roman.
+          translation:
+            vi: Cô ấy đang viết cuốn tiểu thuyết đầu tay.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết sau: ro-MAN, a đọc dài."
+      confusion:
+        vi: "Roman là mọi tiểu thuyết dài, không chỉ truyện tình cảm (Kriminalroman, historischer Roman). Truyện ngắn: die Kurzgeschichte; truyện vừa: die Erzählung."
+
+  - key: de:item:b2u08-schriftsteller
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schriftsteller, - / die Schriftstellerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà văn
+      examples:
+        - target: Der Schriftsteller liest heute Abend aus seinem neuen Buch.
+          translation:
+            vi: Tối nay nhà văn đọc trích đoạn từ cuốn sách mới của ông.
+        - target: Sie ist eine bekannte Schriftstellerin.
+          translation:
+            vi: Bà ấy là một nhà văn nổi tiếng.
+      confusion:
+        vi: "Schriftsteller là người viết văn chương như một nghề; der Autor là tác giả của bất kỳ văn bản nào (cả sách dạy nấu ăn, bài báo)."
+
+  - key: de:item:b2u08-gedicht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gedicht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài thơ
+      examples:
+        - target: Die Kinder lernen ein Gedicht auswendig.
+          translation:
+            vi: Bọn trẻ học thuộc lòng một bài thơ.
+        - target: Kannst du das Gedicht noch einmal vorlesen?
+          translation:
+            vi: Bạn đọc to lại bài thơ được không?
+      confusion:
+        vi: "das Gedicht là một bài thơ; thơ ca nói chung là die Lyrik; người làm thơ là der Dichter."
+
+  - key: de:item:b2u08-leser
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Leser, - / die Leserin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người đọc, độc giả
+      examples:
+        - target: Der Roman hat besonders viele junge Leser.
+          translation:
+            vi: Cuốn tiểu thuyết có đặc biệt nhiều độc giả trẻ.
+        - target: Liebe Leserinnen und Leser, heute stellen wir Ihnen drei neue Bücher vor.
+          translation:
+            vi: Thưa quý độc giả, hôm nay chúng tôi giới thiệu với quý vị ba cuốn sách mới.
+      confusion:
+        vi: "Báo chí hay viết cả hai dạng: Leserinnen und Leser. Thư bạn đọc gửi toà soạn: der Leserbrief."
+
+  - key: de:item:b2u08-handlung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Handlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cốt truyện; hành động
+      examples:
+        - target: Die Handlung spielt im heutigen Berlin.
+          translation:
+            vi: Câu chuyện diễn ra ở Berlin ngày nay.
+        - target: Die Handlung ist spannend, aber etwas kompliziert.
+          translation:
+            vi: Cốt truyện hấp dẫn nhưng hơi phức tạp.
+      confusion:
+        vi: "Câu chuyện diễn ra ở đâu, khi nào: Die Handlung spielt in … (động từ spielen, không phải passieren). Ngoài văn học, Handlung còn là hành động (eine mutige Handlung)."
+
+  - key: de:item:b2u08-figur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Figur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân vật (trong truyện, phim); dáng người; hình tượng
+      examples:
+        - target: Die Figuren in diesem Roman wirken sehr lebendig.
+          translation:
+            vi: Các nhân vật trong cuốn tiểu thuyết này rất sống động.
+        - target: Die wichtigste Figur ist eine junge Ärztin.
+          translation:
+            vi: Nhân vật quan trọng nhất là một nữ bác sĩ trẻ.
+      confusion:
+        vi: "Nhân vật trong truyện là die Figur (không dùng die Person); der Charakter thường là tính cách. Trọng âm ở âm tiết sau: fi-GUR."
+
+  - key: de:item:b2u08-erzaehler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Erzähler, - / die Erzählerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người kể chuyện
+      examples:
+        - target: In diesem Buch ist ein alter Mann der Erzähler.
+          translation:
+            vi: Trong cuốn sách này, người kể chuyện là một ông lão.
+        - target: Man weiß nie genau, ob man der Erzählerin glauben kann.
+          translation:
+            vi: Người đọc không bao giờ biết chắc có nên tin người kể chuyện (nữ) hay không.
+      confusion:
+        vi: "Người kể chuyện là một vai trong tác phẩm, không nhất thiết là tác giả (der Autor). Ngôi kể thứ nhất: der Ich-Erzähler."
+
+  # Zusatzwortschatz B2U08L1 (10): die Erzählung, der Autor, das Kapitel, die Hauptfigur, der Verlag, die Kurzgeschichte, das Werk, der Dichter, das Sprichwort, die Lesung
+  - key: de:item:b2u08-erzaehlung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erzählung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: truyện (vừa), câu chuyện kể
+      examples:
+        - target: Die Erzählung ist nur 80 Seiten lang.
+          translation:
+            vi: Truyện chỉ dài 80 trang.
+        - target: In ihrer Erzählung beschreibt sie eine Kindheit auf dem Land.
+          translation:
+            vi: Trong truyện của mình, bà kể về một tuổi thơ ở nông thôn.
+      confusion:
+        vi: "Erzählung ngắn hơn Roman, dài hơn Kurzgeschichte. Nghĩa thường ngày: lời kể (nach seiner Erzählung = theo lời anh ấy kể)."
+
+  - key: de:item:b2u08-autor
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Autor, -en / die Autorin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: tác giả
+      examples:
+        - target: Wer ist der Autor dieses Buches?
+          translation:
+            vi: Ai là tác giả cuốn sách này?
+        - target: Die Autorin hat für ihren ersten Roman einen Preis bekommen.
+          translation:
+            vi: Nữ tác giả đã nhận một giải thưởng cho cuốn tiểu thuyết đầu tay.
+      confusion:
+        vi: "Autor không thuộc n-Deklination: den Autor, dem Autor, des Autors; chỉ số nhiều mới là die Autoren. Trọng âm đổi: AU-tor nhưng Au-TO-ren."
+
+  - key: de:item:b2u08-kapitel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Kapitel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương (sách)
+      examples:
+        - target: Im dritten Kapitel ändert sich alles.
+          translation:
+            vi: Đến chương ba thì mọi thứ thay đổi.
+        - target: Ich habe erst zwei Kapitel gelesen.
+          translation:
+            vi: Tôi mới đọc được hai chương.
+      confusion:
+        vi: "Số nhiều giữ nguyên: die Kapitel. Nghĩa bóng: Das ist ein anderes Kapitel = đó là chuyện khác."
+
+  - key: de:item:b2u08-hauptfigur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hauptfigur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân vật chính
+      examples:
+        - target: Die Hauptfigur ist ein junger Lehrer aus Hamburg.
+          translation:
+            vi: Nhân vật chính là một thầy giáo trẻ ở Hamburg.
+        - target: Mit der Hauptfigur konnte ich mich kaum identifizieren.
+          translation:
+            vi: Tôi hầu như không thấy mình đồng cảm được với nhân vật chính.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: die Figur → die Hauptfigur. Trong phim, kịch hay nói die Hauptrolle (vai chính)."
+
+  - key: de:item:b2u08-verlag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verlag, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà xuất bản
+      examples:
+        - target: Der Roman erscheint im Herbst in einem kleinen Verlag.
+          translation:
+            vi: Cuốn tiểu thuyết sẽ ra mắt vào mùa thu ở một nhà xuất bản nhỏ.
+        - target: Sie arbeitet seit Jahren bei einem großen Verlag.
+          translation:
+            vi: Cô ấy làm việc nhiều năm nay ở một nhà xuất bản lớn.
+      confusion:
+        vi: "Sách được xuất bản: Das Buch erscheint (im Verlag …); động từ veröffentlichen dùng cho người hoặc nhà xuất bản làm việc đó."
+
+  - key: de:item:b2u08-kurzgeschichte
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kurzgeschichte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: truyện ngắn
+      examples:
+        - target: Im Kurs lesen wir jede Woche eine Kurzgeschichte.
+          translation:
+            vi: Trong lớp, tuần nào chúng tôi cũng đọc một truyện ngắn.
+        - target: Viele Kurzgeschichten haben ein offenes Ende.
+          translation:
+            vi: Nhiều truyện ngắn có kết thúc mở.
+      confusion:
+        vi: "Từ ghép: kurz + die Geschichte → die Kurzgeschichte (giống cái)."
+
+  - key: de:item:b2u08-werk
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Werk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tác phẩm; (cũng) nhà máy
+      examples:
+        - target: Das Werk der Autorin wurde in viele Sprachen übersetzt.
+          translation:
+            vi: Tác phẩm của nữ tác giả đã được dịch ra nhiều thứ tiếng.
+        - target: Dieses frühe Werk des Malers ist kaum bekannt.
+          translation:
+            vi: Tác phẩm thời kỳ đầu này của hoạ sĩ hầu như không ai biết.
+      confusion:
+        vi: "das Werk (số ít) có thể chỉ toàn bộ sáng tác của một người; một tác phẩm cụ thể cũng là ein Werk. Trong công nghiệp, das Werk là nhà máy."
+
+  - key: de:item:b2u08-dichter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Dichter, - / die Dichterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà thơ, thi sĩ; văn hào
+      examples:
+        - target: Der Dichter las seine Gedichte selbst vor.
+          translation:
+            vi: Nhà thơ tự đọc các bài thơ của mình.
+        - target: In vielen Städten sind Straßen nach Dichtern benannt.
+          translation:
+            vi: Ở nhiều thành phố, đường phố được đặt theo tên các nhà thơ, nhà văn.
+      confusion:
+        vi: "Dichter mang sắc thái trang trọng, thường chỉ các nhà thơ, nhà văn lớn; khi nói về nhà thơ đương đại người ta cũng hay dùng der Lyriker."
+
+  - key: de:item:b2u08-sprichwort
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Sprichwort, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: tục ngữ
+      examples:
+        - target: "Ein bekanntes Sprichwort sagt: Wer A sagt, muss auch B sagen."
+          translation:
+            vi: "Một câu tục ngữ quen thuộc nói: Đã nói A thì phải nói B (đã bắt đầu thì phải làm đến cùng)."
+        - target: Kennst du ein vietnamesisches Sprichwort, das hier passt?
+          translation:
+            vi: Bạn có biết câu tục ngữ Việt Nam nào hợp với chỗ này không?
+      confusion:
+        vi: "Sprichwort là một câu hoàn chỉnh (Wer zuletzt lacht, lacht am besten); die Redewendung là cụm phải ghép vào câu (die Daumen drücken). Số nhiều: die Sprichwörter."
+
+  - key: de:item:b2u08-lesung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Lesung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi đọc sách (tác giả đọc trích đoạn tác phẩm trước khán giả)
+      examples:
+        - target: Am Freitag gibt es in der Buchhandlung eine Lesung.
+          translation:
+            vi: Thứ Sáu này có một buổi đọc sách ở hiệu sách.
+        - target: Nach der Lesung signiert die Autorin ihre Bücher.
+          translation:
+            vi: Sau buổi đọc, nữ tác giả ký tặng sách.
+      confusion:
+        vi: "Lesung là một sự kiện văn hoá phổ biến ở Đức (ở hiệu sách, thư viện, lễ hội văn học). Không nhầm với die Vorlesung (bài giảng đại học)."
+
+  # ================= Bài 2: Thành ngữ và ngữ vực =================
+  - key: de:item:b2u08-g-register
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Sprachebenen: umgangssprachlich – neutral – gehoben: kriegen – bekommen – erhalten · kapieren – verstehen – nachvollziehen · Kohle – Geld – finanzielle Mittel"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Cùng một ý, tiếng Đức có nhiều mức (Sprachebenen): umgangssprachlich (khẩu ngữ, với bạn bè), neutral (chuẩn, dùng được hầu hết mọi nơi), gehoben (trang trọng, văn viết, thư từ) và Fachsprache (thuật ngữ chuyên ngành). Trong thư trang trọng và bài viết thi B2, tránh từ khẩu ngữ như kriegen, kapieren, Kohle và phần lớn thành ngữ khẩu ngữ. Từ chuẩn (bekommen, verstehen, Geld) không bao giờ sai; từ trang trọng làm văn bản lịch sự, khách quan hơn."
+      examples:
+        - target: Hast du meine Nachricht gekriegt?
+          translation:
+            vi: Cậu nhận được tin nhắn của tớ chưa? (khẩu ngữ)
+        - target: Wir haben Ihre Anfrage erhalten und melden uns in Kürze.
+          translation:
+            vi: Chúng tôi đã nhận được yêu cầu của quý vị và sẽ sớm liên hệ lại. (trang trọng)
+        - target: Für das Projekt fehlen uns leider die finanziellen Mittel.
+          translation:
+            vi: Đáng tiếc là chúng tôi không có đủ kinh phí cho dự án. (trang trọng)
+      confusion:
+        vi: "Các cặp không hoàn toàn đồng nghĩa: nachvollziehen là hiểu được lý lẽ, cảm xúc của ai (Ich kann Ihre Entscheidung nachvollziehen), không thay verstehen ở mọi chỗ. Kohle nghĩa gốc là than; nghĩa \"tiền\" chỉ dùng trong khẩu ngữ."
+
+  - key: de:item:b2u08-tomaten-auf-den-augen-haben
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: Tomaten auf den Augen haben (ugs.)
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "không nhìn thấy điều rõ rành rành trước mắt (nghĩa đen: có cà chua trên mắt); khẩu ngữ"
+      examples:
+        - target: Hast du Tomaten auf den Augen? Das Schild steht doch direkt vor dir!
+          translation:
+            vi: Cậu bị mù à? Cái biển ở ngay trước mặt cậu kia mà!
+        - target: Ich hatte wohl Tomaten auf den Augen, ich habe den Fehler dreimal übersehen.
+          translation:
+            vi: Chắc mắt tôi để đâu ấy, lỗi đó tôi đọc ba lần mà không thấy.
+      confusion:
+        vi: "Chỉ dùng với người thân quen, giọng đùa hoặc trách nhẹ; nói với sếp hay khách hàng là bất lịch sự."
+
+  - key: de:item:b2u08-ins-fettnaepfchen-treten
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: ins Fettnäpfchen treten, tritt, trat, ist getreten (ugs.)
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "lỡ lời, vô ý nói hay làm điều khiến người khác khó chịu, ngượng (nghĩa đen: giẫm vào hũ mỡ); khẩu ngữ"
+      examples:
+        - target: Mit der Frage nach ihrem Alter bin ich ins Fettnäpfchen getreten.
+          translation:
+            vi: Hỏi tuổi bà ấy là tôi đã lỡ lời rồi.
+        - target: Wer die Kultur nicht kennt, tritt leicht ins Fettnäpfchen.
+          translation:
+            vi: Ai không biết văn hoá thì dễ lỡ lời, làm phật lòng người khác.
+      confusion:
+        vi: "Perfekt với sein vì treten ở đây là chuyển động: ich bin ins Fettnäpfchen getreten. Đây là vô ý, khác với cố tình xúc phạm (jemanden beleidigen)."
+
+  - key: de:item:b2u08-jemandem-die-daumen-druecken
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: jemandem die Daumen drücken
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "cầu chúc ai gặp may, mong cho ai thành công (nghĩa đen: bấm ngón cái cho ai)"
+      examples:
+        - target: Morgen ist meine Prüfung. – Ich drücke dir die Daumen!
+          translation:
+            vi: Mai mình thi rồi. – Chúc cậu may mắn nhé!
+        - target: Wir drücken Ihnen für das Vorstellungsgespräch die Daumen.
+          translation:
+            vi: Chúng tôi chúc anh/chị phỏng vấn thành công.
+      confusion:
+        vi: "Người được chúc ở Dativ: dir, Ihnen (không phải dich, Sie). Thành ngữ này thân thiện nhưng không thô, nên dùng được cả với đồng nghiệp; người ta thường giơ hai nắm tay, ngón cái gập vào trong."
+
+  - key: de:item:b2u08-schwein-haben
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: Schwein haben (ugs.)
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "gặp may, hên (nghĩa đen: có con lợn); khẩu ngữ"
+      examples:
+        - target: Da hast du aber Schwein gehabt!
+          translation:
+            vi: Thế thì cậu hên quá rồi!
+        - target: Wir hatten Schwein, es gab noch zwei Karten.
+          translation:
+            vi: Bọn mình gặp may, vẫn còn hai vé.
+      confusion:
+        vi: "Schwein haben là khen may mắn, không xúc phạm; nhưng gọi ai là Schwein (Du Schwein!) là chửi. Trong văn viết trang trọng dùng Glück haben."
+
+  - key: de:item:b2u08-auf-dem-holzweg-sein
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: auf dem Holzweg sein
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "nghĩ sai, đi sai hướng (nghĩa đen: ở trên con đường kéo gỗ trong rừng, đường không dẫn tới làng nào)"
+      examples:
+        - target: Wenn du glaubst, dass das so einfach ist, bist du auf dem Holzweg.
+          translation:
+            vi: Nếu cậu nghĩ chuyện đó dễ như vậy thì cậu nhầm to rồi.
+        - target: Die Ermittler waren lange auf dem Holzweg.
+          translation:
+            vi: Các điều tra viên đã đi sai hướng suốt một thời gian dài.
+      confusion:
+        vi: "Ngữ vực trung tính, gặp cả trên báo chí. Dùng với sein (trạng thái), không dùng gehen: Er ist auf dem Holzweg."
+
+  - key: de:item:b2u08-den-nagel-auf-den-kopf-treffen
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: den Nagel auf den Kopf treffen, trifft, traf, hat getroffen
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "nói trúng vấn đề, nói trúng phóc (nghĩa đen: đóng trúng đầu đinh)"
+      examples:
+        - target: Mit deiner Bemerkung hast du den Nagel auf den Kopf getroffen.
+          translation:
+            vi: Nhận xét của cậu nói trúng phóc vấn đề.
+        - target: Die Kritikerin trifft den Nagel auf den Kopf, der Film ist einfach zu lang.
+          translation:
+            vi: "Nhà phê bình nói rất trúng: bộ phim đơn giản là quá dài."
+      confusion:
+        vi: "Ngữ vực trung tính, dùng được cả trong cuộc họp và bài phê bình. Perfekt với haben: hat … getroffen."
+
+  - key: de:item:b2u08-kriegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: kriegen (ugs.)
+      pos: động từ
+    back:
+      meaning:
+        vi: "nhận được, có được (khẩu ngữ của bekommen)"
+      examples:
+        - target: Ich habe gestern endlich eine Antwort gekriegt.
+          translation:
+            vi: Hôm qua cuối cùng tớ cũng nhận được trả lời.
+        - target: Kriegst du noch Karten für das Konzert?
+          translation:
+            vi: Cậu còn kiếm được vé xem hoà nhạc không?
+      confusion:
+        vi: "Ba mức: kriegen (khẩu ngữ) – bekommen (chuẩn) – erhalten (trang trọng). kriegen là động từ có quy tắc: hat gekriegt."
+
+  - key: de:item:b2u08-kapieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: kapieren (ugs.)
+      pos: động từ
+    back:
+      meaning:
+        vi: "hiểu ra, nắm được (khẩu ngữ của verstehen)"
+      examples:
+        - target: Hast du die Aufgabe kapiert?
+          translation:
+            vi: Cậu hiểu bài tập chưa?
+        - target: Ach so, jetzt hab ich's kapiert!
+          translation:
+            vi: À ra thế, giờ thì tớ hiểu rồi!
+      confusion:
+        vi: "Đuôi -ieren nên Partizip II không có ge-: hat kapiert. Với thầy cô hay trong thư, dùng verstehen."
+
+  # Zusatzwortschatz B2U08L2 (10): die Redewendung, umgangssprachlich, gehoben, erhalten, die Nase voll haben, nur Bahnhof verstehen, ein Auge zudrücken, um den heißen Brei herumreden, zwei Fliegen mit einer Klappe schlagen, etwas auf die lange Bank schieben
+  - key: de:item:b2u08-redewendung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Redewendung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thành ngữ, quán ngữ
+      examples:
+        - target: Diese Redewendung kann man nicht wörtlich übersetzen.
+          translation:
+            vi: Thành ngữ này không thể dịch từng chữ.
+        - target: Im Deutschen gibt es viele Redewendungen mit Tieren.
+          translation:
+            vi: Tiếng Đức có nhiều thành ngữ liên quan đến con vật.
+      confusion:
+        vi: "die Redewendung là cụm có nghĩa bóng phải ghép vào câu; das Sprichwort là câu tục ngữ hoàn chỉnh."
+
+  - key: de:item:b2u08-umgangssprachlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: umgangssprachlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc khẩu ngữ, thông tục (viết tắt trong từ điển là ugs.)
+      examples:
+        - target: Das Wort kriegen ist umgangssprachlich.
+          translation:
+            vi: Từ kriegen thuộc khẩu ngữ.
+        - target: In einem Bewerbungsschreiben sollte man nicht umgangssprachlich schreiben.
+          translation:
+            vi: Trong thư xin việc không nên viết theo lối khẩu ngữ.
+      confusion:
+        vi: "Danh từ: die Umgangssprache (ngôn ngữ nói hằng ngày). Khẩu ngữ không phải tiếng địa phương (der Dialekt)."
+
+  - key: de:item:b2u08-gehoben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gehoben
+      pos: tính từ
+    back:
+      meaning:
+        vi: trang trọng, văn hoa (về ngữ vực); cao cấp
+      examples:
+        - target: Erhalten klingt gehobener als bekommen.
+          translation:
+            vi: erhalten nghe trang trọng hơn bekommen.
+        - target: Das Restaurant bietet gehobene Küche.
+          translation:
+            vi: Nhà hàng phục vụ ẩm thực cao cấp.
+      confusion:
+        vi: "Từ điển ghi geh. cho từ trang trọng. gehoben vốn là Partizip II của heben (nâng lên), nên nghĩa gốc là \"được nâng cao\"."
+
+  - key: de:item:b2u08-erhalten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: erhalten, erhält, erhielt, hat erhalten
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận được (trang trọng); giữ gìn, bảo tồn
+      examples:
+        - target: Wir haben Ihre Bewerbung erhalten.
+          translation:
+            vi: Chúng tôi đã nhận được hồ sơ ứng tuyển của quý vị.
+        - target: Das alte Theater soll erhalten bleiben.
+          translation:
+            vi: Nhà hát cổ cần được giữ gìn.
+      confusion:
+        vi: "Partizip II trùng nguyên thể: hat erhalten (không có ge-, vì er- là tiền tố không tách)."
+
+  - key: de:item:b2u08-die-nase-voll-haben
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Nase voll haben (von + Dat) (ugs.)
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "chán ngấy, ngán tận cổ (nghĩa đen: mũi đầy); khẩu ngữ"
+      examples:
+        - target: Ich habe die Nase voll vom Regen!
+          translation:
+            vi: Tớ ngán cái mưa này tận cổ rồi!
+        - target: Nach drei Stunden Diskussion hatten alle die Nase voll.
+          translation:
+            vi: Sau ba tiếng tranh luận, ai cũng chán ngấy.
+      confusion:
+        vi: "Cái mình chán đi với von + Dativ: vom Regen, davon. Văn trang trọng: genug von etwas haben hoặc einer Sache überdrüssig sein."
+
+  - key: de:item:b2u08-nur-bahnhof-verstehen
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: nur Bahnhof verstehen (ugs.)
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "chẳng hiểu gì cả (nghĩa đen: chỉ hiểu mỗi chữ \"nhà ga\"); khẩu ngữ"
+      examples:
+        - target: Bei dem Vortrag über Physik habe ich nur Bahnhof verstanden.
+          translation:
+            vi: Nghe bài giảng vật lý đó tôi chẳng hiểu gì.
+        - target: Kannst du das noch einmal erklären? Ich verstehe nur Bahnhof.
+          translation:
+            vi: Cậu giải thích lại được không? Tớ chả hiểu gì cả.
+      confusion:
+        vi: "Dùng nguyên cụm, không thêm mạo từ: nur Bahnhof (không phải nur den Bahnhof)."
+
+  - key: de:item:b2u08-ein-auge-zudruecken
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: ein Auge zudrücken
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "nhắm mắt làm ngơ, bỏ qua cho (nghĩa đen giống tiếng Việt: nhắm một mắt)"
+      examples:
+        - target: Diesmal drücke ich noch ein Auge zu, aber komm bitte nicht wieder zu spät.
+          translation:
+            vi: Lần này tôi bỏ qua, nhưng lần sau đừng đến muộn nữa nhé.
+        - target: Die Lehrerin hat bei dem kleinen Fehler ein Auge zugedrückt.
+          translation:
+            vi: Cô giáo đã bỏ qua lỗi nhỏ đó.
+      confusion:
+        vi: "zudrücken là động từ tách: ich drücke ein Auge zu; Perfekt hat … zugedrückt. Ngữ vực trung tính."
+
+  - key: de:item:b2u08-um-den-heissen-brei-herumreden
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: um den heißen Brei herumreden (ugs.)
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "nói vòng vo, không nói thẳng vào vấn đề (nghĩa đen: nói quanh nồi cháo nóng); khẩu ngữ"
+      examples:
+        - target: Rede nicht um den heißen Brei herum, sag mir einfach die Wahrheit!
+          translation:
+            vi: Đừng vòng vo nữa, cứ nói thật với tớ đi!
+        - target: Der Politiker hat im Interview nur um den heißen Brei herumgeredet.
+          translation:
+            vi: Trong cuộc phỏng vấn, chính trị gia đó chỉ nói vòng vo.
+      confusion:
+        vi: "herumreden là động từ tách: Er redet um den heißen Brei herum; Perfekt hat … herumgeredet."
+
+  - key: de:item:b2u08-zwei-fliegen-mit-einer-klappe-schlagen
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: zwei Fliegen mit einer Klappe schlagen
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "một công đôi việc (nghĩa đen: đập hai con ruồi bằng một cái vỉ)"
+      examples:
+        - target: Ich fahre mit dem Rad zur Arbeit und schlage so zwei Fliegen mit einer Klappe, ich spare Geld und mache Sport.
+          translation:
+            vi: "Tôi đạp xe đi làm, thế là một công đôi việc: vừa tiết kiệm tiền vừa tập thể dục."
+        - target: Mit dem Besuch in Berlin haben wir zwei Fliegen mit einer Klappe geschlagen.
+          translation:
+            vi: Chuyến đi Berlin giúp chúng tôi làm được hai việc một lúc.
+      confusion:
+        vi: "Ngữ vực trung tính. Không đổi số lượng hay đồ vật trong cụm: luôn là zwei Fliegen, mit einer Klappe."
+
+  - key: de:item:b2u08-auf-die-lange-bank-schieben
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: etwas auf die lange Bank schieben, schob, hat geschoben (ugs.)
+      pos: thành ngữ
+    back:
+      meaning:
+        vi: "trì hoãn, để đấy mãi không làm (nghĩa đen: đẩy lên băng ghế dài); khẩu ngữ"
+      examples:
+        - target: Die Steuererklärung schiebe ich schon seit Wochen auf die lange Bank.
+          translation:
+            vi: Tờ khai thuế tôi để đấy mấy tuần nay rồi.
+        - target: Das Problem dürfen wir nicht auf die lange Bank schieben.
+          translation:
+            vi: Vấn đề này chúng ta không được trì hoãn.
+      confusion:
+        vi: "Bank ở đây là cái ghế dài (Plural: die Bänke), không phải ngân hàng (Plural: die Banken)."
+
+  # ================= Bài 3: Bảo tàng – tính từ đi với một cách =================
+  - key: de:item:b2u08-g-adjektive-kasus
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Adjektive mit Kasus: dem Original ähnlich (Dat) · sich der Sache bewusst (Gen) · einen Meter hoch (Akk)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Một số tính từ đi với một danh từ hay đại từ ở cách cố định, không có giới từ. Dativ: ähnlich, bekannt, dankbar, fremd, nützlich, peinlich, wichtig (Das ist mir wichtig); Genitiv, văn phong trang trọng: sich (Dat) einer Sache bewusst/sicher sein, einer Sache würdig sein. Akkusativ chỉ số đo: einen Meter hoch, einen Monat alt."
+      examples:
+        - target: Die Kopie ist dem Original sehr ähnlich.
+          translation:
+            vi: Bản sao rất giống bản gốc.
+        - target: Der Künstler ist sich der Kritik bewusst.
+          translation:
+            vi: Người nghệ sĩ ý thức được những lời phê bình.
+        - target: Die Skulptur ist drei Meter hoch.
+          translation:
+            vi: Bức tượng cao ba mét.
+      confusion:
+        vi: "Không thêm wie hay giới từ: dem Original ähnlich (không phải ähnlich wie dem Original). Với bewusst, người ý thức ở Dativ (mir, dir, sich) và sự việc ở Genitiv: Ich bin mir dessen bewusst (không phải Ich bin mir das bewusst); trong khẩu ngữ, Genitiv hay được thay bằng câu dass."
+
+  - key: de:item:b2u08-kunst
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kunst, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghệ thuật; tài nghệ
+      examples:
+        - target: Sie interessiert sich vor allem für moderne Kunst.
+          translation:
+            vi: Cô ấy đặc biệt quan tâm đến nghệ thuật hiện đại.
+        - target: Die Stadt gibt viel Geld für Kunst und Kultur aus.
+          translation:
+            vi: Thành phố chi nhiều tiền cho nghệ thuật và văn hoá.
+      confusion:
+        vi: "Số nhiều die Künste ít dùng (die bildenden Künste = mỹ thuật). Khẩu ngữ: Das ist keine Kunst! = Có gì khó đâu!"
+
+  - key: de:item:b2u08-kuenstler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Künstler, - / die Künstlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghệ sĩ
+      examples:
+        - target: Der Künstler arbeitet seit Jahren an dieser Serie.
+          translation:
+            vi: Người nghệ sĩ làm loạt tác phẩm này đã nhiều năm.
+        - target: In der Galerie stellen junge Künstlerinnen und Künstler aus.
+          translation:
+            vi: Các nghệ sĩ trẻ trưng bày tác phẩm ở phòng tranh.
+      confusion:
+        vi: "Künstler là người làm nghệ thuật nói chung (hoạ sĩ, nhà điêu khắc, nhạc sĩ …). Tính từ: künstlerisch."
+
+  - key: de:item:b2u08-gemaelde
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gemälde, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bức tranh vẽ (sơn dầu, màu nước …)
+      examples:
+        - target: Das Gemälde hängt im ersten Stock des Museums.
+          translation:
+            vi: Bức tranh được treo ở tầng hai của bảo tàng.
+        - target: Das Gemälde ist über 300 Jahre alt.
+          translation:
+            vi: Bức tranh đã hơn 300 năm tuổi.
+      confusion:
+        vi: "das Bild là hình ảnh nói chung (cả ảnh chụp); das Gemälde chỉ tranh vẽ bằng màu; tranh vẽ bằng bút chì là die Zeichnung. Lưu ý: der erste Stock là tầng hai theo cách đếm của Việt Nam."
+
+  - key: de:item:b2u08-skulptur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Skulptur, -en
+      ipa: /skʊlpˈtuːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: tác phẩm điêu khắc, bức tượng
+      examples:
+        - target: Vor dem Museum steht eine riesige Skulptur aus Stahl.
+          translation:
+            vi: Trước bảo tàng có một bức tượng thép khổng lồ.
+        - target: Die Skulptur ist aus Holz.
+          translation:
+            vi: Bức tượng làm bằng gỗ.
+      confusion:
+        vi: "Trọng âm ở cuối: skulp-TUR. Người làm tượng là der Bildhauer; tượng người hay tượng đài cũng gọi là die Statue."
+
+  - key: de:item:b2u08-epoche
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Epoche, -n
+      ipa: /eˈpɔxə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời kỳ, giai đoạn (lịch sử, nghệ thuật)
+      examples:
+        - target: Jede Epoche hat ihren eigenen Stil.
+          translation:
+            vi: Mỗi thời kỳ có phong cách riêng.
+        - target: Der Roman beschreibt eine schwierige Epoche der Geschichte.
+          translation:
+            vi: Cuốn tiểu thuyết kể về một giai đoạn khó khăn của lịch sử.
+      confusion:
+        vi: "Trọng âm ở âm tiết giữa: e-PO-che; ch đọc như kh."
+
+  - key: de:item:b2u08-zeitgenoessisch
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: zeitgenössisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: đương đại; cùng thời
+      examples:
+        - target: Das Museum zeigt vor allem zeitgenössische Kunst.
+          translation:
+            vi: Bảo tàng chủ yếu trưng bày nghệ thuật đương đại.
+        - target: Sie ist eine der bekanntesten zeitgenössischen Autorinnen des Landes.
+          translation:
+            vi: Bà là một trong những nữ tác giả đương đại nổi tiếng nhất nước.
+      confusion:
+        vi: "Từ der Zeitgenosse (người cùng thời). Nói về chuyện xưa, zeitgenössisch là \"của chính thời đó\": zeitgenössische Berichte = các ghi chép cùng thời."
+
+  - key: de:item:b2u08-abstrakt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abstrakt
+      pos: tính từ
+    back:
+      meaning:
+        vi: trừu tượng
+      examples:
+        - target: Abstrakte Bilder zeigen meist keine erkennbaren Personen oder Gegenstände.
+          translation:
+            vi: Tranh trừu tượng thường không vẽ người hay đồ vật có thể nhận ra.
+        - target: Das klingt mir zu abstrakt, kannst du ein Beispiel geben?
+          translation:
+            vi: Nghe trừu tượng quá, cậu cho một ví dụ được không?
+      confusion:
+        vi: "Trái nghĩa: konkret (cụ thể), trong hội hoạ: gegenständlich (vẽ vật thể có thể nhận ra)."
+
+  - key: de:item:b2u08-ausstellung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ausstellung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc triển lãm
+      examples:
+        - target: Die Ausstellung läuft noch bis Ende März.
+          translation:
+            vi: Triển lãm còn kéo dài đến cuối tháng Ba.
+        - target: Gestern waren wir in einer Ausstellung über japanische Fotografie.
+          translation:
+            vi: Hôm qua chúng tôi đi xem một triển lãm về nhiếp ảnh Nhật Bản.
+      confusion:
+        vi: "Động từ: ausstellen (tách: Die Galerie stellt junge Künstler aus). Triển lãm \"diễn ra\": Die Ausstellung läuft / ist zu sehen."
+
+  # Zusatzwortschatz B2U08L3 (10): der Maler, das Kunstwerk, das Porträt, die Galerie, der Bildhauer, das Original, betrachten, die Sammlung, das Meisterwerk, das Motiv
+  - key: de:item:b2u08-maler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Maler, - / die Malerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoạ sĩ; thợ sơn
+      examples:
+        - target: Der Maler arbeitet am liebsten mit kräftigen Farben.
+          translation:
+            vi: Người hoạ sĩ thích nhất là làm việc với những gam màu mạnh.
+        - target: Für die neue Wohnung haben wir einen Maler bestellt.
+          translation:
+            vi: Chúng tôi đã gọi thợ sơn cho căn hộ mới.
+      confusion:
+        vi: "Maler vừa là hoạ sĩ vừa là thợ sơn nhà; ngữ cảnh cho biết nghĩa nào. Hội hoạ: die Malerei."
+
+  - key: de:item:b2u08-kunstwerk
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Kunstwerk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tác phẩm nghệ thuật
+      examples:
+        - target: Das Museum besitzt über 5000 Kunstwerke.
+          translation:
+            vi: Bảo tàng sở hữu hơn 5000 tác phẩm nghệ thuật.
+        - target: Bitte berühren Sie die Kunstwerke nicht.
+          translation:
+            vi: Xin quý khách không chạm vào các tác phẩm.
+      confusion:
+        vi: "Từ ghép lấy giống của từ cuối: das Werk → das Kunstwerk."
+
+  - key: de:item:b2u08-portraet
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Porträt, -s
+      ipa: /pɔʁˈtʁɛː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: bức chân dung
+      examples:
+        - target: Das Porträt zeigt eine junge Frau mit einem Buch.
+          translation:
+            vi: Bức chân dung vẽ một thiếu nữ cầm cuốn sách.
+        - target: Der Fotograf macht Porträts von älteren Menschen.
+          translation:
+            vi: Nhiếp ảnh gia chụp chân dung người cao tuổi.
+      confusion:
+        vi: "Từ gốc Pháp: t cuối không đọc, trọng âm ở cuối (por-TRÄ). Chân dung tự hoạ: das Selbstporträt."
+
+  - key: de:item:b2u08-galerie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Galerie, -n
+      ipa: /ɡaləˈʁiː/
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng tranh, gallery
+      examples:
+        - target: Die Galerie zeigt Bilder junger Künstler.
+          translation:
+            vi: Phòng tranh trưng bày tranh của các nghệ sĩ trẻ.
+        - target: In einer Galerie kann man Kunstwerke oft auch kaufen.
+          translation:
+            vi: Ở phòng tranh, người ta thường cũng mua được tác phẩm.
+      confusion:
+        vi: "Số nhiều die Galerien đọc thành ba âm tiết cuối: ga-le-RI-en. Galerie thường là nơi trưng bày và bán; das Museum chủ yếu sưu tầm và trưng bày."
+
+  - key: de:item:b2u08-bildhauer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Bildhauer, - / die Bildhauerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà điêu khắc
+      examples:
+        - target: Der Bildhauer arbeitet vor allem mit Stein.
+          translation:
+            vi: Nhà điêu khắc chủ yếu làm việc với đá.
+        - target: Die Bildhauerin hat die Skulptur in drei Jahren geschaffen.
+          translation:
+            vi: Nữ nhà điêu khắc đã tạo ra bức tượng trong ba năm.
+      confusion:
+        vi: "Từ ghép: das Bild + hauen (đẽo) → der Bildhauer. schaffen (sáng tạo) chia bất quy tắc: schuf, hat geschaffen."
+
+  - key: de:item:b2u08-original
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Original, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản gốc, nguyên bản
+      examples:
+        - target: Das ist nicht das Original, sondern eine Kopie.
+          translation:
+            vi: Đây không phải bản gốc mà là bản sao.
+        - target: Das Original hängt in einem Museum in Wien.
+          translation:
+            vi: Bản gốc được treo ở một bảo tàng tại Wien.
+      confusion:
+        vi: "Phim nguyên bản có phụ đề: im Original mit Untertiteln (OmU). Tính từ original/originell khác nghĩa: original = gốc, originell = độc đáo."
+
+  - key: de:item:b2u08-betrachten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: betrachten
+      pos: động từ
+    back:
+      meaning:
+        vi: ngắm, quan sát kỹ; coi (là)
+      examples:
+        - target: Sie betrachtet das Bild lange und schweigend.
+          translation:
+            vi: Cô ấy lặng lẽ ngắm bức tranh rất lâu.
+        - target: Ich betrachte das als Kompliment.
+          translation:
+            vi: Tôi coi đó là một lời khen.
+      confusion:
+        vi: "betrachten là nhìn kỹ, lâu (anschauen thì trung tính hơn). Nghĩa \"coi là\": etwas als + Akkusativ betrachten. Không tách: hat betrachtet."
+
+  - key: de:item:b2u08-sammlung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Sammlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ sưu tập
+      examples:
+        - target: Das Museum besitzt eine große Sammlung moderner Kunst.
+          translation:
+            vi: Bảo tàng có một bộ sưu tập lớn về nghệ thuật hiện đại.
+        - target: Meine Großmutter hat eine Sammlung alter Postkarten.
+          translation:
+            vi: Bà tôi có một bộ sưu tập bưu thiếp cũ.
+      confusion:
+        vi: "Từ động từ sammeln. Sau Sammlung hay gặp Genitiv không mạo từ với đuôi tính từ -er: eine Sammlung alter Postkarten."
+
+  - key: de:item:b2u08-meisterwerk
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Meisterwerk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiệt tác
+      examples:
+        - target: Viele Kritiker halten den Film für ein Meisterwerk.
+          translation:
+            vi: Nhiều nhà phê bình coi bộ phim là một kiệt tác.
+        - target: Dieses Gemälde gilt als ihr Meisterwerk.
+          translation:
+            vi: Bức tranh này được xem là kiệt tác của bà.
+      confusion:
+        vi: "Hai cách nói hay gặp: etwas für ein Meisterwerk halten (Akkusativ) và als Meisterwerk gelten (Nominativ)."
+
+  - key: de:item:b2u08-motiv
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Motiv, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đề tài, mô-típ (trong tranh, ảnh, văn học); động cơ
+      examples:
+        - target: Blumen sind ein beliebtes Motiv in der Malerei.
+          translation:
+            vi: Hoa là một đề tài được ưa chuộng trong hội hoạ.
+        - target: Die Polizei kennt das Motiv für die Tat noch nicht.
+          translation:
+            vi: Cảnh sát vẫn chưa biết động cơ gây án.
+      confusion:
+        vi: "Trong nghệ thuật, Motiv là thứ được vẽ hay chụp; trong chuyện hình sự, Motiv là động cơ. Trọng âm ở cuối: mo-TIV."
+
+  # ================= Bài 4: Phê bình phim, kịch =================
+  - key: de:item:b2u08-g-bewerten-redemittel
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Bewerten: Besonders gelungen ist die Musik. Was mich (nicht) überzeugt hat, war das Ende. Der Film lebt von seinen Bildern. Ich kann ihn nur empfehlen. Von dem Film würde ich eher abraten."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Một bài review tốt không chỉ kể nội dung mà đánh giá có lý do. Khen: Besonders gelungen ist …; Was mich überzeugt hat, war …; Der Film lebt von … (sức hút đến từ …). Chê: Was mich nicht überzeugt hat, war …; Leider ist … (zu langatmig, vorhersehbar). Kết luận: Ich kann ihn nur empfehlen hoặc Von dem Film würde ich eher abraten."
+      examples:
+        - target: Besonders gelungen ist die Musik.
+          translation:
+            vi: Thành công nhất là phần âm nhạc.
+        - target: Was mich nicht überzeugt hat, war das Ende.
+          translation:
+            vi: Điều không thuyết phục được tôi là cái kết.
+        - target: Der Film lebt von seinen starken Schauspielern.
+          translation:
+            vi: Bộ phim hấp dẫn nhờ dàn diễn viên xuất sắc.
+      confusion:
+        vi: "Besonders gelungen ist … đảo tính từ lên đầu, động từ ist vẫn ở vị trí 2, chủ ngữ đứng sau. abraten đi với von + Dativ (Von diesem Film rate ich ab), không có tân ngữ Akkusativ; empfehlen thì có: Ich empfehle den Film."
+
+  - key: de:item:b2u08-rezension
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Rezension, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài phê bình, bài điểm (sách, phim, kịch)
+      examples:
+        - target: In der Zeitung stand eine sehr positive Rezension des Films.
+          translation:
+            vi: Trên báo có một bài phê bình rất tích cực về bộ phim.
+        - target: Für den Kurs schreibe ich eine Rezension über ein Theaterstück.
+          translation:
+            vi: Cho lớp học, tôi viết một bài phê bình về một vở kịch.
+      confusion:
+        vi: "Rezension trang trọng hơn die Kritik (cũng nghĩa là bài phê bình). Trên mạng, đánh giá ngắn của khách hàng thường gọi là die Bewertung."
+
+  - key: de:item:b2u08-gelungen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gelungen
+      pos: tính từ
+    back:
+      meaning:
+        vi: thành công, đạt, hay
+      examples:
+        - target: Die Inszenierung ist wirklich gelungen.
+          translation:
+            vi: Phần dàn dựng thật sự thành công.
+        - target: Das war ein gelungener Abend.
+          translation:
+            vi: Đó là một buổi tối rất thành công.
+      confusion:
+        vi: "Vốn là Partizip II của gelingen (Es ist mir gelungen = tôi đã làm được). Làm tính từ trước danh từ thì thêm đuôi: ein gelungener Film; trái nghĩa: misslungen."
+
+  - key: de:item:b2u08-inszenierung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Inszenierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự dàn dựng; bản dàn dựng (của một vở kịch, vở opera)
+      examples:
+        - target: Die neue Inszenierung des Stücks hat das Publikum begeistert.
+          translation:
+            vi: Bản dàn dựng mới của vở kịch đã làm khán giả say mê.
+        - target: Die Inszenierung ist modern, aber sehr verständlich.
+          translation:
+            vi: Cách dàn dựng hiện đại nhưng rất dễ hiểu.
+      confusion:
+        vi: "Động từ: inszenieren (hat inszeniert). Ở Đức, cùng một vở kịch cổ điển thường có nhiều bản dàn dựng khác nhau, nên người ta bình luận về Inszenierung chứ không chỉ về vở kịch."
+
+  - key: de:item:b2u08-regisseur
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Regisseur, -e / die Regisseurin, -nen
+      ipa: /ʁeʒɪˈsøːɐ̯/
+      pos: danh từ
+    back:
+      meaning:
+        vi: đạo diễn
+      examples:
+        - target: Der Regisseur hat den Roman verfilmt.
+          translation:
+            vi: Đạo diễn đã chuyển thể cuốn tiểu thuyết thành phim.
+        - target: Die Regisseurin arbeitet gern mit jungen Schauspielern.
+          translation:
+            vi: Nữ đạo diễn thích làm việc với các diễn viên trẻ.
+      pronunciation_note:
+        vi: "Từ gốc Pháp: g đọc /ʒ/ (như j trong tiếng Pháp), eu đọc như ö dài; trọng âm ở cuối: re-gi-SÖR."
+      confusion:
+        vi: "Công việc đạo diễn: die Regie (Regie führen = làm đạo diễn)."
+
+  - key: de:item:b2u08-theaterstueck
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Theaterstück, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vở kịch
+      examples:
+        - target: Das Theaterstück dauert drei Stunden mit einer Pause.
+          translation:
+            vi: Vở kịch kéo dài ba tiếng, có một lần nghỉ giải lao.
+        - target: Die Schüler führen ein Theaterstück auf.
+          translation:
+            vi: Học sinh diễn một vở kịch.
+      confusion:
+        vi: "Nói ngắn: das Stück. Diễn một vở kịch: ein Stück aufführen (tách: Sie führen ein Stück auf)."
+
+  - key: de:item:b2u08-auffuehrung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Aufführung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi biểu diễn, suất diễn
+      examples:
+        - target: Nach der Aufführung gab es langen Applaus.
+          translation:
+            vi: Sau buổi diễn, khán giả vỗ tay rất lâu.
+        - target: Die letzte Aufführung ist am Sonntag.
+          translation:
+            vi: Suất diễn cuối cùng là vào Chủ nhật.
+      confusion:
+        vi: "Aufführung là một buổi diễn cụ thể; Inszenierung là cách dàn dựng; buổi diễn đầu tiên là die Premiere."
+
+  - key: de:item:b2u08-enttaeuschend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: enttäuschend
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng thất vọng, gây thất vọng
+      examples:
+        - target: Das Ende des Films war ziemlich enttäuschend.
+          translation:
+            vi: Cái kết của bộ phim khá đáng thất vọng.
+        - target: Nach dem enttäuschenden ersten Teil war ich skeptisch.
+          translation:
+            vi: Sau phần một đáng thất vọng, tôi đã hoài nghi.
+      confusion:
+        vi: "enttäuschend (Partizip I) nói về sự việc gây thất vọng; enttäuscht (Partizip II) nói về người bị thất vọng: Der Film war enttäuschend, ich war enttäuscht."
+
+  # Zusatzwortschatz B2U08L4 (10): der Schauspieler, die Bühne, die Premiere, die Hauptrolle, die Szene, das Drehbuch, vorhersehbar, langatmig, empfehlenswert, abraten
+  - key: de:item:b2u08-schauspieler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Schauspieler, - / die Schauspielerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: diễn viên
+      examples:
+        - target: Die Schauspieler spielen sehr überzeugend.
+          translation:
+            vi: Các diễn viên diễn rất thuyết phục.
+        - target: Sie möchte Schauspielerin werden.
+          translation:
+            vi: Cô ấy muốn trở thành diễn viên.
+      confusion:
+        vi: "Nói về nghề không dùng mạo từ: Er ist Schauspieler. Diễn một vai: eine Rolle spielen."
+
+  - key: de:item:b2u08-buehne
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bühne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân khấu
+      examples:
+        - target: Am Ende kamen alle Schauspieler noch einmal auf die Bühne.
+          translation:
+            vi: Cuối buổi, tất cả diễn viên lại ra sân khấu một lần nữa.
+        - target: Auf der Bühne steht nur ein Tisch.
+          translation:
+            vi: Trên sân khấu chỉ có một cái bàn.
+      confusion:
+        vi: "Giới từ hai cách: auf die Bühne kommen (đi đâu → Akkusativ), auf der Bühne stehen (ở đâu → Dativ)."
+
+  - key: de:item:b2u08-premiere
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Premiere, -n
+      ipa: /pʁəˈmi̯eːʁə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi công diễn đầu tiên, buổi ra mắt
+      examples:
+        - target: Die Premiere ist am Samstag, die Karten sind schon ausverkauft.
+          translation:
+            vi: Buổi ra mắt vào thứ Bảy, vé đã bán hết.
+        - target: Zur Premiere kam auch der Regisseur.
+          translation:
+            vi: Đạo diễn cũng đến dự buổi ra mắt.
+      confusion:
+        vi: "Từ gốc Pháp, trọng âm ở -mie-. Dùng cho cả kịch và phim (Filmpremiere)."
+
+  - key: de:item:b2u08-hauptrolle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Hauptrolle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vai chính
+      examples:
+        - target: In der Hauptrolle überzeugt eine junge Schauspielerin.
+          translation:
+            vi: Trong vai chính, một nữ diễn viên trẻ diễn rất thuyết phục.
+        - target: Er spielt in dem Film die Hauptrolle.
+          translation:
+            vi: Anh ấy đóng vai chính trong bộ phim.
+      confusion:
+        vi: "Vai phụ: die Nebenrolle. Nghĩa bóng: eine wichtige Rolle spielen = đóng vai trò quan trọng."
+
+  - key: de:item:b2u08-szene
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Szene, -n
+      ipa: /ˈstseːnə/
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảnh (phim, kịch)
+      examples:
+        - target: Die letzte Szene hat mich sehr berührt.
+          translation:
+            vi: Cảnh cuối làm tôi rất xúc động.
+        - target: Die Szene wurde in Hamburg gedreht.
+          translation:
+            vi: Cảnh này được quay ở Hamburg.
+      confusion:
+        vi: "sz đọc là /sts/, e dài: SZE-ne. Khẩu ngữ: jemandem eine Szene machen = làm ầm lên với ai."
+
+  - key: de:item:b2u08-drehbuch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Drehbuch, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: kịch bản phim
+      examples:
+        - target: Das Drehbuch basiert auf einem Roman.
+          translation:
+            vi: Kịch bản dựa trên một cuốn tiểu thuyết.
+        - target: Die Schauspieler sind gut, aber das Drehbuch hat Schwächen.
+          translation:
+            vi: Diễn viên thì giỏi, nhưng kịch bản có điểm yếu.
+      confusion:
+        vi: "Từ drehen (quay phim) + das Buch. Số nhiều: die Drehbücher."
+
+  - key: de:item:b2u08-vorhersehbar
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: vorhersehbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ đoán trước
+      examples:
+        - target: Die Handlung ist leider sehr vorhersehbar.
+          translation:
+            vi: Tiếc là cốt truyện rất dễ đoán.
+        - target: Das Ende war nicht vorhersehbar.
+          translation:
+            vi: Cái kết không thể đoán trước.
+      confusion:
+        vi: "Từ vorhersehen (thấy trước) + -bar (có thể). Trái nghĩa: überraschend (bất ngờ)."
+
+  - key: de:item:b2u08-langatmig
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: langatmig
+      pos: tính từ
+    back:
+      meaning:
+        vi: dài dòng, lê thê
+      examples:
+        - target: Der Mittelteil des Films ist etwas langatmig.
+          translation:
+            vi: Phần giữa của phim hơi lê thê.
+        - target: Seine Erklärungen sind oft sehr langatmig.
+          translation:
+            vi: Những lời giải thích của anh ấy thường rất dài dòng.
+      confusion:
+        vi: "langatmig là dài mà nhàm, kéo lê; lang chỉ là dài (không chê). Từ lang + der Atem (hơi thở)."
+
+  - key: de:item:b2u08-empfehlenswert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: empfehlenswert
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng xem, đáng đọc, đáng giới thiệu
+      examples:
+        - target: Das Buch ist sehr empfehlenswert.
+          translation:
+            vi: Cuốn sách rất đáng đọc.
+        - target: Ein empfehlenswerter Film für die ganze Familie.
+          translation:
+            vi: Một bộ phim đáng xem cho cả gia đình.
+      confusion:
+        vi: "-wert = đáng: lesenswert (đáng đọc), sehenswert (đáng xem), empfehlenswert (đáng giới thiệu)."
+
+  - key: de:item:b2u08-abraten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: abraten, rät ab, riet ab, hat abgeraten (jemandem von + Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: khuyên (ai) không nên (làm gì)
+      examples:
+        - target: Von diesem Film kann ich nur abraten.
+          translation:
+            vi: Bộ phim này thì tôi khuyên đừng xem.
+        - target: Meine Freundin hat mir von dem Buch abgeraten.
+          translation:
+            vi: Bạn tôi đã khuyên tôi đừng đọc cuốn sách đó.
+      confusion:
+        vi: "Người được khuyên ở Dativ, điều không nên ở von + Dativ: Ich rate dir davon ab. Trái nghĩa: jemandem etwas empfehlen hoặc zu etwas raten."

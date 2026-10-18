@@ -1,0 +1,410 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u08-kunst
+order_index: 3
+level: b2
+title:
+  vi: Bảo tàng – tính từ đi với một cách (Dem Original ähnlich, sich der Sache bewusst)
+objectives:
+  - vi: Tả và bình về một tác phẩm nghệ thuật, một cuộc triển lãm.
+  - vi: Dùng tính từ đi với Dativ (ähnlich, bekannt, dankbar …), với Genitiv (bewusst, sicher, würdig) và Akkusativ chỉ số đo (einen Meter hoch).
+  - vi: Đọc hiểu một đoạn giới thiệu triển lãm.
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u08-redewendungen]
+items:
+  - item: de:item:b2u08-g-adjektive-kasus
+  - item: de:item:b2u08-kunst
+  - item: de:item:b2u08-kuenstler
+  - item: de:item:b2u08-gemaelde
+  - item: de:item:b2u08-skulptur
+  - item: de:item:b2u08-epoche
+  - item: de:item:b2u08-zeitgenoessisch
+  - item: de:item:b2u08-abstrakt
+  - item: de:item:b2u08-ausstellung
+  - item: de:item:b2u08-maler
+  - item: de:item:b2u08-kunstwerk
+  - item: de:item:b2u08-portraet
+  - item: de:item:b2u08-galerie
+  - item: de:item:b2u08-bildhauer
+  - item: de:item:b2u08-original
+  - item: de:item:b2u08-betrachten
+  - item: de:item:b2u08-sammlung
+  - item: de:item:b2u08-meisterwerk
+  - item: de:item:b2u08-motiv
+  - item: de:item:b2u08-g-relativ-wer-was
+    role: reuse
+  - item: de:item:b1u02-g-adjektive-praeposition
+    role: reuse
+  - item: de:item:b1u03-g-genitiv
+    role: reuse
+  - item: de:item:b2u04-faelschung
+    role: reuse
+  - item: de:item:a1u06-museum
+    role: reuse
+  - item: de:item:b2u07-g-kausale-praepositionen
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn tả được một tác phẩm trong bảo tàng, ví dụ: \"Die Skulptur ist drei Meter hoch. Die Kopie ist dem Original sehr ähnlich, und die Künstlerin ist sich dessen bewusst.\""
+  - type: explain
+    text:
+      vi: "Một số tính từ đi thẳng với một danh từ hay đại từ ở Dativ, không cần giới từ: ähnlich, bekannt, dankbar, fremd, nützlich, peinlich, wichtig. Tiếng Việt nói \"giống bản gốc\", \"quen với tôi\", nên người Việt hay thêm wie hay für; tiếng Đức chỉ cần Dativ: Das Bild ist dem Original ähnlich. Das ist mir peinlich."
+  - type: explain
+    text:
+      vi: "Phần Dativ thường đứng trước tính từ: Der Name ist mir bekannt. Với wichtig và nützlich, cách nói với für + Akkusativ cũng đúng (Das ist für mich wichtig); với dankbar, người được cảm ơn ở Dativ, còn lý do đi với für: Ich bin Ihnen dankbar für die Führung."
+  - type: explain
+    text:
+      vi: "Ba tính từ đi với Genitiv, mang văn phong trang trọng: sich (Dat) einer Sache bewusst sein (ý thức được), sich einer Sache sicher sein (chắc chắn về), einer Sache würdig sein (xứng đáng với). Người ý thức ở Dativ (mir, dir, sich), sự việc ở Genitiv: Ich bin mir der Gefahr bewusst; thay cho cả câu thì dùng dessen: Ich bin mir dessen bewusst."
+  - type: explain
+    text:
+      vi: "Số đo đứng trước tính từ chỉ kích thước, tuổi, trọng lượng ở Akkusativ: einen Meter hoch, einen Monat alt, zwei Kilo schwer. Akkusativ chỉ lộ ra ở danh từ giống đực số ít (einen Meter, einen Monat); với số nhiều thì nhìn không khác: drei Meter hoch."
+  - type: deep_explain
+    text:
+      vi: "Trong khẩu ngữ, Genitiv sau bewusst hay sicher thường được tránh: người ta nói Ich bin mir sicher, dass … hoặc Mir ist klar, dass … thay cho Ich bin mir dessen sicher. Đừng nhầm với tính từ đi với giới từ (ôn B1U02): stolz auf + Akk, zufrieden mit + Dat – những tính từ này cần giới từ, còn ähnlich, bewusst thì không. Thêm vài cách nói hay gặp: Er sieht seinem Vater ähnlich (trông giống bố); Das sieht ihm ähnlich! (đúng là kiểu của anh ta); zum Verwechseln ähnlich (giống đến mức dễ nhầm). Về bảo tàng ở Đức: nhiều bảo tàng có ngày giảm giá hoặc miễn phí vé, nhưng quy định mỗi nơi một khác và có thể thay đổi, nên hãy xem trang web của bảo tàng trước khi đi."
+  - type: example
+    target: Die Kopie ist dem Original sehr ähnlich.
+    target_lang: de
+    translation:
+      vi: Bản sao rất giống bản gốc.
+    note:
+      vi: "ähnlich + Dativ: dem Original (das Original → dem). Không thêm wie."
+  - type: example
+    target: Der Name dieses Künstlers ist mir nicht bekannt.
+    target_lang: de
+    translation:
+      vi: Tôi không biết tên người nghệ sĩ này.
+    note:
+      vi: "bekannt + Dativ (mir). dieses Künstlers là Genitiv (ôn B1U03): đuôi -es ở mạo từ và -s ở danh từ."
+  - type: example
+    target: Ich bin Ihnen sehr dankbar für die interessante Führung durch das Museum.
+    target_lang: de
+    translation:
+      vi: Tôi rất biết ơn anh/chị về chuyến tham quan có hướng dẫn thú vị qua bảo tàng.
+    note:
+      vi: "Người được cảm ơn ở Dativ (Ihnen), lý do đi với für + Akkusativ."
+  - type: example
+    target: Die Künstlerin ist sich der Kritik an ihrem Werk bewusst.
+    target_lang: de
+    translation:
+      vi: Nữ nghệ sĩ ý thức được những lời phê bình về tác phẩm của mình.
+    note:
+      vi: "sich (Dativ) + der Kritik (Genitiv, die Kritik → der) + bewusst. Văn phong trang trọng."
+  - type: example
+    target: Dieses Gemälde ist eines großen Museums würdig, finden viele Kritiker.
+    target_lang: de
+    translation:
+      vi: Nhiều nhà phê bình cho rằng bức tranh này xứng đáng với một bảo tàng lớn.
+    note:
+      vi: "würdig + Genitiv: eines großen Museums (ein großes Museum → eines großen Museums). Rất trang trọng."
+  - type: example
+    target: Die Skulptur vor dem Eingang ist fünf Meter hoch und wiegt über eine Tonne.
+    target_lang: de
+    translation:
+      vi: Bức tượng trước lối vào cao năm mét và nặng hơn một tấn.
+    note:
+      vi: "fünf Meter hoch: số đo ở Akkusativ đứng trước tính từ (số nhiều nên nhìn không khác)."
+  - type: example
+    target: Die Fälschung war dem Original so ähnlich, dass sogar Fachleute sie für echt hielten.
+    target_lang: de
+    translation:
+      vi: Bức tranh giả giống bản gốc đến mức ngay cả giới chuyên môn cũng tưởng là thật.
+    note:
+      vi: "Ôn B2U04: die Fälschung (đồ giả). so ähnlich, dass … = giống đến mức …; etwas für echt halten = cho là thật."
+  - type: example
+    target: Wer moderne Kunst mag, dem ist diese Ausstellung sehr zu empfehlen. Der Maler ist zu Recht stolz auf seine neuen Bilder.
+    target_lang: de
+    translation:
+      vi: Ai thích nghệ thuật hiện đại thì rất nên xem cuộc triển lãm này. Người hoạ sĩ tự hào về những bức tranh mới của mình là hoàn toàn xứng đáng.
+    note:
+      vi: "Ôn bài 1: Wer …, dem … (khác cách nên phải có dem). So sánh: stolz đi với giới từ auf + Akkusativ (ôn B1U02), khác ähnlich hay bewusst không cần giới từ."
+  - type: example
+    target: Dank einer großen Spende konnte das Museum das Gemälde kaufen. Aus Neugier sind wir gleich am ersten Tag in die Ausstellung gegangen.
+    target_lang: de
+    translation:
+      vi: Nhờ một khoản tài trợ lớn mà bảo tàng mua được bức tranh. Vì tò mò, chúng tôi đi xem triển lãm ngay ngày đầu tiên.
+    note:
+      vi: "Ôn B2U07: dank + Genitiv (nguyên nhân tích cực: einer großen Spende), aus + danh từ không mạo từ (động cơ bên trong: aus Neugier)."
+  - type: common_mistake
+    wrong: Das Bild ist ähnlich wie dem Original.
+    right: Das Bild ist dem Original ähnlich.
+    target_lang: de
+    note:
+      vi: "ähnlich đi thẳng với Dativ, không thêm wie (tiếng Việt \"giống như\" dễ khiến ta thêm wie)."
+  - type: common_mistake
+    wrong: Ich bin mir das bewusst.
+    right: Ich bin mir dessen bewusst.
+    target_lang: de
+    note:
+      vi: "bewusst cần Genitiv: dessen (của das), der Sache, der Gefahr. Trong khẩu ngữ có thể nói Das ist mir bewusst (das làm chủ ngữ)."
+  - type: common_mistake
+    wrong: Die Leinwand ist ein Meter breit.
+    right: Die Leinwand ist einen Meter breit.
+    target_lang: de
+    note:
+      vi: "Số đo trước tính từ ở Akkusativ: einen Meter breit, einen Monat alt."
+  - type: summary
+    points:
+      - vi: "+ Dativ: ähnlich, bekannt, dankbar, fremd, nützlich, peinlich, wichtig – Das ist mir peinlich."
+      - vi: "+ Genitiv (trang trọng): sich einer Sache bewusst/sicher sein, einer Sache würdig sein – Ich bin mir dessen bewusst."
+      - vi: "+ Akkusativ (số đo): einen Meter hoch, einen Monat alt, zwei Kilo schwer."
+      - vi: "Không thêm wie/für khi tính từ đã đi với một cách (dem Original ähnlich)."
+      - vi: "Từ vựng: die Kunst, der Künstler, das Gemälde, die Skulptur, die Epoche, zeitgenössisch, abstrakt, die Ausstellung."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u08l3-mcq-dem-original
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      stem: "Die Kopie ist ___ Original sehr ähnlich."
+      stem_lang: de
+      options:
+        - { id: o2a, text: "dem", lang: de }
+        - { id: o6b, text: "das", lang: de }
+        - { id: o4c, text: "des", lang: de }
+        - { id: o8d, text: "den", lang: de }
+    answer:
+      correct_option_id: o2a
+    explanation:
+      vi: "ähnlich đi với Dativ; das Original ở Dativ là dem Original. das là Nom/Akk, des là Genitiv, den không đi với danh từ giống trung số ít."
+    display_answer: dem
+
+  - key: de:exercise:b2u08l3-mcq-bewusst
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      stem: "Chọn câu đúng: \"Tôi ý thức được trách nhiệm của mình.\""
+      stem_lang: vi
+      options:
+        - { id: v3a, text: "Ich bin mir meiner Verantwortung bewusst.", lang: de }
+        - { id: v7b, text: "Ich bin mir meine Verantwortung bewusst.", lang: de }
+        - { id: v1c, text: "Ich bin mich meiner Verantwortung bewusst.", lang: de }
+        - { id: v5d, text: "Ich bin mir mit meiner Verantwortung bewusst.", lang: de }
+    answer:
+      correct_option_id: v3a
+    explanation:
+      vi: "sich einer Sache bewusst sein: người ý thức ở Dativ (mir), sự việc ở Genitiv (meiner Verantwortung). meine là Akkusativ, mich là Akkusativ, và bewusst không đi với giới từ mit."
+    display_answer: Ich bin mir meiner Verantwortung bewusst.
+
+  - key: de:exercise:b2u08l3-mcq-lesen-original
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-original
+    prompt:
+      stem: "Die Ausstellung \"Licht und Farbe\" zeigt rund 60 Werke zeitgenössischer Künstler. Im Mittelpunkt steht ein zwei Meter hohes Gemälde, das einem berühmten Bild aus dem 17. Jahrhundert sehr ähnlich ist. Es ist aber kein Original, sondern eine moderne Kopie. Wer mit Kindern kommt, dem empfiehlt das Museum die Familienführung am Sonntag. — Richtig oder falsch? Das große Gemälde wurde im 17. Jahrhundert gemalt."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "Bức tranh chỉ giống (ähnlich) một bức tranh nổi tiếng thế kỷ 17; văn bản nói rõ Es ist aber kein Original, sondern eine moderne Kopie. Câu này sai. (Triển lãm là hư cấu.)"
+    display_answer: Falsch
+
+  - key: de:exercise:b2u08l3-mcq-lesen-hoch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-gemaelde
+    prompt:
+      stem: "Die Ausstellung \"Licht und Farbe\" zeigt rund 60 Werke zeitgenössischer Künstler. Im Mittelpunkt steht ein zwei Meter hohes Gemälde, das einem berühmten Bild aus dem 17. Jahrhundert sehr ähnlich ist. Es ist aber kein Original, sondern eine moderne Kopie. Wer mit Kindern kommt, dem empfiehlt das Museum die Familienführung am Sonntag. — Richtig oder falsch? Für Familien gibt es am Sonntag ein besonderes Angebot."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Wer mit Kindern kommt, dem empfiehlt das Museum die Familienführung am Sonntag – ai đi cùng trẻ em thì bảo tàng giới thiệu chuyến tham quan có hướng dẫn cho gia đình vào Chủ nhật. Câu này đúng."
+    display_answer: Richtig
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u08l3-fill-meter-original
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      template: "Die Leinwand ist {{b1}} (ein) Meter breit, und das Bild ist {{b2}} (das) Original zum Verwechseln ähnlich."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [einen]
+        b2: [dem]
+    known_wrong:
+      - answer: ein
+        feedback_vi: Số đo trước tính từ ở Akkusativ – einen Meter breit.
+        error_tag: case_dat_akk
+      - answer: einem
+        feedback_vi: Số đo trước tính từ ở Akkusativ, không phải Dativ – einen Meter.
+        error_tag: case_dat_akk
+      - answer: das
+        feedback_vi: ähnlich đi với Dativ – dem Original.
+        error_tag: case_dat_akk
+      - answer: des
+        feedback_vi: ähnlich đi với Dativ, không phải Genitiv – dem Original.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Ô 1: số đo đứng trước breit ở Akkusativ; der Meter (giống đực) → einen Meter. Ô 2: ähnlich + Dativ; das Original → dem Original. zum Verwechseln ähnlich = giống đến mức dễ nhầm."
+    display_answer: "Die Leinwand ist einen Meter breit, und das Bild ist dem Original zum Verwechseln ähnlich."
+
+  - key: de:exercise:b2u08l3-fill-risikos-wuerdig
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      template: "Der Künstler war sich {{b1}} (das) Risikos bewusst. Heute finden viele Kritiker, dass sein Werk {{b2}} (ein) großen Museums würdig ist."
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [des]
+        b2: [eines]
+    known_wrong:
+      - answer: das
+        feedback_vi: bewusst đi với Genitiv – des Risikos (danh từ đã có đuôi Genitiv -s).
+        error_tag: case_genitive
+      - answer: dem
+        feedback_vi: bewusst đi với Genitiv, không phải Dativ – des Risikos.
+        error_tag: case_genitive
+      - answer: einem
+        feedback_vi: würdig đi với Genitiv – eines großen Museums.
+        error_tag: case_genitive
+      - answer: ein
+        feedback_vi: würdig đi với Genitiv – eines großen Museums (Museums đã có đuôi -s).
+        error_tag: case_genitive
+    explanation:
+      vi: "Ô 1: sich einer Sache bewusst sein → Genitiv; das Risiko → des Risikos. Ô 2: einer Sache würdig sein → Genitiv; ein großes Museum → eines großen Museums. Đuôi -s ở Risikos, Museums là dấu hiệu Genitiv."
+    display_answer: "Der Künstler war sich des Risikos bewusst. Heute finden viele Kritiker, dass sein Werk eines großen Museums würdig ist."
+
+  - key: de:exercise:b2u08l3-tr-name-bekannt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      source_text: "Tôi biết tên của người nghệ sĩ này. (dùng … ist mir bekannt; nghệ sĩ = der Künstler)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Name dieses Künstlers ist mir bekannt.
+        - Der Name des Künstlers ist mir bekannt.
+        - Mir ist der Name dieses Künstlers bekannt.
+        - Mir ist der Name des Künstlers bekannt.
+        - Der Name dieses Künstlers ist mir schon bekannt.
+        - Der Name des Künstlers ist mir schon bekannt.
+    known_wrong:
+      - answer: Der Name dieses Künstlers ist mich bekannt.
+        feedback_vi: bekannt đi với Dativ – mir, không phải mich.
+        error_tag: case_dat_akk
+      - answer: Der Name dieses Künstler ist mir bekannt.
+        feedback_vi: Genitiv giống đực cần đuôi -s ở danh từ – dieses Künstlers.
+        error_tag: case_genitive
+      - answer: Der Name ist mir bekannt von diesem Künstler.
+        feedback_vi: Câu Đức tự nhiên dùng Genitiv ngay sau danh từ – der Name dieses Künstlers.
+        error_tag: word_order
+      - answer: Der Name dieses Künstlers ist für mich bekannt.
+        feedback_vi: bekannt (quen biết) đi thẳng với Dativ – mir bekannt, không dùng für.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "Sự vật được biết đến là chủ ngữ (der Name), người biết ở Dativ (mir) đứng trước bekannt. \"của người nghệ sĩ này\" → Genitiv: dieses Künstlers (hoặc des Künstlers). Có thể đưa Mir lên đầu câu: Mir ist der Name … bekannt."
+    display_answer: Der Name dieses Künstlers ist mir bekannt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u08l3-wb-talents-bewusst
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cô ấy không ý thức được tài năng của mình.\""
+      tokens:
+        - { id: t-bewusst, text: bewusst }
+        - { id: t-ihres, text: ihres }
+        - { id: t-sie, text: Sie }
+        - { id: t-nicht, text: nicht }
+        - { id: t-sich, text: sich }
+        - { id: t-talents, text: Talents }
+        - { id: t-ist, text: ist }
+    answer:
+      orders:
+        - [t-sie, t-ist, t-sich, t-ihres, t-talents, t-nicht, t-bewusst]
+    explanation:
+      vi: "sich (Dativ) đứng ngay sau động từ ist; phần Genitiv ihres Talents đứng trước nicht và tính từ bewusst ở cuối. das Talent → Genitiv ihres Talents."
+    display_answer: Sie ist sich ihres Talents nicht bewusst.
+
+  - key: de:exercise:b2u08l3-tr-frage-peinlich
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      source_text: Diese Frage ist mir ein bisschen peinlich.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Câu hỏi này làm tôi hơi ngại.
+        - Câu hỏi này khiến tôi hơi ngại.
+        - Câu hỏi này làm tôi hơi xấu hổ.
+        - Câu hỏi này khiến tôi hơi xấu hổ.
+        - Câu hỏi này làm tôi hơi ngượng.
+        - Câu hỏi này khiến tôi hơi ngượng.
+        - Tôi hơi ngại với câu hỏi này.
+        - Tôi thấy hơi ngại với câu hỏi này.
+        - Tôi hơi ngại khi hỏi câu này.
+        - Câu hỏi này hơi khó nói với tôi.
+        - Câu hỏi này làm tôi thấy hơi ngại.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Câu hỏi này hơi khó.
+        feedback_vi: "peinlich không phải là khó (schwierig) mà là gây ngượng, khiến ngại: mir … peinlich = tôi thấy ngại."
+        error_tag: meaning
+    explanation:
+      vi: "peinlich + Dativ: Das ist mir peinlich = điều đó làm tôi ngại/ngượng. ein bisschen = hơi, một chút."
+    display_answer: Câu hỏi này làm tôi hơi ngại.
+
+  - key: de:exercise:b2u08l3-mcq-dankbar-fuehrung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      stem: "Cuối buổi tham quan, bạn nói với hướng dẫn viên (dùng Sie): \"Tôi rất biết ơn anh/chị về chuyến tham quan.\" Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: k6a, text: "Ich bin Ihnen sehr dankbar für die Führung.", lang: de }
+        - { id: k2b, text: "Ich bin Sie sehr dankbar für die Führung.", lang: de }
+        - { id: k9c, text: "Ich bin Ihnen sehr dankbar mit der Führung.", lang: de }
+        - { id: k4d, text: "Ich bin sehr dankbar wie Ihnen für die Führung.", lang: de }
+    answer:
+      correct_option_id: k6a
+    explanation:
+      vi: "dankbar: người được cảm ơn ở Dativ (Ihnen), lý do đi với für + Akkusativ (für die Führung). Sie là Akkusativ/Nominativ, mit không đi với dankbar để nêu lý do, và không thêm wie."
+    display_answer: Ich bin Ihnen sehr dankbar für die Führung.

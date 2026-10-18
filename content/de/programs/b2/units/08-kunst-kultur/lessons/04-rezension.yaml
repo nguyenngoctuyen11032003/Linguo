@@ -1,0 +1,434 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u08-rezension
+order_index: 4
+level: b2
+title:
+  vi: Phê bình phim, kịch (Eine Rezension)
+objectives:
+  - vi: Nghe và đọc hiểu các nhận xét ngắn về phim, vở kịch – khen, chê hay giới thiệu.
+  - vi: Đánh giá một bộ phim hay vở kịch có lý lẽ, với Redemittel như Besonders gelungen ist …, Was mich (nicht) überzeugt hat, war …
+  - vi: Kết luận rõ ràng – nên xem (Ich kann ihn nur empfehlen) hay không (Von … würde ich eher abraten).
+estimated_minutes: 22
+skills: [listening, speaking, writing]
+prerequisites: [de:lesson:b2u08-kunst]
+items:
+  - item: de:item:b2u08-g-bewerten-redemittel
+  - item: de:item:b2u08-rezension
+  - item: de:item:b2u08-gelungen
+  - item: de:item:b2u08-inszenierung
+  - item: de:item:b2u08-regisseur
+  - item: de:item:b2u08-theaterstueck
+  - item: de:item:b2u08-auffuehrung
+  - item: de:item:b2u08-enttaeuschend
+  - item: de:item:b2u08-schauspieler
+  - item: de:item:b2u08-buehne
+  - item: de:item:b2u08-premiere
+  - item: de:item:b2u08-hauptrolle
+  - item: de:item:b2u08-szene
+  - item: de:item:b2u08-drehbuch
+  - item: de:item:b2u08-vorhersehbar
+  - item: de:item:b2u08-langatmig
+  - item: de:item:b2u08-empfehlenswert
+  - item: de:item:b2u08-abraten
+  - item: de:item:b2u08-g-relativ-wer-was
+    role: reuse
+  - item: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+    role: reuse
+  - item: de:item:b2u06-g-als-ob
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+  - item: de:item:b1u09-publikum
+    role: reuse
+  - item: de:item:b1u02-enttaeuscht
+    role: reuse
+  - item: de:item:a2u07-zuschauer
+    role: reuse
+  - item: de:item:a2u05-spannend
+    role: reuse
+  - item: de:item:b2u07-g-infinitiv-perfekt
+    role: reuse
+  - item: de:item:b2u07-g-argumentation-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói và viết được một nhận xét có lý lẽ về phim hay kịch, ví dụ: \"Besonders gelungen ist die Musik. Was mich nicht überzeugt hat, war das Ende. Trotzdem kann ich den Film nur empfehlen.\""
+  - type: explain
+    text:
+      vi: "Một bài review (die Rezension) thường có bốn phần: giới thiệu (tên, thể loại, đạo diễn), tóm tắt ngắn nội dung ở thì hiện tại, đánh giá có lý do, và kết luận có lời khuyên. Lỗi hay gặp của người học là chỉ kể nội dung; người đọc review muốn biết bạn thấy thế nào và vì sao."
+  - type: explain
+    text:
+      vi: "Khen: Besonders gelungen ist die Musik (tính từ lên đầu, ist vẫn ở vị trí 2, chủ ngữ đứng sau). Was mich überzeugt hat, war … dùng mệnh đề was của bài 1; nếu phần sau là số nhiều thì động từ chia số nhiều: Was mich überzeugt hat, waren die Schauspieler. Der Film lebt von … = bộ phim hấp dẫn chủ yếu nhờ …"
+  - type: explain
+    text:
+      vi: "Chê lịch sự và cụ thể: Was mich nicht überzeugt hat, war das Ende. Leider ist die Handlung vorhersehbar, der Mittelteil etwas langatmig. Muốn nói điều mình mong khác đi, dùng Konjunktiv II quá khứ: Ich hätte mir ein mutigeres Ende gewünscht."
+  - type: explain
+    text:
+      vi: "Tránh khen chê chung chung như sehr gut, nicht schlecht: hãy nói cái gì (Musik, Drehbuch, Hauptrolle, Inszenierung) và vì sao. Kết luận: Ich kann den Film nur empfehlen hoặc Der Film ist sehr empfehlenswert; nếu không nên xem: Von dem Film würde ich eher abraten (abraten + von + Dativ)."
+  - type: deep_explain
+    text:
+      vi: "Phần tóm tắt nội dung (Inhaltsangabe) viết ở Präsens, không kể cái kết để khỏi \"spoil\" người đọc. Review đăng báo hay viết ở lớp dùng ngữ vực trung tính đến trang trọng: tránh khẩu ngữ như Der Film ist Mist hay Ich hab nur Bahnhof verstanden. Ở sân khấu Đức, cùng một vở kịch thường có nhiều bản dàn dựng khác nhau, nên các nhà phê bình bình luận nhiều về Inszenierung và Regie, không chỉ về bản thân vở kịch. Một câu kết cân bằng hay gặp: Trotz kleiner Schwächen ist der Film sehenswert."
+  - type: example
+    target: Besonders gelungen ist die Musik.
+    target_lang: de
+    translation:
+      vi: Thành công nhất là phần âm nhạc.
+    note:
+      vi: "gelungen đứng đầu để nhấn mạnh, ist ở vị trí 2, chủ ngữ die Musik đứng sau."
+  - type: example
+    target: Was mich überzeugt hat, waren vor allem die Schauspieler.
+    target_lang: de
+    translation:
+      vi: Điều thuyết phục tôi nhất là các diễn viên.
+    note:
+      vi: "Mệnh đề was (bài 1); động từ chính chia theo danh từ số nhiều die Schauspieler → waren."
+  - type: example
+    target: Der Film lebt von seinen starken Bildern und der ruhigen Musik.
+    target_lang: de
+    translation:
+      vi: Bộ phim hấp dẫn nhờ những hình ảnh mạnh mẽ và âm nhạc êm đềm.
+    note:
+      vi: "leben von + Dativ: sức hút của phim đến từ … (nghĩa đen: sống nhờ)."
+  - type: example
+    target: Leider ist die Handlung ziemlich vorhersehbar, und im Mittelteil wird der Film langatmig.
+    target_lang: de
+    translation:
+      vi: Tiếc là cốt truyện khá dễ đoán, và đến đoạn giữa thì phim trở nên lê thê.
+    note:
+      vi: "Chê cụ thể: nói rõ phần nào (Handlung, Mittelteil) và vì sao (vorhersehbar, langatmig)."
+  - type: example
+    target: Ich hätte mir ein mutigeres Ende gewünscht.
+    target_lang: de
+    translation:
+      vi: Tôi đã mong có một cái kết táo bạo hơn.
+    note:
+      vi: "Ôn B2U06: Konjunktiv II quá khứ (hätte … gewünscht) – điều mong muốn không thành, cách chê nhẹ nhàng."
+  - type: example
+    target: Manchmal wirkt es, als ob der Regisseur selbst nicht wüsste, wie die Geschichte enden soll.
+    target_lang: de
+    translation:
+      vi: Đôi khi có cảm giác như chính đạo diễn cũng không biết câu chuyện nên kết thúc thế nào.
+    note:
+      vi: "Ôn B2U06: als ob + Konjunktiv II, động từ chia (wüsste) ở cuối."
+  - type: example
+    target: Das Publikum war begeistert, ich dagegen war eher enttäuscht.
+    target_lang: de
+    translation:
+      vi: Khán giả thì phấn khích, còn tôi lại khá thất vọng.
+    note:
+      vi: "enttäuscht nói về người (tôi thất vọng); enttäuschend nói về sự việc (bộ phim gây thất vọng)."
+  - type: example
+    target: Meiner Meinung nach ist die Inszenierung sehr gelungen, deshalb kann ich das Stück nur empfehlen.
+    target_lang: de
+    translation:
+      vi: Theo tôi, phần dàn dựng rất thành công, vì vậy tôi rất khuyên mọi người nên xem vở kịch.
+    note:
+      vi: "Ôn B1U06: Meiner Meinung nach + động từ ở vị trí 2. Ich kann … nur empfehlen = tôi chỉ có thể khen, tức là rất nên xem."
+  - type: example
+    target: Für viele Zuschauer bleibt der Film bis zur letzten Szene spannend.
+    target_lang: de
+    translation:
+      vi: Với nhiều khán giả, bộ phim hấp dẫn cho đến cảnh cuối cùng.
+    note:
+      vi: "der Zuschauer (khán giả xem phim, kịch); spannend = hấp dẫn, gay cấn."
+  - type: example
+    target: Der Regisseur behauptet, das Drehbuch in nur drei Wochen geschrieben zu haben.
+    target_lang: de
+    translation:
+      vi: Đạo diễn khẳng định đã viết kịch bản chỉ trong ba tuần.
+    note:
+      vi: "Ôn B2U07: Infinitiv Perfekt (geschrieben zu haben) – việc viết xảy ra trước lúc khẳng định."
+  - type: example
+    target: Für den Film spricht, dass die Schauspieler überzeugen. Dagegen lässt sich einwenden, dass die Handlung vorhersehbar ist.
+    target_lang: de
+    translation:
+      vi: Điểm cộng của bộ phim là các diễn viên diễn thuyết phục. Mặt khác, có thể phản bác rằng cốt truyện dễ đoán.
+    note:
+      vi: "Ôn B2U07: Redemittel lập luận dùng tốt để cân nhắc ưu, nhược điểm trong một bài review."
+  - type: common_mistake
+    wrong: Der Film ist sehr gut. Ich finde ihn gut.
+    right: Besonders gelungen ist die Kamera, denn die Bilder erzählen mehr als die Dialoge.
+    target_lang: de
+    note:
+      vi: "Khen chung chung không thuyết phục; nói rõ cái gì hay và vì sao."
+  - type: common_mistake
+    wrong: Besonders gelungen die Musik ist.
+    right: Besonders gelungen ist die Musik.
+    target_lang: de
+    note:
+      vi: "Câu chính: động từ ist luôn ở vị trí 2, ngay sau Besonders gelungen."
+  - type: common_mistake
+    wrong: Ich kann den Film nur abraten.
+    right: Von dem Film kann ich nur abraten.
+    target_lang: de
+    note:
+      vi: "abraten không có tân ngữ Akkusativ; điều không nên đi với von + Dativ (davon, von dem Film)."
+  - type: summary
+    points:
+      - vi: "Bố cục: giới thiệu – tóm tắt ngắn (Präsens) – đánh giá có lý do – kết luận."
+      - vi: "Khen: Besonders gelungen ist …; Was mich überzeugt hat, war/waren …; Der Film lebt von …"
+      - vi: "Chê: Was mich nicht überzeugt hat, war …; Leider ist … vorhersehbar/langatmig; Ich hätte mir … gewünscht."
+      - vi: "Kết luận: Ich kann ihn nur empfehlen / empfehlenswert; Von … würde ich eher abraten."
+      - vi: "Từ vựng: die Rezension, gelungen, die Inszenierung, der Regisseur, das Theaterstück, die Aufführung, enttäuschend."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u08l4-listen-hauptrolle
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-gelungen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Inszenierung ist wirklich gelungen. Besonders überzeugt hat mich die junge Schauspielerin in der Hauptrolle.
+      options:
+        - { id: a2a, text: "Người nói khen phần dàn dựng, đặc biệt là nữ diễn viên trẻ đóng vai chính.", lang: vi }
+        - { id: a7b, text: "Người nói chê phần dàn dựng nhưng khen nữ diễn viên trẻ.", lang: vi }
+        - { id: a4c, text: "Người nói khen nữ diễn viên trẻ đóng vai phụ.", lang: vi }
+        - { id: a9d, text: "Người nói thấy vở kịch đáng thất vọng.", lang: vi }
+    answer:
+      correct_option_id: a2a
+    explanation:
+      vi: "Die Inszenierung ist wirklich gelungen = phần dàn dựng thật sự thành công; Besonders überzeugt hat mich … in der Hauptrolle = đặc biệt thuyết phục tôi là nữ diễn viên trẻ đóng vai chính."
+    display_answer: Người nói khen phần dàn dựng, đặc biệt là nữ diễn viên trẻ đóng vai chính.
+
+  - key: de:exercise:b2u08l4-listen-abraten
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-abraten
+    prompt:
+      audio_asset_id: null
+      fallback_text: Leider war der Film ziemlich enttäuschend. Die Handlung ist vorhersehbar, und nach einer Stunde wird es langatmig. Von diesem Film würde ich eher abraten.
+      options:
+        - { id: b3a, text: "Đánh giá tiêu cực: cốt truyện dễ đoán, về sau lê thê; người nói khuyên không nên xem.", lang: vi }
+        - { id: b8b, text: "Đánh giá tích cực: cốt truyện bất ngờ, người nói khuyên nên xem.", lang: vi }
+        - { id: b5c, text: "Người nói thấy phim hơi dài nhưng vẫn khuyên nên xem.", lang: vi }
+        - { id: b1d, text: "Người nói chưa xem phim nên không muốn đánh giá.", lang: vi }
+    answer:
+      correct_option_id: b3a
+    explanation:
+      vi: "enttäuschend = đáng thất vọng; vorhersehbar = dễ đoán; langatmig = lê thê; Von diesem Film würde ich eher abraten = tôi khuyên là không nên xem phim này."
+    display_answer: "Đánh giá tiêu cực: cốt truyện dễ đoán, về sau lê thê; người nói khuyên không nên xem."
+
+  - key: de:exercise:b2u08l4-listen-musik
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-g-bewerten-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Film lebt vor allem von seiner Musik und seinen schönen Bildern. Das Drehbuch hat zwar Schwächen, aber insgesamt kann ich ihn empfehlen.
+      options:
+        - { id: c4a, text: "Sức hút của phim đến từ âm nhạc và hình ảnh; kịch bản có điểm yếu nhưng nhìn chung vẫn nên xem.", lang: vi }
+        - { id: c6b, text: "Phim hay nhất ở kịch bản, còn âm nhạc thì yếu.", lang: vi }
+        - { id: c9c, text: "Vì kịch bản yếu nên người nói khuyên không nên xem.", lang: vi }
+        - { id: c2d, text: "Phim kể về cuộc đời của một nhạc sĩ.", lang: vi }
+    answer:
+      correct_option_id: c4a
+    explanation:
+      vi: "Der Film lebt von … = bộ phim hấp dẫn nhờ …; Das Drehbuch hat zwar Schwächen, aber … = kịch bản tuy có điểm yếu nhưng …; insgesamt kann ich ihn empfehlen = nhìn chung tôi giới thiệu nên xem."
+    display_answer: "Sức hút của phim đến từ âm nhạc và hình ảnh; kịch bản có điểm yếu nhưng nhìn chung vẫn nên xem."
+
+  - key: de:exercise:b2u08l4-mcq-bewertung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-g-bewerten-redemittel
+    prompt:
+      stem: "Câu nào là câu đánh giá, không chỉ kể nội dung phim?"
+      stem_lang: vi
+      options:
+        - { id: d5a, text: "Besonders gelungen ist die letzte Szene am Meer.", lang: de }
+        - { id: d1b, text: "In dem Film geht es um eine Familie in Hamburg.", lang: de }
+        - { id: d8c, text: "Die Hauptfigur zieht nach dem Abitur nach Berlin.", lang: de }
+        - { id: d3d, text: "Am Ende treffen sich die beiden Schwestern wieder.", lang: de }
+    answer:
+      correct_option_id: d5a
+    explanation:
+      vi: "Besonders gelungen ist … là lời đánh giá (cảnh cuối rất thành công). Ba câu còn lại chỉ tóm tắt nội dung – cần thiết nhưng chưa phải là đánh giá."
+    display_answer: Besonders gelungen ist die letzte Szene am Meer.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u08l4-fill-gelungen-ueberzeugt
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-g-bewerten-redemittel
+    prompt:
+      template: "Besonders {{b1}} (gelingen, Partizip II) ist die Musik. Was mich dagegen nicht {{b2}} (überzeugen) hat, war das Drehbuch."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [gelungen]
+        b2: [überzeugt]
+    known_wrong:
+      - answer: gelingt
+        feedback_vi: Sau ist cần dạng Partizip II dùng như tính từ – gelungen.
+        error_tag: participle_form
+      - answer: geüberzeugt
+        feedback_vi: über- ở überzeugen không tách nên Partizip II không có ge- – überzeugt.
+        error_tag: participle_form
+      - answer: überzeugen
+        feedback_vi: Perfekt cần Partizip II – hat … überzeugt.
+        error_tag: participle_form
+    explanation:
+      vi: "Ô 1: Besonders gelungen ist … – gelungen là Partizip II của gelingen, dùng như tính từ. Ô 2: Perfekt hat + Partizip II; überzeugen có tiền tố không tách nên Partizip II là überzeugt (không có ge-)."
+    display_answer: "Besonders gelungen ist die Musik. Was mich dagegen nicht überzeugt hat, war das Drehbuch."
+
+  - key: de:exercise:b2u08l4-fill-lebt-abraten
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-bewerten-redemittel
+    prompt:
+      template: "Das Stück {{b1}} (leben) von seinen starken Schauspielern. Von der neuen Inszenierung kann ich aber nur {{b2}} (ab…)."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [lebt]
+        b2: [abraten]
+    known_wrong:
+      - answer: leben
+        feedback_vi: Chủ ngữ là das Stück (số ít) → lebt.
+        error_tag: verb_conjugation
+      - answer: abgeraten
+        feedback_vi: Sau động từ khuyết thiếu kann cần nguyên thể – abraten.
+        error_tag: verb_form
+      - answer: abrät
+        feedback_vi: Sau kann cần nguyên thể ở cuối câu – abraten.
+        error_tag: verb_form
+    explanation:
+      vi: "Ô 1: leben von + Dativ (bộ phim/vở kịch hấp dẫn nhờ …), chủ ngữ das Stück → lebt. Ô 2: von + Dativ đi với abraten; sau kann động từ ở dạng nguyên thể cuối câu: kann … nur abraten."
+    display_answer: "Das Stück lebt von seinen starken Schauspielern. Von der neuen Inszenierung kann ich aber nur abraten."
+
+  - key: de:exercise:b2u08l4-tr-nur-empfehlen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-bewerten-redemittel
+    prompt:
+      source_text: "Vở kịch này thì tôi rất khuyên mọi người nên xem. (dùng nur empfehlen; vở kịch = das Theaterstück)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Dieses Theaterstück kann ich nur empfehlen.
+        - Das Theaterstück kann ich nur empfehlen.
+        - Ich kann dieses Theaterstück nur empfehlen.
+        - Ich kann das Theaterstück nur empfehlen.
+        - Dieses Theaterstück kann ich wirklich nur empfehlen.
+        - Ich kann dieses Theaterstück wirklich nur empfehlen.
+        - Dieses Theaterstück kann ich euch nur empfehlen.
+        - Dieses Theaterstück kann ich Ihnen nur empfehlen.
+        - Ich kann euch dieses Theaterstück nur empfehlen.
+        - Ich kann Ihnen dieses Theaterstück nur empfehlen.
+        - Dieses Theaterstück kann ich jedem nur empfehlen.
+        - Ich kann dieses Theaterstück jedem nur empfehlen.
+    known_wrong:
+      - answer: Ich kann nur empfehlen dieses Theaterstück.
+        feedback_vi: Động từ nguyên thể empfehlen đứng cuối câu – Ich kann dieses Theaterstück nur empfehlen.
+        error_tag: verb_position
+      - answer: Ich kann dieses Theaterstück nur empfohlen.
+        feedback_vi: Sau kann cần nguyên thể – empfehlen.
+        error_tag: verb_form
+      - answer: Von diesem Theaterstück kann ich nur empfehlen.
+        feedback_vi: empfehlen có tân ngữ Akkusativ (dieses Theaterstück), không đi với von; von dùng với abraten.
+        error_tag: preposition
+    explanation:
+      vi: "Ich kann … nur empfehlen = tôi chỉ có thể khen, tức là rất nên xem. empfehlen có tân ngữ Akkusativ (dieses Theaterstück), nguyên thể đứng cuối sau modal kann; tân ngữ có thể đưa lên đầu câu."
+    display_answer: Dieses Theaterstück kann ich nur empfehlen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u08l4-wb-was-ueberzeugt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-bewerten-redemittel
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Điều thuyết phục tôi là âm nhạc.\""
+      tokens:
+        - { id: u-musik, text: Musik }
+        - { id: u-hat, text: hat }
+        - { id: u-was, text: Was }
+        - { id: u-komma, text: "," }
+        - { id: u-war, text: war }
+        - { id: u-mich, text: mich }
+        - { id: u-die, text: die }
+        - { id: u-ueberzeugt, text: überzeugt }
+    answer:
+      orders:
+        - [u-was, u-mich, u-ueberzeugt, u-hat, u-komma, u-war, u-die, u-musik]
+    explanation:
+      vi: "Mệnh đề was đứng đầu, động từ chia hat ở cuối mệnh đề (überzeugt hat). Câu chính tiếp ngay bằng động từ war, rồi đến die Musik; không cần das vì hai vế cùng Nominativ."
+    display_answer: Was mich überzeugt hat, war die Musik.
+
+  - key: de:exercise:b2u08l4-tr-inszenierung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u08-inszenierung
+    prompt:
+      source_text: Besonders gelungen ist die Inszenierung des jungen Regisseurs.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thành công nhất là phần dàn dựng của vị đạo diễn trẻ.
+        - Đặc biệt thành công là phần dàn dựng của vị đạo diễn trẻ.
+        - Đặc biệt thành công là cách dàn dựng của vị đạo diễn trẻ.
+        - Thành công nhất là cách dàn dựng của vị đạo diễn trẻ.
+        - Thành công nhất là phần dàn dựng của đạo diễn trẻ.
+        - Đặc biệt thành công là phần dàn dựng của đạo diễn trẻ.
+        - Phần dàn dựng của vị đạo diễn trẻ đặc biệt thành công.
+        - Phần dàn dựng của đạo diễn trẻ đặc biệt thành công.
+        - Cách dàn dựng của đạo diễn trẻ đặc biệt thành công.
+        - Phần dàn dựng của vị đạo diễn trẻ rất thành công.
+        - Đặc biệt hay là phần dàn dựng của vị đạo diễn trẻ.
+        - Hay nhất là phần dàn dựng của vị đạo diễn trẻ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vị đạo diễn trẻ đã dàn dựng thất bại.
+        feedback_vi: gelungen = thành công, ngược với thất bại (misslungen).
+        error_tag: meaning
+    explanation:
+      vi: "Besonders gelungen ist … = đặc biệt thành công/hay nhất là …; die Inszenierung = phần dàn dựng; des jungen Regisseurs (Genitiv) = của vị đạo diễn trẻ."
+    display_answer: Thành công nhất là phần dàn dựng của vị đạo diễn trẻ.
+
+  - key: de:exercise:b2u08l4-mcq-register-kritik
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-vorhersehbar
+    prompt:
+      stem: "Bạn viết review cho tạp chí sinh viên và muốn chê bộ phim một cách có lý lẽ. Câu nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: r6a, text: "Leider ist die Handlung sehr vorhersehbar, sodass kaum Spannung entsteht.", lang: de }
+        - { id: r2b, text: "Der Film ist echt Mist, ich hab mich total gelangweilt.", lang: de }
+        - { id: r9c, text: "Der Film ist nicht so gut.", lang: de }
+        - { id: r4d, text: "Der Film hat mir nicht gefallen, weil er mir nicht gefallen hat.", lang: de }
+    answer:
+      correct_option_id: r6a
+    explanation:
+      vi: "Câu đúng nêu cụ thể điểm yếu (Handlung vorhersehbar) và hậu quả (sodass kaum Spannung entsteht), ngữ vực trung tính. echt Mist, hab là khẩu ngữ; nicht so gut quá chung chung; câu cuối lặp lại, không có lý do."
+    display_answer: Leider ist die Handlung sehr vorhersehbar, sodass kaum Spannung entsteht.

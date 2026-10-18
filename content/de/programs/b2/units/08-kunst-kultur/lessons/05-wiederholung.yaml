@@ -1,0 +1,393 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u08-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – viết review khoảng 150 từ (Wiederholung)
+objectives:
+  - vi: Viết một bài review khoảng 150 từ về một bộ phim hoặc cuốn sách, có bố cục và lý lẽ rõ ràng.
+  - vi: Đọc một văn bản văn hoá có từ khó và đoán nghĩa từ ngữ cảnh (kiểu Goethe B2 Lesen Teil 2).
+  - vi: Nghe hiểu nhận xét ngắn về sách và nói được lời khuyên đọc/xem.
+estimated_minutes: 27
+skills: [writing, reading, speaking]
+prerequisites: [de:lesson:b2u08-rezension]
+items:
+  - item: de:item:b2u08-g-relativ-wer-was
+    role: reuse
+  - item: de:item:b2u08-g-register
+    role: reuse
+  - item: de:item:b2u08-g-adjektive-kasus
+    role: reuse
+  - item: de:item:b2u08-g-bewerten-redemittel
+    role: reuse
+  - item: de:item:b2u08-roman
+    role: reuse
+  - item: de:item:b2u08-hauptfigur
+    role: reuse
+  - item: de:item:b2u08-handlung
+    role: reuse
+  - item: de:item:b2u08-gelungen
+    role: reuse
+  - item: de:item:b2u08-langatmig
+    role: reuse
+  - item: de:item:b2u08-vorhersehbar
+    role: reuse
+  - item: de:item:b2u08-abraten
+    role: reuse
+  - item: de:item:b2u08-original
+    role: reuse
+  - item: de:item:b2u08-zeitgenoessisch
+    role: reuse
+  - item: de:item:a2u07-krimi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn viết được một bài review khoảng 150 từ cho một bộ phim hoặc cuốn sách, và đọc hiểu một bài báo văn hoá có từ mới bằng cách đoán nghĩa từ ngữ cảnh.
+  - type: explain
+    text:
+      vi: "Khung bài review khoảng 150 từ: (1) một câu giới thiệu – tên, thể loại, tác giả hay đạo diễn; (2) hai, ba câu tóm tắt nội dung ở Präsens, không kể cái kết; (3) đánh giá: một điểm mạnh và một điểm yếu, mỗi điểm có lý do; (4) kết luận và lời khuyên cho ai (Wer … mag, dem …)."
+  - type: explain
+    text:
+      vi: "Kiểm tra trước khi nộp: có ít nhất một câu Besonders gelungen ist … hoặc Was mich überzeugt hat, war …; một câu chê cụ thể (vorhersehbar, langatmig); một câu kết (Ich kann … nur empfehlen / Von … würde ich eher abraten). Ngữ vực trung tính, không dùng khẩu ngữ như kriegen, kapieren, Mist."
+  - type: explain
+    text:
+      vi: "Bài review không phải là một dạng đề cố định của Goethe B2; luyện viết review giúp bạn quen với việc nêu ý kiến có lý do, kỹ năng cần cho bài viết nêu ý kiến khoảng 150 từ ở Schreiben Teil 1 (dạng đề có thể thay đổi, hãy đối chiếu thông tin chính thức của Goethe-Institut)."
+  - type: explain
+    text:
+      vi: "Đoán nghĩa từ mới khi đọc: xem từ đó là danh từ, động từ hay tính từ; tìm từ trái nghĩa hay giải thích quanh đó (doch, aber, das heißt); tách từ ghép thành từng phần (Lese + Kreis). Đừng dừng lại ở mỗi từ lạ: trước hết hiểu ý chính của cả câu."
+  - type: deep_explain
+    text:
+      vi: "Bài mẫu dưới đây dài khoảng 150 từ. Để ý cách nối ý: Besonders gelungen ist … (khen), Auch … (thêm ý), Was mich weniger überzeugt hat, war … (chuyển sang chê), Trotzdem … (cân bằng), Wer …, dem … (lời khuyên cho đối tượng phù hợp). Cuốn tiểu thuyết trong bài mẫu là hư cấu; khi viết về tác phẩm thật, hãy kiểm tra lại tên tác giả, năm xuất bản và tên nhân vật."
+  - type: example
+    target: "In ihrem zweiten Roman erzählt die Autorin von einer jungen Frau, die nach dem Tod ihrer Großmutter in deren altes Haus an der Ostsee zieht. Dort findet sie Briefe, die ein lange gehütetes Familiengeheimnis verraten."
+    target_lang: de
+    translation:
+      vi: "Trong cuốn tiểu thuyết thứ hai, nữ tác giả kể về một cô gái trẻ chuyển đến ngôi nhà cũ bên bờ biển Baltic của bà mình sau khi bà qua đời. Ở đó cô tìm thấy những lá thư hé lộ một bí mật gia đình được giữ kín từ lâu."
+    note:
+      vi: "Bài mẫu (khoảng 150 từ, chia ba đoạn; tác phẩm hư cấu) – đoạn 1: giới thiệu và tóm tắt ở Präsens (erzählt, zieht, findet), không kể cái kết."
+  - type: example
+    target: "Besonders gelungen ist die Sprache: Die Autorin beschreibt die Landschaft so genau, dass man das Meer fast riechen kann. Auch die Hauptfigur wirkt lebendig und glaubwürdig. Was mich weniger überzeugt hat, war der Mittelteil. Hier wird die Handlung etwas langatmig, und manche Entwicklungen sind leider vorhersehbar. Außerdem hätte ich mir ein mutigeres Ende gewünscht."
+    target_lang: de
+    translation:
+      vi: "Thành công nhất là ngôn ngữ: tác giả tả phong cảnh kỹ đến mức người đọc gần như ngửi thấy mùi biển. Nhân vật chính cũng sống động và đáng tin. Điều kém thuyết phục hơn là phần giữa. Ở đó cốt truyện hơi lê thê, và tiếc là một số diễn biến dễ đoán. Ngoài ra tôi đã mong một cái kết táo bạo hơn."
+    note:
+      vi: "Đoạn 2: khen có lý do (Besonders gelungen ist …, so … dass), chê cụ thể (Was mich weniger überzeugt hat, war …; langatmig, vorhersehbar), Konjunktiv II quá khứ (hätte … gewünscht)."
+  - type: example
+    target: "Trotzdem lebt das Buch von seiner dichten Atmosphäre und seinen genauen Beobachtungen. Wer ruhige Familiengeschichten mag, dem kann ich diesen Roman nur empfehlen. Wer dagegen einen spannenden Krimi sucht, sollte lieber zu einem anderen Buch greifen."
+    target_lang: de
+    translation:
+      vi: "Dù vậy, cuốn sách vẫn hấp dẫn nhờ bầu không khí đậm đặc và những quan sát tinh tế. Ai thích truyện gia đình nhẹ nhàng thì tôi rất khuyên nên đọc cuốn này. Còn ai đang tìm một truyện trinh thám gay cấn thì nên chọn cuốn khác."
+    note:
+      vi: "Đoạn 3: cân bằng (Trotzdem lebt das Buch von …) và kết luận cho từng nhóm người đọc theo mẫu Wer …, dem … / Wer …, (der) …."
+  - type: example
+    target: Wem Krimis gefallen, der wird dieses Buch lieben.
+    target_lang: de
+    translation:
+      vi: Ai thích truyện trinh thám thì sẽ mê cuốn sách này.
+    note:
+      vi: "gefallen + Dativ → Wem; câu chính cần chủ ngữ → der (khác cách nên bắt buộc)."
+  - type: example
+    target: Die Verfilmung ist dem Roman erstaunlich ähnlich, aber nicht ganz so spannend.
+    target_lang: de
+    translation:
+      vi: Bản phim giống cuốn tiểu thuyết đến bất ngờ, nhưng không hấp dẫn bằng.
+    note:
+      vi: "ähnlich + Dativ (dem Roman), không thêm wie. die Verfilmung = bản chuyển thể thành phim."
+  - type: common_mistake
+    wrong: Der Film ist gut und die Schauspieler sind gut und die Musik ist auch gut.
+    right: Besonders gelungen ist die Musik, und auch die Schauspieler überzeugen.
+    target_lang: de
+    note:
+      vi: "Tránh lặp gut; dùng Redemittel đánh giá và từ cụ thể (gelungen, überzeugen)."
+  - type: common_mistake
+    wrong: Ich kann den Film nur abraten.
+    right: Von dem Film kann ich nur abraten.
+    target_lang: de
+    note:
+      vi: "abraten đi với von + Dativ, không có tân ngữ Akkusativ."
+  - type: common_mistake
+    wrong: Wem das Buch gefällt, er sollte auch den Film sehen.
+    right: Wem das Buch gefällt, der sollte auch den Film sehen.
+    target_lang: de
+    note:
+      vi: "Nhắc lại bằng đại từ chỉ định der, không bằng er; khác cách (Dat – Nom) nên der bắt buộc."
+  - type: summary
+    points:
+      - vi: "Review ~150 từ: giới thiệu – tóm tắt (Präsens) – khen có lý do – chê cụ thể – kết luận/lời khuyên."
+      - vi: "Redemittel: Besonders gelungen ist …; Was mich (nicht) überzeugt hat, war …; Der Film lebt von …; Ich kann … nur empfehlen / Von … würde ich eher abraten."
+      - vi: "Ngữ pháp: Wer/Wem …, der …; ähnlich + Dat, bewusst + Gen, einen Meter hoch; ngữ vực trung tính."
+      - vi: "Đọc: đoán nghĩa từ mới qua loại từ, từ ghép và ngữ cảnh."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen Teil 2) ----------------
+  - key: de:exercise:b2u08l5-mcq-lesekreis-alter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-roman
+    prompt:
+      stem: "Wer glaubt, Lesen sei ein einsames Hobby, war noch nie in einem Lesekreis. In einer Stadtbibliothek treffen sich jeden Monat etwa fünfzehn Menschen zwischen 19 und 80 Jahren. Die Bücher wählt die Gruppe gemeinsam aus, Klassiker ebenso wie zeitgenössische Literatur. Oft wird heftig gestritten, doch genau das schätzen die Mitglieder: Wer anderen zuhört, entdeckt in einem Buch Dinge, die ihm allein entgangen wären. — Richtig oder falsch? Im Lesekreis treffen sich nur ältere Menschen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf2
+    explanation:
+      vi: "zwischen 19 und 80 Jahren – thành viên từ 19 đến 80 tuổi. Nhóm có đủ mọi lứa tuổi, nên câu này sai. (Câu chuyện là hư cấu.)"
+    display_answer: Falsch
+
+  - key: de:exercise:b2u08l5-mcq-lesekreis-auswahl
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u08-zeitgenoessisch
+    prompt:
+      stem: "Wer glaubt, Lesen sei ein einsames Hobby, war noch nie in einem Lesekreis. In einer Stadtbibliothek treffen sich jeden Monat etwa fünfzehn Menschen zwischen 19 und 80 Jahren. Die Bücher wählt die Gruppe gemeinsam aus, Klassiker ebenso wie zeitgenössische Literatur. Oft wird heftig gestritten, doch genau das schätzen die Mitglieder: Wer anderen zuhört, entdeckt in einem Buch Dinge, die ihm allein entgangen wären. — Richtig oder falsch? Die Mitglieder bestimmen zusammen, was sie lesen."
+      stem_lang: de
+      options:
+        - { id: rf1, text: "Richtig", lang: de }
+        - { id: rf2, text: "Falsch", lang: de }
+    answer:
+      correct_option_id: rf1
+    explanation:
+      vi: "Die Bücher wählt die Gruppe gemeinsam aus = cả nhóm cùng chọn sách, tức là các thành viên cùng quyết định đọc gì. Câu này đúng."
+    display_answer: Richtig
+
+  - key: de:exercise:b2u08l5-mcq-wort-schaetzen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-handlung
+    prompt:
+      stem: "Trong bài đọc về Lesekreis: \"Oft wird heftig gestritten, doch genau das schätzen die Mitglieder.\" Từ schätzen ở đây nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: z4a, text: "coi trọng, quý", lang: vi }
+        - { id: z8b, text: "ước tính (số lượng)", lang: vi }
+        - { id: z1c, text: "ghét, khó chịu", lang: vi }
+        - { id: z6d, text: "tránh, né", lang: vi }
+    answer:
+      correct_option_id: z4a
+    explanation:
+      vi: "doch (nhưng, tuy vậy) báo hiệu ý ngược với \"tranh cãi gay gắt\": các thành viên lại coi trọng chính điều đó; câu sau giải thích lý do (nghe người khác thì phát hiện thêm nhiều điều). schätzen còn có nghĩa \"ước tính\", nhưng ở đây không có con số nào để ước tính."
+    display_answer: coi trọng, quý
+
+  - key: de:exercise:b2u08l5-mcq-wort-entgangen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      stem: "Câu cuối bài đọc: \"Wer anderen zuhört, entdeckt in einem Buch Dinge, die ihm allein entgangen wären.\" Câu này nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: g3a, text: "Ai lắng nghe người khác thì phát hiện trong sách những điều mà một mình mình có lẽ đã bỏ lỡ.", lang: vi }
+        - { id: g7b, text: "Ai lắng nghe người khác thì không cần đọc sách một mình.", lang: vi }
+        - { id: g2c, text: "Ai đọc sách một mình thì phát hiện nhiều điều hơn người khác.", lang: vi }
+        - { id: g9d, text: "Ai nghe người khác kể thì không cần tự đọc sách nữa.", lang: vi }
+    answer:
+      correct_option_id: g3a
+    explanation:
+      vi: "Wer anderen zuhört, (der) entdeckt … = ai lắng nghe người khác thì phát hiện … (bài 1). die ihm allein entgangen wären: Konjunktiv II quá khứ – những điều mà nếu chỉ một mình thì người đó đã không nhận ra (entgehen = lọt khỏi tầm chú ý)."
+    display_answer: Ai lắng nghe người khác thì phát hiện trong sách những điều mà một mình mình có lẽ đã bỏ lỡ.
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b2u08l5-listen-sprache
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u08-langatmig
+    prompt:
+      audio_asset_id: null
+      fallback_text: Was mich an dem Roman überzeugt hat, war die Sprache. Die Handlung dagegen fand ich etwas langatmig.
+      options:
+        - { id: h2a, text: "Người nói khen ngôn ngữ của cuốn tiểu thuyết nhưng thấy cốt truyện hơi lê thê.", lang: vi }
+        - { id: h6b, text: "Người nói khen cốt truyện nhưng chê ngôn ngữ.", lang: vi }
+        - { id: h9c, text: "Người nói thấy cả ngôn ngữ lẫn cốt truyện đều hay.", lang: vi }
+        - { id: h4d, text: "Người nói thấy cuốn tiểu thuyết quá ngắn.", lang: vi }
+    answer:
+      correct_option_id: h2a
+    explanation:
+      vi: "Was mich … überzeugt hat, war die Sprache = điều thuyết phục tôi là ngôn ngữ; Die Handlung dagegen … langatmig = còn cốt truyện thì ngược lại, hơi lê thê."
+    display_answer: Người nói khen ngôn ngữ của cuốn tiểu thuyết nhưng thấy cốt truyện hơi lê thê.
+
+  - key: de:exercise:b2u08l5-listen-krimis
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:a2u07-krimi
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wer gern Krimis liest, dem kann ich dieses Buch nur empfehlen. Wer aber keine Gewalt mag, sollte lieber etwas anderes lesen.
+      options:
+        - { id: k5a, text: "Cuốn sách rất hợp với người thích truyện trinh thám; ai không thích bạo lực thì nên đọc cuốn khác.", lang: vi }
+        - { id: k1b, text: "Người nói khuyên tất cả mọi người nên đọc cuốn sách.", lang: vi }
+        - { id: k8c, text: "Người nói không thích truyện trinh thám nên khuyên đừng đọc.", lang: vi }
+        - { id: k3d, text: "Cuốn sách không có cảnh bạo lực nào.", lang: vi }
+    answer:
+      correct_option_id: k5a
+    explanation:
+      vi: "Wer gern Krimis liest, dem kann ich … nur empfehlen = ai thích đọc truyện trinh thám thì tôi rất khuyên đọc cuốn này; Wer aber keine Gewalt mag, sollte lieber etwas anderes lesen = còn ai không thích bạo lực thì nên đọc cái khác."
+    display_answer: Cuốn sách rất hợp với người thích truyện trinh thám; ai không thích bạo lực thì nên đọc cuốn khác.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u08l5-fill-rezension
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-bewerten-redemittel
+    prompt:
+      template: "Der Roman {{b1}} (leben) vor allem von seiner Hauptfigur. Besonders {{b2}} (gelingen, Partizip II) finde ich das offene Ende. Insgesamt kann ich das Buch nur {{b3}} (empfehlen)."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 10 }
+    answer:
+      blanks:
+        b1: [lebt]
+        b2: [gelungen]
+        b3: [empfehlen]
+    known_wrong:
+      - answer: gelingt
+        feedback_vi: Sau finde ich … cần tính từ, tức Partizip II – gelungen.
+        error_tag: participle_form
+      - answer: empfohlen
+        feedback_vi: Sau kann cần nguyên thể – empfehlen.
+        error_tag: verb_form
+    explanation:
+      vi: "Ô 1: chủ ngữ der Roman → lebt (leben von = hấp dẫn nhờ). Ô 2: etwas gelungen finden – Partizip II dùng như tính từ. Ô 3: kann … nur empfehlen, nguyên thể ở cuối câu."
+    display_answer: "Der Roman lebt vor allem von seiner Hauptfigur. Besonders gelungen finde ich das offene Ende. Insgesamt kann ich das Buch nur empfehlen."
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u08l5-wb-wem-krimis
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-relativ-wer-was
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Ai thích truyện trinh thám thì sẽ mê cuốn sách này.\""
+      tokens:
+        - { id: k-lieben, text: lieben }
+        - { id: k-wem, text: Wem }
+        - { id: k-buch, text: Buch }
+        - { id: k-der, text: der }
+        - { id: k-gefallen, text: gefallen }
+        - { id: k-komma, text: "," }
+        - { id: k-wird, text: wird }
+        - { id: k-krimis, text: Krimis }
+        - { id: k-dieses, text: dieses }
+    answer:
+      orders:
+        - [k-wem, k-krimis, k-gefallen, k-komma, k-der, k-wird, k-dieses, k-buch, k-lieben]
+    explanation:
+      vi: "gefallen + Dativ → Wem, chủ ngữ Krimis (số nhiều) nên gefallen, đứng cuối mệnh đề. Câu chính cần chủ ngữ → der (khác cách, bắt buộc), rồi wird … lieben (Futur, lieben ở cuối)."
+    display_answer: Wem Krimis gefallen, der wird dieses Buch lieben.
+
+  - key: de:exercise:b2u08l5-wb-schwaechen-bewusst
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-g-adjektive-kasus
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi ý thức được những điểm yếu của cuốn tiểu thuyết.\""
+      tokens:
+        - { id: s-bewusst, text: bewusst }
+        - { id: s-des, text: des }
+        - { id: s-ich, text: Ich }
+        - { id: s-schwaechen, text: Schwächen }
+        - { id: s-mir, text: mir }
+        - { id: s-romans, text: Romans }
+        - { id: s-bin, text: bin }
+        - { id: s-der, text: der }
+    answer:
+      orders:
+        - [s-ich, s-bin, s-mir, s-der, s-schwaechen, s-des, s-romans, s-bewusst]
+    explanation:
+      vi: "sich (mir) einer Sache bewusst sein: mir (Dativ) ngay sau bin, der Schwächen là Genitiv số nhiều, des Romans là Genitiv bổ nghĩa cho Schwächen, bewusst ở cuối."
+    display_answer: Ich bin mir der Schwächen des Romans bewusst.
+
+  - key: de:exercise:b2u08l5-tr-abraten
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u08-abraten
+    prompt:
+      source_text: "Bộ phim này thì tôi khuyên là không nên xem. (dùng abraten)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Von diesem Film würde ich eher abraten.
+        - Ich würde von diesem Film eher abraten.
+        - Ich würde eher von diesem Film abraten.
+        - Von diesem Film kann ich nur abraten.
+        - Ich kann von diesem Film nur abraten.
+        - Ich kann nur von diesem Film abraten.
+        - Von diesem Film rate ich ab.
+        - Ich rate von diesem Film ab.
+        - Von dem Film würde ich eher abraten.
+        - Ich würde von dem Film eher abraten.
+        - Von dem Film kann ich nur abraten.
+        - Ich kann von dem Film nur abraten.
+        - Von diesem Film würde ich abraten.
+        - Ich würde von diesem Film abraten.
+        - Von diesem Film rate ich eher ab.
+    known_wrong:
+      - answer: Ich würde diesen Film eher abraten.
+        feedback_vi: abraten không có tân ngữ Akkusativ; điều không nên đi với von + Dativ – von diesem Film.
+        error_tag: preposition
+      - answer: Ich rate ab von diesem Film.
+        feedback_vi: Tiền tố tách ab đứng cuối câu – Ich rate von diesem Film ab.
+        error_tag: separable_prefix
+      - answer: Von diesem Film würde ich eher abgeraten.
+        feedback_vi: Sau würde cần nguyên thể – abraten.
+        error_tag: verb_form
+    explanation:
+      vi: "abraten + von + Dativ: von diesem Film. Với würde/kann, abraten ở cuối câu; không có modal thì ab tách ra cuối: Ich rate von diesem Film ab. eher làm lời khuyên mềm hơn."
+    display_answer: Von diesem Film würde ich eher abraten.
+
+  - key: de:exercise:b2u08l5-tr-verwechseln
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u08-original
+    prompt:
+      source_text: Die Kopie ist dem Original zum Verwechseln ähnlich.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bản sao giống bản gốc đến mức dễ nhầm lẫn.
+        - Bản sao giống bản gốc đến mức dễ nhầm.
+        - Bản sao giống bản gốc đến mức có thể nhầm lẫn.
+        - Bản sao giống hệt bản gốc.
+        - Bản sao giống bản gốc như đúc.
+        - Bản sao giống bản gốc đến nỗi dễ nhầm lẫn.
+        - Bản sao giống bản gốc đến mức người ta dễ nhầm.
+        - Bản sao giống bản gốc đến mức không phân biệt được.
+        - Bản sao và bản gốc giống nhau đến mức dễ nhầm lẫn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bản sao hơi giống bản gốc.
+        feedback_vi: zum Verwechseln ähnlich là giống đến mức dễ nhầm, không phải chỉ hơi giống.
+        error_tag: meaning
+    explanation:
+      vi: "ähnlich + Dativ: dem Original ähnlich = giống bản gốc; zum Verwechseln = đến mức có thể nhầm lẫn."
+    display_answer: Bản sao giống bản gốc đến mức dễ nhầm lẫn.
