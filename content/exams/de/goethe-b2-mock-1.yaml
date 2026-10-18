@@ -1,0 +1,800 @@
+# Bài luyện mô phỏng trình độ B2 theo phong cách Goethe-Zertifikat B2 do Linguo tự soạn (nguồn src:linguo-demo).
+# Không phải đề thi của Goethe-Institut, không chép đề thật, sách luyện thi hay Modelltest nào; mọi tên người, địa
+# điểm, công ty, hội chợ là hư cấu, không có số điện thoại, địa chỉ hay số liệu thống kê thật. Nghe: lời thoại trong
+# `script`, ứng dụng đọc bằng giọng máy khi chưa có audio (audio_asset_id: null).
+#
+# Giả định về cấu trúc và thang điểm (ghi lại để người duyệt kiểm tra; syllabus §5.6: "to be verified"):
+# - Chỉ mô phỏng dạng bài theo hiểu biết của người soạn: Hören (bản tin phát thanh, phỏng vấn, trích đoạn bài giảng,
+#   thảo luận "ai nói gì", bài thuyết trình, thông báo), Lesen (bình luận báo, phóng sự tạp chí, thư trang trọng,
+#   ghép quảng cáo, bài dài cần suy luận, điền từ nối), Schreiben 2 Teile (bài đăng diễn đàn ≈ 150 từ; thư trang
+#   trọng ≈ 100 từ). Số câu, thứ tự và cách chia Teil không khớp đề thật; không có phần Sprechen (schema đề chỉ có
+#   listening/reading/writing).
+# - Thời gian (time_limits) là gợi ý luyện tập của Linguo, không phải thời lượng chính thức.
+# - Ngưỡng "đạt mức" 60% mỗi phần (GOETHE_PASS_RATIO) là ngưỡng luyện tập Linguo tự đặt, chưa đối chiếu
+#   Prüfungsordnung hiện hành, nên scoring.verified: false. Hai bài viết (essay) không được chấm tự động.
+# - Văn bản dài được giữ ngắn gọn (≤ 500 ký tự mỗi đoạn) và dùng lại cho nhiều câu hỏi; bài đọc dài về
+#   "Langeweile" được chia làm hai phần (r10, r11).
+schema_version: 1
+demo: false
+language: de
+form:
+  key: de:exam:goethe-b2-mock-1
+  family: goethe
+  title_vi: Goethe B2 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện mô phỏng trình độ B2 theo phong cách Goethe-Zertifikat B2: 14 câu nghe, 15 câu đọc, 1 bài đăng diễn đàn
+    khoảng 150 từ và 1 thư trang trọng khoảng 100 từ. Nội dung do Linguo tự soạn, không chép đề thật, không phải đề thi
+    chính thức; kết quả cho biết bạn đạt mức B2 ở từng phần hay chưa (ngưỡng luyện tập 60%), không quy đổi sang điểm
+    của kỳ thi Goethe.
+  level_from: b1
+  level_to: b2
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 30
+    reading: 50
+    writing: 60
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng đạt (đúng từ 60% số điểm mỗi phần) là ngưỡng luyện tập Linguo tự đặt, không phải cách chấm chính thức
+      của Goethe-Institut (chưa đối chiếu quy chế thi). Thời gian là gợi ý của Linguo. Hai bài viết không được chấm tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-18T12:00:00+07:00"
+questions:
+  # ============================== NGHE (Hören) ==============================
+  # --- Bản tin phát thanh ---
+  - key: de:examq:goethe-b2-m1-l01
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe bản tin phát thanh và chọn đáp án đúng cho câu hỏi.
+      stem: Was müssen die Besucherinnen und Besucher des Reparaturcafés bezahlen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Und nun nach Lindenau: Dort hat am Samstag das erste Reparaturcafé der Stadt eröffnet. Im Gemeindezentrum reparieren ehrenamtliche Helferinnen und Helfer kaputte Toaster, Lampen oder Fahrräder – kostenlos, nur um eine Spende wird gebeten. Die Idee stammt von der pensionierten Elektrikerin Helga Brandner. „Viele Geräte landen im Müll, obwohl oft nur ein Kabel locker ist“, sagt sie. Ersatzteile müssen allerdings selbst bezahlt werden.
+      options:
+        - { id: a, text: "Nur die Ersatzteile.", lang: de }
+        - { id: b, text: "Eine feste Gebühr für jede Reparatur.", lang: de }
+        - { id: c, text: "Gar nichts, auch die Ersatzteile sind kostenlos.", lang: de }
+    answer: a
+    explanation:
+      vi: "Việc sửa chữa miễn phí (“kostenlos”), chỉ xin đóng góp tự nguyện (“nur um eine Spende wird gebeten”), nhưng phụ tùng thay thế thì khách tự trả (“Ersatzteile müssen allerdings selbst bezahlt werden”). Không có phí cố định nào (b sai); c sai vì “allerdings” mở ra đúng ngoại lệ về phụ tùng."
+
+  - key: de:examq:goethe-b2-m1-l02
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_gist
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại bản tin và chọn ý chính.
+      stem: Worum geht es in dem Bericht hauptsächlich?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Und nun nach Lindenau: Dort hat am Samstag das erste Reparaturcafé der Stadt eröffnet. Im Gemeindezentrum reparieren ehrenamtliche Helferinnen und Helfer kaputte Toaster, Lampen oder Fahrräder – kostenlos, nur um eine Spende wird gebeten. Die Idee stammt von der pensionierten Elektrikerin Helga Brandner. „Viele Geräte landen im Müll, obwohl oft nur ein Kabel locker ist“, sagt sie. Ersatzteile müssen allerdings selbst bezahlt werden.
+      options:
+        - { id: a, text: "Um ein neues Angebot, bei dem Freiwillige kaputte Geräte reparieren.", lang: de }
+        - { id: b, text: "Um die Eröffnung eines Elektrogeschäfts im Gemeindezentrum.", lang: de }
+        - { id: c, text: "Um Probleme mit der Müllabfuhr in Lindenau.", lang: de }
+    answer: a
+    explanation:
+      vi: "Cả bản tin nói về quán cà phê sửa đồ (Reparaturcafé) vừa mở, nơi người tình nguyện (“ehrenamtliche Helferinnen und Helfer”) sửa đồ hỏng. Đây không phải cửa hàng điện máy bán hàng (b sai); “Müll” chỉ xuất hiện trong lời giải thích lý do mở quán, không phải chủ đề về thu gom rác (c sai)."
+
+  # --- Phỏng vấn ---
+  - key: de:examq:goethe-b2-m1-l03
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn phỏng vấn trên đài phát thanh và chọn đáp án đúng cho câu hỏi.
+      stem: Warum hat Frau Falk eine Ausbildung gemacht?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderator: Frau Falk, Sie haben nach dem Abitur nicht studiert, sondern eine Ausbildung zur Tischlerin gemacht. Warum?
+        Frau Falk: Viele dachten, ich hätte keinen Studienplatz bekommen. Das stimmt aber nicht. Ich wollte abends sehen, was ich mit meinen Händen geschaffen habe.
+        Moderator: Haben Sie die Entscheidung je bereut?
+        Frau Falk: Im ersten Jahr manchmal, weil meine Freunde mehr Freizeit hatten. Heute nicht mehr. Ich wünschte nur, die Schulen würden besser über Ausbildungsberufe informieren.
+      options:
+        - { id: a, text: "Sie wollte das Ergebnis ihrer Arbeit direkt sehen.", lang: de }
+        - { id: b, text: "Sie hatte keinen Studienplatz bekommen.", lang: de }
+        - { id: c, text: "Ihre Freunde hatten ihr dazu geraten.", lang: de }
+    answer: a
+    explanation:
+      vi: "Chị Falk nói muốn mỗi tối nhìn thấy thứ mình làm ra bằng đôi tay (“sehen, was ich mit meinen Händen geschaffen habe”). Phương án b là bẫy: đó là điều người khác tưởng (“Viele dachten, ich hätte …” – Konjunktiv II để thuật lại ý nghĩ sai), và chị phủ nhận ngay (“Das stimmt aber nicht”). Bạn bè chỉ được nhắc khi nói về thời gian rảnh."
+
+  - key: de:examq:goethe-b2-m1-l04
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn phỏng vấn và chọn câu mô tả đúng quan điểm của người được phỏng vấn.
+      stem: Wie beurteilt Frau Falk ihre Entscheidung heute?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderator: Frau Falk, Sie haben nach dem Abitur nicht studiert, sondern eine Ausbildung zur Tischlerin gemacht. Warum?
+        Frau Falk: Viele dachten, ich hätte keinen Studienplatz bekommen. Das stimmt aber nicht. Ich wollte abends sehen, was ich mit meinen Händen geschaffen habe.
+        Moderator: Haben Sie die Entscheidung je bereut?
+        Frau Falk: Im ersten Jahr manchmal, weil meine Freunde mehr Freizeit hatten. Heute nicht mehr. Ich wünschte nur, die Schulen würden besser über Ausbildungsberufe informieren.
+      options:
+        - { id: a, text: "Sie ist zufrieden, auch wenn der Anfang nicht leicht war.", lang: de }
+        - { id: b, text: "Sie bereut sie, weil sie zu wenig Freizeit hat.", lang: de }
+        - { id: c, text: "Sie würde inzwischen lieber doch studieren.", lang: de }
+    answer: a
+    explanation:
+      vi: "Chị thừa nhận năm đầu đôi khi hối tiếc (“Im ersten Jahr manchmal”) nhưng “Heute nicht mehr” – bây giờ thì không. Phương án b ghép sai thời điểm: chuyện ít thời gian rảnh là của năm đầu, không phải hiện tại; c không được nói đến ở đâu trong bài."
+
+  - key: de:examq:goethe-b2-m1-l05
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn phỏng vấn và chọn đáp án đúng cho câu hỏi.
+      stem: Was wünscht sich Frau Falk?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderator: Frau Falk, Sie haben nach dem Abitur nicht studiert, sondern eine Ausbildung zur Tischlerin gemacht. Warum?
+        Frau Falk: Viele dachten, ich hätte keinen Studienplatz bekommen. Das stimmt aber nicht. Ich wollte abends sehen, was ich mit meinen Händen geschaffen habe.
+        Moderator: Haben Sie die Entscheidung je bereut?
+        Frau Falk: Im ersten Jahr manchmal, weil meine Freunde mehr Freizeit hatten. Heute nicht mehr. Ich wünschte nur, die Schulen würden besser über Ausbildungsberufe informieren.
+      options:
+        - { id: a, text: "Mehr Freizeit für Auszubildende.", lang: de }
+        - { id: b, text: "Bessere Informationen über Ausbildungsberufe an den Schulen.", lang: de }
+        - { id: c, text: "Mehr Studienplätze für Abiturientinnen und Abiturienten.", lang: de }
+    answer: b
+    explanation:
+      vi: "“Ich wünschte nur, die Schulen würden besser über Ausbildungsberufe informieren” (Konjunktiv II diễn đạt mong ước): chị mong trường phổ thông giới thiệu tốt hơn về các nghề học theo hệ đào tạo nghề. Thời gian rảnh (a) và chỗ học đại học (c) có được nhắc nhưng không phải điều chị mong muốn."
+
+  # --- Trích đoạn bài giảng ---
+  - key: de:examq:goethe-b2-m1-l06
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_lecture
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe trích đoạn bài giảng và chọn ý chính.
+      stem: Was ist die zentrale Aussage dieses Vortragsausschnitts?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Dozentin: Wer für eine Prüfung lernt, sitzt oft am Abend vorher stundenlang am Schreibtisch. Kurzfristig mag das funktionieren, doch das so Gelernte ist meist schnell wieder vergessen. Viele Untersuchungen legen nahe, dass es sinnvoller ist, den Stoff auf mehrere kurze Einheiten zu verteilen, die über Tage oder Wochen hinweg wiederholt werden. Entscheidend ist dabei, dass man sich die Inhalte aktiv ins Gedächtnis ruft, statt die Notizen nur noch einmal durchzulesen.
+      options:
+        - { id: a, text: "Wer verteilt und aktiv wiederholt, behält das Gelernte länger.", lang: de }
+        - { id: b, text: "Man sollte am Abend vor einer Prüfung möglichst lange lernen.", lang: de }
+        - { id: c, text: "Notizen sind beim Lernen überflüssig.", lang: de }
+    answer: a
+    explanation:
+      vi: "Giảng viên khuyên chia kiến thức thành nhiều buổi ngắn, ôn lại trong nhiều ngày hoặc nhiều tuần, và chủ động nhớ lại nội dung. Phương án b là thói quen bà phê phán (“schnell wieder vergessen”); c sai vì bà không nói ghi chép vô ích, chỉ nói đọc lại ghi chép thôi thì chưa đủ."
+
+  - key: de:examq:goethe-b2-m1-l07
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_lecture
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại trích đoạn bài giảng và chọn đáp án đúng cho câu hỏi.
+      stem: Was ist laut der Dozentin beim Wiederholen entscheidend?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Dozentin: Wer für eine Prüfung lernt, sitzt oft am Abend vorher stundenlang am Schreibtisch. Kurzfristig mag das funktionieren, doch das so Gelernte ist meist schnell wieder vergessen. Viele Untersuchungen legen nahe, dass es sinnvoller ist, den Stoff auf mehrere kurze Einheiten zu verteilen, die über Tage oder Wochen hinweg wiederholt werden. Entscheidend ist dabei, dass man sich die Inhalte aktiv ins Gedächtnis ruft, statt die Notizen nur noch einmal durchzulesen.
+      options:
+        - { id: a, text: "Dass man die Notizen mehrmals durchliest.", lang: de }
+        - { id: b, text: "Dass man sich die Inhalte selbst ins Gedächtnis ruft.", lang: de }
+        - { id: c, text: "Dass man möglichst lange Lerneinheiten einplant.", lang: de }
+    answer: b
+    explanation:
+      vi: "“Entscheidend ist dabei, dass man sich die Inhalte aktiv ins Gedächtnis ruft” – điều quyết định là tự gợi lại nội dung trong trí nhớ. Phương án a chính là điều bị loại bằng “statt … nur noch einmal durchzulesen” (thay vì chỉ đọc lại); c ngược với lời khuyên chia thành các buổi ngắn (“kurze Einheiten”)."
+
+  # --- Thảo luận: ai nói gì? ---
+  - key: de:examq:goethe-b2-m1-l08
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe cuộc thảo luận trên đài và cho biết ai có ý kiến dưới đây.
+      stem: "Wer vertritt diese Meinung? – Hausaufgaben benachteiligen Kinder, die zu Hause keine Unterstützung bekommen."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Brauchen Kinder noch Hausaufgaben, Frau Albers?
+        Frau Albers: Ich halte sie für überholt. Kinder aus Familien, in denen niemand helfen kann, sind klar im Nachteil.
+        Herr Demir: Das sehe ich anders. Wer nur in der Schule übt, lernt nie, sich selbst zu organisieren.
+        Moderatorin: Gäbe es einen Kompromiss?
+        Frau Albers: Geübt werden sollte dort, wo Lehrkräfte helfen können: in der Schule.
+        Herr Demir: Da bin ich teilweise bei Ihnen. Kurze Aufgaben zu Hause halte ich trotzdem für sinnvoll.
+      options:
+        - { id: a, text: "die Moderatorin", lang: de }
+        - { id: b, text: "Frau Albers", lang: de }
+        - { id: c, text: "Herr Demir", lang: de }
+    answer: b
+    explanation:
+      vi: "Bà Albers nói trẻ ở những gia đình không ai giúp được “klar im Nachteil” (rõ ràng chịu thiệt), đúng với ý “benachteiligen”. Người dẫn chương trình chỉ đặt câu hỏi, không nêu quan điểm; ông Demir thì phản đối (“Das sehe ich anders”)."
+
+  - key: de:examq:goethe-b2-m1-l09
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại cuộc thảo luận và cho biết ai có ý kiến dưới đây.
+      stem: "Wer vertritt diese Meinung? – Durch Aufgaben zu Hause lernen Kinder, selbstständig zu arbeiten."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Brauchen Kinder noch Hausaufgaben, Frau Albers?
+        Frau Albers: Ich halte sie für überholt. Kinder aus Familien, in denen niemand helfen kann, sind klar im Nachteil.
+        Herr Demir: Das sehe ich anders. Wer nur in der Schule übt, lernt nie, sich selbst zu organisieren.
+        Moderatorin: Gäbe es einen Kompromiss?
+        Frau Albers: Geübt werden sollte dort, wo Lehrkräfte helfen können: in der Schule.
+        Herr Demir: Da bin ich teilweise bei Ihnen. Kurze Aufgaben zu Hause halte ich trotzdem für sinnvoll.
+      options:
+        - { id: a, text: "die Moderatorin", lang: de }
+        - { id: b, text: "Frau Albers", lang: de }
+        - { id: c, text: "Herr Demir", lang: de }
+    answer: c
+    explanation:
+      vi: "Ông Demir nói ai chỉ luyện tập ở trường thì không bao giờ học được cách tự tổ chức công việc (“lernt nie, sich selbst zu organisieren”) – tức là bài tập về nhà giúp trẻ tự lập. Câu thi diễn đạt lại bằng từ khác (“selbstständig arbeiten”), đây là kiểu bẫy diễn đạt lại thường gặp ở B2."
+
+  - key: de:examq:goethe-b2-m1-l10
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại cuộc thảo luận và cho biết ai có ý kiến dưới đây.
+      stem: "Wer vertritt diese Meinung? – Mehr Übung in der Schule ist gut, ganz auf Hausaufgaben verzichten sollte man aber nicht."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Brauchen Kinder noch Hausaufgaben, Frau Albers?
+        Frau Albers: Ich halte sie für überholt. Kinder aus Familien, in denen niemand helfen kann, sind klar im Nachteil.
+        Herr Demir: Das sehe ich anders. Wer nur in der Schule übt, lernt nie, sich selbst zu organisieren.
+        Moderatorin: Gäbe es einen Kompromiss?
+        Frau Albers: Geübt werden sollte dort, wo Lehrkräfte helfen können: in der Schule.
+        Herr Demir: Da bin ich teilweise bei Ihnen. Kurze Aufgaben zu Hause halte ich trotzdem für sinnvoll.
+      options:
+        - { id: a, text: "die Moderatorin", lang: de }
+        - { id: b, text: "Frau Albers", lang: de }
+        - { id: c, text: "Herr Demir", lang: de }
+    answer: c
+    explanation:
+      vi: "Ông Demir đồng ý một phần với bà Albers (“Da bin ich teilweise bei Ihnen”) nhưng vẫn cho rằng bài tập ngắn ở nhà là hợp lý (“trotzdem für sinnvoll”). Bà Albers muốn chuyển việc luyện tập hẳn vào trường và coi bài tập về nhà là lỗi thời (“überholt”), nên b sai; người dẫn chương trình chỉ hỏi “Gäbe es einen Kompromiss?”."
+
+  # --- Bài thuyết trình ---
+  - key: de:examq:goethe-b2-m1-l11
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_gist
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe phần mở đầu một bài thuyết trình và chọn chủ đề chính.
+      stem: Worum geht es in der Präsentation?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, in meiner Präsentation geht es um Dachgärten in Hellbrück. Zuerst stelle ich das Projekt „Grün nach oben“ vor, danach spreche ich über Vorteile und Nachteile. Seit zwei Jahren werden in Hellbrück die Flachdächer von Schulen und Bürogebäuden bepflanzt. Gepflegt werden die Gärten von Anwohnern, die dafür ein eigenes Beet bekommen. Ein Nachteil sind die Kosten: Bevor ein Dach bepflanzt werden darf, muss nämlich geprüft werden, ob es das zusätzliche Gewicht trägt.
+      options:
+        - { id: a, text: "Um ein Projekt, bei dem Dächer in der Stadt bepflanzt werden.", lang: de }
+        - { id: b, text: "Um den Bau neuer Schulen und Bürogebäude.", lang: de }
+        - { id: c, text: "Um Tipps für den Gemüseanbau auf dem Balkon.", lang: de }
+    answer: a
+    explanation:
+      vi: "Người thuyết trình nói ngay câu đầu: chủ đề là vườn trên mái nhà (“Dachgärten”) ở Hellbrück, cụ thể là dự án “Grün nach oben”. Trường học và tòa văn phòng chỉ là nơi có mái bằng được trồng cây, không phải công trình mới (b sai); ban công không được nhắc đến (c sai)."
+
+  - key: de:examq:goethe-b2-m1-l12
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại bài thuyết trình và chọn đáp án đúng cho câu hỏi.
+      stem: Was muss geschehen, bevor ein Dach bepflanzt werden darf?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, in meiner Präsentation geht es um Dachgärten in Hellbrück. Zuerst stelle ich das Projekt „Grün nach oben“ vor, danach spreche ich über Vorteile und Nachteile. Seit zwei Jahren werden in Hellbrück die Flachdächer von Schulen und Bürogebäuden bepflanzt. Gepflegt werden die Gärten von Anwohnern, die dafür ein eigenes Beet bekommen. Ein Nachteil sind die Kosten: Bevor ein Dach bepflanzt werden darf, muss nämlich geprüft werden, ob es das zusätzliche Gewicht trägt.
+      options:
+        - { id: a, text: "Die Anwohner müssen sich für ein Beet bewerben.", lang: de }
+        - { id: b, text: "Es muss geprüft werden, ob das Dach stabil genug ist.", lang: de }
+        - { id: c, text: "Die Schule muss die Pflege des Gartens übernehmen.", lang: de }
+    answer: b
+    explanation:
+      vi: "“Bevor ein Dach bepflanzt werden darf, muss … geprüft werden, ob es das zusätzliche Gewicht trägt” (câu bị động với động từ khuyết thiếu): phải kiểm tra mái có chịu được trọng lượng thêm không. Người dân nhận luống trồng để đổi lấy việc chăm vườn, không nói phải nộp đơn (a); việc chăm sóc do người dân làm, không phải nhà trường (c)."
+
+  # --- Thông báo ---
+  - key: de:examq:goethe-b2-m1-l13
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo ở nhà ga và chọn đáp án đúng cho câu hỏi.
+      stem: Was gilt für Fahrgäste, die heute nach 20 Uhr nach Talbrunn fahren wollen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Eine Information für Reisende in Richtung Talbrunn: Wegen Bauarbeiten zwischen Tannberg und Talbrunn fallen heute ab 20 Uhr alle Regionalzüge auf diesem Abschnitt aus. Stattdessen ist ein Ersatzverkehr mit Bussen eingerichtet. Die Busse fahren am Bahnhofsvorplatz ab, Ausgang Nord. Bitte beachten Sie, dass sich die Fahrzeit dadurch um etwa 30 Minuten verlängert. Fahrräder können im Ersatzverkehr leider nicht mitgenommen werden.
+      options:
+        - { id: a, text: "Sie fahren mit einem Bus, der am Bahnhofsvorplatz abfährt.", lang: de }
+        - { id: b, text: "Ihr Zug fährt von einem anderen Gleis ab.", lang: de }
+        - { id: c, text: "Sie können ihr Fahrrad im Bus mitnehmen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Từ 20 giờ các tàu khu vực trên đoạn này bị hủy (“fallen … aus”), thay bằng xe buýt (“Ersatzverkehr mit Bussen”) xuất phát ở quảng trường trước ga, lối ra phía Bắc. Không có chuyện đổi đường ray (b); c ngược với câu cuối: xe đạp không được mang lên xe buýt thay thế."
+
+  - key: de:examq:goethe-b2-m1-l14
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo tại một hội chợ chuyên ngành và chọn đáp án đúng cho câu hỏi.
+      stem: Was ändert sich beim Vortrag „Möbel aus Restholz“?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Liebe Besucherinnen und Besucher der Fachmesse „Holz und Raum“: Der Vortrag „Möbel aus Restholz“, der um 14 Uhr in Halle 2 stattfinden sollte, wird wegen der großen Nachfrage in den Konferenzsaal im Obergeschoss verlegt. Der Beginn verschiebt sich auf 14.30 Uhr. Wer sich bereits online angemeldet hat, muss sich nicht erneut registrieren. Die Workshops in Halle 2 finden wie geplant statt.
+      options:
+        - { id: a, text: "Er beginnt später und findet in einem anderen Raum statt.", lang: de }
+        - { id: b, text: "Er fällt aus, weil sich zu wenige Personen angemeldet haben.", lang: de }
+        - { id: c, text: "Alle Teilnehmenden müssen sich noch einmal anmelden.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bài nói được chuyển sang hội trường ở tầng trên (“in den Konferenzsaal im Obergeschoss verlegt”) và lùi sang 14:30. Phương án b đảo ngược lý do: dời vì quá đông người quan tâm (“wegen der großen Nachfrage”), không phải vì ít người; c ngược với “muss sich nicht erneut registrieren”."
+
+  # ============================== ĐỌC (Lesen) ==============================
+  # --- Bình luận trên báo ---
+  - key: de:examq:goethe-b2-m1-r01
+    section: reading
+    kind: mcq
+    question_type: goethe_read_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài bình luận và chọn câu thể hiện đúng quan điểm của người viết.
+      stem: Welche Haltung vertritt die Verfasserin oder der Verfasser des Kommentars?
+      stem_lang: de
+      passage: |-
+        Kommentar: Das verlernte Warten
+        Ob Paket, Serie oder Antwort auf eine Nachricht – wir haben uns daran gewöhnt, dass alles sofort verfügbar ist. Wer heute bestellt, erwartet die Lieferung morgen. Dass wir dabei etwas verlieren, wird selten bemerkt: Vorfreude entsteht nur dort, wo man warten muss. Natürlich wäre es weltfremd, auf die Bequemlichkeit der neuen Dienste ganz zu verzichten. Man sollte sich aber fragen, ob die Eile im Einzelfall wirklich nötig ist. Oft ist sie es nicht.
+      options:
+        - { id: a, text: "Man muss nicht auf alle modernen Dienste verzichten, sollte aber bewusster mit dem Wunsch nach Schnelligkeit umgehen.", lang: de }
+        - { id: b, text: "Schnelle Lieferdienste sollten abgeschafft werden.", lang: de }
+        - { id: c, text: "Warten ist in jedem Fall verlorene Zeit.", lang: de }
+    answer: a
+    explanation:
+      vi: "Người viết nói từ bỏ hẳn sự tiện lợi là “weltfremd” (xa rời thực tế, Konjunktiv II “wäre”), nhưng nên tự hỏi trong từng trường hợp có thật cần gấp không. Vì vậy b quá cực đoan; c ngược với ý chính, vì chính việc chờ đợi tạo ra niềm háo hức mong chờ (“Vorfreude”)."
+
+  - key: de:examq:goethe-b2-m1-r02
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại bài bình luận và chọn đáp án đúng cho câu hỏi.
+      stem: Was geht laut dem Kommentar verloren, wenn alles sofort verfügbar ist?
+      stem_lang: de
+      passage: |-
+        Kommentar: Das verlernte Warten
+        Ob Paket, Serie oder Antwort auf eine Nachricht – wir haben uns daran gewöhnt, dass alles sofort verfügbar ist. Wer heute bestellt, erwartet die Lieferung morgen. Dass wir dabei etwas verlieren, wird selten bemerkt: Vorfreude entsteht nur dort, wo man warten muss. Natürlich wäre es weltfremd, auf die Bequemlichkeit der neuen Dienste ganz zu verzichten. Man sollte sich aber fragen, ob die Eile im Einzelfall wirklich nötig ist. Oft ist sie es nicht.
+      options:
+        - { id: a, text: "Die Vorfreude.", lang: de }
+        - { id: b, text: "Die Qualität der Produkte.", lang: de }
+        - { id: c, text: "Die Bequemlichkeit.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Vorfreude entsteht nur dort, wo man warten muss”: niềm háo hức mong chờ chỉ có khi phải chờ, nên khi mọi thứ có ngay thì ta mất nó. Chất lượng hàng hóa không được nhắc đến (b); sự tiện lợi (c) là thứ ta có thêm chứ không mất đi."
+
+  # --- Phóng sự tạp chí ---
+  - key: de:examq:goethe-b2-m1-r03
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài phóng sự trên tạp chí và chọn đáp án đúng cho câu hỏi.
+      stem: Wie wurde der neue Laden finanziert?
+      stem_lang: de
+      passage: |-
+        Als vor drei Jahren der letzte Supermarkt in Altenbrunn schloss, mussten die Einwohner zum Einkaufen in die Stadt fahren. Heute gibt es wieder einen Laden – betrieben von den Bewohnern selbst. Über 100 von ihnen haben Anteile gekauft und so das nötige Startkapital aufgebracht. Verkauft werden Produkte von Höfen aus der Umgebung. Zwei Angestellte führen den Laden, unterstützt von Freiwilligen. Gewinn sei nicht das Ziel, betont die Vorsitzende Petra Lohmann: „Der Laden ist auch ein Treffpunkt.“
+      options:
+        - { id: a, text: "Durch Anteile, die Einwohner gekauft haben.", lang: de }
+        - { id: b, text: "Durch einen Kredit der Gemeinde.", lang: de }
+        - { id: c, text: "Durch die Höfe aus der Umgebung.", lang: de }
+    answer: a
+    explanation:
+      vi: "Hơn một trăm người dân đã mua cổ phần (“Anteile gekauft”) và nhờ đó góp đủ vốn ban đầu (“das nötige Startkapital aufgebracht” – cụm “Kapital aufbringen” = huy động vốn). Bài không nhắc khoản vay nào (b); các trang trại quanh vùng chỉ cung cấp hàng để bán (c)."
+
+  - key: de:examq:goethe-b2-m1-r04
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gist
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại bài phóng sự và chọn tiêu đề phù hợp nhất.
+      stem: Welche Überschrift passt am besten zu dem Text?
+      stem_lang: de
+      passage: |-
+        Als vor drei Jahren der letzte Supermarkt in Altenbrunn schloss, mussten die Einwohner zum Einkaufen in die Stadt fahren. Heute gibt es wieder einen Laden – betrieben von den Bewohnern selbst. Über 100 von ihnen haben Anteile gekauft und so das nötige Startkapital aufgebracht. Verkauft werden Produkte von Höfen aus der Umgebung. Zwei Angestellte führen den Laden, unterstützt von Freiwilligen. Gewinn sei nicht das Ziel, betont die Vorsitzende Petra Lohmann: „Der Laden ist auch ein Treffpunkt.“
+      options:
+        - { id: a, text: "Ein Dorf hilft sich selbst: Einwohner betreiben ihren eigenen Laden", lang: de }
+        - { id: b, text: "Altenbrunn verliert seinen letzten Supermarkt", lang: de }
+        - { id: c, text: "Bauernhöfe eröffnen gemeinsam einen Supermarkt in der Stadt", lang: de }
+    answer: a
+    explanation:
+      vi: "Ý chính: sau khi siêu thị cuối cùng đóng cửa, chính người dân trong làng góp vốn và tự vận hành một cửa hàng mới. Phương án b chỉ là bối cảnh của ba năm trước, không phải nội dung chính; c sai vì cửa hàng ở trong làng và do dân làng điều hành, các trang trại chỉ cung cấp hàng."
+
+  # --- Thư trang trọng ---
+  - key: de:examq:goethe-b2-m1-r05
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thư của công ty quản lý nhà và chọn đáp án đúng cho câu hỏi.
+      stem: Was sollen die Mieterinnen und Mieter bis zum 1. März tun?
+      stem_lang: de
+      passage: |-
+        Sehr geehrte Mieterinnen und Mieter,
+        wie angekündigt, wird das Treppenhaus Ihres Hauses vom 3. bis 14. März renoviert. Während dieser Zeit ist der Aufzug außer Betrieb. Wir bitten Sie, sämtliche im Treppenhaus abgestellten Gegenstände bis zum 1. März zu entfernen; danach noch vorhandene Gegenstände werden entsorgt. Wer nicht gut Treppen steigen kann, kann nach vorheriger Absprache unsere Unterstützung in Anspruch nehmen.
+        Mit freundlichen Grüßen
+        Hausverwaltung Kessler
+      options:
+        - { id: a, text: "Ihre Sachen aus dem Treppenhaus wegräumen.", lang: de }
+        - { id: b, text: "Sich schriftlich für die Renovierung anmelden.", lang: de }
+        - { id: c, text: "Die Hausverwaltung über ihren Urlaub informieren.", lang: de }
+    answer: a
+    explanation:
+      vi: "Thư yêu cầu dọn “sämtliche im Treppenhaus abgestellten Gegenstände” (mọi đồ vật được để ở cầu thang – cụm phân từ làm định ngữ đứng trước danh từ) trước ngày 1/3, nếu không sẽ bị vứt bỏ. Không có yêu cầu đăng ký (b) hay báo lịch nghỉ phép (c)."
+
+  - key: de:examq:goethe-b2-m1-r06
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại thư và chọn đáp án đúng cho câu hỏi.
+      stem: Was bietet die Hausverwaltung an?
+      stem_lang: de
+      passage: |-
+        Sehr geehrte Mieterinnen und Mieter,
+        wie angekündigt, wird das Treppenhaus Ihres Hauses vom 3. bis 14. März renoviert. Während dieser Zeit ist der Aufzug außer Betrieb. Wir bitten Sie, sämtliche im Treppenhaus abgestellten Gegenstände bis zum 1. März zu entfernen; danach noch vorhandene Gegenstände werden entsorgt. Wer nicht gut Treppen steigen kann, kann nach vorheriger Absprache unsere Unterstützung in Anspruch nehmen.
+        Mit freundlichen Grüßen
+        Hausverwaltung Kessler
+      options:
+        - { id: a, text: "Hilfe für Mieter, die nicht gut Treppen steigen können, wenn sie sich vorher melden.", lang: de }
+        - { id: b, text: "Einen zweiten Aufzug während der Renovierung.", lang: de }
+        - { id: c, text: "Eine niedrigere Miete für die Zeit der Renovierung.", lang: de }
+    answer: a
+    explanation:
+      vi: "Người khó leo cầu thang có thể nhờ hỗ trợ “nach vorheriger Absprache” (sau khi thỏa thuận trước); “Unterstützung in Anspruch nehmen” là cụm động từ – danh từ (Funktionsverbgefüge) nghĩa là “sử dụng sự hỗ trợ”. Thư nói thang máy ngừng hoạt động, không có thang máy thứ hai (b); giảm tiền thuê (c) không được nhắc đến."
+
+  # --- Ghép quảng cáo ---
+  - key: de:examq:goethe-b2-m1-r07
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn mẩu quảng cáo khóa học, chọn quảng cáo phù hợp với người được mô tả.
+      stem: Lena hat sich gerade als Grafikdesignerin selbstständig gemacht. Tagsüber hat sie Kundentermine. Sie möchte lernen, ihre Finanzen selbst zu verwalten. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A: Rhetorik kompakt – sicher präsentieren im Beruf. Zwei Samstage, höchstens 8 Personen, mit Videofeedback.
+        B: Buchhaltung für Selbstständige – Online-Abendkurs, 6 Wochen, dienstags von 19 bis 21 Uhr.
+        C: Bewerbungstraining für den Wiedereinstieg nach der Elternzeit, vormittags, mit Kinderbetreuung.
+        D: Englisch für den Beruf (B1), Intensivkurs: zwei Wochen ganztägig, Montag bis Freitag.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: b
+    explanation:
+      vi: "Lena vừa tự kinh doanh và muốn tự quản lý tài chính, ban ngày bận gặp khách: khóa B (kế toán cho người tự kinh doanh, học trực tuyến buổi tối) phù hợp cả nội dung lẫn thời gian. Khóa D học cả ngày trong tuần, trùng giờ gặp khách và không về tài chính; A và C khác chủ đề."
+
+  - key: de:examq:goethe-b2-m1-r08
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn mẩu quảng cáo khóa học, chọn quảng cáo phù hợp với người được mô tả.
+      stem: Herr Yilmaz muss künftig regelmäßig Vorträge vor Kunden halten und ist dabei sehr nervös. Unter der Woche hat er keine Zeit für einen Kurs. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A: Rhetorik kompakt – sicher präsentieren im Beruf. Zwei Samstage, höchstens 8 Personen, mit Videofeedback.
+        B: Buchhaltung für Selbstständige – Online-Abendkurs, 6 Wochen, dienstags von 19 bis 21 Uhr.
+        C: Bewerbungstraining für den Wiedereinstieg nach der Elternzeit, vormittags, mit Kinderbetreuung.
+        D: Englisch für den Beruf (B1), Intensivkurs: zwei Wochen ganztägig, Montag bis Freitag.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: a
+    explanation:
+      vi: "Ông Yilmaz cần tự tin khi thuyết trình và chỉ rảnh cuối tuần (“Unter der Woche” = trong tuần, ông không có thời gian). Khóa A dạy thuyết trình (“sicher präsentieren”) vào hai ngày thứ Bảy. Khóa D học từ thứ Hai đến thứ Sáu nên không hợp; B học tối thứ Ba, cũng là ngày trong tuần."
+
+  - key: de:examq:goethe-b2-m1-r09
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn mẩu quảng cáo khóa học, chọn quảng cáo phù hợp với người được mô tả.
+      stem: Frau Brück war drei Jahre mit ihrer Tochter zu Hause und möchte jetzt wieder arbeiten. Für ihr Kind hat sie vormittags noch keine Betreuung gefunden. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A: Rhetorik kompakt – sicher präsentieren im Beruf. Zwei Samstage, höchstens 8 Personen, mit Videofeedback.
+        B: Buchhaltung für Selbstständige – Online-Abendkurs, 6 Wochen, dienstags von 19 bis 21 Uhr.
+        C: Bewerbungstraining für den Wiedereinstieg nach der Elternzeit, vormittags, mit Kinderbetreuung.
+        D: Englisch für den Beruf (B1), Intensivkurs: zwei Wochen ganztägig, Montag bis Freitag.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: c
+    explanation:
+      vi: "Bà Brück muốn đi làm lại sau thời gian ở nhà nuôi con và chưa có chỗ gửi con buổi sáng. Khóa C dành riêng cho người quay lại công việc sau kỳ nghỉ nuôi con (“Wiedereinstieg nach der Elternzeit”) và có trông trẻ (“mit Kinderbetreuung”). Khóa D học cả ngày, bà không có ai trông con."
+
+  # --- Bài đọc dài (hai phần): suy luận và chọn câu đúng ---
+  - key: de:examq:goethe-b2-m1-r10
+    section: reading
+    kind: mcq
+    question_type: goethe_read_inference
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc phần đầu bài báo về sự buồn chán và chọn điều có thể suy ra từ nội dung.
+      stem: Was lässt sich aus dem Text schließen?
+      stem_lang: de
+      passage: |-
+        Lob der Langeweile (Teil 1)
+        Langeweile gilt als lästiger Zustand, den man möglichst schnell beenden will. Kaum entsteht eine Pause, greifen viele zum Smartphone. Einige Psychologinnen und Psychologen vertreten jedoch die Auffassung, dass gerade diese ungeliebten Momente einen Nutzen haben könnten: Wer sich langweilt, lässt seine Gedanken schweifen und kommt dabei mitunter auf Ideen, die ihm bei konzentrierter Arbeit nicht eingefallen wären.
+      options:
+        - { id: a, text: "Wer jede Pause mit dem Smartphone füllt, verpasst möglicherweise Gelegenheiten für neue Ideen.", lang: de }
+        - { id: b, text: "Konzentriertes Arbeiten verhindert grundsätzlich gute Ideen.", lang: de }
+        - { id: c, text: "Alle Fachleute empfehlen, sich möglichst oft zu langweilen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Nếu lúc buồn chán có thể giúp nảy ra ý tưởng, thì người luôn lấp mọi khoảng trống bằng điện thoại có thể bỏ lỡ cơ hội đó: đây là suy luận hợp lý, và chữ “möglicherweise” giữ đúng mức thận trọng của bài (“könnten”, “mitunter”). Phương án b khái quát quá mức (“grundsätzlich”); c sai vì chỉ “einige” chuyên gia có ý kiến này và họ không khuyên ai cả."
+
+  - key: de:examq:goethe-b2-m1-r11
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc phần tiếp theo của bài báo và chọn câu đúng với nội dung.
+      stem: Welche Aussage entspricht dem Text?
+      stem_lang: de
+      passage: |-
+        Lob der Langeweile (Teil 2)
+        Die Psychologin Clara Wendt warnt allerdings davor, Langeweile zu verklären. Wer etwa am Arbeitsplatz dauerhaft unterfordert sei, leide oft darunter, statt kreativ zu werden. Entscheidend sei, ob man die freie Zeit selbst gewählt habe oder ob sie einem aufgezwungen werde. Kurze Phasen des Nichtstuns, so ihr Fazit, seien kein Zeitverlust – zum Dauerzustand sollten sie aber nicht werden.
+      options:
+        - { id: a, text: "Ob Langeweile nützt, hängt laut Clara Wendt auch davon ab, ob man sie selbst gewählt hat.", lang: de }
+        - { id: b, text: "Dauerhafte Unterforderung im Beruf macht die meisten Menschen kreativer.", lang: de }
+        - { id: c, text: "Clara Wendt hält jede Form von Nichtstun für Zeitverschwendung.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bài dùng Konjunktiv I (sei, leide, habe, werde) để thuật lại lời bà Wendt: điều quyết định là thời gian rảnh do mình tự chọn hay bị áp đặt. Phương án b ngược với câu “leide oft darunter, statt kreativ zu werden” (thường khổ sở thay vì sáng tạo); c ngược với kết luận “seien kein Zeitverlust” (không phải lãng phí thời gian)."
+
+  # --- Điền từ nối ---
+  - key: de:examq:goethe-b2-m1-r12
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: ___ der kurzfristigen Absage des Referenten konnte die Veranstaltung wie geplant stattfinden, weil eine Kollegin den Vortrag übernahm.
+      options:
+        - { id: a, text: "Trotz", lang: de }
+        - { id: b, text: "Wegen", lang: de }
+        - { id: c, text: "Obwohl", lang: de }
+        - { id: d, text: "Dank", lang: de }
+    answer: a
+    explanation:
+      vi: "Sau chỗ trống là cụm danh từ ở cách 2 (“der kurzfristigen Absage”), và quan hệ là nhượng bộ: dù diễn giả hủy vào phút chót, sự kiện vẫn diễn ra. Vì vậy cần giới từ “Trotz”. “Obwohl” là liên từ, phải đi với mệnh đề có động từ; “Wegen” (vì) và “Dank” (nhờ) sai nghĩa, vì việc hủy không phải lý do khiến sự kiện diễn ra."
+
+  - key: de:examq:goethe-b2-m1-r13
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Die Nachfrage nach den Produkten ist stark gestiegen. ___ hat das Unternehmen zusätzliche Fachkräfte eingestellt.
+      options:
+        - { id: a, text: "Trotzdem", lang: de }
+        - { id: b, text: "Deshalb", lang: de }
+        - { id: c, text: "Obwohl", lang: de }
+        - { id: d, text: "Weil", lang: de }
+    answer: b
+    explanation:
+      vi: "Câu thứ hai là hệ quả của câu thứ nhất (nhu cầu tăng → tuyển thêm người), và động từ “hat” đứng ngay sau chỗ trống, tức là trạng từ nối chiếm vị trí 1: “Deshalb hat …”. “Trotzdem” cũng đứng được ở vị trí này nhưng sai nghĩa (mặc dù vậy); “Obwohl” và “Weil” là liên từ phụ, sẽ đẩy động từ xuống cuối mệnh đề."
+
+  - key: de:examq:goethe-b2-m1-r14
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Je früher man sich für den Kurs anmeldet, ___ größer ist die Chance auf einen Platz.
+      options:
+        - { id: a, text: "desto", lang: de }
+        - { id: b, text: "als", lang: de }
+        - { id: c, text: "wie", lang: de }
+        - { id: d, text: "dann", lang: de }
+    answer: a
+    explanation:
+      vi: "Cấu trúc so sánh tăng tiến “je + so sánh hơn …, desto + so sánh hơn …” (càng … càng …): “Je früher …, desto größer …”. Vế với “desto” đảo động từ lên ngay sau tính từ (“desto größer ist”). Ngoài “desto” còn có thể dùng “umso”, nhưng từ này không có trong các phương án; “als”, “wie”, “dann” không đi với “je”."
+
+  - key: de:examq:goethe-b2-m1-r15
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Die neue Heizungsanlage ist ___ in der Anschaffung teuer, aber langfristig senkt sie die Energiekosten deutlich.
+      options:
+        - { id: a, text: "zwar", lang: de }
+        - { id: b, text: "sowohl", lang: de }
+        - { id: c, text: "weder", lang: de }
+        - { id: d, text: "entweder", lang: de }
+    answer: a
+    explanation:
+      vi: "Liên từ hai phần “zwar …, aber …” (tuy … nhưng …) nêu một nhược điểm rồi đối lập với ưu điểm: đắt khi mua nhưng về lâu dài giảm chi phí năng lượng. “Sowohl” đi với “als auch”, “weder” với “noch”, “entweder” với “oder”; không cặp nào khớp với “aber” trong câu."
+
+  # ============================== VIẾT (Schreiben) ==============================
+  # --- Teil 1: bài đăng diễn đàn ≈ 150 từ ---
+  - key: de:examq:goethe-b2-m1-w01
+    section: writing
+    kind: essay
+    question_type: goethe_write_forum
+    level_code: b2
+    points: 20
+    prompt:
+      instruction_vi: >-
+        Viết một bài đăng diễn đàn bằng tiếng Đức (khoảng 150 từ) nêu ý kiến về câu hỏi trong đề và bàn đủ bốn ý gợi ý.
+        Có câu mở đầu, lập luận có lý do hoặc ví dụ, và câu kết.
+      stem: |-
+        In einem Onlineforum wird gefragt: „Sollte man auch nach Feierabend für den Arbeitgeber erreichbar sein?“
+        Schreiben Sie einen Diskussionsbeitrag (circa 150 Wörter):
+        – Äußern Sie Ihre Meinung zu der Frage.
+        – Nennen Sie Vorteile und Nachteile ständiger Erreichbarkeit.
+        – Beschreiben Sie, wie das in Ihrem Umfeld oder Ihrem Heimatland ist.
+        – Machen Sie einen Vorschlag für eine Lösung.
+      stem_lang: de
+      min_chars: 750
+      max_chars: 2000
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Bàn đủ bốn ý (quan điểm, ưu và nhược điểm, tình hình ở nơi bạn sống, đề xuất) và phát triển bằng lý do, ví dụ; quan điểm rõ ràng, nhất quán. Thiếu một ý hoặc chỉ liệt kê mà không giải thích là mất điểm.
+        max_points: 5
+      - key: communicative_achievement
+        label_vi: Hiệu quả giao tiếp
+        description_vi: Đúng văn phong bài đăng diễn đàn (trung tính, lịch sự, hướng tới người đọc), lập luận thuyết phục, có nhắc tới ý kiến trái chiều; không viết như tin nhắn.
+        max_points: 5
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có câu mở đầu, các đoạn mỗi đoạn một ý và câu kết; dùng từ nối đa dạng (einerseits … andererseits, zwar … aber, deshalb, außerdem, letztlich).
+        max_points: 5
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Từ vựng và cấu trúc đa dạng ở mức B2 (Konjunktiv II, bị động, mệnh đề quan hệ, danh từ hóa), động từ đúng vị trí; lỗi ít và không gây hiểu nhầm.
+        max_points: 5
+    sample_answer: |-
+      Ich finde es grundsätzlich problematisch, wenn Beschäftigte auch nach Feierabend ständig erreichbar sein müssen.
+
+      Einerseits hat Erreichbarkeit durchaus Vorteile: Dringende Fragen lassen sich schnell klären, und man kann flexibler arbeiten. Andererseits verschwimmt dadurch die Grenze zwischen Arbeit und Freizeit. Wer abends noch E-Mails liest, kann kaum abschalten und ist am nächsten Morgen weniger erholt.
+
+      In meinem Umfeld ist das sehr unterschiedlich. Meine Schwester arbeitet in einer kleinen Firma und wird oft am Wochenende angerufen. In meinem Team dagegen gilt die Regel, dass nach 18 Uhr keine Nachrichten verschickt werden.
+
+      Meiner Meinung nach wäre es sinnvoll, wenn jedes Unternehmen klare Zeiten festlegen würde, in denen niemand antworten muss. Für echte Notfälle könnte man eine Vertretung bestimmen. So wären die Beschäftigten zufriedener, und die Arbeit würde trotzdem nicht liegen bleiben.
+    explanation:
+      vi: "Bài đăng diễn đàn B2 được chấm trước hết ở việc bàn đủ các ý gợi ý và lập luận có cân nhắc hai mặt. Lỗi hay gặp: bỏ sót ý (thường là phần đề xuất), chỉ liệt kê mà không giải thích, viết quá ngắn, quên đảo động từ sau trạng từ đầu câu (“Andererseits verschwimmt”, không phải “Andererseits die Grenze verschwimmt”) hoặc để động từ không ở cuối mệnh đề phụ (“wenn … festlegen würde”)."
+
+  # --- Teil 2: thư trang trọng ≈ 100 từ ---
+  - key: de:examq:goethe-b2-m1-w02
+    section: writing
+    kind: essay
+    question_type: goethe_write_email
+    level_code: b2
+    points: 16
+    prompt:
+      instruction_vi: >-
+        Viết một thư/e-mail trang trọng bằng tiếng Đức (khoảng 100 từ) gửi người phụ trách khóa học, trả lời đủ các ý
+        trong đề. Dùng “Sie”, có lời xưng hô và lời chào kết phù hợp.
+      stem: |-
+        Sie haben sich im Bildungszentrum Lindenau für den Abendkurs „Projektmanagement“ angemeldet und die Kursgebühr schon bezahlt. Nun erfahren Sie, dass der Kurs von Dienstag auf Donnerstag verlegt wird. Donnerstags können Sie nicht.
+        Schreiben Sie an die Kursleiterin, Frau Hartmann (circa 100 Wörter):
+        – Bedauern Sie die Änderung und erklären Sie, warum Sie donnerstags nicht können.
+        – Bitten Sie um eine Lösung (ein anderer Kurs oder die Erstattung der Gebühr).
+        Vergessen Sie Anrede und Gruß nicht.
+      stem_lang: de
+      min_chars: 450
+      max_chars: 1400
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Trả lời đủ các ý (tiếc về thay đổi, lý do không đến được vào thứ Năm, đề nghị giải pháp cụ thể); thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: communicative_achievement
+        label_vi: Hiệu quả giao tiếp
+        description_vi: Văn phong trang trọng, lịch sự nhưng rõ ràng (Sie nhất quán, yêu cầu bằng Konjunktiv II như “Könnten Sie …?”, “Ich wäre Ihnen dankbar, wenn …”); người đọc biết chính xác bạn cần gì.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có xưng hô (Sehr geehrte Frau Hartmann,), lý do viết thư, phần trình bày, lời cảm ơn hoặc đề nghị phản hồi, và lời chào kết (Mit freundlichen Grüßen + tên, không có dấu phẩy sau Grüßen).
+        max_points: 4
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Từ vựng và cấu trúc B2 phù hợp thư trang trọng (danh từ hóa như “die Verlegung des Kurses”, bị động, mệnh đề phụ), lỗi ít và không gây hiểu nhầm.
+        max_points: 4
+    sample_answer: |-
+      Sehr geehrte Frau Hartmann,
+
+      mit Bedauern habe ich erfahren, dass der Kurs „Projektmanagement“ von Dienstag auf Donnerstag verlegt wird. Leider kann ich an diesem Tag nicht teilnehmen, da ich donnerstags bis 20 Uhr arbeite und diese Schicht nicht tauschen kann.
+
+      Da ich die Kursgebühr bereits bezahlt habe, möchte ich Sie um eine Lösung bitten. Könnten Sie mir mitteilen, ob es einen vergleichbaren Kurs an einem anderen Wochentag gibt? Falls das nicht möglich ist, wäre ich Ihnen dankbar, wenn die Gebühr erstattet werden könnte.
+
+      Vielen Dank im Voraus für Ihre Rückmeldung.
+
+      Mit freundlichen Grüßen
+      Minh Nguyen
+    explanation:
+      vi: "Thư trang trọng B2 được chấm ở việc trả lời đủ các ý và giữ giọng lịch sự mà vẫn rõ ràng. Lỗi hay gặp: viết hoa chữ đầu sau dấu phẩy của lời xưng hô (đúng là “mit Bedauern …” viết thường), trộn “du” với “Sie”, yêu cầu quá thẳng (“Geben Sie mir mein Geld zurück”) thay vì “Könnten Sie …?” / “Ich wäre Ihnen dankbar, wenn …”, và quên lời chào kết."

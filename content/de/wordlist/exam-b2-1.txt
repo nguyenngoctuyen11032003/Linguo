@@ -1,0 +1,10 @@
+# Tên riêng hư cấu trong content/exams/de/goethe-b2-mock-1.yaml
+Brandner
+Falk
+Demir
+Hellbrück
+Talbrunn
+Altenbrunn
+Kessler
+Brück
+Wendt
