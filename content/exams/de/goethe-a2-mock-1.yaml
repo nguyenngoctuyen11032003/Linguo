@@ -1,0 +1,670 @@
+# Bài luyện mô phỏng theo phong cách Goethe-Zertifikat A2 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề
+# thi của Goethe-Institut, không chép đề thật. Số câu, thời lượng và thang điểm của kỳ thi thật chưa được đối chiếu
+# (syllabus §5.6, "to be verified"): thời gian là gợi ý luyện tập của Linguo, ngưỡng 60% do Linguo tự đặt.
+schema_version: 1
+demo: false
+language: de
+form:
+  key: de:exam:goethe-a2-mock-1
+  family: goethe
+  title_vi: Goethe A2 — Bài luyện mô phỏng số 1
+  description_vi: >-
+    Bài luyện tự soạn mô phỏng phong cách Goethe-Zertifikat A2: 12 câu nghe, 12 câu đọc, 1 tin nhắn ngắn và 1 email.
+    Đây không phải đề thi chính thức và không chép đề thật; số câu, thời gian làm bài (gợi ý luyện tập của Linguo) và
+    ngưỡng đạt không trùng với quy chế của kỳ thi thật.
+  level_from: a1
+  level_to: a2
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 25
+    reading: 30
+    writing: 30
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng đạt (đúng từ 60% số điểm mỗi phần) do Linguo tự đặt để luyện tập, không phải quy định chấm điểm chính thức
+      của Goethe-Institut; thang điểm, số câu và thời lượng của kỳ thi thật chưa được đối chiếu. Bài viết không được
+      chấm tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-18T12:00:00+07:00"
+questions:
+  # ============================== HÖREN (Nghe) ==============================
+  - key: de:examq:goethe-a2-m1-l01
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wann treffen sich die beiden?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Hallo Paul, wollen wir morgen zusammen ins Kino gehen?
+        Mann: Gern. Wann fängt der Film an?
+        Frau: Um halb acht. Wir können uns um sieben vor dem Kino treffen.
+        Mann: Um sieben kann ich leider nicht, ich muss bis sieben arbeiten. Treffen wir uns um Viertel nach sieben?
+        Frau: Okay, kein Problem.
+      options:
+        - { id: a, text: "um 19:00 Uhr", lang: de }
+        - { id: b, text: "um 19:15 Uhr", lang: de }
+        - { id: c, text: "um 19:30 Uhr", lang: de }
+    answer: b
+    explanation:
+      vi: "Paul phải làm đến 7 giờ nên đề nghị gặp lúc “Viertel nach sieben” (7 giờ 15), và người nữ đồng ý (“kein Problem”). 19:00 là đề nghị đầu tiên nhưng Paul không đến được; 19:30 (“halb acht”) là giờ phim bắt đầu, không phải giờ hẹn. Lưu ý: “halb acht” là 7 rưỡi, không phải 8 rưỡi."
+
+  - key: de:examq:goethe-a2-m1-l02
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was kauft die Frau?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Mann: Guten Tag, was möchten Sie?
+        Frau: Ich hätte gern ein Kilo Tomaten.
+        Mann: Tut mir leid, Tomaten haben wir heute nicht mehr. Aber die Paprika sind sehr frisch.
+        Frau: Hm, dann nehme ich zwei Paprika und eine Gurke.
+      options:
+        - { id: a, text: "Tomaten und eine Gurke", lang: de }
+        - { id: b, text: "Paprika und eine Gurke", lang: de }
+        - { id: c, text: "Tomaten und Paprika", lang: de }
+    answer: b
+    explanation:
+      vi: "Người nữ muốn mua cà chua nhưng hôm nay hết (“haben wir heute nicht mehr”), nên cô lấy hai quả ớt chuông và một quả dưa chuột (“zwei Paprika und eine Gurke”). Hai phương án có “Tomaten” là bẫy vì cà chua được nhắc đầu tiên nhưng cô không mua được."
+
+  - key: de:examq:goethe-a2-m1-l03
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wo ist die Brille?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Mann: Lisa, hast du meine Brille gesehen? Ich habe sie gestern auf den Schreibtisch gelegt.
+        Frau: Auf dem Schreibtisch ist sie nicht. Aber warte … sie liegt hier im Bad, neben dem Waschbecken.
+        Mann: Ach ja, stimmt! Danke!
+      options:
+        - { id: a, text: "auf dem Schreibtisch", lang: de }
+        - { id: b, text: "im Bad", lang: de }
+        - { id: c, text: "im Schlafzimmer", lang: de }
+    answer: b
+    explanation:
+      vi: "Lisa tìm thấy kính trong phòng tắm, cạnh bồn rửa (“sie liegt hier im Bad, neben dem Waschbecken”). Bàn làm việc là chỗ người nam nhớ là đã để hôm qua, nhưng Lisa nói “Auf dem Schreibtisch ist sie nicht”; phòng ngủ không được nhắc tới."
+
+  - key: de:examq:goethe-a2-m1-l04
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Warum war Tom gestern nicht im Deutschkurs?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Hallo Tom, du warst gestern nicht im Deutschkurs. Warst du krank?
+        Mann: Nein, ich war nicht krank. Ich konnte nicht kommen, weil meine Schwester Geburtstag hatte. Wir haben bei meinen Eltern gefeiert.
+        Frau: Ach so! Die Lehrerin hat gefragt, wo du bist.
+      options:
+        - { id: a, text: "Er war krank.", lang: de }
+        - { id: b, text: "Er hatte Geburtstag.", lang: de }
+        - { id: c, text: "Seine Schwester hatte Geburtstag.", lang: de }
+    answer: c
+    explanation:
+      vi: "Tom nói “weil meine Schwester Geburtstag hatte”: hôm qua là sinh nhật chị/em gái anh, cả nhà tổ chức ở nhà bố mẹ. Phương án a sai vì Tom trả lời rõ “ich war nicht krank”; phương án b là bẫy vì có từ “Geburtstag” nhưng không phải sinh nhật của Tom."
+
+  - key: de:examq:goethe-a2-m1-l05
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wie fährt die Frau normalerweise zur Arbeit?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Mann: Fährst du immer mit dem Auto zur Arbeit?
+        Frau: Nein, früher bin ich mit dem Auto gefahren. Aber jetzt nehme ich das Fahrrad. Das ist billiger und oft schneller als das Auto, weil es in der Stadt so viel Stau gibt.
+        Mann: Und wenn es regnet?
+        Frau: Dann fahre ich mit dem Bus.
+      options:
+        - { id: a, text: "mit dem Auto", lang: de }
+        - { id: b, text: "mit dem Fahrrad", lang: de }
+        - { id: c, text: "mit dem Bus", lang: de }
+    answer: b
+    explanation:
+      vi: "“Jetzt nehme ich das Fahrrad”: bây giờ cô đi xe đạp vì rẻ hơn và thường nhanh hơn ô tô. Ô tô là cách đi trước kia (“früher bin ich … gefahren”, thì Perfekt); xe buýt chỉ dùng khi trời mưa (“wenn es regnet”), không phải thường ngày."
+
+  - key: de:examq:goethe-a2-m1-l06
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo ở nhà ga và chọn đáp án đúng cho câu hỏi.
+      stem: Von welchem Gleis fährt der Zug nach Neustadt heute ab?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Achtung an Gleis 3: Der Zug nach Neustadt hat heute etwa 20 Minuten Verspätung. Der Zug fährt heute nicht von Gleis 3, sondern von Gleis 5 ab. Wir bitten um Entschuldigung.
+      options:
+        - { id: a, text: "von Gleis 3", lang: de }
+        - { id: b, text: "von Gleis 5", lang: de }
+        - { id: c, text: "von Gleis 20", lang: de }
+    answer: b
+    explanation:
+      vi: "“Nicht von Gleis 3, sondern von Gleis 5” nghĩa là hôm nay tàu không chạy từ đường ray số 3 mà từ đường ray số 5. Số 3 là bẫy vì thông báo được đọc ở đường ray 3 (chỗ cũ); còn 20 là số phút tàu bị trễ (“20 Minuten Verspätung”)."
+
+  - key: de:examq:goethe-a2-m1-l07
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo trong cửa hàng bách hóa và chọn đáp án đúng cho câu hỏi.
+      stem: Wo gibt es heute günstige Jacken?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Liebe Kundinnen und Kunden, heute sind in unserer Sportabteilung im zweiten Stock alle Jacken 30 Prozent billiger. Das Angebot gilt nur bis 18 Uhr. Unser Café im Erdgeschoss ist heute leider geschlossen.
+      options:
+        - { id: a, text: "im Erdgeschoss", lang: de }
+        - { id: b, text: "im zweiten Stock", lang: de }
+        - { id: c, text: "im Café", lang: de }
+    answer: b
+    explanation:
+      vi: "Áo khoác giảm 30% ở gian hàng thể thao tầng hai (“in unserer Sportabteilung im zweiten Stock”). Tầng trệt (“Erdgeschoss”) là chỗ quán cà phê, và quán hôm nay đóng cửa, nên hai phương án kia sai."
+
+  - key: de:examq:goethe-a2-m1-l08
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was soll Frau Becker machen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, Frau Becker, hier ist die Praxis Dr. Wolf. Sie haben morgen um 10 Uhr einen Termin bei uns. Leider ist Dr. Wolf morgen krank. Können Sie am Donnerstag um 15 Uhr kommen? Bitte rufen Sie uns kurz zurück. Vielen Dank und auf Wiederhören!
+      options:
+        - { id: a, text: "Sie soll morgen um 10 Uhr in die Praxis kommen.", lang: de }
+        - { id: b, text: "Sie soll die Praxis zurückrufen.", lang: de }
+        - { id: c, text: "Sie soll einen anderen Arzt suchen.", lang: de }
+    answer: b
+    explanation:
+      vi: "Phòng khám nhờ bà Becker gọi lại (“Bitte rufen Sie uns kurz zurück”) để xác nhận lịch mới vào thứ Năm. Phương án a sai vì lịch 10 giờ ngày mai bị hủy do bác sĩ ốm; tin nhắn không hề bảo bà tìm bác sĩ khác."
+
+  - key: de:examq:goethe-a2-m1-l09
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wann kommt Mia am Bahnhof an?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Hallo Jonas, hier ist Mia. Du, ich habe meinen Zug verpasst! Ich komme nicht um zwanzig vor sechs an. Der nächste Zug ist erst um zehn nach sieben da. Kannst du mich trotzdem am Bahnhof abholen? Wenn nicht, nehme ich ein Taxi. Schreib mir bitte kurz. Bis später!
+      options:
+        - { id: a, text: "um 17:40 Uhr", lang: de }
+        - { id: b, text: "um 19:10 Uhr", lang: de }
+        - { id: c, text: "um 19:40 Uhr", lang: de }
+    answer: b
+    explanation:
+      vi: "Mia lỡ tàu nên chuyến sau đến lúc “zehn nach sieben” (7 giờ 10 tối = 19:10). 17:40 (“zwanzig vor sechs”, 6 giờ kém 20) là giờ đến ban đầu mà cô nói là không kịp nữa; 19:40 là bẫy ghép giờ mới với số phút của giờ cũ."
+
+  - key: de:examq:goethe-a2-m1-l10
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe bản tin thời tiết trên radio và chọn đáp án đúng cho câu hỏi.
+      stem: Wie wird das Wetter morgen am Nachmittag?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Und jetzt das Wetter für morgen: Am Vormittag ist es noch sonnig, aber am Nachmittag kommt Regen. Die Temperaturen liegen bei 14 Grad. Am Wochenende wird es wärmer: Am Samstag und am Sonntag haben wir bis zu 22 Grad und viel Sonne.
+      options:
+        - { id: a, text: "Es ist sonnig.", lang: de }
+        - { id: b, text: "Es regnet.", lang: de }
+        - { id: c, text: "Es ist 22 Grad warm.", lang: de }
+    answer: b
+    explanation:
+      vi: "“Am Nachmittag kommt Regen”: chiều mai có mưa. Trời nắng chỉ vào buổi sáng (“Am Vormittag ist es noch sonnig”); 22 độ là nhiệt độ cuối tuần, còn ngày mai chỉ khoảng 14 độ."
+
+  - key: de:examq:goethe-a2-m1-l11
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wo haben Ben und sein Bruder geschlafen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Na, Ben, wie war dein Wochenende?
+        Mann: Super! Ich bin mit meinem Bruder in die Berge gefahren. Wir wollten eigentlich zelten, aber es war zu kalt. Deshalb haben wir in einer kleinen Pension geschlafen.
+        Frau: Und was habt ihr gemacht?
+        Mann: Am Samstag sind wir sechs Stunden gewandert. Am Sonntag hatte ich Rückenschmerzen. Wir sind nur in ein Café gegangen und dann nach Hause gefahren.
+        Frau: Oje! Und geht es dir heute besser?
+        Mann: Ja, heute geht es mir wieder gut.
+      options:
+        - { id: a, text: "im Zelt", lang: de }
+        - { id: b, text: "in einer Pension", lang: de }
+        - { id: c, text: "bei Freunden", lang: de }
+    answer: b
+    explanation:
+      vi: "Ben nói “Deshalb haben wir in einer kleinen Pension geschlafen”: họ ngủ ở một nhà trọ nhỏ. Phương án a là bẫy: họ định cắm trại (“wollten eigentlich zelten”) nhưng trời quá lạnh nên không làm; ở nhờ bạn bè thì không được nhắc tới."
+
+  - key: de:examq:goethe-a2-m1-l12
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was haben Ben und sein Bruder am Sonntag gemacht?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Na, Ben, wie war dein Wochenende?
+        Mann: Super! Ich bin mit meinem Bruder in die Berge gefahren. Wir wollten eigentlich zelten, aber es war zu kalt. Deshalb haben wir in einer kleinen Pension geschlafen.
+        Frau: Und was habt ihr gemacht?
+        Mann: Am Samstag sind wir sechs Stunden gewandert. Am Sonntag hatte ich Rückenschmerzen. Wir sind nur in ein Café gegangen und dann nach Hause gefahren.
+        Frau: Oje! Und geht es dir heute besser?
+        Mann: Ja, heute geht es mir wieder gut.
+      options:
+        - { id: a, text: "Sie sind sechs Stunden gewandert.", lang: de }
+        - { id: b, text: "Sie sind in ein Café gegangen.", lang: de }
+        - { id: c, text: "Sie sind zum Arzt gegangen.", lang: de }
+    answer: b
+    explanation:
+      vi: "Chủ nhật Ben bị đau lưng nên họ chỉ đi quán cà phê rồi về nhà (“Wir sind nur in ein Café gegangen”). Đi bộ đường dài sáu tiếng là việc của thứ Bảy (“Am Samstag”); Ben bị đau lưng nhưng không nói là đi khám bác sĩ."
+
+  # ============================== LESEN (Đọc) ==============================
+  - key: de:examq:goethe-a2-m1-r01
+    section: reading
+    kind: mcq
+    question_type: goethe_read_sign
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo dán ở cửa phòng khám và chọn câu đúng.
+      stem: Was ist richtig?
+      stem_lang: de
+      passage: |-
+        Praxis Dr. Hoffmann
+        Wegen Urlaub vom 4. bis 17. August geschlossen.
+        In dringenden Fällen gehen Sie bitte zur Praxis Dr. Klein im Ärztehaus am Marktplatz.
+        Ab dem 18. August sind wir wieder für Sie da.
+      options:
+        - { id: a, text: "Die Praxis ist im August zwei Wochen geschlossen.", lang: de }
+        - { id: b, text: "Dr. Hoffmann arbeitet jetzt im Ärztehaus am Marktplatz.", lang: de }
+        - { id: c, text: "Die Praxis ist ab dem 4. August wieder geöffnet.", lang: de }
+    answer: a
+    explanation:
+      vi: "Phòng khám nghỉ phép từ 4 đến 17 tháng Tám, tức là đóng cửa hai tuần (“Wegen Urlaub … geschlossen”). Phương án b sai vì ở Ärztehaus là phòng khám của bác sĩ Klein, nơi đến khi có việc gấp; phương án c sai vì ngày 4 là ngày bắt đầu nghỉ, đến 18 mới mở lại."
+
+  - key: de:examq:goethe-a2-m1-r02
+    section: reading
+    kind: mcq
+    question_type: goethe_read_sign
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo trong khu nhà ở và chọn đáp án đúng cho câu hỏi.
+      stem: Was sollen die Bewohner machen, wenn sie am Mittwoch nicht zu Hause sind?
+      stem_lang: de
+      passage: |-
+        Liebe Mieterinnen und Mieter,
+        am Mittwoch kommt zwischen 8 und 12 Uhr ein Techniker. Er muss in alle Wohnungen, weil er die Heizungen kontrolliert. Wenn Sie nicht zu Hause sind, geben Sie bitte Ihren Schlüssel bei Familie Yilmaz im Erdgeschoss ab.
+        Vielen Dank!
+        Ihre Hausverwaltung
+      options:
+        - { id: a, text: "Sie sollen den Techniker anrufen.", lang: de }
+        - { id: b, text: "Sie sollen ihren Schlüssel bei Nachbarn abgeben.", lang: de }
+        - { id: c, text: "Sie sollen die Heizung selbst kontrollieren.", lang: de }
+    answer: b
+    explanation:
+      vi: "Thông báo ghi “geben Sie bitte Ihren Schlüssel bei Familie Yilmaz im Erdgeschoss ab”: ai vắng nhà thì gửi chìa khóa cho gia đình Yilmaz ở tầng trệt, tức là hàng xóm. Không có số điện thoại nào để gọi thợ, và người kiểm tra lò sưởi là thợ chứ không phải người thuê nhà."
+
+  - key: de:examq:goethe-a2-m1-r03
+    section: reading
+    kind: mcq
+    question_type: goethe_read_sign
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo của thư viện và chọn câu đúng.
+      stem: Was ist richtig?
+      stem_lang: de
+      passage: |-
+        Stadtbibliothek – neue Öffnungszeiten ab 1. Mai
+        Montag: geschlossen
+        Dienstag bis Freitag: 10 bis 19 Uhr
+        Samstag: 10 bis 14 Uhr
+        Ihre Bücher können Sie auch online verlängern.
+      options:
+        - { id: a, text: "Am Montag kann man keine Bücher ausleihen.", lang: de }
+        - { id: b, text: "Am Samstag ist die Bibliothek bis 19 Uhr geöffnet.", lang: de }
+        - { id: c, text: "Man muss für die Verlängerung in die Bibliothek gehen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Thứ Hai thư viện đóng cửa (“Montag: geschlossen”), nên hôm đó không mượn sách được. Thứ Bảy chỉ mở đến 14 giờ, còn 19 giờ là giờ đóng cửa từ thứ Ba đến thứ Sáu; gia hạn sách có thể làm trên mạng (“auch online verlängern”), không bắt buộc đến thư viện."
+
+  - key: de:examq:goethe-a2-m1-r04
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Warum kommt Hanna am Samstag nicht zur Party?
+      stem_lang: de
+      passage: |-
+        Liebe Sara,
+        vielen Dank für deine Einladung! Leider kann ich am Samstag nicht zu deiner Party kommen, weil meine Eltern uns besuchen. Sie wohnen in Österreich und kommen nur zweimal im Jahr. Hast du am Sonntag Zeit? Dann bringe ich dir dein Geschenk vorbei.
+        Übrigens habe ich eine neue Stelle: Seit Montag arbeite ich an der Rezeption in einem Hotel. Die Arbeit ist anstrengender als im Café, aber sie gefällt mir besser.
+        Liebe Grüße
+        Hanna
+      options:
+        - { id: a, text: "Sie muss am Samstag arbeiten.", lang: de }
+        - { id: b, text: "Ihre Eltern besuchen sie.", lang: de }
+        - { id: c, text: "Sie fährt nach Österreich.", lang: de }
+    answer: b
+    explanation:
+      vi: "Hanna viết “weil meine Eltern uns besuchen”: bố mẹ cô đến thăm vào thứ Bảy. Phương án c là bẫy vì có “Österreich”, nhưng đó là nơi bố mẹ cô sống, Hanna không đi đâu cả; email không nói thứ Bảy cô phải đi làm."
+
+  - key: de:examq:goethe-a2-m1-r05
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Was möchte Hanna am Sonntag machen?
+      stem_lang: de
+      passage: |-
+        Liebe Sara,
+        vielen Dank für deine Einladung! Leider kann ich am Samstag nicht zu deiner Party kommen, weil meine Eltern uns besuchen. Sie wohnen in Österreich und kommen nur zweimal im Jahr. Hast du am Sonntag Zeit? Dann bringe ich dir dein Geschenk vorbei.
+        Übrigens habe ich eine neue Stelle: Seit Montag arbeite ich an der Rezeption in einem Hotel. Die Arbeit ist anstrengender als im Café, aber sie gefällt mir besser.
+        Liebe Grüße
+        Hanna
+      options:
+        - { id: a, text: "Sie möchte Sara ihr Geschenk bringen.", lang: de }
+        - { id: b, text: "Sie möchte mit ihren Eltern nach Österreich fahren.", lang: de }
+        - { id: c, text: "Sie möchte eine Party machen.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Hast du am Sonntag Zeit? Dann bringe ich dir dein Geschenk vorbei”: nếu Sara rảnh vào Chủ nhật, Hanna sẽ ghé mang quà đến. Bữa tiệc là của Sara vào thứ Bảy, không phải Hanna tổ chức; email không nói Hanna đi Áo cùng bố mẹ."
+
+  - key: de:examq:goethe-a2-m1-r06
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc email và chọn đáp án đúng cho câu hỏi.
+      stem: Was schreibt Hanna über ihre neue Arbeit?
+      stem_lang: de
+      passage: |-
+        Liebe Sara,
+        vielen Dank für deine Einladung! Leider kann ich am Samstag nicht zu deiner Party kommen, weil meine Eltern uns besuchen. Sie wohnen in Österreich und kommen nur zweimal im Jahr. Hast du am Sonntag Zeit? Dann bringe ich dir dein Geschenk vorbei.
+        Übrigens habe ich eine neue Stelle: Seit Montag arbeite ich an der Rezeption in einem Hotel. Die Arbeit ist anstrengender als im Café, aber sie gefällt mir besser.
+        Liebe Grüße
+        Hanna
+      options:
+        - { id: a, text: "Sie ist leichter als die Arbeit im Café.", lang: de }
+        - { id: b, text: "Sie gefällt ihr besser als die Arbeit im Café.", lang: de }
+        - { id: c, text: "Hanna arbeitet jetzt in einem Café.", lang: de }
+    answer: b
+    explanation:
+      vi: "“Die Arbeit ist anstrengender als im Café, aber sie gefällt mir besser”: công việc mới vất vả hơn ở quán cà phê nhưng Hanna thích hơn. Phương án a ngược nghĩa (anstrengender = mệt hơn, không phải leichter = nhẹ nhàng hơn); phương án c sai vì quán cà phê là chỗ làm cũ, giờ cô làm lễ tân khách sạn."
+
+  - key: de:examq:goethe-a2-m1-r07
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc các mẩu rao vặt A–E và chọn mẩu phù hợp với người được mô tả.
+      stem: Lan arbeitet tagsüber und möchte am Abend ihr Deutsch verbessern. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A  Deutschkurs am Abend: Grammatik und Gespräche, dienstags und donnerstags von 18 bis 20 Uhr, 8 Wochen.
+        B  Fahrrad zu verkaufen: 3 Jahre alt, sehr guter Zustand, 120 Euro.
+        C  Wohnung in der Stadtmitte: 2 Zimmer, Küche, Bad, Balkon, frei ab 1. Juni.
+        D  Babysitter gesucht: für unsere Tochter (4 Jahre), zweimal pro Woche am Nachmittag.
+        E  Kochkurs am Wochenende: Wir kochen zusammen italienisch, samstags von 10 bis 14 Uhr.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige C", lang: de }
+        - { id: c, text: "Anzeige D", lang: de }
+        - { id: d, text: "Anzeige E", lang: de }
+    answer: a
+    explanation:
+      vi: "Lan đi làm ban ngày và muốn học tiếng Đức buổi tối: mẩu A là lớp tiếng Đức buổi tối (18–20 giờ). Mẩu E là khóa học nấu ăn vào sáng thứ Bảy, không phải học tiếng; mẩu D cần người trông trẻ buổi chiều, mà Lan bận làm việc ban ngày."
+
+  - key: de:examq:goethe-a2-m1-r08
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc các mẩu rao vặt A–E và chọn mẩu phù hợp với người được mô tả.
+      stem: Herr und Frau Okafor suchen eine Wohnung mit Balkon im Zentrum. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A  Deutschkurs am Abend: Grammatik und Gespräche, dienstags und donnerstags von 18 bis 20 Uhr, 8 Wochen.
+        B  Fahrrad zu verkaufen: 3 Jahre alt, sehr guter Zustand, 120 Euro.
+        C  Wohnung in der Stadtmitte: 2 Zimmer, Küche, Bad, Balkon, frei ab 1. Juni.
+        D  Babysitter gesucht: für unsere Tochter (4 Jahre), zweimal pro Woche am Nachmittag.
+        E  Kochkurs am Wochenende: Wir kochen zusammen italienisch, samstags von 10 bis 14 Uhr.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: c
+    explanation:
+      vi: "Mẩu C là căn hộ ở trung tâm thành phố (“in der Stadtmitte” = “im Zentrum”) có ban công (“Balkon”), đúng điều vợ chồng Okafor tìm. Các mẩu còn lại là lớp học, xe đạp và tìm người trông trẻ, không liên quan đến nhà ở."
+
+  - key: de:examq:goethe-a2-m1-r09
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc các mẩu rao vặt A–E và chọn mẩu phù hợp với người được mô tả.
+      stem: Tim ist 19 und studiert. Er möchte am Nachmittag mit Kindern arbeiten und Geld verdienen. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A  Deutschkurs am Abend: Grammatik und Gespräche, dienstags und donnerstags von 18 bis 20 Uhr, 8 Wochen.
+        B  Fahrrad zu verkaufen: 3 Jahre alt, sehr guter Zustand, 120 Euro.
+        C  Wohnung in der Stadtmitte: 2 Zimmer, Küche, Bad, Balkon, frei ab 1. Juni.
+        D  Babysitter gesucht: für unsere Tochter (4 Jahre), zweimal pro Woche am Nachmittag.
+        E  Kochkurs am Wochenende: Wir kochen zusammen italienisch, samstags von 10 bis 14 Uhr.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige D", lang: de }
+        - { id: d, text: "Anzeige E", lang: de }
+    answer: c
+    explanation:
+      vi: "Mẩu D tìm người trông một bé gái 4 tuổi, hai buổi chiều mỗi tuần: Tim vừa được làm việc với trẻ em buổi chiều vừa có thu nhập. Mẩu B là bán xe đạp (Tim phải trả tiền chứ không kiếm tiền); mẩu A và E là khóa học, người học phải trả tiền."
+
+  - key: de:examq:goethe-a2-m1-r10
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo ngắn và chọn đáp án đúng cho câu hỏi.
+      stem: Was war früher an diesem Ort?
+      stem_lang: de
+      passage: |-
+        Ein Garten für alle
+        Seit einem Jahr gibt es in der Lindenstraße einen Gemeinschaftsgarten. Früher war hier nur ein Parkplatz. Heute pflanzen etwa 30 Nachbarn dort Gemüse und Blumen. „Die meisten von uns haben keinen eigenen Garten, weil wir in kleinen Wohnungen wohnen“, sagt Petra Lang (62). Jeden Samstag treffen sich die Gärtner und arbeiten zusammen. Danach essen sie oft gemeinsam. Wer mitmachen möchte, muss nichts bezahlen. Man braucht nur ein bisschen Zeit.
+      options:
+        - { id: a, text: "ein Garten", lang: de }
+        - { id: b, text: "ein Parkplatz", lang: de }
+        - { id: c, text: "ein Wohnhaus", lang: de }
+    answer: b
+    explanation:
+      vi: "“Früher war hier nur ein Parkplatz”: trước đây chỗ này chỉ là một bãi đỗ xe. Khu vườn là thứ có từ một năm nay (“Seit einem Jahr”), không phải trước kia; căn hộ nhỏ là nơi các thành viên ở, không phải thứ từng có ở khu đất này."
+
+  - key: de:examq:goethe-a2-m1-r11
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài báo ngắn và chọn câu đúng.
+      stem: Was ist richtig?
+      stem_lang: de
+      passage: |-
+        Ein Garten für alle
+        Seit einem Jahr gibt es in der Lindenstraße einen Gemeinschaftsgarten. Früher war hier nur ein Parkplatz. Heute pflanzen etwa 30 Nachbarn dort Gemüse und Blumen. „Die meisten von uns haben keinen eigenen Garten, weil wir in kleinen Wohnungen wohnen“, sagt Petra Lang (62). Jeden Samstag treffen sich die Gärtner und arbeiten zusammen. Danach essen sie oft gemeinsam. Wer mitmachen möchte, muss nichts bezahlen. Man braucht nur ein bisschen Zeit.
+      options:
+        - { id: a, text: "Man muss für den Garten Geld bezahlen.", lang: de }
+        - { id: b, text: "Die Nachbarn arbeiten jeden Samstag zusammen im Garten.", lang: de }
+        - { id: c, text: "Petra Lang hat einen großen eigenen Garten.", lang: de }
+    answer: b
+    explanation:
+      vi: "“Jeden Samstag treffen sich die Gärtner und arbeiten zusammen”: thứ Bảy nào họ cũng gặp nhau làm vườn chung. Phương án a sai vì “muss nichts bezahlen” (không phải trả tiền); phương án c sai vì bà Lang nói phần lớn họ không có vườn riêng do sống trong căn hộ nhỏ."
+
+  - key: de:examq:goethe-a2-m1-r12
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: a2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Ich interessiere ___ sehr für den Deutschkurs am Abend. Wann beginnt er?
+      options:
+        - { id: a, text: "mich", lang: de }
+        - { id: b, text: "mir", lang: de }
+        - { id: c, text: "sich", lang: de }
+    answer: a
+    explanation:
+      vi: "“sich interessieren für” là động từ phản thân; với chủ ngữ “ich”, đại từ phản thân ở cách Akkusativ là “mich”: Ich interessiere mich für … “mir” là dạng Dativ (dùng như sich vorstellen: Ich stelle mir … vor), còn “sich” chỉ dùng cho er/sie/es/Sie/sie (số nhiều)."
+
+  # ============================== SCHREIBEN (Viết) ==============================
+  - key: de:examq:goethe-a2-m1-w01
+    section: writing
+    kind: essay
+    question_type: goethe_write_message
+    level_code: a2
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết một tin nhắn ngắn bằng tiếng Đức (khoảng 20–30 từ) cho bạn, dùng “du”, trả lời đủ ba ý trong đề. Viết thành
+        câu hoàn chỉnh, có lời chào và lời kết.
+      stem: |-
+        Sie wollen am Samstag mit Ihrer Freundin Julia einkaufen gehen. Sie können aber nicht kommen. Schreiben Sie Julia eine SMS:
+        • Entschuldigen Sie sich.
+        • Schreiben Sie, warum Sie nicht kommen können.
+        • Machen Sie einen neuen Vorschlag.
+        Schreiben Sie 20–30 Wörter.
+      stem_lang: de
+      min_chars: 80
+      max_chars: 400
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Đủ ba ý (xin lỗi, lý do không đến được, đề nghị ngày/giờ mới) rõ ràng để Julia hiểu ngay; thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có lời chào thân mật (Hallo Julia / Liebe Julia), các ý theo thứ tự hợp lý, lời kết và tên (Liebe Grüße, …); câu nối bằng aber, weil, dann.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng “du” nhất quán, đúng vị trí động từ (động từ ở vị trí 2, cuối câu sau weil), đúng giờ/ngày (am Montag, um 16 Uhr); lỗi chính tả, ngữ pháp không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Hallo Julia,
+      es tut mir leid, aber ich kann am Samstag nicht kommen, weil mein Sohn krank ist. Können wir am Montag um 16 Uhr einkaufen gehen?
+      Liebe Grüße
+      Linh
+    explanation:
+      vi: "Tin nhắn A2 được chấm trước hết ở việc trả lời đủ cả ba ý bằng câu đơn giản, đúng. Lỗi hay gặp: quên đề nghị thời gian mới, đặt động từ sai sau “weil” (“weil mein Sohn ist krank” thay vì “weil mein Sohn krank ist”), hoặc trộn “du” với “Sie” trong cùng một tin nhắn cho bạn."
+
+  - key: de:examq:goethe-a2-m1-w02
+    section: writing
+    kind: essay
+    question_type: goethe_write_email
+    level_code: a2
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết một email trang trọng bằng tiếng Đức (khoảng 30–40 từ) cho giáo viên, dùng “Sie”, trả lời đủ ba ý trong
+        đề. Viết thành câu hoàn chỉnh, có lời chào và lời kết trang trọng.
+      stem: |-
+        Sie besuchen einen Deutschkurs bei Frau Schneider. Nächste Woche können Sie nicht zum Kurs kommen. Schreiben Sie Frau Schneider eine E-Mail:
+        • Schreiben Sie, dass Sie nicht kommen können.
+        • Erklären Sie, warum.
+        • Bitten Sie um die Hausaufgaben.
+        Schreiben Sie 30–40 Wörter.
+      stem_lang: de
+      min_chars: 150
+      max_chars: 600
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Đủ ba ý (báo vắng tuần sau, lý do, xin bài tập về nhà) rõ ràng; thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Lời chào và lời kết trang trọng (Sehr geehrte Frau Schneider, … Mit freundlichen Grüßen + họ tên); các ý theo thứ tự hợp lý, nối bằng weil, dass, deshalb.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng “Sie/Ihnen” viết hoa nhất quán, câu nhờ vả lịch sự (Können Sie mir bitte …?), đúng vị trí động từ trong câu phụ với weil/dass; lỗi không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Sehr geehrte Frau Schneider,
+      leider kann ich nächste Woche nicht zum Deutschkurs kommen, weil ich für meine Firma nach Frankfurt fahren muss. Können Sie mir bitte die Hausaufgaben per E-Mail schicken?
+      Vielen Dank!
+      Mit freundlichen Grüßen
+      Nguyen Van Minh
+    explanation:
+      vi: "Email trang trọng A2 được chấm ở việc đủ ba ý và giữ đúng ngữ vực lịch sự từ đầu đến cuối. Lỗi hay gặp: mở đầu bằng “Hallo” hoặc dùng “du” với giáo viên, viết thường “sie/ihnen” khi xưng hô lịch sự, quên động từ khuyết thiếu ở cuối câu weil (“weil ich … fahren muss”), hoặc đặt dấu phẩy sau “Mit freundlichen Grüßen”."

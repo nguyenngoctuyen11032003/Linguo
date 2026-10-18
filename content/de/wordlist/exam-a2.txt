@@ -1,0 +1,6 @@
+# content/exams/de/goethe-a2-mock-1.yaml (agent G11)
+# Tên riêng (hư cấu)
+Hanna
+Okafor
+# Thán từ chuẩn (Duden: oje)
+Oje
