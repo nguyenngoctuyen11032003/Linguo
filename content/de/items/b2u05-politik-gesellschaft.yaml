@@ -1,0 +1,1820 @@
+# Học liệu unit B2U05 "Chính trị và xã hội" (Politik und Gesellschaft), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U05L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# Mọi tên người, thành phố (Musterstadt), hội, dự án trong ví dụ đều là hư cấu.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Điều kiện trang trọng – sofern, es sei denn =================
+  - key: de:item:b2u05-g-sofern-soweit
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "sofern / soweit + Nebensatz · …, es sei denn, … (+ Verb an Position 2 oder dass + Verb am Ende)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "sofern (nếu, với điều kiện là) và soweit (theo như, trong chừng mực) mở câu phụ, động từ chia đứng cuối; sofern trang trọng hơn wenn/falls và hay gặp trong điều lệ, hợp đồng. es sei denn (trừ phi, trừ khi) đứng sau câu chính và nêu ngoại lệ. Sau es sei denn có hai cách: câu có động từ ở vị trí 2 (…, es sei denn, es regnet) hoặc câu dass có động từ cuối (…, es sei denn, dass es regnet)."
+      examples:
+        - target: Sofern nichts anderes vereinbart ist, gilt die Satzung für alle Mitglieder.
+          translation:
+            vi: Nếu không có thoả thuận nào khác, điều lệ áp dụng cho mọi thành viên.
+        - target: Soweit ich weiß, ist die Sitzung öffentlich.
+          translation:
+            vi: Theo như tôi biết, buổi họp là công khai.
+        - target: Die Sitzung ist öffentlich, es sei denn, die Mitglieder beschließen etwas anderes.
+          translation:
+            vi: Buổi họp công khai, trừ khi các thành viên quyết định khác.
+      confusion:
+        vi: "sofern nêu điều kiện (nếu có X thì …), es sei denn nêu ngoại lệ (… trừ khi có X). Cách nói gần nghĩa với sofern: vorausgesetzt, (dass) … = với điều kiện là: Wir fangen an, vorausgesetzt, alle sind da / vorausgesetzt, dass alle da sind."
+
+  - key: de:item:b2u05-g-bedingung-nominal
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Bedingung mit Nomen: bei + Dativ (bei Regen) · im Falle + Genitiv / im Fall von + Dativ · ohne + Akkusativ"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Văn bản trang trọng thường nói điều kiện bằng cụm danh từ thay cho câu wenn: bei Regen (= wenn es regnet), bei Fragen (= wenn Sie Fragen haben). im Falle + Genitiv (im Falle einer Erkrankung) hoặc im Fall von + Dativ dùng cho trường hợp ít xảy ra. ohne + Akkusativ nêu điều kiện phủ định: ohne Ihre Unterschrift = wenn Sie nicht unterschreiben."
+      examples:
+        - target: Bei schlechtem Wetter findet die Versammlung im Rathaus statt.
+          translation:
+            vi: Nếu thời tiết xấu, cuộc họp diễn ra ở toà thị chính.
+        - target: Im Falle einer Erkrankung informieren Sie bitte sofort das Büro.
+          translation:
+            vi: Trong trường hợp bị ốm, xin hãy báo ngay cho văn phòng.
+        - target: Ohne Ihre Unterschrift ist das Formular ungültig.
+          translation:
+            vi: Không có chữ ký của anh/chị thì mẫu đơn không có giá trị.
+      confusion:
+        vi: "bei đi với Dativ, nên tính từ không có mạo từ mang đuôi -em/-er: bei schlechtem Wetter, bei guter Laune. Nói điều kiện chung thì thường không có mạo từ: bei Regen, bei Fragen; bei dem Regen lại nghĩa là \"với trận mưa này\"."
+
+  - key: de:item:b2u05-gesetz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gesetz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: luật, đạo luật
+      examples:
+        - target: Der Bundestag beschließt die Gesetze des Bundes.
+          translation:
+            vi: Quốc hội liên bang thông qua các đạo luật của liên bang.
+        - target: Vor dem Gesetz sind alle Menschen gleich.
+          translation:
+            vi: Mọi người đều bình đẳng trước pháp luật.
+      confusion:
+        vi: "das Gesetz là một đạo luật cụ thể do nhà nước ban hành; das Recht là quyền (das Wahlrecht) hoặc cả hệ thống pháp luật nói chung."
+
+  - key: de:item:b2u05-verfassung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verfassung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiến pháp; (cũng) tình trạng sức khoẻ, tinh thần
+      examples:
+        - target: Die Verfassung schützt die Grundrechte der Bürger.
+          translation:
+            vi: Hiến pháp bảo vệ các quyền cơ bản của công dân.
+        - target: Jedes deutsche Bundesland hat eine eigene Verfassung.
+          translation:
+            vi: Mỗi bang của Đức có một hiến pháp riêng.
+      confusion:
+        vi: "Hiến pháp liên bang của Đức có tên riêng là das Grundgesetz; die Verfassung là từ chung. Nghĩa khác: in guter Verfassung sein = đang khoẻ, phong độ tốt."
+
+  - key: de:item:b2u05-staat
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Staat, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà nước, quốc gia
+      examples:
+        - target: Der Staat finanziert die öffentlichen Schulen.
+          translation:
+            vi: Nhà nước cấp kinh phí cho các trường công.
+        - target: Deutschland ist ein Bundesstaat mit 16 Ländern.
+          translation:
+            vi: Đức là một nhà nước liên bang gồm 16 bang.
+      confusion:
+        vi: "Số nhiều -en nhưng Staat không biến cách kiểu n: des Staates, dem Staat. der Staat là bộ máy nhà nước; das Land là đất nước (và cũng là \"bang\" ở Đức)."
+
+  - key: de:item:b2u05-bundestag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Bundestag (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: Quốc hội liên bang (Đức)
+      examples:
+        - target: Die Abgeordneten des Bundestages werden von den Bürgern gewählt.
+          translation:
+            vi: Các đại biểu Quốc hội liên bang do công dân bầu ra.
+        - target: Heute stimmt der Bundestag über das Gesetz ab.
+          translation:
+            vi: Hôm nay Quốc hội liên bang biểu quyết về đạo luật đó.
+      confusion:
+        vi: "Genitiv có thể là des Bundestages hoặc des Bundestags. Ở Áo, quốc hội gọi là der Nationalrat; ở Thuỵ Sĩ là die Bundesversammlung."
+
+  - key: de:item:b2u05-wahlbeteiligung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wahlbeteiligung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tỉ lệ cử tri đi bầu
+      examples:
+        - target: Die Wahlbeteiligung war diesmal höher als bei der letzten Wahl.
+          translation:
+            vi: Lần này tỉ lệ đi bầu cao hơn lần bầu cử trước.
+        - target: Die Stadt möchte die Wahlbeteiligung junger Menschen erhöhen.
+          translation:
+            vi: Thành phố muốn tăng tỉ lệ đi bầu của người trẻ.
+      confusion:
+        vi: "Từ ghép: die Wahl + die Beteiligung (sự tham gia), giống theo từ cuối nên là die. Nói tỉ lệ cao/thấp: eine hohe/niedrige Wahlbeteiligung."
+
+  - key: de:item:b2u05-abstimmen
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abstimmen (über + Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: biểu quyết, bỏ phiếu (về một vấn đề)
+      examples:
+        - target: Morgen stimmen die Mitglieder über die neue Satzung ab.
+          translation:
+            vi: Ngày mai các thành viên biểu quyết về điều lệ mới.
+        - target: Wir haben per Handzeichen abgestimmt.
+          translation:
+            vi: Chúng tôi đã biểu quyết bằng cách giơ tay.
+      confusion:
+        vi: "Động từ tách: ich stimme … ab, hat abgestimmt. abstimmen über + Akk là bỏ phiếu cho một vấn đề; wählen là bầu người hoặc đảng."
+
+  - key: de:item:b2u05-abstimmung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Abstimmung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc biểu quyết, việc bỏ phiếu
+      examples:
+        - target: Die Abstimmung ist geheim.
+          translation:
+            vi: Cuộc biểu quyết là bỏ phiếu kín.
+        - target: Bei der Abstimmung gab es eine knappe Mehrheit.
+          translation:
+            vi: Trong cuộc biểu quyết chỉ có đa số sít sao.
+      confusion:
+        vi: "die Abstimmung (về một vấn đề) khác die Wahl (bầu người, đảng). Nghĩa khác: die Abstimmung mit dem Team = sự phối hợp với nhóm."
+
+  - key: de:item:b2u05-grundgesetz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Grundgesetz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: Luật Cơ bản (hiến pháp của Cộng hoà Liên bang Đức)
+      examples:
+        - target: Das Grundgesetz gilt seit 1949.
+          translation:
+            vi: Luật Cơ bản có hiệu lực từ năm 1949.
+        - target: Artikel 1 des Grundgesetzes schützt die Würde des Menschen.
+          translation:
+            vi: Điều 1 của Luật Cơ bản bảo vệ phẩm giá con người.
+      confusion:
+        vi: "Dùng với mạo từ xác định: das Grundgesetz, im Grundgesetz (in dem). Genitiv: des Grundgesetzes."
+
+  # --- Zusatzwortschatz L1 ---
+  - key: de:item:b2u05-regelung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Regelung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy định (cụ thể); cách giải quyết đã thống nhất
+      examples:
+        - target: Für Jugendliche gibt es eine besondere Regelung.
+          translation:
+            vi: Đối với thanh thiếu niên có một quy định riêng.
+        - target: Die neue Regelung gilt ab Januar.
+          translation:
+            vi: Quy định mới có hiệu lực từ tháng Một.
+      confusion:
+        vi: "die Regel là quy tắc chung (in der Regel = thường thì); die Regelung là quy định cụ thể do một cơ quan hay tổ chức đặt ra."
+
+  - key: de:item:b2u05-ausnahme
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ausnahme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngoại lệ
+      examples:
+        - target: Für Kinder unter sechs Jahren gilt eine Ausnahme.
+          translation:
+            vi: Với trẻ dưới sáu tuổi có một ngoại lệ.
+        - target: Keine Regel ohne Ausnahme.
+          translation:
+            vi: Quy tắc nào cũng có ngoại lệ.
+      confusion:
+        vi: "Cụm hay gặp: mit Ausnahme von + Dativ (ngoại trừ), eine Ausnahme machen (cho ngoại lệ)."
+
+  - key: de:item:b2u05-bedingung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Bedingung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều kiện
+      examples:
+        - target: Die Bedingungen für die Mitgliedschaft stehen in der Satzung.
+          translation:
+            vi: Các điều kiện để làm thành viên được ghi trong điều lệ.
+        - target: Ich helfe dir, unter einer Bedingung – du hilfst mir morgen auch.
+          translation:
+            vi: Mình giúp bạn, với một điều kiện – mai bạn cũng giúp mình.
+      confusion:
+        vi: "unter der Bedingung, dass … = với điều kiện là …. Điều kiện làm việc, sống thì thường dùng số nhiều: die Arbeitsbedingungen, die Lebensbedingungen."
+
+  - key: de:item:b2u05-gelten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gelten, gilt, galt, hat gegolten
+      pos: động từ
+    back:
+      meaning:
+        vi: có hiệu lực, được áp dụng; (gelten als) được coi là
+      examples:
+        - target: Die Regel gilt für alle Mitglieder.
+          translation:
+            vi: Quy tắc này áp dụng cho mọi thành viên.
+        - target: Das Ticket gilt nur einen Tag.
+          translation:
+            vi: Vé này chỉ có giá trị một ngày.
+      confusion:
+        vi: "Đổi nguyên âm ở du/er: du giltst, er gilt. gelten als + Nominativ = được coi là: Er gilt als guter Redner."
+
+  - key: de:item:b2u05-parlament
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Parlament, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghị viện, quốc hội
+      examples:
+        - target: Im Parlament sitzen Abgeordnete verschiedener Parteien.
+          translation:
+            vi: Trong nghị viện có đại biểu của nhiều đảng khác nhau.
+        - target: Das Parlament diskutiert seit Wochen über den Haushalt.
+          translation:
+            vi: Nghị viện đã thảo luận về ngân sách nhiều tuần nay.
+      confusion:
+        vi: "Trọng âm ở âm tiết cuối: Parla-MENT. das Parlament là từ chung; quốc hội liên bang Đức có tên riêng der Bundestag."
+
+  - key: de:item:b2u05-rechtsstaat
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Rechtsstaat, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà nước pháp quyền
+      examples:
+        - target: In einem Rechtsstaat muss sich auch die Regierung an die Gesetze halten.
+          translation:
+            vi: Trong nhà nước pháp quyền, chính phủ cũng phải tuân theo luật.
+        - target: Unabhängige Gerichte sind ein Merkmal des Rechtsstaates.
+          translation:
+            vi: Toà án độc lập là một đặc điểm của nhà nước pháp quyền.
+      confusion:
+        vi: "Từ ghép das Recht + der Staat với -s- nối: der Rechtsstaat (giống theo từ cuối). sich an Gesetze halten = tuân thủ luật."
+
+  - key: de:item:b2u05-gewaltenteilung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Gewaltenteilung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phân chia quyền lực (lập pháp, hành pháp, tư pháp)
+      examples:
+        - target: Die Gewaltenteilung trennt Gesetzgebung, Regierung und Rechtsprechung.
+          translation:
+            vi: Phân chia quyền lực tách biệt lập pháp, hành pháp và tư pháp.
+        - target: Ohne Gewaltenteilung gibt es keinen Rechtsstaat.
+          translation:
+            vi: Không có phân chia quyền lực thì không có nhà nước pháp quyền.
+      confusion:
+        vi: "die Gewalt ở đây là \"quyền lực\" (die Staatsgewalt), không phải \"bạo lực\" như trong die Gewalt gegen Kinder."
+
+  - key: de:item:b2u05-wahlrecht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Wahlrecht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyền bầu cử; luật bầu cử
+      examples:
+        - target: Ab welchem Alter hat man in deinem Land das Wahlrecht?
+          translation:
+            vi: Ở nước bạn, từ bao nhiêu tuổi thì người ta có quyền bầu cử?
+        - target: Bei der Bundestagswahl hat man das Wahlrecht ab 18 Jahren.
+          translation:
+            vi: Trong cuộc bầu cử Quốc hội liên bang, người ta có quyền bầu cử từ 18 tuổi.
+      confusion:
+        vi: "Tuổi bầu cử ở các cuộc bầu cử khác (cấp bang, cấp xã) khác nhau theo bang và có thể thay đổi, nên hãy kiểm tra quy định hiện hành."
+
+  - key: de:item:b2u05-volljaehrig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: volljährig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đủ tuổi thành niên
+      examples:
+        - target: In Deutschland ist man mit 18 Jahren volljährig.
+          translation:
+            vi: Ở Đức, người ta đủ tuổi thành niên khi 18 tuổi.
+        - target: Erst wenn du volljährig bist, kannst du den Vertrag allein unterschreiben.
+          translation:
+            vi: Chỉ khi đủ tuổi thành niên, bạn mới có thể tự ký hợp đồng.
+      confusion:
+        vi: "Trái nghĩa: minderjährig (chưa thành niên). Danh từ: die Volljährigkeit."
+
+  - key: de:item:b2u05-gesetzgebung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Gesetzgebung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lập pháp, việc làm luật
+      examples:
+        - target: Für die Gesetzgebung ist vor allem das Parlament zuständig.
+          translation:
+            vi: Việc lập pháp chủ yếu thuộc thẩm quyền của nghị viện.
+        - target: Die Gesetzgebung dauert oft länger, als die Bürger erwarten.
+          translation:
+            vi: Việc làm luật thường kéo dài hơn người dân mong đợi.
+      confusion:
+        vi: "Từ ghép das Gesetz + die Gebung (từ geben); giống theo từ cuối nên là die. Ba nhánh quyền lực: die Gesetzgebung (lập pháp), die Regierung/Verwaltung (hành pháp), die Rechtsprechung (tư pháp)."
+
+  - key: de:item:b2u05-verbindlich
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: verbindlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: có tính ràng buộc, bắt buộc phải theo
+      examples:
+        - target: Die Satzung ist für alle Mitglieder verbindlich.
+          translation:
+            vi: Điều lệ có tính ràng buộc với mọi thành viên.
+        - target: Die Anmeldung zum Kurs ist verbindlich.
+          translation:
+            vi: Việc đăng ký khoá học là ràng buộc (đã đăng ký thì không tự ý huỷ được).
+      confusion:
+        vi: "Trái nghĩa: unverbindlich (không ràng buộc): ein unverbindliches Angebot. Nghĩa khác: ein verbindlicher Ton = giọng lịch sự, nhã nhặn."
+
+  - key: de:item:b2u05-satzung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Satzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: điều lệ (của hội, tổ chức)
+      examples:
+        - target: Laut Satzung trifft sich der Vorstand viermal im Jahr.
+          translation:
+            vi: Theo điều lệ, ban chấp hành họp bốn lần một năm.
+        - target: Die Satzung regelt die Rechte und Pflichten der Mitglieder.
+          translation:
+            vi: Điều lệ quy định quyền và nghĩa vụ của các thành viên.
+      confusion:
+        vi: "die Satzung là văn bản nội bộ của hội hay tổ chức; das Gesetz do nhà nước ban hành. Mỗi điều trong văn bản thường đánh số bằng ký hiệu § (Paragraf)."
+
+  # ================= Bài 2: Trạng từ nối văn bản, zumal =================
+  - key: de:item:b2u05-g-textkonnektoren
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Textkonnektoren (+ Verb an Position 2): zudem, darüber hinaus, ferner, außerdem · stattdessen · andernfalls, sonst · hingegen"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Các trạng từ nối này đứng ở vị trí 1 thì động từ chia đứng ngay sau, chủ ngữ ra sau động từ (Zudem fehlt Geld.); chúng cũng có thể đứng giữa câu, sau động từ (Es fehlt zudem Geld.). Nghĩa: bổ sung – zudem, darüber hinaus, ferner, außerdem (hơn nữa, ngoài ra); thay thế – stattdessen (thay vào đó); nếu không làm thì – andernfalls, sonst (nếu không thì); tương phản – hingegen (ngược lại). Sau chúng không đặt dấu phẩy."
+      examples:
+        - target: Viele Familien haben wenig Geld. Darüber hinaus fehlen in manchen Stadtteilen Kindergärten.
+          translation:
+            vi: Nhiều gia đình có ít tiền. Hơn nữa, ở một số khu phố còn thiếu nhà trẻ.
+        - target: Die Stadt baut keine neue Straße. Stattdessen investiert sie in Busse und Radwege.
+          translation:
+            vi: Thành phố không làm đường mới. Thay vào đó, họ đầu tư vào xe buýt và đường xe đạp.
+        - target: Wir müssen jetzt handeln, andernfalls wird das Problem größer.
+          translation:
+            vi: Chúng ta phải hành động ngay, nếu không thì vấn đề sẽ lớn hơn.
+      confusion:
+        vi: "Khác tiếng Anh (Moreover, …), tiếng Đức không đặt dấu phẩy sau trạng từ nối và phải đảo: Darüber hinaus haben viele …, không viết Darüber hinaus, viele haben …. und, aber, oder, denn thì ở vị trí 0, không đảo."
+
+  - key: de:item:b2u05-g-zumal
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "zumal + Nebensatz (Verb am Ende): Ich bin dagegen, zumal das Projekt sehr teuer ist."
+      pos: liên từ
+    back:
+      meaning:
+        vi: "zumal (nhất là vì, huống hồ) mở câu phụ, động từ chia đứng cuối, và thường đứng sau câu chính. Nó thêm một lý do làm cho điều vừa nói càng hợp lý hơn. Khi chỉ muốn nêu nguyên nhân một cách trung tính, dùng weil hoặc da."
+      examples:
+        - target: Ich unterstütze den Vorschlag, zumal er kaum Kosten verursacht.
+          translation:
+            vi: Tôi ủng hộ đề xuất này, nhất là vì nó hầu như không tốn kém.
+        - target: Wir sollten heute nicht mehr abstimmen, zumal einige Mitglieder fehlen.
+          translation:
+            vi: Hôm nay chúng ta không nên biểu quyết nữa, nhất là khi một số thành viên vắng mặt.
+      confusion:
+        vi: "zumal không phải trạng từ vị trí 1 như zudem: viết …, zumal er kaum Kosten verursacht (động từ cuối). Ngoài ra zumal còn là trạng từ \"nhất là\" trước một cụm: Die Mieten sind hoch, zumal in Großstädten."
+
+  - key: de:item:b2u05-gesellschaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gesellschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: xã hội; (cũng) công ty; sự bầu bạn
+      examples:
+        - target: Wir leben in einer vielfältigen Gesellschaft.
+          translation:
+            vi: Chúng ta sống trong một xã hội đa dạng.
+        - target: Bildung ist wichtig für die ganze Gesellschaft.
+          translation:
+            vi: Giáo dục quan trọng đối với cả xã hội.
+      confusion:
+        vi: "Nghĩa khác: die Gesellschaft = công ty (GmbH = Gesellschaft mit beschränkter Haftung); jemandem Gesellschaft leisten = ở bên, bầu bạn với ai."
+
+  - key: de:item:b2u05-gesellschaftlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gesellschaftlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc về xã hội
+      examples:
+        - target: Armut ist ein gesellschaftliches Problem.
+          translation:
+            vi: Nghèo đói là một vấn đề xã hội.
+        - target: Viele Vereine übernehmen gesellschaftliche Verantwortung.
+          translation:
+            vi: Nhiều hội nhận lấy trách nhiệm xã hội.
+      confusion:
+        vi: "gesellschaftlich nói về xã hội nói chung (das gesellschaftliche Leben); sozial thường gắn với phúc lợi và sự quan tâm đến người khác (soziale Hilfe, ein sozialer Beruf)."
+
+  - key: de:item:b2u05-gleichberechtigung
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Gleichberechtigung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự bình đẳng về quyền (nhất là giữa nam và nữ)
+      examples:
+        - target: Das Grundgesetz garantiert die Gleichberechtigung von Männern und Frauen.
+          translation:
+            vi: Luật Cơ bản bảo đảm quyền bình đẳng giữa nam và nữ.
+        - target: Gleichberechtigung heißt gleiche Rechte und gleiche Chancen für alle.
+          translation:
+            vi: Bình đẳng nghĩa là quyền như nhau và cơ hội như nhau cho mọi người.
+      confusion:
+        vi: "Tính từ: gleichberechtigt (bình quyền). die Gleichberechtigung nói về quyền; die Chancengleichheit nói về cơ hội."
+
+  - key: de:item:b2u05-armut
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Armut (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nghèo đói, cảnh nghèo
+      examples:
+        - target: Viele Organisationen kämpfen gegen Armut.
+          translation:
+            vi: Nhiều tổ chức đấu tranh chống nghèo đói.
+        - target: Armut betrifft oft ganze Familien.
+          translation:
+            vi: Nghèo đói thường ảnh hưởng đến cả gia đình.
+      confusion:
+        vi: "arm (nghèo) → die Armut; đừng nhầm với der Arm (cánh tay)."
+
+  - key: de:item:b2u05-reichtum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Reichtum, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự giàu có; sự phong phú
+      examples:
+        - target: Reichtum allein macht nicht glücklich.
+          translation:
+            vi: Chỉ giàu có thôi thì không làm người ta hạnh phúc.
+        - target: Die Region ist bekannt für ihren Reichtum an Wäldern.
+          translation:
+            vi: Vùng này nổi tiếng vì có nhiều rừng.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Reichtümer. der Reichtum an + Dativ = sự phong phú về cái gì."
+
+  - key: de:item:b2u05-ungleichheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ungleichheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự bất bình đẳng
+      examples:
+        - target: Soziale Ungleichheit ist ein wichtiges Thema in der Politik.
+          translation:
+            vi: Bất bình đẳng xã hội là một chủ đề quan trọng trong chính trị.
+        - target: Die Studie untersucht die Ungleichheit zwischen Stadt und Land.
+          translation:
+            vi: Nghiên cứu này tìm hiểu sự bất bình đẳng giữa thành thị và nông thôn.
+      confusion:
+        vi: "Danh từ đuôi -heit là giống cái: die Ungleichheit, die Freiheit. Tiền tố un- phủ định: gleich → ungleich."
+
+  - key: de:item:b2u05-sozial
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sozial
+      pos: tính từ
+    back:
+      meaning:
+        vi: (thuộc) xã hội, phúc lợi; biết quan tâm đến người khác
+      examples:
+        - target: Sie arbeitet in einem sozialen Beruf.
+          translation:
+            vi: Cô ấy làm một nghề trong lĩnh vực xã hội.
+        - target: Der Verein hilft Familien in schwierigen sozialen Situationen.
+          translation:
+            vi: Hội giúp các gia đình đang ở hoàn cảnh xã hội khó khăn.
+      confusion:
+        vi: "-zi- trong sozial đọc gần \"tsi\" (z = ts). sozial cũng có nghĩa \"biết nghĩ cho người khác\": Sie ist sehr sozial."
+
+  - key: de:item:b2u05-generation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Generation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thế hệ
+      examples:
+        - target: In unserem Haus leben drei Generationen zusammen.
+          translation:
+            vi: Trong nhà chúng tôi có ba thế hệ cùng sống.
+        - target: Die junge Generation nutzt andere Medien als ihre Großeltern.
+          translation:
+            vi: Thế hệ trẻ dùng những phương tiện truyền thông khác với ông bà mình.
+      confusion:
+        vi: "Danh từ đuôi -tion là giống cái, trọng âm ở -tion (-ti- đọc gần \"tsi\"): die Generation."
+
+  # --- Zusatzwortschatz L2 ---
+  - key: de:item:b2u05-gerechtigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gerechtigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự công bằng, công lý
+      examples:
+        - target: Viele Menschen wünschen sich mehr soziale Gerechtigkeit.
+          translation:
+            vi: Nhiều người mong có thêm công bằng xã hội.
+        - target: Was Gerechtigkeit bedeutet, wird oft unterschiedlich gesehen.
+          translation:
+            vi: Công bằng nghĩa là gì thường được nhìn nhận khác nhau.
+      confusion:
+        vi: "Danh từ đuôi -keit là giống cái. gerecht (công bằng) → die Gerechtigkeit; ungerecht → die Ungerechtigkeit."
+
+  - key: de:item:b2u05-gerecht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: gerecht
+      pos: tính từ
+    back:
+      meaning:
+        vi: công bằng
+      examples:
+        - target: Die Lehrerin bewertet alle Schüler gerecht.
+          translation:
+            vi: Cô giáo chấm điểm mọi học sinh một cách công bằng.
+        - target: Ist es gerecht, dass alle gleich viel bezahlen?
+          translation:
+            vi: Mọi người trả như nhau thì có công bằng không?
+      confusion:
+        vi: "gerecht (công bằng, đúng lẽ phải) khác gleich (như nhau): chia đều chưa chắc đã công bằng."
+
+  - key: de:item:b2u05-vermoegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Vermögen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài sản, của cải
+      examples:
+        - target: Das Vermögen der Familie besteht vor allem aus Immobilien.
+          translation:
+            vi: Tài sản của gia đình chủ yếu là bất động sản.
+        - target: Sie hat einen Teil ihres Vermögens einer Stiftung geschenkt.
+          translation:
+            vi: Bà ấy đã tặng một phần tài sản cho một quỹ từ thiện.
+      confusion:
+        vi: "das Vermögen là toàn bộ của cải (tiền, nhà, cổ phiếu); das Einkommen là thu nhập đều đặn (lương). Đây là động từ vermögen được danh từ hoá nên giống trung."
+
+  - key: de:item:b2u05-teilhabe
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Teilhabe (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự được tham gia (vào đời sống xã hội), được hưởng phần
+      examples:
+        - target: Bildung ermöglicht gesellschaftliche Teilhabe.
+          translation:
+            vi: Giáo dục giúp người ta được tham gia vào đời sống xã hội.
+        - target: Das Projekt fördert die Teilhabe von Menschen mit Behinderung.
+          translation:
+            vi: Dự án thúc đẩy sự tham gia của người khuyết tật.
+      confusion:
+        vi: "die Teilhabe là từ trang trọng, hay gặp trong văn bản chính sách; die Teilnahme an + Dativ là việc tham dự một sự kiện cụ thể."
+
+  - key: de:item:b2u05-wohlstand
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Wohlstand (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thịnh vượng, đời sống sung túc
+      examples:
+        - target: Nach dem Zweiten Weltkrieg wuchs der Wohlstand in vielen Ländern Europas.
+          translation:
+            vi: Sau Chiến tranh thế giới thứ hai, đời sống ở nhiều nước châu Âu sung túc dần lên.
+        - target: Wohlstand bedeutet nicht nur Geld.
+          translation:
+            vi: Thịnh vượng không chỉ có nghĩa là tiền.
+      confusion:
+        vi: "der Wohlstand thường nói về mức sống của cả một nhóm, một nước; der Reichtum là sự giàu có (thường của một người)."
+
+  - key: de:item:b2u05-solidaritaet
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Solidarität (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình đoàn kết, sự tương trợ
+      examples:
+        - target: Nach dem Hochwasser zeigten die Nachbarn große Solidarität.
+          translation:
+            vi: Sau trận lũ, hàng xóm đã thể hiện tình tương trợ lớn.
+        - target: Die gesetzliche Rentenversicherung beruht auf der Solidarität zwischen den Generationen.
+          translation:
+            vi: Bảo hiểm hưu trí theo luật định dựa trên sự tương trợ giữa các thế hệ.
+      confusion:
+        vi: "Danh từ đuôi -tät là giống cái, trọng âm ở -tät: die Solidarität. Tính từ: solidarisch (mit + Dativ)."
+
+  - key: de:item:b2u05-kluft
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Kluft, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoảng cách lớn, hố sâu (nghĩa bóng)
+      examples:
+        - target: Das Projekt will die Kluft zwischen Stadt und Land verringern.
+          translation:
+            vi: Dự án muốn thu hẹp khoảng cách giữa thành thị và nông thôn.
+        - target: Viele sprechen von einer Kluft zwischen Arm und Reich.
+          translation:
+            vi: Nhiều người nói về hố sâu giữa người giàu và người nghèo.
+      confusion:
+        vi: "Số nhiều đổi nguyên âm: die Klüfte. Arm und Reich ở đây viết hoa vì là tính từ được danh từ hoá (người nghèo và người giàu)."
+
+  - key: de:item:b2u05-zusammenhalt
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Zusammenhalt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự gắn kết, đoàn kết
+      examples:
+        - target: Feste in der Nachbarschaft stärken den Zusammenhalt.
+          translation:
+            vi: Những lễ hội trong khu phố làm tăng sự gắn kết.
+        - target: Der gesellschaftliche Zusammenhalt ist ein wichtiges Ziel.
+          translation:
+            vi: Sự gắn kết xã hội là một mục tiêu quan trọng.
+      confusion:
+        vi: "Gốc là động từ tách zusammenhalten (đoàn kết với nhau): In der Krise halten alle zusammen."
+
+  - key: de:item:b2u05-wohlhabend
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: wohlhabend
+      pos: tính từ
+    back:
+      meaning:
+        vi: khá giả, giàu có
+      examples:
+        - target: Sie stammt aus einer wohlhabenden Familie.
+          translation:
+            vi: Cô ấy xuất thân từ một gia đình khá giả.
+        - target: In wohlhabenden Stadtteilen sind die Mieten oft hoch.
+          translation:
+            vi: Ở những khu phố khá giả, tiền thuê nhà thường cao.
+      confusion:
+        vi: "wohlhabend nghe lịch sự, trung tính hơn reich. Nói tế nhị về người nghèo: Menschen mit geringem Einkommen."
+
+  - key: de:item:b2u05-sozialstaat
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Sozialstaat, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà nước phúc lợi xã hội
+      examples:
+        - target: Im Sozialstaat bekommen Menschen in Not Unterstützung.
+          translation:
+            vi: Trong nhà nước phúc lợi, người gặp khó khăn được hỗ trợ.
+        - target: Wie der Sozialstaat finanziert werden soll, ist eine kontroverse Frage.
+          translation:
+            vi: Nhà nước phúc lợi nên được cấp kinh phí thế nào là một câu hỏi gây tranh cãi.
+      confusion:
+        vi: "Từ ghép sozial + der Staat (giống theo từ cuối). Các khoản hỗ trợ cụ thể khác nhau giữa các nước và thay đổi theo luật."
+
+  - key: de:item:b2u05-freiheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Freiheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tự do
+      examples:
+        - target: Für viele bedeutet Freiheit, selbst über ihr Leben zu entscheiden.
+          translation:
+            vi: Với nhiều người, tự do là được tự quyết định cuộc sống của mình.
+        - target: Freiheit und Sicherheit muss man oft gegeneinander abwägen.
+          translation:
+            vi: Người ta thường phải cân nhắc giữa tự do và an ninh.
+      confusion:
+        vi: "Danh từ đuôi -heit là giống cái; frei → die Freiheit. Số nhiều die Freiheiten = các quyền tự do cụ thể."
+
+  - key: de:item:b2u05-immerhin
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: immerhin
+      pos: trạng từ
+    back:
+      meaning:
+        vi: dù sao thì, ít ra thì (ghi nhận một điểm tích cực)
+      examples:
+        - target: Wir haben nicht gewonnen, aber immerhin waren wir Zweite.
+          translation:
+            vi: Chúng tôi không thắng, nhưng dù sao cũng được hạng nhì.
+        - target: Die Wahlbeteiligung war niedrig. Immerhin haben mehr junge Leute gewählt als beim letzten Mal.
+          translation:
+            vi: Tỉ lệ đi bầu thấp. Dù sao thì số người trẻ đi bầu cũng nhiều hơn lần trước.
+      confusion:
+        vi: "Như trạng từ nối, immerhin ở vị trí 1 thì động từ đứng ngay sau: Immerhin ist die Beteiligung gestiegen. Khác dennoch (tuy vậy, vẫn), immerhin nhấn vào một mặt tích cực nhỏ."
+
+  # ================= Bài 3: Động từ, danh từ + giới từ (B2) =================
+  - key: de:item:b2u05-g-verben-praeposition-b2
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Verben mit Präposition (B2): sich einsetzen für + Akk · beitragen zu + Dat · sich auseinandersetzen mit + Dat · bestehen auf/aus/in + Dat · abhängen von + Dat · sich beziehen auf + Akk · führen zu + Dat · verfügen über + Akk"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Những động từ này đi với một giới từ cố định, và giới từ quyết định cách của danh từ theo sau. Giới từ thường không khớp với tiếng Việt (\"phụ thuộc vào\" là abhängen von, không phải in), nên hãy học cả cụm động từ + giới từ + cách. Khi thay vật hay cả một câu, dùng da(r) + giới từ (dafür, dazu, davon …); khi hỏi về vật, dùng wo(r) + giới từ (wofür, wozu, wovon …)."
+      examples:
+        - target: Die Bürgerinitiative setzt sich für einen neuen Spielplatz ein.
+          translation:
+            vi: Nhóm sáng kiến công dân vận động cho một sân chơi mới.
+        - target: Ob der Park bleibt, hängt von der Abstimmung im Stadtrat ab.
+          translation:
+            vi: Công viên có được giữ lại hay không phụ thuộc vào cuộc biểu quyết ở hội đồng thành phố.
+        - target: Das Problem besteht darin, dass niemand die Kosten tragen will.
+          translation:
+            vi: Vấn đề nằm ở chỗ không ai muốn gánh chi phí.
+      confusion:
+        vi: "bestehen đổi nghĩa theo giới từ: bestehen auf + Dativ (khăng khăng đòi), bestehen aus + Dativ (gồm có), bestehen in + Dativ (nằm ở, là). Không có giới từ: eine Prüfung bestehen (thi đỗ)."
+
+  - key: de:item:b2u05-g-nomen-praeposition
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Nomen mit Präposition: der Einfluss auf + Akk · die Kritik an + Dat · das Interesse an + Dat · die Verantwortung für + Akk · die Teilnahme an + Dat · der Zugang zu + Dat"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nhiều danh từ cũng có giới từ cố định, thường giống động từ cùng gốc: teilnehmen an → die Teilnahme an, sich interessieren für → das Interesse an (cũng gặp Interesse für). Có khi động từ không cần giới từ mà danh từ lại cần: jemanden kritisieren nhưng die Kritik an jemandem. Hãy học danh từ kèm giới từ và cách."
+      examples:
+        - target: Soziale Medien können großen Einfluss auf die Meinung junger Menschen haben.
+          translation:
+            vi: Mạng xã hội có thể có ảnh hưởng lớn đến quan điểm của người trẻ.
+        - target: Es gab viel Kritik an der neuen Regelung.
+          translation:
+            vi: Có nhiều lời chỉ trích đối với quy định mới.
+        - target: Alle Kinder sollen Zugang zu guter Bildung haben.
+          translation:
+            vi: Mọi trẻ em đều nên được tiếp cận với nền giáo dục tốt.
+      confusion:
+        vi: "Người Việt hay dịch \"ảnh hưởng đến\" thành Einfluss zu: đúng là Einfluss auf + Akkusativ. Nhiều cụm này nằm trong Funktionsverbgefüge: Einfluss nehmen auf, Kritik üben an, Verantwortung übernehmen für."
+
+  - key: de:item:b2u05-sich-einsetzen-fuer
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich einsetzen für (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: đấu tranh cho, vận động cho, ra sức vì
+      examples:
+        - target: Sie setzt sich für die Rechte von Kindern ein.
+          translation:
+            vi: Cô ấy đấu tranh cho quyền của trẻ em.
+        - target: Wofür setzt sich der Verein ein? – Für mehr Grünflächen in der Stadt.
+          translation:
+            vi: Hội vận động cho điều gì? – Cho nhiều mảng xanh hơn trong thành phố.
+      confusion:
+        vi: "Động từ tách và phản thân: ich setze mich … ein, sie hat sich eingesetzt. Không có sich và für, einsetzen là \"sử dụng, bố trí\": Die Stadt setzt mehr Busse ein."
+
+  - key: de:item:b2u05-beitragen-zu
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: beitragen zu (+ Dat), trägt bei, trug bei, hat beigetragen
+      pos: động từ
+    back:
+      meaning:
+        vi: đóng góp vào, góp phần vào
+      examples:
+        - target: Jeder kann zum Klimaschutz beitragen.
+          translation:
+            vi: Ai cũng có thể góp phần bảo vệ khí hậu.
+        - target: Die Bürgerinitiative hat dazu beigetragen, dass der Park erhalten bleibt.
+          translation:
+            vi: Nhóm sáng kiến công dân đã góp phần giữ lại công viên.
+      confusion:
+        vi: "zu + Dativ, nên zu dem → zum, zu der → zur: zum Erfolg beitragen, zur Lösung beitragen. Danh từ: der Beitrag (phần đóng góp; cũng là bài viết, hội phí)."
+
+  - key: de:item:b2u05-sich-auseinandersetzen-mit
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: sich auseinandersetzen mit (+ Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: tìm hiểu kỹ, đối diện và suy xét (một vấn đề); tranh luận với ai
+      examples:
+        - target: Im Unterricht setzen wir uns mit dem Thema Armut auseinander.
+          translation:
+            vi: Trong giờ học, chúng tôi tìm hiểu kỹ chủ đề nghèo đói.
+        - target: Man sollte sich auch mit den Gegenargumenten auseinandersetzen.
+          translation:
+            vi: Người ta cũng nên xem xét kỹ các lập luận phản bác.
+      confusion:
+        vi: "Tiền tố tách được auseinander- đứng cuối câu chính: Wir setzen uns damit auseinander. Danh từ: die Auseinandersetzung (sự tranh cãi; sự tìm hiểu kỹ)."
+
+  - key: de:item:b2u05-bestehen-auf
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: bestehen auf (+ Dat), bestand, hat bestanden
+      pos: động từ
+    back:
+      meaning:
+        vi: khăng khăng đòi, kiên quyết giữ (yêu cầu)
+      examples:
+        - target: Die Anwohner bestehen auf einer Antwort der Stadt.
+          translation:
+            vi: Cư dân kiên quyết đòi thành phố trả lời.
+        - target: Ich bestehe darauf, dass wir offen abstimmen.
+          translation:
+            vi: Tôi nhất quyết đòi chúng ta biểu quyết công khai.
+      confusion:
+        vi: "Trong tiếng Đức chuẩn hiện nay, bestehen auf thường đi với Dativ (auf seinem Recht bestehen). Khác hẳn bestehen aus (gồm có) và eine Prüfung bestehen (thi đỗ)."
+
+  - key: de:item:b2u05-abhaengen-von
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abhängen von (+ Dat), hing ab, hat abgehangen
+      pos: động từ
+    back:
+      meaning:
+        vi: phụ thuộc vào, tuỳ thuộc vào
+      examples:
+        - target: Das hängt vom Wetter ab.
+          translation:
+            vi: Điều đó tuỳ thuộc vào thời tiết.
+        - target: Ob das Projekt kommt, hängt davon ab, wie viele Bürger es unterstützen.
+          translation:
+            vi: Dự án có được thực hiện hay không phụ thuộc vào việc bao nhiêu công dân ủng hộ.
+      confusion:
+        vi: "Tiếng Việt nói \"phụ thuộc vào\" nhưng tiếng Đức dùng von + Dativ, không dùng in. Tính từ: abhängig von (phụ thuộc), unabhängig von (độc lập)."
+
+  - key: de:item:b2u05-sich-beziehen-auf
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: sich beziehen auf (+ Akk), bezog sich, hat sich bezogen
+      pos: động từ
+    back:
+      meaning:
+        vi: đề cập đến, nói về, dựa vào
+      examples:
+        - target: Ich beziehe mich auf Ihre E-Mail vom 3. Mai.
+          translation:
+            vi: Tôi xin đề cập đến e-mail của ông/bà ngày 3 tháng Năm.
+        - target: Worauf bezieht sich diese Regel?
+          translation:
+            vi: Quy định này nói về điều gì?
+      confusion:
+        vi: "sich beziehen auf đi với Akkusativ: auf Ihre E-Mail, auf den Artikel. Cụm trang trọng trong thư: Bezug nehmend auf … / mit Bezug auf …."
+
+  - key: de:item:b2u05-einfluss
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Einfluss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ảnh hưởng
+      examples:
+        - target: Eltern haben großen Einfluss auf die Entwicklung ihrer Kinder.
+          translation:
+            vi: Cha mẹ có ảnh hưởng lớn đến sự phát triển của con cái.
+        - target: Viele Bürger möchten mehr Einfluss auf die Politik haben.
+          translation:
+            vi: Nhiều công dân muốn có nhiều ảnh hưởng hơn đến chính trị.
+      confusion:
+        vi: "Einfluss auf + Akkusativ (không phải zu hay für). Số nhiều đổi nguyên âm: die Einflüsse. Einfluss nehmen auf = gây ảnh hưởng đến."
+
+  - key: de:item:b2u05-kritik
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kritik, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phê bình, lời chỉ trích; bài phê bình
+      examples:
+        - target: Es gab viel Kritik an dem neuen Plan.
+          translation:
+            vi: Có nhiều lời chỉ trích đối với kế hoạch mới.
+        - target: Sie übt sachlich Kritik an der Stadtverwaltung.
+          translation:
+            vi: Bà ấy phê bình chính quyền thành phố một cách khách quan.
+      confusion:
+        vi: "Kritik an + Dativ, nhưng động từ kritisieren đi thẳng với Akkusativ: Sie kritisiert den Plan. Trọng âm ở âm tiết thứ hai: Kri-TIK."
+
+  # --- Zusatzwortschatz L3 ---
+  - key: de:item:b2u05-beteiligung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Beteiligung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tham gia
+      examples:
+        - target: Die Stadt wünscht sich eine stärkere Beteiligung der Bürger.
+          translation:
+            vi: Thành phố mong người dân tham gia nhiều hơn.
+        - target: Die Beteiligung an der Umfrage war hoch.
+          translation:
+            vi: Số người tham gia khảo sát rất đông.
+      confusion:
+        vi: "die Beteiligung an + Dativ, như động từ sich beteiligen an. Bạn đã gặp từ ghép die Wahlbeteiligung ở bài 1."
+
+  - key: de:item:b2u05-sich-beteiligen-an
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: sich beteiligen an (+ Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: tham gia vào
+      examples:
+        - target: Viele Schüler beteiligten sich an der Aktion.
+          translation:
+            vi: Nhiều học sinh đã tham gia hoạt động đó.
+        - target: Möchtest du dich an dem Projekt beteiligen?
+          translation:
+            vi: Bạn có muốn tham gia dự án không?
+      confusion:
+        vi: "Người Việt hay dùng in (\"tham gia trong\"): đúng là an + Dativ. Partizip II không có ge- vì tiền tố be-: hat sich beteiligt."
+
+  - key: de:item:b2u05-buergerinitiative
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Bürgerinitiative, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhóm sáng kiến công dân (người dân tự lập nhóm để vận động cho một mục tiêu cụ thể)
+      examples:
+        - target: Eine Bürgerinitiative setzt sich für einen neuen Radweg ein.
+          translation:
+            vi: Một nhóm sáng kiến công dân vận động cho một đường xe đạp mới.
+        - target: Die Bürgerinitiative hat schon viele Unterschriften gesammelt.
+          translation:
+            vi: Nhóm sáng kiến công dân đã thu thập được nhiều chữ ký.
+      confusion:
+        vi: "Từ ghép der Bürger + die Initiative, giống theo từ cuối nên là die. Khác đảng phái, nhóm này thường chỉ theo đuổi một mục tiêu địa phương."
+
+  - key: de:item:b2u05-petition
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Petition, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản kiến nghị
+      examples:
+        - target: Über 2000 Menschen haben die Petition unterschrieben.
+          translation:
+            vi: Hơn 2000 người đã ký vào bản kiến nghị.
+        - target: Man kann eine Petition oft auch online einreichen.
+          translation:
+            vi: Người ta thường cũng có thể nộp kiến nghị trực tuyến.
+      confusion:
+        vi: "Danh từ đuôi -tion là giống cái. Cụm hay gặp: eine Petition starten / unterschreiben / einreichen."
+
+  - key: de:item:b2u05-demonstration
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Demonstration, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc biểu tình, cuộc tuần hành
+      examples:
+        - target: Am Samstag findet eine Demonstration für bessere Radwege statt.
+          translation:
+            vi: Thứ Bảy có một cuộc tuần hành đòi đường xe đạp tốt hơn.
+        - target: Die Demonstration verlief friedlich.
+          translation:
+            vi: Cuộc biểu tình diễn ra ôn hoà.
+      confusion:
+        vi: "Văn nói hay rút gọn thành die Demo, -s. Động từ: demonstrieren für/gegen + Akkusativ."
+
+  - key: de:item:b2u05-protestieren-gegen
+    type: phrase
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: protestieren gegen (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: phản đối
+      examples:
+        - target: Die Anwohner protestieren gegen den Bau der Straße.
+          translation:
+            vi: Cư dân phản đối việc xây con đường.
+        - target: Wogegen protestieren die Studierenden?
+          translation:
+            vi: Sinh viên phản đối điều gì?
+      confusion:
+        vi: "Động từ đuôi -ieren không có ge- ở Partizip II: hat protestiert. Danh từ: der Protest gegen + Akkusativ."
+
+  - key: de:item:b2u05-interesse
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Interesse, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự quan tâm, hứng thú; lợi ích
+      examples:
+        - target: Sie hat großes Interesse an Politik.
+          translation:
+            vi: Cô ấy rất quan tâm đến chính trị.
+        - target: Die Gewerkschaft vertritt die Interessen der Arbeitnehmer.
+          translation:
+            vi: Công đoàn đại diện cho quyền lợi của người lao động.
+      confusion:
+        vi: "Thường dùng Interesse an + Dativ; Interesse für + Akkusativ cũng đúng. Động từ: sich interessieren für + Akkusativ."
+
+  - key: de:item:b2u05-mitbestimmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: mitbestimmen
+      pos: động từ
+    back:
+      meaning:
+        vi: cùng quyết định, có tiếng nói (trong việc gì)
+      examples:
+        - target: Jugendliche wollen in ihrer Stadt mitbestimmen.
+          translation:
+            vi: Thanh thiếu niên muốn có tiếng nói trong thành phố của mình.
+        - target: Im Schülerrat können die Schüler über viele Fragen mitbestimmen.
+          translation:
+            vi: Trong hội đồng học sinh, học sinh có thể cùng quyết định nhiều vấn đề.
+      confusion:
+        vi: "Động từ tách: Wir bestimmen mit, hat mitbestimmt (bestimmen có tiền tố be- nên không thêm ge-). Danh từ: die Mitbestimmung."
+
+  - key: de:item:b2u05-fordern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fordern
+      pos: động từ
+    back:
+      meaning:
+        vi: đòi, yêu cầu (mạnh mẽ)
+      examples:
+        - target: Die Eltern fordern mehr Lehrkräfte für die Schule.
+          translation:
+            vi: Phụ huynh đòi có thêm giáo viên cho trường.
+        - target: Die Bürgerinitiative fordert, dass der Park bleibt.
+          translation:
+            vi: Nhóm sáng kiến công dân đòi giữ lại công viên.
+      confusion:
+        vi: "Đừng nhầm fordern (đòi hỏi) với fördern (thúc đẩy, hỗ trợ). fordern mạnh hơn bitten (xin) và verlangen gần nghĩa với nó."
+
+  - key: de:item:b2u05-forderung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Forderung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: yêu sách, đòi hỏi
+      examples:
+        - target: Die Stadt hat einige Forderungen der Bürger erfüllt.
+          translation:
+            vi: Thành phố đã đáp ứng một số đòi hỏi của người dân.
+        - target: Eine wichtige Forderung ist ein besserer Busverkehr.
+          translation:
+            vi: Một yêu cầu quan trọng là xe buýt tốt hơn.
+      confusion:
+        vi: "Cụm hay gặp: eine Forderung stellen (đưa ra yêu sách), eine Forderung erfüllen (đáp ứng)."
+
+  - key: de:item:b2u05-verfuegen-ueber
+    type: phrase
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: verfügen über (+ Akk)
+      pos: động từ
+    back:
+      meaning:
+        vi: có, sở hữu (trang trọng)
+      examples:
+        - target: Die Bibliothek verfügt über mehr als 50000 Bücher.
+          translation:
+            vi: Thư viện có hơn 50000 cuốn sách.
+        - target: Die Gemeinde verfügt über wenig Geld für neue Projekte.
+          translation:
+            vi: Xã có ít tiền cho các dự án mới.
+      confusion:
+        vi: "verfügen über + Akkusativ là cách nói trang trọng của haben, hay gặp trong văn viết và hồ sơ xin việc: Ich verfüge über gute Deutschkenntnisse."
+
+  - key: de:item:b2u05-gemeinde
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Gemeinde, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: xã, đơn vị hành chính địa phương; cộng đoàn (tôn giáo)
+      examples:
+        - target: In unserer Gemeinde wohnen etwa 3000 Menschen.
+          translation:
+            vi: Xã chúng tôi có khoảng 3000 người sinh sống.
+        - target: Die Gemeinde baut einen neuen Kindergarten.
+          translation:
+            vi: Xã xây một nhà trẻ mới.
+      confusion:
+        vi: "die Gemeinde là đơn vị hành chính nhỏ nhất (làng, thị trấn, thành phố); die Gemeinschaft là cộng đồng, sự gắn bó giữa người với người."
+
+  # ================= Bài 4: Thảo luận, phản biện lịch sự =================
+  - key: de:item:b2u05-g-diskussion-redemittel
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Redemittel Diskussion: Da muss ich Ihnen widersprechen. · Das mag sein, aber … · Ich gebe zu bedenken, dass … · Wäre es nicht sinnvoller, … zu …? · Lassen Sie uns einen Kompromiss finden."
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Để phản bác lịch sự: Da muss ich Ihnen widersprechen (widersprechen + Dativ) hoặc Das mag sein, aber … (thừa nhận một phần rồi phản bác). Để nêu lo ngại và đề xuất: Ich gebe zu bedenken, dass … (động từ cuối câu dass), Wäre es nicht sinnvoller, … zu + Infinitiv? Để tìm điểm chung: Lassen Sie uns einen Kompromiss finden."
+      examples:
+        - target: Das mag sein, aber ohne neue Wohnungen können die Mieten weiter steigen.
+          translation:
+            vi: Có thể là vậy, nhưng nếu không có nhà mới thì tiền thuê nhà có thể còn tăng.
+        - target: Wäre es nicht sinnvoller, nur einen kleinen Teil des Parks zu bebauen?
+          translation:
+            vi: Chẳng phải sẽ hợp lý hơn nếu chỉ xây trên một phần nhỏ của công viên sao?
+        - target: Ich gebe zu bedenken, dass der Bau mehrere Jahre dauern würde.
+          translation:
+            vi: Tôi xin lưu ý rằng việc xây dựng sẽ kéo dài nhiều năm.
+      confusion:
+        vi: "Das mag sein dùng mögen để thừa nhận khả năng (\"có thể\"), không phải \"thích\". Viết zu bedenken (chữ thường) trong cụm zu bedenken geben; die Bedenken (danh từ) là mối lo ngại."
+
+  - key: de:item:b2u05-einwand
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Einwand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý kiến phản đối, lời phản bác
+      examples:
+        - target: Haben Sie Einwände gegen diesen Vorschlag?
+          translation:
+            vi: Anh/chị có ý kiến phản đối đề xuất này không?
+        - target: Das ist ein berechtigter Einwand.
+          translation:
+            vi: Đó là một ý kiến phản bác có cơ sở.
+      confusion:
+        vi: "Einwand gegen + Akkusativ. Số nhiều đổi nguyên âm: die Einwände."
+
+  - key: de:item:b2u05-einwenden
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: einwenden, wendet ein, wandte ein, hat eingewandt
+      pos: động từ
+    back:
+      meaning:
+        vi: phản bác, nêu ý kiến ngược lại
+      examples:
+        - target: Man könnte einwenden, dass das Projekt zu teuer ist.
+          translation:
+            vi: Người ta có thể phản bác rằng dự án quá tốn kém.
+        - target: Sie wandte ein, dass nicht alle Bürger einen Internetzugang haben.
+          translation:
+            vi: Bà ấy phản bác rằng không phải công dân nào cũng có kết nối Internet.
+      confusion:
+        vi: "Có hai dạng đều đúng: wandte ein / hat eingewandt và wendete ein / hat eingewendet. Thường đi với câu dass."
+
+  - key: de:item:b2u05-debatte
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Debatte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc tranh luận, cuộc thảo luận
+      examples:
+        - target: Im Parlament gab es eine lange Debatte über das Gesetz.
+          translation:
+            vi: Trong nghị viện đã có một cuộc tranh luận dài về đạo luật.
+        - target: Die Debatte im Jugendrat war lebhaft, aber fair.
+          translation:
+            vi: Cuộc tranh luận trong hội đồng thanh niên sôi nổi nhưng công bằng.
+      confusion:
+        vi: "Debatte über + Akkusativ. Trọng âm ở âm tiết thứ hai: De-BAT-te."
+
+  - key: de:item:b2u05-debattieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: debattieren
+      pos: động từ
+    back:
+      meaning:
+        vi: tranh luận
+      examples:
+        - target: Im Unterricht haben wir über das Wahlalter debattiert.
+          translation:
+            vi: Trong giờ học chúng tôi đã tranh luận về tuổi bầu cử.
+        - target: Die Abgeordneten debattieren heute über den Haushalt.
+          translation:
+            vi: Hôm nay các đại biểu tranh luận về ngân sách.
+      confusion:
+        vi: "debattieren über + Akkusativ; đuôi -ieren nên Partizip II không có ge-: hat debattiert."
+
+  - key: de:item:b2u05-abwaegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: abwägen, wägt ab, wog ab, hat abgewogen
+      pos: động từ
+    back:
+      meaning:
+        vi: cân nhắc (ưu và nhược)
+      examples:
+        - target: Man muss die Vor- und Nachteile genau abwägen.
+          translation:
+            vi: Phải cân nhắc kỹ ưu và nhược điểm.
+        - target: Nachdem wir alle Argumente abgewogen hatten, stimmten wir ab.
+          translation:
+            vi: Sau khi đã cân nhắc mọi lập luận, chúng tôi biểu quyết.
+      confusion:
+        vi: "Dạng yếu wägte ab / abgewägt hiếm gặp hơn; dạng thường dùng là wog ab, hat abgewogen."
+
+  - key: de:item:b2u05-konsens
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: der Konsens (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đồng thuận
+      examples:
+        - target: Nach langer Diskussion fanden wir einen Konsens.
+          translation:
+            vi: Sau cuộc thảo luận dài, chúng tôi đã đạt được đồng thuận.
+        - target: In dieser Frage gibt es keinen Konsens.
+          translation:
+            vi: Về vấn đề này không có sự đồng thuận.
+      confusion:
+        vi: "der Konsens là mọi người cùng đồng ý; der Kompromiss là mỗi bên nhượng bộ một phần."
+
+  - key: de:item:b2u05-kontrovers
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: kontrovers
+      pos: tính từ
+    back:
+      meaning:
+        vi: gây tranh cãi, trái chiều
+      examples:
+        - target: Das Thema wird kontrovers diskutiert.
+          translation:
+            vi: Chủ đề này được thảo luận với nhiều ý kiến trái chiều.
+        - target: Es war eine kontroverse Debatte.
+          translation:
+            vi: Đó là một cuộc tranh luận gây nhiều tranh cãi.
+      confusion:
+        vi: "Trọng âm ở âm tiết cuối: kontro-VERS; v đọc như \"v\" tiếng Việt (từ gốc Latinh)."
+
+  - key: de:item:b2u05-position
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Position, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lập trường, quan điểm; vị trí
+      examples:
+        - target: Welche Position vertreten Sie in dieser Frage?
+          translation:
+            vi: Anh/chị giữ lập trường nào trong vấn đề này?
+        - target: Ich kann Ihre Position gut nachvollziehen.
+          translation:
+            vi: Tôi hiểu rõ lập trường của anh/chị.
+      confusion:
+        vi: "eine Position vertreten = giữ, bảo vệ một lập trường. Gần nghĩa: der Standpunkt, die Meinung."
+
+  # --- Zusatzwortschatz L4 ---
+  - key: de:item:b2u05-streitkultur
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Streitkultur (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn hoá tranh luận (cách tranh cãi tôn trọng, có lý lẽ)
+      examples:
+        - target: Eine gute Streitkultur ist wichtig für die Demokratie.
+          translation:
+            vi: Một văn hoá tranh luận tốt quan trọng đối với nền dân chủ.
+        - target: Im Jugendrat üben die Mitglieder eine faire Streitkultur.
+          translation:
+            vi: Trong hội đồng thanh niên, các thành viên rèn luyện cách tranh luận công bằng.
+      confusion:
+        vi: "der Streit thường mang nghĩa \"cãi nhau\", nhưng die Streitkultur mang nghĩa tích cực: tranh luận thẳng thắn mà vẫn tôn trọng nhau."
+
+  - key: de:item:b2u05-einlenken
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: einlenken
+      pos: động từ
+    back:
+      meaning:
+        vi: nhượng bộ, xuống nước (để đi đến thoả thuận)
+      examples:
+        - target: Nach langen Gesprächen lenkte die Stadt schließlich ein.
+          translation:
+            vi: Sau nhiều cuộc trao đổi, cuối cùng thành phố đã nhượng bộ.
+        - target: Wenn beide Seiten ein wenig einlenken, finden wir eine Lösung.
+          translation:
+            vi: Nếu cả hai bên nhượng bộ một chút, chúng ta sẽ tìm ra giải pháp.
+      confusion:
+        vi: "Động từ tách: Sie lenkt ein, hat eingelenkt. Không có tân ngữ; khác zustimmen (đồng ý với ai/cái gì)."
+
+  - key: de:item:b2u05-einraeumen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: einräumen
+      pos: động từ
+    back:
+      meaning:
+        vi: thừa nhận (một điểm của bên kia); (nghĩa đen) xếp đồ vào
+      examples:
+        - target: Ich muss einräumen, dass Ihr Argument überzeugend ist.
+          translation:
+            vi: Tôi phải thừa nhận rằng lập luận của anh/chị có sức thuyết phục.
+        - target: Er räumte ein, dass der Plan Schwächen hat.
+          translation:
+            vi: Ông ấy thừa nhận rằng kế hoạch có điểm yếu.
+      confusion:
+        vi: "Động từ tách: ich räume ein, hat eingeräumt. Nghĩa đen: den Schrank einräumen = xếp đồ vào tủ."
+
+  - key: de:item:b2u05-streitfrage
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: die Streitfrage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vấn đề gây tranh cãi
+      examples:
+        - target: Die Streitfrage ist, wer die Kosten tragen soll.
+          translation:
+            vi: Vấn đề gây tranh cãi là ai phải gánh chi phí.
+        - target: Das Wahlalter ist seit Jahren eine Streitfrage.
+          translation:
+            vi: Tuổi bầu cử là một vấn đề tranh cãi từ nhiều năm nay.
+      confusion:
+        vi: "Từ ghép der Streit + die Frage, giống theo từ cuối nên là die."
+
+  - key: de:item:b2u05-zugeben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zugeben, gibt zu, gab zu, hat zugegeben
+      pos: động từ
+    back:
+      meaning:
+        vi: thừa nhận, thú nhận
+      examples:
+        - target: Ich gebe zu, dass ich mich geirrt habe.
+          translation:
+            vi: Tôi thừa nhận là tôi đã nhầm.
+        - target: Zugegeben, die Idee ist nicht billig.
+          translation:
+            vi: Phải thừa nhận rằng ý tưởng này không rẻ.
+      confusion:
+        vi: "zugeben dùng cả cho lỗi của mình; einräumen trang trọng hơn và hay dùng khi công nhận một điểm của người khác. Đừng nhầm với zu bedenken geben (lưu ý)."
+
+  - key: de:item:b2u05-differenziert
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: differenziert
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhiều chiều, có phân tích kỹ các khía cạnh
+      examples:
+        - target: Wir sollten das Problem differenziert betrachten.
+          translation:
+            vi: Chúng ta nên xem xét vấn đề này một cách nhiều chiều.
+        - target: Ihr Beitrag war sehr differenziert.
+          translation:
+            vi: Phần trình bày của chị ấy rất sâu sắc, nhiều chiều.
+      confusion:
+        vi: "Trái nghĩa gần: pauschal (vơ đũa cả nắm). Trong bài thi, cách nhìn differenziert (cả ưu lẫn nhược) được đánh giá cao."
+
+  - key: de:item:b2u05-pauschal
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: pauschal
+      pos: tính từ
+    back:
+      meaning:
+        vi: chung chung, vơ đũa cả nắm; (giá) trọn gói
+      examples:
+        - target: Man kann nicht pauschal sagen, dass alle Jugendlichen unpolitisch sind.
+          translation:
+            vi: Không thể nói vơ đũa cả nắm rằng mọi thanh thiếu niên đều thờ ơ với chính trị.
+        - target: Die Reise kostet pauschal 500 Euro.
+          translation:
+            vi: Chuyến đi có giá trọn gói 500 euro.
+      confusion:
+        vi: "Trong tranh luận, pauschal mang nghĩa chê (khái quát quá mức). die Pauschalreise = tour trọn gói."
+
+  - key: de:item:b2u05-nachvollziehen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: nachvollziehen, vollzieht nach, vollzog nach, hat nachvollzogen
+      pos: động từ
+    back:
+      meaning:
+        vi: hiểu được (lý lẽ, cảm xúc của ai), theo kịp suy nghĩ của ai
+      examples:
+        - target: Ich kann Ihre Argumente gut nachvollziehen.
+          translation:
+            vi: Tôi hoàn toàn hiểu được các lập luận của anh/chị.
+        - target: Diese Entscheidung ist für viele Bürger schwer nachzuvollziehen.
+          translation:
+            vi: Với nhiều người dân, quyết định này khó hiểu được.
+      confusion:
+        vi: "Ich kann das nachvollziehen là hiểu được lý do, không nhất thiết là đồng ý. zu đứng giữa tiền tố và động từ: nachzuvollziehen."
+
+  - key: de:item:b2u05-bedenken
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Bedenken, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: mối lo ngại, sự băn khoăn (thường dùng số nhiều)
+      examples:
+        - target: Ich habe Bedenken, ob das Geld reicht.
+          translation:
+            vi: Tôi băn khoăn không biết tiền có đủ không.
+        - target: Viele Eltern äußerten Bedenken gegen den Plan.
+          translation:
+            vi: Nhiều phụ huynh bày tỏ lo ngại về kế hoạch.
+      confusion:
+        vi: "Thường gặp ở số nhiều: Bedenken haben / äußern. Viết hoa khi là danh từ; trong cụm zu bedenken geben thì viết thường vì là động từ bedenken."
+
+  - key: de:item:b2u05-meinungsfreiheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Meinungsfreiheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyền tự do ngôn luận, tự do bày tỏ ý kiến
+      examples:
+        - target: Die Meinungsfreiheit ist im Grundgesetz garantiert.
+          translation:
+            vi: Tự do ngôn luận được bảo đảm trong Luật Cơ bản.
+        - target: Zur Meinungsfreiheit gehört auch, andere Meinungen auszuhalten.
+          translation:
+            vi: Tự do ngôn luận cũng bao gồm việc chấp nhận những ý kiến khác mình.
+      confusion:
+        vi: "Từ ghép die Meinung + -s- + die Freiheit. Tự do ngôn luận cũng có giới hạn do luật quy định, và giới hạn đó khác nhau giữa các nước."

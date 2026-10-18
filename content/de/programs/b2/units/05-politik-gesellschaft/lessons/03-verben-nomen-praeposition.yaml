@@ -1,0 +1,400 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u05-verben-nomen-praeposition
+order_index: 3
+level: b2
+title:
+  vi: Đấu tranh cho… – động từ, danh từ đi với giới từ B2 (Sich einsetzen für, der Einfluss auf)
+objectives:
+  - vi: Nói về sự tham gia xã hội, ảnh hưởng và trách nhiệm bằng các cụm động từ/danh từ + giới từ chính xác.
+  - vi: Chọn đúng giới từ và cách sau sich einsetzen für, beitragen zu, abhängen von, sich beziehen auf, der Einfluss auf, die Kritik an …
+  - vi: Thay cụm giới từ bằng dafür, dazu, davon … và hỏi bằng wofür, woran, worauf ….
+estimated_minutes: 21
+skills: [grammar, vocabulary, speaking]
+prerequisites: [de:lesson:b2u05-darueber-hinaus]
+items:
+  - item: de:item:b2u05-g-verben-praeposition-b2
+  - item: de:item:b2u05-g-nomen-praeposition
+  - item: de:item:b2u05-sich-einsetzen-fuer
+  - item: de:item:b2u05-beitragen-zu
+  - item: de:item:b2u05-sich-auseinandersetzen-mit
+  - item: de:item:b2u05-bestehen-auf
+  - item: de:item:b2u05-abhaengen-von
+  - item: de:item:b2u05-sich-beziehen-auf
+  - item: de:item:b2u05-einfluss
+  - item: de:item:b2u05-kritik
+  - item: de:item:b2u05-beteiligung
+  - item: de:item:b2u05-sich-beteiligen-an
+  - item: de:item:b2u05-buergerinitiative
+  - item: de:item:b2u05-petition
+  - item: de:item:b2u05-demonstration
+  - item: de:item:b2u05-protestieren-gegen
+  - item: de:item:b2u05-interesse
+  - item: de:item:b2u05-mitbestimmen
+  - item: de:item:b2u05-fordern
+  - item: de:item:b2u05-forderung
+  - item: de:item:b2u05-verfuegen-ueber
+  - item: de:item:b2u05-gemeinde
+  - item: de:item:b1u02-g-pronominaladverbien
+    role: reuse
+  - item: de:item:b1u02-g-verben-praeposition-b1
+    role: reuse
+  - item: de:item:b1u02-g-adjektive-praeposition
+    role: reuse
+  - item: de:item:b2u02-g-funktionsverbgefuege
+    role: reuse
+  - item: de:item:b2u01-verantwortung
+    role: reuse
+  - item: de:item:b1u09-sich-engagieren
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói được về sự tham gia của người dân bằng những cụm cố định chính xác: \"Unsere Bürgerinitiative setzt sich dafür ein, dass der Park erhalten bleibt.\""
+  - type: explain
+    text:
+      vi: "Nhiều động từ B2 đi với một giới từ cố định, và giới từ quyết định cách: sich einsetzen für + Akk, beitragen zu + Dat, sich auseinandersetzen mit + Dat, abhängen von + Dat, sich beziehen auf + Akk, führen zu + Dat, verfügen über + Akk. Giới từ thường không khớp với tiếng Việt (\"phụ thuộc vào\" là abhängen von, không phải in), nên hãy học cả cụm động từ + giới từ + cách, như bạn đã làm với sich freuen auf ở B1."
+  - type: explain
+    text:
+      vi: "bestehen đổi nghĩa theo giới từ: bestehen auf + Dat (khăng khăng đòi), bestehen aus + Dat (gồm có), bestehen in + Dat (nằm ở): Das Problem besteht darin, dass …. Không có giới từ, bestehen là \"thi đỗ\" (eine Prüfung bestehen) hoặc \"tồn tại\"."
+  - type: explain
+    text:
+      vi: "Danh từ cũng có giới từ cố định, thường giống động từ cùng gốc: der Einfluss auf + Akk, das Interesse an + Dat, die Verantwortung für + Akk, die Teilnahme an + Dat, der Zugang zu + Dat. Có khi động từ đi thẳng với Akkusativ mà danh từ lại cần giới từ: den Plan kritisieren → die Kritik an dem Plan. Nhiều cụm này nằm trong Funktionsverbgefüge (B2U02): Einfluss nehmen auf, Kritik üben an, Verantwortung übernehmen für."
+  - type: explain
+    text:
+      vi: "Thay một vật hay cả một câu: da(r) + giới từ (dafür, dazu, davon, daran, darauf, damit); hỏi về vật: wo(r) + giới từ (wofür, woran, worauf). Với người thì giữ giới từ + đại từ: für sie, mit wem. Khi phần sau là cả một câu, da(r)- báo trước câu dass hoặc zu: Ich setze mich dafür ein, dass alle Kinder Zugang zu Bildung haben."
+  - type: deep_explain
+    text:
+      vi: "Với auf, cách có thể khác nhau: sich beziehen auf và der Einfluss auf đi với Akkusativ, còn bestehen auf trong tiếng Đức chuẩn hiện nay thường đi với Dativ (auf seinem Recht bestehen). das Interesse an + Dativ là phổ biến nhất, nhưng Interesse für + Akkusativ cũng đúng. Tính từ cũng có giới từ cố định (B1U02): stolz auf, zufrieden mit, abhängig von, verantwortlich für. Khi nói về người, đừng dùng da-: Ich setze mich für meine Nachbarin ein → Ich setze mich für sie ein (không nói dafür). Bảng giới từ không có quy luật chung; hãy ghi mỗi từ mới kèm một câu ví dụ."
+  - type: example
+    target: Die Bürgerinitiative setzt sich für einen neuen Spielplatz ein.
+    target_lang: de
+    translation:
+      vi: Nhóm sáng kiến công dân vận động cho một sân chơi mới.
+    note:
+      vi: "sich einsetzen für + Akkusativ: für einen neuen Spielplatz; ein (tiền tố tách) đứng cuối câu."
+  - type: example
+    target: Ob der Park bleibt, hängt von der Abstimmung im Stadtrat ab.
+    target_lang: de
+    translation:
+      vi: Công viên có được giữ lại hay không phụ thuộc vào cuộc biểu quyết ở hội đồng thành phố.
+    note:
+      vi: "abhängen von + Dativ: von der Abstimmung; ab đứng cuối."
+  - type: example
+    target: Soziale Medien können großen Einfluss auf die Meinung junger Menschen haben.
+    target_lang: de
+    translation:
+      vi: Mạng xã hội có thể có ảnh hưởng lớn đến quan điểm của người trẻ.
+    note:
+      vi: "der Einfluss auf + Akkusativ: auf die Meinung (không dùng zu)."
+  - type: example
+    target: "Es gab viel Kritik an der neuen Regelung. – Woran genau? – Vor allem an den hohen Kosten."
+    target_lang: de
+    translation:
+      vi: "Có nhiều lời chỉ trích đối với quy định mới. – Chính xác là về điều gì? – Chủ yếu là về chi phí cao."
+    note:
+      vi: "die Kritik an + Dativ; hỏi về vật bằng woran (wo + r + an)."
+  - type: example
+    target: Wir sind stolz darauf, dass sich so viele Nachbarn engagiert haben.
+    target_lang: de
+    translation:
+      vi: Chúng tôi tự hào vì có nhiều hàng xóm đã tham gia đến vậy.
+    note:
+      vi: "stolz auf (tính từ + giới từ, B1U02) → darauf báo trước câu dass."
+  - type: common_mistake
+    wrong: Die Medien haben großen Einfluss zu den Wählern.
+    right: Die Medien haben großen Einfluss auf die Wähler.
+    target_lang: de
+    note:
+      vi: "Dịch theo \"ảnh hưởng đến\" dễ chọn zu; đúng là der Einfluss auf + Akkusativ."
+  - type: common_mistake
+    wrong: Ich setze mich für ein, dass alle Kinder Zugang zu Bildung haben.
+    right: Ich setze mich dafür ein, dass alle Kinder Zugang zu Bildung haben.
+    target_lang: de
+    note:
+      vi: "Khi theo sau là cả một câu dass, giới từ phải thành dafür (da + für)."
+  - type: common_mistake
+    wrong: Viele Bürger beteiligen sich in der Diskussion.
+    right: Viele Bürger beteiligen sich an der Diskussion.
+    target_lang: de
+    note:
+      vi: "\"Tham gia vào\" là sich beteiligen an + Dativ, không dùng in."
+  - type: summary
+    points:
+      - vi: "sich einsetzen für + Akk; beitragen zu + Dat; sich auseinandersetzen mit + Dat."
+      - vi: "abhängen von + Dat; sich beziehen auf + Akk; führen zu + Dat; verfügen über + Akk."
+      - vi: "bestehen auf (đòi) / aus (gồm) / in (nằm ở) + Dat."
+      - vi: "der Einfluss auf + Akk; die Kritik an + Dat; das Interesse an + Dat; die Verantwortung für + Akk; die Teilnahme an + Dat; der Zugang zu + Dat."
+      - vi: "Vật/câu: dafür, dazu, davon …; hỏi: wofür, woran, worauf …; người: für sie, mit wem."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u05l3-mcq-einfluss-auf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u05-einfluss
+    prompt:
+      stem: "Chọn giới từ đúng: Eltern haben großen Einfluss ___ die Entwicklung ihrer Kinder."
+      stem_lang: vi
+      options:
+        - { id: f2a, text: "auf", lang: de }
+        - { id: f6b, text: "zu", lang: de }
+        - { id: f9c, text: "für", lang: de }
+        - { id: f4d, text: "an", lang: de }
+    answer:
+      correct_option_id: f2a
+    explanation:
+      vi: "der Einfluss đi với auf + Akkusativ: Einfluss auf die Entwicklung. zu, für, an không đi với Einfluss, dù tiếng Việt nói \"ảnh hưởng đến\"."
+    display_answer: auf
+
+  - key: de:exercise:b2u05l3-mcq-bestehen-aus
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u05-bestehen-auf
+    prompt:
+      stem: "\"Der Jugendrat besteht aus zwölf Mitgliedern.\" – Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: b3a, text: "Hội đồng thanh niên gồm mười hai thành viên.", lang: vi }
+        - { id: b7b, text: "Hội đồng thanh niên đòi có mười hai thành viên.", lang: vi }
+        - { id: b1c, text: "Hội đồng thanh niên đã được mười hai thành viên thông qua.", lang: vi }
+        - { id: b5d, text: "Hội đồng thanh niên phụ thuộc vào mười hai thành viên.", lang: vi }
+    answer:
+      correct_option_id: b3a
+    explanation:
+      vi: "bestehen aus + Dativ = gồm có. \"Đòi\" là bestehen auf, \"phụ thuộc vào\" là abhängen von. Hãy để ý giới từ: nó đổi hẳn nghĩa của bestehen."
+    display_answer: Hội đồng thanh niên gồm mười hai thành viên.
+
+  - key: de:exercise:b2u05l3-listen-park
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u05-sich-einsetzen-fuer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Unsere Bürgerinitiative setzt sich seit zwei Jahren dafür ein, dass der alte Park erhalten bleibt. Inzwischen haben mehr als tausend Menschen unsere Petition unterschrieben.
+      options:
+        - { id: l2a, text: "Nhóm của người nói đã vận động hai năm nay để giữ lại công viên cũ; hơn một nghìn người đã ký kiến nghị.", lang: vi }
+        - { id: l6b, text: "Nhóm của người nói vận động xây một công viên mới; hơn một nghìn người đã ký kiến nghị.", lang: vi }
+        - { id: l9c, text: "Nhóm của người nói phản đối công viên cũ; chưa ai ký kiến nghị.", lang: vi }
+        - { id: l4d, text: "Nhóm của người nói sẽ bắt đầu vận động trong hai năm nữa để giữ công viên cũ.", lang: vi }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "setzt sich seit zwei Jahren dafür ein, dass … erhalten bleibt = đã vận động hai năm nay để (công viên) được giữ lại. mehr als tausend Menschen haben … unterschrieben = hơn một nghìn người đã ký."
+    display_answer: Nhóm của người nói đã vận động hai năm nay để giữ lại công viên cũ; hơn một nghìn người đã ký kiến nghị.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u05l3-fill-verben
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-verben-praeposition-b2
+    prompt:
+      template: "Die Bürgerinitiative hat viel {{b1}} Erfolg des Projekts beigetragen. Ob es weitergeht, hängt {{b2}} der Gemeinde ab. Im Jugendrat haben wir uns lange {{b3}} dem Thema auseinandergesetzt."
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [zum, zu dem]
+        b2: [von]
+        b3: [mit]
+    known_wrong:
+      - answer: für den
+        feedback_vi: beitragen đi với zu + Dativ – zum Erfolg.
+        error_tag: preposition
+      - answer: an
+        feedback_vi: Kiểm tra lại giới từ cố định – beitragen zu, abhängen von, sich auseinandersetzen mit.
+        error_tag: preposition
+      - answer: über
+        feedback_vi: sich auseinandersetzen đi với mit + Dativ – mit dem Thema.
+        error_tag: preposition
+      - answer: in
+        feedback_vi: "\"Phụ thuộc vào\" trong tiếng Đức là abhängen von, không dùng in."
+        error_tag: preposition
+    explanation:
+      vi: "beitragen zu + Dativ: zu dem Erfolg → zum Erfolg. abhängen von + Dativ: von der Gemeinde. sich auseinandersetzen mit + Dativ: mit dem Thema."
+    display_answer: "Die Bürgerinitiative hat viel zum Erfolg des Projekts beigetragen. Ob es weitergeht, hängt von der Gemeinde ab. Im Jugendrat haben wir uns lange mit dem Thema auseinandergesetzt."
+
+  - key: de:exercise:b2u05l3-fill-nomen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-nomen-praeposition
+    prompt:
+      template: "Es gibt viel Kritik {{b1}} der neuen Regelung. Die Verantwortung {{b2}} die Kosten trägt die Gemeinde. Alle Kinder sollen Zugang {{b3}} guter Bildung haben."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [an]
+        b2: [für]
+        b3: [zu]
+    known_wrong:
+      - answer: über
+        feedback_vi: Phê bình điều gì là die Kritik an + Dativ – Kritik an der Regelung.
+        error_tag: preposition
+      - answer: auf
+        feedback_vi: Kiểm tra lại giới từ cố định – Kritik an, Verantwortung für, Zugang zu.
+        error_tag: preposition
+      - answer: von
+        feedback_vi: die Verantwortung đi với für + Akkusativ – Verantwortung für die Kosten.
+        error_tag: preposition
+    explanation:
+      vi: "die Kritik an + Dativ (an der Regelung), die Verantwortung für + Akkusativ (für die Kosten), der Zugang zu + Dativ (zu guter Bildung). Hãy học danh từ cùng giới từ của nó."
+    display_answer: "Es gibt viel Kritik an der neuen Regelung. Die Verantwortung für die Kosten trägt die Gemeinde. Alle Kinder sollen Zugang zu guter Bildung haben."
+
+  - key: de:exercise:b2u05l3-tr-davon-ab
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-abhaengen-von
+    prompt:
+      source_text: "Kết quả phụ thuộc vào việc có bao nhiêu công dân tham gia. (dùng abhängen, davon, Bürger)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das Ergebnis hängt davon ab, wie viele Bürger teilnehmen.
+        - Das Ergebnis hängt davon ab, wie viele Bürger sich beteiligen.
+        - Das Ergebnis hängt davon ab, wie viele Bürger mitmachen.
+        - Das Ergebnis hängt davon ab, wie viele Bürger daran teilnehmen.
+        - Das Ergebnis hängt davon ab, wie viele Bürger sich daran beteiligen.
+        - Das Ergebnis hängt davon ab, wie viele Bürgerinnen und Bürger teilnehmen.
+        - Das Ergebnis hängt davon ab, wie viele Bürgerinnen und Bürger sich beteiligen.
+    known_wrong:
+      - answer: Das Ergebnis hängt ab, wie viele Bürger teilnehmen.
+        feedback_vi: abhängen cần von; trước câu wie phải dùng davon – hängt davon ab, wie …
+        error_tag: preposition
+      - answer: Das Ergebnis hängt davon ab, wie viele Bürger nehmen teil.
+        feedback_vi: Câu hỏi gián tiếp wie viele … là câu phụ – động từ teilnehmen đứng cuối (viết liền).
+        error_tag: verb_position
+      - answer: Das Ergebnis hängt davon ab, wie viele Bürger sich teilnehmen.
+        feedback_vi: teilnehmen không phải động từ phản thân; sich chỉ đi với sich beteiligen.
+        error_tag: word_choice
+    explanation:
+      vi: "abhängen von → davon, vì phần sau là cả một câu (wie viele …). Câu phụ wie viele có động từ cuối: teilnehmen (động từ tách viết liền khi ở cuối câu phụ) hoặc sich beteiligen."
+    display_answer: Das Ergebnis hängt davon ab, wie viele Bürger teilnehmen.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u05l3-wb-dafuer-ein
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u02-g-pronominaladverbien
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng tôi vận động để công viên được giữ lại.\""
+      tokens:
+        - { id: d-ein, text: ein }
+        - { id: d-park, text: der Park }
+        - { id: d-wir, text: Wir }
+        - { id: d-bleibt, text: bleibt }
+        - { id: d-dafuer, text: dafür }
+        - { id: d-dass, text: ", dass" }
+        - { id: d-uns, text: uns }
+        - { id: d-erhalten, text: erhalten }
+        - { id: d-setzen, text: setzen }
+    answer:
+      orders:
+        - [d-wir, d-setzen, d-uns, d-dafuer, d-ein, d-dass, d-park, d-erhalten, d-bleibt]
+    explanation:
+      vi: "sich einsetzen für → dafür báo trước câu dass. Tiền tố ein đứng cuối câu chính, trước dấu phẩy; trong câu dass, động từ bleibt đứng cuối."
+    display_answer: Wir setzen uns dafür ein, dass der Park erhalten bleibt.
+
+  - key: de:exercise:b2u05l3-mcq-woran
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-kritik
+    prompt:
+      stem: "Bạn muốn hỏi lại cho rõ: \"Es gab viel Kritik an dem Plan.\" – \"___ genau?\""
+      stem_lang: vi
+      options:
+        - { id: w2a, text: "Woran", lang: de }
+        - { id: w6b, text: "Worauf", lang: de }
+        - { id: w9c, text: "Wofür", lang: de }
+        - { id: w4d, text: "Wovon", lang: de }
+    answer:
+      correct_option_id: w2a
+    explanation:
+      vi: "die Kritik an → hỏi về vật bằng wo + r + an = woran. Các từ hỏi khác dùng giới từ khác (auf, für, von) nên không hợp với Kritik."
+    display_answer: Woran
+
+  - key: de:exercise:b2u05l3-tr-einfluss-politik
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-nomen-praeposition
+    prompt:
+      source_text: "Nhiều công dân muốn có nhiều ảnh hưởng hơn đến chính trị."
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Viele Bürger wollen mehr Einfluss auf die Politik haben.
+        - Viele Bürger möchten mehr Einfluss auf die Politik haben.
+        - Viele Bürgerinnen und Bürger wollen mehr Einfluss auf die Politik haben.
+        - Viele Bürgerinnen und Bürger möchten mehr Einfluss auf die Politik haben.
+        - Viele Bürger wünschen sich mehr Einfluss auf die Politik.
+        - Viele Bürgerinnen und Bürger wünschen sich mehr Einfluss auf die Politik.
+        - Viele Bürger wollen mehr Einfluss auf die Politik nehmen.
+        - Viele Bürger möchten mehr Einfluss auf die Politik nehmen.
+    known_wrong:
+      - answer: Viele Bürger wollen mehr Einfluss zu der Politik haben.
+        feedback_vi: der Einfluss đi với auf + Akkusativ – Einfluss auf die Politik.
+        error_tag: preposition
+      - answer: Viele Bürger wollen mehr Einfluss auf der Politik haben.
+        feedback_vi: Einfluss auf + Akkusativ – auf die Politik.
+        error_tag: case_dat_akk
+      - answer: Viele Bürger wollen haben mehr Einfluss auf die Politik.
+        feedback_vi: Sau động từ khiếm khuyết wollen, động từ nguyên thể haben đứng cuối câu.
+        error_tag: verb_position
+    explanation:
+      vi: "der Einfluss auf + Akkusativ: auf die Politik. wollen/möchten + nguyên thể ở cuối câu; Einfluss nehmen auf (Funktionsverbgefüge, B2U02) cũng đúng."
+    display_answer: Viele Bürger wollen mehr Einfluss auf die Politik haben.
+
+  - key: de:exercise:b2u05l3-tr-auseinandersetzen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u05-sich-auseinandersetzen-mit
+    prompt:
+      source_text: Im Unterricht setzen wir uns kritisch mit dem Thema Armut auseinander.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong giờ học, chúng tôi tìm hiểu kỹ một cách có phê phán về chủ đề nghèo đói.
+        - Trong giờ học, chúng tôi xem xét chủ đề nghèo đói một cách có phê phán.
+        - Trong giờ học, chúng tôi phân tích chủ đề nghèo đói một cách có phê phán.
+        - Trong giờ học, chúng tôi phân tích có phê phán chủ đề nghèo đói.
+        - Trong giờ học, chúng tôi tìm hiểu chủ đề nghèo đói một cách có phê phán.
+        - Trong giờ học, chúng mình tìm hiểu kỹ và có phê phán về chủ đề nghèo đói.
+        - Trên lớp, chúng tôi phân tích chủ đề nghèo đói một cách có phê phán.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trong giờ học, chúng tôi cãi nhau về chủ đề nghèo đói.
+        feedback_vi: sich auseinandersetzen mit + một chủ đề là tìm hiểu, xem xét kỹ, không phải cãi nhau.
+        error_tag: meaning
+    explanation:
+      vi: "sich auseinandersetzen mit + Dativ khi đi với một chủ đề nghĩa là tìm hiểu, xem xét kỹ; kritisch = một cách có phê phán. Với người, nó có thể là \"tranh cãi với ai\"."
+    display_answer: Trong giờ học, chúng tôi xem xét chủ đề nghèo đói một cách có phê phán.

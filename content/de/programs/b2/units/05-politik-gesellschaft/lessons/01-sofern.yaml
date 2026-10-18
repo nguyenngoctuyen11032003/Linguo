@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u05-sofern
+order_index: 1
+level: b2
+title:
+  vi: Nếu như, trừ phi – điều kiện trang trọng (Sofern …, es sei denn …)
+objectives:
+  - vi: Hiểu văn bản luật, điều lệ đơn giản hoá và tìm ra điều kiện, ngoại lệ trong đó.
+  - vi: Nêu điều kiện bằng sofern/soweit, falls, vorausgesetzt và bằng cụm bei/im Falle/ohne + danh từ.
+  - vi: Nêu ngoại lệ bằng es sei denn (động từ ở vị trí 2) hoặc es sei denn, dass (động từ cuối).
+estimated_minutes: 21
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u04-wiederholung]
+items:
+  - item: de:item:b2u05-g-sofern-soweit
+  - item: de:item:b2u05-g-bedingung-nominal
+  - item: de:item:b2u05-gesetz
+  - item: de:item:b2u05-verfassung
+  - item: de:item:b2u05-staat
+  - item: de:item:b2u05-bundestag
+  - item: de:item:b2u05-wahlbeteiligung
+  - item: de:item:b2u05-abstimmen
+  - item: de:item:b2u05-abstimmung
+  - item: de:item:b2u05-grundgesetz
+  - item: de:item:b2u05-regelung
+  - item: de:item:b2u05-ausnahme
+  - item: de:item:b2u05-bedingung
+  - item: de:item:b2u05-gelten
+  - item: de:item:b2u05-parlament
+  - item: de:item:b2u05-rechtsstaat
+  - item: de:item:b2u05-gewaltenteilung
+  - item: de:item:b2u05-wahlrecht
+  - item: de:item:b2u05-volljaehrig
+  - item: de:item:b2u05-gesetzgebung
+  - item: de:item:b2u05-verbindlich
+  - item: de:item:b2u05-satzung
+  - item: de:item:b1u05-g-falls
+    role: reuse
+  - item: de:item:b2u01-g-nominalisierung
+    role: reuse
+  - item: de:item:b2u02-g-genitiv-praep-formal
+    role: reuse
+  - item: de:item:b2u04-g-konjunktiv-i-formen
+    role: reuse
+  - item: de:item:b1u09-mitglied
+    role: reuse
+  - item: de:item:b1u09-mehrheit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc hiểu được một điều lệ hay quy định đơn giản và tự nêu điều kiện, ngoại lệ theo văn phong trang trọng: \"Die Sitzung ist öffentlich, es sei denn, die Mitglieder beschließen etwas anderes.\""
+  - type: explain
+    text:
+      vi: "sofern (nếu, với điều kiện là) mở câu phụ điều kiện, động từ chia đứng cuối như sau wenn và falls bạn đã học. Khác ở chỗ sofern trang trọng hơn, hay gặp trong điều lệ, hợp đồng, thông báo: Sofern nichts anderes vereinbart ist, gilt die Satzung. Tiếng Việt chỉ cần \"nếu\", còn tiếng Đức chọn từ theo văn phong."
+  - type: explain
+    text:
+      vi: "soweit cũng mở câu phụ (động từ cuối) nhưng nghĩa là \"theo như, trong chừng mực\": Soweit ich weiß, … (theo tôi biết), soweit möglich (trong chừng mực có thể). Trong văn bản quy định, soweit giới hạn phạm vi: quy định chỉ áp dụng đến mức điều kiện được đáp ứng."
+  - type: explain
+    text:
+      vi: "es sei denn nghĩa là \"trừ phi, trừ khi\" và đứng sau câu chính để nêu ngoại lệ, không mở đầu câu. Sau nó có hai cách: câu có động từ ở vị trí 2 (…, es sei denn, es regnet) hoặc câu dass có động từ cuối (…, es sei denn, dass es regnet). sei ở đây là dạng Konjunktiv I của sein mà bạn đã học ở B2U04, nay đã thành cụm cố định."
+  - type: explain
+    text:
+      vi: "vorausgesetzt, (dass) … (với điều kiện là) nhấn mạnh một điều kiện bắt buộc và có hai cách giống es sei denn: …, vorausgesetzt, alle sind da / …, vorausgesetzt, dass alle da sind. Hãy phân biệt: sofern và vorausgesetzt nêu điều kiện, còn es sei denn nêu ngoại lệ."
+  - type: explain
+    text:
+      vi: "Văn phong danh từ (B2U01) cho phép thay câu wenn bằng cụm danh từ: bei + Dativ (bei Regen = wenn es regnet), im Falle + Genitiv (im Falle einer Erkrankung), ohne + Akkusativ cho điều kiện phủ định (ohne Ihre Unterschrift = wenn Sie nicht unterschreiben). Biển báo, điều lệ hay dùng cách này vì ngắn gọn."
+  - type: deep_explain
+    text:
+      vi: "sofern và falls thường thay được cho nhau; sofern nghe như văn bản hành chính, còn trong văn nói người ta dùng wenn hoặc falls. Trong luật, cụm …, soweit nicht … và …, sofern nicht … có nghĩa gần với es sei denn: Die Regel gilt, sofern die Satzung nichts anderes bestimmt. Sau es sei denn, dấu phẩy trước và sau cụm là cách viết thông dụng nhất. Cụm im Falle giữ đuôi -e cổ của Dativ; im Fall + Genitiv cũng đúng. Văn bản trong bài là điều lệ hư cấu, được đơn giản hoá để luyện đọc, không phải trích dẫn luật thật."
+  - type: example
+    target: Sofern nichts anderes vereinbart ist, gilt die Satzung für alle Mitglieder.
+    target_lang: de
+    translation:
+      vi: Nếu không có thoả thuận nào khác, điều lệ áp dụng cho mọi thành viên.
+    note:
+      vi: "sofern mở câu phụ, động từ ist đứng cuối; câu phụ là vị trí 1 nên gilt đứng ngay sau dấu phẩy."
+  - type: example
+    target: Die Sitzung ist öffentlich, es sei denn, die Mitglieder beschließen etwas anderes.
+    target_lang: de
+    translation:
+      vi: Buổi họp là công khai, trừ khi các thành viên quyết định khác.
+    note:
+      vi: "Sau es sei denn là câu có động từ ở vị trí 2 (beschließen). Viết với dass thì động từ cuối: …, es sei denn, dass die Mitglieder etwas anderes beschließen."
+  - type: example
+    target: Bei schlechtem Wetter findet die Versammlung im Rathaus statt.
+    target_lang: de
+    translation:
+      vi: Nếu thời tiết xấu, cuộc họp diễn ra ở toà thị chính.
+    note:
+      vi: "bei schlechtem Wetter = wenn das Wetter schlecht ist. bei + Dativ, tính từ không có mạo từ mang đuôi -em."
+  - type: example
+    target: Falls du Fragen zur Satzung hast, ruf mich einfach an.
+    target_lang: de
+    translation:
+      vi: Nếu bạn có câu hỏi về điều lệ thì cứ gọi cho mình.
+    note:
+      vi: "Trong tin nhắn thân mật với du, falls hay wenn tự nhiên hơn sofern."
+  - type: example
+    target: Aufgrund der knappen Mehrheit wird die Abstimmung wiederholt, es sei denn, alle Mitglieder sind einverstanden.
+    target_lang: de
+    translation:
+      vi: Do đa số quá sít sao nên cuộc biểu quyết sẽ được tiến hành lại, trừ khi mọi thành viên đều đồng ý.
+    note:
+      vi: "aufgrund + Genitiv (B2U02) nêu lý do; es sei denn nêu ngoại lệ, động từ sind ở vị trí 2."
+  - type: common_mistake
+    wrong: Die Sitzung ist öffentlich, es sei denn, die Mitglieder etwas anderes beschließen.
+    right: Die Sitzung ist öffentlich, es sei denn, die Mitglieder beschließen etwas anderes.
+    target_lang: de
+    note:
+      vi: "Sau es sei denn (không có dass), động từ đứng ở vị trí 2 như câu chính. Chỉ khi có dass thì động từ mới xuống cuối."
+  - type: common_mistake
+    wrong: Es sei denn, es regnet, findet das Fest im Park statt.
+    right: Das Fest findet im Park statt, es sei denn, es regnet.
+    target_lang: de
+    note:
+      vi: "es sei denn không mở đầu câu; nó luôn đứng sau câu chính. Muốn đặt điều kiện lên đầu thì dùng sofern/wenn: Sofern es nicht regnet, findet das Fest im Park statt."
+  - type: common_mistake
+    wrong: Bei schlechtes Wetter findet die Versammlung im Rathaus statt.
+    right: Bei schlechtem Wetter findet die Versammlung im Rathaus statt.
+    target_lang: de
+    note:
+      vi: "bei luôn đi với Dativ: das Wetter → bei schlechtem Wetter (không có mạo từ nên tính từ mang đuôi -em)."
+  - type: summary
+    points:
+      - vi: "sofern = nếu (trang trọng), soweit = theo như/trong chừng mực: câu phụ, động từ cuối."
+      - vi: "…, es sei denn, + câu V2 / …, es sei denn, dass + động từ cuối = trừ khi."
+      - vi: "es sei denn không mở đầu câu."
+      - vi: "vorausgesetzt, (dass) … = với điều kiện là."
+      - vi: "bei + Dativ, im Falle + Genitiv, ohne + Akkusativ thay cho câu wenn."
+      - vi: "Từ vựng: das Gesetz, die Verfassung, das Grundgesetz, der Staat, der Bundestag, abstimmen, die Abstimmung, die Wahlbeteiligung."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u05l1-mcq-es-sei-denn
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u05-g-sofern-soweit
+    prompt:
+      stem: "Câu nào đúng? (Buổi họp là công khai, trừ khi hội đồng quyết định khác.)"
+      stem_lang: vi
+      options:
+        - { id: e4k, text: "Die Sitzung ist öffentlich, es sei denn, der Rat beschließt etwas anderes.", lang: de }
+        - { id: e8m, text: "Die Sitzung ist öffentlich, es sei denn, der Rat etwas anderes beschließt.", lang: de }
+        - { id: e2p, text: "Die Sitzung ist öffentlich, es sei denn, beschließt der Rat etwas anderes.", lang: de }
+        - { id: e6r, text: "Es sei denn, der Rat beschließt etwas anderes, die Sitzung ist öffentlich.", lang: de }
+    answer:
+      correct_option_id: e4k
+    explanation:
+      vi: "Sau es sei denn (không có dass), câu có động từ ở vị trí 2: der Rat beschließt …. Động từ cuối chỉ đúng khi có dass; động từ ở vị trí 1 là sai; và es sei denn không mở đầu câu."
+    display_answer: "Die Sitzung ist öffentlich, es sei denn, der Rat beschließt etwas anderes."
+
+  - key: de:exercise:b2u05l1-mcq-satzung-stimme
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-satzung
+    prompt:
+      stem: "Satzung des Jugendrats Musterstadt (Auszug). § 3: Mitglied kann werden, wer zwischen 14 und 21 Jahre alt ist und in Musterstadt wohnt. § 5: Die Sitzungen sind öffentlich, es sei denn, der Jugendrat beschließt etwas anderes. § 6: Bei Abstimmungen entscheidet die Mehrheit. Sofern ein Mitglied verhindert ist, kann es seine Stimme schriftlich abgeben. § 7: Ohne die Zustimmung von zwei Dritteln der Mitglieder kann die Satzung nicht geändert werden. — Was steht im Text?"
+      stem_lang: de
+      options:
+        - { id: s3a, text: "Ein Mitglied, das nicht zur Sitzung kommen kann, darf schriftlich abstimmen.", lang: de }
+        - { id: s7b, text: "Für eine Änderung der Satzung reicht die einfache Mehrheit.", lang: de }
+        - { id: s1c, text: "Auch Jugendliche, die nicht in Musterstadt wohnen, können Mitglied werden.", lang: de }
+        - { id: s5d, text: "Mitglieder, die verhindert sind, verlieren ihre Stimme.", lang: de }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "§ 6: Sofern ein Mitglied verhindert ist (nếu một thành viên bận, không đến được), kann es seine Stimme schriftlich abgeben – được bỏ phiếu bằng văn bản. Sửa điều lệ cần hai phần ba (§ 7), không phải đa số thường; thành viên phải sống ở Musterstadt (§ 3)."
+    display_answer: Ein Mitglied, das nicht zur Sitzung kommen kann, darf schriftlich abstimmen.
+
+  - key: de:exercise:b2u05l1-mcq-satzung-oeffentlich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-ausnahme
+    prompt:
+      stem: "Satzung des Jugendrats Musterstadt (Auszug). § 5: Die Sitzungen sind öffentlich, es sei denn, der Jugendrat beschließt etwas anderes. — Was bedeutet § 5?"
+      stem_lang: de
+      options:
+        - { id: o2a, text: "Normalerweise darf jeder zuhören; als Ausnahme kann der Jugendrat eine nicht öffentliche Sitzung beschließen.", lang: de }
+        - { id: o6b, text: "Die Sitzungen sind nur öffentlich, wenn der Jugendrat das vorher beschließt.", lang: de }
+        - { id: o9c, text: "Die Sitzungen sind nie öffentlich.", lang: de }
+        - { id: o4d, text: "Der Jugendrat darf nichts beschließen, wenn die Sitzung öffentlich ist.", lang: de }
+    answer:
+      correct_option_id: o2a
+    explanation:
+      vi: "Câu chính nêu quy tắc chung (công khai), es sei denn nêu ngoại lệ (trừ khi hội đồng quyết định khác). Phương án thứ hai đảo ngược: biến ngoại lệ thành điều kiện."
+    display_answer: "Normalerweise darf jeder zuhören; als Ausnahme kann der Jugendrat eine nicht öffentliche Sitzung beschließen."
+
+  - key: de:exercise:b2u05l1-mcq-bei-regen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u05-g-bedingung-nominal
+    prompt:
+      stem: "\"Bei Regen fällt das Sommerfest des Vereins aus.\" – Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: r1a, text: "Nếu trời mưa, lễ hội mùa hè của hội sẽ bị huỷ.", lang: vi }
+        - { id: r5b, text: "Dù trời mưa, lễ hội mùa hè của hội vẫn diễn ra.", lang: vi }
+        - { id: r8c, text: "Lễ hội mùa hè của hội diễn ra dưới mưa.", lang: vi }
+        - { id: r3d, text: "Hội tổ chức lễ hội mùa hè để cầu mưa.", lang: vi }
+    answer:
+      correct_option_id: r1a
+    explanation:
+      vi: "bei Regen = wenn es regnet (cách nói bằng danh từ). ausfallen = bị huỷ, không diễn ra. \"Dù trời mưa\" sẽ là trotz des Regens."
+    display_answer: Nếu trời mưa, lễ hội mùa hè của hội sẽ bị huỷ.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u05l1-fill-bei-falle-ohne
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-bedingung-nominal
+    prompt:
+      template: "Bei {{b1}} (schlecht) Wetter findet die Versammlung im Rathaus statt. Im Falle {{b2}} (ein) Erkrankung informieren Sie bitte das Büro. Ohne {{b3}} (Ihr) Unterschrift ist das Formular ungültig."
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [schlechtem]
+        b2: [einer]
+        b3: [Ihre]
+    known_wrong:
+      - answer: schlechtes
+        feedback_vi: bei đi với Dativ – bei schlechtem Wetter.
+        error_tag: case_dat_akk
+      - answer: schlechten
+        feedback_vi: Không có mạo từ nên tính từ mang đuôi mạnh của Dativ trung tính – schlechtem.
+        error_tag: adj_ending
+      - answer: eine
+        feedback_vi: im Falle đi với Genitiv – im Falle einer Erkrankung.
+        error_tag: case_dat_akk
+      - answer: Ihrer
+        feedback_vi: ohne đi với Akkusativ – ohne Ihre Unterschrift.
+        error_tag: case_dat_akk
+    explanation:
+      vi: "bei + Dativ: das Wetter → bei schlechtem Wetter. im Falle + Genitiv: die Erkrankung → einer Erkrankung. ohne + Akkusativ: die Unterschrift → Ihre Unterschrift."
+    display_answer: "Bei schlechtem Wetter findet die Versammlung im Rathaus statt. Im Falle einer Erkrankung informieren Sie bitte das Büro. Ohne Ihre Unterschrift ist das Formular ungültig."
+
+  - key: de:exercise:b2u05l1-tr-gesetz-januar
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-sofern-soweit
+    prompt:
+      source_text: "Đạo luật mới có hiệu lực từ tháng Một, trừ khi Quốc hội liên bang quyết định khác. (dùng gelten, es sei denn, beschließen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das neue Gesetz gilt ab Januar, es sei denn, der Bundestag beschließt etwas anderes.
+        - Das neue Gesetz gilt ab Januar, es sei denn, dass der Bundestag etwas anderes beschließt.
+        - Ab Januar gilt das neue Gesetz, es sei denn, der Bundestag beschließt etwas anderes.
+        - Ab Januar gilt das neue Gesetz, es sei denn, dass der Bundestag etwas anderes beschließt.
+        - Das neue Gesetz gilt ab Januar, es sei denn, der Bundestag entscheidet anders.
+        - Ab Januar gilt das neue Gesetz, es sei denn, der Bundestag entscheidet anders.
+    known_wrong:
+      - answer: Das neue Gesetz gilt ab Januar, es sei denn, der Bundestag etwas anderes beschließt.
+        feedback_vi: Không có dass thì sau es sei denn động từ ở vị trí 2 – der Bundestag beschließt etwas anderes.
+        error_tag: verb_position
+      - answer: Es sei denn, der Bundestag beschließt etwas anderes, gilt das neue Gesetz ab Januar.
+        feedback_vi: es sei denn không mở đầu câu; đặt nó sau câu chính.
+        error_tag: word_order
+      - answer: Das neue Gesetz gelt ab Januar, es sei denn, der Bundestag beschließt etwas anderes.
+        feedback_vi: gelten đổi nguyên âm ở ngôi thứ ba – es gilt.
+        error_tag: verb_form
+    explanation:
+      vi: "gelten → es gilt (đổi e → i). Ngoại lệ đứng sau câu chính: …, es sei denn, + câu V2 (der Bundestag beschließt …) hoặc es sei denn, dass + động từ cuối."
+    display_answer: Das neue Gesetz gilt ab Januar, es sei denn, der Bundestag beschließt etwas anderes.
+
+  - key: de:exercise:b2u05l1-tr-bei-fragen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u01-g-nominalisierung
+    prompt:
+      source_text: "Nếu có câu hỏi, xin hãy liên hệ văn phòng. (thông báo, xưng Sie; dùng bei + danh từ và sich wenden an)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Bei Fragen wenden Sie sich bitte an das Büro.
+        - Bei Fragen wenden Sie sich bitte ans Büro.
+        - Bitte wenden Sie sich bei Fragen an das Büro.
+        - Bitte wenden Sie sich bei Fragen ans Büro.
+        - Wenden Sie sich bei Fragen bitte an das Büro.
+        - Wenden Sie sich bei Fragen bitte ans Büro.
+        - Bei Fragen wenden Sie sich an das Büro.
+        - Bei Fragen wenden Sie sich ans Büro.
+    known_wrong:
+      - answer: Bei Fragen Sie wenden sich bitte an das Büro.
+        feedback_vi: Cụm bei Fragen là vị trí 1, nên động từ wenden đứng ngay sau – Bei Fragen wenden Sie sich …
+        error_tag: verb_position
+      - answer: Bei Fragen wenden Sie bitte an das Büro.
+        feedback_vi: sich wenden an là động từ phản thân – wenden Sie sich.
+        error_tag: reflexive_missing
+      - answer: Bei Fragen wenden Sie sich bitte zu dem Büro.
+        feedback_vi: Liên hệ với ai là sich wenden an + Akkusativ – an das Büro.
+        error_tag: preposition
+    explanation:
+      vi: "bei Fragen = wenn Sie Fragen haben (văn phong danh từ, B2U01). sich wenden an + Akkusativ = liên hệ, tìm đến; an das → ans. Đặt bei Fragen ở đầu thì động từ wenden đứng thứ hai."
+    display_answer: Bei Fragen wenden Sie sich bitte an das Büro.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u05l1-wb-feiertag
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-sofern-soweit
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hội đồng họp vào các ngày thứ Hai, trừ khi thứ Hai là ngày lễ.\" (có hai cách viết đúng)"
+      tokens:
+        - { id: f-ist, text: ist }
+        - { id: f-montags, text: montags }
+        - { id: f-esseidenn, text: ", es sei denn," }
+        - { id: f-feiertag, text: ein Feiertag }
+        - { id: f-rat, text: Der Rat }
+        - { id: f-dass, text: dass }
+        - { id: f-sich, text: sich }
+        - { id: f-montag, text: der Montag }
+        - { id: f-trifft, text: trifft }
+    answer:
+      orders:
+        - [f-rat, f-trifft, f-sich, f-montags, f-esseidenn, f-montag, f-ist, f-feiertag]
+        - [f-rat, f-trifft, f-sich, f-montags, f-esseidenn, f-dass, f-montag, f-feiertag, f-ist]
+    explanation:
+      vi: "Câu chính: Der Rat trifft sich montags. Ngoại lệ đứng sau: …, es sei denn, der Montag ist ein Feiertag (động từ vị trí 2) hoặc …, es sei denn, dass der Montag ein Feiertag ist (có dass thì động từ cuối)."
+    display_answer: "Der Rat trifft sich montags, es sei denn, der Montag ist ein Feiertag."
+
+  - key: de:exercise:b2u05l1-mcq-vorausgesetzt
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-bedingung
+    prompt:
+      stem: "Điền từ nối phù hợp (nghĩa: với điều kiện là): Wir stimmen heute über die Satzung ab, ___, alle Mitglieder sind da."
+      stem_lang: vi
+      options:
+        - { id: v3a, text: "vorausgesetzt", lang: de }
+        - { id: v7b, text: "es sei denn", lang: de }
+        - { id: v1c, text: "sofern", lang: de }
+        - { id: v5d, text: "obwohl", lang: de }
+    answer:
+      correct_option_id: v3a
+    explanation:
+      vi: "vorausgesetzt, + câu V2 (alle Mitglieder sind da) = với điều kiện là. es sei denn cũng đi với câu V2 nhưng nghĩa ngược lại (trừ khi). sofern và obwohl mở câu phụ nên động từ phải đứng cuối (…, sofern alle Mitglieder da sind), không hợp với câu cho sẵn."
+    display_answer: vorausgesetzt
+
+  - key: de:exercise:b2u05l1-tr-sofern-mehrheit
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u05-abstimmen
+    prompt:
+      source_text: Sofern die Mehrheit zustimmt, wird die Satzung geändert.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu đa số đồng ý, điều lệ sẽ được sửa đổi.
+        - Nếu đa số đồng ý thì điều lệ sẽ được sửa đổi.
+        - Nếu đa số đồng ý, điều lệ sẽ được sửa.
+        - Nếu đa số đồng ý thì điều lệ sẽ được sửa.
+        - Nếu đa số tán thành, điều lệ sẽ được sửa đổi.
+        - Nếu đa số tán thành thì điều lệ sẽ được sửa đổi.
+        - Với điều kiện đa số đồng ý, điều lệ sẽ được sửa đổi.
+        - Nếu đa số đồng ý, điều lệ được sửa đổi.
+        - Nếu đa số đồng ý thì điều lệ được sửa đổi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trừ khi đa số đồng ý, điều lệ sẽ được sửa đổi.
+        feedback_vi: sofern nêu điều kiện (nếu), không phải ngoại lệ (trừ khi = es sei denn).
+        error_tag: meaning
+    explanation:
+      vi: "sofern = nếu, với điều kiện là. zustimmen = đồng ý, tán thành. wird … geändert là bị động: được sửa đổi."
+    display_answer: Nếu đa số đồng ý, điều lệ sẽ được sửa đổi.

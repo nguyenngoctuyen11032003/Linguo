@@ -1,0 +1,404 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u05-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – bài ý kiến về một vấn đề xã hội (Wiederholung)
+objectives:
+  - vi: Viết bài diễn đàn khoảng 150 từ (kiểu Goethe B2 Schreiben Teil 1) về câu hỏi "Có nên hạ tuổi bầu cử xuống 16?".
+  - vi: Đọc một bài bình luận báo (kiểu Lesen Teil 2) và chọn ý đúng theo văn bản.
+  - vi: Ôn điều kiện trang trọng, trạng từ nối, zumal, động từ/danh từ + giới từ và Redemittel thảo luận.
+estimated_minutes: 27
+skills: [writing, reading, speaking]
+prerequisites: [de:lesson:b2u05-diskussion]
+items:
+  - item: de:item:b2u05-g-sofern-soweit
+    role: reuse
+  - item: de:item:b2u05-g-bedingung-nominal
+    role: reuse
+  - item: de:item:b2u05-g-textkonnektoren
+    role: reuse
+  - item: de:item:b2u05-g-zumal
+    role: reuse
+  - item: de:item:b2u05-g-verben-praeposition-b2
+    role: reuse
+  - item: de:item:b2u05-g-nomen-praeposition
+    role: reuse
+  - item: de:item:b2u05-g-diskussion-redemittel
+    role: reuse
+  - item: de:item:b2u05-wahlrecht
+    role: reuse
+  - item: de:item:b2u05-volljaehrig
+    role: reuse
+  - item: de:item:b2u05-mitbestimmen
+    role: reuse
+  - item: de:item:b2u05-sich-einsetzen-fuer
+    role: reuse
+  - item: de:item:b2u05-beitragen-zu
+    role: reuse
+  - item: de:item:b2u05-gerechtigkeit
+    role: reuse
+  - item: de:item:b2u05-immerhin
+    role: reuse
+  - item: de:item:b2u05-kritik
+    role: reuse
+  - item: de:item:b2u05-kontrovers
+    role: reuse
+  - item: de:item:b2u05-einwenden
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được một bài bình luận báo về sự tham gia của người dân và viết được bài diễn đàn khoảng 150 từ, có lập luận hai chiều và kết luận rõ ràng.
+  - type: explain
+    text:
+      vi: "Bài diễn đàn B2 thường gồm: mở bài nêu vấn đề, lập luận ủng hộ, lập luận phản đối, ý kiến của bạn kèm lý do, và một câu kết. Mỗi phần nên có từ nối: einerseits/andererseits, darüber hinaus, zudem, allerdings, folglich. Bạn chọn phía nào cũng được; giám khảo chấm lập luận và ngôn ngữ, không chấm quan điểm."
+  - type: explain
+    text:
+      vi: "Để đạt mức B2, hãy dùng đa dạng cấu trúc của unit: điều kiện trang trọng (sofern, vorausgesetzt, es sei denn), zumal cho lý do phụ, động từ/danh từ + giới từ (sich auseinandersetzen mit, Interesse an), và câu phản biện (Kritiker wenden ein, dass … Das mag sein, aber …). Đừng lặp \"Ich denke\" ở mọi câu."
+  - type: explain
+    text:
+      vi: "Với bài đọc kiểu Lesen Teil 2, các phương án thường diễn đạt lại ý của văn bản bằng từ khác, nên đừng chỉ tìm từ giống hệt. Chú ý các từ chỉ quan điểm của tác giả (allerdings, immerhin, sollte) và các điều kiện (sofern, nur wenn) vì chúng hay quyết định đáp án."
+  - type: deep_explain
+    text:
+      vi: "Theo cấu trúc đề tại thời điểm soạn bài, Goethe B2 Schreiben Teil 1 là bài ý kiến cho diễn đàn khoảng 150 từ, còn Lesen Teil 2 là một văn bản báo chí dài với câu hỏi chọn đáp án; hãy kiểm tra tài liệu mẫu chính thức trước khi thi. Về nội dung: ở Đức, tuổi bầu cử Quốc hội liên bang là 18 theo Luật Cơ bản, còn ở một số cuộc bầu cử cấp bang, cấp xã hay châu Âu có thể là 16; quy định khác nhau và có thể thay đổi, nên trong bài viết đừng đưa con số mà bạn không chắc. Bài mẫu và bài bình luận trong bài học đều hư cấu."
+  - type: example
+    target: "Wahlalter 16 – ja oder nein? Diese Frage wird immer wieder kontrovers diskutiert. Einerseits sind Jugendliche von vielen politischen Entscheidungen direkt betroffen, etwa in der Bildung. Sofern sie gut informiert sind, können sie durchaus verantwortungsvoll abstimmen. Darüber hinaus könnte ein früheres Wahlrecht das Interesse an Politik stärken, zumal man in der Schule ohnehin über Politik spricht."
+    target_lang: de
+    translation:
+      vi: "Tuổi bầu cử 16 – có hay không? Câu hỏi này luôn được tranh luận trái chiều. Một mặt, thanh thiếu niên chịu tác động trực tiếp của nhiều quyết định chính trị, chẳng hạn trong giáo dục. Nếu được thông tin đầy đủ, các em hoàn toàn có thể bỏ phiếu một cách có trách nhiệm. Hơn nữa, quyền bầu cử sớm hơn có thể làm tăng sự quan tâm đến chính trị, nhất là vì ở trường đằng nào cũng học về chính trị."
+    note:
+      vi: "Bài mẫu (một người viết hư cấu), phần 1 – nêu vấn đề và lập luận ủng hộ: einerseits, sofern (điều kiện), darüber hinaus (bổ sung), zumal (lý do phụ)."
+  - type: example
+    target: "Andererseits wenden Kritiker ein, dass sich manche Sechzehnjährige noch kaum mit Politik auseinandergesetzt haben. Zudem ist man in Deutschland erst mit 18 volljährig. Das mag sein, aber das gilt auch für manche Erwachsene."
+    target_lang: de
+    translation:
+      vi: "Mặt khác, những người phản đối cho rằng một số bạn mười sáu tuổi hầu như chưa tìm hiểu kỹ về chính trị. Thêm vào đó, ở Đức phải 18 tuổi mới thành niên. Có thể là vậy, nhưng điều đó cũng đúng với một số người lớn."
+    note:
+      vi: "Phần 2 – lập luận phản đối và phản biện: andererseits, wenden … ein, sich auseinandersetzen mit, zudem, Das mag sein, aber."
+  - type: example
+    target: "Insgesamt bin ich für das Wahlalter 16, vorausgesetzt, dass die Schulen mehr politische Bildung anbieten. Andernfalls bleibt das neue Recht nur auf dem Papier. Schließlich geht es um die Zukunft der jungen Generation."
+    target_lang: de
+    translation:
+      vi: "Nhìn chung, tôi ủng hộ tuổi bầu cử 16, với điều kiện các trường dạy nhiều hơn về giáo dục chính trị. Nếu không, quyền mới này chỉ nằm trên giấy. Suy cho cùng, đây là chuyện tương lai của thế hệ trẻ."
+    note:
+      vi: "Phần 3 – ý kiến kèm điều kiện (vorausgesetzt, dass), hậu quả (andernfalls) và câu kết. Cả bài khoảng 120 từ; khi thi hãy viết thêm một ví dụ hay lý do để đủ khoảng 150 từ. Bạn hoàn toàn có thể bảo vệ ý kiến ngược lại."
+  - type: example
+    target: Ich bin gegen das Wahlalter 16, es sei denn, die Schulen bieten mehr politische Bildung an.
+    target_lang: de
+    translation:
+      vi: Tôi phản đối tuổi bầu cử 16, trừ khi các trường dạy nhiều hơn về giáo dục chính trị.
+    note:
+      vi: "Quan điểm ngược lại cũng được: es sei denn + câu V2, anbieten tách: bieten … an."
+  - type: common_mistake
+    wrong: Ich denke, das ist gut. Ich denke auch, das ist wichtig. Ich denke, man sollte das machen.
+    right: Meiner Meinung nach ist das sinnvoll. Darüber hinaus halte ich es für wichtig, zumal …
+    target_lang: de
+    note:
+      vi: "Lặp \"Ich denke\" làm bài viết đơn điệu; thay đổi Redemittel và từ nối để đạt mức B2."
+  - type: common_mistake
+    wrong: Darüber hinaus, Jugendliche sind von vielen Entscheidungen betroffen.
+    right: Darüber hinaus sind Jugendliche von vielen Entscheidungen betroffen.
+    target_lang: de
+    note:
+      vi: "Trạng từ nối ở vị trí 1 → không dấu phẩy, động từ đứng ngay sau."
+  - type: summary
+    points:
+      - vi: "Bài diễn đàn: vấn đề – ủng hộ – phản đối – ý kiến + lý do – kết."
+      - vi: "Từ nối: einerseits/andererseits, darüber hinaus, zudem, allerdings, folglich, andernfalls."
+      - vi: "Điều kiện: sofern, vorausgesetzt (dass), es sei denn; lý do phụ: zumal."
+      - vi: "Phản biện: Kritiker wenden ein, dass … · Das mag sein, aber …"
+      - vi: "Đọc: phương án diễn đạt lại; chú ý allerdings, immerhin, sofern."
+exercises:
+  # ---------------- recognition: đọc (kiểu Lesen Teil 2) ----------------
+  - key: de:exercise:b2u05l5-mcq-haushalt-was
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-mitbestimmen
+    prompt:
+      stem: "Kommentar: Seit einem Jahr entscheiden die Bürger von Musterstadt über einen kleinen Teil des städtischen Haushalts mit. Es haben sich mehr Menschen beteiligt als erwartet, allerdings kamen kaum Vorschläge aus den ärmeren Stadtteilen. Die Stadt sollte daher auch direkt in die Viertel gehen. Andernfalls entscheiden wieder vor allem diejenigen, die ohnehin gut vernetzt sind. Immerhin: Der Anfang ist gemacht. — Was können die Bürger in Musterstadt seit einem Jahr tun?"
+      stem_lang: de
+      options:
+        - { id: h3a, text: "Sie können über einen Teil des städtischen Geldes mitentscheiden.", lang: de }
+        - { id: h7b, text: "Sie können den Bürgermeister direkt wählen.", lang: de }
+        - { id: h1c, text: "Sie können im Rathaus neue Gesetze beschließen.", lang: de }
+    answer:
+      correct_option_id: h3a
+    explanation:
+      vi: "Văn bản: … entscheiden die Bürger … über einen kleinen Teil des städtischen Haushalts mit – người dân cùng quyết định một phần nhỏ ngân sách thành phố. Phương án đúng diễn đạt lại: Haushalt → städtisches Geld."
+    display_answer: Sie können über einen Teil des städtischen Geldes mitentscheiden.
+
+  - key: de:exercise:b2u05l5-mcq-haushalt-bilanz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-verben-praeposition-b2
+    prompt:
+      stem: "Kommentar: Seit einem Jahr entscheiden die Bürger von Musterstadt über einen kleinen Teil des städtischen Haushalts mit. Es haben sich mehr Menschen beteiligt als erwartet, allerdings kamen kaum Vorschläge aus den ärmeren Stadtteilen. Die Stadt sollte daher auch direkt in die Viertel gehen. Andernfalls entscheiden wieder vor allem diejenigen, die ohnehin gut vernetzt sind. Immerhin: Der Anfang ist gemacht. — Wie war die Beteiligung laut Text?"
+      stem_lang: de
+      options:
+        - { id: b2a, text: "Mehr Menschen als erwartet haben mitgemacht, aber kaum aus den ärmeren Stadtteilen.", lang: de }
+        - { id: b6b, text: "Die Beteiligung war viel niedriger, als die Stadt erwartet hatte.", lang: de }
+        - { id: b9c, text: "Vor allem aus den ärmeren Stadtteilen kamen viele Vorschläge.", lang: de }
+    answer:
+      correct_option_id: b2a
+    explanation:
+      vi: "Es haben sich mehr Menschen beteiligt als erwartet (nhiều hơn dự kiến), allerdings kamen kaum Vorschläge aus den ärmeren Stadtteilen (hầu như không có đề xuất từ khu nghèo hơn). Hai phương án kia nói ngược văn bản."
+    display_answer: Mehr Menschen als erwartet haben mitgemacht, aber kaum aus den ärmeren Stadtteilen.
+
+  - key: de:exercise:b2u05l5-mcq-haushalt-vorschlag
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-textkonnektoren
+    prompt:
+      stem: "Kommentar: Seit einem Jahr entscheiden die Bürger von Musterstadt über einen kleinen Teil des städtischen Haushalts mit. Es haben sich mehr Menschen beteiligt als erwartet, allerdings kamen kaum Vorschläge aus den ärmeren Stadtteilen. Die Stadt sollte daher auch direkt in die Viertel gehen. Andernfalls entscheiden wieder vor allem diejenigen, die ohnehin gut vernetzt sind. Immerhin: Der Anfang ist gemacht. — Was schlägt der Autor vor?"
+      stem_lang: de
+      options:
+        - { id: v3a, text: "Die Stadt soll auch direkt in den Stadtteilen für das Projekt werben.", lang: de }
+        - { id: v7b, text: "Die Stadt soll das Projekt beenden.", lang: de }
+        - { id: v1c, text: "Nur noch Familien sollen abstimmen dürfen.", lang: de }
+    answer:
+      correct_option_id: v3a
+    explanation:
+      vi: "Die Stadt sollte daher auch direkt in die Viertel gehen – thành phố nên đến tận các khu phố (để quảng bá dự án). Andernfalls … nêu hậu quả nếu không làm vậy; hai phương án kia không có trong văn bản."
+    display_answer: Die Stadt soll auch direkt in den Stadtteilen für das Projekt werben.
+
+  - key: de:exercise:b2u05l5-mcq-haushalt-immerhin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-immerhin
+    prompt:
+      stem: "Kommentar (Schluss): … Andernfalls entscheiden am Ende wieder vor allem diejenigen, die ohnehin gut vernetzt sind. Immerhin: Der Anfang ist gemacht. — Was meint der Autor mit dem letzten Satz?"
+      stem_lang: de
+      options:
+        - { id: s2a, text: "Trotz der Probleme ist der erste Schritt positiv.", lang: de }
+        - { id: s6b, text: "Das Projekt ist schon zu Ende.", lang: de }
+        - { id: s9c, text: "Der Autor sieht keinen Fortschritt.", lang: de }
+    answer:
+      correct_option_id: s2a
+    explanation:
+      vi: "immerhin ghi nhận một điểm tích cực dù còn vấn đề: \"dù sao thì bước đầu đã được thực hiện\". Der Anfang ist gemacht không có nghĩa là dự án đã kết thúc."
+    display_answer: Trotz der Probleme ist der erste Schritt positiv.
+
+  # ---------------- recognition: nghe ----------------
+  - key: de:exercise:b2u05l5-listen-es-sei-denn
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u05-g-sofern-soweit
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ich bin gegen das Wahlalter sechzehn, es sei denn, die Schulen bieten deutlich mehr politische Bildung an.
+      options:
+        - { id: n2a, text: "Người nói phản đối hạ tuổi bầu cử xuống 16, trừ khi các trường dạy nhiều hơn hẳn về giáo dục chính trị.", lang: vi }
+        - { id: n6b, text: "Người nói ủng hộ tuổi bầu cử 16 vì các trường đã dạy đủ về chính trị.", lang: vi }
+        - { id: n9c, text: "Người nói phản đối tuổi bầu cử 16 trong mọi trường hợp.", lang: vi }
+        - { id: n4d, text: "Người nói ủng hộ tuổi bầu cử 16 với điều kiện cha mẹ đồng ý.", lang: vi }
+    answer:
+      correct_option_id: n2a
+    explanation:
+      vi: "Ich bin gegen … = tôi phản đối; es sei denn = trừ khi: ngoại lệ là các trường bieten … an (cung cấp, dạy) deutlich mehr politische Bildung. Vì có ngoại lệ nên không phải \"trong mọi trường hợp\"."
+    display_answer: Người nói phản đối hạ tuổi bầu cử xuống 16, trừ khi các trường dạy nhiều hơn hẳn về giáo dục chính trị.
+
+  - key: de:exercise:b2u05l5-listen-jugendrat
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u05-sich-einsetzen-fuer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das mag sein, aber viele Jugendliche setzen sich schon heute für ihre Stadt ein, zum Beispiel im Jugendrat.
+      options:
+        - { id: j3a, text: "Người nói thừa nhận một phần nhưng phản bác: nhiều bạn trẻ hiện đã tích cực hoạt động vì thành phố, ví dụ trong hội đồng thanh niên.", lang: vi }
+        - { id: j7b, text: "Người nói đồng ý rằng thanh thiếu niên không quan tâm đến thành phố.", lang: vi }
+        - { id: j1c, text: "Người nói cho rằng hội đồng thanh niên nên bị giải tán.", lang: vi }
+        - { id: j5d, text: "Người nói kể rằng sau này nhiều bạn trẻ sẽ vào hội đồng thanh niên.", lang: vi }
+    answer:
+      correct_option_id: j3a
+    explanation:
+      vi: "Das mag sein, aber … = thừa nhận một phần rồi phản bác. sich für ihre Stadt einsetzen = hoạt động, đấu tranh vì thành phố của mình; schon heute = ngay bây giờ (không phải tương lai)."
+    display_answer: "Người nói thừa nhận một phần nhưng phản bác: nhiều bạn trẻ hiện đã tích cực hoạt động vì thành phố, ví dụ trong hội đồng thanh niên."
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u05l5-fill-forum
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-verben-praeposition-b2
+    prompt:
+      template: "Viele Jugendliche setzen sich {{b1}} ihre Stadt ein. Ob sie verantwortungsvoll abstimmen, hängt {{b2}} ihrer Bildung ab. {{b3}} (zusätzlich) wäre ein früheres Wahlrecht ein Zeichen des Vertrauens."
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 14 }
+    answer:
+      blanks:
+        b1: [für]
+        b2: [von]
+        b3: [Darüber hinaus, Zudem, Außerdem, Ferner, Zusätzlich]
+    known_wrong:
+      - answer: an
+        feedback_vi: sich einsetzen đi với für + Akkusativ – für ihre Stadt.
+        error_tag: preposition
+      - answer: in
+        feedback_vi: abhängen đi với von + Dativ – von ihrer Bildung.
+        error_tag: preposition
+      - answer: Hingegen
+        feedback_vi: hingegen nêu sự đối lập; ở đây cần ý bổ sung – Darüber hinaus/Zudem.
+        error_tag: word_choice
+    explanation:
+      vi: "sich einsetzen für + Akk; abhängen von + Dat. Ý bổ sung ở vị trí 1: Darüber hinaus/Zudem/Außerdem/Ferner, rồi động từ wäre ngay sau."
+    display_answer: "Viele Jugendliche setzen sich für ihre Stadt ein. Ob sie verantwortungsvoll abstimmen, hängt von ihrer Bildung ab. Darüber hinaus wäre ein früheres Wahlrecht ein Zeichen des Vertrauens."
+
+  - key: de:exercise:b2u05l5-fill-redemittel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-g-meinung-redemittel
+    prompt:
+      template: "Ich bin der {{b1}}, dass Jugendliche mitbestimmen sollten. Kritiker wenden {{b2}}, dass manche noch zu jung sind. Das {{b3}} (mögen) sein, aber das gilt auch für manche Erwachsene."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 4 }
+    answer:
+      blanks:
+        b1: [Meinung, Ansicht, Auffassung]
+        b2: [ein]
+        b3: [mag]
+    known_wrong:
+      - answer: Meinungen
+        feedback_vi: Cụm cố định ở số ít – Ich bin der Meinung, dass …
+        error_tag: plural_form
+      - answer: an
+        feedback_vi: einwenden là động từ tách với tiền tố ein – Kritiker wenden ein, dass …
+        error_tag: separable_prefix
+      - answer: möchte
+        feedback_vi: Das mag sein = có thể là vậy (mögen chia ở Präsens, ngôi es).
+        error_tag: verb_form
+    explanation:
+      vi: "Ich bin der Meinung/Ansicht, dass … (B1U06). einwenden tách: wenden … ein. Das mag sein, aber … thừa nhận một phần rồi phản bác."
+    display_answer: "Ich bin der Meinung, dass Jugendliche mitbestimmen sollten. Kritiker wenden ein, dass manche noch zu jung sind. Das mag sein, aber das gilt auch für manche Erwachsene."
+
+  - key: de:exercise:b2u05l5-tr-zumal-betroffen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-zumal
+    prompt:
+      source_text: "Thanh thiếu niên nên được cùng quyết định, nhất là vì họ chịu tác động trực tiếp. (dùng mitbestimmen dürfen, zumal, direkt betroffen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Jugendliche sollten mitbestimmen dürfen, zumal sie direkt betroffen sind.
+        - Jugendliche sollen mitbestimmen dürfen, zumal sie direkt betroffen sind.
+        - Junge Menschen sollten mitbestimmen dürfen, zumal sie direkt betroffen sind.
+        - Junge Leute sollten mitbestimmen dürfen, zumal sie direkt betroffen sind.
+        - Jugendliche sollten mitbestimmen dürfen, zumal sie davon direkt betroffen sind.
+        - Jugendliche sollten mitbestimmen dürfen, zumal sie direkt davon betroffen sind.
+    known_wrong:
+      - answer: Jugendliche sollten mitbestimmen dürfen, zumal sie sind direkt betroffen.
+        feedback_vi: zumal mở câu phụ – động từ sind đứng cuối.
+        error_tag: verb_position
+      - answer: Jugendliche sollten dürfen mitbestimmen, zumal sie direkt betroffen sind.
+        feedback_vi: Hai động từ nguyên thể đứng cuối câu chính theo thứ tự mitbestimmen dürfen.
+        error_tag: word_order
+    explanation:
+      vi: "sollten + mitbestimmen dürfen (hai nguyên thể ở cuối). zumal + câu phụ, động từ sind cuối câu; betroffen sein = chịu tác động."
+    display_answer: Jugendliche sollten mitbestimmen dürfen, zumal sie direkt betroffen sind.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u05l5-wb-darueber-hinaus
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-textkonnektoren
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hơn nữa, thanh thiếu niên chịu tác động trực tiếp của nhiều quyết định.\""
+      tokens:
+        - { id: u-entscheidungen, text: Entscheidungen }
+        - { id: u-sind, text: sind }
+        - { id: u-direkt, text: direkt }
+        - { id: u-darueber, text: Darüber hinaus }
+        - { id: u-betroffen, text: betroffen }
+        - { id: u-vielen, text: vielen }
+        - { id: u-jugendliche, text: Jugendliche }
+        - { id: u-von, text: von }
+    answer:
+      orders:
+        - [u-darueber, u-sind, u-jugendliche, u-von, u-vielen, u-entscheidungen, u-direkt, u-betroffen]
+        - [u-darueber, u-sind, u-jugendliche, u-direkt, u-von, u-vielen, u-entscheidungen, u-betroffen]
+    explanation:
+      vi: "Darüber hinaus chiếm vị trí 1 → sind đứng thứ hai, chủ ngữ Jugendliche sau đó. von + Dativ (von vielen Entscheidungen) và betroffen ở cuối; direkt có thể đứng trước hoặc sau cụm von."
+    display_answer: Darüber hinaus sind Jugendliche von vielen Entscheidungen direkt betroffen.
+
+  - key: de:exercise:b2u05l5-wb-vorausgesetzt
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-wahlrecht
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi ủng hộ tuổi bầu cử 16, với điều kiện là các trường dạy nhiều hơn về giáo dục chính trị.\""
+      tokens:
+        - { id: v-anbieten, text: anbieten }
+        - { id: v-schulen, text: die Schulen }
+        - { id: v-ich, text: Ich bin für das Wahlalter 16 }
+        - { id: v-bildung, text: mehr politische Bildung }
+        - { id: v-dass, text: dass }
+        - { id: v-voraus, text: ", vorausgesetzt," }
+    answer:
+      orders:
+        - [v-ich, v-voraus, v-dass, v-schulen, v-bildung, v-anbieten]
+    explanation:
+      vi: "vorausgesetzt, dass … = với điều kiện là; câu dass có động từ cuối, nên anbieten (viết liền khi đứng cuối câu phụ) đứng sau cùng."
+    display_answer: "Ich bin für das Wahlalter 16, vorausgesetzt, dass die Schulen mehr politische Bildung anbieten."
+
+  - key: de:exercise:b2u05l5-tr-sofern-wahlalter
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u05-g-sofern-soweit
+    prompt:
+      source_text: Sofern die Schulen mehr politische Bildung anbieten, bin ich für das Wahlalter 16.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nếu các trường dạy nhiều hơn về giáo dục chính trị, tôi ủng hộ tuổi bầu cử 16.
+        - Nếu các trường dạy nhiều hơn về giáo dục chính trị thì tôi ủng hộ tuổi bầu cử 16.
+        - Với điều kiện các trường dạy nhiều hơn về giáo dục chính trị, tôi ủng hộ tuổi bầu cử 16.
+        - Nếu các trường học tăng cường giáo dục chính trị, tôi ủng hộ tuổi bầu cử 16.
+        - Nếu các trường học tăng cường giáo dục chính trị thì tôi ủng hộ tuổi bầu cử 16.
+        - Nếu trường học dạy nhiều hơn về giáo dục chính trị thì tôi ủng hộ việc bầu cử từ 16 tuổi.
+        - Nếu trường học dạy nhiều hơn về giáo dục chính trị, tôi ủng hộ hạ tuổi bầu cử xuống 16.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trừ khi các trường dạy nhiều hơn về giáo dục chính trị, tôi ủng hộ tuổi bầu cử 16.
+        feedback_vi: "sofern là \"nếu, với điều kiện là\", không phải \"trừ khi\" (es sei denn)."
+        error_tag: meaning
+    explanation:
+      vi: "sofern = nếu, với điều kiện là; anbieten = cung cấp, ở đây là dạy, tổ chức học. für etwas sein = ủng hộ điều gì."
+    display_answer: Nếu các trường dạy nhiều hơn về giáo dục chính trị, tôi ủng hộ tuổi bầu cử 16.

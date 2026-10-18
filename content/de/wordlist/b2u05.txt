@@ -1,0 +1,2 @@
+# B2U05 Politik und Gesellschaft – từ đúng chính tả nhưng từ điển lint chưa có
+Textkonnektoren

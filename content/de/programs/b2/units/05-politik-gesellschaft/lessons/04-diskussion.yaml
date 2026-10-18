@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u05-diskussion
+order_index: 4
+level: b2
+title:
+  vi: Thảo luận chính trị – phản biện lịch sự (Diskussion)
+objectives:
+  - vi: Tham gia một cuộc thảo luận khoảng 5 phút (kiểu Goethe B2 Sprechen Teil 2) về một vấn đề của thành phố.
+  - vi: Đưa luận điểm, phản bác lịch sự có lý do và đề xuất thoả hiệp.
+  - vi: Nghe hiểu lập trường của các bên trong một cuộc thảo luận trên radio.
+estimated_minutes: 22
+skills: [speaking, listening]
+prerequisites: [de:lesson:b2u05-verben-nomen-praeposition]
+items:
+  - item: de:item:b2u05-g-diskussion-redemittel
+  - item: de:item:b2u05-einwand
+  - item: de:item:b2u05-einwenden
+  - item: de:item:b2u05-debatte
+  - item: de:item:b2u05-debattieren
+  - item: de:item:b2u05-abwaegen
+  - item: de:item:b2u05-konsens
+  - item: de:item:b2u05-kontrovers
+  - item: de:item:b2u05-position
+  - item: de:item:b2u05-streitkultur
+  - item: de:item:b2u05-einlenken
+  - item: de:item:b2u05-einraeumen
+  - item: de:item:b2u05-streitfrage
+  - item: de:item:b2u05-zugeben
+  - item: de:item:b2u05-differenziert
+  - item: de:item:b2u05-pauschal
+  - item: de:item:b2u05-nachvollziehen
+  - item: de:item:b2u05-bedenken
+  - item: de:item:b2u05-meinungsfreiheit
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+  - item: de:item:b1u08-g-vorschlag-konjunktiv
+    role: reuse
+  - item: de:item:b1u10-g-gespraechsstrategien
+    role: reuse
+  - item: de:item:b2u03-g-vortrag-redemittel
+    role: reuse
+  - item: de:item:b2u04-g-indirekte-frage-aufforderung
+    role: reuse
+  - item: de:item:b1u06-widersprechen
+    role: reuse
+  - item: de:item:b1u09-kompromiss
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn thảo luận được về một câu hỏi gây tranh cãi của thành phố (hư cấu: \"Có nên xây khu nhà ở trên một phần công viên thành phố Musterstadt?\"), phản bác lịch sự và cùng tìm thoả hiệp: \"Das mag sein, aber wäre es nicht sinnvoller, nur einen Teil zu bebauen?\""
+  - type: explain
+    text:
+      vi: "Theo cấu trúc đề tại thời điểm soạn bài, Goethe B2 Sprechen Teil 2 là phần hai thí sinh thảo luận khoảng 5 phút về một câu hỏi gây tranh cãi: nêu ý kiến, đưa lý do, phản hồi ý của bạn thi và cố tìm điểm chung. Hãy xem tài liệu mẫu chính thức của Goethe-Institut trước khi thi, vì thời lượng và cách chấm có thể thay đổi."
+  - type: explain
+    text:
+      vi: "Phản bác lịch sự: Da muss ich Ihnen widersprechen, denn … (widersprechen + Dativ) hoặc Das mag sein, aber … (thừa nhận một phần rồi phản bác; mögen ở đây là \"có thể\"). Nêu lo ngại nhẹ nhàng: Ich gebe zu bedenken, dass … (động từ cuối câu dass)."
+  - type: explain
+    text:
+      vi: "Đề xuất và tìm điểm chung: Wäre es nicht sinnvoller, … zu + Infinitiv? (Konjunktiv II làm câu mềm hơn, như Wir könnten doch … ở B1) và Lassen Sie uns einen Kompromiss finden. Thừa nhận ý hay của đối phương làm bạn nghe công bằng: Ich kann Ihre Position nachvollziehen, aber …."
+  - type: explain
+    text:
+      vi: "Người Việt hay đồng ý cho xong để tránh va chạm (Ja, Sie haben recht.), nhưng trong phần thi này bạn được chấm về khả năng tương tác và lập luận. Phản biện có lý do là bình thường và lịch sự trong văn hoá tranh luận ở Đức; điều cần tránh là nói chung chung (pauschal) hoặc thô lỗ."
+  - type: deep_explain
+    text:
+      vi: "Trong phòng thi, hai thí sinh có thể xưng du hoặc Sie; hãy thống nhất từ đầu và giữ nguyên. Bài này dùng Sie như trong một cuộc họp công dân. Các chiến lược từ B1U10 vẫn rất hữu ích: Darf ich kurz etwas ergänzen? (xin bổ sung), Habe ich Sie richtig verstanden, dass …? (hỏi lại). Khác với thuyết trình ở Teil 1 (Zunächst … Abschließend …), ở Teil 2 bạn phải phản hồi trực tiếp điều người kia vừa nói, nên hãy nhắc lại ý họ bằng lời gián tiếp: Sie sagen, die Stadt brauche mehr Wohnungen. Chủ đề trong bài là hư cấu; trong bài thi, giám khảo chấm cách lập luận và ngôn ngữ, không chấm bạn đứng về phía nào."
+  - type: example
+    target: Da muss ich Ihnen widersprechen. Der Park ist für viele Familien der einzige grüne Ort im Viertel.
+    target_lang: de
+    translation:
+      vi: Về điểm này tôi phải phản đối anh/chị. Công viên là chỗ xanh duy nhất trong khu phố đối với nhiều gia đình.
+    note:
+      vi: "widersprechen + Dativ: Ihnen. Luôn kèm lý do ngay sau lời phản đối."
+  - type: example
+    target: Das mag sein, aber ohne neue Wohnungen können die Mieten weiter steigen.
+    target_lang: de
+    translation:
+      vi: Có thể là vậy, nhưng nếu không có nhà ở mới thì tiền thuê nhà có thể tiếp tục tăng.
+    note:
+      vi: "Das mag sein = có thể là vậy (thừa nhận một phần), rồi phản bác bằng aber."
+  - type: example
+    target: Ich gebe zu bedenken, dass der Bau mehrere Jahre dauern würde.
+    target_lang: de
+    translation:
+      vi: Tôi xin lưu ý rằng việc xây dựng sẽ kéo dài nhiều năm.
+    note:
+      vi: "zu bedenken geben = lưu ý, nêu lo ngại một cách lịch sự; động từ würde ở cuối câu dass."
+  - type: example
+    target: Wäre es nicht sinnvoller, nur einen kleinen Teil des Parks zu bebauen?
+    target_lang: de
+    translation:
+      vi: Chẳng phải sẽ hợp lý hơn nếu chỉ xây trên một phần nhỏ của công viên sao?
+    note:
+      vi: "Konjunktiv II wäre + zu-Infinitiv ở cuối: zu bebauen."
+  - type: example
+    target: Lassen Sie uns einen Kompromiss finden, mit dem beide Seiten leben können.
+    target_lang: de
+    translation:
+      vi: Chúng ta hãy tìm một thoả hiệp mà cả hai bên đều chấp nhận được.
+    note:
+      vi: "Lassen Sie uns … = Chúng ta hãy …; mit etwas leben können = chấp nhận được điều gì."
+  - type: example
+    target: Meiner Meinung nach sollten wir beide Ziele abwägen. Wir könnten doch zuerst die Bürger befragen.
+    target_lang: de
+    translation:
+      vi: Theo tôi, chúng ta nên cân nhắc cả hai mục tiêu. Hay là trước hết chúng ta hỏi ý kiến người dân.
+    note:
+      vi: "Meiner Meinung nach (B1U06) đứng ở vị trí 1, động từ sollten ngay sau; Wir könnten doch … là cách đề nghị bằng Konjunktiv II (B1U08)."
+  - type: common_mistake
+    wrong: "Ja, Sie haben recht. (rồi im lặng)"
+    right: Das mag sein, aber ich sehe das etwas anders, denn …
+    target_lang: de
+    note:
+      vi: "Đồng ý cho xong làm cuộc thảo luận dừng lại; trong bài thi hãy thừa nhận một phần rồi đưa lập luận của mình."
+  - type: common_mistake
+    wrong: Da muss ich Sie widersprechen.
+    right: Da muss ich Ihnen widersprechen.
+    target_lang: de
+    note:
+      vi: "widersprechen đi với Dativ: jemandem widersprechen → Ihnen."
+  - type: common_mistake
+    wrong: Ich gebe zu bedenken, dass der Bau dauert sehr lange.
+    right: Ich gebe zu bedenken, dass der Bau sehr lange dauert.
+    target_lang: de
+    note:
+      vi: "Sau dass, động từ chia đứng cuối câu."
+  - type: common_mistake
+    wrong: Wäre es nicht sinnvoller, nur einen Teil bebauen?
+    right: Wäre es nicht sinnvoller, nur einen Teil zu bebauen?
+    target_lang: de
+    note:
+      vi: "Sau Wäre es nicht sinnvoller cần zu + Infinitiv."
+  - type: summary
+    points:
+      - vi: "Phản bác: Da muss ich Ihnen widersprechen, denn … · Das mag sein, aber …"
+      - vi: "Nêu lo ngại: Ich gebe zu bedenken, dass … (động từ cuối)."
+      - vi: "Đề xuất: Wäre es nicht sinnvoller, … zu + Infinitiv?"
+      - vi: "Thoả hiệp: Lassen Sie uns einen Kompromiss finden."
+      - vi: "Công nhận ý đối phương: Ich kann Ihre Position nachvollziehen, aber …"
+      - vi: "Từ vựng: der Einwand, einwenden, die Debatte, debattieren, abwägen, der Konsens, kontrovers, die Position."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u05l4-listen-widersprechen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: de:item:b2u05-g-diskussion-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Da muss ich Ihnen widersprechen. Der Park ist für viele Familien der einzige grüne Ort im Viertel.
+      options:
+        - { id: h2a, text: "Người nói phản đối và cho rằng với nhiều gia đình, công viên là chỗ xanh duy nhất trong khu phố.", lang: vi }
+        - { id: h6b, text: "Người nói đồng ý và cho rằng công viên quá nhỏ cho các gia đình.", lang: vi }
+        - { id: h9c, text: "Người nói phản đối vì các gia đình không dùng công viên.", lang: vi }
+        - { id: h4d, text: "Người nói đồng ý rằng khu phố có nhiều chỗ xanh khác.", lang: vi }
+    answer:
+      correct_option_id: h2a
+    explanation:
+      vi: "Da muss ich Ihnen widersprechen = tôi phải phản đối anh/chị. der einzige grüne Ort im Viertel = chỗ xanh duy nhất trong khu phố."
+    display_answer: Người nói phản đối và cho rằng với nhiều gia đình, công viên là chỗ xanh duy nhất trong khu phố.
+
+  - key: de:exercise:b2u05l4-listen-mag-sein
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u05-einwand
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das mag sein, aber wir brauchen dringend mehr bezahlbare Wohnungen. Das ist mein wichtigster Einwand.
+      options:
+        - { id: m3a, text: "Người nói thừa nhận ý kia có thể đúng, nhưng phản bác rằng rất cần thêm nhà ở giá vừa phải.", lang: vi }
+        - { id: m7b, text: "Người nói hoàn toàn đồng ý và không có ý kiến phản đối nào.", lang: vi }
+        - { id: m1c, text: "Người nói cho rằng thành phố không cần thêm nhà ở.", lang: vi }
+        - { id: m5d, text: "Người nói muốn xây thêm nhà ở đắt tiền.", lang: vi }
+    answer:
+      correct_option_id: m3a
+    explanation:
+      vi: "Das mag sein, aber … = có thể là vậy, nhưng …: thừa nhận một phần rồi phản bác. bezahlbare Wohnungen = nhà ở giá vừa phải; der Einwand = ý kiến phản đối."
+    display_answer: Người nói thừa nhận ý kia có thể đúng, nhưng phản bác rằng rất cần thêm nhà ở giá vừa phải.
+
+  - key: de:exercise:b2u05l4-listen-kompromiss
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b1u09-kompromiss
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wäre es nicht sinnvoller, nur einen kleinen Teil des Parks zu bebauen? Lassen Sie uns einen Kompromiss finden.
+      options:
+        - { id: k2a, text: "Người nói đề xuất chỉ xây trên một phần nhỏ của công viên và muốn tìm thoả hiệp.", lang: vi }
+        - { id: k6b, text: "Người nói đề xuất xây trên toàn bộ công viên.", lang: vi }
+        - { id: k9c, text: "Người nói từ chối mọi việc xây dựng và không muốn thoả hiệp.", lang: vi }
+        - { id: k4d, text: "Người nói đề xuất hoãn quyết định thêm vài năm.", lang: vi }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "Wäre es nicht sinnvoller, nur einen kleinen Teil … zu bebauen? = chẳng phải hợp lý hơn nếu chỉ xây một phần nhỏ? Lassen Sie uns einen Kompromiss finden = hãy cùng tìm thoả hiệp."
+    display_answer: Người nói đề xuất chỉ xây trên một phần nhỏ của công viên và muốn tìm thoả hiệp.
+
+  - key: de:exercise:b2u05l4-listen-radio
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u04-g-indirekte-frage-aufforderung
+    prompt:
+      audio_asset_id: null
+      fallback_text: "Die Moderatorin fragt Frau Klein, ob sie gegen das Projekt sei. Frau Klein sagt: Ich gebe zu bedenken, dass im Park viele seltene Vögel leben. Herr Braun hingegen meint, die Stadt brauche dringend neue Wohnungen."
+      options:
+        - { id: q3a, text: "Bà Klein lo ngại cho các loài chim hiếm trong công viên; ông Braun thì cho rằng thành phố rất cần nhà ở mới.", lang: vi }
+        - { id: q7b, text: "Bà Klein và ông Braun đều ủng hộ dự án xây nhà ở.", lang: vi }
+        - { id: q1c, text: "Bà Klein cho rằng thành phố rất cần nhà ở mới; ông Braun lo ngại cho các loài chim.", lang: vi }
+        - { id: q5d, text: "Người dẫn chương trình phản đối dự án vì các loài chim hiếm.", lang: vi }
+    answer:
+      correct_option_id: q3a
+    explanation:
+      vi: "Ich gebe zu bedenken, dass … seltene Vögel leben = bà Klein nêu lo ngại về chim hiếm. Herr Braun hingegen meint, die Stadt brauche … = ngược lại ông Braun cho rằng thành phố cần nhà ở (lời gián tiếp, B2U04). Người dẫn chương trình chỉ hỏi (fragt, ob …), không nêu ý kiến."
+    display_answer: Bà Klein lo ngại cho các loài chim hiếm trong công viên; ông Braun thì cho rằng thành phố rất cần nhà ở mới.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u05l4-fill-redemittel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-diskussion-redemittel
+    prompt:
+      template: "Da muss ich Ihnen {{b1}} (widersprechen). Das {{b2}} (mögen) sein, aber die Kosten sind zu hoch. Ich gebe zu {{b3}}, dass der Bau lange dauert."
+      blanks:
+        - { id: b1, width_hint: 12 }
+        - { id: b2, width_hint: 4 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [widersprechen]
+        b2: [mag]
+        b3: [bedenken]
+    known_wrong:
+      - answer: widerspreche
+        feedback_vi: Sau động từ khiếm khuyết muss, động từ chính ở nguyên thể – widersprechen.
+        error_tag: verb_form
+      - answer: möchte
+        feedback_vi: "Ở đây mögen nghĩa là \"có thể\" và chia ở Präsens – Das mag sein."
+        error_tag: verb_form
+      - answer: denken
+        feedback_vi: Cụm cố định là zu bedenken geben – Ich gebe zu bedenken, dass …
+        error_tag: word_choice
+    explanation:
+      vi: "Da muss ich Ihnen widersprechen (muss + nguyên thể). Das mag sein = có thể là vậy (mögen, ngôi es → mag). Ich gebe zu bedenken, dass … = tôi xin lưu ý rằng …"
+    display_answer: "Da muss ich Ihnen widersprechen. Das mag sein, aber die Kosten sind zu hoch. Ich gebe zu bedenken, dass der Bau lange dauert."
+
+  - key: de:exercise:b2u05l4-tr-sinnvoller
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-diskussion-redemittel
+    prompt:
+      source_text: "Chẳng phải sẽ hợp lý hơn nếu chỉ xây trên một phần nhỏ của công viên sao? (dùng Wäre es nicht sinnvoller …, bebauen)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wäre es nicht sinnvoller, nur einen kleinen Teil des Parks zu bebauen?
+        - Wäre es nicht sinnvoller, nur ein kleines Stück des Parks zu bebauen?
+        - Wäre es nicht sinnvoller, lediglich einen kleinen Teil des Parks zu bebauen?
+        - Wäre es nicht sinnvoller, nur einen kleinen Teil des Stadtparks zu bebauen?
+        - Wäre es nicht sinnvoller, nur einen kleinen Teil vom Park zu bebauen?
+    known_wrong:
+      - answer: Wäre es nicht sinnvoller, nur einen kleinen Teil des Parks bebauen?
+        feedback_vi: Sau Wäre es nicht sinnvoller cần zu + Infinitiv – zu bebauen.
+        error_tag: zu_infinitive
+      - answer: Wäre es nicht sinnvoller, zu bebauen nur einen kleinen Teil des Parks?
+        feedback_vi: zu + Infinitiv đứng cuối cụm – … einen kleinen Teil des Parks zu bebauen.
+        error_tag: word_order
+    explanation:
+      vi: "Wäre es nicht sinnvoller, … zu + Infinitiv? là đề xuất lịch sự bằng Konjunktiv II. bebauen (xây trên khu đất) đi thẳng với Akkusativ: einen kleinen Teil des Parks."
+    display_answer: Wäre es nicht sinnvoller, nur einen kleinen Teil des Parks zu bebauen?
+
+  - key: de:exercise:b2u05l4-tr-zu-bedenken
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-bedenken
+    prompt:
+      source_text: "Tôi xin lưu ý rằng việc xây dựng sẽ kéo dài nhiều năm. (dùng Ich gebe zu bedenken …, der Bau)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich gebe zu bedenken, dass der Bau mehrere Jahre dauern würde.
+        - Ich gebe zu bedenken, dass der Bau mehrere Jahre dauern wird.
+        - Ich gebe zu bedenken, dass der Bau mehrere Jahre dauert.
+        - Ich gebe zu bedenken, dass der Bau viele Jahre dauern würde.
+        - Ich gebe zu bedenken, dass der Bau viele Jahre dauern wird.
+        - Ich gebe zu bedenken, dass der Bau viele Jahre dauert.
+        - Ich möchte zu bedenken geben, dass der Bau mehrere Jahre dauern würde.
+        - Ich möchte zu bedenken geben, dass der Bau mehrere Jahre dauern wird.
+    known_wrong:
+      - answer: Ich gebe zu bedenken, dass der Bau dauert mehrere Jahre.
+        feedback_vi: Trong câu dass, động từ chia đứng cuối – … mehrere Jahre dauert.
+        error_tag: verb_position
+      - answer: Ich gebe zu bedenken, dass der Bau mehrere Jahre dauern werden würde.
+        feedback_vi: Dùng một trợ động từ thôi – dauern würde hoặc dauern wird.
+        error_tag: verb_form
+    explanation:
+      vi: "zu bedenken geben = lưu ý một cách lịch sự. Câu dass có động từ cuối: dauern würde/wird hoặc dauert. mehrere/viele Jahre = nhiều năm."
+    display_answer: Ich gebe zu bedenken, dass der Bau mehrere Jahre dauern würde.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u05l4-mcq-reaktion
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-diskussion-redemittel
+    prompt:
+      stem: "Bạn thi nói: \"Wir brauchen dringend Wohnungen, deshalb sollte der ganze Park bebaut werden.\" Bạn thấy lý do nhà ở có lý nhưng không muốn xây hết công viên. Câu trả lời nào phù hợp nhất (lịch sự, có lập luận và đề xuất)?"
+      stem_lang: vi
+      options:
+        - { id: a2a, text: "Das mag sein, aber muss es wirklich der ganze Park sein? Wäre es nicht sinnvoller, nur einen Teil zu bebauen?", lang: de }
+        - { id: a6b, text: "Ja, Sie haben völlig recht.", lang: de }
+        - { id: a9c, text: "Das ist doch Unsinn.", lang: de }
+        - { id: a4d, text: "Da muss ich Ihnen widersprechen. Wohnungen sind unwichtig.", lang: de }
+    answer:
+      correct_option_id: a2a
+    explanation:
+      vi: "Phương án đầu thừa nhận một phần (Das mag sein), phản bác bằng câu hỏi và đưa đề xuất (Wäre es nicht sinnvoller …). Đồng ý cho xong không có tương tác; Das ist doch Unsinn thô lỗ; câu cuối mâu thuẫn với việc bạn thấy lý do nhà ở có lý và nói vơ đũa cả nắm."
+    display_answer: "Das mag sein, aber muss es wirklich der ganze Park sein? Wäre es nicht sinnvoller, nur einen Teil zu bebauen?"
+
+  - key: de:exercise:b2u05l4-wb-kompromiss
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u09-kompromiss
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Chúng ta hãy tìm một thoả hiệp mà cả hai bên đều chấp nhận được.\""
+      tokens:
+        - { id: c-leben, text: leben }
+        - { id: c-uns, text: uns }
+        - { id: c-finden, text: finden }
+        - { id: c-lassen, text: Lassen }
+        - { id: c-seiten, text: beide Seiten }
+        - { id: c-mitdem, text: ", mit dem" }
+        - { id: c-sie, text: Sie }
+        - { id: c-koennen, text: können }
+        - { id: c-kompromiss, text: einen Kompromiss }
+    answer:
+      orders:
+        - [c-lassen, c-sie, c-uns, c-kompromiss, c-finden, c-mitdem, c-seiten, c-leben, c-koennen]
+    explanation:
+      vi: "Lassen Sie uns … finden: finden (nguyên thể) đứng cuối câu chính. Mệnh đề quan hệ mit dem (der Kompromiss → dem, Dativ sau mit) có động từ chia können ở cuối, sau leben."
+    display_answer: Lassen Sie uns einen Kompromiss finden, mit dem beide Seiten leben können.
+
+  - key: de:exercise:b2u05l4-tr-nachvollziehen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u05-nachvollziehen
+    prompt:
+      source_text: Ich kann Ihre Position gut nachvollziehen, aber ich sehe das anders.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi hoàn toàn hiểu được lập trường của anh, nhưng tôi nhìn nhận khác.
+        - Tôi hoàn toàn hiểu được lập trường của chị, nhưng tôi nhìn nhận khác.
+        - Tôi hoàn toàn hiểu được lập trường của ông, nhưng tôi nhìn nhận khác.
+        - Tôi hoàn toàn hiểu được lập trường của bà, nhưng tôi nhìn nhận khác.
+        - Tôi rất hiểu lập trường của anh, nhưng tôi thấy khác.
+        - Tôi rất hiểu lập trường của chị, nhưng tôi thấy khác.
+        - Tôi hiểu rõ quan điểm của anh, nhưng tôi nhìn nhận vấn đề khác.
+        - Tôi hiểu rõ quan điểm của chị, nhưng tôi nhìn nhận vấn đề khác.
+        - Tôi hiểu rõ quan điểm của ông, nhưng tôi nhìn nhận vấn đề khác.
+        - Tôi hiểu rõ quan điểm của bà, nhưng tôi nhìn nhận vấn đề khác.
+        - Tôi hoàn toàn hiểu được lập trường của anh chị, nhưng tôi nhìn nhận khác.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi hoàn toàn đồng ý với lập trường của anh, nhưng tôi nhìn nhận khác.
+        feedback_vi: nachvollziehen là hiểu được lý lẽ, không phải đồng ý (zustimmen).
+        error_tag: meaning
+    explanation:
+      vi: "nachvollziehen = hiểu được (lý lẽ của ai), không có nghĩa là đồng ý. die Position = lập trường, quan điểm; Ihre (viết hoa) là cách xưng lịch sự."
+    display_answer: Tôi hoàn toàn hiểu được lập trường của anh, nhưng tôi nhìn nhận khác.

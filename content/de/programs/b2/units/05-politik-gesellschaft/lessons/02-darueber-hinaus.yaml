@@ -1,0 +1,403 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u05-darueber-hinaus
+order_index: 2
+level: b2
+title:
+  vi: Hơn nữa – trạng từ nối văn bản, zumal (Darüber hinaus …, zumal …)
+objectives:
+  - vi: Viết một đoạn lập luận liền mạch về bất bình đẳng xã hội.
+  - vi: Dùng trạng từ nối zudem, darüber hinaus, ferner, außerdem, stattdessen, andernfalls/sonst, hingegen với động từ ngay sau ở vị trí 2.
+  - vi: Thêm lý do phụ bằng zumal (động từ cuối) và ghi nhận mặt tích cực bằng immerhin.
+estimated_minutes: 21
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b2u05-sofern]
+items:
+  - item: de:item:b2u05-g-textkonnektoren
+  - item: de:item:b2u05-g-zumal
+  - item: de:item:b2u05-gesellschaft
+  - item: de:item:b2u05-gesellschaftlich
+  - item: de:item:b2u05-gleichberechtigung
+  - item: de:item:b2u05-armut
+  - item: de:item:b2u05-reichtum
+  - item: de:item:b2u05-ungleichheit
+  - item: de:item:b2u05-sozial
+  - item: de:item:b2u05-generation
+  - item: de:item:b2u05-gerechtigkeit
+  - item: de:item:b2u05-gerecht
+  - item: de:item:b2u05-vermoegen
+  - item: de:item:b2u05-teilhabe
+  - item: de:item:b2u05-wohlstand
+  - item: de:item:b2u05-solidaritaet
+  - item: de:item:b2u05-kluft
+  - item: de:item:b2u05-zusammenhalt
+  - item: de:item:b2u05-wohlhabend
+  - item: de:item:b2u05-sozialstaat
+  - item: de:item:b2u05-freiheit
+  - item: de:item:b2u05-immerhin
+  - item: de:item:b1u04-g-zweiteilige-konnektoren
+    role: reuse
+  - item: de:item:b1u06-g-da-naemlich
+    role: reuse
+  - item: de:item:b2u01-g-genitivattribut
+    role: reuse
+  - item: de:item:b2u01-g-adversativ-konzessiv
+    role: reuse
+  - item: de:item:b2u01-g-konsekutiv-formal
+    role: reuse
+  - item: de:item:b2u04-g-indirekte-rede
+    role: reuse
+  - item: de:item:b2u04-g-quellenangabe
+    role: reuse
+  - item: de:item:b2u01-zugang
+    role: reuse
+  - item: de:item:b2u01-chancengleichheit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được một đoạn lập luận mạch lạc về bất bình đẳng xã hội, nối các câu bằng trạng từ nối thay vì lặp lại \"und dann\": \"Viele Familien haben wenig Geld. Darüber hinaus fehlen Kindergärten.\""
+  - type: explain
+    text:
+      vi: "Trạng từ nối (Konjunktionaladverbien) nối hai câu chính và tự chiếm vị trí 1, nên động từ chia đứng ngay sau, chủ ngữ ra sau động từ: Zudem fehlt Geld. Chúng cũng có thể đứng giữa câu, sau động từ: Es fehlt zudem Geld. Tiếng Việt \"hơn nữa, nhiều gia đình…\" giữ nguyên chủ ngữ – vị ngữ, còn tiếng Đức phải đảo."
+  - type: explain
+    text:
+      vi: "Bổ sung: außerdem (ngoài ra), zudem, darüber hinaus (hơn nữa), ferner (ngoài ra, rất trang trọng). Thay thế: stattdessen (thay vào đó). Nếu không làm thì: andernfalls, sonst (nếu không thì). Tương phản: hingegen (ngược lại), cùng dennoch, allerdings, folglich bạn đã học ở B2U01."
+  - type: explain
+    text:
+      vi: "zumal (nhất là vì, huống hồ) là liên từ mở câu phụ, động từ đứng cuối, và thường đứng sau câu chính: Ich bin dagegen, zumal das Projekt sehr teuer ist. Nó thêm một lý do làm điều vừa nói càng thuyết phục; khi chỉ nêu nguyên nhân trung tính, dùng weil hoặc da."
+  - type: explain
+    text:
+      vi: "immerhin (dù sao thì, ít ra) ghi nhận một điểm tích cực nhỏ và cũng đứng ở vị trí 1 hoặc giữa câu: Immerhin ist die Wahlbeteiligung gestiegen. Một đoạn lập luận B2 thường đi: luận điểm – lý do (da, zumal) – bổ sung (zudem, darüber hinaus) – tương phản (hingegen, allerdings) – kết luận (folglich)."
+  - type: deep_explain
+    text:
+      vi: "Không đặt dấu phẩy sau trạng từ nối như tiếng Anh (Moreover, …): viết Darüber hinaus haben viele …. Khi nối hai câu trong cùng một câu lớn, đặt dấu phẩy hoặc chấm phẩy trước trạng từ: Wir müssen handeln, andernfalls wird das Problem größer. sonst nghe thân mật hơn andernfalls; anderenfalls là cách viết khác cũng đúng. hingegen hay đứng sau chủ ngữ để nhấn mạnh sự đối lập: Mein Bruder hingegen wohnt auf dem Land. Đừng lạm dụng außerdem: thay đổi giữa zudem, darüber hinaus, hai vế nicht nur … sondern auch (B1U04) để bài viết đa dạng hơn."
+  - type: example
+    target: Viele Familien haben wenig Geld. Darüber hinaus fehlen in manchen Stadtteilen Kindergärten.
+    target_lang: de
+    translation:
+      vi: Nhiều gia đình có ít tiền. Hơn nữa, ở một số khu phố còn thiếu nhà trẻ.
+    note:
+      vi: "Darüber hinaus là vị trí 1, động từ fehlen đứng ngay sau, không có dấu phẩy."
+  - type: example
+    target: Die Stadt baut keine neue Straße. Stattdessen investiert sie in Busse und Radwege.
+    target_lang: de
+    translation:
+      vi: Thành phố không làm đường mới. Thay vào đó, họ đầu tư vào xe buýt và đường xe đạp.
+    note:
+      vi: "stattdessen viết liền một từ; động từ investiert đứng ngay sau."
+  - type: example
+    target: Die Mieten in der Stadt sind hoch. Auf dem Land sind sie hingegen deutlich niedriger.
+    target_lang: de
+    translation:
+      vi: Tiền thuê nhà ở thành phố cao. Ngược lại, ở nông thôn thì thấp hơn đáng kể.
+    note:
+      vi: "hingegen đứng giữa câu, sau động từ; cụm Auf dem Land chiếm vị trí 1."
+  - type: example
+    target: Ich unterstütze den Vorschlag, zumal er kaum Kosten verursacht.
+    target_lang: de
+    translation:
+      vi: Tôi ủng hộ đề xuất này, nhất là vì nó hầu như không tốn kém.
+    note:
+      vi: "zumal mở câu phụ: động từ verursacht đứng cuối."
+  - type: example
+    target: "Bildung ist nicht nur ein Recht, sondern auch der Schlüssel zur Teilhabe. Da der Zugang zu guter Bildung aber oft vom Einkommen der Eltern abhängt, fehlt es an Chancengleichheit. Folglich sollte der Staat mehr investieren, zumal sich Bildung langfristig auszahlt. Kritiker wenden allerdings ein, der Staat habe dafür nicht genug Geld."
+    target_lang: de
+    translation:
+      vi: "Giáo dục không chỉ là một quyền mà còn là chìa khoá để tham gia vào xã hội. Nhưng vì việc tiếp cận nền giáo dục tốt thường phụ thuộc vào thu nhập của cha mẹ, nên cơ hội không bình đẳng. Do đó nhà nước nên đầu tư nhiều hơn, nhất là vì giáo dục mang lại lợi ích về lâu dài. Tuy nhiên, những người phản đối cho rằng nhà nước không có đủ tiền cho việc đó."
+    note:
+      vi: "Đoạn lập luận mẫu: nicht nur … sondern auch (B1U04), da (lý do), Genitiv bổ nghĩa (das Einkommen der Eltern), folglich (kết luận), zumal (lý do phụ), allerdings (tương phản) và lời gián tiếp habe (Konjunktiv I, B2U04)."
+  - type: common_mistake
+    wrong: Darüber hinaus, viele Menschen haben keinen Zugang zu Bildung.
+    right: Darüber hinaus haben viele Menschen keinen Zugang zu Bildung.
+    target_lang: de
+    note:
+      vi: "Trạng từ nối chiếm vị trí 1: không dấu phẩy, động từ haben đứng ngay sau."
+  - type: common_mistake
+    wrong: Außerdem es gibt zu wenige Wohnungen.
+    right: Außerdem gibt es zu wenige Wohnungen.
+    target_lang: de
+    note:
+      vi: "außerdem cũng là vị trí 1, nên đảo: gibt es."
+  - type: common_mistake
+    wrong: Ich bin dagegen, zumal das Projekt ist sehr teuer.
+    right: Ich bin dagegen, zumal das Projekt sehr teuer ist.
+    target_lang: de
+    note:
+      vi: "zumal là liên từ câu phụ, không phải trạng từ: động từ ist xuống cuối."
+  - type: common_mistake
+    wrong: Armut ist ein Problem. Und dann gibt es auch Ungleichheit. Und dann ist Bildung teuer.
+    right: Armut ist ein Problem. Darüber hinaus gibt es Ungleichheit. Zudem ist Bildung teuer.
+    target_lang: de
+    note:
+      vi: "Lặp \"und dann\" làm bài viết như văn nói; đổi trạng từ nối cho mạch lạc và đúng trình độ B2."
+  - type: summary
+    points:
+      - vi: "Trạng từ nối ở vị trí 1 → động từ ngay sau, không dấu phẩy: Zudem fehlt Geld."
+      - vi: "Bổ sung: außerdem, zudem, darüber hinaus, ferner."
+      - vi: "stattdessen = thay vào đó; andernfalls/sonst = nếu không thì; hingegen = ngược lại."
+      - vi: "zumal + câu phụ (động từ cuối) = nhất là vì."
+      - vi: "immerhin = dù sao thì, ít ra (điểm tích cực)."
+      - vi: "Từ vựng: die Gesellschaft, gesellschaftlich, sozial, die Armut, der Reichtum, die Ungleichheit, die Gleichberechtigung, die Generation."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u05l2-mcq-immerhin
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u05-immerhin
+    prompt:
+      stem: "Câu nào đúng? (Dù sao thì tỉ lệ đi bầu cũng đã tăng.)"
+      stem_lang: vi
+      options:
+        - { id: i4a, text: "Immerhin ist die Wahlbeteiligung gestiegen.", lang: de }
+        - { id: i8b, text: "Immerhin, die Wahlbeteiligung ist gestiegen.", lang: de }
+        - { id: i2c, text: "Immerhin die Wahlbeteiligung ist gestiegen.", lang: de }
+        - { id: i6d, text: "Immerhin die Wahlbeteiligung gestiegen ist.", lang: de }
+    answer:
+      correct_option_id: i4a
+    explanation:
+      vi: "immerhin chiếm vị trí 1, nên động từ chia ist đứng ngay sau, chủ ngữ ra sau; không đặt dấu phẩy sau immerhin. Động từ cuối chỉ có trong câu phụ."
+    display_answer: Immerhin ist die Wahlbeteiligung gestiegen.
+
+  - key: de:exercise:b2u05l2-mcq-stattdessen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-textkonnektoren
+    prompt:
+      stem: "Chọn từ phù hợp (nghĩa: thay vào đó): Die Stadt baut keine neue Straße. ___ investiert sie in den Busverkehr."
+      stem_lang: vi
+      options:
+        - { id: t3a, text: "Stattdessen", lang: de }
+        - { id: t7b, text: "Zudem", lang: de }
+        - { id: t1c, text: "Andernfalls", lang: de }
+        - { id: t5d, text: "Zumal", lang: de }
+    answer:
+      correct_option_id: t3a
+    explanation:
+      vi: "Stattdessen = thay vào đó: không làm đường mà đầu tư xe buýt. Zudem là bổ sung (hơn nữa), Andernfalls là \"nếu không thì\". Zumal mở câu phụ nên không đứng trước động từ ở vị trí 2."
+    display_answer: Stattdessen
+
+  - key: de:exercise:b2u05l2-mcq-zumal-bedeutung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u05-g-zumal
+    prompt:
+      stem: "\"Wir sollten heute nicht mehr abstimmen, zumal einige Mitglieder fehlen.\" – Câu này có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: z2a, text: "Hôm nay chúng ta không nên biểu quyết nữa, nhất là khi một số thành viên vắng mặt.", lang: vi }
+        - { id: z6b, text: "Hôm nay chúng ta nên biểu quyết, mặc dù một số thành viên vắng mặt.", lang: vi }
+        - { id: z9c, text: "Hôm nay chúng ta không nên biểu quyết nữa, trừ khi một số thành viên vắng mặt.", lang: vi }
+        - { id: z4d, text: "Hôm nay chúng ta không nên biểu quyết nữa, để một số thành viên có thể đến.", lang: vi }
+    answer:
+      correct_option_id: z2a
+    explanation:
+      vi: "zumal = nhất là vì, huống hồ: việc vài thành viên vắng mặt là lý do bổ sung cho việc hoãn biểu quyết. \"mặc dù\" là obwohl, \"trừ khi\" là es sei denn."
+    display_answer: Hôm nay chúng ta không nên biểu quyết nữa, nhất là khi một số thành viên vắng mặt.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u05l2-fill-konnektoren
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-textkonnektoren
+    prompt:
+      template: "Viele Familien in Musterstadt haben wenig Geld. {{b1}} (zusätzlich) fehlen in manchen Stadtteilen Kindergärten. Die Stadt will die Gebühren nicht erhöhen. {{b2}} (anstelle davon) sucht sie Spender. Wir müssen schnell handeln, {{b3}} (wenn wir das nicht tun) wird die Kluft zwischen den Stadtteilen größer."
+      blanks:
+        - { id: b1, width_hint: 14 }
+        - { id: b2, width_hint: 12 }
+        - { id: b3, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [Darüber hinaus, Zudem, Außerdem, Ferner, Zusätzlich]
+        b2: [Stattdessen]
+        b3: [andernfalls, anderenfalls, sonst]
+    known_wrong:
+      - answer: Anstatt
+        feedback_vi: anstatt là giới từ/liên từ, không đứng một mình ở vị trí 1 – dùng Stattdessen.
+        error_tag: word_choice
+      - answer: Hingegen
+        feedback_vi: hingegen nêu sự đối lập (ngược lại), không phải bổ sung hay thay thế.
+        error_tag: word_choice
+      - answer: trotzdem
+        feedback_vi: "trotzdem = tuy vậy; \"nếu không thì\" là andernfalls hoặc sonst."
+        error_tag: word_choice
+    explanation:
+      vi: "Bổ sung: Darüber hinaus/Zudem/Außerdem/Ferner. Thay thế: Stattdessen. Nếu không thì: andernfalls/sonst. Cả ba đều chiếm vị trí 1, nên động từ (fehlen, sucht, wird) đứng ngay sau."
+    display_answer: "Viele Familien in Musterstadt haben wenig Geld. Darüber hinaus fehlen in manchen Stadtteilen Kindergärten. Die Stadt will die Gebühren nicht erhöhen. Stattdessen sucht sie Spender. Wir müssen schnell handeln, andernfalls wird die Kluft zwischen den Stadtteilen größer."
+
+  - key: de:exercise:b2u05l2-tr-zumal
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u05-g-zumal
+    prompt:
+      source_text: "Tôi ủng hộ ý tưởng này, nhất là vì nó hầu như không tốn tiền. (dùng zumal, die Idee)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich unterstütze diese Idee, zumal sie kaum Geld kostet.
+        - Ich unterstütze die Idee, zumal sie kaum Geld kostet.
+        - Ich unterstütze diese Idee, zumal sie fast kein Geld kostet.
+        - Ich unterstütze die Idee, zumal sie fast kein Geld kostet.
+        - Ich unterstütze diese Idee, zumal sie fast nichts kostet.
+        - Ich unterstütze die Idee, zumal sie fast nichts kostet.
+        - Ich unterstütze diese Idee, zumal sie kaum etwas kostet.
+        - Ich unterstütze die Idee, zumal sie kaum etwas kostet.
+        - Diese Idee unterstütze ich, zumal sie kaum Geld kostet.
+        - Diese Idee unterstütze ich, zumal sie fast kein Geld kostet.
+    known_wrong:
+      - answer: Ich unterstütze diese Idee, zumal sie kostet kaum Geld.
+        feedback_vi: zumal mở câu phụ – động từ kostet đứng cuối.
+        error_tag: verb_position
+      - answer: Ich unterstütze diese Idee, zumal es kaum Geld kostet.
+        feedback_vi: die Idee là giống cái – đại từ thay thế là sie.
+        error_tag: gender
+    explanation:
+      vi: "zumal + câu phụ, động từ kostet đứng cuối. die Idee giống cái nên đại từ là sie. hầu như không = kaum / fast kein."
+    display_answer: Ich unterstütze diese Idee, zumal sie kaum Geld kostet.
+
+  - key: de:exercise:b2u05l2-tr-andernfalls
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-ungleichheit
+    prompt:
+      source_text: "Chúng ta phải hành động ngay, nếu không thì sự bất bình đẳng sẽ tăng lên. (dùng andernfalls)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir müssen sofort handeln, andernfalls wird die Ungleichheit größer.
+        - Wir müssen jetzt handeln, andernfalls wird die Ungleichheit größer.
+        - Wir müssen sofort handeln, andernfalls wächst die Ungleichheit.
+        - Wir müssen jetzt handeln, andernfalls wächst die Ungleichheit.
+        - Wir müssen sofort handeln, andernfalls nimmt die Ungleichheit zu.
+        - Wir müssen jetzt handeln, andernfalls nimmt die Ungleichheit zu.
+        - Wir müssen sofort handeln, andernfalls wird die Ungleichheit zunehmen.
+        - Wir müssen jetzt handeln, andernfalls wird die Ungleichheit zunehmen.
+        - Wir müssen sofort handeln, andernfalls wird die Ungleichheit wachsen.
+        - Wir müssen jetzt handeln, andernfalls wird die Ungleichheit wachsen.
+        - Wir müssen sofort handeln, anderenfalls wird die Ungleichheit größer.
+        - Wir müssen sofort handeln, anderenfalls nimmt die Ungleichheit zu.
+    known_wrong:
+      - answer: Wir müssen sofort handeln, andernfalls die Ungleichheit wird größer.
+        feedback_vi: andernfalls là trạng từ ở vị trí 1 của vế sau – động từ wird đứng ngay sau nó.
+        error_tag: verb_position
+      - answer: Wir müssen sofort handeln, andernfalls die Ungleichheit größer wird.
+        feedback_vi: andernfalls không phải liên từ câu phụ – không đưa động từ xuống cuối.
+        error_tag: verb_position
+    explanation:
+      vi: "andernfalls nối vế thứ hai và chiếm vị trí 1, nên động từ (wird/wächst/nimmt) đứng ngay sau, chủ ngữ die Ungleichheit ra sau. \"tăng lên\" = größer werden, wachsen hoặc zunehmen."
+    display_answer: Wir müssen sofort handeln, andernfalls wird die Ungleichheit größer.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u05l2-wb-zudem
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-textkonnektoren
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Hơn nữa, nhiều người không được tiếp cận với giáo dục.\""
+      tokens:
+        - { id: z-zugang, text: Zugang }
+        - { id: z-viele, text: viele }
+        - { id: z-bildung, text: Bildung }
+        - { id: z-zudem, text: Zudem }
+        - { id: z-keinen, text: keinen }
+        - { id: z-menschen, text: Menschen }
+        - { id: z-zu, text: zu }
+        - { id: z-haben, text: haben }
+    answer:
+      orders:
+        - [z-zudem, z-haben, z-viele, z-menschen, z-keinen, z-zugang, z-zu, z-bildung]
+    explanation:
+      vi: "Zudem (viết hoa, đứng đầu) chiếm vị trí 1, nên haben đứng thứ hai, chủ ngữ viele Menschen theo sau. der Zugang zu + Dativ: keinen Zugang zu Bildung."
+    display_answer: Zudem haben viele Menschen keinen Zugang zu Bildung.
+
+  - key: de:exercise:b2u05l2-wb-zumal
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u05-g-zumal
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi phản đối kế hoạch này, nhất là vì nó rất tốn kém.\""
+      tokens:
+        - { id: p-teuer, text: teuer }
+        - { id: p-zumal, text: ", zumal" }
+        - { id: p-ich, text: Ich }
+        - { id: p-ist, text: ist }
+        - { id: p-gegen, text: gegen }
+        - { id: p-er, text: er }
+        - { id: p-plan, text: den Plan }
+        - { id: p-sehr, text: sehr }
+        - { id: p-bin, text: bin }
+    answer:
+      orders:
+        - [p-ich, p-bin, p-gegen, p-plan, p-zumal, p-er, p-sehr, p-teuer, p-ist]
+    explanation:
+      vi: "Câu chính Ich bin gegen den Plan; zumal mở câu phụ nên động từ ist đứng cuối. der Plan giống đực nên đại từ là er."
+    display_answer: Ich bin gegen den Plan, zumal er sehr teuer ist.
+
+  - key: de:exercise:b2u05l2-mcq-dennoch
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u01-g-adversativ-konzessiv
+    prompt:
+      stem: "Chọn từ nối phù hợp cho đoạn văn (nghĩa: tuy vậy, dù vậy vẫn): In unserem Verein engagieren sich viele Jugendliche. ___ kommen nur wenige zu den Sitzungen."
+      stem_lang: vi
+      options:
+        - { id: d3a, text: "Dennoch", lang: de }
+        - { id: d7b, text: "Zudem", lang: de }
+        - { id: d1c, text: "Folglich", lang: de }
+        - { id: d5d, text: "Stattdessen", lang: de }
+    answer:
+      correct_option_id: d3a
+    explanation:
+      vi: "Hai ý trái ngược nhau (nhiều người tham gia – ít người đến họp) nên dùng Dennoch (B2U01). Zudem là bổ sung, Folglich là kết quả, Stattdessen là thay thế – đều không hợp nghĩa."
+    display_answer: Dennoch
+
+  - key: de:exercise:b2u05l2-tr-hingegen
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u05-reichtum
+    prompt:
+      source_text: In manchen Stadtteilen ist der Reichtum groß. In anderen Vierteln leben hingegen viele Familien in Armut.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở một số khu phố, sự giàu có rất lớn. Ngược lại, ở những khu khác nhiều gia đình sống trong cảnh nghèo.
+        - Ở một số khu phố, sự giàu có rất lớn. Ngược lại, ở những khu khác có nhiều gia đình sống trong nghèo đói.
+        - Ở một số khu phố, người dân rất giàu có. Ngược lại, ở những khu khác nhiều gia đình sống trong cảnh nghèo.
+        - Một số khu phố rất giàu có. Ngược lại, ở những khu khác nhiều gia đình sống trong cảnh nghèo.
+        - Một số khu phố rất giàu. Trái lại, ở những khu khác nhiều gia đình sống trong cảnh nghèo khó.
+        - Ở một số khu phố, sự giàu có rất lớn, còn ở những khu khác thì nhiều gia đình sống trong cảnh nghèo.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ở một số khu phố, sự giàu có rất lớn. Vì vậy, ở những khu khác nhiều gia đình sống trong cảnh nghèo.
+        feedback_vi: "hingegen là \"ngược lại\" (đối lập), không phải \"vì vậy\" (folglich)."
+        error_tag: meaning
+    explanation:
+      vi: "hingegen = ngược lại, trái lại: so sánh hai khu phố đối lập. der Reichtum = sự giàu có; in Armut leben = sống trong cảnh nghèo."
+    display_answer: Ở một số khu phố, sự giàu có rất lớn. Ngược lại, ở những khu khác nhiều gia đình sống trong cảnh nghèo.
