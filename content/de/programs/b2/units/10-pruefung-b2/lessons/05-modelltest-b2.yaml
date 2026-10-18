@@ -64,12 +64,12 @@ body:
     text:
       vi: "Bảng tự kiểm (gợi ý của Linguo, không phải thang điểm chính thức). Bài diễn đàn: có mở bài, ý kiến rõ, ít nhất hai lý lẽ có ví dụ, một phản biện và đề xuất ở kết bài? Có từ nối (zudem, dagegen, deshalb, alles in allem) và không lặp từ? Thư trang trọng: lời chào và lời kết trang trọng, lý do viết, yêu cầu cụ thể bằng Konjunktiv II, Sie/Ihnen viết hoa, không khẩu ngữ? Bài nói: mở đầu nêu chủ đề và cấu trúc, nội dung có kinh nghiệm và ví dụ, kết luận; khi thảo luận có đồng ý, phản bác lịch sự, trao lời và tóm tắt? Mẹo chung: ghi lại lỗi bạn hay mắc (động từ cuối câu phụ, đuôi tính từ, giống danh từ) và kiểm tra riêng những lỗi đó ở cuối mỗi bài viết. Về thời gian, cách tính điểm và quy định phòng thi (được ghi chú hay không, mang gì vào), hãy đọc tài liệu chính thức hiện hành."
   - type: example
-    target: Nach Angaben der Geschäftsführerin sind die Beschäftigten seltener krank, und die Firma habe kaum noch Probleme, neue Fachkräfte zu finden.
+    target: Nach Angaben der Geschäftsführerin seien die Beschäftigten seltener krank, und die Firma habe kaum noch Probleme, neue Fachkräfte zu finden.
     target_lang: de
     translation:
       vi: Theo bà giám đốc, nhân viên ít ốm hơn, và công ty hầu như không còn khó khăn trong việc tìm người lao động có chuyên môn.
     note:
-      vi: "Dấu hiệu Bericht: nguồn tin (Nach Angaben …) và Konjunktiv I (habe) – người viết thuật lại, không đánh giá."
+      vi: "Dấu hiệu Bericht: nguồn tin (Nach Angaben …) và Konjunktiv I (seien, habe) – người viết thuật lại, không đánh giá."
   - type: example
     target: "Ich halte ein komplettes Verbot für übertrieben. Was ich damit sagen will: Feste Zonen, in denen Feuerwerk erlaubt ist, wären ein fairer Kompromiss."
     target_lang: de
@@ -201,7 +201,7 @@ exercises:
     item: de:item:b2u10-vertreten
     prompt:
       audio_asset_id: null
-      fallback_text: Herr Weber, Sie befürworten ein Verbot von privatem Feuerwerk an Silvester. Frau Seidel, Sie vertreten die Gegenposition. – Richtig. Ich verstehe die Sorgen wegen Müll und Lärm, aber ein komplettes Verbot geht mir zu weit. Was ich damit sagen will, ist Folgendes. Feste Zonen, in denen Feuerwerk erlaubt ist, wären ein fairer Kompromiss.
+      fallback_text: "Herr Weber, Sie befürworten ein Verbot von privatem Feuerwerk an Silvester. Frau Seidel, Sie vertreten die Gegenposition. – Richtig. Ich verstehe die Sorgen wegen Müll und Lärm, aber ein komplettes Verbot geht mir zu weit. Was ich damit sagen will, ist Folgendes: Feste Zonen, in denen Feuerwerk erlaubt ist, wären ein fairer Kompromiss."
       options:
         - { id: s1f, text: "Bà Seidel phản đối cấm hoàn toàn và đề xuất những khu vực cố định được phép bắn pháo hoa.", lang: vi }
         - { id: s2f, text: "Bà Seidel ủng hộ cấm hoàn toàn pháo hoa tư nhân.", lang: vi }
@@ -262,7 +262,7 @@ exercises:
     answer:
       blanks:
         b1: [Für]
-        b2: [Dagegen]
+        b2: [Dagegen, Allerdings, Jedoch, Demgegenüber]
         b3: [Alles]
     known_wrong:
       - answer: Gegen

@@ -46,10 +46,10 @@ body:
       vi: "Sau bài này, trong một cuộc thảo luận bạn không chỉ nói ý mình mà còn dẫn dắt được: \"Darf ich direkt daran anknüpfen?\", \"Was meinen Sie dazu?\", \"Ich fasse kurz zusammen: …\""
   - type: explain
     text:
-      vi: "Bài thuyết trình B2 có khung rõ ràng và bạn nói khung đó ra: mở đầu (In meinem Vortrag geht es um …; Zunächst … , im Anschluss daran …), nội dung chính (kinh nghiệm, ví dụ, ưu nhược điểm, so sánh với Việt Nam), kết luận (Abschließend lässt sich sagen, dass …). Chuẩn bị bằng Stichworte, đừng viết cả câu rồi đọc thuộc."
+      vi: "Bài thuyết trình B2 có khung rõ ràng và bạn nói khung đó ra: mở đầu (In meinem Vortrag geht es um …; Zunächst …, im Anschluss daran …), nội dung chính (kinh nghiệm, ví dụ, ưu nhược điểm, so sánh với Việt Nam), kết luận (Abschließend lässt sich sagen, dass …). Chuẩn bị bằng Stichworte, đừng viết cả câu rồi đọc thuộc."
   - type: explain
     text:
-      vi: "Thảo luận có bốn \"nước đi\" cơ bản: đồng ý (Da stimme ich Ihnen zu), phản bác lịch sự (Das mag sein, aber …; Da muss ich Ihnen widersprechen), câu giờ (Das ist eine interessante Frage. Lassen Sie mich kurz überlegen.) và ngắt lời lịch sự (Entschuldigung, wenn ich Sie unterbreche, aber …). Phản bác mà không có câu đệm nghe gay gắt hơn nhiều so với trong tiếng Việt."
+      vi: "Thảo luận có bốn \"nước đi\" cơ bản: đồng ý (Da stimme ich Ihnen zu), phản bác lịch sự (Das sehe ich anders, denn …; Das mag sein, aber …; Da muss ich Ihnen widersprechen), câu giờ (Das ist eine interessante Frage. Lassen Sie mich kurz überlegen.) và ngắt lời lịch sự (Darf ich kurz einhaken?; Entschuldigung, wenn ich Sie unterbreche, aber …). Phản bác mà không có câu đệm nghe gay gắt hơn nhiều so với trong tiếng Việt."
   - type: explain
     text:
       vi: "Điều phối lượt lời: nối tiếp (Darf ich direkt daran anknüpfen?), mời người khác (Was meinen Sie dazu?), quay lại một điểm (Um noch einmal auf … zurückzukommen: …) và tóm tắt (Ich fasse kurz zusammen: …). Những câu này cho thấy bạn đang nghe và giúp cuộc thảo luận không lạc đề."
@@ -129,7 +129,7 @@ body:
   - type: summary
     points:
       - vi: "Thuyết trình: In meinem Vortrag geht es um … – Zunächst … – Im Anschluss daran … – Abschließend lässt sich sagen, dass …"
-      - vi: "Thảo luận: Da stimme ich Ihnen zu / Das mag sein, aber … / Da muss ich Ihnen widersprechen / Lassen Sie mich kurz überlegen / Entschuldigung, wenn ich Sie unterbreche, aber …"
+      - vi: "Thảo luận: Da stimme ich Ihnen zu / Das sehe ich anders / Das mag sein, aber … / Da muss ich Ihnen widersprechen / Lassen Sie mich kurz überlegen / Darf ich kurz einhaken? / Entschuldigung, wenn ich Sie unterbreche, aber …"
       - vi: "Điều phối: Darf ich direkt daran anknüpfen? · Was meinen Sie dazu? · Um noch einmal auf … zurückzukommen · Ich fasse kurz zusammen."
       - vi: "Rückmeldung: cảm ơn – khen điểm cụ thể – đặt câu hỏi."
       - vi: "Chuẩn bị bằng Stichworte, giữ Zeitrahmen, không abschweifen."

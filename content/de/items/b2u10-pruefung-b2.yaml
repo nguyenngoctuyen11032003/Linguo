@@ -28,7 +28,7 @@ items:
             vi: Theo tôi, quyết định này là một sai lầm. Thành phố nên hỏi ý kiến người dân trước.
         - target: Es ist sechs Uhr morgens. Auf dem Markt riecht es nach frischem Brot, und die ersten Händler bauen ihre Stände auf.
           translation:
-            vi: Lúc ấy là sáu giờ sáng. Ở chợ thoang thoảng mùi bánh mì mới nướng, và những người bán hàng đầu tiên đang dựng sạp.
+            vi: Bây giờ là sáu giờ sáng. Ở chợ thoang thoảng mùi bánh mì mới nướng, và những người bán hàng đầu tiên đang dựng sạp.
       confusion:
         vi: "Konjunktiv I trong bản tin (er sagte, die Stadt habe …) là lời của người được dẫn, không phải ý kiến của tác giả. Ngược lại, wäre, sollte và các từ như leider, endlich, unverständlich thường cho thấy tác giả đang bình luận."
 
@@ -237,7 +237,7 @@ items:
           translation:
             vi: Ăn uống thiếu cân bằng thì không tốt cho sức khỏe.
       confusion:
-        vi: "Nghĩa thứ hai: một mặt (ein einseitiges Blatt = tờ giấy viết một mặt). Trái nghĩa trong đánh giá văn bản: ausgewogen (cân bằng)."
+        vi: "Nghĩa khác: một mặt, một trang (einseitig bedruckt = in một mặt; ein einseitiger Brief = lá thư dài một trang). Trái nghĩa trong đánh giá văn bản: ausgewogen (cân bằng)."
 
   - key: de:item:b2u10-neutral
     type: vocab
@@ -1001,6 +1001,8 @@ items:
         - target: Eine gute Moderation sorgt dafür, dass alle zu Wort kommen.
           translation:
             vi: Điều phối tốt giúp ai cũng có lượt nói.
+      confusion:
+        vi: "Với nghĩa việc điều phối, từ này hầu như chỉ dùng số ít; số nhiều die Moderationen chỉ gặp khi nói về từng lời dẫn, từng chương trình cụ thể. Người dẫn: der Moderator, die Moderatorin."
 
   - key: de:item:b2u10-moderieren
     type: vocab
@@ -1061,7 +1063,7 @@ items:
           translation:
             vi: Chỉ ghi từ khóa thôi, đừng viết cả câu.
       confusion:
-        vi: "Theo nghĩa ý ghi nhắc khi nói, số nhiều thường là die Stichworte; die Stichwörter dùng cho các mục từ trong từ điển."
+        vi: "Theo nghĩa ý ghi vắn tắt để nhắc khi nói (và nghĩa câu nhắc vai), số nhiều là die Stichworte: Ich notiere mir die Punkte in Stichworten. Với nghĩa mục từ trong từ điển, số nhiều là die Stichwörter."
 
   - key: de:item:b2u10-notiz
     type: vocab
@@ -1075,9 +1077,9 @@ items:
       meaning:
         vi: ghi chú
       examples:
-        - target: Während der Vorbereitung dürfen Sie sich Notizen machen.
+        - target: Während des Vortrags habe ich mir einige Notizen gemacht.
           translation:
-            vi: Trong lúc chuẩn bị, bạn được phép ghi chú.
+            vi: Trong lúc nghe bài thuyết trình, tôi đã ghi chú vài điều.
         - target: Lies nicht einfach deine Notizen vor!
           translation:
             vi: Đừng chỉ đọc to các ghi chú của bạn!
@@ -1266,7 +1268,7 @@ items:
           translation:
             vi: Trên tài liệu phát tay có ghi những ý quan trọng nhất.
       confusion:
-        vi: "Từ vay mượn tiếng Anh, đọc gần như tiếng Anh; trong tiếng Đức viết hoa vì là danh từ."
+        vi: "Từ vay mượn tiếng Anh, đọc gần như tiếng Anh; giống trung (das), số nhiều thêm -s như nhiều từ vay mượn tiếng Anh: die Handouts. Cũng viết Hand-out; là danh từ nên viết hoa."
 
   - key: de:item:b2u10-aufgreifen
     type: vocab

@@ -90,14 +90,14 @@ body:
     target: Wieder einmal sollen die Familien zahlen. Für den neuen Rathausplatz war dagegen genug Geld da – erstaunlich, wie schnell man sparen kann, wenn es um Kinder geht.
     target_lang: de
     translation:
-      vi: Lại một lần nữa các gia đình phải trả tiền. Còn cho quảng trường tòa thị chính mới thì lại có đủ tiền – thật đáng kinh ngạc khi người ta tiết kiệm nhanh đến thế, mỗi khi chuyện liên quan đến trẻ em.
+      vi: Lại một lần nữa các gia đình phải trả tiền. Còn cho quảng trường tòa thị chính mới thì lại có đủ tiền – thật đáng ngạc nhiên là người ta tiết kiệm nhanh đến thế nào mỗi khi chuyện liên quan đến trẻ em.
     note:
       vi: "Kommentar có giọng mỉa mai: erstaunlich ở đây không phải lời khen mà là phê phán implizit. es geht um + Akkusativ (A2U07)."
   - type: example
     target: Es ist kurz nach fünf. In der Bäckerei von Familie Yilmaz ist es warm, aus dem Ofen kommen die ersten Brötchen, und das Radio läuft leise.
     target_lang: de
     translation:
-      vi: Lúc ấy vừa quá năm giờ. Trong tiệm bánh của gia đình Yilmaz trời ấm áp, những chiếc bánh mì nhỏ đầu tiên ra lò, và radio đang bật khe khẽ.
+      vi: Bây giờ mới hơn năm giờ một chút. Trong tiệm bánh của gia đình Yilmaz thật ấm áp, những chiếc bánh mì nhỏ đầu tiên ra lò, và radio đang bật khe khẽ.
     note:
       vi: "Reportage: thì hiện tại, cảnh cụ thể, chi tiết giác quan, người thật – đặt người đọc vào giữa khung cảnh."
   - type: example
@@ -280,6 +280,7 @@ exercises:
         - Der Kommentar ist sehr einseitig, weil er nur die Nachteile erwähnt.
         - Der Kommentar ist sehr einseitig, weil er nur Nachteile erwähnt.
         - Der Kommentar ist sehr einseitig, weil er nur die Nachteile aufzählt.
+        - Der Kommentar ist sehr einseitig, weil er nur Nachteile aufzählt.
     known_wrong:
       - answer: Der Kommentar ist sehr einseitig, weil er nennt nur die Nachteile.
         feedback_vi: "Trong câu phụ weil, động từ chia đứng cuối: weil er nur die Nachteile nennt."

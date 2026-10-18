@@ -51,7 +51,7 @@ body:
       vi: "Sau Entscheidend ist và Zusammenfassend thường là đáp án của câu hỏi về ý chính. Sau Ich möchte vorausschicken thường là thông tin nền (người nói là ai, góc nhìn của họ), ít khi là ý chính. Was ich damit sagen will giúp bạn có cơ hội thứ hai nếu chưa hiểu câu trước."
   - type: explain
     text:
-      vi: "Trong thảo luận, hãy ghi cho mỗi người một ký hiệu: + (ủng hộ), – (phản đối), ? (hoài nghi, skeptisch). Câu mở đầu bằng eigentlich, Schön und gut, aber … hoặc Das mag sein, aber … thường đổi hướng: phần sau aber mới là ý thật của người nói."
+      vi: "Trong thảo luận, hãy ghi cho mỗi người một ký hiệu: + (ủng hộ), – (phản đối), ? (hoài nghi, skeptisch). Câu có eigentlich … aber, Schön und gut, aber … hoặc Das mag sein, aber … thường đổi hướng: phần sau aber mới là ý thật của người nói."
   - type: explain
     text:
       vi: "Theo mô tả tại thời điểm soạn (cần đối chiếu quy định hiện hành của Goethe-Institut), phần nghe B2 có bốn dạng: nhiều đoạn ngắn về các chủ đề khác nhau, một cuộc phỏng vấn, một cuộc thảo luận nhiều người (ai nói gì) và một bài giảng hoặc thuyết trình. Số câu, số lần nghe và thời gian có thể thay đổi; hãy xem tài liệu chính thức mới nhất trước khi thi."
@@ -92,7 +92,7 @@ body:
     translation:
       vi: Tóm lại có thể nói rằng có lẽ cả hai bên đều có lý.
     note:
-      vi: "Kết luận của bài nói; wohl = có lẽ, chắc là (phỏng đoán)."
+      vi: "Kết luận của bài nói; wohl = có lẽ, chắc là (phỏng đoán). Recht haben hay recht haben (có lý): cả hai cách viết đều đúng chính tả."
   - type: example
     target: Die Moderatorin fragte die Expertin, wie sie die Lage einschätze.
     target_lang: de
@@ -230,7 +230,7 @@ exercises:
     answer:
       blanks:
         b1: [besitze]
-        b2: [dazu]
+        b2: [dazu, hierzu]
         b3: [sich]
     known_wrong:
       - answer: besitzt
@@ -262,6 +262,8 @@ exercises:
         - Wie schätzen Sie die Situation ein?
         - Wie schätzen Sie die aktuelle Lage ein?
         - Wie schätzen Sie die aktuelle Situation ein?
+        - Wie schätzen Sie die derzeitige Lage ein?
+        - Wie schätzen Sie die derzeitige Situation ein?
     known_wrong:
       - answer: Wie einschätzen Sie die Lage?
         feedback_vi: "einschätzen là động từ tách: schätzen ở vị trí 2, ein ở cuối câu."
@@ -291,6 +293,8 @@ exercises:
         - Entscheidend ist, ob die Einwohner das Projekt unterstützen.
         - Entscheidend ist, ob die Bevölkerung das Projekt unterstützt.
         - Entscheidend ist, ob die Leute das Projekt unterstützen.
+        - Entscheidend ist, ob die Bürger das Projekt unterstützen oder nicht.
+        - Entscheidend ist, ob die Menschen das Projekt unterstützen oder nicht.
     known_wrong:
       - answer: Entscheidend ist, ob die Bürger unterstützen das Projekt.
         feedback_vi: "Câu phụ ob: động từ chia unterstützen đứng cuối."
