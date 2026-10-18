@@ -61,7 +61,7 @@ body:
       vi: "Một lời khiếu nại có tác dụng gồm bốn phần: sự việc (Am 3. Oktober habe ich … bestellt), vấn đề (Leider kam das Gerät beschädigt an), yêu cầu cụ thể kèm thời hạn (Ich fordere Sie auf, … bis zum … zu …) và bước tiếp theo nếu không được giải quyết (Andernfalls sehe ich mich gezwungen, …). Thiếu yêu cầu hoặc thời hạn là lỗi người Việt hay mắc: người nhận sẽ không biết bạn muốn gì."
   - type: explain
     text:
-      vi: "Câu mở đầu cố định: Hiermit möchte ich mich über … (Akk) beschweren (bằng thư này tôi muốn khiếu nại về …). Ich gehe davon aus, dass … (tôi tin chắc rằng …) nói lên điều bạn coi là đương nhiên: Ich gehe davon aus, dass Sie die Versandkosten übernehmen. Ich fordere Sie auf, … zu … là yêu cầu dứt khoát, mạnh hơn Ich bitte Sie, … zu …"
+      vi: "Câu mở đầu cố định: Hiermit möchte ich mich über … (Akk) beschweren (bằng thư này tôi muốn khiếu nại về …). Ich gehe davon aus, dass … (tôi cho rằng …, tôi mặc định là …) nói lên điều bạn coi là đương nhiên: Ich gehe davon aus, dass Sie die Versandkosten übernehmen. Ich fordere Sie auf, … zu … là yêu cầu dứt khoát, mạnh hơn Ich bitte Sie, … zu …"
   - type: explain
     text:
       vi: "Giọng văn: kiên quyết nhưng lịch sự. Quá gay gắt (Das ist eine Frechheit! Sie sind Betrüger!) làm thư mất uy tín; quá rụt rè (Vielleicht könnten Sie eventuell mal nachsehen?) thì không ai làm gì cả. Konjunktiv II làm lời đề nghị mềm mà vẫn rõ: Ich wäre Ihnen dankbar, wenn Sie mir bis Freitag antworten könnten."
@@ -96,7 +96,7 @@ body:
     target: Ich gehe davon aus, dass Sie die Kosten für die Rücksendung übernehmen.
     target_lang: de
     translation:
-      vi: Tôi tin chắc rằng quý công ty sẽ chịu chi phí gửi trả hàng.
+      vi: Tôi cho rằng quý công ty sẽ chịu chi phí gửi trả hàng.
     note:
       vi: "davon ausgehen, dass … = coi là đương nhiên. davon là từ báo trước cho câu dass."
   - type: example
@@ -107,10 +107,10 @@ body:
     note:
       vi: "Nêu bước tiếp theo một cách bình tĩnh, không đe doạ. sich gezwungen sehen, … zu … = thấy mình buộc phải."
   - type: example
-    target: Das Paket hätte schon vor zwei Wochen ankommen sollen. Trotzdem wurde der Betrag abgebucht, ohne dass ich die Ware erhalten habe.
+    target: Das Paket hätte schon vor zwei Wochen ankommen sollen. Außerdem wurde der Betrag bereits abgebucht, ohne dass ich die Ware erhalten habe.
     target_lang: de
     translation:
-      vi: Lẽ ra gói hàng phải đến từ hai tuần trước. Vậy mà tiền đã bị trừ, dù tôi chưa nhận được hàng.
+      vi: Lẽ ra gói hàng phải đến từ hai tuần trước. Hơn nữa, tiền đã bị trừ mà tôi chưa nhận được hàng.
     note:
       vi: "hätte … sollen (ôn B2U06) = lẽ ra phải; ohne dass + câu phụ (ôn B2U06) = mà không …"
   - type: example
@@ -121,10 +121,10 @@ body:
     note:
       vi: "Điều kiện không thật ở quá khứ, bỏ wenn (ôn B2U06 + bài 2); nguyên thể bị động informiert zu werden (ôn B2U07)."
   - type: example
-    target: Laut Vertrag haben Sie die Reparatur innerhalb von zwei Wochen durchzuführen. Ich wäre Ihnen dankbar, wenn Sie mir bis Freitag einen Termin nennen könnten.
+    target: Laut Vertrag haben Sie die Reparatur innerhalb der vereinbarten Frist durchzuführen. Ich wäre Ihnen dankbar, wenn Sie mir bis Freitag einen Termin nennen könnten.
     target_lang: de
     translation:
-      vi: Theo hợp đồng, quý công ty phải tiến hành sửa chữa trong vòng hai tuần. Tôi sẽ rất cảm ơn nếu quý công ty có thể cho tôi một lịch hẹn trước thứ Sáu.
+      vi: Theo hợp đồng, quý công ty phải tiến hành sửa chữa trong thời hạn đã thoả thuận. Tôi sẽ rất cảm ơn nếu quý công ty có thể cho tôi một lịch hẹn trước thứ Sáu.
     note:
       vi: "haben + zu (ôn B2U02) = müssen, giọng văn bản; Ich wäre Ihnen dankbar, wenn … (ôn B1U10) làm lời yêu cầu lịch sự."
   - type: example
@@ -226,7 +226,7 @@ exercises:
     answer:
       correct_option_id: f5a
     explanation:
-      vi: "Ich gehe davon aus, dass … ersetzt wird = tôi tin chắc máy sẽ được thay thế; bis Freitag = chậm nhất thứ Sáu; Andernfalls sehe ich mich gezwungen, … = nếu không, tôi buộc phải …"
+      vi: "Ich gehe davon aus, dass … ersetzt wird = tôi cho rằng (đương nhiên) máy sẽ được thay thế; bis Freitag = chậm nhất thứ Sáu; Andernfalls sehe ich mich gezwungen, … = nếu không, tôi buộc phải …"
     display_answer: "Khách mong máy được thay thế trước thứ Sáu; nếu không, sẽ liên hệ trung tâm tư vấn người tiêu dùng."
 
   - key: de:exercise:b2u09l4-mcq-ton

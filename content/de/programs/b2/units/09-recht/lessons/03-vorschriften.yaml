@@ -66,19 +66,19 @@ body:
       vi: "Sau bài này, bạn đọc được nội quy như \"Gemäß der Hausordnung ist das Grillen auf dem Balkon untersagt.\" và nói được về việc sống chung: \"Im Haus nehmen alle Rücksicht aufeinander.\""
   - type: explain
     text:
-      vi: "gemäß (theo, đúng với) và entsprechend (phù hợp với, theo) là hai giới từ của văn bản quy định, đi với Dativ: gemäß der Vorschrift, entsprechend Ihrem Wunsch. Cả hai có thể đứng sau danh từ mà nghĩa không đổi: der Vorschrift gemäß, Ihrem Wunsch entsprechend. Khi nói hằng ngày, người ta thường dùng nach hoặc wie … steht."
+      vi: "gemäß (theo, đúng với) và entsprechend (phù hợp với, theo) là hai giới từ của văn bản quy định, đi với Dativ: gemäß der Vorschrift, entsprechend Ihrem Wunsch. Cả hai có thể đứng sau danh từ mà nghĩa không đổi (der Vorschrift gemäß, Ihrem Wunsch entsprechend); khi nói hằng ngày, người ta thường dùng nach, laut hoặc wie … steht."
   - type: explain
     text:
-      vi: "entgegen + Dativ nghĩa là \"trái với\": entgegen der Vereinbarung (trái với thoả thuận), và thường đứng trước danh từ. gegenüber + Dativ vừa chỉ vị trí \"đối diện\" (gegenüber dem Rathaus / dem Rathaus gegenüber), vừa chỉ thái độ \"đối với\" (Er ist mir gegenüber höflich). Với đại từ nhân xưng, gegenüber đứng sau: mir gegenüber, ihr gegenüber."
+      vi: "entgegen + Dativ nghĩa là \"trái với\": entgegen der Vereinbarung (trái với thoả thuận), và thường đứng trước danh từ. gegenüber + Dativ vừa chỉ vị trí \"đối diện\" (gegenüber dem Rathaus / dem Rathaus gegenüber), vừa chỉ thái độ \"đối với\" (Er ist mir gegenüber höflich). Với đại từ nhân xưng, gegenüber hầu như luôn đứng sau: mir gegenüber, ihr gegenüber."
   - type: explain
     text:
       vi: "Hãy để ý giống của danh từ để chia mạo từ Dativ đúng: die Vorschrift → gemäß der Vorschrift; der Vertrag → gemäß dem Vertrag. Đừng nhầm với nhóm giới từ Genitiv trang trọng (aufgrund, bezüglich, infolge – B2U02): \"gemäß des Vertrags\" bị coi là sai trong văn viết chuẩn."
   - type: explain
     text:
-      vi: "einander nghĩa là \"lẫn nhau\", không bao giờ đổi dạng: Die Nachbarn helfen einander. Đi với giới từ thì viết liền: miteinander (với nhau), voneinander (từ nhau), aufeinander (đến nhau), füreinander (vì nhau). Tiếng Việt chỉ cần \"nhau\", còn tiếng Đức lấy đúng giới từ mà động từ đòi hỏi: Rücksicht nehmen auf → aufeinander Rücksicht nehmen."
+      vi: "einander nghĩa là \"lẫn nhau\", không bao giờ đổi dạng: Die Nachbarn helfen einander. Đi với giới từ thì viết liền: miteinander (với nhau), voneinander (từ nhau), aufeinander (đến nhau), füreinander (vì nhau); tiếng Việt chỉ cần \"nhau\", còn tiếng Đức lấy đúng giới từ mà động từ đòi hỏi: Rücksicht nehmen auf → aufeinander Rücksicht nehmen."
   - type: deep_explain
     text:
-      vi: "Trong lời nói hằng ngày, sich gegenseitig thông dụng hơn einander: Sie helfen sich gegenseitig. Chỉ dùng sich thì có thể hiểu hai cách (Sie waschen sich = tự rửa hoặc rửa cho nhau), nên gegenseitig/einander làm rõ nghĩa. Ở B2U04 bạn đã gặp laut và zufolge để dẫn nguồn: laut Vertrag (laut thường đi với Dativ, đôi khi Genitiv), dem Bericht zufolge (zufolge đứng sau danh từ, Dativ). Nội quy trong bài là hư cấu; nội quy thật mỗi toà nhà một khác, và đây chỉ là bài luyện ngôn ngữ, không phải tư vấn pháp lý."
+      vi: "Trong lời nói hằng ngày, sich gegenseitig thông dụng hơn einander: Sie helfen sich gegenseitig. Chỉ dùng sich thì có thể hiểu hai cách (Sie waschen sich = tự rửa hoặc rửa cho nhau), nên gegenseitig/einander làm rõ nghĩa. Ở B2U04 bạn đã gặp laut và zufolge để dẫn nguồn: laut Vertrag (laut + Dativ hoặc Genitiv), dem Bericht zufolge (zufolge đứng sau danh từ, Dativ). Nội quy trong bài là hư cấu; nội quy thật mỗi toà nhà một khác, và đây chỉ là bài luyện ngôn ngữ, không phải tư vấn pháp lý."
   - type: example
     target: Gemäß der Hausordnung ist das Grillen auf dem Balkon untersagt.
     target_lang: de
@@ -90,7 +90,7 @@ body:
     target: Ihrem Wunsch entsprechend haben wir den Vertrag verlängert.
     target_lang: de
     translation:
-      vi: Theo mong muốn của ông/bà, chúng tôi đã gia hạn hợp đồng.
+      vi: Theo mong muốn của quý khách, chúng tôi đã gia hạn hợp đồng.
     note:
       vi: "entsprechend đứng sau danh từ, vẫn Dativ: Ihrem Wunsch. Cũng nói được: Entsprechend Ihrem Wunsch …"
   - type: example
@@ -111,7 +111,7 @@ body:
     target: In unserem Haus helfen die Nachbarn einander und nehmen Rücksicht aufeinander.
     target_lang: de
     translation:
-      vi: Trong toà nhà của chúng tôi, hàng xóm giúp đỡ nhau và biết nhường nhịn nhau.
+      vi: Trong toà nhà của chúng tôi, hàng xóm giúp đỡ nhau và biết nghĩ cho nhau.
     note:
       vi: "helfen + Dativ → einander; Rücksicht nehmen auf (ôn B1U09) → aufeinander (viết liền)."
   - type: example
@@ -164,7 +164,7 @@ body:
     points:
       - vi: "gemäß, entsprechend, gegenüber, entgegen + Dativ."
       - vi: "Đứng trước hoặc sau danh từ: gemäß der Vorschrift / der Vorschrift gemäß; entgegen thường đứng trước."
-      - vi: "gegenüber + đại từ: luôn đứng sau (mir gegenüber); nghĩa đối diện hoặc đối với."
+      - vi: "gegenüber + đại từ: hầu như luôn đứng sau (mir gegenüber); nghĩa đối diện hoặc đối với."
       - vi: "einander = lẫn nhau, không đổi dạng; giới từ + einander viết liền: miteinander, aufeinander."
       - vi: "Nói hằng ngày: sich gegenseitig; không dùng sich + einander cùng lúc."
       - vi: "Từ vựng: die Vorschrift, die Regel, die Verordnung, zulässig, untersagen, der Verstoß, verstoßen gegen, das Bußgeld."
@@ -324,6 +324,10 @@ exercises:
         - Das Rauchen im Treppenhaus ist gemäß der Hausordnung untersagt.
         - Im Treppenhaus ist das Rauchen gemäß der Hausordnung untersagt.
         - Gemäß der Hausordnung ist im Treppenhaus das Rauchen untersagt.
+        - Der Hausordnung gemäß ist Rauchen im Treppenhaus untersagt.
+        - Rauchen ist gemäß der Hausordnung im Treppenhaus untersagt.
+        - Im Treppenhaus ist das Rauchen der Hausordnung gemäß untersagt.
+        - Das Rauchen im Treppenhaus ist der Hausordnung gemäß untersagt.
     known_wrong:
       - answer: Gemäß die Hausordnung ist das Rauchen im Treppenhaus untersagt.
         feedback_vi: "gemäß + Dativ: die Hausordnung → der Hausordnung."
@@ -346,7 +350,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u09-g-einander
     prompt:
-      instruction: "Sắp xếp thành câu: \"Những người thuê nhà nên nhường nhịn nhau nhiều hơn.\""
+      instruction: "Sắp xếp thành câu: \"Những người thuê nhà nên biết nghĩ cho nhau nhiều hơn.\""
       tokens:
         - { id: r-nehmen, text: nehmen }
         - { id: r-mieter, text: Mieter }
@@ -361,7 +365,7 @@ exercises:
         - [r-die, r-mieter, r-sollten, r-aufeinander, r-mehr, r-ruecksicht, r-nehmen]
         - [r-die, r-mieter, r-sollten, r-mehr, r-aufeinander, r-ruecksicht, r-nehmen]
     explanation:
-      vi: "Modal sollten ở vị trí 2, nguyên thể nehmen ở cuối. Rücksicht nehmen auf → aufeinander (viết liền); aufeinander có thể đứng trước hoặc sau (mehr) Rücksicht."
+      vi: "Modal sollten ở vị trí 2, nguyên thể nehmen ở cuối. Rücksicht nehmen auf → aufeinander (viết liền). Ba cách đều tự nhiên: mehr Rücksicht aufeinander nehmen, aufeinander mehr Rücksicht nehmen, mehr aufeinander Rücksicht nehmen (mehr bổ nghĩa cho cả cụm)."
     display_answer: Die Mieter sollten mehr Rücksicht aufeinander nehmen.
 
   - key: de:exercise:b2u09l3-tr-helfen-einander

@@ -423,7 +423,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Trong văn bản trang trọng, bạn có thể bỏ wenn và đưa động từ chia lên đầu câu điều kiện: Liegt ein Schaden vor, … (= Wenn ein Schaden vorliegt, …). Câu chính theo sau mở đầu bằng động từ, hoặc bằng so/dann rồi đến động từ. Sollte/Sollten ở đầu câu nghĩa là \"nếu như, trong trường hợp\" và cho thấy khả năng không cao: Sollten Sie Fragen haben, …"
+        vi: "Trong văn bản trang trọng, bạn có thể bỏ wenn và đưa động từ chia lên đầu câu điều kiện: Liegt ein Schaden vor, … (= Wenn ein Schaden vorliegt, …). Câu chính theo sau mở đầu bằng động từ, hoặc bằng so/dann rồi đến động từ. Sollte/Sollten ở đầu câu nghĩa là \"nếu như, trong trường hợp\" và cho thấy người viết không chắc điều đó sẽ xảy ra: Sollten Sie Fragen haben, …"
       examples:
         - target: Sollten Sie Fragen haben, wenden Sie sich bitte an unseren Kundendienst.
           translation:
@@ -433,7 +433,7 @@ items:
             vi: Nếu không có sự đồng ý, hợp đồng sẽ không được gia hạn.
         - target: Hätte ich eine Versicherung, müsste ich den Schaden nicht selbst bezahlen.
           translation:
-            vi: Nếu có bảo hiểm thì tôi đã không phải tự trả tiền thiệt hại.
+            vi: Nếu có bảo hiểm thì tôi không phải tự trả tiền thiệt hại.
       confusion:
         vi: "Đừng đọc nhầm thành câu hỏi: sau vế có động từ đứng đầu là dấu phẩy và một câu chính, không có dấu hỏi. Haben Sie Fragen? (câu hỏi) ≠ Haben Sie Fragen, rufen Sie uns an. (= nếu có câu hỏi …)."
 
@@ -540,7 +540,7 @@ items:
           translation:
             vi: Công ty chịu trách nhiệm về lỗi của sản phẩm.
       confusion:
-        vi: "haften còn có nghĩa \"dính\": Der Aufkleber haftet gut. Nghĩa pháp lý luôn đi với für + Akkusativ."
+        vi: "haften còn có nghĩa \"dính\": Der Aufkleber haftet gut. Nghĩa pháp lý thường đi với für + Akkusativ (haften für den Schaden)."
 
   - key: de:item:b2u09-versicherung
     type: vocab
@@ -751,7 +751,7 @@ items:
           translation:
             vi: Chúng tôi chưa nhận được giấy tờ nào.
       confusion:
-        vi: "Động từ tách: Es liegt kein Grund vor. Perfekt ở miền Bắc nước Đức thường là hat vorgelegen; miền Nam và Áo hay dùng ist vorgelegen."
+        vi: "Động từ tách: Es liegt kein Grund vor. Perfekt chuẩn là hat vorgelegen; ở miền Nam nước Đức, Áo và Thuỵ Sĩ cũng gặp ist vorgelegen."
 
   - key: de:item:b2u09-einverstaendnis
     type: vocab
@@ -827,7 +827,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "gemäß (theo, đúng với), entsprechend (phù hợp với, theo), entgegen (trái với) và gegenüber (đối diện; đối với) đi với Dativ. gemäß, entsprechend, gegenüber đứng được trước hoặc sau danh từ (gemäß der Vorschrift / der Vorschrift gemäß); entgegen thường đứng trước; với đại từ nhân xưng, gegenüber đứng sau (mir gegenüber). Đây là giới từ của văn bản hành chính; khi nói chuyện hằng ngày người ta hay dùng nach hoặc wie … steht."
+        vi: "gemäß (theo, đúng với), entsprechend (phù hợp với, theo), entgegen (trái với) và gegenüber (đối diện; đối với) đi với Dativ. gemäß, entsprechend, gegenüber đứng được trước hoặc sau danh từ (gemäß der Vorschrift / der Vorschrift gemäß); entgegen thường đứng trước; với đại từ nhân xưng, gegenüber hầu như luôn đứng sau (mir gegenüber). Đây là giới từ của văn bản hành chính; khi nói chuyện hằng ngày người ta hay dùng nach hoặc wie … steht."
       examples:
         - target: Gemäß der Hausordnung ist das Grillen auf dem Balkon untersagt.
           translation:
@@ -861,7 +861,7 @@ items:
             vi: Chúng ta nên nói chuyện với nhau nhiều hơn.
         - target: In einem Mehrfamilienhaus muss man aufeinander Rücksicht nehmen.
           translation:
-            vi: Trong một toà nhà nhiều hộ, mọi người phải biết nhường nhịn nhau.
+            vi: Trong một toà nhà nhiều hộ, mọi người phải biết nghĩ cho nhau.
       confusion:
         vi: "Viết liền: miteinander (không viết \"mit einander\"). mit sich reden = tự nói với mình, khác miteinander reden = nói chuyện với nhau."
 
@@ -1001,7 +1001,7 @@ items:
       pos: động từ
     back:
       meaning:
-        vi: vi phạm
+        vi: vi phạm (gegen + Akk)
       examples:
         - target: Wer gegen die Regeln verstößt, muss mit Konsequenzen rechnen.
           translation:
@@ -1010,7 +1010,7 @@ items:
           translation:
             vi: Như vậy là anh/chị đã vi phạm hợp đồng thuê nhà.
       confusion:
-        vi: "Không tách; Partizip giống nguyên thể: hat verstoßen. Luôn đi với gegen + Akkusativ."
+        vi: "Không tách; Partizip giống nguyên thể: hat verstoßen. Nghĩa \"vi phạm\" luôn đi với gegen + Akkusativ (jemanden verstoßen = ruồng bỏ ai, nghĩa khác)."
 
   - key: de:item:b2u09-bussgeld
     type: vocab
@@ -1213,7 +1213,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Thư khiếu nại trang trọng thường đi theo thứ tự: sự việc (Am 3. Mai habe ich … bestellt), vấn đề, yêu cầu cụ thể kèm thời hạn (Ich fordere Sie auf, … bis zum … zu …) và bước tiếp theo nếu không được giải quyết (Andernfalls sehe ich mich gezwungen, …). Giọng văn kiên quyết nhưng lịch sự: Konjunktiv II làm lời yêu cầu mềm hơn (Ich wäre Ihnen dankbar, wenn …), còn lời lẽ gay gắt (Das ist eine Frechheit!) làm thư mất tác dụng. Ich gehe davon aus, dass … (tôi tin chắc rằng …) cho thấy bạn mong đợi một cách đương nhiên."
+        vi: "Thư khiếu nại trang trọng thường đi theo thứ tự: sự việc (Am 3. Mai habe ich … bestellt), vấn đề, yêu cầu cụ thể kèm thời hạn (Ich fordere Sie auf, … bis zum … zu …) và bước tiếp theo nếu không được giải quyết (Andernfalls sehe ich mich gezwungen, …). Giọng văn kiên quyết nhưng lịch sự: Konjunktiv II làm lời yêu cầu mềm hơn (Ich wäre Ihnen dankbar, wenn …), còn lời lẽ gay gắt (Das ist eine Frechheit!) làm thư mất tác dụng. Ich gehe davon aus, dass … (tôi cho rằng …) cho thấy bạn coi điều đó là đương nhiên."
       examples:
         - target: Hiermit möchte ich mich über die mangelhafte Reparatur beschweren.
           translation:
@@ -1416,7 +1416,7 @@ items:
           translation:
             vi: Việc sửa chữa được làm kém chất lượng.
       confusion:
-        vi: "Ở trường học Đức, mangelhaft còn là điểm 5 (kém, không đạt) trong thang điểm 1–6."
+        vi: "Trong mua bán, mangelhaft = hàng có khuyết tật (der Mangel). Ở trường học Đức, mangelhaft còn là điểm 5 (không đạt) trong thang 1–6 (1 sehr gut … 5 mangelhaft, 6 ungenügend); đừng nhầm hai nghĩa."
 
   - key: de:item:b2u09-beschaedigt
     type: vocab
@@ -1542,7 +1542,7 @@ items:
           translation:
             vi: Trung tâm tư vấn người tiêu dùng đã tư vấn cho tôi rất tốt.
       confusion:
-        vi: "Mỗi bang ở Đức có một trung tâm như vậy; dịch vụ tư vấn có thể mất phí, nên hỏi trước."
+        vi: "Ở Đức, mỗi bang có một Verbraucherzentrale riêng; dịch vụ và chi phí tư vấn có thể khác nhau và thay đổi, nên hỏi trước."
 
   - key: de:item:b2u09-unverzueglich
     type: vocab

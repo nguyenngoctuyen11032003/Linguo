@@ -68,7 +68,7 @@ body:
       vi: "Sau bài này, bạn viết được một thư khiếu nại khoảng 100 từ cho kiểu bài Goethe B2 Schreiben Teil 2 và đọc được nội quy, điều kiện hợp đồng để tìm thông tin đúng."
   - type: explain
     text:
-      vi: "Đề viết B2 Teil 2 thường cho một tình huống (hàng lỗi, dịch vụ kém, chỗ ở có vấn đề) và vài ý phải trả lời. Hãy viết đủ mọi ý, theo thứ tự: Betreff → Sehr geehrte Damen und Herren, → sự việc → vấn đề → yêu cầu + thời hạn → bước tiếp theo → Mit freundlichen Grüßen. Khoảng 100 từ là đủ; ít ý mà rõ tốt hơn nhiều ý mà lan man."
+      vi: "Đề viết B2 Teil 2 cho một tình huống cần viết thư/tin nhắn trang trọng khoảng 100 từ và vài ý phải trả lời; khiếu nại là một tình huống luyện tập tốt (định dạng đề có thể thay đổi, hãy xem đề mẫu mới nhất). Hãy viết đủ mọi ý, theo thứ tự: Betreff → Sehr geehrte Damen und Herren, → sự việc → vấn đề → yêu cầu + thời hạn → bước tiếp theo → Mit freundlichen Grüßen. Khoảng 100 từ là đủ; ít ý mà rõ tốt hơn nhiều ý mà lan man."
   - type: explain
     text:
       vi: "Ngôn ngữ \"ghi điểm\" trong bài này: Hiermit möchte ich mich über … beschweren; Ich fordere Sie auf, … bis zum … zu …; Ich gehe davon aus, dass …; Sollte ich bis dahin nichts von Ihnen hören, …; Andernfalls sehe ich mich gezwungen, … Cuối thư có thể thêm Ich wäre Ihnen für eine schnelle Antwort dankbar."
@@ -77,7 +77,7 @@ body:
       vi: "Khi đọc nội quy hay điều kiện hợp đồng, hãy tìm dấu hiệu: động từ đứng đầu + dấu phẩy = điều kiện (Sollten Gäste übernachten wollen, …); sein + zu = phải (ist … zu melden); gemäß/entsprechend = theo quy định. Câu hỏi richtig/falsch thường diễn đạt lại bằng từ khác, ví dụ ohne Erlaubnis thay cho ohne Zustimmung."
   - type: deep_explain
     text:
-      vi: "Trong bài thi, giám khảo thường chấm cả việc hoàn thành nhiệm vụ, sự mạch lạc, vốn từ và ngữ pháp, và cả giọng văn phù hợp với người nhận (theo hiểu biết của người soạn, cần đối chiếu quy chế thi hiện hành của Goethe-Institut). Viết hoa Sie/Ihnen/Ihr ở ngôi lịch sự trong cả bức thư, và sau lời chào có dấu phẩy thì chữ đầu dòng sau viết thường (am 3. Oktober …). Mọi tình huống và thư trong bài là hư cấu; đây là bài luyện ngôn ngữ, không phải tư vấn pháp lý."
+      vi: "Trong bài thi, giám khảo thường chấm cả việc hoàn thành nhiệm vụ, sự mạch lạc, vốn từ và ngữ pháp, và cả giọng văn phù hợp với người nhận (theo hiểu biết của người soạn, cần đối chiếu quy chế thi hiện hành của Goethe-Institut). Viết hoa Sie/Ihnen/Ihr ở ngôi lịch sự trong cả bức thư; sau lời chào có dấu phẩy thì chữ đầu dòng sau viết thường (am 3. Oktober …); sau Mit freundlichen Grüßen không có dấu phẩy, xuống dòng rồi ký họ tên. Mọi tình huống và thư trong bài là hư cấu; đây là bài luyện ngôn ngữ, không phải tư vấn pháp lý."
   - type: example
     target: "Betreff: Reklamation, Bestellnummer 48213"
     target_lang: de
@@ -103,15 +103,15 @@ body:
     target: Ich gehe davon aus, dass Sie die Kosten für die Rücksendung übernehmen. Sollte ich bis dahin nichts von Ihnen hören, sehe ich mich gezwungen, mich an die Verbraucherzentrale zu wenden. Eine Kopie des Kaufbelegs finden Sie im Anhang.
     target_lang: de
     translation:
-      vi: Tôi tin chắc Quý công ty sẽ chịu chi phí gửi trả hàng. Nếu đến lúc đó tôi không nhận được hồi âm, tôi buộc phải liên hệ trung tâm tư vấn người tiêu dùng. Bản sao hoá đơn mua hàng có trong tệp đính kèm.
+      vi: Tôi cho rằng Quý công ty sẽ chịu chi phí gửi trả hàng. Nếu đến lúc đó tôi không nhận được hồi âm, tôi buộc phải liên hệ trung tâm tư vấn người tiêu dùng. Bản sao hoá đơn mua hàng có trong tệp đính kèm.
     note:
-      vi: "Điều kiện không có wenn (Sollte ich …) + bước tiếp theo; cuối thư: Mit freundlichen Grüßen và họ tên."
+      vi: "Điều kiện không có wenn (Sollte ich …) + bước tiếp theo; cuối thư: Mit freundlichen Grüßen (không có dấu phẩy), xuống dòng, họ tên."
   - type: common_mistake
     wrong: Ich bitte Sie, das Problem irgendwann zu lösen.
     right: Ich bitte Sie, das Problem bis zum 15. November zu lösen.
     target_lang: de
     note:
-      vi: "Thiếu thời hạn cụ thể thì yêu cầu không có sức nặng; luôn ghi ngày."
+      vi: "Thiếu thời hạn cụ thể thì yêu cầu không có sức nặng; nên ghi rõ ngày."
   - type: common_mistake
     wrong: Sollten Sie nicht antworten, ich wende mich an die Verbraucherzentrale.
     right: Sollten Sie nicht antworten, wende ich mich an die Verbraucherzentrale.
@@ -176,7 +176,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u09-erstatten
     prompt:
-      stem: "Antwort eines Online-Shops (fiktiv): Sehr geehrte Frau Tran, wir bedauern sehr, dass Ihr Staubsauger beschädigt bei Ihnen angekommen ist. Selbstverständlich erstatten wir Ihnen die Kosten für die Rücksendung. Ein Ersatzgerät wird innerhalb von fünf Werktagen geliefert. Aus Kulanz erhalten Sie zusätzlich einen Gutschein über zwanzig Euro. Mit freundlichen Grüßen, Ihr Kundendienst — Richtig oder falsch? Frau Tran bekommt den Kaufpreis für den Staubsauger zurück."
+      stem: "Antwort eines Online-Shops (fiktiv): Sehr geehrte Frau Tran, wir bedauern sehr, dass Ihr Staubsauger beschädigt bei Ihnen angekommen ist. Selbstverständlich erstatten wir Ihnen die Kosten für die Rücksendung. Ein Ersatzgerät wird innerhalb von fünf Werktagen geliefert. Aus Kulanz erhalten Sie zusätzlich einen Gutschein über zwanzig Euro. Ihr Kundendienst — Richtig oder falsch? Frau Tran bekommt den Kaufpreis für den Staubsauger zurück."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -194,7 +194,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u09-kulanz
     prompt:
-      stem: "Antwort eines Online-Shops (fiktiv): Sehr geehrte Frau Tran, wir bedauern sehr, dass Ihr Staubsauger beschädigt bei Ihnen angekommen ist. Selbstverständlich erstatten wir Ihnen die Kosten für die Rücksendung. Ein Ersatzgerät wird innerhalb von fünf Werktagen geliefert. Aus Kulanz erhalten Sie zusätzlich einen Gutschein über zwanzig Euro. Mit freundlichen Grüßen, Ihr Kundendienst — Warum bekommt Frau Tran den Gutschein?"
+      stem: "Antwort eines Online-Shops (fiktiv): Sehr geehrte Frau Tran, wir bedauern sehr, dass Ihr Staubsauger beschädigt bei Ihnen angekommen ist. Selbstverständlich erstatten wir Ihnen die Kosten für die Rücksendung. Ein Ersatzgerät wird innerhalb von fünf Werktagen geliefert. Aus Kulanz erhalten Sie zusätzlich einen Gutschein über zwanzig Euro. Ihr Kundendienst — Warum bekommt Frau Tran den Gutschein?"
       stem_lang: de
       options:
         - { id: g3a, text: "Der Shop möchte ihr freiwillig entgegenkommen.", lang: de }
@@ -319,6 +319,9 @@ exercises:
         - Der Vorschlag fand breite Anerkennung.
         - Der Vorschlag fand große Anerkennung.
         - Der Vorschlag fand viel Anerkennung.
+        - Der Vorschlag fand bei vielen Anerkennung.
+        - Der Vorschlag fand bei vielen Menschen Anerkennung.
+        - Der Vorschlag fand bei vielen Leuten Anerkennung.
     known_wrong:
       - answer: Der Vorschlag wurde Anerkennung gefunden.
         feedback_vi: Anerkennung finden đã mang nghĩa bị động, không thêm werden – fand Anerkennung.
@@ -394,7 +397,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u09-g-einander
     prompt:
-      source_text: "Những người thuê nhà phải biết nhường nhịn nhau. (dùng müssen, Rücksicht nehmen, einander)"
+      source_text: "Những người thuê nhà phải biết nghĩ cho nhau. (dùng müssen, Rücksicht nehmen, einander)"
       source_lang: vi
       direction: vi_to_target
     answer:

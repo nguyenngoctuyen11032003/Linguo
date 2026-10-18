@@ -62,13 +62,13 @@ body:
       vi: "Ở B2U02 bạn đã gặp Funktionsverbgefüge: một danh từ mang nghĩa chính, còn động từ (treffen, stellen, ziehen …) gần như chỉ làm chức năng ngữ pháp: eine Entscheidung treffen = entscheiden. Bài này học những cụm có nghĩa bị động: chủ ngữ không làm gì, mà là cái được tác động. Der Vorschlag findet Anerkennung = Der Vorschlag wird anerkannt."
   - type: explain
     text:
-      vi: "Sáu cụm cần thuộc: Anerkennung finden (được công nhận), zur Sprache kommen (được nêu ra, được bàn tới), in Kraft treten (có hiệu lực), zur Anwendung kommen (được áp dụng), in Betracht kommen (được xem xét, có thể là một lựa chọn), unter Druck stehen (bị áp lực). Động từ kommen, finden, stehen, treten là dấu hiệu nghĩa bị động; cụm chủ động tương ứng dùng bringen, setzen, ziehen: ein Thema zur Sprache bringen, jemanden unter Druck setzen, etwas in Betracht ziehen."
+      vi: "Sáu cụm cần thuộc: Anerkennung finden (được công nhận), zur Sprache kommen (được nêu ra, được bàn tới), in Kraft treten (có hiệu lực), zur Anwendung kommen (được áp dụng), in Betracht kommen (được xem xét, có thể là một lựa chọn), unter Druck stehen (bị áp lực). Động từ kommen, finden, stehen, treten thường là dấu hiệu nghĩa bị động; cụm chủ động tương ứng dùng bringen, setzen, ziehen: ein Thema zur Sprache bringen, jemanden unter Druck setzen, etwas in Betracht ziehen."
   - type: explain
     text:
       vi: "Tiếng Việt nói \"được công nhận\", \"được áp dụng\" nên người Việt hay thêm werden vào cụm: \"wird Anerkennung gefunden\" là sai. Cụm đã mang nghĩa bị động rồi, bạn chỉ chia động từ chức năng: Die Methode findet Anerkennung. Giới từ và mạo từ cố định, không đổi: zur (= zu der) Sprache, zur Anwendung, in Kraft, in Betracht, unter Druck."
   - type: explain
     text:
-      vi: "Các cụm này chia như động từ thường: Das Gesetz trat 2020 in Kraft (Präteritum), Das Gesetz ist in Kraft getreten (Perfekt với sein vì treten chỉ sự chuyển trạng thái). kommen cũng dùng sein: Das Thema ist zur Sprache gekommen; finden và stehen dùng haben."
+      vi: "Các cụm này chia như động từ thường: Das Gesetz trat 2020 in Kraft (Präteritum), Das Gesetz ist in Kraft getreten (Perfekt với sein vì treten chỉ sự chuyển trạng thái). kommen cũng dùng sein: Das Thema ist zur Sprache gekommen; finden và stehen dùng haben (riêng stehen ở miền Nam nước Đức và Áo thường dùng sein: ist unter Druck gestanden)."
   - type: deep_explain
     text:
       vi: "Một số cụm khác cùng kiểu: zum Abschluss kommen (được kết thúc), Verwendung finden (được sử dụng), Beachtung finden (được chú ý), zur Diskussion stehen (đang được thảo luận). Nominalstil (B2U01) thích những cụm này vì chúng biến hành động thành danh từ: Seit dem Inkrafttreten des Gesetzes … (từ khi luật có hiệu lực). Về nội dung: bài này chỉ luyện ngôn ngữ, không phải tư vấn pháp lý; các vụ án, tên người, tên thành phố trong bài là hư cấu và quy định thật có thể thay đổi."
@@ -127,7 +127,7 @@ body:
     translation:
       vi: Nhân chứng đã phải bị thẩm vấn nhiều lần. Do thiếu bằng chứng, cuối cùng bị cáo được tuyên vô tội.
     note:
-      vi: "musste … befragt werden = bị động với modal ở quá khứ (ôn B2U03); aufgrund + Genitiv nêu nguyên nhân (ôn B2U07)."
+      vi: "musste … befragt werden = bị động với modal ở quá khứ (ôn B2U03); aufgrund + Genitiv nêu nguyên nhân (giới từ Genitiv trang trọng, ôn B2U02)."
   - type: example
     target: Seit dem Inkrafttreten des Gesetzes gibt es deutlich weniger Klagen.
     target_lang: de

@@ -67,7 +67,7 @@ body:
       vi: "Vế điều kiện đứng đầu chiếm vị trí 1, nên câu chính tiếp theo bắt đầu ngay bằng động từ: Liegt ein Schaden vor, zahlt die Versicherung. Bạn có thể thêm so hoặc dann để nối, rồi mới đến động từ: …, so zahlt die Versicherung. Đừng đặt chủ ngữ ngay sau dấu phẩy (\"…, die Versicherung zahlt\" là sai)."
   - type: explain
     text:
-      vi: "Sollte/Sollten ở đầu câu không có nghĩa \"nên\": đây là Konjunktiv II của sollen, nghĩa là \"nếu như, trong trường hợp\", cho thấy người viết nghĩ điều đó ít khi xảy ra: Sollten Sie Fragen haben, … Với điều kiện không có thật, bạn đã quen kiểu Hätte ich …, würde ich … (B1U04): Wäre der Vertrag klarer, gäbe es keinen Streit."
+      vi: "Sollte/Sollten ở đầu câu không có nghĩa \"nên\": đây là Konjunktiv II của sollen, nghĩa là \"nếu như, trong trường hợp\", cho thấy người viết không chắc điều đó sẽ xảy ra: Sollten Sie Fragen haben, … Với điều kiện không có thật, bạn đã quen kiểu Hätte ich …, würde ich … (B1U04): Wäre der Vertrag klarer, gäbe es keinen Streit."
   - type: explain
     text:
       vi: "Câu bắt đầu bằng động từ cũng có thể là câu hỏi, nên hãy nhìn dấu câu: Haben Sie Fragen? là câu hỏi; Haben Sie Fragen, rufen Sie uns an. là điều kiện, vì sau dấu phẩy là một câu chính. Khi đọc điều khoản dài, hãy tìm dấu phẩy và động từ thứ hai."
@@ -113,7 +113,7 @@ body:
     target: Hätte ich eine Versicherung, müsste ich den Schaden nicht selbst bezahlen.
     target_lang: de
     translation:
-      vi: Nếu có bảo hiểm thì tôi đã không phải tự trả tiền thiệt hại.
+      vi: Nếu có bảo hiểm thì tôi không phải tự trả tiền thiệt hại.
     note:
       vi: "Điều kiện không có thật (ôn B1U04): Konjunktiv II ở cả hai vế, hätte đứng đầu thay cho wenn."
   - type: example
@@ -143,11 +143,11 @@ body:
     note:
       vi: "Nghĩa \"nếu như\" cần Konjunktiv II: sollten, không phải sollen."
   - type: common_mistake
-    wrong: Liegt ein Schaden vor? Die Versicherung zahlt.
-    right: Liegt ein Schaden vor, zahlt die Versicherung.
+    wrong: Liegt ein Schaden vor, so die Versicherung zahlt.
+    right: Liegt ein Schaden vor, so zahlt die Versicherung.
     target_lang: de
     note:
-      vi: "Đây là câu điều kiện, không phải câu hỏi: dùng dấu phẩy và câu chính bắt đầu bằng động từ."
+      vi: "so (hoặc dann) chỉ là từ nối đứng ở vị trí 1 của câu chính; động từ zahlt phải theo ngay sau so, rồi mới đến chủ ngữ."
   - type: summary
     points:
       - vi: "Bỏ wenn → động từ chia lên đầu: Liegt ein Schaden vor, … = Wenn ein Schaden vorliegt, …"
@@ -205,7 +205,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u09-versicherung
     prompt:
-      stem: "Aus den Bedingungen einer Fahrradversicherung (fiktiv): Sollte ein Schaden entstehen, ist er innerhalb einer Woche schriftlich zu melden. Liegt keine Meldung vor, kann die Versicherung die Zahlung ablehnen. Reparaturen ohne vorherige Zustimmung der Versicherung werden nicht bezahlt. Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr. — Richtig oder falsch? Wenn man den Vertrag nicht kündigt, läuft er ein weiteres Jahr."
+      stem: "Aus den Bedingungen einer Fahrradversicherung (fiktiv): Sollte ein Schaden entstehen, ist er sofort schriftlich zu melden. Liegt keine Meldung vor, kann die Versicherung die Zahlung ablehnen. Reparaturen ohne vorherige Zustimmung der Versicherung werden nicht bezahlt. Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr. — Richtig oder falsch? Wenn man den Vertrag nicht kündigt, läuft er ein weiteres Jahr."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -223,7 +223,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u09-zustimmung
     prompt:
-      stem: "Aus den Bedingungen einer Fahrradversicherung (fiktiv): Sollte ein Schaden entstehen, ist er innerhalb einer Woche schriftlich zu melden. Liegt keine Meldung vor, kann die Versicherung die Zahlung ablehnen. Reparaturen ohne vorherige Zustimmung der Versicherung werden nicht bezahlt. Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr. — Richtig oder falsch? Man kann das Fahrrad reparieren lassen und die Versicherung erst danach fragen."
+      stem: "Aus den Bedingungen einer Fahrradversicherung (fiktiv): Sollte ein Schaden entstehen, ist er sofort schriftlich zu melden. Liegt keine Meldung vor, kann die Versicherung die Zahlung ablehnen. Reparaturen ohne vorherige Zustimmung der Versicherung werden nicht bezahlt. Wird der Vertrag nicht gekündigt, verlängert er sich um ein weiteres Jahr. — Richtig oder falsch? Man kann das Fahrrad reparieren lassen und die Versicherung erst danach fragen."
       stem_lang: de
       options:
         - { id: rf1, text: "Richtig", lang: de }
@@ -309,6 +309,10 @@ exercises:
         - Sollten Sie eine Frage haben, rufen Sie uns bitte an.
         - Sollten Sie eine Frage haben, so rufen Sie uns bitte an.
         - Sollten Sie noch Fragen haben, rufen Sie uns bitte an.
+        - Sollten Sie noch Fragen haben, so rufen Sie uns bitte an.
+        - Sollten Sie Fragen haben, dann rufen Sie uns an.
+        - Sollten Sie Fragen haben, so rufen Sie uns an.
+        - Sollten Sie Fragen haben, rufen Sie bitte bei uns an.
     known_wrong:
       - answer: Sollten Sie Fragen haben, Sie rufen uns bitte an.
         feedback_vi: Sau vế điều kiện, câu chính bắt đầu bằng động từ – rufen Sie uns bitte an.
@@ -331,7 +335,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u09-klausel
     prompt:
-      instruction: "Sắp xếp thành câu: \"Nếu điều khoản rõ ràng hơn thì đã không có tranh chấp.\""
+      instruction: "Sắp xếp thành câu: \"Nếu điều khoản rõ ràng hơn thì sẽ không có tranh chấp.\""
       tokens:
         - { id: k-streit, text: Streit }
         - { id: k-gaebe, text: gäbe }
