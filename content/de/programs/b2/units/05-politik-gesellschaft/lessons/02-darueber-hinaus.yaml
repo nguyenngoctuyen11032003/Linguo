@@ -65,7 +65,7 @@ body:
       vi: "Trạng từ nối (Konjunktionaladverbien) nối hai câu chính và tự chiếm vị trí 1, nên động từ chia đứng ngay sau, chủ ngữ ra sau động từ: Zudem fehlt Geld. Chúng cũng có thể đứng giữa câu, sau động từ: Es fehlt zudem Geld. Tiếng Việt \"hơn nữa, nhiều gia đình…\" giữ nguyên chủ ngữ – vị ngữ, còn tiếng Đức phải đảo."
   - type: explain
     text:
-      vi: "Bổ sung: außerdem (ngoài ra), zudem, darüber hinaus (hơn nữa), ferner (ngoài ra, rất trang trọng). Thay thế: stattdessen (thay vào đó). Nếu không làm thì: andernfalls, sonst (nếu không thì). Tương phản: hingegen (ngược lại), cùng dennoch, allerdings, folglich bạn đã học ở B2U01."
+      vi: "Bổ sung: außerdem (ngoài ra), zudem, darüber hinaus (hơn nữa), ferner (ngoài ra, rất trang trọng). Thay thế: stattdessen (thay vào đó). Nếu không làm thì: andernfalls, sonst (nếu không thì). Tương phản: hingegen (ngược lại). Bạn đã học dennoch, allerdings (tương phản) và folglich (kết quả) ở B2U01."
   - type: explain
     text:
       vi: "zumal (nhất là vì, huống hồ) là liên từ mở câu phụ, động từ đứng cuối, và thường đứng sau câu chính: Ich bin dagegen, zumal das Projekt sehr teuer ist. Nó thêm một lý do làm điều vừa nói càng thuyết phục; khi chỉ nêu nguyên nhân trung tính, dùng weil hoặc da."
@@ -74,7 +74,7 @@ body:
       vi: "immerhin (dù sao thì, ít ra) ghi nhận một điểm tích cực nhỏ và cũng đứng ở vị trí 1 hoặc giữa câu: Immerhin ist die Wahlbeteiligung gestiegen. Một đoạn lập luận B2 thường đi: luận điểm – lý do (da, zumal) – bổ sung (zudem, darüber hinaus) – tương phản (hingegen, allerdings) – kết luận (folglich)."
   - type: deep_explain
     text:
-      vi: "Không đặt dấu phẩy sau trạng từ nối như tiếng Anh (Moreover, …): viết Darüber hinaus haben viele …. Khi nối hai câu trong cùng một câu lớn, đặt dấu phẩy hoặc chấm phẩy trước trạng từ: Wir müssen handeln, andernfalls wird das Problem größer. sonst nghe thân mật hơn andernfalls; anderenfalls là cách viết khác cũng đúng. hingegen hay đứng sau chủ ngữ để nhấn mạnh sự đối lập: Mein Bruder hingegen wohnt auf dem Land. Đừng lạm dụng außerdem: thay đổi giữa zudem, darüber hinaus, hai vế nicht nur … sondern auch (B1U04) để bài viết đa dạng hơn."
+      vi: "Không đặt dấu phẩy sau trạng từ nối như tiếng Anh (Moreover, …): viết Darüber hinaus haben viele …. Khi nối hai câu trong cùng một câu lớn, đặt dấu phẩy hoặc chấm phẩy trước trạng từ: Wir müssen handeln, andernfalls wird das Problem größer. sonst trung tính, dùng được cả trong văn nói; andernfalls trang trọng hơn; anderenfalls là cách viết khác cũng đúng. hingegen hay đứng sau chủ ngữ để nhấn mạnh sự đối lập: Mein Bruder hingegen wohnt auf dem Land. Đừng lạm dụng außerdem: thay đổi giữa zudem, darüber hinaus, hai vế nicht nur … sondern auch (B1U04) để bài viết đa dạng hơn. immerhin và wenigstens/zumindest đều là \"ít ra\", nhưng immerhin chỉ ghi nhận điều đã có, còn wenigstens dùng được cả cho yêu cầu tối thiểu: Ruf wenigstens an! (không dùng immerhin ở đây)."
   - type: example
     target: Viele Familien haben wenig Geld. Darüber hinaus fehlen in manchen Stadtteilen Kindergärten.
     target_lang: de
@@ -155,13 +155,13 @@ exercises:
       stem_lang: vi
       options:
         - { id: i4a, text: "Immerhin ist die Wahlbeteiligung gestiegen.", lang: de }
-        - { id: i8b, text: "Immerhin, die Wahlbeteiligung ist gestiegen.", lang: de }
-        - { id: i2c, text: "Immerhin die Wahlbeteiligung ist gestiegen.", lang: de }
+        - { id: i8b, text: "Immerhin hat die Wahlbeteiligung gestiegen.", lang: de }
+        - { id: i2c, text: "Immerhin ist gestiegen die Wahlbeteiligung.", lang: de }
         - { id: i6d, text: "Immerhin die Wahlbeteiligung gestiegen ist.", lang: de }
     answer:
       correct_option_id: i4a
     explanation:
-      vi: "immerhin chiếm vị trí 1, nên động từ chia ist đứng ngay sau, chủ ngữ ra sau; không đặt dấu phẩy sau immerhin. Động từ cuối chỉ có trong câu phụ."
+      vi: "immerhin chiếm vị trí 1, nên động từ chia ist đứng ngay sau, chủ ngữ ra sau, Partizip gestiegen ở cuối. steigen chỉ sự thay đổi trạng thái nên Perfekt dùng sein (ist gestiegen), không dùng hat. Động từ chia đứng cuối chỉ có trong câu phụ."
     display_answer: Immerhin ist die Wahlbeteiligung gestiegen.
 
   - key: de:exercise:b2u05l2-mcq-stattdessen
@@ -258,6 +258,8 @@ exercises:
         - Ich unterstütze die Idee, zumal sie kaum etwas kostet.
         - Diese Idee unterstütze ich, zumal sie kaum Geld kostet.
         - Diese Idee unterstütze ich, zumal sie fast kein Geld kostet.
+        - Ich unterstütze diese Idee, zumal sie kaum Kosten verursacht.
+        - Ich unterstütze die Idee, zumal sie kaum Kosten verursacht.
     known_wrong:
       - answer: Ich unterstütze diese Idee, zumal sie kostet kaum Geld.
         feedback_vi: zumal mở câu phụ – động từ kostet đứng cuối.

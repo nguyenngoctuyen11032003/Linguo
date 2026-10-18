@@ -69,31 +69,31 @@ body:
     text:
       vi: "Theo cấu trúc đề tại thời điểm soạn bài, Goethe B2 Schreiben Teil 1 là bài ý kiến cho diễn đàn khoảng 150 từ, còn Lesen Teil 2 là một văn bản báo chí dài với câu hỏi chọn đáp án; hãy kiểm tra tài liệu mẫu chính thức trước khi thi. Về nội dung: ở Đức, tuổi bầu cử Quốc hội liên bang là 18 theo Luật Cơ bản, còn ở một số cuộc bầu cử cấp bang, cấp xã hay châu Âu có thể là 16; quy định khác nhau và có thể thay đổi, nên trong bài viết đừng đưa con số mà bạn không chắc. Bài mẫu và bài bình luận trong bài học đều hư cấu."
   - type: example
-    target: "Wahlalter 16 – ja oder nein? Diese Frage wird immer wieder kontrovers diskutiert. Einerseits sind Jugendliche von vielen politischen Entscheidungen direkt betroffen, etwa in der Bildung. Sofern sie gut informiert sind, können sie durchaus verantwortungsvoll abstimmen. Darüber hinaus könnte ein früheres Wahlrecht das Interesse an Politik stärken, zumal man in der Schule ohnehin über Politik spricht."
+    target: "Wahlalter 16 – ja oder nein? Diese Frage wird immer wieder kontrovers diskutiert. Einerseits sind Jugendliche von vielen politischen Entscheidungen direkt betroffen, etwa in der Bildung. Sofern sie gut informiert sind, können sie durchaus verantwortungsvoll wählen. Darüber hinaus könnte ein früheres Wahlrecht das Interesse an Politik stärken, zumal man in der Schule ohnehin über Politik spricht."
     target_lang: de
     translation:
-      vi: "Tuổi bầu cử 16 – có hay không? Câu hỏi này luôn được tranh luận trái chiều. Một mặt, thanh thiếu niên chịu tác động trực tiếp của nhiều quyết định chính trị, chẳng hạn trong giáo dục. Nếu được thông tin đầy đủ, các em hoàn toàn có thể bỏ phiếu một cách có trách nhiệm. Hơn nữa, quyền bầu cử sớm hơn có thể làm tăng sự quan tâm đến chính trị, nhất là vì ở trường đằng nào cũng học về chính trị."
+      vi: "Tuổi bầu cử 16 – có hay không? Câu hỏi này luôn được tranh luận trái chiều. Một mặt, thanh thiếu niên chịu tác động trực tiếp của nhiều quyết định chính trị, chẳng hạn trong giáo dục. Nếu được thông tin đầy đủ, các em hoàn toàn có thể đi bầu một cách có trách nhiệm. Hơn nữa, quyền bầu cử sớm hơn có thể làm tăng sự quan tâm đến chính trị, nhất là vì ở trường đằng nào cũng học về chính trị."
     note:
       vi: "Bài mẫu (một người viết hư cấu), phần 1 – nêu vấn đề và lập luận ủng hộ: einerseits, sofern (điều kiện), darüber hinaus (bổ sung), zumal (lý do phụ)."
   - type: example
-    target: "Andererseits wenden Kritiker ein, dass sich manche Sechzehnjährige noch kaum mit Politik auseinandergesetzt haben. Zudem ist man in Deutschland erst mit 18 volljährig. Das mag sein, aber das gilt auch für manche Erwachsene."
+    target: "Andererseits ist man in Deutschland erst mit 18 volljährig. Zudem wenden Kritiker ein, dass sich manche Sechzehnjährige noch kaum mit Politik auseinandergesetzt haben. Das mag sein, aber das gilt auch für manche Erwachsene."
     target_lang: de
     translation:
-      vi: "Mặt khác, những người phản đối cho rằng một số bạn mười sáu tuổi hầu như chưa tìm hiểu kỹ về chính trị. Thêm vào đó, ở Đức phải 18 tuổi mới thành niên. Có thể là vậy, nhưng điều đó cũng đúng với một số người lớn."
+      vi: "Mặt khác, ở Đức phải 18 tuổi mới thành niên. Thêm vào đó, những người phản đối cho rằng một số bạn mười sáu tuổi hầu như chưa tìm hiểu kỹ về chính trị. Có thể là vậy, nhưng điều đó cũng đúng với một số người lớn."
     note:
-      vi: "Phần 2 – lập luận phản đối và phản biện: andererseits, wenden … ein, sich auseinandersetzen mit, zudem, Das mag sein, aber."
+      vi: "Phần 2 – lập luận phản đối và phản biện: andererseits, zudem, wenden … ein, sich auseinandersetzen mit, rồi Das mag sein, aber … đáp lại ngay ý vừa nêu."
   - type: example
-    target: "Insgesamt bin ich für das Wahlalter 16, vorausgesetzt, dass die Schulen mehr politische Bildung anbieten. Andernfalls bleibt das neue Recht nur auf dem Papier. Schließlich geht es um die Zukunft der jungen Generation."
+    target: "Insgesamt bin ich für das Wahlalter 16, vorausgesetzt, dass die Schulen mehr politische Bildung anbieten. Andernfalls steht das neue Recht nur auf dem Papier. Schließlich geht es um die Zukunft der jungen Generation."
     target_lang: de
     translation:
-      vi: "Nhìn chung, tôi ủng hộ tuổi bầu cử 16, với điều kiện các trường dạy nhiều hơn về giáo dục chính trị. Nếu không, quyền mới này chỉ nằm trên giấy. Suy cho cùng, đây là chuyện tương lai của thế hệ trẻ."
+      vi: "Nhìn chung, tôi ủng hộ tuổi bầu cử 16, với điều kiện các trường tăng cường giáo dục chính trị. Nếu không, quyền mới này chỉ có trên giấy. Suy cho cùng, đây là chuyện tương lai của thế hệ trẻ."
     note:
       vi: "Phần 3 – ý kiến kèm điều kiện (vorausgesetzt, dass), hậu quả (andernfalls) và câu kết. Cả bài khoảng 120 từ; khi thi hãy viết thêm một ví dụ hay lý do để đủ khoảng 150 từ. Bạn hoàn toàn có thể bảo vệ ý kiến ngược lại."
   - type: example
     target: Ich bin gegen das Wahlalter 16, es sei denn, die Schulen bieten mehr politische Bildung an.
     target_lang: de
     translation:
-      vi: Tôi phản đối tuổi bầu cử 16, trừ khi các trường dạy nhiều hơn về giáo dục chính trị.
+      vi: Tôi phản đối tuổi bầu cử 16, trừ khi các trường tăng cường giáo dục chính trị.
     note:
       vi: "Quan điểm ngược lại cũng được: es sei denn + câu V2, anbieten tách: bieten … an."
   - type: common_mistake
@@ -165,14 +165,14 @@ exercises:
       stem: "Kommentar: Seit einem Jahr entscheiden die Bürger von Musterstadt über einen kleinen Teil des städtischen Haushalts mit. Es haben sich mehr Menschen beteiligt als erwartet, allerdings kamen kaum Vorschläge aus den ärmeren Stadtteilen. Die Stadt sollte daher auch direkt in die Viertel gehen. Andernfalls entscheiden wieder vor allem diejenigen, die ohnehin gut vernetzt sind. Immerhin: Der Anfang ist gemacht. — Was schlägt der Autor vor?"
       stem_lang: de
       options:
-        - { id: v3a, text: "Die Stadt soll auch direkt in den Stadtteilen für das Projekt werben.", lang: de }
+        - { id: v3a, text: "Die Stadt soll die Menschen auch direkt in ihren Stadtteilen ansprechen.", lang: de }
         - { id: v7b, text: "Die Stadt soll das Projekt beenden.", lang: de }
         - { id: v1c, text: "Nur noch Familien sollen abstimmen dürfen.", lang: de }
     answer:
       correct_option_id: v3a
     explanation:
-      vi: "Die Stadt sollte daher auch direkt in die Viertel gehen – thành phố nên đến tận các khu phố (để quảng bá dự án). Andernfalls … nêu hậu quả nếu không làm vậy; hai phương án kia không có trong văn bản."
-    display_answer: Die Stadt soll auch direkt in den Stadtteilen für das Projekt werben.
+      vi: "Die Stadt sollte daher auch direkt in die Viertel gehen – thành phố nên đến tận các khu phố, tức là tiếp cận trực tiếp người dân ở đó. Andernfalls … nêu hậu quả nếu không làm vậy; hai phương án kia không có trong văn bản."
+    display_answer: Die Stadt soll die Menschen auch direkt in ihren Stadtteilen ansprechen.
 
   - key: de:exercise:b2u05l5-mcq-haushalt-immerhin
     type: mcq
@@ -204,7 +204,7 @@ exercises:
       audio_asset_id: null
       fallback_text: Ich bin gegen das Wahlalter sechzehn, es sei denn, die Schulen bieten deutlich mehr politische Bildung an.
       options:
-        - { id: n2a, text: "Người nói phản đối hạ tuổi bầu cử xuống 16, trừ khi các trường dạy nhiều hơn hẳn về giáo dục chính trị.", lang: vi }
+        - { id: n2a, text: "Người nói phản đối hạ tuổi bầu cử xuống 16, trừ khi các trường tăng cường giáo dục chính trị hơn hẳn.", lang: vi }
         - { id: n6b, text: "Người nói ủng hộ tuổi bầu cử 16 vì các trường đã dạy đủ về chính trị.", lang: vi }
         - { id: n9c, text: "Người nói phản đối tuổi bầu cử 16 trong mọi trường hợp.", lang: vi }
         - { id: n4d, text: "Người nói ủng hộ tuổi bầu cử 16 với điều kiện cha mẹ đồng ý.", lang: vi }
@@ -212,7 +212,7 @@ exercises:
       correct_option_id: n2a
     explanation:
       vi: "Ich bin gegen … = tôi phản đối; es sei denn = trừ khi: ngoại lệ là các trường bieten … an (cung cấp, dạy) deutlich mehr politische Bildung. Vì có ngoại lệ nên không phải \"trong mọi trường hợp\"."
-    display_answer: Người nói phản đối hạ tuổi bầu cử xuống 16, trừ khi các trường dạy nhiều hơn hẳn về giáo dục chính trị.
+    display_answer: Người nói phản đối hạ tuổi bầu cử xuống 16, trừ khi các trường tăng cường giáo dục chính trị hơn hẳn.
 
   - key: de:exercise:b2u05l5-listen-jugendrat
     type: listen
@@ -242,7 +242,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u05-g-verben-praeposition-b2
     prompt:
-      template: "Viele Jugendliche setzen sich {{b1}} ihre Stadt ein. Ob sie verantwortungsvoll abstimmen, hängt {{b2}} ihrer Bildung ab. {{b3}} (zusätzlich) wäre ein früheres Wahlrecht ein Zeichen des Vertrauens."
+      template: "Viele Jugendliche setzen sich {{b1}} ihre Stadt ein. Ob sie verantwortungsvoll wählen, hängt {{b2}} ihrer Bildung ab. {{b3}} (zusätzlich) wäre ein früheres Wahlrecht ein Zeichen des Vertrauens."
       blanks:
         - { id: b1, width_hint: 4 }
         - { id: b2, width_hint: 4 }
@@ -264,7 +264,7 @@ exercises:
         error_tag: word_choice
     explanation:
       vi: "sich einsetzen für + Akk; abhängen von + Dat. Ý bổ sung ở vị trí 1: Darüber hinaus/Zudem/Außerdem/Ferner, rồi động từ wäre ngay sau."
-    display_answer: "Viele Jugendliche setzen sich für ihre Stadt ein. Ob sie verantwortungsvoll abstimmen, hängt von ihrer Bildung ab. Darüber hinaus wäre ein früheres Wahlrecht ein Zeichen des Vertrauens."
+    display_answer: "Viele Jugendliche setzen sich für ihre Stadt ein. Ob sie verantwortungsvoll wählen, hängt von ihrer Bildung ab. Darüber hinaus wäre ein früheres Wahlrecht ein Zeichen des Vertrauens."
 
   - key: de:exercise:b2u05l5-fill-redemittel
     type: fill_blank
@@ -273,7 +273,7 @@ exercises:
     difficulty: 3
     item: de:item:b1u06-g-meinung-redemittel
     prompt:
-      template: "Ich bin der {{b1}}, dass Jugendliche mitbestimmen sollten. Kritiker wenden {{b2}}, dass manche noch zu jung sind. Das {{b3}} (mögen) sein, aber das gilt auch für manche Erwachsene."
+      template: "Ich bin der {{b1}}, dass Jugendliche mitbestimmen sollten. Kritiker wenden {{b2}}, dass sich manche kaum für Politik interessieren. Das {{b3}} (mögen) sein, aber das gilt auch für manche Erwachsene."
       blanks:
         - { id: b1, width_hint: 9 }
         - { id: b2, width_hint: 4 }
@@ -295,7 +295,7 @@ exercises:
         error_tag: verb_form
     explanation:
       vi: "Ich bin der Meinung/Ansicht, dass … (B1U06). einwenden tách: wenden … ein. Das mag sein, aber … thừa nhận một phần rồi phản bác."
-    display_answer: "Ich bin der Meinung, dass Jugendliche mitbestimmen sollten. Kritiker wenden ein, dass manche noch zu jung sind. Das mag sein, aber das gilt auch für manche Erwachsene."
+    display_answer: "Ich bin der Meinung, dass Jugendliche mitbestimmen sollten. Kritiker wenden ein, dass sich manche kaum für Politik interessieren. Das mag sein, aber das gilt auch für manche Erwachsene."
 
   - key: de:exercise:b2u05l5-tr-zumal-betroffen
     type: translate
@@ -359,7 +359,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u05-wahlrecht
     prompt:
-      instruction: "Sắp xếp thành câu: \"Tôi ủng hộ tuổi bầu cử 16, với điều kiện là các trường dạy nhiều hơn về giáo dục chính trị.\""
+      instruction: "Sắp xếp thành câu: \"Tôi ủng hộ tuổi bầu cử 16, với điều kiện là các trường tăng cường giáo dục chính trị.\""
       tokens:
         - { id: v-anbieten, text: anbieten }
         - { id: v-schulen, text: die Schulen }

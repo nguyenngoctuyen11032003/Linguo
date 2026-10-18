@@ -223,7 +223,7 @@ items:
           translation:
             vi: Điều 1 của Luật Cơ bản bảo vệ phẩm giá con người.
       confusion:
-        vi: "Dùng với mạo từ xác định: das Grundgesetz, im Grundgesetz (in dem). Genitiv: des Grundgesetzes."
+        vi: "Dùng với mạo từ xác định: das Grundgesetz, im Grundgesetz (in dem). Genitiv: des Grundgesetzes. Luật Cơ bản có hiệu lực ở Tây Đức từ tháng 5/1949 và cho cả nước Đức thống nhất từ năm 1990."
 
   # --- Zusatzwortschatz L1 ---
   - key: de:item:b2u05-regelung
@@ -434,7 +434,7 @@ items:
           translation:
             vi: Việc làm luật thường kéo dài hơn người dân mong đợi.
       confusion:
-        vi: "Từ ghép das Gesetz + die Gebung (từ geben); giống theo từ cuối nên là die. Ba nhánh quyền lực: die Gesetzgebung (lập pháp), die Regierung/Verwaltung (hành pháp), die Rechtsprechung (tư pháp)."
+        vi: "Từ ghép das Gesetz + -gebung (danh từ gốc geben, như die Rechtsprechung gốc sprechen); danh từ đuôi -ung là giống cái nên là die. Ba nhánh quyền lực: die Gesetzgebung (lập pháp), die Regierung/Verwaltung (hành pháp), die Rechtsprechung (tư pháp)."
 
   - key: de:item:b2u05-verbindlich
     type: vocab
@@ -943,7 +943,7 @@ items:
           translation:
             vi: Tỉ lệ đi bầu thấp. Dù sao thì số người trẻ đi bầu cũng nhiều hơn lần trước.
       confusion:
-        vi: "Như trạng từ nối, immerhin ở vị trí 1 thì động từ đứng ngay sau: Immerhin ist die Beteiligung gestiegen. Khác dennoch (tuy vậy, vẫn), immerhin nhấn vào một mặt tích cực nhỏ."
+        vi: "Như trạng từ nối, immerhin ở vị trí 1 thì động từ đứng ngay sau: Immerhin ist die Beteiligung gestiegen. Khác dennoch (tuy vậy, vẫn), immerhin nhấn vào một mặt tích cực nhỏ. wenigstens/zumindest cũng là \"ít ra\" nhưng dùng được cho yêu cầu tối thiểu (Ruf wenigstens an!), immerhin thì không."
 
   # ================= Bài 3: Động từ, danh từ + giới từ (B2) =================
   - key: de:item:b2u05-g-verben-praeposition-b2
@@ -1076,7 +1076,7 @@ items:
           translation:
             vi: Tôi nhất quyết đòi chúng ta biểu quyết công khai.
       confusion:
-        vi: "Trong tiếng Đức chuẩn hiện nay, bestehen auf thường đi với Dativ (auf seinem Recht bestehen). Khác hẳn bestehen aus (gồm có) và eine Prüfung bestehen (thi đỗ)."
+        vi: "Trong tiếng Đức chuẩn hiện nay, bestehen auf thường đi với Dativ (auf seinem Recht bestehen); đôi khi cũng gặp Akkusativ, nhưng khi viết hãy dùng Dativ. Khác hẳn bestehen aus (gồm có) và eine Prüfung bestehen (thi đỗ)."
 
   - key: de:item:b2u05-abhaengen-von
     type: phrase
@@ -1428,9 +1428,9 @@ items:
       meaning:
         vi: "Để phản bác lịch sự: Da muss ich Ihnen widersprechen (widersprechen + Dativ) hoặc Das mag sein, aber … (thừa nhận một phần rồi phản bác). Để nêu lo ngại và đề xuất: Ich gebe zu bedenken, dass … (động từ cuối câu dass), Wäre es nicht sinnvoller, … zu + Infinitiv? Để tìm điểm chung: Lassen Sie uns einen Kompromiss finden."
       examples:
-        - target: Das mag sein, aber ohne neue Wohnungen können die Mieten weiter steigen.
+        - target: Das mag sein, aber ohne neue Wohnungen werden die Mieten weiter steigen.
           translation:
-            vi: Có thể là vậy, nhưng nếu không có nhà mới thì tiền thuê nhà có thể còn tăng.
+            vi: Có thể là vậy, nhưng nếu không có nhà mới thì tiền thuê nhà sẽ còn tăng.
         - target: Wäre es nicht sinnvoller, nur einen kleinen Teil des Parks zu bebauen?
           translation:
             vi: Chẳng phải sẽ hợp lý hơn nếu chỉ xây trên một phần nhỏ của công viên sao?

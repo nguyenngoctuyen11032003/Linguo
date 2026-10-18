@@ -67,7 +67,7 @@ body:
       vi: "Người Việt hay đồng ý cho xong để tránh va chạm (Ja, Sie haben recht.), nhưng trong phần thi này bạn được chấm về khả năng tương tác và lập luận. Phản biện có lý do là bình thường và lịch sự trong văn hoá tranh luận ở Đức; điều cần tránh là nói chung chung (pauschal) hoặc thô lỗ."
   - type: deep_explain
     text:
-      vi: "Trong phòng thi, hai thí sinh có thể xưng du hoặc Sie; hãy thống nhất từ đầu và giữ nguyên. Bài này dùng Sie như trong một cuộc họp công dân. Các chiến lược từ B1U10 vẫn rất hữu ích: Darf ich kurz etwas ergänzen? (xin bổ sung), Habe ich Sie richtig verstanden, dass …? (hỏi lại). Khác với thuyết trình ở Teil 1 (Zunächst … Abschließend …), ở Teil 2 bạn phải phản hồi trực tiếp điều người kia vừa nói, nên hãy nhắc lại ý họ bằng lời gián tiếp: Sie sagen, die Stadt brauche mehr Wohnungen. Chủ đề trong bài là hư cấu; trong bài thi, giám khảo chấm cách lập luận và ngôn ngữ, không chấm bạn đứng về phía nào."
+      vi: "Trong phòng thi, hai thí sinh có thể xưng du hoặc Sie; hãy thống nhất từ đầu và giữ nguyên. Bài này dùng Sie như trong một cuộc họp công dân. Đồng ý cũng cần lý do: Da bin ich ganz Ihrer Meinung, denn …; phản bác nhẹ hơn: Das sehe ich (etwas) anders. Các chiến lược từ B1U10 vẫn rất hữu ích: Darf ich kurz etwas ergänzen? (xin bổ sung), Habe ich Sie richtig verstanden, dass …? (hỏi lại). Khác với thuyết trình ở Teil 1 (Zunächst … Abschließend …), ở Teil 2 bạn phải phản hồi trực tiếp điều người kia vừa nói, nên hãy nhắc lại ý họ bằng lời gián tiếp: Sie sagen, die Stadt brauche mehr Wohnungen. Chủ đề trong bài là hư cấu; trong bài thi, giám khảo chấm cách lập luận và ngôn ngữ, không chấm bạn đứng về phía nào."
   - type: example
     target: Da muss ich Ihnen widersprechen. Der Park ist für viele Familien der einzige grüne Ort im Viertel.
     target_lang: de
@@ -76,10 +76,10 @@ body:
     note:
       vi: "widersprechen + Dativ: Ihnen. Luôn kèm lý do ngay sau lời phản đối."
   - type: example
-    target: Das mag sein, aber ohne neue Wohnungen können die Mieten weiter steigen.
+    target: Das mag sein, aber ohne neue Wohnungen werden die Mieten weiter steigen.
     target_lang: de
     translation:
-      vi: Có thể là vậy, nhưng nếu không có nhà ở mới thì tiền thuê nhà có thể tiếp tục tăng.
+      vi: Có thể là vậy, nhưng nếu không có nhà ở mới thì tiền thuê nhà sẽ tiếp tục tăng.
     note:
       vi: "Das mag sein = có thể là vậy (thừa nhận một phần), rồi phản bác bằng aber."
   - type: example
@@ -304,6 +304,8 @@ exercises:
         - Ich gebe zu bedenken, dass der Bau viele Jahre dauert.
         - Ich möchte zu bedenken geben, dass der Bau mehrere Jahre dauern würde.
         - Ich möchte zu bedenken geben, dass der Bau mehrere Jahre dauern wird.
+        - Ich möchte zu bedenken geben, dass der Bau mehrere Jahre dauert.
+        - Ich möchte zu bedenken geben, dass der Bau viele Jahre dauern würde.
     known_wrong:
       - answer: Ich gebe zu bedenken, dass der Bau dauert mehrere Jahre.
         feedback_vi: Trong câu dass, động từ chia đứng cuối – … mehrere Jahre dauert.
@@ -384,6 +386,12 @@ exercises:
         - Tôi hiểu rõ quan điểm của ông, nhưng tôi nhìn nhận vấn đề khác.
         - Tôi hiểu rõ quan điểm của bà, nhưng tôi nhìn nhận vấn đề khác.
         - Tôi hoàn toàn hiểu được lập trường của anh chị, nhưng tôi nhìn nhận khác.
+        - Tôi rất hiểu lập trường của anh, nhưng tôi nhìn nhận khác.
+        - Tôi rất hiểu lập trường của chị, nhưng tôi nhìn nhận khác.
+        - Tôi rất hiểu lập trường của ông, nhưng tôi nhìn nhận khác.
+        - Tôi rất hiểu lập trường của bà, nhưng tôi nhìn nhận khác.
+        - Tôi hiểu được lập trường của anh, nhưng tôi thấy khác.
+        - Tôi hiểu được lập trường của chị, nhưng tôi thấy khác.
     rubric:
       diacritics: lenient
     known_wrong:
@@ -391,5 +399,5 @@ exercises:
         feedback_vi: nachvollziehen là hiểu được lý lẽ, không phải đồng ý (zustimmen).
         error_tag: meaning
     explanation:
-      vi: "nachvollziehen = hiểu được (lý lẽ của ai), không có nghĩa là đồng ý. die Position = lập trường, quan điểm; Ihre (viết hoa) là cách xưng lịch sự."
-    display_answer: Tôi hoàn toàn hiểu được lập trường của anh, nhưng tôi nhìn nhận khác.
+      vi: "nachvollziehen = hiểu được (lý lẽ của ai), không có nghĩa là đồng ý; gut ở đây = rất, hoàn toàn. die Position = lập trường, quan điểm; Ihre (viết hoa) là cách xưng lịch sự."
+    display_answer: Tôi rất hiểu lập trường của anh, nhưng tôi nhìn nhận khác.

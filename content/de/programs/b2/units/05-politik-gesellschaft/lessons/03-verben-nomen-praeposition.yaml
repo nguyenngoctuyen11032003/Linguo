@@ -59,7 +59,7 @@ body:
       vi: "Nhiều động từ B2 đi với một giới từ cố định, và giới từ quyết định cách: sich einsetzen für + Akk, beitragen zu + Dat, sich auseinandersetzen mit + Dat, abhängen von + Dat, sich beziehen auf + Akk, führen zu + Dat, verfügen über + Akk. Giới từ thường không khớp với tiếng Việt (\"phụ thuộc vào\" là abhängen von, không phải in), nên hãy học cả cụm động từ + giới từ + cách, như bạn đã làm với sich freuen auf ở B1."
   - type: explain
     text:
-      vi: "bestehen đổi nghĩa theo giới từ: bestehen auf + Dat (khăng khăng đòi), bestehen aus + Dat (gồm có), bestehen in + Dat (nằm ở): Das Problem besteht darin, dass …. Không có giới từ, bestehen là \"thi đỗ\" (eine Prüfung bestehen) hoặc \"tồn tại\"."
+      vi: "bestehen đổi nghĩa theo giới từ: bestehen auf + Dat (khăng khăng đòi; đôi khi gặp cả Akk), bestehen aus + Dat (gồm có), bestehen in + Dat (nằm ở): Das Problem besteht darin, dass …. Không có giới từ, bestehen là \"thi đỗ\" (eine Prüfung bestehen) hoặc \"tồn tại\"."
   - type: explain
     text:
       vi: "Danh từ cũng có giới từ cố định, thường giống động từ cùng gốc: der Einfluss auf + Akk, das Interesse an + Dat, die Verantwortung für + Akk, die Teilnahme an + Dat, der Zugang zu + Dat. Có khi động từ đi thẳng với Akkusativ mà danh từ lại cần giới từ: den Plan kritisieren → die Kritik an dem Plan. Nhiều cụm này nằm trong Funktionsverbgefüge (B2U02): Einfluss nehmen auf, Kritik üben an, Verantwortung übernehmen für."
@@ -356,6 +356,8 @@ exercises:
         - Viele Bürgerinnen und Bürger wünschen sich mehr Einfluss auf die Politik.
         - Viele Bürger wollen mehr Einfluss auf die Politik nehmen.
         - Viele Bürger möchten mehr Einfluss auf die Politik nehmen.
+        - Viele Bürger hätten gern mehr Einfluss auf die Politik.
+        - Viele Bürgerinnen und Bürger hätten gern mehr Einfluss auf die Politik.
     known_wrong:
       - answer: Viele Bürger wollen mehr Einfluss zu der Politik haben.
         feedback_vi: der Einfluss đi với auf + Akkusativ – Einfluss auf die Politik.

@@ -101,10 +101,10 @@ body:
     note:
       vi: "Trong tin nhắn thân mật với du, falls hay wenn tự nhiên hơn sofern."
   - type: example
-    target: Aufgrund der knappen Mehrheit wird die Abstimmung wiederholt, es sei denn, alle Mitglieder sind einverstanden.
+    target: Aufgrund der knappen Mehrheit wird die Abstimmung wiederholt, es sei denn, alle Mitglieder sind mit dem Ergebnis einverstanden.
     target_lang: de
     translation:
-      vi: Do đa số quá sít sao nên cuộc biểu quyết sẽ được tiến hành lại, trừ khi mọi thành viên đều đồng ý.
+      vi: Do đa số quá sít sao nên cuộc biểu quyết sẽ được tiến hành lại, trừ khi mọi thành viên đều đồng ý với kết quả.
     note:
       vi: "aufgrund + Genitiv (B2U02) nêu lý do; es sei denn nêu ngoại lệ, động từ sind ở vị trí 2."
   - type: common_mistake
@@ -242,7 +242,7 @@ exercises:
         error_tag: adj_ending
       - answer: eine
         feedback_vi: im Falle đi với Genitiv – im Falle einer Erkrankung.
-        error_tag: case_dat_akk
+        error_tag: case_genitive
       - answer: Ihrer
         feedback_vi: ohne đi với Akkusativ – ohne Ihre Unterschrift.
         error_tag: case_dat_akk
@@ -268,6 +268,8 @@ exercises:
         - Ab Januar gilt das neue Gesetz, es sei denn, dass der Bundestag etwas anderes beschließt.
         - Das neue Gesetz gilt ab Januar, es sei denn, der Bundestag entscheidet anders.
         - Ab Januar gilt das neue Gesetz, es sei denn, der Bundestag entscheidet anders.
+        - Das neue Gesetz gilt ab Januar, es sei denn, dass der Bundestag anders entscheidet.
+        - Ab Januar gilt das neue Gesetz, es sei denn, dass der Bundestag anders entscheidet.
     known_wrong:
       - answer: Das neue Gesetz gilt ab Januar, es sei denn, der Bundestag etwas anderes beschließt.
         feedback_vi: Không có dass thì sau es sei denn động từ ở vị trí 2 – der Bundestag beschließt etwas anderes.
@@ -302,6 +304,8 @@ exercises:
         - Wenden Sie sich bei Fragen bitte ans Büro.
         - Bei Fragen wenden Sie sich an das Büro.
         - Bei Fragen wenden Sie sich ans Büro.
+        - Wenden Sie sich bei Fragen an das Büro.
+        - Wenden Sie sich bei Fragen ans Büro.
     known_wrong:
       - answer: Bei Fragen Sie wenden sich bitte an das Büro.
         feedback_vi: Cụm bei Fragen là vị trí 1, nên động từ wenden đứng ngay sau – Bei Fragen wenden Sie sich …
