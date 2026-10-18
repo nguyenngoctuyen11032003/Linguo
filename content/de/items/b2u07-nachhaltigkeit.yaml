@@ -31,7 +31,7 @@ items:
           translation:
             vi: Tôi tiếc là đã lái ô tô đi làm lâu như vậy.
       confusion:
-        vi: "Không nói \"zu haben reduziert\": Partizip II đứng trước, rồi mới zu haben. Với động từ tách: eingehalten zu haben (Partizip II đã có ge- ở giữa, không chèn thêm zu). So sánh: … reduziert zu haben (đã làm, trước) ↔ … zu reduzieren (làm bây giờ/sắp tới)."
+        vi: "Không nói \"zu haben reduziert\": Partizip II đứng trước, rồi mới zu haben. Với động từ tách: eingehalten zu haben (zu đứng riêng trước haben, không chen vào giữa như einzuhalten). So sánh: … reduziert zu haben (đã làm, trước) ↔ … zu reduzieren (làm bây giờ/sắp tới)."
 
   - key: de:item:b2u07-g-infinitiv-passiv
     type: grammar_point
@@ -247,7 +247,7 @@ items:
           translation:
             vi: Khi lái ô tô sẽ sinh ra CO₂.
       confusion:
-        vi: "Viết tắt CO₂, đọc là \"Ce-O-zwei\". Trong báo chí thường gặp từ ghép như der CO₂-Ausstoß."
+        vi: "Viết tắt CO₂, đọc từng chữ theo tiếng Đức: C-O-zwei /tseː oː t͡svaɪ̯/. Trong báo chí thường gặp từ ghép như der CO₂-Ausstoß."
 
   - key: de:item:b2u07-fossil
     type: vocab
@@ -419,7 +419,7 @@ items:
           translation:
             vi: Nhờ khu bảo tồn mới mà ở đó lại có nhiều chim hơn.
       confusion:
-        vi: "Cùng là Angst nhưng khác nghĩa: Aus Angst sagte er nichts (sợ nên cố ý im lặng) ↔ Er zitterte vor Angst (run vì sợ, không cố ý). wegen Angst cũng đúng nhưng trung tính, ít sắc thái hơn. dank chỉ dùng cho nguyên nhân tốt; nguyên nhân xấu dùng wegen hoặc aufgrund."
+        vi: "Cùng là Angst nhưng khác nghĩa: Aus Angst sagte er nichts (sợ nên cố ý im lặng) ↔ Er zitterte vor Angst (run vì sợ, không cố ý). wegen Angst cũng đúng nhưng trung tính, ít sắc thái hơn. dank dùng cho nguyên nhân tốt (văn nói đôi khi dùng mỉa mai: Dank dir sind wir zu spät); nguyên nhân xấu dùng wegen hoặc aufgrund."
 
   - key: de:item:b2u07-artenvielfalt
     type: vocab
@@ -461,7 +461,7 @@ items:
           translation:
             vi: Nếu không được bảo vệ, loài vật này có thể sớm tuyệt chủng.
       confusion:
-        vi: "Perfekt với sein vì là thay đổi trạng thái: ist ausgestorben. Tính từ: vom Aussterben bedroht = có nguy cơ tuyệt chủng."
+        vi: "Perfekt với sein vì là thay đổi trạng thái: ist ausgestorben. Cụm hay gặp (danh từ hoá das Aussterben): vom Aussterben bedroht = có nguy cơ tuyệt chủng."
 
   - key: de:item:b2u07-bedroht
     type: vocab
@@ -478,9 +478,9 @@ items:
         - target: Viele Bienenarten sind bedroht.
           translation:
             vi: Nhiều loài ong đang bị đe doạ.
-        - target: Der Eisbär ist vom Aussterben bedroht.
+        - target: Manche Tierarten sind vom Aussterben bedroht.
           translation:
-            vi: Gấu Bắc Cực có nguy cơ tuyệt chủng.
+            vi: Một số loài động vật có nguy cơ tuyệt chủng.
       confusion:
         vi: "Là Partizip II của bedrohen (đe doạ). Trước danh từ có đuôi: eine bedrohte Tierart."
 
@@ -630,7 +630,7 @@ items:
           translation:
             vi: Trên ban công nhà tôi có hoa cho ong.
       confusion:
-        vi: "die Biene là ong mật nói chung; die Wespe là ong bắp cày."
+        vi: "die Biene thường chỉ ong mật, nhưng cũng gồm nhiều loài ong hoang dã (die Wildbiene); die Wespe là ong bắp cày."
 
   - key: de:item:b2u07-regenwald
     type: vocab
@@ -693,7 +693,7 @@ items:
           translation:
             vi: Lũ chim run lên vì lạnh.
       confusion:
-        vi: "kalt → die Kälte; tương tự warm → die Wärme, heiß → die Hitze."
+        vi: "kalt → die Kälte, warm → die Wärme (a thành ä); nhưng heiß → die Hitze (từ khác gốc)."
 
   - key: de:item:b2u07-neugier
     type: vocab
@@ -790,7 +790,7 @@ items:
       pos: cấu trúc ngữ pháp
     back:
       meaning:
-        vi: "Khi mệnh đề quan hệ bình luận CẢ câu đứng trước (không phải một danh từ), mở đầu bằng was: Er repariert seine Geräte selbst, was ich toll finde. Nếu động từ trong mệnh đề cần giới từ, dùng wo(r) + giới từ: wodurch (nhờ đó/vì thế), worüber, wofür, woran. Mệnh đề luôn đứng sau câu chính, có dấu phẩy, động từ đứng cuối."
+        vi: "Khi mệnh đề quan hệ bình luận CẢ câu đứng trước (không phải một danh từ), mở đầu bằng was: Er repariert seine Geräte selbst, was ich toll finde. Nếu mệnh đề cần một giới từ (động từ có giới từ cố định, hoặc durch = nhờ đó), dùng wo(r) + giới từ: wodurch (nhờ đó/vì thế), worüber, wofür, woran. Mệnh đề luôn đứng sau câu chính, có dấu phẩy, động từ đứng cuối."
       examples:
         - target: Viele Menschen werfen Lebensmittel weg, was eine große Verschwendung ist.
           translation:
@@ -1078,7 +1078,7 @@ items:
           translation:
             vi: Tôi bỏ những lần mua sắm không cần thiết.
       confusion:
-        vi: "über (quá) + der Fluss (dòng chảy): \"tràn ra\", tức là thừa. Gần nghĩa: unnötig."
+        vi: "Liên quan đến der Überfluss (sự dư thừa). Gần nghĩa: unnötig."
 
   - key: de:item:b2u07-ersatzteil
     type: vocab
@@ -1145,7 +1145,7 @@ items:
           translation:
             vi: Cân nhắc các lý lẽ thì theo tôi ưu điểm nhiều hơn.
       confusion:
-        vi: "Sau Für … spricht / Dagegen spricht là câu phụ dass (động từ cuối). Wägt man die Argumente ab, … là câu điều kiện không có wenn (động từ đứng đầu), nên vế sau bắt đầu bằng động từ: …, überwiegen die Vorteile. Alles in allem, Abschließend ở vị trí 1, động từ ngay sau."
+        vi: "Sau Für … spricht / Dagegen spricht là câu phụ dass (động từ cuối). Wägt man die Argumente ab, … là câu điều kiện không có wenn (động từ đứng đầu), nên vế sau bắt đầu bằng động từ: …, überwiegen die Vorteile. Khi Alles in allem, Abschließend mở đầu câu (vị trí 1), động từ đứng ngay sau."
 
   - key: de:item:b2u07-gegenargument
     type: vocab

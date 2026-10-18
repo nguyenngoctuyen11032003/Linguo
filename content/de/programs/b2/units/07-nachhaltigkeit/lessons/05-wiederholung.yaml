@@ -59,7 +59,7 @@ body:
       vi: "Theo cấu trúc tại thời điểm soạn bài, Goethe-Zertifikat B2 Schreiben có một bài nêu ý kiến khoảng 150 từ về một chủ đề xã hội; định dạng, thời gian và thang điểm có thể thay đổi, hãy xem tài liệu mẫu chính thức của Goethe-Institut. Đề thường cho vài ý cần nói: hãy trả lời ĐỦ từng ý, thiếu ý là mất điểm dù tiếng Đức đúng."
   - type: explain
     text:
-      vi: "Phân bổ khoảng 150 từ như sau: mở bài khoảng 30–40 từ (vấn đề là gì, vì sao quan trọng, liên hệ bản thân), thân bài khoảng 60–70 từ (một hai lý lẽ ủng hộ, một hai lý lẽ phản đối, mỗi lý lẽ có lý do hoặc ví dụ), kết bài khoảng 40–50 từ (cân nhắc, ý kiến riêng, có thể kèm điều kiện). Đây là gợi ý của Linguo, không phải quy định của đề thi."
+      vi: "Phân bổ khoảng 150 từ như sau: mở bài khoảng 35–45 từ (vấn đề là gì, vì sao quan trọng, liên hệ bản thân), thân bài khoảng 50–70 từ (một hai lý lẽ ủng hộ, một hai lý lẽ phản đối, mỗi lý lẽ có lý do hoặc ví dụ), kết bài khoảng 40–50 từ (cân nhắc, ý kiến riêng, có thể kèm điều kiện). Đây là gợi ý của Linguo, không phải quy định của đề thi."
   - type: explain
     text:
       vi: "Để bài đạt mức B2, hãy dùng ngôn ngữ của unit này: Für … spricht, dass … / Dagegen lässt sich einwenden, dass … (lập luận), …, was … / …, wodurch … (bình luận cả câu), aus Überzeugung, dank + Genitiv (nguyên nhân), behaupten/befürchten + cụm zu. Trước khi nộp, kiểm tra động từ ở cuối câu phụ (dass, was, wodurch, wenn) và ở vị trí 2 sau Alles in allem, Abschließend."
@@ -84,10 +84,10 @@ body:
     note:
       vi: "Bài mẫu – thân bài (khoảng 50 từ): Pro (Für … spricht, dass …) + hệ quả (wodurch …), Contra có ví dụ (Dagegen lässt sich einwenden, dass … zum Beispiel …), thêm một phản đề (befürchten + cụm zu)."
   - type: example
-    target: "Wägt man die Argumente ab, überwiegen meiner Meinung nach die Vorteile. Ein Verbot sollte allerdings schrittweise eingeführt werden, und zwar erst dann, wenn Busse und Bahnen dank besserer Verbindungen eine echte Alternative sind. Alles in allem bin ich überzeugt, dass eine Innenstadt mit weniger Autos für alle ein Gewinn wäre."
+    target: "Wägt man die Argumente ab, überwiegen meiner Meinung nach die Vorteile. Allerdings sollte ein Verbot erst dann schrittweise eingeführt werden, wenn Busse und Bahnen dank besserer Verbindungen eine echte Alternative sind. Alles in allem bin ich überzeugt, dass eine Innenstadt mit weniger Autos für alle ein Gewinn wäre."
     target_lang: de
     translation:
-      vi: "Cân nhắc các lý lẽ thì theo tôi ưu điểm nhiều hơn. Tuy nhiên, lệnh cấm nên được áp dụng từng bước, cụ thể là chỉ khi xe buýt và tàu thực sự là lựa chọn thay thế nhờ kết nối tốt hơn. Nhìn chung, tôi tin rằng một trung tâm ít ô tô hơn sẽ có lợi cho tất cả mọi người."
+      vi: "Cân nhắc các lý lẽ thì theo tôi ưu điểm nhiều hơn. Tuy nhiên, chỉ nên áp dụng lệnh cấm từng bước khi xe buýt và tàu, nhờ kết nối tốt hơn, đã thực sự trở thành lựa chọn thay thế. Nhìn chung, tôi tin rằng một trung tâm ít ô tô hơn sẽ có lợi cho tất cả mọi người."
     note:
       vi: "Bài mẫu – kết bài (khoảng 50 từ; cả bài khoảng 150 từ): Wägt man … ab + động từ, điều kiện (erst dann, wenn …), dank + Genitiv (besserer Verbindungen), câu chốt với Alles in allem. Kết luận khớp với thân bài: ủng hộ nhưng tính đến phản đề."
   - type: example
@@ -246,7 +246,7 @@ exercises:
         b3: [allem]
     known_wrong:
       - answer: Wiegt
-        feedback_vi: Động từ là abwägen (cân nhắc), ngôi man → wägt … ab. wiegen là một động từ khác (cân nặng).
+        feedback_vi: Cân nhắc lý lẽ là abwägen, ngôi man → Wägt … ab. abwiegen nghĩa là cân trọng lượng (Mehl abwiegen); dạng Wiegt man … ab đôi khi gặp trong văn nói nhưng không chuẩn trong bài viết.
         error_tag: word_choice
       - answer: dadurch
         feedback_vi: dadurch mở câu chính (V2). Ở đây động từ würde đứng cuối nên cần từ mở mệnh đề quan hệ – wodurch.
@@ -265,7 +265,7 @@ exercises:
     difficulty: 4
     item: de:item:b2u07-g-infinitiv-passiv
     prompt:
-      template: "Die Stadt behauptet, die Luft schon deutlich verbessert zu {{b1}}. Die Händler hoffen, bei der Planung {{b2}} zu werden. (beteiligen) {{b3}} Angst vor weniger Kunden protestieren einige Geschäfte. (aus · vor)"
+      template: "Die Stadt behauptet, die Luft schon deutlich verbessert zu {{b1}}. Die Händler hoffen, an der Planung {{b2}} zu werden. (beteiligen) {{b3}} Angst, Kunden zu verlieren, protestieren einige Geschäfte. (aus · vor)"
       blanks:
         - { id: b1, width_hint: 5 }
         - { id: b2, width_hint: 9 }
@@ -286,8 +286,8 @@ exercises:
         feedback_vi: beteiligen có tiền tố be- nên Partizip II không có ge- – beteiligt.
         error_tag: participle_form
     explanation:
-      vi: "Việc cải thiện đã xảy ra: verbessert zu haben. Các thương nhân mong được tham gia (bị động): beteiligt zu werden. Biểu tình là quyết định có ý thức nên dùng Aus Angst."
-    display_answer: "Die Stadt behauptet, die Luft schon deutlich verbessert zu haben. Die Händler hoffen, bei der Planung beteiligt zu werden. Aus Angst vor weniger Kunden protestieren einige Geschäfte."
+      vi: "Việc cải thiện đã xảy ra: verbessert zu haben. Các thương nhân mong được cho tham gia (bị động, beteiligen an + Dativ): an der Planung beteiligt zu werden. Biểu tình là quyết định có ý thức nên dùng Aus Angst."
+    display_answer: "Die Stadt behauptet, die Luft schon deutlich verbessert zu haben. Die Händler hoffen, an der Planung beteiligt zu werden. Aus Angst, Kunden zu verlieren, protestieren einige Geschäfte."
 
   - key: de:exercise:b2u07l5-tr-was-luft
     type: translate

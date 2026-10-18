@@ -68,7 +68,7 @@ body:
       vi: "vor + Dativ (thường không mạo từ) nêu nguyên nhân của một phản ứng KHÔNG chủ ý của cơ thể hay cảm xúc: vor Kälte zittern, vor Freude weinen, vor Angst schreien, vor Müdigkeit einschlafen. Mẹo: người đó có tự chọn được không? Chọn được → aus; không kìm được → vor. Vì vậy nói vor Kälte zittern, không nói aus Kälte."
   - type: explain
     text:
-      vi: "dank (nhờ) chỉ dùng cho nguyên nhân tích cực, đi với Genitiv trong văn viết (dank des Schutzgebiets), Dativ cũng hay gặp (dank dem Schutzgebiet). Nguyên nhân trung tính hoặc tiêu cực trong văn viết: wegen, aufgrund + Genitiv; infolge + Genitiv nêu hậu quả của một sự kiện (infolge der Abholzung)."
+      vi: "dank (nhờ) dùng cho nguyên nhân tích cực (văn nói đôi khi dùng mỉa mai: Dank dir sind wir zu spät = tại cậu mà …), đi với Genitiv trong văn viết (dank des Schutzgebiets), Dativ cũng hay gặp (dank dem Schutzgebiet). Nguyên nhân trung tính hoặc tiêu cực trong văn viết: wegen, aufgrund + Genitiv; infolge + Genitiv nêu hậu quả của một sự kiện (infolge der Abholzung)."
   - type: deep_explain
     text:
       vi: "Cùng một danh từ có thể đi với hai giới từ, nghĩa khác nhau: Aus Angst hat er nichts gesagt (sợ nên cố ý im lặng) ↔ Er hat vor Angst gezittert (run vì sợ, không cố ý). wegen Angst cũng đúng ngữ pháp, nhưng chỉ nêu nguyên nhân chung chung, không có sắc thái như aus/vor. vor lauter + danh từ nhấn mạnh: vor lauter Freude (vì quá vui). Danh từ sau aus/vor có tính từ thì có đuôi Dativ: aus reiner Neugier, vor großer Freude. Khi nói về thiên nhiên, hãy học theo cụm: Tierarten sterben aus (tuyệt chủng), sind vom Aussterben bedroht, verlieren ihren Lebensraum; Pestizide können Bienen schaden; die Abholzung zerstört Lebensräume."
@@ -139,7 +139,7 @@ body:
     right: Wegen des Sturms sind im Wald viele Bäume umgefallen.
     target_lang: de
     note:
-      vi: "dank chỉ dùng cho nguyên nhân tốt; nguyên nhân xấu dùng wegen + Genitiv (văn viết), hoặc trang trọng hơn infolge, aufgrund."
+      vi: "dank dùng cho nguyên nhân tốt (chỉ trừ khi cố ý mỉa mai); nguyên nhân xấu dùng wegen + Genitiv (văn viết), hoặc trang trọng hơn infolge, aufgrund."
   - type: common_mistake
     wrong: Aus der Neugier habe ich das Museum besucht.
     right: Aus Neugier habe ich das Museum besucht.
@@ -151,7 +151,7 @@ body:
       - vi: "aus + danh từ không mạo từ: động cơ có ý thức (aus Angst, aus Überzeugung, aus Neugier)."
       - vi: "vor + Dativ không mạo từ: phản ứng không chủ ý (vor Kälte zittern, vor Freude weinen)."
       - vi: "Tự chọn được → aus; không kìm được → vor; wegen: trung tính."
-      - vi: "dank + Genitiv (cũng gặp Dativ): chỉ nguyên nhân tích cực."
+      - vi: "dank + Genitiv (cũng gặp Dativ): nguyên nhân tích cực (dùng cho điều xấu chỉ khi mỉa mai)."
       - vi: "aufgrund, infolge, wegen + Genitiv: văn viết; infolge = hậu quả của sự kiện."
       - vi: "Từ vựng: die Artenvielfalt, aussterben, bedroht, der Lebensraum, schützen, das Ökosystem, die Tierart, die Abholzung."
 exercises:
@@ -206,7 +206,7 @@ exercises:
       audio_asset_id: null
       fallback_text: Dank der neuen Hecken hat die Artenvielfalt im Stadtpark zugenommen. Viele Vögel bauen dort aus Angst vor Katzen ihre Nester gut versteckt.
       options:
-        - { id: h3a, text: "Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; nhiều loài chim vì sợ mèo nên làm tổ ở chỗ kín đáo.", lang: vi }
+        - { id: h3a, text: "Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; nhiều con chim vì sợ mèo nên làm tổ ở chỗ kín đáo.", lang: vi }
         - { id: h7b, text: "Vì các hàng rào cây mới, công viên có ít loài hơn; chim không còn làm tổ ở đó nữa.", lang: vi }
         - { id: h1c, text: "Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; mèo trốn trong hàng rào để bắt chim.", lang: vi }
         - { id: h5d, text: "Mặc dù có hàng rào cây mới, công viên vẫn ít loài; chim run lên vì sợ mèo.", lang: vi }
@@ -214,7 +214,7 @@ exercises:
       correct_option_id: h3a
     explanation:
       vi: "Dank der neuen Hecken = nhờ hàng rào cây mới (nguyên nhân tích cực, Genitiv số nhiều). die Artenvielfalt hat zugenommen = đa dạng loài đã tăng. aus Angst vor Katzen = vì sợ mèo (động cơ của việc làm tổ kín đáo)."
-    display_answer: Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; nhiều loài chim vì sợ mèo nên làm tổ ở chỗ kín đáo.
+    display_answer: Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; nhiều con chim vì sợ mèo nên làm tổ ở chỗ kín đáo.
 
   # ---------------- recall ----------------
   - key: de:exercise:b2u07l2-fill-vor-dank
@@ -313,7 +313,7 @@ exercises:
     answer:
       correct_option_id: w2a
     explanation:
-      vi: "vor lauter Freude = vì quá vui (phản ứng không chủ ý, lauter nhấn mạnh). Run vì lạnh cần vor; không ăn thịt vì niềm tin là quyết định → aus Überzeugung; bão là nguyên nhân xấu nên không dùng dank (dùng infolge/wegen)."
+      vi: "vor lauter Freude = vì quá vui (phản ứng không chủ ý, lauter nhấn mạnh). Run vì lạnh cần vor; không ăn thịt vì niềm tin là quyết định → aus Überzeugung; bão là nguyên nhân xấu nên không dùng dank (dùng infolge/wegen); dank cho điều xấu chỉ gặp khi người nói cố ý mỉa mai, không hợp với câu tường thuật này."
     display_answer: Vor lauter Freude hat sie geweint.
 
   - key: de:exercise:b2u07l2-wb-dank-schutzgebiet
@@ -338,7 +338,7 @@ exercises:
       orders:
         - [d-dank, d-des, d-neuen, d-schutzgebiets, d-leben, d-dort, d-wieder, d-mehr, d-voegel]
     explanation:
-      vi: "dank + Genitiv: des neuen Schutzgebiets (đuôi tính từ -en, danh từ thêm -s). Cả cụm Dank … là vị trí 1, nên leben đứng ngay sau; trạng từ dort wieder đứng trước chủ ngữ mới mehr Vögel."
+      vi: "dank + Genitiv: des neuen Schutzgebiets (đuôi tính từ -en, danh từ thêm -s). Cả cụm Dank … là vị trí 1, nên leben đứng ngay sau; trạng từ dort wieder đứng trước chủ ngữ mehr Vögel (thông tin mới nên để cuối)."
     display_answer: Dank des neuen Schutzgebiets leben dort wieder mehr Vögel.
 
   - key: de:exercise:b2u07l2-tr-infolge-abholzung

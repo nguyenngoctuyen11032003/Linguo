@@ -73,13 +73,13 @@ body:
       vi: "Bạn đã biết cụm zu + nguyên thể: Die Firma verspricht, die Emissionen zu reduzieren (việc ở hiện tại/tương lai). Khi việc trong cụm zu đã xảy ra TRƯỚC, dùng nguyên thể quá khứ (Infinitiv Perfekt): Partizip II + zu haben/sein: Die Firma behauptet, die Emissionen reduziert zu haben. Tiếng Việt chỉ thêm \"đã\" (khẳng định đã giảm), còn tiếng Đức phải đổi cả dạng động từ."
   - type: explain
     text:
-      vi: "Chọn haben hay sein giống như ở Perfekt: erreicht zu haben (hat erreicht), angekommen zu sein (ist angekommen). Thứ tự cố định ở cuối cụm: Partizip II – zu – haben/sein. Với động từ tách, Partizip II đã có ge- ở giữa nên không chèn zu: eingehalten zu haben."
+      vi: "Chọn haben hay sein giống như ở Perfekt: erreicht zu haben (hat erreicht), angekommen zu sein (ist angekommen). Thứ tự cố định ở cuối cụm: Partizip II – zu – haben/sein. Với động từ tách, zu không chen vào giữa như ở einzuhalten mà đứng riêng trước haben: eingehalten zu haben."
   - type: explain
     text:
       vi: "Khi chủ ngữ CHỊU tác động, dùng nguyên thể bị động: Partizip II + zu werden (Die Anwohner hoffen, informiert zu werden = mong được thông báo). Nếu việc bị động đã xảy ra trước: Partizip II + worden zu sein (Er bestreitet, gewarnt worden zu sein = phủ nhận việc đã được cảnh báo); ở đây luôn là worden, không phải geworden."
   - type: explain
     text:
-      vi: "Cụm zu chỉ dùng khi chủ ngữ ngầm trùng với chủ ngữ câu chính (người khẳng định cũng là người đã giảm). Khác chủ ngữ thì dùng dass: Er behauptet, dass die Firma die Ziele erreicht hat. Sau động từ khiếm khuyết không có zu: Die Emissionen müssen reduziert werden."
+      vi: "Với behaupten, hoffen, bestreiten …, cụm zu chỉ dùng khi chủ ngữ ngầm trùng với chủ ngữ câu chính (người khẳng định cũng là người đã giảm). Khác chủ ngữ thì dùng dass: Er behauptet, dass die Firma die Ziele erreicht hat. Sau động từ khiếm khuyết không có zu: Die Emissionen müssen reduziert werden."
   - type: deep_explain
     text:
       vi: "Động từ hay đi với nguyên thể quá khứ: behaupten, bestreiten (phủ nhận), zugeben (thừa nhận), bedauern (tiếc), sich erinnern, froh/stolz sein; với nguyên thể bị động: hoffen, erwarten, verlangen, Angst haben, befürchten. Đừng nhầm với Futur II (werden + Partizip II + haben/sein): Bis Ende des Jahres wird die Stadt alle Busse ausgetauscht haben (sẽ xong trước một mốc) – ở đây không có zu. Báo cáo môi trường còn hay dùng sich lassen (Der Ausstoß lässt sich verringern = có thể giảm được), cụm phân từ mở rộng (die von der Firma veröffentlichten Zahlen) và nguồn tin (laut dem Bericht, dem Bericht zufolge). Từ ghép nhiều tầng như der Nachhaltigkeitsbericht có âm nối -s- sau -keit và lấy giống của từ cuối."
@@ -163,7 +163,7 @@ body:
     right: Er bestreitet, gewarnt worden zu sein.
     target_lang: de
     note:
-      vi: "Bị động quá khứ luôn dùng worden; geworden chỉ dùng khi werden nghĩa là \"trở nên\"."
+      vi: "Trong bị động (Perfekt, nguyên thể quá khứ) dùng worden; geworden là Partizip II khi werden là động từ chính nghĩa \"trở nên\" (Er ist Arzt geworden)."
   - type: common_mistake
     wrong: Er behauptet, die Firma die Ziele erreicht zu haben.
     right: Er behauptet, dass die Firma die Ziele erreicht hat.
@@ -175,7 +175,7 @@ body:
       - vi: "Việc đã xảy ra trước: Partizip II + zu haben/sein (reduziert zu haben, angekommen zu sein)."
       - vi: "haben/sein chọn như Perfekt; động từ tách: eingehalten zu haben."
       - vi: "Bị động: Partizip II + zu werden; bị động đã xảy ra: Partizip II + worden zu sein."
-      - vi: "Chỉ dùng cụm zu khi cùng chủ ngữ; khác chủ ngữ → dass."
+      - vi: "Sau behaupten, hoffen …: cùng chủ ngữ → cụm zu; khác chủ ngữ → dass."
       - vi: "Sau modal không có zu; Futur II (wird … ausgetauscht haben) cũng không có zu."
       - vi: "Từ vựng: der Treibhauseffekt, das Treibhausgas, die Emission, der Ausstoß, reduzieren, die Erderwärmung, das Abkommen, klimaneutral."
 exercises:
@@ -248,7 +248,7 @@ exercises:
     difficulty: 3
     item: de:item:b2u07-g-infinitiv-perfekt
     prompt:
-      template: "Die Firma ist stolz, ihr Ziel {{b1}} zu {{b2}}. (erreichen) Der Zug war pünktlich: Wir sind froh, rechtzeitig zur Konferenz {{b3}} zu {{b4}}. (ankommen)"
+      template: "Die Firma hat es geschafft und ist stolz, ihr Ziel {{b1}} zu {{b2}}. (erreichen) Der Zug war pünktlich: Wir sind froh, rechtzeitig zur Konferenz {{b3}} zu {{b4}}. (ankommen)"
       blanks:
         - { id: b1, width_hint: 9 }
         - { id: b2, width_hint: 5 }
@@ -272,7 +272,7 @@ exercises:
         error_tag: participle_form
     explanation:
       vi: "Cả hai việc đã xảy ra trước khi người nói vui/tự hào: Partizip II + zu + haben/sein. erreichen dùng haben (hat erreicht → erreicht zu haben); ankommen là chuyển động đến nơi, dùng sein (ist angekommen → angekommen zu sein)."
-    display_answer: "Die Firma ist stolz, ihr Ziel erreicht zu haben. Der Zug war pünktlich: Wir sind froh, rechtzeitig zur Konferenz angekommen zu sein."
+    display_answer: "Die Firma hat es geschafft und ist stolz, ihr Ziel erreicht zu haben. Der Zug war pünktlich: Wir sind froh, rechtzeitig zur Konferenz angekommen zu sein."
 
   - key: de:exercise:b2u07l1-fill-informiert-worden
     type: fill_blank
@@ -327,6 +327,9 @@ exercises:
         - Das Unternehmen behauptet, seine Abgase reduziert zu haben.
         - Die Firma hat behauptet, ihre Emissionen reduziert zu haben.
         - Das Unternehmen hat behauptet, seine Emissionen reduziert zu haben.
+        - Die Firma behauptete, ihre Emissionen reduziert zu haben.
+        - Das Unternehmen behauptete, seine Emissionen reduziert zu haben.
+        - Die Firma behauptet, ihre eigenen Emissionen reduziert zu haben.
     known_wrong:
       - answer: Die Firma behauptet, ihre Emissionen zu haben reduziert.
         feedback_vi: Partizip II đứng trước zu haben – reduziert zu haben.

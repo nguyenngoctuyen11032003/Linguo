@@ -69,13 +69,13 @@ body:
       vi: "Bạn đã biết mệnh đề quan hệ trỏ một danh từ: der Laden, in dem ich einkaufe. Khi muốn bình luận CẢ câu đứng trước, tiếng Việt nói \"…, điều này …\", còn tiếng Đức dùng was: Mein Nachbar repariert seine Geräte selbst, was ich toll finde. was không trỏ Geräte, mà trỏ việc \"anh ấy tự sửa đồ\"."
   - type: explain
     text:
-      vi: "Nếu động từ trong mệnh đề cần giới từ (sich freuen über, durch), dùng wo + giới từ; giới từ bắt đầu bằng nguyên âm thì thêm r: wodurch, wofür, worüber, woran. Ví dụ: Der Supermarkt verkauft Obst ohne Verpackung, worüber sich viele Kunden freuen. Đây là cùng nhóm từ wo(r)- bạn đã học ở câu hỏi (Worüber freust du dich?)."
+      vi: "Nếu mệnh đề cần một giới từ (động từ có giới từ cố định như sich freuen über, hoặc durch = nhờ/do đó), dùng wo + giới từ; giới từ bắt đầu bằng nguyên âm thì thêm r: wodurch, wofür, worüber, woran. Ví dụ: Der Supermarkt verkauft Obst ohne Verpackung, worüber sich viele Kunden freuen. Đây là cùng nhóm từ wo(r)- bạn đã học ở câu hỏi (Worüber freust du dich?)."
   - type: explain
     text:
-      vi: "Mệnh đề nối tiếp luôn đứng SAU câu chính, có dấu phẩy, và động từ chia đứng cuối: …, was eine große Verschwendung ist. Không dùng das/die/der ở đây, vì không có danh từ nào để trỏ; cũng không dùng darüber (đó là trạng từ của câu chính, kéo theo V2)."
+      vi: "Mệnh đề nối tiếp luôn đứng SAU câu chính, có dấu phẩy, và động từ chia đứng cuối: …, was eine große Verschwendung ist. Không dùng das/die/der làm đại từ quan hệ ở đây, vì không có danh từ nào để trỏ; cũng không dùng darüber (đó là trạng từ của câu chính, kéo theo V2). Lưu ý: tách thành câu mới … Das finde ich toll. (das chỉ định, động từ ở vị trí 2) cũng đúng, nhưng đó là câu chính, không phải mệnh đề quan hệ."
   - type: deep_explain
     text:
-      vi: "So sánh ba loại: (1) trỏ danh từ: das Café, in dem ich arbeite (giới từ + der/die/das theo giống); (2) trỏ đại từ bất định: alles, was …; nichts, was …; das Einzige, was … (đã học ở B1); (3) trỏ cả câu: …, was …; …, wodurch/worüber … Câu mẹo: nếu thay được bằng \"…, và điều đó …\" thì là loại (3). wodurch thường nêu hệ quả (nhờ đó, vì thế), gần nghĩa với dadurch trong câu mới: Das Café verwendet Mehrwegbecher. Dadurch entsteht weniger Müll. Cũng có thể kết hợp với indem: Man spart Ressourcen, indem man Dinge länger nutzt, was oft auch billiger ist."
+      vi: "So sánh ba loại: (1) trỏ danh từ: das Café, in dem ich arbeite (giới từ + der/die/das theo giống); (2) trỏ đại từ bất định: alles, was …; nichts, was …; das Einzige, was …; das Beste, was … (đã học ở B1; trỏ nơi chốn thì dùng wo: die Stadt, wo ich wohne); (3) trỏ cả câu: …, was …; …, wodurch/worüber … Câu mẹo: nếu thay được bằng \"…, và điều đó …\" thì là loại (3). wodurch thường nêu hệ quả (nhờ đó, vì thế), gần nghĩa với dadurch trong câu mới: Das Café verwendet Mehrwegbecher. Dadurch entsteht weniger Müll. Cũng có thể kết hợp với indem: Man spart Ressourcen, indem man Dinge länger nutzt, was oft auch billiger ist."
   - type: example
     target: Viele Menschen werfen Lebensmittel weg, was eine große Verschwendung ist.
     target_lang: de
@@ -160,7 +160,7 @@ body:
   - type: summary
     points:
       - vi: "Trỏ cả câu trước: …, was … (động từ cuối)."
-      - vi: "Động từ cần giới từ: …, wodurch / wofür / worüber / woran …"
+      - vi: "Cần giới từ: …, wodurch / wofür / worüber / woran …"
       - vi: "Không dùng das/die/der (không có danh từ để trỏ) và không dùng darüber (trạng từ câu chính)."
       - vi: "Trỏ danh từ: der Laden, in dem …; trỏ alles/nichts: alles, was …"
       - vi: "Mệnh đề nối tiếp luôn đứng sau câu chính, có dấu phẩy."
@@ -305,6 +305,11 @@ exercises:
         - Viele Menschen nutzen Einwegbecher, was ich nicht gut finde.
         - Viele Menschen benutzen Einwegbecher, was ich schlecht finde.
         - Viele Leute benutzen Einwegbecher, was ich schlecht finde.
+        - Viele nutzen Einwegbecher, was ich nicht gut finde.
+        - Viele verwenden Einwegbecher, was ich nicht gut finde.
+        - Viele Leute nutzen Einwegbecher, was ich nicht gut finde.
+        - Viele benutzen Einwegbecher, was ich schlecht finde.
+        - Viele Menschen verwenden Einwegbecher, was ich schlecht finde.
     known_wrong:
       - answer: Viele Menschen benutzen Einwegbecher, das ich nicht gut finde.
         feedback_vi: Trỏ cả câu (việc dùng cốc một lần) thì dùng was, không dùng das.

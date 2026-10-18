@@ -70,10 +70,10 @@ body:
       vi: "Bài lập luận (Erörterung) giống bài nghị luận ở trường Việt Nam: mở bài – thân bài – kết bài. Mở bài nêu vấn đề và vì sao nó quan trọng; thân bài gồm lý lẽ ủng hộ (Pro) và phản đối (Contra); kết bài cân nhắc hai bên và nêu ý kiến riêng. Mỗi lý lẽ nên có ba phần: luận điểm, lý do (weil …, denn …), ví dụ (So …, Zum Beispiel …)."
   - type: explain
     text:
-      vi: "Nêu lý lẽ ủng hộ: Für … spricht, dass … (Für einen fleischfreien Tag spricht, dass …) hoặc Ein wichtiges Argument dafür ist, dass … Nêu phản đề: Dagegen spricht, dass … / Dagegen lässt sich einwenden, dass … / Gegner argumentieren, dass … Thêm ý: Ein weiteres Argument ist … Sau tất cả các cụm này là câu dass, động từ đứng cuối."
+      vi: "Nêu lý lẽ ủng hộ: Für … spricht, dass … (Für einen fleischfreien Tag spricht, dass …) hoặc Ein wichtiges Argument dafür ist, dass … Nêu phản đề: Dagegen spricht, dass … / Dagegen lässt sich einwenden, dass … / Gegner argumentieren, dass … Thêm ý: Ein weiteres Argument ist, dass … / Nicht zuletzt spricht dafür, dass … (cuối cùng nhưng không kém quan trọng). Sau các cụm này thường là câu dass, động từ đứng cuối; Ein weiteres Argument ist … cũng có thể đi thẳng với danh từ (… ist der Preis)."
   - type: explain
     text:
-      vi: "Kết luận: Wägt man die Argumente ab, … (= Wenn man die Argumente abwägt, …), Alles in allem …, Abschließend möchte ich sagen, dass …, Ich komme zu dem Schluss, dass … Các cụm Alles in allem, Abschließend, Zusammenfassend đứng ở vị trí 1 nên động từ chia đứng ngay sau. Kết luận phải khớp với phần thân: nếu bạn nêu nhiều ưu điểm thì đừng bất ngờ kết luận ngược lại."
+      vi: "Kết luận: Wägt man die Argumente ab, … (= Wenn man die Argumente abwägt, …), Alles in allem …, Abschließend möchte ich sagen, dass …, Ich komme zu dem Schluss, dass … Khi Alles in allem, Abschließend, Zusammenfassend mở đầu câu (vị trí 1), động từ chia đứng ngay sau. Kết luận phải khớp với phần thân: nếu bạn nêu nhiều ưu điểm thì đừng bất ngờ kết luận ngược lại."
   - type: deep_explain
     text:
       vi: "Wägt man die Argumente ab, … là câu điều kiện không có wenn: động từ wägt đứng đầu, ab ở cuối vế; vế sau bắt đầu bằng động từ (überwiegen) hoặc so + động từ. Để bài liền mạch, hãy dùng từ nối đã học: einerseits … andererseits, allerdings, jedoch (đối lập); auch wenn (nhượng bộ); folglich, somit (kết luận); je … desto (so sánh tăng tiến). Khi cân nhắc, nói rõ bạn coi trọng điều gì hơn: Ich gewichte den Umweltschutz höher als die Kosten. Theo cấu trúc tại thời điểm soạn bài, phần nói của Goethe-Zertifikat B2 có thảo luận cặp, cần đưa lý lẽ, phản biện và cùng đi đến kết luận; định dạng có thể thay đổi, hãy xem tài liệu mẫu chính thức."
@@ -97,7 +97,7 @@ body:
     translation:
       vi: Một mặt, tiền cọc cho cốc cà phê là hợp lý, mặt khác nó có nghĩa là nhiều việc hơn cho các quán.
     note:
-      vi: "einerseits … andererseits: hai mặt của vấn đề; cả hai đứng ở vị trí 1, động từ ngay sau."
+      vi: "einerseits … andererseits: hai mặt của vấn đề; ở đây cả hai đứng ở vị trí 1 nên động từ ngay sau (chúng cũng có thể đứng sau động từ: Das ist einerseits sinnvoll …)."
   - type: example
     target: Je mehr Menschen Mehrwegbecher benutzen, desto weniger Müll entsteht.
     target_lang: de
@@ -313,6 +313,9 @@ exercises:
         - Für ein Pfand für Kaffeebecher spricht, dass es weniger Müll gibt.
         - Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll entstehen wird.
         - Für ein Pfand auf Kaffeebecher spricht, dass es weniger Müll geben wird.
+        - Für ein Pfand auf Kaffeebecher spricht, dass so weniger Müll entsteht.
+        - Für ein Pfand auf Kaffeebecher spricht, dass dadurch weniger Müll entsteht.
+        - Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll anfällt.
     known_wrong:
       - answer: Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll entsteht wird.
         feedback_vi: Futur trong câu phụ là nguyên thể + werden ở cuối – entstehen wird (hoặc dùng Präsens entsteht).
