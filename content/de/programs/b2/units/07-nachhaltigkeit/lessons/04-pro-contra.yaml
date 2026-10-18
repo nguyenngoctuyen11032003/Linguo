@@ -1,0 +1,395 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u07-pro-contra
+order_index: 4
+level: b2
+title:
+  vi: Ủng hộ và phản đối – lập luận (Pro und Contra)
+objectives:
+  - vi: Lập luận có cấu trúc (luận điểm – lý do – ví dụ – phản đề – kết luận) khi nói và viết.
+  - vi: Dùng Redemittel Für … spricht, dass … / Dagegen lässt sich einwenden, dass … / Wägt man die Argumente ab, … / Alles in allem …
+  - vi: Nghe một cuộc thảo luận ngắn và nhận ra lý lẽ ủng hộ, phản đối và kết luận.
+estimated_minutes: 22
+skills: [speaking, listening, writing]
+prerequisites: [de:lesson:b2u07-weiterfuehrender-relativsatz]
+items:
+  - item: de:item:b2u07-g-argumentation-redemittel
+  - item: de:item:b2u07-gegenargument
+  - item: de:item:b2u07-ueberzeugend
+  - item: de:item:b2u07-begruendung
+  - item: de:item:b2u07-begruenden
+  - item: de:item:b2u07-schlussfolgerung
+  - item: de:item:b2u07-abschliessend
+  - item: de:item:b2u07-gewichten
+  - item: de:item:b2u07-aspekt
+  - item: de:item:b2u07-befuerworten
+  - item: de:item:b2u07-befuerworter
+  - item: de:item:b2u07-gegner
+  - item: de:item:b2u07-berechtigt
+  - item: de:item:b2u07-ueberwiegen
+  - item: de:item:b2u07-zusammenfassend
+  - item: de:item:b2u07-einleuchtend
+  - item: de:item:b2u07-stichhaltig
+  - item: de:item:b1u04-g-je-desto
+    role: reuse
+  - item: de:item:b2u01-g-adversativ-konzessiv
+    role: reuse
+  - item: de:item:b2u01-g-auch-wenn
+    role: reuse
+  - item: de:item:b2u01-g-konsekutiv-formal
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+  - item: de:item:b1u06-argument
+    role: reuse
+  - item: de:item:b1u06-standpunkt
+    role: reuse
+  - item: de:item:b1u06-vorteil
+    role: reuse
+  - item: de:item:b1u06-nachteil
+    role: reuse
+  - item: de:item:b1u06-ueberzeugen
+    role: reuse
+  - item: de:item:b2u05-g-textkonnektoren
+    role: reuse
+  - item: de:item:b2u05-g-zumal
+    role: reuse
+  - item: de:item:b2u05-g-diskussion-redemittel
+    role: reuse
+  - item: de:item:b2u06-g-konj-ii-modal-vergangenheit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn trình bày được lý lẽ ủng hộ và phản đối rồi đưa ra kết luận có cân nhắc, ví dụ: \"Für einen fleischfreien Tag spricht, dass … Dagegen lässt sich einwenden, dass … Wägt man die Argumente ab, überwiegen meiner Meinung nach die Vorteile.\""
+  - type: explain
+    text:
+      vi: "Bài lập luận (Erörterung) giống bài nghị luận ở trường Việt Nam: mở bài – thân bài – kết bài. Mở bài nêu vấn đề và vì sao nó quan trọng; thân bài gồm lý lẽ ủng hộ (Pro) và phản đối (Contra); kết bài cân nhắc hai bên và nêu ý kiến riêng. Mỗi lý lẽ nên có ba phần: luận điểm, lý do (weil …, denn …), ví dụ (So …, Zum Beispiel …)."
+  - type: explain
+    text:
+      vi: "Nêu lý lẽ ủng hộ: Für … spricht, dass … (Für einen fleischfreien Tag spricht, dass …) hoặc Ein wichtiges Argument dafür ist, dass … Nêu phản đề: Dagegen spricht, dass … / Dagegen lässt sich einwenden, dass … / Gegner argumentieren, dass … Thêm ý: Ein weiteres Argument ist … Sau tất cả các cụm này là câu dass, động từ đứng cuối."
+  - type: explain
+    text:
+      vi: "Kết luận: Wägt man die Argumente ab, … (= Wenn man die Argumente abwägt, …), Alles in allem …, Abschließend möchte ich sagen, dass …, Ich komme zu dem Schluss, dass … Các cụm Alles in allem, Abschließend, Zusammenfassend đứng ở vị trí 1 nên động từ chia đứng ngay sau. Kết luận phải khớp với phần thân: nếu bạn nêu nhiều ưu điểm thì đừng bất ngờ kết luận ngược lại."
+  - type: deep_explain
+    text:
+      vi: "Wägt man die Argumente ab, … là câu điều kiện không có wenn: động từ wägt đứng đầu, ab ở cuối vế; vế sau bắt đầu bằng động từ (überwiegen) hoặc so + động từ. Để bài liền mạch, hãy dùng từ nối đã học: einerseits … andererseits, allerdings, jedoch (đối lập); auch wenn (nhượng bộ); folglich, somit (kết luận); je … desto (so sánh tăng tiến). Khi cân nhắc, nói rõ bạn coi trọng điều gì hơn: Ich gewichte den Umweltschutz höher als die Kosten. Theo cấu trúc tại thời điểm soạn bài, phần nói của Goethe-Zertifikat B2 có thảo luận cặp, cần đưa lý lẽ, phản biện và cùng đi đến kết luận; định dạng có thể thay đổi, hãy xem tài liệu mẫu chính thức."
+  - type: example
+    target: Für einen fleischfreien Tag in der Kantine spricht, dass er die Umwelt entlastet.
+    target_lang: de
+    translation:
+      vi: Lý lẽ ủng hộ một ngày không thịt ở căng-tin là nó giảm gánh nặng cho môi trường.
+    note:
+      vi: "Für … ở vị trí 1, động từ spricht ở vị trí 2, chủ ngữ thật là câu dass."
+  - type: example
+    target: Dagegen lässt sich einwenden, dass manche Schüler dann weniger essen.
+    target_lang: de
+    translation:
+      vi: Có thể phản bác rằng khi đó một số học sinh sẽ ăn ít hơn.
+    note:
+      vi: "sich einwenden lassen = có thể phản bác (cấu trúc sich lassen); dass + động từ cuối."
+  - type: example
+    target: Einerseits ist ein Pfand auf Kaffeebecher sinnvoll, andererseits bedeutet es mehr Arbeit für die Cafés.
+    target_lang: de
+    translation:
+      vi: Một mặt, tiền cọc cho cốc cà phê là hợp lý, mặt khác nó có nghĩa là nhiều việc hơn cho các quán.
+    note:
+      vi: "einerseits … andererseits: hai mặt của vấn đề; cả hai đứng ở vị trí 1, động từ ngay sau."
+  - type: example
+    target: Je mehr Menschen Mehrwegbecher benutzen, desto weniger Müll entsteht.
+    target_lang: de
+    translation:
+      vi: Càng nhiều người dùng cốc dùng nhiều lần thì càng ít rác.
+    note:
+      vi: "je + so sánh hơn (động từ cuối), desto + so sánh hơn (động từ ngay sau): một lý lẽ có ví dụ rõ ràng."
+  - type: example
+    target: Auch wenn das Gegenargument berechtigt ist, überzeugt es mich nicht ganz.
+    target_lang: de
+    translation:
+      vi: Dù lý lẽ phản bác có cơ sở, nó vẫn chưa hoàn toàn thuyết phục tôi.
+    note:
+      vi: "auch wenn + câu phụ đứng đầu, động từ chính überzeugt ngay sau dấu phẩy."
+  - type: example
+    target: Ich vertrete den Standpunkt, dass jeder seinen eigenen Becher mitbringen sollte.
+    target_lang: de
+    translation:
+      vi: Tôi giữ quan điểm rằng mỗi người nên mang cốc riêng.
+    note:
+      vi: "den Standpunkt vertreten, dass … = giữ quan điểm rằng …; trang trọng hơn Ich finde, dass …"
+  - type: example
+    target: Mehrwegbecher sparen Müll. Darüber hinaus sind sie auf Dauer billiger, zumal manche Cafés dafür einen Rabatt geben.
+    target_lang: de
+    translation:
+      vi: Cốc dùng nhiều lần giúp bớt rác. Hơn nữa, về lâu dài chúng rẻ hơn, nhất là khi một số quán còn giảm giá cho khách mang cốc.
+    note:
+      vi: "Darüber hinaus ở vị trí 1 thêm một lý lẽ cùng phía (động từ sind ngay sau); zumal + câu phụ thêm lý do làm ý trước càng thuyết phục."
+  - type: example
+    target: Das mag sein, aber man hätte die Schüler vorher fragen sollen.
+    target_lang: de
+    translation:
+      vi: Có thể là vậy, nhưng lẽ ra người ta nên hỏi ý kiến học sinh trước.
+    note:
+      vi: "Das mag sein, aber … = thừa nhận một phần rồi phản bác khi thảo luận; hätte … fragen sollen = lẽ ra nên (phê bình việc đã qua)."
+  - type: example
+    target: Wägt man die Argumente ab, überwiegen meiner Meinung nach die Vorteile. Folglich befürworte ich den Vorschlag.
+    target_lang: de
+    translation:
+      vi: Cân nhắc các lý lẽ thì theo tôi ưu điểm nhiều hơn. Vì vậy tôi tán thành đề xuất này.
+    note:
+      vi: "Vế sau câu Wägt man … ab bắt đầu bằng động từ überwiegen; folglich ở vị trí 1 nên befürworte đứng ngay sau."
+  - type: common_mistake
+    wrong: "Ich finde einen fleischfreien Tag gut. Alles in allem bin ich dafür."
+    right: "Ich finde einen fleischfreien Tag gut, weil er die Umwelt entlastet. So essen die Schüler zum Beispiel mehr Gemüse. Alles in allem bin ich dafür."
+    target_lang: de
+    note:
+      vi: "Ý kiến không có lý do và ví dụ thì không thuyết phục; mỗi luận điểm cần weil … và zum Beispiel …"
+  - type: common_mistake
+    wrong: "Mehrwegbecher sparen Müll, Ressourcen und Geld. Alles in allem überwiegen die Nachteile."
+    right: "Mehrwegbecher sparen Müll, Ressourcen und Geld. Alles in allem überwiegen die Vorteile."
+    target_lang: de
+    note:
+      vi: "Kết luận phải khớp với phần thân bài; muốn kết luận khác thì phải trình bày các nhược điểm trước."
+  - type: common_mistake
+    wrong: Wägt man die Argumente ab, die Vorteile überwiegen.
+    right: Wägt man die Argumente ab, überwiegen die Vorteile.
+    target_lang: de
+    note:
+      vi: "Vế Wägt man … ab là vị trí 1 của cả câu, nên động từ überwiegen đứng ngay sau dấu phẩy."
+  - type: summary
+    points:
+      - vi: "Cấu trúc: mở bài – lý lẽ ủng hộ – lý lẽ phản đối – cân nhắc và kết luận."
+      - vi: "Mỗi luận điểm: ý chính + lý do (weil/denn) + ví dụ (zum Beispiel)."
+      - vi: "Pro: Für … spricht, dass … · Ein weiteres Argument ist …"
+      - vi: "Contra: Dagegen spricht, dass … · Dagegen lässt sich einwenden, dass …"
+      - vi: "Kết luận: Wägt man die Argumente ab, + động từ … · Alles in allem / Abschließend + động từ …"
+      - vi: "Kết luận phải khớp với thân bài; nói rõ bạn coi trọng lý lẽ nào hơn (gewichten)."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u07l4-listen-pro
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Für einen fleischfreien Tag in der Kantine spricht vor allem, dass er gut für die Umwelt ist. Ein weiteres Argument ist, dass die Schüler neue Gerichte kennenlernen.
+      options:
+        - { id: p3a, text: "Người nói nêu hai lý lẽ ủng hộ: tốt cho môi trường và học sinh được biết món ăn mới.", lang: vi }
+        - { id: p7b, text: "Người nói nêu hai lý lẽ phản đối: tốn kém và học sinh không thích món mới.", lang: vi }
+        - { id: p1c, text: "Người nói nêu một lý lẽ ủng hộ và một lý lẽ phản đối.", lang: vi }
+        - { id: p5d, text: "Người nói kết luận rằng căng-tin nên bỏ thịt hoàn toàn.", lang: vi }
+    answer:
+      correct_option_id: p3a
+    explanation:
+      vi: "Für … spricht, dass … mở lý lẽ ủng hộ thứ nhất (gut für die Umwelt); Ein weiteres Argument ist … thêm lý lẽ thứ hai cùng phía (neue Gerichte kennenlernen). Không có phản đề hay kết luận."
+    display_answer: "Người nói nêu hai lý lẽ ủng hộ: tốt cho môi trường và học sinh được biết món ăn mới."
+
+  - key: de:exercise:b2u07l4-listen-contra
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u07-gegenargument
+    prompt:
+      audio_asset_id: null
+      fallback_text: Dagegen lässt sich einwenden, dass manche Schüler an diesem Tag gar nichts essen. Dieses Gegenargument halte ich für durchaus berechtigt.
+      options:
+        - { id: c2a, text: "Có thể phản bác rằng vào ngày đó một số học sinh sẽ không ăn gì; người nói thấy lý lẽ này hoàn toàn có cơ sở.", lang: vi }
+        - { id: c6b, text: "Có thể phản bác rằng vào ngày đó một số học sinh sẽ không ăn gì; người nói thấy lý lẽ này vô lý.", lang: vi }
+        - { id: c9c, text: "Người nói ủng hộ vì học sinh sẽ ăn nhiều hơn vào ngày đó.", lang: vi }
+        - { id: c4d, text: "Người nói kể rằng hôm qua nhiều học sinh không ăn gì ở căng-tin.", lang: vi }
+    answer:
+      correct_option_id: c2a
+    explanation:
+      vi: "Dagegen lässt sich einwenden, dass … = có thể phản bác rằng … (mở phản đề). gar nichts essen = không ăn gì cả. halte … für durchaus berechtigt = cho là hoàn toàn có cơ sở."
+    display_answer: Có thể phản bác rằng vào ngày đó một số học sinh sẽ không ăn gì; người nói thấy lý lẽ này hoàn toàn có cơ sở.
+
+  - key: de:exercise:b2u07l4-mcq-schluss
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      stem: "Cụm nào dùng để mở phần KẾT LUẬN của bài lập luận?"
+      stem_lang: vi
+      options:
+        - { id: s3a, text: "Wägt man die Argumente ab, …", lang: de }
+        - { id: s7b, text: "Für diesen Vorschlag spricht, dass …", lang: de }
+        - { id: s1c, text: "Dagegen lässt sich einwenden, dass …", lang: de }
+        - { id: s5d, text: "Ein weiteres Argument ist, dass …", lang: de }
+    answer:
+      correct_option_id: s3a
+    explanation:
+      vi: "Wägt man die Argumente ab = khi cân nhắc các lý lẽ – mở phần kết luận. Für … spricht nêu lý lẽ ủng hộ, Dagegen lässt sich einwenden nêu phản đề, Ein weiteres Argument thêm một lý lẽ trong thân bài."
+    display_answer: "Wägt man die Argumente ab, …"
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u07l4-fill-redemittel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      template: "Für einen fleischfreien Tag {{b1}} (sprechen), dass er die Umwelt entlastet. Dagegen lässt sich {{b2}} (einwenden), dass manche Schüler dann weniger essen. Ein {{b3}} (weiter) Argument ist der Preis."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 9 }
+    answer:
+      blanks:
+        b1: [spricht]
+        b2: [einwenden]
+        b3: [weiteres]
+    known_wrong:
+      - answer: sprechen
+        feedback_vi: Chủ ngữ là cả câu dass (số ít), nên động từ chia ngôi 3 số ít – spricht.
+        error_tag: verb_form
+      - answer: weiteren
+        feedback_vi: Sau ein với danh từ giống trung (das Argument) ở Nominativ, tính từ có đuôi -es – ein weiteres Argument.
+        error_tag: adj_ending
+      - answer: eingewendet
+        feedback_vi: Sau lässt sich cần nguyên thể – einwenden.
+        error_tag: verb_form
+    explanation:
+      vi: "Für … spricht, dass …: câu dass là chủ ngữ nên spricht (ngôi 3 số ít). lässt sich + nguyên thể ở cuối: einwenden. das Argument giống trung, sau ein ở Nominativ: weiteres."
+    display_answer: "Für einen fleischfreien Tag spricht, dass er die Umwelt entlastet. Dagegen lässt sich einwenden, dass manche Schüler dann weniger essen. Ein weiteres Argument ist der Preis."
+
+  - key: de:exercise:b2u07l4-fill-begruenden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-begruendung
+    prompt:
+      template: "Bitte {{b1}} Sie Ihre Meinung. (Begründung, Verb) Eine Meinung ohne {{b2}} überzeugt niemanden. (begründen, Nomen) {{b3}} möchte ich sagen, dass beide Seiten gute Argumente haben. (abschließen, Adverb)"
+      blanks:
+        - { id: b1, width_hint: 10 }
+        - { id: b2, width_hint: 11 }
+        - { id: b3, width_hint: 13 }
+    answer:
+      blanks:
+        b1: [begründen]
+        b2: [Begründung]
+        b3: [Abschließend]
+    known_wrong:
+      - answer: begründet
+        feedback_vi: Câu mệnh lệnh với Sie dùng dạng nguyên thể – Bitte begründen Sie …
+        error_tag: verb_form
+      - answer: Grund
+        feedback_vi: Cần danh từ tạo từ begründen (lý do được nêu ra) – die Begründung.
+        error_tag: word_choice
+      - answer: Abschließen
+        feedback_vi: Mở phần kết cần trạng từ (dạng Partizip I) – Abschließend.
+        error_tag: word_choice
+    explanation:
+      vi: "Mệnh lệnh lịch sự: Bitte begründen Sie … (động từ nguyên thể + Sie). begründen → die Begründung (đuôi -ung). abschließen → abschließend (Partizip I làm trạng từ), đứng ở vị trí 1 nên möchte ngay sau."
+    display_answer: "Bitte begründen Sie Ihre Meinung. Eine Meinung ohne Begründung überzeugt niemanden. Abschließend möchte ich sagen, dass beide Seiten gute Argumente haben."
+
+  - key: de:exercise:b2u07l4-tr-pfand
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      source_text: "Lý lẽ ủng hộ việc đặt tiền cọc cho cốc cà phê là sẽ có ít rác hơn. (dùng Für … spricht, dass …)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll entsteht.
+        - Für ein Pfand auf Kaffeebecher spricht, dass es weniger Müll gibt.
+        - Für ein Pfand auf Kaffeebecher spricht, dass dann weniger Müll entsteht.
+        - Für ein Pfand auf Kaffeebecher spricht, dass es dann weniger Müll gibt.
+        - Für ein Pfand auf Kaffeebecher spricht, dass weniger Abfall entsteht.
+        - Für ein Pfand auf Kaffeebecher spricht, dass es weniger Abfall gibt.
+        - Für ein Pfand für Kaffeebecher spricht, dass weniger Müll entsteht.
+        - Für ein Pfand für Kaffeebecher spricht, dass es weniger Müll gibt.
+        - Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll entstehen wird.
+        - Für ein Pfand auf Kaffeebecher spricht, dass es weniger Müll geben wird.
+    known_wrong:
+      - answer: Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll entsteht wird.
+        feedback_vi: Futur trong câu phụ là nguyên thể + werden ở cuối – entstehen wird (hoặc dùng Präsens entsteht).
+        error_tag: verb_form
+      - answer: Für ein Pfand auf Kaffeebecher spricht, dass entsteht weniger Müll.
+        feedback_vi: Câu dass là câu phụ, động từ đứng cuối – dass weniger Müll entsteht.
+        error_tag: verb_position
+      - answer: Für ein Pfand auf Kaffeebecher sprechen, dass weniger Müll entsteht.
+        feedback_vi: Chủ ngữ là cả câu dass (số ít) – spricht.
+        error_tag: verb_form
+    explanation:
+      vi: "Für ein Pfand auf Kaffeebecher (vị trí 1) – spricht (vị trí 2) – câu dass làm chủ ngữ, động từ cuối: dass weniger Müll entsteht / dass es weniger Müll gibt."
+    display_answer: Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll entsteht.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u07l4-listen-abwaegung
+    type: listen
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u07-ueberwiegen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wägt man die Argumente ab, überwiegen für mich die Vorteile. Auch wenn ein fleischfreier Tag nicht allen gefällt, befürworte ich den Vorschlag. Folglich sollte die Schule ihn zunächst ein halbes Jahr lang testen.
+      options:
+        - { id: a3a, text: "Người nói thấy ưu điểm nhiều hơn, tán thành đề xuất dù không phải ai cũng thích, và đề nghị trường thử trước nửa năm.", lang: vi }
+        - { id: a7b, text: "Người nói thấy nhược điểm nhiều hơn, nên phản đối đề xuất.", lang: vi }
+        - { id: a1c, text: "Người nói tán thành đề xuất vì ai cũng thích ngày không thịt, và muốn áp dụng ngay vĩnh viễn.", lang: vi }
+        - { id: a5d, text: "Người nói chưa có ý kiến và muốn hỏi học sinh trong nửa năm.", lang: vi }
+    answer:
+      correct_option_id: a3a
+    explanation:
+      vi: "überwiegen … die Vorteile = ưu điểm nhiều hơn. Auch wenn … nicht allen gefällt = dù không phải ai cũng thích (nhượng bộ). befürworte = tán thành. Folglich … zunächst ein halbes Jahr lang testen = vì vậy nên thử trước trong nửa năm."
+    display_answer: Người nói thấy ưu điểm nhiều hơn, tán thành đề xuất dù không phải ai cũng thích, và đề nghị trường thử trước nửa năm.
+
+  - key: de:exercise:b2u07l4-wb-einwenden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Có thể phản bác rằng cốc dùng nhiều lần phải được rửa.\""
+      tokens:
+        - { id: w-muessen, text: müssen }
+        - { id: w-sich, text: sich }
+        - { id: w-dass, text: dass }
+        - { id: w-dagegen, text: Dagegen }
+        - { id: w-gespuelt, text: gespült }
+        - { id: w-komma, text: "," }
+        - { id: w-einwenden, text: einwenden }
+        - { id: w-becher, text: Mehrwegbecher }
+        - { id: w-laesst, text: lässt }
+        - { id: w-werden, text: werden }
+    answer:
+      orders:
+        - [w-dagegen, w-laesst, w-sich, w-einwenden, w-komma, w-dass, w-becher, w-gespuelt, w-werden, w-muessen]
+    explanation:
+      vi: "Dagegen (vị trí 1) – lässt (vị trí 2) – sich – nguyên thể einwenden cuối vế. Câu dass: bị động với modal ở cuối theo thứ tự gespült werden müssen (Partizip II – werden – müssen)."
+    display_answer: Dagegen lässt sich einwenden, dass Mehrwegbecher gespült werden müssen.
+
+  - key: de:exercise:b2u07l4-mcq-passender-schluss
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-schlussfolgerung
+    prompt:
+      stem: "Thân bài nêu ba ưu điểm của cốc dùng nhiều lần (ít rác, tiết kiệm tài nguyên, rẻ hơn về lâu dài) và một nhược điểm nhỏ (phải rửa). Kết luận nào phù hợp nhất?"
+      stem_lang: vi
+      options:
+        - { id: m2a, text: "Alles in allem überwiegen also die Vorteile, deshalb befürworte ich Mehrwegbecher.", lang: de }
+        - { id: m6b, text: "Alles in allem überwiegen also die Nachteile, deshalb bin ich gegen Mehrwegbecher.", lang: de }
+        - { id: m9c, text: "Alles in allem habe ich zu diesem Thema keine Meinung.", lang: de }
+        - { id: m4d, text: "Alles in allem sind Einwegbecher praktischer, weil man sie nicht spülen muss.", lang: de }
+    answer:
+      correct_option_id: m2a
+    explanation:
+      vi: "Kết luận phải khớp với thân bài: ba ưu điểm nặng hơn một nhược điểm nhỏ, nên überwiegen die Vorteile và tán thành (befürworte). Các phương án khác mâu thuẫn với phần thân hoặc không có lập trường."
+    display_answer: Alles in allem überwiegen also die Vorteile, deshalb befürworte ich Mehrwegbecher.

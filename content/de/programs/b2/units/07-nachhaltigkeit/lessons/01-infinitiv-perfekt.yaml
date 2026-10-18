@@ -1,0 +1,413 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u07-infinitiv-perfekt
+order_index: 1
+level: b2
+title:
+  vi: Đã giảm được… – nguyên thể quá khứ và bị động (Er behauptet, die Emissionen reduziert zu haben.)
+objectives:
+  - vi: Đọc báo cáo môi trường và thuật lại cam kết, kết quả của doanh nghiệp, thành phố.
+  - vi: Dùng nguyên thể quá khứ (reduziert zu haben, angekommen zu sein) khi việc đã xảy ra trước.
+  - vi: Dùng nguyên thể bị động (informiert zu werden, gewarnt worden zu sein) sau hoffen, erwarten, bestreiten …
+estimated_minutes: 22
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u06-wiederholung]
+items:
+  - item: de:item:b2u07-g-infinitiv-perfekt
+  - item: de:item:b2u07-g-infinitiv-passiv
+  - item: de:item:b2u07-treibhauseffekt
+  - item: de:item:b2u07-treibhausgas
+  - item: de:item:b2u07-emission
+  - item: de:item:b2u07-ausstoss
+  - item: de:item:b2u07-reduzieren
+  - item: de:item:b2u07-erderwaermung
+  - item: de:item:b2u07-abkommen
+  - item: de:item:b2u07-klimaneutral
+  - item: de:item:b2u07-kohlendioxid
+  - item: de:item:b2u07-fossil
+  - item: de:item:b2u07-brennstoff
+  - item: de:item:b2u07-verringern
+  - item: de:item:b2u07-sich-verpflichten
+  - item: de:item:b2u07-einhalten
+  - item: de:item:b2u07-atmosphaere
+  - item: de:item:b2u07-nachhaltigkeitsbericht
+  - item: de:item:a2u06-g-zu-infinitiv
+    role: reuse
+  - item: de:item:b1u03-g-passiv-praesens
+    role: reuse
+  - item: de:item:b1u06-g-komposita-fugen
+    role: reuse
+  - item: de:item:b2u02-g-sich-lassen
+    role: reuse
+  - item: de:item:b2u02-g-partizipialattribut-erweitert
+    role: reuse
+  - item: de:item:b2u02-g-grafik-redemittel
+    role: reuse
+  - item: de:item:b2u03-g-futur-ii
+    role: reuse
+  - item: de:item:b2u04-g-quellenangabe
+    role: reuse
+  - item: de:item:b1u06-klimawandel
+    role: reuse
+  - item: de:item:b1u06-klimaschutz
+    role: reuse
+  - item: de:item:b1u03-ziel
+    role: reuse
+  - item: de:item:b1u03-erreichen
+    role: reuse
+  - item: de:item:b1u10-behaupten
+    role: reuse
+  - item: de:item:b1u06-erneuerbar
+    role: reuse
+  - item: de:item:b2u06-g-konjunktiv-ii-vergangenheit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn đọc và thuật lại được báo cáo môi trường, ví dụ: \"Die Firma behauptet, ihre Emissionen reduziert zu haben. Die Anwohner erwarten, besser informiert zu werden.\""
+  - type: explain
+    text:
+      vi: "Bạn đã biết cụm zu + nguyên thể: Die Firma verspricht, die Emissionen zu reduzieren (việc ở hiện tại/tương lai). Khi việc trong cụm zu đã xảy ra TRƯỚC, dùng nguyên thể quá khứ (Infinitiv Perfekt): Partizip II + zu haben/sein: Die Firma behauptet, die Emissionen reduziert zu haben. Tiếng Việt chỉ thêm \"đã\" (khẳng định đã giảm), còn tiếng Đức phải đổi cả dạng động từ."
+  - type: explain
+    text:
+      vi: "Chọn haben hay sein giống như ở Perfekt: erreicht zu haben (hat erreicht), angekommen zu sein (ist angekommen). Thứ tự cố định ở cuối cụm: Partizip II – zu – haben/sein. Với động từ tách, Partizip II đã có ge- ở giữa nên không chèn zu: eingehalten zu haben."
+  - type: explain
+    text:
+      vi: "Khi chủ ngữ CHỊU tác động, dùng nguyên thể bị động: Partizip II + zu werden (Die Anwohner hoffen, informiert zu werden = mong được thông báo). Nếu việc bị động đã xảy ra trước: Partizip II + worden zu sein (Er bestreitet, gewarnt worden zu sein = phủ nhận việc đã được cảnh báo); ở đây luôn là worden, không phải geworden."
+  - type: explain
+    text:
+      vi: "Cụm zu chỉ dùng khi chủ ngữ ngầm trùng với chủ ngữ câu chính (người khẳng định cũng là người đã giảm). Khác chủ ngữ thì dùng dass: Er behauptet, dass die Firma die Ziele erreicht hat. Sau động từ khiếm khuyết không có zu: Die Emissionen müssen reduziert werden."
+  - type: deep_explain
+    text:
+      vi: "Động từ hay đi với nguyên thể quá khứ: behaupten, bestreiten (phủ nhận), zugeben (thừa nhận), bedauern (tiếc), sich erinnern, froh/stolz sein; với nguyên thể bị động: hoffen, erwarten, verlangen, Angst haben, befürchten. Đừng nhầm với Futur II (werden + Partizip II + haben/sein): Bis Ende des Jahres wird die Stadt alle Busse ausgetauscht haben (sẽ xong trước một mốc) – ở đây không có zu. Báo cáo môi trường còn hay dùng sich lassen (Der Ausstoß lässt sich verringern = có thể giảm được), cụm phân từ mở rộng (die von der Firma veröffentlichten Zahlen) và nguồn tin (laut dem Bericht, dem Bericht zufolge). Từ ghép nhiều tầng như der Nachhaltigkeitsbericht có âm nối -s- sau -keit và lấy giống của từ cuối."
+  - type: example
+    target: Die Firma behauptet, ihre Emissionen deutlich reduziert zu haben.
+    target_lang: de
+    translation:
+      vi: Công ty khẳng định đã giảm đáng kể lượng khí thải của mình.
+    note:
+      vi: "Việc giảm xảy ra trước lời khẳng định: reduziert zu haben (Partizip II + zu haben). reduzieren không có ge- vì đuôi -ieren."
+  - type: example
+    target: Die Ministerin ist froh, pünktlich zur Konferenz über den Klimawandel angereist zu sein.
+    target_lang: de
+    translation:
+      vi: Bà bộ trưởng mừng vì đã đến hội nghị về biến đổi khí hậu đúng giờ.
+    note:
+      vi: "anreisen dùng sein ở Perfekt (ist angereist), nên nguyên thể quá khứ là angereist zu sein."
+  - type: example
+    target: Die Anwohner erwarten, rechtzeitig über die Pläne informiert zu werden.
+    target_lang: de
+    translation:
+      vi: Cư dân mong được thông báo kịp thời về các kế hoạch.
+    note:
+      vi: "Cư dân là người được thông báo (bị động): informiert zu werden. So sánh với bị động hiện tại đã học: Die Anwohner werden informiert."
+  - type: example
+    target: Das Unternehmen bestreitet, vorher gewarnt worden zu sein.
+    target_lang: de
+    translation:
+      vi: Doanh nghiệp phủ nhận việc đã được cảnh báo trước.
+    note:
+      vi: "Bị động đã xảy ra trước: gewarnt worden zu sein – worden, không phải geworden."
+  - type: example
+    target: Viele Städte haben sich verpflichtet, mehr für den Klimaschutz zu tun. Nun behaupten einige, ihr Ziel schon erreicht zu haben.
+    target_lang: de
+    translation:
+      vi: Nhiều thành phố đã cam kết làm nhiều hơn cho việc bảo vệ khí hậu. Giờ một số thành phố khẳng định đã đạt được mục tiêu.
+    note:
+      vi: "Câu 1: cam kết làm (zu tun – việc sắp tới). Câu 2: đã đạt (erreicht zu haben – việc đã xong)."
+  - type: example
+    target: Laut dem Bericht lässt sich der Ausstoß von Treibhausgasen mit erneuerbarer Energie deutlich verringern.
+    target_lang: de
+    translation:
+      vi: Theo báo cáo, lượng khí nhà kính thải ra có thể giảm đáng kể nhờ năng lượng tái tạo.
+    note:
+      vi: "laut + Dativ nêu nguồn tin; sich lassen + nguyên thể = có thể được làm (= kann verringert werden)."
+  - type: example
+    target: "Die von der Firma veröffentlichte Grafik zeigt: Der Stromverbrauch ist innerhalb eines Jahres um ein Viertel gesunken."
+    target_lang: de
+    translation:
+      vi: "Biểu đồ do công ty công bố cho thấy: mức tiêu thụ điện đã giảm một phần tư trong vòng một năm."
+    note:
+      vi: "Ví dụ hư cấu. die von der Firma veröffentlichte Grafik = cụm phân từ mở rộng (= die Grafik, die von der Firma veröffentlicht wurde); um ein Viertel = giảm một lượng là một phần tư."
+  - type: example
+    target: Bis Ende des Jahres wird die Stadt alle alten Busse ausgetauscht haben. Im Bericht behauptet sie später, alle Busse ausgetauscht zu haben.
+    target_lang: de
+    translation:
+      vi: Đến cuối năm, thành phố sẽ thay xong toàn bộ xe buýt cũ. Sau đó, trong báo cáo, thành phố khẳng định đã thay xong toàn bộ xe buýt.
+    note:
+      vi: "Futur II (wird … ausgetauscht haben, không có zu) ↔ nguyên thể quá khứ sau behaupten (ausgetauscht zu haben)."
+  - type: example
+    target: Hätte die Firma früher auf erneuerbare Energie gesetzt, hätte sie ihr Klimaziel schon erreicht.
+    target_lang: de
+    translation:
+      vi: Giá như công ty chuyển sang năng lượng tái tạo sớm hơn thì đã đạt được mục tiêu khí hậu rồi.
+    note:
+      vi: "Konjunktiv II quá khứ (hätte … gesetzt, hätte … erreicht): việc KHÔNG xảy ra. So sánh: Die Firma behauptet, ihr Ziel erreicht zu haben – theo lời công ty là đã đạt thật."
+  - type: common_mistake
+    wrong: Die Firma behauptet, die Emissionen zu haben reduziert.
+    right: Die Firma behauptet, die Emissionen reduziert zu haben.
+    target_lang: de
+    note:
+      vi: "Partizip II đứng trước, zu haben đứng cuối cùng."
+  - type: common_mistake
+    wrong: Die Stadt behauptet, alle Regeln einzuhalten haben.
+    right: Die Stadt behauptet, alle Regeln eingehalten zu haben.
+    target_lang: de
+    note:
+      vi: "Nguyên thể quá khứ dùng Partizip II (eingehalten), không dùng dạng zu-nguyên thể (einzuhalten)."
+  - type: common_mistake
+    wrong: Er bestreitet, gewarnt geworden zu sein.
+    right: Er bestreitet, gewarnt worden zu sein.
+    target_lang: de
+    note:
+      vi: "Bị động quá khứ luôn dùng worden; geworden chỉ dùng khi werden nghĩa là \"trở nên\"."
+  - type: common_mistake
+    wrong: Er behauptet, die Firma die Ziele erreicht zu haben.
+    right: Er behauptet, dass die Firma die Ziele erreicht hat.
+    target_lang: de
+    note:
+      vi: "Người khẳng định (er) khác người đạt mục tiêu (die Firma) nên phải dùng câu dass."
+  - type: summary
+    points:
+      - vi: "Việc đã xảy ra trước: Partizip II + zu haben/sein (reduziert zu haben, angekommen zu sein)."
+      - vi: "haben/sein chọn như Perfekt; động từ tách: eingehalten zu haben."
+      - vi: "Bị động: Partizip II + zu werden; bị động đã xảy ra: Partizip II + worden zu sein."
+      - vi: "Chỉ dùng cụm zu khi cùng chủ ngữ; khác chủ ngữ → dass."
+      - vi: "Sau modal không có zu; Futur II (wird … ausgetauscht haben) cũng không có zu."
+      - vi: "Từ vựng: der Treibhauseffekt, das Treibhausgas, die Emission, der Ausstoß, reduzieren, die Erderwärmung, das Abkommen, klimaneutral."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u07l1-mcq-reduziert-zu-haben
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u07-g-infinitiv-perfekt
+    prompt:
+      stem: "Chọn dạng đúng (công ty đã giảm khí thải rồi): Die Firma behauptet, ihre Emissionen ___."
+      stem_lang: vi
+      options:
+        - { id: r3a, text: "reduziert zu haben", lang: de }
+        - { id: r7b, text: "zu haben reduziert", lang: de }
+        - { id: r1c, text: "zu reduziert haben", lang: de }
+        - { id: r5d, text: "reduziert haben zu", lang: de }
+    answer:
+      correct_option_id: r3a
+    explanation:
+      vi: "Nguyên thể quá khứ có thứ tự cố định: Partizip II (reduziert) – zu – haben. zu luôn đứng ngay trước haben, ở cuối cùng."
+    display_answer: reduziert zu haben
+
+  - key: de:exercise:b2u07l1-mcq-angekommen-zu-sein
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-infinitiv-perfekt
+    prompt:
+      stem: "Chọn dạng đúng của ankommen (việc đã xảy ra): Wir sind froh, trotz des Streiks pünktlich ___."
+      stem_lang: vi
+      options:
+        - { id: s2a, text: "angekommen zu sein", lang: de }
+        - { id: s6b, text: "angekommen zu haben", lang: de }
+        - { id: s9c, text: "angekommen sein zu", lang: de }
+        - { id: s4d, text: "zu angekommen sein", lang: de }
+    answer:
+      correct_option_id: s2a
+    explanation:
+      vi: "ankommen dùng sein ở Perfekt (wir sind angekommen), nên nguyên thể quá khứ là angekommen zu sein; zu đứng ngay trước sein ở cuối."
+    display_answer: angekommen zu sein
+
+  - key: de:exercise:b2u07l1-listen-bericht
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u07-nachhaltigkeitsbericht
+    prompt:
+      audio_asset_id: null
+      fallback_text: In ihrem Nachhaltigkeitsbericht behauptet die Firma, den Ausstoß von Treibhausgasen im letzten Jahr deutlich verringert zu haben. Umweltverbände erwarten jedoch, genauer informiert zu werden.
+      options:
+        - { id: b2a, text: "Công ty khẳng định năm ngoái đã giảm đáng kể lượng khí nhà kính; tuy vậy các hội môi trường muốn được thông tin cụ thể hơn.", lang: vi }
+        - { id: b6b, text: "Công ty hứa năm tới sẽ giảm đáng kể lượng khí nhà kính; các hội môi trường hài lòng với thông tin này.", lang: vi }
+        - { id: b9c, text: "Công ty thừa nhận năm ngoái lượng khí nhà kính đã tăng; các hội môi trường muốn được thông tin cụ thể hơn.", lang: vi }
+        - { id: b4d, text: "Công ty khẳng định đã giảm lượng khí nhà kính; các hội môi trường muốn tự thông báo cho công ty.", lang: vi }
+    answer:
+      correct_option_id: b2a
+    explanation:
+      vi: "verringert zu haben = đã giảm (việc đã xảy ra, không phải lời hứa). erwarten, genauer informiert zu werden = mong được (người khác) thông tin cụ thể hơn – nguyên thể bị động. jedoch = tuy nhiên."
+    display_answer: Công ty khẳng định năm ngoái đã giảm đáng kể lượng khí nhà kính; tuy vậy các hội môi trường muốn được thông tin cụ thể hơn.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u07l1-fill-erreicht-angekommen
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-infinitiv-perfekt
+    prompt:
+      template: "Die Firma ist stolz, ihr Ziel {{b1}} zu {{b2}}. (erreichen) Der Zug war pünktlich: Wir sind froh, rechtzeitig zur Konferenz {{b3}} zu {{b4}}. (ankommen)"
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 5 }
+        - { id: b3, width_hint: 11 }
+        - { id: b4, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [erreicht]
+        b2: [haben]
+        b3: [angekommen]
+        b4: [sein]
+    known_wrong:
+      - answer: erreichen
+        feedback_vi: Việc đã xảy ra trước nên cần Partizip II – erreicht zu haben.
+        error_tag: participle_form
+      - answer: ankommen
+        feedback_vi: Việc đã xảy ra trước nên cần Partizip II – angekommen zu sein.
+        error_tag: participle_form
+      - answer: geerreicht
+        feedback_vi: erreichen có tiền tố er- không tách, nên Partizip II không có ge- – erreicht.
+        error_tag: participle_form
+    explanation:
+      vi: "Cả hai việc đã xảy ra trước khi người nói vui/tự hào: Partizip II + zu + haben/sein. erreichen dùng haben (hat erreicht → erreicht zu haben); ankommen là chuyển động đến nơi, dùng sein (ist angekommen → angekommen zu sein)."
+    display_answer: "Die Firma ist stolz, ihr Ziel erreicht zu haben. Der Zug war pünktlich: Wir sind froh, rechtzeitig zur Konferenz angekommen zu sein."
+
+  - key: de:exercise:b2u07l1-fill-informiert-worden
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-infinitiv-passiv
+    prompt:
+      template: "Die Anwohner hoffen, über die Pläne rechtzeitig {{b1}} zu {{b2}}. (informieren, Passiv) Der Bürgermeister bestreitet, vorher gewarnt {{b3}} zu sein. (Passiv, Vergangenheit)"
+      blanks:
+        - { id: b1, width_hint: 11 }
+        - { id: b2, width_hint: 6 }
+        - { id: b3, width_hint: 7 }
+    answer:
+      blanks:
+        b1: [informiert]
+        b2: [werden]
+        b3: [worden]
+    known_wrong:
+      - answer: geworden
+        feedback_vi: Trong bị động, Partizip II của werden là worden (không có ge-) – gewarnt worden zu sein.
+        error_tag: participle_form
+      - answer: informieren
+        feedback_vi: Bị động cần Partizip II của động từ chính – informiert zu werden.
+        error_tag: participle_form
+      - answer: geinformiert
+        feedback_vi: Động từ đuôi -ieren không có ge- – informiert.
+        error_tag: participle_form
+    explanation:
+      vi: "Cư dân là người được thông báo: nguyên thể bị động informiert zu werden. Thị trưởng phủ nhận việc đã được cảnh báo trước đó: bị động quá khứ gewarnt worden zu sein – trong bị động luôn là worden."
+    display_answer: "Die Anwohner hoffen, über die Pläne rechtzeitig informiert zu werden. Der Bürgermeister bestreitet, vorher gewarnt worden zu sein."
+
+  - key: de:exercise:b2u07l1-tr-emissionen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-reduzieren
+    prompt:
+      source_text: "Công ty khẳng định đã giảm lượng khí thải của mình. (dùng behaupten + nguyên thể quá khứ, động từ reduzieren)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Firma behauptet, ihre Emissionen reduziert zu haben.
+        - Das Unternehmen behauptet, seine Emissionen reduziert zu haben.
+        - Die Firma behauptet, die Emissionen reduziert zu haben.
+        - Das Unternehmen behauptet, die Emissionen reduziert zu haben.
+        - Die Firma behauptet, ihren Ausstoß reduziert zu haben.
+        - Das Unternehmen behauptet, seinen Ausstoß reduziert zu haben.
+        - Die Firma behauptet, ihre Abgase reduziert zu haben.
+        - Das Unternehmen behauptet, seine Abgase reduziert zu haben.
+        - Die Firma hat behauptet, ihre Emissionen reduziert zu haben.
+        - Das Unternehmen hat behauptet, seine Emissionen reduziert zu haben.
+    known_wrong:
+      - answer: Die Firma behauptet, ihre Emissionen zu haben reduziert.
+        feedback_vi: Partizip II đứng trước zu haben – reduziert zu haben.
+        error_tag: word_order
+      - answer: Die Firma behauptet, ihre Emissionen zu reduzieren.
+        feedback_vi: Câu này nghĩa là khẳng định (sẽ/đang) giảm; việc đã xảy ra cần reduziert zu haben.
+        error_tag: tense
+      - answer: Die Firma behauptet, ihre Emissionen reduziert zu sein.
+        feedback_vi: reduzieren có tân ngữ, Perfekt dùng haben – reduziert zu haben.
+        error_tag: aux_verb
+    explanation:
+      vi: "behaupten + nguyên thể quá khứ: Partizip II reduziert + zu haben ở cuối. die Firma → ihre Emissionen; das Unternehmen → seine Emissionen."
+    display_answer: Die Firma behauptet, ihre Emissionen reduziert zu haben.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u07l1-wb-gehoert-werden
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-infinitiv-passiv
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Nhóm bảo vệ môi trường mong được ông thị trưởng lắng nghe.\""
+      tokens:
+        - { id: g-werden, text: werden }
+        - { id: g-hofft, text: hofft }
+        - { id: g-buergermeister, text: Bürgermeister }
+        - { id: g-die, text: Die }
+        - { id: g-zu, text: zu }
+        - { id: g-komma, text: "," }
+        - { id: g-gruppe, text: Umweltgruppe }
+        - { id: g-gehoert, text: gehört }
+        - { id: g-vom, text: vom }
+    answer:
+      orders:
+        - [g-die, g-gruppe, g-hofft, g-komma, g-vom, g-buergermeister, g-gehoert, g-zu, g-werden]
+    explanation:
+      vi: "Câu chính Die Umweltgruppe hofft, dấu phẩy, rồi cụm zu bị động: vom Bürgermeister (người thực hiện, von + Dativ) – gehört – zu werden ở cuối."
+    display_answer: Die Umweltgruppe hofft, vom Bürgermeister gehört zu werden.
+
+  - key: de:exercise:b2u07l1-wb-eingehalten
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-einhalten
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Thành phố khẳng định đã tuân thủ mọi quy định.\""
+      tokens:
+        - { id: e-haben, text: haben }
+        - { id: e-regeln, text: Regeln }
+        - { id: e-stadt, text: Stadt }
+        - { id: e-eingehalten, text: eingehalten }
+        - { id: e-komma, text: "," }
+        - { id: e-die, text: Die }
+        - { id: e-alle, text: alle }
+        - { id: e-zu, text: zu }
+        - { id: e-behauptet, text: behauptet }
+    answer:
+      orders:
+        - [e-die, e-stadt, e-behauptet, e-komma, e-alle, e-regeln, e-eingehalten, e-zu, e-haben]
+    explanation:
+      vi: "einhalten là động từ tách; Partizip II eingehalten đã có ge- ở giữa nên zu đứng riêng trước haben: eingehalten zu haben. Tân ngữ alle Regeln đứng trước Partizip II."
+    display_answer: Die Stadt behauptet, alle Regeln eingehalten zu haben.
+
+  - key: de:exercise:b2u07l1-mcq-lesen-baeckerei
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-infinitiv-perfekt
+    prompt:
+      stem: "Die Bäckerei Sonnenkorn (erfundenes Beispiel) hat ihren ersten Nachhaltigkeitsbericht veröffentlicht. Laut dem Bericht ist ihr Stromverbrauch innerhalb eines Jahres um ein Viertel gesunken. Die Chefin ist stolz, alle alten Öfen ersetzt zu haben. Einige Nachbarn kritisieren jedoch, nicht nach ihrer Meinung gefragt worden zu sein. Bis zum nächsten Sommer wird die Bäckerei auch ihre Lieferwagen ausgetauscht haben. — Was steht im Text?"
+      stem_lang: de
+      options:
+        - { id: l2a, text: "Die alten Öfen sind schon ersetzt worden.", lang: de }
+        - { id: l6b, text: "Die Bäckerei will die alten Öfen im nächsten Sommer ersetzen.", lang: de }
+        - { id: l9c, text: "Die Nachbarn wurden vor dem Bericht nach ihrer Meinung gefragt.", lang: de }
+        - { id: l4d, text: "Die Lieferwagen sind bereits ausgetauscht worden.", lang: de }
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: "ersetzt zu haben = đã thay xong (nguyên thể quá khứ). Hàng xóm phê bình vì KHÔNG được hỏi ý kiến (nicht … gefragt worden zu sein). wird … ausgetauscht haben là Futur II: đến hè tới mới xong, nên xe giao hàng chưa được thay."
+    display_answer: Die alten Öfen sind schon ersetzt worden.

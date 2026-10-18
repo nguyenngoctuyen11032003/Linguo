@@ -1,0 +1,1485 @@
+# Học liệu unit B2U07 "Môi trường và phát triển bền vững" (Umwelt und Nachhaltigkeit), chương trình de:program:b2.
+# Theo ma trận docs/superpowers/specs/2026-10-17-linguo-german-syllabus.md (B2U07L1–L4); từ bổ sung (Zusatzwortschatz) ghi chú ngay trên item.
+# Thông tin về khí hậu, đa dạng sinh học, tiêu dùng chỉ là nhận định phổ biến, nói có chừng mực; không có số liệu, mục tiêu hay luật có con số. Công ty, thành phố trong ví dụ là hư cấu.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+source: src:linguo-demo
+items:
+  # ================= Bài 1: Đã giảm được… – nguyên thể quá khứ và bị động =================
+  - key: de:item:b2u07-g-infinitiv-perfekt
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Infinitiv Perfekt: Partizip II + zu haben / zu sein (Er behauptet, die Emissionen reduziert zu haben.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi việc trong cụm zu xảy ra TRƯỚC việc của động từ chính, dùng nguyên thể quá khứ: Partizip II + zu haben hoặc zu sein (chọn haben/sein như ở Perfekt). zu luôn đứng ngay trước haben/sein ở cuối cụm: reduziert zu haben, angekommen zu sein. Như mọi cụm zu, chủ ngữ ngầm thường trùng với chủ ngữ câu chính; nếu khác chủ ngữ thì dùng dass + Perfekt."
+      examples:
+        - target: Die Firma behauptet, ihre Emissionen deutlich reduziert zu haben.
+          translation:
+            vi: Công ty khẳng định đã giảm đáng kể lượng khí thải của mình.
+        - target: Wir sind froh, rechtzeitig angekommen zu sein.
+          translation:
+            vi: Chúng tôi mừng vì đã đến kịp giờ.
+        - target: Ich bedaure, so lange mit dem Auto zur Arbeit gefahren zu sein.
+          translation:
+            vi: Tôi tiếc là đã lái ô tô đi làm lâu như vậy.
+      confusion:
+        vi: "Không nói \"zu haben reduziert\": Partizip II đứng trước, rồi mới zu haben. Với động từ tách: eingehalten zu haben (Partizip II đã có ge- ở giữa, không chèn thêm zu). So sánh: … reduziert zu haben (đã làm, trước) ↔ … zu reduzieren (làm bây giờ/sắp tới)."
+
+  - key: de:item:b2u07-g-infinitiv-passiv
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Infinitiv Passiv: Partizip II + zu werden / worden zu sein (Er hofft, eingeladen zu werden.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi chủ ngữ CHỊU tác động (bị/được làm), cụm zu dùng nguyên thể bị động: Partizip II + zu werden (eingeladen zu werden = được mời). Nếu việc bị động đã xảy ra trước, dùng Partizip II + worden zu sein (informiert worden zu sein = đã được thông báo). Ở bị động quá khứ luôn là worden, không phải geworden."
+      examples:
+        - target: Die Anwohner erwarten, rechtzeitig über die Pläne informiert zu werden.
+          translation:
+            vi: Cư dân mong được thông báo kịp thời về các kế hoạch.
+        - target: Viele Bürger haben Angst, bei der Planung nicht gefragt zu werden.
+          translation:
+            vi: Nhiều người dân sợ không được hỏi ý kiến khi lập kế hoạch.
+        - target: Der Bürgermeister bestreitet, vorher gewarnt worden zu sein.
+          translation:
+            vi: Ông thị trưởng phủ nhận việc đã được cảnh báo trước.
+      confusion:
+        vi: "Sau động từ khiếm khuyết không có zu: Die Emissionen müssen reduziert werden. Có zu khi đứng sau động từ như hoffen, erwarten, bestreiten, Angst haben: …, reduziert zu werden."
+
+  - key: de:item:b2u07-treibhauseffekt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Treibhauseffekt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu ứng nhà kính
+      examples:
+        - target: Ohne den natürlichen Treibhauseffekt wäre es auf der Erde sehr kalt.
+          translation:
+            vi: Nếu không có hiệu ứng nhà kính tự nhiên, Trái Đất sẽ rất lạnh.
+        - target: Zusätzliche Treibhausgase verstärken den Treibhauseffekt.
+          translation:
+            vi: Khí nhà kính thải thêm làm tăng hiệu ứng nhà kính.
+      confusion:
+        vi: "das Treibhaus (nhà kính trồng cây) + der Effekt → der Treibhauseffekt, giống đực theo từ cuối."
+
+  - key: de:item:b2u07-treibhausgas
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Treibhausgas, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khí nhà kính
+      examples:
+        - target: Kohlendioxid ist das bekannteste Treibhausgas.
+          translation:
+            vi: CO₂ là khí nhà kính được biết đến nhiều nhất.
+        - target: Beim Verbrennen von Kohle und Öl entstehen Treibhausgase.
+          translation:
+            vi: Khi đốt than và dầu sẽ sinh ra khí nhà kính.
+      confusion:
+        vi: "das Gas, die Gase → das Treibhausgas, die Treibhausgase (giống trung theo das Gas)."
+
+  - key: de:item:b2u07-emission
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Emission, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phát thải, lượng khí thải
+      examples:
+        - target: Das Unternehmen will seine Emissionen in den nächsten Jahren deutlich senken.
+          translation:
+            vi: Doanh nghiệp muốn giảm đáng kể lượng phát thải trong những năm tới.
+        - target: In unserer Stadt verursacht der Verkehr viele Emissionen.
+          translation:
+            vi: Ở thành phố chúng tôi, giao thông gây ra nhiều khí thải.
+      confusion:
+        vi: "die Emission thường dùng ở số nhiều (die Emissionen) và trong văn bản trang trọng; nói thường hay dùng die Abgase (khí thải xe, nhà máy)."
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối: e-mi-SION, đọc gần \"xi-ôn\": /emɪˈsi̯oːn/."
+
+  - key: de:item:b2u07-ausstoss
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Ausstoß (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lượng thải ra (khí thải)
+      examples:
+        - target: Der Ausstoß von Treibhausgasen soll weiter sinken.
+          translation:
+            vi: Lượng khí nhà kính thải ra cần tiếp tục giảm.
+        - target: Mit einem kleineren Auto kann man den Ausstoß verringern.
+          translation:
+            vi: Đi ô tô nhỏ hơn thì có thể giảm lượng khí thải.
+      confusion:
+        vi: "Thường đi với von + Dativ: der Ausstoß von Kohlendioxid. Động từ tương ứng: ausstoßen (thải ra)."
+
+  - key: de:item:b2u07-reduzieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: reduzieren
+      pos: động từ
+    back:
+      meaning:
+        vi: giảm, cắt giảm
+      examples:
+        - target: Wir wollen unseren Energieverbrauch reduzieren.
+          translation:
+            vi: Chúng tôi muốn giảm mức tiêu thụ năng lượng.
+        - target: Die Stadt hat den Autoverkehr in der Altstadt stark reduziert.
+          translation:
+            vi: Thành phố đã giảm mạnh lượng ô tô trong khu phố cổ.
+      confusion:
+        vi: "Động từ đuôi -ieren không có ge- ở Partizip II: reduziert (hat reduziert, reduziert zu haben). Gần nghĩa: verringern, senken."
+
+  - key: de:item:b2u07-erderwaermung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Erderwärmung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nóng lên của Trái Đất
+      examples:
+        - target: Viele Fachleute sehen in der Erderwärmung eine große Gefahr.
+          translation:
+            vi: Nhiều chuyên gia coi sự nóng lên của Trái Đất là một mối nguy lớn.
+        - target: Die Erderwärmung lässt die Gletscher schmelzen.
+          translation:
+            vi: Sự nóng lên của Trái Đất làm các sông băng tan chảy.
+      confusion:
+        vi: "die Erde + die Erwärmung (sự nóng lên). Cũng nói: die globale Erwärmung. der Klimawandel (biến đổi khí hậu) rộng hơn: gồm cả hạn hán, mưa lớn …"
+
+  - key: de:item:b2u07-abkommen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Abkommen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệp định, thoả thuận (giữa các nước, tổ chức)
+      examples:
+        - target: Viele Staaten haben ein Abkommen zum Klimaschutz unterzeichnet.
+          translation:
+            vi: Nhiều quốc gia đã ký một hiệp định về bảo vệ khí hậu.
+        - target: Die beiden Städte haben ein Abkommen über den Schutz des Flusses geschlossen.
+          translation:
+            vi: Hai thành phố đã ký một thoả thuận về việc bảo vệ dòng sông.
+      confusion:
+        vi: "Danh từ hoá từ động từ (abkommen) nên giống trung, số nhiều không đổi: die Abkommen. ein Abkommen schließen / unterzeichnen = ký kết hiệp định."
+
+  - key: de:item:b2u07-klimaneutral
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: klimaneutral
+      pos: tính từ
+    back:
+      meaning:
+        vi: trung hoà khí hậu (về tổng thể không làm tăng khí nhà kính)
+      examples:
+        - target: Die Bäckerei möchte in Zukunft klimaneutral produzieren.
+          translation:
+            vi: Tiệm bánh muốn trong tương lai sản xuất theo cách trung hoà khí hậu.
+        - target: Ist ein Flug wirklich klimaneutral, nur weil man dafür Geld bezahlt?
+          translation:
+            vi: Một chuyến bay có thực sự trung hoà khí hậu chỉ vì người ta trả tiền cho việc đó không?
+      confusion:
+        vi: "klimaneutral thường đạt được bằng cách giảm khí thải và bù phần còn lại (kompensieren); cách bù trừ này đang bị tranh luận, nên khi đọc quảng cáo hãy đọc kỹ."
+
+  # Zusatzwortschatz B2U07L1 (8): Kohlendioxid, fossil, Brennstoff, verringern, sich verpflichten, einhalten, Atmosphäre, Nachhaltigkeitsbericht
+  - key: de:item:b2u07-kohlendioxid
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Kohlendioxid (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khí CO₂, carbon dioxide
+      examples:
+        - target: Bäume nehmen Kohlendioxid aus der Luft auf.
+          translation:
+            vi: Cây hấp thụ CO₂ từ không khí.
+        - target: Beim Autofahren entsteht Kohlendioxid.
+          translation:
+            vi: Khi lái ô tô sẽ sinh ra CO₂.
+      confusion:
+        vi: "Viết tắt CO₂, đọc là \"Ce-O-zwei\". Trong báo chí thường gặp từ ghép như der CO₂-Ausstoß."
+
+  - key: de:item:b2u07-fossil
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: fossil
+      pos: tính từ
+    back:
+      meaning:
+        vi: hoá thạch (nhiên liệu hoá thạch)
+      examples:
+        - target: Kohle, Erdöl und Erdgas sind fossile Brennstoffe.
+          translation:
+            vi: Than, dầu mỏ và khí đốt là nhiên liệu hoá thạch.
+        - target: Viele Länder wollen weniger fossile Energie nutzen.
+          translation:
+            vi: Nhiều nước muốn dùng ít năng lượng hoá thạch hơn.
+      confusion:
+        vi: "Trước danh từ cần đuôi tính từ: fossile Brennstoffe, aus fossilen Quellen. Ngược nghĩa: erneuerbare Energien."
+
+  - key: de:item:b2u07-brennstoff
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Brennstoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiên liệu (để đốt)
+      examples:
+        - target: Holz war lange der wichtigste Brennstoff zum Heizen.
+          translation:
+            vi: Gỗ từng là nhiên liệu sưởi quan trọng nhất trong thời gian dài.
+        - target: Beim Verbrennen fossiler Brennstoffe entsteht Kohlendioxid.
+          translation:
+            vi: Khi đốt nhiên liệu hoá thạch sẽ sinh ra CO₂.
+      confusion:
+        vi: "brennen (cháy) + der Stoff (chất) → der Brennstoff. Nhiên liệu đổ vào xe thường gọi là der Kraftstoff hoặc nói thường là Benzin/Diesel."
+
+  - key: de:item:b2u07-verringern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: verringern
+      pos: động từ
+    back:
+      meaning:
+        vi: làm giảm, giảm bớt
+      examples:
+        - target: Mit Bus und Bahn kann man den eigenen Ausstoß von Kohlendioxid verringern.
+          translation:
+            vi: Đi xe buýt và tàu thì có thể giảm lượng CO₂ mình thải ra.
+        - target: Der Verkehr in der Innenstadt hat sich verringert.
+          translation:
+            vi: Lượng xe cộ ở trung tâm thành phố đã giảm.
+      confusion:
+        vi: "etwas verringern = làm giảm cái gì; sich verringern = tự giảm đi. Gần nghĩa với reduzieren; gốc là gering (ít, nhỏ)."
+
+  - key: de:item:b2u07-sich-verpflichten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: sich verpflichten (zu + Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: cam kết (làm gì)
+      examples:
+        - target: Die Firma hat sich verpflichtet, weniger Plastik zu verwenden.
+          translation:
+            vi: Công ty đã cam kết dùng ít nhựa hơn.
+        - target: Mit dem Abkommen verpflichten sich die Staaten zum Klimaschutz.
+          translation:
+            vi: Với hiệp định này, các quốc gia cam kết bảo vệ khí hậu.
+      confusion:
+        vi: "Hai cách nói: sich zu etwas (Dat) verpflichten hoặc sich verpflichten, … zu + nguyên thể. Đừng quên đại từ phản thân: Ich verpflichte mich …"
+
+  - key: de:item:b2u07-einhalten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: einhalten, hält ein, hielt ein, hat eingehalten
+      pos: động từ
+    back:
+      meaning:
+        vi: giữ (lời hứa), tuân thủ (quy định, mục tiêu, thời hạn)
+      examples:
+        - target: Die Firma hat ihr Versprechen nicht eingehalten.
+          translation:
+            vi: Công ty đã không giữ lời hứa.
+        - target: Wir müssen die Regeln einhalten.
+          translation:
+            vi: Chúng ta phải tuân thủ các quy định.
+      confusion:
+        vi: "Động từ tách: Wir halten die Frist ein. Nguyên thể quá khứ: eingehalten zu haben (không viết \"einzuhalten haben\")."
+
+  - key: de:item:b2u07-atmosphaere
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Atmosphäre, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: khí quyển; bầu không khí (trong một nhóm, một nơi)
+      examples:
+        - target: Treibhausgase halten in der Atmosphäre Wärme zurück.
+          translation:
+            vi: Khí nhà kính giữ nhiệt lại trong khí quyển.
+        - target: In unserem Team herrscht eine angenehme Atmosphäre.
+          translation:
+            vi: Trong nhóm chúng tôi có bầu không khí dễ chịu.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết thứ ba, ä dài: at-mo-SPHÄ-re, ph đọc như f: /atmoˈsfɛːrə/."
+
+  - key: de:item:b2u07-nachhaltigkeitsbericht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Nachhaltigkeitsbericht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: báo cáo phát triển bền vững (của doanh nghiệp, tổ chức)
+      examples:
+        - target: In ihrem Nachhaltigkeitsbericht behauptet die Firma, alle Ziele erreicht zu haben.
+          translation:
+            vi: Trong báo cáo phát triển bền vững, công ty khẳng định đã đạt mọi mục tiêu.
+        - target: Der Nachhaltigkeitsbericht wird jedes Jahr veröffentlicht.
+          translation:
+            vi: Báo cáo phát triển bền vững được công bố hằng năm.
+      confusion:
+        vi: "die Nachhaltigkeit + -s- + der Bericht: sau đuôi -keit thường có âm nối -s-. Giống đực theo der Bericht."
+
+  # ================= Bài 2: Vì sợ, nhờ có – giới từ nguyên nhân =================
+  - key: de:item:b2u07-g-kausale-praepositionen
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Kausale Präpositionen: aus Angst · vor Kälte · dank (+ Gen/Dat) · aufgrund, infolge (+ Gen)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "aus + danh từ (thường không mạo từ) nêu động cơ bên trong của một hành động có ý thức: aus Angst, aus Überzeugung, aus Neugier. vor + Dativ (thường không mạo từ) nêu nguyên nhân của một phản ứng không chủ ý của cơ thể hay cảm xúc: vor Kälte zittern, vor Freude weinen. dank (+ Genitiv, cũng gặp Dativ) nêu nguyên nhân tích cực (nhờ); aufgrund, infolge + Genitiv trung tính, trang trọng."
+      examples:
+        - target: Viele Menschen kaufen aus Überzeugung regionales Gemüse.
+          translation:
+            vi: Nhiều người mua rau địa phương vì niềm tin của mình.
+        - target: Die Kinder zitterten vor Kälte.
+          translation:
+            vi: Bọn trẻ run lên vì lạnh.
+        - target: Dank des neuen Schutzgebiets leben dort wieder mehr Vögel.
+          translation:
+            vi: Nhờ khu bảo tồn mới mà ở đó lại có nhiều chim hơn.
+      confusion:
+        vi: "Cùng là Angst nhưng khác nghĩa: Aus Angst sagte er nichts (sợ nên cố ý im lặng) ↔ Er zitterte vor Angst (run vì sợ, không cố ý). wegen Angst cũng đúng nhưng trung tính, ít sắc thái hơn. dank chỉ dùng cho nguyên nhân tốt; nguyên nhân xấu dùng wegen hoặc aufgrund."
+
+  - key: de:item:b2u07-artenvielfalt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Artenvielfalt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đa dạng loài, đa dạng sinh học
+      examples:
+        - target: Der Regenwald ist für seine große Artenvielfalt bekannt.
+          translation:
+            vi: Rừng mưa nhiệt đới nổi tiếng vì có rất nhiều loài.
+        - target: Pestizide können der Artenvielfalt schaden.
+          translation:
+            vi: Thuốc trừ sâu có thể gây hại cho sự đa dạng loài.
+      confusion:
+        vi: "die Art (loài) + die Vielfalt (sự đa dạng), âm nối -en-. Từ chuyên môn hơn: die Biodiversität."
+
+  - key: de:item:b2u07-aussterben
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: aussterben, stirbt aus, starb aus, ist ausgestorben
+      pos: động từ
+    back:
+      meaning:
+        vi: tuyệt chủng
+      examples:
+        - target: Die Dinosaurier sind vor vielen Millionen Jahren ausgestorben.
+          translation:
+            vi: Khủng long đã tuyệt chủng từ nhiều triệu năm trước.
+        - target: Ohne Schutz könnte diese Tierart bald aussterben.
+          translation:
+            vi: Nếu không được bảo vệ, loài vật này có thể sớm tuyệt chủng.
+      confusion:
+        vi: "Perfekt với sein vì là thay đổi trạng thái: ist ausgestorben. Tính từ: vom Aussterben bedroht = có nguy cơ tuyệt chủng."
+
+  - key: de:item:b2u07-bedroht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: bedroht
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị đe doạ
+      examples:
+        - target: Viele Bienenarten sind bedroht.
+          translation:
+            vi: Nhiều loài ong đang bị đe doạ.
+        - target: Der Eisbär ist vom Aussterben bedroht.
+          translation:
+            vi: Gấu Bắc Cực có nguy cơ tuyệt chủng.
+      confusion:
+        vi: "Là Partizip II của bedrohen (đe doạ). Trước danh từ có đuôi: eine bedrohte Tierart."
+
+  - key: de:item:b2u07-lebensraum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Lebensraum, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: môi trường sống (của động thực vật)
+      examples:
+        - target: Durch die Abholzung verlieren viele Tiere ihren Lebensraum.
+          translation:
+            vi: Do nạn chặt phá rừng, nhiều loài vật mất môi trường sống.
+        - target: Alte Bäume sind ein wichtiger Lebensraum für Insekten.
+          translation:
+            vi: Cây cổ thụ là môi trường sống quan trọng của côn trùng.
+      confusion:
+        vi: "das Leben + -s- + der Raum (không gian) → der Lebensraum, số nhiều die Lebensräume."
+
+  - key: de:item:b2u07-schuetzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: schützen (vor + Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: bảo vệ (khỏi cái gì)
+      examples:
+        - target: Wir müssen die Natur besser schützen.
+          translation:
+            vi: Chúng ta phải bảo vệ thiên nhiên tốt hơn.
+        - target: Die Hecke schützt die Vögel vor Katzen.
+          translation:
+            vi: Hàng rào cây bảo vệ chim khỏi mèo.
+      confusion:
+        vi: "Khỏi cái gì dùng vor + Dativ (vor dem Regen schützen). Danh từ: der Schutz; trong từ ghép: der Artenschutz, der Umweltschutz."
+
+  - key: de:item:b2u07-oekosystem
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ökosystem, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ sinh thái
+      examples:
+        - target: Ein See ist ein empfindliches Ökosystem.
+          translation:
+            vi: Hồ nước là một hệ sinh thái nhạy cảm.
+        - target: Wenn eine Art verschwindet, kann das ganze Ökosystem leiden.
+          translation:
+            vi: Khi một loài biến mất, cả hệ sinh thái có thể bị ảnh hưởng.
+      confusion:
+        vi: "das System → das Ökosystem (giống trung). Öko- là viết tắt của Ökologie (sinh thái học)."
+
+  - key: de:item:b2u07-tierart
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Tierart, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: loài động vật
+      examples:
+        - target: In diesem Wald leben viele seltene Tierarten.
+          translation:
+            vi: Trong khu rừng này có nhiều loài động vật quý hiếm.
+        - target: Welche Tierarten sind in Vietnam bedroht?
+          translation:
+            vi: Những loài động vật nào ở Việt Nam đang bị đe doạ?
+      confusion:
+        vi: "das Tier + die Art → die Tierart (giống cái theo die Art). Tương tự: die Pflanzenart (loài thực vật)."
+
+  - key: de:item:b2u07-abholzung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Abholzung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chặt phá rừng
+      examples:
+        - target: Die Abholzung der Regenwälder bedroht viele Tierarten.
+          translation:
+            vi: Việc chặt phá rừng mưa nhiệt đới đe doạ nhiều loài động vật.
+        - target: Infolge der Abholzung gibt es in der Region mehr Erdrutsche.
+          translation:
+            vi: Do chặt phá rừng, khu vực này có nhiều vụ sạt lở đất hơn.
+      confusion:
+        vi: "Từ động từ abholzen (chặt hết cây) + -ung. Thường có Genitiv theo sau: die Abholzung des Waldes / der Wälder."
+
+  # Zusatzwortschatz B2U07L2 (9): Insekt, Biene, Regenwald, zittern, Kälte, Neugier, Überzeugung, Pestizid, Artenschutz
+  - key: de:item:b2u07-insekt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Insekt, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: côn trùng
+      examples:
+        - target: Viele Pflanzen brauchen Insekten, die ihre Blüten bestäuben.
+          translation:
+            vi: Nhiều loài cây cần côn trùng thụ phấn cho hoa.
+        - target: Im Garten gibt es kaum noch Insekten.
+          translation:
+            vi: Trong vườn hầu như không còn côn trùng.
+      confusion:
+        vi: "Số nhiều -en: die Insekten. Trọng âm ở âm tiết sau: in-SEKT."
+
+  - key: de:item:b2u07-biene
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Biene, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con ong
+      examples:
+        - target: Bienen sind für die Landwirtschaft sehr wichtig.
+          translation:
+            vi: Ong rất quan trọng đối với nông nghiệp.
+        - target: Auf meinem Balkon stehen Blumen für die Bienen.
+          translation:
+            vi: Trên ban công nhà tôi có hoa cho ong.
+      confusion:
+        vi: "die Biene là ong mật nói chung; die Wespe là ong bắp cày."
+
+  - key: de:item:b2u07-regenwald
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Regenwald, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: rừng mưa (nhiệt đới)
+      examples:
+        - target: Im Regenwald leben unzählige Tier- und Pflanzenarten.
+          translation:
+            vi: Trong rừng mưa nhiệt đới có vô số loài động vật và thực vật.
+        - target: Der Regenwald wird oft als Lunge der Erde bezeichnet.
+          translation:
+            vi: Rừng mưa nhiệt đới thường được gọi là lá phổi của Trái Đất.
+      confusion:
+        vi: "der Regen + der Wald → der Regenwald, số nhiều die Regenwälder (như der Wald, die Wälder)."
+
+  - key: de:item:b2u07-zittern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zittern (vor + Dat)
+      pos: động từ
+    back:
+      meaning:
+        vi: run, run rẩy (vì …)
+      examples:
+        - target: Ich habe vor Kälte gezittert.
+          translation:
+            vi: Tôi đã run lên vì lạnh.
+        - target: Seine Hände zitterten vor Aufregung.
+          translation:
+            vi: Tay anh ấy run lên vì hồi hộp.
+      confusion:
+        vi: "Run vì nguyên nhân gì dùng vor + Dativ, thường không mạo từ: vor Kälte, vor Angst. Không nói aus Kälte."
+
+  - key: de:item:b2u07-kaelte
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Kälte (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái lạnh, giá lạnh
+      examples:
+        - target: Viele Pflanzen überleben die Kälte im Winter nicht.
+          translation:
+            vi: Nhiều loài cây không sống qua được cái lạnh mùa đông.
+        - target: Die Vögel zittern vor Kälte.
+          translation:
+            vi: Lũ chim run lên vì lạnh.
+      confusion:
+        vi: "kalt → die Kälte; tương tự warm → die Wärme, heiß → die Hitze."
+
+  - key: de:item:b2u07-neugier
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Neugier (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tò mò
+      examples:
+        - target: Aus Neugier habe ich das Naturkundemuseum besucht.
+          translation:
+            vi: Vì tò mò nên tôi đã đến thăm bảo tàng tự nhiên.
+        - target: Kinder beobachten Insekten oft mit großer Neugier.
+          translation:
+            vi: Trẻ em thường quan sát côn trùng với sự tò mò lớn.
+      confusion:
+        vi: "Tính từ: neugierig. Cũng viết die Neugierde (cùng nghĩa)."
+
+  - key: de:item:b2u07-ueberzeugung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Überzeugung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: niềm tin, xác tín
+      examples:
+        - target: Sie lebt aus Überzeugung vegan.
+          translation:
+            vi: Cô ấy ăn thuần chay vì niềm tin của mình.
+        - target: Es ist meine feste Überzeugung, dass jeder etwas tun kann.
+          translation:
+            vi: Tôi tin chắc rằng ai cũng có thể làm được điều gì đó.
+      confusion:
+        vi: "Từ động từ überzeugen (thuyết phục). aus Überzeugung = vì tin như vậy là đúng."
+
+  - key: de:item:b2u07-pestizid
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Pestizid, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuốc trừ sâu, thuốc bảo vệ thực vật
+      examples:
+        - target: Manche Pestizide können Bienen schaden.
+          translation:
+            vi: Một số loại thuốc trừ sâu có thể gây hại cho ong.
+        - target: Auf diesem Hof werden keine Pestizide verwendet.
+          translation:
+            vi: Ở trang trại này không dùng thuốc trừ sâu.
+      pronunciation_note:
+        vi: "Trọng âm ở âm tiết cuối, z đọc là \"ts\", i dài: pes-ti-ZID /pɛstiˈt͡siːt/."
+
+  - key: de:item:b2u07-artenschutz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Artenschutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc bảo vệ các loài (động thực vật)
+      examples:
+        - target: Der Verein setzt sich für den Artenschutz ein.
+          translation:
+            vi: Hội này hoạt động vì việc bảo vệ các loài.
+        - target: Artenschutz beginnt oft im eigenen Garten.
+          translation:
+            vi: Bảo vệ các loài thường bắt đầu ngay trong vườn nhà mình.
+      confusion:
+        vi: "die Arten (các loài) + der Schutz → der Artenschutz, giống đực theo der Schutz."
+
+  # ================= Bài 3: Điều làm tôi ngạc nhiên là… – mệnh đề quan hệ nối tiếp =================
+  - key: de:item:b2u07-g-weiterfuehrender-relativsatz
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Weiterführender Relativsatz: …, was … · …, wodurch / worüber / wofür … (Viele werfen Essen weg, was ich schade finde.)"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Khi mệnh đề quan hệ bình luận CẢ câu đứng trước (không phải một danh từ), mở đầu bằng was: Er repariert seine Geräte selbst, was ich toll finde. Nếu động từ trong mệnh đề cần giới từ, dùng wo(r) + giới từ: wodurch (nhờ đó/vì thế), worüber, wofür, woran. Mệnh đề luôn đứng sau câu chính, có dấu phẩy, động từ đứng cuối."
+      examples:
+        - target: Viele Menschen werfen Lebensmittel weg, was eine große Verschwendung ist.
+          translation:
+            vi: Nhiều người vứt bỏ thực phẩm, đó là một sự lãng phí lớn.
+        - target: Das Café bietet Mehrwegbecher an, wodurch weniger Müll entsteht.
+          translation:
+            vi: Quán cà phê có cốc dùng nhiều lần, nhờ đó ít rác hơn.
+        - target: Der Laden repariert alte Handys, worüber sich viele Kunden freuen.
+          translation:
+            vi: Cửa hàng sửa điện thoại cũ, điều này khiến nhiều khách hàng vui mừng.
+      confusion:
+        vi: "Trỏ cả câu thì không dùng das/die/der: … Geräte selbst, das ich toll finde là sai. So sánh: der Laden, in dem ich einkaufe (trỏ một danh từ, giới từ + der/die/das) ↔ …, worüber ich mich freue (trỏ cả câu, wo(r) + giới từ)."
+
+  - key: de:item:b2u07-verzicht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Verzicht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự từ bỏ, sự kiêng (không dùng cái gì)
+      examples:
+        - target: Der Verzicht auf das Auto fällt vielen Menschen schwer.
+          translation:
+            vi: Việc bỏ ô tô là điều khó với nhiều người.
+        - target: Nachhaltig leben bedeutet nicht immer Verzicht.
+          translation:
+            vi: Sống bền vững không phải lúc nào cũng có nghĩa là phải từ bỏ.
+      confusion:
+        vi: "Như động từ verzichten auf + Akk: der Verzicht auf Plastik (Akkusativ sau auf)."
+
+  - key: de:item:b2u07-wegwerfgesellschaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Wegwerfgesellschaft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: xã hội tiêu dùng vứt bỏ (dùng xong là vứt)
+      examples:
+        - target: In der Wegwerfgesellschaft wird vieles nur kurz benutzt.
+          translation:
+            vi: "Trong xã hội \"dùng xong là vứt\", nhiều thứ chỉ được dùng một thời gian ngắn."
+        - target: Repair-Cafés sind eine Antwort auf die Wegwerfgesellschaft.
+          translation:
+            vi: Các quán cà phê sửa đồ là một câu trả lời cho xã hội tiêu dùng vứt bỏ.
+      confusion:
+        vi: "wegwerfen (vứt đi) + die Gesellschaft (xã hội). Từ mang sắc thái phê phán."
+
+  - key: de:item:b2u07-recyceln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: recyceln (recycelt, hat recycelt)
+      pos: động từ
+    back:
+      meaning:
+        vi: tái chế
+      examples:
+        - target: Altpapier lässt sich gut recyceln.
+          translation:
+            vi: Giấy cũ tái chế được dễ dàng.
+        - target: Aus recyceltem Plastik werden zum Beispiel Jacken hergestellt.
+          translation:
+            vi: Từ nhựa tái chế, người ta làm ra ví dụ như áo khoác.
+      confusion:
+        vi: "Từ tiếng Anh nhưng chia như động từ Đức: ich recycle, er recycelt, hat recycelt (không có ge-). Danh từ: das Recycling."
+      pronunciation_note:
+        vi: "Đọc gần như tiếng Anh: /riˈsaɪ̯kl̩n/."
+
+  - key: de:item:b2u07-wiederverwenden
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: wiederverwenden (verwendet wieder, hat wiederverwendet)
+      pos: động từ
+    back:
+      meaning:
+        vi: dùng lại, tái sử dụng
+      examples:
+        - target: Ich verwende Gläser für Marmelade wieder.
+          translation:
+            vi: Tôi dùng lại lọ thuỷ tinh để đựng mứt.
+        - target: Viele Verpackungen kann man wiederverwenden.
+          translation:
+            vi: Nhiều loại bao bì có thể dùng lại.
+      confusion:
+        vi: "wiederverwenden (dùng lại cho cùng mục đích) khác recyceln (làm ra vật liệu mới). Là động từ tách: Ich verwende … wieder; zu-nguyên thể: wiederzuverwenden."
+
+  - key: de:item:b2u07-kreislauf
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Kreislauf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vòng tuần hoàn, chu trình
+      examples:
+        - target: Im Idealfall bleiben Rohstoffe in einem Kreislauf.
+          translation:
+            vi: Trong trường hợp lý tưởng, nguyên liệu được giữ trong một vòng tuần hoàn.
+        - target: Wasser bewegt sich in einem natürlichen Kreislauf.
+          translation:
+            vi: Nước di chuyển theo một vòng tuần hoàn tự nhiên.
+      confusion:
+        vi: "der Kreis (vòng tròn) + der Lauf (sự chạy). Số nhiều die Kreisläufe. Từ ghép: die Kreislaufwirtschaft (kinh tế tuần hoàn)."
+
+  - key: de:item:b2u07-ressource
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Ressource, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài nguyên, nguồn lực
+      examples:
+        - target: Für ein neues Handy braucht man viele Ressourcen.
+          translation:
+            vi: Để làm một chiếc điện thoại mới cần rất nhiều tài nguyên.
+        - target: Wir sollten mit unseren Ressourcen sparsam umgehen.
+          translation:
+            vi: Chúng ta nên sử dụng tài nguyên một cách tiết kiệm.
+      pronunciation_note:
+        vi: "Gốc tiếng Pháp, trọng âm ở âm tiết giữa: re-SOUR-ce /rɛˈsʊrsə/."
+
+  - key: de:item:b2u07-verschwendung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Verschwendung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự lãng phí
+      examples:
+        - target: Das ist doch reine Verschwendung!
+          translation:
+            vi: Thế thì đúng là lãng phí!
+        - target: Die Verschwendung von Lebensmitteln ist ein großes Problem.
+          translation:
+            vi: Lãng phí thực phẩm là một vấn đề lớn.
+      confusion:
+        vi: "Động từ: verschwenden (lãng phí). Theo sau thường là von + Dativ hoặc Genitiv: die Verschwendung von Energie / der Energie."
+
+  # Zusatzwortschatz B2U07L3 (8): langlebig, Einwegbecher, Mehrwegflasche, unverpackt, entsorgen, überflüssig, Ersatzteil, Konsumverhalten
+  - key: de:item:b2u07-langlebig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: langlebig
+      pos: tính từ
+    back:
+      meaning:
+        vi: bền, dùng được lâu
+      examples:
+        - target: Ich kaufe lieber wenige, aber langlebige Kleidungsstücke.
+          translation:
+            vi: Tôi thích mua ít quần áo nhưng bền.
+        - target: Dieses Gerät ist besonders langlebig.
+          translation:
+            vi: Thiết bị này đặc biệt bền.
+      confusion:
+        vi: "lang (dài) + leben → langlebig. Với thực phẩm \"để được lâu\" dùng haltbar."
+
+  - key: de:item:b2u07-einwegbecher
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Einwegbecher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cốc dùng một lần
+      examples:
+        - target: Ich nehme meinen eigenen Becher mit, statt einen Einwegbecher zu benutzen.
+          translation:
+            vi: Tôi mang cốc riêng thay vì dùng cốc dùng một lần.
+        - target: Einwegbecher landen nach wenigen Minuten im Müll.
+          translation:
+            vi: Cốc dùng một lần chỉ vài phút sau đã nằm trong thùng rác.
+      confusion:
+        vi: "Einweg- = dùng một lần; Mehrweg- = dùng nhiều lần (der Mehrwegbecher)."
+
+  - key: de:item:b2u07-mehrwegflasche
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Mehrwegflasche, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chai dùng nhiều lần (trả lại để rửa và dùng tiếp)
+      examples:
+        - target: Für Mehrwegflaschen bekommt man im Supermarkt Pfand zurück.
+          translation:
+            vi: Trả chai dùng nhiều lần ở siêu thị thì được nhận lại tiền cọc.
+        - target: Mehrwegflaschen werden gereinigt und wieder gefüllt.
+          translation:
+            vi: Chai dùng nhiều lần được rửa sạch và chiết đầy lại.
+      confusion:
+        vi: "Ở Đức cả chai một lần (Einwegflasche) lẫn chai nhiều lần thường có tiền cọc; quy định có thể thay đổi, hãy xem ký hiệu trên chai."
+
+  - key: de:item:b2u07-unverpackt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: unverpackt
+      pos: tính từ
+    back:
+      meaning:
+        vi: không bao bì, bán rời
+      examples:
+        - target: Auf dem Markt kaufe ich Obst und Gemüse unverpackt.
+          translation:
+            vi: Ở chợ tôi mua rau quả không có bao bì.
+        - target: In unserem Viertel gibt es einen Laden, der nur unverpackte Waren verkauft.
+          translation:
+            vi: Khu phố chúng tôi có một cửa hàng chỉ bán hàng không bao bì.
+      confusion:
+        vi: "un- + verpackt (Partizip II của verpacken). Cửa hàng loại này thường gọi là Unverpacktladen."
+
+  - key: de:item:b2u07-entsorgen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: entsorgen
+      pos: động từ
+    back:
+      meaning:
+        vi: xử lý, thải bỏ (rác, đồ cũ) đúng nơi
+      examples:
+        - target: Alte Batterien muss man richtig entsorgen.
+          translation:
+            vi: Pin cũ phải được thải bỏ đúng cách.
+        - target: Wo kann ich meinen alten Kühlschrank entsorgen?
+          translation:
+            vi: Tôi có thể bỏ tủ lạnh cũ ở đâu?
+      confusion:
+        vi: "Tiền tố ent- không tách: hat entsorgt. entsorgen trang trọng hơn wegwerfen và gợi ý bỏ đúng chỗ, đúng quy định."
+
+  - key: de:item:b2u07-ueberfluessig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: überflüssig
+      pos: tính từ
+    back:
+      meaning:
+        vi: thừa, không cần thiết
+      examples:
+        - target: Viele Verpackungen sind einfach überflüssig.
+          translation:
+            vi: Nhiều bao bì đơn giản là thừa.
+        - target: Ich verzichte auf überflüssige Einkäufe.
+          translation:
+            vi: Tôi bỏ những lần mua sắm không cần thiết.
+      confusion:
+        vi: "über (quá) + der Fluss (dòng chảy): \"tràn ra\", tức là thừa. Gần nghĩa: unnötig."
+
+  - key: de:item:b2u07-ersatzteil
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Ersatzteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phụ tùng thay thế, linh kiện thay thế
+      examples:
+        - target: Für mein altes Handy gibt es keine Ersatzteile mehr.
+          translation:
+            vi: Điện thoại cũ của tôi không còn linh kiện thay thế nữa.
+        - target: Mit einem neuen Ersatzteil funktioniert die Maschine wieder.
+          translation:
+            vi: Thay một linh kiện mới là máy lại chạy.
+      confusion:
+        vi: "der Ersatz (sự thay thế) + das Teil (bộ phận) → das Ersatzteil, giống trung theo das Teil."
+
+  - key: de:item:b2u07-konsumverhalten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: das Konsumverhalten (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thói quen tiêu dùng, hành vi tiêu dùng
+      examples:
+        - target: Jeder kann sein Konsumverhalten ändern.
+          translation:
+            vi: Ai cũng có thể thay đổi thói quen tiêu dùng của mình.
+        - target: Das Konsumverhalten junger Menschen hat sich verändert.
+          translation:
+            vi: Thói quen tiêu dùng của giới trẻ đã thay đổi.
+      confusion:
+        vi: "der Konsum + das Verhalten (hành vi) → das Konsumverhalten, giống trung theo das Verhalten."
+
+  # ================= Bài 4: Ủng hộ và phản đối – lập luận =================
+  - key: de:item:b2u07-g-argumentation-redemittel
+    type: grammar_point
+    level: b2
+    difficulty: 4
+    skill_tags: [grammar]
+    front:
+      text: "Argumentieren: Für … spricht, dass … · Dagegen lässt sich einwenden, dass … · Ein weiteres Argument ist … · Wägt man die Argumente ab, … · Alles in allem …"
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Một bài lập luận (Erörterung) gồm: mở bài (nêu vấn đề), lý lẽ ủng hộ, lý lẽ phản đối, kết luận có cân nhắc. Ủng hộ: Für … spricht, dass … / Ein wichtiges Argument dafür ist …; phản đối: Dagegen spricht, dass … / Dagegen lässt sich einwenden, dass …; thêm ý: Ein weiteres Argument ist …; kết luận: Wägt man die Argumente ab, … / Alles in allem … / Abschließend möchte ich sagen, dass … Mỗi luận điểm nên có lý do (weil …) và ví dụ (So …, Zum Beispiel …)."
+      examples:
+        - target: Für ein Pfand auf Kaffeebecher spricht, dass weniger Müll entsteht.
+          translation:
+            vi: Lý lẽ ủng hộ việc đặt tiền cọc cho cốc cà phê là sẽ có ít rác hơn.
+        - target: Dagegen lässt sich einwenden, dass Mehrwegbecher gespült werden müssen.
+          translation:
+            vi: Có thể phản bác rằng cốc dùng nhiều lần phải được rửa.
+        - target: Wägt man die Argumente ab, überwiegen meiner Meinung nach die Vorteile.
+          translation:
+            vi: Cân nhắc các lý lẽ thì theo tôi ưu điểm nhiều hơn.
+      confusion:
+        vi: "Sau Für … spricht / Dagegen spricht là câu phụ dass (động từ cuối). Wägt man die Argumente ab, … là câu điều kiện không có wenn (động từ đứng đầu), nên vế sau bắt đầu bằng động từ: …, überwiegen die Vorteile. Alles in allem, Abschließend ở vị trí 1, động từ ngay sau."
+
+  - key: de:item:b2u07-gegenargument
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: das Gegenargument, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lý lẽ phản bác, phản đề
+      examples:
+        - target: Ein wichtiges Gegenargument sind die hohen Kosten.
+          translation:
+            vi: Một lý lẽ phản bác quan trọng là chi phí cao.
+        - target: Nennen Sie auch mögliche Gegenargumente.
+          translation:
+            vi: Hãy nêu cả những lý lẽ phản bác có thể có.
+      confusion:
+        vi: "gegen + das Argument → das Gegenargument (giống trung). Ngược lại: das Argument dafür / das Pro-Argument."
+
+  - key: de:item:b2u07-ueberzeugend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: überzeugend
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuyết phục, có sức thuyết phục
+      examples:
+        - target: Ihre Argumente waren sehr überzeugend.
+          translation:
+            vi: Lý lẽ của cô ấy rất thuyết phục.
+        - target: Ich finde diese Begründung nicht überzeugend.
+          translation:
+            vi: Tôi thấy lý do này không thuyết phục.
+      confusion:
+        vi: "Partizip I của überzeugen: überzeugend (gây thuyết phục) ↔ überzeugt (bị thuyết phục, tin chắc): Ich bin überzeugt, dass …"
+
+  - key: de:item:b2u07-begruendung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Begründung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lý do, sự giải thích lý do
+      examples:
+        - target: Eine Meinung ohne Begründung überzeugt niemanden.
+          translation:
+            vi: Một ý kiến không có lý do thì không thuyết phục được ai.
+        - target: Die Begründung für das Fahrverbot war vielen nicht klar.
+          translation:
+            vi: Nhiều người không rõ lý do của lệnh cấm xe.
+      confusion:
+        vi: "die Begründung là lý do được nêu ra để bảo vệ một ý kiến; der Grund là nguyên nhân nói chung."
+
+  - key: de:item:b2u07-begruenden
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: begründen
+      pos: động từ
+    back:
+      meaning:
+        vi: nêu lý do, lý giải
+      examples:
+        - target: Bitte begründen Sie Ihre Meinung.
+          translation:
+            vi: Xin hãy nêu lý do cho ý kiến của bạn.
+        - target: Er begründet seine Entscheidung mit den hohen Kosten.
+          translation:
+            vi: Anh ấy lý giải quyết định của mình bằng chi phí cao.
+      confusion:
+        vi: "etwas mit etwas (Dat) begründen = lấy cái gì làm lý do. Tiền tố be- không tách: hat begründet."
+
+  - key: de:item:b2u07-schlussfolgerung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: die Schlussfolgerung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: kết luận (rút ra từ lập luận)
+      examples:
+        - target: Ich komme zu der Schlussfolgerung, dass ein Verbot sinnvoll ist.
+          translation:
+            vi: Tôi đi đến kết luận rằng một lệnh cấm là hợp lý.
+        - target: Aus diesen Fakten kann man unterschiedliche Schlussfolgerungen ziehen.
+          translation:
+            vi: Từ các dữ kiện này có thể rút ra những kết luận khác nhau.
+      confusion:
+        vi: "eine Schlussfolgerung ziehen = rút ra kết luận; zu der/zur Schlussfolgerung kommen = đi đến kết luận."
+
+  - key: de:item:b2u07-abschliessend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: abschließend
+      pos: trạng từ
+    back:
+      meaning:
+        vi: để kết thúc, cuối cùng (mở đầu phần kết)
+      examples:
+        - target: Abschließend möchte ich sagen, dass jeder etwas beitragen kann.
+          translation:
+            vi: Để kết thúc, tôi muốn nói rằng ai cũng có thể đóng góp một phần.
+        - target: Abschließend lässt sich feststellen, dass die Vorteile überwiegen.
+          translation:
+            vi: Cuối cùng có thể khẳng định rằng ưu điểm nhiều hơn.
+      confusion:
+        vi: "Đứng ở vị trí 1 thì động từ ngay sau: Abschließend möchte ich … Gần nghĩa: zum Schluss, zusammenfassend."
+
+  - key: de:item:b2u07-gewichten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: gewichten
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh giá mức độ quan trọng, cân nặng nhẹ (các lý lẽ)
+      examples:
+        - target: Wie gewichten Sie die einzelnen Argumente?
+          translation:
+            vi: Bạn đánh giá mức quan trọng của từng lý lẽ thế nào?
+        - target: Ich gewichte den Umweltschutz höher als die Kosten.
+          translation:
+            vi: Tôi coi trọng việc bảo vệ môi trường hơn chi phí.
+      confusion:
+        vi: "Từ das Gewicht (trọng lượng). Partizip II: gewichtet (không thêm ge- vì đã bắt đầu bằng ge- không nhấn)."
+
+  - key: de:item:b2u07-aspekt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Aspekt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khía cạnh
+      examples:
+        - target: Ein weiterer Aspekt ist die Gesundheit.
+          translation:
+            vi: Một khía cạnh khác là sức khoẻ.
+        - target: Unter diesem Aspekt sieht die Sache anders aus.
+          translation:
+            vi: Xét theo khía cạnh này thì vấn đề lại khác.
+      confusion:
+        vi: "Giống đực: ein wichtiger Aspekt, unter diesem Aspekt (unter + Dativ)."
+
+  # Zusatzwortschatz B2U07L4 (8): befürworten, Befürworter, Gegner, berechtigt, überwiegen, zusammenfassend, einleuchtend, stichhaltig
+  - key: de:item:b2u07-befuerworten
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: befürworten
+      pos: động từ
+    back:
+      meaning:
+        vi: tán thành, ủng hộ (một đề xuất)
+      examples:
+        - target: Ich befürworte einen fleischfreien Tag in der Kantine.
+          translation:
+            vi: Tôi ủng hộ một ngày không có thịt ở căng-tin.
+        - target: Die meisten Eltern haben den Vorschlag befürwortet.
+          translation:
+            vi: Phần lớn phụ huynh đã tán thành đề xuất này.
+      confusion:
+        vi: "befürworten + Akkusativ, không có giới từ (khác với sein für + Akk). Tiền tố be- không tách: hat befürwortet."
+
+  - key: de:item:b2u07-befuerworter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Befürworter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người ủng hộ
+      examples:
+        - target: Die Befürworter des Projekts sprechen von mehr Lebensqualität.
+          translation:
+            vi: Những người ủng hộ dự án nói đến chất lượng sống tốt hơn.
+        - target: Ich bin ein klarer Befürworter dieser Idee.
+          translation:
+            vi: Tôi là người ủng hộ rõ ràng ý tưởng này.
+      confusion:
+        vi: "Nữ: die Befürworterin, -nen. Ngược nghĩa: der Gegner."
+
+  - key: de:item:b2u07-gegner
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: der Gegner, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: người phản đối; đối thủ
+      examples:
+        - target: Die Gegner des Verbots fürchten höhere Kosten.
+          translation:
+            vi: Những người phản đối lệnh cấm lo sợ chi phí cao hơn.
+        - target: Im Spiel war unser Gegner sehr stark.
+          translation:
+            vi: Trong trận đấu, đối thủ của chúng tôi rất mạnh.
+      confusion:
+        vi: "Nữ: die Gegnerin, -nen. Người phản đối cái gì thường đi với Genitiv: die Gegner des Projekts."
+
+  - key: de:item:b2u07-berechtigt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: berechtigt
+      pos: tính từ
+    back:
+      meaning:
+        vi: chính đáng, có cơ sở
+      examples:
+        - target: Ihre Kritik ist durchaus berechtigt.
+          translation:
+            vi: Lời phê bình của bạn hoàn toàn có cơ sở.
+        - target: Das ist ein berechtigter Einwand.
+          translation:
+            vi: Đó là một ý phản bác chính đáng.
+      confusion:
+        vi: "Gốc das Recht (quyền). zu etwas berechtigt sein = có quyền làm gì (nghĩa khác)."
+
+  - key: de:item:b2u07-ueberwiegen
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: überwiegen, überwiegt, überwog, hat überwogen
+      pos: động từ
+    back:
+      meaning:
+        vi: chiếm ưu thế, nhiều hơn, nặng hơn (về mức độ)
+      examples:
+        - target: Meiner Meinung nach überwiegen die Vorteile.
+          translation:
+            vi: Theo tôi, ưu điểm nhiều hơn.
+        - target: Bei diesem Projekt haben die Nachteile überwogen.
+          translation:
+            vi: Ở dự án này, nhược điểm đã nhiều hơn.
+      confusion:
+        vi: "Động từ không tách, trọng âm ở -wie-: überWIEgen, Partizip II überwogen (không có ge-)."
+
+  - key: de:item:b2u07-zusammenfassend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags: [vocabulary]
+    front:
+      text: zusammenfassend
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tóm lại
+      examples:
+        - target: Zusammenfassend kann man sagen, dass beide Seiten recht haben.
+          translation:
+            vi: Tóm lại có thể nói rằng cả hai bên đều có lý.
+        - target: Zusammenfassend lässt sich feststellen, dass das Projekt erfolgreich war.
+          translation:
+            vi: Tóm lại có thể khẳng định rằng dự án đã thành công.
+      confusion:
+        vi: "Partizip I của zusammenfassen. Ở vị trí 1, động từ chia đứng ngay sau: Zusammenfassend kann man …"
+
+  - key: de:item:b2u07-einleuchtend
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: einleuchtend
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ hiểu, hợp lý, sáng tỏ
+      examples:
+        - target: Dieses Argument ist mir sofort einleuchtend.
+          translation:
+            vi: Lý lẽ này tôi thấy hợp lý ngay.
+        - target: Sie hat eine einleuchtende Erklärung gegeben.
+          translation:
+            vi: Cô ấy đã đưa ra một lời giải thích dễ hiểu.
+      confusion:
+        vi: "Từ động từ einleuchten (Das leuchtet mir ein = Tôi thấy hợp lý). Gần nghĩa: überzeugend, nachvollziehbar."
+
+  - key: de:item:b2u07-stichhaltig
+    type: vocab
+    level: b2
+    difficulty: 4
+    skill_tags: [vocabulary]
+    front:
+      text: stichhaltig
+      pos: tính từ
+    back:
+      meaning:
+        vi: vững chắc, đứng vững được (lý lẽ, bằng chứng)
+      examples:
+        - target: Dafür gibt es keine stichhaltigen Beweise.
+          translation:
+            vi: Không có bằng chứng vững chắc nào cho điều đó.
+        - target: Ist dieses Gegenargument wirklich stichhaltig?
+          translation:
+            vi: Lý lẽ phản bác này có thực sự vững không?
+      confusion:
+        vi: "Dùng trong văn trang trọng, gần như chỉ đi với Argument, Beweis, Begründung."

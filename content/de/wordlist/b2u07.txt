@@ -1,0 +1,5 @@
+# Allow-list của unit B2U07 (Umwelt und Nachhaltigkeit): từ đúng mà từ điển offline thiếu.
+# das Ökosystem: hệ sinh thái (Duden).
+Ökosystem
+# begrünen: phủ cây xanh (Duden), dùng trong "begrünte Dächer".
+begrünten

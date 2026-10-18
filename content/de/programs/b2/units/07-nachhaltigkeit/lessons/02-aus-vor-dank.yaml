@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u07-aus-vor-dank
+order_index: 2
+level: b2
+title:
+  vi: Vì sợ, nhờ có – giới từ nguyên nhân (Aus Angst, vor Kälte, dank)
+objectives:
+  - vi: Diễn đạt nguyên nhân chính xác khi nói về đa dạng sinh học.
+  - vi: Phân biệt aus (động cơ có ý thức), vor (phản ứng không chủ ý) và dank (nguyên nhân tích cực).
+  - vi: Dùng aufgrund, infolge, wegen + Genitiv trong văn viết về thiên nhiên.
+estimated_minutes: 21
+skills: [grammar, vocabulary, reading]
+prerequisites: [de:lesson:b2u07-infinitiv-perfekt]
+items:
+  - item: de:item:b2u07-g-kausale-praepositionen
+  - item: de:item:b2u07-artenvielfalt
+  - item: de:item:b2u07-aussterben
+  - item: de:item:b2u07-bedroht
+  - item: de:item:b2u07-lebensraum
+  - item: de:item:b2u07-schuetzen
+  - item: de:item:b2u07-oekosystem
+  - item: de:item:b2u07-tierart
+  - item: de:item:b2u07-abholzung
+  - item: de:item:b2u07-insekt
+  - item: de:item:b2u07-biene
+  - item: de:item:b2u07-regenwald
+  - item: de:item:b2u07-zittern
+  - item: de:item:b2u07-kaelte
+  - item: de:item:b2u07-neugier
+  - item: de:item:b2u07-ueberzeugung
+  - item: de:item:b2u07-pestizid
+  - item: de:item:b2u07-artenschutz
+  - item: de:item:b1u06-g-genitiv-praepositionen
+    role: reuse
+  - item: de:item:b2u02-g-genitiv-praep-formal
+    role: reuse
+  - item: de:item:b2u03-g-modalverben-subjektiv
+    role: reuse
+  - item: de:item:b2u03-g-verbpraefixe-bedeutung
+    role: reuse
+  - item: de:item:b2u07-g-infinitiv-perfekt
+    role: reuse
+  - item: de:item:b1u02-freude
+    role: reuse
+  - item: de:item:b1u02-weinen
+    role: reuse
+  - item: de:item:a2u08-angst-haben-vor
+    role: reuse
+  - item: de:item:a2u05-wald
+    role: reuse
+  - item: de:item:a2u05-natur
+    role: reuse
+  - item: de:item:b2u05-g-nomen-praeposition
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nêu được nguyên nhân một cách chính xác khi nói về thiên nhiên, ví dụ: \"Aus Überzeugung kaufe ich keine Produkte mit Pestiziden. Dank des Schutzgebiets gibt es dort wieder mehr Bienen.\""
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ có \"vì, do, nhờ\", còn tiếng Đức chọn giới từ theo LOẠI nguyên nhân. aus + danh từ (thường không mạo từ) nêu động cơ bên trong của một hành động có ý thức, tức là người đó tự quyết định: aus Angst, aus Liebe, aus Neugier, aus Überzeugung, aus Gewohnheit. Ví dụ: Aus Neugier habe ich das Naturkundemuseum besucht."
+  - type: explain
+    text:
+      vi: "vor + Dativ (thường không mạo từ) nêu nguyên nhân của một phản ứng KHÔNG chủ ý của cơ thể hay cảm xúc: vor Kälte zittern, vor Freude weinen, vor Angst schreien, vor Müdigkeit einschlafen. Mẹo: người đó có tự chọn được không? Chọn được → aus; không kìm được → vor. Vì vậy nói vor Kälte zittern, không nói aus Kälte."
+  - type: explain
+    text:
+      vi: "dank (nhờ) chỉ dùng cho nguyên nhân tích cực, đi với Genitiv trong văn viết (dank des Schutzgebiets), Dativ cũng hay gặp (dank dem Schutzgebiet). Nguyên nhân trung tính hoặc tiêu cực trong văn viết: wegen, aufgrund + Genitiv; infolge + Genitiv nêu hậu quả của một sự kiện (infolge der Abholzung)."
+  - type: deep_explain
+    text:
+      vi: "Cùng một danh từ có thể đi với hai giới từ, nghĩa khác nhau: Aus Angst hat er nichts gesagt (sợ nên cố ý im lặng) ↔ Er hat vor Angst gezittert (run vì sợ, không cố ý). wegen Angst cũng đúng ngữ pháp, nhưng chỉ nêu nguyên nhân chung chung, không có sắc thái như aus/vor. vor lauter + danh từ nhấn mạnh: vor lauter Freude (vì quá vui). Danh từ sau aus/vor có tính từ thì có đuôi Dativ: aus reiner Neugier, vor großer Freude. Khi nói về thiên nhiên, hãy học theo cụm: Tierarten sterben aus (tuyệt chủng), sind vom Aussterben bedroht, verlieren ihren Lebensraum; Pestizide können Bienen schaden; die Abholzung zerstört Lebensräume."
+  - type: example
+    target: Viele Menschen kaufen aus Überzeugung Produkte ohne Pestizide, um die Natur zu schützen.
+    target_lang: de
+    translation:
+      vi: Nhiều người mua sản phẩm không có thuốc trừ sâu vì niềm tin của mình, để bảo vệ thiên nhiên.
+    note:
+      vi: "aus + danh từ không mạo từ: hành động có ý thức, động cơ bên trong."
+  - type: example
+    target: Die Kinder haben im Wald vor Kälte gezittert.
+    target_lang: de
+    translation:
+      vi: Bọn trẻ run lên vì lạnh trong rừng.
+    note:
+      vi: "Run là phản ứng không chủ ý của cơ thể: vor Kälte (Dativ, không mạo từ)."
+  - type: example
+    target: Als sie den seltenen Vogel sah, hat sie vor Freude geweint.
+    target_lang: de
+    translation:
+      vi: Khi nhìn thấy con chim quý hiếm, cô ấy đã khóc vì vui sướng.
+    note:
+      vi: "Khóc vì vui không phải là quyết định: vor Freude weinen."
+  - type: example
+    target: Aus Angst vor Wespen geht mein Sohn nicht mehr in den Garten.
+    target_lang: de
+    translation:
+      vi: Vì sợ ong bắp cày nên con trai tôi không ra vườn nữa.
+    note:
+      vi: "Không ra vườn là quyết định có ý thức: aus Angst. Angst vor + Dativ (sợ cái gì) là cụm đã học."
+  - type: example
+    target: Dank des neuen Schutzgebiets leben dort wieder mehr Bienen und andere Insekten.
+    target_lang: de
+    translation:
+      vi: Nhờ khu bảo tồn mới mà ở đó lại có nhiều ong và côn trùng khác hơn.
+    note:
+      vi: "dank + Genitiv (das Schutzgebiet → des Schutzgebiets): nguyên nhân tích cực. Ví dụ hư cấu."
+  - type: example
+    target: Infolge der Abholzung haben viele Tierarten ihren Lebensraum verloren.
+    target_lang: de
+    translation:
+      vi: Do nạn chặt phá rừng, nhiều loài động vật đã mất môi trường sống.
+    note:
+      vi: "infolge + Genitiv: hậu quả của một sự kiện, văn viết trang trọng."
+  - type: example
+    target: Pestizide können einen großen Einfluss auf die Artenvielfalt haben, vor allem auf Bienen.
+    target_lang: de
+    translation:
+      vi: Thuốc trừ sâu có thể ảnh hưởng lớn đến sự đa dạng loài, nhất là đối với loài ong.
+    note:
+      vi: "der Einfluss auf + Akkusativ (danh từ có giới từ cố định); vor allem = nhất là."
+  - type: example
+    target: Die Abholzung zerstört Lebensräume und verändert das ganze Ökosystem. Aufgrund dessen dürften auch viele Pflanzenarten bedroht sein.
+    target_lang: de
+    translation:
+      vi: Việc chặt phá rừng phá huỷ môi trường sống và làm thay đổi cả hệ sinh thái. Vì thế có lẽ nhiều loài thực vật cũng đang bị đe doạ.
+    note:
+      vi: "zer- (phá huỷ hoàn toàn), ver- (làm khác đi) là tiền tố có nghĩa; aufgrund dessen = vì điều đó; dürfte = có lẽ (phỏng đoán)."
+  - type: common_mistake
+    wrong: Die Kinder haben aus Kälte gezittert.
+    right: Die Kinder haben vor Kälte gezittert.
+    target_lang: de
+    note:
+      vi: "Run vì lạnh là phản ứng không chủ ý → vor, không phải aus."
+  - type: common_mistake
+    wrong: Dank des Sturms sind im Wald viele Bäume umgefallen.
+    right: Wegen des Sturms sind im Wald viele Bäume umgefallen.
+    target_lang: de
+    note:
+      vi: "dank chỉ dùng cho nguyên nhân tốt; nguyên nhân xấu dùng wegen + Genitiv (văn viết), hoặc trang trọng hơn infolge, aufgrund."
+  - type: common_mistake
+    wrong: Aus der Neugier habe ich das Museum besucht.
+    right: Aus Neugier habe ich das Museum besucht.
+    target_lang: de
+    note:
+      vi: "Sau aus/vor chỉ nguyên nhân, danh từ cảm xúc thường không có mạo từ."
+  - type: summary
+    points:
+      - vi: "aus + danh từ không mạo từ: động cơ có ý thức (aus Angst, aus Überzeugung, aus Neugier)."
+      - vi: "vor + Dativ không mạo từ: phản ứng không chủ ý (vor Kälte zittern, vor Freude weinen)."
+      - vi: "Tự chọn được → aus; không kìm được → vor; wegen: trung tính."
+      - vi: "dank + Genitiv (cũng gặp Dativ): chỉ nguyên nhân tích cực."
+      - vi: "aufgrund, infolge, wegen + Genitiv: văn viết; infolge = hậu quả của sự kiện."
+      - vi: "Từ vựng: die Artenvielfalt, aussterben, bedroht, der Lebensraum, schützen, das Ökosystem, die Tierart, die Abholzung."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u07l2-mcq-vor-kaelte
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u07-g-kausale-praepositionen
+    prompt:
+      stem: "Chọn giới từ đúng: Die Kinder zitterten ___ Kälte."
+      stem_lang: vi
+      options:
+        - { id: k3a, text: "vor", lang: de }
+        - { id: k7b, text: "aus", lang: de }
+        - { id: k1c, text: "dank", lang: de }
+        - { id: k5d, text: "durch", lang: de }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: "Run vì lạnh là phản ứng không chủ ý của cơ thể: vor + Dativ (vor Kälte). aus dùng cho động cơ có ý thức; dank cho nguyên nhân tích cực; durch không dùng để nêu cảm giác gây ra phản ứng."
+    display_answer: vor
+
+  - key: de:exercise:b2u07l2-mcq-aus-neugier
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-neugier
+    prompt:
+      stem: "Chọn giới từ đúng: ___ Neugier habe ich mir die Ausstellung über Insekten angesehen."
+      stem_lang: vi
+      options:
+        - { id: n2a, text: "Aus", lang: de }
+        - { id: n6b, text: "Vor", lang: de }
+        - { id: n9c, text: "Bei", lang: de }
+        - { id: n4d, text: "Infolge", lang: de }
+    answer:
+      correct_option_id: n2a
+    explanation:
+      vi: "Đi xem triển lãm là hành động tự quyết định, động cơ là sự tò mò: aus Neugier. vor dùng cho phản ứng không chủ ý; bei không nêu nguyên nhân kiểu này; infolge cần Genitiv có mạo từ và nêu hậu quả của một sự kiện."
+    display_answer: Aus
+
+  - key: de:exercise:b2u07l2-listen-hecken
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u07-artenvielfalt
+    prompt:
+      audio_asset_id: null
+      fallback_text: Dank der neuen Hecken hat die Artenvielfalt im Stadtpark zugenommen. Viele Vögel bauen dort aus Angst vor Katzen ihre Nester gut versteckt.
+      options:
+        - { id: h3a, text: "Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; nhiều loài chim vì sợ mèo nên làm tổ ở chỗ kín đáo.", lang: vi }
+        - { id: h7b, text: "Vì các hàng rào cây mới, công viên có ít loài hơn; chim không còn làm tổ ở đó nữa.", lang: vi }
+        - { id: h1c, text: "Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; mèo trốn trong hàng rào để bắt chim.", lang: vi }
+        - { id: h5d, text: "Mặc dù có hàng rào cây mới, công viên vẫn ít loài; chim run lên vì sợ mèo.", lang: vi }
+    answer:
+      correct_option_id: h3a
+    explanation:
+      vi: "Dank der neuen Hecken = nhờ hàng rào cây mới (nguyên nhân tích cực, Genitiv số nhiều). die Artenvielfalt hat zugenommen = đa dạng loài đã tăng. aus Angst vor Katzen = vì sợ mèo (động cơ của việc làm tổ kín đáo)."
+    display_answer: Nhờ các hàng rào cây mới, công viên có nhiều loài hơn; nhiều loài chim vì sợ mèo nên làm tổ ở chỗ kín đáo.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u07l2-fill-vor-dank
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-kausale-praepositionen
+    prompt:
+      template: "Als sie den seltenen Vogel sah, hat sie {{b1}} Freude geweint. {{b2}} der Hilfe vieler Freiwilliger gibt es im Park wieder mehr Insekten. (aus · vor · dank)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 5 }
+    answer:
+      blanks:
+        b1: [vor]
+        b2: [Dank]
+    known_wrong:
+      - answer: aus
+        feedback_vi: Khóc vì vui là phản ứng không chủ ý → vor Freude; aus chỉ dùng cho hành động có chủ ý, và không đứng trước der Hilfe ở đây.
+        error_tag: preposition
+    explanation:
+      vi: "Khóc vì vui không phải là quyết định: vor Freude weinen. Sự giúp đỡ của tình nguyện viên là nguyên nhân tích cực: Dank + Genitiv (der Hilfe vieler Freiwilliger)."
+    display_answer: "Als sie den seltenen Vogel sah, hat sie vor Freude geweint. Dank der Hilfe vieler Freiwilliger gibt es im Park wieder mehr Insekten."
+
+  - key: de:exercise:b2u07l2-fill-aussterben
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-aussterben
+    prompt:
+      template: "Viele Bienenarten sind {{b1}} (bedrohen). Ohne Schutz könnten manche Arten bald {{b2}} (aussterben). Die Dinosaurier sind schon vor vielen Millionen Jahren {{b3}} (aussterben)."
+      blanks:
+        - { id: b1, width_hint: 8 }
+        - { id: b2, width_hint: 10 }
+        - { id: b3, width_hint: 12 }
+    answer:
+      blanks:
+        b1: [bedroht]
+        b2: [aussterben]
+        b3: [ausgestorben]
+    known_wrong:
+      - answer: gestorben
+        feedback_vi: Tuyệt chủng là aussterben; tiền tố aus- phải giữ lại – ausgestorben.
+        error_tag: separable_prefix
+      - answer: bedrohen
+        feedback_vi: Sau sind cần Partizip II dùng như tính từ – bedroht.
+        error_tag: participle_form
+    explanation:
+      vi: "sind bedroht = đang bị đe doạ (Partizip II làm tính từ). Sau könnten là nguyên thể ở cuối câu: aussterben. Perfekt của aussterben dùng sein, ge- chen giữa tiền tố và gốc: sind … ausgestorben."
+    display_answer: "Viele Bienenarten sind bedroht. Ohne Schutz könnten manche Arten bald aussterben. Die Dinosaurier sind schon vor vielen Millionen Jahren ausgestorben."
+
+  - key: de:exercise:b2u07l2-tr-aus-angst
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:a2u08-angst-haben-vor
+    prompt:
+      source_text: "Vì sợ, anh ấy đã không nói gì. (dùng aus, thì Perfekt)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Aus Angst hat er nichts gesagt.
+        - Er hat aus Angst nichts gesagt.
+        - Aus Angst hat er gar nichts gesagt.
+        - Er hat aus Angst gar nichts gesagt.
+    known_wrong:
+      - answer: Aus der Angst hat er nichts gesagt.
+        feedback_vi: Sau aus chỉ động cơ, danh từ cảm xúc không có mạo từ – aus Angst.
+        error_tag: article
+      - answer: Aus Angst er hat nichts gesagt.
+        feedback_vi: Aus Angst ở vị trí 1 nên hat đứng ngay sau – Aus Angst hat er …
+        error_tag: verb_position
+    explanation:
+      vi: "Im lặng là quyết định có ý thức, động cơ là nỗi sợ: aus Angst (không mạo từ). Perfekt: hat … gesagt; nếu Aus Angst đứng đầu thì hat ở vị trí 2, chủ ngữ er đứng sau."
+    display_answer: Aus Angst hat er nichts gesagt.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u07l2-mcq-welcher-satz
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-kausale-praepositionen
+    prompt:
+      stem: "Câu nào đúng?"
+      stem_lang: vi
+      options:
+        - { id: w2a, text: "Vor lauter Freude hat sie geweint.", lang: de }
+        - { id: w6b, text: "Aus Kälte haben die Kinder gezittert.", lang: de }
+        - { id: w9c, text: "Vor Überzeugung isst er kein Fleisch.", lang: de }
+        - { id: w4d, text: "Dank des Sturms sind viele Bäume umgefallen.", lang: de }
+    answer:
+      correct_option_id: w2a
+    explanation:
+      vi: "vor lauter Freude = vì quá vui (phản ứng không chủ ý, lauter nhấn mạnh). Run vì lạnh cần vor; không ăn thịt vì niềm tin là quyết định → aus Überzeugung; bão là nguyên nhân xấu nên không dùng dank (dùng infolge/wegen)."
+    display_answer: Vor lauter Freude hat sie geweint.
+
+  - key: de:exercise:b2u07l2-wb-dank-schutzgebiet
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-artenschutz
+    prompt:
+      instruction: "Sắp xếp thành câu, bắt đầu bằng Dank: \"Nhờ khu bảo tồn mới mà ở đó lại có nhiều chim hơn.\""
+      tokens:
+        - { id: d-voegel, text: Vögel }
+        - { id: d-leben, text: leben }
+        - { id: d-des, text: des }
+        - { id: d-dank, text: Dank }
+        - { id: d-mehr, text: mehr }
+        - { id: d-schutzgebiets, text: Schutzgebiets }
+        - { id: d-dort, text: dort }
+        - { id: d-neuen, text: neuen }
+        - { id: d-wieder, text: wieder }
+    answer:
+      orders:
+        - [d-dank, d-des, d-neuen, d-schutzgebiets, d-leben, d-dort, d-wieder, d-mehr, d-voegel]
+    explanation:
+      vi: "dank + Genitiv: des neuen Schutzgebiets (đuôi tính từ -en, danh từ thêm -s). Cả cụm Dank … là vị trí 1, nên leben đứng ngay sau; trạng từ dort wieder đứng trước chủ ngữ mới mehr Vögel."
+    display_answer: Dank des neuen Schutzgebiets leben dort wieder mehr Vögel.
+
+  - key: de:exercise:b2u07l2-tr-infolge-abholzung
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u07-abholzung
+    prompt:
+      source_text: Infolge der Abholzung dürften viele Tierarten ihren Lebensraum verloren haben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Do nạn chặt phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống.
+        - Do việc chặt phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống.
+        - Do chặt phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống.
+        - Vì nạn chặt phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống.
+        - Do nạn phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống.
+        - Do nạn chặt phá rừng, nhiều loài động vật có lẽ đã mất môi trường sống.
+        - Do nạn chặt phá rừng, có lẽ nhiều loài động vật đã mất nơi sống.
+        - Do nạn chặt phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống của chúng.
+        - Do nạn chặt phá rừng, chắc là nhiều loài động vật đã mất môi trường sống.
+        - Hậu quả của việc chặt phá rừng là có lẽ nhiều loài động vật đã mất môi trường sống.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Do nạn chặt phá rừng, nhiều loài động vật chắc chắn đã mất môi trường sống.
+        feedback_vi: "dürfte là phỏng đoán khá chắc (có lẽ), không phải chắc chắn hoàn toàn."
+        error_tag: meaning
+      - answer: Mặc dù chặt phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống.
+        feedback_vi: "infolge nêu nguyên nhân/hậu quả (do), không phải nhượng bộ."
+        error_tag: meaning
+    explanation:
+      vi: "infolge + Genitiv = do, là hậu quả của. dürfte + nguyên thể quá khứ (verloren haben) = có lẽ đã …: phỏng đoán về việc đã xảy ra. ihren Lebensraum = môi trường sống của chúng."
+    display_answer: Do nạn chặt phá rừng, có lẽ nhiều loài động vật đã mất môi trường sống.

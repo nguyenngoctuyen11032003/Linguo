@@ -1,0 +1,394 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u07-weiterfuehrender-relativsatz
+order_index: 3
+level: b2
+title:
+  vi: Điều làm tôi ngạc nhiên là… – mệnh đề quan hệ nối tiếp (…, was mich überrascht hat.)
+objectives:
+  - vi: Bình luận cả một sự việc ngay trong câu bằng …, was … / …, wodurch … / …, worüber …
+  - vi: Phân biệt mệnh đề trỏ một danh từ (der Laden, in dem …) với mệnh đề trỏ cả câu.
+  - vi: Nói và viết về tiêu dùng bền vững, tái chế và lãng phí.
+estimated_minutes: 21
+skills: [grammar, vocabulary, writing]
+prerequisites: [de:lesson:b2u07-aus-vor-dank]
+items:
+  - item: de:item:b2u07-g-weiterfuehrender-relativsatz
+  - item: de:item:b2u07-verzicht
+  - item: de:item:b2u07-wegwerfgesellschaft
+  - item: de:item:b2u07-recyceln
+  - item: de:item:b2u07-wiederverwenden
+  - item: de:item:b2u07-kreislauf
+  - item: de:item:b2u07-ressource
+  - item: de:item:b2u07-verschwendung
+  - item: de:item:b2u07-langlebig
+  - item: de:item:b2u07-einwegbecher
+  - item: de:item:b2u07-mehrwegflasche
+  - item: de:item:b2u07-unverpackt
+  - item: de:item:b2u07-entsorgen
+  - item: de:item:b2u07-ueberfluessig
+  - item: de:item:b2u07-ersatzteil
+  - item: de:item:b2u07-konsumverhalten
+  - item: de:item:b1u02-g-relativsatz-praeposition
+    role: reuse
+  - item: de:item:b1u04-g-relativ-wo-was
+    role: reuse
+  - item: de:item:b1u02-g-pronominaladverbien
+    role: reuse
+  - item: de:item:b2u01-g-indem
+    role: reuse
+  - item: de:item:b1u05-verzichten-auf
+    role: reuse
+  - item: de:item:b1u05-verpackung
+    role: reuse
+  - item: de:item:a2u08-wegwerfen
+    role: reuse
+  - item: de:item:a2u08-plastik
+    role: reuse
+  - item: de:item:b1u06-rohstoff
+    role: reuse
+  - item: de:item:b1u05-lebensmittel
+    role: reuse
+  - item: de:item:b1u06-nachhaltig
+    role: reuse
+  - item: de:item:a2u06-reparieren
+    role: reuse
+  - item: de:item:b2u05-g-verben-praeposition-b2
+    role: reuse
+  - item: de:item:b2u06-g-irreale-vergangenheit
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn bình luận được cả một sự việc ngay trong câu, ví dụ: \"Viele Menschen werfen Lebensmittel weg, was eine große Verschwendung ist. Das Café verwendet nur Mehrwegbecher, wodurch weniger Müll entsteht.\""
+  - type: explain
+    text:
+      vi: "Bạn đã biết mệnh đề quan hệ trỏ một danh từ: der Laden, in dem ich einkaufe. Khi muốn bình luận CẢ câu đứng trước, tiếng Việt nói \"…, điều này …\", còn tiếng Đức dùng was: Mein Nachbar repariert seine Geräte selbst, was ich toll finde. was không trỏ Geräte, mà trỏ việc \"anh ấy tự sửa đồ\"."
+  - type: explain
+    text:
+      vi: "Nếu động từ trong mệnh đề cần giới từ (sich freuen über, durch), dùng wo + giới từ; giới từ bắt đầu bằng nguyên âm thì thêm r: wodurch, wofür, worüber, woran. Ví dụ: Der Supermarkt verkauft Obst ohne Verpackung, worüber sich viele Kunden freuen. Đây là cùng nhóm từ wo(r)- bạn đã học ở câu hỏi (Worüber freust du dich?)."
+  - type: explain
+    text:
+      vi: "Mệnh đề nối tiếp luôn đứng SAU câu chính, có dấu phẩy, và động từ chia đứng cuối: …, was eine große Verschwendung ist. Không dùng das/die/der ở đây, vì không có danh từ nào để trỏ; cũng không dùng darüber (đó là trạng từ của câu chính, kéo theo V2)."
+  - type: deep_explain
+    text:
+      vi: "So sánh ba loại: (1) trỏ danh từ: das Café, in dem ich arbeite (giới từ + der/die/das theo giống); (2) trỏ đại từ bất định: alles, was …; nichts, was …; das Einzige, was … (đã học ở B1); (3) trỏ cả câu: …, was …; …, wodurch/worüber … Câu mẹo: nếu thay được bằng \"…, và điều đó …\" thì là loại (3). wodurch thường nêu hệ quả (nhờ đó, vì thế), gần nghĩa với dadurch trong câu mới: Das Café verwendet Mehrwegbecher. Dadurch entsteht weniger Müll. Cũng có thể kết hợp với indem: Man spart Ressourcen, indem man Dinge länger nutzt, was oft auch billiger ist."
+  - type: example
+    target: Viele Menschen werfen Lebensmittel weg, was eine große Verschwendung ist.
+    target_lang: de
+    translation:
+      vi: Nhiều người vứt bỏ thực phẩm, đó là một sự lãng phí lớn.
+    note:
+      vi: "was trỏ cả việc \"vứt bỏ thực phẩm\", không trỏ Lebensmittel; động từ ist ở cuối."
+  - type: example
+    target: Mein Nachbar repariert seine Geräte selbst, was ich toll finde.
+    target_lang: de
+    translation:
+      vi: Hàng xóm tôi tự sửa đồ điện của mình, điều đó tôi thấy thật tuyệt.
+    note:
+      vi: "Tôi thấy tuyệt về VIỆC tự sửa, nên dùng was (là tân ngữ của finde)."
+  - type: example
+    target: Das Café gibt Kaffee nur noch in Mehrwegbechern aus, wodurch viel weniger Müll entsteht.
+    target_lang: de
+    translation:
+      vi: Quán cà phê chỉ bán cà phê trong cốc dùng nhiều lần, nhờ đó rác giảm đi nhiều.
+    note:
+      vi: "wodurch = nhờ đó, vì thế: nêu hệ quả của cả câu trước."
+  - type: example
+    target: Der Supermarkt verkauft Obst jetzt ohne Verpackung, worüber sich viele Kunden freuen.
+    target_lang: de
+    translation:
+      vi: Siêu thị giờ bán trái cây không có bao bì, điều này khiến nhiều khách hàng vui mừng.
+    note:
+      vi: "sich freuen über + Akk → worüber. Trong câu mới thì nói: Darüber freuen sich viele Kunden (V2)."
+  - type: example
+    target: Der Laden, in dem ich einkaufe, verzichtet auf Plastik, was ich sehr gut finde.
+    target_lang: de
+    translation:
+      vi: Cửa hàng nơi tôi mua sắm không dùng nhựa, điều đó tôi thấy rất tốt.
+    note:
+      vi: "in dem trỏ der Laden (danh từ); was trỏ cả việc cửa hàng bỏ nhựa. verzichten auf + Akk."
+  - type: example
+    target: Alles, was wir wegwerfen, wurde aus Rohstoffen hergestellt.
+    target_lang: de
+    translation:
+      vi: Mọi thứ chúng ta vứt đi đều được làm ra từ nguyên liệu.
+    note:
+      vi: "alles, was … là loại trỏ đại từ bất định đã học ở B1 – khác với was trỏ cả câu."
+  - type: example
+    target: Man lebt nachhaltiger, indem man Dinge länger nutzt, was oft auch Geld spart.
+    target_lang: de
+    translation:
+      vi: Người ta sống bền vững hơn bằng cách dùng đồ lâu hơn, việc này thường cũng tiết kiệm tiền.
+    note:
+      vi: "indem nêu cách thức; was bình luận cả ý đó."
+  - type: example
+    target: Jeder kann zum Klimaschutz beitragen, wofür man nicht viel Geld braucht.
+    target_lang: de
+    translation:
+      vi: Ai cũng có thể góp phần bảo vệ khí hậu, và việc đó không cần nhiều tiền.
+    note:
+      vi: "beitragen zu + Dativ (zum Klimaschutz); Geld brauchen für → wofür trỏ cả việc góp phần."
+  - type: example
+    target: Hätte ich das Ersatzteil früher bestellt, hätte ich mein altes Handy nicht wegwerfen müssen.
+    target_lang: de
+    translation:
+      vi: Giá mà tôi đặt linh kiện sớm hơn thì đã không phải vứt chiếc điện thoại cũ.
+    note:
+      vi: "Điều kiện không thật ở quá khứ (hätte … bestellt): tiếc nuối về một quyết định tiêu dùng."
+  - type: common_mistake
+    wrong: Mein Nachbar repariert seine Geräte selbst, das ich toll finde.
+    right: Mein Nachbar repariert seine Geräte selbst, was ich toll finde.
+    target_lang: de
+    note:
+      vi: "Trỏ cả câu thì dùng was, không dùng das."
+  - type: common_mistake
+    wrong: Der Supermarkt verkauft Obst ohne Verpackung, darüber sich viele Kunden freuen.
+    right: Der Supermarkt verkauft Obst ohne Verpackung, worüber sich viele Kunden freuen.
+    target_lang: de
+    note:
+      vi: "Mở mệnh đề quan hệ dùng wo(r)- + giới từ; da(r)- là trạng từ trong câu chính."
+  - type: common_mistake
+    wrong: Viele Menschen werfen Lebensmittel weg, was ist eine große Verschwendung.
+    right: Viele Menschen werfen Lebensmittel weg, was eine große Verschwendung ist.
+    target_lang: de
+    note:
+      vi: "Mệnh đề quan hệ là câu phụ: động từ chia đứng cuối."
+  - type: summary
+    points:
+      - vi: "Trỏ cả câu trước: …, was … (động từ cuối)."
+      - vi: "Động từ cần giới từ: …, wodurch / wofür / worüber / woran …"
+      - vi: "Không dùng das/die/der (không có danh từ để trỏ) và không dùng darüber (trạng từ câu chính)."
+      - vi: "Trỏ danh từ: der Laden, in dem …; trỏ alles/nichts: alles, was …"
+      - vi: "Mệnh đề nối tiếp luôn đứng sau câu chính, có dấu phẩy."
+      - vi: "Từ vựng: der Verzicht, die Wegwerfgesellschaft, recyceln, wiederverwenden, der Kreislauf, die Ressource, die Verschwendung."
+exercises:
+  # ---------------- recognition ----------------
+  - key: de:exercise:b2u07l3-mcq-was
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    prompt:
+      stem: "Chọn từ đúng (trỏ cả câu trước): Mein Nachbar repariert seine Geräte selbst, ___ ich toll finde."
+      stem_lang: vi
+      options:
+        - { id: a3a, text: "was", lang: de }
+        - { id: a7b, text: "das", lang: de }
+        - { id: a1c, text: "dass", lang: de }
+        - { id: a5d, text: "wo", lang: de }
+    answer:
+      correct_option_id: a3a
+    explanation:
+      vi: "Điều tôi thấy tuyệt là cả việc hàng xóm tự sửa đồ, nên mệnh đề trỏ cả câu: was. das trỏ một danh từ giống trung (không có ở đây); dass không làm tân ngữ của finde được; wo chỉ nơi chốn."
+    display_answer: was
+
+  - key: de:exercise:b2u07l3-mcq-wodurch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    prompt:
+      stem: "Chọn từ đúng (nghĩa: nhờ đó): Das Café gibt Kaffee nur noch in Mehrwegbechern aus, ___ viel weniger Müll entsteht."
+      stem_lang: vi
+      options:
+        - { id: d2a, text: "wodurch", lang: de }
+        - { id: d6b, text: "worüber", lang: de }
+        - { id: d9c, text: "wofür", lang: de }
+        - { id: d4d, text: "woran", lang: de }
+    answer:
+      correct_option_id: d2a
+    explanation:
+      vi: "Ít rác hơn là hệ quả của việc dùng cốc nhiều lần: wodurch (= durch das Ganze, nhờ đó). worüber, wofür, woran cần động từ đi với über, für, an; entstehen không đi với các giới từ đó."
+    display_answer: wodurch
+
+  - key: de:exercise:b2u07l3-listen-kleidung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u07-ressource
+    prompt:
+      audio_asset_id: null
+      fallback_text: Viele Menschen kaufen ständig neue Kleidung, was viele Ressourcen verbraucht. Meine Schwester kauft fast nur noch gebrauchte Sachen, wodurch sie auch viel Geld spart.
+      options:
+        - { id: k3a, text: "Nhiều người liên tục mua quần áo mới, điều này tốn nhiều tài nguyên. Chị tôi hầu như chỉ mua đồ cũ, nhờ đó cũng tiết kiệm được nhiều tiền.", lang: vi }
+        - { id: k7b, text: "Nhiều người liên tục mua quần áo mới, điều này tốn nhiều tài nguyên. Chị tôi hầu như chỉ mua đồ mới, nên tốn nhiều tiền.", lang: vi }
+        - { id: k1c, text: "Ít người mua quần áo mới vì quần áo tốn nhiều tài nguyên. Chị tôi bán đồ cũ để kiếm tiền.", lang: vi }
+        - { id: k5d, text: "Nhiều người liên tục mua quần áo mới. Chị tôi cho rằng mua đồ cũ không tiết kiệm được tiền.", lang: vi }
+    answer:
+      correct_option_id: k3a
+    explanation:
+      vi: "…, was viele Ressourcen verbraucht = điều này tốn nhiều tài nguyên (was trỏ cả việc mua liên tục). gebrauchte Sachen = đồ đã qua sử dụng. …, wodurch sie auch viel Geld spart = nhờ đó cũng tiết kiệm nhiều tiền."
+    display_answer: Nhiều người liên tục mua quần áo mới, điều này tốn nhiều tài nguyên. Chị tôi hầu như chỉ mua đồ cũ, nhờ đó cũng tiết kiệm được nhiều tiền.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u07l3-fill-was-worueber
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    prompt:
+      template: "Viele Menschen werfen Lebensmittel weg, {{b1}} eine große Verschwendung ist. Unser Bäcker verschenkt abends das Brot vom Tag, {{b2}} sich viele Nachbarn freuen. (sich freuen über)"
+      blanks:
+        - { id: b1, width_hint: 4 }
+        - { id: b2, width_hint: 8 }
+    answer:
+      blanks:
+        b1: [was]
+        b2: [worüber]
+    known_wrong:
+      - answer: das
+        feedback_vi: Mệnh đề trỏ cả câu (việc vứt thực phẩm), không trỏ danh từ giống trung nào – dùng was.
+        error_tag: relative_pronoun
+      - answer: darüber
+        feedback_vi: darüber là trạng từ của câu chính (kéo theo V2). Mở mệnh đề quan hệ (động từ freuen ở cuối) cần worüber.
+        error_tag: relative_pronoun
+    explanation:
+      vi: "Câu 1: was trỏ cả việc vứt bỏ thực phẩm, động từ ist ở cuối. Câu 2: sich freuen über → worüber (wo + r + über), trỏ cả việc tiệm bánh tặng bánh mì; động từ freuen đứng cuối."
+    display_answer: "Viele Menschen werfen Lebensmittel weg, was eine große Verschwendung ist. Unser Bäcker verschenkt abends das Brot vom Tag, worüber sich viele Nachbarn freuen."
+
+  - key: de:exercise:b2u07l3-fill-recyceln
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-wiederverwenden
+    prompt:
+      template: "Altpapier kann man gut {{b1}} (recyceln). Die alten Gläser habe ich schon oft {{b2}} (wiederverwenden). Wer weniger kauft, verringert die {{b3}} (verschwenden, Nomen) von Ressourcen."
+      blanks:
+        - { id: b1, width_hint: 9 }
+        - { id: b2, width_hint: 15 }
+        - { id: b3, width_hint: 14 }
+    answer:
+      blanks:
+        b1: [recyceln]
+        b2: [wiederverwendet]
+        b3: [Verschwendung]
+    known_wrong:
+      - answer: wiedergeverwendet
+        feedback_vi: verwenden có tiền tố ver- nên không có ge-; Partizip II là wiederverwendet.
+        error_tag: participle_form
+      - answer: recycelt
+        feedback_vi: Sau kann cần nguyên thể ở cuối câu – recyceln.
+        error_tag: verb_form
+      - answer: Verschwenden
+        feedback_vi: Danh từ chỉ sự lãng phí là die Verschwendung (đuôi -ung).
+        error_tag: word_choice
+    explanation:
+      vi: "kann + nguyên thể: recyceln. habe … wiederverwendet: wieder là tiền tố tách, verwenden không có ge- (ver-), nên Partizip II là wiederverwendet. verschwenden → die Verschwendung (đuôi -ung, giống cái)."
+    display_answer: "Altpapier kann man gut recyceln. Die alten Gläser habe ich schon oft wiederverwendet. Wer weniger kauft, verringert die Verschwendung von Ressourcen."
+
+  - key: de:exercise:b2u07l3-tr-einwegbecher
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-einwegbecher
+    prompt:
+      source_text: "Nhiều người dùng cốc dùng một lần, điều này tôi thấy không tốt. (dùng was)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Viele Menschen benutzen Einwegbecher, was ich nicht gut finde.
+        - Viele Leute benutzen Einwegbecher, was ich nicht gut finde.
+        - Viele benutzen Einwegbecher, was ich nicht gut finde.
+        - Viele Menschen verwenden Einwegbecher, was ich nicht gut finde.
+        - Viele Leute verwenden Einwegbecher, was ich nicht gut finde.
+        - Viele Menschen nutzen Einwegbecher, was ich nicht gut finde.
+        - Viele Menschen benutzen Einwegbecher, was ich schlecht finde.
+        - Viele Leute benutzen Einwegbecher, was ich schlecht finde.
+    known_wrong:
+      - answer: Viele Menschen benutzen Einwegbecher, das ich nicht gut finde.
+        feedback_vi: Trỏ cả câu (việc dùng cốc một lần) thì dùng was, không dùng das.
+        error_tag: relative_pronoun
+      - answer: Viele Menschen benutzen Einwegbecher, was ich finde nicht gut.
+        feedback_vi: "Mệnh đề quan hệ là câu phụ, nên động từ finde đứng cuối – was ich nicht gut finde."
+        error_tag: verb_position
+    explanation:
+      vi: "Mệnh đề nối tiếp was trỏ cả việc \"nhiều người dùng cốc một lần\"; was là tân ngữ của finde, động từ finde đứng cuối."
+    display_answer: Viele Menschen benutzen Einwegbecher, was ich nicht gut finde.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u07l3-wb-wodurch-geld
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Tôi tự sửa đồ điện của mình, nhờ đó tôi tiết kiệm được tiền.\""
+      tokens:
+        - { id: r-spare, text: spare }
+        - { id: r-geraete, text: Geräte }
+        - { id: r-ich1, text: Ich }
+        - { id: r-wodurch, text: wodurch }
+        - { id: r-repariere, text: repariere }
+        - { id: r-komma, text: "," }
+        - { id: r-geld, text: Geld }
+        - { id: r-meine, text: meine }
+        - { id: r-ich2, text: ich }
+        - { id: r-selbst, text: selbst }
+    answer:
+      orders:
+        - [r-ich1, r-repariere, r-meine, r-geraete, r-selbst, r-komma, r-wodurch, r-ich2, r-geld, r-spare]
+    explanation:
+      vi: "Câu chính V2: Ich repariere meine Geräte selbst. Sau dấu phẩy, wodurch mở mệnh đề trỏ cả câu; động từ spare đứng cuối: wodurch ich Geld spare."
+    display_answer: Ich repariere meine Geräte selbst, wodurch ich Geld spare.
+
+  - key: de:exercise:b2u07l3-mcq-worueber-freue
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u02-g-pronominaladverbien
+    prompt:
+      stem: "Câu nào đúng? (Siêu thị của chúng tôi giờ bán trái cây không bao bì, điều này làm tôi rất vui.)"
+      stem_lang: vi
+      options:
+        - { id: f2a, text: "Unser Supermarkt verkauft jetzt Obst unverpackt, worüber ich mich sehr freue.", lang: de }
+        - { id: f6b, text: "Unser Supermarkt verkauft jetzt Obst unverpackt, darüber ich mich sehr freue.", lang: de }
+        - { id: f9c, text: "Unser Supermarkt verkauft jetzt Obst unverpackt, was ich mich sehr freue.", lang: de }
+        - { id: f4d, text: "Unser Supermarkt verkauft jetzt Obst unverpackt, worüber ich freue mich sehr.", lang: de }
+    answer:
+      correct_option_id: f2a
+    explanation:
+      vi: "sich freuen über → worüber mở mệnh đề trỏ cả câu, động từ freue đứng cuối. darüber là trạng từ của câu chính; was thiếu giới từ über; câu cuối sai vị trí động từ."
+    display_answer: Unser Supermarkt verkauft jetzt Obst unverpackt, worüber ich mich sehr freue.
+
+  - key: de:exercise:b2u07l3-tr-indem-was
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u01-g-indem
+    prompt:
+      source_text: Man kann Ressourcen sparen, indem man Dinge länger nutzt, was oft auch billiger ist.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người ta có thể tiết kiệm tài nguyên bằng cách dùng đồ lâu hơn, điều này thường cũng rẻ hơn.
+        - Có thể tiết kiệm tài nguyên bằng cách dùng đồ lâu hơn, điều này thường cũng rẻ hơn.
+        - Ta có thể tiết kiệm tài nguyên bằng cách sử dụng đồ vật lâu hơn, điều này thường cũng rẻ hơn.
+        - Người ta có thể tiết kiệm tài nguyên bằng cách sử dụng đồ lâu hơn, việc này thường cũng rẻ hơn.
+        - Có thể tiết kiệm tài nguyên bằng cách dùng đồ lâu hơn, và điều đó thường cũng rẻ hơn.
+        - Người ta có thể tiết kiệm tài nguyên bằng cách dùng đồ đạc lâu hơn, điều này thường cũng rẻ hơn.
+        - Người ta có thể tiết kiệm tài nguyên bằng cách dùng đồ lâu hơn, điều này thường cũng tiết kiệm tiền hơn.
+        - Có thể tiết kiệm tài nguyên bằng cách sử dụng đồ lâu hơn, điều đó thường cũng rẻ hơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Người ta có thể tiết kiệm tài nguyên khi dùng đồ lâu hơn, những đồ này thường cũng rẻ hơn.
+        feedback_vi: "was không trỏ Dinge (đồ vật) mà trỏ cả việc dùng đồ lâu hơn: điều này rẻ hơn."
+        error_tag: meaning
+    explanation:
+      vi: "indem = bằng cách (nêu cách thức). was oft auch billiger ist = điều này (việc dùng đồ lâu hơn) thường cũng rẻ hơn – was trỏ cả ý trước, không trỏ Dinge."
+    display_answer: Người ta có thể tiết kiệm tài nguyên bằng cách dùng đồ lâu hơn, điều này thường cũng rẻ hơn.

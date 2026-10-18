@@ -1,0 +1,407 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-17T12:00:00+07:00"
+key: de:lesson:b2u07-wiederholung
+order_index: 5
+level: b2
+title:
+  vi: Ôn tập – bài lập luận khoảng 150 từ, nghe bài giảng ngắn (Wiederholung)
+objectives:
+  - vi: Viết bài nêu ý kiến khoảng 150 từ về câu hỏi "Có nên cấm ô tô chạy xăng, dầu trong nội đô?" (kiểu Goethe B2 Schreiben Teil 1).
+  - vi: Đọc ý kiến của nhiều người trên diễn đàn và nhận ra lập trường, lý do, điều kiện của từng người.
+  - vi: Nghe bài giảng ngắn về môi trường (kiểu Hören Teil 4) và nắm ý chính.
+estimated_minutes: 27
+skills: [writing, reading, listening]
+prerequisites: [de:lesson:b2u07-pro-contra]
+items:
+  - item: de:item:b2u07-g-infinitiv-perfekt
+    role: reuse
+  - item: de:item:b2u07-g-infinitiv-passiv
+    role: reuse
+  - item: de:item:b2u07-g-kausale-praepositionen
+    role: reuse
+  - item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    role: reuse
+  - item: de:item:b2u07-g-argumentation-redemittel
+    role: reuse
+  - item: de:item:b2u07-reduzieren
+    role: reuse
+  - item: de:item:b2u07-sich-verpflichten
+    role: reuse
+  - item: de:item:b2u07-artenvielfalt
+    role: reuse
+  - item: de:item:b2u07-lebensraum
+    role: reuse
+  - item: de:item:b2u07-biene
+    role: reuse
+  - item: de:item:b2u07-ueberzeugung
+    role: reuse
+  - item: de:item:b2u07-befuerworten
+    role: reuse
+  - item: de:item:b2u07-ueberwiegen
+    role: reuse
+  - item: de:item:b2u07-abschliessend
+    role: reuse
+  - item: de:item:b1u06-verbot
+    role: reuse
+  - item: de:item:b1u06-innenstadt
+    role: reuse
+  - item: de:item:b1u06-g-meinung-redemittel
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn viết được một bài nêu ý kiến khoảng 150 từ có mở bài, lý lẽ hai phía và kết luận, đọc hiểu được ý kiến trên diễn đàn và nắm ý chính của một bài giảng ngắn về môi trường."
+  - type: explain
+    text:
+      vi: "Theo cấu trúc tại thời điểm soạn bài, Goethe-Zertifikat B2 Schreiben có một bài nêu ý kiến khoảng 150 từ về một chủ đề xã hội; định dạng, thời gian và thang điểm có thể thay đổi, hãy xem tài liệu mẫu chính thức của Goethe-Institut. Đề thường cho vài ý cần nói: hãy trả lời ĐỦ từng ý, thiếu ý là mất điểm dù tiếng Đức đúng."
+  - type: explain
+    text:
+      vi: "Phân bổ khoảng 150 từ như sau: mở bài khoảng 30–40 từ (vấn đề là gì, vì sao quan trọng, liên hệ bản thân), thân bài khoảng 60–70 từ (một hai lý lẽ ủng hộ, một hai lý lẽ phản đối, mỗi lý lẽ có lý do hoặc ví dụ), kết bài khoảng 40–50 từ (cân nhắc, ý kiến riêng, có thể kèm điều kiện). Đây là gợi ý của Linguo, không phải quy định của đề thi."
+  - type: explain
+    text:
+      vi: "Để bài đạt mức B2, hãy dùng ngôn ngữ của unit này: Für … spricht, dass … / Dagegen lässt sich einwenden, dass … (lập luận), …, was … / …, wodurch … (bình luận cả câu), aus Überzeugung, dank + Genitiv (nguyên nhân), behaupten/befürchten + cụm zu. Trước khi nộp, kiểm tra động từ ở cuối câu phụ (dass, was, wodurch, wenn) và ở vị trí 2 sau Alles in allem, Abschließend."
+  - type: explain
+    text:
+      vi: "Trong bài nghe kiểu bài giảng (Vortrag), người nói thường báo trước cấu trúc: In meinem Vortrag geht es um … (chủ đề), Ein Beispiel dafür ist … (ví dụ), Abschließend lässt sich sagen … (kết luận). Hãy nghe các cụm này để biết đang ở phần nào và ghi ý chính, không cố ghi từng chữ."
+  - type: deep_explain
+    text:
+      vi: "Khi đọc ý kiến trên diễn đàn, đừng dừng ở câu đầu: nhiều người mở đầu bằng một ý rồi đổi hướng với aber, allerdings, natürlich … aber (Natürlich verstehe ich …, aber …). Lập trường thật thường nằm ở câu cuối hoặc sau Wägt man alles ab / Für mich … Người \"đồng ý có điều kiện\" (dafür, aber erst wenn …) là bẫy hay gặp: họ không hoàn toàn ủng hộ cũng không phản đối. Trong bài viết của bạn, kết luận có điều kiện như vậy cũng rất tốt, miễn là nó khớp với các lý lẽ đã nêu."
+  - type: example
+    target: "In vielen Städten wird darüber diskutiert, ob Autos mit Benzin- oder Dieselmotor aus der Innenstadt verbannt werden sollten. Ich wohne selbst im Zentrum und erlebe den Verkehr jeden Tag. Die Frage betrifft fast alle, die in der Stadt wohnen oder arbeiten, was sie besonders wichtig macht."
+    target_lang: de
+    translation:
+      vi: "Ở nhiều thành phố, người ta đang tranh luận liệu có nên cấm ô tô chạy xăng hoặc dầu diesel ra khỏi trung tâm hay không. Bản thân tôi sống ở trung tâm và ngày nào cũng chứng kiến cảnh xe cộ. Câu hỏi này liên quan đến gần như tất cả những ai sống hoặc làm việc trong thành phố, điều đó khiến nó đặc biệt quan trọng."
+    note:
+      vi: "Bài mẫu – mở bài (khoảng 45 từ): nêu vấn đề (darüber diskutiert, ob …), liên hệ bản thân, vì sao quan trọng (…, was … – mệnh đề trỏ cả câu)."
+  - type: example
+    target: "Für ein solches Verbot spricht vor allem, dass die Luft sauberer und die Innenstadt ruhiger würde. Fußgänger und Radfahrer hätten mehr Platz, wodurch die Stadt lebenswerter würde. Dagegen lässt sich einwenden, dass manche Menschen auf ihr Auto angewiesen sind, zum Beispiel Handwerker oder ältere Menschen. Außerdem befürchten viele Geschäfte, Kunden zu verlieren."
+    target_lang: de
+    translation:
+      vi: "Lý lẽ ủng hộ một lệnh cấm như vậy trước hết là không khí sẽ sạch hơn và trung tâm sẽ yên tĩnh hơn. Người đi bộ và đi xe đạp sẽ có nhiều chỗ hơn, nhờ đó thành phố sẽ đáng sống hơn. Có thể phản bác rằng một số người phụ thuộc vào ô tô, ví dụ thợ thủ công hoặc người lớn tuổi. Ngoài ra, nhiều cửa hàng lo sợ mất khách."
+    note:
+      vi: "Bài mẫu – thân bài (khoảng 50 từ): Pro (Für … spricht, dass …) + hệ quả (wodurch …), Contra có ví dụ (Dagegen lässt sich einwenden, dass … zum Beispiel …), thêm một phản đề (befürchten + cụm zu)."
+  - type: example
+    target: "Wägt man die Argumente ab, überwiegen meiner Meinung nach die Vorteile. Ein Verbot sollte allerdings schrittweise eingeführt werden, und zwar erst dann, wenn Busse und Bahnen dank besserer Verbindungen eine echte Alternative sind. Alles in allem bin ich überzeugt, dass eine Innenstadt mit weniger Autos für alle ein Gewinn wäre."
+    target_lang: de
+    translation:
+      vi: "Cân nhắc các lý lẽ thì theo tôi ưu điểm nhiều hơn. Tuy nhiên, lệnh cấm nên được áp dụng từng bước, cụ thể là chỉ khi xe buýt và tàu thực sự là lựa chọn thay thế nhờ kết nối tốt hơn. Nhìn chung, tôi tin rằng một trung tâm ít ô tô hơn sẽ có lợi cho tất cả mọi người."
+    note:
+      vi: "Bài mẫu – kết bài (khoảng 50 từ; cả bài khoảng 150 từ): Wägt man … ab + động từ, điều kiện (erst dann, wenn …), dank + Genitiv (besserer Verbindungen), câu chốt với Alles in allem. Kết luận khớp với thân bài: ủng hộ nhưng tính đến phản đề."
+  - type: example
+    target: Die Stadt hat sich verpflichtet, die Emissionen zu reduzieren, und behauptet nun, ihr Ziel bereits erreicht zu haben.
+    target_lang: de
+    translation:
+      vi: Thành phố đã cam kết giảm khí thải và giờ khẳng định đã đạt được mục tiêu.
+    note:
+      vi: "zu reduzieren (việc sắp làm) ↔ erreicht zu haben (việc đã xong)."
+  - type: common_mistake
+    wrong: Alles in allem ich bin für ein Verbot.
+    right: Alles in allem bin ich für ein Verbot.
+    target_lang: de
+    note:
+      vi: "Alles in allem ở vị trí 1, động từ bin đứng ngay sau."
+  - type: common_mistake
+    wrong: Viele fahren mit dem Auto in die Innenstadt, das die Luft belastet.
+    right: Viele fahren mit dem Auto in die Innenstadt, was die Luft belastet.
+    target_lang: de
+    note:
+      vi: "Thứ làm ô nhiễm là cả việc lái xe vào trung tâm, nên dùng was (trỏ cả câu)."
+  - type: common_mistake
+    wrong: Die Geschäfte befürchten, Kunden zu verlieren haben.
+    right: Die Geschäfte befürchten, Kunden zu verlieren.
+    target_lang: de
+    note:
+      vi: "Việc mất khách là chuyện có thể xảy ra sau này → nguyên thể thường (zu verlieren); chỉ việc đã xảy ra mới dùng Partizip II + zu haben (verloren zu haben)."
+  - type: summary
+    points:
+      - vi: "Bài ý kiến ~150 từ: mở bài – lý lẽ ủng hộ – lý lẽ phản đối – cân nhắc và kết luận; trả lời đủ các ý của đề."
+      - vi: "Lập luận: Für … spricht, dass … · Dagegen lässt sich einwenden, dass … · Wägt man die Argumente ab, … · Alles in allem …"
+      - vi: "Bình luận cả câu: …, was … / …, wodurch / worüber …"
+      - vi: "Nguyên nhân: aus Überzeugung (có ý thức), vor Freude (không chủ ý), dank + Genitiv (tích cực)."
+      - vi: "Cụm zu: reduziert zu haben (đã), informiert zu werden (được), gewarnt worden zu sein (đã được)."
+      - vi: "Đọc ý kiến: chú ý aber/allerdings và câu cuối; nghe bài giảng: chú ý cụm báo cấu trúc."
+exercises:
+  # ---------------- recognition: đọc (ý kiến trên diễn đàn) ----------------
+  - key: de:exercise:b2u07l5-mcq-jonas
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-ueberzeugung
+    prompt:
+      stem: "Jonas (29): Seit unsere Altstadt autofrei ist, gehe ich dort viel lieber einkaufen. Früher musste man ständig auf Autos achten, heute sitzen die Leute draußen in den Cafés. Aus Überzeugung fahre ich nur noch mit dem Rad, was übrigens auch gesund ist. Für mich spricht alles dafür, die ganze Innenstadt autofrei zu machen. — Wie steht Jonas zu einem Verbot in der Innenstadt?"
+      stem_lang: de
+      options:
+        - { id: j3a, text: "Er ist dafür, weil die autofreie Altstadt angenehmer geworden ist.", lang: de }
+        - { id: j7b, text: "Er ist dagegen, weil er nicht mehr gern einkaufen geht.", lang: de }
+        - { id: j1c, text: "Er ist nur dafür, wenn es Ausnahmen für Handwerker gibt.", lang: de }
+        - { id: j5d, text: "Er hat dazu keine klare Meinung.", lang: de }
+    answer:
+      correct_option_id: j3a
+    explanation:
+      vi: "Jonas kể từ khi phố cổ không có ô tô, đi mua sắm dễ chịu hơn, người ta ngồi ngoài quán cà phê. Câu cuối Für mich spricht alles dafür, … autofrei zu machen cho thấy anh hoàn toàn ủng hộ; anh không nhắc đến thợ thủ công."
+    display_answer: Er ist dafür, weil die autofreie Altstadt angenehmer geworden ist.
+
+  - key: de:exercise:b2u07l5-mcq-petra
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1u06-verbot
+    prompt:
+      stem: "Petra (45): Ich bin Malerin und muss jeden Tag Farben und Leitern zu meinen Kunden bringen. Mit dem Fahrrad ist das unmöglich. Natürlich verstehe ich, dass die Luft in der Stadt besser werden soll. Aber ein Verbot ohne Ausnahmen für Handwerker würde meinen Betrieb ruinieren, was viele offenbar vergessen. — Was kritisiert Petra?"
+      stem_lang: de
+      options:
+        - { id: t2a, text: "Ein Verbot, das keine Ausnahmen für Handwerker vorsieht.", lang: de }
+        - { id: t6b, text: "Dass die Luft in der Stadt besser werden soll.", lang: de }
+        - { id: t9c, text: "Dass ihre Kunden zu weit weg wohnen.", lang: de }
+        - { id: t4d, text: "Dass Handwerker zu viel Geld verdienen.", lang: de }
+    answer:
+      correct_option_id: t2a
+    explanation:
+      vi: "Natürlich verstehe ich … là phần nhượng bộ: Petra đồng ý không khí nên sạch hơn. Sau Aber mới là ý chính: một lệnh cấm không có ngoại lệ cho thợ thủ công sẽ làm hỏng việc làm ăn của chị (…, was viele offenbar vergessen – điều mà nhiều người dường như quên)."
+    display_answer: Ein Verbot, das keine Ausnahmen für Handwerker vorsieht.
+
+  - key: de:exercise:b2u07l5-mcq-albers
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2u07-befuerworten
+    prompt:
+      stem: "Klaus Albers (67): Grundsätzlich befürworte ich weniger Autos im Zentrum. Allerdings fährt der Bus in meinem Viertel abends nur einmal pro Stunde. Wägt man alles ab, sollte die Stadt zuerst Busse und Bahnen verbessern und erst danach ein Verbot einführen. Sonst trifft es vor allem ältere Menschen wie mich. — Was schlägt Herr Albers vor?"
+      stem_lang: de
+      options:
+        - { id: k2a, text: "Zuerst den Nahverkehr verbessern, dann das Verbot einführen.", lang: de }
+        - { id: k6b, text: "Das Verbot sofort einführen.", lang: de }
+        - { id: k9c, text: "Ganz auf ein Verbot verzichten.", lang: de }
+        - { id: k4d, text: "Mehr Parkplätze für ältere Menschen bauen.", lang: de }
+    answer:
+      correct_option_id: k2a
+    explanation:
+      vi: "Ông Albers về nguyên tắc ủng hộ (befürworte), nhưng allerdings xe buýt khu ông ở quá thưa. Kết luận sau Wägt man alles ab: trước tiên cải thiện xe buýt và tàu (Nahverkehr), rồi mới cấm – ủng hộ có điều kiện."
+    display_answer: Zuerst den Nahverkehr verbessern, dann das Verbot einführen.
+
+  # ---------------- recognition: nghe (bài giảng ngắn) ----------------
+  - key: de:exercise:b2u07l5-listen-vortrag-thema
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u07-lebensraum
+    prompt:
+      audio_asset_id: null
+      fallback_text: In meinem Vortrag geht es um die Artenvielfalt in der Stadt. Viele denken, Natur gibt es nur auf dem Land. Doch auch in Städten finden viele Insekten einen Lebensraum, etwa in Parks, in Gärten oder auf begrünten Dächern.
+      options:
+        - { id: v3a, text: "Bài giảng nói về đa dạng loài trong thành phố: côn trùng cũng có môi trường sống ở công viên, vườn và mái nhà phủ cây xanh.", lang: vi }
+        - { id: v7b, text: "Bài giảng nói rằng thiên nhiên chỉ có ở nông thôn, không có ở thành phố.", lang: vi }
+        - { id: v1c, text: "Bài giảng nói về cách diệt côn trùng trong công viên và vườn.", lang: vi }
+        - { id: v5d, text: "Bài giảng nói về việc xây thêm nhà trên các khu vườn trong thành phố.", lang: vi }
+    answer:
+      correct_option_id: v3a
+    explanation:
+      vi: "In meinem Vortrag geht es um … báo chủ đề: die Artenvielfalt in der Stadt. Viele denken … chỉ là quan niệm mà người nói bác bỏ (Doch …). einen Lebensraum finden = tìm được môi trường sống; begrünte Dächer = mái nhà phủ cây xanh."
+    display_answer: "Bài giảng nói về đa dạng loài trong thành phố: côn trùng cũng có môi trường sống ở công viên, vườn và mái nhà phủ cây xanh."
+
+  - key: de:exercise:b2u07l5-listen-vortrag-bienen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: de:item:b2u07-biene
+    prompt:
+      audio_asset_id: null
+      fallback_text: Ein Beispiel dafür ist der eigene Garten. Wer Blumen statt Rasen pflanzt, hilft den Bienen. Viele Menschen mähen ihren Rasen sehr oft, was für Insekten ungünstig ist. Abschließend lässt sich sagen, dass jeder etwas für die Artenvielfalt tun kann.
+      options:
+        - { id: g2a, text: "Trồng hoa thay cỏ giúp ong; cắt cỏ quá thường xuyên không tốt cho côn trùng; ai cũng có thể góp phần cho đa dạng loài.", lang: vi }
+        - { id: g6b, text: "Trồng cỏ thay hoa giúp ong; nên cắt cỏ thường xuyên để côn trùng có chỗ sống.", lang: vi }
+        - { id: g9c, text: "Chỉ các nhà khoa học mới có thể làm gì đó cho đa dạng loài.", lang: vi }
+        - { id: g4d, text: "Ong không cần hoa trong vườn vì chúng sống ở rừng.", lang: vi }
+    answer:
+      correct_option_id: g2a
+    explanation:
+      vi: "Blumen statt Rasen = hoa thay vì cỏ. …, was für Insekten ungünstig ist = việc cắt cỏ thường xuyên bất lợi cho côn trùng (was trỏ cả câu). Abschließend lässt sich sagen = kết luận: jeder kann etwas tun."
+    display_answer: Trồng hoa thay cỏ giúp ong; cắt cỏ quá thường xuyên không tốt cho côn trùng; ai cũng có thể góp phần cho đa dạng loài.
+
+  # ---------------- recall ----------------
+  - key: de:exercise:b2u07l5-fill-schluss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-argumentation-redemittel
+    prompt:
+      template: "{{b1}} man die Argumente ab, überwiegen die Vorteile. Die Luft würde sauberer, {{b2}} die Stadt lebenswerter würde. Alles in {{b3}} bin ich für ein Verbot. (abwägen · durch + Relativsatz)"
+      blanks:
+        - { id: b1, width_hint: 6 }
+        - { id: b2, width_hint: 8 }
+        - { id: b3, width_hint: 6 }
+    answer:
+      blanks:
+        b1: [Wägt]
+        b2: [wodurch]
+        b3: [allem]
+    known_wrong:
+      - answer: Wiegt
+        feedback_vi: Động từ là abwägen (cân nhắc), ngôi man → wägt … ab. wiegen là một động từ khác (cân nặng).
+        error_tag: word_choice
+      - answer: dadurch
+        feedback_vi: dadurch mở câu chính (V2). Ở đây động từ würde đứng cuối nên cần từ mở mệnh đề quan hệ – wodurch.
+        error_tag: relative_pronoun
+      - answer: allen
+        feedback_vi: Cụm cố định là Alles in allem.
+        error_tag: fixed_phrase
+    explanation:
+      vi: "Wägt man … ab: câu điều kiện không có wenn, động từ (abwägen → wägt) đứng đầu, ab ở cuối vế. wodurch = nhờ đó, trỏ cả câu trước, động từ würde ở cuối. Alles in allem = nhìn chung, tóm lại (cụm cố định)."
+    display_answer: "Wägt man die Argumente ab, überwiegen die Vorteile. Die Luft würde sauberer, wodurch die Stadt lebenswerter würde. Alles in allem bin ich für ein Verbot."
+
+  - key: de:exercise:b2u07l5-fill-infinitiv-aus
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-infinitiv-passiv
+    prompt:
+      template: "Die Stadt behauptet, die Luft schon deutlich verbessert zu {{b1}}. Die Händler hoffen, bei der Planung {{b2}} zu werden. (beteiligen) {{b3}} Angst vor weniger Kunden protestieren einige Geschäfte. (aus · vor)"
+      blanks:
+        - { id: b1, width_hint: 5 }
+        - { id: b2, width_hint: 9 }
+        - { id: b3, width_hint: 3 }
+    answer:
+      blanks:
+        b1: [haben]
+        b2: [beteiligt]
+        b3: [Aus]
+    known_wrong:
+      - answer: sein
+        feedback_vi: verbessern có tân ngữ (die Luft), Perfekt dùng haben – verbessert zu haben.
+        error_tag: aux_verb
+      - answer: Vor
+        feedback_vi: Biểu tình là hành động có ý thức, động cơ là nỗi sợ → Aus Angst; vor dùng cho phản ứng không chủ ý.
+        error_tag: preposition
+      - answer: gebeteiligt
+        feedback_vi: beteiligen có tiền tố be- nên Partizip II không có ge- – beteiligt.
+        error_tag: participle_form
+    explanation:
+      vi: "Việc cải thiện đã xảy ra: verbessert zu haben. Các thương nhân mong được tham gia (bị động): beteiligt zu werden. Biểu tình là quyết định có ý thức nên dùng Aus Angst."
+    display_answer: "Die Stadt behauptet, die Luft schon deutlich verbessert zu haben. Die Händler hoffen, bei der Planung beteiligt zu werden. Aus Angst vor weniger Kunden protestieren einige Geschäfte."
+
+  - key: de:exercise:b2u07l5-tr-was-luft
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-g-weiterfuehrender-relativsatz
+    prompt:
+      source_text: "Nhiều người lái ô tô vào trung tâm thành phố, điều này làm không khí xấu đi. (dùng was)"
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Viele Menschen fahren mit dem Auto in die Innenstadt, was die Luft verschlechtert.
+        - Viele Leute fahren mit dem Auto in die Innenstadt, was die Luft verschlechtert.
+        - Viele fahren mit dem Auto in die Innenstadt, was die Luft verschlechtert.
+        - Viele Menschen fahren mit dem Auto in die Innenstadt, was die Luft schlechter macht.
+        - Viele Leute fahren mit dem Auto in die Innenstadt, was die Luft schlechter macht.
+        - Viele Menschen fahren mit dem Auto ins Zentrum, was die Luft verschlechtert.
+        - Viele Menschen fahren mit dem Auto ins Stadtzentrum, was die Luft verschlechtert.
+        - Viele Menschen fahren mit dem Auto in die Stadtmitte, was die Luft verschlechtert.
+        - Viele Menschen fahren mit dem Auto in die Innenstadt, was die Luft belastet.
+        - Viele Menschen fahren mit dem Auto in die Innenstadt, was die Luftqualität verschlechtert.
+    known_wrong:
+      - answer: Viele Menschen fahren mit dem Auto in die Innenstadt, das die Luft verschlechtert.
+        feedback_vi: Thứ làm không khí xấu đi là cả việc lái xe vào trung tâm – dùng was, không dùng das.
+        error_tag: relative_pronoun
+      - answer: Viele Menschen fahren mit dem Auto in die Innenstadt, was verschlechtert die Luft.
+        feedback_vi: Mệnh đề với was là câu phụ, động từ verschlechtert đứng cuối.
+        error_tag: verb_position
+    explanation:
+      vi: "Câu chính: Viele Menschen fahren mit dem Auto in die Innenstadt (in + Akk vì có hướng đi). was trỏ cả việc đó; động từ verschlechtert (làm xấu đi) đứng cuối."
+    display_answer: Viele Menschen fahren mit dem Auto in die Innenstadt, was die Luft verschlechtert.
+
+  # ---------------- application ----------------
+  - key: de:exercise:b2u07l5-wb-fuer-verbot
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b1u06-innenstadt
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Lý lẽ ủng hộ lệnh cấm là không khí sẽ sạch hơn.\""
+      tokens:
+        - { id: f-wuerde, text: würde }
+        - { id: f-luft, text: Luft }
+        - { id: f-fuer, text: Für }
+        - { id: f-dass, text: dass }
+        - { id: f-sauberer, text: sauberer }
+        - { id: f-komma, text: "," }
+        - { id: f-ein, text: ein }
+        - { id: f-spricht, text: spricht }
+        - { id: f-die, text: die }
+        - { id: f-verbot, text: Verbot }
+    answer:
+      orders:
+        - [f-fuer, f-ein, f-verbot, f-spricht, f-komma, f-dass, f-die, f-luft, f-sauberer, f-wuerde]
+    explanation:
+      vi: "Für ein Verbot (vị trí 1) – spricht (vị trí 2) – dấu phẩy – câu dass làm chủ ngữ, động từ würde đứng cuối: dass die Luft sauberer würde."
+    display_answer: Für ein Verbot spricht, dass die Luft sauberer würde.
+
+  - key: de:exercise:b2u07l5-wb-waegt-man
+    type: word_bank
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    item: de:item:b2u07-ueberwiegen
+    prompt:
+      instruction: "Sắp xếp thành câu: \"Cân nhắc các lý lẽ thì ưu điểm nhiều hơn.\""
+      tokens:
+        - { id: z-vorteile, text: Vorteile }
+        - { id: z-ab, text: ab }
+        - { id: z-die1, text: die }
+        - { id: z-waegt, text: Wägt }
+        - { id: z-ueberwiegen, text: überwiegen }
+        - { id: z-komma, text: "," }
+        - { id: z-man, text: man }
+        - { id: z-argumente, text: Argumente }
+        - { id: z-die2, text: die }
+    answer:
+      orders:
+        - [z-waegt, z-man, z-die1, z-argumente, z-ab, z-komma, z-ueberwiegen, z-die2, z-vorteile]
+        - [z-waegt, z-man, z-die2, z-argumente, z-ab, z-komma, z-ueberwiegen, z-die1, z-vorteile]
+    explanation:
+      vi: "Câu điều kiện không có wenn: động từ Wägt đứng đầu, chủ ngữ man, tân ngữ die Argumente, tiền tố ab cuối vế. Cả vế này là vị trí 1, nên überwiegen đứng ngay sau dấu phẩy, rồi chủ ngữ die Vorteile."
+    display_answer: Wägt man die Argumente ab, überwiegen die Vorteile.
+
+  - key: de:exercise:b2u07l5-tr-verpflichtet
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: de:item:b2u07-sich-verpflichten
+    prompt:
+      source_text: Die Stadt hat sich verpflichtet, die Emissionen zu reduzieren, und behauptet nun, ihr Ziel bereits erreicht zu haben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thành phố đã cam kết giảm khí thải và giờ khẳng định đã đạt được mục tiêu.
+        - Thành phố đã cam kết giảm khí thải và bây giờ khẳng định đã đạt được mục tiêu.
+        - Thành phố đã cam kết giảm lượng khí thải và giờ khẳng định đã đạt được mục tiêu của mình.
+        - Thành phố đã cam kết giảm phát thải và giờ khẳng định đã đạt được mục tiêu.
+        - Thành phố đã cam kết cắt giảm khí thải và giờ khẳng định đã đạt mục tiêu.
+        - Thành phố đã cam kết giảm khí thải và hiện khẳng định đã đạt được mục tiêu rồi.
+        - Thành phố đã cam kết giảm khí thải và giờ cho rằng đã đạt được mục tiêu.
+        - Thành phố đã cam kết giảm khí thải, và giờ khẳng định rằng đã đạt được mục tiêu.
+        - Thành phố đã cam kết giảm khí thải và giờ tuyên bố đã đạt được mục tiêu.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thành phố đã cam kết giảm khí thải và giờ khẳng định sẽ đạt được mục tiêu.
+        feedback_vi: "erreicht zu haben là việc ĐÃ xảy ra (đã đạt), không phải sẽ đạt (zu erreichen)."
+        error_tag: meaning
+    explanation:
+      vi: "sich verpflichten, … zu reduzieren = cam kết (sẽ) giảm. behauptet, … erreicht zu haben = khẳng định ĐÃ đạt được (nguyên thể quá khứ). bereits = đã, rồi."
+    display_answer: Thành phố đã cam kết giảm khí thải và giờ khẳng định đã đạt được mục tiêu.
