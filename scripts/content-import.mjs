@@ -4,6 +4,7 @@
 //   node --import tsx scripts/content-import.mjs --emit-sql            write supabase/seed.sql (pnpm content:build)
 //   node --import tsx scripts/content-import.mjs --emit-sql --check    fail if seed.sql is stale
 //   node --import tsx scripts/content-import.mjs --apply               import into hosted Supabase (pnpm content:push)
+//   node --import tsx scripts/content-import.mjs --emit-apply-sql <file>  write the same import as SQL for a direct database connection
 // Options: --dir <content dir> (default content/), --out <seed file> (default supabase/seed.sql).
 // --apply needs SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY (legacy service_role JWT or sb_secret_ key):
 // it posts the bundle to the service_role-only RPC public.import_content_bundle, a thin wrapper around
@@ -11,6 +12,10 @@
 // items it then posts the diagnostic bank to public.import_diagnostic_content_bundle, the wrapper around
 // content_private.import_diagnostic_bundle (the second statement of supabase/seed.sql). When content/exams/
 // holds forms it finally posts them to public.import_exam_content_bundle (the third statement of seed.sql).
+// --emit-apply-sql <file> writes those same statements (with GITHUB_SHA as git_sha and statement_timeout off) for psql over
+// a direct database connection: the HTTP gateway in front of PostgREST cuts a request at ~120 s, which the full bundle
+// (4 languages) now exceeds. The import is still one transaction per statement and still archives rows absent from the
+// bundle, so it must never be split into chunks. workflow content-publish.yml runs it with psql.
 import { existsSync, readFileSync, realpathSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -23,7 +28,7 @@ import { buildExamBundle, examFiles, renderExamSql } from './content/exam.mjs';
 import { loadContent } from './content/load.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const USAGE = 'Usage: content-import.mjs [--dir <dir>] (--check | --emit-sql [--check] [--out <file>] | --apply)';
+const USAGE = 'Usage: content-import.mjs [--dir <dir>] (--check | --emit-sql [--check] [--out <file>] | --emit-apply-sql <file> | --apply)';
 
 /** Value of `--name <value>`: undefined when absent, null when the value is missing. */
 function option(argv, name) {
@@ -45,13 +50,15 @@ export async function main(
   const emitSql = argv.includes('--emit-sql');
   const apply = argv.includes('--apply');
   const check = argv.includes('--check');
-  if ((!emitSql && !apply && !check) || (apply && (emitSql || check))) {
+  const emitApply = argv.includes('--emit-apply-sql');
+  if ((!emitSql && !apply && !check && !emitApply) || (apply && (emitSql || check || emitApply)) || (emitApply && (emitSql || check))) {
     error(USAGE);
     return 2;
   }
   const dirArg = option(argv, '--dir');
   const outArg = option(argv, '--out');
-  for (const [name, value] of [['--dir', dirArg], ['--out', outArg]]) {
+  const applySqlArg = option(argv, '--emit-apply-sql');
+  for (const [name, value] of [['--dir', dirArg], ['--out', outArg], ...(emitApply ? [['--emit-apply-sql', applySqlArg]] : [])]) {
     if (value === null) {
       error(`${name} needs a value.\n${USAGE}`);
       return 2;
@@ -87,7 +94,7 @@ export async function main(
   const examQuestionCount = exams.reduce((n, f) => n + f.data.questions.length, 0);
   const examNote = exams.length ? `, ${exams.length} exam forms (${examQuestionCount} questions)` : '';
 
-  if (!emitSql && !apply) {
+  if (!emitSql && !apply && !emitApply) {
     log(`Content OK (${loaded.files.length} files, ${lessonCount} lessons${diagnosticNote}${examNote}).`);
     return 0;
   }
@@ -108,6 +115,19 @@ export async function main(
     }
     writeFileSync(out, sql);
     log(`Wrote ${outName} (${lessonCount} lessons${diagnosticNote}${examNote}).`);
+    return 0;
+  }
+
+  if (emitApply) {
+    const gitSha = env.GITHUB_SHA || null;
+    const diagnosticSql = diagnosticCount ? renderDiagnosticSql(buildDiagnosticBundle(loaded, { gitSha })) : null;
+    const examSql = exams.length ? renderExamSql(buildExamBundle(loaded)) : null;
+    const sql = renderSeedSql(buildBundle(loaded, { gitSha }), diagnosticSql, examSql);
+    const target = resolve(cwd, applySqlArg);
+    writeFileSync(target, `-- Content import for psql (generated; do not commit).
+set statement_timeout = 0;
+${sql}`);
+    log(`Wrote ${display(target, cwd)} (${lessonCount} lessons${diagnosticNote}${examNote}).`);
     return 0;
   }
 

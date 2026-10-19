@@ -594,6 +594,28 @@ test('--emit-sql --check fails when seed.sql differs or is missing', async (t) =
   assert.match(stale.err, /seed\.sql is out of date/);
 });
 
+test('--emit-apply-sql writes the import for psql: no statement timeout, GITHUB_SHA as git_sha, seed.sql untouched', async (t) => {
+  const { dir } = tempTree(t);
+  const target = join(dir, 'apply.sql');
+  const r = await cli(t, ['--emit-apply-sql', 'apply.sql', '--dir', 'content'], { cwd: dir, env: { GITHUB_SHA: 'deadbeef' } });
+  assert.equal(r.code, 0, r.err);
+  const sql = readFileSync(target, 'utf8');
+  assert.ok(sql.startsWith('-- Content import for psql (generated; do not commit).\nset statement_timeout = 0;\n'));
+  assert.match(sql, /^select content_private\.import_bundle\(\$bundle\$\{/m);
+  assert.ok(sql.includes('"git_sha": "deadbeef"'));
+  assert.equal(existsSync(join(dir, 'seed.sql')), false);
+  // The import is one request per statement and must never be chunked: the whole bundle is in one statement.
+  assert.equal((sql.match(/select content_private\.import_bundle\(/g) ?? []).length, 1);
+});
+
+test('--emit-apply-sql needs a file and cannot be combined with --check, --emit-sql or --apply', async (t) => {
+  const { dir } = tempTree(t);
+  for (const argv of [['--emit-apply-sql'], ['--emit-apply-sql', '--dir', 'content'], ['--emit-apply-sql', 'a.sql', '--check'], ['--emit-apply-sql', 'a.sql', '--emit-sql'], ['--emit-apply-sql', 'a.sql', '--apply']]) {
+    const r = await cli(t, argv, { cwd: dir, fetchImpl: noFetch });
+    assert.equal(r.code, 2, argv.join(' '));
+  }
+});
+
 test('missing content dir is tolerated only while seed.sql is absent', async (t) => {
   const { dir } = tempTree(t);
   const args = ['--emit-sql', '--check', '--dir', 'nope', '--out', 'seed.sql'];
