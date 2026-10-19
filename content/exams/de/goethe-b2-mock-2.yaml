@@ -1,0 +1,819 @@
+# Bài luyện mô phỏng trình độ B2 theo phong cách Goethe-Zertifikat B2 do Linguo tự soạn (nguồn src:linguo-demo).
+# Không phải đề thi của Goethe-Institut, không chép đề thật, sách luyện thi hay Modelltest nào; mọi tên người, địa
+# điểm, công ty, quán cà phê, thư viện là hư cấu, không có số điện thoại, địa chỉ hay số liệu thống kê thật. Nghe: lời
+# thoại trong `script`, ứng dụng đọc bằng giọng máy khi chưa có audio (audio_asset_id: null).
+#
+# Giả định về cấu trúc và thang điểm (ghi lại để người duyệt kiểm tra; syllabus §5.6: "to be verified"):
+# - Chỉ mô phỏng dạng bài theo hiểu biết của người soạn: Hören (bản tin phát thanh, phỏng vấn, trích đoạn bài giảng,
+#   thảo luận "ai nói gì", hội thoại đồng nghiệp, tin nhắn thoại, thông báo), Lesen (thư bạn đọc, phóng sự tạp chí,
+#   thư của cơ quan, ghép tin rao nhà, bài dài cần suy luận, điền từ nối), Schreiben 2 Teile (thư bạn đọc gửi báo
+#   ≈ 150 từ; e-mail khiếu nại trang trọng ≈ 100 từ). Số câu, thứ tự và cách chia Teil không khớp đề thật; không có
+#   phần Sprechen (schema đề chỉ có listening/reading/writing).
+# - Thời gian (time_limits) là gợi ý luyện tập của Linguo, không phải thời lượng chính thức.
+# - Ngưỡng "đạt mức" 60% mỗi phần (GOETHE_PASS_RATIO) là ngưỡng luyện tập Linguo tự đặt, chưa đối chiếu
+#   Prüfungsordnung hiện hành, nên scoring.verified: false. Hai bài viết (essay) không được chấm tự động.
+# - Văn bản dài được giữ ngắn gọn và dùng lại cho nhiều câu hỏi; bài đọc dài về "Coworking auf dem Land" được chia
+#   làm hai phần (r10, r11).
+schema_version: 1
+demo: false
+language: de
+form:
+  key: de:exam:goethe-b2-mock-2
+  family: goethe
+  title_vi: Goethe B2 — Bài luyện mô phỏng số 2
+  description_vi: >-
+    Bài luyện mô phỏng trình độ B2 theo phong cách Goethe-Zertifikat B2: 14 câu nghe, 15 câu đọc, 1 thư bạn đọc gửi
+    báo khoảng 150 từ và 1 e-mail khiếu nại khoảng 100 từ. Nội dung do Linguo tự soạn, không chép đề thật, không phải
+    đề thi chính thức; kết quả cho biết bạn đạt mức B2 ở từng phần hay chưa (ngưỡng luyện tập 60%), không quy đổi sang
+    điểm của kỳ thi Goethe.
+  level_from: b1
+  level_to: b2
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 30
+    reading: 50
+    writing: 60
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng đạt (đúng từ 60% số điểm mỗi phần) là ngưỡng luyện tập Linguo tự đặt, không phải cách chấm chính thức
+      của Goethe-Institut (chưa đối chiếu quy chế thi). Thời gian là gợi ý của Linguo. Hai bài viết không được chấm tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-19T12:00:00+07:00"
+questions:
+  # ============================== NGHE (Hören) ==============================
+  # --- Bản tin phát thanh ---
+  - key: de:examq:goethe-b2-m2-l01
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe bản tin giao thông trên đài và chọn đáp án đúng cho câu hỏi.
+      stem: Wann wird entschieden, ob der Radweg dauerhaft gebaut wird?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Und nun zum Verkehr in Seeberg: Auf der Uferstraße ist seit gestern ein provisorischer Radweg in Betrieb. Dafür wurde eine der beiden Autospuren gesperrt; die gelben Markierungen lassen sich später wieder entfernen. Die Stadt will den Versuch sechs Monate lang auswerten und dabei Radfahrer und Autos zählen. Erst danach entscheidet der Stadtrat, ob der Weg dauerhaft gebaut wird. Verkehrsplaner Jonas Reiter bittet um Geduld: „Anfangs wird es eng, aber wir müssen es ausprobieren.“
+      options:
+        - { id: a, text: "Nach der Auswertung eines sechsmonatigen Versuchs.", lang: de }
+        - { id: b, text: "Sofort, weil schon so viele Radfahrer den Weg nutzen.", lang: de }
+        - { id: c, text: "Nach einer Befragung der Anwohner im nächsten Jahr.", lang: de }
+    answer: a
+    explanation:
+      vi: "Thành phố đánh giá thử nghiệm trong sáu tháng (“sechs Monate lang auswerten”) và “Erst danach” (chỉ sau đó) hội đồng thành phố mới quyết định có xây làn xe đạp cố định hay không. Không có quyết định ngay lập tức (b sai) và bản tin không nhắc đến cuộc khảo sát cư dân nào (c sai)."
+
+  - key: de:examq:goethe-b2-m2-l02
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại bản tin và chọn câu mô tả đúng quan điểm của người được trích dẫn.
+      stem: Wie sieht Herr Reiter die ersten Wochen des Versuchs?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Und nun zum Verkehr in Seeberg: Auf der Uferstraße ist seit gestern ein provisorischer Radweg in Betrieb. Dafür wurde eine der beiden Autospuren gesperrt; die gelben Markierungen lassen sich später wieder entfernen. Die Stadt will den Versuch sechs Monate lang auswerten und dabei Radfahrer und Autos zählen. Erst danach entscheidet der Stadtrat, ob der Weg dauerhaft gebaut wird. Verkehrsplaner Jonas Reiter bittet um Geduld: „Anfangs wird es eng, aber wir müssen es ausprobieren.“
+      options:
+        - { id: a, text: "Er rechnet zu Beginn mit Engpässen, hält den Versuch aber für notwendig.", lang: de }
+        - { id: b, text: "Er will den Versuch beenden, falls es eng wird.", lang: de }
+        - { id: c, text: "Er erwartet keine Probleme für die Autofahrer.", lang: de }
+    answer: a
+    explanation:
+      vi: "Ông Reiter nói “Anfangs wird es eng” (lúc đầu sẽ chật chội) nhưng “wir müssen es ausprobieren” (chúng ta phải thử). Ông đang kêu gọi sự kiên nhẫn chứ không đề cập việc dừng thử nghiệm (b sai), và rõ ràng không cho rằng sẽ không có vấn đề gì (c sai)."
+
+  # --- Phỏng vấn ---
+  - key: de:examq:goethe-b2-m2-l03
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn phỏng vấn trên đài phát thanh và chọn đáp án đúng cho câu hỏi.
+      stem: Wie kam Herr Vogt zur Imkerei?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Herr Vogt, Sie halten mitten in der Stadt Bienen. Wie kam es dazu?
+        Herr Vogt: Durch einen Zufall. Ein Schwarm hatte sich im Hof meiner Firma niedergelassen. Statt ihn zu entfernen, habe ich mir Rat bei einem Imker geholt – und bin geblieben.
+        Moderatorin: Naturschützer kritisieren, Honigbienen verdrängten Wildbienen.
+        Herr Vogt: Die Kritik nehme ich ernst. Deshalb stelle ich nicht mehr Völker auf, als die Umgebung verträgt, und säe zusätzlich Wildblumen.
+        Moderatorin: Und was haben Sie für die Zukunft vor?
+        Herr Vogt: Ich würde gern Schulklassen einladen. Kinder sollten wissen, woher der Honig kommt. Das ist mir wichtiger als der Verkauf.
+      options:
+        - { id: a, text: "Ein Bienenschwarm hatte sich bei seiner Firma niedergelassen.", lang: de }
+        - { id: b, text: "Ein Naturschutzverein hatte ihn darum gebeten.", lang: de }
+        - { id: c, text: "Er hat die Imkerei von seinen Eltern übernommen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Ông Vogt kể “Durch einen Zufall” (do tình cờ): một đàn ong làm tổ trong sân công ty ông (“sich niedergelassen”), và thay vì đuổi đi, ông hỏi ý kiến một người nuôi ong. Hội bảo vệ thiên nhiên (b) chỉ xuất hiện khi nói về lời chỉ trích; chuyện thừa kế từ cha mẹ (c) không được nhắc đến."
+
+  - key: de:examq:goethe-b2-m2-l04
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn phỏng vấn và chọn câu mô tả đúng quan điểm của người được phỏng vấn.
+      stem: Wie geht Herr Vogt mit der Kritik der Naturschützer um?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Herr Vogt, Sie halten mitten in der Stadt Bienen. Wie kam es dazu?
+        Herr Vogt: Durch einen Zufall. Ein Schwarm hatte sich im Hof meiner Firma niedergelassen. Statt ihn zu entfernen, habe ich mir Rat bei einem Imker geholt – und bin geblieben.
+        Moderatorin: Naturschützer kritisieren, Honigbienen verdrängten Wildbienen.
+        Herr Vogt: Die Kritik nehme ich ernst. Deshalb stelle ich nicht mehr Völker auf, als die Umgebung verträgt, und säe zusätzlich Wildblumen.
+        Moderatorin: Und was haben Sie für die Zukunft vor?
+        Herr Vogt: Ich würde gern Schulklassen einladen. Kinder sollten wissen, woher der Honig kommt. Das ist mir wichtiger als der Verkauf.
+      options:
+        - { id: a, text: "Er nimmt sie ernst und begrenzt die Zahl seiner Bienenvölker.", lang: de }
+        - { id: b, text: "Er hält sie für übertrieben und ändert nichts.", lang: de }
+        - { id: c, text: "Er hat deshalb mit der Imkerei aufgehört.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Die Kritik nehme ich ernst” rồi “stelle ich nicht mehr Völker auf, als die Umgebung verträgt”: ông không đặt nhiều đàn ong hơn mức môi trường chịu được và còn gieo thêm hoa dại. Vì vậy b (cho là phóng đại, không thay đổi gì) và c (bỏ nghề) đều trái với lời ông nói. Câu hỏi của người dẫn chương trình dùng Konjunktiv II (“verdrängten”) để thuật lại lời chỉ trích."
+
+  - key: de:examq:goethe-b2-m2-l05
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại đoạn phỏng vấn và chọn đáp án đúng cho câu hỏi.
+      stem: Was möchte Herr Vogt in Zukunft gern tun?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderatorin: Herr Vogt, Sie halten mitten in der Stadt Bienen. Wie kam es dazu?
+        Herr Vogt: Durch einen Zufall. Ein Schwarm hatte sich im Hof meiner Firma niedergelassen. Statt ihn zu entfernen, habe ich mir Rat bei einem Imker geholt – und bin geblieben.
+        Moderatorin: Naturschützer kritisieren, Honigbienen verdrängten Wildbienen.
+        Herr Vogt: Die Kritik nehme ich ernst. Deshalb stelle ich nicht mehr Völker auf, als die Umgebung verträgt, und säe zusätzlich Wildblumen.
+        Moderatorin: Und was haben Sie für die Zukunft vor?
+        Herr Vogt: Ich würde gern Schulklassen einladen. Kinder sollten wissen, woher der Honig kommt. Das ist mir wichtiger als der Verkauf.
+      options:
+        - { id: a, text: "Mehr Honig verkaufen.", lang: de }
+        - { id: b, text: "Weitere Bienenvölker aufstellen.", lang: de }
+        - { id: c, text: "Schulklassen zu sich einladen.", lang: de }
+    answer: c
+    explanation:
+      vi: "“Ich würde gern Schulklassen einladen” (Konjunktiv II diễn đạt điều ông muốn làm): ông muốn trẻ em biết mật ong từ đâu ra. Bán được nhiều hơn (a) bị loại bằng “wichtiger als der Verkauf” (quan trọng hơn việc bán hàng); thêm đàn ong (b) mâu thuẫn với việc ông giới hạn số đàn."
+
+  # --- Trích đoạn bài giảng ---
+  - key: de:examq:goethe-b2-m2-l06
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_lecture
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe trích đoạn bài giảng và chọn ý chính.
+      stem: Was ist die zentrale Aussage dieses Vortragsausschnitts?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Dozent: Großraumbüros sollen die Zusammenarbeit fördern, doch Untersuchungen deuten auf ein gemischtes Bild hin. Zwar tauschen sich Kolleginnen und Kollegen spontan aus, gleichzeitig lässt aber die Konzentration nach, weil jedes Gespräch und jedes Telefonklingeln ablenkt. Besonders bei anspruchsvollen Aufgaben passieren dort mehr Fehler. Um die Nachteile zu verringern, empfiehlt es sich, kleine Räume einzurichten, in die man sich bei Bedarf zurückziehen kann. Entscheidend ist, dass die Beschäftigten selbst wählen dürfen, wo sie arbeiten.
+      options:
+        - { id: a, text: "Großraumbüros haben Vorteile und Nachteile, die sich mit Rückzugsräumen abmildern lassen.", lang: de }
+        - { id: b, text: "Großraumbüros sind für alle Arbeitsaufgaben am besten geeignet.", lang: de }
+        - { id: c, text: "Großraumbüros sollten grundsätzlich abgeschafft werden.", lang: de }
+    answer: a
+    explanation:
+      vi: "Giảng viên nêu cả mặt tốt (trao đổi tự nhiên, “Zwar … spontan aus”) lẫn mặt xấu (kém tập trung, nhiều lỗi hơn) và đề xuất phòng nhỏ để rút lui. Phương án b trái với phần nói về lỗi ở công việc đòi hỏi cao; c quá cực đoan, vì ông chỉ đề nghị giảm bớt nhược điểm chứ không đòi bãi bỏ."
+
+  - key: de:examq:goethe-b2-m2-l07
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_lecture
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại trích đoạn bài giảng và chọn đáp án đúng cho câu hỏi.
+      stem: Was schlägt der Dozent vor, um die Nachteile zu verringern?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Dozent: Großraumbüros sollen die Zusammenarbeit fördern, doch Untersuchungen deuten auf ein gemischtes Bild hin. Zwar tauschen sich Kolleginnen und Kollegen spontan aus, gleichzeitig lässt aber die Konzentration nach, weil jedes Gespräch und jedes Telefonklingeln ablenkt. Besonders bei anspruchsvollen Aufgaben passieren dort mehr Fehler. Um die Nachteile zu verringern, empfiehlt es sich, kleine Räume einzurichten, in die man sich bei Bedarf zurückziehen kann. Entscheidend ist, dass die Beschäftigten selbst wählen dürfen, wo sie arbeiten.
+      options:
+        - { id: a, text: "Kleine Räume, in die man sich bei Bedarf zurückziehen kann.", lang: de }
+        - { id: b, text: "Mehr Schreibtische in jedem Raum.", lang: de }
+        - { id: c, text: "Feste Vorgaben, wer wann wo arbeitet.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Empfiehlt es sich, kleine Räume einzurichten, in die man sich bei Bedarf zurückziehen kann” – nên lập các phòng nhỏ để rút lui khi cần. Thêm bàn làm việc (b) chỉ làm ồn hơn và không được nhắc đến; c ngược với câu cuối: điều quyết định là nhân viên được tự chọn nơi làm việc (“selbst wählen dürfen”), không phải quy định cứng."
+
+  # --- Thảo luận: ai nói gì? ---
+  - key: de:examq:goethe-b2-m2-l08
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe cuộc thảo luận trên đài và cho biết ai có ý kiến dưới đây.
+      stem: "Wer vertritt diese Meinung? – Ein Pflichtjahr könnte jungen Menschen Erfahrungen ermöglichen, die sie freiwillig nicht suchen würden."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderator: Soll es für junge Menschen ein soziales Pflichtjahr geben, Frau Lindner?
+        Frau Lindner: Ich bin dagegen. Wer zu einem Dienst gezwungen wird, arbeitet selten mit Überzeugung. Freiwilligkeit lässt sich nicht verordnen.
+        Herr Okafor: Das sehe ich anders. Manche würden von sich aus nie in einem Pflegeheim helfen, könnten dort aber Erfahrungen sammeln, die ihnen sonst fehlen.
+        Moderator: Gäbe es einen Mittelweg?
+        Frau Lindner: Man könnte Freiwilligendienste besser bezahlen und bekannter machen.
+        Herr Okafor: Das wäre ein Anfang. Ohne Pflicht erreicht man aber nicht alle.
+      options:
+        - { id: a, text: "der Moderator", lang: de }
+        - { id: b, text: "Frau Lindner", lang: de }
+        - { id: c, text: "Herr Okafor", lang: de }
+    answer: c
+    explanation:
+      vi: "Ông Okafor nói nhiều người “von sich aus nie” (tự mình không bao giờ) giúp việc ở viện dưỡng lão nhưng có thể có những trải nghiệm mà nếu không thì họ thiếu. Câu thi diễn đạt lại ý đó. Bà Lindner phản đối nghĩa vụ; người dẫn chương trình chỉ đặt câu hỏi."
+
+  - key: de:examq:goethe-b2-m2-l09
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại cuộc thảo luận và cho biết ai có ý kiến dưới đây.
+      stem: "Wer vertritt diese Meinung? – Wer zu einem Dienst gezwungen wird, ist meist wenig motiviert."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderator: Soll es für junge Menschen ein soziales Pflichtjahr geben, Frau Lindner?
+        Frau Lindner: Ich bin dagegen. Wer zu einem Dienst gezwungen wird, arbeitet selten mit Überzeugung. Freiwilligkeit lässt sich nicht verordnen.
+        Herr Okafor: Das sehe ich anders. Manche würden von sich aus nie in einem Pflegeheim helfen, könnten dort aber Erfahrungen sammeln, die ihnen sonst fehlen.
+        Moderator: Gäbe es einen Mittelweg?
+        Frau Lindner: Man könnte Freiwilligendienste besser bezahlen und bekannter machen.
+        Herr Okafor: Das wäre ein Anfang. Ohne Pflicht erreicht man aber nicht alle.
+      options:
+        - { id: a, text: "der Moderator", lang: de }
+        - { id: b, text: "Frau Lindner", lang: de }
+        - { id: c, text: "Herr Okafor", lang: de }
+    answer: b
+    explanation:
+      vi: "Bà Lindner nói “Wer zu einem Dienst gezwungen wird, arbeitet selten mit Überzeugung” (ai bị ép làm thì hiếm khi làm với niềm tin), đúng với ý “wenig motiviert”. Ông Okafor phản bác bằng ý khác (“Das sehe ich anders”), người dẫn chương trình không nêu quan điểm."
+
+  - key: de:examq:goethe-b2-m2-l10
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại cuộc thảo luận và cho biết ai có ý kiến dưới đây.
+      stem: "Wer vertritt diese Meinung? – Bessere Bezahlung allein reicht nicht aus, um alle jungen Menschen zu erreichen."
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Moderator: Soll es für junge Menschen ein soziales Pflichtjahr geben, Frau Lindner?
+        Frau Lindner: Ich bin dagegen. Wer zu einem Dienst gezwungen wird, arbeitet selten mit Überzeugung. Freiwilligkeit lässt sich nicht verordnen.
+        Herr Okafor: Das sehe ich anders. Manche würden von sich aus nie in einem Pflegeheim helfen, könnten dort aber Erfahrungen sammeln, die ihnen sonst fehlen.
+        Moderator: Gäbe es einen Mittelweg?
+        Frau Lindner: Man könnte Freiwilligendienste besser bezahlen und bekannter machen.
+        Herr Okafor: Das wäre ein Anfang. Ohne Pflicht erreicht man aber nicht alle.
+      options:
+        - { id: a, text: "der Moderator", lang: de }
+        - { id: b, text: "Frau Lindner", lang: de }
+        - { id: c, text: "Herr Okafor", lang: de }
+    answer: c
+    explanation:
+      vi: "Ông Okafor nói “Das wäre ein Anfang” (đó mới chỉ là bước đầu) và “Ohne Pflicht erreicht man aber nicht alle” (không có nghĩa vụ thì không tiếp cận được tất cả): chỉ trả công tốt hơn là chưa đủ. Chính bà Lindner là người đề xuất trả công tốt hơn và quảng bá nhiều hơn (b sai)."
+
+  # --- Hội thoại giữa đồng nghiệp ---
+  - key: de:examq:goethe-b2-m2-l11
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_conversation
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe cuộc trò chuyện giữa hai đồng nghiệp và chọn chủ đề chính.
+      stem: Worum geht es in dem Gespräch?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau Ernst: Hast du schon die Rückmeldungen zum Betriebsausflug gesehen?
+        Herr Kaya: Ja. Die meisten sind für die Wanderung, aber ein paar Kollegen würden lieber ins Museum gehen, weil das Wetter im Oktober unsicher ist.
+        Frau Ernst: Dann reserviere ich lieber die Hütte mit dem großen Gastraum. Dort kann man bei Regen drinnen essen.
+        Herr Kaya: Gute Idee. Aber das Angebot gilt nur noch bis Freitag.
+        Frau Ernst: Dann schreibe ich der Chefin noch heute, damit sie die Kosten genehmigt.
+      options:
+        - { id: a, text: "Um die Planung eines Betriebsausflugs.", lang: de }
+        - { id: b, text: "Um einen Streit zwischen Kollegen über das Museum.", lang: de }
+        - { id: c, text: "Um eine Reklamation bei einer Berghütte.", lang: de }
+    answer: a
+    explanation:
+      vi: "Hai đồng nghiệp bàn về phản hồi cho chuyến đi chơi của công ty (“Betriebsausflug”): đi bộ đường dài hay đến bảo tàng, đặt nhà nghỉ, xin sếp duyệt chi phí. Không có tranh cãi (b) hay khiếu nại (c) nào."
+
+  - key: de:examq:goethe-b2-m2-l12
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe lại cuộc trò chuyện và chọn đáp án đúng cho câu hỏi.
+      stem: Warum möchte Frau Ernst die Hütte reservieren?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau Ernst: Hast du schon die Rückmeldungen zum Betriebsausflug gesehen?
+        Herr Kaya: Ja. Die meisten sind für die Wanderung, aber ein paar Kollegen würden lieber ins Museum gehen, weil das Wetter im Oktober unsicher ist.
+        Frau Ernst: Dann reserviere ich lieber die Hütte mit dem großen Gastraum. Dort kann man bei Regen drinnen essen.
+        Herr Kaya: Gute Idee. Aber das Angebot gilt nur noch bis Freitag.
+        Frau Ernst: Dann schreibe ich der Chefin noch heute, damit sie die Kosten genehmigt.
+      options:
+        - { id: a, text: "Weil man dort auch bei schlechtem Wetter drinnen essen kann.", lang: de }
+        - { id: b, text: "Weil die Hütte billiger ist als das Museum.", lang: de }
+        - { id: c, text: "Weil alle Kolleginnen und Kollegen wandern möchten.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bà Ernst chọn nhà nghỉ có phòng ăn lớn vì “Dort kann man bei Regen drinnen essen” (khi mưa vẫn ăn trong nhà được), tức là hợp cả khi thời tiết xấu. Giá cả (b) không được so sánh; c sai vì ông Kaya nói chỉ “die meisten” (đa số) muốn đi bộ, “ein paar” (một vài người) thích đi bảo tàng hơn."
+
+  # --- Tin nhắn thoại và thông báo ---
+  - key: de:examq:goethe-b2-m2-l13
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Nghe lời nhắn tự động của một phòng khám và chọn đáp án đúng cho câu hỏi.
+      stem: Wie können Patientinnen und Patienten ein Rezept für ein Dauermedikament bekommen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, Sie sind verbunden mit der Gemeinschaftspraxis Doktor Lenz und Doktor Hartwig. In dieser Woche bleibt die Praxis am Mittwoch und Donnerstag wegen einer Fortbildung geschlossen. In dringenden Fällen wenden Sie sich bitte an den ärztlichen Bereitschaftsdienst. Rezepte für Dauermedikamente können Sie über unsere Internetseite anfordern; sie liegen ab Freitag zur Abholung bereit. Termine können Sie bis zum Vortag absagen.
+      options:
+        - { id: a, text: "Sie fordern es über die Internetseite an und holen es ab Freitag ab.", lang: de }
+        - { id: b, text: "Sie holen es am Mittwoch in der Praxis ab.", lang: de }
+        - { id: c, text: "Sie rufen den ärztlichen Bereitschaftsdienst an.", lang: de }
+    answer: a
+    explanation:
+      vi: "Đơn thuốc dùng lâu dài đặt qua trang web của phòng khám (“über unsere Internetseite anfordern”) và có thể lấy từ thứ Sáu (“ab Freitag”). Thứ Tư phòng khám đóng cửa vì tập huấn (b sai); dịch vụ trực y tế chỉ dành cho trường hợp khẩn cấp (c sai)."
+
+  - key: de:examq:goethe-b2-m2-l14
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo tại một nhà hát hòa nhạc và chọn đáp án đúng cho câu hỏi.
+      stem: Was können Gäste tun, die das geänderte Programm nicht hören möchten?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Meine Damen und Herren, wegen der Erkrankung des Solisten spielt das Orchester heute Abend nicht das angekündigte Klavierkonzert, sondern ein Programm mit Kammermusik. Das Konzert beginnt wie geplant um 20 Uhr. Wer das geänderte Programm nicht hören möchte, bekommt an der Kasse bis eine Stunde nach Beginn den Eintrittspreis zurück. Wir bitten um Ihr Verständnis.
+      options:
+        - { id: a, text: "Sich bis eine Stunde nach Beginn das Eintrittsgeld an der Kasse erstatten lassen.", lang: de }
+        - { id: b, text: "Ihre Karte für ein späteres Konzert umtauschen.", lang: de }
+        - { id: c, text: "Nur vor Beginn des Konzerts ihre Karte zurückgeben.", lang: de }
+    answer: a
+    explanation:
+      vi: "Khách không muốn nghe chương trình mới được hoàn tiền vé tại quầy “bis eine Stunde nach Beginn” (đến một giờ sau khi bắt đầu). Việc đổi vé sang buổi khác (b) không được nói đến; c sai vì thời hạn là sau khi bắt đầu một giờ chứ không chỉ trước giờ diễn."
+
+  # ============================== ĐỌC (Lesen) ==============================
+  # --- Thư bạn đọc ---
+  - key: de:examq:goethe-b2-m2-r01
+    section: reading
+    kind: mcq
+    question_type: goethe_read_opinion
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thư bạn đọc gửi báo và chọn câu thể hiện đúng quan điểm của người viết.
+      stem: Welche Haltung vertritt die Verfasserin des Leserbriefs?
+      stem_lang: de
+      passage: |-
+        Leserbrief zum Artikel „Kartenzahlung im Café Linde“
+        Mit Erstaunen habe ich gelesen, dass das Café Linde künftig nur noch Kartenzahlung akzeptiert. Ich verstehe, dass dieses Vorgehen Zeit spart und Wechselgeld überflüssig macht. Trotzdem halte ich den Schritt für falsch: Ältere Gäste und Jugendliche ohne eigenes Konto werden ausgeschlossen, und wer bar bezahlt, behält leichter den Überblick über seine Ausgaben. Ein Café lebt von seinen Stammgästen. Wer sie vergrault, spart am falschen Ende.
+        Marianne Rösch, Seeberg
+      options:
+        - { id: a, text: "Sie versteht die Gründe des Cafés, lehnt die Entscheidung aber ab.", lang: de }
+        - { id: b, text: "Sie begrüßt die Entscheidung, weil Bargeld unpraktisch ist.", lang: de }
+        - { id: c, text: "Sie fordert, dass alle Geschäfte nur noch Bargeld annehmen.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bà Rösch thừa nhận lợi ích (“Ich verstehe, dass dieses Vorgehen Zeit spart”) nhưng nói rõ “halte ich den Schritt für falsch” (tôi cho đó là sai lầm) rồi nêu lý do. Phương án b trái với thái độ phản đối; c quá xa: bà chỉ phê bình một quán cà phê, không đòi mọi cửa hàng chỉ nhận tiền mặt."
+
+  - key: de:examq:goethe-b2-m2-r02
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại thư bạn đọc và chọn đáp án đúng cho câu hỏi.
+      stem: Wer wird laut dem Leserbrief durch die Entscheidung benachteiligt?
+      stem_lang: de
+      passage: |-
+        Leserbrief zum Artikel „Kartenzahlung im Café Linde“
+        Mit Erstaunen habe ich gelesen, dass das Café Linde künftig nur noch Kartenzahlung akzeptiert. Ich verstehe, dass dieses Vorgehen Zeit spart und Wechselgeld überflüssig macht. Trotzdem halte ich den Schritt für falsch: Ältere Gäste und Jugendliche ohne eigenes Konto werden ausgeschlossen, und wer bar bezahlt, behält leichter den Überblick über seine Ausgaben. Ein Café lebt von seinen Stammgästen. Wer sie vergrault, spart am falschen Ende.
+        Marianne Rösch, Seeberg
+      options:
+        - { id: a, text: "Ältere Gäste und Jugendliche ohne eigenes Konto.", lang: de }
+        - { id: b, text: "Das Personal, das mehr arbeiten muss.", lang: de }
+        - { id: c, text: "Gäste, die gern mit Karte bezahlen.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Ältere Gäste und Jugendliche ohne eigenes Konto werden ausgeschlossen”: người lớn tuổi và thanh thiếu niên không có tài khoản riêng bị loại ra ngoài. Nhân viên (b) không được nhắc đến; khách thích trả bằng thẻ (c) thì không bị thiệt mà còn thuận tiện hơn."
+
+  # --- Phóng sự tạp chí ---
+  - key: de:examq:goethe-b2-m2-r03
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc bài phóng sự trên tạp chí và chọn đáp án đúng cho câu hỏi.
+      stem: Warum sind inzwischen viele Eltern überzeugt?
+      stem_lang: de
+      passage: |-
+        Jeden Mittwoch verlässt die Klasse 5b der Grundschule Hohenau das Schulgebäude und geht in den Wald. Der Lehrer Samuel Berger hat dort eine Lichtung hergerichtet: Baumstämme dienen als Sitzplätze, ein Tuch zwischen zwei Bäumen als Dach. Gerechnet und gelesen wird trotzdem, nur eben draußen. „Anfangs hatten manche Eltern Bedenken wegen des Wetters“, sagt Berger. Inzwischen seien viele überzeugt, weil die Kinder konzentrierter wirkten und sich mehr bewegten. Bei Gewitter oder Sturm bleibt die Klasse im Haus.
+      options:
+        - { id: a, text: "Weil die Kinder konzentrierter wirken und sich mehr bewegen.", lang: de }
+        - { id: b, text: "Weil im Wald weniger gelernt werden muss.", lang: de }
+        - { id: c, text: "Weil das Wetter im Wald immer gut ist.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bài dùng Konjunktiv I và II để thuật lại lời thầy Berger (“seien viele überzeugt, weil die Kinder konzentrierter wirkten und sich mehr bewegten”): nhiều phụ huynh được thuyết phục vì trẻ có vẻ tập trung hơn và vận động nhiều hơn. Việc học vẫn diễn ra như thường (“Gerechnet und gelesen wird trotzdem”) nên b sai; c sai vì chính thời tiết là mối lo ban đầu của phụ huynh."
+
+  - key: de:examq:goethe-b2-m2-r04
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gist
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại bài phóng sự và chọn tiêu đề phù hợp nhất.
+      stem: Welche Überschrift passt am besten zu dem Text?
+      stem_lang: de
+      passage: |-
+        Jeden Mittwoch verlässt die Klasse 5b der Grundschule Hohenau das Schulgebäude und geht in den Wald. Der Lehrer Samuel Berger hat dort eine Lichtung hergerichtet: Baumstämme dienen als Sitzplätze, ein Tuch zwischen zwei Bäumen als Dach. Gerechnet und gelesen wird trotzdem, nur eben draußen. „Anfangs hatten manche Eltern Bedenken wegen des Wetters“, sagt Berger. Inzwischen seien viele überzeugt, weil die Kinder konzentrierter wirkten und sich mehr bewegten. Bei Gewitter oder Sturm bleibt die Klasse im Haus.
+      options:
+        - { id: a, text: "Unterricht im Grünen: Eine Klasse lernt einmal pro Woche im Wald", lang: de }
+        - { id: b, text: "Grundschule Hohenau wegen Sturmschäden geschlossen", lang: de }
+        - { id: c, text: "Eltern protestieren gegen Ausflüge in den Wald", lang: de }
+    answer: a
+    explanation:
+      vi: "Ý chính: một lớp học mỗi thứ Tư (“Jeden Mittwoch”) ra rừng học, vẫn tính toán và đọc như bình thường. Phương án b sai vì bão chỉ là lý do ở lại trong nhà vào một số ngày; c sai vì phụ huynh ban đầu có lo ngại nhưng giờ nhiều người đã bị thuyết phục."
+
+  # --- Thư của cơ quan ---
+  - key: de:examq:goethe-b2-m2-r05
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc thư của thư viện thành phố và chọn đáp án đúng cho câu hỏi.
+      stem: Was gilt für Nutzerinnen und Nutzer, die ihren Ausweis noch in diesem Jahr verlängern?
+      stem_lang: de
+      passage: |-
+        Sehr geehrte Nutzerinnen und Nutzer,
+        zum 1. Januar ändern sich die Gebühren der Stadtbibliothek Oberfeld. Der Jahresausweis für Erwachsene kostet dann 20 statt bisher 15 Euro. Für Kinder und Jugendliche bis 18 Jahre bleibt die Nutzung kostenlos. Mahngebühren entfallen künftig für alle, sofern die Medien spätestens zwei Wochen nach Ablauf der Leihfrist zurückgegeben werden. Wer seinen Ausweis noch in diesem Jahr verlängert, zahlt noch den bisherigen Preis. Wir bitten um Ihr Verständnis.
+        Mit freundlichen Grüßen
+        Stadtbibliothek Oberfeld
+      options:
+        - { id: a, text: "Sie zahlen noch den bisherigen Preis.", lang: de }
+        - { id: b, text: "Sie müssen schon jetzt 20 Euro bezahlen.", lang: de }
+        - { id: c, text: "Sie müssen keine Gebühr bezahlen.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Wer seinen Ausweis noch in diesem Jahr verlängert, zahlt noch den bisherigen Preis”: ai gia hạn thẻ trong năm nay vẫn trả mức giá cũ (15 euro). Mức 20 euro chỉ áp dụng từ ngày 1/1 (b sai); chỉ trẻ em và thanh thiếu niên đến 18 tuổi được dùng miễn phí (c sai)."
+
+  - key: de:examq:goethe-b2-m2-r06
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc lại thư và chọn đáp án đúng cho câu hỏi.
+      stem: Unter welcher Bedingung entfallen die Mahngebühren?
+      stem_lang: de
+      passage: |-
+        Sehr geehrte Nutzerinnen und Nutzer,
+        zum 1. Januar ändern sich die Gebühren der Stadtbibliothek Oberfeld. Der Jahresausweis für Erwachsene kostet dann 20 statt bisher 15 Euro. Für Kinder und Jugendliche bis 18 Jahre bleibt die Nutzung kostenlos. Mahngebühren entfallen künftig für alle, sofern die Medien spätestens zwei Wochen nach Ablauf der Leihfrist zurückgegeben werden. Wer seinen Ausweis noch in diesem Jahr verlängert, zahlt noch den bisherigen Preis. Wir bitten um Ihr Verständnis.
+        Mit freundlichen Grüßen
+        Stadtbibliothek Oberfeld
+      options:
+        - { id: a, text: "Wenn die Medien spätestens zwei Wochen nach Ablauf der Leihfrist zurückgegeben werden.", lang: de }
+        - { id: b, text: "Wenn man seinen Ausweis noch in diesem Jahr verlängert.", lang: de }
+        - { id: c, text: "Wenn man jünger als 18 Jahre ist.", lang: de }
+    answer: a
+    explanation:
+      vi: "“Mahngebühren entfallen künftig für alle, sofern …” (miễn phí nhắc nhở cho tất cả, với điều kiện …): trả sách muộn nhất hai tuần sau hạn mượn. “Sofern” = “nếu, với điều kiện”. Gia hạn thẻ (b) chỉ liên quan đến giá thẻ; vì quy định áp dụng “für alle”, tuổi dưới 18 (c) không phải điều kiện."
+
+  # --- Ghép tin rao nhà ---
+  - key: de:examq:goethe-b2-m2-r07
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn tin rao nhà cho thuê, chọn tin phù hợp với người được mô tả.
+      stem: Familie Brandt hat zwei Kinder und einen Hund. Die Kinder sollen draußen spielen können, und alle brauchen mehr Platz. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A: 2-Zimmer-Altbauwohnung, 4. Stock, kein Aufzug, 55 m², Haustiere nach Absprache erlaubt, frei ab 1. Dezember.
+        B: Möbliertes Zimmer in lebhafter Vierer-WG nahe der Uni, ab sofort frei, Gemeinschaftsküche, keine Haustiere.
+        C: 3-Zimmer-Wohnung mit Garten am Stadtrand, ruhige Lage, S-Bahn in 10 Minuten, Kinder und Haustiere willkommen.
+        D: Barrierefreie 1-Zimmer-Wohnung im Erdgeschoss, ebenerdiger Zugang, Nähe Apotheke und Haltestelle, Haustiere nicht gestattet.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: c
+    explanation:
+      vi: "Gia đình có hai con và một con chó, cần thêm chỗ ở và chỗ cho trẻ chơi ngoài trời: căn C có ba phòng, có vườn, chào đón cả trẻ em lẫn thú nuôi (“Kinder und Haustiere willkommen”). Căn A cho phép nuôi thú nhưng chỉ có hai phòng, 55 m² và không có vườn; B và D chỉ có một phòng và không cho nuôi thú."
+
+  - key: de:examq:goethe-b2-m2-r08
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn tin rao nhà cho thuê, chọn tin phù hợp với người được mô tả.
+      stem: Herr Weiß ist 79 Jahre alt und sitzt im Rollstuhl. Er braucht eine Wohnung ohne Stufen und möchte ohne fremde Hilfe zur Haltestelle und zur Apotheke kommen. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A: 2-Zimmer-Altbauwohnung, 4. Stock, kein Aufzug, 55 m², Haustiere nach Absprache erlaubt, frei ab 1. Dezember.
+        B: Möbliertes Zimmer in lebhafter Vierer-WG nahe der Uni, ab sofort frei, Gemeinschaftsküche, keine Haustiere.
+        C: 3-Zimmer-Wohnung mit Garten am Stadtrand, ruhige Lage, S-Bahn in 10 Minuten, Kinder und Haustiere willkommen.
+        D: Barrierefreie 1-Zimmer-Wohnung im Erdgeschoss, ebenerdiger Zugang, Nähe Apotheke und Haltestelle, Haustiere nicht gestattet.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: d
+    explanation:
+      vi: "Ông Weiß ngồi xe lăn nên cần căn hộ không bậc thang và gần trạm xe, hiệu thuốc: căn D vừa không rào cản (“barrierefrei”, “ebenerdiger Zugang”) vừa “Nähe Apotheke und Haltestelle”. Căn A ở tầng 4 không có thang máy; C ở ngoại ô, cách ga tàu 10 phút; B là phòng trong nhà ở chung."
+
+  - key: de:examq:goethe-b2-m2-r09
+    section: reading
+    kind: mcq
+    question_type: goethe_read_match
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và bốn tin rao nhà cho thuê, chọn tin phù hợp với người được mô tả.
+      stem: Mia studiert und zieht nächste Woche in eine neue Stadt. Sie hat keine Möbel und möchte nicht allein wohnen. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A: 2-Zimmer-Altbauwohnung, 4. Stock, kein Aufzug, 55 m², Haustiere nach Absprache erlaubt, frei ab 1. Dezember.
+        B: Möbliertes Zimmer in lebhafter Vierer-WG nahe der Uni, ab sofort frei, Gemeinschaftsküche, keine Haustiere.
+        C: 3-Zimmer-Wohnung mit Garten am Stadtrand, ruhige Lage, S-Bahn in 10 Minuten, Kinder und Haustiere willkommen.
+        D: Barrierefreie 1-Zimmer-Wohnung im Erdgeschoss, ebenerdiger Zugang, Nähe Apotheke und Haltestelle, Haustiere nicht gestattet.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+        - { id: c, text: "Anzeige C", lang: de }
+        - { id: d, text: "Anzeige D", lang: de }
+    answer: b
+    explanation:
+      vi: "Mia là sinh viên, tuần sau chuyển đến, không có đồ đạc và không muốn ở một mình: phòng B có sẵn đồ (“möbliert”), trong nhà ở chung bốn người gần trường đại học và trống ngay (“ab sofort frei”). Căn A chỉ trống từ 1/12 và không có đồ đạc; C và D là nhà ở riêng, không phải ở chung."
+
+  # --- Bài đọc dài (hai phần): suy luận và chọn câu đúng ---
+  - key: de:examq:goethe-b2-m2-r10
+    section: reading
+    kind: mcq
+    question_type: goethe_read_inference
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc phần đầu bài báo về không gian làm việc chung ở nông thôn và chọn điều có thể suy ra từ nội dung.
+      stem: Was lässt sich aus dem Text schließen?
+      stem_lang: de
+      passage: |-
+        Coworking auf dem Land (Teil 1)
+        Lange galten Coworking-Spaces als Phänomen der Großstädte, in denen sich Freiberufler Schreibtische teilen. Inzwischen entstehen solche Räume auch in Dörfern, oft in leerstehenden Gasthäusern oder Schulgebäuden. Für Beschäftigte, die täglich ein bis zwei Stunden pendeln müssten, ist das attraktiv: Sie können ihre Arbeit erledigen, ohne ihren Wohnort zu verlassen, und trotzdem Kolleginnen und Kollegen treffen, statt allein am Küchentisch zu sitzen.
+      options:
+        - { id: a, text: "Gemeinsame Arbeitsräume auf dem Land können das Gefühl der Isolation im Homeoffice verringern.", lang: de }
+        - { id: b, text: "Dörfer bieten Freiberuflern grundsätzlich bessere Arbeitsbedingungen als Städte.", lang: de }
+        - { id: c, text: "Wer pendelt, arbeitet immer allein am Küchentisch.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bài nói người làm việc ở không gian chung vừa không phải đi xa vừa gặp được đồng nghiệp, “statt allein am Küchentisch zu sitzen” (thay vì ngồi một mình ở bàn bếp): vậy cảm giác cô lập khi làm việc tại nhà có thể giảm, đây là suy luận hợp lý. Phương án b khái quát quá mức (“grundsätzlich”) và bài không so sánh như vậy; c sai vì người đi làm xa không làm việc ở bàn bếp."
+
+  - key: de:examq:goethe-b2-m2-r11
+    section: reading
+    kind: mcq
+    question_type: goethe_read_detail
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Đọc phần tiếp theo của bài báo và chọn câu đúng với nội dung.
+      stem: Welche Aussage entspricht dem Text?
+      stem_lang: de
+      passage: |-
+        Coworking auf dem Land (Teil 2)
+        Der Bürgermeister von Lindhof, Marc Hofmann, berichtet, im ehemaligen Schulhaus seien inzwischen zwölf Arbeitsplätze vermietet. Die Gemeinde habe den Umbau bezahlt, weil sie hoffe, junge Familien im Ort zu halten. Skeptisch sei er anfangs gewesen, räumt er ein, denn niemand habe gewusst, ob sich genug Nutzer fänden. Nun gebe es sogar eine Warteliste. Probleme bereite lediglich die Internetverbindung, die noch nicht überall stabil sei.
+      options:
+        - { id: a, text: "Die Gemeinde hat den Umbau bezahlt, um junge Familien im Ort zu halten.", lang: de }
+        - { id: b, text: "Der Bürgermeister war von Anfang an sicher, dass genug Nutzer kommen würden.", lang: de }
+        - { id: c, text: "Die Internetverbindung funktioniert im ganzen Gebiet einwandfrei.", lang: de }
+    answer: a
+    explanation:
+      vi: "Bài dùng Konjunktiv I để thuật lại lời thị trưởng (“habe … bezahlt”, “hoffe”): xã đã trả tiền cải tạo vì hy vọng giữ chân các gia đình trẻ. Phương án b ngược với “Skeptisch sei er anfangs gewesen” (lúc đầu ông hoài nghi); c ngược với câu cuối: kết nối internet “noch nicht überall stabil” (chưa ổn định ở mọi nơi)."
+
+  # --- Điền từ nối ---
+  - key: de:examq:goethe-b2-m2-r12
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Das Angebot, ___ wir uns lange gefreut hatten, wurde kurzfristig zurückgezogen.
+      options:
+        - { id: a, text: "auf das", lang: de }
+        - { id: b, text: "auf dem", lang: de }
+        - { id: c, text: "auf dessen", lang: de }
+        - { id: d, text: "auf denen", lang: de }
+    answer: a
+    explanation:
+      vi: "“Sich freuen auf” đi với Akkusativ, và đại từ quan hệ phải khớp giống – số của danh từ mà nó thay thế: “das Angebot” (trung tính, số ít) nên dùng “auf das”. “Auf dem” là Dativ nên sai cách; “auf denen” là số nhiều; “auf dessen” (của nó) tạo ra một danh từ đứng sau, không có ở đây."
+
+  - key: de:examq:goethe-b2-m2-r13
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Wie bereits angekündigt, ___ die Ergebnisse der Umfrage nächste Woche veröffentlicht.
+      options:
+        - { id: a, text: "werden", lang: de }
+        - { id: b, text: "wurden", lang: de }
+        - { id: c, text: "waren", lang: de }
+        - { id: d, text: "haben", lang: de }
+    answer: a
+    explanation:
+      vi: "Câu bị động Vorgangspassiv với “werden” + Partizip II (“veröffentlicht”), ở thì hiện tại với nghĩa tương lai vì có “nächste Woche”: “werden … veröffentlicht”. “Wurden” và “waren” là thì quá khứ, mâu thuẫn với “nächste Woche”; “haben” không tạo được bị động."
+
+  - key: de:examq:goethe-b2-m2-r14
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Man kann Energie sparen, ___ man die Heizung nachts herunterdreht.
+      options:
+        - { id: a, text: "indem", lang: de }
+        - { id: b, text: "damit", lang: de }
+        - { id: c, text: "sodass", lang: de }
+        - { id: d, text: "obwohl", lang: de }
+    answer: a
+    explanation:
+      vi: "Liên từ “indem” (bằng cách) diễn đạt phương thức: tiết kiệm năng lượng bằng cách hạ nhiệt sưởi vào ban đêm; động từ xuống cuối mệnh đề (“herunterdreht”). “Damit” chỉ mục đích (để), “sodass” chỉ kết quả, “obwohl” chỉ nhượng bộ; cả ba đều sai nghĩa."
+
+  - key: de:examq:goethe-b2-m2-r15
+    section: reading
+    kind: mcq
+    question_type: goethe_read_gap
+    level_code: b2
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống.
+      stem: Welches Wort passt in die Lücke?
+      stem_lang: de
+      passage: Er verhält sich, ___ er von dem Streit nichts gewusst hätte.
+      options:
+        - { id: a, text: "als ob", lang: de }
+        - { id: b, text: "obwohl", lang: de }
+        - { id: c, text: "sodass", lang: de }
+        - { id: d, text: "damit", lang: de }
+    answer: a
+    explanation:
+      vi: "“Als ob” + Konjunktiv II (ở đây là Plusquamperfekt “gewusst hätte”) diễn đạt sự so sánh không có thật: anh ta cư xử như thể không biết gì về vụ cãi vã. “Obwohl” (mặc dù) chỉ sự nhượng bộ nên sai nghĩa; “sodass” (kết quả) và “damit” (mục đích) không diễn đạt sự so sánh."
+
+  # ============================== VIẾT (Schreiben) ==============================
+  # --- Teil 1: thư bạn đọc gửi báo ≈ 150 từ ---
+  - key: de:examq:goethe-b2-m2-w01
+    section: writing
+    kind: essay
+    question_type: goethe_write_forum
+    level_code: b2
+    points: 20
+    prompt:
+      instruction_vi: >-
+        Viết một thư bạn đọc gửi báo bằng tiếng Đức (khoảng 150 từ) nêu ý kiến về đề xuất trong đề và bàn đủ bốn ý gợi ý.
+        Có lời xưng hô, câu mở đầu, lập luận có lý do hoặc ví dụ, câu kết và lời chào kết.
+      stem: |-
+        In Ihrer Tageszeitung stand: „Die Stadtverwaltung überlegt, den Geschäften in der Innenstadt zu erlauben, auch sonntags zu öffnen.“
+        Schreiben Sie einen Leserbrief (circa 150 Wörter):
+        – Nehmen Sie Stellung zu dem Vorschlag.
+        – Nennen Sie Argumente für und gegen verkaufsoffene Sonntage.
+        – Beschreiben Sie, wie das in Ihrem Heimatland oder in Ihrem Umfeld geregelt ist.
+        – Machen Sie einen Gegenvorschlag oder einen Kompromissvorschlag.
+      stem_lang: de
+      min_chars: 750
+      max_chars: 2000
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Bàn đủ bốn ý (quan điểm, lập luận ủng hộ và phản đối, tình hình ở nơi bạn sống, đề xuất) và phát triển bằng lý do, ví dụ; quan điểm rõ ràng, nhất quán. Thiếu một ý hoặc chỉ liệt kê mà không giải thích là mất điểm.
+        max_points: 5
+      - key: communicative_achievement
+        label_vi: Hiệu quả giao tiếp
+        description_vi: Đúng văn phong thư bạn đọc (lịch sự, nêu quan điểm rõ ràng, có nhắc đến bài báo và ý kiến trái chiều); lập luận thuyết phục, không viết như tin nhắn.
+        max_points: 5
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có lời xưng hô (Sehr geehrte Redaktion,), câu mở đầu, các đoạn mỗi đoạn một ý, câu kết và lời chào kết; dùng từ nối đa dạng (einerseits … andererseits, zwar … aber, deshalb, außerdem, schließlich).
+        max_points: 5
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Từ vựng và cấu trúc đa dạng ở mức B2 (Konjunktiv II, bị động, mệnh đề quan hệ, danh từ hóa), động từ đúng vị trí; lỗi ít và không gây hiểu nhầm.
+        max_points: 5
+    sample_answer: |-
+      Sehr geehrte Redaktion,
+
+      mit Interesse habe ich gelesen, dass die Stadt Sonntagsöffnungen in der Innenstadt erwägt. Ich bin dagegen, kann mir aber einen Kompromiss vorstellen.
+
+      Für verkaufsoffene Sonntage spricht, dass Berufstätige unter der Woche oft keine Zeit zum Einkaufen haben und die Innenstadt lebendiger würde. Außerdem könnten die Geschäfte zusätzliche Umsätze erzielen. Dagegen steht, dass die Beschäftigten im Einzelhandel dann noch seltener ein freies Wochenende hätten. Für viele ist der Sonntag der einzige Tag, an dem die ganze Familie Zeit füreinander hat.
+
+      In meiner Heimat Vietnam sind viele Geschäfte auch sonntags geöffnet. Das ist für die Kundschaft bequem, doch die Beschäftigten haben dadurch oft kaum freie Tage.
+
+      Ich schlage deshalb vor, nur an wenigen Sonntagen im Jahr zu öffnen, zum Beispiel vor Weihnachten, und das Personal dafür mit zusätzlichen freien Tagen zu entschädigen.
+
+      Mit freundlichen Grüßen
+      Minh Nguyen
+    explanation:
+      vi: "Thư bạn đọc B2 được chấm trước hết ở việc bàn đủ các ý gợi ý và cân nhắc cả hai mặt. Lỗi hay gặp: bỏ sót ý (thường là phần đề xuất), chỉ liệt kê mà không giải thích, thiếu lời xưng hô hoặc lời chào kết, quên đảo động từ sau trạng từ đầu câu (“Dagegen steht, dass …”; “Außerdem könnten die Geschäfte …”) hoặc để động từ không ở cuối mệnh đề phụ (đúng là “weil das Personal entschädigt wird”, không phải “weil das Personal wird entschädigt”)."
+
+  # --- Teil 2: e-mail khiếu nại trang trọng ≈ 100 từ ---
+  - key: de:examq:goethe-b2-m2-w02
+    section: writing
+    kind: essay
+    question_type: goethe_write_email
+    level_code: b2
+    points: 16
+    prompt:
+      instruction_vi: >-
+        Viết một e-mail khiếu nại trang trọng bằng tiếng Đức (khoảng 100 từ) gửi người phụ trách của công ty, trả lời đủ các ý
+        trong đề. Dùng “Sie”, có lời xưng hô và lời chào kết phù hợp.
+      stem: |-
+        Sie haben über die Agentur „Küstenträume“ eine Ferienwohnung in Seebach für eine Woche gebucht. Bei der Ankunft stellen Sie fest: Die Heizung funktioniert nicht, und direkt neben dem Haus wird gebaut, was in der Beschreibung nicht erwähnt war. Den Vermieter erreichen Sie telefonisch nicht.
+        Schreiben Sie an die Agentur, Herrn Kramer (circa 100 Wörter):
+        – Schildern Sie die beiden Mängel.
+        – Fordern Sie die Erstattung eines Teils des Reisepreises und nennen Sie eine Frist für die Antwort.
+        Vergessen Sie Anrede und Gruß nicht.
+      stem_lang: de
+      min_chars: 450
+      max_chars: 1400
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Trả lời đủ các ý (nêu rõ hai lỗi của căn hộ, yêu cầu hoàn lại một phần tiền, nêu thời hạn trả lời); thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: communicative_achievement
+        label_vi: Hiệu quả giao tiếp
+        description_vi: Văn phong trang trọng, lịch sự nhưng rõ ràng và kiên quyết (Sie nhất quán, “Ich bitte Sie, …”, “Ich erwarte Ihre Antwort bis …”); người đọc biết chính xác bạn muốn gì và khi nào.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có xưng hô (Sehr geehrter Herr Kramer,), lý do viết thư, phần nêu vấn đề, phần yêu cầu kèm thời hạn và lời chào kết (Mit freundlichen Grüßen + tên, không có dấu phẩy sau Grüßen).
+        max_points: 4
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Từ vựng và cấu trúc B2 phù hợp thư khiếu nại (từ như “beanstanden”, “Mangel”, “Erstattung”, bị động, mệnh đề phụ), lỗi ít và không gây hiểu nhầm.
+        max_points: 4
+    sample_answer: |-
+      Sehr geehrter Herr Kramer,
+
+      vor zwei Tagen bin ich in der von Ihnen vermittelten Ferienwohnung in Seebach angekommen und muss leider zwei erhebliche Mängel beanstanden. Die Heizung funktioniert nicht, sodass es abends sehr kalt ist. Außerdem wird direkt neben dem Haus ab dem frühen Morgen gebaut, was in der Beschreibung nicht erwähnt wurde. Den Vermieter habe ich telefonisch nicht erreicht.
+
+      Ich bitte Sie daher, mir einen Teil des Reisepreises zu erstatten, und erwarte Ihre Antwort bis zum 20. dieses Monats. Andernfalls müsste ich weitere Schritte prüfen.
+
+      Mit freundlichen Grüßen
+      Minh Nguyen
+    explanation:
+      vi: "E-mail khiếu nại B2 được chấm ở việc nêu rõ vấn đề, yêu cầu cụ thể và thời hạn, giọng lịch sự mà kiên quyết. Lỗi hay gặp: chỉ than phiền mà không nêu yêu cầu, quên thời hạn, trộn “du” với “Sie”, viết hoa chữ đầu sau dấu phẩy của lời xưng hô (đúng là “vor zwei Tagen …” viết thường), đặt động từ sai chỗ trong mệnh đề phụ (đúng là “sodass es abends sehr kalt ist”, không phải “sodass es ist abends sehr kalt”) và quên lời chào kết."
