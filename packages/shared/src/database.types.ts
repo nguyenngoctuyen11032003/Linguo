@@ -1390,6 +1390,8 @@ isOneToOne: false
                            },
 "exam_normalize_text":
 { Args: { "p_text": string }; Returns: string
+                           } |
+{ Args: { "p_lang": string,"p_text": string }; Returns: string
                            },
 "exam_overdue":
 { Args: { "p_deadline_at": string }; Returns: boolean
