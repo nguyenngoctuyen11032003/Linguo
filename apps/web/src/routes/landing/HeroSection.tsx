@@ -83,8 +83,9 @@ export function HeroSection({ ready }: { ready: boolean }) {
             <span className="rounded-full bg-primary px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-primary">EN</span>
             <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] tracking-[0.06em] text-on-accent">KO</span>
             <span className="rounded-full bg-[#C9255F] px-2 py-0.5 text-[11px] tracking-[0.06em] text-white">JA</span>
+            <span className="rounded-full bg-[#3F3F46] px-2 py-0.5 text-[11px] tracking-[0.06em] text-white">DE</span>
           </span>
-          <span className="max-[359px]:sr-only">Tiếng Anh · Hàn · Nhật</span>
+          <span className="max-[359px]:sr-only">Tiếng Anh · Hàn · Nhật · Đức</span>
         </motion.p>
         <h1 id="hero-title" className="font-display text-[clamp(40px,14vw,136px)] min-[1024px]:text-[clamp(64px,7.6vw,120px)] font-extrabold uppercase leading-[0.92] tracking-[-0.01em]">
           <motion.span className="block whitespace-nowrap" variants={reveal('slideLeft', reduceMotion, 0)} initial="hidden" animate={state}>
@@ -105,7 +106,7 @@ export function HeroSection({ ready }: { ready: boolean }) {
           initial="hidden"
           animate={state}
         >
-          Lộ trình tiếng Anh, tiếng Hàn và tiếng Nhật cá nhân hoá cho người Việt — học bằng{' '}
+          Lộ trình tiếng Anh, tiếng Hàn, tiếng Nhật và tiếng Đức cá nhân hoá cho người Việt — học bằng{' '}
           <em className="font-serif text-[1.08em] text-text">nhớ lại chủ động</em>, ôn tập ngắt quãng và phản hồi có giải thích.
         </motion.p>
         <motion.div

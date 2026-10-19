@@ -7,7 +7,7 @@ import { useMotionPrefs } from '@/providers/MotionProvider';
 
 /** Product facts only — never user counts or outcomes we cannot back up. */
 const STATS = [
-  { value: 3, tag: 'Ngôn ngữ', label: 'ngôn ngữ — tiếng Anh, tiếng Hàn và tiếng Nhật', short: 'Tiếng Anh · Tiếng Hàn · Tiếng Nhật', gold: false },
+  { value: 4, tag: 'Ngôn ngữ', label: 'ngôn ngữ — tiếng Anh, tiếng Hàn, tiếng Nhật và tiếng Đức', short: 'Tiếng Anh · Hàn · Nhật · Đức', gold: false },
   { value: 6, tag: 'Kỹ năng', label: 'kỹ năng theo dõi riêng: từ vựng, ngữ pháp, đọc, nghe, viết, nói', short: 'Từ vựng · ngữ pháp · đọc · nghe · viết · nói', gold: false },
   { value: 17, tag: 'Cấp độ', label: 'cấp độ mục tiêu: CEFR A1–C2, TOPIK 1–6 và JLPT N5–N1', short: 'CEFR A1–C2 · TOPIK 1–6 · JLPT N5–N1', gold: true },
 ];

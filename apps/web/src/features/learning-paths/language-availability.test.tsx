@@ -22,9 +22,8 @@ const nameOf = (code: (typeof LANGUAGE_CODES)[number]) => new RegExp(LANGUAGES[c
 
 describe('language pickers only offer available languages', () => {
   it('knows which languages are hidden and which are offered', () => {
-    expect(offered).toEqual(expect.arrayContaining(['en', 'ko', 'ja']));
+    expect(offered).toEqual(expect.arrayContaining(['en', 'ko', 'ja', 'de']));
     expect([...AVAILABLE_LANGUAGE_CODES]).toEqual(offered);
-    if (LANGUAGES.de.available === false) expect(hidden).toEqual(['de']);
   });
 
   it('onboarding: the language step lists only offered languages and rejects a hidden one', () => {
@@ -59,11 +58,15 @@ describe('language pickers only offer available languages', () => {
   });
 
   it('personal vocabulary: a path in a hidden language does not preselect it', () => {
+    // Every language is released now, so hide one for this test only.
+    const was = LANGUAGES.de.available;
+    LANGUAGES.de.available = false;
     const hiddenPath = { ...TEST_PATH, language: 'de' as const };
     renderWithProviders(<ListFormDialog open mode="create" onClose={vi.fn()} onSubmit={vi.fn()} />, { paths: { paths: [hiddenPath], current: hiddenPath, currentId: hiddenPath.id } });
     const checked = within(screen.getByRole('dialog')).getAllByRole('radio').filter((r) => (r as HTMLInputElement).checked);
     expect(checked).toHaveLength(1);
     expect(checked[0]).not.toHaveAccessibleName(nameOf('de'));
+    LANGUAGES.de.available = was;
   });
 
   it('personal vocabulary: the current offered language is preselected', () => {

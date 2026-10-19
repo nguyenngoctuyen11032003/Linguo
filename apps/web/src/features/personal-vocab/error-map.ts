@@ -10,7 +10,7 @@ const PERSONAL_MESSAGES: Record<PersonalVocabErrorCode, string> = {
   list_not_found: 'Không tìm thấy danh sách này. Có thể nó đã bị xoá.',
   word_not_found: 'Không tìm thấy từ này. Có thể nó đã bị xoá.',
   invalid_name: `Tên danh sách cần từ 1 đến ${L.listName} ký tự.`,
-  invalid_language: 'Hãy chọn tiếng Anh hoặc tiếng Hàn cho danh sách.',
+  invalid_language: 'Hãy chọn một ngôn ngữ cho danh sách.',
   name_taken: 'Bạn đã có một danh sách trùng tên. Hãy đặt tên khác nhé.',
   list_limit: `Bạn đã có ${L.maxLists} danh sách, đó là mức tối đa. Hãy xoá bớt một danh sách trước khi tạo mới.`,
   list_full: `Danh sách này chỉ chứa tối đa ${L.maxWordsPerList} từ. Hãy tách phần còn lại sang một danh sách khác.`,

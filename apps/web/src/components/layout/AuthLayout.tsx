@@ -27,8 +27,9 @@ export function AuthLayout() {
                 <span className="rounded-full bg-primary px-2 py-0.5 text-[11px] text-on-primary">EN</span>
                 <span className="rounded-full bg-accent px-2 py-0.5 text-[11px] text-on-accent">KO</span>
                 <span className="rounded-full bg-[#C9255F] px-2 py-0.5 text-[11px] text-white">JA</span>
+                <span className="rounded-full bg-[#3F3F46] px-2 py-0.5 text-[11px] text-white">DE</span>
               </span>
-              Tiếng Anh · Hàn · Nhật
+              Tiếng Anh · Hàn · Nhật · Đức
             </p>
             <p aria-hidden="true" className="font-display text-[clamp(48px,4.8vw,80px)] font-extrabold uppercase leading-[0.92]">
               Học thông minh

@@ -25,14 +25,13 @@ import {
 import { createPathSchema } from './learning/schemas';
 import { PERSONAL_LANGUAGES } from './personal-vocab/contract';
 
-// German is the fourth language. It is registered everywhere but hidden from learners (available: false) until
-// content/de ships and the release step flips the flag.
+// German is the fourth language, released to learners (available: true) now that content/de ships.
 describe('German (de) plumbing', () => {
-  it('is a known language that learners cannot pick yet', () => {
+  it('is a known language that learners can pick', () => {
     expect(LANGUAGE_CODES).toEqual(['en', 'ko', 'ja', 'de']);
-    expect(LANGUAGES.de).toEqual({ code: 'de', short: 'DE', nameVi: 'Tiếng Đức', nativeName: 'Deutsch', available: false });
-    expect(isLanguageAvailable('de')).toBe(false);
-    expect(AVAILABLE_LANGUAGE_CODES).not.toContain('de');
+    expect(LANGUAGES.de).toEqual({ code: 'de', short: 'DE', nameVi: 'Tiếng Đức', nativeName: 'Deutsch', available: true });
+    expect(isLanguageAvailable('de')).toBe(true);
+    expect(AVAILABLE_LANGUAGE_CODES).toContain('de');
   });
 
   it('is accepted by every language enum of the contracts', () => {

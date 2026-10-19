@@ -28,7 +28,7 @@ export interface SpeakingMaterial {
   usingFallback: boolean;
 }
 
-const isSpeakingLanguage = (code: LanguageCode | undefined): code is SpeakingLanguage => code === 'en' || code === 'ko';
+const isSpeakingLanguage = (code: LanguageCode | undefined): code is SpeakingLanguage => code === 'en' || code === 'ko' || code === 'ja' || code === 'de';
 
 /** Studied lessons in path order, then the first lesson that is ready to start. */
 export function lessonChoices(lessons: PathLesson[]): PathLesson[] {

@@ -1,6 +1,6 @@
 # Linguo
 
-Nền tảng học tiếng Anh, tiếng Hàn và tiếng Nhật cá nhân hoá cho người Việt. Web app mobile-first (PWA) trên GitHub Pages, backend Supabase (Auth + Postgres + RLS + Edge Functions), CI/CD bằng GitHub Actions.
+Nền tảng học tiếng Anh, tiếng Hàn, tiếng Nhật và tiếng Đức cá nhân hoá cho người Việt. Web app mobile-first (PWA) trên GitHub Pages, backend Supabase (Auth + Postgres + RLS + Edge Functions), CI/CD bằng GitHub Actions.
 
 Site: https://nguyenngoctuyen11032003.github.io/Linguo/
 

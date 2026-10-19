@@ -117,7 +117,7 @@ export function SpeakingPage() {
         <EmptyState
           icon={Compass}
           title="Chưa có lộ trình để luyện nói"
-          description="Hãy tạo một lộ trình tiếng Anh hoặc tiếng Hàn, rồi quay lại luyện nói nhé."
+          description="Hãy tạo một lộ trình học, rồi quay lại luyện nói nhé."
           action={
             <Link to="/app/bat-dau" className={buttonClasses('primary', 'md')}>
               Tạo lộ trình
