@@ -31,7 +31,7 @@ select is((select id from public.assessments where key = 'de:assessment:diagnost
   '948332c6-641d-5f65-9ab5-1042ef993560'::uuid, 'published de diagnostic with its UUIDv5 id');
 select is((select config from public.assessments where key = 'de:assessment:diagnostic:v1'),
   (select config from public.assessments where key = 'ko:assessment:diagnostic:v1'), 'de diagnostic config equals ko');
-select is((select count(*)::integer from public.assessment_items where language_code = 'de'), 0, 'the de diagnostic bank ships empty');
+select ok((select count(*)::integer from public.assessment_items where language_code = 'de') > 0, 'the de diagnostic bank is published (seed content)');
 select is(public.diagnostic_assessment_for('de'), '948332c6-641d-5f65-9ab5-1042ef993560'::uuid, 'diagnostic_assessment_for finds de');
 
 -- ===== Content constraints (as the table owner, like the importer) =====
@@ -96,10 +96,9 @@ select lives_ok($$select content_private.import_exam_bundle(jsonb_build_object('
         'prompt', '{"instruction_vi": "Chọn từ phù hợp.", "stem": "Ich ___ aus Vietnam.", "stem_lang": "de", "audio_asset_id": null,
           "options": [{"id": "a", "text": "kommst", "lang": "de"}, {"id": "b", "text": "komme", "lang": "de"}]}'::jsonb,
         'answer', '"b"'::jsonb, 'explanation', '{"vi": "Giải thích."}'::jsonb, 'script', null,
-        'rubric', null, 'sample_answer', null, 'content_hash', md5('r1') || md5('r1#'))))
-)))$$, 'a goethe form imports for de');
--- Second form: pass_ratio null falls back to the 0.6 module pass mark; five one-point reading questions.
-select lives_ok($$select content_private.import_exam_bundle(jsonb_build_object('bundle_version', 1, 'forms', jsonb_build_array(
+        'rubric', null, 'sample_answer', null, 'content_hash', md5('r1') || md5('r1#')))),
+  -- Second form: pass_ratio null falls back to the 0.6 module pass mark; five one-point reading questions.
+  -- Both forms go in one bundle: an import archives every form absent from its bundle.
   jsonb_build_object(
     'id', md5('de:exam:dx2')::uuid, 'key', 'de:exam:dx2', 'language_code', 'de', 'family', 'goethe',
     'title_vi', 'Goethe B1 — Đề thử', 'description_vi', 'Bài luyện mô phỏng', 'level_from', 'b1', 'level_to', 'b1',
@@ -115,7 +114,8 @@ select lives_ok($$select content_private.import_exam_bundle(jsonb_build_object('
         'answer', '"a"'::jsonb, 'explanation', '{"vi": "Giải thích."}'::jsonb, 'script', null,
         'rubric', null, 'sample_answer', null, 'content_hash', md5('q' || n) || md5('q' || n || '#')) order by n)
       from generate_series(1, 5) as n))
-)))$$, 'a goethe form with pass_ratio null imports for de');
+)))$$, 'a goethe form and a goethe form with pass_ratio null import for de');
+select is((select count(*)::integer from public.exam_forms where key in ('de:exam:dx', 'de:exam:dx2') and status = 'published'), 2, 'both test forms are published');
 select is((select family from public.exam_forms where key = 'de:exam:dx'), 'goethe', 'goethe form stored');
 select throws_ok($$insert into public.exam_forms (id, key, language_code, family, title_vi, description_vi, level_from, level_to,
     source_id, time_limits, scoring, status, is_demo, content_hash)
