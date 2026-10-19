@@ -1315,6 +1315,12 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     'en:exam:cefr-b1-mock-1': { listening: 10, reading: 12, time: { listening: 20, reading: 30, writing: 25 } },
     'en:exam:cefr-b2-mock-1': { listening: 10, reading: 12, time: { listening: 20, reading: 35, writing: 40 } },
     'en:exam:cefr-c1-mock-1': { listening: 10, reading: 12, time: { listening: 30, reading: 45, writing: 45 } },
+    'de:exam:goethe-a1-mock-1': { listening: 10, reading: 10, time: { listening: 15, reading: 20, writing: 20 } },
+    'de:exam:goethe-a2-mock-1': { listening: 12, reading: 12, time: { listening: 25, reading: 30, writing: 30 } },
+    'de:exam:goethe-b1-mock-1': { listening: 12, reading: 14, time: { listening: 25, reading: 45, writing: 50 } },
+    'de:exam:goethe-b1-mock-2': { listening: 12, reading: 12, time: { listening: 30, reading: 45, writing: 60 } },
+    'de:exam:goethe-b2-mock-1': { listening: 14, reading: 15, time: { listening: 30, reading: 50, writing: 60 } },
+    'de:exam:goethe-b2-mock-2': { listening: 14, reading: 15, time: { listening: 30, reading: 50, writing: 60 } },
     'ja:exam:jlpt-n5-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 30 } },
     'ja:exam:jlpt-n4-mock-1': { listening: 10, reading: 21, time: { listening: 15, reading: 35 } },
     'ja:exam:jlpt-n3-mock-1': { listening: 8, reading: 14, time: { listening: 15, reading: 30 } },
@@ -1328,8 +1334,8 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     assert.equal(count(form, 'reading', 'mcq'), want.reading, `${key} reading`);
     assert.deepEqual(form.time_limits, want.time, `${key} time`);
     assert.equal(form.is_demo, false);
-    // TOPIK and JLPT bands are checked against the official sources; CEFR has no official pass mark.
-    assert.equal(form.scoring.verified, !key.startsWith('en:'), `${key} scoring.verified`);
+    // TOPIK and JLPT bands are checked against the official sources; CEFR and Goethe have no verified score scale.
+    assert.equal(form.scoring.verified, !key.startsWith('en:') && !key.startsWith('de:'), `${key} scoring.verified`);
     assert.ok(new Set(form.questions.map((q) => q.question_type)).size >= 4, `${key}: at least 4 question types`);
     // Listening keeps its script (TTS fallback, shown after submit); audio, when generated, is a content-audio id (docs/AUDIO.md).
     for (const q of form.questions.filter((x) => x.section === 'listening')) assert.ok(q.script && (q.prompt.audio_asset_id === null || isAudioAssetId(q.prompt.audio_asset_id)), q.key);
@@ -1364,6 +1370,12 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     assert.equal(count(cefr, 'writing', 'essay'), 1, `${key} essay`);
     assert.deepEqual([cefr.scoring.bands, cefr.scoring.pass_ratio], [[], 0.6], `${key} scoring`);
     assert.ok(cefr.questions.find((q) => q.kind === 'essay').rubric.length >= 3, `${key} rubric`);
+  }
+  // Goethe (de): judged per module like CEFR (no score conversion, 60% practice threshold), at least one essay each.
+  for (const key of [...byKey.keys()].filter((k) => k.startsWith('de:exam:'))) {
+    const goethe = byKey.get(key);
+    assert.deepEqual([goethe.scoring.bands, goethe.scoring.pass_ratio], [[], 0.6], `${key} scoring`);
+    assert.ok(count(goethe, 'writing', 'essay') >= 1, `${key} essay`);
   }
   // JLPT (jlpt.jp): total 0–180, language knowledge · reading folded into `reading` (120), one pass band per form.
   for (const [key, level, pass] of [['ja:exam:jlpt-n5-mock-1', 'n5', 80], ['ja:exam:jlpt-n4-mock-1', 'n4', 90], ['ja:exam:jlpt-n3-mock-1', 'n3', 95], ['ja:exam:jlpt-n2-mock-1', 'n2', 90], ['ja:exam:jlpt-n1-mock-1', 'n1', 100]]) {

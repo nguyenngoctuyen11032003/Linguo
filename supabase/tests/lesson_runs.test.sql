@@ -471,9 +471,9 @@ select throws_ok($$select count(*) from public.attempts$$, '42501', null, 'anon 
 select is(
   (select count(*)::int
    from unnest(array[
-     'public.get_lesson(uuid, uuid)', 'public.start_lesson(uuid, uuid)', 'public.save_lesson_cursor(uuid, smallint)',
+     'public.get_lesson(uuid, uuid)', 'public.start_lesson(uuid, uuid, uuid, timestamptz)', 'public.save_lesson_cursor(uuid, smallint)',
      'public.submit_exercise(uuid, uuid, integer, uuid, jsonb, smallint, integer, smallint, timestamptz)',
-     'public.complete_lesson(uuid)', 'public.path_lessons(uuid)',
+     'public.complete_lesson(uuid, timestamptz)', 'public.path_lessons(uuid)',
      'public.lesson_run_json(uuid, text, smallint, uuid[], timestamptz, jsonb)', 'public.lesson_run_sync(uuid, uuid, integer)'
    ]) as f(sig)
    where has_function_privilege('anon', f.sig, 'execute')),
