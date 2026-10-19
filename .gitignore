@@ -12,3 +12,6 @@ supabase/.branches/
 supabase/.temp/
 !.env.e2e
 .claude/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
