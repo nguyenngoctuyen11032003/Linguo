@@ -1,0 +1,226 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a1w1-adverbien-fragewoerter
+order_index: 6
+level: a1
+title:
+  vi: Trạng từ chỉ nơi chốn, mức độ và từ để hỏi (Adverbien und Fragewörter)
+objectives:
+  - vi: "Dùng các trạng từ nơi chốn: dort, oben, unten, drinnen, draußen, überall."
+  - vi: Dùng các trạng từ chỉ mức độ như nur, fast, ziemlich, wirklich, genug.
+  - vi: Đặt câu hỏi với wann, warum, wohin.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a1w1-adjektive-leicht-schwer
+items:
+  - item: de:item:a1w1-dort
+  - item: de:item:a1w1-oben
+  - item: de:item:a1w1-unten
+  - item: de:item:a1w1-drinnen
+  - item: de:item:a1w1-draussen
+  - item: de:item:a1w1-ueberall
+  - item: de:item:a1w1-wieder
+  - item: de:item:a1w1-nur
+  - item: de:item:a1w1-fast
+  - item: de:item:a1w1-ziemlich
+  - item: de:item:a1w1-wirklich
+  - item: de:item:a1w1-genug
+  - item: de:item:a1w1-wann
+  - item: de:item:a1w1-warum
+  - item: de:item:a1w1-wohin
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói vị trí và mức độ chính xác hơn và đặt được thêm câu hỏi với wann, warum, wohin.
+  - type: explain
+    text:
+      vi: "Trạng từ nơi chốn trả lời câu hỏi Wo?: dort (ở đó), oben (ở trên), unten (ở dưới), drinnen (bên trong), draußen (bên ngoài), überall (khắp nơi). Chúng thường đứng ngay sau động từ: Die Kinder spielen draußen. Dort ist der Bahnhof."
+  - type: explain
+    text:
+      vi: "Wohin? hỏi hướng đi, còn Wo? hỏi vị trí: Wo bist du? – Ich bin zu Hause. Wohin gehst du? – Ich gehe nach Hause. Hãy chú ý hai câu hỏi khác nhau, vì tiếng Việt chỉ dùng \"đâu\" cho cả hai."
+  - type: explain
+    text:
+      vi: "Wann? hỏi thời điểm, Warum? hỏi lý do: Wann kommt der Bus? – Um acht Uhr. Warum bist du müde? – Ich habe schlecht geschlafen. Trong câu hỏi W-, động từ vẫn ở vị trí thứ hai."
+  - type: deep_explain
+    text:
+      vi: "Fast (gần như), nur (chỉ), ziemlich (khá), wirklich (thật sự), genug (đủ) là những từ nhỏ nhưng rất hay gặp. Genug đứng sau tính từ (Das ist gut genug) hoặc trước danh từ không đếm được (Ich habe genug Zeit). Nur có thể đứng trước từ nó bổ nghĩa: Ich habe nur eine Schwester."
+  - type: example
+    target: Dort ist der Bahnhof.
+    target_lang: de
+    translation:
+      vi: Ở đó là nhà ga.
+    note:
+      vi: dort = ở đó.
+  - type: example
+    target: Meine Wohnung ist oben.
+    target_lang: de
+    translation:
+      vi: Căn hộ của tôi ở trên.
+    note:
+      vi: oben = ở trên.
+  - type: example
+    target: Der Hund wartet unten.
+    target_lang: de
+    translation:
+      vi: Con chó đợi ở dưới.
+    note:
+      vi: unten = ở dưới.
+  - type: example
+    target: Bei Regen spielen wir drinnen.
+    target_lang: de
+    translation:
+      vi: Khi trời mưa chúng tôi chơi trong nhà.
+    note:
+      vi: drinnen = bên trong, trong nhà.
+  - type: common_mistake
+    wrong: Wo gehst du?
+    right: Wohin gehst du?
+    target_lang: de
+    note:
+      vi: Với động từ chỉ chuyển động như gehen, dùng wohin để hỏi hướng đi.
+  - type: common_mistake
+    wrong: Warum du bist müde?
+    right: Warum bist du müde?
+    target_lang: de
+    note:
+      vi: Trong câu hỏi W-, động từ chia đứng ngay sau từ để hỏi (vị trí thứ hai), trước chủ ngữ.
+  - type: summary
+    points:
+      - vi: Wann? hỏi thời điểm; Warum? hỏi lý do; động từ ở vị trí thứ hai.
+exercises:
+  - key: de:exercise:a1w1l6-listen-wirklich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-wirklich
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das ist wirklich gut!
+      options:
+        - { id: jfd, text: Tôi chỉ có một người chị., lang: vi }
+        - { id: no0, text: Ở đó là nhà ga., lang: vi }
+        - { id: mbn, text: Cái này thật sự tốt!, lang: vi }
+        - { id: gh8, text: Bọn trẻ chơi ngoài trời., lang: vi }
+    answer:
+      correct_option_id: mbn
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cái này thật sự tốt!". Từ khoá là wirklich (thật sự); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cái này thật sự tốt!
+  - key: de:exercise:a1w1l6-mcq-vi-de-fast
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1w1-fast
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "gần như"?
+      stem_lang: vi
+      options:
+        - { id: odr, text: fast, lang: de }
+        - { id: dv4, text: wieder, lang: de }
+        - { id: qz9, text: nur, lang: de }
+        - { id: su1, text: überall, lang: de }
+    answer:
+      correct_option_id: odr
+    explanation:
+      vi: "fast nghĩa là \"gần như\". Ví dụ: Es ist fast acht Uhr. (Gần tám giờ rồi.)"
+    display_answer: fast
+  - key: de:exercise:a1w1l6-mcq-de-vi-wann
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-wann
+    prompt:
+      stem: "\"wann\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: aw8, text: khi nào, lang: vi }
+        - { id: ig6, text: "lại, một lần nữa", lang: vi }
+        - { id: sf7, text: tại sao, lang: vi }
+        - { id: gvv, text: ở trên, lang: vi }
+    answer:
+      correct_option_id: aw8
+    explanation:
+      vi: "wann nghĩa là \"khi nào\". Ví dụ: Wann kommt der Bus? (Khi nào xe buýt đến?)"
+    display_answer: khi nào
+  - key: de:exercise:a1w1l6-tr-word-genug
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-genug
+    prompt:
+      source_text: đủ
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - genug
+    explanation:
+      vi: "\"đủ\" trong tiếng Đức là genug. Ví dụ: Ich habe genug Zeit."
+    display_answer: genug
+  - key: de:exercise:a1w1l6-mcq-luecke-dort
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-dort
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Ở đó là nhà ga.\": ___ ist der Bahnhof."
+      stem_lang: vi
+      options:
+        - { id: h4u, text: nur, lang: de }
+        - { id: prw, text: Dort, lang: de }
+        - { id: iof, text: unten, lang: de }
+        - { id: np6, text: oben, lang: de }
+    answer:
+      correct_option_id: prw
+    explanation:
+      vi: "Câu có nghĩa \"Ở đó là nhà ga.\" nên cần Dort (dort: ở đó). unten = ở dưới; nur = chỉ; oben = ở trên không đúng nghĩa của câu."
+    display_answer: Dort
+  - key: de:exercise:a1w1l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Bạn đi đâu và khi nào bạn quay lại?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wohin gehst du und wann kommst du zurück?
+        - Wohin gehst du, und wann kommst du zurück?
+        - Wohin gehst du und wann kommst du wieder?
+    explanation:
+      vi: "Gợi ý đáp án: Wohin gehst du und wann kommst du zurück? Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Wohin gehst du und wann kommst du zurück?
+    item: de:item:a1w1-wann
+  - key: de:exercise:a1w1l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Warum ist es drinnen so warm und draußen so kalt?
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tại sao bên trong ấm thế mà bên ngoài lại lạnh thế?
+        - Sao bên trong ấm thế mà bên ngoài lại lạnh thế?
+        - Tại sao trong nhà thì ấm mà ngoài trời lại lạnh?
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Warum ist es drinnen so warm und draußen so kalt?\" nghĩa là: Tại sao bên trong ấm thế mà bên ngoài lại lạnh thế? Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Tại sao bên trong ấm thế mà bên ngoài lại lạnh thế?
+    item: de:item:a1w1-drinnen

@@ -1,0 +1,289 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a1w1-berufe-arbeit
+order_index: 3
+level: a1
+title:
+  vi: Nghề nghiệp và nơi làm việc (Berufe und Arbeit)
+objectives:
+  - vi: Gọi tên thêm nhiều nghề nghiệp, gồm dạng nam và nữ.
+  - vi: "Nói về công việc hằng ngày: làm nghề gì, làm ở đâu, giờ nghỉ trưa."
+  - vi: Nhận biết các đuôi -er, -ist, -ekt của danh từ chỉ nghề.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a1w1-haushalt-kueche
+items:
+  - item: de:item:a1w1-baecker
+  - item: de:item:a1w1-polizist
+  - item: de:item:a1w1-taxifahrer
+  - item: de:item:a1w1-busfahrer
+  - item: de:item:a1w1-programmierer
+  - item: de:item:a1w1-sekretaer
+  - item: de:item:a1w1-zahnarzt
+  - item: de:item:a1w1-tierarzt
+  - item: de:item:a1w1-architekt
+  - item: de:item:a1w1-elektriker
+  - item: de:item:a1w1-gaertner
+  - item: de:item:a1w1-fotograf
+  - item: de:item:a1w1-bauer
+  - item: de:item:a1w1-arbeiter
+  - item: de:item:a1w1-musiker
+  - item: de:item:a1w1-saenger
+  - item: de:item:a1w1-fussballspieler
+  - item: de:item:a1w1-arbeit
+  - item: de:item:a1w1-mittagspause
+  - item: de:item:a1w1-berufstaetig
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được thêm nhiều nghề nghiệp bằng tiếng Đức, kể cả dạng nam và nữ, và nói về công việc hằng ngày.
+  - type: explain
+    text:
+      vi: "Nghề nghiệp có dạng nam và nữ. Dạng nữ thường thêm đuôi -in: der Bäcker → die Bäckerin, der Zahnarzt → die Zahnärztin (Zahnarzt đổi thành Zahnärztin), der Fotograf → die Fotografin. Số nhiều dạng nữ là -nen: die Bäckerinnen."
+  - type: explain
+    text:
+      vi: "Khi nói nghề của mình, bạn không dùng mạo từ như đã học: Ich bin Bäcker. Sie ist Zahnärztin. Chỉ khi có tính từ hoặc thêm thông tin thì mới dùng ein/eine: Er ist ein guter Fotograf."
+  - type: explain
+    text:
+      vi: Nhiều nghề giống đực có đuôi -er (der Bäcker, der Arbeiter, der Musiker, der Sänger), -ist (der Polizist) hoặc -ekt (der Architekt). Đây là mẹo nhớ, không phải quy tắc tuyệt đối; hãy học cả mạo từ.
+  - type: deep_explain
+    text:
+      vi: "Nhiều nghề trong tiếng Đức có dạng nam làm tên chung. Trong văn bản, ngày nay thường viết cả hai giống (die Polizistinnen und Polizisten) hoặc dùng cách viết gộp như Polizist:innen; bạn sẽ học thêm ở các cấp cao hơn. Die Arbeit chỉ có số ít và dùng cho công việc nói chung: Ich habe viel Arbeit."
+  - type: example
+    target: Der Bäcker arbeitet schon um vier Uhr.
+    target_lang: de
+    translation:
+      vi: Người thợ làm bánh mì đã làm việc từ bốn giờ.
+    note:
+      vi: der Bäcker = thợ làm bánh mì.
+  - type: example
+    target: Der Polizist hilft dem Kind.
+    target_lang: de
+    translation:
+      vi: Anh cảnh sát giúp đứa bé.
+    note:
+      vi: der Polizist = cảnh sát.
+  - type: example
+    target: Der Taxifahrer kennt die Stadt gut.
+    target_lang: de
+    translation:
+      vi: Tài xế taxi biết rõ thành phố.
+    note:
+      vi: der Taxifahrer = tài xế taxi.
+  - type: example
+    target: Der Busfahrer ruft die Haltestelle aus.
+    target_lang: de
+    translation:
+      vi: Tài xế xe buýt xướng tên trạm dừng.
+    note:
+      vi: der Busfahrer = tài xế xe buýt.
+  - type: common_mistake
+    wrong: Ich bin ein Bäcker.
+    right: Ich bin Bäcker.
+    target_lang: de
+    note:
+      vi: Khi nói nghề của mình và không có thêm tính từ, tiếng Đức bỏ ein/eine.
+  - type: common_mistake
+    wrong: Sie ist Zahnarzt.
+    right: Sie ist Zahnärztin.
+    target_lang: de
+    note:
+      vi: Nghề của phụ nữ dùng dạng nữ (-in); nhớ đổi a thành ä trong Zahnärztin.
+  - type: summary
+    points:
+      - vi: die Arbeit chỉ có số ít; ich habe viel Arbeit; ich bin bei der Arbeit.
+exercises:
+  - key: de:exercise:a1w1l3-listen-tierarzt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-tierarzt
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Tierarzt untersucht meinen Hund.
+      options:
+        - { id: pjj, text: Người nông dân có nhiều bò., lang: vi }
+        - { id: vi8, text: Bác sĩ thú y khám cho con chó của tôi., lang: vi }
+        - { id: rnz, text: Chú tôi là nhạc công., lang: vi }
+        - { id: bwy, text: Ca sĩ hát một bài hát hay., lang: vi }
+    answer:
+      correct_option_id: vi8
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Bác sĩ thú y khám cho con chó của tôi.". Từ khoá là der Tierarzt (bác sĩ thú y); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Bác sĩ thú y khám cho con chó của tôi.
+  - key: de:exercise:a1w1l3-mcq-vi-de-taxifahrer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1w1-taxifahrer
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "tài xế taxi"?
+      stem_lang: vi
+      options:
+        - { id: a0h, text: der Elektriker, lang: de }
+        - { id: umw, text: der Taxifahrer, lang: de }
+        - { id: fj3, text: der Sekretär, lang: de }
+        - { id: bus, text: der Fotograf, lang: de }
+    answer:
+      correct_option_id: umw
+    explanation:
+      vi: "der Taxifahrer nghĩa là \"tài xế taxi\". Ví dụ: Der Taxifahrer kennt die Stadt gut. (Tài xế taxi biết rõ thành phố.)"
+    display_answer: der Taxifahrer
+  - key: de:exercise:a1w1l3-mcq-de-vi-saenger
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-saenger
+    prompt:
+      stem: "\"der Sänger\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: kpe, text: nha sĩ, lang: vi }
+        - { id: ur5, text: công nhân, lang: vi }
+        - { id: iv4, text: ca sĩ, lang: vi }
+        - { id: wda, text: "nhạc sĩ, nhạc công", lang: vi }
+    answer:
+      correct_option_id: iv4
+    explanation:
+      vi: "der Sänger nghĩa là \"ca sĩ\". Ví dụ: Der Sänger singt ein schönes Lied. (Ca sĩ hát một bài hát hay.)"
+    display_answer: ca sĩ
+  - key: de:exercise:a1w1l3-mcq-artikel-arbeiter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-arbeiter
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Arbeiter\" (công nhân): ___ Arbeiter"
+      stem_lang: vi
+      options:
+        - { id: agf, text: der, lang: de }
+        - { id: fhz, text: ein, lang: de }
+        - { id: z69, text: die, lang: de }
+        - { id: iqb, text: das, lang: de }
+    answer:
+      correct_option_id: agf
+    explanation:
+      vi: "Arbeiter là danh từ giống đực (der): der Arbeiter; số nhiều: die Arbeiter. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a1w1l3-tr-word-elektriker
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-elektriker
+    prompt:
+      source_text: thợ điện (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Elektriker
+        - die Elektrikerin
+    explanation:
+      vi: "\"thợ điện\" trong tiếng Đức là der Elektriker (số nhiều: die Elektriker). Ví dụ: Der Elektriker repariert die Lampe."
+    display_answer: der Elektriker
+  - key: de:exercise:a1w1l3-tr-word-berufstaetig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-berufstaetig
+    prompt:
+      source_text: đang đi làm (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - berufstätig
+    explanation:
+      vi: "\"đang đi làm\" trong tiếng Đức là berufstätig. Ví dụ: Meine Eltern sind beide berufstätig."
+    display_answer: berufstätig
+  - key: de:exercise:a1w1l3-fill-plural-bauer
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-bauer
+    prompt:
+      template: "Singular: der Bauer · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Bauern
+    known_wrong:
+      - answer: Bauer
+        feedback_vi: Bauer là dạng số ít; số nhiều là Bauern.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Bauer là die Bauern (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Bauer · Plural: die Bauern"
+  - key: de:exercise:a1w1l3-mcq-luecke-baecker
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-baecker
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Người thợ làm bánh mì đã làm việc từ bốn giờ.\": Der ___ arbeitet schon um vier Uhr."
+      stem_lang: vi
+      options:
+        - { id: ohb, text: Taxifahrer, lang: de }
+        - { id: d59, text: Gärtner, lang: de }
+        - { id: cdf, text: Bäcker, lang: de }
+        - { id: cvb, text: Mittagspause, lang: de }
+    answer:
+      correct_option_id: cdf
+    explanation:
+      vi: "Câu có nghĩa \"Người thợ làm bánh mì đã làm việc từ bốn giờ.\" nên cần Bäcker (der Bäcker: thợ làm bánh mì). Gärtner = người làm vườn; Taxifahrer = tài xế taxi; Mittagspause = giờ nghỉ trưa không đúng nghĩa của câu."
+    display_answer: Bäcker
+  - key: de:exercise:a1w1l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Mẹ tôi là nha sĩ và bố tôi là thợ làm bánh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meine Mutter ist Zahnärztin und mein Vater ist Bäcker.
+        - Meine Mutter ist Zahnärztin, und mein Vater ist Bäcker.
+        - Meine Mutter ist Zahnärztin, mein Vater ist Bäcker.
+        - Mein Vater ist Bäcker und meine Mutter ist Zahnärztin.
+    explanation:
+      vi: "Gợi ý đáp án: Meine Mutter ist Zahnärztin und mein Vater ist Bäcker. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Meine Mutter ist Zahnärztin und mein Vater ist Bäcker.
+    item: de:item:a1w1-baecker
+  - key: de:exercise:a1w1l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Mein Bruder arbeitet als Elektriker und hat viel Arbeit.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh trai tôi làm thợ điện và có nhiều việc.
+        - Anh tôi làm nghề thợ điện và có nhiều việc.
+        - Anh trai tôi làm thợ điện và có rất nhiều việc.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Mein Bruder arbeitet als Elektriker und hat viel Arbeit.\" nghĩa là: Anh trai tôi làm thợ điện và có nhiều việc. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Anh trai tôi làm thợ điện và có nhiều việc.
+    item: de:item:a1w1-elektriker

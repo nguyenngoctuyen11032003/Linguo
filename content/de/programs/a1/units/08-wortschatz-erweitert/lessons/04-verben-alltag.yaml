@@ -1,0 +1,233 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a1w1-verben-alltag
+order_index: 4
+level: a1
+title:
+  vi: Động từ thông dụng hằng ngày (Verben im Alltag)
+objectives:
+  - vi: Dùng thêm các động từ thông dụng như sagen, fragen, öffnen, laufen, kennen.
+  - vi: Chia động từ đổi nguyên âm và động từ tách mới ở thì hiện tại.
+  - vi: Phân biệt kennen và wissen ở mức cơ bản.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a1w1-berufe-arbeit
+items:
+  - item: de:item:a1w1-sagen
+  - item: de:item:a1w1-fragen
+  - item: de:item:a1w1-rufen
+  - item: de:item:a1w1-aendern
+  - item: de:item:a1w1-schliessen
+  - item: de:item:a1w1-aufmachen
+  - item: de:item:a1w1-zumachen
+  - item: de:item:a1w1-ausmachen
+  - item: de:item:a1w1-holen
+  - item: de:item:a1w1-laufen
+  - item: de:item:a1w1-rennen
+  - item: de:item:a1w1-springen
+  - item: de:item:a1w1-kennen
+  - item: de:item:a1w1-beginnen
+  - item: de:item:a1w1-enden
+  - item: de:item:a1w1-lieben
+  - item: de:item:a1w1-waschen
+  - item: de:item:a1w1-backen
+  - item: de:item:a1w1-bauen
+  - item: de:item:a1w1-mitkommen
+  - item: de:item:a1w1-mitnehmen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng được thêm hơn hai mươi động từ thông dụng, kể cả động từ đổi nguyên âm và động từ tách.
+  - type: explain
+    text:
+      vi: "Động từ có -t sau gốc ở ngôi er/sie/es và -st ở ngôi du: ich sage, du sagst, er sagt. Một số động từ đổi nguyên âm ở du và er/sie/es: laufen → du läufst, er läuft; waschen → du wäschst, er wäscht; rufen không đổi: du rufst. Hãy học cả dạng đổi kèm theo động từ."
+  - type: explain
+    text:
+      vi: "Động từ tách có phần đầu đứng ở cuối câu: Kommst du heute Abend mit? Ich nehme einen Regenschirm mit. Mach bitte die Tür zu! Mach das Licht aus! Phần mit/zu/aus/auf đứng sau cùng, còn động từ đã chia vẫn ở vị trí thứ hai."
+  - type: explain
+    text:
+      vi: "Tiếng Việt chỉ có \"biết\", còn tiếng Đức có hai động từ. Kennen dùng với người hoặc nơi chốn quen thuộc: Ich kenne Anna. Wissen dùng với thông tin: Ich weiß, wo Anna wohnt. Bạn sẽ học thêm cách dùng wissen với mệnh đề ở A2."
+  - type: deep_explain
+    text:
+      vi: Beginnen và anfangen gần như đồng nghĩa; anfangen là động từ tách (Ich fange an), beginnen thì không (Ich beginne). Hai động từ này có thể thay nhau trong hầu hết trường hợp hằng ngày, nhưng anfangen nghe tự nhiên hơn trong văn nói. Aufmachen và öffnen cùng nghĩa là mở; aufmachen thân mật hơn, öffnen trang trọng hơn.
+  - type: example
+    target: Was sagst du?
+    target_lang: de
+    translation:
+      vi: Bạn nói gì?
+    note:
+      vi: sagen = nói.
+  - type: example
+    target: Ich frage den Lehrer.
+    target_lang: de
+    translation:
+      vi: Tôi hỏi thầy giáo.
+    note:
+      vi: fragen = hỏi.
+  - type: example
+    target: Er ruft seinen Bruder.
+    target_lang: de
+    translation:
+      vi: Anh ấy gọi anh trai mình.
+    note:
+      vi: rufen = gọi (lớn tiếng); gọi điện/gọi ai đến.
+  - type: example
+    target: Ich ändere meinen Termin.
+    target_lang: de
+    translation:
+      vi: Tôi đổi lịch hẹn của mình.
+    note:
+      vi: ändern = thay đổi.
+  - type: common_mistake
+    wrong: Ich mache die Tür auf nicht.
+    right: Ich mache die Tür nicht auf.
+    target_lang: de
+    note:
+      vi: Phần tách auf đứng cuối câu; nicht đứng trước nó.
+  - type: common_mistake
+    wrong: Ich weiß diese Frau nicht.
+    right: Ich kenne diese Frau nicht.
+    target_lang: de
+    note:
+      vi: Với người, dùng kennen; wissen dùng với thông tin hoặc câu phụ.
+  - type: summary
+    points:
+      - vi: kennen cho người và nơi chốn; wissen cho thông tin.
+exercises:
+  - key: de:exercise:a1w1l4-listen-mitkommen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-mitkommen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Kommst du heute Abend mit?
+      options:
+        - { id: n3p, text: Tối nay bạn đi cùng không?, lang: vi }
+        - { id: jc5, text: Tôi đi lấy bánh mì ở tiệm bánh., lang: vi }
+        - { id: vmn, text: Khóa học bắt đầu lúc chín giờ., lang: vi }
+        - { id: xmc, text: Tôi mang theo một cái ô., lang: vi }
+    answer:
+      correct_option_id: n3p
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Tối nay bạn đi cùng không?". Từ khoá là mitkommen (đi cùng); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Tối nay bạn đi cùng không?
+  - key: de:exercise:a1w1l4-mcq-vi-de-schliessen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1w1-schliessen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "đóng"?
+      stem_lang: vi
+      options:
+        - { id: a0j, text: schließen, lang: de }
+        - { id: lll, text: fragen, lang: de }
+        - { id: jfs, text: kennen, lang: de }
+        - { id: w0m, text: waschen, lang: de }
+    answer:
+      correct_option_id: a0j
+    explanation:
+      vi: "schließen nghĩa là \"đóng\". Ví dụ: Um 20 Uhr schließt der Supermarkt. (Lúc 20 giờ siêu thị đóng cửa.)"
+    display_answer: schließen
+  - key: de:exercise:a1w1l4-mcq-de-vi-aendern
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-aendern
+    prompt:
+      stem: "\"ändern\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: q98, text: "giặt, rửa", lang: vi }
+        - { id: ya2, text: thay đổi, lang: vi }
+        - { id: j0s, text: đi cùng, lang: vi }
+        - { id: vx6, text: mở (thân mật), lang: vi }
+    answer:
+      correct_option_id: ya2
+    explanation:
+      vi: "ändern nghĩa là \"thay đổi\". Ví dụ: Ich ändere meinen Termin. (Tôi đổi lịch hẹn của mình.)"
+    display_answer: thay đổi
+  - key: de:exercise:a1w1l4-tr-word-backen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-backen
+    prompt:
+      source_text: nướng bánh (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - backen
+    explanation:
+      vi: "\"nướng bánh\" trong tiếng Đức là backen. Ví dụ: Meine Oma backt gern Kuchen."
+    display_answer: backen
+  - key: de:exercise:a1w1l4-mcq-luecke-sagen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-sagen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Bạn nói gì?\": Was ___ du?"
+      stem_lang: vi
+      options:
+        - { id: cq5, text: sagst, lang: de }
+        - { id: atk, text: ändere, lang: de }
+        - { id: ccg, text: auf, lang: de }
+        - { id: r4n, text: mit, lang: de }
+    answer:
+      correct_option_id: cq5
+    explanation:
+      vi: "Câu có nghĩa \"Bạn nói gì?\" nên cần sagst (sagen: nói). ändere = thay đổi; mit = mang theo; auf = mở (thân mật) không đúng nghĩa của câu."
+    display_answer: sagst
+  - key: de:exercise:a1w1l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Bạn có thể mở cửa sổ giúp tôi được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Kannst du bitte das Fenster aufmachen?
+        - Kannst du das Fenster bitte aufmachen?
+        - Machst du bitte das Fenster auf?
+        - Machst du das Fenster bitte auf?
+    explanation:
+      vi: "Gợi ý đáp án: Kannst du bitte das Fenster aufmachen? Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Kannst du bitte das Fenster aufmachen?
+    item: de:item:a1w1-aufmachen
+  - key: de:exercise:a1w1l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Der Film beginnt um acht Uhr und endet um zehn Uhr.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bộ phim bắt đầu lúc tám giờ và kết thúc lúc mười giờ.
+        - Phim bắt đầu lúc 8 giờ và kết thúc lúc 10 giờ.
+        - Bộ phim bắt đầu lúc tám giờ và kết thúc lúc mười giờ tối.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Film beginnt um acht Uhr und endet um zehn Uhr.\" nghĩa là: Bộ phim bắt đầu lúc tám giờ và kết thúc lúc mười giờ. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Bộ phim bắt đầu lúc tám giờ và kết thúc lúc mười giờ.
+    item: de:item:a1w1-beginnen

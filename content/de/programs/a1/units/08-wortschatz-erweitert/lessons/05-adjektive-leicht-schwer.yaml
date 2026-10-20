@@ -1,0 +1,230 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a1w1-adjektive-leicht-schwer
+order_index: 5
+level: a1
+title:
+  vi: Tính từ thông dụng (Adjektive)
+objectives:
+  - vi: Nói được thêm các tính từ chỉ vẻ ngoài, cảm giác và tính chất.
+  - vi: Dùng tính từ sau sein và với sehr, ziemlich, zu.
+  - vi: Nhớ các cặp tính từ trái nghĩa.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a1w1-verben-alltag
+items:
+  - item: de:item:a1w1-huebsch
+  - item: de:item:a1w1-dick
+  - item: de:item:a1w1-duenn
+  - item: de:item:a1w1-stark
+  - item: de:item:a1w1-schnell
+  - item: de:item:a1w1-klug
+  - item: de:item:a1w1-leicht
+  - item: de:item:a1w1-schwer
+  - item: de:item:a1w1-schwierig
+  - item: de:item:a1w1-offen
+  - item: de:item:a1w1-voll
+  - item: de:item:a1w1-hungrig
+  - item: de:item:a1w1-durstig
+  - item: de:item:a1w1-froehlich
+  - item: de:item:a1w1-freundlich
+  - item: de:item:a1w1-nass
+  - item: de:item:a1w1-trocken
+  - item: de:item:a1w1-reich
+  - item: de:item:a1w1-arm
+  - item: de:item:a1w1-gleich
+  - item: de:item:a1w1-anders
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả người, vật và cảm giác bằng nhiều tính từ hơn, kể cả các cặp trái nghĩa.
+  - type: explain
+    text:
+      vi: "Sau sein, tính từ đứng một mình và không đổi đuôi: Der Koffer ist schwer. Die Suppe ist heiß. Die Kinder sind hungrig. Đây là cách dùng đơn giản nhất và cũng là cách dùng chính ở A1."
+  - type: explain
+    text:
+      vi: "Nhớ tính từ theo cặp trái nghĩa sẽ nhanh hơn: leicht – schwer, schnell – langsam, offen – geschlossen, voll – leer, reich – arm, nass – trocken, dick – dünn, gleich – anders. Cặp đã học ở các bài trước vẫn có thể ôn lại cùng cặp mới."
+  - type: explain
+    text:
+      vi: "Bạn có thể tăng hoặc giảm mức độ bằng sehr, ziemlich hoặc zu: Das Auto ist sehr schnell. Der Tee ist ziemlich heiß. Der Koffer ist zu schwer. Zu có nghĩa là \"quá\", mang ý chê."
+  - type: deep_explain
+    text:
+      vi: "Leicht có hai nghĩa: nhẹ (Der Koffer ist leicht) và dễ (Die Aufgabe ist leicht). Schwer cũng vậy: nặng và khó. Ngữ cảnh cho bạn biết nghĩa nào. Gleich vừa là tính từ (Die Taschen sind gleich) vừa là trạng từ (\"ngay\") trong Ich komme gleich; bạn gặp hai cách dùng này suốt trong tiếng Đức hằng ngày."
+  - type: example
+    target: Deine Schwester ist sehr hübsch.
+    target_lang: de
+    translation:
+      vi: Chị gái bạn rất xinh.
+    note:
+      vi: hübsch = xinh, đẹp (người, vật nhỏ).
+  - type: example
+    target: Der Hund ist ziemlich dick.
+    target_lang: de
+    translation:
+      vi: Con chó khá béo.
+    note:
+      vi: dick = béo; dày.
+  - type: example
+    target: Das Buch ist sehr dünn.
+    target_lang: de
+    translation:
+      vi: Quyển sách rất mỏng.
+    note:
+      vi: dünn = gầy; mỏng.
+  - type: example
+    target: Mein Vater ist sehr stark.
+    target_lang: de
+    translation:
+      vi: Bố tôi rất khỏe.
+    note:
+      vi: stark = khỏe; mạnh.
+  - type: common_mistake
+    wrong: Der Koffer ist sehr schwere.
+    right: Der Koffer ist sehr schwer.
+    target_lang: de
+    note:
+      vi: Sau sein, tính từ không thêm đuôi.
+  - type: common_mistake
+    wrong: Ich bin hungrig sehr.
+    right: Ich bin sehr hungrig.
+    target_lang: de
+    note:
+      vi: Sehr đứng trước tính từ mà nó bổ nghĩa, không đứng sau.
+  - type: summary
+    points:
+      - vi: "sehr, ziemlich, zu: rất, khá, quá. Leicht và schwer có hai nghĩa: nhẹ/dễ, nặng/khó."
+exercises:
+  - key: de:exercise:a1w1l5-listen-huebsch
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-huebsch
+    prompt:
+      audio_asset_id: null
+      fallback_text: Deine Schwester ist sehr hübsch.
+      options:
+        - { id: v4x, text: Giày của tôi bị ướt., lang: vi }
+        - { id: f6e, text: Cái đó hoàn toàn khác., lang: vi }
+        - { id: l5r, text: Quần áo đã khô rồi., lang: vi }
+        - { id: su6, text: Chị gái bạn rất xinh., lang: vi }
+    answer:
+      correct_option_id: su6
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Chị gái bạn rất xinh.". Từ khoá là hübsch (xinh, đẹp (người, vật nhỏ)); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Chị gái bạn rất xinh.
+  - key: de:exercise:a1w1l5-mcq-vi-de-offen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1w1-offen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "mở, đang mở"?
+      stem_lang: vi
+      options:
+        - { id: tkv, text: offen, lang: de }
+        - { id: rgo, text: dick, lang: de }
+        - { id: y8l, text: klug, lang: de }
+        - { id: igo, text: nass, lang: de }
+    answer:
+      correct_option_id: tkv
+    explanation:
+      vi: "offen nghĩa là \"mở, đang mở\". Ví dụ: Das Fenster ist offen. (Cửa sổ đang mở.)"
+    display_answer: offen
+  - key: de:exercise:a1w1l5-mcq-de-vi-durstig
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-durstig
+    prompt:
+      stem: "\"durstig\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: tp9, text: khát, lang: vi }
+        - { id: of7, text: vui vẻ, lang: vi }
+        - { id: drn, text: ướt, lang: vi }
+        - { id: jr1, text: đói, lang: vi }
+    answer:
+      correct_option_id: tp9
+    explanation:
+      vi: "durstig nghĩa là \"khát\". Ví dụ: Bist du durstig? (Bạn có khát không?)"
+    display_answer: khát
+  - key: de:exercise:a1w1l5-tr-word-klug
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-klug
+    prompt:
+      source_text: thông minh, khôn (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - klug
+    explanation:
+      vi: "\"thông minh, khôn\" trong tiếng Đức là klug. Ví dụ: Meine Tochter ist sehr klug."
+    display_answer: klug
+  - key: de:exercise:a1w1l5-mcq-luecke-dick
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-dick
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Con chó khá béo.\": Der Hund ist ziemlich ___."
+      stem_lang: vi
+      options:
+        - { id: mar, text: arm, lang: de }
+        - { id: sdc, text: reich, lang: de }
+        - { id: koa, text: dick, lang: de }
+        - { id: yl8, text: anders, lang: de }
+    answer:
+      correct_option_id: koa
+    explanation:
+      vi: "Câu có nghĩa \"Con chó khá béo.\" nên cần dick (dick: béo; dày). arm = nghèo; anders = khác; reich = giàu không đúng nghĩa của câu."
+    display_answer: dick
+  - key: de:exercise:a1w1l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Hôm nay trời rất lạnh, nhưng áo khoác của tôi rất ấm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Heute ist es sehr kalt, aber meine Jacke ist sehr warm.
+        - Heute ist es sehr kalt, aber meine Jacke ist ganz warm.
+        - Es ist heute sehr kalt, aber meine Jacke ist sehr warm.
+    explanation:
+      vi: "Gợi ý đáp án: Heute ist es sehr kalt, aber meine Jacke ist sehr warm. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Heute ist es sehr kalt, aber meine Jacke ist sehr warm.
+  - key: de:exercise:a1w1l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Das Wasser ist zu kalt und die Suppe ist zu heiß.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nước quá lạnh và súp quá nóng.
+        - Nước lạnh quá còn súp thì nóng quá.
+        - Nước quá lạnh, còn súp thì quá nóng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das Wasser ist zu kalt und die Suppe ist zu heiß.\" nghĩa là: Nước quá lạnh và súp quá nóng. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Nước quá lạnh và súp quá nóng.

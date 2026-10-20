@@ -1,0 +1,306 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a1w1-tiere-natur
+order_index: 1
+level: a1
+title:
+  vi: Động vật và thiên nhiên (Tiere und Natur)
+objectives:
+  - vi: Gọi tên các con vật quen thuộc và nói số nhiều của chúng.
+  - vi: Nhớ mạo từ der/die/das cùng với từng danh từ về thiên nhiên.
+  - vi: Nói có con vật hoặc vật gì ở đâu bằng các câu đơn giản.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a1u07-wiederholung
+items:
+  - item: de:item:a1w1-tier
+  - item: de:item:a1w1-pferd
+  - item: de:item:a1w1-kuh
+  - item: de:item:a1w1-schwein
+  - item: de:item:a1w1-schaf
+  - item: de:item:a1w1-ente
+  - item: de:item:a1w1-huhn
+  - item: de:item:a1w1-maus
+  - item: de:item:a1w1-affe
+  - item: de:item:a1w1-hase
+  - item: de:item:a1w1-baer
+  - item: de:item:a1w1-loewe
+  - item: de:item:a1w1-elefant
+  - item: de:item:a1w1-spinne
+  - item: de:item:a1w1-fliege
+  - item: de:item:a1w1-gras
+  - item: de:item:a1w1-blatt
+  - item: de:item:a1w1-wolke
+  - item: de:item:a1w1-mond
+  - item: de:item:a1w1-stern
+  - item: de:item:a1w1-feld
+  - item: de:item:a1w1-stein
+  - item: de:item:a1w1-rose
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được tên những con vật quen thuộc, nói về cảnh thiên nhiên đơn giản và biết số nhiều của từng danh từ.
+  - type: explain
+    text:
+      vi: "Mỗi danh từ tiếng Đức có một giống riêng, và tên con vật cũng vậy: der Hase, der Bär, der Löwe nhưng die Kuh, die Ente, die Maus và das Pferd, das Schwein, das Schaf, das Huhn. Bạn không đoán được giống từ nghĩa nên hãy học mỗi từ cùng mạo từ của nó."
+  - type: explain
+    text:
+      vi: "Số nhiều không theo một quy tắc cố định. Hãy nhìn ký hiệu sau dấu phẩy trong học liệu: das Pferd → die Pferde, die Kuh → die Kühe, das Huhn → die Hühner, die Maus → die Mäuse (nguyên âm đổi thành ä, ü, äu), die Ente → die Enten."
+  - type: explain
+    text:
+      vi: "Để nói trong một nơi có con vật nào, bạn dùng es gibt như đã học: Im Zoo gibt es viele Tiere. Muốn nói về con vật của mình, dùng ich habe + con vật: Ich habe ein Pferd. Chủ ngữ số ít hay số nhiều quyết định động từ: Das Pferd läuft. Die Pferde laufen."
+  - type: deep_explain
+    text:
+      vi: "Tên con vật thường xuất hiện trong thành ngữ: ein Elefant im Porzellanladen (người vụng về), ein Bär von einem Mann (người to khỏe). Bạn chưa cần dùng chúng bây giờ, nhưng khi nghe thì đã biết hình ảnh. Với danh từ như der Hase, der Bär, der Löwe, der Elefant, số nhiều thêm -n hoặc -en; bạn sẽ gặp thêm đuôi này ở các cách sau."
+  - type: example
+    target: Im Zoo gibt es viele Tiere.
+    target_lang: de
+    translation:
+      vi: Trong sở thú có nhiều con vật.
+    note:
+      vi: Dạng số nhiều Tiere đứng sau es gibt viele.
+  - type: example
+    target: Das Pferd läuft schnell über das Feld.
+    target_lang: de
+    translation:
+      vi: Con ngựa chạy nhanh qua cánh đồng.
+    note:
+      vi: das Pferd = con ngựa.
+  - type: example
+    target: Die Kuh steht auf dem Feld.
+    target_lang: de
+    translation:
+      vi: Con bò đứng trên cánh đồng.
+    note:
+      vi: die Kuh = con bò cái.
+  - type: example
+    target: Auf dem Bauernhof gibt es ein Schwein.
+    target_lang: de
+    translation:
+      vi: Ở nông trại có một con lợn.
+    note:
+      vi: das Schwein = con lợn.
+  - type: common_mistake
+    wrong: Die Pferd ist groß.
+    right: Das Pferd ist groß.
+    target_lang: de
+    note:
+      vi: Pferd là giống trung nên dùng das. Học từ cùng mạo từ để không phải đoán.
+  - type: common_mistake
+    wrong: Ich sehe zwei Maus.
+    right: Ich sehe zwei Mäuse.
+    target_lang: de
+    note:
+      vi: "Sau số từ lớn hơn một, danh từ phải ở số nhiều: die Maus → die Mäuse (có thêm dấu ¨ trên nguyên âm)."
+  - type: summary
+    points:
+      - vi: "Es gibt + Akkusativ để nói có gì ở đâu: Im Zoo gibt es viele Tiere."
+exercises:
+  - key: de:exercise:a1w1l1-listen-wolke
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-wolke
+    prompt:
+      audio_asset_id: null
+      fallback_text: Am Himmel ist keine Wolke.
+      options:
+        - { id: k6o, text: Con khỉ trèo lên cây., lang: vi }
+        - { id: q6m, text: Trên trời không có đám mây nào., lang: vi }
+        - { id: y90, text: Có một con nhện kìa!, lang: vi }
+        - { id: fpb, text: Con vịt bơi trong hồ., lang: vi }
+    answer:
+      correct_option_id: q6m
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Trên trời không có đám mây nào.". Từ khoá là die Wolke (đám mây); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Trên trời không có đám mây nào.
+  - key: de:exercise:a1w1l1-mcq-vi-de-stein
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1w1-stein
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "hòn đá"?
+      stem_lang: vi
+      options:
+        - { id: o3d, text: der Mond, lang: de }
+        - { id: o53, text: der Stein, lang: de }
+        - { id: bx6, text: die Rose, lang: de }
+        - { id: wqn, text: die Spinne, lang: de }
+    answer:
+      correct_option_id: o53
+    explanation:
+      vi: "der Stein nghĩa là \"hòn đá\". Ví dụ: Ein Stein liegt auf dem Weg. (Một hòn đá nằm trên đường.)"
+    display_answer: der Stein
+  - key: de:exercise:a1w1l1-mcq-de-vi-kuh
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-kuh
+    prompt:
+      stem: "\"die Kuh\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: v29, text: con bò cái, lang: vi }
+        - { id: ahx, text: ngôi sao, lang: vi }
+        - { id: v0o, text: con ruồi, lang: vi }
+        - { id: cjd, text: hoa hồng, lang: vi }
+    answer:
+      correct_option_id: v29
+    explanation:
+      vi: "die Kuh nghĩa là \"con bò cái\". Ví dụ: Die Kuh steht auf dem Feld. (Con bò đứng trên cánh đồng.)"
+    display_answer: con bò cái
+  - key: de:exercise:a1w1l1-mcq-artikel-stern
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-stern
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Stern\" (ngôi sao): ___ Stern"
+      stem_lang: vi
+      options:
+        - { id: r32, text: die, lang: de }
+        - { id: eaf, text: das, lang: de }
+        - { id: eta, text: der, lang: de }
+        - { id: ljq, text: ein, lang: de }
+    answer:
+      correct_option_id: eta
+    explanation:
+      vi: "Stern là danh từ giống đực (der): der Stern; số nhiều: die Sterne. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a1w1l1-tr-word-schaf
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-schaf
+    prompt:
+      source_text: con cừu (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Schaf
+    known_wrong:
+      - answer: der Schaf
+        feedback_vi: Schaf là giống trung, nên là das Schaf.
+        error_tag: article
+      - answer: die Schaf
+        feedback_vi: Schaf là giống trung, nên là das Schaf.
+        error_tag: article
+    explanation:
+      vi: "\"con cừu\" trong tiếng Đức là das Schaf (số nhiều: die Schafe). Ví dụ: Das Schaf frisst Gras."
+    display_answer: das Schaf
+  - key: de:exercise:a1w1l1-tr-word-mond
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-mond
+    prompt:
+      source_text: mặt trăng (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Mond
+    known_wrong:
+      - answer: die Mond
+        feedback_vi: Mond là giống đực, nên là der Mond.
+        error_tag: article
+      - answer: das Mond
+        feedback_vi: Mond là giống đực, nên là der Mond.
+        error_tag: article
+    explanation:
+      vi: "\"mặt trăng\" trong tiếng Đức là der Mond (số nhiều: die Monde). Ví dụ: Heute Nacht ist der Mond sehr hell."
+    display_answer: der Mond
+  - key: de:exercise:a1w1l1-fill-plural-huhn
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-huhn
+    prompt:
+      template: "Singular: das Huhn · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Hühner
+    known_wrong:
+      - answer: Huhn
+        feedback_vi: Huhn là dạng số ít; số nhiều là Hühner.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của das Huhn là die Hühner (ký hiệu trong từ điển: ¨-er, nguyên âm đổi thành ä/ö/ü/äu). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: das Huhn · Plural: die Hühner"
+  - key: de:exercise:a1w1l1-mcq-luecke-tier
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-tier
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Trong sở thú có nhiều con vật.\": Im Zoo gibt es viele ___."
+      stem_lang: vi
+      options:
+        - { id: tsn, text: Stein, lang: de }
+        - { id: pw4, text: Ente, lang: de }
+        - { id: mcz, text: Bär, lang: de }
+        - { id: iv0, text: Tiere, lang: de }
+    answer:
+      correct_option_id: iv0
+    explanation:
+      vi: "Câu có nghĩa \"Trong sở thú có nhiều con vật.\" nên cần Tiere (das Tier: con vật, động vật). Bär = con gấu; Ente = con vịt; Stein = hòn đá không đúng nghĩa của câu."
+    display_answer: Tiere
+  - key: de:exercise:a1w1l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Con bò và con ngựa đứng trên cánh đồng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Kuh und das Pferd stehen auf dem Feld.
+        - Das Pferd und die Kuh stehen auf dem Feld.
+        - Auf dem Feld stehen die Kuh und das Pferd.
+        - Auf dem Feld stehen das Pferd und die Kuh.
+    explanation:
+      vi: "Gợi ý đáp án: Die Kuh und das Pferd stehen auf dem Feld. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Kuh und das Pferd stehen auf dem Feld.
+    item: de:item:a1w1-pferd
+  - key: de:exercise:a1w1l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Die Maus ist klein, aber der Elefant ist groß.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Con chuột nhỏ nhưng con voi to.
+        - Con chuột thì nhỏ, nhưng con voi thì to.
+        - Con chuột nhỏ, còn con voi thì to.
+        - Con chuột nhỏ, nhưng con voi lớn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Maus ist klein, aber der Elefant ist groß.\" nghĩa là: Con chuột nhỏ nhưng con voi to. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Con chuột nhỏ nhưng con voi to.
+    item: de:item:a1w1-maus

@@ -1,0 +1,302 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a1w1-haushalt-kueche
+order_index: 2
+level: a1
+title:
+  vi: Đồ dùng trong nhà và nhà bếp (Haushalt und Küche)
+objectives:
+  - vi: Gọi tên dụng cụ ăn uống, đồ nhà bếp và đồ gia dụng thường gặp.
+  - vi: Hỏi và nói đồ vật ở đâu bằng mạo từ đúng giống.
+  - vi: Nói số nhiều của các danh từ chỉ đồ vật trong nhà.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a1w1-tiere-natur
+items:
+  - item: de:item:a1w1-messer
+  - item: de:item:a1w1-gabel
+  - item: de:item:a1w1-besteck
+  - item: de:item:a1w1-topf
+  - item: de:item:a1w1-pfanne
+  - item: de:item:a1w1-schuessel
+  - item: de:item:a1w1-becher
+  - item: de:item:a1w1-herd
+  - item: de:item:a1w1-ofen
+  - item: de:item:a1w1-waschmaschine
+  - item: de:item:a1w1-spuelmaschine
+  - item: de:item:a1w1-staubsauger
+  - item: de:item:a1w1-besen
+  - item: de:item:a1w1-eimer
+  - item: de:item:a1w1-muelleimer
+  - item: de:item:a1w1-waschbecken
+  - item: de:item:a1w1-decke
+  - item: de:item:a1w1-matratze
+  - item: de:item:a1w1-wecker
+  - item: de:item:a1w1-brille
+  - item: de:item:a1w1-fernseher
+  - item: de:item:a1w1-korb
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi tên được đồ dùng trong bếp và trong nhà, hỏi đồ vật ở đâu và nói nó dùng để làm gì.
+  - type: explain
+    text:
+      vi: "Nhiều đồ gia dụng có đuôi -er, -e hoặc -ine cho biết giống: đuôi -er thường là giống đực (der Staubsauger, der Wecker, der Eimer), đuôi -e và -ine thường là giống cái (die Gabel, die Pfanne, die Waschmaschine). Đây chỉ là xu hướng, vẫn có ngoại lệ, nên học cả mạo từ."
+  - type: explain
+    text:
+      vi: "Muốn hỏi đồ vật ở đâu, bạn dùng Wo ist …? với mạo từ xác định: Wo ist der Wecker? Câu trả lời dùng in/auf/neben + Dativ như đã học: Der Wecker ist neben dem Bett. Khi nói tôi cần, dùng Akkusativ: Ich brauche einen Eimer."
+  - type: explain
+    text:
+      vi: "Một số từ có nhiều nghĩa: die Decke là cái chăn nhưng cũng là trần nhà; der Becher là cái cốc (không có quai) còn die Tasse là cái tách. Học từ trong câu để nhớ nghĩa đúng."
+  - type: deep_explain
+    text:
+      vi: "Das Besteck chỉ có số ít (Sg.) và chỉ chung dao, dĩa, thìa: Ich brauche Besteck. Khi đếm từng món, bạn nói ein Messer, zwei Gabeln, drei Löffel. Der Herd là bếp nấu, còn der Ofen là lò nướng; ở Đức nhiều bếp có cả hai trong cùng một thiết bị."
+  - type: example
+    target: Ich schneide das Brot mit dem Messer.
+    target_lang: de
+    translation:
+      vi: Tôi cắt bánh mì bằng dao.
+    note:
+      vi: das Messer = con dao.
+  - type: example
+    target: Zum Salat brauche ich eine Gabel.
+    target_lang: de
+    translation:
+      vi: Với món salad tôi cần một cái nĩa.
+    note:
+      vi: die Gabel = cái nĩa, cái dĩa.
+  - type: example
+    target: Das Besteck liegt in der Schublade.
+    target_lang: de
+    translation:
+      vi: Bộ dao dĩa nằm trong ngăn kéo.
+    note:
+      vi: das Besteck = bộ dao dĩa.
+  - type: example
+    target: Die Suppe ist im Topf.
+    target_lang: de
+    translation:
+      vi: Món súp ở trong nồi.
+    note:
+      vi: der Topf = cái nồi.
+  - type: common_mistake
+    wrong: Wo ist die Besen?
+    right: Wo ist der Besen?
+    target_lang: de
+    note:
+      vi: Besen là giống đực nên dùng der.
+  - type: common_mistake
+    wrong: Ich brauche ein Gabel.
+    right: Ich brauche eine Gabel.
+    target_lang: de
+    note:
+      vi: Gabel là giống cái; dùng eine, không dùng ein.
+  - type: summary
+    points:
+      - vi: Wo ist …? hỏi đồ vật ở đâu; Ich brauche + Akkusativ nói bạn cần gì.
+exercises:
+  - key: de:exercise:a1w1l2-listen-wecker
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-wecker
+    prompt:
+      audio_asset_id: null
+      fallback_text: Mein Wecker klingelt um sechs Uhr.
+      options:
+        - { id: off, text: Bát đĩa ở trong máy rửa bát., lang: vi }
+        - { id: xkj, text: Món súp ở trong nồi., lang: vi }
+        - { id: ojf, text: Chiếc tivi còn mới., lang: vi }
+        - { id: uae, text: Đồng hồ báo thức của tôi reo lúc sáu giờ., lang: vi }
+    answer:
+      correct_option_id: uae
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Đồng hồ báo thức của tôi reo lúc sáu giờ.". Từ khoá là der Wecker (đồng hồ báo thức); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Đồng hồ báo thức của tôi reo lúc sáu giờ.
+  - key: de:exercise:a1w1l2-mcq-vi-de-schuessel
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a1w1-schuessel
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cái tô, cái bát to"?
+      stem_lang: vi
+      options:
+        - { id: np9, text: der Becher, lang: de }
+        - { id: hy8, text: das Waschbecken, lang: de }
+        - { id: di2, text: die Pfanne, lang: de }
+        - { id: ntq, text: die Schüssel, lang: de }
+    answer:
+      correct_option_id: ntq
+    explanation:
+      vi: "die Schüssel nghĩa là \"cái tô, cái bát to\". Ví dụ: Der Salat ist in der Schüssel. (Món salad ở trong tô.)"
+    display_answer: die Schüssel
+  - key: de:exercise:a1w1l2-mcq-de-vi-muelleimer
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a1w1-muelleimer
+    prompt:
+      stem: "\"der Mülleimer\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: irl, text: "cái giỏ, cái rổ", lang: vi }
+        - { id: w77, text: cây chổi, lang: vi }
+        - { id: jsk, text: đồng hồ báo thức, lang: vi }
+        - { id: y0d, text: thùng rác trong nhà, lang: vi }
+    answer:
+      correct_option_id: y0d
+    explanation:
+      vi: "der Mülleimer nghĩa là \"thùng rác trong nhà\". Ví dụ: Das Papier ist im Mülleimer. (Tờ giấy ở trong thùng rác.)"
+    display_answer: thùng rác trong nhà
+  - key: de:exercise:a1w1l2-mcq-artikel-korb
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-korb
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Korb\" (cái giỏ, cái rổ): ___ Korb"
+      stem_lang: vi
+      options:
+        - { id: yxu, text: der, lang: de }
+        - { id: uuy, text: das, lang: de }
+        - { id: vdy, text: die, lang: de }
+        - { id: ynq, text: ein, lang: de }
+    answer:
+      correct_option_id: yxu
+    explanation:
+      vi: "Korb là danh từ giống đực (der): der Korb; số nhiều: die Körbe. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a1w1l2-tr-word-besteck
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-besteck
+    prompt:
+      source_text: bộ dao dĩa (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Besteck
+    known_wrong:
+      - answer: der Besteck
+        feedback_vi: Besteck là giống trung, nên là das Besteck.
+        error_tag: article
+      - answer: die Besteck
+        feedback_vi: Besteck là giống trung, nên là das Besteck.
+        error_tag: article
+    explanation:
+      vi: "\"bộ dao dĩa\" trong tiếng Đức là das Besteck (số nhiều: không dùng). Ví dụ: Das Besteck liegt in der Schublade."
+    display_answer: das Besteck
+  - key: de:exercise:a1w1l2-tr-word-staubsauger
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-staubsauger
+    prompt:
+      source_text: máy hút bụi (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Staubsauger
+    known_wrong:
+      - answer: die Staubsauger
+        feedback_vi: Staubsauger là giống đực, nên là der Staubsauger.
+        error_tag: article
+      - answer: das Staubsauger
+        feedback_vi: Staubsauger là giống đực, nên là der Staubsauger.
+        error_tag: article
+    explanation:
+      vi: "\"máy hút bụi\" trong tiếng Đức là der Staubsauger (số nhiều: die Staubsauger). Ví dụ: Der Staubsauger ist sehr laut."
+    display_answer: der Staubsauger
+  - key: de:exercise:a1w1l2-fill-plural-waschmaschine
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-waschmaschine
+    prompt:
+      template: "Singular: die Waschmaschine · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 16 }
+    answer:
+      blanks:
+        b1:
+          - Waschmaschinen
+    known_wrong:
+      - answer: Waschmaschine
+        feedback_vi: Waschmaschine là dạng số ít; số nhiều là Waschmaschinen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Waschmaschine là die Waschmaschinen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Waschmaschine · Plural: die Waschmaschinen"
+  - key: de:exercise:a1w1l2-mcq-luecke-messer
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a1w1-messer
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tôi cắt bánh mì bằng dao.\": Ich schneide das Brot mit dem ___."
+      stem_lang: vi
+      options:
+        - { id: mbq, text: Besteck, lang: de }
+        - { id: w0h, text: Mülleimer, lang: de }
+        - { id: f5g, text: Pfanne, lang: de }
+        - { id: fal, text: Messer, lang: de }
+    answer:
+      correct_option_id: fal
+    explanation:
+      vi: "Câu có nghĩa \"Tôi cắt bánh mì bằng dao.\" nên cần Messer (das Messer: con dao). Pfanne = cái chảo; Besteck = bộ dao dĩa; Mülleimer = thùng rác trong nhà không đúng nghĩa của câu."
+    display_answer: Messer
+  - key: de:exercise:a1w1l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Tôi cần một cái nồi và một cái chảo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich brauche einen Topf und eine Pfanne.
+        - Ich brauche eine Pfanne und einen Topf.
+    explanation:
+      vi: "Gợi ý đáp án: Ich brauche einen Topf und eine Pfanne. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich brauche einen Topf und eine Pfanne.
+    item: de:item:a1w1-topf
+  - key: de:exercise:a1w1l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Das Messer und die Gabel sind im Küchenschrank.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Con dao và cái nĩa ở trong tủ bếp.
+        - Dao và nĩa ở trong tủ bếp.
+        - Con dao và cái dĩa nằm trong tủ bếp.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das Messer und die Gabel sind im Küchenschrank.\" nghĩa là: Con dao và cái nĩa ở trong tủ bếp. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Con dao và cái nĩa ở trong tủ bếp.
+    item: de:item:a1w1-messer

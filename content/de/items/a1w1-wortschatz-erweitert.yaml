@@ -1,0 +1,2013 @@
+# Học liệu unit A1W1 "Mở rộng vốn từ A1: động vật, đồ dùng, nghề nghiệp, động từ và tính từ (Wortschatz erweitern)" (mở rộng vốn từ, chương trình A1).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:a1w1-tier
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Tier, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con vật, động vật
+      examples:
+        - target: Im Zoo gibt es viele Tiere.
+          translation:
+            vi: Trong sở thú có nhiều con vật.
+  - key: de:item:a1w1-pferd
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Pferd, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con ngựa
+      examples:
+        - target: Das Pferd läuft schnell über das Feld.
+          translation:
+            vi: Con ngựa chạy nhanh qua cánh đồng.
+  - key: de:item:a1w1-kuh
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kuh, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con bò cái
+      examples:
+        - target: Die Kuh steht auf dem Feld.
+          translation:
+            vi: Con bò đứng trên cánh đồng.
+  - key: de:item:a1w1-schwein
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Schwein, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con lợn
+      examples:
+        - target: Auf dem Bauernhof gibt es ein Schwein.
+          translation:
+            vi: Ở nông trại có một con lợn.
+        - target: Schweine essen sehr viel.
+          translation:
+            vi: Lợn ăn rất nhiều.
+  - key: de:item:a1w1-schaf
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Schaf, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con cừu
+      examples:
+        - target: Das Schaf frisst Gras.
+          translation:
+            vi: Con cừu ăn cỏ.
+  - key: de:item:a1w1-ente
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Ente, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con vịt
+      examples:
+        - target: Die Ente schwimmt im See.
+          translation:
+            vi: Con vịt bơi trong hồ.
+  - key: de:item:a1w1-huhn
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Huhn, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: con gà (mái)
+      examples:
+        - target: Mein Onkel hat zehn Hühner.
+          translation:
+            vi: Chú tôi có mười con gà.
+      confusion:
+        vi: Huhn là loài gà nói chung; thịt gà ở nhà hàng thường ghi Hähnchen.
+  - key: de:item:a1w1-maus
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Maus, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con chuột
+      examples:
+        - target: Die Maus ist sehr klein.
+          translation:
+            vi: Con chuột rất nhỏ.
+        - target: Meine Katze jagt Mäuse.
+          translation:
+            vi: Con mèo của tôi săn chuột.
+  - key: de:item:a1w1-affe
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Affe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con khỉ
+      examples:
+        - target: Der Affe klettert auf den Baum.
+          translation:
+            vi: Con khỉ trèo lên cây.
+  - key: de:item:a1w1-hase
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Hase, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con thỏ rừng
+      examples:
+        - target: Im Garten sitzt ein Hase.
+          translation:
+            vi: Trong vườn có một con thỏ rừng.
+      confusion:
+        vi: Hase là thỏ rừng; thỏ nuôi trong nhà là das Kaninchen.
+  - key: de:item:a1w1-baer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bär, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: con gấu
+      examples:
+        - target: Der Bär ist braun und sehr stark.
+          translation:
+            vi: Con gấu màu nâu và rất khỏe.
+  - key: de:item:a1w1-loewe
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Löwe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con sư tử
+      examples:
+        - target: Der Löwe schläft den ganzen Tag.
+          translation:
+            vi: Con sư tử ngủ cả ngày.
+  - key: de:item:a1w1-elefant
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Elefant, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: con voi
+      examples:
+        - target: Der Elefant ist sehr groß.
+          translation:
+            vi: Con voi rất to.
+  - key: de:item:a1w1-spinne
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Spinne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con nhện
+      examples:
+        - target: Da ist eine Spinne!
+          translation:
+            vi: Có một con nhện kìa!
+  - key: de:item:a1w1-fliege
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fliege, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con ruồi
+      examples:
+        - target: Eine Fliege sitzt auf dem Tisch.
+          translation:
+            vi: Một con ruồi đậu trên bàn.
+      confusion:
+        vi: Fliege còn có nghĩa là chiếc nơ bướm; nhìn ngữ cảnh để hiểu.
+  - key: de:item:a1w1-gras
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gras (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cỏ
+      examples:
+        - target: Das Gras ist grün und nass.
+          translation:
+            vi: Cỏ xanh và ướt.
+  - key: de:item:a1w1-blatt
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Blatt, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiếc lá; tờ giấy
+      examples:
+        - target: Im Herbst fallen die Blätter vom Baum.
+          translation:
+            vi: Vào mùa thu lá rụng khỏi cây.
+        - target: Ich brauche ein Blatt Papier.
+          translation:
+            vi: Tôi cần một tờ giấy.
+  - key: de:item:a1w1-wolke
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wolke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: đám mây
+      examples:
+        - target: Am Himmel ist keine Wolke.
+          translation:
+            vi: Trên trời không có đám mây nào.
+  - key: de:item:a1w1-mond
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Mond, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mặt trăng
+      examples:
+        - target: Heute Nacht ist der Mond sehr hell.
+          translation:
+            vi: Đêm nay trăng rất sáng.
+  - key: de:item:a1w1-stern
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Stern, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngôi sao
+      examples:
+        - target: Nachts sieht man viele Sterne.
+          translation:
+            vi: Ban đêm người ta thấy nhiều ngôi sao.
+  - key: de:item:a1w1-feld
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Feld, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: cánh đồng; thửa ruộng
+      examples:
+        - target: Die Kinder spielen auf dem Feld.
+          translation:
+            vi: Bọn trẻ chơi trên cánh đồng.
+  - key: de:item:a1w1-stein
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Stein, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hòn đá
+      examples:
+        - target: Ein Stein liegt auf dem Weg.
+          translation:
+            vi: Một hòn đá nằm trên đường.
+  - key: de:item:a1w1-rose
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoa hồng
+      examples:
+        - target: Er schenkt ihr eine Rose.
+          translation:
+            vi: Anh ấy tặng cô ấy một bông hồng.
+  - key: de:item:a1w1-messer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Messer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: con dao
+      examples:
+        - target: Ich schneide das Brot mit dem Messer.
+          translation:
+            vi: Tôi cắt bánh mì bằng dao.
+  - key: de:item:a1w1-gabel
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gabel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái nĩa, cái dĩa
+      examples:
+        - target: Zum Salat brauche ich eine Gabel.
+          translation:
+            vi: Với món salad tôi cần một cái nĩa.
+  - key: de:item:a1w1-besteck
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Besteck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ dao dĩa
+      examples:
+        - target: Das Besteck liegt in der Schublade.
+          translation:
+            vi: Bộ dao dĩa nằm trong ngăn kéo.
+      confusion:
+        vi: Besteck chỉ có số ít; nói từng món thì dùng Messer, Gabel, Löffel.
+  - key: de:item:a1w1-topf
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Topf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái nồi
+      examples:
+        - target: Die Suppe ist im Topf.
+          translation:
+            vi: Món súp ở trong nồi.
+  - key: de:item:a1w1-pfanne
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pfanne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái chảo
+      examples:
+        - target: Das Ei ist in der Pfanne.
+          translation:
+            vi: Quả trứng ở trong chảo.
+  - key: de:item:a1w1-schuessel
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schüssel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái tô, cái bát to
+      examples:
+        - target: Der Salat ist in der Schüssel.
+          translation:
+            vi: Món salad ở trong tô.
+  - key: de:item:a1w1-becher
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Becher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái cốc (không quai)
+      examples:
+        - target: Möchtest du einen Becher Kakao?
+          translation:
+            vi: Bạn có muốn một cốc ca cao không?
+      confusion:
+        vi: Becher thường là cốc nhựa hoặc cốc to không quai; cái tách có quai là die Tasse.
+  - key: de:item:a1w1-herd
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Herd, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bếp nấu
+      examples:
+        - target: Der Herd ist noch heiß.
+          translation:
+            vi: Cái bếp vẫn còn nóng.
+  - key: de:item:a1w1-ofen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ofen, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: lò nướng; lò sưởi
+      examples:
+        - target: Im Ofen ist ein Kuchen.
+          translation:
+            vi: Trong lò có một cái bánh.
+        - target: Im Winter sitzen wir gern am Ofen.
+          translation:
+            vi: Mùa đông chúng tôi thích ngồi bên lò sưởi.
+  - key: de:item:a1w1-waschmaschine
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Waschmaschine, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy giặt
+      examples:
+        - target: Die Waschmaschine steht im Bad.
+          translation:
+            vi: Máy giặt đặt trong phòng tắm.
+  - key: de:item:a1w1-spuelmaschine
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Spülmaschine, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy rửa bát
+      examples:
+        - target: Das Geschirr ist in der Spülmaschine.
+          translation:
+            vi: Bát đĩa ở trong máy rửa bát.
+      confusion:
+        vi: Cũng gọi là der Geschirrspüler; Spülmaschine rất phổ biến trong văn nói.
+  - key: de:item:a1w1-staubsauger
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Staubsauger, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy hút bụi
+      examples:
+        - target: Der Staubsauger ist sehr laut.
+          translation:
+            vi: Máy hút bụi rất ồn.
+  - key: de:item:a1w1-besen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Besen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây chổi
+      examples:
+        - target: Der Besen steht im Keller.
+          translation:
+            vi: Cây chổi đặt trong hầm.
+  - key: de:item:a1w1-eimer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Eimer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái xô
+      examples:
+        - target: Ich brauche einen Eimer Wasser.
+          translation:
+            vi: Tôi cần một xô nước.
+  - key: de:item:a1w1-muelleimer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Mülleimer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thùng rác trong nhà
+      examples:
+        - target: Das Papier ist im Mülleimer.
+          translation:
+            vi: Tờ giấy ở trong thùng rác.
+  - key: de:item:a1w1-waschbecken
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Waschbecken, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bồn rửa mặt
+      examples:
+        - target: Das Waschbecken ist sauber.
+          translation:
+            vi: Bồn rửa mặt sạch.
+  - key: de:item:a1w1-decke
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Decke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái chăn; trần nhà
+      examples:
+        - target: Im Winter brauche ich eine warme Decke.
+          translation:
+            vi: Mùa đông tôi cần một cái chăn ấm.
+      confusion:
+        vi: "Decke còn có nghĩa là trần nhà: Die Lampe hängt an der Decke."
+  - key: de:item:a1w1-matratze
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Matratze, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nệm
+      examples:
+        - target: Die Matratze ist sehr weich.
+          translation:
+            vi: Cái nệm rất mềm.
+        - target: Das Bett hat eine neue Matratze.
+          translation:
+            vi: Chiếc giường có nệm mới.
+  - key: de:item:a1w1-wecker
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wecker, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồng hồ báo thức
+      examples:
+        - target: Mein Wecker klingelt um sechs Uhr.
+          translation:
+            vi: Đồng hồ báo thức của tôi reo lúc sáu giờ.
+  - key: de:item:a1w1-brille
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Brille, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái kính (đeo mắt)
+      examples:
+        - target: Wo ist meine Brille?
+          translation:
+            vi: Kính của tôi đâu rồi?
+      confusion:
+        vi: Die Brille luôn dùng số ít để chỉ một chiếc kính; hai kính là zwei Brillen (hai cặp kính).
+  - key: de:item:a1w1-fernseher
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fernseher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái tivi
+      examples:
+        - target: Der Fernseher ist neu.
+          translation:
+            vi: Chiếc tivi còn mới.
+  - key: de:item:a1w1-korb
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Korb, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái giỏ, cái rổ
+      examples:
+        - target: Der Korb ist voll mit Obst.
+          translation:
+            vi: Cái giỏ đầy trái cây.
+  - key: de:item:a1w1-baecker
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bäcker, - / die Bäckerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: thợ làm bánh mì
+      examples:
+        - target: Der Bäcker arbeitet schon um vier Uhr.
+          translation:
+            vi: Người thợ làm bánh mì đã làm việc từ bốn giờ.
+  - key: de:item:a1w1-polizist
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Polizist, -en / die Polizistin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảnh sát
+      examples:
+        - target: Der Polizist hilft dem Kind.
+          translation:
+            vi: Anh cảnh sát giúp đứa bé.
+  - key: de:item:a1w1-taxifahrer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Taxifahrer, - / die Taxifahrerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài xế taxi
+      examples:
+        - target: Der Taxifahrer kennt die Stadt gut.
+          translation:
+            vi: Tài xế taxi biết rõ thành phố.
+  - key: de:item:a1w1-busfahrer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Busfahrer, - / die Busfahrerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: tài xế xe buýt
+      examples:
+        - target: Der Busfahrer ruft die Haltestelle aus.
+          translation:
+            vi: Tài xế xe buýt xướng tên trạm dừng.
+  - key: de:item:a1w1-programmierer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Programmierer, - / die Programmiererin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: lập trình viên
+      examples:
+        - target: Mein Bruder ist Programmierer.
+          translation:
+            vi: Anh trai tôi là lập trình viên.
+  - key: de:item:a1w1-sekretaer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sekretär, -e / die Sekretärin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư ký
+      examples:
+        - target: Der Sekretär schreibt viele E-Mails.
+          translation:
+            vi: Người thư ký viết nhiều e-mail.
+  - key: de:item:a1w1-zahnarzt
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zahnarzt, ¨-e / die Zahnärztin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nha sĩ
+      examples:
+        - target: Ich gehe morgen zum Zahnarzt.
+          translation:
+            vi: Ngày mai tôi đi khám nha sĩ.
+  - key: de:item:a1w1-tierarzt
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Tierarzt, ¨-e / die Tierärztin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ thú y
+      examples:
+        - target: Der Tierarzt untersucht meinen Hund.
+          translation:
+            vi: Bác sĩ thú y khám cho con chó của tôi.
+  - key: de:item:a1w1-architekt
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Architekt, -en / die Architektin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: kiến trúc sư
+      examples:
+        - target: Der Architekt zeichnet ein Haus.
+          translation:
+            vi: Kiến trúc sư vẽ một ngôi nhà.
+  - key: de:item:a1w1-elektriker
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Elektriker, - / die Elektrikerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: thợ điện
+      examples:
+        - target: Der Elektriker repariert die Lampe.
+          translation:
+            vi: Thợ điện sửa cái đèn.
+  - key: de:item:a1w1-gaertner
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Gärtner, - / die Gärtnerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người làm vườn
+      examples:
+        - target: Der Gärtner pflanzt Blumen.
+          translation:
+            vi: Người làm vườn trồng hoa.
+  - key: de:item:a1w1-fotograf
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fotograf, -en / die Fotografin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiếp ảnh gia
+      examples:
+        - target: Der Fotograf macht Fotos von der Hochzeit.
+          translation:
+            vi: Nhiếp ảnh gia chụp ảnh đám cưới.
+  - key: de:item:a1w1-bauer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bauer, -n / die Bäuerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nông dân
+      examples:
+        - target: Der Bauer hat viele Kühe.
+          translation:
+            vi: Người nông dân có nhiều bò.
+  - key: de:item:a1w1-arbeiter
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Arbeiter, - / die Arbeiterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: công nhân
+      examples:
+        - target: Die Arbeiter kommen um sechs Uhr in die Fabrik.
+          translation:
+            vi: Các công nhân đến nhà máy lúc sáu giờ.
+  - key: de:item:a1w1-musiker
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Musiker, - / die Musikerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhạc sĩ, nhạc công
+      examples:
+        - target: Mein Onkel ist Musiker.
+          translation:
+            vi: Chú tôi là nhạc công.
+  - key: de:item:a1w1-saenger
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sänger, - / die Sängerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: ca sĩ
+      examples:
+        - target: Der Sänger singt ein schönes Lied.
+          translation:
+            vi: Ca sĩ hát một bài hát hay.
+  - key: de:item:a1w1-fussballspieler
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fußballspieler, - / die Fußballspielerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: cầu thủ bóng đá
+      examples:
+        - target: Mein Sohn möchte Fußballspieler werden.
+          translation:
+            vi: Con trai tôi muốn trở thành cầu thủ bóng đá.
+  - key: de:item:a1w1-arbeit
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Arbeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: công việc; việc làm
+      examples:
+        - target: Ich habe heute viel Arbeit.
+          translation:
+            vi: Hôm nay tôi có nhiều việc.
+  - key: de:item:a1w1-mittagspause
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mittagspause, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ nghỉ trưa
+      examples:
+        - target: In der Mittagspause gehen wir in die Kantine.
+          translation:
+            vi: Trong giờ nghỉ trưa chúng tôi đi đến căng tin.
+  - key: de:item:a1w1-berufstaetig
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: berufstätig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đang đi làm
+      examples:
+        - target: Meine Eltern sind beide berufstätig.
+          translation:
+            vi: Cả bố mẹ tôi đều đi làm.
+  - key: de:item:a1w1-sagen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: sagen
+      pos: động từ
+    back:
+      meaning:
+        vi: nói
+      examples:
+        - target: Was sagst du?
+          translation:
+            vi: Bạn nói gì?
+  - key: de:item:a1w1-fragen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: fragen
+      pos: động từ
+    back:
+      meaning:
+        vi: hỏi
+      examples:
+        - target: Ich frage den Lehrer.
+          translation:
+            vi: Tôi hỏi thầy giáo.
+  - key: de:item:a1w1-rufen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: rufen
+      pos: động từ
+    back:
+      meaning:
+        vi: gọi (lớn tiếng); gọi điện/gọi ai đến
+      examples:
+        - target: Er ruft seinen Bruder.
+          translation:
+            vi: Anh ấy gọi anh trai mình.
+  - key: de:item:a1w1-aendern
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ändern
+      pos: động từ
+    back:
+      meaning:
+        vi: thay đổi
+      examples:
+        - target: Ich ändere meinen Termin.
+          translation:
+            vi: Tôi đổi lịch hẹn của mình.
+  - key: de:item:a1w1-schliessen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schließen
+      pos: động từ
+    back:
+      meaning:
+        vi: đóng
+      examples:
+        - target: Um 20 Uhr schließt der Supermarkt.
+          translation:
+            vi: Lúc 20 giờ siêu thị đóng cửa.
+  - key: de:item:a1w1-aufmachen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufmachen (macht auf)
+      pos: động từ
+    back:
+      meaning:
+        vi: mở (thân mật)
+      examples:
+        - target: Machst du bitte die Tür auf?
+          translation:
+            vi: Bạn mở cửa giúp được không?
+  - key: de:item:a1w1-zumachen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: zumachen (macht zu)
+      pos: động từ
+    back:
+      meaning:
+        vi: đóng (thân mật)
+      examples:
+        - target: Mach bitte die Tür zu!
+          translation:
+            vi: Làm ơn đóng cửa lại!
+  - key: de:item:a1w1-ausmachen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausmachen (macht aus)
+      pos: động từ
+    back:
+      meaning:
+        vi: tắt (đèn, tivi); hẹn
+      examples:
+        - target: Mach bitte das Licht aus!
+          translation:
+            vi: Làm ơn tắt đèn đi!
+  - key: de:item:a1w1-holen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: holen
+      pos: động từ
+    back:
+      meaning:
+        vi: đi lấy, đi mang về
+      examples:
+        - target: Ich hole Brot aus der Bäckerei.
+          translation:
+            vi: Tôi đi lấy bánh mì ở tiệm bánh.
+  - key: de:item:a1w1-laufen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: laufen (du läufst)
+      pos: động từ
+    back:
+      meaning:
+        vi: chạy; đi bộ
+      examples:
+        - target: Ich laufe jeden Morgen im Park.
+          translation:
+            vi: Mỗi sáng tôi chạy bộ trong công viên.
+      confusion:
+        vi: "Laufen còn có nghĩa là đi bộ ở nhiều vùng: Wir laufen zur Schule."
+  - key: de:item:a1w1-rennen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: rennen
+      pos: động từ
+    back:
+      meaning:
+        vi: chạy nhanh
+      examples:
+        - target: Die Kinder rennen über den Spielplatz.
+          translation:
+            vi: Bọn trẻ chạy nhanh qua sân chơi.
+  - key: de:item:a1w1-springen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: springen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhảy
+      examples:
+        - target: Der Hund springt ins Wasser.
+          translation:
+            vi: Con chó nhảy xuống nước.
+  - key: de:item:a1w1-kennen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: kennen
+      pos: động từ
+    back:
+      meaning:
+        vi: biết (người, nơi chốn), quen
+      examples:
+        - target: Ich kenne diese Frau nicht.
+          translation:
+            vi: Tôi không quen người phụ nữ này.
+      confusion:
+        vi: Kennen dùng cho người, nơi chốn, sách, phim; thông tin thì dùng wissen.
+  - key: de:item:a1w1-beginnen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: beginnen
+      pos: động từ
+    back:
+      meaning:
+        vi: bắt đầu
+      examples:
+        - target: Der Kurs beginnt um neun Uhr.
+          translation:
+            vi: Khóa học bắt đầu lúc chín giờ.
+  - key: de:item:a1w1-enden
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: enden
+      pos: động từ
+    back:
+      meaning:
+        vi: kết thúc
+      examples:
+        - target: Der Film endet um zehn Uhr.
+          translation:
+            vi: Bộ phim kết thúc lúc mười giờ.
+  - key: de:item:a1w1-lieben
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: lieben
+      pos: động từ
+    back:
+      meaning:
+        vi: yêu
+      examples:
+        - target: Ich liebe meine Familie.
+          translation:
+            vi: Tôi yêu gia đình mình.
+      confusion:
+        vi: Ich liebe dich nói rất nghiêm túc; với đồ ăn hay sở thích bạn nên dùng gern hoặc mögen.
+  - key: de:item:a1w1-waschen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: waschen (du wäschst)
+      pos: động từ
+    back:
+      meaning:
+        vi: giặt, rửa
+      examples:
+        - target: Ich wasche das Auto.
+          translation:
+            vi: Tôi rửa xe.
+  - key: de:item:a1w1-backen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: backen (er backt)
+      pos: động từ
+    back:
+      meaning:
+        vi: nướng bánh
+      examples:
+        - target: Meine Oma backt gern Kuchen.
+          translation:
+            vi: Bà tôi thích nướng bánh.
+  - key: de:item:a1w1-bauen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: bauen
+      pos: động từ
+    back:
+      meaning:
+        vi: xây
+      examples:
+        - target: Mein Onkel baut ein Haus.
+          translation:
+            vi: Chú tôi xây một ngôi nhà.
+  - key: de:item:a1w1-mitkommen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: mitkommen (kommt mit)
+      pos: động từ
+    back:
+      meaning:
+        vi: đi cùng
+      examples:
+        - target: Kommst du heute Abend mit?
+          translation:
+            vi: Tối nay bạn đi cùng không?
+  - key: de:item:a1w1-mitnehmen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: mitnehmen (nimmt mit)
+      pos: động từ
+    back:
+      meaning:
+        vi: mang theo
+      examples:
+        - target: Ich nehme einen Regenschirm mit.
+          translation:
+            vi: Tôi mang theo một cái ô.
+  - key: de:item:a1w1-huebsch
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: hübsch
+      pos: tính từ
+    back:
+      meaning:
+        vi: xinh, đẹp (người, vật nhỏ)
+      examples:
+        - target: Deine Schwester ist sehr hübsch.
+          translation:
+            vi: Chị gái bạn rất xinh.
+  - key: de:item:a1w1-dick
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: dick
+      pos: tính từ
+    back:
+      meaning:
+        vi: béo; dày
+      examples:
+        - target: Der Hund ist ziemlich dick.
+          translation:
+            vi: Con chó khá béo.
+      confusion:
+        vi: Dick nói về người nghe hơi thẳng thừng; lịch sự hơn bạn có thể nói kräftig hoặc nicht schlank.
+  - key: de:item:a1w1-duenn
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: dünn
+      pos: tính từ
+    back:
+      meaning:
+        vi: gầy; mỏng
+      examples:
+        - target: Das Buch ist sehr dünn.
+          translation:
+            vi: Quyển sách rất mỏng.
+  - key: de:item:a1w1-stark
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: stark
+      pos: tính từ
+    back:
+      meaning:
+        vi: khỏe; mạnh
+      examples:
+        - target: Mein Vater ist sehr stark.
+          translation:
+            vi: Bố tôi rất khỏe.
+  - key: de:item:a1w1-schnell
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schnell
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhanh
+      examples:
+        - target: Das Auto ist sehr schnell.
+          translation:
+            vi: Chiếc xe rất nhanh.
+  - key: de:item:a1w1-klug
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: klug
+      pos: tính từ
+    back:
+      meaning:
+        vi: thông minh, khôn
+      examples:
+        - target: Meine Tochter ist sehr klug.
+          translation:
+            vi: Con gái tôi rất thông minh.
+  - key: de:item:a1w1-leicht
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: leicht
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhẹ; dễ
+      examples:
+        - target: Der Koffer ist leicht.
+          translation:
+            vi: Cái va li nhẹ.
+        - target: Die Aufgabe ist leicht.
+          translation:
+            vi: Bài tập này dễ.
+  - key: de:item:a1w1-schwer
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schwer
+      pos: tính từ
+    back:
+      meaning:
+        vi: nặng; khó
+      examples:
+        - target: Die Tasche ist schwer.
+          translation:
+            vi: Cái túi nặng.
+        - target: Deutsch ist nicht immer schwer.
+          translation:
+            vi: Tiếng Đức không phải lúc nào cũng khó.
+  - key: de:item:a1w1-schwierig
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schwierig
+      pos: tính từ
+    back:
+      meaning:
+        vi: khó (vấn đề, câu hỏi)
+      examples:
+        - target: Die Frage ist schwierig.
+          translation:
+            vi: Câu hỏi khó.
+  - key: de:item:a1w1-offen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: offen
+      pos: tính từ
+    back:
+      meaning:
+        vi: mở, đang mở
+      examples:
+        - target: Das Fenster ist offen.
+          translation:
+            vi: Cửa sổ đang mở.
+  - key: de:item:a1w1-voll
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: voll
+      pos: tính từ
+    back:
+      meaning:
+        vi: đầy; đông
+      examples:
+        - target: Der Bus ist heute voll.
+          translation:
+            vi: Hôm nay xe buýt đầy người.
+  - key: de:item:a1w1-hungrig
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: hungrig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đói
+      examples:
+        - target: Wir sind hungrig.
+          translation:
+            vi: Chúng tôi đói.
+  - key: de:item:a1w1-durstig
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: durstig
+      pos: tính từ
+    back:
+      meaning:
+        vi: khát
+      examples:
+        - target: Bist du durstig?
+          translation:
+            vi: Bạn có khát không?
+  - key: de:item:a1w1-froehlich
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: fröhlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: vui vẻ
+      examples:
+        - target: Die Kinder sind fröhlich.
+          translation:
+            vi: Bọn trẻ vui vẻ.
+  - key: de:item:a1w1-freundlich
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: freundlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thân thiện, lịch sự
+      examples:
+        - target: Die Verkäuferin ist sehr freundlich.
+          translation:
+            vi: Cô bán hàng rất thân thiện.
+  - key: de:item:a1w1-nass
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: nass
+      pos: tính từ
+    back:
+      meaning:
+        vi: ướt
+      examples:
+        - target: Meine Schuhe sind nass.
+          translation:
+            vi: Giày của tôi bị ướt.
+  - key: de:item:a1w1-trocken
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: trocken
+      pos: tính từ
+    back:
+      meaning:
+        vi: khô
+      examples:
+        - target: Die Wäsche ist schon trocken.
+          translation:
+            vi: Quần áo đã khô rồi.
+  - key: de:item:a1w1-reich
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: reich
+      pos: tính từ
+    back:
+      meaning:
+        vi: giàu
+      examples:
+        - target: Dieses Land ist sehr reich.
+          translation:
+            vi: Đất nước này rất giàu.
+  - key: de:item:a1w1-arm
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: arm
+      pos: tính từ
+    back:
+      meaning:
+        vi: nghèo
+      examples:
+        - target: Er ist nicht arm.
+          translation:
+            vi: Anh ấy không nghèo.
+  - key: de:item:a1w1-gleich
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: gleich
+      pos: tính từ
+    back:
+      meaning:
+        vi: giống nhau, như nhau
+      examples:
+        - target: Die zwei Taschen sind gleich.
+          translation:
+            vi: Hai cái túi giống nhau.
+  - key: de:item:a1w1-anders
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: anders
+      pos: tính từ
+    back:
+      meaning:
+        vi: khác
+      examples:
+        - target: Das ist ganz anders.
+          translation:
+            vi: Cái đó hoàn toàn khác.
+  - key: de:item:a1w1-dort
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: dort
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ở đó
+      examples:
+        - target: Dort ist der Bahnhof.
+          translation:
+            vi: Ở đó là nhà ga.
+      confusion:
+        vi: Dort chỉ nơi xa người nói; hier là ở đây, da là ở đó (gần hơn hoặc vừa nhắc đến).
+  - key: de:item:a1w1-oben
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: oben
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ở trên
+      examples:
+        - target: Meine Wohnung ist oben.
+          translation:
+            vi: Căn hộ của tôi ở trên.
+  - key: de:item:a1w1-unten
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: unten
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ở dưới
+      examples:
+        - target: Der Hund wartet unten.
+          translation:
+            vi: Con chó đợi ở dưới.
+  - key: de:item:a1w1-drinnen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: drinnen
+      pos: trạng từ
+    back:
+      meaning:
+        vi: bên trong, trong nhà
+      examples:
+        - target: Bei Regen spielen wir drinnen.
+          translation:
+            vi: Khi trời mưa chúng tôi chơi trong nhà.
+  - key: de:item:a1w1-draussen
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: draußen
+      pos: trạng từ
+    back:
+      meaning:
+        vi: bên ngoài, ngoài trời
+      examples:
+        - target: Die Kinder spielen draußen.
+          translation:
+            vi: Bọn trẻ chơi ngoài trời.
+  - key: de:item:a1w1-ueberall
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: überall
+      pos: trạng từ
+    back:
+      meaning:
+        vi: khắp nơi
+      examples:
+        - target: Hier gibt es überall Blumen.
+          translation:
+            vi: Ở đây khắp nơi đều có hoa.
+  - key: de:item:a1w1-wieder
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: wieder
+      pos: trạng từ
+    back:
+      meaning:
+        vi: lại, một lần nữa
+      examples:
+        - target: Kommst du morgen wieder?
+          translation:
+            vi: Ngày mai bạn lại đến chứ?
+      confusion:
+        vi: Wieder (lại, lần nữa) khác wider (chống lại); trong bài này chỉ dùng wieder.
+  - key: de:item:a1w1-nur
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: nur
+      pos: trạng từ
+    back:
+      meaning:
+        vi: chỉ
+      examples:
+        - target: Ich habe nur eine Schwester.
+          translation:
+            vi: Tôi chỉ có một người chị.
+  - key: de:item:a1w1-fast
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: fast
+      pos: trạng từ
+    back:
+      meaning:
+        vi: gần như
+      examples:
+        - target: Es ist fast acht Uhr.
+          translation:
+            vi: Gần tám giờ rồi.
+  - key: de:item:a1w1-ziemlich
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ziemlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: khá, tương đối
+      examples:
+        - target: Die Suppe ist ziemlich heiß.
+          translation:
+            vi: Món súp khá nóng.
+  - key: de:item:a1w1-wirklich
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: wirklich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thật sự
+      examples:
+        - target: Das ist wirklich gut!
+          translation:
+            vi: Cái này thật sự tốt!
+  - key: de:item:a1w1-genug
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: genug
+      pos: trạng từ
+    back:
+      meaning:
+        vi: đủ
+      examples:
+        - target: Ich habe genug Zeit.
+          translation:
+            vi: Tôi có đủ thời gian.
+      confusion:
+        vi: Genug đứng sau tính từ (gut genug) hoặc trước danh từ không đếm được (genug Zeit).
+  - key: de:item:a1w1-wann
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: wann
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: khi nào
+      examples:
+        - target: Wann kommt der Bus?
+          translation:
+            vi: Khi nào xe buýt đến?
+  - key: de:item:a1w1-warum
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: warum
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: tại sao
+      examples:
+        - target: Warum bist du müde?
+          translation:
+            vi: Tại sao bạn mệt?
+  - key: de:item:a1w1-wohin
+    type: vocab
+    level: a1
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: wohin
+      pos: từ để hỏi
+    back:
+      meaning:
+        vi: đi đâu, tới đâu
+      examples:
+        - target: Wohin gehst du?
+          translation:
+            vi: Bạn đi đâu?
+      confusion:
+        vi: Wohin hỏi nơi đến (hướng); Wo hỏi nơi đang ở.
