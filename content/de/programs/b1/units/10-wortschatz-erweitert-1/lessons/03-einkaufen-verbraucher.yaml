@@ -1,0 +1,299 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w1-einkaufen-verbraucher
+order_index: 3
+level: b1
+title:
+  vi: Mua sắm, thanh toán và quyền người tiêu dùng (Einkaufen und Bezahlen)
+objectives:
+  - vi: Hiểu và dùng từ về giá cả, chất lượng và cách thanh toán.
+  - vi: So sánh sản phẩm và giải thích lý do chọn mua.
+  - vi: Hiểu các từ trên hợp đồng mua bán và chuyển khoản ngân hàng cơ bản.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w1-haushalt-reparatur
+items:
+  - item: de:item:b1w1-preisvergleich
+  - item: de:item:b1w1-kundenkarte
+  - item: de:item:b1w1-lieferzeit
+  - item: de:item:b1w1-zahlungsart
+  - item: de:item:b1w1-rueckgabe
+  - item: de:item:b1w1-inhalt
+  - item: de:item:b1w1-menge
+  - item: de:item:b1w1-auswahl
+  - item: de:item:b1w1-berater
+  - item: de:item:b1w1-probe
+  - item: de:item:b1w1-muster
+  - item: de:item:b1w1-kaufentscheidung
+  - item: de:item:b1w1-kaufvertrag
+  - item: de:item:b1w1-ratenzahlung
+  - item: de:item:b1w1-ueberweisung
+  - item: de:item:b1w1-dauerauftrag
+  - item: de:item:b1w1-lastschrift
+  - item: de:item:b1w1-mahnung
+  - item: de:item:b1w1-haendler
+  - item: de:item:b1w1-ausprobieren
+  - item: de:item:b1w1-begleichen
+  - item: de:item:b1w1-preiswert
+  - item: de:item:b1w1-hochwertig
+  - item: de:item:b1w1-minderwertig
+  - item: de:item:b1w1-bargeldlos
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn so sánh được sản phẩm, nói về cách thanh toán và hiểu các thuật ngữ cơ bản về chuyển khoản, trả góp và nhắc nợ.
+  - type: explain
+    text:
+      vi: "Để so sánh sản phẩm, bạn dùng der Preisvergleich và các tính từ preiswert (giá hợp lý, đáng tiền), hochwertig (chất lượng cao), minderwertig (kém chất lượng). Preiswert khác billig: billig có thể ám chỉ chất lượng thấp, còn preiswert nghĩa là giá tốt so với chất lượng."
+  - type: explain
+    text:
+      vi: Về thanh toán, bạn nên biết die Zahlungsart (hình thức thanh toán), die Überweisung (chuyển khoản), der Dauerauftrag (lệnh chuyển khoản định kỳ), die Lastschrift (ghi nợ tự động) và die Ratenzahlung (trả góp). Khi chưa trả tiền đúng hạn, bạn sẽ nhận die Mahnung (thư nhắc nợ).
+  - type: explain
+    text:
+      vi: Cửa hàng thường dùng die Kundenkarte (thẻ khách hàng) để giảm giá. Der Berater hoặc die Beraterin giúp bạn chọn sản phẩm, và bạn có thể ausprobieren (dùng thử) trước khi mua. Der Kaufvertrag là hợp đồng mua bán, nhất là với hàng đắt tiền.
+  - type: deep_explain
+    text:
+      vi: "Bargeldlos zahlen (thanh toán không dùng tiền mặt) ngày càng phổ biến nhưng ở Đức vẫn nhiều nơi chỉ nhận tiền mặt, đặc biệt là quán nhỏ; bạn nên hỏi trước: Kann ich mit Karte zahlen? Begleichen (thanh toán xong một khoản nợ) dùng trong văn phong trang trọng: Bitte begleichen Sie den Betrag bis zum 30. Mai."
+  - type: example
+    target: Vor dem Kauf mache ich immer einen Preisvergleich im Internet.
+    target_lang: de
+    translation:
+      vi: Trước khi mua tôi luôn so sánh giá trên mạng.
+    note:
+      vi: der Preisvergleich = sự so sánh giá.
+  - type: example
+    target: Mit der Kundenkarte bekommen Sie zehn Prozent Rabatt.
+    target_lang: de
+    translation:
+      vi: Với thẻ khách hàng bạn được giảm mười phần trăm.
+    note:
+      vi: die Kundenkarte = thẻ khách hàng.
+  - type: example
+    target: Die Lieferzeit beträgt zwei bis drei Werktage.
+    target_lang: de
+    translation:
+      vi: Thời gian giao hàng là hai đến ba ngày làm việc.
+    note:
+      vi: die Lieferzeit = thời gian giao hàng.
+  - type: example
+    target: Welche Zahlungsart möchten Sie wählen?
+    target_lang: de
+    translation:
+      vi: Bạn muốn chọn hình thức thanh toán nào?
+    note:
+      vi: die Zahlungsart = hình thức thanh toán.
+  - type: common_mistake
+    wrong: Ich habe die Rechnung bezahlt per Überweisung.
+    right: Ich habe die Rechnung per Überweisung bezahlt.
+    target_lang: de
+    note:
+      vi: Partizip II đứng cuối câu; per Überweisung nằm trước nó.
+  - type: common_mistake
+    wrong: Dieses Handy ist billig und hochwertig, es gefällt mir.
+    right: Dieses Handy ist preiswert und hochwertig.
+    target_lang: de
+    note:
+      vi: Billig thường mang nghĩa giá rẻ chất lượng thấp, không đi cùng hochwertig; preiswert mới có nghĩa giá hợp lý cho chất lượng cao.
+  - type: summary
+    points:
+      - vi: preiswert, hochwertig, minderwertig; ausprobieren; begleichen; der Kaufvertrag, die Kaufentscheidung.
+exercises:
+  - key: de:exercise:b1w1l3-listen-probe
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-probe
+    prompt:
+      audio_asset_id: null
+      fallback_text: Im Laden bekommt man eine kostenlose Probe des Käses.
+      options:
+        - { id: ijq, text: Ai không trả hóa đơn sẽ nhận thư nhắc nợ., lang: vi }
+        - { id: wja, text: Giá cả đóng vai trò lớn trong quyết định mua của tôi., lang: vi }
+        - { id: jzl, text: Đồ nội thất được làm với chất lượng cao., lang: vi }
+        - { id: x3x, text: Ở cửa hàng người ta được thử miễn phí một miếng pho mát., lang: vi }
+    answer:
+      correct_option_id: x3x
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Ở cửa hàng người ta được thử miễn phí một miếng pho mát.". Từ khoá là die Probe (mẫu thử; buổi diễn tập); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Ở cửa hàng người ta được thử miễn phí một miếng pho mát.
+  - key: de:exercise:b1w1l3-mcq-vi-de-minderwertig
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w1-minderwertig
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "kém chất lượng"?
+      stem_lang: vi
+      options:
+        - { id: wbc, text: preiswert, lang: de }
+        - { id: iz2, text: hochwertig, lang: de }
+        - { id: gci, text: bargeldlos, lang: de }
+        - { id: nhk, text: minderwertig, lang: de }
+    answer:
+      correct_option_id: nhk
+    explanation:
+      vi: "minderwertig nghĩa là \"kém chất lượng\". Ví dụ: Die Ware war minderwertig und ging schnell kaputt. (Hàng kém chất lượng và nhanh chóng bị hỏng.)"
+    display_answer: minderwertig
+  - key: de:exercise:b1w1l3-mcq-de-vi-bargeldlos
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-bargeldlos
+    prompt:
+      stem: "\"bargeldlos\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: fk1, text: sự so sánh giá, lang: vi }
+        - { id: okj, text: thời gian giao hàng, lang: vi }
+        - { id: ki7, text: không dùng tiền mặt, lang: vi }
+        - { id: zdh, text: "người bán hàng, thương nhân", lang: vi }
+    answer:
+      correct_option_id: ki7
+    explanation:
+      vi: "bargeldlos nghĩa là \"không dùng tiền mặt\". Ví dụ: Im Café kann man nur bargeldlos bezahlen. (Ở quán cà phê chỉ thanh toán không dùng tiền mặt được.)"
+    display_answer: không dùng tiền mặt
+  - key: de:exercise:b1w1l3-mcq-artikel-muster
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-muster
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Muster\" (mẫu, hoa văn; mẫu thử): ___ Muster"
+      stem_lang: vi
+      options:
+        - { id: qgq, text: der, lang: de }
+        - { id: i1w, text: ein, lang: de }
+        - { id: rd7, text: das, lang: de }
+        - { id: puy, text: die, lang: de }
+    answer:
+      correct_option_id: rd7
+    explanation:
+      vi: "Muster là danh từ giống trung (das): das Muster; số nhiều: die Muster. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w1l3-tr-word-dauerauftrag
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-dauerauftrag
+    prompt:
+      source_text: lệnh chuyển khoản định kỳ (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Dauerauftrag
+    known_wrong:
+      - answer: die Dauerauftrag
+        feedback_vi: Dauerauftrag là giống đực, nên là der Dauerauftrag.
+        error_tag: article
+      - answer: das Dauerauftrag
+        feedback_vi: Dauerauftrag là giống đực, nên là der Dauerauftrag.
+        error_tag: article
+    explanation:
+      vi: "\"lệnh chuyển khoản định kỳ\" trong tiếng Đức là der Dauerauftrag (số nhiều: die Daueraufträge). Ví dụ: Die Miete zahle ich per Dauerauftrag."
+    display_answer: der Dauerauftrag
+  - key: de:exercise:b1w1l3-tr-word-preiswert
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-preiswert
+    prompt:
+      source_text: giá hợp lý, đáng tiền (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - preiswert
+    explanation:
+      vi: "\"giá hợp lý, đáng tiền\" trong tiếng Đức là preiswert. Ví dụ: Das Hotel ist preiswert und liegt zentral."
+    display_answer: preiswert
+  - key: de:exercise:b1w1l3-fill-plural-menge
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-menge
+    prompt:
+      template: "Singular: die Menge · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Mengen
+    known_wrong:
+      - answer: Menge
+        feedback_vi: Menge là dạng số ít; số nhiều là Mengen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Menge là die Mengen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Menge · Plural: die Mengen"
+  - key: de:exercise:b1w1l3-mcq-luecke-preisvergleich
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-preisvergleich
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Trước khi mua tôi luôn so sánh giá trên mạng.\": Vor dem Kauf mache ich immer einen ___ im Internet."
+      stem_lang: vi
+      options:
+        - { id: nrt, text: Lieferzeit, lang: de }
+        - { id: muf, text: Kundenkarte, lang: de }
+        - { id: p48, text: Preisvergleich, lang: de }
+        - { id: s5s, text: Probe, lang: de }
+    answer:
+      correct_option_id: p48
+    explanation:
+      vi: "Câu có nghĩa \"Trước khi mua tôi luôn so sánh giá trên mạng.\" nên cần Preisvergleich (der Preisvergleich: sự so sánh giá). Lieferzeit = thời gian giao hàng; Probe = mẫu thử; buổi diễn tập; Kundenkarte = thẻ khách hàng không đúng nghĩa của câu."
+    display_answer: Preisvergleich
+  - key: de:exercise:b1w1l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Tôi trả tiền nhà bằng lệnh chuyển khoản định kỳ, nhưng điện thoại thì tôi trả góp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich zahle die Miete per Dauerauftrag, aber das Handy zahle ich in Raten.
+        - Die Miete zahle ich per Dauerauftrag, aber das Handy zahle ich in Raten.
+        - Ich zahle die Miete per Dauerauftrag, das Handy dagegen in Raten.
+    explanation:
+      vi: "Gợi ý đáp án: Ich zahle die Miete per Dauerauftrag, aber das Handy zahle ich in Raten. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich zahle die Miete per Dauerauftrag, aber das Handy zahle ich in Raten.
+    item: de:item:b1w1-dauerauftrag
+  - key: de:exercise:b1w1l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Nach einem gründlichen Preisvergleich habe ich mich für das hochwertige Modell entschieden.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sau khi so sánh giá kỹ lưỡng, tôi đã chọn mẫu chất lượng cao.
+        - Sau một lần so sánh giá cẩn thận, tôi quyết định chọn mẫu chất lượng cao.
+        - Sau khi so sánh giá cả kỹ càng, tôi đã quyết định mua mẫu chất lượng cao.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Nach einem gründlichen Preisvergleich habe ich mich für das hochwertige Modell entschieden.\" nghĩa là: Sau khi so sánh giá kỹ lưỡng, tôi đã chọn mẫu chất lượng cao. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Sau khi so sánh giá kỹ lưỡng, tôi đã chọn mẫu chất lượng cao.
+    item: de:item:b1w1-preisvergleich

@@ -1,0 +1,2284 @@
+# Học liệu unit B1W1 "Mở rộng vốn từ B1 (1): giao thông, sửa nhà, mua sắm, sở thích, động từ và danh từ trừu tượng (Wortschatz erweitern 1)" (mở rộng vốn từ, chương trình B1).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:b1w1-pendler
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Pendler, - / die Pendlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người đi làm xa, người đi lại hằng ngày
+      examples:
+        - target: Die Pendler stehen jeden Morgen im Stau.
+          translation:
+            vi: Những người đi làm xa sáng nào cũng bị kẹt xe.
+  - key: de:item:b1w1-fahrgemeinschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fahrgemeinschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhóm đi chung xe
+      examples:
+        - target: Wir bilden eine Fahrgemeinschaft und teilen die Benzinkosten.
+          translation:
+            vi: Chúng tôi lập nhóm đi chung xe và chia nhau tiền xăng.
+  - key: de:item:b1w1-berufsverkehr
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Berufsverkehr (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giao thông giờ cao điểm đi làm
+      examples:
+        - target: Im Berufsverkehr brauche ich doppelt so lange.
+          translation:
+            vi: Vào giờ cao điểm tôi mất gấp đôi thời gian.
+  - key: de:item:b1w1-monatsticket
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Monatsticket, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé tháng
+      examples:
+        - target: Mit dem Monatsticket kann ich alle Busse benutzen.
+          translation:
+            vi: Với vé tháng tôi đi được mọi tuyến xe buýt.
+  - key: de:item:b1w1-umweltzone
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Umweltzone, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu vực kiểm soát khí thải
+      examples:
+        - target: Alte Dieselautos dürfen nicht in die Umweltzone fahren.
+          translation:
+            vi: Những xe diesel cũ không được vào khu vực kiểm soát khí thải.
+  - key: de:item:b1w1-umweg
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Umweg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường vòng
+      examples:
+        - target: Wegen der Baustelle mussten wir einen Umweg fahren.
+          translation:
+            vi: Vì công trường chúng tôi phải đi đường vòng.
+  - key: de:item:b1w1-abkuerzung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Abkürzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường tắt; chữ viết tắt
+      examples:
+        - target: Ich kenne eine Abkürzung durch den Park.
+          translation:
+            vi: Tôi biết một đường tắt đi qua công viên.
+      confusion:
+        vi: "Abkürzung còn là chữ viết tắt: z. B. là Abkürzung của zum Beispiel."
+  - key: de:item:b1w1-einbahnstrasse
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Einbahnstraße, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường một chiều
+      examples:
+        - target: Hier ist eine Einbahnstraße; Sie dürfen nicht links abbiegen.
+          translation:
+            vi: Ở đây là đường một chiều; ông/bà không được rẽ trái.
+  - key: de:item:b1w1-sackgasse
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sackgasse, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngõ cụt
+      examples:
+        - target: Die Straße endet in einer Sackgasse.
+          translation:
+            vi: Con đường kết thúc ở một ngõ cụt.
+  - key: de:item:b1w1-zebrastreifen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zebrastreifen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: vạch kẻ đường cho người đi bộ
+      examples:
+        - target: Die Autos müssen am Zebrastreifen anhalten.
+          translation:
+            vi: Xe ô tô phải dừng ở vạch dành cho người đi bộ.
+  - key: de:item:b1w1-buergersteig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bürgersteig, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vỉa hè
+      examples:
+        - target: Fahrräder gehören nicht auf den Bürgersteig.
+          translation:
+            vi: Xe đạp không được đi trên vỉa hè.
+  - key: de:item:b1w1-fahrkartenautomat
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fahrkartenautomat, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy bán vé
+      examples:
+        - target: Der Fahrkartenautomat nimmt nur Münzen.
+          translation:
+            vi: Máy bán vé chỉ nhận tiền xu.
+  - key: de:item:b1w1-fahrkartenkontrolle
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fahrkartenkontrolle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc kiểm tra vé
+      examples:
+        - target: Bei der Fahrkartenkontrolle hatte er sein Ticket nicht dabei.
+          translation:
+            vi: Lúc kiểm tra vé anh ấy không mang theo vé.
+  - key: de:item:b1w1-schwarzfahrer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schwarzfahrer, - / die Schwarzfahrerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người đi xe không vé
+      examples:
+        - target: Der Schwarzfahrer musste sechzig Euro zahlen.
+          translation:
+            vi: Người đi xe không vé phải trả sáu mươi euro.
+  - key: de:item:b1w1-anschluss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Anschluss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến nối; kết nối
+      examples:
+        - target: Wegen der Verspätung habe ich meinen Anschluss verpasst.
+          translation:
+            vi: Vì bị trễ tôi đã lỡ chuyến nối.
+  - key: de:item:b1w1-elektroroller
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Elektroroller, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe tay ga điện, xe scooter điện
+      examples:
+        - target: Viele Studenten fahren mit dem Elektroroller zur Uni.
+          translation:
+            vi: Nhiều sinh viên đi đến trường bằng xe scooter điện.
+  - key: de:item:b1w1-carsharing
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Carsharing (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: dịch vụ chia sẻ ô tô
+      examples:
+        - target: Ich besitze kein Auto, sondern nutze Carsharing.
+          translation:
+            vi: Tôi không sở hữu ô tô mà dùng dịch vụ chia sẻ xe.
+  - key: de:item:b1w1-pendeln
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: pendeln
+      pos: động từ
+    back:
+      meaning:
+        vi: đi lại hằng ngày giữa nhà và nơi làm việc
+      examples:
+        - target: Mein Mann pendelt seit zwei Jahren nach Frankfurt.
+          translation:
+            vi: Chồng tôi đi làm hằng ngày đến Frankfurt đã hai năm.
+  - key: de:item:b1w1-ueberqueren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überqueren
+      pos: động từ
+    back:
+      meaning:
+        vi: băng qua
+      examples:
+        - target: Bitte überqueren Sie die Straße nur bei Grün.
+          translation:
+            vi: Xin chỉ băng qua đường khi đèn xanh.
+  - key: de:item:b1w1-kontrollieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kontrollieren
+      pos: động từ
+    back:
+      meaning:
+        vi: kiểm tra, kiểm soát
+      examples:
+        - target: Der Schaffner kontrolliert die Fahrkarten.
+          translation:
+            vi: Nhân viên soát vé kiểm tra các vé tàu.
+  - key: de:item:b1w1-ausweichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausweichen, weicht aus, wich aus, ist ausgewichen
+      pos: động từ
+    back:
+      meaning:
+        vi: tránh, né
+      examples:
+        - target: Der Radfahrer musste einem Auto ausweichen.
+          translation:
+            vi: Người đi xe đạp phải tránh một chiếc ô tô.
+  - key: de:item:b1w1-umleiten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umleiten, leitet um, leitete um, hat umgeleitet
+      pos: động từ
+    back:
+      meaning:
+        vi: chuyển hướng (giao thông)
+      examples:
+        - target: Wegen des Unfalls leitet die Polizei den Verkehr um.
+          translation:
+            vi: Vì tai nạn, cảnh sát chuyển hướng giao thông.
+  - key: de:item:b1w1-blockieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: blockieren
+      pos: động từ
+    back:
+      meaning:
+        vi: chặn, cản trở
+      examples:
+        - target: Ein Lastwagen blockiert die ganze Straße.
+          translation:
+            vi: Một chiếc xe tải chặn cả con đường.
+  - key: de:item:b1w1-umweltfreundlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umweltfreundlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thân thiện với môi trường
+      examples:
+        - target: Das Fahrrad ist ein umweltfreundliches Verkehrsmittel.
+          translation:
+            vi: Xe đạp là một phương tiện thân thiện với môi trường.
+  - key: de:item:b1w1-renovierung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Renovierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc cải tạo, sửa sang nhà
+      examples:
+        - target: Nach der Renovierung sieht die Wohnung viel heller aus.
+          translation:
+            vi: Sau khi sửa sang, căn hộ trông sáng hơn nhiều.
+  - key: de:item:b1w1-tapete
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Tapete, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy dán tường
+      examples:
+        - target: Wir haben eine neue Tapete für das Wohnzimmer gekauft.
+          translation:
+            vi: Chúng tôi đã mua giấy dán tường mới cho phòng khách.
+  - key: de:item:b1w1-fliese
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fliese, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: viên gạch ốp lát
+      examples:
+        - target: Im Bad sind einige Fliesen kaputt.
+          translation:
+            vi: Trong phòng tắm có vài viên gạch bị vỡ.
+  - key: de:item:b1w1-wasserhahn
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wasserhahn, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vòi nước
+      examples:
+        - target: Der Wasserhahn tropft die ganze Nacht.
+          translation:
+            vi: Vòi nước nhỏ giọt suốt đêm.
+  - key: de:item:b1w1-abfluss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Abfluss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ống thoát nước, lỗ thoát
+      examples:
+        - target: Der Abfluss in der Dusche ist verstopft.
+          translation:
+            vi: Ống thoát nước ở chỗ tắm vòi sen bị tắc.
+  - key: de:item:b1w1-rohr
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Rohr, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ống (nước, khí)
+      examples:
+        - target: Im Keller ist ein Rohr geplatzt.
+          translation:
+            vi: Dưới hầm một ống nước bị vỡ.
+  - key: de:item:b1w1-sicherung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sicherung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cầu chì, bộ ngắt điện
+      examples:
+        - target: Die Sicherung ist herausgesprungen.
+          translation:
+            vi: Cầu chì đã nhảy.
+  - key: de:item:b1w1-gluehbirne
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Glühbirne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bóng đèn
+      examples:
+        - target: Ich muss die Glühbirne im Flur wechseln.
+          translation:
+            vi: Tôi phải thay bóng đèn ở hành lang.
+  - key: de:item:b1w1-duebel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Dübel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: tắc kê, nở nhựa
+      examples:
+        - target: Für die Wand brauchen Sie Dübel und Schrauben.
+          translation:
+            vi: Cho bức tường này bạn cần tắc kê và vít.
+  - key: de:item:b1w1-bohrer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bohrer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: mũi khoan; máy khoan
+      examples:
+        - target: Der Bohrer ist für Beton zu schwach.
+          translation:
+            vi: Mũi khoan này quá yếu cho bê tông.
+  - key: de:item:b1w1-zange
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zange, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái kìm
+      examples:
+        - target: Gibst du mir bitte die Zange?
+          translation:
+            vi: Bạn đưa tôi cái kìm nhé?
+  - key: de:item:b1w1-massband
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Maßband, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: thước dây
+      examples:
+        - target: Ich messe das Zimmer mit dem Maßband aus.
+          translation:
+            vi: Tôi đo căn phòng bằng thước dây.
+  - key: de:item:b1w1-wasserwaage
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wasserwaage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thước thủy
+      examples:
+        - target: Mit der Wasserwaage prüfen wir, ob das Regal gerade hängt.
+          translation:
+            vi: Chúng tôi dùng thước thủy để kiểm tra xem kệ có thẳng không.
+  - key: de:item:b1w1-schimmel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schimmel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nấm mốc
+      examples:
+        - target: An der Wand im Schlafzimmer ist Schimmel.
+          translation:
+            vi: Trên tường phòng ngủ có nấm mốc.
+  - key: de:item:b1w1-tapezieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: tapezieren
+      pos: động từ
+    back:
+      meaning:
+        vi: dán giấy tường
+      examples:
+        - target: Am Wochenende wollen wir das Kinderzimmer tapezieren.
+          translation:
+            vi: Cuối tuần chúng tôi muốn dán giấy tường phòng trẻ em.
+  - key: de:item:b1w1-montieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: montieren
+      pos: động từ
+    back:
+      meaning:
+        vi: lắp ráp, lắp đặt
+      examples:
+        - target: Der Techniker montiert die neue Dusche.
+          translation:
+            vi: Thợ kỹ thuật lắp vòi sen mới.
+  - key: de:item:b1w1-anbringen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anbringen, bringt an, brachte an, hat angebracht
+      pos: động từ
+    back:
+      meaning:
+        vi: gắn lên, lắp lên
+      examples:
+        - target: Er bringt ein Regal an der Wand an.
+          translation:
+            vi: Anh ấy gắn một cái kệ lên tường.
+  - key: de:item:b1w1-befestigen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: befestigen
+      pos: động từ
+    back:
+      meaning:
+        vi: gắn chặt, cố định
+      examples:
+        - target: Das Schild ist mit vier Schrauben befestigt.
+          translation:
+            vi: Tấm biển được gắn chặt bằng bốn con vít.
+  - key: de:item:b1w1-tropfen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: tropfen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhỏ giọt
+      examples:
+        - target: Der Wasserhahn tropft.
+          translation:
+            vi: Vòi nước nhỏ giọt.
+  - key: de:item:b1w1-verstopfen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verstopfen
+      pos: động từ
+    back:
+      meaning:
+        vi: bị tắc, làm tắc
+      examples:
+        - target: Das Waschbecken ist verstopft.
+          translation:
+            vi: Bồn rửa mặt bị tắc.
+  - key: de:item:b1w1-abdichten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: abdichten
+      pos: động từ
+    back:
+      meaning:
+        vi: làm kín, trám kín
+      examples:
+        - target: Wir müssen das Fenster abdichten.
+          translation:
+            vi: Chúng ta phải làm kín cửa sổ.
+  - key: de:item:b1w1-ausmessen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausmessen, misst aus, maß aus, hat ausgemessen
+      pos: động từ
+    back:
+      meaning:
+        vi: đo đạc
+      examples:
+        - target: Bevor wir den Teppich kaufen, messen wir das Zimmer genau aus.
+          translation:
+            vi: Trước khi mua thảm, chúng tôi đo phòng thật kỹ.
+  - key: de:item:b1w1-austauschen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: austauschen
+      pos: động từ
+    back:
+      meaning:
+        vi: thay, thay thế
+      examples:
+        - target: Der Vermieter hat die alte Heizung ausgetauscht.
+          translation:
+            vi: Chủ nhà đã thay hệ thống sưởi cũ.
+  - key: de:item:b1w1-feucht
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: feucht
+      pos: tính từ
+    back:
+      meaning:
+        vi: ẩm
+      examples:
+        - target: Die Wände im Keller sind feucht.
+          translation:
+            vi: Các bức tường dưới hầm bị ẩm.
+  - key: de:item:b1w1-preisvergleich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Preisvergleich, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự so sánh giá
+      examples:
+        - target: Vor dem Kauf mache ich immer einen Preisvergleich im Internet.
+          translation:
+            vi: Trước khi mua tôi luôn so sánh giá trên mạng.
+  - key: de:item:b1w1-kundenkarte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kundenkarte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thẻ khách hàng
+      examples:
+        - target: Mit der Kundenkarte bekommen Sie zehn Prozent Rabatt.
+          translation:
+            vi: Với thẻ khách hàng bạn được giảm mười phần trăm.
+  - key: de:item:b1w1-lieferzeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lieferzeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian giao hàng
+      examples:
+        - target: Die Lieferzeit beträgt zwei bis drei Werktage.
+          translation:
+            vi: Thời gian giao hàng là hai đến ba ngày làm việc.
+  - key: de:item:b1w1-zahlungsart
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zahlungsart, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hình thức thanh toán
+      examples:
+        - target: Welche Zahlungsart möchten Sie wählen?
+          translation:
+            vi: Bạn muốn chọn hình thức thanh toán nào?
+  - key: de:item:b1w1-rueckgabe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rückgabe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc trả lại
+      examples:
+        - target: Die Rückgabe ist innerhalb von vierzehn Tagen möglich.
+          translation:
+            vi: Việc trả lại hàng có thể trong vòng mười bốn ngày.
+  - key: de:item:b1w1-inhalt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Inhalt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nội dung; thành phần bên trong
+      examples:
+        - target: Der Inhalt der Packung ist nicht vollständig.
+          translation:
+            vi: Phần bên trong của gói hàng không đầy đủ.
+  - key: de:item:b1w1-menge
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Menge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: số lượng, lượng
+      examples:
+        - target: Bitte geben Sie die gewünschte Menge ein.
+          translation:
+            vi: Xin nhập số lượng mong muốn.
+  - key: de:item:b1w1-auswahl
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Auswahl (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự lựa chọn; số lượng sản phẩm để chọn
+      examples:
+        - target: Im Geschäft gibt es eine große Auswahl an Jacken.
+          translation:
+            vi: Trong cửa hàng có nhiều lựa chọn áo khoác.
+  - key: de:item:b1w1-berater
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Berater, - / die Beraterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên tư vấn
+      examples:
+        - target: Der Berater erklärt mir die Unterschiede zwischen den Modellen.
+          translation:
+            vi: Nhân viên tư vấn giải thích cho tôi sự khác nhau giữa các mẫu.
+  - key: de:item:b1w1-probe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Probe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẫu thử; buổi diễn tập
+      examples:
+        - target: Im Laden bekommt man eine kostenlose Probe des Käses.
+          translation:
+            vi: Ở cửa hàng người ta được thử miễn phí một miếng pho mát.
+  - key: de:item:b1w1-muster
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Muster, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẫu, hoa văn; mẫu thử
+      examples:
+        - target: Gefällt dir das Muster auf dem Kleid?
+          translation:
+            vi: Bạn có thích hoa văn trên chiếc váy không?
+  - key: de:item:b1w1-kaufentscheidung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kaufentscheidung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyết định mua
+      examples:
+        - target: Der Preis spielt bei meiner Kaufentscheidung eine große Rolle.
+          translation:
+            vi: Giá cả đóng vai trò lớn trong quyết định mua của tôi.
+  - key: de:item:b1w1-kaufvertrag
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kaufvertrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hợp đồng mua bán
+      examples:
+        - target: Lesen Sie den Kaufvertrag genau, bevor Sie unterschreiben.
+          translation:
+            vi: Hãy đọc kỹ hợp đồng mua bán trước khi ký.
+  - key: de:item:b1w1-ratenzahlung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Ratenzahlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc trả góp
+      examples:
+        - target: Das Sofa kann man auch in Ratenzahlung kaufen.
+          translation:
+            vi: Cái sofa này cũng có thể mua trả góp.
+  - key: de:item:b1w1-ueberweisung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Überweisung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc chuyển khoản
+      examples:
+        - target: Die Überweisung dauert ein bis zwei Tage.
+          translation:
+            vi: Việc chuyển khoản mất một đến hai ngày.
+  - key: de:item:b1w1-dauerauftrag
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Dauerauftrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lệnh chuyển khoản định kỳ
+      examples:
+        - target: Die Miete zahle ich per Dauerauftrag.
+          translation:
+            vi: Tiền thuê nhà tôi trả bằng lệnh chuyển khoản định kỳ.
+  - key: de:item:b1w1-lastschrift
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lastschrift, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lệnh ghi nợ tự động
+      examples:
+        - target: Der Betrag wird per Lastschrift abgebucht.
+          translation:
+            vi: Số tiền được trừ qua ghi nợ tự động.
+  - key: de:item:b1w1-mahnung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mahnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư nhắc nợ
+      examples:
+        - target: Wer die Rechnung nicht bezahlt, bekommt eine Mahnung.
+          translation:
+            vi: Ai không trả hóa đơn sẽ nhận thư nhắc nợ.
+  - key: de:item:b1w1-haendler
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Händler, - / die Händlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người bán hàng, thương nhân
+      examples:
+        - target: Der Händler gibt eine Garantie auf das Gerät.
+          translation:
+            vi: Người bán cấp bảo hành cho thiết bị.
+  - key: de:item:b1w1-ausprobieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausprobieren
+      pos: động từ
+    back:
+      meaning:
+        vi: dùng thử, thử
+      examples:
+        - target: Darf ich die Schuhe kurz ausprobieren?
+          translation:
+            vi: Tôi có thể thử đôi giày một lát được không?
+  - key: de:item:b1w1-begleichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: begleichen, begleicht, beglich, hat beglichen
+      pos: động từ
+    back:
+      meaning:
+        vi: thanh toán (khoản nợ, hóa đơn)
+      examples:
+        - target: Bitte begleichen Sie die Rechnung bis Ende des Monats.
+          translation:
+            vi: Xin hãy thanh toán hóa đơn trước cuối tháng.
+  - key: de:item:b1w1-preiswert
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: preiswert
+      pos: tính từ
+    back:
+      meaning:
+        vi: giá hợp lý, đáng tiền
+      examples:
+        - target: Das Hotel ist preiswert und liegt zentral.
+          translation:
+            vi: Khách sạn có giá hợp lý và nằm ở trung tâm.
+  - key: de:item:b1w1-hochwertig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hochwertig
+      pos: tính từ
+    back:
+      meaning:
+        vi: chất lượng cao
+      examples:
+        - target: Die Möbel sind hochwertig verarbeitet.
+          translation:
+            vi: Đồ nội thất được làm với chất lượng cao.
+  - key: de:item:b1w1-minderwertig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: minderwertig
+      pos: tính từ
+    back:
+      meaning:
+        vi: kém chất lượng
+      examples:
+        - target: Die Ware war minderwertig und ging schnell kaputt.
+          translation:
+            vi: Hàng kém chất lượng và nhanh chóng bị hỏng.
+  - key: de:item:b1w1-bargeldlos
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bargeldlos
+      pos: tính từ
+    back:
+      meaning:
+        vi: không dùng tiền mặt
+      examples:
+        - target: Im Café kann man nur bargeldlos bezahlen.
+          translation:
+            vi: Ở quán cà phê chỉ thanh toán không dùng tiền mặt được.
+  - key: de:item:b1w1-leidenschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Leidenschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: niềm đam mê
+      examples:
+        - target: Das Kochen ist seine große Leidenschaft.
+          translation:
+            vi: Nấu ăn là niềm đam mê lớn của anh ấy.
+  - key: de:item:b1w1-zeitvertreib
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zeitvertreib, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thú tiêu khiển
+      examples:
+        - target: Lesen ist mein liebster Zeitvertreib.
+          translation:
+            vi: Đọc sách là thú tiêu khiển yêu thích nhất của tôi.
+  - key: de:item:b1w1-sammler
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sammler, - / die Sammlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người sưu tầm
+      examples:
+        - target: Mein Opa ist ein leidenschaftlicher Sammler von Briefmarken.
+          translation:
+            vi: Ông tôi là người sưu tầm tem đầy đam mê.
+  - key: de:item:b1w1-brettspiel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Brettspiel, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trò chơi trên bàn cờ
+      examples:
+        - target: Wir spielen am Abend ein Brettspiel.
+          translation:
+            vi: Buổi tối chúng tôi chơi một trò chơi trên bàn cờ.
+  - key: de:item:b1w1-kartenspiel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Kartenspiel, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trò chơi bài
+      examples:
+        - target: Mit diesem Kartenspiel kann man schon mit vier Jahren spielen.
+          translation:
+            vi: Với trò chơi bài này, trẻ bốn tuổi đã chơi được.
+  - key: de:item:b1w1-raetsel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Rätsel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu đố, bí ẩn
+      examples:
+        - target: Die Kinder lösen gern Rätsel.
+          translation:
+            vi: Bọn trẻ thích giải câu đố.
+  - key: de:item:b1w1-handarbeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Handarbeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc thủ công, đồ thủ công
+      examples:
+        - target: Meine Großmutter macht gern Handarbeiten.
+          translation:
+            vi: Bà tôi thích làm đồ thủ công.
+  - key: de:item:b1w1-instrument
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Instrument, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhạc cụ
+      examples:
+        - target: Welches Instrument spielst du?
+          translation:
+            vi: Bạn chơi nhạc cụ nào?
+  - key: de:item:b1w1-chor
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Chor, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: dàn hợp xướng
+      examples:
+        - target: Der Chor probt jeden Mittwoch.
+          translation:
+            vi: Dàn hợp xướng tập mỗi thứ Tư.
+  - key: de:item:b1w1-orchester
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Orchester, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: dàn nhạc
+      examples:
+        - target: Das Orchester spielt heute Abend ein Konzert.
+          translation:
+            vi: Tối nay dàn nhạc biểu diễn một buổi hòa nhạc.
+  - key: de:item:b1w1-schlafsack
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schlafsack, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: túi ngủ
+      examples:
+        - target: Für das Zelt brauchen wir zwei Schlafsäcke.
+          translation:
+            vi: Cho cái lều chúng ta cần hai túi ngủ.
+  - key: de:item:b1w1-angel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Angel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cần câu
+      examples:
+        - target: Mein Vater hat eine neue Angel gekauft.
+          translation:
+            vi: Bố tôi đã mua một chiếc cần câu mới.
+  - key: de:item:b1w1-gesellschaftsspiel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gesellschaftsspiel, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trò chơi tập thể
+      examples:
+        - target: Zu Weihnachten bekommen wir immer ein neues Gesellschaftsspiel.
+          translation:
+            vi: Mỗi dịp Giáng sinh chúng tôi luôn được tặng một trò chơi tập thể mới.
+  - key: de:item:b1w1-spielabend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Spielabend, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi tối chơi trò chơi
+      examples:
+        - target: Einmal im Monat machen wir einen Spielabend.
+          translation:
+            vi: Mỗi tháng một lần chúng tôi tổ chức một buổi tối chơi trò chơi.
+  - key: de:item:b1w1-stricken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: stricken
+      pos: động từ
+    back:
+      meaning:
+        vi: đan len
+      examples:
+        - target: Meine Tante strickt einen Pullover für mich.
+          translation:
+            vi: Dì tôi đan một chiếc áo len cho tôi.
+  - key: de:item:b1w1-naehen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: nähen
+      pos: động từ
+    back:
+      meaning:
+        vi: may
+      examples:
+        - target: Ich nähe mir meine Kleider selbst.
+          translation:
+            vi: Tôi tự may quần áo cho mình.
+  - key: de:item:b1w1-basteln
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: basteln
+      pos: động từ
+    back:
+      meaning:
+        vi: làm đồ thủ công
+      examples:
+        - target: Mit den Kindern basteln wir Laternen.
+          translation:
+            vi: Chúng tôi làm đèn lồng thủ công với bọn trẻ.
+  - key: de:item:b1w1-zeichnen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zeichnen
+      pos: động từ
+    back:
+      meaning:
+        vi: vẽ (bằng bút)
+      examples:
+        - target: Er zeichnet gern Tiere.
+          translation:
+            vi: Cậu ấy thích vẽ động vật.
+  - key: de:item:b1w1-musizieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: musizieren
+      pos: động từ
+    back:
+      meaning:
+        vi: chơi nhạc
+      examples:
+        - target: Am Sonntag musizieren wir oft zusammen.
+          translation:
+            vi: Chủ nhật chúng tôi thường chơi nhạc cùng nhau.
+  - key: de:item:b1w1-zelten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zelten
+      pos: động từ
+    back:
+      meaning:
+        vi: cắm trại, ở lều
+      examples:
+        - target: Im Sommer zelten wir am See.
+          translation:
+            vi: Mùa hè chúng tôi cắm trại bên hồ.
+  - key: de:item:b1w1-sich-langweilen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich langweilen
+      pos: động từ
+    back:
+      meaning:
+        vi: thấy chán
+      examples:
+        - target: Bei dem Film habe ich mich nicht gelangweilt.
+          translation:
+            vi: Xem bộ phim đó tôi không thấy chán.
+  - key: de:item:b1w1-begeistert
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: begeistert (von + Dativ)
+      pos: tính từ
+    back:
+      meaning:
+        vi: hào hứng, say mê
+      examples:
+        - target: Die Kinder sind begeistert vom Zirkus.
+          translation:
+            vi: Bọn trẻ rất hào hứng với rạp xiếc.
+  - key: de:item:b1w1-sportlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sportlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thể thao, năng động; thích thể thao
+      examples:
+        - target: Meine Schwester ist sehr sportlich.
+          translation:
+            vi: Chị tôi rất thể thao.
+  - key: de:item:b1w1-musikalisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: musikalisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: có năng khiếu âm nhạc; thuộc về âm nhạc
+      examples:
+        - target: Er ist musikalisch und spielt drei Instrumente.
+          translation:
+            vi: Anh ấy có năng khiếu âm nhạc và chơi ba nhạc cụ.
+  - key: de:item:b1w1-achten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: achten
+      pos: động từ
+    back:
+      meaning:
+        vi: chú ý, để ý (auf + Akk)
+      examples:
+        - target: Bitte achten Sie auf die Stufe!
+          translation:
+            vi: Xin hãy chú ý bậc thang!
+  - key: de:item:b1w1-annehmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: annehmen, nimmt an, nahm an, hat angenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận, chấp nhận; giả sử
+      examples:
+        - target: Ich nehme an, dass der Zug pünktlich ist.
+          translation:
+            vi: Tôi cho rằng tàu đến đúng giờ.
+  - key: de:item:b1w1-ansehen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ansehen, sieht an, sah an, hat angesehen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhìn kỹ, xem
+      examples:
+        - target: Wir sehen uns morgen die Wohnung an.
+          translation:
+            vi: Ngày mai chúng tôi đi xem căn hộ.
+  - key: de:item:b1w1-aufgeben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufgeben, gibt auf, gab auf, hat aufgegeben
+      pos: động từ
+    back:
+      meaning:
+        vi: từ bỏ; gửi (thư, hành lý)
+      examples:
+        - target: Du darfst jetzt nicht aufgeben!
+          translation:
+            vi: Bây giờ bạn không được bỏ cuộc!
+  - key: de:item:b1w1-ausgehen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausgehen, geht aus, ging aus, ist ausgegangen
+      pos: động từ
+    back:
+      meaning:
+        vi: đi chơi buổi tối; hết, tắt
+      examples:
+        - target: Am Samstag gehen wir mit Freunden aus.
+          translation:
+            vi: Thứ Bảy chúng tôi đi chơi cùng bạn bè.
+  - key: de:item:b1w1-behalten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: behalten, behält, behielt, hat behalten
+      pos: động từ
+    back:
+      meaning:
+        vi: giữ lại
+      examples:
+        - target: Sie können das Wechselgeld behalten.
+          translation:
+            vi: Ông/bà có thể giữ lại tiền thừa.
+  - key: de:item:b1w1-betragen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: betragen, beträgt, betrug, hat betragen
+      pos: động từ
+    back:
+      meaning:
+        vi: lên đến (số tiền, số lượng)
+      examples:
+        - target: Die Kosten betragen insgesamt 300 Euro.
+          translation:
+            vi: Tổng chi phí là 300 euro.
+  - key: de:item:b1w1-bieten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bieten, bietet, bot, hat geboten
+      pos: động từ
+    back:
+      meaning:
+        vi: đưa ra, cung cấp, trả giá
+      examples:
+        - target: Die Stadt bietet viele Kurse für Senioren.
+          translation:
+            vi: Thành phố cung cấp nhiều khóa học cho người cao tuổi.
+  - key: de:item:b1w1-anbieten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anbieten, bietet an, bot an, hat angeboten
+      pos: động từ
+    back:
+      meaning:
+        vi: đề nghị, mời, chào bán
+      examples:
+        - target: Der Kellner bietet uns einen Nachtisch an.
+          translation:
+            vi: Người phục vụ mời chúng tôi một món tráng miệng.
+  - key: de:item:b1w1-eintragen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: eintragen, trägt ein, trug ein, hat eingetragen
+      pos: động từ
+    back:
+      meaning:
+        vi: ghi vào, đăng ký
+      examples:
+        - target: Bitte tragen Sie Ihren Namen in die Liste ein.
+          translation:
+            vi: Xin hãy ghi tên vào danh sách.
+  - key: de:item:b1w1-enttaeuschen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: enttäuschen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm thất vọng
+      examples:
+        - target: Der Film hat mich leider enttäuscht.
+          translation:
+            vi: Bộ phim tiếc là làm tôi thất vọng.
+  - key: de:item:b1w1-erlauben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erlauben
+      pos: động từ
+    back:
+      meaning:
+        vi: cho phép
+      examples:
+        - target: Meine Eltern erlauben mir nicht, so spät auszugehen.
+          translation:
+            vi: Bố mẹ tôi không cho phép tôi đi chơi muộn như vậy.
+  - key: de:item:b1w1-fortsetzen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fortsetzen, setzt fort, setzte fort, hat fortgesetzt
+      pos: động từ
+    back:
+      meaning:
+        vi: tiếp tục
+      examples:
+        - target: Nach der Pause setzen wir den Unterricht fort.
+          translation:
+            vi: Sau giờ nghỉ chúng ta tiếp tục buổi học.
+  - key: de:item:b1w1-gelingen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gelingen, gelingt, gelang, ist gelungen
+      pos: động từ
+    back:
+      meaning:
+        vi: thành công, làm được
+      examples:
+        - target: Der Kuchen ist mir diesmal richtig gelungen.
+          translation:
+            vi: Lần này cái bánh tôi làm thành công hẳn.
+  - key: de:item:b1w1-reichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: reichen
+      pos: động từ
+    back:
+      meaning:
+        vi: đủ; chìa ra
+      examples:
+        - target: Das Geld reicht nicht für ein neues Auto.
+          translation:
+            vi: Số tiền không đủ để mua ô tô mới.
+  - key: de:item:b1w1-scheitern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: scheitern
+      pos: động từ
+    back:
+      meaning:
+        vi: thất bại
+      examples:
+        - target: Das Projekt ist an den Kosten gescheitert.
+          translation:
+            vi: Dự án thất bại vì chi phí.
+  - key: de:item:b1w1-stattfinden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: stattfinden, findet statt, fand statt, hat stattgefunden
+      pos: động từ
+    back:
+      meaning:
+        vi: diễn ra
+      examples:
+        - target: Das Konzert findet im Park statt.
+          translation:
+            vi: Buổi hòa nhạc diễn ra trong công viên.
+  - key: de:item:b1w1-ueberlegen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: suy nghĩ, cân nhắc
+      examples:
+        - target: Ich muss noch überlegen, ob ich komme.
+          translation:
+            vi: Tôi còn phải cân nhắc xem có đến không.
+  - key: de:item:b1w1-ueberraschen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überraschen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm ngạc nhiên
+      examples:
+        - target: Er hat uns mit einem Geschenk überrascht.
+          translation:
+            vi: Anh ấy làm chúng tôi bất ngờ bằng một món quà.
+  - key: de:item:b1w1-uebernehmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: übernehmen, übernimmt, übernahm, hat übernommen
+      pos: động từ
+    back:
+      meaning:
+        vi: đảm nhận, tiếp quản
+      examples:
+        - target: Wer übernimmt die Kosten für die Reparatur?
+          translation:
+            vi: Ai chịu chi phí sửa chữa?
+  - key: de:item:b1w1-unternehmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unternehmen, unternimmt, unternahm, hat unternommen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm (một chuyến đi, một hoạt động); thực hiện
+      examples:
+        - target: Am Wochenende wollen wir etwas unternehmen.
+          translation:
+            vi: Cuối tuần chúng tôi muốn làm gì đó.
+  - key: de:item:b1w1-verbieten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verbieten, verbietet, verbot, hat verboten
+      pos: động từ
+    back:
+      meaning:
+        vi: cấm
+      examples:
+        - target: Die Stadt hat das Parken in der Altstadt verboten.
+          translation:
+            vi: Thành phố đã cấm đỗ xe ở khu phố cổ.
+  - key: de:item:b1w1-anlass
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Anlass, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: dịp, cớ
+      examples:
+        - target: Zu diesem Anlass hat die Firma ein Fest organisiert.
+          translation:
+            vi: Nhân dịp này công ty đã tổ chức một buổi tiệc.
+  - key: de:item:b1w1-bedeutung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bedeutung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý nghĩa, tầm quan trọng
+      examples:
+        - target: Was ist die Bedeutung dieses Wortes?
+          translation:
+            vi: Nghĩa của từ này là gì?
+  - key: de:item:b1w1-beduerfnis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Bedürfnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhu cầu
+      examples:
+        - target: Jeder Mensch hat das Bedürfnis nach Sicherheit.
+          translation:
+            vi: Ai cũng có nhu cầu về sự an toàn.
+  - key: de:item:b1w1-eindruck
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Eindruck, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ấn tượng
+      examples:
+        - target: Der neue Kollege hat einen guten Eindruck gemacht.
+          translation:
+            vi: Đồng nghiệp mới đã gây ấn tượng tốt.
+  - key: de:item:b1w1-erklaerung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erklärung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời giải thích
+      examples:
+        - target: Ich brauche eine Erklärung für diesen Fehler.
+          translation:
+            vi: Tôi cần một lời giải thích cho lỗi này.
+  - key: de:item:b1w1-gelegenheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gelegenheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ hội, dịp
+      examples:
+        - target: Nutzen Sie diese Gelegenheit!
+          translation:
+            vi: Hãy tận dụng cơ hội này!
+  - key: de:item:b1w1-grund
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Grund, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lý do; nền, đáy
+      examples:
+        - target: Was ist der Grund für die Verspätung?
+          translation:
+            vi: Lý do trễ là gì?
+  - key: de:item:b1w1-moeglichkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Möglichkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng, cơ hội
+      examples:
+        - target: Es gibt mehrere Möglichkeiten, das Problem zu lösen.
+          translation:
+            vi: Có nhiều cách để giải quyết vấn đề này.
+  - key: de:item:b1w1-neuigkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Neuigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tin tức mới
+      examples:
+        - target: Ich habe eine gute Neuigkeit für dich.
+          translation:
+            vi: Tôi có một tin tốt cho bạn.
+  - key: de:item:b1w1-schwierigkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schwierigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khó khăn
+      examples:
+        - target: Wir hatten am Anfang viele Schwierigkeiten.
+          translation:
+            vi: Lúc đầu chúng tôi gặp nhiều khó khăn.
+  - key: de:item:b1w1-sicherheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sicherheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự an toàn; sự chắc chắn
+      examples:
+        - target: Die Sicherheit der Kinder ist uns sehr wichtig.
+          translation:
+            vi: Sự an toàn của bọn trẻ rất quan trọng với chúng tôi.
+  - key: de:item:b1w1-situation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Situation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình huống, hoàn cảnh
+      examples:
+        - target: In dieser Situation kann ich nichts tun.
+          translation:
+            vi: Trong tình huống này tôi không làm được gì.
+  - key: de:item:b1w1-veraenderung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Veränderung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thay đổi
+      examples:
+        - target: Die Veränderung der Arbeitszeiten hat viele überrascht.
+          translation:
+            vi: Việc thay đổi giờ làm việc làm nhiều người ngạc nhiên.
+  - key: de:item:b1w1-vorstellung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Vorstellung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hình dung; buổi biểu diễn; sự giới thiệu
+      examples:
+        - target: Ich habe eine genaue Vorstellung von meinem Traumjob.
+          translation:
+            vi: Tôi hình dung rất rõ về công việc mơ ước của mình.
+      confusion:
+        vi: Die Vorstellung còn là buổi biểu diễn (Theatervorstellung) và là sự giới thiệu (Vorstellung beim Chef).
+  - key: de:item:b1w1-wirkung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wirkung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tác dụng, hiệu quả
+      examples:
+        - target: Die Wirkung des Medikaments setzt nach einer Stunde ein.
+          translation:
+            vi: Tác dụng của thuốc bắt đầu sau một giờ.
+  - key: de:item:b1w1-zweck
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zweck, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mục đích
+      examples:
+        - target: Für diesen Zweck brauchen wir mehr Geld.
+          translation:
+            vi: Cho mục đích này chúng tôi cần thêm tiền.
+  - key: de:item:b1w1-zustand
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zustand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng
+      examples:
+        - target: Das Auto ist in einem guten Zustand.
+          translation:
+            vi: Chiếc xe ở tình trạng tốt.
+  - key: de:item:b1w1-vermutung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Vermutung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giả định, phỏng đoán
+      examples:
+        - target: Das ist nur eine Vermutung, keine Tatsache.
+          translation:
+            vi: Đó chỉ là phỏng đoán, không phải sự thật.
+  - key: de:item:b1w1-verhaeltnis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Verhältnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: mối quan hệ; tỷ lệ
+      examples:
+        - target: Ich habe ein gutes Verhältnis zu meinen Nachbarn.
+          translation:
+            vi: Tôi có quan hệ tốt với hàng xóm.
+  - key: de:item:b1w1-entschluss
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Entschluss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyết định, ý quyết
+      examples:
+        - target: Nach langem Überlegen hat er einen Entschluss gefasst.
+          translation:
+            vi: Sau khi suy nghĩ lâu anh ấy đã đi đến quyết định.
+  - key: de:item:b1w1-anstrengung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Anstrengung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cố gắng, nỗ lực
+      examples:
+        - target: Mit großer Anstrengung hat sie die Prüfung bestanden.
+          translation:
+            vi: Bằng nỗ lực lớn cô ấy đã vượt qua kỳ thi.
+  - key: de:item:b1w1-anfang
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Anfang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự bắt đầu
+      examples:
+        - target: Am Anfang war alles sehr neu für mich.
+          translation:
+            vi: Lúc đầu mọi thứ đều rất mới với tôi.
+  - key: de:item:b1w1-rolle
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rolle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vai trò, vai diễn
+      examples:
+        - target: Das Wetter spielt bei meiner Entscheidung keine Rolle.
+          translation:
+            vi: Thời tiết không đóng vai trò gì trong quyết định của tôi.

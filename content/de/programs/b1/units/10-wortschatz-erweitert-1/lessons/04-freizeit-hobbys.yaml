@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w1-freizeit-hobbys
+order_index: 4
+level: b1
+title:
+  vi: Sở thích và hoạt động giải trí (Freizeit und Hobbys)
+objectives:
+  - vi: Kể về sở thích và những hoạt động thủ công, âm nhạc, trò chơi.
+  - vi: Dùng các động từ stricken, nähen, basteln, zeichnen, musizieren, zelten.
+  - vi: "Nói về cảm xúc với sở thích: begeistert von, sich langweilen."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w1-einkaufen-verbraucher
+items:
+  - item: de:item:b1w1-leidenschaft
+  - item: de:item:b1w1-zeitvertreib
+  - item: de:item:b1w1-sammler
+  - item: de:item:b1w1-brettspiel
+  - item: de:item:b1w1-kartenspiel
+  - item: de:item:b1w1-raetsel
+  - item: de:item:b1w1-handarbeit
+  - item: de:item:b1w1-instrument
+  - item: de:item:b1w1-chor
+  - item: de:item:b1w1-orchester
+  - item: de:item:b1w1-schlafsack
+  - item: de:item:b1w1-angel
+  - item: de:item:b1w1-gesellschaftsspiel
+  - item: de:item:b1w1-spielabend
+  - item: de:item:b1w1-stricken
+  - item: de:item:b1w1-naehen
+  - item: de:item:b1w1-basteln
+  - item: de:item:b1w1-zeichnen
+  - item: de:item:b1w1-musizieren
+  - item: de:item:b1w1-zelten
+  - item: de:item:b1w1-sich-langweilen
+  - item: de:item:b1w1-begeistert
+  - item: de:item:b1w1-sportlich
+  - item: de:item:b1w1-musikalisch
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được chi tiết về sở thích của mình và hỏi người khác về hoạt động giải trí, cùng cảm xúc đi kèm.
+  - type: explain
+    text:
+      vi: "Từ chỉ sở thích: die Leidenschaft (niềm đam mê), der Zeitvertreib (thú tiêu khiển), das Hobby. Hoạt động thủ công: stricken (đan len), nähen (may), basteln (làm đồ thủ công), zeichnen (vẽ). Danh từ tương ứng: die Handarbeit, die Zeichnung. Sau động từ bạn thường thêm gern hoặc in meiner Freizeit."
+  - type: explain
+    text:
+      vi: "Âm nhạc và trò chơi: das Instrument, der Chor, das Orchester, musizieren (chơi nhạc), das Brettspiel, das Kartenspiel, das Gesellschaftsspiel, der Spielabend. Ngoài trời: zelten, der Schlafsack, die Angel, der Campingplatz. Phần lớn là động từ có chia đều."
+  - type: explain
+    text:
+      vi: "Để nói về cảm xúc, dùng begeistert von + Dativ: Ich bin begeistert vom neuen Brettspiel. Muốn nói chán, dùng sich langweilen: Ich langweile mich nie, wenn ich stricke. Chú ý sich langweilen là động từ phản thân, nghĩa là tự thấy buồn chán."
+  - type: deep_explain
+    text:
+      vi: "Ở Đức có rất nhiều der Verein (câu lạc bộ) cho hầu như mọi sở thích: Schachverein, Chor, Wanderverein. Gia nhập Verein thường phải đóng phí hằng năm (der Mitgliedsbeitrag). Hobby như Stricken đang trở lại phổ biến với người trẻ; những buổi Spielabend với Gesellschaftsspiele cũng là dịp gặp gỡ rất thường thấy."
+  - type: example
+    target: Das Kochen ist seine große Leidenschaft.
+    target_lang: de
+    translation:
+      vi: Nấu ăn là niềm đam mê lớn của anh ấy.
+    note:
+      vi: die Leidenschaft = niềm đam mê.
+  - type: example
+    target: Lesen ist mein liebster Zeitvertreib.
+    target_lang: de
+    translation:
+      vi: Đọc sách là thú tiêu khiển yêu thích nhất của tôi.
+    note:
+      vi: der Zeitvertreib = thú tiêu khiển.
+  - type: example
+    target: Mein Opa ist ein leidenschaftlicher Sammler von Briefmarken.
+    target_lang: de
+    translation:
+      vi: Ông tôi là người sưu tầm tem đầy đam mê.
+    note:
+      vi: der Sammler = người sưu tầm.
+  - type: example
+    target: Wir spielen am Abend ein Brettspiel.
+    target_lang: de
+    translation:
+      vi: Buổi tối chúng tôi chơi một trò chơi trên bàn cờ.
+    note:
+      vi: das Brettspiel = trò chơi trên bàn cờ.
+  - type: common_mistake
+    wrong: Ich bin begeistert über das Konzert.
+    right: Ich bin begeistert von dem Konzert.
+    target_lang: de
+    note:
+      vi: Tính từ begeistert đi với von + Dativ, không dùng über.
+  - type: common_mistake
+    wrong: Ich langweile.
+    right: Ich langweile mich.
+    target_lang: de
+    note:
+      vi: Sich langweilen là động từ phản thân, cần đại từ mich/dich/sich.
+  - type: summary
+    points:
+      - vi: stricken, nähen, basteln, zeichnen; sich langweilen; begeistert von + Dativ, sportlich, musikalisch.
+exercises:
+  - key: de:exercise:b1w1l4-listen-sportlich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-sportlich
+    prompt:
+      audio_asset_id: null
+      fallback_text: Meine Schwester ist sehr sportlich.
+      options:
+        - { id: drb, text: Nấu ăn là niềm đam mê lớn của anh ấy., lang: vi }
+        - { id: tsd, text: Chị tôi rất thể thao., lang: vi }
+        - { id: shh, text: Bọn trẻ thích giải câu đố., lang: vi }
+        - { id: rdv, text: Chúng tôi làm đèn lồng thủ công với bọn trẻ., lang: vi }
+    answer:
+      correct_option_id: tsd
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Chị tôi rất thể thao.". Từ khoá là sportlich (thể thao, năng động; thích thể thao); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Chị tôi rất thể thao.
+  - key: de:exercise:b1w1l4-mcq-vi-de-leidenschaft
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w1-leidenschaft
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "niềm đam mê"?
+      stem_lang: vi
+      options:
+        - { id: s17, text: der Chor, lang: de }
+        - { id: cvm, text: das Kartenspiel, lang: de }
+        - { id: ww9, text: der Schlafsack, lang: de }
+        - { id: xm4, text: die Leidenschaft, lang: de }
+    answer:
+      correct_option_id: xm4
+    explanation:
+      vi: "die Leidenschaft nghĩa là \"niềm đam mê\". Ví dụ: Das Kochen ist seine große Leidenschaft. (Nấu ăn là niềm đam mê lớn của anh ấy.)"
+    display_answer: die Leidenschaft
+  - key: de:exercise:b1w1l4-mcq-de-vi-sammler
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-sammler
+    prompt:
+      stem: "\"der Sammler\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: scq, text: cần câu, lang: vi }
+        - { id: w48, text: người sưu tầm, lang: vi }
+        - { id: jkx, text: "cắm trại, ở lều", lang: vi }
+        - { id: f4i, text: dàn nhạc, lang: vi }
+    answer:
+      correct_option_id: w48
+    explanation:
+      vi: "der Sammler nghĩa là \"người sưu tầm\". Ví dụ: Mein Opa ist ein leidenschaftlicher Sammler von Briefmarken. (Ông tôi là người sưu tầm tem đầy đam mê.)"
+    display_answer: người sưu tầm
+  - key: de:exercise:b1w1l4-mcq-artikel-gesellschaftsspiel
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-gesellschaftsspiel
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Gesellschaftsspiel\" (trò chơi tập thể): ___ Gesellschaftsspiel"
+      stem_lang: vi
+      options:
+        - { id: m3h, text: ein, lang: de }
+        - { id: u3x, text: der, lang: de }
+        - { id: kik, text: das, lang: de }
+        - { id: lar, text: die, lang: de }
+    answer:
+      correct_option_id: kik
+    explanation:
+      vi: "Gesellschaftsspiel là danh từ giống trung (das): das Gesellschaftsspiel; số nhiều: die Gesellschaftsspiele. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w1l4-tr-word-handarbeit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-handarbeit
+    prompt:
+      source_text: việc thủ công, đồ thủ công (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Handarbeit
+    known_wrong:
+      - answer: der Handarbeit
+        feedback_vi: Handarbeit là giống cái, nên là die Handarbeit.
+        error_tag: article
+      - answer: das Handarbeit
+        feedback_vi: Handarbeit là giống cái, nên là die Handarbeit.
+        error_tag: article
+    explanation:
+      vi: "\"việc thủ công, đồ thủ công\" trong tiếng Đức là die Handarbeit (số nhiều: die Handarbeiten). Ví dụ: Meine Großmutter macht gern Handarbeiten."
+    display_answer: die Handarbeit
+  - key: de:exercise:b1w1l4-tr-word-begeistert
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-begeistert
+    prompt:
+      source_text: hào hứng, say mê (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - begeistert
+    explanation:
+      vi: "\"hào hứng, say mê\" trong tiếng Đức là begeistert. Ví dụ: Die Kinder sind begeistert vom Zirkus."
+    display_answer: begeistert
+  - key: de:exercise:b1w1l4-fill-plural-zeitvertreib
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-zeitvertreib
+    prompt:
+      template: "Singular: der Zeitvertreib · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 15 }
+    answer:
+      blanks:
+        b1:
+          - Zeitvertreibe
+    known_wrong:
+      - answer: Zeitvertreib
+        feedback_vi: Zeitvertreib là dạng số ít; số nhiều là Zeitvertreibe.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Zeitvertreib là die Zeitvertreibe (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Zeitvertreib · Plural: die Zeitvertreibe"
+  - key: de:exercise:b1w1l4-mcq-luecke-brettspiel
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-brettspiel
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Buổi tối chúng tôi chơi một trò chơi trên bàn cờ.\": Wir spielen am Abend ein ___."
+      stem_lang: vi
+      options:
+        - { id: sq8, text: Gesellschaftsspiel, lang: de }
+        - { id: nkk, text: Angel, lang: de }
+        - { id: vkd, text: Brettspiel, lang: de }
+        - { id: lte, text: Rätsel, lang: de }
+    answer:
+      correct_option_id: vkd
+    explanation:
+      vi: "Câu có nghĩa \"Buổi tối chúng tôi chơi một trò chơi trên bàn cờ.\" nên cần Brettspiel (das Brettspiel: trò chơi trên bàn cờ). Rätsel = câu đố, bí ẩn; Angel = cần câu; Gesellschaftsspiel = trò chơi tập thể không đúng nghĩa của câu."
+    display_answer: Brettspiel
+  - key: de:exercise:b1w1l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Tôi hát trong một dàn hợp xướng đã mười năm và đó là niềm đam mê lớn nhất của tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich singe seit zehn Jahren in einem Chor, und es ist meine größte Leidenschaft.
+        - Seit zehn Jahren singe ich in einem Chor, und es ist meine größte Leidenschaft.
+        - Ich singe seit zehn Jahren in einem Chor, und das ist meine größte Leidenschaft.
+    explanation:
+      vi: "Gợi ý đáp án: Ich singe seit zehn Jahren in einem Chor, und es ist meine größte Leidenschaft. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich singe seit zehn Jahren in einem Chor, und es ist meine größte Leidenschaft.
+    item: de:item:b1w1-leidenschaft
+  - key: de:exercise:b1w1l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Am Spielabend spielen wir Brettspiele und Karten, und niemand langweilt sich.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vào buổi tối chơi trò chơi, chúng tôi chơi cờ bàn và bài, và không ai thấy chán.
+        - Trong buổi tối chơi game, chúng tôi chơi các trò bàn cờ và bài, và không ai buồn chán.
+        - Ở buổi tối chơi trò chơi chúng tôi chơi cờ bàn và bài, không ai cảm thấy chán.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Am Spielabend spielen wir Brettspiele und Karten, und niemand langweilt sich.\" nghĩa là: Vào buổi tối chơi trò chơi, chúng tôi chơi cờ bàn và bài, và không ai thấy chán. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Vào buổi tối chơi trò chơi, chúng tôi chơi cờ bàn và bài, và không ai thấy chán.
+    item: de:item:b1w1-brettspiel

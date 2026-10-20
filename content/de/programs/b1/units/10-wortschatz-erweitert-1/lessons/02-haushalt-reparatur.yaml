@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w1-haushalt-reparatur
+order_index: 2
+level: b1
+title:
+  vi: Sửa chữa và cải tạo nhà (Renovieren und Reparieren)
+objectives:
+  - vi: Gọi tên dụng cụ, vật liệu và các hỏng hóc thường gặp trong nhà.
+  - vi: Mô tả việc sửa chữa đơn giản bằng động từ montieren, befestigen, abdichten.
+  - vi: Báo hỏng hóc cho chủ nhà hoặc thợ sửa chữa một cách rõ ràng.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w1-verkehr-mobilitaet
+items:
+  - item: de:item:b1w1-renovierung
+  - item: de:item:b1w1-tapete
+  - item: de:item:b1w1-fliese
+  - item: de:item:b1w1-wasserhahn
+  - item: de:item:b1w1-abfluss
+  - item: de:item:b1w1-rohr
+  - item: de:item:b1w1-sicherung
+  - item: de:item:b1w1-gluehbirne
+  - item: de:item:b1w1-duebel
+  - item: de:item:b1w1-bohrer
+  - item: de:item:b1w1-zange
+  - item: de:item:b1w1-massband
+  - item: de:item:b1w1-wasserwaage
+  - item: de:item:b1w1-schimmel
+  - item: de:item:b1w1-tapezieren
+  - item: de:item:b1w1-montieren
+  - item: de:item:b1w1-anbringen
+  - item: de:item:b1w1-befestigen
+  - item: de:item:b1w1-tropfen
+  - item: de:item:b1w1-verstopfen
+  - item: de:item:b1w1-abdichten
+  - item: de:item:b1w1-ausmessen
+  - item: de:item:b1w1-austauschen
+  - item: de:item:b1w1-feucht
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được hỏng hóc trong nhà, gọi tên dụng cụ cần dùng và nói với chủ nhà hoặc thợ về việc cần sửa.
+  - type: explain
+    text:
+      vi: "Khi báo hỏng hóc, bạn dùng động từ ở hiện tại hoặc Perfekt: Der Wasserhahn tropft. Das Rohr ist verstopft. Das Rohr ist verstopft nói về trạng thái bị tắc, còn Im Keller ist ein Rohr geplatzt cho biết một ống nước đã vỡ."
+  - type: explain
+    text:
+      vi: "Nhiều dụng cụ có đuôi -er hoặc -e: der Bohrer, die Zange, der Dübel (con tắc kê), das Maßband, die Wasserwaage. Động từ đi kèm: ausmessen (đo), montieren (lắp), befestigen (gắn chặt), anbringen (gắn lên), austauschen (thay thế). Hầu hết là động từ tách: Ich messe das Zimmer aus. Er tauscht die Glühbirne aus."
+  - type: explain
+    text:
+      vi: "Nói với chủ nhà thì dùng Sie và câu lịch sự: Könnten Sie bitte einen Handwerker schicken? Ở Đức, những hỏng hóc nhỏ bên trong căn hộ đôi khi do người thuê tự trả; hãy đọc Mietvertrag để biết điều khoản cụ thể."
+  - type: deep_explain
+    text:
+      vi: Schimmel (nấm mốc) thường xuất hiện khi tường bị feucht (ẩm) và phòng ít được thông gió. Ở Đức, người thuê nhà được khuyên lüften (mở cửa thông gió) vài lần mỗi ngày. Die Sicherung (cầu chì) có thể bị đứt khi dùng quá nhiều thiết bị cùng lúc; nhiều nhà cũ vẫn dùng cầu chì tự động nên bạn chỉ cần bật lại cần gạt.
+  - type: example
+    target: Nach der Renovierung sieht die Wohnung viel heller aus.
+    target_lang: de
+    translation:
+      vi: Sau khi sửa sang, căn hộ trông sáng hơn nhiều.
+    note:
+      vi: die Renovierung = việc cải tạo, sửa sang nhà.
+  - type: example
+    target: Wir haben eine neue Tapete für das Wohnzimmer gekauft.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đã mua giấy dán tường mới cho phòng khách.
+    note:
+      vi: die Tapete = giấy dán tường.
+  - type: example
+    target: Im Bad sind einige Fliesen kaputt.
+    target_lang: de
+    translation:
+      vi: Trong phòng tắm có vài viên gạch bị vỡ.
+    note:
+      vi: die Fliese = viên gạch ốp lát.
+  - type: example
+    target: Der Wasserhahn tropft die ganze Nacht.
+    target_lang: de
+    translation:
+      vi: Vòi nước nhỏ giọt suốt đêm.
+    note:
+      vi: der Wasserhahn = vòi nước.
+  - type: common_mistake
+    wrong: Das Rohr ist verstopfen.
+    right: Das Rohr ist verstopft.
+    target_lang: de
+    note:
+      vi: "Sau sein, dùng Partizip II để nói trạng thái: verstopft (bị tắc)."
+  - type: common_mistake
+    wrong: Ich habe die Lampe ausgetauscht gestern.
+    right: Ich habe die Lampe gestern ausgetauscht.
+    target_lang: de
+    note:
+      vi: Partizip II đứng cuối câu; mốc thời gian gestern đứng trước nó.
+  - type: summary
+    points:
+      - vi: tapezieren, montieren, anbringen, befestigen, abdichten, ausmessen, austauschen; tropfen, verstopfen.
+exercises:
+  - key: de:exercise:b1w1l2-listen-anbringen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-anbringen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Er bringt ein Regal an der Wand an.
+      options:
+        - { id: ogw, text: Thợ kỹ thuật lắp vòi sen mới., lang: vi }
+        - { id: qlx, text: Chúng ta phải làm kín cửa sổ., lang: vi }
+        - { id: xww, text: Anh ấy gắn một cái kệ lên tường., lang: vi }
+        - { id: wqo, text: Tấm biển được gắn chặt bằng bốn con vít., lang: vi }
+    answer:
+      correct_option_id: xww
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Anh ấy gắn một cái kệ lên tường.". Từ khoá là anbringen (gắn lên, lắp lên); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Anh ấy gắn một cái kệ lên tường.
+  - key: de:exercise:b1w1l2-mcq-vi-de-wasserhahn
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w1-wasserhahn
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "vòi nước"?
+      stem_lang: vi
+      options:
+        - { id: xe4, text: die Renovierung, lang: de }
+        - { id: wog, text: die Tapete, lang: de }
+        - { id: ofu, text: der Wasserhahn, lang: de }
+        - { id: yz2, text: die Sicherung, lang: de }
+    answer:
+      correct_option_id: ofu
+    explanation:
+      vi: "der Wasserhahn nghĩa là \"vòi nước\". Ví dụ: Der Wasserhahn tropft die ganze Nacht. (Vòi nước nhỏ giọt suốt đêm.)"
+    display_answer: der Wasserhahn
+  - key: de:exercise:b1w1l2-mcq-de-vi-duebel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-duebel
+    prompt:
+      stem: "\"der Dübel\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: fkx, text: thước dây, lang: vi }
+        - { id: eq8, text: đo đạc, lang: vi }
+        - { id: tcq, text: "tắc kê, nở nhựa", lang: vi }
+        - { id: huk, text: vòi nước, lang: vi }
+    answer:
+      correct_option_id: tcq
+    explanation:
+      vi: "der Dübel nghĩa là \"tắc kê, nở nhựa\". Ví dụ: Für die Wand brauchen Sie Dübel und Schrauben. (Cho bức tường này bạn cần tắc kê và vít.)"
+    display_answer: tắc kê, nở nhựa
+  - key: de:exercise:b1w1l2-mcq-artikel-wasserwaage
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-wasserwaage
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Wasserwaage\" (thước thủy): ___ Wasserwaage"
+      stem_lang: vi
+      options:
+        - { id: mb4, text: ein, lang: de }
+        - { id: ati, text: die, lang: de }
+        - { id: fsw, text: das, lang: de }
+        - { id: gcv, text: der, lang: de }
+    answer:
+      correct_option_id: ati
+    explanation:
+      vi: "Wasserwaage là danh từ giống cái (die): die Wasserwaage; số nhiều: die Wasserwaagen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w1l2-tr-word-schimmel
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-schimmel
+    prompt:
+      source_text: nấm mốc (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Schimmel
+    known_wrong:
+      - answer: die Schimmel
+        feedback_vi: Schimmel là giống đực, nên là der Schimmel.
+        error_tag: article
+      - answer: das Schimmel
+        feedback_vi: Schimmel là giống đực, nên là der Schimmel.
+        error_tag: article
+    explanation:
+      vi: "\"nấm mốc\" trong tiếng Đức là der Schimmel (số nhiều: không dùng). Ví dụ: An der Wand im Schlafzimmer ist Schimmel."
+    display_answer: der Schimmel
+  - key: de:exercise:b1w1l2-tr-word-montieren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-montieren
+    prompt:
+      source_text: lắp ráp, lắp đặt (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - montieren
+    explanation:
+      vi: "\"lắp ráp, lắp đặt\" trong tiếng Đức là montieren. Ví dụ: Der Techniker montiert die neue Dusche."
+    display_answer: montieren
+  - key: de:exercise:b1w1l2-fill-plural-gluehbirne
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-gluehbirne
+    prompt:
+      template: "Singular: die Glühbirne · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 12 }
+    answer:
+      blanks:
+        b1:
+          - Glühbirnen
+    known_wrong:
+      - answer: Glühbirne
+        feedback_vi: Glühbirne là dạng số ít; số nhiều là Glühbirnen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Glühbirne là die Glühbirnen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Glühbirne · Plural: die Glühbirnen"
+  - key: de:exercise:b1w1l2-mcq-luecke-renovierung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-renovierung
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Sau khi sửa sang, căn hộ trông sáng hơn nhiều.\": Nach der ___ sieht die Wohnung viel heller aus."
+      stem_lang: vi
+      options:
+        - { id: aw3, text: Sicherung, lang: de }
+        - { id: gp3, text: Tapete, lang: de }
+        - { id: lch, text: Renovierung, lang: de }
+        - { id: nad, text: Fliesen, lang: de }
+    answer:
+      correct_option_id: lch
+    explanation:
+      vi: "Câu có nghĩa \"Sau khi sửa sang, căn hộ trông sáng hơn nhiều.\" nên cần Renovierung (die Renovierung: việc cải tạo, sửa sang nhà). Tapete = giấy dán tường; Sicherung = cầu chì, bộ ngắt điện; Fliesen = viên gạch ốp lát không đúng nghĩa của câu."
+    display_answer: Renovierung
+  - key: de:exercise:b1w1l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Vòi nước trong bếp đã nhỏ giọt cả tuần nay. Ông/bà có thể cử thợ đến giúp được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Wasserhahn in der Küche tropft schon seit einer Woche. Können Sie bitte einen Handwerker schicken?
+        - Der Wasserhahn in der Küche tropft seit einer Woche. Könnten Sie bitte einen Handwerker schicken?
+        - Der Wasserhahn in der Küche tropft schon eine Woche lang. Könnten Sie bitte einen Handwerker vorbeischicken?
+    explanation:
+      vi: "Gợi ý đáp án: Der Wasserhahn in der Küche tropft schon seit einer Woche. Können Sie bitte einen Handwerker schicken? Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Der Wasserhahn in der Küche tropft schon seit einer Woche. Können Sie bitte einen Handwerker schicken?
+    item: de:item:b1w1-wasserhahn
+  - key: de:exercise:b1w1l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Wir haben die Wand ausgemessen und die Regale mit Dübeln befestigt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chúng tôi đã đo bức tường và gắn các kệ bằng tắc kê.
+        - Chúng tôi đo tường xong và cố định các kệ bằng tắc kê.
+        - Chúng tôi đã đo tường rồi gắn kệ bằng đinh tắc kê.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Wir haben die Wand ausgemessen und die Regale mit Dübeln befestigt.\" nghĩa là: Chúng tôi đã đo bức tường và gắn các kệ bằng tắc kê. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Chúng tôi đã đo bức tường và gắn các kệ bằng tắc kê.
+    item: de:item:b1w1-duebel

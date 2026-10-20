@@ -1,0 +1,304 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w1-abstrakta-b1
+order_index: 6
+level: b1
+title:
+  vi: Danh từ trừu tượng thường gặp ở B1 (Abstrakte Nomen)
+objectives:
+  - vi: Nhớ mạo từ và số nhiều của các danh từ trừu tượng thường dùng.
+  - vi: Nhận biết giống của danh từ qua các đuôi -ung, -heit, -keit.
+  - vi: "Dùng chúng trong các cụm: eine Möglichkeit haben, einen Eindruck machen, ein Grund für."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w1-verben-b1
+items:
+  - item: de:item:b1w1-anlass
+  - item: de:item:b1w1-bedeutung
+  - item: de:item:b1w1-beduerfnis
+  - item: de:item:b1w1-eindruck
+  - item: de:item:b1w1-erklaerung
+  - item: de:item:b1w1-gelegenheit
+  - item: de:item:b1w1-grund
+  - item: de:item:b1w1-moeglichkeit
+  - item: de:item:b1w1-neuigkeit
+  - item: de:item:b1w1-schwierigkeit
+  - item: de:item:b1w1-sicherheit
+  - item: de:item:b1w1-situation
+  - item: de:item:b1w1-veraenderung
+  - item: de:item:b1w1-vorstellung
+  - item: de:item:b1w1-wirkung
+  - item: de:item:b1w1-zweck
+  - item: de:item:b1w1-zustand
+  - item: de:item:b1w1-vermutung
+  - item: de:item:b1w1-verhaeltnis
+  - item: de:item:b1w1-entschluss
+  - item: de:item:b1w1-anstrengung
+  - item: de:item:b1w1-anfang
+  - item: de:item:b1w1-rolle
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng chính xác khoảng hai mươi danh từ trừu tượng quan trọng, biết giống qua đuôi và đi đúng với giới từ và động từ thường gặp.
+  - type: explain
+    text:
+      vi: "Danh từ trừu tượng thường có đuôi cho biết giống: -ung, -heit, -keit, -schaft, -tion, -tät luôn là giống cái (die Veränderung, die Sicherheit, die Möglichkeit, die Situation). Ngoại lệ ít gặp ở nhóm này, vì vậy đây là quy tắc đáng tin cậy."
+  - type: explain
+    text:
+      vi: "Một số danh từ khác không theo đuôi nào: der Grund (¨-e), der Zweck, der Zustand (¨-e), der Anlass (¨-e), der Eindruck (¨-e), der Entschluss (¨-e), der Anfang (¨-e), das Bedürfnis (-se), das Verhältnis (-se), die Absicht, die Rolle. Các từ có đuôi -nis giống trung hoặc cái (das Bedürfnis, das Verhältnis, nhưng die Kenntnis)."
+  - type: explain
+    text:
+      vi: "Nhiều danh từ đi với động từ cố định: einen Eindruck machen, eine Rolle spielen, einen Entschluss fassen, eine Möglichkeit haben, Schwierigkeiten haben. Giới từ cũng cố định: der Grund für + Akk, die Veränderung in + Dat, die Vorstellung von + Dat."
+  - type: deep_explain
+    text:
+      vi: "Anlass và Grund gần nhau nhưng khác sắc thái: Anlass là dịp, cớ (ein Anlass zum Feiern), còn Grund là lý do thực sự (der Grund für die Verspätung). Zweck nhấn vào mục đích sử dụng (Welchen Zweck hat das?). Khi viết thư trang trọng hay dùng Aus diesem Anlass hoặc Aus diesem Grund."
+  - type: example
+    target: Zu diesem Anlass hat die Firma ein Fest organisiert.
+    target_lang: de
+    translation:
+      vi: Nhân dịp này công ty đã tổ chức một buổi tiệc.
+    note:
+      vi: der Anlass = dịp, cớ.
+  - type: example
+    target: Was ist die Bedeutung dieses Wortes?
+    target_lang: de
+    translation:
+      vi: Nghĩa của từ này là gì?
+    note:
+      vi: die Bedeutung = ý nghĩa, tầm quan trọng.
+  - type: example
+    target: Jeder Mensch hat das Bedürfnis nach Sicherheit.
+    target_lang: de
+    translation:
+      vi: Ai cũng có nhu cầu về sự an toàn.
+    note:
+      vi: das Bedürfnis = nhu cầu.
+  - type: example
+    target: Der neue Kollege hat einen guten Eindruck gemacht.
+    target_lang: de
+    translation:
+      vi: Đồng nghiệp mới đã gây ấn tượng tốt.
+    note:
+      vi: der Eindruck = ấn tượng.
+  - type: common_mistake
+    wrong: Das ist ein Neuigkeit.
+    right: Das ist eine Neuigkeit.
+    target_lang: de
+    note:
+      vi: Danh từ có đuôi -keit luôn là giống cái nên dùng eine.
+  - type: common_mistake
+    wrong: Der Grund von der Verspätung ist der Stau.
+    right: Der Grund für die Verspätung ist der Stau.
+    target_lang: de
+    note:
+      vi: Với Grund, giới từ cố định là für + Akkusativ, không dùng von.
+  - type: summary
+    points:
+      - vi: einen Eindruck machen, eine Rolle spielen, einen Entschluss fassen, Schwierigkeiten haben; Grund für + Akk.
+exercises:
+  - key: de:exercise:b1w1l6-listen-zweck
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-zweck
+    prompt:
+      audio_asset_id: null
+      fallback_text: Für diesen Zweck brauchen wir mehr Geld.
+      options:
+        - { id: hkt, text: Sự an toàn của bọn trẻ rất quan trọng với chúng tôi., lang: vi }
+        - { id: rwl, text: Bằng nỗ lực lớn cô ấy đã vượt qua kỳ thi., lang: vi }
+        - { id: elw, text: Trong tình huống này tôi không làm được gì., lang: vi }
+        - { id: gtx, text: Cho mục đích này chúng tôi cần thêm tiền., lang: vi }
+    answer:
+      correct_option_id: gtx
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cho mục đích này chúng tôi cần thêm tiền.". Từ khoá là der Zweck (mục đích); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cho mục đích này chúng tôi cần thêm tiền.
+  - key: de:exercise:b1w1l6-mcq-vi-de-grund
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w1-grund
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "lý do; nền, đáy"?
+      stem_lang: vi
+      options:
+        - { id: lwt, text: die Veränderung, lang: de }
+        - { id: a71, text: die Vermutung, lang: de }
+        - { id: j6m, text: die Vorstellung, lang: de }
+        - { id: vh4, text: der Grund, lang: de }
+    answer:
+      correct_option_id: vh4
+    explanation:
+      vi: "der Grund nghĩa là \"lý do; nền, đáy\". Ví dụ: Was ist der Grund für die Verspätung? (Lý do trễ là gì?)"
+    display_answer: der Grund
+  - key: de:exercise:b1w1l6-mcq-de-vi-schwierigkeit
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-schwierigkeit
+    prompt:
+      stem: "\"die Schwierigkeit\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: pt0, text: "tình huống, hoàn cảnh", lang: vi }
+        - { id: a4c, text: "lý do; nền, đáy", lang: vi }
+        - { id: qf0, text: khó khăn, lang: vi }
+        - { id: foe, text: ấn tượng, lang: vi }
+    answer:
+      correct_option_id: qf0
+    explanation:
+      vi: "die Schwierigkeit nghĩa là \"khó khăn\". Ví dụ: Wir hatten am Anfang viele Schwierigkeiten. (Lúc đầu chúng tôi gặp nhiều khó khăn.)"
+    display_answer: khó khăn
+  - key: de:exercise:b1w1l6-mcq-artikel-verhaeltnis
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-verhaeltnis
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Verhältnis\" (mối quan hệ; tỷ lệ): ___ Verhältnis"
+      stem_lang: vi
+      options:
+        - { id: fr5, text: die, lang: de }
+        - { id: e25, text: das, lang: de }
+        - { id: lhh, text: der, lang: de }
+        - { id: hk6, text: ein, lang: de }
+    answer:
+      correct_option_id: e25
+    explanation:
+      vi: "Verhältnis là danh từ giống trung (das): das Verhältnis; số nhiều: die Verhältnisse. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w1l6-tr-word-anfang
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-anfang
+    prompt:
+      source_text: sự bắt đầu (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Anfang
+    known_wrong:
+      - answer: die Anfang
+        feedback_vi: Anfang là giống đực, nên là der Anfang.
+        error_tag: article
+      - answer: das Anfang
+        feedback_vi: Anfang là giống đực, nên là der Anfang.
+        error_tag: article
+    explanation:
+      vi: "\"sự bắt đầu\" trong tiếng Đức là der Anfang (số nhiều: die Anfänge). Ví dụ: Am Anfang war alles sehr neu für mich."
+    display_answer: der Anfang
+  - key: de:exercise:b1w1l6-tr-word-sicherheit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-sicherheit
+    prompt:
+      source_text: sự an toàn (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Sicherheit
+    known_wrong:
+      - answer: der Sicherheit
+        feedback_vi: Sicherheit là giống cái, nên là die Sicherheit.
+        error_tag: article
+      - answer: das Sicherheit
+        feedback_vi: Sicherheit là giống cái, nên là die Sicherheit.
+        error_tag: article
+    explanation:
+      vi: "\"sự an toàn; sự chắc chắn\" trong tiếng Đức là die Sicherheit (số nhiều: không dùng). Ví dụ: Die Sicherheit der Kinder ist uns sehr wichtig."
+    display_answer: die Sicherheit
+  - key: de:exercise:b1w1l6-fill-plural-entschluss
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-entschluss
+    prompt:
+      template: "Singular: der Entschluss · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Entschlüsse
+    known_wrong:
+      - answer: Entschluss
+        feedback_vi: Entschluss là dạng số ít; số nhiều là Entschlüsse.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Entschluss là die Entschlüsse (ký hiệu trong từ điển: ¨-e, nguyên âm đổi thành ä/ö/ü/äu). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Entschluss · Plural: die Entschlüsse"
+  - key: de:exercise:b1w1l6-mcq-luecke-anlass
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-anlass
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Nhân dịp này công ty đã tổ chức một buổi tiệc.\": Zu diesem ___ hat die Firma ein Fest organisiert."
+      stem_lang: vi
+      options:
+        - { id: o59, text: Gelegenheit, lang: de }
+        - { id: imo, text: Anlass, lang: de }
+        - { id: ylj, text: Möglichkeiten, lang: de }
+        - { id: jw4, text: Bedürfnis, lang: de }
+    answer:
+      correct_option_id: imo
+    explanation:
+      vi: "Câu có nghĩa \"Nhân dịp này công ty đã tổ chức một buổi tiệc.\" nên cần Anlass (der Anlass: dịp, cớ). Bedürfnis = nhu cầu; Gelegenheit = cơ hội, dịp; Möglichkeiten = khả năng, cơ hội không đúng nghĩa của câu."
+    display_answer: Anlass
+  - key: de:exercise:b1w1l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Anh ấy không có ý định thay đổi quyết định của mình.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Er hat keine Absicht, seinen Entschluss zu ändern.
+        - Er hat nicht die Absicht, seinen Entschluss zu ändern.
+        - Er beabsichtigt nicht, seinen Entschluss zu ändern.
+    explanation:
+      vi: "Gợi ý đáp án: Er hat keine Absicht, seinen Entschluss zu ändern. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Er hat keine Absicht, seinen Entschluss zu ändern.
+    item: de:item:b1w1-entschluss
+  - key: de:exercise:b1w1l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Schwierigkeiten am Anfang waren groß, aber die Möglichkeit zur Weiterbildung hat uns geholfen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Những khó khăn lúc đầu rất lớn, nhưng khả năng học thêm đã giúp chúng tôi.
+        - Khó khăn lúc đầu thì lớn nhưng cơ hội học thêm đã giúp chúng tôi.
+        - Những khó khăn ban đầu rất lớn, nhưng khả năng tiếp tục học tập đã giúp đỡ chúng tôi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Schwierigkeiten am Anfang waren groß, aber die Möglichkeit zur Weiterbildung hat uns geholfen.\" nghĩa là: Những khó khăn lúc đầu rất lớn, nhưng khả năng học thêm đã giúp chúng tôi. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Những khó khăn lúc đầu rất lớn, nhưng khả năng học thêm đã giúp chúng tôi.
+    item: de:item:b1w1-moeglichkeit

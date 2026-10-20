@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w1-verkehr-mobilitaet
+order_index: 1
+level: b1
+title:
+  vi: Giao thông và di chuyển hằng ngày (Verkehr und Mobilität)
+objectives:
+  - vi: Nói về việc đi làm hằng ngày, giao thông công cộng và các phương tiện mới.
+  - vi: "Hiểu biển báo và quy tắc đường phố: Einbahnstraße, Sackgasse, Zebrastreifen."
+  - vi: Dùng động từ pendeln, ausweichen, umleiten và các danh từ ghép về giao thông.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1u09-wiederholung
+items:
+  - item: de:item:b1w1-pendler
+  - item: de:item:b1w1-fahrgemeinschaft
+  - item: de:item:b1w1-berufsverkehr
+  - item: de:item:b1w1-monatsticket
+  - item: de:item:b1w1-umweltzone
+  - item: de:item:b1w1-umweg
+  - item: de:item:b1w1-abkuerzung
+  - item: de:item:b1w1-einbahnstrasse
+  - item: de:item:b1w1-sackgasse
+  - item: de:item:b1w1-zebrastreifen
+  - item: de:item:b1w1-buergersteig
+  - item: de:item:b1w1-fahrkartenautomat
+  - item: de:item:b1w1-fahrkartenkontrolle
+  - item: de:item:b1w1-schwarzfahrer
+  - item: de:item:b1w1-anschluss
+  - item: de:item:b1w1-elektroroller
+  - item: de:item:b1w1-carsharing
+  - item: de:item:b1w1-pendeln
+  - item: de:item:b1w1-ueberqueren
+  - item: de:item:b1w1-kontrollieren
+  - item: de:item:b1w1-ausweichen
+  - item: de:item:b1w1-umleiten
+  - item: de:item:b1w1-blockieren
+  - item: de:item:b1w1-umweltfreundlich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về cách đi làm, các tình huống giao thông thường gặp và đọc hiểu thông báo về đường phố, tàu xe.
+  - type: explain
+    text:
+      vi: "Giao thông tiếng Đức có rất nhiều danh từ ghép: der Berufsverkehr (giờ cao điểm), das Monatsticket (vé tháng), die Fahrgemeinschaft (nhóm đi chung xe). Giống của từ ghép luôn theo thành phần cuối: die Fahrkartenkontrolle (die Kontrolle), der Fahrkartenautomat (der Automat)."
+  - type: explain
+    text:
+      vi: "Người đi làm xa thường được gọi là der Pendler / die Pendlerin, động từ là pendeln. Câu thường gặp: Ich pendle jeden Tag eine Stunde. Nhiều người dùng Fahrgemeinschaften hoặc Carsharing để tiết kiệm chi phí và giảm khí thải."
+  - type: explain
+    text:
+      vi: "Khi gặp chướng ngại, bạn nói ausweichen (tránh: weicht aus – wich aus – ist ausgewichen) hoặc dùng die Umleitung / umleiten: Der Verkehr wird umgeleitet. Một số từ cần chú ý: der Umweg (đường vòng, mất thêm thời gian) và die Abkürzung (đường tắt)."
+  - type: deep_explain
+    text:
+      vi: "Der Schwarzfahrer là người đi tàu xe mà không mua vé; schwarzfahren (fährt schwarz, ist schwarzgefahren) là hành vi bị phạt. Trong các thành phố Đức thường có die Umweltzone, nơi chỉ xe đạt tiêu chuẩn khí thải mới được vào. Der Anschluss (chuyến nối) rất quan trọng khi đi tàu: Ich habe meinen Anschluss verpasst."
+  - type: example
+    target: Die Pendler stehen jeden Morgen im Stau.
+    target_lang: de
+    translation:
+      vi: Những người đi làm xa sáng nào cũng bị kẹt xe.
+    note:
+      vi: der Pendler = người đi làm xa, người đi lại hằng ngày.
+  - type: example
+    target: Wir bilden eine Fahrgemeinschaft und teilen die Benzinkosten.
+    target_lang: de
+    translation:
+      vi: Chúng tôi lập nhóm đi chung xe và chia nhau tiền xăng.
+    note:
+      vi: die Fahrgemeinschaft = nhóm đi chung xe.
+  - type: example
+    target: Im Berufsverkehr brauche ich doppelt so lange.
+    target_lang: de
+    translation:
+      vi: Vào giờ cao điểm tôi mất gấp đôi thời gian.
+    note:
+      vi: der Berufsverkehr = giao thông giờ cao điểm đi làm.
+  - type: example
+    target: Mit dem Monatsticket kann ich alle Busse benutzen.
+    target_lang: de
+    translation:
+      vi: Với vé tháng tôi đi được mọi tuyến xe buýt.
+    note:
+      vi: das Monatsticket = vé tháng.
+  - type: common_mistake
+    wrong: Ich habe mein Anschluss verpasst.
+    right: Ich habe meinen Anschluss verpasst.
+    target_lang: de
+    note:
+      vi: Der Anschluss là giống đực nên ở Akkusativ (tân ngữ của verpassen) mạo từ đổi thành meinen.
+  - type: common_mistake
+    wrong: Die Fahrkartenautomat ist kaputt.
+    right: Der Fahrkartenautomat ist kaputt.
+    target_lang: de
+    note:
+      vi: "Giống của từ ghép theo thành phần cuối: der Automat nên der Fahrkartenautomat."
+  - type: summary
+    points:
+      - vi: pendeln, überqueren, kontrollieren, ausweichen (wich aus, ist ausgewichen), umleiten, blockieren.
+exercises:
+  - key: de:exercise:b1w1l1-listen-pendler
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-pendler
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Pendler stehen jeden Morgen im Stau.
+      options:
+        - { id: ayp, text: Xe ô tô phải dừng ở vạch dành cho người đi bộ., lang: vi }
+        - { id: s75, text: Những người đi làm xa sáng nào cũng bị kẹt xe., lang: vi }
+        - { id: ltd, text: Lúc kiểm tra vé anh ấy không mang theo vé., lang: vi }
+        - { id: gbw, text: Chồng tôi đi làm hằng ngày đến Frankfurt đã hai năm., lang: vi }
+    answer:
+      correct_option_id: s75
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Những người đi làm xa sáng nào cũng bị kẹt xe.". Từ khoá là der Pendler (người đi làm xa, người đi lại hằng ngày); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Những người đi làm xa sáng nào cũng bị kẹt xe.
+  - key: de:exercise:b1w1l1-mcq-vi-de-ausweichen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w1-ausweichen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "tránh, né"?
+      stem_lang: vi
+      options:
+        - { id: elj, text: überqueren, lang: de }
+        - { id: qwd, text: kontrollieren, lang: de }
+        - { id: sjf, text: umleiten, lang: de }
+        - { id: v0v, text: ausweichen, lang: de }
+    answer:
+      correct_option_id: v0v
+    explanation:
+      vi: "ausweichen nghĩa là \"tránh, né\". Ví dụ: Der Radfahrer musste einem Auto ausweichen. (Người đi xe đạp phải tránh một chiếc ô tô.)"
+    display_answer: ausweichen
+  - key: de:exercise:b1w1l1-mcq-de-vi-buergersteig
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-buergersteig
+    prompt:
+      stem: "\"der Bürgersteig\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: gp5, text: giao thông giờ cao điểm đi làm, lang: vi }
+        - { id: mio, text: "kiểm tra, kiểm soát", lang: vi }
+        - { id: omp, text: "xe tay ga điện, xe scooter điện", lang: vi }
+        - { id: kr2, text: vỉa hè, lang: vi }
+    answer:
+      correct_option_id: kr2
+    explanation:
+      vi: "der Bürgersteig nghĩa là \"vỉa hè\". Ví dụ: Fahrräder gehören nicht auf den Bürgersteig. (Xe đạp không được đi trên vỉa hè.)"
+    display_answer: vỉa hè
+  - key: de:exercise:b1w1l1-mcq-artikel-umweg
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-umweg
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Umweg\" (đường vòng): ___ Umweg"
+      stem_lang: vi
+      options:
+        - { id: frw, text: das, lang: de }
+        - { id: xg9, text: ein, lang: de }
+        - { id: umu, text: der, lang: de }
+        - { id: j9k, text: die, lang: de }
+    answer:
+      correct_option_id: umu
+    explanation:
+      vi: "Umweg là danh từ giống đực (der): der Umweg; số nhiều: die Umwege. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b1w1l1-tr-word-sackgasse
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-sackgasse
+    prompt:
+      source_text: ngõ cụt (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Sackgasse
+    known_wrong:
+      - answer: der Sackgasse
+        feedback_vi: Sackgasse là giống cái, nên là die Sackgasse.
+        error_tag: article
+      - answer: das Sackgasse
+        feedback_vi: Sackgasse là giống cái, nên là die Sackgasse.
+        error_tag: article
+    explanation:
+      vi: "\"ngõ cụt\" trong tiếng Đức là die Sackgasse (số nhiều: die Sackgassen). Ví dụ: Die Straße endet in einer Sackgasse."
+    display_answer: die Sackgasse
+  - key: de:exercise:b1w1l1-tr-word-kontrollieren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-kontrollieren
+    prompt:
+      source_text: kiểm tra, kiểm soát (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - kontrollieren
+    explanation:
+      vi: "\"kiểm tra, kiểm soát\" trong tiếng Đức là kontrollieren. Ví dụ: Der Schaffner kontrolliert die Fahrkarten."
+    display_answer: kontrollieren
+  - key: de:exercise:b1w1l1-fill-plural-einbahnstrasse
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-einbahnstrasse
+    prompt:
+      template: "Singular: die Einbahnstraße · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 16 }
+    answer:
+      blanks:
+        b1:
+          - Einbahnstraßen
+    known_wrong:
+      - answer: Einbahnstraße
+        feedback_vi: Einbahnstraße là dạng số ít; số nhiều là Einbahnstraßen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Einbahnstraße là die Einbahnstraßen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Einbahnstraße · Plural: die Einbahnstraßen"
+  - key: de:exercise:b1w1l1-mcq-luecke-fahrgemeinschaft
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-fahrgemeinschaft
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Chúng tôi lập nhóm đi chung xe và chia nhau tiền xăng.\": Wir bilden eine ___ und teilen die Benzinkosten."
+      stem_lang: vi
+      options:
+        - { id: kk1, text: Fahrgemeinschaft, lang: de }
+        - { id: df0, text: Umweltzone, lang: de }
+        - { id: w7p, text: Sackgasse, lang: de }
+        - { id: xvw, text: Fahrkartenkontrolle, lang: de }
+    answer:
+      correct_option_id: kk1
+    explanation:
+      vi: "Câu có nghĩa \"Chúng tôi lập nhóm đi chung xe và chia nhau tiền xăng.\" nên cần Fahrgemeinschaft (die Fahrgemeinschaft: nhóm đi chung xe). Umweltzone = khu vực kiểm soát khí thải; Fahrkartenkontrolle = việc kiểm tra vé; Sackgasse = ngõ cụt không đúng nghĩa của câu."
+    display_answer: Fahrgemeinschaft
+  - key: de:exercise:b1w1l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Vì giờ cao điểm kẹt xe nhiều nên mỗi ngày tôi đi làm bằng tàu điện.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Weil es im Berufsverkehr viel Stau gibt, fahre ich jeden Tag mit der Bahn zur Arbeit.
+        - Ich fahre jeden Tag mit der Bahn zur Arbeit, weil es im Berufsverkehr viel Stau gibt.
+        - Weil es im Berufsverkehr viel Stau gibt, nehme ich jeden Tag die Bahn zur Arbeit.
+    explanation:
+      vi: "Gợi ý đáp án: Weil es im Berufsverkehr viel Stau gibt, fahre ich jeden Tag mit der Bahn zur Arbeit. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Weil es im Berufsverkehr viel Stau gibt, fahre ich jeden Tag mit der Bahn zur Arbeit.
+    item: de:item:b1w1-berufsverkehr
+  - key: de:exercise:b1w1l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Wegen der Baustelle wird der Verkehr über die Abkürzung durch das Wohngebiet umgeleitet.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì công trường, giao thông bị chuyển hướng qua đường tắt xuyên khu dân cư.
+        - Do có công trường, xe cộ được chuyển hướng qua con đường tắt đi xuyên khu dân cư.
+        - Vì công trường xây dựng nên giao thông được điều hướng qua đường tắt trong khu dân cư.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Wegen der Baustelle wird der Verkehr über die Abkürzung durch das Wohngebiet umgeleitet.\" nghĩa là: Vì công trường, giao thông bị chuyển hướng qua đường tắt xuyên khu dân cư. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Vì công trường, giao thông bị chuyển hướng qua đường tắt xuyên khu dân cư.
+    item: de:item:b1w1-abkuerzung

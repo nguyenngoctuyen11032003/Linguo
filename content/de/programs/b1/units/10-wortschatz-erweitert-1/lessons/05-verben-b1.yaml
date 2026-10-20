@@ -1,0 +1,232 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w1-verben-b1
+order_index: 5
+level: b1
+title:
+  vi: Động từ thông dụng ở trình độ B1 (Wichtige Verben)
+objectives:
+  - vi: Dùng chính xác hơn hai mươi động từ B1 với đầy đủ dạng chính.
+  - vi: Phân biệt động từ có tiền tố tách và không tách.
+  - vi: Dùng các động từ trong câu chính và câu phụ, ở hiện tại và Perfekt.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w1-freizeit-hobbys
+items:
+  - item: de:item:b1w1-achten
+  - item: de:item:b1w1-annehmen
+  - item: de:item:b1w1-ansehen
+  - item: de:item:b1w1-aufgeben
+  - item: de:item:b1w1-ausgehen
+  - item: de:item:b1w1-behalten
+  - item: de:item:b1w1-betragen
+  - item: de:item:b1w1-bieten
+  - item: de:item:b1w1-anbieten
+  - item: de:item:b1w1-eintragen
+  - item: de:item:b1w1-enttaeuschen
+  - item: de:item:b1w1-erlauben
+  - item: de:item:b1w1-fortsetzen
+  - item: de:item:b1w1-gelingen
+  - item: de:item:b1w1-reichen
+  - item: de:item:b1w1-scheitern
+  - item: de:item:b1w1-stattfinden
+  - item: de:item:b1w1-ueberlegen
+  - item: de:item:b1w1-ueberraschen
+  - item: de:item:b1w1-uebernehmen
+  - item: de:item:b1w1-unternehmen
+  - item: de:item:b1w1-verbieten
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng hơn hai mươi động từ thông dụng B1, kể cả dạng bất quy tắc, trong câu chính, câu phụ và Perfekt.
+  - type: explain
+    text:
+      vi: "Nhớ cả ba dạng chính khi học động từ bất quy tắc: bieten – bot – hat geboten, aufgeben – gab auf – hat aufgegeben, verbieten – verbot – hat verboten. Với động từ có tiền tố không tách như be-, ent-, er-, ver-, Partizip II không có ge-: betragen → betragen, enttäuschen → enttäuscht."
+  - type: explain
+    text:
+      vi: "Động từ tách: annehmen, ansehen, aufgeben, ausgehen, eintragen, fortsetzen, stattfinden, anbieten, übernehmen (không tách). Ở câu chính, phần tách đứng cuối câu: Das Konzert findet am Samstag statt. Ở câu phụ, viết liền: …, weil das Konzert am Samstag stattfindet."
+  - type: explain
+    text:
+      vi: "Một số động từ đi với giới từ hoặc cách đặc biệt: achten auf + Akkusativ (chú ý đến), überlegen (suy nghĩ, cân nhắc), sich ansehen (xem, nhìn kỹ) và nhớ gelingen dùng với Dativ: Der Plan ist mir gelungen. Chủ ngữ của gelingen thường là sự việc (der Plan), không phải người."
+  - type: deep_explain
+    text:
+      vi: "Annehmen có hai nghĩa: nhận (ein Geschenk annehmen) và giả sử (Ich nehme an, dass er kommt). Betragen chỉ dùng cho số tiền hoặc thời lượng: Die Kosten betragen 50 Euro. Ausgehen là đi chơi buổi tối (Wir gehen heute Abend aus), hay hết, cạn (Das Benzin geht aus), cẩn thận ngữ cảnh."
+  - type: example
+    target: Bitte achten Sie auf die Stufe!
+    target_lang: de
+    translation:
+      vi: Xin hãy chú ý bậc thang!
+    note:
+      vi: achten = chú ý, để ý (auf + Akk).
+  - type: example
+    target: Ich nehme an, dass der Zug pünktlich ist.
+    target_lang: de
+    translation:
+      vi: Tôi cho rằng tàu đến đúng giờ.
+    note:
+      vi: annehmen = nhận, chấp nhận; giả sử.
+  - type: example
+    target: Wir sehen uns morgen die Wohnung an.
+    target_lang: de
+    translation:
+      vi: Ngày mai chúng tôi đi xem căn hộ.
+    note:
+      vi: ansehen = nhìn kỹ, xem.
+  - type: example
+    target: Du darfst jetzt nicht aufgeben!
+    target_lang: de
+    translation:
+      vi: Bây giờ bạn không được bỏ cuộc!
+    note:
+      vi: aufgeben = từ bỏ; gửi (thư, hành lý).
+  - type: common_mistake
+    wrong: Das Konzert stattfindet am Samstag.
+    right: Das Konzert findet am Samstag statt.
+    target_lang: de
+    note:
+      vi: "Stattfinden là động từ tách: findet ở vị trí thứ hai, statt đứng cuối câu."
+  - type: common_mistake
+    wrong: Der Plan hat mir gelungen.
+    right: Der Plan ist mir gelungen.
+    target_lang: de
+    note:
+      vi: "Gelingen dùng sein ở Perfekt: ist gelungen, và người đứng ở Dativ (mir)."
+  - type: summary
+    points:
+      - vi: "stattfinden, fortsetzen, ansehen, ausgehen, reichen: động từ tách nên phần tách đứng cuối câu chính."
+exercises:
+  - key: de:exercise:b1w1l5-listen-gelingen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-gelingen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Kuchen ist mir diesmal richtig gelungen.
+      options:
+        - { id: sus, text: Lần này cái bánh tôi làm thành công hẳn., lang: vi }
+        - { id: nyw, text: Bây giờ bạn không được bỏ cuộc!, lang: vi }
+        - { id: cph, text: Xin hãy chú ý bậc thang!, lang: vi }
+        - { id: pvi, text: Sau giờ nghỉ chúng ta tiếp tục buổi học., lang: vi }
+    answer:
+      correct_option_id: sus
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Lần này cái bánh tôi làm thành công hẳn.". Từ khoá là gelingen (thành công, làm được); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Lần này cái bánh tôi làm thành công hẳn.
+  - key: de:exercise:b1w1l5-mcq-vi-de-annehmen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w1-annehmen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "nhận, chấp nhận; giả sử"?
+      stem_lang: vi
+      options:
+        - { id: kvb, text: enttäuschen, lang: de }
+        - { id: uxm, text: erlauben, lang: de }
+        - { id: iy9, text: annehmen, lang: de }
+        - { id: l9m, text: ausgehen, lang: de }
+    answer:
+      correct_option_id: iy9
+    explanation:
+      vi: "annehmen nghĩa là \"nhận, chấp nhận; giả sử\". Ví dụ: Ich nehme an, dass der Zug pünktlich ist. (Tôi cho rằng tàu đến đúng giờ.)"
+    display_answer: annehmen
+  - key: de:exercise:b1w1l5-mcq-de-vi-ausgehen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w1-ausgehen
+    prompt:
+      stem: "\"ausgehen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: hha, text: "nhìn kỹ, xem", lang: vi }
+        - { id: wc8, text: "đề nghị, mời, chào bán", lang: vi }
+        - { id: z53, text: "đi chơi buổi tối; hết, tắt", lang: vi }
+        - { id: mou, text: "đảm nhận, tiếp quản", lang: vi }
+    answer:
+      correct_option_id: z53
+    explanation:
+      vi: "ausgehen nghĩa là \"đi chơi buổi tối; hết, tắt\". Ví dụ: Am Samstag gehen wir mit Freunden aus. (Thứ Bảy chúng tôi đi chơi cùng bạn bè.)"
+    display_answer: đi chơi buổi tối; hết, tắt
+  - key: de:exercise:b1w1l5-tr-word-ansehen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-ansehen
+    prompt:
+      source_text: nhìn kỹ, xem (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ansehen
+    explanation:
+      vi: "\"nhìn kỹ, xem\" trong tiếng Đức là ansehen. Ví dụ: Wir sehen uns morgen die Wohnung an."
+    display_answer: ansehen
+  - key: de:exercise:b1w1l5-mcq-luecke-achten
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w1-achten
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Xin hãy chú ý bậc thang!\": Bitte ___ Sie auf die Stufe!"
+      stem_lang: vi
+      options:
+        - { id: rnq, text: achten, lang: de }
+        - { id: y64, text: reicht, lang: de }
+        - { id: p3f, text: verboten, lang: de }
+        - { id: ila, text: aus, lang: de }
+    answer:
+      correct_option_id: rnq
+    explanation:
+      vi: "Câu có nghĩa \"Xin hãy chú ý bậc thang!\" nên cần achten (achten: chú ý, để ý (auf + Akk)). reicht = đủ; chìa ra; verboten = cấm; aus = đi chơi buổi tối; hết, tắt không đúng nghĩa của câu."
+    display_answer: achten
+  - key: de:exercise:b1w1l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Cuộc họp không diễn ra vào thứ Sáu mà vào thứ Hai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das Treffen findet nicht am Freitag statt, sondern am Montag.
+        - Das Treffen findet nicht am Freitag, sondern am Montag statt.
+        - Das Treffen findet nicht am Freitag statt, sondern erst am Montag.
+    explanation:
+      vi: "Gợi ý đáp án: Das Treffen findet nicht am Freitag statt, sondern am Montag. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Das Treffen findet nicht am Freitag statt, sondern am Montag.
+  - key: de:exercise:b1w1l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Ich nehme an, dass er den Vorschlag annimmt und das Projekt fortsetzt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi cho rằng anh ấy sẽ chấp nhận đề xuất và tiếp tục dự án.
+        - Tôi đoán anh ấy sẽ nhận đề nghị và tiếp tục dự án.
+        - Tôi giả định anh ta chấp nhận đề xuất và tiếp tục thực hiện dự án.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Ich nehme an, dass er den Vorschlag annimmt und das Projekt fortsetzt.\" nghĩa là: Tôi cho rằng anh ấy sẽ chấp nhận đề xuất và tiếp tục dự án. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Tôi cho rằng anh ấy sẽ chấp nhận đề xuất và tiếp tục dự án.
+    item: de:item:b1w1-fortsetzen
