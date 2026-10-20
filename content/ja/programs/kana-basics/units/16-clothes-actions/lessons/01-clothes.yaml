@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:clothes
+order_index: 1
+level: n5
+title:
+  vi: Quần áo - シャツ・ズボン・きます・はきます
+objectives:
+  - vi: "Gọi tên quần áo: ふく, シャツ, ズボン, スカート, コート, セーター, くつした."
+  - vi: "Dùng đúng động từ mặc: きます, はきます, かぶります, かけます và ぬぎます."
+  - vi: Nói mình đang mặc gì và mua gì.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:study-verbs
+items:
+  - item: ja:item:n5-u16-fuku
+  - item: ja:item:n5-u16-shatsu
+  - item: ja:item:n5-u16-zubon
+  - item: ja:item:n5-u16-sukaato
+  - item: ja:item:n5-u16-kooto
+  - item: ja:item:n5-u16-seetaa
+  - item: ja:item:n5-u16-kutsushita
+  - item: ja:item:n5-u16-kimasu
+  - item: ja:item:n5-u16-hakimasu
+  - item: ja:item:n5-u16-nugimasu
+  - item: ja:item:n5-u16-kaburimasu
+  - item: ja:item:n5-u16-kakemasu
+  - item: ja:item:n4-kutsu
+    role: reuse
+  - item: ja:item:n5-u12-boushi
+    role: reuse
+  - item: ja:item:n5-u12-megane
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mình mặc gì - あかいセーターをきます。くろいくつをはきます。- và chọn động từ đúng cho từng món đồ.
+  - type: explain
+    text:
+      vi: "Quần áo: ふく (quần áo nói chung), シャツ (áo sơ mi, áo thun), ズボン (quần dài), スカート (váy), コート (áo khoác), セーター (áo len), くつした (tất), くつ (giày)."
+  - type: explain
+    text:
+      vi: "Tiếng Nhật có động từ riêng cho từng loại đồ - きます (mặc thân trên: シャツ, セーター, コート), はきます (đi, mặc phần dưới: くつ, くつした, ズボン, スカート), かぶります (đội: ぼうし), かけます (đeo kính: めがね). Cởi ra dùng chung ぬぎます."
+  - type: explain
+    text:
+      vi: 'Tiếng Việt chỉ cần "mặc" hay "đi" nên người học hay dùng きます cho mọi thứ. Hãy nhớ bốn nhóm: きる, はく, かぶる, かける. Câu mẫu - シャツをきます, くつをはきます, ぼうしをかぶります, めがねをかけます.'
+  - type: deep_explain
+    text:
+      vi: きます có hai nghĩa khác - 来ます (đến) và 切ります (きります, cắt). Chữ Hán 着ます làm rõ nghĩa "mặc". Với đồ mặc chân như くつした và ズボン bạn dùng はきます, nhưng với đồ mặc thân trên bạn dùng きます. Khi bước vào nhà Nhật, ぬぎます áp dụng cho くつ (giày) ở げんかん. Chữ Hán - 服, 靴下, 着ます, 履きます, 脱ぎます, 被ります, 掛けます.
+  - type: example
+    target: あかいセーターをきて、くろいくつをはきます。
+    target_lang: ja
+    translation:
+      vi: Tôi mặc áo len đỏ và đi giày đen.
+    note:
+      vi: きて・はきます - dùng đúng động từ cho từng đồ.
+  - type: example
+    target: ふゆはコートをきて、ぼうしをかぶります。
+    target_lang: ja
+    translation:
+      vi: Mùa đông tôi mặc áo khoác và đội mũ.
+    note:
+      vi: かぶります - đội mũ.
+  - type: example
+    target: げんかんでくつをぬぎます。
+    target_lang: ja
+    translation:
+      vi: Tôi cởi giày ở lối vào.
+    note:
+      vi: ぬぎます - cởi.
+  - type: example
+    target: めがねをかけて、しんぶんをよみます。
+    target_lang: ja
+    translation:
+      vi: Tôi đeo kính để đọc báo.
+    note:
+      vi: かけて - đeo (thể て).
+  - type: common_mistake
+    wrong: ズボンをきます。
+    right: ズボンをはきます。
+    target_lang: ja
+    note:
+      vi: Quần dùng はきます (mặc, mang phần dưới); きます dành cho áo.
+  - type: common_mistake
+    wrong: めがねをかぶります。
+    right: めがねをかけます。
+    target_lang: ja
+    note:
+      vi: Kính dùng かけます; かぶります chỉ dùng cho mũ nón.
+  - type: summary
+    points:
+      - vi: ふく · シャツ · ズボン · スカート · コート · セーター · くつ · くつした.
+      - vi: きます (áo, thân trên) · はきます (quần, giày, tất) · かぶります (mũ) · かけます (kính).
+      - vi: ぬぎます - cởi ra (mọi thứ).
+      - vi: Chọn động từ theo loại đồ.
+exercises:
+  - key: ja:exercise:clothes-kimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-kimasu
+    prompt:
+      stem: Bạn mặc áo sơ mi. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: b32
+          text: かけます
+          lang: ja
+        - id: x9o
+          text: きます
+          lang: ja
+        - id: ecy
+          text: かぶります
+          lang: ja
+        - id: htu
+          text: はきます
+          lang: ja
+    answer:
+      correct_option_id: x9o
+    explanation:
+      vi: Áo thân trên dùng きます. はきます dành cho quần, giày, tất; かぶります dành cho mũ; かけます dành cho kính.
+    display_answer: きます
+  - key: ja:exercise:clothes-hakimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-hakimasu
+    prompt:
+      stem: Bạn đi giày. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: nk6
+          text: かぶります
+          lang: ja
+        - id: f1v
+          text: きます
+          lang: ja
+        - id: d3g
+          text: はきます
+          lang: ja
+        - id: s58
+          text: かけます
+          lang: ja
+    answer:
+      correct_option_id: d3g
+    explanation:
+      vi: Giày, tất, quần dùng はきます. きます dành cho áo thân trên, かぶります cho mũ, かけます cho kính.
+    display_answer: はきます
+  - key: ja:exercise:clothes-seetaa
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u16-seetaa
+    prompt:
+      audio_asset_id: null
+      fallback_text: ふゆはあたたかいセーターをきて、コートをきます。
+      options:
+        - id: sfz
+          text: Mùa đông tôi đội mũ và đeo kính.
+          lang: vi
+        - id: spy
+          text: Mùa hè tôi mặc áo thun và quần ngắn.
+          lang: vi
+        - id: u5z
+          text: Mùa đông tôi đi giày và đi tất.
+          lang: vi
+        - id: l2a
+          text: Mùa đông tôi mặc áo len ấm và áo khoác.
+          lang: vi
+    answer:
+      correct_option_id: l2a
+    explanation:
+      vi: セーター - áo len; コート - áo khoác; きます - mặc.
+    display_answer: Mùa đông tôi mặc áo len ấm và áo khoác.
+  - key: ja:exercise:clothes-zubon-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-zubon
+    prompt:
+      template: くろい{{b1}}をはきます。 (Tôi mặc quần dài đen.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Đồ mặc phần dưới, katakana.
+        - Bắt đầu bằng ズ - ズボン.
+    answer:
+      blanks:
+        b1:
+          - ズボン
+    known_wrong:
+      - answer: シャツ
+        feedback_vi: シャツ là áo; quần đi với はきます.
+        error_tag: vocab_meaning
+      - answer: スカート
+        feedback_vi: スカート là váy.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ズボン là quần dài. Quần dùng はきます.
+    display_answer: くろいズボンをはきます。
+  - key: ja:exercise:clothes-boushi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-kaburimasu
+    prompt:
+      stem: Bạn đội mũ. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: t3x
+          text: きます
+          lang: ja
+        - id: o7h
+          text: かぶります
+          lang: ja
+        - id: qpp
+          text: かけます
+          lang: ja
+        - id: hll
+          text: はきます
+          lang: ja
+    answer:
+      correct_option_id: o7h
+    explanation:
+      vi: Mũ nón dùng かぶります. きます là mặc áo, はきます là mang giày/quần, かけます là đeo kính.
+    display_answer: かぶります
+  - key: ja:exercise:clothes-kaburi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-kaburimasu
+    prompt:
+      template: ぼうしを{{b1}}。 (Tôi đội mũ.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - かぶります
+          - 被ります
+    known_wrong:
+      - answer: きます
+        feedback_vi: きます dành cho áo thân trên.
+        error_tag: verb_choice
+      - answer: はきます
+        feedback_vi: はきます dành cho giày, quần.
+        error_tag: verb_choice
+    explanation:
+      vi: かぶります - đội mũ nón.
+    display_answer: ぼうしをかぶります。
+  - key: ja:exercise:clothes-kake-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-kakemasu
+    prompt:
+      template: めがねを{{b1}}、しんぶんをよみます。 (Tôi đeo kính để đọc báo.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - かけて
+          - 掛けて
+    known_wrong:
+      - answer: かぶって
+        feedback_vi: かぶる dành cho mũ, không dùng cho kính.
+        error_tag: verb_choice
+      - answer: きて
+        feedback_vi: きる dành cho áo.
+        error_tag: verb_choice
+    explanation:
+      vi: かけて là thể て của かけます - đeo kính; nối với よみます.
+    display_answer: めがねをかけて、しんぶんをよみます。
+  - key: ja:exercise:clothes-kutsu-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-hakimasu
+    prompt:
+      source_text: Tôi đi giày đen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - くろいくつをはきます。
+        - 黒い靴を履きます。
+        - わたしはくろいくつをはきます。
+        - くろいくつをはいています。
+    known_wrong:
+      - answer: くろいくつをきます。
+        feedback_vi: Giày dùng はきます, không dùng きます.
+        error_tag: verb_choice
+    explanation:
+      vi: くつを はきます - đi giày; くろい - đen.
+    display_answer: くろいくつをはきます。
+  - key: ja:exercise:clothes-coat-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u16-kooto
+    prompt:
+      source_text: ふゆはコートをきて、ぼうしをかぶって、そとへでます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mùa đông tôi mặc áo khoác, đội mũ rồi ra ngoài.
+        - Mùa đông tôi mặc áo khoác và đội mũ rồi đi ra ngoài.
+        - Vào mùa đông tôi mặc áo khoác, đội mũ rồi ra ngoài.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mùa hè tôi mặc áo khoác, đội mũ rồi ra ngoài.
+        feedback_vi: ふゆ là mùa đông.
+        error_tag: season
+    explanation:
+      vi: きて・かぶって - thể て nối các hành động theo thứ tự; そとへでます - ra ngoài.
+    display_answer: Mùa đông tôi mặc áo khoác, đội mũ rồi ra ngoài.
+  - key: ja:exercise:clothes-nugi-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-nugimasu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Ở lối vào tôi cởi giày."'
+      tokens:
+        - id: t3
+          text: ぬぎます。
+        - id: t2
+          text: くつを
+        - id: t1
+          text: げんかんで
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Nơi diễn ra (げんかんで) → đối tượng (くつを) → động từ (ぬぎます).
+    display_answer: げんかんでくつをぬぎます。
+  - key: ja:exercise:clothes-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-fuku
+    prompt:
+      stem: Bạn nói “Tôi đang mặc áo len và đeo kính”. Câu nào dùng động từ đúng?
+      stem_lang: vi
+      options:
+        - id: nlx
+          text: セーターをはいて、めがねをかぶります。
+          lang: ja
+        - id: zpe
+          text: セーターをかぶって、めがねをはきます。
+          lang: ja
+        - id: qni
+          text: セーターをかけて、めがねをきます。
+          lang: ja
+        - id: d5z
+          text: セーターをきて、めがねをかけます。
+          lang: ja
+    answer:
+      correct_option_id: d5z
+    explanation:
+      vi: Áo len dùng きます, kính dùng かけます. Các tổ hợp còn lại dùng nhầm động từ cho loại đồ.
+    display_answer: セーターをきて、めがねをかけます。

@@ -1,0 +1,603 @@
+# Học liệu unit "Trang phục và các động từ hằng ngày" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u16-fuku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 服
+      reading: ふく
+      romanization: fuku
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần áo, trang phục
+      examples:
+        - target: あたらしいふくをかいます。
+          translation:
+            vi: Tôi mua quần áo mới.
+  - key: ja:item:n5-u16-shatsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: シャツ
+      romanization: shatsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo sơ mi, áo thun
+      examples:
+        - target: しろいシャツをきます。
+          translation:
+            vi: Tôi mặc áo sơ mi trắng.
+  - key: ja:item:n5-u16-zubon
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ズボン
+      romanization: zubon
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần dài
+      examples:
+        - target: くろいズボンをはきます。
+          translation:
+            vi: Tôi mặc quần dài đen.
+  - key: ja:item:n5-u16-sukaato
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: スカート
+      romanization: sukaato
+      pos: danh từ
+    back:
+      meaning:
+        vi: váy ngắn, chân váy
+      examples:
+        - target: あかいスカートをはきます。
+          translation:
+            vi: Tôi mặc chân váy đỏ.
+  - key: ja:item:n5-u16-kooto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: コート
+      romanization: kooto
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo khoác ngoài, áo măng tô
+      examples:
+        - target: ふゆはコートをきます。
+          translation:
+            vi: Mùa đông tôi mặc áo khoác.
+  - key: ja:item:n5-u16-seetaa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: セーター
+      romanization: seetaa
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo len
+      examples:
+        - target: あたたかいセーターをかいました。
+          translation:
+            vi: Tôi đã mua một chiếc áo len ấm.
+  - key: ja:item:n5-u16-kutsushita
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 靴下
+      reading: くつした
+      romanization: kutsushita
+      pos: danh từ
+    back:
+      meaning:
+        vi: tất, vớ
+      examples:
+        - target: くつしたをはきます。
+          translation:
+            vi: Tôi mang tất.
+  - key: ja:item:n5-u16-kimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 着ます
+      reading: きます
+      romanization: kimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: mặc (áo, đồ phần thân)
+      examples:
+        - target: シャツをきます。
+          translation:
+            vi: Tôi mặc áo.
+      confusion:
+        vi: きます có ba chữ Hán - 来ます (đến), 着ます (mặc), 切ります (đọc きります). Ngữ cảnh ngay cho biết nghĩa.
+  - key: ja:item:n5-u16-hakimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 履きます
+      reading: はきます
+      romanization: hakimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: mang, mặc (giày, tất, quần, váy)
+      examples:
+        - target: くつをはきます。
+          translation:
+            vi: Tôi đi giày.
+      pronunciation_note:
+        vi: "はきます dùng cho đồ mặc phần dưới và đồ mang chân: くつ, くつした, ズボン, スカート."
+  - key: ja:item:n5-u16-nugimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 脱ぎます
+      reading: ぬぎます
+      romanization: nugimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: cởi (quần áo, giày)
+      examples:
+        - target: げんかんでくつをぬぎます。
+          translation:
+            vi: Tôi cởi giày ở lối vào.
+  - key: ja:item:n5-u16-kaburimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 被ります
+      reading: かぶります
+      romanization: kaburimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đội (mũ)
+      examples:
+        - target: ぼうしをかぶります。
+          translation:
+            vi: Tôi đội mũ.
+  - key: ja:item:n5-u16-kakemasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 掛けます
+      reading: かけます
+      romanization: kakemasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đeo (kính); treo; gọi (điện thoại)
+      examples:
+        - target: めがねをかけます。
+          translation:
+            vi: Tôi đeo kính.
+      confusion:
+        vi: "かけます đa nghĩa: めがねをかける (đeo kính), でんわをかける (gọi điện), かべにかける (treo lên tường)."
+  - key: ja:item:n5-u16-mochimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 持ちます
+      reading: もちます
+      romanization: mochimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: cầm, mang, có (đồ vật)
+      examples:
+        - target: かばんをもちます。
+          translation:
+            vi: Tôi cầm cặp.
+      pronunciation_note:
+        vi: もっています - đang cầm / sở hữu (sẽ học ở N4).
+  - key: ja:item:n5-u16-torimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 取ります
+      reading: とります
+      romanization: torimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: lấy; chọn
+      examples:
+        - target: しおをとります。
+          translation:
+            vi: Tôi lấy muối.
+  - key: ja:item:n5-u16-tsukurimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 作ります
+      reading: つくります
+      romanization: tsukurimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: làm, chế tạo, nấu
+      examples:
+        - target: ごはんをつくります。
+          translation:
+            vi: Tôi nấu cơm.
+  - key: ja:item:n5-u16-kirimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 切ります
+      reading: きります
+      romanization: kirimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: cắt, thái
+      examples:
+        - target: やさいをきります。
+          translation:
+            vi: Tôi thái rau.
+  - key: ja:item:n5-u16-urimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 売ります
+      reading: うります
+      romanization: urimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: bán
+      examples:
+        - target: みせはくだものをうります。
+          translation:
+            vi: Cửa hàng bán hoa quả.
+      confusion:
+        vi: うります (bán) và かいます (mua) là cặp đối nghĩa.
+  - key: ja:item:n5-u16-karimasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 借ります
+      reading: かります
+      romanization: karimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: mượn
+      examples:
+        - target: ともだちにほんをかります。
+          translation:
+            vi: Tôi mượn sách của bạn.
+      confusion:
+        vi: かります (mượn vào mình) trái nghĩa với かします (cho mượn), vốn là 貸します.
+  - key: ja:item:n5-u16-dashimasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 出します
+      reading: だします
+      romanization: dashimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đưa ra, gửi (thư), nộp
+      examples:
+        - target: てがみをだします。
+          translation:
+            vi: Tôi gửi thư.
+  - key: ja:item:n5-u16-iremasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 入れます
+      reading: いれます
+      romanization: iremasu
+      pos: động từ
+    back:
+      meaning:
+        vi: bỏ vào, cho vào
+      examples:
+        - target: コーヒーにさとうをいれます。
+          translation:
+            vi: Tôi cho đường vào cà phê.
+  - key: ja:item:n5-u16-okimasu-put
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 置きます
+      reading: おきます
+      romanization: okimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đặt, để
+      examples:
+        - target: つくえのうえにほんをおきます。
+          translation:
+            vi: Tôi đặt sách lên bàn.
+      confusion:
+        vi: おきます (置きます, đặt) khác おきます (起きます, thức dậy); đối tượng を cho biết nghĩa.
+  - key: ja:item:n5-u16-oshimasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 押します
+      reading: おします
+      romanization: oshimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đẩy, ấn
+      examples:
+        - target: ボタンをおします。
+          translation:
+            vi: Tôi ấn nút.
+  - key: ja:item:n5-u16-hashirimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 走ります
+      reading: はしります
+      romanization: hashirimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: chạy
+      examples:
+        - target: こうえんではしります。
+          translation:
+            vi: Tôi chạy ở công viên.
+  - key: ja:item:n5-u16-tachimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 立ちます
+      reading: たちます
+      romanization: tachimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đứng; đứng dậy
+      examples:
+        - target: えきのまえでたちます。
+          translation:
+            vi: Tôi đứng trước ga.
+  - key: ja:item:n5-u16-suwarimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 座ります
+      reading: すわります
+      romanization: suwarimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: ngồi
+      examples:
+        - target: いすにすわります。
+          translation:
+            vi: Tôi ngồi lên ghế.
+      pronunciation_note:
+        vi: N に すわります - ngồi lên N.
+  - key: ja:item:n5-u16-hairimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 入ります
+      reading: はいります
+      romanization: hairimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: vào, đi vào
+      examples:
+        - target: へやにはいります。
+          translation:
+            vi: Tôi vào phòng.
+      confusion:
+        vi: はいります - vào; いれます - bỏ (vật) vào. おふろにはいります - tắm bồn.
+  - key: ja:item:n5-u16-demasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 出ます
+      reading: でます
+      romanization: demasu
+      pos: động từ
+    back:
+      meaning:
+        vi: ra, đi ra; xuất phát
+      examples:
+        - target: うちをでます。
+          translation:
+            vi: Tôi ra khỏi nhà.
+      pronunciation_note:
+        vi: N を でます - rời khỏi N.
+  - key: ja:item:n5-u16-asobimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 遊びます
+      reading: あそびます
+      romanization: asobimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: chơi, đi chơi
+      examples:
+        - target: こうえんでともだちとあそびます。
+          translation:
+            vi: Tôi chơi với bạn ở công viên.
+  - key: ja:item:n5-u16-utaimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 歌います
+      reading: うたいます
+      romanization: utaimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: hát
+      examples:
+        - target: カラオケでうたいます。
+          translation:
+            vi: Tôi hát ở karaoke.
+  - key: ja:item:n5-u16-warai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 笑います
+      reading: わらいます
+      romanization: waraimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: cười
+      examples:
+        - target: あかちゃんがわらいます。
+          translation:
+            vi: Em bé cười.
+  - key: ja:item:n5-u16-nakimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 泣きます
+      reading: なきます
+      romanization: nakimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: khóc
+      examples:
+        - target: あかちゃんがなきます。
+          translation:
+            vi: Em bé khóc.
+      confusion:
+        vi: なきます (泣きます, khóc) khác なります (trở thành) - chỉ một chữ.
+  - key: ja:item:n5-u16-aimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 会います
+      reading: あいます
+      romanization: aimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: gặp
+      examples:
+        - target: ともだちにあいます。
+          translation:
+            vi: Tôi gặp bạn.
+      pronunciation_note:
+        vi: N に あいます - gặp N (người).

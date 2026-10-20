@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:hand-verbs
+order_index: 2
+level: n5
+title:
+  vi: Động từ thao tác - もつ・とる・つくる・きる
+objectives:
+  - vi: "Dùng các động từ thao tác: もちます, とります, つくります, きります, うります, かります."
+  - vi: Dùng だします, いれます, おきます, おします trong các tình huống hằng ngày.
+  - vi: Phân biệt かいます (mua) - うります (bán) và かります (mượn) - かします (cho mượn).
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:clothes
+items:
+  - item: ja:item:n5-u16-mochimasu
+  - item: ja:item:n5-u16-torimasu
+  - item: ja:item:n5-u16-tsukurimasu
+  - item: ja:item:n5-u16-kirimasu
+  - item: ja:item:n5-u16-urimasu
+  - item: ja:item:n5-u16-karimasu
+  - item: ja:item:n5-u16-dashimasu
+  - item: ja:item:n5-u16-iremasu
+  - item: ja:item:n5-u16-okimasu-put
+  - item: ja:item:n5-u16-oshimasu
+  - item: ja:item:n4-kasu
+    role: reuse
+  - item: ja:item:kaimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng được các động từ thao tác thường ngày - ごはんをつくります。しおをとります。ともだちにほんをかります。
+  - type: explain
+    text:
+      vi: "Động từ về tay: もちます (cầm, mang), とります (lấy), つくります (làm, nấu), きります (cắt), いれます (bỏ vào), おきます (đặt để), おします (ấn, đẩy), だします (đưa ra, gửi). Tất cả đều là động từ ngoại động nên đi với を."
+  - type: explain
+    text:
+      vi: Hai cặp đối nghĩa - かいます (mua) ↔ うります (bán); かります (mượn vào mình) ↔ かします (cho người khác mượn). Người cho mượn dùng に - ともだちに ほんを かします (cho bạn mượn sách).
+  - type: explain
+    text:
+      vi: Chú ý おきます - 起きます (thức dậy) và 置きます (đặt) đọc giống nhau; 置きます đi với を - ほんをおきます, còn 起きます không có を - あさ６じにおきます.
+  - type: deep_explain
+    text:
+      vi: "Mượn đi với に chỉ nguồn - ともだちに かります (mượn của bạn). Cho mượn あげます/かします: ともだちに かします (cho bạn mượn). つくります dùng cả cho làm đồ và nấu ăn - りょうりを つくります; だします có nghĩa gửi thư (てがみを だします) và nộp bài (しゅくだいを だします). Chữ Hán - 持ちます, 取ります, 作ります, 切ります, 売ります, 借ります, 出します, 入れます, 置きます, 押します."
+  - type: example
+    target: まいばんごはんをつくります。
+    target_lang: ja
+    translation:
+      vi: Tối nào tôi cũng nấu cơm.
+    note:
+      vi: つくります - nấu, làm.
+  - type: example
+    target: ともだちにほんをかります。
+    target_lang: ja
+    translation:
+      vi: Tôi mượn sách của bạn.
+    note:
+      vi: に - nguồn mượn (từ bạn).
+  - type: example
+    target: コーヒーにさとうをいれます。
+    target_lang: ja
+    translation:
+      vi: Tôi cho đường vào cà phê.
+    note:
+      vi: いれます - bỏ vào.
+  - type: example
+    target: つくえのうえにかばんをおきます。
+    target_lang: ja
+    translation:
+      vi: Tôi đặt cặp lên bàn.
+    note:
+      vi: おきます - đặt, để.
+  - type: common_mistake
+    wrong: ともだちからほんをかします。(muốn nói mượn)
+    right: ともだちにほんをかります。
+    target_lang: ja
+    note:
+      vi: Mượn vào mình là かります; かします là cho người khác mượn.
+  - type: common_mistake
+    wrong: あさ６じにほんをおきます。(đặt sách)
+    right: あさ６じにおきます。
+    target_lang: ja
+    note:
+      vi: Thức dậy là おきます không có を; có を (ほんを) thì là 置きます (đặt).
+  - type: summary
+    points:
+      - vi: もちます cầm · とります lấy · つくります làm, nấu · きります cắt · いれます bỏ vào · おきます đặt · おします ấn · だします gửi, nộp.
+      - vi: うります bán ↔ かいます mua.
+      - vi: かります mượn ↔ かします cho mượn.
+      - vi: おきます đặt (を) ≠ おきます thức dậy.
+exercises:
+  - key: ja:exercise:hand-verbs-tsukuru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-tsukurimasu
+    prompt:
+      stem: Bạn nấu cơm. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: ygq
+          text: つくります
+          lang: ja
+        - id: yom
+          text: きります
+          lang: ja
+        - id: wwt
+          text: とります
+          lang: ja
+        - id: i4a
+          text: おします
+          lang: ja
+    answer:
+      correct_option_id: ygq
+    explanation:
+      vi: つくります là làm, nấu. とります là lấy, きります là cắt, おします là ấn.
+    display_answer: つくります
+  - key: ja:exercise:hand-verbs-urimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-urimasu
+    prompt:
+      stem: Cửa hàng bán trái cây. Động từ nào đúng? みせは くだものを ___。
+      stem_lang: vi
+      options:
+        - id: shk
+          text: かいます
+          lang: ja
+        - id: m45
+          text: かります
+          lang: ja
+        - id: xlq
+          text: うります
+          lang: ja
+        - id: vyg
+          text: もちます
+          lang: ja
+    answer:
+      correct_option_id: xlq
+    explanation:
+      vi: うります là bán. かいます là mua, かります là mượn, もちます là cầm.
+    display_answer: うります
+  - key: ja:exercise:hand-verbs-okimasu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u16-okimasu-put
+    prompt:
+      audio_asset_id: null
+      fallback_text: つくえのうえにほんをおきます。かばんをいすにおきます。
+      options:
+        - id: n6u
+          text: Tôi đặt sách lên bàn. Tôi đặt cặp lên ghế.
+          lang: vi
+        - id: k49
+          text: Tôi thức dậy trên ghế. Tôi mua cặp.
+          lang: vi
+        - id: jsq
+          text: Tôi đặt cặp lên bàn. Tôi đặt sách lên ghế.
+          lang: vi
+        - id: mve
+          text: Tôi cầm sách trên bàn. Tôi cầm cặp trên ghế.
+          lang: vi
+    answer:
+      correct_option_id: n6u
+    explanation:
+      vi: おきます - đặt, để; つくえのうえ - trên bàn; いす - ghế.
+    display_answer: Tôi đặt sách lên bàn. Tôi đặt cặp lên ghế.
+  - key: ja:exercise:hand-verbs-kiru-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-kirimasu
+    prompt:
+      template: やさいを{{b1}}。 (Tôi thái rau.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Động từ dùng với dao.
+        - Bắt đầu bằng き - きります.
+    answer:
+      blanks:
+        b1:
+          - きります
+          - 切ります
+    known_wrong:
+      - answer: つくります
+        feedback_vi: つくります là nấu, làm; thái là きります.
+        error_tag: verb_choice
+    explanation:
+      vi: きります là cắt, thái. やさいをきります - thái rau.
+    display_answer: やさいをきります。
+  - key: ja:exercise:hand-verbs-karimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-karimasu
+    prompt:
+      stem: Bạn muốn mượn sách của bạn. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: kyg
+          text: ともだちにほんをかします。
+          lang: ja
+        - id: x4w
+          text: ともだちにほんをうります。
+          lang: ja
+        - id: r21
+          text: ともだちにほんをかります。
+          lang: ja
+        - id: s1a
+          text: ともだちにほんをいれます。
+          lang: ja
+    answer:
+      correct_option_id: r21
+    explanation:
+      vi: Mượn vào mình dùng かります. かします là cho mượn, うります là bán, いれます là bỏ vào.
+    display_answer: ともだちにほんをかります。
+  - key: ja:exercise:hand-verbs-iremasu-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-iremasu
+    prompt:
+      template: コーヒーにさとうを{{b1}}。 (Tôi cho đường vào cà phê.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - いれます
+          - 入れます
+    known_wrong:
+      - answer: はいります
+        feedback_vi: はいります là vào (người tự đi vào); bỏ vật vào là いれます.
+        error_tag: verb_choice
+    explanation:
+      vi: いれます - bỏ vào, cho vào.
+    display_answer: コーヒーにさとうをいれます。
+  - key: ja:exercise:hand-verbs-dashi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-dashimasu
+    prompt:
+      template: てがみを{{b1}}。 (Tôi gửi thư.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - だします
+          - 出します
+    known_wrong:
+      - answer: もちます
+        feedback_vi: もちます là cầm; gửi thư là だします.
+        error_tag: verb_choice
+    explanation:
+      vi: だします - gửi, nộp, đưa ra.
+    display_answer: てがみをだします。
+  - key: ja:exercise:hand-verbs-karimasu-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-karimasu
+    prompt:
+      source_text: Tôi mượn sách của bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ともだちにほんをかります。
+        - 友達に本を借ります。
+        - ともだちからほんをかります。
+        - 友達から本を借ります。
+    known_wrong:
+      - answer: ともだちにほんをかします。
+        feedback_vi: かします là cho mượn.
+        error_tag: verb_choice
+    explanation:
+      vi: かります - mượn; に hoặc から chỉ nguồn mượn.
+    display_answer: ともだちにほんをかります。
+  - key: ja:exercise:hand-verbs-tsukuru-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u16-tsukurimasu
+    prompt:
+      source_text: まいばんごはんをつくって、しおをいれます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tối nào tôi cũng nấu cơm và cho muối vào.
+        - Mỗi tối tôi nấu cơm rồi cho muối vào.
+        - Tối nào tôi cũng nấu cơm, cho muối vào.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tối nào tôi cũng mua cơm và lấy muối.
+        feedback_vi: つくります là nấu, いれます là bỏ vào.
+        error_tag: verb_choice
+    explanation:
+      vi: つくって là thể て của つくります (nấu); いれます - bỏ vào; しお - muối.
+    display_answer: Tối nào tôi cũng nấu cơm và cho muối vào.
+  - key: ja:exercise:hand-verbs-oku-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-okimasu-put
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi đặt cặp lên bàn."'
+      tokens:
+        - id: t2
+          text: うえに
+        - id: t3
+          text: かばんを
+        - id: t1
+          text: つくえの
+        - id: t4
+          text: おきます。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: N の うえに (vị trí) → đối tượng を → おきます (đặt).
+    display_answer: つくえのうえにかばんをおきます。
+  - key: ja:exercise:hand-verbs-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-urimasu
+    prompt:
+      stem: Bạn muốn nói “Tôi bán sách cũ”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: duv
+          text: ふるいほんをかいます。
+          lang: ja
+        - id: jij
+          text: ふるいほんをかります。
+          lang: ja
+        - id: tsh
+          text: ふるいほんをうります。
+          lang: ja
+        - id: s3g
+          text: ふるいほんをおします。
+          lang: ja
+    answer:
+      correct_option_id: tsh
+    explanation:
+      vi: Bán là うります. かいます là mua, かります là mượn, おします là ấn. Các động từ này đối nghĩa hoặc không liên quan.
+    display_answer: ふるいほんをうります。

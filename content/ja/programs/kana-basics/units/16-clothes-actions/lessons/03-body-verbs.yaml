@@ -1,0 +1,387 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:movement-verbs
+order_index: 3
+level: n5
+title:
+  vi: Động từ chuyển động - はしる・すわる・はいる・でる
+objectives:
+  - vi: "Dùng các động từ chuyển động: はしります, たちます, すわります, はいります, でます, あそびます."
+  - vi: "Nói những động tác của cảm xúc: わらいます, なきます, うたいます."
+  - vi: "Dùng đúng trợ từ: N に すわります / はいります, N を でます, N に あいます."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:hand-verbs
+items:
+  - item: ja:item:n5-u16-hashirimasu
+  - item: ja:item:n5-u16-tachimasu
+  - item: ja:item:n5-u16-suwarimasu
+  - item: ja:item:n5-u16-hairimasu
+  - item: ja:item:n5-u16-demasu
+  - item: ja:item:n5-u16-asobimasu
+  - item: ja:item:n5-u16-utaimasu
+  - item: ja:item:n5-u16-warai
+  - item: ja:item:n5-u16-nakimasu
+  - item: ja:item:n5-u16-aimasu
+  - item: ja:item:n4-oyogu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được các động tác hằng ngày - いすにすわります。へやにはいります。うちをでます。ともだちにあいます。
+  - type: explain
+    text:
+      vi: "Động từ chuyển động: はしります (chạy), たちます (đứng), すわります (ngồi), はいります (vào), でます (ra, rời đi), あそびます (chơi). Cảm xúc và hành động: わらいます (cười), なきます (khóc), うたいます (hát), あいます (gặp)."
+  - type: explain
+    text:
+      vi: Trợ từ đi kèm cần học thuộc - ngồi lên ghế N に すわります; vào phòng N に はいります; ra khỏi nhà N を でます; gặp bạn ともだちに あいます; chơi ở công viên こうえんで あそびます.
+  - type: explain
+    text:
+      vi: はいります (vào) trái nghĩa với でます (ra); たちます (đứng) trái nghĩa với すわります (ngồi). あいます dùng với に (gặp ai) và nhấn đối tượng là người - ともだちに あいます.
+  - type: deep_explain
+    text:
+      vi: 'Cụm quen thuộc - おふろにはいります (tắm bồn), いすにすわります, うちをでます (rời nhà). でます còn có nghĩa "xuất hiện, xuất phát": でんしゃが でます (tàu chạy). Chú ý なきます (泣きます, khóc) khác なります (trở thành) - chỉ một chữ き. Chữ Hán - 走ります, 立ちます, 座ります, 入ります, 出ます, 遊びます, 歌います, 笑います, 泣きます, 会います.'
+  - type: example
+    target: いすにすわって、しんぶんをよみます。
+    target_lang: ja
+    translation:
+      vi: Tôi ngồi lên ghế và đọc báo.
+    note:
+      vi: N に すわります - ngồi lên N.
+  - type: example
+    target: あさ７じにうちをでます。
+    target_lang: ja
+    translation:
+      vi: Sáng 7 giờ tôi ra khỏi nhà.
+    note:
+      vi: N を でます - rời N.
+  - type: example
+    target: にちようびにともだちにあいます。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tôi gặp bạn.
+    note:
+      vi: N に あいます - gặp N (người).
+  - type: example
+    target: こうえんでこどもがあそんでいます。
+    target_lang: ja
+    translation:
+      vi: Trẻ con đang chơi ở công viên.
+    note:
+      vi: で - nơi chơi; あそんでいます - đang chơi (sẽ học ở N4).
+  - type: common_mistake
+    wrong: いすをすわります。
+    right: いすにすわります。
+    target_lang: ja
+    note:
+      vi: Ngồi lên ghế dùng に, không dùng を.
+  - type: common_mistake
+    wrong: ともだちをあいます。
+    right: ともだちにあいます。
+    target_lang: ja
+    note:
+      vi: Gặp ai dùng に, không dùng を.
+  - type: summary
+    points:
+      - vi: はしります chạy · たちます đứng · すわります ngồi · はいります vào · でます ra · あそびます chơi.
+      - vi: わらいます cười · なきます khóc · うたいます hát · あいます gặp.
+      - vi: N に すわります/はいります/あいます · N を でます.
+      - vi: こうえんで あそびます - nơi diễn ra dùng で.
+exercises:
+  - key: ja:exercise:movement-verbs-suwaru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-suwarimasu
+    prompt:
+      stem: Từ nào có nghĩa là “ngồi”?
+      stem_lang: vi
+      options:
+        - id: vzj
+          text: すわります
+          lang: ja
+        - id: o7w
+          text: たちます
+          lang: ja
+        - id: c7x
+          text: あそびます
+          lang: ja
+        - id: xwy
+          text: はしります
+          lang: ja
+    answer:
+      correct_option_id: vzj
+    explanation:
+      vi: すわります là ngồi. たちます là đứng, はしります là chạy, あそびます là chơi.
+    display_answer: すわります
+  - key: ja:exercise:movement-verbs-hairu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-hairimasu
+    prompt:
+      stem: Bạn bước vào phòng. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: c0m
+          text: はいります
+          lang: ja
+        - id: ucc
+          text: あいます
+          lang: ja
+        - id: lom
+          text: でます
+          lang: ja
+        - id: alk
+          text: たちます
+          lang: ja
+    answer:
+      correct_option_id: c0m
+    explanation:
+      vi: Vào phòng là はいります. でます là ra, たちます là đứng, あいます là gặp.
+    display_answer: はいります
+  - key: ja:exercise:movement-verbs-aimasu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u16-aimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: にちようびにともだちにあいます。こうえんであそびます。
+      options:
+        - id: hwl
+          text: Chủ nhật tôi gặp bạn. Tôi chơi ở công viên.
+          lang: vi
+        - id: klw
+          text: Chủ nhật tôi gặp thầy. Tôi học ở thư viện.
+          lang: vi
+        - id: wjg
+          text: Thứ bảy tôi gặp bạn. Tôi chơi ở công viên.
+          lang: vi
+        - id: mvk
+          text: Chủ nhật tôi gặp bạn. Tôi đi bộ ở công viên.
+          lang: vi
+    answer:
+      correct_option_id: hwl
+    explanation:
+      vi: ともだちに あいます - gặp bạn; こうえんで あそびます - chơi ở công viên.
+    display_answer: Chủ nhật tôi gặp bạn. Tôi chơi ở công viên.
+  - key: ja:exercise:movement-verbs-ni-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-suwarimasu
+    prompt:
+      template: いす{{b1}}すわります。 (Tôi ngồi lên ghế.)
+      blanks:
+        - id: b1
+          width_hint: 2
+      hint_levels:
+        - Trợ từ chỉ nơi bạn ngồi lên.
+        - Một chữ - に.
+    answer:
+      blanks:
+        b1:
+          - に
+    known_wrong:
+      - answer: を
+        feedback_vi: すわります đi với に, không dùng を.
+        error_tag: particle_ni_wo
+      - answer: で
+        feedback_vi: で chỉ nơi diễn ra hành động, không dùng với すわります để chỉ ngồi lên vật.
+        error_tag: particle_ni_de
+    explanation:
+      vi: N に すわります - ngồi lên N.
+    display_answer: いすにすわります。
+  - key: ja:exercise:movement-verbs-wo-demasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u16-demasu
+    prompt:
+      stem: Bạn muốn nói “Sáng 7 giờ tôi ra khỏi nhà”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: nlb
+          text: あさ７じにうちをでます。
+          lang: ja
+        - id: lab
+          text: あさ７じにうちにでます。
+          lang: ja
+        - id: z43
+          text: あさ７じにうちでたちます。
+          lang: ja
+        - id: pzd
+          text: あさ７じにうちがでます。
+          lang: ja
+    answer:
+      correct_option_id: nlb
+    explanation:
+      vi: Rời khỏi nơi nào dùng を + でます. に không hợp (dễ nhầm với đích đến), が không dùng cho tân ngữ này.
+    display_answer: あさ７じにうちをでます。
+  - key: ja:exercise:movement-verbs-hashiri-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-hashirimasu
+    prompt:
+      template: こうえんで{{b1}}。 (Tôi chạy ở công viên.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - はしります
+          - 走ります
+    known_wrong:
+      - answer: たちます
+        feedback_vi: たちます là đứng; chạy là はしります.
+        error_tag: verb_choice
+      - answer: あるきます
+        feedback_vi: あるきます là đi bộ.
+        error_tag: verb_choice
+    explanation:
+      vi: はしります - chạy.
+    display_answer: こうえんではしります。
+  - key: ja:exercise:movement-verbs-ni-aimasu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-aimasu
+    prompt:
+      template: にちようびにともだち{{b1}}あいます。 (Chủ nhật tôi gặp bạn.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - に
+    known_wrong:
+      - answer: を
+        feedback_vi: あいます đi với に khi gặp người.
+        error_tag: particle_ni_wo
+      - answer: と
+        feedback_vi: と nghĩa là "cùng" (ともだちと あいます = gặp cùng bạn); câu này nói gặp bạn nên dùng に.
+        error_tag: particle_ni_to
+    explanation:
+      vi: N に あいます - gặp N (người).
+    display_answer: にちようびにともだちにあいます。
+  - key: ja:exercise:movement-verbs-suwaru-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-suwarimasu
+    prompt:
+      source_text: Tôi ngồi lên ghế.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - いすにすわります。
+        - 椅子に座ります。
+        - わたしはいすにすわります。
+        - いすにすわる。
+    known_wrong:
+      - answer: いすをすわります。
+        feedback_vi: すわります đi với に, không dùng を.
+        error_tag: particle_ni_wo
+      - answer: いすでたちます。
+        feedback_vi: たちます là đứng; ngồi là すわります.
+        error_tag: verb_choice
+    explanation:
+      vi: N に すわります - ngồi lên N.
+    display_answer: いすにすわります。
+  - key: ja:exercise:movement-verbs-asobi-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u16-asobimasu
+    prompt:
+      source_text: こうえんでこどもがはしって、あそんでいます。ともだちはわらっています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trẻ con đang chạy và chơi ở công viên. Bạn bè đang cười.
+        - Ở công viên trẻ con chạy và chơi. Bạn bè cười.
+        - Ở công viên có bọn trẻ đang chạy nhảy chơi đùa. Bạn đang cười.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trẻ con đang khóc ở công viên. Bạn bè đang cười.
+        feedback_vi: はしって là chạy; わらって là cười.
+        error_tag: verb_choice
+    explanation:
+      vi: はしって・あそんで - thể て nối hành động; ～ています - đang (sẽ học ở N4).
+    display_answer: Trẻ con đang chạy và chơi ở công viên. Bạn bè đang cười.
+  - key: ja:exercise:movement-verbs-demasu-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-demasu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Sáng 7 giờ tôi ra khỏi nhà."'
+      tokens:
+        - id: t4
+          text: でます。
+        - id: t2
+          text: ７じに
+        - id: t3
+          text: うちを
+        - id: t1
+          text: あさ
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Thời gian (あさ７じに) → nơi rời đi (うちを) → でます.
+    display_answer: あさ７じにうちをでます。
+  - key: ja:exercise:movement-verbs-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u16-nakimasu
+    prompt:
+      stem: Em bé khóc. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: c5o
+          text: あかちゃんがはしります。
+          lang: ja
+        - id: n7z
+          text: あかちゃんがわらいます。
+          lang: ja
+        - id: sxr
+          text: あかちゃんがたちます。
+          lang: ja
+        - id: a72
+          text: あかちゃんがなきます。
+          lang: ja
+    answer:
+      correct_option_id: a72
+    explanation:
+      vi: なきます là khóc. わらいます là cười, はしります là chạy, たちます là đứng - đều không phải "khóc".
+    display_answer: あかちゃんがなきます。
