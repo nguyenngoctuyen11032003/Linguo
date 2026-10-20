@@ -1,0 +1,304 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w1-obst-gemuese
+order_index: 1
+level: a2
+title:
+  vi: Trái cây, rau củ và gia vị (Obst, Gemüse und Gewürze)
+objectives:
+  - vi: Gọi tên các loại trái cây, rau củ và gia vị thường gặp ở chợ và siêu thị.
+  - vi: Nhớ mạo từ và số nhiều của từng danh từ; phân biệt danh từ đếm được và không đếm được.
+  - vi: "Nói số lượng khi mua: ein Kilo Erdbeeren, 500 Gramm Pilze, zwei Zitronen."
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2u07-wiederholung
+items:
+  - item: de:item:a2w1-mehl
+  - item: de:item:a2w1-gewuerz
+  - item: de:item:a2w1-pfeffer
+  - item: de:item:a2w1-honig
+  - item: de:item:a2w1-marmelade
+  - item: de:item:a2w1-joghurt
+  - item: de:item:a2w1-muesli
+  - item: de:item:a2w1-gurke
+  - item: de:item:a2w1-karotte
+  - item: de:item:a2w1-pilz
+  - item: de:item:a2w1-erdbeere
+  - item: de:item:a2w1-kirsche
+  - item: de:item:a2w1-birne
+  - item: de:item:a2w1-orange
+  - item: de:item:a2w1-zitrone
+  - item: de:item:a2w1-traube
+  - item: de:item:a2w1-bohne
+  - item: de:item:a2w1-knoblauch
+  - item: de:item:a2w1-paprika
+  - item: de:item:a2w1-spinat
+  - item: de:item:a2w1-kohl
+  - item: de:item:a2w1-pfirsich
+  - item: de:item:a2w1-melone
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi tên được khoảng hai mươi loại thực phẩm thường gặp, nói đúng số nhiều và mua đúng lượng cần dùng.
+  - type: explain
+    text:
+      vi: "Rất nhiều tên trái cây tận cùng bằng -e và là giống cái, số nhiều thêm -n: die Birne → die Birnen, die Kirsche → die Kirschen, die Erdbeere → die Erdbeeren, die Traube → die Trauben. Quy tắc này cho bạn chỗ dựa, nhưng vẫn phải nhớ ngoại lệ như der Pfirsich (số nhiều die Pfirsiche)."
+  - type: explain
+    text:
+      vi: "Danh từ không đếm được chỉ có số ít và không đi với ein/eine: Mehl, Pfeffer, Honig, Knoblauch, Spinat, Kohl. Bạn nói Ich brauche Mehl hoặc ein Kilo Mehl, không nói ein Mehl. Danh từ đếm được khi gọi số lượng dùng số nhiều: ein Kilo Erdbeeren, zwei Zitronen."
+  - type: explain
+    text:
+      vi: Những từ vay mượn như der Joghurt, das Müsli, die Paprika, die Orange giữ nguyên dạng quốc tế nên dễ nhớ nghĩa, nhưng mạo từ thì phải học riêng. Số nhiều của hai từ đầu là die Joghurts, die Müslis; die Paprika có số nhiều die Paprikas.
+  - type: deep_explain
+    text:
+      vi: "Ở Đức, rau củ và trái cây thường bán theo cân (das Kilo, das Pfund = 500 g) hoặc theo từng quả (das Stück). Bạn nghe người bán nói: \"Darf es sonst noch etwas sein?\" nghĩa là \"Bạn có cần thêm gì không?\". Cũng có nơi ghi giá theo Bund (bó) cho rau thơm và hành lá, ví dụ ein Bund Petersilie."
+  - type: example
+    target: Wir sammeln Pilze im Wald.
+    target_lang: de
+    translation:
+      vi: Chúng tôi hái nấm trong rừng.
+    note:
+      vi: Pilz là nấm nói chung; loại nấm mỡ trắng bán ở siêu thị gọi là Champignon.
+  - type: example
+    target: Für den Kuchen brauchen wir 300 Gramm Mehl.
+    target_lang: de
+    translation:
+      vi: Để làm bánh chúng ta cần 300 gam bột mì.
+    note:
+      vi: das Mehl = bột mì.
+  - type: example
+    target: Ohne Gewürze schmeckt die Suppe langweilig.
+    target_lang: de
+    translation:
+      vi: Không có gia vị thì món súp nhạt nhẽo.
+    note:
+      vi: das Gewürz = gia vị.
+  - type: example
+    target: Bitte geben Sie mir den Pfeffer.
+    target_lang: de
+    translation:
+      vi: Làm ơn đưa tôi lọ tiêu.
+    note:
+      vi: der Pfeffer = hạt tiêu.
+  - type: common_mistake
+    wrong: Ich brauche ein Mehl.
+    right: Ich brauche Mehl.
+    target_lang: de
+    note:
+      vi: Mehl không đếm được nên không dùng ein; nói Mehl hoặc ein Kilo Mehl.
+  - type: common_mistake
+    wrong: Ich kaufe ein Kilo Erdbeere.
+    right: Ich kaufe ein Kilo Erdbeeren.
+    target_lang: de
+    note:
+      vi: "Sau đơn vị Kilo, danh từ đếm được đi ở số nhiều: Erdbeeren."
+  - type: summary
+    points:
+      - vi: "Số lượng: ein Kilo Erdbeeren, 500 Gramm Pilze, zwei Zitronen, ein Stück Marmelade nghĩa là một lát hoặc miếng phù hợp ngữ cảnh."
+exercises:
+  - key: de:exercise:a2w1l1-listen-birne
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-birne
+    prompt:
+      audio_asset_id: null
+      fallback_text: Möchtest du eine Birne oder einen Apfel?
+      options:
+        - { id: v7l, text: Bữa sáng tôi ăn một tô müsli., lang: vi }
+        - { id: o9r, text: Bạn muốn một quả lê hay một quả táo?, lang: vi }
+        - { id: d6g, text: Những quả nho này không có hạt., lang: vi }
+        - { id: sz2, text: Mùa đông thường có bắp cải., lang: vi }
+    answer:
+      correct_option_id: o9r
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Bạn muốn một quả lê hay một quả táo?". Từ khoá là die Birne (quả lê); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Bạn muốn một quả lê hay một quả táo?
+  - key: de:exercise:a2w1l1-mcq-vi-de-knoblauch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w1-knoblauch
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "tỏi"?
+      stem_lang: vi
+      options:
+        - { id: tjj, text: der Kohl, lang: de }
+        - { id: y58, text: der Knoblauch, lang: de }
+        - { id: vh0, text: die Melone, lang: de }
+        - { id: eyn, text: der Honig, lang: de }
+    answer:
+      correct_option_id: y58
+    explanation:
+      vi: "der Knoblauch nghĩa là \"tỏi\". Ví dụ: In die Soße kommt viel Knoblauch. (Trong nước sốt có nhiều tỏi.)"
+    display_answer: der Knoblauch
+  - key: de:exercise:a2w1l1-mcq-de-vi-traube
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-traube
+    prompt:
+      stem: "\"die Traube\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: gha, text: quả nho, lang: vi }
+        - { id: e4w, text: nấm, lang: vi }
+        - { id: umd, text: quả đào, lang: vi }
+        - { id: s8c, text: sữa chua, lang: vi }
+    answer:
+      correct_option_id: gha
+    explanation:
+      vi: "die Traube nghĩa là \"quả nho\". Ví dụ: Diese Trauben haben keine Kerne. (Những quả nho này không có hạt.)"
+    display_answer: quả nho
+  - key: de:exercise:a2w1l1-mcq-artikel-gurke
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-gurke
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Gurke\" (quả dưa chuột): ___ Gurke"
+      stem_lang: vi
+      options:
+        - { id: g4c, text: der, lang: de }
+        - { id: due, text: die, lang: de }
+        - { id: j2z, text: das, lang: de }
+        - { id: a41, text: ein, lang: de }
+    answer:
+      correct_option_id: due
+    explanation:
+      vi: "Gurke là danh từ giống cái (die): die Gurke; số nhiều: die Gurken. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:a2w1l1-tr-word-gewuerz
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-gewuerz
+    prompt:
+      source_text: gia vị (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Gewürz
+    known_wrong:
+      - answer: der Gewürz
+        feedback_vi: Gewürz là giống trung, nên là das Gewürz.
+        error_tag: article
+      - answer: die Gewürz
+        feedback_vi: Gewürz là giống trung, nên là das Gewürz.
+        error_tag: article
+    explanation:
+      vi: "\"gia vị\" trong tiếng Đức là das Gewürz (số nhiều: die Gewürze). Ví dụ: Ohne Gewürze schmeckt die Suppe langweilig."
+    display_answer: das Gewürz
+  - key: de:exercise:a2w1l1-tr-word-pfirsich
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-pfirsich
+    prompt:
+      source_text: quả đào (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Pfirsich
+    known_wrong:
+      - answer: die Pfirsich
+        feedback_vi: Pfirsich là giống đực, nên là der Pfirsich.
+        error_tag: article
+      - answer: das Pfirsich
+        feedback_vi: Pfirsich là giống đực, nên là der Pfirsich.
+        error_tag: article
+    explanation:
+      vi: "\"quả đào\" trong tiếng Đức là der Pfirsich (số nhiều: die Pfirsiche). Ví dụ: Ein Pfirsich ist saftig und süß."
+    display_answer: der Pfirsich
+  - key: de:exercise:a2w1l1-fill-plural-erdbeere
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-erdbeere
+    prompt:
+      template: "Singular: die Erdbeere · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 11 }
+    answer:
+      blanks:
+        b1:
+          - Erdbeeren
+    known_wrong:
+      - answer: Erdbeere
+        feedback_vi: Erdbeere là dạng số ít; số nhiều là Erdbeeren.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Erdbeere là die Erdbeeren (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Erdbeere · Plural: die Erdbeeren"
+  - key: de:exercise:a2w1l1-mcq-luecke-mehl
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-mehl
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Để làm bánh chúng ta cần 300 gam bột mì.\": Für den Kuchen brauchen wir 300 Gramm ___."
+      stem_lang: vi
+      options:
+        - { id: ufm, text: Pilze, lang: de }
+        - { id: h3o, text: Orange, lang: de }
+        - { id: qei, text: Kohl, lang: de }
+        - { id: qzs, text: Mehl, lang: de }
+    answer:
+      correct_option_id: qzs
+    explanation:
+      vi: "Câu có nghĩa \"Để làm bánh chúng ta cần 300 gam bột mì.\" nên cần Mehl (das Mehl: bột mì). Orange = quả cam; Kohl = bắp cải, cải (các loại); Pilze = nấm không đúng nghĩa của câu."
+    display_answer: Mehl
+  - key: de:exercise:a2w1l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Tôi cần một cân dâu tây và hai quả chanh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich brauche ein Kilo Erdbeeren und zwei Zitronen.
+        - Ich brauche zwei Zitronen und ein Kilo Erdbeeren.
+        - Ich benötige ein Kilo Erdbeeren und zwei Zitronen.
+    explanation:
+      vi: "Gợi ý đáp án: Ich brauche ein Kilo Erdbeeren und zwei Zitronen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich brauche ein Kilo Erdbeeren und zwei Zitronen.
+    item: de:item:a2w1-erdbeere
+  - key: de:exercise:a2w1l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Zum Frühstück esse ich Müsli mit Joghurt und Honig.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bữa sáng tôi ăn ngũ cốc với sữa chua và mật ong.
+        - Vào bữa sáng tôi ăn ngũ cốc trộn sữa chua và mật ong.
+        - Cho bữa sáng tôi ăn müsli với sữa chua và mật ong.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Zum Frühstück esse ich Müsli mit Joghurt und Honig.\" nghĩa là: Bữa sáng tôi ăn ngũ cốc với sữa chua và mật ong. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Bữa sáng tôi ăn ngũ cốc với sữa chua và mật ong.
+    item: de:item:a2w1-honig

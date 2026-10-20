@@ -801,6 +801,14 @@
         "item": "de:item:b2u10-aufgabenstellung"
       }
     ],
+    "Aufsatz": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Aufsätze",
+        "item": "de:item:a2w1-aufsatz"
+      }
+    ],
     "Aufschwung": [
       {
         "article": "der",
@@ -913,6 +921,14 @@
         "item": "de:item:b1u10-aussage"
       }
     ],
+    "Aussehen": [
+      {
+        "article": "das",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-aussehen"
+      }
+    ],
     "Aussicht": [
       {
         "article": "die",
@@ -1001,6 +1017,22 @@
         "item": "de:item:a1u05-bad"
       }
     ],
+    "Badeanzug": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Badeanzüge",
+        "item": "de:item:a2w1-badeanzug"
+      }
+    ],
+    "Badehose": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Badehosen",
+        "item": "de:item:a2w1-badehose"
+      }
+    ],
     "Badewanne": [
       {
         "article": "die",
@@ -1073,6 +1105,14 @@
         "item": "de:item:a2u06-bargeld"
       }
     ],
+    "Bart": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Bärte",
+        "item": "de:item:a2w1-bart"
+      }
+    ],
     "Batterie": [
       {
         "article": "die",
@@ -1135,6 +1175,14 @@
         "plural": "-",
         "pluralForm": "Bedenken",
         "item": "de:item:b2u05-bedenken"
+      }
+    ],
+    "Bedienung": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-bedienung"
       }
     ],
     "Bedingung": [
@@ -1217,6 +1265,14 @@
         "item": "de:item:b2u06-behoerde"
       }
     ],
+    "Beilage": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Beilagen",
+        "item": "de:item:a2w1-beilage"
+      }
+    ],
     "Bein": [
       {
         "article": "das",
@@ -1255,6 +1311,14 @@
         "plural": "-en",
         "pluralForm": "Benachrichtigungen",
         "item": "de:item:b1u07-benachrichtigung"
+      }
+    ],
+    "Benzin": [
+      {
+        "article": "das",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w2-benzin"
       }
     ],
     "Beratung": [
@@ -1569,12 +1633,28 @@
         "item": "de:item:b2u01-bildungsweg"
       }
     ],
+    "Biologie": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-biologie"
+      }
+    ],
     "Biomüll": [
       {
         "article": "der",
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:a2u08-biomuell"
+      }
+    ],
+    "Birne": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Birnen",
+        "item": "de:item:a2w1-birne"
       }
     ],
     "Bitte": [
@@ -1617,6 +1697,14 @@
         "item": "de:item:b2u04-blickkontakt"
       }
     ],
+    "Blitz": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Blitze",
+        "item": "de:item:a2w1-blitz"
+      }
+    ],
     "Blog": [
       {
         "article": "der",
@@ -1631,6 +1719,22 @@
         "plural": "-n",
         "pluralForm": "Blumen",
         "item": "de:item:a2u02-blume"
+      }
+    ],
+    "Blumenladen": [
+      {
+        "article": "der",
+        "plural": "¨-",
+        "pluralForm": "Blumenläden",
+        "item": "de:item:a2w2-blumenladen"
+      }
+    ],
+    "Bluse": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Blusen",
+        "item": "de:item:a2w1-bluse"
       }
     ],
     "Blut": [
@@ -1655,6 +1759,14 @@
         "plural": "¨-",
         "pluralForm": "Böden",
         "item": "de:item:a2u02-boden"
+      }
+    ],
+    "Bohne": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Bohnen",
+        "item": "de:item:a2w1-bohne"
       }
     ],
     "Bohrmaschine": [
@@ -1695,6 +1807,14 @@
         "plural": "¨-e",
         "pluralForm": "Bräuche",
         "item": "de:item:b1u08-brauch"
+      }
+    ],
+    "Bremse": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Bremsen",
+        "item": "de:item:a2w2-bremse"
       }
     ],
     "Brennstoff": [
@@ -1793,12 +1913,28 @@
         "item": "de:item:p0u3-buch"
       }
     ],
+    "Buchhandlung": [
+      {
+        "article": "die",
+        "plural": "-en",
+        "pluralForm": "Buchhandlungen",
+        "item": "de:item:a2w2-buchhandlung"
+      }
+    ],
     "Buchung": [
       {
         "article": "die",
         "plural": "-en",
         "pluralForm": "Buchungen",
         "item": "de:item:b1u08-buchung"
+      }
+    ],
+    "Buffet": [
+      {
+        "article": "das",
+        "plural": "-s",
+        "pluralForm": "Buffets",
+        "item": "de:item:a2w1-buffet"
       }
     ],
     "Bundesland": [
@@ -1993,6 +2129,14 @@
         "item": "de:item:a2u03-chef"
       }
     ],
+    "Chemie": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-chemie"
+      }
+    ],
     "Cola": [
       {
         "article": "die",
@@ -2031,6 +2175,22 @@
         "plural": "-s",
         "pluralForm": "Cremes",
         "item": "de:item:a2u04-creme"
+      }
+    ],
+    "Dach": [
+      {
+        "article": "das",
+        "plural": "¨-er",
+        "pluralForm": "Dächer",
+        "item": "de:item:a2w2-dach"
+      }
+    ],
+    "Dachboden": [
+      {
+        "article": "der",
+        "plural": "¨-",
+        "pluralForm": "Dachböden",
+        "item": "de:item:a2w2-dachboden"
       }
     ],
     "Darstellung": [
@@ -2169,6 +2329,30 @@
         "item": "de:item:b2u03-digitalisierung"
       }
     ],
+    "Diktat": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Diktate",
+        "item": "de:item:a2w1-diktat"
+      }
+    ],
+    "Direktor": [
+      {
+        "article": "der",
+        "plural": "-en",
+        "pluralForm": "Direktoren",
+        "item": "de:item:a2w1-direktor"
+      }
+    ],
+    "Direktorin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Direktorinnen",
+        "item": "de:item:a2w1-direktor"
+      }
+    ],
     "Diskriminierung": [
       {
         "article": "die",
@@ -2233,6 +2417,14 @@
         "item": "de:item:a2u05-dom"
       }
     ],
+    "Donner": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-donner"
+      }
+    ],
     "Doppelzimmer": [
       {
         "article": "das",
@@ -2271,6 +2463,14 @@
         "plural": "-",
         "pluralForm": "Drittel",
         "item": "de:item:b2u02-drittel"
+      }
+    ],
+    "Drogerie": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Drogerien",
+        "item": "de:item:a2w2-drogerie"
       }
     ],
     "Druck": [
@@ -2367,6 +2567,14 @@
         "plural": "¨-er",
         "pluralForm": "Ehemänner",
         "item": "de:item:b1u02-ehemann"
+      }
+    ],
+    "Ehepaar": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Ehepaare",
+        "item": "de:item:a2w1-ehepaar"
       }
     ],
     "Ehrenamt": [
@@ -2479,6 +2687,22 @@
         "plural": "-n",
         "pluralForm": "Einkaufslisten",
         "item": "de:item:a1u03-einkaufsliste"
+      }
+    ],
+    "Einkaufswagen": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Einkaufswagen",
+        "item": "de:item:a2w2-einkaufswagen"
+      }
+    ],
+    "Einkaufszentrum": [
+      {
+        "article": "das",
+        "plural": "Einkaufszentren",
+        "pluralForm": "Einkaufszentren",
+        "item": "de:item:a2w2-einkaufszentrum"
       }
     ],
     "Einkommen": [
@@ -2793,6 +3017,14 @@
         "item": "de:item:b2u08-epoche"
       }
     ],
+    "Erdbeere": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Erdbeeren",
+        "item": "de:item:a2w1-erdbeere"
+      }
+    ],
     "Erde": [
       {
         "article": "die",
@@ -2815,6 +3047,14 @@
         "plural": "-e",
         "pluralForm": "Erdgeschosse",
         "item": "de:item:a2u02-erdgeschoss"
+      }
+    ],
+    "Erdkunde": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-erdkunde"
       }
     ],
     "Ereignis": [
@@ -3097,6 +3337,14 @@
         "item": "de:item:b2u03-fachzeitschrift"
       }
     ],
+    "Fahrbahn": [
+      {
+        "article": "die",
+        "plural": "-en",
+        "pluralForm": "Fahrbahnen",
+        "item": "de:item:a2w2-fahrbahn"
+      }
+    ],
     "Fahrgast": [
       {
         "article": "der",
@@ -3127,6 +3375,14 @@
         "plural": "¨-er",
         "pluralForm": "Fahrräder",
         "item": "de:item:a1u02-fahrrad"
+      }
+    ],
+    "Fahrschule": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Fahrschulen",
+        "item": "de:item:a2w2-fahrschule"
       }
     ],
     "Fahrverbot": [
@@ -3175,6 +3431,22 @@
         "plural": "-",
         "pluralForm": "Familienunternehmen",
         "item": "de:item:b1u03-familienunternehmen"
+      }
+    ],
+    "Fan": [
+      {
+        "article": "der",
+        "plural": "-s",
+        "pluralForm": "Fans",
+        "item": "de:item:a2w2-fan"
+      }
+    ],
+    "Farbe": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Farben",
+        "item": "de:item:a2w2-farbe"
       }
     ],
     "Fazit": [
@@ -3673,6 +3945,14 @@
         "item": "de:item:b1u03-frist"
       }
     ],
+    "Frost": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Fröste",
+        "item": "de:item:a2w1-frost"
+      }
+    ],
     "Frühstück": [
       {
         "article": "das",
@@ -3721,6 +4001,30 @@
         "item": "de:item:a1w1-fussballspieler"
       }
     ],
+    "Fußgänger": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Fußgänger",
+        "item": "de:item:a2w2-fussgaenger"
+      }
+    ],
+    "Fußgängerin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Fußgängerinnen",
+        "item": "de:item:a2w2-fussgaenger"
+      }
+    ],
+    "Fußgängerzone": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Fußgängerzonen",
+        "item": "de:item:a2w2-fussgaengerzone"
+      }
+    ],
     "Fähigkeit": [
       {
         "article": "die",
@@ -3751,6 +4055,14 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:b2u01-foerderung"
+      }
+    ],
+    "Führerschein": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Führerscheine",
+        "item": "de:item:a2w2-fuehrerschein"
       }
     ],
     "Führung": [
@@ -3785,6 +4097,14 @@
         "item": "de:item:b2u08-galerie"
       }
     ],
+    "Garage": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Garagen",
+        "item": "de:item:a2w2-garage"
+      }
+    ],
     "Garantie": [
       {
         "article": "die",
@@ -3815,6 +4135,14 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:b1u08-gastfreundschaft"
+      }
+    ],
+    "Gaststätte": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Gaststätten",
+        "item": "de:item:a2w1-gaststaette"
       }
     ],
     "Gebirge": [
@@ -4137,6 +4465,14 @@
         "item": "de:item:a1u04-geschirr"
       }
     ],
+    "Geschwindigkeit": [
+      {
+        "article": "die",
+        "plural": "-en",
+        "pluralForm": "Geschwindigkeiten",
+        "item": "de:item:a2w2-geschwindigkeit"
+      }
+    ],
     "Geschwister": [
       {
         "article": "die",
@@ -4257,6 +4593,14 @@
         "item": "de:item:a1u03-getraenk"
       }
     ],
+    "Getränkekarte": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Getränkekarten",
+        "item": "de:item:a2w1-getraenkekarte"
+      }
+    ],
     "Gewaltenteilung": [
       {
         "article": "die",
@@ -4297,6 +4641,14 @@
         "item": "de:item:b1u07-gewohnheit"
       }
     ],
+    "Gewürz": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Gewürze",
+        "item": "de:item:a2w1-gewuerz"
+      }
+    ],
     "Gipfel": [
       {
         "article": "der",
@@ -4319,6 +4671,14 @@
         "plural": "¨-er",
         "pluralForm": "Gläser",
         "item": "de:item:a1u03-glas"
+      }
+    ],
+    "Glatteis": [
+      {
+        "article": "das",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-glatteis"
       }
     ],
     "Glaubwürdigkeit": [
@@ -4375,6 +4735,14 @@
         "plural": "-e",
         "pluralForm": "Glühweine",
         "item": "de:item:b1u08-gluehwein"
+      }
+    ],
+    "Grad": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Grade",
+        "item": "de:item:a2w1-grad"
       }
     ],
     "Grafik": [
@@ -4489,6 +4857,14 @@
         "item": "de:item:b1u03-gruendung"
       }
     ],
+    "Gurke": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Gurken",
+        "item": "de:item:a2w1-gurke"
+      }
+    ],
     "Gutschein": [
       {
         "article": "der",
@@ -4529,6 +4905,14 @@
         "item": "de:item:a1w1-gaertner"
       }
     ],
+    "Gürtel": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Gürtel",
+        "item": "de:item:a2w1-guertel"
+      }
+    ],
     "Haar": [
       {
         "article": "das",
@@ -4551,6 +4935,14 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:b2u09-haftung"
+      }
+    ],
+    "Hagel": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-hagel"
       }
     ],
     "Halbjahr": [
@@ -4593,6 +4985,14 @@
         "item": "de:item:b2u04-haltung"
       }
     ],
+    "Hammer": [
+      {
+        "article": "der",
+        "plural": "¨-",
+        "pluralForm": "Hämmer",
+        "item": "de:item:a2w2-hammer"
+      }
+    ],
     "Hamster": [
       {
         "article": "der",
@@ -4631,6 +5031,14 @@
         "plural": "-s",
         "pluralForm": "Handouts",
         "item": "de:item:b2u10-handout"
+      }
+    ],
+    "Handschuh": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Handschuhe",
+        "item": "de:item:a2w1-handschuh"
       }
     ],
     "Handtuch": [
@@ -4679,6 +5087,14 @@
         "plural": "-en",
         "pluralForm": "Hauptfiguren",
         "item": "de:item:b2u08-hauptfigur"
+      }
+    ],
+    "Hauptgericht": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Hauptgerichte",
+        "item": "de:item:a2w1-hauptgericht"
       }
     ],
     "Hauptrolle": [
@@ -4809,6 +5225,14 @@
         "item": "de:item:a1u02-haustier"
       }
     ],
+    "Haustür": [
+      {
+        "article": "die",
+        "plural": "-en",
+        "pluralForm": "Haustüren",
+        "item": "de:item:a2w2-haustuer"
+      }
+    ],
     "Hausverwaltung": [
       {
         "article": "die",
@@ -4831,6 +5255,14 @@
         "plural": "¨-e",
         "pluralForm": "Hautärzte",
         "item": "de:item:b1u05-hautarzt"
+      }
+    ],
+    "Hecke": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Hecken",
+        "item": "de:item:a2w2-hecke"
       }
     ],
     "Heft": [
@@ -5001,12 +5433,28 @@
         "item": "de:item:a2u07-hochzeit"
       }
     ],
+    "Hof": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Höfe",
+        "item": "de:item:a2w2-hof"
+      }
+    ],
     "Homeoffice": [
       {
         "article": "das",
         "plural": "-s",
         "pluralForm": "Homeoffices",
         "item": "de:item:b2u01-homeoffice"
+      }
+    ],
+    "Honig": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-honig"
       }
     ],
     "Hose": [
@@ -5329,6 +5777,14 @@
         "item": "de:item:a2u03-job"
       }
     ],
+    "Joghurt": [
+      {
+        "article": "der",
+        "plural": "-s",
+        "pluralForm": "Joghurts",
+        "item": "de:item:a2w1-joghurt"
+      }
+    ],
     "Journalist": [
       {
         "article": "der",
@@ -5351,6 +5807,14 @@
         "plural": "-n",
         "pluralForm": "Jugendherbergen",
         "item": "de:item:b1u08-jugendherberge"
+      }
+    ],
+    "Juwelier": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Juweliere",
+        "item": "de:item:a2w2-juwelier"
       }
     ],
     "Kabel": [
@@ -5449,6 +5913,14 @@
         "item": "de:item:b1u08-karneval"
       }
     ],
+    "Karotte": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Karotten",
+        "item": "de:item:a2w1-karotte"
+      }
+    ],
     "Karriere": [
       {
         "article": "die",
@@ -5495,6 +5967,30 @@
         "plural": "-n",
         "pluralForm": "Kassen",
         "item": "de:item:a1u07-kasse"
+      }
+    ],
+    "Kassenbon": [
+      {
+        "article": "der",
+        "plural": "-s",
+        "pluralForm": "Kassenbons",
+        "item": "de:item:a2w2-kassenbon"
+      }
+    ],
+    "Kassierer": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Kassierer",
+        "item": "de:item:a2w2-kassierer"
+      }
+    ],
+    "Kassiererin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Kassiererinnen",
+        "item": "de:item:a2w2-kassierer"
       }
     ],
     "Katze": [
@@ -5633,12 +6129,28 @@
         "item": "de:item:p0u3-kino"
       }
     ],
+    "Kiosk": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Kioske",
+        "item": "de:item:a2w2-kiosk"
+      }
+    ],
     "Kirche": [
       {
         "article": "die",
         "plural": "-n",
         "pluralForm": "Kirchen",
         "item": "de:item:a1u05-kirche"
+      }
+    ],
+    "Kirsche": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Kirschen",
+        "item": "de:item:a2w1-kirsche"
       }
     ],
     "Kissen": [
@@ -5673,6 +6185,14 @@
         "item": "de:item:b1u04-klassenarbeit"
       }
     ],
+    "Klassenzimmer": [
+      {
+        "article": "das",
+        "plural": "-",
+        "pluralForm": "Klassenzimmer",
+        "item": "de:item:a2w1-klassenzimmer"
+      }
+    ],
     "Klausel": [
       {
         "article": "die",
@@ -5687,6 +6207,14 @@
         "plural": "-en",
         "pluralForm": "Klausuren",
         "item": "de:item:b1u04-klausur"
+      }
+    ],
+    "Klebstoff": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Klebstoffe",
+        "item": "de:item:a2w1-klebstoff"
       }
     ],
     "Kleid": [
@@ -5711,6 +6239,14 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:b2u09-kleingedruckte"
+      }
+    ],
+    "Kleingeld": [
+      {
+        "article": "das",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w2-kleingeld"
       }
     ],
     "Klima": [
@@ -5769,6 +6305,14 @@
         "item": "de:item:b2u05-kluft"
       }
     ],
+    "Knoblauch": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-knoblauch"
+      }
+    ],
     "Knopf": [
       {
         "article": "der",
@@ -5791,6 +6335,22 @@
         "plural": "-",
         "pluralForm": "Koffer",
         "item": "de:item:a2u05-koffer"
+      }
+    ],
+    "Kofferraum": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Kofferräume",
+        "item": "de:item:a2w2-kofferraum"
+      }
+    ],
+    "Kohl": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-kohl"
       }
     ],
     "Kohlendioxid": [
@@ -6073,6 +6633,14 @@
         "item": "de:item:b1u03-krankschreibung"
       }
     ],
+    "Krawatte": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Krawatten",
+        "item": "de:item:a2w1-krawatte"
+      }
+    ],
     "Kreditkarte": [
       {
         "article": "die",
@@ -6087,6 +6655,14 @@
         "plural": "¨-e",
         "pluralForm": "Kreisläufe",
         "item": "de:item:b2u07-kreislauf"
+      }
+    ],
+    "Kreisverkehr": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Kreisverkehre",
+        "item": "de:item:a2w2-kreisverkehr"
       }
     ],
     "Kreuzung": [
@@ -6465,6 +7041,14 @@
         "item": "de:item:b1u05-lebensmittel"
       }
     ],
+    "Lebensmittelgeschäft": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Lebensmittelgeschäfte",
+        "item": "de:item:a2w2-lebensmittelgeschaeft"
+      }
+    ],
     "Lebensraum": [
       {
         "article": "der",
@@ -6487,6 +7071,14 @@
         "plural": "-",
         "pluralForm": "Lehrer",
         "item": "de:item:p0u1-lehrer"
+      }
+    ],
+    "Lehrerzimmer": [
+      {
+        "article": "das",
+        "plural": "-",
+        "pluralForm": "Lehrerzimmer",
+        "item": "de:item:a2w1-lehrerzimmer"
       }
     ],
     "Lehrgang": [
@@ -6535,6 +7127,14 @@
         "plural": "-en",
         "pluralForm": "Leitungen",
         "item": "de:item:b1u03-leitung"
+      }
+    ],
+    "Lenkrad": [
+      {
+        "article": "das",
+        "plural": "¨-er",
+        "pluralForm": "Lenkräder",
+        "item": "de:item:a2w2-lenkrad"
       }
     ],
     "Lernerfolg": [
@@ -6625,6 +7225,14 @@
         "item": "de:item:a2u06-lieferung"
       }
     ],
+    "Lineal": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Lineale",
+        "item": "de:item:a2w1-lineal"
+      }
+    ],
     "Linie": [
       {
         "article": "die",
@@ -6655,6 +7263,14 @@
         "plural": "-en",
         "pluralForm": "Literaturen",
         "item": "de:item:b2u08-literatur"
+      }
+    ],
+    "Lkw": [
+      {
+        "article": "der",
+        "plural": "-s",
+        "pluralForm": "Lkws",
+        "item": "de:item:a2w2-lkw"
       }
     ],
     "Lohn": [
@@ -6777,6 +7393,14 @@
         "item": "de:item:p0u1-mann"
       }
     ],
+    "Mannschaft": [
+      {
+        "article": "die",
+        "plural": "-en",
+        "pluralForm": "Mannschaften",
+        "item": "de:item:a2w2-mannschaft"
+      }
+    ],
     "Mantel": [
       {
         "article": "der",
@@ -6809,6 +7433,14 @@
         "item": "de:item:a1u05-marktplatz"
       }
     ],
+    "Marmelade": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Marmeladen",
+        "item": "de:item:a2w1-marmelade"
+      }
+    ],
     "Maschine": [
       {
         "article": "die",
@@ -6817,12 +7449,28 @@
         "item": "de:item:b2u03-maschine"
       }
     ],
+    "Mathematik": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-mathematik"
+      }
+    ],
     "Matratze": [
       {
         "article": "die",
         "plural": "-n",
         "pluralForm": "Matratzen",
         "item": "de:item:a1w1-matratze"
+      }
+    ],
+    "Mauer": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Mauern",
+        "item": "de:item:a2w2-mauer"
       }
     ],
     "Maus": [
@@ -6881,6 +7529,14 @@
         "item": "de:item:a2u05-meer"
       }
     ],
+    "Mehl": [
+      {
+        "article": "das",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-mehl"
+      }
+    ],
     "Mehrheit": [
       {
         "article": "die",
@@ -6929,12 +7585,28 @@
         "item": "de:item:b1u07-meldung"
       }
     ],
+    "Melone": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Melonen",
+        "item": "de:item:a2w1-melone"
+      }
+    ],
     "Mensa": [
       {
         "article": "die",
         "plural": "Mensen",
         "pluralForm": "Mensen",
         "item": "de:item:b1u04-mensa"
+      }
+    ],
+    "Menü": [
+      {
+        "article": "das",
+        "plural": "-s",
+        "pluralForm": "Menüs",
+        "item": "de:item:a2w1-menue"
       }
     ],
     "Messer": [
@@ -7081,6 +7753,22 @@
         "item": "de:item:b1u03-mitarbeiter"
       }
     ],
+    "Mitbewohner": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Mitbewohner",
+        "item": "de:item:a2w1-mitbewohner"
+      }
+    ],
+    "Mitbewohnerin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Mitbewohnerinnen",
+        "item": "de:item:a2w1-mitbewohner"
+      }
+    ],
     "Miteinander": [
       {
         "article": "das",
@@ -7103,6 +7791,22 @@
         "plural": "-er",
         "pluralForm": "Mitglieder",
         "item": "de:item:b1u09-mitglied"
+      }
+    ],
+    "Mitschüler": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Mitschüler",
+        "item": "de:item:a2w1-mitschueler"
+      }
+    ],
+    "Mitschülerin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Mitschülerinnen",
+        "item": "de:item:a2w1-mitschueler"
       }
     ],
     "Mittag": [
@@ -7183,6 +7887,14 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:b1u04-motivation"
+      }
+    ],
+    "Motor": [
+      {
+        "article": "der",
+        "plural": "-en",
+        "pluralForm": "Motoren",
+        "item": "de:item:a2w2-motor"
       }
     ],
     "Motorrad": [
@@ -7321,6 +8033,22 @@
         "item": "de:item:a2u06-muenze"
       }
     ],
+    "Müsli": [
+      {
+        "article": "das",
+        "plural": "-s",
+        "pluralForm": "Müslis",
+        "item": "de:item:a2w1-muesli"
+      }
+    ],
+    "Mütze": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Mützen",
+        "item": "de:item:a2w1-muetze"
+      }
+    ],
     "Nachbar": [
       {
         "article": "der",
@@ -7441,6 +8169,14 @@
         "item": "de:item:b2u01-nachweis"
       }
     ],
+    "Nagel": [
+      {
+        "article": "der",
+        "plural": "¨-",
+        "pluralForm": "Nägel",
+        "item": "de:item:a2w2-nagel"
+      }
+    ],
     "Name": [
       {
         "article": "der",
@@ -7497,6 +8233,14 @@
         "item": "de:item:a2u04-nebenwirkung"
       }
     ],
+    "Neffe": [
+      {
+        "article": "der",
+        "plural": "-n",
+        "pluralForm": "Neffen",
+        "item": "de:item:a2w1-neffe"
+      }
+    ],
     "Neuanfang": [
       {
         "article": "der",
@@ -7529,12 +8273,28 @@
         "item": "de:item:a2u07-neujahr"
       }
     ],
+    "Nichte": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Nichten",
+        "item": "de:item:a2w1-nichte"
+      }
+    ],
     "Nichtraucher": [
       {
         "article": "der",
         "plural": "-",
         "pluralForm": "Nichtraucher",
         "item": "de:item:b1u05-nichtraucher"
+      }
+    ],
+    "Niederlage": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Niederlagen",
+        "item": "de:item:a2w2-niederlage"
       }
     ],
     "Nikotin": [
@@ -7657,6 +8417,14 @@
         "item": "de:item:a1u08-ohr"
       }
     ],
+    "Ohrring": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Ohrringe",
+        "item": "de:item:a2w1-ohrring"
+      }
+    ],
     "Oma": [
       {
         "article": "die",
@@ -7703,6 +8471,14 @@
         "plural": "-",
         "pluralForm": "Opfer",
         "item": "de:item:b2u09-opfer"
+      }
+    ],
+    "Orange": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Orangen",
+        "item": "de:item:a2w1-orange"
       }
     ],
     "Ordner": [
@@ -7777,12 +8553,28 @@
         "item": "de:item:a2u08-papier"
       }
     ],
+    "Paprika": [
+      {
+        "article": "die",
+        "plural": "-s",
+        "pluralForm": "Paprikas",
+        "item": "de:item:a2w1-paprika"
+      }
+    ],
     "Park": [
       {
         "article": "der",
         "plural": "-s",
         "pluralForm": "Parks",
         "item": "de:item:a1u05-park"
+      }
+    ],
+    "Parkplatz": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Parkplätze",
+        "item": "de:item:a2w2-parkplatz"
       }
     ],
     "Parlament": [
@@ -7841,6 +8633,14 @@
         "item": "de:item:a2u07-passwort"
       }
     ],
+    "Patenkind": [
+      {
+        "article": "das",
+        "plural": "-er",
+        "pluralForm": "Patenkinder",
+        "item": "de:item:a2w1-patenkind"
+      }
+    ],
     "Patient": [
       {
         "article": "der",
@@ -7855,6 +8655,14 @@
         "plural": "-n",
         "pluralForm": "Pausen",
         "item": "de:item:a1u04-pause"
+      }
+    ],
+    "Pausenbrot": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Pausenbrote",
+        "item": "de:item:a2w1-pausenbrot"
       }
     ],
     "Pension": [
@@ -7905,12 +8713,28 @@
         "item": "de:item:a1w1-pfanne"
       }
     ],
+    "Pfeffer": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-pfeffer"
+      }
+    ],
     "Pferd": [
       {
         "article": "das",
         "plural": "-e",
         "pluralForm": "Pferde",
         "item": "de:item:a1w1-pferd"
+      }
+    ],
+    "Pfirsich": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Pfirsiche",
+        "item": "de:item:a2w1-pfirsich"
       }
     ],
     "Pflanze": [
@@ -7961,12 +8785,44 @@
         "item": "de:item:b1u09-pflicht"
       }
     ],
+    "Pfütze": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Pfützen",
+        "item": "de:item:a2w1-pfuetze"
+      }
+    ],
+    "Physik": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-physik"
+      }
+    ],
     "Physiker": [
       {
         "article": "der",
         "plural": "-",
         "pluralForm": "Physiker",
         "item": "de:item:b2u03-physiker"
+      }
+    ],
+    "Pilz": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Pilze",
+        "item": "de:item:a2w1-pilz"
+      }
+    ],
+    "Pinsel": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Pinsel",
+        "item": "de:item:a2w2-pinsel"
       }
     ],
     "Pizza": [
@@ -8151,6 +9007,14 @@
         "plural": "-e",
         "pluralForm": "Preisanstiege",
         "item": "de:item:b2u02-preisanstieg"
+      }
+    ],
+    "Preisschild": [
+      {
+        "article": "das",
+        "plural": "-er",
+        "pluralForm": "Preisschilder",
+        "item": "de:item:a2w2-preisschild"
       }
     ],
     "Premiere": [
@@ -8409,6 +9273,14 @@
         "item": "de:item:b1u07-quelle"
       }
     ],
+    "Quittung": [
+      {
+        "article": "die",
+        "plural": "-en",
+        "pluralForm": "Quittungen",
+        "item": "de:item:a2w2-quittung"
+      }
+    ],
     "Rabatt": [
       {
         "article": "der",
@@ -8439,6 +9311,22 @@
         "plural": "-en",
         "pluralForm": "Radiosendungen",
         "item": "de:item:b1u10-radiosendung"
+      }
+    ],
+    "Radweg": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Radwege",
+        "item": "de:item:a2w2-radweg"
+      }
+    ],
+    "Rasen": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Rasen",
+        "item": "de:item:a2w2-rasen"
       }
     ],
     "Rat": [
@@ -8689,6 +9577,14 @@
         "item": "de:item:b1u08-reiseziel"
       }
     ],
+    "Reißverschluss": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Reißverschlüsse",
+        "item": "de:item:a2w1-reissverschluss"
+      }
+    ],
     "Reklamation": [
       {
         "article": "die",
@@ -8807,6 +9703,14 @@
         "plural": "-en",
         "pluralForm": "Richtungen",
         "item": "de:item:a1u07-richtung"
+      }
+    ],
+    "Ring": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Ringe",
+        "item": "de:item:a2w1-ring"
       }
     ],
     "Risiko": [
@@ -9025,6 +9929,22 @@
         "item": "de:item:b2u08-sammlung"
       }
     ],
+    "Sand": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-sand"
+      }
+    ],
+    "Sandale": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Sandalen",
+        "item": "de:item:a2w1-sandale"
+      }
+    ],
     "Satzung": [
       {
         "article": "die",
@@ -9049,12 +9969,28 @@
         "item": "de:item:a1w1-schaf"
       }
     ],
+    "Schal": [
+      {
+        "article": "der",
+        "plural": "-s",
+        "pluralForm": "Schals",
+        "item": "de:item:a2w1-schal"
+      }
+    ],
     "Schalter": [
       {
         "article": "der",
         "plural": "-",
         "pluralForm": "Schalter",
         "item": "de:item:a2u06-schalter"
+      }
+    ],
+    "Schatten": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Schatten",
+        "item": "de:item:a2w1-schatten"
       }
     ],
     "Schaubild": [
@@ -9073,6 +10009,14 @@
         "item": "de:item:b1u10-schauer"
       }
     ],
+    "Schaufenster": [
+      {
+        "article": "das",
+        "plural": "-",
+        "pluralForm": "Schaufenster",
+        "item": "de:item:a2w2-schaufenster"
+      }
+    ],
     "Schauspieler": [
       {
         "article": "der",
@@ -9089,12 +10033,36 @@
         "item": "de:item:b2u08-schauspieler"
       }
     ],
+    "Schere": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Scheren",
+        "item": "de:item:a2w1-schere"
+      }
+    ],
     "Schicht": [
       {
         "article": "die",
         "plural": "-en",
         "pluralForm": "Schichten",
         "item": "de:item:a2u03-schicht"
+      }
+    ],
+    "Schiedsrichter": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Schiedsrichter",
+        "item": "de:item:a2w2-schiedsrichter"
+      }
+    ],
+    "Schiedsrichterin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Schiedsrichterinnen",
+        "item": "de:item:a2w2-schiedsrichter"
       }
     ],
     "Schiff": [
@@ -9161,6 +10129,14 @@
         "item": "de:item:b2u07-schlussfolgerung"
       }
     ],
+    "Schlussverkauf": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Schlussverkäufe",
+        "item": "de:item:a2w2-schlussverkauf"
+      }
+    ],
     "Schlüssel": [
       {
         "article": "der",
@@ -9183,6 +10159,14 @@
         "plural": "-en",
         "pluralForm": "Schmerzen",
         "item": "de:item:a2u04-schmerz"
+      }
+    ],
+    "Schmuck": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-schmuck"
       }
     ],
     "Schnee": [
@@ -9209,12 +10193,36 @@
         "item": "de:item:a1u03-schokolade"
       }
     ],
+    "Schornstein": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Schornsteine",
+        "item": "de:item:a2w2-schornstein"
+      }
+    ],
     "Schrank": [
       {
         "article": "der",
         "plural": "¨-e",
         "pluralForm": "Schränke",
         "item": "de:item:a1u05-schrank"
+      }
+    ],
+    "Schraube": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Schrauben",
+        "item": "de:item:a2w2-schraube"
+      }
+    ],
+    "Schraubenzieher": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Schraubenzieher",
+        "item": "de:item:a2w2-schraubenzieher"
       }
     ],
     "Schreibtisch": [
@@ -9265,6 +10273,14 @@
         "item": "de:item:a1u07-schuh"
       }
     ],
+    "Schulbus": [
+      {
+        "article": "der",
+        "plural": "-se",
+        "pluralForm": "Schulbusse",
+        "item": "de:item:a2w1-schulbus"
+      }
+    ],
     "Schulden": [
       {
         "article": "die",
@@ -9279,6 +10295,22 @@
         "plural": "-n",
         "pluralForm": "Schulen",
         "item": "de:item:p0u2-schule"
+      }
+    ],
+    "Schulfach": [
+      {
+        "article": "das",
+        "plural": "¨-er",
+        "pluralForm": "Schulfächer",
+        "item": "de:item:a2w1-schulfach"
+      }
+    ],
+    "Schulhof": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Schulhöfe",
+        "item": "de:item:a2w1-schulhof"
       }
     ],
     "Schulpflicht": [
@@ -9297,6 +10329,14 @@
         "item": "de:item:b1u04-schulsystem"
       }
     ],
+    "Schultasche": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Schultaschen",
+        "item": "de:item:a2w1-schultasche"
+      }
+    ],
     "Schulung": [
       {
         "article": "die",
@@ -9311,6 +10351,14 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:b2u06-schutz"
+      }
+    ],
+    "Schwager": [
+      {
+        "article": "der",
+        "plural": "¨-",
+        "pluralForm": "Schwäger",
+        "item": "de:item:a2w1-schwager"
       }
     ],
     "Schwein": [
@@ -9345,6 +10393,38 @@
         "item": "de:item:a1u02-schwester"
       }
     ],
+    "Schwiegermutter": [
+      {
+        "article": "die",
+        "plural": "¨-",
+        "pluralForm": "Schwiegermütter",
+        "item": "de:item:a2w1-schwiegermutter"
+      }
+    ],
+    "Schwiegersohn": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Schwiegersöhne",
+        "item": "de:item:a2w1-schwiegersohn"
+      }
+    ],
+    "Schwiegertochter": [
+      {
+        "article": "die",
+        "plural": "¨-",
+        "pluralForm": "Schwiegertöchter",
+        "item": "de:item:a2w1-schwiegertochter"
+      }
+    ],
+    "Schwiegervater": [
+      {
+        "article": "der",
+        "plural": "¨-",
+        "pluralForm": "Schwiegerväter",
+        "item": "de:item:a2w1-schwiegervater"
+      }
+    ],
     "Schwimmbad": [
       {
         "article": "das",
@@ -9359,6 +10439,14 @@
         "plural": "-n",
         "pluralForm": "Schwächen",
         "item": "de:item:a2u03-schwaeche"
+      }
+    ],
+    "Schwägerin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Schwägerinnen",
+        "item": "de:item:a2w1-schwager"
       }
     ],
     "Schüler": [
@@ -9513,12 +10601,44 @@
         "item": "de:item:a2u04-shampoo"
       }
     ],
+    "Sicherheitsgurt": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Sicherheitsgurte",
+        "item": "de:item:a2w2-sicherheitsgurt"
+      }
+    ],
     "Sichtweise": [
       {
         "article": "die",
         "plural": "-n",
         "pluralForm": "Sichtweisen",
         "item": "de:item:b2u10-sichtweise"
+      }
+    ],
+    "Sieg": [
+      {
+        "article": "der",
+        "plural": "-e",
+        "pluralForm": "Siege",
+        "item": "de:item:a2w2-sieg"
+      }
+    ],
+    "Sieger": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Sieger",
+        "item": "de:item:a2w2-sieger"
+      }
+    ],
+    "Siegerin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Siegerinnen",
+        "item": "de:item:a2w2-sieger"
       }
     ],
     "Single": [
@@ -9601,12 +10721,28 @@
         "item": "de:item:b2u05-solidaritaet"
       }
     ],
+    "Sonderangebot": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Sonderangebote",
+        "item": "de:item:a2w2-sonderangebot"
+      }
+    ],
     "Sonne": [
       {
         "article": "die",
         "plural": "-n",
         "pluralForm": "Sonnen",
         "item": "de:item:p0u1-sonne"
+      }
+    ],
+    "Sonnenaufgang": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Sonnenaufgänge",
+        "item": "de:item:a2w1-sonnenaufgang"
       }
     ],
     "Sonnenbrille": [
@@ -9625,6 +10761,22 @@
         "item": "de:item:b1u06-sonnenenergie"
       }
     ],
+    "Sonnenschein": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-sonnenschein"
+      }
+    ],
+    "Sonnenuntergang": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Sonnenuntergänge",
+        "item": "de:item:a2w1-sonnenuntergang"
+      }
+    ],
     "Souvenir": [
       {
         "article": "das",
@@ -9639,6 +10791,14 @@
         "plural": "-en",
         "pluralForm": "Sozialstaaten",
         "item": "de:item:b2u05-sozialstaat"
+      }
+    ],
+    "Soße": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Soßen",
+        "item": "de:item:a2w1-sosse"
       }
     ],
     "Spaziergang": [
@@ -9697,6 +10857,14 @@
         "item": "de:item:b1u01-spielzeug"
       }
     ],
+    "Spinat": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-spinat"
+      }
+    ],
     "Spinne": [
       {
         "article": "die",
@@ -9711,6 +10879,30 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:p0u2-sport"
+      }
+    ],
+    "Sportart": [
+      {
+        "article": "die",
+        "plural": "-en",
+        "pluralForm": "Sportarten",
+        "item": "de:item:a2w2-sportart"
+      }
+    ],
+    "Sportler": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Sportler",
+        "item": "de:item:a2w2-sportler"
+      }
+    ],
+    "Sportlerin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Sportlerinnen",
+        "item": "de:item:a2w2-sportler"
       }
     ],
     "Sprachbarriere": [
@@ -9791,6 +10983,14 @@
         "plural": "-en",
         "pluralForm": "Staatsangehörigkeiten",
         "item": "de:item:b2u06-staatsangehoerigkeit"
+      }
+    ],
+    "Stadion": [
+      {
+        "article": "das",
+        "plural": "Stadien",
+        "pluralForm": "Stadien",
+        "item": "de:item:a2w2-stadion"
       }
     ],
     "Stadtplan": [
@@ -9935,6 +11135,14 @@
         "plural": "-e",
         "pluralForm": "Stichworte",
         "item": "de:item:b2u10-stichwort"
+      }
+    ],
+    "Stiefel": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Stiefel",
+        "item": "de:item:a2w1-stiefel"
       }
     ],
     "Stift": [
@@ -10087,6 +11295,14 @@
         "plural": "-en",
         "pluralForm": "Stromrechnungen",
         "item": "de:item:b1u06-stromrechnung"
+      }
+    ],
+    "Strumpfhose": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Strumpfhosen",
+        "item": "de:item:a2w1-strumpfhose"
       }
     ],
     "Student": [
@@ -10321,6 +11537,14 @@
         "item": "de:item:a1u04-tag"
       }
     ],
+    "Tagesgericht": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Tagesgerichte",
+        "item": "de:item:a2w1-tagesgericht"
+      }
+    ],
     "Tal": [
       {
         "article": "das",
@@ -10335,6 +11559,14 @@
         "plural": "-s",
         "pluralForm": "Talkshows",
         "item": "de:item:a2u07-talkshow"
+      }
+    ],
+    "Tankstelle": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Tankstellen",
+        "item": "de:item:a2w2-tankstelle"
       }
     ],
     "Tante": [
@@ -10423,6 +11655,14 @@
         "plural": "-s",
         "pluralForm": "Tees",
         "item": "de:item:p0u1-tee"
+      }
+    ],
+    "Teenager": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Teenager",
+        "item": "de:item:a2w1-teenager"
       }
     ],
     "Teilhabe": [
@@ -10689,6 +11929,14 @@
         "item": "de:item:a1w1-topf"
       }
     ],
+    "Tor": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Tore",
+        "item": "de:item:a2w2-tor"
+      }
+    ],
     "Torte": [
       {
         "article": "die",
@@ -10727,6 +11975,38 @@
         "plural": "-en",
         "pluralForm": "Traditionen",
         "item": "de:item:b1u08-tradition"
+      }
+    ],
+    "Trainer": [
+      {
+        "article": "der",
+        "plural": "-",
+        "pluralForm": "Trainer",
+        "item": "de:item:a2w2-trainer"
+      }
+    ],
+    "Trainerin": [
+      {
+        "article": "die",
+        "plural": "-nen",
+        "pluralForm": "Trainerinnen",
+        "item": "de:item:a2w2-trainer"
+      }
+    ],
+    "Training": [
+      {
+        "article": "das",
+        "plural": "-s",
+        "pluralForm": "Trainings",
+        "item": "de:item:a2w2-training"
+      }
+    ],
+    "Traube": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Trauben",
+        "item": "de:item:a2w1-traube"
       }
     ],
     "Traum": [
@@ -10809,6 +12089,14 @@
         "item": "de:item:a2u05-turm"
       }
     ],
+    "Turnier": [
+      {
+        "article": "das",
+        "plural": "-e",
+        "pluralForm": "Turniere",
+        "item": "de:item:a2w2-turnier"
+      }
+    ],
     "Täter": [
       {
         "article": "der",
@@ -10855,6 +12143,14 @@
         "plural": "(Pl.)",
         "pluralForm": null,
         "item": "de:item:a1u01-usa"
+      }
+    ],
+    "Ufer": [
+      {
+        "article": "das",
+        "plural": "-",
+        "pluralForm": "Ufer",
+        "item": "de:item:a2w1-ufer"
       }
     ],
     "Uhr": [
@@ -10927,6 +12223,14 @@
         "plural": "-en",
         "pluralForm": "Umschulungen",
         "item": "de:item:b1u04-umschulung"
+      }
+    ],
+    "Umtausch": [
+      {
+        "article": "der",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w2-umtausch"
       }
     ],
     "Umwelt": [
@@ -11033,6 +12337,14 @@
         "item": "de:item:b1u05-untersuchung"
       }
     ],
+    "Unterwäsche": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-unterwaesche"
+      }
+    ],
     "Unwetter": [
       {
         "article": "das",
@@ -11047,6 +12359,14 @@
         "plural": "-s",
         "pluralForm": "Updates",
         "item": "de:item:b1u07-update"
+      }
+    ],
+    "Urgroßmutter": [
+      {
+        "article": "die",
+        "plural": "¨-",
+        "pluralForm": "Urgroßmütter",
+        "item": "de:item:a2w1-urgrossmutter"
       }
     ],
     "Urlaub": [
@@ -11265,6 +12585,14 @@
         "item": "de:item:b1u06-verkehrsmittel"
       }
     ],
+    "Verkehrsschild": [
+      {
+        "article": "das",
+        "plural": "-er",
+        "pluralForm": "Verkehrsschilder",
+        "item": "de:item:a2w2-verkehrsschild"
+      }
+    ],
     "Verkäufer": [
       {
         "article": "der",
@@ -11425,6 +12753,14 @@
         "item": "de:item:b1u03-vertretung"
       }
     ],
+    "Verwandtschaft": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w1-verwandtschaft"
+      }
+    ],
     "Verzicht": [
       {
         "article": "der",
@@ -11529,6 +12865,14 @@
         "item": "de:item:b1u03-voraussetzung"
       }
     ],
+    "Vorfahrt": [
+      {
+        "article": "die",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w2-vorfahrt"
+      }
+    ],
     "Vorfall": [
       {
         "article": "der",
@@ -11607,6 +12951,14 @@
         "plural": "(Sg.)",
         "pluralForm": null,
         "item": "de:item:b1u07-vorsicht"
+      }
+    ],
+    "Vorspeise": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Vorspeisen",
+        "item": "de:item:a2w1-vorspeise"
       }
     ],
     "Vorstand": [
@@ -11737,6 +13089,14 @@
         "item": "de:item:b2u02-ware"
       }
     ],
+    "Warenhaus": [
+      {
+        "article": "das",
+        "plural": "¨-er",
+        "pluralForm": "Warenhäuser",
+        "item": "de:item:a2w2-warenhaus"
+      }
+    ],
     "Warenkorb": [
       {
         "article": "der",
@@ -11809,6 +13169,14 @@
         "item": "de:item:a2u05-wasserfall"
       }
     ],
+    "Wechselgeld": [
+      {
+        "article": "das",
+        "plural": "(Sg.)",
+        "pluralForm": null,
+        "item": "de:item:a2w2-wechselgeld"
+      }
+    ],
     "Wecker": [
       {
         "article": "der",
@@ -11863,6 +13231,14 @@
         "plural": "-en",
         "pluralForm": "Weiterbildungen",
         "item": "de:item:b1u04-weiterbildung"
+      }
+    ],
+    "Welle": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Wellen",
+        "item": "de:item:a2w1-welle"
       }
     ],
     "Weltreise": [
@@ -11945,6 +13321,22 @@
         "item": "de:item:b1u10-wetterbericht"
       }
     ],
+    "Wettervorhersage": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Wettervorhersagen",
+        "item": "de:item:a2w1-wettervorhersage"
+      }
+    ],
+    "Wettkampf": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Wettkämpfe",
+        "item": "de:item:a2w2-wettkampf"
+      }
+    ],
     "Widerruf": [
       {
         "article": "der",
@@ -12015,6 +13407,14 @@
         "plural": "-",
         "pluralForm": "Wissenschaftler",
         "item": "de:item:b2u03-wissenschaftler"
+      }
+    ],
+    "Witwe": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Witwen",
+        "item": "de:item:a2w1-witwe"
       }
     ],
     "Woche": [
@@ -12209,6 +13609,14 @@
         "item": "de:item:a1w1-zahnarzt"
       }
     ],
+    "Zaun": [
+      {
+        "article": "der",
+        "plural": "¨-e",
+        "pluralForm": "Zäune",
+        "item": "de:item:a2w2-zaun"
+      }
+    ],
     "Zeit": [
       {
         "article": "die",
@@ -12367,6 +13775,14 @@
         "plural": "-e",
         "pluralForm": "Zitate",
         "item": "de:item:b2u04-zitat"
+      }
+    ],
+    "Zitrone": [
+      {
+        "article": "die",
+        "plural": "-n",
+        "pluralForm": "Zitronen",
+        "item": "de:item:a2w1-zitrone"
       }
     ],
     "Zubereitung": [

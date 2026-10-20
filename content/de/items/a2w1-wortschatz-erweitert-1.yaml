@@ -1,0 +1,2212 @@
+# Học liệu unit A2W1 "Mở rộng vốn từ A2 (1): thực phẩm, nhà hàng, quần áo, thời tiết, trường học, họ hàng (Wortschatz erweitern 1)" (mở rộng vốn từ, chương trình A2).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:a2w1-mehl
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Mehl (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bột mì
+      examples:
+        - target: Für den Kuchen brauchen wir 300 Gramm Mehl.
+          translation:
+            vi: Để làm bánh chúng ta cần 300 gam bột mì.
+  - key: de:item:a2w1-gewuerz
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gewürz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: gia vị
+      examples:
+        - target: Ohne Gewürze schmeckt die Suppe langweilig.
+          translation:
+            vi: Không có gia vị thì món súp nhạt nhẽo.
+  - key: de:item:a2w1-pfeffer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Pfeffer (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạt tiêu
+      examples:
+        - target: Bitte geben Sie mir den Pfeffer.
+          translation:
+            vi: Làm ơn đưa tôi lọ tiêu.
+  - key: de:item:a2w1-honig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Honig (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: mật ong
+      examples:
+        - target: Ich trinke Tee mit Honig.
+          translation:
+            vi: Tôi uống trà với mật ong.
+  - key: de:item:a2w1-marmelade
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Marmelade, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: mứt
+      examples:
+        - target: Zum Frühstück esse ich Brot mit Marmelade.
+          translation:
+            vi: Bữa sáng tôi ăn bánh mì với mứt.
+  - key: de:item:a2w1-joghurt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Joghurt, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: sữa chua
+      examples:
+        - target: Der Joghurt ist im Kühlschrank.
+          translation:
+            vi: Sữa chua ở trong tủ lạnh.
+      confusion:
+        vi: Der Joghurt hoặc das Joghurt đều gặp trong văn nói; trong học liệu dùng der Joghurt.
+  - key: de:item:a2w1-muesli
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Müsli, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngũ cốc ăn sáng (müsli)
+      examples:
+        - target: Zum Frühstück esse ich ein Müsli.
+          translation:
+            vi: Bữa sáng tôi ăn một tô müsli.
+  - key: de:item:a2w1-gurke
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gurke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả dưa chuột
+      examples:
+        - target: Ich schneide eine Gurke für den Salat.
+          translation:
+            vi: Tôi cắt một quả dưa chuột làm salad.
+  - key: de:item:a2w1-karotte
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Karotte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cà rốt
+      examples:
+        - target: Die Karotten sind frisch vom Markt.
+          translation:
+            vi: Cà rốt tươi từ chợ về.
+      confusion:
+        vi: Ở miền nam Đức còn gọi là die Möhre hoặc die gelbe Rübe; Karotte hiểu được khắp nơi.
+  - key: de:item:a2w1-pilz
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Pilz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nấm
+      examples:
+        - target: Wir sammeln Pilze im Wald.
+          translation:
+            vi: Chúng tôi hái nấm trong rừng.
+  - key: de:item:a2w1-erdbeere
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erdbeere, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả dâu tây
+      examples:
+        - target: Im Sommer esse ich gern Erdbeeren.
+          translation:
+            vi: Mùa hè tôi thích ăn dâu tây.
+  - key: de:item:a2w1-kirsche
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kirsche, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả anh đào
+      examples:
+        - target: Die Kirschen sind süß und rot.
+          translation:
+            vi: Những quả anh đào ngọt và đỏ.
+  - key: de:item:a2w1-birne
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Birne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả lê
+      examples:
+        - target: Möchtest du eine Birne oder einen Apfel?
+          translation:
+            vi: Bạn muốn một quả lê hay một quả táo?
+  - key: de:item:a2w1-orange
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Orange, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả cam
+      examples:
+        - target: Ich esse jeden Tag eine Orange.
+          translation:
+            vi: Mỗi ngày tôi ăn một quả cam.
+        - target: Die Orange ist sehr süß.
+          translation:
+            vi: Quả cam rất ngọt.
+  - key: de:item:a2w1-zitrone
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zitrone, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả chanh vàng
+      examples:
+        - target: Ich presse eine Zitrone aus.
+          translation:
+            vi: Tôi vắt một quả chanh.
+        - target: Zwei Zitronen, bitte.
+          translation:
+            vi: Cho tôi hai quả chanh.
+  - key: de:item:a2w1-traube
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Traube, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả nho
+      examples:
+        - target: Diese Trauben haben keine Kerne.
+          translation:
+            vi: Những quả nho này không có hạt.
+  - key: de:item:a2w1-bohne
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bohne, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạt đậu, quả đậu
+      examples:
+        - target: Zum Mittagessen gibt es grüne Bohnen.
+          translation:
+            vi: Bữa trưa có đậu xanh.
+  - key: de:item:a2w1-knoblauch
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Knoblauch (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tỏi
+      examples:
+        - target: In die Soße kommt viel Knoblauch.
+          translation:
+            vi: Trong nước sốt có nhiều tỏi.
+  - key: de:item:a2w1-paprika
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Paprika, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: ớt chuông
+      examples:
+        - target: Eine rote Paprika kostet einen Euro.
+          translation:
+            vi: Một quả ớt chuông đỏ giá một euro.
+      confusion:
+        vi: Die Paprika là quả ớt chuông (rau) hoặc bột ớt; Paprikaschote chỉ quả ớt chuông rõ hơn.
+  - key: de:item:a2w1-spinat
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Spinat (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: rau chân vịt
+      examples:
+        - target: Mein Sohn mag keinen Spinat.
+          translation:
+            vi: Con trai tôi không thích rau chân vịt.
+  - key: de:item:a2w1-kohl
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kohl (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bắp cải, cải (các loại)
+      examples:
+        - target: Im Winter gibt es oft Kohl.
+          translation:
+            vi: Mùa đông thường có bắp cải.
+  - key: de:item:a2w1-pfirsich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Pfirsich, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả đào
+      examples:
+        - target: Ein Pfirsich ist saftig und süß.
+          translation:
+            vi: Quả đào mọng nước và ngọt.
+  - key: de:item:a2w1-melone
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Melone, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quả dưa (dưa hấu, dưa vàng)
+      examples:
+        - target: Im Sommer essen wir Melone.
+          translation:
+            vi: Mùa hè chúng tôi ăn dưa.
+  - key: de:item:a2w1-schaelen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schälen
+      pos: động từ
+    back:
+      meaning:
+        vi: gọt vỏ
+      examples:
+        - target: Ich schäle die Kartoffeln für das Mittagessen.
+          translation:
+            vi: Tôi gọt vỏ khoai tây cho bữa trưa.
+  - key: de:item:a2w1-braten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: braten, brät, briet, hat gebraten
+      pos: động từ
+    back:
+      meaning:
+        vi: rán, chiên, nướng chảo
+      examples:
+        - target: Ich brate das Fleisch in der Pfanne.
+          translation:
+            vi: Tôi rán thịt trong chảo.
+  - key: de:item:a2w1-ruehren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: rühren
+      pos: động từ
+    back:
+      meaning:
+        vi: khuấy
+      examples:
+        - target: Rühren Sie die Soße langsam.
+          translation:
+            vi: Hãy khuấy nước sốt thật chậm.
+  - key: de:item:a2w1-wuerzen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: würzen
+      pos: động từ
+    back:
+      meaning:
+        vi: nêm gia vị
+      examples:
+        - target: Ich würze die Suppe mit Salz und Pfeffer.
+          translation:
+            vi: Tôi nêm súp với muối và tiêu.
+  - key: de:item:a2w1-abwaschen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: abwaschen, wäscht ab, wusch ab, hat abgewaschen
+      pos: động từ
+    back:
+      meaning:
+        vi: rửa (bát đĩa)
+      examples:
+        - target: Wer wäscht heute ab?
+          translation:
+            vi: Hôm nay ai rửa bát?
+  - key: de:item:a2w1-einschenken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: einschenken, schenkt ein, schenkte ein, hat eingeschenkt
+      pos: động từ
+    back:
+      meaning:
+        vi: rót (đồ uống)
+      examples:
+        - target: Darf ich Ihnen Tee einschenken?
+          translation:
+            vi: Tôi rót trà cho bạn nhé?
+  - key: de:item:a2w1-zubereiten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: zubereiten, bereitet zu, bereitete zu, hat zubereitet
+      pos: động từ
+    back:
+      meaning:
+        vi: chế biến, chuẩn bị (món ăn)
+      examples:
+        - target: Sie bereitet das Abendessen zu.
+          translation:
+            vi: Cô ấy chuẩn bị bữa tối.
+  - key: de:item:a2w1-den-tisch-decken
+    type: phrase
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: den Tisch decken
+      pos: cụm từ
+    back:
+      meaning:
+        vi: dọn bàn ăn
+      examples:
+        - target: Ich decke den Tisch für sechs Personen.
+          translation:
+            vi: Tôi dọn bàn ăn cho sáu người.
+  - key: de:item:a2w1-gaststaette
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gaststätte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quán ăn, nhà hàng bình dân
+      examples:
+        - target: In dieser Gaststätte gibt es gutes Essen.
+          translation:
+            vi: Ở quán này có đồ ăn ngon.
+  - key: de:item:a2w1-vorspeise
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Vorspeise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: món khai vị
+      examples:
+        - target: Als Vorspeise nehme ich eine Suppe.
+          translation:
+            vi: Tôi gọi một món súp làm khai vị.
+  - key: de:item:a2w1-hauptgericht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Hauptgericht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: món chính
+      examples:
+        - target: Das Hauptgericht kommt gleich.
+          translation:
+            vi: Món chính sắp ra rồi.
+  - key: de:item:a2w1-beilage
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Beilage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: món ăn kèm
+      examples:
+        - target: Als Beilage gibt es Reis oder Kartoffeln.
+          translation:
+            vi: Món ăn kèm có cơm hoặc khoai tây.
+  - key: de:item:a2w1-sosse
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Soße, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước sốt
+      examples:
+        - target: Die Soße ist sehr lecker.
+          translation:
+            vi: Nước sốt rất ngon.
+  - key: de:item:a2w1-bedienung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bedienung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên phục vụ; việc phục vụ
+      examples:
+        - target: Die Bedienung ist sehr freundlich.
+          translation:
+            vi: Nhân viên phục vụ rất thân thiện.
+      confusion:
+        vi: Die Bedienung dùng chung cho người phục vụ (không phân biệt nam nữ), còn der Kellner / die Kellnerin gọi riêng từng người.
+  - key: de:item:a2w1-getraenkekarte
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Getränkekarte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực đơn đồ uống
+      examples:
+        - target: Können wir bitte die Getränkekarte haben?
+          translation:
+            vi: Cho chúng tôi xin thực đơn đồ uống được không?
+  - key: de:item:a2w1-tagesgericht
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Tagesgericht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: món ăn trong ngày
+      examples:
+        - target: Das Tagesgericht kostet nur acht Euro.
+          translation:
+            vi: Món ăn trong ngày chỉ có tám euro.
+  - key: de:item:a2w1-menue
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Menü, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực đơn bộ (nhiều món)
+      examples:
+        - target: Ich nehme das Menü mit Suppe und Fisch.
+          translation:
+            vi: Tôi gọi suất menu có súp và cá.
+  - key: de:item:a2w1-buffet
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Buffet, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: bữa ăn tự chọn; bàn buffet
+      examples:
+        - target: Im Hotel gibt es jeden Morgen ein großes Buffet.
+          translation:
+            vi: Mỗi sáng khách sạn có một bữa buffet lớn.
+  - key: de:item:a2w1-satt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: satt
+      pos: tính từ
+    back:
+      meaning:
+        vi: no (bụng)
+      examples:
+        - target: Danke, ich bin satt.
+          translation:
+            vi: Cảm ơn, tôi no rồi.
+  - key: de:item:a2w1-scharf
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: scharf
+      pos: tính từ
+    back:
+      meaning:
+        vi: cay
+      examples:
+        - target: Die Soße ist mir zu scharf.
+          translation:
+            vi: Nước sốt này cay quá đối với tôi.
+  - key: de:item:a2w1-salzig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: salzig
+      pos: tính từ
+    back:
+      meaning:
+        vi: mặn
+      examples:
+        - target: Die Suppe ist ziemlich salzig.
+          translation:
+            vi: Món súp khá mặn.
+  - key: de:item:a2w1-sauer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: sauer
+      pos: tính từ
+    back:
+      meaning:
+        vi: chua
+      examples:
+        - target: Die Zitrone ist sehr sauer.
+          translation:
+            vi: Quả chanh rất chua.
+      confusion:
+        vi: "Sauer còn có nghĩa là bực tức: Ich bin sauer auf dich."
+  - key: de:item:a2w1-bitter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: bitter
+      pos: tính từ
+    back:
+      meaning:
+        vi: đắng
+      examples:
+        - target: Der Kaffee ist heute bitter.
+          translation:
+            vi: Hôm nay cà phê đắng.
+  - key: de:item:a2w1-roh
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: roh
+      pos: tính từ
+    back:
+      meaning:
+        vi: sống, chưa nấu
+      examples:
+        - target: Das Gemüse ist noch roh.
+          translation:
+            vi: Rau còn sống.
+  - key: de:item:a2w1-krawatte
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Krawatte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cà vạt
+      examples:
+        - target: Zum Anzug trägt er eine Krawatte.
+          translation:
+            vi: Anh ấy đeo cà vạt khi mặc com-lê.
+  - key: de:item:a2w1-guertel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Gürtel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thắt lưng
+      examples:
+        - target: Die Hose ist zu weit, ich brauche einen Gürtel.
+          translation:
+            vi: Quần rộng quá, tôi cần một cái thắt lưng.
+  - key: de:item:a2w1-handschuh
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Handschuh, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: găng tay
+      examples:
+        - target: Im Winter trage ich Handschuhe.
+          translation:
+            vi: Mùa đông tôi đeo găng tay.
+  - key: de:item:a2w1-schal
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schal, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: khăn quàng cổ
+      examples:
+        - target: Es ist kalt, nimm einen Schal mit.
+          translation:
+            vi: Trời lạnh, hãy mang theo khăn quàng.
+  - key: de:item:a2w1-muetze
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mütze, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: mũ (len, lưỡi trai)
+      examples:
+        - target: Das Kind trägt eine rote Mütze.
+          translation:
+            vi: Đứa bé đội một chiếc mũ đỏ.
+  - key: de:item:a2w1-stiefel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Stiefel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: ủng, bốt
+      examples:
+        - target: Bei Regen ziehe ich Stiefel an.
+          translation:
+            vi: Khi trời mưa tôi đi ủng.
+  - key: de:item:a2w1-sandale
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sandale, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: dép xăng đan
+      examples:
+        - target: Im Sommer trage ich gern Sandalen.
+          translation:
+            vi: Mùa hè tôi thích đi dép xăng đan.
+  - key: de:item:a2w1-unterwaesche
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Unterwäsche (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ lót
+      examples:
+        - target: Die Unterwäsche liegt im Schrank.
+          translation:
+            vi: Đồ lót nằm trong tủ.
+  - key: de:item:a2w1-badeanzug
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Badeanzug, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ bơi (nữ liền thân)
+      examples:
+        - target: Ich habe meinen Badeanzug vergessen.
+          translation:
+            vi: Tôi quên đồ bơi của mình.
+  - key: de:item:a2w1-badehose
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Badehose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần bơi (nam)
+      examples:
+        - target: Mein Sohn braucht eine neue Badehose.
+          translation:
+            vi: Con trai tôi cần một chiếc quần bơi mới.
+  - key: de:item:a2w1-bluse
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bluse, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: áo sơ mi nữ
+      examples:
+        - target: Zur Arbeit trägt sie eine weiße Bluse.
+          translation:
+            vi: Cô ấy mặc áo sơ mi trắng đi làm.
+  - key: de:item:a2w1-strumpfhose
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Strumpfhose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần tất
+      examples:
+        - target: Im Winter trägt sie eine warme Strumpfhose.
+          translation:
+            vi: Mùa đông cô ấy mặc quần tất dày.
+  - key: de:item:a2w1-schmuck
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schmuck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trang sức
+      examples:
+        - target: Sie trägt gern Schmuck.
+          translation:
+            vi: Cô ấy thích đeo trang sức.
+  - key: de:item:a2w1-ring
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ring, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiếc nhẫn
+      examples:
+        - target: Sie trägt einen goldenen Ring.
+          translation:
+            vi: Cô ấy đeo một chiếc nhẫn vàng.
+  - key: de:item:a2w1-ohrring
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ohrring, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khuyên tai
+      examples:
+        - target: Er schenkt ihr Ohrringe.
+          translation:
+            vi: Anh ấy tặng cô ấy một đôi khuyên tai.
+  - key: de:item:a2w1-reissverschluss
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Reißverschluss, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khóa kéo
+      examples:
+        - target: Der Reißverschluss an der Jacke ist kaputt.
+          translation:
+            vi: Khóa kéo ở áo khoác bị hỏng.
+  - key: de:item:a2w1-aussehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Aussehen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: vẻ ngoài
+      examples:
+        - target: Das Aussehen ist nicht so wichtig.
+          translation:
+            vi: Vẻ ngoài không quan trọng đến thế.
+  - key: de:item:a2w1-aussehen-2
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: aussehen, sieht aus, sah aus, hat ausgesehen
+      pos: động từ
+    back:
+      meaning:
+        vi: trông (như thế nào)
+      examples:
+        - target: Du siehst müde aus.
+          translation:
+            vi: Trông bạn mệt.
+  - key: de:item:a2w1-blond
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: blond
+      pos: tính từ
+    back:
+      meaning:
+        vi: vàng hoe (tóc)
+      examples:
+        - target: Meine Schwester hat blonde Haare.
+          translation:
+            vi: Chị tôi có mái tóc vàng.
+      confusion:
+        vi: Trong ví dụ này tính từ đứng trước danh từ nên có đuôi -e; sau sein thì nói Sie ist blond.
+  - key: de:item:a2w1-lockig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: lockig
+      pos: tính từ
+    back:
+      meaning:
+        vi: xoăn
+      examples:
+        - target: Sie hat lockige Haare.
+          translation:
+            vi: Cô ấy có tóc xoăn.
+      confusion:
+        vi: "Tương tự blond: Ihr Haar ist lockig (sau sein), lockige Haare (trước danh từ)."
+  - key: de:item:a2w1-schlank
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schlank
+      pos: tính từ
+    back:
+      meaning:
+        vi: thon, mảnh mai
+      examples:
+        - target: Er ist groß und schlank.
+          translation:
+            vi: Anh ấy cao và mảnh dẻ.
+  - key: de:item:a2w1-bart
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bart, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ râu
+      examples:
+        - target: Mein Vater hat einen grauen Bart.
+          translation:
+            vi: Bố tôi có bộ râu bạc.
+  - key: de:item:a2w1-blitz
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Blitz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tia chớp
+      examples:
+        - target: Der Blitz schlägt in den Baum ein.
+          translation:
+            vi: Tia chớp đánh vào cái cây.
+  - key: de:item:a2w1-donner
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Donner (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng sấm
+      examples:
+        - target: Der Donner ist sehr laut.
+          translation:
+            vi: Tiếng sấm rất to.
+  - key: de:item:a2w1-hagel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Hagel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: mưa đá
+      examples:
+        - target: Der Hagel hat das Auto beschädigt.
+          translation:
+            vi: Mưa đá đã làm hỏng chiếc xe.
+  - key: de:item:a2w1-grad
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Grad, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: độ (nhiệt độ); mức độ
+      examples:
+        - target: Heute sind es zehn Grad.
+          translation:
+            vi: Hôm nay có mười độ.
+  - key: de:item:a2w1-wettervorhersage
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wettervorhersage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự báo thời tiết
+      examples:
+        - target: Laut Wettervorhersage regnet es morgen.
+          translation:
+            vi: Theo dự báo thời tiết ngày mai sẽ mưa.
+  - key: de:item:a2w1-neblig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: neblig
+      pos: tính từ
+    back:
+      meaning:
+        vi: có sương mù
+      examples:
+        - target: Heute Morgen ist es neblig.
+          translation:
+            vi: Sáng nay có sương mù.
+  - key: de:item:a2w1-stuermisch
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: stürmisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: có bão, dữ dội
+      examples:
+        - target: Das Wetter ist heute stürmisch.
+          translation:
+            vi: Hôm nay thời tiết có bão.
+  - key: de:item:a2w1-regnerisch
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: regnerisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: hay mưa, nhiều mưa
+      examples:
+        - target: Der Herbst ist oft regnerisch.
+          translation:
+            vi: Mùa thu thường nhiều mưa.
+  - key: de:item:a2w1-schatten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schatten, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bóng râm, cái bóng
+      examples:
+        - target: Im Schatten ist es angenehm kühl.
+          translation:
+            vi: Trong bóng râm thì mát dễ chịu.
+  - key: de:item:a2w1-pfuetze
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pfütze, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vũng nước
+      examples:
+        - target: Das Kind springt in die Pfütze.
+          translation:
+            vi: Đứa bé nhảy vào vũng nước.
+  - key: de:item:a2w1-frost
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Frost, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sương giá, băng giá
+      examples:
+        - target: Nachts gibt es Frost.
+          translation:
+            vi: Ban đêm có sương giá.
+  - key: de:item:a2w1-glatteis
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Glatteis (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: băng trơn
+      examples:
+        - target: Bei Glatteis fahre ich nicht mit dem Auto.
+          translation:
+            vi: Khi có băng trơn tôi không lái xe.
+  - key: de:item:a2w1-sonnenschein
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sonnenschein (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ánh nắng
+      examples:
+        - target: Wir haben heute viel Sonnenschein.
+          translation:
+            vi: Hôm nay chúng tôi có nhiều nắng.
+  - key: de:item:a2w1-sonnenaufgang
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sonnenaufgang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lúc mặt trời mọc
+      examples:
+        - target: Der Sonnenaufgang am Meer ist wunderschön.
+          translation:
+            vi: Cảnh mặt trời mọc bên bờ biển thật tuyệt đẹp.
+  - key: de:item:a2w1-sonnenuntergang
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sonnenuntergang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lúc mặt trời lặn
+      examples:
+        - target: Wir schauen uns den Sonnenuntergang an.
+          translation:
+            vi: Chúng tôi ngắm hoàng hôn.
+  - key: de:item:a2w1-welle
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Welle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: con sóng
+      examples:
+        - target: Die Wellen sind heute hoch.
+          translation:
+            vi: Hôm nay sóng cao.
+  - key: de:item:a2w1-ufer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Ufer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bờ (sông, hồ)
+      examples:
+        - target: Wir sitzen am Ufer des Flusses.
+          translation:
+            vi: Chúng tôi ngồi bên bờ sông.
+  - key: de:item:a2w1-sand
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sand (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cát
+      examples:
+        - target: Die Kinder spielen im Sand.
+          translation:
+            vi: Bọn trẻ chơi trên cát.
+  - key: de:item:a2w1-scheinen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: scheinen, scheint, schien, hat geschienen
+      pos: động từ
+    back:
+      meaning:
+        vi: chiếu sáng; có vẻ như
+      examples:
+        - target: Heute scheint die Sonne den ganzen Tag.
+          translation:
+            vi: Hôm nay mặt trời chiếu cả ngày.
+  - key: de:item:a2w1-schneien
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schneien
+      pos: động từ
+    back:
+      meaning:
+        vi: tuyết rơi
+      examples:
+        - target: Im Januar schneit es oft.
+          translation:
+            vi: Tháng Giêng thường có tuyết rơi.
+  - key: de:item:a2w1-frieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: frieren, friert, fror, hat gefroren
+      pos: động từ
+    back:
+      meaning:
+        vi: rét, lạnh; đóng băng
+      examples:
+        - target: Ich friere ohne Mütze.
+          translation:
+            vi: Tôi lạnh khi không đội mũ.
+  - key: de:item:a2w1-donnern
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: donnern
+      pos: động từ
+    back:
+      meaning:
+        vi: sấm nổ
+      examples:
+        - target: Es donnert und blitzt.
+          translation:
+            vi: Trời sấm sét.
+  - key: de:item:a2w1-klassenzimmer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Klassenzimmer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng học
+      examples:
+        - target: Das Klassenzimmer ist hell und groß.
+          translation:
+            vi: Phòng học sáng và rộng.
+  - key: de:item:a2w1-lehrerzimmer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Lehrerzimmer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng giáo viên
+      examples:
+        - target: Die Lehrer sitzen im Lehrerzimmer.
+          translation:
+            vi: Các thầy cô ngồi trong phòng giáo viên.
+  - key: de:item:a2w1-schulhof
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schulhof, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân trường
+      examples:
+        - target: In der Pause spielen wir auf dem Schulhof.
+          translation:
+            vi: Giờ ra chơi chúng tôi chơi ở sân trường.
+  - key: de:item:a2w1-schulbus
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schulbus, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe buýt đưa đón học sinh
+      examples:
+        - target: Der Schulbus kommt um sieben Uhr.
+          translation:
+            vi: Xe buýt trường đến lúc bảy giờ.
+  - key: de:item:a2w1-schulfach
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Schulfach, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn học ở trường
+      examples:
+        - target: Mein liebstes Schulfach ist Biologie.
+          translation:
+            vi: Môn học ưa thích nhất của tôi là sinh học.
+  - key: de:item:a2w1-aufsatz
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Aufsatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài văn
+      examples:
+        - target: Wir schreiben einen Aufsatz über die Ferien.
+          translation:
+            vi: Chúng tôi viết một bài văn về kỳ nghỉ.
+  - key: de:item:a2w1-diktat
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Diktat, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài chính tả
+      examples:
+        - target: Morgen schreiben wir ein Diktat.
+          translation:
+            vi: Ngày mai chúng tôi làm bài chính tả.
+  - key: de:item:a2w1-mathematik
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mathematik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn toán
+      examples:
+        - target: Mathematik ist mein Lieblingsfach.
+          translation:
+            vi: Toán là môn học yêu thích của tôi.
+      confusion:
+        vi: Trong văn nói thường rút gọn thành Mathe.
+  - key: de:item:a2w1-physik
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Physik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn vật lý
+      examples:
+        - target: In Physik haben wir einen Test.
+          translation:
+            vi: Môn vật lý chúng tôi có một bài kiểm tra.
+  - key: de:item:a2w1-chemie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Chemie (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn hóa học
+      examples:
+        - target: Chemie ist ein schwieriges Fach.
+          translation:
+            vi: Hóa học là một môn khó.
+  - key: de:item:a2w1-biologie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Biologie (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn sinh học
+      examples:
+        - target: In Biologie lernen wir über Pflanzen.
+          translation:
+            vi: Ở môn sinh học chúng tôi học về thực vật.
+  - key: de:item:a2w1-erdkunde
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erdkunde (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn địa lý
+      examples:
+        - target: In Erdkunde sprechen wir über Länder.
+          translation:
+            vi: Môn địa lý chúng tôi nói về các nước.
+      confusion:
+        vi: Cũng gọi là Geografie; Erdkunde dùng nhiều ở trường học Đức.
+  - key: de:item:a2w1-pausenbrot
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Pausenbrot, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bánh mì mang theo ăn giờ ra chơi
+      examples:
+        - target: Mein Pausenbrot ist ein Käsebrot.
+          translation:
+            vi: Bữa ăn nhẹ của tôi là bánh mì pho mát.
+  - key: de:item:a2w1-schultasche
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schultasche, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cặp sách
+      examples:
+        - target: Die Schultasche ist sehr schwer.
+          translation:
+            vi: Cái cặp rất nặng.
+  - key: de:item:a2w1-lineal
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Lineal, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái thước kẻ
+      examples:
+        - target: Ich brauche ein Lineal für die Zeichnung.
+          translation:
+            vi: Tôi cần một cái thước cho bản vẽ.
+  - key: de:item:a2w1-schere
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schere, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái kéo
+      examples:
+        - target: Wo ist die Schere?
+          translation:
+            vi: Cái kéo ở đâu?
+  - key: de:item:a2w1-klebstoff
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Klebstoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hồ dán, keo
+      examples:
+        - target: Der Klebstoff ist leer.
+          translation:
+            vi: Lọ keo hết rồi.
+  - key: de:item:a2w1-direktor
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Direktor, -en / die Direktorin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu trưởng; giám đốc
+      examples:
+        - target: Der Direktor spricht zu den Eltern.
+          translation:
+            vi: Thầy hiệu trưởng nói chuyện với phụ huynh.
+  - key: de:item:a2w1-mitschueler
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Mitschüler, - / die Mitschülerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn cùng lớp
+      examples:
+        - target: Meine Mitschüler sind alle sehr nett.
+          translation:
+            vi: Các bạn cùng lớp của tôi đều rất dễ thương.
+  - key: de:item:a2w1-rechnen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: rechnen
+      pos: động từ
+    back:
+      meaning:
+        vi: tính toán
+      examples:
+        - target: Mein Sohn rechnet schon sehr schnell.
+          translation:
+            vi: Con trai tôi đã tính nhẩm rất nhanh.
+  - key: de:item:a2w1-buchstabieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: buchstabieren
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh vần
+      examples:
+        - target: Können Sie Ihren Namen bitte buchstabieren?
+          translation:
+            vi: Ông có thể đánh vần tên của mình được không?
+  - key: de:item:a2w1-abschreiben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: abschreiben, schreibt ab, schrieb ab, hat abgeschrieben
+      pos: động từ
+    back:
+      meaning:
+        vi: chép lại
+      examples:
+        - target: Bitte schreibt den Text ab.
+          translation:
+            vi: Hãy chép lại đoạn văn này.
+  - key: de:item:a2w1-vorlesen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorlesen, liest vor, las vor, hat vorgelesen
+      pos: động từ
+    back:
+      meaning:
+        vi: đọc to cho ai nghe
+      examples:
+        - target: Der Lehrer liest eine Geschichte vor.
+          translation:
+            vi: Thầy giáo đọc to một câu chuyện.
+  - key: de:item:a2w1-schwager
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schwager, ¨- / die Schwägerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh/em rể, anh/em vợ, anh/em chồng
+      examples:
+        - target: Mein Schwager wohnt in Hamburg.
+          translation:
+            vi: Anh rể của tôi sống ở Hamburg.
+  - key: de:item:a2w1-schwiegermutter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schwiegermutter, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẹ chồng, mẹ vợ
+      examples:
+        - target: Meine Schwiegermutter kocht sehr gut.
+          translation:
+            vi: Mẹ chồng tôi nấu ăn rất giỏi.
+  - key: de:item:a2w1-schwiegervater
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schwiegervater, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố chồng, bố vợ
+      examples:
+        - target: Mein Schwiegervater ist schon Rentner.
+          translation:
+            vi: Bố vợ tôi đã nghỉ hưu.
+  - key: de:item:a2w1-schwiegersohn
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schwiegersohn, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: con rể
+      examples:
+        - target: Der Schwiegersohn hilft im Haus.
+          translation:
+            vi: Con rể giúp việc trong nhà.
+  - key: de:item:a2w1-schwiegertochter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schwiegertochter, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: con dâu
+      examples:
+        - target: Die Schwiegertochter arbeitet im Krankenhaus.
+          translation:
+            vi: Con dâu làm việc ở bệnh viện.
+  - key: de:item:a2w1-neffe
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Neffe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cháu trai (con anh chị em)
+      examples:
+        - target: Mein Neffe ist zehn Jahre alt.
+          translation:
+            vi: Cháu trai tôi mười tuổi.
+  - key: de:item:a2w1-nichte
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Nichte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cháu gái (con anh chị em)
+      examples:
+        - target: Meine Nichte besucht uns oft.
+          translation:
+            vi: Cháu gái tôi hay đến thăm chúng tôi.
+  - key: de:item:a2w1-urgrossmutter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Urgroßmutter, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: bà cố
+      examples:
+        - target: Meine Urgroßmutter ist über neunzig.
+          translation:
+            vi: Bà cố của tôi đã hơn chín mươi tuổi.
+  - key: de:item:a2w1-patenkind
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Patenkind, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: con đỡ đầu
+      examples:
+        - target: Mein Patenkind bekommt ein Geschenk zum Geburtstag.
+          translation:
+            vi: Con đỡ đầu của tôi nhận một món quà sinh nhật.
+  - key: de:item:a2w1-mitbewohner
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Mitbewohner, - / die Mitbewohnerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn cùng nhà
+      examples:
+        - target: Mein Mitbewohner kocht heute Abend.
+          translation:
+            vi: Bạn cùng nhà của tôi nấu ăn tối nay.
+  - key: de:item:a2w1-teenager
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Teenager, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiếu niên
+      examples:
+        - target: Als Teenager hat er viel Sport gemacht.
+          translation:
+            vi: Hồi còn là thiếu niên anh ấy chơi thể thao rất nhiều.
+  - key: de:item:a2w1-witwe
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Witwe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: góa phụ
+      examples:
+        - target: Die Witwe lebt allein in einem kleinen Haus.
+          translation:
+            vi: Bà góa sống một mình trong ngôi nhà nhỏ.
+  - key: de:item:a2w1-ehepaar
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Ehepaar, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cặp vợ chồng
+      examples:
+        - target: Das Ehepaar wohnt neben uns.
+          translation:
+            vi: Cặp vợ chồng này sống cạnh chúng tôi.
+  - key: de:item:a2w1-verwandtschaft
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verwandtschaft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: họ hàng (nói chung)
+      examples:
+        - target: Zu Weihnachten kommt die ganze Verwandtschaft.
+          translation:
+            vi: Dịp Giáng sinh cả họ hàng đến.
+  - key: de:item:a2w1-erziehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: erziehen, erzieht, erzog, hat erzogen
+      pos: động từ
+    back:
+      meaning:
+        vi: nuôi dạy
+      examples:
+        - target: Sie erziehen ihre Kinder sehr streng.
+          translation:
+            vi: Họ nuôi dạy con cái rất nghiêm khắc.
+  - key: de:item:a2w1-pflegen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: pflegen
+      pos: động từ
+    back:
+      meaning:
+        vi: chăm sóc (người bệnh, người già)
+      examples:
+        - target: Er pflegt seine kranke Mutter.
+          translation:
+            vi: Anh ấy chăm sóc người mẹ bị ốm.
+  - key: de:item:a2w1-sich-verstehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich verstehen, versteht sich, verstand sich, hat sich verstanden
+      pos: động từ
+    back:
+      meaning:
+        vi: hòa thuận, hiểu nhau
+      examples:
+        - target: Ich verstehe mich gut mit meinem Schwager.
+          translation:
+            vi: Tôi hòa thuận với anh rể của tôi.
+      confusion:
+        vi: "Luôn đi với mit + Dativ: sich gut verstehen mit jemandem."
+  - key: de:item:a2w1-begleiten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: begleiten
+      pos: động từ
+    back:
+      meaning:
+        vi: đi cùng, tháp tùng
+      examples:
+        - target: Ich begleite meine Oma zum Arzt.
+          translation:
+            vi: Tôi đi cùng bà đến bác sĩ.
+  - key: de:item:a2w1-verwandt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: verwandt
+      pos: tính từ
+    back:
+      meaning:
+        vi: có họ hàng
+      examples:
+        - target: Wir sind nicht verwandt.
+          translation:
+            vi: Chúng tôi không có họ hàng với nhau.
+      confusion:
+        vi: "Verwandt đi với mit + Dativ: Ich bin mit ihr verwandt."
+  - key: de:item:a2w1-verlobt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: verlobt
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã đính hôn
+      examples:
+        - target: Mein Bruder ist seit einem Jahr verlobt.
+          translation:
+            vi: Anh trai tôi đã đính hôn được một năm.
+  - key: de:item:a2w1-erwachsen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: erwachsen
+      pos: tính từ
+    back:
+      meaning:
+        vi: trưởng thành
+      examples:
+        - target: Meine Kinder sind schon erwachsen.
+          translation:
+            vi: Các con tôi đã trưởng thành.
+  - key: de:item:a2w1-verwitwet
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: verwitwet
+      pos: tính từ
+    back:
+      meaning:
+        vi: góa (vợ hoặc chồng)
+      examples:
+        - target: Meine Tante ist seit zwei Jahren verwitwet.
+          translation:
+            vi: Dì tôi đã góa được hai năm.

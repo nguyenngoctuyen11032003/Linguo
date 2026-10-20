@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w1-kochen-restaurant
+order_index: 2
+level: a2
+title:
+  vi: Nấu ăn và đi nhà hàng (Kochen und Restaurant)
+objectives:
+  - vi: "Dùng các động từ nấu ăn: schälen, braten, rühren, würzen, abwaschen."
+  - vi: "Gọi tên các phần của bữa ăn trong nhà hàng: Vorspeise, Hauptgericht, Beilage, Soße."
+  - vi: "Mô tả vị của món ăn: salzig, scharf, sauer, bitter."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w1-obst-gemuese
+items:
+  - item: de:item:a2w1-schaelen
+  - item: de:item:a2w1-braten
+  - item: de:item:a2w1-ruehren
+  - item: de:item:a2w1-wuerzen
+  - item: de:item:a2w1-abwaschen
+  - item: de:item:a2w1-einschenken
+  - item: de:item:a2w1-zubereiten
+  - item: de:item:a2w1-den-tisch-decken
+  - item: de:item:a2w1-gaststaette
+  - item: de:item:a2w1-vorspeise
+  - item: de:item:a2w1-hauptgericht
+  - item: de:item:a2w1-beilage
+  - item: de:item:a2w1-sosse
+  - item: de:item:a2w1-bedienung
+  - item: de:item:a2w1-getraenkekarte
+  - item: de:item:a2w1-tagesgericht
+  - item: de:item:a2w1-menue
+  - item: de:item:a2w1-buffet
+  - item: de:item:a2w1-satt
+  - item: de:item:a2w1-scharf
+  - item: de:item:a2w1-salzig
+  - item: de:item:a2w1-sauer
+  - item: de:item:a2w1-bitter
+  - item: de:item:a2w1-roh
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được cách nấu một món đơn giản, hiểu thực đơn và nhận xét vị của món ăn.
+  - type: explain
+    text:
+      vi: "Công thức nấu ăn dùng Imperativ ở ngôi Sie: Schälen Sie die Kartoffeln. Braten Sie das Fleisch. Würzen Sie die Soße. Trong văn nói với bạn bè thì dùng du: Schäl die Kartoffeln! Động từ đứng đầu câu, không có chủ ngữ ở dạng du."
+  - type: explain
+    text:
+      vi: "Động từ đổi nguyên âm ở ngôi du và er/sie/es cũng đổi như đã học: braten → du brätst, er brät; abwaschen → du wäschst ab, er wäscht ab. Động từ tách đặt phần tách ở cuối câu: Wer wäscht heute ab? Ich bereite das Essen zu."
+  - type: explain
+    text:
+      vi: "Thực đơn thường chia theo thứ tự: die Vorspeise (món khai vị), das Hauptgericht (món chính), die Beilage (món ăn kèm), der Nachtisch (món tráng miệng). Gọi món lịch sự dùng Ich hätte gern … hoặc Ich nehme …, gọi phục vụ bằng Entschuldigung!"
+  - type: deep_explain
+    text:
+      vi: Das Tagesgericht là món được đề xuất trong ngày với giá ưu đãi; das Menü là một bộ gồm nhiều món với giá cố định; das Buffet là bữa ăn tự chọn. Satt nghĩa là no; muốn nói mình đã no bạn nói Ich bin satt, danke. Khi đã đói bạn nói Ich habe Hunger hoặc Ich bin hungrig.
+  - type: example
+    target: Ich schäle die Kartoffeln für das Mittagessen.
+    target_lang: de
+    translation:
+      vi: Tôi gọt vỏ khoai tây cho bữa trưa.
+    note:
+      vi: schälen = gọt vỏ.
+  - type: example
+    target: Ich brate das Fleisch in der Pfanne.
+    target_lang: de
+    translation:
+      vi: Tôi rán thịt trong chảo.
+    note:
+      vi: braten = rán, chiên, nướng chảo.
+  - type: example
+    target: Rühren Sie die Soße langsam.
+    target_lang: de
+    translation:
+      vi: Hãy khuấy nước sốt thật chậm.
+    note:
+      vi: rühren = khuấy.
+  - type: example
+    target: Ich würze die Suppe mit Salz und Pfeffer.
+    target_lang: de
+    translation:
+      vi: Tôi nêm súp với muối và tiêu.
+    note:
+      vi: würzen = nêm gia vị.
+  - type: common_mistake
+    wrong: Ich habe satt.
+    right: Ich bin satt.
+    target_lang: de
+    note:
+      vi: "Satt đi với sein: Ich bin satt (tôi no rồi). Ich habe es satt lại có nghĩa là tôi chán ngấy rồi."
+  - type: common_mistake
+    wrong: Die Suppe schmeckt zu scharf nach Salz.
+    right: Die Suppe schmeckt zu salzig.
+    target_lang: de
+    note:
+      vi: Scharf là cay (ớt, tiêu); vị của muối là salzig (mặn).
+  - type: summary
+    points:
+      - vi: "Vị: salzig (mặn), scharf (cay), sauer (chua), bitter (đắng), roh (sống); satt (no)."
+exercises:
+  - key: de:exercise:a2w1l2-listen-sauer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-sauer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Zitrone ist sehr sauer.
+      options:
+        - { id: lbn, text: Món ăn trong ngày chỉ có tám euro., lang: vi }
+        - { id: j0g, text: Nhân viên phục vụ rất thân thiện., lang: vi }
+        - { id: zym, text: Quả chanh rất chua., lang: vi }
+        - { id: aia, text: Tôi gọi suất menu có súp và cá., lang: vi }
+    answer:
+      correct_option_id: zym
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Quả chanh rất chua.". Từ khoá là sauer (chua); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Quả chanh rất chua.
+  - key: de:exercise:a2w1l2-mcq-vi-de-ruehren
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w1-ruehren
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "khuấy"?
+      stem_lang: vi
+      options:
+        - { id: bzn, text: rühren, lang: de }
+        - { id: g8r, text: abwaschen, lang: de }
+        - { id: n8c, text: braten, lang: de }
+        - { id: g6s, text: würzen, lang: de }
+    answer:
+      correct_option_id: bzn
+    explanation:
+      vi: "rühren nghĩa là \"khuấy\". Ví dụ: Rühren Sie die Soße langsam. (Hãy khuấy nước sốt thật chậm.)"
+    display_answer: rühren
+  - key: de:exercise:a2w1l2-mcq-de-vi-schaelen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-schaelen
+    prompt:
+      stem: "\"schälen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: t62, text: rửa (bát đĩa), lang: vi }
+        - { id: cq2, text: chua, lang: vi }
+        - { id: fh4, text: dọn bàn ăn, lang: vi }
+        - { id: lps, text: gọt vỏ, lang: vi }
+    answer:
+      correct_option_id: lps
+    explanation:
+      vi: "schälen nghĩa là \"gọt vỏ\". Ví dụ: Ich schäle die Kartoffeln für das Mittagessen. (Tôi gọt vỏ khoai tây cho bữa trưa.)"
+    display_answer: gọt vỏ
+  - key: de:exercise:a2w1l2-mcq-artikel-hauptgericht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-hauptgericht
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Hauptgericht\" (món chính): ___ Hauptgericht"
+      stem_lang: vi
+      options:
+        - { id: o88, text: das, lang: de }
+        - { id: niv, text: der, lang: de }
+        - { id: mkx, text: ein, lang: de }
+        - { id: v8e, text: die, lang: de }
+    answer:
+      correct_option_id: o88
+    explanation:
+      vi: "Hauptgericht là danh từ giống trung (das): das Hauptgericht; số nhiều: die Hauptgerichte. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:a2w1l2-tr-word-buffet
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-buffet
+    prompt:
+      source_text: bữa ăn tự chọn (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Buffet
+    known_wrong:
+      - answer: der Buffet
+        feedback_vi: Buffet là giống trung, nên là das Buffet.
+        error_tag: article
+      - answer: die Buffet
+        feedback_vi: Buffet là giống trung, nên là das Buffet.
+        error_tag: article
+    explanation:
+      vi: "\"bữa ăn tự chọn; bàn buffet\" trong tiếng Đức là das Buffet (số nhiều: die Buffets). Ví dụ: Im Hotel gibt es jeden Morgen ein großes Buffet."
+    display_answer: das Buffet
+  - key: de:exercise:a2w1l2-tr-word-salzig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-salzig
+    prompt:
+      source_text: mặn (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - salzig
+    explanation:
+      vi: "\"mặn\" trong tiếng Đức là salzig. Ví dụ: Die Suppe ist ziemlich salzig."
+    display_answer: salzig
+  - key: de:exercise:a2w1l2-fill-plural-menue
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-menue
+    prompt:
+      template: "Singular: das Menü · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1:
+          - Menüs
+    known_wrong:
+      - answer: Menü
+        feedback_vi: Menü là dạng số ít; số nhiều là Menüs.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của das Menü là die Menüs (ký hiệu trong từ điển: -s). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: das Menü · Plural: die Menüs"
+  - key: de:exercise:a2w1l2-mcq-luecke-braten
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-braten
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tôi rán thịt trong chảo.\": Ich ___ das Fleisch in der Pfanne."
+      stem_lang: vi
+      options:
+        - { id: b81, text: brate, lang: de }
+        - { id: kot, text: Rühren, lang: de }
+        - { id: bno, text: zu, lang: de }
+        - { id: vg5, text: einschenken, lang: de }
+    answer:
+      correct_option_id: b81
+    explanation:
+      vi: "Câu có nghĩa \"Tôi rán thịt trong chảo.\" nên cần brate (braten: rán, chiên, nướng chảo). einschenken = rót (đồ uống); zu = chế biến, chuẩn bị (món ăn); Rühren = khuấy không đúng nghĩa của câu."
+    display_answer: brate
+  - key: de:exercise:a2w1l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Tôi gọi một món khai vị và món chính với khoai tây.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich nehme eine Vorspeise und ein Hauptgericht mit Kartoffeln.
+        - Ich bestelle eine Vorspeise und ein Hauptgericht mit Kartoffeln.
+        - Ich hätte gern eine Vorspeise und ein Hauptgericht mit Kartoffeln.
+    explanation:
+      vi: "Gợi ý đáp án: Ich nehme eine Vorspeise und ein Hauptgericht mit Kartoffeln. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich nehme eine Vorspeise und ein Hauptgericht mit Kartoffeln.
+    item: de:item:a2w1-vorspeise
+  - key: de:exercise:a2w1l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Die Bedienung bringt das Tagesgericht und fragt, ob alles schmeckt.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhân viên phục vụ mang món ăn trong ngày ra và hỏi xem mọi thứ có ngon không.
+        - Người phục vụ mang món trong ngày ra và hỏi mọi thứ có ngon miệng không.
+        - Nhân viên mang món của ngày ra và hỏi xem có ngon không.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Bedienung bringt das Tagesgericht und fragt, ob alles schmeckt.\" nghĩa là: Nhân viên phục vụ mang món ăn trong ngày ra và hỏi xem mọi thứ có ngon không. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Nhân viên phục vụ mang món ăn trong ngày ra và hỏi xem mọi thứ có ngon không.
+    item: de:item:a2w1-bedienung

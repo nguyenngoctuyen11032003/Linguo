@@ -1,0 +1,234 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w2-adjektive-adverbien-erweitert
+order_index: 6
+level: a2
+title:
+  vi: Thêm tính từ và trạng từ hay dùng (Adjektive und Adverbien erweitern)
+objectives:
+  - vi: Dùng các tính từ và trạng từ chỉ mức độ, tần suất và đánh giá thường gặp ở A2.
+  - vi: Phân biệt tính từ (đứng sau sein) và trạng từ (bổ nghĩa động từ).
+  - vi: Dùng etwa, mindestens, höchstens để nói số lượng ước chừng.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w2-verben-erweitert
+items:
+  - item: de:item:a2w2-eigen
+  - item: de:item:a2w2-einzig
+  - item: de:item:a2w2-genau
+  - item: de:item:a2w2-gewoehnlich
+  - item: de:item:a2w2-lange
+  - item: de:item:a2w2-meistens
+  - item: de:item:a2w2-ordentlich
+  - item: de:item:a2w2-selten
+  - item: de:item:a2w2-voellig
+  - item: de:item:a2w2-weiter
+  - item: de:item:a2w2-wenigstens
+  - item: de:item:a2w2-vorsichtig
+  - item: de:item:a2w2-gefaehrlich
+  - item: de:item:a2w2-sicher
+  - item: de:item:a2w2-ernst
+  - item: de:item:a2w2-komisch
+  - item: de:item:a2w2-nuetzlich
+  - item: de:item:a2w2-unnoetig
+  - item: de:item:a2w2-besonders
+  - item: de:item:a2w2-etwa
+  - item: de:item:a2w2-mindestens
+  - item: de:item:a2w2-hoechstens
+  - item: de:item:a2w2-ausserdem
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn diễn đạt mức độ, tần suất và số lượng ước chừng chính xác hơn bằng nhiều tính từ và trạng từ hơn.
+  - type: explain
+    text:
+      vi: "Nhiều từ trong bài vừa là tính từ vừa là trạng từ mà không đổi dạng: Er fährt vorsichtig (trạng từ). Die Straße ist gefährlich (tính từ). Chỉ khi tính từ đứng trước danh từ bạn mới thêm đuôi: ein gefährlicher Weg."
+  - type: explain
+    text:
+      vi: "Etwa, mindestens, höchstens dùng trước con số: Das kostet etwa zehn Euro. Du brauchst mindestens eine Stunde. Das dauert höchstens zehn Minuten. Đây là cách nói số lượng ước chừng; etwa gần với ungefähr đã học ở A1."
+  - type: explain
+    text:
+      vi: "Gewöhnlich, meistens, selten, lange nói về tần suất hoặc thời gian: Meistens esse ich zu Hause. Ich sehe ihn nur selten. Ich habe lange gewartet. Trạng từ tần suất đứng ở vị trí sau động từ chia hoặc ở đầu câu (kéo theo đảo ngữ): Meistens esse ich zu Hause."
+  - type: deep_explain
+    text:
+      vi: "Eigen và einzig thường được dùng trước danh từ nên bạn gặp chúng có đuôi: ein eigenes Zimmer, der einzige Freund. Sicher có hai nghĩa: an toàn (Der Weg ist sicher) và chắc chắn (Ich bin sicher, dass er kommt). Weiter dùng trong Wie geht es weiter? (tiếp theo thế nào?) và Mach weiter! (cứ tiếp tục đi!)."
+  - type: example
+    target: Jedes Kind hat ein eigenes Zimmer.
+    target_lang: de
+    translation:
+      vi: Mỗi đứa trẻ có một phòng riêng.
+    note:
+      vi: eigen = riêng, của chính mình.
+  - type: example
+    target: Er ist mein einziger Freund hier.
+    target_lang: de
+    translation:
+      vi: Anh ấy là người bạn duy nhất của tôi ở đây.
+    note:
+      vi: einzig = duy nhất.
+  - type: example
+    target: Wie viel Uhr ist es genau?
+    target_lang: de
+    translation:
+      vi: Chính xác bây giờ là mấy giờ?
+    note:
+      vi: genau = chính xác, đúng.
+  - type: example
+    target: Gewöhnlich stehe ich um sechs Uhr auf.
+    target_lang: de
+    translation:
+      vi: Thường thì tôi dậy lúc sáu giờ.
+    note:
+      vi: gewöhnlich = thường thường.
+  - type: common_mistake
+    wrong: Ich sehe selten ihn.
+    right: Ich sehe ihn selten.
+    target_lang: de
+    note:
+      vi: Đại từ nhân xưng (ihn) đứng trước trạng từ selten.
+  - type: common_mistake
+    wrong: Die Straße ist gefährliche.
+    right: Die Straße ist gefährlich.
+    target_lang: de
+    note:
+      vi: Sau sein, tính từ không thêm đuôi; chỉ thêm đuôi khi đứng trước danh từ (eine gefährliche Straße).
+  - type: summary
+    points:
+      - vi: gewöhnlich, meistens, selten (tần suất); lange (thời gian), weiter (tiếp tục), außerdem (ngoài ra).
+exercises:
+  - key: de:exercise:a2w2l6-listen-hoechstens
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-hoechstens
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das dauert höchstens zehn Minuten.
+      options:
+        - { id: qm0, text: Chính xác bây giờ là mấy giờ?, lang: vi }
+        - { id: pnv, text: Sau đó sẽ thế nào?, lang: vi }
+        - { id: crh, text: Việc đó mất tối đa mười phút., lang: vi }
+        - { id: i71, text: Tôi đã đợi lâu., lang: vi }
+    answer:
+      correct_option_id: crh
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Việc đó mất tối đa mười phút.". Từ khoá là höchstens (nhiều nhất); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Việc đó mất tối đa mười phút.
+  - key: de:exercise:a2w2l6-mcq-vi-de-gefaehrlich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w2-gefaehrlich
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "nguy hiểm"?
+      stem_lang: vi
+      options:
+        - { id: bdy, text: gefährlich, lang: de }
+        - { id: pix, text: nützlich, lang: de }
+        - { id: e6t, text: komisch, lang: de }
+        - { id: aci, text: unnötig, lang: de }
+    answer:
+      correct_option_id: bdy
+    explanation:
+      vi: "gefährlich nghĩa là \"nguy hiểm\". Ví dụ: Die Straße ist sehr gefährlich. (Con đường rất nguy hiểm.)"
+    display_answer: gefährlich
+  - key: de:exercise:a2w2l6-mcq-de-vi-sicher
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-sicher
+    prompt:
+      stem: "\"sicher\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: d14, text: an toàn; chắc chắn, lang: vi }
+        - { id: un7, text: khoảng, lang: vi }
+        - { id: wyn, text: hoàn toàn, lang: vi }
+        - { id: w1l, text: "nghiêm trọng, nghiêm túc", lang: vi }
+    answer:
+      correct_option_id: d14
+    explanation:
+      vi: "sicher nghĩa là \"an toàn; chắc chắn\". Ví dụ: Ich bin sicher, dass er kommt. (Tôi chắc là anh ấy sẽ đến.)"
+    display_answer: an toàn; chắc chắn
+  - key: de:exercise:a2w2l6-tr-word-komisch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-komisch
+    prompt:
+      source_text: lạ, kỳ cục (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - komisch
+    explanation:
+      vi: "\"lạ, kỳ cục; buồn cười\" trong tiếng Đức là komisch. Ví dụ: Das schmeckt komisch."
+    display_answer: komisch
+  - key: de:exercise:a2w2l6-mcq-luecke-eigen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-eigen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Mỗi đứa trẻ có một phòng riêng.\": Jedes Kind hat ein ___ Zimmer."
+      stem_lang: vi
+      options:
+        - { id: nsi, text: komisch, lang: de }
+        - { id: o0n, text: einziger, lang: de }
+        - { id: kvw, text: sicher, lang: de }
+        - { id: u92, text: eigenes, lang: de }
+    answer:
+      correct_option_id: u92
+    explanation:
+      vi: "Câu có nghĩa \"Mỗi đứa trẻ có một phòng riêng.\" nên cần eigenes (eigen: riêng, của chính mình). einziger = duy nhất; sicher = an toàn; chắc chắn; komisch = lạ, kỳ cục; buồn cười không đúng nghĩa của câu."
+    display_answer: eigenes
+  - key: de:exercise:a2w2l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Thường thì tôi ăn ở nhà, nhưng thỉnh thoảng tôi đi ăn ngoài.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meistens esse ich zu Hause, aber manchmal gehe ich essen.
+        - Gewöhnlich esse ich zu Hause, aber manchmal gehe ich essen.
+        - Meistens esse ich zu Hause, aber manchmal esse ich auswärts.
+    explanation:
+      vi: "Gợi ý đáp án: Meistens esse ich zu Hause, aber manchmal gehe ich essen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Meistens esse ich zu Hause, aber manchmal gehe ich essen.
+    item: de:item:a2w2-meistens
+  - key: de:exercise:a2w2l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Das dauert höchstens zehn Minuten, und es kostet etwa fünf Euro.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Việc đó kéo dài nhiều nhất mười phút và tốn khoảng năm euro.
+        - Cái đó chỉ mất tối đa mười phút và tốn khoảng năm euro.
+        - Việc này lâu nhất mười phút và giá khoảng năm euro.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das dauert höchstens zehn Minuten, und es kostet etwa fünf Euro.\" nghĩa là: Việc đó kéo dài nhiều nhất mười phút và tốn khoảng năm euro. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Việc đó kéo dài nhiều nhất mười phút và tốn khoảng năm euro.
+    item: de:item:a2w2-etwa

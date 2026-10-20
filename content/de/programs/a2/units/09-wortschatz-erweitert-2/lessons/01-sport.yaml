@@ -1,0 +1,291 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w2-sport
+order_index: 1
+level: a2
+title:
+  vi: Thể thao và hoạt động thể chất (Sport)
+objectives:
+  - vi: Gọi tên các môn thể thao và những người, đồ vật liên quan trong một trận đấu.
+  - vi: "Chọn đúng động từ đi với từng môn: spielen, gehen, machen."
+  - vi: Dùng các động từ thể thao bất quy tắc ở thì hiện tại và Perfekt.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w1-verwandte-familie
+items:
+  - item: de:item:a2w2-sportart
+  - item: de:item:a2w2-training
+  - item: de:item:a2w2-trainer
+  - item: de:item:a2w2-mannschaft
+  - item: de:item:a2w2-wettkampf
+  - item: de:item:a2w2-turnier
+  - item: de:item:a2w2-tor
+  - item: de:item:a2w2-schiedsrichter
+  - item: de:item:a2w2-fan
+  - item: de:item:a2w2-stadion
+  - item: de:item:a2w2-sieger
+  - item: de:item:a2w2-sieg
+  - item: de:item:a2w2-niederlage
+  - item: de:item:a2w2-sportler
+  - item: de:item:a2w2-trainieren
+  - item: de:item:a2w2-schiessen
+  - item: de:item:a2w2-werfen
+  - item: de:item:a2w2-fangen
+  - item: de:item:a2w2-reiten
+  - item: de:item:a2w2-angeln
+  - item: de:item:a2w2-segeln
+  - item: de:item:a2w2-turnen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được về môn thể thao mình thích, hiểu một bản tin thể thao đơn giản và dùng đúng động từ đi với từng môn.
+  - type: explain
+    text:
+      vi: "Tiếng Đức chọn động từ theo loại môn: bóng thì dùng spielen (Fußball spielen, Tennis spielen), các môn đi đến một nơi thì dùng gehen (schwimmen gehen, wandern gehen), còn nhiều môn khác dùng machen (Sport machen, Yoga machen). Một số môn có động từ riêng: reiten, angeln, segeln, turnen."
+  - type: explain
+    text:
+      vi: Một đội bóng gồm die Mannschaft (đội), der Trainer (huấn luyện viên) và die Sportler (vận động viên). Trọng tài là der Schiedsrichter, người hâm mộ là der Fan. Der Sieger thắng, còn bên thua chịu die Niederlage; kết quả ghi bằng ein Sieg hoặc eine Niederlage.
+  - type: explain
+    text:
+      vi: "Động từ bất quy tắc: schießen (er schießt, schoss, hat geschossen), werfen (er wirft, warf, hat geworfen), fangen (er fängt, fing, hat gefangen), reiten (er reitet, ritt, ist geritten). Mệnh lệnh du của werfen là Wirf den Ball! (đổi nguyên âm e → i, không có -e cuối)."
+  - type: deep_explain
+    text:
+      vi: "Das Stadion có số nhiều Stadien (đuôi -ien), không phải Stadions. Das Training thường dùng ở số ít: Das Training beginnt um 18 Uhr. Ở Đức, nhiều người tập thể thao trong der Verein (câu lạc bộ), nơi đóng phí hằng tháng và có huấn luyện viên; bạn sẽ gặp từ này nhiều khi nói về hoạt động cuối tuần."
+  - type: example
+    target: Welche Sportart machst du am liebsten?
+    target_lang: de
+    translation:
+      vi: Bạn thích môn thể thao nào nhất?
+    note:
+      vi: die Sportart = môn thể thao.
+  - type: example
+    target: Unser Training beginnt um 18 Uhr.
+    target_lang: de
+    translation:
+      vi: Buổi tập của chúng tôi bắt đầu lúc 18 giờ.
+    note:
+      vi: das Training = buổi tập luyện.
+  - type: example
+    target: Der Trainer erklärt die Übung.
+    target_lang: de
+    translation:
+      vi: Huấn luyện viên giải thích bài tập.
+    note:
+      vi: der Trainer = huấn luyện viên.
+  - type: example
+    target: Unsere Mannschaft hat gestern gewonnen.
+    target_lang: de
+    translation:
+      vi: Đội của chúng tôi hôm qua đã thắng.
+    note:
+      vi: die Mannschaft = đội (thể thao).
+  - type: common_mistake
+    wrong: Ich mache Fußball.
+    right: Ich spiele Fußball.
+    target_lang: de
+    note:
+      vi: Với môn bóng và trò chơi dùng spielen, không dùng machen.
+  - type: common_mistake
+    wrong: Er hat den Ball gefangt.
+    right: Er hat den Ball gefangen.
+    target_lang: de
+    note:
+      vi: "Fangen là động từ bất quy tắc: fängt, fing, hat gefangen."
+  - type: summary
+    points:
+      - vi: schießen – schoss – hat geschossen; werfen – warf – hat geworfen; fangen – fing – hat gefangen; Stadion → Stadien.
+exercises:
+  - key: de:exercise:a2w2l1-listen-segeln
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-segeln
+    prompt:
+      audio_asset_id: null
+      fallback_text: Im Urlaub segeln wir auf dem See.
+      options:
+        - { id: ldu, text: Trong kỳ nghỉ chúng tôi đi thuyền buồm trên hồ., lang: vi }
+        - { id: t5w, text: Buổi tập của chúng tôi bắt đầu lúc 18 giờ., lang: vi }
+        - { id: rci, text: Các vận động viên tập luyện mỗi ngày., lang: vi }
+        - { id: q6n, text: Con gái tôi thích cưỡi ngựa., lang: vi }
+    answer:
+      correct_option_id: ldu
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Trong kỳ nghỉ chúng tôi đi thuyền buồm trên hồ.". Từ khoá là segeln (đi thuyền buồm); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Trong kỳ nghỉ chúng tôi đi thuyền buồm trên hồ.
+  - key: de:exercise:a2w2l1-mcq-vi-de-turnen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w2-turnen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "tập thể dục dụng cụ; tập thể dục"?
+      stem_lang: vi
+      options:
+        - { id: d1r, text: werfen, lang: de }
+        - { id: q74, text: schießen, lang: de }
+        - { id: orr, text: segeln, lang: de }
+        - { id: idj, text: turnen, lang: de }
+    answer:
+      correct_option_id: idj
+    explanation:
+      vi: "turnen nghĩa là \"tập thể dục dụng cụ; tập thể dục\". Ví dụ: Die Kinder turnen in der Turnhalle. (Bọn trẻ tập thể dục trong phòng tập.)"
+    display_answer: turnen
+  - key: de:exercise:a2w2l1-mcq-de-vi-stadion
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-stadion
+    prompt:
+      stem: "\"das Stadion\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: yrt, text: sân vận động, lang: vi }
+        - { id: efe, text: ném, lang: vi }
+        - { id: ftr, text: "sút, bắn", lang: vi }
+        - { id: og5, text: người hâm mộ, lang: vi }
+    answer:
+      correct_option_id: yrt
+    explanation:
+      vi: "das Stadion nghĩa là \"sân vận động\". Ví dụ: Das Stadion ist ausverkauft. (Sân vận động đã hết vé.)"
+    display_answer: sân vận động
+  - key: de:exercise:a2w2l1-mcq-artikel-fan
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-fan
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Fan\" (người hâm mộ): ___ Fan"
+      stem_lang: vi
+      options:
+        - { id: vgw, text: das, lang: de }
+        - { id: m9v, text: der, lang: de }
+        - { id: vu6, text: ein, lang: de }
+        - { id: ne8, text: die, lang: de }
+    answer:
+      correct_option_id: m9v
+    explanation:
+      vi: "Fan là danh từ giống đực (der): der Fan; số nhiều: die Fans. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a2w2l1-tr-word-schiedsrichter
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-schiedsrichter
+    prompt:
+      source_text: trọng tài (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Schiedsrichter
+        - die Schiedsrichterin
+    explanation:
+      vi: "\"trọng tài\" trong tiếng Đức là der Schiedsrichter (số nhiều: die Schiedsrichter). Ví dụ: Der Schiedsrichter zeigt eine gelbe Karte."
+    display_answer: der Schiedsrichter
+  - key: de:exercise:a2w2l1-tr-word-angeln
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-angeln
+    prompt:
+      source_text: câu cá (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - angeln
+    explanation:
+      vi: "\"câu cá\" trong tiếng Đức là angeln. Ví dụ: Mein Opa angelt am Fluss."
+    display_answer: angeln
+  - key: de:exercise:a2w2l1-fill-plural-niederlage
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-niederlage
+    prompt:
+      template: "Singular: die Niederlage · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Niederlagen
+    known_wrong:
+      - answer: Niederlage
+        feedback_vi: Niederlage là dạng số ít; số nhiều là Niederlagen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Niederlage là die Niederlagen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Niederlage · Plural: die Niederlagen"
+  - key: de:exercise:a2w2l1-mcq-luecke-sportart
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-sportart
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Bạn thích môn thể thao nào nhất?\": Welche ___ machst du am liebsten?"
+      stem_lang: vi
+      options:
+        - { id: ehz, text: Wettkampf, lang: de }
+        - { id: pxf, text: Turnier, lang: de }
+        - { id: u0t, text: Sieg, lang: de }
+        - { id: l7o, text: Sportart, lang: de }
+    answer:
+      correct_option_id: l7o
+    explanation:
+      vi: "Câu có nghĩa \"Bạn thích môn thể thao nào nhất?\" nên cần Sportart (die Sportart: môn thể thao). Turnier = giải đấu; Wettkampf = cuộc thi đấu; Sieg = chiến thắng không đúng nghĩa của câu."
+    display_answer: Sportart
+  - key: de:exercise:a2w2l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Hôm qua đội của chúng tôi đã thắng ba một.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Unsere Mannschaft hat gestern drei zu eins gewonnen.
+        - Unsere Mannschaft hat gestern mit drei zu eins gewonnen.
+        - Gestern hat unsere Mannschaft drei zu eins gewonnen.
+        - Gestern hat unsere Mannschaft mit drei zu eins gewonnen.
+    explanation:
+      vi: "Gợi ý đáp án: Unsere Mannschaft hat gestern drei zu eins gewonnen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Unsere Mannschaft hat gestern drei zu eins gewonnen.
+    item: de:item:a2w2-mannschaft
+  - key: de:exercise:a2w2l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Die Fans singen laut im Stadion, aber der Schiedsrichter zeigt eine gelbe Karte.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người hâm mộ hát lớn trong sân vận động, nhưng trọng tài rút thẻ vàng.
+        - Các cổ động viên hát to trong sân vận động nhưng trọng tài rút thẻ vàng.
+        - Người hâm mộ hát to trong sân vận động, còn trọng tài thì rút thẻ vàng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Fans singen laut im Stadion, aber der Schiedsrichter zeigt eine gelbe Karte.\" nghĩa là: Người hâm mộ hát lớn trong sân vận động, nhưng trọng tài rút thẻ vàng. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Người hâm mộ hát lớn trong sân vận động, nhưng trọng tài rút thẻ vàng.
+    item: de:item:a2w2-schiedsrichter

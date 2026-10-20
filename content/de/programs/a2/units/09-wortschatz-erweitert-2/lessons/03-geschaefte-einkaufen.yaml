@@ -1,0 +1,296 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w2-geschaefte-einkaufen
+order_index: 3
+level: a2
+title:
+  vi: Cửa hàng và mua sắm (Geschäfte und Einkaufen)
+objectives:
+  - vi: Gọi tên các loại cửa hàng và nói mua gì ở đâu.
+  - vi: "Hiểu các từ trên hóa đơn và biển giảm giá: Kassenbon, reduziert, Wechselgeld."
+  - vi: Hỏi về đổi, trả hàng và cách thanh toán.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w2-auto-verkehr
+items:
+  - item: de:item:a2w2-buchhandlung
+  - item: de:item:a2w2-drogerie
+  - item: de:item:a2w2-kiosk
+  - item: de:item:a2w2-blumenladen
+  - item: de:item:a2w2-juwelier
+  - item: de:item:a2w2-kassenbon
+  - item: de:item:a2w2-quittung
+  - item: de:item:a2w2-einkaufswagen
+  - item: de:item:a2w2-sonderangebot
+  - item: de:item:a2w2-schlussverkauf
+  - item: de:item:a2w2-umtausch
+  - item: de:item:a2w2-schaufenster
+  - item: de:item:a2w2-fussgaengerzone
+  - item: de:item:a2w2-einkaufszentrum
+  - item: de:item:a2w2-lebensmittelgeschaeft
+  - item: de:item:a2w2-warenhaus
+  - item: de:item:a2w2-kassierer
+  - item: de:item:a2w2-wechselgeld
+  - item: de:item:a2w2-kleingeld
+  - item: de:item:a2w2-preisschild
+  - item: de:item:a2w2-reduziert
+  - item: de:item:a2w2-bar
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn biết mua gì ở đâu, hiểu các từ về giá và thanh toán, và hỏi được về việc đổi hàng.
+  - type: explain
+    text:
+      vi: "Tên cửa hàng thường là danh từ ghép với -laden, -geschäft, -handlung hoặc -rie: der Blumenladen, das Lebensmittelgeschäft, die Buchhandlung, die Drogerie. Hỏi ở đâu bán gì bạn dùng Wo bekomme ich …? hoặc Wo kann ich … kaufen?; trả lời dùng in + Dativ: in der Drogerie."
+  - type: explain
+    text:
+      vi: "Khi trả tiền, bạn thấy der Kassenbon (hóa đơn tại quầy), die Quittung (biên lai), das Wechselgeld (tiền thừa) và das Kleingeld (tiền lẻ). Hỏi cách thanh toán: Zahlen Sie bar oder mit Karte? Bar là tiền mặt, mit Karte là bằng thẻ."
+  - type: explain
+    text:
+      vi: "Biển giảm giá thường thấy: das Sonderangebot (hàng giá đặc biệt), der Schlussverkauf (đợt bán hết hàng cuối mùa), reduziert (đã giảm giá). Muốn đổi hàng bạn nói Ich möchte das umtauschen; danh từ là der Umtausch, thường cần Kassenbon."
+  - type: deep_explain
+    text:
+      vi: Ở Đức, bạn thường phải mang túi riêng hoặc trả tiền túi (die Tüte kostet extra). Ở siêu thị nhỏ, đôi khi bạn phải bỏ một đồng xu vào der Einkaufswagen để mở khóa, và lấy lại khi trả xe. Chính sách đổi trả của mỗi cửa hàng khác nhau, nên hãy hỏi trước khi mua.
+  - type: example
+    target: Ich kaufe das Buch in der Buchhandlung.
+    target_lang: de
+    translation:
+      vi: Tôi mua quyển sách ở hiệu sách.
+    note:
+      vi: die Buchhandlung = hiệu sách.
+  - type: example
+    target: Zahnpasta gibt es in der Drogerie.
+    target_lang: de
+    translation:
+      vi: Kem đánh răng có ở cửa hàng đồ vệ sinh.
+    note:
+      vi: die Drogerie = cửa hàng mỹ phẩm, đồ vệ sinh.
+  - type: example
+    target: Am Kiosk kaufe ich eine Zeitung.
+    target_lang: de
+    translation:
+      vi: Tôi mua tờ báo ở quầy báo.
+    note:
+      vi: der Kiosk = quầy bán báo, đồ ăn vặt.
+  - type: example
+    target: Wir kaufen Rosen im Blumenladen.
+    target_lang: de
+    translation:
+      vi: Chúng tôi mua hoa hồng ở cửa hàng hoa.
+    note:
+      vi: der Blumenladen = cửa hàng hoa.
+  - type: common_mistake
+    wrong: Ich kaufe das Buch bei der Buchhandlung.
+    right: Ich kaufe das Buch in der Buchhandlung.
+    target_lang: de
+    note:
+      vi: Nói mua ở cửa hàng thì dùng in + Dativ. Bei dùng cho người (beim Bäcker) hoặc nơi làm việc.
+  - type: common_mistake
+    wrong: Ich zahle mit bar.
+    right: Ich zahle bar.
+    target_lang: de
+    note:
+      vi: Bar là trạng từ, không cần mit; mit Karte là bằng thẻ.
+  - type: summary
+    points:
+      - vi: das Sonderangebot, der Schlussverkauf, reduziert, der Umtausch.
+exercises:
+  - key: de:exercise:a2w2l3-listen-kleingeld
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-kleingeld
+    prompt:
+      audio_asset_id: null
+      fallback_text: Haben Sie Kleingeld für den Automaten?
+      options:
+        - { id: i4r, text: Bạn còn nhận lại năm euro tiền thừa., lang: vi }
+        - { id: bk8, text: "Trên nhãn giá ghi 19,99 euro.", lang: vi }
+        - { id: z2h, text: Bạn có tiền lẻ cho máy bán hàng không?, lang: vi }
+        - { id: jn1, text: Tôi cần một biên lai., lang: vi }
+    answer:
+      correct_option_id: z2h
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Bạn có tiền lẻ cho máy bán hàng không?". Từ khoá là das Kleingeld (tiền lẻ); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Bạn có tiền lẻ cho máy bán hàng không?
+  - key: de:exercise:a2w2l3-mcq-vi-de-blumenladen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w2-blumenladen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cửa hàng hoa"?
+      stem_lang: vi
+      options:
+        - { id: rja, text: der Blumenladen, lang: de }
+        - { id: myn, text: das Einkaufszentrum, lang: de }
+        - { id: pe1, text: das Preisschild, lang: de }
+        - { id: xto, text: der Schlussverkauf, lang: de }
+    answer:
+      correct_option_id: rja
+    explanation:
+      vi: "der Blumenladen nghĩa là \"cửa hàng hoa\". Ví dụ: Wir kaufen Rosen im Blumenladen. (Chúng tôi mua hoa hồng ở cửa hàng hoa.)"
+    display_answer: der Blumenladen
+  - key: de:exercise:a2w2l3-mcq-de-vi-drogerie
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-drogerie
+    prompt:
+      stem: "\"die Drogerie\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: bt5, text: "bảng giá, nhãn giá", lang: vi }
+        - { id: tbe, text: đã giảm giá, lang: vi }
+        - { id: bdd, text: tiền thừa, lang: vi }
+        - { id: ibf, text: "cửa hàng mỹ phẩm, đồ vệ sinh", lang: vi }
+    answer:
+      correct_option_id: ibf
+    explanation:
+      vi: "die Drogerie nghĩa là \"cửa hàng mỹ phẩm, đồ vệ sinh\". Ví dụ: Zahnpasta gibt es in der Drogerie. (Kem đánh răng có ở cửa hàng đồ vệ sinh.)"
+    display_answer: cửa hàng mỹ phẩm, đồ vệ sinh
+  - key: de:exercise:a2w2l3-mcq-artikel-kassenbon
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-kassenbon
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Kassenbon\" (hóa đơn (ở quầy)): ___ Kassenbon"
+      stem_lang: vi
+      options:
+        - { id: jb7, text: das, lang: de }
+        - { id: va5, text: der, lang: de }
+        - { id: pab, text: ein, lang: de }
+        - { id: iym, text: die, lang: de }
+    answer:
+      correct_option_id: va5
+    explanation:
+      vi: "Kassenbon là danh từ giống đực (der): der Kassenbon; số nhiều: die Kassenbons. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a2w2l3-tr-word-schaufenster
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-schaufenster
+    prompt:
+      source_text: tủ kính trưng bày (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Schaufenster
+    known_wrong:
+      - answer: der Schaufenster
+        feedback_vi: Schaufenster là giống trung, nên là das Schaufenster.
+        error_tag: article
+      - answer: die Schaufenster
+        feedback_vi: Schaufenster là giống trung, nên là das Schaufenster.
+        error_tag: article
+    explanation:
+      vi: "\"tủ kính trưng bày\" trong tiếng Đức là das Schaufenster (số nhiều: die Schaufenster). Ví dụ: Das Kleid im Schaufenster gefällt mir."
+    display_answer: das Schaufenster
+  - key: de:exercise:a2w2l3-tr-word-reduziert
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-reduziert
+    prompt:
+      source_text: đã giảm giá (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - reduziert
+    explanation:
+      vi: "\"đã giảm giá\" trong tiếng Đức là reduziert. Ví dụ: Alle Schuhe sind heute reduziert."
+    display_answer: reduziert
+  - key: de:exercise:a2w2l3-fill-plural-kiosk
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-kiosk
+    prompt:
+      template: "Singular: der Kiosk · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Kioske
+    known_wrong:
+      - answer: Kiosk
+        feedback_vi: Kiosk là dạng số ít; số nhiều là Kioske.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Kiosk là die Kioske (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Kiosk · Plural: die Kioske"
+  - key: de:exercise:a2w2l3-mcq-luecke-buchhandlung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-buchhandlung
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tôi mua quyển sách ở hiệu sách.\": Ich kaufe das Buch in der ___."
+      stem_lang: vi
+      options:
+        - { id: h8t, text: Warenhaus, lang: de }
+        - { id: jpy, text: Lebensmittelgeschäft, lang: de }
+        - { id: nks, text: Quittung, lang: de }
+        - { id: ziv, text: Buchhandlung, lang: de }
+    answer:
+      correct_option_id: ziv
+    explanation:
+      vi: "Câu có nghĩa \"Tôi mua quyển sách ở hiệu sách.\" nên cần Buchhandlung (die Buchhandlung: hiệu sách). Lebensmittelgeschäft = cửa hàng thực phẩm; Warenhaus = cửa hàng bách hóa; Quittung = biên lai không đúng nghĩa của câu."
+    display_answer: Buchhandlung
+  - key: de:exercise:a2w2l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Tôi muốn đổi cái áo này, đây là hóa đơn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte diese Jacke umtauschen. Hier ist der Kassenbon.
+        - Ich möchte diese Jacke umtauschen, hier ist der Kassenbon.
+        - Ich würde diese Jacke gern umtauschen. Hier ist der Kassenbon.
+    explanation:
+      vi: "Gợi ý đáp án: Ich möchte diese Jacke umtauschen. Hier ist der Kassenbon. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich möchte diese Jacke umtauschen. Hier ist der Kassenbon.
+    item: de:item:a2w2-kassenbon
+  - key: de:exercise:a2w2l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Im Schlussverkauf sind alle Jacken reduziert, aber ich habe nur noch Kleingeld.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong đợt bán hết hàng cuối mùa tất cả áo khoác được giảm giá, nhưng tôi chỉ còn tiền lẻ.
+        - Trong đợt giảm giá cuối mùa mọi áo khoác đều giảm giá, nhưng tôi chỉ còn tiền lẻ.
+        - Đợt bán cuối mùa áo khoác nào cũng giảm giá nhưng tôi chỉ còn tiền lẻ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Im Schlussverkauf sind alle Jacken reduziert, aber ich habe nur noch Kleingeld.\" nghĩa là: Trong đợt bán hết hàng cuối mùa tất cả áo khoác được giảm giá, nhưng tôi chỉ còn tiền lẻ. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Trong đợt bán hết hàng cuối mùa tất cả áo khoác được giảm giá, nhưng tôi chỉ còn tiền lẻ.
+    item: de:item:a2w2-schlussverkauf

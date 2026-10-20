@@ -1,0 +1,297 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w1-schule-lernen
+order_index: 5
+level: a2
+title:
+  vi: Trường học và các môn học (Schule und Schulfächer)
+objectives:
+  - vi: Gọi tên các môn học, đồ dùng và nơi trong trường.
+  - vi: Hỏi và kể về một ngày ở trường.
+  - vi: "Dùng các động từ học tập: rechnen, buchstabieren, abschreiben, vorlesen."
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w1-wetter-natur
+items:
+  - item: de:item:a2w1-klassenzimmer
+  - item: de:item:a2w1-lehrerzimmer
+  - item: de:item:a2w1-schulhof
+  - item: de:item:a2w1-schulbus
+  - item: de:item:a2w1-schulfach
+  - item: de:item:a2w1-aufsatz
+  - item: de:item:a2w1-diktat
+  - item: de:item:a2w1-mathematik
+  - item: de:item:a2w1-physik
+  - item: de:item:a2w1-chemie
+  - item: de:item:a2w1-biologie
+  - item: de:item:a2w1-erdkunde
+  - item: de:item:a2w1-pausenbrot
+  - item: de:item:a2w1-schultasche
+  - item: de:item:a2w1-lineal
+  - item: de:item:a2w1-schere
+  - item: de:item:a2w1-klebstoff
+  - item: de:item:a2w1-direktor
+  - item: de:item:a2w1-mitschueler
+  - item: de:item:a2w1-rechnen
+  - item: de:item:a2w1-buchstabieren
+  - item: de:item:a2w1-abschreiben
+  - item: de:item:a2w1-vorlesen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về trường học, các môn học và đồ dùng học tập, và kể được một ngày ở trường bằng câu đơn giản.
+  - type: explain
+    text:
+      vi: "Tên các môn học thường có đuôi -ie hoặc -ik, là giống cái và không có số nhiều: die Biologie, die Chemie, die Physik, die Mathematik. Khi nói về môn học bạn thường bỏ mạo từ: Wir haben heute Chemie. Trong văn nói, Mathematik hay được rút gọn thành Mathe."
+  - type: explain
+    text:
+      vi: "Nhiều danh từ ghép chỉ trường học có từ cuối cho biết giống: das Klassenzimmer (das Zimmer), der Schulhof (der Hof), die Schultasche (die Tasche), das Schulfach (das Fach). Ví dụ der Schulbus có số nhiều die Schulbusse. Giống của từ ghép luôn theo từ cuối."
+  - type: explain
+    text:
+      vi: "Động từ học tập có nghĩa khác nhau: rechnen là tính toán, buchstabieren là đánh vần từng chữ cái, abschreiben là chép lại (hoặc chép bài người khác), vorlesen là đọc to cho người khác nghe. Ở thì Perfekt: Ich habe die Aufgabe abgeschrieben. Der Lehrer hat eine Geschichte vorgelesen."
+  - type: deep_explain
+    text:
+      vi: Ở Đức, học sinh có thể vào der Kindergarten rồi die Grundschule (lớp 1 đến 4), sau đó chọn Gymnasium, Realschule hoặc Gesamtschule. Der Schulhof là sân trường, nơi học sinh nghỉ giải lao (die Pause) và ăn das Pausenbrot, bữa nhẹ mang theo từ nhà. Cách gọi trường và hệ thống trường khác nhau giữa 16 bang.
+  - type: example
+    target: Das Klassenzimmer ist hell und groß.
+    target_lang: de
+    translation:
+      vi: Phòng học sáng và rộng.
+    note:
+      vi: das Klassenzimmer = phòng học.
+  - type: example
+    target: Die Lehrer sitzen im Lehrerzimmer.
+    target_lang: de
+    translation:
+      vi: Các thầy cô ngồi trong phòng giáo viên.
+    note:
+      vi: das Lehrerzimmer = phòng giáo viên.
+  - type: example
+    target: In der Pause spielen wir auf dem Schulhof.
+    target_lang: de
+    translation:
+      vi: Giờ ra chơi chúng tôi chơi ở sân trường.
+    note:
+      vi: der Schulhof = sân trường.
+  - type: example
+    target: Der Schulbus kommt um sieben Uhr.
+    target_lang: de
+    translation:
+      vi: Xe buýt trường đến lúc bảy giờ.
+    note:
+      vi: der Schulbus = xe buýt đưa đón học sinh.
+  - type: common_mistake
+    wrong: Wir haben heute Chemie in die Schule.
+    right: Wir haben heute Chemie in der Schule.
+    target_lang: de
+    note:
+      vi: "Wo? (ở đâu) đi với in + Dativ: in der Schule."
+  - type: common_mistake
+    wrong: Das Diktat ist schwer, ich habe es abgeschreibt.
+    right: Das Diktat ist schwer, ich habe es abgeschrieben.
+    target_lang: de
+    note:
+      vi: "Abschreiben là động từ bất quy tắc: schreibt ab, schrieb ab, hat abgeschrieben."
+  - type: summary
+    points:
+      - vi: rechnen, buchstabieren, abschreiben (hat abgeschrieben), vorlesen (hat vorgelesen).
+exercises:
+  - key: de:exercise:a2w1l5-listen-abschreiben
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-abschreiben
+    prompt:
+      audio_asset_id: null
+      fallback_text: Bitte schreibt den Text ab.
+      options:
+        - { id: e9l, text: Thầy hiệu trưởng nói chuyện với phụ huynh., lang: vi }
+        - { id: shw, text: Tôi cần một cái thước cho bản vẽ., lang: vi }
+        - { id: drj, text: Hãy chép lại đoạn văn này., lang: vi }
+        - { id: lu2, text: Môn học ưa thích nhất của tôi là sinh học., lang: vi }
+    answer:
+      correct_option_id: drj
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Hãy chép lại đoạn văn này.". Từ khoá là abschreiben (chép lại); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Hãy chép lại đoạn văn này.
+  - key: de:exercise:a2w1l5-mcq-vi-de-schultasche
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w1-schultasche
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cặp sách"?
+      stem_lang: vi
+      options:
+        - { id: dm4, text: der Schulhof, lang: de }
+        - { id: tp9, text: die Biologie, lang: de }
+        - { id: v2r, text: das Pausenbrot, lang: de }
+        - { id: zst, text: die Schultasche, lang: de }
+    answer:
+      correct_option_id: zst
+    explanation:
+      vi: "die Schultasche nghĩa là \"cặp sách\". Ví dụ: Die Schultasche ist sehr schwer. (Cái cặp rất nặng.)"
+    display_answer: die Schultasche
+  - key: de:exercise:a2w1l5-mcq-de-vi-chemie
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-chemie
+    prompt:
+      stem: "\"die Chemie\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: kcd, text: sân trường, lang: vi }
+        - { id: b2v, text: môn hóa học, lang: vi }
+        - { id: d5k, text: bánh mì mang theo ăn giờ ra chơi, lang: vi }
+        - { id: l2k, text: "hồ dán, keo", lang: vi }
+    answer:
+      correct_option_id: b2v
+    explanation:
+      vi: "die Chemie nghĩa là \"môn hóa học\". Ví dụ: Chemie ist ein schwieriges Fach. (Hóa học là một môn khó.)"
+    display_answer: môn hóa học
+  - key: de:exercise:a2w1l5-mcq-artikel-schere
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-schere
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Schere\" (cái kéo): ___ Schere"
+      stem_lang: vi
+      options:
+        - { id: nde, text: ein, lang: de }
+        - { id: hvx, text: das, lang: de }
+        - { id: vpt, text: die, lang: de }
+        - { id: zvm, text: der, lang: de }
+    answer:
+      correct_option_id: vpt
+    explanation:
+      vi: "Schere là danh từ giống cái (die): die Schere; số nhiều: die Scheren. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:a2w1l5-tr-word-mathematik
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-mathematik
+    prompt:
+      source_text: môn toán (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Mathematik
+    known_wrong:
+      - answer: der Mathematik
+        feedback_vi: Mathematik là giống cái, nên là die Mathematik.
+        error_tag: article
+      - answer: das Mathematik
+        feedback_vi: Mathematik là giống cái, nên là die Mathematik.
+        error_tag: article
+    explanation:
+      vi: "\"môn toán\" trong tiếng Đức là die Mathematik (số nhiều: không dùng). Ví dụ: Mathematik ist mein Lieblingsfach."
+    display_answer: die Mathematik
+  - key: de:exercise:a2w1l5-tr-word-vorlesen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-vorlesen
+    prompt:
+      source_text: đọc to cho ai nghe (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - vorlesen
+    explanation:
+      vi: "\"đọc to cho ai nghe\" trong tiếng Đức là vorlesen. Ví dụ: Der Lehrer liest eine Geschichte vor."
+    display_answer: vorlesen
+  - key: de:exercise:a2w1l5-fill-plural-diktat
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-diktat
+    prompt:
+      template: "Singular: das Diktat · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 9 }
+    answer:
+      blanks:
+        b1:
+          - Diktate
+    known_wrong:
+      - answer: Diktat
+        feedback_vi: Diktat là dạng số ít; số nhiều là Diktate.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của das Diktat là die Diktate (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: das Diktat · Plural: die Diktate"
+  - key: de:exercise:a2w1l5-mcq-luecke-klassenzimmer
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-klassenzimmer
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Phòng học sáng và rộng.\": Das ___ ist hell und groß."
+      stem_lang: vi
+      options:
+        - { id: fin, text: Klassenzimmer, lang: de }
+        - { id: yve, text: Lineal, lang: de }
+        - { id: kqn, text: Schulbus, lang: de }
+        - { id: pr8, text: Mathematik, lang: de }
+    answer:
+      correct_option_id: fin
+    explanation:
+      vi: "Câu có nghĩa \"Phòng học sáng và rộng.\" nên cần Klassenzimmer (das Klassenzimmer: phòng học). Schulbus = xe buýt đưa đón học sinh; Mathematik = môn toán; Lineal = cái thước kẻ không đúng nghĩa của câu."
+    display_answer: Klassenzimmer
+  - key: de:exercise:a2w1l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Con gái tôi mang bánh mì trong cặp đi học.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meine Tochter hat ein Pausenbrot in der Schultasche.
+        - Meine Tochter hat ihr Pausenbrot in der Schultasche.
+        - Meine Tochter hat ein Pausenbrot in ihrer Schultasche.
+    explanation:
+      vi: "Gợi ý đáp án: Meine Tochter hat ein Pausenbrot in der Schultasche. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Meine Tochter hat ein Pausenbrot in der Schultasche.
+    item: de:item:a2w1-pausenbrot
+  - key: de:exercise:a2w1l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Der Lehrer liest eine Geschichte vor, und die Mitschüler hören zu.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thầy giáo đọc to một câu chuyện và các bạn cùng lớp lắng nghe.
+        - Thầy giáo đọc một câu chuyện cho cả lớp, và các bạn học nghe.
+        - Thầy đọc to một câu chuyện còn các bạn cùng lớp thì nghe.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Lehrer liest eine Geschichte vor, und die Mitschüler hören zu.\" nghĩa là: Thầy giáo đọc to một câu chuyện và các bạn cùng lớp lắng nghe. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Thầy giáo đọc to một câu chuyện và các bạn cùng lớp lắng nghe.
+    item: de:item:a2w1-mitschueler

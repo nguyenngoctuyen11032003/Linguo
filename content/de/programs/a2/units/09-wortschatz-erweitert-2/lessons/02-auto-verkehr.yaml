@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w2-auto-verkehr
+order_index: 2
+level: a2
+title:
+  vi: Ô tô và giao thông (Auto und Verkehr)
+objectives:
+  - vi: Gọi tên các bộ phận chính của xe và các điểm trên đường.
+  - vi: Hiểu biển báo đơn giản và các câu thường gặp ở trạm xăng.
+  - vi: Dùng động từ tanken, bremsen, überholen, einparken.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w2-sport
+items:
+  - item: de:item:a2w2-fuehrerschein
+  - item: de:item:a2w2-fahrschule
+  - item: de:item:a2w2-tankstelle
+  - item: de:item:a2w2-tanken
+  - item: de:item:a2w2-benzin
+  - item: de:item:a2w2-parkplatz
+  - item: de:item:a2w2-geschwindigkeit
+  - item: de:item:a2w2-bremse
+  - item: de:item:a2w2-bremsen
+  - item: de:item:a2w2-motor
+  - item: de:item:a2w2-kofferraum
+  - item: de:item:a2w2-lenkrad
+  - item: de:item:a2w2-sicherheitsgurt
+  - item: de:item:a2w2-ueberholen
+  - item: de:item:a2w2-verkehrsschild
+  - item: de:item:a2w2-kreisverkehr
+  - item: de:item:a2w2-fussgaenger
+  - item: de:item:a2w2-radweg
+  - item: de:item:a2w2-fahrbahn
+  - item: de:item:a2w2-einparken
+  - item: de:item:a2w2-vorfahrt
+  - item: de:item:a2w2-lkw
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu các từ về xe cộ và giao thông, nói chuyện ở trạm xăng và kể chuyện lái xe đơn giản.
+  - type: explain
+    text:
+      vi: "Bộ phận xe thường gặp: der Motor, die Bremse, das Lenkrad, der Kofferraum, der Sicherheitsgurt. Từ ghép nhiều âm tiết nhưng giống luôn theo từ cuối: das Lenkrad (das Rad), der Sicherheitsgurt (der Gurt), der Kofferraum (der Raum)."
+  - type: explain
+    text:
+      vi: "Từ về luật giao thông: der Führerschein (bằng lái), die Fahrschule, das Verkehrsschild (biển báo), die Geschwindigkeit, die Vorfahrt. Muốn hỏi ai được đi trước, bạn nói Wer hat Vorfahrt? Đối với người đi bộ dùng der Fußgänger; đường dành cho xe đạp là der Radweg."
+  - type: explain
+    text:
+      vi: "Động từ: tanken (đổ xăng), bremsen (phanh), überholen (vượt xe), einparken (đỗ xe vào chỗ). Überholen là động từ không tách (Perfekt: hat überholt), còn einparken là động từ tách (ich parke ein, hat eingeparkt)."
+  - type: deep_explain
+    text:
+      vi: Ở Đức, trên Autobahn nhiều đoạn không giới hạn tốc độ nhưng có Richtgeschwindigkeit (tốc độ khuyến nghị) 130 km/h; trong thành phố giới hạn thường là 50 km/h. Quy định thay đổi theo từng thời điểm nên bạn luôn đọc biển báo tại chỗ. Der Lkw là xe tải (viết tắt của Lastkraftwagen), số nhiều die Lkw hoặc die Lkws.
+  - type: example
+    target: Ich mache nächstes Jahr meinen Führerschein.
+    target_lang: de
+    translation:
+      vi: Năm sau tôi thi bằng lái xe.
+    note:
+      vi: der Führerschein = bằng lái xe.
+  - type: example
+    target: In der Fahrschule lernt man die Verkehrsregeln.
+    target_lang: de
+    translation:
+      vi: Ở trường dạy lái xe người ta học luật giao thông.
+    note:
+      vi: die Fahrschule = trường dạy lái xe.
+  - type: example
+    target: Die nächste Tankstelle ist drei Kilometer entfernt.
+    target_lang: de
+    translation:
+      vi: Trạm xăng gần nhất cách ba kilômét.
+    note:
+      vi: die Tankstelle = trạm xăng.
+  - type: example
+    target: Ich muss noch tanken.
+    target_lang: de
+    translation:
+      vi: Tôi còn phải đổ xăng.
+    note:
+      vi: tanken = đổ xăng, đổ nhiên liệu.
+  - type: common_mistake
+    wrong: Ich muss tanke.
+    right: Ich muss tanken.
+    target_lang: de
+    note:
+      vi: Sau động từ khiếm khuyết (muss), động từ chính ở nguyên thể -en.
+  - type: common_mistake
+    wrong: Ich habe das Auto einparkt.
+    right: Ich habe das Auto eingeparkt.
+    target_lang: de
+    note:
+      vi: "Động từ tách ở Perfekt: phần ein đứng trước ge: eingeparkt (không phải einparkt)."
+  - type: summary
+    points:
+      - vi: tanken, bremsen, überholen (hat überholt), einparken (parkt ein, hat eingeparkt).
+exercises:
+  - key: de:exercise:a2w2l2-listen-vorfahrt
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-vorfahrt
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wer hat hier Vorfahrt?
+      options:
+        - { id: ird, text: Đường xe đạp chạy dọc theo con sông., lang: vi }
+        - { id: u9j, text: Phanh không hoạt động tốt., lang: vi }
+        - { id: eqc, text: Tôi còn phải đổ xăng., lang: vi }
+        - { id: svc, text: Ở đây ai được đi trước?, lang: vi }
+    answer:
+      correct_option_id: svc
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Ở đây ai được đi trước?". Từ khoá là die Vorfahrt (quyền đi trước); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Ở đây ai được đi trước?
+  - key: de:exercise:a2w2l2-mcq-vi-de-fussgaenger
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w2-fussgaenger
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "người đi bộ"?
+      stem_lang: vi
+      options:
+        - { id: cgf, text: der Radweg, lang: de }
+        - { id: vd3, text: der Fußgänger, lang: de }
+        - { id: idw, text: der Motor, lang: de }
+        - { id: ucc, text: das Lenkrad, lang: de }
+    answer:
+      correct_option_id: vd3
+    explanation:
+      vi: "der Fußgänger nghĩa là \"người đi bộ\". Ví dụ: Die Fußgänger warten an der Ampel. (Những người đi bộ đợi ở đèn giao thông.)"
+    display_answer: der Fußgänger
+  - key: de:exercise:a2w2l2-mcq-de-vi-fahrbahn
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-fahrbahn
+    prompt:
+      stem: "\"die Fahrbahn\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: bsz, text: lòng đường, lang: vi }
+        - { id: gms, text: tốc độ, lang: vi }
+        - { id: jt4, text: trường dạy lái xe, lang: vi }
+        - { id: dy0, text: vượt (xe), lang: vi }
+    answer:
+      correct_option_id: bsz
+    explanation:
+      vi: "die Fahrbahn nghĩa là \"lòng đường\". Ví dụ: Ein Kind läuft plötzlich auf die Fahrbahn. (Một đứa bé bất ngờ chạy ra lòng đường.)"
+    display_answer: lòng đường
+  - key: de:exercise:a2w2l2-mcq-artikel-parkplatz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-parkplatz
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Parkplatz\" (chỗ đỗ xe; bãi đỗ xe): ___ Parkplatz"
+      stem_lang: vi
+      options:
+        - { id: gab, text: die, lang: de }
+        - { id: i7h, text: der, lang: de }
+        - { id: hvz, text: das, lang: de }
+        - { id: fex, text: ein, lang: de }
+    answer:
+      correct_option_id: i7h
+    explanation:
+      vi: "Parkplatz là danh từ giống đực (der): der Parkplatz; số nhiều: die Parkplätze. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a2w2l2-tr-word-fuehrerschein
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-fuehrerschein
+    prompt:
+      source_text: bằng lái xe (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Führerschein
+    known_wrong:
+      - answer: die Führerschein
+        feedback_vi: Führerschein là giống đực, nên là der Führerschein.
+        error_tag: article
+      - answer: das Führerschein
+        feedback_vi: Führerschein là giống đực, nên là der Führerschein.
+        error_tag: article
+    explanation:
+      vi: "\"bằng lái xe\" trong tiếng Đức là der Führerschein (số nhiều: die Führerscheine). Ví dụ: Ich mache nächstes Jahr meinen Führerschein."
+    display_answer: der Führerschein
+  - key: de:exercise:a2w2l2-tr-word-einparken
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-einparken
+    prompt:
+      source_text: đỗ xe vào chỗ (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - einparken
+    explanation:
+      vi: "\"đỗ xe vào chỗ\" trong tiếng Đức là einparken. Ví dụ: Ich kann gut einparken."
+    display_answer: einparken
+  - key: de:exercise:a2w2l2-fill-plural-geschwindigkeit
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-geschwindigkeit
+    prompt:
+      template: "Singular: die Geschwindigkeit · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 19 }
+    answer:
+      blanks:
+        b1:
+          - Geschwindigkeiten
+    known_wrong:
+      - answer: Geschwindigkeit
+        feedback_vi: Geschwindigkeit là dạng số ít; số nhiều là Geschwindigkeiten.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Geschwindigkeit là die Geschwindigkeiten (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Geschwindigkeit · Plural: die Geschwindigkeiten"
+  - key: de:exercise:a2w2l2-mcq-luecke-fahrschule
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-fahrschule
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Ở trường dạy lái xe người ta học luật giao thông.\": In der ___ lernt man die Verkehrsregeln."
+      stem_lang: vi
+      options:
+        - { id: uv2, text: Geschwindigkeit, lang: de }
+        - { id: fnx, text: Vorfahrt, lang: de }
+        - { id: pt5, text: Tankstelle, lang: de }
+        - { id: mgw, text: Fahrschule, lang: de }
+    answer:
+      correct_option_id: mgw
+    explanation:
+      vi: "Câu có nghĩa \"Ở trường dạy lái xe người ta học luật giao thông.\" nên cần Fahrschule (die Fahrschule: trường dạy lái xe). Vorfahrt = quyền đi trước; Tankstelle = trạm xăng; Geschwindigkeit = tốc độ không đúng nghĩa của câu."
+    display_answer: Fahrschule
+  - key: de:exercise:a2w2l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Trạm xăng gần nhất ở đâu vậy?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wo ist die nächste Tankstelle, bitte?
+        - Wo ist die nächste Tankstelle?
+        - Wo finde ich die nächste Tankstelle?
+        - Wo gibt es hier eine Tankstelle?
+        - Wo ist hier die nächste Tankstelle?
+    explanation:
+      vi: "Gợi ý đáp án: Wo ist die nächste Tankstelle, bitte? Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Wo ist die nächste Tankstelle, bitte?
+    item: de:item:a2w2-tankstelle
+  - key: de:exercise:a2w2l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Der Lkw bremst vor dem Kreisverkehr, weil ein Fußgänger auf die Fahrbahn läuft.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chiếc xe tải phanh trước bùng binh vì một người đi bộ chạy ra lòng đường.
+        - Xe tải phanh lại trước vòng xuyến vì có một người đi bộ chạy ra đường.
+        - Chiếc xe tải phanh trước bùng binh vì người đi bộ chạy ra lòng đường.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Lkw bremst vor dem Kreisverkehr, weil ein Fußgänger auf die Fahrbahn läuft.\" nghĩa là: Chiếc xe tải phanh trước bùng binh vì một người đi bộ chạy ra lòng đường. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Chiếc xe tải phanh trước bùng binh vì một người đi bộ chạy ra lòng đường.
+    item: de:item:a2w2-bremsen

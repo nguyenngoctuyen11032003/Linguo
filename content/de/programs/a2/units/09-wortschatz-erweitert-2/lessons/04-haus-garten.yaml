@@ -1,0 +1,297 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w2-haus-garten
+order_index: 4
+level: a2
+title:
+  vi: Nhà, vườn và việc sửa chữa (Haus, Garten und Handwerk)
+objectives:
+  - vi: Gọi tên các bộ phận của ngôi nhà và dụng cụ thông dụng.
+  - vi: "Dùng các động từ làm vườn và sửa nhà: streichen, bohren, sägen, mähen, graben."
+  - vi: Mô tả việc cần làm trong nhà và vườn.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w2-geschaefte-einkaufen
+items:
+  - item: de:item:a2w2-rasen
+  - item: de:item:a2w2-zaun
+  - item: de:item:a2w2-hecke
+  - item: de:item:a2w2-hammer
+  - item: de:item:a2w2-nagel
+  - item: de:item:a2w2-schraube
+  - item: de:item:a2w2-schraubenzieher
+  - item: de:item:a2w2-farbe
+  - item: de:item:a2w2-pinsel
+  - item: de:item:a2w2-dach
+  - item: de:item:a2w2-mauer
+  - item: de:item:a2w2-schornstein
+  - item: de:item:a2w2-haustuer
+  - item: de:item:a2w2-dachboden
+  - item: de:item:a2w2-garage
+  - item: de:item:a2w2-hof
+  - item: de:item:a2w2-streichen
+  - item: de:item:a2w2-bohren
+  - item: de:item:a2w2-saegen
+  - item: de:item:a2w2-maehen
+  - item: de:item:a2w2-graben
+  - item: de:item:a2w2-pflanzen
+  - item: de:item:a2w2-ernten
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi tên được dụng cụ thông dụng và các bộ phận nhà, và nói được công việc cần làm ở nhà và ngoài vườn.
+  - type: explain
+    text:
+      vi: "Các bộ phận ngôi nhà: das Dach, die Mauer, der Schornstein, die Haustür, der Dachboden, die Garage, der Hof. Ngoài vườn có der Rasen, der Zaun, die Hecke. Nhiều từ có số nhiều biến âm: das Dach → die Dächer, der Hof → die Höfe, der Zaun → die Zäune."
+  - type: explain
+    text:
+      vi: "Dụng cụ cầm tay: der Hammer, der Nagel, die Schraube, der Schraubenzieher, der Pinsel, die Farbe. Động từ đi kèm: einen Nagel einschlagen, eine Schraube eindrehen, die Wand streichen, ein Loch bohren. Từ chung cho dụng cụ là das Werkzeug."
+  - type: explain
+    text:
+      vi: "Một số động từ bất quy tắc: streichen (strich, hat gestrichen), graben (gräbt, grub, hat gegraben); số còn lại có chia đều: bohren, sägen, mähen, pflanzen, ernten. Mệnh lệnh: Mäh den Rasen! Streich die Wand!"
+  - type: deep_explain
+    text:
+      vi: "Người Đức rất thích tự sửa nhà (heimwerken) và làm vườn (gärtnern); các cửa hàng như der Baumarkt bán đủ dụng cụ và vật liệu. Der Hof có hai nghĩa: sân trong nhà và nông trại (der Bauernhof). Das Dach nhà thường có Dachboden làm kho; ở Đức người ta hay để đồ cũ trên đó."
+  - type: example
+    target: Der Rasen ist frisch gemäht.
+    target_lang: de
+    translation:
+      vi: Bãi cỏ vừa được cắt.
+    note:
+      vi: der Rasen = bãi cỏ.
+  - type: example
+    target: Um den Garten steht ein hoher Zaun.
+    target_lang: de
+    translation:
+      vi: Quanh vườn có một hàng rào cao.
+    note:
+      vi: der Zaun = hàng rào.
+  - type: example
+    target: Die Hecke ist drei Meter lang.
+    target_lang: de
+    translation:
+      vi: Hàng rào cây dài ba mét.
+    note:
+      vi: die Hecke = hàng rào cây.
+  - type: example
+    target: Ich brauche einen Hammer und Nägel.
+    target_lang: de
+    translation:
+      vi: Tôi cần một cái búa và đinh.
+    note:
+      vi: der Hammer = cái búa.
+  - type: common_mistake
+    wrong: Ich streiche die Wand mit der Hammer.
+    right: Ich streiche die Wand mit dem Pinsel.
+    target_lang: de
+    note:
+      vi: "Wand được sơn bằng Pinsel; Hammer dùng để đóng đinh. Mit + Dativ: dem Pinsel."
+  - type: common_mistake
+    wrong: Er hat den Rasen mähen.
+    right: Er hat den Rasen gemäht.
+    target_lang: de
+    note:
+      vi: Perfekt dùng haben + Partizip II (gemäht), không dùng nguyên thể.
+  - type: summary
+    points:
+      - vi: streichen (strich, hat gestrichen), bohren, sägen, mähen, graben (gräbt, grub, hat gegraben), pflanzen, ernten.
+exercises:
+  - key: de:exercise:a2w2l4-listen-rasen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-rasen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Rasen ist frisch gemäht.
+      options:
+        - { id: zfr, text: Quanh vườn có một hàng rào cao., lang: vi }
+        - { id: j7e, text: Bãi cỏ vừa được cắt., lang: vi }
+        - { id: gas, text: Anh ấy đóng một chiếc đinh vào tường., lang: vi }
+        - { id: ybr, text: Khói bay ra từ ống khói., lang: vi }
+    answer:
+      correct_option_id: j7e
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Bãi cỏ vừa được cắt.". Từ khoá là der Rasen (bãi cỏ); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Bãi cỏ vừa được cắt.
+  - key: de:exercise:a2w2l4-mcq-vi-de-ernten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w2-ernten
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "thu hoạch"?
+      stem_lang: vi
+      options:
+        - { id: dkv, text: graben, lang: de }
+        - { id: r7z, text: pflanzen, lang: de }
+        - { id: ma9, text: sägen, lang: de }
+        - { id: kq4, text: ernten, lang: de }
+    answer:
+      correct_option_id: kq4
+    explanation:
+      vi: "ernten nghĩa là \"thu hoạch\". Ví dụ: Im Herbst ernten wir die Äpfel. (Mùa thu chúng tôi thu hoạch táo.)"
+    display_answer: ernten
+  - key: de:exercise:a2w2l4-mcq-de-vi-hecke
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-hecke
+    prompt:
+      stem: "\"die Hecke\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: dgj, text: cái búa, lang: vi }
+        - { id: h53, text: hàng rào cây, lang: vi }
+        - { id: fl5, text: hàng rào, lang: vi }
+        - { id: jil, text: mái nhà, lang: vi }
+    answer:
+      correct_option_id: h53
+    explanation:
+      vi: "die Hecke nghĩa là \"hàng rào cây\". Ví dụ: Die Hecke ist drei Meter lang. (Hàng rào cây dài ba mét.)"
+    display_answer: hàng rào cây
+  - key: de:exercise:a2w2l4-mcq-artikel-schraubenzieher
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-schraubenzieher
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Schraubenzieher\" (cái tua vít): ___ Schraubenzieher"
+      stem_lang: vi
+      options:
+        - { id: auo, text: die, lang: de }
+        - { id: rgo, text: der, lang: de }
+        - { id: jc7, text: ein, lang: de }
+        - { id: caq, text: das, lang: de }
+    answer:
+      correct_option_id: rgo
+    explanation:
+      vi: "Schraubenzieher là danh từ giống đực (der): der Schraubenzieher; số nhiều: die Schraubenzieher. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a2w2l4-tr-word-pinsel
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-pinsel
+    prompt:
+      source_text: cái cọ (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Pinsel
+    known_wrong:
+      - answer: die Pinsel
+        feedback_vi: Pinsel là giống đực, nên là der Pinsel.
+        error_tag: article
+      - answer: das Pinsel
+        feedback_vi: Pinsel là giống đực, nên là der Pinsel.
+        error_tag: article
+    explanation:
+      vi: "\"cái cọ\" trong tiếng Đức là der Pinsel (số nhiều: die Pinsel). Ví dụ: Mit dem Pinsel streiche ich die Tür."
+    display_answer: der Pinsel
+  - key: de:exercise:a2w2l4-tr-word-pflanzen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-pflanzen
+    prompt:
+      source_text: trồng (cây) (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - pflanzen
+    explanation:
+      vi: "\"trồng (cây)\" trong tiếng Đức là pflanzen. Ví dụ: Wir pflanzen einen Baum."
+    display_answer: pflanzen
+  - key: de:exercise:a2w2l4-fill-plural-schraube
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-schraube
+    prompt:
+      template: "Singular: die Schraube · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 11 }
+    answer:
+      blanks:
+        b1:
+          - Schrauben
+    known_wrong:
+      - answer: Schraube
+        feedback_vi: Schraube là dạng số ít; số nhiều là Schrauben.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Schraube là die Schrauben (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Schraube · Plural: die Schrauben"
+  - key: de:exercise:a2w2l4-mcq-luecke-zaun
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-zaun
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Quanh vườn có một hàng rào cao.\": Um den Garten steht ein hoher ___."
+      stem_lang: vi
+      options:
+        - { id: o5y, text: Farbe, lang: de }
+        - { id: ojh, text: Zaun, lang: de }
+        - { id: os5, text: Haustür, lang: de }
+        - { id: w38, text: Garage, lang: de }
+    answer:
+      correct_option_id: ojh
+    explanation:
+      vi: "Câu có nghĩa \"Quanh vườn có một hàng rào cao.\" nên cần Zaun (der Zaun: hàng rào). Garage = nhà để xe; Farbe = màu sắc; sơn; Haustür = cửa chính nhà không đúng nghĩa của câu."
+    display_answer: Zaun
+  - key: de:exercise:a2w2l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Chúng tôi phải sửa mái nhà và sơn cửa chính.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir müssen das Dach reparieren und die Haustür streichen.
+        - Das Dach müssen wir reparieren und die Haustür streichen.
+        - Wir müssen das Dach reparieren und die Haustür anstreichen.
+    explanation:
+      vi: "Gợi ý đáp án: Wir müssen das Dach reparieren und die Haustür streichen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Wir müssen das Dach reparieren und die Haustür streichen.
+    item: de:item:a2w2-dach
+  - key: de:exercise:a2w2l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Mein Vater mäht den Rasen, und meine Mutter pflanzt Blumen an der Hecke.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bố tôi cắt cỏ còn mẹ tôi trồng hoa cạnh hàng rào cây.
+        - Bố tôi cắt cỏ, mẹ tôi thì trồng hoa bên hàng rào cây.
+        - Ba tôi cắt cỏ và mẹ tôi trồng hoa cạnh hàng rào.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Mein Vater mäht den Rasen, und meine Mutter pflanzt Blumen an der Hecke.\" nghĩa là: Bố tôi cắt cỏ còn mẹ tôi trồng hoa cạnh hàng rào cây. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Bố tôi cắt cỏ còn mẹ tôi trồng hoa cạnh hàng rào cây.
+    item: de:item:a2w2-rasen

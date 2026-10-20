@@ -1,0 +1,232 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w2-verben-erweitert
+order_index: 5
+level: a2
+title:
+  vi: Thêm động từ thông dụng (Verben erweitern)
+objectives:
+  - vi: Dùng thêm hơn hai mươi động từ thông dụng ở cấp A2 với đầy đủ ba dạng chính.
+  - vi: Phân biệt động từ tách (vorbeikommen, ausgeben, aufpassen) và không tách (benutzen, beschreiben, erkennen).
+  - vi: Dùng sich verspäten và các động từ có sich.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w2-haus-garten
+items:
+  - item: de:item:a2w2-benutzen
+  - item: de:item:a2w2-entscheiden
+  - item: de:item:a2w2-pruefen
+  - item: de:item:a2w2-verkaufen
+  - item: de:item:a2w2-versprechen
+  - item: de:item:a2w2-verstecken
+  - item: de:item:a2w2-ziehen
+  - item: de:item:a2w2-zerbrechen
+  - item: de:item:a2w2-riechen
+  - item: de:item:a2w2-vorbeikommen
+  - item: de:item:a2w2-ausgeben
+  - item: de:item:a2w2-aufpassen
+  - item: de:item:a2w2-ausleihen
+  - item: de:item:a2w2-sich-verspaeten
+  - item: de:item:a2w2-schimpfen
+  - item: de:item:a2w2-wecken
+  - item: de:item:a2w2-tauschen
+  - item: de:item:a2w2-troesten
+  - item: de:item:a2w2-beruehren
+  - item: de:item:a2w2-beschreiben
+  - item: de:item:a2w2-bemerken
+  - item: de:item:a2w2-erkennen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng hơn hai mươi động từ thông dụng, kể cả bất quy tắc, tách và có sich, ở thì hiện tại và Perfekt.
+  - type: explain
+    text:
+      vi: "Động từ có tiền tố be-, ent-, er-, ver-, zer- là động từ không tách, và Partizip II không thêm ge-: benutzen → hat benutzt, beschreiben → hat beschrieben, erkennen → hat erkannt, entscheiden → hat entschieden, verkaufen → hat verkauft, zerbrechen → ist zerbrochen."
+  - type: explain
+    text:
+      vi: "Động từ tách có phần đầu tách ra ở câu chính: Komm doch morgen vorbei! Er gibt zu viel Geld aus. Du musst gut aufpassen. Ở Perfekt, ge- nằm giữa: vorbeigekommen, ausgegeben, aufgepasst. Ở nguyên thể và sau muss, vẫn viết liền: Du musst gut aufpassen."
+  - type: explain
+    text:
+      vi: "Một số cặp dễ nhầm: leihen (cho mượn, đã học) và ausleihen (mượn ở thư viện), versprechen (hứa) và sprechen (nói), ziehen (kéo) và umziehen (chuyển nhà). Với sich verspäten, hãy chia sich theo chủ ngữ: ich verspäte mich, du verspätest dich, er verspätet sich."
+  - type: deep_explain
+    text:
+      vi: "Zerbrechen có hai cách dùng: không có tân ngữ nghĩa là vỡ ra (Das Glas ist zerbrochen) và dùng sein ở Perfekt; có tân ngữ nghĩa là làm vỡ (Ich habe das Glas zerbrochen) và dùng haben. Ziehen ở nghĩa kéo thường dùng với Tür: Bitte ziehen (biển trên cửa), ngược lại là drücken (đẩy)."
+  - type: example
+    target: Darf ich dein Handy benutzen?
+    target_lang: de
+    translation:
+      vi: Tôi có thể dùng điện thoại của bạn không?
+    note:
+      vi: benutzen = dùng, sử dụng.
+  - type: example
+    target: Der Chef entscheidet heute.
+    target_lang: de
+    translation:
+      vi: Hôm nay sếp quyết định.
+    note:
+      vi: entscheiden = quyết định.
+  - type: example
+    target: Der Lehrer prüft die Hausaufgaben.
+    target_lang: de
+    translation:
+      vi: Thầy giáo kiểm tra bài tập về nhà.
+    note:
+      vi: prüfen = kiểm tra.
+  - type: example
+    target: Er verkauft sein altes Auto.
+    target_lang: de
+    translation:
+      vi: Anh ấy bán chiếc xe cũ của mình.
+    note:
+      vi: verkaufen = bán.
+  - type: common_mistake
+    wrong: Ich habe mich verspäte.
+    right: Ich habe mich verspätet.
+    target_lang: de
+    note:
+      vi: "Partizip II của động từ có -et- ở thân thêm -et: verspätet."
+  - type: common_mistake
+    wrong: Er hat das Auto gebenutzt.
+    right: Er hat das Auto benutzt.
+    target_lang: de
+    note:
+      vi: Động từ có tiền tố be- không thêm ge- ở Partizip II.
+  - type: summary
+    points:
+      - vi: "sich verspäten: ich verspäte mich; Perfekt Ich habe mich verspätet."
+exercises:
+  - key: de:exercise:a2w2l5-listen-ziehen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-ziehen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Bitte ziehen Sie die Tür, nicht drücken.
+      options:
+        - { id: qdo, text: "Xin hãy kéo cửa, đừng đẩy.", lang: vi }
+        - { id: uzj, text: Chúng ta đổi chỗ nhé?, lang: vi }
+        - { id: xi2, text: Thầy giáo kiểm tra bài tập về nhà., lang: vi }
+        - { id: jz9, text: Tôi nhận ra anh ấy ngay lập tức., lang: vi }
+    answer:
+      correct_option_id: qdo
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Xin hãy kéo cửa, đừng đẩy.". Từ khoá là ziehen (kéo); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Xin hãy kéo cửa, đừng đẩy.
+  - key: de:exercise:a2w2l5-mcq-vi-de-beruehren
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w2-beruehren
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "chạm vào"?
+      stem_lang: vi
+      options:
+        - { id: tog, text: sich verspäten, lang: de }
+        - { id: tfa, text: verkaufen, lang: de }
+        - { id: ozu, text: prüfen, lang: de }
+        - { id: dso, text: berühren, lang: de }
+    answer:
+      correct_option_id: dso
+    explanation:
+      vi: "berühren nghĩa là \"chạm vào\". Ví dụ: Bitte nicht berühren! (Xin đừng chạm vào!)"
+    display_answer: berühren
+  - key: de:exercise:a2w2l5-mcq-de-vi-riechen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w2-riechen
+    prompt:
+      stem: "\"riechen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: v3n, text: "cẩn thận, để ý, trông", lang: vi }
+        - { id: sqj, text: quyết định, lang: vi }
+        - { id: a0f, text: "đổi, trao đổi", lang: vi }
+        - { id: i0x, text: ngửi; có mùi, lang: vi }
+    answer:
+      correct_option_id: i0x
+    explanation:
+      vi: "riechen nghĩa là \"ngửi; có mùi\". Ví dụ: Die Blumen riechen gut. (Những bông hoa thơm.)"
+    display_answer: ngửi; có mùi
+  - key: de:exercise:a2w2l5-tr-word-beschreiben
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-beschreiben
+    prompt:
+      source_text: mô tả (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - beschreiben
+    explanation:
+      vi: "\"mô tả\" trong tiếng Đức là beschreiben. Ví dụ: Können Sie den Mann beschreiben?"
+    display_answer: beschreiben
+  - key: de:exercise:a2w2l5-mcq-luecke-benutzen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w2-benutzen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tôi có thể dùng điện thoại của bạn không?\": Darf ich dein Handy ___?"
+      stem_lang: vi
+      options:
+        - { id: i5f, text: benutzen, lang: de }
+        - { id: q2z, text: versteckt, lang: de }
+        - { id: kt6, text: berühren, lang: de }
+        - { id: dfa, text: aus, lang: de }
+    answer:
+      correct_option_id: i5f
+    explanation:
+      vi: "Câu có nghĩa \"Tôi có thể dùng điện thoại của bạn không?\" nên cần benutzen (benutzen: dùng, sử dụng). aus = tiêu (tiền); versteckt = giấu; berühren = chạm vào không đúng nghĩa của câu."
+    display_answer: benutzen
+  - key: de:exercise:a2w2l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Bạn có thể mượn ở thư viện một quyển sách cho tôi được không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Kannst du mir in der Bibliothek ein Buch ausleihen?
+        - Kannst du in der Bibliothek ein Buch für mich ausleihen?
+        - Kannst du mir ein Buch in der Bibliothek ausleihen?
+    explanation:
+      vi: "Gợi ý đáp án: Kannst du mir in der Bibliothek ein Buch ausleihen? Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Kannst du mir in der Bibliothek ein Buch ausleihen?
+    item: de:item:a2w2-ausleihen
+  - key: de:exercise:a2w2l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Entschuldigung, ich habe mich verspätet, weil der Bus nicht gekommen ist.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin lỗi, tôi đến muộn vì xe buýt không tới.
+        - Xin lỗi, tôi bị muộn vì xe buýt không đến.
+        - Xin lỗi, tôi đã đến trễ vì xe buýt không đến.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Entschuldigung, ich habe mich verspätet, weil der Bus nicht gekommen ist.\" nghĩa là: Xin lỗi, tôi đến muộn vì xe buýt không tới. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Xin lỗi, tôi đến muộn vì xe buýt không tới.

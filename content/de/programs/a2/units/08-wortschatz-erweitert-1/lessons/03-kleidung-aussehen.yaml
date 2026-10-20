@@ -1,0 +1,296 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w1-kleidung-aussehen
+order_index: 3
+level: a2
+title:
+  vi: Quần áo, phụ kiện và ngoại hình (Kleidung und Aussehen)
+objectives:
+  - vi: Gọi tên thêm quần áo và phụ kiện, kể cả đồ mùa đông và mùa hè.
+  - vi: Mô tả ngoại hình bằng aussehen và các tính từ blond, lockig, schlank.
+  - vi: Dùng tragen và anhaben để nói mình đang mặc gì.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w1-kochen-restaurant
+items:
+  - item: de:item:a2w1-krawatte
+  - item: de:item:a2w1-guertel
+  - item: de:item:a2w1-handschuh
+  - item: de:item:a2w1-schal
+  - item: de:item:a2w1-muetze
+  - item: de:item:a2w1-stiefel
+  - item: de:item:a2w1-sandale
+  - item: de:item:a2w1-unterwaesche
+  - item: de:item:a2w1-badeanzug
+  - item: de:item:a2w1-badehose
+  - item: de:item:a2w1-bluse
+  - item: de:item:a2w1-strumpfhose
+  - item: de:item:a2w1-schmuck
+  - item: de:item:a2w1-ring
+  - item: de:item:a2w1-ohrring
+  - item: de:item:a2w1-reissverschluss
+  - item: de:item:a2w1-aussehen
+  - item: de:item:a2w1-aussehen-2
+  - item: de:item:a2w1-blond
+  - item: de:item:a2w1-lockig
+  - item: de:item:a2w1-schlank
+  - item: de:item:a2w1-bart
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được thêm nhiều món đồ mặc và phụ kiện, và mô tả ngoại hình của một người một cách đơn giản.
+  - type: explain
+    text:
+      vi: "Khi mô tả ai đó, bạn dùng sein + tính từ (Sie ist schlank) hoặc aussehen + tính từ (Er sieht müde aus). Aussehen là động từ tách: ich sehe aus, du siehst aus; tính từ đứng sau động từ không đổi đuôi."
+  - type: explain
+    text:
+      vi: "Muốn nói bạn đang mặc gì, dùng tragen hoặc anhaben: Er trägt eine Krawatte. Sie hat einen roten Schal an. Anhaben là động từ tách, phần an đứng cuối câu. Ở thì Perfekt nói đã mặc: Er hat eine Mütze getragen."
+  - type: explain
+    text:
+      vi: "Một số món đồ thường dùng theo đôi nên hay gặp ở số nhiều: die Handschuhe (găng tay), die Stiefel (ủng), die Sandalen (dép xăng đan). Hãy học cả dạng số nhiều để chia động từ đúng: Die Stiefel sind neu."
+  - type: deep_explain
+    text:
+      vi: Der Schmuck chỉ có số ít và chỉ trang sức nói chung; từng món là der Ring, der Ohrring, die Kette (đã học). Der Reißverschluss là khóa kéo, der Knopf là cúc áo; hai từ này hay gặp khi sửa quần áo hoặc khi trả lại hàng.
+  - type: example
+    target: Zum Anzug trägt er eine Krawatte.
+    target_lang: de
+    translation:
+      vi: Anh ấy đeo cà vạt khi mặc com-lê.
+    note:
+      vi: die Krawatte = cà vạt.
+  - type: example
+    target: Die Hose ist zu weit, ich brauche einen Gürtel.
+    target_lang: de
+    translation:
+      vi: Quần rộng quá, tôi cần một cái thắt lưng.
+    note:
+      vi: der Gürtel = thắt lưng.
+  - type: example
+    target: Im Winter trage ich Handschuhe.
+    target_lang: de
+    translation:
+      vi: Mùa đông tôi đeo găng tay.
+    note:
+      vi: der Handschuh = găng tay.
+  - type: example
+    target: Es ist kalt, nimm einen Schal mit.
+    target_lang: de
+    translation:
+      vi: Trời lạnh, hãy mang theo khăn quàng.
+    note:
+      vi: der Schal = khăn quàng cổ.
+  - type: common_mistake
+    wrong: Sie hat blond Haare.
+    right: Sie hat blonde Haare.
+    target_lang: de
+    note:
+      vi: "Tính từ đứng trước danh từ cần có đuôi: blonde Haare (số nhiều, không mạo từ). Sau sein thì không đổi: Sie ist blond."
+  - type: common_mistake
+    wrong: Er sieht müde.
+    right: Er sieht müde aus.
+    target_lang: de
+    note:
+      vi: Aussehen là động từ tách; phần aus đứng cuối câu.
+  - type: summary
+    points:
+      - vi: "Ngoại hình: blond, lockig, schlank; der Bart, die Glatze, das Aussehen."
+exercises:
+  - key: de:exercise:a2w1l3-listen-sandale
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-sandale
+    prompt:
+      audio_asset_id: null
+      fallback_text: Im Sommer trage ich gern Sandalen.
+      options:
+        - { id: xub, text: Cô ấy có tóc xoăn., lang: vi }
+        - { id: xk5, text: Đứa bé đội một chiếc mũ đỏ., lang: vi }
+        - { id: q3v, text: Mùa hè tôi thích đi dép xăng đan., lang: vi }
+        - { id: b1o, text: Khóa kéo ở áo khoác bị hỏng., lang: vi }
+    answer:
+      correct_option_id: q3v
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Mùa hè tôi thích đi dép xăng đan.". Từ khoá là die Sandale (dép xăng đan); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Mùa hè tôi thích đi dép xăng đan.
+  - key: de:exercise:a2w1l3-mcq-vi-de-krawatte
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w1-krawatte
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cà vạt"?
+      stem_lang: vi
+      options:
+        - { id: bx9, text: der Schal, lang: de }
+        - { id: m35, text: die Krawatte, lang: de }
+        - { id: zs2, text: die Badehose, lang: de }
+        - { id: jsl, text: der Handschuh, lang: de }
+    answer:
+      correct_option_id: m35
+    explanation:
+      vi: "die Krawatte nghĩa là \"cà vạt\". Ví dụ: Zum Anzug trägt er eine Krawatte. (Anh ấy đeo cà vạt khi mặc com-lê.)"
+    display_answer: die Krawatte
+  - key: de:exercise:a2w1l3-mcq-de-vi-bart
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-bart
+    prompt:
+      stem: "\"der Bart\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: mfq, text: quần tất, lang: vi }
+        - { id: lhy, text: khóa kéo, lang: vi }
+        - { id: j36, text: vàng hoe (tóc), lang: vi }
+        - { id: eue, text: bộ râu, lang: vi }
+    answer:
+      correct_option_id: eue
+    explanation:
+      vi: "der Bart nghĩa là \"bộ râu\". Ví dụ: Mein Vater hat einen grauen Bart. (Bố tôi có bộ râu bạc.)"
+    display_answer: bộ râu
+  - key: de:exercise:a2w1l3-mcq-artikel-aussehen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-aussehen
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Aussehen\" (vẻ ngoài): ___ Aussehen"
+      stem_lang: vi
+      options:
+        - { id: w28, text: ein, lang: de }
+        - { id: cfz, text: die, lang: de }
+        - { id: s5u, text: der, lang: de }
+        - { id: ejb, text: das, lang: de }
+    answer:
+      correct_option_id: ejb
+    explanation:
+      vi: "Aussehen là danh từ giống trung (das): das Aussehen (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:a2w1l3-tr-word-schal
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-schal
+    prompt:
+      source_text: khăn quàng cổ (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Schal
+    known_wrong:
+      - answer: die Schal
+        feedback_vi: Schal là giống đực, nên là der Schal.
+        error_tag: article
+      - answer: das Schal
+        feedback_vi: Schal là giống đực, nên là der Schal.
+        error_tag: article
+    explanation:
+      vi: "\"khăn quàng cổ\" trong tiếng Đức là der Schal (số nhiều: die Schals). Ví dụ: Es ist kalt, nimm einen Schal mit."
+    display_answer: der Schal
+  - key: de:exercise:a2w1l3-tr-word-schlank
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-schlank
+    prompt:
+      source_text: thon, mảnh mai (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - schlank
+    explanation:
+      vi: "\"thon, mảnh mai\" trong tiếng Đức là schlank. Ví dụ: Er ist groß und schlank."
+    display_answer: schlank
+  - key: de:exercise:a2w1l3-fill-plural-ohrring
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-ohrring
+    prompt:
+      template: "Singular: der Ohrring · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 10 }
+    answer:
+      blanks:
+        b1:
+          - Ohrringe
+    known_wrong:
+      - answer: Ohrring
+        feedback_vi: Ohrring là dạng số ít; số nhiều là Ohrringe.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Ohrring là die Ohrringe (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Ohrring · Plural: die Ohrringe"
+  - key: de:exercise:a2w1l3-mcq-luecke-guertel
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-guertel
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Quần rộng quá, tôi cần một cái thắt lưng.\": Die Hose ist zu weit, ich brauche einen ___."
+      stem_lang: vi
+      options:
+        - { id: esb, text: Ring, lang: de }
+        - { id: nvh, text: Gürtel, lang: de }
+        - { id: pya, text: Mütze, lang: de }
+        - { id: sbq, text: Handschuhe, lang: de }
+    answer:
+      correct_option_id: nvh
+    explanation:
+      vi: "Câu có nghĩa \"Quần rộng quá, tôi cần một cái thắt lưng.\" nên cần Gürtel (der Gürtel: thắt lưng). Ring = chiếc nhẫn; Handschuhe = găng tay; Mütze = mũ (len, lưỡi trai) không đúng nghĩa của câu."
+    display_answer: Gürtel
+  - key: de:exercise:a2w1l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Anh ấy có một bộ râu đen và đội mũ len.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Er hat einen schwarzen Bart und trägt eine Mütze.
+        - Er hat einen schwarzen Bart und er trägt eine Mütze.
+        - Er trägt eine Mütze und hat einen schwarzen Bart.
+    explanation:
+      vi: "Gợi ý đáp án: Er hat einen schwarzen Bart und trägt eine Mütze. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Er hat einen schwarzen Bart und trägt eine Mütze.
+    item: de:item:a2w1-muetze
+  - key: de:exercise:a2w1l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Im Winter trage ich Handschuhe, einen Schal und Stiefel.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mùa đông tôi đeo găng tay, quàng khăn và đi ủng.
+        - Vào mùa đông tôi đeo găng tay, quàng khăn và đi ủng.
+        - Mùa đông tôi mang găng tay, khăn quàng và ủng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Im Winter trage ich Handschuhe, einen Schal und Stiefel.\" nghĩa là: Mùa đông tôi đeo găng tay, quàng khăn và đi ủng. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Mùa đông tôi đeo găng tay, quàng khăn và đi ủng.
+    item: de:item:a2w1-handschuh

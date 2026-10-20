@@ -1,0 +1,296 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w1-verwandte-familie
+order_index: 6
+level: a2
+title:
+  vi: Họ hàng và các mối quan hệ gia đình (Verwandte)
+objectives:
+  - vi: Gọi tên họ hàng bên chồng, vợ và anh chị em họ.
+  - vi: Nói về các thế hệ trong gia đình và việc nuôi dạy con.
+  - vi: Dùng các tính từ verwandt, verlobt, erwachsen, verwitwet.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w1-schule-lernen
+items:
+  - item: de:item:a2w1-schwager
+  - item: de:item:a2w1-schwiegermutter
+  - item: de:item:a2w1-schwiegervater
+  - item: de:item:a2w1-schwiegersohn
+  - item: de:item:a2w1-schwiegertochter
+  - item: de:item:a2w1-neffe
+  - item: de:item:a2w1-nichte
+  - item: de:item:a2w1-urgrossmutter
+  - item: de:item:a2w1-patenkind
+  - item: de:item:a2w1-mitbewohner
+  - item: de:item:a2w1-teenager
+  - item: de:item:a2w1-witwe
+  - item: de:item:a2w1-ehepaar
+  - item: de:item:a2w1-verwandtschaft
+  - item: de:item:a2w1-erziehen
+  - item: de:item:a2w1-pflegen
+  - item: de:item:a2w1-sich-verstehen
+  - item: de:item:a2w1-begleiten
+  - item: de:item:a2w1-verwandt
+  - item: de:item:a2w1-verlobt
+  - item: de:item:a2w1-erwachsen
+  - item: de:item:a2w1-verwitwet
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về họ hàng và các quan hệ trong gia đình mở rộng, kể cả bên nhà chồng, nhà vợ.
+  - type: explain
+    text:
+      vi: "Họ hàng bên chồng hoặc vợ thường dùng tiền tố Schwieger-: die Schwiegermutter, der Schwiegervater, der Schwiegersohn, die Schwiegertochter. Anh, chị, em của vợ hoặc chồng, và chồng của chị em là der Schwager (nam) và die Schwägerin (nữ)."
+  - type: explain
+    text:
+      vi: "Con của anh chị em là der Neffe (con trai) và die Nichte (con gái). Der Neffe có đuôi -n ở mọi cách trừ Nominativ: Ich sehe meinen Neffen. Die Urgroßmutter là bà cố, tức mẹ của ông hoặc bà. Das Patenkind là con đỡ đầu."
+  - type: explain
+    text:
+      vi: "Động từ về gia đình: erziehen (nuôi dạy), pflegen (chăm sóc), begleiten (đi cùng, tháp tùng), sich verstehen mit (hòa thuận với). Ví dụ: Ich verstehe mich gut mit meiner Schwiegermutter. Câu này dùng sich + mit + Dativ."
+  - type: deep_explain
+    text:
+      vi: "Das Ehepaar nghĩa là cặp vợ chồng; die Eltern là bố mẹ; die Familie là cả gia đình. Der Teenager là thiếu niên (13 đến 19 tuổi). Verwandt dùng với mit + Dativ: Ich bin mit ihr verwandt. Nói họ hàng nói chung là die Verwandtschaft; Verwandte nghĩa là một người họ hàng, dạng viết như tính từ nên bạn sẽ học ở các cấp sau."
+  - type: example
+    target: Mein Schwager wohnt in Hamburg.
+    target_lang: de
+    translation:
+      vi: Anh rể của tôi sống ở Hamburg.
+    note:
+      vi: der Schwager = anh/em rể, anh/em vợ, anh/em chồng.
+  - type: example
+    target: Meine Schwiegermutter kocht sehr gut.
+    target_lang: de
+    translation:
+      vi: Mẹ chồng tôi nấu ăn rất giỏi.
+    note:
+      vi: die Schwiegermutter = mẹ chồng, mẹ vợ.
+  - type: example
+    target: Mein Schwiegervater ist schon Rentner.
+    target_lang: de
+    translation:
+      vi: Bố vợ tôi đã nghỉ hưu.
+    note:
+      vi: der Schwiegervater = bố chồng, bố vợ.
+  - type: example
+    target: Der Schwiegersohn hilft im Haus.
+    target_lang: de
+    translation:
+      vi: Con rể giúp việc trong nhà.
+    note:
+      vi: der Schwiegersohn = con rể.
+  - type: common_mistake
+    wrong: Ich verstehe mit meiner Schwiegermutter gut.
+    right: Ich verstehe mich gut mit meiner Schwiegermutter.
+    target_lang: de
+    note:
+      vi: Với nghĩa hòa thuận bạn cần sich verstehen mit + Dativ, không phải verstehen mit.
+  - type: common_mistake
+    wrong: Der Sohn meiner Schwester ist meine Neffe.
+    right: Der Sohn meiner Schwester ist mein Neffe.
+    target_lang: de
+    note:
+      vi: Neffe là giống đực nên dùng mein; con gái của chị em là meine Nichte.
+  - type: summary
+    points:
+      - vi: verwandt (mit + Dativ), verlobt, erwachsen, verwitwet.
+exercises:
+  - key: de:exercise:a2w1l6-listen-verwandtschaft
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-verwandtschaft
+    prompt:
+      audio_asset_id: null
+      fallback_text: Zu Weihnachten kommt die ganze Verwandtschaft.
+      options:
+        - { id: u9u, text: Con đỡ đầu của tôi nhận một món quà sinh nhật., lang: vi }
+        - { id: zkw, text: Con dâu làm việc ở bệnh viện., lang: vi }
+        - { id: ofj, text: Dịp Giáng sinh cả họ hàng đến., lang: vi }
+        - { id: bxk, text: Họ nuôi dạy con cái rất nghiêm khắc., lang: vi }
+    answer:
+      correct_option_id: ofj
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Dịp Giáng sinh cả họ hàng đến.". Từ khoá là die Verwandtschaft (họ hàng (nói chung)); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Dịp Giáng sinh cả họ hàng đến.
+  - key: de:exercise:a2w1l6-mcq-vi-de-neffe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w1-neffe
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cháu trai (con anh chị em)"?
+      stem_lang: vi
+      options:
+        - { id: e7a, text: die Schwiegertochter, lang: de }
+        - { id: k2b, text: die Nichte, lang: de }
+        - { id: nmi, text: die Witwe, lang: de }
+        - { id: kq2, text: der Neffe, lang: de }
+    answer:
+      correct_option_id: kq2
+    explanation:
+      vi: "der Neffe nghĩa là \"cháu trai (con anh chị em)\". Ví dụ: Mein Neffe ist zehn Jahre alt. (Cháu trai tôi mười tuổi.)"
+    display_answer: der Neffe
+  - key: de:exercise:a2w1l6-mcq-de-vi-mitbewohner
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-mitbewohner
+    prompt:
+      stem: "\"der Mitbewohner\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: omf, text: con rể, lang: vi }
+        - { id: nm6, text: bạn cùng nhà, lang: vi }
+        - { id: avo, text: "bố chồng, bố vợ", lang: vi }
+        - { id: ghp, text: góa phụ, lang: vi }
+    answer:
+      correct_option_id: nm6
+    explanation:
+      vi: "der Mitbewohner nghĩa là \"bạn cùng nhà\". Ví dụ: Mein Mitbewohner kocht heute Abend. (Bạn cùng nhà của tôi nấu ăn tối nay.)"
+    display_answer: bạn cùng nhà
+  - key: de:exercise:a2w1l6-mcq-artikel-schwiegermutter
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-schwiegermutter
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Schwiegermutter\" (mẹ chồng, mẹ vợ): ___ Schwiegermutter"
+      stem_lang: vi
+      options:
+        - { id: e6b, text: die, lang: de }
+        - { id: ser, text: ein, lang: de }
+        - { id: l19, text: das, lang: de }
+        - { id: t6b, text: der, lang: de }
+    answer:
+      correct_option_id: e6b
+    explanation:
+      vi: "Schwiegermutter là danh từ giống cái (die): die Schwiegermutter; số nhiều: die Schwiegermütter. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:a2w1l6-tr-word-ehepaar
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-ehepaar
+    prompt:
+      source_text: cặp vợ chồng (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Ehepaar
+    known_wrong:
+      - answer: der Ehepaar
+        feedback_vi: Ehepaar là giống trung, nên là das Ehepaar.
+        error_tag: article
+      - answer: die Ehepaar
+        feedback_vi: Ehepaar là giống trung, nên là das Ehepaar.
+        error_tag: article
+    explanation:
+      vi: "\"cặp vợ chồng\" trong tiếng Đức là das Ehepaar (số nhiều: die Ehepaare). Ví dụ: Das Ehepaar wohnt neben uns."
+    display_answer: das Ehepaar
+  - key: de:exercise:a2w1l6-tr-word-begleiten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-begleiten
+    prompt:
+      source_text: đi cùng, tháp tùng (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - begleiten
+    explanation:
+      vi: "\"đi cùng, tháp tùng\" trong tiếng Đức là begleiten. Ví dụ: Ich begleite meine Oma zum Arzt."
+    display_answer: begleiten
+  - key: de:exercise:a2w1l6-fill-plural-schwager
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-schwager
+    prompt:
+      template: "Singular: der Schwager · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 10 }
+    answer:
+      blanks:
+        b1:
+          - Schwäger
+    known_wrong:
+      - answer: Schwager
+        feedback_vi: Schwager là dạng số ít; số nhiều là Schwäger.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Schwager là die Schwäger (ký hiệu trong từ điển: ¨-, nguyên âm đổi thành ä/ö/ü/äu). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Schwager · Plural: die Schwäger"
+  - key: de:exercise:a2w1l6-mcq-luecke-schwiegervater
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-schwiegervater
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Bố vợ tôi đã nghỉ hưu.\": Mein ___ ist schon Rentner."
+      stem_lang: vi
+      options:
+        - { id: vct, text: Teenager, lang: de }
+        - { id: dc1, text: Schwiegersohn, lang: de }
+        - { id: n8u, text: Schwiegertochter, lang: de }
+        - { id: ggu, text: Schwiegervater, lang: de }
+    answer:
+      correct_option_id: ggu
+    explanation:
+      vi: "Câu có nghĩa \"Bố vợ tôi đã nghỉ hưu.\" nên cần Schwiegervater (der Schwiegervater: bố chồng, bố vợ). Schwiegersohn = con rể; Schwiegertochter = con dâu; Teenager = thiếu niên không đúng nghĩa của câu."
+    display_answer: Schwiegervater
+  - key: de:exercise:a2w1l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Tôi hòa thuận với mẹ chồng của tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich verstehe mich gut mit meiner Schwiegermutter.
+        - Ich komme gut mit meiner Schwiegermutter aus.
+        - Mit meiner Schwiegermutter verstehe ich mich gut.
+    explanation:
+      vi: "Gợi ý đáp án: Ich verstehe mich gut mit meiner Schwiegermutter. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich verstehe mich gut mit meiner Schwiegermutter.
+    item: de:item:a2w1-schwiegermutter
+  - key: de:exercise:a2w1l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Meine Nichte ist erwachsen, aber mein Neffe ist noch ein Teenager.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cháu gái tôi đã trưởng thành, nhưng cháu trai tôi vẫn là thiếu niên.
+        - Cháu gái tôi đã lớn nhưng cháu trai tôi vẫn là một thiếu niên.
+        - Cháu gái tôi đã trưởng thành, còn cháu trai vẫn là một thiếu niên.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Meine Nichte ist erwachsen, aber mein Neffe ist noch ein Teenager.\" nghĩa là: Cháu gái tôi đã trưởng thành, nhưng cháu trai tôi vẫn là thiếu niên. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Cháu gái tôi đã trưởng thành, nhưng cháu trai tôi vẫn là thiếu niên.
+    item: de:item:a2w1-neffe

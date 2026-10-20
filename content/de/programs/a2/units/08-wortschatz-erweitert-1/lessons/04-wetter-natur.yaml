@@ -1,0 +1,296 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:a2w1-wetter-natur
+order_index: 4
+level: a2
+title:
+  vi: Thời tiết và thiên nhiên (Wetter und Natur)
+objectives:
+  - vi: Nói và hiểu dự báo thời tiết với các từ Blitz, Donner, Frost, Grad.
+  - vi: Mô tả cảnh biển, bờ sông và mặt trời mọc, lặn.
+  - vi: Dùng các động từ thời tiết scheinen, schneien, frieren, donnern.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:a2w1-kleidung-aussehen
+items:
+  - item: de:item:a2w1-blitz
+  - item: de:item:a2w1-donner
+  - item: de:item:a2w1-hagel
+  - item: de:item:a2w1-grad
+  - item: de:item:a2w1-wettervorhersage
+  - item: de:item:a2w1-neblig
+  - item: de:item:a2w1-stuermisch
+  - item: de:item:a2w1-regnerisch
+  - item: de:item:a2w1-schatten
+  - item: de:item:a2w1-pfuetze
+  - item: de:item:a2w1-frost
+  - item: de:item:a2w1-glatteis
+  - item: de:item:a2w1-sonnenschein
+  - item: de:item:a2w1-sonnenaufgang
+  - item: de:item:a2w1-sonnenuntergang
+  - item: de:item:a2w1-welle
+  - item: de:item:a2w1-ufer
+  - item: de:item:a2w1-sand
+  - item: de:item:a2w1-scheinen
+  - item: de:item:a2w1-schneien
+  - item: de:item:a2w1-frieren
+  - item: de:item:a2w1-donnern
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu và nói được dự báo thời tiết đơn giản và mô tả vài cảnh thiên nhiên bằng tiếng Đức.
+  - type: explain
+    text:
+      vi: "Động từ thời tiết thường dùng chủ ngữ es: Es schneit. Es donnert. Es blitzt. Hay nói trời nắng bằng Die Sonne scheint. Nhiệt độ nói với Grad: Es hat zehn Grad. Es sind minus zwei Grad. Tiếng Đức không dùng \"độ C\" mà chỉ dùng Grad (Celsius)."
+  - type: explain
+    text:
+      vi: "Tính từ chỉ thời tiết được tạo từ danh từ bằng đuôi -ig hoặc -isch: der Nebel → neblig, der Sturm → stürmisch, der Regen → regnerisch. Chúng đứng sau sein và không đổi đuôi: Heute ist es neblig. Das Wetter ist stürmisch."
+  - type: explain
+    text:
+      vi: "Dự báo thời tiết (die Wettervorhersage) thường dùng thì hiện tại để nói về tương lai: Morgen scheint die Sonne, am Abend gibt es Gewitter. Khi nghe, hãy chú ý các từ Frost và Glatteis vì chúng báo hiệu đường trơn."
+  - type: deep_explain
+    text:
+      vi: "Frieren có hai cách dùng: Es friert (trời đóng băng, nhiệt độ dưới 0 độ) và Ich friere (tôi lạnh, thấy rét). Cả hai đều dùng haben ở Perfekt: Es hat gefroren. Ich habe gefroren. Der Sand, das Ufer, die Welle là từ vựng cho kỳ nghỉ ở bờ biển; ở Bắc Đức người ta thường nói an der Küste hoặc am Strand."
+  - type: example
+    target: Der Blitz schlägt in den Baum ein.
+    target_lang: de
+    translation:
+      vi: Tia chớp đánh vào cái cây.
+    note:
+      vi: der Blitz = tia chớp.
+  - type: example
+    target: Der Donner ist sehr laut.
+    target_lang: de
+    translation:
+      vi: Tiếng sấm rất to.
+    note:
+      vi: der Donner = tiếng sấm.
+  - type: example
+    target: Der Hagel hat das Auto beschädigt.
+    target_lang: de
+    translation:
+      vi: Mưa đá đã làm hỏng chiếc xe.
+    note:
+      vi: der Hagel = mưa đá.
+  - type: example
+    target: Heute sind es zehn Grad.
+    target_lang: de
+    translation:
+      vi: Hôm nay có mười độ.
+    note:
+      vi: der Grad = độ (nhiệt độ); mức độ.
+  - type: common_mistake
+    wrong: Es ist schneien.
+    right: Es schneit.
+    target_lang: de
+    note:
+      vi: Schneien là động từ chia theo es; không cần ist.
+  - type: common_mistake
+    wrong: Ich frier ohne Mütze.
+    right: Ich friere ohne Mütze.
+    target_lang: de
+    note:
+      vi: "Ngôi ich thêm -e vào gốc động từ: ich friere, không bỏ -e."
+  - type: summary
+    points:
+      - vi: "Perfekt: Es hat geschneit; Es hat gefroren; Die Sonne hat geschienen."
+exercises:
+  - key: de:exercise:a2w1l4-listen-neblig
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-neblig
+    prompt:
+      audio_asset_id: null
+      fallback_text: Heute Morgen ist es neblig.
+      options:
+        - { id: q65, text: Sáng nay có sương mù., lang: vi }
+        - { id: oly, text: Chúng tôi ngồi bên bờ sông., lang: vi }
+        - { id: ky9, text: Bọn trẻ chơi trên cát., lang: vi }
+        - { id: ooo, text: Theo dự báo thời tiết ngày mai sẽ mưa., lang: vi }
+    answer:
+      correct_option_id: q65
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Sáng nay có sương mù.". Từ khoá là neblig (có sương mù); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Sáng nay có sương mù.
+  - key: de:exercise:a2w1l4-mcq-vi-de-pfuetze
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:a2w1-pfuetze
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "vũng nước"?
+      stem_lang: vi
+      options:
+        - { id: zfd, text: die Pfütze, lang: de }
+        - { id: zkx, text: der Sonnenuntergang, lang: de }
+        - { id: iat, text: der Sonnenschein, lang: de }
+        - { id: yz9, text: die Welle, lang: de }
+    answer:
+      correct_option_id: zfd
+    explanation:
+      vi: "die Pfütze nghĩa là \"vũng nước\". Ví dụ: Das Kind springt in die Pfütze. (Đứa bé nhảy vào vũng nước.)"
+    display_answer: die Pfütze
+  - key: de:exercise:a2w1l4-mcq-de-vi-sonnenaufgang
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:a2w1-sonnenaufgang
+    prompt:
+      stem: "\"der Sonnenaufgang\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: f1n, text: vũng nước, lang: vi }
+        - { id: y5b, text: "hay mưa, nhiều mưa", lang: vi }
+        - { id: n4g, text: "bờ (sông, hồ)", lang: vi }
+        - { id: rid, text: lúc mặt trời mọc, lang: vi }
+    answer:
+      correct_option_id: rid
+    explanation:
+      vi: "der Sonnenaufgang nghĩa là \"lúc mặt trời mọc\". Ví dụ: Der Sonnenaufgang am Meer ist wunderschön. (Cảnh mặt trời mọc bên bờ biển thật tuyệt đẹp.)"
+    display_answer: lúc mặt trời mọc
+  - key: de:exercise:a2w1l4-mcq-artikel-grad
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-grad
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Grad\" (độ (nhiệt độ); mức độ): ___ Grad"
+      stem_lang: vi
+      options:
+        - { id: z2k, text: das, lang: de }
+        - { id: hhs, text: der, lang: de }
+        - { id: f75, text: die, lang: de }
+        - { id: aqn, text: ein, lang: de }
+    answer:
+      correct_option_id: hhs
+    explanation:
+      vi: "Grad là danh từ giống đực (der): der Grad; số nhiều: die Grade. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:a2w1l4-tr-word-ufer
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-ufer
+    prompt:
+      source_text: bờ (sông, hồ) (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Ufer
+    known_wrong:
+      - answer: der Ufer
+        feedback_vi: Ufer là giống trung, nên là das Ufer.
+        error_tag: article
+      - answer: die Ufer
+        feedback_vi: Ufer là giống trung, nên là das Ufer.
+        error_tag: article
+    explanation:
+      vi: "\"bờ (sông, hồ)\" trong tiếng Đức là das Ufer (số nhiều: die Ufer). Ví dụ: Wir sitzen am Ufer des Flusses."
+    display_answer: das Ufer
+  - key: de:exercise:a2w1l4-tr-word-scheinen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-scheinen
+    prompt:
+      source_text: chiếu sáng (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - scheinen
+    explanation:
+      vi: "\"chiếu sáng; có vẻ như\" trong tiếng Đức là scheinen. Ví dụ: Heute scheint die Sonne den ganzen Tag."
+    display_answer: scheinen
+  - key: de:exercise:a2w1l4-fill-plural-welle
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-welle
+    prompt:
+      template: "Singular: die Welle · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Wellen
+    known_wrong:
+      - answer: Welle
+        feedback_vi: Welle là dạng số ít; số nhiều là Wellen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Welle là die Wellen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Welle · Plural: die Wellen"
+  - key: de:exercise:a2w1l4-mcq-luecke-blitz
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 2
+    item: de:item:a2w1-blitz
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tia chớp đánh vào cái cây.\": Der ___ schlägt in den Baum ein."
+      stem_lang: vi
+      options:
+        - { id: sgk, text: Schatten, lang: de }
+        - { id: awa, text: Blitz, lang: de }
+        - { id: yl4, text: Glatteis, lang: de }
+        - { id: mla, text: Wellen, lang: de }
+    answer:
+      correct_option_id: awa
+    explanation:
+      vi: "Câu có nghĩa \"Tia chớp đánh vào cái cây.\" nên cần Blitz (der Blitz: tia chớp). Schatten = bóng râm, cái bóng; Glatteis = băng trơn; Wellen = con sóng không đúng nghĩa của câu."
+    display_answer: Blitz
+  - key: de:exercise:a2w1l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    prompt:
+      source_text: Hôm nay trời nhiều sương mù và có năm độ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Heute ist es neblig und es hat fünf Grad.
+        - Heute ist es neblig, und es hat fünf Grad.
+        - Heute ist es neblig und es sind fünf Grad.
+    explanation:
+      vi: "Gợi ý đáp án: Heute ist es neblig und es hat fünf Grad. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Heute ist es neblig und es hat fünf Grad.
+    item: de:item:a2w1-grad
+  - key: de:exercise:a2w1l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    prompt:
+      source_text: Nachts gibt es Frost, und auf den Straßen kann es Glatteis geben.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ban đêm có sương giá và trên đường có thể có băng trơn.
+        - Ban đêm có băng giá, và trên đường có thể có băng.
+        - Ban đêm trời có sương giá và đường có thể bị đóng băng trơn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Nachts gibt es Frost, und auf den Straßen kann es Glatteis geben.\" nghĩa là: Ban đêm có sương giá và trên đường có thể có băng trơn. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Ban đêm có sương giá và trên đường có thể có băng trơn.
+    item: de:item:a2w1-frost

@@ -1,0 +1,2169 @@
+# Học liệu unit A2W2 "Mở rộng vốn từ A2 (2): thể thao, ô tô, cửa hàng, nhà và vườn, động từ, tính từ (Wortschatz erweitern 2)" (mở rộng vốn từ, chương trình A2).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:a2w2-sportart
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sportart, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn thể thao
+      examples:
+        - target: Welche Sportart machst du am liebsten?
+          translation:
+            vi: Bạn thích môn thể thao nào nhất?
+  - key: de:item:a2w2-training
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Training, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi tập luyện
+      examples:
+        - target: Unser Training beginnt um 18 Uhr.
+          translation:
+            vi: Buổi tập của chúng tôi bắt đầu lúc 18 giờ.
+  - key: de:item:a2w2-trainer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Trainer, - / die Trainerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: huấn luyện viên
+      examples:
+        - target: Der Trainer erklärt die Übung.
+          translation:
+            vi: Huấn luyện viên giải thích bài tập.
+  - key: de:item:a2w2-mannschaft
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mannschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đội (thể thao)
+      examples:
+        - target: Unsere Mannschaft hat gestern gewonnen.
+          translation:
+            vi: Đội của chúng tôi hôm qua đã thắng.
+  - key: de:item:a2w2-wettkampf
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wettkampf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc thi đấu
+      examples:
+        - target: Der Wettkampf findet am Samstag statt.
+          translation:
+            vi: Cuộc thi đấu diễn ra vào thứ Bảy.
+  - key: de:item:a2w2-turnier
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Turnier, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giải đấu
+      examples:
+        - target: Am Wochenende gibt es ein Turnier.
+          translation:
+            vi: Cuối tuần có một giải đấu.
+  - key: de:item:a2w2-tor
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Tor, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khung thành; bàn thắng
+      examples:
+        - target: Er schießt ein Tor.
+          translation:
+            vi: Anh ấy ghi một bàn thắng.
+      confusion:
+        vi: "Das Tor còn là cái cổng: das Gartentor. Câu bàn thắng nói ein Tor schießen hoặc ein Tor erzielen."
+  - key: de:item:a2w2-schiedsrichter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schiedsrichter, - / die Schiedsrichterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: trọng tài
+      examples:
+        - target: Der Schiedsrichter zeigt eine gelbe Karte.
+          translation:
+            vi: Trọng tài rút thẻ vàng.
+  - key: de:item:a2w2-fan
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fan, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: người hâm mộ
+      examples:
+        - target: Die Fans singen laut im Stadion.
+          translation:
+            vi: Người hâm mộ hát to trong sân vận động.
+  - key: de:item:a2w2-stadion
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Stadion, Stadien
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân vận động
+      examples:
+        - target: Das Stadion ist ausverkauft.
+          translation:
+            vi: Sân vận động đã hết vé.
+  - key: de:item:a2w2-sieger
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sieger, - / die Siegerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người thắng cuộc
+      examples:
+        - target: Der Sieger bekommt einen Pokal.
+          translation:
+            vi: Người thắng cuộc nhận một chiếc cúp.
+  - key: de:item:a2w2-sieg
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sieg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiến thắng
+      examples:
+        - target: Das war ein großer Sieg für die Mannschaft.
+          translation:
+            vi: Đó là một chiến thắng lớn của đội.
+  - key: de:item:a2w2-niederlage
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Niederlage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thất bại, trận thua
+      examples:
+        - target: Nach der Niederlage sind alle traurig.
+          translation:
+            vi: Sau trận thua mọi người đều buồn.
+  - key: de:item:a2w2-sportler
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sportler, - / die Sportlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: vận động viên; người chơi thể thao
+      examples:
+        - target: Die Sportler trainieren jeden Tag.
+          translation:
+            vi: Các vận động viên tập luyện mỗi ngày.
+  - key: de:item:a2w2-trainieren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: trainieren
+      pos: động từ
+    back:
+      meaning:
+        vi: tập luyện
+      examples:
+        - target: Ich trainiere dreimal pro Woche.
+          translation:
+            vi: Tôi tập luyện ba lần mỗi tuần.
+  - key: de:item:a2w2-schiessen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schießen, schießt, schoss, hat geschossen
+      pos: động từ
+    back:
+      meaning:
+        vi: sút, bắn
+      examples:
+        - target: Der Spieler schießt den Ball ins Tor.
+          translation:
+            vi: Cầu thủ sút bóng vào khung thành.
+  - key: de:item:a2w2-werfen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: werfen, wirft, warf, hat geworfen
+      pos: động từ
+    back:
+      meaning:
+        vi: ném
+      examples:
+        - target: Wirf den Ball zu mir!
+          translation:
+            vi: Ném bóng cho tôi!
+  - key: de:item:a2w2-fangen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: fangen, fängt, fing, hat gefangen
+      pos: động từ
+    back:
+      meaning:
+        vi: bắt (bóng, cá, tên trộm)
+      examples:
+        - target: Der Hund fängt den Ball.
+          translation:
+            vi: Con chó bắt quả bóng.
+  - key: de:item:a2w2-reiten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: reiten, reitet, ritt, ist geritten
+      pos: động từ
+    back:
+      meaning:
+        vi: cưỡi ngựa
+      examples:
+        - target: Meine Tochter reitet gern.
+          translation:
+            vi: Con gái tôi thích cưỡi ngựa.
+  - key: de:item:a2w2-angeln
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: angeln
+      pos: động từ
+    back:
+      meaning:
+        vi: câu cá
+      examples:
+        - target: Mein Opa angelt am Fluss.
+          translation:
+            vi: Ông tôi câu cá bên sông.
+  - key: de:item:a2w2-segeln
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: segeln
+      pos: động từ
+    back:
+      meaning:
+        vi: đi thuyền buồm
+      examples:
+        - target: Im Urlaub segeln wir auf dem See.
+          translation:
+            vi: Trong kỳ nghỉ chúng tôi đi thuyền buồm trên hồ.
+  - key: de:item:a2w2-turnen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: turnen
+      pos: động từ
+    back:
+      meaning:
+        vi: tập thể dục dụng cụ; tập thể dục
+      examples:
+        - target: Die Kinder turnen in der Turnhalle.
+          translation:
+            vi: Bọn trẻ tập thể dục trong phòng tập.
+  - key: de:item:a2w2-fuehrerschein
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Führerschein, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng lái xe
+      examples:
+        - target: Ich mache nächstes Jahr meinen Führerschein.
+          translation:
+            vi: Năm sau tôi thi bằng lái xe.
+  - key: de:item:a2w2-fahrschule
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fahrschule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trường dạy lái xe
+      examples:
+        - target: In der Fahrschule lernt man die Verkehrsregeln.
+          translation:
+            vi: Ở trường dạy lái xe người ta học luật giao thông.
+  - key: de:item:a2w2-tankstelle
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Tankstelle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trạm xăng
+      examples:
+        - target: Die nächste Tankstelle ist drei Kilometer entfernt.
+          translation:
+            vi: Trạm xăng gần nhất cách ba kilômét.
+  - key: de:item:a2w2-tanken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: tanken
+      pos: động từ
+    back:
+      meaning:
+        vi: đổ xăng, đổ nhiên liệu
+      examples:
+        - target: Ich muss noch tanken.
+          translation:
+            vi: Tôi còn phải đổ xăng.
+  - key: de:item:a2w2-benzin
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Benzin (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: xăng
+      examples:
+        - target: Benzin ist heute teuer.
+          translation:
+            vi: Hôm nay xăng đắt.
+  - key: de:item:a2w2-parkplatz
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Parkplatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ đỗ xe; bãi đỗ xe
+      examples:
+        - target: Es gibt keinen Parkplatz vor dem Haus.
+          translation:
+            vi: Trước nhà không có chỗ đỗ xe.
+  - key: de:item:a2w2-geschwindigkeit
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Geschwindigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tốc độ
+      examples:
+        - target: Die erlaubte Geschwindigkeit ist 50 Kilometer pro Stunde.
+          translation:
+            vi: Tốc độ cho phép là 50 kilômét mỗi giờ.
+  - key: de:item:a2w2-bremse
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bremse, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái phanh
+      examples:
+        - target: Die Bremse funktioniert nicht richtig.
+          translation:
+            vi: Phanh không hoạt động tốt.
+  - key: de:item:a2w2-bremsen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: bremsen
+      pos: động từ
+    back:
+      meaning:
+        vi: phanh, hãm
+      examples:
+        - target: Der Fahrer bremst vor der Ampel.
+          translation:
+            vi: Tài xế phanh trước đèn giao thông.
+  - key: de:item:a2w2-motor
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Motor, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: động cơ
+      examples:
+        - target: Der Motor ist sehr laut.
+          translation:
+            vi: Động cơ rất ồn.
+  - key: de:item:a2w2-kofferraum
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kofferraum, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cốp xe
+      examples:
+        - target: Der Koffer passt nicht in den Kofferraum.
+          translation:
+            vi: Cái va li không vừa trong cốp xe.
+  - key: de:item:a2w2-lenkrad
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Lenkrad, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: vô lăng
+      examples:
+        - target: Beide Hände gehören ans Lenkrad.
+          translation:
+            vi: Cả hai tay phải đặt trên vô lăng.
+  - key: de:item:a2w2-sicherheitsgurt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sicherheitsgurt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: dây an toàn
+      examples:
+        - target: Bitte legen Sie den Sicherheitsgurt an.
+          translation:
+            vi: Xin hãy thắt dây an toàn.
+  - key: de:item:a2w2-ueberholen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: überholen
+      pos: động từ
+    back:
+      meaning:
+        vi: vượt (xe)
+      examples:
+        - target: Auf der Landstraße darf man hier nicht überholen.
+          translation:
+            vi: Trên đường quốc lộ này người ta không được vượt xe ở đây.
+  - key: de:item:a2w2-verkehrsschild
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Verkehrsschild, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: biển báo giao thông
+      examples:
+        - target: "Das Verkehrsschild zeigt: Vorfahrt achten."
+          translation:
+            vi: "Biển báo chỉ: nhường đường."
+  - key: de:item:a2w2-kreisverkehr
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kreisverkehr, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bùng binh, vòng xuyến
+      examples:
+        - target: Wir fahren durch den Kreisverkehr.
+          translation:
+            vi: Chúng tôi lái xe qua bùng binh.
+  - key: de:item:a2w2-fussgaenger
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fußgänger, - / die Fußgängerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người đi bộ
+      examples:
+        - target: Die Fußgänger warten an der Ampel.
+          translation:
+            vi: Những người đi bộ đợi ở đèn giao thông.
+  - key: de:item:a2w2-radweg
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Radweg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường dành cho xe đạp
+      examples:
+        - target: Der Radweg führt am Fluss entlang.
+          translation:
+            vi: Đường xe đạp chạy dọc theo con sông.
+  - key: de:item:a2w2-fahrbahn
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fahrbahn, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lòng đường
+      examples:
+        - target: Ein Kind läuft plötzlich auf die Fahrbahn.
+          translation:
+            vi: Một đứa bé bất ngờ chạy ra lòng đường.
+  - key: de:item:a2w2-einparken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: einparken, parkt ein, parkte ein, hat eingeparkt
+      pos: động từ
+    back:
+      meaning:
+        vi: đỗ xe vào chỗ
+      examples:
+        - target: Ich kann gut einparken.
+          translation:
+            vi: Tôi đỗ xe vào chỗ rất giỏi.
+  - key: de:item:a2w2-vorfahrt
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Vorfahrt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyền đi trước
+      examples:
+        - target: Wer hat hier Vorfahrt?
+          translation:
+            vi: Ở đây ai được đi trước?
+  - key: de:item:a2w2-lkw
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Lkw, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe tải
+      examples:
+        - target: Der Lkw steht im Stau.
+          translation:
+            vi: Chiếc xe tải kẹt trong dòng xe.
+  - key: de:item:a2w2-buchhandlung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Buchhandlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu sách
+      examples:
+        - target: Ich kaufe das Buch in der Buchhandlung.
+          translation:
+            vi: Tôi mua quyển sách ở hiệu sách.
+  - key: de:item:a2w2-drogerie
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Drogerie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng mỹ phẩm, đồ vệ sinh
+      examples:
+        - target: Zahnpasta gibt es in der Drogerie.
+          translation:
+            vi: Kem đánh răng có ở cửa hàng đồ vệ sinh.
+      confusion:
+        vi: Die Drogerie bán mỹ phẩm và đồ vệ sinh, không bán thuốc theo toa; thuốc mua ở die Apotheke.
+  - key: de:item:a2w2-kiosk
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kiosk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quầy bán báo, đồ ăn vặt
+      examples:
+        - target: Am Kiosk kaufe ich eine Zeitung.
+          translation:
+            vi: Tôi mua tờ báo ở quầy báo.
+  - key: de:item:a2w2-blumenladen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Blumenladen, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng hoa
+      examples:
+        - target: Wir kaufen Rosen im Blumenladen.
+          translation:
+            vi: Chúng tôi mua hoa hồng ở cửa hàng hoa.
+  - key: de:item:a2w2-juwelier
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Juwelier, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiệm kim hoàn; thợ kim hoàn
+      examples:
+        - target: Beim Juwelier kaufe ich einen Ring.
+          translation:
+            vi: Tôi mua một chiếc nhẫn ở tiệm kim hoàn.
+  - key: de:item:a2w2-kassenbon
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kassenbon, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: hóa đơn (ở quầy)
+      examples:
+        - target: Bitte behalten Sie den Kassenbon.
+          translation:
+            vi: Xin hãy giữ hóa đơn.
+  - key: de:item:a2w2-quittung
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Quittung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: biên lai
+      examples:
+        - target: Ich brauche eine Quittung.
+          translation:
+            vi: Tôi cần một biên lai.
+  - key: de:item:a2w2-einkaufswagen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Einkaufswagen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe đẩy mua hàng
+      examples:
+        - target: Ich brauche einen Einkaufswagen.
+          translation:
+            vi: Tôi cần một xe đẩy.
+  - key: de:item:a2w2-sonderangebot
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Sonderangebot, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hàng khuyến mãi
+      examples:
+        - target: Heute gibt es ein Sonderangebot für Käse.
+          translation:
+            vi: Hôm nay có khuyến mãi pho mát.
+  - key: de:item:a2w2-schlussverkauf
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schlussverkauf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đợt bán hết hàng cuối mùa
+      examples:
+        - target: Im Schlussverkauf sind Jacken billiger.
+          translation:
+            vi: Trong đợt bán cuối mùa áo khoác rẻ hơn.
+  - key: de:item:a2w2-umtausch
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Umtausch (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc đổi hàng
+      examples:
+        - target: Ein Umtausch ist nur mit Kassenbon möglich.
+          translation:
+            vi: Chỉ có thể đổi hàng khi có hóa đơn.
+  - key: de:item:a2w2-schaufenster
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Schaufenster, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: tủ kính trưng bày
+      examples:
+        - target: Das Kleid im Schaufenster gefällt mir.
+          translation:
+            vi: Chiếc váy trong tủ kính làm tôi thích.
+  - key: de:item:a2w2-fussgaengerzone
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fußgängerzone, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu đi bộ
+      examples:
+        - target: In der Fußgängerzone gibt es viele Geschäfte.
+          translation:
+            vi: Trong khu đi bộ có nhiều cửa hàng.
+  - key: de:item:a2w2-einkaufszentrum
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Einkaufszentrum, Einkaufszentren
+      pos: danh từ
+    back:
+      meaning:
+        vi: trung tâm mua sắm
+      examples:
+        - target: Am Samstag fahren wir ins Einkaufszentrum.
+          translation:
+            vi: Thứ Bảy chúng tôi đi trung tâm mua sắm.
+  - key: de:item:a2w2-lebensmittelgeschaeft
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Lebensmittelgeschäft, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng thực phẩm
+      examples:
+        - target: Das Lebensmittelgeschäft öffnet um sieben Uhr.
+          translation:
+            vi: Cửa hàng thực phẩm mở cửa lúc bảy giờ.
+  - key: de:item:a2w2-warenhaus
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Warenhaus, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng bách hóa
+      examples:
+        - target: Im Warenhaus finde ich fast alles.
+          translation:
+            vi: Ở cửa hàng bách hóa tôi tìm được hầu như mọi thứ.
+  - key: de:item:a2w2-kassierer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kassierer, - / die Kassiererin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên thu ngân
+      examples:
+        - target: Der Kassierer gibt mir das Wechselgeld.
+          translation:
+            vi: Nhân viên thu ngân đưa tôi tiền thừa.
+  - key: de:item:a2w2-wechselgeld
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Wechselgeld (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền thừa
+      examples:
+        - target: Sie bekommen noch fünf Euro Wechselgeld.
+          translation:
+            vi: Bạn còn nhận lại năm euro tiền thừa.
+  - key: de:item:a2w2-kleingeld
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Kleingeld (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền lẻ
+      examples:
+        - target: Haben Sie Kleingeld für den Automaten?
+          translation:
+            vi: Bạn có tiền lẻ cho máy bán hàng không?
+  - key: de:item:a2w2-preisschild
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Preisschild, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảng giá, nhãn giá
+      examples:
+        - target: Auf dem Preisschild steht 19,99 Euro.
+          translation:
+            vi: Trên nhãn giá ghi 19,99 euro.
+  - key: de:item:a2w2-reduziert
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: reduziert
+      pos: tính từ
+    back:
+      meaning:
+        vi: đã giảm giá
+      examples:
+        - target: Alle Schuhe sind heute reduziert.
+          translation:
+            vi: Hôm nay tất cả giày đều được giảm giá.
+  - key: de:item:a2w2-bar
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: bar
+      pos: tính từ
+    back:
+      meaning:
+        vi: bằng tiền mặt
+      examples:
+        - target: Ich zahle bar.
+          translation:
+            vi: Tôi trả bằng tiền mặt.
+      confusion:
+        vi: "Bar thường đi với zahlen: bar zahlen = trả tiền mặt; mit Karte zahlen = trả bằng thẻ."
+  - key: de:item:a2w2-rasen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Rasen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bãi cỏ
+      examples:
+        - target: Der Rasen ist frisch gemäht.
+          translation:
+            vi: Bãi cỏ vừa được cắt.
+  - key: de:item:a2w2-zaun
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zaun, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hàng rào
+      examples:
+        - target: Um den Garten steht ein hoher Zaun.
+          translation:
+            vi: Quanh vườn có một hàng rào cao.
+  - key: de:item:a2w2-hecke
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Hecke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hàng rào cây
+      examples:
+        - target: Die Hecke ist drei Meter lang.
+          translation:
+            vi: Hàng rào cây dài ba mét.
+  - key: de:item:a2w2-hammer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Hammer, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái búa
+      examples:
+        - target: Ich brauche einen Hammer und Nägel.
+          translation:
+            vi: Tôi cần một cái búa và đinh.
+  - key: de:item:a2w2-nagel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Nagel, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái đinh; móng tay
+      examples:
+        - target: Er schlägt einen Nagel in die Wand.
+          translation:
+            vi: Anh ấy đóng một chiếc đinh vào tường.
+      confusion:
+        vi: Der Nagel cũng là móng tay (die Fingernägel).
+  - key: de:item:a2w2-schraube
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schraube, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái vít, ốc vít
+      examples:
+        - target: Die Schraube ist zu klein.
+          translation:
+            vi: Con ốc vít này quá nhỏ.
+  - key: de:item:a2w2-schraubenzieher
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schraubenzieher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái tua vít
+      examples:
+        - target: Gibst du mir bitte den Schraubenzieher?
+          translation:
+            vi: Bạn đưa cho tôi cái tua vít được không?
+  - key: de:item:a2w2-farbe
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Farbe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: màu sắc; sơn
+      examples:
+        - target: Welche Farbe hat die Wand?
+          translation:
+            vi: Bức tường màu gì?
+  - key: de:item:a2w2-pinsel
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Pinsel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái cọ
+      examples:
+        - target: Mit dem Pinsel streiche ich die Tür.
+          translation:
+            vi: Tôi sơn cánh cửa bằng cái cọ.
+  - key: de:item:a2w2-dach
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Dach, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: mái nhà
+      examples:
+        - target: Das Dach ist rot.
+          translation:
+            vi: Mái nhà màu đỏ.
+  - key: de:item:a2w2-mauer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mauer, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bức tường (ngoài trời)
+      examples:
+        - target: Eine alte Mauer steht hinter dem Haus.
+          translation:
+            vi: Một bức tường cũ nằm phía sau nhà.
+      confusion:
+        vi: Die Mauer là bức tường ngoài trời, tường xây; die Wand là bức tường trong phòng.
+  - key: de:item:a2w2-schornstein
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schornstein, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ống khói
+      examples:
+        - target: Aus dem Schornstein kommt Rauch.
+          translation:
+            vi: Khói bay ra từ ống khói.
+  - key: de:item:a2w2-haustuer
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Haustür, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa chính nhà
+      examples:
+        - target: Die Haustür ist abgeschlossen.
+          translation:
+            vi: Cửa chính đã khóa.
+  - key: de:item:a2w2-dachboden
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Dachboden, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: gác mái
+      examples:
+        - target: Auf dem Dachboden liegen alte Kisten.
+          translation:
+            vi: Trên gác mái có những chiếc thùng cũ.
+  - key: de:item:a2w2-garage
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Garage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà để xe
+      examples:
+        - target: Das Auto steht in der Garage.
+          translation:
+            vi: Chiếc xe đậu trong nhà để xe.
+  - key: de:item:a2w2-hof
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Hof, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân trong; sân sau; nông trại
+      examples:
+        - target: Die Kinder spielen im Hof.
+          translation:
+            vi: Bọn trẻ chơi ở sân trong.
+  - key: de:item:a2w2-streichen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: streichen, streicht, strich, hat gestrichen
+      pos: động từ
+    back:
+      meaning:
+        vi: sơn, quét; phết
+      examples:
+        - target: Wir streichen das Wohnzimmer blau.
+          translation:
+            vi: Chúng tôi sơn phòng khách màu xanh.
+      confusion:
+        vi: Streichen còn nghĩa là phết (Butter aufs Brot streichen) hoặc gạch bỏ.
+  - key: de:item:a2w2-bohren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: bohren
+      pos: động từ
+    back:
+      meaning:
+        vi: khoan
+      examples:
+        - target: Ich muss ein Loch in die Wand bohren.
+          translation:
+            vi: Tôi phải khoan một cái lỗ trên tường.
+  - key: de:item:a2w2-saegen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: sägen
+      pos: động từ
+    back:
+      meaning:
+        vi: cưa
+      examples:
+        - target: Er sägt ein Brett.
+          translation:
+            vi: Anh ấy cưa một tấm ván.
+  - key: de:item:a2w2-maehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: mähen
+      pos: động từ
+    back:
+      meaning:
+        vi: cắt (cỏ)
+      examples:
+        - target: Mein Vater mäht den Rasen.
+          translation:
+            vi: Bố tôi cắt cỏ.
+  - key: de:item:a2w2-graben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: graben, gräbt, grub, hat gegraben
+      pos: động từ
+    back:
+      meaning:
+        vi: đào
+      examples:
+        - target: Der Hund gräbt ein Loch im Garten.
+          translation:
+            vi: Con chó đào một cái hố trong vườn.
+  - key: de:item:a2w2-pflanzen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: pflanzen
+      pos: động từ
+    back:
+      meaning:
+        vi: trồng (cây)
+      examples:
+        - target: Wir pflanzen einen Baum.
+          translation:
+            vi: Chúng tôi trồng một cái cây.
+  - key: de:item:a2w2-ernten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ernten
+      pos: động từ
+    back:
+      meaning:
+        vi: thu hoạch
+      examples:
+        - target: Im Herbst ernten wir die Äpfel.
+          translation:
+            vi: Mùa thu chúng tôi thu hoạch táo.
+  - key: de:item:a2w2-benutzen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: benutzen
+      pos: động từ
+    back:
+      meaning:
+        vi: dùng, sử dụng
+      examples:
+        - target: Darf ich dein Handy benutzen?
+          translation:
+            vi: Tôi có thể dùng điện thoại của bạn không?
+  - key: de:item:a2w2-entscheiden
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: entscheiden, entscheidet, entschied, hat entschieden
+      pos: động từ
+    back:
+      meaning:
+        vi: quyết định
+      examples:
+        - target: Der Chef entscheidet heute.
+          translation:
+            vi: Hôm nay sếp quyết định.
+  - key: de:item:a2w2-pruefen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: prüfen
+      pos: động từ
+    back:
+      meaning:
+        vi: kiểm tra
+      examples:
+        - target: Der Lehrer prüft die Hausaufgaben.
+          translation:
+            vi: Thầy giáo kiểm tra bài tập về nhà.
+  - key: de:item:a2w2-verkaufen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: verkaufen
+      pos: động từ
+    back:
+      meaning:
+        vi: bán
+      examples:
+        - target: Er verkauft sein altes Auto.
+          translation:
+            vi: Anh ấy bán chiếc xe cũ của mình.
+  - key: de:item:a2w2-versprechen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: versprechen, verspricht, versprach, hat versprochen
+      pos: động từ
+    back:
+      meaning:
+        vi: hứa
+      examples:
+        - target: Ich verspreche dir, pünktlich zu sein.
+          translation:
+            vi: Tôi hứa với bạn là sẽ đến đúng giờ.
+  - key: de:item:a2w2-verstecken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: verstecken
+      pos: động từ
+    back:
+      meaning:
+        vi: giấu
+      examples:
+        - target: Das Kind versteckt das Spielzeug.
+          translation:
+            vi: Đứa bé giấu món đồ chơi.
+  - key: de:item:a2w2-ziehen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ziehen, zieht, zog, hat gezogen
+      pos: động từ
+    back:
+      meaning:
+        vi: kéo
+      examples:
+        - target: Bitte ziehen Sie die Tür, nicht drücken.
+          translation:
+            vi: Xin hãy kéo cửa, đừng đẩy.
+  - key: de:item:a2w2-zerbrechen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: zerbrechen, zerbricht, zerbrach, ist zerbrochen
+      pos: động từ
+    back:
+      meaning:
+        vi: vỡ, gãy
+      examples:
+        - target: Vorsichtig, das Glas zerbricht leicht!
+          translation:
+            vi: Cẩn thận, ly này dễ vỡ lắm!
+  - key: de:item:a2w2-riechen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: riechen, riecht, roch, hat gerochen
+      pos: động từ
+    back:
+      meaning:
+        vi: ngửi; có mùi
+      examples:
+        - target: Die Blumen riechen gut.
+          translation:
+            vi: Những bông hoa thơm.
+  - key: de:item:a2w2-vorbeikommen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorbeikommen, kommt vorbei, kam vorbei, ist vorbeigekommen
+      pos: động từ
+    back:
+      meaning:
+        vi: ghé qua
+      examples:
+        - target: Komm doch morgen mal vorbei!
+          translation:
+            vi: Mai bạn ghé qua nhé!
+  - key: de:item:a2w2-ausgeben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausgeben, gibt aus, gab aus, hat ausgegeben
+      pos: động từ
+    back:
+      meaning:
+        vi: tiêu (tiền)
+      examples:
+        - target: Er gibt zu viel Geld aus.
+          translation:
+            vi: Anh ấy tiêu quá nhiều tiền.
+  - key: de:item:a2w2-aufpassen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufpassen, passt auf, passte auf, hat aufgepasst
+      pos: động từ
+    back:
+      meaning:
+        vi: cẩn thận, để ý, trông
+      examples:
+        - target: Du musst gut aufpassen.
+          translation:
+            vi: Bạn phải chú ý cẩn thận.
+  - key: de:item:a2w2-ausleihen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausleihen, leiht aus, lieh aus, hat ausgeliehen
+      pos: động từ
+    back:
+      meaning:
+        vi: mượn (ở thư viện), cho mượn
+      examples:
+        - target: Ich leihe mir ein Buch in der Bibliothek aus.
+          translation:
+            vi: Tôi mượn một quyển sách ở thư viện.
+  - key: de:item:a2w2-sich-verspaeten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich verspäten, verspätet sich, verspätete sich, hat sich verspätet
+      pos: động từ
+    back:
+      meaning:
+        vi: đến muộn
+      examples:
+        - target: Entschuldigung, ich habe mich verspätet.
+          translation:
+            vi: Xin lỗi, tôi đã đến muộn.
+  - key: de:item:a2w2-schimpfen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: schimpfen
+      pos: động từ
+    back:
+      meaning:
+        vi: mắng, la rầy
+      examples:
+        - target: Der Vater schimpft mit dem Kind.
+          translation:
+            vi: Người cha mắng đứa trẻ.
+  - key: de:item:a2w2-wecken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: wecken
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh thức
+      examples:
+        - target: Kannst du mich um sechs Uhr wecken?
+          translation:
+            vi: Bạn có thể đánh thức tôi lúc sáu giờ không?
+  - key: de:item:a2w2-tauschen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: tauschen
+      pos: động từ
+    back:
+      meaning:
+        vi: đổi, trao đổi
+      examples:
+        - target: Wollen wir die Plätze tauschen?
+          translation:
+            vi: Chúng ta đổi chỗ nhé?
+  - key: de:item:a2w2-troesten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: trösten
+      pos: động từ
+    back:
+      meaning:
+        vi: an ủi
+      examples:
+        - target: Die Mutter tröstet ihr Kind.
+          translation:
+            vi: Người mẹ dỗ dành con.
+  - key: de:item:a2w2-beruehren
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: berühren
+      pos: động từ
+    back:
+      meaning:
+        vi: chạm vào
+      examples:
+        - target: Bitte nicht berühren!
+          translation:
+            vi: Xin đừng chạm vào!
+  - key: de:item:a2w2-beschreiben
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: beschreiben, beschreibt, beschrieb, hat beschrieben
+      pos: động từ
+    back:
+      meaning:
+        vi: mô tả
+      examples:
+        - target: Können Sie den Mann beschreiben?
+          translation:
+            vi: Ông có thể mô tả người đàn ông đó không?
+  - key: de:item:a2w2-bemerken
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: bemerken
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận ra, để ý thấy
+      examples:
+        - target: Ich habe den Fehler zu spät bemerkt.
+          translation:
+            vi: Tôi nhận ra lỗi quá muộn.
+  - key: de:item:a2w2-erkennen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: erkennen, erkennt, erkannte, hat erkannt
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận ra
+      examples:
+        - target: Ich erkenne ihn sofort.
+          translation:
+            vi: Tôi nhận ra anh ấy ngay lập tức.
+  - key: de:item:a2w2-eigen
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: eigen
+      pos: tính từ
+    back:
+      meaning:
+        vi: riêng, của chính mình
+      examples:
+        - target: Jedes Kind hat ein eigenes Zimmer.
+          translation:
+            vi: Mỗi đứa trẻ có một phòng riêng.
+      confusion:
+        vi: Eigen luôn đi với danh từ và có đuôi (mein eigenes Zimmer, meine eigene Meinung).
+  - key: de:item:a2w2-einzig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: einzig
+      pos: tính từ
+    back:
+      meaning:
+        vi: duy nhất
+      examples:
+        - target: Er ist mein einziger Freund hier.
+          translation:
+            vi: Anh ấy là người bạn duy nhất của tôi ở đây.
+  - key: de:item:a2w2-genau
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: genau
+      pos: trạng từ
+    back:
+      meaning:
+        vi: chính xác, đúng
+      examples:
+        - target: Wie viel Uhr ist es genau?
+          translation:
+            vi: Chính xác bây giờ là mấy giờ?
+  - key: de:item:a2w2-gewoehnlich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: gewöhnlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thường thường
+      examples:
+        - target: Gewöhnlich stehe ich um sechs Uhr auf.
+          translation:
+            vi: Thường thì tôi dậy lúc sáu giờ.
+  - key: de:item:a2w2-lange
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: lange
+      pos: trạng từ
+    back:
+      meaning:
+        vi: lâu, trong thời gian dài
+      examples:
+        - target: Ich habe lange gewartet.
+          translation:
+            vi: Tôi đã đợi lâu.
+  - key: de:item:a2w2-meistens
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: meistens
+      pos: trạng từ
+    back:
+      meaning:
+        vi: phần lớn, thường là
+      examples:
+        - target: Meistens esse ich zu Hause.
+          translation:
+            vi: Phần lớn tôi ăn ở nhà.
+  - key: de:item:a2w2-ordentlich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ordentlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: gọn gàng, ngăn nắp; tử tế
+      examples:
+        - target: Sein Zimmer ist immer ordentlich.
+          translation:
+            vi: Phòng của anh ấy lúc nào cũng gọn gàng.
+  - key: de:item:a2w2-selten
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: selten
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hiếm khi
+      examples:
+        - target: Ich sehe ihn nur selten.
+          translation:
+            vi: Tôi hiếm khi gặp anh ấy.
+  - key: de:item:a2w2-voellig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: völlig
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hoàn toàn
+      examples:
+        - target: Das ist völlig falsch.
+          translation:
+            vi: Cái đó hoàn toàn sai.
+  - key: de:item:a2w2-weiter
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: weiter
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tiếp tục; xa hơn
+      examples:
+        - target: Wie geht es weiter?
+          translation:
+            vi: Sau đó sẽ thế nào?
+  - key: de:item:a2w2-wenigstens
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: wenigstens
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ít nhất là
+      examples:
+        - target: Du kannst wenigstens anrufen.
+          translation:
+            vi: Ít nhất bạn cũng có thể gọi điện.
+  - key: de:item:a2w2-vorsichtig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorsichtig
+      pos: tính từ
+    back:
+      meaning:
+        vi: cẩn thận
+      examples:
+        - target: Fahr bitte vorsichtig!
+          translation:
+            vi: Lái xe cẩn thận nhé!
+  - key: de:item:a2w2-gefaehrlich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: gefährlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: nguy hiểm
+      examples:
+        - target: Die Straße ist sehr gefährlich.
+          translation:
+            vi: Con đường rất nguy hiểm.
+  - key: de:item:a2w2-sicher
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: sicher
+      pos: tính từ
+    back:
+      meaning:
+        vi: an toàn; chắc chắn
+      examples:
+        - target: Ich bin sicher, dass er kommt.
+          translation:
+            vi: Tôi chắc là anh ấy sẽ đến.
+        - target: Der Weg ist nicht sicher.
+          translation:
+            vi: Con đường này không an toàn.
+  - key: de:item:a2w2-ernst
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ernst
+      pos: tính từ
+    back:
+      meaning:
+        vi: nghiêm trọng, nghiêm túc
+      examples:
+        - target: Er sieht ernst aus.
+          translation:
+            vi: Trông anh ấy nghiêm nghị.
+  - key: de:item:a2w2-komisch
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: komisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: lạ, kỳ cục; buồn cười
+      examples:
+        - target: Das schmeckt komisch.
+          translation:
+            vi: Món này có vị lạ.
+  - key: de:item:a2w2-nuetzlich
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: nützlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: hữu ích
+      examples:
+        - target: Das Wörterbuch ist sehr nützlich.
+          translation:
+            vi: Cuốn từ điển rất hữu ích.
+  - key: de:item:a2w2-unnoetig
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: unnötig
+      pos: tính từ
+    back:
+      meaning:
+        vi: không cần thiết
+      examples:
+        - target: Das ist unnötig.
+          translation:
+            vi: Cái đó không cần thiết.
+  - key: de:item:a2w2-besonders
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: besonders
+      pos: trạng từ
+    back:
+      meaning:
+        vi: đặc biệt
+      examples:
+        - target: Das Essen war besonders gut.
+          translation:
+            vi: Bữa ăn đặc biệt ngon.
+  - key: de:item:a2w2-etwa
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: etwa
+      pos: trạng từ
+    back:
+      meaning:
+        vi: khoảng
+      examples:
+        - target: Das kostet etwa zehn Euro.
+          translation:
+            vi: Cái này giá khoảng mười euro.
+  - key: de:item:a2w2-mindestens
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: mindestens
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ít nhất
+      examples:
+        - target: Du brauchst mindestens eine Stunde.
+          translation:
+            vi: Bạn cần ít nhất một tiếng.
+  - key: de:item:a2w2-hoechstens
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: höchstens
+      pos: trạng từ
+    back:
+      meaning:
+        vi: nhiều nhất
+      examples:
+        - target: Das dauert höchstens zehn Minuten.
+          translation:
+            vi: Việc đó mất tối đa mười phút.
+  - key: de:item:a2w2-ausserdem
+    type: vocab
+    level: a2
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: außerdem
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ngoài ra
+      examples:
+        - target: Ich bin müde. Außerdem habe ich Hunger.
+          translation:
+            vi: Tôi mệt. Ngoài ra tôi còn đói.
