@@ -243,14 +243,14 @@ isOneToOne: false
                   ]
                 },"assignments": {
                   Row: {
-                    "class_id": string,"created_at": string,"due_at": string | null,"exam_form_id": string | null,"id": string,"kind": string,"lesson_id": string | null,"note": string | null,"target_count": number | null,"teacher_assignment_json": Json | null,"teacher_assignment_title": string | null
+                    "class_id": string,"closed_at": string | null,"created_at": string,"due_at": string | null,"exam_form_id": string | null,"exam_mode": string | null,"exam_section": string | null,"id": string,"kind": string,"lesson_id": string | null,"note": string | null,"target_count": number | null,"updated_at": string,"teacher_assignment_json": Json | null,"teacher_assignment_title": string | null
                   }
                   ComputedFields: "teacher_assignment_json" | "teacher_assignment_title"
                   Insert: {
-                    "class_id": string,"created_at"?: string,"due_at"?: string | null,"exam_form_id"?: string | null,"id"?: string,"kind": string,"lesson_id"?: string | null,"note"?: string | null,"target_count"?: number | null
+                    "class_id": string,"closed_at"?: string | null,"created_at"?: string,"due_at"?: string | null,"exam_form_id"?: string | null,"exam_mode"?: string | null,"exam_section"?: string | null,"id"?: string,"kind": string,"lesson_id"?: string | null,"note"?: string | null,"target_count"?: number | null,"updated_at"?: string
                   }
                   Update: {
-                    "class_id"?: string,"created_at"?: string,"due_at"?: string | null,"exam_form_id"?: string | null,"id"?: string,"kind"?: string,"lesson_id"?: string | null,"note"?: string | null,"target_count"?: number | null
+                    "class_id"?: string,"closed_at"?: string | null,"created_at"?: string,"due_at"?: string | null,"exam_form_id"?: string | null,"exam_mode"?: string | null,"exam_section"?: string | null,"id"?: string,"kind"?: string,"lesson_id"?: string | null,"note"?: string | null,"target_count"?: number | null,"updated_at"?: string
                   }
                   Relationships: [
                     {
@@ -1195,6 +1195,9 @@ isOneToOne: false
 "admin_set_status":
 { Args: { "p_force"?: boolean,"p_id": string,"p_kind": string,"p_note"?: string,"p_status": string }; Returns: Json
                            },
+"admin_staff_history":
+{ Args: { "p_limit"?: number,"p_offset"?: number }; Returns: Json
+                           },
 "ai_cache_get":
 { Args: { "p_key": string }; Returns: Json
                            },
@@ -1881,8 +1884,13 @@ isOneToOne: false
 "teacher_class_roster":
 { Args: { "p_class_id": string }; Returns: Json
                            },
+"teacher_completions":
+{ Args: { "p_class_id": string,"p_user"?: string }; Returns: {
+              "assignment_id": string,"done_at": string,"user_id": string
+            }[]
+                           },
 "teacher_create_assignment":
-{ Args: { "p_class_id": string,"p_due_at"?: string,"p_kind": string,"p_note"?: string,"p_ref_id"?: string,"p_target_count"?: number }; Returns: Json
+{ Args: { "p_class_id": string,"p_due_at"?: string,"p_exam_mode"?: string,"p_exam_section"?: string,"p_kind": string,"p_note"?: string,"p_ref_id"?: string,"p_target_count"?: number }; Returns: Json
                            },
 "teacher_create_class":
 { Args: { "p_language": string,"p_name": string }; Returns: Json
@@ -1903,7 +1911,7 @@ isOneToOne: false
 { Args: { "p_language": string,"p_user": string }; Returns: string
                            },
 "teacher_member_stats":
-{ Args: { "p_class": Omit<Database["public"]['Tables']["classes"]['Row'], Database["public"]['Tables']["classes"]['ComputedFields']>,"p_user": string }; Returns: Json
+{ Args: { "p_class": Omit<Database["public"]['Tables']["classes"]['Row'], Database["public"]['Tables']["classes"]['ComputedFields']>,"p_done": number,"p_total": number,"p_user": string }; Returns: Json
                            },
 "teacher_normalize_code":
 { Args: { "p_code": string }; Returns: string
@@ -1922,6 +1930,9 @@ isOneToOne: false
                            },
 "teacher_revoke_invite":
 { Args: { "p_code": string }; Returns: Json
+                           },
+"teacher_update_assignment":
+{ Args: { "p_assignment_id": string,"p_closed": boolean,"p_due_at"?: string,"p_note": string,"p_set_due"?: boolean }; Returns: Json
                            },
 "track_events":
 { Args: { "p_events": Json }; Returns: number

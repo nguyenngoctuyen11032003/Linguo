@@ -50,7 +50,7 @@ select is((select array_agg(p.proname::text order by p.proname) from pg_proc p
   array['class_access', 'grant_teacher_role', 'is_teacher', 'learner_join_class', 'learner_leave_class', 'learner_list_assignments',
     'learner_list_classes', 'teacher_archive_class', 'teacher_class_roster', 'teacher_create_assignment', 'teacher_create_class',
     'teacher_create_invite', 'teacher_delete_assignment', 'teacher_list_classes', 'teacher_remove_member', 'teacher_rename_class',
-    'teacher_revoke_invite'], 'client RPC set (internal helpers are not executable)');
+    'teacher_revoke_invite', 'teacher_update_assignment'], 'client RPC set (internal helpers are not executable)');
 select ok((select bool_and(p.prosecdef and p.proconfig @> array['search_path=""']) from pg_proc p
     where p.pronamespace = 'public'::regnamespace and has_function_privilege('authenticated', p.oid, 'execute')
       and (p.proname like 'teacher\_%' or p.proname like 'learner\_%' or p.proname in ('grant_teacher_role', 'is_teacher', 'class_access'))),
@@ -208,7 +208,8 @@ select is(public.teacher_create_assignment(current_setting('test.ca')::uuid, 'le
     now() + interval '3 days', '  Làm   trước thứ Sáu ') - 'id' - 'created_at' - 'due_at',
   jsonb_build_object('class_id', current_setting('test.ca')::uuid, 'kind', 'lesson', 'ref_id', current_setting('test.hello')::uuid,
     'title', (select title ->> 'vi' from public.lessons where key = 'en:lesson:hello'), 'target_count', null,
-    'note', 'Làm trước thứ Sáu', 'completed_count', 0, 'member_count', 2), 'lesson assignment');
+    'note', 'Làm trước thứ Sáu', 'completed_count', 0, 'member_count', 2, 'exam_mode', null, 'exam_section', null, 'closed_at', null),
+  'lesson assignment');
 select set_config('test.as_lesson', (select id::text from public.assignments where kind = 'lesson'), true);
 select set_config('test.as_exam', public.teacher_create_assignment(current_setting('test.ca')::uuid, 'exam',
   current_setting('test.form')::uuid) ->> 'id', true);
