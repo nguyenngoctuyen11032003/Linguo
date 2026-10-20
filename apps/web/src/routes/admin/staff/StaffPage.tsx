@@ -13,6 +13,7 @@ import {
   STAFF_SEARCH_THRESHOLD,
   canManageMember,
   filterPeople,
+  roleChangeConsequence,
   staffDisplayName,
   staffQueryKind,
 } from '@/features/admin/staff';
@@ -209,15 +210,6 @@ function GrantSection({ currentUserId, saving, findUser, setRole, teacherIds, sa
       />
     </section>
   );
-}
-
-/** What a role change means for the person, for the confirmation dialog (after their name). */
-export function roleChangeConsequence(previous: StaffRole | null, next: StaffRole): string {
-  const label = STAFF_ROLE_LABELS_VI[next];
-  const lead = previous ? `sẽ đổi vai trò từ ${STAFF_ROLE_LABELS_VI[previous]} thành ${label}.` : `sẽ được cấp vai trò ${label}.`;
-  const detail = STAFF_ROLE_DESCRIPTIONS_VI[next];
-  const demote = previous === 'admin' && next !== 'admin' ? ' Người này sẽ mất quyền quản trị.' : '';
-  return `${lead} ${detail}${demote}`;
 }
 
 interface MemberRowProps {

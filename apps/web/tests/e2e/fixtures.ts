@@ -2385,7 +2385,7 @@ export interface PersonalVocabMockWord {
 
 export interface PersonalVocabMockOptions {
   /** Lists to start with; defaults to one empty Korean list with id PERSONAL_LIST_ID. */
-  lists?: Array<{ id?: string; name: string; language_code: 'en' | 'ko'; words?: PersonalVocabMockWord[] }>;
+  lists?: Array<{ id?: string; name: string; language_code: 'en' | 'ko' | 'ja' | 'de'; words?: PersonalVocabMockWord[] }>;
   /** Fail the next import with this RPC error message (e.g. 'rate_limited'); then behave normally. */
   failNextImport?: string;
 }

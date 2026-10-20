@@ -17,6 +17,7 @@ import {
 } from '@linguo/shared';
 import { callRpc, parse } from '@/features/lesson-player/service';
 import { matchesSearch } from '@/lib/fold';
+import { STAFF_ROLE_LABELS_VI } from './service';
 import type { AppSupabaseClient } from '@/lib/supabase';
 
 // Staff management (/quan-tri/nhan-su, admin only): admin_list_staff, admin_find_user (20261017000500_admin_staff.sql)
@@ -135,4 +136,13 @@ export function describeHistoryEntry(entry: AdminStaffHistoryEntry, roleLabel: (
     case 'revoke_teacher':
       return `${actor} thu hồi quyền giáo viên của ${target}${entry.was_teacher === false ? ' (vốn không phải giáo viên)' : ''}`;
   }
+}
+
+/** What a role change means for the person, for the confirmation dialog (after their name). */
+export function roleChangeConsequence(previous: StaffRole | null, next: StaffRole): string {
+  const label = STAFF_ROLE_LABELS_VI[next];
+  const lead = previous ? `sẽ đổi vai trò từ ${STAFF_ROLE_LABELS_VI[previous]} thành ${label}.` : `sẽ được cấp vai trò ${label}.`;
+  const detail = STAFF_ROLE_DESCRIPTIONS_VI[next];
+  const demote = previous === 'admin' && next !== 'admin' ? ' Người này sẽ mất quyền quản trị.' : '';
+  return `${lead} ${detail}${demote}`;
 }
