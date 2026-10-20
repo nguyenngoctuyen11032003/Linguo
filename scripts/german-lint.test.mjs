@@ -658,3 +658,74 @@ test('articles: weak masculine oblique singular (dem Nachbarn) and demonstrative
   const warned = r.warnings.filter((w) => w.message.startsWith('article')).map((w) => w.path.match(/items\[(\d+)\]/)[1]);
   assert.deepEqual(warned, ['3']);
 });
+
+test('articles: genitive singular (des Parks, eines Hauses), nominalised infinitives (dem Duschen) and a blank before das are not flagged', async (t) => {
+  const nouns = items([
+    ['de:item:park', 'vocab', 'der Park, -s', null, 'Nomen'],
+    ['de:item:haus', 'vocab', 'das Haus, ¨-er', null, 'Nomen'],
+    ['de:item:dusche', 'vocab', 'die Dusche, -n', null, 'Nomen'],
+    ['de:item:herr', 'vocab', 'der Herr, -en', null, 'Nomen'],
+  ]);
+  const sentences = [
+    'Der Eingang des Parks ist offen.', // genitive -s
+    'Die Tür eines Hauses klemmt.', // genitive -es
+    'Nach dem Duschen bin ich müde.', // nominalised infinitive, not the plural of die Dusche
+    '{{b1}} das Herr Becker?', // blank: the verb is missing, das is the demonstrative pronoun
+    'Das Parks sind schön.', // still flagged: das never fits a plural
+    'Ich liebe das Duschen.', // das + a word ending in -en whose lowercase form (duschen) is a verb: a nominalised infinitive
+  ];
+  const content = tree(t, { 'de/items/a.yaml': nouns, 'de/items/s.yaml': items(sentences.map((x, i) => [`de:item:s${i}`, 'phrase', `${NAMES[i]}!`, x])) });
+  const r = await lint(content);
+  const warned = r.warnings.filter((w) => w.message.startsWith('article')).map((w) => w.path.match(/items\[(\d+)\]/)[1]);
+  assert.deepEqual(warned, ['4']);
+});
+
+test('capital: fragments after separators, brackets and "=" are not sentence-internal; "Vor- und Nachteile" is fine', async (t) => {
+  const content = tree(t, {
+    'de/items/a.yaml': items([
+      ['de:item:a', 'phrase', 'Hallo!', 'Da regnet es. · Ich bleibe zu Hause.'],
+      ['de:item:b', 'phrase', 'Tschüss!', 'Futur I: werden + Infinitiv (Es wird wärmer werden.)'],
+      ['de:item:c', 'phrase', 'Bis bald!', 'einander helfen = Wir helfen uns gegenseitig.'],
+      ['de:item:d', 'phrase', 'Danke!', 'Soziale Netzwerke haben Vor- und Nachteile.'],
+      ['de:item:e', 'phrase', 'Bitte!', 'Ich gehe Heute nach Hause.'],
+    ]),
+  });
+  const r = await lint(content);
+  assert.deepEqual(messages(r.errors), []);
+  const warned = r.warnings.filter((w) => w.message.includes('capitalised mid-sentence')).map((w) => w.path.match(/items\[(\d+)\]/)[1]);
+  assert.deepEqual(warned, ['4']);
+});
+
+test('mcq options that differ only by capitalisation or punctuation are a legitimate contrast, not an ä/ö/ü/ß warning', async (t) => {
+  const exercises = `  - key: de:exercise:a
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    prompt:
+      stem: Was ist richtig?
+      stem_lang: vi
+      options:
+        - { id: a, text: Beim laden, lang: de }
+        - { id: b, text: Beim Laden, lang: de }
+        - { id: c, text: als ob er alles wüsste., lang: de }
+    answer: { correct_option_id: b }
+    explanation: { vi: x }
+    display_answer: Beim Laden`;
+  const r = await lint(tree(t, { [LESSON]: lesson(exercises) }));
+  assert.equal(r.warnings.filter((w) => w.message.includes('differ only by')).length, 0, messages(r.warnings).join('\n'));
+  const partial = `  - key: de:exercise:p
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    prompt:
+      stem: Was ist richtig?
+      stem_lang: vi
+      options:
+        - { id: a, text: als ob er alles wüsste., lang: de }
+        - { id: b, text: als er alles wüsste., lang: de }
+    answer: { correct_option_id: a }
+    explanation: { vi: x }
+    display_answer: als ob er alles wüsste.`;
+  const r2 = await lint(tree(t, { [LESSON]: lesson(partial) }));
+  assert.equal(r2.warnings.filter((w) => w.message.includes('starts with a lowercase letter')).length, 0, 'an mcq answer is an option, not a full sentence');
+});

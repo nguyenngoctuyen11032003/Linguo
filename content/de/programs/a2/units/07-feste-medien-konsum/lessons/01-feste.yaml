@@ -267,8 +267,6 @@ exercises:
         - Wir feiern Tết jedes Jahr in Hanoi.
         - Tết feiern wir jedes Jahr in Hanoi.
         - In Hanoi feiern wir jedes Jahr Tết.
-        - Wir feiern jedes Jahr in Hanoi Tết.
-        - Jedes Jahr feiern wir in Hanoi Tết.
     known_wrong:
       - answer: Jedes Jahr wir feiern Tết in Hanoi.
         feedback_vi: "Khi Jedes Jahr đứng đầu câu, động từ feiern phải đứng ngay sau (vị trí 2): Jedes Jahr feiern wir …"

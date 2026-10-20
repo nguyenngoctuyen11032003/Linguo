@@ -133,6 +133,11 @@ function formsOf(lexicon) {
       if (e.plural !== '(Pl.)') add(lemma, 'sg', e.article);
       else add(lemma, 'pl', 'die');
       if (e.pluralForm) add(e.pluralForm, 'pl', e.article);
+      // Genitive singular of masculine/neuter nouns: -s / -es (des Parks, eines Hauses). Weak nouns (-n/-en) are covered below.
+      if (e.plural !== '(Pl.)' && (e.article === 'der' || e.article === 'das')) {
+        add(`${lemma}s`, 'sg', e.article);
+        add(`${lemma}es`, 'sg', e.article);
+      }
       // Weak (n-declension) masculines: the plural form is also the oblique singular (dem Nachbarn, den Studenten).
       if (e.pluralForm && e.article === 'der' && /^-(?:n|en)$/.test(e.plural)) add(e.pluralForm, 'sg', 'der');
     }
@@ -195,10 +200,13 @@ function sentencePosition(clean, index) {
   const trimmed = before.replace(/[\s„“”"'‚‘’([«»]+$/u, '');
   if (trimmed === '') return 'start';
   if (/\n\s*$/.test(before)) return 'start';
+  // Right after an opening bracket or quote the text is a fragment of its own ("Futur I: … (Es wird wärmer werden.)").
+  if (/[([„“"«]\s*$/u.test(before)) return 'start';
   const last = trimmed.at(-1);
   if ('.!?…'.includes(last)) return 'start';
   if (last === ':') return 'colon';
   if ('–—-'.includes(last)) return 'start'; // dialogue dash
+  if ('·↔→/|•='.includes(last)) return 'start'; // separators between phrases in front.text ("Da es regnet, … · Ich bin krank.")
   if (last === PLACEHOLDER) return 'unknown';
   return 'mid';
 }
@@ -275,7 +283,8 @@ function lessonStrings(doc) {
       if (p.source_lang === 'de') push(`${base}.prompt.source_text`, p.source_text);
       if (de) (ex.answer?.accepted ?? []).forEach((a, k) => push(`${base}.answer.accepted[${k}]`, a, { accepted: true }));
     }
-    if (de) push(`${base}.display_answer`, ex.display_answer);
+    // An mcq/listen answer is one option (often a clause: "als ob er alles wüsste."), not necessarily a full sentence.
+    if (de) push(`${base}.display_answer`, ex.display_answer, ex.type === 'mcq' || ex.type === 'listen' ? { partial: true } : {});
     if (de) (ex.known_wrong ?? []).forEach((kw, k) => push(`${base}.known_wrong[${k}].answer`, kw?.answer, { role: 'wrong', knownWrong: true }));
   });
   return out;
@@ -513,7 +522,7 @@ function analyse(s, sp, forms) {
         continue;
       }
       // Mid-sentence capital on a word the dictionary only lists in lowercase (not after an article: nominalised).
-      if (part === tok.text && part[0] !== part[0].toLowerCase() && part !== part.toUpperCase() && position === 'mid') {
+      if (part === tok.text && part[0] !== part[0].toLowerCase() && part !== part.toUpperCase() && position === 'mid' && clean[tok.end] !== '-') {
         const lower = part.toLowerCase();
         const prev = tokens[n - 1]?.text.toLowerCase();
         if (LOWERCASE_WORDS.has(lower) && !sp.allow.has(lower) && !sp.exactEntry(part) && !NOMINAL_CONTEXT.has(prev)) {
@@ -541,6 +550,10 @@ function analyse(s, sp, forms) {
     if (!ALL_DETERMINERS.has(d)) continue;
     // "Ist das Herr Müller?": after a form of sein, `das` is the demonstrative pronoun, not an article.
     if (d === 'das' && /^(?:ist|sind|war|waren)$/i.test(tokens[i - 2]?.text ?? '')) continue;
+    // The same holds when the verb is a blank ("{{b1}} das Herr Becker?").
+    if (d === 'das' && tokens[i - 2]?.text.includes(PLACEHOLDER)) continue;
+    // Nominalised infinitive (das Duschen, dem Laden, beim Lernen): the lowercase form is a verb, so the lexicon noun (die Dusche → Duschen) is a false friend.
+    if (/^(?:das|dem|des|ein|einem|eines)$/.test(d) && /en$/.test(noun.text) && !sp.check(noun.text.toLowerCase())) continue;
     const allowed = allowedDeterminers(forms, noun.text);
     if (!allowed) continue;
     const set = INDEFINITE_SET.has(d) ? allowed.indef : allowed.def;
@@ -578,7 +591,9 @@ function exerciseRules(f, report) {
       ex.prompt.options.forEach((o, k) => {
         if (o?.lang !== 'de' || typeof o.text !== 'string') return;
         const n = foldNorm(o.text);
-        if (seen.has(n) && seen.get(n) !== o.text) {
+        // Options that differ only by capitalisation or punctuation are a legitimate mcq contrast (Beim laden / Beim Laden).
+        const plain = (x) => x.normalize('NFC').toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, '').replace(/\s+/g, ' ').trim();
+        if (seen.has(n) && seen.get(n) !== o.text && plain(seen.get(n)) !== plain(o.text)) {
           report(f, 'warning', `${base}.prompt.options[${k}].text`, `${q(o.text)} and ${q(seen.get(n))} differ only by ä/ö/ü/ß (the grader folds them); fine for mcq, but do not use this contrast in typed exercises`);
         } else seen.set(n, o.text);
       });
