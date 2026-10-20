@@ -1,0 +1,550 @@
+# Bài luyện mô phỏng JLPT N1 số 2 do Linguo tự soạn (nguồn src:linguo-demo). Không phải đề thi chính thức,
+# không chép đề thật hay sách luyện thi có bản quyền. Nội dung mới, không trùng đề số 1. Nghe: lời thoại trong
+# `script`, ứng dụng đọc bằng giọng máy khi chưa có audio (audio_asset_id: null).
+#
+# Cấu trúc và thang điểm giống hệt đề số 1 (xem phần giả định ở jlpt-n1-mock-1.yaml):
+# - JLPT N1 thật có 3 phần tính điểm, mỗi phần 0–60 (Kiến thức ngôn ngữ, Đọc hiểu, Nghe), tổng 180; đỗ khi tổng ≥ 100
+#   và mỗi phần đạt điểm liệt 19. Kiến thức ngôn ngữ và Đọc hiểu được gộp vào `reading` (section_max 120), phần nghe ở
+#   `listening` (60). Ứng dụng chỉ xếp bậc theo tổng điểm quy đổi; điểm liệt từng phần KHÔNG được kiểm tra.
+# - Điểm mỗi câu (`points`) là trọng số do Linguo đặt, không phải điểm thật của JLPT.
+# - Thời gian rút gọn theo số câu: đề thật N1 có 110 phút cho kiến thức ngôn ngữ · đọc hiểu và 55 phút nghe.
+# - Dạng câu theo đề N1: không có "viết Kanji" và "nói gì trong tình huống" như N3; "ngữ pháp trong đoạn văn" dùng tag
+#   jlpt_read_grammar, "đọc tổng hợp" và "hiểu luận điểm" dùng tag jlpt_read_detail, "nghe tổng hợp" dùng tag
+#   jlpt_listen_point (như đề số 1).
+# - Câu chữ theo lối đề N1: không chia khoảng trắng giữa các cụm từ, Kanji không giới hạn cấp.
+# - Câu bị hỏi trong đoạn được đánh dấu bằng 【 】; chỗ trống là （　）, vị trí hỏi trong câu sắp xếp là ★.
+# - Câu "đáp lại ngay" có 3 phương án như đề thật; các câu khác có 4.
+schema_version: 1
+demo: false
+language: ja
+form:
+  key: ja:exam:jlpt-n1-mock-2
+  family: jlpt
+  title_vi: JLPT N1 — Bài luyện mô phỏng số 2
+  description_vi: >-
+    Bài luyện mô phỏng rút gọn theo cấu trúc JLPT N1: 8 câu nghe và 14 câu chữ Hán – từ vựng – ngữ pháp – đọc hiểu.
+    Nội dung do Linguo tự soạn, không phải đề thi chính thức; điểm quy đổi chỉ để tham khảo.
+  level_from: n1
+  level_to: n1
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 20
+    reading: 40
+  scoring:
+    verified: true
+    source_note_vi: >-
+      Đã đối chiếu ngày 20/10/2026 với jlpt.jp (mục kết quả thi): N1 gồm Kiến thức ngôn ngữ, Đọc hiểu, Nghe, mỗi
+      phần 0–60, tổng 180, đỗ từ 100 điểm và mỗi phần đạt 19. Ở đây Kiến thức ngôn ngữ và Đọc hiểu gộp thành phần Đọc
+      (120); ứng dụng không xét điểm liệt.
+    section_max:
+      listening: 60
+      reading: 120
+    bands:
+      - { level_code: n1, min_total: 100 }
+    pass_ratio: null
+reviewed_by: "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền"
+reviewed_at: "2026-10-20T12:00:00+07:00"
+questions:
+  # ============================== NGHE (聴解) ==============================
+  # --- Hiểu yêu cầu (課題理解) ---
+  - key: ja:examq:jlpt-n1-m2-l01
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_task
+    level_code: n1
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại ở công ty và chọn việc người phụ nữ làm TRƯỚC TIÊN.
+      stem: 女の人はこのあと、まず何をしますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：来月の社内研修の件なんだけど、参加者への案内メールはもう送った？
+        女の人：いえ、会場がまだ確定していないので、保留にしています。
+        男の人：会場なら昨日、第二会議室に決まったよ。それより、講師の先生に最終的な資料の確認をお願いしたいんだ。先に案内を出して、そのあとで講師に連絡してくれる？
+        女の人：はい、承知しました。
+      options:
+        - { id: a, text: "会場を確定させる", lang: ja }
+        - { id: b, text: "参加者に案内メールを送る", lang: ja }
+        - { id: c, text: "講師に連絡して資料の確認を頼む", lang: ja }
+        - { id: d, text: "第二会議室を予約する", lang: ja }
+    answer: b
+    explanation:
+      vi: "Người đàn ông bảo “先に案内を出して、そのあとで講師に連絡して”, nên việc trước tiên là gửi email thông báo cho người tham gia. Địa điểm đã quyết rồi (第二会議室に決まった) nên a không cần làm; liên hệ giảng viên là việc làm sau (c)."
+
+  - key: ja:examq:jlpt-n1-m2-l02
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_task
+    level_code: n1
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại giữa sinh viên và giáo sư và chọn cách in tài liệu.
+      stem: 女の学生はレジュメをどのように印刷しますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の学生：先生、来週のゼミの発表のレジュメですが、30部印刷すればよろしいでしょうか。
+        教授：参加者は25人だから、予備を含めて28部もあれば足りるでしょう。それと、グラフは白黒だと見づらいから、カラーで印刷してください。ただ、研究室のコピー機は今、調子が悪いので、図書館のものを使ってください。
+        女の学生：わかりました。
+      options:
+        - { id: a, text: "28部をカラーで、図書館で印刷する", lang: ja }
+        - { id: b, text: "30部をカラーで、研究室で印刷する", lang: ja }
+        - { id: c, text: "28部を白黒で、図書館で印刷する", lang: ja }
+        - { id: d, text: "25部をカラーで、研究室で印刷する", lang: ja }
+    answer: a
+    explanation:
+      vi: "Giáo sư chỉ định đủ ba điều kiện: 28 bản (25 người cộng dự phòng), in màu vì biểu đồ trắng đen khó xem, và dùng máy ở thư viện vì máy phòng nghiên cứu đang trục trặc. Mỗi phương án sai sai ít nhất một điều kiện."
+
+  # --- Hiểu điểm chính (ポイント理解) ---
+  - key: ja:examq:jlpt-n1-m2-l03
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n1
+    points: 3
+    prompt:
+      instruction_vi: Nghe hội thoại giữa hai đồng nghiệp và chọn đánh giá của người phụ nữ.
+      stem: 女の人は山田さんの企画についてどう考えていますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：山田さんの企画、どう思う？
+        女の人：発想は面白いんだけど、予算の見積もりが甘いのが気になるな。
+        男の人：確かに。でも、新人にしてはよくやってるよ。
+        女の人：そうね。だから、もう一度予算を見直してもらったうえで、部長に提出するよう勧めようと思う。
+        男の人：それがいいね。
+      options:
+        - { id: a, text: "発想も予算も問題ない", lang: ja }
+        - { id: b, text: "予算を見直せば、提出してよい", lang: ja }
+        - { id: c, text: "新人なので、提出させるべきではない", lang: ja }
+        - { id: d, text: "企画を最初からやり直すべきだ", lang: ja }
+    answer: b
+    explanation:
+      vi: "Chị khen ý tưởng nhưng lo về dự toán sơ sài, và đề nghị “もう一度予算を見直してもらったうえで、部長に提出”: sửa lại dự toán rồi mới nộp. Người đàn ông là người nói “新人にしては” (so với người mới thì làm tốt), còn chị không bảo làm lại từ đầu (d)."
+
+  - key: ja:examq:jlpt-n1-m2-l04
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n1
+    points: 3
+    prompt:
+      instruction_vi: Nghe phỏng vấn trên radio và chọn ý phù hợp với quan điểm của nhà nghiên cứu.
+      stem: 男の人の考えに合うものはどれですか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：先生は、睡眠が記憶に与える影響を研究しておられますね。
+        男の人：はい。実験の結果、勉強したあとに十分眠ったグループは、徹夜したグループより、翌日のテストの成績が約二割高かったんです。
+        女の人：では、直前に詰め込むのは効果的ではないということでしょうか。
+        男の人：まったく効果がないとは申しませんが、長く覚えておくことを考えると、睡眠を削るのは得策ではありませんね。
+      options:
+        - { id: a, text: "徹夜して勉強したほうが成績が上がる", lang: ja }
+        - { id: b, text: "詰め込み勉強にはまったく効果がない", lang: ja }
+        - { id: c, text: "十分に眠ったほうが長く覚えていられる", lang: ja }
+        - { id: d, text: "睡眠時間と成績は関係がない", lang: ja }
+    answer: c
+    explanation:
+      vi: "Nhà nghiên cứu nói nhóm ngủ đủ đạt điểm cao hơn khoảng 2 phần mười, và để nhớ lâu thì cắt giảm giấc ngủ là không khôn ngoan, nghĩa là c đúng. b là bẫy vì ông chỉ nói “まったく効果がないとは申しません” (không dám nói hoàn toàn vô hiệu)."
+
+  # --- Hiểu khái quát (概要理解) ---
+  - key: ja:examq:jlpt-n1-m2-l05
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_gist
+    level_code: n1
+    points: 3
+    prompt:
+      instruction_vi: Nghe bài nói và chọn ý chính.
+      stem: この人は何について話していますか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：地方の過疎化というと、人口が減るという問題ばかりが注目されがちです。しかし実際には、移住者を受け入れ、新しい産業を興した町もあります。重要なのは、人を増やすことそのものよりも、住民が主体的に町の将来を考え、行動できる仕組みを作ることではないでしょうか。
+      options:
+        - { id: a, text: "過疎化が進む理由", lang: ja }
+        - { id: b, text: "移住者を増やす具体的な方法", lang: ja }
+        - { id: c, text: "住民が主体的に動ける仕組みづくりの重要性", lang: ja }
+        - { id: d, text: "新しい産業の種類", lang: ja }
+    answer: c
+    explanation:
+      vi: "Người nói kết luận bằng câu hỏi tu từ rằng điều quan trọng không phải việc tăng dân số mà là tạo cơ chế để người dân chủ động nghĩ và hành động vì tương lai của thị trấn. b là bẫy vì nhắc đến người nhập cư nhưng người nói lùi nó xuống sau cơ chế."
+
+  # --- Nghe tổng hợp (統合理解) — tag jlpt_listen_point ---
+  - key: ja:examq:jlpt-n1-m2-l06
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_point
+    level_code: n1
+    points: 4
+    prompt:
+      instruction_vi: Nghe phần giới thiệu các địa điểm tập huấn và cuộc trao đổi của hai sinh viên, rồi chọn nơi họ quyết định.
+      stem: 二人はどこに決めましたか。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        幹事：八月の合宿の候補地は三か所です。A高原は、料金が最も安く、グラウンドもありますが、駅から車で一時間かかります。B海岸は、駅から徒歩十分で、砂浜でも練習できますが、八月は料金が高くなります。C温泉街は、料金は中くらいで、駅から無料のバスが出ていますが、練習できる場所は体育館しかありません。
+        男の人：今回は屋外で練習したいよね。体育館だけだと物足りないし。
+        女の人：うん。それと、予算が限られてるから、高いのは避けたいな。
+        男の人：移動は多少時間がかかっても、車を出せる人がいるから大丈夫だと思う。
+        女の人：じゃあ、決まりね。
+      options:
+        - { id: a, text: "A高原", lang: ja }
+        - { id: b, text: "B海岸", lang: ja }
+        - { id: c, text: "C温泉街", lang: ja }
+        - { id: d, text: "どこにも決めなかった", lang: ja }
+    answer: a
+    explanation:
+      vi: "Hai điều kiện: tập ngoài trời (loại C vì chỉ có nhà thi đấu) và tiết kiệm (loại B vì tháng 8 giá cao). Còn lại A cao nguyên rẻ nhất, có sân; bất tiện về di chuyển nhưng đã có người lái xe nên chấp nhận được. Dạng nghe tổng hợp cần loại trừ lần lượt theo điều kiện."
+
+  # --- Đáp lại ngay (即時応答) ---
+  - key: ja:examq:jlpt-n1-m2-l07
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n1
+    points: 2
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu đáp lại phù hợp.
+      stem: 正しい答えを選んでください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        女の人：お忙しいところ恐縮ですが、こちらの書類にご署名をいただけますでしょうか。
+      options:
+        - { id: a, text: "かしこまりました。どちらにお書きすればよろしいですか。", lang: ja }
+        - { id: b, text: "どういたしまして。お安いご用です。", lang: ja }
+        - { id: c, text: "私が署名なさいます。", lang: ja }
+    answer: a
+    explanation:
+      vi: "Lời nhờ ký tên lịch sự được nhận lời bằng “かしこまりました” kèm câu hỏi chỗ ký. b là lời đáp cho câu cảm ơn; c dùng sai kính ngữ vì なさる là tôn kính ngữ, không dùng cho hành động của chính mình."
+
+  - key: ja:examq:jlpt-n1-m2-l08
+    section: listening
+    kind: mcq
+    question_type: jlpt_listen_response
+    level_code: n1
+    points: 2
+    prompt:
+      instruction_vi: Nghe câu nói và chọn câu đáp lại phù hợp.
+      stem: 正しい答えを選んでください。
+      stem_lang: ja
+      audio_asset_id: null
+      script: |-
+        男の人：あの店の料理、値段のわりにおいしくなかったよ。
+      options:
+        - { id: a, text: "へえ、そうなんだ。じゃあ、行くのはやめておこうかな。", lang: ja }
+        - { id: b, text: "うん、値段が高いのにおいしくないなんて、最高だったね。", lang: ja }
+        - { id: c, text: "そうだね、値段が安いから、おいしいに決まってるよ。", lang: ja }
+    answer: a
+    explanation:
+      vi: "“値段のわりに” nghĩa là “so với giá thì…”, nên lời phàn nàn về món ăn đắt mà dở được đáp bằng sự tiếp nhận tự nhiên (vậy chắc tôi bỏ không đi). b khen “最高” trái với nội dung, c nói quán rẻ nên ngon, mâu thuẫn với lời phàn nàn."
+
+  # ============================== CHỮ – TỪ VỰNG – NGỮ PHÁP – ĐỌC (言語知識・読解) ==============================
+  # --- Đọc Kanji (漢字読み) ---
+  - key: ja:examq:jlpt-n1-m2-r01
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_reading
+    level_code: n1
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách đọc bằng Hiragana của từ trong ngoặc 【 】.
+      stem: 【 】の言葉の読み方として最もよいものを選んでください。
+      stem_lang: ja
+      passage: 必要な資金は寄付金で【賄う】予定だ。
+      options:
+        - { id: a, text: "まかなう", lang: ja }
+        - { id: b, text: "つぐなう", lang: ja }
+        - { id: c, text: "おぎなう", lang: ja }
+        - { id: d, text: "ひかなう", lang: ja }
+    answer: a
+    explanation:
+      vi: "賄う đọc là まかなう (xoay xở, chi trả bằng nguồn nào đó). つぐなう là 償う (đền bù), おぎなう là 補う (bổ sung): đều là động từ đuôi なう thật nên dễ nhầm; ひかなう không tồn tại."
+
+  - key: ja:examq:jlpt-n1-m2-r02
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_kanji_reading
+    level_code: n1
+    points: 1
+    prompt:
+      instruction_vi: Chọn cách đọc bằng Hiragana của từ trong ngoặc 【 】.
+      stem: 【 】の言葉の読み方として最もよいものを選んでください。
+      stem_lang: ja
+      passage: 台風の影響で、物流が【滞る】おそれがある。
+      options:
+        - { id: a, text: "とどこおる", lang: ja }
+        - { id: b, text: "とどまる", lang: ja }
+        - { id: c, text: "ためらう", lang: ja }
+        - { id: d, text: "さまたげる", lang: ja }
+    answer: a
+    explanation:
+      vi: "滞る đọc là とどこおる (bị đình trệ, ứ đọng). とどまる viết là 留まる/止まる (ở lại, dừng), ためらう là 躊躇う (do dự), さまたげる là 妨げる (cản trở) — các động từ có thật nhưng viết bằng chữ Hán khác."
+
+  # --- Từ hợp ngữ cảnh (文脈規定) ---
+  - key: ja:examq:jlpt-n1-m2-r03
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_vocab
+    level_code: n1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: （　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: 長年の努力が実を結び、ついに優勝という悲願が（　）した。
+      options:
+        - { id: a, text: "成就", lang: ja }
+        - { id: b, text: "完遂", lang: ja }
+        - { id: c, text: "達観", lang: ja }
+        - { id: d, text: "到達", lang: ja }
+    answer: a
+    explanation:
+      vi: "悲願が成就する nghĩa là nguyện vọng ấp ủ bấy lâu được thực hiện. 完遂 là hoàn thành trọn vẹn một nhiệm vụ (任務を完遂), 達観 là nhìn thấu sự đời, 到達 là đạt tới (một điểm, một mức)."
+
+  # --- Từ đồng nghĩa (言い換え類義) ---
+  - key: ja:examq:jlpt-n1-m2-r04
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_paraphrase
+    level_code: n1
+    points: 1
+    prompt:
+      instruction_vi: Chọn từ có nghĩa gần nhất với từ trong ngoặc 【 】.
+      stem: 【 】の言葉に意味が最も近いものを選んでください。
+      stem_lang: ja
+      passage: 部屋中を【くまなく】探したが、鍵は見つからなかった。
+      options:
+        - { id: a, text: "すみずみまで", lang: ja }
+        - { id: b, text: "ひそかに", lang: ja }
+        - { id: c, text: "あわてて", lang: ja }
+        - { id: d, text: "何度も", lang: ja }
+    answer: a
+    explanation:
+      vi: "くまなく (隈なく) nghĩa là “không bỏ sót một chỗ nào” = すみずみまで. ひそかに là lén lút, あわてて là vội vàng, 何度も là nhiều lần: đều nói về cách thức hoặc số lần chứ không nói về độ phủ."
+
+  # --- Cách dùng từ (用法) ---
+  - key: ja:examq:jlpt-n1-m2-r05
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_usage
+    level_code: n1
+    points: 1
+    prompt:
+      instruction_vi: Chọn câu dùng từ trong ngoặc 【 】 đúng nhất.
+      stem: 【ひたすら】の使い方として最もよいものを選んでください。
+      stem_lang: ja
+      options:
+        - { id: a, text: "彼は合格を目指して、ひたすら勉強を続けた。", lang: ja }
+        - { id: b, text: "ひたすらおいしいケーキを買って帰った。", lang: ja }
+        - { id: c, text: "昨日は一日中、ひたすら雨が降った。", lang: ja }
+        - { id: d, text: "彼は駅でひたすら友人に会った。", lang: ja }
+    answer: a
+    explanation:
+      vi: "ひたすら nghĩa là “một mực, chuyên tâm vào một việc”, đi với hành động kéo dài có chủ ý như học hành. b, d là việc làm một lần nên không cần “một mực”; c dùng cho mưa là không tự nhiên vì ひたすら mô tả thái độ của người làm."
+
+  # --- Ngữ pháp (文法形式の判断) ---
+  - key: ja:examq:jlpt-n1-m2-r06
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n1
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: 次の文の（　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: この問題は、解決を先送りにすれば、悪化する（　）だ。
+      options:
+        - { id: a, text: "一方", lang: ja }
+        - { id: b, text: "限り", lang: ja }
+        - { id: c, text: "以上", lang: ja }
+        - { id: d, text: "次第", lang: ja }
+    answer: a
+    explanation:
+      vi: "V (từ điển) + 一方だ nghĩa là “chỉ ngày càng… theo một hướng”: để mặc không giải quyết thì ngày càng tệ hơn. 限り (chừng nào còn), 以上 (một khi đã) và 次第 (tuỳ theo, ngay sau khi) không đi sau 悪化する để tạo nghĩa này."
+
+  - key: ja:examq:jlpt-n1-m2-r07
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n1
+    points: 2
+    prompt:
+      instruction_vi: Chọn từ phù hợp nhất để điền vào chỗ trống （　）.
+      stem: 次の文の（　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: 納期に間に合わせるためには、残業を（　）。
+      options:
+        - { id: a, text: "せざるを得ない", lang: ja }
+        - { id: b, text: "せずにはおかない", lang: ja }
+        - { id: c, text: "するまでもない", lang: ja }
+        - { id: d, text: "しかねない", lang: ja }
+    answer: a
+    explanation:
+      vi: "～ざるを得ない nghĩa là “đành phải…, không thể không…”: muốn kịp hạn thì đành phải làm thêm giờ (せざるを得ない với する). せずにはおかない mang nghĩa “nhất định sẽ gây ra” (chủ ngữ là sự việc), するまでもない là “không cần phải”, しかねない là “có nguy cơ”."
+
+  # --- Sắp xếp câu (文の組み立て) ---
+  - key: ja:examq:jlpt-n1-m2-r08
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_order
+    level_code: n1
+    points: 2
+    prompt:
+      instruction_vi: Sắp xếp bốn phương án thành câu đúng và chọn từ đứng ở vị trí ★.
+      stem: ★に入るものはどれですか。
+      stem_lang: ja
+      passage: 子どもの ＿＿ ＿＿ ★ ＿＿ ものはない。
+      options:
+        - { id: a, text: "笑顔ほど", lang: ja }
+        - { id: b, text: "人を", lang: ja }
+        - { id: c, text: "幸せに", lang: ja }
+        - { id: d, text: "する", lang: ja }
+    answer: c
+    explanation:
+      vi: "Câu đúng là “子どもの笑顔ほど人を幸せにするものはない” (không gì làm người ta hạnh phúc bằng nụ cười của trẻ con): mẫu ～ほど…ものはない dùng để nói “nhất”. Từ ở vị trí ★ (thứ ba) là 幸せに."
+
+  # --- Ngữ pháp trong đoạn văn (文章の文法) — tag jlpt_read_grammar ---
+  - key: ja:examq:jlpt-n1-m2-r09
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_grammar
+    level_code: n1
+    points: 2
+    prompt:
+      instruction_vi: Đọc đoạn văn và chọn từ nối phù hợp nhất để điền vào chỗ trống （　）.
+      stem: 文章の（　）に入れるのに最もよいものを選んでください。
+      stem_lang: ja
+      passage: |-
+        近年、在宅勤務を導入する企業が増えている。通勤の負担が減り、時間を有効に使えるという利点がある。（　）、同僚との雑談が減り、孤立感を抱く社員も少なくない。
+      options:
+        - { id: a, text: "その一方で", lang: ja }
+        - { id: b, text: "したがって", lang: ja }
+        - { id: c, text: "すなわち", lang: ja }
+        - { id: d, text: "なぜなら", lang: ja }
+    answer: a
+    explanation:
+      vi: "Câu trước nêu ưu điểm, câu sau nêu mặt trái, nên cần từ nối đối chiếu “その一方で” (mặt khác). したがって (do đó), すなわち (tức là) và なぜなら (bởi vì) đều không diễn tả sự đối lập giữa hai mặt."
+
+  # --- Đọc hiểu đoạn ngắn (内容理解・短文) ---
+  - key: ja:examq:jlpt-n1-m2-r10
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n1
+    points: 3
+    prompt:
+      instruction_vi: Đọc đoạn văn và trả lời câu hỏi.
+      stem: 筆者の先生が言いたいことはどれか。
+      stem_lang: ja
+      passage: |-
+        書道を習い始めて、最初に先生から言われたのは、「上手に書こうとするな」ということだった。上手に見せようとすると筆の動きが固くなり、かえって字がのびやかさを失う。他人の目を意識せずに書けるようになって初めて、字は書いた人の人柄を映すものになる、と先生は言う。
+      options:
+        - { id: a, text: "他人の目を意識して、丁寧に書くべきだ。", lang: ja }
+        - { id: b, text: "上手に見せようとするほど、字はよくなる。", lang: ja }
+        - { id: c, text: "他人の目を気にせず書くことで、字に人柄が表れる。", lang: ja }
+        - { id: d, text: "人柄が悪いと、書道は上達しない。", lang: ja }
+    answer: c
+    explanation:
+      vi: "Thầy nói chỉ khi viết mà không để ý ánh mắt người khác thì chữ mới phản ánh con người người viết (人柄を映す). a và b trái với lời dặn “上手に書こうとするな”; d thêm một quan hệ nhân quả mà đoạn văn không nói."
+
+  - key: ja:examq:jlpt-n1-m2-r11
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n1
+    points: 4
+    prompt:
+      instruction_vi: Đọc bản tin và trả lời câu hỏi.
+      stem: この記事の内容に合うものはどれか。
+      stem_lang: ja
+      passage: |-
+        ある自治体が、公共施設の予約システムを刷新した。従来は電話と窓口だけの受付だったため、平日昼間に連絡がつきにくい共働き世帯が利用しにくいという声があった。新システムではスマートフォンから24時間予約できるようになり、その結果、利用者は前年より三割増えた。一方で、高齢者からは「操作が難しい」という不満も寄せられ、市は窓口での操作支援を続けることにした。
+      options:
+        - { id: a, text: "システムの刷新に伴い、窓口での受付は廃止された。", lang: ja }
+        - { id: b, text: "利用者が増えたので、高齢者の不満はなくなった。", lang: ja }
+        - { id: c, text: "スマートフォンからの予約で利用者が増え、市は窓口での支援も続ける。", lang: ja }
+        - { id: d, text: "共働き世帯の利用者は減った。", lang: ja }
+    answer: c
+    explanation:
+      vi: "Bản tin nói người dùng tăng 3 phần 10 nhờ đặt qua điện thoại thông minh 24 giờ, và vì người cao tuổi thấy khó nên thành phố tiếp tục hỗ trợ tại quầy. a và b trái với bản tin; d trái với nguyên nhân của việc đổi hệ thống (để gia đình hai người đi làm dễ dùng)."
+
+  - key: ja:examq:jlpt-n1-m2-r12
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n1
+    points: 4
+    prompt:
+      instruction_vi: Đọc hai ý kiến A và B rồi trả lời câu hỏi.
+      stem: AとBの内容に合うものはどれか。
+      stem_lang: ja
+      passage: |-
+        A
+        週休三日制を導入する企業が増えている。働く時間が減ることで、社員の心身の健康が保たれ、結果的に生産性も上がるとされる。人材を確保する面でも、企業にとって利点は大きい。
+
+        B
+        週休三日制は、職種によっては現実的ではない。接客や医療のように、常に人手が必要な仕事では、休みを増やすと残った人の負担が重くなる。導入を進めるなら、職種ごとの事情を十分に考慮すべきだ。
+      options:
+        - { id: a, text: "AもBも、週休三日制に全面的に反対している。", lang: ja }
+        - { id: b, text: "Aは導入の利点を述べ、Bは職種によって難しいことを指摘している。", lang: ja }
+        - { id: c, text: "AもBも、生産性が下がると述べている。", lang: ja }
+        - { id: d, text: "Bは、人材確保の面での利点を述べている。", lang: ja }
+    answer: b
+    explanation:
+      vi: "A nêu lợi ích (sức khoẻ, năng suất, thu hút nhân lực), B chỉ ra rằng với nghề như tiếp khách, y tế thì khó áp dụng. Bẫy: B không phản đối hoàn toàn (vẫn nói “導入を進めるなら”), và chỉ A nhắc đến năng suất và nhân lực."
+
+  - key: ja:examq:jlpt-n1-m2-r13
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_detail
+    level_code: n1
+    points: 5
+    prompt:
+      instruction_vi: Đọc bài viết và chọn ý phù hợp nhất với quan điểm của tác giả.
+      stem: 筆者の考えに最も合うものはどれか。
+      stem_lang: ja
+      passage: |-
+        言葉は時代とともに変わる、と言われる。「全然」の後には否定が来るのが規範だとされてきたが、現在では「全然おいしい」のような肯定の用法も広く使われている。こうした変化を国語の乱れだと嘆く声は絶えない。
+        しかし、言葉の歴史を振り返れば、今日「正しい」とされる表現の多くが、かつては「乱れ」と批判されたものであることがわかる。「全然」にしても、明治期の文学作品には肯定の文脈での使用例が見られる。つまり、現在の規範は、ある時点での使い方が固定されたものにすぎない。
+        もちろん、変化を無条件に受け入れればよいというわけではない。言葉は相手に意味を伝えるための道具である以上、通じにくくなるような変化には慎重であるべきだ。だが、変化そのものを悪と決めつけるのではなく、なぜそう使われるようになったのかを考える姿勢こそが、言葉に対する成熟した態度といえるのではないか。
+      options:
+        - { id: a, text: "規範を守るため、言葉の変化はすべて拒否すべきだ。", lang: ja }
+        - { id: b, text: "通じやすさに配慮しつつ、変化の理由を考える態度が大切だ。", lang: ja }
+        - { id: c, text: "肯定の「全然」は誤りなので、使うべきではない。", lang: ja }
+        - { id: d, text: "言葉の変化は、無条件に受け入れるべきだ。", lang: ja }
+    answer: b
+    explanation:
+      vi: "Đoạn 3 chứa kết luận: không chấp nhận mọi thay đổi vô điều kiện (nên d sai), cần thận trọng với thay đổi làm khó hiểu, nhưng đừng coi thay đổi là xấu, hãy suy nghĩ vì sao nó xuất hiện. a và c bị đoạn 2 bác bỏ: quy phạm hiện nay chỉ là cách dùng được cố định ở một thời điểm."
+
+  # --- Tìm thông tin (情報検索) ---
+  - key: ja:examq:jlpt-n1-m2-r14
+    section: reading
+    kind: mcq
+    question_type: jlpt_read_info
+    level_code: n1
+    points: 4
+    prompt:
+      instruction_vi: Đọc hướng dẫn đăng ký và trả lời câu hỏi.
+      stem: 市内に住む70歳の人が3講座を申し込む場合、受講料は合計いくらになるか。
+      stem_lang: ja
+      passage: |-
+        さくら市民大学 秋期講座 受講案内
+        ・対象：市内に在住・在勤する18歳以上の方
+        ・受講料：1講座（全5回）5,000円
+        ・割引（併用できます）：
+        　①65歳以上の方は、1講座につき1,000円引き
+        　②2講座以上を同時に申し込む場合、2講座目以降は2割引
+        　※割引は、まず①を引いた金額に対して②を適用します。
+        ・申込期間：8月1日～8月20日（先着順）
+      options:
+        - { id: a, text: "10,000円", lang: ja }
+        - { id: b, text: "10,400円", lang: ja }
+        - { id: c, text: "11,000円", lang: ja }
+        - { id: d, text: "12,000円", lang: ja }
+    answer: b
+    explanation:
+      vi: "Áp dụng ① trước: mỗi khoá 5.000 − 1.000 = 4.000 yên. Rồi ② giảm 20% cho khoá thứ 2 và 3: 4.000 × 0,8 = 3.200 yên. Tổng = 4.000 + 3.200 + 3.200 = 10.400 yên. 10.000 là kết quả nếu áp ② trước rồi mới trừ ① (sai thứ tự theo ghi chú); 12.000 là nếu chỉ tính ①."

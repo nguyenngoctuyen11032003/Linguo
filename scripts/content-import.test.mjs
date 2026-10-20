@@ -1348,6 +1348,11 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     'ja:exam:jlpt-n3-mock-1': { listening: 8, reading: 14, time: { listening: 15, reading: 30 } },
     'ja:exam:jlpt-n2-mock-1': { listening: 8, reading: 14, time: { listening: 15, reading: 35 } },
     'ja:exam:jlpt-n1-mock-1': { listening: 8, reading: 14, time: { listening: 20, reading: 40 } },
+    'ja:exam:jlpt-n5-mock-2': { listening: 10, reading: 21, time: { listening: 15, reading: 30 } },
+    'ja:exam:jlpt-n4-mock-2': { listening: 10, reading: 21, time: { listening: 15, reading: 35 } },
+    'ja:exam:jlpt-n3-mock-2': { listening: 8, reading: 14, time: { listening: 15, reading: 30 } },
+    'ja:exam:jlpt-n2-mock-2': { listening: 8, reading: 14, time: { listening: 15, reading: 35 } },
+    'ja:exam:jlpt-n1-mock-2': { listening: 8, reading: 14, time: { listening: 20, reading: 40 } },
   };
   assert.deepEqual([...byKey.keys()].sort(), Object.keys(expected).sort());
   for (const [key, want] of Object.entries(expected)) {
@@ -1400,7 +1405,7 @@ test('real exam forms: sizes, sections, time limits, scoring and question types 
     assert.ok(count(goethe, 'writing', 'essay') >= 1, `${key} essay`);
   }
   // JLPT (jlpt.jp): total 0–180, language knowledge · reading folded into `reading` (120), one pass band per form.
-  for (const [key, level, pass] of [['ja:exam:jlpt-n5-mock-1', 'n5', 80], ['ja:exam:jlpt-n4-mock-1', 'n4', 90], ['ja:exam:jlpt-n3-mock-1', 'n3', 95], ['ja:exam:jlpt-n2-mock-1', 'n2', 90], ['ja:exam:jlpt-n1-mock-1', 'n1', 100]]) {
+  for (const [key, level, pass] of [['ja:exam:jlpt-n5-mock-1', 'n5', 80], ['ja:exam:jlpt-n4-mock-1', 'n4', 90], ['ja:exam:jlpt-n3-mock-1', 'n3', 95], ['ja:exam:jlpt-n2-mock-1', 'n2', 90], ['ja:exam:jlpt-n1-mock-1', 'n1', 100], ['ja:exam:jlpt-n5-mock-2', 'n5', 80], ['ja:exam:jlpt-n4-mock-2', 'n4', 90], ['ja:exam:jlpt-n3-mock-2', 'n3', 95], ['ja:exam:jlpt-n2-mock-2', 'n2', 90], ['ja:exam:jlpt-n1-mock-2', 'n1', 100]]) {
     const jlpt = byKey.get(key);
     assert.equal(count(jlpt, 'writing'), 0, `${key} writing`);
     assert.deepEqual(jlpt.scoring.section_max, { listening: 60, reading: 120 }, `${key} section_max`);
