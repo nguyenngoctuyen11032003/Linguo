@@ -1,0 +1,887 @@
+# Học liệu unit "Gia đình, con người và nghề nghiệp" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u10-chichi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 父
+      reading: ちち
+      romanization: chichi
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố (của mình) - dùng khi nói với người ngoài về bố mình
+      examples:
+        - target: ちちはかいしゃいんです。
+          translation:
+            vi: Bố tôi là nhân viên công ty.
+      confusion:
+        vi: Gọi bố mình trực tiếp hoặc nói về bố người khác thì dùng おとうさん, không dùng ちち.
+  - key: ja:item:n5-u10-haha
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 母
+      reading: はは
+      romanization: haha
+      pos: danh từ
+    back:
+      meaning:
+        vi: mẹ (của mình) - dùng khi nói với người ngoài về mẹ mình
+      examples:
+        - target: はははせんせいです。
+          translation:
+            vi: Mẹ tôi là giáo viên.
+  - key: ja:item:n5-u10-ani
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 兄
+      reading: あに
+      romanization: ani
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh trai (của mình)
+      examples:
+        - target: あにはおおさかにいます。
+          translation:
+            vi: Anh trai tôi ở Osaka.
+  - key: ja:item:n5-u10-ane
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 姉
+      reading: あね
+      romanization: ane
+      pos: danh từ
+    back:
+      meaning:
+        vi: chị gái (của mình)
+      examples:
+        - target: あねはがくせいです。
+          translation:
+            vi: Chị gái tôi là sinh viên.
+  - key: ja:item:n5-u10-otouto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 弟
+      reading: おとうと
+      romanization: otouto
+      pos: danh từ
+    back:
+      meaning:
+        vi: em trai (của mình)
+      examples:
+        - target: おとうとがひとりいます。
+          translation:
+            vi: Tôi có một em trai.
+      confusion:
+        vi: おとうと (em trai) và いもうと (em gái) chỉ khác hai chữ đầu - hãy đọc chậm từng chữ.
+  - key: ja:item:n5-u10-imouto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 妹
+      reading: いもうと
+      romanization: imouto
+      pos: danh từ
+    back:
+      meaning:
+        vi: em gái (của mình)
+      examples:
+        - target: いもうとはにじゅっさいです。
+          translation:
+            vi: Em gái tôi hai mươi tuổi.
+  - key: ja:item:n5-u10-ryoushin
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 両親
+      reading: りょうしん
+      romanization: ryoushin
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố mẹ, cha mẹ (cả hai người)
+      examples:
+        - target: りょうしんはハノイにいます。
+          translation:
+            vi: Bố mẹ tôi ở Hà Nội.
+  - key: ja:item:n5-u10-kyoudai
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 兄弟
+      reading: きょうだい
+      romanization: kyoudai
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh chị em (trong nhà)
+      examples:
+        - target: きょうだいがさんにんいます。
+          translation:
+            vi: Tôi có ba anh chị em.
+      pronunciation_note:
+        vi: きょう kéo dài một nhịp - きょ + う. Chữ Hán 兄弟 dùng cho cả anh chị em gái.
+  - key: ja:item:n5-u10-kodomo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 子ども
+      reading: こども
+      romanization: kodomo
+      pos: danh từ
+    back:
+      meaning:
+        vi: con cái; trẻ em
+      examples:
+        - target: こどもがふたりいます。
+          translation:
+            vi: Tôi có hai đứa con.
+  - key: ja:item:n5-u10-otousan-okaasan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: お父さん / お母さん
+      reading: おとうさん / おかあさん
+      romanization: otousan / okaasan
+      pos: danh từ
+    back:
+      meaning:
+        vi: bố / mẹ - gọi trực tiếp hoặc nói về bố mẹ của người khác
+      examples:
+        - target: おとうさんはおげんきですか。
+          translation:
+            vi: Bố bạn có khỏe không ạ?
+  - key: ja:item:n5-u10-oniisan-oneesan
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: お兄さん / お姉さん
+      reading: おにいさん / おねえさん
+      romanization: oniisan / oneesan
+      pos: danh từ
+    back:
+      meaning:
+        vi: anh / chị - gọi hoặc nói về anh chị của người khác
+      examples:
+        - target: おねえさんはいくつですか。
+          translation:
+            vi: Chị của bạn bao nhiêu tuổi vậy?
+      pronunciation_note:
+        vi: "おにいさん và おねえさん có trường âm: ii và ee (viết え + え)."
+  - key: ja:item:n5-u10-ojiisan-obaasan
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: おじいさん / おばあさん
+      romanization: ojiisan / obaasan
+      pos: danh từ
+    back:
+      meaning:
+        vi: ông / bà (của mình hoặc của người khác); người già nói chung
+      examples:
+        - target: おばあさんはげんきです。
+          translation:
+            vi: Bà vẫn khỏe.
+      confusion:
+        vi: おじいさん (ông, trường âm ii) khác おじさん (chú, bác); おばあさん (bà) khác おばさん (cô, dì) - chỉ hai nhịp ii/aa khác nhau.
+  - key: ja:item:n5-u10-otokonohito
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 男の人
+      reading: おとこのひと
+      romanization: otoko no hito
+      pos: danh từ
+    back:
+      meaning:
+        vi: người đàn ông, đàn ông (lịch sự hơn おとこ)
+      examples:
+        - target: あのおとこのひとはだれですか。
+          translation:
+            vi: Người đàn ông kia là ai?
+  - key: ja:item:n5-u10-onnanohito
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 女の人
+      reading: おんなのひと
+      romanization: onna no hito
+      pos: danh từ
+    back:
+      meaning:
+        vi: người phụ nữ, phụ nữ (lịch sự hơn おんな)
+      examples:
+        - target: おんなのひとがバスをまっています。
+          translation:
+            vi: Một người phụ nữ đang đợi xe buýt.
+      confusion:
+        vi: Dùng おとこのひと / おんなのひと khi chỉ người; おとこ, おんな đứng một mình nghe thô.
+  - key: ja:item:n5-u10-otona
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大人
+      reading: おとな
+      romanization: otona
+      pos: danh từ
+    back:
+      meaning:
+        vi: người lớn
+      examples:
+        - target: おとなはひゃくえんです。
+          translation:
+            vi: Người lớn là một trăm yên.
+  - key: ja:item:n5-u10-akachan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 赤ちゃん
+      reading: あかちゃん
+      romanization: akachan
+      pos: danh từ
+    back:
+      meaning:
+        vi: em bé, trẻ sơ sinh
+      examples:
+        - target: あかちゃんがねています。
+          translation:
+            vi: Em bé đang ngủ.
+  - key: ja:item:n5-u10-kare
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 彼
+      reading: かれ
+      romanization: kare
+      pos: đại từ
+    back:
+      meaning:
+        vi: anh ấy; bạn trai
+      examples:
+        - target: かれはにほんじんです。
+          translation:
+            vi: Anh ấy là người Nhật.
+      confusion:
+        vi: かれ cũng có thể là "bạn trai"; ngữ cảnh cho biết nghĩa.
+  - key: ja:item:n5-u10-kanojo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 彼女
+      reading: かのじょ
+      romanization: kanojo
+      pos: đại từ
+    back:
+      meaning:
+        vi: cô ấy; bạn gái
+      examples:
+        - target: かのじょはせんせいです。
+          translation:
+            vi: Cô ấy là giáo viên.
+  - key: ja:item:n5-u10-anata
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: あなた
+      romanization: anata
+      pos: đại từ
+    back:
+      meaning:
+        vi: bạn (ngôi thứ hai) - ít dùng, thường gọi bằng tên + さん
+      examples:
+        - target: あなたはがくせいですか。
+          translation:
+            vi: Bạn là sinh viên à?
+      confusion:
+        vi: Gọi người lạ hay người trên bằng あなた nghe thiếu lịch sự; dùng tên + さん hoặc すみません.
+  - key: ja:item:n5-u10-minasan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: みなさん
+      romanization: minasan
+      pos: danh từ
+    back:
+      meaning:
+        vi: mọi người, các bạn (dùng với một nhóm)
+      examples:
+        - target: みなさん、おはようございます。
+          translation:
+            vi: Chào buổi sáng mọi người.
+  - key: ja:item:n5-u10-wakai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 若い
+      reading: わかい
+      romanization: wakai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: trẻ (tuổi)
+      examples:
+        - target: かれはまだわかいです。
+          translation:
+            vi: Anh ấy vẫn còn trẻ.
+  - key: ja:item:n5-u10-yasashii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 優しい
+      reading: やさしい
+      romanization: yasashii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: hiền, dịu dàng, tốt bụng
+      examples:
+        - target: わたしのあねはやさしいです。
+          translation:
+            vi: Chị gái tôi hiền.
+      confusion:
+        vi: やさしい còn là 易しい (dễ). Hai từ đọc giống nhau; ngữ cảnh (người hay bài tập) cho biết nghĩa.
+  - key: ja:item:n5-u10-omoshiroi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 面白い
+      reading: おもしろい
+      romanization: omoshiroi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: thú vị, vui tính, hay
+      examples:
+        - target: このえいがはおもしろいです。
+          translation:
+            vi: Bộ phim này hay.
+  - key: ja:item:n5-u10-seigatakai
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 背が高い
+      reading: せがたかい
+      romanization: se ga takai
+      pos: cụm từ
+    back:
+      meaning:
+        vi: cao (nói về người) - nghĩa đen "dáng cao"
+      examples:
+        - target: おとうとはせがたかいです。
+          translation:
+            vi: Em trai tôi cao.
+  - key: ja:item:n5-u10-tenin
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 店員
+      reading: てんいん
+      romanization: tenin
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên cửa hàng
+      examples:
+        - target: てんいんはしんせつです。
+          translation:
+            vi: Nhân viên cửa hàng rất thân thiện.
+  - key: ja:item:n5-u10-ginkouin
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 銀行員
+      reading: ぎんこういん
+      romanization: ginkouin
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên ngân hàng
+      examples:
+        - target: あねはぎんこういんです。
+          translation:
+            vi: Chị gái tôi là nhân viên ngân hàng.
+  - key: ja:item:n5-u10-keikan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 警官
+      reading: けいかん
+      romanization: keikan
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảnh sát
+      examples:
+        - target: けいかんはこうえんにいます。
+          translation:
+            vi: Cảnh sát đang ở công viên.
+  - key: ja:item:n5-u10-kashu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 歌手
+      reading: かしゅ
+      romanization: kashu
+      pos: danh từ
+    back:
+      meaning:
+        vi: ca sĩ
+      examples:
+        - target: いもうとはかしゅになりたいです。
+          translation:
+            vi: Em gái tôi muốn trở thành ca sĩ.
+  - key: ja:item:n5-u10-shufu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 主婦
+      reading: しゅふ
+      romanization: shufu
+      pos: danh từ
+    back:
+      meaning:
+        vi: người nội trợ (chủ yếu là phụ nữ)
+      examples:
+        - target: はははしゅふです。
+          translation:
+            vi: Mẹ tôi là nội trợ.
+  - key: ja:item:n5-u10-shougakusei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 小学生
+      reading: しょうがくせい
+      romanization: shougakusei
+      pos: danh từ
+    back:
+      meaning:
+        vi: học sinh tiểu học
+      examples:
+        - target: しょうがくせいはろくさいからです。
+          translation:
+            vi: Học sinh tiểu học bắt đầu từ sáu tuổi.
+      pronunciation_note:
+        vi: しょう kéo dài một nhịp (shou). がく đọc ngắn.
+  - key: ja:item:n5-u10-chuugakusei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 中学生
+      reading: ちゅうがくせい
+      romanization: chuugakusei
+      pos: danh từ
+    back:
+      meaning:
+        vi: học sinh trung học cơ sở (cấp hai)
+      examples:
+        - target: おとうとはちゅうがくせいです。
+          translation:
+            vi: Em trai tôi là học sinh cấp hai.
+  - key: ja:item:n5-u10-koukousei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 高校生
+      reading: こうこうせい
+      romanization: koukousei
+      pos: danh từ
+    back:
+      meaning:
+        vi: học sinh trung học phổ thông (cấp ba)
+      examples:
+        - target: いもうとはこうこうせいです。
+          translation:
+            vi: Em gái tôi là học sinh cấp ba.
+  - key: ja:item:n5-u10-daigakusei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大学生
+      reading: だいがくせい
+      romanization: daigakusei
+      pos: danh từ
+    back:
+      meaning:
+        vi: sinh viên đại học
+      examples:
+        - target: わたしはだいがくせいです。
+          translation:
+            vi: Tôi là sinh viên đại học.
+  - key: ja:item:n5-u10-ryuugakusei
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 留学生
+      reading: りゅうがくせい
+      romanization: ryuugakusei
+      pos: danh từ
+    back:
+      meaning:
+        vi: du học sinh
+      examples:
+        - target: かれはりゅうがくせいです。
+          translation:
+            vi: Anh ấy là du học sinh.
+  - key: ja:item:n5-u10-oshigoto
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: お仕事は何ですか
+      reading: おしごとはなんですか
+      romanization: oshigoto wa nan desu ka
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Công việc của bạn là gì? (cách hỏi nghề lịch sự)
+      examples:
+        - target: おしごとはなんですか。- ぎんこういんです。
+          translation:
+            vi: Công việc của bạn là gì? - Tôi là nhân viên ngân hàng.
+  - key: ja:item:n5-u10-sai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 歳
+      reading: さい
+      romanization: sai
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: 〜tuổi (đếm tuổi)
+      examples:
+        - target: わたしはにじゅうごさいです。
+          translation:
+            vi: Tôi 25 tuổi.
+      pronunciation_note:
+        vi: いっさい (1), はっさい (8), じゅっさい (10) đọc đặc biệt; còn lại - 数 + さい.
+  - key: ja:item:n5-u10-nansai
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 何歳 / おいくつ
+      reading: なんさい / おいくつ
+      romanization: nansai / oikutsu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Mấy tuổi? - なんさい cho trẻ em và người ngang tuổi; おいくつ lịch sự hơn
+      examples:
+        - target: おいくつですか。- にじゅうごさいです。
+          translation:
+            vi: Bạn bao nhiêu tuổi ạ? - Tôi 25 tuổi.
+  - key: ja:item:n5-u10-hatachi
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 二十歳
+      reading: はたち
+      romanization: hatachi
+      pos: danh từ
+    back:
+      meaning:
+        vi: 20 tuổi (cách nói đặc biệt)
+      examples:
+        - target: あにははたちです。
+          translation:
+            vi: Anh trai tôi 20 tuổi.
+  - key: ja:item:n5-u10-umaremasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 生まれます
+      reading: うまれます
+      romanization: umaremasu
+      pos: động từ
+    back:
+      meaning:
+        vi: được sinh ra
+      examples:
+        - target: わたしはハノイでうまれました。
+          translation:
+            vi: Tôi sinh ra ở Hà Nội.
+  - key: ja:item:n5-u10-kotoshi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 今年
+      reading: ことし
+      romanization: kotoshi
+      pos: danh từ
+    back:
+      meaning:
+        vi: năm nay
+      examples:
+        - target: ことしはにじゅうごさいです。
+          translation:
+            vi: Năm nay tôi 25 tuổi.
+  - key: ja:item:n5-u10-kyonen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 去年
+      reading: きょねん
+      romanization: kyonen
+      pos: danh từ
+    back:
+      meaning:
+        vi: năm ngoái
+      examples:
+        - target: きょねんにほんへいきました。
+          translation:
+            vi: Năm ngoái tôi đã đến Nhật.
+  - key: ja:item:n5-u10-rainen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 来年
+      reading: らいねん
+      romanization: rainen
+      pos: danh từ
+    back:
+      meaning:
+        vi: năm sau, sang năm
+      examples:
+        - target: らいねんにほんへいきます。
+          translation:
+            vi: Sang năm tôi sẽ đi Nhật.
+  - key: ja:item:n5-u10-toshi
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 年
+      reading: とし
+      romanization: toshi
+      pos: danh từ
+    back:
+      meaning:
+        vi: năm; tuổi (cách nói chung)
+      examples:
+        - target: としはいくつですか。
+          translation:
+            vi: Bạn bao nhiêu tuổi?
+      confusion:
+        vi: 年 đọc とし (năm, tuổi) khi đứng riêng; đọc ねん khi đếm năm (ごねん, 2025ねん).
+  - key: ja:item:n5-u10-omedetou
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: おめでとうございます
+      romanization: omedetou gozaimasu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Chúc mừng! (dùng cho sinh nhật, đỗ đạt, kết hôn...)
+      examples:
+        - target: おたんじょうび、おめでとうございます。
+          translation:
+            vi: Chúc mừng sinh nhật.
+  - key: ja:item:n5-u10-donna
+    type: grammar_point
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - grammar
+    front:
+      text: どんな + N ですか
+      romanization: donna N desu ka
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: N thuộc loại thế nào? - hỏi tính cách, đặc điểm của người hoặc vật. Trả lời bằng tính từ hoặc mô tả ngắn.
+      examples:
+        - target: あのひとはどんなひとですか。- やさしいひとです。
+          translation:
+            vi: Người đó là người thế nào? - Là người hiền.
+        - target: どんなくだものがすきですか。
+          translation:
+            vi: Bạn thích loại trái cây nào?
+      confusion:
+        vi: どんな hỏi loại, tính chất; どれ hỏi chọn trong số có sẵn; だれ hỏi ai.
+  - key: ja:item:n5-u10-wa-ga-adj
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - grammar
+    front:
+      text: N1 は N2 が Aい / Naです
+      romanization: N1 wa N2 ga A desu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: N1 (chủ đề) có đặc điểm N2 là A - nói về một bộ phận hay đặc điểm của chủ đề. Ví dụ ぞうは はなが ながいです (Con voi mũi dài).
+      examples:
+        - target: あのひとはせがたかいです。
+          translation:
+            vi: Người đó cao.
+        - target: ベトナムはたべものがおいしいです。
+          translation:
+            vi: Ở Việt Nam đồ ăn ngon.
+      confusion:
+        vi: Chủ đề は nêu cả đối tượng, が nêu bộ phận hay đặc điểm cụ thể. Không đảo hai danh từ.
+  - key: ja:item:n5-u10-kyoudai-imasuka
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: ご兄弟はいますか
+      reading: ごきょうだいはいますか
+      romanization: gokyoudai wa imasu ka
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Bạn có anh chị em không? (cách hỏi lịch sự)
+      examples:
+        - target: ごきょうだいはいますか。- はい、あにがひとりいます。
+          translation:
+            vi: Bạn có anh chị em không? - Có, tôi có một anh trai.

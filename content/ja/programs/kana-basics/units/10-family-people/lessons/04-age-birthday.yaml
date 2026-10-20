@@ -1,0 +1,398 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:age-birthday
+order_index: 4
+level: n5
+title:
+  vi: Tuổi và sinh nhật - なんさい・たんじょうび
+objectives:
+  - vi: Hỏi và nói tuổi bằng なんさい, おいくつ và ～さい (kể cả はたち).
+  - vi: Nói và hỏi ngày sinh bằng たんじょうび và ～がつ～にち.
+  - vi: Chúc mừng sinh nhật và nói năm - ことし, きょねん, らいねん.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:jobs-school
+items:
+  - item: ja:item:n5-u10-sai
+  - item: ja:item:n5-u10-nansai
+  - item: ja:item:n4-tanjoubi
+    role: reuse
+  - item: ja:item:n5-u10-hatachi
+  - item: ja:item:n5-u10-umaremasu
+  - item: ja:item:n5-u10-kotoshi
+  - item: ja:item:n5-u10-kyonen
+  - item: ja:item:n5-u10-rainen
+  - item: ja:item:n5-u10-toshi
+  - item: ja:item:n5-u10-omedetou
+  - item: ja:item:gatsu-months
+    role: reuse
+  - item: ja:item:nangatsu-nannichi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói tuổi mình - わたしはにじゅうごさいです。- hỏi tuổi và sinh nhật của người khác, và nói わたしのたんじょうびは５がつ３にちです。
+  - type: explain
+    text:
+      vi: "Tuổi đếm bằng ～さい (歳): いっさい (1), にさい (2), さんさい (3), ごさい (5), じゅっさい (10), にじゅっさい (20). Riêng 20 tuổi có từ đặc biệt はたち, không nói にじゅっさい khi nói về tuổi trưởng thành."
+  - type: explain
+    text:
+      vi: Hỏi tuổi - なんさいですか (trẻ em, người ngang tuổi) hoặc おいくつですか (lịch sự hơn, dùng với người lớn). Trả lời - にじゅうごさいです.
+  - type: explain
+    text:
+      vi: Ngày sinh - たんじょうび. Hỏi - たんじょうびはいつですか。 Trả lời - ８がつ１５にちです. Năm đặt trước tháng - ことし (năm nay), きょねん (năm ngoái), らいねん (năm sau).
+  - type: deep_explain
+    text:
+      vi: 'Một số tuổi đọc đặc biệt: いっさい (1), はっさい (8), じゅっさい (10), にじゅっさい hoặc はたち (20). Người lớn tuổi hơn mình hỏi tuổi là おいくつ; hỏi phụ nữ lớn tuổi thường tế nhị tránh hỏi. うまれます dùng cho "được sinh ra" - ベトナムでうまれました (Tôi sinh ra ở Việt Nam), thì quá khứ vì sự việc đã xảy ra.'
+  - type: example
+    target: おいくつですか。- にじゅうごさいです。
+    target_lang: ja
+    translation:
+      vi: Bạn bao nhiêu tuổi vậy ạ? - Tôi 25 tuổi.
+    note:
+      vi: おいくつ - cách hỏi tuổi lịch sự.
+  - type: example
+    target: たんじょうびはいつですか。- ５がつ３にちです。
+    target_lang: ja
+    translation:
+      vi: Sinh nhật bạn là khi nào? - Ngày 3 tháng 5.
+    note:
+      vi: いつ - khi nào; ５がつ３にち - ngày 3 tháng 5.
+  - type: example
+    target: わたしはハノイでうまれました。
+    target_lang: ja
+    translation:
+      vi: Tôi sinh ra ở Hà Nội.
+    note:
+      vi: うまれました - đã được sinh ra (quá khứ).
+  - type: example
+    target: おたんじょうび、おめでとうございます。
+    target_lang: ja
+    translation:
+      vi: Chúc mừng sinh nhật.
+    note:
+      vi: おめでとうございます - lời chúc mừng lịch sự.
+  - type: common_mistake
+    wrong: わたしはにじゅっさいです。(20 tuổi, nói tuổi trưởng thành)
+    right: わたしははたちです。
+    target_lang: ja
+    note:
+      vi: Tuổi 20 thường nói はたち; にじゅっさい vẫn đúng nhưng nghe như đếm số.
+  - type: common_mistake
+    wrong: ベトナムでうまれます。(Tôi sinh ra ở Việt Nam)
+    right: ベトナムでうまれました。
+    target_lang: ja
+    note:
+      vi: Sự việc sinh ra đã xảy ra trong quá khứ nên dùng うまれました.
+  - type: summary
+    points:
+      - vi: "～さい tuổi: いっさい · はっさい · じゅっさい · はたち (20)."
+      - vi: なんさいですか / おいくつですか - hỏi tuổi.
+      - vi: たんじょうびはいつですか - ５がつ３にちです.
+      - vi: ことし năm nay · きょねん năm ngoái · らいねん năm sau · うまれました đã sinh ra.
+exercises:
+  - key: ja:exercise:age-birthday-hatachi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-hatachi
+    prompt:
+      stem: Từ nào có nghĩa là “20 tuổi”?
+      stem_lang: vi
+      options:
+        - id: t15
+          text: はっさい
+          lang: ja
+        - id: zva
+          text: はたち
+          lang: ja
+        - id: uyh
+          text: じゅっさい
+          lang: ja
+        - id: qdm
+          text: にさい
+          lang: ja
+    answer:
+      correct_option_id: zva
+    explanation:
+      vi: はたち là 20 tuổi - cách đọc đặc biệt. にさい là 2 tuổi, じゅっさい là 10 tuổi, はっさい là 8 tuổi.
+    display_answer: はたち
+  - key: ja:exercise:age-birthday-oikutsu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-nansai
+    prompt:
+      stem: Bạn muốn hỏi tuổi một người lớn một cách lịch sự. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: xft
+          text: なんにんですか。
+          lang: ja
+        - id: tz1
+          text: なんじですか。
+          lang: ja
+        - id: x49
+          text: おいくつですか。
+          lang: ja
+        - id: ies
+          text: いくらですか。
+          lang: ja
+    answer:
+      correct_option_id: x49
+    explanation:
+      vi: おいくつですか hỏi tuổi lịch sự. なんにん hỏi số người, いくら hỏi giá, なんじ hỏi giờ.
+    display_answer: おいくつですか。
+  - key: ja:exercise:age-birthday-tanjoubi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n4-tanjoubi
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしのたんじょうびは８がつ１５にちです。
+      options:
+        - id: nfy
+          text: Sinh nhật tôi là ngày 8 tháng 5.
+          lang: vi
+        - id: u7y
+          text: Sinh nhật tôi là ngày 5 tháng 8.
+          lang: vi
+        - id: tfl
+          text: Sinh nhật tôi là ngày 15 tháng 5.
+          lang: vi
+        - id: b3l
+          text: Sinh nhật tôi là ngày 15 tháng 8.
+          lang: vi
+    answer:
+      correct_option_id: b3l
+    explanation:
+      vi: ８がつ là tháng 8, １５にち là ngày 15. Tiếng Nhật nói tháng trước, ngày sau.
+    display_answer: Sinh nhật tôi là ngày 15 tháng 8.
+  - key: ja:exercise:age-birthday-rainen
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-rainen
+    prompt:
+      template: わたしは{{b1}}にほんへいきます。 (Năm sau tôi sẽ đi Nhật.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Năm sau.
+        - Bắt đầu bằng ら - らいねん.
+    answer:
+      blanks:
+        b1:
+          - らいねん
+          - 来年
+    known_wrong:
+      - answer: きょねん
+        feedback_vi: きょねん là năm ngoái; năm sau là らいねん.
+        error_tag: time_word
+      - answer: ことし
+        feedback_vi: ことし là năm nay.
+        error_tag: time_word
+    explanation:
+      vi: "らいねん là năm sau. Cấu trúc: thời gian + N へ いきます."
+    display_answer: わたしはらいねんにほんへいきます。
+  - key: ja:exercise:age-birthday-omedetou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-omedetou
+    prompt:
+      stem: Hôm nay là sinh nhật bạn của bạn. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - id: dpd
+          text: いってきます。
+          lang: ja
+        - id: foh
+          text: おたんじょうび、おめでとうございます。
+          lang: ja
+        - id: v1y
+          text: おやすみなさい。
+          lang: ja
+        - id: f7c
+          text: ごちそうさまでした。
+          lang: ja
+    answer:
+      correct_option_id: foh
+    explanation:
+      vi: おめでとうございます là lời chúc mừng. ごちそうさまでした nói sau bữa ăn, いってきます nói khi rời nhà, おやすみなさい là chúc ngủ ngon.
+    display_answer: おたんじょうび、おめでとうございます。
+  - key: ja:exercise:age-birthday-sai-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-sai
+    prompt:
+      template: いもうとは{{b1}}です。 (Em gái tôi mười tuổi.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - じゅっさい
+          - 十歳
+          - 10さい
+          - １０さい
+          - 10歳
+          - １０歳
+    known_wrong:
+      - answer: じっさい
+        feedback_vi: Đọc じゅっさい (っ nhỏ, âm ngắt); じっさい là "thực tế".
+        error_tag: reading
+    explanation:
+      vi: じゅっさい - 10 tuổi, cách đọc đặc biệt (じゅう + さい biến thành じゅっさい).
+    display_answer: いもうとはじゅっさいです。
+  - key: ja:exercise:age-birthday-hatachi-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-hatachi
+    prompt:
+      source_text: Anh trai tôi 20 tuổi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あにははたちです。
+        - 兄は二十歳です。
+        - わたしのあにははたちです。
+        - 兄は二十歳です
+        - あにはにじゅっさいです。
+    known_wrong:
+      - answer: あにはにさいです。
+        feedback_vi: にさい là 2 tuổi, không phải 20.
+        error_tag: age
+      - answer: いもうとははたちです。
+        feedback_vi: いもうと là em gái; anh trai là あに.
+        error_tag: family_term
+    explanation:
+      vi: はたち là 20 tuổi. Anh trai của mình nói với người ngoài là あに.
+    display_answer: あにははたちです。
+  - key: ja:exercise:age-birthday-umare-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-umaremasu
+    prompt:
+      source_text: Tôi sinh ra ở Hà Nội.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしはハノイでうまれました。
+        - ハノイでうまれました。
+        - わたしはハノイで生まれました。
+        - ハノイで生まれました。
+    known_wrong:
+      - answer: わたしはハノイでうまれます。
+        feedback_vi: Sinh ra đã xảy ra rồi nên dùng thì quá khứ うまれました.
+        error_tag: tense
+      - answer: わたしはハノイにうまれました。
+        feedback_vi: Với nơi chốn sinh ra, người Nhật dùng で.
+        error_tag: particle_ni_de
+    explanation:
+      vi: うまれます - được sinh ra; quá khứ うまれました. Nơi chốn sinh ra dùng で.
+    display_answer: わたしはハノイでうまれました。
+  - key: ja:exercise:age-birthday-tanjoubi-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-tanjoubi
+    prompt:
+      source_text: たんじょうびはいつですか。- ３がつ２０にちです。わたしははたちです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sinh nhật bạn là khi nào? - Ngày 20 tháng 3. Tôi 20 tuổi.
+        - Sinh nhật bạn là lúc nào? - Ngày 20 tháng 3. Tôi hai mươi tuổi.
+        - Sinh nhật bạn khi nào? - Ngày 20 tháng 3. Tôi đã 20 tuổi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sinh nhật bạn là khi nào? - Ngày 3 tháng 20. Tôi 20 tuổi.
+        feedback_vi: "Tiếng Nhật nói tháng rồi mới đến ngày: ３がつ２０にち là ngày 20 tháng 3."
+        error_tag: date_order
+    explanation:
+      vi: いつ - khi nào; はたち - 20 tuổi. Ngày tháng nói tháng trước, ngày sau.
+    display_answer: Sinh nhật bạn là khi nào? - Ngày 20 tháng 3. Tôi 20 tuổi.
+  - key: ja:exercise:age-birthday-rainen-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-rainen
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Sang năm tôi sẽ đi Nhật."'
+      tokens:
+        - id: t4
+          text: いきます。
+        - id: t2
+          text: らいねん
+        - id: t3
+          text: にほんへ
+        - id: t1
+          text: わたしは
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+        - - t2
+          - t1
+          - t3
+          - t4
+    explanation:
+      vi: Chủ đề → thời điểm (らいねん) → nơi đến (にほんへ) → động từ cuối câu. Thời điểm có thể đứng trước hoặc sau わたしは.
+    display_answer: わたしはらいねんにほんへいきます。
+  - key: ja:exercise:age-birthday-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-nansai
+    prompt:
+      stem: Một em bé bốn tuổi hỏi bạn tuổi. Em bé hỏi “Anh/chị mấy tuổi?” bằng câu nào?
+      stem_lang: vi
+      options:
+        - id: mwd
+          text: なんさいですか。
+          lang: ja
+        - id: x1r
+          text: なんにんですか。
+          lang: ja
+        - id: fmj
+          text: おいくつですか。
+          lang: ja
+        - id: uf5
+          text: いくらですか。
+          lang: ja
+    answer:
+      correct_option_id: mwd
+    explanation:
+      vi: Với trẻ em và bạn bè ngang tuổi hay dùng なんさい. おいくつ lịch sự hơn, dùng với người lớn. なんにん hỏi số người, いくら hỏi giá.
+    display_answer: なんさいですか。

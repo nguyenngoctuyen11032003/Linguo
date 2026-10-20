@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:people-describing
+order_index: 2
+level: n5
+title:
+  vi: Con người - どんなひとですか
+objectives:
+  - vi: "Gọi người theo giới tính, tuổi: おとこのひと, おんなのひと, おとな, あかちゃん."
+  - vi: Dùng かれ, かのじょ, あなた, みなさん để chỉ người.
+  - vi: Miêu tả người bằng どんなひと, わかい, やさしい, おもしろい và mẫu N は N が A です.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:family-members
+items:
+  - item: ja:item:n5-u10-otokonohito
+  - item: ja:item:n5-u10-onnanohito
+  - item: ja:item:n5-u10-otona
+  - item: ja:item:n5-u10-akachan
+  - item: ja:item:n5-u10-kare
+  - item: ja:item:n5-u10-kanojo
+  - item: ja:item:n5-u10-anata
+  - item: ja:item:n5-u10-minasan
+  - item: ja:item:n5-u10-wakai
+  - item: ja:item:n5-u10-yasashii
+  - item: ja:item:n5-u10-omoshiroi
+  - item: ja:item:n5-u10-seigatakai
+  - item: ja:item:n5-u10-donna
+  - item: ja:item:n5-u10-wa-ga-adj
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn miêu tả một người - あのひとはやさしくて、おもしろいです。 - và hỏi だれ, どんなひと.
+  - type: explain
+    text:
+      vi: おとこのひと (đàn ông) và おんなのひと (phụ nữ) ghép từ おとこ, おんな và ひと. おとな là người lớn, あかちゃん là em bé. かれ là "anh ấy", かのじょ là "cô ấy" (cũng có nghĩa là bạn trai, bạn gái).
+  - type: explain
+    text:
+      vi: Tiếng Nhật ít khi dùng あなた để gọi người nghe, vì nghe hơi xa cách. Người ta thường gọi bằng tên + さん (たなかさん). みなさん nghĩa là "mọi người", dùng khi nói với nhóm.
+  - type: explain
+    text:
+      vi: Hỏi tính cách - どんなひとですか。 Trả lời bằng tính từ - やさしいひとです (là người hiền). Mẫu N は N が A です miêu tả đặc điểm - あのひとはせがたかいです (Người đó cao - nghĩa đen "người đó, dáng cao").
+  - type: deep_explain
+    text:
+      vi: やさしい có hai chữ Hán và hai nghĩa - 優しい (hiền, dịu dàng) và 易しい (dễ). Bài này dùng nghĩa "hiền"; chữ 易しい đã gặp ở むずかしい ↔ やさしい. かのじょ và かれ có thể nghĩa là người yêu, nên khi nói "cô ấy" trong câu chuyện, ngữ cảnh sẽ cho biết nghĩa.
+  - type: example
+    target: あのおとこのひとはだれですか。- たなかさんです。
+    target_lang: ja
+    translation:
+      vi: Người đàn ông kia là ai? - Là anh Tanaka.
+    note:
+      vi: おとこのひと - người đàn ông; だれ - ai.
+  - type: example
+    target: わたしのともだちはやさしくて、おもしろいひとです。
+    target_lang: ja
+    translation:
+      vi: Bạn tôi là người hiền và vui tính.
+    note:
+      vi: やさしくて - nối hai tính từ (dạng て của tính từ い).
+  - type: example
+    target: あのひとはせがたかいです。
+    target_lang: ja
+    translation:
+      vi: Người đó cao.
+    note:
+      vi: N は N が A - chủ đề は, đặc điểm が.
+  - type: example
+    target: みなさん、こんにちは。
+    target_lang: ja
+    translation:
+      vi: Xin chào mọi người.
+    note:
+      vi: みなさん - mọi người, dùng khi nói với nhiều người.
+  - type: common_mistake
+    wrong: あなた、これをください。(gọi người bán hàng)
+    right: すみません、これをください。
+    target_lang: ja
+    note:
+      vi: Không gọi người lạ bằng あなた. Dùng すみません để gọi chú ý, hoặc gọi tên + さん.
+  - type: common_mistake
+    wrong: あのひとはたかいせです。
+    right: あのひとはせがたかいです。
+    target_lang: ja
+    note:
+      vi: Cấu trúc đúng là せが たかい (dáng cao); không đảo thành たかいせ.
+  - type: summary
+    points:
+      - vi: おとこのひと đàn ông · おんなのひと phụ nữ · おとな người lớn · あかちゃん em bé.
+      - vi: かれ anh ấy · かのじょ cô ấy · あなた bạn (ít dùng) · みなさん mọi người.
+      - vi: どんなひとですか - là người thế nào? やさしい hiền · わかい trẻ · おもしろい vui tính.
+      - vi: N は N が A です - あのひとはせがたかいです.
+exercises:
+  - key: ja:exercise:people-describing-otoko
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-otokonohito
+    prompt:
+      stem: Từ nào có nghĩa là “người phụ nữ”?
+      stem_lang: vi
+      options:
+        - id: rjo
+          text: あかちゃん
+          lang: ja
+        - id: gqf
+          text: おとな
+          lang: ja
+        - id: aok
+          text: おとこのひと
+          lang: ja
+        - id: xal
+          text: おんなのひと
+          lang: ja
+    answer:
+      correct_option_id: xal
+    explanation:
+      vi: おんなのひと là người phụ nữ. おとこのひと là đàn ông, おとな là người lớn, あかちゃん là em bé.
+    display_answer: おんなのひと
+  - key: ja:exercise:people-describing-minasan
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-minasan
+    prompt:
+      stem: Bạn nói với cả lớp. Từ nào nghĩa là “mọi người”?
+      stem_lang: vi
+      options:
+        - id: jgt
+          text: あなた
+          lang: ja
+        - id: w33
+          text: かれ
+          lang: ja
+        - id: bz7
+          text: みなさん
+          lang: ja
+        - id: cot
+          text: かのじょ
+          lang: ja
+    answer:
+      correct_option_id: bz7
+    explanation:
+      vi: みなさん là mọi người. あなた là một người nghe, かれ và かのじょ là "anh ấy / cô ấy".
+    display_answer: みなさん
+  - key: ja:exercise:people-describing-yasashii
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u10-yasashii
+    prompt:
+      audio_asset_id: null
+      fallback_text: あのひとはやさしくて、おもしろいひとです。
+      options:
+        - id: lgi
+          text: Người đó hiền và vui tính.
+          lang: vi
+        - id: ltf
+          text: Người đó cao và vui tính.
+          lang: vi
+        - id: kfr
+          text: Người đó trẻ và hiền.
+          lang: vi
+        - id: lxu
+          text: Người đó bận và vui tính.
+          lang: vi
+    answer:
+      correct_option_id: lgi
+    explanation:
+      vi: やさしい - hiền; おもしろい - vui tính, thú vị. Hai tính từ nối bằng やさしくて.
+    display_answer: Người đó hiền và vui tính.
+  - key: ja:exercise:people-describing-wakai
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-wakai
+    prompt:
+      template: いもうとはじゅうごさいです。{{b1}}です。 (Em gái tôi còn trẻ.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - わかい
+          - 若い
+    known_wrong:
+      - answer: おおきい
+        feedback_vi: おおきい là to lớn, không dùng để nói về tuổi.
+        error_tag: vocab_meaning
+      - answer: ふるい
+        feedback_vi: ふるい là cũ, dùng cho đồ vật, không dùng để nói người trẻ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: わかい là trẻ. Dùng cho người - わかいひと (người trẻ). Đồ vật cũ là ふるい.
+    display_answer: いもうとはじゅうごさいです。わかいです。
+  - key: ja:exercise:people-describing-donna
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-donna
+    prompt:
+      stem: Bạn muốn hỏi “Cô ấy là người thế nào?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: j77
+          text: かのじょはどんなひとですか。
+          lang: ja
+        - id: q57
+          text: かのじょはだれですか。
+          lang: ja
+        - id: j6s
+          text: かのじょはいくつですか。
+          lang: ja
+        - id: jd1
+          text: かのじょはどこですか。
+          lang: ja
+    answer:
+      correct_option_id: j77
+    explanation:
+      vi: どんなひと hỏi tính cách, đặc điểm. だれ hỏi "ai", いくつ hỏi tuổi, どこ hỏi nơi chốn.
+    display_answer: かのじょはどんなひとですか。
+  - key: ja:exercise:people-describing-seiga
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-seigatakai
+    prompt:
+      template: あのおとこのひとは{{b1}}がたかいです。 (Người đàn ông đó cao.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - せ
+          - 背
+    known_wrong:
+      - answer: め
+        feedback_vi: め là mắt; "dáng cao" là せが たかい.
+        error_tag: vocab_meaning
+      - answer: て
+        feedback_vi: て là tay.
+        error_tag: vocab_meaning
+    explanation:
+      vi: せがたかい là cách nói "cao" cho người (nghĩa đen "dáng cao"). Người không dùng たかい một mình để nói về chiều cao.
+    display_answer: あのおとこのひとはせがたかいです。
+  - key: ja:exercise:people-describing-kare-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-kanojo
+    prompt:
+      source_text: Cô ấy là người hiền.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - かのじょはやさしいひとです。
+        - 彼女は優しい人です。
+        - かのじょはやさしいひとです
+        - あのひとはやさしいひとです。
+    known_wrong:
+      - answer: かれはやさしいひとです。
+        feedback_vi: かれ là "anh ấy". "Cô ấy" là かのじょ.
+        error_tag: pronoun
+      - answer: かのじょはおもしろいひとです。
+        feedback_vi: おもしろい là vui tính, không phải hiền (やさしい).
+        error_tag: vocab_meaning
+    explanation:
+      vi: かのじょ = cô ấy; やさしいひと = người hiền. Cấu trúc N は N です.
+    display_answer: かのじょはやさしいひとです。
+  - key: ja:exercise:people-describing-omo-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-omoshiroi
+    prompt:
+      source_text: Bạn tôi là người vui tính.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしのともだちはおもしろいひとです。
+        - ともだちはおもしろいひとです。
+        - わたしの友達はおもしろい人です。
+        - 友達はおもしろい人です。
+        - わたしのともだちはおもしろいです。
+    known_wrong:
+      - answer: わたしのともだちはやさしいひとです。
+        feedback_vi: やさしい là hiền. Vui tính là おもしろい.
+        error_tag: vocab_meaning
+    explanation:
+      vi: おもしろい là thú vị, vui tính. Đứng trước ひと để bổ nghĩa - おもしろいひと.
+    display_answer: わたしのともだちはおもしろいひとです。
+  - key: ja:exercise:people-describing-otona-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u10-otona
+    prompt:
+      source_text: あかちゃんはこどもで、おじいさんはおとなです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Em bé là trẻ con, ông là người lớn.
+        - Em bé là trẻ nhỏ còn ông là người lớn.
+        - Em bé là trẻ em, ông là người lớn.
+        - Em bé là con nít, ông là người lớn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Em bé là người lớn, ông là trẻ con.
+        feedback_vi: あかちゃん là em bé (trẻ con), おとな là người lớn.
+        error_tag: vocab_meaning
+    explanation:
+      vi: こども là trẻ em, おとな là người lớn. Câu so sánh hai nhóm người.
+    display_answer: Em bé là trẻ con, ông là người lớn.
+  - key: ja:exercise:people-describing-seiga-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-seigatakai
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Người đàn ông đó cao và hiền."'
+      tokens:
+        - id: t2
+          text: せがたかくて、
+        - id: t1
+          text: あのおとこのひとは
+        - id: t3
+          text: やさしいです。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Chủ đề (あのおとこのひとは) → đặc điểm 1 ở dạng て (たかくて) → đặc điểm 2 (やさしいです).
+    display_answer: あのおとこのひとはせがたかくて、やさしいです。
+  - key: ja:exercise:people-describing-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-minasan
+    prompt:
+      stem: Bạn bắt đầu bài phát biểu trước cả nhóm bạn. Câu mở đầu nào tự nhiên nhất?
+      stem_lang: vi
+      options:
+        - id: wfy
+          text: あなた、こんにちは。
+          lang: ja
+        - id: zdk
+          text: おとな、こんにちは。
+          lang: ja
+        - id: b1a
+          text: みなさん、こんにちは。
+          lang: ja
+        - id: g7j
+          text: かれ、こんにちは。
+          lang: ja
+    answer:
+      correct_option_id: b1a
+    explanation:
+      vi: Khi nói với nhiều người, dùng みなさん. あなた chỉ một người nghe, かれ là "anh ấy" (người thứ ba), おとな là người lớn.
+    display_answer: みなさん、こんにちは。

@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:family-members
+order_index: 1
+level: n5
+title:
+  vi: Gia đình - ちち・はは・あに・あね
+objectives:
+  - vi: "Gọi tên các thành viên trong gia đình mình: ちち, はは, あに, あね, おとうと, いもうと."
+  - vi: Phân biệt cách nói về gia đình mình và gia đình người khác (ちち / おとうさん).
+  - vi: Nói và hỏi về anh chị em bằng ごきょうだいはいますか.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:reasons-frequency-counting-review
+items:
+  - item: ja:item:n5-u10-chichi
+  - item: ja:item:n5-u10-haha
+  - item: ja:item:n5-u10-ani
+  - item: ja:item:n5-u10-ane
+  - item: ja:item:n5-u10-otouto
+  - item: ja:item:n5-u10-imouto
+  - item: ja:item:n5-u10-ryoushin
+  - item: ja:item:n5-u10-kyoudai
+  - item: ja:item:n5-u10-kodomo
+  - item: ja:item:n5-u10-otousan-okaasan
+  - item: ja:item:n5-u10-oniisan-oneesan
+  - item: ja:item:n5-u10-ojiisan-obaasan
+  - item: ja:item:n5-u10-kyoudai-imasuka
+  - item: ja:item:kazoku
+    role: reuse
+  - item: ja:item:nin-counter
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn giới thiệu được gia đình mình - ちちはかいしゃいんです。はははせんせいです。- và hỏi người khác về gia đình họ.
+  - type: explain
+    text:
+      vi: "Tiếng Nhật có hai bộ từ cho gia đình. Khi nói về gia đình mình với người ngoài, dùng từ ngắn khiêm nhường: ちち, はは, あに, あね, おとうと, いもうと. Khi gọi hoặc nói về gia đình người khác, dùng từ có さん: おとうさん, おかあさん, おにいさん, おねえさん."
+  - type: explain
+    text:
+      vi: Tiếng Việt chỉ có "bố, mẹ, anh, chị" cho mọi trường hợp, nên người Việt hay dùng おとうさん cho cả bố mình. Hãy nhớ quy tắc đơn giản - nhà mình thì ngắn, nhà người khác thì さん.
+  - type: explain
+    text:
+      vi: Hỏi người khác có anh chị em không - ごきょうだいはいますか。Trả lời - はい、あにがひとりいます (Có, tôi có một anh trai) hoặc いいえ、いません (Không có). Số người đếm bằng ひとり, ふたり, さんにん.
+  - type: deep_explain
+    text:
+      vi: Cách đếm người - ひとり (1), ふたり (2), さんにん (3), よにん (4) - đã học ở bài đếm người. Một nhà có bố mẹ và hai con thì nói よにんかぞく (gia đình bốn người). りょうしん nghĩa là cả bố lẫn mẹ, còn こども là con cái. Chữ Hán - 父, 母, 兄, 姉, 弟, 妹, 両親, 兄弟.
+  - type: example
+    target: ちちはかいしゃいんで、はははせんせいです。
+    target_lang: ja
+    translation:
+      vi: Bố tôi là nhân viên công ty, mẹ tôi là giáo viên.
+    note:
+      vi: ちち・はは - nói về bố mẹ mình với người ngoài.
+  - type: example
+    target: おとうさんはおげんきですか。
+    target_lang: ja
+    translation:
+      vi: Bố bạn có khỏe không ạ?
+    note:
+      vi: おとうさん - bố của người nghe nên thêm さん.
+  - type: example
+    target: あにがひとり、いもうとがふたりいます。
+    target_lang: ja
+    translation:
+      vi: Tôi có một anh trai và hai em gái.
+    note:
+      vi: N が + số người + います - có ... người.
+  - type: example
+    target: ごきょうだいはいますか。- いいえ、いません。ひとりっこです。
+    target_lang: ja
+    translation:
+      vi: Bạn có anh chị em không? - Không, tôi là con một.
+    note:
+      vi: ひとりっこ - con một.
+  - type: common_mistake
+    wrong: わたしのおとうさんはせんせいです。(nói với người ngoài)
+    right: わたしのちちはせんせいです。
+    target_lang: ja
+    note:
+      vi: Với người ngoài, gọi bố mình bằng ちち khiêm nhường; おとうさん dành cho bố người khác hoặc khi gọi trực tiếp.
+  - type: common_mistake
+    wrong: いもうとはにじゅっさいです。(em trai)
+    right: おとうとはにじゅっさいです。
+    target_lang: ja
+    note:
+      vi: おとうと là em trai, いもうと là em gái - hai từ chỉ khác hai chữ đầu nên rất dễ lẫn.
+  - type: summary
+    points:
+      - vi: ちち bố · はは mẹ · あに anh · あね chị · おとうと em trai · いもうと em gái (gia đình mình).
+      - vi: おとうさん・おかあさん・おにいさん・おねえさん - gia đình người khác, hoặc khi gọi trực tiếp.
+      - vi: りょうしん bố mẹ · きょうだい anh chị em · こども con cái · おじいさん ông · おばあさん bà.
+      - vi: Hỏi - ごきょうだいはいますか。 Đáp - あにがひとりいます。
+exercises:
+  - key: ja:exercise:family-members-ani
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-ani
+    prompt:
+      stem: Từ nào có nghĩa là “anh trai (của mình)”?
+      stem_lang: vi
+      options:
+        - id: gxj
+          text: いもうと
+          lang: ja
+        - id: xqm
+          text: おとうと
+          lang: ja
+        - id: nhl
+          text: あね
+          lang: ja
+        - id: cbt
+          text: あに
+          lang: ja
+    answer:
+      correct_option_id: cbt
+    explanation:
+      vi: あに là anh trai của mình. おとうと là em trai, あね là chị gái, いもうと là em gái.
+    display_answer: あに
+  - key: ja:exercise:family-members-otousan
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-otousan-okaasan
+    prompt:
+      stem: Bạn nói về bố của người bạn cùng lớp. Dùng từ nào?
+      stem_lang: vi
+      options:
+        - id: zvb
+          text: ちち
+          lang: ja
+        - id: sug
+          text: おとうさん
+          lang: ja
+        - id: cf7
+          text: おじいさん
+          lang: ja
+        - id: q98
+          text: おとうと
+          lang: ja
+    answer:
+      correct_option_id: sug
+    explanation:
+      vi: Bố của người khác dùng おとうさん. ちち chỉ dùng cho bố của chính mình khi nói với người ngoài.
+    display_answer: おとうさん
+  - key: ja:exercise:family-members-haha
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u10-haha
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしのはははせんせいで、ちちはかいしゃいんです。
+      options:
+        - id: fjc
+          text: Mẹ tôi là giáo viên, bố tôi là nhân viên công ty.
+          lang: vi
+        - id: v73
+          text: Mẹ tôi là nhân viên công ty, bố tôi là bác sĩ.
+          lang: vi
+        - id: euw
+          text: Mẹ tôi là bác sĩ, bố tôi là giáo viên.
+          lang: vi
+        - id: bn6
+          text: Bố tôi là giáo viên, mẹ tôi là nhân viên công ty.
+          lang: vi
+    answer:
+      correct_option_id: fjc
+    explanation:
+      vi: はは là mẹ, ちち là bố. せんせい là giáo viên, かいしゃいん là nhân viên công ty.
+    display_answer: Mẹ tôi là giáo viên, bố tôi là nhân viên công ty.
+  - key: ja:exercise:family-members-imouto
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-imouto
+    prompt:
+      stem: Bạn có một em gái. Từ nào dùng để nói về em gái của mình?
+      stem_lang: vi
+      options:
+        - id: me3
+          text: おとうと
+          lang: ja
+        - id: c7r
+          text: いもうと
+          lang: ja
+        - id: fdw
+          text: あね
+          lang: ja
+        - id: gp6
+          text: あに
+          lang: ja
+    answer:
+      correct_option_id: c7r
+    explanation:
+      vi: いもうと là em gái của mình. おとうと là em trai - rất dễ nhầm vì chỉ khác hai chữ đầu.
+    display_answer: いもうと
+  - key: ja:exercise:family-members-haha-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-haha
+    prompt:
+      template: わたしの{{b1}}はせんせいです。 (Mẹ tôi là giáo viên - nói với người ngoài)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Mẹ (của mình) khi nói với người ngoài.
+        - Bắt đầu bằng は - はは.
+    answer:
+      blanks:
+        b1:
+          - はは
+          - 母
+    known_wrong:
+      - answer: おかあさん
+        feedback_vi: Khi nói về mẹ mình với người ngoài, người Nhật dùng はは khiêm nhường. おかあさん dành cho mẹ người khác hoặc khi gọi trực tiếp.
+        error_tag: family_term
+      - answer: ちち
+        feedback_vi: ちち là bố. Mẹ là はは.
+        error_tag: vocab_meaning
+    explanation:
+      vi: はは là cách nói khiêm nhường về mẹ mình. Câu hoàn chỉnh - わたしのははは せんせいです。
+    display_answer: わたしのはははせんせいです。
+  - key: ja:exercise:family-members-kyoudai-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-kyoudai
+    prompt:
+      template: わたしの{{b1}}はさんにんです。 (Anh chị em của tôi có ba người.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - きょうだい
+          - 兄弟
+    known_wrong:
+      - answer: かぞく
+        feedback_vi: かぞく là cả gia đình, còn anh chị em là きょうだい.
+        error_tag: vocab_meaning
+      - answer: こども
+        feedback_vi: こども là con cái hoặc trẻ em.
+        error_tag: vocab_meaning
+    explanation:
+      vi: きょうだい chỉ anh chị em trong nhà, không tính bố mẹ.
+    display_answer: わたしのきょうだいはさんにんです。
+  - key: ja:exercise:family-members-otouto-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-otouto
+    prompt:
+      source_text: Tôi có một em trai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - おとうとがひとりいます。
+        - 弟が一人います。
+        - わたしにはおとうとがひとりいます。
+        - わたしにはおとうとがひとりおります。
+        - わたしはおとうとがひとりいます。
+    known_wrong:
+      - answer: あにがひとりいます。
+        feedback_vi: あに là anh trai. Em trai là おとうと.
+        error_tag: family_term
+      - answer: おとうとがふたりいます。
+        feedback_vi: ふたり là hai người; một người là ひとり.
+        error_tag: counter
+      - answer: いもうとがひとりいます。
+        feedback_vi: いもうと là em gái, không phải em trai.
+        error_tag: family_term
+    explanation:
+      vi: Em trai là おとうと; có (người) là います; một người là ひとり. Mẫu - N が ひとり います.
+    display_answer: おとうとがひとりいます。
+  - key: ja:exercise:family-members-chichi-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-chichi
+    prompt:
+      source_text: Bố tôi là nhân viên công ty.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ちちはかいしゃいんです。
+        - 父は会社員です。
+        - わたしのちちはかいしゃいんです。
+        - わたしの父は会社員です。
+    known_wrong:
+      - answer: おとうさんはかいしゃいんです。
+        feedback_vi: Khi nói về bố mình với người ngoài dùng ちち; おとうさん là bố người khác.
+        error_tag: family_term
+    explanation:
+      vi: ちち là bố của mình. Cấu trúc N は N です.
+    display_answer: ちちはかいしゃいんです。
+  - key: ja:exercise:family-members-ane-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u10-ane
+    prompt:
+      source_text: あねはがくせいで、あにはかいしゃいんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chị gái tôi là sinh viên, anh trai tôi là nhân viên công ty.
+        - Chị tôi là sinh viên còn anh tôi là nhân viên công ty.
+        - Chị gái tôi là học sinh, anh trai tôi là nhân viên công ty.
+        - Chị gái mình là sinh viên, anh trai mình là nhân viên công ty.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Anh trai tôi là sinh viên, chị gái tôi là nhân viên công ty.
+        feedback_vi: あね là chị gái, あに là anh trai - bạn đã đảo hai người.
+        error_tag: family_term
+    explanation:
+      vi: あね = chị gái (của mình), あに = anh trai (của mình). Vế đầu về chị gái, vế sau về anh trai.
+    display_answer: Chị gái tôi là sinh viên, anh trai tôi là nhân viên công ty.
+  - key: ja:exercise:family-members-chichi-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-chichi
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Bố tôi là nhân viên công ty, mẹ tôi là giáo viên."'
+      tokens:
+        - id: t4
+          text: せんせいです。
+        - id: t1
+          text: ちちは
+        - id: t2
+          text: かいしゃいんで、
+        - id: t3
+          text: ははは
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Nói về bố trước, rồi mẹ. かいしゃいんで nối hai vế (thể て của です), và câu kết thúc ở せんせいです.
+    display_answer: ちちはかいしゃいんで、はははせんせいです。
+  - key: ja:exercise:family-members-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-otousan-okaasan
+    prompt:
+      stem: Bạn hỏi bạn cùng lớp xem bố của họ có phải nhân viên công ty không. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: lqz
+          text: おとうとはかいしゃいんですか。
+          lang: ja
+        - id: kg9
+          text: わたしのちちはかいしゃいんですか。
+          lang: ja
+        - id: t8a
+          text: ちちはかいしゃいんですか。
+          lang: ja
+        - id: zq5
+          text: おとうさんはかいしゃいんですか。
+          lang: ja
+    answer:
+      correct_option_id: zq5
+    explanation:
+      vi: Hỏi về bố người khác dùng おとうさん. ちち chỉ dùng cho bố của người nói; おとうと là em trai.
+    display_answer: おとうさんはかいしゃいんですか。

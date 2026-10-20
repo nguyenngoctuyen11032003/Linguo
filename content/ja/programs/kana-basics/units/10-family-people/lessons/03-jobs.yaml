@@ -1,0 +1,386 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:jobs-school
+order_index: 3
+level: n5
+title:
+  vi: Nghề nghiệp và cấp học - しごと・だいがくせい
+objectives:
+  - vi: "Nói nghề nghiệp phổ biến: てんいん, ぎんこういん, けいかん, かしゅ, しゅふ."
+  - vi: "Gọi tên các cấp học: しょうがくせい, ちゅうがくせい, こうこうせい, だいがくせい, りゅうがくせい."
+  - vi: Hỏi và trả lời nghề nghiệp - おしごとはなんですか。
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:people-describing
+items:
+  - item: ja:item:n5-u10-tenin
+  - item: ja:item:n5-u10-ginkouin
+  - item: ja:item:n5-u10-keikan
+  - item: ja:item:n5-u10-kashu
+  - item: ja:item:n5-u10-shufu
+  - item: ja:item:n5-u10-shougakusei
+  - item: ja:item:n5-u10-chuugakusei
+  - item: ja:item:n5-u10-koukousei
+  - item: ja:item:n5-u10-daigakusei
+  - item: ja:item:n5-u10-ryuugakusei
+  - item: ja:item:n5-u10-oshigoto
+  - item: ja:item:shigoto
+    role: reuse
+  - item: ja:item:gakusei
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được nghề của mình và người thân - あねはぎんこういんです。- và biết hỏi おしごとはなんですか。
+  - type: explain
+    text:
+      vi: Nghề nghiệp nói theo mẫu N は (nghề) です. Nhiều nghề có ～いん (員, nhân viên) - ぎんこういん (nhân viên ngân hàng), かいしゃいん (nhân viên công ty), てんいん (nhân viên cửa hàng).
+  - type: explain
+    text:
+      vi: "Cấp học ghép từ ～せい (学生, học sinh): しょうがくせい (tiểu học), ちゅうがくせい (trung học cơ sở), こうこうせい (trung học phổ thông), だいがくせい (đại học). りゅうがくせい là du học sinh."
+  - type: explain
+    text:
+      vi: Hỏi nghề - おしごとはなんですか。 (Công việc của bạn là gì?). Với người trên, thêm お vào しごと. Trả lời - ぎんこういんです. Với học sinh, hỏi - なんねんせいですか。(học năm mấy?) hoặc だいがくせいですか。
+  - type: deep_explain
+    text:
+      vi: けいかん (警官) là cảnh sát thường dân, còn ở thông báo hay tin tức bạn sẽ thấy けいさつかん (警察官). かしゅ là ca sĩ, しゅふ là người nội trợ (nam nữ đều dùng). Người Nhật thường nói công ty trước nghề - ○○のてんいん (nhân viên cửa hàng ○○). Chữ Hán - 店員, 銀行員, 警官, 歌手, 主婦, 大学生, 留学生.
+  - type: example
+    target: あねはぎんこういんで、あにはけいかんです。
+    target_lang: ja
+    translation:
+      vi: Chị gái tôi là nhân viên ngân hàng, anh trai tôi là cảnh sát.
+    note:
+      vi: ぎんこういん - nhân viên ngân hàng; けいかん - cảnh sát.
+  - type: example
+    target: おしごとはなんですか。- てんいんです。
+    target_lang: ja
+    translation:
+      vi: Công việc của bạn là gì? - Tôi là nhân viên cửa hàng.
+    note:
+      vi: お + しごと - cách nói lịch sự khi hỏi người khác.
+  - type: example
+    target: わたしはにほんのだいがくせいです。
+    target_lang: ja
+    translation:
+      vi: Tôi là sinh viên đại học Nhật.
+    note:
+      vi: だいがくせい - sinh viên đại học.
+  - type: example
+    target: かれはりゅうがくせいで、ベトナムからきました。
+    target_lang: ja
+    translation:
+      vi: Anh ấy là du học sinh, đến từ Việt Nam.
+    note:
+      vi: りゅうがくせい - du học sinh.
+  - type: common_mistake
+    wrong: わたしのしごとはなんですか。(hỏi người khác)
+    right: おしごとはなんですか。
+    target_lang: ja
+    note:
+      vi: Hỏi người khác thì dùng おしごと và bỏ わたしの; ghép わたしの vào câu hỏi sẽ thành "công việc của tôi là gì".
+  - type: common_mistake
+    wrong: ちゅうがくせいはだいがくのがくせいです。
+    right: だいがくせいはだいがくのがくせいです。
+    target_lang: ja
+    note:
+      vi: "Cấp học và trường phải khớp: だいがくせい học ở だいがく (đại học), ちゅうがくせい học ở ちゅうがっこう (cấp hai)."
+  - type: summary
+    points:
+      - vi: てんいん nhân viên cửa hàng · ぎんこういん nhân viên ngân hàng · けいかん cảnh sát · かしゅ ca sĩ · しゅふ nội trợ.
+      - vi: しょうがくせい · ちゅうがくせい · こうこうせい · だいがくせい · りゅうがくせい.
+      - vi: Hỏi - おしごとはなんですか。 Đáp - ○○です。
+      - vi: ～いん (員) - nhân viên; ～せい (生) - học sinh, sinh viên.
+exercises:
+  - key: ja:exercise:jobs-school-ginkou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-ginkouin
+    prompt:
+      stem: Từ nào có nghĩa là “nhân viên ngân hàng”?
+      stem_lang: vi
+      options:
+        - id: zwe
+          text: ぎんこういん
+          lang: ja
+        - id: qsy
+          text: けいかん
+          lang: ja
+        - id: wwr
+          text: てんいん
+          lang: ja
+        - id: yrf
+          text: かいしゃいん
+          lang: ja
+    answer:
+      correct_option_id: zwe
+    explanation:
+      vi: ぎんこういん là nhân viên ngân hàng. かいしゃいん - nhân viên công ty, てんいん - nhân viên cửa hàng, けいかん - cảnh sát.
+    display_answer: ぎんこういん
+  - key: ja:exercise:jobs-school-daigaku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-daigakusei
+    prompt:
+      stem: Bạn học ở đại học. Bạn là ai?
+      stem_lang: vi
+      options:
+        - id: m0q
+          text: こうこうせい
+          lang: ja
+        - id: rhw
+          text: だいがくせい
+          lang: ja
+        - id: lbh
+          text: しょうがくせい
+          lang: ja
+        - id: kl2
+          text: ちゅうがくせい
+          lang: ja
+    answer:
+      correct_option_id: rhw
+    explanation:
+      vi: だいがくせい là sinh viên đại học. しょうがくせい là học sinh tiểu học, ちゅうがくせい là cấp hai, こうこうせい là cấp ba.
+    display_answer: だいがくせい
+  - key: ja:exercise:jobs-school-kashu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u10-kashu
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしのいもうとはかしゅです。
+      options:
+        - id: ox3
+          text: Em gái tôi là nội trợ.
+          lang: vi
+        - id: sq0
+          text: Em gái tôi là nhân viên ngân hàng.
+          lang: vi
+        - id: ogs
+          text: Em gái tôi là ca sĩ.
+          lang: vi
+        - id: hkx
+          text: Em gái tôi là cảnh sát.
+          lang: vi
+    answer:
+      correct_option_id: ogs
+    explanation:
+      vi: かしゅ là ca sĩ. けいかん là cảnh sát, しゅふ là người nội trợ.
+    display_answer: Em gái tôi là ca sĩ.
+  - key: ja:exercise:jobs-school-tenin-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-tenin
+    prompt:
+      template: コンビニで はたらきます。{{b1}}です。 (Tôi là nhân viên cửa hàng.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Người làm việc ở cửa hàng.
+        - Bắt đầu bằng て - てんいん.
+    answer:
+      blanks:
+        b1:
+          - てんいん
+          - 店員
+    known_wrong:
+      - answer: ぎんこういん
+        feedback_vi: ぎんこういん là nhân viên ngân hàng; làm ở cửa hàng tiện lợi là てんいん.
+        error_tag: vocab_meaning
+      - answer: かいしゃいん
+        feedback_vi: かいしゃいん là nhân viên công ty; làm ở cửa hàng là てんいん.
+        error_tag: vocab_meaning
+    explanation:
+      vi: てんいん là nhân viên cửa hàng. Ghép てん (店, cửa hàng) và いん (員, nhân viên).
+    display_answer: コンビニではたらきます。てんいんです。
+  - key: ja:exercise:jobs-school-oshigoto
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u10-oshigoto
+    prompt:
+      stem: Bạn muốn hỏi nghề của một người lạ một cách lịch sự. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: ld8
+          text: おしごとはいくらですか。
+          lang: ja
+        - id: a53
+          text: おしごとはなんですか。
+          lang: ja
+        - id: ggi
+          text: わたしのしごとはなんですか。
+          lang: ja
+        - id: c6n
+          text: しごとはなんですか。
+          lang: ja
+    answer:
+      correct_option_id: a53
+    explanation:
+      vi: おしごとはなんですか là cách hỏi lịch sự. Bỏ お thì nghe suồng sã hơn; いくら hỏi giá tiền, không hỏi nghề.
+    display_answer: おしごとはなんですか。
+  - key: ja:exercise:jobs-school-ryuu
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-ryuugakusei
+    prompt:
+      template: かれはベトナムからきた{{b1}}です。 (Anh ấy là du học sinh đến từ Việt Nam.)
+      blanks:
+        - id: b1
+          width_hint: 8
+    answer:
+      blanks:
+        b1:
+          - りゅうがくせい
+          - 留学生
+    known_wrong:
+      - answer: だいがくせい
+        feedback_vi: だいがくせい là sinh viên đại học; "du học sinh" là りゅうがくせい.
+        error_tag: vocab_meaning
+    explanation:
+      vi: りゅうがくせい là du học sinh (người học ở nước ngoài). ベトナムからきた - đến từ Việt Nam.
+    display_answer: かれはベトナムからきたりゅうがくせいです。
+  - key: ja:exercise:jobs-school-shufu-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-shufu
+    prompt:
+      source_text: Mẹ tôi là người nội trợ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - はははしゅふです。
+        - 母は主婦です。
+        - わたしのはははしゅふです。
+        - わたしの母は主婦です。
+    known_wrong:
+      - answer: ちちはしゅふです。
+        feedback_vi: ちち là bố. Mẹ tôi là はは.
+        error_tag: family_term
+      - answer: はははかしゅです。
+        feedback_vi: かしゅ là ca sĩ. Nội trợ là しゅふ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: しゅふ là người nội trợ. Mẹ mình nói với người ngoài là はは.
+    display_answer: はははしゅふです。
+  - key: ja:exercise:jobs-school-keikan-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-keikan
+    prompt:
+      source_text: Anh trai tôi là cảnh sát.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あにはけいかんです。
+        - 兄は警官です。
+        - わたしのあにはけいかんです。
+        - わたしの兄は警官です。
+    known_wrong:
+      - answer: あねはけいかんです。
+        feedback_vi: あね là chị gái; anh trai là あに.
+        error_tag: family_term
+    explanation:
+      vi: けいかん là cảnh sát. Anh trai của mình là あに.
+    display_answer: あにはけいかんです。
+  - key: ja:exercise:jobs-school-ryuu-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u10-ryuugakusei
+    prompt:
+      source_text: わたしはベトナムのだいがくせいで、いまはにほんのりゅうがくせいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi là sinh viên đại học ở Việt Nam, bây giờ là du học sinh ở Nhật.
+        - Tôi là sinh viên đại học Việt Nam, hiện nay là du học sinh ở Nhật.
+        - Tôi là sinh viên đại học ở Việt Nam, bây giờ là du học sinh tại Nhật.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi là sinh viên đại học ở Nhật, bây giờ là du học sinh ở Việt Nam.
+        feedback_vi: Hai nước bị đảo. ベトナムの = ở Việt Nam, にほんの = ở Nhật.
+        error_tag: vocab_meaning
+    explanation:
+      vi: いま là bây giờ. りゅうがくせい là người đang học ở nước khác, ở đây là Nhật.
+    display_answer: Tôi là sinh viên đại học ở Việt Nam, bây giờ là du học sinh ở Nhật.
+  - key: ja:exercise:jobs-school-shigoto-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-oshigoto
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Công việc của bạn là gì? - Tôi là nhân viên ngân hàng."'
+      tokens:
+        - id: t2
+          text: なんですか。
+        - id: t3
+          text: ぎんこういん
+        - id: t1
+          text: おしごとは
+        - id: t4
+          text: です。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: "Hỏi - おしごとはなんですか。Trả lời - ぎんこういんです。Gộp hai câu: câu hỏi trước, đáp sau."
+    display_answer: おしごとはなんですか。ぎんこういんです。
+  - key: ja:exercise:jobs-school-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u10-tenin
+    prompt:
+      stem: Bạn gặp người bán hàng ở cửa hàng. Bạn muốn nói “Anh là nhân viên cửa hàng ạ?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: wfg
+          text: てんいんですか。
+          lang: ja
+        - id: ozq
+          text: かしゅですか。
+          lang: ja
+        - id: bdw
+          text: ぎんこういんですか。
+          lang: ja
+        - id: oh9
+          text: けいかんですか。
+          lang: ja
+    answer:
+      correct_option_id: wfg
+    explanation:
+      vi: てんいん là nhân viên cửa hàng - đúng nghề của người bạn đang nói chuyện. Các nghề khác không hợp với bối cảnh cửa hàng.
+    display_answer: てんいんですか。
