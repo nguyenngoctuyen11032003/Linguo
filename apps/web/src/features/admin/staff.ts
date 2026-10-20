@@ -2,17 +2,21 @@ import {
   ADMIN_USER_QUERY_MAX,
   adminFoundUserSchema,
   adminGrantRoleResultSchema,
+  adminStaffHistorySchema,
   adminStaffMemberSchema,
   adminTeacherSchema,
   grantTeacherResultSchema,
   type AdminFoundUser,
   type AdminGrantRoleResult,
+  type AdminStaffHistory,
+  type AdminStaffHistoryEntry,
   type AdminStaffMember,
   type AdminTeacher,
   type GrantTeacherResult,
   type StaffRole,
 } from '@linguo/shared';
 import { callRpc, parse } from '@/features/lesson-player/service';
+import { matchesSearch } from '@/lib/fold';
 import type { AppSupabaseClient } from '@/lib/supabase';
 
 // Staff management (/quan-tri/nhan-su, admin only): admin_list_staff, admin_find_user (20261017000500_admin_staff.sql)
@@ -86,4 +90,49 @@ export async function setTeacherStatus(client: AppSupabaseClient, userId: string
 export async function grantStaffRole(client: AppSupabaseClient, userId: string, role: StaffRole | null): Promise<AdminGrantRoleResult> {
   const data = await callRpc(client, 'admin_grant_role', { p_user_id: userId, p_role: role });
   return parse(adminGrantRoleResultSchema, data);
+}
+
+/** Rows shown at first in the staff and teacher lists, and added by each "Hiện thêm". */
+export const STAFF_LIST_PAGE_SIZE = 20;
+/** The search box above a list appears once the list is longer than this. */
+export const STAFF_SEARCH_THRESHOLD = 5;
+
+/** People whose name, email or user id contain every word of `query` (accents and case ignored). Empty query: everyone. */
+export function filterPeople<T extends { user_id: string; email: string | null; display_name: string | null }>(people: readonly T[], query: string): T[] {
+  return people.filter((p) => matchesSearch([p.display_name, p.email, p.user_id].filter(Boolean).join(' '), query));
+}
+
+/** Entries per page of the history on the staff page. */
+export const STAFF_HISTORY_PAGE_SIZE = 25;
+
+/** admin_staff_history: role and teacher grants and revocations, newest first (admin only; 20261021000200). */
+export async function listStaffHistory(client: AppSupabaseClient, limit: number, offset: number): Promise<AdminStaffHistory> {
+  const data = await callRpc(client, 'admin_staff_history', { p_limit: limit, p_offset: offset });
+  return parse(adminStaffHistorySchema, data);
+}
+
+function personLabel(email: string | null, id: string | null, missing: string): string {
+  if (email) return email;
+  return id ? `người dùng ${id.slice(0, 8)}` : missing;
+}
+
+/**
+ * One history line in Vietnamese: "admin@x cấp vai trò "Người duyệt" cho lan@x (trước đó: Biên tập viên)". Changes made
+ * by SQL have no actor; a deleted account has no email.
+ */
+export function describeHistoryEntry(entry: AdminStaffHistoryEntry, roleLabel: (role: StaffRole) => string): string {
+  const actor = entry.actor_id || entry.actor_email ? personLabel(entry.actor_email, entry.actor_id, '') : 'Hệ thống (SQL)';
+  const target = entry.target_email ?? (entry.target_id ? `tài khoản đã xoá (${entry.target_id.slice(0, 8)})` : 'một tài khoản');
+  switch (entry.action) {
+    case 'grant_role': {
+      const was = entry.previous_role ? ` (trước đó: ${roleLabel(entry.previous_role)})` : '';
+      return `${actor} cấp vai trò "${entry.role ? roleLabel(entry.role) : ''}" cho ${target}${was}`;
+    }
+    case 'revoke_role':
+      return `${actor} thu hồi vai trò${entry.previous_role ? ` "${roleLabel(entry.previous_role)}"` : ''} của ${target}`;
+    case 'grant_teacher':
+      return `${actor} cấp quyền giáo viên cho ${target}${entry.was_teacher ? ' (đã là giáo viên)' : ''}`;
+    case 'revoke_teacher':
+      return `${actor} thu hồi quyền giáo viên của ${target}${entry.was_teacher === false ? ' (vốn không phải giáo viên)' : ''}`;
+  }
 }

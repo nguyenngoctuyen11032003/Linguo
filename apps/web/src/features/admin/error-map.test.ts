@@ -1,12 +1,14 @@
 import { ADMIN_ERROR_CODES } from '@linguo/shared';
 import { describe, expect, it } from 'vitest';
+import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 import { adminErrorCode, adminErrorMessage } from './error-map';
 
 describe('adminErrorMessage', () => {
   it.each(ADMIN_ERROR_CODES)('has a Vietnamese message for %s', (code) => {
     const message = adminErrorMessage({ message: code, code: 'P0001' });
     expect(message).not.toMatch(/mã lỗi:/);
-    expect(message).not.toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+    expect(message).not.toBe(GENERIC_ERROR_MESSAGE);
+    expect(message).not.toContain(code);
   });
 
   it('maps the forbidden and wrong-answer cases', () => {
@@ -28,9 +30,11 @@ describe('adminErrorMessage', () => {
     expect(adminErrorMessage(new TypeError('Failed to fetch'))).toMatch(/kết nối/);
   });
 
-  it('keeps the code of unknown server errors (staff-only screen) in a separate suffix and a generic fallback otherwise', () => {
-    expect(adminErrorMessage({ message: 'boom', code: 'XX000' })).toBe('Đã có lỗi xảy ra. Vui lòng thử lại. (mã lỗi: XX000)');
-    expect(adminErrorMessage(new Error('something_else'))).toBe('Đã có lỗi xảy ra. Vui lòng thử lại. (mã lỗi: something_else)');
-    expect(adminErrorMessage(null)).toBe('Đã có lỗi xảy ra. Vui lòng thử lại.');
+  it('never shows a raw code: unknown server errors get the generic message', () => {
+    expect(adminErrorMessage({ message: 'boom', code: 'XX000' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(adminErrorMessage(new Error('something_else'))).toBe(GENERIC_ERROR_MESSAGE);
+    expect(adminErrorMessage({ message: 'permission denied for table x', code: '42501' })).toBe(GENERIC_ERROR_MESSAGE);
+    expect(adminErrorMessage(null)).toBe(GENERIC_ERROR_MESSAGE);
+    for (const text of ['boom', 'something_else', 'XX000']) expect(adminErrorMessage({ message: text, code: 'XX000' })).not.toContain(text);
   });
 });

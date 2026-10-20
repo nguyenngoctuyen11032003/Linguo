@@ -1,4 +1,4 @@
-import type { AdminFoundUser, AdminStaffMember, AdminTeacher } from '@linguo/shared';
+import type { AdminFoundUser, AdminStaffHistory, AdminStaffHistoryEntry, AdminStaffMember, AdminTeacher } from '@linguo/shared';
 import { ADMIN_USER_ID } from './admin-fixtures';
 
 export const TEACHER_ID = '50000000-0000-4000-8000-000000000004';
@@ -63,4 +63,27 @@ export function staffListFixture(): AdminStaffMember[] {
 
 export function foundUserFixture(overrides: Partial<AdminFoundUser> = {}): AdminFoundUser {
   return { user_id: LEARNER_ID, email: 'mai@example.com', display_name: 'Mai Trần', role: null, ...overrides };
+}
+
+let historySeq = 0;
+/** One role or teacher change, a grant of the "Người duyệt" role by the admin unless overridden. */
+export function historyEntryFixture(overrides: Partial<AdminStaffHistoryEntry> = {}): AdminStaffHistoryEntry {
+  historySeq += 1;
+  return {
+    id: `50000000-0000-4000-8000-${String(900 + historySeq).padStart(12, '0')}`,
+    created_at: '2026-10-05T08:00:00Z',
+    action: 'grant_role',
+    actor_id: ADMIN_USER_ID,
+    actor_email: 'staff@example.com',
+    target_id: STAFF_REVIEWER_ID,
+    target_email: 'lan@example.com',
+    role: 'reviewer',
+    previous_role: null,
+    was_teacher: null,
+    ...overrides,
+  };
+}
+
+export function historyFixture(entries: AdminStaffHistoryEntry[] = [historyEntryFixture()], total = entries.length): AdminStaffHistory {
+  return { total, entries };
 }

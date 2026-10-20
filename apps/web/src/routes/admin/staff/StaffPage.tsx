@@ -7,10 +7,20 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { inputClasses } from '@/components/ui/Input';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { STAFF_ROLE_LABELS_VI } from '@/features/admin/service';
-import { STAFF_ROLE_DESCRIPTIONS_VI, canManageMember, staffDisplayName, staffQueryKind } from '@/features/admin/staff';
+import {
+  STAFF_LIST_PAGE_SIZE,
+  STAFF_ROLE_DESCRIPTIONS_VI,
+  STAFF_SEARCH_THRESHOLD,
+  canManageMember,
+  filterPeople,
+  staffDisplayName,
+  staffQueryKind,
+} from '@/features/admin/staff';
 import { useAdminStaff, useAdminTeachers } from '@/features/admin/useAdminStaff';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { cn } from '@/lib/cn';
+import { HistorySection } from './HistorySection';
+import { PeopleSearch } from './PeopleSearch';
 import { RevokeRoleDialog } from './RevokeRoleDialog';
 import { TeacherSection } from './TeacherSection';
 
@@ -63,6 +73,7 @@ function GrantSection({ currentUserId, saving, findUser, setRole, teacherIds, sa
   const [found, setFound] = useState<AdminFoundUser | null>(null);
   const [role, setRoleChoice] = useState<StaffRole>('editor');
   const [message, setMessage] = useState<Message | null>(null);
+  const [confirming, setConfirming] = useState(false);
 
   const search = async (event: FormEvent) => {
     event.preventDefault();
@@ -91,6 +102,7 @@ function GrantSection({ currentUserId, saving, findUser, setRole, teacherIds, sa
     if (!found) return;
     setMessage(null);
     const outcome = await setRole(found.user_id, role);
+    setConfirming(false);
     if (!outcome.ok) {
       setMessage({ tone: 'error', text: outcome.message });
       return;
@@ -163,7 +175,7 @@ function GrantSection({ currentUserId, saving, findUser, setRole, teacherIds, sa
                 <RoleSelect id={`${ids}-role`} value={role} onChange={setRoleChoice} disabled={saving} />
                 <p className="mt-1 text-sm text-muted">{STAFF_ROLE_DESCRIPTIONS_VI[role]}</p>
               </div>
-              <Button variant="primary" disabled={saving || unchanged} onClick={() => void grant()} className="shrink-0 sm:mb-6">
+              <Button variant="primary" disabled={saving || unchanged} onClick={() => setConfirming(true)} className="shrink-0 sm:mb-6">
                 {found.role ? 'Đổi vai trò' : 'Cấp vai trò'}
               </Button>
             </div>
@@ -181,8 +193,31 @@ function GrantSection({ currentUserId, saving, findUser, setRole, teacherIds, sa
         </div>
       )}
       <Feedback message={message} />
+      <RevokeRoleDialog
+        name={confirming && found ? staffDisplayName(found) : null}
+        roleLabel={STAFF_ROLE_LABELS_VI[role]}
+        title={found?.role ? 'Đổi vai trò?' : 'Cấp vai trò?'}
+        consequence={roleChangeConsequence(found?.role ?? null, role)}
+        confirmLabel={found?.role ? 'Đổi vai trò' : 'Cấp vai trò'}
+        tone={found?.role === 'admin' && role !== 'admin' ? 'danger' : 'primary'}
+        note="Thay đổi được ghi vào nhật ký quản trị. Bạn có thể đổi lại sau."
+        busy={saving}
+        onConfirm={() => void grant()}
+        onCancel={() => {
+          if (!saving) setConfirming(false);
+        }}
+      />
     </section>
   );
+}
+
+/** What a role change means for the person, for the confirmation dialog (after their name). */
+export function roleChangeConsequence(previous: StaffRole | null, next: StaffRole): string {
+  const label = STAFF_ROLE_LABELS_VI[next];
+  const lead = previous ? `sẽ đổi vai trò từ ${STAFF_ROLE_LABELS_VI[previous]} thành ${label}.` : `sẽ được cấp vai trò ${label}.`;
+  const detail = STAFF_ROLE_DESCRIPTIONS_VI[next];
+  const demote = previous === 'admin' && next !== 'admin' ? ' Người này sẽ mất quyền quản trị.' : '';
+  return `${lead} ${detail}${demote}`;
 }
 
 interface MemberRowProps {
@@ -245,13 +280,21 @@ export function StaffPage() {
   const teachers = useAdminTeachers();
   const teacherIds = useMemo(() => (teachers.data ? new Set(teachers.data.map((t) => t.user_id)) : null), [teachers.data]);
   const [revoking, setRevoking] = useState<AdminStaffMember | null>(null);
+  const [changing, setChanging] = useState<{ member: AdminStaffMember; role: StaffRole } | null>(null);
   const [message, setMessage] = useState<Message | null>(null);
+  const [query, setQuery] = useState('');
+  const [limit, setLimit] = useState(STAFF_LIST_PAGE_SIZE);
   const saving = savingUserId !== null;
   const listTitleId = useId();
+  /** Bumped after each change so that the history on the page fetches its first page again. */
+  const [changes, setChanges] = useState(0);
+  const matches = useMemo(() => filterPeople(data ?? [], query), [data, query]);
 
   const save = async (member: AdminStaffMember, role: StaffRole) => {
     setMessage(null);
     const outcome = await setRole(member.user_id, role);
+    setChanging(null);
+    if (outcome.ok) setChanges((n) => n + 1);
     setMessage(
       outcome.ok
         ? { tone: 'ok', text: `Đã đổi vai trò của ${staffDisplayName(member)} thành "${STAFF_ROLE_LABELS_VI[role]}".` }
@@ -270,6 +313,7 @@ export function StaffPage() {
     setMessage(null);
     const outcome = await setRole(member.user_id, null);
     setRevoking(null);
+    if (outcome.ok) setChanges((n) => n + 1);
     setMessage(outcome.ok ? { tone: 'ok', text: `Đã thu hồi vai trò của ${staffDisplayName(member)}.` } : { tone: 'error', text: outcome.message });
   };
 
@@ -284,10 +328,18 @@ export function StaffPage() {
         currentUserId={currentUserId}
         saving={saving}
         findUser={findUser}
-        setRole={setRole}
+        setRole={async (userId, role) => {
+          const outcome = await setRole(userId, role);
+          if (outcome.ok) setChanges((n) => n + 1);
+          return outcome;
+        }}
         teacherIds={teacherIds}
         savingTeacher={teachers.savingTeacherId !== null}
-        setTeacher={teachers.setTeacher}
+        setTeacher={async (userId, grant) => {
+          const outcome = await teachers.setTeacher(userId, grant);
+          if (outcome.ok) setChanges((n) => n + 1);
+          return outcome;
+        }}
       />
 
       <section aria-labelledby={listTitleId} className="space-y-3">
@@ -306,23 +358,71 @@ export function StaffPage() {
         ) : data.length === 0 ? (
           <EmptyState icon={Users} title="Chưa có nhân sự" description="Tìm một tài khoản ở trên để cấp vai trò đầu tiên." />
         ) : (
-          <ul aria-label="Danh sách nhân sự" aria-busy={status === 'loading' || undefined} className="rounded-3xl border border-border bg-surface-solid">
-            {data.map((member) => (
-              <MemberRow
-                // Keyed by role too, so the select resets to the saved role after a reload.
-                key={`${member.user_id}:${member.role}`}
-                member={member}
-                isSelf={!canManageMember(member, currentUserId)}
-                saving={saving}
-                onSave={(m, r) => void save(m, r)}
-                onRevoke={setRevoking}
+          <>
+            {data.length > STAFF_SEARCH_THRESHOLD && (
+              <PeopleSearch
+                label="Tìm trong nhân sự"
+                value={query}
+                onChange={(value) => {
+                  setQuery(value);
+                  setLimit(STAFF_LIST_PAGE_SIZE);
+                }}
+                shown={matches.length}
+                total={data.length}
               />
-            ))}
-          </ul>
+            )}
+            {matches.length === 0 ? (
+              <p role="status" className="px-1 text-[15px] text-muted">
+                Không có nhân sự nào khớp.
+              </p>
+            ) : (
+              <ul aria-label="Danh sách nhân sự" aria-busy={status === 'loading' || undefined} className="rounded-3xl border border-border bg-surface-solid">
+                {matches.slice(0, limit).map((member) => (
+                  <MemberRow
+                    // Keyed by role too, so the select resets to the saved role after a reload.
+                    key={`${member.user_id}:${member.role}`}
+                    member={member}
+                    isSelf={!canManageMember(member, currentUserId)}
+                    saving={saving}
+                    onSave={(m, r) => setChanging({ member: m, role: r })}
+                    onRevoke={setRevoking}
+                  />
+                ))}
+              </ul>
+            )}
+            {matches.length > limit && (
+              <Button variant="ghost" block onClick={() => setLimit((n) => n + STAFF_LIST_PAGE_SIZE)}>
+                Hiện thêm {Math.min(STAFF_LIST_PAGE_SIZE, matches.length - limit)} người
+              </Button>
+            )}
+          </>
         )}
       </section>
 
-      <TeacherSection teachers={teachers} currentUserId={currentUserId} />
+      <TeacherSection
+        teachers={teachers}
+        currentUserId={currentUserId}
+        onChanged={() => setChanges((n) => n + 1)}
+      />
+
+      <HistorySection refreshKey={changes} />
+
+      <RevokeRoleDialog
+        name={changing ? staffDisplayName(changing.member) : null}
+        roleLabel={changing ? STAFF_ROLE_LABELS_VI[changing.role] : ''}
+        title="Đổi vai trò?"
+        consequence={changing ? roleChangeConsequence(changing.member.role, changing.role) : undefined}
+        confirmLabel="Đổi vai trò"
+        tone={changing?.member.role === 'admin' && changing.role !== 'admin' ? 'danger' : 'primary'}
+        note="Thay đổi được ghi vào nhật ký quản trị. Bạn có thể đổi lại sau."
+        busy={changing !== null && savingUserId === changing.member.user_id}
+        onConfirm={() => {
+          if (changing) void save(changing.member, changing.role);
+        }}
+        onCancel={() => {
+          if (!saving) setChanging(null);
+        }}
+      />
 
       <RevokeRoleDialog
         name={revoking ? staffDisplayName(revoking) : null}

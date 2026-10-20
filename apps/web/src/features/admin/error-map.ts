@@ -1,4 +1,5 @@
 import type { AdminErrorCode } from '@linguo/shared';
+import { genericErrorMessage } from '@/lib/error-fallback';
 import { isNetworkError } from '@/lib/network-error';
 
 const ADMIN_MESSAGES: Record<AdminErrorCode, string> = {
@@ -44,8 +45,8 @@ export function adminErrorMessage(error: unknown): string {
       const known = MESSAGES[error.message];
       if (known) return known;
     }
-    const code = adminErrorCode(error);
-    if (code) return `Đã có lỗi xảy ra. Vui lòng thử lại. (mã lỗi: ${code})`;
+    // An unmapped code never reaches the screen (it is logged in development only).
+    return genericErrorMessage(adminErrorCode(error));
   }
-  return 'Đã có lỗi xảy ra. Vui lòng thử lại.';
+  return genericErrorMessage();
 }

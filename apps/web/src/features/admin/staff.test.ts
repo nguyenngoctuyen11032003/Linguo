@@ -1,20 +1,23 @@
-import { adminFoundUserSchema, adminStaffMemberSchema, adminTeacherSchema } from '@linguo/shared';
+import { adminFoundUserSchema, adminStaffHistorySchema, adminStaffMemberSchema, adminTeacherSchema } from '@linguo/shared';
 import { describe, expect, it, vi } from 'vitest';
 import type { AppSupabaseClient } from '@/lib/supabase';
 import { ADMIN_USER_ID } from './admin-fixtures';
 import { adminErrorMessage } from './error-map';
 import {
   canManageMember,
+  describeHistoryEntry,
+  filterPeople,
   findAdminUser,
   grantStaffRole,
   listAdminStaff,
   listAdminTeachers,
+  listStaffHistory,
   setTeacherStatus,
   staffDisplayName,
   staffQueryKind,
   teacherClassesLabel,
 } from './staff';
-import { LEARNER_ID, STAFF_EDITOR_ID, TEACHER_ID, foundUserFixture, staffListFixture, staffMemberFixture, teacherFixture } from './staff-fixtures';
+import { LEARNER_ID, STAFF_EDITOR_ID, STAFF_REVIEWER_ID, TEACHER_ID, foundUserFixture, historyEntryFixture, historyFixture, staffListFixture, staffMemberFixture, teacherFixture } from './staff-fixtures';
 
 function clientReturning(data: unknown, error: unknown = null) {
   const rpc = vi.fn(() => Promise.resolve({ data, error }));
@@ -26,6 +29,7 @@ describe('staff fixtures', () => {
     expect(adminStaffMemberSchema.array().safeParse(staffListFixture()).success).toBe(true);
     expect(adminFoundUserSchema.safeParse(foundUserFixture()).success).toBe(true);
     expect(adminTeacherSchema.safeParse(teacherFixture()).success).toBe(true);
+    expect(adminStaffHistorySchema.safeParse(historyFixture()).success).toBe(true);
   });
 });
 
@@ -135,5 +139,57 @@ describe('staff service', () => {
     const { client } = clientReturning(null, { message: 'last_admin_required', code: 'P0001' });
     const failure = await grantStaffRole(client, ADMIN_USER_ID, null).catch((e: unknown) => e);
     expect(adminErrorMessage(failure)).toMatch(/^Phải còn ít nhất một quản trị viên/);
+  });
+});
+
+describe('staff history', () => {
+  const label = (role: string) => ({ editor: 'Biên tập viên', reviewer: 'Người duyệt', admin: 'Quản trị viên' })[role] ?? role;
+
+  it('reads a page through admin_staff_history and rejects a malformed one', async () => {
+    const page = historyFixture([historyEntryFixture()], 7);
+    const { rpc, client } = clientReturning(page);
+    await expect(listStaffHistory(client, 25, 50)).resolves.toEqual(page);
+    expect(rpc).toHaveBeenCalledWith('admin_staff_history', { p_limit: 25, p_offset: 50 });
+    await expect(listStaffHistory(clientReturning({ total: 'x' }).client, 25, 0)).rejects.toThrow('invalid_payload');
+    expect(adminErrorMessage({ message: 'staff_forbidden', code: 'P0001' })).toBe('Bạn không có quyền thực hiện thao tác này.');
+  });
+
+  it('describes every action in Vietnamese', () => {
+    expect(describeHistoryEntry(historyEntryFixture(), label)).toBe('staff@example.com cấp vai trò "Người duyệt" cho lan@example.com');
+    expect(describeHistoryEntry(historyEntryFixture({ role: 'admin', previous_role: 'editor' }), label)).toBe(
+      'staff@example.com cấp vai trò "Quản trị viên" cho lan@example.com (trước đó: Biên tập viên)',
+    );
+    expect(describeHistoryEntry(historyEntryFixture({ action: 'revoke_role', role: null, previous_role: 'editor' }), label)).toBe(
+      'staff@example.com thu hồi vai trò "Biên tập viên" của lan@example.com',
+    );
+    expect(describeHistoryEntry(historyEntryFixture({ action: 'grant_teacher', role: null, was_teacher: false }), label)).toBe('staff@example.com cấp quyền giáo viên cho lan@example.com');
+    expect(describeHistoryEntry(historyEntryFixture({ action: 'revoke_teacher', role: null, was_teacher: true }), label)).toBe('staff@example.com thu hồi quyền giáo viên của lan@example.com');
+    expect(describeHistoryEntry(historyEntryFixture({ action: 'revoke_teacher', role: null, was_teacher: false }), label)).toContain('(vốn không phải giáo viên)');
+  });
+
+  it('names changes made by SQL and accounts that are gone', () => {
+    const bySql = describeHistoryEntry(historyEntryFixture({ actor_id: null, actor_email: null }), label);
+    expect(bySql.startsWith('Hệ thống (SQL) cấp vai trò')).toBe(true);
+    const gone = describeHistoryEntry(historyEntryFixture({ target_email: null }), label);
+    expect(gone).toContain(`tài khoản đã xoá (${STAFF_REVIEWER_ID.slice(0, 8)})`);
+    const noEmailActor = describeHistoryEntry(historyEntryFixture({ actor_email: null }), label);
+    expect(noEmailActor.startsWith(`người dùng ${ADMIN_USER_ID.slice(0, 8)} cấp`)).toBe(true);
+  });
+});
+
+describe('filterPeople', () => {
+  const people = [
+    { user_id: 'aaaa1111-0000-4000-8000-000000000001', email: 'huong@example.com', display_name: 'Đặng Thị Hương' },
+    { user_id: 'bbbb2222-0000-4000-8000-000000000002', email: 'tuan@example.com', display_name: null },
+    { user_id: 'cccc3333-0000-4000-8000-000000000003', email: null, display_name: 'Lê Văn Tùng' },
+  ];
+
+  it('matches name, email and id, ignoring case and accents', () => {
+    expect(filterPeople(people, '')).toHaveLength(3);
+    expect(filterPeople(people, 'dang huong').map((p) => p.email)).toEqual(['huong@example.com']);
+    expect(filterPeople(people, 'TUAN@').map((p) => p.user_id[0])).toEqual(['b']);
+    expect(filterPeople(people, 'tung le').map((p) => p.user_id[0])).toEqual(['c']);
+    expect(filterPeople(people, 'cccc3333').map((p) => p.user_id[0])).toEqual(['c']);
+    expect(filterPeople(people, 'khong co')).toEqual([]);
   });
 });

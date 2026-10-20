@@ -1,12 +1,13 @@
-import { useId, useState } from 'react';
+import { useId, useMemo, useState } from 'react';
 import type { AdminTeacher } from '@linguo/shared';
 import { School } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
-import { staffDisplayName, teacherClassesLabel } from '@/features/admin/staff';
+import { STAFF_LIST_PAGE_SIZE, STAFF_SEARCH_THRESHOLD, filterPeople, staffDisplayName, teacherClassesLabel } from '@/features/admin/staff';
 import type { AdminTeachersState } from '@/features/admin/useAdminStaff';
+import { PeopleSearch } from './PeopleSearch';
 import { RevokeRoleDialog } from './RevokeRoleDialog';
 
 type Message = { tone: 'ok' | 'error'; text: string };
@@ -45,12 +46,24 @@ function TeacherRow({ teacher, isSelf, saving, onRevoke }: { teacher: AdminTeach
  * (grant_teacher_role false). Granting happens in the account search above. Teacher status is separate from staff
  * roles, so an admin may also revoke their own.
  */
-export function TeacherSection({ teachers, currentUserId }: { teachers: AdminTeachersState; currentUserId: string | null }) {
+export function TeacherSection({
+  teachers,
+  currentUserId,
+  onChanged,
+}: {
+  teachers: AdminTeachersState;
+  currentUserId: string | null;
+  /** Called after a revoke succeeded (the history on the page refreshes). */
+  onChanged?: () => void;
+}) {
   const titleId = useId();
   const { status, data, error, reload, setTeacher, savingTeacherId } = teachers;
   const [revoking, setRevoking] = useState<AdminTeacher | null>(null);
   const [message, setMessage] = useState<Message | null>(null);
+  const [query, setQuery] = useState('');
+  const [limit, setLimit] = useState(STAFF_LIST_PAGE_SIZE);
   const saving = savingTeacherId !== null;
+  const matches = useMemo(() => filterPeople(data ?? [], query), [data, query]);
 
   const confirmRevoke = async () => {
     const teacher = revoking;
@@ -58,6 +71,7 @@ export function TeacherSection({ teachers, currentUserId }: { teachers: AdminTea
     setMessage(null);
     const outcome = await setTeacher(teacher.user_id, false);
     setRevoking(null);
+    if (outcome.ok) onChanged?.();
     setMessage(
       outcome.ok ? { tone: 'ok', text: `Đã thu hồi quyền giáo viên của ${staffDisplayName(teacher)}.` } : { tone: 'error', text: outcome.message },
     );
@@ -90,11 +104,36 @@ export function TeacherSection({ teachers, currentUserId }: { teachers: AdminTea
       ) : data.length === 0 ? (
         <EmptyState icon={School} title="Chưa có giáo viên" description="Tìm một tài khoản ở trên để cấp quyền giáo viên đầu tiên." />
       ) : (
-        <ul aria-label="Danh sách giáo viên" aria-busy={status === 'loading' || undefined} className="rounded-3xl border border-border bg-surface-solid">
-          {data.map((teacher) => (
-            <TeacherRow key={teacher.user_id} teacher={teacher} isSelf={teacher.user_id === currentUserId} saving={saving} onRevoke={setRevoking} />
-          ))}
-        </ul>
+        <>
+          {data.length > STAFF_SEARCH_THRESHOLD && (
+            <PeopleSearch
+              label="Tìm giáo viên"
+              value={query}
+              onChange={(value) => {
+                setQuery(value);
+                setLimit(STAFF_LIST_PAGE_SIZE);
+              }}
+              shown={matches.length}
+              total={data.length}
+            />
+          )}
+          {matches.length === 0 ? (
+            <p role="status" className="px-1 text-[15px] text-muted">
+              Không có giáo viên nào khớp.
+            </p>
+          ) : (
+            <ul aria-label="Danh sách giáo viên" aria-busy={status === 'loading' || undefined} className="rounded-3xl border border-border bg-surface-solid">
+              {matches.slice(0, limit).map((teacher) => (
+                <TeacherRow key={teacher.user_id} teacher={teacher} isSelf={teacher.user_id === currentUserId} saving={saving} onRevoke={setRevoking} />
+              ))}
+            </ul>
+          )}
+          {matches.length > limit && (
+            <Button variant="ghost" block onClick={() => setLimit((n) => n + STAFF_LIST_PAGE_SIZE)}>
+              Hiện thêm {Math.min(STAFF_LIST_PAGE_SIZE, matches.length - limit)} giáo viên
+            </Button>
+          )}
+        </>
       )}
 
       <RevokeRoleDialog

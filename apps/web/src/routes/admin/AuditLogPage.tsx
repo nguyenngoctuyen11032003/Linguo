@@ -18,6 +18,7 @@ const ACTION_LABELS: Record<string, string> = {
   grant_teacher: 'Cấp quyền giáo viên',
   revoke_teacher: 'Thu hồi quyền giáo viên',
   list_teachers: 'Xem danh sách giáo viên',
+  list_staff_history: 'Xem lịch sử cấp quyền',
 };
 
 const TARGET_LABELS: Record<string, string> = {

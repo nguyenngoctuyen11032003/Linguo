@@ -9,7 +9,10 @@ import {
   STAFF_REVIEWER_ID,
   TEACHER_ID,
   foundUserFixture,
+  historyEntryFixture,
+  historyFixture,
   staffListFixture,
+  staffMemberFixture,
   teacherFixture,
 } from '@/features/admin/staff-fixtures';
 import { renderAdmin, routeRpcs } from '../admin-test-utils';
@@ -31,12 +34,14 @@ const calls = (name: string) => mocks.rpc.mock.calls.filter(([n]) => n === name)
  * admin_list_teachers returns next.
  */
 function staffBackend(initial: AdminStaffMember[] = staffListFixture(), grantError?: unknown, initialTeachers: AdminTeacher[] = [teacherFixture()]) {
+  const history = historyFixture([]);
   let staff = initial.map((m) => ({ ...m }));
   let teachers = initialTeachers.map((t) => ({ ...t }));
   routeRpcs(mocks.rpc, {
     staff_role: { data: 'admin' },
     admin_list_staff: () => ({ data: staff }),
     admin_list_teachers: () => ({ data: teachers }),
+    admin_staff_history: () => ({ data: history }),
     grant_teacher_role: (args) => {
       const id = String(args.p_user_id);
       const grant = args.p_grant === true;
@@ -114,7 +119,11 @@ describe('StaffPage list', () => {
     expect(save).toBeDisabled();
     await user.selectOptions(select, 'reviewer');
     await user.click(save);
-    expect(await screen.findByRole('status')).toHaveTextContent('Đã đổi vai trò của huy@example.com thành "Người duyệt".');
+    const dialog = screen.getByRole('alertdialog', { name: 'Đổi vai trò?' });
+    expect(dialog).toHaveTextContent('huy@example.com sẽ đổi vai trò từ Biên tập viên thành Người duyệt.');
+    expect(calls('admin_grant_role')).toEqual([]);
+    await user.click(within(dialog).getByRole('button', { name: 'Đổi vai trò' }));
+    expect(await screen.findByRole('status', { name: '' })).toHaveTextContent('Đã đổi vai trò của huy@example.com thành "Người duyệt".');
     expect(calls('admin_grant_role')).toEqual([{ p_user_id: STAFF_EDITOR_ID, p_role: 'reviewer' }]);
     await waitFor(() => expect(calls('admin_list_staff')).toHaveLength(2));
     expect(screen.getByRole('combobox', { name: 'Vai trò của huy@example.com' })).toHaveValue('reviewer');
@@ -146,6 +155,9 @@ describe('StaffPage list', () => {
     await openList();
     await user.selectOptions(screen.getByRole('combobox', { name: 'Vai trò của Lan Phạm' }), 'admin');
     await user.click(within(screen.getByRole('combobox', { name: 'Vai trò của Lan Phạm' }).closest('li')!).getByRole('button', { name: 'Lưu vai trò' }));
+    const dialog = screen.getByRole('alertdialog', { name: 'Đổi vai trò?' });
+    expect(dialog).toHaveTextContent('Toàn quyền');
+    await user.click(within(dialog).getByRole('button', { name: 'Đổi vai trò' }));
     expect(await screen.findByRole('alert')).toHaveTextContent(/^Phải còn ít nhất một quản trị viên/);
   });
 
@@ -154,6 +166,7 @@ describe('StaffPage list', () => {
       staff_role: { data: 'admin' },
       admin_list_staff: { data: null, error: { message: 'staff_forbidden', code: 'P0001' } },
       admin_list_teachers: { data: [] },
+      admin_staff_history: { data: historyFixture([]) },
     });
     renderAdmin('/quan-tri/nhan-su');
     expect(await screen.findByRole('button', { name: 'Thử lại' })).toBeInTheDocument();
@@ -238,6 +251,7 @@ describe('StaffPage teachers', () => {
       staff_role: { data: 'admin' },
       admin_list_staff: { data: staffListFixture() },
       admin_list_teachers: { data: null, error: { message: 'staff_forbidden', code: 'P0001' } },
+      admin_staff_history: { data: historyFixture([]) },
     });
     renderAdmin('/quan-tri/nhan-su');
     expect(await screen.findByRole('heading', { name: 'Không tải được danh sách giáo viên' })).toBeInTheDocument();
@@ -257,10 +271,50 @@ describe('StaffPage grant', () => {
     expect(calls('admin_find_user')).toEqual([{ p_query: 'MAI@example.com' }]);
     await user.selectOptions(screen.getByRole('combobox', { name: 'Vai trò' }), 'reviewer');
     await user.click(screen.getByRole('button', { name: 'Cấp vai trò' }));
-    expect(await screen.findByRole('status')).toHaveTextContent('Đã cấp vai trò "Người duyệt" cho Mai Trần.');
+    const dialog = screen.getByRole('alertdialog', { name: 'Cấp vai trò?' });
+    expect(dialog).toHaveTextContent('Mai Trần sẽ được cấp vai trò Người duyệt.');
+    expect(calls('admin_grant_role')).toEqual([]);
+    await user.click(within(dialog).getByRole('button', { name: 'Cấp vai trò' }));
+    expect(await screen.findByText('Đã cấp vai trò "Người duyệt" cho Mai Trần.')).toBeInTheDocument();
     expect(calls('admin_grant_role')).toEqual([{ p_user_id: LEARNER_ID, p_role: 'reviewer' }]);
     const list = screen.getByRole('list', { name: 'Danh sách nhân sự' });
     await waitFor(() => expect(within(list).getAllByRole('listitem')).toHaveLength(4));
+    // The history on the page is fetched again after the change.
+    await waitFor(() => expect(calls('admin_staff_history').length).toBeGreaterThan(1));
+  }, 20_000);
+
+  it('keeps the confirmation open to cancel without changing anything', async () => {
+    staffBackend();
+    const user = userEvent.setup();
+    await openList();
+    await user.type(screen.getByLabelText('Email hoặc mã người dùng'), 'mai@example.com');
+    await user.click(screen.getByRole('button', { name: 'Tìm tài khoản' }));
+    await screen.findByText('Mai Trần');
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Vai trò' }), 'admin');
+    await user.click(screen.getByRole('button', { name: 'Cấp vai trò' }));
+    const dialog = screen.getByRole('alertdialog', { name: 'Cấp vai trò?' });
+    expect(dialog).toHaveTextContent('Toàn quyền');
+    await user.click(within(dialog).getByRole('button', { name: 'Huỷ' }));
+    await waitFor(() => expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument());
+    expect(calls('admin_grant_role')).toEqual([]);
+    // Escape cancels too.
+    await user.click(screen.getByRole('button', { name: 'Cấp vai trò' }));
+    await screen.findByRole('alertdialog', { name: 'Cấp vai trò?' });
+    await user.keyboard('{Escape}');
+    await waitFor(() => expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument());
+    expect(calls('admin_grant_role')).toEqual([]);
+  }, 20_000);
+
+  it('warns that demoting an admin removes their admin access', async () => {
+    const staff = [...staffListFixture(), staffMemberFixture({ user_id: '50000000-0000-4000-8000-0000000000aa', email: 'admin2@example.com', display_name: 'Admin Hai', role: 'admin' })];
+    staffBackend(staff);
+    const user = userEvent.setup();
+    await openList();
+    await user.selectOptions(screen.getByRole('combobox', { name: 'Vai trò của Admin Hai' }), 'editor');
+    await user.click(within(screen.getByRole('combobox', { name: 'Vai trò của Admin Hai' }).closest('li')!).getByRole('button', { name: 'Lưu vai trò' }));
+    const dialog = screen.getByRole('alertdialog', { name: 'Đổi vai trò?' });
+    expect(dialog).toHaveTextContent('sẽ đổi vai trò từ Quản trị viên thành Biên tập viên.');
+    expect(dialog).toHaveTextContent('Người này sẽ mất quyền quản trị.');
   });
 
   it('rejects free text without asking the server and reports unknown accounts', async () => {
@@ -287,5 +341,154 @@ describe('StaffPage grant', () => {
     await user.click(screen.getByRole('button', { name: 'Tìm tài khoản' }));
     expect(await screen.findByText(/Đây là tài khoản của bạn/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Cấp vai trò|Đổi vai trò/ })).not.toBeInTheDocument();
+  });
+});
+
+describe('StaffPage long lists', () => {
+  const people = (n: number): AdminStaffMember[] => [
+    staffMemberFixture(),
+    ...Array.from({ length: n }, (_, i) =>
+      staffMemberFixture({
+        user_id: `50000000-0000-4000-8000-${String(1000 + i).padStart(12, '0')}`,
+        email: `nguoi${String(i).padStart(2, '0')}@example.com`,
+        display_name: i === 7 ? 'Đặng Thị Hương' : `Nhân viên ${String(i).padStart(2, '0')}`,
+        role: 'editor',
+        granted_at: `2026-10-0${(i % 9) + 1}T08:00:00Z`,
+      }),
+    ),
+  ];
+
+  it('shows no search box for a short list', async () => {
+    staffBackend();
+    await openList();
+    expect(screen.queryByLabelText('Tìm trong nhân sự')).not.toBeInTheDocument();
+  });
+
+  it('searches names, emails and ids ignoring accents, and pages 20 at a time', async () => {
+    staffBackend(people(45));
+    const user = userEvent.setup();
+    const list = await openList();
+    expect(within(list).getAllByRole('listitem')).toHaveLength(20);
+    await user.click(screen.getByRole('button', { name: 'Hiện thêm 20 người' }));
+    expect(within(screen.getByRole('list', { name: 'Danh sách nhân sự' })).getAllByRole('listitem')).toHaveLength(40);
+    await user.click(screen.getByRole('button', { name: 'Hiện thêm 6 người' }));
+    expect(within(screen.getByRole('list', { name: 'Danh sách nhân sự' })).getAllByRole('listitem')).toHaveLength(46);
+    expect(screen.queryByRole('button', { name: /Hiện thêm .* người/ })).not.toBeInTheDocument();
+
+    const search = screen.getByLabelText('Tìm trong nhân sự');
+    await user.type(search, 'dang huong');
+    const found = within(screen.getByRole('list', { name: 'Danh sách nhân sự' })).getAllByRole('listitem');
+    expect(found).toHaveLength(1);
+    expect(found[0]).toHaveTextContent('Đặng Thị Hương');
+    expect(screen.getByText('1 trên 46 khớp.')).toBeInTheDocument();
+    await user.clear(search);
+    await user.type(search, 'nguoi12@');
+    expect(within(screen.getByRole('list', { name: 'Danh sách nhân sự' })).getAllByRole('listitem')).toHaveLength(1);
+    await user.clear(search);
+    await user.type(search, 'khong ai ca');
+    expect(await screen.findByText('Không có nhân sự nào khớp.')).toBeInTheDocument();
+    expect(screen.queryByRole('list', { name: 'Danh sách nhân sự' })).not.toBeInTheDocument();
+  });
+
+  it('searches and pages the teachers too', async () => {
+    const teachers = Array.from({ length: 24 }, (_, i) =>
+      teacherFixture({
+        user_id: `50000000-0000-4000-8000-${String(2000 + i).padStart(12, '0')}`,
+        email: `gv${String(i).padStart(2, '0')}@example.com`,
+        display_name: i === 3 ? 'Cô Mai Hương' : `Giáo viên ${String(i).padStart(2, '0')}`,
+        granted_at: `2026-10-0${(i % 9) + 1}T08:00:00Z`,
+      }),
+    );
+    staffBackend(staffListFixture(), undefined, teachers);
+    const user = userEvent.setup();
+    renderAdmin('/quan-tri/nhan-su');
+    const list = await screen.findByRole('list', { name: 'Danh sách giáo viên' });
+    expect(within(list).getAllByRole('listitem')).toHaveLength(20);
+    await user.click(screen.getByRole('button', { name: 'Hiện thêm 4 giáo viên' }));
+    expect(within(screen.getByRole('list', { name: 'Danh sách giáo viên' })).getAllByRole('listitem')).toHaveLength(24);
+    await user.type(screen.getByLabelText('Tìm giáo viên'), 'mai huong');
+    expect(within(screen.getByRole('list', { name: 'Danh sách giáo viên' })).getAllByRole('listitem')).toHaveLength(1);
+  });
+});
+
+describe('StaffPage history', () => {
+  function withHistory(pages: Array<{ total: number; entries: ReturnType<typeof historyEntryFixture>[] }>, error?: unknown) {
+    let call = 0;
+    routeRpcs(mocks.rpc, {
+      staff_role: { data: 'admin' },
+      admin_list_staff: { data: staffListFixture() },
+      admin_list_teachers: { data: [teacherFixture()] },
+      admin_staff_history: () => {
+        if (error) return { data: null, error };
+        const page = pages[Math.min(call, pages.length - 1)]!;
+        call += 1;
+        return { data: page };
+      },
+    });
+  }
+
+  it('lists who granted and revoked what, in Vietnamese, newest first', async () => {
+    withHistory([
+      {
+        total: 4,
+        entries: [
+          historyEntryFixture({ action: 'revoke_teacher', target_email: 'colan@example.com', was_teacher: true, role: null, created_at: '2026-10-09T08:00:00Z' }),
+          historyEntryFixture({ action: 'grant_teacher', target_email: 'colan@example.com', was_teacher: false, role: null, actor_id: null, actor_email: null, created_at: '2026-10-08T08:00:00Z' }),
+          historyEntryFixture({ action: 'revoke_role', target_email: 'huy@example.com', role: null, previous_role: 'editor', created_at: '2026-10-07T08:00:00Z' }),
+          historyEntryFixture({ action: 'grant_role', target_email: null, target_id: LEARNER_ID, role: 'admin', previous_role: 'reviewer', created_at: '2026-10-06T08:00:00Z' }),
+        ],
+      },
+    ]);
+    renderAdmin('/quan-tri/nhan-su');
+    const list = await screen.findByRole('list', { name: 'Lịch sử cấp quyền' });
+    const rows = within(list).getAllByRole('listitem').map((li) => li.querySelector('p')?.textContent);
+    expect(rows).toEqual([
+      'staff@example.com thu hồi quyền giáo viên của colan@example.com',
+      'Hệ thống (SQL) cấp quyền giáo viên cho colan@example.com',
+      'staff@example.com thu hồi vai trò "Biên tập viên" của huy@example.com',
+      'staff@example.com cấp vai trò "Quản trị viên" cho tài khoản đã xoá (50000000) (trước đó: Người duyệt)',
+    ]);
+    expect(screen.getByText('Đang hiện 4 trên 4 thay đổi.')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Xem thêm' })).not.toBeInTheDocument();
+    expect(calls('admin_staff_history')).toEqual([{ p_limit: 25, p_offset: 0 }]);
+  });
+
+  it('loads further pages with "Xem thêm" without repeating rows', async () => {
+    const first = Array.from({ length: 25 }, (_, i) => historyEntryFixture({ target_email: `a${i}@example.com` }));
+    const second = Array.from({ length: 5 }, (_, i) => historyEntryFixture({ target_email: `b${i}@example.com` }));
+    withHistory([
+      { total: 30, entries: first },
+      { total: 30, entries: [first[24]!, ...second] },
+    ]);
+    const user = userEvent.setup();
+    renderAdmin('/quan-tri/nhan-su');
+    const list = await screen.findByRole('list', { name: 'Lịch sử cấp quyền' });
+    expect(within(list).getAllByRole('listitem')).toHaveLength(25);
+    await user.click(screen.getByRole('button', { name: 'Xem thêm' }));
+    await waitFor(() => expect(within(screen.getByRole('list', { name: 'Lịch sử cấp quyền' })).getAllByRole('listitem')).toHaveLength(30));
+    expect(calls('admin_staff_history').at(-1)).toEqual({ p_limit: 25, p_offset: 25 });
+    expect(screen.queryByRole('button', { name: 'Xem thêm' })).not.toBeInTheDocument();
+  });
+
+  it('has an empty state and a retry for a failed load, never a raw code', async () => {
+    withHistory([{ total: 0, entries: [] }]);
+    renderAdmin('/quan-tri/nhan-su');
+    expect(await screen.findByRole('heading', { name: 'Chưa có thay đổi nào' })).toBeInTheDocument();
+  });
+
+  it('explains a failure in Vietnamese and offers a retry', async () => {
+    withHistory([], { message: 'permission denied for table admin_audit_log', code: '42501' });
+    renderAdmin('/quan-tri/nhan-su');
+    expect(await screen.findByRole('heading', { name: 'Không tải được lịch sử' })).toBeInTheDocument();
+    expect(screen.getByText('Có lỗi xảy ra. Bạn thử lại sau ít phút nhé.')).toBeInTheDocument();
+    expect(screen.queryByText(/permission denied|42501/)).not.toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: 'Thử lại' }).length).toBeGreaterThan(0);
+  });
+
+  it('is not requested for a reviewer', async () => {
+    routeRpcs(mocks.rpc, { staff_role: { data: 'reviewer' }, admin_content_overview: { data: overviewFixture() } });
+    renderAdmin('/quan-tri/nhan-su');
+    await screen.findByRole('heading', { name: 'Trang này chỉ dành cho quản trị viên' });
+    expect(calls('admin_staff_history')).toEqual([]);
   });
 });
