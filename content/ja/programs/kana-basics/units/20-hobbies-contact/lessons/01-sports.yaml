@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:sports-music
+order_index: 1
+level: n5
+title:
+  vi: Thể thao và giải trí - テニス・サッカー・ピアノ
+objectives:
+  - vi: "Gọi tên môn thể thao và hoạt động: スポーツ, テニス, サッカー, やきゅう, ゴルフ, ゲーム, ダンス."
+  - vi: "Dùng đúng động từ: スポーツをします, ピアノをひきます, うたをうたいます, えをかきます."
+  - vi: Nói sở thích và khả năng - N がすきです, N がじょうずです.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:restaurant-talk
+items:
+  - item: ja:item:n5-u20-supootsu
+  - item: ja:item:n5-u20-tenisu
+  - item: ja:item:n5-u20-sakkaa
+  - item: ja:item:n5-u20-yakyuu
+  - item: ja:item:n5-u20-gorufu
+  - item: ja:item:n5-u20-geemu
+  - item: ja:item:n5-u20-dansu
+  - item: ja:item:n5-u20-piano
+  - item: ja:item:n5-u20-gitaa
+  - item: ja:item:n5-u20-uta
+  - item: ja:item:n5-u20-e
+  - item: ja:item:n5-u20-karaoke
+  - item: ja:item:n5-u20-kaimono
+  - item: ja:item:n5-u20-dokusho
+  - item: ja:item:n5-u20-shumi-wa
+  - item: ja:item:n4-shumi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được sở thích và khả năng - テニスがすきです。ピアノがじょうずです。
+  - type: explain
+    text:
+      vi: "Thể thao: スポーツ, テニス, サッカー, やきゅう (bóng chày), ゴルフ. Dùng する với thể thao và trò chơi - テニスをします, サッカーをします, ゲームをします."
+  - type: explain
+    text:
+      vi: Nhạc cụ dùng ひきます - ピアノをひきます, ギターをひきます. Hát là うたをうたいます (カラオケでうたいます). Vẽ tranh là えをかきます, nhảy là ダンスをします.
+  - type: explain
+    text:
+      vi: "Sở thích - しゅみは ～です. Câu mẫu: わたしの しゅみは どくしょです. Hỏi - しゅみは なんですか. Thích - N が すきです, giỏi - N が じょうずです."
+  - type: deep_explain
+    text:
+      vi: Với thể thao xem hay chơi có hai cách nói - テニスをします (chơi tennis) và テニスをみます (xem tennis). Nhạc cụ thường dùng ひく cho đàn có dây, phím (ピアノ, ギター); thổi sáo là ふえをふきます. かいもの là mua sắm; thường ghép かいものに いきます. Chữ Hán - 野球, 歌, 絵, 買い物, 読書.
+  - type: example
+    target: にちようびにともだちとテニスをします。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tôi chơi tennis với bạn.
+    note:
+      vi: N と N をします - chơi cùng.
+  - type: example
+    target: わたしのしゅみはピアノをひくことです。
+    target_lang: ja
+    translation:
+      vi: Sở thích của tôi là chơi piano.
+    note:
+      vi: ひくこと - việc chơi (đàn).
+  - type: example
+    target: カラオケでうたをうたいます。
+    target_lang: ja
+    translation:
+      vi: Tôi hát ở karaoke.
+    note:
+      vi: うたをうたいます - hát bài hát.
+  - type: example
+    target: えがじょうずです。
+    target_lang: ja
+    translation:
+      vi: Tôi vẽ giỏi.
+    note:
+      vi: N が じょうずです.
+  - type: common_mistake
+    wrong: ピアノをします。
+    right: ピアノをひきます。
+    target_lang: ja
+    note:
+      vi: Đàn dùng ひきます, không dùng します.
+  - type: common_mistake
+    wrong: サッカーをうたいます。
+    right: サッカーをします。
+    target_lang: ja
+    note:
+      vi: Thể thao dùng します; うたいます chỉ dùng với うた.
+  - type: summary
+    points:
+      - vi: スポーツ · テニス · サッカー · やきゅう · ゴルフ · ゲーム · ダンス - dùng します.
+      - vi: ピアノ · ギター - ひきます · うた - うたいます · え - かきます.
+      - vi: しゅみは ～です · N が すき / じょうずです.
+      - vi: かいもの · どくしょ · カラオケ.
+exercises:
+  - key: ja:exercise:sports-music-sakkaa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-sakkaa
+    prompt:
+      stem: Từ nào có nghĩa là “bóng đá”?
+      stem_lang: vi
+      options:
+        - id: yzz
+          text: やきゅう
+          lang: ja
+        - id: kv5
+          text: テニス
+          lang: ja
+        - id: zde
+          text: ゴルフ
+          lang: ja
+        - id: w0a
+          text: サッカー
+          lang: ja
+    answer:
+      correct_option_id: w0a
+    explanation:
+      vi: サッカー là bóng đá. テニス là quần vợt, ゴルフ là golf, やきゅう là bóng chày.
+    display_answer: サッカー
+  - key: ja:exercise:sports-music-piano
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-piano
+    prompt:
+      stem: Bạn chơi piano. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: ius
+          text: かきます
+          lang: ja
+        - id: w7w
+          text: うたいます
+          lang: ja
+        - id: hlu
+          text: します
+          lang: ja
+        - id: s26
+          text: ひきます
+          lang: ja
+    answer:
+      correct_option_id: s26
+    explanation:
+      vi: Đàn dùng ひきます. します dùng cho thể thao, うたいます là hát, かきます là viết hoặc vẽ.
+    display_answer: ひきます
+  - key: ja:exercise:sports-music-shumi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u20-dokusho
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしのしゅみはどくしょです。ピアノもすこしひきます。
+      options:
+        - id: cgw
+          text: Sở thích của tôi là đọc sách. Tôi cũng vẽ tranh một chút.
+          lang: vi
+        - id: i24
+          text: Sở thích của tôi là hát. Tôi cũng chơi guitar một chút.
+          lang: vi
+        - id: e24
+          text: Sở thích của tôi là xem phim. Tôi cũng chơi piano một chút.
+          lang: vi
+        - id: m23
+          text: Sở thích của tôi là đọc sách. Tôi cũng chơi piano một chút.
+          lang: vi
+    answer:
+      correct_option_id: m23
+    explanation:
+      vi: しゅみ - sở thích; どくしょ - đọc sách; ひきます - chơi (đàn).
+    display_answer: Sở thích của tôi là đọc sách. Tôi cũng chơi piano một chút.
+  - key: ja:exercise:sports-music-tenisu-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-tenisu
+    prompt:
+      template: にちようびにともだちと{{b1}}をします。 (Chủ nhật tôi chơi tennis với bạn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Môn thể thao dùng vợt, katakana.
+        - Bắt đầu bằng テ - テニス.
+    answer:
+      blanks:
+        b1:
+          - テニス
+    known_wrong:
+      - answer: ピアノ
+        feedback_vi: ピアノ đi với ひきます, không đi với します.
+        error_tag: collocation
+    explanation:
+      vi: テニス là quần vợt; テニスをします - chơi tennis.
+    display_answer: にちようびにともだちとテニスをします。
+  - key: ja:exercise:sports-music-hiku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-gitaa
+    prompt:
+      stem: Chọn câu đúng.
+      stem_lang: vi
+      options:
+        - id: zo6
+          text: ギターをします。
+          lang: ja
+        - id: lya
+          text: ギターをうたいます。
+          lang: ja
+        - id: r3h
+          text: ギターをひきます。
+          lang: ja
+        - id: o2c
+          text: ギターをかぶります。
+          lang: ja
+    answer:
+      correct_option_id: r3h
+    explanation:
+      vi: Đàn guitar dùng ひきます. します, うたいます, かぶります không hợp với nhạc cụ.
+    display_answer: ギターをひきます。
+  - key: ja:exercise:sports-music-uta-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-uta
+    prompt:
+      template: カラオケで{{b1}}をうたいます。 (Tôi hát bài hát ở karaoke.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - うた
+          - 歌
+    known_wrong:
+      - answer: え
+        feedback_vi: え là tranh; hát thì hát うた.
+        error_tag: vocab_meaning
+    explanation:
+      vi: うたをうたいます - hát bài hát.
+    display_answer: カラオケでうたをうたいます。
+  - key: ja:exercise:sports-music-piano-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-piano
+    prompt:
+      template: ピアノを{{b1}}。 (Tôi chơi piano.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - ひきます
+          - 弾きます
+    known_wrong:
+      - answer: します
+        feedback_vi: Nhạc cụ dùng ひきます, không dùng します.
+        error_tag: verb_choice
+      - answer: うたいます
+        feedback_vi: うたいます là hát.
+        error_tag: verb_choice
+    explanation:
+      vi: ひきます - chơi đàn.
+    display_answer: ピアノをひきます。
+  - key: ja:exercise:sports-music-shumi-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-dokusho
+    prompt:
+      source_text: Sở thích của tôi là đọc sách.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしのしゅみはどくしょです。
+        - 私の趣味は読書です。
+        - しゅみはどくしょです。
+        - わたしのしゅみはほんをよむことです。
+    known_wrong:
+      - answer: わたしのしゅみはピアノです。
+        feedback_vi: Câu yêu cầu đọc sách (どくしょ).
+        error_tag: vocab_meaning
+    explanation:
+      vi: しゅみ - sở thích; どくしょ - đọc sách; N は N です.
+    display_answer: わたしのしゅみはどくしょです。
+  - key: ja:exercise:sports-music-e-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u20-e
+    prompt:
+      source_text: えがじょうずです。ともだちのえをかきます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi vẽ giỏi. Tôi vẽ tranh bạn bè.
+        - Tôi vẽ tranh giỏi. Tôi vẽ bạn của tôi.
+        - Tôi vẽ giỏi. Tôi vẽ bức tranh của bạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi hát giỏi. Tôi vẽ tranh của bạn.
+        feedback_vi: え là tranh, hội hoạ; うた mới là hát.
+        error_tag: vocab_meaning
+    explanation:
+      vi: えがじょうず - vẽ giỏi; えを かきます - vẽ tranh.
+    display_answer: Tôi vẽ giỏi. Tôi vẽ tranh bạn bè.
+  - key: ja:exercise:sports-music-sports-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-sakkaa
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Chủ nhật tôi chơi bóng đá với bạn."'
+      tokens:
+        - id: t4
+          text: します。
+        - id: t3
+          text: サッカーを
+        - id: t2
+          text: ともだちと
+        - id: t1
+          text: にちようびに
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Thời gian (にちようびに) → cùng ai (ともだちと) → サッカーを → します.
+    display_answer: にちようびにともだちとサッカーをします。
+  - key: ja:exercise:sports-music-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-karaoke
+    prompt:
+      stem: Bạn muốn nói “Tôi hát ở karaoke”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: xs7
+          text: カラオケでうたいます。
+          lang: ja
+        - id: tvf
+          text: カラオケがうたいます。
+          lang: ja
+        - id: pdl
+          text: カラオケにうたいます。
+          lang: ja
+        - id: gcx
+          text: カラオケをうたいます。
+          lang: ja
+    answer:
+      correct_option_id: xs7
+    explanation:
+      vi: で chỉ nơi diễn ra hành động hát. を, に, が không đúng ở đây.
+    display_answer: カラオケでうたいます。

@@ -1,0 +1,450 @@
+# Học liệu unit "Sở thích, thể thao và liên lạc" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u20-supootsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: スポーツ
+      romanization: supootsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: thể thao
+      examples:
+        - target: スポーツがすきです。
+          translation:
+            vi: Tôi thích thể thao.
+  - key: ja:item:n5-u20-tenisu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: テニス
+      romanization: tenisu
+      pos: danh từ
+    back:
+      meaning:
+        vi: quần vợt
+      examples:
+        - target: にちようびにテニスをします。
+          translation:
+            vi: Chủ nhật tôi chơi tennis.
+  - key: ja:item:n5-u20-sakkaa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: サッカー
+      romanization: sakkaa
+      pos: danh từ
+    back:
+      meaning:
+        vi: bóng đá
+      examples:
+        - target: ともだちとサッカーをします。
+          translation:
+            vi: Tôi chơi bóng đá với bạn.
+      pronunciation_note:
+        vi: サッカー có ッ và trường âm ー.
+  - key: ja:item:n5-u20-yakyuu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 野球
+      reading: やきゅう
+      romanization: yakyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bóng chày
+      examples:
+        - target: やきゅうをみにいきます。
+          translation:
+            vi: Tôi đi xem bóng chày.
+      pronunciation_note:
+        vi: "やきゅう có trường âm: ya-kyuu."
+  - key: ja:item:n5-u20-gorufu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ゴルフ
+      romanization: gorufu
+      pos: danh từ
+    back:
+      meaning:
+        vi: golf
+      examples:
+        - target: ちちはゴルフがすきです。
+          translation:
+            vi: Bố tôi thích golf.
+  - key: ja:item:n5-u20-geemu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ゲーム
+      romanization: geemu
+      pos: danh từ
+    back:
+      meaning:
+        vi: trò chơi (điện tử)
+      examples:
+        - target: ゲームをします。
+          translation:
+            vi: Tôi chơi game.
+  - key: ja:item:n5-u20-uta
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 歌
+      reading: うた
+      romanization: uta
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài hát
+      examples:
+        - target: すきなうたをうたいます。
+          translation:
+            vi: Tôi hát bài hát yêu thích.
+  - key: ja:item:n5-u20-e
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 絵
+      reading: え
+      romanization: e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tranh, hội hoạ
+      examples:
+        - target: えをかきます。
+          translation:
+            vi: Tôi vẽ tranh.
+      confusion:
+        vi: え (絵, tranh) đọc giống え (hiragana え) - nhưng ở đây là danh từ riêng.
+  - key: ja:item:n5-u20-karaoke
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: カラオケ
+      romanization: karaoke
+      pos: danh từ
+    back:
+      meaning:
+        vi: karaoke
+      examples:
+        - target: カラオケでうたいます。
+          translation:
+            vi: Tôi hát ở karaoke.
+  - key: ja:item:n5-u20-kaimono
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 買い物
+      reading: かいもの
+      romanization: kaimono
+      pos: danh từ
+    back:
+      meaning:
+        vi: mua sắm
+      examples:
+        - target: かいものがすきです。
+          translation:
+            vi: Tôi thích mua sắm.
+      pronunciation_note:
+        vi: かいものをします / かいものにいきます.
+  - key: ja:item:n5-u20-dokusho
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 読書
+      reading: どくしょ
+      romanization: dokusho
+      pos: danh từ
+    back:
+      meaning:
+        vi: đọc sách (như một thú vui)
+      examples:
+        - target: しゅみはどくしょです。
+          translation:
+            vi: Sở thích của tôi là đọc sách.
+  - key: ja:item:n5-u20-dansu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ダンス
+      romanization: dansu
+      pos: danh từ
+    back:
+      meaning:
+        vi: khiêu vũ, nhảy
+      examples:
+        - target: ダンスがじょうずです。
+          translation:
+            vi: Tôi nhảy giỏi.
+  - key: ja:item:n5-u20-piano
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ピアノ
+      romanization: piano
+      pos: danh từ
+    back:
+      meaning:
+        vi: đàn piano
+      examples:
+        - target: ピアノをひきます。
+          translation:
+            vi: Tôi chơi piano.
+      pronunciation_note:
+        vi: "Đàn dùng ひきます (弾きます): ピアノをひきます, ギターをひきます."
+  - key: ja:item:n5-u20-gitaa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ギター
+      romanization: gitaa
+      pos: danh từ
+    back:
+      meaning:
+        vi: đàn guitar
+      examples:
+        - target: ギターがすこしひけます。
+          translation:
+            vi: Tôi chơi guitar được một chút.
+  - key: ja:item:n5-u20-denwa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 電話
+      reading: でんわ
+      romanization: denwa
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện thoại; cuộc gọi
+      examples:
+        - target: ともだちにでんわをかけます。
+          translation:
+            vi: Tôi gọi điện cho bạn.
+      pronunciation_note:
+        vi: でんわをかけます - gọi điện; でんわに でます - nghe máy.
+  - key: ja:item:n5-u20-meeru
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: メール
+      romanization: meeru
+      pos: danh từ
+    back:
+      meaning:
+        vi: email, tin nhắn
+      examples:
+        - target: ともだちにメールをおくります。
+          translation:
+            vi: Tôi gửi email cho bạn.
+  - key: ja:item:n5-u20-keitai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 携帯
+      reading: けいたい
+      romanization: keitai
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện thoại di động
+      examples:
+        - target: けいたいをわすれました。
+          translation:
+            vi: Tôi quên điện thoại di động.
+      pronunciation_note:
+        vi: Viết tắt của けいたいでんわ; cũng dùng スマホ (smartphone).
+  - key: ja:item:n5-u20-sumaho
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: スマホ
+      romanization: sumaho
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện thoại thông minh
+      examples:
+        - target: スマホでしゃしんをとります。
+          translation:
+            vi: Tôi chụp ảnh bằng điện thoại thông minh.
+  - key: ja:item:n5-u20-juusho
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 住所
+      reading: じゅうしょ
+      romanization: juusho
+      pos: danh từ
+    back:
+      meaning:
+        vi: địa chỉ
+      examples:
+        - target: じゅうしょをかいてください。
+          translation:
+            vi: Xin hãy viết địa chỉ.
+      pronunciation_note:
+        vi: "じゅう và しょ đều kéo dài: juu-sho."
+  - key: ja:item:n5-u20-bangou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 番号
+      reading: ばんごう
+      romanization: bangou
+      pos: danh từ
+    back:
+      meaning:
+        vi: số, mã số
+      examples:
+        - target: でんわばんごうをおしえてください。
+          translation:
+            vi: Xin cho tôi biết số điện thoại.
+      pronunciation_note:
+        vi: "ばんごう có trường âm: ban-gou."
+  - key: ja:item:n5-u20-moshimoshi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: もしもし
+      romanization: moshimoshi
+      pos: thán từ
+    back:
+      meaning:
+        vi: A lô (khi nghe/gọi điện)
+      examples:
+        - target: もしもし、たなかです。
+          translation:
+            vi: A lô, Tanaka đây ạ.
+  - key: ja:item:n5-u20-okurimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 送ります
+      reading: おくります
+      romanization: okurimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: gửi; tiễn
+      examples:
+        - target: てがみをおくります。
+          translation:
+            vi: Tôi gửi thư.
+      confusion:
+        vi: おくります (送ります) khác おくれます (遅れます, muộn).
+  - key: ja:item:n5-u20-denwa-kakemasu
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 電話をかけます
+      reading: でんわをかけます
+      romanization: denwa o kakemasu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: gọi điện thoại
+      examples:
+        - target: ともだちにでんわをかけます。
+          translation:
+            vi: Tôi gọi điện cho bạn.
+  - key: ja:item:n5-u20-shumi-wa
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 趣味は〜です
+      reading: しゅみは〜です
+      romanization: shumi wa ~ desu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Sở thích của tôi là ~
+      examples:
+        - target: わたしのしゅみはおんがくをきくことです。
+          translation:
+            vi: Sở thích của tôi là nghe nhạc.

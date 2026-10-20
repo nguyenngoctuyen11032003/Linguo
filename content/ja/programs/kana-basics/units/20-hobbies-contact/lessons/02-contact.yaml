@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:phone-contact
+order_index: 2
+level: n5
+title:
+  vi: Liên lạc - でんわ・メール・じゅうしょ
+objectives:
+  - vi: "Gọi tên phương tiện liên lạc: でんわ, けいたい, スマホ, メール."
+  - vi: "Nói và hỏi thông tin liên lạc: じゅうしょ, ばんごう, でんわばんごう."
+  - vi: Dùng もしもし, でんわをかけます, メールをおくります trong hội thoại.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:sports-music
+items:
+  - item: ja:item:n5-u20-denwa
+  - item: ja:item:n5-u20-meeru
+  - item: ja:item:n5-u20-keitai
+  - item: ja:item:n5-u20-sumaho
+  - item: ja:item:n5-u20-juusho
+  - item: ja:item:n5-u20-bangou
+  - item: ja:item:n5-u20-moshimoshi
+  - item: ja:item:n5-u20-okurimasu
+  - item: ja:item:n5-u20-denwa-kakemasu
+  - item: ja:item:denwa-bangou
+    role: reuse
+  - item: ja:item:n5-u15-kakimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi và nói thông tin liên lạc - でんわばんごうはなんばんですか。メールをおくります。
+  - type: explain
+    text:
+      vi: "Liên lạc: でんわ (điện thoại), けいたい (di động), スマホ (smartphone), メール (email, tin nhắn), じゅうしょ (địa chỉ), ばんごう (số). でんわばんごう là số điện thoại, đã học ở bài đếm số."
+  - type: explain
+    text:
+      vi: "Động từ: でんわを かけます (gọi), でんわに でます (nghe máy), メールを おくります (gửi), なまえと じゅうしょを かきます (viết). Mở đầu cuộc gọi - もしもし, rồi giới thiệu tên - もしもし、たなかです."
+  - type: explain
+    text:
+      vi: Hỏi thông tin - でんわばんごうは なんばんですか (Số điện thoại là số mấy?), じゅうしょは どこですか (Địa chỉ ở đâu?). Trả lời từng chữ số - ０９０の１２３４の５６７８.
+  - type: deep_explain
+    text:
+      vi: Số điện thoại đọc từng chữ số và dùng の để ngăn nhóm số - ゼロきゅうゼロ の いちにさんよん の ごろくななはち. けいたい là viết tắt của けいたいでんわ; ngày nay hay nói スマホ. おくります nghĩa là "gửi" (thư, email) và cũng là "tiễn" (ともだちを えきまで おくります); khác おくれます (muộn). Chữ Hán - 電話, 携帯, 住所, 番号, 送ります.
+  - type: example
+    target: もしもし、たなかです。
+    target_lang: ja
+    translation:
+      vi: A lô, Tanaka đây ạ.
+    note:
+      vi: もしもし - mở đầu khi gọi/nghe điện thoại.
+  - type: example
+    target: でんわばんごうはなんばんですか。
+    target_lang: ja
+    translation:
+      vi: Số điện thoại là số mấy?
+    note:
+      vi: なんばん - số mấy.
+  - type: example
+    target: ともだちにメールをおくります。
+    target_lang: ja
+    translation:
+      vi: Tôi gửi email cho bạn.
+    note:
+      vi: に - người nhận.
+  - type: example
+    target: じゅうしょとなまえをかきます。
+    target_lang: ja
+    translation:
+      vi: Tôi viết địa chỉ và tên.
+    note:
+      vi: と - liệt kê.
+  - type: common_mistake
+    wrong: でんわをします。(gọi cho ai đó)
+    right: ともだちにでんわをかけます。
+    target_lang: ja
+    note:
+      vi: Gọi cho ai dùng でんわを かけます. でんわを します cũng dùng nhưng ít hơn và không rõ người nhận.
+  - type: common_mistake
+    wrong: メールをかけます。
+    right: メールをおくります。
+    target_lang: ja
+    note:
+      vi: Gửi email dùng おくります; かけます dùng cho でんわ.
+  - type: summary
+    points:
+      - vi: でんわ điện thoại · けいたい di động · スマホ smartphone · メール email.
+      - vi: じゅうしょ địa chỉ · ばんごう số · でんわばんごう số điện thoại.
+      - vi: でんわを かけます · メールを おくります · もしもし.
+      - vi: なんばんですか - số mấy?
+exercises:
+  - key: ja:exercise:phone-contact-denwa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-denwa
+    prompt:
+      stem: Bạn gọi điện cho bạn. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: ze9
+          text: でんわをかきます
+          lang: ja
+        - id: g2d
+          text: でんわをおくります
+          lang: ja
+        - id: jzi
+          text: でんわをかけます
+          lang: ja
+        - id: pyk
+          text: でんわをみます
+          lang: ja
+    answer:
+      correct_option_id: jzi
+    explanation:
+      vi: Gọi điện dùng でんわを かけます. おくります dùng cho thư, email; かきます là viết; みます là xem.
+    display_answer: でんわをかけます
+  - key: ja:exercise:phone-contact-meeru
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-meeru
+    prompt:
+      stem: Bạn gửi email. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: xms
+          text: メールをのみます
+          lang: ja
+        - id: wgn
+          text: メールをきります
+          lang: ja
+        - id: ocn
+          text: メールをおくります
+          lang: ja
+        - id: wok
+          text: メールをかけます
+          lang: ja
+    answer:
+      correct_option_id: ocn
+    explanation:
+      vi: Gửi email dùng メールを おくります. かけます dùng với でんわ, のみます là uống, きります là cắt.
+    display_answer: メールをおくります
+  - key: ja:exercise:phone-contact-moshimoshi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u20-moshimoshi
+    prompt:
+      audio_asset_id: null
+      fallback_text: もしもし、たなかです。でんわばんごうをおしえてください。
+      options:
+        - id: gqf
+          text: A lô, Suzuki đây. Xin cho biết số điện thoại.
+          lang: vi
+        - id: i5z
+          text: A lô, Tanaka đây. Xin cho biết số điện thoại.
+          lang: vi
+        - id: lby
+          text: Xin chào, Tanaka đây. Xin cho biết địa chỉ email.
+          lang: vi
+        - id: v5e
+          text: A lô, Tanaka đây. Xin cho biết địa chỉ.
+          lang: vi
+    answer:
+      correct_option_id: i5z
+    explanation:
+      vi: もしもし - a lô; でんわばんごう - số điện thoại.
+    display_answer: A lô, Tanaka đây. Xin cho biết số điện thoại.
+  - key: ja:exercise:phone-contact-juusho-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-juusho
+    prompt:
+      template: "{{b1}}とでんわばんごうをかいてください。 (Xin hãy viết địa chỉ và số điện thoại.)"
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Nơi bạn sống - viết trong mẫu đơn.
+        - Bắt đầu bằng じ - じゅうしょ.
+    answer:
+      blanks:
+        b1:
+          - じゅうしょ
+          - 住所
+    known_wrong:
+      - answer: なまえ
+        feedback_vi: なまえ là tên; địa chỉ là じゅうしょ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: じゅうしょ là địa chỉ; ghép với でんわばんごう bằng と.
+    display_answer: じゅうしょとでんわばんごうをかいてください。
+  - key: ja:exercise:phone-contact-moshi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u20-moshimoshi
+    prompt:
+      stem: Bạn nhấc máy khi có điện thoại gọi đến. Bạn nói gì đầu tiên?
+      stem_lang: vi
+      options:
+        - id: q5w
+          text: おだいじに。
+          lang: ja
+        - id: u3n
+          text: いってきます。
+          lang: ja
+        - id: ikx
+          text: ごちそうさまでした。
+          lang: ja
+        - id: xc7
+          text: もしもし。
+          lang: ja
+    answer:
+      correct_option_id: xc7
+    explanation:
+      vi: もしもし là câu mở đầu cuộc gọi. Các câu còn lại dùng ở tình huống khác (sau ăn, chúc ốm, rời nhà).
+    display_answer: もしもし。
+  - key: ja:exercise:phone-contact-okuri-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-okurimasu
+    prompt:
+      template: ともだちにメールを{{b1}}。 (Tôi gửi email cho bạn.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - おくります
+          - 送ります
+    known_wrong:
+      - answer: かけます
+        feedback_vi: かけます dùng với でんわ.
+        error_tag: verb_choice
+      - answer: かきます
+        feedback_vi: かきます là viết (tay).
+        error_tag: verb_choice
+    explanation:
+      vi: おくります - gửi (thư, email).
+    display_answer: ともだちにメールをおくります。
+  - key: ja:exercise:phone-contact-kake-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-denwa-kakemasu
+    prompt:
+      template: ともだちに{{b1}}をかけます。 (Tôi gọi điện cho bạn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - でんわ
+          - 電話
+    known_wrong:
+      - answer: メール
+        feedback_vi: メール dùng với おくります; かける dùng với でんわ.
+        error_tag: collocation
+    explanation:
+      vi: でんわを かけます - gọi điện thoại.
+    display_answer: ともだちにでんわをかけます。
+  - key: ja:exercise:phone-contact-mail-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-meeru
+    prompt:
+      source_text: Tôi gửi email cho bạn.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ともだちにメールをおくります。
+        - 友達にメールを送ります。
+        - ともだちにメールします。
+        - ともだちにメールをおくる。
+    known_wrong:
+      - answer: ともだちにメールをかけます。
+        feedback_vi: かけます dùng cho でんわ.
+        error_tag: verb_choice
+    explanation:
+      vi: メールをおくります - gửi email; に - cho người nhận.
+    display_answer: ともだちにメールをおくります。
+  - key: ja:exercise:phone-contact-bangou-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u20-bangou
+    prompt:
+      source_text: でんわばんごうはなんばんですか。- ０９０の１２３４の５６７８です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Số điện thoại là số mấy? - Là 090-1234-5678.
+        - Số điện thoại của bạn là gì? - 090-1234-5678.
+        - Số điện thoại là số mấy? - Số 090 1234 5678.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Địa chỉ là gì? - 090-1234-5678.
+        feedback_vi: でんわばんごう là số điện thoại, không phải địa chỉ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: なんばん - số mấy; の ngăn các nhóm số.
+    display_answer: Số điện thoại là số mấy? - Là 090-1234-5678.
+  - key: ja:exercise:phone-contact-denwa-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-denwa
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi gọi điện cho bạn."'
+      tokens:
+        - id: t1
+          text: ともだちに
+        - id: t3
+          text: かけます。
+        - id: t2
+          text: でんわを
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Người nhận (ともだちに) → でんわを → かけます.
+    display_answer: ともだちにでんわをかけます。
+  - key: ja:exercise:phone-contact-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u20-keitai
+    prompt:
+      stem: Bạn quên điện thoại di động ở nhà. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: yv0
+          text: けいたいをうちにわすれました。
+          lang: ja
+        - id: t5f
+          text: けいたいをうちにたべました。
+          lang: ja
+        - id: bep
+          text: けいたいをうちにはきました。
+          lang: ja
+        - id: hgt
+          text: けいたいをうちにのみました。
+          lang: ja
+    answer:
+      correct_option_id: yv0
+    explanation:
+      vi: わすれました - quên. たべました, のみました, はきました không hợp với けいたい.
+    display_answer: けいたいをうちにわすれました。
