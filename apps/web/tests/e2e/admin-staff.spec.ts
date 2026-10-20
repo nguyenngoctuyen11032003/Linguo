@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
-import { staffListFixture, teacherFixture } from '../../src/features/admin/staff-fixtures';
+import { historyEntryFixture, historyFixture, staffListFixture, teacherFixture } from '../../src/features/admin/staff-fixtures';
 import { expectNoHorizontalScroll, mockSupabase, settleAnimations, signIn, USER_ID } from './fixtures';
 
 // /quan-tri/nhan-su: staff list, grant by email, change and revoke (with confirmation). The admin_list_staff /
@@ -20,6 +20,9 @@ async function setup(page: Page) {
 
   await page.route('**/rest/v1/rpc/admin_list_staff', (route) => route.fulfill(json(staff)));
   await page.route('**/rest/v1/rpc/admin_list_teachers', (route) => route.fulfill(json(teachers)));
+  // The history lists what was changed on this page, newest first.
+  const history: ReturnType<typeof historyEntryFixture>[] = [historyEntryFixture({ actor_email: 'staff@example.com', target_email: 'lan@example.com', role: 'reviewer' })];
+  await page.route('**/rest/v1/rpc/admin_staff_history', (route) => route.fulfill(json(historyFixture(history))));
   await page.route('**/rest/v1/rpc/grant_teacher_role', (route) => {
     const b = route.request().postDataJSON() as { p_user_id: string; p_grant: boolean };
     teacherGrants.push(b);
@@ -36,6 +39,7 @@ async function setup(page: Page) {
   await page.route('**/rest/v1/rpc/admin_grant_role', (route) => {
     const b = route.request().postDataJSON() as { p_user_id: string; p_role: Member['role'] | null };
     grants.push(b);
+    history.unshift(historyEntryFixture({ action: b.p_role === null ? 'revoke_role' : 'grant_role', role: b.p_role, previous_role: staff.find((m) => m.user_id === b.p_user_id)?.role ?? null, target_id: b.p_user_id, target_email: staff.find((m) => m.user_id === b.p_user_id)?.email ?? 'mai@example.com' }));
     if (b.p_role === null) staff = staff.filter((m) => m.user_id !== b.p_user_id);
     else if (staff.some((m) => m.user_id === b.p_user_id)) staff = staff.map((m) => (m.user_id === b.p_user_id ? { ...m, role: b.p_role! } : m));
     else
@@ -68,11 +72,16 @@ test('an admin grants, changes and revokes staff roles', async ({ page }) => {
   await page.getByRole('button', { name: 'Tìm tài khoản' }).click();
   await page.getByRole('combobox', { name: 'Vai trò', exact: true }).selectOption('reviewer');
   await page.getByRole('button', { name: 'Cấp vai trò' }).click();
+  const grantDialog = page.getByRole('alertdialog', { name: 'Cấp vai trò?' });
+  await expect(grantDialog).toBeVisible();
+  await expectNoHorizontalScroll(page);
+  await grantDialog.getByRole('button', { name: 'Cấp vai trò' }).click();
   await expect(page.getByText('Đã cấp vai trò "Người duyệt" cho Mai Trần.')).toBeVisible();
   await expect(list.getByRole('listitem')).toHaveCount(4);
 
   await page.getByRole('combobox', { name: 'Vai trò của huy@example.com' }).selectOption('reviewer');
   await list.getByRole('listitem').filter({ hasText: 'huy@example.com' }).getByRole('button', { name: 'Lưu vai trò' }).click();
+  await page.getByRole('alertdialog', { name: 'Đổi vai trò?' }).getByRole('button', { name: 'Đổi vai trò' }).click();
   await expect(page.getByText('Đã đổi vai trò của huy@example.com thành "Người duyệt".')).toBeVisible();
 
   await page.getByRole('button', { name: 'Thu hồi vai trò của Lan Phạm' }).click();
@@ -85,6 +94,12 @@ test('an admin grants, changes and revokes staff roles', async ({ page }) => {
   await expect(list.getByText('Lan Phạm')).toHaveCount(0);
 
   expect(backend.grants().map((g) => g.p_role)).toEqual(['reviewer', 'reviewer', null]);
+
+  // The history shows the three changes just made, newest first, in Vietnamese.
+  const log = page.getByRole('list', { name: 'Lịch sử cấp quyền' });
+  await expect(log.getByRole('listitem').first()).toContainText('thu hồi vai trò');
+  await expect(log).toContainText('cấp vai trò "Người duyệt" cho mai@example.com');
+  await expectNoHorizontalScroll(page);
 });
 
 test('an admin grants and revokes teacher status', async ({ page }) => {

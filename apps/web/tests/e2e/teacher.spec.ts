@@ -32,6 +32,9 @@ async function mockTeacher(page: Page, opts: { teacher?: boolean } = {}): Promis
       target_count: 30,
       due_at: new Date(now + 2 * 86_400_000).toISOString(),
       note: 'Ôn đều mỗi ngày nhé',
+      exam_mode: null,
+      exam_section: null,
+      closed_at: null,
       created_at: new Date(now).toISOString(),
       completed_count: 1,
       member_count: 2,
@@ -100,6 +103,15 @@ async function mockTeacher(page: Page, opts: { teacher?: boolean } = {}): Promis
         };
         invites.push(invite);
         return route.fulfill({ json: invite });
+      }
+      case 'teacher_update_assignment': {
+        calls.push([name, b]);
+        const a = assignments.find((x) => x.id === b.p_assignment_id);
+        if (!a) return route.fulfill({ status: 400, json: { message: 'assignment_not_found', code: 'P0001' } });
+        a.note = (b.p_note as string | null) ?? null;
+        if (b.p_set_due) a.due_at = (b.p_due_at as string | null) ?? null;
+        a.closed_at = b.p_closed ? (a.closed_at ?? new Date().toISOString()) : null;
+        return route.fulfill({ json: a });
       }
       case 'teacher_create_assignment': {
         calls.push([name, b]);
@@ -197,4 +209,49 @@ test('class detail is axe clean in dark mode', async ({ page }) => {
   await settleAnimations(page);
   await expectNoHorizontalScroll(page);
   await expectNoSeriousAxe(page, 'class detail (dark)');
+});
+
+test('edit and close an assignment, search the roster and export the class summary', async ({ page }) => {
+  test.setTimeout(90_000);
+  const mock = await setup(page);
+  await page.goto(`/giao-vien/lop/${CLASS_ID}`);
+  await expect(page.getByRole('heading', { level: 1, name: 'Lớp giao tiếp tối thứ Ba' })).toBeVisible({ timeout: 15_000 });
+
+  // Edit the note.
+  await page.getByRole('button', { name: /^Sửa bài giao/ }).click();
+  const edit = page.getByRole('dialog', { name: 'Sửa bài giao' });
+  await edit.getByLabel(/Lời nhắn cho học viên/).fill('Nộp trước thứ Sáu');
+  await settleAnimations(page);
+  await expectNoSeriousAxe(page, 'edit assignment dialog');
+  await edit.getByRole('button', { name: 'Lưu thay đổi' }).click();
+  await expect(edit).toBeHidden();
+  await expect(page.getByText('Nộp trước thứ Sáu')).toBeVisible();
+  expect(mock.calls.find(([n]) => n === 'teacher_update_assignment')?.[1]).toMatchObject({ p_note: 'Nộp trước thứ Sáu', p_closed: false, p_set_due: false });
+
+  // Close it: it moves to the closed list.
+  await page.getByRole('button', { name: /^Đóng bài giao/ }).click();
+  const confirm = page.getByRole('dialog', { name: 'Đóng bài giao này?' });
+  await confirm.getByRole('button', { name: 'Đóng bài' }).click();
+  await expect(confirm).toBeHidden();
+  await expect(page.getByRole('radio', { name: 'Đã đóng (1)' })).toBeVisible();
+  await expect(page.getByText('Không còn bài nào đang mở')).toBeVisible();
+  await page.getByRole('radio', { name: 'Đã đóng (1)' }).click();
+  await expect(page.getByText('Đã đóng', { exact: true }).first()).toBeVisible();
+  await expectNoHorizontalScroll(page);
+
+  // Roster search and export.
+  await page.getByLabel('Tìm học viên').fill('lan anh');
+  await expect(page.getByRole('rowheader', { name: /Nguyễn Thị Lan Anh/ })).toBeVisible();
+  await expect(page.getByRole('rowheader', { name: /Học viên chưa đặt tên/ })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Xoá bộ lọc' }).click();
+  const exported = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Xuất CSV' }).last().click();
+  const download = await exported;
+  expect(download.suggestedFilename()).toMatch(/^lop-.*-hoc-vien-\d{4}-\d{2}-\d{2}\.csv$/);
+  const { readFile } = await import('node:fs/promises');
+  const csv = await readFile((await download.path()) ?? '', 'utf8');
+  expect(csv.startsWith('﻿Học viên,')).toBe(true);
+  expect(csv).toContain('Nguyễn Thị Lan Anh');
+  expect(csv).not.toMatch(/@|7c000000/);
+  await expectNoSeriousAxe(page, 'class detail with a closed assignment');
 });

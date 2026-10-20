@@ -230,3 +230,61 @@ test('the navigation reaches the personal vocabulary and the empty state is warm
   await expect(page.getByRole('link', { name: /Từ mới/ })).toBeVisible();
   await expectNoHorizontalScroll(page);
 });
+
+test('a Japanese list: sample file, export to CSV and search, with no horizontal scroll or serious axe violation', async ({ page }) => {
+  const JA_LIST = '9e000000-0000-4000-8000-00000000000a';
+  await setup(page, {
+    lists: [
+      {
+        id: JA_LIST,
+        name: '日本語 N5',
+        language_code: 'ja',
+        words: [
+          { term: 'りんご', meaning: 'quả táo', example: 'りんごを食べます。' },
+          { term: '学校', meaning: 'trường học' },
+          { term: 'ありがとう', meaning: 'cảm ơn' },
+        ],
+      },
+    ],
+  });
+  await page.goto(`${LISTS_URL}/${JA_LIST}`);
+  await expect(page.getByRole('heading', { level: 1, name: '日本語 N5' })).toBeVisible({ timeout: 15_000 });
+  const table = page.getByRole('table', { name: /Danh sách 3 từ/ });
+  await expect(table.getByText('りんご', { exact: true })).toHaveAttribute('lang', 'ja');
+
+  // Search ignores case and accents, and a miss says so.
+  await page.getByLabel('Tìm trong danh sách').fill('QUA TAO');
+  await expect(page.getByRole('table', { name: /Danh sách 1 trên 3 từ/ })).toBeVisible();
+  await page.getByLabel('Tìm trong danh sách').fill('không có');
+  await expect(page.getByText('Không có từ nào khớp.')).toBeVisible();
+  await page.getByRole('button', { name: 'Xoá bộ lọc' }).click();
+  await expect(page.getByRole('table', { name: /Danh sách 3 từ/ })).toBeVisible();
+
+  // Export: UTF-8 with a BOM, every word, a file name after the list.
+  const exported = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Xuất CSV' }).click();
+  const download = await exported;
+  expect(download.suggestedFilename()).toBe('tu-vung-日本語-n5.csv');
+  const { readFile } = await import('node:fs/promises');
+  const csv = await readFile((await download.path()) ?? '', 'utf8');
+  expect(csv.startsWith('﻿Từ,Nghĩa,Ví dụ,Ghi chú,Phát âm\r\n')).toBe(true);
+  expect(csv).toContain('りんご,quả táo,りんごを食べます。');
+  expect(csv).toContain('学校,trường học');
+
+  // The import dialog offers the sample file of the list's language.
+  await page.getByRole('button', { name: 'Nhập từ CSV' }).first().click();
+  const dialog = page.getByRole('dialog', { name: 'Nhập từ CSV' });
+  await expect(dialog.locator('pre')).toHaveAttribute('lang', 'ja');
+  const sample = page.waitForEvent('download');
+  await dialog.getByRole('button', { name: /Tải file mẫu \(tiếng nhật\)/ }).click();
+  const sampleFile = await sample;
+  expect(sampleFile.suggestedFilename()).toBe('mau-tu-vung-ja.csv');
+  expect(await readFile((await sampleFile.path()) ?? '', 'utf8')).toContain('りんご');
+  await settleAnimations(page);
+  await expectNoHorizontalScroll(page);
+  await expectNoSeriousAxe(page, 'ja import dialog');
+  await dialog.getByRole('button', { name: 'Đóng' }).last().click();
+  await expect(dialog).toBeHidden();
+  await expectNoHorizontalScroll(page);
+  await expectNoSeriousAxe(page, 'ja list');
+});
