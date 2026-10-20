@@ -1,0 +1,381 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:daily-health
+order_index: 3
+level: n5
+title:
+  vi: Chăm sóc sức khoẻ hằng ngày - おふろ・うんどう
+objectives:
+  - vi: "Nói thói quen vệ sinh: はをみがきます, かおをあらいます, おふろにはいります, シャワーをあびます."
+  - vi: "Nói về vận động và sức khoẻ: さんぽ, うんどう, からだにいい."
+  - vi: Dùng はやい・おそい để nói giờ giấc sớm - muộn.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:sick-hospital
+items:
+  - item: ja:item:n5-u11-ofuro
+  - item: ja:item:n5-u11-shawaa
+  - item: ja:item:n5-u11-ha-migaku
+  - item: ja:item:n5-u11-araimasu
+  - item: ja:item:n5-u11-sanpo
+  - item: ja:item:n5-u11-undou
+  - item: ja:item:n5-u11-hayai
+  - item: ja:item:n5-u11-osoi
+  - item: ja:item:n5-u11-karada-ni-ii
+  - item: ja:item:nemasu
+    role: reuse
+  - item: ja:item:okimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể thói quen chăm sóc bản thân - まいあさはをみがきます。まいばんおふろにはいります。- và nói điều gì tốt cho sức khoẻ.
+  - type: explain
+    text:
+      vi: Vệ sinh thường ngày - はをみがきます (đánh răng), かおをあらいます (rửa mặt), てをあらいます (rửa tay), おふろにはいります (tắm bồn), シャワーをあびます (tắm vòi sen). Mỗi cụm có động từ riêng nên hãy học cả cụm.
+  - type: explain
+    text:
+      vi: "Vận động - さんぽします (đi dạo), うんどうします (tập thể dục): danh từ + します tạo thành động từ. Nói tốt cho sức khoẻ - N は からだにいいです (rau tốt cho sức khoẻ)."
+  - type: explain
+    text:
+      vi: はやい (sớm) và おそい (muộn) đi với động từ ở dạng はやく, おそく - はやくねます (đi ngủ sớm), おそくおきます (dậy muộn). Từ này cũng dùng khi nói "nhanh, chậm" nhưng bài này tập trung vào giờ giấc.
+  - type: deep_explain
+    text:
+      vi: はやい có hai chữ Hán - 早い (sớm) và 速い (nhanh), cùng đọc はやい. Từ điển tiếng Việt thường gom cả hai nghĩa vào một mục. おそい cũng có nghĩa "chậm" và "muộn". シャワーをあびます dùng あびます (hứng nước), không dùng あらいます. おふろにはいります nghĩa đen là "vào bồn tắm".
+  - type: example
+    target: まいあさ、はをみがいて、かおをあらいます。
+    target_lang: ja
+    translation:
+      vi: Sáng nào tôi cũng đánh răng rồi rửa mặt.
+    note:
+      vi: みがいて・あらいます - sẽ học kỹ ở N4; chỉ cần nhận ra.
+  - type: example
+    target: よるはおふろにはいって、はやくねます。
+    target_lang: ja
+    translation:
+      vi: Buổi tối tôi tắm bồn rồi đi ngủ sớm.
+    note:
+      vi: はやく - sớm (trạng từ).
+  - type: example
+    target: さんぽはからだにいいです。
+    target_lang: ja
+    translation:
+      vi: Đi dạo tốt cho sức khoẻ.
+    note:
+      vi: N は からだにいい - N tốt cho sức khoẻ.
+  - type: example
+    target: ゆうべはおそくねました。
+    target_lang: ja
+    translation:
+      vi: Tối qua tôi ngủ muộn.
+    note:
+      vi: おそく - muộn.
+  - type: common_mistake
+    wrong: シャワーをあらいます。
+    right: シャワーをあびます。
+    target_lang: ja
+    note:
+      vi: Tắm vòi sen dùng あびる (hứng nước), không dùng あらう.
+  - type: common_mistake
+    wrong: はやくおきませんでした。(dậy muộn)
+    right: おそくおきました。
+    target_lang: ja
+    note:
+      vi: Muốn nói "dậy muộn" thì dùng おそく, không đổi はやく thành phủ định cho cùng nghĩa.
+  - type: summary
+    points:
+      - vi: はをみがく đánh răng · かおをあらう rửa mặt · おふろにはいる tắm bồn · シャワーをあびる tắm vòi sen.
+      - vi: さんぽ đi dạo · うんどう tập thể dục · からだにいい tốt cho sức khoẻ.
+      - vi: はやい sớm · おそい muộn - はやく / おそく + động từ.
+      - vi: N + します - さんぽします, うんどうします.
+exercises:
+  - key: ja:exercise:daily-health-migaku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-ha-migaku
+    prompt:
+      stem: Cụm nào có nghĩa là “đánh răng”?
+      stem_lang: vi
+      options:
+        - id: sby
+          text: はをたべます
+          lang: ja
+        - id: fka
+          text: はをみがきます
+          lang: ja
+        - id: l90
+          text: はをのみます
+          lang: ja
+        - id: vtb
+          text: はをあらいます
+          lang: ja
+    answer:
+      correct_option_id: fka
+    explanation:
+      vi: はをみがきます là đánh răng. Dùng みがく (mài, chải) chứ không dùng あらう (rửa).
+    display_answer: はをみがきます
+  - key: ja:exercise:daily-health-shawaa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-shawaa
+    prompt:
+      stem: Bạn tắm vòi hoa sen buổi sáng. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: d4o
+          text: シャワーをみがきます
+          lang: ja
+        - id: poh
+          text: シャワーをあびます
+          lang: ja
+        - id: a73
+          text: シャワーをのみます
+          lang: ja
+        - id: l8d
+          text: シャワーをあらいます
+          lang: ja
+    answer:
+      correct_option_id: poh
+    explanation:
+      vi: Tắm vòi sen dùng シャワーをあびる. あらう là rửa, のむ là uống, みがく là đánh bóng.
+    display_answer: シャワーをあびます
+  - key: ja:exercise:daily-health-ofuro
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u11-ofuro
+    prompt:
+      audio_asset_id: null
+      fallback_text: よるはおふろにはいって、はやくねます。
+      options:
+        - id: brs
+          text: Buổi tối tôi tắm bồn rồi đi ngủ sớm.
+          lang: vi
+        - id: pvp
+          text: Buổi tối tôi đi dạo rồi ngủ muộn.
+          lang: vi
+        - id: vwi
+          text: Buổi sáng tôi tắm vòi sen rồi đi làm.
+          lang: vi
+        - id: fw8
+          text: Buổi tối tôi tập thể dục rồi tắm.
+          lang: vi
+    answer:
+      correct_option_id: brs
+    explanation:
+      vi: おふろにはいる - tắm bồn; はやくねます - ngủ sớm; よる - buổi tối.
+    display_answer: Buổi tối tôi tắm bồn rồi đi ngủ sớm.
+  - key: ja:exercise:daily-health-undou-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-undou
+    prompt:
+      template: まいにち{{b1}}します。からだにいいです。 (Ngày nào tôi cũng tập thể dục. Tốt cho sức khoẻ.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Danh từ nghĩa là vận động, tập thể dục.
+        - Bắt đầu bằng う - うんどう.
+    answer:
+      blanks:
+        b1:
+          - うんどう
+          - 運動
+    known_wrong:
+      - answer: さんぽ
+        feedback_vi: さんぽ là đi dạo, cũng đi với します nhưng ở đây nghĩa là "tập thể dục" nên dùng うんどう.
+        error_tag: vocab_meaning
+    explanation:
+      vi: うんどうします - tập thể dục, vận động.
+    display_answer: まいにちうんどうします。からだにいいです。
+  - key: ja:exercise:daily-health-hayai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-hayai
+    prompt:
+      stem: Bạn muốn nói “Ngày mai tôi dậy sớm.” Từ nào điền vào chỗ trống? あしたは___おきます。
+      stem_lang: vi
+      options:
+        - id: f19
+          text: ながく
+          lang: ja
+        - id: ssh
+          text: おそく
+          lang: ja
+        - id: nzh
+          text: はやく
+          lang: ja
+        - id: u7m
+          text: ひろく
+          lang: ja
+    answer:
+      correct_option_id: nzh
+    explanation:
+      vi: はやく là "sớm" (dạng trạng từ của はやい). おそく là muộn, ながく là dài, ひろく là rộng - đều không hợp với "dậy sớm".
+    display_answer: はやく
+  - key: ja:exercise:daily-health-ofuro-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-ofuro
+    prompt:
+      template: よるは{{b1}}にはいります。 (Buổi tối tôi tắm bồn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - おふろ
+          - お風呂
+    known_wrong:
+      - answer: シャワー
+        feedback_vi: シャワー đi với あびます, không đi với にはいります.
+        error_tag: collocation
+    explanation:
+      vi: おふろにはいります - tắm bồn (vào bồn tắm).
+    display_answer: よるはおふろにはいります。
+  - key: ja:exercise:daily-health-osoi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-osoi
+    prompt:
+      template: ゆうべは{{b1}}ねました。 (Tối qua tôi ngủ muộn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - おそく
+          - 遅く
+    known_wrong:
+      - answer: はやく
+        feedback_vi: はやく là sớm - nghĩa ngược lại.
+        error_tag: vocab_meaning
+      - answer: おそい
+        feedback_vi: "Trước động từ phải dùng dạng く: おそく."
+        error_tag: conjugation
+    explanation:
+      vi: おそく là "muộn" (trạng từ). ゆうべ là tối qua.
+    display_answer: ゆうべはおそくねました。
+  - key: ja:exercise:daily-health-sanpo-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-sanpo
+    prompt:
+      source_text: Đi dạo tốt cho sức khoẻ.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - さんぽはからだにいいです。
+        - 散歩は体にいいです。
+        - さんぽはけんこうにいいです。
+        - 散歩は健康にいいです。
+    known_wrong:
+      - answer: さんぽはからだにわるいです。
+        feedback_vi: わるい là xấu - ngược nghĩa với いい.
+        error_tag: meaning
+    explanation:
+      vi: N は からだにいいです - N tốt cho sức khoẻ; có thể dùng からだ hoặc けんこう.
+    display_answer: さんぽはからだにいいです。
+  - key: ja:exercise:daily-health-migaku-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u11-ha-migaku
+    prompt:
+      source_text: まいあさはをみがいて、かおをあらいます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sáng nào tôi cũng đánh răng rồi rửa mặt.
+        - Mỗi sáng tôi đánh răng và rửa mặt.
+        - Sáng nào tôi cũng đánh răng, rửa mặt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sáng nào tôi cũng rửa răng rồi đánh mặt.
+        feedback_vi: はをみがく là đánh răng; かおをあらう là rửa mặt.
+        error_tag: verb_choice
+    explanation:
+      vi: まいあさ là mỗi sáng; ～て nối hành động theo thứ tự (đánh răng rồi rửa mặt).
+    display_answer: Sáng nào tôi cũng đánh răng rồi rửa mặt.
+  - key: ja:exercise:daily-health-hayaku-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-hayai
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Buổi tối tôi tắm bồn rồi đi ngủ sớm."'
+      tokens:
+        - id: t3
+          text: はやく
+        - id: t4
+          text: ねます。
+        - id: t2
+          text: おふろにはいって、
+        - id: t1
+          text: よるは
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Thời điểm (よるは) → hành động 1 ở dạng て → trạng từ はやく → động từ cuối.
+    display_answer: よるはおふろにはいって、はやくねます。
+  - key: ja:exercise:daily-health-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-karada-ni-ii
+    prompt:
+      stem: Bạn muốn nói “Rau tốt cho sức khoẻ.” Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: kyf
+          text: やさいはからだにいいです。
+          lang: ja
+        - id: g20
+          text: やさいをからだにいいです。
+          lang: ja
+        - id: ejc
+          text: やさいはからだがいいです。
+          lang: ja
+        - id: uol
+          text: やさいからからだにいいです。
+          lang: ja
+    answer:
+      correct_option_id: kyf
+    explanation:
+      vi: Mẫu N は からだにいいです - dùng に. が, を, から không tạo thành cách nói đúng.
+    display_answer: やさいはからだにいいです。

@@ -1,0 +1,388 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:sick-hospital
+order_index: 2
+level: n5
+title:
+  vi: Ốm và đi bệnh viện - かぜ・ねつ・くすり
+objectives:
+  - vi: "Nói bị cảm, sốt, đau và uống thuốc: かぜをひきました, ねつがあります, くすりをのみます."
+  - vi: Nghỉ học, nghỉ làm vì ốm bằng やすみます và びょうきで.
+  - vi: Hiểu câu hỏi của bác sĩ どうしましたか và lời chúc おだいじに.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:body-parts
+items:
+  - item: ja:item:n5-u11-byouki
+  - item: ja:item:n5-u11-kaze
+  - item: ja:item:n5-u11-netsu
+  - item: ja:item:n4-kusuri
+    role: reuse
+  - item: ja:item:n5-u11-byouin
+  - item: ja:item:n5-u11-yasumimasu
+  - item: ja:item:n5-u11-yasumi
+  - item: ja:item:n5-u11-daijoubu
+  - item: ja:item:n5-u11-odaijini
+  - item: ja:item:n5-u11-kaze-hiku
+  - item: ja:item:n5-u11-doushimashita
+  - item: ja:item:isha
+    role: reuse
+  - item: ja:item:nomimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được khi mình ốm - きのうからかぜをひいています。ねつがあります。- và hiểu những câu cơ bản ở bệnh viện.
+  - type: explain
+    text:
+      vi: Bị cảm là かぜをひきます (nghĩa đen "kéo cảm"), hay dùng ở thì quá khứ - かぜをひきました. Bị sốt là ねつがあります; nếu còn sốt kéo dài, nói ねつがあります chứ không dùng です.
+  - type: explain
+    text:
+      vi: Thuốc là くすり, uống thuốc là くすりをのみます (cả thuốc viên dùng のむ, giống tiếng Việt). Đi bệnh viện là びょういんへいきます, gặp bác sĩ là いしゃにみてもらいます (sẽ học sau).
+  - type: explain
+    text:
+      vi: Nghỉ vì ốm - びょうきでがっこうをやすみます (vì ốm nên nghỉ học). Bác sĩ hỏi どうしましたか (bạn bị sao?). Khi ai đó ốm, nói おだいじに (mau khỏe nhé). Hỏi thăm - だいじょうぶですか。
+  - type: deep_explain
+    text:
+      vi: "やすみます là động từ (nghỉ), やすみ là danh từ (ngày nghỉ, kỳ nghỉ) - あしたはやすみです. びょういん (bệnh viện) khác びよういん (tiệm làm tóc): chữ よ nhỏ sau び làm trường âm ở びょう. かぜ có hai nghĩa - 風邪 (cảm) và 風 (gió); với ひきます thì luôn là cảm. Chữ Hán - 病気, 風邪, 熱, 薬, 病院, 休みます, 大丈夫."
+  - type: example
+    target: どうしましたか。- かぜをひきました。ねつもあります。
+    target_lang: ja
+    translation:
+      vi: Bạn bị sao vậy? - Tôi bị cảm. Còn bị sốt nữa.
+    note:
+      vi: どうしましたか - câu bác sĩ hỏi.
+  - type: example
+    target: くすりをのんで、はやくねます。
+    target_lang: ja
+    translation:
+      vi: Tôi uống thuốc rồi đi ngủ sớm.
+    note:
+      vi: のんで - thể て (nối hành động); sẽ học kỹ ở N4.
+  - type: example
+    target: びょうきでかいしゃをやすみました。
+    target_lang: ja
+    translation:
+      vi: Tôi nghỉ làm vì ốm.
+    note:
+      vi: で - vì (nguyên nhân); やすみました - đã nghỉ.
+  - type: example
+    target: だいじょうぶですか。- はい、だいじょうぶです。ありがとうございます。
+    target_lang: ja
+    translation:
+      vi: Bạn ổn chứ? - Vâng, tôi ổn. Cảm ơn bạn.
+    note:
+      vi: だいじょうぶ - ổn, không sao.
+  - type: common_mistake
+    wrong: かぜをなります。
+    right: かぜをひきます。
+    target_lang: ja
+    note:
+      vi: Bị cảm dùng ひく (kéo), không dùng なる.
+  - type: common_mistake
+    wrong: くすりをたべます。
+    right: くすりをのみます。
+    target_lang: ja
+    note:
+      vi: Thuốc dùng のむ (uống), không dùng たべる (ăn), kể cả thuốc viên.
+  - type: summary
+    points:
+      - vi: びょうき bệnh · かぜ cảm · ねつ sốt · くすり thuốc · びょういん bệnh viện.
+      - vi: かぜをひく · ねつがある · くすりをのむ.
+      - vi: やすむ nghỉ · やすみ ngày nghỉ · だいじょうぶ ổn · おだいじに mau khỏi nhé.
+      - vi: どうしましたか - bác sĩ hỏi bệnh nhân.
+exercises:
+  - key: ja:exercise:sick-hospital-kaze
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-kaze-hiku
+    prompt:
+      stem: Bạn bị cảm. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: u8b
+          text: かぜをあらいました
+          lang: ja
+        - id: c6y
+          text: かぜをひきました
+          lang: ja
+        - id: fqm
+          text: かぜをのみました
+          lang: ja
+        - id: j0b
+          text: かぜをなりました
+          lang: ja
+    answer:
+      correct_option_id: c6y
+    explanation:
+      vi: Bị cảm dùng かぜをひく (ひきました ở quá khứ). なる, のむ, あらう không đi với かぜ.
+    display_answer: かぜをひきました
+  - key: ja:exercise:sick-hospital-kusuri
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n4-kusuri
+    prompt:
+      stem: Bạn uống thuốc. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: yt5
+          text: たべます
+          lang: ja
+        - id: okx
+          text: みます
+          lang: ja
+        - id: i8j
+          text: いきます
+          lang: ja
+        - id: ekf
+          text: のみます
+          lang: ja
+    answer:
+      correct_option_id: ekf
+    explanation:
+      vi: Thuốc dùng のみます (uống). たべます là ăn, みます là xem, いきます là đi.
+    display_answer: のみます
+  - key: ja:exercise:sick-hospital-netsu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u11-netsu
+    prompt:
+      audio_asset_id: null
+      fallback_text: きのうからねつがあります。かぜをひきました。
+      options:
+        - id: sg2
+          text: Từ hôm qua tôi bị sốt. Tôi bị cảm.
+          lang: vi
+        - id: n18
+          text: Hôm nay tôi bị sốt. Tôi nghỉ làm.
+          lang: vi
+        - id: xys
+          text: Từ hôm qua tôi bị đau đầu. Tôi bị cảm.
+          lang: vi
+        - id: y3k
+          text: Từ hôm qua tôi bị sốt. Tôi đi bệnh viện.
+          lang: vi
+    answer:
+      correct_option_id: sg2
+    explanation:
+      vi: ねつがあります - bị sốt; かぜをひきました - bị cảm; きのうから - từ hôm qua.
+    display_answer: Từ hôm qua tôi bị sốt. Tôi bị cảm.
+  - key: ja:exercise:sick-hospital-byouki-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-byouki
+    prompt:
+      template: "{{b1}}でがっこうをやすみました。 (Tôi nghỉ học vì ốm.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Bệnh, ốm.
+        - Bắt đầu bằng び - びょうき.
+    answer:
+      blanks:
+        b1:
+          - びょうき
+          - 病気
+    known_wrong:
+      - answer: しごと
+        feedback_vi: しごと là công việc; "vì ốm" là びょうきで.
+        error_tag: vocab_meaning
+      - answer: やすみ
+        feedback_vi: やすみ là ngày nghỉ, không phải bệnh.
+        error_tag: vocab_meaning
+    explanation:
+      vi: びょうき là bệnh, ốm; で chỉ nguyên nhân (vì).
+    display_answer: びょうきでがっこうをやすみました。
+  - key: ja:exercise:sick-hospital-doushi
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u11-doushimashita
+    prompt:
+      stem: Vào phòng khám, bác sĩ nói “どうしましたか”. Câu này nghĩa là gì?
+      stem_lang: vi
+      options:
+        - id: z3f
+          text: Bạn bị sao vậy?
+          lang: vi
+        - id: mhi
+          text: Bạn có anh chị em không?
+          lang: vi
+        - id: jpb
+          text: Bạn đã uống thuốc chưa?
+          lang: vi
+        - id: ybw
+          text: Bạn bao nhiêu tuổi?
+          lang: vi
+    answer:
+      correct_option_id: z3f
+    explanation:
+      vi: どうしましたか là câu bác sĩ hỏi bệnh nhân "bạn bị sao vậy / có chuyện gì?". Các câu khác dùng từ hỏi khác (くすり, いくつ, きょうだい).
+    display_answer: Bạn bị sao vậy?
+  - key: ja:exercise:sick-hospital-yasumi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-yasumimasu
+    prompt:
+      template: ねつがありますから、きょうはかいしゃを{{b1}}。 (Vì tôi bị sốt nên hôm nay nghỉ làm.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - やすみます
+          - 休みます
+    known_wrong:
+      - answer: いきます
+        feedback_vi: いきます là đi; "nghỉ làm" là かいしゃをやすみます.
+        error_tag: verb_choice
+      - answer: やすみ
+        feedback_vi: Cuối câu cần động từ やすみます, không chỉ やすみ (danh từ).
+        error_tag: conjugation
+    explanation:
+      vi: やすみます là nghỉ. かいしゃをやすみます - nghỉ làm (vắng mặt).
+    display_answer: ねつがありますから、きょうはかいしゃをやすみます。
+  - key: ja:exercise:sick-hospital-byouin-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-byouin
+    prompt:
+      template: あたまがいたいですから、{{b1}}へいきます。 (Vì đau đầu nên tôi đi bệnh viện.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - びょういん
+          - 病院
+    known_wrong:
+      - answer: びよういん
+        feedback_vi: びよういん là tiệm làm tóc; bệnh viện là びょういん (kéo dài ở びょう).
+        error_tag: long_vowel
+      - answer: がっこう
+        feedback_vi: がっこう là trường học.
+        error_tag: vocab_meaning
+    explanation:
+      vi: びょういん là bệnh viện; N へ いきます - đi đến N.
+    display_answer: あたまがいたいですから、びょういんへいきます。
+  - key: ja:exercise:sick-hospital-kaze-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-kaze-hiku
+    prompt:
+      source_text: Tôi bị cảm, và bị sốt nữa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - かぜをひきました。ねつもあります。
+        - 風邪をひきました。熱もあります。
+        - かぜをひいて、ねつもあります。
+        - かぜをひいてねつもあります。
+        - かぜをひきました。ねつもあります
+    known_wrong:
+      - answer: かぜをなりました。ねつもあります。
+        feedback_vi: Bị cảm dùng かぜをひく.
+        error_tag: collocation
+    explanation:
+      vi: かぜをひきました - bị cảm; ねつもあります - cũng bị sốt. も là "cũng".
+    display_answer: かぜをひきました。ねつもあります。
+  - key: ja:exercise:sick-hospital-odai-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u11-odaijini
+    prompt:
+      source_text: ねつがありますか。- はい、すこしあります。おだいじに。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn có bị sốt không? - Vâng, hơi sốt. Mau khỏi bệnh nhé.
+        - Bạn có sốt không? - Có, hơi sốt. Chúc bạn mau khỏe.
+        - Bạn sốt không? - Có, tôi hơi sốt. Mau khỏe nhé.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn có bị sốt không? - Không, không sốt. Mau khỏi bệnh nhé.
+        feedback_vi: すこしあります nghĩa là "có một chút", không phải phủ định.
+        error_tag: meaning
+    explanation:
+      vi: すこし = một chút; おだいじに là lời chúc người ốm mau khỏi.
+    display_answer: Bạn có bị sốt không? - Vâng, hơi sốt. Mau khỏi bệnh nhé.
+  - key: ja:exercise:sick-hospital-byouki-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-byouki
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi nghỉ làm vì ốm."'
+      tokens:
+        - id: t3
+          text: やすみました。
+        - id: t2
+          text: かいしゃを
+        - id: t1
+          text: びょうきで
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: で đánh dấu nguyên nhân (bệnh) ở đầu; かいしゃを đối tượng; やすみました ở cuối.
+    display_answer: びょうきでかいしゃをやすみました。
+  - key: ja:exercise:sick-hospital-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-odaijini
+    prompt:
+      stem: Bạn của bạn nói “かぜをひきました。” Bạn muốn nói “Mau khỏe nhé”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: jkz
+          text: ごちそうさまでした。
+          lang: ja
+        - id: o21
+          text: おだいじに。
+          lang: ja
+        - id: j82
+          text: おやすみなさい。
+          lang: ja
+        - id: bb6
+          text: いってきます。
+          lang: ja
+    answer:
+      correct_option_id: o21
+    explanation:
+      vi: おだいじに là lời chúc người ốm. いってきます khi rời nhà, ごちそうさまでした sau bữa ăn, おやすみなさい khi đi ngủ.
+    display_answer: おだいじに。

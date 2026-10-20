@@ -1,0 +1,393 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:body-parts
+order_index: 1
+level: n5
+title:
+  vi: Các bộ phận cơ thể - あたま・め・てをあらいます
+objectives:
+  - vi: "Gọi tên các bộ phận cơ thể: あたま, め, みみ, はな, くち, は, て, あし, おなか, のど."
+  - vi: Dùng mẫu N が いたいです để nói đau ở đâu.
+  - vi: Miêu tả đặc điểm bằng N は N が A (ぞうははながながいです).
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:age-birthday
+items:
+  - item: ja:item:n5-u11-karada
+  - item: ja:item:n5-u11-atama
+  - item: ja:item:n5-u11-me
+  - item: ja:item:n5-u11-mimi
+  - item: ja:item:n5-u11-hana-nose
+  - item: ja:item:n5-u11-kuchi
+  - item: ja:item:n5-u11-ha-tooth
+  - item: ja:item:n5-u11-te
+  - item: ja:item:n5-u11-ashi
+  - item: ja:item:n5-u11-onaka
+  - item: ja:item:n5-u11-nodo
+  - item: ja:item:n5-u11-kami-hair
+  - item: ja:item:kao
+    role: reuse
+  - item: ja:item:itai
+    role: reuse
+  - item: ja:item:n5-u10-wa-ga-adj
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi được tên các bộ phận cơ thể và nói chỗ đau - あたまがいたいです。おなかがいたいです。
+  - type: explain
+    text:
+      vi: "Các bộ phận cơ thể đều ngắn và hay gặp: あたま (đầu), め (mắt), みみ (tai), はな (mũi), くち (miệng), は (răng), て (tay), あし (chân), おなか (bụng), のど (họng). かお (mặt) bạn đã học ở bảng Hiragana."
+  - type: explain
+    text:
+      vi: Nói đau ở đâu - bộ phận + が + いたいです. Ví dụ あたまがいたいです (đau đầu), はがいたいです (đau răng). Trợ từ đi trước いたい là が, không phải を hay は.
+  - type: explain
+    text:
+      vi: Mẫu miêu tả bộ phận - N は N が A です. Ví dụ ぞうははながながいです (voi thì mũi dài); わたしはかみがながいです (tôi tóc dài). Chủ đề là は, bộ phận là が.
+  - type: deep_explain
+    text:
+      vi: 'Những chữ dễ lẫn - は (歯, răng) viết giống trợ từ は nhưng đọc "ha"; はな (鼻, mũi) đọc giống はな (花, hoa); かみ (髪, tóc) đọc giống かみ (紙, giấy). Ngữ cảnh luôn phân biệt: はながいたい (đau mũi), かみがながい (tóc dài). Chữ Hán - 頭, 目, 耳, 鼻, 口, 歯, 手, 足, お腹, 体.'
+  - type: example
+    target: あたまがいたいです。
+    target_lang: ja
+    translation:
+      vi: Tôi đau đầu.
+    note:
+      vi: Bộ phận が いたいです.
+  - type: example
+    target: のどがいたくて、おなかもいたいです。
+    target_lang: ja
+    translation:
+      vi: Tôi đau họng và đau cả bụng.
+    note:
+      vi: いたくて nối hai ý; も - cũng.
+  - type: example
+    target: ぞうははながながいです。
+    target_lang: ja
+    translation:
+      vi: Con voi mũi dài.
+    note:
+      vi: N は N が A - miêu tả đặc điểm.
+  - type: example
+    target: てをあらってください。
+    target_lang: ja
+    translation:
+      vi: Hãy rửa tay.
+    note:
+      vi: Mẫu てください sẽ học ở N4; bây giờ bạn chỉ cần nhận ra てをあらいます.
+  - type: common_mistake
+    wrong: はをいたいです。
+    right: はがいたいです。
+    target_lang: ja
+    note:
+      vi: Với いたい, bộ phận được đánh dấu bằng が, không dùng を.
+  - type: common_mistake
+    wrong: くちとくつがいたいです。(đau miệng)
+    right: くちがいたいです。
+    target_lang: ja
+    note:
+      vi: くつ là giày, không phải miệng. Hai từ chỉ khác chữ thứ hai.
+  - type: summary
+    points:
+      - vi: あたま đầu · め mắt · みみ tai · はな mũi · くち miệng · は răng · て tay · あし chân · おなか bụng · のど họng · かみ tóc.
+      - vi: Bộ phận + が + いたいです - đau ở đâu.
+      - vi: "N は N が A - miêu tả bộ phận: ぞうははながながい."
+      - vi: Cẩn thận - は (răng) đọc ha; はな mũi ≠ はな hoa; かみ tóc ≠ かみ giấy.
+exercises:
+  - key: ja:exercise:body-parts-atama
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-atama
+    prompt:
+      stem: Từ nào có nghĩa là “đầu”?
+      stem_lang: vi
+      options:
+        - id: hd6
+          text: みみ
+          lang: ja
+        - id: eq2
+          text: あし
+          lang: ja
+        - id: rsw
+          text: あたま
+          lang: ja
+        - id: s3v
+          text: おなか
+          lang: ja
+    answer:
+      correct_option_id: rsw
+    explanation:
+      vi: あたま là đầu. おなか là bụng, みみ là tai, あし là chân.
+    display_answer: あたま
+  - key: ja:exercise:body-parts-kuchi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-kuchi
+    prompt:
+      stem: Từ nào có nghĩa là “miệng”?
+      stem_lang: vi
+      options:
+        - id: gmi
+          text: くつ
+          lang: ja
+        - id: kn5
+          text: くも
+          lang: ja
+        - id: sg0
+          text: くま
+          lang: ja
+        - id: usb
+          text: くち
+          lang: ja
+    answer:
+      correct_option_id: usb
+    explanation:
+      vi: くち là miệng. くつ là giày, くも là mây, くま là gấu - đều bắt đầu bằng く nên hãy đọc kỹ chữ thứ hai.
+    display_answer: くち
+  - key: ja:exercise:body-parts-nodo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u11-nodo
+    prompt:
+      audio_asset_id: null
+      fallback_text: のどがいたくて、あたまもいたいです。
+      options:
+        - id: a9m
+          text: Tôi đau răng và đau cả đầu.
+          lang: vi
+        - id: n5k
+          text: Tôi đau bụng và đau cả họng.
+          lang: vi
+        - id: odq
+          text: Tôi đau đầu và đau cả chân.
+          lang: vi
+        - id: tln
+          text: Tôi đau họng và đau cả đầu.
+          lang: vi
+    answer:
+      correct_option_id: tln
+    explanation:
+      vi: のど là họng, あたま là đầu, いたくて nối hai ý, も là "cũng".
+    display_answer: Tôi đau họng và đau cả đầu.
+  - key: ja:exercise:body-parts-ha-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-ha-tooth
+    prompt:
+      template: "{{b1}}がいたいです。 (Tôi đau răng.)"
+      blanks:
+        - id: b1
+          width_hint: 2
+      hint_levels:
+        - Bộ phận dùng để nhai.
+        - Chỉ một chữ - は.
+    answer:
+      blanks:
+        b1:
+          - は
+          - 歯
+    known_wrong:
+      - answer: て
+        feedback_vi: て là tay.
+        error_tag: vocab_meaning
+      - answer: め
+        feedback_vi: め là mắt.
+        error_tag: vocab_meaning
+    explanation:
+      vi: は là răng. Cẩn thận - đọc "ha", không đọc "wa" như trợ từ.
+    display_answer: はがいたいです。
+  - key: ja:exercise:body-parts-onaka
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u11-onaka
+    prompt:
+      stem: Bạn đói bụng. Bạn nói “おなかが ___”. Từ nào hợp?
+      stem_lang: vi
+      options:
+        - id: kz9
+          text: ながいです
+          lang: ja
+        - id: gu2
+          text: おいしいです
+          lang: ja
+        - id: bjn
+          text: すきました
+          lang: ja
+        - id: vr2
+          text: たかいです
+          lang: ja
+    answer:
+      correct_option_id: bjn
+    explanation:
+      vi: おなかがすきました nghĩa là "đói rồi". おいしい (ngon), ながい (dài), たかい (cao/đắt) không đi với おなか.
+    display_answer: すきました
+  - key: ja:exercise:body-parts-mimi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-mimi
+    prompt:
+      template: "{{b1}}がいたいです。 (Tôi đau tai.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - みみ
+          - 耳
+    known_wrong:
+      - answer: め
+        feedback_vi: め là mắt.
+        error_tag: vocab_meaning
+      - answer: はな
+        feedback_vi: はな là mũi (hoặc hoa).
+        error_tag: vocab_meaning
+    explanation:
+      vi: みみ là tai. Mẫu bộ phận が いたいです.
+    display_answer: みみがいたいです。
+  - key: ja:exercise:body-parts-te-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-te
+    prompt:
+      template: ごはんのまえに{{b1}}をあらいます。 (Trước bữa ăn tôi rửa tay.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - て
+          - 手
+    known_wrong:
+      - answer: あし
+        feedback_vi: あし là chân; trước bữa ăn người ta rửa tay.
+        error_tag: vocab_meaning
+    explanation:
+      vi: て là tay. あらいます - rửa; てをあらいます - rửa tay.
+    display_answer: ごはんのまえにてをあらいます。
+  - key: ja:exercise:body-parts-atama-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-atama
+    prompt:
+      source_text: Tôi đau đầu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あたまがいたいです。
+        - 頭が痛いです。
+        - わたしはあたまがいたいです。
+        - あたまがいたい。
+    known_wrong:
+      - answer: あたまをいたいです。
+        feedback_vi: Với いたい, bộ phận đi với が, không dùng を.
+        error_tag: particle_ga_wo
+      - answer: おなかがいたいです。
+        feedback_vi: おなか là bụng; đầu là あたま.
+        error_tag: vocab_meaning
+    explanation:
+      vi: あたま = đầu; N が いたいです = đau ở N.
+    display_answer: あたまがいたいです。
+  - key: ja:exercise:body-parts-zou-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u11-hana-nose
+    prompt:
+      source_text: ぞうははながながいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Con voi mũi dài.
+        - Voi có cái mũi dài.
+        - Con voi thì mũi dài.
+        - Voi mũi dài.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Con voi tai dài.
+        feedback_vi: はな là mũi, tai là みみ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: N は N が A - voi (chủ đề), mũi (bộ phận), dài. はな ở đây là mũi.
+    display_answer: Con voi mũi dài.
+  - key: ja:exercise:body-parts-kuchi-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-kuchi
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi đau họng và đau đầu."'
+      tokens:
+        - id: t1
+          text: のどが
+        - id: t4
+          text: いたいです。
+        - id: t3
+          text: あたまも
+        - id: t2
+          text: いたくて、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Hai ý nối bằng いたくて; も (cũng) gắn vào bộ phận thứ hai.
+    display_answer: のどがいたくて、あたまもいたいです。
+  - key: ja:exercise:body-parts-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u11-karada
+    prompt:
+      stem: Bác sĩ hỏi “どこがいたいですか。” (Bạn đau ở đâu?). Câu trả lời nào đúng?
+      stem_lang: vi
+      options:
+        - id: w97
+          text: おなかにいたいです。
+          lang: ja
+        - id: ua9
+          text: おなかをいたいです。
+          lang: ja
+        - id: c3k
+          text: おなかはいたいです。
+          lang: ja
+        - id: dd7
+          text: おなかがいたいです。
+          lang: ja
+    answer:
+      correct_option_id: dd7
+    explanation:
+      vi: Trả lời bằng bộ phận + が + いたいです. を hoặc に không đi với いたい; は nghe như đang so sánh với bộ phận khác.
+    display_answer: おなかがいたいです。

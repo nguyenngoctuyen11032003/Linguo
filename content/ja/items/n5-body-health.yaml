@@ -1,0 +1,594 @@
+# Học liệu unit "Cơ thể và sức khoẻ" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u11-karada
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 体
+      reading: からだ
+      romanization: karada
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ thể, thân thể; sức khoẻ
+      examples:
+        - target: からだがげんきです。
+          translation:
+            vi: Cơ thể tôi khoẻ mạnh.
+  - key: ja:item:n5-u11-atama
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 頭
+      reading: あたま
+      romanization: atama
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu
+      examples:
+        - target: あたまがいたいです。
+          translation:
+            vi: Tôi đau đầu.
+  - key: ja:item:n5-u11-me
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 目
+      reading: め
+      romanization: me
+      pos: danh từ
+    back:
+      meaning:
+        vi: mắt
+      examples:
+        - target: めがおおきいです。
+          translation:
+            vi: Mắt to.
+  - key: ja:item:n5-u11-mimi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 耳
+      reading: みみ
+      romanization: mimi
+      pos: danh từ
+    back:
+      meaning:
+        vi: tai
+      examples:
+        - target: みみがいたいです。
+          translation:
+            vi: Tôi đau tai.
+  - key: ja:item:n5-u11-hana-nose
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 鼻
+      reading: はな
+      romanization: hana
+      pos: danh từ
+    back:
+      meaning:
+        vi: mũi
+      examples:
+        - target: ぞうははながながいです。
+          translation:
+            vi: Con voi mũi dài.
+      confusion:
+        vi: はな (鼻, mũi) và はな (花, hoa) đọc giống nhau; 鼻 có trọng âm khác nhưng người mới cứ dựa vào ngữ cảnh.
+  - key: ja:item:n5-u11-kuchi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 口
+      reading: くち
+      romanization: kuchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: miệng
+      examples:
+        - target: くちをあけてください。
+          translation:
+            vi: Xin hãy mở miệng ra.
+      confusion:
+        vi: くち (miệng) khác くつ (giày) và くも (mây) - chỉ khác chữ thứ hai.
+  - key: ja:item:n5-u11-ha-tooth
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 歯
+      reading: は
+      romanization: ha
+      pos: danh từ
+    back:
+      meaning:
+        vi: răng
+      examples:
+        - target: はがいたいです。
+          translation:
+            vi: Tôi đau răng.
+      confusion:
+        vi: は (歯, răng) viết giống trợ từ は nhưng đọc "ha", không đọc "wa".
+  - key: ja:item:n5-u11-te
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 手
+      reading: て
+      romanization: te
+      pos: danh từ
+    back:
+      meaning:
+        vi: tay, bàn tay
+      examples:
+        - target: てをあらいます。
+          translation:
+            vi: Tôi rửa tay.
+  - key: ja:item:n5-u11-ashi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 足
+      reading: あし
+      romanization: ashi
+      pos: danh từ
+    back:
+      meaning:
+        vi: chân, bàn chân
+      examples:
+        - target: あしがいたいです。
+          translation:
+            vi: Tôi đau chân.
+  - key: ja:item:n5-u11-onaka
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: お腹
+      reading: おなか
+      romanization: onaka
+      pos: danh từ
+    back:
+      meaning:
+        vi: bụng, dạ dày
+      examples:
+        - target: おなかがすきました。
+          translation:
+            vi: Tôi đói rồi.
+      pronunciation_note:
+        vi: おなかがすきます = đói bụng; おなかがいっぱいです = no bụng.
+  - key: ja:item:n5-u11-nodo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: のど
+      romanization: nodo
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ họng
+      examples:
+        - target: のどがいたいです。
+          translation:
+            vi: Tôi đau họng.
+      pronunciation_note:
+        vi: Hay viết kana; chữ Hán 喉 ít gặp.
+  - key: ja:item:n5-u11-kami-hair
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 髪
+      reading: かみ
+      romanization: kami
+      pos: danh từ
+    back:
+      meaning:
+        vi: tóc
+      examples:
+        - target: かみがながいです。
+          translation:
+            vi: Tóc dài.
+      confusion:
+        vi: かみ (髪, tóc) đọc giống かみ (紙, giấy) - ngữ cảnh cho biết nghĩa.
+  - key: ja:item:n5-u11-byouki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 病気
+      reading: びょうき
+      romanization: byouki
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh, ốm
+      examples:
+        - target: びょうきでがっこうをやすみました。
+          translation:
+            vi: Tôi nghỉ học vì ốm.
+      pronunciation_note:
+        vi: びょう kéo dài (byou) - びょういん (bệnh viện) cũng vậy.
+  - key: ja:item:n5-u11-kaze
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 風邪
+      reading: かぜ
+      romanization: kaze
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảm lạnh, cảm cúm
+      examples:
+        - target: かぜをひきました。
+          translation:
+            vi: Tôi bị cảm.
+      confusion:
+        vi: かぜ (風邪, cảm) viết giống かぜ (風, gió) khi chỉ viết kana; hãy dựa vào ひきます - かぜをひく.
+  - key: ja:item:n5-u11-netsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 熱
+      reading: ねつ
+      romanization: netsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: sốt; nhiệt
+      examples:
+        - target: ねつがあります。
+          translation:
+            vi: Tôi bị sốt.
+  - key: ja:item:n5-u11-byouin
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 病院
+      reading: びょういん
+      romanization: byouin
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh viện
+      examples:
+        - target: びょういんへいきます。
+          translation:
+            vi: Tôi đi bệnh viện.
+      confusion:
+        vi: びょういん (bệnh viện) và びよういん (tiệm làm tóc) chỉ khác độ dài một âm - byou vs biyou.
+  - key: ja:item:n5-u11-yasumimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 休みます
+      reading: やすみます
+      romanization: yasumimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: nghỉ, nghỉ ngơi; vắng mặt
+      examples:
+        - target: きょうはかいしゃをやすみます。
+          translation:
+            vi: Hôm nay tôi nghỉ làm.
+  - key: ja:item:n5-u11-yasumi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 休み
+      reading: やすみ
+      romanization: yasumi
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày nghỉ, kỳ nghỉ
+      examples:
+        - target: あしたはやすみです。
+          translation:
+            vi: Ngày mai là ngày nghỉ.
+  - key: ja:item:n5-u11-daijoubu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大丈夫
+      reading: だいじょうぶ
+      romanization: daijoubu
+      pos: tính từ な
+    back:
+      meaning:
+        vi: không sao, ổn, được
+      examples:
+        - target: だいじょうぶですか。- はい、だいじょうぶです。
+          translation:
+            vi: Bạn ổn chứ? - Vâng, tôi ổn.
+      pronunciation_note:
+        vi: だい + じょう (kéo dài) + ぶ.
+  - key: ja:item:n5-u11-odaijini
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: お大事に
+      reading: おだいじに
+      romanization: odaijini
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Chúc mau khỏi bệnh (nói với người đang ốm)
+      examples:
+        - target: おだいじに。- ありがとうございます。
+          translation:
+            vi: Mong bạn mau khỏe. - Cảm ơn bạn.
+  - key: ja:item:n5-u11-kaze-hiku
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 風邪を引きます
+      reading: かぜをひきます
+      romanization: kaze o hikimasu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: bị cảm (nghĩa đen "kéo cảm")
+      examples:
+        - target: きのうからかぜをひいています。
+          translation:
+            vi: Từ hôm qua tôi bị cảm.
+  - key: ja:item:n5-u11-doushimashita
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: どうしましたか
+      romanization: dou shimashita ka
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Bạn bị sao vậy? (bác sĩ hỏi khi bệnh nhân vào khám)
+      examples:
+        - target: どうしましたか。- あたまがいたいです。
+          translation:
+            vi: Bạn bị sao vậy? - Tôi đau đầu.
+  - key: ja:item:n5-u11-ofuro
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: お風呂
+      reading: おふろ
+      romanization: ofuro
+      pos: danh từ
+    back:
+      meaning:
+        vi: bồn tắm; việc tắm (ngâm bồn)
+      examples:
+        - target: まいばんおふろにはいります。
+          translation:
+            vi: Tối nào tôi cũng tắm bồn.
+      confusion:
+        vi: おふろにはいります = tắm (ngâm bồn). Tắm vòi hoa sen là シャワーをあびます.
+  - key: ja:item:n5-u11-shawaa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: シャワー
+      romanization: shawaa
+      pos: danh từ
+    back:
+      meaning:
+        vi: vòi hoa sen; việc tắm vòi
+      examples:
+        - target: あさシャワーをあびます。
+          translation:
+            vi: Buổi sáng tôi tắm vòi sen.
+  - key: ja:item:n5-u11-ha-migaku
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 歯を磨きます
+      reading: はをみがきます
+      romanization: ha o migakimasu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: đánh răng
+      examples:
+        - target: まいあさはをみがきます。
+          translation:
+            vi: Sáng nào tôi cũng đánh răng.
+  - key: ja:item:n5-u11-araimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 洗います
+      reading: あらいます
+      romanization: araimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: rửa, giặt, gội
+      examples:
+        - target: てをあらいます。
+          translation:
+            vi: Tôi rửa tay.
+  - key: ja:item:n5-u11-sanpo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 散歩
+      reading: さんぽ
+      romanization: sanpo
+      pos: danh từ
+    back:
+      meaning:
+        vi: đi dạo
+      examples:
+        - target: こうえんをさんぽします。
+          translation:
+            vi: Tôi đi dạo ở công viên.
+      pronunciation_note:
+        vi: さんぽします = đi dạo (danh từ + します).
+  - key: ja:item:n5-u11-undou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 運動
+      reading: うんどう
+      romanization: undou
+      pos: danh từ
+    back:
+      meaning:
+        vi: vận động, tập thể dục
+      examples:
+        - target: まいにちうんどうします。
+          translation:
+            vi: Ngày nào tôi cũng tập thể dục.
+  - key: ja:item:n5-u11-hayai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 早い
+      reading: はやい
+      romanization: hayai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: sớm; (còn nghĩa nhanh khi viết 速い)
+      examples:
+        - target: あしたははやくおきます。
+          translation:
+            vi: Ngày mai tôi dậy sớm.
+      confusion:
+        vi: はやい viết 早い (sớm) hoặc 速い (nhanh); trạng từ dạng く - はやく.
+  - key: ja:item:n5-u11-osoi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 遅い
+      reading: おそい
+      romanization: osoi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: muộn; chậm
+      examples:
+        - target: ゆうべはおそくねました。
+          translation:
+            vi: Tối qua tôi ngủ muộn.
+  - key: ja:item:n5-u11-karada-ni-ii
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 体にいい
+      reading: からだにいい
+      romanization: karada ni ii
+      pos: cụm từ
+    back:
+      meaning:
+        vi: tốt cho sức khoẻ
+      examples:
+        - target: やさいはからだにいいです。
+          translation:
+            vi: Rau tốt cho sức khoẻ.
