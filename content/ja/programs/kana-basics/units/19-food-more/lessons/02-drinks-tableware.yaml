@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:drinks-tableware
+order_index: 2
+level: n5
+title:
+  vi: Đồ uống, gia vị và dụng cụ ăn - ジュース・しお・はし
+objectives:
+  - vi: "Gọi tên đồ uống: のみもの, ジュース, ビール, おさけ, ぎゅうにゅう."
+  - vi: "Gọi tên gia vị và dụng cụ: さとう, しお, しょうゆ, はし, さら, コップ, ちゃわん, スプーン."
+  - vi: Dùng các từ trên khi nhờ lấy đồ ở bàn ăn.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:food-types
+items:
+  - item: ja:item:n5-u19-nomimono
+  - item: ja:item:n5-u19-juusu
+  - item: ja:item:n5-u19-biiru
+  - item: ja:item:n5-u19-osake
+  - item: ja:item:n5-u19-gyuunyuu
+  - item: ja:item:n5-u19-satou
+  - item: ja:item:n5-u19-shio
+  - item: ja:item:n5-u19-shouyu
+  - item: ja:item:n5-u19-hashi
+  - item: ja:item:n5-u19-sara
+  - item: ja:item:n5-u19-koppu
+  - item: ja:item:n5-u19-chawan
+  - item: ja:item:n5-u19-supuun
+  - item: ja:item:n5-u16-torimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi tên đồ uống, gia vị và đồ dùng khi ăn - しおをとってください。コップにみずをいれます。
+  - type: explain
+    text:
+      vi: "Đồ uống: のみもの (đồ uống nói chung), ジュース (nước ép, nước ngọt), ビール (bia), おさけ (rượu), ぎゅうにゅう (sữa bò), みず, おちゃ, コーヒー (đã học). Hỏi - のみものはなにがいいですか."
+  - type: explain
+    text:
+      vi: "Gia vị: さとう (đường), しお (muối), しょうゆ (xì dầu). Đồ dùng ăn: はし (đũa), スプーン (thìa), さら (đĩa), コップ (cốc), ちゃわん (bát cơm)."
+  - type: explain
+    text:
+      vi: Nhờ lấy đồ ở bàn - しおをとってください (xin lấy giúp tôi muối). てください sẽ học kỹ ở N4; bây giờ bạn nhận ra và dùng cụm này như một câu mẫu.
+  - type: deep_explain
+    text:
+      vi: はし (箸, đũa) đọc giống はし (橋, cầu) nhưng ngữ cảnh khác. おさけ trong hội thoại là đồ uống có cồn nói chung; Nhật Bản gọi rượu gạo là にほんしゅ hoặc おさけ. ちゃわん dùng cho cơm và chén trà; コップ dùng cho nước, nhưng cũng có từ カップ cho tách cà phê. Chữ Hán - 飲み物, 牛乳, 砂糖, 塩, 醤油, 箸, 皿, 茶碗.
+  - type: example
+    target: のみものはなにがいいですか。- ジュースをください。
+    target_lang: ja
+    translation:
+      vi: Bạn muốn uống gì? - Cho tôi nước ép.
+    note:
+      vi: N をください - xin cho N.
+  - type: example
+    target: コップにみずをいれます。
+    target_lang: ja
+    translation:
+      vi: Tôi rót nước vào cốc.
+    note:
+      vi: いれます - cho vào.
+  - type: example
+    target: はしでごはんをたべます。
+    target_lang: ja
+    translation:
+      vi: Tôi ăn cơm bằng đũa.
+    note:
+      vi: で - phương tiện.
+  - type: example
+    target: しおをとってください。
+    target_lang: ja
+    translation:
+      vi: Xin lấy giúp tôi muối.
+    note:
+      vi: とって - thể て của とります.
+  - type: common_mistake
+    wrong: スプーンでごはんをたべます。(cơm Nhật thường dùng đũa)
+    right: はしでごはんをたべます。
+    target_lang: ja
+    note:
+      vi: Cơm thường ăn bằng はし; スプーン dùng cho súp hoặc món như curry.
+  - type: common_mistake
+    wrong: ジュースをたべます。
+    right: ジュースをのみます。
+    target_lang: ja
+    note:
+      vi: Đồ uống dùng のみます.
+  - type: summary
+    points:
+      - vi: のみもの đồ uống · ジュース · ビール · おさけ · ぎゅうにゅう.
+      - vi: さとう đường · しお muối · しょうゆ xì dầu.
+      - vi: はし đũa · スプーン thìa · さら đĩa · コップ cốc · ちゃわん bát.
+      - vi: しおを とってください - nhờ lấy muối.
+exercises:
+  - key: ja:exercise:drinks-tableware-juusu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-juusu
+    prompt:
+      stem: Từ nào có nghĩa là “nước ép, nước ngọt”?
+      stem_lang: vi
+      options:
+        - id: q0f
+          text: ぎゅうにゅう
+          lang: ja
+        - id: lg8
+          text: おさけ
+          lang: ja
+        - id: e13
+          text: ジュース
+          lang: ja
+        - id: uxj
+          text: ビール
+          lang: ja
+    answer:
+      correct_option_id: e13
+    explanation:
+      vi: ジュース là nước ép/nước ngọt. ビール là bia, おさけ là rượu, ぎゅうにゅう là sữa bò.
+    display_answer: ジュース
+  - key: ja:exercise:drinks-tableware-hashi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-hashi
+    prompt:
+      stem: Bạn ăn cơm bằng gì?
+      stem_lang: vi
+      options:
+        - id: yb9
+          text: さら
+          lang: ja
+        - id: njg
+          text: はし
+          lang: ja
+        - id: st6
+          text: スプーン
+          lang: ja
+        - id: ba8
+          text: コップ
+          lang: ja
+    answer:
+      correct_option_id: njg
+    explanation:
+      vi: はし là đũa - dụng cụ ăn cơm. さら là đĩa, コップ là cốc, スプーン là thìa.
+    display_answer: はし
+  - key: ja:exercise:drinks-tableware-shio
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u19-shio
+    prompt:
+      audio_asset_id: null
+      fallback_text: すみません、しおをとってください。さとうもおねがいします。
+      options:
+        - id: od9
+          text: Xin lỗi, lấy giúp tôi muối. Cũng làm ơn cho đường.
+          lang: vi
+        - id: mw5
+          text: Xin lỗi, lấy giúp tôi đường. Cũng làm ơn cho muối.
+          lang: vi
+        - id: tju
+          text: Xin lỗi, lấy giúp tôi muối. Cũng làm ơn cho đũa.
+          lang: vi
+        - id: w3m
+          text: Xin lỗi, lấy giúp tôi xì dầu. Cũng làm ơn cho đường.
+          lang: vi
+    answer:
+      correct_option_id: od9
+    explanation:
+      vi: しお - muối; さとう - đường; とってください - xin lấy giúp.
+    display_answer: Xin lỗi, lấy giúp tôi muối. Cũng làm ơn cho đường.
+  - key: ja:exercise:drinks-tableware-koppu-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-koppu
+    prompt:
+      template: "{{b1}}にみずをいれます。 (Tôi rót nước vào cốc.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Vật đựng nước, katakana.
+        - Bắt đầu bằng コ - コップ.
+    answer:
+      blanks:
+        b1:
+          - コップ
+    known_wrong:
+      - answer: さら
+        feedback_vi: さら là đĩa; nước đựng trong cốc.
+        error_tag: vocab_meaning
+    explanation:
+      vi: コップ là cốc thuỷ tinh - đựng nước.
+    display_answer: コップにみずをいれます。
+  - key: ja:exercise:drinks-tableware-nomu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-biiru
+    prompt:
+      stem: Bạn uống bia. Động từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: dx7
+          text: きます
+          lang: ja
+        - id: mgf
+          text: たべます
+          lang: ja
+        - id: spr
+          text: のみます
+          lang: ja
+        - id: aik
+          text: かぶります
+          lang: ja
+    answer:
+      correct_option_id: spr
+    explanation:
+      vi: Bia là đồ uống nên dùng のみます. たべます là ăn, きます là mặc áo, かぶります là đội mũ.
+    display_answer: のみます
+  - key: ja:exercise:drinks-tableware-shouyu-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-shouyu
+    prompt:
+      template: さしみに{{b1}}をつけます。 (Tôi chấm sashimi với xì dầu.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - しょうゆ
+          - 醤油
+    known_wrong:
+      - answer: さとう
+        feedback_vi: さとう là đường; sashimi chấm xì dầu.
+        error_tag: vocab_meaning
+    explanation:
+      vi: しょうゆ là xì dầu; sashimi thường chấm xì dầu và wasabi.
+    display_answer: さしみにしょうゆをつけます。
+  - key: ja:exercise:drinks-tableware-satou-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-satou
+    prompt:
+      template: コーヒーに{{b1}}をいれます。 (Tôi cho đường vào cà phê.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - さとう
+          - 砂糖
+    known_wrong:
+      - answer: しお
+        feedback_vi: しお là muối; cà phê thêm đường.
+        error_tag: vocab_meaning
+    explanation:
+      vi: さとう là đường. コーヒーにさとうをいれます - cho đường vào cà phê.
+    display_answer: コーヒーにさとうをいれます。
+  - key: ja:exercise:drinks-tableware-hashi-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-hashi
+    prompt:
+      source_text: Tôi ăn cơm bằng đũa.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - はしでごはんをたべます。
+        - 箸でご飯を食べます。
+        - はしでごはんをたべる。
+        - はしでごはんを食べます。
+    known_wrong:
+      - answer: スプーンでごはんをたべます。
+        feedback_vi: Câu yêu cầu dùng đũa (はし).
+        error_tag: tableware
+    explanation:
+      vi: はし - đũa; N で - bằng N; ごはんをたべます - ăn cơm.
+    display_answer: はしでごはんをたべます。
+  - key: ja:exercise:drinks-tableware-shio-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u19-shio
+    prompt:
+      source_text: すみません、しおをとってください。ありがとうございます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin lỗi, lấy giúp tôi muối. Cảm ơn bạn.
+        - Xin lỗi, làm ơn lấy muối giúp tôi. Cảm ơn.
+        - Xin lỗi, lấy hộ tôi lọ muối. Xin cảm ơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin lỗi, lấy giúp tôi đường. Cảm ơn bạn.
+        feedback_vi: しお là muối, さとう mới là đường.
+        error_tag: vocab_meaning
+    explanation:
+      vi: しお - muối; とってください - xin hãy lấy giúp.
+    display_answer: Xin lỗi, lấy giúp tôi muối. Cảm ơn bạn.
+  - key: ja:exercise:drinks-tableware-koppu-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-koppu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi rót nước vào cốc."'
+      tokens:
+        - id: t3
+          text: いれます。
+        - id: t1
+          text: コップに
+        - id: t2
+          text: みずを
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Nơi đựng (コップに) → vật (みずを) → いれます.
+    display_answer: コップにみずをいれます。
+  - key: ja:exercise:drinks-tableware-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-nomimono
+    prompt:
+      stem: Nhân viên hỏi “のみものはなにがいいですか”. Bạn muốn uống nước cam. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - id: uzp
+          text: オレンジジュースをかぶります。
+          lang: ja
+        - id: hmf
+          text: オレンジジュースをきます。
+          lang: ja
+        - id: kw0
+          text: オレンジジュースをもちます。
+          lang: ja
+        - id: gzg
+          text: オレンジジュースをください。
+          lang: ja
+    answer:
+      correct_option_id: gzg
+    explanation:
+      vi: N をください là cách gọi đồ uống. きます, かぶります, もちます không phù hợp với việc gọi đồ.
+    display_answer: オレンジジュースをください。

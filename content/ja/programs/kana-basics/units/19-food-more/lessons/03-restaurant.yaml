@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:restaurant-talk
+order_index: 3
+level: n5
+title:
+  vi: Ở nhà hàng - ちゅうもん・おなかがすきました
+objectives:
+  - vi: Nói đói, khát bằng おなかがすきました, のどがかわきました.
+  - vi: Gọi món và thanh toán bằng ちゅうもん, メニュー, おかいけい.
+  - vi: Hội thoại mẫu ở nhà hàng từ lúc vào đến lúc trả tiền.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:drinks-tableware
+items:
+  - item: ja:item:n5-u19-chuumon
+  - item: ja:item:n5-u19-okaikei
+  - item: ja:item:n5-u19-onaka-sukimashita
+  - item: ja:item:n5-u19-nodo-kawakimashita
+  - item: ja:item:menyuu
+    role: reuse
+  - item: ja:item:irasshaimase
+    role: reuse
+  - item: ja:item:itadakimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hoàn thành một lần ăn ở nhà hàng - ちゅうもんをおねがいします。ごちそうさまでした。おかいけいをおねがいします。
+  - type: explain
+    text:
+      vi: Cảm giác - おなかがすきました (đói rồi), のどがかわきました (khát rồi). Cả hai đều dùng thì quá khứ nhưng nghĩa là "đã đói/khát" tức là bây giờ đang đói/khát.
+  - type: explain
+    text:
+      vi: Ở nhà hàng - nhân viên nói いらっしゃいませ; bạn nhờ メニューをおねがいします, gọi món ちゅうもんをおねがいします rồi N を ください. Trước khi ăn nói いただきます, sau khi ăn ごちそうさまでした.
+  - type: explain
+    text:
+      vi: Tính tiền - おかいけいをおねがいします (làm ơn tính tiền). Hỏi giá - いくらですか; cảm ơn - ごちそうさまでした. Ở Nhật thường không có tiền boa.
+  - type: deep_explain
+    text:
+      vi: おなかがすきました và のどがかわきました dùng thì quá khứ ました nhưng thực ra mô tả trạng thái hiện tại - giống "tôi đói rồi" trong tiếng Việt. Khi muốn rủ, nói おなかがすきましたね、なにかたべませんか (Đói rồi nhỉ, mình ăn gì nhé?). Chữ Hán - 注文, お会計.
+  - type: example
+    target: おなかがすきました。ラーメンをたべませんか。
+    target_lang: ja
+    translation:
+      vi: Tôi đói rồi. Chúng ta ăn ramen nhé?
+    note:
+      vi: おなかがすきました - đói rồi.
+  - type: example
+    target: すみません、ちゅうもんをおねがいします。ラーメンとビールをください。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, cho tôi gọi món. Cho tôi ramen và bia.
+    note:
+      vi: ちゅうもん - gọi món.
+  - type: example
+    target: のどがかわきました。みずをください。
+    target_lang: ja
+    translation:
+      vi: Tôi khát rồi. Cho tôi nước.
+    note:
+      vi: のどがかわきました - khát rồi.
+  - type: example
+    target: ごちそうさまでした。おかいけいをおねがいします。
+    target_lang: ja
+    translation:
+      vi: Cảm ơn bữa ăn. Làm ơn tính tiền.
+    note:
+      vi: おかいけい - thanh toán.
+  - type: common_mistake
+    wrong: おなかがすきます。(đang đói)
+    right: おなかがすきました。
+    target_lang: ja
+    note:
+      vi: Nói "đói rồi" dùng ました; すきます nghe như thói quen hoặc tương lai.
+  - type: common_mistake
+    wrong: いただきますといいます。(sau bữa ăn)
+    right: ごちそうさまでしたといいます。
+    target_lang: ja
+    note:
+      vi: Sau bữa ăn nói ごちそうさまでした; いただきます nói trước khi ăn.
+  - type: summary
+    points:
+      - vi: おなかがすきました · のどがかわきました - đói, khát.
+      - vi: メニューを おねがいします · ちゅうもんを おねがいします · N を ください.
+      - vi: おかいけいを おねがいします - tính tiền.
+      - vi: いただきます (trước) · ごちそうさまでした (sau).
+exercises:
+  - key: ja:exercise:restaurant-talk-onaka
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-onaka-sukimashita
+    prompt:
+      stem: Bạn muốn nói “Tôi đói rồi”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: zhv
+          text: おなかがいたいです。
+          lang: ja
+        - id: nof
+          text: ねむいです。
+          lang: ja
+        - id: spd
+          text: のどがかわきました。
+          lang: ja
+        - id: zml
+          text: おなかがすきました。
+          lang: ja
+    answer:
+      correct_option_id: zml
+    explanation:
+      vi: おなかがすきました là đói. おなかがいたい là đau bụng, のどがかわきました là khát, ねむい là buồn ngủ.
+    display_answer: おなかがすきました。
+  - key: ja:exercise:restaurant-talk-okaikei
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-okaikei
+    prompt:
+      stem: Bạn ăn xong và muốn tính tiền. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: c5f
+          text: いただきます。
+          lang: ja
+        - id: yso
+          text: メニューをおねがいします。
+          lang: ja
+        - id: tfr
+          text: ちゅうもんをおねがいします。
+          lang: ja
+        - id: vlj
+          text: おかいけいをおねがいします。
+          lang: ja
+    answer:
+      correct_option_id: vlj
+    explanation:
+      vi: おかいけいをおねがいします - làm ơn tính tiền. メニュー là thực đơn, ちゅうもん là gọi món, いただきます nói trước khi ăn.
+    display_answer: おかいけいをおねがいします。
+  - key: ja:exercise:restaurant-talk-chuumon
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u19-chuumon
+    prompt:
+      audio_asset_id: null
+      fallback_text: すみません、ちゅうもんをおねがいします。ラーメンとビールをください。
+      options:
+        - id: arl
+          text: Xin lỗi, tính tiền giúp tôi. Cho tôi ramen và bia.
+          lang: vi
+        - id: fyn
+          text: Xin lỗi, cho tôi gọi món. Cho tôi mì và rượu.
+          lang: vi
+        - id: g8o
+          text: Xin lỗi, cho tôi gọi món. Cho tôi ramen và bia.
+          lang: vi
+        - id: cyn
+          text: Xin lỗi, cho tôi thực đơn. Cho tôi ramen và nước.
+          lang: vi
+    answer:
+      correct_option_id: g8o
+    explanation:
+      vi: ちゅうもん - gọi món; ラーメン - mì ramen; ビール - bia.
+    display_answer: Xin lỗi, cho tôi gọi món. Cho tôi ramen và bia.
+  - key: ja:exercise:restaurant-talk-nodo-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-nodo-kawakimashita
+    prompt:
+      template: "{{b1}}がかわきました。みずをください。 (Tôi khát rồi. Cho tôi nước.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Bộ phận cơ thể khô khi khát.
+        - Bắt đầu bằng の - のど.
+    answer:
+      blanks:
+        b1:
+          - のど
+          - 喉
+    known_wrong:
+      - answer: おなか
+        feedback_vi: おなかがすきました mới là đói; khát dùng のど.
+        error_tag: vocab_meaning
+    explanation:
+      vi: のどがかわきました là khát (họng khô).
+    display_answer: のどがかわきました。みずをください。
+  - key: ja:exercise:restaurant-talk-itadakimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-chuumon
+    prompt:
+      stem: Sau khi ăn xong, bạn nói câu nào?
+      stem_lang: vi
+      options:
+        - id: can
+          text: いただきます。
+          lang: ja
+        - id: r7h
+          text: いらっしゃいませ。
+          lang: ja
+        - id: ft6
+          text: おだいじに。
+          lang: ja
+        - id: mkg
+          text: ごちそうさまでした。
+          lang: ja
+    answer:
+      correct_option_id: mkg
+    explanation:
+      vi: ごちそうさまでした nói sau bữa ăn. いただきます nói trước, いらっしゃいませ là câu chào khách của nhân viên, おだいじに là chúc người ốm.
+    display_answer: ごちそうさまでした。
+  - key: ja:exercise:restaurant-talk-onaka-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-onaka-sukimashita
+    prompt:
+      template: "{{b1}}がすきました。ラーメンをたべませんか。 (Tôi đói rồi. Ăn ramen nhé?)"
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - おなか
+          - お腹
+    known_wrong:
+      - answer: のど
+        feedback_vi: のど dùng với かわきました (khát).
+        error_tag: vocab_meaning
+    explanation:
+      vi: おなかがすきました - đói rồi.
+    display_answer: おなかがすきました。ラーメンをたべませんか。
+  - key: ja:exercise:restaurant-talk-okaikei-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-okaikei
+    prompt:
+      template: "{{b1}}をおねがいします。ごちそうさまでした。 (Làm ơn tính tiền. Cảm ơn bữa ăn.)"
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - おかいけい
+          - お会計
+    known_wrong:
+      - answer: メニュー
+        feedback_vi: メニュー là thực đơn; xin tính tiền là おかいけい.
+        error_tag: vocab_meaning
+    explanation:
+      vi: おかいけいをおねがいします - làm ơn tính tiền.
+    display_answer: おかいけいをおねがいします。ごちそうさまでした。
+  - key: ja:exercise:restaurant-talk-onaka-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-onaka-sukimashita
+    prompt:
+      source_text: Tôi đói rồi. Chúng ta ăn cơm nhé?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - おなかがすきました。ごはんをたべませんか。
+        - おなかがすきました。ごはんをたべましょうか。
+        - お腹がすきました。ご飯を食べませんか。
+        - おなかがすきましたね。ごはんをたべませんか。
+    known_wrong:
+      - answer: おなかがすきます。ごはんをたべませんか。
+        feedback_vi: Nói "đói rồi" dùng すきました.
+        error_tag: tense
+    explanation:
+      vi: おなかがすきました - đói rồi; ～ませんか - lời rủ.
+    display_answer: おなかがすきました。ごはんをたべませんか。
+  - key: ja:exercise:restaurant-talk-restaurant-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u19-chuumon
+    prompt:
+      source_text: すみません、ちゅうもんをおねがいします。ラーメンをひとつとビールをひとつください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin lỗi, cho tôi gọi món. Cho tôi một ramen và một bia.
+        - Xin lỗi, tôi muốn gọi món. Cho tôi một tô ramen và một bia.
+        - Xin lỗi, cho gọi món. Cho tôi một ramen và một bia.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin lỗi, tính tiền giúp tôi. Cho tôi một ramen và một bia.
+        feedback_vi: ちゅうもん là gọi món, không phải tính tiền.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ちゅうもんを おねがいします - xin gọi món; ひとつ - một cái.
+    display_answer: Xin lỗi, cho tôi gọi món. Cho tôi một ramen và một bia.
+  - key: ja:exercise:restaurant-talk-restaurant-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-okaikei
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Ăn xong rồi. Làm ơn tính tiền."'
+      tokens:
+        - id: t1
+          text: ごちそうさまでした。
+        - id: t3
+          text: おねがいします。
+        - id: t2
+          text: おかいけいを
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Câu cảm ơn bữa ăn → xin tính tiền (おかいけいを おねがいします).
+    display_answer: ごちそうさまでした。おかいけいをおねがいします。
+  - key: ja:exercise:restaurant-talk-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-nodo-kawakimashita
+    prompt:
+      stem: Bạn đang khát và muốn gọi nước. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: bzp
+          text: のどがかわきました。みずをください。
+          lang: ja
+        - id: cai
+          text: おなかがすきました。みずをください。
+          lang: ja
+        - id: dce
+          text: のどがいたいです。みずをください。
+          lang: ja
+        - id: xdl
+          text: ねむいです。みずをください。
+          lang: ja
+    answer:
+      correct_option_id: bzp
+    explanation:
+      vi: のどがかわきました là khát. のどがいたい là đau họng, おなかがすきました là đói, ねむい là buồn ngủ.
+    display_answer: のどがかわきました。みずをください。

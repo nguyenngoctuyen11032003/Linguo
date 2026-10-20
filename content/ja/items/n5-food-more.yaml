@@ -1,0 +1,593 @@
+# Học liệu unit "Món ăn, đồ uống và bữa ăn ở nhà hàng" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u19-tamago
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 卵
+      reading: たまご
+      romanization: tamago
+      pos: danh từ
+    back:
+      meaning:
+        vi: trứng
+      examples:
+        - target: あさごはんにたまごをたべます。
+          translation:
+            vi: Bữa sáng tôi ăn trứng.
+  - key: ja:item:n5-u19-kudamono
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 果物
+      reading: くだもの
+      romanization: kudamono
+      pos: danh từ
+    back:
+      meaning:
+        vi: trái cây, hoa quả
+      examples:
+        - target: くだものがすきです。
+          translation:
+            vi: Tôi thích hoa quả.
+  - key: ja:item:n5-u19-ringo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: りんご
+      romanization: ringo
+      pos: danh từ
+    back:
+      meaning:
+        vi: táo
+      examples:
+        - target: りんごをふたつかいます。
+          translation:
+            vi: Tôi mua hai quả táo.
+  - key: ja:item:n5-u19-mikan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: みかん
+      romanization: mikan
+      pos: danh từ
+    back:
+      meaning:
+        vi: quýt
+      examples:
+        - target: ふゆはみかんをたべます。
+          translation:
+            vi: Mùa đông tôi ăn quýt.
+  - key: ja:item:n5-u19-banana
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: バナナ
+      romanization: banana
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuối
+      examples:
+        - target: まいあさバナナをたべます。
+          translation:
+            vi: Sáng nào tôi cũng ăn chuối.
+  - key: ja:item:n5-u19-onigiri
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: おにぎり
+      romanization: onigiri
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơm nắm
+      examples:
+        - target: コンビニでおにぎりをかいます。
+          translation:
+            vi: Tôi mua cơm nắm ở cửa hàng tiện lợi.
+  - key: ja:item:n5-u19-raamen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ラーメン
+      romanization: raamen
+      pos: danh từ
+    back:
+      meaning:
+        vi: mì ramen
+      examples:
+        - target: ラーメンをたべにいきます。
+          translation:
+            vi: Tôi đi ăn ramen.
+  - key: ja:item:n5-u19-sarada
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: サラダ
+      romanization: sarada
+      pos: danh từ
+    back:
+      meaning:
+        vi: salad
+      examples:
+        - target: サラダとスープをください。
+          translation:
+            vi: Cho tôi salad và súp.
+  - key: ja:item:n5-u19-suupu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: スープ
+      romanization: suupu
+      pos: danh từ
+    back:
+      meaning:
+        vi: súp, canh
+      examples:
+        - target: あたたかいスープをのみます。
+          translation:
+            vi: Tôi ăn súp nóng.
+      pronunciation_note:
+        vi: Súp dùng のみます (uống), cùng động từ với đồ uống.
+  - key: ja:item:n5-u19-butaniku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 豚肉
+      reading: ぶたにく
+      romanization: butaniku
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịt lợn
+      examples:
+        - target: ぶたにくがすきです。
+          translation:
+            vi: Tôi thích thịt lợn.
+      pronunciation_note:
+        vi: "Thịt + tên con vật: ぶたにく, とりにく, ぎゅうにく."
+  - key: ja:item:n5-u19-toriniku
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 鶏肉
+      reading: とりにく
+      romanization: toriniku
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịt gà
+      examples:
+        - target: とりにくをやきます。
+          translation:
+            vi: Tôi nướng thịt gà.
+  - key: ja:item:n5-u19-gyuuniku
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 牛肉
+      reading: ぎゅうにく
+      romanization: gyuuniku
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịt bò
+      examples:
+        - target: ぎゅうにくはたかいです。
+          translation:
+            vi: Thịt bò đắt.
+  - key: ja:item:n5-u19-obentou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: お弁当
+      reading: おべんとう
+      romanization: obentou
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơm hộp
+      examples:
+        - target: おべんとうをつくります。
+          translation:
+            vi: Tôi làm cơm hộp.
+      pronunciation_note:
+        vi: "べんとう có trường âm: ben-tou."
+  - key: ja:item:n5-u19-ryouri
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 料理
+      reading: りょうり
+      romanization: ryouri
+      pos: danh từ
+    back:
+      meaning:
+        vi: món ăn; việc nấu ăn
+      examples:
+        - target: りょうりがじょうずです。
+          translation:
+            vi: Tôi nấu ăn giỏi.
+      pronunciation_note:
+        vi: りょうりをします / つくります - nấu ăn.
+  - key: ja:item:n5-u19-tabemono
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 食べ物
+      reading: たべもの
+      romanization: tabemono
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ ăn, thức ăn
+      examples:
+        - target: すきなたべものはなんですか。
+          translation:
+            vi: Món ăn bạn thích là gì?
+  - key: ja:item:n5-u19-nomimono
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 飲み物
+      reading: のみもの
+      romanization: nomimono
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ uống
+      examples:
+        - target: のみものはなにがいいですか。
+          translation:
+            vi: Bạn muốn uống gì?
+  - key: ja:item:n5-u19-juusu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ジュース
+      romanization: juusu
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước ép, nước ngọt
+      examples:
+        - target: オレンジジュースをください。
+          translation:
+            vi: Cho tôi nước cam.
+  - key: ja:item:n5-u19-biiru
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ビール
+      romanization: biiru
+      pos: danh từ
+    back:
+      meaning:
+        vi: bia
+      examples:
+        - target: ビールをのみます。
+          translation:
+            vi: Tôi uống bia.
+  - key: ja:item:n5-u19-osake
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: お酒
+      reading: おさけ
+      romanization: osake
+      pos: danh từ
+    back:
+      meaning:
+        vi: rượu (nói chung), sake
+      examples:
+        - target: おさけをのみません。
+          translation:
+            vi: Tôi không uống rượu.
+      confusion:
+        vi: おさけ nghĩa chung là đồ uống có cồn (rượu); sake Nhật cũng gọi là おさけ.
+  - key: ja:item:n5-u19-gyuunyuu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 牛乳
+      reading: ぎゅうにゅう
+      romanization: gyuunyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: sữa bò
+      examples:
+        - target: まいあさぎゅうにゅうをのみます。
+          translation:
+            vi: Sáng nào tôi cũng uống sữa.
+      pronunciation_note:
+        vi: ぎゅう, にゅう đều là âm ghép kéo dài.
+  - key: ja:item:n5-u19-satou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 砂糖
+      reading: さとう
+      romanization: satou
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường
+      examples:
+        - target: コーヒーにさとうをいれます。
+          translation:
+            vi: Tôi cho đường vào cà phê.
+  - key: ja:item:n5-u19-shio
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 塩
+      reading: しお
+      romanization: shio
+      pos: danh từ
+    back:
+      meaning:
+        vi: muối
+      examples:
+        - target: しおをとってください。
+          translation:
+            vi: Làm ơn lấy giúp muối.
+  - key: ja:item:n5-u19-shouyu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 醤油
+      reading: しょうゆ
+      romanization: shouyu
+      pos: danh từ
+    back:
+      meaning:
+        vi: xì dầu, nước tương
+      examples:
+        - target: さしみにしょうゆをつけます。
+          translation:
+            vi: Tôi chấm sashimi với xì dầu.
+  - key: ja:item:n5-u19-hashi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 箸
+      reading: はし
+      romanization: hashi
+      pos: danh từ
+    back:
+      meaning:
+        vi: đũa
+      examples:
+        - target: はしでたべます。
+          translation:
+            vi: Tôi ăn bằng đũa.
+      confusion:
+        vi: はし (箸, đũa) đọc giống はし (橋, cầu); ngữ cảnh ăn uống cho biết là đũa.
+  - key: ja:item:n5-u19-sara
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 皿
+      reading: さら
+      romanization: sara
+      pos: danh từ
+    back:
+      meaning:
+        vi: đĩa
+      examples:
+        - target: さらにサラダをいれます。
+          translation:
+            vi: Tôi bỏ salad vào đĩa.
+  - key: ja:item:n5-u19-koppu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: コップ
+      romanization: koppu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cốc, ly (thuỷ tinh)
+      examples:
+        - target: コップにみずをいれます。
+          translation:
+            vi: Tôi rót nước vào cốc.
+      pronunciation_note:
+        vi: コップ có っ - ngắt một nhịp.
+  - key: ja:item:n5-u19-chawan
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 茶碗
+      reading: ちゃわん
+      romanization: chawan
+      pos: danh từ
+    back:
+      meaning:
+        vi: bát cơm, chén trà
+      examples:
+        - target: ちゃわんにごはんをいれます。
+          translation:
+            vi: Tôi xới cơm vào bát.
+  - key: ja:item:n5-u19-supuun
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: スプーン
+      romanization: supuun
+      pos: danh từ
+    back:
+      meaning:
+        vi: thìa
+      examples:
+        - target: スプーンでスープをのみます。
+          translation:
+            vi: Tôi ăn súp bằng thìa.
+  - key: ja:item:n5-u19-chuumon
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 注文
+      reading: ちゅうもん
+      romanization: chuumon
+      pos: danh từ
+    back:
+      meaning:
+        vi: gọi món, đặt hàng
+      examples:
+        - target: ちゅうもんをおねがいします。
+          translation:
+            vi: Làm ơn cho tôi gọi món.
+      pronunciation_note:
+        vi: ちゅうもんします - gọi món.
+  - key: ja:item:n5-u19-okaikei
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: お会計
+      reading: おかいけい
+      romanization: okaikei
+      pos: danh từ
+    back:
+      meaning:
+        vi: thanh toán, hoá đơn
+      examples:
+        - target: おかいけいをおねがいします。
+          translation:
+            vi: Làm ơn tính tiền cho tôi.
+      pronunciation_note:
+        vi: おかんじょう cũng dùng tương tự khi hỏi hoá đơn.
+  - key: ja:item:n5-u19-onaka-sukimashita
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: おなかがすきました
+      romanization: onaka ga sukimashita
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Tôi đói rồi
+      examples:
+        - target: おなかがすきました。ごはんをたべませんか。
+          translation:
+            vi: Tôi đói rồi. Chúng ta ăn cơm nhé?
+  - key: ja:item:n5-u19-nodo-kawakimashita
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: のどがかわきました
+      romanization: nodo ga kawakimashita
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Tôi khát nước rồi
+      examples:
+        - target: のどがかわきました。みずをください。
+          translation:
+            vi: Tôi khát rồi. Cho tôi nước.

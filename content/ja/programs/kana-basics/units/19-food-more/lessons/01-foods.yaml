@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:food-types
+order_index: 1
+level: n5
+title:
+  vi: Các món ăn - たまご・くだもの・ぶたにく・ラーメン
+objectives:
+  - vi: "Gọi tên thức ăn: たまご, くだもの, りんご, みかん, バナナ, おにぎり, ラーメン, サラダ, スープ."
+  - vi: "Phân biệt các loại thịt: ぶたにく, とりにく, ぎゅうにく."
+  - vi: Hỏi và nói món thích - すきなたべものはなんですか.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:order-sequence
+items:
+  - item: ja:item:n5-u19-tamago
+  - item: ja:item:n5-u19-kudamono
+  - item: ja:item:n5-u19-ringo
+  - item: ja:item:n5-u19-mikan
+  - item: ja:item:n5-u19-banana
+  - item: ja:item:n5-u19-onigiri
+  - item: ja:item:n5-u19-raamen
+  - item: ja:item:n5-u19-sarada
+  - item: ja:item:n5-u19-suupu
+  - item: ja:item:n5-u19-butaniku
+  - item: ja:item:n5-u19-toriniku
+  - item: ja:item:n5-u19-gyuuniku
+  - item: ja:item:n5-u19-obentou
+  - item: ja:item:n5-u19-ryouri
+  - item: ja:item:n5-u19-tabemono
+  - item: ja:item:niku
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được món mình thích và gọi tên nhiều món ăn - すきなたべものはラーメンです。ぶたにくがすきです。
+  - type: explain
+    text:
+      vi: "Thức ăn: たまご (trứng), くだもの (trái cây) gồm りんご (táo), みかん (quýt), バナナ (chuối). Món ăn: おにぎり (cơm nắm), ラーメン (mì), サラダ (salad), スープ (súp), おべんとう (cơm hộp), りょうり (món ăn, nấu ăn)."
+  - type: explain
+    text:
+      vi: Thịt gọi theo con vật + にく - ぶたにく (thịt lợn), とりにく (thịt gà), ぎゅうにく (thịt bò). にく đứng một mình là "thịt" nói chung. たべもの là đồ ăn nói chung - hỏi すきなたべものはなんですか.
+  - type: explain
+    text:
+      vi: Súp dùng のみます (uống) chứ không dùng たべます - スープをのみます. Nấu ăn là りょうりをします / つくります, giỏi nấu ăn là りょうりがじょうずです.
+  - type: deep_explain
+    text:
+      vi: Bữa sáng ở Nhật hay có たまご, パン hoặc ごはん và スープ; bữa trưa mang theo おべんとう. おにぎり (cơm nắm) bán ở コンビニ rất phổ biến và rẻ. Chữ Hán - 卵, 果物, 豚肉, 鶏肉, 牛肉, お弁当, 料理, 食べ物.
+  - type: example
+    target: あさごはんにたまごとパンをたべます。
+    target_lang: ja
+    translation:
+      vi: Bữa sáng tôi ăn trứng và bánh mì.
+    note:
+      vi: と - liệt kê.
+  - type: example
+    target: ぶたにくよりとりにくがすきです。
+    target_lang: ja
+    translation:
+      vi: Tôi thích thịt gà hơn thịt lợn.
+    note:
+      vi: より - so với (sẽ học kỹ ở N4).
+  - type: example
+    target: コンビニでおにぎりをかいます。
+    target_lang: ja
+    translation:
+      vi: Tôi mua cơm nắm ở cửa hàng tiện lợi.
+    note:
+      vi: で - nơi mua.
+  - type: example
+    target: スープをのみます。
+    target_lang: ja
+    translation:
+      vi: Tôi ăn (uống) súp.
+    note:
+      vi: Súp dùng のみます.
+  - type: common_mistake
+    wrong: スープをたべます。
+    right: スープをのみます。
+    target_lang: ja
+    note:
+      vi: Súp dùng のみます (uống), không dùng たべます.
+  - type: common_mistake
+    wrong: ぶたをたべます。(thịt lợn)
+    right: ぶたにくをたべます。
+    target_lang: ja
+    note:
+      vi: "Nói tên món cần にく: ぶたにく; ぶた là con lợn."
+  - type: summary
+    points:
+      - vi: たまご trứng · くだもの trái cây · りんご táo · みかん quýt · バナナ chuối.
+      - vi: おにぎり cơm nắm · ラーメン mì · サラダ salad · スープ súp · おべんとう cơm hộp.
+      - vi: ぶたにく lợn · とりにく gà · ぎゅうにく bò.
+      - vi: スープを のみます (uống).
+exercises:
+  - key: ja:exercise:food-types-tamago
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-tamago
+    prompt:
+      stem: Từ nào có nghĩa là “trứng”?
+      stem_lang: vi
+      options:
+        - id: eet
+          text: くだもの
+          lang: ja
+        - id: ta0
+          text: たまご
+          lang: ja
+        - id: aw4
+          text: おにぎり
+          lang: ja
+        - id: k0a
+          text: さかな
+          lang: ja
+    answer:
+      correct_option_id: ta0
+    explanation:
+      vi: たまご là trứng. くだもの là trái cây, おにぎり là cơm nắm, さかな là cá.
+    display_answer: たまご
+  - key: ja:exercise:food-types-gyuuniku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-gyuuniku
+    prompt:
+      stem: Từ nào có nghĩa là “thịt bò”?
+      stem_lang: vi
+      options:
+        - id: n76
+          text: さかな
+          lang: ja
+        - id: a81
+          text: とりにく
+          lang: ja
+        - id: z6n
+          text: ぎゅうにく
+          lang: ja
+        - id: f3s
+          text: ぶたにく
+          lang: ja
+    answer:
+      correct_option_id: z6n
+    explanation:
+      vi: ぎゅうにく là thịt bò. ぶたにく là thịt lợn, とりにく là thịt gà, さかな là cá.
+    display_answer: ぎゅうにく
+  - key: ja:exercise:food-types-ringo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u19-ringo
+    prompt:
+      audio_asset_id: null
+      fallback_text: あさごはんにたまごとバナナをたべます。ひるはおべんとうです。
+      options:
+        - id: f15
+          text: Bữa sáng tôi ăn trứng và chuối. Buổi trưa là cơm hộp.
+          lang: vi
+        - id: qjt
+          text: Bữa sáng tôi ăn bánh mì và táo. Buổi trưa là mì.
+          lang: vi
+        - id: ggu
+          text: Bữa tối tôi ăn trứng và chuối. Buổi trưa là cơm hộp.
+          lang: vi
+        - id: sbs
+          text: Bữa sáng tôi ăn trứng và cơm. Buổi trưa là salad.
+          lang: vi
+    answer:
+      correct_option_id: f15
+    explanation:
+      vi: たまご - trứng; バナナ - chuối; おべんとう - cơm hộp.
+    display_answer: Bữa sáng tôi ăn trứng và chuối. Buổi trưa là cơm hộp.
+  - key: ja:exercise:food-types-suupu-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-suupu
+    prompt:
+      template: "{{b1}}をのみます。あたたかいです。 (Tôi ăn súp. Nóng.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Món lỏng ăn bằng thìa, katakana.
+        - Bắt đầu bằng ス - スープ.
+    answer:
+      blanks:
+        b1:
+          - スープ
+    known_wrong:
+      - answer: サラダ
+        feedback_vi: サラダ là salad, dùng với たべます.
+        error_tag: vocab_meaning
+    explanation:
+      vi: スープ là súp. のみます đi với スープ.
+    display_answer: スープをのみます。あたたかいです。
+  - key: ja:exercise:food-types-nomu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u19-suupu
+    prompt:
+      stem: Bạn ăn súp. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: o1z
+          text: スープをきります。
+          lang: ja
+        - id: fiy
+          text: スープをかけます。
+          lang: ja
+        - id: g76
+          text: スープをたべます。
+          lang: ja
+        - id: v72
+          text: スープをのみます。
+          lang: ja
+    answer:
+      correct_option_id: v72
+    explanation:
+      vi: Súp dùng のみます. たべます không dùng với súp trong tiếng Nhật chuẩn; きります là cắt, かけます là đeo/treo.
+    display_answer: スープをのみます。
+  - key: ja:exercise:food-types-kudamono-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-kudamono
+    prompt:
+      template: "{{b1}}がすきです。りんごとみかんとバナナをたべます。 (Tôi thích trái cây. Tôi ăn táo, quýt và chuối.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - くだもの
+          - 果物
+    known_wrong:
+      - answer: やさい
+        feedback_vi: やさい là rau; táo, quýt, chuối là くだもの.
+        error_tag: vocab_meaning
+    explanation:
+      vi: くだもの là trái cây - gồm りんご, みかん, バナナ.
+    display_answer: くだものがすきです。りんごとみかんとバナナをたべます。
+  - key: ja:exercise:food-types-buta-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-butaniku
+    prompt:
+      template: "{{b1}}がすきです。とんかつをたべます。 (Tôi thích thịt lợn. Tôi ăn tonkatsu.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - ぶたにく
+          - 豚肉
+    known_wrong:
+      - answer: ぎゅうにく
+        feedback_vi: ぎゅうにく là thịt bò; tonkatsu làm từ thịt lợn.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ぶたにく là thịt lợn - nguyên liệu của とんかつ.
+    display_answer: ぶたにくがすきです。とんかつをたべます。
+  - key: ja:exercise:food-types-ryouri-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-ryouri
+    prompt:
+      source_text: Tôi nấu ăn giỏi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - りょうりがじょうずです。
+        - 料理が上手です。
+        - わたしはりょうりがじょうずです。
+        - りょうりがとくいです。
+    known_wrong:
+      - answer: りょうりをじょうずです。
+        feedback_vi: じょうず đi với が, không dùng を.
+        error_tag: particle_ga_wo
+    explanation:
+      vi: りょうり - nấu ăn; N が じょうずです - giỏi N.
+    display_answer: りょうりがじょうずです。
+  - key: ja:exercise:food-types-obento-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u19-obentou
+    prompt:
+      source_text: まいあさおべんとうをつくります。たまごとおにぎりをいれます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sáng nào tôi cũng làm cơm hộp. Tôi bỏ trứng và cơm nắm vào.
+        - Mỗi sáng tôi làm cơm hộp. Cho trứng và cơm nắm vào.
+        - Sáng nào tôi cũng làm cơm hộp, bỏ trứng và cơm nắm vào.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sáng nào tôi cũng mua cơm hộp. Tôi bỏ trứng và cơm nắm vào.
+        feedback_vi: つくります là làm, không phải mua.
+        error_tag: verb_choice
+    explanation:
+      vi: つくります - làm; いれます - bỏ vào; おべんとう - cơm hộp.
+    display_answer: Sáng nào tôi cũng làm cơm hộp. Tôi bỏ trứng và cơm nắm vào.
+  - key: ja:exercise:food-types-tabemono-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-tabemono
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Món ăn bạn thích là gì?"'
+      tokens:
+        - id: t3
+          text: なんですか。
+        - id: t2
+          text: たべものは
+        - id: t1
+          text: すきな
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: すきな + たべもの bổ nghĩa; は (chủ đề) rồi câu hỏi なんですか.
+    display_answer: すきなたべものはなんですか。
+  - key: ja:exercise:food-types-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u19-onigiri
+    prompt:
+      stem: Bạn muốn mua cơm nắm ở cửa hàng tiện lợi. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - id: p57
+          text: おにぎりをふたつみます。
+          lang: ja
+        - id: i0q
+          text: おにぎりをふたつきます。
+          lang: ja
+        - id: eot
+          text: おにぎりをふたつください。
+          lang: ja
+        - id: n1a
+          text: おにぎりをふたつよみます。
+          lang: ja
+    answer:
+      correct_option_id: eot
+    explanation:
+      vi: N をください là cách xin mua đồ. みます, よみます, きます không dùng khi mua đồ ăn.
+    display_answer: おにぎりをふたつください。
