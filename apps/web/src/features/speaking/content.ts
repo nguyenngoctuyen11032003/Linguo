@@ -58,6 +58,14 @@ export const FALLBACK_SENTENCES: Record<SpeakingLanguage, SpeakingSentence[]> = 
     { id: 'fb-de-3', text: 'Ich komme aus Vietnam.', translation: 'Tôi đến từ Việt Nam.' },
     { id: 'fb-de-4', text: 'Ich hätte gern ein Wasser, bitte.', translation: 'Làm ơn cho tôi một cốc nước.' },
     { id: 'fb-de-5', text: 'Können Sie das bitte wiederholen?', translation: 'Ông/bà có thể nhắc lại được không?' },
+    // A2–B2: past tense, subordinate clauses, polite requests and opinions.
+    { id: 'fb-de-6', text: 'Gestern habe ich lange gearbeitet und bin früh ins Bett gegangen.', translation: 'Hôm qua tôi làm việc lâu và đi ngủ sớm.' },
+    { id: 'fb-de-7', text: 'Ich bleibe heute zu Hause, weil ich erkältet bin.', translation: 'Hôm nay tôi ở nhà vì tôi bị cảm.' },
+    { id: 'fb-de-8', text: 'Könnten Sie mir bitte sagen, wie ich zum Bahnhof komme?', translation: 'Ông/bà có thể chỉ giúp tôi đường đến nhà ga được không?' },
+    { id: 'fb-de-9', text: 'Wenn ich mehr Zeit hätte, würde ich öfter ins Fitnessstudio gehen.', translation: 'Nếu có nhiều thời gian hơn, tôi sẽ đến phòng tập thường xuyên hơn.' },
+    { id: 'fb-de-10', text: 'Meiner Meinung nach sollte man weniger Auto fahren.', translation: 'Theo ý kiến của tôi, người ta nên đi ô tô ít hơn.' },
+    { id: 'fb-de-11', text: 'Einerseits spart man Zeit, andererseits fehlt der Kontakt zu den Kollegen.', translation: 'Một mặt tiết kiệm được thời gian, mặt khác thiếu sự tiếp xúc với đồng nghiệp.' },
+    { id: 'fb-de-12', text: 'Ich wäre Ihnen dankbar, wenn Sie mir die Unterlagen schicken könnten.', translation: 'Tôi sẽ rất biết ơn nếu ông/bà gửi cho tôi các tài liệu.' },
   ],
 };
 
@@ -89,6 +97,9 @@ export const OPEN_PROMPTS: Record<SpeakingLanguage, OpenPrompt[]> = {
     { id: 'open-de-1', question: 'Hãy giới thiệu bản thân trong 2–3 câu.', starter: 'Ich heiße … Ich komme aus … Ich wohne in …' },
     { id: 'open-de-2', question: 'Hãy kể về một ngày bình thường của bạn.', starter: 'Am Morgen stehe ich um … Uhr auf. Danach …' },
     { id: 'open-de-3', question: 'Cuối tuần bạn thích làm gì?', starter: 'Am Wochenende gehe ich gern …, weil …' },
+    { id: 'open-de-4', question: 'Hãy kể về một chuyến đi hoặc kỳ nghỉ gần đây của bạn (dùng thì quá khứ).', starter: 'Letzten Sommer bin ich nach … gefahren. Zuerst haben wir …, dann …' },
+    { id: 'open-de-5', question: 'Bạn có ủng hộ làm việc tại nhà không? Nêu ý kiến và hai lý do.', starter: 'Meiner Meinung nach … Einerseits …, andererseits …' },
+    { id: 'open-de-6', question: 'Nếu bạn trúng số, bạn sẽ làm gì? (dùng Konjunktiv II)', starter: 'Wenn ich im Lotto gewinnen würde, würde ich …' },
   ],
 };
 
@@ -215,6 +226,43 @@ export const ROLE_PLAYS: Record<SpeakingLanguage, RolePlayScript[]> = {
         { speaker: 'you', text: 'Hallo, ich heiße Minh. Freut mich!', translation: 'Chào, mình là Minh. Rất vui được gặp bạn!' },
         { speaker: 'partner', text: 'Freut mich auch. Woher kommst du?', translation: 'Mình cũng vui. Bạn đến từ đâu?' },
         { speaker: 'you', text: 'Ich komme aus Vietnam.', translation: 'Mình đến từ Việt Nam.' },
+      ],
+    },
+    {
+      id: 'rp-de-arzt',
+      title: 'Đi khám bác sĩ',
+      setting: 'Bạn bị cảm và đến phòng khám của bác sĩ gia đình (nói “Sie” với bác sĩ).',
+      turns: [
+        { speaker: 'partner', text: 'Guten Tag, nehmen Sie bitte Platz. Was fehlt Ihnen?', translation: 'Chào ông/bà, mời ngồi. Ông/bà bị làm sao ạ?' },
+        { speaker: 'you', text: 'Ich habe seit drei Tagen Halsschmerzen und Husten.', translation: 'Tôi bị đau họng và ho đã ba ngày rồi.' },
+        { speaker: 'partner', text: 'Haben Sie auch Fieber?', translation: 'Ông/bà có sốt không?' },
+        { speaker: 'you', text: 'Ja, gestern hatte ich achtunddreißig Grad.', translation: 'Có, hôm qua tôi sốt ba mươi tám độ.' },
+        { speaker: 'partner', text: 'Sie sollten sich ausruhen und viel Tee trinken. Ich schreibe Sie bis Freitag krank.', translation: 'Ông/bà nên nghỉ ngơi và uống nhiều trà. Tôi cho ông/bà nghỉ ốm đến thứ Sáu.' },
+        { speaker: 'you', text: 'Vielen Dank, Frau Doktor. Auf Wiedersehen!', translation: 'Cảm ơn bác sĩ. Tạm biệt!' },
+      ],
+    },
+    {
+      id: 'rp-de-wohnung',
+      title: 'Xem nhà thuê',
+      setting: 'Bạn gọi điện cho chủ nhà về một căn hộ đang cho thuê (nói “Sie”).',
+      turns: [
+        { speaker: 'partner', text: 'Hausverwaltung Becker, guten Tag.', translation: 'Công ty quản lý nhà Becker xin nghe.' },
+        { speaker: 'you', text: 'Guten Tag, ich rufe wegen der Wohnung in der Lindenstraße an. Ist sie noch frei?', translation: 'Chào ông/bà, tôi gọi về căn hộ ở phố Linden. Căn hộ còn trống không ạ?' },
+        { speaker: 'partner', text: 'Ja, sie ist ab dem ersten Mai frei. Die Miete beträgt sechshundert Euro warm.', translation: 'Còn, căn hộ trống từ ngày 1 tháng 5. Tiền thuê là sáu trăm euro đã gồm phí phụ.' },
+        { speaker: 'you', text: 'Könnte ich die Wohnung am Samstag besichtigen?', translation: 'Tôi có thể xem căn hộ vào thứ Bảy được không?' },
+        { speaker: 'partner', text: 'Gern. Passt es Ihnen um elf Uhr?', translation: 'Vâng. Mười một giờ ông/bà có tiện không?' },
+        { speaker: 'you', text: 'Ja, das passt gut. Vielen Dank, bis Samstag!', translation: 'Vâng, rất tiện. Cảm ơn, hẹn thứ Bảy!' },
+      ],
+    },
+    {
+      id: 'rp-de-meinung',
+      title: 'Trao đổi ý kiến với đồng nghiệp',
+      setting: 'Bạn và một đồng nghiệp bàn về việc làm việc tại nhà (nói “du”).',
+      turns: [
+        { speaker: 'partner', text: 'Was hältst du eigentlich vom Homeoffice?', translation: 'Thực ra bạn nghĩ gì về làm việc tại nhà?' },
+        { speaker: 'you', text: 'Einerseits spare ich viel Zeit, andererseits fehlen mir die Kollegen.', translation: 'Một mặt tôi tiết kiệm nhiều thời gian, mặt khác tôi nhớ đồng nghiệp.' },
+        { speaker: 'partner', text: 'Das sehe ich anders. Zu Hause kann ich mich besser konzentrieren.', translation: 'Mình nghĩ khác. Ở nhà mình tập trung tốt hơn.' },
+        { speaker: 'you', text: 'Da hast du recht. Vielleicht wäre eine Mischung aus beidem ideal.', translation: 'Bạn nói đúng. Có lẽ kết hợp cả hai sẽ lý tưởng.' },
       ],
     },
   ],
