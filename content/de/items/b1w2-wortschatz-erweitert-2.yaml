@@ -1,0 +1,2314 @@
+# Học liệu unit B1W2 "Mở rộng vốn từ B1 (2): gia đình, tính cách, thể thao, văn hoá, tính từ và trạng từ (Wortschatz erweitern 2)" (mở rộng vốn từ, chương trình B1).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:b1w2-erziehung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erziehung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc nuôi dạy, giáo dục trong gia đình
+      examples:
+        - target: Die Erziehung der Kinder ist eine große Verantwortung.
+          translation:
+            vi: Việc nuôi dạy con cái là một trách nhiệm lớn.
+  - key: de:item:b1w2-vorbild
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Vorbild, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: tấm gương, hình mẫu
+      examples:
+        - target: Eltern sind für ihre Kinder ein wichtiges Vorbild.
+          translation:
+            vi: Cha mẹ là tấm gương quan trọng cho con cái.
+  - key: de:item:b1w2-belohnung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Belohnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phần thưởng
+      examples:
+        - target: Für die gute Note gab es eine Belohnung.
+          translation:
+            vi: Vì điểm tốt, cậu bé nhận được phần thưởng.
+  - key: de:item:b1w2-kinderbetreuung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kinderbetreuung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc chăm sóc trẻ
+      examples:
+        - target: Die Kinderbetreuung ist in unserer Stadt gut organisiert.
+          translation:
+            vi: Việc chăm sóc trẻ ở thành phố chúng tôi được tổ chức tốt.
+  - key: de:item:b1w2-krippe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Krippe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà trẻ (cho trẻ dưới 3 tuổi); máng cỏ
+      examples:
+        - target: Unser Sohn geht seit Mai in die Krippe.
+          translation:
+            vi: Con trai chúng tôi đi nhà trẻ từ tháng Năm.
+  - key: de:item:b1w2-kindergartenplatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kindergartenplatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ học ở trường mẫu giáo
+      examples:
+        - target: Wir suchen noch einen Kindergartenplatz für unsere Tochter.
+          translation:
+            vi: Chúng tôi vẫn đang tìm chỗ học mẫu giáo cho con gái.
+  - key: de:item:b1w2-elternzeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Elternzeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời gian nghỉ để chăm con
+      examples:
+        - target: Mein Mann nimmt zwei Monate Elternzeit.
+          translation:
+            vi: Chồng tôi nghỉ hai tháng để chăm con.
+  - key: de:item:b1w2-elterngeld
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Elterngeld (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền hỗ trợ cha mẹ khi sinh con
+      examples:
+        - target: Das Elterngeld bekommt man in den ersten Monaten nach der Geburt.
+          translation:
+            vi: Người ta nhận tiền hỗ trợ cha mẹ trong những tháng đầu sau khi sinh.
+  - key: de:item:b1w2-grossfamilie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Großfamilie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: đại gia đình
+      examples:
+        - target: In der Großfamilie leben drei Generationen unter einem Dach.
+          translation:
+            vi: Trong đại gia đình có ba thế hệ sống chung một nhà.
+  - key: de:item:b1w2-saeugling
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Säugling, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: trẻ sơ sinh, nhũ nhi
+      examples:
+        - target: Ein Säugling schläft fast den ganzen Tag.
+          translation:
+            vi: Một em bé sơ sinh ngủ gần cả ngày.
+  - key: de:item:b1w2-taschengeld
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Taschengeld (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền tiêu vặt
+      examples:
+        - target: Wie viel Taschengeld bekommt dein Sohn?
+          translation:
+            vi: Con trai bạn được bao nhiêu tiền tiêu vặt?
+  - key: de:item:b1w2-umgang
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Umgang (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách đối xử, quan hệ
+      examples:
+        - target: Der Umgang mit Kindern braucht viel Geduld.
+          translation:
+            vi: Cách đối xử với trẻ em cần nhiều kiên nhẫn.
+  - key: de:item:b1w2-babysitter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Babysitter, - / die Babysitterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người trông trẻ
+      examples:
+        - target: Am Samstagabend kommt unser Babysitter.
+          translation:
+            vi: Tối thứ Bảy người trông trẻ của chúng tôi sẽ đến.
+  - key: de:item:b1w2-windel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Windel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tã lót
+      examples:
+        - target: Die Windel muss gewechselt werden.
+          translation:
+            vi: Cần thay tã.
+  - key: de:item:b1w2-aufziehen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufziehen, zieht auf, zog auf, hat aufgezogen
+      pos: động từ
+    back:
+      meaning:
+        vi: nuôi lớn (con cái, con vật)
+      examples:
+        - target: Sie hat drei Kinder allein aufgezogen.
+          translation:
+            vi: Bà ấy một mình nuôi lớn ba đứa con.
+  - key: de:item:b1w2-bestrafen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bestrafen
+      pos: động từ
+    back:
+      meaning:
+        vi: phạt, trừng phạt
+      examples:
+        - target: Man sollte Kinder nicht für Fehler bestrafen.
+          translation:
+            vi: Người ta không nên phạt trẻ vì lỗi lầm.
+  - key: de:item:b1w2-belohnen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: belohnen
+      pos: động từ
+    back:
+      meaning:
+        vi: thưởng
+      examples:
+        - target: Die Eltern belohnen ihn für die gute Note.
+          translation:
+            vi: Bố mẹ thưởng cậu bé vì điểm tốt.
+  - key: de:item:b1w2-verwoehnen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verwöhnen
+      pos: động từ
+    back:
+      meaning:
+        vi: nuông chiều, chiều chuộng
+      examples:
+        - target: Die Großeltern verwöhnen ihre Enkel gern.
+          translation:
+            vi: Ông bà thích nuông chiều các cháu.
+  - key: de:item:b1w2-wickeln
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: wickeln
+      pos: động từ
+    back:
+      meaning:
+        vi: thay tã; quấn
+      examples:
+        - target: Ich muss das Baby noch wickeln.
+          translation:
+            vi: Tôi còn phải thay tã cho em bé.
+  - key: de:item:b1w2-gehorsam
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gehorsam
+      pos: tính từ
+    back:
+      meaning:
+        vi: vâng lời
+      examples:
+        - target: Der Hund ist sehr gehorsam.
+          translation:
+            vi: Con chó rất vâng lời.
+  - key: de:item:b1w2-brav
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: brav
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngoan, ngoan ngoãn
+      examples:
+        - target: Seid ihr heute brav gewesen?
+          translation:
+            vi: Hôm nay các con có ngoan không?
+  - key: de:item:b1w2-verwoehnt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verwöhnt
+      pos: tính từ
+    back:
+      meaning:
+        vi: được nuông chiều quá
+      examples:
+        - target: Das Kind ist verwöhnt und will immer alles haben.
+          translation:
+            vi: Đứa trẻ bị nuông chiều và lúc nào cũng muốn có mọi thứ.
+  - key: de:item:b1w2-alleinerziehend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: alleinerziehend
+      pos: tính từ
+    back:
+      meaning:
+        vi: nuôi con một mình
+      examples:
+        - target: Sie ist alleinerziehend und arbeitet halbtags.
+          translation:
+            vi: Cô ấy nuôi con một mình và làm việc nửa ngày.
+  - key: de:item:b1w2-kinderlieb
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kinderlieb
+      pos: tính từ
+    back:
+      meaning:
+        vi: yêu trẻ
+      examples:
+        - target: Mein Onkel ist sehr kinderlieb.
+          translation:
+            vi: Chú tôi rất yêu trẻ con.
+  - key: de:item:b1w2-temperamentvoll
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: temperamentvoll
+      pos: tính từ
+    back:
+      meaning:
+        vi: sôi nổi, nóng nảy
+      examples:
+        - target: Meine Tante ist sehr temperamentvoll.
+          translation:
+            vi: Dì tôi rất sôi nổi.
+  - key: de:item:b1w2-ungeduldig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ungeduldig
+      pos: tính từ
+    back:
+      meaning:
+        vi: thiếu kiên nhẫn
+      examples:
+        - target: Wenn er warten muss, wird er schnell ungeduldig.
+          translation:
+            vi: Khi phải đợi, anh ấy nhanh chóng mất kiên nhẫn.
+  - key: de:item:b1w2-unzuverlaessig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unzuverlässig
+      pos: tính từ
+    back:
+      meaning:
+        vi: không đáng tin cậy
+      examples:
+        - target: Der Handwerker ist leider unzuverlässig.
+          translation:
+            vi: Người thợ tiếc là không đáng tin.
+  - key: de:item:b1w2-bescheiden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bescheiden
+      pos: tính từ
+    back:
+      meaning:
+        vi: khiêm tốn
+      examples:
+        - target: Trotz seines Erfolgs ist er bescheiden geblieben.
+          translation:
+            vi: Dù thành công, anh ấy vẫn khiêm tốn.
+  - key: de:item:b1w2-arrogant
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: arrogant
+      pos: tính từ
+    back:
+      meaning:
+        vi: kiêu ngạo
+      examples:
+        - target: Der neue Chef wirkt am Anfang arrogant.
+          translation:
+            vi: Ông sếp mới lúc đầu trông có vẻ kiêu ngạo.
+  - key: de:item:b1w2-eingebildet
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: eingebildet
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự cao, tự phụ
+      examples:
+        - target: Sie ist ziemlich eingebildet und hört niemandem zu.
+          translation:
+            vi: Cô ta khá tự cao và không nghe ai cả.
+  - key: de:item:b1w2-faul
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: faul
+      pos: tính từ
+    back:
+      meaning:
+        vi: lười
+      examples:
+        - target: Er ist zu faul, um aufzuräumen.
+          translation:
+            vi: Anh ta lười đến mức không dọn dẹp.
+  - key: de:item:b1w2-chaotisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: chaotisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: lộn xộn, hỗn loạn
+      examples:
+        - target: Ihr Schreibtisch sieht immer chaotisch aus.
+          translation:
+            vi: Bàn làm việc của cô ấy lúc nào cũng trông lộn xộn.
+  - key: de:item:b1w2-verschlossen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verschlossen
+      pos: tính từ
+    back:
+      meaning:
+        vi: kín đáo, ít nói về mình
+      examples:
+        - target: Mein Nachbar ist ein verschlossener Mensch.
+          translation:
+            vi: Người hàng xóm của tôi là một người kín đáo.
+  - key: de:item:b1w2-selbstbewusst
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: selbstbewusst
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự tin
+      examples:
+        - target: Sie tritt sehr selbstbewusst auf.
+          translation:
+            vi: Cô ấy xuất hiện rất tự tin.
+  - key: de:item:b1w2-unsicher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unsicher
+      pos: tính từ
+    back:
+      meaning:
+        vi: không chắc chắn, thiếu tự tin
+      examples:
+        - target: Vor dem Vortrag war ich ziemlich unsicher.
+          translation:
+            vi: Trước buổi thuyết trình tôi khá thiếu tự tin.
+  - key: de:item:b1w2-aengstlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ängstlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: hay lo sợ, nhút nhát
+      examples:
+        - target: Das Kind ist ängstlich und schläft nur mit Licht.
+          translation:
+            vi: Đứa trẻ hay sợ và chỉ ngủ khi có đèn.
+  - key: de:item:b1w2-nachdenklich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: nachdenklich
+      pos: tính từ
+    back:
+      meaning:
+        vi: trầm ngâm, hay suy nghĩ
+      examples:
+        - target: Nach dem Gespräch war sie ganz nachdenklich.
+          translation:
+            vi: Sau cuộc trò chuyện cô ấy hoàn toàn trầm ngâm.
+  - key: de:item:b1w2-lebhaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: lebhaft
+      pos: tính từ
+    back:
+      meaning:
+        vi: sôi nổi, hoạt bát
+      examples:
+        - target: Die Kinder sind sehr lebhaft.
+          translation:
+            vi: Bọn trẻ rất hoạt bát.
+  - key: de:item:b1w2-gelassen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gelassen
+      pos: tính từ
+    back:
+      meaning:
+        vi: bình thản
+      examples:
+        - target: Er blieb auch im Stress ganz gelassen.
+          translation:
+            vi: Ngay cả khi căng thẳng anh ấy vẫn bình thản.
+  - key: de:item:b1w2-launisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: launisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: thất thường, dễ đổi tâm trạng
+      examples:
+        - target: Mein Chef ist heute wieder launisch.
+          translation:
+            vi: Hôm nay sếp tôi lại thất thường.
+  - key: de:item:b1w2-gespraechig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gesprächig
+      pos: tính từ
+    back:
+      meaning:
+        vi: hay nói, thích chuyện trò
+      examples:
+        - target: Der Taxifahrer war sehr gesprächig.
+          translation:
+            vi: Bác tài taxi rất thích chuyện trò.
+  - key: de:item:b1w2-unpuenktlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unpünktlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: không đúng giờ
+      examples:
+        - target: Wegen seiner unpünktlichen Art ärgern sich die Kollegen.
+          translation:
+            vi: Vì tính hay trễ giờ của anh ấy, các đồng nghiệp bực mình.
+      confusion:
+        vi: "Trong ví dụ này tính từ đứng trước danh từ nên có đuôi -en; sau sein thì không đổi: Er ist unpünktlich."
+  - key: de:item:b1w2-charakterzug
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Charakterzug, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nét tính cách
+      examples:
+        - target: Humor ist ein wichtiger Charakterzug von ihm.
+          translation:
+            vi: Óc hài hước là một nét tính cách quan trọng của anh ấy.
+  - key: de:item:b1w2-selbstbewusstsein
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Selbstbewusstsein (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tự tin
+      examples:
+        - target: Mit mehr Selbstbewusstsein hätte sie die Stelle bekommen.
+          translation:
+            vi: Nếu tự tin hơn, cô ấy đã nhận được vị trí đó.
+  - key: de:item:b1w2-geduld
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Geduld (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự kiên nhẫn
+      examples:
+        - target: Für diese Arbeit braucht man viel Geduld.
+          translation:
+            vi: Công việc này cần nhiều kiên nhẫn.
+  - key: de:item:b1w2-puenktlichkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pünktlichkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đúng giờ
+      examples:
+        - target: In Deutschland ist Pünktlichkeit sehr wichtig.
+          translation:
+            vi: Ở Đức sự đúng giờ rất quan trọng.
+  - key: de:item:b1w2-freundlichkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Freundlichkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thân thiện, lịch sự
+      examples:
+        - target: Ich bin von der Freundlichkeit der Leute überrascht.
+          translation:
+            vi: Tôi bất ngờ trước sự thân thiện của mọi người.
+  - key: de:item:b1w2-benehmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Benehmen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách cư xử, tác phong
+      examples:
+        - target: Sein Benehmen bei Tisch war schlecht.
+          translation:
+            vi: Cách cư xử của cậu ấy trong bữa ăn rất tệ.
+  - key: de:item:b1w2-muskel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Muskel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ bắp
+      examples:
+        - target: Beim Krafttraining werden die Muskeln stärker.
+          translation:
+            vi: Khi tập tạ, các cơ trở nên khỏe hơn.
+  - key: de:item:b1w2-kondition
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kondition (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thể lực
+      examples:
+        - target: Meine Kondition ist nach dem Winter schlecht.
+          translation:
+            vi: Thể lực của tôi sau mùa đông kém đi.
+  - key: de:item:b1w2-ausdauer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Ausdauer (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sức bền, tính bền bỉ
+      examples:
+        - target: Für einen Marathon braucht man viel Ausdauer.
+          translation:
+            vi: Để chạy marathon cần nhiều sức bền.
+  - key: de:item:b1w2-dehnuebung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Dehnübung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tập giãn cơ
+      examples:
+        - target: Nach dem Laufen mache ich ein paar Dehnübungen.
+          translation:
+            vi: Sau khi chạy tôi tập vài bài giãn cơ.
+  - key: de:item:b1w2-trainingseinheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Trainingseinheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi tập
+      examples:
+        - target: Wir haben pro Woche drei Trainingseinheiten.
+          translation:
+            vi: Mỗi tuần chúng tôi có ba buổi tập.
+  - key: de:item:b1w2-fitnessprogramm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Fitnessprogramm, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình tập thể lực
+      examples:
+        - target: Der Trainer hat mir ein neues Fitnessprogramm gegeben.
+          translation:
+            vi: Huấn luyện viên đã đưa cho tôi một chương trình tập mới.
+  - key: de:item:b1w2-verletzung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verletzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chấn thương
+      examples:
+        - target: Die Verletzung am Knie ist nicht schlimm.
+          translation:
+            vi: Chấn thương ở đầu gối không nghiêm trọng.
+  - key: de:item:b1w2-muskelkater
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Muskelkater (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: đau cơ sau khi tập
+      examples:
+        - target: Nach dem ersten Training hatte ich einen starken Muskelkater.
+          translation:
+            vi: Sau buổi tập đầu tiên tôi bị đau cơ dữ dội.
+  - key: de:item:b1w2-zerrung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zerrung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng căng cơ, giãn cơ
+      examples:
+        - target: Er hat eine Zerrung im Oberschenkel.
+          translation:
+            vi: Anh ấy bị căng cơ ở đùi.
+  - key: de:item:b1w2-sporthalle
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sporthalle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà thi đấu
+      examples:
+        - target: Das Training findet in der Sporthalle statt.
+          translation:
+            vi: Buổi tập diễn ra trong nhà thi đấu.
+  - key: de:item:b1w2-schwimmbecken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Schwimmbecken, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bể bơi
+      examples:
+        - target: Das Schwimmbecken ist fünfundzwanzig Meter lang.
+          translation:
+            vi: Bể bơi dài hai mươi lăm mét.
+  - key: de:item:b1w2-marathon
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Marathon, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc chạy marathon
+      examples:
+        - target: Im Herbst will sie einen Marathon laufen.
+          translation:
+            vi: Mùa thu cô ấy muốn chạy một cuộc marathon.
+  - key: de:item:b1w2-medaille
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Medaille, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: huy chương
+      examples:
+        - target: Die Mannschaft hat eine Medaille gewonnen.
+          translation:
+            vi: Đội đã giành được một huy chương.
+  - key: de:item:b1w2-rekord
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Rekord, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỷ lục
+      examples:
+        - target: Er hat einen neuen Rekord aufgestellt.
+          translation:
+            vi: Anh ấy đã lập kỷ lục mới.
+  - key: de:item:b1w2-meisterschaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Meisterschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giải vô địch
+      examples:
+        - target: Die Meisterschaft beginnt im August.
+          translation:
+            vi: Giải vô địch bắt đầu vào tháng Tám.
+  - key: de:item:b1w2-wanderweg
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wanderweg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường mòn đi bộ
+      examples:
+        - target: Der Wanderweg führt durch den Wald.
+          translation:
+            vi: Con đường mòn đi xuyên qua rừng.
+  - key: de:item:b1w2-sich-dehnen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich dehnen
+      pos: động từ
+    back:
+      meaning:
+        vi: giãn cơ, duỗi người
+      examples:
+        - target: Vor dem Sport sollte man sich dehnen.
+          translation:
+            vi: Trước khi tập thể thao nên giãn cơ.
+  - key: de:item:b1w2-aufwaermen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufwärmen, wärmt auf, wärmte auf, hat aufgewärmt
+      pos: động từ
+    back:
+      meaning:
+        vi: khởi động; hâm nóng
+      examples:
+        - target: Wir wärmen uns zehn Minuten auf.
+          translation:
+            vi: Chúng tôi khởi động mười phút.
+  - key: de:item:b1w2-durchhalten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: durchhalten, hält durch, hielt durch, hat durchgehalten
+      pos: động từ
+    back:
+      meaning:
+        vi: kiên trì, trụ vững
+      examples:
+        - target: Er hat bis zum Ende durchgehalten.
+          translation:
+            vi: Anh ấy đã kiên trì đến cùng.
+  - key: de:item:b1w2-anfeuern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anfeuern
+      pos: động từ
+    back:
+      meaning:
+        vi: cổ vũ, động viên
+      examples:
+        - target: Die Fans feuern die Spieler laut an.
+          translation:
+            vi: Người hâm mộ cổ vũ cầu thủ rất to.
+  - key: de:item:b1w2-siegen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: siegen
+      pos: động từ
+    back:
+      meaning:
+        vi: chiến thắng
+      examples:
+        - target: Unsere Mannschaft hat zum ersten Mal gesiegt.
+          translation:
+            vi: Đội chúng tôi thắng lần đầu tiên.
+  - key: de:item:b1w2-besiegen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: besiegen
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh bại
+      examples:
+        - target: Sie hat ihre Gegnerin in drei Sätzen besiegt.
+          translation:
+            vi: Cô ấy đã đánh bại đối thủ trong ba set.
+  - key: de:item:b1w2-durchtrainiert
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: durchtrainiert
+      pos: tính từ
+    back:
+      meaning:
+        vi: thân hình săn chắc, luyện tập kỹ
+      examples:
+        - target: Der Sportler ist sehr durchtrainiert.
+          translation:
+            vi: Vận động viên có thể hình rất săn chắc.
+  - key: de:item:b1w2-beweglich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beweglich
+      pos: tính từ
+    back:
+      meaning:
+        vi: linh hoạt, dẻo dai
+      examples:
+        - target: Mit Yoga bleibt man beweglich.
+          translation:
+            vi: Tập yoga giúp giữ được sự linh hoạt.
+  - key: de:item:b1w2-kinoprogramm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Kinoprogramm, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lịch chiếu phim
+      examples:
+        - target: Im Kinoprogramm steht heute ein neuer Film.
+          translation:
+            vi: Trong lịch chiếu hôm nay có một bộ phim mới.
+  - key: de:item:b1w2-kinokarte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kinokarte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé xem phim
+      examples:
+        - target: Ich habe zwei Kinokarten für Samstag gekauft.
+          translation:
+            vi: Tôi đã mua hai vé xem phim cho thứ Bảy.
+  - key: de:item:b1w2-leinwand
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Leinwand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: màn ảnh
+      examples:
+        - target: Die Leinwand im Kino ist riesig.
+          translation:
+            vi: Màn ảnh ở rạp rất lớn.
+  - key: de:item:b1w2-trailer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Trailer, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: đoạn phim giới thiệu
+      examples:
+        - target: Den Trailer habe ich schon im Internet gesehen.
+          translation:
+            vi: Tôi đã xem đoạn phim giới thiệu trên mạng.
+  - key: de:item:b1w2-filmmusik
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Filmmusik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhạc phim
+      examples:
+        - target: Die Filmmusik war wunderschön.
+          translation:
+            vi: Nhạc phim rất tuyệt.
+  - key: de:item:b1w2-untertitel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Untertitel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phụ đề (phim)
+      examples:
+        - target: Ich schaue den Film lieber mit deutschen Untertiteln.
+          translation:
+            vi: Tôi thích xem phim với phụ đề tiếng Đức hơn.
+  - key: de:item:b1w2-eintrittskarte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Eintrittskarte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé vào cửa
+      examples:
+        - target: Die Eintrittskarte kostet fünfzehn Euro.
+          translation:
+            vi: Vé vào cửa giá mười lăm euro.
+  - key: de:item:b1w2-band
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Band, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban nhạc
+      examples:
+        - target: Die Band spielt heute Abend in unserer Stadt.
+          translation:
+            vi: Ban nhạc yêu thích của tôi biểu diễn trong thành phố hôm nay.
+  - key: de:item:b1w2-lied
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Lied, -er
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài hát
+      examples:
+        - target: Dieses Lied kenne ich schon lange.
+          translation:
+            vi: Bài hát này tôi biết từ lâu rồi.
+  - key: de:item:b1w2-melodie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Melodie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: giai điệu
+      examples:
+        - target: Die Melodie bleibt sofort im Kopf.
+          translation:
+            vi: Giai điệu này ở trong đầu ngay lập tức.
+  - key: de:item:b1w2-album
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Album, Alben
+      pos: danh từ
+    back:
+      meaning:
+        vi: album
+      examples:
+        - target: Die Sängerin hat ein neues Album veröffentlicht.
+          translation:
+            vi: Nữ ca sĩ đã phát hành một album mới.
+  - key: de:item:b1w2-bestseller
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bestseller, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: sách bán chạy
+      examples:
+        - target: Der Roman ist seit Wochen ein Bestseller.
+          translation:
+            vi: Cuốn tiểu thuyết đã bán chạy nhiều tuần nay.
+  - key: de:item:b1w2-taschenbuch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Taschenbuch, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: sách bìa mềm
+      examples:
+        - target: Das Taschenbuch kostet nur neun Euro.
+          translation:
+            vi: Cuốn sách bìa mềm chỉ giá chín euro.
+  - key: de:item:b1w2-hoerbuch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Hörbuch, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: sách nói
+      examples:
+        - target: Im Auto höre ich gern ein Hörbuch.
+          translation:
+            vi: Trên xe tôi thích nghe sách nói.
+  - key: de:item:b1w2-besucher
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Besucher, - / die Besucherin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: khách tham quan, khán giả
+      examples:
+        - target: Die Besucher warten vor dem Eingang.
+          translation:
+            vi: Các khách tham quan chờ trước cổng.
+  - key: de:item:b1w2-drehort
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Drehort, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: địa điểm quay phim
+      examples:
+        - target: Der Drehort des Films liegt in den Alpen.
+          translation:
+            vi: Địa điểm quay bộ phim nằm ở dãy Alps.
+  - key: de:item:b1w2-zeichentrickfilm
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zeichentrickfilm, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phim hoạt hình
+      examples:
+        - target: Die Kinder lieben Zeichentrickfilme.
+          translation:
+            vi: Bọn trẻ thích phim hoạt hình.
+  - key: de:item:b1w2-streaming
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Streaming (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc xem/nghe trực tuyến
+      examples:
+        - target: Viele Leute nutzen heute Streaming statt Fernsehen.
+          translation:
+            vi: Ngày nay nhiều người dùng dịch vụ xem trực tuyến thay vì xem tivi.
+  - key: de:item:b1w2-mediathek
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mediathek, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: kho phát lại chương trình truyền hình
+      examples:
+        - target: In der Mediathek kann man verpasste Sendungen ansehen.
+          translation:
+            vi: Trong kho phát lại có thể xem những chương trình đã bỏ lỡ.
+  - key: de:item:b1w2-auftreten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: auftreten, tritt auf, trat auf, ist aufgetreten
+      pos: động từ
+    back:
+      meaning:
+        vi: biểu diễn, xuất hiện trên sân khấu
+      examples:
+        - target: Die Band tritt morgen in Berlin auf.
+          translation:
+            vi: Ban nhạc biểu diễn ngày mai ở Berlin.
+  - key: de:item:b1w2-verfilmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verfilmen
+      pos: động từ
+    back:
+      meaning:
+        vi: dựng thành phim
+      examples:
+        - target: Der Roman wurde schon zweimal verfilmt.
+          translation:
+            vi: Cuốn tiểu thuyết đã được dựng thành phim hai lần.
+  - key: de:item:b1w2-gruselig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gruselig
+      pos: tính từ
+    back:
+      meaning:
+        vi: rùng rợn
+      examples:
+        - target: Der Film war mir zu gruselig.
+          translation:
+            vi: Bộ phim quá rùng rợn đối với tôi.
+  - key: de:item:b1w2-ruehrend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: rührend
+      pos: tính từ
+    back:
+      meaning:
+        vi: cảm động
+      examples:
+        - target: Das Ende der Geschichte ist rührend.
+          translation:
+            vi: Phần kết của câu chuyện thật cảm động.
+  - key: de:item:b1w2-fesselnd
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fesselnd
+      pos: tính từ
+    back:
+      meaning:
+        vi: lôi cuốn
+      examples:
+        - target: Der Krimi ist von der ersten Seite an fesselnd.
+          translation:
+            vi: Cuốn truyện trinh thám lôi cuốn từ trang đầu tiên.
+  - key: de:item:b1w2-ausreichend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausreichend
+      pos: tính từ
+    back:
+      meaning:
+        vi: đủ, đầy đủ
+      examples:
+        - target: Wir haben ausreichend Zeit für die Vorbereitung.
+          translation:
+            vi: Chúng ta có đủ thời gian để chuẩn bị.
+  - key: de:item:b1w2-bekannt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bekannt
+      pos: tính từ
+    back:
+      meaning:
+        vi: được nhiều người biết; quen thuộc
+      examples:
+        - target: Das Restaurant ist in der ganzen Stadt bekannt.
+          translation:
+            vi: Nhà hàng này nổi tiếng khắp thành phố.
+  - key: de:item:b1w2-beliebt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beliebt
+      pos: tính từ
+    back:
+      meaning:
+        vi: được ưa chuộng
+      examples:
+        - target: Dieser Park ist bei Familien sehr beliebt.
+          translation:
+            vi: Công viên này rất được các gia đình ưa chuộng.
+  - key: de:item:b1w2-bereit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bereit
+      pos: tính từ
+    back:
+      meaning:
+        vi: sẵn sàng
+      examples:
+        - target: Bist du bereit für den Test?
+          translation:
+            vi: Bạn đã sẵn sàng cho bài kiểm tra chưa?
+  - key: de:item:b1w2-dringend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: dringend
+      pos: tính từ
+    back:
+      meaning:
+        vi: khẩn cấp, cấp bách
+      examples:
+        - target: Ich muss dringend zum Arzt.
+          translation:
+            vi: Tôi phải đi bác sĩ gấp.
+  - key: de:item:b1w2-eigenartig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: eigenartig
+      pos: tính từ
+    back:
+      meaning:
+        vi: kỳ lạ, đặc biệt
+      examples:
+        - target: Das Essen schmeckt eigenartig.
+          translation:
+            vi: Món ăn có vị lạ.
+  - key: de:item:b1w2-empfindlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: empfindlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhạy cảm, dễ hỏng
+      examples:
+        - target: Meine Haut ist sehr empfindlich.
+          translation:
+            vi: Da tôi rất nhạy cảm.
+  - key: de:item:b1w2-endgueltig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: endgültig
+      pos: tính từ
+    back:
+      meaning:
+        vi: dứt khoát, cuối cùng
+      examples:
+        - target: Das ist meine endgültige Entscheidung.
+          translation:
+            vi: Đó là quyết định cuối cùng của tôi.
+  - key: de:item:b1w2-entfernt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entfernt
+      pos: tính từ
+    back:
+      meaning:
+        vi: xa; từ xa
+      examples:
+        - target: Das Dorf liegt weit entfernt von der Stadt.
+          translation:
+            vi: Ngôi làng nằm xa thành phố.
+  - key: de:item:b1w2-ernsthaft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ernsthaft
+      pos: tính từ
+    back:
+      meaning:
+        vi: nghiêm túc, nghiêm trọng
+      examples:
+        - target: Er ist ernsthaft krank.
+          translation:
+            vi: Anh ấy bị bệnh nghiêm trọng.
+  - key: de:item:b1w2-heimlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: heimlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: bí mật, lén lút
+      examples:
+        - target: Sie hat das Geschenk heimlich gekauft.
+          translation:
+            vi: Cô ấy đã mua món quà một cách bí mật.
+  - key: de:item:b1w2-hilflos
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hilflos
+      pos: tính từ
+    back:
+      meaning:
+        vi: bất lực, không có khả năng tự lo
+      examples:
+        - target: Ohne Übersetzer fühlte er sich im Ausland hilflos.
+          translation:
+            vi: Không có người phiên dịch anh ấy thấy bất lực ở nước ngoài.
+  - key: de:item:b1w2-kostbar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kostbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: quý giá
+      examples:
+        - target: Das ist ein kostbarer Ring von meiner Oma.
+          translation:
+            vi: Đó là chiếc nhẫn quý của bà tôi.
+  - key: de:item:b1w2-kuenstlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: künstlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhân tạo
+      examples:
+        - target: Dieses Aroma ist künstlich.
+          translation:
+            vi: Hương vị này là nhân tạo.
+  - key: de:item:b1w2-laestig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: lästig
+      pos: tính từ
+    back:
+      meaning:
+        vi: phiền phức, khó chịu
+      examples:
+        - target: Die Fliegen im Sommer sind sehr lästig.
+          translation:
+            vi: Ruồi mùa hè rất phiền phức.
+  - key: de:item:b1w2-muehsam
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: mühsam
+      pos: tính từ
+    back:
+      meaning:
+        vi: vất vả, khó nhọc
+      examples:
+        - target: Das Lernen der Artikel ist mühsam.
+          translation:
+            vi: Học mạo từ rất vất vả.
+  - key: de:item:b1w2-noetig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: nötig
+      pos: tính từ
+    back:
+      meaning:
+        vi: cần thiết
+      examples:
+        - target: Ist es wirklich nötig, so früh aufzustehen?
+          translation:
+            vi: Có thật sự cần thiết phải dậy sớm như vậy không?
+  - key: de:item:b1w2-offensichtlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: offensichtlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: rõ ràng, hiển nhiên
+      examples:
+        - target: Er hat offensichtlich keine Lust zu kommen.
+          translation:
+            vi: Rõ ràng là anh ấy không muốn đến.
+  - key: de:item:b1w2-selbstverstaendlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: selbstverständlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: tất nhiên, là điều đương nhiên
+      examples:
+        - target: Für mich ist es selbstverständlich, dass ich helfe.
+          translation:
+            vi: Đối với tôi việc giúp đỡ là điều đương nhiên.
+  - key: de:item:b1w2-sorgfaeltig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sorgfältig
+      pos: tính từ
+    back:
+      meaning:
+        vi: cẩn thận, kỹ lưỡng
+      examples:
+        - target: Bitte lesen Sie den Vertrag sorgfältig.
+          translation:
+            vi: Xin hãy đọc kỹ hợp đồng.
+  - key: de:item:b1w2-sparsam
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sparsam
+      pos: tính từ
+    back:
+      meaning:
+        vi: tiết kiệm
+      examples:
+        - target: Meine Oma ist sehr sparsam.
+          translation:
+            vi: Bà tôi rất tiết kiệm.
+  - key: de:item:b1w2-tatsaechlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: tatsächlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thật sự, thực tế
+      examples:
+        - target: Hat er tatsächlich alles allein gemacht?
+          translation:
+            vi: Anh ấy thật sự đã làm tất cả một mình sao?
+  - key: de:item:b1w2-uebrig
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: übrig
+      pos: tính từ
+    back:
+      meaning:
+        vi: còn lại, dư
+      examples:
+        - target: Ist noch Kuchen übrig?
+          translation:
+            vi: Còn bánh dư không?
+  - key: de:item:b1w2-unglaublich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unglaublich
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể tin được
+      examples:
+        - target: Das Ergebnis ist unglaublich gut.
+          translation:
+            vi: Kết quả tốt đến không thể tin được.
+  - key: de:item:b1w2-allerdings
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: allerdings
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tuy nhiên; tất nhiên (khẳng định mạnh)
+      examples:
+        - target: Die Wohnung ist schön, allerdings ist die Miete hoch.
+          translation:
+            vi: Căn hộ đẹp, tuy nhiên tiền thuê cao.
+  - key: de:item:b1w2-ebenfalls
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ebenfalls
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cũng vậy, tương tự
+      examples:
+        - target: Ich wünsche Ihnen ein schönes Wochenende. – Danke, ebenfalls!
+          translation:
+            vi: Chúc ông/bà cuối tuần vui vẻ. – Cảm ơn, ông/bà cũng vậy!
+  - key: de:item:b1w2-jedenfalls
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: jedenfalls
+      pos: trạng từ
+    back:
+      meaning:
+        vi: dù sao thì, ít nhất là
+      examples:
+        - target: Ich komme jedenfalls pünktlich, egal was passiert.
+          translation:
+            vi: Dù sao tôi cũng sẽ đến đúng giờ, dù có chuyện gì xảy ra.
+  - key: de:item:b1w2-insgesamt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: insgesamt
+      pos: trạng từ
+    back:
+      meaning:
+        vi: tổng cộng, nhìn chung
+      examples:
+        - target: Insgesamt waren dreißig Gäste da.
+          translation:
+            vi: Tổng cộng có ba mươi khách.
+  - key: de:item:b1w2-uebrigens
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: übrigens
+      pos: trạng từ
+    back:
+      meaning:
+        vi: nhân tiện, à này
+      examples:
+        - target: Übrigens, hast du morgen Zeit?
+          translation:
+            vi: Nhân tiện, mai bạn có rảnh không?
+  - key: de:item:b1w2-zumindest
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zumindest
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ít nhất là
+      examples:
+        - target: Du könntest zumindest anrufen.
+          translation:
+            vi: Ít nhất bạn cũng có thể gọi điện.
+  - key: de:item:b1w2-bereits
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bereits
+      pos: trạng từ
+    back:
+      meaning:
+        vi: đã (nhấn mạnh)
+      examples:
+        - target: Der Zug ist bereits abgefahren.
+          translation:
+            vi: Tàu đã chạy rồi.
+  - key: de:item:b1w2-eigentlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: eigentlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thật ra, vốn dĩ
+      examples:
+        - target: Ich wollte eigentlich früher kommen.
+          translation:
+            vi: Thật ra tôi định đến sớm hơn.
+  - key: de:item:b1w2-hoffentlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hoffentlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hy vọng là
+      examples:
+        - target: Hoffentlich regnet es morgen nicht.
+          translation:
+            vi: Hy vọng ngày mai trời không mưa.
+  - key: de:item:b1w2-irgendwo
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: irgendwo
+      pos: trạng từ
+    back:
+      meaning:
+        vi: ở đâu đó
+      examples:
+        - target: Mein Schlüssel muss irgendwo hier sein.
+          translation:
+            vi: Chìa khóa của tôi chắc ở đâu đó quanh đây.
+  - key: de:item:b1w2-irgendwie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: irgendwie
+      pos: trạng từ
+    back:
+      meaning:
+        vi: bằng cách nào đó; không hiểu sao
+      examples:
+        - target: Das Essen schmeckt irgendwie komisch.
+          translation:
+            vi: Không hiểu sao món ăn có vị lạ.
+  - key: de:item:b1w2-nirgends
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: nirgends
+      pos: trạng từ
+    back:
+      meaning:
+        vi: không nơi nào
+      examples:
+        - target: Ich finde meine Brille nirgends.
+          translation:
+            vi: Tôi không tìm thấy kính của mình ở đâu cả.
+  - key: de:item:b1w2-offenbar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: offenbar
+      pos: trạng từ
+    back:
+      meaning:
+        vi: có vẻ, rõ ràng là
+      examples:
+        - target: Er hat offenbar den Termin vergessen.
+          translation:
+            vi: Rõ ràng là anh ấy đã quên lịch hẹn.
+  - key: de:item:b1w2-ohnehin
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ohnehin
+      pos: trạng từ
+    back:
+      meaning:
+        vi: vốn dĩ, dù sao cũng
+      examples:
+        - target: Ich muss ohnehin in die Stadt, ich kann dich mitnehmen.
+          translation:
+            vi: Dù sao tôi cũng phải vào thành phố, tôi có thể chở bạn.
+  - key: de:item:b1w2-schliesslich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: schließlich
+      pos: trạng từ
+    back:
+      meaning:
+        vi: cuối cùng; suy cho cùng
+      examples:
+        - target: Nach langem Suchen haben wir schließlich ein Hotel gefunden.
+          translation:
+            vi: Sau khi tìm lâu, cuối cùng chúng tôi cũng tìm được một khách sạn.
+  - key: de:item:b1w2-sogar
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sogar
+      pos: trạng từ
+    back:
+      meaning:
+        vi: thậm chí
+      examples:
+        - target: Heute ist es sogar im Norden warm.
+          translation:
+            vi: Hôm nay thậm chí ở miền Bắc cũng ấm.
+  - key: de:item:b1w2-sowieso
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sowieso
+      pos: trạng từ
+    back:
+      meaning:
+        vi: dù sao cũng
+      examples:
+        - target: Ich gehe sowieso einkaufen, soll ich dir etwas mitbringen?
+          translation:
+            vi: Dù sao tôi cũng đi mua sắm, tôi mang giúp bạn gì không?
+  - key: de:item:b1w2-teilweise
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: teilweise
+      pos: trạng từ
+    back:
+      meaning:
+        vi: một phần, một số
+      examples:
+        - target: Die Straßen sind teilweise noch gesperrt.
+          translation:
+            vi: Một số đường vẫn còn bị cấm.
+  - key: de:item:b1w2-vorhin
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorhin
+      pos: trạng từ
+    back:
+      meaning:
+        vi: lúc nãy
+      examples:
+        - target: Du hast vorhin angerufen, nicht wahr?
+          translation:
+            vi: Lúc nãy bạn đã gọi điện phải không?
+  - key: de:item:b1w2-weiterhin
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: weiterhin
+      pos: trạng từ
+    back:
+      meaning:
+        vi: vẫn tiếp tục
+      examples:
+        - target: Ich werde weiterhin Deutsch lernen.
+          translation:
+            vi: Tôi sẽ tiếp tục học tiếng Đức.
+  - key: de:item:b1w2-zuletzt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zuletzt
+      pos: trạng từ
+    back:
+      meaning:
+        vi: lần cuối; cuối cùng
+      examples:
+        - target: Wann hast du ihn zuletzt gesehen?
+          translation:
+            vi: Lần cuối bạn gặp anh ấy là khi nào?
+  - key: de:item:b1w2-zunaechst
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zunächst
+      pos: trạng từ
+    back:
+      meaning:
+        vi: trước hết
+      examples:
+        - target: Zunächst möchte ich mich vorstellen.
+          translation:
+            vi: Trước hết tôi muốn tự giới thiệu.
+  - key: de:item:b1w2-zurzeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zurzeit
+      pos: trạng từ
+    back:
+      meaning:
+        vi: hiện nay
+      examples:
+        - target: Zurzeit arbeite ich in Hamburg.
+          translation:
+            vi: Hiện nay tôi làm việc ở Hamburg.
+  - key: de:item:b1w2-anscheinend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anscheinend
+      pos: trạng từ
+    back:
+      meaning:
+        vi: có vẻ như
+      examples:
+        - target: Er ist anscheinend krank.
+          translation:
+            vi: Có vẻ như anh ấy bị ốm.

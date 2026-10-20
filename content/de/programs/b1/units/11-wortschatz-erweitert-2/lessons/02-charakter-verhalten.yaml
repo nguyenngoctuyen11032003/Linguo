@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w2-charakter-verhalten
+order_index: 2
+level: b1
+title:
+  vi: Tính cách và cách cư xử (Charakter und Verhalten)
+objectives:
+  - vi: Mô tả tính cách người khác bằng nhiều tính từ chính xác.
+  - vi: "Nhận biết các cặp từ trái nghĩa với tiền tố un-: geduldig – ungeduldig, zuverlässig – unzuverlässig."
+  - vi: "Dùng các danh từ chỉ phẩm chất tương ứng: die Geduld, die Pünktlichkeit, die Freundlichkeit."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w2-familie-erziehung
+items:
+  - item: de:item:b1w2-temperamentvoll
+  - item: de:item:b1w2-ungeduldig
+  - item: de:item:b1w2-unzuverlaessig
+  - item: de:item:b1w2-bescheiden
+  - item: de:item:b1w2-arrogant
+  - item: de:item:b1w2-eingebildet
+  - item: de:item:b1w2-faul
+  - item: de:item:b1w2-chaotisch
+  - item: de:item:b1w2-verschlossen
+  - item: de:item:b1w2-selbstbewusst
+  - item: de:item:b1w2-unsicher
+  - item: de:item:b1w2-aengstlich
+  - item: de:item:b1w2-nachdenklich
+  - item: de:item:b1w2-lebhaft
+  - item: de:item:b1w2-gelassen
+  - item: de:item:b1w2-launisch
+  - item: de:item:b1w2-gespraechig
+  - item: de:item:b1w2-unpuenktlich
+  - item: de:item:b1w2-charakterzug
+  - item: de:item:b1w2-selbstbewusstsein
+  - item: de:item:b1w2-geduld
+  - item: de:item:b1w2-puenktlichkeit
+  - item: de:item:b1w2-freundlichkeit
+  - item: de:item:b1w2-benehmen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được tính cách của mình và người khác khá chi tiết và nêu ví dụ về cách cư xử trong công việc và đời sống.
+  - type: explain
+    text:
+      vi: "Tiền tố un- đảo nghĩa tính từ: geduldig – ungeduldig, zuverlässig – unzuverlässig, pünktlich – unpünktlich, sicher – unsicher. Đây là cách mở rộng vốn từ nhanh nhất; nhưng không phải tính từ nào cũng có: trái nghĩa của faul là fleißig, của bescheiden là arrogant hoặc eingebildet."
+  - type: explain
+    text:
+      vi: "Từ tính từ sang danh từ: bằng đuôi -keit hoặc -heit, danh từ luôn là giống cái: pünktlich → die Pünktlichkeit, freundlich → die Freundlichkeit, ehrlich → die Ehrlichkeit. Từ geduldig có danh từ die Geduld (không có -keit). Das Selbstbewusstsein là sự tự tin (danh từ trung, không có số nhiều)."
+  - type: explain
+    text:
+      vi: "Một số cách nói tự nhiên: Er ist ein ruhiger Mensch und bleibt auch unter Druck gelassen. Sie wirkt unsicher, ist aber in Wirklichkeit sehr kompetent. Dùng wirken (tạo cảm giác) để mô tả ấn tượng bên ngoài. Der Charakterzug là nét tính cách đặc trưng: Geduld ist ihr wichtigster Charakterzug."
+  - type: deep_explain
+    text:
+      vi: "Cẩn thận với từ giống tiếng Việt: eingebildet nghĩa là tự cao, tự phụ, không phải \"tưởng tượng\". Nachdenklich là hay suy tư, trầm ngâm. Launisch chỉ người dễ đổi tâm trạng, thường mang nghĩa tiêu cực. Gesprächig là hay nói, thích trò chuyện, thường mang nghĩa trung tính hoặc tích cực."
+  - type: example
+    target: Meine Tante ist sehr temperamentvoll.
+    target_lang: de
+    translation:
+      vi: Dì tôi rất sôi nổi.
+    note:
+      vi: temperamentvoll = sôi nổi, nóng nảy.
+  - type: example
+    target: Wenn er warten muss, wird er schnell ungeduldig.
+    target_lang: de
+    translation:
+      vi: Khi phải đợi, anh ấy nhanh chóng mất kiên nhẫn.
+    note:
+      vi: ungeduldig = thiếu kiên nhẫn.
+  - type: example
+    target: Der Handwerker ist leider unzuverlässig.
+    target_lang: de
+    translation:
+      vi: Người thợ tiếc là không đáng tin.
+    note:
+      vi: unzuverlässig = không đáng tin cậy.
+  - type: example
+    target: Trotz seines Erfolgs ist er bescheiden geblieben.
+    target_lang: de
+    translation:
+      vi: Dù thành công, anh ấy vẫn khiêm tốn.
+    note:
+      vi: bescheiden = khiêm tốn.
+  - type: common_mistake
+    wrong: Der Pünktlichkeit ist wichtig.
+    right: Die Pünktlichkeit ist wichtig.
+    target_lang: de
+    note:
+      vi: Danh từ có đuôi -keit luôn là giống cái nên dùng mạo từ die.
+  - type: common_mistake
+    wrong: Die Geduld ist ein wichtiger Charakterzug von sie.
+    right: Geduld ist ein wichtiger Charakterzug von ihr.
+    target_lang: de
+    note:
+      vi: "Sau giới từ von dùng Dativ: ihr, không phải sie."
+  - type: summary
+    points:
+      - vi: der Charakterzug, das Selbstbewusstsein, die Geduld, die Pünktlichkeit, die Freundlichkeit, das Benehmen.
+exercises:
+  - key: de:exercise:b1w2l2-listen-eingebildet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-eingebildet
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sie ist ziemlich eingebildet und hört niemandem zu.
+      options:
+        - { id: omh, text: Công việc này cần nhiều kiên nhẫn., lang: vi }
+        - { id: qga, text: Hôm nay sếp tôi lại thất thường., lang: vi }
+        - { id: f5h, text: "Khi phải đợi, anh ấy nhanh chóng mất kiên nhẫn.", lang: vi }
+        - { id: z9r, text: Cô ta khá tự cao và không nghe ai cả., lang: vi }
+    answer:
+      correct_option_id: z9r
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cô ta khá tự cao và không nghe ai cả.". Từ khoá là eingebildet (tự cao, tự phụ); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cô ta khá tự cao và không nghe ai cả.
+  - key: de:exercise:b1w2l2-mcq-vi-de-selbstbewusstsein
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w2-selbstbewusstsein
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "sự tự tin"?
+      stem_lang: vi
+      options:
+        - { id: lo7, text: das Benehmen, lang: de }
+        - { id: qhx, text: die Freundlichkeit, lang: de }
+        - { id: ky1, text: die Geduld, lang: de }
+        - { id: ugy, text: das Selbstbewusstsein, lang: de }
+    answer:
+      correct_option_id: ugy
+    explanation:
+      vi: "das Selbstbewusstsein nghĩa là \"sự tự tin\". Ví dụ: Mit mehr Selbstbewusstsein hätte sie die Stelle bekommen. (Nếu tự tin hơn, cô ấy đã nhận được vị trí đó.)"
+    display_answer: das Selbstbewusstsein
+  - key: de:exercise:b1w2l2-mcq-de-vi-nachdenklich
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-nachdenklich
+    prompt:
+      stem: "\"nachdenklich\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: vt5, text: sự đúng giờ, lang: vi }
+        - { id: zk7, text: "lộn xộn, hỗn loạn", lang: vi }
+        - { id: raj, text: "không chắc chắn, thiếu tự tin", lang: vi }
+        - { id: xfg, text: "trầm ngâm, hay suy nghĩ", lang: vi }
+    answer:
+      correct_option_id: xfg
+    explanation:
+      vi: "nachdenklich nghĩa là \"trầm ngâm, hay suy nghĩ\". Ví dụ: Nach dem Gespräch war sie ganz nachdenklich. (Sau cuộc trò chuyện cô ấy hoàn toàn trầm ngâm.)"
+    display_answer: trầm ngâm, hay suy nghĩ
+  - key: de:exercise:b1w2l2-mcq-artikel-puenktlichkeit
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-puenktlichkeit
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Pünktlichkeit\" (sự đúng giờ): ___ Pünktlichkeit"
+      stem_lang: vi
+      options:
+        - { id: fwl, text: der, lang: de }
+        - { id: m2l, text: das, lang: de }
+        - { id: iil, text: die, lang: de }
+        - { id: fcy, text: ein, lang: de }
+    answer:
+      correct_option_id: iil
+    explanation:
+      vi: "Pünktlichkeit là danh từ giống cái (die): die Pünktlichkeit (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w2l2-tr-word-benehmen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-benehmen
+    prompt:
+      source_text: cách cư xử, tác phong (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Benehmen
+    known_wrong:
+      - answer: der Benehmen
+        feedback_vi: Benehmen là giống trung, nên là das Benehmen.
+        error_tag: article
+      - answer: die Benehmen
+        feedback_vi: Benehmen là giống trung, nên là das Benehmen.
+        error_tag: article
+    explanation:
+      vi: "\"cách cư xử, tác phong\" trong tiếng Đức là das Benehmen (số nhiều: không dùng). Ví dụ: Sein Benehmen bei Tisch war schlecht."
+    display_answer: das Benehmen
+  - key: de:exercise:b1w2l2-tr-word-unzuverlaessig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-unzuverlaessig
+    prompt:
+      source_text: không đáng tin cậy (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - unzuverlässig
+    explanation:
+      vi: "\"không đáng tin cậy\" trong tiếng Đức là unzuverlässig. Ví dụ: Der Handwerker ist leider unzuverlässig."
+    display_answer: unzuverlässig
+  - key: de:exercise:b1w2l2-fill-plural-charakterzug
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-charakterzug
+    prompt:
+      template: "Singular: der Charakterzug · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 15 }
+    answer:
+      blanks:
+        b1:
+          - Charakterzüge
+    known_wrong:
+      - answer: Charakterzug
+        feedback_vi: Charakterzug là dạng số ít; số nhiều là Charakterzüge.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Charakterzug là die Charakterzüge (ký hiệu trong từ điển: ¨-e, nguyên âm đổi thành ä/ö/ü/äu). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Charakterzug · Plural: die Charakterzüge"
+  - key: de:exercise:b1w2l2-mcq-luecke-temperamentvoll
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-temperamentvoll
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Dì tôi rất sôi nổi.\": Meine Tante ist sehr ___."
+      stem_lang: vi
+      options:
+        - { id: iiu, text: arrogant, lang: de }
+        - { id: exk, text: temperamentvoll, lang: de }
+        - { id: obi, text: verschlossener, lang: de }
+        - { id: wzt, text: unzuverlässig, lang: de }
+    answer:
+      correct_option_id: exk
+    explanation:
+      vi: "Câu có nghĩa \"Dì tôi rất sôi nổi.\" nên cần temperamentvoll (temperamentvoll: sôi nổi, nóng nảy). verschlossener = kín đáo, ít nói về mình; unzuverlässig = không đáng tin cậy; arrogant = kiêu ngạo không đúng nghĩa của câu."
+    display_answer: temperamentvoll
+  - key: de:exercise:b1w2l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Mein Kollege ist sehr gesprächig, aber leider auch ziemlich unpünktlich.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mein Kollege ist sehr gesprächig, aber leider auch ziemlich unpünktlich.
+        - Mein Kollege ist sehr gesprächig, leider aber auch ziemlich unpünktlich.
+        - Mein Kollege redet viel, aber leider ist er auch ziemlich unpünktlich.
+    explanation:
+      vi: "Gợi ý đáp án: Mein Kollege ist sehr gesprächig, aber leider auch ziemlich unpünktlich. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Mein Kollege ist sehr gesprächig, aber leider auch ziemlich unpünktlich.
+    item: de:item:b1w2-gespraechig
+  - key: de:exercise:b1w2l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Obwohl sie nach außen selbstbewusst wirkt, ist sie innerlich oft unsicher.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù bề ngoài có vẻ tự tin, bên trong cô ấy thường không chắc chắn.
+        - Mặc dù trông bề ngoài tự tin nhưng trong lòng cô ấy thường bất an.
+        - Dù tỏ ra tự tin ra ngoài, nội tâm cô ấy thường thiếu chắc chắn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Obwohl sie nach außen selbstbewusst wirkt, ist sie innerlich oft unsicher.\" nghĩa là: Dù bề ngoài có vẻ tự tin, bên trong cô ấy thường không chắc chắn. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Dù bề ngoài có vẻ tự tin, bên trong cô ấy thường không chắc chắn.
+    item: de:item:b1w2-selbstbewusst

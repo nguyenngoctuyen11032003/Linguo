@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w2-sport-fitness
+order_index: 3
+level: b1
+title:
+  vi: Thể thao, thể lực và chấn thương (Sport und Fitness)
+objectives:
+  - vi: Mô tả buổi tập, thể lực và các chấn thương thể thao thường gặp.
+  - vi: "Nói về giải đấu và thành tích: Marathon, Medaille, Rekord, Meisterschaft."
+  - vi: Dùng các động từ sich dehnen, aufwärmen, durchhalten, anfeuern, siegen, besiegen.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w2-charakter-verhalten
+items:
+  - item: de:item:b1w2-muskel
+  - item: de:item:b1w2-kondition
+  - item: de:item:b1w2-ausdauer
+  - item: de:item:b1w2-dehnuebung
+  - item: de:item:b1w2-trainingseinheit
+  - item: de:item:b1w2-fitnessprogramm
+  - item: de:item:b1w2-verletzung
+  - item: de:item:b1w2-muskelkater
+  - item: de:item:b1w2-zerrung
+  - item: de:item:b1w2-sporthalle
+  - item: de:item:b1w2-schwimmbecken
+  - item: de:item:b1w2-marathon
+  - item: de:item:b1w2-medaille
+  - item: de:item:b1w2-rekord
+  - item: de:item:b1w2-meisterschaft
+  - item: de:item:b1w2-wanderweg
+  - item: de:item:b1w2-sich-dehnen
+  - item: de:item:b1w2-aufwaermen
+  - item: de:item:b1w2-durchhalten
+  - item: de:item:b1w2-anfeuern
+  - item: de:item:b1w2-siegen
+  - item: de:item:b1w2-besiegen
+  - item: de:item:b1w2-durchtrainiert
+  - item: de:item:b1w2-beweglich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được một buổi tập luyện, nói về chấn thương nhẹ và kể về một giải đấu bằng câu rõ ràng.
+  - type: explain
+    text:
+      vi: "Từ chỉ thể lực: die Kondition (thể lực), die Ausdauer (sức bền), der Muskel (cơ), das Fitnessprogramm, die Trainingseinheit. Cách nói tự nhiên: Ich arbeite an meiner Kondition. Sie hat viel Ausdauer. Cả hai danh từ Kondition và Ausdauer thường dùng ở số ít."
+  - type: explain
+    text:
+      vi: "Chấn thương: die Verletzung (chấn thương nói chung), die Zerrung (căng cơ), der Muskelkater (đau cơ sau tập, chỉ có số ít). Hỏi: Wie ist die Verletzung passiert? Động từ liên quan: sich dehnen (giãn cơ), aufwärmen (khởi động), durchhalten (kiên trì đến cùng)."
+  - type: explain
+    text:
+      vi: "Thành tích: der Marathon, die Medaille, der Rekord, die Meisterschaft. Động từ: siegen (thắng, không có tân ngữ) và besiegen (đánh bại ai, có tân ngữ Akkusativ): Unsere Mannschaft hat gesiegt. Unsere Mannschaft hat den Gegner besiegt. Anfeuern là cổ vũ, động viên: Die Fans feuern das Team an."
+  - type: deep_explain
+    text:
+      vi: "Marathon là danh từ giống đực (der Marathon, số nhiều die Marathons). Cẩn thận với động từ tách: Wir wärmen uns auf. Ich halte durch. Die Fans feuern das Team an. Durchtrainiert chỉ cơ thể săn chắc, còn beweglich là linh hoạt, dẻo dai."
+  - type: example
+    target: Beim Krafttraining werden die Muskeln stärker.
+    target_lang: de
+    translation:
+      vi: Khi tập tạ, các cơ trở nên khỏe hơn.
+    note:
+      vi: der Muskel = cơ bắp.
+  - type: example
+    target: Meine Kondition ist nach dem Winter schlecht.
+    target_lang: de
+    translation:
+      vi: Thể lực của tôi sau mùa đông kém đi.
+    note:
+      vi: die Kondition = thể lực.
+  - type: example
+    target: Für einen Marathon braucht man viel Ausdauer.
+    target_lang: de
+    translation:
+      vi: Để chạy marathon cần nhiều sức bền.
+    note:
+      vi: die Ausdauer = sức bền, tính bền bỉ.
+  - type: example
+    target: Nach dem Laufen mache ich ein paar Dehnübungen.
+    target_lang: de
+    translation:
+      vi: Sau khi chạy tôi tập vài bài giãn cơ.
+    note:
+      vi: die Dehnübung = bài tập giãn cơ.
+  - type: common_mistake
+    wrong: Ich habe Muskelkater in die Beine.
+    right: Ich habe Muskelkater in den Beinen.
+    target_lang: de
+    note:
+      vi: "Muskelkater ở đâu thì dùng in + Dativ số nhiều: in den Beinen."
+  - type: common_mistake
+    wrong: Unsere Mannschaft hat gesiegt den Gegner.
+    right: Unsere Mannschaft hat den Gegner besiegt.
+    target_lang: de
+    note:
+      vi: Siegen không có tân ngữ; muốn nói đánh bại ai thì dùng besiegen + Akkusativ.
+  - type: summary
+    points:
+      - vi: der Marathon, die Medaille, der Rekord, die Meisterschaft; siegen, besiegen, anfeuern; durchtrainiert, beweglich.
+exercises:
+  - key: de:exercise:b1w2l3-listen-wanderweg
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-wanderweg
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Wanderweg führt durch den Wald.
+      options:
+        - { id: upo, text: "Khi tập tạ, các cơ trở nên khỏe hơn.", lang: vi }
+        - { id: hwz, text: Con đường mòn đi xuyên qua rừng., lang: vi }
+        - { id: qao, text: Anh ấy đã kiên trì đến cùng., lang: vi }
+        - { id: dtk, text: Sau khi chạy tôi tập vài bài giãn cơ., lang: vi }
+    answer:
+      correct_option_id: hwz
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Con đường mòn đi xuyên qua rừng.". Từ khoá là der Wanderweg (đường mòn đi bộ); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Con đường mòn đi xuyên qua rừng.
+  - key: de:exercise:b1w2l3-mcq-vi-de-anfeuern
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w2-anfeuern
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cổ vũ, động viên"?
+      stem_lang: vi
+      options:
+        - { id: db6, text: anfeuern, lang: de }
+        - { id: hnj, text: besiegen, lang: de }
+        - { id: wgh, text: aufwärmen, lang: de }
+        - { id: hxi, text: durchhalten, lang: de }
+    answer:
+      correct_option_id: db6
+    explanation:
+      vi: "anfeuern nghĩa là \"cổ vũ, động viên\". Ví dụ: Die Fans feuern die Spieler laut an. (Người hâm mộ cổ vũ cầu thủ rất to.)"
+    display_answer: anfeuern
+  - key: de:exercise:b1w2l3-mcq-de-vi-trainingseinheit
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-trainingseinheit
+    prompt:
+      stem: "\"die Trainingseinheit\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: c3d, text: bài tập giãn cơ, lang: vi }
+        - { id: jts, text: cơ bắp, lang: vi }
+        - { id: zf9, text: buổi tập, lang: vi }
+        - { id: ftz, text: thể lực, lang: vi }
+    answer:
+      correct_option_id: zf9
+    explanation:
+      vi: "die Trainingseinheit nghĩa là \"buổi tập\". Ví dụ: Wir haben pro Woche drei Trainingseinheiten. (Mỗi tuần chúng tôi có ba buổi tập.)"
+    display_answer: buổi tập
+  - key: de:exercise:b1w2l3-mcq-artikel-medaille
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-medaille
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Medaille\" (huy chương): ___ Medaille"
+      stem_lang: vi
+      options:
+        - { id: zyu, text: der, lang: de }
+        - { id: ls4, text: das, lang: de }
+        - { id: o7h, text: ein, lang: de }
+        - { id: j8f, text: die, lang: de }
+    answer:
+      correct_option_id: j8f
+    explanation:
+      vi: "Medaille là danh từ giống cái (die): die Medaille; số nhiều: die Medaillen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w2l3-tr-word-rekord
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-rekord
+    prompt:
+      source_text: kỷ lục (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Rekord
+    known_wrong:
+      - answer: die Rekord
+        feedback_vi: Rekord là giống đực, nên là der Rekord.
+        error_tag: article
+      - answer: das Rekord
+        feedback_vi: Rekord là giống đực, nên là der Rekord.
+        error_tag: article
+    explanation:
+      vi: "\"kỷ lục\" trong tiếng Đức là der Rekord (số nhiều: die Rekorde). Ví dụ: Er hat einen neuen Rekord aufgestellt."
+    display_answer: der Rekord
+  - key: de:exercise:b1w2l3-tr-word-durchhalten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-durchhalten
+    prompt:
+      source_text: kiên trì, trụ vững (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - durchhalten
+    explanation:
+      vi: "\"kiên trì, trụ vững\" trong tiếng Đức là durchhalten. Ví dụ: Er hat bis zum Ende durchgehalten."
+    display_answer: durchhalten
+  - key: de:exercise:b1w2l3-fill-plural-marathon
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-marathon
+    prompt:
+      template: "Singular: der Marathon · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 11 }
+    answer:
+      blanks:
+        b1:
+          - Marathons
+    known_wrong:
+      - answer: Marathon
+        feedback_vi: Marathon là dạng số ít; số nhiều là Marathons.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Marathon là die Marathons (ký hiệu trong từ điển: -s). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Marathon · Plural: die Marathons"
+  - key: de:exercise:b1w2l3-mcq-luecke-muskel
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-muskel
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Khi tập tạ, các cơ trở nên khỏe hơn.\": Beim Krafttraining werden die ___ stärker."
+      stem_lang: vi
+      options:
+        - { id: vjz, text: Meisterschaft, lang: de }
+        - { id: xub, text: Muskeln, lang: de }
+        - { id: agx, text: Marathon, lang: de }
+        - { id: y1i, text: Schwimmbecken, lang: de }
+    answer:
+      correct_option_id: xub
+    explanation:
+      vi: "Câu có nghĩa \"Khi tập tạ, các cơ trở nên khỏe hơn.\" nên cần Muskeln (der Muskel: cơ bắp). Marathon = cuộc chạy marathon; Schwimmbecken = bể bơi; Meisterschaft = giải vô địch không đúng nghĩa của câu."
+    display_answer: Muskeln
+  - key: de:exercise:b1w2l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Nach dem Aufwärmen habe ich mich gedehnt und danach eine Stunde trainiert.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nach dem Aufwärmen habe ich mich gedehnt und danach eine Stunde trainiert.
+        - Nachdem ich mich aufgewärmt hatte, habe ich mich gedehnt und danach eine Stunde trainiert.
+        - Nach dem Aufwärmen dehnte ich mich und trainierte danach eine Stunde.
+    explanation:
+      vi: "Gợi ý đáp án: Nach dem Aufwärmen habe ich mich gedehnt und danach eine Stunde trainiert. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Nach dem Aufwärmen habe ich mich gedehnt und danach eine Stunde trainiert.
+    item: de:item:b1w2-aufwaermen
+  - key: de:exercise:b1w2l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Obwohl sie eine Zerrung hatte, hat sie bis zum Ende des Marathons durchgehalten.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù bị căng cơ, cô ấy vẫn kiên trì đến hết cuộc chạy marathon.
+        - Mặc dù bị căng cơ, cô ấy đã cố gắng đến hết cuộc marathon.
+        - Dù bị giãn cơ, cô ấy vẫn chạy đến cùng cuộc marathon.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Obwohl sie eine Zerrung hatte, hat sie bis zum Ende des Marathons durchgehalten.\" nghĩa là: Dù bị căng cơ, cô ấy vẫn kiên trì đến hết cuộc chạy marathon. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Dù bị căng cơ, cô ấy vẫn kiên trì đến hết cuộc chạy marathon.
+    item: de:item:b1w2-zerrung

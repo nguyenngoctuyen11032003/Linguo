@@ -1,0 +1,235 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w2-adjektive-b1
+order_index: 5
+level: b1
+title:
+  vi: Tính từ thông dụng ở trình độ B1 (Wichtige Adjektive)
+objectives:
+  - vi: Dùng thêm hơn hai mươi tính từ B1 để mô tả sự việc, tình huống và đồ vật.
+  - vi: "Phân biệt các cặp gần nghĩa: wichtig – dringend, übrig – nötig, bekannt – berühmt."
+  - vi: Nhận biết đuôi -lich, -ig, -sam, -bar, -los của tính từ.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w2-kultur-medien
+items:
+  - item: de:item:b1w2-ausreichend
+  - item: de:item:b1w2-bekannt
+  - item: de:item:b1w2-beliebt
+  - item: de:item:b1w2-bereit
+  - item: de:item:b1w2-dringend
+  - item: de:item:b1w2-eigenartig
+  - item: de:item:b1w2-empfindlich
+  - item: de:item:b1w2-endgueltig
+  - item: de:item:b1w2-entfernt
+  - item: de:item:b1w2-ernsthaft
+  - item: de:item:b1w2-heimlich
+  - item: de:item:b1w2-hilflos
+  - item: de:item:b1w2-kostbar
+  - item: de:item:b1w2-kuenstlich
+  - item: de:item:b1w2-laestig
+  - item: de:item:b1w2-muehsam
+  - item: de:item:b1w2-noetig
+  - item: de:item:b1w2-offensichtlich
+  - item: de:item:b1w2-selbstverstaendlich
+  - item: de:item:b1w2-sorgfaeltig
+  - item: de:item:b1w2-sparsam
+  - item: de:item:b1w2-tatsaechlich
+  - item: de:item:b1w2-uebrig
+  - item: de:item:b1w2-unglaublich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được sự việc, tình huống và đồ vật chính xác hơn bằng nhiều tính từ quan trọng ở B1, đặt chúng đúng chỗ trong câu.
+  - type: explain
+    text:
+      vi: "Một số đuôi tính từ giúp đoán nghĩa: -lich (heimlich, empfindlich, selbstverständlich, unglaublich), -ig (endgültig, sorgfältig, lästig), -bar (kostbar), -los (hilflos), -sam (mühsam, sparsam). Dù vậy, hãy học từng từ cùng ví dụ."
+  - type: explain
+    text:
+      vi: "Sau sein tính từ không đổi đuôi: Das ist dringend. Trước danh từ, tính từ có đuôi theo giống, cách và mạo từ: eine dringende Angelegenheit, ein kostbarer Ring. Bạn đã học quy tắc này ở A2 và B1; hãy luyện thêm với các từ mới."
+  - type: explain
+    text:
+      vi: "Một số cặp cần phân biệt: bekannt (được nhiều người biết) và berühmt (nổi tiếng) khá gần nhau, nhưng bekannt trung tính hơn; nötig (cần thiết) và übrig (còn dư): Ich habe noch zehn Euro übrig. Offensichtlich nghĩa là rõ ràng, hiển nhiên, còn tatsächlich là thật sự, thực tế."
+  - type: deep_explain
+    text:
+      vi: "Tính từ endgültig (cuối cùng, không thay đổi nữa) thường đi với danh từ quyết định: eine endgültige Entscheidung. Heimlich nghĩa là bí mật, lén lút: Er hat sie heimlich fotografiert. Selbstverständlich cũng được dùng như một trạng từ: Selbstverständlich helfe ich dir. Nó có nghĩa là tất nhiên rồi."
+  - type: example
+    target: Wir haben ausreichend Zeit für die Vorbereitung.
+    target_lang: de
+    translation:
+      vi: Chúng ta có đủ thời gian để chuẩn bị.
+    note:
+      vi: ausreichend = đủ, đầy đủ.
+  - type: example
+    target: Das Restaurant ist in der ganzen Stadt bekannt.
+    target_lang: de
+    translation:
+      vi: Nhà hàng này nổi tiếng khắp thành phố.
+    note:
+      vi: bekannt = được nhiều người biết; quen thuộc.
+  - type: example
+    target: Dieser Park ist bei Familien sehr beliebt.
+    target_lang: de
+    translation:
+      vi: Công viên này rất được các gia đình ưa chuộng.
+    note:
+      vi: beliebt = được ưa chuộng.
+  - type: example
+    target: Bist du bereit für den Test?
+    target_lang: de
+    translation:
+      vi: Bạn đã sẵn sàng cho bài kiểm tra chưa?
+    note:
+      vi: bereit = sẵn sàng.
+  - type: common_mistake
+    wrong: Das Ergebnis ist unglaubliches.
+    right: Das Ergebnis ist unglaublich.
+    target_lang: de
+    note:
+      vi: Sau sein, tính từ không đổi đuôi.
+  - type: common_mistake
+    wrong: Es ist tatsächlich offensichtlich, dass er kommt nicht.
+    right: Es ist offensichtlich, dass er nicht kommt.
+    target_lang: de
+    note:
+      vi: "Trong câu phụ với dass, động từ chia đứng cuối: dass er nicht kommt."
+  - type: summary
+    points:
+      - vi: Sau sein, tính từ không đổi đuôi; trước danh từ có đuôi theo giống, cách và mạo từ.
+exercises:
+  - key: de:exercise:b1w2l5-listen-empfindlich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-empfindlich
+    prompt:
+      audio_asset_id: null
+      fallback_text: Meine Haut ist sehr empfindlich.
+      options:
+        - { id: b85, text: Da tôi rất nhạy cảm., lang: vi }
+        - { id: bgl, text: Bạn đã sẵn sàng cho bài kiểm tra chưa?, lang: vi }
+        - { id: sy1, text: Học mạo từ rất vất vả., lang: vi }
+        - { id: o28, text: Đối với tôi việc giúp đỡ là điều đương nhiên., lang: vi }
+    answer:
+      correct_option_id: b85
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Da tôi rất nhạy cảm.". Từ khoá là empfindlich (nhạy cảm, dễ hỏng); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Da tôi rất nhạy cảm.
+  - key: de:exercise:b1w2l5-mcq-vi-de-eigenartig
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w2-eigenartig
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "kỳ lạ, đặc biệt"?
+      stem_lang: vi
+      options:
+        - { id: pmd, text: heimlich, lang: de }
+        - { id: s3t, text: lästig, lang: de }
+        - { id: hjt, text: eigenartig, lang: de }
+        - { id: mmp, text: ausreichend, lang: de }
+    answer:
+      correct_option_id: hjt
+    explanation:
+      vi: "eigenartig nghĩa là \"kỳ lạ, đặc biệt\". Ví dụ: Das Essen schmeckt eigenartig. (Món ăn có vị lạ.)"
+    display_answer: eigenartig
+  - key: de:exercise:b1w2l5-mcq-de-vi-entfernt
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-entfernt
+    prompt:
+      stem: "\"entfernt\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: cqp, text: "kỳ lạ, đặc biệt", lang: vi }
+        - { id: hh4, text: không thể tin được, lang: vi }
+        - { id: h06, text: xa; từ xa, lang: vi }
+        - { id: izu, text: "còn lại, dư", lang: vi }
+    answer:
+      correct_option_id: h06
+    explanation:
+      vi: "entfernt nghĩa là \"xa; từ xa\". Ví dụ: Das Dorf liegt weit entfernt von der Stadt. (Ngôi làng nằm xa thành phố.)"
+    display_answer: xa; từ xa
+  - key: de:exercise:b1w2l5-tr-word-hilflos
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-hilflos
+    prompt:
+      source_text: bất lực, không có khả năng tự lo (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - hilflos
+    explanation:
+      vi: "\"bất lực, không có khả năng tự lo\" trong tiếng Đức là hilflos. Ví dụ: Ohne Übersetzer fühlte er sich im Ausland hilflos."
+    display_answer: hilflos
+  - key: de:exercise:b1w2l5-mcq-luecke-ausreichend
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-ausreichend
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Chúng ta có đủ thời gian để chuẩn bị.\": Wir haben ___ Zeit für die Vorbereitung."
+      stem_lang: vi
+      options:
+        - { id: n4p, text: ernsthaft, lang: de }
+        - { id: uw4, text: sparsam, lang: de }
+        - { id: xey, text: bereit, lang: de }
+        - { id: w7i, text: ausreichend, lang: de }
+    answer:
+      correct_option_id: w7i
+    explanation:
+      vi: "Câu có nghĩa \"Chúng ta có đủ thời gian để chuẩn bị.\" nên cần ausreichend (ausreichend: đủ, đầy đủ). bereit = sẵn sàng; ernsthaft = nghiêm túc, nghiêm trọng; sparsam = tiết kiệm không đúng nghĩa của câu."
+    display_answer: ausreichend
+  - key: de:exercise:b1w2l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Es ist unglaublich, wie sorgfältig und sparsam er mit dem Geld umgeht.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Es ist unglaublich, wie sorgfältig und sparsam er mit dem Geld umgeht.
+        - Es ist unglaublich, wie sparsam und sorgfältig er mit dem Geld umgeht.
+        - Es ist unglaublich, wie sorgfältig und sparsam er mit seinem Geld umgeht.
+    explanation:
+      vi: "Gợi ý đáp án: Es ist unglaublich, wie sorgfältig und sparsam er mit dem Geld umgeht. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Es ist unglaublich, wie sorgfältig und sparsam er mit dem Geld umgeht.
+    item: de:item:b1w2-sorgfaeltig
+  - key: de:exercise:b1w2l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Das Handy ist ein beliebtes Geschenk, aber die Akkus sind sehr empfindlich.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Điện thoại là món quà được ưa chuộng, nhưng pin rất nhạy cảm.
+        - Điện thoại là món quà được nhiều người thích, nhưng pin rất dễ hỏng.
+        - Điện thoại di động là một món quà được yêu thích nhưng pin rất nhạy.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das Handy ist ein beliebtes Geschenk, aber die Akkus sind sehr empfindlich.\" nghĩa là: Điện thoại là món quà được ưa chuộng, nhưng pin rất nhạy cảm. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Điện thoại là món quà được ưa chuộng, nhưng pin rất nhạy cảm.
+    item: de:item:b1w2-beliebt

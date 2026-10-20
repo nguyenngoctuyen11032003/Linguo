@@ -1,0 +1,235 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w2-adverbien-b1
+order_index: 6
+level: b1
+title:
+  vi: Trạng từ và từ nối thông dụng ở B1 (Wichtige Adverbien)
+objectives:
+  - vi: "Dùng các trạng từ nối ý và bày tỏ thái độ: allerdings, übrigens, schließlich, anscheinend."
+  - vi: Nói về thời gian bằng vorhin, zuletzt, zunächst, zurzeit, weiterhin.
+  - vi: "Vị trí các trạng từ trong câu: đầu câu, giữa câu và sau động từ."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w2-adjektive-b1
+items:
+  - item: de:item:b1w2-allerdings
+  - item: de:item:b1w2-ebenfalls
+  - item: de:item:b1w2-jedenfalls
+  - item: de:item:b1w2-insgesamt
+  - item: de:item:b1w2-uebrigens
+  - item: de:item:b1w2-zumindest
+  - item: de:item:b1w2-bereits
+  - item: de:item:b1w2-eigentlich
+  - item: de:item:b1w2-hoffentlich
+  - item: de:item:b1w2-irgendwo
+  - item: de:item:b1w2-irgendwie
+  - item: de:item:b1w2-nirgends
+  - item: de:item:b1w2-offenbar
+  - item: de:item:b1w2-ohnehin
+  - item: de:item:b1w2-schliesslich
+  - item: de:item:b1w2-sogar
+  - item: de:item:b1w2-sowieso
+  - item: de:item:b1w2-teilweise
+  - item: de:item:b1w2-vorhin
+  - item: de:item:b1w2-weiterhin
+  - item: de:item:b1w2-zuletzt
+  - item: de:item:b1w2-zunaechst
+  - item: de:item:b1w2-zurzeit
+  - item: de:item:b1w2-anscheinend
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói và viết mạch lạc, tự nhiên hơn nhờ khoảng hai mươi trạng từ thường dùng để nối ý, bày tỏ thái độ và nói về thời gian.
+  - type: explain
+    text:
+      vi: "Trạng từ nối ý: allerdings (tuy nhiên), jedenfalls (dù sao thì), übrigens (nhân tiện), schließlich (rốt cuộc, suy cho cùng), sowieso (dù sao cũng), ohnehin (vốn dĩ). Chúng thường đứng ở vị trí thứ nhất hoặc giữa câu. Khi đứng đầu câu, động từ chia vẫn ở vị trí thứ hai: Allerdings kann ich nicht kommen."
+  - type: explain
+    text:
+      vi: "Trạng từ chỉ thời gian: vorhin (lúc nãy), zuletzt (lần cuối), zunächst (trước hết), zurzeit (hiện nay), weiterhin (vẫn tiếp tục), bereits (đã). Trạng từ thái độ: hoffentlich (hy vọng là), offenbar, anscheinend (có vẻ như), eigentlich (thật ra), sogar (thậm chí), ebenfalls (cũng vậy)."
+  - type: explain
+    text:
+      vi: "Trạng từ không đổi đuôi và có vị trí linh hoạt. Hai vị trí thường dùng: đầu câu để nhấn mạnh (Zurzeit arbeite ich in Köln) hoặc ngay sau động từ chia (Ich arbeite zurzeit in Köln). Trạng từ chỉ nơi không xác định: irgendwo (ở đâu đó), nirgends (không nơi nào), irgendwie (bằng cách nào đó)."
+  - type: deep_explain
+    text:
+      vi: "Eigentlich hay gặp ở câu hỏi lịch sự hoặc để làm dịu: Was machst du eigentlich beruflich? Ebenfalls dùng khi đáp lời chúc: Danke, ebenfalls! (Cảm ơn, bạn cũng vậy!). Sowieso và ohnehin gần nghĩa nhau; sowieso thân mật hơn: Ich gehe sowieso einkaufen, soll ich dir etwas mitbringen? Teilweise nghĩa là một phần, một số."
+  - type: example
+    target: Die Wohnung ist schön, allerdings ist die Miete hoch.
+    target_lang: de
+    translation:
+      vi: Căn hộ đẹp, tuy nhiên tiền thuê cao.
+    note:
+      vi: allerdings = tuy nhiên; tất nhiên (khẳng định mạnh).
+  - type: example
+    target: Ich wünsche Ihnen ein schönes Wochenende. – Danke, ebenfalls!
+    target_lang: de
+    translation:
+      vi: Chúc ông/bà cuối tuần vui vẻ. – Cảm ơn, ông/bà cũng vậy!
+    note:
+      vi: ebenfalls = cũng vậy, tương tự.
+  - type: example
+    target: Ich komme jedenfalls pünktlich, egal was passiert.
+    target_lang: de
+    translation:
+      vi: Dù sao tôi cũng sẽ đến đúng giờ, dù có chuyện gì xảy ra.
+    note:
+      vi: jedenfalls = dù sao thì, ít nhất là.
+  - type: example
+    target: Insgesamt waren dreißig Gäste da.
+    target_lang: de
+    translation:
+      vi: Tổng cộng có ba mươi khách.
+    note:
+      vi: insgesamt = tổng cộng, nhìn chung.
+  - type: common_mistake
+    wrong: Allerdings ich kann nicht kommen.
+    right: Allerdings kann ich nicht kommen.
+    target_lang: de
+    note:
+      vi: Khi allerdings đứng đầu câu, động từ chia phải đứng ngay sau ở vị trí thứ hai.
+  - type: common_mistake
+    wrong: Ich habe ihm zuletzt gesehen.
+    right: Ich habe ihn zuletzt gesehen.
+    target_lang: de
+    note:
+      vi: "Sehen đòi hỏi tân ngữ Akkusativ: ihn, không phải ihm."
+  - type: summary
+    points:
+      - vi: irgendwo, irgendwie, nirgends; trạng từ đứng đầu câu thì động từ chia ở vị trí thứ hai.
+exercises:
+  - key: de:exercise:b1w2l6-listen-irgendwie
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-irgendwie
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das Essen schmeckt irgendwie komisch.
+      options:
+        - { id: bgv, text: Tổng cộng có ba mươi khách., lang: vi }
+        - { id: xcc, text: Thật ra tôi định đến sớm hơn., lang: vi }
+        - { id: ny1, text: Không hiểu sao món ăn có vị lạ., lang: vi }
+        - { id: s39, text: "Sau khi tìm lâu, cuối cùng chúng tôi cũng tìm được một khách sạn.", lang: vi }
+    answer:
+      correct_option_id: ny1
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Không hiểu sao món ăn có vị lạ.". Từ khoá là irgendwie (bằng cách nào đó; không hiểu sao); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Không hiểu sao món ăn có vị lạ.
+  - key: de:exercise:b1w2l6-mcq-vi-de-hoffentlich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w2-hoffentlich
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "hy vọng là"?
+      stem_lang: vi
+      options:
+        - { id: rgv, text: nirgends, lang: de }
+        - { id: eab, text: anscheinend, lang: de }
+        - { id: num, text: insgesamt, lang: de }
+        - { id: on1, text: hoffentlich, lang: de }
+    answer:
+      correct_option_id: on1
+    explanation:
+      vi: "hoffentlich nghĩa là \"hy vọng là\". Ví dụ: Hoffentlich regnet es morgen nicht. (Hy vọng ngày mai trời không mưa.)"
+    display_answer: hoffentlich
+  - key: de:exercise:b1w2l6-mcq-de-vi-teilweise
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-teilweise
+    prompt:
+      stem: "\"teilweise\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: rkw, text: có vẻ như, lang: vi }
+        - { id: aw0, text: không nơi nào, lang: vi }
+        - { id: jcz, text: hy vọng là, lang: vi }
+        - { id: gpe, text: "một phần, một số", lang: vi }
+    answer:
+      correct_option_id: gpe
+    explanation:
+      vi: "teilweise nghĩa là \"một phần, một số\". Ví dụ: Die Straßen sind teilweise noch gesperrt. (Một số đường vẫn còn bị cấm.)"
+    display_answer: một phần, một số
+  - key: de:exercise:b1w2l6-tr-word-zunaechst
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-zunaechst
+    prompt:
+      source_text: trước hết
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - zunächst
+    explanation:
+      vi: "\"trước hết\" trong tiếng Đức là zunächst. Ví dụ: Zunächst möchte ich mich vorstellen."
+    display_answer: zunächst
+  - key: de:exercise:b1w2l6-mcq-luecke-allerdings
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-allerdings
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Căn hộ đẹp, tuy nhiên tiền thuê cao.\": Die Wohnung ist schön, ___ ist die Miete hoch."
+      stem_lang: vi
+      options:
+        - { id: srw, text: jedenfalls, lang: de }
+        - { id: zn6, text: allerdings, lang: de }
+        - { id: esq, text: Zunächst, lang: de }
+        - { id: z5f, text: vorhin, lang: de }
+    answer:
+      correct_option_id: zn6
+    explanation:
+      vi: "Câu có nghĩa \"Căn hộ đẹp, tuy nhiên tiền thuê cao.\" nên cần allerdings (allerdings: tuy nhiên; tất nhiên (khẳng định mạnh)). jedenfalls = dù sao thì, ít nhất là; Zunächst = trước hết; vorhin = lúc nãy không đúng nghĩa của câu."
+    display_answer: allerdings
+  - key: de:exercise:b1w2l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Ich habe vorhin angerufen, aber offenbar war niemand zu Hause.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe vorhin angerufen, aber offenbar war niemand zu Hause.
+        - Ich habe vorhin angerufen, aber anscheinend war niemand zu Hause.
+        - Vorhin habe ich angerufen, aber offenbar war niemand zu Hause.
+    explanation:
+      vi: "Gợi ý đáp án: Ich habe vorhin angerufen, aber offenbar war niemand zu Hause. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich habe vorhin angerufen, aber offenbar war niemand zu Hause.
+    item: de:item:b1w2-offenbar
+  - key: de:exercise:b1w2l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Zunächst möchte ich mich bedanken; außerdem muss ich sagen, dass ich zurzeit sehr viel zu tun habe.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trước hết tôi muốn cảm ơn; ngoài ra tôi phải nói rằng hiện nay tôi có rất nhiều việc.
+        - Đầu tiên tôi muốn cảm ơn; hơn nữa tôi phải nói rằng hiện giờ tôi rất bận.
+        - Trước tiên tôi xin cảm ơn; thêm nữa, hiện tại tôi có rất nhiều việc phải làm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Zunächst möchte ich mich bedanken; außerdem muss ich sagen, dass ich zurzeit sehr viel zu tun habe.\" nghĩa là: Trước hết tôi muốn cảm ơn; ngoài ra tôi phải nói rằng hiện nay tôi có rất nhiều việc. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Trước hết tôi muốn cảm ơn; ngoài ra tôi phải nói rằng hiện nay tôi có rất nhiều việc.
+    item: de:item:b1w2-zunaechst

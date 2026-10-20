@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w2-kultur-medien
+order_index: 4
+level: b1
+title:
+  vi: Phim, nhạc, sách và giải trí (Kultur und Medien)
+objectives:
+  - vi: Nói về phim, buổi hòa nhạc, sách và các dịch vụ giải trí.
+  - vi: "Dùng danh từ ghép về phim ảnh và âm nhạc: Kinokarte, Filmmusik, Eintrittskarte."
+  - vi: Nêu ý kiến về một bộ phim hoặc quyển sách bằng các tính từ spannend, gruselig, rührend, fesselnd.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w2-sport-fitness
+items:
+  - item: de:item:b1w2-kinoprogramm
+  - item: de:item:b1w2-kinokarte
+  - item: de:item:b1w2-leinwand
+  - item: de:item:b1w2-trailer
+  - item: de:item:b1w2-filmmusik
+  - item: de:item:b1w2-untertitel
+  - item: de:item:b1w2-eintrittskarte
+  - item: de:item:b1w2-band
+  - item: de:item:b1w2-lied
+  - item: de:item:b1w2-melodie
+  - item: de:item:b1w2-album
+  - item: de:item:b1w2-bestseller
+  - item: de:item:b1w2-taschenbuch
+  - item: de:item:b1w2-hoerbuch
+  - item: de:item:b1w2-besucher
+  - item: de:item:b1w2-drehort
+  - item: de:item:b1w2-zeichentrickfilm
+  - item: de:item:b1w2-streaming
+  - item: de:item:b1w2-mediathek
+  - item: de:item:b1w2-auftreten
+  - item: de:item:b1w2-verfilmen
+  - item: de:item:b1w2-gruselig
+  - item: de:item:b1w2-ruehrend
+  - item: de:item:b1w2-fesselnd
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được về một bộ phim hay quyển sách bạn đã xem hoặc đọc, mua vé và nêu cảm nhận bằng vài tính từ chính xác.
+  - type: explain
+    text:
+      vi: "Từ về phim: das Kinoprogramm (lịch chiếu), die Kinokarte, die Leinwand (màn ảnh), der Trailer, die Filmmusik, die Untertitel (thường dùng ở số nhiều), der Zeichentrickfilm, der Drehort. Muốn nói bộ phim được dựng từ tiểu thuyết, dùng verfilmen: Der Roman wurde verfilmt."
+  - type: explain
+    text:
+      vi: "Âm nhạc: die Band, das Lied, die Melodie, das Album (số nhiều Alben), die Eintrittskarte (vé vào cửa). Động từ auftreten (tritt auf, trat auf, ist aufgetreten): Die Band tritt am Samstag in Köln auf. Sách: der Bestseller, das Taschenbuch, das Hörbuch (sách nói)."
+  - type: explain
+    text:
+      vi: "Dịch vụ giải trí hiện đại: das Streaming (không có số nhiều) và die Mediathek (kho phát lại chương trình của đài truyền hình). Tính từ nêu cảm nhận: spannend (hấp dẫn), gruselig (rùng rợn), rührend (cảm động), fesselnd (lôi cuốn). Có thể thêm sehr hoặc ziemlich: ein ziemlich gruseliger Film."
+  - type: deep_explain
+    text:
+      vi: "Untertitel thường được dùng ở số nhiều khi nói về phim: Der Film hat deutsche Untertitel. Những bộ phim nước ngoài ở Đức thường được lồng tiếng (synchronisiert), nhưng ở nhiều rạp lớn có chiếu bản gốc kèm phụ đề (im Original mit Untertiteln, OmU). Das Album có số nhiều bất quy tắc die Alben; das Lied có số nhiều die Lieder."
+  - type: example
+    target: Im Kinoprogramm steht heute ein neuer Film.
+    target_lang: de
+    translation:
+      vi: Trong lịch chiếu hôm nay có một bộ phim mới.
+    note:
+      vi: das Kinoprogramm = lịch chiếu phim.
+  - type: example
+    target: Ich habe zwei Kinokarten für Samstag gekauft.
+    target_lang: de
+    translation:
+      vi: Tôi đã mua hai vé xem phim cho thứ Bảy.
+    note:
+      vi: die Kinokarte = vé xem phim.
+  - type: example
+    target: Die Leinwand im Kino ist riesig.
+    target_lang: de
+    translation:
+      vi: Màn ảnh ở rạp rất lớn.
+    note:
+      vi: die Leinwand = màn ảnh.
+  - type: example
+    target: Den Trailer habe ich schon im Internet gesehen.
+    target_lang: de
+    translation:
+      vi: Tôi đã xem đoạn phim giới thiệu trên mạng.
+    note:
+      vi: der Trailer = đoạn phim giới thiệu.
+  - type: common_mistake
+    wrong: Wir haben zwei Kinokarte gekauft.
+    right: Wir haben zwei Kinokarten gekauft.
+    target_lang: de
+    note:
+      vi: "Sau số từ lớn hơn một, danh từ ở số nhiều: die Kinokarte → die Kinokarten."
+  - type: common_mistake
+    wrong: Das Band spielt heute Abend.
+    right: Die Band spielt heute Abend.
+    target_lang: de
+    note:
+      vi: Ban nhạc là die Band (giống cái, số nhiều die Bands).
+  - type: summary
+    points:
+      - vi: der Bestseller, das Taschenbuch, das Hörbuch, das Streaming, die Mediathek; spannend, gruselig, rührend, fesselnd.
+exercises:
+  - key: de:exercise:b1w2l4-listen-album
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-album
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Sängerin hat ein neues Album veröffentlicht.
+      options:
+        - { id: pm7, text: Nhạc phim rất tuyệt., lang: vi }
+        - { id: ycj, text: Phần kết của câu chuyện thật cảm động., lang: vi }
+        - { id: hdv, text: Nữ ca sĩ đã phát hành một album mới., lang: vi }
+        - { id: apz, text: Địa điểm quay bộ phim nằm ở dãy Alps., lang: vi }
+    answer:
+      correct_option_id: hdv
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Nữ ca sĩ đã phát hành một album mới.". Từ khoá là das Album (album); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Nữ ca sĩ đã phát hành một album mới.
+  - key: de:exercise:b1w2l4-mcq-vi-de-lied
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w2-lied
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "bài hát"?
+      stem_lang: vi
+      options:
+        - { id: ezf, text: das Album, lang: de }
+        - { id: k3r, text: die Eintrittskarte, lang: de }
+        - { id: mmq, text: das Streaming, lang: de }
+        - { id: fe7, text: das Lied, lang: de }
+    answer:
+      correct_option_id: fe7
+    explanation:
+      vi: "das Lied nghĩa là \"bài hát\". Ví dụ: Dieses Lied kenne ich schon lange. (Bài hát này tôi biết từ lâu rồi.)"
+    display_answer: das Lied
+  - key: de:exercise:b1w2l4-mcq-de-vi-ruehrend
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-ruehrend
+    prompt:
+      stem: "\"rührend\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: mnb, text: kho phát lại chương trình truyền hình, lang: vi }
+        - { id: xcx, text: lôi cuốn, lang: vi }
+        - { id: y01, text: cảm động, lang: vi }
+        - { id: xwd, text: phụ đề (phim), lang: vi }
+    answer:
+      correct_option_id: y01
+    explanation:
+      vi: "rührend nghĩa là \"cảm động\". Ví dụ: Das Ende der Geschichte ist rührend. (Phần kết của câu chuyện thật cảm động.)"
+    display_answer: cảm động
+  - key: de:exercise:b1w2l4-mcq-artikel-kinoprogramm
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-kinoprogramm
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Kinoprogramm\" (lịch chiếu phim): ___ Kinoprogramm"
+      stem_lang: vi
+      options:
+        - { id: xp7, text: das, lang: de }
+        - { id: y86, text: die, lang: de }
+        - { id: n0w, text: ein, lang: de }
+        - { id: ss3, text: der, lang: de }
+    answer:
+      correct_option_id: xp7
+    explanation:
+      vi: "Kinoprogramm là danh từ giống trung (das): das Kinoprogramm; số nhiều: die Kinoprogramme. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w2l4-tr-word-untertitel
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-untertitel
+    prompt:
+      source_text: phụ đề (phim) (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Untertitel
+    known_wrong:
+      - answer: die Untertitel
+        feedback_vi: Untertitel là giống đực, nên là der Untertitel.
+        error_tag: article
+      - answer: das Untertitel
+        feedback_vi: Untertitel là giống đực, nên là der Untertitel.
+        error_tag: article
+    explanation:
+      vi: "\"phụ đề (phim)\" trong tiếng Đức là der Untertitel (số nhiều: die Untertitel). Ví dụ: Ich schaue den Film lieber mit deutschen Untertiteln."
+    display_answer: der Untertitel
+  - key: de:exercise:b1w2l4-tr-word-gruselig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-gruselig
+    prompt:
+      source_text: rùng rợn (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - gruselig
+    explanation:
+      vi: "\"rùng rợn\" trong tiếng Đức là gruselig. Ví dụ: Der Film war mir zu gruselig."
+    display_answer: gruselig
+  - key: de:exercise:b1w2l4-fill-plural-band
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-band
+    prompt:
+      template: "Singular: die Band · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1:
+          - Bands
+    known_wrong:
+      - answer: Band
+        feedback_vi: Band là dạng số ít; số nhiều là Bands.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Band là die Bands (ký hiệu trong từ điển: -s). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Band · Plural: die Bands"
+  - key: de:exercise:b1w2l4-mcq-luecke-kinokarte
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-kinokarte
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tôi đã mua hai vé xem phim cho thứ Bảy.\": Ich habe zwei ___ für Samstag gekauft."
+      stem_lang: vi
+      options:
+        - { id: rf0, text: Album, lang: de }
+        - { id: y7n, text: Leinwand, lang: de }
+        - { id: i1m, text: Bestseller, lang: de }
+        - { id: toq, text: Kinokarten, lang: de }
+    answer:
+      correct_option_id: toq
+    explanation:
+      vi: "Câu có nghĩa \"Tôi đã mua hai vé xem phim cho thứ Bảy.\" nên cần Kinokarten (die Kinokarte: vé xem phim). Bestseller = sách bán chạy; Album = album; Leinwand = màn ảnh không đúng nghĩa của câu."
+    display_answer: Kinokarten
+  - key: de:exercise:b1w2l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Das Buch wurde verfilmt, aber der Film war leider nicht so fesselnd wie der Roman.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Das Buch wurde verfilmt, aber der Film war leider nicht so fesselnd wie der Roman.
+        - Das Buch ist verfilmt worden, aber der Film war leider nicht so fesselnd wie der Roman.
+        - Das Buch wurde verfilmt, aber der Film war leider nicht so fesselnd wie das Buch.
+    explanation:
+      vi: "Gợi ý đáp án: Das Buch wurde verfilmt, aber der Film war leider nicht so fesselnd wie der Roman. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Das Buch wurde verfilmt, aber der Film war leider nicht so fesselnd wie der Roman.
+    item: de:item:b1w2-verfilmen
+  - key: de:exercise:b1w2l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Band tritt am Samstag im Stadtpark auf, und die Eintrittskarten kann man schon online kaufen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ban nhạc biểu diễn vào thứ Bảy trong công viên thành phố, và vé vào cửa đã có thể mua trên mạng.
+        - Ban nhạc sẽ biểu diễn vào thứ Bảy ở công viên thành phố, vé có thể mua trực tuyến rồi.
+        - Ban nhạc trình diễn vào thứ Bảy trong công viên thành phố, và người ta đã có thể mua vé trên mạng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Band tritt am Samstag im Stadtpark auf, und die Eintrittskarten kann man schon online kaufen.\" nghĩa là: Ban nhạc biểu diễn vào thứ Bảy trong công viên thành phố, và vé vào cửa đã có thể mua trên mạng. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Ban nhạc biểu diễn vào thứ Bảy trong công viên thành phố, và vé vào cửa đã có thể mua trên mạng.
+    item: de:item:b1w2-eintrittskarte

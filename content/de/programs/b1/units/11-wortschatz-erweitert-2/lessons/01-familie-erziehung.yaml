@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w2-familie-erziehung
+order_index: 1
+level: b1
+title:
+  vi: Gia đình và nuôi dạy con (Familie und Erziehung)
+objectives:
+  - vi: Nói về cách nuôi dạy con, chăm sóc trẻ và các khoản hỗ trợ cho gia đình ở Đức.
+  - vi: Dùng các động từ erziehen, bestrafen, belohnen, verwöhnen đúng cấu trúc.
+  - vi: Miêu tả một đứa trẻ hoặc một người cha mẹ bằng các tính từ gehorsam, brav, verwöhnt.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w1-abstrakta-b1
+items:
+  - item: de:item:b1w2-erziehung
+  - item: de:item:b1w2-vorbild
+  - item: de:item:b1w2-belohnung
+  - item: de:item:b1w2-kinderbetreuung
+  - item: de:item:b1w2-krippe
+  - item: de:item:b1w2-kindergartenplatz
+  - item: de:item:b1w2-elternzeit
+  - item: de:item:b1w2-elterngeld
+  - item: de:item:b1w2-grossfamilie
+  - item: de:item:b1w2-saeugling
+  - item: de:item:b1w2-taschengeld
+  - item: de:item:b1w2-umgang
+  - item: de:item:b1w2-babysitter
+  - item: de:item:b1w2-windel
+  - item: de:item:b1w2-aufziehen
+  - item: de:item:b1w2-bestrafen
+  - item: de:item:b1w2-belohnen
+  - item: de:item:b1w2-verwoehnen
+  - item: de:item:b1w2-wickeln
+  - item: de:item:b1w2-gehorsam
+  - item: de:item:b1w2-brav
+  - item: de:item:b1w2-verwoehnt
+  - item: de:item:b1w2-alleinerziehend
+  - item: de:item:b1w2-kinderlieb
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thảo luận được về việc nuôi dạy con, các dịch vụ chăm sóc trẻ và cách cư xử của trẻ em trong gia đình.
+  - type: explain
+    text:
+      vi: "Từ chỉ chăm sóc trẻ: die Kinderbetreuung, die Krippe (nhà trẻ cho trẻ dưới ba tuổi), der Kindergartenplatz, der Babysitter. Chính sách hỗ trợ ở Đức có die Elternzeit (nghỉ để chăm con) và das Elterngeld (tiền hỗ trợ cha mẹ). Hai từ này thường xuất hiện trong thông báo của công ty và cơ quan."
+  - type: explain
+    text:
+      vi: "Về cách nuôi dạy: die Erziehung (không có số nhiều), ein Vorbild sein (là tấm gương), loben ↔ bestrafen, belohnen, verwöhnen (nuông chiều). Cấu trúc cố định: jemanden für etwas belohnen / bestrafen. Verwöhnen đôi khi mang sắc thái tiêu cực: ein verwöhntes Kind là đứa trẻ được chiều quá mức."
+  - type: explain
+    text:
+      vi: "Về trẻ sơ sinh: der Säugling (nhũ nhi), die Windel, wickeln (thay tã), aufziehen (nuôi lớn: zieht auf, zog auf, hat aufgezogen). Mô tả con trẻ: gehorsam (ngoan, vâng lời), brav (ngoan ngoãn), kinderlieb (yêu trẻ), alleinerziehend (nuôi con một mình): eine alleinerziehende Mutter."
+  - type: deep_explain
+    text:
+      vi: "Das Taschengeld (tiền tiêu vặt) ở Đức thường được trẻ nhận đều đặn từ khoảng 6 tuổi; cha mẹ thường hỏi nhau về mức hợp lý. Die Großfamilie chỉ gia đình nhiều thế hệ hoặc đông con, còn die Kleinfamilie chỉ cha mẹ và con cái. Der Umgang (cách đối xử, quan hệ giao tiếp) thường đi với mit + Dativ: der Umgang mit Kindern."
+  - type: example
+    target: Die Erziehung der Kinder ist eine große Verantwortung.
+    target_lang: de
+    translation:
+      vi: Việc nuôi dạy con cái là một trách nhiệm lớn.
+    note:
+      vi: die Erziehung = việc nuôi dạy, giáo dục trong gia đình.
+  - type: example
+    target: Eltern sind für ihre Kinder ein wichtiges Vorbild.
+    target_lang: de
+    translation:
+      vi: Cha mẹ là tấm gương quan trọng cho con cái.
+    note:
+      vi: das Vorbild = tấm gương, hình mẫu.
+  - type: example
+    target: Für die gute Note gab es eine Belohnung.
+    target_lang: de
+    translation:
+      vi: Vì điểm tốt, cậu bé nhận được phần thưởng.
+    note:
+      vi: die Belohnung = phần thưởng.
+  - type: example
+    target: Die Kinderbetreuung ist in unserer Stadt gut organisiert.
+    target_lang: de
+    translation:
+      vi: Việc chăm sóc trẻ ở thành phố chúng tôi được tổ chức tốt.
+    note:
+      vi: die Kinderbetreuung = việc chăm sóc trẻ.
+  - type: common_mistake
+    wrong: Er hat sein Kind für das Lügen bestraft, weil es hat gelogen.
+    right: Er hat sein Kind bestraft, weil es gelogen hat.
+    target_lang: de
+    note:
+      vi: "Trong câu phụ với weil, động từ chia đứng cuối: weil es gelogen hat."
+  - type: common_mistake
+    wrong: Meine Tochter ist sehr verwöhnen.
+    right: Meine Tochter ist sehr verwöhnt.
+    target_lang: de
+    note:
+      vi: "Sau sein, tính từ là Partizip II: verwöhnt, không phải nguyên thể."
+  - type: summary
+    points:
+      - vi: der Säugling, die Windel, wickeln; gehorsam, brav, verwöhnt, alleinerziehend, kinderlieb.
+exercises:
+  - key: de:exercise:b1w2l1-listen-gehorsam
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-gehorsam
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Hund ist sehr gehorsam.
+      options:
+        - { id: wu0, text: Ông bà thích nuông chiều các cháu., lang: vi }
+        - { id: rnt, text: Con chó rất vâng lời., lang: vi }
+        - { id: wyd, text: Tôi còn phải thay tã cho em bé., lang: vi }
+        - { id: d5f, text: Con trai chúng tôi đi nhà trẻ từ tháng Năm., lang: vi }
+    answer:
+      correct_option_id: rnt
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Con chó rất vâng lời.". Từ khoá là gehorsam (vâng lời); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Con chó rất vâng lời.
+  - key: de:exercise:b1w2l1-mcq-vi-de-brav
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w2-brav
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "ngoan, ngoan ngoãn"?
+      stem_lang: vi
+      options:
+        - { id: dxh, text: kinderlieb, lang: de }
+        - { id: v32, text: brav, lang: de }
+        - { id: t1m, text: gehorsam, lang: de }
+        - { id: dyk, text: verwöhnt, lang: de }
+    answer:
+      correct_option_id: v32
+    explanation:
+      vi: "brav nghĩa là \"ngoan, ngoan ngoãn\". Ví dụ: Seid ihr heute brav gewesen? (Hôm nay các con có ngoan không?)"
+    display_answer: brav
+  - key: de:exercise:b1w2l1-mcq-de-vi-kinderlieb
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w2-kinderlieb
+    prompt:
+      stem: "\"kinderlieb\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: s5b, text: "tấm gương, hình mẫu", lang: vi }
+        - { id: q8f, text: yêu trẻ, lang: vi }
+        - { id: gp5, text: thời gian nghỉ để chăm con, lang: vi }
+        - { id: f4f, text: vâng lời, lang: vi }
+    answer:
+      correct_option_id: q8f
+    explanation:
+      vi: "kinderlieb nghĩa là \"yêu trẻ\". Ví dụ: Mein Onkel ist sehr kinderlieb. (Chú tôi rất yêu trẻ con.)"
+    display_answer: yêu trẻ
+  - key: de:exercise:b1w2l1-mcq-artikel-vorbild
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-vorbild
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Vorbild\" (tấm gương, hình mẫu): ___ Vorbild"
+      stem_lang: vi
+      options:
+        - { id: sok, text: ein, lang: de }
+        - { id: s1o, text: der, lang: de }
+        - { id: kqs, text: das, lang: de }
+        - { id: l79, text: die, lang: de }
+    answer:
+      correct_option_id: kqs
+    explanation:
+      vi: "Vorbild là danh từ giống trung (das): das Vorbild; số nhiều: die Vorbilder. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w2l1-tr-word-windel
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-windel
+    prompt:
+      source_text: tã lót (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Windel
+    known_wrong:
+      - answer: der Windel
+        feedback_vi: Windel là giống cái, nên là die Windel.
+        error_tag: article
+      - answer: das Windel
+        feedback_vi: Windel là giống cái, nên là die Windel.
+        error_tag: article
+    explanation:
+      vi: "\"tã lót\" trong tiếng Đức là die Windel (số nhiều: die Windeln). Ví dụ: Die Windel muss gewechselt werden."
+    display_answer: die Windel
+  - key: de:exercise:b1w2l1-tr-word-aufziehen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-aufziehen
+    prompt:
+      source_text: nuôi lớn (con cái, con vật) (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - aufziehen
+    explanation:
+      vi: "\"nuôi lớn (con cái, con vật)\" trong tiếng Đức là aufziehen. Ví dụ: Sie hat drei Kinder allein aufgezogen."
+    display_answer: aufziehen
+  - key: de:exercise:b1w2l1-fill-plural-kindergartenplatz
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-kindergartenplatz
+    prompt:
+      template: "Singular: der Kindergartenplatz · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 20 }
+    answer:
+      blanks:
+        b1:
+          - Kindergartenplätze
+    known_wrong:
+      - answer: Kindergartenplatz
+        feedback_vi: Kindergartenplatz là dạng số ít; số nhiều là Kindergartenplätze.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Kindergartenplatz là die Kindergartenplätze (ký hiệu trong từ điển: ¨-e, nguyên âm đổi thành ä/ö/ü/äu). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Kindergartenplatz · Plural: die Kindergartenplätze"
+  - key: de:exercise:b1w2l1-mcq-luecke-erziehung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w2-erziehung
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Việc nuôi dạy con cái là một trách nhiệm lớn.\": Die ___ der Kinder ist eine große Verantwortung."
+      stem_lang: vi
+      options:
+        - { id: lae, text: Belohnung, lang: de }
+        - { id: cqp, text: Elternzeit, lang: de }
+        - { id: gmy, text: Erziehung, lang: de }
+        - { id: xb0, text: Kindergartenplatz, lang: de }
+    answer:
+      correct_option_id: gmy
+    explanation:
+      vi: "Câu có nghĩa \"Việc nuôi dạy con cái là một trách nhiệm lớn.\" nên cần Erziehung (die Erziehung: việc nuôi dạy, giáo dục trong gia đình). Elternzeit = thời gian nghỉ để chăm con; Kindergartenplatz = chỗ học ở trường mẫu giáo; Belohnung = phần thưởng không đúng nghĩa của câu."
+    display_answer: Erziehung
+  - key: de:exercise:b1w2l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Meine Schwester ist alleinerziehend, und ihr Sohn bekommt einen Kindergartenplatz.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meine Schwester ist alleinerziehend, und ihr Sohn bekommt einen Kindergartenplatz.
+        - Meine Schwester erzieht ihr Kind allein, und ihr Sohn bekommt einen Kindergartenplatz.
+        - Meine Schwester ist alleinerziehende Mutter, und ihr Sohn bekommt einen Kindergartenplatz.
+    explanation:
+      vi: "Gợi ý đáp án: Meine Schwester ist alleinerziehend, und ihr Sohn bekommt einen Kindergartenplatz. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Meine Schwester ist alleinerziehend, und ihr Sohn bekommt einen Kindergartenplatz.
+    item: de:item:b1w2-kindergartenplatz
+  - key: de:exercise:b1w2l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Eltern sollten ihre Kinder loben, wenn sie etwas gut gemacht haben, statt sie nur zu bestrafen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cha mẹ nên khen con khi chúng làm tốt điều gì, thay vì chỉ phạt.
+        - Bố mẹ nên khen con khi con làm được việc gì tốt, thay vì chỉ trừng phạt.
+        - Cha mẹ nên khen ngợi con cái khi chúng làm tốt, chứ không chỉ phạt chúng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Eltern sollten ihre Kinder loben, wenn sie etwas gut gemacht haben, statt sie nur zu bestrafen.\" nghĩa là: Cha mẹ nên khen con khi chúng làm tốt điều gì, thay vì chỉ phạt. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Cha mẹ nên khen con khi chúng làm tốt điều gì, thay vì chỉ phạt.
+    item: de:item:b1w2-bestrafen
