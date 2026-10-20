@@ -495,3 +495,324 @@ items:
     answer: a
     explanation:
       vi: "Tác giả thấy nỗi lo của chủ cửa hàng là “nachvollziehbar” (dễ hiểu), nhưng dẫn kinh nghiệm cho thấy phố đi bộ “keineswegs zwangsläufig” (hoàn toàn không nhất thiết) làm yếu việc buôn bán — với điều kiện (“vorausgesetzt”) trung tâm dễ đi tới bằng xe buýt và tàu. Điểm yếu của kế hoạch là phần giao thông công cộng mới chỉ là “kaum mehr als eine Absichtserklärung” (chỉ là tuyên bố ý định), và câu cuối gọi một trung tâm không ô tô thiếu lựa chọn thay thế là “ein Risiko”. “Không nhất thiết làm yếu” cũng khác với “luôn làm tăng” doanh thu."
+  # ---------- bổ sung ngân hàng câu hỏi (4 câu mỗi cấp) ----------
+  - key: de:diag:rea-pre-a1-lehrer-paul
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.25
+    prompt:
+      passage: "Guten Tag! Ich bin Paul. Ich wohne in Berlin. Ich bin Lehrer."
+      stem: "Theo đoạn giới thiệu, Paul làm nghề gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Giáo viên", lang: vi }
+        - { id: b, text: "Bác sĩ", lang: vi }
+        - { id: c, text: "Sinh viên", lang: vi }
+        - { id: d, text: "Đầu bếp", lang: vi }
+    answer: a
+    explanation:
+      vi: "“Ich bin Lehrer” nghĩa là “Tôi là giáo viên”. Đoạn văn không nhắc đến nghề bác sĩ, sinh viên hay đầu bếp; Berlin là nơi anh sống."
+  - key: de:diag:rea-pre-a1-museum-eingang
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.5
+    prompt:
+      passage: "Museum\nEingang links\nAusgang rechts"
+      stem: "Muốn vào bảo tàng, bạn đi cửa nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Cửa bên phải", lang: vi }
+        - { id: b, text: "Cửa bên trái", lang: vi }
+        - { id: c, text: "Cửa phía sau", lang: vi }
+        - { id: d, text: "Cửa tầng hai", lang: vi }
+    answer: b
+    explanation:
+      vi: "“Eingang links” nghĩa là lối vào ở bên trái. “Ausgang rechts” là lối ra bên phải, nên không phải cửa để vào."
+  - key: de:diag:rea-pre-a1-anna-schule
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.65
+    prompt:
+      passage: "Hallo Sofia,\nich bin in der Schule. Heute habe ich Mathe und Sport. Um zwei Uhr bin ich zu Hause.\nAnna"
+      stem: "Anna sẽ về đến nhà lúc mấy giờ?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "3 giờ", lang: vi }
+        - { id: b, text: "12 giờ", lang: vi }
+        - { id: c, text: "2 giờ", lang: vi }
+        - { id: d, text: "5 giờ", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Um zwei Uhr bin ich zu Hause” nghĩa là “2 giờ tôi về đến nhà”. Toán và thể thao chỉ là các môn học hôm nay."
+  - key: de:diag:rea-pre-a1-familie-weber
+    level: pre_a1
+    item_type: reading_mcq
+    difficulty: 0.8
+    prompt:
+      passage: "Das ist Familie Weber. Der Vater heißt Peter, die Mutter heißt Eva. Sie haben zwei Kinder: Lena und Tom."
+      stem: "Gia đình Weber có mấy người con?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "1", lang: vi }
+        - { id: b, text: "3", lang: vi }
+        - { id: c, text: "4", lang: vi }
+        - { id: d, text: "2", lang: vi }
+    answer: d
+    explanation:
+      vi: "Đoạn văn nói “zwei Kinder: Lena und Tom” – hai người con. Bố Peter và mẹ Eva là bố mẹ, không tính là con."
+  - key: de:diag:rea-a1-party-mark
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.25
+    prompt:
+      passage: "Liebe Lisa,\nam Samstag mache ich eine Party. Sie beginnt um 19 Uhr. Bitte bring etwas zu trinken mit. Kommst du?\nViele Grüße\nMark"
+      stem: "Mark nhờ Lisa mang theo gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đồ ăn", lang: vi }
+        - { id: b, text: "Hoa", lang: vi }
+        - { id: c, text: "Đồ uống", lang: vi }
+        - { id: d, text: "Quà sinh nhật", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Bitte bring etwas zu trinken mit” nghĩa là “Hãy mang theo gì đó để uống”. Mark không nhờ mang đồ ăn, hoa hay quà."
+  - key: de:diag:rea-a1-schwimmbad-nord
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.4
+    prompt:
+      passage: "Schwimmbad Nord\nMontag: geschlossen\nDienstag bis Freitag: 9–21 Uhr\nSamstag und Sonntag: 10–18 Uhr\nKinder unter 6 Jahren: Eintritt frei"
+      stem: "Vào thứ Hai, bể bơi thế nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Mở từ 9 đến 21 giờ", lang: vi }
+        - { id: b, text: "Mở từ 10 đến 18 giờ", lang: vi }
+        - { id: c, text: "Đóng cửa", lang: vi }
+        - { id: d, text: "Mở cửa miễn phí", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Montag: geschlossen” nghĩa là thứ Hai đóng cửa. Giờ 9–21 là của thứ Ba đến thứ Sáu, 10–18 là của cuối tuần; miễn phí chỉ áp dụng cho trẻ dưới 6 tuổi."
+  - key: de:diag:rea-a1-bus-verspaetung
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.55
+    prompt:
+      passage: "Hallo Tom,\nich komme heute später, weil mein Bus Verspätung hat. Ich bin um halb neun im Büro.\nAnna"
+      stem: "Anna sẽ đến văn phòng lúc mấy giờ?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "8 giờ 30", lang: vi }
+        - { id: b, text: "9 giờ 30", lang: vi }
+        - { id: c, text: "8 giờ", lang: vi }
+        - { id: d, text: "9 giờ", lang: vi }
+    answer: a
+    explanation:
+      vi: "“halb neun” là 8 giờ 30 (nửa tiếng trước 9 giờ), không phải 9 giờ 30. Anna đến muộn vì xe buýt bị trễ."
+  - key: de:diag:rea-a1-wohnung-haustiere
+    level: a1
+    item_type: reading_mcq
+    difficulty: 1.8
+    prompt:
+      passage: "Wohnung zu vermieten\n2 Zimmer, Küche, Bad, Balkon\n600 Euro im Monat\nKeine Haustiere!\nTelefon: nach 18 Uhr"
+      stem: "Ai không thể thuê căn hộ này?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Người nuôi thú cưng", lang: vi }
+        - { id: b, text: "Người có con nhỏ", lang: vi }
+        - { id: c, text: "Người không cần ban công", lang: vi }
+        - { id: d, text: "Người làm việc ban đêm", lang: vi }
+    answer: a
+    explanation:
+      vi: "“Keine Haustiere!” nghĩa là không được nuôi vật nuôi, nên người có thú cưng không thuê được. Quảng cáo không cấm trẻ nhỏ hay nói gì về nghề nghiệp."
+  - key: de:diag:rea-a2-termin-absage
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.25
+    prompt:
+      passage: "Liebe Frau Kunz,\nleider muss ich Ihren Termin am Montag absagen, weil ich krank bin. Können wir den Termin auf Mittwoch verschieben? Ich bin ab 14 Uhr frei.\nMit freundlichen Grüßen\nDr. Peters"
+      stem: "Vì sao bác sĩ Peters hủy lịch hẹn?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì ông bị ốm", lang: vi }
+        - { id: b, text: "Vì ông đi du lịch", lang: vi }
+        - { id: c, text: "Vì phòng khám đóng cửa", lang: vi }
+        - { id: d, text: "Vì ông bận họp", lang: vi }
+    answer: a
+    explanation:
+      vi: "“weil ich krank bin” nghĩa là “vì tôi bị ốm”. Bác sĩ đề nghị dời sang thứ Tư, sau 14 giờ; không có lý do nào khác được nêu."
+  - key: de:diag:rea-a2-cafe-fahrrad
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.4
+    prompt:
+      passage: "Neues Café in der Stadtmitte\nSeit Samstag gibt es am Marktplatz ein Café, in dem man auch Fahrräder reparieren lassen kann. Während man einen Kaffee trinkt, repariert der Besitzer das Rad. Das Café ist täglich von 8 bis 18 Uhr geöffnet, sonntags geschlossen."
+      stem: "Theo bài báo, điều nào ĐÚNG?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Quán cũng mở cửa vào Chủ nhật", lang: vi }
+        - { id: b, text: "Chủ quán chỉ bán xe đạp mới", lang: vi }
+        - { id: c, text: "Quán mở cửa từ 18 giờ", lang: vi }
+        - { id: d, text: "Khách có thể uống cà phê trong lúc xe được sửa", lang: vi }
+    answer: d
+    explanation:
+      vi: "“Während man einen Kaffee trinkt, repariert der Besitzer das Rad” – trong lúc khách uống cà phê, chủ quán sửa xe. Quán đóng cửa Chủ nhật và mở từ 8 đến 18 giờ."
+  - key: de:diag:rea-a2-zoo-ausflug
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.55
+    prompt:
+      passage: "Liebe Eltern,\nam Freitag fährt die Klasse 4b in den Zoo. Wir treffen uns um 8 Uhr an der Schule und sind um 14 Uhr zurück. Bitte geben Sie Ihrem Kind ein Pausenbrot und etwas zu trinken mit. Feste Schuhe werden empfohlen.\nFrau Klein"
+      stem: "Mỗi học sinh cần mang theo gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Tiền và vé", lang: vi }
+        - { id: b, text: "Áo mưa", lang: vi }
+        - { id: c, text: "Một bữa ăn nhẹ và đồ uống", lang: vi }
+        - { id: d, text: "Sách giáo khoa", lang: vi }
+    answer: c
+    explanation:
+      vi: "“ein Pausenbrot und etwas zu trinken” là bữa ăn nhẹ và đồ uống. Giày chắc chắn chỉ được khuyên mang; thư không nhắc đến tiền, áo mưa hay sách."
+  - key: de:diag:rea-a2-koeln-wetter
+    level: a2
+    item_type: reading_mcq
+    difficulty: 2.7
+    prompt:
+      passage: "Ich wohne seit drei Jahren in Köln. Am Anfang war es schwer, weil ich niemanden kannte. Dann habe ich einen Deutschkurs gemacht und viele nette Leute getroffen. Heute habe ich eine Wohnung, einen Job und Freunde. Nur das Wetter gefällt mir nicht."
+      stem: "Người viết KHÔNG thích điều gì ở Köln?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Công việc", lang: vi }
+        - { id: b, text: "Nhà ở", lang: vi }
+        - { id: c, text: "Thời tiết", lang: vi }
+        - { id: d, text: "Bạn bè", lang: vi }
+    answer: c
+    explanation:
+      vi: "“Nur das Wetter gefällt mir nicht” nghĩa là chỉ có thời tiết là không hợp ý. Nhà ở, việc làm và bạn bè đều là những điều tích cực ở hiện tại."
+  - key: de:diag:rea-b1-fahrrad-verkaufen
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.25
+    prompt:
+      passage: "Frage von Tom: Ich möchte mein altes Fahrrad verkaufen. Wo kann ich es am besten anbieten?\nAntwort von Mia: Online-Kleinanzeigen sind am einfachsten. Setz den Preis nicht zu hoch an. Wenn du schnell verkaufen willst, mach gute Fotos und schreib ehrlich dazu, was kaputt ist."
+      stem: "Mia khuyên gì nếu Tom muốn bán nhanh?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Đặt giá thật cao", lang: vi }
+        - { id: b, text: "Chờ đến mùa hè", lang: vi }
+        - { id: c, text: "Bán ở chợ trời", lang: vi }
+        - { id: d, text: "Chụp ảnh đẹp và mô tả trung thực", lang: vi }
+    answer: d
+    explanation:
+      vi: "Mia viết “mach gute Fotos und schreib ehrlich dazu, was kaputt ist”. Cô còn khuyên đừng đặt giá quá cao, nên “giá cao” là sai."
+  - key: de:diag:rea-b1-ubahn-ersatzbusse
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.4
+    prompt:
+      passage: "Wegen einer Störung fahren seit gestern zwischen Nordstadt und Zentrum keine U-Bahnen. Die Verkehrsbetriebe haben einen Ersatzverkehr mit Bussen eingerichtet, die allerdings nur alle 20 Minuten fahren. Die Reparatur soll bis Montag dauern. Fahrgäste sollten mehr Zeit einplanen."
+      stem: "Điều nào sau đây đúng với tình hình tàu điện ngầm?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Có xe buýt thay thế nhưng chỉ 20 phút một chuyến", lang: vi }
+        - { id: b, text: "Tàu điện vẫn chạy bình thường", lang: vi }
+        - { id: c, text: "Việc sửa chữa sẽ xong ngay hôm nay", lang: vi }
+        - { id: d, text: "Xe buýt thay thế chạy mỗi 5 phút", lang: vi }
+    answer: a
+    explanation:
+      vi: "“Ersatzverkehr mit Bussen … nur alle 20 Minuten” cho biết xe buýt thay thế chỉ có 20 phút một chuyến. Sự cố kéo dài đến thứ Hai, nên hành khách nên tính thêm thời gian."
+  - key: de:diag:rea-b1-absage-bewerbung
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.6
+    prompt:
+      passage: "Sehr geehrter Herr Wolf,\nvielen Dank für Ihre Bewerbung. Leider können wir Ihnen die Stelle nicht anbieten, weil wir uns für einen Bewerber mit mehr Berufserfahrung entschieden haben. Wir wünschen Ihnen für die Zukunft alles Gute."
+      stem: "Vì sao ông Wolf không nhận được vị trí?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Ông nộp đơn quá muộn", lang: vi }
+        - { id: b, text: "Công ty đã hủy vị trí này", lang: vi }
+        - { id: c, text: "Công ty chọn ứng viên có nhiều kinh nghiệm hơn", lang: vi }
+        - { id: d, text: "Ông không có bằng cấp", lang: vi }
+    answer: c
+    explanation:
+      vi: "“weil wir uns für einen Bewerber mit mehr Berufserfahrung entschieden haben” – công ty đã chọn ứng viên có nhiều kinh nghiệm hơn. Thư không nhắc đến việc nộp muộn, hủy vị trí hay bằng cấp."
+  - key: de:diag:rea-b1-vegetarisch-kochen
+    level: b1
+    item_type: reading_mcq
+    difficulty: 3.85
+    prompt:
+      passage: "Seit ich vegetarisch esse, koche ich viel häufiger selbst, weil es in Kantinen oft nur wenige Gerichte ohne Fleisch gibt. Am Anfang habe ich Fleisch vermisst, aber inzwischen schmeckt es mir sogar besser. Meine Freunde finden das übrigens komisch."
+      stem: "Vì sao người viết nấu ăn thường xuyên hơn?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vì căng-tin ít món không có thịt", lang: vi }
+        - { id: b, text: "Vì nấu ăn rẻ hơn", lang: vi }
+        - { id: c, text: "Vì bạn bè nhờ nấu", lang: vi }
+        - { id: d, text: "Vì anh ấy không thích đi ăn một mình", lang: vi }
+    answer: a
+    explanation:
+      vi: "“weil es in Kantinen oft nur wenige Gerichte ohne Fleisch gibt” – căng-tin ít món không thịt nên anh tự nấu. Bài không nói đến chuyện rẻ hơn hay bạn bè nhờ."
+  - key: de:diag:rea-b2-tempo-30
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.25
+    prompt:
+      passage: "Immer mehr Städte führen Tempo 30 ein. Befürworter verweisen auf weniger Unfälle und weniger Lärm, Kritiker warnen vor längeren Fahrzeiten für Busse. Einig ist man sich nur darin, dass die Entscheidung nicht pauschal fallen sollte: Auf Hauptstraßen mag Tempo 50 sinnvoll bleiben, in Wohngebieten ist Tempo 30 meist unstrittig."
+      stem: "Quan điểm của tác giả về Tempo 30 là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Nên áp dụng ở mọi con đường", lang: vi }
+        - { id: b, text: "Nên quyết định tùy loại đường, không áp dụng đại trà", lang: vi }
+        - { id: c, text: "Hoàn toàn vô ích", lang: vi }
+        - { id: d, text: "Chỉ nên giữ Tempo 50", lang: vi }
+    answer: b
+    explanation:
+      vi: "Tác giả nhấn mạnh quyết định “nicht pauschal” – không đại trà – và phân biệt đường chính (Tempo 50 có thể hợp lý) với khu dân cư (Tempo 30 ít tranh cãi)."
+  - key: de:diag:rea-b2-ehrenamt-umfrage
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.4
+    prompt:
+      passage: "Die Umfrage zeigt: Wer regelmäßig ehrenamtlich arbeitet, fühlt sich im Schnitt zufriedener. Allerdings lässt sich daraus nicht schließen, dass das Ehrenamt zufrieden macht; ebenso könnten zufriedene Menschen eher bereit sein, sich zu engagieren. Die Forscher raten daher zur Vorsicht bei Schlussfolgerungen."
+      stem: "Có thể suy ra điều gì từ đoạn văn?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Làm tình nguyện chắc chắn khiến con người hài lòng hơn", lang: vi }
+        - { id: b, text: "Người hài lòng không bao giờ làm tình nguyện", lang: vi }
+        - { id: c, text: "Quan hệ nhân quả giữa tình nguyện và sự hài lòng chưa được chứng minh", lang: vi }
+        - { id: d, text: "Cuộc khảo sát đã chứng minh tình nguyện làm tăng hạnh phúc", lang: vi }
+    answer: c
+    explanation:
+      vi: "Các nhà nghiên cứu nói rằng không thể kết luận là hoạt động tình nguyện gây ra sự hài lòng (có thể ngược lại), nên họ khuyên thận trọng. Hai đáp án khẳng định chắc chắn đều đi quá xa so với bài."
+  - key: de:diag:rea-b2-rechnung-erstattung
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.6
+    prompt:
+      passage: "Sehr geehrte Damen und Herren,\nin Ihrer Rechnung vom 12. März wurden mir 49 Euro für eine Zusatzversicherung berechnet, die ich nie abgeschlossen habe. Ich bitte Sie, den Betrag bis zum 30. März zu erstatten. Andernfalls sehe ich mich gezwungen, rechtliche Schritte zu prüfen."
+      stem: "Người viết thư muốn điều gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Mua thêm một bảo hiểm", lang: vi }
+        - { id: b, text: "Được hoàn lại 49 euro trước ngày 30/3", lang: vi }
+        - { id: c, text: "Được gia hạn thanh toán", lang: vi }
+        - { id: d, text: "Hủy hợp đồng ngay lập tức", lang: vi }
+    answer: b
+    explanation:
+      vi: "“den Betrag bis zum 30. März zu erstatten” – yêu cầu hoàn lại 49 euro (khoản bảo hiểm anh chưa từng ký) trước 30/3, nếu không sẽ xem xét biện pháp pháp lý."
+  - key: de:diag:rea-b2-homeoffice-bilanz
+    level: b2
+    item_type: reading_mcq
+    difficulty: 4.8
+    prompt:
+      passage: "Das Homeoffice galt lange als Privileg weniger Berufe. Seit der Pandemie ist es für viele Alltag, doch die Bilanz fällt gemischt aus: Einerseits sparen Beschäftigte Pendelzeit, andererseits verschwimmt die Grenze zwischen Arbeit und Freizeit. Manche Firmen setzen deshalb auf feste Präsenztage."
+      stem: "Bài viết đánh giá homeoffice như thế nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Vừa có ưu điểm vừa có nhược điểm", lang: vi }
+        - { id: b, text: "Hoàn toàn tích cực", lang: vi }
+        - { id: c, text: "Hoàn toàn tiêu cực", lang: vi }
+        - { id: d, text: "Chỉ phù hợp với vài nghề", lang: vi }
+    answer: a
+    explanation:
+      vi: "“die Bilanz fällt gemischt aus” và cặp “einerseits … andererseits” cho thấy kết quả pha trộn: tiết kiệm thời gian đi lại nhưng ranh giới công việc và cá nhân mờ đi."

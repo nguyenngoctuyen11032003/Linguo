@@ -401,3 +401,264 @@ items:
         - { id: d, text: von, lang: de }
     answer: b
     explanation: { vi: "“sich auseinandersetzen mit + Dativ” = nghiên cứu, đối diện, tranh luận kỹ về một vấn đề. “über” dễ bị chọn vì nghĩa “về”, nhưng động từ này chỉ đi với “mit” (đúng với “dem Thema” ở Dativ)." }
+  # ---------- bổ sung ngân hàng câu hỏi (4 câu mỗi cấp) ----------
+  - key: de:diag:voc-pre-a1-tisch
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “cái bàn”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "der Stuhl", lang: de }
+        - { id: b, text: "der Tisch", lang: de }
+        - { id: c, text: "die Tür", lang: de }
+        - { id: d, text: "das Fenster", lang: de }
+    answer: b
+    explanation: { vi: "“der Tisch” là cái bàn. “der Stuhl” là cái ghế, “die Tür” là cái cửa ra vào, “das Fenster” là cửa sổ." }
+  - key: de:diag:voc-pre-a1-gute-nacht
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Bạn muốn chúc ai đó ngủ ngon trước khi đi ngủ. Bạn nói gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Guten Morgen!", lang: de }
+        - { id: b, text: "Guten Tag!", lang: de }
+        - { id: c, text: "Gute Nacht!", lang: de }
+        - { id: d, text: "Auf Wiedersehen!", lang: de }
+    answer: c
+    explanation: { vi: "“Gute Nacht!” là lời chúc ngủ ngon khi đi ngủ. “Guten Morgen!” và “Guten Tag!” là lời chào ban ngày, còn “Auf Wiedersehen!” là lời tạm biệt khi chia tay." }
+  - key: de:diag:voc-pre-a1-zwoelf
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Số 12 trong tiếng Đức là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "zwei", lang: de }
+        - { id: b, text: "zwanzig", lang: de }
+        - { id: c, text: "zehn", lang: de }
+        - { id: d, text: "zwölf", lang: de }
+    answer: d
+    explanation: { vi: "12 = “zwölf” (một từ riêng, không ghép). “zwei” là 2, “zehn” là 10, “zwanzig” là 20." }
+  - key: de:diag:voc-pre-a1-vater
+    level: pre_a1
+    item_type: mcq
+    prompt:
+      stem: "Từ “der Vater” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "bố, cha", lang: vi }
+        - { id: b, text: "anh trai", lang: vi }
+        - { id: c, text: "ông nội", lang: vi }
+        - { id: d, text: "chú", lang: vi }
+    answer: a
+    explanation: { vi: "“der Vater” là bố, cha. Anh trai là “der Bruder”, ông là “der Opa” hoặc “der Großvater”, chú là “der Onkel”." }
+  - key: de:diag:voc-a1-apotheke
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Bạn bị đau đầu và cần mua thuốc. Bạn đến đâu?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "die Bäckerei", lang: de }
+        - { id: b, text: "die Apotheke", lang: de }
+        - { id: c, text: "die Bibliothek", lang: de }
+        - { id: d, text: "das Kino", lang: de }
+    answer: b
+    explanation: { vi: "“die Apotheke” là hiệu thuốc. “die Bäckerei” là tiệm bánh, “die Bibliothek” là thư viện, “das Kino” là rạp chiếu phim." }
+  - key: de:diag:voc-a1-fahrrad
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich fahre jeden Tag mit dem ___ zur Arbeit."
+      stem_lang: de
+      options:
+        - { id: a, text: "Zimmer", lang: de }
+        - { id: b, text: "Kuchen", lang: de }
+        - { id: c, text: "Fahrrad", lang: de }
+        - { id: d, text: "Hund", lang: de }
+    answer: c
+    explanation: { vi: "“mit dem Fahrrad fahren” là đi bằng xe đạp, một cách đi làm quen thuộc. Căn phòng, cái bánh hay con chó không dùng để “fahren”." }
+  - key: de:diag:voc-a1-gruen
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “màu xanh lá cây”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "gelb", lang: de }
+        - { id: b, text: "blau", lang: de }
+        - { id: c, text: "grau", lang: de }
+        - { id: d, text: "grün", lang: de }
+    answer: d
+    explanation: { vi: "“grün” là màu xanh lá. “gelb” là vàng, “blau” là xanh dương, “grau” là xám." }
+  - key: de:diag:voc-a1-kaffee
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Zum Frühstück trinke ich einen ___ mit Milch."
+      stem_lang: de
+      options:
+        - { id: a, text: "Salat", lang: de }
+        - { id: b, text: "Käse", lang: de }
+        - { id: c, text: "Apfel", lang: de }
+        - { id: d, text: "Kaffee", lang: de }
+    answer: d
+    explanation: { vi: "Người ta “trinkt” (uống) đồ uống: einen Kaffee mit Milch. Salat, Käse và Apfel là đồ ăn nên đi với “essen”." }
+  - key: de:diag:voc-a2-aufraeumen
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Mein Zimmer ist sehr unordentlich. Ich muss es heute ___."
+      stem_lang: de
+      options:
+        - { id: a, text: "aufräumen", lang: de }
+        - { id: b, text: "einkaufen", lang: de }
+        - { id: c, text: "anrufen", lang: de }
+        - { id: d, text: "abfahren", lang: de }
+    answer: a
+    explanation: { vi: "“aufräumen” là dọn dẹp, sắp xếp lại cho gọn gàng. “einkaufen” là đi mua sắm, “anrufen” là gọi điện, “abfahren” là khởi hành." }
+  - key: de:diag:voc-a2-heizung
+    level: a2
+    item_type: mcq
+    prompt:
+      stem: "Từ “die Heizung” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "hệ thống sưởi", lang: vi }
+        - { id: b, text: "điều hòa", lang: vi }
+        - { id: c, text: "cầu thang", lang: vi }
+        - { id: d, text: "cửa sổ", lang: vi }
+    answer: a
+    explanation: { vi: "“die Heizung” là hệ thống sưởi trong nhà. Điều hòa là “die Klimaanlage”, cầu thang là “die Treppe”, cửa sổ là “das Fenster”." }
+  - key: de:diag:voc-a2-tablette
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich habe Kopfschmerzen. Ich nehme eine ___."
+      stem_lang: de
+      options:
+        - { id: a, text: "Brille", lang: de }
+        - { id: b, text: "Tablette", lang: de }
+        - { id: c, text: "Flasche", lang: de }
+        - { id: d, text: "Jacke", lang: de }
+    answer: b
+    explanation: { vi: "Khi đau đầu người ta uống một viên thuốc: “eine Tablette” nehmen. Kính (Brille), chai (Flasche) và áo khoác (Jacke) không chữa đau đầu." }
+  - key: de:diag:voc-a2-reservieren
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Wir möchten am Samstag essen gehen und müssen einen Tisch ___."
+      stem_lang: de
+      options:
+        - { id: a, text: "verlieren", lang: de }
+        - { id: b, text: "bestehen", lang: de }
+        - { id: c, text: "reservieren", lang: de }
+        - { id: d, text: "verpassen", lang: de }
+    answer: c
+    explanation: { vi: "“einen Tisch reservieren” là đặt bàn trước. “verlieren” là làm mất, “bestehen” là vượt qua (kỳ thi), “verpassen” là lỡ (chuyến tàu)." }
+  - key: de:diag:voc-b1-stelle
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Nach dem Studium sucht sie eine ___ als Ingenieurin."
+      stem_lang: de
+      options:
+        - { id: a, text: "Meinung", lang: de }
+        - { id: b, text: "Stelle", lang: de }
+        - { id: c, text: "Gewohnheit", lang: de }
+        - { id: d, text: "Entfernung", lang: de }
+    answer: b
+    explanation: { vi: "“eine Stelle suchen” là tìm một việc làm. “Meinung” là ý kiến, “Gewohnheit” là thói quen, “Entfernung” là khoảng cách." }
+  - key: de:diag:voc-b1-gewohnheit
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "Từ “die Gewohnheit” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "kinh nghiệm", lang: vi }
+        - { id: b, text: "thói quen", lang: vi }
+        - { id: c, text: "cơ hội", lang: vi }
+        - { id: d, text: "sự kiện", lang: vi }
+    answer: b
+    explanation: { vi: "“die Gewohnheit” là thói quen (Ich habe die Gewohnheit, früh aufzustehen). Kinh nghiệm là “die Erfahrung”, cơ hội là “die Gelegenheit”, sự kiện là “das Ereignis”." }
+  - key: de:diag:voc-b1-konzentrieren
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich kann mich nicht auf die Arbeit ___, weil es so laut ist."
+      stem_lang: de
+      options:
+        - { id: a, text: "erinnern", lang: de }
+        - { id: b, text: "verabreden", lang: de }
+        - { id: c, text: "entschuldigen", lang: de }
+        - { id: d, text: "konzentrieren", lang: de }
+    answer: d
+    explanation: { vi: "“sich auf etwas konzentrieren” là tập trung vào việc gì. “sich erinnern” đi với “an”, “sich verabreden” đi với “mit”, “sich entschuldigen” đi với “bei/für”, nên đều không hợp với “auf”." }
+  - key: de:diag:voc-b1-unbefristet
+    level: b1
+    item_type: mcq
+    prompt:
+      stem: "Từ nào trái nghĩa với “befristet” (có thời hạn) trong hợp đồng lao động?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "unbefristet", lang: de }
+        - { id: b, text: "kostenlos", lang: de }
+        - { id: c, text: "freiwillig", lang: de }
+        - { id: d, text: "notwendig", lang: de }
+    answer: a
+    explanation: { vi: "“unbefristet” là không thời hạn, trái nghĩa với “befristet” (Der Vertrag ist unbefristet). “kostenlos” là miễn phí, “freiwillig” là tự nguyện, “notwendig” là cần thiết." }
+  - key: de:diag:voc-b2-erhoehen
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Die Regierung will die Steuern ___, um mehr Geld für Schulen zu haben."
+      stem_lang: de
+      options:
+        - { id: a, text: "senken", lang: de }
+        - { id: b, text: "kürzen", lang: de }
+        - { id: c, text: "streichen", lang: de }
+        - { id: d, text: "erhöhen", lang: de }
+    answer: d
+    explanation: { vi: "Muốn có thêm tiền cho trường học thì phải tăng thuế: “die Steuern erhöhen”. “senken”, “kürzen” và “streichen” đều làm giảm, mâu thuẫn với “mehr Geld”." }
+  - key: de:diag:voc-b2-verbraucher
+    level: b2
+    item_type: mcq
+    prompt:
+      stem: "Từ “der Verbraucher” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "nhà sản xuất", lang: vi }
+        - { id: b, text: "người tiêu dùng", lang: vi }
+        - { id: c, text: "người bán hàng", lang: vi }
+        - { id: d, text: "nhà đầu tư", lang: vi }
+    answer: b
+    explanation: { vi: "“der Verbraucher” là người tiêu dùng (Verbraucherschutz = bảo vệ người tiêu dùng). Nhà sản xuất là “der Hersteller”, người bán là “der Verkäufer”, nhà đầu tư là “der Investor”." }
+  - key: de:diag:voc-b2-aussagen
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Der Zeuge hat vor Gericht ___, dass er den Täter nicht erkannt hat."
+      stem_lang: de
+      options:
+        - { id: a, text: "verurteilt", lang: de }
+        - { id: b, text: "freigesprochen", lang: de }
+        - { id: c, text: "ausgesagt", lang: de }
+        - { id: d, text: "geklagt", lang: de }
+    answer: c
+    explanation: { vi: "“aussagen” là khai trước tòa; sau đó có thể nối câu phụ với “dass”. “verurteilen” và “freisprechen” là việc của thẩm phán và cần tân ngữ; “klagen” là kiện." }
+  - key: de:diag:voc-b2-widerspruch
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Die Mieter haben gegen die Mieterhöhung schriftlich ___ eingelegt."
+      stem_lang: de
+      options:
+        - { id: a, text: "Anspruch", lang: de }
+        - { id: b, text: "Verzicht", lang: de }
+        - { id: c, text: "Zufall", lang: de }
+        - { id: d, text: "Widerspruch", lang: de }
+    answer: d
+    explanation: { vi: "“Widerspruch einlegen” là gửi văn bản phản đối một quyết định. “Anspruch” là quyền đòi hỏi (Anspruch erheben), “Verzicht” là sự từ bỏ, “Zufall” là sự tình cờ; chúng không đi với “einlegen”." }

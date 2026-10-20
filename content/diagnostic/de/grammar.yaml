@@ -401,3 +401,264 @@ items:
         - { id: d, text: Vor der Unterzeichnung des Vertrags …, lang: de }
     answer: b
     explanation: { vi: "Văn phong viết (Nominalstil) đổi mệnh đề “nachdem …” thành giới từ “nach + Dativ” (“der Unterzeichnung”), chủ thể bị động trở thành bổ ngữ Genitiv: “des Vertrags”. “dem Vertrag” sai cách, “nach die” sai vì “nach” cần Dativ, còn “vor” đảo ngược nghĩa thời gian." }
+  # ---------- bổ sung ngân hàng câu hỏi (4 câu mỗi cấp) ----------
+  - key: de:diag:gra-pre-a1-wir-kommen
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Wir ___ aus Vietnam."
+      stem_lang: de
+      options:
+        - { id: a, text: "komme", lang: de }
+        - { id: b, text: "kommst", lang: de }
+        - { id: c, text: "kommen", lang: de }
+        - { id: d, text: "kommt", lang: de }
+    answer: c
+    explanation: { vi: "Với “wir” động từ giữ đuôi “-en” của nguyên thể: wir kommen. “komme” là của ich, “kommst” của du, “kommt” của er/sie/es và ihr." }
+  - key: de:diag:gra-pre-a1-das-ist-ein-buch
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Das ist ___ Buch."
+      stem_lang: de
+      options:
+        - { id: a, text: "eine", lang: de }
+        - { id: b, text: "ein", lang: de }
+        - { id: c, text: "einen", lang: de }
+        - { id: d, text: "einem", lang: de }
+    answer: b
+    explanation: { vi: "“das Buch” là giống trung, nên mạo từ không xác định là “ein”. “eine” dùng cho giống cái, “einen” cho giống đực ở Akkusativ, “einem” là Dativ." }
+  - key: de:diag:gra-pre-a1-wie-heisst-du
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Wie ___ du? – Ich heiße Tom."
+      stem_lang: de
+      options:
+        - { id: a, text: "heiße", lang: de }
+        - { id: b, text: "heißen", lang: de }
+        - { id: c, text: "heiß", lang: de }
+        - { id: d, text: "heißt", lang: de }
+    answer: d
+    explanation: { vi: "Với “du” động từ thêm “-t” sau gốc ở dạng này: du heißt (gốc “heiß” đã tận cùng s-âm nên chỉ thêm t). “heiße” là của ich, “heißen” của wir/sie." }
+  - key: de:diag:gra-pre-a1-die-frau
+    level: pre_a1
+    item_type: cloze_choice
+    prompt:
+      stem: "___ Frau ist nett."
+      stem_lang: de
+      options:
+        - { id: a, text: "Der", lang: de }
+        - { id: b, text: "Das", lang: de }
+        - { id: c, text: "Die", lang: de }
+        - { id: d, text: "Den", lang: de }
+    answer: c
+    explanation: { vi: "“Frau” là danh từ giống cái, nên mạo từ xác định ở Nominativ là “die”. “der” dùng cho giống đực, “das” cho giống trung, “den” là Akkusativ giống đực." }
+  - key: de:diag:gra-a1-spielt
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Er ___ gern Fußball."
+      stem_lang: de
+      options:
+        - { id: a, text: "spielen", lang: de }
+        - { id: b, text: "spiele", lang: de }
+        - { id: c, text: "spielst", lang: de }
+        - { id: d, text: "spielt", lang: de }
+    answer: d
+    explanation: { vi: "Chủ ngữ “er” (ngôi thứ ba số ít) cần đuôi “-t”: er spielt. “spiele” là của ich, “spielst” của du, “spielen” của wir/sie." }
+  - key: de:diag:gra-a1-aufstehen
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich muss morgen früh ___."
+      stem_lang: de
+      options:
+        - { id: a, text: "steht auf", lang: de }
+        - { id: b, text: "aufgestanden", lang: de }
+        - { id: c, text: "aufstehen", lang: de }
+        - { id: d, text: "auf stehen", lang: de }
+    answer: c
+    explanation: { vi: "Sau động từ khiếm khuyết “muss”, động từ chính ở nguyên thể và đứng cuối câu; động từ tách viết liền: “aufstehen”." }
+  - key: de:diag:gra-a1-wortstellung-abend
+    level: a1
+    item_type: mcq
+    prompt:
+      stem: "Trong các câu sau, câu nào đặt động từ đúng vị trí?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "Heute Abend ich esse Pizza.", lang: de }
+        - { id: b, text: "Heute esse Abend ich Pizza.", lang: de }
+        - { id: c, text: "Heute Abend esse ich Pizza.", lang: de }
+        - { id: d, text: "Esse heute Abend Pizza ich.", lang: de }
+    answer: c
+    explanation: { vi: "Trong câu kể động từ chia luôn đứng ở vị trí thứ hai. “Heute Abend” là vị trí thứ nhất, nên “esse” phải đứng ngay sau, rồi mới đến chủ ngữ “ich”." }
+  - key: de:diag:gra-a1-mein-handy
+    level: a1
+    item_type: cloze_choice
+    prompt:
+      stem: "Wo ist ___ Handy? – Auf dem Tisch."
+      stem_lang: de
+      options:
+        - { id: a, text: "meine", lang: de }
+        - { id: b, text: "meinen", lang: de }
+        - { id: c, text: "mein", lang: de }
+        - { id: d, text: "meiner", lang: de }
+    answer: c
+    explanation: { vi: "“das Handy” là giống trung, ở Nominativ từ sở hữu không có đuôi: “mein Handy”. “meine” dùng cho giống cái và số nhiều, “meinen” cho giống đực ở Akkusativ." }
+  - key: de:diag:gra-a2-weil-krank
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich bleibe zu Hause, ___ ich krank bin."
+      stem_lang: de
+      options:
+        - { id: a, text: "denn", lang: de }
+        - { id: b, text: "aber", lang: de }
+        - { id: c, text: "oder", lang: de }
+        - { id: d, text: "weil", lang: de }
+    answer: d
+    explanation: { vi: "Động từ đứng cuối mệnh đề (“ich krank bin”) cho biết đây là mệnh đề phụ, nên liên từ phải là “weil”. “denn”, “aber”, “oder” là liên từ đứng ở vị trí 0 và giữ động từ ở vị trí thứ hai." }
+  - key: de:diag:gra-a2-waren-kino
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Gestern ___ wir im Kino. Der Film war toll."
+      stem_lang: de
+      options:
+        - { id: a, text: "sind", lang: de }
+        - { id: b, text: "haben", lang: de }
+        - { id: c, text: "wurden", lang: de }
+        - { id: d, text: "waren", lang: de }
+    answer: d
+    explanation: { vi: "Quá khứ của “sein” khi kể chuyện là “waren” (wir waren). “sind/haben” không tạo được câu đúng ở đây vì thiếu Partizip; “wurden” nghĩa là “bị/trở nên”." }
+  - key: de:diag:gra-a2-freuen-auf
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Ich freue mich ___ das Wochenende."
+      stem_lang: de
+      options:
+        - { id: a, text: "auf", lang: de }
+        - { id: b, text: "über", lang: de }
+        - { id: c, text: "für", lang: de }
+        - { id: d, text: "an", lang: de }
+    answer: a
+    explanation: { vi: "Vui vì điều sắp tới dùng “sich freuen auf + Akkusativ”. “sich freuen über” dùng cho việc đã có hoặc đã xảy ra; “für” và “an” không đi với “sich freuen”." }
+  - key: de:diag:gra-a2-beste-film
+    level: a2
+    item_type: cloze_choice
+    prompt:
+      stem: "Das ist der ___ Film des Jahres."
+      stem_lang: de
+      options:
+        - { id: a, text: "gut", lang: de }
+        - { id: b, text: "besser", lang: de }
+        - { id: c, text: "beste", lang: de }
+        - { id: d, text: "am besten", lang: de }
+    answer: c
+    explanation: { vi: "Sau mạo từ “der”, so sánh nhất đứng trước danh từ và có đuôi: “der beste Film”. “am besten” chỉ dùng sau động từ hoặc “sein” (Der Film ist am besten)." }
+  - key: de:diag:gra-b1-relativ-den
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Der Film, ___ wir gestern gesehen haben, war sehr spannend."
+      stem_lang: de
+      options:
+        - { id: a, text: "der", lang: de }
+        - { id: b, text: "dem", lang: de }
+        - { id: c, text: "das", lang: de }
+        - { id: d, text: "den", lang: de }
+    answer: d
+    explanation: { vi: "Đại từ quan hệ lấy giống và số theo “der Film” (giống đực); trong mệnh đề nó là tân ngữ của “gesehen” nên ở Akkusativ: “den”. “der” là Nominativ, “dem” là Dativ." }
+  - key: de:diag:gra-b1-nachdem-hatte
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Nachdem er gegessen ___, ging er schlafen."
+      stem_lang: de
+      options:
+        - { id: a, text: "hat", lang: de }
+        - { id: b, text: "wurde", lang: de }
+        - { id: c, text: "hatte", lang: de }
+        - { id: d, text: "war", lang: de }
+    answer: c
+    explanation: { vi: "Với “nachdem”, hành động xảy ra trước dùng Plusquamperfekt khi câu chính ở Präteritum: “hatte gegessen”. “essen” dùng “haben”, không dùng “sein”." }
+  - key: de:diag:gra-b1-konj-ii-waere
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Wenn ich du ___, würde ich das nicht machen."
+      stem_lang: de
+      options:
+        - { id: a, text: "bin", lang: de }
+        - { id: b, text: "wurde", lang: de }
+        - { id: c, text: "hatte", lang: de }
+        - { id: d, text: "wäre", lang: de }
+    answer: d
+    explanation: { vi: "Điều kiện không có thật dùng Konjunktiv II: “Wenn ich du wäre, würde ich …”. “bin” là thực tế, “wurde” là Präteritum của werden, “hatte” không đi với “du” theo nghĩa “là”." }
+  - key: de:diag:gra-b1-passiv-praeteritum
+    level: b1
+    item_type: cloze_choice
+    prompt:
+      stem: "Gestern ___ das Fenster von dem Kind geöffnet."
+      stem_lang: de
+      options:
+        - { id: a, text: "wird", lang: de }
+        - { id: b, text: "ist", lang: de }
+        - { id: c, text: "worden", lang: de }
+        - { id: d, text: "wurde", lang: de }
+    answer: d
+    explanation: { vi: "Bị động ở thì quá khứ kể chuyện: “wurde + Partizip II”. “wird” là hiện tại, “ist” không tạo bị động, còn “worden” chỉ đứng cùng “ist/war” trong Perfekt." }
+  - key: de:diag:gra-b2-lassen-sich
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Das Problem ___ sich leider nicht so einfach lösen."
+      stem_lang: de
+      options:
+        - { id: a, text: "lasse", lang: de }
+        - { id: b, text: "lassen", lang: de }
+        - { id: c, text: "ließt", lang: de }
+        - { id: d, text: "lässt", lang: de }
+    answer: d
+    explanation: { vi: "“sich lassen + Infinitiv” thay cho bị động có khả năng; chủ ngữ “das Problem” là ngôi thứ ba số ít nên: “lässt” (có đổi a → ä)." }
+  - key: de:diag:gra-b2-haette-verpasst
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Wäre er früher gekommen, ___ er den Zug nicht verpasst."
+      stem_lang: de
+      options:
+        - { id: a, text: "wäre", lang: de }
+        - { id: b, text: "würde", lang: de }
+        - { id: c, text: "hat", lang: de }
+        - { id: d, text: "hätte", lang: de }
+    answer: d
+    explanation: { vi: "Điều kiện không có thật trong quá khứ: Konjunktiv II của Plusquamperfekt. “verpassen” dùng “haben”, nên “hätte … verpasst”; “wäre” chỉ đi với động từ dùng “sein”." }
+  - key: de:diag:gra-b2-als-ob
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "Er tat so, ___ er alles verstanden hätte."
+      stem_lang: de
+      options:
+        - { id: a, text: "obwohl", lang: de }
+        - { id: b, text: "sodass", lang: de }
+        - { id: c, text: "als ob", lang: de }
+        - { id: d, text: "damit", lang: de }
+    answer: c
+    explanation: { vi: "“tun so, als ob … hätte” diễn tả một sự giả vờ, đi với Konjunktiv II. “obwohl” (mặc dù), “sodass” (đến nỗi) và “damit” (để) cho nghĩa khác." }
+  - key: de:diag:gra-b2-trotz-kosten
+    level: b2
+    item_type: cloze_choice
+    prompt:
+      stem: "___ der hohen Kosten entschied sich die Stadt für den Bau."
+      stem_lang: de
+      options:
+        - { id: a, text: "Wegen", lang: de }
+        - { id: b, text: "Aufgrund", lang: de }
+        - { id: c, text: "Infolge", lang: de }
+        - { id: d, text: "Trotz", lang: de }
+    answer: d
+    explanation: { vi: "“Trotz + Genitiv” diễn tả sự đối lập: dù chi phí cao, thành phố vẫn quyết định xây. “wegen”, “aufgrund” và “infolge” chỉ nguyên nhân nên câu sẽ vô lý." }
