@@ -21,15 +21,40 @@ export function assignmentTitle(a: Pick<LearnerAssignment, 'kind' | 'title' | 't
   return a.kind === 'lesson' ? 'Bài học' : 'Đề luyện thi';
 }
 
+/** Query parameters of the exam hub when it is opened from an assignment (read by ExamHubPage). */
+export const EXAM_FORM_PARAM = 'de';
+export const EXAM_MODE_PARAM = 'che-do';
+export const EXAM_SECTION_PARAM = 'phan';
+
 /**
  * Where the learner does the assignment. Lessons open directly; an exam form opens the exam hub on that form
- * (`?de=<form id>`: the learner still picks the mode, and the hub explains when the form is not available); a review
- * assignment counts any graded review in the class language.
+ * (`?de=<form id>`, plus `che-do` and `phan` when the teacher asked for a full mock or one section; without them the
+ * learner picks the mode, and the hub explains when the form is not available); a review assignment counts any graded
+ * review in the class language.
  */
-export function assignmentLink(a: Pick<LearnerAssignment, 'kind' | 'ref_id'>): string {
+export function assignmentLink(a: Pick<LearnerAssignment, 'kind' | 'ref_id'> & Partial<Pick<LearnerAssignment, 'exam_mode' | 'exam_section'>>): string {
   if (a.kind === 'lesson' && a.ref_id) return `/app/hoc-tap/bai/${a.ref_id}`;
-  if (a.kind === 'exam') return a.ref_id ? `/app/luyen-thi?de=${encodeURIComponent(a.ref_id)}` : '/app/luyen-thi';
+  if (a.kind === 'exam') {
+    if (!a.ref_id) return '/app/luyen-thi';
+    const params = new URLSearchParams({ [EXAM_FORM_PARAM]: a.ref_id });
+    if (a.exam_mode === 'full') params.set(EXAM_MODE_PARAM, 'full');
+    if (a.exam_mode === 'section' && a.exam_section) {
+      params.set(EXAM_MODE_PARAM, 'section');
+      params.set(EXAM_SECTION_PARAM, a.exam_section);
+    }
+    return `/app/luyen-thi?${params.toString()}`;
+  }
   return '/app/on-tap';
+}
+
+const EXAM_SECTION_NAMES = { listening: 'Nghe', reading: 'Đọc', writing: 'Viết' } as const;
+
+/** What the teacher asked for in an exam assignment, for the learner ("Làm trọn đề", "Làm phần Đọc"), or null. */
+export function examModeText(a: Pick<LearnerAssignment, 'kind' | 'exam_mode' | 'exam_section'>): string | null {
+  if (a.kind !== 'exam') return null;
+  if (a.exam_mode === 'full') return 'Làm trọn đề';
+  if (a.exam_mode === 'section' && a.exam_section) return `Làm phần ${EXAM_SECTION_NAMES[a.exam_section]}`;
+  return null;
 }
 
 /** Call to action on an assignment row. */
@@ -43,6 +68,8 @@ export function assignmentAction(a: Pick<LearnerAssignment, 'kind' | 'state'>): 
 /** Short status shown next to the title. Reviews show their progress while open. */
 export function assignmentStatus(a: Pick<LearnerAssignment, 'kind' | 'state' | 'progress_count' | 'target_count'>): string {
   if (a.state === 'done') return 'Đã xong';
+  // The teacher closed it before it was done: no longer asked, no longer counted.
+  if (a.state === 'closed') return 'Giáo viên đã đóng';
   if (a.kind === 'review' && a.target_count) {
     const progress = `Đã ôn ${a.progress_count}/${a.target_count}`;
     return a.state === 'overdue' ? `Quá hạn · ${progress}` : progress;

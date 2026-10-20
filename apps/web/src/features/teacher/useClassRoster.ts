@@ -1,5 +1,13 @@
-import { useCallback, useEffect, useReducer, useState } from 'react';
-import type { CreateAssignmentInput, CreateInviteInput, TeacherAssignment, TeacherClass, TeacherInvite, TeacherRoster } from '@linguo/shared';
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import type {
+  CreateAssignmentInput,
+  CreateInviteInput,
+  TeacherAssignment,
+  TeacherClass,
+  TeacherInvite,
+  TeacherRoster,
+  UpdateAssignmentInput,
+} from '@linguo/shared';
 import { useAuth } from '@/features/auth/AuthProvider';
 import { getSupabase } from '@/lib/supabase';
 import { teacherErrorCode, teacherErrorMessage } from './error-map';
@@ -12,6 +20,7 @@ import {
   removeClassMember,
   renameTeacherClass,
   revokeClassInvite,
+  updateClassAssignment,
 } from './service';
 import { requireClient } from './useTeacherClasses';
 
@@ -28,6 +37,8 @@ export interface ClassRosterApi {
   revokeInvite: (code: string) => Promise<void>;
   removeMember: (userId: string) => Promise<void>;
   createAssignment: (input: CreateAssignmentInput) => Promise<TeacherAssignment>;
+  /** Edit the note and due date, close or reopen. Closing or reopening reloads the roster (completion counts change). */
+  updateAssignment: (assignmentId: string, input: UpdateAssignmentInput) => Promise<TeacherAssignment>;
   deleteAssignment: (assignmentId: string) => Promise<void>;
 }
 
@@ -38,9 +49,10 @@ interface Loaded {
   error: string | null;
 }
 
-/** Same order as teacher_class_roster: due date (none last), then creation. */
+/** Same order as teacher_class_roster: open before closed, then due date (none last), then creation. */
 export function sortAssignments(list: TeacherAssignment[]): TeacherAssignment[] {
   return [...list].sort((a, b) => {
+    if ((a.closed_at === null) !== (b.closed_at === null)) return a.closed_at === null ? -1 : 1;
     if (a.due_at !== b.due_at) {
       if (a.due_at === null) return 1;
       if (b.due_at === null) return -1;
@@ -58,6 +70,8 @@ export function useClassRoster(classId: string): ClassRosterApi {
   const client = getSupabase();
   const [attempt, reload] = useReducer((n: number) => n + 1, 0);
   const [loaded, setLoaded] = useState<Loaded>({ key, status: 'loading', roster: null, error: null });
+  const rosterRef = useRef<TeacherRoster | null>(null);
+  rosterRef.current = loaded.key === key ? loaded.roster : null;
 
   useEffect(() => {
     if (!user?.id) return;
@@ -147,6 +161,18 @@ export function useClassRoster(classId: string): ClassRosterApi {
     [client, classId, update],
   );
 
+  const updateAssignment = useCallback(
+    async (assignmentId: string, input: UpdateAssignmentInput) => {
+      const before = rosterRef.current?.assignments.find((a) => a.id === assignmentId);
+      const updated = await updateClassAssignment(requireClient(client), assignmentId, input);
+      update((r) => ({ ...r, assignments: sortAssignments(r.assignments.map((a) => (a.id === assignmentId ? updated : a))) }));
+      // Work done after the closing time stops counting (and counts again on reopening): refetch the completion counts.
+      if (before && (before.closed_at === null) !== (updated.closed_at === null)) reload();
+      return updated;
+    },
+    [client, update],
+  );
+
   const deleteAssignment = useCallback(
     async (assignmentId: string) => {
       await deleteClassAssignment(requireClient(client), assignmentId);
@@ -173,6 +199,7 @@ export function useClassRoster(classId: string): ClassRosterApi {
     revokeInvite,
     removeMember,
     createAssignment,
+    updateAssignment,
     deleteAssignment,
   };
 }

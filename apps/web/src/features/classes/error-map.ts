@@ -24,6 +24,7 @@ const CLASS_MESSAGES: Record<TeacherErrorCode, string> = {
   invalid_kind: 'Loại bài giao không hợp lệ.',
   invalid_ref: 'Không tìm thấy bài học hoặc đề thi này.',
   invalid_target: 'Số thẻ cần ôn không hợp lệ.',
+  invalid_exam_mode: 'Cách làm đề của bài giao này không hợp lệ.',
   invalid_due: 'Hạn nộp không hợp lệ.',
   note_too_long: `Ghi chú dài quá ${L.note} ký tự.`,
   assignment_limit: 'Lớp này đã có quá nhiều bài giao.',

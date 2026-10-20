@@ -4,7 +4,7 @@ import type { ExamFormSummary, ExamHistoryEntry } from '@linguo/shared';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { examAttempt, examHistory, examHistoryAttemptId, topikIForm, topikIIForm } from '@/features/exam/exam-fixtures';
 import type { LearningPath } from '@/features/learning-paths/service';
-import { TEST_KO_PATH } from '../../../../tests/unit/learning-fixtures';
+import { TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { ExamHubPage } from './ExamHubPage';
 
@@ -92,6 +92,111 @@ describe('ExamHubPage', () => {
     await user.click(screen.getByRole('button', { name: 'Luyện theo phần' }));
     await user.click(screen.getByRole('button', { name: 'Luyện phần Đọc' }));
     expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), expect.objectContaining({ formId: topikIForm().form_id, mode: 'section' }));
+  });
+
+  describe('an assignment that asks for a mode', () => {
+    const route = (query: string) => `/app/luyen-thi?de=${topikIForm().form_id}${query}`;
+
+    it('offers the full mock at once and starts it after the clock confirmation', async () => {
+      const user = userEvent.setup();
+      mocks.startExam.mockResolvedValue(examAttempt());
+      renderWithProviders(<ExamHubPage />, { route: route('&che-do=full'), paths: { paths: [KO_TOPIK_II] } });
+      expect(screen.getByText(/yêu cầu: làm trọn đề/)).toBeInTheDocument();
+      await user.click(screen.getByRole('button', { name: 'Làm trọn đề' }));
+      const dialog = screen.getByRole('dialog', { name: 'Bắt đầu thi thử?' });
+      await user.click(within(dialog).getByRole('button', { name: 'Bắt đầu' }));
+      expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), { pathId: 'path-ko-2', formId: topikIForm().form_id, mode: 'full', section: null, questionType: null });
+    });
+
+    it('offers one section and starts it without a confirmation (untimed)', async () => {
+      const user = userEvent.setup();
+      mocks.startExam.mockResolvedValue(examAttempt({ mode: 'section', section: 'reading', deadline_at: null }));
+      renderWithProviders(<ExamHubPage />, { route: route('&che-do=section&phan=reading'), paths: { paths: [KO_TOPIK_II] } });
+      expect(screen.getByText(/yêu cầu: làm phần đọc/)).toBeInTheDocument();
+      await user.click(screen.getByRole('button', { name: 'Làm phần Đọc' }));
+      expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), { pathId: 'path-ko-2', formId: topikIForm().form_id, mode: 'section', section: 'reading', questionType: null });
+    });
+
+    it('leaves the choice to the learner when the section is not in the form or the mode is unknown', () => {
+      renderWithProviders(<ExamHubPage />, { route: route('&che-do=section&phan=writing'), paths: { paths: [KO_TOPIK_II] } });
+      expect(screen.getByText('Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.')).toBeInTheDocument();
+      expect(screen.queryByRole('button', { name: /^Làm (phần|trọn)/ })).not.toBeInTheDocument();
+    });
+
+    it('ignores a mode it does not know', () => {
+      renderWithProviders(<ExamHubPage />, { route: route('&che-do=drill&phan=reading'), paths: { paths: [KO_TOPIK_II] } });
+      expect(screen.getByText('Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.')).toBeInTheDocument();
+    });
+  });
+
+  describe('an assigned form of another language than the current path', () => {
+    const KO_FORM_ROUTE = `/app/luyen-thi?de=${topikIForm().form_id}`;
+    const lookup = (language: string | null) => ({
+      from: () => {
+        const chain: Record<string, unknown> = {};
+        for (const m of ['select', 'eq']) chain[m] = () => chain;
+        chain.maybeSingle = () => Promise.resolve({ data: language ? { language_code: language } : null, error: null });
+        return chain;
+      },
+    });
+
+    afterEach(() => {
+      mocks.client = {};
+    });
+
+    it('opens it on the learner’s own path of that language without switching the current path', async () => {
+      const user = userEvent.setup();
+      mocks.client = lookup('ko');
+      mocks.startExam.mockResolvedValue(examAttempt({ mode: 'section', section: 'reading', deadline_at: null }));
+      const setCurrent = vi.fn();
+      renderWithProviders(<ExamHubPage />, { route: KO_FORM_ROUTE, paths: { paths: [TEST_PATH, KO_TOPIK_II], currentId: TEST_PATH.id, setCurrent } });
+      // The forms and the history are those of the Korean path once the form's language is known.
+      await waitFor(() => expect(mocks.formsArgs.at(-1)).toBe('ko'));
+      expect(mocks.historyArgs.at(-1)).toEqual(['path-ko-2', 5]);
+      expect(await screen.findByText('Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.')).toBeInTheDocument();
+      await user.click(screen.getByRole('button', { name: 'Luyện theo phần' }));
+      await user.click(screen.getByRole('button', { name: 'Luyện phần Đọc' }));
+      expect(mocks.startExam).toHaveBeenCalledWith(expect.anything(), expect.objectContaining({ pathId: 'path-ko-2', formId: topikIForm().form_id }));
+      expect(setCurrent).not.toHaveBeenCalled();
+    });
+
+    it('says so, with a link to create the path, when the learner has no path in that language', async () => {
+      mocks.client = lookup('ja');
+      // The forms of the current (English) path: the Japanese form is not among them.
+      mocks.forms = { ...mocks.forms, forms: [topikIIForm()] };
+      renderWithProviders(<ExamHubPage />, { route: KO_FORM_ROUTE, paths: { paths: [TEST_PATH], currentId: TEST_PATH.id } });
+      const notice = await screen.findByText(/Đề giáo viên giao thuộc tiếng Nhật, nhưng bạn chưa có lộ trình tiếng Nhật/);
+      expect(within(notice).getByRole('link', { name: 'Tạo lộ trình tiếng Nhật' })).toHaveAttribute('href', '/app/bat-dau?lang=ja');
+      // The current path's forms stay available.
+      expect(mocks.formsArgs.at(-1)).toBe('en');
+    });
+
+    it('keeps the current path when the form is in its language', async () => {
+      mocks.client = lookup('ko');
+      renderWithProviders(<ExamHubPage />, { route: KO_FORM_ROUTE, paths: { paths: [KO_TOPIK_II] } });
+      expect(await screen.findByText('Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.')).toBeInTheDocument();
+      expect(mocks.formsArgs.at(-1)).toBe('ko');
+      expect(mocks.historyArgs.at(-1)).toEqual(['path-ko-2', 5]);
+    });
+
+    it('does not say the form is missing while its language is still being looked up', () => {
+      mocks.client = {
+        from: () => {
+          const chain: Record<string, unknown> = {};
+          for (const m of ['select', 'eq']) chain[m] = () => chain;
+          chain.maybeSingle = () => new Promise(() => undefined);
+          return chain;
+        },
+      };
+      renderWithProviders(<ExamHubPage />, { route: '/app/luyen-thi?de=00000000-0000-4000-8000-00000000dead', paths: { paths: [KO_TOPIK_II] } });
+      expect(screen.queryByText(/^Không mở được đề giáo viên giao/)).not.toBeInTheDocument();
+    });
+
+    it('says the form is not available when no published form has that id', async () => {
+      mocks.client = lookup(null);
+      renderWithProviders(<ExamHubPage />, { route: '/app/luyen-thi?de=00000000-0000-4000-8000-00000000dead', paths: { paths: [KO_TOPIK_II] } });
+      expect(await screen.findByText(/^Không mở được đề giáo viên giao: đề này đã được gỡ hoặc chưa được xuất bản/)).toBeInTheDocument();
+    });
   });
 
   it('goes back to every form from an assigned form', async () => {

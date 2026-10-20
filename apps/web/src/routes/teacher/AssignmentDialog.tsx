@@ -1,11 +1,18 @@
 import { useId, useMemo, useState, type FormEvent, type RefObject } from 'react';
-import { ASSIGNMENT_KINDS, TEACHER_LIMITS as L, type AssignmentKind, type ClassLanguage, type CreateAssignmentInput } from '@linguo/shared';
+import {
+  ASSIGNMENT_KINDS,
+  TEACHER_LIMITS as L,
+  type AssignmentKind,
+  type ClassLanguage,
+  type CreateAssignmentInput,
+  type ExamAssignmentSection,
+} from '@linguo/shared';
 import { Button } from '@/components/ui/Button';
 import { FormField } from '@/components/ui/FormField';
 import { Input, inputClasses } from '@/components/ui/Input';
 import { Spinner } from '@/components/ui/Spinner';
 import { teacherErrorMessage } from '@/features/teacher/error-map';
-import { ASSIGNMENT_KIND_LABELS, CLASS_LANGUAGE_LABELS, dueDayToIso, isDueDayAllowed, localDateInput } from '@/features/teacher/format';
+import { ASSIGNMENT_KIND_LABELS, CLASS_LANGUAGE_LABELS, EXAM_SECTION_LABELS, dueDayToIso, isDueDayAllowed, localDateInput } from '@/features/teacher/format';
 import type { CatalogLesson } from '@/features/teacher/service';
 import { useTeacherCatalog } from '@/features/teacher/useTeacherCatalog';
 import { cn } from '@/lib/cn';
@@ -21,7 +28,7 @@ export interface AssignmentDialogProps {
 
 const KIND_HINTS: Record<AssignmentKind, string> = {
   lesson: 'Học viên hoàn thành một bài trong lộ trình.',
-  exam: 'Học viên nộp một lượt làm đề luyện thi.',
+  exam: 'Học viên làm một đề luyện thi và nộp bài.',
   review: 'Học viên chấm đủ số thẻ ôn tập của ngôn ngữ này.',
 };
 
@@ -50,6 +57,14 @@ function groupLessons(lessons: CatalogLesson[]): Array<[string, CatalogLesson[]]
   return [...groups.entries()];
 }
 
+type ExamChoice = 'any' | 'full' | 'section';
+
+const EXAM_CHOICES: ReadonlyArray<{ value: ExamChoice; label: string; hint: string }> = [
+  { value: 'any', label: 'Học viên tự chọn', hint: 'Học viên chọn thi thử trọn đề, theo phần hoặc theo dạng câu.' },
+  { value: 'full', label: 'Làm trọn đề', hint: 'Chỉ tính khi học viên làm cả đề (thi thử).' },
+  { value: 'section', label: 'Làm một phần', hint: 'Chỉ tính khi học viên làm đúng phần bạn chọn.' },
+];
+
 function AssignmentForm({ language, onClose, onSubmit }: Pick<AssignmentDialogProps, 'language' | 'onClose' | 'onSubmit'>) {
   const catalog = useTeacherCatalog(language, true);
   const [kind, setKind] = useState<AssignmentKind>('lesson');
@@ -57,7 +72,9 @@ function AssignmentForm({ language, onClose, onSubmit }: Pick<AssignmentDialogPr
   const [target, setTarget] = useState('20');
   const [dueDay, setDueDay] = useState('');
   const [note, setNote] = useState('');
-  const [fieldError, setFieldError] = useState<{ ref?: string; target?: string; due?: string; note?: string }>({});
+  const [examChoice, setExamChoice] = useState<ExamChoice>('any');
+  const [examSection, setExamSection] = useState<ExamAssignmentSection | ''>('');
+  const [fieldError, setFieldError] = useState<{ ref?: string; target?: string; due?: string; note?: string; section?: string }>({});
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const kindLabelId = useId();
@@ -67,6 +84,8 @@ function AssignmentForm({ language, onClose, onSubmit }: Pick<AssignmentDialogPr
   const maxDay = localDateInput(new Date(today.getTime() + (L.dueMaxDays - 1) * 86_400_000));
   const lessonGroups = useMemo(() => groupLessons(catalog.catalog?.lessons ?? []), [catalog.catalog]);
   const exams = catalog.catalog?.exams ?? [];
+  const chosenExam = kind === 'exam' ? (exams.find((x) => x.id === refId) ?? null) : null;
+  const examModeId = useId();
 
   async function submit(event: FormEvent) {
     event.preventDefault();
@@ -83,7 +102,18 @@ function AssignmentForm({ language, onClose, onSubmit }: Pick<AssignmentDialogPr
       input = { kind, target_count: n, ...common };
     } else {
       if (!refId) errors.ref = kind === 'lesson' ? 'Hãy chọn một bài học.' : 'Hãy chọn một đề luyện thi.';
-      input = { kind, ref_id: refId, ...common };
+      if (kind === 'exam') {
+        if (examChoice === 'section' && !examSection) errors.section = 'Hãy chọn phần của đề học viên cần làm.';
+        input = {
+          kind,
+          ref_id: refId,
+          exam_mode: examChoice === 'any' ? null : examChoice,
+          exam_section: examChoice === 'section' && examSection ? examSection : null,
+          ...common,
+        };
+      } else {
+        input = { kind, ref_id: refId, ...common };
+      }
     }
     setFieldError(errors);
     if (Object.keys(errors).length > 0) return;
@@ -155,7 +185,10 @@ function AssignmentForm({ language, onClose, onSubmit }: Pick<AssignmentDialogPr
                 {...a11y}
                 aria-invalid={invalid || undefined}
                 value={refId}
-                onChange={(e) => setRefId(e.target.value)}
+                onChange={(e) => {
+                  setRefId(e.target.value);
+                  setExamSection('');
+                }}
                 className={cn(inputClasses(invalid), 'appearance-none truncate pr-8')}
               >
                 <option value="">Chọn đề…</option>
@@ -209,6 +242,62 @@ function AssignmentForm({ language, onClose, onSubmit }: Pick<AssignmentDialogPr
         <p className="px-1 text-sm text-muted">{KIND_HINTS[kind]}</p>
       </div>
       {picker}
+      {kind === 'exam' && chosenExam && (
+        <fieldset className="space-y-1.5">
+          <legend className="px-1 text-sm font-medium">Cách làm đề</legend>
+          <div className="grid gap-2 sm:grid-cols-3">
+            {EXAM_CHOICES.map((c) => {
+              const selected = examChoice === c.value;
+              const disabled = c.value === 'section' && chosenExam.sections.length === 0;
+              return (
+                <label
+                  key={c.value}
+                  className={cn(
+                    'flex min-h-12 cursor-pointer items-center justify-center rounded-2xl border px-2 py-2 text-center text-[15px] leading-tight has-[:focus-visible]:ring-4 has-[:focus-visible]:ring-primary/45',
+                    selected ? 'border-primary bg-primary/10 font-semibold' : 'border-border bg-surface-solid',
+                    disabled && 'cursor-not-allowed opacity-60',
+                  )}
+                >
+                  <input
+                    type="radio"
+                    name={examModeId}
+                    value={c.value}
+                    checked={selected}
+                    disabled={disabled}
+                    onChange={() => {
+                      setExamChoice(c.value);
+                      setFieldError((prev) => ({ ...prev, section: undefined }));
+                    }}
+                    className="sr-only"
+                  />
+                  {c.label}
+                </label>
+              );
+            })}
+          </div>
+          <p className="px-1 text-sm text-muted">{EXAM_CHOICES.find((c) => c.value === examChoice)?.hint}</p>
+          {examChoice === 'section' && (
+            <FormField label="Phần của đề" error={fieldError.section}>
+              {({ invalid, ...a11y }) => (
+                <select
+                  {...a11y}
+                  aria-invalid={invalid || undefined}
+                  value={examSection}
+                  onChange={(e) => setExamSection(e.target.value as ExamAssignmentSection | '')}
+                  className={cn(inputClasses(invalid), 'appearance-none truncate pr-8')}
+                >
+                  <option value="">Chọn phần…</option>
+                  {chosenExam.sections.map((section) => (
+                    <option key={section} value={section}>
+                      {EXAM_SECTION_LABELS[section]}
+                    </option>
+                  ))}
+                </select>
+              )}
+            </FormField>
+          )}
+        </fieldset>
+      )}
       {kind === 'review' && (
         <FormField label="Số lượt ôn cần chấm" hint={`Từ 1 đến ${L.reviewTargetMax}.`} error={fieldError.target}>
           {(a11y) => <Input {...a11y} value={target} inputMode="numeric" autoComplete="off" onChange={(e) => setTarget(e.target.value)} />}

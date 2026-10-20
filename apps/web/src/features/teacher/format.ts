@@ -5,6 +5,8 @@ import {
   TEACHER_LIMITS as L,
   type AssignmentKind,
   type ClassLanguage,
+  type ExamAssignmentMode,
+  type ExamAssignmentSection,
   type LevelCode,
   type TeacherAssignment,
   type TeacherRosterMember,
@@ -25,6 +27,19 @@ export const ASSIGNMENT_KIND_LABELS: Record<AssignmentKind, string> = {
   exam: 'Đề luyện thi',
   review: 'Ôn tập',
 };
+
+export const EXAM_SECTION_LABELS: Record<ExamAssignmentSection, string> = {
+  listening: 'Nghe',
+  reading: 'Đọc',
+  writing: 'Viết',
+};
+
+/** How the learner is asked to take an exam assignment. */
+export function examModeLabel(a: { exam_mode: ExamAssignmentMode | null; exam_section: ExamAssignmentSection | null }): string {
+  if (a.exam_mode === 'full') return 'Làm trọn đề';
+  if (a.exam_mode === 'section') return `Làm phần ${a.exam_section ? EXAM_SECTION_LABELS[a.exam_section] : ''}`.trim();
+  return 'Học viên tự chọn cách làm';
+}
 
 /** Invite lifetimes offered in the form, in hours. */
 export const INVITE_EXPIRY_CHOICES = [
@@ -94,6 +109,18 @@ export function completionPercent(done: number, total: number): number {
 
 export function isOverdue(dueAt: string | null, now: Date = new Date()): boolean {
   return dueAt !== null && new Date(dueAt).getTime() < now.getTime();
+}
+
+/** What the teacher reads about the state of an assignment: closed, overdue with who is missing, or open. */
+export function assignmentStatusLabel(
+  a: Pick<TeacherAssignment, 'closed_at' | 'due_at' | 'completed_count' | 'member_count'>,
+  now: Date = new Date(),
+): { tone: 'closed' | 'overdue' | 'open'; text: string } {
+  if (a.closed_at) return { tone: 'closed', text: 'Đã đóng' };
+  const missing = Math.max(0, a.member_count - a.completed_count);
+  if (isOverdue(a.due_at, now) && missing > 0) return { tone: 'overdue', text: `Quá hạn · ${missing} học viên chưa nộp` };
+  if (isOverdue(a.due_at, now)) return { tone: 'open', text: 'Quá hạn · cả lớp đã nộp' };
+  return { tone: 'open', text: 'Đang mở' };
 }
 
 /** "còn 3 ngày", "hôm nay", "quá hạn" relative to now. */

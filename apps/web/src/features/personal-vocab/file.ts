@@ -1,4 +1,5 @@
 import type { PersonalWord } from '@linguo/shared';
+import { foldSearch } from '@/lib/fold';
 
 /** The bytes of a chosen file (File.arrayBuffer where it exists, FileReader otherwise). */
 export function readFileBytes(file: Blob): Promise<ArrayBuffer> {
@@ -11,19 +12,8 @@ export function readFileBytes(file: Blob): Promise<ArrayBuffer> {
   });
 }
 
-/**
- * Text prepared for a forgiving search: lower case, Latin diacritics dropped (u and ü, quả and qua match), "ß" as "ss",
- * "đ" as "d". Kana, kanji and hangul are left as typed (the combining marks of dakuten and jamo are not touched).
- */
-export function foldSearch(text: string): string {
-  return text
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .normalize('NFC')
-    .toLowerCase()
-    .replace(/đ/g, 'd')
-    .replace(/ß/g, 'ss');
-}
+// Kept here so the vocabulary screens keep importing it from one place.
+export { foldSearch } from '@/lib/fold';
 
 /** What the list page calls each scheduling state of a word. */
 export const WORD_STATE_LABELS: Record<PersonalWord['fsrs_state'], string> = {

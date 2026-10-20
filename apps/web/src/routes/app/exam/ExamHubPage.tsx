@@ -8,9 +8,12 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { OnlineOnlyState } from '@/components/ui/OnlineOnlyState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
+import { EXAM_FORM_PARAM, EXAM_MODE_PARAM, EXAM_SECTION_PARAM } from '@/features/classes/labels';
+import { useAssignedFormLanguage } from '@/features/exam/useAssignedFormLanguage';
 import { useExamForms } from '@/features/exam/useExamForms';
 import { useExamHistory } from '@/features/exam/useExamHistory';
 import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
+import { pathForLanguage } from '@/features/learning-paths/path-for-language';
 import { cn } from '@/lib/cn';
 import { useOnline } from '@/lib/useOnline';
 import { ExamFormCard, ExamHistoryList, FAMILY_LABELS, QuestionTypePicker } from './components';
@@ -32,7 +35,18 @@ interface PendingStart {
 const HISTORY_LIMIT = 5;
 
 /** `?de=<exam form id>`: a class assignment ("Làm đề" in /app/lop-hoc) opens the hub on that one form. */
-const ASSIGNED_FORM_PARAM = 'de';
+const ASSIGNED_FORM_PARAM = EXAM_FORM_PARAM;
+
+/** What the teacher asked for in the assignment: the whole mock, or one section (`che-do`, `phan`); null = learner picks. */
+function readAssignedMode(params: URLSearchParams): { mode: 'full' } | { mode: 'section'; section: ExamSection } | null {
+  const mode = params.get(EXAM_MODE_PARAM);
+  if (mode === 'full') return { mode: 'full' };
+  const section = params.get(EXAM_SECTION_PARAM);
+  if (mode === 'section' && (section === 'listening' || section === 'reading' || section === 'writing')) return { mode: 'section', section };
+  return null;
+}
+
+const SECTION_NAMES: Record<ExamSection, string> = { listening: 'Nghe', reading: 'Đọc', writing: 'Viết' };
 
 function LoadingForms() {
   return (
@@ -48,13 +62,21 @@ function LoadingForms() {
 /** /app/luyen-thi: simulated practice forms of the current path's language, the three modes and recent attempts. */
 export function ExamHubPage() {
   const paths = useLearningPaths();
-  const path = paths.current;
-  const forms = useExamForms(path?.language ?? null);
-  const history = useExamHistory(path?.id ?? null, HISTORY_LIMIT);
-  const starter = useStartExam();
+  const currentPath = paths.current;
   const online = useOnline();
   const [searchParams, setSearchParams] = useSearchParams();
   const assignedFormId = searchParams.get(ASSIGNED_FORM_PARAM)?.trim() || null;
+  const assignedMode = readAssignedMode(searchParams);
+  // An assigned form of another language than the current path opens on the learner's own path of that language (the
+  // current path is left alone); without one the hub says so and keeps the current path's forms.
+  const assignedLookup = useAssignedFormLanguage(assignedFormId);
+  const otherLanguage = assignedLookup.language !== null && currentPath !== null && assignedLookup.language !== currentPath.language ? assignedLookup.language : null;
+  const languagePath = otherLanguage ? pathForLanguage(paths.paths, otherLanguage) : null;
+  const missingPathLanguage = otherLanguage !== null && languagePath === null ? otherLanguage : null;
+  const path = languagePath ?? currentPath;
+  const forms = useExamForms(path?.language ?? null);
+  const history = useExamHistory(path?.id ?? null, HISTORY_LIMIT);
+  const starter = useStartExam();
   const showAllForms = () =>
     setSearchParams(
       (prev) => {
@@ -149,7 +171,17 @@ export function ExamHubPage() {
 
     content = (
       <div className="space-y-4">
-        {assignedFormId && <AssignedFormNotice found={assignedForm !== null} onShowAll={showAllForms} />}
+        {assignedFormId && (
+          <AssignedFormNotice
+            form={assignedForm}
+            lookingUp={assignedLookup.status === 'loading'}
+            missingPathLanguage={missingPathLanguage}
+            mode={assignedMode}
+            busy={starter.busy}
+            onStart={(form, mode, section) => request(form, mode, section)}
+            onShowAll={showAllForms}
+          />
+        )}
         {!assignedForm && families.length > 1 && <FamilyFilter families={families} value={filter} onChange={setChosen} />}
         {starter.error && (
           <p role="alert" className="rounded-2xl bg-error/10 px-4 py-3 text-[15px] text-error-text ring-1 ring-error/40 ring-inset">
@@ -224,28 +256,74 @@ export function ExamHubPage() {
   );
 }
 
+interface AssignedFormNoticeProps {
+  /** The assigned form when it is listed for the path in use; null when it is not available. */
+  form: ExamFormSummary | null;
+  /** The form's language is still being looked up: say nothing yet. */
+  lookingUp: boolean;
+  /** Language of the form when the learner has no path in it (the hub then shows the current path's forms). */
+  missingPathLanguage: string | null;
+  mode: ReturnType<typeof readAssignedMode>;
+  busy: boolean;
+  onStart(form: ExamFormSummary, mode: ExamMode, section?: ExamSection): void;
+  onShowAll(): void;
+}
+
+const LANGUAGE_NAMES: Record<string, string> = { en: 'tiếng Anh', ko: 'tiếng Hàn', ja: 'tiếng Nhật', de: 'tiếng Đức' };
+
 /**
- * Banner of a hub opened from a class assignment. When the form is not listed (unpublished, removed, or in another
- * language than the current path) the learner is told so and every form stays available.
+ * Banner of a hub opened from a class assignment. With the teacher's mode (the whole mock, or one section) it offers
+ * that start at once; the learner can still pick another mode below. When the form is not listed (unpublished or
+ * removed) or the learner has no path in its language, the learner is told so and every form stays available.
  */
-function AssignedFormNotice({ found, onShowAll }: { found: boolean; onShowAll(): void }) {
-  if (!found) {
+function AssignedFormNotice({ form, lookingUp, missingPathLanguage, mode, busy, onStart, onShowAll }: AssignedFormNoticeProps) {
+  if (!form) {
+    if (lookingUp) return null;
+    if (missingPathLanguage) {
+      const name = LANGUAGE_NAMES[missingPathLanguage] ?? 'ngôn ngữ của đề';
+      return (
+        <p role="status" className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
+          Đề giáo viên giao thuộc {name}, nhưng bạn chưa có lộ trình {name}.{' '}
+          <Link to={`/app/bat-dau?lang=${missingPathLanguage}`} className="font-semibold underline">
+            Tạo lộ trình {name}
+          </Link>{' '}
+          rồi mở lại bài giao. Bạn vẫn có thể chọn một đề khác bên dưới.
+        </p>
+      );
+    }
     return (
       <p role="status" className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
-        Không mở được đề giáo viên giao: đề này đã được gỡ, hoặc thuộc ngôn ngữ khác với lộ trình bạn đang mở. Bạn vẫn có
-        thể chọn một đề khác bên dưới, hoặc đổi sang lộ trình của lớp rồi mở lại bài giao.
+        Không mở được đề giáo viên giao: đề này đã được gỡ hoặc chưa được xuất bản. Bạn vẫn có thể chọn một đề khác bên dưới.
       </p>
     );
   }
+  // The section asked for may not exist any more in the form: then the learner picks.
+  const section = mode?.mode === 'section' ? mode.section : null;
+  const sectionAvailable = section !== null && form.sections.some((s) => s.section === section && s.question_count > 0);
+  const start: { label: string; mode: ExamMode; section?: ExamSection } | null =
+    mode?.mode === 'full'
+      ? { label: 'Làm trọn đề', mode: 'full' }
+      : section && sectionAvailable
+        ? { label: `Làm phần ${SECTION_NAMES[section]}`, mode: 'section', section }
+        : null;
   return (
     <div className="flex flex-col gap-3 rounded-2xl bg-primary/8 px-4 py-3 ring-1 ring-primary/20 ring-inset sm:flex-row sm:items-center">
       <p className="flex min-w-0 flex-1 items-start gap-2 text-[15px]">
         <Users aria-hidden strokeWidth={1.75} className="mt-0.5 size-5 shrink-0 text-primary" />
-        <span>Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.</span>
+        <span>
+          {start ? `Đề giáo viên giao cho bạn, yêu cầu: ${start.label.toLowerCase()}. Bấm nút bên cạnh để bắt đầu; bạn vẫn chọn được cách khác bên dưới nhưng chỉ cách giáo viên chọn được tính vào bài giao.` : 'Đề giáo viên giao cho bạn. Chọn một chế độ để bắt đầu.'}
+        </span>
       </p>
-      <button type="button" onClick={onShowAll} className={cn(buttonClasses('ghost', 'md'), 'self-start sm:self-auto sm:shrink-0')}>
-        Xem tất cả đề
-      </button>
+      <div className="flex flex-wrap gap-2 self-start sm:self-auto sm:shrink-0">
+        {start && (
+          <button type="button" disabled={busy} onClick={() => onStart(form, start.mode, start.section)} className={buttonClasses('primary', 'md')}>
+            {start.label}
+          </button>
+        )}
+        <button type="button" onClick={onShowAll} className={buttonClasses('ghost', 'md')}>
+          Xem tất cả đề
+        </button>
+      </div>
     </div>
   );
 }

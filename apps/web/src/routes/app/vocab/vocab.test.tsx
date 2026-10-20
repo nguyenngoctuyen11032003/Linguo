@@ -680,7 +680,6 @@ describe('export, search and filter', () => {
   });
 
   it('searches the term, meaning, example and note, ignoring case and Vietnamese accents', async () => {
-    const user = userEvent.setup();
     openList();
     const search = await screen.findByLabelText('Tìm trong danh sách');
     fireEvent.change(search, { target: { value: 'QUA TAO' } });

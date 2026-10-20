@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type { LearnerAssignment, LearnerClass } from '@linguo/shared';
 import { CLASS_ID, CLASS_ID_2, LESSON_ID, fakeClassesClient, learnerAssignment, learnerClass } from '@/features/classes/class-fixtures';
+import { TEST_KO_PATH, TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
 import { ClassesHomeCard } from '@/features/classes/ClassesHomeCard';
 import { ClassesPage } from './ClassesPage';
@@ -129,8 +130,111 @@ describe('ClassesPage', () => {
     expect(within(card).getByText('Không có hạn')).toBeInTheDocument();
     expect(within(card).getAllByText(/^Hạn: /)).toHaveLength(2);
     expect(within(card).getByText('Nhớ luyện phát âm nhé')).toBeInTheDocument();
-    // The test learner studies English: a Korean class gets a hint about which path counts.
-    expect(within(card).getByText(/Lớp này học tiếng Hàn, khác lộ trình bạn đang mở/)).toBeInTheDocument();
+    // The test learner studies English and has no Korean path: the card says so and offers to create one.
+    expect(within(card).getByText(/Lớp này học tiếng Hàn nhưng bạn chưa có lộ trình tiếng Hàn/)).toBeInTheDocument();
+    expect(within(card).getByRole('link', { name: 'Tạo lộ trình tiếng Hàn' })).toHaveAttribute('href', '/app/bat-dau?lang=ko');
+  });
+
+  describe('assignments of a class in another language than the current path', () => {
+    const renderWithKoPath = (setCurrent = vi.fn().mockResolvedValue(undefined)) => {
+      renderWithProviders(
+        <Routes>
+          <Route path="/app/lop-hoc" element={<ClassesPage />} />
+        </Routes>,
+        { route: '/app/lop-hoc', paths: { paths: [TEST_PATH, TEST_KO_PATH], currentId: TEST_PATH.id, setCurrent } },
+      );
+      return setCurrent;
+    };
+
+    it('switches to the learner’s own path of that language before opening a lesson', async () => {
+      const user = userEvent.setup();
+      classes = [learnerClass()];
+      assignments = [learnerAssignment()];
+      const setCurrent = renderWithKoPath();
+      const card = await screen.findByRole('region', { name: 'Tiếng Hàn sơ cấp 1' });
+      expect(within(card).getByText(/Linguo sẽ chuyển sang lộ trình tiếng Hàn của bạn/)).toBeInTheDocument();
+      await user.click(within(card).getByRole('link', { name: 'Làm bài: Chào hỏi cơ bản' }));
+      await waitFor(() => expect(setCurrent).toHaveBeenCalledWith(TEST_KO_PATH.id));
+      await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent(`/app/hoc-tap/bai/${LESSON_ID}`));
+    });
+
+    it('does the same for an exam and a review assignment', async () => {
+      const user = userEvent.setup();
+      classes = [learnerClass()];
+      assignments = [
+        learnerAssignment({ kind: 'exam', title: 'TOPIK I mini', exam_mode: 'section', exam_section: 'reading' }),
+        learnerAssignment({ kind: 'review', ref_id: null, title: null, target_count: 10 }),
+      ];
+      const setCurrent = renderWithKoPath();
+      const card = await screen.findByRole('region', { name: 'Tiếng Hàn sơ cấp 1' });
+      await user.click(within(card).getByRole('link', { name: 'Ôn ngay: Ôn 10 thẻ' }));
+      await waitFor(() => expect(setCurrent).toHaveBeenCalledWith(TEST_KO_PATH.id));
+      await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent('/app/on-tap'));
+    });
+
+    it('stays put and says so when the path cannot be switched', async () => {
+      const user = userEvent.setup();
+      classes = [learnerClass()];
+      assignments = [learnerAssignment()];
+      const setCurrent = renderWithKoPath(vi.fn().mockRejectedValue(new Error('network')));
+      const card = await screen.findByRole('region', { name: 'Tiếng Hàn sơ cấp 1' });
+      await user.click(within(card).getByRole('link', { name: 'Làm bài: Chào hỏi cơ bản' }));
+      await waitFor(() => expect(setCurrent).toHaveBeenCalled());
+      expect(await screen.findByText('Chưa chuyển được lộ trình. Kiểm tra mạng và thử lại nhé.')).toBeInTheDocument();
+      expect(screen.getByTestId('location')).toHaveTextContent('/app/lop-hoc');
+    });
+
+    it('does not touch the path when the class language is the current one', async () => {
+      const user = userEvent.setup();
+      classes = [learnerClass({ language_code: 'en', name: 'Tiếng Anh giao tiếp' })];
+      assignments = [learnerAssignment({ class_name: 'Tiếng Anh giao tiếp' })];
+      const setCurrent = renderWithKoPath();
+      const card = await screen.findByRole('region', { name: 'Tiếng Anh giao tiếp' });
+      expect(within(card).queryByText(/khác lộ trình bạn đang mở/)).not.toBeInTheDocument();
+      await user.click(within(card).getByRole('link', { name: 'Làm bài: Chào hỏi cơ bản' }));
+      expect(setCurrent).not.toHaveBeenCalled();
+      await waitFor(() => expect(screen.getByTestId('location')).toHaveTextContent('/app/hoc-tap/bai/'));
+    });
+
+    it('does not switch without a path of that language: the link is followed as it is', async () => {
+      const user = userEvent.setup();
+      classes = [learnerClass({ language_code: 'ja', name: 'Tiếng Nhật N5', teacher_name: 'Cô Mai' })];
+      assignments = [learnerAssignment({ class_name: 'Tiếng Nhật N5' })];
+      const setCurrent = renderWithKoPath();
+      const card = await screen.findByRole('region', { name: 'Tiếng Nhật N5' });
+      expect(within(card).getByRole('link', { name: 'Tạo lộ trình tiếng Nhật' })).toHaveAttribute('href', '/app/bat-dau?lang=ja');
+      await user.click(within(card).getByRole('link', { name: 'Làm bài: Chào hỏi cơ bản' }));
+      expect(setCurrent).not.toHaveBeenCalled();
+    });
+  });
+
+  it('shows a closed assignment as closed, not as work to do, and keeps it out of the count', async () => {
+    classes = [learnerClass({ language_code: 'en', name: 'Lớp Anh', pending_count: 1 })];
+    assignments = [
+      learnerAssignment({ class_name: 'Lớp Anh', title: 'Bài đang mở' }),
+      learnerAssignment({ class_name: 'Lớp Anh', title: 'Bài đã đóng', state: 'closed', closed_at: '2026-10-18T00:00:00Z', due_at: '2026-10-01T00:00:00Z' }),
+    ];
+    renderAt('/app/lop-hoc');
+    const card = await screen.findByRole('region', { name: 'Lớp Anh' });
+    expect(within(card).getByRole('heading', { level: 3, name: 'Bài được giao · còn 1 bài' })).toBeInTheDocument();
+    expect(within(card).getByText('Giáo viên đã đóng')).toBeInTheDocument();
+    expect(within(card).queryByText('Quá hạn')).not.toBeInTheDocument();
+  });
+
+  it('tells the learner what the teacher asked for in an exam and opens the hub with it', async () => {
+    classes = [learnerClass({ language_code: 'en', name: 'Lớp Anh' })];
+    assignments = [
+      learnerAssignment({ class_name: 'Lớp Anh', kind: 'exam', title: 'CEFR A2', exam_mode: 'full' }),
+      learnerAssignment({ class_name: 'Lớp Anh', kind: 'exam', title: 'CEFR A2 nghe', exam_mode: 'section', exam_section: 'listening' }),
+      learnerAssignment({ class_name: 'Lớp Anh', kind: 'exam', title: 'CEFR A2 tự chọn' }),
+    ];
+    renderAt('/app/lop-hoc');
+    const card = await screen.findByRole('region', { name: 'Lớp Anh' });
+    expect(within(card).getByText(/Làm trọn đề/)).toBeInTheDocument();
+    expect(within(card).getByText(/Làm phần Nghe/)).toBeInTheDocument();
+    expect(within(card).getByRole('link', { name: 'Làm đề: CEFR A2' })).toHaveAttribute('href', `/app/luyen-thi?de=${LESSON_ID}&che-do=full`);
+    expect(within(card).getByRole('link', { name: 'Làm đề: CEFR A2 nghe' })).toHaveAttribute('href', `/app/luyen-thi?de=${LESSON_ID}&che-do=section&phan=listening`);
+    expect(within(card).getByRole('link', { name: 'Làm đề: CEFR A2 tự chọn' })).toHaveAttribute('href', `/app/luyen-thi?de=${LESSON_ID}`);
   });
 
   it('shows the teacher placeholder and the no-assignment text', async () => {

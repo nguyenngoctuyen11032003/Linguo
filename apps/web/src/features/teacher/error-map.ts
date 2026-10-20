@@ -21,6 +21,7 @@ const TEACHER_MESSAGES: Record<TeacherErrorCode, string> = {
   invalid_kind: 'Loại bài giao không hợp lệ.',
   invalid_ref: 'Bài học hoặc đề thi này không còn khả dụng cho ngôn ngữ của lớp.',
   invalid_target: `Số lượt ôn cần từ 1 đến ${L.reviewTargetMax}.`,
+  invalid_exam_mode: 'Đề này không có phần học viên cần làm. Hãy chọn cách làm khác hoặc một phần có câu hỏi.',
   invalid_due: `Hạn nộp cần ở tương lai và không quá ${L.dueMaxDays} ngày tới.`,
   note_too_long: `Ghi chú tối đa ${L.note} ký tự.`,
   assignment_limit: `Mỗi lớp có tối đa ${L.maxAssignmentsPerClass} bài giao. Hãy xoá bớt bài cũ.`,

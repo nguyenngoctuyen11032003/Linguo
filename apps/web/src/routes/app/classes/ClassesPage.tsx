@@ -1,14 +1,17 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type MouseEvent } from 'react';
 import { Users } from 'lucide-react';
-import { DEFAULT_TIMEZONE, TEACHER_LIMITS as L, type LearnerClass } from '@linguo/shared';
+import { useNavigate } from 'react-router';
+import { DEFAULT_TIMEZONE, TEACHER_LIMITS as L, type LearnerAssignment, type LearnerClass } from '@linguo/shared';
 import { EmptyState } from '@/components/ui/EmptyState';
 import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { SolidCard } from '@/components/ui/SolidCard';
 import { useToast } from '@/components/ui/Toast';
-import { joinedMessage } from '@/features/classes/labels';
+import { assignmentLink, joinedMessage } from '@/features/classes/labels';
 import { useLearnerClasses, type LearnerClassesApi } from '@/features/classes/useLearnerClasses';
-import { useLearningPaths } from '@/features/learning-paths/LearningPathsProvider';
+import { useLearningPaths, type LearningPathsContextValue } from '@/features/learning-paths/LearningPathsProvider';
+import { pathForLanguage } from '@/features/learning-paths/path-for-language';
+import type { LearningPath } from '@/features/learning-paths/service';
 import { useProfile } from '@/features/profile/ProfileProvider';
 import { cn } from '@/lib/cn';
 import { resolveTimeZone } from '@/lib/dates';
@@ -25,6 +28,7 @@ export function ClassesPage() {
   const online = useOnline();
   const { profile } = useProfile();
   const paths = useLearningPaths();
+  const navigate = useNavigate();
   const timeZone = resolveTimeZone(profile?.timezone ?? DEFAULT_TIMEZONE);
   const [leaving, setLeaving] = useState<LearnerClass | null>(null);
   const leaveTrigger = useRef<HTMLElement | null>(null);
@@ -42,6 +46,30 @@ export function ClassesPage() {
     });
     return () => cancelAnimationFrame(frame);
   }, [focusHeading, leaving]);
+
+  /**
+   * Lessons, exams and reviews all run on the current path, so an assignment of a class in another language first
+   * switches to the learner's own path in that language (the card says so). Without such a path the link is followed
+   * as it is and the destination explains.
+   */
+  const openAssignment = (klass: LearnerClass, assignment: LearnerAssignment, event: MouseEvent<HTMLAnchorElement>) => {
+    const current = paths.current?.language ?? null;
+    if (current === null || current === klass.language_code) return;
+    const target = pathForLanguage(paths.paths, klass.language_code);
+    if (!target) return;
+    // A plain click only: new-tab and download gestures keep the browser's behaviour.
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    void switchAndGo(paths, target, assignmentLink(assignment));
+  };
+  async function switchAndGo(source: LearningPathsContextValue, target: LearningPath, to: string) {
+    try {
+      await source.setCurrent(target.id);
+      navigate(to);
+    } catch {
+      toast.show({ tone: 'error', message: 'Chưa chuyển được lộ trình. Kiểm tra mạng và thử lại nhé.' });
+    }
+  }
 
   return (
     <div className="space-y-6 lg:space-y-8">
@@ -85,6 +113,8 @@ export function ClassesPage() {
         api={api}
         timeZone={timeZone}
         currentLanguage={paths.current?.language ?? null}
+        pathFor={(language) => pathForLanguage(paths.paths, language)}
+        onOpen={openAssignment}
         online={online}
         onLeave={(klass, trigger) => {
           leaveTrigger.current = trigger;
@@ -118,11 +148,13 @@ interface ClassListProps {
   api: LearnerClassesApi;
   timeZone: string;
   currentLanguage: string | null;
+  pathFor: (language: string) => LearningPath | null;
+  onOpen: (klass: LearnerClass, assignment: LearnerAssignment, event: MouseEvent<HTMLAnchorElement>) => void;
   online: boolean;
   onLeave: (klass: LearnerClass, trigger: HTMLButtonElement) => void;
 }
 
-function ClassList({ api, timeZone, currentLanguage, online, onLeave }: ClassListProps) {
+function ClassList({ api, timeZone, currentLanguage, pathFor, onOpen, online, onLeave }: ClassListProps) {
   if (api.status === 'loading') {
     return (
       <div role="status" className="space-y-3">
@@ -161,6 +193,8 @@ function ClassList({ api, timeZone, currentLanguage, online, onLeave }: ClassLis
               assignments={api.assignments.filter((a) => a.class_id === klass.id)}
               timeZone={timeZone}
               currentLanguage={currentLanguage}
+              classPath={pathFor(klass.language_code)}
+              onOpen={(assignment, event) => onOpen(klass, assignment, event)}
               leaveDisabled={!online}
               onLeave={(trigger) => onLeave(klass, trigger)}
             />

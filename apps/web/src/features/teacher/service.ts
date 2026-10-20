@@ -15,8 +15,11 @@ import {
   type TeacherClass,
   type TeacherInvite,
   type TeacherRoster,
+  type ExamSection,
+  type UpdateAssignmentInput,
 } from '@linguo/shared';
 import { z } from 'zod';
+import { listExamForms } from '@/features/exam/service';
 import { callRpc, parse } from '@/features/lesson-player/service';
 import type { AppSupabaseClient } from '@/lib/supabase';
 
@@ -70,8 +73,27 @@ export async function createClassAssignment(client: AppSupabaseClient, classId: 
     p_target_count: input.kind === 'review' ? input.target_count : null,
     p_due_at: input.due_at ?? null,
     p_note: input.note ?? null,
+    p_exam_mode: input.kind === 'exam' ? (input.exam_mode ?? null) : null,
+    p_exam_section: input.kind === 'exam' && input.exam_mode === 'section' ? (input.exam_section ?? null) : null,
   };
   return parse(teacherAssignmentSchema, await callRpc(client, 'teacher_create_assignment', args));
+}
+
+/**
+ * Edits an assignment: replaces the note, changes the due date when `set_due` is true (null clears it) and closes or
+ * reopens it. The server returns the assignment with its completion count.
+ */
+export async function updateClassAssignment(client: AppSupabaseClient, assignmentId: string, input: UpdateAssignmentInput): Promise<TeacherAssignment> {
+  return parse(
+    teacherAssignmentSchema,
+    await callRpc(client, 'teacher_update_assignment', {
+      p_assignment_id: assignmentId,
+      p_note: input.note,
+      p_closed: input.closed,
+      p_due_at: input.due_at ?? null,
+      p_set_due: input.set_due ?? false,
+    }),
+  );
 }
 
 export async function deleteClassAssignment(client: AppSupabaseClient, assignmentId: string): Promise<void> {
@@ -92,6 +114,8 @@ export interface CatalogLesson {
 export interface CatalogExam {
   id: string;
   title: string;
+  /** Sections that have published questions: the ones an exam assignment may ask for. */
+  sections: ExamSection[];
 }
 
 export interface TeacherCatalog {
@@ -109,7 +133,6 @@ const lessonRowSchema = z.object({
   unit_id: z.string(),
 });
 const unitRowSchema = z.object({ id: z.string(), title: localizedTitle, order_index: z.number() });
-const examRowSchema = z.object({ id: z.string(), title_vi: z.string(), level_from: z.string() });
 
 function levelRank(language: ClassLanguage, level: string): number {
   const list = (LEVELS as Record<string, readonly string[]>)[language] ?? [];
@@ -149,12 +172,12 @@ export async function fetchTeacherCatalog(
   language: ClassLanguage,
   levelLabel: (level: string) => string,
 ): Promise<TeacherCatalog> {
-  const [lessonsRes, examsRes] = await Promise.all([
+  const [lessonsRes, forms] = await Promise.all([
     client.from('lessons').select('id, title, level_code, order_index, unit_id').eq('language_code', language).eq('status', 'published').limit(1000),
-    client.from('exam_forms').select('id, title_vi, level_from').eq('language_code', language).eq('status', 'published').limit(200),
+    // list_exam_forms: published forms of the language with the sections that have questions.
+    listExamForms(client, language),
   ]);
   if (lessonsRes.error) throw lessonsRes.error;
-  if (examsRes.error) throw examsRes.error;
   const lessons = parse(lessonRowSchema.array(), lessonsRes.data ?? []);
   const unitIds = [...new Set(lessons.map((l) => l.unit_id))];
   let units: z.infer<typeof unitRowSchema>[] = [];
@@ -163,8 +186,8 @@ export async function fetchTeacherCatalog(
     if (unitsRes.error) throw unitsRes.error;
     units = parse(unitRowSchema.array(), unitsRes.data ?? []);
   }
-  const exams = parse(examRowSchema.array(), examsRes.data ?? [])
+  const exams = [...forms]
     .sort((a, b) => levelRank(language, a.level_from) - levelRank(language, b.level_from) || a.title_vi.localeCompare(b.title_vi, 'vi'))
-    .map((e) => ({ id: e.id, title: e.title_vi }));
+    .map((e) => ({ id: e.form_id, title: e.title_vi, sections: e.sections.filter((s) => s.question_count > 0).map((s) => s.section) }));
   return { lessons: buildLessonCatalog(language, lessons, units, levelLabel), exams };
 }

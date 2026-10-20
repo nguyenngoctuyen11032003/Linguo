@@ -1,6 +1,8 @@
 import { BookOpen, GraduationCap, LogOut, RotateCcw, type LucideIcon } from 'lucide-react';
 import { Link } from 'react-router';
+import type { MouseEvent } from 'react';
 import type { AssignmentKind, LearnerAssignment, LearnerClass } from '@linguo/shared';
+import type { LearningPath } from '@/features/learning-paths/service';
 import { buttonClasses } from '@/components/ui/Button';
 import { SolidCard } from '@/components/ui/SolidCard';
 import {
@@ -10,6 +12,7 @@ import {
   assignmentLink,
   assignmentStatus,
   assignmentTitle,
+  examModeText,
   formatDue,
   formatJoined,
 } from '@/features/classes/labels';
@@ -20,6 +23,7 @@ const KIND_ICONS: Record<AssignmentKind, LucideIcon> = { lesson: BookOpen, exam:
 const STATE_CLASSES: Record<LearnerAssignment['state'], string> = {
   done: 'bg-success/12 text-success-text',
   overdue: 'bg-error/12 text-error-text',
+  closed: 'bg-text/10 text-text',
   pending: 'bg-text/6 text-muted',
 };
 
@@ -29,16 +33,21 @@ export interface ClassCardProps {
   timeZone: string;
   /** Language of the learner's current path, to warn when the class is about another language. */
   currentLanguage: string | null;
+  /** The learner's own path in the class language (null when there is none): opening an assignment switches to it. */
+  classPath?: LearningPath | null;
+  /** Called before an assignment link is followed; may switch the current path first (see ClassesPage). */
+  onOpen?: (assignment: LearnerAssignment, event: MouseEvent<HTMLAnchorElement>) => void;
   onLeave: (trigger: HTMLButtonElement) => void;
   leaveDisabled?: boolean;
 }
 
 /** One class: who teaches it, its assignments with due date and state, and "Rời lớp". */
-export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLeave, leaveDisabled }: ClassCardProps) {
+export function ClassCard({ klass, assignments, timeZone, currentLanguage, classPath = null, onOpen, onLeave, leaveDisabled }: ClassCardProps) {
   const titleId = `class-${klass.id}-title`;
   const language = CLASS_LANGUAGE_LABELS[klass.language_code];
   const inline = language.replace('Tiếng', 'tiếng');
-  const open = assignments.filter((a) => a.state !== 'done').length;
+  // Closed assignments no longer ask for work.
+  const open = assignments.filter((a) => a.state === 'pending' || a.state === 'overdue').length;
   return (
     <SolidCard className="p-4 sm:p-5">
       <section aria-labelledby={titleId} className="space-y-4">
@@ -60,7 +69,18 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
         </div>
         {currentLanguage !== null && currentLanguage !== klass.language_code && assignments.length > 0 && (
           <p className="rounded-2xl bg-warn/10 px-4 py-3 text-[15px] ring-1 ring-warn/40 ring-inset">
-            Lớp này học {inline}, khác lộ trình bạn đang mở. Bài giao chỉ được tính khi bạn học trên lộ trình {inline}.
+            {classPath ? (
+              <>
+                Lớp này học {inline}, khác lộ trình bạn đang mở. Khi bạn bấm vào một bài giao, Linguo sẽ chuyển sang lộ trình {inline} của bạn; muốn quay lại thì đổi lộ trình ở Cài đặt.
+              </>
+            ) : (
+              <>
+                Lớp này học {inline} nhưng bạn chưa có lộ trình {inline}, nên bài giao chưa làm được.{' '}
+                <Link to={`/app/bat-dau?lang=${klass.language_code}`} className="font-semibold underline">
+                  Tạo lộ trình {inline}
+                </Link>
+              </>
+            )}
           </p>
         )}
         <div className="space-y-2">
@@ -72,7 +92,7 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
           ) : (
             <ul className="-mx-1 divide-y divide-border">
               {assignments.map((a) => (
-                <AssignmentRow key={a.id} assignment={a} timeZone={timeZone} />
+                <AssignmentRow key={a.id} assignment={a} timeZone={timeZone} onOpen={onOpen} />
               ))}
             </ul>
           )}
@@ -94,11 +114,12 @@ export function ClassCard({ klass, assignments, timeZone, currentLanguage, onLea
   );
 }
 
-function AssignmentRow({ assignment: a, timeZone }: { assignment: LearnerAssignment; timeZone: string }) {
+function AssignmentRow({ assignment: a, timeZone, onOpen }: { assignment: LearnerAssignment; timeZone: string; onOpen?: ClassCardProps['onOpen'] }) {
   const Icon = KIND_ICONS[a.kind];
   const title = assignmentTitle(a);
   const action = assignmentAction(a);
   const done = a.state === 'done';
+  const modeText = examModeText(a);
   return (
     <li className="flex flex-col gap-3 px-1 py-4 sm:flex-row sm:items-center">
       <div className="flex min-w-0 flex-1 items-start gap-3">
@@ -108,7 +129,10 @@ function AssignmentRow({ assignment: a, timeZone }: { assignment: LearnerAssignm
           className={cn('mt-0.5 size-5 shrink-0', done ? 'text-success-text' : a.state === 'overdue' ? 'text-error-text' : 'text-primary')}
         />
         <div className="min-w-0 flex-1 break-words">
-          <p className="eyebrow">{ASSIGNMENT_KIND_LABELS[a.kind]}</p>
+          <p className="eyebrow">
+            {ASSIGNMENT_KIND_LABELS[a.kind]}
+            {modeText && <span className="normal-case tracking-normal"> · {modeText}</span>}
+          </p>
           <p className={cn('mt-0.5 font-bold leading-snug', done && 'text-muted line-through decoration-1')}>{title}</p>
           <p className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
             <span className={cn('whitespace-nowrap rounded-full px-2.5 py-0.5 text-[13px] font-semibold', STATE_CLASSES[a.state])}>{assignmentStatus(a)}</span>
@@ -124,6 +148,7 @@ function AssignmentRow({ assignment: a, timeZone }: { assignment: LearnerAssignm
       </div>
       <Link
         to={assignmentLink(a)}
+        onClick={onOpen ? (event) => onOpen(a, event) : undefined}
         aria-label={`${action}: ${title}`}
         className={cn(buttonClasses('ghost', 'md'), 'ml-8 self-start sm:ml-0 sm:self-auto sm:shrink-0')}
       >

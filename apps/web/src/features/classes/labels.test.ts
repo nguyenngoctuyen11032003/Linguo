@@ -3,7 +3,7 @@ import { TEACHER_ERROR_CODES } from '@linguo/shared';
 import { GENERIC_ERROR_MESSAGE } from '@/lib/error-fallback';
 import { LESSON_ID, learnerAssignment } from './class-fixtures';
 import { CLASS_NETWORK_MESSAGE, classErrorMessage } from './error-map';
-import { assignmentAction, assignmentLink, assignmentStatus, assignmentTitle, formatDue, formatJoined, joinedMessage } from './labels';
+import { assignmentAction, assignmentLink, assignmentStatus, assignmentTitle, examModeText, formatDue, formatJoined, joinedMessage } from './labels';
 
 describe('assignment labels', () => {
   it('names each kind', () => {
@@ -20,6 +20,25 @@ describe('assignment labels', () => {
     expect(assignmentLink(learnerAssignment({ kind: 'review', ref_id: null }))).toBe('/app/on-tap');
   });
 
+  it('adds the exam mode the teacher asked for to the hub link', () => {
+    const base = learnerAssignment({ kind: 'exam' });
+    expect(assignmentLink({ ...base, exam_mode: 'full', exam_section: null })).toBe(`/app/luyen-thi?de=${LESSON_ID}&che-do=full`);
+    expect(assignmentLink({ ...base, exam_mode: 'section', exam_section: 'reading' })).toBe(`/app/luyen-thi?de=${LESSON_ID}&che-do=section&phan=reading`);
+    // A section mode without its section, or no mode at all, leaves the choice to the learner.
+    expect(assignmentLink({ ...base, exam_mode: 'section', exam_section: null })).toBe(`/app/luyen-thi?de=${LESSON_ID}`);
+    expect(assignmentLink({ ...base, exam_mode: null, exam_section: null })).toBe(`/app/luyen-thi?de=${LESSON_ID}`);
+    // Lessons and reviews never carry an exam mode.
+    expect(assignmentLink(learnerAssignment({ exam_mode: 'full' }))).toBe(`/app/hoc-tap/bai/${LESSON_ID}`);
+  });
+
+  it('says what an exam assignment asks for', () => {
+    const base = learnerAssignment({ kind: 'exam' });
+    expect(examModeText({ ...base, exam_mode: 'full', exam_section: null })).toBe('Làm trọn đề');
+    expect(examModeText({ ...base, exam_mode: 'section', exam_section: 'writing' })).toBe('Làm phần Viết');
+    expect(examModeText({ ...base, exam_mode: null, exam_section: null })).toBeNull();
+    expect(examModeText(learnerAssignment({ exam_mode: 'full' }))).toBeNull();
+  });
+
   it('words the action and status by state', () => {
     expect(assignmentAction(learnerAssignment())).toBe('Làm bài');
     expect(assignmentAction(learnerAssignment({ state: 'done' }))).toBe('Học lại');
@@ -29,6 +48,7 @@ describe('assignment labels', () => {
     expect(assignmentStatus(learnerAssignment())).toBe('Chưa làm');
     expect(assignmentStatus(learnerAssignment({ state: 'overdue' }))).toBe('Quá hạn');
     expect(assignmentStatus(learnerAssignment({ state: 'done' }))).toBe('Đã xong');
+    expect(assignmentStatus(learnerAssignment({ state: 'closed' }))).toBe('Giáo viên đã đóng');
     const review = learnerAssignment({ kind: 'review', ref_id: null, title: null, target_count: 20, progress_count: 7 });
     expect(assignmentStatus(review)).toBe('Đã ôn 7/20');
     expect(assignmentStatus({ ...review, state: 'overdue' })).toBe('Quá hạn · Đã ôn 7/20');
