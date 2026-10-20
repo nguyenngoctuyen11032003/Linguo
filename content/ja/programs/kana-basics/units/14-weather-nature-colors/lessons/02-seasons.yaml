@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:seasons-nature
+order_index: 2
+level: n5
+title:
+  vi: Bốn mùa và thiên nhiên - はる・なつ・あき・ふゆ
+objectives:
+  - vi: "Gọi tên bốn mùa: はる, なつ, あき, ふゆ và nói mùa nào thế nào."
+  - vi: "Gọi tên cảnh vật: さくら, かわ, き, いけ, みずうみ, しま."
+  - vi: Nói về hoạt động theo mùa với はなみ, なつやすみ.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:weather
+items:
+  - item: ja:item:n5-u14-haru
+  - item: ja:item:n5-u14-natsu
+  - item: ja:item:n5-u14-aki
+  - item: ja:item:n5-u14-fuyu
+  - item: ja:item:n5-u14-sakura
+  - item: ja:item:n5-u14-hanami
+  - item: ja:item:n5-u14-natsuyasumi
+  - item: ja:item:n5-u14-kawa
+  - item: ja:item:n5-u14-ki-tree
+  - item: ja:item:n5-u14-ike
+  - item: ja:item:n5-u14-mizuumi
+  - item: ja:item:n5-u14-shima
+  - item: ja:item:n4-kisetsu
+    role: reuse
+  - item: ja:item:umi
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về bốn mùa và cảnh vật - はるにさくらがさきます。なつやすみにうみへいきます。
+  - type: explain
+    text:
+      vi: Bốn mùa - はる (xuân), なつ (hè), あき (thu), ふゆ (đông). Mỗi mùa đi với một câu mô tả - はるはあたたかいです, なつはあついです, あきはすずしいです, ふゆはさむいです.
+  - type: explain
+    text:
+      vi: "Cảnh vật: さくら (hoa anh đào), かわ (sông), き (cây), うみ (biển, đã học), いけ (ao), みずうみ (hồ lớn), しま (đảo). Hoạt động mùa xuân - はなみ (ngắm hoa anh đào); mùa hè - なつやすみ (kỳ nghỉ hè)."
+  - type: explain
+    text:
+      vi: Hỏi mùa yêu thích - どのきせつがいちばんすきですか (Bạn thích mùa nào nhất?). Trả lời - はるがいちばんすきです. いちばん nghĩa là "nhất".
+  - type: deep_explain
+    text:
+      vi: さくら là loài hoa gắn với mùa xuân Nhật - cuối tháng 3 đến đầu tháng 4. ngắm hoa gọi là はなみ, thường ngồi dưới gốc cây ăn uống cùng bạn bè. かわ (川, sông) đọc giống かわ (皮, vỏ, da) nhưng ngữ cảnh luôn khác. Chữ Hán - 春, 夏, 秋, 冬, 桜, 川, 木, 池, 湖, 島.
+  - type: example
+    target: はるにさくらがさきます。
+    target_lang: ja
+    translation:
+      vi: Mùa xuân hoa anh đào nở.
+    note:
+      vi: さきます - nở (sẽ học kỹ sau).
+  - type: example
+    target: なつやすみにうみへいきます。
+    target_lang: ja
+    translation:
+      vi: Kỳ nghỉ hè tôi đi biển.
+    note:
+      vi: なつやすみ - kỳ nghỉ hè.
+  - type: example
+    target: こうえんにいけがあります。
+    target_lang: ja
+    translation:
+      vi: Trong công viên có cái ao.
+    note:
+      vi: いけ - ao nhỏ.
+  - type: example
+    target: どのきせつがいちばんすきですか。- あきがいちばんすきです。
+    target_lang: ja
+    translation:
+      vi: Bạn thích mùa nào nhất? - Tôi thích mùa thu nhất.
+    note:
+      vi: いちばん - nhất.
+  - type: common_mistake
+    wrong: はるはさむいです。(muốn nói ấm)
+    right: はるはあたたかいです。
+    target_lang: ja
+    note:
+      vi: Mùa xuân ấm áp - あたたかい; さむい dành cho mùa đông.
+  - type: common_mistake
+    wrong: かわにおよぎます。
+    right: かわでおよぎます。
+    target_lang: ja
+    note:
+      vi: Nơi diễn ra hành động bơi dùng で, không dùng に.
+  - type: summary
+    points:
+      - vi: はる xuân · なつ hè · あき thu · ふゆ đông.
+      - vi: さくら hoa anh đào · はなみ ngắm hoa · なつやすみ kỳ nghỉ hè.
+      - vi: かわ sông · き cây · いけ ao · みずうみ hồ · しま đảo.
+      - vi: どのきせつが いちばん すきですか - thích mùa nào nhất?
+exercises:
+  - key: ja:exercise:seasons-nature-fuyu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-fuyu
+    prompt:
+      stem: Mùa nào lạnh và có tuyết?
+      stem_lang: vi
+      options:
+        - id: c00
+          text: あき
+          lang: ja
+        - id: m8i
+          text: なつ
+          lang: ja
+        - id: adg
+          text: ふゆ
+          lang: ja
+        - id: ai4
+          text: はる
+          lang: ja
+    answer:
+      correct_option_id: adg
+    explanation:
+      vi: ふゆ là mùa đông - lạnh, có tuyết. なつ là mùa hè, はる là xuân, あき là thu.
+    display_answer: ふゆ
+  - key: ja:exercise:seasons-nature-sakura
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-sakura
+    prompt:
+      stem: Từ nào có nghĩa là “hoa anh đào”?
+      stem_lang: vi
+      options:
+        - id: roq
+          text: いけ
+          lang: ja
+        - id: lij
+          text: さくら
+          lang: ja
+        - id: wpv
+          text: かわ
+          lang: ja
+        - id: va1
+          text: はな
+          lang: ja
+    answer:
+      correct_option_id: lij
+    explanation:
+      vi: さくら là hoa anh đào. はな là hoa nói chung (hoặc mũi), かわ là sông, いけ là ao.
+    display_answer: さくら
+  - key: ja:exercise:seasons-nature-haru
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u14-haru
+    prompt:
+      audio_asset_id: null
+      fallback_text: はるはあたたかくて、さくらがさきます。なつはあつくて、うみへいきます。
+      options:
+        - id: l2u
+          text: Mùa xuân nóng và tôi đi biển. Mùa hè mát và hoa nở.
+          lang: vi
+        - id: x2r
+          text: Mùa xuân ấm và hoa anh đào nở. Mùa hè nóng và tôi đi biển.
+          lang: vi
+        - id: isw
+          text: Mùa thu mát và lá đỏ. Mùa đông lạnh và tôi ở nhà.
+          lang: vi
+        - id: f9d
+          text: Mùa xuân lạnh và tuyết rơi. Mùa hè nóng và tôi đi núi.
+          lang: vi
+    answer:
+      correct_option_id: x2r
+    explanation:
+      vi: はる - mùa xuân, あたたかい - ấm; なつ - mùa hè, あつい - nóng; うみ - biển.
+    display_answer: Mùa xuân ấm và hoa anh đào nở. Mùa hè nóng và tôi đi biển.
+  - key: ja:exercise:seasons-nature-natsu-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-natsuyasumi
+    prompt:
+      template: "{{b1}}にうみへいきます。 (Kỳ nghỉ hè tôi đi biển.)"
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Kỳ nghỉ của mùa nóng.
+        - Bắt đầu bằng な - なつやすみ.
+    answer:
+      blanks:
+        b1:
+          - なつやすみ
+          - 夏休み
+    known_wrong:
+      - answer: ふゆやすみ
+        feedback_vi: ふゆやすみ là kỳ nghỉ đông; đi biển hợp với kỳ nghỉ hè.
+        error_tag: season
+      - answer: やすみ
+        feedback_vi: やすみ là ngày nghỉ chung; "kỳ nghỉ hè" là なつやすみ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: なつやすみ là kỳ nghỉ hè (なつ + やすみ).
+    display_answer: なつやすみにうみへいきます。
+  - key: ja:exercise:seasons-nature-ichiban
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-aki
+    prompt:
+      stem: Bạn muốn hỏi “Bạn thích mùa nào nhất?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: nb9
+          text: なんのきせつがいくらですか。
+          lang: ja
+        - id: qjl
+          text: どのきせつをいちばんすきですか。
+          lang: ja
+        - id: ft6
+          text: どのきせつがいちばんすきですか。
+          lang: ja
+        - id: o8j
+          text: どのきせつにいちばんいますか。
+          lang: ja
+    answer:
+      correct_option_id: ft6
+    explanation:
+      vi: どの + N が いちばん すきですか là mẫu hỏi "N nào nhất". Với すき, đối tượng dùng が (không dùng を).
+    display_answer: どのきせつがいちばんすきですか。
+  - key: ja:exercise:seasons-nature-kawa-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-kawa
+    prompt:
+      template: こうえんのちかくに{{b1}}があります。 (Gần công viên có con sông.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - かわ
+          - 川
+    known_wrong:
+      - answer: いけ
+        feedback_vi: いけ là ao; câu hỏi nói "con sông".
+        error_tag: vocab_meaning
+      - answer: しま
+        feedback_vi: しま là đảo.
+        error_tag: vocab_meaning
+    explanation:
+      vi: かわ là sông (川).
+    display_answer: こうえんのちかくにかわがあります。
+  - key: ja:exercise:seasons-nature-ike-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-ike
+    prompt:
+      template: こうえんに{{b1}}があって、さかながいます。 (Công viên có ao và có cá.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - いけ
+          - 池
+    known_wrong:
+      - answer: みずうみ
+        feedback_vi: みずうみ là hồ lớn; công viên thường có ao nhỏ - いけ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: いけ là ao, hồ nhỏ. あって nối câu (có ao và có cá).
+    display_answer: こうえんにいけがあって、さかながいます。
+  - key: ja:exercise:seasons-nature-sakura-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-hanami
+    prompt:
+      source_text: Mùa xuân tôi cùng bạn đi ngắm hoa anh đào.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - はるにともだちとはなみをします。
+        - はるにともだちとはなみにいきます。
+        - 春に友達と花見をします。
+        - 春に友達と花見に行きます。
+        - はるはともだちとはなみをします。
+    known_wrong:
+      - answer: なつにともだちとはなみをします。
+        feedback_vi: なつ là mùa hè; はなみ ngắm hoa anh đào là mùa xuân (はる).
+        error_tag: season
+    explanation:
+      vi: はなみ - ngắm hoa anh đào, mùa xuân; ともだちと - cùng với bạn.
+    display_answer: はるにともだちとはなみをします。
+  - key: ja:exercise:seasons-nature-shima-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u14-shima
+    prompt:
+      source_text: なつやすみにしまへふねでいきます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kỳ nghỉ hè tôi ra đảo bằng tàu.
+        - Nghỉ hè tôi đi đảo bằng tàu.
+        - Kỳ nghỉ hè tôi đi đến đảo bằng tàu thuỷ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Kỳ nghỉ hè tôi ra đảo bằng máy bay.
+        feedback_vi: ふね là tàu thuỷ; máy bay là ひこうき.
+        error_tag: vocab_meaning
+    explanation:
+      vi: しま là đảo; ふねで - bằng tàu; なつやすみに - vào kỳ nghỉ hè.
+    display_answer: Kỳ nghỉ hè tôi ra đảo bằng tàu.
+  - key: ja:exercise:seasons-nature-haru-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-haru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Mùa xuân hoa anh đào nở."'
+      tokens:
+        - id: t2
+          text: さくらが
+        - id: t3
+          text: さきます。
+        - id: t1
+          text: はるに
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Thời điểm (はるに) → chủ ngữ (さくらが) → động từ (さきます).
+    display_answer: はるにさくらがさきます。
+  - key: ja:exercise:seasons-nature-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-aki
+    prompt:
+      stem: Bạn nói “Mùa thu mát mẻ”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: vdd
+          text: あきはあついです。
+          lang: ja
+        - id: yv1
+          text: あきはさむいです。
+          lang: ja
+        - id: n2i
+          text: あきはあたたかいです。
+          lang: ja
+        - id: tfo
+          text: あきはすずしいです。
+          lang: ja
+    answer:
+      correct_option_id: tfo
+    explanation:
+      vi: Mùa thu mát mẻ là すずしい. さむい là lạnh (mùa đông), あつい là nóng (mùa hè), あたたかい là ấm (mùa xuân).
+    display_answer: あきはすずしいです。

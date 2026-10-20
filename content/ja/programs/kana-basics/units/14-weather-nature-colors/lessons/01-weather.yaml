@@ -1,0 +1,385 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:weather
+order_index: 1
+level: n5
+title:
+  vi: Thời tiết - てんき・はれ・くもり・ゆき
+objectives:
+  - vi: "Gọi tên các hiện tượng thời tiết: はれ, くもり, あめ, ゆき, かぜ, くも, そら."
+  - vi: Miêu tả thời tiết bằng あたたかい, つめたい, あつい, さむい, いい, わるい.
+  - vi: Hỏi và nói thời tiết bằng どんなてんきですか và ふります.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:directions
+items:
+  - item: ja:item:n5-u14-tenki
+  - item: ja:item:n5-u14-hare
+  - item: ja:item:n5-u14-kumori
+  - item: ja:item:n5-u14-yuki
+  - item: ja:item:n5-u14-kaze-wind
+  - item: ja:item:n5-u14-sora
+  - item: ja:item:n5-u14-kumo-cloud
+  - item: ja:item:n5-u14-atatakai
+  - item: ja:item:n5-u14-tsumetai
+  - item: ja:item:n5-u14-furimasu
+  - item: ja:item:n5-u14-warui
+  - item: ja:item:n5-u14-tenki-ga-ii
+  - item: ja:item:ame
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được thời tiết hôm nay, ngày mai - あしたははれです。ゆきがふります。
+  - type: explain
+    text:
+      vi: "Thời tiết cơ bản: はれ (nắng), くもり (nhiều mây), あめ (mưa, đã học), ゆき (tuyết), かぜ (gió), くも (mây), そら (bầu trời). Nói thời tiết bằng N は + từ thời tiết + です - きょうははれです."
+  - type: explain
+    text:
+      vi: Mưa và tuyết "rơi" - あめが ふります, ゆきが ふります (ふる = rơi). Gió "thổi" nói かぜが つよい (gió mạnh). Thời tiết đẹp - てんきが いい, xấu - てんきが わるい.
+  - type: explain
+    text:
+      vi: Cảm giác nhiệt độ - あつい (nóng), さむい (lạnh), あたたかい (ấm), すずしい (mát, N4). つめたい là lạnh khi chạm, dùng cho nước, đồ uống - つめたいみず (nước lạnh).
+  - type: deep_explain
+    text:
+      vi: かぜ viết 風 là "gió", viết 風邪 là "cảm" - かぜがふく (gió thổi) khác かぜをひく (bị cảm). くも có thể là "mây" (雲) hoặc "nhện" (蜘蛛). さむい dùng cho thời tiết hay cơ thể thấy lạnh; つめたい dùng khi chạm vào hoặc đồ ăn uống lạnh. Chữ Hán - 天気, 晴れ, 曇り, 雪, 風, 空, 雲, 暖かい, 冷たい, 降ります, 悪い.
+  - type: example
+    target: きょうはいいてんきです。そらがあおいです。
+    target_lang: ja
+    translation:
+      vi: Hôm nay thời tiết đẹp. Bầu trời xanh.
+    note:
+      vi: いいてんき - thời tiết đẹp.
+  - type: example
+    target: あしたはくもりで、ゆうがたからあめがふります。
+    target_lang: ja
+    translation:
+      vi: Ngày mai trời nhiều mây, từ chiều tối trời mưa.
+    note:
+      vi: ふります - mưa rơi.
+  - type: example
+    target: ふゆはさむくて、ゆきがふります。
+    target_lang: ja
+    translation:
+      vi: Mùa đông lạnh và có tuyết rơi.
+    note:
+      vi: さむくて nối hai ý.
+  - type: example
+    target: つめたいみずをのみます。
+    target_lang: ja
+    translation:
+      vi: Tôi uống nước lạnh.
+    note:
+      vi: つめたい - lạnh khi chạm, dùng cho đồ uống.
+  - type: common_mistake
+    wrong: ゆきをふります。
+    right: ゆきがふります。
+    target_lang: ja
+    note:
+      vi: Chủ ngữ của ふる là mưa/tuyết, đi với が, không dùng を.
+  - type: common_mistake
+    wrong: つめたいてんきです。
+    right: さむいてんきです。
+    target_lang: ja
+    note:
+      vi: Thời tiết lạnh dùng さむい; つめたい chỉ dùng khi chạm vào hoặc đồ ăn uống.
+  - type: summary
+    points:
+      - vi: はれ nắng · くもり nhiều mây · あめ mưa · ゆき tuyết · かぜ gió · そら bầu trời · くも mây.
+      - vi: あめ/ゆきが ふります - mưa/tuyết rơi.
+      - vi: あたたかい ấm · つめたい lạnh (chạm) · てんきがいい / わるい.
+      - vi: かぜ gió ≠ かぜ cảm (かぜをひく).
+exercises:
+  - key: ja:exercise:weather-hare
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-hare
+    prompt:
+      stem: Từ nào có nghĩa là “trời nắng”?
+      stem_lang: vi
+      options:
+        - id: kx2
+          text: ゆき
+          lang: ja
+        - id: odl
+          text: はれ
+          lang: ja
+        - id: j6r
+          text: かぜ
+          lang: ja
+        - id: a4d
+          text: くもり
+          lang: ja
+    answer:
+      correct_option_id: odl
+    explanation:
+      vi: はれ là trời nắng. くもり là nhiều mây, ゆき là tuyết, かぜ là gió.
+    display_answer: はれ
+  - key: ja:exercise:weather-yuki
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u14-yuki
+    prompt:
+      stem: Mùa đông ở Hokkaido hay có “ゆき”. ゆき là gì?
+      stem_lang: vi
+      options:
+        - id: gos
+          text: mây
+          lang: vi
+        - id: z6t
+          text: tuyết
+          lang: vi
+        - id: qqh
+          text: mưa
+          lang: vi
+        - id: i55
+          text: gió
+          lang: vi
+    answer:
+      correct_option_id: z6t
+    explanation:
+      vi: ゆき là tuyết. あめ là mưa, かぜ là gió, くも là mây.
+    display_answer: tuyết
+  - key: ja:exercise:weather-tenki
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u14-tenki
+    prompt:
+      audio_asset_id: null
+      fallback_text: きょうはいいてんきです。あしたはくもりで、あさってはあめがふります。
+      options:
+        - id: qir
+          text: Hôm nay thời tiết xấu. Ngày mai nhiều mây, ngày kia nắng.
+          lang: vi
+        - id: h89
+          text: Hôm nay nhiều mây. Ngày mai mưa, ngày kia thời tiết đẹp.
+          lang: vi
+        - id: t4m
+          text: Hôm nay mưa. Ngày mai nắng, ngày kia nhiều mây.
+          lang: vi
+        - id: ine
+          text: Hôm nay thời tiết đẹp. Ngày mai nhiều mây, ngày kia mưa.
+          lang: vi
+    answer:
+      correct_option_id: ine
+    explanation:
+      vi: いいてんき - thời tiết đẹp; くもり - nhiều mây; あめがふります - trời mưa.
+    display_answer: Hôm nay thời tiết đẹp. Ngày mai nhiều mây, ngày kia mưa.
+  - key: ja:exercise:weather-furi-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-furimasu
+    prompt:
+      template: あしたはあめが{{b1}}。 (Ngày mai trời mưa.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Động từ đi với mưa và tuyết.
+        - Bắt đầu bằng ふ - ふります.
+    answer:
+      blanks:
+        b1:
+          - ふります
+          - 降ります
+    known_wrong:
+      - answer: ふきます
+        feedback_vi: ふきます là thổi (gió); mưa dùng ふります.
+        error_tag: verb_choice
+      - answer: でます
+        feedback_vi: でます là ra, xuất hiện; mưa rơi là ふります.
+        error_tag: verb_choice
+    explanation:
+      vi: あめが ふります - mưa rơi. ふる là động từ đi với mưa và tuyết.
+    display_answer: あしたはあめがふります。
+  - key: ja:exercise:weather-tsumetai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-tsumetai
+    prompt:
+      stem: Bạn muốn một ly nước lạnh. Từ nào điền vào chỗ trống? ___ みずをください。
+      stem_lang: vi
+      options:
+        - id: coi
+          text: さむい
+          lang: ja
+        - id: zvt
+          text: つめたい
+          lang: ja
+        - id: uy5
+          text: あたたかい
+          lang: ja
+        - id: anp
+          text: わるい
+          lang: ja
+    answer:
+      correct_option_id: zvt
+    explanation:
+      vi: つめたい dùng cho đồ vật, đồ uống lạnh khi chạm. さむい nói về thời tiết hay cảm giác cơ thể, あたたかい là ấm, わるい là xấu.
+    display_answer: つめたい
+  - key: ja:exercise:weather-hare-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-hare
+    prompt:
+      template: あしたは{{b1}}です。そらがあおいです。 (Ngày mai trời nắng. Bầu trời xanh.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - はれ
+          - 晴れ
+    known_wrong:
+      - answer: くもり
+        feedback_vi: くもり là nhiều mây; bầu trời xanh nghĩa là nắng.
+        error_tag: vocab_meaning
+      - answer: ゆき
+        feedback_vi: ゆき là tuyết.
+        error_tag: vocab_meaning
+    explanation:
+      vi: はれ là trời nắng, bầu trời quang.
+    display_answer: あしたははれです。そらがあおいです。
+  - key: ja:exercise:weather-kaze-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-kaze-wind
+    prompt:
+      template: きょうは{{b1}}がつよいです。 (Hôm nay gió mạnh.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - かぜ
+          - 風
+    known_wrong:
+      - answer: ゆき
+        feedback_vi: ゆき là tuyết; "mạnh" nói về gió.
+        error_tag: vocab_meaning
+    explanation:
+      vi: かぜ (風) là gió. Cẩn thận - かぜ còn nghĩa cảm (風邪).
+    display_answer: きょうはかぜがつよいです。
+  - key: ja:exercise:weather-tenki-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-tenki-ga-ii
+    prompt:
+      source_text: Ngày mai thời tiết đẹp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - あしたはてんきがいいです。
+        - 明日は天気がいいです。
+        - あしたはいいてんきです。
+        - 明日はいい天気です。
+    known_wrong:
+      - answer: あしたはてんきがわるいです。
+        feedback_vi: わるい là xấu - ngược nghĩa với いい.
+        error_tag: meaning
+    explanation:
+      vi: てんきが いい - thời tiết tốt; có thể nói いいてんき.
+    display_answer: あしたはてんきがいいです。
+  - key: ja:exercise:weather-yuki-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u14-yuki
+    prompt:
+      source_text: ふゆはさむくて、ゆきがふります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Mùa đông lạnh và có tuyết rơi.
+        - Mùa đông trời lạnh, tuyết rơi.
+        - Mùa đông lạnh và tuyết rơi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Mùa hè nóng và có tuyết rơi.
+        feedback_vi: ふゆ là mùa đông, さむい là lạnh.
+        error_tag: season
+    explanation:
+      vi: さむくて nối hai ý (lạnh và...); ゆきがふります - tuyết rơi.
+    display_answer: Mùa đông lạnh và có tuyết rơi.
+  - key: ja:exercise:weather-ame-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-furimasu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Ngày mai nhiều mây, và buổi chiều trời mưa."'
+      tokens:
+        - id: t2
+          text: くもりで、
+        - id: t4
+          text: あめがふります。
+        - id: t3
+          text: ごごから
+        - id: t1
+          text: あしたは
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Chủ đề → くもりで (nối) → ごごから (từ buổi chiều) → あめが ふります.
+    display_answer: あしたはくもりで、ごごからあめがふります。
+  - key: ja:exercise:weather-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-tenki-ga-ii
+    prompt:
+      stem: Bạn muốn hỏi “Thời tiết ngày mai thế nào?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: jj7
+          text: あしたはいくらですか。
+          lang: ja
+        - id: pan
+          text: あしたはだれですか。
+          lang: ja
+        - id: dm9
+          text: あしたはどんなてんきですか。
+          lang: ja
+        - id: v74
+          text: あしたはなんじですか。
+          lang: ja
+    answer:
+      correct_option_id: dm9
+    explanation:
+      vi: どんな + てんき hỏi tình trạng thời tiết. だれ hỏi ai, いくら hỏi giá, なんじ hỏi giờ.
+    display_answer: あしたはどんなてんきですか。

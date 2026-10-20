@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:colors
+order_index: 4
+level: n5
+title:
+  vi: Màu sắc - あか・あお・しろ・くろ
+objectives:
+  - vi: "Gọi tên các màu: あかい, あおい, しろい, くろい, きいろい, ちゃいろ, みどり, ピンク, オレンジ."
+  - vi: Hỏi và trả lời màu sắc bằng なにいろ và すきないろ.
+  - vi: Dùng màu trước danh từ - あかいくるま, くろいかばん.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:animals
+items:
+  - item: ja:item:n5-u14-iro
+  - item: ja:item:n5-u14-akai
+  - item: ja:item:n5-u14-aoi
+  - item: ja:item:n5-u14-shiroi
+  - item: ja:item:n5-u14-kuroi
+  - item: ja:item:n5-u14-kiiroi
+  - item: ja:item:n5-u14-chairo
+  - item: ja:item:n5-u14-midori
+  - item: ja:item:n5-u14-pinku
+  - item: ja:item:n5-u14-orenji
+  - item: ja:item:n5-u14-nani-iro
+  - item: ja:item:n5-u11-me
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được màu sắc - あかいくるま, しろいシャツ - và hỏi なにいろですか。
+  - type: explain
+    text:
+      vi: Màu có đuôi い là tính từ い - あかい (đỏ), あおい (xanh dương), しろい (trắng), くろい (đen), きいろい (vàng). Đứng trước danh từ giữ nguyên - あかいくるま (xe màu đỏ).
+  - type: explain
+    text:
+      vi: Màu không có い là danh từ - ちゃいろ (nâu), みどり (xanh lá), ピンク (hồng), オレンジ (cam). Nối với danh từ bằng の - ちゃいろのくつ (giày màu nâu), ピンクのシャツ (áo màu hồng).
+  - type: explain
+    text:
+      vi: Hỏi màu - なにいろですか (màu gì?) hoặc すきないろはなんですか (màu bạn thích là gì?). Trả lời - あかです / あかがすきです. Nhớ đèn xanh giao thông gọi là あおしんごう, dù màu thật là xanh lá.
+  - type: deep_explain
+    text:
+      vi: Tiếng Nhật xưa có ít từ chỉ màu nên あお bao gồm cả xanh dương lẫn xanh lá. Vì vậy あおしんごう (đèn xanh), あおいそら (bầu trời xanh), あおいりんご (táo xanh). みどり (緑) dùng cho cây cỏ. Chữ Hán - 色, 赤い, 青い, 白い, 黒い, 黄色い, 茶色, 緑.
+  - type: example
+    target: あかいくるまとしろいくるまがあります。
+    target_lang: ja
+    translation:
+      vi: Có xe màu đỏ và xe màu trắng.
+    note:
+      vi: あかい + N - tính từ い trước danh từ.
+  - type: example
+    target: ちゃいろのくつをかいます。
+    target_lang: ja
+    translation:
+      vi: Tôi mua đôi giày màu nâu.
+    note:
+      vi: ちゃいろ + の + N - màu danh từ cần の.
+  - type: example
+    target: すきないろはなんですか。- あおです。
+    target_lang: ja
+    translation:
+      vi: Màu bạn thích là gì? - Màu xanh.
+    note:
+      vi: すきな + N - N yêu thích.
+  - type: example
+    target: このかばんはなにいろですか。- くろです。
+    target_lang: ja
+    translation:
+      vi: Cái cặp này màu gì? - Màu đen.
+    note:
+      vi: なにいろ - màu gì.
+  - type: common_mistake
+    wrong: ちゃいろいくつをかいます。
+    right: ちゃいろのくつをかいます。
+    target_lang: ja
+    note:
+      vi: ちゃいろ là danh từ nên nối với の; không thêm い.
+  - type: common_mistake
+    wrong: くろいのかばんをもっています。
+    right: くろいかばんをもっています。
+    target_lang: ja
+    note:
+      vi: "Không thêm の giữa tính từ い và danh từ: くろい + かばん."
+  - type: summary
+    points:
+      - vi: あかい đỏ · あおい xanh dương · しろい trắng · くろい đen · きいろい vàng.
+      - vi: ちゃいろ nâu · みどり xanh lá · ピンク hồng · オレンジ cam - nối bằng の.
+      - vi: なにいろですか · すきないろは なんですか.
+      - vi: あお gồm cả xanh dương lẫn xanh lá.
+exercises:
+  - key: ja:exercise:colors-aka
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-akai
+    prompt:
+      stem: Màu của quả táo chín là gì?
+      stem_lang: vi
+      options:
+        - id: z8q
+          text: しろい
+          lang: ja
+        - id: fa2
+          text: あかい
+          lang: ja
+        - id: eq6
+          text: くろい
+          lang: ja
+        - id: ay7
+          text: きいろい
+          lang: ja
+    answer:
+      correct_option_id: fa2
+    explanation:
+      vi: あかい là màu đỏ - màu táo chín. しろい là trắng, くろい là đen, きいろい là vàng.
+    display_answer: あかい
+  - key: ja:exercise:colors-chairo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-chairo
+    prompt:
+      stem: Từ nào có nghĩa là “màu nâu”?
+      stem_lang: vi
+      options:
+        - id: wzp
+          text: ちゃいろ
+          lang: ja
+        - id: ac6
+          text: オレンジ
+          lang: ja
+        - id: w2o
+          text: みどり
+          lang: ja
+        - id: pg3
+          text: ピンク
+          lang: ja
+    answer:
+      correct_option_id: wzp
+    explanation:
+      vi: ちゃいろ là màu nâu (màu của trà - ちゃ). みどり là xanh lá, ピンク là hồng, オレンジ là cam.
+    display_answer: ちゃいろ
+  - key: ja:exercise:colors-iro
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u14-iro
+    prompt:
+      audio_asset_id: null
+      fallback_text: すきないろはあおです。くろいかばんをもっています。
+      options:
+        - id: r69
+          text: Màu tôi thích là xanh. Tôi có chiếc cặp đen.
+          lang: vi
+        - id: yjf
+          text: Màu tôi thích là xanh. Tôi có chiếc cặp nâu.
+          lang: vi
+        - id: q9o
+          text: Màu tôi thích là đen. Tôi có chiếc cặp xanh.
+          lang: vi
+        - id: dxj
+          text: Màu tôi thích là đỏ. Tôi có chiếc cặp trắng.
+          lang: vi
+    answer:
+      correct_option_id: r69
+    explanation:
+      vi: あお là xanh dương; くろい là đen; すきないろ - màu yêu thích.
+    display_answer: Màu tôi thích là xanh. Tôi có chiếc cặp đen.
+  - key: ja:exercise:colors-shiroi-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-shiroi
+    prompt:
+      template: "{{b1}}シャツをきます。 (Tôi mặc áo sơ mi trắng.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Màu của tuyết và sữa.
+        - Bắt đầu bằng し - しろい.
+    answer:
+      blanks:
+        b1:
+          - しろい
+          - 白い
+    known_wrong:
+      - answer: しろ
+        feedback_vi: Trước danh từ trực tiếp cần しろい; しろ phải nối bằng の (しろのシャツ).
+        error_tag: conjugation
+      - answer: くろい
+        feedback_vi: くろい là đen.
+        error_tag: color
+    explanation:
+      vi: しろい là tính từ い "trắng"; đứng thẳng trước danh từ シャツ.
+    display_answer: しろいシャツをきます。
+  - key: ja:exercise:colors-nani-iro
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-nani-iro
+    prompt:
+      stem: Bạn muốn hỏi “Cái cặp này màu gì?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: s4h
+          text: このかばんはどこいろですか。
+          lang: ja
+        - id: bod
+          text: このかばんはだれいろですか。
+          lang: ja
+        - id: l1o
+          text: このかばんはなにいくらですか。
+          lang: ja
+        - id: j26
+          text: このかばんはなにいろですか。
+          lang: ja
+    answer:
+      correct_option_id: j26
+    explanation:
+      vi: なにいろ hỏi màu. Các dạng khác không có nghĩa trong tiếng Nhật.
+    display_answer: このかばんはなにいろですか。
+  - key: ja:exercise:colors-midori-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-midori
+    prompt:
+      template: きのはは{{b1}}です。 (Lá cây màu xanh lá.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - みどり
+          - 緑
+    known_wrong:
+      - answer: あお
+        feedback_vi: あお thường là xanh dương; lá cây là みどり.
+        error_tag: color
+    explanation:
+      vi: みどり là xanh lá, màu của cây cỏ.
+    display_answer: きのはははみどりです。
+  - key: ja:exercise:colors-kuroi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-kuroi
+    prompt:
+      template: "{{b1}}かばんをもっています。 (Tôi có chiếc cặp màu đen.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - くろい
+          - 黒い
+    known_wrong:
+      - answer: しろい
+        feedback_vi: しろい là trắng.
+        error_tag: color
+      - answer: くろ
+        feedback_vi: Trước danh từ cần くろい (tính từ い).
+        error_tag: conjugation
+    explanation:
+      vi: くろい là đen. もっています - có, đang cầm.
+    display_answer: くろいかばんをもっています。
+  - key: ja:exercise:colors-iro-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-iro
+    prompt:
+      source_text: Màu bạn thích là gì?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - すきないろはなんですか。
+        - 好きな色は何ですか。
+        - すきないろはなにですか。
+        - すきないろはなにいろですか。
+    known_wrong:
+      - answer: すきないろはいくらですか。
+        feedback_vi: いくら hỏi giá tiền, không hỏi màu.
+        error_tag: question_word
+    explanation:
+      vi: すきな + いろ - màu thích; なんですか - là gì.
+    display_answer: すきないろはなんですか。
+  - key: ja:exercise:colors-kuruma-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u14-akai
+    prompt:
+      source_text: あかいくるまとしろいくるまがあります。あかいくるまはわたしのです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Có xe màu đỏ và xe màu trắng. Xe màu đỏ là của tôi.
+        - Có một chiếc xe đỏ và một chiếc xe trắng. Xe đỏ là của tôi.
+        - Có xe đỏ và xe trắng. Chiếc xe đỏ là xe của tôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Có xe màu đỏ và xe màu trắng. Xe màu trắng là của tôi.
+        feedback_vi: あかい là đỏ; xe của tôi là xe đỏ.
+        error_tag: color
+    explanation:
+      vi: あかい / しろい trước くるま bổ nghĩa; わたしのです - là của tôi (の thay danh từ).
+    display_answer: Có xe màu đỏ và xe màu trắng. Xe màu đỏ là của tôi.
+  - key: ja:exercise:colors-shirt-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-shiroi
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Cái cặp màu đen là của tôi."'
+      tokens:
+        - id: t4
+          text: です。
+        - id: t2
+          text: かばんは
+        - id: t3
+          text: わたしの
+        - id: t1
+          text: くろい
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Màu (くろい) bổ nghĩa danh từ → chủ đề (かばんは) → わたしの (của tôi) → です.
+    display_answer: くろいかばんはわたしのです。
+  - key: ja:exercise:colors-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-pinku
+    prompt:
+      stem: Bạn muốn nói “Hoa anh đào màu hồng”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: jy3
+          text: さくらをピンクです。
+          lang: ja
+        - id: fmk
+          text: さくらはピンクにです。
+          lang: ja
+        - id: gqr
+          text: さくらはピンクいです。
+          lang: ja
+        - id: a6t
+          text: さくらはピンクです。
+          lang: ja
+    answer:
+      correct_option_id: a6t
+    explanation:
+      vi: ピンク là danh từ vay mượn, đi với です trực tiếp. Không thêm い (ピンクい), を hay に.
+    display_answer: さくらはピンクです。

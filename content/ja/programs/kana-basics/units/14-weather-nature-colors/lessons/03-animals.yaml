@@ -1,0 +1,384 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:animals
+order_index: 3
+level: n5
+title:
+  vi: Động vật - いぬ・とり・どうぶつえん
+objectives:
+  - vi: "Gọi tên các con vật: いぬ, ねこ, とり, うま, うし, ぶた, さる, くま, ぞう."
+  - vi: Nói về thú cưng và sở thú bằng ペット, かいます, どうぶつえん.
+  - vi: Phân biệt かいます (nuôi) và かいます (mua).
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:seasons-nature
+items:
+  - item: ja:item:n5-u14-tori
+  - item: ja:item:n5-u14-uma
+  - item: ja:item:n5-u14-ushi
+  - item: ja:item:n5-u14-buta
+  - item: ja:item:n5-u14-mushi
+  - item: ja:item:n5-u14-zou
+  - item: ja:item:n5-u14-saru
+  - item: ja:item:n5-u14-kuma
+  - item: ja:item:n5-u14-doubutsu
+  - item: ja:item:n5-u14-doubutsuen
+  - item: ja:item:n5-u14-pet
+  - item: ja:item:n5-u14-kaimasu-pet
+  - item: ja:item:inu
+    role: reuse
+  - item: ja:item:neko
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về các con vật và thú cưng - うちにねこがいます。どうぶつえんでぞうをみます。
+  - type: explain
+    text:
+      vi: "Con vật: いぬ (chó), ねこ (mèo), とり (chim), うま (ngựa), うし (bò), ぶた (lợn), さる (khỉ), くま (gấu), ぞう (voi), むし (côn trùng). どうぶつ là động vật nói chung, どうぶつえん là sở thú."
+  - type: explain
+    text:
+      vi: Con vật dùng います (không dùng あります) - うちにねこがいます. Thú cưng là ペット; nuôi là かいます (飼います) - ねこをかいます (nuôi mèo). Số lượng đếm bằng ひき (一匹, hai con - にひき).
+  - type: explain
+    text:
+      vi: Chú ý かいます có hai nghĩa - 買います (mua) và 飼います (nuôi). Người Việt hay bối rối vì cùng cách đọc; câu ねこをかいます nghĩa là "nuôi mèo" do ngữ cảnh con vật.
+  - type: deep_explain
+    text:
+      vi: Thịt các con vật có từ riêng - ぶたにく (thịt lợn), ぎゅうにく (thịt bò), とりにく (thịt gà). ぞう là con voi và còn xuất hiện trong câu quen thuộc ぞうははながながいです. ペット đếm bằng ひき; chim và côn trùng nhỏ cũng đếm ひき hoặc わ. Chữ Hán - 鳥, 馬, 牛, 豚, 虫, 象, 猿, 熊, 動物, 動物園, 飼います.
+  - type: example
+    target: うちにいぬとねこがいます。
+    target_lang: ja
+    translation:
+      vi: Nhà tôi có chó và mèo.
+    note:
+      vi: います - có (con vật).
+  - type: example
+    target: ぞうははながながいです。
+    target_lang: ja
+    translation:
+      vi: Con voi mũi dài.
+    note:
+      vi: N は N が A.
+  - type: example
+    target: にちようびにどうぶつえんへいきます。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tôi đi sở thú.
+    note:
+      vi: どうぶつえん - sở thú.
+  - type: example
+    target: ねこをかいたいです。
+    target_lang: ja
+    translation:
+      vi: Tôi muốn nuôi mèo.
+    note:
+      vi: "かいたい - muốn nuôi (たい: muốn)."
+  - type: common_mistake
+    wrong: うちにねこがあります。
+    right: うちにねこがいます。
+    target_lang: ja
+    note:
+      vi: Con vật dùng います, không dùng あります.
+  - type: common_mistake
+    wrong: ねこをいます。
+    right: ねこをかいます。
+    target_lang: ja
+    note:
+      vi: います (có, ở) không đi với を. Nuôi mèo là ねこをかいます (飼います).
+  - type: summary
+    points:
+      - vi: いぬ chó · ねこ mèo · とり chim · うま ngựa · うし bò · ぶた lợn · さる khỉ · くま gấu · ぞう voi · むし côn trùng.
+      - vi: どうぶつ động vật · どうぶつえん sở thú · ペット thú cưng.
+      - vi: ペットを かいます - nuôi thú cưng (飼います) ≠ かいます - mua (買います).
+      - vi: Con vật - います; vật vô tri - あります.
+exercises:
+  - key: ja:exercise:animals-zou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-zou
+    prompt:
+      stem: Con vật mũi dài là con nào?
+      stem_lang: vi
+      options:
+        - id: pqm
+          text: ぞう
+          lang: ja
+        - id: eqn
+          text: うま
+          lang: ja
+        - id: dn0
+          text: さる
+          lang: ja
+        - id: ohc
+          text: くま
+          lang: ja
+    answer:
+      correct_option_id: pqm
+    explanation:
+      vi: ぞう là con voi, nổi tiếng với cái mũi dài. さる là khỉ, くま là gấu, うま là ngựa.
+    display_answer: ぞう
+  - key: ja:exercise:animals-tori
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-tori
+    prompt:
+      stem: Từ nào có nghĩa là “con chim”?
+      stem_lang: vi
+      options:
+        - id: fmw
+          text: ぶた
+          lang: ja
+        - id: q1s
+          text: うし
+          lang: ja
+        - id: xoa
+          text: むし
+          lang: ja
+        - id: iya
+          text: とり
+          lang: ja
+    answer:
+      correct_option_id: iya
+    explanation:
+      vi: とり là chim. うし là bò, ぶた là lợn, むし là côn trùng.
+    display_answer: とり
+  - key: ja:exercise:animals-pet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u14-pet
+    prompt:
+      audio_asset_id: null
+      fallback_text: うちにいぬとねこがいます。ペットがすきです。
+      options:
+        - id: gi4
+          text: Nhà tôi có chim và bò. Tôi thích động vật.
+          lang: vi
+        - id: lzy
+          text: Nhà tôi có chó và mèo. Tôi thích thú cưng.
+          lang: vi
+        - id: t1w
+          text: Nhà tôi có mèo và khỉ. Tôi ghét thú cưng.
+          lang: vi
+        - id: zf6
+          text: Nhà tôi có chó và lợn. Tôi muốn nuôi thú cưng.
+          lang: vi
+    answer:
+      correct_option_id: lzy
+    explanation:
+      vi: いぬ - chó; ねこ - mèo; います - có (con vật); ペット - thú cưng; すき - thích.
+    display_answer: Nhà tôi có chó và mèo. Tôi thích thú cưng.
+  - key: ja:exercise:animals-doubutsu-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-doubutsuen
+    prompt:
+      template: にちようびに{{b1}}へいきます。 (Chủ nhật tôi đi sở thú.)
+      blanks:
+        - id: b1
+          width_hint: 7
+      hint_levels:
+        - Nơi có nhiều con vật để tham quan.
+        - Bắt đầu bằng ど - どうぶつえん.
+    answer:
+      blanks:
+        b1:
+          - どうぶつえん
+          - 動物園
+    known_wrong:
+      - answer: どうぶつ
+        feedback_vi: どうぶつ là động vật; nơi đi tham quan là どうぶつえん.
+        error_tag: vocab_meaning
+    explanation:
+      vi: どうぶつえん (動物園) là sở thú; ～へ いきます - đi đến.
+    display_answer: にちようびにどうぶつえんへいきます。
+  - key: ja:exercise:animals-imasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u14-doubutsu
+    prompt:
+      stem: Chọn câu đúng - うちにねこが ___。
+      stem_lang: vi
+      options:
+        - id: fix
+          text: いきます
+          lang: ja
+        - id: tlk
+          text: います
+          lang: ja
+        - id: dhp
+          text: あります
+          lang: ja
+        - id: o5v
+          text: ありません
+          lang: ja
+    answer:
+      correct_option_id: tlk
+    explanation:
+      vi: Con mèo là con vật nên dùng います. あります dành cho vật vô tri, ありません là không có, いきます là đi.
+    display_answer: います
+  - key: ja:exercise:animals-kai-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-kaimasu-pet
+    prompt:
+      template: いぬを{{b1}}たいです。 (Tôi muốn nuôi chó.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - かい
+          - 飼い
+    known_wrong:
+      - answer: かう
+        feedback_vi: "Trước たい dùng ます bỏ ます: かい, không dùng かう."
+        error_tag: conjugation
+      - answer: います
+        feedback_vi: います là có/ở; nuôi là かい.
+        error_tag: verb_choice
+    explanation:
+      vi: かいたいです - muốn nuôi. Gốc của かいます (飼います) là かい; たい nghĩa là muốn.
+    display_answer: いぬをかいたいです。
+  - key: ja:exercise:animals-saru-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-saru
+    prompt:
+      template: どうぶつえんで{{b1}}をみます。きにのぼります。 (Ở sở thú tôi xem con khỉ. Nó trèo cây.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - さる
+          - 猿
+    known_wrong:
+      - answer: くま
+        feedback_vi: くま là gấu, thường không trèo cây theo cách trong câu.
+        error_tag: vocab_meaning
+    explanation:
+      vi: さる là khỉ. きにのぼります - trèo cây.
+    display_answer: どうぶつえんでさるをみます。きにのぼります。
+  - key: ja:exercise:animals-pet-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-pet
+    prompt:
+      source_text: Nhà tôi có chó và mèo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - うちにいぬとねこがいます。
+        - 家に犬と猫がいます。
+        - わたしのうちにいぬとねこがいます。
+        - うちにはいぬとねこがいます。
+    known_wrong:
+      - answer: うちにいぬとねこがあります。
+        feedback_vi: Con vật dùng います, không dùng あります.
+        error_tag: arimasu_imasu
+    explanation:
+      vi: うちに ... がいます - nhà có (con vật); と nối hai con vật.
+    display_answer: うちにいぬとねこがいます。
+  - key: ja:exercise:animals-kuma-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u14-kuma
+    prompt:
+      source_text: やまにくまがいますから、ひとりでいきません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trên núi có gấu nên tôi không đi một mình.
+        - Vì trên núi có gấu nên tôi không đi một mình.
+        - Trên núi có gấu, nên tôi sẽ không đi một mình.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trên núi có gấu nên tôi đi một mình.
+        feedback_vi: いきません là không đi.
+        error_tag: negation
+    explanation:
+      vi: くま - gấu; から nêu lý do; ひとりで - một mình; いきません - không đi.
+    display_answer: Trên núi có gấu nên tôi không đi một mình.
+  - key: ja:exercise:animals-inu-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-pet
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Nhà tôi có chó và mèo."'
+      tokens:
+        - id: t4
+          text: います。
+        - id: t1
+          text: うちに
+        - id: t3
+          text: ねこが
+        - id: t2
+          text: いぬと
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Nơi chốn に → vật 1 と → vật 2 が → います (con vật).
+    display_answer: うちにいぬとねこがいます。
+  - key: ja:exercise:animals-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u14-kaimasu-pet
+    prompt:
+      stem: Bạn muốn nói “Tôi muốn nuôi mèo”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: xpl
+          text: ねこがかいたいです。
+          lang: ja
+        - id: uhn
+          text: ねこをかうたいです。
+          lang: ja
+        - id: are
+          text: ねこをいます。
+          lang: ja
+        - id: st0
+          text: ねこをかいたいです。
+          lang: ja
+    answer:
+      correct_option_id: st0
+    explanation:
+      vi: "かい + たい: muốn nuôi, đối tượng đi với を. かうたい là dạng sai (たい gắn vào ます bỏ ます); います không có nghĩa nuôi."
+    display_answer: ねこをかいたいです。

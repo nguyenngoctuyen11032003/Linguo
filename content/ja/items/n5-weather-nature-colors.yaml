@@ -1,0 +1,875 @@
+# Học liệu unit "Thời tiết, bốn mùa, thiên nhiên, động vật và màu sắc" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u14-tenki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 天気
+      reading: てんき
+      romanization: tenki
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời tiết
+      examples:
+        - target: きょうはいいてんきです。
+          translation:
+            vi: Hôm nay thời tiết đẹp.
+  - key: ja:item:n5-u14-hare
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 晴れ
+      reading: はれ
+      romanization: hare
+      pos: danh từ
+    back:
+      meaning:
+        vi: trời nắng, quang đãng
+      examples:
+        - target: あしたははれです。
+          translation:
+            vi: Ngày mai trời nắng.
+  - key: ja:item:n5-u14-kumori
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 曇り
+      reading: くもり
+      romanization: kumori
+      pos: danh từ
+    back:
+      meaning:
+        vi: trời nhiều mây, âm u
+      examples:
+        - target: きょうはくもりです。
+          translation:
+            vi: Hôm nay trời nhiều mây.
+  - key: ja:item:n5-u14-yuki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 雪
+      reading: ゆき
+      romanization: yuki
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuyết
+      examples:
+        - target: ふゆはゆきがふります。
+          translation:
+            vi: Mùa đông tuyết rơi.
+  - key: ja:item:n5-u14-kaze-wind
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 風
+      reading: かぜ
+      romanization: kaze
+      pos: danh từ
+    back:
+      meaning:
+        vi: gió
+      examples:
+        - target: きょうはかぜがつよいです。
+          translation:
+            vi: Hôm nay gió mạnh.
+      confusion:
+        vi: かぜ (風, gió) và かぜ (風邪, cảm) đọc giống nhau; かぜをひく là cảm, かぜがふく là gió thổi.
+  - key: ja:item:n5-u14-sora
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 空
+      reading: そら
+      romanization: sora
+      pos: danh từ
+    back:
+      meaning:
+        vi: bầu trời
+      examples:
+        - target: そらがあおいです。
+          translation:
+            vi: Bầu trời xanh.
+  - key: ja:item:n5-u14-kumo-cloud
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 雲
+      reading: くも
+      romanization: kumo
+      pos: danh từ
+    back:
+      meaning:
+        vi: mây
+      examples:
+        - target: そらにしろいくもがあります。
+          translation:
+            vi: Trên trời có đám mây trắng.
+      confusion:
+        vi: くも (雲, mây) còn là くも (蜘蛛, nhện); ngữ cảnh luôn cho biết.
+  - key: ja:item:n5-u14-atatakai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 暖かい
+      reading: あたたかい
+      romanization: atatakai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: ấm áp (thời tiết)
+      examples:
+        - target: はるはあたたかいです。
+          translation:
+            vi: Mùa xuân ấm áp.
+      pronunciation_note:
+        vi: Cũng viết 温かい cho đồ vật (ấm), 暖かい cho thời tiết.
+  - key: ja:item:n5-u14-tsumetai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 冷たい
+      reading: つめたい
+      romanization: tsumetai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: lạnh, mát (đồ vật, nước)
+      examples:
+        - target: つめたいみずをのみます。
+          translation:
+            vi: Tôi uống nước lạnh.
+      confusion:
+        vi: さむい là lạnh (thời tiết, cảm giác của cơ thể); つめたい là lạnh khi chạm vào hoặc đồ ăn uống.
+  - key: ja:item:n5-u14-furimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 降ります
+      reading: ふります
+      romanization: furimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: rơi (mưa, tuyết)
+      examples:
+        - target: あしたはあめがふります。
+          translation:
+            vi: Ngày mai trời mưa.
+      confusion:
+        vi: ふります (降ります, mưa rơi) và おります (降ります, xuống xe) viết cùng chữ 降; cách đọc theo ngữ cảnh.
+  - key: ja:item:n5-u14-warui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 悪い
+      reading: わるい
+      romanization: warui
+      pos: tính từ い
+    back:
+      meaning:
+        vi: xấu, tồi
+      examples:
+        - target: きょうはてんきがわるいです。
+          translation:
+            vi: Hôm nay thời tiết xấu.
+  - key: ja:item:n5-u14-tenki-ga-ii
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 天気がいい
+      reading: てんきがいい
+      romanization: tenki ga ii
+      pos: cụm từ
+    back:
+      meaning:
+        vi: thời tiết đẹp (nghĩa đen "thời tiết tốt")
+      examples:
+        - target: あしたはてんきがいいです。
+          translation:
+            vi: Ngày mai thời tiết đẹp.
+  - key: ja:item:n5-u14-haru
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 春
+      reading: はる
+      romanization: haru
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa xuân
+      examples:
+        - target: はるはあたたかいです。
+          translation:
+            vi: Mùa xuân ấm áp.
+  - key: ja:item:n5-u14-natsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 夏
+      reading: なつ
+      romanization: natsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa hè
+      examples:
+        - target: なつはあついです。
+          translation:
+            vi: Mùa hè nóng.
+  - key: ja:item:n5-u14-aki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 秋
+      reading: あき
+      romanization: aki
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa thu
+      examples:
+        - target: あきはすずしいです。
+          translation:
+            vi: Mùa thu mát mẻ.
+  - key: ja:item:n5-u14-fuyu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 冬
+      reading: ふゆ
+      romanization: fuyu
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa đông
+      examples:
+        - target: ふゆはさむいです。
+          translation:
+            vi: Mùa đông lạnh.
+  - key: ja:item:n5-u14-sakura
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 桜
+      reading: さくら
+      romanization: sakura
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoa anh đào
+      examples:
+        - target: はるにさくらがさきます。
+          translation:
+            vi: Mùa xuân hoa anh đào nở.
+  - key: ja:item:n5-u14-hanami
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 花見
+      reading: はなみ
+      romanization: hanami
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngắm hoa (anh đào)
+      examples:
+        - target: ともだちとはなみをします。
+          translation:
+            vi: Tôi ngắm hoa anh đào cùng bạn.
+  - key: ja:item:n5-u14-natsuyasumi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 夏休み
+      reading: なつやすみ
+      romanization: natsuyasumi
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ nghỉ hè
+      examples:
+        - target: なつやすみにうみへいきます。
+          translation:
+            vi: Kỳ nghỉ hè tôi đi biển.
+  - key: ja:item:n5-u14-kawa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 川
+      reading: かわ
+      romanization: kawa
+      pos: danh từ
+    back:
+      meaning:
+        vi: sông
+      examples:
+        - target: かわでさかなをつります。
+          translation:
+            vi: Tôi câu cá ở sông.
+      confusion:
+        vi: かわ (川, sông) đọc giống かわ (皮, da/vỏ).
+  - key: ja:item:n5-u14-ki-tree
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 木
+      reading: き
+      romanization: ki
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây
+      examples:
+        - target: きのしたにいぬがいます。
+          translation:
+            vi: Dưới gốc cây có con chó.
+  - key: ja:item:n5-u14-ike
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 池
+      reading: いけ
+      romanization: ike
+      pos: danh từ
+    back:
+      meaning:
+        vi: ao, hồ nhỏ
+      examples:
+        - target: こうえんにいけがあります。
+          translation:
+            vi: Trong công viên có cái ao.
+  - key: ja:item:n5-u14-mizuumi
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 湖
+      reading: みずうみ
+      romanization: mizuumi
+      pos: danh từ
+    back:
+      meaning:
+        vi: hồ (lớn)
+      examples:
+        - target: みずうみはとてもきれいです。
+          translation:
+            vi: Hồ rất đẹp.
+  - key: ja:item:n5-u14-shima
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 島
+      reading: しま
+      romanization: shima
+      pos: danh từ
+    back:
+      meaning:
+        vi: đảo
+      examples:
+        - target: しまへふねでいきます。
+          translation:
+            vi: Tôi ra đảo bằng tàu.
+  - key: ja:item:n5-u14-tori
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 鳥
+      reading: とり
+      romanization: tori
+      pos: danh từ
+    back:
+      meaning:
+        vi: chim
+      examples:
+        - target: にわにとりがいます。
+          translation:
+            vi: Trong vườn có con chim.
+  - key: ja:item:n5-u14-uma
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 馬
+      reading: うま
+      romanization: uma
+      pos: danh từ
+    back:
+      meaning:
+        vi: con ngựa
+      examples:
+        - target: うまにのります。
+          translation:
+            vi: Tôi cưỡi ngựa.
+  - key: ja:item:n5-u14-ushi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 牛
+      reading: うし
+      romanization: ushi
+      pos: danh từ
+    back:
+      meaning:
+        vi: con bò
+      examples:
+        - target: うしがくさをたべます。
+          translation:
+            vi: Con bò ăn cỏ.
+  - key: ja:item:n5-u14-buta
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 豚
+      reading: ぶた
+      romanization: buta
+      pos: danh từ
+    back:
+      meaning:
+        vi: con lợn
+      examples:
+        - target: ぶたはにくになります。
+          translation:
+            vi: Lợn cho thịt.
+      pronunciation_note:
+        vi: Thịt lợn là ぶたにく; thịt bò là ぎゅうにく.
+  - key: ja:item:n5-u14-mushi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 虫
+      reading: むし
+      romanization: mushi
+      pos: danh từ
+    back:
+      meaning:
+        vi: sâu bọ, côn trùng
+      examples:
+        - target: なつはむしがおおいです。
+          translation:
+            vi: Mùa hè có nhiều côn trùng.
+  - key: ja:item:n5-u14-zou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 象
+      reading: ぞう
+      romanization: zou
+      pos: danh từ
+    back:
+      meaning:
+        vi: con voi
+      examples:
+        - target: ぞうははながながいです。
+          translation:
+            vi: Con voi mũi dài.
+  - key: ja:item:n5-u14-saru
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 猿
+      reading: さる
+      romanization: saru
+      pos: danh từ
+    back:
+      meaning:
+        vi: con khỉ
+      examples:
+        - target: さるがきにのぼります。
+          translation:
+            vi: Con khỉ trèo cây.
+  - key: ja:item:n5-u14-kuma
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 熊
+      reading: くま
+      romanization: kuma
+      pos: danh từ
+    back:
+      meaning:
+        vi: con gấu
+      examples:
+        - target: やまにくまがいます。
+          translation:
+            vi: Trên núi có gấu.
+  - key: ja:item:n5-u14-doubutsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 動物
+      reading: どうぶつ
+      romanization: doubutsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: động vật
+      examples:
+        - target: どうぶつがすきです。
+          translation:
+            vi: Tôi thích động vật.
+      pronunciation_note:
+        vi: "どうぶつ có hai trường âm: dou + butsu."
+  - key: ja:item:n5-u14-doubutsuen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 動物園
+      reading: どうぶつえん
+      romanization: doubutsuen
+      pos: danh từ
+    back:
+      meaning:
+        vi: sở thú
+      examples:
+        - target: にちようびにどうぶつえんへいきます。
+          translation:
+            vi: Chủ nhật tôi đi sở thú.
+  - key: ja:item:n5-u14-pet
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ペット
+      romanization: petto
+      pos: danh từ
+    back:
+      meaning:
+        vi: thú cưng
+      examples:
+        - target: うちにペットがいます。
+          translation:
+            vi: Nhà tôi có thú cưng.
+  - key: ja:item:n5-u14-kaimasu-pet
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 飼います
+      reading: かいます
+      romanization: kaimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: nuôi (thú cưng)
+      examples:
+        - target: ねこをかいます。
+          translation:
+            vi: Tôi nuôi mèo.
+      confusion:
+        vi: かいます có hai chữ Hán - 買います (mua) và 飼います (nuôi). Chữ Hán và ngữ cảnh (ねこを かいます) giúp phân biệt.
+  - key: ja:item:n5-u14-iro
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 色
+      reading: いろ
+      romanization: iro
+      pos: danh từ
+    back:
+      meaning:
+        vi: màu sắc
+      examples:
+        - target: すきないろはなんですか。
+          translation:
+            vi: Màu bạn thích là gì?
+  - key: ja:item:n5-u14-akai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 赤い
+      reading: あかい
+      romanization: akai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: đỏ
+      examples:
+        - target: あかいくるまがあります。
+          translation:
+            vi: Có một chiếc xe màu đỏ.
+  - key: ja:item:n5-u14-aoi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 青い
+      reading: あおい
+      romanization: aoi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: xanh (dương)
+      examples:
+        - target: そらはあおいです。
+          translation:
+            vi: Bầu trời xanh.
+  - key: ja:item:n5-u14-shiroi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 白い
+      reading: しろい
+      romanization: shiroi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: trắng
+      examples:
+        - target: しろいシャツをきます。
+          translation:
+            vi: Tôi mặc áo sơ mi trắng.
+  - key: ja:item:n5-u14-kuroi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 黒い
+      reading: くろい
+      romanization: kuroi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: đen
+      examples:
+        - target: くろいかばんをもっています。
+          translation:
+            vi: Tôi có chiếc cặp đen.
+  - key: ja:item:n5-u14-kiiroi
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 黄色い
+      reading: きいろい
+      romanization: kiiroi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: vàng
+      examples:
+        - target: きいろいはながさいています。
+          translation:
+            vi: Hoa vàng đang nở.
+  - key: ja:item:n5-u14-chairo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 茶色
+      reading: ちゃいろ
+      romanization: chairo
+      pos: danh từ
+    back:
+      meaning:
+        vi: màu nâu
+      examples:
+        - target: ちゃいろのくつをかいます。
+          translation:
+            vi: Tôi mua đôi giày màu nâu.
+      pronunciation_note:
+        vi: ちゃ là âm ghép; いろ phía sau.
+  - key: ja:item:n5-u14-midori
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 緑
+      reading: みどり
+      romanization: midori
+      pos: danh từ
+    back:
+      meaning:
+        vi: màu xanh lá, xanh lục
+      examples:
+        - target: きのはははみどりです。
+          translation:
+            vi: Lá cây màu xanh.
+      confusion:
+        vi: みどり (xanh lá) khác あおい (xanh dương). Đèn giao thông "xanh" gọi là あお, không phải みどり.
+  - key: ja:item:n5-u14-pinku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ピンク
+      romanization: pinku
+      pos: danh từ
+    back:
+      meaning:
+        vi: màu hồng
+      examples:
+        - target: さくらはピンクです。
+          translation:
+            vi: Hoa anh đào màu hồng.
+  - key: ja:item:n5-u14-orenji
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: オレンジ
+      romanization: orenji
+      pos: danh từ
+    back:
+      meaning:
+        vi: màu cam; quả cam
+      examples:
+        - target: オレンジのシャツをきます。
+          translation:
+            vi: Tôi mặc áo màu cam.
+  - key: ja:item:n5-u14-nani-iro
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: 何色
+      reading: なにいろ
+      romanization: nani iro
+      pos: cụm từ
+    back:
+      meaning:
+        vi: màu gì?
+      examples:
+        - target: このかばんはなにいろですか。- あかです。
+          translation:
+            vi: Cái cặp này màu gì? - Màu đỏ.
