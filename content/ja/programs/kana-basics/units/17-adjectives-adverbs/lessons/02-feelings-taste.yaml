@@ -1,0 +1,380 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:feelings-taste
+order_index: 2
+level: n5
+title:
+  vi: Cảm xúc và vị giác - うれしい・かなしい・あまい
+objectives:
+  - vi: "Diễn tả cảm xúc: うれしい, かなしい, つまらない, こわい, ねむい."
+  - vi: "Diễn tả vị giác: あまい, にがい, しょっぱい, まずい."
+  - vi: "Khen và chê: かわいい, すごい, きたない."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:opposite-adjectives
+items:
+  - item: ja:item:n5-u17-ureshii
+  - item: ja:item:n5-u17-kanashii
+  - item: ja:item:n5-u17-tsumaranai
+  - item: ja:item:n5-u17-kowai
+  - item: ja:item:n5-u17-nemui
+  - item: ja:item:n5-u17-amai
+  - item: ja:item:n5-u17-nigai
+  - item: ja:item:n5-u17-shoppai
+  - item: ja:item:n5-u17-mazui
+  - item: ja:item:n5-u17-kawaii
+  - item: ja:item:n5-u17-kitanai
+  - item: ja:item:n5-u17-sugoi
+  - item: ja:item:oishii
+    role: reuse
+  - item: ja:item:tanoshii
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn diễn tả được cảm xúc và vị món ăn - プレゼントをもらってうれしいです。このケーキはあまいです。
+  - type: explain
+    text:
+      vi: 'Cảm xúc: うれしい (vui, mừng), かなしい (buồn), たのしい (vui vẻ, đã học), つまらない (chán), こわい (sợ, đáng sợ), ねむい (buồn ngủ). Chủ thể thường là "tôi" nên không cần nói わたしは.'
+  - type: explain
+    text:
+      vi: "Vị giác: あまい (ngọt), にがい (đắng), しょっぱい (mặn), からい (cay), おいしい (ngon), まずい (dở). Nói はっきり まずい nghe thô; lịch sự hơn là あまりおいしくないです."
+  - type: explain
+    text:
+      vi: "Khen chê: かわいい (dễ thương), すごい (tuyệt, ghê), きたない (bẩn) - đối nghĩa với きれい (sạch, đẹp). Nối lý do - ～て (うれしくて, かなしくて) hoặc ～から."
+  - type: deep_explain
+    text:
+      vi: きれい và きたない không cùng loại - きれい là tính từ な (きれいな へや) còn きたない là tính từ い (きたない へや). すごい dùng cả khen lẫn lúc ngạc nhiên - すごい！ (Giỏi quá!). こわい dùng cho đối tượng sợ - いぬが こわい (sợ chó). Chữ Hán - 悲しい, 怖い, 眠い, 甘い, 苦い, 汚い.
+  - type: example
+    target: プレゼントをもらって、うれしいです。
+    target_lang: ja
+    translation:
+      vi: Nhận được quà, tôi vui.
+    note:
+      vi: もらって - thể て nêu lý do.
+  - type: example
+    target: このケーキはあまくて、おいしいです。
+    target_lang: ja
+    translation:
+      vi: Cái bánh này ngọt và ngon.
+    note:
+      vi: あまくて - nối hai tính từ.
+  - type: example
+    target: くすりはにがいですから、きらいです。
+    target_lang: ja
+    translation:
+      vi: Thuốc đắng nên tôi ghét.
+    note:
+      vi: から nêu lý do.
+  - type: example
+    target: このねこはかわいくて、すごいです。
+    target_lang: ja
+    translation:
+      vi: Con mèo này dễ thương và giỏi quá.
+    note:
+      vi: すごい - giỏi, ghê gớm.
+  - type: common_mistake
+    wrong: このへやはきたないなです。
+    right: このへやはきたないです。
+    target_lang: ja
+    note:
+      vi: きたない là tính từ い nên đi thẳng với です, không thêm な.
+  - type: common_mistake
+    wrong: ゆうべおそくねましたから、ねむいでした。
+    right: ゆうべおそくねましたから、ねむかったです。
+    target_lang: ja
+    note:
+      vi: Quá khứ của tính từ い - bỏ い thêm かったです, không dùng いでした.
+  - type: summary
+    points:
+      - vi: うれしい vui · かなしい buồn · つまらない chán · こわい sợ · ねむい buồn ngủ.
+      - vi: あまい ngọt · にがい đắng · しょっぱい mặn · まずい dở.
+      - vi: かわいい dễ thương · すごい tuyệt · きたない bẩn.
+      - vi: Quá khứ - ねむい → ねむかったです.
+exercises:
+  - key: ja:exercise:feelings-taste-ureshii
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-ureshii
+    prompt:
+      stem: Từ nào có nghĩa là “vui, mừng”?
+      stem_lang: vi
+      options:
+        - id: ip7
+          text: かなしい
+          lang: ja
+        - id: kn1
+          text: つまらない
+          lang: ja
+        - id: stl
+          text: うれしい
+          lang: ja
+        - id: jdm
+          text: こわい
+          lang: ja
+    answer:
+      correct_option_id: stl
+    explanation:
+      vi: うれしい là vui mừng. かなしい là buồn, つまらない là chán, こわい là sợ.
+    display_answer: うれしい
+  - key: ja:exercise:feelings-taste-amai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-amai
+    prompt:
+      stem: Bánh kem có vị gì?
+      stem_lang: vi
+      options:
+        - id: a0u
+          text: しょっぱい
+          lang: ja
+        - id: oib
+          text: にがい
+          lang: ja
+        - id: ddu
+          text: まずい
+          lang: ja
+        - id: pwy
+          text: あまい
+          lang: ja
+    answer:
+      correct_option_id: pwy
+    explanation:
+      vi: Bánh kem ngọt nên là あまい. にがい là đắng, しょっぱい là mặn, まずい là dở.
+    display_answer: あまい
+  - key: ja:exercise:feelings-taste-nemui
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u17-nemui
+    prompt:
+      audio_asset_id: null
+      fallback_text: ゆうべおそくねましたから、きょうはねむいです。
+      options:
+        - id: r6a
+          text: Tối qua tôi thức dậy sớm nên hôm nay buồn ngủ.
+          lang: vi
+        - id: k2a
+          text: Hôm nay tôi ngủ muộn nên mai buồn ngủ.
+          lang: vi
+        - id: zg2
+          text: Tối qua tôi ngủ sớm nên hôm nay khoẻ.
+          lang: vi
+        - id: yse
+          text: Tối qua tôi ngủ muộn nên hôm nay buồn ngủ.
+          lang: vi
+    answer:
+      correct_option_id: yse
+    explanation:
+      vi: ゆうべ - tối qua; おそく - muộn; ねむい - buồn ngủ; から - vì.
+    display_answer: Tối qua tôi ngủ muộn nên hôm nay buồn ngủ.
+  - key: ja:exercise:feelings-taste-kowai-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-kowai
+    prompt:
+      template: いぬが{{b1}}です。 (Tôi sợ chó.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Tính từ chỉ cảm giác sợ hãi.
+        - Bắt đầu bằng こ - こわい.
+    answer:
+      blanks:
+        b1:
+          - こわい
+          - 怖い
+    known_wrong:
+      - answer: かわいい
+        feedback_vi: かわいい là dễ thương, ngược với sợ.
+        error_tag: adj_choice
+    explanation:
+      vi: こわい là sợ; いぬが こわい - sợ chó.
+    display_answer: いぬがこわいです。
+  - key: ja:exercise:feelings-taste-kitanai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-kitanai
+    prompt:
+      stem: Phòng của bạn không dọn. Tính từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: v7f
+          text: きたない
+          lang: ja
+        - id: hk2
+          text: あかるい
+          lang: ja
+        - id: dw6
+          text: ひろい
+          lang: ja
+        - id: dal
+          text: きれい
+          lang: ja
+    answer:
+      correct_option_id: v7f
+    explanation:
+      vi: きたない là bẩn, dơ. きれい là sạch, ひろい là rộng, あかるい là sáng.
+    display_answer: きたない
+  - key: ja:exercise:feelings-taste-nigai-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-nigai
+    prompt:
+      template: くすりは{{b1}}です。 (Thuốc đắng.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - にがい
+          - 苦い
+    known_wrong:
+      - answer: あまい
+        feedback_vi: あまい là ngọt; thuốc thường đắng.
+        error_tag: taste
+    explanation:
+      vi: にがい là đắng.
+    display_answer: くすりはにがいです。
+  - key: ja:exercise:feelings-taste-mazui-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-mazui
+    prompt:
+      template: このラーメンは{{b1}}です。たべません。 (Món mì này dở. Tôi không ăn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - まずい
+    known_wrong:
+      - answer: おいしい
+        feedback_vi: おいしい là ngon; câu nói không ăn nên là dở.
+        error_tag: adj_choice
+    explanation:
+      vi: まずい là dở, không ngon.
+    display_answer: このラーメンはまずいです。たべません。
+  - key: ja:exercise:feelings-taste-ureshii-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-ureshii
+    prompt:
+      source_text: Nhận được quà, tôi vui.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - プレゼントをもらって、うれしいです。
+        - プレゼントをもらってうれしいです。
+        - プレゼントをもらって、うれしかったです。
+        - プレゼントをもらって、うれしい。
+    known_wrong:
+      - answer: プレゼントをもらって、かなしいです。
+        feedback_vi: かなしい là buồn.
+        error_tag: adj_choice
+    explanation:
+      vi: もらって (thể て) nêu lý do; うれしい - vui.
+    display_answer: プレゼントをもらって、うれしいです。
+  - key: ja:exercise:feelings-taste-kawaii-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u17-kawaii
+    prompt:
+      source_text: このねこはかわいくて、すごくおおきいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Con mèo này dễ thương và rất to.
+        - Con mèo này dễ thương, lại rất to.
+        - Con mèo này đáng yêu và to lắm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Con mèo này dễ sợ và rất nhỏ.
+        feedback_vi: かわいい là dễ thương; おおきい là to.
+        error_tag: adj_choice
+    explanation:
+      vi: かわいくて - dễ thương và; すごく là trạng từ của すごい - rất, cực kỳ.
+    display_answer: Con mèo này dễ thương và rất to.
+  - key: ja:exercise:feelings-taste-kowai-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-kowai
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi sợ chó nên không đi công viên."'
+      tokens:
+        - id: t4
+          text: いきません。
+        - id: t1
+          text: いぬが
+        - id: t3
+          text: こうえんへ
+        - id: t2
+          text: こわいですから、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Lý do (いぬが こわいですから) → nơi chốn (こうえんへ) → いきません.
+    display_answer: いぬがこわいですから、こうえんへいきません。
+  - key: ja:exercise:feelings-taste-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-tsumaranai
+    prompt:
+      stem: Bạn xem một bộ phim nhàm chán. Bạn nói gì?
+      stem_lang: vi
+      options:
+        - id: y1p
+          text: このえいがはあまいです。
+          lang: ja
+        - id: l2x
+          text: このえいがはうれしいです。
+          lang: ja
+        - id: j93
+          text: このえいがはつまらないです。
+          lang: ja
+        - id: gos
+          text: このえいがはこわくないです。
+          lang: ja
+    answer:
+      correct_option_id: j93
+    explanation:
+      vi: つまらない là chán, nhàm. うれしい là vui, あまい là ngọt, こわくない là "không đáng sợ" - không đúng nghĩa.
+    display_answer: このえいがはつまらないです。

@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:adverbs-connectors
+order_index: 4
+level: n5
+title:
+  vi: Trạng từ và từ nối - とても・もう・まだ・でも
+objectives:
+  - vi: "Dùng trạng từ mức độ và số lượng: とても, すこし, たくさん, いちばん, もっと."
+  - vi: Dùng もう, まだ, すぐ, ゆっくり để nói thời điểm và tốc độ.
+  - vi: Nối câu bằng そして, それから, でも, だから.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:na-adjectives-more
+items:
+  - item: ja:item:n5-u17-totemo
+  - item: ja:item:n5-u17-sukoshi
+  - item: ja:item:n5-u17-takusan
+  - item: ja:item:n5-u17-mou
+  - item: ja:item:n5-u17-mada
+  - item: ja:item:n5-u17-sugu
+  - item: ja:item:n5-u17-yukkuri
+  - item: ja:item:n5-u17-ichiban
+  - item: ja:item:n5-u17-motto
+  - item: ja:item:n5-u17-soshite
+  - item: ja:item:n5-u17-sorekara
+  - item: ja:item:n5-u17-demo
+  - item: ja:item:n5-u17-dakara
+  - item: ja:item:n5-u17-mou-mada
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nối câu mượt hơn - やすいです。でも、おいしくないです。だから、かいません。- và nói đã làm hay chưa làm.
+  - type: explain
+    text:
+      vi: Trạng từ mức độ - とても (rất), すこし (một chút), たくさん (nhiều), いちばん (nhất), もっと (hơn nữa). Chúng đứng ngay trước tính từ hay động từ - とてもおいしいです, すこしあります, もっとたべます.
+  - type: explain
+    text:
+      vi: Thời điểm và tốc độ - すぐ (ngay), ゆっくり (từ từ), もう (đã... rồi), まだ (vẫn chưa). Hỏi đã làm chưa - もう V ましたか; đáp - はい、もう V ました / いいえ、まだです.
+  - type: explain
+    text:
+      vi: Từ nối - そして (và), それから (sau đó), でも (nhưng), だから (vì vậy). Đứng đầu câu và theo sau là dấu phẩy - でも、おいしくないです.
+  - type: deep_explain
+    text:
+      vi: もう còn có nghĩa "thêm nữa" khi đi với số - もうひとつ ください (cho tôi thêm một cái). まだ có nghĩa "vẫn còn" khi đi với trạng thái đang tiếp diễn - まだ あります. でも ở đầu câu là "nhưng"; sau danh từ lại là "chẳng hạn" (おちゃでも のみませんか - uống chút trà nhé). Hình thức まだ V ていません (vẫn chưa làm) học kỹ ở N4.
+  - type: example
+    target: とてもおいしいです。もっとたべたいです。
+    target_lang: ja
+    translation:
+      vi: Rất ngon. Tôi muốn ăn nữa.
+    note:
+      vi: とても・もっと - trạng từ mức độ.
+  - type: example
+    target: もうたべましたか。- いいえ、まだです。
+    target_lang: ja
+    translation:
+      vi: Bạn ăn chưa? - Chưa, vẫn chưa.
+    note:
+      vi: もう / まだ - đã / vẫn chưa.
+  - type: example
+    target: やすいです。でも、おいしくないです。だから、かいません。
+    target_lang: ja
+    translation:
+      vi: Rẻ. Nhưng không ngon. Vì vậy tôi không mua.
+    note:
+      vi: でも / だから - từ nối.
+  - type: example
+    target: ゆっくりはなしてください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy nói chậm lại.
+    note:
+      vi: ゆっくり - chậm rãi.
+  - type: common_mistake
+    wrong: もうたべていません。
+    right: まだたべていません。
+    target_lang: ja
+    note:
+      vi: Vẫn chưa làm là まだ ... ていません; もう dùng với câu khẳng định hay hỏi.
+  - type: common_mistake
+    wrong: でもおいしいです。(đầu câu, thiếu dấu phẩy)
+    right: でも、おいしいです。
+    target_lang: ja
+    note:
+      vi: Sau từ nối đầu câu nên có dấu phẩy để tách ý.
+  - type: summary
+    points:
+      - vi: とても rất · すこし một chút · たくさん nhiều · いちばん nhất · もっと hơn nữa.
+      - vi: もう đã... rồi · まだ vẫn chưa · すぐ ngay · ゆっくり từ từ.
+      - vi: そして và · それから sau đó · でも nhưng · だから vì vậy.
+      - vi: Hỏi - もう V ましたか; đáp - まだです.
+exercises:
+  - key: ja:exercise:adverbs-connectors-totemo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-totemo
+    prompt:
+      stem: Từ nào có nghĩa là “rất”?
+      stem_lang: vi
+      options:
+        - id: x1r
+          text: すこし
+          lang: ja
+        - id: eeb
+          text: ぜんぜん
+          lang: ja
+        - id: e4c
+          text: とても
+          lang: ja
+        - id: uwn
+          text: あまり
+          lang: ja
+    answer:
+      correct_option_id: e4c
+    explanation:
+      vi: とても là rất. すこし là một chút, あまり + phủ định là "không...lắm", ぜんぜん + phủ định là "hoàn toàn không".
+    display_answer: とても
+  - key: ja:exercise:adverbs-connectors-mada
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-mada
+    prompt:
+      stem: Bạn chưa ăn cơm. Người ta hỏi “もうたべましたか”. Bạn đáp gì?
+      stem_lang: vi
+      options:
+        - id: sw8
+          text: いいえ、まだです。
+          lang: ja
+        - id: l5k
+          text: はい、たべません。
+          lang: ja
+        - id: nzk
+          text: はい、まだです。
+          lang: ja
+        - id: yfo
+          text: いいえ、もうです。
+          lang: ja
+    answer:
+      correct_option_id: sw8
+    explanation:
+      vi: Trả lời chưa làm là いいえ、まだです. はい、まだです trái nghĩa nhau; いいえ、もうです không tự nhiên; はい、たべません chưa đúng ngữ pháp.
+    display_answer: いいえ、まだです。
+  - key: ja:exercise:adverbs-connectors-demo
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u17-demo
+    prompt:
+      audio_asset_id: null
+      fallback_text: やすいです。でも、おいしくないです。だから、かいません。
+      options:
+        - id: brb
+          text: Đắt. Nhưng ngon. Vì vậy tôi mua.
+          lang: vi
+        - id: lg3
+          text: Rẻ. Và ngon. Vì vậy tôi mua.
+          lang: vi
+        - id: qf1
+          text: Đắt. Nhưng không ngon. Vì vậy tôi không mua.
+          lang: vi
+        - id: e5p
+          text: Rẻ. Nhưng không ngon. Vì vậy tôi không mua.
+          lang: vi
+    answer:
+      correct_option_id: e5p
+    explanation:
+      vi: やすい - rẻ; でも - nhưng; おいしくない - không ngon; だから - vì vậy; かいません - không mua.
+    display_answer: Rẻ. Nhưng không ngon. Vì vậy tôi không mua.
+  - key: ja:exercise:adverbs-connectors-mou-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-mou-mada
+    prompt:
+      template: "{{b1}}たべましたか。- いいえ、まだです。 (Bạn ăn chưa? - Chưa, vẫn chưa.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Phó từ nghĩa "đã ... rồi".
+        - Hai chữ - もう.
+    answer:
+      blanks:
+        b1:
+          - もう
+    known_wrong:
+      - answer: まだ
+        feedback_vi: まだ dùng trong câu trả lời; câu hỏi "đã ăn chưa" dùng もう.
+        error_tag: adverb_choice
+    explanation:
+      vi: もう + V ましたか - đã làm chưa.
+    display_answer: もうたべましたか。いいえ、まだです。
+  - key: ja:exercise:adverbs-connectors-yukkuri
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-yukkuri
+    prompt:
+      stem: Bạn nhờ người nói chậm lại. Từ nào điền vào chỗ trống? ___ はなしてください。
+      stem_lang: vi
+      options:
+        - id: gou
+          text: とても
+          lang: ja
+        - id: bqa
+          text: すぐ
+          lang: ja
+        - id: b0v
+          text: ゆっくり
+          lang: ja
+        - id: afw
+          text: もう
+          lang: ja
+    answer:
+      correct_option_id: b0v
+    explanation:
+      vi: ゆっくり là từ từ, chậm rãi. すぐ là ngay lập tức, とても là rất, もう là đã/thêm.
+    display_answer: ゆっくり
+  - key: ja:exercise:adverbs-connectors-soshite-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-soshite
+    prompt:
+      template: あさおきます。{{b1}}、ごはんをたべます。 (Sáng tôi dậy. Rồi tôi ăn cơm.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - そして
+          - それから
+    known_wrong:
+      - answer: でも
+        feedback_vi: でも là nhưng; đây là hai việc nối tiếp nhau.
+        error_tag: conjunction
+      - answer: だから
+        feedback_vi: だから là vì vậy (quan hệ nguyên nhân).
+        error_tag: conjunction
+    explanation:
+      vi: そして / それから - rồi, sau đó (nối việc tiếp nối).
+    display_answer: あさおきます。そして、ごはんをたべます。
+  - key: ja:exercise:adverbs-connectors-dakara-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-dakara
+    prompt:
+      template: あめです。{{b1}}、かさをもっていきます。 (Trời mưa. Vì vậy tôi mang ô.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - だから
+    known_wrong:
+      - answer: でも
+        feedback_vi: でも là nhưng; ở đây kết quả tự nhiên nên dùng だから.
+        error_tag: conjunction
+    explanation:
+      vi: だから - vì vậy; nêu kết quả của câu trước.
+    display_answer: あめです。だから、かさをもっていきます。
+  - key: ja:exercise:adverbs-connectors-sugu-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-sugu
+    prompt:
+      source_text: Tôi đi ngay.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - すぐいきます。
+        - すぐ行きます。
+        - いますぐいきます。
+        - すぐにいきます。
+    known_wrong:
+      - answer: ゆっくりいきます。
+        feedback_vi: ゆっくり là từ từ; "ngay" là すぐ.
+        error_tag: adverb_choice
+    explanation:
+      vi: すぐ - ngay lập tức; いきます - đi.
+    display_answer: すぐいきます。
+  - key: ja:exercise:adverbs-connectors-mou-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u17-mou
+    prompt:
+      source_text: もうたべましたか。- いいえ、まだです。いっしょにたべませんか。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn ăn chưa? - Chưa, vẫn chưa. Cùng ăn không?
+        - Bạn đã ăn chưa? - Chưa. Chúng ta cùng ăn nhé?
+        - Bạn ăn rồi chưa? - Chưa, vẫn chưa. Cùng ăn nhé?
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn ăn rồi à? - Rồi. Cùng ăn không?
+        feedback_vi: まだです nghĩa là chưa.
+        error_tag: meaning
+    explanation:
+      vi: もう ～ましたか - đã... chưa; まだです - vẫn chưa; ませんか - lời rủ.
+    display_answer: Bạn ăn chưa? - Chưa, vẫn chưa. Cùng ăn không?
+  - key: ja:exercise:adverbs-connectors-demo-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-demo
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Rẻ. Nhưng không ngon."'
+      tokens:
+        - id: t3
+          text: おいしくないです。
+        - id: t1
+          text: やすいです。
+        - id: t2
+          text: でも、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Câu 1 → từ nối でも → câu 2 phủ định.
+    display_answer: やすいです。でも、おいしくないです。
+  - key: ja:exercise:adverbs-connectors-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-ichiban
+    prompt:
+      stem: Bạn muốn nói “Tôi thích cái này nhất”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: qv5
+          text: これはいちばんすきがです。
+          lang: ja
+        - id: ltz
+          text: これをいちばんすきです。
+          lang: ja
+        - id: nik
+          text: これがいちばんすきです。
+          lang: ja
+        - id: w1n
+          text: これにいちばんすきです。
+          lang: ja
+    answer:
+      correct_option_id: nik
+    explanation:
+      vi: いちばん すき - thích nhất; đối tượng của すき dùng が. を hay に không phù hợp.
+    display_answer: これがいちばんすきです。

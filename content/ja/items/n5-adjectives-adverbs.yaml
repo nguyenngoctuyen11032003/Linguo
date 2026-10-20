@@ -1,0 +1,848 @@
+# Học liệu unit "Tính từ, trạng từ và từ nối" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u17-nagai-mijikai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 長い / 短い
+      reading: ながい / みじかい
+      romanization: nagai / mijikai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: dài / ngắn
+      examples:
+        - target: かみがながいです。
+          translation:
+            vi: Tóc dài.
+  - key: ja:item:n5-u17-hiroi-semai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 広い / 狭い
+      reading: ひろい / せまい
+      romanization: hiroi / semai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: rộng / hẹp
+      examples:
+        - target: へやがひろいです。
+          translation:
+            vi: Căn phòng rộng.
+  - key: ja:item:n5-u17-omoi-karui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 重い / 軽い
+      reading: おもい / かるい
+      romanization: omoi / karui
+      pos: tính từ い
+    back:
+      meaning:
+        vi: nặng / nhẹ
+      examples:
+        - target: このかばんはおもいです。
+          translation:
+            vi: Cái cặp này nặng.
+  - key: ja:item:n5-u17-tsuyoi-yowai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 強い / 弱い
+      reading: つよい / よわい
+      romanization: tsuyoi / yowai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: mạnh / yếu
+      examples:
+        - target: かぜがつよいです。
+          translation:
+            vi: Gió mạnh.
+  - key: ja:item:n5-u17-ooi-sukunai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 多い / 少ない
+      reading: おおい / すくない
+      romanization: ooi / sukunai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: nhiều / ít
+      examples:
+        - target: ひとがおおいです。
+          translation:
+            vi: Có nhiều người.
+      confusion:
+        vi: おおい (nhiều) và おおきい (to) rất giống nhau - おおい nói về số lượng, おおきい nói về kích thước.
+  - key: ja:item:n5-u17-akarui-kurai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 明るい / 暗い
+      reading: あかるい / くらい
+      romanization: akarui / kurai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: sáng / tối
+      examples:
+        - target: このへやはあかるいです。
+          translation:
+            vi: Căn phòng này sáng.
+  - key: ja:item:n5-u17-chikai-tooi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 近い / 遠い
+      reading: ちかい / とおい
+      romanization: chikai / tooi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: gần / xa
+      examples:
+        - target: えきはちかいです。
+          translation:
+            vi: Nhà ga gần.
+      pronunciation_note:
+        vi: とおい - trường âm "oo" (とお).
+  - key: ja:item:n5-u17-hikui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 低い
+      reading: ひくい
+      romanization: hikui
+      pos: tính từ い
+    back:
+      meaning:
+        vi: thấp (độ cao); (giọng) trầm
+      examples:
+        - target: このやまはひくいです。
+          translation:
+            vi: Ngọn núi này thấp.
+      confusion:
+        vi: たかい vừa là "cao" vừa là "đắt" (高い); ひくい chỉ là "thấp".
+  - key: ja:item:n5-u17-futoi-hosoi
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 太い / 細い
+      reading: ふとい / ほそい
+      romanization: futoi / hosoi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: to, béo (vật tròn dài) / mảnh, nhỏ
+      examples:
+        - target: このきはふといです。
+          translation:
+            vi: Cái cây này to.
+  - key: ja:item:n5-u17-ureshii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: うれしい
+      romanization: ureshii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: vui, mừng
+      examples:
+        - target: プレゼントをもらって、うれしいです。
+          translation:
+            vi: Nhận được quà, tôi vui.
+  - key: ja:item:n5-u17-kanashii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 悲しい
+      reading: かなしい
+      romanization: kanashii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: buồn
+      examples:
+        - target: ともだちがかえって、かなしいです。
+          translation:
+            vi: Bạn về mất, tôi buồn.
+  - key: ja:item:n5-u17-tsumaranai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: つまらない
+      romanization: tsumaranai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: chán, nhàm
+      examples:
+        - target: このえいがはつまらないです。
+          translation:
+            vi: Bộ phim này chán.
+      confusion:
+        vi: Đối nghĩa với おもしろい. Dạng ない nhưng là một tính từ い độc lập, không phải phủ định của つまる.
+  - key: ja:item:n5-u17-kowai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 怖い
+      reading: こわい
+      romanization: kowai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: đáng sợ; sợ
+      examples:
+        - target: いぬがこわいです。
+          translation:
+            vi: Tôi sợ chó.
+  - key: ja:item:n5-u17-nemui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 眠い
+      reading: ねむい
+      romanization: nemui
+      pos: tính từ い
+    back:
+      meaning:
+        vi: buồn ngủ
+      examples:
+        - target: ゆうべおそくねましたから、ねむいです。
+          translation:
+            vi: Tối qua tôi ngủ muộn nên buồn ngủ.
+  - key: ja:item:n5-u17-amai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 甘い
+      reading: あまい
+      romanization: amai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: ngọt
+      examples:
+        - target: このケーキはあまいです。
+          translation:
+            vi: Cái bánh này ngọt.
+  - key: ja:item:n5-u17-nigai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 苦い
+      reading: にがい
+      romanization: nigai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: đắng
+      examples:
+        - target: くすりはにがいです。
+          translation:
+            vi: Thuốc đắng.
+  - key: ja:item:n5-u17-mazui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: まずい
+      romanization: mazui
+      pos: tính từ い
+    back:
+      meaning:
+        vi: dở, không ngon
+      examples:
+        - target: このラーメンはまずいです。
+          translation:
+            vi: Món mì này dở.
+      confusion:
+        vi: Đối nghĩa với おいしい. Nói thẳng trước mặt người nấu nghe thô; lịch sự nói あまりおいしくないです.
+  - key: ja:item:n5-u17-shoppai
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: しょっぱい
+      romanization: shoppai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: mặn
+      examples:
+        - target: このスープはしょっぱいです。
+          translation:
+            vi: Món súp này mặn.
+  - key: ja:item:n5-u17-kawaii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: かわいい
+      romanization: kawaii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: dễ thương, đáng yêu
+      examples:
+        - target: このねこはかわいいです。
+          translation:
+            vi: Con mèo này dễ thương.
+  - key: ja:item:n5-u17-kitanai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 汚い
+      reading: きたない
+      romanization: kitanai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: bẩn, dơ
+      examples:
+        - target: へやがきたないです。
+          translation:
+            vi: Phòng bẩn.
+      confusion:
+        vi: Đối nghĩa với きれい (sạch, đẹp), nhưng きれい là tính từ な còn きたない là tính từ い.
+  - key: ja:item:n5-u17-sugoi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: すごい
+      romanization: sugoi
+      pos: tính từ い
+    back:
+      meaning:
+        vi: tuyệt vời, ghê gớm
+      examples:
+        - target: すごい！いいてんきですね。
+          translation:
+            vi: Tuyệt quá! Thời tiết đẹp thật.
+  - key: ja:item:n5-u17-taihen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大変
+      reading: たいへん
+      romanization: taihen
+      pos: tính từ な
+    back:
+      meaning:
+        vi: vất vả; nghiêm trọng, to chuyện
+      examples:
+        - target: しごとはたいへんです。
+          translation:
+            vi: Công việc vất vả.
+      pronunciation_note:
+        vi: たいへんですね là câu thông cảm - "vất vả nhỉ".
+  - key: ja:item:n5-u17-taisetsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大切
+      reading: たいせつ
+      romanization: taisetsu
+      pos: tính từ な
+    back:
+      meaning:
+        vi: quan trọng, quý giá
+      examples:
+        - target: かぞくはたいせつです。
+          translation:
+            vi: Gia đình rất quan trọng.
+  - key: ja:item:n5-u17-kantan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 簡単
+      reading: かんたん
+      romanization: kantan
+      pos: tính từ な
+    back:
+      meaning:
+        vi: đơn giản, dễ
+      examples:
+        - target: このもんだいはかんたんです。
+          translation:
+            vi: Câu hỏi này đơn giản.
+  - key: ja:item:n5-u17-joubu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 丈夫
+      reading: じょうぶ
+      romanization: joubu
+      pos: tính từ な
+    back:
+      meaning:
+        vi: bền, chắc; khoẻ mạnh
+      examples:
+        - target: このかばんはじょうぶです。
+          translation:
+            vi: Cái cặp này bền.
+  - key: ja:item:n5-u17-shiawase
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 幸せ
+      reading: しあわせ
+      romanization: shiawase
+      pos: tính từ な
+    back:
+      meaning:
+        vi: hạnh phúc
+      examples:
+        - target: しあわせなかぞくです。
+          translation:
+            vi: Một gia đình hạnh phúc.
+  - key: ja:item:n5-u17-hitsuyou
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 必要
+      reading: ひつよう
+      romanization: hitsuyou
+      pos: tính từ な
+    back:
+      meaning:
+        vi: cần thiết
+      examples:
+        - target: パスポートがひつようです。
+          translation:
+            vi: Cần có hộ chiếu.
+  - key: ja:item:n5-u17-nigate
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 苦手
+      reading: にがて
+      romanization: nigate
+      pos: tính từ な
+    back:
+      meaning:
+        vi: kém, không giỏi, ngại
+      examples:
+        - target: すうがくがにがてです。
+          translation:
+            vi: Tôi kém môn toán.
+      confusion:
+        vi: にがて (kém, ngại) trái nghĩa với とくい (giỏi, sở trường).
+  - key: ja:item:n5-u17-tokui
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 得意
+      reading: とくい
+      romanization: tokui
+      pos: tính từ な
+    back:
+      meaning:
+        vi: giỏi, sở trường
+      examples:
+        - target: りょうりがとくいです。
+          translation:
+            vi: Tôi nấu ăn giỏi.
+  - key: ja:item:n5-u17-daisuki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大好き
+      reading: だいすき
+      romanization: daisuki
+      pos: tính từ な
+    back:
+      meaning:
+        vi: rất thích, yêu thích
+      examples:
+        - target: ねこがだいすきです。
+          translation:
+            vi: Tôi rất thích mèo.
+      pronunciation_note:
+        vi: だいすき là mức độ mạnh hơn すき; phản nghĩa là だいきらい.
+  - key: ja:item:n5-u17-hontou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 本当
+      reading: ほんとう
+      romanization: hontou
+      pos: danh từ / tính từ な
+    back:
+      meaning:
+        vi: sự thật, thật
+      examples:
+        - target: ほんとうですか。
+          translation:
+            vi: Thật không?
+      pronunciation_note:
+        vi: ほんとうに + tính từ - thực sự (ほんとうにおいしいです).
+  - key: ja:item:n5-u17-iroiro
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: いろいろ
+      romanization: iroiro
+      pos: tính từ な / phó từ
+    back:
+      meaning:
+        vi: nhiều loại, đủ thứ
+      examples:
+        - target: いろいろなくだものがあります。
+          translation:
+            vi: Có đủ loại trái cây.
+  - key: ja:item:n5-u17-totemo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: とても
+      romanization: totemo
+      pos: phó từ
+    back:
+      meaning:
+        vi: rất
+      examples:
+        - target: とてもおいしいです。
+          translation:
+            vi: Rất ngon.
+  - key: ja:item:n5-u17-sukoshi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 少し
+      reading: すこし
+      romanization: sukoshi
+      pos: phó từ
+    back:
+      meaning:
+        vi: một chút, ít
+      examples:
+        - target: すこしあります。
+          translation:
+            vi: Có một chút.
+  - key: ja:item:n5-u17-takusan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: たくさん
+      romanization: takusan
+      pos: phó từ
+    back:
+      meaning:
+        vi: nhiều
+      examples:
+        - target: ほんがたくさんあります。
+          translation:
+            vi: Có nhiều sách.
+  - key: ja:item:n5-u17-mou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: もう
+      romanization: mou
+      pos: phó từ
+    back:
+      meaning:
+        vi: đã ... rồi; thêm nữa
+      examples:
+        - target: もうたべました。
+          translation:
+            vi: Tôi đã ăn rồi.
+      confusion:
+        vi: もう + ひとつ - thêm một cái nữa; もう + ～ました - đã làm rồi.
+  - key: ja:item:n5-u17-mada
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: まだ
+      romanization: mada
+      pos: phó từ
+    back:
+      meaning:
+        vi: vẫn chưa; vẫn còn
+      examples:
+        - target: まだたべていません。
+          translation:
+            vi: Tôi vẫn chưa ăn.
+  - key: ja:item:n5-u17-sugu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: すぐ
+      romanization: sugu
+      pos: phó từ
+    back:
+      meaning:
+        vi: ngay, ngay lập tức
+      examples:
+        - target: すぐいきます。
+          translation:
+            vi: Tôi đi ngay.
+  - key: ja:item:n5-u17-yukkuri
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ゆっくり
+      romanization: yukkuri
+      pos: phó từ
+    back:
+      meaning:
+        vi: từ từ, chậm rãi
+      examples:
+        - target: ゆっくりはなしてください。
+          translation:
+            vi: Xin hãy nói chậm lại.
+      pronunciation_note:
+        vi: ゆっくり có っ - ngắt một nhịp.
+  - key: ja:item:n5-u17-ichiban
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 一番
+      reading: いちばん
+      romanization: ichiban
+      pos: phó từ
+    back:
+      meaning:
+        vi: nhất
+      examples:
+        - target: これがいちばんすきです。
+          translation:
+            vi: Tôi thích cái này nhất.
+  - key: ja:item:n5-u17-motto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: もっと
+      romanization: motto
+      pos: phó từ
+    back:
+      meaning:
+        vi: hơn nữa, nhiều hơn
+      examples:
+        - target: もっとすくないほうがいいです。
+          translation:
+            vi: Ít hơn nữa thì tốt.
+  - key: ja:item:n5-u17-soshite
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: そして
+      romanization: soshite
+      pos: liên từ
+    back:
+      meaning:
+        vi: và, rồi
+      examples:
+        - target: あさおきます。そして、ごはんをたべます。
+          translation:
+            vi: Sáng tôi dậy. Rồi ăn cơm.
+  - key: ja:item:n5-u17-sorekara
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: それから
+      romanization: sorekara
+      pos: liên từ
+    back:
+      meaning:
+        vi: sau đó, và rồi
+      examples:
+        - target: パンをたべます。それから、コーヒーをのみます。
+          translation:
+            vi: Tôi ăn bánh mì. Sau đó uống cà phê.
+  - key: ja:item:n5-u17-demo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: でも
+      romanization: demo
+      pos: liên từ
+    back:
+      meaning:
+        vi: nhưng
+      examples:
+        - target: やすいです。でも、おいしくないです。
+          translation:
+            vi: Rẻ. Nhưng không ngon.
+      confusion:
+        vi: でも đầu câu là "nhưng"; でも sau danh từ lại là "ngay cả/hoặc" (おちゃでも - trà chẳng hạn).
+  - key: ja:item:n5-u17-dakara
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: だから
+      romanization: dakara
+      pos: liên từ
+    back:
+      meaning:
+        vi: vì vậy, cho nên
+      examples:
+        - target: あめです。だから、かさをもっていきます。
+          translation:
+            vi: Trời mưa. Vì vậy tôi mang ô.
+  - key: ja:item:n5-u17-mou-mada
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - grammar
+    front:
+      text: もう V ました / まだ V ていません
+      romanization: mou V-mashita / mada V-te imasen
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Hỏi và nói đã làm chưa: もう + V ました (đã ... rồi), まだ + V ていません (vẫn chưa ...). Hỏi - もう V ましたか; đáp - はい、もう V ました / いいえ、まだです."
+      examples:
+        - target: もうたべましたか。- いいえ、まだです。
+          translation:
+            vi: Bạn đã ăn chưa? - Chưa, vẫn chưa.
+        - target: しゅくだいはもうしましたか。
+          translation:
+            vi: Bạn đã làm bài tập chưa?
+      confusion:
+        vi: Đáp ngắn - いいえ、まだです (không nói いいえ、しません). Hình thức ていません học kỹ ở N4.

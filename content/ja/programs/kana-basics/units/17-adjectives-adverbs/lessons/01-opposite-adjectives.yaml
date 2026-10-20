@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:opposite-adjectives
+order_index: 1
+level: n5
+title:
+  vi: Tính từ đối nghĩa - ながい・ひろい・おもい・ちかい
+objectives:
+  - vi: "Dùng các cặp tính từ đối nghĩa: ながい / みじかい, ひろい / せまい, おもい / かるい, つよい / よわい, ちかい / とおい."
+  - vi: Phân biệt おおい (nhiều) - おおきい (to) và たかい (cao, đắt) - ひくい (thấp).
+  - vi: Miêu tả đồ vật, nơi chốn bằng các tính từ trên.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:movement-verbs
+items:
+  - item: ja:item:n5-u17-nagai-mijikai
+  - item: ja:item:n5-u17-hiroi-semai
+  - item: ja:item:n5-u17-omoi-karui
+  - item: ja:item:n5-u17-tsuyoi-yowai
+  - item: ja:item:n5-u17-ooi-sukunai
+  - item: ja:item:n5-u17-akarui-kurai
+  - item: ja:item:n5-u17-chikai-tooi
+  - item: ja:item:n5-u17-hikui
+  - item: ja:item:n5-u17-futoi-hosoi
+  - item: ja:item:takai-yasui
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn miêu tả được đồ vật và nơi chốn bằng các cặp tính từ ngược nghĩa - へやはひろいです。えきはちかいです。
+  - type: explain
+    text:
+      vi: Tính từ い học theo cặp ngược nghĩa dễ nhớ - ながい/みじかい (dài/ngắn), ひろい/せまい (rộng/hẹp), おもい/かるい (nặng/nhẹ), つよい/よわい (mạnh/yếu), おおい/すくない (nhiều/ít), あかるい/くらい (sáng/tối), ちかい/とおい (gần/xa), たかい/ひくい (cao/thấp), ふとい/ほそい (to/mảnh).
+  - type: explain
+    text:
+      vi: Chia tính từ い - bỏ い thêm くないです (phủ định), かったです (quá khứ), くなかったです (quá khứ phủ định). Ví dụ ひろいです → ひろくないです → ひろかったです.
+  - type: explain
+    text:
+      vi: Nối hai tính từ い - bỏ い thêm くて. Ví dụ ひろくて、あかるいです (rộng và sáng). Chú ý おおい (nhiều) khác おおきい (to); たかい vừa là "cao" vừa là "đắt" nên dùng ひくい khi nói "thấp" và やすい khi nói "rẻ".
+  - type: deep_explain
+    text:
+      vi: Một số tính từ có nghĩa thay đổi theo đối tượng - ながい dùng cho dài (tóc, sông), nhưng "thời gian dài" cũng là ながい. おおい / すくない thường làm vị ngữ (ひとが おおい) chứ ít đứng trước danh từ; trước danh từ người ta dùng おおくの hay たくさんの. たかい và ひくい không đối nghĩa trong "giá cả" vì "rẻ" là やすい. Chữ Hán - 長い, 短い, 広い, 狭い, 重い, 軽い, 強い, 弱い, 多い, 少ない, 明るい, 暗い, 近い, 遠い, 低い, 太い, 細い.
+  - type: example
+    target: わたしのへやはひろくて、あかるいです。
+    target_lang: ja
+    translation:
+      vi: Phòng tôi rộng và sáng.
+    note:
+      vi: ひろくて - dạng て của tính từ い.
+  - type: example
+    target: えきはちかいですが、こうえんはとおいです。
+    target_lang: ja
+    translation:
+      vi: Nhà ga gần nhưng công viên xa.
+    note:
+      vi: が - nhưng (liên từ).
+  - type: example
+    target: このかばんはおもくないです。
+    target_lang: ja
+    translation:
+      vi: Cái cặp này không nặng.
+    note:
+      vi: おもくないです - phủ định.
+  - type: example
+    target: ゆうべのパーティーはひとがおおかったです。
+    target_lang: ja
+    translation:
+      vi: Bữa tiệc tối qua có nhiều người.
+    note:
+      vi: おおかった - quá khứ của おおい.
+  - type: common_mistake
+    wrong: このかばんはひくいです。(muốn nói rẻ)
+    right: このかばんはやすいです。
+    target_lang: ja
+    note:
+      vi: ひくい chỉ độ cao thấp; "rẻ" là やすい. Đừng dùng ひくい cho giá.
+  - type: common_mistake
+    wrong: おおきいひとがきました。(nhiều người đến)
+    right: おおくのひとがきました。
+    target_lang: ja
+    note:
+      vi: Nhiều người dùng おおくの hoặc たくさんの; おおきい là to lớn.
+  - type: summary
+    points:
+      - vi: ながい/みじかい · ひろい/せまい · おもい/かるい · つよい/よわい · おおい/すくない · あかるい/くらい · ちかい/とおい · たかい/ひくい.
+      - vi: Chia - ひろいです → ひろくないです → ひろかったです.
+      - vi: Nối - ひろくて、あかるいです.
+      - vi: おおい (số lượng) ≠ おおきい (kích thước).
+exercises:
+  - key: ja:exercise:opposite-adjectives-nagai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-nagai-mijikai
+    prompt:
+      stem: Từ nào có nghĩa là “ngắn”?
+      stem_lang: vi
+      options:
+        - id: ckr
+          text: みじかい
+          lang: ja
+        - id: ib7
+          text: ながい
+          lang: ja
+        - id: edd
+          text: せまい
+          lang: ja
+        - id: q47
+          text: ひろい
+          lang: ja
+    answer:
+      correct_option_id: ckr
+    explanation:
+      vi: みじかい là ngắn; ながい là dài; ひろい là rộng; せまい là hẹp.
+    display_answer: みじかい
+  - key: ja:exercise:opposite-adjectives-chikai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-chikai-tooi
+    prompt:
+      stem: Từ nào có nghĩa là “xa”?
+      stem_lang: vi
+      options:
+        - id: y4t
+          text: とおい
+          lang: ja
+        - id: dvu
+          text: ちかい
+          lang: ja
+        - id: fjr
+          text: くらい
+          lang: ja
+        - id: paz
+          text: あかるい
+          lang: ja
+    answer:
+      correct_option_id: y4t
+    explanation:
+      vi: とおい là xa; ちかい là gần; あかるい là sáng; くらい là tối.
+    display_answer: とおい
+  - key: ja:exercise:opposite-adjectives-hiroi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u17-hiroi-semai
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしのへやはひろくて、あかるいです。えきからちかいです。
+      options:
+        - id: sjf
+          text: Phòng tôi rộng và sáng. Gần ga.
+          lang: vi
+        - id: ck9
+          text: Phòng tôi rộng và tối. Gần ga.
+          lang: vi
+        - id: egi
+          text: Phòng tôi hẹp và tối. Xa ga.
+          lang: vi
+        - id: f65
+          text: Phòng tôi rộng và sáng. Xa ga.
+          lang: vi
+    answer:
+      correct_option_id: sjf
+    explanation:
+      vi: ひろくて - rộng và; あかるい - sáng; ちかい - gần.
+    display_answer: Phòng tôi rộng và sáng. Gần ga.
+  - key: ja:exercise:opposite-adjectives-omoi-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-omoi-karui
+    prompt:
+      template: このかばんは{{b1}}です。ほんがたくさんあります。 (Cái cặp này nặng. Có nhiều sách.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Tính từ ngược nghĩa với かるい.
+        - Bắt đầu bằng お - おもい.
+    answer:
+      blanks:
+        b1:
+          - おもい
+          - 重い
+    known_wrong:
+      - answer: かるい
+        feedback_vi: かるい là nhẹ; nhiều sách nên nặng.
+        error_tag: adj_choice
+    explanation:
+      vi: おもい là nặng. かばんに ほんが たくさん あるので おもい.
+    display_answer: このかばんはおもいです。ほんがたくさんあります。
+  - key: ja:exercise:opposite-adjectives-ooi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-ooi-sukunai
+    prompt:
+      stem: Bạn muốn nói “Có nhiều người.” Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: u17
+          text: ひとがながいです。
+          lang: ja
+        - id: y0o
+          text: ひとがおおいです。
+          lang: ja
+        - id: qn6
+          text: ひとがおおきいです。
+          lang: ja
+        - id: h81
+          text: ひとがたかいです。
+          lang: ja
+    answer:
+      correct_option_id: y0o
+    explanation:
+      vi: おおい là nhiều (số lượng). おおきい là to, たかい là cao hoặc đắt, ながい là dài.
+    display_answer: ひとがおおいです。
+  - key: ja:exercise:opposite-adjectives-hikui-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-hikui
+    prompt:
+      template: このやまは{{b1}}です。 (Ngọn núi này thấp.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - ひくい
+          - 低い
+    known_wrong:
+      - answer: やすい
+        feedback_vi: やすい là rẻ; độ cao thấp là ひくい.
+        error_tag: adj_choice
+      - answer: すくない
+        feedback_vi: すくない là ít; núi thấp là ひくい.
+        error_tag: adj_choice
+    explanation:
+      vi: ひくい là thấp (độ cao). たかい là cao.
+    display_answer: このやまはひくいです。
+  - key: ja:exercise:opposite-adjectives-semai-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-hiroi-semai
+    prompt:
+      template: わたしのへやは{{b1}}です。ベッドとつくえだけです。 (Phòng tôi hẹp. Chỉ có giường và bàn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - せまい
+          - 狭い
+    known_wrong:
+      - answer: ひろい
+        feedback_vi: ひろい là rộng; chỉ có giường và bàn nên là hẹp?
+        error_tag: adj_choice
+    explanation:
+      vi: せまい là hẹp. Giường và bàn đã chiếm hết chỗ.
+    display_answer: わたしのへやはせまいです。ベッドとつくえだけです。
+  - key: ja:exercise:opposite-adjectives-ooi-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-ooi-sukunai
+    prompt:
+      source_text: Bữa tiệc tối qua có nhiều người.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ゆうべのパーティーはひとがおおかったです。
+        - きのうのパーティーはひとがおおかったです。
+        - ゆうべのパーティーはひとがたくさんいました。
+        - きのうのばんのパーティーはひとがおおかったです。
+    known_wrong:
+      - answer: ゆうべのパーティーはひとがおおきかったです。
+        feedback_vi: おおきい là to; nhiều người là おおい.
+        error_tag: adj_choice
+      - answer: ゆうべのパーティーはひとがおおいです。
+        feedback_vi: Chuyện đã qua nên dùng quá khứ おおかった.
+        error_tag: tense
+    explanation:
+      vi: おおかったです là quá khứ của おおい (nhiều); ゆうべ - tối qua.
+    display_answer: ゆうべのパーティーはひとがおおかったです。
+  - key: ja:exercise:opposite-adjectives-karui-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u17-omoi-karui
+    prompt:
+      source_text: このかばんはおもいですが、あのかばんはかるいです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái cặp này nặng nhưng cái cặp kia nhẹ.
+        - Cái cặp này nặng, còn cái cặp đó thì nhẹ.
+        - Chiếc cặp này nặng nhưng chiếc cặp kia nhẹ.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái cặp này nhẹ nhưng cái cặp kia nặng.
+        feedback_vi: おもい là nặng, かるい là nhẹ.
+        error_tag: adj_choice
+    explanation:
+      vi: この = cái này; あの = cái kia; が = nhưng, nối hai vế tương phản.
+    display_answer: Cái cặp này nặng nhưng cái cặp kia nhẹ.
+  - key: ja:exercise:opposite-adjectives-hiroi-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-hiroi-semai
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Phòng tôi rộng và sáng."'
+      tokens:
+        - id: t4
+          text: あかるいです。
+        - id: t3
+          text: ひろくて、
+        - id: t1
+          text: わたしの
+        - id: t2
+          text: へやは
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: わたしのへやは (chủ đề) → ひろくて (tính từ 1 ở dạng て) → あかるいです (tính từ 2).
+    display_answer: わたしのへやはひろくて、あかるいです。
+  - key: ja:exercise:opposite-adjectives-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:takai-yasui
+    prompt:
+      stem: Bạn muốn nói “Cái cặp này không nặng.” Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: vi2
+          text: このかばんはおもないです。
+          lang: ja
+        - id: jr8
+          text: このかばんはおもいくないです。
+          lang: ja
+        - id: gf6
+          text: このかばんはおもじゃないです。
+          lang: ja
+        - id: d7v
+          text: このかばんはおもくないです。
+          lang: ja
+    answer:
+      correct_option_id: d7v
+    explanation:
+      vi: "Tính từ い phủ định: bỏ い thêm くない. おもいくない, おもない, おもじゃない đều sai."
+    display_answer: このかばんはおもくないです。

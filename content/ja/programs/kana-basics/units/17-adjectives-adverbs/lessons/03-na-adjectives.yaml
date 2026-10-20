@@ -1,0 +1,376 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:na-adjectives-more
+order_index: 3
+level: n5
+title:
+  vi: Tính từ な - たいへん・かんたん・じょうぶ・とくい
+objectives:
+  - vi: "Dùng thêm tính từ な: たいへん, たいせつ, かんたん, じょうぶ, しあわせ, ひつよう."
+  - vi: Nói giỏi - kém bằng とくい, にがて, だいすき.
+  - vi: Dùng いろいろ, ほんとう và nối tính từ な bằng で.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:feelings-taste
+items:
+  - item: ja:item:n5-u17-taihen
+  - item: ja:item:n5-u17-taisetsu
+  - item: ja:item:n5-u17-kantan
+  - item: ja:item:n5-u17-joubu
+  - item: ja:item:n5-u17-shiawase
+  - item: ja:item:n5-u17-hitsuyou
+  - item: ja:item:n5-u17-nigate
+  - item: ja:item:n5-u17-tokui
+  - item: ja:item:n5-u17-daisuki
+  - item: ja:item:n5-u17-hontou
+  - item: ja:item:n5-u17-iroiro
+  - item: ja:item:kirei
+    role: reuse
+  - item: ja:item:genki
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng được nhiều tính từ な hơn - りょうりがとくいです。すうがくがにがてです。
+  - type: explain
+    text:
+      vi: Tính từ な thêm な khi đứng trước danh từ - たいせつな ともだち (người bạn quý), かんたんな もんだい (câu hỏi dễ). Làm vị ngữ chỉ cần です - この もんだいは かんたんです.
+  - type: explain
+    text:
+      vi: Nối hai tính từ な - bỏ な thêm で. Ví dụ ここは しずかで、きれいです (nơi này yên tĩnh và sạch). Phủ định - かんたんじゃ ありません; quá khứ - かんたんでした.
+  - type: explain
+    text:
+      vi: Giỏi và kém - とくい (giỏi, sở trường), にがて (kém, ngại), だいすき (rất thích). Đối tượng đi với が - りょうりが とくいです; すうがくが にがてです.
+  - type: deep_explain
+    text:
+      vi: Phân biệt じょうず (giỏi - nhận xét người khác) và とくい (sở trường - nói về mình). にがて nhẹ hơn へた (kém); dùng にがて lịch sự hơn nói へた. たいへん là tính từ な nhưng cũng là trạng từ "rất" trong văn viết. Chữ Hán - 大変, 大切, 簡単, 丈夫, 幸せ, 必要, 苦手, 得意, 大好き, 本当.
+  - type: example
+    target: ここはしずかで、きれいなまちです。
+    target_lang: ja
+    translation:
+      vi: Đây là thị trấn yên tĩnh và sạch đẹp.
+    note:
+      vi: しずかで - nối tính từ な; きれいな + N.
+  - type: example
+    target: りょうりがとくいで、うたもじょうずです。
+    target_lang: ja
+    translation:
+      vi: Tôi nấu ăn giỏi và hát cũng hay.
+    note:
+      vi: とくいで nối hai ý.
+  - type: example
+    target: すうがくがにがてですから、しゅくだいがたいへんです。
+    target_lang: ja
+    translation:
+      vi: Tôi kém toán nên bài tập vất vả.
+    note:
+      vi: にがて - kém; たいへん - vất vả.
+  - type: example
+    target: ほんとうですか。- ほんとうです。
+    target_lang: ja
+    translation:
+      vi: Thật không? - Thật đấy.
+    note:
+      vi: ほんとう - sự thật.
+  - type: common_mistake
+    wrong: かんたんいもんだいです。
+    right: かんたんなもんだいです。
+    target_lang: ja
+    note:
+      vi: Tính từ な trước danh từ dùng な, không dùng い.
+  - type: common_mistake
+    wrong: ここはしずかいです。
+    right: ここはしずかです。
+    target_lang: ja
+    note:
+      vi: しずか là tính từ な, đi trực tiếp với です.
+  - type: summary
+    points:
+      - vi: たいへん vất vả · たいせつ quan trọng · かんたん đơn giản · じょうぶ bền · しあわせ hạnh phúc · ひつよう cần thiết.
+      - vi: とくい giỏi · にがて kém · だいすき rất thích · いろいろ nhiều loại.
+      - vi: Trước danh từ + な; nối bằng で.
+      - vi: N が とくい / にがて / だいすき.
+exercises:
+  - key: ja:exercise:na-adjectives-more-kantan
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-kantan
+    prompt:
+      stem: Từ nào có nghĩa là “đơn giản, dễ”?
+      stem_lang: vi
+      options:
+        - id: smq
+          text: かんたん
+          lang: ja
+        - id: ihg
+          text: じょうぶ
+          lang: ja
+        - id: ga2
+          text: ひつよう
+          lang: ja
+        - id: dlc
+          text: たいへん
+          lang: ja
+    answer:
+      correct_option_id: smq
+    explanation:
+      vi: かんたん là đơn giản, dễ. たいへん là vất vả, ひつよう là cần thiết, じょうぶ là bền chắc.
+    display_answer: かんたん
+  - key: ja:exercise:na-adjectives-more-nigate
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-nigate
+    prompt:
+      stem: Từ nào có nghĩa là “kém, không giỏi”?
+      stem_lang: vi
+      options:
+        - id: gxf
+          text: だいすき
+          lang: ja
+        - id: jjg
+          text: とくい
+          lang: ja
+        - id: te0
+          text: しあわせ
+          lang: ja
+        - id: b6y
+          text: にがて
+          lang: ja
+    answer:
+      correct_option_id: b6y
+    explanation:
+      vi: にがて là kém, ngại. とくい là giỏi, だいすき là rất thích, しあわせ là hạnh phúc.
+    display_answer: にがて
+  - key: ja:exercise:na-adjectives-more-tokui
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u17-tokui
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしはりょうりがとくいです。すうがくはにがてです。
+      options:
+        - id: oaw
+          text: Tôi hát giỏi. Tôi kém tiếng Anh.
+          lang: vi
+        - id: fs4
+          text: Tôi nấu ăn kém. Tôi giỏi toán.
+          lang: vi
+        - id: ntf
+          text: Tôi nấu ăn giỏi. Tôi kém toán.
+          lang: vi
+        - id: vjy
+          text: Tôi rất thích nấu ăn. Tôi ghét toán.
+          lang: vi
+    answer:
+      correct_option_id: ntf
+    explanation:
+      vi: とくい - giỏi; にがて - kém; りょうり - nấu ăn; すうがく - toán.
+    display_answer: Tôi nấu ăn giỏi. Tôi kém toán.
+  - key: ja:exercise:na-adjectives-more-joubu-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-joubu
+    prompt:
+      template: このかばんは{{b1}}です。ながくつかえます。 (Cái cặp này bền. Dùng được lâu.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Tính từ な nghĩa là bền chắc.
+        - Bắt đầu bằng じ - じょうぶ.
+    answer:
+      blanks:
+        b1:
+          - じょうぶ
+          - 丈夫
+    known_wrong:
+      - answer: かんたん
+        feedback_vi: かんたん là đơn giản; "bền" là じょうぶ.
+        error_tag: adj_choice
+    explanation:
+      vi: じょうぶ là bền, chắc.
+    display_answer: このかばんはじょうぶです。ながくつかえます。
+  - key: ja:exercise:na-adjectives-more-na
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u17-taisetsu
+    prompt:
+      stem: Bạn nói “Một người bạn quan trọng”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: wco
+          text: たいせつなともだち
+          lang: ja
+        - id: cuw
+          text: たいせつのともだち
+          lang: ja
+        - id: yry
+          text: たいせつともだち
+          lang: ja
+        - id: jt4
+          text: たいせついともだち
+          lang: ja
+    answer:
+      correct_option_id: wco
+    explanation:
+      vi: Tính từ な + N dùng な. たいせつい, たいせつの, hoặc bỏ な đều sai.
+    display_answer: たいせつなともだち
+  - key: ja:exercise:na-adjectives-more-tokui-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-tokui
+    prompt:
+      template: りょうり{{b1}}とくいです。 (Tôi nấu ăn giỏi.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - が
+    known_wrong:
+      - answer: を
+        feedback_vi: とくい đi với が, không dùng を.
+        error_tag: particle_ga_wo
+    explanation:
+      vi: N が とくいです - giỏi N.
+    display_answer: りょうりがとくいです。
+  - key: ja:exercise:na-adjectives-more-hontou-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-hontou
+    prompt:
+      template: "{{b1}}ですか。- はい、ほんとうです。 (Thật không? - Vâng, thật.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - ほんとう
+          - 本当
+    known_wrong:
+      - answer: たいへん
+        feedback_vi: たいへん là vất vả.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ほんとうですか là câu hỏi "thật không?". ほんとう - sự thật.
+    display_answer: ほんとうですか。はい、ほんとうです。
+  - key: ja:exercise:na-adjectives-more-taihen-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-taihen
+    prompt:
+      source_text: Công việc vất vả.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - しごとはたいへんです。
+        - 仕事は大変です。
+        - おしごとはたいへんです。
+        - しごとがたいへんです。
+    known_wrong:
+      - answer: しごとはかんたんです。
+        feedback_vi: かんたん là đơn giản; vất vả là たいへん.
+        error_tag: adj_choice
+    explanation:
+      vi: しごと - công việc; たいへん - vất vả.
+    display_answer: しごとはたいへんです。
+  - key: ja:exercise:na-adjectives-more-kantan-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u17-kantan
+    prompt:
+      source_text: このもんだいはかんたんですが、あのもんだいはたいへんです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Câu hỏi này đơn giản nhưng câu hỏi kia khó.
+        - Câu này đơn giản nhưng câu kia vất vả.
+        - Bài này dễ nhưng bài kia khó.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Câu hỏi này khó nhưng câu hỏi kia đơn giản.
+        feedback_vi: かんたん là đơn giản, たいへん là vất vả/khó.
+        error_tag: adj_choice
+    explanation:
+      vi: この / あの - này / kia; が - nhưng.
+    display_answer: Câu hỏi này đơn giản nhưng câu hỏi kia khó.
+  - key: ja:exercise:na-adjectives-more-na-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-taisetsu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Gia đình là quan trọng nhất."'
+      tokens:
+        - id: t2
+          text: いちばん
+        - id: t3
+          text: たいせつです。
+        - id: t1
+          text: かぞくが
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: かぞくが (chủ ngữ) → いちばん (nhất) → たいせつです.
+    display_answer: かぞくがいちばんたいせつです。
+  - key: ja:exercise:na-adjectives-more-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u17-daisuki
+    prompt:
+      stem: Bạn rất thích mèo. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: s2a
+          text: ねこがだいすきです。
+          lang: ja
+        - id: agw
+          text: ねこでだいすきです。
+          lang: ja
+        - id: azh
+          text: ねこをだいすきです。
+          lang: ja
+        - id: mk9
+          text: ねこにだいすきです。
+          lang: ja
+    answer:
+      correct_option_id: s2a
+    explanation:
+      vi: だいすき đi với が. を, に, で không dùng với tính từ な này.
+    display_answer: ねこがだいすきです。
