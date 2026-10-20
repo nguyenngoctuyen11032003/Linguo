@@ -1,0 +1,644 @@
+# Học liệu unit "Trường học, môn học và việc học" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u15-kyoushitsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 教室
+      reading: きょうしつ
+      romanization: kyoushitsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: lớp học, phòng học
+      examples:
+        - target: きょうしつにがくせいがいます。
+          translation:
+            vi: Trong lớp học có học sinh.
+      pronunciation_note:
+        vi: きょう kéo dài (kyou).
+  - key: ja:item:n5-u15-jugyou
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 授業
+      reading: じゅぎょう
+      romanization: jugyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ học, tiết học
+      examples:
+        - target: じゅぎょうは９じにはじまります。
+          translation:
+            vi: Tiết học bắt đầu lúc 9 giờ.
+      pronunciation_note:
+        vi: じゅ và ぎょう đều là âm ghép; ぎょう kéo dài.
+  - key: ja:item:n5-u15-shukudai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 宿題
+      reading: しゅくだい
+      romanization: shukudai
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tập về nhà
+      examples:
+        - target: しゅくだいをします。
+          translation:
+            vi: Tôi làm bài tập về nhà.
+  - key: ja:item:n5-u15-shiken
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 試験
+      reading: しけん
+      romanization: shiken
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ thi, bài thi
+      examples:
+        - target: らいしゅうしけんがあります。
+          translation:
+            vi: Tuần sau có kỳ thi.
+  - key: ja:item:n5-u15-kokuban
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 黒板
+      reading: こくばん
+      romanization: kokuban
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảng đen
+      examples:
+        - target: せんせいがこくばんにかきます。
+          translation:
+            vi: Giáo viên viết lên bảng.
+  - key: ja:item:n5-u15-kyoukasho
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 教科書
+      reading: きょうかしょ
+      romanization: kyoukasho
+      pos: danh từ
+    back:
+      meaning:
+        vi: sách giáo khoa
+      examples:
+        - target: きょうかしょをよみます。
+          translation:
+            vi: Tôi đọc sách giáo khoa.
+  - key: ja:item:n5-u15-mondai
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 問題
+      reading: もんだい
+      romanization: mondai
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu hỏi (bài thi); vấn đề
+      examples:
+        - target: このもんだいはむずかしいです。
+          translation:
+            vi: Câu hỏi này khó.
+  - key: ja:item:n5-u15-kotae
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 答え
+      reading: こたえ
+      romanization: kotae
+      pos: danh từ
+    back:
+      meaning:
+        vi: đáp án, câu trả lời
+      examples:
+        - target: こたえはなんですか。
+          translation:
+            vi: Đáp án là gì?
+  - key: ja:item:n5-u15-shitsumon
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 質問
+      reading: しつもん
+      romanization: shitsumon
+      pos: danh từ
+    back:
+      meaning:
+        vi: câu hỏi (hỏi người); việc đặt câu hỏi
+      examples:
+        - target: せんせい、しつもんがあります。
+          translation:
+            vi: Thưa thầy, em có câu hỏi.
+      confusion:
+        vi: もんだい là câu hỏi trong bài thi hay vấn đề; しつもん là câu hỏi bạn hỏi ai đó.
+  - key: ja:item:n5-u15-seito
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 生徒
+      reading: せいと
+      romanization: seito
+      pos: danh từ
+    back:
+      meaning:
+        vi: học sinh (tiểu học đến cấp ba)
+      examples:
+        - target: せいとはじゅうごにんです。
+          translation:
+            vi: Có mười lăm học sinh.
+      confusion:
+        vi: がくせい chỉ học sinh, sinh viên nói chung; せいと thường chỉ học sinh trường phổ thông.
+  - key: ja:item:n5-u15-kurasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: クラス
+      romanization: kurasu
+      pos: danh từ
+    back:
+      meaning:
+        vi: lớp (nhóm học sinh)
+      examples:
+        - target: わたしのクラスはにじゅうにんです。
+          translation:
+            vi: Lớp tôi có hai mươi người.
+  - key: ja:item:n5-u15-nihongo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 日本語
+      reading: にほんご
+      romanization: nihongo
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng Nhật
+      examples:
+        - target: にほんごをべんきょうします。
+          translation:
+            vi: Tôi học tiếng Nhật.
+  - key: ja:item:n5-u15-eigo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 英語
+      reading: えいご
+      romanization: eigo
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếng Anh
+      examples:
+        - target: えいごがすこしはなせます。
+          translation:
+            vi: Tôi nói được một chút tiếng Anh.
+      pronunciation_note:
+        vi: "えい kéo dài: e-i."
+  - key: ja:item:n5-u15-kuni
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 国
+      reading: くに
+      romanization: kuni
+      pos: danh từ
+    back:
+      meaning:
+        vi: đất nước, quê hương
+      examples:
+        - target: あなたのくにはどこですか。
+          translation:
+            vi: Đất nước bạn là nước nào?
+  - key: ja:item:n5-u15-gaikoku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 外国
+      reading: がいこく
+      romanization: gaikoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước ngoài
+      examples:
+        - target: がいこくへりょこうします。
+          translation:
+            vi: Tôi đi du lịch nước ngoài.
+  - key: ja:item:n5-u15-gaikokujin
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 外国人
+      reading: がいこくじん
+      romanization: gaikokujin
+      pos: danh từ
+    back:
+      meaning:
+        vi: người nước ngoài
+      examples:
+        - target: わたしはがいこくじんです。
+          translation:
+            vi: Tôi là người nước ngoài.
+  - key: ja:item:n5-u15-kotoba
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 言葉
+      reading: ことば
+      romanization: kotoba
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ, lời nói, ngôn ngữ
+      examples:
+        - target: あたらしいことばをおぼえます。
+          translation:
+            vi: Tôi ghi nhớ từ mới.
+      confusion:
+        vi: ことば - từ, ngôn ngữ nói chung; ご (語) ghép sau tên nước - にほんご, えいご.
+  - key: ja:item:n5-u15-suugaku
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 数学
+      reading: すうがく
+      romanization: suugaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: toán học
+      examples:
+        - target: すうがくがにがてです。
+          translation:
+            vi: Tôi học kém môn toán.
+  - key: ja:item:n5-u15-rekishi
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 歴史
+      reading: れきし
+      romanization: rekishi
+      pos: danh từ
+    back:
+      meaning:
+        vi: lịch sử
+      examples:
+        - target: れきしがすきです。
+          translation:
+            vi: Tôi thích môn lịch sử.
+  - key: ja:item:n5-u15-ongaku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 音楽
+      reading: おんがく
+      romanization: ongaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: âm nhạc
+      examples:
+        - target: まいにちおんがくをききます。
+          translation:
+            vi: Ngày nào tôi cũng nghe nhạc.
+  - key: ja:item:n5-u15-taiiku
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 体育
+      reading: たいいく
+      romanization: taiiku
+      pos: danh từ
+    back:
+      meaning:
+        vi: thể dục (môn học)
+      examples:
+        - target: たいいくのじかんにはしります。
+          translation:
+            vi: Giờ thể dục tôi chạy.
+  - key: ja:item:n5-u15-ji
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 字
+      reading: じ
+      romanization: ji
+      pos: danh từ
+    back:
+      meaning:
+        vi: chữ, chữ viết
+      examples:
+        - target: きれいなじをかきます。
+          translation:
+            vi: Tôi viết chữ đẹp.
+  - key: ja:item:n5-u15-oshiemasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 教えます
+      reading: おしえます
+      romanization: oshiemasu
+      pos: động từ
+    back:
+      meaning:
+        vi: dạy; chỉ, cho biết
+      examples:
+        - target: せんせいはにほんごをおしえます。
+          translation:
+            vi: Thầy giáo dạy tiếng Nhật.
+      pronunciation_note:
+        vi: "おしえます đi với に cho người nhận: ともだちに おしえます."
+  - key: ja:item:n5-u15-wakarimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 分かります
+      reading: わかります
+      romanization: wakarimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: hiểu, biết
+      examples:
+        - target: にほんごがすこしわかります。
+          translation:
+            vi: Tôi hiểu một chút tiếng Nhật.
+      pronunciation_note:
+        vi: Đối tượng của わかります đi với が, không dùng を.
+  - key: ja:item:n5-u15-kakimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 書きます
+      reading: かきます
+      romanization: kakimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: viết
+      examples:
+        - target: なまえをかきます。
+          translation:
+            vi: Tôi viết tên.
+  - key: ja:item:n5-u15-hanashimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 話します
+      reading: はなします
+      romanization: hanashimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: nói, nói chuyện
+      examples:
+        - target: ともだちとはなします。
+          translation:
+            vi: Tôi nói chuyện với bạn.
+  - key: ja:item:n5-u15-iimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 言います
+      reading: いいます
+      romanization: iimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: nói, bảo
+      examples:
+        - target: なんといいましたか。
+          translation:
+            vi: Bạn đã nói gì vậy?
+  - key: ja:item:n5-u15-kotaemasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 答えます
+      reading: こたえます
+      romanization: kotaemasu
+      pos: động từ
+    back:
+      meaning:
+        vi: trả lời
+      examples:
+        - target: しつもんにこたえます。
+          translation:
+            vi: Tôi trả lời câu hỏi.
+      pronunciation_note:
+        vi: N に こたえます - trả lời N.
+  - key: ja:item:n5-u15-renshuu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 練習
+      reading: れんしゅう
+      romanization: renshuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: luyện tập
+      examples:
+        - target: まいにちはつおんをれんしゅうします。
+          translation:
+            vi: Ngày nào tôi cũng luyện phát âm.
+      pronunciation_note:
+        vi: れんしゅうします - luyện tập (danh từ + します).
+  - key: ja:item:n5-u15-fukushuu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 復習
+      reading: ふくしゅう
+      romanization: fukushuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: ôn bài
+      examples:
+        - target: よるにふくしゅうします。
+          translation:
+            vi: Buổi tối tôi ôn bài.
+  - key: ja:item:n5-u15-yoshuu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 予習
+      reading: よしゅう
+      romanization: yoshuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuẩn bị bài trước
+      examples:
+        - target: じゅぎょうのまえによしゅうします。
+          translation:
+            vi: Trước giờ học tôi chuẩn bị bài.
+  - key: ja:item:n5-u15-machigaemasu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 間違えます
+      reading: まちがえます
+      romanization: machigaemasu
+      pos: động từ
+    back:
+      meaning:
+        vi: nhầm, làm sai
+      examples:
+        - target: こたえをまちがえました。
+          translation:
+            vi: Tôi đã trả lời sai.
+  - key: ja:item:n5-u15-mou-ichido
+    type: phrase
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: もう一度
+      reading: もういちど
+      romanization: mou ichido
+      pos: cụm từ
+    back:
+      meaning:
+        vi: một lần nữa (nhờ nói lại)
+      examples:
+        - target: もういちどおねがいします。
+          translation:
+            vi: Làm ơn nói lại một lần nữa.
+  - key: ja:item:n5-u15-ga-wakarimasu
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - grammar
+    front:
+      text: N が 分かります / できます
+      romanization: N ga wakarimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Hiểu được N: đối tượng của わかります đi với が. Phủ định - わかりません; hỏi - わかりますか。 Đáp - はい、わかります / いいえ、わかりません."
+      examples:
+        - target: にほんごがわかります。
+          translation:
+            vi: Tôi hiểu tiếng Nhật.
+        - target: このもんだいがわかりません。
+          translation:
+            vi: Tôi không hiểu câu hỏi này.
+      confusion:
+        vi: Người Việt hay dùng を như "hiểu tiếng Nhật" - nhưng わかる là trạng thái, phải dùng が.

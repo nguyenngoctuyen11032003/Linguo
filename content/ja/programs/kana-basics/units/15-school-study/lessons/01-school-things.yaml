@@ -1,0 +1,386 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:school-life
+order_index: 1
+level: n5
+title:
+  vi: Trường học - きょうしつ・じゅぎょう・しゅくだい
+objectives:
+  - vi: "Gọi tên các thứ ở trường: きょうしつ, じゅぎょう, しゅくだい, しけん, こくばん, きょうかしょ, クラス."
+  - vi: Phân biệt もんだい và しつもん, せいと và がくせい.
+  - vi: Nói về một ngày học bằng các từ trên.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:colors
+items:
+  - item: ja:item:n5-u15-kyoushitsu
+  - item: ja:item:n5-u15-jugyou
+  - item: ja:item:n5-u15-shukudai
+  - item: ja:item:n5-u15-shiken
+  - item: ja:item:n5-u15-kokuban
+  - item: ja:item:n5-u15-kyoukasho
+  - item: ja:item:n5-u15-mondai
+  - item: ja:item:n5-u15-kotae
+  - item: ja:item:n5-u15-shitsumon
+  - item: ja:item:n5-u15-seito
+  - item: ja:item:n5-u15-kurasu
+  - item: ja:item:gakkou
+    role: reuse
+  - item: ja:item:gakusei
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được những điều cơ bản về trường học - しゅくだいがあります。らいしゅうしけんです。
+  - type: explain
+    text:
+      vi: "Ở trường: きょうしつ (lớp học), じゅぎょう (tiết học), しゅくだい (bài tập về nhà), しけん (kỳ thi), こくばん (bảng đen), きょうかしょ (sách giáo khoa), クラス (lớp - nhóm học sinh)."
+  - type: explain
+    text:
+      vi: Câu hỏi có hai từ - もんだい là câu hỏi trong bài thi hay bài tập (cũng có nghĩa "vấn đề"), しつもん là câu hỏi bạn hỏi người khác (せんせい、しつもんがあります). こたえ là đáp án.
+  - type: explain
+    text:
+      vi: がくせい là học sinh, sinh viên nói chung; せいと thường chỉ học sinh trường phổ thông (tiểu học đến cấp ba). Gọi một người đang học ở trường nào thì dùng だいがくせい, こうこうせい như bài trước.
+  - type: deep_explain
+    text:
+      vi: 'Tiếng Việt dùng "câu hỏi" cho cả もんだい và しつもん nên người học hay lẫn. Quy tắc: ai đưa ra? Nếu là người ra đề - もんだい; nếu là người muốn biết thông tin - しつもん. しけん và しゅくだい thường dùng với あります (có) hoặc だします (nộp) và します (làm). Chữ Hán - 教室, 授業, 宿題, 試験, 黒板, 教科書, 問題, 答え, 質問, 生徒.'
+  - type: example
+    target: せんせい、しつもんがあります。
+    target_lang: ja
+    translation:
+      vi: Thưa thầy, em có câu hỏi.
+    note:
+      vi: しつもん - câu hỏi bạn muốn hỏi.
+  - type: example
+    target: らいしゅうしけんがありますから、いまべんきょうします。
+    target_lang: ja
+    translation:
+      vi: Tuần sau có kỳ thi nên bây giờ tôi học bài.
+    note:
+      vi: から nêu lý do.
+  - type: example
+    target: せんせいがこくばんにかきます。
+    target_lang: ja
+    translation:
+      vi: Giáo viên viết lên bảng.
+    note:
+      vi: こくばん - bảng đen; に - lên bảng.
+  - type: example
+    target: このもんだいのこたえはなんですか。
+    target_lang: ja
+    translation:
+      vi: Đáp án của câu hỏi này là gì?
+    note:
+      vi: もんだい - câu hỏi trong bài; こたえ - đáp án.
+  - type: common_mistake
+    wrong: せんせいにもんだいがあります。(muốn hỏi)
+    right: せんせいにしつもんがあります。
+    target_lang: ja
+    note:
+      vi: Muốn hỏi thầy dùng しつもん, không dùng もんだい (もんだい là câu trong bài thi, hoặc vấn đề).
+  - type: common_mistake
+    wrong: わたしのクラスのせいとはだいがくせいです。
+    right: わたしのクラスのがくせいはだいがくせいです。
+    target_lang: ja
+    note:
+      vi: せいと chỉ học sinh phổ thông; sinh viên đại học dùng がくせい / だいがくせい.
+  - type: summary
+    points:
+      - vi: きょうしつ lớp học · じゅぎょう tiết học · しゅくだい bài tập · しけん kỳ thi · こくばん bảng · きょうかしょ sách giáo khoa.
+      - vi: もんだい câu hỏi trong bài thi · しつもん câu hỏi bạn hỏi · こたえ đáp án.
+      - vi: せいと học sinh phổ thông · がくせい học sinh, sinh viên · クラス lớp.
+      - vi: せんせい、しつもんが あります - cách mở lời hỏi giáo viên.
+exercises:
+  - key: ja:exercise:school-life-shukudai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-shukudai
+    prompt:
+      stem: Từ nào có nghĩa là “bài tập về nhà”?
+      stem_lang: vi
+      options:
+        - id: aay
+          text: もんだい
+          lang: ja
+        - id: y70
+          text: しゅくだい
+          lang: ja
+        - id: aky
+          text: じゅぎょう
+          lang: ja
+        - id: ctd
+          text: しけん
+          lang: ja
+    answer:
+      correct_option_id: y70
+    explanation:
+      vi: しゅくだい là bài tập về nhà. しけん là kỳ thi, じゅぎょう là tiết học, もんだい là câu hỏi trong bài.
+    display_answer: しゅくだい
+  - key: ja:exercise:school-life-shitsumon
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-shitsumon
+    prompt:
+      stem: Bạn muốn hỏi thầy giáo một điều. Bạn nói “せんせい、___があります。”. Từ nào?
+      stem_lang: vi
+      options:
+        - id: eng
+          text: しゅくだい
+          lang: ja
+        - id: zuw
+          text: こたえ
+          lang: ja
+        - id: wqm
+          text: しつもん
+          lang: ja
+        - id: xm5
+          text: もんだい
+          lang: ja
+    answer:
+      correct_option_id: wqm
+    explanation:
+      vi: しつもん là câu hỏi bạn muốn hỏi. もんだい là câu trong bài thi, こたえ là đáp án, しゅくだい là bài tập.
+    display_answer: しつもん
+  - key: ja:exercise:school-life-shiken
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u15-shiken
+    prompt:
+      audio_asset_id: null
+      fallback_text: らいしゅうしけんがあります。しゅくだいもたくさんあります。
+      options:
+        - id: mbb
+          text: Tuần sau có buổi học. Bài tập về nhà nhiều.
+          lang: vi
+        - id: jro
+          text: Tuần này có kỳ thi. Bài tập về nhà ít.
+          lang: vi
+        - id: f8x
+          text: Tuần sau có kỳ nghỉ. Bài tập về nhà cũng nhiều.
+          lang: vi
+        - id: yv1
+          text: Tuần sau có kỳ thi. Bài tập về nhà cũng nhiều.
+          lang: vi
+    answer:
+      correct_option_id: yv1
+    explanation:
+      vi: らいしゅう - tuần sau; しけん - kỳ thi; たくさん - nhiều.
+    display_answer: Tuần sau có kỳ thi. Bài tập về nhà cũng nhiều.
+  - key: ja:exercise:school-life-kokuban-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-kokuban
+    prompt:
+      template: せんせいが{{b1}}にかきます。 (Giáo viên viết lên bảng.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Nơi giáo viên viết chữ.
+        - Bắt đầu bằng こ - こくばん.
+    answer:
+      blanks:
+        b1:
+          - こくばん
+          - 黒板
+    known_wrong:
+      - answer: きょうかしょ
+        feedback_vi: きょうかしょ là sách giáo khoa; viết lên bảng là こくばん.
+        error_tag: vocab_meaning
+    explanation:
+      vi: こくばん là bảng đen (黒板).
+    display_answer: せんせいがこくばんにかきます。
+  - key: ja:exercise:school-life-seito
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-seito
+    prompt:
+      stem: Từ nào thường chỉ “học sinh” phổ thông?
+      stem_lang: vi
+      options:
+        - id: shj
+          text: こども
+          lang: ja
+        - id: x3n
+          text: おとな
+          lang: ja
+        - id: vkq
+          text: せんせい
+          lang: ja
+        - id: ncx
+          text: せいと
+          lang: ja
+    answer:
+      correct_option_id: ncx
+    explanation:
+      vi: せいと là học sinh trường phổ thông. せんせい là giáo viên, こども là trẻ con, おとな là người lớn.
+    display_answer: せいと
+  - key: ja:exercise:school-life-mondai-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-mondai
+    prompt:
+      template: このもんだいの{{b1}}はなんですか。 (Đáp án của câu này là gì?)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - こたえ
+          - 答え
+    known_wrong:
+      - answer: しつもん
+        feedback_vi: しつもん là câu hỏi bạn hỏi người khác, không phải đáp án.
+        error_tag: vocab_meaning
+    explanation:
+      vi: こたえ là đáp án, câu trả lời. もんだいのこたえ - đáp án của câu hỏi.
+    display_answer: このもんだいのこたえはなんですか。
+  - key: ja:exercise:school-life-jugyou-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-jugyou
+    prompt:
+      template: "{{b1}}は９じにはじまります。 (Tiết học bắt đầu lúc 9 giờ.)"
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - じゅぎょう
+          - 授業
+    known_wrong:
+      - answer: しけん
+        feedback_vi: しけん là kỳ thi.
+        error_tag: vocab_meaning
+    explanation:
+      vi: じゅぎょう là tiết học, giờ học.
+    display_answer: じゅぎょうは９じにはじまります。
+  - key: ja:exercise:school-life-shitsumon-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-shitsumon
+    prompt:
+      source_text: Thưa thầy, em có câu hỏi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - せんせい、しつもんがあります。
+        - 先生、質問があります。
+        - せんせい、しつもんがあるんですが。
+        - せんせい、しつもんがあります
+    known_wrong:
+      - answer: せんせい、もんだいがあります。
+        feedback_vi: もんだい là câu hỏi trong bài hoặc vấn đề; câu muốn hỏi là しつもん.
+        error_tag: vocab_meaning
+      - answer: せんせい、しつもんをあります。
+        feedback_vi: Có - が あります, không dùng を.
+        error_tag: particle_ga_wo
+    explanation:
+      vi: しつもん - câu hỏi; N が あります - có N.
+    display_answer: せんせい、しつもんがあります。
+  - key: ja:exercise:school-life-kyoushitsu-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u15-kyoushitsu
+    prompt:
+      source_text: きょうしつにせいとがじゅうごにんいます。しゅくだいがたくさんあります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong lớp học có mười lăm học sinh. Bài tập về nhà có nhiều.
+        - Lớp học có 15 học sinh. Bài tập về nhà nhiều.
+        - Trong lớp có mười lăm học sinh. Có nhiều bài tập về nhà.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trong lớp học có mười học sinh. Bài tập về nhà có ít.
+        feedback_vi: じゅうごにん là 15 người, たくさん là nhiều.
+        error_tag: number
+    explanation:
+      vi: じゅうごにん - 15 người; います - có (người); たくさん - nhiều.
+    display_answer: Trong lớp học có mười lăm học sinh. Bài tập về nhà có nhiều.
+  - key: ja:exercise:school-life-shiken-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-shiken
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tuần sau có kỳ thi nên bây giờ tôi học bài."'
+      tokens:
+        - id: t3
+          text: ありますから、
+        - id: t4
+          text: いま
+        - id: t5
+          text: べんきょうします。
+        - id: t1
+          text: らいしゅう
+        - id: t2
+          text: しけんが
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+          - t5
+    explanation:
+      vi: Lý do (らいしゅうしけんがありますから) đứng trước, rồi kết quả (いまべんきょうします).
+    display_answer: らいしゅうしけんがありますから、いまべんきょうします。
+  - key: ja:exercise:school-life-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-kotae
+    prompt:
+      stem: Bạn muốn hỏi đáp án của câu số 3. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: es0
+          text: ３ばんのこたえはなんですか。
+          lang: ja
+        - id: y2g
+          text: ３ばんのせいとはなんですか。
+          lang: ja
+        - id: ofu
+          text: ３ばんのしつもんはなんですか。
+          lang: ja
+        - id: kl8
+          text: ３ばんのこくばんはなんですか。
+          lang: ja
+    answer:
+      correct_option_id: es0
+    explanation:
+      vi: Hỏi đáp án dùng こたえ. しつもん là câu hỏi của người học, こくばん là bảng, せいと là học sinh.
+    display_answer: ３ばんのこたえはなんですか。

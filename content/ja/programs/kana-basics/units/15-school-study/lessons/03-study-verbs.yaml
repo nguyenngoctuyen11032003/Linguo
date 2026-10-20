@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:study-verbs
+order_index: 3
+level: n5
+title:
+  vi: Học và nói - おしえます・わかります・はなします
+objectives:
+  - vi: "Dùng các động từ học tập: おしえます, わかります, かきます, はなします, いいます, こたえます, まちがえます."
+  - vi: "Gọi tên hoạt động học: れんしゅう, ふくしゅう, よしゅう."
+  - vi: Nhờ nói lại bằng もういちど おねがいします.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:languages-subjects
+items:
+  - item: ja:item:n5-u15-oshiemasu
+  - item: ja:item:n5-u15-wakarimasu
+  - item: ja:item:n5-u15-kakimasu
+  - item: ja:item:n5-u15-hanashimasu
+  - item: ja:item:n5-u15-iimasu
+  - item: ja:item:n5-u15-kotaemasu
+  - item: ja:item:n5-u15-renshuu
+  - item: ja:item:n5-u15-fukushuu
+  - item: ja:item:n5-u15-yoshuu
+  - item: ja:item:n5-u15-machigaemasu
+  - item: ja:item:n5-u15-mou-ichido
+  - item: ja:item:n5-u15-ga-wakarimasu
+    role: reuse
+  - item: ja:item:benkyou-shimasu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được việc học của mình - まいにちふくしゅうします。わからないとき、もういちどおねがいします。
+  - type: explain
+    text:
+      vi: 'Động từ trong lớp: おしえます (dạy), わかります (hiểu), かきます (viết), はなします (nói), いいます (nói, bảo), こたえます (trả lời), まちがえます (làm sai). はなします là "nói chuyện"; いいます là "nói ra điều gì".'
+  - type: explain
+    text:
+      vi: "Hoạt động học: れんしゅう (luyện tập), ふくしゅう (ôn bài), よしゅう (chuẩn bị bài trước). Các từ này thêm します tạo động từ - れんしゅうします, ふくしゅうします, よしゅうします."
+  - type: explain
+    text:
+      vi: Khi không nghe rõ hay chưa hiểu, nói もういちど おねがいします (làm ơn nói lại lần nữa), わかりません (tôi không hiểu). Cũng hay thêm すみません ở đầu. わかります đi với が - にほんごが わかります.
+  - type: deep_explain
+    text:
+      vi: おしえます có hai cách dùng - dạy học (にほんごを おしえます) và chỉ cho biết (みちを おしえます). Người nhận đi với に - ともだちに おしえます. こたえます đi với に - しつもんに こたえます. はなします dùng で cho ngôn ngữ - にほんごで はなします. Chữ Hán - 教えます, 分かります, 書きます, 話します, 言います, 答えます, 練習, 復習, 予習, 間違えます.
+  - type: example
+    target: せんせいはにほんごをおしえます。
+    target_lang: ja
+    translation:
+      vi: Thầy giáo dạy tiếng Nhật.
+    note:
+      vi: おしえます - dạy.
+  - type: example
+    target: すみません、もういちどおねがいします。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, làm ơn nói lại một lần nữa.
+    note:
+      vi: もういちど - một lần nữa.
+  - type: example
+    target: よるにふくしゅうをします。
+    target_lang: ja
+    translation:
+      vi: Buổi tối tôi ôn bài.
+    note:
+      vi: ふくしゅう - ôn bài.
+  - type: example
+    target: こたえをまちがえました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã trả lời sai.
+    note:
+      vi: まちがえました - đã làm sai.
+  - type: common_mistake
+    wrong: にほんごをわかります。
+    right: にほんごがわかります。
+    target_lang: ja
+    note:
+      vi: わかります đi với が, không đi với を.
+  - type: common_mistake
+    wrong: ともだちにはなします。(nói chuyện cùng bạn)
+    right: ともだちとはなします。
+    target_lang: ja
+    note:
+      vi: Nói chuyện cùng ai dùng と (cùng nhau). に dùng khi truyền đạt điều gì tới người nghe, ví dụ ともだちに おしえます.
+  - type: summary
+    points:
+      - vi: おしえます dạy · わかります hiểu · かきます viết · はなします nói · いいます bảo · こたえます trả lời · まちがえます làm sai.
+      - vi: れんしゅう luyện tập · ふくしゅう ôn bài · よしゅう chuẩn bị bài.
+      - vi: もういちど おねがいします - nói lại giúp tôi.
+      - vi: N が わかります - hiểu N.
+exercises:
+  - key: ja:exercise:study-verbs-oshie
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-oshiemasu
+    prompt:
+      stem: Từ nào có nghĩa là “dạy”?
+      stem_lang: vi
+      options:
+        - id: q8w
+          text: わすれます
+          lang: ja
+        - id: vv7
+          text: おしえます
+          lang: ja
+        - id: h41
+          text: ならいます
+          lang: ja
+        - id: s2i
+          text: おぼえます
+          lang: ja
+    answer:
+      correct_option_id: vv7
+    explanation:
+      vi: おしえます là dạy. ならいます là học (từ ai đó), おぼえます là ghi nhớ, わすれます là quên.
+    display_answer: おしえます
+  - key: ja:exercise:study-verbs-wakari
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-wakarimasu
+    prompt:
+      stem: Bạn không hiểu bài. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: w49
+          text: わかっています。
+          lang: ja
+        - id: gq3
+          text: わかりました。
+          lang: ja
+        - id: aj9
+          text: わかりません。
+          lang: ja
+        - id: f1f
+          text: わかります。
+          lang: ja
+    answer:
+      correct_option_id: aj9
+    explanation:
+      vi: わかりません là "tôi không hiểu". わかります là hiểu, わかりました là hiểu rồi (quá khứ), わかっています là đang hiểu.
+    display_answer: わかりません。
+  - key: ja:exercise:study-verbs-fuku
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u15-fukushuu
+    prompt:
+      audio_asset_id: null
+      fallback_text: よるにふくしゅうをします。あしたはよしゅうをします。
+      options:
+        - id: n6n
+          text: Buổi tối tôi chuẩn bị bài trước. Ngày mai tôi ôn bài.
+          lang: vi
+        - id: haw
+          text: Buổi tối tôi đọc sách. Ngày mai tôi đi học.
+          lang: vi
+        - id: ztj
+          text: Buổi sáng tôi ôn bài. Ngày mai tôi làm bài tập.
+          lang: vi
+        - id: p84
+          text: Buổi tối tôi ôn bài. Ngày mai tôi chuẩn bị bài trước.
+          lang: vi
+    answer:
+      correct_option_id: p84
+    explanation:
+      vi: ふくしゅう - ôn bài; よしゅう - chuẩn bị bài trước; よる - buổi tối; あした - ngày mai.
+    display_answer: Buổi tối tôi ôn bài. Ngày mai tôi chuẩn bị bài trước.
+  - key: ja:exercise:study-verbs-renshuu-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-renshuu
+    prompt:
+      template: まいにちにほんごを{{b1}}します。 (Ngày nào tôi cũng luyện tập tiếng Nhật.)
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Danh từ nghĩa là luyện tập.
+        - Bắt đầu bằng れ - れんしゅう.
+    answer:
+      blanks:
+        b1:
+          - れんしゅう
+          - 練習
+    known_wrong:
+      - answer: ふくしゅう
+        feedback_vi: ふくしゅう là ôn bài; "luyện tập" là れんしゅう.
+        error_tag: vocab_meaning
+    explanation:
+      vi: れんしゅう là luyện tập; れんしゅうします - luyện tập.
+    display_answer: まいにちにほんごをれんしゅうします。
+  - key: ja:exercise:study-verbs-mou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-mou-ichido
+    prompt:
+      stem: Bạn chưa nghe rõ, bạn muốn nhờ nói lại một lần nữa. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: wg8
+          text: もういちどおねがいします。
+          lang: ja
+        - id: yhl
+          text: もうおわりおねがいします。
+          lang: ja
+        - id: ej5
+          text: もうすぐおねがいします。
+          lang: ja
+        - id: p2g
+          text: もうすこしおねがいします。
+          lang: ja
+    answer:
+      correct_option_id: wg8
+    explanation:
+      vi: もういちど = một lần nữa. もうすこし là "thêm một chút", もうすぐ là "sắp", không dùng để nhờ nói lại.
+    display_answer: もういちどおねがいします。
+  - key: ja:exercise:study-verbs-wakari-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-ga-wakarimasu
+    prompt:
+      template: このもんだい{{b1}}わかりません。 (Tôi không hiểu câu hỏi này.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - が
+    known_wrong:
+      - answer: を
+        feedback_vi: わかります đi với が, không dùng を.
+        error_tag: particle_ga_wo
+      - answer: は
+        feedback_vi: は nhấn mạnh chủ đề; trong câu này dùng が để đánh dấu đối tượng.
+        error_tag: particle_wa_ga
+    explanation:
+      vi: N が わかりません - không hiểu N.
+    display_answer: このもんだいがわかりません。
+  - key: ja:exercise:study-verbs-machi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-machigaemasu
+    prompt:
+      template: こたえを{{b1}}。 (Tôi đã trả lời sai.)
+      blanks:
+        - id: b1
+          width_hint: 8
+    answer:
+      blanks:
+        b1:
+          - まちがえました
+          - 間違えました
+    known_wrong:
+      - answer: まちがえます
+        feedback_vi: Câu nói về việc đã xảy ra nên cần quá khứ まちがえました.
+        error_tag: tense
+    explanation:
+      vi: まちがえました là quá khứ của まちがえます - đã làm sai.
+    display_answer: こたえをまちがえました。
+  - key: ja:exercise:study-verbs-oshie-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-oshiemasu
+    prompt:
+      source_text: Thầy giáo dạy tiếng Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - せんせいはにほんごをおしえます。
+        - 先生は日本語を教えます。
+        - せんせいがにほんごをおしえます。
+        - 先生が日本語を教えます。
+    known_wrong:
+      - answer: せんせいはにほんごをならいます。
+        feedback_vi: ならいます là học; dạy là おしえます.
+        error_tag: verb_choice
+    explanation:
+      vi: おしえます - dạy; にほんごを - tiếng Nhật (tân ngữ).
+    display_answer: せんせいはにほんごをおしえます。
+  - key: ja:exercise:study-verbs-hanashi-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u15-hanashimasu
+    prompt:
+      source_text: ともだちとにほんごではなします。まちがえますが、れんしゅうします。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi nói chuyện bằng tiếng Nhật với bạn. Tôi hay nói sai nhưng vẫn luyện tập.
+        - Tôi nói chuyện với bạn bằng tiếng Nhật. Tôi nói sai nhưng vẫn luyện tập.
+        - Tôi nói tiếng Nhật với bạn. Tôi có nói sai nhưng vẫn luyện tập.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi nói chuyện bằng tiếng Anh với bạn. Tôi nói sai nhưng vẫn luyện tập.
+        feedback_vi: にほんご là tiếng Nhật, không phải tiếng Anh.
+        error_tag: language
+    explanation:
+      vi: N で はなします - nói bằng N (ngôn ngữ); が ở cuối vế (nhưng) nối hai vế tương phản.
+    display_answer: Tôi nói chuyện bằng tiếng Nhật với bạn. Tôi hay nói sai nhưng vẫn luyện tập.
+  - key: ja:exercise:study-verbs-wakari-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-wakarimasu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Xin lỗi, tôi không hiểu. Làm ơn nói lại một lần nữa."'
+      tokens:
+        - id: t3
+          text: もういちど
+        - id: t2
+          text: わかりません。
+        - id: t4
+          text: おねがいします。
+        - id: t1
+          text: すみません、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Mở lời → báo không hiểu → nhờ nói lại.
+    display_answer: すみません、わかりません。もういちどおねがいします。
+  - key: ja:exercise:study-verbs-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-kotaemasu
+    prompt:
+      stem: Giáo viên hỏi cả lớp và bạn trả lời. Từ nào mô tả hành động của bạn?
+      stem_lang: vi
+      options:
+        - id: xk7
+          text: こたえます
+          lang: ja
+        - id: ikx
+          text: しつもんします
+          lang: ja
+        - id: u7r
+          text: おしえます
+          lang: ja
+        - id: ywo
+          text: かきます
+          lang: ja
+    answer:
+      correct_option_id: xk7
+    explanation:
+      vi: こたえます là trả lời. しつもんします là đặt câu hỏi, おしえます là dạy, かきます là viết.
+    display_answer: こたえます

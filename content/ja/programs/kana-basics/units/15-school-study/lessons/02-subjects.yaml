@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:languages-subjects
+order_index: 2
+level: n5
+title:
+  vi: Ngôn ngữ và môn học - にほんご・えいご・すうがく
+objectives:
+  - vi: "Gọi tên các ngôn ngữ và đất nước: にほんご, えいご, くに, がいこく, がいこくじん, ことば."
+  - vi: "Gọi tên môn học: すうがく, れきし, おんがく, たいいく."
+  - vi: Nói môn mình thích hay giỏi bằng N が すきです / じょうずです.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:school-life
+items:
+  - item: ja:item:n5-u15-nihongo
+  - item: ja:item:n5-u15-eigo
+  - item: ja:item:n5-u15-kuni
+  - item: ja:item:n5-u15-gaikoku
+  - item: ja:item:n5-u15-gaikokujin
+  - item: ja:item:n5-u15-kotoba
+  - item: ja:item:n5-u15-suugaku
+  - item: ja:item:n5-u15-rekishi
+  - item: ja:item:n5-u15-ongaku
+  - item: ja:item:n5-u15-taiiku
+  - item: ja:item:n5-u15-ji
+  - item: ja:item:n5-u15-ga-wakarimasu
+  - item: ja:item:n4-kanji
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về ngôn ngữ và môn học - すうがくがすきです。えいごがすこしわかります。
+  - type: explain
+    text:
+      vi: "Ngôn ngữ ghép với ご (語): にほん + ご = にほんご (tiếng Nhật), えい + ご = えいご (tiếng Anh). Cũng nói ベトナムご, ちゅうごくご. ことば là từ, lời, ngôn ngữ nói chung; じ là chữ viết."
+  - type: explain
+    text:
+      vi: "Đất nước và người nước ngoài: くに (đất nước, quê hương), がいこく (nước ngoài), がいこくじん (người nước ngoài). Hỏi quê hương - おくにはどちらですか (Quê bạn ở đâu?, lịch sự)."
+  - type: explain
+    text:
+      vi: "Các môn học: すうがく (toán), れきし (lịch sử), おんがく (âm nhạc), たいいく (thể dục), にほんご, えいご. Nói thích hay giỏi - すうがくが すきです / えいごが じょうずです (を không dùng)."
+  - type: deep_explain
+    text:
+      vi: Chữ Hán của ご (語) khác với こ trong こうご. Người Nhật gọi chữ viết là じ (字), còn かんじ (漢字, chữ Hán) bạn sẽ gặp ở N4. Phân biệt - ことば (từ ngữ) là cái bạn dùng khi nói, ご (語) là hậu tố chỉ tên một thứ tiếng. Chữ Hán - 日本語, 英語, 国, 外国, 外国人, 言葉, 数学, 歴史, 音楽, 体育, 字.
+  - type: example
+    target: にほんごがすこしわかります。
+    target_lang: ja
+    translation:
+      vi: Tôi hiểu một chút tiếng Nhật.
+    note:
+      vi: N が わかります - hiểu N.
+  - type: example
+    target: すうがくはにがてですが、れきしがすきです。
+    target_lang: ja
+    translation:
+      vi: Tôi học kém toán nhưng thích lịch sử.
+    note:
+      vi: が (nhưng) nối hai vế tương phản.
+  - type: example
+    target: わたしはがいこくじんです。ベトナムからきました。
+    target_lang: ja
+    translation:
+      vi: Tôi là người nước ngoài. Tôi đến từ Việt Nam.
+    note:
+      vi: から きました - đến từ.
+  - type: example
+    target: あたらしいことばをおぼえます。
+    target_lang: ja
+    translation:
+      vi: Tôi ghi nhớ từ mới.
+    note:
+      vi: ことば - từ ngữ.
+  - type: common_mistake
+    wrong: えいごをわかります。
+    right: えいごがわかります。
+    target_lang: ja
+    note:
+      vi: Với わかります, đối tượng đi với が.
+  - type: common_mistake
+    wrong: ベトナムのことばをべんきょうします。(muốn nói tiếng Việt)
+    right: ベトナムごをべんきょうします。
+    target_lang: ja
+    note:
+      vi: Khi nói "học tiếng X", dùng ～ご (にほんご, ベトナムご); ことば nói về "từ" hay "lời".
+  - type: summary
+    points:
+      - vi: にほんご tiếng Nhật · えいご tiếng Anh · ～ご - hậu tố chỉ ngôn ngữ · ことば từ · じ chữ viết.
+      - vi: くに đất nước · がいこく nước ngoài · がいこくじん người nước ngoài.
+      - vi: すうがく toán · れきし lịch sử · おんがく âm nhạc · たいいく thể dục.
+      - vi: N が すきです / わかります / じょうずです.
+exercises:
+  - key: ja:exercise:languages-subjects-nihongo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-nihongo
+    prompt:
+      stem: Từ nào có nghĩa là “tiếng Nhật”?
+      stem_lang: vi
+      options:
+        - id: g6r
+          text: にほんじん
+          lang: ja
+        - id: ii7
+          text: えいご
+          lang: ja
+        - id: yst
+          text: にほん
+          lang: ja
+        - id: gs2
+          text: にほんご
+          lang: ja
+    answer:
+      correct_option_id: gs2
+    explanation:
+      vi: にほんご là tiếng Nhật (ご = ngôn ngữ). にほんじん là người Nhật, にほん là nước Nhật, えいご là tiếng Anh.
+    display_answer: にほんご
+  - key: ja:exercise:languages-subjects-suugaku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-suugaku
+    prompt:
+      stem: Môn học về các con số là môn nào?
+      stem_lang: vi
+      options:
+        - id: er0
+          text: すうがく
+          lang: ja
+        - id: qsm
+          text: れきし
+          lang: ja
+        - id: mja
+          text: たいいく
+          lang: ja
+        - id: gde
+          text: おんがく
+          lang: ja
+    answer:
+      correct_option_id: er0
+    explanation:
+      vi: すうがく là toán học. れきし là lịch sử, おんがく là âm nhạc, たいいく là thể dục.
+    display_answer: すうがく
+  - key: ja:exercise:languages-subjects-kuni
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u15-kuni
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしはがいこくじんです。ベトナムからきました。くには、ベトナムです。
+      options:
+        - id: i5m
+          text: Tôi là người Nhật. Tôi đến từ Nhật. Quê tôi là Nhật.
+          lang: vi
+        - id: jz6
+          text: Tôi là người nước ngoài. Tôi đến từ Việt Nam. Quê tôi là Việt Nam.
+          lang: vi
+        - id: upt
+          text: Tôi là người nước ngoài. Tôi đến từ Hàn Quốc. Quê tôi là Việt Nam.
+          lang: vi
+        - id: u7w
+          text: Tôi là sinh viên nước ngoài. Tôi sống ở Việt Nam. Quê tôi là Hà Nội.
+          lang: vi
+    answer:
+      correct_option_id: jz6
+    explanation:
+      vi: がいこくじん - người nước ngoài; から きました - đến từ; くに - đất nước, quê hương.
+    display_answer: Tôi là người nước ngoài. Tôi đến từ Việt Nam. Quê tôi là Việt Nam.
+  - key: ja:exercise:languages-subjects-ga-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-ga-wakarimasu
+    prompt:
+      template: にほんご{{b1}}わかります。 (Tôi hiểu tiếng Nhật.)
+      blanks:
+        - id: b1
+          width_hint: 2
+      hint_levels:
+        - Trợ từ đánh dấu đối tượng của わかります.
+        - Một chữ - が.
+    answer:
+      blanks:
+        b1:
+          - が
+    known_wrong:
+      - answer: を
+        feedback_vi: わかります đi với が, không dùng を.
+        error_tag: particle_ga_wo
+    explanation:
+      vi: N が わかります - đối tượng của わかる đi với が.
+    display_answer: にほんごがわかります。
+  - key: ja:exercise:languages-subjects-gaikoku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u15-gaikoku
+    prompt:
+      stem: Bạn nói “Tôi đi du lịch nước ngoài”. Từ nào điền vào chỗ trống? ___ へりょこうします。
+      stem_lang: vi
+      options:
+        - id: ql5
+          text: くうこう
+          lang: ja
+        - id: w4j
+          text: ぎんこう
+          lang: ja
+        - id: fk5
+          text: がいこく
+          lang: ja
+        - id: lec
+          text: がっこう
+          lang: ja
+    answer:
+      correct_option_id: fk5
+    explanation:
+      vi: がいこく là nước ngoài. がっこう là trường học, ぎんこう là ngân hàng, くうこう là sân bay - các từ này đều có âm こう giống nhau nên dễ nhầm.
+    display_answer: がいこく
+  - key: ja:exercise:languages-subjects-rekishi-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-rekishi
+    prompt:
+      template: "{{b1}}がすきです。むかしのことをならいます。 (Tôi thích lịch sử. Học về chuyện ngày xưa.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - れきし
+          - 歴史
+    known_wrong:
+      - answer: すうがく
+        feedback_vi: すうがく là toán; chuyện ngày xưa là れきし.
+        error_tag: vocab_meaning
+    explanation:
+      vi: れきし là lịch sử - môn học về quá khứ.
+    display_answer: れきしがすきです。むかしのことをならいます。
+  - key: ja:exercise:languages-subjects-ongaku-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-ongaku
+    prompt:
+      template: まいにち{{b1}}をききます。 (Ngày nào tôi cũng nghe nhạc.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - おんがく
+          - 音楽
+    known_wrong:
+      - answer: れきし
+        feedback_vi: れきし là lịch sử; nghe được là おんがく.
+        error_tag: vocab_meaning
+    explanation:
+      vi: おんがく là âm nhạc. ききます - nghe.
+    display_answer: まいにちおんがくをききます。
+  - key: ja:exercise:languages-subjects-eigo-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-eigo
+    prompt:
+      source_text: Tôi hiểu một chút tiếng Anh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - えいごがすこしわかります。
+        - 英語が少しわかります。
+        - えいごがすこしわかります
+        - わたしはえいごがすこしわかります。
+    known_wrong:
+      - answer: えいごをすこしわかります。
+        feedback_vi: Với わかります, đối tượng dùng が, không dùng を.
+        error_tag: particle_ga_wo
+    explanation:
+      vi: えいご - tiếng Anh; N が わかります - hiểu N; すこし - một chút.
+    display_answer: えいごがすこしわかります。
+  - key: ja:exercise:languages-subjects-suugaku-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u15-suugaku
+    prompt:
+      source_text: すうがくはにがてですが、おんがくがすきです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi học kém toán nhưng thích âm nhạc.
+        - Tôi không giỏi toán nhưng thích âm nhạc.
+        - Toán thì tôi kém, nhưng tôi thích âm nhạc.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi giỏi toán nhưng không thích âm nhạc.
+        feedback_vi: にがて là kém, không giỏi.
+        error_tag: meaning
+    explanation:
+      vi: にがて - kém, không giỏi; が - nhưng (liên từ nối tương phản).
+    display_answer: Tôi học kém toán nhưng thích âm nhạc.
+  - key: ja:exercise:languages-subjects-nihongo-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-nihongo
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi hiểu một chút tiếng Nhật."'
+      tokens:
+        - id: t3
+          text: わかります。
+        - id: t2
+          text: すこし
+        - id: t1
+          text: にほんごが
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Đối tượng (にほんごが) → mức độ (すこし) → động từ (わかります).
+    display_answer: にほんごがすこしわかります。
+  - key: ja:exercise:languages-subjects-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u15-gaikokujin
+    prompt:
+      stem: Bạn đang giới thiệu bản thân là người nước ngoài ở Nhật. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: ptu
+          text: わたしはがいこくじんです。
+          lang: ja
+        - id: xqt
+          text: わたしをがいこくじんです。
+          lang: ja
+        - id: tgz
+          text: わたしはがいこくです。
+          lang: ja
+        - id: v39
+          text: わたしがいこくじんです。
+          lang: ja
+    answer:
+      correct_option_id: ptu
+    explanation:
+      vi: N は N です là mẫu giới thiệu. がいこくじん là "người nước ngoài", còn がいこく là "nước ngoài".
+    display_answer: わたしはがいこくじんです。
