@@ -1,0 +1,600 @@
+# Bài luyện mô phỏng trình độ A1 theo kiểu Start Deutsch 1 do Linguo tự soạn (nguồn src:linguo-demo), số 2. Không phải
+# đề thi của Goethe-Institut, không chép đề thật, sách luyện thi hay Modelltest nào; mọi tên người, địa điểm, cửa
+# hàng là hư cấu, không có số điện thoại hay địa chỉ thật. Nghe: lời thoại trong `script`, ứng dụng đọc bằng giọng
+# máy khi chưa có audio (audio_asset_id: null).
+#
+# Cùng cấu trúc, thang điểm và giả định với goethe-a1-mock-1.yaml (xem phần chú thích đầu file đó): Hören 3 Teile,
+# Lesen 3 Teile, Schreiben 2 Teile; không có Sprechen (schema đề chỉ có listening/reading/writing). Nội dung hoàn
+# toàn mới so với đề số 1. Thời gian là gợi ý luyện tập; ngưỡng "đạt mức" 60% mỗi phần do Linguo tự đặt nên
+# scoring.verified: false. Đáp án short_text chỉ ghi chính tả chuẩn (ä/ö/ü/ß); máy chấm đề de tự gấp ae/oe/ue/ss.
+schema_version: 1
+demo: false
+language: de
+form:
+  key: de:exam:goethe-a1-mock-2
+  family: goethe
+  title_vi: Goethe A1 (Start Deutsch 1) — Bài luyện mô phỏng số 2
+  description_vi: >-
+    Bài luyện mô phỏng trình độ A1 theo kiểu Start Deutsch 1: 10 câu nghe, 10 câu đọc, 3 ô điền biểu mẫu và 1 lời mời
+    khoảng 30 từ. Nội dung do Linguo tự soạn, khác hoàn toàn đề số 1, không chép đề thật, không phải đề thi chính thức;
+    kết quả cho biết bạn đạt mức A1 ở từng phần hay chưa (ngưỡng luyện tập 60%), không quy đổi sang điểm của kỳ thi Goethe.
+  level_from: pre_a1
+  level_to: a1
+  source_key: src:linguo-demo
+  time_limits:
+    listening: 15
+    reading: 20
+    writing: 20
+  scoring:
+    verified: false
+    source_note_vi: >-
+      Ngưỡng đạt (đúng từ 60% số điểm mỗi phần) là ngưỡng luyện tập Linguo tự đặt, không phải cách chấm chính thức
+      của Goethe-Institut (chưa đối chiếu quy chế thi). Thời gian là gợi ý của Linguo. Tin nhắn không được chấm tự động.
+    section_max: {}
+    bands: []
+    pass_ratio: 0.6
+reviewed_by: "Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ"
+reviewed_at: "2026-10-20T12:00:00+07:00"
+questions:
+  # ============================== NGHE (Hören) ==============================
+  # --- Teil 1: hội thoại ngắn ---
+  - key: de:examq:goethe-a1-m2-l01
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Welche Buslinie fährt zum Bahnhof?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Mann: Entschuldigung, fährt der Bus Nummer 5 zum Bahnhof?
+        Frau: Nein, der Fünfer fährt zum Flughafen. Zum Bahnhof fahren Sie mit der Linie 12.
+        Mann: Linie 12? Nicht Linie 21?
+        Frau: Nein, die Zwölf. Die Haltestelle ist dort an der Ecke.
+      options:
+        - { id: a, text: "Linie 5", lang: de }
+        - { id: b, text: "Linie 12", lang: de }
+        - { id: c, text: "Linie 21", lang: de }
+    answer: b
+    explanation:
+      vi: "Người phụ nữ nói rõ “Zum Bahnhof fahren Sie mit der Linie 12” và nhắc lại “Nein, die Zwölf”. Tuyến 5 đi ra sân bay (“der Fünfer fährt zum Flughafen”); tuyến 21 là con số người đàn ông nghe nhầm (zwölf – einundzwanzig dễ lẫn)."
+
+  - key: de:examq:goethe-a1-m2-l02
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was bestellt der Mann?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Kellnerin: Guten Tag, was möchten Sie trinken?
+        Mann: Einen Tee, bitte.
+        Kellnerin: Mit Milch oder mit Zitrone?
+        Mann: Mit Zitrone, bitte. Milch mag ich nicht.
+        Kellnerin: Gern. Möchten Sie auch etwas essen?
+        Mann: Nein, danke.
+      options:
+        - { id: a, text: "Tee mit Zitrone", lang: de }
+        - { id: b, text: "Tee mit Milch", lang: de }
+        - { id: c, text: "Tee und etwas zu essen", lang: de }
+    answer: a
+    explanation:
+      vi: "Người đàn ông gọi trà (“Einen Tee”) với chanh (“Mit Zitrone, bitte”) và nói không thích sữa (“Milch mag ich nicht”). Anh cũng từ chối đồ ăn (“Nein, danke”), nên b và c đều sai."
+
+  - key: de:examq:goethe-a1-m2-l03
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wie alt ist Annas Sohn?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Hast du Kinder, Anna?
+        Anna: Ja, einen Sohn und eine Tochter. Der Sohn ist zehn Jahre alt, die Tochter ist sieben.
+        Frau: Und wie heißen sie?
+        Anna: Der Sohn heißt Tim und die Tochter heißt Lea.
+      options:
+        - { id: a, text: "7 Jahre", lang: de }
+        - { id: b, text: "10 Jahre", lang: de }
+        - { id: c, text: "17 Jahre", lang: de }
+    answer: b
+    explanation:
+      vi: "Anna nói “Der Sohn ist zehn Jahre alt”: con trai 10 tuổi. Bảy tuổi (“sieben”) là tuổi của con gái; 17 là cách nghe nhầm “siebzehn” – ở đây không ai 17 tuổi."
+
+  - key: de:examq:goethe-a1-m2-l04
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_short
+    level_code: pre_a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe đoạn hội thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Welche Hausnummer hat Herr Kim?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Frau: Wo wohnen Sie, Herr Kim?
+        Herr Kim: Ich wohne in der Lindenstraße, Hausnummer vierzehn.
+        Frau: Vierzehn? Nicht vierzig?
+        Herr Kim: Nein, vierzehn. Mein Freund wohnt in Nummer vierzig.
+      options:
+        - { id: a, text: "4", lang: de }
+        - { id: b, text: "14", lang: de }
+        - { id: c, text: "40", lang: de }
+    answer: b
+    explanation:
+      vi: "Herr Kim nói “Hausnummer vierzehn” và xác nhận “Nein, vierzehn”: số nhà 14. Số 40 (“vierzig”) là nhà của bạn anh; vierzehn (14) và vierzig (40) rất dễ nghe nhầm, hãy chú ý đuôi -zehn và -zig."
+
+  # --- Teil 2: thông báo nơi công cộng (đúng/sai) ---
+  - key: de:examq:goethe-a1-m2-l05
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_truefalse
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo ở nhà ga và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Der Zug nach Köln kommt heute pünktlich an.
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Achtung auf Gleis 2! Der Zug nach Köln hat heute leider zwanzig Minuten Verspätung. Ich wiederhole: Der Zug nach Köln hat zwanzig Minuten Verspätung. Wir bitten um Ihr Verständnis.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Thông báo nói tàu đi Köln hôm nay trễ hai mươi phút (“zwanzig Minuten Verspätung”) và nhắc lại, nên tàu không đến đúng giờ. “Verspätung” nghĩa là sự chậm trễ; “pünktlich” là đúng giờ."
+
+  - key: de:examq:goethe-a1-m2-l06
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_truefalse
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo trong siêu thị và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Bananen kosten heute weniger als 1,50 Euro pro Kilo.
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Liebe Kundinnen und Kunden, heute im Angebot: Bananen für nur 1,29 Euro das Kilo. Joghurt, drei Becher für einen Euro. Die Angebote gelten nur heute. Viel Spaß beim Einkaufen!
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "Bananen hôm nay chỉ 1,29 euro một ký (“nur 1,29 Euro das Kilo”), tức dưới 1,50 euro, nên câu đúng. Giá sữa chua (ba hộp một euro) là thông tin khác, không liên quan đến câu hỏi."
+
+  - key: de:examq:goethe-a1-m2-l07
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_truefalse
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe thông báo ở bảo tàng và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Die Führung beginnt heute um 11 Uhr.
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, liebe Gäste. Das Museum öffnet heute erst um 11 Uhr. Die Führung für Gruppen beginnt um 12 Uhr am Eingang. Bitte denken Sie an Ihre Eintrittskarten. Vielen Dank.
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Bảo tàng hôm nay mở cửa lúc 11 giờ (“öffnet heute erst um 11 Uhr”), còn buổi hướng dẫn bắt đầu lúc 12 giờ (“beginnt um 12 Uhr”). Câu nói 11 giờ là giờ mở cửa, không phải giờ bắt đầu buổi hướng dẫn."
+
+  # --- Teil 3: tin nhắn thoại ---
+  - key: de:examq:goethe-a1-m2-l08
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wann treffen sich Paula und Jan?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Hallo Jan, hier ist Paula. Ich kann heute nicht um sechs Uhr kommen, ich muss länger arbeiten. Treffen wir uns um sieben Uhr vor dem Café? Dann haben wir noch Zeit für einen Kaffee. Bis dann, tschüss!
+      options:
+        - { id: a, text: "Um 6 Uhr.", lang: de }
+        - { id: b, text: "Um 7 Uhr.", lang: de }
+        - { id: c, text: "Um 8 Uhr.", lang: de }
+    answer: b
+    explanation:
+      vi: "Paula không đến được lúc 6 giờ vì phải làm thêm (“nicht um sechs Uhr”) và đề nghị gặp lúc 7 giờ trước quán cà phê (“um sieben Uhr vor dem Café”). 6 giờ là giờ hẹn cũ đã bị hủy; 8 giờ không được nhắc đến."
+
+  - key: de:examq:goethe-a1-m2-l09
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Was soll Frau Klein mitbringen?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Guten Tag, Frau Klein, hier ist die Stadtbücherei. Das Buch, das Sie bestellt haben, ist da. Sie können es ab morgen abholen. Bitte bringen Sie Ihren Ausweis mit. Wir sind von 10 bis 18 Uhr für Sie da. Auf Wiederhören!
+      options:
+        - { id: a, text: "Das Buch.", lang: de }
+        - { id: b, text: "Den Ausweis.", lang: de }
+        - { id: c, text: "Geld.", lang: de }
+    answer: b
+    explanation:
+      vi: "Thư viện nhờ bà Klein mang theo chứng minh/giấy tờ tùy thân (“Bitte bringen Sie Ihren Ausweis mit”). Quyển sách là thứ bà đến nhận, không phải thứ mang đến; tiền không được nhắc tới."
+
+  - key: de:examq:goethe-a1-m2-l10
+    section: listening
+    kind: mcq
+    question_type: goethe_listen_announcement
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Nghe tin nhắn thoại và chọn đáp án đúng cho câu hỏi.
+      stem: Wohin geht Sara am Samstag?
+      stem_lang: de
+      audio_asset_id: null
+      script: |-
+        Hallo Mama, hier ist Sara. Am Samstag gehe ich nicht ins Schwimmbad, es ist leider geschlossen. Ich gehe mit Eva in den Park, und danach essen wir Pizza. Bis später, tschüss!
+      options:
+        - { id: a, text: "Ins Schwimmbad.", lang: de }
+        - { id: b, text: "In den Park.", lang: de }
+        - { id: c, text: "Ins Kino.", lang: de }
+    answer: b
+    explanation:
+      vi: "Sara nói “Ich gehe mit Eva in den Park”: thứ Bảy cô đi công viên với Eva. Bể bơi là nơi cô định đi nhưng đóng cửa (“nicht ins Schwimmbad … geschlossen”); rạp chiếu phim không được nhắc đến."
+
+  # ============================== ĐỌC (Lesen) ==============================
+  # --- Teil 1: tin nhắn, e-mail (đúng/sai) ---
+  - key: de:examq:goethe-a1-m2-r01
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc e-mail và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Noras neue Wohnung hat drei Zimmer.
+      stem_lang: de
+      passage: |-
+        Lieber Tim,
+        ich habe jetzt eine neue Wohnung! Sie hat zwei Zimmer, eine Küche und einen Balkon. Die Wohnung ist im dritten Stock, aber es gibt einen Aufzug. Am Samstag mache ich eine kleine Party. Du kommst doch? Die Party beginnt um 19 Uhr. Bring bitte etwas zu trinken mit.
+        Liebe Grüße
+        Nora
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Căn hộ có hai phòng (“zwei Zimmer”), cộng bếp và ban công; ba (“dritten”) là tầng của căn hộ, không phải số phòng. Câu nói ba phòng là sai."
+
+  - key: de:examq:goethe-a1-m2-r02
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc e-mail và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Die Party beginnt am Abend.
+      stem_lang: de
+      passage: |-
+        Lieber Tim,
+        ich habe jetzt eine neue Wohnung! Sie hat zwei Zimmer, eine Küche und einen Balkon. Die Wohnung ist im dritten Stock, aber es gibt einen Aufzug. Am Samstag mache ich eine kleine Party. Du kommst doch? Die Party beginnt um 19 Uhr. Bring bitte etwas zu trinken mit.
+        Liebe Grüße
+        Nora
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "Bữa tiệc bắt đầu lúc 19 giờ (“um 19 Uhr”), tức buổi tối (am Abend), nên câu đúng. Nora cũng nhờ Tim mang theo đồ uống (“etwas zu trinken”), không phải đồ ăn."
+
+  - key: de:examq:goethe-a1-m2-r03
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tin nhắn và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Karim holt das Paket am Freitag ab.
+      stem_lang: de
+      passage: |-
+        Hallo Frau Weiß,
+        ich bin bis Donnerstag nicht zu Hause. Morgen bringt der Postbote ein Paket für mich. Bitte nehmen Sie es an. Ich hole das Paket am Freitag bei Ihnen ab. Vielen Dank!
+        Karim Aziz, Ihr Nachbar
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "Karim viết “Ich hole das Paket am Freitag bei Ihnen ab”: anh đến lấy gói hàng vào thứ Sáu. Anh vắng nhà đến thứ Năm (“bis Donnerstag”) nên không nhận được gói hàng sớm hơn; câu đúng."
+
+  - key: de:examq:goethe-a1-m2-r04
+    section: reading
+    kind: mcq
+    question_type: goethe_read_email
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tin nhắn và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Frau Weiß soll das Paket zur Post bringen.
+      stem_lang: de
+      passage: |-
+        Hallo Frau Weiß,
+        ich bin bis Donnerstag nicht zu Hause. Morgen bringt der Postbote ein Paket für mich. Bitte nehmen Sie es an. Ich hole das Paket am Freitag bei Ihnen ab. Vielen Dank!
+        Karim Aziz, Ihr Nachbar
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Bà Weiß chỉ được nhờ nhận hộ gói hàng (“Bitte nehmen Sie es an”); ông Karim sẽ tự đến lấy (“ich hole das Paket … ab”). Không ai nhờ bà mang gói hàng ra bưu điện."
+
+  # --- Teil 2: chọn quảng cáo A hoặc B ---
+  - key: de:examq:goethe-a1-m2-r05
+    section: reading
+    kind: mcq
+    question_type: goethe_read_ad
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và hai mẩu quảng cáo, chọn quảng cáo phù hợp (A hoặc B).
+      stem: Sie suchen ein Geschenk für Ihre Freundin. Sie möchten ein Buch kaufen. Wo finden Sie das?
+      stem_lang: de
+      passage: |-
+        A: Blumenhaus Rose – Blumen und Pflanzen für jeden Tag. Auch am Sonntag von 10 bis 13 Uhr geöffnet.
+        B: Buchhandlung Schmidt – Bücher, Zeitschriften und Karten. Montag bis Samstag von 9 bis 18 Uhr.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+    answer: b
+    explanation:
+      vi: "Bạn muốn mua sách, nên chọn Buchhandlung (hiệu sách) ở mẩu B, nơi bán sách, tạp chí và thiệp. Mẩu A là cửa hàng hoa (Blumenhaus), không bán sách dù có mở cửa Chủ nhật."
+
+  - key: de:examq:goethe-a1-m2-r06
+    section: reading
+    kind: mcq
+    question_type: goethe_read_ad
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và hai mẩu quảng cáo, chọn quảng cáo phù hợp (A hoặc B).
+      stem: Sie arbeiten bis 17 Uhr. Sie möchten am Abend Deutsch lernen. Welcher Kurs passt?
+      stem_lang: de
+      passage: |-
+        A: Deutsch für Anfänger – Montag und Mittwoch von 8 bis 11 Uhr, im Bürgerzentrum.
+        B: Deutsch für Anfänger – Montag und Mittwoch von 18 bis 20 Uhr, im Bürgerzentrum.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+    answer: b
+    explanation:
+      vi: "Bạn làm việc đến 17 giờ và muốn học buổi tối, nên khóa B (18 đến 20 giờ) phù hợp. Khóa A học từ 8 đến 11 giờ sáng, đúng lúc bạn đang đi làm."
+
+  - key: de:examq:goethe-a1-m2-r07
+    section: reading
+    kind: mcq
+    question_type: goethe_read_ad
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc tình huống và hai mẩu quảng cáo, chọn quảng cáo phù hợp (A hoặc B).
+      stem: Sie haben einen Hund und möchten am Wochenende in eine andere Stadt fahren. Sie brauchen ein Hotel für Hunde. Welche Anzeige passt?
+      stem_lang: de
+      passage: |-
+        A: Hotel Sonne – ruhig, mit Frühstück und Parkplatz. Haustiere sind leider nicht erlaubt.
+        B: Pension Waldblick – mit Garten und Frühstück. Hunde sind bei uns herzlich willkommen.
+      options:
+        - { id: a, text: "Anzeige A", lang: de }
+        - { id: b, text: "Anzeige B", lang: de }
+    answer: b
+    explanation:
+      vi: "Pension Waldblick chào đón chó (“Hunde sind bei uns herzlich willkommen”), nên hợp với bạn. Khách sạn Sonne không cho mang vật nuôi (“Haustiere sind leider nicht erlaubt”); chữ “nicht erlaubt” là phần quyết định."
+
+  # --- Teil 3: biển báo, thông báo (đúng/sai) ---
+  - key: de:examq:goethe-a1-m2-r08
+    section: reading
+    kind: mcq
+    question_type: goethe_read_sign
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo trước cổng trường và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Eltern können hinter der Schule parken.
+      stem_lang: de
+      passage: |-
+        Liebe Eltern,
+        vor dem Schultor dürfen Sie nicht parken! Bitte benutzen Sie den Parkplatz hinter der Schule. Danke!
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "Thông báo cấm đỗ xe trước cổng trường (“vor dem Schultor dürfen Sie nicht parken”) và nhờ phụ huynh dùng bãi đỗ xe sau trường (“den Parkplatz hinter der Schule”), nên phụ huynh được đỗ xe phía sau trường. Câu đúng."
+
+  - key: de:examq:goethe-a1-m2-r09
+    section: reading
+    kind: mcq
+    question_type: goethe_read_sign
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc biển giờ mở cửa của hiệu thuốc và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Am Sonntag ist die Apotheke geöffnet.
+      stem_lang: de
+      passage: |-
+        Apotheke am Markt
+        Montag bis Freitag: 8 bis 18 Uhr
+        Samstag: 8 bis 13 Uhr
+        Sonntag: geschlossen
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: b
+    explanation:
+      vi: "Biển ghi rõ “Sonntag: geschlossen” (Chủ nhật đóng cửa), nên hiệu thuốc không mở vào Chủ nhật. Thứ Bảy mở đến 13 giờ, các ngày trong tuần đến 18 giờ."
+
+  - key: de:examq:goethe-a1-m2-r10
+    section: reading
+    kind: mcq
+    question_type: goethe_read_sign
+    level_code: pre_a1
+    points: 1
+    prompt:
+      instruction_vi: Đọc thông báo trong bể bơi và cho biết câu sau đúng (Richtig) hay sai (Falsch).
+      stem: Man soll vor dem Schwimmen duschen.
+      stem_lang: de
+      passage: |-
+        Liebe Gäste,
+        bitte duschen Sie vor dem Schwimmen. Kinder unter 8 Jahren nur mit Eltern. Vielen Dank!
+      options:
+        - { id: a, text: "Richtig", lang: de }
+        - { id: b, text: "Falsch", lang: de }
+    answer: a
+    explanation:
+      vi: "Thông báo yêu cầu “bitte duschen Sie vor dem Schwimmen” (xin hãy tắm trước khi bơi), nên câu đúng. Dòng thứ hai nói trẻ dưới 8 tuổi chỉ được vào cùng bố mẹ, không liên quan đến câu hỏi."
+
+  # ============================== VIẾT (Schreiben) ==============================
+  # --- Teil 1: điền biểu mẫu (3 ô) ---
+  - key: de:examq:goethe-a1-m2-w01
+    section: writing
+    kind: short_text
+    question_type: goethe_write_form
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: >-
+        Đọc đoạn văn và giúp Linh điền phiếu đăng ký khóa học. Chỉ viết thông tin cho ô (1), một từ.
+      stem: Was schreibt Linh bei (1)?
+      stem_lang: de
+      passage: |-
+        Ihre Freundin Linh Pham möchte in Leipzig einen Deutschkurs machen. Sie ist Anfängerin, sie kann noch nicht gut Deutsch sprechen. Am Vormittag arbeitet Linh in einem Café, deshalb möchte sie am Abend lernen. Der Kurs soll sechs Wochen dauern.
+
+        Sprachkurs – Anmeldung
+        Name: Pham
+        Vorname: Linh
+        Kurs (Anfänger oder Fortgeschrittene): (1) ______
+        Kurszeit (Vormittag, Nachmittag oder Abend): (2) ______
+        Dauer in Wochen: (3) ______
+    answer:
+      - Anfänger
+      - Anfängerin
+      - Anfängerkurs
+    explanation:
+      vi: "Linh là người mới học (“Sie ist Anfängerin”), nên cô chọn khóa dành cho người mới bắt đầu: Anfänger (nam) hoặc Anfängerin (nữ) đều được chấp nhận. Fortgeschrittene là khóa cho người đã học khá hơn."
+
+  - key: de:examq:goethe-a1-m2-w02
+    section: writing
+    kind: short_text
+    question_type: goethe_write_form
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: >-
+        Đọc đoạn văn và giúp Linh điền phiếu đăng ký khóa học. Chỉ viết thông tin cho ô (2), chọn một trong ba từ trong ngoặc.
+      stem: Was schreibt Linh bei (2)?
+      stem_lang: de
+      passage: |-
+        Ihre Freundin Linh Pham möchte in Leipzig einen Deutschkurs machen. Sie ist Anfängerin, sie kann noch nicht gut Deutsch sprechen. Am Vormittag arbeitet Linh in einem Café, deshalb möchte sie am Abend lernen. Der Kurs soll sechs Wochen dauern.
+
+        Sprachkurs – Anmeldung
+        Name: Pham
+        Vorname: Linh
+        Kurs (Anfänger oder Fortgeschrittene): (1) ______
+        Kurszeit (Vormittag, Nachmittag oder Abend): (2) ______
+        Dauer in Wochen: (3) ______
+    answer:
+      - Abend
+      - am Abend
+      - abends
+      - Abendkurs
+    explanation:
+      vi: "Linh làm việc buổi sáng nên muốn học vào buổi tối (“möchte sie am Abend lernen”): viết “Abend” (hoặc “am Abend”, “abends”). Vormittag là giờ cô đang làm việc nên không chọn."
+
+  - key: de:examq:goethe-a1-m2-w03
+    section: writing
+    kind: short_text
+    question_type: goethe_write_form
+    level_code: a1
+    points: 1
+    prompt:
+      instruction_vi: >-
+        Đọc đoạn văn và giúp Linh điền phiếu đăng ký khóa học. Chỉ viết thông tin cho ô (3), bằng chữ số hoặc bằng chữ.
+      stem: Was schreibt Linh bei (3)?
+      stem_lang: de
+      passage: |-
+        Ihre Freundin Linh Pham möchte in Leipzig einen Deutschkurs machen. Sie ist Anfängerin, sie kann noch nicht gut Deutsch sprechen. Am Vormittag arbeitet Linh in einem Café, deshalb möchte sie am Abend lernen. Der Kurs soll sechs Wochen dauern.
+
+        Sprachkurs – Anmeldung
+        Name: Pham
+        Vorname: Linh
+        Kurs (Anfänger oder Fortgeschrittene): (1) ______
+        Kurszeit (Vormittag, Nachmittag oder Abend): (2) ______
+        Dauer in Wochen: (3) ______
+    answer:
+      - "6"
+      - sechs
+      - 6 Wochen
+      - sechs Wochen
+    explanation:
+      vi: "Khóa học kéo dài sáu tuần (“Der Kurs soll sechs Wochen dauern”). Viết “6” hoặc “sechs” là đủ; ô này đã có sẵn chữ “Wochen” nên không cần viết thêm."
+
+  # --- Teil 2: lời mời ≈ 30 từ theo 3 ý ---
+  - key: de:examq:goethe-a1-m2-w04
+    section: writing
+    kind: essay
+    question_type: goethe_write_message
+    level_code: a1
+    points: 10
+    prompt:
+      instruction_vi: >-
+        Viết một tin nhắn ngắn bằng tiếng Đức (khoảng 30 từ) mời một người bạn, trả lời đủ ba ý. Dùng “du” (thân mật),
+        có lời chào và lời kết.
+      stem: |-
+        Sie haben am Samstag Geburtstag und machen eine kleine Feier. Schreiben Sie Ihrem Freund Ben eine Einladung.
+        – Wann beginnt die Feier?
+        – Wo ist die Feier?
+        – Was soll Ben mitbringen?
+        Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter). Vergessen Sie die Anrede und den Gruß nicht.
+      stem_lang: de
+      min_chars: 120
+      max_chars: 600
+    rubric:
+      - key: content
+        label_vi: Nội dung
+        description_vi: Trả lời đủ ba ý (giờ bắt đầu, địa điểm, thứ Ben cần mang); thiếu một ý là mất điểm phần này.
+        max_points: 4
+      - key: organization
+        label_vi: Bố cục
+        description_vi: Có lời chào (Lieber Ben,) và lời kết (Bis Samstag! / Viele Grüße + tên); các câu nối tự nhiên bằng und, aber.
+        max_points: 3
+      - key: language
+        label_vi: Ngôn ngữ
+        description_vi: Dùng du nhất quán, động từ ở vị trí 2 trong câu kể (Am Samstag beginnt die Feier …), mạo từ đúng (ein Getränk, einen Kuchen, eine Flasche Saft); lỗi không làm khó hiểu.
+        max_points: 3
+    sample_answer: |-
+      Lieber Ben,
+      am Samstag habe ich Geburtstag und mache eine kleine Feier. Sie beginnt um 18 Uhr bei mir zu Hause. Kannst du bitte ein Getränk mitbringen? Kommst du auch?
+      Viele Grüße
+      Lan
+    explanation:
+      vi: "Lời mời A1 được chấm trước hết ở việc trả lời đủ ba ý bằng câu ngắn, rõ. Lỗi hay gặp: quên giờ hoặc địa điểm, trộn “du” với “Sie” khi viết cho bạn, đặt động từ sai vị trí sau trạng từ (“Am Samstag ich habe Geburtstag” thay vì “Am Samstag habe ich Geburtstag”)."

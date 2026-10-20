@@ -1,0 +1,4 @@
+# exam-a2-2: Eigennamen in goethe-a2-mock-2 (fiktiv)
+Murat
+ModeLine
+Minka
