@@ -1,0 +1,706 @@
+# Học liệu unit "Nhà cửa, vị trí và đồ dùng" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u12-heya
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 部屋
+      reading: へや
+      romanization: heya
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng
+      examples:
+        - target: わたしのへやはきれいです。
+          translation:
+            vi: Phòng tôi sạch đẹp.
+  - key: ja:item:n5-u12-mado
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 窓
+      reading: まど
+      romanization: mado
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa sổ
+      examples:
+        - target: まどをあけます。
+          translation:
+            vi: Tôi mở cửa sổ.
+  - key: ja:item:n5-u12-doa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ドア
+      romanization: doa
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa ra vào (loại cánh cửa)
+      examples:
+        - target: ドアをしめます。
+          translation:
+            vi: Tôi đóng cửa.
+  - key: ja:item:n5-u12-tsukue
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 机
+      reading: つくえ
+      romanization: tsukue
+      pos: danh từ
+    back:
+      meaning:
+        vi: bàn học, bàn làm việc
+      examples:
+        - target: つくえのうえにほんがあります。
+          translation:
+            vi: Trên bàn học có quyển sách.
+  - key: ja:item:n5-u12-isu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 椅子
+      reading: いす
+      romanization: isu
+      pos: danh từ
+    back:
+      meaning:
+        vi: ghế
+      examples:
+        - target: いすにすわります。
+          translation:
+            vi: Tôi ngồi lên ghế.
+      confusion:
+        vi: いす (ghế) và いし (hòn đá) chỉ khác chữ thứ hai.
+  - key: ja:item:n5-u12-beddo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ベッド
+      romanization: beddo
+      pos: danh từ
+    back:
+      meaning:
+        vi: giường
+      examples:
+        - target: ベッドでねます。
+          translation:
+            vi: Tôi ngủ trên giường.
+  - key: ja:item:n5-u12-denki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 電気
+      reading: でんき
+      romanization: denki
+      pos: danh từ
+    back:
+      meaning:
+        vi: điện; đèn điện
+      examples:
+        - target: でんきをけします。
+          translation:
+            vi: Tôi tắt đèn.
+      pronunciation_note:
+        vi: でんきをつけます / けします = bật / tắt đèn.
+  - key: ja:item:n5-u12-daidokoro
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 台所
+      reading: だいどころ
+      romanization: daidokoro
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà bếp
+      examples:
+        - target: はははだいどころにいます。
+          translation:
+            vi: Mẹ tôi ở trong bếp.
+  - key: ja:item:n5-u12-genkan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 玄関
+      reading: げんかん
+      romanization: genkan
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối vào nhà (nơi cởi giày)
+      examples:
+        - target: げんかんでくつをぬぎます。
+          translation:
+            vi: Tôi cởi giày ở lối vào.
+      pronunciation_note:
+        vi: Nhà Nhật có げんかん thấp hơn sàn - cởi giày trước khi lên sàn.
+  - key: ja:item:n5-u12-niwa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 庭
+      reading: にわ
+      romanization: niwa
+      pos: danh từ
+    back:
+      meaning:
+        vi: vườn, sân vườn
+      examples:
+        - target: うちにはちいさいにわがあります。
+          translation:
+            vi: Nhà tôi có một khu vườn nhỏ.
+  - key: ja:item:n5-u12-kaidan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 階段
+      reading: かいだん
+      romanization: kaidan
+      pos: danh từ
+    back:
+      meaning:
+        vi: cầu thang
+      examples:
+        - target: かいだんでへやへいきます。
+          translation:
+            vi: Tôi đi lên phòng bằng cầu thang.
+  - key: ja:item:n5-u12-eakon
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: エアコン
+      romanization: eakon
+      pos: danh từ
+    back:
+      meaning:
+        vi: máy điều hoà
+      examples:
+        - target: エアコンをつけます。
+          translation:
+            vi: Tôi bật điều hoà.
+  - key: ja:item:n5-u12-hondana
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 本棚
+      reading: ほんだな
+      romanization: hondana
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá sách, kệ sách
+      examples:
+        - target: ほんだなにほんがたくさんあります。
+          translation:
+            vi: Trên giá sách có nhiều sách.
+  - key: ja:item:n5-u12-teeburu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: テーブル
+      romanization: teeburu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái bàn (để ăn, tiếp khách)
+      examples:
+        - target: テーブルのうえにおちゃがあります。
+          translation:
+            vi: Trên bàn có trà.
+      confusion:
+        vi: つくえ là bàn học/làm việc; テーブル là bàn ăn, bàn tiếp khách.
+  - key: ja:item:n5-u12-ue
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 上
+      reading: うえ
+      romanization: ue
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: trên
+      examples:
+        - target: つくえのうえにほんがあります。
+          translation:
+            vi: Trên bàn học có quyển sách.
+  - key: ja:item:n5-u12-shita
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 下
+      reading: した
+      romanization: shita
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: dưới
+      examples:
+        - target: いすのしたにねこがいます。
+          translation:
+            vi: Dưới ghế có con mèo.
+  - key: ja:item:n5-u12-naka
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 中
+      reading: なか
+      romanization: naka
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: trong, bên trong
+      examples:
+        - target: かばんのなかにほんがあります。
+          translation:
+            vi: Trong cặp có quyển sách.
+  - key: ja:item:n5-u12-soto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 外
+      reading: そと
+      romanization: soto
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: ngoài, bên ngoài
+      examples:
+        - target: いえのそとにいぬがいます。
+          translation:
+            vi: Bên ngoài nhà có con chó.
+  - key: ja:item:n5-u12-mae
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 前
+      reading: まえ
+      romanization: mae
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: trước, phía trước
+      examples:
+        - target: えきのまえにぎんこうがあります。
+          translation:
+            vi: Trước ga có ngân hàng.
+  - key: ja:item:n5-u12-ushiro
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 後ろ
+      reading: うしろ
+      romanization: ushiro
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: sau, phía sau
+      examples:
+        - target: いえのうしろににわがあります。
+          translation:
+            vi: Sau nhà có vườn.
+  - key: ja:item:n5-u12-tonari
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 隣
+      reading: となり
+      romanization: tonari
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: bên cạnh, nhà bên
+      examples:
+        - target: ぎんこうのとなりにきっさてんがあります。
+          translation:
+            vi: Cạnh ngân hàng có quán cà phê.
+  - key: ja:item:n5-u12-yoko
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 横
+      reading: よこ
+      romanization: yoko
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: bên cạnh, ngang (sát hông)
+      examples:
+        - target: ドアのよこにかさがあります。
+          translation:
+            vi: Cạnh cửa có cái ô.
+      confusion:
+        vi: となり dùng cho vật cùng loại đứng sát nhau (nhà bên, ghế bên); よこ chỉ vị trí bên hông của một vật.
+  - key: ja:item:n5-u12-aida
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 間
+      reading: あいだ
+      romanization: aida
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: giữa (hai vật)
+      examples:
+        - target: ぎんこうとゆうびんきょくのあいだにこうえんがあります。
+          translation:
+            vi: Giữa ngân hàng và bưu điện có công viên.
+  - key: ja:item:n5-u12-chikaku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 近く
+      reading: ちかく
+      romanization: chikaku
+      pos: danh từ vị trí
+    back:
+      meaning:
+        vi: gần, vùng lân cận
+      examples:
+        - target: えきのちかくにスーパーがあります。
+          translation:
+            vi: Gần ga có siêu thị.
+  - key: ja:item:n5-u12-ichi-ni-arimasu
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - grammar
+    front:
+      text: N1 の + vị trí + に N2 が あります / います
+      romanization: N1 no ue ni N2 ga arimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Nói vị trí của vật hay người: nơi chốn に vật が あります (vật) / います (người, con vật). Vị trí gồm うえ, した, なか, そと, まえ, うしろ, となり, よこ, あいだ, ちかく."
+      examples:
+        - target: つくえのうえにほんがあります。
+          translation:
+            vi: Trên bàn có quyển sách.
+        - target: いすのしたにねこがいます。
+          translation:
+            vi: Dưới ghế có con mèo.
+      confusion:
+        vi: Hỏi vị trí - N は どこに ありますか / いますか; đáp - N は 位置に あります / います. Hai kiểu câu cùng một ý nhưng đổi chủ đề.
+  - key: ja:item:n5-u12-enpitsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 鉛筆
+      reading: えんぴつ
+      romanization: enpitsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bút chì
+      examples:
+        - target: えんぴつでかきます。
+          translation:
+            vi: Tôi viết bằng bút chì.
+  - key: ja:item:n5-u12-pen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ペン
+      romanization: pen
+      pos: danh từ
+    back:
+      meaning:
+        vi: bút (bút bi, bút mực)
+      examples:
+        - target: ペンをかしてください。
+          translation:
+            vi: Cho tôi mượn cây bút.
+  - key: ja:item:n5-u12-keshigomu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 消しゴム
+      reading: けしゴム
+      romanization: keshigomu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cục tẩy
+      examples:
+        - target: けしゴムでけします。
+          translation:
+            vi: Tôi xoá bằng cục tẩy.
+  - key: ja:item:n5-u12-nooto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ノート
+      romanization: nooto
+      pos: danh từ
+    back:
+      meaning:
+        vi: quyển vở
+      examples:
+        - target: ノートにかきます。
+          translation:
+            vi: Tôi viết vào vở.
+  - key: ja:item:n5-u12-jisho
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 辞書
+      reading: じしょ
+      romanization: jisho
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ điển
+      examples:
+        - target: じしょでことばをしらべます。
+          translation:
+            vi: Tôi tra từ bằng từ điển.
+  - key: ja:item:n5-u12-tegami
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 手紙
+      reading: てがみ
+      romanization: tegami
+      pos: danh từ
+    back:
+      meaning:
+        vi: thư, bức thư
+      examples:
+        - target: ともだちにてがみをかきます。
+          translation:
+            vi: Tôi viết thư cho bạn.
+  - key: ja:item:n5-u12-shashin
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 写真
+      reading: しゃしん
+      romanization: shashin
+      pos: danh từ
+    back:
+      meaning:
+        vi: ảnh, bức ảnh
+      examples:
+        - target: かぞくのしゃしんがあります。
+          translation:
+            vi: Có ảnh gia đình.
+      pronunciation_note:
+        vi: しゃ là âm ghép; しん có ん.
+  - key: ja:item:n5-u12-shinbun
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 新聞
+      reading: しんぶん
+      romanization: shinbun
+      pos: danh từ
+    back:
+      meaning:
+        vi: báo, tờ báo
+      examples:
+        - target: まいあさしんぶんをよみます。
+          translation:
+            vi: Sáng nào tôi cũng đọc báo.
+  - key: ja:item:n5-u12-zasshi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 雑誌
+      reading: ざっし
+      romanization: zasshi
+      pos: danh từ
+    back:
+      meaning:
+        vi: tạp chí
+      examples:
+        - target: ざっしをかいます。
+          translation:
+            vi: Tôi mua tạp chí.
+      pronunciation_note:
+        vi: ざっし có っ - ngắt một nhịp trước し.
+  - key: ja:item:n5-u12-megane
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 眼鏡
+      reading: めがね
+      romanization: megane
+      pos: danh từ
+    back:
+      meaning:
+        vi: kính đeo mắt
+      examples:
+        - target: めがねをかけます。
+          translation:
+            vi: Tôi đeo kính.
+  - key: ja:item:n5-u12-boushi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 帽子
+      reading: ぼうし
+      romanization: boushi
+      pos: danh từ
+    back:
+      meaning:
+        vi: mũ, nón
+      examples:
+        - target: ぼうしをかぶります。
+          translation:
+            vi: Tôi đội mũ.
+  - key: ja:item:n5-u12-kippu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 切符
+      reading: きっぷ
+      romanization: kippu
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé (tàu, xe)
+      examples:
+        - target: きっぷをかいます。
+          translation:
+            vi: Tôi mua vé.
+      pronunciation_note:
+        vi: きっぷ có っ; khác きって (tem).
+  - key: ja:item:n5-u12-okane
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: お金
+      reading: おかね
+      romanization: okane
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền
+      examples:
+        - target: おかねがありません。
+          translation:
+            vi: Tôi không có tiền.

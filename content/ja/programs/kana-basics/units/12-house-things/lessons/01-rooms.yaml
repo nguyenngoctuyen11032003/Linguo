@@ -1,0 +1,389 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:rooms-furniture
+order_index: 1
+level: n5
+title:
+  vi: Phòng và đồ nội thất - へや・つくえ・ベッド
+objectives:
+  - vi: "Gọi tên các phòng và bộ phận trong nhà: へや, だいどころ, げんかん, にわ, かいだん."
+  - vi: "Gọi tên đồ nội thất: つくえ, いす, ベッド, ほんだな, テーブル, エアコン."
+  - vi: Nói đồ vật có ở đâu bằng N が あります và hỏi bằng なにが ありますか.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:daily-health
+items:
+  - item: ja:item:n5-u12-heya
+  - item: ja:item:n5-u12-mado
+  - item: ja:item:n5-u12-doa
+  - item: ja:item:n5-u12-tsukue
+  - item: ja:item:n5-u12-isu
+  - item: ja:item:n5-u12-beddo
+  - item: ja:item:n5-u12-denki
+  - item: ja:item:n5-u12-daidokoro
+  - item: ja:item:n5-u12-genkan
+  - item: ja:item:n5-u12-niwa
+  - item: ja:item:n5-u12-kaidan
+  - item: ja:item:n5-u12-eakon
+  - item: ja:item:n5-u12-hondana
+  - item: ja:item:n5-u12-teeburu
+  - item: ja:item:n5-u10-wa-ga-adj
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tả được căn phòng của mình - わたしのへやにはつくえとベッドがあります。- và gọi tên các đồ trong nhà.
+  - type: explain
+    text:
+      vi: "Nhà ở: へや (phòng), だいどころ (bếp), げんかん (lối vào), にわ (vườn), かいだん (cầu thang), まど (cửa sổ), ドア (cửa). げんかん là nơi cởi giày - nhà Nhật có bậc thấp để bạn bỏ giày ở đó."
+  - type: explain
+    text:
+      vi: "Đồ nội thất: つくえ (bàn học), テーブル (bàn ăn, bàn tiếp khách), いす (ghế), ベッド (giường), ほんだな (giá sách), エアコン (điều hoà), でんき (điện, đèn). つくえ và テーブル khác nhau - つくえ để học hoặc làm việc, テーブル để ăn hay tiếp khách."
+  - type: explain
+    text:
+      vi: Nói trong phòng có gì - Nơi chốn に + vật が あります. Ví dụ へやにつくえとベッドがあります (Trong phòng có bàn học và giường). Hỏi - へやになにがありますか。
+  - type: deep_explain
+    text:
+      vi: Bật tắt thiết bị - でんきをつけます (bật đèn), でんきをけします (tắt đèn), エアコンをつけます (bật điều hoà). Mở đóng cửa - まどをあけます (mở cửa sổ), ドアをしめます (đóng cửa). Các động từ あけます, しめます, つけます, けします sẽ được dạy kỹ ở N4. Chữ Hán - 部屋, 窓, 机, 椅子, 電気, 台所, 玄関, 庭, 階段, 本棚.
+  - type: example
+    target: わたしのへやにはつくえとベッドがあります。
+    target_lang: ja
+    translation:
+      vi: Trong phòng tôi có bàn học và giường.
+    note:
+      vi: に + あります - có (vật vô tri) ở nơi chốn.
+  - type: example
+    target: だいどころにテーブルといすがあります。
+    target_lang: ja
+    translation:
+      vi: Trong bếp có bàn và ghế.
+    note:
+      vi: と - và (liệt kê vật).
+  - type: example
+    target: げんかんでくつをぬぎます。
+    target_lang: ja
+    translation:
+      vi: Tôi cởi giày ở lối vào.
+    note:
+      vi: で - nơi diễn ra hành động.
+  - type: example
+    target: へやになにがありますか。- ほんだながあります。
+    target_lang: ja
+    translation:
+      vi: Trong phòng có gì? - Có một giá sách.
+    note:
+      vi: なに - cái gì.
+  - type: common_mistake
+    wrong: へやでつくえがあります。
+    right: へやにつくえがあります。
+    target_lang: ja
+    note:
+      vi: Nói có vật ở đâu dùng に, không dùng で (で dành cho nơi diễn ra hành động).
+  - type: common_mistake
+    wrong: いすはつくえです。(ghế là bàn)
+    right: いすとつくえがあります。
+    target_lang: ja
+    note:
+      vi: Muốn nói "có ghế và bàn" thì dùng と và あります, không nối bằng です.
+  - type: summary
+    points:
+      - vi: へや phòng · だいどころ bếp · げんかん lối vào · にわ vườn · かいだん cầu thang · まど cửa sổ · ドア cửa.
+      - vi: つくえ bàn học · テーブル bàn ăn · いす ghế · ベッド giường · ほんだな giá sách · エアコン điều hoà · でんき đèn.
+      - vi: N に N が あります - có vật ở nơi chốn.
+      - vi: Hỏi - なにが ありますか。
+exercises:
+  - key: ja:exercise:rooms-furniture-tsukue
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-tsukue
+    prompt:
+      stem: Từ nào có nghĩa là “bàn học”?
+      stem_lang: vi
+      options:
+        - id: g88
+          text: いす
+          lang: ja
+        - id: b2u
+          text: まど
+          lang: ja
+        - id: q2k
+          text: ベッド
+          lang: ja
+        - id: t5h
+          text: つくえ
+          lang: ja
+    answer:
+      correct_option_id: t5h
+    explanation:
+      vi: つくえ là bàn học. いす là ghế, ベッド là giường, まど là cửa sổ.
+    display_answer: つくえ
+  - key: ja:exercise:rooms-furniture-isu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-isu
+    prompt:
+      stem: Từ nào có nghĩa là “cái ghế”?
+      stem_lang: vi
+      options:
+        - id: n6a
+          text: いす
+          lang: ja
+        - id: xt3
+          text: いし
+          lang: ja
+        - id: hec
+          text: いぬ
+          lang: ja
+        - id: y3a
+          text: いか
+          lang: ja
+    answer:
+      correct_option_id: n6a
+    explanation:
+      vi: いす là cái ghế. いし là hòn đá, いぬ là con chó, いか là con mực - đều bắt đầu bằng い.
+    display_answer: いす
+  - key: ja:exercise:rooms-furniture-heya
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u12-heya
+    prompt:
+      audio_asset_id: null
+      fallback_text: わたしのへやにはつくえとベッドとほんだながあります。
+      options:
+        - id: etm
+          text: Trong phòng tôi có giường, ghế và điều hoà.
+          lang: vi
+        - id: i6e
+          text: Trong phòng tôi có bàn học, giường và giá sách.
+          lang: vi
+        - id: je7
+          text: Trong bếp có bàn học, giường và giá sách.
+          lang: vi
+        - id: kuz
+          text: Trong phòng tôi có bàn ăn, ghế và giá sách.
+          lang: vi
+    answer:
+      correct_option_id: i6e
+    explanation:
+      vi: へや là phòng; つくえ, ベッド, ほんだな là bàn học, giường, giá sách; と nối ba vật.
+    display_answer: Trong phòng tôi có bàn học, giường và giá sách.
+  - key: ja:exercise:rooms-furniture-kaidan-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-kaidan
+    prompt:
+      template: "{{b1}}でへやへいきます。 (Tôi đi lên phòng bằng cầu thang.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Thứ dùng để đi lên các tầng.
+        - Bắt đầu bằng か - かいだん.
+    answer:
+      blanks:
+        b1:
+          - かいだん
+          - 階段
+    known_wrong:
+      - answer: げんかん
+        feedback_vi: げんかん là lối vào nhà, không phải cầu thang.
+        error_tag: vocab_meaning
+      - answer: まど
+        feedback_vi: まど là cửa sổ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: かいだん là cầu thang; で chỉ phương tiện/cách thức (đi bằng cầu thang).
+    display_answer: かいだんでへやへいきます。
+  - key: ja:exercise:rooms-furniture-niwa
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-niwa
+    prompt:
+      stem: Nhà có một khu vườn nhỏ. Từ nào chỉ “vườn”?
+      stem_lang: vi
+      options:
+        - id: ukr
+          text: にわ
+          lang: ja
+        - id: t7r
+          text: へや
+          lang: ja
+        - id: o85
+          text: ドア
+          lang: ja
+        - id: kzw
+          text: だいどころ
+          lang: ja
+    answer:
+      correct_option_id: ukr
+    explanation:
+      vi: にわ là vườn. へや là phòng, だいどころ là bếp, ドア là cửa.
+    display_answer: にわ
+  - key: ja:exercise:rooms-furniture-denki-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-denki
+    prompt:
+      template: くらいですから、{{b1}}をつけます。 (Trời tối nên tôi bật đèn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - でんき
+          - 電気
+    known_wrong:
+      - answer: エアコン
+        feedback_vi: エアコン là điều hoà; bật đèn khi tối là でんきをつけます.
+        error_tag: vocab_meaning
+    explanation:
+      vi: でんき nghĩa là điện hay đèn điện. でんきをつけます - bật đèn.
+    display_answer: くらいですから、でんきをつけます。
+  - key: ja:exercise:rooms-furniture-hondana-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-hondana
+    prompt:
+      template: "{{b1}}にほんがたくさんあります。 (Trên giá sách có nhiều sách.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - ほんだな
+          - 本棚
+    known_wrong:
+      - answer: つくえ
+        feedback_vi: つくえ là bàn học; giá để sách là ほんだな.
+        error_tag: vocab_meaning
+    explanation:
+      vi: ほんだな = ほん (sách) + だな (kệ) - giá sách.
+    display_answer: ほんだなにほんがたくさんあります。
+  - key: ja:exercise:rooms-furniture-heya-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-heya
+    prompt:
+      source_text: Trong phòng tôi có bàn học và giường.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - わたしのへやにはつくえとベッドがあります。
+        - わたしのへやにつくえとベッドがあります。
+        - 私の部屋には机とベッドがあります。
+        - へやにはつくえとベッドがあります。
+        - へやにつくえとベッドがあります。
+    known_wrong:
+      - answer: わたしのへやでつくえとベッドがあります。
+        feedback_vi: Nơi có vật dùng に, không dùng で.
+        error_tag: particle_ni_de
+      - answer: わたしのへやにつくえとベッドがいます。
+        feedback_vi: Vật vô tri dùng あります; います dành cho người, động vật.
+        error_tag: arimasu_imasu
+    explanation:
+      vi: N に N が あります - có vật ở nơi chốn. と nối hai vật.
+    display_answer: わたしのへやにはつくえとベッドがあります。
+  - key: ja:exercise:rooms-furniture-genkan-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u12-genkan
+    prompt:
+      source_text: げんかんでくつをぬいで、へやにはいります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi cởi giày ở lối vào rồi vào phòng.
+        - Cởi giày ở sảnh vào rồi vào phòng.
+        - Tôi cởi giày ở cửa ra vào rồi đi vào phòng.
+        - Tôi cởi giày ở lối vào rồi bước vào phòng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đi giày ở lối vào rồi vào phòng.
+        feedback_vi: ぬぐ là cởi, không phải đi/mang giày.
+        error_tag: verb_choice
+    explanation:
+      vi: ぬいで là thể て của ぬぐ (cởi); はいります là vào. ～て nối hai hành động theo thứ tự.
+    display_answer: Tôi cởi giày ở lối vào rồi vào phòng.
+  - key: ja:exercise:rooms-furniture-heya-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-heya
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Trong bếp có bàn và ghế."'
+      tokens:
+        - id: t4
+          text: あります。
+        - id: t1
+          text: だいどころに
+        - id: t3
+          text: いすが
+        - id: t2
+          text: テーブルと
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Nơi chốn に → vật 1 と → vật 2 が → あります.
+    display_answer: だいどころにテーブルといすがあります。
+  - key: ja:exercise:rooms-furniture-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-beddo
+    prompt:
+      stem: Bạn muốn nói “Trong phòng tôi có một cái giường”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: svs
+          text: わたしのへやにベッドがいます。
+          lang: ja
+        - id: d4t
+          text: わたしのへやをベッドがあります。
+          lang: ja
+        - id: xnk
+          text: わたしのへやでベッドがあります。
+          lang: ja
+        - id: sd1
+          text: わたしのへやにベッドがあります。
+          lang: ja
+    answer:
+      correct_option_id: sd1
+    explanation:
+      vi: "Có vật vô tri ở nơi chốn: に + あります. で dành cho nơi diễn ra hành động, います dành cho người và động vật, を không dùng ở đây."
+    display_answer: わたしのへやにベッドがあります。

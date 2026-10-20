@@ -1,0 +1,392 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:positions
+order_index: 2
+level: n5
+title:
+  vi: Vị trí - うえ・した・なか・となり
+objectives:
+  - vi: "Gọi tên các từ chỉ vị trí: うえ, した, なか, そと, まえ, うしろ, となり, よこ, あいだ, ちかく."
+  - vi: Nói vị trí bằng N1 の うえ に N2 が あります / います.
+  - vi: Hỏi vị trí bằng どこに ありますか / いますか.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:rooms-furniture
+items:
+  - item: ja:item:n5-u12-ue
+  - item: ja:item:n5-u12-shita
+  - item: ja:item:n5-u12-naka
+  - item: ja:item:n5-u12-soto
+  - item: ja:item:n5-u12-mae
+  - item: ja:item:n5-u12-ushiro
+  - item: ja:item:n5-u12-tonari
+  - item: ja:item:n5-u12-yoko
+  - item: ja:item:n5-u12-aida
+  - item: ja:item:n5-u12-chikaku
+  - item: ja:item:n5-u12-ichi-ni-arimasu
+  - item: ja:item:arimasu-imasu
+    role: reuse
+  - item: ja:item:doko
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được đồ vật hay người ở đâu - つくえのうえにほんがあります。いすのしたにねこがいます。
+  - type: explain
+    text:
+      vi: 'Từ chỉ vị trí đứng sau の: N の うえ (trên N), した (dưới), なか (trong), そと (ngoài), まえ (trước), うしろ (sau), となり (cạnh, nhà bên), よこ (bên hông), あいだ (giữa), ちかく (gần). Thứ tự giống tiếng Việt đảo lại - "trên bàn" là つくえのうえ.'
+  - type: explain
+    text:
+      vi: Mẫu câu - N1 の 位置 に N2 が あります (vật) / います (người, động vật). Ví dụ つくえのうえにほんがあります; いすのしたにねこがいます. Hỏi - N は どこに ありますか。 Đáp - N は 位置 に あります.
+  - type: explain
+    text:
+      vi: "Hai từ となり và よこ khá gần nghĩa nhưng khác nhau - となり dùng cho hai vật cùng loại đứng sát nhau (ぎんこうのとなり: bên cạnh ngân hàng), よこ chỉ bên hông, bên sườn của một vật (ドアのよこ: bên cạnh cửa)."
+  - type: deep_explain
+    text:
+      vi: 'あいだ cần hai danh từ nối bằng と: AとBのあいだ (giữa A và B). Khi nói vị trí của người hay vật, thêm に sau từ chỉ vị trí; nếu không có に (ví dụ すしはつくえのうえです) thì thành câu khẳng định "sushi ở trên bàn" kiểu mô tả. Chữ Hán - 上, 下, 中, 外, 前, 後ろ, 隣, 横, 間, 近く.'
+  - type: example
+    target: つくえのうえにほんがあります。
+    target_lang: ja
+    translation:
+      vi: Trên bàn học có quyển sách.
+    note:
+      vi: うえ - trên; vật vô tri dùng あります.
+  - type: example
+    target: いすのしたにねこがいます。
+    target_lang: ja
+    translation:
+      vi: Dưới ghế có con mèo.
+    note:
+      vi: います - có (con vật, người).
+  - type: example
+    target: ぎんこうのとなりにきっさてんがあります。
+    target_lang: ja
+    translation:
+      vi: Bên cạnh ngân hàng có quán cà phê.
+    note:
+      vi: となり - bên cạnh (cùng loại, sát nhau).
+  - type: example
+    target: えきとぎんこうのあいだにこうえんがあります。
+    target_lang: ja
+    translation:
+      vi: Giữa ga và ngân hàng có công viên.
+    note:
+      vi: A と B の あいだ - giữa A và B.
+  - type: common_mistake
+    wrong: つくえのうえをほんがあります。
+    right: つくえのうえにほんがあります。
+    target_lang: ja
+    note:
+      vi: Vị trí đi với に, không dùng を.
+  - type: common_mistake
+    wrong: いすのしたにねこがあります。
+    right: いすのしたにねこがいます。
+    target_lang: ja
+    note:
+      vi: Con vật và người dùng います, không dùng あります.
+  - type: summary
+    points:
+      - vi: うえ trên · した dưới · なか trong · そと ngoài · まえ trước · うしろ sau · となり cạnh · よこ bên hông · あいだ giữa · ちかく gần.
+      - vi: N1 の 位置 に N2 が あります (vật) / います (người, con vật).
+      - vi: Hỏi - N は どこに ありますか / いますか。
+      - vi: A と B の あいだ - giữa A và B.
+exercises:
+  - key: ja:exercise:positions-shita
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-shita
+    prompt:
+      stem: Từ nào có nghĩa là “dưới”?
+      stem_lang: vi
+      options:
+        - id: p2d
+          text: うえ
+          lang: ja
+        - id: v5n
+          text: まえ
+          lang: ja
+        - id: ykb
+          text: した
+          lang: ja
+        - id: cq9
+          text: なか
+          lang: ja
+    answer:
+      correct_option_id: ykb
+    explanation:
+      vi: した là dưới. うえ là trên, まえ là trước, なか là trong.
+    display_answer: した
+  - key: ja:exercise:positions-naka
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-naka
+    prompt:
+      stem: Từ nào có nghĩa là “trong, bên trong”?
+      stem_lang: vi
+      options:
+        - id: ina
+          text: となり
+          lang: ja
+        - id: cjx
+          text: そと
+          lang: ja
+        - id: ar5
+          text: なか
+          lang: ja
+        - id: hje
+          text: よこ
+          lang: ja
+    answer:
+      correct_option_id: ar5
+    explanation:
+      vi: なか là bên trong; そと là bên ngoài; よこ là bên hông; となり là bên cạnh.
+    display_answer: なか
+  - key: ja:exercise:positions-ichi
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u12-ichi-ni-arimasu
+    prompt:
+      audio_asset_id: null
+      fallback_text: つくえのうえにほんがあります。いすのしたにねこがいます。
+      options:
+        - id: aut
+          text: Dưới bàn học có quyển sách. Trên ghế có con mèo.
+          lang: vi
+        - id: gg7
+          text: Trên bàn học có con mèo. Dưới ghế có quyển sách.
+          lang: vi
+        - id: x2n
+          text: Trên bàn học có quyển sách. Dưới ghế có con mèo.
+          lang: vi
+        - id: cxa
+          text: Trước bàn học có quyển sách. Sau ghế có con mèo.
+          lang: vi
+    answer:
+      correct_option_id: x2n
+    explanation:
+      vi: うえ - trên, した - dưới; あります cho quyển sách, います cho con mèo.
+    display_answer: Trên bàn học có quyển sách. Dưới ghế có con mèo.
+  - key: ja:exercise:positions-ushiro-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-ushiro
+    prompt:
+      template: いえの{{b1}}ににわがあります。 (Sau nhà có vườn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Vị trí ngược với まえ.
+        - Bắt đầu bằng う - うしろ.
+    answer:
+      blanks:
+        b1:
+          - うしろ
+          - 後ろ
+    known_wrong:
+      - answer: まえ
+        feedback_vi: まえ là trước nhà; sau nhà là うしろ.
+        error_tag: position
+      - answer: よこ
+        feedback_vi: よこ là bên hông.
+        error_tag: position
+    explanation:
+      vi: うしろ là phía sau. N の うしろに - ở phía sau N.
+    display_answer: いえのうしろににわがあります。
+  - key: ja:exercise:positions-arimasu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-ichi-ni-arimasu
+    prompt:
+      stem: Chọn câu đúng - いすのしたに ねこが ___。
+      stem_lang: vi
+      options:
+        - id: vpp
+          text: あります
+          lang: ja
+        - id: i74
+          text: います
+          lang: ja
+        - id: c9d
+          text: いません
+          lang: ja
+        - id: lc0
+          text: ありません
+          lang: ja
+    answer:
+      correct_option_id: i74
+    explanation:
+      vi: Mèo là con vật nên dùng います. あります dành cho vật vô tri; ありません/いません là phủ định.
+    display_answer: います
+  - key: ja:exercise:positions-naka-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-naka
+    prompt:
+      template: かばんの{{b1}}にほんがあります。 (Trong cặp có quyển sách.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - なか
+          - 中
+    known_wrong:
+      - answer: うえ
+        feedback_vi: うえ là phía trên; "trong cặp" là なか.
+        error_tag: position
+      - answer: そと
+        feedback_vi: そと là bên ngoài.
+        error_tag: position
+    explanation:
+      vi: なか là bên trong. かばんのなかに - trong cặp.
+    display_answer: かばんのなかにほんがあります。
+  - key: ja:exercise:positions-tonari-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-tonari
+    prompt:
+      template: ぎんこうの{{b1}}にきっさてんがあります。 (Bên cạnh ngân hàng có quán cà phê.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - となり
+          - 隣
+    known_wrong:
+      - answer: まえ
+        feedback_vi: まえ là phía trước.
+        error_tag: position
+      - answer: あいだ
+        feedback_vi: あいだ cần hai danh từ nối bằng と (giữa A và B).
+        error_tag: position
+    explanation:
+      vi: となり là bên cạnh (sát nhau, cùng loại).
+    display_answer: ぎんこうのとなりにきっさてんがあります。
+  - key: ja:exercise:positions-chikaku-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-chikaku
+    prompt:
+      source_text: Gần ga có siêu thị.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - えきのちかくにスーパーがあります。
+        - 駅の近くにスーパーがあります。
+        - えきのちかくにスーパーがあります
+        - えきちかくにスーパーがあります。
+    known_wrong:
+      - answer: えきのちかくでスーパーがあります。
+        feedback_vi: Có vật ở đâu dùng に, không dùng で.
+        error_tag: particle_ni_de
+      - answer: えきのまえにスーパーがいます。
+        feedback_vi: Siêu thị là vật vô tri dùng あります.
+        error_tag: arimasu_imasu
+    explanation:
+      vi: ちかく là gần; N の ちかくに - gần N; スーパー là vật vô tri nên dùng あります.
+    display_answer: えきのちかくにスーパーがあります。
+  - key: ja:exercise:positions-aida-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u12-aida
+    prompt:
+      source_text: えきとぎんこうのあいだにこうえんがあります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Giữa ga và ngân hàng có công viên.
+        - Giữa nhà ga và ngân hàng có một công viên.
+        - Ở giữa ga và ngân hàng có công viên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Giữa công viên và ngân hàng có nhà ga.
+        feedback_vi: A と B の あいだ - giữa A và B; ở đây あいだ là ga và ngân hàng, công viên nằm giữa.
+        error_tag: meaning
+    explanation:
+      vi: A と B の あいだ に C が あります - C nằm giữa A và B.
+    display_answer: Giữa ga và ngân hàng có công viên.
+  - key: ja:exercise:positions-ue-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-ue
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Dưới ghế có con mèo."'
+      tokens:
+        - id: t1
+          text: いすの
+        - id: t4
+          text: います。
+        - id: t3
+          text: ねこが
+        - id: t2
+          text: したに
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: N の vị trí に vật が います. Con mèo là động vật nên dùng います.
+    display_answer: いすのしたにねこがいます。
+  - key: ja:exercise:positions-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-ichi-ni-arimasu
+    prompt:
+      stem: Bạn hỏi “Cái ô ở đâu?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: rbs
+          text: かさはなにがありますか。
+          lang: ja
+        - id: b1y
+          text: かさはどこがいますか。
+          lang: ja
+        - id: qkx
+          text: かさはどこをありますか。
+          lang: ja
+        - id: zge
+          text: かさはどこにありますか。
+          lang: ja
+    answer:
+      correct_option_id: zge
+    explanation:
+      vi: Hỏi vị trí dùng どこに ありますか. を không đi với どこ trong câu này; いますか dành cho người/con vật; なに hỏi "cái gì".
+    display_answer: かさはどこにありますか。

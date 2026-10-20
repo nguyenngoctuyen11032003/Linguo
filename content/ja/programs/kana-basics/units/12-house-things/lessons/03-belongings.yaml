@@ -1,0 +1,383 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:belongings
+order_index: 3
+level: n5
+title:
+  vi: Đồ dùng hằng ngày - えんぴつ・しんぶん・おかね
+objectives:
+  - vi: "Gọi tên đồ dùng học tập và đồ cá nhân: えんぴつ, ペン, ノート, じしょ, めがね, ぼうし."
+  - vi: "Gọi tên đồ vật hay gặp: てがみ, しゃしん, しんぶん, ざっし, きっぷ, おかね."
+  - vi: Hỏi và nói vật của ai - それはだれのですか, わたしのです.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:positions
+items:
+  - item: ja:item:n5-u12-enpitsu
+  - item: ja:item:n5-u12-pen
+  - item: ja:item:n5-u12-keshigomu
+  - item: ja:item:n5-u12-nooto
+  - item: ja:item:n5-u12-jisho
+  - item: ja:item:n5-u12-tegami
+  - item: ja:item:n5-u12-shashin
+  - item: ja:item:n5-u12-shinbun
+  - item: ja:item:n5-u12-zasshi
+  - item: ja:item:n5-u12-megane
+  - item: ja:item:n5-u12-boushi
+  - item: ja:item:n5-u12-kippu
+  - item: ja:item:n5-u12-okane
+  - item: ja:item:kore-sore-are
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi tên được đồ dùng quanh mình và hỏi đồ vật của ai - これはだれのペンですか。- わたしのです。
+  - type: explain
+    text:
+      vi: "Đồ dùng học tập: えんぴつ (bút chì), ペン (bút bi), けしゴム (cục tẩy), ノート (vở), じしょ (từ điển). Giấy tờ: てがみ (thư), しゃしん (ảnh), しんぶん (báo), ざっし (tạp chí), きっぷ (vé)."
+  - type: explain
+    text:
+      vi: "Đồ cá nhân: めがね (kính), ぼうし (mũ), おかね (tiền). Trước おかね có お lịch sự nên hầu như luôn nói おかね. Dùng ～を かけます cho đeo kính (めがねをかけます) và ～を かぶります cho đội mũ (ぼうしをかぶります)."
+  - type: explain
+    text:
+      vi: Hỏi vật của ai - これはだれのですか。 (Cái này của ai?) Trả lời - わたしのです / たなかさんのです. Từ の thay cho danh từ - "của tôi" và không cần nhắc lại tên vật.
+  - type: deep_explain
+    text:
+      vi: "Động từ đi với trang phục và phụ kiện khác nhau - めがねをかけます (đeo kính), ぼうしをかぶります (đội mũ), くつをはきます (đi giày), シャツをきます (mặc áo). Bạn sẽ học các động từ này ở bài về trang phục. きっぷ (vé) khác きって (tem): きっぷ là vé tàu, きって là tem bưu điện. Chữ Hán - 鉛筆, 辞書, 手紙, 写真, 新聞, 雑誌, 眼鏡, 帽子, 切符, お金."
+  - type: example
+    target: これはだれのペンですか。- わたしのです。
+    target_lang: ja
+    translation:
+      vi: Cái bút này của ai? - Của tôi.
+    note:
+      vi: N の です - của N; không cần lặp lại danh từ.
+  - type: example
+    target: まいあさしんぶんをよみます。
+    target_lang: ja
+    translation:
+      vi: Sáng nào tôi cũng đọc báo.
+    note:
+      vi: しんぶん - báo; よみます - đọc.
+  - type: example
+    target: おかねがありませんから、きっぷをかいません。
+    target_lang: ja
+    translation:
+      vi: Vì không có tiền nên tôi không mua vé.
+    note:
+      vi: ありません - không có; かいません là phủ định của かいます.
+  - type: example
+    target: ともだちにてがみをかきます。
+    target_lang: ja
+    translation:
+      vi: Tôi viết thư cho bạn.
+    note:
+      vi: に - cho, tới (người nhận).
+  - type: common_mistake
+    wrong: めがねをかぶります。
+    right: めがねをかけます。
+    target_lang: ja
+    note:
+      vi: Kính dùng かける; かぶる dành cho mũ, nón.
+  - type: common_mistake
+    wrong: これはわたしのペンのです。
+    right: これはわたしのペンです。 / これはわたしのです。
+    target_lang: ja
+    note:
+      vi: Không thêm の thừa sau danh từ. Dùng わたしのペン hoặc わたしの (thay danh từ), không dùng cả hai.
+  - type: summary
+    points:
+      - vi: えんぴつ bút chì · ペン bút · けしゴム tẩy · ノート vở · じしょ từ điển.
+      - vi: てがみ thư · しゃしん ảnh · しんぶん báo · ざっし tạp chí · きっぷ vé · おかね tiền.
+      - vi: めがね kính (かける) · ぼうし mũ (かぶる).
+      - vi: だれのですか - của ai? - わたしのです.
+exercises:
+  - key: ja:exercise:belongings-enpitsu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-enpitsu
+    prompt:
+      stem: Từ nào có nghĩa là “bút chì”?
+      stem_lang: vi
+      options:
+        - id: ubd
+          text: ペン
+          lang: ja
+        - id: no4
+          text: けしゴム
+          lang: ja
+        - id: qtg
+          text: ノート
+          lang: ja
+        - id: ftk
+          text: えんぴつ
+          lang: ja
+    answer:
+      correct_option_id: ftk
+    explanation:
+      vi: えんぴつ là bút chì. ペン là bút bi/bút mực, けしゴム là cục tẩy, ノート là vở.
+    display_answer: えんぴつ
+  - key: ja:exercise:belongings-jisho
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-jisho
+    prompt:
+      stem: Bạn muốn tra nghĩa của một từ. Bạn dùng gì?
+      stem_lang: vi
+      options:
+        - id: sj7
+          text: ざっし
+          lang: ja
+        - id: ezl
+          text: しんぶん
+          lang: ja
+        - id: o0n
+          text: てがみ
+          lang: ja
+        - id: sde
+          text: じしょ
+          lang: ja
+    answer:
+      correct_option_id: sde
+    explanation:
+      vi: じしょ là từ điển - dùng để tra từ. しんぶん là báo, てがみ là thư, ざっし là tạp chí.
+    display_answer: じしょ
+  - key: ja:exercise:belongings-kippu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u12-kippu
+    prompt:
+      audio_asset_id: null
+      fallback_text: おかねがありませんから、きっぷをかいません。
+      options:
+        - id: rd4
+          text: Vì có tiền nên tôi mua vé.
+          lang: vi
+        - id: sqh
+          text: Vì không có thư nên tôi không viết thư.
+          lang: vi
+        - id: i6w
+          text: Vì không có thời gian nên tôi không đi.
+          lang: vi
+        - id: z7o
+          text: Vì không có tiền nên tôi không mua vé.
+          lang: vi
+    answer:
+      correct_option_id: z7o
+    explanation:
+      vi: おかね - tiền; ありません - không có; きっぷ - vé; かいません - không mua.
+    display_answer: Vì không có tiền nên tôi không mua vé.
+  - key: ja:exercise:belongings-megane-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-megane
+    prompt:
+      template: わたしは{{b1}}をかけます。 (Tôi đeo kính.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Vật đeo trên mắt để nhìn rõ.
+        - Bắt đầu bằng め - めがね.
+    answer:
+      blanks:
+        b1:
+          - めがね
+          - 眼鏡
+    known_wrong:
+      - answer: ぼうし
+        feedback_vi: ぼうし là mũ; mũ đi với かぶります, không đi với かけます.
+        error_tag: vocab_meaning
+    explanation:
+      vi: めがね là kính đeo mắt. めがねをかけます - đeo kính.
+    display_answer: わたしはめがねをかけます。
+  - key: ja:exercise:belongings-dare-no
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u12-kippu
+    prompt:
+      stem: Cái ô này của bạn. Ai đó hỏi “これはだれのかさですか。”. Bạn trả lời gì?
+      stem_lang: vi
+      options:
+        - id: e82
+          text: わたしがです。
+          lang: ja
+        - id: zcb
+          text: わたしをです。
+          lang: ja
+        - id: g1a
+          text: わたしにです。
+          lang: ja
+        - id: tan
+          text: わたしのです。
+          lang: ja
+    answer:
+      correct_option_id: tan
+    explanation:
+      vi: Trả lời “của tôi” là わたしのです - の thay cho danh từ. を, が, に không tạo ra nghĩa sở hữu.
+    display_answer: わたしのです。
+  - key: ja:exercise:belongings-shashin-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-shashin
+    prompt:
+      template: かぞくの{{b1}}があります。 (Có ảnh gia đình.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - しゃしん
+          - 写真
+    known_wrong:
+      - answer: てがみ
+        feedback_vi: てがみ là thư; ảnh là しゃしん.
+        error_tag: vocab_meaning
+    explanation:
+      vi: しゃしん là ảnh. かぞくのしゃしん - ảnh của gia đình.
+    display_answer: かぞくのしゃしんがあります。
+  - key: ja:exercise:belongings-tegami-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-tegami
+    prompt:
+      template: ともだちに{{b1}}をかきます。 (Tôi viết thư cho bạn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - てがみ
+          - 手紙
+    known_wrong:
+      - answer: しんぶん
+        feedback_vi: しんぶん là báo; người ta không viết báo gửi bạn.
+        error_tag: vocab_meaning
+      - answer: しゃしん
+        feedback_vi: しゃしん là ảnh; viết gửi bạn là てがみ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: てがみ là thư. ともだちに - cho bạn; かきます - viết.
+    display_answer: ともだちにてがみをかきます。
+  - key: ja:exercise:belongings-shinbun-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-shinbun
+    prompt:
+      source_text: Sáng nào tôi cũng đọc báo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - まいあさしんぶんをよみます。
+        - 毎朝新聞を読みます。
+        - まいあさ、しんぶんをよみます。
+        - あさ、まいにちしんぶんをよみます。
+    known_wrong:
+      - answer: まいあさしんぶんをたべます。
+        feedback_vi: たべます là ăn; đọc báo là よみます.
+        error_tag: verb_choice
+      - answer: まいあさしんぶんをかいます。
+        feedback_vi: かいます là mua, không phải đọc.
+        error_tag: verb_choice
+    explanation:
+      vi: まいあさ là mỗi sáng; しんぶんをよみます - đọc báo.
+    display_answer: まいあさしんぶんをよみます。
+  - key: ja:exercise:belongings-okane-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u12-okane
+    prompt:
+      source_text: おかねがありませんから、ざっしをかいません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì không có tiền nên tôi không mua tạp chí.
+        - Tôi không có tiền nên không mua tạp chí.
+        - Do không có tiền nên tôi không mua tạp chí.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Vì có tiền nên tôi mua tạp chí.
+        feedback_vi: ありません và かいません đều là phủ định.
+        error_tag: negation
+    explanation:
+      vi: "ありませんから - vì không có; かいません - không mua. Câu có hai vế: lý do trước, kết quả sau."
+    display_answer: Vì không có tiền nên tôi không mua tạp chí.
+  - key: ja:exercise:belongings-dare-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-pen
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Cái bút này của ai?"'
+      tokens:
+        - id: t3
+          text: ペンですか。
+        - id: t1
+          text: これは
+        - id: t2
+          text: だれの
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: これは (chủ đề) → だれの (của ai) → ペンですか (danh từ + câu hỏi).
+    display_answer: これはだれのペンですか。
+  - key: ja:exercise:belongings-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u12-boushi
+    prompt:
+      stem: Trời nắng, bạn muốn nói “Tôi đội mũ”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: cho
+          text: ぼうしをよみます。
+          lang: ja
+        - id: zl3
+          text: ぼうしをかけます。
+          lang: ja
+        - id: o75
+          text: ぼうしをかぶります。
+          lang: ja
+        - id: xvg
+          text: ぼうしをのみます。
+          lang: ja
+    answer:
+      correct_option_id: o75
+    explanation:
+      vi: Mũ đi với かぶります (đội). かけます dùng cho kính, のみます là uống, よみます là đọc.
+    display_answer: ぼうしをかぶります。
