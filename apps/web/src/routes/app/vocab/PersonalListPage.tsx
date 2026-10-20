@@ -1,8 +1,9 @@
 import { StaleNote } from '@/components/ui/StaleNote';
-import { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, FileUp, NotebookPen, Pencil, Play, Trash2 } from 'lucide-react';
+import { inputClasses } from '@/components/ui/Input';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
+import { ArrowLeft, Download, FileUp, NotebookPen, Pencil, Play, Search, Trash2 } from 'lucide-react';
 import { Link, useNavigate, useParams } from 'react-router';
-import { LANGUAGES, type PersonalWord } from '@linguo/shared';
+import { LANGUAGES, exportFileName, wordRowsToCsv, type PersonalWord } from '@linguo/shared';
 import { SpeakButton } from '@/components/exercise/SpeakButton';
 import { Button, buttonClasses } from '@/components/ui/Button';
 import { EmptyState } from '@/components/ui/EmptyState';
@@ -10,7 +11,9 @@ import { ErrorState } from '@/components/ui/ErrorState';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { useToast } from '@/components/ui/Toast';
 import { cn } from '@/lib/cn';
+import { downloadTextFile } from '@/lib/download';
 import { playSound } from '@/lib/sound';
+import { WORD_STATE_LABELS, filterWords, type WordStateFilter } from '@/features/personal-vocab/file';
 import { usePersonalLists } from '@/features/personal-vocab/usePersonalLists';
 import { usePersonalWords } from '@/features/personal-vocab/usePersonalWords';
 import { ConfirmDeleteDialog } from './ConfirmDeleteDialog';
@@ -23,12 +26,14 @@ const PAGE_SIZE = 100;
 const ICON_BTN =
   'inline-flex size-11 items-center justify-center rounded-full border border-border bg-text/[0.03] text-muted transition-[background-color,color,scale] duration-150 hover:bg-text/8 hover:text-text active:scale-95';
 
-const STATE_LABELS: Record<PersonalWord['fsrs_state'], string> = {
-  new: 'Mới',
-  learning: 'Đang học',
-  relearning: 'Học lại',
-  review: 'Đã học',
-};
+const STATE_LABELS = WORD_STATE_LABELS;
+const STATE_OPTIONS: ReadonlyArray<{ value: WordStateFilter; label: string }> = [
+  { value: 'all', label: 'Mọi trạng thái' },
+  { value: 'new', label: STATE_LABELS.new },
+  { value: 'learning', label: STATE_LABELS.learning },
+  { value: 'relearning', label: STATE_LABELS.relearning },
+  { value: 'review', label: STATE_LABELS.review },
+];
 
 /** /app/tu-vung-cua-toi/:listId: the words of one list, with import, edit, delete and the review entry. */
 export function PersonalListPage() {
@@ -45,6 +50,10 @@ export function PersonalListPage() {
   const [editing, setEditing] = useState<PersonalWord | null>(null);
   const [removing, setRemoving] = useState<PersonalWord | null>(null);
   const [shown, setShown] = useState(PAGE_SIZE);
+  const [query, setQuery] = useState('');
+  const [stateFilter, setStateFilter] = useState<WordStateFilter>('all');
+  const searchId = useId();
+  const matches = useMemo(() => filterWords(words.words, query, stateFilter), [words.words, query, stateFilter]);
   const importRef = useRef<HTMLButtonElement>(null);
   const renameRef = useRef<HTMLButtonElement>(null);
   const deleteRef = useRef<HTMLButtonElement>(null);
@@ -116,7 +125,8 @@ export function PersonalListPage() {
   /** Computed by the server in the learner's own timezone. */
   const dueCount = list.due_count;
   const items = words.words;
-  const visible = items.slice(0, shown);
+  const filtering = query.trim() !== '' || stateFilter !== 'all';
+  const visible = matches.slice(0, shown);
   /** The server's count stays right when the words themselves failed to load. */
   const wordCount = words.status === 'ready' ? items.length : list.word_count;
 
@@ -152,6 +162,18 @@ export function PersonalListPage() {
         <Button ref={importRef} variant={dueCount > 0 ? 'ghost' : 'accent'} onClick={() => setImporting(true)}>
           <FileUp aria-hidden className="size-5" />
           Nhập từ CSV
+        </Button>
+        <Button
+          variant="ghost"
+          disabled={items.length === 0}
+          hint={items.length === 0 ? 'Danh sách chưa có từ nào để xuất.' : undefined}
+          onClick={() => {
+            downloadTextFile(wordRowsToCsv(items), exportFileName(list.name), 'text/csv;charset=utf-8');
+            toast.show({ tone: 'success', message: `Đã tải ${items.length} từ ra file CSV.` });
+          }}
+        >
+          <Download aria-hidden className="size-5" />
+          Xuất CSV
         </Button>
         <div className="ml-auto flex gap-1.5">
           <button ref={renameRef} type="button" aria-label="Đổi tên" title="Đổi tên" onClick={() => setRenaming(true)} className={ICON_BTN}>
@@ -196,10 +218,73 @@ export function PersonalListPage() {
       )}
 
       {items.length > 0 && (
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-end">
+          <div className="min-w-0 flex-1">
+            <label htmlFor={searchId} className="mb-1 block px-1 text-sm font-medium">
+              Tìm trong danh sách
+            </label>
+            <div className="relative">
+              <Search aria-hidden className="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-muted" />
+              <input
+                id={searchId}
+                type="search"
+                value={query}
+                lang={list.language_code}
+                autoComplete="off"
+                spellCheck={false}
+                maxLength={120}
+                placeholder="Từ, nghĩa, ví dụ hoặc ghi chú"
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  setShown(PAGE_SIZE);
+                }}
+                className={cn(inputClasses(false), 'min-h-11 pl-10')}
+              />
+            </div>
+          </div>
+          <div className="sm:w-52">
+            <label htmlFor={`${searchId}-state`} className="mb-1 block px-1 text-sm font-medium">
+              Trạng thái
+            </label>
+            <select
+              id={`${searchId}-state`}
+              value={stateFilter}
+              onChange={(e) => {
+                setStateFilter(e.target.value as WordStateFilter);
+                setShown(PAGE_SIZE);
+              }}
+              className={cn(inputClasses(false), 'min-h-11 appearance-none py-2 pr-8 text-[15px]')}
+            >
+              {STATE_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>
+                  {o.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+      )}
+      {filtering && items.length > 0 && (
+        <p role="status" className="px-1 text-[15px] text-muted">
+          {matches.length === 0 ? 'Không có từ nào khớp.' : `${matches.length} trên ${items.length} từ khớp.`}{' '}
+          <button
+            type="button"
+            onClick={() => {
+              setQuery('');
+              setStateFilter('all');
+            }}
+            className="min-h-11 font-semibold underline"
+          >
+            Xoá bộ lọc
+          </button>
+        </p>
+      )}
+
+      {matches.length > 0 && (
         <div role="region" aria-label="Các từ trong danh sách" tabIndex={0} className="max-w-full overflow-x-auto card">
           <table className="w-full min-w-0 text-left text-[15px]">
             <caption className="sr-only">
-              Danh sách {items.length} từ của “{list.name}”
+              Danh sách {matches.length === items.length ? `${items.length} từ` : `${matches.length} trên ${items.length} từ`} của “{list.name}”
             </caption>
             <thead className="bg-text/[0.04] text-xs uppercase tracking-[0.06em] text-muted">
               <tr>
@@ -289,14 +374,15 @@ export function PersonalListPage() {
           </table>
         </div>
       )}
-      {items.length > shown && (
+      {matches.length > shown && (
         <Button variant="ghost" block onClick={() => setShown((n) => n + PAGE_SIZE)}>
-          Hiện thêm {Math.min(PAGE_SIZE, items.length - shown)} từ
+          Hiện thêm {Math.min(PAGE_SIZE, matches.length - shown)} từ
         </Button>
       )}
 
       <ImportDialog
         open={importing}
+        language={list.language_code}
         existingCount={items.length}
         triggerRef={importRef}
         onClose={() => setImporting(false)}

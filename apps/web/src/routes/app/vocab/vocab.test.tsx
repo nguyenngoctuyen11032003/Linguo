@@ -1,8 +1,8 @@
-import { screen, waitFor, within } from '@testing-library/react';
+import { fireEvent, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Route, Routes } from 'react-router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import type { PersonalList, PersonalWord } from '@linguo/shared';
+import { buildSampleCsv, parsePersonalVocabCsv, type PersonalList, type PersonalWord } from '@linguo/shared';
 import { LIST_ID, fakeVocabClient, personalCard, personalList, personalWord } from '@/features/personal-vocab/personal-fixtures';
 import { TEST_PATH } from '../../../../tests/unit/learning-fixtures';
 import { renderWithProviders } from '../../../../tests/unit/render';
@@ -10,8 +10,9 @@ import { PersonalListPage } from './PersonalListPage';
 import { PersonalListsPage } from './PersonalListsPage';
 import { PersonalReviewPage } from './PersonalReviewPage';
 
-const mocks = vi.hoisted(() => ({ client: null as unknown }));
+const mocks = vi.hoisted(() => ({ client: null as unknown, download: vi.fn() }));
 vi.mock('@/lib/supabase', () => ({ getSupabase: () => mocks.client }));
+vi.mock('@/lib/download', () => ({ downloadTextFile: mocks.download }));
 
 let lists: PersonalList[];
 let words: PersonalWord[];
@@ -63,6 +64,7 @@ function backend() {
 
 beforeEach(() => {
   localStorage.setItem('linguo-reduce-motion', 'true');
+  mocks.download.mockClear();
   lists = [];
   words = [];
   backend();
@@ -508,5 +510,212 @@ describe('focus and wording', () => {
     await finishOneCard();
     expect(screen.getByText(/Còn 3 từ đến hạn hôm nay/)).toBeInTheDocument();
     expect(screen.getByRole('button', { name: 'Ôn tiếp các từ còn lại' })).toBeInTheDocument();
+  });
+});
+
+describe('lists in every language (ja, de, ko, en)', () => {
+  const openList = () =>
+    renderWithProviders(
+      <Routes>
+        <Route path="/app/tu-vung-cua-toi" element={<PersonalListsPage />} />
+        <Route path="/app/tu-vung-cua-toi/:listId" element={<PersonalListPage />} />
+      </Routes>,
+      { route: `/app/tu-vung-cua-toi/${LIST_ID}` },
+    );
+
+  async function openImport(user: ReturnType<typeof userEvent.setup>) {
+    await user.click(await screen.findByRole('button', { name: 'Nhập từ CSV' }));
+    return screen.findByRole('dialog', { name: 'Nhập từ CSV' });
+  }
+
+  it.each([
+    ['ja', 'Tiếng Nhật', 'りんご', /[\u3040-\u30ff]/],
+    ['de', 'Tiếng Đức', 'Apfel', /Äpfel/],
+    ['ko', 'Tiếng Hàn', '사과', /[\uac00-\ud7af]/],
+    ['en', 'Tiếng Anh', 'apple', /apple/],
+  ] as const)('a %s list shows its own example, tags the text with its language and offers its own sample file', async (code, name, term, pattern) => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: 'Danh sách', language_code: code })];
+    words = [personalWord({ term, meaning: 'quả táo' })];
+    openList();
+    const table = await screen.findByRole('table', { name: /Danh sách 1 từ/ });
+    expect(within(table).getByText(term)).toHaveAttribute('lang', code);
+    expect(screen.getByText(new RegExp(name, 'i'))).toBeInTheDocument();
+
+    const dialog = await openImport(user);
+    const hint = dialog.querySelector('pre');
+    expect(hint).toHaveAttribute('lang', code);
+    expect(hint?.textContent).toMatch(pattern);
+    expect(within(dialog).getByLabelText('Hoặc dán danh sách vào đây')).toHaveAttribute('lang', code);
+
+    await user.click(within(dialog).getByRole('button', { name: new RegExp(`Tải file mẫu \\(${name.toLowerCase()}\\)`) }));
+    expect(mocks.download).toHaveBeenCalledTimes(1);
+    const [text, fileName, type] = mocks.download.mock.calls[0] as [string, string, string];
+    expect(fileName).toBe(`mau-tu-vung-${code}.csv`);
+    expect(type).toContain('text/csv');
+    expect(text).toBe(buildSampleCsv(code));
+    // The sample is exactly what the importer accepts.
+    expect(parsePersonalVocabCsv(text).errors).toEqual([]);
+  });
+
+  it('reads Japanese kana, German umlauts and Korean hangul pasted into the box and previews them tagged with the list language', async () => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: 'Deutsch', language_code: 'de' })];
+    openList();
+    const dialog = await openImport(user);
+    await user.click(within(dialog).getByLabelText('Hoặc dán danh sách vào đây'));
+    await user.paste('Wort;Bedeutung;Beispiel\n"der Apfel, Äpfel";quả táo;"Ich esse einen Apfel; er ist rot."\nStraße;đường phố;');
+    await user.click(within(dialog).getByRole('button', { name: 'Xem trước' }));
+    const preview = await within(dialog).findByRole('table', { name: /Xem trước 2 trên 2 từ/ });
+    expect(within(preview).getByText('der Apfel, Äpfel')).toBeInTheDocument();
+    expect(within(preview).getByText('der Apfel, Äpfel').closest('td')).toHaveAttribute('lang', 'de');
+    expect(within(preview).getByText('Ich esse einen Apfel; er ist rot.')).toBeInTheDocument();
+    expect(within(preview).getByText('Straße')).toBeInTheDocument();
+  });
+
+  it('reads a Shift_JIS file for a Japanese list and says which code page it used', async () => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: '日本語', language_code: 'ja' })];
+    openList();
+    const dialog = await openImport(user);
+    // "あ,quả" / "い,lê" with the Shift_JIS bytes of あ (82 A0) and い (82 A2).
+    const bytes = new Uint8Array([0x82, 0xa0, 0x2c, 0x61, 0x0a, 0x82, 0xa2, 0x2c, 0x62]);
+    await user.upload(within(dialog).getByLabelText('Chọn file CSV'), new File([bytes], 'tu.csv', { type: 'text/csv' }));
+    const preview = await within(dialog).findByRole('table', { name: /Xem trước 2 trên 2 từ/ });
+    expect(within(preview).getByText('あ')).toBeInTheDocument();
+    expect(within(preview).getByText('い')).toBeInTheDocument();
+    expect(within(dialog).getByRole('note')).toHaveTextContent('Shift_JIS');
+    expect(within(dialog).getByRole('note')).toHaveTextContent('CSV UTF-8');
+  });
+
+  it('reads the UTF-16 tab-separated file of Excel "Unicode Text" without any warning', async () => {
+    const user = userEvent.setup();
+    lists = [personalList({ name: 'TOPIK', language_code: 'ko' })];
+    openList();
+    const dialog = await openImport(user);
+    const text = 'Từ\tNghĩa\n사과\tquả táo\n학교\ttrường học\n';
+    const units = [0xfeff, ...Array.from(text, (c) => c.charCodeAt(0))];
+    const bytes = new Uint8Array(units.length * 2);
+    const view = new DataView(bytes.buffer);
+    units.forEach((u, i) => view.setUint16(i * 2, u, true));
+    await user.upload(within(dialog).getByLabelText('Chọn file CSV'), new File([bytes], 'tu.txt', { type: 'text/plain' }));
+    const preview = await within(dialog).findByRole('table', { name: /Xem trước 2 trên 2 từ/ });
+    expect(within(preview).getByText('사과')).toBeInTheDocument();
+    expect(within(dialog).queryByRole('note')).not.toBeInTheDocument();
+  });
+
+  it('shows what each bad line contains, and lists the repeated terms', async () => {
+    const user = userEvent.setup();
+    lists = [personalList()];
+    openList();
+    const dialog = await openImport(user);
+    await user.click(within(dialog).getByLabelText('Hoặc dán danh sách vào đây'));
+    await user.paste('word,meaning\nlonely,\n,thiếu từ\napple,quả táo\nApple,trùng\nApple,lại trùng');
+    await user.click(within(dialog).getByRole('button', { name: 'Xem trước' }));
+    const errors = await within(dialog).findByRole('table', { name: /2 dòng có lỗi/ });
+    expect(within(errors).getByRole('columnheader', { name: 'Nội dung dòng' })).toBeInTheDocument();
+    expect(within(errors).getByRole('cell', { name: 'lonely' })).toBeInTheDocument();
+    expect(within(errors).getByRole('cell', { name: 'thiếu từ' })).toBeInTheDocument();
+    const summary = within(dialog).getByText('Xem các dòng trùng từ (2)');
+    await user.click(summary);
+    expect(within(dialog).getByText(/Dòng 5:/)).toHaveTextContent('Dòng 5: Apple trùng với dòng 4');
+    expect(within(dialog).getByText(/Dòng 6:/)).toHaveTextContent('Dòng 6: Apple trùng với dòng 4');
+  });
+});
+
+describe('export, search and filter', () => {
+  const openList = () =>
+    renderWithProviders(
+      <Routes>
+        <Route path="/app/tu-vung-cua-toi/:listId" element={<PersonalListPage />} />
+      </Routes>,
+      { route: `/app/tu-vung-cua-toi/${LIST_ID}` },
+    );
+
+  beforeEach(() => {
+    lists = [personalList({ name: 'Từ vựng TOPIK', language_code: 'ko', due_count: 1 })];
+    words = [
+      personalWord({ term: '사과', meaning: 'quả táo', example: '사과를 먹어요.', pronunciation: 'sagwa', fsrs_state: 'new' }),
+      personalWord({ term: '학교', meaning: 'trường học', note: 'danh từ', fsrs_state: 'learning' }),
+      personalWord({ term: '물', meaning: 'nước', fsrs_state: 'review' }),
+      personalWord({ term: '=SUM(1)', meaning: '+84 là mã vùng', fsrs_state: 'relearning' }),
+    ];
+  });
+
+  it('exports every word as a CSV that imports back, named after the list', async () => {
+    const user = userEvent.setup();
+    openList();
+    await user.click(await screen.findByRole('button', { name: 'Xuất CSV' }));
+    expect(mocks.download).toHaveBeenCalledTimes(1);
+    const [text, fileName, type] = mocks.download.mock.calls[0] as [string, string, string];
+    expect(fileName).toBe('tu-vung-từ-vựng-topik.csv');
+    expect(type).toContain('text/csv');
+    expect(text.startsWith('\ufeff')).toBe(true);
+    expect(text).toContain('\r\n');
+    const parsed = parsePersonalVocabCsv(text);
+    expect(parsed.errors).toEqual([]);
+    expect(parsed.rows.map((r) => [r.term, r.meaning])).toEqual([
+      ['사과', 'quả táo'],
+      ['학교', 'trường học'],
+      ['물', 'nước'],
+      ['=SUM(1)', '+84 là mã vùng'],
+    ]);
+    expect(parsed.rows[0]).toMatchObject({ example: '사과를 먹어요.', pronunciation: 'sagwa' });
+    expect(await screen.findByText('Đã tải 4 từ ra file CSV.')).toBeInTheDocument();
+  });
+
+  it('exports all words even while a filter is active', async () => {
+    const user = userEvent.setup();
+    openList();
+    await user.type(await screen.findByLabelText('Tìm trong danh sách'), '물');
+    await user.click(screen.getByRole('button', { name: 'Xuất CSV' }));
+    expect(parsePersonalVocabCsv((mocks.download.mock.calls[0] as [string])[0]).rows).toHaveLength(4);
+  });
+
+  it('disables the export for an empty list', async () => {
+    words = [];
+    lists = [personalList({ word_count: 0, due_count: 0 })];
+    openList();
+    expect(await screen.findByRole('button', { name: 'Xuất CSV' })).toBeDisabled();
+  });
+
+  it('searches the term, meaning, example and note, ignoring case and Vietnamese accents', async () => {
+    const user = userEvent.setup();
+    openList();
+    const search = await screen.findByLabelText('Tìm trong danh sách');
+    fireEvent.change(search, { target: { value: 'QUA TAO' } });
+    const table = await screen.findByRole('table', { name: /Danh sách 1 trên 4 từ/ });
+    expect(within(table).getByRole('cell', { name: '사과' })).toBeInTheDocument();
+    expect(within(table).queryByRole('cell', { name: '학교' })).not.toBeInTheDocument();
+    expect(screen.getByText(/1 trên 4 từ khớp./)).toBeInTheDocument();
+
+    fireEvent.change(search, { target: { value: 'danh từ' } });
+    expect(await screen.findByRole('cell', { name: /학교/ })).toBeInTheDocument();
+    fireEvent.change(search, { target: { value: '먹어요' } });
+    expect(await screen.findByRole('cell', { name: '사과' })).toBeInTheDocument();
+    expect(screen.queryByRole('cell', { name: '학교' })).not.toBeInTheDocument();
+  });
+
+  it('filters by state and clears every filter at once', async () => {
+    const user = userEvent.setup();
+    openList();
+    await user.selectOptions(await screen.findByLabelText('Trạng thái'), 'review');
+    expect(await screen.findByRole('table', { name: /Danh sách 1 trên 4 từ/ })).toBeInTheDocument();
+    expect(screen.getByRole('cell', { name: '물' })).toBeInTheDocument();
+    await user.type(screen.getByLabelText('Tìm trong danh sách'), 'zzz');
+    expect(await screen.findByText(/Không có từ nào khớp/)).toBeInTheDocument();
+    expect(screen.queryByRole('table')).not.toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: 'Xoá bộ lọc' }));
+    expect(await screen.findByRole('table', { name: /Danh sách 4 từ/ })).toBeInTheDocument();
+    expect(screen.getByLabelText('Trạng thái')).toHaveValue('all');
+    expect(screen.getByLabelText('Tìm trong danh sách')).toHaveValue('');
+  });
+
+  it('shows no search box for an empty list', async () => {
+    words = [];
+    lists = [personalList({ word_count: 0, due_count: 0 })];
+    openList();
+    expect(await screen.findByRole('heading', { name: 'Danh sách đang trống' })).toBeInTheDocument();
+    expect(screen.queryByLabelText('Tìm trong danh sách')).not.toBeInTheDocument();
   });
 });
