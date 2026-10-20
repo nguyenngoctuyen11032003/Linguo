@@ -1,10 +1,12 @@
+import { unguardCsvCell } from '../csv-export';
 import { cleanPersonalText, personalTermKey, type PersonalWordRow } from './contract';
 import { PERSONAL_VOCAB_LIMITS as L } from './limits';
 
 // Client-side CSV parser for personal vocabulary (spec P2). Pure and synchronous: the file is read as text by the
 // browser, size-checked here before anything is tokenised, and every cell stays plain text. Cells starting with
-// = + - @ are NOT altered or evaluated (nothing here renders HTML or exports back to a spreadsheet); React escapes
-// them when shown.
+// = + - @ are NOT evaluated and React escapes them when shown. The one alteration: the export (csv-export.ts) puts an
+// apostrophe in front of such cells so that spreadsheets do not run them, and the parser takes that apostrophe off
+// again (unguardCsvCell), so an exported list imports back unchanged.
 
 export type CsvFileError =
   /** The file is larger than PERSONAL_VOCAB_LIMITS.maxCsvBytes: refused without parsing. */
@@ -27,6 +29,8 @@ export interface CsvRowError {
   /** 1-based physical line where the record starts. */
   line: number;
   reason: CsvRowErrorReason;
+  /** The start of the record's cells (cleaned, joined with " | ", at most EXCERPT_CHARS), to find it in the file. */
+  excerpt?: string;
 }
 
 export interface ParsedWordRow extends PersonalWordRow {
@@ -62,16 +66,37 @@ export interface CsvParseResult {
 }
 
 export const MAX_REPORTED_ERRORS = 200;
+/** Longest excerpt of a record kept with a row error. */
+export const EXCERPT_CHARS = 60;
 
 type Field = 'term' | 'meaning' | 'example' | 'note' | 'pronunciation';
 
-/** Header names (lower-cased, without diacritics) that identify a column. */
+/**
+ * Header names that identify a column, in Vietnamese, English, Korean, Japanese and German. Compared after
+ * {@link headerKey} (lower-cased, diacritics and dakuten dropped), which is applied to these spellings too.
+ */
 const HEADER_ALIASES: Record<Field, readonly string[]> = {
-  term: ['word', 'term', 'vocab', 'vocabulary', 'front', 'headword', 'tu', 'tu vung', 'tu moi', '단어', '어휘'],
-  meaning: ['meaning', 'definition', 'translation', 'back', 'vietnamese', 'nghia', 'y nghia', 'nghia cua tu', '뜻', '의미'],
-  example: ['example', 'sentence', 'example sentence', 'vi du', 'cau vi du', '예문'],
-  note: ['note', 'notes', 'comment', 'ghi chu', '메모'],
-  pronunciation: ['pronunciation', 'pron', 'ipa', 'romanization', 'phat am', 'phien am', '발음'],
+  term: [
+    'word', 'term', 'vocab', 'vocabulary', 'front', 'headword', 'tu', 'tu vung', 'tu moi',
+    'tieng anh', 'tieng han', 'tieng nhat', 'tieng duc', 'english', 'korean', 'japanese', 'german',
+    '단어', '어휘', '한국어',
+    '単語', '語彙', '言葉', 'ことば', '日本語',
+    'wort', 'vokabel', 'vokabeln', 'begriff', 'deutsch',
+  ],
+  meaning: [
+    'meaning', 'definition', 'translation', 'back', 'vietnamese', 'nghia', 'y nghia', 'nghia cua tu', 'tieng viet', 'nghia tieng viet',
+    '뜻', '의미', '번역', '베트남어',
+    '意味', '訳', '訳語', '和訳', 'ベトナム語',
+    'bedeutung', 'übersetzung', 'uebersetzung', 'vietnamesisch',
+  ],
+  example: ['example', 'sentence', 'example sentence', 'vi du', 'cau vi du', '예문', '例文', '例', 'beispiel', 'beispielsatz', 'satz'],
+  note: ['note', 'notes', 'comment', 'ghi chu', '메모', '비고', 'メモ', '備考', 'notiz', 'notizen', 'anmerkung', 'bemerkung'],
+  pronunciation: [
+    'pronunciation', 'pron', 'ipa', 'romanization', 'phat am', 'phien am', 'cach doc',
+    '발음', '로마자',
+    '読み', 'よみ', '読み方', 'ふりがな', 'フリガナ', 'ひらがな', 'ローマ字', 'romaji', 'reading',
+    'aussprache', 'lautschrift',
+  ],
 };
 const FIELDS: readonly Field[] = ['term', 'meaning', 'example', 'note', 'pronunciation'];
 /** Column order when there is no header row. */
@@ -104,6 +129,15 @@ function headerKey(cell: string): string {
     // Hangul (and anything else that decomposes) goes back to its composed form to match the aliases.
     .normalize('NFC');
 }
+
+const keysOf = (field: Field): ReadonlySet<string> => new Set(HEADER_ALIASES[field].map(headerKey));
+const HEADER_KEYS: Record<Field, ReadonlySet<string>> = {
+  term: keysOf('term'),
+  meaning: keysOf('meaning'),
+  example: keysOf('example'),
+  note: keysOf('note'),
+  pronunciation: keysOf('pronunciation'),
+};
 
 interface RawRecord {
   line: number;
@@ -185,6 +219,15 @@ function tokenize(text: string, delimiter: CsvDelimiter, limit = Infinity): RawR
   return records;
 }
 
+/** The start of a record for an error message: its cleaned, non-empty cells joined with " | ". */
+function excerptOf(record: RawRecord): string {
+  const text = record.fields
+    .map((f) => cleanPersonalText(f))
+    .filter((f): f is string => f !== null)
+    .join(' | ');
+  return text.length > EXCERPT_CHARS ? `${text.slice(0, EXCERPT_CHARS - 1)}…` : text;
+}
+
 function isBlank(record: RawRecord): boolean {
   return !record.tooLong && !record.unterminated && record.fields.every((f) => cleanPersonalText(f) === null);
 }
@@ -218,7 +261,7 @@ function readHeader(fields: string[]): Partial<Record<Field, number>> | null {
   fields.forEach((cell, index) => {
     const key = headerKey(cell);
     for (const field of FIELDS) {
-      if (map[field] === undefined && HEADER_ALIASES[field].includes(key)) {
+      if (map[field] === undefined && HEADER_KEYS[field].has(key)) {
         map[field] = index;
         break;
       }
@@ -285,9 +328,11 @@ export function parsePersonalVocabCsv(input: string, options: ParseOptions = {})
   const duplicates: CsvDuplicate[] = [];
   const seen = new Map<string, number>();
   let skippedOverLimit = 0;
-  const addError = (line: number, reason: CsvRowErrorReason) => {
+  const addError = (line: number, reason: CsvRowErrorReason, record?: RawRecord) => {
     errorCount += 1;
-    if (errors.length < MAX_REPORTED_ERRORS) errors.push({ line, reason });
+    if (errors.length >= MAX_REPORTED_ERRORS) return;
+    const excerpt = record ? excerptOf(record) : '';
+    errors.push(excerpt ? { line, reason, excerpt } : { line, reason });
   };
 
   for (const record of records) {
@@ -305,7 +350,7 @@ export function parsePersonalVocabCsv(input: string, options: ParseOptions = {})
       continue;
     }
     if (record.unterminated) {
-      addError(record.line, 'unterminated_quote');
+      addError(record.line, 'unterminated_quote', record);
       continue;
     }
 
@@ -313,15 +358,16 @@ export function parsePersonalVocabCsv(input: string, options: ParseOptions = {})
     for (const field of FIELDS) {
       const index = columns ? columns[field] : POSITIONAL.indexOf(field);
       const raw = index === undefined ? undefined : record.fields[index];
-      values[field] = raw === undefined ? null : cleanPersonalText(raw);
+      const cleaned = raw === undefined ? null : cleanPersonalText(raw);
+      values[field] = cleaned === null ? null : unguardCsvCell(cleaned);
     }
 
     if (values.term === null || values.term === undefined) {
-      addError(record.line, 'term_required');
+      addError(record.line, 'term_required', record);
       continue;
     }
     if (values.meaning === null || values.meaning === undefined) {
-      addError(record.line, 'meaning_required');
+      addError(record.line, 'meaning_required', record);
       continue;
     }
     let tooLong: CsvRowErrorReason | null = null;
@@ -333,13 +379,13 @@ export function parsePersonalVocabCsv(input: string, options: ParseOptions = {})
       }
     }
     if (tooLong) {
-      addError(record.line, tooLong);
+      addError(record.line, tooLong, record);
       continue;
     }
 
     const key = personalTermKey(values.term);
     if (key === null) {
-      addError(record.line, 'term_required');
+      addError(record.line, 'term_required', record);
       continue;
     }
     const firstLine = seen.get(key);

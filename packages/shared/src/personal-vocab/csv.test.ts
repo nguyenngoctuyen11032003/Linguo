@@ -68,7 +68,7 @@ describe('quotes', () => {
   it('reports an unterminated quote at the line it started on', () => {
     const r = parse('word,meaning\na,một\n"b,hai\nc,ba');
     expect(r.rows.map((x) => x.term)).toEqual(['a']);
-    expect(r.errors).toEqual([{ line: 3, reason: 'unterminated_quote' }]);
+    expect(r.errors).toEqual([{ line: 3, reason: 'unterminated_quote', excerpt: 'b,hai c,ba' }]);
   });
 });
 
@@ -110,8 +110,8 @@ describe('row validation', () => {
   it('reports a missing meaning or term with line numbers', () => {
     const r = parse('word,meaning\napple\n,quả lê\nfig,quả sung');
     expect(r.errors).toEqual([
-      { line: 2, reason: 'meaning_required' },
-      { line: 3, reason: 'term_required' },
+      { line: 2, reason: 'meaning_required', excerpt: 'apple' },
+      { line: 3, reason: 'term_required', excerpt: 'quả lê' },
     ]);
     expect(r.rows.map((x) => x.term)).toEqual(['fig']);
   });

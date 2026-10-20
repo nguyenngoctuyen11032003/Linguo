@@ -325,6 +325,36 @@ export const adminTeacherSchema = z.object({
 });
 export type AdminTeacher = z.infer<typeof adminTeacherSchema>;
 
+/** Actions admin_staff_history returns (role and teacher changes written to admin_audit_log). */
+export const STAFF_HISTORY_ACTIONS = ['grant_role', 'revoke_role', 'grant_teacher', 'revoke_teacher'] as const;
+export type StaffHistoryAction = (typeof STAFF_HISTORY_ACTIONS)[number];
+
+/** One role or teacher change in admin_staff_history (20261021000200_admin_staff_history.sql). */
+export const adminStaffHistoryEntrySchema = z.object({
+  id: z.string().uuid(),
+  created_at: z.string(),
+  action: z.enum(STAFF_HISTORY_ACTIONS),
+  /** The admin who made the change; null for changes made by SQL. */
+  actor_id: z.string().uuid().nullable(),
+  actor_email: z.string().nullable(),
+  target_id: z.string().uuid().nullable(),
+  /** Null once the account is deleted. */
+  target_email: z.string().nullable(),
+  /** Role actions: the role granted (null on revoke) and the one it replaced (null = none). */
+  role: z.enum(STAFF_ROLES).nullable(),
+  previous_role: z.enum(STAFF_ROLES).nullable(),
+  /** Teacher actions: whether the account was a teacher before the change. */
+  was_teacher: z.boolean().nullable(),
+});
+export type AdminStaffHistoryEntry = z.infer<typeof adminStaffHistoryEntrySchema>;
+
+/** admin_staff_history(p_limit, p_offset) → this: total matching rows and one page, newest first. */
+export const adminStaffHistorySchema = z.object({
+  total: z.number().int().nonnegative(),
+  entries: z.array(adminStaffHistoryEntrySchema),
+});
+export type AdminStaffHistory = z.infer<typeof adminStaffHistorySchema>;
+
 /** admin_grant_role(p_user_id, p_role: StaffRole | null) → this (role null = revoked). */
 export const adminGrantRoleResultSchema = z.object({
   user_id: z.string().uuid(),

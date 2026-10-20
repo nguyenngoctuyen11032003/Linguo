@@ -12,7 +12,7 @@ describe('parsePersonalVocabCsv edge cases', () => {
   it('physical line numbers survive a multi-line quoted field', () => {
     const r = parsePersonalVocabCsv('word,meaning\n"a\nb",x\nnext,\nok,fine\n');
     expect(r.rows.map((x) => [x.line, x.term])).toEqual([[2, 'a b'], [5, 'ok']]);
-    expect(r.errors).toEqual([{ line: 4, reason: 'meaning_required' }]);
+    expect(r.errors).toEqual([{ line: 4, reason: 'meaning_required', excerpt: 'next' }]);
   });
 
   it('a trailing delimiter yields an empty last field, not a crash', () => {

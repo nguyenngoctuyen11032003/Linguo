@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest';
 import {
   createAssignmentInputSchema,
   createInviteInputSchema,
+  ASSIGNMENT_STATES,
+  updateAssignmentInputSchema,
   classNameSchema,
   assignmentNoteSchema,
   formatInviteCode,
@@ -30,10 +32,15 @@ const SQL = readFileSync(
   new URL('../../../../supabase/migrations/20261017000400_teacher_tools.sql', import.meta.url),
   'utf8',
 );
+// The second pass (exam mode, editing and closing assignments) raises invalid_exam_mode and restates the assignment limit.
+const SQL2 = readFileSync(
+  new URL('../../../../supabase/migrations/20261021000100_teacher_assignments.sql', import.meta.url),
+  'utf8',
+);
 
 describe('limits and error codes stay in sync with the migration', () => {
   it('raises every error code and nothing else', () => {
-    const raised = new Set([...SQL.matchAll(/message = '([a-z_]+)'/g)].map((m) => m[1]));
+    const raised = new Set([...(SQL + SQL2).matchAll(/message = '([a-z_]+)'/g)].map((m) => m[1]));
     // staff_forbidden comes from admin_private.require_role (grant_teacher_role).
     expect([...raised, 'staff_forbidden'].sort()).toEqual([...TEACHER_ERROR_CODES].sort());
   });
@@ -90,6 +97,24 @@ describe('inputs', () => {
     expect(createAssignmentInputSchema.safeParse({ kind: 'review', target_count: L.reviewTargetMax + 1 }).success).toBe(false);
     expect(createAssignmentInputSchema.safeParse({ kind: 'vocab', ref_id: UUID }).success).toBe(false);
   });
+  it('takes an exam mode only on exams, with a section only in section mode', () => {
+    expect(createAssignmentInputSchema.safeParse({ kind: 'exam', ref_id: UUID, exam_mode: 'full' }).success).toBe(true);
+    expect(createAssignmentInputSchema.safeParse({ kind: 'exam', ref_id: UUID, exam_mode: 'section', exam_section: 'reading' }).success).toBe(true);
+    expect(createAssignmentInputSchema.safeParse({ kind: 'exam', ref_id: UUID, exam_mode: null, exam_section: null }).success).toBe(true);
+    expect(createAssignmentInputSchema.safeParse({ kind: 'exam', ref_id: UUID, exam_mode: 'question_type' }).success).toBe(false);
+    expect(createAssignmentInputSchema.safeParse({ kind: 'exam', ref_id: UUID, exam_mode: 'section', exam_section: 'speaking' }).success).toBe(false);
+    // Unknown keys are dropped for the other kinds, so an exam mode never reaches a lesson assignment.
+    const lesson = createAssignmentInputSchema.parse({ kind: 'lesson', ref_id: UUID, exam_mode: 'full' });
+    expect('exam_mode' in lesson).toBe(false);
+  });
+  it('updates an assignment: the note always, the due date only on request', () => {
+    expect(updateAssignmentInputSchema.parse({ note: null, closed: false })).toEqual({ note: null, closed: false, set_due: false, due_at: null });
+    expect(updateAssignmentInputSchema.parse({ note: 'x', closed: true, set_due: true, due_at: TS })).toEqual({
+      note: 'x', closed: true, set_due: true, due_at: TS,
+    });
+    expect(updateAssignmentInputSchema.safeParse({ note: 'x'.repeat(L.note + 1), closed: false }).success).toBe(false);
+    expect(updateAssignmentInputSchema.safeParse({ note: null }).success).toBe(false);
+  });
   it('defaults invite options like the RPC', () => {
     expect(createInviteInputSchema.parse({})).toEqual({ expires_hours: L.inviteDefaultHours, max_uses: null });
     expect(createInviteInputSchema.safeParse({ expires_hours: L.inviteMaxHours + 1 }).success).toBe(false);
@@ -141,6 +166,18 @@ describe('results', () => {
       progress_count: 0,
     });
     expect(a.state).toBe('overdue');
+  });
+  it('reads assignments from an older server (no exam mode, no closed_at) and the closed state', () => {
+    const a = learnerAssignmentSchema.parse({
+      id: UUID, class_id: UUID2, kind: 'exam', ref_id: UUID, title: 'Đề N5', target_count: null, due_at: null,
+      note: null, created_at: TS, class_name: 'Lớp A', state: 'closed', completed_at: null, progress_count: 0,
+    });
+    expect(a.exam_mode).toBeNull();
+    expect(a.exam_section).toBeNull();
+    expect(a.closed_at).toBeNull();
+    expect(ASSIGNMENT_STATES).toEqual(['pending', 'overdue', 'closed', 'done']);
+    const b = learnerAssignmentSchema.parse({ ...a, exam_mode: 'section', exam_section: 'listening', closed_at: TS });
+    expect([b.exam_mode, b.exam_section, b.closed_at]).toEqual(['section', 'listening', TS]);
   });
   it('recognises error codes', () => {
     expect(isTeacherErrorCode('rate_limited')).toBe(true);

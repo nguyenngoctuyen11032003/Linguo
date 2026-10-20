@@ -11,7 +11,14 @@ export type ClassLanguage = (typeof CLASS_LANGUAGES)[number];
 export const ASSIGNMENT_KINDS = ['lesson', 'review', 'exam'] as const;
 export type AssignmentKind = (typeof ASSIGNMENT_KINDS)[number];
 
-export const ASSIGNMENT_STATES = ['pending', 'overdue', 'done'] as const;
+/** Exam assignments: the whole mock ('full') or one section of it. No mode = the learner picks (EXAM_ASSIGNMENT_MODES). */
+export const EXAM_ASSIGNMENT_MODES = ['full', 'section'] as const;
+export type ExamAssignmentMode = (typeof EXAM_ASSIGNMENT_MODES)[number];
+export const EXAM_ASSIGNMENT_SECTIONS = ['listening', 'reading', 'writing'] as const;
+export type ExamAssignmentSection = (typeof EXAM_ASSIGNMENT_SECTIONS)[number];
+
+/** done > closed (the teacher closed it before it was done) > overdue > pending. */
+export const ASSIGNMENT_STATES = ['pending', 'overdue', 'closed', 'done'] as const;
 export type AssignmentState = (typeof ASSIGNMENT_STATES)[number];
 
 /** Every message raised by the teacher RPCs (42501 not_authenticated, the rest P0001). */
@@ -34,6 +41,7 @@ export const TEACHER_ERROR_CODES = [
   'invalid_kind',
   'invalid_ref',
   'invalid_target',
+  'invalid_exam_mode',
   'invalid_due',
   'note_too_long',
   'assignment_limit',
@@ -98,6 +106,10 @@ export const createAssignmentInputSchema = z.discriminatedUnion('kind', [
   z.object({
     kind: z.literal('exam'),
     ref_id: z.uuid(),
+    /** Omitted or null: the learner picks a mode. */
+    exam_mode: z.enum(EXAM_ASSIGNMENT_MODES).nullable().optional(),
+    /** Required with exam_mode 'section', forbidden otherwise. */
+    exam_section: z.enum(EXAM_ASSIGNMENT_SECTIONS).nullable().optional(),
     due_at: z.string().nullable().optional(),
     note: z.string().max(L.note).nullable().optional(),
   }),
@@ -109,6 +121,18 @@ export const createAssignmentInputSchema = z.discriminatedUnion('kind', [
   }),
 ]);
 export type CreateAssignmentInput = z.infer<typeof createAssignmentInputSchema>;
+
+/**
+ * Arguments of teacher_update_assignment. The note is always replaced (null clears it); the due date only changes
+ * when `set_due` is true (then null clears it); `closed` closes or reopens the assignment.
+ */
+export const updateAssignmentInputSchema = z.object({
+  note: z.string().max(L.note).nullable(),
+  closed: z.boolean(),
+  set_due: z.boolean().default(false),
+  due_at: z.string().nullable().default(null),
+});
+export type UpdateAssignmentInput = z.input<typeof updateAssignmentInputSchema>;
 
 export const createInviteInputSchema = z.object({
   expires_hours: z.number().int().min(L.inviteMinHours).max(L.inviteMaxHours).default(L.inviteDefaultHours),
@@ -159,7 +183,13 @@ const assignmentBaseSchema = z.object({
   title: z.string().nullable(),
   /** Graded reviews asked for (review only). */
   target_count: z.number().int().nullable(),
+  /** Exam only: the mode the teacher asked for; null = the learner picks. */
+  exam_mode: z.enum(EXAM_ASSIGNMENT_MODES).nullable().default(null),
+  /** Exam in section mode only. */
+  exam_section: z.enum(EXAM_ASSIGNMENT_SECTIONS).nullable().default(null),
   due_at: z.string().nullable(),
+  /** When the teacher closed the assignment (it stops asking for work and no longer counts new work); null = open. */
+  closed_at: z.string().nullable().default(null),
   note: z.string().nullable(),
   created_at: z.string(),
 });
