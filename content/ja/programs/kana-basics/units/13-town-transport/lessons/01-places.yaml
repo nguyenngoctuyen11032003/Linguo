@@ -1,0 +1,391 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:town-places
+order_index: 1
+level: n5
+title:
+  vi: Các nơi trong thành phố - ぎんこう・スーパー・えいがかん
+objectives:
+  - vi: "Gọi tên các nơi trong thành phố: まち, ぎんこう, ほんや, はなや, レストラン, スーパー, コンビニ, デパート."
+  - vi: Gọi tên えいがかん, きっさてん, だいがく, くうこう.
+  - vi: Nói đi đâu để làm gì bằng N に いきます (かいものに いきます).
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:belongings
+items:
+  - item: ja:item:n5-u13-machi
+  - item: ja:item:n5-u13-ginkou
+  - item: ja:item:n5-u13-honya
+  - item: ja:item:n5-u13-hanaya
+  - item: ja:item:n5-u13-resutoran
+  - item: ja:item:n5-u13-suupaa
+  - item: ja:item:n5-u13-konbini
+  - item: ja:item:n5-u13-depaato
+  - item: ja:item:n5-u13-eigakan
+  - item: ja:item:n5-u13-kissaten
+  - item: ja:item:n5-u13-daigaku
+  - item: ja:item:n5-u13-kuukou
+  - item: ja:item:n5-u13-ni-ikimasu
+  - item: ja:item:n3-yuubinkyoku
+    role: reuse
+  - item: ja:item:particle-e
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được thành phố mình có những nơi nào và đi đến đó làm gì - ほんをかいにほんやへいきます。
+  - type: explain
+    text:
+      vi: "Cửa hàng và nơi công cộng: ぎんこう (ngân hàng), ほんや (hiệu sách), はなや (cửa hàng hoa), スーパー (siêu thị), コンビニ (cửa hàng tiện lợi), デパート (bách hoá), レストラン (nhà hàng), きっさてん (quán cà phê), えいがかん (rạp phim), だいがく (đại học), くうこう (sân bay)."
+  - type: explain
+    text:
+      vi: "Hậu tố ～や (屋) chỉ cửa hàng chuyên một loại hàng: ほんや (hiệu sách), はなや (cửa hàng hoa), さかなや (cửa hàng cá). Từ gốc đứng trước や - ほん + や = ほんや."
+  - type: explain
+    text:
+      vi: Đi đến một nơi để làm gì - V ます (bỏ ます) + に + いきます. Ví dụ ほんをかいに ほんやへ いきます (đi hiệu sách để mua sách). Với danh từ - かいものに いきます, えいがを みに いきます.
+  - type: deep_explain
+    text:
+      vi: "Chú ý hai trợ từ に khác nhau - に chỉ mục đích (かいに) khác へ / に chỉ đích đến (ほんやへ). Câu あした、ともだちとえいがをみにえいがかんへいきます có cả hai: みに (mục đích) và えいがかんへ (đích đến). Chữ Hán - 町, 銀行, 本屋, 花屋, 映画館, 喫茶店, 大学, 空港."
+  - type: example
+    target: ほんをかいに、ほんやへいきます。
+    target_lang: ja
+    translation:
+      vi: Tôi đi hiệu sách để mua sách.
+    note:
+      vi: かい - gốc của かいます; に - mục đích.
+  - type: example
+    target: にちようびはともだちとえいがをみにいきます。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tôi cùng bạn đi xem phim.
+    note:
+      vi: みに いきます - đi để xem.
+  - type: example
+    target: スーパーでやさいとくだものをかいます。
+    target_lang: ja
+    translation:
+      vi: Tôi mua rau và hoa quả ở siêu thị.
+    note:
+      vi: で - nơi diễn ra hành động.
+  - type: example
+    target: きっさてんでコーヒーをのみます。
+    target_lang: ja
+    translation:
+      vi: Tôi uống cà phê ở quán cà phê.
+    note:
+      vi: きっさてん - quán cà phê kiểu Nhật.
+  - type: common_mistake
+    wrong: ほんをかうにほんやへいきます。
+    right: ほんをかいにほんやへいきます。
+    target_lang: ja
+    note:
+      vi: Mục đích dùng dạng ます bỏ ます (かい) + に, không dùng dạng từ điển かう.
+  - type: common_mistake
+    wrong: かいものをいきます。
+    right: かいものにいきます。
+    target_lang: ja
+    note:
+      vi: "Danh từ chỉ mục đích đi với に: かいものに いきます."
+  - type: summary
+    points:
+      - vi: ぎんこう · ほんや · はなや · スーパー · コンビニ · デパート · レストラン · きっさてん · えいがかん · だいがく · くうこう.
+      - vi: V ます bỏ ます + に いきます - đi để làm gì.
+      - vi: N に いきます - かいものに いきます.
+      - vi: で - nơi diễn ra hành động; へ - đích đến.
+exercises:
+  - key: ja:exercise:town-places-ginkou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-ginkou
+    prompt:
+      stem: Từ nào có nghĩa là “ngân hàng”?
+      stem_lang: vi
+      options:
+        - id: jzg
+          text: ぎんこう
+          lang: ja
+        - id: uys
+          text: はなや
+          lang: ja
+        - id: ghl
+          text: ゆうびんきょく
+          lang: ja
+        - id: tt9
+          text: ほんや
+          lang: ja
+    answer:
+      correct_option_id: jzg
+    explanation:
+      vi: ぎんこう là ngân hàng. ゆうびんきょく là bưu điện, ほんや là hiệu sách, はなや là cửa hàng hoa.
+    display_answer: ぎんこう
+  - key: ja:exercise:town-places-honya
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-honya
+    prompt:
+      stem: Bạn muốn mua một quyển sách. Bạn đến đâu?
+      stem_lang: vi
+      options:
+        - id: mhz
+          text: はなや
+          lang: ja
+        - id: iqv
+          text: ほんや
+          lang: ja
+        - id: gop
+          text: コンビニ
+          lang: ja
+        - id: l7h
+          text: レストラン
+          lang: ja
+    answer:
+      correct_option_id: iqv
+    explanation:
+      vi: ほんや là hiệu sách - nơi bán sách. はなや bán hoa, レストラン là nhà hàng, コンビニ là cửa hàng tiện lợi.
+    display_answer: ほんや
+  - key: ja:exercise:town-places-eigakan
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u13-eigakan
+    prompt:
+      audio_asset_id: null
+      fallback_text: にちようびはともだちとえいがをみにえいがかんへいきます。
+      options:
+        - id: wxj
+          text: Chủ nhật tôi đi uống cà phê ở quán.
+          lang: vi
+        - id: pwn
+          text: Chủ nhật tôi cùng bạn đi xem phim ở rạp.
+          lang: vi
+        - id: rzn
+          text: Chủ nhật tôi đi sân bay đón bạn.
+          lang: vi
+        - id: eqm
+          text: Chủ nhật tôi đi mua sắm với bạn ở bách hoá.
+          lang: vi
+    answer:
+      correct_option_id: pwn
+    explanation:
+      vi: えいがを みに いきます - đi xem phim; えいがかん - rạp chiếu phim.
+    display_answer: Chủ nhật tôi cùng bạn đi xem phim ở rạp.
+  - key: ja:exercise:town-places-suupaa-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-suupaa
+    prompt:
+      template: "{{b1}}でやさいをかいます。 (Tôi mua rau ở siêu thị.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Nơi bán rau, thịt, đồ ăn.
+        - Katakana, bắt đầu bằng ス.
+    answer:
+      blanks:
+        b1:
+          - スーパー
+    known_wrong:
+      - answer: ぎんこう
+        feedback_vi: ぎんこう là ngân hàng; rau mua ở siêu thị.
+        error_tag: vocab_meaning
+      - answer: えいがかん
+        feedback_vi: えいがかん là rạp phim.
+        error_tag: vocab_meaning
+    explanation:
+      vi: スーパー là siêu thị - nơi mua rau, thịt, đồ ăn.
+    display_answer: スーパーでやさいをかいます。
+  - key: ja:exercise:town-places-ni-iku
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-ni-ikimasu
+    prompt:
+      stem: Bạn muốn nói “Tôi đi hiệu sách để mua sách”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: hnr
+          text: ほんをかいにほんやへいきます。
+          lang: ja
+        - id: f1w
+          text: ほんをかいでほんやへいきます。
+          lang: ja
+        - id: xz2
+          text: ほんをかいをほんやへいきます。
+          lang: ja
+        - id: se9
+          text: ほんをかうにほんやへいきます。
+          lang: ja
+    answer:
+      correct_option_id: hnr
+    explanation:
+      vi: "Mục đích: ます (bỏ ます) + に. かう là dạng từ điển, không đi với に chỉ mục đích; を và で không tạo nghĩa này."
+    display_answer: ほんをかいにほんやへいきます。
+  - key: ja:exercise:town-places-ni-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-ni-ikimasu
+    prompt:
+      template: ともだちとえいがを{{b1}}えいがかんへいきます。 (Tôi cùng bạn đi rạp để xem phim.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - みに
+          - 見に
+    known_wrong:
+      - answer: みる
+        feedback_vi: Không dùng dạng từ điển みる trước に; dùng みに.
+        error_tag: conjugation
+      - answer: みて
+        feedback_vi: みて là dạng て, không dùng để chỉ mục đích.
+        error_tag: conjugation
+    explanation:
+      vi: みに - ます bỏ ます (み) + に. えいがをみにいきます - đi xem phim.
+    display_answer: ともだちとえいがをみにえいがかんへいきます。
+  - key: ja:exercise:town-places-kissaten-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-kissaten
+    prompt:
+      template: "{{b1}}でコーヒーをのみます。 (Tôi uống cà phê ở quán cà phê.)"
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - きっさてん
+          - 喫茶店
+    known_wrong:
+      - answer: はなや
+        feedback_vi: はなや là cửa hàng hoa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: きっさてん là quán cà phê. Cẩn thận chữ っ nhỏ.
+    display_answer: きっさてんでコーヒーをのみます。
+  - key: ja:exercise:town-places-depaato-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-depaato
+    prompt:
+      source_text: Tôi đi bách hoá để mua sắm.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - かいものにデパートへいきます。
+        - デパートへかいものにいきます。
+        - かいものにデパートにいきます。
+        - 買い物にデパートへ行きます。
+        - デパートにかいものにいきます。
+    known_wrong:
+      - answer: かいものをデパートへいきます。
+        feedback_vi: "Mục đích dùng に: かいものに いきます."
+        error_tag: purpose_ni
+      - answer: かいものにデパートでいきます。
+        feedback_vi: Nơi đến dùng へ hoặc に, không dùng で.
+        error_tag: particle_ni_de
+    explanation:
+      vi: かいものに = để mua sắm; デパートへ いきます - đi đến bách hoá.
+    display_answer: かいものにデパートへいきます。
+  - key: ja:exercise:town-places-machi-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u13-machi
+    prompt:
+      source_text: わたしのまちにはぎんこうとレストランとえいがかんがあります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thị trấn tôi có ngân hàng, nhà hàng và rạp chiếu phim.
+        - Trong thị trấn của tôi có ngân hàng, nhà hàng và rạp phim.
+        - Thị trấn của tôi có ngân hàng, nhà hàng và rạp chiếu phim.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thị trấn tôi có bưu điện, siêu thị và rạp chiếu phim.
+        feedback_vi: ぎんこう là ngân hàng, レストラン là nhà hàng.
+        error_tag: vocab_meaning
+    explanation:
+      vi: N に N が あります - có ... ở N. と nối ba địa điểm.
+    display_answer: Thị trấn tôi có ngân hàng, nhà hàng và rạp chiếu phim.
+  - key: ja:exercise:town-places-ni-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-ni-ikimasu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi đi hiệu sách để mua sách."'
+      tokens:
+        - id: t1
+          text: ほんを
+        - id: t3
+          text: ほんやへ
+        - id: t4
+          text: いきます。
+        - id: t2
+          text: かいに
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Đối tượng (ほんを) → かい + に (mục đích) → ほんやへ (nơi đến) → いきます.
+    display_answer: ほんをかいにほんやへいきます。
+  - key: ja:exercise:town-places-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-konbini
+    prompt:
+      stem: Bạn muốn mua cơm nắm lúc nửa đêm. Nơi nào gần như luôn mở cửa?
+      stem_lang: vi
+      options:
+        - id: ivg
+          text: くうこう
+          lang: ja
+        - id: iqq
+          text: だいがく
+          lang: ja
+        - id: dwh
+          text: ぎんこう
+          lang: ja
+        - id: ars
+          text: コンビニ
+          lang: ja
+    answer:
+      correct_option_id: ars
+    explanation:
+      vi: コンビニ (cửa hàng tiện lợi) mở cả ngày. Ngân hàng và đại học đóng cửa ban đêm; sân bay có cửa hàng nhưng không phải nơi thuận tiện mua đồ hằng ngày.
+    display_answer: コンビニ

@@ -1,0 +1,661 @@
+# Học liệu unit "Thành phố, phương tiện và chỉ đường" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u13-machi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 町
+      reading: まち
+      romanization: machi
+      pos: danh từ
+    back:
+      meaning:
+        vi: thị trấn, khu phố, thành phố nhỏ
+      examples:
+        - target: わたしのまちにはおおきいこうえんがあります。
+          translation:
+            vi: Thị trấn tôi có một công viên lớn.
+  - key: ja:item:n5-u13-ginkou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 銀行
+      reading: ぎんこう
+      romanization: ginkou
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngân hàng
+      examples:
+        - target: ぎんこうでおかねをおろします。
+          translation:
+            vi: Tôi rút tiền ở ngân hàng.
+  - key: ja:item:n5-u13-honya
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 本屋
+      reading: ほんや
+      romanization: honya
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu sách
+      examples:
+        - target: ほんやでざっしをかいます。
+          translation:
+            vi: Tôi mua tạp chí ở hiệu sách.
+      pronunciation_note:
+        vi: "～や (屋) là hậu tố chỉ cửa hàng: ほんや, はなや, くだものや."
+  - key: ja:item:n5-u13-hanaya
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 花屋
+      reading: はなや
+      romanization: hanaya
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng hoa
+      examples:
+        - target: はなやでバラをかいます。
+          translation:
+            vi: Tôi mua hoa hồng ở cửa hàng hoa.
+  - key: ja:item:n5-u13-resutoran
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: レストラン
+      romanization: resutoran
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà hàng
+      examples:
+        - target: レストランでばんごはんをたべます。
+          translation:
+            vi: Tôi ăn tối ở nhà hàng.
+  - key: ja:item:n5-u13-suupaa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: スーパー
+      romanization: suupaa
+      pos: danh từ
+    back:
+      meaning:
+        vi: siêu thị
+      examples:
+        - target: スーパーでやさいをかいます。
+          translation:
+            vi: Tôi mua rau ở siêu thị.
+  - key: ja:item:n5-u13-konbini
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: コンビニ
+      romanization: konbini
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng tiện lợi
+      examples:
+        - target: コンビニでおにぎりをかいます。
+          translation:
+            vi: Tôi mua cơm nắm ở cửa hàng tiện lợi.
+  - key: ja:item:n5-u13-depaato
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: デパート
+      romanization: depaato
+      pos: danh từ
+    back:
+      meaning:
+        vi: cửa hàng bách hoá
+      examples:
+        - target: デパートでくつをかいます。
+          translation:
+            vi: Tôi mua giày ở cửa hàng bách hoá.
+  - key: ja:item:n5-u13-eigakan
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 映画館
+      reading: えいがかん
+      romanization: eigakan
+      pos: danh từ
+    back:
+      meaning:
+        vi: rạp chiếu phim
+      examples:
+        - target: えいがかんでえいがをみます。
+          translation:
+            vi: Tôi xem phim ở rạp.
+  - key: ja:item:n5-u13-kissaten
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 喫茶店
+      reading: きっさてん
+      romanization: kissaten
+      pos: danh từ
+    back:
+      meaning:
+        vi: quán cà phê, quán giải khát kiểu Nhật
+      examples:
+        - target: きっさてんでコーヒーをのみます。
+          translation:
+            vi: Tôi uống cà phê ở quán cà phê.
+      pronunciation_note:
+        vi: きっさてん có っ - ngắt một nhịp sau き.
+  - key: ja:item:n5-u13-daigaku
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 大学
+      reading: だいがく
+      romanization: daigaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: đại học
+      examples:
+        - target: だいがくはえきのちかくにあります。
+          translation:
+            vi: Trường đại học ở gần ga.
+  - key: ja:item:n5-u13-kuukou
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 空港
+      reading: くうこう
+      romanization: kuukou
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân bay
+      examples:
+        - target: くうこうへいきます。
+          translation:
+            vi: Tôi đi đến sân bay.
+      pronunciation_note:
+        vi: くう kéo dài (kuu); こう cũng kéo dài (kou).
+  - key: ja:item:n5-u13-ni-ikimasu
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) / N + に 行きます
+      romanization: V-masu stem / N ni ikimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Đi đâu để làm gì: bỏ ます của động từ rồi thêm に + 行きます. Có thể dùng danh từ + に (かいものに いきます)."
+      examples:
+        - target: ほんをかいにほんやへいきます。
+          translation:
+            vi: Tôi đi hiệu sách để mua sách.
+        - target: かいものにデパートへいきます。
+          translation:
+            vi: Tôi đi bách hoá để mua sắm.
+      confusion:
+        vi: "Mục đích に khác nơi đến へ/に: かいものに いきます (đi để mua sắm) - cả hai に không trùng nhau."
+  - key: ja:item:n5-u13-basu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: バス
+      romanization: basu
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe buýt
+      examples:
+        - target: バスでがっこうへいきます。
+          translation:
+            vi: Tôi đến trường bằng xe buýt.
+  - key: ja:item:n5-u13-takushii
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: タクシー
+      romanization: takushii
+      pos: danh từ
+    back:
+      meaning:
+        vi: taxi
+      examples:
+        - target: タクシーでくうこうへいきます。
+          translation:
+            vi: Tôi đến sân bay bằng taxi.
+  - key: ja:item:n5-u13-chikatetsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 地下鉄
+      reading: ちかてつ
+      romanization: chikatetsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu điện ngầm
+      examples:
+        - target: ちかてつでかいしゃへいきます。
+          translation:
+            vi: Tôi đi làm bằng tàu điện ngầm.
+  - key: ja:item:n5-u13-jitensha
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 自転車
+      reading: じてんしゃ
+      romanization: jitensha
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe đạp
+      examples:
+        - target: じてんしゃでがっこうへいきます。
+          translation:
+            vi: Tôi đi học bằng xe đạp.
+      confusion:
+        vi: じてんしゃ (xe đạp) khác でんしゃ (tàu điện) - chỉ thêm một chữ じ.
+  - key: ja:item:n5-u13-fune
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 船
+      reading: ふね
+      romanization: fune
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuyền, tàu thuỷ
+      examples:
+        - target: ふねでしまへいきます。
+          translation:
+            vi: Tôi ra đảo bằng tàu.
+  - key: ja:item:n5-u13-norimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 乗ります
+      reading: のります
+      romanization: norimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: lên (xe, tàu), đi (phương tiện)
+      examples:
+        - target: バスにのります。
+          translation:
+            vi: Tôi lên xe buýt.
+      pronunciation_note:
+        vi: "のります đi với に: N に のります."
+  - key: ja:item:n5-u13-orimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 降ります
+      reading: おります
+      romanization: orimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: xuống (xe, tàu)
+      examples:
+        - target: つぎのえきでおります。
+          translation:
+            vi: Tôi xuống ở ga tiếp theo.
+      pronunciation_note:
+        vi: "おります đi với を hoặc で: えきでおります / でんしゃをおります."
+  - key: ja:item:n5-u13-arukimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 歩きます
+      reading: あるきます
+      romanization: arukimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đi bộ
+      examples:
+        - target: えきまであるきます。
+          translation:
+            vi: Tôi đi bộ đến ga.
+  - key: ja:item:n5-u13-bansen
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 番線
+      reading: ばんせん
+      romanization: bansen
+      pos: danh từ
+    back:
+      meaning:
+        vi: sân ga số ...
+      examples:
+        - target: ３ばんせんからでんしゃがでます。
+          translation:
+            vi: Tàu khởi hành từ sân ga số 3.
+  - key: ja:item:n5-u13-kakarimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: かかります
+      romanization: kakarimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: mất (thời gian, tiền)
+      examples:
+        - target: バスでさんじゅっぷんかかります。
+          translation:
+            vi: Đi bằng xe buýt mất 30 phút.
+      pronunciation_note:
+        vi: Hỏi thời gian - どのくらいかかりますか (đã học).
+  - key: ja:item:n5-u13-de-ikimasu
+    type: grammar_point
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - grammar
+    front:
+      text: N で 行きます / 来ます / 帰ります
+      romanization: N de ikimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Đi bằng phương tiện gì: phương tiện + で + động từ di chuyển. Đi bộ là あるいて (không dùng で)."
+      examples:
+        - target: でんしゃでかいしゃへいきます。
+          translation:
+            vi: Tôi đi làm bằng tàu điện.
+        - target: タクシーでうちへかえります。
+          translation:
+            vi: Tôi về nhà bằng taxi.
+      confusion:
+        vi: Hỏi - なにで いきますか (đi bằng gì?); ngoại lệ - あるいていきます (đi bộ), không nói あるきで.
+  - key: ja:item:n5-u13-migi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 右
+      reading: みぎ
+      romanization: migi
+      pos: danh từ
+    back:
+      meaning:
+        vi: bên phải
+      examples:
+        - target: みぎにまがってください。
+          translation:
+            vi: Hãy rẽ phải.
+  - key: ja:item:n5-u13-hidari
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 左
+      reading: ひだり
+      romanization: hidari
+      pos: danh từ
+    back:
+      meaning:
+        vi: bên trái
+      examples:
+        - target: ひだりにぎんこうがあります。
+          translation:
+            vi: Bên trái có ngân hàng.
+  - key: ja:item:n5-u13-massugu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: まっすぐ
+      romanization: massugu
+      pos: phó từ
+    back:
+      meaning:
+        vi: thẳng, đi thẳng
+      examples:
+        - target: まっすぐいってください。
+          translation:
+            vi: Hãy đi thẳng.
+      pronunciation_note:
+        vi: まっすぐ có っ - ngắt một nhịp.
+  - key: ja:item:n5-u13-kado
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 角
+      reading: かど
+      romanization: kado
+      pos: danh từ
+    back:
+      meaning:
+        vi: góc đường, chỗ rẽ
+      examples:
+        - target: つぎのかどをみぎにまがります。
+          translation:
+            vi: Rẽ phải ở góc tiếp theo.
+  - key: ja:item:n5-u13-shingou
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 信号
+      reading: しんごう
+      romanization: shingou
+      pos: danh từ
+    back:
+      meaning:
+        vi: đèn giao thông
+      examples:
+        - target: しんごうをわたります。
+          translation:
+            vi: Tôi băng qua chỗ có đèn giao thông.
+      pronunciation_note:
+        vi: しんごう - ごう kéo dài (gou).
+  - key: ja:item:n5-u13-hashi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 橋
+      reading: はし
+      romanization: hashi
+      pos: danh từ
+    back:
+      meaning:
+        vi: cầu
+      examples:
+        - target: はしをわたります。
+          translation:
+            vi: Tôi đi qua cầu.
+      confusion:
+        vi: はし (橋, cầu) đọc giống はし (箸, đũa) - ngữ cảnh phân biệt.
+  - key: ja:item:n5-u13-michi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 道
+      reading: みち
+      romanization: michi
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường, con đường
+      examples:
+        - target: このみちはせまいです。
+          translation:
+            vi: Con đường này hẹp.
+  - key: ja:item:n5-u13-watarimasu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 渡ります
+      reading: わたります
+      romanization: watarimasu
+      pos: động từ
+    back:
+      meaning:
+        vi: băng qua, đi qua (đường, cầu)
+      examples:
+        - target: みちをわたります。
+          translation:
+            vi: Tôi băng qua đường.
+  - key: ja:item:n5-u13-kousaten
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 交差点
+      reading: こうさてん
+      romanization: kousaten
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngã tư
+      examples:
+        - target: つぎのこうさてんをひだりです。
+          translation:
+            vi: Ngã tư tiếp theo rẽ trái.
+  - key: ja:item:n5-u13-hitotsume
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 一つ目
+      reading: ひとつめ
+      romanization: hitotsume
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái thứ nhất (ngã rẽ, tòa nhà...)
+      examples:
+        - target: ひとつめのかどをみぎです。
+          translation:
+            vi: Góc đầu tiên rẽ phải.
+      pronunciation_note:
+        vi: "～つめ (目) đếm thứ tự: ひとつめ, ふたつめ, みっつめ."
+  - key: ja:item:n5-u13-douyatte
+    type: phrase
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: どうやって行きますか
+      reading: どうやっていきますか
+      romanization: dou yatte ikimasu ka
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Đi bằng cách nào? / Đi như thế nào?
+      examples:
+        - target: えきまでどうやっていきますか。
+          translation:
+            vi: Đến ga thì đi như thế nào?

@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:directions
+order_index: 3
+level: n5
+title:
+  vi: Chỉ đường - みぎ・ひだり・まっすぐ
+objectives:
+  - vi: Dùng みぎ, ひだり, まっすぐ, かど, しんごう, はし để chỉ đường.
+  - vi: Hiểu và nói các câu chỉ đường với わたります, ひとつめ, こうさてん.
+  - vi: Hỏi đường bằng どうやって いきますか và ～は どこですか.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:transport
+items:
+  - item: ja:item:n5-u13-migi
+  - item: ja:item:n5-u13-hidari
+  - item: ja:item:n5-u13-massugu
+  - item: ja:item:n5-u13-kado
+  - item: ja:item:n5-u13-shingou
+  - item: ja:item:n5-u13-hashi
+  - item: ja:item:n5-u13-michi
+  - item: ja:item:n5-u13-watarimasu
+  - item: ja:item:n5-u13-kousaten
+  - item: ja:item:n5-u13-hitotsume
+  - item: ja:item:n5-u13-douyatte
+  - item: ja:item:n3-magaru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hỏi được đường và hiểu lời chỉ đường - まっすぐいって、ふたつめのかどをみぎです。
+  - type: explain
+    text:
+      vi: "Từ chỉ hướng: みぎ (phải), ひだり (trái), まっすぐ (thẳng). Mốc để chỉ đường: かど (góc đường), しんごう (đèn giao thông), こうさてん (ngã tư), はし (cầu), みち (đường). Đếm mốc bằng ～め - ひとつめ (cái thứ nhất), ふたつめ (cái thứ hai)."
+  - type: explain
+    text:
+      vi: Chỉ đường điển hình - まっすぐいって、ひとつめのしんごうをみぎです (đi thẳng, đến đèn giao thông thứ nhất thì rẽ phải). Băng qua - はしを わたります, みちを わたります.
+  - type: explain
+    text:
+      vi: Hỏi đường - すみません、えきはどこですか (Xin lỗi, nhà ga ở đâu?) hoặc えきまでどうやっていきますか (Đến ga thì đi như thế nào?). Cảm ơn - ありがとうございました.
+  - type: deep_explain
+    text:
+      vi: Cách rẽ - みぎ/ひだり + に まがります (rẽ phải/trái); まがります (曲がります, rẽ) sẽ được dạy chi tiết ở N3. Khi chỉ đường nhanh, người Nhật hay lược bỏ động từ - ひとつめのかどをみぎです (Góc đầu tiên thì phải). Chữ Hán - 右, 左, 角, 信号, 橋, 道, 渡ります, 交差点, 一つ目.
+  - type: example
+    target: まっすぐいって、ひとつめのしんごうをみぎです。
+    target_lang: ja
+    translation:
+      vi: Đi thẳng, đến đèn giao thông thứ nhất thì rẽ phải.
+    note:
+      vi: まっすぐ - thẳng; ひとつめ - cái thứ nhất.
+  - type: example
+    target: はしをわたって、ひだりにまがります。
+    target_lang: ja
+    translation:
+      vi: Qua cầu rồi rẽ trái.
+    note:
+      vi: わたって - qua (thể て, sẽ học kỹ ở N4); まがります - rẽ.
+  - type: example
+    target: すみません、えきはどこですか。- あのかどをみぎです。
+    target_lang: ja
+    translation:
+      vi: Xin lỗi, nhà ga ở đâu? - Rẽ phải ở góc đằng kia.
+    note:
+      vi: どこ - ở đâu; あの - đằng kia.
+  - type: example
+    target: えきまでどうやっていきますか。
+    target_lang: ja
+    translation:
+      vi: Đến ga thì đi như thế nào?
+    note:
+      vi: どうやって - bằng cách nào.
+  - type: common_mistake
+    wrong: みぎをまっすぐです。(đi thẳng)
+    right: まっすぐです。
+    target_lang: ja
+    note:
+      vi: まっすぐ là "thẳng", không đi với みぎ. Rẽ phải nói みぎです hoặc みぎに まがります.
+  - type: common_mistake
+    wrong: はしをのります。
+    right: はしをわたります。
+    target_lang: ja
+    note:
+      vi: Băng qua cầu, đường dùng わたります; のります là lên xe.
+  - type: summary
+    points:
+      - vi: みぎ phải · ひだり trái · まっすぐ thẳng · かど góc · しんごう đèn giao thông · こうさてん ngã tư · はし cầu · みち đường.
+      - vi: ひとつめ · ふたつめ - đếm mốc theo thứ tự.
+      - vi: わたります băng qua · どうやって いきますか đi như thế nào?
+      - vi: すみません、～は どこですか - hỏi nơi chốn lịch sự.
+exercises:
+  - key: ja:exercise:directions-migi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-migi
+    prompt:
+      stem: Từ nào có nghĩa là “bên phải”?
+      stem_lang: vi
+      options:
+        - id: wke
+          text: かど
+          lang: ja
+        - id: ahr
+          text: ひだり
+          lang: ja
+        - id: i4w
+          text: まっすぐ
+          lang: ja
+        - id: xhv
+          text: みぎ
+          lang: ja
+    answer:
+      correct_option_id: xhv
+    explanation:
+      vi: みぎ là bên phải. ひだり là bên trái, まっすぐ là thẳng, かど là góc đường.
+    display_answer: みぎ
+  - key: ja:exercise:directions-shingou
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-shingou
+    prompt:
+      stem: Từ nào có nghĩa là “đèn giao thông”?
+      stem_lang: vi
+      options:
+        - id: sao
+          text: みち
+          lang: ja
+        - id: yet
+          text: はし
+          lang: ja
+        - id: wi7
+          text: こうさてん
+          lang: ja
+        - id: d3g
+          text: しんごう
+          lang: ja
+    answer:
+      correct_option_id: d3g
+    explanation:
+      vi: しんごう là đèn giao thông. こうさてん là ngã tư, はし là cầu, みち là con đường.
+    display_answer: しんごう
+  - key: ja:exercise:directions-massugu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u13-massugu
+    prompt:
+      audio_asset_id: null
+      fallback_text: まっすぐいって、ひとつめのしんごうをみぎです。
+      options:
+        - id: zbd
+          text: Đến ngã tư thứ nhất thì đi thẳng.
+          lang: vi
+        - id: ift
+          text: Đi thẳng, đến đèn giao thông thứ hai thì rẽ trái.
+          lang: vi
+        - id: gvp
+          text: Đi thẳng, đến đèn giao thông thứ nhất thì rẽ phải.
+          lang: vi
+        - id: cp6
+          text: Rẽ phải, rồi đi thẳng đến cầu.
+          lang: vi
+    answer:
+      correct_option_id: gvp
+    explanation:
+      vi: まっすぐ - thẳng; ひとつめ - thứ nhất; しんごう - đèn giao thông; みぎ - phải.
+    display_answer: Đi thẳng, đến đèn giao thông thứ nhất thì rẽ phải.
+  - key: ja:exercise:directions-hashi-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-watarimasu
+    prompt:
+      template: "{{b1}}をわたります。 (Tôi qua cầu.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Công trình bắc qua sông.
+        - Hai chữ - はし.
+    answer:
+      blanks:
+        b1:
+          - はし
+          - 橋
+    known_wrong:
+      - answer: しんごう
+        feedback_vi: しんごう là đèn giao thông; ở đây cần thứ để "băng qua" - はし.
+        error_tag: vocab_meaning
+    explanation:
+      vi: はし là cầu. はしをわたります - qua cầu. Đọc giống はし (đũa) nhưng ngữ cảnh khác.
+    display_answer: はしをわたります。
+  - key: ja:exercise:directions-douyatte
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-douyatte
+    prompt:
+      stem: Bạn hỏi “Đến ga thì đi thế nào?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: wtf
+          text: えきまでなにをいきますか。
+          lang: ja
+        - id: mym
+          text: えきまでだれがいきますか。
+          lang: ja
+        - id: ow1
+          text: えきまでどうやっていきますか。
+          lang: ja
+        - id: u13
+          text: えきまでいくらですか。
+          lang: ja
+    answer:
+      correct_option_id: ow1
+    explanation:
+      vi: どうやって hỏi cách đi. なにを hỏi "cái gì" (tân ngữ), だれが hỏi "ai", いくら hỏi giá tiền.
+    display_answer: えきまでどうやっていきますか。
+  - key: ja:exercise:directions-hidari-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-hidari
+    prompt:
+      template: ぎんこうは{{b1}}にあります。 (Ngân hàng ở bên trái.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - ひだり
+          - 左
+    known_wrong:
+      - answer: みぎ
+        feedback_vi: みぎ là phải; câu cần "trái".
+        error_tag: direction
+    explanation:
+      vi: ひだり là bên trái. N は ひだりに あります - N ở bên trái.
+    display_answer: ぎんこうはひだりにあります。
+  - key: ja:exercise:directions-kado-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-kado
+    prompt:
+      template: つぎの{{b1}}をみぎです。 (Rẽ phải ở góc tiếp theo.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - かど
+          - 角
+    known_wrong:
+      - answer: みち
+        feedback_vi: みち là con đường; "góc" là かど.
+        error_tag: vocab_meaning
+    explanation:
+      vi: かど là góc đường, chỗ rẽ.
+    display_answer: つぎのかどをみぎです。
+  - key: ja:exercise:directions-massugu-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-massugu
+    prompt:
+      source_text: Đi thẳng rồi rẽ phải ở đèn giao thông thứ hai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - まっすぐいって、ふたつめのしんごうをみぎです。
+        - まっすぐいって、ふたつめのしんごうをみぎにまがります。
+        - まっすぐいって、ふたつめの信号を右です。
+        - まっすぐいって、ふたつめの信号を右に曲がります。
+    known_wrong:
+      - answer: まっすぐいって、ひとつめのしんごうをみぎです。
+        feedback_vi: ひとつめ là thứ nhất; câu yêu cầu thứ hai là ふたつめ.
+        error_tag: counter
+      - answer: まっすぐいって、ふたつめのしんごうをひだりです。
+        feedback_vi: Câu yêu cầu rẽ phải (みぎ), không phải trái.
+        error_tag: direction
+    explanation:
+      vi: まっすぐ - thẳng; ふたつめ - cái thứ hai; みぎ - phải.
+    display_answer: まっすぐいって、ふたつめのしんごうをみぎです。
+  - key: ja:exercise:directions-hashi-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u13-hashi
+    prompt:
+      source_text: はしをわたって、ひだりにまがります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Qua cầu rồi rẽ trái.
+        - Tôi qua cầu rồi rẽ trái.
+        - Đi qua cầu rồi rẽ sang trái.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Qua cầu rồi rẽ phải.
+        feedback_vi: ひだり là trái, không phải phải.
+        error_tag: direction
+    explanation:
+      vi: わたって - qua (thể て, nối hành động); まがります - rẽ; ひだり - trái.
+    display_answer: Qua cầu rồi rẽ trái.
+  - key: ja:exercise:directions-michi-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-michi
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Xin lỗi, nhà ga ở đâu?"'
+      tokens:
+        - id: t2
+          text: えきは
+        - id: t1
+          text: すみません、
+        - id: t3
+          text: どこですか。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Câu mở lịch sự → chủ đề (えきは) → từ hỏi (どこですか).
+    display_answer: すみません、えきはどこですか。
+  - key: ja:exercise:directions-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-kousaten
+    prompt:
+      stem: Bạn muốn nói “Rẽ trái ở ngã tư tiếp theo.” Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: mpf
+          text: つぎのしんごうをバスです。
+          lang: ja
+        - id: e1i
+          text: つぎのこうさてんをひだりです。
+          lang: ja
+        - id: dak
+          text: つぎのこうさてんをまっすぐのります。
+          lang: ja
+        - id: lwq
+          text: つぎのはしをおかねです。
+          lang: ja
+    answer:
+      correct_option_id: e1i
+    explanation:
+      vi: こうさてん là ngã tư; ひだり là trái; cấu trúc "N を ひだりです" là cách chỉ đường rút gọn. Các câu còn lại ghép các từ không phù hợp.
+    display_answer: つぎのこうさてんをひだりです。

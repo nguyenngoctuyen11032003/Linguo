@@ -1,0 +1,390 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:transport
+order_index: 2
+level: n5
+title:
+  vi: Phương tiện - バス・ちかてつ・じてんしゃ
+objectives:
+  - vi: "Gọi tên các phương tiện: バス, タクシー, ちかてつ, じてんしゃ, ふね."
+  - vi: Nói đi bằng phương tiện gì với N で いきます và hỏi なにで いきますか.
+  - vi: Dùng のります, おります, あるきます, かかります khi di chuyển.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:town-places
+items:
+  - item: ja:item:n5-u13-basu
+  - item: ja:item:n5-u13-takushii
+  - item: ja:item:n5-u13-chikatetsu
+  - item: ja:item:n5-u13-jitensha
+  - item: ja:item:n5-u13-fune
+  - item: ja:item:n5-u13-norimasu
+  - item: ja:item:n5-u13-orimasu
+  - item: ja:item:n5-u13-arukimasu
+  - item: ja:item:n5-u13-bansen
+  - item: ja:item:n5-u13-kakarimasu
+  - item: ja:item:n5-u13-de-ikimasu
+  - item: ja:item:n4-hikouki
+    role: reuse
+  - item: ja:item:n5-u12-kippu
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mình đi bằng phương tiện gì - バスでがっこうへいきます。- và hỏi người khác なにでいきますか。
+  - type: explain
+    text:
+      vi: "Phương tiện: バス (xe buýt), タクシー (taxi), ちかてつ (tàu điện ngầm), じてんしゃ (xe đạp), ふね (tàu thuỷ). Máy bay và tàu điện bạn đã gặp ở các bài trước."
+  - type: explain
+    text:
+      vi: Đi bằng phương tiện - N で いきます / きます / かえります. Hỏi - なにで いきますか。 Đi bộ là ngoại lệ - あるいて いきます (không nói あるきで). Nhắc lại - えきまで あるきます (đi bộ đến ga).
+  - type: explain
+    text:
+      vi: Lên xe - N に のります (バスに のります); xuống xe - N を おります hoặc N で おります (つぎの えきで おります). Mất bao lâu - ～かかります (バスで さんじゅっぷん かかります).
+  - type: deep_explain
+    text:
+      vi: Hai động từ のります và おります hay đi cùng nhau - バスにのって、えきでおります. Chú ý trợ từ - のります dùng に, おります dùng を (rời khỏi phương tiện) hoặc で (xuống ở ga nào). Bán vé và sân ga - きっぷ (vé), ばんせん (sân ga số). Chữ Hán - 地下鉄, 自転車, 船, 乗ります, 降ります, 歩きます, 番線.
+  - type: example
+    target: まいあさ、バスでかいしゃへいきます。
+    target_lang: ja
+    translation:
+      vi: Sáng nào tôi cũng đi làm bằng xe buýt.
+    note:
+      vi: N で いきます - đi bằng N.
+  - type: example
+    target: えきからうちまであるいてかえります。
+    target_lang: ja
+    translation:
+      vi: Tôi đi bộ từ ga về nhà.
+    note:
+      vi: あるいて - đi bộ (không dùng で).
+  - type: example
+    target: ちかてつにのって、つぎのえきでおります。
+    target_lang: ja
+    translation:
+      vi: Tôi lên tàu điện ngầm rồi xuống ở ga tiếp theo.
+    note:
+      vi: のって - lên (thể て), おります - xuống.
+  - type: example
+    target: バスでさんじゅっぷんかかります。
+    target_lang: ja
+    translation:
+      vi: Đi bằng xe buýt mất 30 phút.
+    note:
+      vi: かかります - mất (thời gian).
+  - type: common_mistake
+    wrong: バスをのります。
+    right: バスにのります。
+    target_lang: ja
+    note:
+      vi: Lên phương tiện dùng に (バスに のります), không dùng を.
+  - type: common_mistake
+    wrong: あるきでがっこうへいきます。
+    right: あるいてがっこうへいきます。
+    target_lang: ja
+    note:
+      vi: Đi bộ là あるいて; không dùng あるきで.
+  - type: summary
+    points:
+      - vi: バス xe buýt · タクシー taxi · ちかてつ tàu điện ngầm · じてんしゃ xe đạp · ふね tàu thuỷ.
+      - vi: N で いきます - đi bằng N; なにで いきますか - đi bằng gì?
+      - vi: N に のります · N を / で おります · あるいて いきます.
+      - vi: ばんせん sân ga số · かかります mất (thời gian).
+exercises:
+  - key: ja:exercise:transport-basu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-basu
+    prompt:
+      stem: Từ nào có nghĩa là “xe buýt”?
+      stem_lang: vi
+      options:
+        - id: rkj
+          text: じてんしゃ
+          lang: ja
+        - id: b50
+          text: バス
+          lang: ja
+        - id: ojb
+          text: タクシー
+          lang: ja
+        - id: iuz
+          text: ふね
+          lang: ja
+    answer:
+      correct_option_id: b50
+    explanation:
+      vi: バス là xe buýt. タクシー là taxi, ふね là tàu thuỷ, じてんしゃ là xe đạp.
+    display_answer: バス
+  - key: ja:exercise:transport-jitensha
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-jitensha
+    prompt:
+      stem: Từ nào có nghĩa là “xe đạp”?
+      stem_lang: vi
+      options:
+        - id: l8f
+          text: じてんしゃ
+          lang: ja
+        - id: rho
+          text: ちかてつ
+          lang: ja
+        - id: dej
+          text: ひこうき
+          lang: ja
+        - id: wsq
+          text: でんしゃ
+          lang: ja
+    answer:
+      correct_option_id: l8f
+    explanation:
+      vi: じてんしゃ là xe đạp. でんしゃ là tàu điện - chỉ khác một chữ じ. ちかてつ là tàu điện ngầm, ひこうき là máy bay.
+    display_answer: じてんしゃ
+  - key: ja:exercise:transport-chikatetsu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u13-chikatetsu
+    prompt:
+      audio_asset_id: null
+      fallback_text: まいあさ、ちかてつでかいしゃへいきます。さんじゅっぷんかかります。
+      options:
+        - id: ko4
+          text: Sáng nào tôi cũng đi làm bằng xe buýt. Mất 30 phút.
+          lang: vi
+        - id: uun
+          text: Sáng nào tôi cũng đi làm bằng tàu điện ngầm. Mất 30 phút.
+          lang: vi
+        - id: e9w
+          text: Sáng nào tôi cũng đi bộ đến công ty. Mất 10 phút.
+          lang: vi
+        - id: f83
+          text: Tối nào tôi cũng về nhà bằng tàu điện ngầm. Mất 30 phút.
+          lang: vi
+    answer:
+      correct_option_id: uun
+    explanation:
+      vi: ちかてつ - tàu điện ngầm; かかります - mất (thời gian); さんじゅっぷん - 30 phút.
+    display_answer: Sáng nào tôi cũng đi làm bằng tàu điện ngầm. Mất 30 phút.
+  - key: ja:exercise:transport-de-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-de-ikimasu
+    prompt:
+      template: タクシー{{b1}}くうこうへいきます。 (Tôi đến sân bay bằng taxi.)
+      blanks:
+        - id: b1
+          width_hint: 2
+      hint_levels:
+        - Trợ từ chỉ phương tiện.
+        - Một chữ - で.
+    answer:
+      blanks:
+        b1:
+          - で
+    known_wrong:
+      - answer: に
+        feedback_vi: に không chỉ phương tiện; dùng で.
+        error_tag: particle_ni_de
+      - answer: を
+        feedback_vi: を là tân ngữ; phương tiện dùng で.
+        error_tag: particle_wo_de
+    explanation:
+      vi: "で chỉ phương tiện: タクシーで - bằng taxi."
+    display_answer: タクシーでくうこうへいきます。
+  - key: ja:exercise:transport-nande
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u13-de-ikimasu
+    prompt:
+      stem: Bạn muốn hỏi “Bạn đi học bằng gì?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: lg4
+          text: なにでがっこうへいきますか。
+          lang: ja
+        - id: ray
+          text: なにへがっこうへいきますか。
+          lang: ja
+        - id: cma
+          text: なにをがっこうへいきますか。
+          lang: ja
+        - id: wav
+          text: なにがっこうへいきますか。
+          lang: ja
+    answer:
+      correct_option_id: lg4
+    explanation:
+      vi: Hỏi phương tiện dùng なにで (bằng gì). なにを hỏi tân ngữ, và các dạng còn lại không tạo thành câu đúng.
+    display_answer: なにでがっこうへいきますか。
+  - key: ja:exercise:transport-arukimasu-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-arukimasu
+    prompt:
+      template: えきまで{{b1}}いきます。 (Tôi đi bộ đến ga.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - あるいて
+          - 歩いて
+    known_wrong:
+      - answer: あるきで
+        feedback_vi: Không nói あるきで; đi bộ là あるいて いきます.
+        error_tag: conjugation
+      - answer: あるく
+        feedback_vi: "Trước いきます phải dùng thể て: あるいて."
+        error_tag: conjugation
+    explanation:
+      vi: あるいて là thể て của あるきます - đi bộ. Đi bộ không dùng で.
+    display_answer: えきまであるいていきます。
+  - key: ja:exercise:transport-norimasu-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-norimasu
+    prompt:
+      template: バス{{b1}}のります。 (Tôi lên xe buýt.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - に
+    known_wrong:
+      - answer: を
+        feedback_vi: Lên phương tiện dùng に, không dùng を.
+        error_tag: particle_ni_wo
+      - answer: で
+        feedback_vi: で chỉ phương tiện khi đi; với のります dùng に.
+        error_tag: particle_ni_de
+    explanation:
+      vi: N に のります - lên N (xe, tàu).
+    display_answer: バスにのります。
+  - key: ja:exercise:transport-jitensha-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-jitensha
+    prompt:
+      source_text: Tôi đi học bằng xe đạp.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - じてんしゃでがっこうへいきます。
+        - 自転車で学校へ行きます。
+        - じてんしゃでがっこうにいきます。
+        - わたしはじてんしゃでがっこうへいきます。
+    known_wrong:
+      - answer: じてんしゃをがっこうへいきます。
+        feedback_vi: Phương tiện dùng で, không dùng を.
+        error_tag: particle_wo_de
+      - answer: でんしゃでがっこうへいきます。
+        feedback_vi: でんしゃ là tàu điện; xe đạp là じてんしゃ.
+        error_tag: vocab_meaning
+    explanation:
+      vi: じてんしゃ = xe đạp; N で いきます - đi bằng N.
+    display_answer: じてんしゃでがっこうへいきます。
+  - key: ja:exercise:transport-chikatetsu-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u13-chikatetsu
+    prompt:
+      source_text: ちかてつにのって、つぎのえきでおります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi lên tàu điện ngầm rồi xuống ở ga tiếp theo.
+        - Lên tàu điện ngầm rồi xuống ở ga kế tiếp.
+        - Tôi đi tàu điện ngầm rồi xuống ở ga tiếp theo.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi xuống tàu điện ngầm rồi lên ở ga tiếp theo.
+        feedback_vi: "のります là lên, おります là xuống; thứ tự: lên rồi xuống."
+        error_tag: verb_choice
+    explanation:
+      vi: のって là thể て của のります (lên) và nối với おります (xuống) theo thứ tự.
+    display_answer: Tôi lên tàu điện ngầm rồi xuống ở ga tiếp theo.
+  - key: ja:exercise:transport-basu-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-basu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Sáng nào tôi cũng đi làm bằng xe buýt."'
+      tokens:
+        - id: t3
+          text: かいしゃへ
+        - id: t4
+          text: いきます。
+        - id: t2
+          text: バスで
+        - id: t1
+          text: まいあさ、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Thời gian → phương tiện (バスで) → đích đến (かいしゃへ) → động từ cuối.
+    display_answer: まいあさ、バスでかいしゃへいきます。
+  - key: ja:exercise:transport-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u13-norimasu
+    prompt:
+      stem: Bạn xuống xe buýt ở ga. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: cls
+          text: えきをのみます。
+          lang: ja
+        - id: lb3
+          text: えきにのります。
+          lang: ja
+        - id: jle
+          text: えきをみがきます。
+          lang: ja
+        - id: x5o
+          text: えきでおります。
+          lang: ja
+    answer:
+      correct_option_id: x5o
+    explanation:
+      vi: Xuống ở nơi nào dùng で + おります. のります là lên; のみます (uống) và みがきます (đánh bóng) không phù hợp.
+    display_answer: えきでおります。
