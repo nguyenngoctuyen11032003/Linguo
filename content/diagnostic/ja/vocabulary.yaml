@@ -402,3 +402,238 @@ items:
         - { id: d, text: "Đi càng xa càng hiểu biết nhiều", lang: vi }
     answer: b
     explanation: { vi: "“五十歩百歩” (ごじっぽひゃっぽ): người chạy năm mươi bước chê người chạy trăm bước — hai bên chẳng hơn gì nhau, giống “kẻ tám lạng, người nửa cân”. “Trăm nghe không bằng một thấy” là “百聞は一見に如かず”." }
+  # ---------- bổ sung: mỗi cấp thêm 3 câu (tổng 8 câu mỗi cấp) ----------
+  - key: ja:diag:voc-kana-inu
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “con chó”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: いす, lang: ja }
+        - { id: b, text: いぬ, lang: ja }
+        - { id: c, text: いか, lang: ja }
+        - { id: d, text: いし, lang: ja }
+    answer: b
+    explanation: { vi: "“いぬ” (inu) là con chó. “いす” là cái ghế, “いか” là con mực, “いし” là hòn đá — cả bốn từ chỉ khác nhau ở chữ thứ hai." }
+  - key: ja:diag:voc-kana-hon
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Từ “ほん” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: cái ô, lang: vi }
+        - { id: b, text: cái bàn, lang: vi }
+        - { id: c, text: quyển sách, lang: vi }
+        - { id: d, text: cái bút, lang: vi }
+    answer: c
+    explanation: { vi: "“ほん” (hon) là quyển sách. Cái ô là “かさ”, cái bàn là “つくえ”, cái bút là “ペン” hoặc “えんぴつ” (bút chì)." }
+  - key: ja:diag:voc-kana-kutsu
+    level: kana
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “đôi giày”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: くち, lang: ja }
+        - { id: b, text: くも, lang: ja }
+        - { id: c, text: くま, lang: ja }
+        - { id: d, text: くつ, lang: ja }
+    answer: d
+    explanation: { vi: "“くつ” (kutsu) là đôi giày. “くち” là cái miệng, “くも” là đám mây, “くま” là con gấu — các từ đều bắt đầu bằng “く” nên cần đọc kỹ chữ thứ hai." }
+  - key: ja:diag:voc-n5-otouto
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ “おとうと” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: em trai (của mình), lang: vi }
+        - { id: b, text: anh trai (của mình), lang: vi }
+        - { id: c, text: em gái (của mình), lang: vi }
+        - { id: d, text: chị gái (của mình), lang: vi }
+    answer: a
+    explanation: { vi: "“おとうと” là em trai. Anh trai là “あに”, em gái là “いもうと”, chị gái là “あね”. Cần phân biệt “おとうと” và “いもうと” vì chỉ khác nhau ở hai chữ đầu." }
+  - key: ja:diag:voc-n5-yuubinkyoku
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ nào có nghĩa là “bưu điện”?"
+      stem_lang: vi
+      options:
+        - { id: a, text: 図書館, lang: ja }
+        - { id: b, text: 郵便局, lang: ja }
+        - { id: c, text: 美術館, lang: ja }
+        - { id: d, text: 映画館, lang: ja }
+    answer: b
+    explanation: { vi: "“郵便局” (ゆうびんきょく) là bưu điện. “図書館” (としょかん) là thư viện, “美術館” (びじゅつかん) là bảo tàng mỹ thuật, “映画館” (えいがかん) là rạp chiếu phim." }
+  - key: ja:diag:voc-n5-mainichi
+    level: n5
+    item_type: mcq
+    prompt:
+      stem: "Từ “毎日” (まいにち) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: mỗi tuần, lang: vi }
+        - { id: b, text: mỗi tháng, lang: vi }
+        - { id: c, text: mỗi năm, lang: vi }
+        - { id: d, text: mỗi ngày, lang: vi }
+    answer: d
+    explanation: { vi: "“毎日” là mỗi ngày. Mỗi tuần là “毎週” (まいしゅう), mỗi tháng là “毎月” (まいつき), mỗi năm là “毎年” (まいとし)." }
+  - key: ja:diag:voc-n4-shukudai
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "Từ “宿題” (しゅくだい) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: kỳ thi, lang: vi }
+        - { id: b, text: bài tập về nhà, lang: vi }
+        - { id: c, text: bài giảng, lang: vi }
+        - { id: d, text: lớp học, lang: vi }
+    answer: b
+    explanation: { vi: "“宿題” là bài tập về nhà. Kỳ thi là “試験” (しけん), bài giảng là “授業” (じゅぎょう), lớp học là “教室” (きょうしつ) hoặc “クラス”." }
+  - key: ja:diag:voc-n4-omiyage
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "Từ “おみやげ” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: quà mua mang về sau chuyến đi, lang: vi }
+        - { id: b, text: quà sinh nhật, lang: vi }
+        - { id: c, text: tiền mừng, lang: vi }
+        - { id: d, text: giấy gói quà, lang: vi }
+    answer: a
+    explanation: { vi: "“おみやげ” (お土産) là quà mua ở nơi đi du lịch mang về tặng người thân, đồng nghiệp. Quà sinh nhật là “誕生日プレゼント”; tiền mừng là “お祝い” (おいわい)." }
+  - key: ja:diag:voc-n4-benri
+    level: n4
+    item_type: mcq
+    prompt:
+      stem: "Từ “便利” (べんり) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: nguy hiểm, lang: vi }
+        - { id: b, text: yên tĩnh, lang: vi }
+        - { id: c, text: bận rộn, lang: vi }
+        - { id: d, text: tiện lợi, lang: vi }
+    answer: d
+    explanation: { vi: "“便利” là tiện lợi, thuận tiện. Nguy hiểm là “危険” (きけん) hay “あぶない”, yên tĩnh là “静か” (しずか), bận rộn là “忙しい” (いそがしい)." }
+  - key: ja:diag:voc-n3-shuukan
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "Từ “習慣” (しゅうかん) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: thói quen, lang: vi }
+        - { id: b, text: "học tập, ôn luyện", lang: vi }
+        - { id: c, text: luyện tập thể thao, lang: vi }
+        - { id: d, text: nghi lễ, lang: vi }
+    answer: a
+    explanation: { vi: "“習慣” là thói quen, tập quán (早起きの習慣). “学習” (がくしゅう) là học tập, “練習” (れんしゅう) là luyện tập, “儀式” (ぎしき) là nghi lễ — các từ có chữ 習 hoặc giống âm nên dễ nhầm." }
+  - key: ja:diag:voc-n3-osoraku
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "Phó từ “おそらく” có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: nhất định, lang: vi }
+        - { id: b, text: có lẽ, lang: vi }
+        - { id: c, text: hầu như không, lang: vi }
+        - { id: d, text: thỉnh thoảng, lang: vi }
+    answer: b
+    explanation: { vi: "“おそらく” (恐らく) là “có lẽ, chắc là”, thường đi với “でしょう/だろう”. Nhất định là “必ず” (かならず), hầu như không là “ほとんど〜ない”, thỉnh thoảng là “時々”." }
+  - key: ja:diag:voc-n3-soudan
+    level: n3
+    item_type: mcq
+    prompt:
+      stem: "Từ “相談” (そうだん) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: cãi nhau, lang: vi }
+        - { id: b, text: chuyển nhà, lang: vi }
+        - { id: c, text: "bàn bạc, xin ý kiến", lang: vi }
+        - { id: d, text: từ chối, lang: vi }
+    answer: c
+    explanation: { vi: "“相談” là bàn bạc, trao đổi để xin lời khuyên (友達に相談する). Cãi nhau là “けんか”, chuyển nhà là “引っ越し”, từ chối là “断る” (ことわる)." }
+  - key: ja:diag:voc-n2-haaku
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "Từ “把握する” (はあくする) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: bắt tay, lang: vi }
+        - { id: b, text: "nắm bắt, hiểu rõ (tình hình)", lang: vi }
+        - { id: c, text: vứt bỏ, lang: vi }
+        - { id: d, text: bảo quản, lang: vi }
+    answer: b
+    explanation: { vi: "“把握する” là nắm bắt, hiểu rõ (状況を把握する). Bắt tay là “握手” (あくしゅ) — cũng có chữ 握; vứt bỏ là “捨てる”; bảo quản là “保管する”." }
+  - key: ja:diag:voc-n2-dakyou
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "Từ “妥協” (だきょう) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: hợp tác, lang: vi }
+        - { id: b, text: thoả hiệp, lang: vi }
+        - { id: c, text: chống đối, lang: vi }
+        - { id: d, text: cạnh tranh, lang: vi }
+    answer: b
+    explanation: { vi: "“妥協” là thoả hiệp, nhượng bộ lẫn nhau (妥協点を探る). Hợp tác là “協力”, chống đối là “反対/対立”, cạnh tranh là “競争”." }
+  - key: ja:diag:voc-n2-ichijirushii
+    level: n2
+    item_type: mcq
+    prompt:
+      stem: "Tính từ “著しい” (いちじるしい) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: kỳ lạ, lang: vi }
+        - { id: b, text: hiếm có, lang: vi }
+        - { id: c, text: "rõ rệt, đáng kể", lang: vi }
+        - { id: d, text: nhỏ bé, lang: vi }
+    answer: c
+    explanation: { vi: "“著しい” là rõ rệt, đáng kể, thường đi với sự thay đổi (著しい成長, 著しく減少する). Kỳ lạ là “奇妙/変”, hiếm có là “珍しい”, nhỏ bé là “小さい/わずか”." }
+  - key: ja:diag:voc-n1-itsudatsu
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "Từ “逸脱” (いつだつ) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "đi chệch, vượt ra khỏi (quy định, chuẩn mực)", lang: vi }
+        - { id: b, text: tuân thủ nghiêm ngặt, lang: vi }
+        - { id: c, text: thoát khỏi hiểm nguy, lang: vi }
+        - { id: d, text: giải thích rõ ràng, lang: vi }
+    answer: a
+    explanation: { vi: "“逸脱” là đi chệch, vượt ra ngoài phạm vi (規定から逸脱する). “遵守” (じゅんしゅ) mới là tuân thủ; “脱出” là thoát ra; “説明” là giải thích." }
+  - key: ja:diag:voc-n1-yoginaku
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "Cụm “余儀なく〜される” (よぎなく) có nghĩa gần nhất với điều nào?"
+      stem_lang: vi
+      options:
+        - { id: a, text: được làm một cách tự nguyện, lang: vi }
+        - { id: b, text: làm một cách thong thả, lang: vi }
+        - { id: c, text: bị làm một cách tình cờ, lang: vi }
+        - { id: d, text: đành phải làm vì không còn cách nào khác, lang: vi }
+    answer: d
+    explanation: { vi: "“余儀なく” là “đành phải, bất đắc dĩ”, như trong 計画の変更を余儀なくされた (đành phải thay đổi kế hoạch). Nó trái nghĩa với tự nguyện." }
+  - key: ja:diag:voc-n1-kencho
+    level: n1
+    item_type: mcq
+    prompt:
+      stem: "Từ “顕著” (けんちょ) có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: a, text: "mờ nhạt, khó nhận ra", lang: vi }
+        - { id: b, text: "nổi bật, rõ ràng", lang: vi }
+        - { id: c, text: bình thường, lang: vi }
+        - { id: d, text: giả tạo, lang: vi }
+    answer: b
+    explanation: { vi: "“顕著” (顕著な違い・顕著に表れる) nghĩa là nổi bật, hiện rõ ra ngoài. Mờ nhạt là “目立たない/わずか”, bình thường là “平凡”, giả tạo là “偽り/不自然”." }

@@ -462,3 +462,274 @@ items:
     answer: b
     explanation:
       vi: "“いくら失敗を重ねたところで得るものは乏しい” — nếu thiếu góc nhìn rút ra bài học thì dù thất bại bao nhiêu cũng thu được ít. “無謀な挑戦を奨励しているわけではない” bác bỏ ý “càng liều càng tốt”; “〜かねない” cảnh báo việc né tránh thử thách."
+  # ---------- bổ sung: mỗi cấp thêm 3 câu (tổng 8 câu mỗi cấp) ----------
+  - key: ja:diag:read-kana-asa
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "わたしは まいあさ ６じに おきます。それから ごはんを たべます。７じに うちを でます。"
+      stem: Người viết ra khỏi nhà lúc mấy giờ?
+      stem_lang: vi
+      options:
+        - { id: a, text: 6 giờ, lang: vi }
+        - { id: b, text: 7 giờ, lang: vi }
+        - { id: c, text: 8 giờ, lang: vi }
+        - { id: d, text: 9 giờ, lang: vi }
+    answer: b
+    explanation:
+      vi: "“６じに おきます” là dậy lúc 6 giờ; “７じに うちを でます” là ra khỏi nhà lúc 7 giờ. 6 giờ là giờ thức dậy, không phải giờ ra khỏi nhà."
+  - key: ja:diag:read-kana-kouen
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "きょうは にちようびです。ともだちと こうえんへ いきました。そこで べんとうを たべました。"
+      stem: Người viết ăn cơm hộp ở đâu?
+      stem_lang: vi
+      options:
+        - { id: a, text: Ở trường, lang: vi }
+        - { id: b, text: Ở nhà, lang: vi }
+        - { id: c, text: Ở nhà bạn, lang: vi }
+        - { id: d, text: Ở công viên, lang: vi }
+    answer: d
+    explanation:
+      vi: "“こうえんへ いきました。そこで べんとうを たべました” — “そこ” chỉ chính công viên vừa nhắc, nên ăn cơm hộp ở công viên."
+  - key: ja:diag:read-kana-neko
+    level: kana
+    item_type: reading_mcq
+    prompt:
+      passage: "やまださんは ねこが すきですが、いぬは すきじゃ ありません。うちに ねこが にひき います。"
+      stem: Nhà Yamada có gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Hai con mèo, lang: vi }
+        - { id: b, text: Một con mèo, lang: vi }
+        - { id: c, text: Một con chó, lang: vi }
+        - { id: d, text: Hai con chó, lang: vi }
+    answer: a
+    explanation:
+      vi: "“ねこが にひき います” nghĩa là có hai con mèo (“にひき” là hai con). Anh ấy không thích chó (いぬは すきじゃ ありません) nên nhà không nuôi chó."
+  - key: ja:diag:read-n5-kazoku
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "わたしの 家族は 四人です。父と 母と 弟と わたしです。父は 会社員で、母は 先生です。"
+      stem: Mẹ của người viết làm nghề gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Giáo viên, lang: vi }
+        - { id: b, text: Nhân viên công ty, lang: vi }
+        - { id: c, text: Học sinh, lang: vi }
+        - { id: d, text: Bác sĩ, lang: vi }
+    answer: a
+    explanation:
+      vi: "“母は 先生です” — mẹ là giáo viên. “会社員” (nhân viên công ty) là nghề của bố."
+  - key: ja:diag:read-n5-ame
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "きのうは 雨でした。だから、どこへも 行きませんでした。うちで 本を 読みました。"
+      stem: Hôm qua người viết đã làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Đi đến thư viện, lang: vi }
+        - { id: b, text: Ở nhà đọc sách, lang: vi }
+        - { id: c, text: Đi xem phim, lang: vi }
+        - { id: d, text: Đi mua sắm, lang: vi }
+    answer: b
+    explanation:
+      vi: "Vì trời mưa nên “どこへも 行きませんでした” (không đi đâu cả) và “うちで 本を 読みました” (ở nhà đọc sách)."
+  - key: ja:diag:read-n5-restaurant
+    level: n5
+    item_type: reading_mcq
+    prompt:
+      passage: "この レストランは 安いです。そして、おいしいです。でも、とても 小さいですから、いつも 人が 多いです。"
+      stem: Điểm bất tiện của nhà hàng này là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Giá đắt, lang: vi }
+        - { id: b, text: Đồ ăn dở, lang: vi }
+        - { id: c, text: Quán nhỏ nên lúc nào cũng đông, lang: vi }
+        - { id: d, text: Quán ở xa ga, lang: vi }
+    answer: c
+    explanation:
+      vi: "Sau “でも” (nhưng) là điểm bất tiện: “とても 小さいですから、いつも 人が 多いです” (rất nhỏ nên lúc nào cũng đông). Giá rẻ (安い) và ngon (おいしい) là ưu điểm."
+  - key: ja:diag:read-n4-memo
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "田中さんへ。今日は 会社を 休みます。きのうの 夜から ねつが 出て、病院へ 行って きます。会議の 資料は 机の 上に 置いて あります。山本さんに わたして ください。"
+      stem: Người viết nhờ Tanaka làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Đưa tài liệu họp cho Yamamoto, lang: vi }
+        - { id: b, text: Đưa người viết đến bệnh viện, lang: vi }
+        - { id: c, text: Làm tài liệu họp mới, lang: vi }
+        - { id: d, text: Hoãn cuộc họp, lang: vi }
+    answer: a
+    explanation:
+      vi: "Tài liệu đã được đặt sẵn trên bàn (置いてあります) và người viết nhờ “山本さんに わたして ください” (hãy đưa cho Yamamoto). Việc đi bệnh viện là của người viết."
+  - key: ja:diag:read-n4-nihongo
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "私は 日本語を 勉強して 三年に なります。最初は ひらがなも 読めませんでしたが、今は 日本語の 新聞が 少し 読めます。でも、話すのは まだ むずかしいです。"
+      stem: Hiện nay người viết thấy việc gì còn khó?
+      stem_lang: vi
+      options:
+        - { id: a, text: Đọc hiragana, lang: vi }
+        - { id: b, text: Đọc báo tiếng Nhật, lang: vi }
+        - { id: c, text: Nói tiếng Nhật, lang: vi }
+        - { id: d, text: Nghe tin tức, lang: vi }
+    answer: c
+    explanation:
+      vi: "“話すのは まだ むずかしいです” — nói vẫn còn khó. Hiragana đã đọc được từ lâu, và báo tiếng Nhật thì “少し 読めます” (đọc được một chút)."
+  - key: ja:diag:read-n4-hokkaido
+    level: n4
+    item_type: reading_mcq
+    prompt:
+      passage: "夏休みに 家族と 北海道へ 行く つもりです。飛行機の 切符は もう 買って ありますが、ホテルは まだ 予約して いません。来週、インターネットで さがします。"
+      stem: Người viết chưa làm việc gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Mua vé máy bay, lang: vi }
+        - { id: b, text: Đặt khách sạn, lang: vi }
+        - { id: c, text: Nói với gia đình, lang: vi }
+        - { id: d, text: Quyết định điểm đến của chuyến đi, lang: vi }
+    answer: b
+    explanation:
+      vi: "“ホテルは まだ 予約して いません” — chưa đặt khách sạn. Vé máy bay đã mua (買って あります), và điểm đến (北海道) đã được quyết định (行くつもりです)."
+  - key: ja:diag:read-n3-denshi
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "最近、電子書籍を読む人が増えている。持ち運びが楽で、文字の大きさも変えられるからだ。一方で、紙の本のほうが目が疲れにくいと感じる人も多い。"
+      stem: Điều nào đúng theo đoạn văn?
+      stem_lang: vi
+      options:
+        - { id: a, text: Sách điện tử khó mang theo hơn sách giấy, lang: vi }
+        - { id: b, text: Nhiều người thấy sách giấy ít làm mỏi mắt hơn, lang: vi }
+        - { id: c, text: Số người đọc sách điện tử đang giảm, lang: vi }
+        - { id: d, text: Không thể đổi cỡ chữ của sách điện tử, lang: vi }
+    answer: b
+    explanation:
+      vi: "Sau “一方で” (mặt khác): “紙の本のほうが目が疲れにくいと感じる人も多い”. Các phương án còn lại đều trái nội dung: sách điện tử dễ mang (持ち運びが楽), cỡ chữ đổi được, và người đọc đang tăng."
+  - key: ja:diag:read-n3-shippai
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "山田さんは、仕事で失敗してしまったが、上司は怒らず、「次に生かせばいい」と言ってくれた。山田さんはそれを聞いて、かえって責任を感じ、同じ失敗を繰り返さないよう、確認の方法を見直した。"
+      stem: Sau khi nghe lời của cấp trên, Yamada đã làm gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Xin lỗi cấp trên và nghỉ việc, lang: vi }
+        - { id: b, text: Quên chuyện thất bại, lang: vi }
+        - { id: c, text: Xem lại cách kiểm tra để không lặp lại lỗi, lang: vi }
+        - { id: d, text: Nhờ đồng nghiệp làm thay, lang: vi }
+    answer: c
+    explanation:
+      vi: "“同じ失敗を繰り返さないよう、確認の方法を見直した” — để không lặp lại lỗi, anh xem lại cách kiểm tra. “かえって責任を感じ” cho thấy anh càng thấy có trách nhiệm, không phải quên chuyện đó."
+  - key: ja:diag:read-n3-elevator
+    level: n3
+    item_type: reading_mcq
+    prompt:
+      passage: "来週の月曜日は、設備の点検のため、午前中はエレベーターが使えません。階段をご利用ください。なお、荷物の搬入は午後にお願いします。"
+      stem: Người chuyển hàng nên làm thế nào vào thứ Hai tuần sau?
+      stem_lang: vi
+      options:
+        - { id: a, text: Mang hàng vào buổi chiều, lang: vi }
+        - { id: b, text: Mang hàng vào buổi sáng bằng thang máy, lang: vi }
+        - { id: c, text: Hoãn đến thứ Ba, lang: vi }
+        - { id: d, text: Gọi nhân viên kiểm tra thang máy, lang: vi }
+    answer: a
+    explanation:
+      vi: "“荷物の搬入は午後にお願いします” — nhờ đưa hàng vào buổi chiều, vì buổi sáng thang máy không dùng được do kiểm tra thiết bị."
+  - key: ja:diag:read-n2-sns
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "SNSでは、短く刺激的な言葉ほど拡散されやすい。そのため、慎重に言葉を選んだ長い文章は、読まれないまま埋もれてしまうことが多い。だが、物事の複雑さを伝えるには、時間をかけた説明が欠かせない。"
+      stem: Người viết muốn nói điều gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Nên chỉ viết những câu ngắn và gây chú ý, lang: vi }
+        - { id: b, text: Để truyền đạt sự phức tạp của sự việc cần có lời giải thích dành thời gian, lang: vi }
+        - { id: c, text: Không nên dùng mạng xã hội, lang: vi }
+        - { id: d, text: Văn bản dài luôn được nhiều người đọc, lang: vi }
+    answer: b
+    explanation:
+      vi: "Câu cuối nêu chủ ý sau “だが”: “物事の複雑さを伝えるには、時間をかけた説明が欠かせない”. Người viết thừa nhận lời ngắn dễ lan truyền nhưng không cho rằng chỉ nên viết ngắn."
+  - key: ja:diag:read-n2-coffee
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "この店では、客の注文を聞いてから豆を挽くことにしている。手間はかかるが、挽きたての香りは格別で、常連客はそれを楽しみに通ってくる。店主は「効率を考えれば、もっと楽な方法はある。しかし、それでは味が落ちる」と話す。"
+      stem: Vì sao chủ quán chấp nhận tốn công?
+      stem_lang: vi
+      options:
+        - { id: a, text: Để phục vụ khách nhanh hơn, lang: vi }
+        - { id: b, text: Để tiết kiệm chi phí, lang: vi }
+        - { id: c, text: Để giữ hương vị và mùi thơm của cà phê, lang: vi }
+        - { id: d, text: Vì khách yêu cầu giảm giá, lang: vi }
+    answer: c
+    explanation:
+      vi: "Chủ quán nói có cách nhanh hơn nhưng “それでは味が落ちる” (như vậy thì hương vị giảm), và khách quen đến vì mùi thơm của cà phê vừa xay. Hiệu quả (a, b) chính là điều ông không ưu tiên."
+  - key: ja:diag:read-n2-kosodate
+    level: n2
+    item_type: reading_mcq
+    prompt:
+      passage: "近年、都市部では公園が減り、子どもが自由に遊べる場所が少なくなっている。一方、保育所の数は増えたものの、希望しても入れない家庭がなお多い。子育てを支える環境の整備は、まだ道半ばだと言わざるを得ない。"
+      stem: Người viết đánh giá việc xây dựng môi trường hỗ trợ nuôi dạy con như thế nào?
+      stem_lang: vi
+      options:
+        - { id: a, text: Đã hoàn thiện, lang: vi }
+        - { id: b, text: "Mới đi được nửa đường, vẫn chưa đủ", lang: vi }
+        - { id: c, text: Không cần thiết nữa, lang: vi }
+        - { id: d, text: Đã thụt lùi so với trước, lang: vi }
+    answer: b
+    explanation:
+      vi: "“まだ道半ばだと言わざるを得ない” — không thể không nói rằng mới đi được nửa chặng. Số nhà trẻ đã tăng (増えた) nhưng nhiều gia đình vẫn chưa vào được, nên chưa thể gọi là hoàn thiện."
+  - key: ja:diag:read-n1-dentou
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "「伝統」とは、過去をそのまま保存することではない。むしろ、時代の要請に応じて形を変えながら、核となる精神を受け継いでいく営みである。形だけを守ろうとして精神を見失えば、伝統はかえって形骸化してしまう。"
+      stem: Người viết cho rằng “truyền thống” là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Việc bảo tồn nguyên vẹn quá khứ, lang: vi }
+        - { id: b, text: Việc chỉ giữ hình thức cũ, lang: vi }
+        - { id: c, text: Việc bỏ hết quá khứ để theo thời đại, lang: vi }
+        - { id: d, text: Việc kế thừa tinh thần cốt lõi trong khi thay đổi hình thức theo thời đại, lang: vi }
+    answer: d
+    explanation:
+      vi: "“むしろ” (trái lại) dẫn tới định nghĩa: “時代の要請に応じて形を変えながら、核となる精神を受け継いでいく営み”. a bị phủ nhận ngay ở câu đầu; b dẫn đến “形骸化” (hình thức hoá); c không được người viết nói đến."
+  - key: ja:diag:read-n1-gijutsu
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "科学技術の進歩は、私たちの生活を豊かにしてきた。だが、技術が可能にすることと、社会が許容すべきこととは別問題である。遺伝子の操作がその典型であり、できるからやるという発想では、取り返しのつかない結果を招きかねない。"
+      stem: Người viết chủ trương điều gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Phải làm mọi điều khi công nghệ cho phép, lang: vi }
+        - { id: b, text: Cần cấm hoàn toàn mọi tiến bộ khoa học, lang: vi }
+        - { id: c, text: Điều có thể làm về công nghệ và điều xã hội nên chấp nhận là hai vấn đề riêng cần cân nhắc, lang: vi }
+        - { id: d, text: Thao tác gen không có rủi ro gì, lang: vi }
+    answer: c
+    explanation:
+      vi: "“技術が可能にすることと、社会が許容すべきこととは別問題である” là luận điểm chính; ví dụ thao tác gen cho thấy tư duy “できるからやる” có thể gây hậu quả không thể cứu vãn. Người viết vẫn thừa nhận khoa học làm cuộc sống phong phú hơn nên b sai."
+  - key: ja:diag:read-n1-shokunin
+    level: n1
+    item_type: reading_mcq
+    prompt:
+      passage: "一流の職人は、道具を選ぶ前にまず素材を見る。素材の性質を読み取れなければ、どれほど優れた道具も宝の持ち腐れになるからだ。この姿勢は、情報があふれる現代の私たちにも示唆を与える。ツールの使い方を覚える以前に、扱う対象の本質を見極める目を養うべきではないか。"
+      stem: Điều người viết muốn nhấn mạnh là gì?
+      stem_lang: vi
+      options:
+        - { id: a, text: Cần mua dụng cụ tốt nhất trước tiên, lang: vi }
+        - { id: b, text: Cần rèn con mắt nhìn ra bản chất của đối tượng trước cả cách dùng công cụ, lang: vi }
+        - { id: c, text: Thợ thủ công giỏi không cần dụng cụ, lang: vi }
+        - { id: d, text: Thông tin càng nhiều càng tốt, lang: vi }
+    answer: b
+    explanation:
+      vi: "Câu cuối là kết luận (câu hỏi tu từ): “ツールの使い方を覚える以前に、扱う対象の本質を見極める目を養うべき”. Thợ giỏi vẫn dùng dụng cụ nhưng nhìn nguyên liệu trước, nên c sai; a và d trái với ý “không đọc được nguyên liệu thì dụng cụ tốt cũng phí”."
