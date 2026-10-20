@@ -1,0 +1,296 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w3-bewerbung-arbeitssuche
+order_index: 1
+level: b1
+title:
+  vi: Xin việc và tìm việc (Bewerbung und Arbeitssuche)
+objectives:
+  - vi: Hiểu và dùng từ về hồ sơ xin việc, đào tạo nghề và trợ cấp thất nghiệp.
+  - vi: "Nói về quá trình tìm việc: sich vorstellen, nachreichen, einarbeiten."
+  - vi: Phân biệt Lehre, Berufsausbildung, Praktikum và Quereinsteiger.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w2-adverbien-b1
+items:
+  - item: de:item:b1w3-bewerbungsunterlagen
+  - item: de:item:b1w3-bewerbungsschreiben
+  - item: de:item:b1w3-referenz
+  - item: de:item:b1w3-bewerbungsfrist
+  - item: de:item:b1w3-auswahlverfahren
+  - item: de:item:b1w3-berufsausbildung
+  - item: de:item:b1w3-lehre
+  - item: de:item:b1w3-lehrling
+  - item: de:item:b1w3-quereinsteiger
+  - item: de:item:b1w3-arbeitsagentur
+  - item: de:item:b1w3-arbeitslosengeld
+  - item: de:item:b1w3-stellenwechsel
+  - item: de:item:b1w3-arbeitsvermittlung
+  - item: de:item:b1w3-sich-vorstellen
+  - item: de:item:b1w3-einarbeiten
+  - item: de:item:b1w3-entlassen
+  - item: de:item:b1w3-ausbilden
+  - item: de:item:b1w3-nachreichen
+  - item: de:item:b1w3-arbeitssuchend
+  - item: de:item:b1w3-motiviert
+  - item: de:item:b1w3-tabellarisch
+  - item: de:item:b1w3-handschriftlich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu các từ về hồ sơ xin việc và đào tạo nghề, nói về quá trình tìm việc và mô tả bản thân khi ứng tuyển.
+  - type: explain
+    text:
+      vi: Hồ sơ xin việc gồm die Bewerbungsunterlagen (luôn số nhiều), das Bewerbungsschreiben (thư xin việc), der Lebenslauf (hay viết dạng tabellarisch, tức dạng bảng liệt kê) và Referenzen (thư giới thiệu). Hạn nộp là die Bewerbungsfrist. Nếu thiếu giấy tờ bạn có thể nachreichen (nộp bổ sung).
+  - type: explain
+    text:
+      vi: Đào tạo nghề ở Đức có thể gọi là die Berufsausbildung hoặc die Lehre; người học là der Lehrling hoặc der/die Auszubildende. Quereinsteiger là người chuyển sang nghề mới mà không có bằng chính quy của nghề đó. Das Arbeitslosengeld do die Arbeitsagentur chi trả cho người đủ điều kiện.
+  - type: explain
+    text:
+      vi: "Động từ: sich vorstellen (stellt sich vor, stellte sich vor, hat sich vorgestellt) là đến phỏng vấn hoặc giới thiệu bản thân; einarbeiten (cho người mới làm quen với việc), entlassen (sa thải: entlässt, entließ, hat entlassen), ausbilden (đào tạo nghề). Người xin việc là arbeitssuchend; tính từ motiviert (có động lực), erfahren (giàu kinh nghiệm)."
+  - type: deep_explain
+    text:
+      vi: "Đừng nhầm sich vorstellen (giới thiệu mình) với sich etwas vorstellen (hình dung, tưởng tượng điều gì): Ich stelle mir das schwierig vor. Das Auswahlverfahren (quy trình tuyển chọn) thường gồm xem hồ sơ, phỏng vấn và đôi khi bài kiểm tra. Der Stellenwechsel là việc đổi công việc, còn die Arbeitsvermittlung là dịch vụ giới thiệu việc làm."
+  - type: example
+    target: Bitte schicken Sie Ihre Bewerbungsunterlagen per E-Mail.
+    target_lang: de
+    translation:
+      vi: Xin gửi hồ sơ xin việc của ông/bà qua e-mail.
+    note:
+      vi: die Bewerbungsunterlagen = hồ sơ xin việc.
+  - type: example
+    target: Im Bewerbungsschreiben erkläre ich, warum ich die Stelle möchte.
+    target_lang: de
+    translation:
+      vi: Trong thư xin việc tôi giải thích vì sao tôi muốn vị trí này.
+    note:
+      vi: das Bewerbungsschreiben = thư xin việc.
+  - type: example
+    target: Ich kann zwei Referenzen von früheren Arbeitgebern vorlegen.
+    target_lang: de
+    translation:
+      vi: Tôi có thể nộp hai thư giới thiệu từ các nhà tuyển dụng trước.
+    note:
+      vi: die Referenz = thư giới thiệu, người giới thiệu.
+  - type: example
+    target: Die Bewerbungsfrist endet am 31. Mai.
+    target_lang: de
+    translation:
+      vi: Hạn nộp hồ sơ kết thúc vào ngày 31 tháng 5.
+    note:
+      vi: die Bewerbungsfrist = hạn nộp hồ sơ.
+  - type: common_mistake
+    wrong: Ich habe mich gestern bei der Firma vorgestellt gehabt.
+    right: Ich habe mich gestern bei der Firma vorgestellt.
+    target_lang: de
+    note:
+      vi: Perfekt chỉ cần haben + Partizip II; đừng thêm gehabt.
+  - type: common_mistake
+    wrong: Bitte schicken Sie Ihre Bewerbungsunterlage bis Freitag.
+    right: Bitte schicken Sie Ihre Bewerbungsunterlagen bis Freitag.
+    target_lang: de
+    note:
+      vi: Bewerbungsunterlagen chỉ dùng ở số nhiều (hồ sơ gồm nhiều giấy tờ).
+  - type: summary
+    points:
+      - vi: sich vorstellen, einarbeiten, entlassen, ausbilden, nachreichen; arbeitssuchend, motiviert, erfahren, tabellarisch, handschriftlich.
+exercises:
+  - key: de:exercise:b1w3l1-listen-ausbilden
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-ausbilden
+    prompt:
+      audio_asset_id: null
+      fallback_text: Unser Betrieb bildet jedes Jahr zwei Lehrlinge aus.
+      options:
+        - { id: wmc, text: Doanh nghiệp chúng tôi mỗi năm đào tạo hai người học nghề., lang: vi }
+        - { id: zxu, text: Xin gửi hồ sơ xin việc của ông/bà qua e-mail., lang: vi }
+        - { id: mp5, text: Tôi có thể nộp hai thư giới thiệu từ các nhà tuyển dụng trước., lang: vi }
+        - { id: crl, text: Cơ quan việc làm giúp tìm kiếm một vị trí., lang: vi }
+    answer:
+      correct_option_id: wmc
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Doanh nghiệp chúng tôi mỗi năm đào tạo hai người học nghề.". Từ khoá là ausbilden (đào tạo (nghề)); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Doanh nghiệp chúng tôi mỗi năm đào tạo hai người học nghề.
+  - key: de:exercise:b1w3l1-mcq-vi-de-quereinsteiger
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w3-quereinsteiger
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "người chuyển sang nghề mới"?
+      stem_lang: vi
+      options:
+        - { id: bzv, text: die Bewerbungsfrist, lang: de }
+        - { id: itx, text: der Quereinsteiger, lang: de }
+        - { id: bay, text: der Stellenwechsel, lang: de }
+        - { id: gto, text: das Bewerbungsschreiben, lang: de }
+    answer:
+      correct_option_id: itx
+    explanation:
+      vi: "der Quereinsteiger nghĩa là \"người chuyển sang nghề mới\". Ví dụ: Als Quereinsteiger muss man oft eine Weiterbildung machen. (Là người chuyển nghề, người ta thường phải học thêm.)"
+    display_answer: der Quereinsteiger
+  - key: de:exercise:b1w3l1-mcq-de-vi-berufsausbildung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-berufsausbildung
+    prompt:
+      stem: "\"die Berufsausbildung\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: f62, text: đào tạo nghề, lang: vi }
+        - { id: dd5, text: dịch vụ giới thiệu việc làm, lang: vi }
+        - { id: kye, text: "dạng bảng, dạng liệt kê", lang: vi }
+        - { id: t61, text: đang tìm việc, lang: vi }
+    answer:
+      correct_option_id: f62
+    explanation:
+      vi: "die Berufsausbildung nghĩa là \"đào tạo nghề\". Ví dụ: Nach der Schule macht er eine Berufsausbildung zum Elektriker. (Sau khi học xong phổ thông, anh ấy học nghề thợ điện.)"
+    display_answer: đào tạo nghề
+  - key: de:exercise:b1w3l1-mcq-artikel-auswahlverfahren
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-auswahlverfahren
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Auswahlverfahren\" (quy trình tuyển chọn): ___ Auswahlverfahren"
+      stem_lang: vi
+      options:
+        - { id: ctx, text: das, lang: de }
+        - { id: deo, text: die, lang: de }
+        - { id: fts, text: der, lang: de }
+        - { id: f65, text: ein, lang: de }
+    answer:
+      correct_option_id: ctx
+    explanation:
+      vi: "Auswahlverfahren là danh từ giống trung (das): das Auswahlverfahren; số nhiều: die Auswahlverfahren. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w3l1-tr-word-arbeitslosengeld
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-arbeitslosengeld
+    prompt:
+      source_text: trợ cấp thất nghiệp (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Arbeitslosengeld
+    known_wrong:
+      - answer: der Arbeitslosengeld
+        feedback_vi: Arbeitslosengeld là giống trung, nên là das Arbeitslosengeld.
+        error_tag: article
+      - answer: die Arbeitslosengeld
+        feedback_vi: Arbeitslosengeld là giống trung, nên là das Arbeitslosengeld.
+        error_tag: article
+    explanation:
+      vi: "\"trợ cấp thất nghiệp\" trong tiếng Đức là das Arbeitslosengeld (số nhiều: không dùng). Ví dụ: Wer seine Stelle verliert, kann Arbeitslosengeld beantragen."
+    display_answer: das Arbeitslosengeld
+  - key: de:exercise:b1w3l1-tr-word-einarbeiten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-einarbeiten
+    prompt:
+      source_text: hướng dẫn làm quen công việc (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - einarbeiten
+    explanation:
+      vi: "\"hướng dẫn làm quen công việc\" trong tiếng Đức là einarbeiten. Ví dụ: Ein erfahrener Kollege arbeitet die neue Mitarbeiterin ein."
+    display_answer: einarbeiten
+  - key: de:exercise:b1w3l1-fill-plural-lehrling
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-lehrling
+    prompt:
+      template: "Singular: der Lehrling · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 11 }
+    answer:
+      blanks:
+        b1:
+          - Lehrlinge
+    known_wrong:
+      - answer: Lehrling
+        feedback_vi: Lehrling là dạng số ít; số nhiều là Lehrlinge.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Lehrling là die Lehrlinge (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Lehrling · Plural: die Lehrlinge"
+  - key: de:exercise:b1w3l1-mcq-luecke-bewerbungsunterlagen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-bewerbungsunterlagen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Xin gửi hồ sơ xin việc của ông/bà qua e-mail.\": Bitte schicken Sie Ihre ___ per E-Mail."
+      stem_lang: vi
+      options:
+        - { id: nne, text: Stellenwechsel, lang: de }
+        - { id: yem, text: Referenzen, lang: de }
+        - { id: vh2, text: Bewerbungsunterlagen, lang: de }
+        - { id: jsq, text: Arbeitsvermittlung, lang: de }
+    answer:
+      correct_option_id: vh2
+    explanation:
+      vi: "Câu có nghĩa \"Xin gửi hồ sơ xin việc của ông/bà qua e-mail.\" nên cần Bewerbungsunterlagen (die Bewerbungsunterlagen: hồ sơ xin việc). Arbeitsvermittlung = dịch vụ giới thiệu việc làm; Referenzen = thư giới thiệu, người giới thiệu; Stellenwechsel = việc đổi việc không đúng nghĩa của câu."
+    display_answer: Bewerbungsunterlagen
+  - key: de:exercise:b1w3l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Ich möchte mich bei Ihrer Firma bewerben, deshalb schicke ich Ihnen meine Bewerbungsunterlagen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich möchte mich bei Ihrer Firma bewerben, deshalb schicke ich Ihnen meine Bewerbungsunterlagen.
+        - Ich möchte mich bei Ihrer Firma bewerben und schicke Ihnen deshalb meine Bewerbungsunterlagen.
+        - Deshalb schicke ich Ihnen meine Bewerbungsunterlagen, denn ich möchte mich bei Ihrer Firma bewerben.
+    explanation:
+      vi: "Gợi ý đáp án: Ich möchte mich bei Ihrer Firma bewerben, deshalb schicke ich Ihnen meine Bewerbungsunterlagen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich möchte mich bei Ihrer Firma bewerben, deshalb schicke ich Ihnen meine Bewerbungsunterlagen.
+    item: de:item:b1w3-bewerbungsunterlagen
+  - key: de:exercise:b1w3l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Als Quereinsteigerin wurde sie drei Wochen lang sorgfältig eingearbeitet.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Là người chuyển ngành, cô ấy đã được hướng dẫn làm quen với công việc kỹ lưỡng trong ba tuần.
+        - Vì chuyển sang nghề mới, cô ấy được đào tạo làm quen công việc cẩn thận suốt ba tuần.
+        - Với tư cách là người chuyển nghề, cô ấy đã được hướng dẫn kỹ lưỡng trong ba tuần đầu.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Als Quereinsteigerin wurde sie drei Wochen lang sorgfältig eingearbeitet.\" nghĩa là: Là người chuyển ngành, cô ấy đã được hướng dẫn làm quen với công việc kỹ lưỡng trong ba tuần. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Là người chuyển ngành, cô ấy đã được hướng dẫn làm quen với công việc kỹ lưỡng trong ba tuần.
+    item: de:item:b1w3-quereinsteiger

@@ -1,0 +1,292 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w3-branchen-berufe
+order_index: 3
+level: b1
+title:
+  vi: Ngành nghề và lĩnh vực kinh tế (Branchen und Berufe)
+objectives:
+  - vi: Gọi tên các ngành, lĩnh vực kinh tế và nhiều nghề nghiệp thường gặp.
+  - vi: "Nhận biết giống và dạng nữ của tên nghề: der Informatiker – die Informatikerin."
+  - vi: "Dùng các tính từ chỉ lĩnh vực: handwerklich, kaufmännisch, technisch, medizinisch."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w3-buero-kommunikation
+items:
+  - item: de:item:b1w3-handwerk
+  - item: de:item:b1w3-gastronomie
+  - item: de:item:b1w3-landwirt
+  - item: de:item:b1w3-altenpfleger
+  - item: de:item:b1w3-mechatroniker
+  - item: de:item:b1w3-informatiker
+  - item: de:item:b1w3-buchhalter
+  - item: de:item:b1w3-steuerberater
+  - item: de:item:b1w3-uebersetzer
+  - item: de:item:b1w3-freiberufler
+  - item: de:item:b1w3-lieferant
+  - item: de:item:b1w3-vertreter
+  - item: de:item:b1w3-kaufmann
+  - item: de:item:b1w3-grosshandel
+  - item: de:item:b1w3-einzelhandel
+  - item: de:item:b1w3-verwaltung
+  - item: de:item:b1w3-industrie
+  - item: de:item:b1w3-tourismus
+  - item: de:item:b1w3-pflege
+  - item: de:item:b1w3-handwerklich
+  - item: de:item:b1w3-kaufmaennisch
+  - item: de:item:b1w3-technisch
+  - item: de:item:b1w3-medizinisch
+  - item: de:item:b1w3-paedagogisch
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về nghề nghiệp của mình và người khác chính xác hơn, và hiểu các từ chỉ ngành nghề trong tin tuyển dụng.
+  - type: explain
+    text:
+      vi: "Ngành và lĩnh vực: das Handwerk (nghề thủ công), die Gastronomie (ngành dịch vụ ăn uống), die Industrie, der Einzelhandel (bán lẻ), der Großhandel (bán buôn), die Verwaltung, der Tourismus, die Pflege (chăm sóc người bệnh, người già). Đây là danh từ thường dùng ở số ít, đi với in der …: Ich arbeite in der Pflege."
+  - type: explain
+    text:
+      vi: "Tên nghề giống đực thường có đuôi -er hoặc -ant: der Buchhalter, der Übersetzer, der Steuerberater, der Lieferant (-en). Dạng nữ thêm -in: die Informatikerin, die Landwirtin. Từ đặc biệt: der Kaufmann (số nhiều die Kaufleute), dạng nữ die Kauffrau (đổi -mann thành -frau)."
+  - type: explain
+    text:
+      vi: "Tính từ thường dùng với tên nghề: handwerklich (thuộc nghề thủ công), kaufmännisch (thuộc kinh doanh, buôn bán), technisch, medizinisch, pädagogisch (thuộc sư phạm). Ví dụ: eine kaufmännische Ausbildung, eine technische Zeichnerin, ein pädagogischer Beruf."
+  - type: deep_explain
+    text:
+      vi: Der Freiberufler là người làm nghề tự do (nhà báo, kiến trúc sư làm riêng); der Vertreter có thể là đại diện bán hàng hoặc người đại diện thay thế, tùy ngữ cảnh. Das Handwerk ở Đức có truyền thống mạnh với hệ thống đào tạo nghề kép (duale Ausbildung), nơi người học vừa đi làm vừa đi học.
+  - type: example
+    target: Im Handwerk fehlen viele Fachkräfte.
+    target_lang: de
+    translation:
+      vi: Ngành thủ công đang thiếu nhiều lao động lành nghề.
+    note:
+      vi: das Handwerk = nghề thủ công, ngành thủ công.
+  - type: example
+    target: Er arbeitet seit Jahren in der Gastronomie.
+    target_lang: de
+    translation:
+      vi: Anh ấy làm việc trong ngành dịch vụ ăn uống nhiều năm rồi.
+    note:
+      vi: die Gastronomie = ngành dịch vụ ăn uống.
+  - type: example
+    target: Der Landwirt verkauft sein Gemüse auf dem Markt.
+    target_lang: de
+    translation:
+      vi: Người nông dân bán rau của mình ở chợ.
+    note:
+      vi: der Landwirt = nông dân (làm nông nghiệp).
+  - type: example
+    target: Der Altenpfleger kümmert sich um die Bewohner des Heims.
+    target_lang: de
+    translation:
+      vi: Điều dưỡng chăm sóc những người ở viện dưỡng lão.
+    note:
+      vi: der Altenpfleger = điều dưỡng chăm sóc người già.
+  - type: common_mistake
+    wrong: Meine Schwester ist Kaufmann.
+    right: Meine Schwester ist Kauffrau.
+    target_lang: de
+    note:
+      vi: "Nghề của nữ giới: die Kauffrau, không dùng Kaufmann."
+  - type: common_mistake
+    wrong: Er arbeitet im Pflege.
+    right: Er arbeitet in der Pflege.
+    target_lang: de
+    note:
+      vi: Pflege là giống cái, nên dùng in der.
+  - type: summary
+    points:
+      - vi: der Kaufmann – die Kauffrau (Kaufleute); handwerklich, kaufmännisch, technisch, medizinisch, pädagogisch.
+exercises:
+  - key: de:exercise:b1w3l3-listen-uebersetzer
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-uebersetzer
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Übersetzer arbeitet an einem langen Roman.
+      options:
+        - { id: d74, text: Người nông dân bán rau của mình ở chợ., lang: vi }
+        - { id: wiy, text: Nhà cung cấp mang hàng đến mỗi thứ Ba., lang: vi }
+        - { id: g59, text: Anh ấy đã học nghề kinh doanh., lang: vi }
+        - { id: dkh, text: Biên dịch viên đang dịch một cuốn tiểu thuyết dài., lang: vi }
+    answer:
+      correct_option_id: dkh
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Biên dịch viên đang dịch một cuốn tiểu thuyết dài.". Từ khoá là der Übersetzer (biên dịch viên); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Biên dịch viên đang dịch một cuốn tiểu thuyết dài.
+  - key: de:exercise:b1w3l3-mcq-vi-de-gastronomie
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w3-gastronomie
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "ngành dịch vụ ăn uống"?
+      stem_lang: vi
+      options:
+        - { id: lrx, text: das Handwerk, lang: de }
+        - { id: jb9, text: die Gastronomie, lang: de }
+        - { id: cbn, text: der Einzelhandel, lang: de }
+        - { id: kq6, text: der Kaufmann, lang: de }
+    answer:
+      correct_option_id: jb9
+    explanation:
+      vi: "die Gastronomie nghĩa là \"ngành dịch vụ ăn uống\". Ví dụ: Er arbeitet seit Jahren in der Gastronomie. (Anh ấy làm việc trong ngành dịch vụ ăn uống nhiều năm rồi.)"
+    display_answer: die Gastronomie
+  - key: de:exercise:b1w3l3-mcq-de-vi-buchhalter
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-buchhalter
+    prompt:
+      stem: "\"der Buchhalter\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: l14, text: thuộc kỹ thuật, lang: vi }
+        - { id: uck, text: bán buôn, lang: vi }
+        - { id: klq, text: "thuộc kinh doanh, thương mại", lang: vi }
+        - { id: t2i, text: kế toán viên, lang: vi }
+    answer:
+      correct_option_id: t2i
+    explanation:
+      vi: "der Buchhalter nghĩa là \"kế toán viên\". Ví dụ: Der Buchhalter prüft die Rechnungen. (Kế toán viên kiểm tra các hóa đơn.)"
+    display_answer: kế toán viên
+  - key: de:exercise:b1w3l3-mcq-artikel-altenpfleger
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-altenpfleger
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Altenpfleger\" (điều dưỡng chăm sóc người già): ___ Altenpfleger"
+      stem_lang: vi
+      options:
+        - { id: i12, text: der, lang: de }
+        - { id: x58, text: die, lang: de }
+        - { id: ksg, text: ein, lang: de }
+        - { id: yup, text: das, lang: de }
+    answer:
+      correct_option_id: i12
+    explanation:
+      vi: "Altenpfleger là danh từ giống đực (der): der Altenpfleger; số nhiều: die Altenpfleger. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b1w3l3-tr-word-landwirt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-landwirt
+    prompt:
+      source_text: nông dân (làm nông nghiệp) (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Landwirt
+        - die Landwirtin
+    explanation:
+      vi: "\"nông dân (làm nông nghiệp)\" trong tiếng Đức là der Landwirt (số nhiều: die Landwirte). Ví dụ: Der Landwirt verkauft sein Gemüse auf dem Markt."
+    display_answer: der Landwirt
+  - key: de:exercise:b1w3l3-tr-word-paedagogisch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-paedagogisch
+    prompt:
+      source_text: thuộc sư phạm, giáo dục (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - pädagogisch
+    explanation:
+      vi: "\"thuộc sư phạm, giáo dục\" trong tiếng Đức là pädagogisch. Ví dụ: Sie arbeitet in einem pädagogischen Beruf."
+    display_answer: pädagogisch
+  - key: de:exercise:b1w3l3-fill-plural-lieferant
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-lieferant
+    prompt:
+      template: "Singular: der Lieferant · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Lieferanten
+    known_wrong:
+      - answer: Lieferant
+        feedback_vi: Lieferant là dạng số ít; số nhiều là Lieferanten.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Lieferant là die Lieferanten (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Lieferant · Plural: die Lieferanten"
+  - key: de:exercise:b1w3l3-mcq-luecke-handwerk
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-handwerk
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Ngành thủ công đang thiếu nhiều lao động lành nghề.\": Im ___ fehlen viele Fachkräfte."
+      stem_lang: vi
+      options:
+        - { id: voh, text: Vertreter, lang: de }
+        - { id: sal, text: Handwerk, lang: de }
+        - { id: ms8, text: Steuerberater, lang: de }
+        - { id: hcy, text: Pflege, lang: de }
+    answer:
+      correct_option_id: sal
+    explanation:
+      vi: "Câu có nghĩa \"Ngành thủ công đang thiếu nhiều lao động lành nghề.\" nên cần Handwerk (das Handwerk: nghề thủ công, ngành thủ công). Vertreter = đại diện; người thay thế; Pflege = việc chăm sóc (người bệnh, người già); Steuerberater = chuyên viên tư vấn thuế không đúng nghĩa của câu."
+    display_answer: Handwerk
+  - key: de:exercise:b1w3l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Meine Tante ist Informatikerin und arbeitet im Einzelhandel als Beraterin.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Meine Tante ist Informatikerin und arbeitet im Einzelhandel als Beraterin.
+        - Meine Tante arbeitet als Informatikerin im Einzelhandel und berät dort die Kunden.
+        - Meine Tante ist Informatikerin und arbeitet als Beraterin im Einzelhandel.
+    explanation:
+      vi: "Gợi ý đáp án: Meine Tante ist Informatikerin und arbeitet im Einzelhandel als Beraterin. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Meine Tante ist Informatikerin und arbeitet im Einzelhandel als Beraterin.
+    item: de:item:b1w3-informatiker
+  - key: de:exercise:b1w3l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Er hat eine kaufmännische Ausbildung gemacht und arbeitet jetzt als Buchhalter in der Industrie.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy đã học nghề kinh doanh và hiện làm kế toán trong ngành công nghiệp.
+        - Anh ấy đã hoàn thành chương trình đào tạo kinh doanh và bây giờ làm kế toán trong công nghiệp.
+        - Anh ấy đã học một khóa nghề về kinh doanh và hiện làm kế toán trong lĩnh vực công nghiệp.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Er hat eine kaufmännische Ausbildung gemacht und arbeitet jetzt als Buchhalter in der Industrie.\" nghĩa là: Anh ấy đã học nghề kinh doanh và hiện làm kế toán trong ngành công nghiệp. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Anh ấy đã học nghề kinh doanh và hiện làm kế toán trong ngành công nghiệp.
+    item: de:item:b1w3-buchhalter

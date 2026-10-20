@@ -1,0 +1,303 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w3-nomen-b1-2
+order_index: 6
+level: b1
+title:
+  vi: Danh từ thông dụng ở trình độ B1 (2) (Wichtige Nomen 2)
+objectives:
+  - vi: Học thêm các danh từ chung thường dùng trong đời sống và bài viết.
+  - vi: Nhớ giống và số nhiều của các danh từ này.
+  - vi: "Dùng các danh từ trong cụm từ thường gặp: in der Mitte, auf diese Weise, in Gefahr."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w3-verben-b1-2
+items:
+  - item: de:item:b1w3-antwort
+  - item: de:item:b1w3-auswirkung
+  - item: de:item:b1w3-beispiel
+  - item: de:item:b1w3-beschreibung
+  - item: de:item:b1w3-besuch
+  - item: de:item:b1w3-dauer
+  - item: de:item:b1w3-einfall
+  - item: de:item:b1w3-entfernung
+  - item: de:item:b1w3-erlaubnis
+  - item: de:item:b1w3-gefahr
+  - item: de:item:b1w3-gegenteil
+  - item: de:item:b1w3-hilfe
+  - item: de:item:b1w3-kraft
+  - item: de:item:b1w3-mitte
+  - item: de:item:b1w3-ordnung
+  - item: de:item:b1w3-ruhe
+  - item: de:item:b1w3-spur
+  - item: de:item:b1w3-teil
+  - item: de:item:b1w3-umfang
+  - item: de:item:b1w3-verlauf
+  - item: de:item:b1w3-weise
+  - item: de:item:b1w3-zeichen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng hơn hai mươi danh từ chung thường gặp B1 cùng các cụm cố định quan trọng và biết giống, số nhiều của từng từ.
+  - type: explain
+    text:
+      vi: "Một số danh từ đuôi -ung, -heit, -keit, -schaft là giống cái: die Beschreibung, die Auswirkung, die Erlaubnis (-nis, giống cái ở từ này), die Gefahr (-en), die Hilfe, die Ordnung. Từ khác không theo đuôi: der Besuch, der Einfall (ý tưởng nảy ra), der Beitrag, das Gegenteil, das Zeichen, der Teil (hoặc das Teil, nghĩa khác)."
+  - type: explain
+    text:
+      vi: "Cụm từ thường gặp: in der Mitte (ở giữa), auf diese Weise (bằng cách này), in Gefahr sein (gặp nguy hiểm), in Ordnung sein (ổn, đúng cách), mit Hilfe von (nhờ vào), zum Teil (một phần), im Gegenteil (ngược lại). Nhiều cụm là cụm cố định; hãy học thuộc cả cụm."
+  - type: explain
+    text:
+      vi: "Danh từ chỉ độ lớn hoặc quá trình: die Dauer (thời gian kéo dài), der Umfang (quy mô, độ lớn), die Entfernung (khoảng cách), der Verlauf (diễn biến), die Spur (dấu vết). Cấu trúc điển hình: von kurzer Dauer, im Verlauf des Gesprächs, in einer Entfernung von zehn Kilometern."
+  - type: deep_explain
+    text:
+      vi: "Der Teil (bộ phận, phần) và das Teil (món đồ, chi tiết, thường trong cụm Ersatzteil) khác giống; nên học theo ngữ cảnh. Die Ruhe chỉ có số ít: Ich brauche Ruhe. Das Zeichen (-) dùng cho dấu hiệu, ký hiệu, tín hiệu: Das Zeichen für Gefahr ist rot. Der Beitrag còn có nghĩa là bài viết trong báo, diễn đàn."
+  - type: example
+    target: Ich warte noch auf eine Antwort von der Firma.
+    target_lang: de
+    translation:
+      vi: Tôi vẫn đang chờ câu trả lời từ công ty.
+    note:
+      vi: die Antwort = câu trả lời.
+  - type: example
+    target: Die Auswirkungen der Hitze sind überall zu spüren.
+    target_lang: de
+    translation:
+      vi: Tác động của cái nóng cảm nhận được khắp nơi.
+    note:
+      vi: die Auswirkung = tác động, ảnh hưởng.
+  - type: example
+    target: Kannst du mir ein Beispiel geben?
+    target_lang: de
+    translation:
+      vi: Bạn cho tôi một ví dụ được không?
+    note:
+      vi: das Beispiel = ví dụ.
+  - type: example
+    target: Die Beschreibung des Weges war sehr genau.
+    target_lang: de
+    translation:
+      vi: Lời mô tả con đường rất chính xác.
+    note:
+      vi: die Beschreibung = sự mô tả.
+  - type: common_mistake
+    wrong: Das Gefahr ist groß.
+    right: Die Gefahr ist groß.
+    target_lang: de
+    note:
+      vi: Gefahr là giống cái (die Gefahr, số nhiều die Gefahren).
+  - type: common_mistake
+    wrong: Ich habe keine Erlaubnis bekommen für zu fahren.
+    right: Ich habe keine Erlaubnis bekommen, dort zu fahren.
+    target_lang: de
+    note:
+      vi: Dùng mệnh đề zu-Infinitiv, không dùng für + zu; có dấu phẩy trước mệnh đề.
+  - type: summary
+    points:
+      - vi: "cụm cố định: in der Mitte, auf diese Weise, in Gefahr, in Ordnung, mit Hilfe von, zum Teil, im Gegenteil."
+exercises:
+  - key: de:exercise:b1w3l6-listen-spur
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-spur
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Polizei fand keine Spur von dem Täter.
+      options:
+        - { id: jb0, text: Tôi vẫn đang chờ câu trả lời từ công ty., lang: vi }
+        - { id: hci, text: Cảnh sát không tìm thấy dấu vết nào của thủ phạm., lang: vi }
+        - { id: lq5, text: Tác động của cái nóng cảm nhận được khắp nơi., lang: vi }
+        - { id: vxg, text: Bằng cách này chúng ta tiết kiệm được nhiều thời gian., lang: vi }
+    answer:
+      correct_option_id: hci
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cảnh sát không tìm thấy dấu vết nào của thủ phạm.". Từ khoá là die Spur (dấu vết); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cảnh sát không tìm thấy dấu vết nào của thủ phạm.
+  - key: de:exercise:b1w3l6-mcq-vi-de-antwort
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w3-antwort
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "câu trả lời"?
+      stem_lang: vi
+      options:
+        - { id: kny, text: der Verlauf, lang: de }
+        - { id: hq3, text: das Gegenteil, lang: de }
+        - { id: bwa, text: das Beispiel, lang: de }
+        - { id: v57, text: die Antwort, lang: de }
+    answer:
+      correct_option_id: v57
+    explanation:
+      vi: "die Antwort nghĩa là \"câu trả lời\". Ví dụ: Ich warte noch auf eine Antwort von der Firma. (Tôi vẫn đang chờ câu trả lời từ công ty.)"
+    display_answer: die Antwort
+  - key: de:exercise:b1w3l6-mcq-de-vi-einfall
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-einfall
+    prompt:
+      stem: "\"der Einfall\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: pca, text: "cách, kiểu", lang: vi }
+        - { id: kql, text: khoảng cách, lang: vi }
+        - { id: vpm, text: "diễn biến, quá trình", lang: vi }
+        - { id: ktp, text: "ý nghĩ chợt đến, ý tưởng", lang: vi }
+    answer:
+      correct_option_id: ktp
+    explanation:
+      vi: "der Einfall nghĩa là \"ý nghĩ chợt đến, ý tưởng\". Ví dụ: Das war ein guter Einfall! (Đó là một ý tưởng hay!)"
+    display_answer: ý nghĩ chợt đến, ý tưởng
+  - key: de:exercise:b1w3l6-mcq-artikel-erlaubnis
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-erlaubnis
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Erlaubnis\" (sự cho phép, giấy phép): ___ Erlaubnis"
+      stem_lang: vi
+      options:
+        - { id: z8w, text: der, lang: de }
+        - { id: o3i, text: ein, lang: de }
+        - { id: owo, text: die, lang: de }
+        - { id: d30, text: das, lang: de }
+    answer:
+      correct_option_id: owo
+    explanation:
+      vi: "Erlaubnis là danh từ giống cái (die): die Erlaubnis (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w3l6-tr-word-entfernung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-entfernung
+    prompt:
+      source_text: khoảng cách (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Entfernung
+    known_wrong:
+      - answer: der Entfernung
+        feedback_vi: Entfernung là giống cái, nên là die Entfernung.
+        error_tag: article
+      - answer: das Entfernung
+        feedback_vi: Entfernung là giống cái, nên là die Entfernung.
+        error_tag: article
+    explanation:
+      vi: "\"khoảng cách\" trong tiếng Đức là die Entfernung (số nhiều: die Entfernungen). Ví dụ: Die Entfernung zwischen den Städten beträgt hundert Kilometer."
+    display_answer: die Entfernung
+  - key: de:exercise:b1w3l6-tr-word-besuch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-besuch
+    prompt:
+      source_text: cuộc thăm (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Besuch
+    known_wrong:
+      - answer: die Besuch
+        feedback_vi: Besuch là giống đực, nên là der Besuch.
+        error_tag: article
+      - answer: das Besuch
+        feedback_vi: Besuch là giống đực, nên là der Besuch.
+        error_tag: article
+    explanation:
+      vi: "\"cuộc thăm; khách\" trong tiếng Đức là der Besuch (số nhiều: die Besuche). Ví dụ: Morgen bekommen wir Besuch aus Wien."
+    display_answer: der Besuch
+  - key: de:exercise:b1w3l6-fill-plural-beispiel
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-beispiel
+    prompt:
+      template: "Singular: das Beispiel · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 11 }
+    answer:
+      blanks:
+        b1:
+          - Beispiele
+    known_wrong:
+      - answer: Beispiel
+        feedback_vi: Beispiel là dạng số ít; số nhiều là Beispiele.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của das Beispiel là die Beispiele (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: das Beispiel · Plural: die Beispiele"
+  - key: de:exercise:b1w3l6-mcq-luecke-auswirkung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-auswirkung
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tác động của cái nóng cảm nhận được khắp nơi.\": Die ___ der Hitze sind überall zu spüren."
+      stem_lang: vi
+      options:
+        - { id: sri, text: Weise, lang: de }
+        - { id: r6f, text: Entfernung, lang: de }
+        - { id: kj6, text: Auswirkungen, lang: de }
+        - { id: a9z, text: Umfang, lang: de }
+    answer:
+      correct_option_id: kj6
+    explanation:
+      vi: "Câu có nghĩa \"Tác động của cái nóng cảm nhận được khắp nơi.\" nên cần Auswirkungen (die Auswirkung: tác động, ảnh hưởng). Entfernung = khoảng cách; Umfang = quy mô, độ lớn, chu vi; Weise = cách, kiểu không đúng nghĩa của câu."
+    display_answer: Auswirkungen
+  - key: de:exercise:b1w3l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Im Verlauf des Gesprächs habe ich keine Spur von Ärger bei ihm gesehen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Im Verlauf des Gesprächs habe ich keine Spur von Ärger bei ihm gesehen.
+        - Im Verlauf des Gesprächs habe ich bei ihm keine Spur von Ärger gesehen.
+        - Während des Gesprächs habe ich keine Spur von Ärger bei ihm gesehen.
+    explanation:
+      vi: "Gợi ý đáp án: Im Verlauf des Gesprächs habe ich keine Spur von Ärger bei ihm gesehen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Im Verlauf des Gesprächs habe ich keine Spur von Ärger bei ihm gesehen.
+    item: de:item:b1w3-spur
+  - key: de:exercise:b1w3l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: "Zum Teil ist das richtig, aber im Gegenteil: Die Entfernung ist größer, als man denkt."
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - "Một phần điều đó đúng, nhưng ngược lại: khoảng cách lớn hơn người ta nghĩ."
+        - Phần nào thì đúng, nhưng trái lại, khoảng cách lớn hơn mọi người tưởng.
+        - Điều đó đúng một phần, nhưng ngược lại, khoảng cách xa hơn người ta nghĩ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Zum Teil ist das richtig, aber im Gegenteil: Die Entfernung ist größer, als man denkt.\" nghĩa là: Một phần điều đó đúng, nhưng ngược lại: khoảng cách lớn hơn người ta nghĩ. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: "Một phần điều đó đúng, nhưng ngược lại: khoảng cách lớn hơn người ta nghĩ."
+    item: de:item:b1w3-entfernung

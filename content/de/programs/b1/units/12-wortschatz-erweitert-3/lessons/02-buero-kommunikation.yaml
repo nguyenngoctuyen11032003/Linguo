@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w3-buero-kommunikation
+order_index: 2
+level: b1
+title:
+  vi: Giao tiếp và tổ chức công việc văn phòng (Büro und Kommunikation)
+objectives:
+  - vi: Hiểu và dùng từ về lịch làm việc, họp hành và thư từ nội bộ.
+  - vi: "Nói về việc phối hợp: absprechen, weitergeben, einplanen, koordinieren."
+  - vi: "Mô tả mức độ khẩn cấp và tính bảo mật: eilig, vertraulich, vorläufig."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w3-bewerbung-arbeitssuche
+items:
+  - item: de:item:b1w3-terminkalender
+  - item: de:item:b1w3-besprechungsraum
+  - item: de:item:b1w3-tagesordnung
+  - item: de:item:b1w3-mitteilung
+  - item: de:item:b1w3-rundmail
+  - item: de:item:b1w3-postfach
+  - item: de:item:b1w3-vorlage
+  - item: de:item:b1w3-entwurf
+  - item: de:item:b1w3-ansprechpartner
+  - item: de:item:b1w3-zustaendigkeit
+  - item: de:item:b1w3-konferenz
+  - item: de:item:b1w3-videokonferenz
+  - item: de:item:b1w3-sitzung
+  - item: de:item:b1w3-absprechen
+  - item: de:item:b1w3-weitergeben
+  - item: de:item:b1w3-informieren
+  - item: de:item:b1w3-ankuendigen
+  - item: de:item:b1w3-einplanen
+  - item: de:item:b1w3-koordinieren
+  - item: de:item:b1w3-vertagen
+  - item: de:item:b1w3-eilig
+  - item: de:item:b1w3-vertraulich
+  - item: de:item:b1w3-vorlaeufig
+  - item: de:item:b1w3-rechtzeitig
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn nói và viết được các tình huống thường gặp ở văn phòng: lên lịch họp, thông báo, giao việc và thống nhất với đồng nghiệp."
+  - type: explain
+    text:
+      vi: "Từ về họp hành: der Terminkalender (lịch hẹn), die Sitzung, die Konferenz, die Videokonferenz, der Besprechungsraum, die Tagesordnung (chương trình nghị sự). Muốn nói họp diễn ra khi nào và ở đâu, dùng stattfinden: Die Sitzung findet im Besprechungsraum statt."
+  - type: explain
+    text:
+      vi: "Thư từ nội bộ: die Mitteilung, die Rundmail (thư gửi cả nhóm), das Postfach (hộp thư), die Vorlage (bản mẫu hoặc đề xuất trình lên), der Entwurf (bản nháp). Người liên hệ chính là der Ansprechpartner; phạm vi trách nhiệm là die Zuständigkeit."
+  - type: explain
+    text:
+      vi: "Động từ giao tiếp: absprechen (thống nhất: spricht ab, sprach ab, hat abgesprochen), weitergeben (chuyển tiếp thông tin: gibt weiter, gab weiter, hat weitergegeben), informieren (+ Akk, über + Akk), ankündigen (báo trước), einplanen (đưa vào kế hoạch), koordinieren, vertagen (hoãn sang lần sau)."
+  - type: deep_explain
+    text:
+      vi: "Eilig khác dringend một chút: eilig nhấn mạnh phải làm nhanh (Es ist eilig!), còn dringend nhấn mạnh tính cấp bách của nội dung. Vertraulich nghĩa là mật, không được tiết lộ: Bitte behandeln Sie die Informationen vertraulich. Vorläufig là tạm thời: eine vorläufige Lösung. Rechtzeitig nghĩa là kịp thời, trước hạn."
+  - type: example
+    target: Ich trage den Termin in meinen Terminkalender ein.
+    target_lang: de
+    translation:
+      vi: Tôi ghi cuộc hẹn vào sổ lịch hẹn của mình.
+    note:
+      vi: der Terminkalender = sổ lịch hẹn.
+  - type: example
+    target: Der Besprechungsraum ist bis 16 Uhr belegt.
+    target_lang: de
+    translation:
+      vi: Phòng họp đã có người sử dụng đến 16 giờ.
+    note:
+      vi: der Besprechungsraum = phòng họp.
+  - type: example
+    target: Auf der Tagesordnung stehen drei Punkte.
+    target_lang: de
+    translation:
+      vi: Trong chương trình nghị sự có ba điểm.
+    note:
+      vi: die Tagesordnung = chương trình nghị sự.
+  - type: example
+    target: Die Mitteilung wurde an alle Abteilungen geschickt.
+    target_lang: de
+    translation:
+      vi: Thông báo đã được gửi đến tất cả các phòng ban.
+    note:
+      vi: die Mitteilung = thông báo, tin nhắn.
+  - type: common_mistake
+    wrong: Wir müssen den Termin mit dem Kunden absprechen haben.
+    right: Wir müssen den Termin mit dem Kunden absprechen.
+    target_lang: de
+    note:
+      vi: Sau động từ khiếm khuyết, động từ chính ở nguyên thể; không thêm haben.
+  - type: common_mistake
+    wrong: Ich habe die Information an mein Kollege weitergegeben.
+    right: Ich habe die Information an meinen Kollegen weitergegeben.
+    target_lang: de
+    note:
+      vi: Sau an + Akkusativ, danh từ giống đực là den/meinen Kollegen (n-Deklination).
+  - type: summary
+    points:
+      - vi: absprechen, weitergeben, informieren, ankündigen, einplanen, koordinieren, vertagen; eilig, vertraulich, vorläufig, rechtzeitig.
+exercises:
+  - key: de:exercise:b1w3l2-listen-videokonferenz
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-videokonferenz
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wegen der Reise findet die Besprechung als Videokonferenz statt.
+      options:
+        - { id: tyv, text: Phiên họp chắc chắn kéo dài hai tiếng., lang: vi }
+        - { id: ghy, text: Ban giám đốc đã gửi một thư cho toàn thể., lang: vi }
+        - { id: n9l, text: "Vì chuyến đi, cuộc họp diễn ra dưới dạng trực tuyến.", lang: vi }
+        - { id: mcu, text: Ai là người liên hệ của tôi ở phòng nhân sự?, lang: vi }
+    answer:
+      correct_option_id: n9l
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Vì chuyến đi, cuộc họp diễn ra dưới dạng trực tuyến.". Từ khoá là die Videokonferenz (cuộc họp trực tuyến); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Vì chuyến đi, cuộc họp diễn ra dưới dạng trực tuyến.
+  - key: de:exercise:b1w3l2-mcq-vi-de-rundmail
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w3-rundmail
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "thư gửi cho cả nhóm"?
+      stem_lang: vi
+      options:
+        - { id: d0v, text: der Besprechungsraum, lang: de }
+        - { id: dnl, text: das Postfach, lang: de }
+        - { id: qgw, text: die Videokonferenz, lang: de }
+        - { id: hoo, text: die Rundmail, lang: de }
+    answer:
+      correct_option_id: hoo
+    explanation:
+      vi: "die Rundmail nghĩa là \"thư gửi cho cả nhóm\". Ví dụ: Die Geschäftsführung hat eine Rundmail verschickt. (Ban giám đốc đã gửi một thư cho toàn thể.)"
+    display_answer: die Rundmail
+  - key: de:exercise:b1w3l2-mcq-de-vi-vorlaeufig
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-vorlaeufig
+    prompt:
+      stem: "\"vorläufig\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: jmx, text: "thông báo, cho biết", lang: vi }
+        - { id: vo3, text: "kịp thời, đúng lúc", lang: vi }
+        - { id: exi, text: tạm thời, lang: vi }
+        - { id: pw8, text: sổ lịch hẹn, lang: vi }
+    answer:
+      correct_option_id: exi
+    explanation:
+      vi: "vorläufig nghĩa là \"tạm thời\". Ví dụ: Das ist nur eine vorläufige Lösung. (Đó chỉ là giải pháp tạm thời.)"
+    display_answer: tạm thời
+  - key: de:exercise:b1w3l2-mcq-artikel-terminkalender
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-terminkalender
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Terminkalender\" (sổ lịch hẹn): ___ Terminkalender"
+      stem_lang: vi
+      options:
+        - { id: wpk, text: die, lang: de }
+        - { id: g6t, text: das, lang: de }
+        - { id: krq, text: ein, lang: de }
+        - { id: vde, text: der, lang: de }
+    answer:
+      correct_option_id: vde
+    explanation:
+      vi: "Terminkalender là danh từ giống đực (der): der Terminkalender; số nhiều: die Terminkalender. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b1w3l2-tr-word-tagesordnung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-tagesordnung
+    prompt:
+      source_text: chương trình nghị sự (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Tagesordnung
+    known_wrong:
+      - answer: der Tagesordnung
+        feedback_vi: Tagesordnung là giống cái, nên là die Tagesordnung.
+        error_tag: article
+      - answer: das Tagesordnung
+        feedback_vi: Tagesordnung là giống cái, nên là die Tagesordnung.
+        error_tag: article
+    explanation:
+      vi: "\"chương trình nghị sự\" trong tiếng Đức là die Tagesordnung (số nhiều: die Tagesordnungen). Ví dụ: Auf der Tagesordnung stehen drei Punkte."
+    display_answer: die Tagesordnung
+  - key: de:exercise:b1w3l2-tr-word-weitergeben
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-weitergeben
+    prompt:
+      source_text: chuyển tiếp (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - weitergeben
+    explanation:
+      vi: "\"chuyển tiếp\" trong tiếng Đức là weitergeben. Ví dụ: Bitte geben Sie die Information an Ihr Team weiter."
+    display_answer: weitergeben
+  - key: de:exercise:b1w3l2-fill-plural-konferenz
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-konferenz
+    prompt:
+      template: "Singular: die Konferenz · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Konferenzen
+    known_wrong:
+      - answer: Konferenz
+        feedback_vi: Konferenz là dạng số ít; số nhiều là Konferenzen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Konferenz là die Konferenzen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Konferenz · Plural: die Konferenzen"
+  - key: de:exercise:b1w3l2-mcq-luecke-besprechungsraum
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-besprechungsraum
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Phòng họp đã có người sử dụng đến 16 giờ.\": Der ___ ist bis 16 Uhr belegt."
+      stem_lang: vi
+      options:
+        - { id: wkk, text: Videokonferenz, lang: de }
+        - { id: qev, text: Sitzung, lang: de }
+        - { id: jo9, text: Terminkalender, lang: de }
+        - { id: l99, text: Besprechungsraum, lang: de }
+    answer:
+      correct_option_id: l99
+    explanation:
+      vi: "Câu có nghĩa \"Phòng họp đã có người sử dụng đến 16 giờ.\" nên cần Besprechungsraum (der Besprechungsraum: phòng họp). Videokonferenz = cuộc họp trực tuyến; Sitzung = phiên họp; Terminkalender = sổ lịch hẹn không đúng nghĩa của câu."
+    display_answer: Besprechungsraum
+  - key: de:exercise:b1w3l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Ich habe die Rundmail an alle Kollegen weitergegeben und die Sitzung auf Donnerstag verschoben.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe die Rundmail an alle Kollegen weitergegeben und die Sitzung auf Donnerstag verschoben.
+        - Die Rundmail habe ich an alle Kollegen weitergegeben, und die Sitzung habe ich auf Donnerstag verschoben.
+        - Ich habe die Sitzung auf Donnerstag verschoben und die Rundmail an alle Kollegen weitergegeben.
+    explanation:
+      vi: "Gợi ý đáp án: Ich habe die Rundmail an alle Kollegen weitergegeben und die Sitzung auf Donnerstag verschoben. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich habe die Rundmail an alle Kollegen weitergegeben und die Sitzung auf Donnerstag verschoben.
+    item: de:item:b1w3-rundmail
+  - key: de:exercise:b1w3l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Tagesordnung ist noch vorläufig, deshalb sprechen wir sie vorher mit dem Ansprechpartner ab.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Chương trình nghị sự vẫn còn tạm thời, vì vậy chúng tôi thống nhất trước với người liên hệ.
+        - Chương trình họp mới là tạm thời nên chúng tôi trao đổi trước với người phụ trách liên hệ.
+        - Chương trình nghị sự vẫn chưa chính thức, do đó chúng tôi bàn trước với người liên lạc.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Tagesordnung ist noch vorläufig, deshalb sprechen wir sie vorher mit dem Ansprechpartner ab.\" nghĩa là: Chương trình nghị sự vẫn còn tạm thời, vì vậy chúng tôi thống nhất trước với người liên hệ. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Chương trình nghị sự vẫn còn tạm thời, vì vậy chúng tôi thống nhất trước với người liên hệ.
+    item: de:item:b1w3-tagesordnung

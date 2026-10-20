@@ -1,0 +1,297 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w3-geld-versicherung
+order_index: 4
+level: b1
+title:
+  vi: Tiền bạc, ngân hàng và bảo hiểm (Geld und Versicherung)
+objectives:
+  - vi: Hiểu các từ về tài khoản ngân hàng, vay, tiết kiệm và thuế.
+  - vi: Phân biệt các loại bảo hiểm thường gặp ở Đức.
+  - vi: Nói về chi tiêu, vay và trả nợ bằng các động từ abbuchen, zurückzahlen, absetzen.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w3-branchen-berufe
+items:
+  - item: de:item:b1w3-kredit
+  - item: de:item:b1w3-darlehen
+  - item: de:item:b1w3-sparkonto
+  - item: de:item:b1w3-girokonto
+  - item: de:item:b1w3-kontostand
+  - item: de:item:b1w3-kontoauszug
+  - item: de:item:b1w3-steuererklaerung
+  - item: de:item:b1w3-lohnsteuer
+  - item: de:item:b1w3-sozialversicherung
+  - item: de:item:b1w3-krankenversicherung
+  - item: de:item:b1w3-haftpflichtversicherung
+  - item: de:item:b1w3-zinssatz
+  - item: de:item:b1w3-rate
+  - item: de:item:b1w3-geldanlage
+  - item: de:item:b1w3-schuldner
+  - item: de:item:b1w3-abbuchen
+  - item: de:item:b1w3-zurueckzahlen
+  - item: de:item:b1w3-versichern
+  - item: de:item:b1w3-absetzen
+  - item: de:item:b1w3-sich-verschulden
+  - item: de:item:b1w3-verschuldet
+  - item: de:item:b1w3-versichert
+  - item: de:item:b1w3-steuerpflichtig
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu các thuật ngữ cơ bản về ngân hàng, vay, thuế và bảo hiểm ở Đức và nói được về chuyện tiền bạc cá nhân.
+  - type: explain
+    text:
+      vi: "Ngân hàng: das Girokonto (tài khoản thanh toán), das Sparkonto (tài khoản tiết kiệm; số nhiều Sparkonten), der Kontostand (số dư), der Kontoauszug (sao kê). Vay mượn: der Kredit, das Darlehen, die Rate (kỳ trả góp), der Zinssatz. Người vay là der Schuldner; ai nợ tiền thì là verschuldet."
+  - type: explain
+    text:
+      vi: "Bảo hiểm bắt buộc ở Đức gồm die Krankenversicherung, die Sozialversicherung; còn die Haftpflichtversicherung (bảo hiểm trách nhiệm) rất phổ biến dù không bắt buộc. Người đóng phí hằng tháng trả der Beitrag. Ai có bảo hiểm thì versichert: Ich bin gegen Schäden versichert."
+  - type: explain
+    text:
+      vi: "Thuế: die Steuererklärung (tờ khai thuế), die Lohnsteuer (thuế thu nhập từ tiền lương). Động từ: absetzen (khấu trừ thuế: setzt ab, setzte ab, hat abgesetzt), abbuchen (trừ tiền từ tài khoản), zurückzahlen (trả lại), sich verschulden (mắc nợ), versichern (bảo hiểm, ví dụ: ein Auto versichern). Steuerpflichtig là người phải đóng thuế."
+  - type: deep_explain
+    text:
+      vi: Das Darlehen có số nhiều Darlehen (không đổi), còn Kredit số nhiều Kredite; hai từ này gần như đồng nghĩa nhưng Darlehen thường dùng trong hợp đồng, Kredit trong lời nói hằng ngày. Die Geldanlage là hình thức đầu tư tiền; bạn nên tìm hiểu kỹ trước khi quyết định. Der Beitrag còn có nghĩa là bài viết, đóng góp, tùy ngữ cảnh.
+  - type: example
+    target: Für das Haus haben wir einen Kredit aufgenommen.
+    target_lang: de
+    translation:
+      vi: Chúng tôi đã vay một khoản để mua nhà.
+    note:
+      vi: der Kredit = khoản vay, tín dụng.
+  - type: example
+    target: Die Bank hat uns ein Darlehen gegeben.
+    target_lang: de
+    translation:
+      vi: Ngân hàng đã cho chúng tôi một khoản vay.
+    note:
+      vi: das Darlehen = khoản cho vay, khoản vay.
+  - type: example
+    target: Auf meinem Sparkonto sind fünftausend Euro.
+    target_lang: de
+    translation:
+      vi: Trong tài khoản tiết kiệm của tôi có năm nghìn euro.
+    note:
+      vi: das Sparkonto = tài khoản tiết kiệm.
+  - type: example
+    target: Meine Miete wird von meinem Girokonto abgebucht.
+    target_lang: de
+    translation:
+      vi: Tiền thuê nhà của tôi được trừ từ tài khoản thanh toán.
+    note:
+      vi: das Girokonto = tài khoản thanh toán.
+  - type: common_mistake
+    wrong: Ich habe ein Kredit bei der Bank aufgenommen.
+    right: Ich habe einen Kredit bei der Bank aufgenommen.
+    target_lang: de
+    note:
+      vi: Kredit là giống đực, tân ngữ Akkusativ nên dùng einen.
+  - type: common_mistake
+    wrong: Die Miete wird von meinem Konto abbuchen.
+    right: Die Miete wird von meinem Konto abgebucht.
+    target_lang: de
+    note:
+      vi: "Bị động cần Partizip II: wird abgebucht (abbuchen là động từ tách)."
+  - type: summary
+    points:
+      - vi: abbuchen, zurückzahlen, versichern, absetzen, sich verschulden; verschuldet, versichert, steuerpflichtig.
+exercises:
+  - key: de:exercise:b1w3l4-listen-zinssatz
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-zinssatz
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Zinssatz für den Kredit ist niedrig.
+      options:
+        - { id: fdk, text: Mức lãi suất cho khoản vay thấp., lang: vi }
+        - { id: qg1, text: Người sử dụng lao động đóng một phần bảo hiểm xã hội., lang: vi }
+        - { id: lxh, text: Đến cuối tháng Bảy tôi phải nộp tờ khai thuế., lang: vi }
+        - { id: ypq, text: Chi phí đi lại có thể khấu trừ khỏi thuế., lang: vi }
+    answer:
+      correct_option_id: fdk
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Mức lãi suất cho khoản vay thấp.". Từ khoá là der Zinssatz (mức lãi suất); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Mức lãi suất cho khoản vay thấp.
+  - key: de:exercise:b1w3l4-mcq-vi-de-absetzen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w3-absetzen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "khấu trừ thuế; đặt xuống; hạ bệ"?
+      stem_lang: vi
+      options:
+        - { id: imh, text: zurückzahlen, lang: de }
+        - { id: c8p, text: abbuchen, lang: de }
+        - { id: haq, text: versichern, lang: de }
+        - { id: tou, text: absetzen, lang: de }
+    answer:
+      correct_option_id: tou
+    explanation:
+      vi: "absetzen nghĩa là \"khấu trừ thuế; đặt xuống; hạ bệ\". Ví dụ: Die Fahrtkosten kann man von der Steuer absetzen. (Chi phí đi lại có thể khấu trừ khỏi thuế.)"
+    display_answer: absetzen
+  - key: de:exercise:b1w3l4-mcq-de-vi-versichert
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-versichert
+    prompt:
+      stem: "\"versichert\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: teg, text: phải nộp thuế, lang: vi }
+        - { id: lf5, text: khoản đầu tư tiền, lang: vi }
+        - { id: ew5, text: được bảo hiểm, lang: vi }
+        - { id: wil, text: tài khoản tiết kiệm, lang: vi }
+    answer:
+      correct_option_id: ew5
+    explanation:
+      vi: "versichert nghĩa là \"được bảo hiểm\". Ví dụ: Ist Ihr Auto gegen Hagel versichert? (Xe của ông/bà có được bảo hiểm mưa đá không?)"
+    display_answer: được bảo hiểm
+  - key: de:exercise:b1w3l4-mcq-artikel-sparkonto
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-sparkonto
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Sparkonto\" (tài khoản tiết kiệm): ___ Sparkonto"
+      stem_lang: vi
+      options:
+        - { id: kia, text: das, lang: de }
+        - { id: ttx, text: der, lang: de }
+        - { id: ixs, text: die, lang: de }
+        - { id: ag4, text: ein, lang: de }
+    answer:
+      correct_option_id: kia
+    explanation:
+      vi: "Sparkonto là danh từ giống trung (das): das Sparkonto; số nhiều: die Sparkonten. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w3l4-tr-word-darlehen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-darlehen
+    prompt:
+      source_text: khoản cho vay, khoản vay (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Darlehen
+    known_wrong:
+      - answer: der Darlehen
+        feedback_vi: Darlehen là giống trung, nên là das Darlehen.
+        error_tag: article
+      - answer: die Darlehen
+        feedback_vi: Darlehen là giống trung, nên là das Darlehen.
+        error_tag: article
+    explanation:
+      vi: "\"khoản cho vay, khoản vay\" trong tiếng Đức là das Darlehen (số nhiều: die Darlehen). Ví dụ: Die Bank hat uns ein Darlehen gegeben."
+    display_answer: das Darlehen
+  - key: de:exercise:b1w3l4-tr-word-verschuldet
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-verschuldet
+    prompt:
+      source_text: mắc nợ (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - verschuldet
+    explanation:
+      vi: "\"mắc nợ\" trong tiếng Đức là verschuldet. Ví dụ: Die Familie ist hoch verschuldet."
+    display_answer: verschuldet
+  - key: de:exercise:b1w3l4-fill-plural-rate
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-rate
+    prompt:
+      template: "Singular: die Rate · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 7 }
+    answer:
+      blanks:
+        b1:
+          - Raten
+    known_wrong:
+      - answer: Rate
+        feedback_vi: Rate là dạng số ít; số nhiều là Raten.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Rate là die Raten (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Rate · Plural: die Raten"
+  - key: de:exercise:b1w3l4-mcq-luecke-kredit
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-kredit
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Chúng tôi đã vay một khoản để mua nhà.\": Für das Haus haben wir einen ___ aufgenommen."
+      stem_lang: vi
+      options:
+        - { id: d1g, text: Rate, lang: de }
+        - { id: abq, text: Kontoauszug, lang: de }
+        - { id: od3, text: Kontostand, lang: de }
+        - { id: i8f, text: Kredit, lang: de }
+    answer:
+      correct_option_id: i8f
+    explanation:
+      vi: "Câu có nghĩa \"Chúng tôi đã vay một khoản để mua nhà.\" nên cần Kredit (der Kredit: khoản vay, tín dụng). Kontostand = số dư tài khoản; Rate = kỳ trả góp; Kontoauszug = bảng sao kê tài khoản không đúng nghĩa của câu."
+    display_answer: Kredit
+  - key: de:exercise:b1w3l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Wir müssen den Kredit in monatlichen Raten zurückzahlen, und die Rate wird vom Konto abgebucht.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wir müssen den Kredit in monatlichen Raten zurückzahlen, und die Rate wird vom Konto abgebucht.
+        - Den Kredit müssen wir in monatlichen Raten zurückzahlen, und die Rate wird vom Konto abgebucht.
+        - Wir müssen den Kredit in Monatsraten zurückzahlen, und die Rate wird von unserem Konto abgebucht.
+    explanation:
+      vi: "Gợi ý đáp án: Wir müssen den Kredit in monatlichen Raten zurückzahlen, und die Rate wird vom Konto abgebucht. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Wir müssen den Kredit in monatlichen Raten zurückzahlen, und die Rate wird vom Konto abgebucht.
+    item: de:item:b1w3-kredit
+  - key: de:exercise:b1w3l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Wer eine Steuererklärung abgibt, kann viele Kosten von der Steuer absetzen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ai nộp tờ khai thuế có thể khấu trừ nhiều chi phí khỏi thuế.
+        - Người nộp tờ khai thuế được khấu trừ nhiều khoản chi phí khỏi tiền thuế.
+        - Khi nộp tờ khai thuế người ta có thể trừ nhiều chi phí ra khỏi khoản thuế phải đóng.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Wer eine Steuererklärung abgibt, kann viele Kosten von der Steuer absetzen.\" nghĩa là: Ai nộp tờ khai thuế có thể khấu trừ nhiều chi phí khỏi thuế. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Ai nộp tờ khai thuế có thể khấu trừ nhiều chi phí khỏi thuế.
+    item: de:item:b1w3-steuererklaerung

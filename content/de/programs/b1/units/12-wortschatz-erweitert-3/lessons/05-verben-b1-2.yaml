@@ -1,0 +1,235 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w3-verben-b1-2
+order_index: 5
+level: b1
+title:
+  vi: Động từ thông dụng ở trình độ B1 (2) (Wichtige Verben 2)
+objectives:
+  - vi: Dùng thêm hơn hai mươi động từ B1 với giới từ và cách đi kèm đúng.
+  - vi: "Phân biệt các động từ gần nghĩa: erfahren – erleben, schaffen – gelingen, halten – bleiben."
+  - vi: Dùng động từ trong thì hiện tại, Präteritum cơ bản và Perfekt.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w3-geld-versicherung
+items:
+  - item: de:item:b1w3-ausdruecken
+  - item: de:item:b1w3-beachten
+  - item: de:item:b1w3-bedauern
+  - item: de:item:b1w3-bedeuten
+  - item: de:item:b1w3-beeinflussen
+  - item: de:item:b1w3-bezweifeln
+  - item: de:item:b1w3-bitten
+  - item: de:item:b1w3-drohen
+  - item: de:item:b1w3-empfinden
+  - item: de:item:b1w3-erfahren
+  - item: de:item:b1w3-erfuellen
+  - item: de:item:b1w3-ermoeglichen
+  - item: de:item:b1w3-folgen
+  - item: de:item:b1w3-geniessen
+  - item: de:item:b1w3-geschehen
+  - item: de:item:b1w3-gestalten
+  - item: de:item:b1w3-halten
+  - item: de:item:b1w3-loesen
+  - item: de:item:b1w3-raten
+  - item: de:item:b1w3-regeln
+  - item: de:item:b1w3-schaffen
+  - item: de:item:b1w3-umgehen
+  - item: de:item:b1w3-unterscheiden
+  - item: de:item:b1w3-verwenden
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng thêm hơn hai mươi động từ thông dụng B1, biết các giới từ và cách đi kèm quan trọng, và chia được ở thì hiện tại và Perfekt.
+  - type: explain
+    text:
+      vi: "Một số động từ bất quy tắc quan trọng trong bài: bitten (bittet, bat, hat gebeten), erfahren (erfährt, erfuhr, hat erfahren), genießen (genießt, genoss, hat genossen), geschehen (geschieht, geschah, ist geschehen), halten (hält, hielt, hat gehalten), raten (rät, riet, hat geraten), unterscheiden (unterschied, hat unterschieden). Hãy luyện cả ba dạng."
+  - type: explain
+    text:
+      vi: "Giới từ cố định: bitten um + Akk (Ich bitte um Ruhe), folgen + Dativ (Er folgt dem Weg; Perfekt ist gefolgt), umgehen mit + Dat (Wie gehst du mit Stress um?), drohen + Dativ (Dem Nachbarn droht eine Strafe). Chú ý folgen và drohen đi với Dativ chứ không phải Akkusativ."
+  - type: explain
+    text:
+      vi: "Động từ tách và không tách: ausdrücken (tách: drückt aus), umgehen (tách khi nghĩa là đối xử: geht um), nhưng beachten, bedauern, bedeuten, beeinflussen, bezweifeln, empfinden, erfüllen, ermöglichen, gestalten, verwenden đều không tách và Partizip II không có ge-."
+  - type: deep_explain
+    text:
+      vi: "Erfahren nghĩa là biết được, nghe tin (Ich habe es gestern erfahren), khác erleben (trải qua) và khác erfahren như tính từ (giàu kinh nghiệm). Schaffen nghĩa là làm được (Ich habe es geschafft!) hoặc tạo ra (er schuf, hat geschaffen). Halten rất đa nghĩa: giữ, tổ chức một bài nói (einen Vortrag halten), hay coi là (halten für)."
+  - type: example
+    target: Mit diesem Wort kann ich meine Gefühle gut ausdrücken.
+    target_lang: de
+    translation:
+      vi: Với từ này tôi diễn đạt cảm xúc của mình tốt.
+    note:
+      vi: ausdrücken = diễn đạt, bày tỏ.
+  - type: example
+    target: Bitte beachten Sie die Hinweise auf dem Schild.
+    target_lang: de
+    translation:
+      vi: Xin hãy lưu ý các chỉ dẫn trên biển.
+    note:
+      vi: beachten = lưu ý, tuân theo.
+  - type: example
+    target: Wir bedauern, dass Sie nicht kommen können.
+    target_lang: de
+    translation:
+      vi: Chúng tôi lấy làm tiếc vì ông/bà không đến được.
+    note:
+      vi: bedauern = tiếc, lấy làm tiếc.
+  - type: example
+    target: Was bedeutet dieses Wort?
+    target_lang: de
+    translation:
+      vi: Từ này có nghĩa là gì?
+    note:
+      vi: bedeuten = có nghĩa là.
+  - type: common_mistake
+    wrong: Ich bitte für Ruhe.
+    right: Ich bitte um Ruhe.
+    target_lang: de
+    note:
+      vi: Bitten đi với giới từ um + Akkusativ.
+  - type: common_mistake
+    wrong: Er hat dem Weg gefolgt.
+    right: Er ist dem Weg gefolgt.
+    target_lang: de
+    note:
+      vi: "Folgen dùng sein ở Perfekt: ist gefolgt, và đi với Dativ."
+  - type: summary
+    points:
+      - vi: ausdrücken, beachten, bedauern, bedeuten, beeinflussen, bezweifeln, empfinden, erfüllen, ermöglichen, gestalten, lösen, regeln, schaffen, verwenden.
+exercises:
+  - key: de:exercise:b1w3l5-listen-geniessen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-geniessen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wir genießen die Ruhe auf dem Land.
+      options:
+        - { id: usx, text: Nhiều người cảm thấy tiếng ồn gây phiền., lang: vi }
+        - { id: y0z, text: Chúng tôi tận hưởng sự yên tĩnh ở quê., lang: vi }
+        - { id: bgq, text: Bác sĩ khuyên tôi vận động nhiều hơn., lang: vi }
+        - { id: u8g, text: Bạn biết điều đó từ khi nào?, lang: vi }
+    answer:
+      correct_option_id: y0z
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Chúng tôi tận hưởng sự yên tĩnh ở quê.". Từ khoá là genießen (tận hưởng, thưởng thức); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Chúng tôi tận hưởng sự yên tĩnh ở quê.
+  - key: de:exercise:b1w3l5-mcq-vi-de-umgehen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w3-umgehen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "đối xử, xử lý (mit + Dativ)"?
+      stem_lang: vi
+      options:
+        - { id: gqx, text: drohen, lang: de }
+        - { id: nbu, text: umgehen, lang: de }
+        - { id: dut, text: empfinden, lang: de }
+        - { id: upv, text: genießen, lang: de }
+    answer:
+      correct_option_id: nbu
+    explanation:
+      vi: "umgehen nghĩa là \"đối xử, xử lý (mit + Dativ)\". Ví dụ: Er geht vorsichtig mit den Geräten um. (Anh ấy xử lý các thiết bị cẩn thận.)"
+    display_answer: umgehen
+  - key: de:exercise:b1w3l5-mcq-de-vi-halten
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w3-halten
+    prompt:
+      stem: "\"halten\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: dyx, text: "tận hưởng, thưởng thức", lang: vi }
+        - { id: fuh, text: "tạo điều kiện, làm cho có thể", lang: vi }
+        - { id: svk, text: "thực hiện, đáp ứng", lang: vi }
+        - { id: fm6, text: giữ; tổ chức (bài nói); dừng, lang: vi }
+    answer:
+      correct_option_id: fm6
+    explanation:
+      vi: "halten nghĩa là \"giữ; tổ chức (bài nói); dừng\". Ví dụ: Der Chef hält morgen einen Vortrag. (Ngày mai sếp có một bài thuyết trình.)"
+    display_answer: giữ; tổ chức (bài nói); dừng
+  - key: de:exercise:b1w3l5-tr-word-erfahren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-erfahren
+    prompt:
+      source_text: biết được, nghe tin (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - erfahren
+    explanation:
+      vi: "\"biết được, nghe tin\" trong tiếng Đức là erfahren. Ví dụ: Wann hast du davon erfahren?"
+    display_answer: erfahren
+  - key: de:exercise:b1w3l5-mcq-luecke-ausdruecken
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w3-ausdruecken
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Với từ này tôi diễn đạt cảm xúc của mình tốt.\": Mit diesem Wort kann ich meine Gefühle gut ___."
+      stem_lang: vi
+      options:
+        - { id: p41, text: schaffe, lang: de }
+        - { id: gf7, text: beeinflusst, lang: de }
+        - { id: jb6, text: ausdrücken, lang: de }
+        - { id: w1t, text: beachten, lang: de }
+    answer:
+      correct_option_id: jb6
+    explanation:
+      vi: "Câu có nghĩa \"Với từ này tôi diễn đạt cảm xúc của mình tốt.\" nên cần ausdrücken (ausdrücken: diễn đạt, bày tỏ). beachten = lưu ý, tuân theo; schaffe = làm được, hoàn thành; beeinflusst = ảnh hưởng đến không đúng nghĩa của câu."
+    display_answer: ausdrücken
+  - key: de:exercise:b1w3l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Ich bitte Sie um Ruhe, denn ich möchte meine Rede halten.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich bitte Sie um Ruhe, denn ich möchte meine Rede halten.
+        - Ich möchte meine Rede halten, deshalb bitte ich Sie um Ruhe.
+        - Ich bitte um Ruhe, denn ich möchte jetzt meine Rede halten.
+    explanation:
+      vi: "Gợi ý đáp án: Ich bitte Sie um Ruhe, denn ich möchte meine Rede halten. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich bitte Sie um Ruhe, denn ich möchte meine Rede halten.
+    item: de:item:b1w3-bitten
+  - key: de:exercise:b1w3l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Er hat bedauert, dass er den Zug verpasst hat, aber er hat es trotzdem geschafft, pünktlich anzukommen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy tiếc vì lỡ tàu, nhưng dù vậy anh vẫn đến đúng giờ được.
+        - Anh ấy lấy làm tiếc vì đã lỡ chuyến tàu, nhưng dẫu vậy vẫn kịp đến đúng giờ.
+        - Anh ấy tiếc đã bỏ lỡ tàu, tuy nhiên anh vẫn xoay xở đến đúng giờ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Er hat bedauert, dass er den Zug verpasst hat, aber er hat es trotzdem geschafft, pünktlich anzukommen.\" nghĩa là: Anh ấy tiếc vì lỡ tàu, nhưng dù vậy anh vẫn đến đúng giờ được. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Anh ấy tiếc vì lỡ tàu, nhưng dù vậy anh vẫn đến đúng giờ được.
+    item: de:item:b1w3-bedauern
