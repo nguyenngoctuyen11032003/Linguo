@@ -1,0 +1,396 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:more-counters
+order_index: 2
+level: n5
+title:
+  vi: Đếm đồ vật và thời lượng - ～さつ・～ひき・～はい・～かい
+objectives:
+  - vi: "Dùng thêm trợ từ đếm: ～さつ (sách), ～ひき (con vật), ～はい (cốc, chén), ～かい (tầng), ～こ (cái)."
+  - vi: "Đếm thời lượng: ～しゅうかん, ～かげつ, ～ねん."
+  - vi: Hỏi số lượng bằng なん + trợ từ đếm.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:times-of-day
+items:
+  - item: ja:item:n5-u18-satsu
+  - item: ja:item:n5-u18-hiki
+  - item: ja:item:n5-u18-hai-counter
+  - item: ja:item:n5-u18-kai-floor
+  - item: ja:item:n5-u18-ban-number
+  - item: ja:item:n5-u18-ko-counter
+  - item: ja:item:n5-u18-shuukan
+  - item: ja:item:n5-u18-kagetsu
+  - item: ja:item:n5-u18-nen-duration
+  - item: ja:item:nanbon-nanmai
+    role: reuse
+  - item: ja:item:hon-counter
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đếm được thêm nhiều đồ vật và thời gian - ほんをさんさつかいます。ねこがにひきいます。にほんにさんかげつすみます。
+  - type: explain
+    text:
+      vi: "Mỗi loại vật có trợ từ đếm riêng: ～さつ (sách, vở), ～ひき (chó, mèo, cá), ～はい (cốc, chén, bát), ～かい (tầng nhà), ～こ (vật nhỏ, tròn), ～ばん (số hiệu). Số đứng trước trợ từ - ほん３さつ, ねこ２ひき."
+  - type: explain
+    text:
+      vi: "Một số trợ từ đổi âm - ～ひき: いっぴき, にひき, さんびき; ～はい: いっぱい, にはい, さんばい; ～かい: いっかい, にかい, さんがい. Hãy học thuộc các dạng đặc biệt của 1, 3, 6, 8, 10."
+  - type: explain
+    text:
+      vi: Đếm thời lượng - ～しゅうかん (tuần), ～かげつ (tháng), ～ねん (năm). Khác với ～がつ, ～にち, ～ねん dùng trong lịch. Ví dụ ３かげつ là "ba tháng", ３がつ là "tháng 3".
+  - type: deep_explain
+    text:
+      vi: Hỏi số lượng - なんさつ, なんびき, なんばい, なんがい, なんこ, なんしゅうかん, なんかげつ, なんねん. Chú ý ～かい có hai nghĩa - 回 (lần) và 階 (tầng); さんがい là tầng ba, さんかい là ba lần. Dạng よねん (4 năm) bất quy tắc, không nói よんねん. Chữ Hán - 冊, 匹, 杯, 階, 番, 個, 週間, か月, 年.
+  - type: example
+    target: ほんをさんさつかいました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã mua ba quyển sách.
+    note:
+      vi: さんさつ - ba quyển.
+  - type: example
+    target: ねこがにひきいます。
+    target_lang: ja
+    translation:
+      vi: Có hai con mèo.
+    note:
+      vi: にひき - hai con.
+  - type: example
+    target: コーヒーをにはいのみました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã uống hai tách cà phê.
+    note:
+      vi: にはい - hai tách.
+  - type: example
+    target: にほんにさんかげつすみます。
+    target_lang: ja
+    translation:
+      vi: Tôi sống ở Nhật ba tháng.
+    note:
+      vi: さんかげつ - ba tháng (thời lượng).
+  - type: common_mistake
+    wrong: ほんをさんほんかいます。
+    right: ほんをさんさつかいます。
+    target_lang: ja
+    note:
+      vi: Sách đếm bằng ～さつ, không dùng ～ほん (～ほん dành cho vật dài như bút, chai).
+  - type: common_mistake
+    wrong: ここにねこがさんひきいます。(sai âm)
+    right: ここにねこがさんびきいます。
+    target_lang: ja
+    note:
+      vi: ３ + ひき đọc さんびき (biến âm ひ → び).
+  - type: summary
+    points:
+      - vi: ～さつ sách · ～ひき con vật nhỏ · ～はい cốc, chén · ～かい tầng · ～こ vật nhỏ, tròn.
+      - vi: Biến âm - いっぴき · さんびき · いっぱい · さんばい · さんがい.
+      - vi: ～しゅうかん · ～かげつ · ～ねん - thời lượng.
+      - vi: Hỏi - なんさつ, なんびき, なんかげつ...
+exercises:
+  - key: ja:exercise:more-counters-satsu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-satsu
+    prompt:
+      stem: Sách đếm bằng trợ từ nào?
+      stem_lang: vi
+      options:
+        - id: xwt
+          text: ～だい
+          lang: ja
+        - id: ybv
+          text: ～さつ
+          lang: ja
+        - id: e2l
+          text: ～ほん
+          lang: ja
+        - id: q3r
+          text: ～まい
+          lang: ja
+    answer:
+      correct_option_id: ybv
+    explanation:
+      vi: Sách, vở đếm bằng ～さつ. ～ほん dành cho vật dài, ～まい cho vật mỏng, ～だい cho máy móc, xe.
+    display_answer: ～さつ
+  - key: ja:exercise:more-counters-hiki
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-hiki
+    prompt:
+      stem: Hai con mèo đọc là gì?
+      stem_lang: vi
+      options:
+        - id: ne9
+          text: ねこがにひき
+          lang: ja
+        - id: ig6
+          text: ねこがにほん
+          lang: ja
+        - id: ri5
+          text: ねこがにまい
+          lang: ja
+        - id: lqr
+          text: ねこがにさつ
+          lang: ja
+    answer:
+      correct_option_id: ne9
+    explanation:
+      vi: "Con vật nhỏ đếm bằng ～ひき: にひき. ほん, さつ, まい là trợ từ đếm cho vật khác."
+    display_answer: ねこがにひき
+  - key: ja:exercise:more-counters-kagetsu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u18-kagetsu
+    prompt:
+      audio_asset_id: null
+      fallback_text: にほんにさんかげつすみます。ほんをにさつかいました。
+      options:
+        - id: ckn
+          text: Tôi đến Nhật vào tháng ba. Tôi đã mua hai quyển sách.
+          lang: vi
+        - id: ldy
+          text: Tôi sống ở Nhật ba tháng. Tôi đã mua hai quyển sách.
+          lang: vi
+        - id: qe7
+          text: Tôi sống ở Nhật hai tháng. Tôi đã mua ba quyển sách.
+          lang: vi
+        - id: bzh
+          text: Tôi sống ở Nhật ba năm. Tôi đã mua hai cuốn vở.
+          lang: vi
+    answer:
+      correct_option_id: ldy
+    explanation:
+      vi: さんかげつ - ba tháng (thời lượng); にさつ - hai quyển.
+    display_answer: Tôi sống ở Nhật ba tháng. Tôi đã mua hai quyển sách.
+  - key: ja:exercise:more-counters-hai-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-hai-counter
+    prompt:
+      template: コーヒーを{{b1}}のみました。 (Tôi đã uống hai tách cà phê.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Số 2 + trợ từ đếm cốc, chén.
+        - Bắt đầu bằng に - にはい.
+    answer:
+      blanks:
+        b1:
+          - にはい
+          - ２はい
+          - ２杯
+          - 二杯
+    known_wrong:
+      - answer: にほん
+        feedback_vi: ほん dành cho vật dài; cốc là はい.
+        error_tag: counter
+      - answer: にひき
+        feedback_vi: ひき dành cho con vật nhỏ.
+        error_tag: counter
+    explanation:
+      vi: "Cốc, chén đếm bằng ～はい: いっぱい, にはい, さんばい."
+    display_answer: コーヒーをにはいのみました。
+  - key: ja:exercise:more-counters-kai
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-kai-floor
+    prompt:
+      stem: Phòng ở tầng ba. Đọc là gì?
+      stem_lang: vi
+      options:
+        - id: z4m
+          text: さんがい
+          lang: ja
+        - id: fvw
+          text: さんほん
+          lang: ja
+        - id: k19
+          text: さんかい
+          lang: ja
+        - id: bz7
+          text: さんばん
+          lang: ja
+    answer:
+      correct_option_id: z4m
+    explanation:
+      vi: Tầng ba là さんがい (biến âm). さんかい là "ba lần".
+    display_answer: さんがい
+  - key: ja:exercise:more-counters-satsu-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-satsu
+    prompt:
+      template: ほんを{{b1}}かいました。 (Tôi đã mua ba quyển sách.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - さんさつ
+          - ３さつ
+          - ３冊
+          - 三冊
+    known_wrong:
+      - answer: さんほん
+        feedback_vi: ほん dành cho vật dài; sách là ～さつ.
+        error_tag: counter
+      - answer: さんまい
+        feedback_vi: まい dành cho vật mỏng.
+        error_tag: counter
+    explanation:
+      vi: さんさつ - ba quyển sách.
+    display_answer: ほんをさんさつかいました。
+  - key: ja:exercise:more-counters-nen-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-nen-duration
+    prompt:
+      template: にほんごを{{b1}}べんきょうしました。 (Tôi đã học tiếng Nhật hai năm.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - にねん
+          - ２ねん
+          - ２年
+          - 二年
+    known_wrong:
+      - answer: にがつ
+        feedback_vi: にがつ là tháng hai.
+        error_tag: time_word
+      - answer: にしゅうかん
+        feedback_vi: にしゅうかん là hai tuần.
+        error_tag: time_word
+    explanation:
+      vi: にねん là hai năm (thời lượng).
+    display_answer: にほんごをにねんべんきょうしました。
+  - key: ja:exercise:more-counters-neko-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-hiki
+    prompt:
+      source_text: Nhà tôi có hai con mèo.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - うちにねこがにひきいます。
+        - 家に猫が二匹います。
+        - わたしのうちにねこがにひきいます。
+        - うちにはねこがにひきいます。
+    known_wrong:
+      - answer: うちにねこがにほんいます。
+        feedback_vi: Con vật đếm bằng ひき.
+        error_tag: counter
+      - answer: うちにねこがふたりいます。
+        feedback_vi: ふたり dùng cho người.
+        error_tag: counter
+    explanation:
+      vi: ねこ + にひき - hai con mèo; います - có (con vật).
+    display_answer: うちにねこがにひきいます。
+  - key: ja:exercise:more-counters-san-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u18-kai-floor
+    prompt:
+      source_text: わたしのへやはさんがいです。ほんがさんさつあります。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phòng tôi ở tầng ba. Có ba quyển sách.
+        - Phòng tôi ở tầng 3. Có ba cuốn sách.
+        - Phòng của tôi ở tầng ba. Tôi có ba quyển sách ở đó.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Phòng tôi ở lần thứ ba. Có ba quyển sách.
+        feedback_vi: さんがい là tầng ba, không phải ba lần.
+        error_tag: counter
+    explanation:
+      vi: さんがい - tầng ba; さんさつ - ba quyển; あります - có (vật).
+    display_answer: Phòng tôi ở tầng ba. Có ba quyển sách.
+  - key: ja:exercise:more-counters-hon-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-satsu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi mua ba quyển sách ở hiệu sách."'
+      tokens:
+        - id: t3
+          text: さんさつ
+        - id: t2
+          text: ほんを
+        - id: t4
+          text: かいます。
+        - id: t1
+          text: ほんやで
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Nơi diễn ra (ほんやで) → đối tượng (ほんを) → số lượng (さんさつ) → かいます.
+    display_answer: ほんやでほんをさんさつかいます。
+  - key: ja:exercise:more-counters-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-ko-counter
+    prompt:
+      stem: Bạn muốn nói “Tôi đã mua ba quả táo.” Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: dk4
+          text: りんごをみっつかいました。
+          lang: ja
+        - id: jj0
+          text: りんごをさんほんかいました。
+          lang: ja
+        - id: uib
+          text: りんごをさんまいかいました。
+          lang: ja
+        - id: hp8
+          text: りんごをさんさつかいました。
+          lang: ja
+    answer:
+      correct_option_id: dk4
+    explanation:
+      vi: Táo đếm bằng ～つ (みっつ) hoặc ～こ (さんこ). ほん, まい, さつ không dùng cho táo.
+    display_answer: りんごをみっつかいました。

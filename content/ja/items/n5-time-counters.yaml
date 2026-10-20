@@ -1,0 +1,576 @@
+# Học liệu unit "Thời gian, đếm số lượng và thứ tự" (N5). reading là cách đọc kana khi từ có chữ Hán; romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n5-u18-asa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 朝
+      reading: あさ
+      romanization: asa
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi sáng
+      examples:
+        - target: あさ６じにおきます。
+          translation:
+            vi: Sáng 6 giờ tôi dậy.
+  - key: ja:item:n5-u18-hiru
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 昼
+      reading: ひる
+      romanization: hiru
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi trưa, ban ngày
+      examples:
+        - target: ひるにごはんをたべます。
+          translation:
+            vi: Buổi trưa tôi ăn cơm.
+  - key: ja:item:n5-u18-yoru
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 夜
+      reading: よる
+      romanization: yoru
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban đêm, buổi tối
+      examples:
+        - target: よるはおふろにはいります。
+          translation:
+            vi: Buổi tối tôi tắm bồn.
+  - key: ja:item:n5-u18-ban
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 晩
+      reading: ばん
+      romanization: ban
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi tối (cùng nghĩa よる, hay dùng trong ghép từ)
+      examples:
+        - target: まいばんテレビをみます。
+          translation:
+            vi: Tối nào tôi cũng xem tivi.
+      pronunciation_note:
+        vi: "ばん thường đứng sau: あさばん, まいばん, こんばん, ばんごはん."
+  - key: ja:item:n5-u18-gozen
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 午前
+      reading: ごぜん
+      romanization: gozen
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi sáng (trước 12 giờ), sáng
+      examples:
+        - target: ごぜん９じにあいましょう。
+          translation:
+            vi: Hẹn nhau lúc 9 giờ sáng.
+      pronunciation_note:
+        vi: "ごぜん + giờ: ごぜん９じ (9 giờ sáng)."
+  - key: ja:item:n5-u18-gogo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 午後
+      reading: ごご
+      romanization: gogo
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi chiều (sau 12 giờ), chiều
+      examples:
+        - target: ごご３じにかえります。
+          translation:
+            vi: Tôi về nhà lúc 3 giờ chiều.
+  - key: ja:item:n5-u18-yuugata
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 夕方
+      reading: ゆうがた
+      romanization: yuugata
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiều tối, hoàng hôn
+      examples:
+        - target: ゆうがたにさんぽします。
+          translation:
+            vi: Chiều tối tôi đi dạo.
+  - key: ja:item:n5-u18-konban
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 今晩
+      reading: こんばん
+      romanization: konban
+      pos: danh từ
+    back:
+      meaning:
+        vi: tối nay
+      examples:
+        - target: こんばんともだちにあいます。
+          translation:
+            vi: Tối nay tôi gặp bạn.
+      pronunciation_note:
+        vi: こんばんは (chào buổi tối) ghép từ こんばん + は; viết は nhưng đọc "wa".
+  - key: ja:item:n5-u18-maiasa
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 毎朝
+      reading: まいあさ
+      romanization: maiasa
+      pos: danh từ
+    back:
+      meaning:
+        vi: mỗi sáng, sáng nào cũng
+      examples:
+        - target: まいあさコーヒーをのみます。
+          translation:
+            vi: Sáng nào tôi cũng uống cà phê.
+  - key: ja:item:n5-u18-maiban
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 毎晩
+      reading: まいばん
+      romanization: maiban
+      pos: danh từ
+    back:
+      meaning:
+        vi: mỗi tối, tối nào cũng
+      examples:
+        - target: まいばんにほんごをべんきょうします。
+          translation:
+            vi: Tối nào tôi cũng học tiếng Nhật.
+  - key: ja:item:n5-u18-yuube
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ゆうべ
+      romanization: yuube
+      pos: danh từ
+    back:
+      meaning:
+        vi: tối hôm qua
+      examples:
+        - target: ゆうべはよくねました。
+          translation:
+            vi: Tối qua tôi ngủ ngon.
+      pronunciation_note:
+        vi: Còn viết 昨夜 (さくや) trong văn viết; hội thoại dùng ゆうべ.
+  - key: ja:item:n5-u18-asatte
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 明後日
+      reading: あさって
+      romanization: asatte
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngày kia
+      examples:
+        - target: あさってしけんがあります。
+          translation:
+            vi: Ngày kia có kỳ thi.
+      pronunciation_note:
+        vi: あさって có っ - ngắt một nhịp.
+  - key: ja:item:n5-u18-ototoi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 一昨日
+      reading: おととい
+      romanization: ototoi
+      pos: danh từ
+    back:
+      meaning:
+        vi: hôm kia
+      examples:
+        - target: おとといともだちにあいました。
+          translation:
+            vi: Hôm kia tôi đã gặp bạn.
+  - key: ja:item:n5-u18-satsu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 冊
+      reading: さつ
+      romanization: satsu
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～quyển (sách, vở, tạp chí)
+      examples:
+        - target: ほんをさんさつかいます。
+          translation:
+            vi: Tôi mua ba quyển sách.
+      pronunciation_note:
+        vi: いっさつ, にさつ, さんさつ, よんさつ, ごさつ... いっ là âm ngắt.
+  - key: ja:item:n5-u18-hiki
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 匹
+      reading: ひき
+      romanization: hiki
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: "～con (vật nhỏ: chó, mèo, cá)"
+      examples:
+        - target: ねこがにひきいます。
+          translation:
+            vi: Có hai con mèo.
+      pronunciation_note:
+        vi: いっぴき, にひき, さんびき, よんひき, ごひき... biến âm ぴ, ひ, び.
+  - key: ja:item:n5-u18-hai-counter
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 杯
+      reading: はい
+      romanization: hai
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～cốc, chén, bát (đồ uống, cơm)
+      examples:
+        - target: コーヒーをにはいのみます。
+          translation:
+            vi: Tôi uống hai tách cà phê.
+      pronunciation_note:
+        vi: いっぱい, にはい, さんばい, よんはい... biến âm ぱ, は, ば. いっぱい còn có nghĩa "đầy, no".
+  - key: ja:item:n5-u18-kai-floor
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 階
+      reading: かい
+      romanization: kai
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～tầng (nhà)
+      examples:
+        - target: わたしのへやはさんがいです。
+          translation:
+            vi: Phòng tôi ở tầng ba.
+      pronunciation_note:
+        vi: いっかい, にかい, さんがい, よんかい, ごかい... さんがい biến âm; lưu ý khác ～かい (回, lần).
+  - key: ja:item:n5-u18-ban-number
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 番
+      reading: ばん
+      romanization: ban
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～số (thứ tự, số hiệu)
+      examples:
+        - target: ３ばんせんからでんしゃがでます。
+          translation:
+            vi: Tàu khởi hành từ sân ga số 3.
+      pronunciation_note:
+        vi: なんばん - số mấy; いちばん - số một / nhất.
+  - key: ja:item:n5-u18-ko-counter
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 個
+      reading: こ
+      romanization: ko
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～cái (vật nhỏ, tròn)
+      examples:
+        - target: りんごをみっつかいました。
+          translation:
+            vi: Tôi đã mua ba quả táo.
+      pronunciation_note:
+        vi: いっこ, にこ, さんこ, よんこ, ごこ...
+  - key: ja:item:n5-u18-shuukan
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 週間
+      reading: しゅうかん
+      romanization: shuukan
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～tuần (khoảng thời gian)
+      examples:
+        - target: いっしゅうかんやすみます。
+          translation:
+            vi: Tôi nghỉ một tuần.
+      confusion:
+        vi: しゅう (週) là tuần trong lịch; しゅうかん (週間) là khoảng thời gian tuần. らいしゅう (tuần sau) ≠ らいしゅうかん.
+  - key: ja:item:n5-u18-kagetsu
+    type: vocab
+    level: n5
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: か月
+      reading: かげつ
+      romanization: kagetsu
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～tháng (khoảng thời gian)
+      examples:
+        - target: にほんにさんかげつすみます。
+          translation:
+            vi: Tôi sống ở Nhật ba tháng.
+      confusion:
+        vi: がつ chỉ tháng trong lịch (３がつ - tháng 3); かげつ chỉ khoảng thời gian (３かげつ - ba tháng).
+  - key: ja:item:n5-u18-nen-duration
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ～年
+      reading: ねん
+      romanization: nen
+      pos: trợ từ đếm
+    back:
+      meaning:
+        vi: ～năm (khoảng thời gian, tên năm)
+      examples:
+        - target: にほんごをにねんべんきょうしました。
+          translation:
+            vi: Tôi đã học tiếng Nhật hai năm.
+      pronunciation_note:
+        vi: いちねん, にねん, さんねん, よねん (không phải よんねん), ごねん...
+  - key: ja:item:n5-u18-hajimete
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 初めて
+      reading: はじめて
+      romanization: hajimete
+      pos: phó từ
+    back:
+      meaning:
+        vi: lần đầu tiên
+      examples:
+        - target: はじめてにほんへきました。
+          translation:
+            vi: Tôi đến Nhật lần đầu.
+  - key: ja:item:n5-u18-saisho
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 最初
+      reading: さいしょ
+      romanization: saisho
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu tiên, ban đầu
+      examples:
+        - target: さいしょはむずかしかったです。
+          translation:
+            vi: Lúc đầu thì khó.
+  - key: ja:item:n5-u18-saigo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 最後
+      reading: さいご
+      romanization: saigo
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuối cùng, sau cùng
+      examples:
+        - target: さいごまでがんばります。
+          translation:
+            vi: Tôi sẽ cố gắng đến cuối cùng.
+  - key: ja:item:n5-u18-tsugi
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 次
+      reading: つぎ
+      romanization: tsugi
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiếp theo, kế tiếp
+      examples:
+        - target: つぎのえきでおります。
+          translation:
+            vi: Tôi xuống ở ga tiếp theo.
+  - key: ja:item:n5-u18-mazu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: まず
+      romanization: mazu
+      pos: phó từ
+    back:
+      meaning:
+        vi: trước tiên
+      examples:
+        - target: まずおふろにはいります。
+          translation:
+            vi: Trước tiên tôi tắm.
+  - key: ja:item:n5-u18-kondo
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: 今度
+      reading: こんど
+      romanization: kondo
+      pos: danh từ
+    back:
+      meaning:
+        vi: lần này; lần tới
+      examples:
+        - target: こんどのにちようびはひまです。
+          translation:
+            vi: Chủ nhật tới tôi rảnh.
+      confusion:
+        vi: こんど vừa là "lần này" vừa là "lần sau", ngữ cảnh cho biết nghĩa (こんどのにちようび - chủ nhật tới).
+  - key: ja:item:n5-u18-mousugu
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: もうすぐ
+      romanization: mousugu
+      pos: phó từ
+    back:
+      meaning:
+        vi: sắp, chẳng bao lâu nữa
+      examples:
+        - target: もうすぐなつやすみです。
+          translation:
+            vi: Sắp đến kỳ nghỉ hè.
+  - key: ja:item:n5-u18-zutto
+    type: vocab
+    level: n5
+    difficulty: 1
+    skill_tags:
+      - vocabulary
+    front:
+      text: ずっと
+      romanization: zutto
+      pos: phó từ
+    back:
+      meaning:
+        vi: suốt, mãi; (so sánh) hơn nhiều
+      examples:
+        - target: ずっとここにすみたいです。
+          translation:
+            vi: Tôi muốn sống ở đây mãi.
+      pronunciation_note:
+        vi: ずっと có っ - ngắt một nhịp.

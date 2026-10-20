@@ -1,0 +1,383 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:times-of-day
+order_index: 1
+level: n5
+title:
+  vi: Các buổi trong ngày - あさ・ひる・よる・ごぜん・ごご
+objectives:
+  - vi: "Gọi các buổi trong ngày: あさ, ひる, よる, ゆうがた, ごぜん, ごご."
+  - vi: "Nói mốc thời gian hằng ngày: まいあさ, まいばん, こんばん, ゆうべ."
+  - vi: "Nói ngày hôm kia, hôm qua, hôm nay, ngày mai, ngày kia: おととい, きのう, きょう, あした, あさって."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:adverbs-connectors
+items:
+  - item: ja:item:n5-u18-asa
+  - item: ja:item:n5-u18-hiru
+  - item: ja:item:n5-u18-yoru
+  - item: ja:item:n5-u18-ban
+  - item: ja:item:n5-u18-gozen
+  - item: ja:item:n5-u18-gogo
+  - item: ja:item:n5-u18-yuugata
+  - item: ja:item:n5-u18-konban
+  - item: ja:item:n5-u18-maiasa
+  - item: ja:item:n5-u18-maiban
+  - item: ja:item:n5-u18-yuube
+  - item: ja:item:n5-u18-asatte
+  - item: ja:item:n5-u18-ototoi
+  - item: ja:item:kyou-ashita
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được thời điểm trong ngày - まいあさ６じにおきます。ごご３じにかえります。こんばんともだちにあいます。
+  - type: explain
+    text:
+      vi: "Các buổi: あさ (sáng), ひる (trưa), ゆうがた (chiều tối), よる / ばん (tối, đêm). Giờ: ごぜん (trước 12 giờ), ごご (sau 12 giờ) - ごぜん９じ (9 giờ sáng), ごご３じ (3 giờ chiều)."
+  - type: explain
+    text:
+      vi: "Mỗi + buổi: まいあさ (sáng nào cũng), まいばん (tối nào cũng), まいにち (ngày nào cũng). こんばん là tối nay; ゆうべ là tối hôm qua. Không thêm に sau các từ này - まいあさ コーヒーを のみます."
+  - type: explain
+    text:
+      vi: "Chuỗi ngày: おととい (hôm kia), きのう (hôm qua), きょう (hôm nay), あした (ngày mai), あさって (ngày kia). Các từ chỉ ngày như きのう, きょう, あした không đi với に."
+  - type: deep_explain
+    text:
+      vi: 'Quy tắc に: từ chỉ thời điểm cụ thể có số (３じに, にちようびに) dùng に; từ chỉ tương đối (きのう, あした, まいあさ, こんばん) không dùng に. こんばんは (xin chào buổi tối) viết は nhưng đọc "wa". Chữ Hán - 朝, 昼, 夜, 晩, 午前, 午後, 夕方, 今晩, 毎朝, 毎晩, 明後日, 一昨日.'
+  - type: example
+    target: まいあさ６じにおきます。
+    target_lang: ja
+    translation:
+      vi: Sáng nào tôi cũng dậy lúc 6 giờ.
+    note:
+      vi: まいあさ - không có に; ６じに - có に.
+  - type: example
+    target: ごぜん９じにあいましょう。
+    target_lang: ja
+    translation:
+      vi: Hẹn gặp nhau lúc 9 giờ sáng.
+    note:
+      vi: ごぜん + giờ - giờ buổi sáng.
+  - type: example
+    target: ゆうべはおそくねました。きょうはねむいです。
+    target_lang: ja
+    translation:
+      vi: Tối qua tôi ngủ muộn. Hôm nay tôi buồn ngủ.
+    note:
+      vi: ゆうべ - tối qua.
+  - type: example
+    target: おとといともだちにあいました。あさってもあいます。
+    target_lang: ja
+    translation:
+      vi: Hôm kia tôi đã gặp bạn. Ngày kia cũng gặp.
+    note:
+      vi: おととい / あさって - hôm kia / ngày kia.
+  - type: common_mistake
+    wrong: まいあさにコーヒーをのみます。
+    right: まいあさコーヒーをのみます。
+    target_lang: ja
+    note:
+      vi: まいあさ không dùng に.
+  - type: common_mistake
+    wrong: きのうにえいがをみました。
+    right: きのうえいがをみました。
+    target_lang: ja
+    note:
+      vi: きのう, あした, きょう không dùng に.
+  - type: summary
+    points:
+      - vi: あさ · ひる · ゆうがた · よる / ばん · ごぜん · ごご.
+      - vi: まいあさ · まいばん · こんばん · ゆうべ.
+      - vi: おととい · きのう · きょう · あした · あさって.
+      - vi: Từ chỉ tương đối không dùng に; giờ cụ thể thì dùng に.
+exercises:
+  - key: ja:exercise:times-of-day-gogo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-gogo
+    prompt:
+      stem: Từ nào có nghĩa là “buổi chiều (sau 12 giờ)”?
+      stem_lang: vi
+      options:
+        - id: x78
+          text: あさ
+          lang: ja
+        - id: r71
+          text: ごご
+          lang: ja
+        - id: uum
+          text: ゆうがた
+          lang: ja
+        - id: a3d
+          text: ごぜん
+          lang: ja
+    answer:
+      correct_option_id: r71
+    explanation:
+      vi: ごご là buổi chiều (sau 12 giờ). ごぜん là trước 12 giờ, ゆうがた là chiều tối, あさ là sáng.
+    display_answer: ごご
+  - key: ja:exercise:times-of-day-ototoi
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-ototoi
+    prompt:
+      stem: Từ nào có nghĩa là “hôm kia”?
+      stem_lang: vi
+      options:
+        - id: to8
+          text: あした
+          lang: ja
+        - id: veh
+          text: あさって
+          lang: ja
+        - id: slr
+          text: おととい
+          lang: ja
+        - id: s92
+          text: きのう
+          lang: ja
+    answer:
+      correct_option_id: slr
+    explanation:
+      vi: おととい là hôm kia. きのう là hôm qua, あさって là ngày kia, あした là ngày mai.
+    display_answer: おととい
+  - key: ja:exercise:times-of-day-maiasa
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u18-maiasa
+    prompt:
+      audio_asset_id: null
+      fallback_text: まいあさ６じにおきます。ごぜん９じにかいしゃへいきます。
+      options:
+        - id: z1n
+          text: Sáng nào tôi cũng dậy lúc 6 giờ. Lúc 9 giờ sáng tôi đi làm.
+          lang: vi
+        - id: r8a
+          text: Sáng nay tôi dậy lúc 6 giờ. Lúc 9 giờ sáng tôi đi học.
+          lang: vi
+        - id: zan
+          text: Tối nào tôi cũng dậy lúc 6 giờ. Lúc 9 giờ chiều tôi đi làm.
+          lang: vi
+        - id: u5x
+          text: Sáng nào tôi cũng ngủ lúc 6 giờ. Lúc 9 giờ sáng tôi về nhà.
+          lang: vi
+    answer:
+      correct_option_id: z1n
+    explanation:
+      vi: まいあさ - sáng nào cũng; ごぜん９じ - 9 giờ sáng.
+    display_answer: Sáng nào tôi cũng dậy lúc 6 giờ. Lúc 9 giờ sáng tôi đi làm.
+  - key: ja:exercise:times-of-day-konban-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-konban
+    prompt:
+      template: "{{b1}}ともだちにあいます。 (Tối nay tôi gặp bạn.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Từ chỉ buổi tối của hôm nay.
+        - Bắt đầu bằng こ - こんばん.
+    answer:
+      blanks:
+        b1:
+          - こんばん
+          - 今晩
+    known_wrong:
+      - answer: ゆうべ
+        feedback_vi: ゆうべ là tối qua; "tối nay" là こんばん.
+        error_tag: time_word
+      - answer: まいばん
+        feedback_vi: まいばん là tối nào cũng.
+        error_tag: time_word
+    explanation:
+      vi: こんばん là tối nay.
+    display_answer: こんばんともだちにあいます。
+  - key: ja:exercise:times-of-day-ni
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-maiasa
+    prompt:
+      stem: Chọn câu đúng.
+      stem_lang: vi
+      options:
+        - id: rnq
+          text: まいあさでコーヒーをのみます。
+          lang: ja
+        - id: plt
+          text: まいあさコーヒーをのみます。
+          lang: ja
+        - id: rmv
+          text: まいあさをコーヒーをのみます。
+          lang: ja
+        - id: ahj
+          text: まいあさにコーヒーをのみます。
+          lang: ja
+    answer:
+      correct_option_id: plt
+    explanation:
+      vi: まいあさ không đi với に. Các câu còn lại dùng thừa trợ từ.
+    display_answer: まいあさコーヒーをのみます。
+  - key: ja:exercise:times-of-day-yuube-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-yuube
+    prompt:
+      template: "{{b1}}はおそくねました。きょうはねむいです。 (Tối qua tôi ngủ muộn. Hôm nay tôi buồn ngủ.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - ゆうべ
+          - 昨夜
+    known_wrong:
+      - answer: こんばん
+        feedback_vi: こんばん là tối nay.
+        error_tag: time_word
+    explanation:
+      vi: ゆうべ là tối qua (hội thoại).
+    display_answer: ゆうべはおそくねました。きょうはねむいです。
+  - key: ja:exercise:times-of-day-asatte-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-asatte
+    prompt:
+      template: "{{b1}}しけんがあります。 (Ngày kia có kỳ thi.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - あさって
+          - 明後日
+    known_wrong:
+      - answer: おととい
+        feedback_vi: おととい là hôm kia (quá khứ).
+        error_tag: time_word
+      - answer: あした
+        feedback_vi: あした là ngày mai.
+        error_tag: time_word
+    explanation:
+      vi: あさって là ngày kia. Cẩn thận chữ っ nhỏ.
+    display_answer: あさってしけんがあります。
+  - key: ja:exercise:times-of-day-gozen-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-gozen
+    prompt:
+      source_text: Hẹn gặp nhau lúc 9 giờ sáng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ごぜん９じにあいましょう。
+        - 午前９時に会いましょう。
+        - ごぜん９じにあいましょうね。
+        - ごぜんくじにあいましょう。
+    known_wrong:
+      - answer: ごご９じにあいましょう。
+        feedback_vi: ごご là buổi chiều/tối; sáng là ごぜん.
+        error_tag: time_word
+    explanation:
+      vi: ごぜん９じ - 9 giờ sáng; ～ましょう - hãy cùng...
+    display_answer: ごぜん９じにあいましょう。
+  - key: ja:exercise:times-of-day-ototoi-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u18-ototoi
+    prompt:
+      source_text: おとといともだちにあいました。あさってもあいます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Hôm kia tôi đã gặp bạn. Ngày kia cũng gặp.
+        - Hôm kia tôi gặp bạn. Ngày kia tôi cũng sẽ gặp.
+        - Hôm kia tôi đã gặp bạn, ngày kia cũng gặp bạn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Ngày kia tôi đã gặp bạn. Hôm kia cũng gặp.
+        feedback_vi: おとといは quá khứ (hôm kia), あさって là tương lai.
+        error_tag: time_word
+    explanation:
+      vi: おととい - hôm kia (quá khứ); あさって - ngày kia (tương lai); あいました - đã gặp; あいます - sẽ gặp.
+    display_answer: Hôm kia tôi đã gặp bạn. Ngày kia cũng gặp.
+  - key: ja:exercise:times-of-day-maiasa-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-maiasa
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Sáng nào tôi cũng dậy lúc 6 giờ."'
+      tokens:
+        - id: t3
+          text: おきます。
+        - id: t1
+          text: まいあさ
+        - id: t2
+          text: ６じに
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: まいあさ (không có に) → ６じに (có に) → おきます.
+    display_answer: まいあさ６じにおきます。
+  - key: ja:exercise:times-of-day-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-yoru
+    prompt:
+      stem: Bạn muốn nói “Buổi tối tôi tắm bồn”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: avi
+          text: よるをおふろにはいります。
+          lang: ja
+        - id: rjz
+          text: よるがおふろにはいります。
+          lang: ja
+        - id: rik
+          text: よるでおふろにはいります。
+          lang: ja
+        - id: rbq
+          text: よるはおふろにはいります。
+          lang: ja
+    answer:
+      correct_option_id: rbq
+    explanation:
+      vi: よるは (chủ đề thời gian) hoặc よるに đều dùng được; で, を, が không hợp với danh từ chỉ thời gian trong câu này.
+    display_answer: よるはおふろにはいります。

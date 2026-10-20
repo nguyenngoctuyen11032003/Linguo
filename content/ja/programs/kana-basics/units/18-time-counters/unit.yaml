@@ -1,0 +1,9 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:unit:time-counters
+order_index: 18
+title:
+  vi: Thời gian, đếm số lượng và thứ tự

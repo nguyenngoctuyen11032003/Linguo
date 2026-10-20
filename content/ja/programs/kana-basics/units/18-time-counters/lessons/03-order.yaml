@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: ja:lesson:order-sequence
+order_index: 3
+level: n5
+title:
+  vi: Thứ tự và tiến trình - はじめて・まず・つぎ・さいご
+objectives:
+  - vi: "Nói thứ tự: はじめて, さいしょ, さいご, つぎ, まず."
+  - vi: "Nói thời điểm tương lai gần: もうすぐ, こんど, ずっと."
+  - vi: Kể một quá trình theo thứ tự bằng まず - つぎに - さいごに.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:more-counters
+items:
+  - item: ja:item:n5-u18-hajimete
+  - item: ja:item:n5-u18-saisho
+  - item: ja:item:n5-u18-saigo
+  - item: ja:item:n5-u18-tsugi
+  - item: ja:item:n5-u18-mazu
+  - item: ja:item:n5-u18-kondo
+  - item: ja:item:n5-u18-mousugu
+  - item: ja:item:n5-u18-zutto
+  - item: ja:item:n5-u17-sorekara
+    role: reuse
+  - item: ja:item:n5-u17-soshite
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được một quá trình theo thứ tự - まずおゆをわかします。つぎにおちゃをいれます。さいごにのみます。
+  - type: explain
+    text:
+      vi: "Từ chỉ thứ tự: はじめて (lần đầu), さいしょ (đầu tiên), さいご (cuối cùng), つぎ (tiếp theo), まず (trước tiên). Câu kể thứ tự thường theo khuôn まず - つぎに - さいごに."
+  - type: explain
+    text:
+      vi: "Thời điểm: もうすぐ (sắp), こんど (lần này, lần sau), ずっと (suốt, mãi). Ví dụ もうすぐなつやすみです; こんどのにちようびにあいましょう; ずっとここにすみたいです."
+  - type: explain
+    text:
+      vi: Nối bằng そして (và), それから (sau đó). Câu hoàn chỉnh - まずあさごはんをたべます。それから、がっこうへいきます。さいごに、ともだちにあいます.
+  - type: deep_explain
+    text:
+      vi: 'こんど nghĩa là "lần này" khi kể chuyện đã xảy ra gần đây, nhưng khi nói về tương lai nghĩa là "lần tới" - こんどのにちようび (Chủ nhật tới). さいしょ và はじめて khác nhau: はじめて là "lần đầu tiên làm gì" (はじめてにほんへきました), さいしょ là "đầu tiên, ban đầu" (さいしょはむずかしかったです). ずっと cũng dùng để so sánh "hơn hẳn" (N4). Chữ Hán - 初めて, 最初, 最後, 次, 今度.'
+  - type: example
+    target: はじめてにほんへきました。
+    target_lang: ja
+    translation:
+      vi: Tôi đến Nhật lần đầu.
+    note:
+      vi: はじめて - lần đầu tiên.
+  - type: example
+    target: まずてをあらいます。つぎにごはんをたべます。さいごにおちゃをのみます。
+    target_lang: ja
+    translation:
+      vi: Trước tiên tôi rửa tay. Tiếp theo ăn cơm. Cuối cùng uống trà.
+    note:
+      vi: まず - つぎに - さいごに.
+  - type: example
+    target: もうすぐなつやすみです。
+    target_lang: ja
+    translation:
+      vi: Sắp đến kỳ nghỉ hè.
+    note:
+      vi: もうすぐ - sắp.
+  - type: example
+    target: こんどのにちようびにあいましょう。
+    target_lang: ja
+    translation:
+      vi: Chủ nhật tuần tới hãy gặp nhau.
+    note:
+      vi: こんどの - tới, sau.
+  - type: common_mistake
+    wrong: さいしょにほんへきました。(lần đầu đến Nhật)
+    right: はじめてにほんへきました。
+    target_lang: ja
+    note:
+      vi: Lần đầu tiên làm gì dùng はじめて; さいしょ chỉ thứ tự đầu tiên.
+  - type: common_mistake
+    wrong: つぎにおりません。
+    right: つぎのえきでおります。
+    target_lang: ja
+    note:
+      vi: つぎ + の + danh từ để nói "tiếp theo"; つぎに là "tiếp đó" đứng đầu vế sau.
+  - type: summary
+    points:
+      - vi: はじめて lần đầu · さいしょ đầu tiên · さいご cuối cùng · つぎ tiếp theo · まず trước tiên.
+      - vi: もうすぐ sắp · こんど lần này, lần tới · ずっと suốt, mãi.
+      - vi: "まず - つぎに - さいごに: khuôn kể quá trình."
+      - vi: そして · それから nối các bước.
+exercises:
+  - key: ja:exercise:order-sequence-hajimete
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-hajimete
+    prompt:
+      stem: Từ nào có nghĩa là “lần đầu tiên”?
+      stem_lang: vi
+      options:
+        - id: jli
+          text: はじめて
+          lang: ja
+        - id: tes
+          text: つぎ
+          lang: ja
+        - id: ory
+          text: もうすぐ
+          lang: ja
+        - id: bh7
+          text: さいご
+          lang: ja
+    answer:
+      correct_option_id: jli
+    explanation:
+      vi: はじめて là lần đầu tiên. さいご là cuối cùng, つぎ là tiếp theo, もうすぐ là sắp.
+    display_answer: はじめて
+  - key: ja:exercise:order-sequence-mousugu
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-mousugu
+    prompt:
+      stem: Từ nào có nghĩa là “sắp (chẳng bao lâu nữa)”?
+      stem_lang: vi
+      options:
+        - id: b6i
+          text: ずっと
+          lang: ja
+        - id: k21
+          text: いつも
+          lang: ja
+        - id: gge
+          text: もっと
+          lang: ja
+        - id: nvw
+          text: もうすぐ
+          lang: ja
+    answer:
+      correct_option_id: nvw
+    explanation:
+      vi: もうすぐ là sắp. ずっと là suốt, いつも là luôn luôn, もっと là hơn nữa.
+    display_answer: もうすぐ
+  - key: ja:exercise:order-sequence-mazu
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: ja:item:n5-u18-mazu
+    prompt:
+      audio_asset_id: null
+      fallback_text: まずてをあらいます。つぎにごはんをたべます。さいごにおちゃをのみます。
+      options:
+        - id: cyw
+          text: Trước tiên uống trà. Tiếp theo rửa tay. Cuối cùng ăn cơm.
+          lang: vi
+        - id: fi6
+          text: Trước tiên rửa tay. Tiếp theo ăn cơm. Cuối cùng uống trà.
+          lang: vi
+        - id: c7k
+          text: Trước tiên ăn cơm. Tiếp theo uống trà. Cuối cùng rửa tay.
+          lang: vi
+        - id: yok
+          text: Trước tiên rửa tay. Tiếp theo uống trà. Cuối cùng ăn cơm.
+          lang: vi
+    answer:
+      correct_option_id: fi6
+    explanation:
+      vi: まず - trước tiên; つぎに - tiếp theo; さいごに - cuối cùng.
+    display_answer: Trước tiên rửa tay. Tiếp theo ăn cơm. Cuối cùng uống trà.
+  - key: ja:exercise:order-sequence-saigo-fill
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-saigo
+    prompt:
+      template: "{{b1}}におちゃをのみます。 (Cuối cùng tôi uống trà.)"
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Từ chỉ bước cuối.
+        - Bắt đầu bằng さ - さいご.
+    answer:
+      blanks:
+        b1:
+          - さいご
+          - 最後
+    known_wrong:
+      - answer: さいしょ
+        feedback_vi: さいしょ là đầu tiên.
+        error_tag: order_word
+      - answer: つぎ
+        feedback_vi: つぎ là tiếp theo.
+        error_tag: order_word
+    explanation:
+      vi: さいご là cuối cùng. さいごに - cuối cùng thì.
+    display_answer: さいごにおちゃをのみます。
+  - key: ja:exercise:order-sequence-kondo
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 1
+    item: ja:item:n5-u18-kondo
+    prompt:
+      stem: Bạn muốn hẹn “Chủ nhật tuần tới”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: rmh
+          text: ずっとのにちようびにあいましょう。
+          lang: ja
+        - id: l04
+          text: こんどのにちようびにあいましょう。
+          lang: ja
+        - id: hur
+          text: さいごのにちようびにあいましょう。
+          lang: ja
+        - id: x2b
+          text: もうすぐのにちようびにあいましょう。
+          lang: ja
+    answer:
+      correct_option_id: l04
+    explanation:
+      vi: こんどの + N là "lần tới / N tới". さいご, ずっと, もうすぐ không đi với の trong nghĩa này.
+    display_answer: こんどのにちようびにあいましょう。
+  - key: ja:exercise:order-sequence-mazu-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-mazu
+    prompt:
+      template: "{{b1}}てをあらいます。つぎにごはんをたべます。 (Trước tiên tôi rửa tay. Tiếp theo ăn cơm.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - まず
+    known_wrong:
+      - answer: さいご
+        feedback_vi: さいご là cuối cùng.
+        error_tag: order_word
+    explanation:
+      vi: まず là trước tiên, mở đầu chuỗi các bước.
+    display_answer: まずてをあらいます。つぎにごはんをたべます。
+  - key: ja:exercise:order-sequence-hajimete-fill
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-hajimete
+    prompt:
+      template: "{{b1}}にほんへきました。 (Tôi đến Nhật lần đầu.)"
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - はじめて
+          - 初めて
+    known_wrong:
+      - answer: さいしょ
+        feedback_vi: さいしょ là đầu tiên (thứ tự); "lần đầu làm gì" dùng はじめて.
+        error_tag: order_word
+    explanation:
+      vi: はじめて - lần đầu tiên.
+    display_answer: はじめてにほんへきました。
+  - key: ja:exercise:order-sequence-mousugu-tr
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-mousugu
+    prompt:
+      source_text: Sắp đến kỳ nghỉ hè.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - もうすぐなつやすみです。
+        - もうすぐ夏休みです。
+        - もうすぐなつやすみになります。
+        - もうすぐなつやすみがはじまります。
+    known_wrong:
+      - answer: ずっとなつやすみです。
+        feedback_vi: ずっと là suốt; "sắp" là もうすぐ.
+        error_tag: adverb_choice
+    explanation:
+      vi: もうすぐ - sắp; なつやすみ - kỳ nghỉ hè.
+    display_answer: もうすぐなつやすみです。
+  - key: ja:exercise:order-sequence-tsugi-tr
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n5-u18-tsugi
+    prompt:
+      source_text: つぎのえきでおりて、まっすぐいきます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi xuống ở ga tiếp theo rồi đi thẳng.
+        - Xuống ở ga kế tiếp rồi đi thẳng.
+        - Xuống ở ga tiếp theo, sau đó đi thẳng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi lên ở ga tiếp theo rồi đi thẳng.
+        feedback_vi: おります là xuống; のります là lên.
+        error_tag: verb_choice
+    explanation:
+      vi: つぎの - tiếp theo; おりて (thể て) - xuống rồi; まっすぐ - thẳng.
+    display_answer: Tôi xuống ở ga tiếp theo rồi đi thẳng.
+  - key: ja:exercise:order-sequence-mazu-wb
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-mazu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Trước tiên rửa tay, tiếp theo ăn cơm, cuối cùng uống trà."'
+      tokens:
+        - id: t3
+          text: たべます。
+        - id: t1
+          text: まずてをあらいます。
+        - id: t2
+          text: つぎにごはんを
+        - id: t4
+          text: さいごにおちゃをのみます。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: "Theo thứ tự các bước: まず → つぎに → さいごに. Hai token giữa ghép lại thành câu hoàn chỉnh."
+    display_answer: まずてをあらいます。つぎにごはんをたべます。さいごにおちゃをのみます。
+  - key: ja:exercise:order-sequence-situ
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n5-u18-zutto
+    prompt:
+      stem: Bạn muốn nói “Tôi muốn sống ở đây mãi”. Từ nào hợp? ___ここにすみたいです。
+      stem_lang: vi
+      options:
+        - id: on0
+          text: まず
+          lang: ja
+        - id: hx8
+          text: ずっと
+          lang: ja
+        - id: ty4
+          text: もうすぐ
+          lang: ja
+        - id: rke
+          text: はじめて
+          lang: ja
+    answer:
+      correct_option_id: hx8
+    explanation:
+      vi: ずっと là suốt, mãi. もうすぐ là sắp, はじめて là lần đầu, まず là trước tiên.
+    display_answer: ずっと
