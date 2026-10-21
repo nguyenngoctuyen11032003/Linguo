@@ -1,0 +1,300 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w1-tourismus-reise-2
+order_index: 5
+level: b2
+title:
+  vi: Du lịch, chuyến đi và thủ tục (Tourismus und Reisen)
+objectives:
+  - vi: Hiểu và dùng từ về tour trọn gói, thủ tục sân bay, hải quan và bảo hiểm du lịch.
+  - vi: Nói về mùa du lịch và những vấn đề du lịch đại trà.
+  - vi: Dùng các động từ einchecken, umbuchen, verreisen và các tính từ ausgebucht, touristisch.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w1-ernaehrung-landwirtschaft-2
+items:
+  - item: de:item:b2w1-pauschalreise
+  - item: de:item:b2w1-reiseveranstalter
+  - item: de:item:b2w1-reisepass
+  - item: de:item:b2w1-zoll
+  - item: de:item:b2w1-zollkontrolle
+  - item: de:item:b2w1-handgepaeck
+  - item: de:item:b2w1-uebergepaeck
+  - item: de:item:b2w1-umbuchung
+  - item: de:item:b2w1-reiseruecktrittsversicherung
+  - item: de:item:b2w1-reisewarnung
+  - item: de:item:b2w1-massentourismus
+  - item: de:item:b2w1-nebensaison
+  - item: de:item:b2w1-hauptsaison
+  - item: de:item:b2w1-reiseleiter
+  - item: de:item:b2w1-fremdenverkehrsamt
+  - item: de:item:b2w1-ferienhaus
+  - item: de:item:b2w1-kreuzfahrt
+  - item: de:item:b2w1-flugticket
+  - item: de:item:b2w1-reisebericht
+  - item: de:item:b2w1-einchecken
+  - item: de:item:b2w1-umbuchen
+  - item: de:item:b2w1-verreisen
+  - item: de:item:b2w1-ausgebucht
+  - item: de:item:b2w1-touristisch
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn lập kế hoạch và bàn luận về một chuyến đi, xử lý các thủ tục đặt chỗ, đổi vé, hải quan và hiểu các cảnh báo du lịch.
+  - type: explain
+    text:
+      vi: "Chuyến đi trọn gói: die Pauschalreise, der Reiseveranstalter, die Kreuzfahrt, das Ferienhaus, der Reiseleiter, das Fremdenverkehrsamt (văn phòng du lịch), das Flugticket. Mùa: die Hauptsaison, die Nebensaison. Chúng đều giống cái, trừ der Reiseleiter; mùa du lịch dùng in der Hauptsaison."
+  - type: explain
+    text:
+      vi: "Thủ tục: der Reisepass (số nhiều die Reisepässe), der Zoll (hải quan, số ít), die Zollkontrolle, das Handgepäck, das Übergepäck, die Umbuchung, die Reiserücktrittsversicherung, die Reisewarnung (cảnh báo du lịch của chính phủ). Đọc kỹ điều khoản trước khi mua bảo hiểm du lịch."
+  - type: explain
+    text:
+      vi: "Động từ: einchecken (làm thủ tục lên máy bay hoặc nhận phòng: checkt ein), umbuchen, verreisen (đi xa, đi du lịch: ist verreist). Tính từ: ausgebucht (kín chỗ), touristisch. Ví dụ: Das Hotel ist im Sommer ausgebucht. Wir sind für zwei Wochen verreist. Massentourismus (du lịch đại trà) là chủ đề tranh luận về môi trường."
+  - type: deep_explain
+    text:
+      vi: "Verreisen không có tân ngữ và không cần giới từ: Wir verreisen im August. Muốn nói đi đâu thì dùng reisen nach: Wir reisen nach Italien. Der Reisebericht là bài tường thuật chuyến đi. Cẩn thận khi hỏi die Umbuchung: nhiều hãng thu phí đổi vé; hãy hỏi về Umbuchungsgebühr trước."
+  - type: example
+    target: Eine Pauschalreise ist oft günstiger als eine Einzelbuchung.
+    target_lang: de
+    translation:
+      vi: Chuyến du lịch trọn gói thường rẻ hơn đặt riêng lẻ.
+    note:
+      vi: die Pauschalreise = chuyến du lịch trọn gói.
+  - type: example
+    target: Der Reiseveranstalter haftet für Mängel an der Unterkunft.
+    target_lang: de
+    translation:
+      vi: Công ty tổ chức tour chịu trách nhiệm về lỗi của chỗ ở.
+    note:
+      vi: der Reiseveranstalter = công ty tổ chức tour.
+  - type: example
+    target: Ihr Reisepass muss noch sechs Monate gültig sein.
+    target_lang: de
+    translation:
+      vi: Hộ chiếu của ông/bà phải còn hiệu lực thêm sáu tháng.
+    note:
+      vi: der Reisepass = hộ chiếu.
+  - type: example
+    target: Am Zoll muss man bestimmte Waren anmelden.
+    target_lang: de
+    translation:
+      vi: Tại hải quan phải khai báo một số hàng hóa nhất định.
+    note:
+      vi: der Zoll = hải quan; thuế quan.
+  - type: common_mistake
+    wrong: Wir sind nach Spanien verreist.
+    right: Wir sind nach Spanien gereist.
+    target_lang: de
+    note:
+      vi: Verreisen không đi với đích đến; có đích đến thì dùng reisen nach.
+  - type: common_mistake
+    wrong: Ich habe meinen Flug umgebucht worden.
+    right: Mein Flug ist umgebucht worden.
+    target_lang: de
+    note:
+      vi: "Bị động Perfekt: ist umgebucht worden; chủ ngữ là Flug."
+  - type: summary
+    points:
+      - vi: die Pauschalreise, der Reiseveranstalter, die Kreuzfahrt, das Ferienhaus, der Reiseleiter, das Fremdenverkehrsamt, das Flugticket.
+      - vi: der Reisepass, der Zoll, die Zollkontrolle, das Handgepäck, das Übergepäck, die Umbuchung, die Reiserücktrittsversicherung, die Reisewarnung.
+      - vi: die Hauptsaison, die Nebensaison, der Massentourismus; einchecken, umbuchen, verreisen; ausgebucht, touristisch.
+exercises:
+  - key: de:exercise:b2w1l5-listen-reisebericht
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-reisebericht
+    prompt:
+      audio_asset_id: null
+      fallback_text: Sie hat einen Reisebericht für die Zeitung geschrieben.
+      options:
+        - { id: oxd, text: Cô ấy đã viết một bài tường thuật chuyến đi cho tờ báo., lang: vi }
+        - { id: bie, text: Bố mẹ tôi đi du ngoạn tàu biển ở Địa Trung Hải., lang: vi }
+        - { id: roa, text: Tôi đã mua vé máy bay trên mạng., lang: vi }
+        - { id: t3w, text: Công ty tổ chức tour chịu trách nhiệm về lỗi của chỗ ở., lang: vi }
+    answer:
+      correct_option_id: oxd
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cô ấy đã viết một bài tường thuật chuyến đi cho tờ báo.". Từ khoá là der Reisebericht (bài tường thuật chuyến đi); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cô ấy đã viết một bài tường thuật chuyến đi cho tờ báo.
+  - key: de:exercise:b2w1l5-mcq-vi-de-umbuchen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w1-umbuchen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "đổi đặt chỗ, đổi chuyến"?
+      stem_lang: vi
+      options:
+        - { id: ss0, text: die Nebensaison, lang: de }
+        - { id: x8x, text: umbuchen, lang: de }
+        - { id: q0t, text: die Umbuchung, lang: de }
+        - { id: izy, text: die Pauschalreise, lang: de }
+    answer:
+      correct_option_id: x8x
+    explanation:
+      vi: "umbuchen nghĩa là \"đổi đặt chỗ, đổi chuyến\". Ví dụ: Kann ich meinen Flug auf morgen umbuchen? (Tôi có thể đổi chuyến bay sang ngày mai không?)"
+    display_answer: umbuchen
+  - key: de:exercise:b2w1l5-mcq-de-vi-reiseleiter
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-reiseleiter
+    prompt:
+      stem: "\"der Reiseleiter\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: igw, text: hướng dẫn viên du lịch, lang: vi }
+        - { id: gcc, text: du lịch đại trà, lang: vi }
+        - { id: led, text: việc kiểm tra hải quan, lang: vi }
+        - { id: jdp, text: thuộc du lịch, lang: vi }
+    answer:
+      correct_option_id: igw
+    explanation:
+      vi: "der Reiseleiter nghĩa là \"hướng dẫn viên du lịch\". Ví dụ: Der Reiseleiter erklärte uns die Geschichte der Stadt. (Hướng dẫn viên giải thích cho chúng tôi lịch sử thành phố.)"
+    display_answer: hướng dẫn viên du lịch
+  - key: de:exercise:b2w1l5-mcq-artikel-ferienhaus
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-ferienhaus
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Ferienhaus\" (nhà nghỉ cho thuê): ___ Ferienhaus"
+      stem_lang: vi
+      options:
+        - { id: i7a, text: der, lang: de }
+        - { id: q8x, text: die, lang: de }
+        - { id: did, text: das, lang: de }
+        - { id: e5y, text: ein, lang: de }
+    answer:
+      correct_option_id: did
+    explanation:
+      vi: "Ferienhaus là danh từ giống trung (das): das Ferienhaus; số nhiều: die Ferienhäuser. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b2w1l5-tr-word-reiseveranstalter
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-reiseveranstalter
+    prompt:
+      source_text: công ty tổ chức tour (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Reiseveranstalter
+    known_wrong:
+      - answer: die Reiseveranstalter
+        feedback_vi: Reiseveranstalter là giống đực, nên là der Reiseveranstalter.
+        error_tag: article
+      - answer: das Reiseveranstalter
+        feedback_vi: Reiseveranstalter là giống đực, nên là der Reiseveranstalter.
+        error_tag: article
+    explanation:
+      vi: "\"công ty tổ chức tour\" trong tiếng Đức là der Reiseveranstalter (số nhiều: die Reiseveranstalter). Ví dụ: Der Reiseveranstalter haftet für Mängel an der Unterkunft."
+    display_answer: der Reiseveranstalter
+  - key: de:exercise:b2w1l5-tr-word-touristisch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-touristisch
+    prompt:
+      source_text: thuộc du lịch (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - touristisch
+    explanation:
+      vi: "\"thuộc du lịch\" trong tiếng Đức là touristisch. Ví dụ: Die Stadt hat viele touristische Attraktionen."
+    display_answer: touristisch
+  - key: de:exercise:b2w1l5-fill-plural-umbuchung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-umbuchung
+    prompt:
+      template: "Singular: die Umbuchung · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Umbuchungen
+    known_wrong:
+      - answer: Umbuchung
+        feedback_vi: Umbuchung là dạng số ít; số nhiều là Umbuchungen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Umbuchung là die Umbuchungen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Umbuchung · Plural: die Umbuchungen"
+  - key: de:exercise:b2w1l5-mcq-luecke-pauschalreise
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-pauschalreise
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Chuyến du lịch trọn gói thường rẻ hơn đặt riêng lẻ.\": Eine ___ ist oft günstiger als eine Einzelbuchung."
+      stem_lang: vi
+      options:
+        - { id: k6g, text: Reisebericht, lang: de }
+        - { id: cev, text: Pauschalreise, lang: de }
+        - { id: auf, text: Kreuzfahrt, lang: de }
+        - { id: jyu, text: Massentourismus, lang: de }
+    answer:
+      correct_option_id: cev
+    explanation:
+      vi: "Câu có nghĩa \"Chuyến du lịch trọn gói thường rẻ hơn đặt riêng lẻ.\" nên cần Pauschalreise (die Pauschalreise: chuyến du lịch trọn gói). Kreuzfahrt = chuyến du ngoạn bằng tàu biển; Reisebericht = bài tường thuật chuyến đi; Massentourismus = du lịch đại trà không đúng nghĩa của câu."
+    display_answer: Pauschalreise
+  - key: de:exercise:b2w1l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Weil das Hotel in der Hauptsaison ausgebucht ist, haben wir unsere Pauschalreise umgebucht.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Weil das Hotel in der Hauptsaison ausgebucht ist, haben wir unsere Pauschalreise umgebucht.
+        - Da das Hotel in der Hauptsaison ausgebucht ist, haben wir unsere Pauschalreise umgebucht.
+        - Wir haben unsere Pauschalreise umgebucht, weil das Hotel in der Hauptsaison ausgebucht ist.
+    explanation:
+      vi: "Gợi ý đáp án: Weil das Hotel in der Hauptsaison ausgebucht ist, haben wir unsere Pauschalreise umgebucht. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Weil das Hotel in der Hauptsaison ausgebucht ist, haben wir unsere Pauschalreise umgebucht.
+    item: de:item:b2w1-pauschalreise
+  - key: de:exercise:b2w1l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Das Auswärtige Amt hat eine Reisewarnung ausgesprochen, deshalb zahlt die Versicherung die Stornokosten.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bộ Ngoại giao đã đưa ra cảnh báo du lịch, vì vậy bảo hiểm trả chi phí hủy chuyến.
+        - Bộ Ngoại giao Liên bang đã phát đi cảnh báo du lịch, nên công ty bảo hiểm chi trả chi phí hủy.
+        - Vì Bộ Ngoại giao đã đưa ra cảnh báo du lịch, bảo hiểm sẽ trả các chi phí hủy chuyến.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das Auswärtige Amt hat eine Reisewarnung ausgesprochen, deshalb zahlt die Versicherung die Stornokosten.\" nghĩa là: Bộ Ngoại giao đã đưa ra cảnh báo du lịch, vì vậy bảo hiểm trả chi phí hủy chuyến. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Bộ Ngoại giao đã đưa ra cảnh báo du lịch, vì vậy bảo hiểm trả chi phí hủy chuyến.
+    item: de:item:b2w1-reisewarnung

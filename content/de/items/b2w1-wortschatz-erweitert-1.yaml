@@ -1,0 +1,2296 @@
+# Học liệu unit B2W1 "Mở rộng vốn từ B2 (1): y tế, đô thị, hạ tầng giao thông, nông nghiệp, du lịch, nhân khẩu học (Wortschatz erweitern 1)" (mở rộng vốn từ, chương trình B2).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:b2w1-gesundheitswesen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gesundheitswesen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ thống y tế
+      examples:
+        - target: Das deutsche Gesundheitswesen steht vor großen Herausforderungen.
+          translation:
+            vi: Hệ thống y tế Đức đứng trước những thách thức lớn.
+  - key: de:item:b2w1-gesundheitsreform
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gesundheitsreform, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cải cách y tế
+      examples:
+        - target: Die Gesundheitsreform soll die Kosten senken.
+          translation:
+            vi: Cuộc cải cách y tế nhằm giảm chi phí.
+  - key: de:item:b2w1-kassenpatient
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kassenpatient, -en / die Kassenpatientin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh nhân bảo hiểm công
+      examples:
+        - target: Als Kassenpatient muss man oft länger auf einen Termin warten.
+          translation:
+            vi: Là bệnh nhân bảo hiểm công, người ta thường phải chờ lịch hẹn lâu hơn.
+  - key: de:item:b2w1-privatpatient
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Privatpatient, -en / die Privatpatientin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh nhân bảo hiểm tư
+      examples:
+        - target: Der Privatpatient bekommt die Rechnung direkt nach Hause.
+          translation:
+            vi: Bệnh nhân bảo hiểm tư nhận hóa đơn trực tiếp tại nhà.
+  - key: de:item:b2w1-zuzahlung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zuzahlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản người bệnh trả thêm
+      examples:
+        - target: Für das Medikament ist eine Zuzahlung von fünf Euro fällig.
+          translation:
+            vi: Với loại thuốc này phải trả thêm năm euro.
+  - key: de:item:b2w1-vorsorgeuntersuchung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Vorsorgeuntersuchung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khám sàng lọc định kỳ
+      examples:
+        - target: Die Krankenkasse bezahlt die Vorsorgeuntersuchung einmal im Jahr.
+          translation:
+            vi: Quỹ bảo hiểm trả tiền khám định kỳ mỗi năm một lần.
+  - key: de:item:b2w1-frueherkennung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Früherkennung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc phát hiện sớm
+      examples:
+        - target: Bei Krebs ist die Früherkennung besonders wichtig.
+          translation:
+            vi: Với ung thư, việc phát hiện sớm đặc biệt quan trọng.
+  - key: de:item:b2w1-aerztemangel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ärztemangel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng thiếu bác sĩ
+      examples:
+        - target: Auf dem Land ist der Ärztemangel besonders groß.
+          translation:
+            vi: Ở nông thôn tình trạng thiếu bác sĩ đặc biệt lớn.
+  - key: de:item:b2w1-pflegenotstand
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Pflegenotstand (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khủng hoảng thiếu điều dưỡng
+      examples:
+        - target: Der Pflegenotstand belastet die Beschäftigten stark.
+          translation:
+            vi: Khủng hoảng thiếu điều dưỡng gây áp lực nặng cho nhân viên.
+  - key: de:item:b2w1-wirkstoff
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wirkstoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoạt chất
+      examples:
+        - target: Welcher Wirkstoff ist in diesem Mittel enthalten?
+          translation:
+            vi: Hoạt chất nào có trong loại thuốc này?
+  - key: de:item:b2w1-arzneimittel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Arzneimittel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: dược phẩm, thuốc
+      examples:
+        - target: Manche Arzneimittel dürfen nur in der Apotheke verkauft werden.
+          translation:
+            vi: Một số loại thuốc chỉ được bán ở hiệu thuốc.
+  - key: de:item:b2w1-beipackzettel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Beipackzettel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: tờ hướng dẫn trong hộp thuốc
+      examples:
+        - target: Lesen Sie vor der Einnahme den Beipackzettel sorgfältig.
+          translation:
+            vi: Hãy đọc kỹ tờ hướng dẫn trước khi dùng thuốc.
+  - key: de:item:b2w1-dosis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Dosis, Dosen
+      pos: danh từ
+    back:
+      meaning:
+        vi: liều lượng
+      examples:
+        - target: Überschreiten Sie nicht die empfohlene Dosis.
+          translation:
+            vi: Đừng vượt quá liều khuyến cáo.
+  - key: de:item:b2w1-ueberdosis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Überdosis, Überdosen
+      pos: danh từ
+    back:
+      meaning:
+        vi: quá liều
+      examples:
+        - target: Eine Überdosis kann gefährlich sein.
+          translation:
+            vi: Quá liều có thể nguy hiểm.
+  - key: de:item:b2w1-diagnostizieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: diagnostizieren
+      pos: động từ
+    back:
+      meaning:
+        vi: chẩn đoán
+      examples:
+        - target: Der Arzt hat eine Lungenentzündung diagnostiziert.
+          translation:
+            vi: Bác sĩ chẩn đoán viêm phổi.
+  - key: de:item:b2w1-therapieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: therapieren
+      pos: động từ
+    back:
+      meaning:
+        vi: điều trị, trị liệu
+      examples:
+        - target: Die Krankheit lässt sich gut therapieren.
+          translation:
+            vi: Căn bệnh này điều trị tốt được.
+  - key: de:item:b2w1-verabreichen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verabreichen
+      pos: động từ
+    back:
+      meaning:
+        vi: cho dùng thuốc, tiêm
+      examples:
+        - target: Die Pflegerin verabreicht dem Patienten die Tabletten.
+          translation:
+            vi: Điều dưỡng cho bệnh nhân uống thuốc.
+  - key: de:item:b2w1-vorbeugen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorbeugen
+      pos: động từ
+    back:
+      meaning:
+        vi: phòng ngừa (+ Dativ)
+      examples:
+        - target: Gesunde Ernährung beugt vielen Krankheiten vor.
+          translation:
+            vi: Ăn uống lành mạnh phòng ngừa nhiều bệnh.
+  - key: de:item:b2w1-heilen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: heilen
+      pos: động từ
+    back:
+      meaning:
+        vi: chữa khỏi; lành
+      examples:
+        - target: Die Wunde ist gut geheilt.
+          translation:
+            vi: Vết thương đã lành tốt.
+  - key: de:item:b2w1-lindern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: lindern
+      pos: động từ
+    back:
+      meaning:
+        vi: làm dịu, giảm bớt
+      examples:
+        - target: Die Salbe lindert den Juckreiz.
+          translation:
+            vi: Thuốc mỡ làm dịu cơn ngứa.
+  - key: de:item:b2w1-akut
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: akut
+      pos: tính từ
+    back:
+      meaning:
+        vi: cấp tính
+      examples:
+        - target: Es handelt sich um eine akute Entzündung.
+          translation:
+            vi: Đây là một chứng viêm cấp tính.
+  - key: de:item:b2w1-aerztlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ärztlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc bác sĩ, do bác sĩ
+      examples:
+        - target: Dafür brauchen Sie ein ärztliches Attest.
+          translation:
+            vi: Cho việc đó ông/bà cần giấy chứng nhận của bác sĩ.
+  - key: de:item:b2w1-rezeptpflichtig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: rezeptpflichtig
+      pos: tính từ
+    back:
+      meaning:
+        vi: phải có đơn thuốc
+      examples:
+        - target: Antibiotika sind in Deutschland rezeptpflichtig.
+          translation:
+            vi: Kháng sinh ở Đức phải có đơn thuốc.
+  - key: de:item:b2w1-gesetzlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gesetzlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: theo luật định
+      examples:
+        - target: Ich bin gesetzlich krankenversichert.
+          translation:
+            vi: Tôi có bảo hiểm y tế công.
+  - key: de:item:b2w1-stadtplanung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Stadtplanung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy hoạch đô thị
+      examples:
+        - target: Die Stadtplanung muss die Interessen vieler Gruppen berücksichtigen.
+          translation:
+            vi: Quy hoạch đô thị phải cân nhắc lợi ích của nhiều nhóm.
+  - key: de:item:b2w1-bebauungsplan
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bebauungsplan, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy hoạch xây dựng chi tiết
+      examples:
+        - target: Im Bebauungsplan steht, wie hoch gebaut werden darf.
+          translation:
+            vi: Trong quy hoạch xây dựng ghi rõ được xây cao bao nhiêu.
+  - key: de:item:b2w1-wohnungsnot
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wohnungsnot (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng thiếu nhà
+      examples:
+        - target: In Großstädten herrscht Wohnungsnot.
+          translation:
+            vi: Ở các thành phố lớn đang thiếu nhà ở.
+  - key: de:item:b2w1-mietpreisbremse
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mietpreisbremse (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quy định hạn chế tăng giá thuê
+      examples:
+        - target: Die Mietpreisbremse soll Mieter vor hohen Preisen schützen.
+          translation:
+            vi: Quy định hạn chế tăng giá thuê nhằm bảo vệ người thuê khỏi giá cao.
+  - key: de:item:b2w1-sozialwohnung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sozialwohnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà ở xã hội
+      examples:
+        - target: Für eine Sozialwohnung braucht man einen Berechtigungsschein.
+          translation:
+            vi: Để thuê nhà ở xã hội cần có giấy chứng nhận đủ điều kiện.
+  - key: de:item:b2w1-eigentumswohnung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Eigentumswohnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: căn hộ thuộc sở hữu cá nhân
+      examples:
+        - target: Sie haben eine Eigentumswohnung am Stadtrand gekauft.
+          translation:
+            vi: Họ đã mua một căn hộ ở ven thành phố.
+  - key: de:item:b2w1-eigenheim
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Eigenheim, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà riêng
+      examples:
+        - target: Viele Deutsche träumen vom Eigenheim.
+          translation:
+            vi: Nhiều người Đức mơ ước có nhà riêng.
+  - key: de:item:b2w1-immobilie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Immobilie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bất động sản
+      examples:
+        - target: Die Preise für Immobilien sind stark gestiegen.
+          translation:
+            vi: Giá bất động sản đã tăng mạnh.
+  - key: de:item:b2w1-makler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Makler, - / die Maklerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người môi giới
+      examples:
+        - target: Der Makler hat uns drei Wohnungen gezeigt.
+          translation:
+            vi: Người môi giới đã cho chúng tôi xem ba căn hộ.
+  - key: de:item:b2w1-baugenehmigung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Baugenehmigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy phép xây dựng
+      examples:
+        - target: Ohne Baugenehmigung darf man kein Haus bauen.
+          translation:
+            vi: Không có giấy phép xây dựng thì không được xây nhà.
+  - key: de:item:b2w1-fassade
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fassade, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: mặt tiền
+      examples:
+        - target: Die Fassade des Hauses wird neu gestrichen.
+          translation:
+            vi: Mặt tiền ngôi nhà sẽ được sơn lại.
+  - key: de:item:b2w1-grundriss
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Grundriss, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mặt bằng căn hộ
+      examples:
+        - target: Auf dem Grundriss sieht man alle Zimmer.
+          translation:
+            vi: Trên bản vẽ mặt bằng có thể thấy tất cả các phòng.
+  - key: de:item:b2w1-sanierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sanierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc cải tạo, tu sửa
+      examples:
+        - target: Die Sanierung des Altbaus dauert ein Jahr.
+          translation:
+            vi: Việc cải tạo tòa nhà cũ kéo dài một năm.
+  - key: de:item:b2w1-denkmalschutz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Denkmalschutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc bảo tồn di tích
+      examples:
+        - target: Wegen des Denkmalschutzes darf die Fassade nicht verändert werden.
+          translation:
+            vi: Vì bảo tồn di tích nên mặt tiền không được thay đổi.
+  - key: de:item:b2w1-stadtviertel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Stadtviertel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: khu phố
+      examples:
+        - target: In diesem Stadtviertel wohnen viele Studenten.
+          translation:
+            vi: Trong khu phố này có nhiều sinh viên sinh sống.
+  - key: de:item:b2w1-vorort
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Vorort, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vùng ngoại ô
+      examples:
+        - target: Wir wohnen in einem ruhigen Vorort.
+          translation:
+            vi: Chúng tôi sống ở một vùng ngoại ô yên tĩnh.
+  - key: de:item:b2w1-ballungsraum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ballungsraum, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vùng đô thị đông dân
+      examples:
+        - target: Im Ballungsraum Rhein-Ruhr leben viele Millionen Menschen.
+          translation:
+            vi: Trong vùng đô thị Rhein-Ruhr có hàng triệu người sinh sống.
+  - key: de:item:b2w1-gentrifizierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gentrifizierung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quá trình nâng cấp khu phố, đẩy người nghèo ra
+      examples:
+        - target: Die Gentrifizierung verändert das Viertel stark.
+          translation:
+            vi: Quá trình nâng cấp khu phố làm thay đổi mạnh khu này.
+  - key: de:item:b2w1-sanieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sanieren
+      pos: động từ
+    back:
+      meaning:
+        vi: cải tạo, tu sửa
+      examples:
+        - target: Der Vermieter will das Haus sanieren.
+          translation:
+            vi: Chủ nhà muốn cải tạo ngôi nhà.
+  - key: de:item:b2w1-bebauen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bebauen
+      pos: động từ
+    back:
+      meaning:
+        vi: xây dựng trên (khu đất)
+      examples:
+        - target: Das Grundstück darf nicht bebaut werden.
+          translation:
+            vi: Khu đất này không được xây dựng.
+  - key: de:item:b2w1-abreissen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: abreißen, reißt ab, riss ab, hat abgerissen
+      pos: động từ
+    back:
+      meaning:
+        vi: phá dỡ; xé
+      examples:
+        - target: Das alte Kino wurde abgerissen.
+          translation:
+            vi: Rạp chiếu phim cũ đã bị phá dỡ.
+  - key: de:item:b2w1-staedtisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: städtisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc thành phố
+      examples:
+        - target: Die städtische Bibliothek ist kostenlos.
+          translation:
+            vi: Thư viện thành phố miễn phí.
+  - key: de:item:b2w1-laendlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ländlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc nông thôn
+      examples:
+        - target: In ländlichen Regionen fehlt oft der Nahverkehr.
+          translation:
+            vi: Ở các vùng nông thôn thường thiếu giao thông công cộng.
+  - key: de:item:b2w1-barrierefrei
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: barrierefrei
+      pos: tính từ
+    back:
+      meaning:
+        vi: không có rào cản, thân thiện với người khuyết tật
+      examples:
+        - target: Die Wohnung ist barrierefrei und hat einen Aufzug.
+          translation:
+            vi: Căn hộ không có rào cản và có thang máy.
+  - key: de:item:b2w1-infrastruktur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Infrastruktur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạ tầng
+      examples:
+        - target: Die Infrastruktur in ländlichen Gebieten muss verbessert werden.
+          translation:
+            vi: Hạ tầng ở các vùng nông thôn cần được cải thiện.
+  - key: de:item:b2w1-strassennetz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Straßennetz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mạng lưới đường bộ
+      examples:
+        - target: Das Straßennetz ist in einem schlechten Zustand.
+          translation:
+            vi: Mạng lưới đường bộ trong tình trạng xấu.
+  - key: de:item:b2w1-schienennetz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Schienennetz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mạng lưới đường sắt
+      examples:
+        - target: Das Schienennetz wird seit Jahren modernisiert.
+          translation:
+            vi: Mạng lưới đường sắt được hiện đại hóa nhiều năm nay.
+  - key: de:item:b2w1-nahverkehr
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Nahverkehr (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giao thông công cộng cự ly gần
+      examples:
+        - target: Der Nahverkehr in der Region ist gut ausgebaut.
+          translation:
+            vi: Giao thông công cộng trong vùng được phát triển tốt.
+  - key: de:item:b2w1-fernverkehr
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fernverkehr (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: giao thông đường dài
+      examples:
+        - target: Im Fernverkehr gibt es oft Verspätungen.
+          translation:
+            vi: Ở giao thông đường dài thường có chậm trễ.
+  - key: de:item:b2w1-gueterverkehr
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Güterverkehr (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: vận tải hàng hóa
+      examples:
+        - target: Der Güterverkehr soll von der Straße auf die Schiene verlagert werden.
+          translation:
+            vi: Vận tải hàng hóa sẽ được chuyển từ đường bộ sang đường sắt.
+  - key: de:item:b2w1-maut
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Maut, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phí đường
+      examples:
+        - target: Auf dieser Strecke muss man Maut bezahlen.
+          translation:
+            vi: Trên tuyến đường này phải trả phí.
+  - key: de:item:b2w1-verkehrswende
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verkehrswende (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyển đổi giao thông bền vững
+      examples:
+        - target: Die Verkehrswende verlangt mehr Radwege und mehr Bahnen.
+          translation:
+            vi: Chuyển đổi giao thông đòi hỏi nhiều đường xe đạp và đường sắt hơn.
+  - key: de:item:b2w1-radschnellweg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Radschnellweg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường xe đạp tốc độ cao
+      examples:
+        - target: Auf dem Radschnellweg kommt man schnell in die Stadt.
+          translation:
+            vi: Trên đường xe đạp nhanh người ta vào thành phố rất nhanh.
+  - key: de:item:b2w1-ladesaeule
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Ladesäule, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trạm sạc
+      examples:
+        - target: In unserer Straße gibt es jetzt eine Ladesäule.
+          translation:
+            vi: Trên phố chúng tôi giờ có một trạm sạc.
+  - key: de:item:b2w1-elektroauto
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Elektroauto, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: ô tô điện
+      examples:
+        - target: Ein Elektroauto verursacht keine Abgase beim Fahren.
+          translation:
+            vi: Ô tô điện khi chạy không thải khí.
+  - key: de:item:b2w1-hybridfahrzeug
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Hybridfahrzeug, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe hybrid
+      examples:
+        - target: Das Hybridfahrzeug fährt mit Benzin und Strom.
+          translation:
+            vi: Xe hybrid chạy bằng xăng và điện.
+  - key: de:item:b2w1-tempolimit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Tempolimit, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: giới hạn tốc độ
+      examples:
+        - target: Auf der Autobahn gibt es kein generelles Tempolimit.
+          translation:
+            vi: Trên Autobahn không có giới hạn tốc độ chung.
+  - key: de:item:b2w1-verkehrsaufkommen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Verkehrsaufkommen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lưu lượng giao thông
+      examples:
+        - target: Zur Hauptverkehrszeit ist das Verkehrsaufkommen sehr hoch.
+          translation:
+            vi: Vào giờ cao điểm lưu lượng giao thông rất cao.
+  - key: de:item:b2w1-pendlerpauschale
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pendlerpauschale, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản khấu trừ thuế cho người đi làm xa
+      examples:
+        - target: Die Pendlerpauschale mindert die Steuerlast.
+          translation:
+            vi: Khoản khấu trừ cho người đi làm xa làm giảm gánh nặng thuế.
+  - key: de:item:b2w1-ausbau
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ausbau (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc mở rộng, mở mang
+      examples:
+        - target: Der Ausbau der Radwege wird vom Land gefördert.
+          translation:
+            vi: Việc mở rộng đường xe đạp được tiểu bang hỗ trợ.
+  - key: de:item:b2w1-sperrung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sperrung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc phong tỏa, cấm đường
+      examples:
+        - target: Wegen der Sperrung gibt es Umleitungen.
+          translation:
+            vi: Vì đường bị phong tỏa nên có lộ trình chuyển hướng.
+  - key: de:item:b2w1-engpass
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Engpass, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: điểm nghẽn, tình trạng thiếu hụt
+      examples:
+        - target: An der Brücke entsteht regelmäßig ein Engpass.
+          translation:
+            vi: Ở cây cầu thường xuyên xảy ra nghẽn.
+  - key: de:item:b2w1-parkgebuehr
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Parkgebühr, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phí đỗ xe
+      examples:
+        - target: Die Parkgebühren in der Innenstadt wurden erhöht.
+          translation:
+            vi: Phí đỗ xe ở trung tâm đã được tăng.
+  - key: de:item:b2w1-sperren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sperren
+      pos: động từ
+    back:
+      meaning:
+        vi: phong tỏa, cấm
+      examples:
+        - target: Die Polizei hat die Straße gesperrt.
+          translation:
+            vi: Cảnh sát đã phong tỏa con đường.
+  - key: de:item:b2w1-subventionieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: subventionieren
+      pos: động từ
+    back:
+      meaning:
+        vi: trợ cấp
+      examples:
+        - target: Der Staat subventioniert den Kauf von Elektroautos.
+          translation:
+            vi: Nhà nước trợ cấp việc mua ô tô điện.
+  - key: de:item:b2w1-ueberlastet
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überlastet
+      pos: tính từ
+    back:
+      meaning:
+        vi: quá tải
+      examples:
+        - target: Das Straßennetz ist in der Stadt überlastet.
+          translation:
+            vi: Mạng lưới đường trong thành phố bị quá tải.
+  - key: de:item:b2w1-klimafreundlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: klimafreundlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thân thiện với khí hậu
+      examples:
+        - target: Der Zug ist ein klimafreundliches Verkehrsmittel.
+          translation:
+            vi: Tàu hỏa là phương tiện thân thiện với khí hậu.
+  - key: de:item:b2w1-lebensmittelindustrie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lebensmittelindustrie (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngành công nghiệp thực phẩm
+      examples:
+        - target: In der Lebensmittelindustrie arbeiten viele Menschen.
+          translation:
+            vi: Nhiều người làm việc trong ngành công nghiệp thực phẩm.
+  - key: de:item:b2w1-massentierhaltung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Massentierhaltung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chăn nuôi quy mô công nghiệp
+      examples:
+        - target: Viele Menschen kritisieren die Massentierhaltung.
+          translation:
+            vi: Nhiều người chỉ trích việc chăn nuôi công nghiệp.
+  - key: de:item:b2w1-oekolandbau
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ökolandbau (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: canh tác hữu cơ
+      examples:
+        - target: Der Ökolandbau verzichtet auf chemische Pflanzenschutzmittel.
+          translation:
+            vi: Canh tác hữu cơ không dùng thuốc bảo vệ thực vật hóa học.
+  - key: de:item:b2w1-pflanzenschutzmittel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Pflanzenschutzmittel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuốc bảo vệ thực vật
+      examples:
+        - target: Der Einsatz von Pflanzenschutzmitteln ist umstritten.
+          translation:
+            vi: Việc sử dụng thuốc bảo vệ thực vật gây tranh cãi.
+  - key: de:item:b2w1-duenger
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Dünger, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: phân bón
+      examples:
+        - target: Zu viel Dünger belastet das Grundwasser.
+          translation:
+            vi: Quá nhiều phân bón gây hại cho nước ngầm.
+  - key: de:item:b2w1-ernte
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Ernte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vụ thu hoạch
+      examples:
+        - target: Wegen der Dürre war die Ernte schlecht.
+          translation:
+            vi: Vì hạn hán, vụ thu hoạch kém.
+  - key: de:item:b2w1-anbau
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Anbau (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc trồng trọt
+      examples:
+        - target: Der Anbau von Mais ist in dieser Region weit verbreitet.
+          translation:
+            vi: Việc trồng ngô rất phổ biến ở vùng này.
+  - key: de:item:b2w1-saatgut
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Saatgut (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạt giống
+      examples:
+        - target: Die Bauern kaufen jedes Jahr neues Saatgut.
+          translation:
+            vi: Nông dân mua hạt giống mới mỗi năm.
+  - key: de:item:b2w1-viehzucht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Viehzucht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chăn nuôi gia súc
+      examples:
+        - target: Im Süden ist die Viehzucht sehr wichtig.
+          translation:
+            vi: Ở miền Nam chăn nuôi gia súc rất quan trọng.
+  - key: de:item:b2w1-lebensmittelverschwendung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lebensmittelverschwendung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc lãng phí thực phẩm
+      examples:
+        - target: Die Lebensmittelverschwendung ist ein großes Problem.
+          translation:
+            vi: Lãng phí thực phẩm là một vấn đề lớn.
+  - key: de:item:b2w1-mindesthaltbarkeitsdatum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Mindesthaltbarkeitsdatum, Mindesthaltbarkeitsdaten
+      pos: danh từ
+    back:
+      meaning:
+        vi: hạn dùng tốt nhất trước ngày
+      examples:
+        - target: Das Mindesthaltbarkeitsdatum steht auf der Verpackung.
+          translation:
+            vi: Hạn dùng tốt nhất được ghi trên bao bì.
+  - key: de:item:b2w1-guetesiegel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gütesiegel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhãn chất lượng
+      examples:
+        - target: Das Gütesiegel garantiert bestimmte Standards.
+          translation:
+            vi: Nhãn chất lượng bảo đảm một số tiêu chuẩn nhất định.
+  - key: de:item:b2w1-herkunftsangabe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Herkunftsangabe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông tin nguồn gốc
+      examples:
+        - target: Auf dem Etikett fehlt die Herkunftsangabe.
+          translation:
+            vi: Trên nhãn thiếu thông tin nguồn gốc.
+  - key: de:item:b2w1-tierwohl
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Tierwohl (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: phúc lợi động vật
+      examples:
+        - target: Das Tierwohl spielt beim Fleischkauf eine immer größere Rolle.
+          translation:
+            vi: Phúc lợi động vật đóng vai trò ngày càng lớn khi mua thịt.
+  - key: de:item:b2w1-fleischkonsum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fleischkonsum (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: mức tiêu thụ thịt
+      examples:
+        - target: Der Fleischkonsum ist in den letzten Jahren leicht gesunken.
+          translation:
+            vi: Mức tiêu thụ thịt đã giảm nhẹ trong những năm gần đây.
+  - key: de:item:b2w1-ernaehrungsweise
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Ernährungsweise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ ăn, cách ăn uống
+      examples:
+        - target: Eine pflanzliche Ernährungsweise ist gut für das Klima.
+          translation:
+            vi: Chế độ ăn thực vật tốt cho khí hậu.
+  - key: de:item:b2w1-nahrungsergaenzungsmittel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Nahrungsergänzungsmittel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực phẩm chức năng
+      examples:
+        - target: Ein Nahrungsergänzungsmittel ersetzt keine ausgewogene Ernährung.
+          translation:
+            vi: Thực phẩm chức năng không thay thế được chế độ ăn cân bằng.
+  - key: de:item:b2w1-anbauen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anbauen, baut an, baute an, hat angebaut
+      pos: động từ
+    back:
+      meaning:
+        vi: trồng trọt, canh tác
+      examples:
+        - target: Die Landwirte bauen hier hauptsächlich Weizen an.
+          translation:
+            vi: Nông dân ở đây chủ yếu trồng lúa mì.
+  - key: de:item:b2w1-duengen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: düngen
+      pos: động từ
+    back:
+      meaning:
+        vi: bón phân
+      examples:
+        - target: Die Felder werden im Frühjahr gedüngt.
+          translation:
+            vi: Các cánh đồng được bón phân vào mùa xuân.
+  - key: de:item:b2w1-zuechten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: züchten
+      pos: động từ
+    back:
+      meaning:
+        vi: nuôi, lai tạo
+      examples:
+        - target: Er züchtet seit Jahren seltene Rosen.
+          translation:
+            vi: Anh ấy lai tạo hoa hồng quý hiếm nhiều năm nay.
+  - key: de:item:b2w1-verarbeiten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verarbeiten
+      pos: động từ
+    back:
+      meaning:
+        vi: chế biến, xử lý
+      examples:
+        - target: Das Obst wird zu Marmelade verarbeitet.
+          translation:
+            vi: Trái cây được chế biến thành mứt.
+  - key: de:item:b2w1-konservieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: konservieren
+      pos: động từ
+    back:
+      meaning:
+        vi: bảo quản
+      examples:
+        - target: Früher wurde Fleisch durch Salz konserviert.
+          translation:
+            vi: Trước đây thịt được bảo quản bằng muối.
+  - key: de:item:b2w1-konventionell
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: konventionell
+      pos: tính từ
+    back:
+      meaning:
+        vi: thông thường, không hữu cơ
+      examples:
+        - target: Konventionell erzeugte Lebensmittel sind meist billiger.
+          translation:
+            vi: Thực phẩm sản xuất thông thường thường rẻ hơn.
+  - key: de:item:b2w1-oekologisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ökologisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: hữu cơ, sinh thái
+      examples:
+        - target: Der Betrieb arbeitet ökologisch.
+          translation:
+            vi: Doanh nghiệp này hoạt động theo hướng hữu cơ.
+  - key: de:item:b2w1-pauschalreise
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pauschalreise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến du lịch trọn gói
+      examples:
+        - target: Eine Pauschalreise ist oft günstiger als eine Einzelbuchung.
+          translation:
+            vi: Chuyến du lịch trọn gói thường rẻ hơn đặt riêng lẻ.
+  - key: de:item:b2w1-reiseveranstalter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Reiseveranstalter, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: công ty tổ chức tour
+      examples:
+        - target: Der Reiseveranstalter haftet für Mängel an der Unterkunft.
+          translation:
+            vi: Công ty tổ chức tour chịu trách nhiệm về lỗi của chỗ ở.
+  - key: de:item:b2w1-reisepass
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Reisepass, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hộ chiếu
+      examples:
+        - target: Ihr Reisepass muss noch sechs Monate gültig sein.
+          translation:
+            vi: Hộ chiếu của ông/bà phải còn hiệu lực thêm sáu tháng.
+  - key: de:item:b2w1-zoll
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zoll (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hải quan; thuế quan
+      examples:
+        - target: Am Zoll muss man bestimmte Waren anmelden.
+          translation:
+            vi: Tại hải quan phải khai báo một số hàng hóa nhất định.
+  - key: de:item:b2w1-zollkontrolle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zollkontrolle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc kiểm tra hải quan
+      examples:
+        - target: Bei der Zollkontrolle wurde mein Koffer geöffnet.
+          translation:
+            vi: Trong lúc kiểm tra hải quan vali của tôi bị mở ra.
+  - key: de:item:b2w1-handgepaeck
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Handgepäck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành lý xách tay
+      examples:
+        - target: Ihr Handgepäck darf höchstens acht Kilo wiegen.
+          translation:
+            vi: Hành lý xách tay của ông/bà chỉ được nặng tối đa tám ký.
+  - key: de:item:b2w1-uebergepaeck
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Übergepäck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hành lý quá cước
+      examples:
+        - target: Für Übergepäck muss man extra bezahlen.
+          translation:
+            vi: Hành lý quá cước phải trả thêm tiền.
+  - key: de:item:b2w1-umbuchung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Umbuchung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc đổi chuyến, đổi đặt chỗ
+      examples:
+        - target: Eine Umbuchung kostet 50 Euro.
+          translation:
+            vi: Việc đổi chuyến tốn 50 euro.
+  - key: de:item:b2w1-reiseruecktrittsversicherung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Reiserücktrittsversicherung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo hiểm hủy chuyến đi
+      examples:
+        - target: Die Reiserücktrittsversicherung zahlt bei Krankheit.
+          translation:
+            vi: Bảo hiểm hủy chuyến chi trả khi bị bệnh.
+  - key: de:item:b2w1-reisewarnung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Reisewarnung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảnh báo du lịch
+      examples:
+        - target: Für das Land gilt eine Reisewarnung.
+          translation:
+            vi: Đối với quốc gia này có cảnh báo du lịch.
+  - key: de:item:b2w1-massentourismus
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Massentourismus (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: du lịch đại trà
+      examples:
+        - target: Der Massentourismus belastet die Umwelt.
+          translation:
+            vi: Du lịch đại trà gây áp lực lên môi trường.
+  - key: de:item:b2w1-nebensaison
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Nebensaison, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa thấp điểm
+      examples:
+        - target: In der Nebensaison sind die Preise niedriger.
+          translation:
+            vi: Vào mùa thấp điểm giá rẻ hơn.
+  - key: de:item:b2w1-hauptsaison
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Hauptsaison, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùa cao điểm
+      examples:
+        - target: In der Hauptsaison sind die Strände überfüllt.
+          translation:
+            vi: Vào mùa cao điểm bãi biển quá đông.
+  - key: de:item:b2w1-reiseleiter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Reiseleiter, - / die Reiseleiterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: hướng dẫn viên du lịch
+      examples:
+        - target: Der Reiseleiter erklärte uns die Geschichte der Stadt.
+          translation:
+            vi: Hướng dẫn viên giải thích cho chúng tôi lịch sử thành phố.
+  - key: de:item:b2w1-fremdenverkehrsamt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Fremdenverkehrsamt, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn phòng du lịch
+      examples:
+        - target: Im Fremdenverkehrsamt bekommt man Stadtpläne.
+          translation:
+            vi: Ở văn phòng du lịch người ta nhận được bản đồ thành phố.
+  - key: de:item:b2w1-ferienhaus
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Ferienhaus, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà nghỉ cho thuê
+      examples:
+        - target: Wir haben ein Ferienhaus am Meer gemietet.
+          translation:
+            vi: Chúng tôi đã thuê một nhà nghỉ bên bờ biển.
+  - key: de:item:b2w1-kreuzfahrt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kreuzfahrt, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyến du ngoạn bằng tàu biển
+      examples:
+        - target: Meine Eltern machen eine Kreuzfahrt im Mittelmeer.
+          translation:
+            vi: Bố mẹ tôi đi du ngoạn tàu biển ở Địa Trung Hải.
+  - key: de:item:b2w1-flugticket
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Flugticket, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: vé máy bay
+      examples:
+        - target: Das Flugticket habe ich online gekauft.
+          translation:
+            vi: Tôi đã mua vé máy bay trên mạng.
+  - key: de:item:b2w1-reisebericht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Reisebericht, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài tường thuật chuyến đi
+      examples:
+        - target: Sie hat einen Reisebericht für die Zeitung geschrieben.
+          translation:
+            vi: Cô ấy đã viết một bài tường thuật chuyến đi cho tờ báo.
+  - key: de:item:b2w1-einchecken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: einchecken, checkt ein, checkte ein, hat eingecheckt
+      pos: động từ
+    back:
+      meaning:
+        vi: làm thủ tục (lên máy bay, nhận phòng)
+      examples:
+        - target: Wir müssen zwei Stunden vorher einchecken.
+          translation:
+            vi: Chúng tôi phải làm thủ tục trước hai tiếng.
+  - key: de:item:b2w1-umbuchen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umbuchen
+      pos: động từ
+    back:
+      meaning:
+        vi: đổi đặt chỗ, đổi chuyến
+      examples:
+        - target: Kann ich meinen Flug auf morgen umbuchen?
+          translation:
+            vi: Tôi có thể đổi chuyến bay sang ngày mai không?
+  - key: de:item:b2w1-verreisen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verreisen, verreist, verreiste, ist verreist
+      pos: động từ
+    back:
+      meaning:
+        vi: đi xa, đi du lịch
+      examples:
+        - target: Im Sommer verreisen wir immer für zwei Wochen.
+          translation:
+            vi: Mùa hè chúng tôi luôn đi xa hai tuần.
+  - key: de:item:b2w1-ausgebucht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausgebucht
+      pos: tính từ
+    back:
+      meaning:
+        vi: kín chỗ, hết chỗ
+      examples:
+        - target: Das Hotel ist im August ausgebucht.
+          translation:
+            vi: Khách sạn kín chỗ vào tháng Tám.
+  - key: de:item:b2w1-touristisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: touristisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc du lịch
+      examples:
+        - target: Die Stadt hat viele touristische Attraktionen.
+          translation:
+            vi: Thành phố có nhiều điểm thu hút du lịch.
+  - key: de:item:b2w1-bevoelkerung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bevölkerung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: dân số, dân cư
+      examples:
+        - target: Die Bevölkerung Deutschlands wächst nur noch durch Zuwanderung.
+          translation:
+            vi: Dân số nước Đức chỉ còn tăng nhờ nhập cư.
+  - key: de:item:b2w1-bevoelkerungsrueckgang
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bevölkerungsrückgang (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự giảm dân số
+      examples:
+        - target: Der Bevölkerungsrückgang betrifft vor allem den Osten.
+          translation:
+            vi: Việc giảm dân số chủ yếu ảnh hưởng đến miền Đông.
+  - key: de:item:b2w1-geburtenrate
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Geburtenrate, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tỷ lệ sinh
+      examples:
+        - target: Die Geburtenrate liegt unter dem europäischen Durchschnitt.
+          translation:
+            vi: Tỷ lệ sinh thấp hơn mức trung bình châu Âu.
+  - key: de:item:b2w1-lebenserwartung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lebenserwartung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tuổi thọ trung bình
+      examples:
+        - target: Die Lebenserwartung ist in den letzten Jahrzehnten gestiegen.
+          translation:
+            vi: Tuổi thọ trung bình đã tăng trong những thập kỷ gần đây.
+  - key: de:item:b2w1-altersstruktur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Altersstruktur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ cấu độ tuổi
+      examples:
+        - target: Die Altersstruktur der Gesellschaft verändert sich.
+          translation:
+            vi: Cơ cấu độ tuổi của xã hội đang thay đổi.
+  - key: de:item:b2w1-ueberalterung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Überalterung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự già hóa quá mức
+      examples:
+        - target: Die Überalterung stellt das Rentensystem vor Probleme.
+          translation:
+            vi: Sự già hóa quá mức đặt hệ thống lương hưu trước nhiều vấn đề.
+  - key: de:item:b2w1-rentensystem
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Rentensystem, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ thống lương hưu
+      examples:
+        - target: Das Rentensystem muss reformiert werden.
+          translation:
+            vi: Hệ thống lương hưu cần được cải cách.
+  - key: de:item:b2w1-generationenvertrag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Generationenvertrag (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hợp đồng thế hệ (nguyên tắc lương hưu)
+      examples:
+        - target: Der Generationenvertrag ist die Grundlage der Rente.
+          translation:
+            vi: Hợp đồng thế hệ là nền tảng của lương hưu.
+  - key: de:item:b2w1-altersvorsorge
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Altersvorsorge (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc chuẩn bị cho tuổi già
+      examples:
+        - target: Für die Altersvorsorge sollte man früh sparen.
+          translation:
+            vi: Để chuẩn bị cho tuổi già nên tiết kiệm sớm.
+  - key: de:item:b2w1-pflegeversicherung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pflegeversicherung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bảo hiểm chăm sóc dài hạn
+      examples:
+        - target: Die Pflegeversicherung zahlt einen Teil der Pflegekosten.
+          translation:
+            vi: Bảo hiểm chăm sóc dài hạn trả một phần chi phí chăm sóc.
+  - key: de:item:b2w1-sozialhilfe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sozialhilfe (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trợ cấp xã hội
+      examples:
+        - target: Wer kein Einkommen hat, kann Sozialhilfe beantragen.
+          translation:
+            vi: Ai không có thu nhập có thể xin trợ cấp xã hội.
+  - key: de:item:b2w1-mindestlohn
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Mindestlohn, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mức lương tối thiểu
+      examples:
+        - target: Der Mindestlohn wird regelmäßig angepasst.
+          translation:
+            vi: Mức lương tối thiểu được điều chỉnh định kỳ.
+  - key: de:item:b2w1-grundsicherung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Grundsicherung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản bảo đảm thu nhập cơ bản
+      examples:
+        - target: Die Grundsicherung sichert das Existenzminimum.
+          translation:
+            vi: Khoản bảo đảm thu nhập cơ bản đảm bảo mức sống tối thiểu.
+  - key: de:item:b2w1-landflucht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Landflucht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng bỏ nông thôn lên thành phố
+      examples:
+        - target: Die Landflucht führt zu leeren Dörfern.
+          translation:
+            vi: Tình trạng bỏ nông thôn dẫn đến những ngôi làng trống.
+  - key: de:item:b2w1-sozialleistung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sozialleistung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản phúc lợi xã hội
+      examples:
+        - target: Zu den Sozialleistungen gehören Kindergeld und Wohngeld.
+          translation:
+            vi: Các khoản phúc lợi xã hội gồm trợ cấp trẻ em và trợ cấp nhà ở.
+  - key: de:item:b2w1-armutsgefaehrdung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Armutsgefährdung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguy cơ nghèo
+      examples:
+        - target: Die Armutsgefährdung ist bei Alleinerziehenden besonders hoch.
+          translation:
+            vi: Nguy cơ nghèo đặc biệt cao ở những người nuôi con một mình.
+  - key: de:item:b2w1-erwerbstaetigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erwerbstätigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc có việc làm, hoạt động lao động
+      examples:
+        - target: Die Erwerbstätigkeit von Frauen hat zugenommen.
+          translation:
+            vi: Tỷ lệ phụ nữ có việc làm đã tăng.
+  - key: de:item:b2w1-altern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: altern
+      pos: động từ
+    back:
+      meaning:
+        vi: già đi
+      examples:
+        - target: Die Gesellschaft altert.
+          translation:
+            vi: Xã hội đang già đi.
+  - key: de:item:b2w1-schrumpfen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: schrumpfen
+      pos: động từ
+    back:
+      meaning:
+        vi: thu hẹp, co lại
+      examples:
+        - target: Die Einwohnerzahl der Stadt schrumpft.
+          translation:
+            vi: Số dân của thành phố đang giảm.
+  - key: de:item:b2w1-abwandern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: abwandern
+      pos: động từ
+    back:
+      meaning:
+        vi: di cư đi nơi khác
+      examples:
+        - target: Viele Fachkräfte wandern ins Ausland ab.
+          translation:
+            vi: Nhiều lao động lành nghề di cư ra nước ngoài.
+  - key: de:item:b2w1-versorgen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: versorgen
+      pos: động từ
+    back:
+      meaning:
+        vi: chu cấp, chăm sóc
+      examples:
+        - target: Die Familie muss die Großeltern versorgen.
+          translation:
+            vi: Gia đình phải chăm lo cho ông bà.
+  - key: de:item:b2w1-absichern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: absichern
+      pos: động từ
+    back:
+      meaning:
+        vi: bảo đảm, bảo vệ về mặt tài chính
+      examples:
+        - target: Eine Versicherung soll das Risiko absichern.
+          translation:
+            vi: Một bảo hiểm sẽ bảo đảm rủi ro.
+  - key: de:item:b2w1-demografisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: demografisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc nhân khẩu học
+      examples:
+        - target: Der demografische Wandel stellt die Politik vor Aufgaben.
+          translation:
+            vi: Sự thay đổi nhân khẩu đặt chính trị trước nhiều nhiệm vụ.
+  - key: de:item:b2w1-ueberaltert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überaltert
+      pos: tính từ
+    back:
+      meaning:
+        vi: già hóa quá mức
+      examples:
+        - target: Viele Dörfer sind überaltert.
+          translation:
+            vi: Nhiều ngôi làng có dân số già hóa quá mức.

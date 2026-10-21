@@ -1,0 +1,300 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w1-ernaehrung-landwirtschaft-2
+order_index: 4
+level: b2
+title:
+  vi: Nông nghiệp, thực phẩm và tiêu dùng có trách nhiệm (Landwirtschaft und Lebensmittel)
+objectives:
+  - vi: Bàn luận về canh tác, chăn nuôi, nhãn thực phẩm và lãng phí thức ăn.
+  - vi: "Hiểu nhãn: Gütesiegel, Mindesthaltbarkeitsdatum, Herkunftsangabe."
+  - vi: Dùng các động từ anbauen, düngen, züchten, verarbeiten, konservieren.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w1-verkehr-infrastruktur
+items:
+  - item: de:item:b2w1-lebensmittelindustrie
+  - item: de:item:b2w1-massentierhaltung
+  - item: de:item:b2w1-oekolandbau
+  - item: de:item:b2w1-pflanzenschutzmittel
+  - item: de:item:b2w1-duenger
+  - item: de:item:b2w1-ernte
+  - item: de:item:b2w1-anbau
+  - item: de:item:b2w1-saatgut
+  - item: de:item:b2w1-viehzucht
+  - item: de:item:b2w1-lebensmittelverschwendung
+  - item: de:item:b2w1-mindesthaltbarkeitsdatum
+  - item: de:item:b2w1-guetesiegel
+  - item: de:item:b2w1-herkunftsangabe
+  - item: de:item:b2w1-tierwohl
+  - item: de:item:b2w1-fleischkonsum
+  - item: de:item:b2w1-ernaehrungsweise
+  - item: de:item:b2w1-nahrungsergaenzungsmittel
+  - item: de:item:b2w1-anbauen
+  - item: de:item:b2w1-duengen
+  - item: de:item:b2w1-zuechten
+  - item: de:item:b2w1-verarbeiten
+  - item: de:item:b2w1-konservieren
+  - item: de:item:b2w1-konventionell
+  - item: de:item:b2w1-oekologisch
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thảo luận được về nông nghiệp, chất lượng và nguồn gốc thực phẩm, nêu quan điểm về chăn nuôi và tiêu dùng có trách nhiệm.
+  - type: explain
+    text:
+      vi: "Nông nghiệp: der Anbau (trồng trọt), die Ernte, das Saatgut, der Dünger, das Pflanzenschutzmittel, der Ökolandbau (canh tác hữu cơ), die Viehzucht (chăn nuôi), die Massentierhaltung (chăn nuôi công nghiệp). Tính từ: konventionell (truyền thống, không hữu cơ) và ökologisch (hữu cơ, sinh thái)."
+  - type: explain
+    text:
+      vi: "Thực phẩm và nhãn: die Lebensmittelindustrie, das Gütesiegel (nhãn chất lượng), die Herkunftsangabe (nhãn nguồn gốc), das Mindesthaltbarkeitsdatum (hạn dùng tốt nhất trước ngày), die Lebensmittelverschwendung (lãng phí thực phẩm), das Tierwohl (phúc lợi động vật), der Fleischkonsum, die Ernährungsweise, das Nahrungsergänzungsmittel."
+  - type: explain
+    text:
+      vi: "Động từ: anbauen (trồng trọt: baut an), düngen (bón phân), züchten (nuôi, lai tạo), verarbeiten (chế biến), konservieren (bảo quản). Ví dụ: Die Landwirte bauen vor allem Getreide an. Das Obst wird zu Marmelade verarbeitet. Das Gemüse wird durch Einfrieren konserviert."
+  - type: deep_explain
+    text:
+      vi: "Mindesthaltbarkeitsdatum không phải ngày hết hạn: nhiều thực phẩm vẫn ăn được sau ngày này nếu được bảo quản tốt, khác với Verbrauchsdatum (hạn sử dụng, ví dụ với thịt sống). Tierwohl là chủ đề tranh luận lớn ở Đức: nhiều siêu thị có nhãn về điều kiện nuôi. Nahrungsergänzungsmittel thường dùng số nhiều: die Nahrungsergänzungsmittel."
+  - type: example
+    target: In der Lebensmittelindustrie arbeiten viele Menschen.
+    target_lang: de
+    translation:
+      vi: Nhiều người làm việc trong ngành công nghiệp thực phẩm.
+    note:
+      vi: die Lebensmittelindustrie = ngành công nghiệp thực phẩm.
+  - type: example
+    target: Viele Menschen kritisieren die Massentierhaltung.
+    target_lang: de
+    translation:
+      vi: Nhiều người chỉ trích việc chăn nuôi công nghiệp.
+    note:
+      vi: die Massentierhaltung = chăn nuôi quy mô công nghiệp.
+  - type: example
+    target: Der Ökolandbau verzichtet auf chemische Pflanzenschutzmittel.
+    target_lang: de
+    translation:
+      vi: Canh tác hữu cơ không dùng thuốc bảo vệ thực vật hóa học.
+    note:
+      vi: der Ökolandbau = canh tác hữu cơ.
+  - type: example
+    target: Der Einsatz von Pflanzenschutzmitteln ist umstritten.
+    target_lang: de
+    translation:
+      vi: Việc sử dụng thuốc bảo vệ thực vật gây tranh cãi.
+    note:
+      vi: das Pflanzenschutzmittel = thuốc bảo vệ thực vật.
+  - type: common_mistake
+    wrong: Das Mindesthaltbarkeitsdatum ist abgelaufen, also muss ich den Joghurt sofort wegwerfen.
+    right: Das Mindesthaltbarkeitsdatum ist abgelaufen, aber der Joghurt ist oft noch gut.
+    target_lang: de
+    note:
+      vi: Mindesthaltbarkeitsdatum chỉ là hạn tốt nhất, không có nghĩa thực phẩm lập tức nguy hiểm.
+  - type: common_mistake
+    wrong: Die Bauern züchten Weizen.
+    right: Die Bauern bauen Weizen an.
+    target_lang: de
+    note:
+      vi: Züchten dùng cho động vật hoặc giống cây; trồng lúa mì là anbauen.
+  - type: summary
+    points:
+      - vi: der Anbau, die Ernte, das Saatgut, der Dünger, das Pflanzenschutzmittel, der Ökolandbau, die Viehzucht, die Massentierhaltung.
+      - vi: die Lebensmittelindustrie, das Gütesiegel, die Herkunftsangabe, das Mindesthaltbarkeitsdatum, die Lebensmittelverschwendung, das Tierwohl.
+      - vi: anbauen, düngen, züchten, verarbeiten, konservieren; konventionell, ökologisch; der Fleischkonsum, die Ernährungsweise.
+exercises:
+  - key: de:exercise:b2w1l4-listen-duengen
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-duengen
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Felder werden im Frühjahr gedüngt.
+      options:
+        - { id: gpc, text: Mức tiêu thụ thịt đã giảm nhẹ trong những năm gần đây., lang: vi }
+        - { id: vs8, text: Anh ấy lai tạo hoa hồng quý hiếm nhiều năm nay., lang: vi }
+        - { id: wma, text: Trên nhãn thiếu thông tin nguồn gốc., lang: vi }
+        - { id: hkf, text: Các cánh đồng được bón phân vào mùa xuân., lang: vi }
+    answer:
+      correct_option_id: hkf
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Các cánh đồng được bón phân vào mùa xuân.". Từ khoá là düngen (bón phân); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Các cánh đồng được bón phân vào mùa xuân.
+  - key: de:exercise:b2w1l4-mcq-vi-de-viehzucht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w1-viehzucht
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "chăn nuôi gia súc"?
+      stem_lang: vi
+      options:
+        - { id: ogj, text: das Mindesthaltbarkeitsdatum, lang: de }
+        - { id: cy1, text: der Anbau, lang: de }
+        - { id: vy3, text: die Viehzucht, lang: de }
+        - { id: bph, text: der Fleischkonsum, lang: de }
+    answer:
+      correct_option_id: vy3
+    explanation:
+      vi: "die Viehzucht nghĩa là \"chăn nuôi gia súc\". Ví dụ: Im Süden ist die Viehzucht sehr wichtig. (Ở miền Nam chăn nuôi gia súc rất quan trọng.)"
+    display_answer: die Viehzucht
+  - key: de:exercise:b2w1l4-mcq-de-vi-pflanzenschutzmittel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-pflanzenschutzmittel
+    prompt:
+      stem: "\"das Pflanzenschutzmittel\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n5n, text: thuốc bảo vệ thực vật, lang: vi }
+        - { id: uzd, text: việc trồng trọt, lang: vi }
+        - { id: du8, text: canh tác hữu cơ, lang: vi }
+        - { id: qke, text: phân bón, lang: vi }
+    answer:
+      correct_option_id: n5n
+    explanation:
+      vi: "das Pflanzenschutzmittel nghĩa là \"thuốc bảo vệ thực vật\". Ví dụ: Der Einsatz von Pflanzenschutzmitteln ist umstritten. (Việc sử dụng thuốc bảo vệ thực vật gây tranh cãi.)"
+    display_answer: thuốc bảo vệ thực vật
+  - key: de:exercise:b2w1l4-mcq-artikel-tierwohl
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-tierwohl
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Tierwohl\" (phúc lợi động vật): ___ Tierwohl"
+      stem_lang: vi
+      options:
+        - { id: pu1, text: ein, lang: de }
+        - { id: gw1, text: das, lang: de }
+        - { id: giy, text: der, lang: de }
+        - { id: r7z, text: die, lang: de }
+    answer:
+      correct_option_id: gw1
+    explanation:
+      vi: "Tierwohl là danh từ giống trung (das): das Tierwohl (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b2w1l4-tr-word-saatgut
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-saatgut
+    prompt:
+      source_text: hạt giống (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Saatgut
+    known_wrong:
+      - answer: der Saatgut
+        feedback_vi: Saatgut là giống trung, nên là das Saatgut.
+        error_tag: article
+      - answer: die Saatgut
+        feedback_vi: Saatgut là giống trung, nên là das Saatgut.
+        error_tag: article
+    explanation:
+      vi: "\"hạt giống\" trong tiếng Đức là das Saatgut (số nhiều: không dùng). Ví dụ: Die Bauern kaufen jedes Jahr neues Saatgut."
+    display_answer: das Saatgut
+  - key: de:exercise:b2w1l4-tr-word-verarbeiten
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-verarbeiten
+    prompt:
+      source_text: chế biến, xử lý (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - verarbeiten
+    explanation:
+      vi: "\"chế biến, xử lý\" trong tiếng Đức là verarbeiten. Ví dụ: Das Obst wird zu Marmelade verarbeitet."
+    display_answer: verarbeiten
+  - key: de:exercise:b2w1l4-fill-plural-ernte
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-ernte
+    prompt:
+      template: "Singular: die Ernte · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Ernten
+    known_wrong:
+      - answer: Ernte
+        feedback_vi: Ernte là dạng số ít; số nhiều là Ernten.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Ernte là die Ernten (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Ernte · Plural: die Ernten"
+  - key: de:exercise:b2w1l4-mcq-luecke-lebensmittelindustrie
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-lebensmittelindustrie
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Nhiều người làm việc trong ngành công nghiệp thực phẩm.\": In der ___ arbeiten viele Menschen."
+      stem_lang: vi
+      options:
+        - { id: fmi, text: Massentierhaltung, lang: de }
+        - { id: kdq, text: Tierwohl, lang: de }
+        - { id: sab, text: Lebensmittelindustrie, lang: de }
+        - { id: gdy, text: Ernährungsweise, lang: de }
+    answer:
+      correct_option_id: sab
+    explanation:
+      vi: "Câu có nghĩa \"Nhiều người làm việc trong ngành công nghiệp thực phẩm.\" nên cần Lebensmittelindustrie (die Lebensmittelindustrie: ngành công nghiệp thực phẩm). Tierwohl = phúc lợi động vật; Ernährungsweise = chế độ ăn, cách ăn uống; Massentierhaltung = chăn nuôi quy mô công nghiệp không đúng nghĩa của câu."
+    display_answer: Lebensmittelindustrie
+  - key: de:exercise:b2w1l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Viele Verbraucher achten beim Einkauf auf Gütesiegel und Herkunftsangaben, weil ihnen das Tierwohl wichtig ist.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Viele Verbraucher achten beim Einkauf auf Gütesiegel und Herkunftsangaben, weil ihnen das Tierwohl wichtig ist.
+        - Beim Einkauf achten viele Verbraucher auf Gütesiegel und Herkunftsangaben, weil ihnen das Tierwohl wichtig ist.
+        - Viele Verbraucher achten beim Einkaufen auf Gütesiegel und Herkunftsangaben, denn ihnen ist das Tierwohl wichtig.
+    explanation:
+      vi: "Gợi ý đáp án: Viele Verbraucher achten beim Einkauf auf Gütesiegel und Herkunftsangaben, weil ihnen das Tierwohl wichtig ist. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Viele Verbraucher achten beim Einkauf auf Gütesiegel und Herkunftsangaben, weil ihnen das Tierwohl wichtig ist.
+    item: de:item:b2w1-guetesiegel
+  - key: de:exercise:b2w1l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Um die Lebensmittelverschwendung zu verringern, sollte man Reste verarbeiten und Vorräte richtig konservieren.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Để giảm lãng phí thực phẩm, nên chế biến đồ thừa và bảo quản dự trữ đúng cách.
+        - Muốn giảm việc lãng phí thức ăn thì nên tận dụng đồ thừa và bảo quản thực phẩm dự trữ cho đúng.
+        - Để làm giảm lãng phí thực phẩm, người ta nên chế biến các phần ăn thừa và bảo quản đúng cách các thực phẩm tích trữ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Um die Lebensmittelverschwendung zu verringern, sollte man Reste verarbeiten und Vorräte richtig konservieren.\" nghĩa là: Để giảm lãng phí thực phẩm, nên chế biến đồ thừa và bảo quản dự trữ đúng cách. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Để giảm lãng phí thực phẩm, nên chế biến đồ thừa và bảo quản dự trữ đúng cách.
+    item: de:item:b2w1-lebensmittelverschwendung

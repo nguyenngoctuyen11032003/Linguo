@@ -1,0 +1,299 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w1-verkehr-infrastruktur
+order_index: 3
+level: b2
+title:
+  vi: Hạ tầng và chính sách giao thông (Verkehr und Infrastruktur)
+objectives:
+  - vi: Bàn luận về hạ tầng giao thông, giao thông công cộng và xe điện.
+  - vi: "Hiểu các từ về chính sách: Verkehrswende, Tempolimit, Maut, Pendlerpauschale."
+  - vi: Dùng các động từ ausbauen, sperren, subventionieren và tính từ überlastet, klimafreundlich.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w1-stadtplanung-wohnen
+items:
+  - item: de:item:b2w1-infrastruktur
+  - item: de:item:b2w1-strassennetz
+  - item: de:item:b2w1-schienennetz
+  - item: de:item:b2w1-nahverkehr
+  - item: de:item:b2w1-fernverkehr
+  - item: de:item:b2w1-gueterverkehr
+  - item: de:item:b2w1-maut
+  - item: de:item:b2w1-verkehrswende
+  - item: de:item:b2w1-radschnellweg
+  - item: de:item:b2w1-ladesaeule
+  - item: de:item:b2w1-elektroauto
+  - item: de:item:b2w1-hybridfahrzeug
+  - item: de:item:b2w1-tempolimit
+  - item: de:item:b2w1-verkehrsaufkommen
+  - item: de:item:b2w1-pendlerpauschale
+  - item: de:item:b2w1-ausbau
+  - item: de:item:b2w1-sperrung
+  - item: de:item:b2w1-engpass
+  - item: de:item:b2w1-parkgebuehr
+  - item: de:item:b2w1-sperren
+  - item: de:item:b2w1-subventionieren
+  - item: de:item:b2w1-ueberlastet
+  - item: de:item:b2w1-klimafreundlich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu và thảo luận về các chính sách giao thông và hạ tầng, nêu ưu nhược điểm của các phương án khác nhau.
+  - type: explain
+    text:
+      vi: "Hạ tầng: die Infrastruktur, das Straßennetz, das Schienennetz, der Ausbau (việc mở rộng), die Sperrung (việc phong tỏa), der Engpass (điểm nghẽn). Phân loại: der Nahverkehr (giao thông gần), der Fernverkehr (đường dài), der Güterverkehr (vận tải hàng), das Verkehrsaufkommen (lưu lượng giao thông)."
+  - type: explain
+    text:
+      vi: "Chính sách: die Verkehrswende (chuyển đổi giao thông sang bền vững), das Tempolimit (giới hạn tốc độ), die Maut (phí đường), die Parkgebühr, die Pendlerpauschale (khoản khấu trừ thuế cho người đi làm xa). Phương tiện mới: das Elektroauto, das Hybridfahrzeug, die Ladesäule (trạm sạc), der Radschnellweg (đường xe đạp nhanh)."
+  - type: explain
+    text:
+      vi: "Động từ: ausbauen (mở rộng), sperren (phong tỏa, cấm), subventionieren (trợ cấp). Tính từ: überlastet (quá tải), klimafreundlich. Cấu trúc điển hình trong thảo luận: Die Verkehrswende lässt sich nur umsetzen, wenn der Nahverkehr ausgebaut wird."
+  - type: deep_explain
+    text:
+      vi: "Maut ở Đức hiện chủ yếu áp dụng cho xe tải trên Autobahn; đây là chủ đề tranh luận chính trị. Das Tempolimit trên Autobahn cũng là chủ đề thường được bàn: Befürworter nennen weniger Unfälle und geringeren Verbrauch, Gegner verweisen auf individuelle Freiheit. Khi viết bài luận, hãy dùng cặp từ dafür / dagegen."
+  - type: example
+    target: Die Infrastruktur in ländlichen Gebieten muss verbessert werden.
+    target_lang: de
+    translation:
+      vi: Hạ tầng ở các vùng nông thôn cần được cải thiện.
+    note:
+      vi: die Infrastruktur = hạ tầng.
+  - type: example
+    target: Das Straßennetz ist in einem schlechten Zustand.
+    target_lang: de
+    translation:
+      vi: Mạng lưới đường bộ trong tình trạng xấu.
+    note:
+      vi: das Straßennetz = mạng lưới đường bộ.
+  - type: example
+    target: Das Schienennetz wird seit Jahren modernisiert.
+    target_lang: de
+    translation:
+      vi: Mạng lưới đường sắt được hiện đại hóa nhiều năm nay.
+    note:
+      vi: das Schienennetz = mạng lưới đường sắt.
+  - type: example
+    target: Der Nahverkehr in der Region ist gut ausgebaut.
+    target_lang: de
+    translation:
+      vi: Giao thông công cộng trong vùng được phát triển tốt.
+    note:
+      vi: der Nahverkehr = giao thông công cộng cự ly gần.
+  - type: common_mistake
+    wrong: Die Straße wird für zwei Wochen sperren.
+    right: Die Straße wird für zwei Wochen gesperrt.
+    target_lang: de
+    note:
+      vi: "Bị động hiện tại: wird + Partizip II (gesperrt), không dùng nguyên thể."
+  - type: common_mistake
+    wrong: Der Ausbau von das Schienennetz kostet viel Geld.
+    right: Der Ausbau des Schienennetzes kostet viel Geld.
+    target_lang: de
+    note:
+      vi: Genitiv của das Schienennetz là des Schienennetzes.
+  - type: summary
+    points:
+      - vi: die Infrastruktur, das Straßennetz, das Schienennetz, der Ausbau, die Sperrung, der Engpass, der Nahverkehr, der Fernverkehr, der Güterverkehr.
+      - vi: die Verkehrswende, das Tempolimit, die Maut, die Parkgebühr, die Pendlerpauschale, das Verkehrsaufkommen.
+      - vi: das Elektroauto, das Hybridfahrzeug, die Ladesäule, der Radschnellweg; ausbauen, sperren, subventionieren; überlastet, klimafreundlich.
+exercises:
+  - key: de:exercise:b2w1l3-listen-ueberlastet
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-ueberlastet
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das Straßennetz ist in der Stadt überlastet.
+      options:
+        - { id: mcm, text: Xe hybrid chạy bằng xăng và điện., lang: vi }
+        - { id: wsw, text: Hạ tầng ở các vùng nông thôn cần được cải thiện., lang: vi }
+        - { id: qhx, text: Mạng lưới đường trong thành phố bị quá tải., lang: vi }
+        - { id: bmv, text: Cảnh sát đã phong tỏa con đường., lang: vi }
+    answer:
+      correct_option_id: qhx
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Mạng lưới đường trong thành phố bị quá tải.". Từ khoá là überlastet (quá tải); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Mạng lưới đường trong thành phố bị quá tải.
+  - key: de:exercise:b2w1l3-mcq-vi-de-strassennetz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w1-strassennetz
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "mạng lưới đường bộ"?
+      stem_lang: vi
+      options:
+        - { id: yn5, text: das Straßennetz, lang: de }
+        - { id: hz5, text: der Nahverkehr, lang: de }
+        - { id: mx7, text: die Infrastruktur, lang: de }
+        - { id: lyd, text: der Ausbau, lang: de }
+    answer:
+      correct_option_id: yn5
+    explanation:
+      vi: "das Straßennetz nghĩa là \"mạng lưới đường bộ\". Ví dụ: Das Straßennetz ist in einem schlechten Zustand. (Mạng lưới đường bộ trong tình trạng xấu.)"
+    display_answer: das Straßennetz
+  - key: de:exercise:b2w1l3-mcq-de-vi-engpass
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-engpass
+    prompt:
+      stem: "\"der Engpass\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: p0c, text: thân thiện với khí hậu, lang: vi }
+        - { id: ssv, text: "điểm nghẽn, tình trạng thiếu hụt", lang: vi }
+        - { id: y0c, text: vận tải hàng hóa, lang: vi }
+        - { id: pc6, text: "phong tỏa, cấm", lang: vi }
+    answer:
+      correct_option_id: ssv
+    explanation:
+      vi: "der Engpass nghĩa là \"điểm nghẽn, tình trạng thiếu hụt\". Ví dụ: An der Brücke entsteht regelmäßig ein Engpass. (Ở cây cầu thường xuyên xảy ra nghẽn.)"
+    display_answer: điểm nghẽn, tình trạng thiếu hụt
+  - key: de:exercise:b2w1l3-mcq-artikel-verkehrswende
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-verkehrswende
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Verkehrswende\" (chuyển đổi giao thông bền vững): ___ Verkehrswende"
+      stem_lang: vi
+      options:
+        - { id: hap, text: der, lang: de }
+        - { id: mz0, text: die, lang: de }
+        - { id: tj5, text: das, lang: de }
+        - { id: x9f, text: ein, lang: de }
+    answer:
+      correct_option_id: mz0
+    explanation:
+      vi: "Verkehrswende là danh từ giống cái (die): die Verkehrswende (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w1l3-tr-word-tempolimit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-tempolimit
+    prompt:
+      source_text: giới hạn tốc độ (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Tempolimit
+    known_wrong:
+      - answer: der Tempolimit
+        feedback_vi: Tempolimit là giống trung, nên là das Tempolimit.
+        error_tag: article
+      - answer: die Tempolimit
+        feedback_vi: Tempolimit là giống trung, nên là das Tempolimit.
+        error_tag: article
+    explanation:
+      vi: "\"giới hạn tốc độ\" trong tiếng Đức là das Tempolimit (số nhiều: die Tempolimits). Ví dụ: Auf der Autobahn gibt es kein generelles Tempolimit."
+    display_answer: das Tempolimit
+  - key: de:exercise:b2w1l3-tr-word-klimafreundlich
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-klimafreundlich
+    prompt:
+      source_text: thân thiện với khí hậu (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - klimafreundlich
+    explanation:
+      vi: "\"thân thiện với khí hậu\" trong tiếng Đức là klimafreundlich. Ví dụ: Der Zug ist ein klimafreundliches Verkehrsmittel."
+    display_answer: klimafreundlich
+  - key: de:exercise:b2w1l3-fill-plural-pendlerpauschale
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-pendlerpauschale
+    prompt:
+      template: "Singular: die Pendlerpauschale · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 19 }
+    answer:
+      blanks:
+        b1:
+          - Pendlerpauschalen
+    known_wrong:
+      - answer: Pendlerpauschale
+        feedback_vi: Pendlerpauschale là dạng số ít; số nhiều là Pendlerpauschalen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Pendlerpauschale là die Pendlerpauschalen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Pendlerpauschale · Plural: die Pendlerpauschalen"
+  - key: de:exercise:b2w1l3-mcq-luecke-infrastruktur
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-infrastruktur
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Hạ tầng ở các vùng nông thôn cần được cải thiện.\": Die ___ in ländlichen Gebieten muss verbessert werden."
+      stem_lang: vi
+      options:
+        - { id: mvj, text: Ladesäule, lang: de }
+        - { id: sb7, text: Infrastruktur, lang: de }
+        - { id: irn, text: Fernverkehr, lang: de }
+        - { id: wrz, text: Hybridfahrzeug, lang: de }
+    answer:
+      correct_option_id: sb7
+    explanation:
+      vi: "Câu có nghĩa \"Hạ tầng ở các vùng nông thôn cần được cải thiện.\" nên cần Infrastruktur (die Infrastruktur: hạ tầng). Hybridfahrzeug = xe hybrid; Ladesäule = trạm sạc; Fernverkehr = giao thông đường dài không đúng nghĩa của câu."
+    display_answer: Infrastruktur
+  - key: de:exercise:b2w1l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Damit die Verkehrswende gelingt, muss der Nahverkehr ausgebaut und das Schienennetz modernisiert werden.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Damit die Verkehrswende gelingt, muss der Nahverkehr ausgebaut und das Schienennetz modernisiert werden.
+        - Damit die Verkehrswende gelingt, müssen der Nahverkehr ausgebaut und das Schienennetz modernisiert werden.
+        - Der Nahverkehr muss ausgebaut und das Schienennetz modernisiert werden, damit die Verkehrswende gelingt.
+    explanation:
+      vi: "Gợi ý đáp án: Damit die Verkehrswende gelingt, muss der Nahverkehr ausgebaut und das Schienennetz modernisiert werden. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Damit die Verkehrswende gelingt, muss der Nahverkehr ausgebaut und das Schienennetz modernisiert werden.
+    item: de:item:b2w1-schienennetz
+  - key: de:exercise:b2w1l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Befürworter eines Tempolimits verweisen auf weniger Unfälle, während die Gegner die Freiheit der Autofahrer betonen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Những người ủng hộ giới hạn tốc độ viện dẫn việc ít tai nạn hơn, còn người phản đối nhấn mạnh quyền tự do của người lái xe.
+        - Phe ủng hộ giới hạn tốc độ nêu lên việc tai nạn giảm, trong khi phe phản đối nhấn mạnh sự tự do của tài xế.
+        - Người ủng hộ giới hạn tốc độ dẫn chứng tai nạn ít hơn, còn người phản đối thì nhấn mạnh tự do của người lái xe.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Befürworter eines Tempolimits verweisen auf weniger Unfälle, während die Gegner die Freiheit der Autofahrer betonen.\" nghĩa là: Những người ủng hộ giới hạn tốc độ viện dẫn việc ít tai nạn hơn, còn người phản đối nhấn mạnh quyền tự do của người lái xe. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Những người ủng hộ giới hạn tốc độ viện dẫn việc ít tai nạn hơn, còn người phản đối nhấn mạnh quyền tự do của người lái xe.
+    item: de:item:b2w1-tempolimit

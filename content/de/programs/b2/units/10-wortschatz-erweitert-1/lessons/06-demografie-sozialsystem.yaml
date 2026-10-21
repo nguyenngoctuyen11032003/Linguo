@@ -1,0 +1,300 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w1-demografie-sozialsystem
+order_index: 6
+level: b2
+title:
+  vi: Nhân khẩu học và hệ thống an sinh (Demografie und Sozialsystem)
+objectives:
+  - vi: Hiểu và bàn luận về già hóa dân số, lương hưu và an sinh xã hội.
+  - vi: "Đọc hiểu số liệu: Geburtenrate, Lebenserwartung, Altersstruktur."
+  - vi: Dùng các động từ altern, schrumpfen, abwandern, versorgen, absichern.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w1-tourismus-reise-2
+items:
+  - item: de:item:b2w1-bevoelkerung
+  - item: de:item:b2w1-bevoelkerungsrueckgang
+  - item: de:item:b2w1-geburtenrate
+  - item: de:item:b2w1-lebenserwartung
+  - item: de:item:b2w1-altersstruktur
+  - item: de:item:b2w1-ueberalterung
+  - item: de:item:b2w1-rentensystem
+  - item: de:item:b2w1-generationenvertrag
+  - item: de:item:b2w1-altersvorsorge
+  - item: de:item:b2w1-pflegeversicherung
+  - item: de:item:b2w1-sozialhilfe
+  - item: de:item:b2w1-mindestlohn
+  - item: de:item:b2w1-grundsicherung
+  - item: de:item:b2w1-landflucht
+  - item: de:item:b2w1-sozialleistung
+  - item: de:item:b2w1-armutsgefaehrdung
+  - item: de:item:b2w1-erwerbstaetigkeit
+  - item: de:item:b2w1-altern
+  - item: de:item:b2w1-schrumpfen
+  - item: de:item:b2w1-abwandern
+  - item: de:item:b2w1-versorgen
+  - item: de:item:b2w1-absichern
+  - item: de:item:b2w1-demografisch
+  - item: de:item:b2w1-ueberaltert
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu bài báo và biểu đồ về nhân khẩu học và hệ thống lương hưu, và nêu được ý kiến về các giải pháp cho xã hội già hóa.
+  - type: explain
+    text:
+      vi: "Nhân khẩu học: die Bevölkerung, der Bevölkerungsrückgang, die Geburtenrate, die Lebenserwartung, die Altersstruktur, die Überalterung, die Landflucht. Tính từ: demografisch (der demografische Wandel = sự thay đổi nhân khẩu), überaltert. Cụm: die Gesellschaft altert, die Bevölkerung schrumpft."
+  - type: explain
+    text:
+      vi: "An sinh: das Rentensystem, der Generationenvertrag (hợp đồng thế hệ: thế hệ đang làm việc đóng góp cho lương hưu của thế hệ trước), die Altersvorsorge, die Pflegeversicherung, die Sozialhilfe, die Grundsicherung, der Mindestlohn (số nhiều die Mindestlöhne), die Sozialleistung, die Armutsgefährdung, die Erwerbstätigkeit."
+  - type: explain
+    text:
+      vi: "Động từ: altern (già đi: altert, ist gealtert), schrumpfen (thu hẹp: ist geschrumpft), abwandern (di cư đi nơi khác: ist abgewandert), versorgen (chu cấp, chăm sóc), absichern (bảo đảm, đảm bảo an toàn tài chính). Ví dụ: Die Region schrumpft, weil junge Menschen abwandern. Die Rente soll die Älteren absichern."
+  - type: deep_explain
+    text:
+      vi: "Der Generationenvertrag là nguyên tắc của lương hưu theo phương thức phân bổ (Umlageverfahren) ở Đức; khi dân số già đi, ít người đóng góp hơn cho nhiều người hưởng, nên vấn đề này được bàn nhiều. Altersvorsorge gồm ba trụ cột: lương hưu nhà nước, hưu trí của doanh nghiệp và tiết kiệm cá nhân. Armutsgefährdung (nguy cơ nghèo) được tính theo thu nhập so với mức trung vị."
+  - type: example
+    target: Die Bevölkerung Deutschlands wächst nur noch durch Zuwanderung.
+    target_lang: de
+    translation:
+      vi: Dân số nước Đức chỉ còn tăng nhờ nhập cư.
+    note:
+      vi: die Bevölkerung = dân số, dân cư.
+  - type: example
+    target: Der Bevölkerungsrückgang betrifft vor allem den Osten.
+    target_lang: de
+    translation:
+      vi: Việc giảm dân số chủ yếu ảnh hưởng đến miền Đông.
+    note:
+      vi: der Bevölkerungsrückgang = sự giảm dân số.
+  - type: example
+    target: Die Geburtenrate liegt unter dem europäischen Durchschnitt.
+    target_lang: de
+    translation:
+      vi: Tỷ lệ sinh thấp hơn mức trung bình châu Âu.
+    note:
+      vi: die Geburtenrate = tỷ lệ sinh.
+  - type: example
+    target: Die Lebenserwartung ist in den letzten Jahrzehnten gestiegen.
+    target_lang: de
+    translation:
+      vi: Tuổi thọ trung bình đã tăng trong những thập kỷ gần đây.
+    note:
+      vi: die Lebenserwartung = tuổi thọ trung bình.
+  - type: common_mistake
+    wrong: Die Bevölkerung ist geschrumpfen.
+    right: Die Bevölkerung ist geschrumpft.
+    target_lang: de
+    note:
+      vi: "Schrumpfen là động từ dùng sein ở Perfekt: ist geschrumpft."
+  - type: common_mistake
+    wrong: Die Gesellschaft hat gealtert.
+    right: Die Gesellschaft ist gealtert.
+    target_lang: de
+    note:
+      vi: "Altern (già đi) dùng sein ở Perfekt: ist gealtert."
+  - type: summary
+    points:
+      - vi: die Bevölkerung, der Bevölkerungsrückgang, die Geburtenrate, die Lebenserwartung, die Altersstruktur, die Überalterung, die Landflucht.
+      - vi: das Rentensystem, der Generationenvertrag, die Altersvorsorge, die Pflegeversicherung, die Sozialhilfe, die Grundsicherung, der Mindestlohn, die Sozialleistung.
+      - vi: altern, schrumpfen, abwandern (đều dùng sein), versorgen, absichern; demografisch, überaltert; die Armutsgefährdung, die Erwerbstätigkeit.
+exercises:
+  - key: de:exercise:b2w1l6-listen-sozialleistung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-sozialleistung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Zu den Sozialleistungen gehören Kindergeld und Wohngeld.
+      options:
+        - { id: z8z, text: Khoản bảo đảm thu nhập cơ bản đảm bảo mức sống tối thiểu., lang: vi }
+        - { id: img, text: Các khoản phúc lợi xã hội gồm trợ cấp trẻ em và trợ cấp nhà ở., lang: vi }
+        - { id: g6n, text: Mức lương tối thiểu được điều chỉnh định kỳ., lang: vi }
+        - { id: jh0, text: Bảo hiểm chăm sóc dài hạn trả một phần chi phí chăm sóc., lang: vi }
+    answer:
+      correct_option_id: img
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Các khoản phúc lợi xã hội gồm trợ cấp trẻ em và trợ cấp nhà ở.". Từ khoá là die Sozialleistung (khoản phúc lợi xã hội); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Các khoản phúc lợi xã hội gồm trợ cấp trẻ em và trợ cấp nhà ở.
+  - key: de:exercise:b2w1l6-mcq-vi-de-abwandern
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w1-abwandern
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "di cư đi nơi khác"?
+      stem_lang: vi
+      options:
+        - { id: o5z, text: schrumpfen, lang: de }
+        - { id: ags, text: versorgen, lang: de }
+        - { id: f2h, text: absichern, lang: de }
+        - { id: tsb, text: abwandern, lang: de }
+    answer:
+      correct_option_id: tsb
+    explanation:
+      vi: "abwandern nghĩa là \"di cư đi nơi khác\". Ví dụ: Viele Fachkräfte wandern ins Ausland ab. (Nhiều lao động lành nghề di cư ra nước ngoài.)"
+    display_answer: abwandern
+  - key: de:exercise:b2w1l6-mcq-de-vi-altersvorsorge
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-altersvorsorge
+    prompt:
+      stem: "\"die Altersvorsorge\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: vwc, text: bảo hiểm chăm sóc dài hạn, lang: vi }
+        - { id: e65, text: tình trạng bỏ nông thôn lên thành phố, lang: vi }
+        - { id: d5x, text: "việc có việc làm, hoạt động lao động", lang: vi }
+        - { id: g1f, text: việc chuẩn bị cho tuổi già, lang: vi }
+    answer:
+      correct_option_id: g1f
+    explanation:
+      vi: "die Altersvorsorge nghĩa là \"việc chuẩn bị cho tuổi già\". Ví dụ: Für die Altersvorsorge sollte man früh sparen. (Để chuẩn bị cho tuổi già nên tiết kiệm sớm.)"
+    display_answer: việc chuẩn bị cho tuổi già
+  - key: de:exercise:b2w1l6-mcq-artikel-landflucht
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-landflucht
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Landflucht\" (tình trạng bỏ nông thôn lên thành phố): ___ Landflucht"
+      stem_lang: vi
+      options:
+        - { id: jdj, text: ein, lang: de }
+        - { id: b9j, text: der, lang: de }
+        - { id: ae5, text: die, lang: de }
+        - { id: utm, text: das, lang: de }
+    answer:
+      correct_option_id: ae5
+    explanation:
+      vi: "Landflucht là danh từ giống cái (die): die Landflucht (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w1l6-tr-word-bevoelkerungsrueckgang
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-bevoelkerungsrueckgang
+    prompt:
+      source_text: sự giảm dân số (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Bevölkerungsrückgang
+    known_wrong:
+      - answer: die Bevölkerungsrückgang
+        feedback_vi: Bevölkerungsrückgang là giống đực, nên là der Bevölkerungsrückgang.
+        error_tag: article
+      - answer: das Bevölkerungsrückgang
+        feedback_vi: Bevölkerungsrückgang là giống đực, nên là der Bevölkerungsrückgang.
+        error_tag: article
+    explanation:
+      vi: "\"sự giảm dân số\" trong tiếng Đức là der Bevölkerungsrückgang (số nhiều: không dùng). Ví dụ: Der Bevölkerungsrückgang betrifft vor allem den Osten."
+    display_answer: der Bevölkerungsrückgang
+  - key: de:exercise:b2w1l6-tr-word-versorgen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-versorgen
+    prompt:
+      source_text: chu cấp, chăm sóc (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - versorgen
+    explanation:
+      vi: "\"chu cấp, chăm sóc\" trong tiếng Đức là versorgen. Ví dụ: Die Familie muss die Großeltern versorgen."
+    display_answer: versorgen
+  - key: de:exercise:b2w1l6-fill-plural-geburtenrate
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-geburtenrate
+    prompt:
+      template: "Singular: die Geburtenrate · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 15 }
+    answer:
+      blanks:
+        b1:
+          - Geburtenraten
+    known_wrong:
+      - answer: Geburtenrate
+        feedback_vi: Geburtenrate là dạng số ít; số nhiều là Geburtenraten.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Geburtenrate là die Geburtenraten (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Geburtenrate · Plural: die Geburtenraten"
+  - key: de:exercise:b2w1l6-mcq-luecke-bevoelkerung
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-bevoelkerung
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Dân số nước Đức chỉ còn tăng nhờ nhập cư.\": Die ___ Deutschlands wächst nur noch durch Zuwanderung."
+      stem_lang: vi
+      options:
+        - { id: hex, text: Generationenvertrag, lang: de }
+        - { id: lve, text: Bevölkerung, lang: de }
+        - { id: buw, text: Rentensystem, lang: de }
+        - { id: mme, text: Grundsicherung, lang: de }
+    answer:
+      correct_option_id: lve
+    explanation:
+      vi: "Câu có nghĩa \"Dân số nước Đức chỉ còn tăng nhờ nhập cư.\" nên cần Bevölkerung (die Bevölkerung: dân số, dân cư). Rentensystem = hệ thống lương hưu; Grundsicherung = khoản bảo đảm thu nhập cơ bản; Generationenvertrag = hợp đồng thế hệ (nguyên tắc lương hưu) không đúng nghĩa của câu."
+    display_answer: Bevölkerung
+  - key: de:exercise:b2w1l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Weil die Geburtenrate sinkt und die Lebenserwartung steigt, altert die Bevölkerung, und der Generationenvertrag gerät unter Druck.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Weil die Geburtenrate sinkt und die Lebenserwartung steigt, altert die Bevölkerung, und der Generationenvertrag gerät unter Druck.
+        - Die Bevölkerung altert, weil die Geburtenrate sinkt und die Lebenserwartung steigt, und der Generationenvertrag gerät unter Druck.
+        - Da die Geburtenrate sinkt und die Lebenserwartung steigt, altert die Bevölkerung, und der Generationenvertrag gerät unter Druck.
+    explanation:
+      vi: "Gợi ý đáp án: Weil die Geburtenrate sinkt und die Lebenserwartung steigt, altert die Bevölkerung, und der Generationenvertrag gerät unter Druck. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Weil die Geburtenrate sinkt und die Lebenserwartung steigt, altert die Bevölkerung, und der Generationenvertrag gerät unter Druck.
+    item: de:item:b2w1-bevoelkerung
+  - key: de:exercise:b2w1l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: In ländlichen Regionen schrumpft die Bevölkerung, weil viele junge Menschen in die Städte abgewandert sind.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Ở các vùng nông thôn dân số giảm vì nhiều người trẻ đã chuyển lên thành phố.
+        - Dân số ở các vùng nông thôn đang thu hẹp do nhiều người trẻ đã di cư lên các thành phố.
+        - Vùng nông thôn mất dân vì nhiều người trẻ đã bỏ đi đến thành phố.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"In ländlichen Regionen schrumpft die Bevölkerung, weil viele junge Menschen in die Städte abgewandert sind.\" nghĩa là: Ở các vùng nông thôn dân số giảm vì nhiều người trẻ đã chuyển lên thành phố. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Ở các vùng nông thôn dân số giảm vì nhiều người trẻ đã chuyển lên thành phố.
+    item: de:item:b2w1-bevoelkerung

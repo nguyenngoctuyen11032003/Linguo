@@ -1,0 +1,300 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w1-gesundheitssystem
+order_index: 1
+level: b2
+title:
+  vi: Hệ thống y tế và thuốc men (Gesundheitssystem und Medikamente)
+objectives:
+  - vi: "Hiểu và bàn luận về hệ thống y tế: bảo hiểm, khám sàng lọc, thiếu nhân lực."
+  - vi: "Đọc hiểu tờ hướng dẫn thuốc: Wirkstoff, Dosis, Nebenwirkung, rezeptpflichtig."
+  - vi: "Dùng các động từ y khoa: diagnostizieren, therapieren, vorbeugen, lindern, verabreichen."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2u09-wiederholung
+items:
+  - item: de:item:b2w1-gesundheitswesen
+  - item: de:item:b2w1-gesundheitsreform
+  - item: de:item:b2w1-kassenpatient
+  - item: de:item:b2w1-privatpatient
+  - item: de:item:b2w1-zuzahlung
+  - item: de:item:b2w1-vorsorgeuntersuchung
+  - item: de:item:b2w1-frueherkennung
+  - item: de:item:b2w1-aerztemangel
+  - item: de:item:b2w1-pflegenotstand
+  - item: de:item:b2w1-wirkstoff
+  - item: de:item:b2w1-arzneimittel
+  - item: de:item:b2w1-beipackzettel
+  - item: de:item:b2w1-dosis
+  - item: de:item:b2w1-ueberdosis
+  - item: de:item:b2w1-diagnostizieren
+  - item: de:item:b2w1-therapieren
+  - item: de:item:b2w1-verabreichen
+  - item: de:item:b2w1-vorbeugen
+  - item: de:item:b2w1-heilen
+  - item: de:item:b2w1-lindern
+  - item: de:item:b2w1-akut
+  - item: de:item:b2w1-aerztlich
+  - item: de:item:b2w1-rezeptpflichtig
+  - item: de:item:b2w1-gesetzlich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thảo luận được về những vấn đề của hệ thống y tế và hiểu thông tin cơ bản trên đơn thuốc và tờ hướng dẫn sử dụng thuốc.
+  - type: explain
+    text:
+      vi: "Ở Đức có hai nhóm người bệnh: der Kassenpatient (bệnh nhân bảo hiểm công) và der Privatpatient (bảo hiểm tư). Các khoản người bệnh trả thêm gọi là die Zuzahlung. Từ bao quát là das Gesundheitswesen; tranh luận thời sự xoay quanh der Ärztemangel (thiếu bác sĩ) và der Pflegenotstand (khủng hoảng thiếu nhân viên điều dưỡng)."
+  - type: explain
+    text:
+      vi: "Về thuốc: das Arzneimittel (dược phẩm), der Wirkstoff (hoạt chất), der Beipackzettel (tờ hướng dẫn), die Dosis (số nhiều Dosen), die Überdosis. Thuốc theo toa là rezeptpflichtig. Phòng bệnh gồm die Vorsorgeuntersuchung (khám định kỳ) và die Früherkennung (phát hiện sớm)."
+  - type: explain
+    text:
+      vi: "Động từ: diagnostizieren (chẩn đoán), therapieren, verabreichen (cho dùng thuốc, tiêm), vorbeugen + Dativ (phòng ngừa: Man kann Krankheiten vorbeugen), heilen (chữa khỏi), lindern (làm dịu). Tính từ: akut (cấp tính, ngược với chronisch), ärztlich (thuộc bác sĩ), gesetzlich (theo luật định; gesetzlich versichert là có bảo hiểm công)."
+  - type: deep_explain
+    text:
+      vi: "Verabreichen thuộc văn phong chuyên môn; trong lời nói thường dùng geben. Vorbeugen đi với Dativ chứ không phải Akkusativ: Impfungen beugen schweren Verläufen vor. Hãy so sánh heilen (chữa khỏi hẳn) với lindern (chỉ làm giảm): Das Medikament heilt die Krankheit nicht, es lindert nur die Schmerzen. Die Gesundheitsreform là cuộc cải cách chính sách y tế, hay xuất hiện trên báo."
+  - type: example
+    target: Das deutsche Gesundheitswesen steht vor großen Herausforderungen.
+    target_lang: de
+    translation:
+      vi: Hệ thống y tế Đức đứng trước những thách thức lớn.
+    note:
+      vi: das Gesundheitswesen = hệ thống y tế.
+  - type: example
+    target: Die Gesundheitsreform soll die Kosten senken.
+    target_lang: de
+    translation:
+      vi: Cuộc cải cách y tế nhằm giảm chi phí.
+    note:
+      vi: die Gesundheitsreform = cải cách y tế.
+  - type: example
+    target: Als Kassenpatient muss man oft länger auf einen Termin warten.
+    target_lang: de
+    translation:
+      vi: Là bệnh nhân bảo hiểm công, người ta thường phải chờ lịch hẹn lâu hơn.
+    note:
+      vi: der Kassenpatient = bệnh nhân bảo hiểm công.
+  - type: example
+    target: Der Privatpatient bekommt die Rechnung direkt nach Hause.
+    target_lang: de
+    translation:
+      vi: Bệnh nhân bảo hiểm tư nhận hóa đơn trực tiếp tại nhà.
+    note:
+      vi: der Privatpatient = bệnh nhân bảo hiểm tư.
+  - type: common_mistake
+    wrong: Das Medikament ist rezeptpflichtig, man darf es ohne Rezept kaufen.
+    right: Das Medikament ist rezeptpflichtig, man darf es nicht ohne Rezept kaufen.
+    target_lang: de
+    note:
+      vi: Rezeptpflichtig nghĩa là phải có đơn thuốc mới được mua.
+  - type: common_mistake
+    wrong: Impfungen beugen die Krankheit vor.
+    right: Impfungen beugen der Krankheit vor.
+    target_lang: de
+    note:
+      vi: "Vorbeugen đi với Dativ: der Krankheit vorbeugen."
+  - type: summary
+    points:
+      - vi: das Gesundheitswesen, die Gesundheitsreform, der Kassenpatient, der Privatpatient, die Zuzahlung, der Ärztemangel, der Pflegenotstand.
+      - vi: das Arzneimittel, der Wirkstoff, der Beipackzettel, die Dosis, die Überdosis, die Vorsorgeuntersuchung, die Früherkennung.
+      - vi: diagnostizieren, therapieren, verabreichen, vorbeugen (+ Dativ), heilen, lindern; akut, ärztlich, rezeptpflichtig, gesetzlich.
+exercises:
+  - key: de:exercise:b2w1l1-listen-aerztemangel
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-aerztemangel
+    prompt:
+      audio_asset_id: null
+      fallback_text: Auf dem Land ist der Ärztemangel besonders groß.
+      options:
+        - { id: vx4, text: Điều dưỡng cho bệnh nhân uống thuốc., lang: vi }
+        - { id: lw7, text: Bác sĩ chẩn đoán viêm phổi., lang: vi }
+        - { id: pw7, text: Cho việc đó ông/bà cần giấy chứng nhận của bác sĩ., lang: vi }
+        - { id: gmb, text: Ở nông thôn tình trạng thiếu bác sĩ đặc biệt lớn., lang: vi }
+    answer:
+      correct_option_id: gmb
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Ở nông thôn tình trạng thiếu bác sĩ đặc biệt lớn.". Từ khoá là der Ärztemangel (tình trạng thiếu bác sĩ); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Ở nông thôn tình trạng thiếu bác sĩ đặc biệt lớn.
+  - key: de:exercise:b2w1l1-mcq-vi-de-gesundheitsreform
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w1-gesundheitsreform
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cải cách y tế"?
+      stem_lang: vi
+      options:
+        - { id: fl2, text: die Gesundheitsreform, lang: de }
+        - { id: zbj, text: der Privatpatient, lang: de }
+        - { id: ykn, text: der Pflegenotstand, lang: de }
+        - { id: zqw, text: das Arzneimittel, lang: de }
+    answer:
+      correct_option_id: fl2
+    explanation:
+      vi: "die Gesundheitsreform nghĩa là \"cải cách y tế\". Ví dụ: Die Gesundheitsreform soll die Kosten senken. (Cuộc cải cách y tế nhằm giảm chi phí.)"
+    display_answer: die Gesundheitsreform
+  - key: de:exercise:b2w1l1-mcq-de-vi-gesundheitswesen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-gesundheitswesen
+    prompt:
+      stem: "\"das Gesundheitswesen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: ia8, text: "thuộc bác sĩ, do bác sĩ", lang: vi }
+        - { id: hvg, text: tờ hướng dẫn trong hộp thuốc, lang: vi }
+        - { id: kik, text: hệ thống y tế, lang: vi }
+        - { id: cqh, text: khoản người bệnh trả thêm, lang: vi }
+    answer:
+      correct_option_id: kik
+    explanation:
+      vi: "das Gesundheitswesen nghĩa là \"hệ thống y tế\". Ví dụ: Das deutsche Gesundheitswesen steht vor großen Herausforderungen. (Hệ thống y tế Đức đứng trước những thách thức lớn.)"
+    display_answer: hệ thống y tế
+  - key: de:exercise:b2w1l1-mcq-artikel-beipackzettel
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-beipackzettel
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Beipackzettel\" (tờ hướng dẫn trong hộp thuốc): ___ Beipackzettel"
+      stem_lang: vi
+      options:
+        - { id: niu, text: die, lang: de }
+        - { id: rth, text: das, lang: de }
+        - { id: ebq, text: der, lang: de }
+        - { id: l40, text: ein, lang: de }
+    answer:
+      correct_option_id: ebq
+    explanation:
+      vi: "Beipackzettel là danh từ giống đực (der): der Beipackzettel; số nhiều: die Beipackzettel. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b2w1l1-tr-word-dosis
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-dosis
+    prompt:
+      source_text: liều lượng (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Dosis
+    known_wrong:
+      - answer: der Dosis
+        feedback_vi: Dosis là giống cái, nên là die Dosis.
+        error_tag: article
+      - answer: das Dosis
+        feedback_vi: Dosis là giống cái, nên là die Dosis.
+        error_tag: article
+    explanation:
+      vi: "\"liều lượng\" trong tiếng Đức là die Dosis (số nhiều: die Dosen). Ví dụ: Überschreiten Sie nicht die empfohlene Dosis."
+    display_answer: die Dosis
+  - key: de:exercise:b2w1l1-tr-word-akut
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-akut
+    prompt:
+      source_text: cấp tính (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - akut
+    explanation:
+      vi: "\"cấp tính\" trong tiếng Đức là akut. Ví dụ: Es handelt sich um eine akute Entzündung."
+    display_answer: akut
+  - key: de:exercise:b2w1l1-fill-plural-vorsorgeuntersuchung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-vorsorgeuntersuchung
+    prompt:
+      template: "Singular: die Vorsorgeuntersuchung · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 24 }
+    answer:
+      blanks:
+        b1:
+          - Vorsorgeuntersuchungen
+    known_wrong:
+      - answer: Vorsorgeuntersuchung
+        feedback_vi: Vorsorgeuntersuchung là dạng số ít; số nhiều là Vorsorgeuntersuchungen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Vorsorgeuntersuchung là die Vorsorgeuntersuchungen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Vorsorgeuntersuchung · Plural: die Vorsorgeuntersuchungen"
+  - key: de:exercise:b2w1l1-mcq-luecke-kassenpatient
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-kassenpatient
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Là bệnh nhân bảo hiểm công, người ta thường phải chờ lịch hẹn lâu hơn.\": Als ___ muss man oft länger auf einen Termin warten."
+      stem_lang: vi
+      options:
+        - { id: jdb, text: Gesundheitsreform, lang: de }
+        - { id: gy5, text: Pflegenotstand, lang: de }
+        - { id: mcs, text: Kassenpatient, lang: de }
+        - { id: kme, text: Früherkennung, lang: de }
+    answer:
+      correct_option_id: mcs
+    explanation:
+      vi: "Câu có nghĩa \"Là bệnh nhân bảo hiểm công, người ta thường phải chờ lịch hẹn lâu hơn.\" nên cần Kassenpatient (der Kassenpatient: bệnh nhân bảo hiểm công). Früherkennung = việc phát hiện sớm; Gesundheitsreform = cải cách y tế; Pflegenotstand = khủng hoảng thiếu điều dưỡng không đúng nghĩa của câu."
+    display_answer: Kassenpatient
+  - key: de:exercise:b2w1l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Der Beipackzettel erklärt, welcher Wirkstoff im Medikament enthalten ist und wie hoch die Dosis sein darf.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Der Beipackzettel erklärt, welcher Wirkstoff im Medikament enthalten ist und wie hoch die Dosis sein darf.
+        - Der Beipackzettel erklärt, welcher Wirkstoff im Medikament enthalten ist und wie hoch man es dosieren darf.
+        - Im Beipackzettel steht, welcher Wirkstoff im Medikament enthalten ist und wie hoch die Dosis sein darf.
+    explanation:
+      vi: "Gợi ý đáp án: Der Beipackzettel erklärt, welcher Wirkstoff im Medikament enthalten ist und wie hoch die Dosis sein darf. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Der Beipackzettel erklärt, welcher Wirkstoff im Medikament enthalten ist und wie hoch die Dosis sein darf.
+    item: de:item:b2w1-wirkstoff
+  - key: de:exercise:b2w1l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Obwohl der Pflegenotstand seit Jahren bekannt ist, wurden bisher nur wenige Maßnahmen beschlossen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù tình trạng thiếu điều dưỡng đã được biết đến nhiều năm, cho đến nay chỉ có vài biện pháp được quyết định.
+        - Mặc dù khủng hoảng thiếu điều dưỡng đã được biết từ nhiều năm, đến nay chỉ mới có ít biện pháp được thông qua.
+        - Dù khủng hoảng nhân lực điều dưỡng được biết đến từ nhiều năm, tới giờ chỉ ít biện pháp được đưa ra.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Obwohl der Pflegenotstand seit Jahren bekannt ist, wurden bisher nur wenige Maßnahmen beschlossen.\" nghĩa là: Dù tình trạng thiếu điều dưỡng đã được biết đến nhiều năm, cho đến nay chỉ có vài biện pháp được quyết định. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Dù tình trạng thiếu điều dưỡng đã được biết đến nhiều năm, cho đến nay chỉ có vài biện pháp được quyết định.
+    item: de:item:b2w1-pflegenotstand

@@ -1,0 +1,300 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w1-stadtplanung-wohnen
+order_index: 2
+level: b2
+title:
+  vi: Quy hoạch đô thị và thị trường nhà ở (Stadtplanung und Wohnungsmarkt)
+objectives:
+  - vi: "Bàn luận về vấn đề nhà ở: giá thuê, nhà xã hội, mua nhà, cải tạo."
+  - vi: "Hiểu các từ chuyên ngành đô thị: Bebauungsplan, Baugenehmigung, Denkmalschutz."
+  - vi: Dùng các động từ sanieren, bebauen, abreißen và các tính từ städtisch, ländlich, barrierefrei.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w1-gesundheitssystem
+items:
+  - item: de:item:b2w1-stadtplanung
+  - item: de:item:b2w1-bebauungsplan
+  - item: de:item:b2w1-wohnungsnot
+  - item: de:item:b2w1-mietpreisbremse
+  - item: de:item:b2w1-sozialwohnung
+  - item: de:item:b2w1-eigentumswohnung
+  - item: de:item:b2w1-eigenheim
+  - item: de:item:b2w1-immobilie
+  - item: de:item:b2w1-makler
+  - item: de:item:b2w1-baugenehmigung
+  - item: de:item:b2w1-fassade
+  - item: de:item:b2w1-grundriss
+  - item: de:item:b2w1-sanierung
+  - item: de:item:b2w1-denkmalschutz
+  - item: de:item:b2w1-stadtviertel
+  - item: de:item:b2w1-vorort
+  - item: de:item:b2w1-ballungsraum
+  - item: de:item:b2w1-gentrifizierung
+  - item: de:item:b2w1-sanieren
+  - item: de:item:b2w1-bebauen
+  - item: de:item:b2w1-abreissen
+  - item: de:item:b2w1-staedtisch
+  - item: de:item:b2w1-laendlich
+  - item: de:item:b2w1-barrierefrei
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu một bài báo về thị trường nhà ở hoặc quy hoạch đô thị và nêu được lập luận về giá thuê, mua nhà và cải tạo khu phố.
+  - type: explain
+    text:
+      vi: "Về nhà ở: die Wohnungsnot (thiếu nhà), die Mietpreisbremse (quy định hạn chế tăng giá thuê), die Sozialwohnung (nhà ở xã hội), die Eigentumswohnung (căn hộ sở hữu), das Eigenheim, die Immobilie (bất động sản), der Makler (môi giới). Cụm hay gặp: eine Wohnung kaufen / mieten / vermieten."
+  - type: explain
+    text:
+      vi: "Về quy hoạch: die Stadtplanung, der Bebauungsplan (quy hoạch xây dựng), die Baugenehmigung (giấy phép xây dựng), die Sanierung (cải tạo), der Denkmalschutz (bảo tồn di tích), der Grundriss (mặt bằng căn hộ), die Fassade. Khu vực: das Stadtviertel, der Vorort, der Ballungsraum (vùng đô thị đông dân)."
+  - type: explain
+    text:
+      vi: "Động từ: sanieren (cải tạo), bebauen (xây dựng trên một khu đất), abreißen (phá dỡ: reißt ab, riss ab, hat abgerissen). Tính từ: städtisch ↔ ländlich, barrierefrei (không có rào cản, phù hợp người khuyết tật). Gentrifizierung mô tả quá trình khu phố bình dân trở nên đắt đỏ và cư dân cũ bị đẩy ra ngoài."
+  - type: deep_explain
+    text:
+      vi: Der Makler thường thu die Provision (hoa hồng); quy định về việc ai trả hoa hồng có thể thay đổi, nên hãy kiểm tra trước khi ký. Đừng nhầm Eigenheim (nhà riêng, thường là nhà đất) với Eigentumswohnung (căn hộ thuộc sở hữu cá nhân). Denkmalgeschützte Gebäude không được thay đổi tùy ý, ví dụ Fassade phải giữ nguyên hình dạng.
+  - type: example
+    target: Die Stadtplanung muss die Interessen vieler Gruppen berücksichtigen.
+    target_lang: de
+    translation:
+      vi: Quy hoạch đô thị phải cân nhắc lợi ích của nhiều nhóm.
+    note:
+      vi: die Stadtplanung = quy hoạch đô thị.
+  - type: example
+    target: Im Bebauungsplan steht, wie hoch gebaut werden darf.
+    target_lang: de
+    translation:
+      vi: Trong quy hoạch xây dựng ghi rõ được xây cao bao nhiêu.
+    note:
+      vi: der Bebauungsplan = quy hoạch xây dựng chi tiết.
+  - type: example
+    target: In Großstädten herrscht Wohnungsnot.
+    target_lang: de
+    translation:
+      vi: Ở các thành phố lớn đang thiếu nhà ở.
+    note:
+      vi: die Wohnungsnot = tình trạng thiếu nhà.
+  - type: example
+    target: Die Mietpreisbremse soll Mieter vor hohen Preisen schützen.
+    target_lang: de
+    translation:
+      vi: Quy định hạn chế tăng giá thuê nhằm bảo vệ người thuê khỏi giá cao.
+    note:
+      vi: die Mietpreisbremse = quy định hạn chế tăng giá thuê.
+  - type: common_mistake
+    wrong: Das alte Gebäude muss werden abgerissen.
+    right: Das alte Gebäude muss abgerissen werden.
+    target_lang: de
+    note:
+      vi: "Trong câu chính với động từ khiếm khuyết, Partizip II và werden đứng cuối: muss abgerissen werden."
+  - type: common_mistake
+    wrong: Die Stadt plant, mehr Wohnungen zu bebauen.
+    right: Die Stadt plant, mehr Wohnungen zu bauen.
+    target_lang: de
+    note:
+      vi: Bebauen dùng với khu đất (ein Grundstück bebauen); xây căn hộ thì dùng bauen.
+  - type: summary
+    points:
+      - vi: die Wohnungsnot, die Mietpreisbremse, die Sozialwohnung, die Eigentumswohnung, das Eigenheim, die Immobilie, der Makler.
+      - vi: die Stadtplanung, der Bebauungsplan, die Baugenehmigung, die Sanierung, der Denkmalschutz, der Grundriss, die Fassade.
+      - vi: sanieren, bebauen, abreißen; städtisch, ländlich, barrierefrei; das Stadtviertel, der Vorort, der Ballungsraum.
+exercises:
+  - key: de:exercise:b2w1l2-listen-gentrifizierung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-gentrifizierung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Gentrifizierung verändert das Viertel stark.
+      options:
+        - { id: kwc, text: Nhiều người Đức mơ ước có nhà riêng., lang: vi }
+        - { id: v5x, text: Người môi giới đã cho chúng tôi xem ba căn hộ., lang: vi }
+        - { id: ng3, text: Khu đất này không được xây dựng., lang: vi }
+        - { id: t9l, text: Quá trình nâng cấp khu phố làm thay đổi mạnh khu này., lang: vi }
+    answer:
+      correct_option_id: t9l
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Quá trình nâng cấp khu phố làm thay đổi mạnh khu này.". Từ khoá là die Gentrifizierung (quá trình nâng cấp khu phố, đẩy người nghèo ra); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Quá trình nâng cấp khu phố làm thay đổi mạnh khu này.
+  - key: de:exercise:b2w1l2-mcq-vi-de-stadtplanung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w1-stadtplanung
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "quy hoạch đô thị"?
+      stem_lang: vi
+      options:
+        - { id: gp9, text: die Mietpreisbremse, lang: de }
+        - { id: pi7, text: der Vorort, lang: de }
+        - { id: abs, text: die Stadtplanung, lang: de }
+        - { id: c3r, text: der Bebauungsplan, lang: de }
+    answer:
+      correct_option_id: abs
+    explanation:
+      vi: "die Stadtplanung nghĩa là \"quy hoạch đô thị\". Ví dụ: Die Stadtplanung muss die Interessen vieler Gruppen berücksichtigen. (Quy hoạch đô thị phải cân nhắc lợi ích của nhiều nhóm.)"
+    display_answer: die Stadtplanung
+  - key: de:exercise:b2w1l2-mcq-de-vi-fassade
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w1-fassade
+    prompt:
+      stem: "\"die Fassade\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: yah, text: nhà ở xã hội, lang: vi }
+        - { id: y9v, text: mặt tiền, lang: vi }
+        - { id: iao, text: "việc cải tạo, tu sửa", lang: vi }
+        - { id: yn7, text: phá dỡ; xé, lang: vi }
+    answer:
+      correct_option_id: y9v
+    explanation:
+      vi: "die Fassade nghĩa là \"mặt tiền\". Ví dụ: Die Fassade des Hauses wird neu gestrichen. (Mặt tiền ngôi nhà sẽ được sơn lại.)"
+    display_answer: mặt tiền
+  - key: de:exercise:b2w1l2-mcq-artikel-baugenehmigung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-baugenehmigung
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Baugenehmigung\" (giấy phép xây dựng): ___ Baugenehmigung"
+      stem_lang: vi
+      options:
+        - { id: xou, text: der, lang: de }
+        - { id: uae, text: das, lang: de }
+        - { id: g45, text: die, lang: de }
+        - { id: wic, text: ein, lang: de }
+    answer:
+      correct_option_id: g45
+    explanation:
+      vi: "Baugenehmigung là danh từ giống cái (die): die Baugenehmigung; số nhiều: die Baugenehmigungen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w1l2-tr-word-wohnungsnot
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-wohnungsnot
+    prompt:
+      source_text: tình trạng thiếu nhà (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Wohnungsnot
+    known_wrong:
+      - answer: der Wohnungsnot
+        feedback_vi: Wohnungsnot là giống cái, nên là die Wohnungsnot.
+        error_tag: article
+      - answer: das Wohnungsnot
+        feedback_vi: Wohnungsnot là giống cái, nên là die Wohnungsnot.
+        error_tag: article
+    explanation:
+      vi: "\"tình trạng thiếu nhà\" trong tiếng Đức là die Wohnungsnot (số nhiều: không dùng). Ví dụ: In Großstädten herrscht Wohnungsnot."
+    display_answer: die Wohnungsnot
+  - key: de:exercise:b2w1l2-tr-word-abreissen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-abreissen
+    prompt:
+      source_text: phá dỡ (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - abreißen
+    explanation:
+      vi: "\"phá dỡ\" trong tiếng Đức là abreißen. Ví dụ: Das alte Kino wurde abgerissen."
+    display_answer: abreißen
+  - key: de:exercise:b2w1l2-fill-plural-vorort
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-vorort
+    prompt:
+      template: "Singular: der Vorort · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 9 }
+    answer:
+      blanks:
+        b1:
+          - Vororte
+    known_wrong:
+      - answer: Vorort
+        feedback_vi: Vorort là dạng số ít; số nhiều là Vororte.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Vorort là die Vororte (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Vorort · Plural: die Vororte"
+  - key: de:exercise:b2w1l2-mcq-luecke-bebauungsplan
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w1-bebauungsplan
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Trong quy hoạch xây dựng ghi rõ được xây cao bao nhiêu.\": Im ___ steht, wie hoch gebaut werden darf."
+      stem_lang: vi
+      options:
+        - { id: ose, text: Fassade, lang: de }
+        - { id: jy5, text: Wohnungsnot, lang: de }
+        - { id: til, text: Bebauungsplan, lang: de }
+        - { id: em6, text: Sanierung, lang: de }
+    answer:
+      correct_option_id: til
+    explanation:
+      vi: "Câu có nghĩa \"Trong quy hoạch xây dựng ghi rõ được xây cao bao nhiêu.\" nên cần Bebauungsplan (der Bebauungsplan: quy hoạch xây dựng chi tiết). Fassade = mặt tiền; Sanierung = việc cải tạo, tu sửa; Wohnungsnot = tình trạng thiếu nhà không đúng nghĩa của câu."
+    display_answer: Bebauungsplan
+  - key: de:exercise:b2w1l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Stadt hat eine Baugenehmigung erteilt, damit auf dem Grundstück neue Sozialwohnungen gebaut werden können.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Stadt hat eine Baugenehmigung erteilt, damit auf dem Grundstück neue Sozialwohnungen gebaut werden können.
+        - Die Stadt hat die Baugenehmigung erteilt, damit auf dem Grundstück neue Sozialwohnungen gebaut werden können.
+        - Damit auf dem Grundstück neue Sozialwohnungen gebaut werden können, hat die Stadt eine Baugenehmigung erteilt.
+    explanation:
+      vi: "Gợi ý đáp án: Die Stadt hat eine Baugenehmigung erteilt, damit auf dem Grundstück neue Sozialwohnungen gebaut werden können. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Stadt hat eine Baugenehmigung erteilt, damit auf dem Grundstück neue Sozialwohnungen gebaut werden können.
+    item: de:item:b2w1-sozialwohnung
+  - key: de:exercise:b2w1l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Wegen der Wohnungsnot ziehen viele Familien in die Vororte, obwohl der Weg zur Arbeit dadurch länger wird.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì thiếu nhà, nhiều gia đình chuyển ra vùng ngoại ô, dù con đường đến chỗ làm vì thế dài hơn.
+        - Do tình trạng thiếu nhà ở, nhiều gia đình chuyển ra ngoại ô, mặc dù đường đi làm vì vậy trở nên dài hơn.
+        - Vì thiếu nhà, nhiều gia đình chuyển ra các vùng ven, dẫu cho quãng đường đi làm vì thế dài ra.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Wegen der Wohnungsnot ziehen viele Familien in die Vororte, obwohl der Weg zur Arbeit dadurch länger wird.\" nghĩa là: Vì thiếu nhà, nhiều gia đình chuyển ra vùng ngoại ô, dù con đường đến chỗ làm vì thế dài hơn. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Vì thiếu nhà, nhiều gia đình chuyển ra vùng ngoại ô, dù con đường đến chỗ làm vì thế dài hơn.
+    item: de:item:b2w1-wohnungsnot
