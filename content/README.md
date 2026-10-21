@@ -105,7 +105,7 @@ items:
       vi: "“Dog” là con chó; “cat” là con mèo, “duck” là con vịt, “pig” là con lợn."
 ```
 
-- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu cho en/ko với 7 cấp, 90 câu cho ja với 6 cấp, 75 câu cho de với 5 cấp; kho de hiện có 10 câu mỗi ô, 150 câu); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
+- Mỗi ngôn ngữ có kho phải đủ **≥ 5 câu cho mỗi kỹ năng × cấp độ** (105 câu cho en/ko với 7 cấp, 90 câu cho ja với 6 cấp (kho ja hiện có 8 câu mỗi ô, 144 câu), 75 câu cho de với 5 cấp; kho de hiện có 10 câu mỗi ô, 150 câu); `stem` không trùng trong cùng ngôn ngữ; đúng một phương án đúng, phương án nhiễu hợp lý nhưng chắc chắn sai.
 - `difficulty` (tuỳ chọn) mặc định là thứ tự cấp độ + 0,5 (pre_a1/hangul = 0,5 … c2/topik6 = 6,5); nếu ghi thì phải nằm trong dải của cấp.
 - Thứ tự và id phương án trong YAML không lộ ra ngoài: `pnpm content:build` xáo trộn cố định theo key và đổi id thành chuỗi ngẫu nhiên ổn định.
 - File demo giữ `key_confidence: unreviewed` (mặc định), không ghi `reviewed_by`/`reviewed_at`; file không demo phải có cả hai.
@@ -167,13 +167,14 @@ questions:
 
 ## Tiếng Nhật (ja)
 
-`LANGUAGES.ja.available` là `true` (`packages/shared/src/constants.ts`): đã có chương trình Kana → N5 (`kana-basics`), N4, N3, N2, N1, kho kiểm tra đầu vào và đề JLPT N5/N4/N3/N2/N1. Các file ja ghi `demo: false`, `status: published` với người duyệt là AI do chủ dự án ủy quyền (như en/ko, xem đầu file này); chưa qua giáo viên bản ngữ.
+`LANGUAGES.ja.available` là `true` (`packages/shared/src/constants.ts`): đã có chương trình Kana → N5 (`kana-basics`, 80 bài), N4, N3, N2, N1 (tổng 273 bài), kho kiểm tra đầu vào (144 câu) và hai đề JLPT mỗi cấp N5/N4/N3/N2/N1 (`jlpt-nX-mock-1`, `jlpt-nX-mock-2`). Độ phủ từ vựng và chữ kanji vẫn thấp hơn các mốc tham khảo (xem docs/FEATURES.md mục 21). Các file ja ghi `demo: false`, `status: published` với người duyệt là AI do chủ dự án ủy quyền (như en/ko, xem đầu file này); chưa qua giáo viên bản ngữ.
 
 - Học liệu: `ja/items/<chủ-đề>.yaml`, key `ja:item:<tên>`. `type`: `vocab`, `phrase`, `grammar_point`, `kana` (chữ Hiragana/Katakana, như `hangul` của KO).
 - `front.text` viết bằng chữ Nhật (kana/kanji); `front.reading` là cách đọc bằng kana khi từ có kanji (学校 → がっこう, dùng làm furigana); `front.romanization` là Hepburn, chỉ để tham khảo.
 - Chương trình: `ja/programs/<slug>/program.yaml` (key `ja:program:<slug>`, ví dụ slug `kana`, `n5`, `n4`), unit `units/<nn>-<unit>/unit.yaml`, bài `units/<nn>-<unit>/lessons/<nn>-<bài>.yaml`. `goal_types` của chương trình `kind: goal`: `kana_basics`, `communication`, `jlpt`, `skill_focus`.
-- Kho kiểm tra đầu vào: `diagnostic/ja/<vocabulary|grammar|reading>.yaml`, `language: ja`, key `ja:diag:<tên>`; mỗi ô kỹ năng × cấp cần ≥ 5 câu. Bài kiểm tra `ja:assessment:diagnostic:v1` đã có sẵn trong DB (migration `20261018130000_japanese.sql`).
+- Kho kiểm tra đầu vào: `diagnostic/ja/<vocabulary|grammar|reading>.yaml`, `language: ja`, key `ja:diag:<tên>`; mỗi ô kỹ năng × cấp cần ≥ 5 câu (hiện 8 câu mỗi ô, 144 câu). Bài kiểm tra `ja:assessment:diagnostic:v1` đã có sẵn trong DB (migration `20261018130000_japanese.sql`).
 - Đề luyện thi: `exams/ja/<tên-đề>.yaml`, `family: jlpt`, key `ja:exam:<tên>`, câu `ja:examq:<tên>`; chấm như TOPIK: `section_max` cho mọi phần có câu hỏi, `bands` tăng dần theo `n5…n1`, `pass_ratio: null`.
+- Quy ước soạn bài ja: bài `kana-basics` (Kana → N5) chỉ dùng kana trong thân bài và bài tập (kanji chỉ ở mặt trước thẻ, kèm `reading` bằng kana); từ N4 trở lên dùng kanji tới cấp đó. Đáp án phải khai cả biến thể kana/kanji. Câu xếp từ (`word_bank`) phải khai mọi thứ tự từ tự nhiên trong `orders`, và danh sách từ viết trong file không được trùng với bất kỳ thứ tự đúng nào. `display_answer` phải là đáp án mà máy chấm công nhận (lint ja kiểm tra). `known_wrong` không bao giờ được là câu đúng.
 
 ## Tiếng Đức (de)
 
