@@ -266,7 +266,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Der Beipackzettel erklärt, welcher Wirkstoff im Medikament enthalten ist und wie hoch die Dosis sein darf.
+      source_text: "Tờ hướng dẫn giải thích thuốc chứa hoạt chất nào và liều dùng được phép cao đến đâu."
       source_lang: vi
       direction: vi_to_target
     answer:

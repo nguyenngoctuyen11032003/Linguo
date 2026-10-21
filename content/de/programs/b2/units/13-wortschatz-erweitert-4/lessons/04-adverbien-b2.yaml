@@ -202,7 +202,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Nahezu alle Teilnehmer waren zufrieden, einige hingegen kritisierten, dass die Organisation mitunter chaotisch war.
+      source_text: "Gần như tất cả người tham gia đều hài lòng, còn một số người thì chê rằng việc tổ chức đôi khi lộn xộn."
       source_lang: vi
       direction: vi_to_target
     answer:

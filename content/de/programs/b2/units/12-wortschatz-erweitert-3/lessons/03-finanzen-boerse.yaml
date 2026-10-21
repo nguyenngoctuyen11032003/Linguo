@@ -267,7 +267,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Die Zentralbank hat den Leitzins gesenkt, um die Konjunktur anzukurbeln, und viele Anleger kaufen jetzt Aktien.
+      source_text: "Ngân hàng trung ương đã hạ lãi suất cơ bản để kích thích nền kinh tế, và nhiều nhà đầu tư đang mua cổ phiếu."
       source_lang: vi
       direction: vi_to_target
     answer:

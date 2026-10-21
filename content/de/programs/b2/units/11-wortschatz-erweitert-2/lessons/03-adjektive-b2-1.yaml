@@ -203,7 +203,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Die erheblichen Kosten sind für das Unternehmen kaum angemessen, und es ist fraglich, ob das Projekt gelingt.
+      source_text: "Chi phí đáng kể hầu như không phù hợp với doanh nghiệp, và chưa chắc dự án sẽ thành công."
       source_lang: vi
       direction: vi_to_target
     answer:

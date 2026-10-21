@@ -269,7 +269,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Die Zielgruppe wird durch verlockende Angebote angelockt, aber viele kaufen aus einem Impuls, den sie später bereuen.
+      source_text: "Nhóm đối tượng bị thu hút bởi những ưu đãi hấp dẫn, nhưng nhiều người mua vì bốc đồng và về sau hối hận."
       source_lang: vi
       direction: vi_to_target
     answer:

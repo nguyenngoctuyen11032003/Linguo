@@ -267,7 +267,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Dieses Wort ist heute veraltet, aber man kann es leicht umschreiben, damit es niemand missversteht.
+      source_text: "Từ này ngày nay đã lỗi thời, nhưng người ta có thể dễ dàng diễn đạt vòng để không ai hiểu nhầm."
       source_lang: vi
       direction: vi_to_target
     answer:

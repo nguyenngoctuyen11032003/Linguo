@@ -203,7 +203,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Es ist unglaublich, wie sorgfältig und sparsam er mit dem Geld umgeht.
+      source_text: "Thật khó tin anh ấy tiêu tiền cẩn thận và tiết kiệm đến thế."
       source_lang: vi
       direction: vi_to_target
     answer:

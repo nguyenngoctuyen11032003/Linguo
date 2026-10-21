@@ -266,7 +266,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Mein Kollege ist sehr gesprächig, aber leider auch ziemlich unpünktlich.
+      source_text: "Đồng nghiệp của tôi rất hay nói chuyện, nhưng tiếc là cũng khá hay đi trễ."
       source_lang: vi
       direction: vi_to_target
     answer:

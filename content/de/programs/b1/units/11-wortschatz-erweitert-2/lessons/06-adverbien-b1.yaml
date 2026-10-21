@@ -203,7 +203,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Ich habe vorhin angerufen, aber offenbar war niemand zu Hause.
+      source_text: "Lúc nãy tôi đã gọi điện, nhưng có vẻ không có ai ở nhà."
       source_lang: vi
       direction: vi_to_target
     answer:

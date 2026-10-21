@@ -265,7 +265,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Damit die Verkehrswende gelingt, muss der Nahverkehr ausgebaut und das Schienennetz modernisiert werden.
+      source_text: "Để chuyển đổi giao thông thành công, phải mở rộng giao thông công cộng gần và hiện đại hóa mạng lưới đường sắt."
       source_lang: vi
       direction: vi_to_target
     answer:

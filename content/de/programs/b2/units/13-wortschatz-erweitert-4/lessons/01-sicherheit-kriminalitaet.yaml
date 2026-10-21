@@ -274,7 +274,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Der Täter ist nachts in das Haus eingebrochen, hat Schmuck gestohlen und wurde später festgenommen.
+      source_text: "Thủ phạm đã đột nhập vào nhà ban đêm, lấy trộm đồ trang sức và sau đó bị bắt."
       source_lang: vi
       direction: vi_to_target
     answer:

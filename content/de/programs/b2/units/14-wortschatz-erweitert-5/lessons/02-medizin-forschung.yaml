@@ -268,7 +268,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Weil das Virus sich schnell verbreitet hat, ist die Pandemie nur mit großem Aufwand eingedämmt worden.
+      source_text: "Vì vi rút lây lan nhanh nên đại dịch chỉ được kiềm chế sau những nỗ lực lớn."
       source_lang: vi
       direction: vi_to_target
     answer:

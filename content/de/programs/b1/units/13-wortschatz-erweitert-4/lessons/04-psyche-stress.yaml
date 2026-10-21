@@ -266,7 +266,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Wenn ich gestresst bin, gehe ich spazieren, um abzuschalten, und danach bin ich wieder ausgeglichen.
+      source_text: "Khi bị căng thẳng, tôi đi dạo để thư giãn, và sau đó tôi lại thấy cân bằng."
       source_lang: vi
       direction: vi_to_target
     answer:

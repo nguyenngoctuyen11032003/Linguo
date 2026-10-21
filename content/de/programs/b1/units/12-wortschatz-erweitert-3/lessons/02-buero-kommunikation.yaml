@@ -266,7 +266,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Ich habe die Rundmail an alle Kollegen weitergegeben und die Sitzung auf Donnerstag verschoben.
+      source_text: "Tôi đã chuyển thư gửi nhóm cho mọi đồng nghiệp và dời cuộc họp sang thứ Năm."
       source_lang: vi
       direction: vi_to_target
     answer:

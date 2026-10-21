@@ -260,7 +260,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Mein Vater wurde gestern ins Krankenhaus eingewiesen und wird morgen operiert.
+      source_text: "Bố tôi hôm qua được chỉ định nhập viện và ngày mai sẽ được mổ."
       source_lang: vi
       direction: vi_to_target
     answer:

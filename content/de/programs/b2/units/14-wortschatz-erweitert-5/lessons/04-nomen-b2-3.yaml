@@ -270,7 +270,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Nach einer langen Auseinandersetzung kamen die Parteien zu einer Einigung, und das Vertrauen wuchs wieder.
+      source_text: "Sau một cuộc tranh luận dài, các bên đã đi đến thống nhất và niềm tin lại tăng lên."
       source_lang: vi
       direction: vi_to_target
     answer:

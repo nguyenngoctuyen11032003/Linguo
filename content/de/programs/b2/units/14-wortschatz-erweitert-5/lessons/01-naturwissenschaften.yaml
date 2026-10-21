@@ -271,7 +271,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Die Forscher haben die Zellen unter dem Mikroskop beobachtet und festgestellt, dass sie sich schnell vermehren.
+      source_text: "Các nhà nghiên cứu đã quan sát các tế bào dưới kính hiển vi và xác định rằng chúng sinh sôi rất nhanh."
       source_lang: vi
       direction: vi_to_target
     answer:

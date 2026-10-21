@@ -270,7 +270,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Nach dem Erdbeben sind viele Häuser eingestürzt, und die Rettungskräfte haben Überlebende aus den Trümmern geborgen.
+      source_text: "Sau trận động đất nhiều ngôi nhà đã sập, và lực lượng cứu hộ đã cứu những người sống sót ra khỏi đống đổ nát."
       source_lang: vi
       direction: vi_to_target
     answer:

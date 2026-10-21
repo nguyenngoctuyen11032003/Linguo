@@ -264,7 +264,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Ich möchte mich bei Ihrer Firma bewerben, deshalb schicke ich Ihnen meine Bewerbungsunterlagen.
+      source_text: "Tôi muốn ứng tuyển vào công ty của ông/bà, vì vậy tôi gửi kèm hồ sơ xin việc của mình."
       source_lang: vi
       direction: vi_to_target
     answer:

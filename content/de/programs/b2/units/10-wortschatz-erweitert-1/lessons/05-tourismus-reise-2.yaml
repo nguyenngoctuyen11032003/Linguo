@@ -266,7 +266,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Weil das Hotel in der Hauptsaison ausgebucht ist, haben wir unsere Pauschalreise umgebucht.
+      source_text: "Vì khách sạn kín chỗ trong mùa cao điểm, chúng tôi đã đổi chuyến du lịch trọn gói của mình."
       source_lang: vi
       direction: vi_to_target
     answer:

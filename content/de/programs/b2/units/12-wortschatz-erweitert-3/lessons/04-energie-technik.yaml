@@ -267,7 +267,7 @@ exercises:
     answer_lang: de
     difficulty: 4
     prompt:
-      source_text: Weil die Photovoltaikanlagen mehr Strom ins Netz einspeisen, brauchen wir bessere Speicher.
+      source_text: "Vì các hệ thống điện mặt trời đưa nhiều điện vào lưới hơn, chúng ta cần các thiết bị lưu trữ tốt hơn."
       source_lang: vi
       direction: vi_to_target
     answer:
