@@ -1,0 +1,2280 @@
+# Học liệu unit B2W2 "Mở rộng vốn từ B2 (2): động từ, tính từ và danh từ trừu tượng ở trình độ B2 (Wortschatz erweitern 2)" (mở rộng vốn từ, chương trình B2).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:b2w2-abschaffen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: abschaffen, schafft ab, schaffte ab, hat abgeschafft
+      pos: động từ
+    back:
+      meaning:
+        vi: bãi bỏ
+      examples:
+        - target: Die Stadt will die Parkgebühren abschaffen.
+          translation:
+            vi: Thành phố muốn bãi bỏ phí đỗ xe.
+  - key: de:item:b2w2-abschwaechen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: abschwächen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm giảm nhẹ, làm yếu đi
+      examples:
+        - target: Die Regierung schwächt ihre Aussage ab.
+          translation:
+            vi: Chính phủ làm dịu lời tuyên bố của mình.
+  - key: de:item:b2w2-anstreben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anstreben
+      pos: động từ
+    back:
+      meaning:
+        vi: hướng tới, nhắm tới
+      examples:
+        - target: Das Unternehmen strebt ein Wachstum von fünf Prozent an.
+          translation:
+            vi: Công ty nhắm tới mức tăng trưởng năm phần trăm.
+  - key: de:item:b2w2-anwenden
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anwenden, wendet an, wandte an, hat angewandt
+      pos: động từ
+    back:
+      meaning:
+        vi: áp dụng, sử dụng
+      examples:
+        - target: Dieses Verfahren lässt sich in vielen Bereichen anwenden.
+          translation:
+            vi: Quy trình này có thể áp dụng trong nhiều lĩnh vực.
+  - key: de:item:b2w2-aufdecken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufdecken
+      pos: động từ
+    back:
+      meaning:
+        vi: phát hiện, vạch trần
+      examples:
+        - target: Journalisten haben einen Skandal aufgedeckt.
+          translation:
+            vi: Các nhà báo đã vạch trần một vụ bê bối.
+  - key: de:item:b2w2-aufklaeren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufklären
+      pos: động từ
+    back:
+      meaning:
+        vi: làm sáng tỏ; thông tin cho ai
+      examples:
+        - target: Die Polizei konnte den Fall nicht aufklären.
+          translation:
+            vi: Cảnh sát không thể làm sáng tỏ vụ việc.
+  - key: de:item:b2w2-ausgleichen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausgleichen, gleicht aus, glich aus, hat ausgeglichen
+      pos: động từ
+    back:
+      meaning:
+        vi: bù đắp, cân bằng
+      examples:
+        - target: Höhere Einnahmen gleichen die Verluste aus.
+          translation:
+            vi: Thu nhập cao hơn bù đắp được các khoản lỗ.
+  - key: de:item:b2w2-ausloesen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: auslösen
+      pos: động từ
+    back:
+      meaning:
+        vi: gây ra, kích hoạt
+      examples:
+        - target: Der Beschluss hat heftige Proteste ausgelöst.
+          translation:
+            vi: Quyết định đó đã gây ra những cuộc biểu tình dữ dội.
+  - key: de:item:b2w2-ausnutzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausnutzen
+      pos: động từ
+    back:
+      meaning:
+        vi: tận dụng; lợi dụng
+      examples:
+        - target: Man sollte jede Chance ausnutzen.
+          translation:
+            vi: Người ta nên tận dụng mọi cơ hội.
+  - key: de:item:b2w2-ausschliessen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausschließen, schließt aus, schloss aus, hat ausgeschlossen
+      pos: động từ
+    back:
+      meaning:
+        vi: loại trừ, khai trừ
+      examples:
+        - target: Eine Panne lässt sich nie völlig ausschließen.
+          translation:
+            vi: Một sự cố không bao giờ có thể loại trừ hoàn toàn.
+  - key: de:item:b2w2-bedrohen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bedrohen
+      pos: động từ
+    back:
+      meaning:
+        vi: đe dọa
+      examples:
+        - target: Die Dürre bedroht die Ernte.
+          translation:
+            vi: Hạn hán đe dọa vụ mùa.
+  - key: de:item:b2w2-beeindrucken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beeindrucken
+      pos: động từ
+    back:
+      meaning:
+        vi: gây ấn tượng
+      examples:
+        - target: Ihre Leistung hat die Jury beeindruckt.
+          translation:
+            vi: Thành tích của cô ấy đã gây ấn tượng với ban giám khảo.
+  - key: de:item:b2w2-beharren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beharren
+      pos: động từ
+    back:
+      meaning:
+        vi: khăng khăng (auf + Dativ)
+      examples:
+        - target: Er beharrt auf seinem Recht.
+          translation:
+            vi: Anh ấy khăng khăng giữ quyền lợi của mình.
+  - key: de:item:b2w2-beitreten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beitreten, tritt bei, trat bei, ist beigetreten
+      pos: động từ
+    back:
+      meaning:
+        vi: gia nhập (+ Dativ)
+      examples:
+        - target: Das Land ist der Union beigetreten.
+          translation:
+            vi: Quốc gia này đã gia nhập liên minh.
+  - key: de:item:b2w2-bemaengeln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bemängeln
+      pos: động từ
+    back:
+      meaning:
+        vi: chê trách, phàn nàn
+      examples:
+        - target: Die Prüfer bemängeln die schlechte Organisation.
+          translation:
+            vi: Các giám khảo chê trách việc tổ chức kém.
+  - key: de:item:b2w2-beruhen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beruhen
+      pos: động từ
+    back:
+      meaning:
+        vi: dựa trên (auf + Dativ)
+      examples:
+        - target: Die Theorie beruht auf mehreren Experimenten.
+          translation:
+            vi: Lý thuyết này dựa trên nhiều thí nghiệm.
+  - key: de:item:b2w2-beschleunigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beschleunigen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm nhanh hơn, thúc đẩy
+      examples:
+        - target: Neue Software soll das Verfahren beschleunigen.
+          translation:
+            vi: Phần mềm mới sẽ thúc đẩy quy trình.
+  - key: de:item:b2w2-beschraenken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beschränken
+      pos: động từ
+    back:
+      meaning:
+        vi: hạn chế, giới hạn
+      examples:
+        - target: Die Zahl der Teilnehmer ist auf zwanzig beschränkt.
+          translation:
+            vi: Số người tham gia được giới hạn ở hai mươi.
+  - key: de:item:b2w2-beseitigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beseitigen
+      pos: động từ
+    back:
+      meaning:
+        vi: loại bỏ, dọn dẹp
+      examples:
+        - target: Die Schäden müssen schnell beseitigt werden.
+          translation:
+            vi: Các hư hại phải được khắc phục nhanh chóng.
+  - key: de:item:b2w2-besitzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: besitzen, besitzt, besaß, hat besessen
+      pos: động từ
+    back:
+      meaning:
+        vi: sở hữu
+      examples:
+        - target: Sie besitzt mehrere Immobilien.
+          translation:
+            vi: Cô ấy sở hữu nhiều bất động sản.
+  - key: de:item:b2w2-bestimmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bestimmen
+      pos: động từ
+    back:
+      meaning:
+        vi: quyết định, xác định
+      examples:
+        - target: Das Wetter bestimmt unseren Reiseplan.
+          translation:
+            vi: Thời tiết quyết định kế hoạch du lịch của chúng tôi.
+  - key: de:item:b2w2-betreffen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: betreffen, betrifft, betraf, hat betroffen
+      pos: động từ
+    back:
+      meaning:
+        vi: liên quan, ảnh hưởng đến
+      examples:
+        - target: Die neue Regelung betrifft alle Mieter.
+          translation:
+            vi: Quy định mới ảnh hưởng đến mọi người thuê nhà.
+  - key: de:item:b2w2-bewerten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bewerten
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh giá, chấm điểm
+      examples:
+        - target: Die Experten bewerten die Lage unterschiedlich.
+          translation:
+            vi: Các chuyên gia đánh giá tình hình khác nhau.
+  - key: de:item:b2w2-bezeichnen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bezeichnen
+      pos: động từ
+    back:
+      meaning:
+        vi: gọi là, mô tả (als)
+      examples:
+        - target: Er bezeichnet das Projekt als Erfolg.
+          translation:
+            vi: Anh ấy gọi dự án là một thành công.
+  - key: de:item:b2w2-beziehen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beziehen, bezieht, bezog, hat bezogen
+      pos: động từ
+    back:
+      meaning:
+        vi: nhận (lương, hàng); căng (giường); liên hệ
+      examples:
+        - target: Sie bezieht ein monatliches Gehalt von 3000 Euro.
+          translation:
+            vi: Cô ấy nhận lương hằng tháng ba nghìn euro.
+  - key: de:item:b2w2-billigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: billigen
+      pos: động từ
+    back:
+      meaning:
+        vi: chấp thuận
+      examples:
+        - target: Der Stadtrat hat den Plan gebilligt.
+          translation:
+            vi: Hội đồng thành phố đã chấp thuận kế hoạch.
+  - key: de:item:b2w2-einschraenken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: einschränken
+      pos: động từ
+    back:
+      meaning:
+        vi: hạn chế, thu hẹp
+      examples:
+        - target: Die Regierung will die Rechte nicht weiter einschränken.
+          translation:
+            vi: Chính phủ không muốn hạn chế thêm các quyền.
+  - key: de:item:b2w2-einsetzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: einsetzen
+      pos: động từ
+    back:
+      meaning:
+        vi: sử dụng, bố trí; đặt vào
+      examples:
+        - target: Das Unternehmen setzt mehr Roboter ein.
+          translation:
+            vi: Doanh nghiệp sử dụng nhiều robot hơn.
+  - key: de:item:b2w2-entfalten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entfalten
+      pos: động từ
+    back:
+      meaning:
+        vi: triển khai, phát triển, mở ra
+      examples:
+        - target: In einem guten Umfeld kann man seine Talente entfalten.
+          translation:
+            vi: Trong môi trường tốt, người ta phát triển được tài năng.
+  - key: de:item:b2w2-entfernen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entfernen
+      pos: động từ
+    back:
+      meaning:
+        vi: loại bỏ, tháo gỡ
+      examples:
+        - target: Die Flecken lassen sich leicht entfernen.
+          translation:
+            vi: Những vết bẩn này dễ tẩy.
+  - key: de:item:b2w2-entnehmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entnehmen, entnimmt, entnahm, hat entnommen
+      pos: động từ
+    back:
+      meaning:
+        vi: lấy ra; rút ra (từ nguồn)
+      examples:
+        - target: Dem Bericht entnehme ich, dass die Preise steigen.
+          translation:
+            vi: Từ bản báo cáo tôi rút ra là giá đang tăng.
+  - key: de:item:b2w2-entsprechen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entsprechen, entspricht, entsprach, hat entsprochen
+      pos: động từ
+    back:
+      meaning:
+        vi: đáp ứng, tương ứng (+ Dativ)
+      examples:
+        - target: Das Ergebnis entspricht meinen Erwartungen.
+          translation:
+            vi: Kết quả đáp ứng kỳ vọng của tôi.
+  - key: de:item:b2w2-erfassen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erfassen
+      pos: động từ
+    back:
+      meaning:
+        vi: ghi nhận, nắm bắt
+      examples:
+        - target: Die Statistik erfasst alle Haushalte.
+          translation:
+            vi: Bản thống kê ghi nhận tất cả các hộ gia đình.
+  - key: de:item:b2w2-ergreifen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ergreifen, ergreift, ergriff, hat ergriffen
+      pos: động từ
+    back:
+      meaning:
+        vi: nắm lấy; áp dụng (biện pháp)
+      examples:
+        - target: Die Stadt muss schnell Maßnahmen ergreifen.
+          translation:
+            vi: Thành phố phải nhanh chóng áp dụng biện pháp.
+  - key: de:item:b2w2-erheben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erheben, erhebt, erhob, hat erhoben
+      pos: động từ
+    back:
+      meaning:
+        vi: thu (phí), nêu lên (ý kiến)
+      examples:
+        - target: Die Gemeinde erhebt eine neue Gebühr.
+          translation:
+            vi: Chính quyền địa phương thu một khoản phí mới.
+  - key: de:item:b2w2-erlangen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erlangen
+      pos: động từ
+    back:
+      meaning:
+        vi: đạt được
+      examples:
+        - target: Sie hat nach langem Kampf ihre Unabhängigkeit erlangt.
+          translation:
+            vi: Sau cuộc đấu tranh dài cô ấy đã giành được sự độc lập.
+  - key: de:item:b2w2-ernennen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ernennen, ernennt, ernannte, hat ernannt
+      pos: động từ
+    back:
+      meaning:
+        vi: bổ nhiệm
+      examples:
+        - target: Der Präsident hat sie zur Ministerin ernannt.
+          translation:
+            vi: Tổng thống đã bổ nhiệm bà làm bộ trưởng.
+  - key: de:item:b2w2-erneuern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erneuern
+      pos: động từ
+    back:
+      meaning:
+        vi: làm mới, thay mới
+      examples:
+        - target: Der Vertrag wurde für zwei Jahre erneuert.
+          translation:
+            vi: Hợp đồng được gia hạn thêm hai năm.
+  - key: de:item:b2w2-erschweren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erschweren
+      pos: động từ
+    back:
+      meaning:
+        vi: làm khó khăn hơn
+      examples:
+        - target: Das Wetter erschwert die Arbeit.
+          translation:
+            vi: Thời tiết làm công việc khó hơn.
+  - key: de:item:b2w2-erstellen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erstellen
+      pos: động từ
+    back:
+      meaning:
+        vi: lập, soạn thảo
+      examples:
+        - target: Wir erstellen bis Montag einen Bericht.
+          translation:
+            vi: Chúng tôi lập một bản báo cáo trước thứ Hai.
+  - key: de:item:b2w2-erzeugen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erzeugen
+      pos: động từ
+    back:
+      meaning:
+        vi: tạo ra, sản xuất
+      examples:
+        - target: Windräder erzeugen Strom ohne Abgase.
+          translation:
+            vi: Tua-bin gió tạo ra điện mà không thải khí.
+  - key: de:item:b2w2-festlegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: festlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: ấn định, quy định
+      examples:
+        - target: Das Gesetz legt die Frist fest.
+          translation:
+            vi: Luật quy định thời hạn.
+  - key: de:item:b2w2-feststellen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: feststellen
+      pos: động từ
+    back:
+      meaning:
+        vi: xác định, nhận thấy
+      examples:
+        - target: Der Arzt hat eine Allergie festgestellt.
+          translation:
+            vi: Bác sĩ đã xác định có dị ứng.
+  - key: de:item:b2w2-gewaehrleisten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gewährleisten
+      pos: động từ
+    back:
+      meaning:
+        vi: đảm bảo
+      examples:
+        - target: Die Firma muss die Sicherheit der Mitarbeiter gewährleisten.
+          translation:
+            vi: Công ty phải đảm bảo an toàn cho nhân viên.
+  - key: de:item:b2w2-herausfinden
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: herausfinden, findet heraus, fand heraus, hat herausgefunden
+      pos: động từ
+    back:
+      meaning:
+        vi: tìm ra, phát hiện
+      examples:
+        - target: Wir müssen herausfinden, was passiert ist.
+          translation:
+            vi: Chúng ta phải tìm ra chuyện gì đã xảy ra.
+  - key: de:item:b2w2-hervorrufen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hervorrufen, ruft hervor, rief hervor, hat hervorgerufen
+      pos: động từ
+    back:
+      meaning:
+        vi: gây ra, khơi dậy
+      examples:
+        - target: Das Medikament kann Müdigkeit hervorrufen.
+          translation:
+            vi: Loại thuốc này có thể gây mệt mỏi.
+  - key: de:item:b2w2-hinnehmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hinnehmen, nimmt hin, nahm hin, hat hingenommen
+      pos: động từ
+    back:
+      meaning:
+        vi: chấp nhận (điều khó chịu)
+      examples:
+        - target: Diese Verspätung können wir nicht hinnehmen.
+          translation:
+            vi: Chúng tôi không thể chấp nhận sự chậm trễ này.
+  - key: de:item:b2w2-kennzeichnen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kennzeichnen
+      pos: động từ
+    back:
+      meaning:
+        vi: ghi nhãn, đặc trưng cho
+      examples:
+        - target: Die Produkte müssen deutlich gekennzeichnet sein.
+          translation:
+            vi: Các sản phẩm phải được ghi nhãn rõ ràng.
+  - key: de:item:b2w2-angemessen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: angemessen
+      pos: tính từ
+    back:
+      meaning:
+        vi: thích hợp, vừa phải
+      examples:
+        - target: Der Preis ist für die Leistung angemessen.
+          translation:
+            vi: Giá cả phù hợp với chất lượng.
+  - key: de:item:b2w2-betraechtlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beträchtlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng kể
+      examples:
+        - target: Das Unternehmen hat beträchtliche Verluste gemacht.
+          translation:
+            vi: Doanh nghiệp đã chịu những khoản lỗ đáng kể.
+  - key: de:item:b2w2-bedeutend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bedeutend
+      pos: tính từ
+    back:
+      meaning:
+        vi: quan trọng, lớn lao
+      examples:
+        - target: Er gilt als ein bedeutender Forscher.
+          translation:
+            vi: Ông được xem là một nhà nghiên cứu lớn.
+  - key: de:item:b2w2-erheblich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erheblich
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng kể, nghiêm trọng
+      examples:
+        - target: Die Preise sind erheblich gestiegen.
+          translation:
+            vi: Giá cả đã tăng đáng kể.
+  - key: de:item:b2w2-fraglich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fraglich
+      pos: tính từ
+    back:
+      meaning:
+        vi: còn đáng ngờ, chưa chắc chắn
+      examples:
+        - target: Es ist fraglich, ob der Plan funktioniert.
+          translation:
+            vi: Chưa chắc kế hoạch này có hiệu quả.
+  - key: de:item:b2w2-geeignet
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: geeignet
+      pos: tính từ
+    back:
+      meaning:
+        vi: phù hợp, thích hợp
+      examples:
+        - target: Das Buch ist für Anfänger gut geeignet.
+          translation:
+            vi: Cuốn sách này rất phù hợp cho người mới bắt đầu.
+  - key: de:item:b2w2-geringfuegig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: geringfügig
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhỏ, không đáng kể
+      examples:
+        - target: Es gab nur geringfügige Änderungen.
+          translation:
+            vi: Chỉ có những thay đổi không đáng kể.
+  - key: de:item:b2w2-gewaltig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gewaltig
+      pos: tính từ
+    back:
+      meaning:
+        vi: to lớn, mạnh mẽ
+      examples:
+        - target: Der Sturm hat gewaltige Schäden verursacht.
+          translation:
+            vi: Cơn bão gây ra những thiệt hại to lớn.
+  - key: de:item:b2w2-kritisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kritisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: phê phán; nguy kịch, then chốt
+      examples:
+        - target: Sie sieht die neue Regel kritisch.
+          translation:
+            vi: Cô ấy nhìn quy định mới một cách phê phán.
+  - key: de:item:b2w2-massgeblich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: maßgeblich
+      pos: tính từ
+    back:
+      meaning:
+        vi: mang tính quyết định, có thẩm quyền
+      examples:
+        - target: Er war maßgeblich an dem Erfolg beteiligt.
+          translation:
+            vi: Anh ấy đóng vai trò quyết định trong thành công.
+  - key: de:item:b2w2-notwendig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: notwendig
+      pos: tính từ
+    back:
+      meaning:
+        vi: cần thiết
+      examples:
+        - target: Für die Stelle ist ein Abschluss notwendig.
+          translation:
+            vi: Cho vị trí này cần có bằng cấp.
+  - key: de:item:b2w2-objektiv
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: objektiv
+      pos: tính từ
+    back:
+      meaning:
+        vi: khách quan
+      examples:
+        - target: Der Bericht ist sachlich und objektiv.
+          translation:
+            vi: Bài báo cáo trình bày thực tế và khách quan.
+  - key: de:item:b2w2-riskant
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: riskant
+      pos: tính từ
+    back:
+      meaning:
+        vi: rủi ro, mạo hiểm
+      examples:
+        - target: Die Investition ist sehr riskant.
+          translation:
+            vi: Khoản đầu tư này rất rủi ro.
+  - key: de:item:b2w2-umstritten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umstritten
+      pos: tính từ
+    back:
+      meaning:
+        vi: gây tranh cãi
+      examples:
+        - target: Das Gesetz ist politisch umstritten.
+          translation:
+            vi: Đạo luật gây tranh cãi về mặt chính trị.
+  - key: de:item:b2w2-unentbehrlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unentbehrlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể thiếu
+      examples:
+        - target: Das Handy ist für viele unentbehrlich geworden.
+          translation:
+            vi: Điện thoại đã trở nên không thể thiếu với nhiều người.
+  - key: de:item:b2w2-ungeeignet
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ungeeignet
+      pos: tính từ
+    back:
+      meaning:
+        vi: không phù hợp
+      examples:
+        - target: Das Material ist für draußen ungeeignet.
+          translation:
+            vi: Vật liệu này không phù hợp để dùng ngoài trời.
+  - key: de:item:b2w2-vorbildlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorbildlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: mẫu mực, gương mẫu
+      examples:
+        - target: Das Team hat vorbildlich zusammengearbeitet.
+          translation:
+            vi: Nhóm đã phối hợp một cách mẫu mực.
+  - key: de:item:b2w2-vorrangig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorrangig
+      pos: tính từ
+    back:
+      meaning:
+        vi: ưu tiên hàng đầu
+      examples:
+        - target: Die Sicherheit hat vorrangig Bedeutung.
+          translation:
+            vi: An toàn có tầm quan trọng hàng đầu.
+  - key: de:item:b2w2-wesentlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: wesentlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: cốt yếu, đáng kể
+      examples:
+        - target: Das ist ein wesentlicher Unterschied.
+          translation:
+            vi: Đó là một sự khác biệt cốt yếu.
+  - key: de:item:b2w2-zahlreich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zahlreich
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhiều, đông đảo
+      examples:
+        - target: Zahlreiche Besucher kamen zur Eröffnung.
+          translation:
+            vi: Rất đông khách đã đến dự lễ khai mạc.
+  - key: de:item:b2w2-zusaetzlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zusätzlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thêm, bổ sung
+      examples:
+        - target: Wir brauchen zusätzliche Informationen.
+          translation:
+            vi: Chúng tôi cần thêm thông tin.
+  - key: de:item:b2w2-hartnaeckig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hartnäckig
+      pos: tính từ
+    back:
+      meaning:
+        vi: dai dẳng, bướng bỉnh
+      examples:
+        - target: Das Problem ist hartnäckig.
+          translation:
+            vi: Vấn đề này rất dai dẳng.
+  - key: de:item:b2w2-langfristig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: langfristig
+      pos: tính từ
+    back:
+      meaning:
+        vi: dài hạn
+      examples:
+        - target: Wir planen langfristig.
+          translation:
+            vi: Chúng tôi lập kế hoạch dài hạn.
+  - key: de:item:b2w2-herkoemmlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: herkömmlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thông thường, truyền thống
+      examples:
+        - target: Herkömmliche Methoden sind oft teurer.
+          translation:
+            vi: Các phương pháp thông thường thường đắt hơn.
+  - key: de:item:b2w2-aufwendig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufwendig
+      pos: tính từ
+    back:
+      meaning:
+        vi: tốn công sức, tốn kém
+      examples:
+        - target: Die Reparatur war sehr aufwendig.
+          translation:
+            vi: Việc sửa chữa rất tốn công sức.
+  - key: de:item:b2w2-ausdruecklich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausdrücklich
+      pos: tính từ
+    back:
+      meaning:
+        vi: một cách rõ ràng, dứt khoát
+      examples:
+        - target: Das Gesetz verbietet dies ausdrücklich.
+          translation:
+            vi: Luật cấm điều này một cách rõ ràng.
+  - key: de:item:b2w2-einheitlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: einheitlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thống nhất
+      examples:
+        - target: Es gibt keine einheitliche Regelung.
+          translation:
+            vi: Không có quy định thống nhất.
+  - key: de:item:b2w2-endlos
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: endlos
+      pos: tính từ
+    back:
+      meaning:
+        vi: vô tận, bất tận
+      examples:
+        - target: Die Diskussion schien endlos.
+          translation:
+            vi: Cuộc thảo luận như kéo dài bất tận.
+  - key: de:item:b2w2-ersichtlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ersichtlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: rõ ràng, dễ thấy
+      examples:
+        - target: Der Grund ist nicht ersichtlich.
+          translation:
+            vi: Lý do không rõ ràng.
+  - key: de:item:b2w2-fahrlaessig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fahrlässig
+      pos: tính từ
+    back:
+      meaning:
+        vi: cẩu thả, bất cẩn
+      examples:
+        - target: Er hat fahrlässig gehandelt.
+          translation:
+            vi: Anh ta đã hành động bất cẩn.
+  - key: de:item:b2w2-fortschrittlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fortschrittlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: tiến bộ
+      examples:
+        - target: Das Land hat ein fortschrittliches Bildungssystem.
+          translation:
+            vi: Đất nước có hệ thống giáo dục tiến bộ.
+  - key: de:item:b2w2-gegenwaertig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gegenwärtig
+      pos: tính từ
+    back:
+      meaning:
+        vi: hiện tại, hiện nay
+      examples:
+        - target: Die gegenwärtige Lage ist schwierig.
+          translation:
+            vi: Tình hình hiện nay rất khó khăn.
+  - key: de:item:b2w2-grundsaetzlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: grundsätzlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: về nguyên tắc, cơ bản
+      examples:
+        - target: Das ist grundsätzlich möglich.
+          translation:
+            vi: Về nguyên tắc điều đó là có thể.
+  - key: de:item:b2w2-harmlos
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: harmlos
+      pos: tính từ
+    back:
+      meaning:
+        vi: vô hại
+      examples:
+        - target: Die Verletzung ist harmlos.
+          translation:
+            vi: Vết thương không nghiêm trọng.
+  - key: de:item:b2w2-hinreichend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hinreichend
+      pos: tính từ
+    back:
+      meaning:
+        vi: đủ, đầy đủ
+      examples:
+        - target: Die Beweise sind nicht hinreichend.
+          translation:
+            vi: Các bằng chứng chưa đủ.
+  - key: de:item:b2w2-kompliziert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kompliziert
+      pos: tính từ
+    back:
+      meaning:
+        vi: phức tạp
+      examples:
+        - target: Das Verfahren ist ziemlich kompliziert.
+          translation:
+            vi: Quy trình này khá phức tạp.
+  - key: de:item:b2w2-konsequent
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: konsequent
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhất quán, kiên quyết
+      examples:
+        - target: Sie handelt immer konsequent.
+          translation:
+            vi: Cô ấy luôn hành động nhất quán.
+  - key: de:item:b2w2-mehrheitlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: mehrheitlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: đa số, phần lớn
+      examples:
+        - target: Der Vorschlag wurde mehrheitlich abgelehnt.
+          translation:
+            vi: Đề xuất bị đa số bác bỏ.
+  - key: de:item:b2w2-muehelos
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: mühelos
+      pos: tính từ
+    back:
+      meaning:
+        vi: không tốn sức
+      examples:
+        - target: Sie hat die Prüfung mühelos bestanden.
+          translation:
+            vi: Cô ấy đã vượt qua kỳ thi một cách dễ dàng.
+  - key: de:item:b2w2-relativ
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: relativ
+      pos: tính từ
+    back:
+      meaning:
+        vi: tương đối
+      examples:
+        - target: Die Preise sind relativ niedrig.
+          translation:
+            vi: Giá cả tương đối thấp.
+  - key: de:item:b2w2-sensibel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sensibel
+      pos: tính từ
+    back:
+      meaning:
+        vi: nhạy cảm
+      examples:
+        - target: Er reagiert sensibel auf Kritik.
+          translation:
+            vi: Anh ấy phản ứng nhạy cảm với lời phê bình.
+  - key: de:item:b2w2-unwiderruflich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unwiderruflich
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể thay đổi, không thể hủy
+      examples:
+        - target: Die Entscheidung ist unwiderruflich.
+          translation:
+            vi: Quyết định này không thể thay đổi.
+  - key: de:item:b2w2-vergeblich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vergeblich
+      pos: tính từ
+    back:
+      meaning:
+        vi: vô ích, uổng công
+      examples:
+        - target: Alle Versuche waren vergeblich.
+          translation:
+            vi: Mọi nỗ lực đều vô ích.
+  - key: de:item:b2w2-verantwortungsvoll
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verantwortungsvoll
+      pos: tính từ
+    back:
+      meaning:
+        vi: có trách nhiệm
+      examples:
+        - target: Er geht verantwortungsvoll mit Geld um.
+          translation:
+            vi: Anh ấy sử dụng tiền một cách có trách nhiệm.
+  - key: de:item:b2w2-vielseitig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vielseitig
+      pos: tính từ
+    back:
+      meaning:
+        vi: đa năng, nhiều mặt
+      examples:
+        - target: Das Gerät ist vielseitig einsetzbar.
+          translation:
+            vi: Thiết bị này có thể dùng đa dạng.
+  - key: de:item:b2w2-vollkommen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vollkommen
+      pos: tính từ
+    back:
+      meaning:
+        vi: hoàn toàn, hoàn hảo
+      examples:
+        - target: Ich bin vollkommen überzeugt.
+          translation:
+            vi: Tôi hoàn toàn tin chắc.
+  - key: de:item:b2w2-zeitgemaess
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zeitgemäß
+      pos: tính từ
+    back:
+      meaning:
+        vi: hợp thời, phù hợp thời đại
+      examples:
+        - target: Die Technik ist nicht mehr zeitgemäß.
+          translation:
+            vi: Công nghệ này không còn hợp thời nữa.
+  - key: de:item:b2w2-ideal
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ideal
+      pos: tính từ
+    back:
+      meaning:
+        vi: lý tưởng
+      examples:
+        - target: Das Wetter ist ideal zum Wandern.
+          translation:
+            vi: Thời tiết lý tưởng để đi bộ đường dài.
+  - key: de:item:b2w2-grundlage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Grundlage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nền tảng, cơ sở
+      examples:
+        - target: Die Studie bildet die Grundlage für das neue Gesetz.
+          translation:
+            vi: Nghiên cứu này là nền tảng cho đạo luật mới.
+  - key: de:item:b2w2-grundsatz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Grundsatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên tắc cơ bản
+      examples:
+        - target: Gleichbehandlung ist ein wichtiger Grundsatz.
+          translation:
+            vi: Đối xử bình đẳng là một nguyên tắc quan trọng.
+  - key: de:item:b2w2-prinzip
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Prinzip, Prinzipien
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên tắc
+      examples:
+        - target: Ich arbeite nach dem Prinzip der Fairness.
+          translation:
+            vi: Tôi làm việc theo nguyên tắc công bằng.
+  - key: de:item:b2w2-massstab
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Maßstab, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thước đo, tiêu chuẩn; tỷ lệ
+      examples:
+        - target: Für die Bewertung gibt es klare Maßstäbe.
+          translation:
+            vi: Có những tiêu chuẩn rõ ràng cho việc đánh giá.
+  - key: de:item:b2w2-merkmal
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Merkmal, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: đặc điểm
+      examples:
+        - target: Ein wichtiges Merkmal der Stadt ist die alte Brücke.
+          translation:
+            vi: Một đặc điểm quan trọng của thành phố là cây cầu cổ.
+  - key: de:item:b2w2-hintergrund
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Hintergrund, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bối cảnh; nền
+      examples:
+        - target: Vor dem Hintergrund der Krise sinken die Gewinne.
+          translation:
+            vi: Trong bối cảnh khủng hoảng lợi nhuận đang giảm.
+  - key: de:item:b2w2-ansatz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ansatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách tiếp cận; điểm khởi đầu
+      examples:
+        - target: Der Ansatz der Forscher ist neu und vielversprechend.
+          translation:
+            vi: Cách tiếp cận của các nhà nghiên cứu là mới và đầy triển vọng.
+  - key: de:item:b2w2-sachverhalt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sachverhalt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình tiết, vấn đề thực tế
+      examples:
+        - target: Der Sachverhalt muss genau geprüft werden.
+          translation:
+            vi: Tình tiết vụ việc phải được kiểm tra kỹ.
+  - key: de:item:b2w2-rahmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Rahmen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: khuôn khổ; khung
+      examples:
+        - target: Im Rahmen des Projekts entstehen neue Jobs.
+          translation:
+            vi: Trong khuôn khổ dự án sẽ có việc làm mới.
+  - key: de:item:b2w2-spielraum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Spielraum, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: biên độ, khoảng linh hoạt
+      examples:
+        - target: Der Chef gibt uns viel Spielraum.
+          translation:
+            vi: Sếp cho chúng tôi nhiều khoảng linh hoạt.
+  - key: de:item:b2w2-hinsicht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Hinsicht, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương diện
+      examples:
+        - target: In dieser Hinsicht stimme ich Ihnen zu.
+          translation:
+            vi: Về phương diện này tôi đồng ý với ông/bà.
+  - key: de:item:b2w2-umstand
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Umstand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hoàn cảnh, điều kiện
+      examples:
+        - target: Unter diesen Umständen kann ich nicht zustimmen.
+          translation:
+            vi: Trong hoàn cảnh này tôi không thể đồng ý.
+  - key: de:item:b2w2-vorgang
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Vorgang, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: quá trình, diễn biến
+      examples:
+        - target: Der Vorgang dauert mehrere Wochen.
+          translation:
+            vi: Quy trình này kéo dài vài tuần.
+  - key: de:item:b2w2-tendenz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Tendenz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: xu hướng
+      examples:
+        - target: Die Tendenz ist eindeutig steigend.
+          translation:
+            vi: Xu hướng rõ ràng là đang tăng.
+  - key: de:item:b2w2-konsequenz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Konsequenz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ quả; sự nhất quán
+      examples:
+        - target: Die Konsequenzen des Beschlusses sind noch unklar.
+          translation:
+            vi: Hệ quả của quyết định vẫn chưa rõ.
+  - key: de:item:b2w2-hindernis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Hindernis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: trở ngại
+      examples:
+        - target: Bürokratie ist oft ein großes Hindernis.
+          translation:
+            vi: Thủ tục hành chính thường là trở ngại lớn.
+  - key: de:item:b2w2-bedarf
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bedarf (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhu cầu
+      examples:
+        - target: Der Bedarf an Wohnungen ist hoch.
+          translation:
+            vi: Nhu cầu về nhà ở rất cao.
+  - key: de:item:b2w2-aufwand
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Aufwand (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: công sức, chi phí bỏ ra
+      examples:
+        - target: Mit geringem Aufwand kann man viel erreichen.
+          translation:
+            vi: Với công sức nhỏ người ta có thể đạt được nhiều.
+  - key: de:item:b2w2-erfordernis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Erfordernis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: yêu cầu, điều kiện cần
+      examples:
+        - target: Ein Abschluss ist ein Erfordernis für die Stelle.
+          translation:
+            vi: Bằng cấp là điều kiện cần cho vị trí này.
+  - key: de:item:b2w2-notwendigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Notwendigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cần thiết
+      examples:
+        - target: Niemand bestreitet die Notwendigkeit von Reformen.
+          translation:
+            vi: Không ai phủ nhận sự cần thiết của cải cách.
+  - key: de:item:b2w2-beurteilung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Beurteilung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đánh giá, nhận xét
+      examples:
+        - target: Die Beurteilung der Lage fällt unterschiedlich aus.
+          translation:
+            vi: Việc đánh giá tình hình khác nhau.
+  - key: de:item:b2w2-angelegenheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Angelegenheit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: vấn đề, công việc
+      examples:
+        - target: Das ist eine private Angelegenheit.
+          translation:
+            vi: Đó là một chuyện riêng tư.
+  - key: de:item:b2w2-abweichung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Abweichung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự sai lệch
+      examples:
+        - target: Die Abweichung vom Plan ist gering.
+          translation:
+            vi: Độ sai lệch so với kế hoạch rất nhỏ.
+  - key: de:item:b2w2-beeintraechtigung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Beeinträchtigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự ảnh hưởng xấu
+      examples:
+        - target: Es gab keine Beeinträchtigung des Verkehrs.
+          translation:
+            vi: Không có ảnh hưởng xấu nào đến giao thông.
+  - key: de:item:b2w2-bewusstsein
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Bewusstsein (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý thức, sự nhận thức
+      examples:
+        - target: Das Bewusstsein für Umweltschutz ist gewachsen.
+          translation:
+            vi: Ý thức bảo vệ môi trường đã tăng lên.
+  - key: de:item:b2w2-buendnis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Bündnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: liên minh
+      examples:
+        - target: Die Parteien haben ein Bündnis geschlossen.
+          translation:
+            vi: Các đảng đã lập một liên minh.
+  - key: de:item:b2w2-chance
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Chance, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ hội, khả năng
+      examples:
+        - target: Die Chance auf einen Erfolg ist gering.
+          translation:
+            vi: Cơ hội thành công rất thấp.
+  - key: de:item:b2w2-defizit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Defizit, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thâm hụt, sự thiếu hụt
+      examples:
+        - target: Der Staat hat ein hohes Defizit.
+          translation:
+            vi: Nhà nước có mức thâm hụt cao.
+  - key: de:item:b2w2-einrichtung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Einrichtung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ sở, thiết chế; đồ đạc
+      examples:
+        - target: Das Rathaus ist eine öffentliche Einrichtung.
+          translation:
+            vi: Tòa thị chính là một cơ quan công.
+  - key: de:item:b2w2-gewissen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gewissen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lương tâm
+      examples:
+        - target: Er hat ein schlechtes Gewissen.
+          translation:
+            vi: Anh ấy cảm thấy áy náy.
+  - key: de:item:b2w2-gleichgewicht
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gleichgewicht (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cân bằng
+      examples:
+        - target: Ein Gleichgewicht zwischen Arbeit und Freizeit ist wichtig.
+          translation:
+            vi: Sự cân bằng giữa công việc và thời gian rảnh rất quan trọng.
+  - key: de:item:b2w2-knappheit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Knappheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự khan hiếm
+      examples:
+        - target: Die Knappheit an Rohstoffen treibt die Preise hoch.
+          translation:
+            vi: Sự khan hiếm nguyên liệu đẩy giá lên cao.
+  - key: de:item:b2w2-kontrolle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kontrolle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự kiểm soát, kiểm tra
+      examples:
+        - target: Die Kontrolle der Daten ist Pflicht.
+          translation:
+            vi: Việc kiểm soát dữ liệu là bắt buộc.
+  - key: de:item:b2w2-luecke
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lücke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoảng trống, chỗ thiếu
+      examples:
+        - target: Das Gesetz hat eine Lücke.
+          translation:
+            vi: Đạo luật có một lỗ hổng.
+  - key: de:item:b2w2-missstand
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Missstand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng tồi tệ, tệ nạn
+      examples:
+        - target: Die Zeitung deckt einen Missstand auf.
+          translation:
+            vi: Tờ báo vạch trần một tình trạng tồi tệ.
+  - key: de:item:b2w2-mitwirkung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mitwirkung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tham gia, đóng góp
+      examples:
+        - target: Wir bitten um Ihre Mitwirkung.
+          translation:
+            vi: Chúng tôi mong sự tham gia của ông/bà.
+  - key: de:item:b2w2-notlage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Notlage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình cảnh khốn khó
+      examples:
+        - target: Viele Familien befinden sich in einer Notlage.
+          translation:
+            vi: Nhiều gia đình đang ở trong cảnh khốn khó.
+  - key: de:item:b2w2-reichweite
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Reichweite, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tầm với, phạm vi
+      examples:
+        - target: Die Reichweite der Maßnahme ist begrenzt.
+          translation:
+            vi: Phạm vi tác động của biện pháp này bị giới hạn.
+  - key: de:item:b2w2-spannung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Spannung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: căng thẳng; điện áp
+      examples:
+        - target: Es gibt Spannungen zwischen den Nachbarländern.
+          translation:
+            vi: Có căng thẳng giữa các nước láng giềng.
+  - key: de:item:b2w2-verbreitung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verbreitung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự lan rộng, phổ biến
+      examples:
+        - target: Die Verbreitung von Falschmeldungen ist gefährlich.
+          translation:
+            vi: Việc lan truyền tin giả rất nguy hiểm.
+  - key: de:item:b2w2-verpflichtung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verpflichtung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghĩa vụ, cam kết
+      examples:
+        - target: Wir haben eine Verpflichtung gegenüber den Kunden.
+          translation:
+            vi: Chúng tôi có nghĩa vụ với khách hàng.
+  - key: de:item:b2w2-verzoegerung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verzögerung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chậm trễ
+      examples:
+        - target: Es kam zu einer Verzögerung bei der Lieferung.
+          translation:
+            vi: Đã có sự chậm trễ trong việc giao hàng.
+  - key: de:item:b2w2-vorwurf
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Vorwurf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời buộc tội, trách móc
+      examples:
+        - target: Der Vorwurf ist nicht berechtigt.
+          translation:
+            vi: Lời buộc tội đó không có cơ sở.
+  - key: de:item:b2w2-wandel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wandel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự biến đổi
+      examples:
+        - target: Der gesellschaftliche Wandel schreitet voran.
+          translation:
+            vi: Sự biến đổi xã hội đang tiếp diễn.
+  - key: de:item:b2w2-widerstand
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Widerstand, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự kháng cự, phản đối
+      examples:
+        - target: Es gab großen Widerstand gegen den Bau.
+          translation:
+            vi: Đã có sự phản đối lớn đối với việc xây dựng.
+  - key: de:item:b2w2-wirklichkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wirklichkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thực tế
+      examples:
+        - target: In der Wirklichkeit ist es oft anders.
+          translation:
+            vi: Trong thực tế mọi chuyện thường khác.

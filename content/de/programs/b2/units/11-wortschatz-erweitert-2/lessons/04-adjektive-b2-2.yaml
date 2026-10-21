@@ -1,0 +1,237 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w2-adjektive-b2-2
+order_index: 4
+level: b2
+title:
+  vi: "Tính từ B2 (2): tính chất, thái độ, khả năng (Adjektive 2)"
+objectives:
+  - vi: Dùng thêm nhiều tính từ trừu tượng để mô tả người, kế hoạch và tình huống.
+  - vi: "Phân biệt các cặp: konsequent – hartnäckig, verbindlich – verantwortungsvoll, mühelos – vergeblich."
+  - vi: Nhận biết đuôi -los, -sam, -bar, -haft, -lich giúp đoán nghĩa tính từ mới.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w2-adjektive-b2-1
+items:
+  - item: de:item:b2w2-aufwendig
+  - item: de:item:b2w2-ausdruecklich
+  - item: de:item:b2w2-einheitlich
+  - item: de:item:b2w2-endlos
+  - item: de:item:b2w2-ersichtlich
+  - item: de:item:b2w2-fahrlaessig
+  - item: de:item:b2w2-fortschrittlich
+  - item: de:item:b2w2-gegenwaertig
+  - item: de:item:b2w2-grundsaetzlich
+  - item: de:item:b2w2-harmlos
+  - item: de:item:b2w2-hinreichend
+  - item: de:item:b2w2-kompliziert
+  - item: de:item:b2w2-konsequent
+  - item: de:item:b2w2-mehrheitlich
+  - item: de:item:b2w2-muehelos
+  - item: de:item:b2w2-relativ
+  - item: de:item:b2w2-sensibel
+  - item: de:item:b2w2-unwiderruflich
+  - item: de:item:b2w2-vergeblich
+  - item: de:item:b2w2-verantwortungsvoll
+  - item: de:item:b2w2-vielseitig
+  - item: de:item:b2w2-vollkommen
+  - item: de:item:b2w2-zeitgemaess
+  - item: de:item:b2w2-ideal
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả thái độ, nỗ lực và khả năng bằng nhiều tính từ phong phú hơn và dùng được chúng trong văn viết trang trọng.
+  - type: explain
+    text:
+      vi: "Tính từ về thái độ và nỗ lực: konsequent (nhất quán, kiên quyết), verantwortungsvoll, sensibel (nhạy cảm), flexibel, selbstständig, vielseitig (đa năng), fahrlässig (cẩu thả, bất cẩn), harmlos. Ví dụ: Er handelt konsequent. Sie ist eine vielseitige Künstlerin."
+  - type: explain
+    text:
+      vi: "Tính từ về kết quả: vergeblich (vô ích), mühelos (không tốn sức), hinreichend (đủ), ersichtlich (rõ ràng), ausdrücklich (một cách rõ ràng, dứt khoát), unwiderruflich (không thể thay đổi), vollkommen (hoàn toàn). Trong văn bản chính thức hay gặp: Die Frist ist unwiderruflich. Er hat ausdrücklich darauf hingewiesen."
+  - type: explain
+    text:
+      vi: "Các tính từ liên quan đến thời gian và thái độ chung: gegenwärtig (hiện tại), zeitgemäß (phù hợp thời đại), fortschrittlich, aufwendig (tốn kém công sức), einheitlich (thống nhất), grundsätzlich (về nguyên tắc), relativ, kompliziert. Ví dụ: Das Verfahren ist sehr aufwendig. Grundsätzlich ist das erlaubt."
+  - type: deep_explain
+    text:
+      vi: "Đuôi -los chỉ sự thiếu: harmlos (vô hại), endlos (vô tận), mühelos. Đuôi -haft hay -lich cho tính từ chung. Grundsätzlich vừa là tính từ (eine grundsätzliche Frage) vừa là trạng từ (Das ist grundsätzlich richtig). Fahrlässig là thuật ngữ pháp lý: fahrlässige Körperverletzung (làm bị thương do bất cẩn)."
+  - type: example
+    target: Die Reparatur war sehr aufwendig.
+    target_lang: de
+    translation:
+      vi: Việc sửa chữa rất tốn công sức.
+    note:
+      vi: aufwendig = tốn công sức, tốn kém.
+  - type: example
+    target: Das Gesetz verbietet dies ausdrücklich.
+    target_lang: de
+    translation:
+      vi: Luật cấm điều này một cách rõ ràng.
+    note:
+      vi: ausdrücklich = một cách rõ ràng, dứt khoát.
+  - type: example
+    target: Es gibt keine einheitliche Regelung.
+    target_lang: de
+    translation:
+      vi: Không có quy định thống nhất.
+    note:
+      vi: einheitlich = thống nhất.
+  - type: example
+    target: Die Diskussion schien endlos.
+    target_lang: de
+    translation:
+      vi: Cuộc thảo luận như kéo dài bất tận.
+    note:
+      vi: endlos = vô tận, bất tận.
+  - type: common_mistake
+    wrong: Er hat vergeblich Mühe gegeben.
+    right: Er hat sich vergeblich bemüht.
+    target_lang: de
+    note:
+      vi: Vergeblich là tính từ/trạng từ nghĩa là vô ích; nói gắng sức thì dùng sich bemühen.
+  - type: common_mistake
+    wrong: Das Verfahren ist aufwendige.
+    right: Das Verfahren ist aufwendig.
+    target_lang: de
+    note:
+      vi: Sau sein, tính từ không đổi đuôi.
+  - type: summary
+    points:
+      - vi: konsequent, sensibel, vielseitig, fahrlässig, harmlos, verantwortungsvoll, selbstständig.
+      - vi: vergeblich, mühelos, hinreichend, ersichtlich, ausdrücklich, unwiderruflich, vollkommen, einheitlich.
+      - vi: gegenwärtig, zeitgemäß, fortschrittlich, aufwendig, grundsätzlich, relativ, kompliziert, mehrheitlich, endlos.
+exercises:
+  - key: de:exercise:b2w2l4-listen-kompliziert
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-kompliziert
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das Verfahren ist ziemlich kompliziert.
+      options:
+        - { id: ej5, text: Công nghệ này không còn hợp thời nữa., lang: vi }
+        - { id: j5z, text: Đất nước có hệ thống giáo dục tiến bộ., lang: vi }
+        - { id: jqw, text: Không có quy định thống nhất., lang: vi }
+        - { id: emv, text: Quy trình này khá phức tạp., lang: vi }
+    answer:
+      correct_option_id: emv
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Quy trình này khá phức tạp.". Từ khoá là kompliziert (phức tạp); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Quy trình này khá phức tạp.
+  - key: de:exercise:b2w2l4-mcq-vi-de-fahrlaessig
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w2-fahrlaessig
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cẩu thả, bất cẩn"?
+      stem_lang: vi
+      options:
+        - { id: p7u, text: vergeblich, lang: de }
+        - { id: vun, text: endlos, lang: de }
+        - { id: l10, text: harmlos, lang: de }
+        - { id: iem, text: fahrlässig, lang: de }
+    answer:
+      correct_option_id: iem
+    explanation:
+      vi: "fahrlässig nghĩa là \"cẩu thả, bất cẩn\". Ví dụ: Er hat fahrlässig gehandelt. (Anh ta đã hành động bất cẩn.)"
+    display_answer: fahrlässig
+  - key: de:exercise:b2w2l4-mcq-de-vi-endlos
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-endlos
+    prompt:
+      stem: "\"endlos\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: gpq, text: "vô tận, bất tận", lang: vi }
+        - { id: sn3, text: có trách nhiệm, lang: vi }
+        - { id: zel, text: "một cách rõ ràng, dứt khoát", lang: vi }
+        - { id: obt, text: "đa năng, nhiều mặt", lang: vi }
+    answer:
+      correct_option_id: gpq
+    explanation:
+      vi: "endlos nghĩa là \"vô tận, bất tận\". Ví dụ: Die Diskussion schien endlos. (Cuộc thảo luận như kéo dài bất tận.)"
+    display_answer: vô tận, bất tận
+  - key: de:exercise:b2w2l4-tr-word-zeitgemaess
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-zeitgemaess
+    prompt:
+      source_text: hợp thời, phù hợp thời đại (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - zeitgemäß
+    explanation:
+      vi: "\"hợp thời, phù hợp thời đại\" trong tiếng Đức là zeitgemäß. Ví dụ: Die Technik ist nicht mehr zeitgemäß."
+    display_answer: zeitgemäß
+  - key: de:exercise:b2w2l4-mcq-luecke-aufwendig
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-aufwendig
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Việc sửa chữa rất tốn công sức.\": Die Reparatur war sehr ___."
+      stem_lang: vi
+      options:
+        - { id: ung, text: harmlos, lang: de }
+        - { id: brn, text: ideal, lang: de }
+        - { id: iwz, text: aufwendig, lang: de }
+        - { id: x86, text: verantwortungsvoll, lang: de }
+    answer:
+      correct_option_id: iwz
+    explanation:
+      vi: "Câu có nghĩa \"Việc sửa chữa rất tốn công sức.\" nên cần aufwendig (aufwendig: tốn công sức, tốn kém). harmlos = vô hại; ideal = lý tưởng; verantwortungsvoll = có trách nhiệm không đúng nghĩa của câu."
+    display_answer: aufwendig
+  - key: de:exercise:b2w2l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Grundsätzlich ist das Verfahren einheitlich geregelt, aber die Umsetzung ist aufwendig und ihr Ergebnis oft fraglich.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Grundsätzlich ist das Verfahren einheitlich geregelt, aber die Umsetzung ist aufwendig und ihr Ergebnis oft fraglich.
+        - Das Verfahren ist grundsätzlich einheitlich geregelt, aber die Umsetzung ist aufwendig, und das Ergebnis ist oft fraglich.
+        - Grundsätzlich ist das Verfahren einheitlich geregelt, doch die Umsetzung ist aufwendig, und ihr Ergebnis ist oft fraglich.
+    explanation:
+      vi: "Gợi ý đáp án: Grundsätzlich ist das Verfahren einheitlich geregelt, aber die Umsetzung ist aufwendig und ihr Ergebnis oft fraglich. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Grundsätzlich ist das Verfahren einheitlich geregelt, aber die Umsetzung ist aufwendig und ihr Ergebnis oft fraglich.
+    item: de:item:b2w2-aufwendig
+  - key: de:exercise:b2w2l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Obwohl er ausdrücklich gewarnt wurde, handelte er fahrlässig, und alle Bemühungen waren am Ende vergeblich.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù đã được cảnh báo rõ ràng, anh ta vẫn hành động cẩu thả và mọi nỗ lực cuối cùng đều vô ích.
+        - Mặc dù được cảnh báo dứt khoát, anh ta vẫn hành xử bất cẩn, và cuối cùng mọi cố gắng đều vô ích.
+        - Dù đã bị cảnh báo thẳng, anh ấy vẫn làm cẩu thả, và rốt cuộc mọi cố gắng đều uổng công.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Obwohl er ausdrücklich gewarnt wurde, handelte er fahrlässig, und alle Bemühungen waren am Ende vergeblich.\" nghĩa là: Dù đã được cảnh báo rõ ràng, anh ta vẫn hành động cẩu thả và mọi nỗ lực cuối cùng đều vô ích. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Dù đã được cảnh báo rõ ràng, anh ta vẫn hành động cẩu thả và mọi nỗ lực cuối cùng đều vô ích.
+    item: de:item:b2w2-ausdruecklich

@@ -1,0 +1,236 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w2-verben-b2-2
+order_index: 2
+level: b2
+title:
+  vi: "Động từ B2 (2): quy định, xác lập, thực hiện (Verben 2)"
+objectives:
+  - vi: Dùng thêm khoảng hai mươi động từ trang trọng dùng trong văn bản hành chính và báo chí.
+  - vi: "Dùng đúng các động từ có Dativ: entsprechen, hinnehmen; và bất quy tắc: entnehmen, erheben, ergreifen."
+  - vi: "Phân biệt động từ tách và không tách: einsetzen, festlegen, hervorrufen, herausfinden."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w2-verben-b2-1
+items:
+  - item: de:item:b2w2-beziehen
+  - item: de:item:b2w2-billigen
+  - item: de:item:b2w2-einschraenken
+  - item: de:item:b2w2-einsetzen
+  - item: de:item:b2w2-entfalten
+  - item: de:item:b2w2-entfernen
+  - item: de:item:b2w2-entnehmen
+  - item: de:item:b2w2-entsprechen
+  - item: de:item:b2w2-erfassen
+  - item: de:item:b2w2-ergreifen
+  - item: de:item:b2w2-erheben
+  - item: de:item:b2w2-erlangen
+  - item: de:item:b2w2-ernennen
+  - item: de:item:b2w2-erneuern
+  - item: de:item:b2w2-erschweren
+  - item: de:item:b2w2-erstellen
+  - item: de:item:b2w2-erzeugen
+  - item: de:item:b2w2-festlegen
+  - item: de:item:b2w2-feststellen
+  - item: de:item:b2w2-gewaehrleisten
+  - item: de:item:b2w2-herausfinden
+  - item: de:item:b2w2-hervorrufen
+  - item: de:item:b2w2-hinnehmen
+  - item: de:item:b2w2-kennzeichnen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng thêm nhiều động từ trang trọng khi viết báo cáo, thư hành chính và khi phân tích một bài báo.
+  - type: explain
+    text:
+      vi: "Động từ hành chính: festlegen (ấn định), feststellen (xác định, nhận thấy), erstellen (lập, soạn), erfassen (ghi nhận, thống kê), gewährleisten (đảm bảo), kennzeichnen (đánh dấu, ghi nhãn), erzeugen (tạo ra), erneuern (làm mới). Phần lớn có tân ngữ Akkusativ: Das Gesetz legt die Frist fest. Die Behörde hat den Schaden festgestellt."
+  - type: explain
+    text:
+      vi: "Nhóm bất quy tắc: entnehmen (entnimmt, entnahm, hat entnommen: lấy ra, rút ra), ergreifen (ergriff, hat ergriffen: nắm lấy, áp dụng biện pháp), erheben (erhob, hat erhoben: thu, nêu lên), beziehen (bezog, hat bezogen: nhận, nhận được), hinnehmen (nahm hin, hat hingenommen: chấp nhận), hervorrufen (rief hervor, hat hervorgerufen: gây ra), herausfinden (fand heraus, hat herausgefunden: tìm ra)."
+  - type: explain
+    text:
+      vi: "Cách dùng cố định: Maßnahmen ergreifen (áp dụng biện pháp), Kritik erheben (nêu lên sự chỉ trích), Gebühren erheben (thu phí), ein Gehalt beziehen (nhận lương), etwas einer Quelle entnehmen (lấy từ nguồn nào), einer Anforderung entsprechen + Dativ (đáp ứng yêu cầu). Ví dụ: Das Produkt entspricht den Anforderungen."
+  - type: deep_explain
+    text:
+      vi: "Cẩn thận phân biệt: einsetzen là đặt vào, sử dụng (Er setzt neue Mitarbeiter ein) và sich einsetzen für (đấu tranh vì). Erlangen có nghĩa đạt được, thường dùng với cái trừu tượng: Selbstständigkeit erlangen. Billigen thường mang tính chính thức: Der Stadtrat billigte den Plan. Entfalten nghĩa là mở ra, phát triển: Sie kann ihre Fähigkeiten entfalten."
+  - type: example
+    target: Sie bezieht ein monatliches Gehalt von 3000 Euro.
+    target_lang: de
+    translation:
+      vi: Cô ấy nhận lương hằng tháng ba nghìn euro.
+    note:
+      vi: beziehen = nhận (lương, hàng); căng (giường); liên hệ.
+  - type: example
+    target: Der Stadtrat hat den Plan gebilligt.
+    target_lang: de
+    translation:
+      vi: Hội đồng thành phố đã chấp thuận kế hoạch.
+    note:
+      vi: billigen = chấp thuận.
+  - type: example
+    target: Die Regierung will die Rechte nicht weiter einschränken.
+    target_lang: de
+    translation:
+      vi: Chính phủ không muốn hạn chế thêm các quyền.
+    note:
+      vi: einschränken = hạn chế, thu hẹp.
+  - type: example
+    target: Das Unternehmen setzt mehr Roboter ein.
+    target_lang: de
+    translation:
+      vi: Doanh nghiệp sử dụng nhiều robot hơn.
+    note:
+      vi: einsetzen = sử dụng, bố trí; đặt vào.
+  - type: common_mistake
+    wrong: Das Produkt entspricht die Anforderungen nicht.
+    right: Das Produkt entspricht den Anforderungen nicht.
+    target_lang: de
+    note:
+      vi: "Entsprechen đi với Dativ: den Anforderungen."
+  - type: common_mistake
+    wrong: Die Firma hat neue Maßnahmen ergriffen worden.
+    right: Die Firma hat neue Maßnahmen ergriffen.
+    target_lang: de
+    note:
+      vi: Chủ động dùng haben + Partizip II; worden chỉ dùng ở bị động.
+  - type: summary
+    points:
+      - vi: festlegen, feststellen, erstellen, erfassen, gewährleisten, kennzeichnen, erzeugen, erneuern, erschweren, einschränken.
+      - vi: "entnehmen, ergreifen, erheben, beziehen, hinnehmen, hervorrufen, herausfinden: học cả ba dạng."
+      - vi: entsprechen + Dativ, billigen, ernennen, erlangen, entfalten, entfernen, einsetzen; Maßnahmen ergreifen, Kritik erheben.
+exercises:
+  - key: de:exercise:b2w2l2-listen-einschraenken
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-einschraenken
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Regierung will die Rechte nicht weiter einschränken.
+      options:
+        - { id: lhy, text: Chúng tôi lập một bản báo cáo trước thứ Hai., lang: vi }
+        - { id: k2z, text: Chính phủ không muốn hạn chế thêm các quyền., lang: vi }
+        - { id: d1o, text: Hợp đồng được gia hạn thêm hai năm., lang: vi }
+        - { id: o98, text: Sau cuộc đấu tranh dài cô ấy đã giành được sự độc lập., lang: vi }
+    answer:
+      correct_option_id: k2z
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Chính phủ không muốn hạn chế thêm các quyền.". Từ khoá là einschränken (hạn chế, thu hẹp); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Chính phủ không muốn hạn chế thêm các quyền.
+  - key: de:exercise:b2w2l2-mcq-vi-de-erlangen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w2-erlangen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "đạt được"?
+      stem_lang: vi
+      options:
+        - { id: q1z, text: einsetzen, lang: de }
+        - { id: lbt, text: erlangen, lang: de }
+        - { id: eku, text: festlegen, lang: de }
+        - { id: c2u, text: gewährleisten, lang: de }
+    answer:
+      correct_option_id: lbt
+    explanation:
+      vi: "erlangen nghĩa là \"đạt được\". Ví dụ: Sie hat nach langem Kampf ihre Unabhängigkeit erlangt. (Sau cuộc đấu tranh dài cô ấy đã giành được sự độc lập.)"
+    display_answer: erlangen
+  - key: de:exercise:b2w2l2-mcq-de-vi-hervorrufen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-hervorrufen
+    prompt:
+      stem: "\"hervorrufen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: mrl, text: "lập, soạn thảo", lang: vi }
+        - { id: k7g, text: làm khó khăn hơn, lang: vi }
+        - { id: laj, text: "gây ra, khơi dậy", lang: vi }
+        - { id: bdk, text: bổ nhiệm, lang: vi }
+    answer:
+      correct_option_id: laj
+    explanation:
+      vi: "hervorrufen nghĩa là \"gây ra, khơi dậy\". Ví dụ: Das Medikament kann Müdigkeit hervorrufen. (Loại thuốc này có thể gây mệt mỏi.)"
+    display_answer: gây ra, khơi dậy
+  - key: de:exercise:b2w2l2-tr-word-entfernen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-entfernen
+    prompt:
+      source_text: loại bỏ, tháo gỡ (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - entfernen
+    explanation:
+      vi: "\"loại bỏ, tháo gỡ\" trong tiếng Đức là entfernen. Ví dụ: Die Flecken lassen sich leicht entfernen."
+    display_answer: entfernen
+  - key: de:exercise:b2w2l2-mcq-luecke-beziehen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-beziehen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Cô ấy nhận lương hằng tháng ba nghìn euro.\": Sie ___ ein monatliches Gehalt von 3000 Euro."
+      stem_lang: vi
+      options:
+        - { id: gav, text: erstellen, lang: de }
+        - { id: zwa, text: bezieht, lang: de }
+        - { id: urz, text: ein, lang: de }
+        - { id: mno, text: erfasst, lang: de }
+    answer:
+      correct_option_id: zwa
+    explanation:
+      vi: "Câu có nghĩa \"Cô ấy nhận lương hằng tháng ba nghìn euro.\" nên cần bezieht (beziehen: nhận (lương, hàng); căng (giường); liên hệ). erfasst = ghi nhận, nắm bắt; ein = sử dụng, bố trí; đặt vào; erstellen = lập, soạn thảo không đúng nghĩa của câu."
+    display_answer: bezieht
+  - key: de:exercise:b2w2l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Behörde hat festgestellt, dass das Unternehmen die Vorschriften nicht eingehalten hat, und Maßnahmen ergriffen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Behörde hat festgestellt, dass das Unternehmen die Vorschriften nicht eingehalten hat, und Maßnahmen ergriffen.
+        - Die Behörde hat festgestellt, dass das Unternehmen die Vorschriften nicht eingehalten hat, und hat Maßnahmen ergriffen.
+        - Die Behörde stellte fest, dass das Unternehmen die Vorschriften nicht eingehalten hatte, und ergriff Maßnahmen.
+    explanation:
+      vi: "Gợi ý đáp án: Die Behörde hat festgestellt, dass das Unternehmen die Vorschriften nicht eingehalten hat, und Maßnahmen ergriffen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Behörde hat festgestellt, dass das Unternehmen die Vorschriften nicht eingehalten hat, und Maßnahmen ergriffen.
+  - key: de:exercise:b2w2l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Nach dem Bericht sollen die Daten besser erfasst und der Zugang zu den Informationen nicht weiter eingeschränkt werden.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Theo báo cáo, dữ liệu cần được ghi nhận tốt hơn và việc tiếp cận thông tin không được hạn chế thêm.
+        - Theo bản báo cáo, các dữ liệu nên được thu thập tốt hơn và quyền truy cập thông tin không bị hạn chế thêm nữa.
+        - Báo cáo nêu rằng dữ liệu phải được ghi nhận tốt hơn và việc tiếp cận thông tin không nên bị hạn chế thêm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Nach dem Bericht sollen die Daten besser erfasst und der Zugang zu den Informationen nicht weiter eingeschränkt werden.\" nghĩa là: Theo báo cáo, dữ liệu cần được ghi nhận tốt hơn và việc tiếp cận thông tin không được hạn chế thêm. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Theo báo cáo, dữ liệu cần được ghi nhận tốt hơn và việc tiếp cận thông tin không được hạn chế thêm.
+    item: de:item:b2w2-erfassen

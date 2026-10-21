@@ -1,0 +1,305 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w2-nomen-b2-1
+order_index: 5
+level: b2
+title:
+  vi: "Danh từ B2 (1): cơ sở, nguyên tắc, mục tiêu (Nomen 1)"
+objectives:
+  - vi: Dùng đúng giống, số nhiều và giới từ của các danh từ trừu tượng trong văn viết B2.
+  - vi: "Nhớ các cụm cố định: in dieser Hinsicht, im Rahmen von, unter diesen Umständen."
+  - vi: Nhận biết các từ ghép với -grund, -satz, -punkt, -stand.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w2-adjektive-b2-2
+items:
+  - item: de:item:b2w2-grundlage
+  - item: de:item:b2w2-grundsatz
+  - item: de:item:b2w2-prinzip
+  - item: de:item:b2w2-massstab
+  - item: de:item:b2w2-merkmal
+  - item: de:item:b2w2-hintergrund
+  - item: de:item:b2w2-ansatz
+  - item: de:item:b2w2-sachverhalt
+  - item: de:item:b2w2-rahmen
+  - item: de:item:b2w2-spielraum
+  - item: de:item:b2w2-hinsicht
+  - item: de:item:b2w2-umstand
+  - item: de:item:b2w2-vorgang
+  - item: de:item:b2w2-tendenz
+  - item: de:item:b2w2-konsequenz
+  - item: de:item:b2w2-hindernis
+  - item: de:item:b2w2-bedarf
+  - item: de:item:b2w2-aufwand
+  - item: de:item:b2w2-erfordernis
+  - item: de:item:b2w2-notwendigkeit
+  - item: de:item:b2w2-beurteilung
+  - item: de:item:b2w2-angelegenheit
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng khoảng hai mươi danh từ trừu tượng quan trọng cùng các cụm cố định thường dùng trong bài viết, thuyết trình và thảo luận ở trình độ B2.
+  - type: explain
+    text:
+      vi: "Từ chỉ cơ sở và nguyên tắc: die Grundlage (nền tảng), der Grundsatz (nguyên tắc), das Prinzip, der Maßstab (thước đo, tiêu chuẩn), das Merkmal (đặc điểm), der Hintergrund (bối cảnh), der Ansatz (cách tiếp cận), der Sachverhalt (tình tiết, vấn đề). Cụm: auf der Grundlage von, nach dem Prinzip, im Hintergrund."
+  - type: explain
+    text:
+      vi: "Từ chỉ cách thức và phạm vi: der Rahmen (khuôn khổ), der Spielraum (không gian linh hoạt), die Hinsicht (phương diện), der Umstand (hoàn cảnh), der Vorgang (diễn biến, quá trình), die Tendenz, die Konsequenz, das Hindernis. Cụm cố định: im Rahmen von, in dieser Hinsicht, unter diesen Umständen, Konsequenzen ziehen."
+  - type: explain
+    text:
+      vi: "Từ chỉ nhu cầu và sự đánh giá: der Bedarf (nhu cầu, số ít), der Aufwand (công sức, chi phí; số ít), das Erfordernis, die Notwendigkeit, die Beurteilung, die Einstellung (thái độ; cũng nghĩa tuyển dụng), die Angelegenheit (vấn đề, việc). Ví dụ: Der Bedarf an Fachkräften ist groß."
+  - type: deep_explain
+    text:
+      vi: "Đuôi -grund, -satz, -stand, -punkt tạo nhiều từ ghép: der Hintergrund, der Grundsatz, der Umstand, der Standpunkt. Cẩn thận Aufwand và Bedarf chỉ dùng số ít; Umstände (số nhiều) dùng nhiều hơn số ít: unter den gegebenen Umständen. Der Spielraum nghĩa đen là không gian chơi, nghĩa bóng là biên độ linh hoạt: Wir haben wenig Spielraum."
+  - type: example
+    target: Die Studie bildet die Grundlage für das neue Gesetz.
+    target_lang: de
+    translation:
+      vi: Nghiên cứu này là nền tảng cho đạo luật mới.
+    note:
+      vi: die Grundlage = nền tảng, cơ sở.
+  - type: example
+    target: Gleichbehandlung ist ein wichtiger Grundsatz.
+    target_lang: de
+    translation:
+      vi: Đối xử bình đẳng là một nguyên tắc quan trọng.
+    note:
+      vi: der Grundsatz = nguyên tắc cơ bản.
+  - type: example
+    target: Ich arbeite nach dem Prinzip der Fairness.
+    target_lang: de
+    translation:
+      vi: Tôi làm việc theo nguyên tắc công bằng.
+    note:
+      vi: das Prinzip = nguyên tắc.
+  - type: example
+    target: Für die Bewertung gibt es klare Maßstäbe.
+    target_lang: de
+    translation:
+      vi: Có những tiêu chuẩn rõ ràng cho việc đánh giá.
+    note:
+      vi: der Maßstab = thước đo, tiêu chuẩn; tỷ lệ.
+  - type: common_mistake
+    wrong: Der Bedarf an Pflegekräften ist wachsen.
+    right: Der Bedarf an Pflegekräften wächst.
+    target_lang: de
+    note:
+      vi: "Dùng động từ chia: wächst; không dùng nguyên thể sau sein."
+  - type: common_mistake
+    wrong: Im Rahmen des Projekt wurde ein Bericht erstellt.
+    right: Im Rahmen des Projekts wurde ein Bericht erstellt.
+    target_lang: de
+    note:
+      vi: "Sau im Rahmen có Genitiv: des Projekts (danh từ giống trung thêm -s)."
+  - type: summary
+    points:
+      - vi: die Grundlage, der Grundsatz, das Prinzip, der Maßstab, das Merkmal, der Hintergrund, der Ansatz, der Sachverhalt.
+      - vi: der Rahmen, der Spielraum, die Hinsicht, der Umstand, der Vorgang, die Tendenz, die Konsequenz, das Hindernis.
+      - vi: der Bedarf (Sg.), der Aufwand (Sg.), das Erfordernis, die Notwendigkeit, die Beurteilung, die Einstellung, die Angelegenheit.
+exercises:
+  - key: de:exercise:b2w2l5-listen-vorgang
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-vorgang
+    prompt:
+      audio_asset_id: null
+      fallback_text: Der Vorgang dauert mehrere Wochen.
+      options:
+        - { id: q42, text: Tôi làm việc theo nguyên tắc công bằng., lang: vi }
+        - { id: a6j, text: Quy trình này kéo dài vài tuần., lang: vi }
+        - { id: kme, text: Trong khuôn khổ dự án sẽ có việc làm mới., lang: vi }
+        - { id: czk, text: Trong bối cảnh khủng hoảng lợi nhuận đang giảm., lang: vi }
+    answer:
+      correct_option_id: a6j
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Quy trình này kéo dài vài tuần.". Từ khoá là der Vorgang (quá trình, diễn biến); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Quy trình này kéo dài vài tuần.
+  - key: de:exercise:b2w2l5-mcq-vi-de-ansatz
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w2-ansatz
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cách tiếp cận; điểm khởi đầu"?
+      stem_lang: vi
+      options:
+        - { id: j18, text: der Sachverhalt, lang: de }
+        - { id: dee, text: der Ansatz, lang: de }
+        - { id: rnh, text: der Maßstab, lang: de }
+        - { id: qoh, text: der Vorgang, lang: de }
+    answer:
+      correct_option_id: dee
+    explanation:
+      vi: "der Ansatz nghĩa là \"cách tiếp cận; điểm khởi đầu\". Ví dụ: Der Ansatz der Forscher ist neu und vielversprechend. (Cách tiếp cận của các nhà nghiên cứu là mới và đầy triển vọng.)"
+    display_answer: der Ansatz
+  - key: de:exercise:b2w2l5-mcq-de-vi-hindernis
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-hindernis
+    prompt:
+      stem: "\"das Hindernis\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: an9, text: phương diện, lang: vi }
+        - { id: q8q, text: bối cảnh; nền, lang: vi }
+        - { id: gz4, text: nhu cầu, lang: vi }
+        - { id: klc, text: trở ngại, lang: vi }
+    answer:
+      correct_option_id: klc
+    explanation:
+      vi: "das Hindernis nghĩa là \"trở ngại\". Ví dụ: Bürokratie ist oft ein großes Hindernis. (Thủ tục hành chính thường là trở ngại lớn.)"
+    display_answer: trở ngại
+  - key: de:exercise:b2w2l5-mcq-artikel-notwendigkeit
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-notwendigkeit
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Notwendigkeit\" (sự cần thiết): ___ Notwendigkeit"
+      stem_lang: vi
+      options:
+        - { id: s9n, text: die, lang: de }
+        - { id: xq8, text: das, lang: de }
+        - { id: qsu, text: ein, lang: de }
+        - { id: chs, text: der, lang: de }
+    answer:
+      correct_option_id: s9n
+    explanation:
+      vi: "Notwendigkeit là danh từ giống cái (die): die Notwendigkeit; số nhiều: die Notwendigkeiten. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w2l5-tr-word-hintergrund
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-hintergrund
+    prompt:
+      source_text: bối cảnh (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Hintergrund
+    known_wrong:
+      - answer: die Hintergrund
+        feedback_vi: Hintergrund là giống đực, nên là der Hintergrund.
+        error_tag: article
+      - answer: das Hintergrund
+        feedback_vi: Hintergrund là giống đực, nên là der Hintergrund.
+        error_tag: article
+    explanation:
+      vi: "\"bối cảnh\" trong tiếng Đức là der Hintergrund (số nhiều: die Hintergründe). Ví dụ: Vor dem Hintergrund der Krise sinken die Gewinne."
+    display_answer: der Hintergrund
+  - key: de:exercise:b2w2l5-tr-word-hinsicht
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-hinsicht
+    prompt:
+      source_text: phương diện (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Hinsicht
+    known_wrong:
+      - answer: der Hinsicht
+        feedback_vi: Hinsicht là giống cái, nên là die Hinsicht.
+        error_tag: article
+      - answer: das Hinsicht
+        feedback_vi: Hinsicht là giống cái, nên là die Hinsicht.
+        error_tag: article
+    explanation:
+      vi: "\"phương diện\" trong tiếng Đức là die Hinsicht (số nhiều: die Hinsichten). Ví dụ: In dieser Hinsicht stimme ich Ihnen zu."
+    display_answer: die Hinsicht
+  - key: de:exercise:b2w2l5-fill-plural-grundsatz
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-grundsatz
+    prompt:
+      template: "Singular: der Grundsatz · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 12 }
+    answer:
+      blanks:
+        b1:
+          - Grundsätze
+    known_wrong:
+      - answer: Grundsatz
+        feedback_vi: Grundsatz là dạng số ít; số nhiều là Grundsätze.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Grundsatz là die Grundsätze (ký hiệu trong từ điển: ¨-e, nguyên âm đổi thành ä/ö/ü/äu). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Grundsatz · Plural: die Grundsätze"
+  - key: de:exercise:b2w2l5-mcq-luecke-grundlage
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-grundlage
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Nghiên cứu này là nền tảng cho đạo luật mới.\": Die Studie bildet die ___ für das neue Gesetz."
+      stem_lang: vi
+      options:
+        - { id: qze, text: Beurteilung, lang: de }
+        - { id: oyg, text: Vorgang, lang: de }
+        - { id: ydr, text: Grundlage, lang: de }
+        - { id: bwi, text: Spielraum, lang: de }
+    answer:
+      correct_option_id: ydr
+    explanation:
+      vi: "Câu có nghĩa \"Nghiên cứu này là nền tảng cho đạo luật mới.\" nên cần Grundlage (die Grundlage: nền tảng, cơ sở). Beurteilung = sự đánh giá, nhận xét; Spielraum = biên độ, khoảng linh hoạt; Vorgang = quá trình, diễn biến không đúng nghĩa của câu."
+    display_answer: Grundlage
+  - key: de:exercise:b2w2l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Im Rahmen dieses Projekts gibt es nur wenig Spielraum, weil der Aufwand sehr hoch ist.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Im Rahmen dieses Projekts gibt es nur wenig Spielraum, weil der Aufwand sehr hoch ist.
+        - In diesem Projekt gibt es nur wenig Spielraum, weil der Aufwand sehr hoch ist.
+        - Im Rahmen dieses Projekts gibt es wenig Spielraum, da der Aufwand sehr hoch ist.
+    explanation:
+      vi: "Gợi ý đáp án: Im Rahmen dieses Projekts gibt es nur wenig Spielraum, weil der Aufwand sehr hoch ist. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Im Rahmen dieses Projekts gibt es nur wenig Spielraum, weil der Aufwand sehr hoch ist.
+    item: de:item:b2w2-rahmen
+  - key: de:exercise:b2w2l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Unter diesen Umständen ist die Tendenz klar, und die Konsequenzen müssen auf der Grundlage der Daten gezogen werden.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong hoàn cảnh này xu hướng đã rõ và các hệ quả phải được rút ra trên cơ sở dữ liệu.
+        - Trong những điều kiện này thì xu hướng đã rõ, và phải rút kết luận dựa trên số liệu.
+        - Với những hoàn cảnh này, xu hướng là rõ ràng, và các hệ quả cần được rút ra từ cơ sở dữ liệu.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Unter diesen Umständen ist die Tendenz klar, und die Konsequenzen müssen auf der Grundlage der Daten gezogen werden.\" nghĩa là: Trong hoàn cảnh này xu hướng đã rõ và các hệ quả phải được rút ra trên cơ sở dữ liệu. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Trong hoàn cảnh này xu hướng đã rõ và các hệ quả phải được rút ra trên cơ sở dữ liệu.
+    item: de:item:b2w2-grundlage

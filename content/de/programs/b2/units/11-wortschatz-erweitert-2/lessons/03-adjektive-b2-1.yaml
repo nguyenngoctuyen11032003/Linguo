@@ -1,0 +1,237 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w2-adjektive-b2-1
+order_index: 3
+level: b2
+title:
+  vi: "Tính từ B2 (1): mức độ, đánh giá, tính chất (Adjektive 1)"
+objectives:
+  - vi: Dùng chính xác các tính từ nói về mức độ, tầm quan trọng và tính hợp lý.
+  - vi: "Phân biệt các tính từ gần nghĩa: wesentlich – bedeutend, erheblich – beträchtlich, notwendig – unentbehrlich."
+  - vi: "Dùng các tính từ trong cả ba vị trí: sau sein, trước danh từ và như trạng từ."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w2-verben-b2-2
+items:
+  - item: de:item:b2w2-angemessen
+  - item: de:item:b2w2-betraechtlich
+  - item: de:item:b2w2-bedeutend
+  - item: de:item:b2w2-erheblich
+  - item: de:item:b2w2-fraglich
+  - item: de:item:b2w2-geeignet
+  - item: de:item:b2w2-geringfuegig
+  - item: de:item:b2w2-gewaltig
+  - item: de:item:b2w2-kritisch
+  - item: de:item:b2w2-massgeblich
+  - item: de:item:b2w2-notwendig
+  - item: de:item:b2w2-objektiv
+  - item: de:item:b2w2-riskant
+  - item: de:item:b2w2-umstritten
+  - item: de:item:b2w2-unentbehrlich
+  - item: de:item:b2w2-ungeeignet
+  - item: de:item:b2w2-vorbildlich
+  - item: de:item:b2w2-vorrangig
+  - item: de:item:b2w2-wesentlich
+  - item: de:item:b2w2-zahlreich
+  - item: de:item:b2w2-zusaetzlich
+  - item: de:item:b2w2-hartnaeckig
+  - item: de:item:b2w2-langfristig
+  - item: de:item:b2w2-herkoemmlich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đánh giá và so sánh sự việc bằng nhiều tính từ chính xác hơn và nhận biết các sắc thái khác nhau giữa các tính từ gần nghĩa.
+  - type: explain
+    text:
+      vi: "Nhóm mức độ và tầm quan trọng: wesentlich (cốt yếu), bedeutend (quan trọng), erheblich và beträchtlich (đáng kể), gewaltig (to lớn), geringfügig (nhỏ, không đáng kể), maßgeblich (có tính quyết định), vorrangig (ưu tiên). Ví dụ: Der Preis ist erheblich gestiegen. Das ist ein wesentlicher Unterschied."
+  - type: explain
+    text:
+      vi: "Nhóm đánh giá: angemessen (thích hợp, vừa phải), geeignet (phù hợp), ungeeignet, notwendig, unentbehrlich (không thể thiếu), vorbildlich (mẫu mực), kritisch, umstritten, fraglich (đáng nghi vấn). Ví dụ: Die Bezahlung ist angemessen. Das Werkzeug ist für diese Arbeit ungeeignet."
+  - type: explain
+    text:
+      vi: "Nhớ vị trí: sau sein tính từ không đổi (Der Plan ist riskant), trước danh từ có đuôi (ein riskanter Plan), và nhiều tính từ dùng được như trạng từ mà không đổi: Die Kosten sind erheblich gestiegen. Nhưng một số tính từ như bedeutend, wesentlich thường dùng làm trạng từ trước một tính từ so sánh: wesentlich größer (lớn hơn nhiều)."
+  - type: deep_explain
+    text:
+      vi: "Erheblich và beträchtlich gần nghĩa nhau, nhưng erheblich thường xuất hiện trong ngữ cảnh pháp lý và kinh tế (erhebliche Mängel). Vorbildlich nghĩa là gương mẫu, không phải lý tưởng; ideal thì hoàn hảo. Fraglich nghĩa là còn đáng ngờ: Es ist fraglich, ob das Projekt gelingt. Umstritten là gây tranh cãi, nhiều người không đồng ý."
+  - type: example
+    target: Der Preis ist für die Leistung angemessen.
+    target_lang: de
+    translation:
+      vi: Giá cả phù hợp với chất lượng.
+    note:
+      vi: angemessen = thích hợp, vừa phải.
+  - type: example
+    target: Das Unternehmen hat beträchtliche Verluste gemacht.
+    target_lang: de
+    translation:
+      vi: Doanh nghiệp đã chịu những khoản lỗ đáng kể.
+    note:
+      vi: beträchtlich = đáng kể.
+  - type: example
+    target: Er gilt als ein bedeutender Forscher.
+    target_lang: de
+    translation:
+      vi: Ông được xem là một nhà nghiên cứu lớn.
+    note:
+      vi: bedeutend = quan trọng, lớn lao.
+  - type: example
+    target: Die Preise sind erheblich gestiegen.
+    target_lang: de
+    translation:
+      vi: Giá cả đã tăng đáng kể.
+    note:
+      vi: erheblich = đáng kể, nghiêm trọng.
+  - type: common_mistake
+    wrong: Der Unterschied ist wesentlich als vorher.
+    right: Der Unterschied ist wesentlich größer als vorher.
+    target_lang: de
+    note:
+      vi: Wesentlich làm trạng từ nhấn mạnh phải đứng trước tính từ so sánh (größer).
+  - type: common_mistake
+    wrong: Der Unterschied ist erheblich als vorher.
+    right: Der Unterschied ist erheblich größer als vorher.
+    target_lang: de
+    note:
+      vi: Erheblich làm trạng từ nhấn mạnh phải đứng trước tính từ so sánh (größer).
+  - type: summary
+    points:
+      - vi: wesentlich, bedeutend, erheblich, beträchtlich, gewaltig, geringfügig, maßgeblich, vorrangig, zahlreich, zusätzlich.
+      - vi: angemessen, geeignet, ungeeignet, notwendig, unentbehrlich, vorbildlich, kritisch, umstritten, fraglich, riskant, objektiv.
+      - vi: "Sau sein không đổi đuôi; trước danh từ có đuôi; dùng như trạng từ: erheblich gestiegen, wesentlich größer."
+exercises:
+  - key: de:exercise:b2w2l3-listen-massgeblich
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-massgeblich
+    prompt:
+      audio_asset_id: null
+      fallback_text: Er war maßgeblich an dem Erfolg beteiligt.
+      options:
+        - { id: q69, text: An toàn có tầm quan trọng hàng đầu., lang: vi }
+        - { id: x9p, text: Rất đông khách đã đến dự lễ khai mạc., lang: vi }
+        - { id: n9w, text: Anh ấy đóng vai trò quyết định trong thành công., lang: vi }
+        - { id: cgt, text: Vấn đề này rất dai dẳng., lang: vi }
+    answer:
+      correct_option_id: n9w
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Anh ấy đóng vai trò quyết định trong thành công.". Từ khoá là maßgeblich (mang tính quyết định, có thẩm quyền); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Anh ấy đóng vai trò quyết định trong thành công.
+  - key: de:exercise:b2w2l3-mcq-vi-de-betraechtlich
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w2-betraechtlich
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "đáng kể"?
+      stem_lang: vi
+      options:
+        - { id: g2u, text: beträchtlich, lang: de }
+        - { id: u64, text: umstritten, lang: de }
+        - { id: n75, text: vorrangig, lang: de }
+        - { id: i7y, text: geringfügig, lang: de }
+    answer:
+      correct_option_id: g2u
+    explanation:
+      vi: "beträchtlich nghĩa là \"đáng kể\". Ví dụ: Das Unternehmen hat beträchtliche Verluste gemacht. (Doanh nghiệp đã chịu những khoản lỗ đáng kể.)"
+    display_answer: beträchtlich
+  - key: de:exercise:b2w2l3-mcq-de-vi-vorbildlich
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-vorbildlich
+    prompt:
+      stem: "\"vorbildlich\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: z9q, text: gây tranh cãi, lang: vi }
+        - { id: q15, text: không thể thiếu, lang: vi }
+        - { id: wg8, text: "còn đáng ngờ, chưa chắc chắn", lang: vi }
+        - { id: gk3, text: "mẫu mực, gương mẫu", lang: vi }
+    answer:
+      correct_option_id: gk3
+    explanation:
+      vi: "vorbildlich nghĩa là \"mẫu mực, gương mẫu\". Ví dụ: Das Team hat vorbildlich zusammengearbeitet. (Nhóm đã phối hợp một cách mẫu mực.)"
+    display_answer: mẫu mực, gương mẫu
+  - key: de:exercise:b2w2l3-tr-word-langfristig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-langfristig
+    prompt:
+      source_text: dài hạn (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - langfristig
+    explanation:
+      vi: "\"dài hạn\" trong tiếng Đức là langfristig. Ví dụ: Wir planen langfristig."
+    display_answer: langfristig
+  - key: de:exercise:b2w2l3-mcq-luecke-angemessen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-angemessen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Giá cả phù hợp với chất lượng.\": Der Preis ist für die Leistung ___."
+      stem_lang: vi
+      options:
+        - { id: tvy, text: angemessen, lang: de }
+        - { id: pcr, text: maßgeblich, lang: de }
+        - { id: elg, text: geringfügige, lang: de }
+        - { id: wki, text: beträchtliche, lang: de }
+    answer:
+      correct_option_id: tvy
+    explanation:
+      vi: "Câu có nghĩa \"Giá cả phù hợp với chất lượng.\" nên cần angemessen (angemessen: thích hợp, vừa phải). geringfügige = nhỏ, không đáng kể; beträchtliche = đáng kể; maßgeblich = mang tính quyết định, có thẩm quyền không đúng nghĩa của câu."
+    display_answer: angemessen
+  - key: de:exercise:b2w2l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die erheblichen Kosten sind für das Unternehmen kaum angemessen, und es ist fraglich, ob das Projekt gelingt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die erheblichen Kosten sind für das Unternehmen kaum angemessen, und es ist fraglich, ob das Projekt gelingt.
+        - Die erheblichen Kosten sind für das Unternehmen kaum angemessen, und es ist fraglich, ob das Projekt gelingen wird.
+        - Die beträchtlichen Kosten sind für das Unternehmen kaum angemessen, und es ist fraglich, ob das Projekt gelingt.
+    explanation:
+      vi: "Gợi ý đáp án: Die erheblichen Kosten sind für das Unternehmen kaum angemessen, und es ist fraglich, ob das Projekt gelingt. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die erheblichen Kosten sind für das Unternehmen kaum angemessen, und es ist fraglich, ob das Projekt gelingt.
+    item: de:item:b2w2-angemessen
+  - key: de:exercise:b2w2l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Entscheidung war umstritten, aber sie hat maßgeblich dazu beigetragen, dass die Firma wesentlich erfolgreicher wurde.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Quyết định đó gây tranh cãi nhưng đóng vai trò quyết định giúp công ty thành công hơn nhiều.
+        - Quyết định này từng bị tranh cãi nhưng đã góp phần quan trọng vào việc công ty trở nên thành công hơn hẳn.
+        - Quyết định ấy gây nhiều tranh luận, nhưng đã có đóng góp mang tính quyết định để công ty thành công hơn rất nhiều.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Entscheidung war umstritten, aber sie hat maßgeblich dazu beigetragen, dass die Firma wesentlich erfolgreicher wurde.\" nghĩa là: Quyết định đó gây tranh cãi nhưng đóng vai trò quyết định giúp công ty thành công hơn nhiều. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Quyết định đó gây tranh cãi nhưng đóng vai trò quyết định giúp công ty thành công hơn nhiều.
+    item: de:item:b2w2-massgeblich

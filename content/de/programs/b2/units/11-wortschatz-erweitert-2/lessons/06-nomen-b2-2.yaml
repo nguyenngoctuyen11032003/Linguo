@@ -1,0 +1,307 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w2-nomen-b2-2
+order_index: 6
+level: b2
+title:
+  vi: "Danh từ B2 (2): thay đổi, trách nhiệm, xã hội (Nomen 2)"
+objectives:
+  - vi: Dùng thêm nhiều danh từ trừu tượng về sự thay đổi, trách nhiệm và quan hệ xã hội.
+  - vi: Nhận biết giống qua đuôi -ung, -heit, -nis, -tät, -schaft.
+  - vi: "Dùng đúng giới từ đi kèm: das Bewusstsein für, die Verpflichtung zu, der Widerstand gegen."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w2-nomen-b2-1
+items:
+  - item: de:item:b2w2-abweichung
+  - item: de:item:b2w2-beeintraechtigung
+  - item: de:item:b2w2-bewusstsein
+  - item: de:item:b2w2-buendnis
+  - item: de:item:b2w2-chance
+  - item: de:item:b2w2-defizit
+  - item: de:item:b2w2-einrichtung
+  - item: de:item:b2w2-gewissen
+  - item: de:item:b2w2-gleichgewicht
+  - item: de:item:b2w2-knappheit
+  - item: de:item:b2w2-kontrolle
+  - item: de:item:b2w2-luecke
+  - item: de:item:b2w2-missstand
+  - item: de:item:b2w2-mitwirkung
+  - item: de:item:b2w2-notlage
+  - item: de:item:b2w2-reichweite
+  - item: de:item:b2w2-spannung
+  - item: de:item:b2w2-verbreitung
+  - item: de:item:b2w2-verpflichtung
+  - item: de:item:b2w2-verzoegerung
+  - item: de:item:b2w2-vorwurf
+  - item: de:item:b2w2-wandel
+  - item: de:item:b2w2-widerstand
+  - item: de:item:b2w2-wirklichkeit
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng thêm khoảng hai mươi danh từ trừu tượng, biết giới từ đi kèm và nêu quan điểm về các vấn đề xã hội một cách chính xác hơn.
+  - type: explain
+    text:
+      vi: "Giới từ cố định cần học cùng danh từ: das Bewusstsein für + Akk (ý thức về), die Verpflichtung zu + Dativ (nghĩa vụ đối với), der Widerstand gegen + Akk (sự kháng cự), der Vorwurf gegen + Akk (lời buộc tội), die Verzögerung bei + Dativ (sự trì hoãn trong), der Wandel in + Dativ. Ví dụ: Es gibt Widerstand gegen den Plan."
+  - type: explain
+    text:
+      vi: "Danh từ chỉ khó khăn và vấn đề: das Defizit, die Lücke, der Missstand (tình trạng tồi tệ), die Notlage, die Knappheit (sự khan hiếm), die Spannung, die Beeinträchtigung (sự ảnh hưởng xấu), die Verzögerung, die Abweichung. Danh từ chỉ cơ hội và quan hệ: die Chance, das Bündnis, die Einrichtung, die Kontrolle, die Wirklichkeit."
+  - type: explain
+    text:
+      vi: "Giống và số nhiều: đuôi -ung, -heit, -keit, -schaft, -tät, -ik thường giống cái (die Verzögerung, die Knappheit); từ đuôi -nis là giống trung (das Bündnis, Bündnisse) hoặc giống cái (die Kenntnis). Vài từ đặc biệt: der Wandel (Sg.), das Gewissen (Sg.), das Gleichgewicht (Sg.), der Missstand (Missstände)."
+  - type: deep_explain
+    text:
+      vi: "Das Defizit có số nhiều die Defizite và thường xuất hiện trong ngữ cảnh kinh tế (ein Defizit im Haushalt). Der Vorwurf chỉ lời buộc tội hoặc trách móc: Er erhebt Vorwürfe gegen den Chef. Die Reichweite là tầm với hoặc phạm vi tác động. Das Gleichgewicht chỉ có số ít: das ökologische Gleichgewicht. Das Gewissen cũng chỉ số ít: ein schlechtes Gewissen haben."
+  - type: example
+    target: Die Abweichung vom Plan ist gering.
+    target_lang: de
+    translation:
+      vi: Độ sai lệch so với kế hoạch rất nhỏ.
+    note:
+      vi: die Abweichung = sự sai lệch.
+  - type: example
+    target: Es gab keine Beeinträchtigung des Verkehrs.
+    target_lang: de
+    translation:
+      vi: Không có ảnh hưởng xấu nào đến giao thông.
+    note:
+      vi: die Beeinträchtigung = sự ảnh hưởng xấu.
+  - type: example
+    target: Das Bewusstsein für Umweltschutz ist gewachsen.
+    target_lang: de
+    translation:
+      vi: Ý thức bảo vệ môi trường đã tăng lên.
+    note:
+      vi: das Bewusstsein = ý thức, sự nhận thức.
+  - type: example
+    target: Die Parteien haben ein Bündnis geschlossen.
+    target_lang: de
+    translation:
+      vi: Các đảng đã lập một liên minh.
+    note:
+      vi: das Bündnis = liên minh.
+  - type: common_mistake
+    wrong: Es gibt viel Widerstand für den Plan.
+    right: Es gibt viel Widerstand gegen den Plan.
+    target_lang: de
+    note:
+      vi: Widerstand đi với gegen + Akkusativ.
+  - type: common_mistake
+    wrong: Die Zeitung erhebt Vorwürfe auf die Regierung.
+    right: Die Zeitung erhebt Vorwürfe gegen die Regierung.
+    target_lang: de
+    note:
+      vi: Vorwurf đi với gegen + Akkusativ.
+  - type: summary
+    points:
+      - vi: das Bewusstsein, die Verpflichtung, der Widerstand, der Vorwurf, die Verzögerung, der Wandel, das Gewissen, das Gleichgewicht.
+      - vi: das Defizit, die Lücke, der Missstand, die Notlage, die Knappheit, die Spannung, die Beeinträchtigung, die Abweichung.
+      - vi: die Chance, das Bündnis, die Einrichtung, die Kontrolle, die Wirklichkeit, die Reichweite, die Verbreitung, die Mitwirkung.
+exercises:
+  - key: de:exercise:b2w2l6-listen-verzoegerung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-verzoegerung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Es kam zu einer Verzögerung bei der Lieferung.
+      options:
+        - { id: eqe, text: Đạo luật có một lỗ hổng., lang: vi }
+        - { id: xej, text: Anh ấy cảm thấy áy náy., lang: vi }
+        - { id: wik, text: Đã có sự chậm trễ trong việc giao hàng., lang: vi }
+        - { id: rf9, text: Chúng tôi mong sự tham gia của ông/bà., lang: vi }
+    answer:
+      correct_option_id: wik
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Đã có sự chậm trễ trong việc giao hàng.". Từ khoá là die Verzögerung (sự chậm trễ); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Đã có sự chậm trễ trong việc giao hàng.
+  - key: de:exercise:b2w2l6-mcq-vi-de-abweichung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w2-abweichung
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "sự sai lệch"?
+      stem_lang: vi
+      options:
+        - { id: tvd, text: die Knappheit, lang: de }
+        - { id: rcz, text: die Abweichung, lang: de }
+        - { id: ov6, text: der Missstand, lang: de }
+        - { id: etv, text: das Gleichgewicht, lang: de }
+    answer:
+      correct_option_id: rcz
+    explanation:
+      vi: "die Abweichung nghĩa là \"sự sai lệch\". Ví dụ: Die Abweichung vom Plan ist gering. (Độ sai lệch so với kế hoạch rất nhỏ.)"
+    display_answer: die Abweichung
+  - key: de:exercise:b2w2l6-mcq-de-vi-notlage
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-notlage
+    prompt:
+      stem: "\"die Notlage\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: kx5, text: liên minh, lang: vi }
+        - { id: i1a, text: tình cảnh khốn khó, lang: vi }
+        - { id: gxc, text: thực tế, lang: vi }
+        - { id: bou, text: "sự tham gia, đóng góp", lang: vi }
+    answer:
+      correct_option_id: i1a
+    explanation:
+      vi: "die Notlage nghĩa là \"tình cảnh khốn khó\". Ví dụ: Viele Familien befinden sich in einer Notlage. (Nhiều gia đình đang ở trong cảnh khốn khó.)"
+    display_answer: tình cảnh khốn khó
+  - key: de:exercise:b2w2l6-mcq-artikel-wandel
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-wandel
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Wandel\" (sự biến đổi): ___ Wandel"
+      stem_lang: vi
+      options:
+        - { id: i2n, text: das, lang: de }
+        - { id: fjk, text: ein, lang: de }
+        - { id: dc9, text: die, lang: de }
+        - { id: v9a, text: der, lang: de }
+    answer:
+      correct_option_id: v9a
+    explanation:
+      vi: "Wandel là danh từ giống đực (der): der Wandel (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b2w2l6-tr-word-verbreitung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-verbreitung
+    prompt:
+      source_text: sự lan rộng, phổ biến (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Verbreitung
+    known_wrong:
+      - answer: der Verbreitung
+        feedback_vi: Verbreitung là giống cái, nên là die Verbreitung.
+        error_tag: article
+      - answer: das Verbreitung
+        feedback_vi: Verbreitung là giống cái, nên là die Verbreitung.
+        error_tag: article
+    explanation:
+      vi: "\"sự lan rộng, phổ biến\" trong tiếng Đức là die Verbreitung (số nhiều: không dùng). Ví dụ: Die Verbreitung von Falschmeldungen ist gefährlich."
+    display_answer: die Verbreitung
+  - key: de:exercise:b2w2l6-tr-word-buendnis
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-buendnis
+    prompt:
+      source_text: liên minh (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Bündnis
+    known_wrong:
+      - answer: der Bündnis
+        feedback_vi: Bündnis là giống trung, nên là das Bündnis.
+        error_tag: article
+      - answer: die Bündnis
+        feedback_vi: Bündnis là giống trung, nên là das Bündnis.
+        error_tag: article
+    explanation:
+      vi: "\"liên minh\" trong tiếng Đức là das Bündnis (số nhiều: die Bündnisse). Ví dụ: Die Parteien haben ein Bündnis geschlossen."
+    display_answer: das Bündnis
+  - key: de:exercise:b2w2l6-fill-plural-beeintraechtigung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-beeintraechtigung
+    prompt:
+      template: "Singular: die Beeinträchtigung · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 20 }
+    answer:
+      blanks:
+        b1:
+          - Beeinträchtigungen
+    known_wrong:
+      - answer: Beeinträchtigung
+        feedback_vi: Beeinträchtigung là dạng số ít; số nhiều là Beeinträchtigungen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Beeinträchtigung là die Beeinträchtigungen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Beeinträchtigung · Plural: die Beeinträchtigungen"
+  - key: de:exercise:b2w2l6-mcq-luecke-bewusstsein
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-bewusstsein
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Ý thức bảo vệ môi trường đã tăng lên.\": Das ___ für Umweltschutz ist gewachsen."
+      stem_lang: vi
+      options:
+        - { id: w8v, text: Bewusstsein, lang: de }
+        - { id: omg, text: Verpflichtung, lang: de }
+        - { id: zde, text: Spannungen, lang: de }
+        - { id: trk, text: Chance, lang: de }
+    answer:
+      correct_option_id: w8v
+    explanation:
+      vi: "Câu có nghĩa \"Ý thức bảo vệ môi trường đã tăng lên.\" nên cần Bewusstsein (das Bewusstsein: ý thức, sự nhận thức). Verpflichtung = nghĩa vụ, cam kết; Spannungen = căng thẳng; điện áp; Chance = cơ hội, khả năng không đúng nghĩa của câu."
+    display_answer: Bewusstsein
+  - key: de:exercise:b2w2l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Es gibt Widerstand gegen den Plan, weil das Bewusstsein für die Risiken in der Bevölkerung wächst.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Es gibt Widerstand gegen den Plan, weil das Bewusstsein für die Risiken in der Bevölkerung wächst.
+        - Gegen den Plan gibt es Widerstand, weil das Bewusstsein für die Risiken in der Bevölkerung wächst.
+        - Es gibt Widerstand gegen das Vorhaben, weil das Bewusstsein für die Risiken in der Bevölkerung wächst.
+    explanation:
+      vi: "Gợi ý đáp án: Es gibt Widerstand gegen den Plan, weil das Bewusstsein für die Risiken in der Bevölkerung wächst. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Es gibt Widerstand gegen den Plan, weil das Bewusstsein für die Risiken in der Bevölkerung wächst.
+    item: de:item:b2w2-bewusstsein
+  - key: de:exercise:b2w2l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Der Missstand wurde schon lange kritisiert, aber die Verzögerung bei der Kontrolle hat die Lage verschlechtert.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tình trạng tồi tệ đó bị chỉ trích từ lâu, nhưng sự trì hoãn trong việc kiểm soát đã làm tình hình xấu đi.
+        - Cái tình trạng tồi tệ ấy đã bị phê phán từ lâu nhưng việc kiểm tra bị chậm đã khiến tình hình tệ hơn.
+        - Việc yếu kém bị chỉ trích từ lâu, nhưng sự chậm trễ trong kiểm soát đã làm tình hình xấu đi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Missstand wurde schon lange kritisiert, aber die Verzögerung bei der Kontrolle hat die Lage verschlechtert.\" nghĩa là: Tình trạng tồi tệ đó bị chỉ trích từ lâu, nhưng sự trì hoãn trong việc kiểm soát đã làm tình hình xấu đi. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Tình trạng tồi tệ đó bị chỉ trích từ lâu, nhưng sự trì hoãn trong việc kiểm soát đã làm tình hình xấu đi.
+    item: de:item:b2w2-kontrolle

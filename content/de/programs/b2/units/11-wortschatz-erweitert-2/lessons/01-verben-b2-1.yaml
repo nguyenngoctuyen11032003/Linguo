@@ -1,0 +1,237 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w2-verben-b2-1
+order_index: 1
+level: b2
+title:
+  vi: "Động từ B2 (1): thay đổi, ảnh hưởng, giới hạn (Verben 1)"
+objectives:
+  - vi: Dùng khoảng hai mươi động từ trừu tượng thường gặp trong báo chí và văn bản trang trọng.
+  - vi: "Nhớ giới từ và cách đi kèm: beharren auf + Dativ, beruhen auf + Dativ, beitreten + Dativ."
+  - vi: Chia đúng ba dạng của động từ bất quy tắc và phân biệt tách – không tách.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w1-demografie-sozialsystem
+items:
+  - item: de:item:b2w2-abschaffen
+  - item: de:item:b2w2-abschwaechen
+  - item: de:item:b2w2-anstreben
+  - item: de:item:b2w2-anwenden
+  - item: de:item:b2w2-aufdecken
+  - item: de:item:b2w2-aufklaeren
+  - item: de:item:b2w2-ausgleichen
+  - item: de:item:b2w2-ausloesen
+  - item: de:item:b2w2-ausnutzen
+  - item: de:item:b2w2-ausschliessen
+  - item: de:item:b2w2-bedrohen
+  - item: de:item:b2w2-beeindrucken
+  - item: de:item:b2w2-beharren
+  - item: de:item:b2w2-beitreten
+  - item: de:item:b2w2-bemaengeln
+  - item: de:item:b2w2-beruhen
+  - item: de:item:b2w2-beschleunigen
+  - item: de:item:b2w2-beschraenken
+  - item: de:item:b2w2-beseitigen
+  - item: de:item:b2w2-besitzen
+  - item: de:item:b2w2-bestimmen
+  - item: de:item:b2w2-betreffen
+  - item: de:item:b2w2-bewerten
+  - item: de:item:b2w2-bezeichnen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng nhiều động từ trừu tượng trong bài viết và thảo luận ở trình độ B2, kể cả giới từ, cách đi kèm và dạng Partizip II.
+  - type: explain
+    text:
+      vi: "Nhóm động từ về thay đổi và ảnh hưởng: abschaffen (bãi bỏ), abschwächen (làm giảm nhẹ), beschleunigen (làm nhanh hơn), beschränken (hạn chế), beseitigen (loại bỏ), auslösen (gây ra, kích hoạt), aufdecken (phát hiện, vạch trần), aufklären (làm sáng tỏ; thông tin cho ai). Hầu hết có tân ngữ Akkusativ: Die Regierung hat die Steuer abgeschafft."
+  - type: explain
+    text:
+      vi: "Động từ có giới từ hoặc Dativ cố định: beharren auf + Dativ (khăng khăng giữ), beruhen auf + Dativ (dựa trên), beitreten + Dativ (gia nhập: tritt bei, trat bei, ist beigetreten). Ví dụ: Das Urteil beruht auf neuen Beweisen. Er beharrt auf seiner Meinung. Das Land ist der Union beigetreten."
+  - type: explain
+    text:
+      vi: "Dạng bất quy tắc cần học: ausschließen (schloss aus, hat ausgeschlossen), besitzen (besaß, hat besessen), betreffen (betraf, hat betroffen), ausgleichen (glich aus, hat ausgeglichen), anwenden (wandte an / wendete an, hat angewandt / angewendet). Động từ không tách (be-, ent-, ver-) không thêm ge- ở Partizip II: bewertet, bemängelt, beeindruckt."
+  - type: deep_explain
+    text:
+      vi: "Betreffen vừa có nghĩa \"liên quan đến, ảnh hưởng tới\" (Die Regelung betrifft alle Mieter) vừa trong cụm Was mich betrifft (còn tôi thì). Ausnutzen mang sắc thái tiêu cực khi nói về người (jemanden ausnutzen = lợi dụng ai), còn với cơ hội thì trung tính. Bezeichnen thường đi với als: Er bezeichnet sie als Expertin."
+  - type: example
+    target: Die Stadt will die Parkgebühren abschaffen.
+    target_lang: de
+    translation:
+      vi: Thành phố muốn bãi bỏ phí đỗ xe.
+    note:
+      vi: abschaffen = bãi bỏ.
+  - type: example
+    target: Die Regierung schwächt ihre Aussage ab.
+    target_lang: de
+    translation:
+      vi: Chính phủ làm dịu lời tuyên bố của mình.
+    note:
+      vi: abschwächen = làm giảm nhẹ, làm yếu đi.
+  - type: example
+    target: Das Unternehmen strebt ein Wachstum von fünf Prozent an.
+    target_lang: de
+    translation:
+      vi: Công ty nhắm tới mức tăng trưởng năm phần trăm.
+    note:
+      vi: anstreben = hướng tới, nhắm tới.
+  - type: example
+    target: Dieses Verfahren lässt sich in vielen Bereichen anwenden.
+    target_lang: de
+    translation:
+      vi: Quy trình này có thể áp dụng trong nhiều lĩnh vực.
+    note:
+      vi: anwenden = áp dụng, sử dụng.
+  - type: common_mistake
+    wrong: Das Urteil beruht an neuen Beweisen.
+    right: Das Urteil beruht auf neuen Beweisen.
+    target_lang: de
+    note:
+      vi: Beruhen đi với auf + Dativ.
+  - type: common_mistake
+    wrong: Die Firma ist dem Verband beigetritt.
+    right: Die Firma ist dem Verband beigetreten.
+    target_lang: de
+    note:
+      vi: "Beitreten là động từ bất quy tắc tách dùng sein: ist beigetreten."
+  - type: summary
+    points:
+      - vi: abschaffen, abschwächen, beschleunigen, beschränken, beseitigen, auslösen, aufdecken, aufklären, ausgleichen, ausnutzen.
+      - vi: beharren auf + Dativ, beruhen auf + Dativ, beitreten + Dativ (ist beigetreten), bedrohen, beeindrucken, bemängeln, bewerten, bezeichnen als.
+      - vi: "ausschließen, besitzen, betreffen, anwenden: học cả ba dạng; anstreben, bestimmen."
+exercises:
+  - key: de:exercise:b2w2l1-listen-beharren
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-beharren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Er beharrt auf seinem Recht.
+      options:
+        - { id: omm, text: Anh ấy khăng khăng giữ quyền lợi của mình., lang: vi }
+        - { id: kdq, text: Quyết định đó đã gây ra những cuộc biểu tình dữ dội., lang: vi }
+        - { id: kfi, text: Quy trình này có thể áp dụng trong nhiều lĩnh vực., lang: vi }
+        - { id: k7v, text: Thành tích của cô ấy đã gây ấn tượng với ban giám khảo., lang: vi }
+    answer:
+      correct_option_id: omm
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Anh ấy khăng khăng giữ quyền lợi của mình.". Từ khoá là beharren (khăng khăng (auf + Dativ)); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Anh ấy khăng khăng giữ quyền lợi của mình.
+  - key: de:exercise:b2w2l1-mcq-vi-de-beitreten
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w2-beitreten
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "gia nhập (+ Dativ)"?
+      stem_lang: vi
+      options:
+        - { id: vxy, text: anwenden, lang: de }
+        - { id: ijb, text: bezeichnen, lang: de }
+        - { id: men, text: beitreten, lang: de }
+        - { id: y75, text: ausschließen, lang: de }
+    answer:
+      correct_option_id: men
+    explanation:
+      vi: "beitreten nghĩa là \"gia nhập (+ Dativ)\". Ví dụ: Das Land ist der Union beigetreten. (Quốc gia này đã gia nhập liên minh.)"
+    display_answer: beitreten
+  - key: de:exercise:b2w2l1-mcq-de-vi-bedrohen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w2-bedrohen
+    prompt:
+      stem: "\"bedrohen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: km4, text: đe dọa, lang: vi }
+        - { id: eqh, text: "liên quan, ảnh hưởng đến", lang: vi }
+        - { id: hxn, text: "hạn chế, giới hạn", lang: vi }
+        - { id: wnu, text: bãi bỏ, lang: vi }
+    answer:
+      correct_option_id: km4
+    explanation:
+      vi: "bedrohen nghĩa là \"đe dọa\". Ví dụ: Die Dürre bedroht die Ernte. (Hạn hán đe dọa vụ mùa.)"
+    display_answer: đe dọa
+  - key: de:exercise:b2w2l1-tr-word-anstreben
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-anstreben
+    prompt:
+      source_text: hướng tới, nhắm tới (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - anstreben
+    explanation:
+      vi: "\"hướng tới, nhắm tới\" trong tiếng Đức là anstreben. Ví dụ: Das Unternehmen strebt ein Wachstum von fünf Prozent an."
+    display_answer: anstreben
+  - key: de:exercise:b2w2l1-mcq-luecke-abschaffen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w2-abschaffen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Thành phố muốn bãi bỏ phí đỗ xe.\": Die Stadt will die Parkgebühren ___."
+      stem_lang: vi
+      options:
+        - { id: ihu, text: aus, lang: de }
+        - { id: hrn, text: ausgelöst, lang: de }
+        - { id: bi7, text: ab, lang: de }
+        - { id: u0f, text: abschaffen, lang: de }
+    answer:
+      correct_option_id: u0f
+    explanation:
+      vi: "Câu có nghĩa \"Thành phố muốn bãi bỏ phí đỗ xe.\" nên cần abschaffen (abschaffen: bãi bỏ). ausgelöst = gây ra, kích hoạt; aus = bù đắp, cân bằng; ab = làm giảm nhẹ, làm yếu đi không đúng nghĩa của câu."
+    display_answer: abschaffen
+  - key: de:exercise:b2w2l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Studie beruht auf neuen Daten und deckt auf, dass die Maßnahme das Problem nicht beseitigt hat.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Studie beruht auf neuen Daten und deckt auf, dass die Maßnahme das Problem nicht beseitigt hat.
+        - Die Studie beruht auf neuen Daten und zeigt, dass die Maßnahme das Problem nicht beseitigt hat.
+        - Die Studie beruht auf neuen Daten und deckt auf, dass die Maßnahme das Problem nicht beseitigen konnte.
+    explanation:
+      vi: "Gợi ý đáp án: Die Studie beruht auf neuen Daten und deckt auf, dass die Maßnahme das Problem nicht beseitigt hat. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Studie beruht auf neuen Daten und deckt auf, dass die Maßnahme das Problem nicht beseitigt hat.
+    item: de:item:b2w2-beruhen
+  - key: de:exercise:b2w2l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Der Abgeordnete beharrt auf seiner Position, obwohl die Kritiker die Reform bemängeln.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nghị sĩ khăng khăng giữ lập trường của mình, dù những người phê phán chê bai cải cách.
+        - Vị dân biểu vẫn giữ quan điểm, mặc dù giới phê bình chỉ ra những khuyết điểm của cuộc cải cách.
+        - Nghị sĩ vẫn khăng khăng với lập trường, bất chấp những người chỉ trích cải cách.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Abgeordnete beharrt auf seiner Position, obwohl die Kritiker die Reform bemängeln.\" nghĩa là: Nghị sĩ khăng khăng giữ lập trường của mình, dù những người phê phán chê bai cải cách. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Nghị sĩ khăng khăng giữ lập trường của mình, dù những người phê phán chê bai cải cách.
+    item: de:item:b2w2-beharren
