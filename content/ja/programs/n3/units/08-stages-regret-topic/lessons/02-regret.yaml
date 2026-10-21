@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-regret
+order_index: 2
+level: n3
+title:
+  vi: Hối tiếc và suýt nữa - ～ところだった・～ばよかった・～ずに済む
+objectives:
+  - vi: Nói suýt nữa xảy ra bằng V辞書形 / V ない + ところだった.
+  - vi: Nói hối tiếc bằng ～ばよかった / ～なければよかった.
+  - vi: Nói không phải làm gì bằng ～ずに / ないで + 済む.
+estimated_minutes: 17
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n3-hajimeru
+items:
+  - item: ja:item:n3-u8-gram-tokoro-datta
+  - item: ja:item:n3-u8-gram-ba-yokatta
+  - item: ja:item:n3-u8-gram-zu-ni-sumu
+  - item: ja:item:n3-u8-ayauku
+  - item: ja:item:n3-u8-koukai
+  - item: ja:item:n3-u8-hansei
+  - item: ja:item:n3-u8-girigiri
+  - item: ja:item:n3-u8-ukkari
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được chuyện suýt gặp nạn, hối tiếc và may mắn không phải làm - 危うく遅刻するところでした。もっと早く寝ればよかった。傘を買わずに済みました。
+  - type: explain
+    text:
+      vi: 'V辞書形 / V ない + ところだった = "suýt nữa thì...": sự việc không xảy ra. Thường đi với 危うく, もう少しで. Ví dụ もう少しで電車に乗り遅れるところでした. Chú ý khác với ところだ (đang/sắp làm).'
+  - type: explain
+    text:
+      vi: 'V ば / V なければ + よかった = "giá mà..., giá mà không...": diễn tả hối tiếc về điều đã qua. Ví dụ もっと早く寝ればよかった (giá mà đã ngủ sớm hơn), あんなに食べなければよかった (giá mà không ăn nhiều như thế).'
+  - type: explain
+    text:
+      vi: V ない / V ずに + 済む = "không cần phải, xong mà không phải ..." - 雨がやんだので、傘を買わずに済みました. Thường mang sắc thái may mắn, nhẹ nhõm. Từ liên quan - 後悔 (hối hận), 反省 (tự kiểm điểm), ぎりぎり (sát nút), うっかり (sơ ý).
+  - type: deep_explain
+    text:
+      vi: 'Dạng ～たらよかった (早く寝ていたらよかった) có thể thay ばよかった; cả hai đều chỉ việc đã qua và không thể thay đổi. Với việc đã xảy ra theo hướng tốt, người Nhật nói ～てよかった (間に合ってよかった). ～ずに済む khác ～なくてもいい: 済む nhấn "kết thúc suôn sẻ, nhẹ nhõm", còn なくてもいい nhấn "được phép không làm".'
+  - type: example
+    target: もう少しで電車に乗り遅れるところでした。
+    target_lang: ja
+    translation:
+      vi: Suýt nữa tôi lỡ chuyến tàu.
+    note:
+      vi: V辞書形 + ところだった.
+  - type: example
+    target: もっと早く寝ればよかった。
+    target_lang: ja
+    translation:
+      vi: Giá mà tôi đã đi ngủ sớm hơn.
+    note:
+      vi: V ば + よかった.
+  - type: example
+    target: 友達が手伝ってくれたので、残業しないで済みました。
+    target_lang: ja
+    translation:
+      vi: Bạn giúp tôi nên tôi không phải làm thêm giờ.
+    note:
+      vi: V ないで + 済む.
+  - type: example
+    target: うっかり傘を忘れて、ぎりぎり間に合いました。
+    target_lang: ja
+    translation:
+      vi: Tôi sơ ý quên ô, và kịp giờ sát nút.
+    note:
+      vi: うっかり - sơ ý; ぎりぎり - sát nút.
+  - type: common_mistake
+    wrong: 危うく忘れるところでした。(đã thực sự quên)
+    right: 危うく忘れるところでした。 / 忘れてしまいました。
+    target_lang: ja
+    note:
+      vi: ところだった = suýt (chưa xảy ra). Nếu đã quên thật thì dùng 忘れてしまった.
+  - type: common_mistake
+    wrong: もっと勉強すればよかったです。(chưa muộn, còn có thể làm)
+    right: もっと勉強すればよかったです。
+    target_lang: ja
+    note:
+      vi: ばよかった chỉ dùng cho việc đã qua; việc còn có thể làm dùng ～たほうがいい.
+  - type: summary
+    points:
+      - vi: V辞書形 / V ない + ところだった - suýt nữa (không xảy ra).
+      - vi: V ば / V なければ + よかった - giá mà ...
+      - vi: V ない / ずに + 済む - không phải ...
+      - vi: 危うく · 後悔 · 反省 · ぎりぎり · うっかり.
+exercises:
+  - key: ja:exercise:n3-regret-r1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-tokoro-datta
+    prompt:
+      stem: Chọn câu đúng - 危うく事故になる___。
+      stem_lang: vi
+      options:
+        - id: szm
+          text: ところでした
+          lang: ja
+        - id: kta
+          text: ところにして
+          lang: ja
+        - id: d1x
+          text: ところです
+          lang: ja
+        - id: rp7
+          text: ところでしたら
+          lang: ja
+    answer:
+      correct_option_id: szm
+    explanation:
+      vi: Suýt nữa xảy ra tai nạn - ところだった (ところでした). ところです là "đang/sắp", sai nghĩa.
+    display_answer: ところでした
+  - key: ja:exercise:n3-regret-r2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-ba-yokatta
+    prompt:
+      stem: Chọn câu đúng - もっと早く___。
+      stem_lang: vi
+      options:
+        - id: z5a
+          text: 寝ばよかった
+          lang: ja
+        - id: s4i
+          text: 寝るはよかった
+          lang: ja
+        - id: mk7
+          text: 寝ればよかった
+          lang: ja
+        - id: rl0
+          text: 寝たらいいだった
+          lang: ja
+    answer:
+      correct_option_id: mk7
+    explanation:
+      vi: "V ば + よかった: 寝ればよかった. 寝ば, 寝るは, 寝たらいいだった đều sai."
+    display_answer: 寝ればよかった
+  - key: ja:exercise:n3-regret-r3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u8-ayauku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 危うく遅刻するところでしたが、ぎりぎり間に合いました。
+      options:
+        - id: a4z
+          text: Suýt nữa tôi đến muộn nhưng đã kịp giờ sát nút.
+          lang: vi
+        - id: fmr
+          text: Tôi đến muộn nên không kịp.
+          lang: vi
+        - id: foi
+          text: Tôi quên mất giờ nên đến muộn.
+          lang: vi
+        - id: irt
+          text: Tôi đến sớm nên có thời gian.
+          lang: vi
+    answer:
+      correct_option_id: a4z
+    explanation:
+      vi: 危うく～ところだった - suýt nữa; ぎりぎり間に合った - kịp sát nút.
+    display_answer: Suýt nữa tôi đến muộn nhưng đã kịp giờ sát nút.
+  - key: ja:exercise:n3-regret-r4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-zu-ni-sumu
+    prompt:
+      template: 雨がやんだので、傘を買わ{{b1}}済みました。 (Vì mưa tạnh nên tôi không phải mua ô.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Dạng ず của ない.
+        - Bắt đầu bằng ず.
+    answer:
+      blanks:
+        b1:
+          - ずに
+          - ないで
+    explanation:
+      vi: V ず(に) + 済む - không phải làm.
+    display_answer: 雨がやんだので、傘を買わずに済みました。
+  - key: ja:exercise:n3-regret-r5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-ukkari
+    prompt:
+      stem: Từ nào có nghĩa là “sơ ý, lơ đễnh”?
+      stem_lang: vi
+      options:
+        - id: ikn
+          text: 次第に
+          lang: ja
+        - id: mkz
+          text: 突然
+          lang: ja
+        - id: bje
+          text: うっかり
+          lang: ja
+        - id: gi5
+          text: ぎりぎり
+          lang: ja
+    answer:
+      correct_option_id: bje
+    explanation:
+      vi: うっかり là sơ ý. ぎりぎり là sát nút, 突然 là đột nhiên, 次第に là dần dần.
+    display_answer: うっかり
+  - key: ja:exercise:n3-regret-r6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-ba-yokatta
+    prompt:
+      template: あんなに食べ{{b1}}よかった。 (Giá mà tôi đã không ăn nhiều như thế.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - なければ
+    known_wrong:
+      - answer: ば
+        feedback_vi: Phủ định cần なければ trước よかった.
+        error_tag: form
+      - answer: なくて
+        feedback_vi: なくてよかった nghĩa là "mừng vì không...", không phải hối tiếc.
+        error_tag: form
+    explanation:
+      vi: V なければ + よかった - giá mà không ...
+    display_answer: あんなに食べなければよかった。
+  - key: ja:exercise:n3-regret-r7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-koukai
+    prompt:
+      template: あの時、断らなかったことを{{b1}}しています。 (Tôi hối hận vì lúc đó đã không từ chối.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 後悔
+          - こうかい
+    known_wrong:
+      - answer: 反省
+        feedback_vi: 反省 là tự kiểm điểm; "hối hận" là 後悔.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 後悔 - hối hận.
+    display_answer: あの時、断らなかったことを後悔しています。
+  - key: ja:exercise:n3-regret-r8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-tokoro-datta
+    prompt:
+      source_text: Suýt nữa tôi lỡ chuyến tàu.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - もう少しで電車に乗り遅れるところでした。
+        - 危うく電車に乗り遅れるところでした。
+        - もうすこしででんしゃにのりおくれるところでした。
+        - 電車に乗り遅れるところでした。
+        - もう少しで電車に乗り遅れるところだった。
+    known_wrong:
+      - answer: 電車に乗り遅れるところです。
+        feedback_vi: ところです là "sắp" (chưa xảy ra); "suýt nữa" dùng ところでした.
+        error_tag: tense
+    explanation:
+      vi: もう少しで / 危うく + V辞書形 + ところだった.
+    display_answer: もう少しで電車に乗り遅れるところでした。
+  - key: ja:exercise:n3-regret-r9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u8-gram-zu-ni-sumu
+    prompt:
+      source_text: 友達が手伝ってくれたので、残業しないで済みました。もっと早く頼めばよかったです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bạn giúp tôi nên tôi không phải làm thêm giờ. Giá mà tôi đã nhờ sớm hơn.
+        - Vì bạn giúp nên tôi không phải tăng ca. Giá mà tôi nhờ sớm hơn.
+        - Nhờ bạn giúp mà tôi không phải làm thêm giờ. Giá như nhờ sớm hơn thì tốt.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Bạn giúp tôi nên tôi phải làm thêm giờ. Giá mà tôi đã nhờ sớm hơn.
+        feedback_vi: 済みました nghĩa là xong suôn sẻ, không phải phải làm.
+        error_tag: meaning
+    explanation:
+      vi: 残業しないで済んだ - không phải làm thêm giờ; 頼めばよかった - giá mà nhờ sớm hơn.
+    display_answer: Bạn giúp tôi nên tôi không phải làm thêm giờ. Giá mà tôi đã nhờ sớm hơn.
+  - key: ja:exercise:n3-regret-r10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-ba-yokatta
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Giá mà tôi đã đi ngủ sớm hơn."'
+      tokens:
+        - id: t2
+          text: 早く
+        - id: t1
+          text: もっと
+        - id: t4
+          text: よかった。
+        - id: t3
+          text: 寝れば
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: もっと早く (sớm hơn) + 寝れば (nếu ngủ) + よかった (giá mà).
+    display_answer: もっと早く寝ればよかった。
+  - key: ja:exercise:n3-regret-r11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-hansei
+    prompt:
+      stem: Sau khi thất bại, bạn nhìn lại lỗi của mình. Từ nào hợp?
+      stem_lang: vi
+      options:
+        - id: bxc
+          text: 後悔
+          lang: ja
+        - id: tc9
+          text: 安心
+          lang: ja
+        - id: c84
+          text: 反省
+          lang: ja
+        - id: ytc
+          text: 心配
+          lang: ja
+    answer:
+      correct_option_id: c84
+    explanation:
+      vi: 反省 là tự kiểm điểm, nhìn lại lỗi để sửa. 後悔 là hối hận, 安心 là yên tâm, 心配 là lo lắng.
+    display_answer: 反省

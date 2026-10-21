@@ -1,0 +1,367 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-sai-kagiru
+order_index: 3
+level: n3
+title:
+  vi: Khi, tốt nhất là, không cần - ～際に・～に限る・～ことはない
+objectives:
+  - vi: Nói "khi" trang trọng bằng ～際(に).
+  - vi: Nói "tốt nhất là" bằng ～に限る.
+  - vi: Nói "không cần phải" bằng V辞書形 + ことはない.
+estimated_minutes: 17
+skills:
+  - grammar
+  - vocabulary
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n3-regret
+items:
+  - item: ja:item:n3-u8-gram-sai-ni
+  - item: ja:item:n3-u8-gram-ni-kagiru
+  - item: ja:item:n3-u8-gram-koto-wa-nai
+  - item: ja:item:n3-u8-muda
+  - item: ja:item:n3-u8-anshin
+  - item: ja:item:n3-u8-shinpai
+  - item: ja:item:n3-u8-chuui
+  - item: ja:item:n3-u8-fuyou
+  - item: ja:item:n3-u8-saiteki
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu thông báo và đưa lời khuyên - ご利用の際は受付で名前を書いてください。疲れた時は寝るに限る。心配することはありません。
+  - type: explain
+    text:
+      vi: '～際(に) nghĩa là "khi, vào dịp" - dùng trong văn trang trọng, thông báo, hướng dẫn. V辞書形 / V た / N の + 際: 利用する際は, 来た際に, ご使用の際は. Cảm giác cứng hơn とき.'
+  - type: explain
+    text:
+      vi: '～に限る nghĩa là "không gì bằng, tốt nhất là". V辞書形 / N + に限る: 疲れた時は寝るに限る, 暑い日はビールに限る. Phủ định - V ないに限る (tốt nhất là đừng...). Thể hiện ý kiến chủ quan của người nói.'
+  - type: explain
+    text:
+      vi: 'V辞書形 + ことはない = "không cần phải, không có lý do để": 心配することはありません (không cần lo), 謝ることはない. Từ liên quan - 無駄 (vô ích), 安心 (yên tâm), 心配 (lo lắng), 注意 (chú ý), 不要 (không cần), 最適 (phù hợp nhất).'
+  - type: deep_explain
+    text:
+      vi: "Chú ý ～ことはない (không cần) khác ～たことがない (chưa từng). Lời khuyên dùng ～に限る thường là ý riêng của người nói nên không dùng để ra lệnh hay khi chưa chắc. ～際に thường thấy trên biển báo: 非常の際は (khi khẩn cấp), 降りる際は (khi xuống xe)."
+  - type: example
+    target: ご利用の際は、受付で名前を書いてください。
+    target_lang: ja
+    translation:
+      vi: Khi sử dụng, xin hãy ghi tên ở quầy lễ tân.
+    note:
+      vi: N の + 際は - khi.
+  - type: example
+    target: 疲れた時は寝るに限る。
+    target_lang: ja
+    translation:
+      vi: Khi mệt thì không gì bằng ngủ.
+    note:
+      vi: V + に限る.
+  - type: example
+    target: 心配することはありません。必ずうまくいきますよ。
+    target_lang: ja
+    translation:
+      vi: Không cần phải lo lắng đâu. Chắc chắn sẽ thuận lợi.
+    note:
+      vi: V + ことはない.
+  - type: example
+    target: 不要な物は捨てて、部屋をきれいにしましょう。
+    target_lang: ja
+    translation:
+      vi: Hãy vứt những thứ không cần và dọn phòng cho sạch.
+    note:
+      vi: 不要 - không cần thiết.
+  - type: common_mistake
+    wrong: 日本へ来る際は、連絡してください。(thân mật)
+    right: 日本へ来るときは、連絡してください。
+    target_lang: ja
+    note:
+      vi: 際 trang trọng; với bạn bè dùng とき.
+  - type: common_mistake
+    wrong: 急ぐことがありません。
+    right: 急ぐことはありません。
+    target_lang: ja
+    note:
+      vi: Mẫu là ことはない, không dùng ことがない.
+  - type: summary
+    points:
+      - vi: V / N の + 際(に) - khi, vào dịp (trang trọng).
+      - vi: V辞書形 / N + に限る - không gì bằng, tốt nhất.
+      - vi: V辞書形 + ことはない - không cần phải.
+      - vi: 無駄 · 安心 · 心配 · 注意 · 不要 · 最適.
+exercises:
+  - key: ja:exercise:n3-sai-kagiru-k1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-sai-ni
+    prompt:
+      stem: Chọn câu đúng - ご利用の___、受付で名前を書いてください。
+      stem_lang: vi
+      options:
+        - id: l49
+          text: ことは
+          lang: ja
+        - id: xzi
+          text: 際は
+          lang: ja
+        - id: xml
+          text: ものは
+          lang: ja
+        - id: q7a
+          text: ところは
+          lang: ja
+    answer:
+      correct_option_id: xzi
+    explanation:
+      vi: N の + 際は - khi (trang trọng). ことは, ところは, ものは không đứng sau ご利用の với nghĩa này.
+    display_answer: 際は
+  - key: ja:exercise:n3-sai-kagiru-k2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-ni-kagiru
+    prompt:
+      stem: Chọn câu đúng - 暑い日はビール___。
+      stem_lang: vi
+      options:
+        - id: e55
+          text: に限る
+          lang: ja
+        - id: k7h
+          text: で限る
+          lang: ja
+        - id: s1h
+          text: に限らない
+          lang: ja
+        - id: vmh
+          text: を限る
+          lang: ja
+    answer:
+      correct_option_id: e55
+    explanation:
+      vi: に限る - không gì bằng. に限らない là "không chỉ", ngược nghĩa.
+    display_answer: に限る
+  - key: ja:exercise:n3-sai-kagiru-k3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u8-gram-koto-wa-nai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 心配することはありません。きっとうまくいきますよ。
+      options:
+        - id: ym2
+          text: Không cần phải lo lắng. Chắc chắn sẽ thuận lợi thôi.
+          lang: vi
+        - id: v4w
+          text: Tôi lo lắng. Chắc là sẽ khó.
+          lang: vi
+        - id: f20
+          text: Tôi chưa từng lo lắng. Mọi chuyện thuận lợi.
+          lang: vi
+        - id: b2g
+          text: Hãy lo lắng. Có thể sẽ thất bại.
+          lang: vi
+    answer:
+      correct_option_id: ym2
+    explanation:
+      vi: 心配することはありません - không cần lo lắng; きっと - chắc chắn.
+    display_answer: Không cần phải lo lắng. Chắc chắn sẽ thuận lợi thôi.
+  - key: ja:exercise:n3-sai-kagiru-k4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-ni-kagiru
+    prompt:
+      template: 疲れた時は寝る{{b1}}。 (Khi mệt thì không gì bằng ngủ.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Cụm nghĩa "không gì bằng".
+        - Bắt đầu bằng に.
+    answer:
+      blanks:
+        b1:
+          - に限る
+          - にかぎる
+    known_wrong:
+      - answer: しかない
+        feedback_vi: しかない nghĩa là "chỉ còn cách"; câu này nói điều tốt nhất.
+        error_tag: nuance
+    explanation:
+      vi: V + に限る - tốt nhất là.
+    display_answer: 疲れた時は寝るに限る。
+  - key: ja:exercise:n3-sai-kagiru-k5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-muda
+    prompt:
+      stem: Bạn không muốn lãng phí thời gian. Từ nào hợp?
+      stem_lang: vi
+      options:
+        - id: th0
+          text: 無駄
+          lang: ja
+        - id: saq
+          text: 注意
+          lang: ja
+        - id: hk9
+          text: 最適
+          lang: ja
+        - id: cvc
+          text: 安心
+          lang: ja
+    answer:
+      correct_option_id: th0
+    explanation:
+      vi: 無駄 là vô ích, lãng phí. 最適 là tối ưu, 安心 là yên tâm, 注意 là chú ý.
+    display_answer: 無駄
+  - key: ja:exercise:n3-sai-kagiru-k6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-koto-wa-nai
+    prompt:
+      template: そんなに謝る{{b1}}ないよ。 (Không cần xin lỗi nhiều như thế đâu.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - ことは
+    known_wrong:
+      - answer: ことが
+        feedback_vi: ことがない là "chưa từng"; "không cần" dùng ことはない.
+        error_tag: form
+    explanation:
+      vi: V辞書形 + ことはない - không cần phải.
+    display_answer: そんなに謝ることはないよ。
+  - key: ja:exercise:n3-sai-kagiru-k7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-anshin
+    prompt:
+      template: 無事に着いたと聞いて、{{b1}}しました。 (Nghe tin đến nơi bình an, tôi đã yên tâm.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 安心
+          - あんしん
+    known_wrong:
+      - answer: 心配
+        feedback_vi: 心配 là lo lắng, ngược nghĩa.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 安心 - yên tâm.
+    display_answer: 無事に着いたと聞いて、安心しました。
+  - key: ja:exercise:n3-sai-kagiru-k8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-sai-ni
+    prompt:
+      source_text: Khi sử dụng, xin hãy ghi tên ở quầy lễ tân.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - ご利用の際は、受付で名前を書いてください。
+        - ご利用の際は受付で名前を書いてください。
+        - ごりようのさいは、うけつけでなまえをかいてください。
+        - 利用する際は、受付で名前を書いてください。
+    explanation:
+      vi: ご利用の際は - khi sử dụng; 受付 - quầy lễ tân.
+    display_answer: ご利用の際は、受付で名前を書いてください。
+  - key: ja:exercise:n3-sai-kagiru-k9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u8-gram-ni-kagiru
+    prompt:
+      source_text: 風邪のときは、無理をしないに限ります。心配することはありません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi bị cảm thì tốt nhất là đừng gắng sức. Không cần phải lo lắng.
+        - Lúc cảm cúm thì không gì bằng đừng cố quá sức. Không cần lo đâu.
+        - Khi bị cảm, tốt nhất là không nên gắng sức. Đừng lo lắng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Khi bị cảm thì hãy cố gắng hết sức. Không cần phải lo lắng.
+        feedback_vi: 無理をしないに限る nghĩa là tốt nhất là đừng gắng sức.
+        error_tag: meaning
+    explanation:
+      vi: 無理をしない - không gắng sức; に限る - tốt nhất là; ことはない - không cần.
+    display_answer: Khi bị cảm thì tốt nhất là đừng gắng sức. Không cần phải lo lắng.
+  - key: ja:exercise:n3-sai-kagiru-k10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-koto-wa-nai
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Không cần phải vội."'
+      tokens:
+        - id: t2
+          text: ことは
+        - id: t1
+          text: 急ぐ
+        - id: t3
+          text: ありません。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: V辞書形 + ことはありません.
+    display_answer: 急ぐことはありません。
+  - key: ja:exercise:n3-sai-kagiru-k11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-saiteki
+    prompt:
+      stem: Bạn nói “Phương pháp này là phù hợp nhất”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: vzh
+          text: この方法に最適だと思います。
+          lang: ja
+        - id: k8z
+          text: この方法で最適だと思います。
+          lang: ja
+        - id: trj
+          text: この方法を最適だと思います。
+          lang: ja
+        - id: jdv
+          text: この方法が最適だと思います。
+          lang: ja
+    answer:
+      correct_option_id: jdv
+    explanation:
+      vi: この方法が最適だ - dùng が. を, で, に không tạo nghĩa đúng.
+    display_answer: この方法が最適だと思います。

@@ -1,0 +1,671 @@
+# Học liệu unit "Giai đoạn, hối tiếc, tiếp nhận và nêu chủ đề" (JLPT N3). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n3-u8-gram-hajimeru
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + 始める / 出す / 続ける / 終わる
+      romanization: V-stem + hajimeru / dasu / tsuzukeru / owaru
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Bắt đầu / bắt đầu đột ngột / tiếp tục / làm xong một việc. 出す mang sắc thái đột ngột, không kiểm soát: 笑い出す, 降り出す, 泣き出す."
+      examples:
+        - target: 先月から日本語を習い始めました。
+          translation:
+            vi: Từ tháng trước tôi bắt đầu học tiếng Nhật.
+        - target: この本は昨日読み終わりました。
+          translation:
+            vi: Cuốn sách này tôi đã đọc xong hôm qua.
+      confusion:
+        vi: 始める (có ý chí) khác 出す (đột ngột, ngoài ý muốn); 続ける dùng với hành động liên tục, 終わる dùng khi hoàn tất.
+  - key: ja:item:n3-u8-totsuzen
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 突然
+      reading: とつぜん
+      romanization: totsuzen
+      pos: phó từ
+    back:
+      meaning:
+        vi: đột nhiên, bất ngờ
+      examples:
+        - target: 突然、雨が降り出しました。
+          translation:
+            vi: Bỗng nhiên trời đổ mưa.
+  - key: ja:item:n3-u8-shidai-ni
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 次第に
+      reading: しだいに
+      romanization: shidai ni
+      pos: phó từ
+    back:
+      meaning:
+        vi: dần dần, từ từ
+      examples:
+        - target: 次第に暗くなってきました。
+          translation:
+            vi: Trời dần tối lại.
+  - key: ja:item:n3-u8-izen
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 以前
+      reading: いぜん
+      romanization: izen
+      pos: danh từ
+    back:
+      meaning:
+        vi: trước đây, ngày trước
+      examples:
+        - target: 以前はこの町に住んでいました。
+          translation:
+            vi: Trước đây tôi sống ở thị trấn này.
+  - key: ja:item:n3-u8-genzai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 現在
+      reading: げんざい
+      romanization: genzai
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiện tại, bây giờ
+      examples:
+        - target: 現在は大阪で働いています。
+          translation:
+            vi: Hiện nay tôi đang làm việc ở Osaka.
+  - key: ja:item:n3-u8-yagate
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: やがて
+      romanization: yagate
+      pos: phó từ
+    back:
+      meaning:
+        vi: rồi thì, chẳng bao lâu sau
+      examples:
+        - target: やがて春が来るでしょう。
+          translation:
+            vi: Chẳng bao lâu nữa mùa xuân sẽ đến.
+  - key: ja:item:n3-u8-gram-tokoro-datta
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / V ない + ところだった
+      romanization: V-jisho tokoro datta
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Suýt nữa thì (nhưng thực tế đã không xảy ra). Thường đi với 危うく, もう少しで: 危うく車にひかれるところだった."
+      examples:
+        - target: もう少しで電車に乗り遅れるところでした。
+          translation:
+            vi: Suýt nữa tôi lỡ chuyến tàu.
+        - target: 危うく忘れるところだった。
+          translation:
+            vi: Suýt nữa là tôi quên mất.
+      confusion:
+        vi: ところだった (suýt nữa nhưng không xảy ra) khác ところだ (đang/sắp/vừa) đã học.
+  - key: ja:item:n3-u8-gram-ba-yokatta
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V ば / V ない + よかった
+      romanization: V-ba yokatta
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Giá mà đã (làm) ...; thể hiện sự hối tiếc về việc quá khứ. Phủ định - ～なければよかった (giá mà không ...).
+      examples:
+        - target: もっと早く寝ればよかった。
+          translation:
+            vi: Giá mà tôi đã đi ngủ sớm hơn.
+        - target: あんなに食べなければよかった。
+          translation:
+            vi: Giá mà tôi đã không ăn nhiều như thế.
+      confusion:
+        vi: V た + らよかった cũng dùng (早く寝ていたらよかった); ばよかった là cách nói phổ biến nhất.
+  - key: ja:item:n3-u8-gram-zu-ni-sumu
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V ない / ずに + 済む
+      romanization: V-nai / zu ni sumu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Không cần phải ..., xong mà không phải ... Ví dụ 傘を持たずに済んだ (không cần mang ô).
+      examples:
+        - target: 雨がやんだので、傘を買わずに済みました。
+          translation:
+            vi: Vì mưa tạnh nên tôi không phải mua ô.
+        - target: 友達が手伝ってくれたので、残業しないで済みました。
+          translation:
+            vi: Bạn giúp tôi nên tôi không phải làm thêm giờ.
+  - key: ja:item:n3-u8-ayauku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 危うく
+      reading: あやうく
+      romanization: ayauku
+      pos: phó từ
+    back:
+      meaning:
+        vi: suýt nữa (xảy ra chuyện xấu)
+      examples:
+        - target: 危うく事故になるところでした。
+          translation:
+            vi: Suýt nữa đã xảy ra tai nạn.
+  - key: ja:item:n3-u8-koukai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 後悔
+      reading: こうかい
+      romanization: koukai
+      pos: danh từ
+    back:
+      meaning:
+        vi: hối hận
+      examples:
+        - target: あの時、断らなかったことを後悔しています。
+          translation:
+            vi: Tôi hối hận vì lúc đó đã không từ chối.
+  - key: ja:item:n3-u8-hansei
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 反省
+      reading: はんせい
+      romanization: hansei
+      pos: danh từ
+    back:
+      meaning:
+        vi: tự kiểm điểm, nhìn lại bản thân
+      examples:
+        - target: 失敗したので、反省しています。
+          translation:
+            vi: Vì đã thất bại nên tôi đang tự kiểm điểm.
+  - key: ja:item:n3-u8-girigiri
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ぎりぎり
+      romanization: girigiri
+      pos: phó từ / tính từ な
+    back:
+      meaning:
+        vi: sát nút, vừa vặn
+      examples:
+        - target: ぎりぎり間に合いました。
+          translation:
+            vi: Tôi kịp giờ sát nút.
+  - key: ja:item:n3-u8-ukkari
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: うっかり
+      romanization: ukkari
+      pos: phó từ
+    back:
+      meaning:
+        vi: sơ ý, lơ đễnh
+      examples:
+        - target: うっかりかぎを忘れました。
+          translation:
+            vi: Tôi sơ ý quên chìa khoá.
+  - key: ja:item:n3-u8-gram-sai-ni
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / V た / N の + 際(に)
+      romanization: V / N no sai (ni)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Khi, vào dịp (trang trọng, thường dùng trong thông báo, hướng dẫn). 利用する際は (khi sử dụng), お越しの際は (khi đến).
+      examples:
+        - target: ご利用の際は、受付で名前を書いてください。
+          translation:
+            vi: Khi sử dụng, xin hãy ghi tên ở quầy lễ tân.
+        - target: 日本へ来た際に、ぜひ連絡してください。
+          translation:
+            vi: Khi bạn đến Nhật, nhất định hãy liên lạc với tôi.
+      confusion:
+        vi: 際 trang trọng hơn とき; dùng cho thời điểm cụ thể, dịp, ít dùng với cảm xúc.
+  - key: ja:item:n3-u8-gram-ni-kagiru
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / V ない / N + に限る
+      romanization: V-jisho ni kagiru
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Cách tốt nhất là ..., không gì bằng ...: 疲れた時は寝るに限る (khi mệt thì ngủ là nhất)."
+      examples:
+        - target: 暑い日はビールに限る。
+          translation:
+            vi: Ngày nóng thì không gì bằng bia.
+        - target: 風邪のときは、無理をしないに限ります。
+          translation:
+            vi: Khi bị cảm thì tốt nhất là đừng gắng sức.
+  - key: ja:item:n3-u8-gram-koto-wa-nai
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 + ことはない
+      romanization: V-jisho koto wa nai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Không cần phải ..., không có lý do để ...: 心配することはありません (không cần lo lắng)."
+      examples:
+        - target: 急ぐことはありません。
+          translation:
+            vi: Không cần phải vội.
+        - target: そんなに謝ることはないよ。
+          translation:
+            vi: Không cần xin lỗi nhiều như thế đâu.
+      confusion:
+        vi: V た + ことがない (chưa từng) là mẫu khác.
+  - key: ja:item:n3-u8-muda
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 無駄
+      reading: むだ
+      romanization: muda
+      pos: tính từ な / danh từ
+    back:
+      meaning:
+        vi: vô ích, lãng phí
+      examples:
+        - target: 時間を無駄にしたくありません。
+          translation:
+            vi: Tôi không muốn lãng phí thời gian.
+  - key: ja:item:n3-u8-anshin
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 安心
+      reading: あんしん
+      romanization: anshin
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: yên tâm
+      examples:
+        - target: 無事に着いたと聞いて、安心しました。
+          translation:
+            vi: Nghe tin đến nơi bình an, tôi yên tâm.
+  - key: ja:item:n3-u8-shinpai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 心配
+      reading: しんぱい
+      romanization: shinpai
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: lo lắng
+      examples:
+        - target: 子どものことを心配しています。
+          translation:
+            vi: Tôi lo lắng cho con.
+  - key: ja:item:n3-u8-chuui
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 注意
+      reading: ちゅうい
+      romanization: chuui
+      pos: danh từ / động từ
+    back:
+      meaning:
+        vi: chú ý, cảnh báo
+      examples:
+        - target: 足元に注意してください。
+          translation:
+            vi: Xin hãy chú ý dưới chân.
+  - key: ja:item:n3-u8-fuyou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 不要
+      reading: ふよう
+      romanization: fuyou
+      pos: tính từ な
+    back:
+      meaning:
+        vi: không cần thiết
+      examples:
+        - target: 不要な物は捨ててください。
+          translation:
+            vi: Xin hãy vứt những thứ không cần.
+  - key: ja:item:n3-u8-saiteki
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 最適
+      reading: さいてき
+      romanization: saiteki
+      pos: tính từ な
+    back:
+      meaning:
+        vi: tối ưu, phù hợp nhất
+      examples:
+        - target: この方法が最適だと思います。
+          translation:
+            vi: Tôi nghĩ phương pháp này là phù hợp nhất.
+  - key: ja:item:n3-u8-gram-dake-denaku
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N / V + だけでなく / ばかりでなく ～も
+      romanization: dake de naku ... mo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Không chỉ ... mà còn ... Thông tin sau も là phần thêm vào, thường mạnh hơn.
+      examples:
+        - target: 彼は英語だけでなく、中国語も話せます。
+          translation:
+            vi: Anh ấy không chỉ nói được tiếng Anh mà cả tiếng Trung.
+        - target: この店は安いだけでなく、おいしいです。
+          translation:
+            vi: Cửa hàng này không chỉ rẻ mà còn ngon.
+      confusion:
+        vi: ばかりでなく là dạng văn viết hơn だけでなく.
+  - key: ja:item:n3-u8-gram-to-iu-yori
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: A というより B
+      romanization: A to iu yori B
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: 'Với A thì nói là A cũng được nhưng nói B thì đúng hơn: "thay vì nói A, nên nói là B". 彼は教師というより、友達のような存在です.'
+      examples:
+        - target: この料理は和食というより、洋食に近いです。
+          translation:
+            vi: Món này gần với món Tây hơn là món Nhật.
+        - target: 暑いというより、蒸し暑いです。
+          translation:
+            vi: Không hẳn là nóng, mà đúng hơn là oi bức.
+  - key: ja:item:n3-u8-gram-to-ieba
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N といえば / というと
+      romanization: N to ieba / to iu to
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhắc đến N thì (nghĩ ngay đến ...); dùng để nêu chủ đề rồi bình luận hay nhớ ra điều liên quan.
+      examples:
+        - target: 日本といえば、富士山ですね。
+          translation:
+            vi: Nhắc đến Nhật Bản là nghĩ ngay đến núi Phú Sĩ nhỉ.
+        - target: 京都といえば、お寺ですね。
+          translation:
+            vi: Nói đến Kyoto là nghĩ đến chùa chiền.
+  - key: ja:item:n3-u8-gram-nado
+    type: grammar_point
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N など / なんて
+      romanization: N nado / nante
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Những thứ như ..., (nêu ví dụ; khiêm tốn hay coi nhẹ). なんて còn diễn tả sự ngạc nhiên/cảm xúc: そんなことを言うなんて."
+      examples:
+        - target: 私などにはできません。
+          translation:
+            vi: Người như tôi thì không làm được.
+        - target: 彼が来るなんて、思いませんでした。
+          translation:
+            vi: Tôi không ngờ anh ấy sẽ đến.
+      confusion:
+        vi: など nghe lịch sự, なんて thân mật và hay mang cảm xúc.
+  - key: ja:item:n3-u8-miryoku
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 魅力
+      reading: みりょく
+      romanization: miryoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: sức hấp dẫn, nét cuốn hút
+      examples:
+        - target: この町の魅力は自然です。
+          translation:
+            vi: Nét hấp dẫn của thị trấn này là thiên nhiên.
+  - key: ja:item:n3-u8-ninki
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 人気
+      reading: にんき
+      romanization: ninki
+      pos: danh từ
+    back:
+      meaning:
+        vi: được yêu thích, nổi tiếng
+      examples:
+        - target: この店は若者に人気があります。
+          translation:
+            vi: Cửa hàng này được giới trẻ yêu thích.
+  - key: ja:item:n3-u8-wadai
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 話題
+      reading: わだい
+      romanization: wadai
+      pos: danh từ
+    back:
+      meaning:
+        vi: chủ đề, đề tài bàn tán
+      examples:
+        - target: その映画は今、話題になっています。
+          translation:
+            vi: Bộ phim đó hiện đang là chủ đề bàn tán.
+  - key: ja:item:n3-u8-ryuukou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 流行
+      reading: りゅうこう
+      romanization: ryuukou
+      pos: danh từ
+    back:
+      meaning:
+        vi: thịnh hành, mốt
+      examples:
+        - target: 今、この色が流行しています。
+          translation:
+            vi: Hiện nay màu này đang thịnh hành.
+  - key: ja:item:n3-u8-inshou
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 印象
+      reading: いんしょう
+      romanization: inshou
+      pos: danh từ
+    back:
+      meaning:
+        vi: ấn tượng
+      examples:
+        - target: 初めて会った時の印象はよかったです。
+          translation:
+            vi: Ấn tượng lần đầu gặp rất tốt.
+  - key: ja:item:n3-u8-gaiken
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 外見
+      reading: がいけん
+      romanization: gaiken
+      pos: danh từ
+    back:
+      meaning:
+        vi: vẻ bề ngoài
+      examples:
+        - target: 外見だけで人を判断してはいけません。
+          translation:
+            vi: Không được đánh giá con người chỉ qua vẻ bề ngoài.
+  - key: ja:item:n3-u8-nakami
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 中身
+      reading: なかみ
+      romanization: nakami
+      pos: danh từ
+    back:
+      meaning:
+        vi: bên trong, nội dung
+      examples:
+        - target: この箱の中身は何ですか。
+          translation:
+            vi: Bên trong cái hộp này là gì?
+  - key: ja:item:n3-u8-honmono
+    type: vocab
+    level: n3
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 本物
+      reading: ほんもの
+      romanization: honmono
+      pos: danh từ
+    back:
+      meaning:
+        vi: đồ thật, hàng thật
+      examples:
+        - target: これは本物のダイヤモンドです。
+          translation:
+            vi: Đây là kim cương thật.

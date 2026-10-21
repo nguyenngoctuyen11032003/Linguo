@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-dake-denaku
+order_index: 4
+level: n3
+title:
+  vi: Bổ sung, so sánh nhận định, nêu chủ đề - ～だけでなく・～というより・～といえば・～など
+objectives:
+  - vi: Nói "không chỉ... mà còn..." bằng ～だけでなく / ばかりでなく.
+  - vi: Nói "đúng hơn là" bằng A というより B.
+  - vi: Nêu chủ đề bằng ～といえば và liệt kê ví dụ khiêm tốn bằng ～など / なんて.
+estimated_minutes: 18
+skills:
+  - grammar
+  - vocabulary
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n3-sai-kagiru
+items:
+  - item: ja:item:n3-u8-gram-dake-denaku
+  - item: ja:item:n3-u8-gram-to-iu-yori
+  - item: ja:item:n3-u8-gram-to-ieba
+  - item: ja:item:n3-u8-gram-nado
+  - item: ja:item:n3-u8-miryoku
+  - item: ja:item:n3-u8-ninki
+  - item: ja:item:n3-u8-wadai
+  - item: ja:item:n3-u8-ryuukou
+  - item: ja:item:n3-u8-inshou
+  - item: ja:item:n3-u8-gaiken
+  - item: ja:item:n3-u8-nakami
+  - item: ja:item:n3-u8-honmono
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn trao đổi ý kiến linh hoạt - この店は安いだけでなく、おいしいです。暑いというより、蒸し暑いです。日本といえば、富士山ですね。
+  - type: explain
+    text:
+      vi: N / V + だけでなく ～も = "không chỉ ... mà còn ...". Vế sau (có も) thường là thông tin thêm vào, đôi khi nổi bật hơn. ばかりでなく là dạng văn viết hơn.
+  - type: explain
+    text:
+      vi: A というより B = "nói A cũng được nhưng nói B thì đúng hơn". Ví dụ 暑いというより、蒸し暑いです (không hẳn là nóng mà đúng hơn là oi bức). A là cách nói phổ biến, B chính xác hơn.
+  - type: explain
+    text:
+      vi: 'N といえば / というと = "nhắc đến N thì (nghĩ ngay đến...)" - 日本といえば、富士山ですね. Dùng để mở chủ đề hay nhớ ra chuyện liên quan. N など / なんて = "những thứ như N" (khiêm tốn hoặc hạ thấp): 私などにはできません; なんて còn diễn tả bất ngờ: 彼が来るなんて.'
+  - type: deep_explain
+    text:
+      vi: など lịch sự, hay xuất hiện trong liệt kê (りんごやみかんなど); なんて thân mật hơn và thường chứa cảm xúc (そんなことを言うなんて - ai ngờ lại nói thế). Từ vựng - 魅力 (sức hấp dẫn), 人気 (được ưa chuộng), 話題 (chủ đề bàn tán), 流行 (thịnh hành), 印象 (ấn tượng), 外見 (bề ngoài), 中身 (bên trong), 本物 (đồ thật).
+  - type: example
+    target: 彼は英語だけでなく、中国語も話せます。
+    target_lang: ja
+    translation:
+      vi: Anh ấy không chỉ nói được tiếng Anh mà cả tiếng Trung.
+    note:
+      vi: だけでなく ～も.
+  - type: example
+    target: 暑いというより、蒸し暑いです。
+    target_lang: ja
+    translation:
+      vi: Không hẳn là nóng mà đúng hơn là oi bức.
+    note:
+      vi: A というより B.
+  - type: example
+    target: 日本といえば、富士山ですね。
+    target_lang: ja
+    translation:
+      vi: Nhắc đến Nhật Bản là nghĩ ngay đến núi Phú Sĩ nhỉ.
+    note:
+      vi: N といえば.
+  - type: example
+    target: 外見だけでなく、中身も大切です。
+    target_lang: ja
+    translation:
+      vi: Không chỉ vẻ bề ngoài mà bên trong cũng quan trọng.
+    note:
+      vi: 外見・中身.
+  - type: common_mistake
+    wrong: この店は安いだけでおいしいです。
+    right: この店は安いだけでなく、おいしいです。
+    target_lang: ja
+    note:
+      vi: Cần だけでなく ... も để diễn tả "không chỉ... mà còn".
+  - type: common_mistake
+    wrong: 日本といえばの富士山です。
+    right: 日本といえば、富士山です。
+    target_lang: ja
+    note:
+      vi: といえば đứng độc lập, theo sau là dấu phẩy rồi nhận xét.
+  - type: summary
+    points:
+      - vi: N / V + だけでなく ～も - không chỉ ... mà còn ...
+      - vi: A というより B - đúng hơn là B.
+      - vi: N といえば - nhắc đến N thì ...
+      - vi: N など / なんて - những thứ như N.
+exercises:
+  - key: ja:exercise:n3-dake-denaku-b1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-dake-denaku
+    prompt:
+      stem: Chọn câu đúng - この店は安い___、おいしいです。
+      stem_lang: vi
+      options:
+        - id: c4l
+          text: だけで
+          lang: ja
+        - id: dy5
+          text: だけが
+          lang: ja
+        - id: qsd
+          text: だけに
+          lang: ja
+        - id: aor
+          text: だけでなく
+          lang: ja
+    answer:
+      correct_option_id: aor
+    explanation:
+      vi: だけでなく ～も - không chỉ mà còn. だけで, だけに, だけが đều không tạo nghĩa này.
+    display_answer: だけでなく
+  - key: ja:exercise:n3-dake-denaku-b2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-to-iu-yori
+    prompt:
+      stem: Chọn câu đúng - 暑い___、蒸し暑いです。
+      stem_lang: vi
+      options:
+        - id: yd6
+          text: というより
+          lang: ja
+        - id: cxy
+          text: などと
+          lang: ja
+        - id: s0d
+          text: といえば
+          lang: ja
+        - id: ezt
+          text: だけでなく
+          lang: ja
+    answer:
+      correct_option_id: yd6
+    explanation:
+      vi: A というより B - đúng hơn là B. といえば là nêu chủ đề, だけでなく là "không chỉ".
+    display_answer: というより
+  - key: ja:exercise:n3-dake-denaku-b3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u8-gram-to-ieba
+    prompt:
+      audio_asset_id: null
+      fallback_text: 日本といえば、富士山ですね。京都といえば、お寺ですね。
+      options:
+        - id: fen
+          text: Nhắc đến Nhật Bản là nghĩ đến núi Phú Sĩ. Nhắc đến Kyoto là nghĩ đến chùa.
+          lang: vi
+        - id: lvz
+          text: Tôi chưa nghe về núi Phú Sĩ. Kyoto có chùa.
+          lang: vi
+        - id: cpu
+          text: Nhật Bản có núi Phú Sĩ. Kyoto có nhiều chùa.
+          lang: vi
+        - id: tm6
+          text: Núi Phú Sĩ ở Kyoto. Chùa ở Nhật Bản.
+          lang: vi
+    answer:
+      correct_option_id: fen
+    explanation:
+      vi: ～といえば - nhắc đến ...; 富士山 - núi Phú Sĩ; お寺 - chùa.
+    display_answer: Nhắc đến Nhật Bản là nghĩ đến núi Phú Sĩ. Nhắc đến Kyoto là nghĩ đến chùa.
+  - key: ja:exercise:n3-dake-denaku-b4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-nado
+    prompt:
+      template: 私{{b1}}にはできません。 (Người như tôi thì không làm được.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Từ nghĩa "những thứ như".
+        - Hai chữ kana - など.
+    answer:
+      blanks:
+        b1:
+          - など
+    known_wrong:
+      - answer: なんて
+        feedback_vi: なんて thường diễn tả bất ngờ; ở đây nói khiêm tốn nên dùng など.
+        error_tag: nuance
+    explanation:
+      vi: N など - người/thứ như N (khiêm tốn).
+    display_answer: 私などにはできません。
+  - key: ja:exercise:n3-dake-denaku-b5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-honmono
+    prompt:
+      stem: Từ nào có nghĩa là “đồ thật”?
+      stem_lang: vi
+      options:
+        - id: en9
+          text: 中身
+          lang: ja
+        - id: jxz
+          text: 外見
+          lang: ja
+        - id: w5p
+          text: 流行
+          lang: ja
+        - id: nuo
+          text: 本物
+          lang: ja
+    answer:
+      correct_option_id: nuo
+    explanation:
+      vi: 本物 là hàng thật. 外見 là bề ngoài, 中身 là bên trong, 流行 là thịnh hành.
+    display_answer: 本物
+  - key: ja:exercise:n3-dake-denaku-b6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-dake-denaku
+    prompt:
+      template: 彼は英語だけでなく、中国語{{b1}}話せます。 (Anh ấy không chỉ nói được tiếng Anh mà cả tiếng Trung.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - も
+    known_wrong:
+      - answer: を
+        feedback_vi: Vế sau của だけでなく dùng も.
+        error_tag: particle
+    explanation:
+      vi: だけでなく ～も - không chỉ... mà còn...
+    display_answer: 彼は英語だけでなく、中国語も話せます。
+  - key: ja:exercise:n3-dake-denaku-b7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-miryoku
+    prompt:
+      template: この町の{{b1}}は自然です。 (Nét hấp dẫn của thị trấn này là thiên nhiên.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 魅力
+          - みりょく
+    known_wrong:
+      - answer: 人気
+        feedback_vi: 人気 là được ưa chuộng; "nét hấp dẫn" là 魅力.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 魅力 - sức hấp dẫn.
+    display_answer: この町の魅力は自然です。
+  - key: ja:exercise:n3-dake-denaku-b8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-to-iu-yori
+    prompt:
+      source_text: Không hẳn là nóng mà đúng hơn là oi bức.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 暑いというより、蒸し暑いです。
+        - 暑いというより蒸し暑いです。
+        - あついというより、むしあついです。
+        - 暑いというより、蒸し暑い。
+    known_wrong:
+      - answer: 暑いだけでなく、蒸し暑いです。
+        feedback_vi: だけでなく là "không chỉ... mà còn", không phải "đúng hơn".
+        error_tag: form
+    explanation:
+      vi: A というより B - đúng hơn là B.
+    display_answer: 暑いというより、蒸し暑いです。
+  - key: ja:exercise:n3-dake-denaku-b9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u8-ninki
+    prompt:
+      source_text: この店は安いだけでなく、おいしくて人気があります。外見だけでなく、中身も大切です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cửa hàng này không chỉ rẻ mà còn ngon và được ưa chuộng. Không chỉ vẻ bề ngoài mà bên trong cũng quan trọng.
+        - Quán này không chỉ rẻ mà còn ngon, được nhiều người thích. Không chỉ bề ngoài, nội dung bên trong cũng quan trọng.
+        - Cửa hàng này vừa rẻ vừa ngon và nổi tiếng. Không chỉ ngoại hình mà phần bên trong cũng quan trọng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cửa hàng này rẻ nhưng không ngon, không được ưa chuộng. Chỉ vẻ bề ngoài là quan trọng.
+        feedback_vi: おいしくて人気がある là ngon và được ưa chuộng.
+        error_tag: meaning
+    explanation:
+      vi: だけでなく ～も - không chỉ... mà còn; 人気がある - được ưa chuộng.
+    display_answer: Cửa hàng này không chỉ rẻ mà còn ngon và được ưa chuộng. Không chỉ vẻ bề ngoài mà bên trong cũng quan trọng.
+  - key: ja:exercise:n3-dake-denaku-b10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-to-ieba
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Nhắc đến Nhật Bản là nghĩ ngay đến núi Phú Sĩ nhỉ."'
+      tokens:
+        - id: t2
+          text: 富士山
+        - id: t1
+          text: 日本といえば、
+        - id: t3
+          text: ですね。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: N といえば + nhận xét + ですね.
+    display_answer: 日本といえば、富士山ですね。
+  - key: ja:exercise:n3-dake-denaku-b11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-ryuukou
+    prompt:
+      stem: Màu này đang là mốt. Từ nào đúng?
+      stem_lang: vi
+      options:
+        - id: atn
+          text: 外見
+          lang: ja
+        - id: zow
+          text: 話題
+          lang: ja
+        - id: gjd
+          text: 流行
+          lang: ja
+        - id: ews
+          text: 印象
+          lang: ja
+    answer:
+      correct_option_id: gjd
+    explanation:
+      vi: 流行 là thịnh hành, mốt. 話題 là chủ đề bàn tán, 印象 là ấn tượng, 外見 là bề ngoài.
+    display_answer: 流行

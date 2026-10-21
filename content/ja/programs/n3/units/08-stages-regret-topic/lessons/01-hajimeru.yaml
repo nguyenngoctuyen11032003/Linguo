@@ -1,0 +1,377 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n3-hajimeru
+order_index: 1
+level: n3
+title:
+  vi: Giai đoạn của hành động - ～始める・～出す・～続ける・～終わる
+objectives:
+  - vi: Nói bắt đầu, tiếp tục, xong một việc bằng V ます-gốc + 始める / 出す / 続ける / 終わる.
+  - vi: Phân biệt 始める (có ý chí) và 出す (đột ngột).
+  - vi: Dùng 突然, 次第に, 以前, 現在, やがて để kể diễn biến.
+estimated_minutes: 17
+skills:
+  - grammar
+  - vocabulary
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n3-emphasis-degree-review
+items:
+  - item: ja:item:n3-u8-gram-hajimeru
+  - item: ja:item:n3-u8-totsuzen
+  - item: ja:item:n3-u8-shidai-ni
+  - item: ja:item:n3-u8-izen
+  - item: ja:item:n3-u8-genzai
+  - item: ja:item:n3-u8-yagate
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể được diễn biến một sự việc - 先月から日本語を習い始めました。突然、雨が降り出しました。 - và nói đã hoàn thành - 読み終わりました。
+  - type: explain
+    text:
+      vi: V ます (bỏ ます) + 始める = "bắt đầu làm"; + 続ける = "tiếp tục làm"; + 終わる = "làm xong"; + 出す = "bắt đầu đột ngột". Ví dụ 書き始める, 食べ続ける, 読み終わる, 泣き出す.
+  - type: explain
+    text:
+      vi: 始める và 出す đều là "bắt đầu" nhưng khác sắc thái. 始める có ý chí, người nói chủ động (勉強し始めた); 出す chỉ việc bất ngờ, không dự định, thường với cảm xúc và hiện tượng (笑い出す, 降り出す, 走り出す).
+  - type: explain
+    text:
+      vi: Trạng từ chỉ diễn biến - 突然 (đột nhiên), 次第に (dần dần), やがて (chẳng bao lâu nữa), 以前 (trước đây), 現在 (hiện tại). Ví dụ 以前は東京に住んでいましたが、現在は大阪で働いています.
+  - type: deep_explain
+    text:
+      vi: "Một số động từ không đi với 出す vì không có sắc thái đột ngột (? 勉強し出す) - ở N3 chỉ cần nhớ các động từ chỉ cảm xúc, thời tiết, chuyển động đi với 出す. 終わる dùng khi việc hoàn tất tự nhiên (読み終わる); 終える (tha động từ) dùng với tân ngữ: レポートを書き終える. 続ける là tha động từ (勉強を続ける) nhưng 続く là tự động từ (雨が続く)."
+  - type: example
+    target: 先月から日本語を習い始めました。
+    target_lang: ja
+    translation:
+      vi: Từ tháng trước tôi bắt đầu học tiếng Nhật.
+    note:
+      vi: V ます-gốc + 始める.
+  - type: example
+    target: 突然、雨が降り出しました。
+    target_lang: ja
+    translation:
+      vi: Bỗng nhiên trời đổ mưa.
+    note:
+      vi: 降り出す - mưa bất ngờ.
+  - type: example
+    target: この本は昨日読み終わりました。
+    target_lang: ja
+    translation:
+      vi: Cuốn sách này tôi đã đọc xong hôm qua.
+    note:
+      vi: 読み終わる - đọc xong.
+  - type: example
+    target: 以前は東京に住んでいましたが、現在は大阪で働いています。
+    target_lang: ja
+    translation:
+      vi: Trước đây tôi sống ở Tokyo nhưng hiện làm việc ở Osaka.
+    note:
+      vi: 以前 - 現在.
+  - type: common_mistake
+    wrong: 先月から日本語を勉強して始めました。
+    right: 先月から日本語を勉強し始めました。
+    target_lang: ja
+    note:
+      vi: Dùng ます-gốc (勉強し) + 始める, không dùng thể て.
+  - type: common_mistake
+    wrong: 毎日走り続けるが、今日は終わりました。
+    right: 毎日走り続けていますが、今日は走り終わりました。
+    target_lang: ja
+    note:
+      vi: Phải phân biệt 続ける (tiếp tục) và 終わる (xong) và chia động từ cho đúng.
+  - type: summary
+    points:
+      - vi: V ます-gốc + 始める (bắt đầu) · 続ける (tiếp tục) · 終わる (xong) · 出す (đột ngột).
+      - vi: 始める có ý chí; 出す bất ngờ.
+      - vi: 突然 · 次第に · やがて · 以前 · 現在.
+      - vi: Không dùng thể て trước 始める.
+exercises:
+  - key: ja:exercise:n3-hajimeru-a1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-hajimeru
+    prompt:
+      stem: Chọn câu đúng - 先月から日本語を習い___。
+      stem_lang: vi
+      options:
+        - id: efg
+          text: 始めました
+          lang: ja
+        - id: p0j
+          text: 始めてしました
+          lang: ja
+        - id: v90
+          text: 始まりました
+          lang: ja
+        - id: dar
+          text: はじめにしました
+          lang: ja
+    answer:
+      correct_option_id: efg
+    explanation:
+      vi: V ます-gốc + 始めました. 始まる là tự động từ (sự việc bắt đầu), không dùng sau ます-gốc để chỉ người bắt đầu làm.
+    display_answer: 始めました
+  - key: ja:exercise:n3-hajimeru-a2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-hajimeru
+    prompt:
+      stem: Trời bỗng đổ mưa. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: m7o
+          text: 雨が降るでした
+          lang: ja
+        - id: iss
+          text: 雨が降りだったです
+          lang: ja
+        - id: z4z
+          text: 雨が降り始めたでした
+          lang: ja
+        - id: i4t
+          text: 雨が降り出しました
+          lang: ja
+    answer:
+      correct_option_id: i4t
+    explanation:
+      vi: 降り出す - mưa đột ngột. Các dạng còn lại sai hình thức.
+    display_answer: 雨が降り出しました
+  - key: ja:exercise:n3-hajimeru-a3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n3-u8-totsuzen
+    prompt:
+      audio_asset_id: null
+      fallback_text: 歩いていたら、突然雨が降り出しました。
+      options:
+        - id: ng5
+          text: Sau khi mưa, tôi bắt đầu đi bộ.
+          lang: vi
+        - id: aki
+          text: Đang đi bộ thì trời mưa dần.
+          lang: vi
+        - id: bj5
+          text: Đang đi bộ thì bỗng trời đổ mưa.
+          lang: vi
+        - id: m2n
+          text: Mưa tạnh nên tôi đi bộ.
+          lang: vi
+    answer:
+      correct_option_id: bj5
+    explanation:
+      vi: 突然 - đột nhiên; 降り出しました - đã đổ mưa.
+    display_answer: Đang đi bộ thì bỗng trời đổ mưa.
+  - key: ja:exercise:n3-hajimeru-a4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-gram-hajimeru
+    prompt:
+      template: この本は昨日読み{{b1}}ました。 (Cuốn sách này tôi đã đọc xong hôm qua.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Động từ nghĩa "xong".
+        - Bắt đầu bằng 終.
+    answer:
+      blanks:
+        b1:
+          - 終わり
+          - おわり
+          - 終え
+          - おえ
+    explanation:
+      vi: V ます-gốc + 終わる - làm xong.
+    display_answer: この本は昨日読み終わりました。
+  - key: ja:exercise:n3-hajimeru-a5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n3-u8-shidai-ni
+    prompt:
+      stem: Từ nào có nghĩa là “dần dần”?
+      stem_lang: vi
+      options:
+        - id: sbt
+          text: 次第に
+          lang: ja
+        - id: zgw
+          text: 以前
+          lang: ja
+        - id: t41
+          text: 突然
+          lang: ja
+        - id: i6a
+          text: 現在
+          lang: ja
+    answer:
+      correct_option_id: sbt
+    explanation:
+      vi: 次第に là dần dần. 突然 là đột nhiên, 以前 là trước đây, 現在 là hiện tại.
+    display_answer: 次第に
+  - key: ja:exercise:n3-hajimeru-a6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-hajimeru
+    prompt:
+      template: 子どもが急に{{b1}}ました。 (Đứa trẻ bỗng nhiên bật khóc.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - 泣き出し
+          - なきだし
+    known_wrong:
+      - answer: 泣き始め
+        feedback_vi: 泣き始める có ý chí bắt đầu; "bỗng nhiên" dùng 出す.
+        error_tag: nuance
+    explanation:
+      vi: 泣き出す - bật khóc đột ngột.
+    display_answer: 子どもが急に泣き出しました。
+  - key: ja:exercise:n3-hajimeru-a7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-izen
+    prompt:
+      template: "{{b1}}は東京に住んでいましたが、現在は大阪で働いています。 (Trước đây tôi sống ở Tokyo nhưng hiện làm việc ở Osaka.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 以前
+          - いぜん
+    known_wrong:
+      - answer: 現在
+        feedback_vi: 現在 là hiện tại; vế sau đã dùng 現在.
+        error_tag: time_word
+    explanation:
+      vi: 以前 - trước đây.
+    display_answer: 以前は東京に住んでいましたが、現在は大阪で働いています。
+  - key: ja:exercise:n3-hajimeru-a8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-hajimeru
+    prompt:
+      source_text: Từ tháng trước tôi bắt đầu học tiếng Nhật.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 先月から日本語を習い始めました。
+        - 先月から日本語を勉強し始めました。
+        - せんげつからにほんごをならいはじめました。
+        - 先月から日本語を習い始めた。
+    known_wrong:
+      - answer: 先月から日本語を習って始めました。
+        feedback_vi: Dùng ます-gốc, không dùng thể て.
+        error_tag: form
+      - answer: 先月から日本語を習い出しました。
+        feedback_vi: 出す mang sắc thái đột ngột; ở đây là bắt đầu có kế hoạch nên dùng 始める.
+        error_tag: nuance
+    explanation:
+      vi: V ます-gốc + 始める - bắt đầu làm; 先月から - từ tháng trước.
+    display_answer: 先月から日本語を習い始めました。
+  - key: ja:exercise:n3-hajimeru-a9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n3-u8-yagate
+    prompt:
+      source_text: 雨が降り出しましたが、次第に弱くなって、やがてやみました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trời bắt đầu mưa nhưng dần yếu đi rồi chẳng bao lâu thì tạnh.
+        - Mưa đột ngột đổ xuống nhưng dần nhỏ lại và rồi tạnh.
+        - Trời đổ mưa nhưng yếu dần, rồi cuối cùng cũng tạnh.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Trời bắt đầu mưa và ngày càng mạnh, rồi chẳng bao lâu thì tạnh.
+        feedback_vi: 弱くなって là yếu đi, không phải mạnh lên.
+        error_tag: meaning
+    explanation:
+      vi: 降り出す - mưa đột ngột; 次第に弱くなる - yếu dần; やがて - rồi thì.
+    display_answer: Trời bắt đầu mưa nhưng dần yếu đi rồi chẳng bao lâu thì tạnh.
+  - key: ja:exercise:n3-hajimeru-a10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-gram-hajimeru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Bỗng nhiên trời đổ mưa."'
+      tokens:
+        - id: t2
+          text: 雨が
+        - id: t4
+          text: 出しました。
+        - id: t3
+          text: 降り
+        - id: t1
+          text: 突然、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+        - - t2
+          - t1
+          - t3
+          - t4
+    explanation:
+      vi: Trạng từ → chủ ngữ → ます-gốc 降り + 出しました.
+    display_answer: 突然、雨が降り出しました。
+  - key: ja:exercise:n3-hajimeru-a11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n3-u8-genzai
+    prompt:
+      stem: Bạn muốn nói “Hiện nay tôi làm việc ở Osaka”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: rvf
+          text: 現在は大阪を働いています。
+          lang: ja
+        - id: w76
+          text: 現在は大阪へ働いています。
+          lang: ja
+        - id: r2s
+          text: 現在は大阪が働いています。
+          lang: ja
+        - id: jxf
+          text: 現在は大阪で働いています。
+          lang: ja
+    answer:
+      correct_option_id: jxf
+    explanation:
+      vi: で chỉ nơi làm việc. を, へ, が không đi với 働く để chỉ nơi làm việc.
+    display_answer: 現在は大阪で働いています。
