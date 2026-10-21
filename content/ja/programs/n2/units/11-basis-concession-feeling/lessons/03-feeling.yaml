@@ -1,0 +1,370 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u11-feeling
+order_index: 3
+level: n2
+title:
+  vi: Cảm xúc mạnh và mức độ - ～てならない・～てたまらない・～ほどだ
+objectives:
+  - vi: Nói cảm xúc không kiềm chế được bằng ～てならない / てたまらない / てしょうがない.
+  - vi: Nói mức độ bằng ～ほどだ / ～くらいだ.
+  - vi: Dùng 感動, 悔しい, 面倒, 無理 trong bình luận cảm xúc.
+estimated_minutes: 20
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n2-u11-concession
+items:
+  - item: ja:item:n2-u11-gram-te-naranai
+  - item: ja:item:n2-u11-gram-hodo-da
+  - item: ja:item:n2-u11-kandou
+  - item: ja:item:n2-u11-kuyashii
+  - item: ja:item:n2-u11-mendou
+  - item: ja:item:n2-u11-muri
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn diễn tả cảm xúc mạnh - 試験の結果が心配でならない。嬉しくてたまらない。 - và mức độ - 泣きたいほど悲しいです。
+  - type: explain
+    text:
+      vi: 'A くて / Na で / V て + ならない / たまらない / しょうがない = "không chịu nổi, cứ ... mãi" - cảm giác hay cảm xúc không kiềm chế được: 心配でならない, 眠くてたまらない, 嬉しくてしょうがない. ならない trang trọng hơn, たまらない / しょうがない khẩu ngữ.'
+  - type: explain
+    text:
+      vi: 'V辞書形 / A + ほどだ / くらいだ = "đến mức ...": nêu ví dụ nhấn mạnh mức độ. 泣きたいほど悲しい (buồn đến mức muốn khóc), 倒れそうなくらい疲れた (mệt đến mức sắp ngã).'
+  - type: explain
+    text:
+      vi: "Từ vựng cảm xúc N2: 感動 (cảm động), 悔しい (cay cú), 面倒 (phiền phức), 無理 (vô lý, quá sức). Ví dụ 映画に感動する, 負けて悔しい, 面倒な手続き, それは無理だ."
+  - type: deep_explain
+    text:
+      vi: Các mẫu てならない / てたまらない chỉ dùng với cảm xúc, cảm giác tự phát của người nói hoặc người thứ nhất; không dùng cho hành động có chủ ý (✗ 勉強してならない). Với ngôi thứ ba thường thêm ようだ / らしい. ほど đi trước vế mức độ, thường là hình ảnh phóng đại để nhấn mạnh; khác ～くらい (đo lường) ở chỗ ほど hay dùng với phủ định so sánh, くらい nhẹ hơn.
+  - type: example
+    target: 試験の結果が心配でならない。
+    target_lang: ja
+    translation:
+      vi: Tôi lo lắng kết quả kỳ thi đến không chịu nổi.
+    note:
+      vi: でならない.
+  - type: example
+    target: 昨日は暑くてたまりませんでした。
+    target_lang: ja
+    translation:
+      vi: Hôm qua nóng không chịu nổi.
+    note:
+      vi: てたまらない.
+  - type: example
+    target: あの映画は感動して、泣きたいほどでした。
+    target_lang: ja
+    translation:
+      vi: Bộ phim đó làm tôi cảm động đến mức muốn khóc.
+    note:
+      vi: ほどだ.
+  - type: example
+    target: 疲れて、立っていられないくらいです。
+    target_lang: ja
+    translation:
+      vi: Mệt đến mức không đứng nổi.
+    note:
+      vi: くらいだ.
+  - type: common_mistake
+    wrong: 毎日勉強してならない。
+    right: 毎日勉強しなければならない。
+    target_lang: ja
+    note:
+      vi: てならない chỉ đi với cảm xúc tự phát; "phải học" dùng なければならない.
+  - type: common_mistake
+    wrong: 山田さんは眠くてたまらない。(ngôi thứ ba, khẳng định)
+    right: 山田さんは眠くてたまらないようだ。
+    target_lang: ja
+    note:
+      vi: Với người thứ ba nên thêm ようだ / らしい vì người nói không biết cảm giác của họ.
+  - type: summary
+    points:
+      - vi: A くて / Na で / V て + ならない / たまらない / しょうがない - không chịu nổi.
+      - vi: V / A + ほどだ / くらいだ - đến mức.
+      - vi: 感動 · 悔しい · 面倒 · 無理.
+      - vi: Chỉ dùng cho cảm xúc tự phát của người nói.
+exercises:
+  - key: ja:exercise:n2-u11-feeling-f1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-te-naranai
+    prompt:
+      stem: Chọn câu đúng - 試験の結果が心配___。
+      stem_lang: vi
+      options:
+        - id: sjv
+          text: がならない
+          lang: ja
+        - id: o8u
+          text: にならない
+          lang: ja
+        - id: kfn
+          text: をならない
+          lang: ja
+        - id: nwr
+          text: でならない
+          lang: ja
+    answer:
+      correct_option_id: nwr
+    explanation:
+      vi: Na で + ならない - không chịu nổi. にならない, がならない, をならない sai.
+    display_answer: でならない
+  - key: ja:exercise:n2-u11-feeling-f2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-hodo-da
+    prompt:
+      stem: Chọn câu đúng - 泣きたい___悲しいです。
+      stem_lang: vi
+      options:
+        - id: xi9
+          text: ものの
+          lang: ja
+        - id: msy
+          text: ばかり
+          lang: ja
+        - id: rcg
+          text: ばかりに
+          lang: ja
+        - id: rvi
+          text: ほど
+          lang: ja
+    answer:
+      correct_option_id: rvi
+    explanation:
+      vi: V + ほど - đến mức. ばかり, ばかりに, ものの có nghĩa khác.
+    display_answer: ほど
+  - key: ja:exercise:n2-u11-feeling-f3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u11-gram-te-naranai
+    prompt:
+      audio_asset_id: null
+      fallback_text: 昨日は暑くてたまりませんでした。
+      options:
+        - id: xta
+          text: Hôm qua trời không nóng.
+          lang: vi
+        - id: f7a
+          text: Hôm qua tôi lạnh run.
+          lang: vi
+        - id: fkz
+          text: Hôm qua tôi mệt nhưng vui.
+          lang: vi
+        - id: rhp
+          text: Hôm qua nóng không chịu nổi.
+          lang: vi
+    answer:
+      correct_option_id: rhp
+    explanation:
+      vi: 暑くてたまらない - nóng không chịu nổi.
+    display_answer: Hôm qua nóng không chịu nổi.
+  - key: ja:exercise:n2-u11-feeling-f4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-te-naranai
+    prompt:
+      template: 嬉しくて{{b1}}。 (Tôi vui không chịu nổi.)
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Cụm cuối nghĩa "không chịu nổi".
+        - Bắt đầu bằng た.
+    answer:
+      blanks:
+        b1:
+          - たまらない
+          - しょうがない
+          - ならない
+    known_wrong:
+      - answer: いけない
+        feedback_vi: いけない dùng với ～てはいけない (cấm); vui không chịu nổi dùng たまらない.
+        error_tag: form
+    explanation:
+      vi: A くて + たまらない - không chịu nổi.
+    display_answer: 嬉しくてたまらない。
+  - key: ja:exercise:n2-u11-feeling-f5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-kuyashii
+    prompt:
+      stem: Bạn thua trận và thấy cay cú. Từ nào?
+      stem_lang: vi
+      options:
+        - id: lk2
+          text: 悔しい
+          lang: ja
+        - id: x4b
+          text: 感動
+          lang: ja
+        - id: u01
+          text: 無理
+          lang: ja
+        - id: iv4
+          text: 面倒
+          lang: ja
+    answer:
+      correct_option_id: lk2
+    explanation:
+      vi: 悔しい là cay cú, tiếc nuối vì thua. 感動 là cảm động, 面倒 là phiền phức, 無理 là quá sức.
+    display_answer: 悔しい
+  - key: ja:exercise:n2-u11-feeling-f6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-hodo-da
+    prompt:
+      template: 疲れて、立っていられない{{b1}}です。 (Mệt đến mức không đứng nổi.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - くらい
+          - ほど
+    known_wrong:
+      - answer: ばかり
+        feedback_vi: ばかり là "toàn là"; mức độ dùng くらい / ほど.
+        error_tag: form
+    explanation:
+      vi: ～くらい / ほど + です - đến mức.
+    display_answer: 疲れて、立っていられないくらいです。
+  - key: ja:exercise:n2-u11-feeling-f7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-mendou
+    prompt:
+      template: 手続きが{{b1}}です。 (Thủ tục thật phiền phức.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 面倒
+          - めんどう
+    known_wrong:
+      - answer: 無理
+        feedback_vi: 無理 là quá sức; thủ tục rắc rối là 面倒.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 面倒 - phiền phức.
+    display_answer: 手続きが面倒です。
+  - key: ja:exercise:n2-u11-feeling-f8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-te-naranai
+    prompt:
+      source_text: Tôi lo lắng kết quả kỳ thi đến không chịu nổi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 試験の結果が心配でならない。
+        - 試験の結果が心配でたまらない。
+        - 試験の結果が心配でしょうがない。
+        - しけんのけっかがしんぱいでならない。
+    known_wrong:
+      - answer: 試験の結果が心配になる。
+        feedback_vi: Thiếu sắc thái "không chịu nổi".
+        error_tag: nuance
+    explanation:
+      vi: Na で + ならない / たまらない - không chịu nổi.
+    display_answer: 試験の結果が心配でならない。
+  - key: ja:exercise:n2-u11-feeling-f9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u11-kandou
+    prompt:
+      source_text: 映画に感動して、泣きたいほどでした。負けて悔しくてたまりませんでした。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi cảm động vì bộ phim đến mức muốn khóc. Thua trận nên tôi cay cú không chịu nổi.
+        - Xem phim tôi xúc động đến muốn khóc. Thua cuộc nên cay cú không chịu được.
+        - Tôi rất xúc động với phim, suýt nữa thì khóc. Thua nên tức đến phát điên.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi chán bộ phim đến mức muốn khóc. Thắng trận nên vui không chịu nổi.
+        feedback_vi: 感動して là xúc động; 負けて悔しい là thua và cay cú.
+        error_tag: meaning
+    explanation:
+      vi: 感動 - xúc động; ほど - đến mức; 悔しくてたまらない - cay cú không chịu nổi.
+    display_answer: Tôi cảm động vì bộ phim đến mức muốn khóc. Thua trận nên tôi cay cú không chịu nổi.
+  - key: ja:exercise:n2-u11-feeling-f10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-hodo-da
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Mệt đến mức không đứng nổi."'
+      tokens:
+        - id: t2
+          text: 立っていられない
+        - id: t1
+          text: 疲れて、
+        - id: t3
+          text: くらいです。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Nguyên nhân (疲れて) → mức độ (立っていられない) → くらいです.
+    display_answer: 疲れて、立っていられないくらいです。
+  - key: ja:exercise:n2-u11-feeling-f11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-muri
+    prompt:
+      stem: Bạn nghĩ việc đó quá sức, không thể làm được. Từ nào?
+      stem_lang: vi
+      options:
+        - id: z0i
+          text: 悔しい
+          lang: ja
+        - id: tby
+          text: 感動
+          lang: ja
+        - id: thw
+          text: 面倒
+          lang: ja
+        - id: juv
+          text: 無理
+          lang: ja
+    answer:
+      correct_option_id: juv
+    explanation:
+      vi: 無理 là quá sức, không thể. 感動 là cảm động, 面倒 là phiền phức, 悔しい là cay cú.
+    display_answer: 無理

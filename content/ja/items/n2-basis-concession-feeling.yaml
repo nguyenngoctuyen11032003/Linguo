@@ -1,0 +1,412 @@
+# Học liệu unit "Căn cứ, nhượng bộ và cảm xúc mạnh" (JLPT N2). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n2-u11-gram-wo-moto-ni
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N をもとに(して)
+      romanization: N o moto ni (shite)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Dựa trên N (làm nguồn, tư liệu, nền tảng): 実話をもとに作られた映画 (phim dựa trên chuyện thật). Khác に基づいて (căn cứ vào quy tắc, tiêu chuẩn)."
+      examples:
+        - target: この映画は実話をもとに作られました。
+          translation:
+            vi: Bộ phim này được làm dựa trên chuyện có thật.
+        - target: アンケートの結果をもとに、計画を立てます。
+          translation:
+            vi: Dựa trên kết quả khảo sát, tôi sẽ lập kế hoạch.
+  - key: ja:item:n2-u11-gram-ni-sotte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N に沿って
+      romanization: N ni sotte
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Theo, đi theo, đúng với (kế hoạch, phương châm; dọc theo con sông, con đường). 計画に沿って, 方針に沿って, 川に沿って歩く.
+      examples:
+        - target: 計画に沿って、作業を進めます。
+          translation:
+            vi: Tôi sẽ tiến hành công việc theo đúng kế hoạch.
+        - target: 川に沿って、桜の木が並んでいます。
+          translation:
+            vi: Dọc theo bờ sông có hàng cây anh đào.
+  - key: ja:item:n2-u11-gram-ni-hanshite
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N に反して
+      romanization: N ni hanshite
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Trái với (kỳ vọng, dự đoán, mệnh lệnh): 予想に反して, 期待に反して, 規則に反して. N に反する + N."
+      examples:
+        - target: 予想に反して、試合は日本が勝ちました。
+          translation:
+            vi: Trái với dự đoán, Nhật Bản đã thắng trận đấu.
+        - target: 規則に反する行為は禁止されています。
+          translation:
+            vi: Hành vi trái với quy tắc bị cấm.
+  - key: ja:item:n2-u11-gram-wo-towazu
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N を問わず
+      romanization: N o towazu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Bất kể N (không phân biệt, không xét): 年齢を問わず, 経験を問わず, 昼夜を問わず. Thường đi với danh từ chỉ sự đối lập hoặc phạm vi."
+      examples:
+        - target: 年齢や国籍を問わず、誰でも参加できます。
+          translation:
+            vi: Bất kể tuổi tác và quốc tịch, ai cũng tham gia được.
+        - target: この店は昼夜を問わず、お客さんでいっぱいです。
+          translation:
+            vi: Cửa hàng này lúc nào cũng đông khách, bất kể ngày đêm.
+  - key: ja:item:n2-u11-gram-ni-kakete-wa
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N にかけては
+      romanization: N ni kakete wa
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nói về (khả năng, kỹ năng) thì; riêng về N thì (người đó là nhất). Dùng khen.
+      examples:
+        - target: 料理にかけては、彼女に勝てる人はいません。
+          translation:
+            vi: Nói về nấu ăn thì không ai thắng nổi cô ấy.
+        - target: 記憶力にかけては、彼は天才です。
+          translation:
+            vi: Về trí nhớ thì anh ấy là thiên tài.
+  - key: ja:item:n2-u11-zentei
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 前提
+      reading: ぜんてい
+      romanization: zentei
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền đề, điều kiện tiên quyết
+      examples:
+        - target: 結婚を前提に付き合っています。
+          translation:
+            vi: Chúng tôi hẹn hò với tiền đề kết hôn.
+  - key: ja:item:n2-u11-yosou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 予想
+      reading: よそう
+      romanization: yosou
+      pos: danh từ
+    back:
+      meaning:
+        vi: dự đoán, dự kiến
+      examples:
+        - target: 予想より早く終わりました。
+          translation:
+            vi: Việc xong sớm hơn dự kiến.
+  - key: ja:item:n2-u11-gram-kara-to-itte
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V / A / N + からといって (～わけではない / ～とは限らない)
+      romanization: kara to itte
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chỉ vì ... mà không có nghĩa là ... (phản bác suy luận). Vế sau thường là わけではない, とは限らない.
+      examples:
+        - target: 日本人だからといって、全員が寿司を好きなわけではありません。
+          translation:
+            vi: Chỉ vì là người Nhật không có nghĩa là ai cũng thích sushi.
+        - target: 高いからといって、いい商品とは限りません。
+          translation:
+            vi: Chỉ vì đắt thì chưa chắc là hàng tốt.
+  - key: ja:item:n2-u11-gram-ni-shite-mo
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: N / V + にしても / にしろ / にせよ
+      romanization: ni shite mo / ni shiro / ni seyo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Dù có ... đi nữa; ngay cả khi thừa nhận ... thì ... Dùng để nhượng bộ rồi nêu quan điểm.
+      examples:
+        - target: 忙しいにしても、連絡くらいはしてほしいです。
+          translation:
+            vi: Dù có bận đi nữa, tôi vẫn mong bạn liên lạc một chút.
+        - target: 誰にしても、間違えることはあります。
+          translation:
+            vi: Dù là ai thì cũng có lúc mắc lỗi.
+  - key: ja:item:n2-u11-gram-mono-dakara
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: thể thường + ものだから / もので
+      romanization: mono dakara / mono de
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Vì (lý do biện bạch, mang cảm xúc, thường dùng trong hội thoại để xin lỗi/giải thích). Kết quả thường là điều không mong muốn.
+      examples:
+        - target: 寝坊したものですから、遅れてしまいました。
+          translation:
+            vi: Vì tôi ngủ quên nên đã đến muộn.
+        - target: あまりにおいしかったもので、全部食べてしまいました。
+          translation:
+            vi: Vì ngon quá nên tôi đã ăn hết.
+  - key: ja:item:n2-u11-gram-kko-nai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V ます (bỏ ます) + っこない
+      romanization: V-stem + kkonai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chắc chắn không thể ..., làm gì có chuyện ... (khẩu ngữ, phủ nhận mạnh). できっこない, 分かりっこない.
+      examples:
+        - target: そんなこと、できっこないよ。
+          translation:
+            vi: Chuyện như thế làm sao làm được.
+        - target: 今から走っても、間に合いっこありません。
+          translation:
+            vi: Giờ chạy cũng không thể nào kịp.
+  - key: ja:item:n2-u11-gram-mono-ka
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V thể thường + ものか
+      romanization: plain form mono ka
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Làm gì có chuyện ... / Đời nào ... (phủ định mạnh, mang cảm xúc, thường khẩu ngữ).
+      examples:
+        - target: 誰があんな人の言うことを聞くものか。
+          translation:
+            vi: Đời nào tôi nghe lời loại người như thế.
+        - target: こんなに高いもの、買えるものか。
+          translation:
+            vi: Đắt thế này, mua nổi cái gì.
+  - key: ja:item:n2-u11-kyohi
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 拒否
+      reading: きょひ
+      romanization: kyohi
+      pos: danh từ
+    back:
+      meaning:
+        vi: từ chối, bác bỏ
+      examples:
+        - target: 要求を拒否されました。
+          translation:
+            vi: Yêu cầu của tôi đã bị từ chối.
+  - key: ja:item:n2-u11-hanron
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 反論
+      reading: はんろん
+      romanization: hanron
+      pos: danh từ
+    back:
+      meaning:
+        vi: phản bác
+      examples:
+        - target: 彼の意見に反論しました。
+          translation:
+            vi: Tôi đã phản bác ý kiến của anh ấy.
+  - key: ja:item:n2-u11-benkai
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 弁解
+      reading: べんかい
+      romanization: benkai
+      pos: danh từ
+    back:
+      meaning:
+        vi: biện bạch, bào chữa
+      examples:
+        - target: 弁解は聞きたくありません。
+          translation:
+            vi: Tôi không muốn nghe biện bạch.
+  - key: ja:item:n2-u11-gram-te-naranai
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: A くて / Na で / V て + ならない / たまらない / しょうがない
+      romanization: te naranai / tamaranai / shouganai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Không chịu nổi, cứ (cảm giác) mãi. Diễn tả cảm giác hay cảm xúc tự nhiên không kiềm chế được: 心配でならない, 眠くてたまらない, 嬉しくてしょうがない."
+      examples:
+        - target: 試験の結果が心配でならない。
+          translation:
+            vi: Tôi lo lắng kết quả kỳ thi đến không chịu nổi.
+        - target: 昨日は暑くてたまりませんでした。
+          translation:
+            vi: Hôm qua nóng không chịu nổi.
+      confusion:
+        vi: ならない / たまらない / しょうがない thường đi với cảm xúc, cảm giác của người nói; ならない trang trọng hơn.
+  - key: ja:item:n2-u11-gram-hodo-da
+    type: grammar_point
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / A + ほどだ / くらいだ
+      romanization: hodo da / kurai da
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Đến mức ... (dùng ví dụ nhấn mức độ): 泣きたいほど悲しい (buồn đến mức muốn khóc), 倒れそうなくらい疲れた."
+      examples:
+        - target: あの映画は感動して泣きたいほどでした。
+          translation:
+            vi: Bộ phim đó làm tôi cảm động đến mức muốn khóc.
+        - target: 疲れて立っていられないくらいです。
+          translation:
+            vi: Mệt đến mức không đứng nổi.
+  - key: ja:item:n2-u11-kandou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 感動
+      reading: かんどう
+      romanization: kandou
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảm động, xúc động
+      examples:
+        - target: 映画を見て感動しました。
+          translation:
+            vi: Xem phim tôi rất xúc động.
+  - key: ja:item:n2-u11-kuyashii
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 悔しい
+      reading: くやしい
+      romanization: kuyashii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: tiếc nuối, tức vì thua, cay cú
+      examples:
+        - target: 試合に負けて悔しいです。
+          translation:
+            vi: Thua trận, tôi thấy cay cú.
+  - key: ja:item:n2-u11-mendou
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 面倒
+      reading: めんどう
+      romanization: mendou
+      pos: tính từ な / danh từ
+    back:
+      meaning:
+        vi: phiền phức, rắc rối
+      examples:
+        - target: 手続きが面倒です。
+          translation:
+            vi: Thủ tục thật phiền phức.
+  - key: ja:item:n2-u11-muri
+    type: vocab
+    level: n2
+    difficulty: 4
+    skill_tags:
+      - vocabulary
+    front:
+      text: 無理
+      reading: むり
+      romanization: muri
+      pos: tính từ な / danh từ
+    back:
+      meaning:
+        vi: vô lý, quá sức, không thể
+      examples:
+        - target: それは無理だと思います。
+          translation:
+            vi: Tôi nghĩ việc đó là không thể.

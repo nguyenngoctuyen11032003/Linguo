@@ -1,0 +1,369 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u11-concession
+order_index: 2
+level: n2
+title:
+  vi: Nhượng bộ và biện bạch - ～からといって・～にしても・～ものだから・～っこない・～ものか
+objectives:
+  - vi: Phản bác suy luận bằng ～からといって.
+  - vi: Nhượng bộ bằng ～にしても / ～にしろ / ～にせよ.
+  - vi: Biện bạch bằng ～ものだから; phủ nhận mạnh bằng ～っこない / ～ものか.
+estimated_minutes: 20
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n2-u11-basis
+items:
+  - item: ja:item:n2-u11-gram-kara-to-itte
+  - item: ja:item:n2-u11-gram-ni-shite-mo
+  - item: ja:item:n2-u11-gram-mono-dakara
+  - item: ja:item:n2-u11-gram-kko-nai
+  - item: ja:item:n2-u11-gram-mono-ka
+  - item: ja:item:n2-u11-kyohi
+  - item: ja:item:n2-u11-hanron
+  - item: ja:item:n2-u11-benkai
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn tranh luận và biện bạch linh hoạt - 高いからといって、いい商品とは限りません。寝坊したものですから、遅れてしまいました。
+  - type: explain
+    text:
+      vi: '～からといって = "chỉ vì ... không có nghĩa là ...": phản bác suy luận thông thường. Vế sau thường ～わけではない / ～とは限らない: 日本人だからといって、全員が寿司を好きなわけではありません.'
+  - type: explain
+    text:
+      vi: '～にしても / ～にしろ / ～にせよ = "dù có ... đi nữa": nhượng bộ trước, rồi nêu quan điểm của mình: 忙しいにしても、連絡くらいはしてほしい.'
+  - type: explain
+    text:
+      vi: '～ものだから / ものですから = "vì (lý do biện bạch)": dùng khi giải thích hoặc xin lỗi, kết quả thường là điều không mong muốn: 寝坊したものですから、遅れました. ～っこない = "chắc chắn không thể": できっこない. ～ものか = "đời nào, làm gì có": 行くものか.'
+  - type: deep_explain
+    text:
+      vi: Lưu ý sắc thái. ～ものだから mềm hơn ～から vì mang giọng biện hộ; không dùng với ý chí (✗ ～ものだから、行きましょう). ～っこない và ～ものか là khẩu ngữ mạnh, nên tránh với người trên. ～にしても thường theo sau là lời trách hoặc yêu cầu (忙しいにしても, 連絡くらいは...). Từ vựng - 拒否 (từ chối), 反論 (phản bác), 弁解 (biện bạch).
+  - type: example
+    target: 日本人だからといって、全員が寿司を好きなわけではありません。
+    target_lang: ja
+    translation:
+      vi: Chỉ vì là người Nhật không có nghĩa là ai cũng thích sushi.
+    note:
+      vi: からといって.
+  - type: example
+    target: 忙しいにしても、連絡くらいはしてほしいです。
+    target_lang: ja
+    translation:
+      vi: Dù có bận, tôi vẫn mong bạn liên lạc một chút.
+    note:
+      vi: にしても.
+  - type: example
+    target: 寝坊したものですから、遅れてしまいました。
+    target_lang: ja
+    translation:
+      vi: Vì tôi ngủ quên nên đã đến muộn.
+    note:
+      vi: ものですから.
+  - type: example
+    target: そんなこと、できっこないよ。
+    target_lang: ja
+    translation:
+      vi: Chuyện như thế làm sao làm được.
+    note:
+      vi: っこない.
+  - type: common_mistake
+    wrong: 寝坊したものだから、早く行きましょう。
+    right: 寝坊したものだから、遅れてしまいました。
+    target_lang: ja
+    note:
+      vi: ものだから dẫn tới kết quả không mong muốn; không đi với ý chí hay lời rủ.
+  - type: common_mistake
+    wrong: 日本人だからといって、全員が寿司が好きです。
+    right: 日本人だからといって、全員が寿司を好きなわけではありません。
+    target_lang: ja
+    note:
+      vi: からといって đi với phủ định để bác suy luận (わけではない / とは限らない).
+  - type: summary
+    points:
+      - vi: からといって ～わけではない - không có nghĩa là.
+      - vi: にしても / にしろ / にせよ - dù có ... đi nữa.
+      - vi: ものだから - vì (biện bạch).
+      - vi: っこない - chắc chắn không · ものか - đời nào.
+exercises:
+  - key: ja:exercise:n2-u11-concession-c1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-kara-to-itte
+    prompt:
+      stem: Chọn câu đúng - 高い___、いい商品とは限りません。
+      stem_lang: vi
+      options:
+        - id: trh
+          text: からといって
+          lang: ja
+        - id: oy4
+          text: からして
+          lang: ja
+        - id: mgl
+          text: ばかりに
+          lang: ja
+        - id: tlz
+          text: ことから
+          lang: ja
+    answer:
+      correct_option_id: trh
+    explanation:
+      vi: からといって - chỉ vì ... mà không có nghĩa là. からして, ことから, ばかりに có nghĩa khác.
+    display_answer: からといって
+  - key: ja:exercise:n2-u11-concession-c2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-ni-shite-mo
+    prompt:
+      stem: Chọn câu đúng - 忙しい___、連絡くらいはしてほしいです。
+      stem_lang: vi
+      options:
+        - id: eez
+          text: を問わず
+          lang: ja
+        - id: mmq
+          text: をもとに
+          lang: ja
+        - id: t68
+          text: にしても
+          lang: ja
+        - id: y47
+          text: に沿って
+          lang: ja
+    answer:
+      correct_option_id: t68
+    explanation:
+      vi: "Nhượng bộ - dù có bận: にしても. Các mẫu còn lại không có nghĩa này."
+    display_answer: にしても
+  - key: ja:exercise:n2-u11-concession-c3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u11-gram-mono-dakara
+    prompt:
+      audio_asset_id: null
+      fallback_text: 寝坊したものですから、遅れてしまいました。すみません。
+      options:
+        - id: lfe
+          text: Vì bạn ngủ quên nên tôi đã đến muộn. Xin lỗi.
+          lang: vi
+        - id: dva
+          text: Vì tôi dậy sớm nên đã đến sớm. Cảm ơn.
+          lang: vi
+        - id: u0y
+          text: Tôi muộn rồi nên mới ngủ quên. Xin lỗi.
+          lang: vi
+        - id: p7v
+          text: Vì tôi ngủ quên nên đã đến muộn. Xin lỗi.
+          lang: vi
+    answer:
+      correct_option_id: p7v
+    explanation:
+      vi: 寝坊した - ngủ quên; ものですから - vì (biện bạch); 遅れてしまった - đã muộn.
+    display_answer: Vì tôi ngủ quên nên đã đến muộn. Xin lỗi.
+  - key: ja:exercise:n2-u11-concession-c4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-kko-nai
+    prompt:
+      template: そんなこと、できっ{{b1}}よ。 (Chuyện như thế làm sao làm được.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Cụm cuối của mẫu "chắc chắn không".
+        - Bắt đầu bằng こ.
+    answer:
+      blanks:
+        b1:
+          - こない
+    known_wrong:
+      - answer: ない
+        feedback_vi: Mẫu là ～っこない (っ + こない).
+        error_tag: form
+    explanation:
+      vi: V ます-gốc + っこない - chắc chắn không thể.
+    display_answer: そんなこと、できっこないよ。
+  - key: ja:exercise:n2-u11-concession-c5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-mono-ka
+    prompt:
+      stem: Bạn nói với giọng mạnh “Đời nào tôi nghe lời họ”. Mẫu nào?
+      stem_lang: vi
+      options:
+        - id: zhh
+          text: 聞くものだから
+          lang: ja
+        - id: ldg
+          text: 聞くものか
+          lang: ja
+        - id: ez6
+          text: 聞くものの
+          lang: ja
+        - id: bnt
+          text: 聞くものです
+          lang: ja
+    answer:
+      correct_option_id: ldg
+    explanation:
+      vi: V + ものか - đời nào. ものです, ものだから, ものの có nghĩa khác.
+    display_answer: 聞くものか
+  - key: ja:exercise:n2-u11-concession-c6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-kara-to-itte
+    prompt:
+      template: 高い{{b1}}、いい商品とは限りません。 (Chỉ vì đắt thì chưa chắc là hàng tốt.)
+      blanks:
+        - id: b1
+          width_hint: 7
+    answer:
+      blanks:
+        b1:
+          - からといって
+    known_wrong:
+      - answer: ので
+        feedback_vi: ので chỉ nguyên nhân bình thường; phản bác suy luận cần からといって.
+        error_tag: form
+    explanation:
+      vi: からといって - chỉ vì ... mà không có nghĩa là.
+    display_answer: 高いからといって、いい商品とは限りません。
+  - key: ja:exercise:n2-u11-concession-c7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-mono-dakara
+    prompt:
+      template: 寝坊した{{b1}}、遅れてしまいました。 (Vì tôi ngủ quên nên đã đến muộn.)
+      blanks:
+        - id: b1
+          width_hint: 7
+    answer:
+      blanks:
+        b1:
+          - ものですから
+          - ものだから
+          - もので
+    known_wrong:
+      - answer: ことから
+        feedback_vi: ことから nêu căn cứ suy luận; biện bạch dùng ものだから.
+        error_tag: nuance
+    explanation:
+      vi: ものだから / ものですから - vì (biện bạch).
+    display_answer: 寝坊したものですから、遅れてしまいました。
+  - key: ja:exercise:n2-u11-concession-c8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-kko-nai
+    prompt:
+      source_text: Chuyện như thế làm sao làm được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - そんなこと、できっこないよ。
+        - そんなことできっこない。
+        - そんなこと、できっこありません。
+        - そんなことは、できっこないよ。
+    explanation:
+      vi: V ます-gốc + っこない - chắc chắn không thể.
+    display_answer: そんなこと、できっこないよ。
+  - key: ja:exercise:n2-u11-concession-c9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u11-benkai
+    prompt:
+      source_text: 弁解は聞きたくありません。忙しいにしても、連絡くらいはしてほしかったです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi không muốn nghe biện bạch. Dù có bận, tôi vẫn mong bạn liên lạc một chút.
+        - Tôi không muốn nghe bào chữa. Dù bận đến mấy thì cũng nên liên lạc chứ.
+        - Tôi chẳng muốn nghe biện bạch. Cho dù bận, tôi vẫn muốn bạn liên lạc một chút.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi muốn nghe biện bạch. Vì bận nên không liên lạc cũng được.
+        feedback_vi: 聞きたくありません là không muốn nghe.
+        error_tag: meaning
+    explanation:
+      vi: 弁解 - biện bạch; にしても - dù; してほしかった - đã mong (bạn) làm.
+    display_answer: Tôi không muốn nghe biện bạch. Dù có bận, tôi vẫn mong bạn liên lạc một chút.
+  - key: ja:exercise:n2-u11-concession-c10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-kara-to-itte
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Chỉ vì đắt thì chưa chắc là hàng tốt."'
+      tokens:
+        - id: t1
+          text: 高い
+        - id: t3
+          text: いい商品とは
+        - id: t4
+          text: 限りません。
+        - id: t2
+          text: からといって、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: V / A + からといって + vế phản bác (とは限りません).
+    display_answer: 高いからといって、いい商品とは限りません。
+  - key: ja:exercise:n2-u11-concession-c11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-hanron
+    prompt:
+      stem: Bạn phản bác ý kiến của đối phương. Từ nào?
+      stem_lang: vi
+      options:
+        - id: tn4
+          text: 拒否
+          lang: ja
+        - id: js7
+          text: 反論
+          lang: ja
+        - id: p0r
+          text: 期待
+          lang: ja
+        - id: jx1
+          text: 弁解
+          lang: ja
+    answer:
+      correct_option_id: js7
+    explanation:
+      vi: 反論 là phản bác ý kiến. 拒否 là từ chối yêu cầu, 弁解 là biện bạch, 期待 là kỳ vọng.
+    display_answer: 反論

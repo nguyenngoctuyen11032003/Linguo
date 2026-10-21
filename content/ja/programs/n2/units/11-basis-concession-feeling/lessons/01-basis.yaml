@@ -1,0 +1,379 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n2-u11-basis
+order_index: 1
+level: n2
+title:
+  vi: Căn cứ và đối chiếu - ～をもとに・～に沿って・～に反して・～を問わず・～にかけては
+objectives:
+  - vi: Nói căn cứ bằng ～をもとに(して) và ～に沿って.
+  - vi: Nói "trái với" bằng ～に反して, "bất kể" bằng ～を問わず và "về ... thì" bằng ～にかけては.
+  - vi: Dùng 前提, 方針, 予想, 期待 trong văn nói và viết.
+estimated_minutes: 20
+skills:
+  - grammar
+  - vocabulary
+  - reading
+  - speaking
+prerequisites:
+  - ja:lesson:n2-u10-mind
+items:
+  - item: ja:item:n2-u11-gram-wo-moto-ni
+  - item: ja:item:n2-u11-gram-ni-sotte
+  - item: ja:item:n2-u11-gram-ni-hanshite
+  - item: ja:item:n2-u11-gram-wo-towazu
+  - item: ja:item:n2-u11-gram-ni-kakete-wa
+  - item: ja:item:n2-u11-zentei
+  - item: ja:item:n2-u4-houshin
+    role: reuse
+  - item: ja:item:n2-u11-yosou
+  - item: ja:item:n2-u8-kitai
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng được các mẫu chỉ căn cứ và đối chiếu - 実話をもとに作られた映画です。計画に沿って進めます。予想に反して、日本が勝ちました。
+  - type: explain
+    text:
+      vi: 'N をもとに(して) = "dựa trên N" (làm nguồn): 実話をもとにした映画. N に沿って = "theo, đúng với" (kế hoạch, phương châm; hoặc dọc theo con đường, dòng sông): 計画に沿って, 川に沿って. N に反して = "trái với" (dự đoán, kỳ vọng, quy tắc).'
+  - type: explain
+    text:
+      vi: 'N を問わず = "bất kể N": 年齢を問わず (bất kể tuổi), 国籍を問わず, 昼夜を問わず. Thường đi với danh từ chỉ phạm vi hoặc cặp đối lập. N にかけては = "về N thì": nói khen khả năng, 料理にかけては彼女が一番だ.'
+  - type: explain
+    text:
+      vi: "Từ vựng cho mẫu câu: 前提 (tiền đề), 方針 (phương châm), 予想 (dự đoán), 期待 (kỳ vọng). Ví dụ 予想に反して, 期待に反して, 方針に沿って, 結婚を前提に."
+  - type: deep_explain
+    text:
+      vi: 'Phân biệt をもとに với に基づいて (N2 bài trước): をもとに dùng nguồn tư liệu để làm ra thứ mới (小説をもとに映画を作る), にもとづいて dùng quy tắc, tiêu chuẩn để hành động (法律に基づいて). に反して khác にもかかわらず: に反して trái với dự đoán, còn にもかかわらず là "mặc dù". を問わず thường không dùng cho vật cụ thể đơn lẻ.'
+  - type: example
+    target: この映画は実話をもとに作られました。
+    target_lang: ja
+    translation:
+      vi: Bộ phim này được làm dựa trên chuyện thật.
+    note:
+      vi: をもとに.
+  - type: example
+    target: 計画に沿って、作業を進めます。
+    target_lang: ja
+    translation:
+      vi: Tôi sẽ tiến hành công việc theo đúng kế hoạch.
+    note:
+      vi: に沿って.
+  - type: example
+    target: 予想に反して、試合は日本が勝ちました。
+    target_lang: ja
+    translation:
+      vi: Trái với dự đoán, Nhật Bản đã thắng trận đấu.
+    note:
+      vi: に反して.
+  - type: example
+    target: 年齢を問わず、誰でも参加できます。
+    target_lang: ja
+    translation:
+      vi: Bất kể tuổi tác, ai cũng tham gia được.
+    note:
+      vi: を問わず.
+  - type: common_mistake
+    wrong: 小説に基づいて映画を作りました。(lấy tiểu thuyết làm nguồn)
+    right: 小説をもとに映画を作りました。
+    target_lang: ja
+    note:
+      vi: Dùng tư liệu làm nguồn để sáng tạo thứ mới dùng をもとに.
+  - type: common_mistake
+    wrong: 予想に反するにもかかわらず、日本が勝ちました。
+    right: 予想に反して、日本が勝ちました。
+    target_lang: ja
+    note:
+      vi: に反して đã có nghĩa trái ngược nên không thêm にもかかわらず.
+  - type: summary
+    points:
+      - vi: N をもとに - dựa trên (nguồn) · N に沿って - theo đúng (kế hoạch), dọc theo.
+      - vi: N に反して - trái với.
+      - vi: N を問わず - bất kể · N にかけては - về N thì (nhất).
+      - vi: 前提 · 方針 · 予想 · 期待.
+exercises:
+  - key: ja:exercise:n2-u11-basis-b1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-wo-moto-ni
+    prompt:
+      stem: Chọn câu đúng - この映画は実話___作られました。
+      stem_lang: vi
+      options:
+        - id: ggs
+          text: にもとに
+          lang: ja
+        - id: jxa
+          text: がもとに
+          lang: ja
+        - id: nax
+          text: をもとに
+          lang: ja
+        - id: grc
+          text: でもとに
+          lang: ja
+    answer:
+      correct_option_id: nax
+    explanation:
+      vi: N をもとに - dựa trên. にもとに, がもとに, でもとに sai trợ từ.
+    display_answer: をもとに
+  - key: ja:exercise:n2-u11-basis-b2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-ni-hanshite
+    prompt:
+      stem: Chọn câu đúng - ___、試合は日本が勝ちました。
+      stem_lang: vi
+      options:
+        - id: amu
+          text: 予想に沿って
+          lang: ja
+        - id: iw2
+          text: 予想を問わず
+          lang: ja
+        - id: v9h
+          text: 予想に反して
+          lang: ja
+        - id: yoz
+          text: 予想をもとに
+          lang: ja
+    answer:
+      correct_option_id: v9h
+    explanation:
+      vi: 予想に反して - trái với dự đoán. に沿って là theo đúng, を問わず là bất kể, をもとに là dựa trên.
+    display_answer: 予想に反して
+  - key: ja:exercise:n2-u11-basis-b3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n2-u11-gram-wo-towazu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 年齢や国籍を問わず、誰でも参加できます。
+      options:
+        - id: hh2
+          text: Người cao tuổi không tham gia được.
+          lang: vi
+        - id: q4o
+          text: Chỉ người trẻ và người Nhật mới tham gia được.
+          lang: vi
+        - id: p1i
+          text: Bất kể tuổi tác và quốc tịch, ai cũng tham gia được.
+          lang: vi
+        - id: ho1
+          text: Quốc tịch nào cũng không tham gia được.
+          lang: vi
+    answer:
+      correct_option_id: p1i
+    explanation:
+      vi: 年齢や国籍を問わず - bất kể tuổi và quốc tịch; 誰でも - ai cũng.
+    display_answer: Bất kể tuổi tác và quốc tịch, ai cũng tham gia được.
+  - key: ja:exercise:n2-u11-basis-b4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-ni-sotte
+    prompt:
+      template: 計画{{b1}}、作業を進めます。 (Tôi sẽ tiến hành công việc theo đúng kế hoạch.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Cụm nghĩa "theo đúng".
+        - Bắt đầu bằng に.
+    answer:
+      blanks:
+        b1:
+          - に沿って
+    known_wrong:
+      - answer: に反して
+        feedback_vi: に反して là trái với kế hoạch - ngược nghĩa.
+        error_tag: nuance
+    explanation:
+      vi: N に沿って - theo đúng.
+    display_answer: 計画に沿って、作業を進めます。
+  - key: ja:exercise:n2-u11-basis-b5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n2-u11-gram-ni-kakete-wa
+    prompt:
+      stem: Bạn muốn khen “Về nấu ăn thì không ai bằng cô ấy”. Mẫu nào?
+      stem_lang: vi
+      options:
+        - id: hff
+          text: 料理に沿って、彼女に勝てる人はいません。
+          lang: ja
+        - id: zh5
+          text: 料理を問わず、彼女に勝てる人はいません。
+          lang: ja
+        - id: gfe
+          text: 料理に反して、彼女に勝てる人はいません。
+          lang: ja
+        - id: c48
+          text: 料理にかけては、彼女に勝てる人はいません。
+          lang: ja
+    answer:
+      correct_option_id: c48
+    explanation:
+      vi: N にかけては - về N thì. Các mẫu còn lại không có nghĩa khen kỹ năng.
+    display_answer: 料理にかけては、彼女に勝てる人はいません。
+  - key: ja:exercise:n2-u11-basis-b6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-wo-moto-ni
+    prompt:
+      template: アンケートの結果{{b1}}、計画を立てます。 (Dựa trên kết quả khảo sát, tôi lập kế hoạch.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - をもとに
+          - をもとにして
+    known_wrong:
+      - answer: に反して
+        feedback_vi: に反して là trái với; dùng kết quả làm căn cứ là をもとに.
+        error_tag: nuance
+    explanation:
+      vi: N をもとに - dựa trên.
+    display_answer: アンケートの結果をもとに、計画を立てます。
+  - key: ja:exercise:n2-u11-basis-b7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-ni-hanshite
+    prompt:
+      template: 規則に{{b1}}行為は禁止されています。 (Hành vi trái với quy tắc bị cấm.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 反する
+    known_wrong:
+      - answer: 反して
+        feedback_vi: 反して là dạng て; trước danh từ 行為 cần 反する.
+        error_tag: form
+    explanation:
+      vi: N に反する + N - trái với.
+    display_answer: 規則に反する行為は禁止されています。
+  - key: ja:exercise:n2-u11-basis-b8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-wo-towazu
+    prompt:
+      source_text: Bất kể tuổi tác, ai cũng tham gia được.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 年齢を問わず、誰でも参加できます。
+        - 年齢を問わず誰でも参加できます。
+        - ねんれいをとわず、だれでもさんかできます。
+        - 年齢に関係なく、誰でも参加できます。
+    known_wrong:
+      - answer: 年齢に反して、誰でも参加できます。
+        feedback_vi: 反して là trái với, không phải bất kể.
+        error_tag: nuance
+    explanation:
+      vi: N を問わず - bất kể N.
+    display_answer: 年齢を問わず、誰でも参加できます。
+  - key: ja:exercise:n2-u11-basis-b9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n2-u11-yosou
+    prompt:
+      source_text: 予想に反して、試合は日本が勝ちました。みんなの期待に応えて、計画に沿って練習した結果です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trái với dự đoán, Nhật Bản đã thắng trận. Đó là kết quả của việc luyện tập theo đúng kế hoạch, đáp lại kỳ vọng của mọi người.
+        - Trái với dự kiến, đội Nhật thắng. Đây là kết quả luyện tập đúng kế hoạch để đáp lại kỳ vọng mọi người.
+        - Ngược lại dự đoán, Nhật Bản chiến thắng, là kết quả của quá trình tập luyện theo kế hoạch nhằm đáp ứng kỳ vọng của mọi người.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Đúng như dự đoán, Nhật Bản đã thua. Đó là kết quả của việc không tập luyện.
+        feedback_vi: 予想に反して là trái với dự đoán.
+        error_tag: meaning
+    explanation:
+      vi: 予想に反して - trái dự đoán; 期待に応える - đáp lại kỳ vọng; 計画に沿って - theo kế hoạch.
+    display_answer: Trái với dự đoán, Nhật Bản đã thắng trận. Đó là kết quả của việc luyện tập theo đúng kế hoạch, đáp lại kỳ vọng của mọi người.
+  - key: ja:exercise:n2-u11-basis-b10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-gram-ni-sotte
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi sẽ tiến hành công việc theo đúng kế hoạch."'
+      tokens:
+        - id: t1
+          text: 計画に
+        - id: t2
+          text: 沿って、
+        - id: t4
+          text: 進めます。
+        - id: t3
+          text: 作業を
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+        - - t3
+          - t1
+          - t2
+          - t4
+    explanation:
+      vi: N に沿って + tân ngữ + 進めます.
+    display_answer: 計画に沿って、作業を進めます。
+  - key: ja:exercise:n2-u11-basis-b11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n2-u11-zentei
+    prompt:
+      stem: Hai người hẹn hò với mục tiêu kết hôn. Từ nào?
+      stem_lang: vi
+      options:
+        - id: mv0
+          text: 期待
+          lang: ja
+        - id: zsc
+          text: 方針
+          lang: ja
+        - id: gye
+          text: 予想
+          lang: ja
+        - id: gsr
+          text: 前提
+          lang: ja
+    answer:
+      correct_option_id: gsr
+    explanation:
+      vi: 結婚を前提に - với tiền đề kết hôn. 方針 là phương châm, 予想 là dự đoán, 期待 là kỳ vọng.
+    display_answer: 前提
