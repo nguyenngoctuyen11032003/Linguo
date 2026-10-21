@@ -1,0 +1,371 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n1-u9-extent
+order_index: 1
+level: n1
+title:
+  vi: Mức độ cực hạn và bản chất - ～に至るまで・～に至って・～にほかならない・～ならいざ知らず
+objectives:
+  - vi: Nêu cả những điểm nhỏ nhất bằng ～に至るまで.
+  - vi: Phân biệt ～に至って (mãi đến khi) và ～に至っては (ngay cả trường hợp cực đoan như).
+  - vi: Khẳng định bản chất bằng ～にほかならない và phê phán bằng ～ならいざ知らず.
+estimated_minutes: 22
+skills:
+  - grammar
+  - reading
+  - vocabulary
+  - speaking
+prerequisites:
+  - ja:lesson:n1-manner-tendency-review
+items:
+  - item: ja:item:n1-u9-gram-ni-itaru-made
+  - item: ja:item:n1-u9-gram-ni-itatte
+  - item: ja:item:n1-u9-gram-ni-hokanaranai
+  - item: ja:item:n1-u9-gram-naraba-izashirazu
+  - item: ja:item:n1-u9-saibu
+  - item: ja:item:n2-u2-habahiroi
+    role: reuse
+  - item: ja:item:n1-u9-taisaku-n1
+  - item: ja:item:n1-u9-kekka-n1
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu những cách nói nhấn mạnh ở N1 - 細部に至るまで、こだわって作られています。成功は努力の結果にほかなりません。子どもならいざ知らず、大人がそんなことをするとは。
+  - type: explain
+    text:
+      vi: 'N に至るまで = "đến cả, tận cùng đến": nêu cả những mục nhỏ hay xa nhất để nhấn mạnh sự bao quát. 細部に至るまで (đến từng chi tiết nhỏ), 子どもからお年寄りに至るまで (từ trẻ em đến người già). Thường đi cặp ～から ～に至るまで.'
+  - type: explain
+    text:
+      vi: 'V / N に至って(は): ～に至って = "mãi đến khi (đến mức) ... mới ..." (muộn, ngoài kỳ vọng). 事故が起きるに至って、やっと対策が取られた. ～に至っては = "còn như ... thì (ví dụ cực đoan nhất)". 弟に至っては、一度も本を読んだことがない.'
+  - type: explain
+    text:
+      vi: 'N / V こと + にほかならない = "không gì khác hơn là, chính là": khẳng định bản chất hoặc nguyên nhân. 成功は努力の結果にほかならない. N ならいざ知らず = "nếu là ... thì còn được (không nói làm gì), nhưng ..." dùng phê phán: 子どもならいざ知らず、大人がそんなことをするとは.'
+  - type: deep_explain
+    text:
+      vi: 'Chú ý ranh giới giữa ～に至るまで (độ bao phủ, "tận cùng"), ～に至って (mốc thời điểm muộn, "đến mức này mới...") và ～に至っては (nêu ví dụ cực đoan nhất trong nhóm). ～にほかならない gần với ～のだ (khẳng định mạnh) nhưng dùng cho nguyên nhân, bản chất: A は B にほかならない (A chính là B). ならいざ知らず thường có ngữ khí trách: vế sau là điều đáng phê phán.'
+  - type: example
+    target: この商品は、細部に至るまでこだわって作られています。
+    target_lang: ja
+    translation:
+      vi: Sản phẩm này được làm tỉ mỉ đến từng chi tiết nhỏ nhất.
+    note:
+      vi: に至るまで.
+  - type: example
+    target: 事故が起きるに至って、やっと対策が取られました。
+    target_lang: ja
+    translation:
+      vi: Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp.
+    note:
+      vi: に至って.
+  - type: example
+    target: 成功は努力の結果にほかなりません。
+    target_lang: ja
+    translation:
+      vi: Thành công chính là kết quả của nỗ lực.
+    note:
+      vi: にほかならない.
+  - type: example
+    target: 子どもならいざ知らず、大人がそんなことをするとは。
+    target_lang: ja
+    translation:
+      vi: Nếu là trẻ con thì còn được, chứ người lớn mà làm thế.
+    note:
+      vi: ならいざ知らず.
+  - type: common_mistake
+    wrong: 細部に至るまでを丁寧に作りました。
+    right: 細部に至るまで丁寧に作りました。
+    target_lang: ja
+    note:
+      vi: に至るまで đứng trực tiếp trước vị ngữ, không thêm を.
+  - type: common_mistake
+    wrong: 弟に至っても、一度も本を読んだことがありません。(nêu ví dụ cực đoan)
+    right: 弟に至っては、一度も本を読んだことがありません。
+    target_lang: ja
+    note:
+      vi: Nêu ví dụ cực đoan trong nhóm dùng ～に至っては.
+  - type: summary
+    points:
+      - vi: N に至るまで - đến cả (tận cùng).
+      - vi: V / N に至って - mãi đến khi; に至っては - ngay cả (ví dụ cực đoan).
+      - vi: N / V こと + にほかならない - chính là.
+      - vi: N ならいざ知らず - nếu là ... thì còn được.
+exercises:
+  - key: ja:exercise:n1-u9-extent-e1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-ni-itaru-made
+    prompt:
+      stem: Chọn câu đúng - 子どもからお年寄り___、幅広い人に愛されています。
+      stem_lang: vi
+      options:
+        - id: wjc
+          text: ならいざ知らず
+          lang: ja
+        - id: bmz
+          text: に至って
+          lang: ja
+        - id: t6g
+          text: に至るまで
+          lang: ja
+        - id: p32
+          text: にほかならず
+          lang: ja
+    answer:
+      correct_option_id: t6g
+    explanation:
+      vi: N に至るまで - đến cả. に至って là mốc muộn, にほかならず là chính là, ならいざ知らず là "nếu là ... thì còn được".
+    display_answer: に至るまで
+  - key: ja:exercise:n1-u9-extent-e2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-ni-hokanaranai
+    prompt:
+      stem: Chọn câu đúng - 成功は努力の結果___。
+      stem_lang: vi
+      options:
+        - id: zad
+          text: にほかなりません
+          lang: ja
+        - id: e1o
+          text: をほかなりません
+          lang: ja
+        - id: z3i
+          text: にいたりません
+          lang: ja
+        - id: qfp
+          text: にすぎません
+          lang: ja
+    answer:
+      correct_option_id: zad
+    explanation:
+      vi: N にほかならない - chính là. にすぎない là "chẳng qua chỉ là" (nghĩa khác).
+    display_answer: にほかなりません
+  - key: ja:exercise:n1-u9-extent-e3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u9-gram-ni-itatte
+    prompt:
+      audio_asset_id: null
+      fallback_text: 事故が起きるに至って、やっと対策が取られました。
+      options:
+        - id: taa
+          text: Tai nạn không xảy ra dù không có biện pháp.
+          lang: vi
+        - id: gi8
+          text: Tai nạn xảy ra nhiều lần nên đã có biện pháp ngay.
+          lang: vi
+        - id: vj8
+          text: Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp.
+          lang: vi
+        - id: trp
+          text: Vì có biện pháp nên tai nạn không xảy ra.
+          lang: vi
+    answer:
+      correct_option_id: vj8
+    explanation:
+      vi: ～に至って - mãi đến khi; やっと - cuối cùng cũng.
+    display_answer: Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp.
+  - key: ja:exercise:n1-u9-extent-e4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-naraba-izashirazu
+    prompt:
+      template: 子ども{{b1}}、大人がそんなことをするとは。 (Nếu là trẻ con thì còn được, chứ người lớn mà làm thế.)
+      blanks:
+        - id: b1
+          width_hint: 8
+      hint_levels:
+        - Cụm nghĩa "nếu là ... thì còn được".
+        - Bắt đầu bằng なら.
+    answer:
+      blanks:
+        b1:
+          - ならいざ知らず
+          - ならいざしらず
+    known_wrong:
+      - answer: なら
+        feedback_vi: Chỉ có なら thì chưa đủ nghĩa phê phán; cần ならいざ知らず.
+        error_tag: form
+    explanation:
+      vi: N ならいざ知らず - nếu là N thì còn được.
+    display_answer: 子どもならいざ知らず、大人がそんなことをするとは。
+  - key: ja:exercise:n1-u9-extent-e5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-ni-itatte
+    prompt:
+      stem: "Bạn nêu trường hợp cực đoan nhất trong nhóm: “Còn em trai tôi thì chưa từng đọc sách lần nào”. Mẫu nào?"
+      stem_lang: vi
+      options:
+        - id: k97
+          text: 弟に至るまで
+          lang: ja
+        - id: qmh
+          text: 弟に至っては
+          lang: ja
+        - id: t2z
+          text: 弟にほかならず
+          lang: ja
+        - id: dga
+          text: 弟ならいざ知らず
+          lang: ja
+    answer:
+      correct_option_id: qmh
+    explanation:
+      vi: N に至っては - còn như N thì (ví dụ cực đoan). に至るまで là đến cả (bao quát), にほかならず là chính là.
+    display_answer: 弟に至っては
+  - key: ja:exercise:n1-u9-extent-e6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-ni-itaru-made
+    prompt:
+      template: この商品は、細部{{b1}}こだわって作られています。 (Sản phẩm này được làm tỉ mỉ đến từng chi tiết.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - に至るまで
+          - にいたるまで
+    known_wrong:
+      - answer: に至って
+        feedback_vi: に至って chỉ mốc muộn; "đến cả chi tiết" dùng に至るまで.
+        error_tag: nuance
+    explanation:
+      vi: N に至るまで - đến tận.
+    display_answer: この商品は、細部に至るまでこだわって作られています。
+  - key: ja:exercise:n1-u9-extent-e7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-ni-hokanaranai
+    prompt:
+      template: 成功は努力の結果{{b1}}ません。 (Thành công chính là kết quả của nỗ lực.)
+      blanks:
+        - id: b1
+          width_hint: 6
+    answer:
+      blanks:
+        b1:
+          - にほかなり
+    known_wrong:
+      - answer: にすぎ
+        feedback_vi: にすぎません là "chẳng qua chỉ là"; khẳng định bản chất dùng にほかなりません.
+        error_tag: nuance
+    explanation:
+      vi: N にほかならない - chính là.
+    display_answer: 成功は努力の結果にほかなりません。
+  - key: ja:exercise:n1-u9-extent-e8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-naraba-izashirazu
+    prompt:
+      source_text: Nếu là trẻ con thì còn được, chứ người lớn mà làm thế.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 子どもならいざ知らず、大人がそんなことをするとは。
+        - 子供ならいざ知らず、大人がそんなことをするとは。
+        - こどもならいざしらず、おとながそんなことをするとは。
+        - 子どもならいざ知らず、大人がそんなことをするなんて。
+    known_wrong:
+      - answer: 子どもに至るまで、大人がそんなことをするとは。
+        feedback_vi: に至るまで là bao quát; câu yêu cầu dùng ならいざ知らず.
+        error_tag: form
+    explanation:
+      vi: N ならいざ知らず - nếu là N thì còn được.
+    display_answer: 子どもならいざ知らず、大人がそんなことをするとは。
+  - key: ja:exercise:n1-u9-extent-e9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u9-saibu
+    prompt:
+      source_text: 細部に至るまでこだわって作られた商品は、幅広い年齢の人に愛されています。これは職人の努力にほかなりません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sản phẩm được làm tỉ mỉ đến từng chi tiết được nhiều lứa tuổi yêu thích. Đó chính là nỗ lực của các nghệ nhân.
+        - Món hàng làm cẩn thận đến từng chi tiết nhỏ được người ở nhiều độ tuổi yêu quý. Điều này chính là nhờ nỗ lực của người thợ.
+        - Sản phẩm tỉ mỉ đến cả chi tiết nhỏ nhất được nhiều lứa tuổi ưa chuộng, và đây chính là thành quả nỗ lực của nghệ nhân.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Sản phẩm làm cẩu thả, chỉ một nhóm tuổi thích. Đó là do lỗi của thợ.
+        feedback_vi: 細部に至るまで là đến từng chi tiết; にほかならない là chính là.
+        error_tag: meaning
+    explanation:
+      vi: 細部に至るまで - đến từng chi tiết; 幅広い - rộng rãi; にほかならない - chính là.
+    display_answer: Sản phẩm được làm tỉ mỉ đến từng chi tiết được nhiều lứa tuổi yêu thích. Đó chính là nỗ lực của các nghệ nhân.
+  - key: ja:exercise:n1-u9-extent-e10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-ni-hokanaranai
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Thành công chính là kết quả của nỗ lực."'
+      tokens:
+        - id: t3
+          text: ほかなりません。
+        - id: t2
+          text: 努力の結果に
+        - id: t1
+          text: 成功は
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: A は B にほかならない - A chính là B.
+    display_answer: 成功は努力の結果にほかなりません。
+  - key: ja:exercise:n1-u9-extent-e11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-taisaku-n1
+    prompt:
+      stem: Bạn muốn nói “Chính phủ nên sớm đưa ra biện pháp đối phó”. Cụm nào đúng?
+      stem_lang: vi
+      options:
+        - id: d37
+          text: 早急に対策を従うべきです
+          lang: ja
+        - id: lrr
+          text: 早急に対策を保つべきです
+          lang: ja
+        - id: tri
+          text: 早急に対策を講じるべきです
+          lang: ja
+        - id: a5i
+          text: 早急に対策を持つべきです
+          lang: ja
+    answer:
+      correct_option_id: tri
+    explanation:
+      vi: 対策を講じる - đưa ra biện pháp. 持つ, 保つ, 従う không đi với 対策 theo nghĩa này.
+    display_answer: 早急に対策を講じるべきです

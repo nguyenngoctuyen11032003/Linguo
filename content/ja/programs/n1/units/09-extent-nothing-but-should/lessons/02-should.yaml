@@ -1,0 +1,374 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n1-u9-should
+order_index: 2
+level: n1
+title:
+  vi: Đương nhiên và phê phán - ～てしかるべき・～ともあろう・～であろうと・～ではあるまいし
+objectives:
+  - vi: Nói "đáng lẽ phải" bằng ～てしかるべきだ.
+  - vi: Phê phán người có vị thế bằng ～ともあろう.
+  - vi: Nói "bất kể" bằng ～であろうと và mỉa mai bằng ～ではあるまいし.
+estimated_minutes: 22
+skills:
+  - grammar
+  - reading
+  - vocabulary
+  - speaking
+prerequisites:
+  - ja:lesson:n1-u9-extent
+items:
+  - item: ja:item:n1-u9-gram-te-shikarubeki
+  - item: ja:item:n1-u9-gram-to-mo-arou
+  - item: ja:item:n1-u9-gram-de-arou-to
+  - item: ja:item:n1-u9-gram-dewa-arumai-shi
+  - item: ja:item:n1-u9-bouryoku
+  - item: ja:item:n1-u9-fusei
+  - item: ja:item:n1-u9-shazai
+  - item: ja:item:n1-u9-hyouka
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu bình luận mạnh mẽ ở N1 - 彼の努力は評価されてしかるべきだ。教師ともあろう者が、暴力を振るうとは。子どもではあるまいし。
+  - type: explain
+    text:
+      vi: 'V て / N + しかるべき(だ) = "đáng lẽ phải, xứng đáng được": 評価されてしかるべきだ (đáng lẽ phải được đánh giá cao), 説明があってしかるべきだ (đáng lẽ phải có lời giải thích). N ともあろう + N = "một người ở vị trí / danh tiếng như ... mà (lại làm điều đáng trách)": 教師ともあろう者が.'
+  - type: explain
+    text:
+      vi: 'N / V であろうと ～ = "dù là ... đi nữa": 相手が誰であろうと, どんなに困難であろうと. Dạng thường: であれ, だろうと. N / V ではあるまいし = "có phải ... đâu mà (nên đừng ...)": 子どもではあるまいし, 神様ではあるまいし. Thường theo sau là lời trách, khuyên can.'
+  - type: explain
+    text:
+      vi: Từ vựng đi kèm trong bình luận - 暴力 (bạo lực), 不正 (gian lận), 謝罪 (xin lỗi chính thức), 評価 (đánh giá). Ví dụ 暴力を振るう, 不正が発覚する, 謝罪を求める, 高く評価される.
+  - type: deep_explain
+    text:
+      vi: "Cả bốn mẫu đều thuộc văn bình luận, ngữ khí mạnh nên cần cẩn trọng khi dùng. ともあろう chỉ dùng cho người (hoặc tổ chức) có địa vị, danh tiếng: 教師, 医者, 大企業の社長. しかるべき còn dùng như tính từ - しかるべき手続き (thủ tục thích đáng), しかるべき措置 (biện pháp thích hợp). ではあるまいし khác じゃないんだから (khẩu ngữ): ではあるまいし thuộc văn viết hơn."
+  - type: example
+    target: 彼の努力は、もっと評価されてしかるべきだ。
+    target_lang: ja
+    translation:
+      vi: Nỗ lực của anh ấy đáng lẽ phải được đánh giá cao hơn.
+    note:
+      vi: てしかるべき.
+  - type: example
+    target: 教師ともあろう者が、生徒に暴力を振るうとは。
+    target_lang: ja
+    translation:
+      vi: Một người làm giáo viên mà lại đánh học sinh.
+    note:
+      vi: ともあろう.
+  - type: example
+    target: 相手が誰であろうと、規則は規則です。
+    target_lang: ja
+    translation:
+      vi: Dù đối phương là ai thì quy tắc vẫn là quy tắc.
+    note:
+      vi: であろうと.
+  - type: example
+    target: 子どもではあるまいし、自分のことは自分でしなさい。
+    target_lang: ja
+    translation:
+      vi: Có phải trẻ con đâu, việc của mình hãy tự làm đi.
+    note:
+      vi: ではあるまいし.
+  - type: common_mistake
+    wrong: 社員ともあろう人が、遅刻して当然です。
+    right: 社員ともあろう人が、遅刻するとは。
+    target_lang: ja
+    note:
+      vi: ともあろう dẫn tới lời trách; không đi với kết luận khẳng định "đương nhiên".
+  - type: common_mistake
+    wrong: 子どもではあるまいし、一緒に遊ぼう。
+    right: 子どもではあるまいし、いい加減にしなさい。
+    target_lang: ja
+    note:
+      vi: ではあるまいし đi với lời trách hoặc khuyên can, không đi với lời rủ.
+  - type: summary
+    points:
+      - vi: てしかるべき - đáng lẽ phải · ともあろう - người như ... mà lại.
+      - vi: であろうと / であれ - dù là.
+      - vi: ではあるまいし - có phải ... đâu.
+      - vi: 暴力 · 不正 · 謝罪 · 評価.
+exercises:
+  - key: ja:exercise:n1-u9-should-s1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-te-shikarubeki
+    prompt:
+      stem: Chọn câu đúng - 彼の努力は、もっと評価されて___。
+      stem_lang: vi
+      options:
+        - id: bs6
+          text: しかるはずだ
+          lang: ja
+        - id: dyk
+          text: しかるだろう
+          lang: ja
+        - id: mj9
+          text: しかるべきだ
+          lang: ja
+        - id: gd8
+          text: しかるものだ
+          lang: ja
+    answer:
+      correct_option_id: mj9
+    explanation:
+      vi: V て + しかるべきだ - đáng lẽ phải. Các dạng còn lại sai hình thức.
+    display_answer: しかるべきだ
+  - key: ja:exercise:n1-u9-should-s2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-to-mo-arou
+    prompt:
+      stem: Chọn câu đúng - 教師___者が、生徒に暴力を振るうとは。
+      stem_lang: vi
+      options:
+        - id: fyd
+          text: とあって
+          lang: ja
+        - id: c4q
+          text: ともあろう
+          lang: ja
+        - id: fzr
+          text: ともなると
+          lang: ja
+        - id: uw8
+          text: とはいえ
+          lang: ja
+    answer:
+      correct_option_id: c4q
+    explanation:
+      vi: N ともあろう + N - người ở vị trí như. とあって, ともなると, とはいえ có nghĩa khác.
+    display_answer: ともあろう
+  - key: ja:exercise:n1-u9-should-s3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u9-gram-dewa-arumai-shi
+    prompt:
+      audio_asset_id: null
+      fallback_text: 子どもではあるまいし、自分のことは自分でしなさい。
+      options:
+        - id: bw1
+          text: Có phải trẻ con đâu, việc của mình hãy tự làm đi.
+          lang: vi
+        - id: agf
+          text: Trẻ con không cần tự làm việc của mình.
+          lang: vi
+        - id: jlm
+          text: Chỉ trẻ con mới phải tự làm việc của mình.
+          lang: vi
+        - id: ew9
+          text: Vì là trẻ con nên hãy để người lớn làm.
+          lang: vi
+    answer:
+      correct_option_id: bw1
+    explanation:
+      vi: ではあるまいし - có phải ... đâu; 自分のことは自分で - việc mình tự làm.
+    display_answer: Có phải trẻ con đâu, việc của mình hãy tự làm đi.
+  - key: ja:exercise:n1-u9-should-s4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-de-arou-to
+    prompt:
+      template: 相手が誰{{b1}}、規則は規則です。 (Dù đối phương là ai thì quy tắc vẫn là quy tắc.)
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Cụm nghĩa "dù là".
+        - Bắt đầu bằng で.
+    answer:
+      blanks:
+        b1:
+          - であろうと
+          - だろうと
+          - であれ
+    known_wrong:
+      - answer: ならば
+        feedback_vi: ならば là điều kiện; "dù là ai" dùng であろうと.
+        error_tag: nuance
+    explanation:
+      vi: であろうと - dù là.
+    display_answer: 相手が誰であろうと、規則は規則です。
+  - key: ja:exercise:n1-u9-should-s5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-shazai
+    prompt:
+      stem: Giám đốc xin lỗi chính thức trong buổi họp báo. Từ nào?
+      stem_lang: vi
+      options:
+        - id: u3j
+          text: 不正
+          lang: ja
+        - id: q6s
+          text: 謝罪
+          lang: ja
+        - id: g21
+          text: 暴力
+          lang: ja
+        - id: h7z
+          text: 評価
+          lang: ja
+    answer:
+      correct_option_id: q6s
+    explanation:
+      vi: 謝罪 là xin lỗi chính thức. 評価 là đánh giá, 不正 là gian lận, 暴力 là bạo lực.
+    display_answer: 謝罪
+  - key: ja:exercise:n1-u9-should-s6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-te-shikarubeki
+    prompt:
+      template: 責任者から説明が{{b1}}しかるべきだ。 (Đáng lẽ người phụ trách phải đưa ra lời giải thích.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - あって
+    known_wrong:
+      - answer: ある
+        feedback_vi: "Trước しかるべき phải dùng dạng て: あって."
+        error_tag: form
+    explanation:
+      vi: V て + しかるべき - đáng lẽ phải.
+    display_answer: 責任者から説明があってしかるべきだ。
+  - key: ja:exercise:n1-u9-should-s7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-dewa-arumai-shi
+    prompt:
+      template: 神様{{b1}}、誰にも未来は分からない。 (Đâu phải thần thánh, chẳng ai biết được tương lai.)
+      blanks:
+        - id: b1
+          width_hint: 8
+    answer:
+      blanks:
+        b1:
+          - ではあるまいし
+          - じゃあるまいし
+    known_wrong:
+      - answer: であろうと
+        feedback_vi: であろうと là "dù là"; mỉa mai "đâu phải ..." dùng ではあるまいし.
+        error_tag: nuance
+    explanation:
+      vi: N ではあるまいし - đâu phải N.
+    display_answer: 神様ではあるまいし、誰にも未来は分からない。
+  - key: ja:exercise:n1-u9-should-s8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-to-mo-arou
+    prompt:
+      source_text: Một người làm giáo viên mà lại đánh học sinh.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 教師ともあろう者が、生徒に暴力を振るうとは。
+        - 教師ともあろう者が生徒に暴力を振るうとは。
+        - きょうしともあろうものが、せいとにぼうりょくをふるうとは。
+        - 教師ともあろう人が、生徒に暴力を振るうなんて。
+    known_wrong:
+      - answer: 教師であろうと、生徒に暴力を振るうとは。
+        feedback_vi: であろうと là "dù là"; ともあろう diễn tả vị thế đòi hỏi chuẩn mực.
+        error_tag: nuance
+    explanation:
+      vi: N ともあろう + N - người ở vị thế như N mà lại.
+    display_answer: 教師ともあろう者が、生徒に暴力を振るうとは。
+  - key: ja:exercise:n1-u9-should-s9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u9-fusei
+    prompt:
+      source_text: 大企業の社長ともあろう人が、不正をするとは信じられません。相手が誰であろうと、謝罪はすべきです。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Một giám đốc tập đoàn lớn mà lại gian lận thì thật khó tin. Dù đối phương là ai cũng phải xin lỗi.
+        - Người làm giám đốc tập đoàn lớn mà làm gian lận thì tôi không tin nổi. Bất kể người đó là ai, vẫn phải tạ lỗi.
+        - Không thể tin một giám đốc tập đoàn lớn lại gian lận. Dù là ai thì cũng nên xin lỗi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Một giám đốc tập đoàn nhỏ gian lận thì tôi tin. Đối phương là ai cũng không cần xin lỗi.
+        feedback_vi: ともあろう diễn tả sự không thể tin.
+        error_tag: meaning
+    explanation:
+      vi: ともあろう - người ở vị thế như ... mà; であろうと - dù là; 謝罪 - xin lỗi chính thức.
+    display_answer: Một giám đốc tập đoàn lớn mà lại gian lận thì thật khó tin. Dù đối phương là ai cũng phải xin lỗi.
+  - key: ja:exercise:n1-u9-should-s10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-te-shikarubeki
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Nỗ lực của anh ấy đáng lẽ phải được đánh giá cao hơn."'
+      tokens:
+        - id: t3
+          text: 評価されて
+        - id: t4
+          text: しかるべきだ。
+        - id: t2
+          text: もっと
+        - id: t1
+          text: 彼の努力は、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Chủ đề → もっと → V て → しかるべきだ.
+    display_answer: 彼の努力は、もっと評価されてしかるべきだ。
+  - key: ja:exercise:n1-u9-should-s11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-bouryoku
+    prompt:
+      stem: Bạn lên án hành vi đánh người. Từ nào?
+      stem_lang: vi
+      options:
+        - id: pgf
+          text: 評価
+          lang: ja
+        - id: ppg
+          text: 謝罪
+          lang: ja
+        - id: v8i
+          text: 暴力
+          lang: ja
+        - id: hav
+          text: 不正
+          lang: ja
+    answer:
+      correct_option_id: v8i
+    explanation:
+      vi: 暴力 là bạo lực. 評価 là đánh giá, 謝罪 là xin lỗi, 不正 là gian lận.
+    display_answer: 暴力

@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n1-u9-formal
+order_index: 3
+level: n1
+title:
+  vi: Văn trang trọng - ～てからというもの・～手前・～ごとき・～かたがた・～ないまでも
+objectives:
+  - vi: Nói "kể từ khi ... thì" bằng ～てからというもの.
+  - vi: Nói "vì đã ... nên (nể mặt, thể diện)" bằng ～手前.
+  - vi: Dùng ～ごとき / ごとく, ～かたがた và ～ないまでも trong văn trang trọng.
+estimated_minutes: 22
+skills:
+  - grammar
+  - reading
+  - vocabulary
+  - speaking
+prerequisites:
+  - ja:lesson:n1-u9-should
+items:
+  - item: ja:item:n1-u9-gram-te-kara-to-iu-mono
+  - item: ja:item:n1-u9-gram-temae
+  - item: ja:item:n1-u9-gram-gotoki
+  - item: ja:item:n1-u9-gram-katagata
+  - item: ja:item:n1-u9-gram-nai-made-mo
+  - item: ja:item:n1-u9-gaiyou
+  - item: ja:item:n1-u9-kotsukotsu
+  - item: ja:item:n1-u9-mousou
+  - item: ja:item:n1-u9-fuitchi
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu thư, bài viết trang trọng - 結婚してからというもの、夜遊びをしなくなりました。お礼かたがた、ご挨拶に伺いました。毎日とは言わないまでも、週に一度は連絡してください。
+  - type: explain
+    text:
+      vi: 'V て + からというもの = "kể từ khi ... thì (suốt từ đó)": nhấn thay đổi lớn kéo dài sau một sự kiện. 結婚してからというもの, 日本に来てからというもの. V辞書形 / V た / N の + 手前 = "vì đã ... nên (không thể không giữ thể diện, trách nhiệm)": 約束した手前, 先輩の手前.'
+  - type: explain
+    text:
+      vi: 'N + ごとき / ごとく = "như, giống như" (văn viết hoặc coi thường): 私ごとき (người như tôi), 矢のごとく (như tên bắn). N + かたがた = "nhân tiện, đồng thời": お礼かたがた (đến cảm ơn nhân tiện chào hỏi). V ない + までも = "dù không (đến mức) ... thì cũng ...": 毎日とは言わないまでも, 週に一度は.'
+  - type: explain
+    text:
+      vi: Từ vựng văn viết - 概要 (khái quát), こつこつ (đều đặn), 妄想 (ảo tưởng), 不一致 (bất đồng). Ví dụ 計画の概要, こつこつ貯金する, 妄想にすぎない, 意見の不一致.
+  - type: deep_explain
+    text:
+      vi: "Cẩn thận để dùng chính xác: ～てからというもの nhấn một sự kiện chuyển điểm lớn; không dùng cho thay đổi nhỏ trong ngày. ～手前 mang nghĩa trách nhiệm trước người khác nên đi với việc đã cam kết hoặc có mặt người ngoài. ごとき khi dùng với ngôi thứ nhất (私ごとき) là khiêm nhường; khi dùng với người khác (君ごとき) là coi thường. ～かたがた chỉ dùng với danh từ chỉ hành động lễ nghi (お礼, 挨拶, お見舞い)."
+  - type: example
+    target: 結婚してからというもの、夜遊びをしなくなりました。
+    target_lang: ja
+    translation:
+      vi: Kể từ khi kết hôn tôi không còn đi chơi đêm nữa.
+    note:
+      vi: てからというもの.
+  - type: example
+    target: みんなの前で約束した手前、やめるわけにはいきません。
+    target_lang: ja
+    translation:
+      vi: Vì đã hứa trước mặt mọi người nên tôi không thể bỏ cuộc.
+    note:
+      vi: 手前.
+  - type: example
+    target: お礼かたがた、ご挨拶に伺いました。
+    target_lang: ja
+    translation:
+      vi: Tôi đến chào và nhân tiện cũng để cảm ơn.
+    note:
+      vi: かたがた.
+  - type: example
+    target: 毎日とは言わないまでも、週に一度は連絡してください。
+    target_lang: ja
+    translation:
+      vi: Dù không nói là mỗi ngày, ít nhất mỗi tuần một lần hãy liên lạc.
+    note:
+      vi: ないまでも.
+  - type: common_mistake
+    wrong: 今朝起きてからというもの、頭が痛いです。
+    right: 手術を受けてからというもの、体調がよくなりました。
+    target_lang: ja
+    note:
+      vi: からというもの dùng cho thay đổi lớn kéo dài sau sự kiện trọng đại, không dùng cho khoảng thời gian trong ngày.
+  - type: common_mistake
+    wrong: 友達の家へ行くかたがた、手紙を書きました。
+    right: 友達へのお礼かたがた、手紙を書きました。
+    target_lang: ja
+    note:
+      vi: かたがた đi với danh từ chỉ hành động lễ nghi (お礼), không đi với động từ thông thường.
+  - type: summary
+    points:
+      - vi: V てからというもの - kể từ khi ... thì · V / N の + 手前 - nể mặt, vì đã.
+      - vi: N ごとき / ごとく - như (khiêm nhường / coi thường).
+      - vi: N かたがた - nhân tiện · V ないまでも - dù không đến mức.
+      - vi: 概要 · こつこつ · 妄想 · 不一致.
+exercises:
+  - key: ja:exercise:n1-u9-formal-f1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-te-kara-to-iu-mono
+    prompt:
+      stem: Chọn câu đúng - 結婚して___、夜遊びをしなくなりました。
+      stem_lang: vi
+      options:
+        - id: nez
+          text: からして
+          lang: ja
+        - id: hio
+          text: からといって
+          lang: ja
+        - id: sce
+          text: からには
+          lang: ja
+        - id: smh
+          text: からというもの
+          lang: ja
+    answer:
+      correct_option_id: smh
+    explanation:
+      vi: V てからというもの - kể từ khi. からといって, からして, からには có nghĩa khác.
+    display_answer: からというもの
+  - key: ja:exercise:n1-u9-formal-f2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-nai-made-mo
+    prompt:
+      stem: Chọn câu đúng - 毎日とは言わない___、週に一度は連絡してください。
+      stem_lang: vi
+      options:
+        - id: wqu
+          text: ながらも
+          lang: ja
+        - id: pph
+          text: ばかりか
+          lang: ja
+        - id: h3v
+          text: までも
+          lang: ja
+        - id: j5e
+          text: ことなく
+          lang: ja
+    answer:
+      correct_option_id: h3v
+    explanation:
+      vi: V ない + までも - dù không đến mức. Các mẫu còn lại nghĩa khác.
+    display_answer: までも
+  - key: ja:exercise:n1-u9-formal-f3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u9-gram-katagata
+    prompt:
+      audio_asset_id: null
+      fallback_text: お礼かたがた、ご挨拶に伺いました。
+      options:
+        - id: c3w
+          text: Tôi đến cảm ơn nhưng không chào.
+          lang: vi
+        - id: k4o
+          text: Tôi đến chào và nhân tiện cũng để cảm ơn.
+          lang: vi
+        - id: w0n
+          text: Tôi cảm ơn qua thư thay vì đến.
+          lang: vi
+        - id: w62
+          text: Tôi đến để chào rồi về ngay.
+          lang: vi
+    answer:
+      correct_option_id: k4o
+    explanation:
+      vi: お礼かたがた - nhân tiện cảm ơn; 伺いました - đã đến thăm.
+    display_answer: Tôi đến chào và nhân tiện cũng để cảm ơn.
+  - key: ja:exercise:n1-u9-formal-f4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-temae
+    prompt:
+      template: みんなの前で約束した{{b1}}、やめるわけにはいきません。 (Vì đã hứa trước mọi người nên tôi không thể bỏ cuộc.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Từ nghĩa "thể diện, nể mặt".
+        - Bắt đầu bằng 手.
+    answer:
+      blanks:
+        b1:
+          - 手前
+          - てまえ
+    known_wrong:
+      - answer: ばかり
+        feedback_vi: ばかり không có nghĩa "nể mặt"; mẫu cần dùng là 手前.
+        error_tag: form
+    explanation:
+      vi: V た + 手前 - vì đã ... nên.
+    display_answer: みんなの前で約束した手前、やめるわけにはいきません。
+  - key: ja:exercise:n1-u9-formal-f5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-gotoki
+    prompt:
+      stem: Bạn khiêm nhường nói “Người như tôi thì không làm nổi”. Mẫu nào?
+      stem_lang: vi
+      options:
+        - id: n3y
+          text: 私ごときにはできません
+          lang: ja
+        - id: vt3
+          text: 私ほどにはできません
+          lang: ja
+        - id: v1e
+          text: 私ばかりにはできません
+          lang: ja
+        - id: z35
+          text: 私なりにはできません
+          lang: ja
+    answer:
+      correct_option_id: n3y
+    explanation:
+      vi: N ごとき - loại như N (khiêm nhường khi dùng với bản thân). Các dạng còn lại có nghĩa khác.
+    display_answer: 私ごときにはできません
+  - key: ja:exercise:n1-u9-formal-f6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-te-kara-to-iu-mono
+    prompt:
+      template: 日本に来て{{b1}}、毎日が新鮮です。 (Từ khi đến Nhật, ngày nào cũng mới mẻ.)
+      blanks:
+        - id: b1
+          width_hint: 8
+    answer:
+      blanks:
+        b1:
+          - からというもの
+    known_wrong:
+      - answer: からして
+        feedback_vi: からして nghĩa "xét từ ... mà"; kể từ khi dùng からというもの.
+        error_tag: form
+    explanation:
+      vi: V て + からというもの - kể từ khi.
+    display_answer: 日本に来てからというもの、毎日が新鮮です。
+  - key: ja:exercise:n1-u9-formal-f7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-katagata
+    prompt:
+      template: お見舞い{{b1}}、退院祝いを持っていきます。 (Nhân dịp thăm bệnh, tôi mang theo quà mừng xuất viện.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - かたがた
+    known_wrong:
+      - answer: ごとく
+        feedback_vi: ごとく là "như"; nhân tiện dùng かたがた.
+        error_tag: form
+    explanation:
+      vi: N かたがた - nhân tiện.
+    display_answer: お見舞いかたがた、退院祝いを持っていきます。
+  - key: ja:exercise:n1-u9-formal-f8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-nai-made-mo
+    prompt:
+      source_text: Dù không nói là mỗi ngày, ít nhất mỗi tuần một lần hãy liên lạc.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 毎日とは言わないまでも、週に一度は連絡してください。
+        - 毎日とまでは言わないまでも、週に一度は連絡してください。
+        - まいにちとはいわないまでも、しゅうにいちどはれんらくしてください。
+        - 毎日とは言わないまでも、週に一度は連絡をください。
+    known_wrong:
+      - answer: 毎日とは言わないために、週に一度は連絡してください。
+        feedback_vi: ために là mục đích; "dù không đến mức" dùng までも.
+        error_tag: form
+    explanation:
+      vi: V ない + までも - dù không đến mức.
+    display_answer: 毎日とは言わないまでも、週に一度は連絡してください。
+  - key: ja:exercise:n1-u9-formal-f9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 5
+    item: ja:item:n1-u9-kotsukotsu
+    prompt:
+      source_text: 結婚してからというもの、こつこつ貯金しています。みんなの前で約束した手前、途中でやめられません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Kể từ khi kết hôn, tôi đều đặn tiết kiệm. Vì đã hứa trước mọi người nên không thể bỏ giữa chừng.
+        - Từ khi lập gia đình tôi tiết kiệm đều đặn. Nể mặt đã hứa trước mọi người nên không thể dừng giữa chừng.
+        - Kể từ khi cưới, tôi đều đặn gửi tiết kiệm. Đã hứa công khai nên không thể bỏ dở.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Kể từ khi kết hôn, tôi tiêu xài hoang phí. Vì đã hứa trước mọi người nên bỏ giữa chừng cũng được.
+        feedback_vi: こつこつ貯金 là tiết kiệm đều đặn; 途中でやめられません là không thể bỏ giữa chừng.
+        error_tag: meaning
+    explanation:
+      vi: てからというもの - kể từ khi; こつこつ - đều đặn; 手前 - nể mặt.
+    display_answer: Kể từ khi kết hôn, tôi đều đặn tiết kiệm. Vì đã hứa trước mọi người nên không thể bỏ giữa chừng.
+  - key: ja:exercise:n1-u9-formal-f10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gram-temae
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Vì nể mặt đàn anh nên tôi không thể từ chối."'
+      tokens:
+        - id: t2
+          text: 手前、
+        - id: t4
+          text: でした。
+        - id: t3
+          text: 断れません
+        - id: t1
+          text: 先輩の
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: N の + 手前 + vế kết quả.
+    display_answer: 先輩の手前、断れませんでした。
+  - key: ja:exercise:n1-u9-formal-f11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 5
+    item: ja:item:n1-u9-gaiyou
+    prompt:
+      stem: Bạn trình bày tóm lược kế hoạch. Từ nào?
+      stem_lang: vi
+      options:
+        - id: xz7
+          text: 不一致
+          lang: ja
+        - id: xfo
+          text: 概要
+          lang: ja
+        - id: ipa
+          text: こつこつ
+          lang: ja
+        - id: ywf
+          text: 妄想
+          lang: ja
+    answer:
+      correct_option_id: xfo
+    explanation:
+      vi: 概要 là khái quát, tóm lược. 妄想 là ảo tưởng, 不一致 là bất đồng, こつこつ là đều đặn.
+    display_answer: 概要

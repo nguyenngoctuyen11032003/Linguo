@@ -1,0 +1,465 @@
+# Học liệu unit "Mức độ cực hạn, khẳng định tuyệt đối và đương nhiên" (JLPT N1). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n1-u9-gram-ni-itaru-made
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N に至るまで
+      romanization: N ni itaru made
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Đến cả, tới tận (từ ... đến cả ...: nêu cả những mục nhỏ nhất, xa nhất). 細部に至るまで, 子供から大人に至るまで."
+      examples:
+        - target: この商品は、細部に至るまでこだわって作られています。
+          translation:
+            vi: Sản phẩm này được làm tỉ mỉ đến từng chi tiết nhỏ nhất.
+        - target: 若者からお年寄りに至るまで、幅広い人に愛されています。
+          translation:
+            vi: Từ người trẻ cho tới người già, đều được nhiều người yêu thích.
+  - key: ja:item:n1-u9-gram-ni-itatte
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / N + に至って(は)
+      romanization: ni itatte (wa)
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Mãi đến khi (đến mức) ... mới ...; "đến cả (ví dụ cực đoan) thì ...". ～に至って chỉ mốc muộn; ～に至っては nêu trường hợp cực đoan nhất.
+      examples:
+        - target: 事故が起きるに至って、やっと対策が取られました。
+          translation:
+            vi: Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp.
+        - target: 弟に至っては、一度も本を読んだことがありません。
+          translation:
+            vi: Còn em trai tôi thì chưa từng đọc sách lần nào.
+  - key: ja:item:n1-u9-gram-ni-hokanaranai
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N / V こと + にほかならない
+      romanization: ni hoka naranai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chẳng khác gì, chính là, không gì khác hơn (khẳng định mạnh về nguyên nhân, bản chất).
+      examples:
+        - target: 成功は努力の結果にほかなりません。
+          translation:
+            vi: Thành công chính là kết quả của nỗ lực, không gì khác.
+        - target: それは、彼への愛情にほかならない。
+          translation:
+            vi: Đó chính là tình yêu dành cho anh ấy.
+  - key: ja:item:n1-u9-gram-naraba-izashirazu
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N / V + ならいざ知らず
+      romanization: nara iza shirazu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nếu là ... thì còn được (không nói làm gì), nhưng (ở trường hợp này thì không thể chấp nhận). Dùng phê phán.
+      examples:
+        - target: 子どもならいざ知らず、大人がそんなことをするとは。
+          translation:
+            vi: Nếu là trẻ con thì còn được, chứ người lớn mà làm thế.
+        - target: 新人ならいざ知らず、ベテランがこんなミスをするなんて。
+          translation:
+            vi: Người mới thì thôi, chứ người dày dạn kinh nghiệm mà lại mắc lỗi thế này.
+  - key: ja:item:n1-u9-saibu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 細部
+      reading: さいぶ
+      romanization: saibu
+      pos: danh từ
+    back:
+      meaning:
+        vi: chi tiết nhỏ, từng phần nhỏ
+      examples:
+        - target: 細部まで丁寧に仕上げました。
+          translation:
+            vi: Tôi hoàn thiện cẩn thận đến từng chi tiết.
+  - key: ja:item:n1-u9-taisaku-n1
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 対策を講じる
+      reading: たいさくをこうじる
+      romanization: taisaku o kouziru
+      pos: cụm từ
+    back:
+      meaning:
+        vi: đưa ra biện pháp đối phó
+      examples:
+        - target: 政府は早急に対策を講じるべきです。
+          translation:
+            vi: Chính phủ nên sớm đưa ra biện pháp.
+  - key: ja:item:n1-u9-kekka-n1
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 結実
+      reading: けつじつ
+      romanization: ketsujitsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơm hoa kết trái, thành quả
+      examples:
+        - target: 長年の努力が結実しました。
+          translation:
+            vi: Nỗ lực nhiều năm đã đơm hoa kết trái.
+  - key: ja:item:n1-u9-gram-te-shikarubeki
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: V て / N + しかるべき(だ)
+      romanization: te shikarubeki
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Đáng lẽ phải ..., xứng đáng được ... (đương nhiên nên như vậy). 評価されてしかるべきだ, 謝罪があってしかるべきだ.
+      examples:
+        - target: 彼の努力は、もっと評価されてしかるべきだ。
+          translation:
+            vi: Nỗ lực của anh ấy đáng lẽ phải được đánh giá cao hơn.
+        - target: 責任者から説明があってしかるべきだ。
+          translation:
+            vi: Đáng lẽ người phụ trách phải đưa ra lời giải thích.
+  - key: ja:item:n1-u9-gram-to-mo-arou
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N + ともあろう + N
+      romanization: to mo arou
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Một người ở vị trí / có danh tiếng như ... mà (lại làm điều đáng trách). 教師ともあろう者が, 社長ともあろう人が.
+      examples:
+        - target: 教師ともあろう者が、生徒に暴力を振るうとは。
+          translation:
+            vi: Một người làm giáo viên mà lại đánh học sinh.
+        - target: 大企業の社長ともあろう人が、こんな不正をするとは信じられない。
+          translation:
+            vi: Một giám đốc tập đoàn lớn mà lại làm gian lận thế này thì thật khó tin.
+  - key: ja:item:n1-u9-gram-de-arou-to
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N / V + であろうと / であれ (～であろうと、～)
+      romanization: de arou to
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Dù là ... đi nữa; bất kể ... (không phân biệt, không ngoại lệ). Văn viết trang trọng.
+      examples:
+        - target: 相手が誰であろうと、規則は規則です。
+          translation:
+            vi: Dù đối phương là ai thì quy tắc vẫn là quy tắc.
+        - target: どんなに困難であろうと、最後まで続ける。
+          translation:
+            vi: Dù khó khăn đến đâu cũng tiếp tục đến cùng.
+  - key: ja:item:n1-u9-gram-dewa-arumai-shi
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N / V + ではあるまいし
+      romanization: de wa arumai shi
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Không phải là ... nên đừng ...; đâu phải là ... (mỉa mai, khuyên can). Thường theo sau là lời trách.
+      examples:
+        - target: 子どもではあるまいし、自分のことは自分でしなさい。
+          translation:
+            vi: Có phải trẻ con đâu, việc của mình hãy tự làm đi.
+        - target: 神様ではあるまいし、誰にも未来は分からない。
+          translation:
+            vi: Đâu phải thần thánh, chẳng ai biết được tương lai.
+  - key: ja:item:n1-u9-bouryoku
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 暴力
+      reading: ぼうりょく
+      romanization: bouryoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạo lực
+      examples:
+        - target: 暴力は許されません。
+          translation:
+            vi: Bạo lực là không thể chấp nhận.
+  - key: ja:item:n1-u9-fusei
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 不正
+      reading: ふせい
+      romanization: fusei
+      pos: danh từ
+    back:
+      meaning:
+        vi: gian lận, bất chính
+      examples:
+        - target: 不正が見つかりました。
+          translation:
+            vi: Hành vi gian lận đã bị phát hiện.
+  - key: ja:item:n1-u9-shazai
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 謝罪
+      reading: しゃざい
+      romanization: shazai
+      pos: danh từ
+    back:
+      meaning:
+        vi: xin lỗi (chính thức), tạ lỗi
+      examples:
+        - target: 社長は記者会見で謝罪しました。
+          translation:
+            vi: Giám đốc đã xin lỗi trong buổi họp báo.
+  - key: ja:item:n1-u9-hyouka
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 評価
+      reading: ひょうか
+      romanization: hyouka
+      pos: danh từ
+    back:
+      meaning:
+        vi: đánh giá
+      examples:
+        - target: 彼の仕事は高く評価されています。
+          translation:
+            vi: Công việc của anh ấy được đánh giá cao.
+  - key: ja:item:n1-u9-gram-te-kara-to-iu-mono
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: V て + からというもの
+      romanization: te kara to iu mono
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Kể từ khi ... thì (suốt thời gian dài sau đó cứ ...). Nhấn thay đổi lớn sau một sự kiện.
+      examples:
+        - target: 結婚してからというもの、夜遊びをしなくなりました。
+          translation:
+            vi: Kể từ khi kết hôn tôi không còn đi chơi đêm nữa.
+        - target: 日本に来てからというもの、毎日が新鮮です。
+          translation:
+            vi: Từ khi đến Nhật, ngày nào cũng mới mẻ.
+  - key: ja:item:n1-u9-gram-temae
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / V た / N の + 手前
+      romanization: temae
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Vì đã ... nên (không thể không giữ thể diện, trách nhiệm trước người khác). 約束した手前, 周りの目の手前.
+      examples:
+        - target: みんなの前で約束した手前、やめるわけにはいきません。
+          translation:
+            vi: Vì đã hứa trước mặt mọi người nên tôi không thể bỏ cuộc.
+        - target: 先輩の手前、断れませんでした。
+          translation:
+            vi: Vì nể mặt đàn anh nên tôi không thể từ chối.
+  - key: ja:item:n1-u9-gram-gotoki
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N + ごとき / ごとく / のごとし
+      romanization: N gotoki / gotoku
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Như là, giống như (văn viết, cổ). N ごとき: loại như N (coi thường). ～のごとく: giống như."
+      examples:
+        - target: 私ごときには、そんな大役はできません。
+          translation:
+            vi: Loại như tôi thì không làm nổi vai trò lớn như vậy.
+        - target: 時は矢のごとく過ぎていく。
+          translation:
+            vi: Thời gian trôi nhanh như tên bắn.
+  - key: ja:item:n1-u9-gram-katagata
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: N + かたがた
+      romanization: N katagata
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Nhân tiện ..., kết hợp ... (nhân dịp làm việc này, làm luôn việc kia; trang trọng, thường trong thư). お礼かたがた, 挨拶かたがた.
+      examples:
+        - target: お礼かたがた、ご挨拶に伺いました。
+          translation:
+            vi: Tôi đến chào và nhân tiện cũng để cảm ơn.
+        - target: お見舞いかたがた、退院のお祝いを持っていきます。
+          translation:
+            vi: Nhân dịp thăm bệnh, tôi mang theo quà mừng xuất viện.
+  - key: ja:item:n1-u9-gram-nai-made-mo
+    type: grammar_point
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - grammar
+    front:
+      text: V ない + までも
+      romanization: V-nai made mo
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Dù không ... thì cũng ...; nếu không đến mức ... thì ít nhất ... Vế sau nêu yêu cầu thấp hơn.
+      examples:
+        - target: 毎日とは言わないまでも、週に一度は連絡してください。
+          translation:
+            vi: Dù không nói là mỗi ngày, ít nhất mỗi tuần một lần hãy liên lạc.
+        - target: 完璧とまではいかないまでも、合格点は取れそうです。
+          translation:
+            vi: Dù chưa hoàn hảo, có vẻ tôi sẽ đạt điểm đỗ.
+  - key: ja:item:n1-u9-gaiyou
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 概要
+      reading: がいよう
+      romanization: gaiyou
+      pos: danh từ
+    back:
+      meaning:
+        vi: khái quát, tóm lược
+      examples:
+        - target: 計画の概要を説明します。
+          translation:
+            vi: Tôi sẽ giải thích tóm lược kế hoạch.
+  - key: ja:item:n1-u9-kotsukotsu
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: こつこつ
+      romanization: kotsukotsu
+      pos: phó từ
+    back:
+      meaning:
+        vi: đều đặn, cần mẫn (làm từng chút)
+      examples:
+        - target: こつこつ貯金しています。
+          translation:
+            vi: Tôi đều đặn tiết kiệm từng chút.
+  - key: ja:item:n1-u9-mousou
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 妄想
+      reading: もうそう
+      romanization: mousou
+      pos: danh từ
+    back:
+      meaning:
+        vi: ảo tưởng, tưởng tượng viển vông
+      examples:
+        - target: それは彼の妄想にすぎません。
+          translation:
+            vi: Đó chẳng qua chỉ là ảo tưởng của anh ta.
+  - key: ja:item:n1-u9-fuitchi
+    type: vocab
+    level: n1
+    difficulty: 5
+    skill_tags:
+      - vocabulary
+    front:
+      text: 不一致
+      reading: ふいっち
+      romanization: fuicchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: không khớp, bất đồng
+      examples:
+        - target: 意見の不一致が問題になりました。
+          translation:
+            vi: Sự bất đồng ý kiến đã trở thành vấn đề.
