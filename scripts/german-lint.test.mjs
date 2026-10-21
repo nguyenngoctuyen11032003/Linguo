@@ -738,3 +738,17 @@ test('articles: die See (the sea) next to der See (the lake) is a known homograp
   const warned = r.warnings.filter((w) => w.message.startsWith('article')).map((w) => w.path.match(/items\[(\d+)\]/)[1]);
   assert.deepEqual(warned, ['2']);
 });
+
+test('noun items: ¨ on a doubled vowel (Saal, ¨-e) is an error; the full plural (Säle) is fine', async (t) => {
+  const content = tree(t, {
+    'de/items/a.yaml': items([
+      ['de:item:saal', 'vocab', 'der Saal, ¨-e', null, 'Nomen'],
+      ['de:item:hoersaal', 'vocab', 'der Hörsaal, Hörsäle', null, 'Nomen'],
+      ['de:item:baum', 'vocab', 'der Baum, ¨-e', null, 'Nomen'],
+    ]),
+  });
+  const r = await lint(content);
+  const errs = messages(r.errors);
+  assert.equal(errs.length, 1, errs.join('\n'));
+  assert.match(errs[0], /Saäle.*doubled vowel/);
+});

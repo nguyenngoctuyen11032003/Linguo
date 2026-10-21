@@ -451,6 +451,12 @@ export async function lintGerman({ contentDir, targets = null, label = 'content'
       if (isNounItem(item)) {
         for (const part of nounParts(text)) {
           if (!parseNoun(part)) report(f, 'error', at, `noun item ${q(part)} is malformed: ${NOUN_FORMAT_HELP}`);
+          else {
+            // ¨ on a doubled vowel (Saal → Saäle) is generated wrongly: write the plural in full (Säle).
+            const n = parseNoun(part);
+            const pl = n && n.spec?.startsWith('¨') ? pluralForm(n.lemma, n.spec) : null;
+            if (pl && /[aou][äöü]/.test(pl) && !/[aou][äöü]/.test(n.lemma)) report(f, 'error', at, `plural ${q(pl)} of ${q(part)} puts the umlaut on a doubled vowel; write the plural in full (e.g. "der Saal, Säle")`);
+          }
         }
       } else if (item.type === 'vocab' && VERB_POS.test(item.front.pos ?? '')) {
         const head = text.replace(/\s*\(.*$/, '').split(',')[0].trim();
