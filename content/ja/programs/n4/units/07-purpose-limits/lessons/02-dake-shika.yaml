@@ -1,0 +1,372 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-dake-shika
+order_index: 2
+level: n4
+title:
+  vi: Giới hạn và số lượng - だけ・しか・ばかり・ずつ
+objectives:
+  - vi: Phân biệt だけ (chỉ) và しか～ない (chỉ có, ít ỏi).
+  - vi: Dùng ばかり (toàn, chỉ toàn) và ずつ (mỗi, từng chút).
+  - vi: Nói về lượng bằng 全部, 半分, 残る, 足りる, 余る, ほとんど.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-tame-ni
+items:
+  - item: ja:item:n4-u7-gram-dake
+  - item: ja:item:n4-u7-gram-shika-nai
+  - item: ja:item:n4-u7-gram-bakari
+  - item: ja:item:n4-u7-gram-zutsu
+  - item: ja:item:n4-u7-zenbu
+  - item: ja:item:n4-u7-hanbun
+  - item: ja:item:n4-u7-nokoru
+  - item: ja:item:n4-u7-tariru
+  - item: ja:item:n4-u7-amaru
+  - item: ja:item:n4-u7-hotondo
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn phân biệt được các cách nói giới hạn - 水だけ飲みます / 千円しかありません / ゲームばかりしています / 一人二つずつ.
+  - type: explain
+    text:
+      vi: 'N / V + だけ = "chỉ". Có thể đi với khẳng định: 朝はコーヒーだけ飲みます. N + しか + phủ định = "chỉ có (và không còn gì)": 千円しかありません. しか luôn đi với phủ định, mang sắc thái ít ỏi, thiếu.'
+  - type: explain
+    text:
+      vi: 'N + ばかり = "toàn là, chỉ toàn": この店は高いものばかりです. V て + ばかりいる = "chỉ toàn làm việc đó": 弟はゲームばかりしています (hàm ý phê phán). ずつ = "mỗi (người, lần)": 一人二つずつ; 少しずつ - từng chút một.'
+  - type: explain
+    text:
+      vi: Từ chỉ lượng - 全部 (tất cả), 半分 (một nửa), 残る (còn lại), 足りる (đủ), 余る (thừa), ほとんど (hầu hết / hầu như không + phủ định). Ví dụ 時間が足りません, お金はほとんど残っていません.
+  - type: deep_explain
+    text:
+      vi: "だけ nghe trung tính (chỉ ... mà thôi), しか nghe tiếc nuối (chỉ có ... thôi), ばかり nghe phàn nàn (toàn là ...). So sánh: 魚だけ食べます (chỉ ăn cá, lựa chọn), 魚しか食べません (không ăn gì ngoài cá), 魚ばかり食べます (toàn ăn cá, hơi quá). ずつ không dùng với số lượng không đều."
+  - type: example
+    target: 朝はコーヒーだけ飲みます。
+    target_lang: ja
+    translation:
+      vi: Buổi sáng tôi chỉ uống cà phê.
+    note:
+      vi: だけ - chỉ.
+  - type: example
+    target: 財布に千円しかありません。
+    target_lang: ja
+    translation:
+      vi: Trong ví chỉ có một nghìn yên.
+    note:
+      vi: しか + phủ định.
+  - type: example
+    target: 弟はゲームばかりしています。
+    target_lang: ja
+    translation:
+      vi: Em trai tôi chỉ toàn chơi game.
+    note:
+      vi: N ばかり - toàn.
+  - type: example
+    target: 一人二つずつ取ってください。
+    target_lang: ja
+    translation:
+      vi: Mỗi người hãy lấy hai cái.
+    note:
+      vi: ずつ - mỗi.
+  - type: common_mistake
+    wrong: 今日は一つしか食べました。
+    right: 今日は一つしか食べませんでした。
+    target_lang: ja
+    note:
+      vi: しか luôn đi với phủ định (食べませんでした).
+  - type: common_mistake
+    wrong: 一人に二つずつを取ってください。
+    right: 一人二つずつ取ってください。
+    target_lang: ja
+    note:
+      vi: Với ずつ, không thêm を sau 二つずつ; viết 一人二つずつ取ってください.
+  - type: summary
+    points:
+      - vi: だけ - chỉ (trung tính) · しか～ない - chỉ có (tiếc nuối) · ばかり - toàn (phàn nàn) · ずつ - mỗi.
+      - vi: 全部 tất cả · 半分 một nửa · 残る còn lại · 足りる đủ · 余る thừa · ほとんど hầu hết.
+      - vi: しか luôn đi với phủ định.
+      - vi: 少しずつ - từng chút một.
+exercises:
+  - key: ja:exercise:n4-dake-shika-d1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-shika-nai
+    prompt:
+      stem: Chọn câu đúng - 財布に千円___。
+      stem_lang: vi
+      options:
+        - id: zjf
+          text: しかあります
+          lang: ja
+        - id: k6k
+          text: だけありません
+          lang: ja
+        - id: d9p
+          text: ばかりありません
+          lang: ja
+        - id: axm
+          text: しかありません
+          lang: ja
+    answer:
+      correct_option_id: axm
+    explanation:
+      vi: しか + phủ định (ありません). しかあります thiếu phủ định; だけありません đổi nghĩa thành "không chỉ có"; ばかりありません không tự nhiên.
+    display_answer: しかありません
+  - key: ja:exercise:n4-dake-shika-d2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-bakari
+    prompt:
+      stem: Bạn muốn phàn nàn em trai “toàn chơi game”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: iu3
+          text: 弟はゲームしかしています。
+          lang: ja
+        - id: n7v
+          text: 弟はゲームずつしています。
+          lang: ja
+        - id: x10
+          text: 弟はゲームばかりしています。
+          lang: ja
+        - id: mdp
+          text: 弟はゲームだけしています。
+          lang: ja
+    answer:
+      correct_option_id: x10
+    explanation:
+      vi: ばかり mang sắc thái phàn nàn (toàn). だけ trung tính, しか phải đi với phủ định, ずつ nghĩa là "mỗi".
+    display_answer: 弟はゲームばかりしています。
+  - key: ja:exercise:n4-dake-shika-d3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u7-gram-zutsu
+    prompt:
+      audio_asset_id: null
+      fallback_text: 一人二つずつ取ってください。お菓子は全部で十二個あります。
+      options:
+        - id: jrn
+          text: Mỗi người lấy một cái. Tổng cộng có hai cái.
+          lang: vi
+        - id: xpu
+          text: Mỗi người hãy lấy hai cái. Tổng cộng có mười hai cái bánh.
+          lang: vi
+        - id: jc0
+          text: Hai người lấy một cái. Tổng cộng có mười hai cái.
+          lang: vi
+        - id: lxe
+          text: Mỗi người lấy hai cái. Tổng cộng có hai mươi cái.
+          lang: vi
+    answer:
+      correct_option_id: xpu
+    explanation:
+      vi: 一人二つずつ - mỗi người hai cái; 全部で - tổng cộng; 十二個 - 12 cái.
+    display_answer: Mỗi người hãy lấy hai cái. Tổng cộng có mười hai cái bánh.
+  - key: ja:exercise:n4-dake-shika-d4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-dake
+    prompt:
+      template: 朝はコーヒー{{b1}}飲みます。 (Buổi sáng tôi chỉ uống cà phê.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Từ nghĩa "chỉ".
+        - Bắt đầu bằng だ - だけ.
+    answer:
+      blanks:
+        b1:
+          - だけ
+    known_wrong:
+      - answer: しか
+        feedback_vi: しか phải đi với phủ định (飲みません).
+        error_tag: form
+    explanation:
+      vi: N だけ + động từ khẳng định - chỉ ...
+    display_answer: 朝はコーヒーだけ飲みます。
+  - key: ja:exercise:n4-dake-shika-d5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-tariru
+    prompt:
+      stem: Bạn muốn nói “Thời gian không đủ”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: m0q
+          text: 時間が残りません。
+          lang: ja
+        - id: eyt
+          text: 時間が全部です。
+          lang: ja
+        - id: k6v
+          text: 時間が足りません。
+          lang: ja
+        - id: abw
+          text: 時間が余りません。
+          lang: ja
+    answer:
+      correct_option_id: k6v
+    explanation:
+      vi: 足りません là không đủ. 余りません nghĩa là không thừa, 残りません là không còn lại, 全部です không hợp nghĩa.
+    display_answer: 時間が足りません。
+  - key: ja:exercise:n4-dake-shika-d6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-shika-nai
+    prompt:
+      template: 今日は一つ{{b1}}食べませんでした。 (Hôm nay tôi chỉ ăn có một cái.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - しか
+    known_wrong:
+      - answer: だけ
+        feedback_vi: だけ đi với khẳng định hoặc phủ định đều được, nhưng ở đây ngữ cảnh "chỉ ăn có một cái" dùng しか + phủ định.
+        error_tag: form
+    explanation:
+      vi: N しか + phủ định - chỉ ... thôi.
+    display_answer: 今日は一つしか食べませんでした。
+  - key: ja:exercise:n4-dake-shika-d7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-hanbun
+    prompt:
+      template: ケーキを{{b1}}食べました。残りは明日食べます。 (Tôi ăn một nửa cái bánh. Phần còn lại mai ăn.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 半分
+          - はんぶん
+    known_wrong:
+      - answer: 全部
+        feedback_vi: 全部 là tất cả; câu nói còn phần còn lại nên là 半分.
+        error_tag: quantity
+    explanation:
+      vi: 半分 là một nửa.
+    display_answer: ケーキを半分食べました。残りは明日食べます。
+  - key: ja:exercise:n4-dake-shika-d8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-dake
+    prompt:
+      source_text: Tôi chỉ xem thôi nên không mua.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 見るだけですから、買いません。
+        - 見るだけなので、買いません。
+        - みるだけですから、かいません。
+        - 見るだけですので、買いません。
+        - 見るだけですから買いません。
+    known_wrong:
+      - answer: 見るしかですから、買いません。
+        feedback_vi: しか không đi với です kiểu này; dùng だけ.
+        error_tag: form
+    explanation:
+      vi: 見るだけです - chỉ xem thôi; から - vì; 買いません - không mua.
+    display_answer: 見るだけですから、買いません。
+  - key: ja:exercise:n4-dake-shika-d9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u7-gram-zutsu
+    prompt:
+      source_text: 日本語が少しずつ上手になりました。でも、まだ漢字はほとんど読めません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tiếng Nhật của tôi đã giỏi dần từng chút một. Nhưng tôi vẫn hầu như chưa đọc được chữ Hán.
+        - Tiếng Nhật giỏi lên từng chút một. Nhưng chữ Hán thì vẫn hầu như không đọc được.
+        - Tiếng Nhật của tôi tiến bộ dần. Nhưng chữ Hán tôi vẫn hầu như không đọc được.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tiếng Nhật của tôi giỏi hơn ngay lập tức. Tôi đọc được hết chữ Hán.
+        feedback_vi: 少しずつ là từng chút một; ほとんど + phủ định là hầu như không.
+        error_tag: meaning
+    explanation:
+      vi: 少しずつ - từng chút một; ほとんど + 読めません - hầu như không đọc được.
+    display_answer: Tiếng Nhật của tôi đã giỏi dần từng chút một. Nhưng tôi vẫn hầu như chưa đọc được chữ Hán.
+  - key: ja:exercise:n4-dake-shika-d10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-bakari
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Cửa hàng này toàn đồ đắt."'
+      tokens:
+        - id: t3
+          text: です。
+        - id: t2
+          text: 高いものばかり
+        - id: t1
+          text: この店は
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: N は + 高いものばかり (toàn đồ đắt) + です.
+    display_answer: この店は高いものばかりです。
+  - key: ja:exercise:n4-dake-shika-d11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-nokoru
+    prompt:
+      stem: Bạn muốn nói “Tiền gần như không còn lại”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: ccd
+          text: お金は全部残っています。
+          lang: ja
+        - id: n2k
+          text: お金はほとんど足りています。
+          lang: ja
+        - id: c7s
+          text: お金は半分余りません。
+          lang: ja
+        - id: r35
+          text: お金はほとんど残っていません。
+          lang: ja
+    answer:
+      correct_option_id: r35
+    explanation:
+      vi: ほとんど + 残っていません - hầu như không còn. Các câu khác đổi nghĩa (足りている = đủ, 全部残っています = còn hết).
+    display_answer: お金はほとんど残っていません。

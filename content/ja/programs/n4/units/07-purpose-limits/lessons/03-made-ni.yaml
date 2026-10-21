@@ -1,0 +1,370 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-made-ni
+order_index: 3
+level: n4
+title:
+  vi: Thời hạn và khoảng thời gian - までに・間に
+objectives:
+  - vi: Phân biệt まで (kéo dài đến) và までに (hạn chót).
+  - vi: Dùng ～間に nói việc xảy ra trong một khoảng thời gian.
+  - vi: Dùng 返事, 返す, 迎える, 順番, 並ぶ, 済む trong việc hằng ngày.
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-dake-shika
+items:
+  - item: ja:item:n4-u7-gram-made-ni
+  - item: ja:item:n4-u7-gram-aida-ni
+  - item: ja:item:n4-u7-henji
+  - item: ja:item:n4-u7-kaesu
+  - item: ja:item:n4-u7-mukaeru
+  - item: ja:item:n4-u7-junban
+  - item: ja:item:n4-u7-narabu
+  - item: ja:item:n4-u7-sumu
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói về hạn chót và khoảng thời gian - 明日までにレポートを出してください。 夏休みの間に資格を取りたいです。
+  - type: explain
+    text:
+      vi: 'まで = "cho đến" - hành động kéo dài liên tục cho tới thời điểm đó: 五時まで働きます (làm việc đến 5 giờ). までに = "trước, muộn nhất là" - hành động hoàn tất một lần trước hạn: 五時までに終わります (xong trước 5 giờ).'
+  - type: explain
+    text:
+      vi: '～間に = "trong lúc, trong khoảng" - việc khác xảy ra chen vào khoảng thời gian đó: 私が寝ている間に雨が降りました. Trước 間に là V ている hoặc N の; còn 夏休みの間に (trong kỳ nghỉ hè).'
+  - type: explain
+    text:
+      vi: Từ liên quan - 返事 (hồi âm), 返す (trả lại), 迎える (đón), 順番 (thứ tự), 並ぶ (xếp hàng), 済む (xong). Ví dụ 順番に並んでください, 手続きは済みました.
+  - type: deep_explain
+    text:
+      vi: Mẹo chọn まで hay までに - hỏi "hành động kéo dài suốt khoảng đó hay chỉ cần xong một lần?". 夜十二時まで勉強する (học liên tục đến nửa đêm) và 夜十二時までに寝る (đi ngủ trước nửa đêm). Với 間に, hai việc diễn ra ở hai chủ thể khác nhau là bình thường; còn 間 (không に) nghĩa là hai việc song song suốt khoảng thời gian - 子どもが寝ている間、本を読みます.
+  - type: example
+    target: 明日までにレポートを出してください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy nộp báo cáo trước ngày mai.
+    note:
+      vi: までに - hạn chót.
+  - type: example
+    target: 夜十二時まで勉強しました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã học đến 12 giờ đêm.
+    note:
+      vi: まで - liên tục đến.
+  - type: example
+    target: 夏休みの間に、日本語の資格を取りたいです。
+    target_lang: ja
+    translation:
+      vi: Trong kỳ nghỉ hè tôi muốn lấy chứng chỉ tiếng Nhật.
+    note:
+      vi: N の + 間に.
+  - type: example
+    target: 私が寝ている間に、地震がありました。
+    target_lang: ja
+    translation:
+      vi: Trong lúc tôi ngủ thì có động đất.
+    note:
+      vi: V ている + 間に.
+  - type: common_mistake
+    wrong: 五時までに働きます。(làm việc suốt đến 5 giờ)
+    right: 五時まで働きます。
+    target_lang: ja
+    note:
+      vi: Hành động kéo dài liên tục dùng まで, không dùng までに.
+  - type: common_mistake
+    wrong: 明日まで、メールの返事を出してください。(hạn chót)
+    right: 明日までに、メールの返事を出してください。
+    target_lang: ja
+    note:
+      vi: Hạn chót để hoàn tất một việc dùng までに.
+  - type: summary
+    points:
+      - vi: まで - liên tục đến · までに - trước hạn.
+      - vi: ～間に - trong lúc (V ている / N の).
+      - vi: 返事 · 返す · 迎える · 順番 · 並ぶ · 済む.
+      - vi: 間 (không に) - suốt khoảng đó.
+exercises:
+  - key: ja:exercise:n4-made-ni-m1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-made-ni
+    prompt:
+      stem: Chọn câu đúng - 明日___レポートを出してください。
+      stem_lang: vi
+      options:
+        - id: b6z
+          text: までに
+          lang: ja
+        - id: htq
+          text: まで
+          lang: ja
+        - id: ew4
+          text: ずつ
+          lang: ja
+        - id: zty
+          text: あいだに
+          lang: ja
+    answer:
+      correct_option_id: b6z
+    explanation:
+      vi: Hạn chót để nộp một lần dùng までに. まで là liên tục đến, あいだに là trong khoảng, ずつ là mỗi.
+    display_answer: までに
+  - key: ja:exercise:n4-made-ni-m2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-made-ni
+    prompt:
+      stem: Chọn câu đúng - 夜十二時___勉強しました。
+      stem_lang: vi
+      options:
+        - id: jfw
+          text: までに
+          lang: ja
+        - id: plh
+          text: まで
+          lang: ja
+        - id: rse
+          text: だけ
+          lang: ja
+        - id: q7h
+          text: あいだに
+          lang: ja
+    answer:
+      correct_option_id: plh
+    explanation:
+      vi: Học liên tục đến 12 giờ dùng まで. までに là hạn chót hoàn tất một lần.
+    display_answer: まで
+  - key: ja:exercise:n4-made-ni-m3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u7-gram-aida-ni
+    prompt:
+      audio_asset_id: null
+      fallback_text: 私が寝ている間に、友達が電話をかけました。
+      options:
+        - id: n9e
+          text: Khi tôi tỉnh dậy, bạn tôi đã ngủ.
+          lang: vi
+        - id: v5t
+          text: Trong lúc tôi ngủ, bạn tôi đã gọi điện.
+          lang: vi
+        - id: pse
+          text: Sau khi tôi ngủ, bạn tôi đến nhà.
+          lang: vi
+        - id: cj7
+          text: Trước khi tôi ngủ, bạn tôi gọi điện.
+          lang: vi
+    answer:
+      correct_option_id: v5t
+    explanation:
+      vi: 寝ている間に - trong lúc đang ngủ; 電話をかけました - đã gọi điện.
+    display_answer: Trong lúc tôi ngủ, bạn tôi đã gọi điện.
+  - key: ja:exercise:n4-made-ni-m4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-aida-ni
+    prompt:
+      template: 夏休みの{{b1}}、資格を取りたいです。 (Trong kỳ nghỉ hè tôi muốn lấy chứng chỉ.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Cụm "trong lúc" cần có に.
+        - Bắt đầu bằng 間 - 間に.
+    answer:
+      blanks:
+        b1:
+          - 間に
+          - あいだに
+    known_wrong:
+      - answer: 間
+        feedback_vi: 間 không có に nghĩa là "suốt khoảng đó" - ở đây là việc làm trong khoảng nên cần 間に.
+        error_tag: form
+    explanation:
+      vi: N の + 間に - trong khoảng thời gian.
+    display_answer: 夏休みの間に、資格を取りたいです。
+  - key: ja:exercise:n4-made-ni-m5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-narabu
+    prompt:
+      stem: Mọi người xếp hàng trước cửa hàng. Từ nào nghĩa là “xếp hàng”?
+      stem_lang: vi
+      options:
+        - id: mfm
+          text: 迎える
+          lang: ja
+        - id: ewa
+          text: 済む
+          lang: ja
+        - id: kcn
+          text: 返す
+          lang: ja
+        - id: ox7
+          text: 並ぶ
+          lang: ja
+    answer:
+      correct_option_id: ox7
+    explanation:
+      vi: 並ぶ là xếp hàng. 済む là xong, 返す là trả lại, 迎える là đón.
+    display_answer: 並ぶ
+  - key: ja:exercise:n4-made-ni-m6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-made-ni
+    prompt:
+      template: 五時{{b1}}帰ります。 (Tôi sẽ về trước 5 giờ.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - までに
+    known_wrong:
+      - answer: まで
+        feedback_vi: まで nghĩa là liên tục đến; về nhà là việc xảy ra một lần nên dùng までに.
+        error_tag: form
+    explanation:
+      vi: 五時までに - muộn nhất là 5 giờ.
+    display_answer: 五時までに帰ります。
+  - key: ja:exercise:n4-made-ni-m7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-kaesu
+    prompt:
+      template: 図書館に本を{{b1}}。 (Tôi trả sách cho thư viện.)
+      blanks:
+        - id: b1
+          width_hint: 5
+    answer:
+      blanks:
+        b1:
+          - 返します
+          - かえします
+    known_wrong:
+      - answer: 借ります
+        feedback_vi: 借ります là mượn; trả là 返します.
+        error_tag: verb_choice
+    explanation:
+      vi: 返す là trả lại.
+    display_answer: 図書館に本を返します。
+  - key: ja:exercise:n4-made-ni-m8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-made-ni
+    prompt:
+      source_text: Xin hãy nộp báo cáo trước ngày mai.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 明日までにレポートを出してください。
+        - あしたまでにレポートをだしてください。
+        - 明日までにレポートを提出してください。
+        - 明日までにレポートを出して下さい。
+    known_wrong:
+      - answer: 明日までレポートを出してください。
+        feedback_vi: までに là hạn chót; まで là liên tục đến.
+        error_tag: form
+    explanation:
+      vi: 明日までに - muộn nhất là ngày mai.
+    display_answer: 明日までにレポートを出してください。
+  - key: ja:exercise:n4-made-ni-m9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u7-henji
+    prompt:
+      source_text: 来週までに返事をください。その間に、いろいろ考えます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Xin hãy trả lời cho tôi trước tuần sau. Trong lúc đó, tôi sẽ suy nghĩ nhiều.
+        - Xin hồi âm trước tuần sau. Trong thời gian đó, tôi sẽ cân nhắc nhiều thứ.
+        - Hãy cho tôi câu trả lời trước tuần sau. Trong khoảng thời gian đó tôi sẽ nghĩ thêm.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Xin hãy trả lời cho tôi cho đến tuần sau. Suốt thời gian đó, tôi không suy nghĩ gì.
+        feedback_vi: 来週までに là trước tuần sau (hạn chót).
+        error_tag: form
+    explanation:
+      vi: 来週までに - trước tuần sau; その間に - trong lúc đó.
+    display_answer: Xin hãy trả lời cho tôi trước tuần sau. Trong lúc đó, tôi sẽ suy nghĩ nhiều.
+  - key: ja:exercise:n4-made-ni-m10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-junban
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Xin hãy xếp hàng theo thứ tự."'
+      tokens:
+        - id: t1
+          text: 順番に
+        - id: t3
+          text: ください。
+        - id: t2
+          text: 並んで
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: 順番に - theo thứ tự; 並んでください - xin hãy xếp hàng.
+    display_answer: 順番に並んでください。
+  - key: ja:exercise:n4-made-ni-m11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-mukaeru
+    prompt:
+      stem: Bạn đi đón bạn ở ga. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: log
+          text: 駅まで友達を返しに行きます。
+          lang: ja
+        - id: f6v
+          text: 駅まで友達を並びに行きます。
+          lang: ja
+        - id: wge
+          text: 駅まで友達を済みに行きます。
+          lang: ja
+        - id: mpj
+          text: 駅まで友達を迎えに行きます。
+          lang: ja
+    answer:
+      correct_option_id: mpj
+    explanation:
+      vi: 迎えに行きます - đi đón. 返す là trả lại, 並ぶ là xếp hàng, 済む là xong - không hợp.
+    display_answer: 駅まで友達を迎えに行きます。

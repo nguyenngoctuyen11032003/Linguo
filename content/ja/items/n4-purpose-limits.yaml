@@ -1,0 +1,541 @@
+# Học liệu unit "Mục đích, giới hạn và thời hạn" (JLPT N4). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n4-u7-gram-tame-ni
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / N の + ために
+      romanization: V-jisho / N no tame ni
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Để (làm gì), vì (mục đích). Chủ ngữ của hai vế giống nhau; vế trước là mục đích, vế sau là hành động có chủ ý.
+      examples:
+        - target: 日本へ留学するために、お金を貯めています。
+          translation:
+            vi: Để đi du học Nhật, tôi đang tiết kiệm tiền.
+        - target: 健康のために、毎朝走っています。
+          translation:
+            vi: Vì sức khoẻ, mỗi sáng tôi chạy bộ.
+      confusion:
+        vi: Mục đích có ý chí dùng ために; trạng thái hướng tới (khả năng, không ý chí) dùng ように (học ở N3).
+  - key: ja:item:n4-u7-gram-no-ni
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 + のに + 使います / 必要です / 便利です
+      romanization: V-jisho no ni tsukaimasu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Dùng để làm gì, cần cho việc gì. Sau のに thường là 使う, かかる, 必要だ, 便利だ, 役に立つ.
+      examples:
+        - target: このはさみは紙を切るのに使います。
+          translation:
+            vi: Cái kéo này dùng để cắt giấy.
+        - target: 日本語を勉強するのに、いい辞書が必要です。
+          translation:
+            vi: Để học tiếng Nhật cần một cuốn từ điển tốt.
+      confusion:
+        vi: のに này (mục đích) khác のに nghĩa "mặc dù" ở N3 - đứng trước 使う, 必要だ, 便利だ.
+  - key: ja:item:n4-u7-junbi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 準備
+      reading: じゅんび
+      romanization: junbi
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuẩn bị
+      examples:
+        - target: 旅行の準備をします。
+          translation:
+            vi: Tôi chuẩn bị cho chuyến du lịch.
+  - key: ja:item:n4-u7-chokin
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 貯金
+      reading: ちょきん
+      romanization: chokin
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền tiết kiệm; tiết kiệm
+      examples:
+        - target: 毎月貯金しています。
+          translation:
+            vi: Tháng nào tôi cũng tiết kiệm.
+  - key: ja:item:n4-u7-ryuugaku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 留学
+      reading: りゅうがく
+      romanization: ryuugaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: du học
+      examples:
+        - target: 来年、日本へ留学します。
+          translation:
+            vi: Sang năm tôi đi du học Nhật.
+  - key: ja:item:n4-u7-shikaku
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 資格
+      reading: しかく
+      romanization: shikaku
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng cấp, chứng chỉ, tư cách
+      examples:
+        - target: 日本語の資格を取りたいです。
+          translation:
+            vi: Tôi muốn lấy chứng chỉ tiếng Nhật.
+  - key: ja:item:n4-u7-shourai
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 将来
+      reading: しょうらい
+      romanization: shourai
+      pos: danh từ
+    back:
+      meaning:
+        vi: tương lai
+      examples:
+        - target: 将来は医者になりたいです。
+          translation:
+            vi: Tương lai tôi muốn trở thành bác sĩ.
+  - key: ja:item:n4-u7-yume
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 夢
+      reading: ゆめ
+      romanization: yume
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấc mơ; ước mơ
+      examples:
+        - target: 私の夢は先生になることです。
+          translation:
+            vi: Ước mơ của tôi là trở thành giáo viên.
+  - key: ja:item:n4-u7-mezasu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 目指す
+      reading: めざす
+      romanization: mezasu
+      pos: động từ
+    back:
+      meaning:
+        vi: nhắm tới, hướng tới
+      examples:
+        - target: 合格を目指して勉強しています。
+          translation:
+            vi: Tôi đang học để hướng tới việc đỗ.
+  - key: ja:item:n4-u7-ganbaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 頑張る
+      reading: がんばる
+      romanization: ganbaru
+      pos: động từ
+    back:
+      meaning:
+        vi: cố gắng, nỗ lực
+      examples:
+        - target: 試験まで頑張ります。
+          translation:
+            vi: Tôi sẽ cố gắng cho đến kỳ thi.
+      pronunciation_note:
+        vi: Lời động viên - 頑張ってください / 頑張って.
+  - key: ja:item:n4-u7-gram-dake
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N / V + だけ
+      romanization: N / V dake
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Chỉ, chỉ có. Gắn trực tiếp sau danh từ hay thể thường: 水だけ飲みます (chỉ uống nước); 見るだけです (chỉ xem thôi)."
+      examples:
+        - target: 朝はコーヒーだけ飲みます。
+          translation:
+            vi: Buổi sáng tôi chỉ uống cà phê.
+        - target: 見るだけですから、買いません。
+          translation:
+            vi: Tôi chỉ xem thôi nên không mua.
+      confusion:
+        vi: だけ có thể đứng trước hoặc sau trợ từ に, で, と (私にだけ話しました); với を và が thì bỏ trợ từ.
+  - key: ja:item:n4-u7-gram-shika-nai
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N + しか + V ない
+      romanization: N shika V-nai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Chỉ có... (không còn gì khác); luôn đi với phủ định. Nhấn mạnh sự ít ỏi, thiếu hụt.
+      examples:
+        - target: 財布に千円しかありません。
+          translation:
+            vi: Trong ví chỉ có một nghìn yên.
+        - target: 今日は一つしか食べませんでした。
+          translation:
+            vi: Hôm nay tôi chỉ ăn có một cái.
+      confusion:
+        vi: N だけ có thể đi với khẳng định; N しか luôn đi với phủ định và nghe tiếc nuối hơn.
+  - key: ja:item:n4-u7-gram-bakari
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N ばかり / V て + ばかりいる
+      romanization: N bakari / V-te bakari iru
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Toàn là, chỉ toàn; làm mãi một việc. Mang ý không tốt khi đi với て ばかり: 遊んでばかりいる (chỉ toàn chơi)."
+      examples:
+        - target: 弟はゲームばかりしています。
+          translation:
+            vi: Em trai tôi chỉ toàn chơi game.
+        - target: この店は高いものばかりです。
+          translation:
+            vi: Cửa hàng này toàn đồ đắt.
+      confusion:
+        vi: Cũng có ～たばかり (vừa mới) ở N3. Ở N4 chỉ học N ばかり và ～てばかり.
+  - key: ja:item:n4-u7-gram-zutsu
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: 数量 + ずつ
+      romanization: suuryou zutsu
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Mỗi (người, lần, phần) một lượng như nhau; từng chút một khi đi với 少し (少しずつ).
+      examples:
+        - target: 一人二つずつ取ってください。
+          translation:
+            vi: Mỗi người hãy lấy hai cái.
+        - target: 日本語が少しずつ上手になりました。
+          translation:
+            vi: Tiếng Nhật của tôi đã giỏi dần từng chút một.
+  - key: ja:item:n4-u7-zenbu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 全部
+      reading: ぜんぶ
+      romanization: zenbu
+      pos: danh từ / phó từ
+    back:
+      meaning:
+        vi: tất cả, toàn bộ
+      examples:
+        - target: 宿題は全部終わりました。
+          translation:
+            vi: Bài tập đã xong hết.
+  - key: ja:item:n4-u7-hanbun
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 半分
+      reading: はんぶん
+      romanization: hanbun
+      pos: danh từ
+    back:
+      meaning:
+        vi: một nửa
+      examples:
+        - target: ケーキを半分食べました。
+          translation:
+            vi: Tôi đã ăn một nửa cái bánh.
+  - key: ja:item:n4-u7-nokoru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 残る
+      reading: のこる
+      romanization: nokoru
+      pos: động từ
+    back:
+      meaning:
+        vi: còn lại, sót lại
+      examples:
+        - target: お金はあまり残っていません。
+          translation:
+            vi: Tiền còn lại không nhiều.
+  - key: ja:item:n4-u7-tariru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 足りる
+      reading: たりる
+      romanization: tariru
+      pos: động từ
+    back:
+      meaning:
+        vi: đủ
+      examples:
+        - target: 時間が足りません。
+          translation:
+            vi: Không đủ thời gian.
+  - key: ja:item:n4-u7-amaru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 余る
+      reading: あまる
+      romanization: amaru
+      pos: động từ
+    back:
+      meaning:
+        vi: thừa, dư
+      examples:
+        - target: ご飯が余りました。
+          translation:
+            vi: Cơm đã bị thừa.
+  - key: ja:item:n4-u7-hotondo
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: ほとんど
+      romanization: hotondo
+      pos: phó từ
+    back:
+      meaning:
+        vi: hầu hết; hầu như (không)
+      examples:
+        - target: ほとんど毎日、日本語を勉強します。
+          translation:
+            vi: Tôi học tiếng Nhật hầu như mỗi ngày.
+  - key: ja:item:n4-u7-gram-made-ni
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: 時間 + までに
+      romanization: jikan made ni
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Trước (hạn chót) - hành động hoàn tất trước hoặc đúng thời điểm đó. Khác まで (kéo dài liên tục đến lúc đó).
+      examples:
+        - target: 明日までにレポートを出してください。
+          translation:
+            vi: Xin hãy nộp báo cáo trước ngày mai.
+        - target: 五時までに帰ります。
+          translation:
+            vi: Tôi sẽ về trước 5 giờ.
+      confusion:
+        vi: "まで: hành động kéo dài - 五時まで働きます (làm việc đến 5 giờ). までに: hạn chót - 五時までに終わります (xong trước 5 giờ)."
+  - key: ja:item:n4-u7-gram-aida-ni
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V ている / N の + 間に
+      romanization: V-te iru / N no aida ni
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Trong lúc, trong khoảng thời gian (một việc khác xảy ra chen vào). Khác 間 (suốt khoảng thời gian, hai việc song song).
+      examples:
+        - target: 私が寝ている間に、地震がありました。
+          translation:
+            vi: Trong lúc tôi ngủ thì có động đất.
+        - target: 夏休みの間に、日本語の資格を取りたいです。
+          translation:
+            vi: Trong kỳ nghỉ hè tôi muốn lấy chứng chỉ tiếng Nhật.
+  - key: ja:item:n4-u7-henji
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 返事
+      reading: へんじ
+      romanization: henji
+      pos: danh từ
+    back:
+      meaning:
+        vi: trả lời, hồi âm
+      examples:
+        - target: メールの返事を書きます。
+          translation:
+            vi: Tôi viết thư hồi âm.
+  - key: ja:item:n4-u7-kaesu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 返す
+      reading: かえす
+      romanization: kaesu
+      pos: động từ
+    back:
+      meaning:
+        vi: trả lại
+      examples:
+        - target: 図書館に本を返します。
+          translation:
+            vi: Tôi trả sách cho thư viện.
+  - key: ja:item:n4-u7-mukaeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 迎える
+      reading: むかえる
+      romanization: mukaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: đón, nghênh đón
+      examples:
+        - target: 駅まで友達を迎えに行きます。
+          translation:
+            vi: Tôi đi đón bạn ở ga.
+  - key: ja:item:n4-u7-junban
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 順番
+      reading: じゅんばん
+      romanization: junban
+      pos: danh từ
+    back:
+      meaning:
+        vi: thứ tự, lượt
+      examples:
+        - target: 順番に並んでください。
+          translation:
+            vi: Xin hãy xếp hàng theo thứ tự.
+  - key: ja:item:n4-u7-narabu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 並ぶ
+      reading: ならぶ
+      romanization: narabu
+      pos: động từ
+    back:
+      meaning:
+        vi: xếp hàng, đứng thành hàng
+      examples:
+        - target: 店の前に人が並んでいます。
+          translation:
+            vi: Mọi người xếp hàng trước cửa hàng.
+  - key: ja:item:n4-u7-sumu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 済む
+      reading: すむ
+      romanization: sumu
+      pos: động từ
+    back:
+      meaning:
+        vi: xong, hoàn tất; đủ
+      examples:
+        - target: 手続きはもう済みました。
+          translation:
+            vi: Thủ tục đã xong rồi.

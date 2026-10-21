@@ -1,0 +1,378 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-tame-ni
+order_index: 1
+level: n4
+title:
+  vi: Mục đích - ～ために・～のに
+objectives:
+  - vi: Nói mục đích bằng V辞書形 / N の + ために.
+  - vi: Nói công dụng, nhu cầu bằng V辞書形 + のに + 使います / 必要です.
+  - vi: "Kể về dự định và ước mơ: 留学, 資格, 将来, 夢, 目指す, 頑張る."
+estimated_minutes: 16
+skills:
+  - grammar
+  - vocabulary
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-dareka-demo
+items:
+  - item: ja:item:n4-u7-gram-tame-ni
+  - item: ja:item:n4-u7-gram-no-ni
+  - item: ja:item:n4-u7-junbi
+  - item: ja:item:n4-u7-chokin
+  - item: ja:item:n4-u7-ryuugaku
+  - item: ja:item:n4-u7-shikaku
+  - item: ja:item:n4-u7-shourai
+  - item: ja:item:n4-u7-yume
+  - item: ja:item:n4-u7-mezasu
+  - item: ja:item:n4-u7-ganbaru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được mục đích và ước mơ - 日本へ留学するために、お金を貯めています。 - và công dụng - このはさみは紙を切るのに使います。
+  - type: explain
+    text:
+      vi: 'V辞書形 / N の + ために = "để, vì". Hai vế cùng chủ ngữ và vế sau là hành động có chủ ý: 日本へ行くために、貯金します; 健康のために、運動します. Danh từ cần の trước ために.'
+  - type: explain
+    text:
+      vi: V辞書形 + のに + 使います / 必要です / 便利です / かかります diễn tả "dùng để, cần để". Ví dụ 紙を切るのに使います (dùng để cắt giấy); 日本語を勉強するのに、辞書が必要です.
+  - type: explain
+    text:
+      vi: Từ vựng kể dự định - 準備 (chuẩn bị), 貯金 (tiết kiệm), 留学 (du học), 資格 (chứng chỉ), 将来 (tương lai), 夢 (ước mơ), 目指す (nhắm tới), 頑張る (cố gắng).
+  - type: deep_explain
+    text:
+      vi: Cẩn thận hai cách dùng của のに - のに (mục đích) đi với 使う, 必要, 便利, còn のに (mặc dù, N3) nối hai mệnh đề trái ngược. Với ために, khi vế trước là trạng thái không do chủ ý (khả năng, さむい) thì không dùng. Với thể phủ định mục đích, nói ～ないために (để không...) hoặc ～ないように (N3).
+  - type: example
+    target: 将来、医者になるために、一生懸命勉強しています。
+    target_lang: ja
+    translation:
+      vi: Để tương lai trở thành bác sĩ, tôi đang học hết sức.
+    note:
+      vi: V辞書形 + ために.
+  - type: example
+    target: 健康のために、毎朝走っています。
+    target_lang: ja
+    translation:
+      vi: Vì sức khoẻ, mỗi sáng tôi chạy bộ.
+    note:
+      vi: N の + ために.
+  - type: example
+    target: このはさみは紙を切るのに使います。
+    target_lang: ja
+    translation:
+      vi: Cái kéo này dùng để cắt giấy.
+    note:
+      vi: V + のに + 使います.
+  - type: example
+    target: 留学するのに、お金がたくさん必要です。
+    target_lang: ja
+    translation:
+      vi: Để đi du học cần rất nhiều tiền.
+    note:
+      vi: V + のに + 必要です.
+  - type: common_mistake
+    wrong: 日本語を勉強するために、先生が教えます。
+    right: 日本語を勉強するために、私は学校へ行きます。
+    target_lang: ja
+    note:
+      vi: ために đòi hai vế cùng chủ ngữ (tôi). Câu sai có hai chủ ngữ khác nhau.
+  - type: common_mistake
+    wrong: 健康にために、運動します。
+    right: 健康のために、運動します。
+    target_lang: ja
+    note:
+      vi: Danh từ + の + ために, không dùng に.
+  - type: summary
+    points:
+      - vi: V辞書形 / N の + ために - để, vì (cùng chủ ngữ).
+      - vi: V辞書形 + のに + 使います / 必要です - dùng để, cần để.
+      - vi: 準備 · 貯金 · 留学 · 資格 · 将来 · 夢 · 目指す · 頑張る.
+      - vi: のに (mục đích) ≠ のに (mặc dù).
+exercises:
+  - key: ja:exercise:n4-tame-ni-t1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-tame-ni
+    prompt:
+      stem: Chọn câu đúng - 日本へ留学する___、貯金しています。
+      stem_lang: vi
+      options:
+        - id: eap
+          text: ことために
+          lang: ja
+        - id: ynv
+          text: ために
+          lang: ja
+        - id: xwg
+          text: ようために
+          lang: ja
+        - id: xfv
+          text: のために
+          lang: ja
+    answer:
+      correct_option_id: ynv
+    explanation:
+      vi: V辞書形 + ために. Với danh từ mới thêm の. のために, ことために, ようために đều không đúng ở vị trí này.
+    display_answer: ために
+  - key: ja:exercise:n4-tame-ni-t2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-no-ni
+    prompt:
+      stem: Chọn câu đúng - このはさみは紙を切る___使います。
+      stem_lang: vi
+      options:
+        - id: zpj
+          text: ために
+          lang: ja
+        - id: v8k
+          text: ことに
+          lang: ja
+        - id: z74
+          text: のに
+          lang: ja
+        - id: fb0
+          text: ように
+          lang: ja
+    answer:
+      correct_option_id: z74
+    explanation:
+      vi: V辞書形 + のに + 使います - dùng để. ために thiên về mục đích hành động chính, không đi với 使います trong nghĩa công dụng này.
+    display_answer: のに
+  - key: ja:exercise:n4-tame-ni-t3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u7-ryuugaku
+    prompt:
+      audio_asset_id: null
+      fallback_text: 来年、日本へ留学します。そのために、毎月貯金しています。
+      options:
+        - id: q63
+          text: Sang năm tôi đi du lịch Nhật. Vì thế tháng nào tôi cũng đi chơi.
+          lang: vi
+        - id: gxo
+          text: Sang năm tôi làm việc ở Nhật. Vì thế tôi mua vé.
+          lang: vi
+        - id: m11
+          text: Sang năm tôi đi du học Nhật. Vì thế tháng nào tôi cũng tiết kiệm.
+          lang: vi
+        - id: uzp
+          text: Năm ngoái tôi đã du học. Vì thế bây giờ tôi tiết kiệm.
+          lang: vi
+    answer:
+      correct_option_id: m11
+    explanation:
+      vi: 留学 - du học; そのために - vì mục đích đó; 貯金している - đang tiết kiệm.
+    display_answer: Sang năm tôi đi du học Nhật. Vì thế tháng nào tôi cũng tiết kiệm.
+  - key: ja:exercise:n4-tame-ni-t4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-gram-tame-ni
+    prompt:
+      template: 健康{{b1}}、毎朝走っています。 (Vì sức khoẻ, mỗi sáng tôi chạy bộ.)
+      blanks:
+        - id: b1
+          width_hint: 5
+      hint_levels:
+        - Danh từ + の + cụm nghĩa "vì".
+        - Bắt đầu bằng の - のために.
+    answer:
+      blanks:
+        b1:
+          - のために
+    known_wrong:
+      - answer: ために
+        feedback_vi: "Danh từ cần の trước ために: 健康のために."
+        error_tag: form
+    explanation:
+      vi: N + の + ために.
+    display_answer: 健康のために、毎朝走っています。
+  - key: ja:exercise:n4-tame-ni-t5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u7-shikaku
+    prompt:
+      stem: Bạn muốn lấy chứng chỉ tiếng Nhật. Từ nào nghĩa là “chứng chỉ, bằng cấp”?
+      stem_lang: vi
+      options:
+        - id: noa
+          text: 資格
+          lang: ja
+        - id: mef
+          text: 返事
+          lang: ja
+        - id: eyr
+          text: 順番
+          lang: ja
+        - id: j0l
+          text: 準備
+          lang: ja
+    answer:
+      correct_option_id: noa
+    explanation:
+      vi: 資格 là chứng chỉ, bằng cấp. 準備 là chuẩn bị, 返事 là hồi âm, 順番 là thứ tự.
+    display_answer: 資格
+  - key: ja:exercise:n4-tame-ni-t6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-no-ni
+    prompt:
+      template: この辞書は漢字を調べる{{b1}}便利です。 (Từ điển này tiện để tra chữ Hán.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - のに
+    known_wrong:
+      - answer: ために
+        feedback_vi: Câu nói công dụng (便利です) đi với のに.
+        error_tag: form
+    explanation:
+      vi: V + のに + 便利です - tiện cho việc...
+    display_answer: この辞書は漢字を調べるのに便利です。
+  - key: ja:exercise:n4-tame-ni-t7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-yume
+    prompt:
+      template: 私の{{b1}}は先生になることです。 (Ước mơ của tôi là trở thành giáo viên.)
+      blanks:
+        - id: b1
+          width_hint: 2
+    answer:
+      blanks:
+        b1:
+          - 夢
+          - ゆめ
+    known_wrong:
+      - answer: 将来
+        feedback_vi: 将来 là tương lai; "ước mơ" là 夢.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 夢 là ước mơ.
+    display_answer: 私の夢は先生になることです。
+  - key: ja:exercise:n4-tame-ni-t8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-tame-ni
+    prompt:
+      source_text: Để đi du học Nhật, tôi đang tiết kiệm tiền.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 日本へ留学するために、貯金しています。
+        - 日本へ留学するために、お金を貯めています。
+        - にほんへりゅうがくするために、ちょきんしています。
+        - 日本に留学するために貯金しています。
+        - 日本へ留学するために、お金を貯金しています。
+    known_wrong:
+      - answer: 日本へ留学するのに、貯金しています。
+        feedback_vi: のに đi với 使う, 必要...; mục đích hành động dùng ために.
+        error_tag: form
+      - answer: 日本へ留学するだめに、貯金しています。
+        feedback_vi: Chữ đúng là ために.
+        error_tag: spelling
+    explanation:
+      vi: "V辞書形 + ために: để ...; 貯金しています - đang tiết kiệm."
+    display_answer: 日本へ留学するために、貯金しています。
+  - key: ja:exercise:n4-tame-ni-t9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u7-gram-no-ni
+    prompt:
+      source_text: このはさみは紙を切るのに使います。でも、布を切るのには使いません。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cái kéo này dùng để cắt giấy. Nhưng không dùng để cắt vải.
+        - Kéo này dùng để cắt giấy, nhưng không dùng cắt vải.
+        - Cái kéo này dùng cắt giấy. Còn cắt vải thì không dùng.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Cái kéo này dùng để cắt vải. Nhưng không dùng để cắt giấy.
+        feedback_vi: 紙 là giấy, 布 là vải.
+        error_tag: vocab_meaning
+    explanation:
+      vi: のに使います - dùng để...; のには使いません - không dùng để... (は nhấn mạnh phủ định).
+    display_answer: Cái kéo này dùng để cắt giấy. Nhưng không dùng để cắt vải.
+  - key: ja:exercise:n4-tame-ni-t10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-gram-tame-ni
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Để trở thành bác sĩ, tôi học hết sức."'
+      tokens:
+        - id: t3
+          text: 一生懸命
+        - id: t1
+          text: 医者に
+        - id: t2
+          text: なるために、
+        - id: t4
+          text: 勉強しています。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: V辞書形 + ために ở vế đầu, rồi hành động chính ở vế sau.
+    display_answer: 医者になるために、一生懸命勉強しています。
+  - key: ja:exercise:n4-tame-ni-t11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-ganbaru
+    prompt:
+      stem: Bạn muốn động viên bạn trước kỳ thi. Câu nào tự nhiên?
+      stem_lang: vi
+      options:
+        - id: po3
+          text: 頑張っているください。
+          lang: ja
+        - id: xlz
+          text: 頑張りますです。
+          lang: ja
+        - id: wmb
+          text: 頑張るにください。
+          lang: ja
+        - id: esh
+          text: 頑張ってください。
+          lang: ja
+    answer:
+      correct_option_id: esh
+    explanation:
+      vi: 頑張ってください - hãy cố gắng lên. Các dạng còn lại sai ngữ pháp.
+    display_answer: 頑張ってください。
