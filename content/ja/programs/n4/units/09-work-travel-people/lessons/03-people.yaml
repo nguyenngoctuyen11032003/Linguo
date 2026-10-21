@@ -1,0 +1,373 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-relationships
+order_index: 3
+level: n4
+title:
+  vi: Quan hệ con người - 付き合う・謝る・祝う
+objectives:
+  - vi: "Nói về bạn bè và quan hệ: 親友, 恋人, 付き合う, 喧嘩, 謝る, 許す."
+  - vi: "Nói về quà và lời cảm ơn: 祝う, 贈る, 感謝, お世話になる."
+  - vi: Giới thiệu người, địa điểm chưa quen bằng N1 という N2.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - grammar
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-train-travel
+items:
+  - item: ja:item:n4-u9-gram-to-iu
+  - item: ja:item:n4-u9-tsukiau
+  - item: ja:item:n4-u9-kenka
+  - item: ja:item:n4-u9-ayamaru
+  - item: ja:item:n4-u9-yurusu
+  - item: ja:item:n4-u9-shinyuu
+  - item: ja:item:n4-u9-koibito
+  - item: ja:item:n4-u9-iwau
+  - item: ja:item:n4-u9-okuru
+  - item: ja:item:n4-u9-kansha
+  - item: ja:item:n4-u9-sewa
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn kể về quan hệ giữa người với người - 友達と喧嘩して、謝りました。 - và giới thiệu - 田中さんという人を知っていますか。
+  - type: explain
+    text:
+      vi: Quan hệ - 親友 (bạn thân), 恋人 (người yêu), 付き合う (hẹn hò; qua lại). Mâu thuẫn - 喧嘩 (cãi nhau), 謝る (xin lỗi), 許す (tha thứ). Hành động tặng và chúc - 祝う (chúc mừng), 贈る (tặng), 感謝 (biết ơn), お世話になる (được giúp đỡ).
+  - type: explain
+    text:
+      vi: 'N1 という N2 = "N2 có tên là N1": 田中さんという人 (người tên Tanaka). Dùng khi người nghe chưa biết N1. Cũng dùng giải thích ý nghĩa - 「ありがとう」は thank you という意味です.'
+  - type: explain
+    text:
+      vi: Câu cảm ơn quen thuộc - いつもお世話になっております (Cảm ơn bạn luôn giúp đỡ). Khi xin lỗi - すみませんでした, 申し訳ありません; ayamaru dùng là 謝る (先生に謝りました).
+  - type: deep_explain
+    text:
+      vi: 'おくる có hai cách viết - 贈る (tặng quà, giải thưởng) và 送る (gửi thư, hàng; tiễn người). Hai chữ cùng cách đọc nên dựa vào đối tượng: 花を贈る, 荷物を送る. 付き合う là hẹn hò khi chủ ngữ là hai người yêu nhau; nghĩa "đi cùng" xuất hiện trong 食事に付き合う (đi ăn cùng). Chữ Hán - 付き合う, 喧嘩, 謝る, 許す, 親友, 恋人, 祝う, 贈る, 感謝, 世話.'
+  - type: example
+    target: 田中さんという人を知っていますか。
+    target_lang: ja
+    translation:
+      vi: Bạn có biết người tên là Tanaka không?
+    note:
+      vi: N という N.
+  - type: example
+    target: 友達と喧嘩しましたが、謝って仲直りしました。
+    target_lang: ja
+    translation:
+      vi: Tôi cãi nhau với bạn nhưng đã xin lỗi và làm hoà.
+    note:
+      vi: 喧嘩 - cãi nhau; 謝って - xin lỗi.
+  - type: example
+    target: みんなで誕生日を祝いました。
+    target_lang: ja
+    translation:
+      vi: Mọi người cùng chúc mừng sinh nhật.
+    note:
+      vi: 祝う - chúc mừng, ăn mừng.
+  - type: example
+    target: 母に花を贈りました。いつも感謝しています。
+    target_lang: ja
+    translation:
+      vi: Tôi tặng hoa cho mẹ. Tôi luôn biết ơn mẹ.
+    note:
+      vi: 贈る - tặng; 感謝 - biết ơn.
+  - type: common_mistake
+    wrong: 友達に花を送りました。(tặng quà sinh nhật)
+    right: 友達に花を贈りました。
+    target_lang: ja
+    note:
+      vi: Tặng quà dùng 贈る; 送る là gửi bưu phẩm.
+  - type: common_mistake
+    wrong: 田中さんは人を知っていますか。
+    right: 田中さんという人を知っていますか。
+    target_lang: ja
+    note:
+      vi: "Giới thiệu tên người dùng という: 田中さんという人."
+  - type: summary
+    points:
+      - vi: 親友 bạn thân · 恋人 người yêu · 付き合う hẹn hò · 喧嘩 cãi nhau · 謝る xin lỗi · 許す tha thứ.
+      - vi: 祝う chúc mừng · 贈る tặng · 感謝 biết ơn · お世話になる được giúp.
+      - vi: N1 という N2 - N2 tên là N1.
+      - vi: 贈る (tặng) ≠ 送る (gửi).
+exercises:
+  - key: ja:exercise:n4-relationships-p1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-gram-to-iu
+    prompt:
+      stem: Bạn muốn hỏi “Bạn có biết người tên là Tanaka không?”. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: c7g
+          text: 田中さんと人を知っていますか。
+          lang: ja
+        - id: o0k
+          text: 田中さんという人を知っていますか。
+          lang: ja
+        - id: pbd
+          text: 田中さんの人を知っていますか。
+          lang: ja
+        - id: u2g
+          text: 田中さんが人を知っていますか。
+          lang: ja
+    answer:
+      correct_option_id: o0k
+    explanation:
+      vi: N という N - gọi tên. と, の, が không tạo nghĩa "người tên là".
+    display_answer: 田中さんという人を知っていますか。
+  - key: ja:exercise:n4-relationships-p2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-ayamaru
+    prompt:
+      stem: Từ nào có nghĩa là “xin lỗi”?
+      stem_lang: vi
+      options:
+        - id: wub
+          text: 贈る
+          lang: ja
+        - id: qeg
+          text: 祝う
+          lang: ja
+        - id: qax
+          text: 許す
+          lang: ja
+        - id: w7j
+          text: 謝る
+          lang: ja
+    answer:
+      correct_option_id: w7j
+    explanation:
+      vi: 謝る là xin lỗi. 許す là tha thứ, 祝う là chúc mừng, 贈る là tặng.
+    display_answer: 謝る
+  - key: ja:exercise:n4-relationships-p3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u9-kenka
+    prompt:
+      audio_asset_id: null
+      fallback_text: 友達と喧嘩しましたが、謝って仲直りしました。
+      options:
+        - id: mub
+          text: Tôi cãi nhau với bạn và vẫn chưa làm hoà.
+          lang: vi
+        - id: dbq
+          text: Tôi chơi với bạn rồi cùng đi nhà hàng.
+          lang: vi
+        - id: wnu
+          text: Bạn xin lỗi tôi vì cãi nhau.
+          lang: vi
+        - id: h5u
+          text: Tôi cãi nhau với bạn nhưng đã xin lỗi và làm hoà.
+          lang: vi
+    answer:
+      correct_option_id: h5u
+    explanation:
+      vi: 喧嘩しました - đã cãi nhau; 謝って - xin lỗi; 仲直りしました - đã làm hoà.
+    display_answer: Tôi cãi nhau với bạn nhưng đã xin lỗi và làm hoà.
+  - key: ja:exercise:n4-relationships-p4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-iwau
+    prompt:
+      template: みんなで誕生日を{{b1}}。 (Mọi người cùng chúc mừng sinh nhật.)
+      blanks:
+        - id: b1
+          width_hint: 6
+      hint_levels:
+        - Động từ nghĩa "chúc mừng".
+        - Bắt đầu bằng 祝.
+    answer:
+      blanks:
+        b1:
+          - 祝いました
+          - いわいました
+    known_wrong:
+      - answer: 贈りました
+        feedback_vi: 贈ります là tặng quà; chúc mừng là 祝います.
+        error_tag: verb_choice
+    explanation:
+      vi: 祝う là chúc mừng, ăn mừng.
+    display_answer: みんなで誕生日を祝いました。
+  - key: ja:exercise:n4-relationships-p5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-okuru
+    prompt:
+      stem: Bạn tặng hoa cho mẹ. Động từ nào hợp?
+      stem_lang: vi
+      options:
+        - id: jv4
+          text: 付き合う
+          lang: ja
+        - id: w39
+          text: 送る
+          lang: ja
+        - id: t96
+          text: 贈る
+          lang: ja
+        - id: xxc
+          text: 許す
+          lang: ja
+    answer:
+      correct_option_id: t96
+    explanation:
+      vi: Tặng quà dùng 贈る. 送る là gửi (bưu phẩm), 許す là tha thứ, 付き合う là hẹn hò.
+    display_answer: 贈る
+  - key: ja:exercise:n4-relationships-p6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-shinyuu
+    prompt:
+      template: 田中さんは私の{{b1}}です。 (Anh Tanaka là bạn thân của tôi.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 親友
+          - しんゆう
+    known_wrong:
+      - answer: 恋人
+        feedback_vi: 恋人 là người yêu; bạn thân là 親友.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 親友 là bạn thân.
+    display_answer: 田中さんは私の親友です。
+  - key: ja:exercise:n4-relationships-p7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-gram-to-iu
+    prompt:
+      template: 「ありがとう」は thank you{{b1}}意味です。 ("ありがとう" nghĩa là thank you.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - という
+    known_wrong:
+      - answer: と
+        feedback_vi: Cần という để nối với 意味.
+        error_tag: form
+    explanation:
+      vi: N という意味 - có nghĩa là N.
+    display_answer: 「ありがとう」は thank youという意味です。
+  - key: ja:exercise:n4-relationships-p8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-gram-to-iu
+    prompt:
+      source_text: Bạn có biết người tên là Tanaka không?
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 田中さんという人を知っていますか。
+        - たなかさんというひとをしっていますか。
+        - 田中という人を知っていますか。
+        - 田中さんという人、知っていますか。
+    known_wrong:
+      - answer: 田中さんの人を知っていますか。
+        feedback_vi: Giới thiệu tên người dùng という.
+        error_tag: form
+    explanation:
+      vi: N という N - N2 tên là N1.
+    display_answer: 田中さんという人を知っていますか。
+  - key: ja:exercise:n4-relationships-p9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u9-kansha
+    prompt:
+      source_text: 先生にはいつもお世話になっています。心から感謝しています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi luôn được thầy giúp đỡ. Tôi biết ơn thầy từ đáy lòng.
+        - Thầy luôn giúp đỡ tôi. Tôi vô cùng biết ơn thầy.
+        - Tôi luôn nhận được sự giúp đỡ của thầy. Tôi chân thành biết ơn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi luôn giúp đỡ thầy. Tôi biết ơn thầy.
+        feedback_vi: お世話になる là "được giúp đỡ", người nói là người nhận.
+        error_tag: meaning
+    explanation:
+      vi: お世話になっています - được giúp đỡ; 感謝 - biết ơn; 心から - từ đáy lòng.
+    display_answer: Tôi luôn được thầy giúp đỡ. Tôi biết ơn thầy từ đáy lòng.
+  - key: ja:exercise:n4-relationships-p10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-kenka
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi cãi nhau với bạn nhưng đã xin lỗi."'
+      tokens:
+        - id: t1
+          text: 友達と
+        - id: t3
+          text: 謝りました。
+        - id: t2
+          text: 喧嘩しましたが、
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Với ai (友達と) → 喧嘩しましたが (nhưng) → 謝りました.
+    display_answer: 友達と喧嘩しましたが、謝りました。
+  - key: ja:exercise:n4-relationships-p11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-sewa
+    prompt:
+      stem: Cách chào lịch sự khi liên hệ công việc là gì?
+      stem_lang: vi
+      options:
+        - id: o0j
+          text: いつもお世話になっております。
+          lang: ja
+        - id: rxr
+          text: いつもお世話を下さい。
+          lang: ja
+        - id: nkn
+          text: いつもお世話しております。
+          lang: ja
+        - id: mmc
+          text: いつもお世話になりません。
+          lang: ja
+    answer:
+      correct_option_id: o0j
+    explanation:
+      vi: いつもお世話になっております là câu chào chuẩn trong thư và điện thoại công việc. Các dạng khác sai nghĩa hoặc ngữ pháp.
+    display_answer: いつもお世話になっております。

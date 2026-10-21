@@ -1,0 +1,382 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-train-travel
+order_index: 2
+level: n4
+title:
+  vi: Đi tàu và đi lại - 乗り換え・急行・往復
+objectives:
+  - vi: "Dùng từ vựng đi tàu: 乗り換える, 急行, 特急, 運賃, 改札, 発車, 出口, 入口."
+  - vi: "Nói vé và chỗ ngồi: 片道, 往復, 空席, 満席."
+  - vi: Nói việc thỉnh thoảng xảy ra bằng V辞書形 + ことがあります.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - grammar
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-work
+items:
+  - item: ja:item:n4-u9-norikaeru
+  - item: ja:item:n4-u9-kyuukou
+  - item: ja:item:n4-u9-tokkyuu
+  - item: ja:item:n4-u9-unchin
+  - item: ja:item:n4-u9-kaisatsu
+  - item: ja:item:n4-u9-hassha
+  - item: ja:item:n4-u9-kuuseki
+  - item: ja:item:n4-u9-manseki
+  - item: ja:item:n4-u9-katamichi
+  - item: ja:item:n4-u9-oufuku
+  - item: ja:item:n4-u9-deguchi
+  - item: ja:item:n4-u9-iriguchi
+  - item: ja:item:n4-u9-gram-koto-ga-aru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mua vé và đi tàu ở Nhật - 往復の切符を二枚お願いします。新宿で乗り換えます。 - và nói thói quen - 朝ご飯を食べないことがあります。
+  - type: explain
+    text:
+      vi: Tàu - 急行 (tàu nhanh), 特急 (tàu tốc hành đặc biệt, nhanh hơn 急行), 乗り換える (đổi tàu), 発車 (xuất bến), 改札 (cổng soát vé), 出口 / 入口 (lối ra / lối vào), 運賃 (giá vé).
+  - type: explain
+    text:
+      vi: Vé và chỗ - 片道 (một chiều), 往復 (khứ hồi), 空席 (ghế trống), 満席 (hết chỗ). Ví dụ 往復の切符を二枚お願いします; その電車は満席でした.
+  - type: explain
+    text:
+      vi: V辞書形 / V ない + ことがある = "thỉnh thoảng có khi..." - 休みの日は、一日中寝ていることがあります. Khác V た + ことがある (đã từng làm) bạn đã học ở bài trước.
+  - type: deep_explain
+    text:
+      vi: "Ở Nhật, giá vé phụ thuộc quãng đường và loại tàu: 特急 và 新幹線 đắt hơn vì phải trả thêm 特急料金 (phụ phí tốc hành). Thẻ IC (Suica, Pasmo) dùng chạm ở 改札 nên bạn không phải mua vé từng chặng. Câu hỏi hay gặp - 乗り換えはありますか (Có phải đổi tàu không?)."
+  - type: example
+    target: 新宿で電車を乗り換えて、渋谷へ行きます。
+    target_lang: ja
+    translation:
+      vi: Tôi đổi tàu ở Shinjuku rồi đi Shibuya.
+    note:
+      vi: 乗り換えて - đổi tàu rồi.
+  - type: example
+    target: 往復の切符を二枚お願いします。
+    target_lang: ja
+    translation:
+      vi: Cho tôi hai vé khứ hồi.
+    note:
+      vi: 往復 - khứ hồi.
+  - type: example
+    target: その電車は満席で、乗れませんでした。
+    target_lang: ja
+    translation:
+      vi: Chuyến tàu đó hết chỗ nên tôi không lên được.
+    note:
+      vi: 満席 - hết chỗ.
+  - type: example
+    target: 朝ご飯を食べないことがあります。
+    target_lang: ja
+    translation:
+      vi: Có khi tôi không ăn sáng.
+    note:
+      vi: V ない + ことがある.
+  - type: common_mistake
+    wrong: 急行は特急より速いです。
+    right: 特急は急行より速いです。
+    target_lang: ja
+    note:
+      vi: 特急 (tốc hành đặc biệt) nhanh hơn 急行 (tàu nhanh).
+  - type: common_mistake
+    wrong: 一年に一回ことがあります。(thỉnh thoảng)
+    right: 一年に一回、行くことがあります。
+    target_lang: ja
+    note:
+      vi: ことがある cần động từ trước nó (行く).
+  - type: summary
+    points:
+      - vi: 急行 · 特急 · 乗り換える · 発車 · 改札 · 出口 · 入口 · 運賃.
+      - vi: 片道 một chiều · 往復 khứ hồi · 空席 chỗ trống · 満席 hết chỗ.
+      - vi: V辞書形 / V ない + ことがある - thỉnh thoảng có khi.
+      - vi: V た + ことがある - đã từng.
+exercises:
+  - key: ja:exercise:n4-train-travel-r1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-oufuku
+    prompt:
+      stem: Từ nào có nghĩa là “khứ hồi”?
+      stem_lang: vi
+      options:
+        - id: bw4
+          text: 満席
+          lang: ja
+        - id: a7w
+          text: 運賃
+          lang: ja
+        - id: mdb
+          text: 片道
+          lang: ja
+        - id: dsc
+          text: 往復
+          lang: ja
+    answer:
+      correct_option_id: dsc
+    explanation:
+      vi: 往復 là khứ hồi (đi và về). 片道 là một chiều, 満席 là hết chỗ, 運賃 là giá vé.
+    display_answer: 往復
+  - key: ja:exercise:n4-train-travel-r2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-gram-koto-ga-aru
+    prompt:
+      stem: Chọn câu đúng - 休みの日は、一日中寝ている___。
+      stem_lang: vi
+      options:
+        - id: qf2
+          text: ことがあります
+          lang: ja
+        - id: w6l
+          text: ことにあります
+          lang: ja
+        - id: kq1
+          text: ことをあります
+          lang: ja
+        - id: v0k
+          text: ことがありました
+          lang: ja
+    answer:
+      correct_option_id: qf2
+    explanation:
+      vi: V ている + ことがある - thỉnh thoảng. ことがありました thiên về quá khứ; を, に không dùng.
+    display_answer: ことがあります
+  - key: ja:exercise:n4-train-travel-r3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u9-norikaeru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 新宿で電車を乗り換えて、渋谷へ行きます。
+      options:
+        - id: g3j
+          text: Tôi đổi tàu ở Shinjuku rồi đi Shibuya.
+          lang: vi
+        - id: ajm
+          text: Tôi đi thẳng đến Shibuya không đổi tàu.
+          lang: vi
+        - id: sic
+          text: Tôi đổi xe buýt ở Shinjuku rồi đi Shibuya.
+          lang: vi
+        - id: e9x
+          text: Tôi xuống tàu ở Shibuya rồi đi Shinjuku.
+          lang: vi
+    answer:
+      correct_option_id: g3j
+    explanation:
+      vi: 乗り換えて - đổi tàu; 渋谷へ行きます - đi Shibuya.
+    display_answer: Tôi đổi tàu ở Shinjuku rồi đi Shibuya.
+  - key: ja:exercise:n4-train-travel-r4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-katamichi
+    prompt:
+      template: "{{b1}}三千円です。往復は五千円です。 (Một chiều 3.000 yên. Khứ hồi 5.000 yên.)"
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Từ nghĩa "một chiều".
+        - Bắt đầu bằng 片.
+    answer:
+      blanks:
+        b1:
+          - 片道
+          - かたみち
+    known_wrong:
+      - answer: 往復
+        feedback_vi: 往復 là khứ hồi; câu sau đã nói 往復 nên chỗ trống là 片道.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 片道 là một chiều.
+    display_answer: 片道三千円です。往復は五千円です。
+  - key: ja:exercise:n4-train-travel-r5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-tokkyuu
+    prompt:
+      stem: Loại tàu nào nhanh nhất?
+      stem_lang: vi
+      options:
+        - id: b5q
+          text: 特急
+          lang: ja
+        - id: hpt
+          text: 急行
+          lang: ja
+        - id: z2p
+          text: バス
+          lang: ja
+        - id: o1y
+          text: 各駅停車
+          lang: ja
+    answer:
+      correct_option_id: b5q
+    explanation:
+      vi: 特急 là tốc hành đặc biệt, ít dừng nhất. 急行 dừng nhiều hơn một chút, 各駅停車 dừng mọi ga.
+    display_answer: 特急
+  - key: ja:exercise:n4-train-travel-r6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-manseki
+    prompt:
+      template: その電車は{{b1}}で、乗れませんでした。 (Chuyến tàu đó hết chỗ nên tôi không lên được.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 満席
+          - まんせき
+    known_wrong:
+      - answer: 空席
+        feedback_vi: 空席 là còn chỗ trống, nghĩa ngược lại.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 満席 là hết chỗ.
+    display_answer: その電車は満席で、乗れませんでした。
+  - key: ja:exercise:n4-train-travel-r7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-deguchi
+    prompt:
+      template: "{{b1}}はどこですか。 (Lối ra ở đâu?)"
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 出口
+          - でぐち
+    known_wrong:
+      - answer: 入口
+        feedback_vi: 入口 là lối vào; hỏi lối ra dùng 出口.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 出口 - lối ra.
+    display_answer: 出口はどこですか。
+  - key: ja:exercise:n4-train-travel-r8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-gram-koto-ga-aru
+    prompt:
+      source_text: Có khi tôi không ăn sáng.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 朝ご飯を食べないことがあります。
+        - あさごはんをたべないことがあります。
+        - 朝ごはんを食べないことがあります。
+        - 朝食を食べないことがあります。
+    known_wrong:
+      - answer: 朝ご飯を食べないことがありました。
+        feedback_vi: Câu nói thói quen hiện tại nên dùng あります.
+        error_tag: tense
+      - answer: 朝ご飯を食べたことがあります。
+        feedback_vi: 食べたことがある là "đã từng ăn", không phải "thỉnh thoảng không ăn".
+        error_tag: form
+    explanation:
+      vi: V ない + ことがあります - có khi không ...
+    display_answer: 朝ご飯を食べないことがあります。
+  - key: ja:exercise:n4-train-travel-r9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u9-norikaeru
+    prompt:
+      source_text: 大阪まで特急で行きます。往復の切符を買って、新宿で電車を乗り換えます。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tôi đi Osaka bằng tàu tốc hành. Tôi mua vé khứ hồi rồi đổi tàu ở Shinjuku.
+        - Tôi đi đến Osaka bằng tàu tốc hành, mua vé khứ hồi và đổi tàu ở Shinjuku.
+        - Tôi đến Osaka bằng tàu tốc hành. Mua vé khứ hồi, rồi đổi tàu ở Shinjuku.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tôi đi Osaka bằng xe buýt. Tôi mua vé một chiều rồi đổi tàu ở Shinjuku.
+        feedback_vi: 特急 là tàu tốc hành; 往復 là khứ hồi.
+        error_tag: meaning
+    explanation:
+      vi: 特急 - tàu tốc hành; 往復 - khứ hồi; 乗り換える - đổi tàu.
+    display_answer: Tôi đi Osaka bằng tàu tốc hành. Tôi mua vé khứ hồi rồi đổi tàu ở Shinjuku.
+  - key: ja:exercise:n4-train-travel-r10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-gram-koto-ga-aru
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Ngày nghỉ có khi tôi ngủ cả ngày."'
+      tokens:
+        - id: t1
+          text: 休みの日は、
+        - id: t2
+          text: 一日中
+        - id: t4
+          text: あります。
+        - id: t3
+          text: 寝ていることが
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+          - t4
+    explanation:
+      vi: Thời điểm → 一日中 (cả ngày) → V ている + ことが → あります.
+    display_answer: 休みの日は、一日中寝ていることがあります。
+  - key: ja:exercise:n4-train-travel-r11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-kuuseki
+    prompt:
+      stem: Bạn hỏi nhân viên còn ghế trống không. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: ubq
+          text: 片道はありますか。
+          lang: ja
+        - id: sek
+          text: 空席はありますか。
+          lang: ja
+        - id: m7r
+          text: 運賃はありますか。
+          lang: ja
+        - id: gyc
+          text: 満席はありますか。
+          lang: ja
+    answer:
+      correct_option_id: sek
+    explanation:
+      vi: 空席はありますか - còn ghế trống không. 満席 là hết chỗ, 片道 là một chiều, 運賃 là giá vé.
+    display_answer: 空席はありますか。

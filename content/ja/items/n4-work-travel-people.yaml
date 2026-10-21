@@ -1,0 +1,655 @@
+# Học liệu unit "Công việc, đi lại và quan hệ con người" (JLPT N4). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n4-u9-gram-o-kudasai
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: お / ご + V ます (bỏ ます) / N + ください
+      romanization: o V-masu stem kudasai
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "Cách nhờ hoặc mời lịch sự (kính ngữ): お待ちください (xin hãy đợi), ご覧ください (xin hãy xem), ご利用ください. Lịch sự hơn V てください."
+      examples:
+        - target: 少々お待ちください。
+          translation:
+            vi: Xin vui lòng đợi một chút.
+        - target: こちらの書類にご記入ください。
+          translation:
+            vi: Xin điền vào giấy tờ này.
+      confusion:
+        vi: お + từ thuần Nhật (待ちます → お待ちください); ご + từ gốc Hán (記入 → ご記入ください).
+  - key: ja:item:n4-u9-buchou
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 部長
+      reading: ぶちょう
+      romanization: buchou
+      pos: danh từ
+    back:
+      meaning:
+        vi: trưởng phòng (cấp cao)
+      examples:
+        - target: 部長は今、会議中です。
+          translation:
+            vi: Trưởng phòng hiện đang họp.
+  - key: ja:item:n4-u9-kachou
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 課長
+      reading: かちょう
+      romanization: kachou
+      pos: danh từ
+    back:
+      meaning:
+        vi: trưởng nhóm, quản lý (bậc dưới 部長)
+      examples:
+        - target: 課長に報告します。
+          translation:
+            vi: Tôi báo cáo với trưởng nhóm.
+  - key: ja:item:n4-u9-shachou
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 社長
+      reading: しゃちょう
+      romanization: shachou
+      pos: danh từ
+    back:
+      meaning:
+        vi: giám đốc, chủ tịch công ty
+      examples:
+        - target: 社長が来週アメリカへ行きます。
+          translation:
+            vi: Giám đốc sẽ đi Mỹ vào tuần sau.
+  - key: ja:item:n4-u9-kyuuka
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 休暇
+      reading: きゅうか
+      romanization: kyuuka
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỳ nghỉ phép
+      examples:
+        - target: 来月、休暇を取ります。
+          translation:
+            vi: Tháng sau tôi nghỉ phép.
+  - key: ja:item:n4-u9-mensetsu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 面接
+      reading: めんせつ
+      romanization: mensetsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: phỏng vấn
+      examples:
+        - target: 明日、会社で面接があります。
+          translation:
+            vi: Ngày mai tôi có buổi phỏng vấn ở công ty.
+  - key: ja:item:n4-u9-rirekisho
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 履歴書
+      reading: りれきしょ
+      romanization: rirekisho
+      pos: danh từ
+    back:
+      meaning:
+        vi: sơ yếu lý lịch
+      examples:
+        - target: 履歴書を書いて、送ります。
+          translation:
+            vi: Tôi viết sơ yếu lý lịch rồi gửi đi.
+  - key: ja:item:n4-u9-shuushoku
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 就職
+      reading: しゅうしょく
+      romanization: shuushoku
+      pos: danh từ
+    back:
+      meaning:
+        vi: tìm được việc làm, đi làm (sau khi tốt nghiệp)
+      examples:
+        - target: 大学を卒業したら、日本の会社に就職したいです。
+          translation:
+            vi: Tốt nghiệp đại học xong tôi muốn vào làm ở công ty Nhật.
+  - key: ja:item:n4-u9-uchiawase
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 打ち合わせ
+      reading: うちあわせ
+      romanization: uchiawase
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc họp bàn trước, trao đổi công việc
+      examples:
+        - target: 午後三時から打ち合わせがあります。
+          translation:
+            vi: Từ 3 giờ chiều có cuộc họp bàn.
+  - key: ja:item:n4-u9-tantou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 担当
+      reading: たんとう
+      romanization: tantou
+      pos: danh từ
+    back:
+      meaning:
+        vi: phụ trách, người phụ trách
+      examples:
+        - target: この件は田中さんが担当しています。
+          translation:
+            vi: Việc này do anh Tanaka phụ trách.
+  - key: ja:item:n4-u9-otsukaresama
+    type: phrase
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - speaking
+      - vocabulary
+    front:
+      text: お疲れ様です
+      reading: おつかれさまです
+      romanization: otsukaresama desu
+      pos: cụm từ
+    back:
+      meaning:
+        vi: Cảm ơn bạn đã vất vả (chào đồng nghiệp, kết thúc công việc)
+      examples:
+        - target: お疲れ様です。お先に失礼します。
+          translation:
+            vi: Bạn vất vả rồi. Tôi xin phép về trước.
+  - key: ja:item:n4-u9-gram-koto-ga-aru
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: V辞書形 / V ない + ことがある
+      romanization: V-jisho koto ga aru
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: Thỉnh thoảng có khi... Diễn tả việc không thường xuyên nhưng có xảy ra. Khác ～たことがある (từng làm).
+      examples:
+        - target: 休みの日は、一日中寝ていることがあります。
+          translation:
+            vi: Ngày nghỉ thỉnh thoảng tôi ngủ cả ngày.
+        - target: 朝ご飯を食べないことがあります。
+          translation:
+            vi: Có khi tôi không ăn sáng.
+      confusion:
+        vi: V辞書形 + ことがある = thỉnh thoảng; V た + ことがある = đã từng.
+  - key: ja:item:n4-u9-norikaeru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 乗り換える
+      reading: のりかえる
+      romanization: norikaeru
+      pos: động từ
+    back:
+      meaning:
+        vi: đổi tàu, chuyển tuyến
+      examples:
+        - target: 新宿で電車を乗り換えます。
+          translation:
+            vi: Tôi đổi tàu ở Shinjuku.
+  - key: ja:item:n4-u9-kyuukou
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 急行
+      reading: きゅうこう
+      romanization: kyuukou
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu nhanh (dừng ít ga)
+      examples:
+        - target: 急行は次の駅に止まりません。
+          translation:
+            vi: Tàu nhanh không dừng ở ga tiếp theo.
+  - key: ja:item:n4-u9-tokkyuu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 特急
+      reading: とっきゅう
+      romanization: tokkyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: tàu tốc hành đặc biệt
+      examples:
+        - target: 特急で大阪まで行きます。
+          translation:
+            vi: Tôi đi đến Osaka bằng tàu tốc hành.
+      pronunciation_note:
+        vi: とっきゅう có っ - ngắt một nhịp.
+  - key: ja:item:n4-u9-unchin
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 運賃
+      reading: うんちん
+      romanization: unchin
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá vé, cước phí đi lại
+      examples:
+        - target: バスの運賃はいくらですか。
+          translation:
+            vi: Giá vé xe buýt là bao nhiêu?
+  - key: ja:item:n4-u9-kaisatsu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 改札
+      reading: かいさつ
+      romanization: kaisatsu
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổng soát vé
+      examples:
+        - target: 改札で友達を待っています。
+          translation:
+            vi: Tôi đang đợi bạn ở cổng soát vé.
+  - key: ja:item:n4-u9-hassha
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 発車
+      reading: はっしゃ
+      romanization: hassha
+      pos: danh từ
+    back:
+      meaning:
+        vi: xuất bến (tàu, xe)
+      examples:
+        - target: 電車は五分後に発車します。
+          translation:
+            vi: Tàu sẽ khởi hành sau 5 phút.
+  - key: ja:item:n4-u9-kuuseki
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 空席
+      reading: くうせき
+      romanization: kuuseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: ghế trống
+      examples:
+        - target: 空席はありますか。
+          translation:
+            vi: Còn ghế trống không?
+  - key: ja:item:n4-u9-manseki
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 満席
+      reading: まんせき
+      romanization: manseki
+      pos: danh từ
+    back:
+      meaning:
+        vi: hết chỗ, kín ghế
+      examples:
+        - target: その電車は満席でした。
+          translation:
+            vi: Chuyến tàu đó đã kín chỗ.
+  - key: ja:item:n4-u9-katamichi
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 片道
+      reading: かたみち
+      romanization: katamichi
+      pos: danh từ
+    back:
+      meaning:
+        vi: một chiều (vé)
+      examples:
+        - target: 片道三千円です。
+          translation:
+            vi: Một chiều 3.000 yên.
+  - key: ja:item:n4-u9-oufuku
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 往復
+      reading: おうふく
+      romanization: oufuku
+      pos: danh từ
+    back:
+      meaning:
+        vi: khứ hồi, hai chiều
+      examples:
+        - target: 往復の切符を買います。
+          translation:
+            vi: Tôi mua vé khứ hồi.
+  - key: ja:item:n4-u9-deguchi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 出口
+      reading: でぐち
+      romanization: deguchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối ra
+      examples:
+        - target: 出口はどこですか。
+          translation:
+            vi: Lối ra ở đâu?
+  - key: ja:item:n4-u9-iriguchi
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 入口
+      reading: いりぐち
+      romanization: iriguchi
+      pos: danh từ
+    back:
+      meaning:
+        vi: lối vào
+      examples:
+        - target: 入口で待っています。
+          translation:
+            vi: Tôi đợi ở lối vào.
+  - key: ja:item:n4-u9-gram-to-iu
+    type: grammar_point
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - grammar
+    front:
+      text: N1 + という + N2
+      romanization: N1 to iu N2
+      pos: cấu trúc ngữ pháp
+    back:
+      meaning:
+        vi: "N2 có tên là N1 (giới thiệu một người, nơi chưa quen thuộc). Cũng dùng giải thích: ～という意味 (nghĩa là ...)."
+      examples:
+        - target: 田中さんという人を知っていますか。
+          translation:
+            vi: Bạn có biết người tên là Tanaka không?
+        - target: 「Sakura」は桜という意味です。
+          translation:
+            vi: '"Sakura" nghĩa là 桜.'
+      confusion:
+        vi: という cũng có dạng khẩu ngữ って; N1 は N2 のことです cũng nghĩa tương tự.
+  - key: ja:item:n4-u9-tsukiau
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 付き合う
+      reading: つきあう
+      romanization: tsukiau
+      pos: động từ
+    back:
+      meaning:
+        vi: qua lại, hẹn hò; đi cùng
+      examples:
+        - target: 二人は三年付き合っています。
+          translation:
+            vi: Hai người hẹn hò được ba năm.
+  - key: ja:item:n4-u9-kenka
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 喧嘩
+      reading: けんか
+      romanization: kenka
+      pos: danh từ
+    back:
+      meaning:
+        vi: cãi nhau, đánh nhau
+      examples:
+        - target: 友達と喧嘩しました。
+          translation:
+            vi: Tôi đã cãi nhau với bạn.
+  - key: ja:item:n4-u9-ayamaru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 謝る
+      reading: あやまる
+      romanization: ayamaru
+      pos: động từ
+    back:
+      meaning:
+        vi: xin lỗi
+      examples:
+        - target: 遅れて、先生に謝りました。
+          translation:
+            vi: Tôi đến muộn nên đã xin lỗi thầy.
+  - key: ja:item:n4-u9-yurusu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 許す
+      reading: ゆるす
+      romanization: yurusu
+      pos: động từ
+    back:
+      meaning:
+        vi: tha thứ, cho phép
+      examples:
+        - target: 彼を許してあげてください。
+          translation:
+            vi: Xin hãy tha thứ cho anh ấy.
+  - key: ja:item:n4-u9-shinyuu
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 親友
+      reading: しんゆう
+      romanization: shinyuu
+      pos: danh từ
+    back:
+      meaning:
+        vi: bạn thân
+      examples:
+        - target: 田中さんは私の親友です。
+          translation:
+            vi: Anh Tanaka là bạn thân của tôi.
+  - key: ja:item:n4-u9-koibito
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 恋人
+      reading: こいびと
+      romanization: koibito
+      pos: danh từ
+    back:
+      meaning:
+        vi: người yêu
+      examples:
+        - target: 恋人にプレゼントを贈ります。
+          translation:
+            vi: Tôi tặng quà cho người yêu.
+  - key: ja:item:n4-u9-iwau
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 祝う
+      reading: いわう
+      romanization: iwau
+      pos: động từ
+    back:
+      meaning:
+        vi: chúc mừng, ăn mừng
+      examples:
+        - target: みんなで誕生日を祝いました。
+          translation:
+            vi: Mọi người cùng chúc mừng sinh nhật.
+  - key: ja:item:n4-u9-okuru
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 贈る
+      reading: おくる
+      romanization: okuru
+      pos: động từ
+    back:
+      meaning:
+        vi: tặng (quà)
+      examples:
+        - target: 母に花を贈りました。
+          translation:
+            vi: Tôi đã tặng hoa cho mẹ.
+      confusion:
+        vi: 贈る (tặng quà) khác 送る (おくる, gửi) cùng cách đọc.
+  - key: ja:item:n4-u9-kansha
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 感謝
+      reading: かんしゃ
+      romanization: kansha
+      pos: danh từ
+    back:
+      meaning:
+        vi: lòng biết ơn, cảm tạ
+      examples:
+        - target: 先生に感謝しています。
+          translation:
+            vi: Tôi biết ơn thầy.
+  - key: ja:item:n4-u9-sewa
+    type: vocab
+    level: n4
+    difficulty: 2
+    skill_tags:
+      - vocabulary
+    front:
+      text: 世話
+      reading: せわ
+      romanization: sewa
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chăm sóc, giúp đỡ
+      examples:
+        - target: いつもお世話になっております。
+          translation:
+            vi: Cảm ơn bạn đã luôn giúp đỡ.

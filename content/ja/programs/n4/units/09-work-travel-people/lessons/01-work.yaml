@@ -1,0 +1,375 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-work
+order_index: 1
+level: n4
+title:
+  vi: Công việc và công ty - 部長・面接・お疲れ様です
+objectives:
+  - vi: "Gọi chức danh và nói về công việc: 部長, 課長, 社長, 担当, 打ち合わせ."
+  - vi: "Nói về tìm việc: 面接, 履歴書, 就職, 休暇."
+  - vi: Dùng お / ご + ます-gốc + ください để nhờ lịch sự.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - grammar
+  - speaking
+  - reading
+prerequisites:
+  - ja:lesson:n4-te-hoshii
+items:
+  - item: ja:item:n4-u9-gram-o-kudasai
+  - item: ja:item:n4-u9-buchou
+  - item: ja:item:n4-u9-kachou
+  - item: ja:item:n4-u9-shachou
+  - item: ja:item:n4-u9-kyuuka
+  - item: ja:item:n4-u9-mensetsu
+  - item: ja:item:n4-u9-rirekisho
+  - item: ja:item:n4-u9-shuushoku
+  - item: ja:item:n4-u9-uchiawase
+  - item: ja:item:n4-u9-tantou
+  - item: ja:item:n4-u9-otsukaresama
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được những điều cơ bản ở công ty - 部長は今、会議中です。 - và nhờ lịch sự - 少々お待ちください。
+  - type: explain
+    text:
+      vi: "Chức danh - 社長 (giám đốc, chủ tịch), 部長 (trưởng phòng cấp cao), 課長 (quản lý nhóm). Theo sau tên người, thêm chức danh thay cho さん: 田中部長 (trưởng phòng Tanaka)."
+  - type: explain
+    text:
+      vi: Công việc - 打ち合わせ (họp bàn công việc), 担当 (phụ trách), 休暇 (nghỉ phép). Tìm việc - 就職 (đi làm), 面接 (phỏng vấn), 履歴書 (sơ yếu lý lịch). Chào đồng nghiệp - お疲れ様です.
+  - type: explain
+    text:
+      vi: "お / ご + V ます-gốc / N + ください là cách nhờ lịch sự hơn ～てください: お待ちください (xin hãy đợi), ご覧ください (xin hãy xem), ご記入ください (xin điền). お dùng với động từ thuần Nhật, ご dùng với từ gốc Hán."
+  - type: deep_explain
+    text:
+      vi: お疲れ様です vừa là lời chào đồng nghiệp trong ngày vừa là lời cảm ơn khi tan ca (お疲れ様でした). Không dùng với người trên khi họ giúp mình - khi đó nói ありがとうございます. 履歴書 là bản ghi lý lịch bằng viết tay hoặc đánh máy gửi kèm hồ sơ xin việc; 面接 là bước tiếp theo.
+  - type: example
+    target: 部長は今、会議中です。少々お待ちください。
+    target_lang: ja
+    translation:
+      vi: Trưởng phòng hiện đang họp. Xin vui lòng đợi một chút.
+    note:
+      vi: お待ちください - kính ngữ nhờ.
+  - type: example
+    target: こちらの書類にご記入ください。
+    target_lang: ja
+    translation:
+      vi: Xin hãy điền vào giấy tờ này.
+    note:
+      vi: ご + từ gốc Hán + ください.
+  - type: example
+    target: 明日、会社で面接があります。履歴書を持っていきます。
+    target_lang: ja
+    translation:
+      vi: Ngày mai tôi có phỏng vấn ở công ty. Tôi mang sơ yếu lý lịch đi.
+    note:
+      vi: 面接 - phỏng vấn.
+  - type: example
+    target: お疲れ様です。お先に失礼します。
+    target_lang: ja
+    translation:
+      vi: Bạn vất vả rồi. Tôi xin phép về trước.
+    note:
+      vi: Câu chào khi tan ca.
+  - type: common_mistake
+    wrong: 少々待ちください。
+    right: 少々お待ちください。
+    target_lang: ja
+    note:
+      vi: "Mẫu kính ngữ cần お trước ます-gốc: お待ちください."
+  - type: common_mistake
+    wrong: お記入ください。
+    right: ご記入ください。
+    target_lang: ja
+    note:
+      vi: Từ gốc Hán (記入) dùng ご, không dùng お.
+  - type: summary
+    points:
+      - vi: 社長 · 部長 · 課長 - chức danh.
+      - vi: 打ち合わせ họp bàn · 担当 phụ trách · 休暇 nghỉ phép · 就職 · 面接 · 履歴書.
+      - vi: お + ます-gốc + ください · ご + N + ください.
+      - vi: お疲れ様です - chào đồng nghiệp.
+exercises:
+  - key: ja:exercise:n4-work-w1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-gram-o-kudasai
+    prompt:
+      stem: Bạn muốn nhờ khách chờ một chút một cách lịch sự. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: lbp
+          text: 少々お待ちください。
+          lang: ja
+        - id: ynt
+          text: 少々待ちなさい。
+          lang: ja
+        - id: d39
+          text: 少々待つください。
+          lang: ja
+        - id: r4i
+          text: 少々待ってくださいます。
+          lang: ja
+    answer:
+      correct_option_id: lbp
+    explanation:
+      vi: "お + ます-gốc + ください là cách lịch sự: お待ちください. Các dạng còn lại sai hình thức hoặc quá thẳng."
+    display_answer: 少々お待ちください。
+  - key: ja:exercise:n4-work-w2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-mensetsu
+    prompt:
+      stem: Từ nào có nghĩa là “phỏng vấn”?
+      stem_lang: vi
+      options:
+        - id: xbf
+          text: 会議
+          lang: ja
+        - id: vzb
+          text: 休暇
+          lang: ja
+        - id: vxx
+          text: 面接
+          lang: ja
+        - id: ree
+          text: 就職
+          lang: ja
+    answer:
+      correct_option_id: vxx
+    explanation:
+      vi: 面接 là phỏng vấn. 会議 là cuộc họp, 休暇 là nghỉ phép, 就職 là đi làm/tìm được việc.
+    display_answer: 面接
+  - key: ja:exercise:n4-work-w3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 2
+    item: ja:item:n4-u9-buchou
+    prompt:
+      audio_asset_id: null
+      fallback_text: 部長は今、会議中です。少々お待ちください。
+      options:
+        - id: o5w
+          text: Trưởng phòng đang đi vắng. Xin gọi lại sau.
+          lang: vi
+        - id: l5u
+          text: Trưởng phòng đã về. Xin mời vào.
+          lang: vi
+        - id: eln
+          text: Giám đốc đang họp. Xin đợi ở ngoài.
+          lang: vi
+        - id: qsl
+          text: Trưởng phòng đang họp. Xin vui lòng đợi một chút.
+          lang: vi
+    answer:
+      correct_option_id: qsl
+    explanation:
+      vi: 部長 - trưởng phòng; 会議中 - đang họp; お待ちください - xin vui lòng đợi.
+    display_answer: Trưởng phòng đang họp. Xin vui lòng đợi một chút.
+  - key: ja:exercise:n4-work-w4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-gram-o-kudasai
+    prompt:
+      template: こちらの書類に{{b1}}ください。 (Xin hãy điền vào giấy tờ này.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Tiền tố cho từ gốc Hán.
+        - Bắt đầu bằng ご.
+    answer:
+      blanks:
+        b1:
+          - ご記入
+          - ごきにゅう
+    known_wrong:
+      - answer: お記入
+        feedback_vi: Từ gốc Hán 記入 đi với ご.
+        error_tag: honorific_prefix
+    explanation:
+      vi: ご + N (gốc Hán) + ください - kính ngữ nhờ.
+    display_answer: こちらの書類にご記入ください。
+  - key: ja:exercise:n4-work-w5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 2
+    item: ja:item:n4-u9-otsukaresama
+    prompt:
+      stem: Bạn chào đồng nghiệp khi hết giờ làm. Câu nào tự nhiên?
+      stem_lang: vi
+      options:
+        - id: o3w
+          text: お疲れ様でした。お先に失礼します。
+          lang: ja
+        - id: xj5
+          text: お休みなさい。いってきます。
+          lang: ja
+        - id: k0x
+          text: ごちそうさまでした。いらっしゃいませ。
+          lang: ja
+        - id: zqg
+          text: おめでとうございます。ただいま。
+          lang: ja
+    answer:
+      correct_option_id: o3w
+    explanation:
+      vi: お疲れ様でした là lời chào khi tan ca; お先に失礼します là xin phép về trước. Các câu còn lại không phù hợp bối cảnh.
+    display_answer: お疲れ様でした。お先に失礼します。
+  - key: ja:exercise:n4-work-w6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-rirekisho
+    prompt:
+      template: 面接の前に、{{b1}}を送ります。 (Trước buổi phỏng vấn tôi gửi sơ yếu lý lịch.)
+      blanks:
+        - id: b1
+          width_hint: 4
+    answer:
+      blanks:
+        b1:
+          - 履歴書
+          - りれきしょ
+    known_wrong:
+      - answer: 面接
+        feedback_vi: 面接 là buổi phỏng vấn; thứ gửi đi là 履歴書.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 履歴書 là sơ yếu lý lịch.
+    display_answer: 面接の前に、履歴書を送ります。
+  - key: ja:exercise:n4-work-w7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-tantou
+    prompt:
+      template: この件は田中さんが{{b1}}しています。 (Việc này do anh Tanaka phụ trách.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 担当
+          - たんとう
+    known_wrong:
+      - answer: 就職
+        feedback_vi: 就職 là đi làm; "phụ trách" là 担当.
+        error_tag: vocab_meaning
+    explanation:
+      vi: 担当 là phụ trách. 担当する - phụ trách.
+    display_answer: この件は田中さんが担当しています。
+  - key: ja:exercise:n4-work-w8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-gram-o-kudasai
+    prompt:
+      source_text: Xin vui lòng đợi một chút.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 少々お待ちください。
+        - しょうしょうおまちください。
+        - ちょっとお待ちください。
+        - 少しお待ちください。
+        - ちょっとおまちください。
+    known_wrong:
+      - answer: 少々お待ちします。
+        feedback_vi: お待ちします là "tôi sẽ đợi", không phải xin người khác đợi.
+        error_tag: honorific
+    explanation:
+      vi: お + ます-gốc + ください - kính ngữ nhờ.
+    display_answer: 少々お待ちください。
+  - key: ja:exercise:n4-work-w9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u9-shuushoku
+    prompt:
+      source_text: 大学を卒業したら、日本の会社に就職したいです。面接の準備をしています。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Tốt nghiệp đại học xong tôi muốn vào làm ở công ty Nhật. Tôi đang chuẩn bị cho phỏng vấn.
+        - Sau khi tốt nghiệp đại học, tôi muốn làm việc ở một công ty Nhật. Tôi đang chuẩn bị phỏng vấn.
+        - Khi tốt nghiệp đại học tôi muốn vào công ty Nhật. Tôi đang chuẩn bị cho buổi phỏng vấn.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Tốt nghiệp đại học xong tôi muốn học tiếp ở Nhật. Tôi đang chuẩn bị thi.
+        feedback_vi: 就職 là vào làm ở công ty, không phải học tiếp.
+        error_tag: meaning
+    explanation:
+      vi: 就職したい - muốn đi làm; 面接 - phỏng vấn; 準備 - chuẩn bị.
+    display_answer: Tốt nghiệp đại học xong tôi muốn vào làm ở công ty Nhật. Tôi đang chuẩn bị cho phỏng vấn.
+  - key: ja:exercise:n4-work-w10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-uchiawase
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Từ 3 giờ chiều có cuộc họp bàn."'
+      tokens:
+        - id: t2
+          text: 打ち合わせが
+        - id: t3
+          text: あります。
+        - id: t1
+          text: 午後三時から
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Thời gian (午後三時から) → chủ ngữ (打ち合わせが) → あります.
+    display_answer: 午後三時から打ち合わせがあります。
+  - key: ja:exercise:n4-work-w11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u9-kyuuka
+    prompt:
+      stem: Bạn muốn xin nghỉ phép tháng sau. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: xn3
+          text: 来月、休暇を取りたいです。
+          lang: ja
+        - id: zet
+          text: 来月、休暇に取りたいです。
+          lang: ja
+        - id: m4s
+          text: 来月、休暇を取れたいです。
+          lang: ja
+        - id: ks7
+          text: 来月、休暇で取りたいです。
+          lang: ja
+    answer:
+      correct_option_id: xn3
+    explanation:
+      vi: 休暇を取る - nghỉ phép; 取りたいです - muốn lấy. Các dạng khác sai trợ từ hoặc hình thức.
+    display_answer: 来月、休暇を取りたいです。
