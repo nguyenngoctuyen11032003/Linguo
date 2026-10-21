@@ -122,6 +122,9 @@ export function buildLexicon(itemDocs) {
 }
 
 /** Lookup table: token → [{ number: 'sg' | 'pl', article }] from a lexicon (deterministic, merged). */
+/** [noun, extra article]: same spelling, other meaning (die See = Meer; der See = Binnensee). */
+const HOMOGRAPH_SECOND_GENDER = [['See', 'die']];
+
 function formsOf(lexicon) {
   const forms = new Map();
   const add = (token, number, article) => {
@@ -142,6 +145,8 @@ function formsOf(lexicon) {
       if (e.pluralForm && e.article === 'der' && /^-(?:n|en)$/.test(e.plural)) add(e.pluralForm, 'sg', 'der');
     }
   }
+  // Homographs whose second gender is a different word: die See (the sea, always singular) next to der See (the lake).
+  for (const [token, article] of HOMOGRAPH_SECOND_GENDER) if (forms.has(token)) add(token, 'sg', article);
   return forms;
 }
 

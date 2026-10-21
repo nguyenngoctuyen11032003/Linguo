@@ -729,3 +729,12 @@ test('mcq options that differ only by capitalisation or punctuation are a legiti
   const r2 = await lint(tree(t, { [LESSON]: lesson(partial) }));
   assert.equal(r2.warnings.filter((w) => w.message.includes('starts with a lowercase letter')).length, 0, 'an mcq answer is an option, not a full sentence');
 });
+
+test('articles: die See (the sea) next to der See (the lake) is a known homograph, not a warning', async (t) => {
+  const nouns = items([['de:item:see', 'vocab', 'der See, -n', null, 'Nomen']]);
+  const sentences = ['Wir fahren an die See.', 'Wir sitzen am See.', 'Das See ist kalt.'];
+  const content = tree(t, { 'de/items/a.yaml': nouns, 'de/items/s.yaml': items(sentences.map((x, i) => [`de:item:s${i}`, 'phrase', `${NAMES[i]}!`, x])) });
+  const r = await lint(content);
+  const warned = r.warnings.filter((w) => w.message.startsWith('article')).map((w) => w.path.match(/items\[(\d+)\]/)[1]);
+  assert.deepEqual(warned, ['2']);
+});
