@@ -10,7 +10,7 @@
 
 const KANJI = /[一-鿿々]/u;
 // What the ja grader ignores before comparing: whitespace (incl. U+3000) and punctuation.
-const STRIP = /[\s　、。，．,.!?！？「」『』（）()・…～〜~:：;；"'“”‘’\-－ー—]/gu;
+const STRIP = /[\s\u3000、。，．,.!?！？「」『』（）()・…～〜~:：;；"'“”‘’\-－ー—]/gu;
 const norm = (s) => s.normalize('NFC').replace(STRIP, '').toLowerCase();
 
 const walkExercises = (file) => (file.kind === 'lesson' ? file.data.exercises.map((ex, i) => [ex, i]) : []);
