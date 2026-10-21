@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w4-koerper-sinne
+order_index: 3
+level: b1
+title:
+  vi: Cơ thể và các giác quan (Körper und Sinne)
+objectives:
+  - vi: Gọi tên thêm các bộ phận cơ thể và giác quan.
+  - vi: Nhớ giống và số nhiều của các danh từ chỉ bộ phận cơ thể.
+  - vi: Dùng các động từ atmen, schlucken, spüren khi mô tả cảm giác.
+estimated_minutes: 14
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w4-krankenhaus-pflege
+items:
+  - item: de:item:b1w4-schulter
+  - item: de:item:b1w4-ellbogen
+  - item: de:item:b1w4-handgelenk
+  - item: de:item:b1w4-knie
+  - item: de:item:b1w4-knoechel
+  - item: de:item:b1w4-zehe
+  - item: de:item:b1w4-daumen
+  - item: de:item:b1w4-nacken
+  - item: de:item:b1w4-huefte
+  - item: de:item:b1w4-brust
+  - item: de:item:b1w4-stirn
+  - item: de:item:b1w4-wange
+  - item: de:item:b1w4-kinn
+  - item: de:item:b1w4-zunge
+  - item: de:item:b1w4-lippe
+  - item: de:item:b1w4-zahnfleisch
+  - item: de:item:b1w4-gehirn
+  - item: de:item:b1w4-atem
+  - item: de:item:b1w4-geruch
+  - item: de:item:b1w4-geschmack
+  - item: de:item:b1w4-gehoer
+  - item: de:item:b1w4-atmen
+  - item: de:item:b1w4-schlucken
+  - item: de:item:b1w4-spueren
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn gọi tên được nhiều bộ phận cơ thể chính xác hơn và mô tả cảm giác khi nói chuyện với bác sĩ hay người thân.
+  - type: explain
+    text:
+      vi: "Thêm các bộ phận cơ thể: die Schulter, der Ellbogen, das Handgelenk, das Knie, der Knöchel, die Zehe, der Daumen, der Nacken, die Hüfte, die Brust, die Stirn, die Wange, das Kinn, die Zunge, die Lippe, das Gehirn. Nhiều từ chỉ cơ thể có số nhiều bất quy tắc: die Brust → die Brüste, das Gehirn → die Gehirne."
+  - type: explain
+    text:
+      vi: "Giác quan: der Geruch (khứu giác, mùi), der Geschmack (vị giác, vị), das Gehör (thính giác, số ít), das Sehvermögen. Động từ spüren (cảm thấy) và riechen, schmecken đã học. Ví dụ: Ich spüre meine Füße nicht mehr. Nach der Erkältung habe ich keinen Geschmack."
+  - type: explain
+    text:
+      vi: "Với bộ phận cơ thể, tiếng Đức thường dùng mạo từ xác định và chủ ngữ ở Dativ thay vì từ sở hữu: Ich habe mir das Knie verletzt. Mir tut die Schulter weh. Er hat sich den Daumen gebrochen. Mẫu này rất quan trọng khi nói chuyện với bác sĩ."
+  - type: deep_explain
+    text:
+      vi: "Das Zahnfleisch (lợi) chỉ có số ít. Der Atem (hơi thở) cũng thường dùng số ít: Er hält den Atem an. Atmen và schlucken có chia đều. Nhớ rằng Gehör (thính giác) khác Gehöhr; chỉ có một h trong chính tả này và không có số nhiều. Der Knöchel nghĩa là mắt cá chân hoặc khớp ngón tay; ngữ cảnh cho biết nghĩa."
+  - type: example
+    target: Mir tut die Schulter weh.
+    target_lang: de
+    translation:
+      vi: Vai tôi đau.
+    note:
+      vi: die Schulter = vai.
+  - type: example
+    target: Er hat sich den Ellbogen gestoßen.
+    target_lang: de
+    translation:
+      vi: Anh ấy bị va khuỷu tay.
+    note:
+      vi: der Ellbogen = khuỷu tay.
+  - type: example
+    target: Das Handgelenk ist geschwollen.
+    target_lang: de
+    translation:
+      vi: Cổ tay bị sưng.
+    note:
+      vi: das Handgelenk = cổ tay.
+  - type: example
+    target: Beim Treppensteigen tun mir die Knie weh.
+    target_lang: de
+    translation:
+      vi: Khi leo cầu thang đầu gối tôi đau.
+    note:
+      vi: das Knie = đầu gối.
+  - type: common_mistake
+    wrong: Mein Knie tut weh mir.
+    right: Mir tut das Knie weh.
+    target_lang: de
+    note:
+      vi: "Mir đứng đầu hoặc sau động từ: Das Knie tut mir weh. Không đặt mir sau weh."
+  - type: common_mistake
+    wrong: Ich habe meine Daumen verletzt.
+    right: Ich habe mir den Daumen verletzt.
+    target_lang: de
+    note:
+      vi: "Với bộ phận cơ thể của mình dùng mir (Dativ) và mạo từ xác định: mir den Daumen."
+  - type: summary
+    points:
+      - vi: "Ich habe mir das Knie verletzt / Mir tut die Schulter weh: Dativ mir + mạo từ xác định thay cho từ sở hữu."
+exercises:
+  - key: de:exercise:b1w4l3-listen-schulter
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-schulter
+    prompt:
+      audio_asset_id: null
+      fallback_text: Mir tut die Schulter weh.
+      options:
+        - { id: epj, text: Vai tôi đau., lang: vi }
+        - { id: u89, text: Xin hãy hít vào thở ra thật sâu., lang: vi }
+        - { id: xou, text: Cổ tay bị sưng., lang: vi }
+        - { id: moh, text: Anh ấy bị thương ở cằm., lang: vi }
+    answer:
+      correct_option_id: epj
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Vai tôi đau.". Từ khoá là die Schulter (vai); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Vai tôi đau.
+  - key: de:exercise:b1w4l3-mcq-vi-de-handgelenk
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w4-handgelenk
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cổ tay"?
+      stem_lang: vi
+      options:
+        - { id: unm, text: das Handgelenk, lang: de }
+        - { id: b7i, text: der Atem, lang: de }
+        - { id: x33, text: der Nacken, lang: de }
+        - { id: wtf, text: die Zunge, lang: de }
+    answer:
+      correct_option_id: unm
+    explanation:
+      vi: "das Handgelenk nghĩa là \"cổ tay\". Ví dụ: Das Handgelenk ist geschwollen. (Cổ tay bị sưng.)"
+    display_answer: das Handgelenk
+  - key: de:exercise:b1w4l3-mcq-de-vi-nacken
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-nacken
+    prompt:
+      stem: "\"der Nacken\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: m0r, text: cổ tay, lang: vi }
+        - { id: eii, text: ngón tay cái, lang: vi }
+        - { id: u9y, text: gáy, lang: vi }
+        - { id: b7q, text: hông, lang: vi }
+    answer:
+      correct_option_id: u9y
+    explanation:
+      vi: "der Nacken nghĩa là \"gáy\". Ví dụ: Vom langen Sitzen ist mein Nacken verspannt. (Ngồi lâu làm gáy tôi bị căng cứng.)"
+    display_answer: gáy
+  - key: de:exercise:b1w4l3-mcq-artikel-zunge
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-zunge
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Zunge\" (cái lưỡi): ___ Zunge"
+      stem_lang: vi
+      options:
+        - { id: hao, text: das, lang: de }
+        - { id: neg, text: der, lang: de }
+        - { id: hp4, text: die, lang: de }
+        - { id: efb, text: ein, lang: de }
+    answer:
+      correct_option_id: hp4
+    explanation:
+      vi: "Zunge là danh từ giống cái (die): die Zunge; số nhiều: die Zungen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w4l3-tr-word-huefte
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-huefte
+    prompt:
+      source_text: hông (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Hüfte
+    known_wrong:
+      - answer: der Hüfte
+        feedback_vi: Hüfte là giống cái, nên là die Hüfte.
+        error_tag: article
+      - answer: das Hüfte
+        feedback_vi: Hüfte là giống cái, nên là die Hüfte.
+        error_tag: article
+    explanation:
+      vi: "\"hông\" trong tiếng Đức là die Hüfte (số nhiều: die Hüften). Ví dụ: Die alte Dame hat sich die Hüfte gebrochen."
+    display_answer: die Hüfte
+  - key: de:exercise:b1w4l3-tr-word-spueren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-spueren
+    prompt:
+      source_text: cảm thấy (bằng cơ thể) (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - spüren
+    explanation:
+      vi: "\"cảm thấy (bằng cơ thể)\" trong tiếng Đức là spüren. Ví dụ: Ich spüre meine Füße nicht mehr."
+    display_answer: spüren
+  - key: de:exercise:b1w4l3-fill-plural-wange
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-wange
+    prompt:
+      template: "Singular: die Wange · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 8 }
+    answer:
+      blanks:
+        b1:
+          - Wangen
+    known_wrong:
+      - answer: Wange
+        feedback_vi: Wange là dạng số ít; số nhiều là Wangen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Wange là die Wangen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Wange · Plural: die Wangen"
+  - key: de:exercise:b1w4l3-mcq-luecke-ellbogen
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-ellbogen
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Anh ấy bị va khuỷu tay.\": Er hat sich den ___ gestoßen."
+      stem_lang: vi
+      options:
+        - { id: uvd, text: Geruch, lang: de }
+        - { id: j02, text: Kinn, lang: de }
+        - { id: xsq, text: Ellbogen, lang: de }
+        - { id: hor, text: Knie, lang: de }
+    answer:
+      correct_option_id: xsq
+    explanation:
+      vi: "Câu có nghĩa \"Anh ấy bị va khuỷu tay.\" nên cần Ellbogen (der Ellbogen: khuỷu tay). Kinn = cằm; Knie = đầu gối; Geruch = mùi; khứu giác không đúng nghĩa của câu."
+    display_answer: Ellbogen
+  - key: de:exercise:b1w4l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Ich habe mir beim Fußball das Knie und den Knöchel verletzt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe mir beim Fußball das Knie und den Knöchel verletzt.
+        - Beim Fußball habe ich mir das Knie und den Knöchel verletzt.
+        - Ich habe mir beim Fußballspielen das Knie und den Knöchel verletzt.
+    explanation:
+      vi: "Gợi ý đáp án: Ich habe mir beim Fußball das Knie und den Knöchel verletzt. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich habe mir beim Fußball das Knie und den Knöchel verletzt.
+    item: de:item:b1w4-knie
+  - key: de:exercise:b1w4l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Seit der Erkältung kann ich nichts mehr riechen und habe auch keinen Geschmack.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Từ sau cơn cảm lạnh, tôi không ngửi thấy gì nữa và cũng mất vị giác.
+        - Kể từ khi bị cảm tôi không ngửi được gì và cũng không còn cảm nhận được vị.
+        - Từ lúc bị cảm lạnh tôi không còn ngửi thấy mùi nào và không có vị giác.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Seit der Erkältung kann ich nichts mehr riechen und habe auch keinen Geschmack.\" nghĩa là: Từ sau cơn cảm lạnh, tôi không ngửi thấy gì nữa và cũng mất vị giác. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Từ sau cơn cảm lạnh, tôi không ngửi thấy gì nữa và cũng mất vị giác.
+    item: de:item:b1w4-geschmack

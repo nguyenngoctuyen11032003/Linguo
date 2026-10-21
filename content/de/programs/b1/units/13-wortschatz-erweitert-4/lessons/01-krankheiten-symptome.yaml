@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w4-krankheiten-symptome
+order_index: 1
+level: b1
+title:
+  vi: Bệnh tật và triệu chứng (Krankheiten und Symptome)
+objectives:
+  - vi: Gọi tên các bệnh thường gặp, triệu chứng và chấn thương.
+  - vi: "Mô tả cảm giác khó chịu: Übelkeit, Schwindel, Atemnot, Durchfall."
+  - vi: "Nói về tiêm chủng và lây nhiễm: impfen, sich anstecken, ansteckend."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w3-nomen-b1-2
+items:
+  - item: de:item:b1w4-grippe
+  - item: de:item:b1w4-asthma
+  - item: de:item:b1w4-diabetes
+  - item: de:item:b1w4-infektion
+  - item: de:item:b1w4-verstauchung
+  - item: de:item:b1w4-bruch
+  - item: de:item:b1w4-wunde
+  - item: de:item:b1w4-blutung
+  - item: de:item:b1w4-atemnot
+  - item: de:item:b1w4-uebelkeit
+  - item: de:item:b1w4-schwindel
+  - item: de:item:b1w4-durchfall
+  - item: de:item:b1w4-magen
+  - item: de:item:b1w4-herz
+  - item: de:item:b1w4-lunge
+  - item: de:item:b1w4-knochen
+  - item: de:item:b1w4-gelenk
+  - item: de:item:b1w4-impfung
+  - item: de:item:b1w4-impfstoff
+  - item: de:item:b1w4-ansteckung
+  - item: de:item:b1w4-sich-anstecken
+  - item: de:item:b1w4-impfen
+  - item: de:item:b1w4-niesen
+  - item: de:item:b1w4-ansteckend
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được triệu chứng bệnh với bác sĩ bằng từ chính xác hơn và hiểu thông tin cơ bản về bệnh lây và tiêm chủng.
+  - type: explain
+    text:
+      vi: "Từ chỉ bệnh và triệu chứng: die Grippe, das Asthma, der Diabetes (cũng nói die Zuckerkrankheit), die Infektion (nhiễm trùng), die Übelkeit (buồn nôn), der Schwindel (chóng mặt), die Atemnot (khó thở), der Durchfall (tiêu chảy). Nhiều từ chỉ có số ít vì là tên bệnh hoặc cảm giác: Ich habe Atemnot."
+  - type: explain
+    text:
+      vi: "Chấn thương: die Verstauchung (bong gân), der Bruch (gãy xương, thường nói Knochenbruch), die Wunde (vết thương), die Blutung (chảy máu). Cơ quan: der Magen, das Herz, die Lunge, der Knochen, das Gelenk. Số nhiều đặc biệt: das Herz → die Herzen, der Magen → die Mägen, der Knochen → die Knochen."
+  - type: explain
+    text:
+      vi: "Tiêm chủng: die Impfung, der Impfstoff, impfen (Ich lasse mich impfen). Lây nhiễm: die Ansteckung, sich anstecken (Ich habe mich bei meinem Kollegen angesteckt), ansteckend (lây): Die Grippe ist ansteckend. Hỏi bác sĩ: Ist das ansteckend? Wie lange?"
+  - type: deep_explain
+    text:
+      vi: Đừng nhầm Schwindel (chóng mặt) với Schwindel (trò lừa đảo); ngữ cảnh cho biết nghĩa. Mir ist schwindelig và Mir ist übel là hai cách thường dùng để nói chóng mặt và buồn nôn. Niesen (hắt hơi) có Perfekt hat geniest. Sich anstecken thường đi với bei + Dativ để nói lây từ ai.
+  - type: example
+    target: Im Winter haben viele Menschen die Grippe.
+    target_lang: de
+    translation:
+      vi: Vào mùa đông nhiều người bị cúm.
+    note:
+      vi: die Grippe = bệnh cúm.
+  - type: example
+    target: Mein Sohn hat Asthma und braucht ein Spray.
+    target_lang: de
+    translation:
+      vi: Con trai tôi bị hen và cần bình xịt.
+    note:
+      vi: das Asthma = bệnh hen.
+  - type: example
+    target: Mein Großvater hat Diabetes.
+    target_lang: de
+    translation:
+      vi: Ông tôi bị tiểu đường.
+    note:
+      vi: der Diabetes = bệnh tiểu đường.
+  - type: example
+    target: Die Infektion wird mit Antibiotika behandelt.
+    target_lang: de
+    translation:
+      vi: Nhiễm trùng được điều trị bằng kháng sinh.
+    note:
+      vi: die Infektion = sự nhiễm trùng.
+  - type: common_mistake
+    wrong: Ich habe mich von der Grippe angesteckt.
+    right: Ich habe mich bei meinem Kollegen mit der Grippe angesteckt.
+    target_lang: de
+    note:
+      vi: Lây từ ai thì dùng bei + Dativ, lây bệnh gì thì dùng mit + Dativ.
+  - type: common_mistake
+    wrong: Die Grippe ist ansteckt.
+    right: Die Grippe ist ansteckend.
+    target_lang: de
+    note:
+      vi: Tính từ là ansteckend (Partizip I), không phải Partizip II.
+  - type: summary
+    points:
+      - vi: die Impfung, der Impfstoff, die Ansteckung; impfen, sich anstecken, niesen; ansteckend.
+exercises:
+  - key: de:exercise:b1w4l1-listen-blutung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-blutung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Blutung hat nach zehn Minuten aufgehört.
+      options:
+        - { id: xx7, text: Máu đã ngừng chảy sau mười phút., lang: vi }
+        - { id: zzh, text: Bác sĩ tiêm phòng sởi cho trẻ em., lang: vi }
+        - { id: r78, text: Con trai tôi bị hen và cần bình xịt., lang: vi }
+        - { id: c1r, text: Việc tiêm chủng bảo vệ khỏi các bệnh nặng., lang: vi }
+    answer:
+      correct_option_id: xx7
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Máu đã ngừng chảy sau mười phút.". Từ khoá là die Blutung (sự chảy máu); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Máu đã ngừng chảy sau mười phút.
+  - key: de:exercise:b1w4l1-mcq-vi-de-ansteckend
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w4-ansteckend
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "lây (bệnh)"?
+      stem_lang: vi
+      options:
+        - { id: wnk, text: die Ansteckung, lang: de }
+        - { id: qvz, text: sich anstecken, lang: de }
+        - { id: lc7, text: der Knochen, lang: de }
+        - { id: k4q, text: ansteckend, lang: de }
+    answer:
+      correct_option_id: k4q
+    explanation:
+      vi: "ansteckend nghĩa là \"lây (bệnh)\". Ví dụ: Ist die Krankheit ansteckend? (Bệnh này có lây không?)"
+    display_answer: ansteckend
+  - key: de:exercise:b1w4l1-mcq-de-vi-ansteckung
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-ansteckung
+    prompt:
+      stem: "\"die Ansteckung\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: rn7, text: sự lây nhiễm, lang: vi }
+        - { id: fa3, text: vết thương, lang: vi }
+        - { id: cul, text: dạ dày, lang: vi }
+        - { id: gzm, text: tiêm chủng, lang: vi }
+    answer:
+      correct_option_id: rn7
+    explanation:
+      vi: "die Ansteckung nghĩa là \"sự lây nhiễm\". Ví dụ: Wie kann man eine Ansteckung vermeiden? (Làm thế nào để tránh bị lây?)"
+    display_answer: sự lây nhiễm
+  - key: de:exercise:b1w4l1-mcq-artikel-infektion
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-infektion
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Infektion\" (sự nhiễm trùng): ___ Infektion"
+      stem_lang: vi
+      options:
+        - { id: ndk, text: das, lang: de }
+        - { id: yq9, text: ein, lang: de }
+        - { id: jw9, text: der, lang: de }
+        - { id: a0d, text: die, lang: de }
+    answer:
+      correct_option_id: a0d
+    explanation:
+      vi: "Infektion là danh từ giống cái (die): die Infektion; số nhiều: die Infektionen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w4l1-tr-word-asthma
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-asthma
+    prompt:
+      source_text: bệnh hen (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Asthma
+    known_wrong:
+      - answer: der Asthma
+        feedback_vi: Asthma là giống trung, nên là das Asthma.
+        error_tag: article
+      - answer: die Asthma
+        feedback_vi: Asthma là giống trung, nên là das Asthma.
+        error_tag: article
+    explanation:
+      vi: "\"bệnh hen\" trong tiếng Đức là das Asthma (số nhiều: không dùng). Ví dụ: Mein Sohn hat Asthma und braucht ein Spray."
+    display_answer: das Asthma
+  - key: de:exercise:b1w4l1-tr-word-impfen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-impfen
+    prompt:
+      source_text: tiêm chủng (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - impfen
+    explanation:
+      vi: "\"tiêm chủng\" trong tiếng Đức là impfen. Ví dụ: Der Arzt impft die Kinder gegen Masern."
+    display_answer: impfen
+  - key: de:exercise:b1w4l1-fill-plural-gelenk
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-gelenk
+    prompt:
+      template: "Singular: das Gelenk · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 9 }
+    answer:
+      blanks:
+        b1:
+          - Gelenke
+    known_wrong:
+      - answer: Gelenk
+        feedback_vi: Gelenk là dạng số ít; số nhiều là Gelenke.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của das Gelenk là die Gelenke (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: das Gelenk · Plural: die Gelenke"
+  - key: de:exercise:b1w4l1-mcq-luecke-grippe
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-grippe
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Vào mùa đông nhiều người bị cúm.\": Im Winter haben viele Menschen die ___."
+      stem_lang: vi
+      options:
+        - { id: onl, text: Durchfall, lang: de }
+        - { id: edd, text: Diabetes, lang: de }
+        - { id: jm8, text: Magen, lang: de }
+        - { id: muy, text: Grippe, lang: de }
+    answer:
+      correct_option_id: muy
+    explanation:
+      vi: "Câu có nghĩa \"Vào mùa đông nhiều người bị cúm.\" nên cần Grippe (die Grippe: bệnh cúm). Durchfall = chứng tiêu chảy; Diabetes = bệnh tiểu đường; Magen = dạ dày không đúng nghĩa của câu."
+    display_answer: Grippe
+  - key: de:exercise:b1w4l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Ich habe seit gestern Übelkeit und Schwindel, und ich glaube, ich habe mich angesteckt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich habe seit gestern Übelkeit und Schwindel, und ich glaube, ich habe mich angesteckt.
+        - Seit gestern habe ich Übelkeit und Schwindel, und ich glaube, ich habe mich angesteckt.
+        - Seit gestern ist mir übel und schwindelig, und ich glaube, ich habe mich angesteckt.
+    explanation:
+      vi: "Gợi ý đáp án: Ich habe seit gestern Übelkeit und Schwindel, und ich glaube, ich habe mich angesteckt. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich habe seit gestern Übelkeit und Schwindel, und ich glaube, ich habe mich angesteckt.
+    item: de:item:b1w4-uebelkeit
+  - key: de:exercise:b1w4l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Der Arzt hat gesagt, dass der Bruch gut verheilt und dass eine Impfung gegen Grippe empfehlenswert ist.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Bác sĩ nói rằng chỗ gãy đang lành tốt và nên tiêm vaccine phòng cúm.
+        - Bác sĩ cho biết xương gãy đang lành tốt và việc tiêm phòng cúm là nên làm.
+        - Bác sĩ đã nói chỗ gãy lành tốt và tiêm chủng phòng cúm là điều đáng khuyên.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Arzt hat gesagt, dass der Bruch gut verheilt und dass eine Impfung gegen Grippe empfehlenswert ist.\" nghĩa là: Bác sĩ nói rằng chỗ gãy đang lành tốt và nên tiêm vaccine phòng cúm. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Bác sĩ nói rằng chỗ gãy đang lành tốt và nên tiêm vaccine phòng cúm.
+    item: de:item:b1w4-grippe

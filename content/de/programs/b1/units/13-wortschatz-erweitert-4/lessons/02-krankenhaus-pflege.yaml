@@ -1,0 +1,292 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w4-krankenhaus-pflege
+order_index: 2
+level: b1
+title:
+  vi: Bệnh viện, điều trị và chăm sóc (Krankenhaus und Pflege)
+objectives:
+  - vi: "Hiểu các từ về bệnh viện: Station, Intensivstation, Narkose, Verband, Gips."
+  - vi: "Nói về quá trình điều trị: einweisen, operieren, entlassen, ambulant, stationär."
+  - vi: Nói với nhân viên y tế về thăm bệnh và chăm sóc người thân.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w4-krankheiten-symptome
+items:
+  - item: de:item:b1w4-station
+  - item: de:item:b1w4-intensivstation
+  - item: de:item:b1w4-krankenschwester
+  - item: de:item:b1w4-krankenpfleger
+  - item: de:item:b1w4-chirurg
+  - item: de:item:b1w4-narkose
+  - item: de:item:b1w4-verband
+  - item: de:item:b1w4-gips
+  - item: de:item:b1w4-rollstuhl
+  - item: de:item:b1w4-kruecke
+  - item: de:item:b1w4-besuchszeit
+  - item: de:item:b1w4-einweisung
+  - item: de:item:b1w4-operationssaal
+  - item: de:item:b1w4-blutabnahme
+  - item: de:item:b1w4-rehabilitation
+  - item: de:item:b1w4-pflegeheim
+  - item: de:item:b1w4-pflegekraft
+  - item: de:item:b1w4-hausbesuch
+  - item: de:item:b1w4-einweisen
+  - item: de:item:b1w4-operieren
+  - item: de:item:b1w4-betaeuben
+  - item: de:item:b1w4-genesen
+  - item: de:item:b1w4-stationaer
+  - item: de:item:b1w4-ambulant
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn hiểu các thông báo và hướng dẫn ở bệnh viện, nói được về quá trình điều trị của mình hoặc người thân và hỏi giờ thăm bệnh.
+  - type: explain
+    text:
+      vi: "Trong bệnh viện: die Station (khoa), die Intensivstation, der Operationssaal (phòng mổ), die Krankenschwester, der Krankenpfleger, der Chirurg (bác sĩ phẫu thuật, n-Deklination: den Chirurgen). Thủ tục: die Einweisung (chỉ định nhập viện), die Blutabnahme (lấy máu), die Entlassung (xuất viện), die Besuchszeit (giờ thăm)."
+  - type: explain
+    text:
+      vi: "Điều trị: die Narkose (gây mê), der Verband (băng), der Gips (bó bột), der Rollstuhl, die Krücke (nạng), die Rehabilitation (phục hồi chức năng). Động từ operieren, betäuben, einweisen (weist ein, wies ein, hat eingewiesen). Cẩn thận: Gips chỉ dùng số ít khi nói chung: Er hat einen Gips am Bein."
+  - type: explain
+    text:
+      vi: "Hai kiểu điều trị: stationär (nằm viện) và ambulant (không phải nằm viện: Die Operation wird ambulant gemacht). Chăm sóc lâu dài: das Pflegeheim (viện dưỡng lão), die Pflegekraft, der Hausbesuch (bác sĩ đến nhà). Genesen (genest, genas, ist genesen) là hồi phục, văn phong trang trọng."
+  - type: deep_explain
+    text:
+      vi: Ở Đức, bạn thường cần Überweisung (giấy giới thiệu) từ bác sĩ gia đình để gặp bác sĩ chuyên khoa hoặc nhập viện theo kế hoạch. Trong cấp cứu, bạn đến thẳng die Notaufnahme. Bettlägerig chỉ người phải nằm giường, lebensgefährlich chỉ tình trạng nguy hiểm tính mạng; hai từ này hay gặp trong bản tin.
+  - type: example
+    target: Mein Onkel liegt auf der chirurgischen Station.
+    target_lang: de
+    translation:
+      vi: Chú tôi nằm ở khoa ngoại.
+    note:
+      vi: die Station = khoa, phòng bệnh; trạm.
+  - type: example
+    target: Der Patient liegt auf der Intensivstation.
+    target_lang: de
+    translation:
+      vi: Bệnh nhân nằm ở khoa hồi sức tích cực.
+    note:
+      vi: die Intensivstation = khoa hồi sức tích cực.
+  - type: example
+    target: Die Krankenschwester misst den Blutdruck.
+    target_lang: de
+    translation:
+      vi: Cô y tá đo huyết áp.
+    note:
+      vi: die Krankenschwester = y tá nữ.
+  - type: example
+    target: Der Krankenpfleger wechselt den Verband.
+    target_lang: de
+    translation:
+      vi: Anh điều dưỡng thay băng.
+    note:
+      vi: der Krankenpfleger = y tá nam, điều dưỡng.
+  - type: common_mistake
+    wrong: Ich muss morgen zur Operation operiert werden.
+    right: Ich muss morgen operiert werden.
+    target_lang: de
+    note:
+      vi: Operiert werden đã bao hàm ca mổ; không cần thêm zur Operation.
+  - type: common_mistake
+    wrong: Mein Vater ist im Krankenhaus entlassen worden gestern.
+    right: Mein Vater ist gestern aus dem Krankenhaus entlassen worden.
+    target_lang: de
+    note:
+      vi: Entlassen aus + Dativ; Partizip II + worden đứng cuối câu.
+  - type: summary
+    points:
+      - vi: einweisen, operieren, betäuben, genesen; stationär (nằm viện) ↔ ambulant (không nằm viện).
+exercises:
+  - key: de:exercise:b1w4l2-listen-blutabnahme
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-blutabnahme
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Blutabnahme ist morgens um acht Uhr.
+      options:
+        - { id: rbz, text: Bác sĩ gia đình đã cấp cho tôi giấy chỉ định nhập viện., lang: vi }
+        - { id: lrh, text: Việc lấy máu diễn ra lúc tám giờ sáng., lang: vi }
+        - { id: vtu, text: Viện dưỡng lão đang cần gấp nhân viên chăm sóc., lang: vi }
+        - { id: gkw, text: Chân anh ấy vẫn còn bó bột., lang: vi }
+    answer:
+      correct_option_id: lrh
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Việc lấy máu diễn ra lúc tám giờ sáng.". Từ khoá là die Blutabnahme (việc lấy máu); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Việc lấy máu diễn ra lúc tám giờ sáng.
+  - key: de:exercise:b1w4l2-mcq-vi-de-ambulant
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w4-ambulant
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "ngoại trú"?
+      stem_lang: vi
+      options:
+        - { id: xm4, text: stationär, lang: de }
+        - { id: c9o, text: ambulant, lang: de }
+        - { id: z8f, text: der Krankenpfleger, lang: de }
+        - { id: exk, text: einweisen, lang: de }
+    answer:
+      correct_option_id: c9o
+    explanation:
+      vi: "ambulant nghĩa là \"ngoại trú\". Ví dụ: Die Operation kann ambulant gemacht werden. (Ca mổ này có thể làm ngoại trú.)"
+    display_answer: ambulant
+  - key: de:exercise:b1w4l2-mcq-de-vi-kruecke
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-kruecke
+    prompt:
+      stem: "\"die Krücke\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: xdl, text: cây nạng, lang: vi }
+        - { id: ix2, text: phòng mổ, lang: vi }
+        - { id: rni, text: bột bó, lang: vi }
+        - { id: qz3, text: việc lấy máu, lang: vi }
+    answer:
+      correct_option_id: xdl
+    explanation:
+      vi: "die Krücke nghĩa là \"cây nạng\". Ví dụ: Mit der Krücke kann er wieder gehen. (Nhờ cây nạng anh ấy có thể đi lại được.)"
+    display_answer: cây nạng
+  - key: de:exercise:b1w4l2-mcq-artikel-krankenschwester
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-krankenschwester
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Krankenschwester\" (y tá nữ): ___ Krankenschwester"
+      stem_lang: vi
+      options:
+        - { id: rze, text: ein, lang: de }
+        - { id: za3, text: der, lang: de }
+        - { id: fwq, text: die, lang: de }
+        - { id: ntg, text: das, lang: de }
+    answer:
+      correct_option_id: fwq
+    explanation:
+      vi: "Krankenschwester là danh từ giống cái (die): die Krankenschwester; số nhiều: die Krankenschwestern. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w4l2-tr-word-chirurg
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-chirurg
+    prompt:
+      source_text: bác sĩ phẫu thuật (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Chirurg
+        - die Chirurgin
+    explanation:
+      vi: "\"bác sĩ phẫu thuật\" trong tiếng Đức là der Chirurg (số nhiều: die Chirurgen). Ví dụ: Der Chirurg erklärt den Ablauf der Operation."
+    display_answer: der Chirurg
+  - key: de:exercise:b1w4l2-tr-word-operieren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-operieren
+    prompt:
+      source_text: mổ, phẫu thuật (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - operieren
+    explanation:
+      vi: "\"mổ, phẫu thuật\" trong tiếng Đức là operieren. Ví dụ: Der Arzt operiert morgen um acht Uhr."
+    display_answer: operieren
+  - key: de:exercise:b1w4l2-fill-plural-narkose
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-narkose
+    prompt:
+      template: "Singular: die Narkose · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 10 }
+    answer:
+      blanks:
+        b1:
+          - Narkosen
+    known_wrong:
+      - answer: Narkose
+        feedback_vi: Narkose là dạng số ít; số nhiều là Narkosen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Narkose là die Narkosen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Narkose · Plural: die Narkosen"
+  - key: de:exercise:b1w4l2-mcq-luecke-station
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-station
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Chú tôi nằm ở khoa ngoại.\": Mein Onkel liegt auf der chirurgischen ___."
+      stem_lang: vi
+      options:
+        - { id: nb2, text: Rollstuhl, lang: de }
+        - { id: x50, text: Verband, lang: de }
+        - { id: utv, text: Station, lang: de }
+        - { id: xtl, text: Chirurg, lang: de }
+    answer:
+      correct_option_id: utv
+    explanation:
+      vi: "Câu có nghĩa \"Chú tôi nằm ở khoa ngoại.\" nên cần Station (die Station: khoa, phòng bệnh; trạm). Verband = băng gạc, băng bó; Chirurg = bác sĩ phẫu thuật; Rollstuhl = xe lăn không đúng nghĩa của câu."
+    display_answer: Station
+  - key: de:exercise:b1w4l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Mein Vater wurde gestern ins Krankenhaus eingewiesen und wird morgen operiert.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mein Vater wurde gestern ins Krankenhaus eingewiesen und wird morgen operiert.
+        - Mein Vater ist gestern ins Krankenhaus eingewiesen worden und wird morgen operiert.
+        - Gestern wurde mein Vater ins Krankenhaus eingewiesen, und morgen wird er operiert.
+    explanation:
+      vi: "Gợi ý đáp án: Mein Vater wurde gestern ins Krankenhaus eingewiesen und wird morgen operiert. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Mein Vater wurde gestern ins Krankenhaus eingewiesen und wird morgen operiert.
+    item: de:item:b1w4-operieren
+  - key: de:exercise:b1w4l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Nach der ambulanten Operation durfte sie noch am selben Tag nach Hause, aber sie muss einen Verband tragen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Sau ca mổ ngoại trú, cô ấy được về nhà ngay trong ngày, nhưng phải mang băng.
+        - Sau ca phẫu thuật không phải nằm viện, cô ấy được về nhà cùng ngày nhưng phải đeo băng.
+        - Sau cuộc mổ ngoại trú cô ấy được phép về nhà trong ngày, nhưng cô phải băng vết thương.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Nach der ambulanten Operation durfte sie noch am selben Tag nach Hause, aber sie muss einen Verband tragen.\" nghĩa là: Sau ca mổ ngoại trú, cô ấy được về nhà ngay trong ngày, nhưng phải mang băng. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Sau ca mổ ngoại trú, cô ấy được về nhà ngay trong ngày, nhưng phải mang băng.
+    item: de:item:b1w4-verband

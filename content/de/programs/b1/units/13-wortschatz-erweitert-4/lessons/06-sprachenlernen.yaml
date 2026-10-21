@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w4-sprachenlernen
+order_index: 6
+level: b1
+title:
+  vi: Học ngôn ngữ và cách học (Sprachenlernen)
+objectives:
+  - vi: Nói về cách học ngôn ngữ, các kỹ năng và những khó khăn thường gặp.
+  - vi: Dùng các động từ korrigieren, aussprechen, sich ausdrücken, verwechseln, markieren, unterstreichen.
+  - vi: "Mô tả kết quả học: verständlich, fehlerfrei, korrekt."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w4-schule-uni-2
+items:
+  - item: de:item:b1w4-aussprache
+  - item: de:item:b1w4-rechtschreibung
+  - item: de:item:b1w4-satzbau
+  - item: de:item:b1w4-zeitform
+  - item: de:item:b1w4-uebersetzung
+  - item: de:item:b1w4-lueckentext
+  - item: de:item:b1w4-hoerverstehen
+  - item: de:item:b1w4-leseverstehen
+  - item: de:item:b1w4-ausdruck
+  - item: de:item:b1w4-sprachkurs
+  - item: de:item:b1w4-lernmethode
+  - item: de:item:b1w4-lernziel
+  - item: de:item:b1w4-lernfortschritt
+  - item: de:item:b1w4-pruefungsvorbereitung
+  - item: de:item:b1w4-korrigieren
+  - item: de:item:b1w4-aussprechen
+  - item: de:item:b1w4-sich-ausdruecken
+  - item: de:item:b1w4-sich-verstaendigen
+  - item: de:item:b1w4-verwechseln
+  - item: de:item:b1w4-markieren
+  - item: de:item:b1w4-unterstreichen
+  - item: de:item:b1w4-verstaendlich
+  - item: de:item:b1w4-fehlerfrei
+  - item: de:item:b1w4-korrekt
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được cách mình học tiếng Đức, những khó khăn và mục tiêu học tập, và hiểu các từ thường dùng trong sách giáo khoa và lớp học.
+  - type: explain
+    text:
+      vi: "Kỹ năng và nội dung: die Aussprache, die Rechtschreibung (chính tả), der Satzbau (cấu trúc câu, chỉ số ít), die Zeitform (thì), die Übersetzung, das Hörverstehen, das Leseverstehen, der Lückentext (bài điền chỗ trống). Các từ ghép với -verstehen luôn là giống trung và không có số nhiều."
+  - type: explain
+    text:
+      vi: "Động từ trong lớp học: korrigieren (sửa), aussprechen (phát âm: spricht aus, sprach aus, hat ausgesprochen), verwechseln (nhầm lẫn), markieren (đánh dấu), unterstreichen (gạch chân: unterstreicht, unterstrich, hat unterstrichen), sich ausdrücken (diễn đạt), sich verständigen (hiểu nhau, giao tiếp được). Ví dụ: Ich kann mich auf Deutsch schon gut ausdrücken."
+  - type: explain
+    text:
+      vi: "Mục tiêu và tiến bộ: das Lernziel, der Lernfortschritt, die Lernmethode, die Prüfungsvorbereitung, der Sprachkurs. Tính từ: verständlich (dễ hiểu), fehlerfrei (không lỗi), korrekt (đúng). Ví dụ: Deine Aussprache ist verständlich, aber der Satzbau ist noch nicht ganz korrekt."
+  - type: deep_explain
+    text:
+      vi: "Verwechseln thường đi với mit: Ich verwechsle oft „der\" mit „das\". Sich verständigen cũng có nghĩa là thống nhất: Wir haben uns auf einen Termin verständigt. Der Ausdruck (cách diễn đạt, số nhiều die Ausdrücke) khác die Aussprache (phát âm). Hãy ghi các Ausdrücke mới vào sổ từ vựng cùng ví dụ."
+  - type: example
+    target: Deine Aussprache ist schon sehr gut.
+    target_lang: de
+    translation:
+      vi: Cách phát âm của bạn đã rất tốt.
+    note:
+      vi: die Aussprache = cách phát âm.
+  - type: example
+    target: Die deutsche Rechtschreibung ist nicht immer einfach.
+    target_lang: de
+    translation:
+      vi: Chính tả tiếng Đức không phải lúc nào cũng dễ.
+    note:
+      vi: die Rechtschreibung = chính tả.
+  - type: example
+    target: Im Satzbau mache ich noch viele Fehler.
+    target_lang: de
+    translation:
+      vi: Về cấu trúc câu tôi vẫn mắc nhiều lỗi.
+    note:
+      vi: der Satzbau = cấu trúc câu.
+  - type: example
+    target: Das Perfekt ist eine Zeitform der Vergangenheit.
+    target_lang: de
+    translation:
+      vi: Perfekt là một thì của quá khứ.
+    note:
+      vi: die Zeitform = thì (ngữ pháp).
+  - type: common_mistake
+    wrong: Ich habe die Wörter falsch ausgesprechen.
+    right: Ich habe die Wörter falsch ausgesprochen.
+    target_lang: de
+    note:
+      vi: "Aussprechen là động từ bất quy tắc tách: spricht aus, sprach aus, hat ausgesprochen."
+  - type: common_mistake
+    wrong: Ich verwechsle „der" und „die".
+    right: Ich verwechsle „der" mit „die".
+    target_lang: de
+    note:
+      vi: Verwechseln dùng với mit + Dativ.
+  - type: summary
+    points:
+      - vi: korrigieren, aussprechen, sich ausdrücken, sich verständigen, verwechseln, markieren, unterstreichen; verständlich, fehlerfrei, korrekt.
+exercises:
+  - key: de:exercise:b1w4l6-listen-pruefungsvorbereitung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-pruefungsvorbereitung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Prüfungsvorbereitung beginnt vier Wochen vorher.
+      options:
+        - { id: oy0, text: Việc chuẩn bị cho kỳ thi bắt đầu từ bốn tuần trước., lang: vi }
+        - { id: i1w, text: Chúng tôi đã giao tiếp được bằng tiếng Anh., lang: vi }
+        - { id: e3u, text: Phương pháp học nào hiệu quả nhất với bạn?, lang: vi }
+        - { id: h0q, text: Chính tả tiếng Đức không phải lúc nào cũng dễ., lang: vi }
+    answer:
+      correct_option_id: oy0
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Việc chuẩn bị cho kỳ thi bắt đầu từ bốn tuần trước.". Từ khoá là die Prüfungsvorbereitung (việc chuẩn bị cho kỳ thi); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Việc chuẩn bị cho kỳ thi bắt đầu từ bốn tuần trước.
+  - key: de:exercise:b1w4l6-mcq-vi-de-rechtschreibung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w4-rechtschreibung
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "chính tả"?
+      stem_lang: vi
+      options:
+        - { id: z25, text: die Rechtschreibung, lang: de }
+        - { id: vx7, text: der Satzbau, lang: de }
+        - { id: maq, text: das Hörverstehen, lang: de }
+        - { id: rnh, text: die Aussprache, lang: de }
+    answer:
+      correct_option_id: z25
+    explanation:
+      vi: "die Rechtschreibung nghĩa là \"chính tả\". Ví dụ: Die deutsche Rechtschreibung ist nicht immer einfach. (Chính tả tiếng Đức không phải lúc nào cũng dễ.)"
+    display_answer: die Rechtschreibung
+  - key: de:exercise:b1w4l6-mcq-de-vi-lernziel
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-lernziel
+    prompt:
+      stem: "\"das Lernziel\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: xgr, text: kỹ năng đọc hiểu, lang: vi }
+        - { id: kv1, text: gạch chân; nhấn mạnh, lang: vi }
+        - { id: pv8, text: mục tiêu học tập, lang: vi }
+        - { id: rx7, text: không có lỗi, lang: vi }
+    answer:
+      correct_option_id: pv8
+    explanation:
+      vi: "das Lernziel nghĩa là \"mục tiêu học tập\". Ví dụ: Wir besprechen am Anfang das Lernziel des Kurses. (Lúc đầu chúng ta bàn về mục tiêu của khóa học.)"
+    display_answer: mục tiêu học tập
+  - key: de:exercise:b1w4l6-mcq-artikel-zeitform
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-zeitform
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Zeitform\" (thì (ngữ pháp)): ___ Zeitform"
+      stem_lang: vi
+      options:
+        - { id: cj4, text: der, lang: de }
+        - { id: pcy, text: ein, lang: de }
+        - { id: pfn, text: die, lang: de }
+        - { id: ewc, text: das, lang: de }
+    answer:
+      correct_option_id: pfn
+    explanation:
+      vi: "Zeitform là danh từ giống cái (die): die Zeitform; số nhiều: die Zeitformen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w4l6-tr-word-aussprache
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-aussprache
+    prompt:
+      source_text: cách phát âm (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Aussprache
+    known_wrong:
+      - answer: der Aussprache
+        feedback_vi: Aussprache là giống cái, nên là die Aussprache.
+        error_tag: article
+      - answer: das Aussprache
+        feedback_vi: Aussprache là giống cái, nên là die Aussprache.
+        error_tag: article
+    explanation:
+      vi: "\"cách phát âm\" trong tiếng Đức là die Aussprache (số nhiều: die Aussprachen). Ví dụ: Deine Aussprache ist schon sehr gut."
+    display_answer: die Aussprache
+  - key: de:exercise:b1w4l6-tr-word-sich-verstaendigen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-sich-verstaendigen
+    prompt:
+      source_text: hiểu nhau, thống nhất (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - sich verständigen
+    explanation:
+      vi: "\"hiểu nhau, thống nhất\" trong tiếng Đức là sich verständigen. Ví dụ: Wir konnten uns auf Englisch verständigen."
+    display_answer: sich verständigen
+  - key: de:exercise:b1w4l6-fill-plural-lueckentext
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-lueckentext
+    prompt:
+      template: "Singular: der Lückentext · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Lückentexte
+    known_wrong:
+      - answer: Lückentext
+        feedback_vi: Lückentext là dạng số ít; số nhiều là Lückentexte.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Lückentext là die Lückentexte (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Lückentext · Plural: die Lückentexte"
+  - key: de:exercise:b1w4l6-mcq-luecke-satzbau
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-satzbau
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Về cấu trúc câu tôi vẫn mắc nhiều lỗi.\": Im ___ mache ich noch viele Fehler."
+      stem_lang: vi
+      options:
+        - { id: zx2, text: Hörverstehen, lang: de }
+        - { id: kof, text: Sprachkurs, lang: de }
+        - { id: mgd, text: Lückentext, lang: de }
+        - { id: l67, text: Satzbau, lang: de }
+    answer:
+      correct_option_id: l67
+    explanation:
+      vi: "Câu có nghĩa \"Về cấu trúc câu tôi vẫn mắc nhiều lỗi.\" nên cần Satzbau (der Satzbau: cấu trúc câu). Lückentext = bài điền vào chỗ trống; Sprachkurs = khóa học ngôn ngữ; Hörverstehen = kỹ năng nghe hiểu không đúng nghĩa của câu."
+    display_answer: Satzbau
+  - key: de:exercise:b1w4l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Mein Lernziel ist, mich auf Deutsch fehlerfrei auszudrücken und alle Zeitformen richtig zu benutzen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Mein Lernziel ist, mich auf Deutsch fehlerfrei auszudrücken und alle Zeitformen richtig zu benutzen.
+        - Mein Lernziel ist es, mich auf Deutsch fehlerfrei auszudrücken und alle Zeitformen richtig zu verwenden.
+        - Ich habe das Lernziel, mich auf Deutsch fehlerfrei auszudrücken und alle Zeitformen richtig zu benutzen.
+    explanation:
+      vi: "Gợi ý đáp án: Mein Lernziel ist, mich auf Deutsch fehlerfrei auszudrücken und alle Zeitformen richtig zu benutzen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Mein Lernziel ist, mich auf Deutsch fehlerfrei auszudrücken und alle Zeitformen richtig zu benutzen.
+    item: de:item:b1w4-zeitform
+  - key: de:exercise:b1w4l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Im Lückentext habe ich zwei Artikel verwechselt, aber die Lehrerin hat den Fehler sofort korrigiert.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong bài điền chỗ trống tôi nhầm hai mạo từ, nhưng cô giáo đã sửa lỗi ngay.
+        - Ở bài điền khuyết tôi nhầm hai cái mạo từ nhưng cô giáo sửa lỗi ngay lập tức.
+        - Trong bài điền từ tôi đã lẫn hai mạo từ, nhưng giáo viên lập tức sửa lại lỗi.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Im Lückentext habe ich zwei Artikel verwechselt, aber die Lehrerin hat den Fehler sofort korrigiert.\" nghĩa là: Trong bài điền chỗ trống tôi nhầm hai mạo từ, nhưng cô giáo đã sửa lỗi ngay. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Trong bài điền chỗ trống tôi nhầm hai mạo từ, nhưng cô giáo đã sửa lỗi ngay.
+    item: de:item:b1w4-lueckentext

@@ -1,0 +1,2314 @@
+# Học liệu unit B1W4 "Mở rộng vốn từ B1 (4): bệnh tật, bệnh viện, cơ thể, tâm lý, học đường, học ngôn ngữ (Wortschatz erweitern 4)" (mở rộng vốn từ, chương trình B1).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:b1w4-grippe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Grippe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh cúm
+      examples:
+        - target: Im Winter haben viele Menschen die Grippe.
+          translation:
+            vi: Vào mùa đông nhiều người bị cúm.
+  - key: de:item:b1w4-asthma
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Asthma (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh hen
+      examples:
+        - target: Mein Sohn hat Asthma und braucht ein Spray.
+          translation:
+            vi: Con trai tôi bị hen và cần bình xịt.
+  - key: de:item:b1w4-diabetes
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Diabetes (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bệnh tiểu đường
+      examples:
+        - target: Mein Großvater hat Diabetes.
+          translation:
+            vi: Ông tôi bị tiểu đường.
+  - key: de:item:b1w4-infektion
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Infektion, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự nhiễm trùng
+      examples:
+        - target: Die Infektion wird mit Antibiotika behandelt.
+          translation:
+            vi: Nhiễm trùng được điều trị bằng kháng sinh.
+  - key: de:item:b1w4-verstauchung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verstauchung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng bong gân
+      examples:
+        - target: Die Verstauchung am Fuß tut noch weh.
+          translation:
+            vi: Chỗ bong gân ở chân vẫn còn đau.
+  - key: de:item:b1w4-bruch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bruch, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ gãy; sự đổ vỡ
+      examples:
+        - target: Der Bruch am Arm muss sechs Wochen im Gips bleiben.
+          translation:
+            vi: Chỗ gãy ở tay phải bó bột sáu tuần.
+  - key: de:item:b1w4-wunde
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wunde, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vết thương
+      examples:
+        - target: Die Wunde muss sauber gehalten werden.
+          translation:
+            vi: Vết thương phải được giữ sạch.
+  - key: de:item:b1w4-blutung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Blutung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chảy máu
+      examples:
+        - target: Die Blutung hat nach zehn Minuten aufgehört.
+          translation:
+            vi: Máu đã ngừng chảy sau mười phút.
+  - key: de:item:b1w4-atemnot
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Atemnot (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng khó thở
+      examples:
+        - target: Bei Atemnot muss man sofort den Notarzt rufen.
+          translation:
+            vi: Khi khó thở phải gọi bác sĩ cấp cứu ngay.
+  - key: de:item:b1w4-uebelkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Übelkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảm giác buồn nôn
+      examples:
+        - target: Morgens leidet sie unter Übelkeit.
+          translation:
+            vi: Buổi sáng cô ấy bị buồn nôn.
+  - key: de:item:b1w4-schwindel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Schwindel (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng chóng mặt; trò lừa đảo
+      examples:
+        - target: Beim Aufstehen bekomme ich manchmal Schwindel.
+          translation:
+            vi: Khi đứng dậy đôi khi tôi bị chóng mặt.
+  - key: de:item:b1w4-durchfall
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Durchfall, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng tiêu chảy
+      examples:
+        - target: Nach dem Essen bekam er Durchfall.
+          translation:
+            vi: Sau bữa ăn anh ấy bị tiêu chảy.
+  - key: de:item:b1w4-magen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Magen, ¨-
+      pos: danh từ
+    back:
+      meaning:
+        vi: dạ dày
+      examples:
+        - target: Mein Magen tut seit gestern weh.
+          translation:
+            vi: Dạ dày tôi đau từ hôm qua.
+  - key: de:item:b1w4-herz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Herz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: trái tim
+      examples:
+        - target: Sein Herz schlägt sehr schnell.
+          translation:
+            vi: Tim anh ấy đập rất nhanh.
+  - key: de:item:b1w4-lunge
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lunge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: lá phổi
+      examples:
+        - target: Rauchen schadet der Lunge.
+          translation:
+            vi: Hút thuốc có hại cho phổi.
+  - key: de:item:b1w4-knochen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Knochen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: xương
+      examples:
+        - target: Beim Sturz hat er sich einen Knochen gebrochen.
+          translation:
+            vi: Khi ngã anh ấy bị gãy một cái xương.
+  - key: de:item:b1w4-gelenk
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gelenk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khớp
+      examples:
+        - target: Meine Gelenke tun bei Regen weh.
+          translation:
+            vi: Các khớp của tôi đau khi trời mưa.
+  - key: de:item:b1w4-impfung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Impfung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc tiêm chủng
+      examples:
+        - target: Die Impfung schützt vor schweren Krankheiten.
+          translation:
+            vi: Việc tiêm chủng bảo vệ khỏi các bệnh nặng.
+  - key: de:item:b1w4-impfstoff
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Impfstoff, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vaccine
+      examples:
+        - target: Der neue Impfstoff wird seit Montag verteilt.
+          translation:
+            vi: Vaccine mới được phân phối từ thứ Hai.
+  - key: de:item:b1w4-ansteckung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Ansteckung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự lây nhiễm
+      examples:
+        - target: Wie kann man eine Ansteckung vermeiden?
+          translation:
+            vi: Làm thế nào để tránh bị lây?
+  - key: de:item:b1w4-sich-anstecken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich anstecken
+      pos: động từ
+    back:
+      meaning:
+        vi: bị lây
+      examples:
+        - target: Ich habe mich bei meiner Schwester angesteckt.
+          translation:
+            vi: Tôi đã bị lây từ chị gái.
+  - key: de:item:b1w4-impfen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: impfen
+      pos: động từ
+    back:
+      meaning:
+        vi: tiêm chủng
+      examples:
+        - target: Der Arzt impft die Kinder gegen Masern.
+          translation:
+            vi: Bác sĩ tiêm phòng sởi cho trẻ em.
+  - key: de:item:b1w4-niesen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: niesen
+      pos: động từ
+    back:
+      meaning:
+        vi: hắt hơi
+      examples:
+        - target: Im Frühling muss ich oft niesen.
+          translation:
+            vi: Vào mùa xuân tôi hay hắt hơi.
+  - key: de:item:b1w4-ansteckend
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ansteckend
+      pos: tính từ
+    back:
+      meaning:
+        vi: lây (bệnh)
+      examples:
+        - target: Ist die Krankheit ansteckend?
+          translation:
+            vi: Bệnh này có lây không?
+  - key: de:item:b1w4-station
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Station, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoa, phòng bệnh; trạm
+      examples:
+        - target: Mein Onkel liegt auf der chirurgischen Station.
+          translation:
+            vi: Chú tôi nằm ở khoa ngoại.
+  - key: de:item:b1w4-intensivstation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Intensivstation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoa hồi sức tích cực
+      examples:
+        - target: Der Patient liegt auf der Intensivstation.
+          translation:
+            vi: Bệnh nhân nằm ở khoa hồi sức tích cực.
+  - key: de:item:b1w4-krankenschwester
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Krankenschwester, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: y tá nữ
+      examples:
+        - target: Die Krankenschwester misst den Blutdruck.
+          translation:
+            vi: Cô y tá đo huyết áp.
+  - key: de:item:b1w4-krankenpfleger
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Krankenpfleger, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: y tá nam, điều dưỡng
+      examples:
+        - target: Der Krankenpfleger wechselt den Verband.
+          translation:
+            vi: Anh điều dưỡng thay băng.
+  - key: de:item:b1w4-chirurg
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Chirurg, -en / die Chirurgin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: bác sĩ phẫu thuật
+      examples:
+        - target: Der Chirurg erklärt den Ablauf der Operation.
+          translation:
+            vi: Bác sĩ phẫu thuật giải thích diễn tiến ca mổ.
+  - key: de:item:b1w4-narkose
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Narkose, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: gây mê
+      examples:
+        - target: Vor der Operation bekommt man eine Narkose.
+          translation:
+            vi: Trước ca mổ người ta được gây mê.
+  - key: de:item:b1w4-verband
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Verband, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: băng gạc, băng bó
+      examples:
+        - target: Der Verband muss jeden Tag gewechselt werden.
+          translation:
+            vi: Băng phải được thay mỗi ngày.
+  - key: de:item:b1w4-gips
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Gips (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bột bó
+      examples:
+        - target: Sein Bein steckt noch im Gips.
+          translation:
+            vi: Chân anh ấy vẫn còn bó bột.
+  - key: de:item:b1w4-rollstuhl
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Rollstuhl, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: xe lăn
+      examples:
+        - target: Seit dem Unfall sitzt sie im Rollstuhl.
+          translation:
+            vi: Từ sau tai nạn cô ấy ngồi xe lăn.
+  - key: de:item:b1w4-kruecke
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Krücke, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cây nạng
+      examples:
+        - target: Mit der Krücke kann er wieder gehen.
+          translation:
+            vi: Nhờ cây nạng anh ấy có thể đi lại được.
+  - key: de:item:b1w4-besuchszeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Besuchszeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giờ thăm bệnh
+      examples:
+        - target: Die Besuchszeit ist von 14 bis 18 Uhr.
+          translation:
+            vi: Giờ thăm bệnh từ 14 đến 18 giờ.
+  - key: de:item:b1w4-einweisung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Einweisung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: giấy chỉ định nhập viện
+      examples:
+        - target: Der Hausarzt hat mir eine Einweisung ausgestellt.
+          translation:
+            vi: Bác sĩ gia đình đã cấp cho tôi giấy chỉ định nhập viện.
+  - key: de:item:b1w4-operationssaal
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Operationssaal, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phòng mổ
+      examples:
+        - target: Der Patient wird in den Operationssaal gebracht.
+          translation:
+            vi: Bệnh nhân được đưa vào phòng mổ.
+  - key: de:item:b1w4-blutabnahme
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Blutabnahme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc lấy máu
+      examples:
+        - target: Die Blutabnahme ist morgens um acht Uhr.
+          translation:
+            vi: Việc lấy máu diễn ra lúc tám giờ sáng.
+  - key: de:item:b1w4-rehabilitation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rehabilitation (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc phục hồi chức năng
+      examples:
+        - target: Nach dem Unfall braucht er eine lange Rehabilitation.
+          translation:
+            vi: Sau tai nạn anh ấy cần phục hồi chức năng lâu dài.
+  - key: de:item:b1w4-pflegeheim
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Pflegeheim, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: viện dưỡng lão, nhà điều dưỡng
+      examples:
+        - target: Ihre Mutter lebt seit einem Jahr im Pflegeheim.
+          translation:
+            vi: Mẹ cô ấy sống trong viện dưỡng lão được một năm.
+  - key: de:item:b1w4-pflegekraft
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pflegekraft, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân viên chăm sóc
+      examples:
+        - target: Das Heim sucht dringend Pflegekräfte.
+          translation:
+            vi: Viện dưỡng lão đang cần gấp nhân viên chăm sóc.
+  - key: de:item:b1w4-hausbesuch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Hausbesuch, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc bác sĩ khám tại nhà
+      examples:
+        - target: Bei starkem Fieber macht die Ärztin einen Hausbesuch.
+          translation:
+            vi: Khi sốt cao, bác sĩ đến khám tại nhà.
+  - key: de:item:b1w4-einweisen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: einweisen, weist ein, wies ein, hat eingewiesen
+      pos: động từ
+    back:
+      meaning:
+        vi: chỉ định nhập viện; hướng dẫn
+      examples:
+        - target: Der Hausarzt hat ihn ins Krankenhaus eingewiesen.
+          translation:
+            vi: Bác sĩ gia đình đã chỉ định anh ấy nhập viện.
+  - key: de:item:b1w4-operieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: operieren
+      pos: động từ
+    back:
+      meaning:
+        vi: mổ, phẫu thuật
+      examples:
+        - target: Der Arzt operiert morgen um acht Uhr.
+          translation:
+            vi: Bác sĩ mổ lúc tám giờ sáng mai.
+  - key: de:item:b1w4-betaeuben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: betäuben
+      pos: động từ
+    back:
+      meaning:
+        vi: gây tê, gây mê
+      examples:
+        - target: Vor dem Zahnziehen wird der Mund betäubt.
+          translation:
+            vi: Trước khi nhổ răng, vùng miệng được gây tê.
+  - key: de:item:b1w4-genesen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: genesen, genest, genas, ist genesen
+      pos: động từ
+    back:
+      meaning:
+        vi: hồi phục (văn phong trang trọng)
+      examples:
+        - target: Wir wünschen Ihnen, dass Sie bald genesen.
+          translation:
+            vi: Chúng tôi chúc ông/bà sớm hồi phục.
+  - key: de:item:b1w4-stationaer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: stationär
+      pos: tính từ
+    back:
+      meaning:
+        vi: điều trị nội trú
+      examples:
+        - target: Er muss stationär behandelt werden.
+          translation:
+            vi: Anh ấy phải được điều trị nội trú.
+  - key: de:item:b1w4-ambulant
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ambulant
+      pos: tính từ
+    back:
+      meaning:
+        vi: ngoại trú
+      examples:
+        - target: Die Operation kann ambulant gemacht werden.
+          translation:
+            vi: Ca mổ này có thể làm ngoại trú.
+  - key: de:item:b1w4-schulter
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schulter, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: vai
+      examples:
+        - target: Mir tut die Schulter weh.
+          translation:
+            vi: Vai tôi đau.
+  - key: de:item:b1w4-ellbogen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ellbogen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: khuỷu tay
+      examples:
+        - target: Er hat sich den Ellbogen gestoßen.
+          translation:
+            vi: Anh ấy bị va khuỷu tay.
+  - key: de:item:b1w4-handgelenk
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Handgelenk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ tay
+      examples:
+        - target: Das Handgelenk ist geschwollen.
+          translation:
+            vi: Cổ tay bị sưng.
+  - key: de:item:b1w4-knie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Knie, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: đầu gối
+      examples:
+        - target: Beim Treppensteigen tun mir die Knie weh.
+          translation:
+            vi: Khi leo cầu thang đầu gối tôi đau.
+  - key: de:item:b1w4-knoechel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Knöchel, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: mắt cá chân; khớp ngón tay
+      examples:
+        - target: Sie ist umgeknickt und hat sich den Knöchel verstaucht.
+          translation:
+            vi: Cô ấy bị trẹo chân và bong gân mắt cá.
+  - key: de:item:b1w4-zehe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zehe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngón chân
+      examples:
+        - target: Ich habe mir die große Zehe gestoßen.
+          translation:
+            vi: Tôi bị va ngón chân cái.
+  - key: de:item:b1w4-daumen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Daumen, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngón tay cái
+      examples:
+        - target: Er hat sich den Daumen in der Tür eingeklemmt.
+          translation:
+            vi: Anh ấy bị kẹp ngón tay cái vào cửa.
+  - key: de:item:b1w4-nacken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Nacken, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: gáy
+      examples:
+        - target: Vom langen Sitzen ist mein Nacken verspannt.
+          translation:
+            vi: Ngồi lâu làm gáy tôi bị căng cứng.
+  - key: de:item:b1w4-huefte
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Hüfte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hông
+      examples:
+        - target: Die alte Dame hat sich die Hüfte gebrochen.
+          translation:
+            vi: Bà cụ bị gãy hông.
+  - key: de:item:b1w4-brust
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Brust, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngực
+      examples:
+        - target: Er klagt über Schmerzen in der Brust.
+          translation:
+            vi: Ông ấy than đau ở ngực.
+  - key: de:item:b1w4-stirn
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Stirn, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: trán
+      examples:
+        - target: Das Kind hat Fieber, die Stirn ist heiß.
+          translation:
+            vi: Đứa trẻ bị sốt, trán nóng.
+  - key: de:item:b1w4-wange
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wange, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: má
+      examples:
+        - target: Die Wangen des Mädchens sind rot vor Kälte.
+          translation:
+            vi: Má cô bé đỏ ửng vì lạnh.
+  - key: de:item:b1w4-kinn
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Kinn, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cằm
+      examples:
+        - target: Er hat sich am Kinn verletzt.
+          translation:
+            vi: Anh ấy bị thương ở cằm.
+  - key: de:item:b1w4-zunge
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zunge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cái lưỡi
+      examples:
+        - target: Bitte zeigen Sie mir Ihre Zunge.
+          translation:
+            vi: Xin hãy cho tôi xem lưỡi của ông/bà.
+  - key: de:item:b1w4-lippe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lippe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: môi
+      examples:
+        - target: Meine Lippen sind im Winter oft trocken.
+          translation:
+            vi: Môi tôi vào mùa đông hay bị khô.
+  - key: de:item:b1w4-zahnfleisch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Zahnfleisch (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lợi (răng)
+      examples:
+        - target: Mein Zahnfleisch blutet beim Zähneputzen.
+          translation:
+            vi: Lợi của tôi chảy máu khi đánh răng.
+  - key: de:item:b1w4-gehirn
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gehirn, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: não
+      examples:
+        - target: Das Gehirn braucht viel Sauerstoff.
+          translation:
+            vi: Não cần nhiều ôxy.
+  - key: de:item:b1w4-atem
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Atem (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hơi thở
+      examples:
+        - target: Nach dem Lauf war ich völlig außer Atem.
+          translation:
+            vi: Sau khi chạy tôi hoàn toàn hết hơi.
+  - key: de:item:b1w4-geruch
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Geruch, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mùi; khứu giác
+      examples:
+        - target: Der Geruch von frischem Brot macht mich hungrig.
+          translation:
+            vi: Mùi bánh mì mới làm tôi đói.
+  - key: de:item:b1w4-geschmack
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Geschmack, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: vị; khẩu vị
+      examples:
+        - target: Der Geschmack der Suppe ist ausgezeichnet.
+          translation:
+            vi: Vị của món súp tuyệt vời.
+  - key: de:item:b1w4-gehoer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gehör (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thính giác
+      examples:
+        - target: Mit dem Alter lässt das Gehör nach.
+          translation:
+            vi: Tuổi cao thì thính giác kém đi.
+  - key: de:item:b1w4-atmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: atmen
+      pos: động từ
+    back:
+      meaning:
+        vi: thở
+      examples:
+        - target: Bitte atmen Sie tief ein und aus.
+          translation:
+            vi: Xin hãy hít vào thở ra thật sâu.
+  - key: de:item:b1w4-schlucken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: schlucken
+      pos: động từ
+    back:
+      meaning:
+        vi: nuốt
+      examples:
+        - target: Wegen der Halsschmerzen kann ich kaum schlucken.
+          translation:
+            vi: Vì đau họng tôi gần như không nuốt được.
+  - key: de:item:b1w4-spueren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: spüren
+      pos: động từ
+    back:
+      meaning:
+        vi: cảm thấy (bằng cơ thể)
+      examples:
+        - target: Ich spüre meine Füße nicht mehr.
+          translation:
+            vi: Tôi không còn cảm thấy bàn chân của mình.
+  - key: de:item:b1w4-psychologe
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Psychologe, -n / die Psychologin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà tâm lý học
+      examples:
+        - target: Der Psychologe hört seinen Patienten genau zu.
+          translation:
+            vi: Nhà tâm lý học lắng nghe bệnh nhân kỹ lưỡng.
+  - key: de:item:b1w4-sorge
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sorge, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nỗi lo
+      examples:
+        - target: Ich mache mir Sorgen um meine Mutter.
+          translation:
+            vi: Tôi lo lắng cho mẹ tôi.
+  - key: de:item:b1w4-depression
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Depression, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng trầm cảm
+      examples:
+        - target: Eine Depression ist eine ernste Krankheit.
+          translation:
+            vi: Trầm cảm là một căn bệnh nghiêm trọng.
+  - key: de:item:b1w4-burnout
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Burnout (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hội chứng kiệt sức
+      examples:
+        - target: Zu viel Arbeit kann zu einem Burnout führen.
+          translation:
+            vi: Làm việc quá nhiều có thể dẫn đến kiệt sức.
+  - key: de:item:b1w4-erschoepfung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erschöpfung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự kiệt sức
+      examples:
+        - target: Nach dem Marathon spürte er große Erschöpfung.
+          translation:
+            vi: Sau cuộc chạy marathon anh ấy cảm thấy kiệt sức.
+  - key: de:item:b1w4-meditation
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Meditation (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiền
+      examples:
+        - target: Mit Meditation kann man den Stress reduzieren.
+          translation:
+            vi: Với thiền người ta có thể giảm căng thẳng.
+  - key: de:item:b1w4-gelassenheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gelassenheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự bình thản
+      examples:
+        - target: Mit Gelassenheit reagiert sie auf Kritik.
+          translation:
+            vi: Cô ấy đón nhận lời phê bình một cách bình thản.
+  - key: de:item:b1w4-ausgleich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ausgleich (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cân bằng, sự bù đắp
+      examples:
+        - target: Sport ist für mich ein guter Ausgleich zur Arbeit.
+          translation:
+            vi: Thể thao là sự cân bằng tốt cho tôi so với công việc.
+  - key: de:item:b1w4-ueberforderung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Überforderung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình trạng quá tải
+      examples:
+        - target: Das Gefühl der Überforderung hat sie krank gemacht.
+          translation:
+            vi: Cảm giác quá tải đã làm cô ấy ngã bệnh.
+  - key: de:item:b1w4-schlaflosigkeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schlaflosigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng mất ngủ
+      examples:
+        - target: Wegen der Schlaflosigkeit war er morgens müde.
+          translation:
+            vi: Vì mất ngủ anh ấy buổi sáng rất mệt.
+  - key: de:item:b1w4-selbstvertrauen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Selbstvertrauen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: niềm tin vào bản thân
+      examples:
+        - target: Das Lob hat ihr Selbstvertrauen gegeben.
+          translation:
+            vi: Lời khen đã cho cô ấy sự tự tin.
+  - key: de:item:b1w4-wohlbefinden
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Wohlbefinden (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cảm giác khỏe khoắn, dễ chịu
+      examples:
+        - target: Gesunde Ernährung fördert das Wohlbefinden.
+          translation:
+            vi: Ăn uống lành mạnh thúc đẩy cảm giác khỏe khoắn.
+  - key: de:item:b1w4-therapie
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Therapie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: liệu pháp, trị liệu
+      examples:
+        - target: Die Therapie dauert mehrere Monate.
+          translation:
+            vi: Việc trị liệu kéo dài vài tháng.
+  - key: de:item:b1w4-beratungsstelle
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Beratungsstelle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trung tâm tư vấn
+      examples:
+        - target: In der Beratungsstelle bekommt man kostenlose Hilfe.
+          translation:
+            vi: Ở trung tâm tư vấn người ta được giúp đỡ miễn phí.
+  - key: de:item:b1w4-sich-fuerchten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich fürchten
+      pos: động từ
+    back:
+      meaning:
+        vi: sợ (vor + Dativ)
+      examples:
+        - target: Das Kind fürchtet sich vor der Dunkelheit.
+          translation:
+            vi: Đứa trẻ sợ bóng tối.
+  - key: de:item:b1w4-bewaeltigen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bewältigen
+      pos: động từ
+    back:
+      meaning:
+        vi: vượt qua, xử lý
+      examples:
+        - target: Sie hat die Krise gut bewältigt.
+          translation:
+            vi: Cô ấy đã vượt qua cuộc khủng hoảng tốt.
+  - key: de:item:b1w4-verdraengen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verdrängen
+      pos: động từ
+    back:
+      meaning:
+        vi: đè nén, gạt đi
+      examples:
+        - target: Er hat den Streit lange verdrängt.
+          translation:
+            vi: Anh ấy đã đè nén cuộc cãi vã lâu nay.
+  - key: de:item:b1w4-abschalten
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: abschalten
+      pos: động từ
+    back:
+      meaning:
+        vi: thư giãn, tắt (thiết bị)
+      examples:
+        - target: Nach der Arbeit kann ich schwer abschalten.
+          translation:
+            vi: Sau giờ làm việc tôi khó thư giãn được.
+  - key: de:item:b1w4-durchatmen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: durchatmen
+      pos: động từ
+    back:
+      meaning:
+        vi: hít thở sâu, nghỉ lấy hơi
+      examples:
+        - target: Nach der Prüfung konnte ich endlich durchatmen.
+          translation:
+            vi: Sau kỳ thi cuối cùng tôi cũng thở phào.
+  - key: de:item:b1w4-ueberfordern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überfordern
+      pos: động từ
+    back:
+      meaning:
+        vi: đòi hỏi quá sức
+      examples:
+        - target: Die neue Aufgabe überfordert mich.
+          translation:
+            vi: Nhiệm vụ mới làm tôi quá sức.
+  - key: de:item:b1w4-aufmuntern
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufmuntern
+      pos: động từ
+    back:
+      meaning:
+        vi: làm vui lên, động viên
+      examples:
+        - target: Ein Spaziergang kann dich aufmuntern.
+          translation:
+            vi: Một buổi đi dạo có thể làm bạn vui lên.
+  - key: de:item:b1w4-gestresst
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gestresst
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị căng thẳng
+      examples:
+        - target: Im Moment bin ich sehr gestresst.
+          translation:
+            vi: Hiện giờ tôi đang rất căng thẳng.
+  - key: de:item:b1w4-ueberfordert
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überfordert
+      pos: tính từ
+    back:
+      meaning:
+        vi: bị quá tải
+      examples:
+        - target: Die Eltern fühlen sich oft überfordert.
+          translation:
+            vi: Các bậc cha mẹ thường cảm thấy quá tải.
+  - key: de:item:b1w4-ausgeglichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausgeglichen
+      pos: tính từ
+    back:
+      meaning:
+        vi: cân bằng, điềm tĩnh
+      examples:
+        - target: Mit genug Schlaf bin ich viel ausgeglichener.
+          translation:
+            vi: Ngủ đủ giấc thì tôi điềm tĩnh hơn nhiều.
+  - key: de:item:b1w4-abschlusszeugnis
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Abschlusszeugnis, -se
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng, học bạ tốt nghiệp
+      examples:
+        - target: Zur Bewerbung gehört das Abschlusszeugnis.
+          translation:
+            vi: Hồ sơ xin việc cần có bằng tốt nghiệp.
+  - key: de:item:b1w4-pruefungsangst
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Prüfungsangst (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nỗi sợ thi cử
+      examples:
+        - target: Gegen Prüfungsangst hilft gute Vorbereitung.
+          translation:
+            vi: Chuẩn bị tốt giúp chống lại nỗi sợ thi.
+  - key: de:item:b1w4-lehrplan
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Lehrplan, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chương trình giảng dạy
+      examples:
+        - target: Der Lehrplan sieht zwei Stunden Sport pro Woche vor.
+          translation:
+            vi: Chương trình giảng dạy quy định hai giờ thể dục mỗi tuần.
+  - key: de:item:b1w4-unterrichtsfach
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Unterrichtsfach, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: môn học trong trường
+      examples:
+        - target: Mathematik ist ein Unterrichtsfach für alle Schüler.
+          translation:
+            vi: Toán là môn học dành cho mọi học sinh.
+  - key: de:item:b1w4-gruppenarbeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gruppenarbeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc làm nhóm
+      examples:
+        - target: In der Gruppenarbeit sollen alle mitmachen.
+          translation:
+            vi: Trong bài làm nhóm mọi người đều phải tham gia.
+  - key: de:item:b1w4-referat
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Referat, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài thuyết trình, báo cáo
+      examples:
+        - target: Ich muss nächste Woche ein Referat halten.
+          translation:
+            vi: Tuần sau tôi phải thuyết trình.
+  - key: de:item:b1w4-abschlussarbeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Abschlussarbeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: luận văn tốt nghiệp
+      examples:
+        - target: Für die Abschlussarbeit habe ich ein halbes Jahr Zeit.
+          translation:
+            vi: Cho luận văn tốt nghiệp tôi có nửa năm.
+  - key: de:item:b1w4-bachelor
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bachelor, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng cử nhân; cử nhân
+      examples:
+        - target: Nach dem Bachelor möchte ich noch den Master machen.
+          translation:
+            vi: Sau cử nhân tôi muốn học tiếp thạc sĩ.
+  - key: de:item:b1w4-master
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Master, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: bằng thạc sĩ; thạc sĩ
+      examples:
+        - target: Er hat seinen Master in Informatik gemacht.
+          translation:
+            vi: Anh ấy học thạc sĩ ngành tin học.
+  - key: de:item:b1w4-doktorarbeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Doktorarbeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: luận án tiến sĩ
+      examples:
+        - target: Für die Doktorarbeit braucht man oft mehrere Jahre.
+          translation:
+            vi: Luận án tiến sĩ thường cần nhiều năm.
+  - key: de:item:b1w4-betreuer
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Betreuer, - / die Betreuerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người hướng dẫn, người phụ trách
+      examples:
+        - target: Mein Betreuer liest meine Arbeit durch.
+          translation:
+            vi: Người hướng dẫn của tôi đọc bài của tôi.
+  - key: de:item:b1w4-lernplattform
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lernplattform, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nền tảng học trực tuyến
+      examples:
+        - target: Die Aufgaben stehen auf der Lernplattform.
+          translation:
+            vi: Các bài tập có trên nền tảng học trực tuyến.
+  - key: de:item:b1w4-anwesenheit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Anwesenheit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự có mặt
+      examples:
+        - target: In diesem Kurs ist die Anwesenheit Pflicht.
+          translation:
+            vi: Trong khóa học này việc có mặt là bắt buộc.
+      confusion:
+        vi: Anwesenheit chỉ dùng số ít; Anwesenheitspflicht là nghĩa vụ phải có mặt.
+  - key: de:item:b1w4-fehlzeit
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fehlzeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: số buổi vắng mặt
+      examples:
+        - target: Die Fehlzeiten stehen im Zeugnis.
+          translation:
+            vi: Số buổi vắng được ghi trong học bạ.
+  - key: de:item:b1w4-ausbildungsplatz
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ausbildungsplatz, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chỗ học nghề
+      examples:
+        - target: Er sucht einen Ausbildungsplatz als Mechaniker.
+          translation:
+            vi: Anh ấy tìm một chỗ học nghề thợ máy.
+  - key: de:item:b1w4-berufswahl
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Berufswahl (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc chọn nghề
+      examples:
+        - target: Bei der Berufswahl helfen die Lehrer.
+          translation:
+            vi: Giáo viên giúp trong việc chọn nghề.
+  - key: de:item:b1w4-studienfach
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Studienfach, ¨-er
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngành học
+      examples:
+        - target: Welches Studienfach hast du gewählt?
+          translation:
+            vi: Bạn đã chọn ngành học nào?
+  - key: de:item:b1w4-abbrechen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: abbrechen, bricht ab, brach ab, hat abgebrochen
+      pos: động từ
+    back:
+      meaning:
+        vi: bỏ dở, dừng giữa chừng
+      examples:
+        - target: Er hat sein Studium nach zwei Semestern abgebrochen.
+          translation:
+            vi: Anh ấy đã bỏ dở việc học sau hai học kỳ.
+  - key: de:item:b1w4-mitschreiben
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: mitschreiben, schreibt mit, schrieb mit, hat mitgeschrieben
+      pos: động từ
+    back:
+      meaning:
+        vi: ghi chép khi nghe giảng
+      examples:
+        - target: In der Vorlesung schreibe ich alles mit.
+          translation:
+            vi: Trong buổi giảng tôi ghi chép mọi thứ.
+  - key: de:item:b1w4-nachschlagen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: nachschlagen, schlägt nach, schlug nach, hat nachgeschlagen
+      pos: động từ
+    back:
+      meaning:
+        vi: tra cứu
+      examples:
+        - target: Unbekannte Wörter schlage ich im Wörterbuch nach.
+          translation:
+            vi: Những từ lạ tôi tra trong từ điển.
+  - key: de:item:b1w4-vortragen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vortragen, trägt vor, trug vor, hat vorgetragen
+      pos: động từ
+    back:
+      meaning:
+        vi: trình bày, đọc trước người nghe
+      examples:
+        - target: Sie trägt ein Gedicht vor.
+          translation:
+            vi: Cô ấy đọc một bài thơ trước mọi người.
+  - key: de:item:b1w4-promovieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: promovieren
+      pos: động từ
+    back:
+      meaning:
+        vi: làm tiến sĩ, bảo vệ luận án tiến sĩ
+      examples:
+        - target: Nach dem Master will sie promovieren.
+          translation:
+            vi: Sau thạc sĩ cô ấy muốn làm tiến sĩ.
+  - key: de:item:b1w4-begabt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: begabt
+      pos: tính từ
+    back:
+      meaning:
+        vi: có năng khiếu
+      examples:
+        - target: Die Schülerin ist sehr begabt in Mathematik.
+          translation:
+            vi: Cô học sinh rất có năng khiếu về toán.
+  - key: de:item:b1w4-muendlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: mündlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: bằng miệng, vấn đáp
+      examples:
+        - target: Die mündliche Prüfung dauert zwanzig Minuten.
+          translation:
+            vi: Bài thi vấn đáp kéo dài hai mươi phút.
+  - key: de:item:b1w4-aussprache
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Aussprache, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách phát âm
+      examples:
+        - target: Deine Aussprache ist schon sehr gut.
+          translation:
+            vi: Cách phát âm của bạn đã rất tốt.
+  - key: de:item:b1w4-rechtschreibung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rechtschreibung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chính tả
+      examples:
+        - target: Die deutsche Rechtschreibung ist nicht immer einfach.
+          translation:
+            vi: Chính tả tiếng Đức không phải lúc nào cũng dễ.
+  - key: de:item:b1w4-satzbau
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Satzbau (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cấu trúc câu
+      examples:
+        - target: Im Satzbau mache ich noch viele Fehler.
+          translation:
+            vi: Về cấu trúc câu tôi vẫn mắc nhiều lỗi.
+  - key: de:item:b1w4-zeitform
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zeitform, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thì (ngữ pháp)
+      examples:
+        - target: Das Perfekt ist eine Zeitform der Vergangenheit.
+          translation:
+            vi: Perfekt là một thì của quá khứ.
+  - key: de:item:b1w4-uebersetzung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Übersetzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bản dịch
+      examples:
+        - target: Die Übersetzung des Textes dauert zwei Stunden.
+          translation:
+            vi: Việc dịch văn bản mất hai tiếng.
+  - key: de:item:b1w4-lueckentext
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Lückentext, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: bài điền vào chỗ trống
+      examples:
+        - target: Im Lückentext fehlen die Verben.
+          translation:
+            vi: Trong bài điền chỗ trống thiếu các động từ.
+  - key: de:item:b1w4-hoerverstehen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Hörverstehen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỹ năng nghe hiểu
+      examples:
+        - target: Beim Hörverstehen habe ich die meisten Probleme.
+          translation:
+            vi: Ở phần nghe hiểu tôi gặp nhiều khó khăn nhất.
+  - key: de:item:b1w4-leseverstehen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Leseverstehen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: kỹ năng đọc hiểu
+      examples:
+        - target: Für das Leseverstehen braucht man einen großen Wortschatz.
+          translation:
+            vi: Cho phần đọc hiểu cần một vốn từ lớn.
+  - key: de:item:b1w4-ausdruck
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Ausdruck, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách diễn đạt, cụm từ
+      examples:
+        - target: Diesen Ausdruck habe ich noch nie gehört.
+          translation:
+            vi: Cách diễn đạt này tôi chưa nghe bao giờ.
+  - key: de:item:b1w4-sprachkurs
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sprachkurs, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khóa học ngôn ngữ
+      examples:
+        - target: Ich besuche seit März einen Sprachkurs.
+          translation:
+            vi: Tôi học một khóa ngôn ngữ từ tháng Ba.
+  - key: de:item:b1w4-lernmethode
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lernmethode, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: phương pháp học
+      examples:
+        - target: Welche Lernmethode funktioniert bei dir am besten?
+          translation:
+            vi: Phương pháp học nào hiệu quả nhất với bạn?
+  - key: de:item:b1w4-lernziel
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Lernziel, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: mục tiêu học tập
+      examples:
+        - target: Wir besprechen am Anfang das Lernziel des Kurses.
+          translation:
+            vi: Lúc đầu chúng ta bàn về mục tiêu của khóa học.
+  - key: de:item:b1w4-lernfortschritt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Lernfortschritt, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tiến bộ trong học tập
+      examples:
+        - target: Ein Lernfortschritt zeigt sich nach einigen Monaten.
+          translation:
+            vi: Sự tiến bộ trong học tập thể hiện sau vài tháng.
+  - key: de:item:b1w4-pruefungsvorbereitung
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Prüfungsvorbereitung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc chuẩn bị cho kỳ thi
+      examples:
+        - target: Die Prüfungsvorbereitung beginnt vier Wochen vorher.
+          translation:
+            vi: Việc chuẩn bị cho kỳ thi bắt đầu từ bốn tuần trước.
+  - key: de:item:b1w4-korrigieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: korrigieren
+      pos: động từ
+    back:
+      meaning:
+        vi: sửa (lỗi, bài)
+      examples:
+        - target: Der Lehrer korrigiert die Hausaufgaben.
+          translation:
+            vi: Thầy giáo chấm và sửa bài tập về nhà.
+  - key: de:item:b1w4-aussprechen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aussprechen, spricht aus, sprach aus, hat ausgesprochen
+      pos: động từ
+    back:
+      meaning:
+        vi: phát âm, nói ra
+      examples:
+        - target: Wie spricht man dieses Wort aus?
+          translation:
+            vi: Từ này phát âm thế nào?
+  - key: de:item:b1w4-sich-ausdruecken
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich ausdrücken
+      pos: động từ
+    back:
+      meaning:
+        vi: diễn đạt
+      examples:
+        - target: Sie drückt sich klar und einfach aus.
+          translation:
+            vi: Cô ấy diễn đạt rõ ràng và đơn giản.
+  - key: de:item:b1w4-sich-verstaendigen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich verständigen
+      pos: động từ
+    back:
+      meaning:
+        vi: hiểu nhau, thống nhất
+      examples:
+        - target: Wir konnten uns auf Englisch verständigen.
+          translation:
+            vi: Chúng tôi đã giao tiếp được bằng tiếng Anh.
+  - key: de:item:b1w4-verwechseln
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verwechseln
+      pos: động từ
+    back:
+      meaning:
+        vi: nhầm lẫn
+      examples:
+        - target: Ich verwechsle oft „der“ mit „das“.
+          translation:
+            vi: Tôi hay nhầm “der” với “das”.
+  - key: de:item:b1w4-markieren
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: markieren
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh dấu
+      examples:
+        - target: Bitte markieren Sie die wichtigen Wörter.
+          translation:
+            vi: Xin hãy đánh dấu những từ quan trọng.
+  - key: de:item:b1w4-unterstreichen
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unterstreichen, unterstreicht, unterstrich, hat unterstrichen
+      pos: động từ
+    back:
+      meaning:
+        vi: gạch chân; nhấn mạnh
+      examples:
+        - target: Unterstreichen Sie die Verben im Text.
+          translation:
+            vi: Hãy gạch chân các động từ trong văn bản.
+  - key: de:item:b1w4-verstaendlich
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verständlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ hiểu
+      examples:
+        - target: Die Erklärung war klar und verständlich.
+          translation:
+            vi: Lời giải thích rõ ràng và dễ hiểu.
+  - key: de:item:b1w4-fehlerfrei
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fehlerfrei
+      pos: tính từ
+    back:
+      meaning:
+        vi: không có lỗi
+      examples:
+        - target: Sein Text ist fast fehlerfrei.
+          translation:
+            vi: Bài viết của anh ấy gần như không có lỗi.
+  - key: de:item:b1w4-korrekt
+    type: vocab
+    level: b1
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: korrekt
+      pos: tính từ
+    back:
+      meaning:
+        vi: đúng, chính xác
+      examples:
+        - target: Diese Antwort ist nicht ganz korrekt.
+          translation:
+            vi: Câu trả lời này không hoàn toàn đúng.

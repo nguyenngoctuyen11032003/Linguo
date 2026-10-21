@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w4-psyche-stress
+order_index: 4
+level: b1
+title:
+  vi: Tâm lý, căng thẳng và cân bằng cuộc sống (Psyche und Stress)
+objectives:
+  - vi: Nói về cảm xúc tiêu cực, stress và cách đối phó.
+  - vi: Dùng các tính từ gestresst, überfordert, ausgeglichen và danh từ tương ứng.
+  - vi: "Nói về trị liệu và tìm trợ giúp: Therapie, Beratungsstelle, Psychologe."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w4-koerper-sinne
+items:
+  - item: de:item:b1w4-psychologe
+  - item: de:item:b1w4-sorge
+  - item: de:item:b1w4-depression
+  - item: de:item:b1w4-burnout
+  - item: de:item:b1w4-erschoepfung
+  - item: de:item:b1w4-meditation
+  - item: de:item:b1w4-gelassenheit
+  - item: de:item:b1w4-ausgleich
+  - item: de:item:b1w4-ueberforderung
+  - item: de:item:b1w4-schlaflosigkeit
+  - item: de:item:b1w4-selbstvertrauen
+  - item: de:item:b1w4-wohlbefinden
+  - item: de:item:b1w4-therapie
+  - item: de:item:b1w4-beratungsstelle
+  - item: de:item:b1w4-sich-fuerchten
+  - item: de:item:b1w4-bewaeltigen
+  - item: de:item:b1w4-verdraengen
+  - item: de:item:b1w4-abschalten
+  - item: de:item:b1w4-durchatmen
+  - item: de:item:b1w4-ueberfordern
+  - item: de:item:b1w4-aufmuntern
+  - item: de:item:b1w4-gestresst
+  - item: de:item:b1w4-ueberfordert
+  - item: de:item:b1w4-ausgeglichen
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về trạng thái tinh thần của mình, cách giải tỏa căng thẳng và biết tìm sự giúp đỡ khi cần.
+  - type: explain
+    text:
+      vi: "Từ về tâm lý: die Sorge (nỗi lo), die Depression, der Burnout, die Erschöpfung, die Überforderung (tình trạng quá tải), die Schlaflosigkeit, das Selbstvertrauen, das Wohlbefinden. Phần lớn là danh từ không đếm được nên dùng số ít. Từ Sorge dùng cả số nhiều: Ich mache mir Sorgen."
+  - type: explain
+    text:
+      vi: "Cách đối phó: abschalten (thư giãn, thôi nghĩ về công việc), durchatmen (hít thở sâu), bewältigen (vượt qua, xử lý), verdrängen (đè nén, gạt đi), aufmuntern (làm vui lên), sich fürchten (sợ: vor + Dativ). Đừng nhầm überfordern (đòi hỏi quá sức) với verlangen."
+  - type: explain
+    text:
+      vi: "Mô tả trạng thái: gestresst (bị căng thẳng), überfordert (bị quá tải), ausgeglichen (cân bằng, điềm tĩnh). Tìm trợ giúp: die Therapie, der Psychologe / die Psychologin, die Beratungsstelle, die Meditation. Ausgleich là sự bù đắp, thăng bằng: Sport ist ein guter Ausgleich zur Arbeit."
+  - type: deep_explain
+    text:
+      vi: Burnout là từ mượn tiếng Anh, được đọc gần giống tiếng Anh, và là danh từ giống đực (der Burnout, ít khi dùng số nhiều). Selbstvertrauen là niềm tin vào bản thân; Selbstbewusstsein cũng gần nghĩa nhưng nhấn mạnh ý thức về giá trị bản thân. Ở Đức, bạn có thể tìm Beratungsstellen miễn phí hoặc giá thấp khi gặp vấn đề tâm lý hoặc gia đình.
+  - type: example
+    target: Der Psychologe hört seinen Patienten genau zu.
+    target_lang: de
+    translation:
+      vi: Nhà tâm lý học lắng nghe bệnh nhân kỹ lưỡng.
+    note:
+      vi: der Psychologe = nhà tâm lý học.
+  - type: example
+    target: Ich mache mir Sorgen um meine Mutter.
+    target_lang: de
+    translation:
+      vi: Tôi lo lắng cho mẹ tôi.
+    note:
+      vi: die Sorge = nỗi lo.
+  - type: example
+    target: Eine Depression ist eine ernste Krankheit.
+    target_lang: de
+    translation:
+      vi: Trầm cảm là một căn bệnh nghiêm trọng.
+    note:
+      vi: die Depression = chứng trầm cảm.
+  - type: example
+    target: Zu viel Arbeit kann zu einem Burnout führen.
+    target_lang: de
+    translation:
+      vi: Làm việc quá nhiều có thể dẫn đến kiệt sức.
+    note:
+      vi: der Burnout = hội chứng kiệt sức.
+  - type: common_mistake
+    wrong: Ich fürchte mich für Spinnen.
+    right: Ich fürchte mich vor Spinnen.
+    target_lang: de
+    note:
+      vi: Sich fürchten đi với vor + Dativ.
+  - type: common_mistake
+    wrong: Der Chef überfordert uns mit zu viel Aufgaben.
+    right: Der Chef überfordert uns mit zu vielen Aufgaben.
+    target_lang: de
+    note:
+      vi: "Mit + Dativ số nhiều: zu vielen Aufgaben."
+  - type: summary
+    points:
+      - vi: abschalten, durchatmen, bewältigen, verdrängen, aufmuntern, überfordern, sich fürchten (vor + Dativ); gestresst, überfordert, ausgeglichen.
+exercises:
+  - key: de:exercise:b1w4l4-listen-ueberfordern
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-ueberfordern
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die neue Aufgabe überfordert mich.
+      options:
+        - { id: bvx, text: Ở trung tâm tư vấn người ta được giúp đỡ miễn phí., lang: vi }
+        - { id: klb, text: Các bậc cha mẹ thường cảm thấy quá tải., lang: vi }
+        - { id: nrv, text: Nhiệm vụ mới làm tôi quá sức., lang: vi }
+        - { id: i9e, text: Việc trị liệu kéo dài vài tháng., lang: vi }
+    answer:
+      correct_option_id: nrv
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Nhiệm vụ mới làm tôi quá sức.". Từ khoá là überfordern (đòi hỏi quá sức); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Nhiệm vụ mới làm tôi quá sức.
+  - key: de:exercise:b1w4l4-mcq-vi-de-verdraengen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w4-verdraengen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "đè nén, gạt đi"?
+      stem_lang: vi
+      options:
+        - { id: eq1, text: durchatmen, lang: de }
+        - { id: a20, text: verdrängen, lang: de }
+        - { id: yz1, text: sich fürchten, lang: de }
+        - { id: p2f, text: abschalten, lang: de }
+    answer:
+      correct_option_id: a20
+    explanation:
+      vi: "verdrängen nghĩa là \"đè nén, gạt đi\". Ví dụ: Er hat den Streit lange verdrängt. (Anh ấy đã đè nén cuộc cãi vã lâu nay.)"
+    display_answer: verdrängen
+  - key: de:exercise:b1w4l4-mcq-de-vi-beratungsstelle
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-beratungsstelle
+    prompt:
+      stem: "\"die Beratungsstelle\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: w03, text: bị quá tải, lang: vi }
+        - { id: e8d, text: trung tâm tư vấn, lang: vi }
+        - { id: z0q, text: sợ (vor + Dativ), lang: vi }
+        - { id: s48, text: "làm vui lên, động viên", lang: vi }
+    answer:
+      correct_option_id: e8d
+    explanation:
+      vi: "die Beratungsstelle nghĩa là \"trung tâm tư vấn\". Ví dụ: In der Beratungsstelle bekommt man kostenlose Hilfe. (Ở trung tâm tư vấn người ta được giúp đỡ miễn phí.)"
+    display_answer: trung tâm tư vấn
+  - key: de:exercise:b1w4l4-mcq-artikel-wohlbefinden
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-wohlbefinden
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Wohlbefinden\" (cảm giác khỏe khoắn, dễ chịu): ___ Wohlbefinden"
+      stem_lang: vi
+      options:
+        - { id: ic6, text: der, lang: de }
+        - { id: s49, text: das, lang: de }
+        - { id: ot4, text: die, lang: de }
+        - { id: u26, text: ein, lang: de }
+    answer:
+      correct_option_id: s49
+    explanation:
+      vi: "Wohlbefinden là danh từ giống trung (das): das Wohlbefinden (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b1w4l4-tr-word-selbstvertrauen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-selbstvertrauen
+    prompt:
+      source_text: niềm tin vào bản thân (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Selbstvertrauen
+    known_wrong:
+      - answer: der Selbstvertrauen
+        feedback_vi: Selbstvertrauen là giống trung, nên là das Selbstvertrauen.
+        error_tag: article
+      - answer: die Selbstvertrauen
+        feedback_vi: Selbstvertrauen là giống trung, nên là das Selbstvertrauen.
+        error_tag: article
+    explanation:
+      vi: "\"niềm tin vào bản thân\" trong tiếng Đức là das Selbstvertrauen (số nhiều: không dùng). Ví dụ: Das Lob hat ihr Selbstvertrauen gegeben."
+    display_answer: das Selbstvertrauen
+  - key: de:exercise:b1w4l4-tr-word-aufmuntern
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-aufmuntern
+    prompt:
+      source_text: làm vui lên, động viên (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - aufmuntern
+    explanation:
+      vi: "\"làm vui lên, động viên\" trong tiếng Đức là aufmuntern. Ví dụ: Ein Spaziergang kann dich aufmuntern."
+    display_answer: aufmuntern
+  - key: de:exercise:b1w4l4-fill-plural-psychologe
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-psychologe
+    prompt:
+      template: "Singular: der Psychologe · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Psychologen
+    known_wrong:
+      - answer: Psychologe
+        feedback_vi: Psychologe là dạng số ít; số nhiều là Psychologen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của der Psychologe là die Psychologen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: der Psychologe · Plural: die Psychologen"
+  - key: de:exercise:b1w4l4-mcq-luecke-sorge
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-sorge
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Tôi lo lắng cho mẹ tôi.\": Ich mache mir ___ um meine Mutter."
+      stem_lang: vi
+      options:
+        - { id: r9e, text: Burnout, lang: de }
+        - { id: xab, text: Depression, lang: de }
+        - { id: o4w, text: Sorgen, lang: de }
+        - { id: wm8, text: Selbstvertrauen, lang: de }
+    answer:
+      correct_option_id: o4w
+    explanation:
+      vi: "Câu có nghĩa \"Tôi lo lắng cho mẹ tôi.\" nên cần Sorgen (die Sorge: nỗi lo). Depression = chứng trầm cảm; Selbstvertrauen = niềm tin vào bản thân; Burnout = hội chứng kiệt sức không đúng nghĩa của câu."
+    display_answer: Sorgen
+  - key: de:exercise:b1w4l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Wenn ich gestresst bin, gehe ich spazieren, um abzuschalten, und danach bin ich wieder ausgeglichen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wenn ich gestresst bin, gehe ich spazieren, um abzuschalten, und danach bin ich wieder ausgeglichen.
+        - Wenn ich gestresst bin, gehe ich spazieren, um abzuschalten. Danach bin ich wieder ausgeglichen.
+        - Bin ich gestresst, gehe ich spazieren, um abzuschalten, und danach bin ich wieder ausgeglichen.
+    explanation:
+      vi: "Gợi ý đáp án: Wenn ich gestresst bin, gehe ich spazieren, um abzuschalten, und danach bin ich wieder ausgeglichen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Wenn ich gestresst bin, gehe ich spazieren, um abzuschalten, und danach bin ich wieder ausgeglichen.
+    item: de:item:b1w4-gestresst
+  - key: de:exercise:b1w4l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Er war lange überfordert und hat sich erst spät Hilfe in einer Beratungsstelle gesucht.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Anh ấy bị quá tải lâu và mãi sau mới tìm sự giúp đỡ ở một trung tâm tư vấn.
+        - Anh ấy bị quá tải trong thời gian dài và chỉ muộn mới tìm trợ giúp ở một điểm tư vấn.
+        - Anh ta đã bị áp lực quá mức rất lâu và mãi về sau mới tìm sự trợ giúp ở trung tâm tư vấn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Er war lange überfordert und hat sich erst spät Hilfe in einer Beratungsstelle gesucht.\" nghĩa là: Anh ấy bị quá tải lâu và mãi sau mới tìm sự giúp đỡ ở một trung tâm tư vấn. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Anh ấy bị quá tải lâu và mãi sau mới tìm sự giúp đỡ ở một trung tâm tư vấn.
+    item: de:item:b1w4-beratungsstelle

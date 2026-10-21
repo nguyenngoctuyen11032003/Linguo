@@ -1,0 +1,298 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b1w4-schule-uni-2
+order_index: 5
+level: b1
+title:
+  vi: Trường học, đại học và hướng nghiệp (Schule und Studium 2)
+objectives:
+  - vi: Hiểu các từ về bằng cấp, luận văn, môn học và quản lý học tập.
+  - vi: "Nói về quá trình học: abbrechen, mitschreiben, nachschlagen, promovieren."
+  - vi: "Mô tả năng lực và kỳ thi: begabt, mündlich, schriftlich."
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b1w4-psyche-stress
+items:
+  - item: de:item:b1w4-abschlusszeugnis
+  - item: de:item:b1w4-pruefungsangst
+  - item: de:item:b1w4-lehrplan
+  - item: de:item:b1w4-unterrichtsfach
+  - item: de:item:b1w4-gruppenarbeit
+  - item: de:item:b1w4-referat
+  - item: de:item:b1w4-abschlussarbeit
+  - item: de:item:b1w4-bachelor
+  - item: de:item:b1w4-master
+  - item: de:item:b1w4-doktorarbeit
+  - item: de:item:b1w4-betreuer
+  - item: de:item:b1w4-lernplattform
+  - item: de:item:b1w4-anwesenheit
+  - item: de:item:b1w4-fehlzeit
+  - item: de:item:b1w4-ausbildungsplatz
+  - item: de:item:b1w4-berufswahl
+  - item: de:item:b1w4-studienfach
+  - item: de:item:b1w4-abbrechen
+  - item: de:item:b1w4-mitschreiben
+  - item: de:item:b1w4-nachschlagen
+  - item: de:item:b1w4-vortragen
+  - item: de:item:b1w4-promovieren
+  - item: de:item:b1w4-begabt
+  - item: de:item:b1w4-muendlich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được về chương trình học, luận văn, bằng cấp và kế hoạch nghề nghiệp, và hiểu các thông báo thường gặp ở trường và đại học.
+  - type: explain
+    text:
+      vi: "Bằng cấp và luận văn: das Abschlusszeugnis (bằng tốt nghiệp), der Bachelor, der Master, die Abschlussarbeit, die Doktorarbeit. Học thuật: das Referat (bài thuyết trình nghiên cứu), die Gruppenarbeit, der Betreuer (người hướng dẫn), die Lernplattform (nền tảng học trực tuyến). Số nhiều của Master là die Master (không đổi), của Bachelor là die Bachelor hoặc die Bachelors."
+  - type: explain
+    text:
+      vi: "Về môn học và kế hoạch: das Studienfach, das Unterrichtsfach, der Lehrplan (chương trình giảng dạy), die Berufswahl (việc chọn nghề), der Ausbildungsplatz (chỗ học nghề). Về đi học: die Anwesenheit (sự có mặt), die Fehlzeit (số buổi vắng). Prüfungsangst (nỗi sợ thi cử) chỉ có số ít."
+  - type: explain
+    text:
+      vi: "Động từ học tập: mitschreiben (ghi chép khi nghe giảng: schreibt mit, schrieb mit, hat mitgeschrieben), nachschlagen (tra cứu: schlägt nach, schlug nach, hat nachgeschlagen), vortragen (trình bày), abbrechen (bỏ dở: bricht ab, brach ab, hat abgebrochen), promovieren (làm tiến sĩ). Tính từ: begabt, mündlich, schriftlich."
+  - type: deep_explain
+    text:
+      vi: "Mündlich và schriftlich là cặp thường gặp trong kỳ thi: die mündliche Prüfung (thi vấn đáp), die schriftliche Prüfung (thi viết). Begabt nghĩa là có năng khiếu; ein begabter Schüler. Das Referat thường dài khoảng 15 đến 20 phút trong hội thảo (Seminar), và die Abschlussarbeit được hướng dẫn bởi der Betreuer hoặc die Betreuerin."
+  - type: example
+    target: Zur Bewerbung gehört das Abschlusszeugnis.
+    target_lang: de
+    translation:
+      vi: Hồ sơ xin việc cần có bằng tốt nghiệp.
+    note:
+      vi: das Abschlusszeugnis = bằng, học bạ tốt nghiệp.
+  - type: example
+    target: Gegen Prüfungsangst hilft gute Vorbereitung.
+    target_lang: de
+    translation:
+      vi: Chuẩn bị tốt giúp chống lại nỗi sợ thi.
+    note:
+      vi: die Prüfungsangst = nỗi sợ thi cử.
+  - type: example
+    target: Der Lehrplan sieht zwei Stunden Sport pro Woche vor.
+    target_lang: de
+    translation:
+      vi: Chương trình giảng dạy quy định hai giờ thể dục mỗi tuần.
+    note:
+      vi: der Lehrplan = chương trình giảng dạy.
+  - type: example
+    target: Mathematik ist ein Unterrichtsfach für alle Schüler.
+    target_lang: de
+    translation:
+      vi: Toán là môn học dành cho mọi học sinh.
+    note:
+      vi: das Unterrichtsfach = môn học trong trường.
+  - type: common_mistake
+    wrong: Er hat sein Studium abgebrechen.
+    right: Er hat sein Studium abgebrochen.
+    target_lang: de
+    note:
+      vi: Partizip II của abbrechen là abgebrochen (động từ tách, bất quy tắc).
+  - type: common_mistake
+    wrong: Ich habe die Wörter im Wörterbuch nachgeschlagt.
+    right: Ich habe die Wörter im Wörterbuch nachgeschlagen.
+    target_lang: de
+    note:
+      vi: "Nachschlagen là động từ bất quy tắc: schlug nach, hat nachgeschlagen."
+  - type: summary
+    points:
+      - vi: abbrechen, mitschreiben, nachschlagen, vortragen, promovieren; begabt, mündlich, schriftlich.
+exercises:
+  - key: de:exercise:b1w4l5-listen-master
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-master
+    prompt:
+      audio_asset_id: null
+      fallback_text: Er hat seinen Master in Informatik gemacht.
+      options:
+        - { id: cw6, text: Trong khóa học này việc có mặt là bắt buộc., lang: vi }
+        - { id: pd6, text: Anh ấy học thạc sĩ ngành tin học., lang: vi }
+        - { id: h47, text: Sau cử nhân tôi muốn học tiếp thạc sĩ., lang: vi }
+        - { id: i0e, text: Anh ấy đã bỏ dở việc học sau hai học kỳ., lang: vi }
+    answer:
+      correct_option_id: pd6
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Anh ấy học thạc sĩ ngành tin học.". Từ khoá là der Master (bằng thạc sĩ; thạc sĩ); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Anh ấy học thạc sĩ ngành tin học.
+  - key: de:exercise:b1w4l5-mcq-vi-de-doktorarbeit
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b1w4-doktorarbeit
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "luận án tiến sĩ"?
+      stem_lang: vi
+      options:
+        - { id: xjg, text: die Doktorarbeit, lang: de }
+        - { id: bna, text: der Betreuer, lang: de }
+        - { id: lxi, text: die Lernplattform, lang: de }
+        - { id: waa, text: das Unterrichtsfach, lang: de }
+    answer:
+      correct_option_id: xjg
+    explanation:
+      vi: "die Doktorarbeit nghĩa là \"luận án tiến sĩ\". Ví dụ: Für die Doktorarbeit braucht man oft mehrere Jahre. (Luận án tiến sĩ thường cần nhiều năm.)"
+    display_answer: die Doktorarbeit
+  - key: de:exercise:b1w4l5-mcq-de-vi-studienfach
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b1w4-studienfach
+    prompt:
+      stem: "\"das Studienfach\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: bmd, text: "người hướng dẫn, người phụ trách", lang: vi }
+        - { id: es5, text: số buổi vắng mặt, lang: vi }
+        - { id: vuw, text: "bằng miệng, vấn đáp", lang: vi }
+        - { id: a33, text: ngành học, lang: vi }
+    answer:
+      correct_option_id: a33
+    explanation:
+      vi: "das Studienfach nghĩa là \"ngành học\". Ví dụ: Welches Studienfach hast du gewählt? (Bạn đã chọn ngành học nào?)"
+    display_answer: ngành học
+  - key: de:exercise:b1w4l5-mcq-artikel-fehlzeit
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-fehlzeit
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Fehlzeit\" (số buổi vắng mặt): ___ Fehlzeit"
+      stem_lang: vi
+      options:
+        - { id: yum, text: die, lang: de }
+        - { id: emo, text: ein, lang: de }
+        - { id: c68, text: das, lang: de }
+        - { id: vuy, text: der, lang: de }
+    answer:
+      correct_option_id: yum
+    explanation:
+      vi: "Fehlzeit là danh từ giống cái (die): die Fehlzeit; số nhiều: die Fehlzeiten. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b1w4l5-tr-word-referat
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-referat
+    prompt:
+      source_text: bài thuyết trình, báo cáo (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - das Referat
+    known_wrong:
+      - answer: der Referat
+        feedback_vi: Referat là giống trung, nên là das Referat.
+        error_tag: article
+      - answer: die Referat
+        feedback_vi: Referat là giống trung, nên là das Referat.
+        error_tag: article
+    explanation:
+      vi: "\"bài thuyết trình, báo cáo\" trong tiếng Đức là das Referat (số nhiều: die Referate). Ví dụ: Ich muss nächste Woche ein Referat halten."
+    display_answer: das Referat
+  - key: de:exercise:b1w4l5-tr-word-abbrechen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-abbrechen
+    prompt:
+      source_text: bỏ dở, dừng giữa chừng (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - abbrechen
+    explanation:
+      vi: "\"bỏ dở, dừng giữa chừng\" trong tiếng Đức là abbrechen. Ví dụ: Er hat sein Studium nach zwei Semestern abgebrochen."
+    display_answer: abbrechen
+  - key: de:exercise:b1w4l5-fill-plural-lernplattform
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-lernplattform
+    prompt:
+      template: "Singular: die Lernplattform · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 17 }
+    answer:
+      blanks:
+        b1:
+          - Lernplattformen
+    known_wrong:
+      - answer: Lernplattform
+        feedback_vi: Lernplattform là dạng số ít; số nhiều là Lernplattformen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Lernplattform là die Lernplattformen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Lernplattform · Plural: die Lernplattformen"
+  - key: de:exercise:b1w4l5-mcq-luecke-abschlusszeugnis
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b1w4-abschlusszeugnis
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Hồ sơ xin việc cần có bằng tốt nghiệp.\": Zur Bewerbung gehört das ___."
+      stem_lang: vi
+      options:
+        - { id: z2g, text: Abschlusszeugnis, lang: de }
+        - { id: g4y, text: Ausbildungsplatz, lang: de }
+        - { id: lvs, text: Berufswahl, lang: de }
+        - { id: hob, text: Studienfach, lang: de }
+    answer:
+      correct_option_id: z2g
+    explanation:
+      vi: "Câu có nghĩa \"Hồ sơ xin việc cần có bằng tốt nghiệp.\" nên cần Abschlusszeugnis (das Abschlusszeugnis: bằng, học bạ tốt nghiệp). Studienfach = ngành học; Berufswahl = việc chọn nghề; Ausbildungsplatz = chỗ học nghề không đúng nghĩa của câu."
+    display_answer: Abschlusszeugnis
+  - key: de:exercise:b1w4l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Ich schreibe gerade meine Abschlussarbeit, und mein Betreuer hat mir gesagt, dass ich bald ein Referat halten muss.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Ich schreibe gerade meine Abschlussarbeit, und mein Betreuer hat mir gesagt, dass ich bald ein Referat halten muss.
+        - Gerade schreibe ich meine Abschlussarbeit, und mein Betreuer hat gesagt, dass ich bald ein Referat halten muss.
+        - Ich schreibe zurzeit meine Abschlussarbeit, und mein Betreuer hat mir gesagt, ich müsse bald ein Referat halten.
+    explanation:
+      vi: "Gợi ý đáp án: Ich schreibe gerade meine Abschlussarbeit, und mein Betreuer hat mir gesagt, dass ich bald ein Referat halten muss. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Ich schreibe gerade meine Abschlussarbeit, und mein Betreuer hat mir gesagt, dass ich bald ein Referat halten muss.
+    item: de:item:b1w4-referat
+  - key: de:exercise:b1w4l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Weil sie sehr begabt ist, hat sie ihr Studium früher als geplant beendet und will jetzt promovieren.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì rất có năng khiếu, cô ấy kết thúc việc học sớm hơn dự định và giờ muốn làm tiến sĩ.
+        - Do có năng khiếu, cô ấy đã học xong sớm hơn kế hoạch và bây giờ muốn lấy bằng tiến sĩ.
+        - Vì cô ấy rất giỏi, cô đã hoàn thành chương trình sớm hơn dự kiến và bây giờ muốn bảo vệ luận án tiến sĩ.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Weil sie sehr begabt ist, hat sie ihr Studium früher als geplant beendet und will jetzt promovieren.\" nghĩa là: Vì rất có năng khiếu, cô ấy kết thúc việc học sớm hơn dự định và giờ muốn làm tiến sĩ. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Vì rất có năng khiếu, cô ấy kết thúc việc học sớm hơn dự định và giờ muốn làm tiến sĩ.
+    item: de:item:b1w4-promovieren
