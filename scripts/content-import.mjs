@@ -23,6 +23,7 @@ import { importResultSchema } from '@linguo/shared';
 import { buildBundle, renderSeedSql } from './content/build.mjs';
 import { checkContent, sharedGrader } from './content/check.mjs';
 import { formatIssue, lintGerman } from './content/german-lint.mjs';
+import { japaneseLint } from './content/japanese-lint.mjs';
 import { buildDiagnosticBundle, renderDiagnosticSql } from './content/diagnostic.mjs';
 import { buildExamBundle, examFiles, renderExamSql } from './content/exam.mjs';
 import { loadContent } from './content/load.mjs';
@@ -82,6 +83,10 @@ export async function main(
   const german = await lintGerman({ contentDir: dir, label: display(dir, cwd), speller: germanSpeller });
   for (const w of german.warnings) log(`warning: ${formatIssue(w)}`);
   errors.push(...german.errors.map(formatIssue));
+  // Japanese lint (kanji in a reading, display answer that does not grade correct, duplicate cards).
+  const japanese = japaneseLint(loaded.files);
+  for (const w of japanese.warnings) log(`warning: ${w}`);
+  errors.push(...japanese.errors);
   if (errors.length) {
     for (const e of errors) error(e);
     error(`\n${errors.length} content error(s).`);

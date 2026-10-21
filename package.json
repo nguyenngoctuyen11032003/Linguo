@@ -12,7 +12,7 @@
     "preview": "pnpm --filter @linguo/web preview",
     "lint": "eslint .",
     "typecheck": "pnpm -r typecheck",
-    "test": "node scripts/check-migrations-immutable.mjs && pnpm -r test && node --test scripts/check-public-env.test.mjs scripts/check-migrations-immutable.test.mjs scripts/sync-grading-fixtures.test.mjs scripts/sync-fsrs-fixtures.test.mjs scripts/sync-diagnostic-fixtures.test.mjs scripts/sync-exam-grading-fixtures.test.mjs scripts/sync-ai-contract.test.mjs scripts/check-bundle-secrets.test.mjs scripts/check-bundle-size.test.mjs scripts/smoke.test.mjs scripts/german-lint.test.mjs && node --import tsx --test scripts/content-import.test.mjs scripts/generate-audio.test.mjs",
+    "test": "node scripts/check-migrations-immutable.mjs && pnpm -r test && node --test scripts/check-public-env.test.mjs scripts/check-migrations-immutable.test.mjs scripts/sync-grading-fixtures.test.mjs scripts/sync-fsrs-fixtures.test.mjs scripts/sync-diagnostic-fixtures.test.mjs scripts/sync-exam-grading-fixtures.test.mjs scripts/sync-ai-contract.test.mjs scripts/check-bundle-secrets.test.mjs scripts/check-bundle-size.test.mjs scripts/smoke.test.mjs scripts/german-lint.test.mjs && node --import tsx --test scripts/content-import.test.mjs scripts/generate-audio.test.mjs scripts/japanese-lint.test.mjs",
     "e2e": "pnpm --filter @linguo/web e2e",
     "icons": "node scripts/make-icons.mjs",
     "check-env": "node scripts/check-public-env.mjs",
