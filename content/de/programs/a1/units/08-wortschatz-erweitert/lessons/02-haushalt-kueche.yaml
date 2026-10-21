@@ -99,7 +99,9 @@ body:
       vi: Gabel là giống cái; dùng eine, không dùng ein.
   - type: summary
     points:
-      - vi: Wo ist …? hỏi đồ vật ở đâu; Ich brauche + Akkusativ nói bạn cần gì.
+      - vi: "Đuôi -er thường là giống đực (der Eimer, der Wecker, der Staubsauger); đuôi -e thường là giống cái (die Gabel, die Pfanne, die Decke). Vẫn nên học cả mạo từ."
+      - vi: "das Besteck (Sg.) là bộ dao dĩa nói chung; das Messer, die Gabel, der Löffel là từng món."
+      - vi: "Wo ist …? hỏi đồ vật ở đâu; Ich brauche + Akkusativ nói bạn cần gì."
 exercises:
   - key: de:exercise:a1w1l2-listen-wecker
     type: listen

@@ -101,7 +101,9 @@ body:
       vi: Siegen không có tân ngữ; muốn nói đánh bại ai thì dùng besiegen + Akkusativ.
   - type: summary
     points:
-      - vi: der Marathon, die Medaille, der Rekord, die Meisterschaft; siegen, besiegen, anfeuern; durchtrainiert, beweglich.
+      - vi: "die Kondition, die Ausdauer, der Muskel, die Trainingseinheit, das Fitnessprogramm, die Dehnübung, die Sporthalle, das Schwimmbecken."
+      - vi: "die Verletzung, die Zerrung, der Muskelkater (Sg.); sich dehnen, aufwärmen, durchhalten."
+      - vi: "der Marathon, die Medaille, der Rekord, die Meisterschaft; siegen, besiegen, anfeuern; durchtrainiert, beweglich."
 exercises:
   - key: de:exercise:b1w2l3-listen-wanderweg
     type: listen

@@ -101,7 +101,9 @@ body:
       vi: "Giống của từ ghép theo thành phần cuối: der Automat nên der Fahrkartenautomat."
   - type: summary
     points:
-      - vi: pendeln, überqueren, kontrollieren, ausweichen (wich aus, ist ausgewichen), umleiten, blockieren.
+      - vi: "der Pendler, die Fahrgemeinschaft, das Monatsticket, der Berufsverkehr, der Anschluss, das Carsharing."
+      - vi: "die Einbahnstraße, die Sackgasse, der Zebrastreifen, der Bürgersteig, die Umweltzone, der Umweg, die Abkürzung."
+      - vi: "pendeln, überqueren, kontrollieren, ausweichen (wich aus, ist ausgewichen), umleiten, blockieren."
 exercises:
   - key: de:exercise:b1w1l1-listen-pendler
     type: listen

@@ -101,7 +101,9 @@ body:
       vi: Sau an + Akkusativ, danh từ giống đực là den/meinen Kollegen (n-Deklination).
   - type: summary
     points:
-      - vi: absprechen, weitergeben, informieren, ankündigen, einplanen, koordinieren, vertagen; eilig, vertraulich, vorläufig, rechtzeitig.
+      - vi: "der Terminkalender, die Sitzung, die Konferenz, die Videokonferenz, der Besprechungsraum, die Tagesordnung."
+      - vi: "die Mitteilung, die Rundmail, das Postfach, die Vorlage, der Entwurf, der Ansprechpartner, die Zuständigkeit."
+      - vi: "absprechen, weitergeben, informieren, ankündigen, einplanen, koordinieren, vertagen; eilig, vertraulich, vorläufig, rechtzeitig."
 exercises:
   - key: de:exercise:b1w3l2-listen-videokonferenz
     type: listen

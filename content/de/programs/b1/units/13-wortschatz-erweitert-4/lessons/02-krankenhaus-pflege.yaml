@@ -101,7 +101,9 @@ body:
       vi: Entlassen aus + Dativ; Partizip II + worden đứng cuối câu.
   - type: summary
     points:
-      - vi: einweisen, operieren, betäuben, genesen; stationär (nằm viện) ↔ ambulant (không nằm viện).
+      - vi: "die Station, die Intensivstation, der Operationssaal, die Krankenschwester, der Krankenpfleger, der Chirurg, die Besuchszeit."
+      - vi: "die Narkose, der Verband, der Gips, der Rollstuhl, die Krücke, die Blutabnahme, die Einweisung, die Rehabilitation, das Pflegeheim, die Pflegekraft, der Hausbesuch."
+      - vi: "einweisen, operieren, betäuben, genesen; stationär (nằm viện) ↔ ambulant (không nằm viện)."
 exercises:
   - key: de:exercise:b1w4l2-listen-blutabnahme
     type: listen

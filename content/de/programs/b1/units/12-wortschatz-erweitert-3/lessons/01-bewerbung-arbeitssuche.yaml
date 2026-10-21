@@ -99,7 +99,9 @@ body:
       vi: Bewerbungsunterlagen chỉ dùng ở số nhiều (hồ sơ gồm nhiều giấy tờ).
   - type: summary
     points:
-      - vi: sich vorstellen, einarbeiten, entlassen, ausbilden, nachreichen; arbeitssuchend, motiviert, erfahren, tabellarisch, handschriftlich.
+      - vi: "die Bewerbungsunterlagen (Pl.), das Bewerbungsschreiben, die Referenz, die Bewerbungsfrist, das Auswahlverfahren."
+      - vi: "die Berufsausbildung, die Lehre, der Lehrling, der Quereinsteiger, das Praktikum (Praktika), die Arbeitsagentur, das Arbeitslosengeld."
+      - vi: "sich vorstellen, einarbeiten, entlassen, ausbilden, nachreichen; arbeitssuchend, motiviert, tabellarisch, handschriftlich."
 exercises:
   - key: de:exercise:b1w3l1-listen-ausbilden
     type: listen

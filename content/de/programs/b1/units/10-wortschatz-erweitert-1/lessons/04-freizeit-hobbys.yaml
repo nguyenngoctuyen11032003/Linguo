@@ -101,7 +101,9 @@ body:
       vi: Sich langweilen là động từ phản thân, cần đại từ mich/dich/sich.
   - type: summary
     points:
-      - vi: stricken, nähen, basteln, zeichnen; sich langweilen; begeistert von + Dativ, sportlich, musikalisch.
+      - vi: "die Leidenschaft, der Zeitvertreib, der Sammler, die Handarbeit, das Rätsel, das Brettspiel, das Kartenspiel, das Gesellschaftsspiel, der Spielabend."
+      - vi: "das Instrument, der Chor, das Orchester; musizieren; der Schlafsack, die Angel; zelten."
+      - vi: "stricken, nähen, basteln, zeichnen; sich langweilen; begeistert von + Dativ, sportlich, musikalisch."
 exercises:
   - key: de:exercise:b1w1l4-listen-sportlich
     type: listen

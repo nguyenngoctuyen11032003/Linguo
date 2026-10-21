@@ -99,6 +99,8 @@ body:
       vi: Động từ có tiền tố be- không thêm ge- ở Partizip II.
   - type: summary
     points:
+      - vi: "be-, ent-, er-, ver-, zer- là tiền tố không tách: Partizip II không có ge- (benutzt, beschrieben, erkannt, entschieden, verkauft)."
+      - vi: "Động từ tách: vorbeikommen, ausgeben, aufpassen, ausleihen; Perfekt: vorbeigekommen, ausgegeben, aufgepasst, ausgeliehen."
       - vi: "sich verspäten: ich verspäte mich; Perfekt Ich habe mich verspätet."
 exercises:
   - key: de:exercise:a2w2l5-listen-ziehen

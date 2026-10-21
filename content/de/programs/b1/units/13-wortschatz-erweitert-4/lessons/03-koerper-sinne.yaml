@@ -101,6 +101,8 @@ body:
       vi: "Với bộ phận cơ thể của mình dùng mir (Dativ) và mạo từ xác định: mir den Daumen."
   - type: summary
     points:
+      - vi: "die Schulter, der Ellbogen, das Handgelenk, das Knie, der Knöchel, die Zehe, der Daumen, der Nacken, die Hüfte, die Brust, die Stirn, die Wange, das Kinn, die Zunge, die Lippe."
+      - vi: "das Zahnfleisch, das Gehirn, der Atem; der Geruch, der Geschmack, das Gehör; atmen, schlucken, spüren."
       - vi: "Ich habe mir das Knie verletzt / Mir tut die Schulter weh: Dativ mir + mạo từ xác định thay cho từ sở hữu."
 exercises:
   - key: de:exercise:b1w4l3-listen-schulter

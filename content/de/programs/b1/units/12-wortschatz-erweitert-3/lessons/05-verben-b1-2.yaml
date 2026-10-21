@@ -101,7 +101,9 @@ body:
       vi: "Folgen dùng sein ở Perfekt: ist gefolgt, và đi với Dativ."
   - type: summary
     points:
-      - vi: ausdrücken, beachten, bedauern, bedeuten, beeinflussen, bezweifeln, empfinden, erfüllen, ermöglichen, gestalten, lösen, regeln, schaffen, verwenden.
+      - vi: "bitten (um + Akk), erfahren, genießen, geschehen, halten, raten, unterscheiden: học cả ba dạng."
+      - vi: "folgen + Dativ (ist gefolgt), drohen + Dativ, umgehen mit + Dativ, raten + Dativ."
+      - vi: "ausdrücken, beachten, bedauern, bedeuten, beeinflussen, bezweifeln, empfinden, erfüllen, ermöglichen, gestalten, lösen, regeln, schaffen, verwenden."
 exercises:
   - key: de:exercise:b1w3l5-listen-geniessen
     type: listen

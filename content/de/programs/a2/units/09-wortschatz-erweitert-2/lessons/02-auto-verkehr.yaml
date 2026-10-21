@@ -99,7 +99,9 @@ body:
       vi: "Động từ tách ở Perfekt: phần ein đứng trước ge: eingeparkt (không phải einparkt)."
   - type: summary
     points:
-      - vi: tanken, bremsen, überholen (hat überholt), einparken (parkt ein, hat eingeparkt).
+      - vi: "der Motor, die Bremse, das Lenkrad, der Kofferraum, der Sicherheitsgurt; giống của từ ghép theo từ cuối."
+      - vi: "der Führerschein, die Fahrschule, das Verkehrsschild, die Vorfahrt, die Geschwindigkeit, der Fußgänger, der Radweg."
+      - vi: "tanken, bremsen, überholen (hat überholt), einparken (parkt ein, hat eingeparkt)."
 exercises:
   - key: de:exercise:a2w2l2-listen-vorfahrt
     type: listen

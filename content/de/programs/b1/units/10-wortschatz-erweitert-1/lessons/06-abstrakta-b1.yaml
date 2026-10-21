@@ -100,7 +100,9 @@ body:
       vi: Với Grund, giới từ cố định là für + Akkusativ, không dùng von.
   - type: summary
     points:
-      - vi: einen Eindruck machen, eine Rolle spielen, einen Entschluss fassen, Schwierigkeiten haben; Grund für + Akk.
+      - vi: "Đuôi -ung, -heit, -keit, -tion luôn giống cái: die Veränderung, die Sicherheit, die Möglichkeit, die Situation."
+      - vi: "der Grund, der Anlass, der Zweck, der Zustand, der Eindruck, der Entschluss, der Anfang; das Bedürfnis, das Verhältnis; die Rolle."
+      - vi: "einen Eindruck machen, eine Rolle spielen, einen Entschluss fassen, Schwierigkeiten haben; Grund für + Akk."
 exercises:
   - key: de:exercise:b1w1l6-listen-zweck
     type: listen

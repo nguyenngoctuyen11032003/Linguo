@@ -100,7 +100,9 @@ body:
       vi: "Bị động cần Partizip II: wird abgebucht (abbuchen là động từ tách)."
   - type: summary
     points:
-      - vi: abbuchen, zurückzahlen, versichern, absetzen, sich verschulden; verschuldet, versichert, steuerpflichtig.
+      - vi: "das Girokonto, das Sparkonto (Sparkonten), der Kontostand, der Kontoauszug, der Kredit, das Darlehen, die Rate, der Zinssatz."
+      - vi: "die Krankenversicherung, die Sozialversicherung, die Haftpflichtversicherung, die Steuererklärung, die Lohnsteuer, die Geldanlage."
+      - vi: "abbuchen, zurückzahlen, versichern, absetzen, sich verschulden; verschuldet, versichert, steuerpflichtig."
 exercises:
   - key: de:exercise:b1w3l4-listen-zinssatz
     type: listen

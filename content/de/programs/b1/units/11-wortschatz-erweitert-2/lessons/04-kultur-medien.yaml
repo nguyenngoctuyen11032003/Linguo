@@ -101,7 +101,9 @@ body:
       vi: Ban nhạc là die Band (giống cái, số nhiều die Bands).
   - type: summary
     points:
-      - vi: der Bestseller, das Taschenbuch, das Hörbuch, das Streaming, die Mediathek; spannend, gruselig, rührend, fesselnd.
+      - vi: "das Kinoprogramm, die Kinokarte, die Leinwand, der Trailer, die Filmmusik, der Untertitel, der Zeichentrickfilm, der Drehort."
+      - vi: "die Band, das Lied, die Melodie, das Album (Alben), die Eintrittskarte, der Besucher; auftreten, verfilmen."
+      - vi: "der Bestseller, das Taschenbuch, das Hörbuch, das Streaming, die Mediathek; spannend, gruselig, rührend, fesselnd."
 exercises:
   - key: de:exercise:b1w2l4-listen-album
     type: listen

@@ -100,6 +100,8 @@ body:
       vi: "Sau số từ lớn hơn một, danh từ phải ở số nhiều: die Maus → die Mäuse (có thêm dấu ¨ trên nguyên âm)."
   - type: summary
     points:
+      - vi: "der Hase, der Bär, der Löwe, der Affe, der Elefant (giống đực) · die Kuh, die Ente, die Maus, die Spinne (giống cái) · das Pferd, das Schwein, das Schaf, das Huhn, das Tier (giống trung)."
+      - vi: "Số nhiều không đoán được: die Pferde, die Kühe, die Hühner, die Mäuse, die Enten. Đọc ký hiệu sau dấu phẩy và học thuộc."
       - vi: "Es gibt + Akkusativ để nói có gì ở đâu: Im Zoo gibt es viele Tiere."
 exercises:
   - key: de:exercise:a1w1l1-listen-wolke

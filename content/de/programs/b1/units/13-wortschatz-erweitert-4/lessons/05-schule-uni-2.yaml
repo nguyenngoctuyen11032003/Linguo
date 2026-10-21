@@ -101,7 +101,9 @@ body:
       vi: "Nachschlagen là động từ bất quy tắc: schlug nach, hat nachgeschlagen."
   - type: summary
     points:
-      - vi: abbrechen, mitschreiben, nachschlagen, vortragen, promovieren; begabt, mündlich, schriftlich.
+      - vi: "das Abschlusszeugnis, der Bachelor, der Master, die Abschlussarbeit, die Doktorarbeit, das Referat, die Gruppenarbeit, der Betreuer."
+      - vi: "das Studienfach, das Unterrichtsfach, der Lehrplan, die Berufswahl, der Ausbildungsplatz, die Anwesenheit, die Fehlzeit, die Prüfungsangst, die Lernplattform."
+      - vi: "abbrechen, mitschreiben, nachschlagen, vortragen, promovieren; begabt, mündlich, schriftlich."
 exercises:
   - key: de:exercise:b1w4l5-listen-master
     type: listen

@@ -99,7 +99,9 @@ body:
       vi: "Fangen là động từ bất quy tắc: fängt, fing, hat gefangen."
   - type: summary
     points:
-      - vi: schießen – schoss – hat geschossen; werfen – warf – hat geworfen; fangen – fing – hat gefangen; Stadion → Stadien.
+      - vi: "spielen (Fußball, Tennis), gehen (schwimmen gehen), machen (Sport, Yoga); môn riêng: reiten, angeln, segeln, turnen."
+      - vi: "die Mannschaft, der Trainer, der Schiedsrichter, der Fan, der Sieger; der Sieg ↔ die Niederlage."
+      - vi: "schießen – schoss – hat geschossen; werfen – warf – hat geworfen; fangen – fing – hat gefangen; Stadion → Stadien."
 exercises:
   - key: de:exercise:a2w2l1-listen-segeln
     type: listen

@@ -101,7 +101,9 @@ body:
       vi: Tính từ là ansteckend (Partizip I), không phải Partizip II.
   - type: summary
     points:
-      - vi: die Impfung, der Impfstoff, die Ansteckung; impfen, sich anstecken, niesen; ansteckend.
+      - vi: "die Grippe, das Asthma, der Diabetes, die Infektion, die Verstauchung, der Bruch, die Wunde, die Blutung."
+      - vi: "die Atemnot, die Übelkeit, der Schwindel, der Durchfall; der Magen, das Herz, die Lunge, der Knochen, das Gelenk."
+      - vi: "die Impfung, der Impfstoff, die Ansteckung; impfen, sich anstecken, niesen; ansteckend."
 exercises:
   - key: de:exercise:b1w4l1-listen-blutung
     type: listen

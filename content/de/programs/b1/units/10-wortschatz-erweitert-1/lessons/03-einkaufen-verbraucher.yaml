@@ -102,7 +102,9 @@ body:
       vi: Billig thường mang nghĩa giá rẻ chất lượng thấp, không đi cùng hochwertig; preiswert mới có nghĩa giá hợp lý cho chất lượng cao.
   - type: summary
     points:
-      - vi: preiswert, hochwertig, minderwertig; ausprobieren; begleichen; der Kaufvertrag, die Kaufentscheidung.
+      - vi: "der Preisvergleich, die Auswahl, die Menge, der Inhalt, die Probe, das Muster, der Händler, der Berater."
+      - vi: "die Kundenkarte, die Zahlungsart, die Überweisung, der Dauerauftrag, die Lastschrift, die Ratenzahlung, die Mahnung, bargeldlos."
+      - vi: "preiswert, hochwertig, minderwertig; ausprobieren; begleichen; der Kaufvertrag, die Kaufentscheidung."
 exercises:
   - key: de:exercise:b1w1l3-listen-probe
     type: listen

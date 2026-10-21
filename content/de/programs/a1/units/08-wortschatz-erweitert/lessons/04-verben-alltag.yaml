@@ -98,7 +98,9 @@ body:
       vi: Với người, dùng kennen; wissen dùng với thông tin hoặc câu phụ.
   - type: summary
     points:
-      - vi: kennen cho người và nơi chốn; wissen cho thông tin.
+      - vi: "laufen → du läufst, er läuft; waschen → du wäschst, er wäscht; backen → er backt."
+      - vi: "Động từ tách: aufmachen, zumachen, ausmachen, mitkommen, mitnehmen; phần tách đứng cuối câu chính."
+      - vi: "kennen cho người và nơi chốn; wissen cho thông tin."
 exercises:
   - key: de:exercise:a1w1l4-listen-mitkommen
     type: listen

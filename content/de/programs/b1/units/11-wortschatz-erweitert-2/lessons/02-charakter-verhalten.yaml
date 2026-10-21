@@ -101,7 +101,9 @@ body:
       vi: "Sau giới từ von dùng Dativ: ihr, không phải sie."
   - type: summary
     points:
-      - vi: der Charakterzug, das Selbstbewusstsein, die Geduld, die Pünktlichkeit, die Freundlichkeit, das Benehmen.
+      - vi: "geduldig – ungeduldig, zuverlässig – unzuverlässig, pünktlich – unpünktlich, sicher – unsicher."
+      - vi: "temperamentvoll, bescheiden, arrogant, eingebildet, faul, chaotisch, verschlossen, selbstbewusst, ängstlich, nachdenklich, lebhaft, gelassen, launisch, gesprächig."
+      - vi: "der Charakterzug, das Selbstbewusstsein, die Geduld, die Pünktlichkeit, die Freundlichkeit, das Benehmen."
 exercises:
   - key: de:exercise:b1w2l2-listen-eingebildet
     type: listen

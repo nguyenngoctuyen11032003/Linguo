@@ -101,7 +101,9 @@ body:
       vi: Verwechseln dùng với mit + Dativ.
   - type: summary
     points:
-      - vi: korrigieren, aussprechen, sich ausdrücken, sich verständigen, verwechseln, markieren, unterstreichen; verständlich, fehlerfrei, korrekt.
+      - vi: "die Aussprache, die Rechtschreibung, der Satzbau, die Zeitform, die Übersetzung, das Hörverstehen, das Leseverstehen, der Lückentext, der Ausdruck."
+      - vi: "das Lernziel, der Lernfortschritt, die Lernmethode, die Prüfungsvorbereitung, der Sprachkurs."
+      - vi: "korrigieren, aussprechen, sich ausdrücken, sich verständigen, verwechseln, markieren, unterstreichen; verständlich, fehlerfrei, korrekt."
 exercises:
   - key: de:exercise:b1w4l6-listen-pruefungsvorbereitung
     type: listen

@@ -101,7 +101,9 @@ body:
       vi: "Sehen đòi hỏi tân ngữ Akkusativ: ihn, không phải ihm."
   - type: summary
     points:
-      - vi: irgendwo, irgendwie, nirgends; trạng từ đứng đầu câu thì động từ chia ở vị trí thứ hai.
+      - vi: "allerdings, jedenfalls, übrigens, schließlich, sowieso, ohnehin, insgesamt, zumindest, teilweise, ebenfalls."
+      - vi: "vorhin, zuletzt, zunächst, zurzeit, weiterhin, bereits; hoffentlich, offenbar, anscheinend, eigentlich, sogar."
+      - vi: "irgendwo, irgendwie, nirgends; trạng từ đứng đầu câu thì động từ chia ở vị trí thứ hai."
 exercises:
   - key: de:exercise:b1w2l6-listen-irgendwie
     type: listen

@@ -97,7 +97,9 @@ body:
       vi: Nghề của phụ nữ dùng dạng nữ (-in); nhớ đổi a thành ä trong Zahnärztin.
   - type: summary
     points:
-      - vi: die Arbeit chỉ có số ít; ich habe viel Arbeit; ich bin bei der Arbeit.
+      - vi: "Dạng nữ thường thêm -in (Bäckerin, Fotografin); Zahnarzt → Zahnärztin; số nhiều dạng nữ là -nen."
+      - vi: "Nói nghề của mình thì bỏ ein/eine: Ich bin Programmierer. Có tính từ thì dùng: Er ist ein guter Fotograf."
+      - vi: "die Arbeit chỉ có số ít; ich habe viel Arbeit; ich bin bei der Arbeit."
 exercises:
   - key: de:exercise:a1w1l3-listen-tierarzt
     type: listen

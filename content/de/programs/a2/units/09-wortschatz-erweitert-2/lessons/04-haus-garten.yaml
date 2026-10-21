@@ -100,7 +100,9 @@ body:
       vi: Perfekt dùng haben + Partizip II (gemäht), không dùng nguyên thể.
   - type: summary
     points:
-      - vi: streichen (strich, hat gestrichen), bohren, sägen, mähen, graben (gräbt, grub, hat gegraben), pflanzen, ernten.
+      - vi: "das Dach, die Mauer, der Schornstein, die Haustür, der Dachboden, die Garage, der Hof; der Rasen, der Zaun, die Hecke."
+      - vi: "der Hammer, der Nagel, die Schraube, der Schraubenzieher, der Pinsel, die Farbe; das Werkzeug."
+      - vi: "streichen (strich, hat gestrichen), bohren, sägen, mähen, graben (gräbt, grub, hat gegraben), pflanzen, ernten."
 exercises:
   - key: de:exercise:a2w2l4-listen-rasen
     type: listen

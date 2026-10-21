@@ -99,7 +99,9 @@ body:
       vi: Dùng mệnh đề zu-Infinitiv, không dùng für + zu; có dấu phẩy trước mệnh đề.
   - type: summary
     points:
-      - vi: "cụm cố định: in der Mitte, auf diese Weise, in Gefahr, in Ordnung, mit Hilfe von, zum Teil, im Gegenteil."
+      - vi: "die Antwort, die Auswirkung, die Beschreibung, die Dauer, die Entfernung, die Erlaubnis, die Gefahr, die Hilfe, die Mitte, die Ordnung, die Ruhe, die Spur, die Weise."
+      - vi: "der Besuch, der Einfall, der Umfang, der Verlauf, der Teil, das Beispiel, das Gegenteil, die Kraft, das Zeichen."
+      - vi: "Cụm cố định: in der Mitte, auf diese Weise, in Gefahr, in Ordnung, mit Hilfe von, zum Teil, im Gegenteil."
 exercises:
   - key: de:exercise:b1w3l6-listen-spur
     type: listen

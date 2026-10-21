@@ -100,7 +100,9 @@ body:
       vi: "Sau đơn vị Kilo, danh từ đếm được đi ở số nhiều: Erdbeeren."
   - type: summary
     points:
-      - vi: "Số lượng: ein Kilo Erdbeeren, 500 Gramm Pilze, zwei Zitronen, ein Stück Marmelade nghĩa là một lát hoặc miếng phù hợp ngữ cảnh."
+      - vi: "Tên trái cây tận cùng -e thường là giống cái, số nhiều thêm -n: die Birne, die Kirsche, die Erdbeere, die Traube, die Zitrone, die Bohne."
+      - vi: "Danh từ không đếm được (Sg.): Mehl, Pfeffer, Honig, Knoblauch, Spinat, Kohl; nói Mehl, ein Kilo Mehl."
+      - vi: "Số lượng: ein Kilo Erdbeeren, 500 Gramm Pilze, zwei Zitronen."
 exercises:
   - key: de:exercise:a2w1l1-listen-birne
     type: listen

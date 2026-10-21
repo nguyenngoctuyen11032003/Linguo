@@ -99,7 +99,9 @@ body:
       vi: "Gelingen dùng sein ở Perfekt: ist gelungen, và người đứng ở Dativ (mir)."
   - type: summary
     points:
-      - vi: "stattfinden, fortsetzen, ansehen, ausgehen, reichen: động từ tách nên phần tách đứng cuối câu chính."
+      - vi: "bieten, anbieten, aufgeben, annehmen, behalten, betragen, eintragen, verbieten, übernehmen, unternehmen."
+      - vi: "achten (auf), überlegen, erlauben, enttäuschen, überraschen, scheitern (ist gescheitert), gelingen (ist gelungen)."
+      - vi: "stattfinden, fortsetzen, ansehen, ausgehen, eintragen: động từ tách nên phần tách đứng cuối câu chính."
 exercises:
   - key: de:exercise:b1w1l5-listen-gelingen
     type: listen

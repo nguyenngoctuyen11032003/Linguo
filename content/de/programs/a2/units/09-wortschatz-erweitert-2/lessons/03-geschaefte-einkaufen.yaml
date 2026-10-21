@@ -99,7 +99,9 @@ body:
       vi: Bar là trạng từ, không cần mit; mit Karte là bằng thẻ.
   - type: summary
     points:
-      - vi: das Sonderangebot, der Schlussverkauf, reduziert, der Umtausch.
+      - vi: "der Blumenladen, die Buchhandlung, die Drogerie, der Kiosk, das Lebensmittelgeschäft, das Warenhaus, das Einkaufszentrum, die Fußgängerzone."
+      - vi: "der Kassenbon, die Quittung, das Wechselgeld, das Kleingeld; bar zahlen / mit Karte zahlen."
+      - vi: "das Sonderangebot, der Schlussverkauf, reduziert, der Umtausch."
 exercises:
   - key: de:exercise:a2w2l3-listen-kleingeld
     type: listen

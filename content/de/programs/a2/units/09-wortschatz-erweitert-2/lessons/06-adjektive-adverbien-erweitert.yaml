@@ -100,7 +100,9 @@ body:
       vi: Sau sein, tính từ không thêm đuôi; chỉ thêm đuôi khi đứng trước danh từ (eine gefährliche Straße).
   - type: summary
     points:
-      - vi: gewöhnlich, meistens, selten (tần suất); lange (thời gian), weiter (tiếp tục), außerdem (ngoài ra).
+      - vi: "Cùng dạng cho tính từ và trạng từ: Er fährt vorsichtig; Die Straße ist gefährlich."
+      - vi: "etwa, mindestens, höchstens + số; ungefähr đã học."
+      - vi: "gewöhnlich, meistens, selten (tần suất); lange (thời gian), weiter (tiếp tục), außerdem (ngoài ra)."
 exercises:
   - key: de:exercise:a2w2l6-listen-hoechstens
     type: listen

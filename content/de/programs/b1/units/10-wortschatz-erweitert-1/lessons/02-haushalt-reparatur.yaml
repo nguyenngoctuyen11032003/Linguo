@@ -101,7 +101,9 @@ body:
       vi: Partizip II đứng cuối câu; mốc thời gian gestern đứng trước nó.
   - type: summary
     points:
-      - vi: tapezieren, montieren, anbringen, befestigen, abdichten, ausmessen, austauschen; tropfen, verstopfen.
+      - vi: "der Bohrer, die Zange, der Dübel, das Maßband, die Wasserwaage, die Glühbirne, die Sicherung."
+      - vi: "der Wasserhahn, der Abfluss, das Rohr, die Fliese, die Tapete, der Schimmel; feucht."
+      - vi: "tapezieren, montieren, anbringen, befestigen, abdichten, ausmessen, austauschen; tropfen, verstopfen."
 exercises:
   - key: de:exercise:b1w1l2-listen-anbringen
     type: listen

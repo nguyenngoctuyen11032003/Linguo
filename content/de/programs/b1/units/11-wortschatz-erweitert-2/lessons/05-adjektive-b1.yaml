@@ -101,7 +101,9 @@ body:
       vi: "Trong câu phụ với dass, động từ chia đứng cuối: dass er nicht kommt."
   - type: summary
     points:
-      - vi: Sau sein, tính từ không đổi đuôi; trước danh từ có đuôi theo giống, cách và mạo từ.
+      - vi: "ausreichend, bekannt, beliebt, bereit, dringend, eigenartig, empfindlich, endgültig, entfernt, ernsthaft."
+      - vi: "heimlich, hilflos, kostbar, künstlich, lästig, mühsam, nötig, offensichtlich, selbstverständlich, sorgfältig, sparsam, tatsächlich, übrig, unglaublich."
+      - vi: "Sau sein, tính từ không đổi đuôi; trước danh từ có đuôi theo giống, cách và mạo từ."
 exercises:
   - key: de:exercise:b1w2l5-listen-empfindlich
     type: listen

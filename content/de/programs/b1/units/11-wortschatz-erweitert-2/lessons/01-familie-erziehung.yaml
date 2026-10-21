@@ -101,7 +101,9 @@ body:
       vi: "Sau sein, tính từ là Partizip II: verwöhnt, không phải nguyên thể."
   - type: summary
     points:
-      - vi: der Säugling, die Windel, wickeln; gehorsam, brav, verwöhnt, alleinerziehend, kinderlieb.
+      - vi: "die Erziehung, das Vorbild, die Belohnung, der Umgang, das Taschengeld; erziehen, aufziehen, bestrafen, belohnen, verwöhnen."
+      - vi: "die Kinderbetreuung, die Krippe, der Kindergartenplatz, die Elternzeit, das Elterngeld, die Großfamilie, der Babysitter."
+      - vi: "der Säugling, die Windel, wickeln; gehorsam, brav, verwöhnt, alleinerziehend, kinderlieb."
 exercises:
   - key: de:exercise:b1w2l1-listen-gehorsam
     type: listen

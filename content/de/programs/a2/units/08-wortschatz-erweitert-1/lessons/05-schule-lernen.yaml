@@ -100,7 +100,9 @@ body:
       vi: "Abschreiben là động từ bất quy tắc: schreibt ab, schrieb ab, hat abgeschrieben."
   - type: summary
     points:
-      - vi: rechnen, buchstabieren, abschreiben (hat abgeschrieben), vorlesen (hat vorgelesen).
+      - vi: "Môn học: die Mathematik, die Physik, die Chemie, die Biologie, die Erdkunde đều giống cái và không có số nhiều."
+      - vi: "Từ ghép theo giống của từ cuối: das Klassenzimmer, der Schulhof, die Schultasche, das Schulfach."
+      - vi: "rechnen, buchstabieren, abschreiben (hat abgeschrieben), vorlesen (hat vorgelesen)."
 exercises:
   - key: de:exercise:a2w1l5-listen-abschreiben
     type: listen

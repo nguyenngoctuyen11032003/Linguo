@@ -101,7 +101,9 @@ body:
       vi: "Mit + Dativ số nhiều: zu vielen Aufgaben."
   - type: summary
     points:
-      - vi: abschalten, durchatmen, bewältigen, verdrängen, aufmuntern, überfordern, sich fürchten (vor + Dativ); gestresst, überfordert, ausgeglichen.
+      - vi: "die Sorge, die Depression, der Burnout, die Erschöpfung, die Überforderung, die Schlaflosigkeit, das Selbstvertrauen, das Wohlbefinden."
+      - vi: "die Therapie, die Beratungsstelle, der Psychologe, die Meditation, die Gelassenheit, der Ausgleich."
+      - vi: "abschalten, durchatmen, bewältigen, verdrängen, aufmuntern, überfordern, sich fürchten (vor + Dativ); gestresst, überfordert, ausgeglichen."
 exercises:
   - key: de:exercise:b1w4l4-listen-ueberfordern
     type: listen

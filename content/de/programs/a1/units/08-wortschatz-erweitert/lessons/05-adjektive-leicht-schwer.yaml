@@ -98,6 +98,8 @@ body:
       vi: Sehr đứng trước tính từ mà nó bổ nghĩa, không đứng sau.
   - type: summary
     points:
+      - vi: "Sau sein, tính từ không đổi đuôi: Der Koffer ist schwer. Die Kinder sind hungrig."
+      - vi: "Học theo cặp trái nghĩa: leicht – schwer, schnell – langsam, voll – leer, reich – arm, nass – trocken."
       - vi: "sehr, ziemlich, zu: rất, khá, quá. Leicht và schwer có hai nghĩa: nhẹ/dễ, nặng/khó."
 exercises:
   - key: de:exercise:a1w1l5-listen-huebsch

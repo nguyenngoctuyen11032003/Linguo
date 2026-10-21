@@ -101,7 +101,9 @@ body:
       vi: Pflege là giống cái, nên dùng in der.
   - type: summary
     points:
-      - vi: der Kaufmann – die Kauffrau (Kaufleute); handwerklich, kaufmännisch, technisch, medizinisch, pädagogisch.
+      - vi: "das Handwerk, die Gastronomie, die Industrie, der Einzelhandel, der Großhandel, die Verwaltung, der Tourismus, die Pflege."
+      - vi: "der Landwirt, der Altenpfleger, der Mechatroniker, der Informatiker, der Buchhalter, der Steuerberater, der Übersetzer, der Freiberufler, der Lieferant, der Vertreter."
+      - vi: "der Kaufmann – die Kauffrau (Kaufleute); handwerklich, kaufmännisch, technisch, medizinisch, pädagogisch."
 exercises:
   - key: de:exercise:b1w3l3-listen-uebersetzer
     type: listen

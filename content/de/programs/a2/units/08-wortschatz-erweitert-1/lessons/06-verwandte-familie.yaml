@@ -99,7 +99,9 @@ body:
       vi: Neffe là giống đực nên dùng mein; con gái của chị em là meine Nichte.
   - type: summary
     points:
-      - vi: verwandt (mit + Dativ), verlobt, erwachsen, verwitwet.
+      - vi: "Schwieger- + Mutter/Vater/Sohn/Tochter; der Schwager, die Schwägerin; der Neffe, die Nichte; die Urgroßmutter."
+      - vi: "erziehen, pflegen, begleiten; sich verstehen mit + Dativ: Ich verstehe mich gut mit meinem Schwager."
+      - vi: "verwandt (mit + Dativ), verlobt, erwachsen, verwitwet."
 exercises:
   - key: de:exercise:a2w1l6-listen-verwandtschaft
     type: listen

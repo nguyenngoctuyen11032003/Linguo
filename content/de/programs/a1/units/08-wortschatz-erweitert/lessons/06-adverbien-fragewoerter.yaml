@@ -92,7 +92,9 @@ body:
       vi: Trong câu hỏi W-, động từ chia đứng ngay sau từ để hỏi (vị trí thứ hai), trước chủ ngữ.
   - type: summary
     points:
-      - vi: Wann? hỏi thời điểm; Warum? hỏi lý do; động từ ở vị trí thứ hai.
+      - vi: "dort, oben, unten, drinnen, draußen, überall trả lời câu hỏi Wo?"
+      - vi: "Wo? hỏi vị trí, Wohin? hỏi hướng đi: Wo bist du? Wohin gehst du?"
+      - vi: "Wann? hỏi thời điểm; Warum? hỏi lý do; động từ ở vị trí thứ hai."
 exercises:
   - key: de:exercise:a1w1l6-listen-wirklich
     type: listen

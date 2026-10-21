@@ -99,6 +99,8 @@ body:
       vi: "Ngôi ich thêm -e vào gốc động từ: ich friere, không bỏ -e."
   - type: summary
     points:
+      - vi: "Es schneit, es donnert, es blitzt, die Sonne scheint; nhiệt độ: Es hat zehn Grad."
+      - vi: "neblig, stürmisch, regnerisch đứng sau sein và không đổi đuôi."
       - vi: "Perfekt: Es hat geschneit; Es hat gefroren; Die Sonne hat geschienen."
 exercises:
   - key: de:exercise:a2w1l4-listen-neblig
