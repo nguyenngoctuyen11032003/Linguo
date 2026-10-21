@@ -281983,7 +281983,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "f1000e2742eb963a9a19b519823c804dd4e2ed8fb82f5dc744e0a279c97127e3",
+      "content_hash": "02b6ddcfbe0626d3f0e8f9e999d55a5c8977d32403f85c4f5abcced0a7e2b5ba",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "d638b86d-86b3-5aec-a597-5f3044898c78",
@@ -281996,6 +281996,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -284198,7 +284203,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "a37b4062f6186124acf4613beda219f29ebce45e85d3ae128b24c6a7424cf332",
+      "content_hash": "54eaa2b3df6907082c125b2d16c361a4ad7bfe1303b1e6bf7250d5ef2afc1980",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "9f639ee7-1639-50fa-9b59-dbaece5a7373",
@@ -284212,6 +284217,12 @@ select content_private.import_bundle($bundle${
               "t1",
               "t2",
               "t3",
+              "t4"
+            ],
+            [
+              "t1",
+              "t3",
+              "t2",
               "t4"
             ]
           ]
@@ -286892,7 +286903,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "e5c68d63f46a49abdbf531362d99884a0bd4ba91de206b175535b8badf2fac13",
+      "content_hash": "12efea233b71e80691d34e395a04f43f35c5ee7aec229569d9c9212098e67ee1",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "79902c21-ad4f-57c3-b3b0-1412c6feabb9",
@@ -286905,6 +286916,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -293855,7 +293871,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "c825605c8ae62829dacf32498851f5d77f0e481d21fa44ca62e37892b4a8f239",
+      "content_hash": "2c2316f27a703cdd771bf57e9e72399e172dc58e201ee54bfbc86f0f824c2891",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "dead985c-ee1b-5422-8302-2d58b15dd77f",
@@ -293869,6 +293885,12 @@ select content_private.import_bundle($bundle${
               "t1",
               "t2",
               "t3",
+              "t4"
+            ],
+            [
+              "t3",
+              "t1",
+              "t2",
               "t4"
             ]
           ]
@@ -302959,7 +302981,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "ff40c8433213d65de3808a4da1cd4f0f20d7f5a3170b9f605792ae9aab8b3c34",
+      "content_hash": "59478b3b06bb0a233193b49e3ddc0395429a6222454b8617359963671f27c9c9",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "12ad9f1b-67a9-5873-89b1-80e1bbe59fe7",
@@ -302972,6 +302994,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -304040,7 +304067,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "94695d30e0c8adf36f49f86caf29ba24ef4f44308f07633235ce2d11cd0b3d38",
+      "content_hash": "90a9f8628e5ce3495b82d1e8ec1633cc051990d4ec6256fd5b318bca69fae217",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "c4695d47-fd54-5a04-9ec8-faaed077b6eb",
@@ -304053,6 +304080,12 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3",
+              "t4"
+            ],
+            [
+              "t2",
+              "t1",
               "t3",
               "t4"
             ]
@@ -304682,7 +304715,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "232c8dbad65added3c2b6c70cbbbd1374e227c53fce54fd6bcfcc3363552a73b",
+      "content_hash": "978514021c18af1b17dfd218ae1d13412350a6a6bfff0bf95789ffaacddc57dc",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "7a2f50e7-fa41-50c2-989c-56bd9b0ef22f",
@@ -304696,6 +304729,12 @@ select content_private.import_bundle($bundle${
               "t1",
               "t2",
               "t3",
+              "t4"
+            ],
+            [
+              "t3",
+              "t1",
+              "t2",
               "t4"
             ]
           ]
@@ -312000,6 +312039,1902 @@ select content_private.import_bundle($bundle${
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "4ea158f9010c389957c9b1d96ac47a888dad024d226be6f74e1bf9ba0076ea0f",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "ade13076-cf48-5990-a7f4-4a47b7ec1b05",
+      "is_demo": false,
+      "item_id": "fd45a05c-316a-5199-ac05-b02ec63b2994",
+      "key": "ja:exercise:n1-u10-abstract-n1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "mft"
+        },
+        "display_answer": "余地",
+        "explanation": {
+          "vi": "余地 là dư địa. 兆し là dấu hiệu, 趣 là nét thanh nhã, 概念 là khái niệm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "mft",
+            "lang": "ja",
+            "text": "余地"
+          },
+          {
+            "id": "h8c",
+            "lang": "ja",
+            "text": "概念"
+          },
+          {
+            "id": "k1m",
+            "lang": "ja",
+            "text": "兆し"
+          },
+          {
+            "id": "gfe",
+            "lang": "ja",
+            "text": "趣"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “dư địa, chỗ cho khả năng”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d422af906dfd7b269a2dde60aa86eae7bb5c56d5738ba355be200cc3652981b9",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "8ad0e8db-6d76-53e4-861d-ebd76d37298b",
+      "is_demo": false,
+      "item_id": "7ca464ae-ad5f-5198-a669-a7cdfecf1619",
+      "key": "ja:exercise:n1-u10-abstract-n10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "時代の潮流に乗り遅れてはいけません。",
+        "explanation": {
+          "vi": "N の + 潮流に + 乗り遅れては + いけません."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Không được lỡ nhịp với trào lưu của thời đại.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "乗り遅れては"
+          },
+          {
+            "id": "t2",
+            "text": "潮流に"
+          },
+          {
+            "id": "t1",
+            "text": "時代の"
+          },
+          {
+            "id": "t4",
+            "text": "いけません。"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "63fa0bfcac21aa7dd825ca11241766d9a85c9d69289f312bd6dff9b0c2092770",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "4cabe951-20d4-59a5-9817-7668b829cacb",
+      "is_demo": false,
+      "item_id": "944fc64f-c391-55d5-8462-52cb73f1e1e9",
+      "key": "ja:exercise:n1-u10-abstract-n11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f67"
+        },
+        "display_answer": "矛盾",
+        "explanation": {
+          "vi": "矛盾 là mâu thuẫn. 均衡 là cân bằng, 秩序 là trật tự, 概念 là khái niệm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "nqa",
+            "lang": "ja",
+            "text": "秩序"
+          },
+          {
+            "id": "f67",
+            "lang": "ja",
+            "text": "矛盾"
+          },
+          {
+            "id": "m5w",
+            "lang": "ja",
+            "text": "均衡"
+          },
+          {
+            "id": "zkf",
+            "lang": "ja",
+            "text": "概念"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Lời anh ấy nói trước sau không nhất quán. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "536800c876fb188cb00ba561d2d3a31f0ab02afe25a584933ba21abb82185987",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "3272c3c4-6960-5e27-93a8-b4476cbb6e23",
+      "is_demo": false,
+      "item_id": "b60ac74d-2bd1-5c7d-92ef-d997a93252cc",
+      "key": "ja:exercise:n1-u10-abstract-n2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "o5l"
+        },
+        "display_answer": "兆し",
+        "explanation": {
+          "vi": "兆し là dấu hiệu, điềm báo. 余地 là dư địa, 契機 là cơ duyên, 均衡 là cân bằng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "o5l",
+            "lang": "ja",
+            "text": "兆し"
+          },
+          {
+            "id": "xxg",
+            "lang": "ja",
+            "text": "余地"
+          },
+          {
+            "id": "yau",
+            "lang": "ja",
+            "text": "契機"
+          },
+          {
+            "id": "zjf",
+            "lang": "ja",
+            "text": "均衡"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói “Có dấu hiệu kinh tế hồi phục”. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7d7e28fa7b28f45c29320c7c5a1d728c6367ff6fb6d360392ebaf33e5d95ecb4",
+      "difficulty": 5,
+      "exercise_type": "listen",
+      "id": "baa33148-914d-5c55-8498-eea3d14be94b",
+      "is_demo": false,
+      "item_id": "ffe660d2-6d87-5d86-81e0-517626115845",
+      "key": "ja:exercise:n1-u10-abstract-n3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "gkp"
+        },
+        "display_answer": "Như một phần của bảo vệ môi trường, mỗi tháng chúng tôi trồng cây.",
+        "explanation": {
+          "vi": "～の一環として - như một phần của ...; 植樹 - trồng cây."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "環境保護の一環として、毎月、植樹を行っています。",
+        "options": [
+          {
+            "id": "gzd",
+            "lang": "vi",
+            "text": "Vì ô nhiễm, mỗi tháng chúng tôi dừng trồng cây."
+          },
+          {
+            "id": "gkp",
+            "lang": "vi",
+            "text": "Như một phần của bảo vệ môi trường, mỗi tháng chúng tôi trồng cây."
+          },
+          {
+            "id": "luu",
+            "lang": "vi",
+            "text": "Sau khi trồng cây chúng tôi bắt đầu bảo vệ môi trường."
+          },
+          {
+            "id": "q96",
+            "lang": "vi",
+            "text": "Mỗi tháng chúng tôi trồng cây thay cho bảo vệ môi trường."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f555328c4083d280a4cba47287b94a3fb723c7735187d211746b520b006f5348",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "ea113ed4-bddd-5a1d-a912-de27474d3c70",
+      "is_demo": false,
+      "item_id": "d78b7c6d-7d23-52af-aa31-8e9e1700c655",
+      "key": "ja:exercise:n1-u10-abstract-n4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "本質",
+              "ほんしつ"
+            ]
+          }
+        },
+        "display_answer": "問題の本質を見極める必要があります。",
+        "explanation": {
+          "vi": "本質を見極める - nhìn thấu bản chất."
+        },
+        "known_wrong": [
+          {
+            "answer": "側面",
+            "error_tag": "collocation",
+            "feedback_vi": "側面 là khía cạnh; \"nhìn thấu\" đi với 本質."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Cái cốt lõi của vấn đề.",
+          "Bắt đầu bằng 本."
+        ],
+        "template": "問題の{{b1}}を見極める必要があります。 (Cần nhìn thấu bản chất của vấn đề.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "67096f90c36ee1c8431238a0eeb351d5258255b1bf52dfc642ea736b10faa6b3",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "c18dc89a-ca86-5b05-afce-fd46fa62b286",
+      "is_demo": false,
+      "item_id": "83ad0bec-56c3-5fb7-9162-8463037a0e52",
+      "key": "ja:exercise:n1-u10-abstract-n5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "nvk"
+        },
+        "display_answer": "これを契機に、制度を見直します",
+        "explanation": {
+          "vi": "～を契機に - nhân dịp. 余地, 兆し, 基盤 không đi với を...に theo nghĩa này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "upa",
+            "lang": "ja",
+            "text": "これを兆しに、制度を見直します"
+          },
+          {
+            "id": "uyo",
+            "lang": "ja",
+            "text": "これを基盤に、制度を見直します"
+          },
+          {
+            "id": "bus",
+            "lang": "ja",
+            "text": "これを余地に、制度を見直します"
+          },
+          {
+            "id": "nvk",
+            "lang": "ja",
+            "text": "これを契機に、制度を見直します"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn xem xét lại chế độ nhân một sự kiện. Mẫu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "9aa8c8c5d56aeca73d48a3fc2c0c894ecd3d3f13dfd710dbc46a83d483c59800",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "379ac802-8447-5f33-aa7d-2e8ee84375c4",
+      "is_demo": false,
+      "item_id": "765e3e36-b7b5-5e95-ad41-2d23e8551e73",
+      "key": "ja:exercise:n1-u10-abstract-n6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "基盤",
+              "きばん"
+            ]
+          }
+        },
+        "display_answer": "経済の基盤を固めます。",
+        "explanation": {
+          "vi": "基盤を固める - củng cố nền tảng."
+        },
+        "known_wrong": [
+          {
+            "answer": "枠組み",
+            "error_tag": "collocation",
+            "feedback_vi": "枠組み là khuôn khổ; \"củng cố\" nền tảng dùng 基盤."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "経済の{{b1}}を固めます。 (Củng cố nền tảng kinh tế.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "2f7476706709b468f17dbfacb0f9c70d12ac8c436c0660186bdd238e7f46fe94",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "f5d99324-a64b-5c85-9ca9-ef50633f570d",
+      "is_demo": false,
+      "item_id": "c4bab92d-8a56-5902-a731-2a3ef5536185",
+      "key": "ja:exercise:n1-u10-abstract-n7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "均衡",
+              "きんこう"
+            ]
+          }
+        },
+        "display_answer": "収入と支出の均衡を保ちます。",
+        "explanation": {
+          "vi": "均衡を保つ - giữ cân bằng."
+        },
+        "known_wrong": [
+          {
+            "answer": "秩序",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "秩序 là trật tự; \"cân bằng\" là 均衡."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "収入と支出の{{b1}}を保ちます。 (Giữ cân bằng giữa thu và chi.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "19558349f8369598daa82c9f614a9e59b728973dd789df7c11ddd980a39a49d4",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "ceced7a1-6202-59fd-b794-63c79c9d1de0",
+      "is_demo": false,
+      "item_id": "fd45a05c-316a-5199-ac05-b02ec63b2994",
+      "key": "ja:exercise:n1-u10-abstract-n8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "この計画には、改善の余地があります。",
+            "この計画には改善の余地があります。",
+            "このけいかくには、かいぜんのよちがあります。",
+            "この計画は改善の余地があります。"
+          ]
+        },
+        "display_answer": "この計画には、改善の余地があります。",
+        "explanation": {
+          "vi": "改善の余地がある - còn dư địa cải thiện."
+        },
+        "known_wrong": [
+          {
+            "answer": "この計画には、改善の兆しがあります。",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "兆し là dấu hiệu; \"dư địa\" là 余地."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Kế hoạch này còn dư địa để cải thiện."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "6266a8724c4357eec4a6a3eb64c7f733714c212ad8d1b8ec9c07478e21308f22",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "02b83aaa-e946-57e1-8a8a-d79fed734677",
+      "is_demo": false,
+      "item_id": "b2eb3d4b-7ffa-5242-9c92-a0b1d3bb3940",
+      "key": "ja:exercise:n1-u10-abstract-n9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Vấn đề này có nhiều khía cạnh. Vừa củng cố nền tảng kinh tế, vừa cần giữ trật tự.",
+            "Vấn đề này có nhiều mặt. Cần vừa củng cố nền tảng kinh tế vừa giữ gìn trật tự.",
+            "Vấn đề có nhiều khía cạnh. Phải củng cố nền tảng kinh tế và đồng thời bảo vệ trật tự."
+          ]
+        },
+        "display_answer": "Vấn đề này có nhiều khía cạnh. Vừa củng cố nền tảng kinh tế, vừa cần giữ trật tự.",
+        "explanation": {
+          "vi": "側面 - khía cạnh; 基盤を固める - củng cố nền tảng; 秩序を守る - giữ trật tự."
+        },
+        "known_wrong": [
+          {
+            "answer": "Vấn đề này chỉ có một khía cạnh. Cần làm suy yếu nền tảng kinh tế và phá vỡ trật tự.",
+            "error_tag": "meaning",
+            "feedback_vi": "様々な側面 là nhiều khía cạnh."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "この問題には、様々な側面があります。経済の基盤を固めると同時に、秩序を守る必要があります。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b9648e628f2c072faa6fe2031045adc0bf0a7ab3db155a8fe272b8129d2eb317",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "4bf5a328-ee65-5028-a22a-04bed1e421ce",
+      "is_demo": false,
+      "item_id": "abc228ca-4b6b-5d10-ac74-c6c9794b99c1",
+      "key": "ja:exercise:n1-u10-adverbs-a1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "hg7"
+        },
+        "display_answer": "極めて",
+        "explanation": {
+          "vi": "極めて là vô cùng. 概して là nhìn chung, 依然 là vẫn, 敢えて là cố ý."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "o6d",
+            "lang": "ja",
+            "text": "依然"
+          },
+          {
+            "id": "sk6",
+            "lang": "ja",
+            "text": "概して"
+          },
+          {
+            "id": "hg7",
+            "lang": "ja",
+            "text": "極めて"
+          },
+          {
+            "id": "nzp",
+            "lang": "ja",
+            "text": "敢えて"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “vô cùng, cực kỳ” (văn viết)?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "00d9f551ed6b843998771f346aaa310318b3e42c016252d3bbdea4fa5c1e8a15",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "e00a0b55-fbaf-580d-ba0b-ba7174029efd",
+      "is_demo": false,
+      "item_id": "abc228ca-4b6b-5d10-ac74-c6c9794b99c1",
+      "key": "ja:exercise:n1-u10-adverbs-a10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "それは極めて重要な問題です。",
+        "explanation": {
+          "vi": "Chủ đề → 極めて + tính từ な → 問題です."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Đó là vấn đề vô cùng quan trọng.\"",
+        "tokens": [
+          {
+            "id": "t2",
+            "text": "極めて"
+          },
+          {
+            "id": "t3",
+            "text": "重要な"
+          },
+          {
+            "id": "t4",
+            "text": "問題です。"
+          },
+          {
+            "id": "t1",
+            "text": "それは"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b7dad61c8e3dec5976f8824eb159df0d95d8348db2e0b1c445f96e34ae0c440b",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "dbb540a4-69e3-52b1-a3f7-e19dbf8bcbd7",
+      "is_demo": false,
+      "item_id": "518f9714-6a6f-5083-b2c3-8aa55ff2b489",
+      "key": "ja:exercise:n1-u10-adverbs-a11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "mtg"
+        },
+        "display_answer": "至って",
+        "explanation": {
+          "vi": "至って元気 là cách nói quen thuộc. めったに (hiếm khi), ことごとく (hết thảy), 概して (nhìn chung) không hợp với 元気 theo cách này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "bpv",
+            "lang": "ja",
+            "text": "概して"
+          },
+          {
+            "id": "mtg",
+            "lang": "ja",
+            "text": "至って"
+          },
+          {
+            "id": "w38",
+            "lang": "ja",
+            "text": "ことごとく"
+          },
+          {
+            "id": "v2e",
+            "lang": "ja",
+            "text": "めったに"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói “Anh ấy vẫn cực kỳ khoẻ mạnh”. Từ nào hợp?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "3493b5fb86e76ae4d34608c480a67079b38ab545144c616119763122a433cfc6",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "607af26f-41d9-507b-a536-aeaf7932d1ee",
+      "is_demo": false,
+      "item_id": "6ef66485-e782-5497-b0ab-4b73166970e5",
+      "key": "ja:exercise:n1-u10-adverbs-a2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "s6g"
+        },
+        "display_answer": "辛うじて",
+        "explanation": {
+          "vi": "辛うじて là vất vả lắm mới, suýt soát. ことごとく là hết thảy, 概して là nhìn chung, 至って là cực kỳ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "s6g",
+            "lang": "ja",
+            "text": "辛うじて"
+          },
+          {
+            "id": "acv",
+            "lang": "ja",
+            "text": "至って"
+          },
+          {
+            "id": "a5e",
+            "lang": "ja",
+            "text": "概して"
+          },
+          {
+            "id": "nci",
+            "lang": "ja",
+            "text": "ことごとく"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn vừa kịp chuyến tàu cuối sát nút. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "71b63ca189e3d8cfcebed2fadc026b4d948cc191c8e4998fd41a8f3d089424b0",
+      "difficulty": 5,
+      "exercise_type": "listen",
+      "id": "ba875566-d8e3-52b3-9ca5-8c89da3c52d1",
+      "is_demo": false,
+      "item_id": "ff4caa4f-948d-5cc3-a255-eaaf602d1d5f",
+      "key": "ja:exercise:n1-u10-adverbs-a3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "cgr"
+        },
+        "display_answer": "Tình hình vẫn không thay đổi.",
+        "explanation": {
+          "vi": "依然として - vẫn; 変わりません - không thay đổi."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "依然として、状況は変わりません。",
+        "options": [
+          {
+            "id": "cgr",
+            "lang": "vi",
+            "text": "Tình hình vẫn không thay đổi."
+          },
+          {
+            "id": "hmk",
+            "lang": "vi",
+            "text": "Tình hình sẽ thay đổi sớm."
+          },
+          {
+            "id": "aoq",
+            "lang": "vi",
+            "text": "Tình hình thay đổi nhưng chậm."
+          },
+          {
+            "id": "u0s",
+            "lang": "vi",
+            "text": "Tình hình đã thay đổi hoàn toàn."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7dfa635e6f25a52da0a3fd099c735d95bdead03ea9f7620c3a03fb2832ea4576",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "f2625cba-d35f-50cc-90e1-642c9ff66d5d",
+      "is_demo": false,
+      "item_id": "f6eecca2-b7af-565c-9aec-fc93ffa72873",
+      "key": "ja:exercise:n1-u10-adverbs-a4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "敢えて",
+              "あえて"
+            ]
+          }
+        },
+        "display_answer": "敢えて反対意見を述べます。",
+        "explanation": {
+          "vi": "敢えて - cố ý, dám."
+        },
+        "known_wrong": [
+          {
+            "answer": "概して",
+            "error_tag": "adverb_choice",
+            "feedback_vi": "概して là nhìn chung; \"cố ý làm điều khó\" dùng 敢えて."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Phó từ nghĩa \"cố ý\".",
+          "Bắt đầu bằng 敢."
+        ],
+        "template": "{{b1}}反対意見を述べます。 (Tôi cố ý nêu ý kiến phản đối.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "8efffd7fedf5f03b0c2f209d32e2fdef90b09b42af1a648efef87d54874e55a1",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "c3261543-1a71-53ff-9c34-bf9b50c7868b",
+      "is_demo": false,
+      "item_id": "bc09d55d-f010-569a-8343-0b730d7d7963",
+      "key": "ja:exercise:n1-u10-adverbs-a5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n9n"
+        },
+        "display_answer": "紛らわしい",
+        "explanation": {
+          "vi": "紛らわしい là dễ nhầm lẫn. 煩わしい là phiền hà, 甚だしい là quá mức, 慎重 là thận trọng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "fs7",
+            "lang": "ja",
+            "text": "煩わしい"
+          },
+          {
+            "id": "n9n",
+            "lang": "ja",
+            "text": "紛らわしい"
+          },
+          {
+            "id": "ui0",
+            "lang": "ja",
+            "text": "甚だしい"
+          },
+          {
+            "id": "bvh",
+            "lang": "ja",
+            "text": "慎重"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Biểu hiện dễ gây nhầm lẫn. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7467232feec2da4ea61d3ec832f71b872ac072b23c1eb2a0c09693bd023d67c4",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "996ee76d-7557-508f-a85b-13b16f8c82a0",
+      "is_demo": false,
+      "item_id": "d01078e4-ba2d-52ba-b91d-3232efa9ed9c",
+      "key": "ja:exercise:n1-u10-adverbs-a6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "概して",
+              "がいして"
+            ]
+          }
+        },
+        "display_answer": "概して、今年の天気はよかったです。",
+        "explanation": {
+          "vi": "概して - nhìn chung."
+        },
+        "known_wrong": [
+          {
+            "answer": "至って",
+            "error_tag": "adverb_choice",
+            "feedback_vi": "至って đi với trạng thái bình thản; \"nhìn chung\" là 概して."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "{{b1}}、今年の天気はよかったです。 (Nhìn chung, thời tiết năm nay tốt.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f39f362421c7c1d512147bd3473b51f8b0c0683b833626f55067cbc5e1f3bafd",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "1c592c51-84f2-542d-8862-aacfa2879065",
+      "is_demo": false,
+      "item_id": "c2b8bbee-186e-5206-9a54-d7928447e91f",
+      "key": "ja:exercise:n1-u10-adverbs-a7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "懸命",
+              "けんめい"
+            ]
+          }
+        },
+        "display_answer": "彼女は懸命に働いています。",
+        "explanation": {
+          "vi": "懸命に - hết sức, quên mình."
+        },
+        "known_wrong": [
+          {
+            "answer": "慎重",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "慎重 là thận trọng; \"hết sức\" là 懸命."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "彼女は{{b1}}に働いています。 (Cô ấy làm việc hết sức mình.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "01eaf26d182cb42a4f621225ddc357fe8ba54d2015c906dadfd70f03076fe311",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "7c4b0d78-fe06-5629-8935-28cee966170a",
+      "is_demo": false,
+      "item_id": "18af3008-7f26-59a1-9d2b-943480e16f69",
+      "key": "ja:exercise:n1-u10-adverbs-a8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "彼の計画はことごとく失敗しました。",
+            "彼の計画はことごとく失敗した。",
+            "かれのけいかくはことごとくしっぱいしました。",
+            "彼の計画は、ことごとく失敗しました。"
+          ]
+        },
+        "display_answer": "彼の計画はことごとく失敗しました。",
+        "explanation": {
+          "vi": "ことごとく - hết thảy, không ngoại lệ."
+        },
+        "known_wrong": [
+          {
+            "answer": "彼の計画は概して失敗しました。",
+            "error_tag": "adverb_choice",
+            "feedback_vi": "概して là nhìn chung; \"hết thảy không ngoại lệ\" là ことごとく."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Kế hoạch của anh ấy thất bại hết thảy."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "89bef4ff3d3430b825c0a1a78dec3aa8ee26288dac9151d10c49b9b13d9ecddb",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "9a754d8e-5530-5fac-aa13-cb19300b6f64",
+      "is_demo": false,
+      "item_id": "94deb3c3-f2ff-50c3-9acb-605005c1eec1",
+      "key": "ja:exercise:n1-u10-adverbs-a9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Sự hiểu lầm của anh ta thật quá mức, nhưng anh ta vẫn không nhận lỗi. Cần xử lý thận trọng.",
+            "Hiểu lầm của anh ấy quá nghiêm trọng, vậy mà vẫn không chịu nhận sai. Phải đối phó thận trọng.",
+            "Anh ta hiểu lầm quá đáng mà vẫn không thừa nhận sai. Cần ứng xử thận trọng."
+          ]
+        },
+        "display_answer": "Sự hiểu lầm của anh ta thật quá mức, nhưng anh ta vẫn không nhận lỗi. Cần xử lý thận trọng.",
+        "explanation": {
+          "vi": "甚だしい - quá mức; 依然として - vẫn; 慎重に - thận trọng."
+        },
+        "known_wrong": [
+          {
+            "answer": "Sự hiểu lầm của anh ta rất nhẹ, và anh ta đã nhận lỗi. Không cần thận trọng.",
+            "error_tag": "meaning",
+            "feedback_vi": "甚だしい là quá mức; 依然として là vẫn."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "彼の勘違いも甚だしいですが、依然として、自分の間違いを認めません。慎重に対応する必要があります。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e3fe29211bd1f57c755604e058d5f4d5706035669cfe23771260d25081df0b13",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "9d556dcd-c991-5f9b-b1a0-fad74df1b9dd",
+      "is_demo": false,
+      "item_id": "23d60493-187e-5a78-8e66-ddaf9dd61d5b",
+      "key": "ja:exercise:n1-u10-verbs-v1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "qiw"
+        },
+        "display_answer": "覆す",
+        "explanation": {
+          "vi": "覆す là lật ngược. 阻む là cản trở, 偏る là thiên lệch, 怠る là xao nhãng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "qiw",
+            "lang": "ja",
+            "text": "覆す"
+          },
+          {
+            "id": "gmw",
+            "lang": "ja",
+            "text": "阻む"
+          },
+          {
+            "id": "cgt",
+            "lang": "ja",
+            "text": "怠る"
+          },
+          {
+            "id": "vu0",
+            "lang": "ja",
+            "text": "偏る"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “lật ngược (quan niệm, kết quả)”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "3cb64da10ee09e5321e71285f2054bf1ab2d3a845fffbf06b24ea46e1d85670a",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "f0c489f4-0660-5b06-968d-44ef52112fb2",
+      "is_demo": false,
+      "item_id": "9a44a930-168b-538f-816a-fb42a7d9af1d",
+      "key": "ja:exercise:n1-u10-verbs-v10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "判断を専門家に委ねます。",
+        "explanation": {
+          "vi": "A を B に委ねる - giao A cho B."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Tôi giao việc phán đoán cho chuyên gia.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "委ねます。"
+          },
+          {
+            "id": "t2",
+            "text": "専門家に"
+          },
+          {
+            "id": "t1",
+            "text": "判断を"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "9243a56e2c14a02e9d912cbcc290e1ed6a05cd35bef72ee8f9c1955a79cb6165",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "a126f776-3619-554a-ac96-61642af2b84d",
+      "is_demo": false,
+      "item_id": "dc34b4a3-c88f-55e9-9729-e90cbe7d756e",
+      "key": "ja:exercise:n1-u10-verbs-v11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "x1v"
+        },
+        "display_answer": "退けました",
+        "explanation": {
+          "vi": "主張を退ける - bác bỏ chủ trương. 招く, 促す, 損なう không có nghĩa bác bỏ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "zc7",
+            "lang": "ja",
+            "text": "損ないました"
+          },
+          {
+            "id": "kgt",
+            "lang": "ja",
+            "text": "促しました"
+          },
+          {
+            "id": "x1v",
+            "lang": "ja",
+            "text": "退けました"
+          },
+          {
+            "id": "q3l",
+            "lang": "ja",
+            "text": "招きました"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Toà án không chấp nhận yêu cầu của ông ấy. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a0a4172b018a75b9df0619cfcefaa379dadc455222d19496928d36033465539f",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "f1f767cd-d262-536e-b86c-3799a604c6a3",
+      "is_demo": false,
+      "item_id": "a7d21901-8817-51e1-9959-c6873496ea33",
+      "key": "ja:exercise:n1-u10-verbs-v2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "etj"
+        },
+        "display_answer": "誤解を招く",
+        "explanation": {
+          "vi": "誤解を招く - gây hiểu lầm. 阻む, 怠る, 委ねる không đi với 誤解 theo nghĩa này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "mtu",
+            "lang": "ja",
+            "text": "誤解を委ねる"
+          },
+          {
+            "id": "r7m",
+            "lang": "ja",
+            "text": "誤解を怠る"
+          },
+          {
+            "id": "afu",
+            "lang": "ja",
+            "text": "誤解を阻む"
+          },
+          {
+            "id": "etj",
+            "lang": "ja",
+            "text": "誤解を招く"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói “gây hiểu lầm”. Cụm nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "45fcc02f774846d7d164802fa04d32242aeb7171ec7c77df89db3bdc6357e00d",
+      "difficulty": 5,
+      "exercise_type": "listen",
+      "id": "e96d5507-569c-567f-8a22-3f09f08f0198",
+      "is_demo": false,
+      "item_id": "8875dec2-5cf3-5ae2-8551-64ec72880ab8",
+      "key": "ja:exercise:n1-u10-verbs-v3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "yqt"
+        },
+        "display_answer": "Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại.",
+        "explanation": {
+          "vi": "脅かす - đe doạ; 人類の生存 - sự sinh tồn của nhân loại."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "環境汚染は人類の生存を脅かしています。",
+        "options": [
+          {
+            "id": "yqt",
+            "lang": "vi",
+            "text": "Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại."
+          },
+          {
+            "id": "hx5",
+            "lang": "vi",
+            "text": "Ô nhiễm môi trường đang bảo vệ sự sinh tồn của nhân loại."
+          },
+          {
+            "id": "nh5",
+            "lang": "vi",
+            "text": "Ô nhiễm môi trường không ảnh hưởng đến nhân loại."
+          },
+          {
+            "id": "vqx",
+            "lang": "vi",
+            "text": "Nhân loại đang đe doạ môi trường bằng ô nhiễm."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "76ccc605fece8db75cec6484bbd8af06afcda9eaa039196f58cf865086f9d52a",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "64e0c1f4-d06e-5778-b422-638e1583d523",
+      "is_demo": false,
+      "item_id": "7ee09406-419e-5d65-8679-c26c7afcf734",
+      "key": "ja:exercise:n1-u10-verbs-v4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "怠る",
+              "おこたる"
+            ]
+          }
+        },
+        "display_answer": "注意を怠ると、事故につながります。",
+        "explanation": {
+          "vi": "注意を怠る - lơ là, thiếu chú ý."
+        },
+        "known_wrong": [
+          {
+            "answer": "促す",
+            "error_tag": "collocation",
+            "feedback_vi": "促す là thúc giục; \"lơ là chú ý\" là 怠る."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Động từ nghĩa \"lơ là\".",
+          "Bắt đầu bằng 怠."
+        ],
+        "template": "注意を{{b1}}と、事故につながります。 (Lơ là sự chú ý sẽ dẫn đến tai nạn.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d1a7a73a1824d76649199b6d6b1a669f51e0a092e988129ec58e669ec9e17f59",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "10964c6a-ce67-5fb6-8507-f67bf6a287ee",
+      "is_demo": false,
+      "item_id": "681a663a-d80a-57b5-9c11-1a771f4896c3",
+      "key": "ja:exercise:n1-u10-verbs-v5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f9v"
+        },
+        "display_answer": "大きな被害を免れました",
+        "explanation": {
+          "vi": "被害を免れる - tránh được thiệt hại. 促す, 偏る, 費やす không đi với 被害."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "f9v",
+            "lang": "ja",
+            "text": "大きな被害を免れました"
+          },
+          {
+            "id": "mfe",
+            "lang": "ja",
+            "text": "大きな被害を偏りました"
+          },
+          {
+            "id": "qxj",
+            "lang": "ja",
+            "text": "大きな被害を費やしました"
+          },
+          {
+            "id": "nvy",
+            "lang": "ja",
+            "text": "大きな被害を促しました"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn thoát khỏi thiệt hại lớn. Cụm nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "36c6474e8d0e72a29f5ffc2fa7be56560f2f9c61c26fe14e453cebf128ce0726",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "34635999-7903-57d4-801c-37c934aab536",
+      "is_demo": false,
+      "item_id": "c83209d5-e066-50a1-a054-b873aca7cfee",
+      "key": "ja:exercise:n1-u10-verbs-v6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "阻みました",
+              "はばみました"
+            ]
+          }
+        },
+        "display_answer": "大雪が私たちの進路を阻みました。",
+        "explanation": {
+          "vi": "進路を阻む - cản đường tiến."
+        },
+        "known_wrong": [
+          {
+            "answer": "覆しました",
+            "error_tag": "collocation",
+            "feedback_vi": "覆す là lật ngược; cản đường là 阻む."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "template": "大雪が私たちの進路を{{b1}}。 (Tuyết dày đã cản đường tiến của chúng tôi.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "2fd509d5093b347da7ecd3bca0cff7a996eb651b32976a1db94eb2c259791360",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "b321e315-9bb2-5836-ac3c-f9d9c7b3647d",
+      "is_demo": false,
+      "item_id": "aacb326e-5369-5a1a-a38a-22ae0d74563f",
+      "key": "ja:exercise:n1-u10-verbs-v7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "携わって",
+              "たずさわって"
+            ]
+          }
+        },
+        "display_answer": "長年、教育に携わってきました。",
+        "explanation": {
+          "vi": "～に携わる - tham gia, dính líu đến."
+        },
+        "known_wrong": [
+          {
+            "answer": "委ねて",
+            "error_tag": "collocation",
+            "feedback_vi": "委ねる cần tân ngữ + に; tham gia công việc dùng 携わる."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          }
+        ],
+        "template": "長年、教育に{{b1}}きました。 (Tôi đã tham gia công tác giáo dục nhiều năm.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "0adb47ddbfb7678885365dfe5a7f64fd601d558c0a4f863b7c30d4d8c8f0d74a",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "e941d05e-8a44-5c8f-9055-3051c5bcdfce",
+      "is_demo": false,
+      "item_id": "8c84d0b6-d90e-5ddd-a79d-383aff31325a",
+      "key": "ja:exercise:n1-u10-verbs-v8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "栄養が偏らないようにしましょう。",
+            "栄養が偏らないようにしてください。",
+            "えいようがかたよらないようにしましょう。",
+            "栄養が偏らないよう気をつけましょう。"
+          ]
+        },
+        "display_answer": "栄養が偏らないようにしましょう。",
+        "explanation": {
+          "vi": "栄養が偏る - dinh dưỡng thiên lệch; ないようにする - cố gắng không."
+        },
+        "known_wrong": [
+          {
+            "answer": "栄養が偏るようにしましょう。",
+            "error_tag": "negation",
+            "feedback_vi": "Câu yêu cầu \"không thiên lệch\" nên cần ないように."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Hãy cố gắng không ăn uống thiên lệch dinh dưỡng."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7f337d08c0ad042f2f3b34d6e61e5c26c68ba0a01991921e930524ab1d4ed123",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "a084f3da-550e-5133-b49d-9fa2edf0d583",
+      "is_demo": false,
+      "item_id": "0926873c-1969-5b3f-9a78-5b10dd861783",
+      "key": "ja:exercise:n1-u10-verbs-v9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Tôi đã tiêu tốn mười năm cho nghiên cứu này. Nhưng vì lơ là sự chú ý nên đã gây ra hiểu lầm.",
+            "Nghiên cứu này tốn của tôi mười năm. Vậy mà vì sơ suất nên lại gây hiểu lầm.",
+            "Tôi dành mười năm cho nghiên cứu này. Tuy nhiên do lơ là chú ý nên đã dẫn đến hiểu lầm."
+          ]
+        },
+        "display_answer": "Tôi đã tiêu tốn mười năm cho nghiên cứu này. Nhưng vì lơ là sự chú ý nên đã gây ra hiểu lầm.",
+        "explanation": {
+          "vi": "費やす - tiêu tốn; 怠る - lơ là; 誤解を招く - gây hiểu lầm."
+        },
+        "known_wrong": [
+          {
+            "answer": "Tôi đã tiêu tốn một năm cho nghiên cứu này. Vì chú ý nên không gây hiểu lầm.",
+            "error_tag": "meaning",
+            "feedback_vi": "十年 là mười năm; 怠った là lơ là."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "この研究に十年を費やしました。しかし、注意を怠ったために、誤解を招いてしまいました。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -334770,6 +336705,1894 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
+      "content_hash": "e5fcb8b3b5205dd98fc124e20485aeb090e9ed5ffd7d65abb98c577d173be73c",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "cd6fe106-2277-5b99-bd88-93260f80611b",
+      "is_demo": false,
+      "item_id": "f4121679-c0df-5c7a-8cc0-02d4217364f4",
+      "key": "ja:exercise:n1-u9-extent-e1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t6g"
+        },
+        "display_answer": "に至るまで",
+        "explanation": {
+          "vi": "N に至るまで - đến cả. に至って là mốc muộn, にほかならず là chính là, ならいざ知らず là \"nếu là ... thì còn được\"."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "t6g",
+            "lang": "ja",
+            "text": "に至るまで"
+          },
+          {
+            "id": "wjc",
+            "lang": "ja",
+            "text": "ならいざ知らず"
+          },
+          {
+            "id": "p32",
+            "lang": "ja",
+            "text": "にほかならず"
+          },
+          {
+            "id": "bmz",
+            "lang": "ja",
+            "text": "に至って"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 子どもからお年寄り___、幅広い人に愛されています。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e2072690e73f054e4c04f9452540ec8d7473b696c6210c58d4935860ab599b36",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "6d4cbee5-7d06-52ae-94d3-9347a95210e5",
+      "is_demo": false,
+      "item_id": "2beb6a23-4cf9-5653-aa53-24344bd32456",
+      "key": "ja:exercise:n1-u9-extent-e10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "成功は努力の結果にほかなりません。",
+        "explanation": {
+          "vi": "A は B にほかならない - A chính là B."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Thành công chính là kết quả của nỗ lực.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "ほかなりません。"
+          },
+          {
+            "id": "t2",
+            "text": "努力の結果に"
+          },
+          {
+            "id": "t1",
+            "text": "成功は"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c419d76196bb797b7db052feadcf4fe1b023c4f9a553280a25890dc1eceabb99",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "ee05cb77-2d40-5db6-9741-15cb70b80630",
+      "is_demo": false,
+      "item_id": "65d06904-22df-58f7-9ca5-95d44afbd1ec",
+      "key": "ja:exercise:n1-u9-extent-e11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "tri"
+        },
+        "display_answer": "早急に対策を講じるべきです",
+        "explanation": {
+          "vi": "対策を講じる - đưa ra biện pháp. 持つ, 保つ, 従う không đi với 対策 theo nghĩa này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "a5i",
+            "lang": "ja",
+            "text": "早急に対策を持つべきです"
+          },
+          {
+            "id": "d37",
+            "lang": "ja",
+            "text": "早急に対策を従うべきです"
+          },
+          {
+            "id": "tri",
+            "lang": "ja",
+            "text": "早急に対策を講じるべきです"
+          },
+          {
+            "id": "lrr",
+            "lang": "ja",
+            "text": "早急に対策を保つべきです"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn nói “Chính phủ nên sớm đưa ra biện pháp đối phó”. Cụm nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "fd021514f2e1367d1cbbc5b96b1a6168f88336bd4abc871678f1bcb67aa1c62a",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "7cdc0a13-fb09-554b-9846-f71d911a5c0a",
+      "is_demo": false,
+      "item_id": "2beb6a23-4cf9-5653-aa53-24344bd32456",
+      "key": "ja:exercise:n1-u9-extent-e2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "zad"
+        },
+        "display_answer": "にほかなりません",
+        "explanation": {
+          "vi": "N にほかならない - chính là. にすぎない là \"chẳng qua chỉ là\" (nghĩa khác)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "z3i",
+            "lang": "ja",
+            "text": "にいたりません"
+          },
+          {
+            "id": "e1o",
+            "lang": "ja",
+            "text": "をほかなりません"
+          },
+          {
+            "id": "zad",
+            "lang": "ja",
+            "text": "にほかなりません"
+          },
+          {
+            "id": "qfp",
+            "lang": "ja",
+            "text": "にすぎません"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 成功は努力の結果___。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "045813959267bf806a0bb6c39e98433117659f4fa46dfb0e8ae836ba327f2d17",
+      "difficulty": 5,
+      "exercise_type": "listen",
+      "id": "3f31a055-a0e1-56b7-b3ba-b1cd06e20821",
+      "is_demo": false,
+      "item_id": "36da575e-143d-52c6-951a-5175f63c3e36",
+      "key": "ja:exercise:n1-u9-extent-e3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "vj8"
+        },
+        "display_answer": "Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp.",
+        "explanation": {
+          "vi": "～に至って - mãi đến khi; やっと - cuối cùng cũng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "事故が起きるに至って、やっと対策が取られました。",
+        "options": [
+          {
+            "id": "gi8",
+            "lang": "vi",
+            "text": "Tai nạn xảy ra nhiều lần nên đã có biện pháp ngay."
+          },
+          {
+            "id": "vj8",
+            "lang": "vi",
+            "text": "Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp."
+          },
+          {
+            "id": "taa",
+            "lang": "vi",
+            "text": "Tai nạn không xảy ra dù không có biện pháp."
+          },
+          {
+            "id": "trp",
+            "lang": "vi",
+            "text": "Vì có biện pháp nên tai nạn không xảy ra."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d9ef66598628827acbf64d0b05dd07b196b4dff78a508fc84947de451cf1e3ba",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "cf909d4b-9723-5000-8514-3898c2cc2f62",
+      "is_demo": false,
+      "item_id": "1cda7ace-eccb-597f-bdef-094c1110dcf7",
+      "key": "ja:exercise:n1-u9-extent-e4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "ならいざ知らず",
+              "ならいざしらず"
+            ]
+          }
+        },
+        "display_answer": "子どもならいざ知らず、大人がそんなことをするとは。",
+        "explanation": {
+          "vi": "N ならいざ知らず - nếu là N thì còn được."
+        },
+        "known_wrong": [
+          {
+            "answer": "なら",
+            "error_tag": "form",
+            "feedback_vi": "Chỉ có なら thì chưa đủ nghĩa phê phán; cần ならいざ知らず."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 8
+          }
+        ],
+        "hint_levels": [
+          "Cụm nghĩa \"nếu là ... thì còn được\".",
+          "Bắt đầu bằng なら."
+        ],
+        "template": "子ども{{b1}}、大人がそんなことをするとは。 (Nếu là trẻ con thì còn được, chứ người lớn mà làm thế.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "344c5283f0b65398b4d9199d7db68119a2abb94064c930756b3b675b95db07f0",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "8f956b45-ff0f-50a9-8312-2021dd8d544c",
+      "is_demo": false,
+      "item_id": "36da575e-143d-52c6-951a-5175f63c3e36",
+      "key": "ja:exercise:n1-u9-extent-e5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "qmh"
+        },
+        "display_answer": "弟に至っては",
+        "explanation": {
+          "vi": "N に至っては - còn như N thì (ví dụ cực đoan). に至るまで là đến cả (bao quát), にほかならず là chính là."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "k97",
+            "lang": "ja",
+            "text": "弟に至るまで"
+          },
+          {
+            "id": "t2z",
+            "lang": "ja",
+            "text": "弟にほかならず"
+          },
+          {
+            "id": "qmh",
+            "lang": "ja",
+            "text": "弟に至っては"
+          },
+          {
+            "id": "dga",
+            "lang": "ja",
+            "text": "弟ならいざ知らず"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nêu trường hợp cực đoan nhất trong nhóm: “Còn em trai tôi thì chưa từng đọc sách lần nào”. Mẫu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c0ad6f2b7feb6c9c3b936439644f3ed3409d7472408798589243448effc7f298",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "df4ecc86-a69a-5608-84de-08e6227b79bc",
+      "is_demo": false,
+      "item_id": "f4121679-c0df-5c7a-8cc0-02d4217364f4",
+      "key": "ja:exercise:n1-u9-extent-e6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "に至るまで",
+              "にいたるまで"
+            ]
+          }
+        },
+        "display_answer": "この商品は、細部に至るまでこだわって作られています。",
+        "explanation": {
+          "vi": "N に至るまで - đến tận."
+        },
+        "known_wrong": [
+          {
+            "answer": "に至って",
+            "error_tag": "nuance",
+            "feedback_vi": "に至って chỉ mốc muộn; \"đến cả chi tiết\" dùng に至るまで."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "template": "この商品は、細部{{b1}}こだわって作られています。 (Sản phẩm này được làm tỉ mỉ đến từng chi tiết.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "871248743cb0906f7ce2925b00a22791b99496e24b34bd2f0810d4c7497e1d01",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "8061c64d-0d28-553b-900a-691cc5c234ef",
+      "is_demo": false,
+      "item_id": "2beb6a23-4cf9-5653-aa53-24344bd32456",
+      "key": "ja:exercise:n1-u9-extent-e7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "にほかなり"
+            ]
+          }
+        },
+        "display_answer": "成功は努力の結果にほかなりません。",
+        "explanation": {
+          "vi": "N にほかならない - chính là."
+        },
+        "known_wrong": [
+          {
+            "answer": "にすぎ",
+            "error_tag": "nuance",
+            "feedback_vi": "にすぎません là \"chẳng qua chỉ là\"; khẳng định bản chất dùng にほかなりません."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "template": "成功は努力の結果{{b1}}ません。 (Thành công chính là kết quả của nỗ lực.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "0e3777697dda41a2cae7416ebcd8aaffa1dcf925662a9cfadb8095ff54a1faa7",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "84287a7a-0c67-5ed6-9db8-da0c329ecbf8",
+      "is_demo": false,
+      "item_id": "1cda7ace-eccb-597f-bdef-094c1110dcf7",
+      "key": "ja:exercise:n1-u9-extent-e8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "子どもならいざ知らず、大人がそんなことをするとは。",
+            "子供ならいざ知らず、大人がそんなことをするとは。",
+            "こどもならいざしらず、おとながそんなことをするとは。",
+            "子どもならいざ知らず、大人がそんなことをするなんて。"
+          ]
+        },
+        "display_answer": "子どもならいざ知らず、大人がそんなことをするとは。",
+        "explanation": {
+          "vi": "N ならいざ知らず - nếu là N thì còn được."
+        },
+        "known_wrong": [
+          {
+            "answer": "子どもに至るまで、大人がそんなことをするとは。",
+            "error_tag": "form",
+            "feedback_vi": "に至るまで là bao quát; câu yêu cầu dùng ならいざ知らず."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Nếu là trẻ con thì còn được, chứ người lớn mà làm thế."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "89aa70bf72f463aa3bddd8709cf7fa07e01eb764c164bbb518a73ba7839e629a",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "6dcc9267-96bf-55af-9433-349dfd425454",
+      "is_demo": false,
+      "item_id": "688635fa-b49a-58eb-bb4d-1f075f7b7cb1",
+      "key": "ja:exercise:n1-u9-extent-e9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Sản phẩm được làm tỉ mỉ đến từng chi tiết được nhiều lứa tuổi yêu thích. Đó chính là nỗ lực của các nghệ nhân.",
+            "Món hàng làm cẩn thận đến từng chi tiết nhỏ được người ở nhiều độ tuổi yêu quý. Điều này chính là nhờ nỗ lực của người thợ.",
+            "Sản phẩm tỉ mỉ đến cả chi tiết nhỏ nhất được nhiều lứa tuổi ưa chuộng, và đây chính là thành quả nỗ lực của nghệ nhân."
+          ]
+        },
+        "display_answer": "Sản phẩm được làm tỉ mỉ đến từng chi tiết được nhiều lứa tuổi yêu thích. Đó chính là nỗ lực của các nghệ nhân.",
+        "explanation": {
+          "vi": "細部に至るまで - đến từng chi tiết; 幅広い - rộng rãi; にほかならない - chính là."
+        },
+        "known_wrong": [
+          {
+            "answer": "Sản phẩm làm cẩu thả, chỉ một nhóm tuổi thích. Đó là do lỗi của thợ.",
+            "error_tag": "meaning",
+            "feedback_vi": "細部に至るまで là đến từng chi tiết; にほかならない là chính là."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "細部に至るまでこだわって作られた商品は、幅広い年齢の人に愛されています。これは職人の努力にほかなりません。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "38920fea7afb1d958bd10d0129e6725224153031c5c018e990d6baae7be1e307",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "74a9a416-7de3-5322-9360-3abcde270073",
+      "is_demo": false,
+      "item_id": "eacf2232-a495-5abe-a5e5-dd43f9c2e251",
+      "key": "ja:exercise:n1-u9-formal-f1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "smh"
+        },
+        "display_answer": "からというもの",
+        "explanation": {
+          "vi": "V てからというもの - kể từ khi. からといって, からして, からには có nghĩa khác."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "hio",
+            "lang": "ja",
+            "text": "からといって"
+          },
+          {
+            "id": "smh",
+            "lang": "ja",
+            "text": "からというもの"
+          },
+          {
+            "id": "sce",
+            "lang": "ja",
+            "text": "からには"
+          },
+          {
+            "id": "nez",
+            "lang": "ja",
+            "text": "からして"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 結婚して___、夜遊びをしなくなりました。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c0bd090f9d03f574d6c3261b7c6f367aeaa082e455a70522db68ee0041490982",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "cc73d964-871d-5cc8-8f82-eca73f0eca12",
+      "is_demo": false,
+      "item_id": "118e76f3-0d04-5d59-8512-c35fca2a3a21",
+      "key": "ja:exercise:n1-u9-formal-f10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "先輩の手前、断れませんでした。",
+        "explanation": {
+          "vi": "N の + 手前 + vế kết quả."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Vì nể mặt đàn anh nên tôi không thể từ chối.\"",
+        "tokens": [
+          {
+            "id": "t2",
+            "text": "手前、"
+          },
+          {
+            "id": "t4",
+            "text": "でした。"
+          },
+          {
+            "id": "t3",
+            "text": "断れません"
+          },
+          {
+            "id": "t1",
+            "text": "先輩の"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "0bc832754ca05212acad97266381d96d84b0a5a8283b59ed2c43c119ef1a7ed1",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "904283a5-8a70-57dc-b517-a58e70530a0e",
+      "is_demo": false,
+      "item_id": "3203c150-21ce-5c0d-892a-c02d77034630",
+      "key": "ja:exercise:n1-u9-formal-f11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "xfo"
+        },
+        "display_answer": "概要",
+        "explanation": {
+          "vi": "概要 là khái quát, tóm lược. 妄想 là ảo tưởng, 不一致 là bất đồng, こつこつ là đều đặn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "ipa",
+            "lang": "ja",
+            "text": "こつこつ"
+          },
+          {
+            "id": "ywf",
+            "lang": "ja",
+            "text": "妄想"
+          },
+          {
+            "id": "xz7",
+            "lang": "ja",
+            "text": "不一致"
+          },
+          {
+            "id": "xfo",
+            "lang": "ja",
+            "text": "概要"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn trình bày tóm lược kế hoạch. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "93b040d10233539201754e8ccb5fb06d04e60efd25b16829801be33f1d932bc7",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "c5fd15f2-84e9-5ddd-ad09-72b8266a70cb",
+      "is_demo": false,
+      "item_id": "0ba772e1-8c86-535d-b172-437ccef555a9",
+      "key": "ja:exercise:n1-u9-formal-f2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h3v"
+        },
+        "display_answer": "までも",
+        "explanation": {
+          "vi": "V ない + までも - dù không đến mức. Các mẫu còn lại nghĩa khác."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "pph",
+            "lang": "ja",
+            "text": "ばかりか"
+          },
+          {
+            "id": "wqu",
+            "lang": "ja",
+            "text": "ながらも"
+          },
+          {
+            "id": "h3v",
+            "lang": "ja",
+            "text": "までも"
+          },
+          {
+            "id": "j5e",
+            "lang": "ja",
+            "text": "ことなく"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 毎日とは言わない___、週に一度は連絡してください。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "9d3ceb76d36ec5f92c0679b657b7d3b0c1318f1f81ab9904977b922a6635aa45",
+      "difficulty": 5,
+      "exercise_type": "listen",
+      "id": "cad6c747-fe2a-5cc5-8d49-1a55682c3a97",
+      "is_demo": false,
+      "item_id": "1bcce33d-a116-501b-8762-e0922802c6c2",
+      "key": "ja:exercise:n1-u9-formal-f3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k4o"
+        },
+        "display_answer": "Tôi đến chào và nhân tiện cũng để cảm ơn.",
+        "explanation": {
+          "vi": "お礼かたがた - nhân tiện cảm ơn; 伺いました - đã đến thăm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "お礼かたがた、ご挨拶に伺いました。",
+        "options": [
+          {
+            "id": "w0n",
+            "lang": "vi",
+            "text": "Tôi cảm ơn qua thư thay vì đến."
+          },
+          {
+            "id": "c3w",
+            "lang": "vi",
+            "text": "Tôi đến cảm ơn nhưng không chào."
+          },
+          {
+            "id": "w62",
+            "lang": "vi",
+            "text": "Tôi đến để chào rồi về ngay."
+          },
+          {
+            "id": "k4o",
+            "lang": "vi",
+            "text": "Tôi đến chào và nhân tiện cũng để cảm ơn."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "81bfbf8ddd5960eda323b133076b5146527adbf6bcf2b52f26bbd2d7bf7cfb32",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "91286b45-4c32-588b-85e8-2270dd0846a3",
+      "is_demo": false,
+      "item_id": "118e76f3-0d04-5d59-8512-c35fca2a3a21",
+      "key": "ja:exercise:n1-u9-formal-f4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "手前",
+              "てまえ"
+            ]
+          }
+        },
+        "display_answer": "みんなの前で約束した手前、やめるわけにはいきません。",
+        "explanation": {
+          "vi": "V た + 手前 - vì đã ... nên."
+        },
+        "known_wrong": [
+          {
+            "answer": "ばかり",
+            "error_tag": "form",
+            "feedback_vi": "ばかり không có nghĩa \"nể mặt\"; mẫu cần dùng là 手前."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Từ nghĩa \"thể diện, nể mặt\".",
+          "Bắt đầu bằng 手."
+        ],
+        "template": "みんなの前で約束した{{b1}}、やめるわけにはいきません。 (Vì đã hứa trước mọi người nên tôi không thể bỏ cuộc.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "827913ac4d1a469793e212e91387df1fe524f3a0f4bcf601121cf9039c07a0f2",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "3a47ad2a-934a-582a-8ca5-1719ffc12ddb",
+      "is_demo": false,
+      "item_id": "80678d7f-b245-5d89-ab64-2c1061960a22",
+      "key": "ja:exercise:n1-u9-formal-f5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n3y"
+        },
+        "display_answer": "私ごときにはできません",
+        "explanation": {
+          "vi": "N ごとき - loại như N (khiêm nhường khi dùng với bản thân). Các dạng còn lại có nghĩa khác."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "v1e",
+            "lang": "ja",
+            "text": "私ばかりにはできません"
+          },
+          {
+            "id": "z35",
+            "lang": "ja",
+            "text": "私なりにはできません"
+          },
+          {
+            "id": "n3y",
+            "lang": "ja",
+            "text": "私ごときにはできません"
+          },
+          {
+            "id": "vt3",
+            "lang": "ja",
+            "text": "私ほどにはできません"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn khiêm nhường nói “Người như tôi thì không làm nổi”. Mẫu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a2972b34c32f81b9095ecefe790497e318205abe6fbe67caf2203aa6b31c0ca2",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "16d9b78d-8eca-547a-93e5-c4ea4d966049",
+      "is_demo": false,
+      "item_id": "eacf2232-a495-5abe-a5e5-dd43f9c2e251",
+      "key": "ja:exercise:n1-u9-formal-f6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "からというもの"
+            ]
+          }
+        },
+        "display_answer": "日本に来てからというもの、毎日が新鮮です。",
+        "explanation": {
+          "vi": "V て + からというもの - kể từ khi."
+        },
+        "known_wrong": [
+          {
+            "answer": "からして",
+            "error_tag": "form",
+            "feedback_vi": "からして nghĩa \"xét từ ... mà\"; kể từ khi dùng からというもの."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 8
+          }
+        ],
+        "template": "日本に来て{{b1}}、毎日が新鮮です。 (Từ khi đến Nhật, ngày nào cũng mới mẻ.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "017c7e2fccf5717ba3bccc452cf8b647dab64954b3429b2691340d51daed693f",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "ab5bcfe3-d7dc-5df2-87a2-f20706530802",
+      "is_demo": false,
+      "item_id": "1bcce33d-a116-501b-8762-e0922802c6c2",
+      "key": "ja:exercise:n1-u9-formal-f7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "かたがた"
+            ]
+          }
+        },
+        "display_answer": "お見舞いかたがた、退院祝いを持っていきます。",
+        "explanation": {
+          "vi": "N かたがた - nhân tiện."
+        },
+        "known_wrong": [
+          {
+            "answer": "ごとく",
+            "error_tag": "form",
+            "feedback_vi": "ごとく là \"như\"; nhân tiện dùng かたがた."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          }
+        ],
+        "template": "お見舞い{{b1}}、退院祝いを持っていきます。 (Nhân dịp thăm bệnh, tôi mang theo quà mừng xuất viện.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d476aff314612600c59ec4339674bd5e077941c414e61bea87f8cd09d44bbed8",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "16c25872-6b4f-57c4-b4c1-264a6ce5943a",
+      "is_demo": false,
+      "item_id": "0ba772e1-8c86-535d-b172-437ccef555a9",
+      "key": "ja:exercise:n1-u9-formal-f8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "毎日とは言わないまでも、週に一度は連絡してください。",
+            "毎日とまでは言わないまでも、週に一度は連絡してください。",
+            "まいにちとはいわないまでも、しゅうにいちどはれんらくしてください。",
+            "毎日とは言わないまでも、週に一度は連絡をください。"
+          ]
+        },
+        "display_answer": "毎日とは言わないまでも、週に一度は連絡してください。",
+        "explanation": {
+          "vi": "V ない + までも - dù không đến mức."
+        },
+        "known_wrong": [
+          {
+            "answer": "毎日とは言わないために、週に一度は連絡してください。",
+            "error_tag": "form",
+            "feedback_vi": "ために là mục đích; \"dù không đến mức\" dùng までも."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Dù không nói là mỗi ngày, ít nhất mỗi tuần một lần hãy liên lạc."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "434fc97d53f69501eaf3f07d091570b1f540ea598aae483b5f44c1918be53c12",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "38d977c0-6194-5f44-a2b2-edbd468a11e0",
+      "is_demo": false,
+      "item_id": "e5aaed23-a58b-5016-99e9-a1b68082e11b",
+      "key": "ja:exercise:n1-u9-formal-f9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Kể từ khi kết hôn, tôi đều đặn tiết kiệm. Vì đã hứa trước mọi người nên không thể bỏ giữa chừng.",
+            "Từ khi lập gia đình tôi tiết kiệm đều đặn. Nể mặt đã hứa trước mọi người nên không thể dừng giữa chừng.",
+            "Kể từ khi cưới, tôi đều đặn gửi tiết kiệm. Đã hứa công khai nên không thể bỏ dở."
+          ]
+        },
+        "display_answer": "Kể từ khi kết hôn, tôi đều đặn tiết kiệm. Vì đã hứa trước mọi người nên không thể bỏ giữa chừng.",
+        "explanation": {
+          "vi": "てからというもの - kể từ khi; こつこつ - đều đặn; 手前 - nể mặt."
+        },
+        "known_wrong": [
+          {
+            "answer": "Kể từ khi kết hôn, tôi tiêu xài hoang phí. Vì đã hứa trước mọi người nên bỏ giữa chừng cũng được.",
+            "error_tag": "meaning",
+            "feedback_vi": "こつこつ貯金 là tiết kiệm đều đặn; 途中でやめられません là không thể bỏ giữa chừng."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "結婚してからというもの、こつこつ貯金しています。みんなの前で約束した手前、途中でやめられません。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "9ef53e5d23957b95d2c41ab49b6cc3f23bbd8d80a2acd5a8b9edfe1f327f161f",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "57dfa510-9069-5e63-9dff-583ef93903e4",
+      "is_demo": false,
+      "item_id": "0d51c36a-e9cf-532e-b6cc-768a81c0631f",
+      "key": "ja:exercise:n1-u9-should-s1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "mj9"
+        },
+        "display_answer": "しかるべきだ",
+        "explanation": {
+          "vi": "V て + しかるべきだ - đáng lẽ phải. Các dạng còn lại sai hình thức."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "dyk",
+            "lang": "ja",
+            "text": "しかるだろう"
+          },
+          {
+            "id": "mj9",
+            "lang": "ja",
+            "text": "しかるべきだ"
+          },
+          {
+            "id": "bs6",
+            "lang": "ja",
+            "text": "しかるはずだ"
+          },
+          {
+            "id": "gd8",
+            "lang": "ja",
+            "text": "しかるものだ"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 彼の努力は、もっと評価されて___。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c7da2b47f9ff665bce4f4a46659d5f3250f2ff1f3605b2724e372e4e105aaca4",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "4793df0a-15bf-5b36-b756-b1b76ec50d74",
+      "is_demo": false,
+      "item_id": "0d51c36a-e9cf-532e-b6cc-768a81c0631f",
+      "key": "ja:exercise:n1-u9-should-s10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "彼の努力は、もっと評価されてしかるべきだ。",
+        "explanation": {
+          "vi": "Chủ đề → もっと → V て → しかるべきだ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Nỗ lực của anh ấy đáng lẽ phải được đánh giá cao hơn.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "評価されて"
+          },
+          {
+            "id": "t4",
+            "text": "しかるべきだ。"
+          },
+          {
+            "id": "t2",
+            "text": "もっと"
+          },
+          {
+            "id": "t1",
+            "text": "彼の努力は、"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "12a6dc85a5bd2829e55fb9786fb5da960bb6c8f4620b7b2765b5acf0f8417526",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "5eb7efcf-2265-5637-9f01-753c9971a46e",
+      "is_demo": false,
+      "item_id": "43ce7e08-9c04-596a-80fd-5a5c19c50939",
+      "key": "ja:exercise:n1-u9-should-s11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v8i"
+        },
+        "display_answer": "暴力",
+        "explanation": {
+          "vi": "暴力 là bạo lực. 評価 là đánh giá, 謝罪 là xin lỗi, 不正 là gian lận."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "hav",
+            "lang": "ja",
+            "text": "不正"
+          },
+          {
+            "id": "ppg",
+            "lang": "ja",
+            "text": "謝罪"
+          },
+          {
+            "id": "pgf",
+            "lang": "ja",
+            "text": "評価"
+          },
+          {
+            "id": "v8i",
+            "lang": "ja",
+            "text": "暴力"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn lên án hành vi đánh người. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "5e48635eacea50ba7055ea444f7e0a5fa6c819162303873d41bff7e810812f68",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "91802ac7-6bf3-5e85-8a72-2ecad2a904cb",
+      "is_demo": false,
+      "item_id": "0e8d1681-291e-5f2f-8368-87923c92cf8f",
+      "key": "ja:exercise:n1-u9-should-s2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c4q"
+        },
+        "display_answer": "ともあろう",
+        "explanation": {
+          "vi": "N ともあろう + N - người ở vị trí như. とあって, ともなると, とはいえ có nghĩa khác."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "fyd",
+            "lang": "ja",
+            "text": "とあって"
+          },
+          {
+            "id": "fzr",
+            "lang": "ja",
+            "text": "ともなると"
+          },
+          {
+            "id": "uw8",
+            "lang": "ja",
+            "text": "とはいえ"
+          },
+          {
+            "id": "c4q",
+            "lang": "ja",
+            "text": "ともあろう"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 教師___者が、生徒に暴力を振るうとは。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "856a98cb827e800c0dde81455c6354df5abe3b2fbeb579d9e9446f1a9b059228",
+      "difficulty": 5,
+      "exercise_type": "listen",
+      "id": "6d5e8aae-e86b-51d3-8748-1e9da455b737",
+      "is_demo": false,
+      "item_id": "d7735632-26ed-5289-8e86-3a95694fe236",
+      "key": "ja:exercise:n1-u9-should-s3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "bw1"
+        },
+        "display_answer": "Có phải trẻ con đâu, việc của mình hãy tự làm đi.",
+        "explanation": {
+          "vi": "ではあるまいし - có phải ... đâu; 自分のことは自分で - việc mình tự làm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "子どもではあるまいし、自分のことは自分でしなさい。",
+        "options": [
+          {
+            "id": "bw1",
+            "lang": "vi",
+            "text": "Có phải trẻ con đâu, việc của mình hãy tự làm đi."
+          },
+          {
+            "id": "jlm",
+            "lang": "vi",
+            "text": "Chỉ trẻ con mới phải tự làm việc của mình."
+          },
+          {
+            "id": "ew9",
+            "lang": "vi",
+            "text": "Vì là trẻ con nên hãy để người lớn làm."
+          },
+          {
+            "id": "agf",
+            "lang": "vi",
+            "text": "Trẻ con không cần tự làm việc của mình."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "0612e35d5e0c3f7b8b53b8a6af1cbd630ea20e955609fa0d6fcc45ae664b4788",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "834ec9f5-d5b9-56eb-96f8-133d08c4d890",
+      "is_demo": false,
+      "item_id": "0352a7b7-40ca-533e-9909-8bd10b925ebb",
+      "key": "ja:exercise:n1-u9-should-s4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "であろうと",
+              "だろうと",
+              "であれ"
+            ]
+          }
+        },
+        "display_answer": "相手が誰であろうと、規則は規則です。",
+        "explanation": {
+          "vi": "であろうと - dù là."
+        },
+        "known_wrong": [
+          {
+            "answer": "ならば",
+            "error_tag": "nuance",
+            "feedback_vi": "ならば là điều kiện; \"dù là ai\" dùng であろうと."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "hint_levels": [
+          "Cụm nghĩa \"dù là\".",
+          "Bắt đầu bằng で."
+        ],
+        "template": "相手が誰{{b1}}、規則は規則です。 (Dù đối phương là ai thì quy tắc vẫn là quy tắc.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e2c60f222ace29062a4b3c28e2b18576bf889cd57faca9201f812f23367c0987",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "befb8598-66d9-5c94-b853-9a8472e0dae5",
+      "is_demo": false,
+      "item_id": "6d96fc09-118a-588c-a44e-bf1263ca9d01",
+      "key": "ja:exercise:n1-u9-should-s5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q6s"
+        },
+        "display_answer": "謝罪",
+        "explanation": {
+          "vi": "謝罪 là xin lỗi chính thức. 評価 là đánh giá, 不正 là gian lận, 暴力 là bạo lực."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "g21",
+            "lang": "ja",
+            "text": "暴力"
+          },
+          {
+            "id": "h7z",
+            "lang": "ja",
+            "text": "評価"
+          },
+          {
+            "id": "u3j",
+            "lang": "ja",
+            "text": "不正"
+          },
+          {
+            "id": "q6s",
+            "lang": "ja",
+            "text": "謝罪"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Giám đốc xin lỗi chính thức trong buổi họp báo. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7ee0553356a2f8e6ca1674c9bbca6abac25cce2da6263d7d4829ed8aee90cd78",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "c6d7e3c3-0b05-54d8-acb3-6210c75bdf9c",
+      "is_demo": false,
+      "item_id": "0d51c36a-e9cf-532e-b6cc-768a81c0631f",
+      "key": "ja:exercise:n1-u9-should-s6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "あって"
+            ]
+          }
+        },
+        "display_answer": "責任者から説明があってしかるべきだ。",
+        "explanation": {
+          "vi": "V て + しかるべき - đáng lẽ phải."
+        },
+        "known_wrong": [
+          {
+            "answer": "ある",
+            "error_tag": "form",
+            "feedback_vi": "Trước しかるべき phải dùng dạng て: あって."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "責任者から説明が{{b1}}しかるべきだ。 (Đáng lẽ người phụ trách phải đưa ra lời giải thích.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b7493bc9b3c8a84707e0ed7b2fe8acddb39b91bc1277e5e5063dc4339e52b79b",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "74a242d2-23c7-5217-92ec-a9b55abc6316",
+      "is_demo": false,
+      "item_id": "d7735632-26ed-5289-8e86-3a95694fe236",
+      "key": "ja:exercise:n1-u9-should-s7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "ではあるまいし",
+              "じゃあるまいし"
+            ]
+          }
+        },
+        "display_answer": "神様ではあるまいし、誰にも未来は分からない。",
+        "explanation": {
+          "vi": "N ではあるまいし - đâu phải N."
+        },
+        "known_wrong": [
+          {
+            "answer": "であろうと",
+            "error_tag": "nuance",
+            "feedback_vi": "であろうと là \"dù là\"; mỉa mai \"đâu phải ...\" dùng ではあるまいし."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 8
+          }
+        ],
+        "template": "神様{{b1}}、誰にも未来は分からない。 (Đâu phải thần thánh, chẳng ai biết được tương lai.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "cf58a83ea1a1a61ba2f33c3b2352c17bcf92668b701b9d21087b803734ff84ec",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "80a58cb1-41d7-569f-86be-790b2845eefd",
+      "is_demo": false,
+      "item_id": "0e8d1681-291e-5f2f-8368-87923c92cf8f",
+      "key": "ja:exercise:n1-u9-should-s8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "教師ともあろう者が、生徒に暴力を振るうとは。",
+            "教師ともあろう者が生徒に暴力を振るうとは。",
+            "きょうしともあろうものが、せいとにぼうりょくをふるうとは。",
+            "教師ともあろう人が、生徒に暴力を振るうなんて。"
+          ]
+        },
+        "display_answer": "教師ともあろう者が、生徒に暴力を振るうとは。",
+        "explanation": {
+          "vi": "N ともあろう + N - người ở vị thế như N mà lại."
+        },
+        "known_wrong": [
+          {
+            "answer": "教師であろうと、生徒に暴力を振るうとは。",
+            "error_tag": "nuance",
+            "feedback_vi": "であろうと là \"dù là\"; ともあろう diễn tả vị thế đòi hỏi chuẩn mực."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Một người làm giáo viên mà lại đánh học sinh."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "f930514befb5658ebd4c30ab85428624454bb63ec3d9518da061518c4bb7b812",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "313e35eb-dc7a-5540-8a37-9629dd9f290c",
+      "is_demo": false,
+      "item_id": "a8925387-ec4c-59e0-9633-6d2cbfb04bcd",
+      "key": "ja:exercise:n1-u9-should-s9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Một giám đốc tập đoàn lớn mà lại gian lận thì thật khó tin. Dù đối phương là ai cũng phải xin lỗi.",
+            "Người làm giám đốc tập đoàn lớn mà làm gian lận thì tôi không tin nổi. Bất kể người đó là ai, vẫn phải tạ lỗi.",
+            "Không thể tin một giám đốc tập đoàn lớn lại gian lận. Dù là ai thì cũng nên xin lỗi."
+          ]
+        },
+        "display_answer": "Một giám đốc tập đoàn lớn mà lại gian lận thì thật khó tin. Dù đối phương là ai cũng phải xin lỗi.",
+        "explanation": {
+          "vi": "ともあろう - người ở vị thế như ... mà; であろうと - dù là; 謝罪 - xin lỗi chính thức."
+        },
+        "known_wrong": [
+          {
+            "answer": "Một giám đốc tập đoàn nhỏ gian lận thì tôi tin. Đối phương là ai cũng không cần xin lỗi.",
+            "error_tag": "meaning",
+            "feedback_vi": "ともあろう diễn tả sự không thể tin."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "大企業の社長ともあろう人が、不正をするとは信じられません。相手が誰であろうと、謝罪はすべきです。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
       "content_hash": "5516bcebf172b7e305118eb3ec475b7578df2405af37533d2c5f3ac671b3ec28",
       "difficulty": 3,
       "exercise_type": "fill_blank",
@@ -340742,6 +344565,5666 @@ select content_private.import_bundle($bundle${
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a73bb5ba471cb891f0953f982a748c33c00e2759fdaa72b18aa16ce9174cdb67",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "e351f8a3-6c6d-5208-834d-5112f4bd053b",
+      "is_demo": false,
+      "item_id": "b4188ad8-9ad2-5211-8dc8-2e47b00852c1",
+      "key": "ja:exercise:n2-u10-business-b1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "w9y"
+        },
+        "display_answer": "赤字",
+        "explanation": {
+          "vi": "赤字 là thua lỗ. 黒字 là có lãi, 投資 là đầu tư, 取引 là giao dịch."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "w9y",
+            "lang": "ja",
+            "text": "赤字"
+          },
+          {
+            "id": "yae",
+            "lang": "ja",
+            "text": "投資"
+          },
+          {
+            "id": "l1i",
+            "lang": "ja",
+            "text": "取引"
+          },
+          {
+            "id": "i32",
+            "lang": "ja",
+            "text": "黒字"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “thua lỗ”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "888bfd94d7a06f93dfbee5cc94d1d5c5790596b2a0ab70ca27e7fc214809d151",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "5052ebed-40e3-5990-91d6-96cee0f2d59f",
+      "is_demo": false,
+      "item_id": "aec3be57-c9d8-5857-9674-e24b21df062e",
+      "key": "ja:exercise:n2-u10-business-b10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "二つの会社が提携して、新しい事業を始めました。",
+        "explanation": {
+          "vi": "Chủ thể → 提携して (liên kết) → tân ngữ → 始めました."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Hai công ty liên kết và bắt đầu dự án mới.\"",
+        "tokens": [
+          {
+            "id": "t4",
+            "text": "始めました。"
+          },
+          {
+            "id": "t2",
+            "text": "提携して、"
+          },
+          {
+            "id": "t1",
+            "text": "二つの会社が"
+          },
+          {
+            "id": "t3",
+            "text": "新しい事業を"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "5b83e56d227352ecabab0e056946fff22566d6d2f5ea5f0833626b7495fdddf9",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "ac31dedc-7fdb-5ae1-9a2e-1031588fdacd",
+      "is_demo": false,
+      "item_id": "728b27d4-9abc-5e18-a630-5a05b2100d1b",
+      "key": "ja:exercise:n2-u10-business-b11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "yxx"
+        },
+        "display_answer": "株を買って、利益を出しました",
+        "explanation": {
+          "vi": "株を買う - mua cổ phiếu. 貿易する, 交渉する, 倒産する không đi với 株."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "a5j",
+            "lang": "ja",
+            "text": "株を貿易して、利益を出しました"
+          },
+          {
+            "id": "mjh",
+            "lang": "ja",
+            "text": "株を交渉して、利益を出しました"
+          },
+          {
+            "id": "kzk",
+            "lang": "ja",
+            "text": "株を倒産して、利益を出しました"
+          },
+          {
+            "id": "yxx",
+            "lang": "ja",
+            "text": "株を買って、利益を出しました"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn mua cổ phiếu và có lãi. Cụm nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "5938acf0e0413696f90fe626fc2aaedd63ba60dbdd3cd792992256ecef7d5ab8",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "e83fd874-0543-50aa-942b-44cfd46aae2b",
+      "is_demo": false,
+      "item_id": "c0eb2a09-4b09-5ee0-a57d-f4b79f28347b",
+      "key": "ja:exercise:n2-u10-business-b2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "ppt"
+        },
+        "display_answer": "需要",
+        "explanation": {
+          "vi": "需要 là nhu cầu. 供給 là nguồn cung, 競争 là cạnh tranh, 提携 là liên kết."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "ppt",
+            "lang": "ja",
+            "text": "需要"
+          },
+          {
+            "id": "wit",
+            "lang": "ja",
+            "text": "競争"
+          },
+          {
+            "id": "r36",
+            "lang": "ja",
+            "text": "供給"
+          },
+          {
+            "id": "gyo",
+            "lang": "ja",
+            "text": "提携"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói “nhu cầu của thị trường”. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7f98c9a057cf0cb03152b4b91bc62e32a8cc67131ec8b389c812733e2e59d627",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "3ad8620a-4a40-56bf-ac9b-18e766695c65",
+      "is_demo": false,
+      "item_id": "c45254ed-2ae4-5d49-bc9c-01cdf5c2069f",
+      "key": "ja:exercise:n2-u10-business-b3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "a7g"
+        },
+        "display_answer": "Do suy thoái nhiều công ty đã phá sản.",
+        "explanation": {
+          "vi": "不景気 - suy thoái; 倒産 - phá sản."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "不景気で、多くの会社が倒産しました。",
+        "options": [
+          {
+            "id": "mvf",
+            "lang": "vi",
+            "text": "Do kinh tế tốt nhiều công ty đã mở rộng."
+          },
+          {
+            "id": "edx",
+            "lang": "vi",
+            "text": "Nhiều công ty đã đầu tư vào cổ phiếu."
+          },
+          {
+            "id": "a7g",
+            "lang": "vi",
+            "text": "Do suy thoái nhiều công ty đã phá sản."
+          },
+          {
+            "id": "t9k",
+            "lang": "vi",
+            "text": "Nhiều công ty đã liên kết với nhau."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c9bb5b7a7ff807bd20fe04824c753791196aa355041404b185c65f3748a28b71",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "ce8013f8-4bee-56ce-97a8-bd9ea399e95e",
+      "is_demo": false,
+      "item_id": "23fb3318-969c-5f06-9aa1-9a7fd338595d",
+      "key": "ja:exercise:n2-u10-business-b4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "黒字",
+              "くろじ"
+            ]
+          }
+        },
+        "display_answer": "今年は黒字になりました。",
+        "explanation": {
+          "vi": "黒字 - có lãi."
+        },
+        "known_wrong": [
+          {
+            "answer": "赤字",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "赤字 là thua lỗ - ngược nghĩa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Nghĩa là có lãi.",
+          "Bắt đầu bằng 黒."
+        ],
+        "template": "今年は{{b1}}になりました。 (Năm nay công ty đã có lãi.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "2590f9734b82480aea666196bf9abc6a1b55355dceb84c6bd40340383be31022",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "6bf5d9d3-5a95-51a0-bb7e-8f5eeea0251e",
+      "is_demo": false,
+      "item_id": "50475aa4-72b2-5058-985c-504760f803ff",
+      "key": "ja:exercise:n2-u10-business-b5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "aqm"
+        },
+        "display_answer": "貿易",
+        "explanation": {
+          "vi": "貿易 là ngoại thương. 取引 là giao dịch chung, 交渉 là đàm phán, 株 là cổ phiếu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "aqm",
+            "lang": "ja",
+            "text": "貿易"
+          },
+          {
+            "id": "iah",
+            "lang": "ja",
+            "text": "株"
+          },
+          {
+            "id": "y43",
+            "lang": "ja",
+            "text": "交渉"
+          },
+          {
+            "id": "xew",
+            "lang": "ja",
+            "text": "取引"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Hoạt động mua bán với nước ngoài gọi là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "1cb128b3ed71d523f3102693f710f9e697ebb2f1ad2eadfb034744ef80c72e3d",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "ac38e327-5310-50a8-8d5f-18ede6a525a4",
+      "is_demo": false,
+      "item_id": "f10aed19-7f08-54dc-8080-abe57e2b105b",
+      "key": "ja:exercise:n2-u10-business-b6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "交渉",
+              "こうしょう"
+            ]
+          }
+        },
+        "display_answer": "価格について交渉しています。",
+        "explanation": {
+          "vi": "交渉 - đàm phán."
+        },
+        "known_wrong": [
+          {
+            "answer": "取引",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "取引 là giao dịch; \"đàm phán\" là 交渉."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "価格について{{b1}}しています。 (Chúng tôi đang đàm phán về giá cả.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d1785710d7a22902044ab15e261cb3ac10a7701d5f74f4619a23661815e901c3",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "0153c6be-b323-531f-8263-a6159de9f4f7",
+      "is_demo": false,
+      "item_id": "04a4c051-50bf-5aad-b502-6708c4dc115c",
+      "key": "ja:exercise:n2-u10-business-b7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "投資",
+              "とうし"
+            ]
+          }
+        },
+        "display_answer": "新しい事業に投資します。",
+        "explanation": {
+          "vi": "投資 - đầu tư."
+        },
+        "known_wrong": [
+          {
+            "answer": "提携",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "提携 là liên kết; đưa vốn vào là 投資."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "新しい事業に{{b1}}します。 (Tôi đầu tư vào dự án mới.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "8ff1dcf4eb83ebd3d1d140aed1a7a525d506c24d9dc17efde6ecac72ed4c0153",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "f1f9e235-71ef-535c-97d3-019f2cbfac56",
+      "is_demo": false,
+      "item_id": "494a76e6-61a0-5d09-9950-0eda84679e37",
+      "key": "ja:exercise:n2-u10-business-b8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "競争が激しくなっています。",
+            "競争が激しくなってきました。",
+            "きょうそうがはげしくなっています。",
+            "競争が激しくなってきている。"
+          ]
+        },
+        "display_answer": "競争が激しくなっています。",
+        "explanation": {
+          "vi": "競争が激しくなる - cạnh tranh gay gắt dần."
+        },
+        "known_wrong": [
+          {
+            "answer": "競争が少なくなっています。",
+            "error_tag": "meaning",
+            "feedback_vi": "激しい là gay gắt; 少ない là ít."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Cạnh tranh ngày càng gay gắt."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "d91614d78aa675df17c84664ca4b008221b87b0192689b51eec3201d1388a58f",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "7dcc13e1-f71b-5caa-a320-192a0be56df2",
+      "is_demo": false,
+      "item_id": "bf4a144a-bc22-55ca-9aac-e5cfe63019ff",
+      "key": "ja:exercise:n2-u10-business-b9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Kết quả kinh doanh năm nay cao hơn năm ngoái và có lãi. Tuy nhiên cạnh tranh ngày càng gay gắt nên không thể chủ quan.",
+            "Thành tích kinh doanh năm nay tốt hơn năm ngoái, đã có lãi. Nhưng cạnh tranh gay gắt nên không được lơ là.",
+            "Năm nay kết quả kinh doanh tăng so với năm ngoái và có lãi. Tuy vậy vì cạnh tranh ngày càng khốc liệt, ta không thể lơ là."
+          ]
+        },
+        "display_answer": "Kết quả kinh doanh năm nay cao hơn năm ngoái và có lãi. Tuy nhiên cạnh tranh ngày càng gay gắt nên không thể chủ quan.",
+        "explanation": {
+          "vi": "業績が上がる - kết quả tăng; 黒字 - có lãi; 気を抜けない - không thể lơ là."
+        },
+        "known_wrong": [
+          {
+            "answer": "Kết quả kinh doanh năm nay thấp hơn năm ngoái và thua lỗ. Nhưng cạnh tranh giảm nên có thể chủ quan.",
+            "error_tag": "meaning",
+            "feedback_vi": "黒字 là có lãi; 競争が激しくなっている là cạnh tranh gay gắt."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "今年の業績は去年より上がり、黒字になりました。しかし、競争が激しくなっているので、気を抜けません。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b60089017daad217a3a14c2bc91b51f7b137bae70c9060517621c8668933b118",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "8026724c-622f-5520-99d1-640847845b44",
+      "is_demo": false,
+      "item_id": "a045e21c-f98d-542d-b49f-5dfca789389a",
+      "key": "ja:exercise:n2-u10-mind-m1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "maa"
+        },
+        "display_answer": "孤独",
+        "explanation": {
+          "vi": "孤独 là cô đơn. 緊張 là căng thẳng, 満足 là hài lòng, 共感 là đồng cảm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "un7",
+            "lang": "ja",
+            "text": "緊張"
+          },
+          {
+            "id": "dzm",
+            "lang": "ja",
+            "text": "満足"
+          },
+          {
+            "id": "ejx",
+            "lang": "ja",
+            "text": "共感"
+          },
+          {
+            "id": "maa",
+            "lang": "ja",
+            "text": "孤独"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “cô đơn”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "41ad461d3920e655d8b7f49fbe57f4590b98b7d59ee98698974236fb979a961c",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "8d86b14a-ed96-5f91-8f42-5c51d3c947c1",
+      "is_demo": false,
+      "item_id": "523ed247-7bce-5cde-b041-14bb18077dcb",
+      "key": "ja:exercise:n2-u10-mind-m10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "彼は明るい性格です。",
+        "explanation": {
+          "vi": "Chủ đề → tính từ bổ nghĩa → 性格です."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Anh ấy có tính cách vui vẻ.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "性格です。"
+          },
+          {
+            "id": "t2",
+            "text": "明るい"
+          },
+          {
+            "id": "t1",
+            "text": "彼は"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "99fab0d8cbfee8ef2e12b14de005df8153c47927d7ecefae3d8d7fbc129c3971",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "b8c7e826-e91b-5dba-892d-b13751dfb6d7",
+      "is_demo": false,
+      "item_id": "77404c83-e862-56dd-ae67-402aa421abb0",
+      "key": "ja:exercise:n2-u10-mind-m11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "apn"
+        },
+        "display_answer": "態度",
+        "explanation": {
+          "vi": "態度 là thái độ, cách cư xử. 性格 là tính cách, 価値観 là giá trị quan, 偏見 là định kiến."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "b4d",
+            "lang": "ja",
+            "text": "偏見"
+          },
+          {
+            "id": "apn",
+            "lang": "ja",
+            "text": "態度"
+          },
+          {
+            "id": "gfc",
+            "lang": "ja",
+            "text": "価値観"
+          },
+          {
+            "id": "e7j",
+            "lang": "ja",
+            "text": "性格"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn phê bình cách cư xử thiếu lễ phép của ai đó. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "8de9afde83074e85ddc24057d56fbc639dcf1ed150e4c6045156f23713a43a56",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "0b96567a-6592-531c-92c1-e5841d4a9d54",
+      "is_demo": false,
+      "item_id": "e20b80b9-693b-542a-9154-8389ac618cfe",
+      "key": "ja:exercise:n2-u10-mind-m2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "nyw"
+        },
+        "display_answer": "偏見",
+        "explanation": {
+          "vi": "偏見 là định kiến. 価値観 là giá trị quan, 態度 là thái độ, 尊重 là tôn trọng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "gew",
+            "lang": "ja",
+            "text": "尊重"
+          },
+          {
+            "id": "nyw",
+            "lang": "ja",
+            "text": "偏見"
+          },
+          {
+            "id": "eg0",
+            "lang": "ja",
+            "text": "態度"
+          },
+          {
+            "id": "nk8",
+            "lang": "ja",
+            "text": "価値観"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói “định kiến”. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "212de5a3053e4853af82402b65afa22c0e357f8111e4d653f194a93279d4cc28",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "34c39d65-4adc-5ec8-a676-fd5cbbe85cf9",
+      "is_demo": false,
+      "item_id": "0ee744ef-63b2-57e4-8f09-6f5b446c30d9",
+      "key": "ja:exercise:n2-u10-mind-m3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "mk4"
+        },
+        "display_answer": "Tôi hài lòng với kết quả nhưng bất mãn với lương.",
+        "explanation": {
+          "vi": "結果に満足 - hài lòng với kết quả; 給料には不満 - bất mãn với lương."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "結果に満足していますが、給料には不満があります。",
+        "options": [
+          {
+            "id": "tns",
+            "lang": "vi",
+            "text": "Tôi bất mãn với kết quả nhưng hài lòng với lương."
+          },
+          {
+            "id": "mk4",
+            "lang": "vi",
+            "text": "Tôi hài lòng với kết quả nhưng bất mãn với lương."
+          },
+          {
+            "id": "t94",
+            "lang": "vi",
+            "text": "Tôi bất mãn cả kết quả và lương."
+          },
+          {
+            "id": "c6o",
+            "lang": "vi",
+            "text": "Tôi hài lòng cả kết quả và lương."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "9798f387d878f3c94954d10ec6d9f3c77fe4c61e804f834278acb3b15753eb02",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "42d6acd7-5732-5418-b3f9-3dba4da739fa",
+      "is_demo": false,
+      "item_id": "10a14e57-776a-5c28-9208-8be2675a6baf",
+      "key": "ja:exercise:n2-u10-mind-m4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "不安",
+              "ふあん"
+            ]
+          }
+        },
+        "display_answer": "将来が不安です。",
+        "explanation": {
+          "vi": "不安 - bất an, lo âu."
+        },
+        "known_wrong": [
+          {
+            "answer": "満足",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "満足 là hài lòng - ngược nghĩa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Cảm xúc lo âu mơ hồ.",
+          "Bắt đầu bằng 不."
+        ],
+        "template": "将来が{{b1}}です。 (Tôi bất an về tương lai.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ffa99e2a61e270723018c77b64c9c581d81045e2b87277496001f272889e4fba",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "fde03300-93c8-5be7-8a91-98fdb8d32664",
+      "is_demo": false,
+      "item_id": "a85363bb-3990-5286-b27a-0709447a426e",
+      "key": "ja:exercise:n2-u10-mind-m5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "k3w"
+        },
+        "display_answer": "共感",
+        "explanation": {
+          "vi": "共感 là đồng cảm. 尊重 là tôn trọng, 偏見 là định kiến, 葛藤 là giằng xé."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "k3w",
+            "lang": "ja",
+            "text": "共感"
+          },
+          {
+            "id": "lby",
+            "lang": "ja",
+            "text": "尊重"
+          },
+          {
+            "id": "whv",
+            "lang": "ja",
+            "text": "葛藤"
+          },
+          {
+            "id": "jca",
+            "lang": "ja",
+            "text": "偏見"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn chia sẻ cảm xúc với một người qua câu chuyện của họ. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7ad298c4ff1c7259e74540a0bfd42af6b23dc5086b88beed35af218bff837b15",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "8738b3e9-d9d5-5277-bfed-e2e61c2e0f1f",
+      "is_demo": false,
+      "item_id": "5a4891ae-8c31-5f32-8190-b8842d7ea7ab",
+      "key": "ja:exercise:n2-u10-mind-m6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "緊張",
+              "きんちょう"
+            ]
+          }
+        },
+        "display_answer": "面接で緊張しました。",
+        "explanation": {
+          "vi": "緊張 - căng thẳng, hồi hộp."
+        },
+        "known_wrong": [
+          {
+            "answer": "葛藤",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "葛藤 là giằng xé nội tâm; hồi hộp trước phỏng vấn là 緊張."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "面接で{{b1}}しました。 (Tôi căng thẳng ở buổi phỏng vấn.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "17d0d344e969529988cd7da39a97e01c23e9979b7eb67b75517af72aa08fc585",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "023ca857-b9d6-5667-b505-4cad85ecb1dd",
+      "is_demo": false,
+      "item_id": "1dfbd5c8-99f9-582c-a853-ec7898fd9e0e",
+      "key": "ja:exercise:n2-u10-mind-m7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "尊重",
+              "そんちょう"
+            ]
+          }
+        },
+        "display_answer": "相手の意見を尊重します。",
+        "explanation": {
+          "vi": "尊重 - tôn trọng."
+        },
+        "known_wrong": [
+          {
+            "answer": "共感",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "共感 là đồng cảm; \"tôn trọng ý kiến\" là 尊重."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "相手の意見を{{b1}}します。 (Tôi tôn trọng ý kiến của đối phương.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "48bb0c69fdabded2bb1e1cf28f2950d70fbc9958b271aef8339af23317b5679a",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "35461ce9-0649-5cc3-9986-a1421f6c1b3a",
+      "is_demo": false,
+      "item_id": "32e4fb15-bf4b-50a8-a6d8-f67d4d08ab18",
+      "key": "ja:exercise:n2-u10-mind-m8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "人によって価値観が違います。",
+            "人によって価値観は違います。",
+            "ひとによってかちかんがちがいます。",
+            "人によって価値観が異なります。"
+          ]
+        },
+        "display_answer": "人によって価値観が違います。",
+        "explanation": {
+          "vi": "人によって - tuỳ từng người; 価値観が違う - quan niệm sống khác nhau."
+        },
+        "known_wrong": [
+          {
+            "answer": "人によって価値観が同じです。",
+            "error_tag": "meaning",
+            "feedback_vi": "違います là khác nhau; 同じ là giống nhau."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Quan niệm sống khác nhau theo từng người."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "ac85603ec6e496ca2c33ad68b9b861e9c0f0aba502758d347c700b194fe9cda1",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "de480422-e55f-5145-a6b6-e1a79101a4f0",
+      "is_demo": false,
+      "item_id": "a8324740-4863-5d23-95e5-f8383d92fe40",
+      "key": "ja:exercise:n2-u10-mind-m9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Anh ấy thấy giằng xé giữa công việc và gia đình. Dù vậy anh không phàn nàn mà tôn trọng lập trường của đối phương.",
+            "Anh ấy giằng xé giữa công việc và gia đình. Tuy thế, anh ấy không kêu ca, vẫn tôn trọng vị trí của người kia.",
+            "Anh ấy cảm thấy mâu thuẫn trong lòng giữa công việc và gia đình. Dù vậy anh không bất mãn mà tôn trọng đối phương."
+          ]
+        },
+        "display_answer": "Anh ấy thấy giằng xé giữa công việc và gia đình. Dù vậy anh không phàn nàn mà tôn trọng lập trường của đối phương.",
+        "explanation": {
+          "vi": "葛藤 - giằng xé; 不満を言わずに - không phàn nàn; 尊重 - tôn trọng."
+        },
+        "known_wrong": [
+          {
+            "answer": "Anh ấy không có sự giằng xé giữa công việc và gia đình. Anh ấy phàn nàn mà không tôn trọng đối phương.",
+            "error_tag": "meaning",
+            "feedback_vi": "葛藤を感じる là cảm thấy giằng xé."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "彼は仕事と家族の間で葛藤を感じています。それでも、不満を言わずに、相手の立場を尊重しています。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ee3e48f5f2c3516e8de13270c75c93a3fdb386e599c3210daa5fa69e9079194d",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "8d1f6b4a-d6c7-5f5b-8fcd-fe5bd7900038",
+      "is_demo": false,
+      "item_id": "41c00daa-4f9b-5d3f-8a1e-5bdbc7f1223a",
+      "key": "ja:exercise:n2-u10-science-c1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "ejy"
+        },
+        "display_answer": "汚染",
+        "explanation": {
+          "vi": "汚染 là ô nhiễm. 絶滅 là tuyệt chủng, 再生 là tái chế/tái sinh, 発電 là phát điện."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "eee",
+            "lang": "ja",
+            "text": "発電"
+          },
+          {
+            "id": "tm4",
+            "lang": "ja",
+            "text": "絶滅"
+          },
+          {
+            "id": "ljw",
+            "lang": "ja",
+            "text": "再生"
+          },
+          {
+            "id": "ejy",
+            "lang": "ja",
+            "text": "汚染"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “ô nhiễm”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "3b4f2d687e2b90bbe0419b838850789913b321d65f6aed74fdfa5919e6806d98",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "06fb3c0f-fd6d-5f66-bb98-6e545ec08a25",
+      "is_demo": false,
+      "item_id": "0908b3f4-9459-5c4d-a4dc-93fc7f47f703",
+      "key": "ja:exercise:n2-u10-science-c10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "仮説を立てて、実験します。",
+        "explanation": {
+          "vi": "Tân ngữ + 立てる (đặt) + 実験します."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Đặt giả thuyết rồi làm thí nghiệm.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "実験します。"
+          },
+          {
+            "id": "t2",
+            "text": "立てて、"
+          },
+          {
+            "id": "t1",
+            "text": "仮説を"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d1d7c9888e020cc3a042811c11305b732bf645168e6bd03954b150c8025d3136",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "8f904c78-47c2-5ef7-a38e-48810515dee6",
+      "is_demo": false,
+      "item_id": "657df863-69e5-55e4-9c2c-838463384a22",
+      "key": "ja:exercise:n2-u10-science-c11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "jjt"
+        },
+        "display_answer": "宇宙",
+        "explanation": {
+          "vi": "宇宙 là vũ trụ. 遺伝子 là gen, 生態系 là hệ sinh thái, 廃棄物 là chất thải."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "xic",
+            "lang": "ja",
+            "text": "生態系"
+          },
+          {
+            "id": "gjo",
+            "lang": "ja",
+            "text": "廃棄物"
+          },
+          {
+            "id": "jjt",
+            "lang": "ja",
+            "text": "宇宙"
+          },
+          {
+            "id": "caq",
+            "lang": "ja",
+            "text": "遺伝子"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Ước mơ của bạn là bay ra ngoài Trái Đất. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c7b9a3c461abdbb461f3b4942ebebc74663ab42afad6cf5a8eccfb43d39adcb6",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "b3aad1e7-0325-5fc7-8cdf-1e52e98019d9",
+      "is_demo": false,
+      "item_id": "0908b3f4-9459-5c4d-a4dc-93fc7f47f703",
+      "key": "ja:exercise:n2-u10-science-c2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "leh"
+        },
+        "display_answer": "仮説",
+        "explanation": {
+          "vi": "仮説 là giả thuyết. 検証 là kiểm chứng, 分析 là phân tích, 遺伝子 là gen."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "kpe",
+            "lang": "ja",
+            "text": "遺伝子"
+          },
+          {
+            "id": "y84",
+            "lang": "ja",
+            "text": "検証"
+          },
+          {
+            "id": "s52",
+            "lang": "ja",
+            "text": "分析"
+          },
+          {
+            "id": "leh",
+            "lang": "ja",
+            "text": "仮説"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn đặt giả thuyết trước khi thí nghiệm. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7d0aa583c30cc8356229350d9769b21c3a82517a9bd9025860260e9b33f04c57",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "9b9fe315-0256-5559-9f4f-96fb13cd1a6f",
+      "is_demo": false,
+      "item_id": "705a5b90-9961-5690-b7be-0e284f17311d",
+      "key": "ja:exercise:n2-u10-science-c3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "lz4"
+        },
+        "display_answer": "Hãy bảo vệ các loài động vật đang có nguy cơ tuyệt chủng.",
+        "explanation": {
+          "vi": "絶滅の危機 - nguy cơ tuyệt chủng; 守りましょう - hãy bảo vệ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "絶滅の危機にある動物を守りましょう。",
+        "options": [
+          {
+            "id": "uf1",
+            "lang": "vi",
+            "text": "Hãy săn các động vật quý hiếm."
+          },
+          {
+            "id": "d1g",
+            "lang": "vi",
+            "text": "Hãy nuôi nhiều động vật ở nhà."
+          },
+          {
+            "id": "lz4",
+            "lang": "vi",
+            "text": "Hãy bảo vệ các loài động vật đang có nguy cơ tuyệt chủng."
+          },
+          {
+            "id": "umb",
+            "lang": "vi",
+            "text": "Các động vật đã tuyệt chủng sẽ quay lại."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ea74a5021667d9c493f51ed81d0f2564b80cf16c82900841ebbd70babeec252f",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "4404cadf-f733-5901-8376-3cc027f0d16b",
+      "is_demo": false,
+      "item_id": "fa78b85a-4d2a-5f06-bb81-d1151794038f",
+      "key": "ja:exercise:n2-u10-science-c4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "分析",
+              "ぶんせき"
+            ]
+          }
+        },
+        "display_answer": "データを分析します。",
+        "explanation": {
+          "vi": "分析 - phân tích."
+        },
+        "known_wrong": [
+          {
+            "answer": "検証",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "検証 là kiểm chứng; chia nhỏ dữ liệu để hiểu là 分析."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Chia nhỏ dữ liệu để hiểu.",
+          "Bắt đầu bằng 分."
+        ],
+        "template": "データを{{b1}}します。 (Tôi phân tích dữ liệu.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "acd3efa69e8931f7a22f8590d2238781928e3e72feb9581e1ad5f455a45eae02",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "e0a5f327-aa15-52b4-a056-e77eb65aef0a",
+      "is_demo": false,
+      "item_id": "79874362-aec7-5687-a2f6-c752b08ea4ae",
+      "key": "ja:exercise:n2-u10-science-c5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "gm9"
+        },
+        "display_answer": "太陽光で発電します。",
+        "explanation": {
+          "vi": "太陽光で発電する - phát điện bằng ánh sáng mặt trời. を, に, が không đúng ở đây."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "ewb",
+            "lang": "ja",
+            "text": "太陽光が発電します。"
+          },
+          {
+            "id": "gm9",
+            "lang": "ja",
+            "text": "太陽光で発電します。"
+          },
+          {
+            "id": "k27",
+            "lang": "ja",
+            "text": "太陽光に発電します。"
+          },
+          {
+            "id": "oun",
+            "lang": "ja",
+            "text": "太陽光を発電します。"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói “Phát điện bằng ánh sáng mặt trời”. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e43c7f7aa808cb0bfb591a24169fd0feed8f5f79771a242b54b1cb8793e071b0",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "4383f0be-0da5-5a56-b074-36fde6defc91",
+      "is_demo": false,
+      "item_id": "0c48bb3b-038e-5ef2-aa99-c8e24951d3e9",
+      "key": "ja:exercise:n2-u10-science-c6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "廃棄物",
+              "はいきぶつ"
+            ]
+          }
+        },
+        "display_answer": "廃棄物を減らす努力をしています。",
+        "explanation": {
+          "vi": "廃棄物 - chất thải."
+        },
+        "known_wrong": [
+          {
+            "answer": "汚染",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "汚染 là ô nhiễm; \"giảm\" thứ thải ra là 廃棄物."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "{{b1}}を減らす努力をしています。 (Chúng tôi nỗ lực giảm chất thải.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "46db895be1ac74c0548699878acf2e9cd35bb9e0c10c3bfa3d2e28b9ef4aa727",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "d750196c-d66f-5326-997c-5ab78e217a38",
+      "is_demo": false,
+      "item_id": "d6c46efb-07a3-5e8f-9a7f-ae373a20df5e",
+      "key": "ja:exercise:n2-u10-science-c7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "検証",
+              "けんしょう"
+            ]
+          }
+        },
+        "display_answer": "仮説を検証する必要があります。",
+        "explanation": {
+          "vi": "検証 - kiểm chứng."
+        },
+        "known_wrong": [
+          {
+            "answer": "分析",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "分析 là phân tích; xác nhận đúng sai của giả thuyết là 検証."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "仮説を{{b1}}する必要があります。 (Cần kiểm chứng giả thuyết.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d430aabdd91f76b4850f5b1060464692758754f5f3046f3d4c7135bd4b5b9760",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "ddf7ea4f-1ffb-536e-bbd4-a4753ee1c3ed",
+      "is_demo": false,
+      "item_id": "41c00daa-4f9b-5d3f-8a1e-5bdbc7f1223a",
+      "key": "ja:exercise:n2-u10-science-c8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "大気汚染が深刻です。",
+            "大気汚染は深刻です。",
+            "たいきおせんがしんこくです。",
+            "大気汚染が深刻な問題です。"
+          ]
+        },
+        "display_answer": "大気汚染が深刻です。",
+        "explanation": {
+          "vi": "大気汚染 - ô nhiễm không khí; 深刻 - nghiêm trọng."
+        },
+        "known_wrong": [
+          {
+            "answer": "大気汚染が深刻になりません。",
+            "error_tag": "meaning",
+            "feedback_vi": "Câu nói hiện trạng nghiêm trọng, không phải \"không trở nên nghiêm trọng\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Ô nhiễm không khí rất nghiêm trọng."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "f41ff8f3400b9b62ee9386f0e3a9b0bd7747c90b46d16f00d0ee241b45a3a41b",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "53ad9b7f-ebad-5aa4-b5d7-852ae0264cb7",
+      "is_demo": false,
+      "item_id": "411baa6a-8ba7-5d83-83d3-1bd7c076427f",
+      "key": "ja:exercise:n2-u10-science-c9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Để bảo vệ hệ sinh thái, giảm chất thải và phát điện bằng năng lượng tái tạo.",
+            "Họ giảm chất thải và phát điện bằng năng lượng tái sinh để bảo vệ hệ sinh thái.",
+            "Để giữ gìn hệ sinh thái, người ta giảm rác thải và dùng năng lượng tái tạo để phát điện."
+          ]
+        },
+        "display_answer": "Để bảo vệ hệ sinh thái, giảm chất thải và phát điện bằng năng lượng tái tạo.",
+        "explanation": {
+          "vi": "生態系を守る - bảo vệ hệ sinh thái; 再生可能 - có thể tái tạo."
+        },
+        "known_wrong": [
+          {
+            "answer": "Để phá hệ sinh thái, tăng chất thải và phát điện bằng than.",
+            "error_tag": "meaning",
+            "feedback_vi": "守るために là để bảo vệ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "生態系を守るために、廃棄物を減らし、再生可能なエネルギーで発電します。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7cd539574c33245df2f4f925244add880084dc539c9811051ed29898d552d715",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "e2147b54-b594-5dc3-a513-cce09b694be2",
+      "is_demo": false,
+      "item_id": "c000d098-64d4-543f-a262-7ecb2323d9e0",
+      "key": "ja:exercise:n2-u10-society-policy-s1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "ta7"
+        },
+        "display_answer": "格差",
+        "explanation": {
+          "vi": "格差 là chênh lệch. 改革 là cải cách, 規制 là quy định hạn chế, 福祉 là phúc lợi."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "a2u",
+            "lang": "ja",
+            "text": "規制"
+          },
+          {
+            "id": "m01",
+            "lang": "ja",
+            "text": "改革"
+          },
+          {
+            "id": "ta7",
+            "lang": "ja",
+            "text": "格差"
+          },
+          {
+            "id": "fki",
+            "lang": "ja",
+            "text": "福祉"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “chênh lệch (giàu nghèo)”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "4fc660cd5e4a72aa57379c057a11d046c34796e7b2d68d987a05cb04793cbed6",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "4cc33a00-3d1f-50de-a09e-6d674ed497e6",
+      "is_demo": false,
+      "item_id": "51652c98-b3f3-56b6-ae5d-1473bc70cdb9",
+      "key": "ja:exercise:n2-u10-society-policy-s10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "健康保険に入っています。",
+        "explanation": {
+          "vi": "Danh từ ghép 健康保険 + に + 入っています."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Tôi tham gia bảo hiểm y tế.\"",
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "健康"
+          },
+          {
+            "id": "t3",
+            "text": "入っています。"
+          },
+          {
+            "id": "t2",
+            "text": "保険に"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f22d1522fb85199c6a2a2a47d63c6df5732378fafa291da1166b48830c999436",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "733c6af6-e662-50d6-ab73-e70c3616e24f",
+      "is_demo": false,
+      "item_id": "b5455649-aae9-5624-8c7e-36cf41052aee",
+      "key": "ja:exercise:n2-u10-society-policy-s11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q6d"
+        },
+        "display_answer": "改革",
+        "explanation": {
+          "vi": "改革 là cải cách. 規制 là hạn chế, 失業 là thất nghiệp, 差別 là phân biệt."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "rif",
+            "lang": "ja",
+            "text": "規制"
+          },
+          {
+            "id": "uxc",
+            "lang": "ja",
+            "text": "差別"
+          },
+          {
+            "id": "q6d",
+            "lang": "ja",
+            "text": "改革"
+          },
+          {
+            "id": "q3v",
+            "lang": "ja",
+            "text": "失業"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Cần thay đổi triệt để chế độ. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f2512f02d24a5d5f818450ed3220cff3e40588f8e257868392a31bd213f4b0f0",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "c09b63ed-af4a-5a0d-b94c-a223e46b36a7",
+      "is_demo": false,
+      "item_id": "b397e6ee-771e-524d-814b-47ea5a437ac5",
+      "key": "ja:exercise:n2-u10-society-policy-s2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "ylf"
+        },
+        "display_answer": "介護",
+        "explanation": {
+          "vi": "介護 là chăm sóc người cần giúp trong sinh hoạt. 医療 là y tế, 保険 là bảo hiểm, 失業 là thất nghiệp."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "apg",
+            "lang": "ja",
+            "text": "失業"
+          },
+          {
+            "id": "ylf",
+            "lang": "ja",
+            "text": "介護"
+          },
+          {
+            "id": "e4a",
+            "lang": "ja",
+            "text": "保険"
+          },
+          {
+            "id": "qry",
+            "lang": "ja",
+            "text": "医療"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói về việc chăm sóc người già trong sinh hoạt. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "2a8a42772bc75f6c8849395535db2e5c983f4ce4fd0e9695863c7e7a99353afa",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "b9828fbc-c2ee-599c-b9c4-b661a9ff7f2a",
+      "is_demo": false,
+      "item_id": "965d1ada-daf0-5f0f-abf6-51eefa8a95bb",
+      "key": "ja:exercise:n2-u10-society-policy-s3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "obb"
+        },
+        "display_answer": "Người cao tuổi tăng nên người cần chăm sóc cũng tăng.",
+        "explanation": {
+          "vi": "高齢者が増える - người cao tuổi tăng; 介護が必要な人 - người cần chăm sóc."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "高齢者が増えて、介護が必要な人も増えています。",
+        "options": [
+          {
+            "id": "scl",
+            "lang": "vi",
+            "text": "Người cao tuổi giảm nên người cần chăm sóc cũng giảm."
+          },
+          {
+            "id": "j1w",
+            "lang": "vi",
+            "text": "Người trẻ tăng nên người cần chăm sóc tăng."
+          },
+          {
+            "id": "hpo",
+            "lang": "vi",
+            "text": "Người cao tuổi tăng nhưng người cần chăm sóc giảm."
+          },
+          {
+            "id": "obb",
+            "lang": "vi",
+            "text": "Người cao tuổi tăng nên người cần chăm sóc cũng tăng."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7324233b90139fe5ba866d9643c300aec2365a39c5515954f636b3d6c047fe2b",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "c80fbf07-08d3-5d63-8c91-be3ab8e58d9e",
+      "is_demo": false,
+      "item_id": "8c69debe-ca4a-5fff-8b00-15ccba4ab298",
+      "key": "ja:exercise:n2-u10-society-policy-s4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "人権",
+              "じんけん"
+            ]
+          }
+        },
+        "display_answer": "人権を守ることは大切です。",
+        "explanation": {
+          "vi": "人権 - nhân quyền."
+        },
+        "known_wrong": [
+          {
+            "answer": "差別",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "差別 là phân biệt đối xử; thứ cần bảo vệ là 人権."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Quyền của con người.",
+          "Bắt đầu bằng 人."
+        ],
+        "template": "{{b1}}を守ることは大切です。 (Bảo vệ nhân quyền là điều quan trọng.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "1ca7381714f5e8ed9e6562c68a853685b32905210129eb279cad9ebf76f079b7",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "ba2b9e4e-aab7-5705-921c-94b4890ccee0",
+      "is_demo": false,
+      "item_id": "b857f0b2-382c-536c-87cc-219ca457a1a5",
+      "key": "ja:exercise:n2-u10-society-policy-s5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "rrr"
+        },
+        "display_answer": "規制",
+        "explanation": {
+          "vi": "規制 là quy định hạn chế. 改革 là cải cách, 福祉 là phúc lợi, 保険 là bảo hiểm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "rrr",
+            "lang": "ja",
+            "text": "規制"
+          },
+          {
+            "id": "ns2",
+            "lang": "ja",
+            "text": "改革"
+          },
+          {
+            "id": "g8l",
+            "lang": "ja",
+            "text": "保険"
+          },
+          {
+            "id": "vbn",
+            "lang": "ja",
+            "text": "福祉"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chính phủ siết chặt quy định. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "16d40d48dbf3560deb909efeee35379fae4a6edbb0866bc10b36cf98f91edd82",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "53cde2e7-221f-5120-b22d-550830582038",
+      "is_demo": false,
+      "item_id": "7ca0e26f-3fb6-51e9-b250-48f99ce229a2",
+      "key": "ja:exercise:n2-u10-society-policy-s6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "医療",
+              "いりょう"
+            ]
+          }
+        },
+        "display_answer": "医療費が高くなっています。",
+        "explanation": {
+          "vi": "医療費 - chi phí y tế."
+        },
+        "known_wrong": [
+          {
+            "answer": "保険",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "保険 là bảo hiểm; 医療費 là chi phí y tế."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "{{b1}}費が高くなっています。 (Chi phí y tế đang tăng cao.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "8c4363c48d380fafa836c3e1f3e9441195b8433dce0232862f8627d4eb0f624a",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "bfd29ee6-69f4-5eb8-8341-3c9f09ca509d",
+      "is_demo": false,
+      "item_id": "9c2961fe-c7b7-5523-a70a-4663046a3e83",
+      "key": "ja:exercise:n2-u10-society-policy-s7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "差別",
+              "さべつ"
+            ]
+          }
+        },
+        "display_answer": "人種による差別をなくしましょう。",
+        "explanation": {
+          "vi": "差別 - phân biệt đối xử."
+        },
+        "known_wrong": [
+          {
+            "answer": "格差",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "格差 là chênh lệch; phân biệt theo chủng tộc là 差別."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "人種による{{b1}}をなくしましょう。 (Hãy xoá bỏ sự phân biệt đối xử theo chủng tộc.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ebb32e6bed36c404440da3cca30f90f8a7e8711707fe8dbfb6a02f30ddafc038",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "07374c6b-948a-5452-bf9f-79d62543fb82",
+      "is_demo": false,
+      "item_id": "c000d098-64d4-543f-a262-7ecb2323d9e0",
+      "key": "ja:exercise:n2-u10-society-policy-s8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "所得の格差が広がっています。",
+            "所得の格差が拡大しています。",
+            "しょとくのかくさがひろがっています。",
+            "所得格差が広がっています。"
+          ]
+        },
+        "display_answer": "所得の格差が広がっています。",
+        "explanation": {
+          "vi": "格差が広がる - chênh lệch nới rộng."
+        },
+        "known_wrong": [
+          {
+            "answer": "所得の格差が狭まっています。",
+            "error_tag": "meaning",
+            "feedback_vi": "広がる là nới rộng; 狭まる là thu hẹp."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chênh lệch thu nhập đang nới rộng."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "496c0fac0f7d51f6f3e4f9dbb015316b627fc0e4e6acd4d35313a538514d54d7",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "391248e0-21a2-53f4-bfc5-777b0a709ebc",
+      "is_demo": false,
+      "item_id": "28efd413-ffaa-5372-a4d3-2d2068817fc3",
+      "key": "ja:exercise:n2-u10-society-policy-s9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Người cao tuổi tăng nên chi phí chăm sóc và y tế cũng tăng. Cần cải cách chế độ phúc lợi.",
+            "Số người già tăng và chi phí chăm sóc, y tế cũng tăng. Cần phải cải cách chế độ phúc lợi.",
+            "Người cao tuổi tăng lên, chi phí chăm sóc và y tế cũng tăng. Cần cải cách hệ thống phúc lợi."
+          ]
+        },
+        "display_answer": "Người cao tuổi tăng nên chi phí chăm sóc và y tế cũng tăng. Cần cải cách chế độ phúc lợi.",
+        "explanation": {
+          "vi": "高齢者が増える - người già tăng; 福祉制度を改革する - cải cách phúc lợi."
+        },
+        "known_wrong": [
+          {
+            "answer": "Người cao tuổi giảm nên chi phí chăm sóc cũng giảm. Không cần cải cách chế độ phúc lợi.",
+            "error_tag": "meaning",
+            "feedback_vi": "増えて là tăng."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "高齢者が増えて、介護や医療の費用も増えています。福祉制度を改革する必要があります。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e3442dab22abb6ce6607e09cf390b8f71f6b5efa41e91973f5c2161822c801d7",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "0355116e-d9c3-5998-ab00-6c9102ca8154",
+      "is_demo": false,
+      "item_id": "ec6712df-71e4-598c-83f6-cb90c3d5991d",
+      "key": "ja:exercise:n2-u11-basis-b1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "nax"
+        },
+        "display_answer": "をもとに",
+        "explanation": {
+          "vi": "N をもとに - dựa trên. にもとに, がもとに, でもとに sai trợ từ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "jxa",
+            "lang": "ja",
+            "text": "がもとに"
+          },
+          {
+            "id": "grc",
+            "lang": "ja",
+            "text": "でもとに"
+          },
+          {
+            "id": "ggs",
+            "lang": "ja",
+            "text": "にもとに"
+          },
+          {
+            "id": "nax",
+            "lang": "ja",
+            "text": "をもとに"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - この映画は実話___作られました。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "6bac0bce98123635bcb2f88462b4c9057f10afdf1dd448022952075aaa8de367",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "c6f51776-48c6-57f5-93c4-9c3dfe8cbd8e",
+      "is_demo": false,
+      "item_id": "90444c49-30db-5820-969b-3c1f135104f0",
+      "key": "ja:exercise:n2-u11-basis-b10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ],
+            [
+              "t3",
+              "t1",
+              "t2",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "計画に沿って、作業を進めます。",
+        "explanation": {
+          "vi": "N に沿って + tân ngữ + 進めます."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Tôi sẽ tiến hành công việc theo đúng kế hoạch.\"",
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "計画に"
+          },
+          {
+            "id": "t2",
+            "text": "沿って、"
+          },
+          {
+            "id": "t4",
+            "text": "進めます。"
+          },
+          {
+            "id": "t3",
+            "text": "作業を"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "6942b82d69bb2fd749ae889078858299c5d7ac9efdc2f6c6859527648dc66550",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "fe1c6829-b0aa-5d81-8dc1-8f42c4b2f79a",
+      "is_demo": false,
+      "item_id": "6b495e76-7cf1-5976-8549-ea5919475657",
+      "key": "ja:exercise:n2-u11-basis-b11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "gsr"
+        },
+        "display_answer": "前提",
+        "explanation": {
+          "vi": "結婚を前提に - với tiền đề kết hôn. 方針 là phương châm, 予想 là dự đoán, 期待 là kỳ vọng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "mv0",
+            "lang": "ja",
+            "text": "期待"
+          },
+          {
+            "id": "gye",
+            "lang": "ja",
+            "text": "予想"
+          },
+          {
+            "id": "gsr",
+            "lang": "ja",
+            "text": "前提"
+          },
+          {
+            "id": "zsc",
+            "lang": "ja",
+            "text": "方針"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Hai người hẹn hò với mục tiêu kết hôn. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "46e0d8b681ba848e87012d9f2c22838b218669f840664743cf4f6bdc9d3042b8",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "d124ba06-89b2-53ad-9412-29f287deeba6",
+      "is_demo": false,
+      "item_id": "aa7880f9-3098-5565-aa7a-97f8a0c8656a",
+      "key": "ja:exercise:n2-u11-basis-b2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "v9h"
+        },
+        "display_answer": "予想に反して",
+        "explanation": {
+          "vi": "予想に反して - trái với dự đoán. に沿って là theo đúng, を問わず là bất kể, をもとに là dựa trên."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "v9h",
+            "lang": "ja",
+            "text": "予想に反して"
+          },
+          {
+            "id": "iw2",
+            "lang": "ja",
+            "text": "予想を問わず"
+          },
+          {
+            "id": "yoz",
+            "lang": "ja",
+            "text": "予想をもとに"
+          },
+          {
+            "id": "amu",
+            "lang": "ja",
+            "text": "予想に沿って"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - ___、試合は日本が勝ちました。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "8cf674ceb340c5be98bc0ebf4c473bbf4ed157bf2d6895ee3d1c4c7406b1038c",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "e48b320c-b056-5a61-b537-53c16e056bef",
+      "is_demo": false,
+      "item_id": "df48f201-4ce5-5fa6-a54f-cad56dd99a12",
+      "key": "ja:exercise:n2-u11-basis-b3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p1i"
+        },
+        "display_answer": "Bất kể tuổi tác và quốc tịch, ai cũng tham gia được.",
+        "explanation": {
+          "vi": "年齢や国籍を問わず - bất kể tuổi và quốc tịch; 誰でも - ai cũng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "年齢や国籍を問わず、誰でも参加できます。",
+        "options": [
+          {
+            "id": "q4o",
+            "lang": "vi",
+            "text": "Chỉ người trẻ và người Nhật mới tham gia được."
+          },
+          {
+            "id": "hh2",
+            "lang": "vi",
+            "text": "Người cao tuổi không tham gia được."
+          },
+          {
+            "id": "p1i",
+            "lang": "vi",
+            "text": "Bất kể tuổi tác và quốc tịch, ai cũng tham gia được."
+          },
+          {
+            "id": "ho1",
+            "lang": "vi",
+            "text": "Quốc tịch nào cũng không tham gia được."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "13d7edfbb93b94e0785c27a1ff4aad3ea158647fbd028efc03376a65cd00101c",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "d0ffd4a1-aed9-5a70-9f96-1a3793f0fc09",
+      "is_demo": false,
+      "item_id": "90444c49-30db-5820-969b-3c1f135104f0",
+      "key": "ja:exercise:n2-u11-basis-b4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "に沿って"
+            ]
+          }
+        },
+        "display_answer": "計画に沿って、作業を進めます。",
+        "explanation": {
+          "vi": "N に沿って - theo đúng."
+        },
+        "known_wrong": [
+          {
+            "answer": "に反して",
+            "error_tag": "nuance",
+            "feedback_vi": "に反して là trái với kế hoạch - ngược nghĩa."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          }
+        ],
+        "hint_levels": [
+          "Cụm nghĩa \"theo đúng\".",
+          "Bắt đầu bằng に."
+        ],
+        "template": "計画{{b1}}、作業を進めます。 (Tôi sẽ tiến hành công việc theo đúng kế hoạch.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e77ead7a9ab832854baa19fd6b434262d4a41179bcde81d838da1ba3d3818d8b",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "fe12b34a-b5f4-51ff-a851-c3772dba7755",
+      "is_demo": false,
+      "item_id": "a40acb1a-4829-505f-96eb-d5112798582f",
+      "key": "ja:exercise:n2-u11-basis-b5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "c48"
+        },
+        "display_answer": "料理にかけては、彼女に勝てる人はいません。",
+        "explanation": {
+          "vi": "N にかけては - về N thì. Các mẫu còn lại không có nghĩa khen kỹ năng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "gfe",
+            "lang": "ja",
+            "text": "料理に反して、彼女に勝てる人はいません。"
+          },
+          {
+            "id": "zh5",
+            "lang": "ja",
+            "text": "料理を問わず、彼女に勝てる人はいません。"
+          },
+          {
+            "id": "c48",
+            "lang": "ja",
+            "text": "料理にかけては、彼女に勝てる人はいません。"
+          },
+          {
+            "id": "hff",
+            "lang": "ja",
+            "text": "料理に沿って、彼女に勝てる人はいません。"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn muốn khen “Về nấu ăn thì không ai bằng cô ấy”. Mẫu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "aa1a5271430ae4b5986388471f7e165773a83dee636784031339317809fc5dc0",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "bc16f542-82db-52f7-bb4b-c93e7c52c803",
+      "is_demo": false,
+      "item_id": "ec6712df-71e4-598c-83f6-cb90c3d5991d",
+      "key": "ja:exercise:n2-u11-basis-b6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "をもとに",
+              "をもとにして"
+            ]
+          }
+        },
+        "display_answer": "アンケートの結果をもとに、計画を立てます。",
+        "explanation": {
+          "vi": "N をもとに - dựa trên."
+        },
+        "known_wrong": [
+          {
+            "answer": "に反して",
+            "error_tag": "nuance",
+            "feedback_vi": "に反して là trái với; dùng kết quả làm căn cứ là をもとに."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 5
+          }
+        ],
+        "template": "アンケートの結果{{b1}}、計画を立てます。 (Dựa trên kết quả khảo sát, tôi lập kế hoạch.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "0c65ab2e30d9b4aad019fedbc922e0f6cd0dea4e2a51ccfa6e8c9a0b58fb8e5a",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "f0695b1f-b9df-50d4-b741-c390e52c6427",
+      "is_demo": false,
+      "item_id": "aa7880f9-3098-5565-aa7a-97f8a0c8656a",
+      "key": "ja:exercise:n2-u11-basis-b7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "反する"
+            ]
+          }
+        },
+        "display_answer": "規則に反する行為は禁止されています。",
+        "explanation": {
+          "vi": "N に反する + N - trái với."
+        },
+        "known_wrong": [
+          {
+            "answer": "反して",
+            "error_tag": "form",
+            "feedback_vi": "反して là dạng て; trước danh từ 行為 cần 反する."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "規則に{{b1}}行為は禁止されています。 (Hành vi trái với quy tắc bị cấm.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "21736bd05885c8809a2eac5d207a1cdf4240ef5f536d28aa7864715abfff3215",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "f8c79242-14b7-5ca4-9b90-559e5a0c2184",
+      "is_demo": false,
+      "item_id": "df48f201-4ce5-5fa6-a54f-cad56dd99a12",
+      "key": "ja:exercise:n2-u11-basis-b8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "年齢を問わず、誰でも参加できます。",
+            "年齢を問わず誰でも参加できます。",
+            "ねんれいをとわず、だれでもさんかできます。",
+            "年齢に関係なく、誰でも参加できます。"
+          ]
+        },
+        "display_answer": "年齢を問わず、誰でも参加できます。",
+        "explanation": {
+          "vi": "N を問わず - bất kể N."
+        },
+        "known_wrong": [
+          {
+            "answer": "年齢に反して、誰でも参加できます。",
+            "error_tag": "nuance",
+            "feedback_vi": "反して là trái với, không phải bất kể."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bất kể tuổi tác, ai cũng tham gia được."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "7c9c870f19517bcf96a282fbcb491b1325d6cf232b29d7eeb1e7b27df6d01f6f",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "df5ec1df-b833-5b17-a0f7-d376114670cf",
+      "is_demo": false,
+      "item_id": "905675a5-de3e-528d-9616-0bd95b02845a",
+      "key": "ja:exercise:n2-u11-basis-b9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Trái với dự đoán, Nhật Bản đã thắng trận. Đó là kết quả của việc luyện tập theo đúng kế hoạch, đáp lại kỳ vọng của mọi người.",
+            "Trái với dự kiến, đội Nhật thắng. Đây là kết quả luyện tập đúng kế hoạch để đáp lại kỳ vọng mọi người.",
+            "Ngược lại dự đoán, Nhật Bản chiến thắng, là kết quả của quá trình tập luyện theo kế hoạch nhằm đáp ứng kỳ vọng của mọi người."
+          ]
+        },
+        "display_answer": "Trái với dự đoán, Nhật Bản đã thắng trận. Đó là kết quả của việc luyện tập theo đúng kế hoạch, đáp lại kỳ vọng của mọi người.",
+        "explanation": {
+          "vi": "予想に反して - trái dự đoán; 期待に応える - đáp lại kỳ vọng; 計画に沿って - theo kế hoạch."
+        },
+        "known_wrong": [
+          {
+            "answer": "Đúng như dự đoán, Nhật Bản đã thua. Đó là kết quả của việc không tập luyện.",
+            "error_tag": "meaning",
+            "feedback_vi": "予想に反して là trái với dự đoán."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "予想に反して、試合は日本が勝ちました。みんなの期待に応えて、計画に沿って練習した結果です。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "882717cc96da790aaaf0b80d3667f89c138e95677e2c2da15d95771d8fdfe1be",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "675a28b6-5c4a-58b8-b25d-480116dbbebc",
+      "is_demo": false,
+      "item_id": "a61fdba3-0a27-56be-b957-081a83bd0a9a",
+      "key": "ja:exercise:n2-u11-concession-c1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "trh"
+        },
+        "display_answer": "からといって",
+        "explanation": {
+          "vi": "からといって - chỉ vì ... mà không có nghĩa là. からして, ことから, ばかりに có nghĩa khác."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "oy4",
+            "lang": "ja",
+            "text": "からして"
+          },
+          {
+            "id": "tlz",
+            "lang": "ja",
+            "text": "ことから"
+          },
+          {
+            "id": "mgl",
+            "lang": "ja",
+            "text": "ばかりに"
+          },
+          {
+            "id": "trh",
+            "lang": "ja",
+            "text": "からといって"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 高い___、いい商品とは限りません。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "5f2576aa6fcc2b92e75ff4d01fd1f91b4a658f92397972531b3c893f69c10ba8",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "c1b15c50-28be-5118-93bf-8bc8efc059d1",
+      "is_demo": false,
+      "item_id": "a61fdba3-0a27-56be-b957-081a83bd0a9a",
+      "key": "ja:exercise:n2-u11-concession-c10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "高いからといって、いい商品とは限りません。",
+        "explanation": {
+          "vi": "V / A + からといって + vế phản bác (とは限りません)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Chỉ vì đắt thì chưa chắc là hàng tốt.\"",
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "高い"
+          },
+          {
+            "id": "t3",
+            "text": "いい商品とは"
+          },
+          {
+            "id": "t4",
+            "text": "限りません。"
+          },
+          {
+            "id": "t2",
+            "text": "からといって、"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "20eb4396f7eebf6ba947cebc7a2bd77be4f6481328cb78f263883589b5b81c81",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "0cf41730-d268-5a4b-9fb4-c97150d0474c",
+      "is_demo": false,
+      "item_id": "f318a736-e12c-5171-8e5b-3055d8732013",
+      "key": "ja:exercise:n2-u11-concession-c11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "js7"
+        },
+        "display_answer": "反論",
+        "explanation": {
+          "vi": "反論 là phản bác ý kiến. 拒否 là từ chối yêu cầu, 弁解 là biện bạch, 期待 là kỳ vọng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "jx1",
+            "lang": "ja",
+            "text": "弁解"
+          },
+          {
+            "id": "tn4",
+            "lang": "ja",
+            "text": "拒否"
+          },
+          {
+            "id": "p0r",
+            "lang": "ja",
+            "text": "期待"
+          },
+          {
+            "id": "js7",
+            "lang": "ja",
+            "text": "反論"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn phản bác ý kiến của đối phương. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "fc1403dd8ba29b26f353b667e89d602d59b2d8f437cc6993e2d5f5a610ae83e9",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "1a91478d-9d05-54ad-9ab5-6dd8a6234dd3",
+      "is_demo": false,
+      "item_id": "3f114c68-db16-5757-a246-ffa51741fb91",
+      "key": "ja:exercise:n2-u11-concession-c2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t68"
+        },
+        "display_answer": "にしても",
+        "explanation": {
+          "vi": "Nhượng bộ - dù có bận: にしても. Các mẫu còn lại không có nghĩa này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "mmq",
+            "lang": "ja",
+            "text": "をもとに"
+          },
+          {
+            "id": "eez",
+            "lang": "ja",
+            "text": "を問わず"
+          },
+          {
+            "id": "y47",
+            "lang": "ja",
+            "text": "に沿って"
+          },
+          {
+            "id": "t68",
+            "lang": "ja",
+            "text": "にしても"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 忙しい___、連絡くらいはしてほしいです。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "9f2ec9e958f4caaf5eaaa416200cfc73c0bc23b9e16620508b2d45bcfc9ff65d",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "d1cf9821-6eec-5d2d-8e32-e23b6aae1bef",
+      "is_demo": false,
+      "item_id": "bf687d21-9d2d-542e-b0d7-eaee729f62c5",
+      "key": "ja:exercise:n2-u11-concession-c3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "p7v"
+        },
+        "display_answer": "Vì tôi ngủ quên nên đã đến muộn. Xin lỗi.",
+        "explanation": {
+          "vi": "寝坊した - ngủ quên; ものですから - vì (biện bạch); 遅れてしまった - đã muộn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "寝坊したものですから、遅れてしまいました。すみません。",
+        "options": [
+          {
+            "id": "dva",
+            "lang": "vi",
+            "text": "Vì tôi dậy sớm nên đã đến sớm. Cảm ơn."
+          },
+          {
+            "id": "u0y",
+            "lang": "vi",
+            "text": "Tôi muộn rồi nên mới ngủ quên. Xin lỗi."
+          },
+          {
+            "id": "p7v",
+            "lang": "vi",
+            "text": "Vì tôi ngủ quên nên đã đến muộn. Xin lỗi."
+          },
+          {
+            "id": "lfe",
+            "lang": "vi",
+            "text": "Vì bạn ngủ quên nên tôi đã đến muộn. Xin lỗi."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "860b5c0f013a72f3eaee7c41ab8820b38d842aea02e074ea0ca6f84e1336d0e4",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "db0e7413-996f-561e-b31d-ae30b224c2de",
+      "is_demo": false,
+      "item_id": "ba6b103a-7fef-5e36-a945-73e238bf685f",
+      "key": "ja:exercise:n2-u11-concession-c4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "こない"
+            ]
+          }
+        },
+        "display_answer": "そんなこと、できっこないよ。",
+        "explanation": {
+          "vi": "V ます-gốc + っこない - chắc chắn không thể."
+        },
+        "known_wrong": [
+          {
+            "answer": "ない",
+            "error_tag": "form",
+            "feedback_vi": "Mẫu là ～っこない (っ + こない)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Cụm cuối của mẫu \"chắc chắn không\".",
+          "Bắt đầu bằng こ."
+        ],
+        "template": "そんなこと、できっ{{b1}}よ。 (Chuyện như thế làm sao làm được.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f746c8aa6080823ee9dad1ab7393e3a122b9e69b7b0ff6dcecaf00169f077c7e",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "c08064ea-ca42-5b42-be47-0c6687a80c96",
+      "is_demo": false,
+      "item_id": "7f1f5b8b-77cf-58aa-ae6c-615d96494ab3",
+      "key": "ja:exercise:n2-u11-concession-c5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "ldg"
+        },
+        "display_answer": "聞くものか",
+        "explanation": {
+          "vi": "V + ものか - đời nào. ものです, ものだから, ものの có nghĩa khác."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "ldg",
+            "lang": "ja",
+            "text": "聞くものか"
+          },
+          {
+            "id": "zhh",
+            "lang": "ja",
+            "text": "聞くものだから"
+          },
+          {
+            "id": "bnt",
+            "lang": "ja",
+            "text": "聞くものです"
+          },
+          {
+            "id": "ez6",
+            "lang": "ja",
+            "text": "聞くものの"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nói với giọng mạnh “Đời nào tôi nghe lời họ”. Mẫu nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c52d26bc1d7f61a1b1e9f13b655a11b590d288422ad8dfe9ae92716c0d4faa8b",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "6f7213cd-6c4c-5a44-9ad1-fe0d282cc3ed",
+      "is_demo": false,
+      "item_id": "a61fdba3-0a27-56be-b957-081a83bd0a9a",
+      "key": "ja:exercise:n2-u11-concession-c6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "からといって"
+            ]
+          }
+        },
+        "display_answer": "高いからといって、いい商品とは限りません。",
+        "explanation": {
+          "vi": "からといって - chỉ vì ... mà không có nghĩa là."
+        },
+        "known_wrong": [
+          {
+            "answer": "ので",
+            "error_tag": "form",
+            "feedback_vi": "ので chỉ nguyên nhân bình thường; phản bác suy luận cần からといって."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          }
+        ],
+        "template": "高い{{b1}}、いい商品とは限りません。 (Chỉ vì đắt thì chưa chắc là hàng tốt.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "63e77d1251660e433636170c3c855e9e641a24c340e9a4e91a3270f917f7555b",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "4aa25b0a-dca5-57c1-951a-cb80aaf31a10",
+      "is_demo": false,
+      "item_id": "bf687d21-9d2d-542e-b0d7-eaee729f62c5",
+      "key": "ja:exercise:n2-u11-concession-c7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "ものですから",
+              "ものだから",
+              "もので"
+            ]
+          }
+        },
+        "display_answer": "寝坊したものですから、遅れてしまいました。",
+        "explanation": {
+          "vi": "ものだから / ものですから - vì (biện bạch)."
+        },
+        "known_wrong": [
+          {
+            "answer": "ことから",
+            "error_tag": "nuance",
+            "feedback_vi": "ことから nêu căn cứ suy luận; biện bạch dùng ものだから."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 7
+          }
+        ],
+        "template": "寝坊した{{b1}}、遅れてしまいました。 (Vì tôi ngủ quên nên đã đến muộn.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "47458f51d3cc0f656bac30d3bfb052bd9e97b7a6ff8fef164685a5d6a14c02ee",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "253b2a20-3207-5363-b92c-9acf028929f4",
+      "is_demo": false,
+      "item_id": "ba6b103a-7fef-5e36-a945-73e238bf685f",
+      "key": "ja:exercise:n2-u11-concession-c8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "そんなこと、できっこないよ。",
+            "そんなことできっこない。",
+            "そんなこと、できっこありません。",
+            "そんなことは、できっこないよ。"
+          ]
+        },
+        "display_answer": "そんなこと、できっこないよ。",
+        "explanation": {
+          "vi": "V ます-gốc + っこない - chắc chắn không thể."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Chuyện như thế làm sao làm được."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "989b7b5d886ef40fed3132a2a8118cd989e53d46d170c8e6e80a29882e8b0b46",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "64dcdd70-67c9-540f-9e48-466765f5328e",
+      "is_demo": false,
+      "item_id": "f7f71d63-60c0-5f53-b749-8f9bf7134449",
+      "key": "ja:exercise:n2-u11-concession-c9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Tôi không muốn nghe biện bạch. Dù có bận, tôi vẫn mong bạn liên lạc một chút.",
+            "Tôi không muốn nghe bào chữa. Dù bận đến mấy thì cũng nên liên lạc chứ.",
+            "Tôi chẳng muốn nghe biện bạch. Cho dù bận, tôi vẫn muốn bạn liên lạc một chút."
+          ]
+        },
+        "display_answer": "Tôi không muốn nghe biện bạch. Dù có bận, tôi vẫn mong bạn liên lạc một chút.",
+        "explanation": {
+          "vi": "弁解 - biện bạch; にしても - dù; してほしかった - đã mong (bạn) làm."
+        },
+        "known_wrong": [
+          {
+            "answer": "Tôi muốn nghe biện bạch. Vì bận nên không liên lạc cũng được.",
+            "error_tag": "meaning",
+            "feedback_vi": "聞きたくありません là không muốn nghe."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "弁解は聞きたくありません。忙しいにしても、連絡くらいはしてほしかったです。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "fcb1a779a23e38b7c7da9da8170f139f56a44e36063057cf5fac705e84d7f52d",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "58a2dfcf-ae3c-5c07-af1c-dac441f4eb68",
+      "is_demo": false,
+      "item_id": "23822057-e22a-5576-b914-eca3fdcc74d2",
+      "key": "ja:exercise:n2-u11-feeling-f1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "nwr"
+        },
+        "display_answer": "でならない",
+        "explanation": {
+          "vi": "Na で + ならない - không chịu nổi. にならない, がならない, をならない sai."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "sjv",
+            "lang": "ja",
+            "text": "がならない"
+          },
+          {
+            "id": "nwr",
+            "lang": "ja",
+            "text": "でならない"
+          },
+          {
+            "id": "kfn",
+            "lang": "ja",
+            "text": "をならない"
+          },
+          {
+            "id": "o8u",
+            "lang": "ja",
+            "text": "にならない"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 試験の結果が心配___。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "dbc11b2ce6583609b6a78312db22c7acfc967bc0acd9869fd0bf858f8d193c3d",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "d88c4a82-bf66-520b-9160-066356095760",
+      "is_demo": false,
+      "item_id": "c22da936-854f-5ccc-9cb9-6496917eb18f",
+      "key": "ja:exercise:n2-u11-feeling-f10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "疲れて、立っていられないくらいです。",
+        "explanation": {
+          "vi": "Nguyên nhân (疲れて) → mức độ (立っていられない) → くらいです."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Mệt đến mức không đứng nổi.\"",
+        "tokens": [
+          {
+            "id": "t2",
+            "text": "立っていられない"
+          },
+          {
+            "id": "t1",
+            "text": "疲れて、"
+          },
+          {
+            "id": "t3",
+            "text": "くらいです。"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "6308dc3365148ff36df91d0e94a8a292f7f837ec4fd3b4675bf3f628cb4445bb",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "d4887d65-9342-5ea3-a7d6-0bd1bfeadab9",
+      "is_demo": false,
+      "item_id": "0cc67512-9d8e-5efb-a119-042f019d1241",
+      "key": "ja:exercise:n2-u11-feeling-f11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "juv"
+        },
+        "display_answer": "無理",
+        "explanation": {
+          "vi": "無理 là quá sức, không thể. 感動 là cảm động, 面倒 là phiền phức, 悔しい là cay cú."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "juv",
+            "lang": "ja",
+            "text": "無理"
+          },
+          {
+            "id": "tby",
+            "lang": "ja",
+            "text": "感動"
+          },
+          {
+            "id": "thw",
+            "lang": "ja",
+            "text": "面倒"
+          },
+          {
+            "id": "z0i",
+            "lang": "ja",
+            "text": "悔しい"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn nghĩ việc đó quá sức, không thể làm được. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ca895b7316e3f8c823c0949c801fc60f0fb1779c901e767ddb75c74a0d31b4e2",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "786f9600-0ca0-5452-8676-4c5f7ebfea80",
+      "is_demo": false,
+      "item_id": "c22da936-854f-5ccc-9cb9-6496917eb18f",
+      "key": "ja:exercise:n2-u11-feeling-f2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "rvi"
+        },
+        "display_answer": "ほど",
+        "explanation": {
+          "vi": "V + ほど - đến mức. ばかり, ばかりに, ものの có nghĩa khác."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "rvi",
+            "lang": "ja",
+            "text": "ほど"
+          },
+          {
+            "id": "msy",
+            "lang": "ja",
+            "text": "ばかり"
+          },
+          {
+            "id": "rcg",
+            "lang": "ja",
+            "text": "ばかりに"
+          },
+          {
+            "id": "xi9",
+            "lang": "ja",
+            "text": "ものの"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Chọn câu đúng - 泣きたい___悲しいです。",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "9a5fb9741789c0fe6855e3ff73bd536bb8ddd27346b6671afe9774eb201ac83d",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "008eb69b-c6f6-509c-af13-66cd26346aad",
+      "is_demo": false,
+      "item_id": "23822057-e22a-5576-b914-eca3fdcc74d2",
+      "key": "ja:exercise:n2-u11-feeling-f3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "rhp"
+        },
+        "display_answer": "Hôm qua nóng không chịu nổi.",
+        "explanation": {
+          "vi": "暑くてたまらない - nóng không chịu nổi."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "昨日は暑くてたまりませんでした。",
+        "options": [
+          {
+            "id": "xta",
+            "lang": "vi",
+            "text": "Hôm qua trời không nóng."
+          },
+          {
+            "id": "fkz",
+            "lang": "vi",
+            "text": "Hôm qua tôi mệt nhưng vui."
+          },
+          {
+            "id": "f7a",
+            "lang": "vi",
+            "text": "Hôm qua tôi lạnh run."
+          },
+          {
+            "id": "rhp",
+            "lang": "vi",
+            "text": "Hôm qua nóng không chịu nổi."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "538ed766e96992951f005ae510119d63b8495f9f3f011b59eeeec2c57bde51b0",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "9c4346bf-bfdf-5fd6-92ff-a096293f1676",
+      "is_demo": false,
+      "item_id": "23822057-e22a-5576-b914-eca3fdcc74d2",
+      "key": "ja:exercise:n2-u11-feeling-f4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "たまらない",
+              "しょうがない",
+              "ならない"
+            ]
+          }
+        },
+        "display_answer": "嬉しくてたまらない。",
+        "explanation": {
+          "vi": "A くて + たまらない - không chịu nổi."
+        },
+        "known_wrong": [
+          {
+            "answer": "いけない",
+            "error_tag": "form",
+            "feedback_vi": "いけない dùng với ～てはいけない (cấm); vui không chịu nổi dùng たまらない."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 6
+          }
+        ],
+        "hint_levels": [
+          "Cụm cuối nghĩa \"không chịu nổi\".",
+          "Bắt đầu bằng た."
+        ],
+        "template": "嬉しくて{{b1}}。 (Tôi vui không chịu nổi.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f4d238ca4ee9feb58b5ff21891abd892e953ae939b76042640ae6dc5be14c181",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "e220854d-828b-5b83-b3f9-46e83386b302",
+      "is_demo": false,
+      "item_id": "e73463a2-bb44-56a4-82f8-b0b66cd3d89f",
+      "key": "ja:exercise:n2-u11-feeling-f5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "lk2"
+        },
+        "display_answer": "悔しい",
+        "explanation": {
+          "vi": "悔しい là cay cú, tiếc nuối vì thua. 感動 là cảm động, 面倒 là phiền phức, 無理 là quá sức."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "u01",
+            "lang": "ja",
+            "text": "無理"
+          },
+          {
+            "id": "lk2",
+            "lang": "ja",
+            "text": "悔しい"
+          },
+          {
+            "id": "iv4",
+            "lang": "ja",
+            "text": "面倒"
+          },
+          {
+            "id": "x4b",
+            "lang": "ja",
+            "text": "感動"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn thua trận và thấy cay cú. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d3e2fd82a198829da6328983c20f2957d32cd76f38665b750d4677146a6a729f",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "1524da6f-9649-5ce2-87d3-b8a6a4054ec9",
+      "is_demo": false,
+      "item_id": "c22da936-854f-5ccc-9cb9-6496917eb18f",
+      "key": "ja:exercise:n2-u11-feeling-f6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "くらい",
+              "ほど"
+            ]
+          }
+        },
+        "display_answer": "疲れて、立っていられないくらいです。",
+        "explanation": {
+          "vi": "～くらい / ほど + です - đến mức."
+        },
+        "known_wrong": [
+          {
+            "answer": "ばかり",
+            "error_tag": "form",
+            "feedback_vi": "ばかり là \"toàn là\"; mức độ dùng くらい / ほど."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "疲れて、立っていられない{{b1}}です。 (Mệt đến mức không đứng nổi.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "40e6de2860ab069f635655fd79a0315c7f10e0a513a31eb122f900725e2efca2",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "ca8f05c7-c9f5-5d2c-b3a0-f1d876254217",
+      "is_demo": false,
+      "item_id": "7180f3c8-91a6-55a0-a08f-34889ebc9803",
+      "key": "ja:exercise:n2-u11-feeling-f7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "面倒",
+              "めんどう"
+            ]
+          }
+        },
+        "display_answer": "手続きが面倒です。",
+        "explanation": {
+          "vi": "面倒 - phiền phức."
+        },
+        "known_wrong": [
+          {
+            "answer": "無理",
+            "error_tag": "vocab_meaning",
+            "feedback_vi": "無理 là quá sức; thủ tục rắc rối là 面倒."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "手続きが{{b1}}です。 (Thủ tục thật phiền phức.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "8f08e25d13168e5a799dd619e5ecdd1cb045da8c1366e1a15675f78042d9ca16",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "30f44cd4-5de6-598e-b68c-cc86759d4529",
+      "is_demo": false,
+      "item_id": "23822057-e22a-5576-b914-eca3fdcc74d2",
+      "key": "ja:exercise:n2-u11-feeling-f8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "試験の結果が心配でならない。",
+            "試験の結果が心配でたまらない。",
+            "試験の結果が心配でしょうがない。",
+            "しけんのけっかがしんぱいでならない。"
+          ]
+        },
+        "display_answer": "試験の結果が心配でならない。",
+        "explanation": {
+          "vi": "Na で + ならない / たまらない - không chịu nổi."
+        },
+        "known_wrong": [
+          {
+            "answer": "試験の結果が心配になる。",
+            "error_tag": "nuance",
+            "feedback_vi": "Thiếu sắc thái \"không chịu nổi\"."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi lo lắng kết quả kỳ thi đến không chịu nổi."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "f3e8424c73c0c0b96fcf3495fafe7e149663865ffb2ad8e61ccf521f5fd2fce2",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "eda2b03d-0691-57a3-896d-c968b1ef53c9",
+      "is_demo": false,
+      "item_id": "e7f4f038-b425-5d36-95e7-77d7f3a98be3",
+      "key": "ja:exercise:n2-u11-feeling-f9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Tôi cảm động vì bộ phim đến mức muốn khóc. Thua trận nên tôi cay cú không chịu nổi.",
+            "Xem phim tôi xúc động đến muốn khóc. Thua cuộc nên cay cú không chịu được.",
+            "Tôi rất xúc động với phim, suýt nữa thì khóc. Thua nên tức đến phát điên."
+          ]
+        },
+        "display_answer": "Tôi cảm động vì bộ phim đến mức muốn khóc. Thua trận nên tôi cay cú không chịu nổi.",
+        "explanation": {
+          "vi": "感動 - xúc động; ほど - đến mức; 悔しくてたまらない - cay cú không chịu nổi."
+        },
+        "known_wrong": [
+          {
+            "answer": "Tôi chán bộ phim đến mức muốn khóc. Thắng trận nên vui không chịu nổi.",
+            "error_tag": "meaning",
+            "feedback_vi": "感動して là xúc động; 負けて悔しい là thua và cay cú."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "映画に感動して、泣きたいほどでした。負けて悔しくてたまりませんでした。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b475ef5f6d9bece0036f26a901a85f67df2578dd55559daea864a0eb5802bbe5",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "70d67248-e0c7-5250-abdb-6eae2ac6522b",
+      "is_demo": false,
+      "item_id": "e364173c-0990-5c2f-9c5b-27385ddf1812",
+      "key": "ja:exercise:n2-u12-adjectives-a1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "ca0"
+        },
+        "display_answer": "激しい",
+        "explanation": {
+          "vi": "激しい là dữ dội, gay gắt. 鈍い là cùn, 豊か là phong phú, 単純 là đơn giản."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "t36",
+            "lang": "ja",
+            "text": "鈍い"
+          },
+          {
+            "id": "ca0",
+            "lang": "ja",
+            "text": "激しい"
+          },
+          {
+            "id": "zwk",
+            "lang": "ja",
+            "text": "豊か"
+          },
+          {
+            "id": "cic",
+            "lang": "ja",
+            "text": "単純"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Cạnh tranh gay gắt. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "9bca6cb03230c834cfa020fc7f7e0f7419ac48f56e7af002948c7c215c1f309b",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "0919daaf-a26e-5b40-a510-e2bff671f90c",
+      "is_demo": false,
+      "item_id": "010bebc9-aa99-5a61-94d4-386c373ce6f2",
+      "key": "ja:exercise:n2-u12-adjectives-a10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "彼が間違っているのは明らかです。",
+        "explanation": {
+          "vi": "Chủ ngữ → vế danh từ hoá → 明らかです."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Rõ ràng là anh ta sai.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "明らかです。"
+          },
+          {
+            "id": "t1",
+            "text": "彼が"
+          },
+          {
+            "id": "t2",
+            "text": "間違っているのは"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a9845c8e8c74439efb29bfd2108d044a8a6c74a573afb51cbb43e1f5738c8014",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "e56aa821-ad12-55e5-afd2-f72ac6c8d006",
+      "is_demo": false,
+      "item_id": "a178830d-961c-598c-bda0-a5ab34c61ff7",
+      "key": "ja:exercise:n2-u12-adjectives-a11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "kaf"
+        },
+        "display_answer": "豊か",
+        "explanation": {
+          "vi": "自然が豊か - giàu thiên nhiên. 鋭い, 厳しい, 鈍い không đi với 自然 theo nghĩa này."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "kaf",
+            "lang": "ja",
+            "text": "豊か"
+          },
+          {
+            "id": "pze",
+            "lang": "ja",
+            "text": "厳しい"
+          },
+          {
+            "id": "y29",
+            "lang": "ja",
+            "text": "鋭い"
+          },
+          {
+            "id": "uxn",
+            "lang": "ja",
+            "text": "鈍い"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Thị trấn có nhiều thiên nhiên. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "179c5017ca05d276b54d96056b050b7010b3f3885763dd1c7fb54e388fbaa7ad",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "f2eeb990-dc30-5340-b404-d764648f9b3b",
+      "is_demo": false,
+      "item_id": "80a8d1f0-ba73-56f4-a6e5-76fd23dec25c",
+      "key": "ja:exercise:n2-u12-adjectives-a2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "ass"
+        },
+        "display_answer": "不可欠",
+        "explanation": {
+          "vi": "不可欠 là không thể thiếu. 貴重 là quý giá, 明らか là rõ ràng, 適切 là thích hợp."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "b5g",
+            "lang": "ja",
+            "text": "適切"
+          },
+          {
+            "id": "pa0",
+            "lang": "ja",
+            "text": "貴重"
+          },
+          {
+            "id": "ubw",
+            "lang": "ja",
+            "text": "明らか"
+          },
+          {
+            "id": "ass",
+            "lang": "ja",
+            "text": "不可欠"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Giấc ngủ là điều không thể thiếu. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "9ba21ed6af8e79dba9c4e8d7e7cf0784902003530aa3cdef7aa3e0f2d70b4132",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "27cc4726-8f40-5cd8-a087-a7d76746c785",
+      "is_demo": false,
+      "item_id": "37094e30-b231-5239-92f9-37e66acac2b6",
+      "key": "ja:exercise:n2-u12-adjectives-a3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "n2n"
+        },
+        "display_answer": "Mất công đến mà cửa hàng lại nghỉ.",
+        "explanation": {
+          "vi": "せっかく ～のに - mất công mà; 店は休み - cửa hàng nghỉ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "せっかく来たのに、店は休みでした。",
+        "options": [
+          {
+            "id": "dzr",
+            "lang": "vi",
+            "text": "Tôi biết cửa hàng nghỉ nên không đến."
+          },
+          {
+            "id": "n2n",
+            "lang": "vi",
+            "text": "Mất công đến mà cửa hàng lại nghỉ."
+          },
+          {
+            "id": "osk",
+            "lang": "vi",
+            "text": "Cửa hàng mở nên tôi đã đến."
+          },
+          {
+            "id": "zxy",
+            "lang": "vi",
+            "text": "Tôi đến sớm nên cửa hàng chưa mở."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "70cc7352675428a543a1a7656226a044aea7b3878fc46a479e7edadc69fc2c25",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "4c81fc29-fed1-5b1e-88af-c68c53d1fe40",
+      "is_demo": false,
+      "item_id": "162056ab-9ba0-51f1-82f1-c121c5f28c1f",
+      "key": "ja:exercise:n2-u12-adjectives-a4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "大幅",
+              "おおはば"
+            ]
+          }
+        },
+        "display_answer": "売り上げが大幅に増えました。",
+        "explanation": {
+          "vi": "大幅に - mạnh, đáng kể."
+        },
+        "known_wrong": [
+          {
+            "answer": "徐々",
+            "error_tag": "adverb_choice",
+            "feedback_vi": "徐々に là dần dần; \"tăng mạnh\" là 大幅に."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Phó từ nghĩa \"đáng kể\".",
+          "Bắt đầu bằng 大."
+        ],
+        "template": "売り上げが{{b1}}に増えました。 (Doanh thu đã tăng mạnh.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b09f076727136d2fc2fe291bbe7bdffa7f47479f03b89244acd924af9b89b2d7",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "84790ab3-1d19-5c2c-8404-715e29203802",
+      "is_demo": false,
+      "item_id": "17ac72d6-bf39-5364-aec4-56ffed824f44",
+      "key": "ja:exercise:n2-u12-adjectives-a5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "gvp"
+        },
+        "display_answer": "徐々に",
+        "explanation": {
+          "vi": "徐々に là dần dần. せっかく là mất công, せめて là ít nhất, わずか là chỉ một chút."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "ldq",
+            "lang": "ja",
+            "text": "わずか"
+          },
+          {
+            "id": "enh",
+            "lang": "ja",
+            "text": "せっかく"
+          },
+          {
+            "id": "gvp",
+            "lang": "ja",
+            "text": "徐々に"
+          },
+          {
+            "id": "pxi",
+            "lang": "ja",
+            "text": "せめて"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn dần quen với công việc. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "790c915377247a12ae7c04cc2ae67a4bed1e0cd6f96fe1b7d11bfafcae0d4547",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "6978282a-5ebf-582f-ab36-2a9d1204a8a0",
+      "is_demo": false,
+      "item_id": "6ec28408-dd3e-567e-9d5e-33e7f30cb213",
+      "key": "ja:exercise:n2-u12-adjectives-a6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "複雑",
+              "ふくざつ"
+            ]
+          }
+        },
+        "display_answer": "複雑な問題で、すぐには解決できません。",
+        "explanation": {
+          "vi": "複雑 - phức tạp."
+        },
+        "known_wrong": [
+          {
+            "answer": "単純",
+            "error_tag": "adj_choice",
+            "feedback_vi": "単純 là đơn giản; không thể giải quyết ngay thì là phức tạp."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "{{b1}}な問題で、すぐには解決できません。 (Vấn đề phức tạp nên không thể giải quyết ngay.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "33d65e3130e887c4fab49db02dcdb2c2840cad1a240f8a1d2e0f5f022621d57c",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "d0b15182-2abe-5d07-afc5-e4564584f88c",
+      "is_demo": false,
+      "item_id": "a9ba9c8c-bd41-5fda-9243-8d5955badfe4",
+      "key": "ja:exercise:n2-u12-adjectives-a7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "せめて"
+            ]
+          }
+        },
+        "display_answer": "せめて電話くらいはしてほしかった。",
+        "explanation": {
+          "vi": "せめて - ít nhất thì."
+        },
+        "known_wrong": [
+          {
+            "answer": "せっかく",
+            "error_tag": "adverb_choice",
+            "feedback_vi": "せっかく là mất công; mong muốn tối thiểu dùng せめて."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "{{b1}}電話くらいはしてほしかった。 (Ít nhất tôi cũng mong bạn gọi điện.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d38d307e73c7966a915ea9ec9a0e36adece05b42445aaa9c3e620e3f02f776df",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "82e602c8-dfb1-58b1-a8f6-43228893216c",
+      "is_demo": false,
+      "item_id": "907d75b0-9b4b-5f22-a4b7-324f6e5cab6f",
+      "key": "ja:exercise:n2-u12-adjectives-a8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "父は教育に厳しい人です。",
+            "父は教育に厳しいです。",
+            "ちちはきょういくにきびしいひとです。",
+            "父は教育に厳しい人だ。"
+          ]
+        },
+        "display_answer": "父は教育に厳しい人です。",
+        "explanation": {
+          "vi": "教育に厳しい - nghiêm khắc trong giáo dục."
+        },
+        "known_wrong": [
+          {
+            "answer": "父は教育に激しい人です。",
+            "error_tag": "adj_choice",
+            "feedback_vi": "激しい là dữ dội; \"nghiêm khắc\" là 厳しい."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bố tôi là người nghiêm khắc trong giáo dục."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "0aa295953b0250cf7b8f4adf9c195f3e49ec623016dd529b2decef4fe068012f",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "70bab8aa-ad27-5d68-8ff2-f3ead3691109",
+      "is_demo": false,
+      "item_id": "42dab346-6031-55f1-9cbc-e76e92ba1d4e",
+      "key": "ja:exercise:n2-u12-adjectives-a9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Các cửa hàng mới liên tiếp mở ra, cạnh tranh ngày càng gay gắt. Cần nỗ lực khá nhiều.",
+            "Cửa hàng mới lần lượt xuất hiện nên cạnh tranh gay gắt hơn. Cần nỗ lực đáng kể.",
+            "Nhiều cửa hàng mới mở liên tiếp và cạnh tranh trở nên gay gắt. Cần một nỗ lực không nhỏ."
+          ]
+        },
+        "display_answer": "Các cửa hàng mới liên tiếp mở ra, cạnh tranh ngày càng gay gắt. Cần nỗ lực khá nhiều.",
+        "explanation": {
+          "vi": "次々に - liên tiếp; 激しくなる - trở nên gay gắt; 相当 - khá nhiều."
+        },
+        "known_wrong": [
+          {
+            "answer": "Cửa hàng mới ít khi mở, cạnh tranh giảm. Không cần nỗ lực.",
+            "error_tag": "meaning",
+            "feedback_vi": "次々に là lần lượt, liên tiếp."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "新しい店が次々にできて、競争が激しくなっています。相当な努力が必要です。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "53f0d002b440f271203f420f5df8cb33232ff0c8e154d925438e01ed5b239136",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "867f8dce-61c6-52a1-be29-9fadfe204c2a",
+      "is_demo": false,
+      "item_id": "157a3b45-67c7-5634-988f-beb2605c8c86",
+      "key": "ja:exercise:n2-u12-verbs-v1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "qy4"
+        },
+        "display_answer": "避ける",
+        "explanation": {
+          "vi": "避ける là tránh, né. 逃げる là chạy trốn, 迷う là do dự, 認める là thừa nhận."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "sl8",
+            "lang": "ja",
+            "text": "逃げる"
+          },
+          {
+            "id": "z2f",
+            "lang": "ja",
+            "text": "迷う"
+          },
+          {
+            "id": "y1k",
+            "lang": "ja",
+            "text": "認める"
+          },
+          {
+            "id": "qy4",
+            "lang": "ja",
+            "text": "避ける"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “tránh, né”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "2253f543e3ae3a9809ff3f99048da3206f67a32cb64ecef8d9434f8b880bbba1",
+      "difficulty": 5,
+      "exercise_type": "mcq",
+      "id": "6426dd33-e8de-516b-9894-593c09630e2a",
+      "is_demo": false,
+      "item_id": "81da517b-7aab-5bfe-b59c-533e88e45d3b",
+      "key": "ja:exercise:n2-u12-verbs-v11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "tky"
+        },
+        "display_answer": "どちらにするか迷っています",
+        "explanation": {
+          "vi": "迷う - phân vân. 認める, 避ける, 鍛える không hợp với どちらにするか."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "e60",
+            "lang": "ja",
+            "text": "どちらにするか認めています"
+          },
+          {
+            "id": "tky",
+            "lang": "ja",
+            "text": "どちらにするか迷っています"
+          },
+          {
+            "id": "vwo",
+            "lang": "ja",
+            "text": "どちらにするか避けています"
+          },
+          {
+            "id": "a3h",
+            "lang": "ja",
+            "text": "どちらにするか鍛えています"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn phân vân không biết chọn bên nào. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "68fc5bfbf9e34da434c3df8cbb08bf1e7cd03775867800d21c9d25b49f652780",
+      "difficulty": 5,
+      "exercise_type": "word_bank",
+      "id": "a8799c67-8d82-5d66-a2a6-724db0561155",
+      "is_demo": false,
+      "item_id": "772bf3e3-974f-5a72-896a-438686da336d",
+      "key": "ja:exercise:n2-u12-verbs-v11b",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "会議で自分の意見を述べました。",
+        "explanation": {
+          "vi": "Nơi (会議で) → tân ngữ → 述べました."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Tôi đã trình bày ý kiến của mình trong cuộc họp.\"",
+        "tokens": [
+          {
+            "id": "t2",
+            "text": "自分の意見を"
+          },
+          {
+            "id": "t3",
+            "text": "述べました。"
+          },
+          {
+            "id": "t1",
+            "text": "会議で"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a1596558f422ba5a5958a34ebd9b116008b16ab265df59be931118c17578d673",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "fe7fbbdd-f6a4-5238-a1bd-7a7160fc5b10",
+      "is_demo": false,
+      "item_id": "a8785a92-0918-5a3b-bdb1-84cb2f89772b",
+      "key": "ja:exercise:n2-u12-verbs-v2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "m10"
+        },
+        "display_answer": "励ます",
+        "explanation": {
+          "vi": "励ます là động viên, cổ vũ. 慰める là an ủi người đang buồn, 嘆く là than thở, 疑う là nghi ngờ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "m10",
+            "lang": "ja",
+            "text": "励ます"
+          },
+          {
+            "id": "ys4",
+            "lang": "ja",
+            "text": "疑う"
+          },
+          {
+            "id": "vp9",
+            "lang": "ja",
+            "text": "嘆く"
+          },
+          {
+            "id": "vtj",
+            "lang": "ja",
+            "text": "慰める"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn cổ vũ người bạn đang nản. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "5ae848d8d850a6006858c13fa223e6ef9894abd96aadfac1800aad5146ca4401",
+      "difficulty": 4,
+      "exercise_type": "listen",
+      "id": "e37de156-b16c-5fa5-87f0-7205c95ae87a",
+      "is_demo": false,
+      "item_id": "40365311-25e4-5ec3-8fae-b69678abbeea",
+      "key": "ja:exercise:n2-u12-verbs-v3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "oo6"
+        },
+        "display_answer": "Từ nhỏ tôi đã ngưỡng mộ nghề phi công.",
+        "explanation": {
+          "vi": "憧れる - ngưỡng mộ, khao khát; パイロット - phi công."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "子どもの頃から、パイロットに憧れていました。",
+        "options": [
+          {
+            "id": "t9n",
+            "lang": "vi",
+            "text": "Tôi đã trở thành phi công khi còn nhỏ."
+          },
+          {
+            "id": "oo6",
+            "lang": "vi",
+            "text": "Từ nhỏ tôi đã ngưỡng mộ nghề phi công."
+          },
+          {
+            "id": "eew",
+            "lang": "vi",
+            "text": "Từ nhỏ tôi đã làm phi công."
+          },
+          {
+            "id": "cm0",
+            "lang": "vi",
+            "text": "Từ nhỏ tôi đã sợ nghề phi công."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "775b5b56f89404ef10d6a10034eafdb427795fe059322cd93e5a097818c2cb4b",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "1f0ee325-1737-5983-8523-54ef98ee7085",
+      "is_demo": false,
+      "item_id": "c909ad3c-7d50-5250-ab14-8fde04076246",
+      "key": "ja:exercise:n2-u12-verbs-v4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "認め",
+              "みとめ"
+            ]
+          }
+        },
+        "display_answer": "自分の間違いを認めました。",
+        "explanation": {
+          "vi": "認める - thừa nhận."
+        },
+        "known_wrong": [
+          {
+            "answer": "疑い",
+            "error_tag": "verb_choice",
+            "feedback_vi": "疑う là nghi ngờ; thừa nhận là 認める."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Thừa nhận.",
+          "Bắt đầu bằng 認."
+        ],
+        "template": "自分の間違いを{{b1}}ました。 (Tôi đã thừa nhận lỗi của mình.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "9d65a93622443cf3394c9438c5519f2572d9507574db490ee727a25a090c01e2",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "63c211bd-88be-5600-8142-fe55ba2d86f6",
+      "is_demo": false,
+      "item_id": "8dbb44d5-1bec-5119-b0f6-083186e74270",
+      "key": "ja:exercise:n2-u12-verbs-v5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "vir"
+        },
+        "display_answer": "家族が全員揃いました",
+        "explanation": {
+          "vi": "揃う là tự động từ nên dùng が: 家族が揃う. 揃える mới đi với を."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "tf4",
+            "lang": "ja",
+            "text": "家族を全員揃いました"
+          },
+          {
+            "id": "cl0",
+            "lang": "ja",
+            "text": "家族が全員揃えました"
+          },
+          {
+            "id": "vir",
+            "lang": "ja",
+            "text": "家族が全員揃いました"
+          },
+          {
+            "id": "ue7",
+            "lang": "ja",
+            "text": "家族に全員揃いました"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Cả gia đình có mặt đủ. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "2d6349aa4516ba8ca98f7d91ab86d8ade5bb10ee68e313523784ed1f17def7e6",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "4cda7d41-d183-5cb1-ba6a-90b60c43a7b5",
+      "is_demo": false,
+      "item_id": "09fc31ec-a9d0-5c45-963b-f25bcc20d928",
+      "key": "ja:exercise:n2-u12-verbs-v6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "鍛えて",
+              "きたえて"
+            ]
+          }
+        },
+        "display_answer": "毎日走って、体を鍛えています。",
+        "explanation": {
+          "vi": "鍛える - rèn luyện."
+        },
+        "known_wrong": [
+          {
+            "answer": "整えて",
+            "error_tag": "verb_choice",
+            "feedback_vi": "整える là chỉnh đốn; rèn cơ thể là 鍛える."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "毎日走って、体を{{b1}}います。 (Tôi chạy mỗi ngày để rèn luyện cơ thể.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "19425b715e14b6d27c79de927d502521a0191f5bcbdb378ec7d8c3d42865d44b",
+      "difficulty": 5,
+      "exercise_type": "fill_blank",
+      "id": "ed9997da-ebed-5290-924b-1441d48715de",
+      "is_demo": false,
+      "item_id": "a1076d3a-6ea4-5783-968d-4e20a681ebc6",
+      "key": "ja:exercise:n2-u12-verbs-v7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "抱えて",
+              "かかえて"
+            ]
+          }
+        },
+        "display_answer": "多くの問題を抱えています。",
+        "explanation": {
+          "vi": "問題を抱える - gánh vấn đề."
+        },
+        "known_wrong": [
+          {
+            "answer": "補って",
+            "error_tag": "verb_choice",
+            "feedback_vi": "補う là bù đắp; gánh vấn đề là 抱える."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "template": "多くの問題を{{b1}}います。 (Tôi đang gánh nhiều vấn đề.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "1180bb6ffae44058303b9b466ce2178362bf13c0fe2182c22bf62b04805e0ff7",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "806abdeb-8d81-5f69-8655-1339fc9d17b5",
+      "is_demo": false,
+      "item_id": "157a3b45-67c7-5634-988f-beb2605c8c86",
+      "key": "ja:exercise:n2-u12-verbs-v8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "混雑を避けて、早めに出かけました。",
+            "混雑を避けるために、早めに出かけました。",
+            "こんざつをさけて、はやめにでかけました。",
+            "混雑を避けて早めに出かけました。"
+          ]
+        },
+        "display_answer": "混雑を避けて、早めに出かけました。",
+        "explanation": {
+          "vi": "混雑を避ける - tránh đông đúc."
+        },
+        "known_wrong": [
+          {
+            "answer": "混雑を逃げて、早めに出かけました。",
+            "error_tag": "verb_choice",
+            "feedback_vi": "逃げる cần から (混雑から逃げる); \"tránh\" dùng 避ける."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi ra khỏi nhà sớm để tránh đông đúc."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "a34e7325ca73dd284b51064e62fb4a5d52f0e60f49d494e21d9e8e717b4c0a12",
+      "difficulty": 5,
+      "exercise_type": "translate",
+      "id": "d69aa423-51e7-5252-9c10-22be4214e4cb",
+      "is_demo": false,
+      "item_id": "6e078010-1a4a-5743-81ce-d6230f406636",
+      "key": "ja:exercise:n2-u12-verbs-v9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Người dân kêu gọi cải thiện môi trường nhưng chính phủ không chịu thừa nhận vấn đề.",
+            "Người dân đã yêu cầu cải thiện môi trường, nhưng chính phủ không muốn thừa nhận vấn đề.",
+            "Người dân kêu gọi cải thiện môi trường, còn chính phủ nhất quyết không thừa nhận vấn đề."
+          ]
+        },
+        "display_answer": "Người dân kêu gọi cải thiện môi trường nhưng chính phủ không chịu thừa nhận vấn đề.",
+        "explanation": {
+          "vi": "訴える - kêu gọi; 認めようとしない - không chịu thừa nhận."
+        },
+        "known_wrong": [
+          {
+            "answer": "Người dân thừa nhận vấn đề môi trường và chính phủ kêu gọi cải thiện.",
+            "error_tag": "meaning",
+            "feedback_vi": "訴えた là kêu gọi (người dân); 認めようとしなかった là không chịu thừa nhận (chính phủ)."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "市民は環境の改善を訴えましたが、政府は問題を認めようとしませんでした。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -372018,6 +381501,633 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
+      "content_hash": "60727e43daabe12e14bd93dc87e297f9d2485d9c29c5a2911c2207fd3ef62862",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "a25b7bc7-7d92-5e09-8b3c-316030f1ed8d",
+      "is_demo": false,
+      "item_id": "ae510e83-252e-5e7e-bff0-9182b7b07bc4",
+      "key": "ja:exercise:n3-culture-economy-c1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "g9d"
+        },
+        "display_answer": "伝統",
+        "explanation": {
+          "vi": "伝統 là truyền thống. 文化 là văn hoá, 宗教 là tôn giáo."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "h4w",
+            "lang": "ja",
+            "text": "文化"
+          },
+          {
+            "id": "k9u",
+            "lang": "ja",
+            "text": "宗教"
+          },
+          {
+            "id": "yw7",
+            "lang": "ja",
+            "text": "価格"
+          },
+          {
+            "id": "g9d",
+            "lang": "ja",
+            "text": "伝統"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “truyền thống”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "0614a91fc2904448e1ad095bda748b79b16c25af2889654c27ee281b4c2183f5",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "1f7e9b26-2060-56e7-9ba0-db2a03bcd0ca",
+      "is_demo": false,
+      "item_id": "04ad03d8-a7a4-5adb-85f0-d66dd4404c38",
+      "key": "ja:exercise:n3-culture-economy-c10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "電気の消費量が増えています。",
+        "explanation": {
+          "vi": "Danh từ bổ nghĩa → chủ ngữ → V."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Lượng điện tiêu thụ đang tăng.\"",
+        "tokens": [
+          {
+            "id": "t3",
+            "text": "増えています。"
+          },
+          {
+            "id": "t2",
+            "text": "消費量が"
+          },
+          {
+            "id": "t1",
+            "text": "電気の"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "789e9182e40d8c5260f3c2e811ad5487a1b4aa1c1c5b69835d9116dde462d5a1",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "9932c1bc-3a32-5b8f-a6d3-3a9e14cf8ee9",
+      "is_demo": false,
+      "item_id": "3ada2ce6-4f96-5252-872f-05dd53fd0795",
+      "key": "ja:exercise:n3-culture-economy-c11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "h2l"
+        },
+        "display_answer": "借金",
+        "explanation": {
+          "vi": "借金 là nợ. 借金を返す - trả nợ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "dpw",
+            "lang": "ja",
+            "text": "価格"
+          },
+          {
+            "id": "h2l",
+            "lang": "ja",
+            "text": "借金"
+          },
+          {
+            "id": "xbp",
+            "lang": "ja",
+            "text": "伝統"
+          },
+          {
+            "id": "nze",
+            "lang": "ja",
+            "text": "文化"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn làm việc để trả nợ. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "69a01db53775fb475e5904189dabdb712e08be58171ba486e1ef8c702d55f211",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "629b452c-0bd2-56e3-835f-e282f2c5eb52",
+      "is_demo": false,
+      "item_id": "46678b21-8b8a-53d7-9996-f791b7546351",
+      "key": "ja:exercise:n3-culture-economy-c2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "d4n"
+        },
+        "display_answer": "保護",
+        "explanation": {
+          "vi": "保護 là bảo vệ. 保存 là lưu giữ, 維持 là duy trì."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "vz9",
+            "lang": "ja",
+            "text": "消費"
+          },
+          {
+            "id": "g7j",
+            "lang": "ja",
+            "text": "保存"
+          },
+          {
+            "id": "d4n",
+            "lang": "ja",
+            "text": "保護"
+          },
+          {
+            "id": "sgp",
+            "lang": "ja",
+            "text": "維持"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bảo vệ loài vật quý hiếm. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "acfdf5c25f7fcfb078b757b29ca4ca97e0bdd6475010e1fc795f295fc9286b2f",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "0280166f-47b1-553f-9d01-257d624402dd",
+      "is_demo": false,
+      "item_id": "6ece7a89-ed9f-5037-912a-3672756835a3",
+      "key": "ja:exercise:n3-culture-economy-c3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "t9d"
+        },
+        "display_answer": "Số người tham gia vượt dự kiến, lên tới một nghìn người.",
+        "explanation": {
+          "vi": "予想を超える - vượt dự kiến."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "参加者は予想を超えて、千人になりました。",
+        "options": [
+          {
+            "id": "ycs",
+            "lang": "vi",
+            "text": "Một nghìn người dự đoán sẽ tham gia."
+          },
+          {
+            "id": "k0b",
+            "lang": "vi",
+            "text": "Số người tham gia đúng như dự kiến."
+          },
+          {
+            "id": "t9d",
+            "lang": "vi",
+            "text": "Số người tham gia vượt dự kiến, lên tới một nghìn người."
+          },
+          {
+            "id": "rn4",
+            "lang": "vi",
+            "text": "Số người tham gia ít hơn dự kiến, chỉ một nghìn người."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ce7cb0c1f898cc93ba764a13570cb70b4fbcff95d4308f4f8a6c7536b9f6ddd1",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "6c1b0853-9c08-55df-b3e6-2145ad1da1fd",
+      "is_demo": false,
+      "item_id": "25778ebf-0bf3-52bb-bb90-ffa7840d72e4",
+      "key": "ja:exercise:n3-culture-economy-c4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "価格",
+              "かかく"
+            ]
+          }
+        },
+        "display_answer": "原料の価格が上がっています。",
+        "explanation": {
+          "vi": "価格 - giá cả."
+        },
+        "known_wrong": [
+          {
+            "answer": "消費",
+            "error_tag": "noun_choice",
+            "feedback_vi": "消費 là tiêu thụ; giá cả là 価格."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Giá cả.",
+          "Bắt đầu bằng 価."
+        ],
+        "template": "原料の{{b1}}が上がっています。 (Giá nguyên liệu đang tăng.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "37df70e36b2df600311bd46fa99cb4b5334dcfed9624f7636896dd8ae31a378e",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "a794d45e-41dd-5138-bb28-3a268e55b7ca",
+      "is_demo": false,
+      "item_id": "372ee633-a724-5c4e-8201-1d4fa9f5a536",
+      "key": "ja:exercise:n3-culture-economy-c5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "bqm"
+        },
+        "display_answer": "社会に大きな影響を与えました",
+        "explanation": {
+          "vi": "影響を与える - gây ảnh hưởng; đối tượng đi với に."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "bqm",
+            "lang": "ja",
+            "text": "社会に大きな影響を与えました"
+          },
+          {
+            "id": "afu",
+            "lang": "ja",
+            "text": "社会を大きな影響を与えました"
+          },
+          {
+            "id": "uif",
+            "lang": "ja",
+            "text": "社会に大きな影響を超えました"
+          },
+          {
+            "id": "og6",
+            "lang": "ja",
+            "text": "社会に大きな影響を保存しました"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Vụ việc gây ảnh hưởng lớn đến xã hội. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d23bb5a9d4977f6e932aa9db19543ca52d44eee5bb3a99e9d31175610bb2c036",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "a530d0db-c0a2-52a8-b708-96545644ca1f",
+      "is_demo": false,
+      "item_id": "3e7b11cd-42f9-549e-8a6f-ab27c105b87d",
+      "key": "ja:exercise:n3-culture-economy-c6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "保存",
+              "ほぞん"
+            ]
+          }
+        },
+        "display_answer": "データをパソコンに保存しました。",
+        "explanation": {
+          "vi": "保存する - lưu, bảo quản."
+        },
+        "known_wrong": [
+          {
+            "answer": "保護",
+            "error_tag": "noun_choice",
+            "feedback_vi": "保護 là bảo vệ; lưu dữ liệu là 保存."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "データをパソコンに{{b1}}しました。 (Tôi đã lưu dữ liệu vào máy tính.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "1740bcbeb31de2fdf08e0d45d379c95d95c72b1b1defb299f817b01f12b813be",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "c440e0b9-efce-514b-9f3e-19f80f59707e",
+      "is_demo": false,
+      "item_id": "acac8ec3-be86-5554-ada2-9ca113f3e609",
+      "key": "ja:exercise:n3-culture-economy-c7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "維持",
+              "いじ"
+            ]
+          }
+        },
+        "display_answer": "健康を維持するために、毎日運動しています。",
+        "explanation": {
+          "vi": "維持する - duy trì."
+        },
+        "known_wrong": [
+          {
+            "answer": "保存",
+            "error_tag": "noun_choice",
+            "feedback_vi": "保存 là lưu giữ; duy trì sức khoẻ là 維持."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "健康を{{b1}}するために、毎日運動しています。 (Tôi tập thể dục mỗi ngày để duy trì sức khoẻ.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e0eb2839e4ecbe8d30c7f48e8bf93167efab6ab69a7f300bb458b9d26d9d7230",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "8a8bda5e-543a-58dd-842f-788fee5b83b7",
+      "is_demo": false,
+      "item_id": "989b4174-1ed6-5a74-8fdd-6b880118fc2d",
+      "key": "ja:exercise:n3-culture-economy-c8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "この工場では自動車の部品を製造しています。",
+            "この工場は自動車の部品を製造しています。",
+            "このこうじょうではじどうしゃのぶひんをせいぞうしています。",
+            "この工場では自動車の部品を製造している。"
+          ]
+        },
+        "display_answer": "この工場では自動車の部品を製造しています。",
+        "explanation": {
+          "vi": "製造する - chế tạo, sản xuất."
+        },
+        "known_wrong": [
+          {
+            "answer": "この工場では自動車の部品を消費しています。",
+            "error_tag": "noun_choice",
+            "feedback_vi": "消費 là tiêu thụ; sản xuất là 製造."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Nhà máy này sản xuất linh kiện ô tô."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "16de7da6500a708462197b96a41946070fae64a74bf1189232bd1cf2ab60418e",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "487a69f7-5dd6-52f9-8ad5-3e6dda2efc34",
+      "is_demo": false,
+      "item_id": "35539b5a-e13c-5f96-a4ff-98dbbc0170f6",
+      "key": "ja:exercise:n3-culture-economy-c9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Vì tai nạn, công ty phát sinh tổn thất lớn nhưng nợ không tăng.",
+            "Do tai nạn nên công ty bị tổn thất lớn, song nợ không tăng thêm.",
+            "Tai nạn gây tổn thất lớn cho công ty, nhưng khoản nợ không tăng lên."
+          ]
+        },
+        "display_answer": "Vì tai nạn, công ty phát sinh tổn thất lớn nhưng nợ không tăng.",
+        "explanation": {
+          "vi": "損失が出る - phát sinh tổn thất; 借金は増えませんでした - nợ không tăng."
+        },
+        "known_wrong": [
+          {
+            "answer": "Nhờ tai nạn nên công ty có lãi lớn và nợ giảm.",
+            "error_tag": "meaning",
+            "feedback_vi": "損失が出る là phát sinh tổn thất."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "事故のせいで、会社に大きな損失が出ましたが、借金は増えませんでした。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
       "content_hash": "ad48ff0e6563c1a771482d5ca4f785738e43eea692486592f12a1ffd4a978e94",
       "difficulty": 3,
       "exercise_type": "mcq",
@@ -373332,7 +383442,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "35f43a9dd29bd6a98c814b2a28db3887cfc6445b81bb1ce4fde1f168b26c0f88",
+      "content_hash": "5621a4f8a197609ad2e8fe0f2f6cfe16555106d458f2807c0855e9e49615cd9c",
       "difficulty": 4,
       "exercise_type": "word_bank",
       "id": "e72b4701-4dac-582d-bc52-b5e1f1d7a020",
@@ -373346,6 +383456,12 @@ select content_private.import_bundle($bundle${
               "t1",
               "t2",
               "t3",
+              "t4"
+            ],
+            [
+              "t2",
+              "t3",
+              "t1",
               "t4"
             ]
           ]
@@ -374558,6 +384674,633 @@ select content_private.import_bundle($bundle${
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f3d0b02d856ce2dd869b86196027750b3f9284d7c2c3f90c0802bc49c8896081",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "1b377256-3b72-508e-8d3a-bae91e4142c7",
+      "is_demo": false,
+      "item_id": "0953ade3-4102-5cee-beb3-f9fdc9dfafdd",
+      "key": "ja:exercise:n3-employment-a1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "r4h"
+        },
+        "display_answer": "募集",
+        "explanation": {
+          "vi": "募集 là tuyển. 退職 là nghỉ việc, 終了 là kết thúc, 昇進 là thăng chức."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "r4h",
+            "lang": "ja",
+            "text": "募集"
+          },
+          {
+            "id": "cc7",
+            "lang": "ja",
+            "text": "終了"
+          },
+          {
+            "id": "h1x",
+            "lang": "ja",
+            "text": "昇進"
+          },
+          {
+            "id": "aa9",
+            "lang": "ja",
+            "text": "退職"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “tuyển, chiêu mộ”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f883e759cf813fcfd56fed496b0480d95c1558fd1490c6d80aeb724e47f922d1",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "7f92ba99-568f-52f6-8045-74490b5a95b0",
+      "is_demo": false,
+      "item_id": "a0c968c9-08e5-559e-a1e3-2e30cb5c65ea",
+      "key": "ja:exercise:n3-employment-a10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "荷物を受け取ったら、連絡してください。",
+        "explanation": {
+          "vi": "Tân ngữ → V-たら → yêu cầu."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Khi nhận được hành lý, xin hãy liên lạc.\"",
+        "tokens": [
+          {
+            "id": "t2",
+            "text": "受け取ったら、"
+          },
+          {
+            "id": "t1",
+            "text": "荷物を"
+          },
+          {
+            "id": "t3",
+            "text": "連絡してください。"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f01f7e65f4c2dbc1f96f9186d84b4cf24afe6a94a2cc5236836835b414ebfe40",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "f7c6826b-fbf7-5006-9388-41a1573c186f",
+      "is_demo": false,
+      "item_id": "39a87462-dec0-5de8-8df6-0d8812a1cda8",
+      "key": "ja:exercise:n3-employment-a11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "xsf"
+        },
+        "display_answer": "決勝戦で勝って、優勝しました",
+        "explanation": {
+          "vi": "勝つ - thắng. 優勝する - vô địch."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "rrk",
+            "lang": "ja",
+            "text": "決勝戦で募集して、優勝しました"
+          },
+          {
+            "id": "xsf",
+            "lang": "ja",
+            "text": "決勝戦で勝って、優勝しました"
+          },
+          {
+            "id": "s3f",
+            "lang": "ja",
+            "text": "決勝戦で退職して、優勝しました"
+          },
+          {
+            "id": "jc0",
+            "lang": "ja",
+            "text": "決勝戦で異動して、優勝しました"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Thắng ở trận chung kết nên vô địch. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "6c8cf7040c723362f66909bcd264ba67256619de03068b9d02c0722aa484053b",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "a4c0516a-8d90-50a2-9a45-e8932ce4dbb8",
+      "is_demo": false,
+      "item_id": "1fbb577d-f58e-5186-89d1-c272187bb288",
+      "key": "ja:exercise:n3-employment-a2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "zm1"
+        },
+        "display_answer": "転職",
+        "explanation": {
+          "vi": "転職 là chuyển việc sang công ty khác. 退職 là nghỉ việc, 異動 là điều chuyển nội bộ."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "zm1",
+            "lang": "ja",
+            "text": "転職"
+          },
+          {
+            "id": "oh9",
+            "lang": "ja",
+            "text": "昇進"
+          },
+          {
+            "id": "bdd",
+            "lang": "ja",
+            "text": "異動"
+          },
+          {
+            "id": "dpv",
+            "lang": "ja",
+            "text": "退職"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn chuyển sang công ty khác. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "72559c5c8949dc9791a6a803b7a6d08ad376a988f7fa8c158d105c2a3f3f75a7",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "1639ce42-4cf8-5c07-a848-a1ff2bcad343",
+      "is_demo": false,
+      "item_id": "fd050a94-e614-5903-a2cc-9e7eafa180a0",
+      "key": "ja:exercise:n3-employment-a3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "igc"
+        },
+        "display_answer": "Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng.",
+        "explanation": {
+          "vi": "昇進する - thăng chức; 認められる - được công nhận."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "努力が認められて、課長に昇進しました。",
+        "options": [
+          {
+            "id": "mq1",
+            "lang": "vi",
+            "text": "Anh ấy nghỉ việc vì không được công nhận."
+          },
+          {
+            "id": "dhn",
+            "lang": "vi",
+            "text": "Anh ấy chuyển sang công ty khác làm trưởng phòng."
+          },
+          {
+            "id": "c00",
+            "lang": "vi",
+            "text": "Anh ấy bị giáng xuống làm trưởng phòng."
+          },
+          {
+            "id": "igc",
+            "lang": "vi",
+            "text": "Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b31c6f97ec165ae046c76b7e9a49c238f2f4710994c6d5292d08404c9cd60231",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "463b28ce-3e59-5b74-9409-e1e399de2763",
+      "is_demo": false,
+      "item_id": "19459f2a-0dbe-59f2-8382-ca7296a876a7",
+      "key": "ja:exercise:n3-employment-a4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "異動",
+              "いどう"
+            ]
+          }
+        },
+        "display_answer": "四月から大阪支店に異動します。",
+        "explanation": {
+          "vi": "異動 - điều chuyển công tác."
+        },
+        "known_wrong": [
+          {
+            "answer": "転職",
+            "error_tag": "noun_choice",
+            "feedback_vi": "転職 là chuyển sang công ty khác; điều chuyển nội bộ là 異動."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Điều chuyển nội bộ.",
+          "Bắt đầu bằng 異."
+        ],
+        "template": "四月から大阪支店に{{b1}}します。 (Từ tháng Tư tôi sẽ được điều chuyển đến chi nhánh Osaka.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "888fa717976e0f6aeb7c2fc7599b84a1e30ab938cf5bebf070acd76cf2474e4e",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "61dd5a42-4bd4-54f5-a8ca-4dc52aa60a63",
+      "is_demo": false,
+      "item_id": "5c1c6f93-54b4-563b-ba01-bb2c629631d0",
+      "key": "ja:exercise:n3-employment-a5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "vyf"
+        },
+        "display_answer": "採用",
+        "explanation": {
+          "vi": "採用 là tuyển dụng, nhận vào làm. 募集 là tuyển (thông báo)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "rha",
+            "lang": "ja",
+            "text": "求める"
+          },
+          {
+            "id": "oio",
+            "lang": "ja",
+            "text": "終了"
+          },
+          {
+            "id": "tza",
+            "lang": "ja",
+            "text": "募集"
+          },
+          {
+            "id": "vyf",
+            "lang": "ja",
+            "text": "採用"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Công ty nhận ba người sau phỏng vấn. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7a64ea18cecf10e9e31f4c978814274b52c0140013b61b087dba46b3288f305c",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "f811386e-95c4-5b23-acec-7f06a9851e3c",
+      "is_demo": false,
+      "item_id": "0953ade3-4102-5cee-beb3-f9fdc9dfafdd",
+      "key": "ja:exercise:n3-employment-a6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "募集",
+              "ぼしゅう"
+            ]
+          }
+        },
+        "display_answer": "アルバイトを募集しています。",
+        "explanation": {
+          "vi": "募集する - tuyển."
+        },
+        "known_wrong": [
+          {
+            "answer": "採用",
+            "error_tag": "noun_choice",
+            "feedback_vi": "採用 là nhận vào làm; thông báo tuyển người là 募集."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "アルバイトを{{b1}}しています。 (Chúng tôi đang tuyển nhân viên làm thêm.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "fc92c9af942ba125f7534824fd0c670008e37d5c6cdca8878905c661ba3fb083",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "c1c2aa41-2e19-52bb-8563-b4a3150cca26",
+      "is_demo": false,
+      "item_id": "35cb8e4b-ceec-52f5-9b67-dbd4c639a4ad",
+      "key": "ja:exercise:n3-employment-a7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "終了",
+              "しゅうりょう"
+            ]
+          }
+        },
+        "display_answer": "受付は五時で終了します。",
+        "explanation": {
+          "vi": "終了する - kết thúc."
+        },
+        "known_wrong": [
+          {
+            "answer": "募集",
+            "error_tag": "noun_choice",
+            "feedback_vi": "募集 là tuyển; kết thúc là 終了."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "受付は五時で{{b1}}します。 (Quầy tiếp nhận sẽ đóng lúc năm giờ.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "bf1705b38a1328113e47553a82268b60764ae0eaabcb2b230dbc92f8eeb90555",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "424187b5-9761-56c6-919b-7cdae2b3585e",
+      "is_demo": false,
+      "item_id": "551e86cd-fabf-55d1-8243-f0ec44d23b67",
+      "key": "ja:exercise:n3-employment-a8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "父は来年、六十歳で退職します。",
+            "父は来年六十歳で退職します。",
+            "ちちはらいねん、ろくじゅっさいでたいしょくします。",
+            "父は来年、六十歳で退職する。"
+          ]
+        },
+        "display_answer": "父は来年、六十歳で退職します。",
+        "explanation": {
+          "vi": "退職 - nghỉ việc, về hưu."
+        },
+        "known_wrong": [
+          {
+            "answer": "父は来年、六十歳で転職します。",
+            "error_tag": "noun_choice",
+            "feedback_vi": "転職 là chuyển việc; nghỉ hưu là 退職."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Bố tôi sẽ nghỉ hưu vào năm sau ở tuổi sáu mươi."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "36a4b7f31d01928d3be6b7eba2429b82326a26235c5227ad53cfdbc62cdc0d42",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "1a333da3-b142-5899-ab78-af1b659f1690",
+      "is_demo": false,
+      "item_id": "d820c669-ed5a-518e-9ef9-22902928b37f",
+      "key": "ja:exercise:n3-employment-a9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Công ty đang tìm người có thể làm việc ngay, nhưng số người nhận không nhiều.",
+            "Công ty cần người có thể làm được việc ngay, nhưng số lượng tuyển không nhiều.",
+            "Công ty đang tìm những người làm được việc ngay, song số người được nhận không đông."
+          ]
+        },
+        "display_answer": "Công ty đang tìm người có thể làm việc ngay, nhưng số người nhận không nhiều.",
+        "explanation": {
+          "vi": "即戦力 - người làm được việc ngay; 採用する人数 - số người nhận."
+        },
+        "known_wrong": [
+          {
+            "answer": "Công ty nhận rất nhiều người, kể cả người mới.",
+            "error_tag": "meaning",
+            "feedback_vi": "求めている là đang tìm; 多くありません là không nhiều."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "会社は即戦力となる人を求めていますが、採用する人数は多くありません。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
       "status": "published"
     },
     {
@@ -388136,6 +398879,638 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
+      "content_hash": "c620731f3513d7dcfa239ffcd90d419a6d8c69f37a8ac9557aa592b7e5b2cbf5",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "81e746d6-d02e-59c4-a0ff-6e037dd78bd9",
+      "is_demo": false,
+      "item_id": "41ff917f-0f10-5907-a672-0977e8890abb",
+      "key": "ja:exercise:n3-rules-society-b1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "twf"
+        },
+        "display_answer": "禁止",
+        "explanation": {
+          "vi": "禁止 là cấm. 許可 là cho phép, 協力 là hợp tác, 提案 là đề xuất."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "bac",
+            "lang": "ja",
+            "text": "提案"
+          },
+          {
+            "id": "wnm",
+            "lang": "ja",
+            "text": "協力"
+          },
+          {
+            "id": "twf",
+            "lang": "ja",
+            "text": "禁止"
+          },
+          {
+            "id": "x2g",
+            "lang": "ja",
+            "text": "許可"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “cấm”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f1ce6a523da6039b2612ec46194b1386b8b0443e966a4eedf65a9856bb6a0d70",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "e8264a66-dc50-5e75-adad-deabcc3f3bde",
+      "is_demo": false,
+      "item_id": "645f1694-eb92-577d-bc30-9aa51b693a4c",
+      "key": "ja:exercise:n3-rules-society-b10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3",
+              "t4"
+            ]
+          ]
+        },
+        "display_answer": "国から援助を受けて、学校を建てました。",
+        "explanation": {
+          "vi": "Nguồn (から) → V-て (hỗ trợ) → tân ngữ → V."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Nhận hỗ trợ từ nhà nước, họ đã xây trường.\"",
+        "tokens": [
+          {
+            "id": "t4",
+            "text": "建てました。"
+          },
+          {
+            "id": "t1",
+            "text": "国から"
+          },
+          {
+            "id": "t3",
+            "text": "学校を"
+          },
+          {
+            "id": "t2",
+            "text": "援助を受けて、"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "7f582c39db7c31a48f67d766863122cf1ff044d5ad1b322f7dba6c8fedf343b3",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "cf7e102b-a057-5b90-bf81-1a1cccfa00ae",
+      "is_demo": false,
+      "item_id": "41ff917f-0f10-5907-a672-0977e8890abb",
+      "key": "ja:exercise:n3-rules-society-b11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "slp"
+        },
+        "display_answer": "撮影禁止",
+        "explanation": {
+          "vi": "撮影禁止 - cấm chụp ảnh."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "tkr",
+            "lang": "ja",
+            "text": "撮影協力"
+          },
+          {
+            "id": "km3",
+            "lang": "ja",
+            "text": "撮影承認"
+          },
+          {
+            "id": "slp",
+            "lang": "ja",
+            "text": "撮影禁止"
+          },
+          {
+            "id": "ca6",
+            "lang": "ja",
+            "text": "撮影義務"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Biển “Cấm chụp ảnh”. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "1d1f0c9dbf10a70eab9af0280e31725102b4a971c8ee5238806c48303c6eccb9",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "7b3be82d-3cbd-5677-b683-6ea2bfc46d4b",
+      "is_demo": false,
+      "item_id": "33ba33fa-252b-5179-837f-58c24923a29e",
+      "key": "ja:exercise:n3-rules-society-b2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "sd2"
+        },
+        "display_answer": "義務",
+        "explanation": {
+          "vi": "義務 là nghĩa vụ. 権利 là quyền lợi."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "of0",
+            "lang": "ja",
+            "text": "権利"
+          },
+          {
+            "id": "nn1",
+            "lang": "ja",
+            "text": "提案"
+          },
+          {
+            "id": "sd2",
+            "lang": "ja",
+            "text": "義務"
+          },
+          {
+            "id": "w7m",
+            "lang": "ja",
+            "text": "許可"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Nộp thuế là điều gì của công dân?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "eaeceb172ef1cb5d8f38fc9e7723b9ba7787e3316afd9546d05b6351f48b5619",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "54495f7f-9892-5e42-9dcd-81cd0033c633",
+      "is_demo": false,
+      "item_id": "5ca433c7-3e03-5ede-b6a7-36f53f5ef393",
+      "key": "ja:exercise:n3-rules-society-b3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "exh"
+        },
+        "display_answer": "Có giới hạn về số người được vào.",
+        "explanation": {
+          "vi": "制限がある - có giới hạn; 入場できる人数 - số người có thể vào."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "入場できる人数に制限があります。",
+        "options": [
+          {
+            "id": "fq2",
+            "lang": "vi",
+            "text": "Ai cũng có thể vào mà không hạn chế."
+          },
+          {
+            "id": "lfz",
+            "lang": "vi",
+            "text": "Không được vào khi có giới hạn."
+          },
+          {
+            "id": "exh",
+            "lang": "vi",
+            "text": "Có giới hạn về số người được vào."
+          },
+          {
+            "id": "fzi",
+            "lang": "vi",
+            "text": "Số người vào phải do bạn quyết định."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ad78a028609a5f92f2b1a85c2bb12f13c6d4808bb3d20b8f9e43d4103d6e3d45",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "c40c3996-14b4-5200-b822-c77183533395",
+      "is_demo": false,
+      "item_id": "c604075e-35a4-55a2-b890-1fa799eed271",
+      "key": "ja:exercise:n3-rules-society-b4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "違反",
+              "いはん"
+            ]
+          }
+        },
+        "display_answer": "ルールに違反しました。",
+        "explanation": {
+          "vi": "ルールに違反する - vi phạm quy tắc."
+        },
+        "known_wrong": [
+          {
+            "answer": "許可",
+            "error_tag": "noun_choice",
+            "feedback_vi": "許可 là cho phép; vi phạm là 違反."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Đi với に.",
+          "Bắt đầu bằng 違."
+        ],
+        "template": "ルールに{{b1}}しました。 (Tôi đã vi phạm quy tắc.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f4d71f17276185f0df1cbe6a53c58ba1977f5d5e4f3d14e1b8f7ed8b6dcc8c00",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "c1c14af4-b6f5-5162-8ff5-6941818513b1",
+      "is_demo": false,
+      "item_id": "7b8c2175-5c60-56f0-8b79-26d8aec12de3",
+      "key": "ja:exercise:n3-rules-society-b5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "xe5"
+        },
+        "display_answer": "協力",
+        "explanation": {
+          "vi": "協力 là hợp tác, chung sức."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "kju",
+            "lang": "ja",
+            "text": "制限"
+          },
+          {
+            "id": "xe5",
+            "lang": "ja",
+            "text": "協力"
+          },
+          {
+            "id": "tyr",
+            "lang": "ja",
+            "text": "禁止"
+          },
+          {
+            "id": "tsx",
+            "lang": "ja",
+            "text": "違反"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Mọi người chung sức hoàn tất chuẩn bị. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c6f9755e37ba8daa65f6abe5f35a59e4cd3394c2c6b0167a73482a00ca311c4e",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "6d90ba3c-7d6a-5fbf-9102-ea7a724d245b",
+      "is_demo": false,
+      "item_id": "f69e4df3-4332-5359-9d3b-a7cc09271bb1",
+      "key": "ja:exercise:n3-rules-society-b6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "許可",
+              "きょか"
+            ]
+          }
+        },
+        "display_answer": "この建物に入るには、許可が必要です。",
+        "explanation": {
+          "vi": "許可 - giấy phép."
+        },
+        "known_wrong": [
+          {
+            "answer": "禁止",
+            "error_tag": "noun_choice",
+            "feedback_vi": "禁止 là cấm; giấy phép là 許可."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "この建物に入るには、{{b1}}が必要です。 (Để vào toà nhà này cần có giấy phép.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "dcb0fac8aebb2fae3bc1505f33831e1963328e84b7f427f4f38e53282ae5e262",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "3aaf79f8-97ec-5c6f-9580-221940c7fb09",
+      "is_demo": false,
+      "item_id": "7a724778-b0b2-5ca1-8318-803e37fc3c72",
+      "key": "ja:exercise:n3-rules-society-b7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "権利",
+              "けんり"
+            ]
+          }
+        },
+        "display_answer": "誰でも教育を受ける権利があります。",
+        "explanation": {
+          "vi": "権利 - quyền lợi."
+        },
+        "known_wrong": [
+          {
+            "answer": "義務",
+            "error_tag": "noun_choice",
+            "feedback_vi": "義務 là nghĩa vụ; quyền được học là 権利."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "誰でも教育を受ける{{b1}}があります。 (Ai cũng có quyền được học hành.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f9419b2bd3ddc1719ef5cb9e7a075c60f0f874292575222fdc398f45099f538a",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "13166bfc-4fae-56df-b4a1-b3c82e6b8e28",
+      "is_demo": false,
+      "item_id": "428aa228-a190-5f97-b0a5-d0632e928006",
+      "key": "ja:exercise:n3-rules-society-b8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "新しい方法を提案しました。",
+            "新しい方法を提案した。",
+            "あたらしいほうほうをていあんしました。",
+            "新しい方法を提案しています。"
+          ]
+        },
+        "display_answer": "新しい方法を提案しました。",
+        "explanation": {
+          "vi": "提案する - đề xuất."
+        },
+        "known_wrong": [
+          {
+            "answer": "新しい方法を許可しました。",
+            "error_tag": "noun_choice",
+            "feedback_vi": "許可 là cho phép; đề xuất là 提案."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi đã đề xuất một phương pháp mới."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "dd53edbc8bdf2003284d5d8078f124b12c0abcf58e306c552429d14265bcfdbe",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "a813fdfd-4118-51ec-93f9-a6ca4a0adf0e",
+      "is_demo": false,
+      "item_id": "2fdb6567-ef52-5fc8-826a-f6e92debab70",
+      "key": "ja:exercise:n3-rules-society-b9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Vì đã nhận được phê duyệt của trưởng bộ phận nên từ tháng sau sẽ bắt đầu kế hoạch này.",
+            "Do được trưởng bộ phận phê duyệt, từ tháng sau chúng tôi sẽ khởi động kế hoạch này.",
+            "Đã có sự phê duyệt của trưởng bộ phận nên kế hoạch này bắt đầu từ tháng sau."
+          ]
+        },
+        "display_answer": "Vì đã nhận được phê duyệt của trưởng bộ phận nên từ tháng sau sẽ bắt đầu kế hoạch này.",
+        "explanation": {
+          "vi": "承認が得られる - được phê duyệt; 始める - bắt đầu."
+        },
+        "known_wrong": [
+          {
+            "answer": "Trưởng bộ phận không phê duyệt nên kế hoạch huỷ.",
+            "error_tag": "meaning",
+            "feedback_vi": "承認が得られた là đã được phê duyệt."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "部長の承認が得られたので、来月からこの計画を始めます。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
       "content_hash": "5a3cba8fe36b12ebfe93a9233269fb82a67b9f28511f690f9778f3f176267a04",
       "difficulty": 3,
       "exercise_type": "fill_blank",
@@ -401428,6 +412803,638 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
+      "content_hash": "0862b5001a65a357a460cc80f07f52425e6a089ac2d61e6c5f11667a6223f3cf",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "012c1a44-dd11-5e02-8ecf-5b9424da6ee9",
+      "is_demo": false,
+      "item_id": "9f192ccc-f254-558c-b88e-92868d7e0d05",
+      "key": "ja:exercise:n4-cooking-moving-b1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "wj2"
+        },
+        "display_answer": "炒める",
+        "explanation": {
+          "vi": "炒める là xào. 沸かす là đun sôi, 包む là gói, 戻る là quay lại."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "foy",
+            "lang": "ja",
+            "text": "戻る"
+          },
+          {
+            "id": "p4m",
+            "lang": "ja",
+            "text": "沸かす"
+          },
+          {
+            "id": "lzo",
+            "lang": "ja",
+            "text": "包む"
+          },
+          {
+            "id": "wj2",
+            "lang": "ja",
+            "text": "炒める"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “xào”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "2712241e5683f78f7e1b1612c09ccc04cc852ad4b6621a8acb930678cfc6ffb6",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "890c5520-f7f3-5489-afc1-8b571071815d",
+      "is_demo": false,
+      "item_id": "bb7c9b4b-1bd1-5171-a906-1a830af560ec",
+      "key": "ja:exercise:n4-cooking-moving-b10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "プレゼントをきれいな紙で包みました。",
+        "explanation": {
+          "vi": "Tân ngữ (を) → phương tiện (で) → 包みました."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Tôi đã gói quà bằng giấy đẹp.\"",
+        "tokens": [
+          {
+            "id": "t2",
+            "text": "きれいな紙で"
+          },
+          {
+            "id": "t3",
+            "text": "包みました。"
+          },
+          {
+            "id": "t1",
+            "text": "プレゼントを"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "16803a11382c886ae6b8cff04138fb545573700c872be6ddac477bacf7be9b91",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "2f8987a2-5df4-51b7-9b53-3887bda191a4",
+      "is_demo": false,
+      "item_id": "686e7e33-47d1-51a6-8f80-bdae4e53c923",
+      "key": "ja:exercise:n4-cooking-moving-b11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "vvg"
+        },
+        "display_answer": "本を図書館に返しました",
+        "explanation": {
+          "vi": "返す - trả đồ. 戻る là tự động từ (quay lại), không dùng với を."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "ft5",
+            "lang": "ja",
+            "text": "本を図書館に迎えました"
+          },
+          {
+            "id": "vbf",
+            "lang": "ja",
+            "text": "本を図書館に戻りました"
+          },
+          {
+            "id": "vvg",
+            "lang": "ja",
+            "text": "本を図書館に返しました"
+          },
+          {
+            "id": "wxk",
+            "lang": "ja",
+            "text": "本を図書館に炒めました"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn trả sách cho thư viện. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "d9356dce3b79d325de26f58177c72c4ede18bd198f58ab52e8f75d1ea75bc60d",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "40b11d9b-bfbc-5937-9350-6cd643204b12",
+      "is_demo": false,
+      "item_id": "35d04f2c-4b11-5c03-9785-eee4a3cc7e0d",
+      "key": "ja:exercise:n4-cooking-moving-b2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "xw0"
+        },
+        "display_answer": "訪ねる",
+        "explanation": {
+          "vi": "訪ねる là đến thăm. 迎える là đón, 戻る là quay lại."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "iy0",
+            "lang": "ja",
+            "text": "包む"
+          },
+          {
+            "id": "xnu",
+            "lang": "ja",
+            "text": "迎える"
+          },
+          {
+            "id": "xw0",
+            "lang": "ja",
+            "text": "訪ねる"
+          },
+          {
+            "id": "pqd",
+            "lang": "ja",
+            "text": "戻る"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn đến thăm thầy cũ. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "f59195255d0201f2fb77a997b90cebedb5f5e8ac2ab1cb530aeac528188555e9",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "e697d71e-8aab-59cb-81ff-ea9d1cb6e2cd",
+      "is_demo": false,
+      "item_id": "686e7e33-47d1-51a6-8f80-bdae4e53c923",
+      "key": "ja:exercise:n4-cooking-moving-b3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b33"
+        },
+        "display_answer": "Tôi quay lại công ty để lấy đồ để quên.",
+        "explanation": {
+          "vi": "戻る - quay lại; 取りに - để lấy; 忘れ物 - đồ để quên."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "忘れ物を取りに、会社に戻ります。",
+        "options": [
+          {
+            "id": "uur",
+            "lang": "vi",
+            "text": "Tôi đã quên công ty ở nhà."
+          },
+          {
+            "id": "b33",
+            "lang": "vi",
+            "text": "Tôi quay lại công ty để lấy đồ để quên."
+          },
+          {
+            "id": "h3n",
+            "lang": "vi",
+            "text": "Tôi đến công ty để trả đồ."
+          },
+          {
+            "id": "io3",
+            "lang": "vi",
+            "text": "Tôi quên đồ nên nghỉ việc ở công ty."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "c1214b13103aa852b2e3919ba48f62b456e7781deea808acbb9069b8d075b646",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "f5bcec29-378f-5500-a3cf-aa1cc0eb55e1",
+      "is_demo": false,
+      "item_id": "d70a80f6-aaa9-5d2e-89dc-77b89f40eaba",
+      "key": "ja:exercise:n4-cooking-moving-b4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "沸かし",
+              "わかし"
+            ]
+          }
+        },
+        "display_answer": "お湯を沸かして、お茶をいれます。",
+        "explanation": {
+          "vi": "お湯を沸かす - đun nước."
+        },
+        "known_wrong": [
+          {
+            "answer": "炒め",
+            "error_tag": "verb_choice",
+            "feedback_vi": "炒める là xào; đun nước là 沸かす."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Đun nước.",
+          "Bắt đầu bằng 沸."
+        ],
+        "template": "お湯を{{b1}}て、お茶をいれます。 (Tôi đun nước rồi pha trà.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "21f71fbcb0b3fb3db4a97fbe003a1743b9371ccc89b0edcbe0b15eb14fdcf674",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "3ccd1ecc-7eff-58e8-a224-1a0e147f9adc",
+      "is_demo": false,
+      "item_id": "586a7287-d5e9-5685-b7ef-3794bcbe9dd5",
+      "key": "ja:exercise:n4-cooking-moving-b5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "pli"
+        },
+        "display_answer": "空港まで友達を迎えに行きます",
+        "explanation": {
+          "vi": "迎えに行く - đi đón."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "x5n",
+            "lang": "ja",
+            "text": "空港まで友達を包みに行きます"
+          },
+          {
+            "id": "pli",
+            "lang": "ja",
+            "text": "空港まで友達を迎えに行きます"
+          },
+          {
+            "id": "t9i",
+            "lang": "ja",
+            "text": "空港まで友達を戻りに行きます"
+          },
+          {
+            "id": "tve",
+            "lang": "ja",
+            "text": "空港まで友達を炒めに行きます"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn ra sân bay đón bạn. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "981f792b2388ed10dd0ff5ad15e9719be2fba66ef9328fdf76a2c383e74eb2bf",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "8bebd421-1b83-582d-b177-32e76c339a8e",
+      "is_demo": false,
+      "item_id": "9f192ccc-f254-558c-b88e-92868d7e0d05",
+      "key": "ja:exercise:n4-cooking-moving-b6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "炒め",
+              "いため"
+            ]
+          }
+        },
+        "display_answer": "野菜を油で炒めます。",
+        "explanation": {
+          "vi": "炒める - xào."
+        },
+        "known_wrong": [
+          {
+            "answer": "沸かし",
+            "error_tag": "verb_choice",
+            "feedback_vi": "沸かす là đun sôi; xào là 炒める."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "野菜を油で{{b1}}ます。 (Tôi xào rau với dầu.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "de2314c86b7a153775a6422e5e96f43b1e4f055a190c4dead5f4af005c863a06",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "98724946-cb21-516a-970a-e8ad141ed8de",
+      "is_demo": false,
+      "item_id": "bb7c9b4b-1bd1-5171-a906-1a830af560ec",
+      "key": "ja:exercise:n4-cooking-moving-b7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "包み",
+              "つつみ"
+            ]
+          }
+        },
+        "display_answer": "プレゼントをきれいな紙で包みました。",
+        "explanation": {
+          "vi": "包む - gói."
+        },
+        "known_wrong": [
+          {
+            "answer": "戻り",
+            "error_tag": "verb_choice",
+            "feedback_vi": "戻る là quay lại; gói là 包む."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "プレゼントをきれいな紙で{{b1}}ました。 (Tôi đã gói quà bằng giấy đẹp.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "e47dfc18c336a5822de15df711ef7c25fc40625483fc3b34cbf5eb93ba52d37c",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "ebab3d0d-2021-5df4-9282-c67907cbf9a2",
+      "is_demo": false,
+      "item_id": "35d04f2c-4b11-5c03-9785-eee4a3cc7e0d",
+      "key": "ja:exercise:n4-cooking-moving-b8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "昔お世話になった先生を訪ねました。",
+            "昔お世話になった先生を訪ねた。",
+            "むかしおせわになったせんせいをたずねました。",
+            "お世話になった先生を昔訪ねました。"
+          ]
+        },
+        "display_answer": "昔お世話になった先生を訪ねました。",
+        "explanation": {
+          "vi": "訪ねる - đến thăm; お世話になる - được giúp đỡ."
+        },
+        "known_wrong": [
+          {
+            "answer": "昔お世話になった先生を迎えました。",
+            "error_tag": "verb_choice",
+            "feedback_vi": "迎える là đón; đến thăm là 訪ねる."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi đã đến thăm người thầy từng giúp đỡ tôi."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "bd95ff64c73435526bad1ce82a8b9702b2e6e2efdc223fb994e395a884a17530",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "ef8af2fb-f404-5f27-99cc-90476cf52c12",
+      "is_demo": false,
+      "item_id": "686e7e33-47d1-51a6-8f80-bdae4e53c923",
+      "key": "ja:exercise:n4-cooking-moving-b9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Họp xong thì hãy quay lại chỗ ngồi ngay.",
+            "Khi cuộc họp kết thúc, xin hãy quay về chỗ ngay.",
+            "Sau khi họp xong, hãy trở lại chỗ ngồi liền nhé."
+          ]
+        },
+        "display_answer": "Họp xong thì hãy quay lại chỗ ngồi ngay.",
+        "explanation": {
+          "vi": "終わったら - khi xong; すぐ - ngay; 席に戻る - quay lại chỗ."
+        },
+        "known_wrong": [
+          {
+            "answer": "Hãy ra ngoài ngay khi họp xong.",
+            "error_tag": "meaning",
+            "feedback_vi": "席に戻る là quay lại chỗ ngồi."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "会議が終わったら、すぐ席に戻ってください。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
       "content_hash": "7071dbd1072e1298a96948fab2aa17d5139671049e8d0e7c897e0865634026dc",
       "difficulty": 2,
       "exercise_type": "mcq",
@@ -403304,6 +415311,638 @@ select content_private.import_bundle($bundle${
         "direction": "target_to_vi",
         "source_lang": "ja",
         "source_text": "今日の気温は三十五度です。雷も鳴っています。台風が来るかもしれません。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "5fadeba08af7dffdbf498f18c16c7ec117375d2227b9b7f5f848573ec26167b5",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "e1801d84-fd91-53a3-80d2-de4c70386557",
+      "is_demo": false,
+      "item_id": "24982fe9-2e54-5449-8290-8641dac03633",
+      "key": "ja:exercise:n4-feelings-states-a1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "up8"
+        },
+        "display_answer": "怒る",
+        "explanation": {
+          "vi": "怒る là giận. 濡れる là bị ướt, 乾く là khô, 偉い là giỏi, đáng nể."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "i5f",
+            "lang": "ja",
+            "text": "偉い"
+          },
+          {
+            "id": "t2o",
+            "lang": "ja",
+            "text": "濡れる"
+          },
+          {
+            "id": "i4x",
+            "lang": "ja",
+            "text": "乾く"
+          },
+          {
+            "id": "up8",
+            "lang": "ja",
+            "text": "怒る"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “giận, nổi giận”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "83dc5781aba9a74ba900ceac7a0f265a842673ce13f2a684599daae0ebd90e2d",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "e862403a-587b-5cfd-85a9-fe9dfc6ada6b",
+      "is_demo": false,
+      "item_id": "be5090ec-b879-525a-ad7f-de1baedff33b",
+      "key": "ja:exercise:n4-feelings-states-a10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "洗濯物がまだ乾いていません。",
+        "explanation": {
+          "vi": "Chủ ngữ (が) → まだ → 乾いていません."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Quần áo giặt vẫn chưa khô.\"",
+        "tokens": [
+          {
+            "id": "t1",
+            "text": "洗濯物が"
+          },
+          {
+            "id": "t3",
+            "text": "乾いていません。"
+          },
+          {
+            "id": "t2",
+            "text": "まだ"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a5fc4984813d6c7cf2907fcd8e235f3ef5712ce11441ad5c25d11b502761f8b4",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "b2748493-ad6b-5ba5-b4d4-72b8d22e0943",
+      "is_demo": false,
+      "item_id": "24982fe9-2e54-5449-8290-8641dac03633",
+      "key": "ja:exercise:n4-feelings-states-a11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "q4x"
+        },
+        "display_answer": "父は子どもが遅く帰ったので怒っています",
+        "explanation": {
+          "vi": "怒っています - đang giận. 濡れる, 乾く không hợp ngữ cảnh."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "ypb",
+            "lang": "ja",
+            "text": "父は子どもが遅く帰ったので乾いています"
+          },
+          {
+            "id": "vkn",
+            "lang": "ja",
+            "text": "父は子どもが遅く帰ったので偉いです"
+          },
+          {
+            "id": "q4x",
+            "lang": "ja",
+            "text": "父は子どもが遅く帰ったので怒っています"
+          },
+          {
+            "id": "mne",
+            "lang": "ja",
+            "text": "父は子どもが遅く帰ったので濡れています"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bố giận vì con về muộn. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "f2df6eff63798a1db0a64b7f12cb63b04732a6b777aa7e3c7ec0e831b2d546b6",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "734e3c77-999d-5043-bd04-6f2d1849c140",
+      "is_demo": false,
+      "item_id": "97809021-c914-55a3-9cb9-439c7157d43e",
+      "key": "ja:exercise:n4-feelings-states-a2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "avw"
+        },
+        "display_answer": "恥ずかしい",
+        "explanation": {
+          "vi": "恥ずかしい là xấu hổ, ngại. 寂しい là cô đơn."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "ppw",
+            "lang": "ja",
+            "text": "寂しい"
+          },
+          {
+            "id": "jsc",
+            "lang": "ja",
+            "text": "怒る"
+          },
+          {
+            "id": "fdq",
+            "lang": "ja",
+            "text": "偉い"
+          },
+          {
+            "id": "avw",
+            "lang": "ja",
+            "text": "恥ずかしい"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bạn ngại khi nói trước mọi người. Từ nào?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "130254dfc457a5a0a4cc3250c3e61f78e8f0fd45f7f1c1357d82308979259446",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "8b2a26e5-5f3b-57bc-b9ba-bdb99f864118",
+      "is_demo": false,
+      "item_id": "bc925fd8-98f8-53a8-9efe-eedf6b28c317",
+      "key": "ja:exercise:n4-feelings-states-a3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "b0r"
+        },
+        "display_answer": "Tôi bị ướt mưa nên bị cảm.",
+        "explanation": {
+          "vi": "濡れる - bị ướt; 風邪を引く - bị cảm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "雨に濡れて、風邪を引きました。",
+        "options": [
+          {
+            "id": "hby",
+            "lang": "vi",
+            "text": "Tôi đi dưới mưa vì bị cảm."
+          },
+          {
+            "id": "a1h",
+            "lang": "vi",
+            "text": "Tôi tránh mưa nên không bị cảm."
+          },
+          {
+            "id": "siz",
+            "lang": "vi",
+            "text": "Trời mưa nên tôi nghỉ học."
+          },
+          {
+            "id": "b0r",
+            "lang": "vi",
+            "text": "Tôi bị ướt mưa nên bị cảm."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a69351c39857ae947a7cac4d25ffb6b46d54d80202311343641a393fe4541b32",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "2cc7e3d3-2383-5561-aa77-5c869551ba33",
+      "is_demo": false,
+      "item_id": "96adba48-f973-5b36-9688-95a15a1509df",
+      "key": "ja:exercise:n4-feelings-states-a4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "寂しく",
+              "さびしく"
+            ]
+          }
+        },
+        "display_answer": "一人で暮らすと、時々寂しくなります。",
+        "explanation": {
+          "vi": "寂しくなる - trở nên cô đơn."
+        },
+        "known_wrong": [
+          {
+            "answer": "恥ずかしく",
+            "error_tag": "adj_choice",
+            "feedback_vi": "恥ずかしい là xấu hổ; cô đơn là 寂しい."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 4
+          }
+        ],
+        "hint_levels": [
+          "Tính từ い, bỏ い thêm く.",
+          "Cô đơn."
+        ],
+        "template": "一人で暮らすと、時々{{b1}}なります。 (Sống một mình, đôi khi tôi thấy cô đơn.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "2f10154da0e775d7286c7ff503601714adef0482789aa5fefe505df7f03c742f",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "01aa7ce9-23c2-58e1-9fbd-e5fb257e3d38",
+      "is_demo": false,
+      "item_id": "be5090ec-b879-525a-ad7f-de1baedff33b",
+      "key": "ja:exercise:n4-feelings-states-a5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "zj4"
+        },
+        "display_answer": "洗濯物がまだ乾いていません",
+        "explanation": {
+          "vi": "乾く là tự động từ nên dùng が; trạng thái chưa khô là 乾いていません."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "zj4",
+            "lang": "ja",
+            "text": "洗濯物がまだ乾いていません"
+          },
+          {
+            "id": "kfa",
+            "lang": "ja",
+            "text": "洗濯物にまだ乾いていません"
+          },
+          {
+            "id": "htr",
+            "lang": "ja",
+            "text": "洗濯物をまだ乾いていません"
+          },
+          {
+            "id": "x15",
+            "lang": "ja",
+            "text": "洗濯物がまだ乾かしていません"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Quần áo giặt chưa khô. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "ee49ae9b111b32d132e2396c574e871614c9d76ec31a0f40eb2416d4b78ba592",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "df0f648e-2034-55e8-aba2-45644f683a1f",
+      "is_demo": false,
+      "item_id": "24982fe9-2e54-5449-8290-8641dac03633",
+      "key": "ja:exercise:n4-feelings-states-a6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "怒り",
+              "おこり"
+            ]
+          }
+        },
+        "display_answer": "先生は遅刻した学生に怒りました。",
+        "explanation": {
+          "vi": "怒る - giận."
+        },
+        "known_wrong": [
+          {
+            "answer": "濡れ",
+            "error_tag": "verb_choice",
+            "feedback_vi": "濡れる là bị ướt; giận là 怒る."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "先生は遅刻した学生に{{b1}}ました。 (Thầy giáo đã giận sinh viên đến muộn.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "b402ec5917e101ada00785e2eff0cb3e9da3e0464eb76b0c534373f51e7e3dec",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "a0956ddf-a8cd-5e8b-9643-1673df8e838e",
+      "is_demo": false,
+      "item_id": "bc925fd8-98f8-53a8-9efe-eedf6b28c317",
+      "key": "ja:exercise:n4-feelings-states-a7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "濡れ",
+              "ぬれ"
+            ]
+          }
+        },
+        "display_answer": "雨に濡れて、風邪を引きました。",
+        "explanation": {
+          "vi": "濡れる - bị ướt."
+        },
+        "known_wrong": [
+          {
+            "answer": "乾い",
+            "error_tag": "verb_choice",
+            "feedback_vi": "乾く là khô; bị ướt là 濡れる."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "雨に{{b1}}て、風邪を引きました。 (Tôi bị ướt mưa nên bị cảm.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "564a83bd39fa655e8323ddb0ff0dc292e8f7e110717718502cf35cd86eb323a8",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "66cc9a1f-b714-5be8-b21e-cd1f734f424e",
+      "is_demo": false,
+      "item_id": "a83ac8e8-5ba1-5781-9162-9b88b018ee9f",
+      "key": "ja:exercise:n4-feelings-states-a8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "毎日勉強して、偉いですね。",
+            "毎日勉強して、偉いね。",
+            "まいにちべんきょうして、えらいですね。",
+            "毎日勉強していて、偉いですね。"
+          ]
+        },
+        "display_answer": "毎日勉強して、偉いですね。",
+        "explanation": {
+          "vi": "偉いですね - bạn giỏi quá."
+        },
+        "known_wrong": [
+          {
+            "answer": "毎日勉強して、恥ずかしいですね。",
+            "error_tag": "adj_choice",
+            "feedback_vi": "恥ずかしい là xấu hổ; khen là 偉い."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Ngày nào cũng học, bạn giỏi thật đấy."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "507c0ab8c6a67a1faa0a562ad42371207311381f298dd08b3ae9fb0d22f447d7",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "04d896d0-55dc-540c-aa82-1623df755ee2",
+      "is_demo": false,
+      "item_id": "97809021-c914-55a3-9cb9-439c7157d43e",
+      "key": "ja:exercise:n4-feelings-states-a9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Nói trước mặt mọi người thì ngại, nhưng luyện tập thì sẽ ổn.",
+            "Nói trước mọi người rất xấu hổ, nhưng nếu luyện tập thì không sao.",
+            "Tôi ngại nói trước đám đông, nhưng nếu tập thì ổn thôi."
+          ]
+        },
+        "display_answer": "Nói trước mặt mọi người thì ngại, nhưng luyện tập thì sẽ ổn.",
+        "explanation": {
+          "vi": "恥ずかしいですが - ngại nhưng; 練習すれば - nếu luyện tập thì."
+        },
+        "known_wrong": [
+          {
+            "answer": "Nói trước mặt mọi người rất dễ nên không cần luyện tập.",
+            "error_tag": "meaning",
+            "feedback_vi": "恥ずかしい là ngại, xấu hổ."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "みんなの前で話すのは恥ずかしいですが、練習すれば大丈夫です。"
       },
       "reviewed_at": "2026-10-21T12:00:00+07:00",
       "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
@@ -405757,7 +418396,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "f64c80fb256200cb45bb155ea5595a413c804f843510bb77a75c2ca1c8099713",
+      "content_hash": "dd30c6be21b9cd5aa2ac329e8150009065adf6c2e33883a84fc5b0f9f1bda0da",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "029fae2e-8938-5474-9d84-a79e0c332e2f",
@@ -405770,6 +418409,12 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3",
+              "t4"
+            ],
+            [
+              "t2",
+              "t1",
               "t3",
               "t4"
             ]
@@ -415209,7 +427854,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "194a944181e713965228853d58fedb896a4280cc44af7d0d2937255d2230af22",
+      "content_hash": "31404c283e057a236926a9efc71b4131d9adca70c8ddabd74a3b174779e3f4bf",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "a8e230df-1255-5ab7-aef1-c08b5cf0f8d8",
@@ -415222,6 +427867,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -419405,7 +432055,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "241c77c71cbbe24d62b60d626dba48513531b9002a5f209a480f47d8f8bbb566",
+      "content_hash": "a42a6fb979e7336840d469e3f1b3dd8ce87604af74495d4f35924ac011a756f2",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "2bf3a721-c206-5553-a0c0-e5a6a94be094",
@@ -419418,6 +432068,12 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3",
+              "t4"
+            ],
+            [
+              "t2",
+              "t1",
               "t3",
               "t4"
             ]
@@ -426154,7 +438810,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "f0cfecd0b2cc7c4b2bf19ed519cc33518e8eaac7371449996c309cc88841473b",
+      "content_hash": "8a153d27627651ae7777afb21d9776f8d64cd1cf6222f68009451940eec541f6",
       "difficulty": 3,
       "exercise_type": "word_bank",
       "id": "e99c78f4-3137-52cb-8267-22329ad635ea",
@@ -426167,6 +438823,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -427410,6 +440071,633 @@ select content_private.import_bundle($bundle${
       },
       "reviewed_at": "2026-10-16T12:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "5576d5b51ffe459e3e2f8bbc30316c571d80d00279148ecef3a4892637603d99",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "b250ca07-667d-5d68-9b9d-33203e6104d8",
+      "is_demo": false,
+      "item_id": "d85ae774-2d7f-5ffb-ba01-bfed01f1426e",
+      "key": "ja:exercise:n4-work-nouns-c1",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "to5"
+        },
+        "display_answer": "計画",
+        "explanation": {
+          "vi": "計画 là kế hoạch. 相談 là bàn bạc, 希望 là nguyện vọng, 修理 là sửa chữa."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 0,
+      "prompt": {
+        "options": [
+          {
+            "id": "to5",
+            "lang": "ja",
+            "text": "計画"
+          },
+          {
+            "id": "zwu",
+            "lang": "ja",
+            "text": "希望"
+          },
+          {
+            "id": "iyq",
+            "lang": "ja",
+            "text": "修理"
+          },
+          {
+            "id": "lhm",
+            "lang": "ja",
+            "text": "相談"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ nào có nghĩa là “kế hoạch”?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "8b3f171fbdac8569f4e87b1d6433f2faab8b397de45a097f54160b9189746ece",
+      "difficulty": 4,
+      "exercise_type": "word_bank",
+      "id": "713ca6fc-6a17-5128-8282-a8b9cc60ca80",
+      "is_demo": false,
+      "item_id": "0006f4b2-d7d9-5576-9403-6abee49bba71",
+      "key": "ja:exercise:n4-work-nouns-c10",
+      "key_data": {
+        "answer_key": {
+          "orders": [
+            [
+              "t1",
+              "t2",
+              "t3"
+            ]
+          ]
+        },
+        "display_answer": "ガソリンが少なくなったので、入れに行きます。",
+        "explanation": {
+          "vi": "Chủ ngữ → lý do (ので) → V-ます + に行く."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 9,
+      "prompt": {
+        "instruction": "Sắp xếp thành câu tiếng Nhật: \"Xăng sắp hết nên tôi đi đổ.\"",
+        "tokens": [
+          {
+            "id": "t2",
+            "text": "少なくなったので、"
+          },
+          {
+            "id": "t1",
+            "text": "ガソリンが"
+          },
+          {
+            "id": "t3",
+            "text": "入れに行きます。"
+          }
+        ]
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "46e3eaeee1ad8a43b3731f84190f87a8399528c4f8fc27c80505dd2b67df24b0",
+      "difficulty": 4,
+      "exercise_type": "mcq",
+      "id": "904c6663-4a17-5f06-a7c8-8e8c2e5cc79e",
+      "is_demo": false,
+      "item_id": "c7ef9cad-1d7a-5479-b447-1a6a7e23e66f",
+      "key": "ja:exercise:n4-work-nouns-c11",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "yw1"
+        },
+        "display_answer": "失敗しても、あきらめないでください",
+        "explanation": {
+          "vi": "失敗しても - dù thất bại; あきらめないで - đừng bỏ cuộc."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 10,
+      "prompt": {
+        "options": [
+          {
+            "id": "uew",
+            "lang": "ja",
+            "text": "失敗しても、営業しないでください"
+          },
+          {
+            "id": "yw1",
+            "lang": "ja",
+            "text": "失敗しても、あきらめないでください"
+          },
+          {
+            "id": "idq",
+            "lang": "ja",
+            "text": "失敗しても、出席しないでください"
+          },
+          {
+            "id": "ssb",
+            "lang": "ja",
+            "text": "失敗しても、修理しないでください"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Dù thất bại, đừng bỏ cuộc. Câu nào đúng?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "application",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "fb99fd10d7d7e887aea279d176594b3766c4314970a0f98f8128a6a9750d308c",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "2fcf8718-8d6a-580e-9689-cac1547f03f8",
+      "is_demo": false,
+      "item_id": "0e5483d7-0048-5305-9c1a-bab7c63e10fa",
+      "key": "ja:exercise:n4-work-nouns-c2",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "f8d"
+        },
+        "display_answer": "欠席",
+        "explanation": {
+          "vi": "欠席 là vắng mặt, trái nghĩa với 出席 (có mặt)."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 1,
+      "prompt": {
+        "options": [
+          {
+            "id": "lsk",
+            "lang": "ja",
+            "text": "成功"
+          },
+          {
+            "id": "ygz",
+            "lang": "ja",
+            "text": "営業"
+          },
+          {
+            "id": "f8d",
+            "lang": "ja",
+            "text": "欠席"
+          },
+          {
+            "id": "op4",
+            "lang": "ja",
+            "text": "修理"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Từ trái nghĩa với 出席 là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "1912cb1e850d9fcadfa86aa85e17a815ccff7e67ebbb612d648064d52d0e9d17",
+      "difficulty": 3,
+      "exercise_type": "listen",
+      "id": "aa50399a-e02a-53a1-bb9d-39040948f7bf",
+      "is_demo": false,
+      "item_id": "d767ecd1-1223-504a-9b6f-03aa3bc1296d",
+      "key": "ja:exercise:n4-work-nouns-c3",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "lvb"
+        },
+        "display_answer": "Cửa hàng này mở cửa đến mười giờ đêm.",
+        "explanation": {
+          "vi": "営業している - đang mở cửa; 夜十時まで - đến mười giờ đêm."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 2,
+      "prompt": {
+        "audio_asset_id": null,
+        "fallback_text": "この店は夜十時まで営業しています。",
+        "options": [
+          {
+            "id": "wgc",
+            "lang": "vi",
+            "text": "Cửa hàng này đóng cửa lúc mười giờ sáng."
+          },
+          {
+            "id": "grz",
+            "lang": "vi",
+            "text": "Cửa hàng này đang sửa chữa đến mười giờ đêm."
+          },
+          {
+            "id": "x1a",
+            "lang": "vi",
+            "text": "Cửa hàng này mở lúc mười giờ đêm."
+          },
+          {
+            "id": "lvb",
+            "lang": "vi",
+            "text": "Cửa hàng này mở cửa đến mười giờ đêm."
+          }
+        ],
+        "shuffle": true
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "aef4848bc8b4525d391fdc99f182f858c7947ac53ef7c407244cec638a0b9bd8",
+      "difficulty": 3,
+      "exercise_type": "fill_blank",
+      "id": "d3eda1ab-c60e-5cec-a9b6-34e5c366eea5",
+      "is_demo": false,
+      "item_id": "12ee7806-d0ce-51f5-9d59-ec077662c7fe",
+      "key": "ja:exercise:n4-work-nouns-c4",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "修理",
+              "しゅうり"
+            ]
+          }
+        },
+        "display_answer": "壊れた時計を修理に出しました。",
+        "explanation": {
+          "vi": "修理に出す - đem đi sửa."
+        },
+        "known_wrong": [
+          {
+            "answer": "相談",
+            "error_tag": "noun_choice",
+            "feedback_vi": "相談 là bàn bạc; đem đi sửa là 修理に出す."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 3,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "hint_levels": [
+          "Việc sửa chữa.",
+          "Bắt đầu bằng 修."
+        ],
+        "template": "壊れた時計を{{b1}}に出しました。 (Tôi đã mang chiếc đồng hồ hỏng đi sửa.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "9baef5ed94a34abeb9d7fb0de08af5ea4c3df585ce2255eea044369848696541",
+      "difficulty": 3,
+      "exercise_type": "mcq",
+      "id": "e33ff07e-27c5-53f6-b0d3-6d60560982b0",
+      "is_demo": false,
+      "item_id": "5be5c8bf-6f24-5681-8dc1-799efa6d4a37",
+      "key": "ja:exercise:n4-work-nouns-c5",
+      "key_data": {
+        "answer_key": {
+          "correct_option_id": "juh"
+        },
+        "display_answer": "駐車場",
+        "explanation": {
+          "vi": "駐車場 là bãi đỗ xe. 道路 là đường, ガソリン là xăng."
+        },
+        "known_wrong": [],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 4,
+      "prompt": {
+        "options": [
+          {
+            "id": "zxk",
+            "lang": "ja",
+            "text": "道路"
+          },
+          {
+            "id": "oa6",
+            "lang": "ja",
+            "text": "ガソリン"
+          },
+          {
+            "id": "qss",
+            "lang": "ja",
+            "text": "営業"
+          },
+          {
+            "id": "juh",
+            "lang": "ja",
+            "text": "駐車場"
+          }
+        ],
+        "shuffle": true,
+        "stem": "Bãi đỗ xe là gì?",
+        "stem_lang": "vi"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recognition",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "cec79e7cab9d953456dd7bf9013f3d38e7e47c747584bb3473299c9c1b7d314e",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "69b91b34-e2ff-5088-863c-226ea59df818",
+      "is_demo": false,
+      "item_id": "708a83b2-7f33-508b-a62c-a8562a1c7e94",
+      "key": "ja:exercise:n4-work-nouns-c6",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "相談",
+              "そうだん"
+            ]
+          }
+        },
+        "display_answer": "進路について、先生に相談しました。",
+        "explanation": {
+          "vi": "相談する - bàn bạc, xin ý kiến."
+        },
+        "known_wrong": [
+          {
+            "answer": "欠席",
+            "error_tag": "noun_choice",
+            "feedback_vi": "欠席 là vắng mặt; xin ý kiến là 相談."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 5,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "進路について、先生に{{b1}}しました。 (Tôi đã xin ý kiến thầy về con đường sắp tới.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "33d5095bf61f8fe8a504c3eeea82e435a9d7640b91b6fac0bbfda8bc8c7696f2",
+      "difficulty": 4,
+      "exercise_type": "fill_blank",
+      "id": "371331fc-be0f-59f6-860d-a2a83407d17c",
+      "is_demo": false,
+      "item_id": "4f53b8c3-81ab-55fe-9728-a556ecb16790",
+      "key": "ja:exercise:n4-work-nouns-c7",
+      "key_data": {
+        "answer_key": {
+          "blanks": {
+            "b1": [
+              "出席",
+              "しゅっせき"
+            ]
+          }
+        },
+        "display_answer": "明日の会議には、全員出席します。",
+        "explanation": {
+          "vi": "出席する - có mặt, tham dự."
+        },
+        "known_wrong": [
+          {
+            "answer": "欠席",
+            "error_tag": "noun_choice",
+            "feedback_vi": "欠席 là vắng mặt, trái nghĩa với 出席."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 6,
+      "prompt": {
+        "blanks": [
+          {
+            "id": "b1",
+            "width_hint": 3
+          }
+        ],
+        "template": "明日の会議には、全員{{b1}}します。 (Cuộc họp ngày mai tất cả mọi người sẽ tham dự.)"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "ja",
+      "content_hash": "a50300c531cfa19ec7ef2c692618be6f73f978e753b51a7190c9e9daad9c7c26",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "1b3811f1-7944-550d-9f2d-43c6853490cf",
+      "is_demo": false,
+      "item_id": "d85ae774-2d7f-5ffb-ba01-bfed01f1426e",
+      "key": "ja:exercise:n4-work-nouns-c8",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "旅行の計画を立てています。",
+            "旅行の計画を立てている。",
+            "りょこうのけいかくをたてています。",
+            "旅行の計画をたてています。"
+          ]
+        },
+        "display_answer": "旅行の計画を立てています。",
+        "explanation": {
+          "vi": "計画を立てる - lập kế hoạch."
+        },
+        "known_wrong": [
+          {
+            "answer": "旅行の相談を立てています。",
+            "error_tag": "noun_choice",
+            "feedback_vi": "相談 là bàn bạc; lập kế hoạch là 計画を立てる."
+          }
+        ],
+        "rubric": {
+          "diacritics": "strict",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 7,
+      "prompt": {
+        "direction": "vi_to_target",
+        "source_lang": "vi",
+        "source_text": "Tôi đang lập kế hoạch cho chuyến du lịch."
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "stage": "recall",
+      "status": "published"
+    },
+    {
+      "answer_lang": "vi",
+      "content_hash": "f1a3e5305aa6a464542cf24b367672ba6557aaa2b67c8ce14c0524fe589c20ad",
+      "difficulty": 4,
+      "exercise_type": "translate",
+      "id": "702bd01b-744d-567c-a12a-be47b9a96381",
+      "is_demo": false,
+      "item_id": "2bb7b1e6-3668-5367-a013-8d07ba115264",
+      "key": "ja:exercise:n4-work-nouns-c9",
+      "key_data": {
+        "answer_key": {
+          "accepted": [
+            "Thí nghiệm thất bại nhiều lần, nhưng cuối cùng cũng thành công nên mọi người rất vui.",
+            "Thí nghiệm đã thất bại nhiều lần, nhưng cuối cùng thành công, ai cũng vui mừng.",
+            "Dù thất bại nhiều lần, cuối cùng thí nghiệm cũng thành công và mọi người đều vui."
+          ]
+        },
+        "display_answer": "Thí nghiệm thất bại nhiều lần, nhưng cuối cùng cũng thành công nên mọi người rất vui.",
+        "explanation": {
+          "vi": "何度も失敗 - thất bại nhiều lần; やっと成功 - cuối cùng cũng thành công."
+        },
+        "known_wrong": [
+          {
+            "answer": "Thí nghiệm thành công ngay từ lần đầu nên mọi người vui.",
+            "error_tag": "meaning",
+            "feedback_vi": "何度も失敗 là thất bại nhiều lần."
+          }
+        ],
+        "rubric": {
+          "diacritics": "lenient",
+          "expand_contractions": true,
+          "ko_spacing": "lenient",
+          "punctuation": "ignore",
+          "typo_tolerance": 0
+        }
+      },
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "order_index": 8,
+      "prompt": {
+        "direction": "target_to_vi",
+        "source_lang": "ja",
+        "source_text": "実験は何度も失敗しましたが、やっと成功して、みんな喜びました。"
+      },
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
       "stage": "application",
       "status": "published"
@@ -435069,7 +448357,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "209c30cbf1f59645b63972a8e1e66434dcab75212ef0ce8e94386818cebec1d8",
+      "content_hash": "90bb66d335469407dceb5a1726812a7bc9d43e9bb2dae6dc61ca371d6853803f",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "427fd633-06d6-535f-b37c-18e4cc1069a6",
@@ -435082,6 +448370,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -440770,7 +454063,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "7663fb634efd3fc50fc0872f9d9cbed659ffef11052c0b7bd3cff8a526d37b55",
+      "content_hash": "f19fdda1d0297bc9ca229ae48decf270eecffbe3e7ef47fe8cacb4719e1ab7db",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "f20bf12c-3b30-524b-9554-b580d8367f54",
@@ -440783,6 +454076,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -442035,7 +455333,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "d5d2540397b10ec2b2b04fb15a2b1ca1ce1d0dc0b6a12b87f4b19150def3aa8a",
+      "content_hash": "5d583ce3f7cfaf2a450ef0c126490914fbaab5fb9b6d2b4d0679a700b0906017",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "22db8a3b-24bb-59de-9a7e-86c04c7cf284",
@@ -442048,6 +455346,11 @@ select content_private.import_bundle($bundle${
             [
               "t1",
               "t2",
+              "t3"
+            ],
+            [
+              "t2",
+              "t1",
               "t3"
             ]
           ]
@@ -443019,7 +456322,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "38a4ed3af7115f0af7934651576416a243701ba7ff5d938b7d003bebb5192d40",
+      "content_hash": "2a11b8b1c1dab650f985e2707302972856861fc846e602a3ac8dcf9722adb742",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "8b59d747-a25f-5600-b50e-4d982f81c940",
@@ -443033,6 +456336,24 @@ select content_private.import_bundle($bundle${
               "t1",
               "t2",
               "t3",
+              "t4"
+            ],
+            [
+              "t2",
+              "t1",
+              "t3",
+              "t4"
+            ],
+            [
+              "t1",
+              "t3",
+              "t2",
+              "t4"
+            ],
+            [
+              "t3",
+              "t1",
+              "t2",
               "t4"
             ]
           ]
@@ -446818,7 +460139,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "4bc18e561cc056adf4f39d5a4a7afd051955c1a074e9aabe673f022dc28b5a0c",
+      "content_hash": "a20052ffaf62c98dd1761695f5b74af1c869418e2b99085f8d1b3bcbcde11d09",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "36eff868-4593-5602-aa9b-3e08ed5a4b88",
@@ -446832,6 +460153,12 @@ select content_private.import_bundle($bundle${
               "t1",
               "t2",
               "t3",
+              "t4"
+            ],
+            [
+              "t3",
+              "t1",
+              "t2",
               "t4"
             ]
           ]
@@ -447123,7 +460450,7 @@ select content_private.import_bundle($bundle${
     },
     {
       "answer_lang": "ja",
-      "content_hash": "9d4ec4a46624d7e905f649c30eb7b89cdfbf4b3426fd48bbd397b5af84c14387",
+      "content_hash": "c541506b6f5652bd25476fa041faed47bf00b4200b8cd03fdd3ca217d115dbf8",
       "difficulty": 2,
       "exercise_type": "word_bank",
       "id": "96537a62-d689-598a-be06-5b988ed50df5",
@@ -447137,6 +460464,12 @@ select content_private.import_bundle($bundle${
               "t1",
               "t2",
               "t3",
+              "t4"
+            ],
+            [
+              "t1",
+              "t3",
+              "t2",
               "t4"
             ]
           ]
@@ -780274,6 +793607,1636 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "敢えて反対意見を述べます。",
+            "translation": {
+              "vi": "Tôi cố ý nêu ý kiến phản đối."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cố ý, dám (làm điều khó)"
+        }
+      },
+      "content_hash": "e505cf49e7cf544967408dbeb7f089809ef4861138ec70cd8a81eaeff174f701",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "reading": "あえて",
+        "romanization": "aete",
+        "text": "敢えて"
+      },
+      "id": "f6eecca2-b7af-565c-9aec-fc93ffa72873",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-aete",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "社会の秩序を守ります。",
+            "translation": {
+              "vi": "Giữ gìn trật tự xã hội."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "trật tự"
+        }
+      },
+      "content_hash": "6759340062bf7f759ac2979909ee6726ecab18bbfe50fbc0c5d08a21b112e211",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ちつじょ",
+        "romanization": "chitsujo",
+        "text": "秩序"
+      },
+      "id": "ffab803b-e6b6-56a7-b082-245b84309758",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-chitsujo",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "時代の潮流に乗り遅れてはいけません。",
+            "translation": {
+              "vi": "Không được lỡ nhịp với trào lưu thời đại."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "xu thế, trào lưu"
+        }
+      },
+      "content_hash": "42d46ea57fbd81378d850f626b048cb7e13f95210bd9a6f94a7a41ea5e869f67",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ちょうりゅう",
+        "romanization": "chouryuu",
+        "text": "潮流"
+      },
+      "id": "7ca464ae-ad5f-5198-a669-a7cdfecf1619",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-chouryuu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "新しい概念を理解する必要があります。",
+            "translation": {
+              "vi": "Cần hiểu một khái niệm mới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khái niệm"
+        }
+      },
+      "content_hash": "006353353ac267cbd0f84659642c41f6fc1a420307d394e9bea103f0a59d9b17",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "がいねん",
+        "romanization": "gainen",
+        "text": "概念"
+      },
+      "id": "61acdb9f-d379-5467-b469-00f4624719ff",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-gainen",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "概して、今年の天気はよかったです。",
+            "translation": {
+              "vi": "Nhìn chung, thời tiết năm nay tốt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nói chung, nhìn chung"
+        }
+      },
+      "content_hash": "063b858e518b0e89bf92b3974f9e7b78b2800b9149b0e1dde08467dc3af23fa5",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "reading": "がいして",
+        "romanization": "gaishite",
+        "text": "概して"
+      },
+      "id": "d01078e4-ba2d-52ba-b91d-3232efa9ed9c",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-gaishite",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "大雪が私たちの進路を阻みました。",
+            "translation": {
+              "vi": "Tuyết dày đã cản đường tiến của chúng tôi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cản trở, ngăn chặn"
+        }
+      },
+      "content_hash": "3402db9198665635ac82dde9f261cdd880509b6188c26a2805aa14b1108aa0e6",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "はばむ",
+        "romanization": "habamu",
+        "text": "阻む"
+      },
+      "id": "c83209d5-e066-50a1-a054-b873aca7cfee",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-habamu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の勘違いも甚だしい。",
+            "translation": {
+              "vi": "Sự hiểu lầm của anh ta thật quá mức."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quá mức, nghiêm trọng"
+        }
+      },
+      "content_hash": "572d9f4eb89f194288385d81ceb469c9df1ba0e5bb898cccd9ee7d2e3f9c07d1",
+      "difficulty": 5,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "はなはだしい",
+        "romanization": "hanahadashii",
+        "text": "甚だしい"
+      },
+      "id": "94deb3c3-f2ff-50c3-9acb-605005c1eec1",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-hanahadashii",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "問題の本質を見極める必要があります。",
+            "translation": {
+              "vi": "Cần nhìn thấu bản chất của vấn đề."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bản chất"
+        }
+      },
+      "content_hash": "cf50c5a56233594ac6d1e520ae8e276783d219a1b466265d264d9d10ea16aa14",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ほんしつ",
+        "romanization": "honshitsu",
+        "text": "本質"
+      },
+      "id": "d78b7c6d-7d23-52af-aa31-8e9e1700c655",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-honshitsu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "環境保護の一環として、植樹を行います。",
+            "translation": {
+              "vi": "Trồng cây như một phần của bảo vệ môi trường."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "một phần, một mắt xích (của tổng thể)"
+        }
+      },
+      "content_hash": "080c23ac438b9ca8ac915c9adc3492167e3375d43f4463c31c11c20a6e4a6f79",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "いっかん",
+        "romanization": "ikkan",
+        "text": "一環"
+      },
+      "id": "ffe660d2-6d87-5d86-81e0-517626115845",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-ikkan",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼は至って元気です。",
+            "translation": {
+              "vi": "Anh ấy vẫn cực kỳ khoẻ mạnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cực kỳ, vô cùng (thường đi với phong thái bình thản)"
+        }
+      },
+      "content_hash": "a793425e43d35e5d962e3d802bc4609b0e8051e686c12a110a3ffb1411d270ef",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "reading": "いたって",
+        "romanization": "itatte",
+        "text": "至って"
+      },
+      "id": "518f9714-6a6f-5083-b2c3-8aa55ff2b489",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-itatte",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "依然として、状況は変わりません。",
+            "translation": {
+              "vi": "Tình hình vẫn không thay đổi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vẫn, vẫn như cũ"
+        }
+      },
+      "content_hash": "8497684d11a41ad5caf083cd37003b88c311847209be9a927dd4421955fbfdc5",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "reading": "いぜん",
+        "romanization": "izen",
+        "text": "依然"
+      },
+      "id": "ff4caa4f-948d-5cc3-a255-eaaf602d1d5f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-izen-n1",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "それは次元の違う問題です。",
+            "translation": {
+              "vi": "Đó là vấn đề ở một tầng bậc khác."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tầng bậc, chiều (kích thước, mức độ)"
+        }
+      },
+      "content_hash": "7e8d4115d50bcfdee5d408cc47711256e13e2e01017a5a15f999fe5da68b550c",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "じげん",
+        "romanization": "jigen",
+        "text": "次元"
+      },
+      "id": "364b2416-f7d5-5972-ba11-ad11bd248730",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-jigen",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "労働の実態を調査します。",
+            "translation": {
+              "vi": "Điều tra thực trạng lao động."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thực trạng, thực tế"
+        }
+      },
+      "content_hash": "a53f76c7a1756ffd98fd726852b71092fb6a5c0d58db9f67856970da0d120967",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "じったい",
+        "romanization": "jittai",
+        "text": "実態"
+      },
+      "id": "de28bad1-36da-53b2-9a0b-2ae2a41cc70e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-jittai",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "辛うじて終電に間に合いました。",
+            "translation": {
+              "vi": "Tôi vừa kịp chuyến tàu cuối."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vất vả lắm mới, suýt soát"
+        }
+      },
+      "content_hash": "56a189c6f89d240e4676bf3e86c8e2d632f04f86f590ab84662b299ce1f17f7f",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "reading": "かろうじて",
+        "romanization": "karoujite",
+        "text": "辛うじて"
+      },
+      "id": "6ef66485-e782-5497-b0ab-4b73166970e5",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-karoujite",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "栄養が偏らないようにしましょう。",
+            "translation": {
+              "vi": "Hãy cố gắng không ăn uống thiên lệch dinh dưỡng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thiên lệch, nghiêng về một phía"
+        }
+      },
+      "content_hash": "7180b4c8b43555a3d1ae6cb7599d8496ea5fc32613d52cc5e8f86b949d90078e",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "かたよる",
+        "romanization": "katayoru",
+        "text": "偏る"
+      },
+      "id": "8c84d0b6-d90e-5ddd-a79d-383aff31325a",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-katayoru",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "これを契機に、制度を見直します。",
+            "translation": {
+              "vi": "Nhân dịp này, chúng tôi sẽ xem xét lại chế độ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cơ duyên, dịp khởi đầu (thay đổi)"
+        }
+      },
+      "content_hash": "6c0b5e11c1e81621b78ebfc165f4c325daa89ef32bf2b577677f856803c9c7e8",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "けいき",
+        "romanization": "keiki",
+        "text": "契機"
+      },
+      "id": "83ad0bec-56c3-5fb7-9162-8463037a0e52",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-keiki-n1",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "専門家の見地から意見を述べます。",
+            "translation": {
+              "vi": "Tôi nêu ý kiến từ góc nhìn chuyên gia."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quan điểm, góc nhìn"
+        }
+      },
+      "content_hash": "5ce69d71a0d2c98390e6ebe0ffe1f3f52f59b232140a1bdc5fe524d9dee1b8d5",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "けんち",
+        "romanization": "kenchi",
+        "text": "見地"
+      },
+      "id": "bbca2504-9a2e-5027-9981-c3175aeba6e3",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kenchi",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼女は懸命に働いています。",
+            "translation": {
+              "vi": "Cô ấy làm việc hết sức mình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hết sức, quên mình"
+        }
+      },
+      "content_hash": "c0bf9194e792afd442eff6639d0393c0c434d9c56fc352de2dda9ad69864d75c",
+      "difficulty": 5,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "けんめい",
+        "romanization": "kenmei",
+        "text": "懸命"
+      },
+      "id": "c2b8bbee-186e-5206-9a54-d7928447e91f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kenmei",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "経済の基盤を固めます。",
+            "translation": {
+              "vi": "Củng cố nền tảng kinh tế."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nền tảng, cơ sở"
+        }
+      },
+      "content_hash": "a04a2dfcac2c208e0bde4fb783fd8449168582ea59a5241668f7d89414b62be5",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きばん",
+        "romanization": "kiban",
+        "text": "基盤"
+      },
+      "id": "765e3e36-b7b5-5e95-ad41-2d23e8551e73",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kiban",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "収入と支出の均衡を保ちます。",
+            "translation": {
+              "vi": "Giữ cân bằng giữa thu và chi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cân bằng"
+        }
+      },
+      "content_hash": "c34967760d6d7b559eed8654b788d9ad9213147c16bcb053662dd04580d05dd5",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きんこう",
+        "romanization": "kinkou",
+        "text": "均衡"
+      },
+      "id": "c4bab92d-8a56-5902-a731-2a3ef5536185",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kinkou",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "それは極めて重要な問題です。",
+            "translation": {
+              "vi": "Đó là vấn đề vô cùng quan trọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vô cùng, cực kỳ (văn viết)"
+        }
+      },
+      "content_hash": "4635c4887ac39fe6836c734f9ecf125b17efba226a3baf5a3e73ca5fba467c82",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "reading": "きわめて",
+        "romanization": "kiwamete",
+        "text": "極めて"
+      },
+      "id": "abc228ca-4b6b-5d10-ac74-c6c9794b99c1",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kiwamete",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "景気が回復する兆しが見えてきました。",
+            "translation": {
+              "vi": "Đã xuất hiện dấu hiệu kinh tế hồi phục."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dấu hiệu, điềm báo"
+        }
+      },
+      "content_hash": "3ab859b8cf3b5c58a1548dd725a1be574ce66b24214a660e2c52e8631948d148",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きざし",
+        "romanization": "kizashi",
+        "text": "兆し"
+      },
+      "id": "b60ac74d-2bd1-5c7d-92ef-d997a93252cc",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kizashi",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の計画はことごとく失敗しました。",
+            "translation": {
+              "vi": "Kế hoạch của anh ấy thất bại hết thảy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tất cả, toàn bộ (không ngoại lệ)"
+        }
+      },
+      "content_hash": "61c3f9d2c5af0414e4fa7f78ff5f98e743303d6311af7d7fae79a9c00f04a0fd",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "romanization": "kotogotoku",
+        "text": "ことごとく"
+      },
+      "id": "18af3008-7f26-59a1-9d2b-943480e16f69",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kotogotoku",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この発見は、これまでの常識を覆しました。",
+            "translation": {
+              "vi": "Phát hiện này đã lật ngược nhận thức thông thường trước nay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lật ngược, đảo ngược (kết quả, quan niệm)"
+        }
+      },
+      "content_hash": "d994b956097b123213fdef1a128748d66653e98bb459ca8e58c9c4489215cdc4",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "くつがえす",
+        "romanization": "kutsugaesu",
+        "text": "覆す"
+      },
+      "id": "23d60493-187e-5a78-8e66-ddaf9dd61d5b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-kutsugaesu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "紛らわしい表現は避けてください。",
+            "translation": {
+              "vi": "Xin hãy tránh những cách diễn đạt dễ gây nhầm lẫn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dễ nhầm lẫn"
+        }
+      },
+      "content_hash": "bccb4cb435791612d19525302312df082145cdde30a1d76cdeac00a2a5282acc",
+      "difficulty": 5,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "まぎらわしい",
+        "romanization": "magirawashii",
+        "text": "紛らわしい"
+      },
+      "id": "bc09d55d-f010-569a-8343-0b730d7d7963",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-magirawashii",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "誤解を招く表現は避けましょう。",
+            "translation": {
+              "vi": "Hãy tránh cách diễn đạt gây hiểu lầm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mời; dẫn đến (hậu quả)"
+        }
+      },
+      "content_hash": "91145676899b415cbf8d7f36f75ebe4ffd251d0a3cb0dc949e469c73117db649",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "まねく",
+        "romanization": "maneku",
+        "text": "招く"
+      },
+      "id": "a7d21901-8817-51e1-9959-c6873496ea33",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-maneku",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "幸い、大きな被害は免れました。",
+            "translation": {
+              "vi": "May mắn là chúng tôi đã tránh được thiệt hại lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thoát khỏi, tránh được (tai hoạ)"
+        }
+      },
+      "content_hash": "3b841d3b9096cc45ccfd9631586f8d194f4a82757094aacda0b5e1a4219e037d",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "まぬがれる",
+        "romanization": "manugareru",
+        "text": "免れる"
+      },
+      "id": "681a663a-d80a-57b5-9c11-1a771f4896c3",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-manugareru",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の話は矛盾しています。",
+            "translation": {
+              "vi": "Lời anh ấy nói mâu thuẫn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mâu thuẫn"
+        }
+      },
+      "content_hash": "75e0c4d4f71f42a00ae6d2989d6719cec8c454740fb02ce5f4cab4fb5211e54e",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "むじゅん",
+        "romanization": "mujun",
+        "text": "矛盾"
+      },
+      "id": "944fc64f-c391-55d5-8462-52cb73f1e1e9",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-mujun",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "環境汚染は人類の生存を脅かしています。",
+            "translation": {
+              "vi": "Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đe doạ, uy hiếp"
+        }
+      },
+      "content_hash": "94b748e151cccc1f65306e28124268f474b3025aa843f8e17e7d3b2faf7ea4aa",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "おびやかす",
+        "romanization": "obiyakasu",
+        "text": "脅かす"
+      },
+      "id": "8875dec2-5cf3-5ae2-8551-64ec72880ab8",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-obiyakasu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "注意を怠ると、事故につながります。",
+            "translation": {
+              "vi": "Lơ là sự chú ý sẽ dẫn đến tai nạn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "xao nhãng, lơ là"
+        }
+      },
+      "content_hash": "72309bc10e3131f3b389895f7609a50035a84b0f081f82341c828639a11f9891",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "おこたる",
+        "romanization": "okotaru",
+        "text": "怠る"
+      },
+      "id": "7ee09406-419e-5d65-8679-c26c7afcf734",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-okotaru",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この庭には、独特の趣があります。",
+            "translation": {
+              "vi": "Khu vườn này có nét thanh nhã độc đáo."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nét thanh nhã, ý vị, vẻ đẹp tinh tế"
+        }
+      },
+      "content_hash": "c36d5d8899875046db81ad487e69b55aa75a9e9962a31f97999bc0e232616977",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "おもむき",
+        "romanization": "omomuki",
+        "text": "趣"
+      },
+      "id": "f643dbc9-af85-55ee-adc3-03012998cb44",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-omomuki",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "慎重に検討する必要があります。",
+            "translation": {
+              "vi": "Cần cân nhắc thận trọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thận trọng"
+        }
+      },
+      "content_hash": "d11f61b317e50d0c58342adb3e3ec75af063c9ee8c9717ff7627582b31997dd5",
+      "difficulty": 5,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "しんちょう",
+        "romanization": "shinchou",
+        "text": "慎重"
+      },
+      "id": "5ea88b84-8160-5674-b804-915d32115fff",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-shinchou",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "裁判所は彼の主張を退けました。",
+            "translation": {
+              "vi": "Toà án đã bác bỏ chủ trương của ông ấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bác bỏ, đẩy lui"
+        }
+      },
+      "content_hash": "abb9e170658f8cf7c567bd2926b58af6107855bb560cabb6b03c9941c25cbd2b",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "しりぞける",
+        "romanization": "shirizokeru",
+        "text": "退ける"
+      },
+      "id": "dc34b4a3-c88f-55e9-9729-e90cbe7d756e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-shirizokeru",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "健康を損なう恐れがあります。",
+            "translation": {
+              "vi": "Có nguy cơ làm tổn hại sức khoẻ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "làm tổn hại, làm hỏng"
+        }
+      },
+      "content_hash": "2d76217eda27c53f417feab91d588a1df87628cb11715b03e8522d467543a6f0",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "そこなう",
+        "romanization": "sokonau",
+        "text": "損なう"
+      },
+      "id": "bf179d03-9017-5729-bfa8-4b168d2b1eba",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-sokonau",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この問題には、様々な側面があります。",
+            "translation": {
+              "vi": "Vấn đề này có nhiều khía cạnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khía cạnh, mặt (của vấn đề)"
+        }
+      },
+      "content_hash": "e31dc93bc1cdcb787e645dd141c98951fb6c3f2588813988c7fe3453411fc01f",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "そくめん",
+        "romanization": "sokumen",
+        "text": "側面"
+      },
+      "id": "b2eb3d4b-7ffa-5242-9c92-a0b1d3bb3940",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-sokumen",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "絶える (đứt, chấm dứt) khác 耐える (chịu đựng), 堪える (chịu nổi) cùng đọc たえる."
+        },
+        "examples": [
+          {
+            "target": "連絡が絶えて、十年になります。",
+            "translation": {
+              "vi": "Mất liên lạc đã được mười năm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tuyệt, đứt, chấm dứt"
+        }
+      },
+      "content_hash": "2520e6fc24eb18115010fdc258c0f48c74c20376831d97a1e30fa3e3545cf827",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "たえる",
+        "romanization": "taeru",
+        "text": "絶える"
+      },
+      "id": "034f6809-b5bb-5849-88df-5c9a287e063f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-taeru",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "長年、教育に携わってきました。",
+            "translation": {
+              "vi": "Tôi đã tham gia công tác giáo dục nhiều năm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tham gia, dính líu (công việc)"
+        }
+      },
+      "content_hash": "85c16aecdb6f2f602adb3717284d71331a5f3584cba2745118173522f0307165",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "たずさわる",
+        "romanization": "tazusawaru",
+        "text": "携わる"
+      },
+      "id": "aacb326e-5369-5a1a-a38a-22ae0d74563f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-tazusawaru",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この研究に十年を費やしました。",
+            "translation": {
+              "vi": "Tôi đã tiêu tốn mười năm cho nghiên cứu này."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiêu tốn (thời gian, tiền)"
+        }
+      },
+      "content_hash": "f58aca5a9dd9f2c84aba02806cbeb6ef299711255e095aa012791287f5ece1ee",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "ついやす",
+        "romanization": "tsuiyasu",
+        "text": "費やす"
+      },
+      "id": "0926873c-1969-5b3f-9a78-5b10dd861783",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-tsuiyasu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "政府は国民に注意を促しました。",
+            "translation": {
+              "vi": "Chính phủ đã kêu gọi người dân chú ý."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thúc giục, thúc đẩy"
+        }
+      },
+      "content_hash": "a5c2c998d3e5145c8570ae17af33581b1f496106da89dfaf5975325d15c22010",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "うながす",
+        "romanization": "unagasu",
+        "text": "促す"
+      },
+      "id": "4979b920-46e0-53cb-ad96-15cceac6d1e1",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-unagasu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "新しい制度の枠組みを作ります。",
+            "translation": {
+              "vi": "Xây dựng khuôn khổ cho chế độ mới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khung, khuôn khổ"
+        }
+      },
+      "content_hash": "fec2065d0a613fa4003bc174db950f35ad2f8d79ae13389202cf76c50cc06c56",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "わくぐみ",
+        "romanization": "wakugumi",
+        "text": "枠組み"
+      },
+      "id": "7657a3f1-3292-5339-80c4-07c72f09b0ce",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-wakugumi",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "人間関係が煩わしくなりました。",
+            "translation": {
+              "vi": "Quan hệ giữa người với người trở nên phiền phức."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phiền hà, rắc rối"
+        }
+      },
+      "content_hash": "7e2eb2eb07a8bcd085b793202293cb4ad881696f58f328659c62048c91ed59d3",
+      "difficulty": 5,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "わずらわしい",
+        "romanization": "wazurawashii",
+        "text": "煩わしい"
+      },
+      "id": "07d0f678-368b-5f45-b658-317450d69629",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-wazurawashii",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この計画には、改善の余地があります。",
+            "translation": {
+              "vi": "Kế hoạch này còn dư địa để cải thiện."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chỗ trống, dư địa, khả năng"
+        }
+      },
+      "content_hash": "d07a2736ce1c79b04642429d8c53da04bbd2ebd498359550b1f4c1d1e6279a39",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "よち",
+        "romanization": "yochi",
+        "text": "余地"
+      },
+      "id": "fd45a05c-316a-5199-ac05-b02ec63b2994",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-yochi",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "失敗の要因を分析します。",
+            "translation": {
+              "vi": "Phân tích nhân tố dẫn đến thất bại."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhân tố, yếu tố chính"
+        }
+      },
+      "content_hash": "ebc5406dacbfa0d360d6904473472f44aaa33789da99c8cf6704bf4186cb6848",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "よういん",
+        "romanization": "youin",
+        "text": "要因"
+      },
+      "id": "e2a85799-d09d-5609-9d23-5f0bfce7edf5",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-youin",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "判断を専門家に委ねます。",
+            "translation": {
+              "vi": "Tôi giao việc phán đoán cho chuyên gia."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giao phó, phó mặc"
+        }
+      },
+      "content_hash": "ca49144a0d74537d6ce76a49c861f409bbb57f785eb1b19c0ca58bd8fc14228b",
+      "difficulty": 5,
+      "front": {
+        "pos": "động từ",
+        "reading": "ゆだねる",
+        "romanization": "yudaneru",
+        "text": "委ねる"
+      },
+      "id": "9a44a930-168b-538f-816a-fb42a7d9af1d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u10-yudaneru",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "Thường dùng trong cụm 不屈の精神 / 不屈の闘志; hiếm khi đứng một mình làm vị ngữ."
         },
@@ -787244,6 +802207,958 @@ select content_private.import_bundle($bundle${
     {
       "audio_path": null,
       "back": {
+        "examples": [
+          {
+            "target": "暴力は許されません。",
+            "translation": {
+              "vi": "Bạo lực là không thể chấp nhận."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bạo lực"
+        }
+      },
+      "content_hash": "d1424a217f18a4e4ddb42a87d3baab5f39e0a494626e1bedb30d7aea04edcc10",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぼうりょく",
+        "romanization": "bouryoku",
+        "text": "暴力"
+      },
+      "id": "43ce7e08-9c04-596a-80fd-5a5c19c50939",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-bouryoku",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "意見の不一致が問題になりました。",
+            "translation": {
+              "vi": "Sự bất đồng ý kiến đã trở thành vấn đề."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "không khớp, bất đồng"
+        }
+      },
+      "content_hash": "71b08f32dcb4b0a4ffabbea671485b8dc98a141377ef7ccfc0c0b25253b0919b",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ふいっち",
+        "romanization": "fuicchi",
+        "text": "不一致"
+      },
+      "id": "728a29a0-7c2f-5e71-b6c9-4350fab03909",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-fuitchi",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "不正が見つかりました。",
+            "translation": {
+              "vi": "Hành vi gian lận đã bị phát hiện."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "gian lận, bất chính"
+        }
+      },
+      "content_hash": "b56eada300d7f10e09614123b6efc74ee4d863de82d78a9f0ea9b6a03fae755a",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ふせい",
+        "romanization": "fusei",
+        "text": "不正"
+      },
+      "id": "a8925387-ec4c-59e0-9633-6d2cbfb04bcd",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-fusei",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "計画の概要を説明します。",
+            "translation": {
+              "vi": "Tôi sẽ giải thích tóm lược kế hoạch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khái quát, tóm lược"
+        }
+      },
+      "content_hash": "d523d3b20fddc05dc22fc49ba6426e988e78b1832383fa20a6da7f22470508e8",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "がいよう",
+        "romanization": "gaiyou",
+        "text": "概要"
+      },
+      "id": "3203c150-21ce-5c0d-892a-c02d77034630",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-gaiyou",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "相手が誰であろうと、規則は規則です。",
+            "translation": {
+              "vi": "Dù đối phương là ai thì quy tắc vẫn là quy tắc."
+            }
+          },
+          {
+            "target": "どんなに困難であろうと、最後まで続ける。",
+            "translation": {
+              "vi": "Dù khó khăn đến đâu cũng tiếp tục đến cùng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Dù là ... đi nữa; bất kể ... (không phân biệt, không ngoại lệ). Văn viết trang trọng."
+        }
+      },
+      "content_hash": "378edd8c8a509d5bf02ea264566fe5ad59e0b2d09436b6c28d61f28fe6d77063",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "de arou to",
+        "text": "N / V + であろうと / であれ (～であろうと、～)"
+      },
+      "id": "0352a7b7-40ca-533e-9909-8bd10b925ebb",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-de-arou-to",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "子どもではあるまいし、自分のことは自分でしなさい。",
+            "translation": {
+              "vi": "Có phải trẻ con đâu, việc của mình hãy tự làm đi."
+            }
+          },
+          {
+            "target": "神様ではあるまいし、誰にも未来は分からない。",
+            "translation": {
+              "vi": "Đâu phải thần thánh, chẳng ai biết được tương lai."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Không phải là ... nên đừng ...; đâu phải là ... (mỉa mai, khuyên can). Thường theo sau là lời trách."
+        }
+      },
+      "content_hash": "529251d79370bf6e85111e3a516eb7ec848d5e2505f2772630b89673fc8024e2",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "de wa arumai shi",
+        "text": "N / V + ではあるまいし"
+      },
+      "id": "d7735632-26ed-5289-8e86-3a95694fe236",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-dewa-arumai-shi",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "私ごときには、そんな大役はできません。",
+            "translation": {
+              "vi": "Loại như tôi thì không làm nổi vai trò lớn như vậy."
+            }
+          },
+          {
+            "target": "時は矢のごとく過ぎていく。",
+            "translation": {
+              "vi": "Thời gian trôi nhanh như tên bắn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Như là, giống như (văn viết, cổ). N ごとき: loại như N (coi thường). ～のごとく: giống như."
+        }
+      },
+      "content_hash": "787b8df70ec1a31678442e8fa3a8497a2934973dcb36a00e06d9836ee48e1e34",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N gotoki / gotoku",
+        "text": "N + ごとき / ごとく / のごとし"
+      },
+      "id": "80678d7f-b245-5d89-ab64-2c1061960a22",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-gotoki",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "お礼かたがた、ご挨拶に伺いました。",
+            "translation": {
+              "vi": "Tôi đến chào và nhân tiện cũng để cảm ơn."
+            }
+          },
+          {
+            "target": "お見舞いかたがた、退院のお祝いを持っていきます。",
+            "translation": {
+              "vi": "Nhân dịp thăm bệnh, tôi mang theo quà mừng xuất viện."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nhân tiện ..., kết hợp ... (nhân dịp làm việc này, làm luôn việc kia; trang trọng, thường trong thư). お礼かたがた, 挨拶かたがた."
+        }
+      },
+      "content_hash": "360963437b3890dddacca710c69a244db641bf978d7907a122bc61d7bc490731",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N katagata",
+        "text": "N + かたがた"
+      },
+      "id": "1bcce33d-a116-501b-8762-e0922802c6c2",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-katagata",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "毎日とは言わないまでも、週に一度は連絡してください。",
+            "translation": {
+              "vi": "Dù không nói là mỗi ngày, ít nhất mỗi tuần một lần hãy liên lạc."
+            }
+          },
+          {
+            "target": "完璧とまではいかないまでも、合格点は取れそうです。",
+            "translation": {
+              "vi": "Dù chưa hoàn hảo, có vẻ tôi sẽ đạt điểm đỗ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Dù không ... thì cũng ...; nếu không đến mức ... thì ít nhất ... Vế sau nêu yêu cầu thấp hơn."
+        }
+      },
+      "content_hash": "f750c7132fd1a735604effec64fb9ffd990fb1f799d4bb3cd93a8edadb2954a8",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "V-nai made mo",
+        "text": "V ない + までも"
+      },
+      "id": "0ba772e1-8c86-535d-b172-437ccef555a9",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-nai-made-mo",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "子どもならいざ知らず、大人がそんなことをするとは。",
+            "translation": {
+              "vi": "Nếu là trẻ con thì còn được, chứ người lớn mà làm thế."
+            }
+          },
+          {
+            "target": "新人ならいざ知らず、ベテランがこんなミスをするなんて。",
+            "translation": {
+              "vi": "Người mới thì thôi, chứ người dày dạn kinh nghiệm mà lại mắc lỗi thế này."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nếu là ... thì còn được (không nói làm gì), nhưng (ở trường hợp này thì không thể chấp nhận). Dùng phê phán."
+        }
+      },
+      "content_hash": "a88033332ef160cad5604b72133f19eb8b07aecf94fbb5477b0fdf5fe49579b0",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "nara iza shirazu",
+        "text": "N / V + ならいざ知らず"
+      },
+      "id": "1cda7ace-eccb-597f-bdef-094c1110dcf7",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-naraba-izashirazu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "成功は努力の結果にほかなりません。",
+            "translation": {
+              "vi": "Thành công chính là kết quả của nỗ lực, không gì khác."
+            }
+          },
+          {
+            "target": "それは、彼への愛情にほかならない。",
+            "translation": {
+              "vi": "Đó chính là tình yêu dành cho anh ấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chẳng khác gì, chính là, không gì khác hơn (khẳng định mạnh về nguyên nhân, bản chất)."
+        }
+      },
+      "content_hash": "ed0fb6b782d672d7e989add26e98da5be943a2c681a6a6b17470535f676929a7",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "ni hoka naranai",
+        "text": "N / V こと + にほかならない"
+      },
+      "id": "2beb6a23-4cf9-5653-aa53-24344bd32456",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-ni-hokanaranai",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この商品は、細部に至るまでこだわって作られています。",
+            "translation": {
+              "vi": "Sản phẩm này được làm tỉ mỉ đến từng chi tiết nhỏ nhất."
+            }
+          },
+          {
+            "target": "若者からお年寄りに至るまで、幅広い人に愛されています。",
+            "translation": {
+              "vi": "Từ người trẻ cho tới người già, đều được nhiều người yêu thích."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đến cả, tới tận (từ ... đến cả ...: nêu cả những mục nhỏ nhất, xa nhất). 細部に至るまで, 子供から大人に至るまで."
+        }
+      },
+      "content_hash": "afa3f5b0b8394474d2e17a8316d0c81d3ae4cc50b4c3f218f5cf1e4d7a5bf840",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N ni itaru made",
+        "text": "N に至るまで"
+      },
+      "id": "f4121679-c0df-5c7a-8cc0-02d4217364f4",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-ni-itaru-made",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "事故が起きるに至って、やっと対策が取られました。",
+            "translation": {
+              "vi": "Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp."
+            }
+          },
+          {
+            "target": "弟に至っては、一度も本を読んだことがありません。",
+            "translation": {
+              "vi": "Còn em trai tôi thì chưa từng đọc sách lần nào."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Mãi đến khi (đến mức) ... mới ...; \"đến cả (ví dụ cực đoan) thì ...\". ～に至って chỉ mốc muộn; ～に至っては nêu trường hợp cực đoan nhất."
+        }
+      },
+      "content_hash": "594fd837386a370a5f7d5f838e6d0bd7d055a473eaeb3115dbe5a5c511d9f817",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "ni itatte (wa)",
+        "text": "V辞書形 / N + に至って(は)"
+      },
+      "id": "36da575e-143d-52c6-951a-5175f63c3e36",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-ni-itatte",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "結婚してからというもの、夜遊びをしなくなりました。",
+            "translation": {
+              "vi": "Kể từ khi kết hôn tôi không còn đi chơi đêm nữa."
+            }
+          },
+          {
+            "target": "日本に来てからというもの、毎日が新鮮です。",
+            "translation": {
+              "vi": "Từ khi đến Nhật, ngày nào cũng mới mẻ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Kể từ khi ... thì (suốt thời gian dài sau đó cứ ...). Nhấn thay đổi lớn sau một sự kiện."
+        }
+      },
+      "content_hash": "8ced4104839d7d505a1962086e2bbff7a63c05bfcdc3861b92851e968e082da8",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "te kara to iu mono",
+        "text": "V て + からというもの"
+      },
+      "id": "eacf2232-a495-5abe-a5e5-dd43f9c2e251",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-te-kara-to-iu-mono",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の努力は、もっと評価されてしかるべきだ。",
+            "translation": {
+              "vi": "Nỗ lực của anh ấy đáng lẽ phải được đánh giá cao hơn."
+            }
+          },
+          {
+            "target": "責任者から説明があってしかるべきだ。",
+            "translation": {
+              "vi": "Đáng lẽ người phụ trách phải đưa ra lời giải thích."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đáng lẽ phải ..., xứng đáng được ... (đương nhiên nên như vậy). 評価されてしかるべきだ, 謝罪があってしかるべきだ."
+        }
+      },
+      "content_hash": "5ec8ed55ba71739e3f45795356f2f28fa7ee091e020078156d272a00aa7a17b5",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "te shikarubeki",
+        "text": "V て / N + しかるべき(だ)"
+      },
+      "id": "0d51c36a-e9cf-532e-b6cc-768a81c0631f",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-te-shikarubeki",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "みんなの前で約束した手前、やめるわけにはいきません。",
+            "translation": {
+              "vi": "Vì đã hứa trước mặt mọi người nên tôi không thể bỏ cuộc."
+            }
+          },
+          {
+            "target": "先輩の手前、断れませんでした。",
+            "translation": {
+              "vi": "Vì nể mặt đàn anh nên tôi không thể từ chối."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Vì đã ... nên (không thể không giữ thể diện, trách nhiệm trước người khác). 約束した手前, 周りの目の手前."
+        }
+      },
+      "content_hash": "96c44432c935c4b024ed869fde3d0e4479323a776c5806f5a82d0bd1cfeb0ca6",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "temae",
+        "text": "V辞書形 / V た / N の + 手前"
+      },
+      "id": "118e76f3-0d04-5d59-8512-c35fca2a3a21",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-temae",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "教師ともあろう者が、生徒に暴力を振るうとは。",
+            "translation": {
+              "vi": "Một người làm giáo viên mà lại đánh học sinh."
+            }
+          },
+          {
+            "target": "大企業の社長ともあろう人が、こんな不正をするとは信じられない。",
+            "translation": {
+              "vi": "Một giám đốc tập đoàn lớn mà lại làm gian lận thế này thì thật khó tin."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Một người ở vị trí / có danh tiếng như ... mà (lại làm điều đáng trách). 教師ともあろう者が, 社長ともあろう人が."
+        }
+      },
+      "content_hash": "58ac509388ec4ac52eb9df269345d0c9f136954476579747f48c9fc011072275",
+      "difficulty": 5,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "to mo arou",
+        "text": "N + ともあろう + N"
+      },
+      "id": "0e8d1681-291e-5f2f-8368-87923c92cf8f",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n1-u9-gram-to-mo-arou",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の仕事は高く評価されています。",
+            "translation": {
+              "vi": "Công việc của anh ấy được đánh giá cao."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đánh giá"
+        }
+      },
+      "content_hash": "85db85e086888df8b3b1bc6c43347f98cb88870490fd762ad3097aac6b5b81cd",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ひょうか",
+        "romanization": "hyouka",
+        "text": "評価"
+      },
+      "id": "23042e39-590f-5747-a54a-69ff3b5fd616",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-hyouka",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "長年の努力が結実しました。",
+            "translation": {
+              "vi": "Nỗ lực nhiều năm đã đơm hoa kết trái."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đơm hoa kết trái, thành quả"
+        }
+      },
+      "content_hash": "b58ebc0ba6c9ffc1ff07af3fb3afbd0051aa7c993211145f03478d8fb3b3f359",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "けつじつ",
+        "romanization": "ketsujitsu",
+        "text": "結実"
+      },
+      "id": "2c04fce7-e3ef-510e-a16b-555bc4a07b1a",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-kekka-n1",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "こつこつ貯金しています。",
+            "translation": {
+              "vi": "Tôi đều đặn tiết kiệm từng chút."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đều đặn, cần mẫn (làm từng chút)"
+        }
+      },
+      "content_hash": "7f7de4cfa11b9f5a6c3f468de1960918c8c694a694fc013a3007b62f0a349b01",
+      "difficulty": 5,
+      "front": {
+        "pos": "phó từ",
+        "romanization": "kotsukotsu",
+        "text": "こつこつ"
+      },
+      "id": "e5aaed23-a58b-5016-99e9-a1b68082e11b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-kotsukotsu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "それは彼の妄想にすぎません。",
+            "translation": {
+              "vi": "Đó chẳng qua chỉ là ảo tưởng của anh ta."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ảo tưởng, tưởng tượng viển vông"
+        }
+      },
+      "content_hash": "588cf33c942298ebf1bac35b2e091eea1bf3d1e1811c8695c3d60d043d3aa7c1",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "もうそう",
+        "romanization": "mousou",
+        "text": "妄想"
+      },
+      "id": "ec5de667-4660-5285-9ca8-31ae955903ac",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-mousou",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "細部まで丁寧に仕上げました。",
+            "translation": {
+              "vi": "Tôi hoàn thiện cẩn thận đến từng chi tiết."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chi tiết nhỏ, từng phần nhỏ"
+        }
+      },
+      "content_hash": "22908088c0460204f872e5e7c56dbf29ed7361d2becf91353309282c386c0dc3",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "さいぶ",
+        "romanization": "saibu",
+        "text": "細部"
+      },
+      "id": "688635fa-b49a-58eb-bb4d-1f075f7b7cb1",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-saibu",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "社長は記者会見で謝罪しました。",
+            "translation": {
+              "vi": "Giám đốc đã xin lỗi trong buổi họp báo."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "xin lỗi (chính thức), tạ lỗi"
+        }
+      },
+      "content_hash": "cf7bfc7ef0b4adf3479ec220ca5ac064b73f77727fc3166ac1088910c220d88e",
+      "difficulty": 5,
+      "front": {
+        "pos": "danh từ",
+        "reading": "しゃざい",
+        "romanization": "shazai",
+        "text": "謝罪"
+      },
+      "id": "6d96fc09-118a-588c-a44e-bf1263ca9d01",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-shazai",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "政府は早急に対策を講じるべきです。",
+            "translation": {
+              "vi": "Chính phủ nên sớm đưa ra biện pháp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đưa ra biện pháp đối phó"
+        }
+      },
+      "content_hash": "cae578f4aac280fa7a9da7f385f532fc3a5ccad84577045af1d0aed575de50b0",
+      "difficulty": 5,
+      "front": {
+        "pos": "cụm từ",
+        "reading": "たいさくをこうじる",
+        "romanization": "taisaku o kouziru",
+        "text": "対策を講じる"
+      },
+      "id": "65d06904-22df-58f7-9ca5-95d44afbd1ec",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n1-u9-taisaku-n1",
+      "language_code": "ja",
+      "level_code": "n1",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
         "confusion": {
           "vi": "悪化 trái nghĩa 回復 hoặc 改善 (かいぜん - cải thiện). 悪化する là tự động từ - 病気が悪化する, không nói 病気を悪化する (muốn nói \"làm cho xấu đi\" dùng 悪化させる)."
         },
@@ -788231,6 +804146,3914 @@ select content_private.import_bundle($bundle${
       "level_code": "n2",
       "reviewed_at": "2026-10-16T12:00:00+07:00",
       "reviewed_by": "Claude Opus 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "会社は赤字が続いています。",
+            "translation": {
+              "vi": "Công ty liên tục thua lỗ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thâm hụt, lỗ"
+        }
+      },
+      "content_hash": "cfa130b2c34c7636eeaaeda73f75dc230ae1d8008b48a3041213e65f8de3dfb8",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "あかじ",
+        "romanization": "akaji",
+        "text": "赤字"
+      },
+      "id": "b4188ad8-9ad2-5211-8dc8-2e47b00852c1",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-akaji",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "日本は貿易で栄えました。",
+            "translation": {
+              "vi": "Nhật Bản đã phát triển nhờ ngoại thương."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thương mại quốc tế, ngoại thương"
+        }
+      },
+      "content_hash": "92b26c91cd6e619f382804f6a7292124fadd034c7c2650b78f2c8d84e2f182a2",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぼうえき",
+        "romanization": "boueki",
+        "text": "貿易"
+      },
+      "id": "50475aa4-72b2-5058-985c-504760f803ff",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-boueki",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "データを分析します。",
+            "translation": {
+              "vi": "Tôi phân tích dữ liệu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phân tích"
+        }
+      },
+      "content_hash": "211a235775fb325cd428137e18ac778a4f2dbe2ab1674a3226a50075e7537b74",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぶんせき",
+        "romanization": "bunseki",
+        "text": "分析"
+      },
+      "id": "fa78b85a-4d2a-5f06-bb81-d1151794038f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-bunseki",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "将来が不安です。",
+            "translation": {
+              "vi": "Tôi bất an về tương lai."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bất an, lo âu"
+        }
+      },
+      "content_hash": "a90124d501f008036efefedf95396f824b445ab96c501d23082dc5ebf8e7ca50",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ / tính từ な",
+        "reading": "ふあん",
+        "romanization": "fuan",
+        "text": "不安"
+      },
+      "id": "10a14e57-776a-5c28-9208-8be2675a6baf",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-fuan",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "福祉の制度が充実しています。",
+            "translation": {
+              "vi": "Chế độ phúc lợi rất đầy đủ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phúc lợi xã hội"
+        }
+      },
+      "content_hash": "c61967175b24ddd64d88d1730ea8b288012c3811b9b021fac912cd6feb4d1d0c",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ふくし",
+        "romanization": "fukushi",
+        "text": "福祉"
+      },
+      "id": "28efd413-ffaa-5372-a4d3-2d2068817fc3",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-fukushi",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "給料に不満があります。",
+            "translation": {
+              "vi": "Tôi bất mãn về lương."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bất mãn, không hài lòng"
+        }
+      },
+      "content_hash": "8189252ee3d1c1e357707fb980ae65cefb9bb56d1bd8950636ed898f1b17b10a",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ / tính từ な",
+        "reading": "ふまん",
+        "romanization": "fuman",
+        "text": "不満"
+      },
+      "id": "a3be56da-9cd5-57a1-a845-14b30d2e6026",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-fuman",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "今年の業績は去年より上がりました。",
+            "translation": {
+              "vi": "Kết quả kinh doanh năm nay cao hơn năm ngoái."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thành tích kinh doanh, kết quả hoạt động"
+        }
+      },
+      "content_hash": "ead035854416a5b0597e89537fceb33d95da6efdb413be91bd5c07ffaae00f93",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぎょうせき",
+        "romanization": "gyouseki",
+        "text": "業績"
+      },
+      "id": "bf4a144a-bc22-55ca-9aac-e5cfe63019ff",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-gyouseki",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "廃棄物を減らす努力をしています。",
+            "translation": {
+              "vi": "Chúng tôi nỗ lực giảm chất thải."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chất thải, rác thải"
+        }
+      },
+      "content_hash": "b3cfedb49117d397913ce980c80677de0fb73b7a6c37a572b718f975774acc37",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "はいきぶつ",
+        "romanization": "haikibutsu",
+        "text": "廃棄物"
+      },
+      "id": "0c48bb3b-038e-5ef2-aa99-c8e24951d3e9",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-haikibutsu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "太陽光で発電します。",
+            "translation": {
+              "vi": "Phát điện bằng ánh sáng mặt trời."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phát điện"
+        }
+      },
+      "content_hash": "288df7802257ec25692d6c445d84e8d128d0e44e0872d0b721ae6a165eb95185",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "はつでん",
+        "romanization": "hatsuden",
+        "text": "発電"
+      },
+      "id": "79874362-aec7-5687-a2f6-c752b08ea4ae",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-hatsuden",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "偏見を持たずに人を見ましょう。",
+            "translation": {
+              "vi": "Hãy nhìn con người mà không mang định kiến."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "định kiến"
+        }
+      },
+      "content_hash": "36b4a596b535b96021466a047066f20681330129a8f481e4ec96ec41a6b72735",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "へんけん",
+        "romanization": "henken",
+        "text": "偏見"
+      },
+      "id": "e20b80b9-693b-542a-9154-8389ac618cfe",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-henken",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "健康保険に入っています。",
+            "translation": {
+              "vi": "Tôi tham gia bảo hiểm y tế."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bảo hiểm"
+        }
+      },
+      "content_hash": "6f7e7360ee4211e9d1964a964430f07b05abbd3976f0ac1ff12cc7f6cfa30362",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ほけん",
+        "romanization": "hoken",
+        "text": "保険"
+      },
+      "id": "51652c98-b3f3-56b6-ae5d-1473bc70cdb9",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-hoken",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "遺伝子の研究が進んでいます。",
+            "translation": {
+              "vi": "Nghiên cứu về gen đang tiến triển."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "gen"
+        }
+      },
+      "content_hash": "f4fe8352ceb293f7b42cc69ab78830751604d7d91e5277bab4f923799347c978",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "いでんし",
+        "romanization": "idenshi",
+        "text": "遺伝子"
+      },
+      "id": "d44ba388-8acb-5032-95b6-32fa035d622b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-idenshi",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "医療費が高くなっています。",
+            "translation": {
+              "vi": "Chi phí y tế đang tăng cao."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "y tế, chăm sóc y tế"
+        }
+      },
+      "content_hash": "bd9883dd3677dc8063212805026c8117a81748e0cb4aee8def59e6fa0814dcb1",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "いりょう",
+        "romanization": "iryou",
+        "text": "医療"
+      },
+      "id": "7ca0e26f-3fb6-51e9-b250-48f99ce229a2",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-iryou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "人権を守ることは大切です。",
+            "translation": {
+              "vi": "Bảo vệ nhân quyền là điều quan trọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhân quyền"
+        }
+      },
+      "content_hash": "568e295fe5b759c3cbe1e11c7545440a20340661f7e6e394e137fc3c92a0ba60",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "じんけん",
+        "romanization": "jinken",
+        "text": "人権"
+      },
+      "id": "8c69debe-ca4a-5fff-8b00-15ccba4ab298",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-jinken",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この商品は需要が高いです。",
+            "translation": {
+              "vi": "Mặt hàng này có nhu cầu cao."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhu cầu (thị trường)"
+        }
+      },
+      "content_hash": "396d2b76f1cadb6d295e92035283e1f14983385a47a42c9fbd79ff7ac9a82ffc",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "じゅよう",
+        "romanization": "juyou",
+        "text": "需要"
+      },
+      "id": "c0eb2a09-4b09-5ee0-a57d-f4b79f28347b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-juyou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "株を買って、利益を出しました。",
+            "translation": {
+              "vi": "Tôi mua cổ phiếu và có lãi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cổ phiếu"
+        }
+      },
+      "content_hash": "3e9fe71e6c036d400c3c1ca52f4f6e56b359e9d6eb8d68090e8b446792556033",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かぶ",
+        "romanization": "kabu",
+        "text": "株"
+      },
+      "id": "728b27d4-9abc-5e18-a630-5a05b2100d1b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kabu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "人によって価値観が違います。",
+            "translation": {
+              "vi": "Quan niệm sống khác nhau theo từng người."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giá trị quan, quan niệm sống"
+        }
+      },
+      "content_hash": "71ee6bc9e84b42d6264fde7ced9b72dc60a692ce4a2145513503f2815f3f5d49",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かちかん",
+        "romanization": "kachikan",
+        "text": "価値観"
+      },
+      "id": "32e4fb15-bf4b-50a8-a6d8-f67d4d08ab18",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kachikan",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "母の介護のために、仕事を辞めました。",
+            "translation": {
+              "vi": "Tôi nghỉ việc để chăm sóc mẹ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chăm sóc người già, người bệnh"
+        }
+      },
+      "content_hash": "e18f1dc03562c0d21a17acb6499c1825e15b6b53a74adbd5731c1345c54f38f6",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かいご",
+        "romanization": "kaigo",
+        "text": "介護"
+      },
+      "id": "b397e6ee-771e-524d-814b-47ea5a437ac5",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kaigo",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "制度の改革が必要です。",
+            "translation": {
+              "vi": "Cần cải cách chế độ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cải cách"
+        }
+      },
+      "content_hash": "5f5ab311a7e3fbe3609d5b1e0b03a7060a07e2764c14409440883555e27134ea",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かいかく",
+        "romanization": "kaikaku",
+        "text": "改革"
+      },
+      "id": "b5455649-aae9-5624-8c7e-36cf41052aee",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kaikaku",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "所得の格差が広がっています。",
+            "translation": {
+              "vi": "Chênh lệch thu nhập đang nới rộng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chênh lệch, khoảng cách (giàu nghèo)"
+        }
+      },
+      "content_hash": "af3dca66c35d8101f2136bbe208b03fc97a486b1d23ed5407e7109c4d1a19581",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かくさ",
+        "romanization": "kakusa",
+        "text": "格差"
+      },
+      "id": "c000d098-64d4-543f-a262-7ecb2323d9e0",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kakusa",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "仮説を立てて、実験します。",
+            "translation": {
+              "vi": "Tôi đặt giả thuyết rồi làm thí nghiệm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giả thuyết"
+        }
+      },
+      "content_hash": "d61fce5e9b835fdbe77d86d5cf1bc7ebb30495cf8c07230c9a22c44db58cb337",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かせつ",
+        "romanization": "kasetsu",
+        "text": "仮説"
+      },
+      "id": "0908b3f4-9459-5c4d-a4dc-93fc7f47f703",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kasetsu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "心の中に葛藤があります。",
+            "translation": {
+              "vi": "Trong lòng tôi có sự giằng xé."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "mâu thuẫn nội tâm, giằng xé"
+        }
+      },
+      "content_hash": "a3d3c5e7545f4d219c0d4efbe96325953b85472fa0cb8747c2dcabbeacf29d6a",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かっとう",
+        "romanization": "kattou",
+        "text": "葛藤"
+      },
+      "id": "a8324740-4863-5d23-95e5-f8383d92fe40",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kattou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "仮説を検証する必要があります。",
+            "translation": {
+              "vi": "Cần kiểm chứng giả thuyết."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "kiểm chứng"
+        }
+      },
+      "content_hash": "781cec07bb1fd518643a3b3ebf63dc48e23b9ba44e5deb5bc9ffd352190bad85",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "けんしょう",
+        "romanization": "kenshou",
+        "text": "検証"
+      },
+      "id": "d6c46efb-07a3-5e8f-9a7f-ae373a20df5e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kenshou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "面接で緊張しました。",
+            "translation": {
+              "vi": "Tôi căng thẳng ở buổi phỏng vấn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "căng thẳng, hồi hộp"
+        }
+      },
+      "content_hash": "a1bea030afa0fa01bcece3a52a73f05b474b88aaee2204deadc936f0e1ea10be",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きんちょう",
+        "romanization": "kinchou",
+        "text": "緊張"
+      },
+      "id": "5a4891ae-8c31-5f32-8190-b8842d7ea7ab",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kinchou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "政府は規制を強めました。",
+            "translation": {
+              "vi": "Chính phủ đã siết chặt quy định."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quy định hạn chế, kiểm soát"
+        }
+      },
+      "content_hash": "b2c84771412732ab890764dd2790f77968bb2ba0c69e82245eab324abafbd796",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きせい",
+        "romanization": "kisei",
+        "text": "規制"
+      },
+      "id": "b857f0b2-382c-536c-87cc-219ca457a1a5",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kisei",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "一人暮らしで、孤独を感じます。",
+            "translation": {
+              "vi": "Sống một mình, tôi cảm thấy cô đơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cô đơn, đơn độc"
+        }
+      },
+      "content_hash": "cbe921901341c92293df2bfbdbfdae976d09a5b0afdfe2b3d28deee5f3dcf575",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ / tính từ な",
+        "reading": "こどく",
+        "romanization": "kodoku",
+        "text": "孤独"
+      },
+      "id": "a045e21c-f98d-542d-b49f-5dfca789389a",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kodoku",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "高齢者が増えています。",
+            "translation": {
+              "vi": "Số người cao tuổi đang tăng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "người cao tuổi"
+        }
+      },
+      "content_hash": "79d6871fa5576e5bbff13cd4e03b70caecdb296e9df7cf932a284585a0428c0f",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "こうれいしゃ",
+        "romanization": "koureisha",
+        "text": "高齢者"
+      },
+      "id": "965d1ada-daf0-5f0f-abf6-51eefa8a95bb",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-koureisha",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "価格について交渉しています。",
+            "translation": {
+              "vi": "Chúng tôi đang đàm phán về giá cả."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đàm phán"
+        }
+      },
+      "content_hash": "9558635d4c9337bbd09cba97fb2d63a3b6a5610f39d04e4139e27eb954d2e45b",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "こうしょう",
+        "romanization": "koushou",
+        "text": "交渉"
+      },
+      "id": "f10aed19-7f08-54dc-8080-abe57e2b105b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-koushou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "今年は黒字になりました。",
+            "translation": {
+              "vi": "Năm nay công ty đã có lãi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "có lãi, thặng dư"
+        }
+      },
+      "content_hash": "ecc70280c5aeab6bc21d86873e03f15d3c60829d0c4ca8c0beaa855e00104af2",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "くろじ",
+        "romanization": "kuroji",
+        "text": "黒字"
+      },
+      "id": "23fb3318-969c-5f06-9aa1-9a7fd338595d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kuroji",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の話に共感しました。",
+            "translation": {
+              "vi": "Tôi đã đồng cảm với câu chuyện của anh ấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đồng cảm"
+        }
+      },
+      "content_hash": "3a8a7fb59bc4a27c50d81a89b9e6a6d04e5c346d66fe05e40be8be62f40f22a6",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きょうかん",
+        "romanization": "kyoukan",
+        "text": "共感"
+      },
+      "id": "a85363bb-3990-5286-b27a-0709447a426e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kyoukan",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "需要に供給が追いつきません。",
+            "translation": {
+              "vi": "Nguồn cung không theo kịp nhu cầu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cung cấp, nguồn cung"
+        }
+      },
+      "content_hash": "09358a2d91fc277396758c0c8c103550217b3aebc5aa9b43350c6b9713c576f4",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きょうきゅう",
+        "romanization": "kyoukyuu",
+        "text": "供給"
+      },
+      "id": "e0a153f4-4a20-55e5-b092-0e09b15c23b5",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kyoukyuu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "競争が激しくなっています。",
+            "translation": {
+              "vi": "Cạnh tranh ngày càng gay gắt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cạnh tranh"
+        }
+      },
+      "content_hash": "23b8f027de2bb3b7bed27ea248c54ac005413f48174db7b25060006c4ee591a9",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きょうそう",
+        "romanization": "kyousou",
+        "text": "競争"
+      },
+      "id": "494a76e6-61a0-5d09-9950-0eda84679e37",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-kyousou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "結果に満足しています。",
+            "translation": {
+              "vi": "Tôi hài lòng với kết quả."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hài lòng, thoả mãn"
+        }
+      },
+      "content_hash": "6baccbb8139b1a832f345f3d96d48e5ac5d61477773a071307bc76a8213850bc",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "まんぞく",
+        "romanization": "manzoku",
+        "text": "満足"
+      },
+      "id": "0ee744ef-63b2-57e4-8f09-6f5b446c30d9",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-manzoku",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "大気汚染が深刻です。",
+            "translation": {
+              "vi": "Ô nhiễm không khí rất nghiêm trọng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ô nhiễm"
+        }
+      },
+      "content_hash": "487d584c08fb95713304ae3b17d12ec298ff04065e0e98f4a4225f8e87dab22c",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "おせん",
+        "romanization": "osen",
+        "text": "汚染"
+      },
+      "id": "41c00daa-4f9b-5d3f-8a1e-5bdbc7f1223a",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-osen",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "人種による差別をなくしましょう。",
+            "translation": {
+              "vi": "Hãy xoá bỏ sự phân biệt đối xử theo chủng tộc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phân biệt đối xử"
+        }
+      },
+      "content_hash": "497c70a88bcc801891c37bc5992337b310b4269743fb8744112ac006a3c675dd",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "さべつ",
+        "romanization": "sabetsu",
+        "text": "差別"
+      },
+      "id": "9c2961fe-c7b7-5523-a70a-4663046a3e83",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-sabetsu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "再生紙を使っています。",
+            "translation": {
+              "vi": "Chúng tôi dùng giấy tái chế."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tái sinh, tái chế; phát lại"
+        }
+      },
+      "content_hash": "b60425a68f96fc1f84ec091eb3b1156fdb4a52dff0704cbe9a494bfc22298c16",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "さいせい",
+        "romanization": "saisei",
+        "text": "再生"
+      },
+      "id": "f904cd1a-5389-540e-8981-9b36055ea1f6",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-saisei",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼は明るい性格です。",
+            "translation": {
+              "vi": "Anh ấy có tính cách vui vẻ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tính cách"
+        }
+      },
+      "content_hash": "96aa685e995438b81dfe24c0fbc99196954d47d4b6bb875c3c48b5bac369a81d",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "せいかく",
+        "romanization": "seikaku",
+        "text": "性格"
+      },
+      "id": "523ed247-7bce-5cde-b041-14bb18077dcb",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-seikaku",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "生態系を守らなければなりません。",
+            "translation": {
+              "vi": "Phải bảo vệ hệ sinh thái."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hệ sinh thái"
+        }
+      },
+      "content_hash": "d1b991d07cc406f6b3b0f93c9eede16225a335d53136792128c70a3e44c3784e",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "せいたいけい",
+        "romanization": "seitaikei",
+        "text": "生態系"
+      },
+      "id": "411baa6a-8ba7-5d83-83d3-1bd7c076427f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-seitaikei",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "失業率が下がりました。",
+            "translation": {
+              "vi": "Tỷ lệ thất nghiệp đã giảm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thất nghiệp"
+        }
+      },
+      "content_hash": "ebb02b7b1bb8b9c1762a3ff8f36bb53882d2f14a4135ec134db4d9f3a3064c25",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "しつぎょう",
+        "romanization": "shitsugyou",
+        "text": "失業"
+      },
+      "id": "a57e91f5-cd10-51ff-98da-a576bcdfe3d0",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-shitsugyou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "相手の意見を尊重します。",
+            "translation": {
+              "vi": "Tôi tôn trọng ý kiến của đối phương."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tôn trọng"
+        }
+      },
+      "content_hash": "770fc85fdf8eef95d6977a5d2a099ea5a70ba3b7e870bc752e48a54a593c7394",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "そんちょう",
+        "romanization": "sonchou",
+        "text": "尊重"
+      },
+      "id": "1dfbd5c8-99f9-582c-a853-ec7898fd9e0e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-sonchou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "その態度は失礼です。",
+            "translation": {
+              "vi": "Thái độ đó thật thất lễ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thái độ"
+        }
+      },
+      "content_hash": "6db6c63a8485188f7263093bb001dd59b24814872de47031020d27561c8b7730",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "たいど",
+        "romanization": "taido",
+        "text": "態度"
+      },
+      "id": "77404c83-e862-56dd-ae67-402aa421abb0",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-taido",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "二つの会社が提携しました。",
+            "translation": {
+              "vi": "Hai công ty đã liên kết."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "liên kết, hợp tác (giữa tổ chức)"
+        }
+      },
+      "content_hash": "7fd42ef7c171f36bd02177ed91e63ab95397fcca0227644c2d4f7f2aeace4568",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ていけい",
+        "romanization": "teikei",
+        "text": "提携"
+      },
+      "id": "aec3be57-c9d8-5857-9674-e24b21df062e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-teikei",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この会社とは十年前から取引があります。",
+            "translation": {
+              "vi": "Chúng tôi giao dịch với công ty này từ mười năm nay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giao dịch"
+        }
+      },
+      "content_hash": "159124edcee206f8187583a069a02ef12e58b4703818aa0dfdd41fef4aa9e992",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "とりひき",
+        "romanization": "torihiki",
+        "text": "取引"
+      },
+      "id": "71e43198-4568-5621-bf8b-63f0fdc139ac",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-torihiki",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "不景気で、多くの会社が倒産しました。",
+            "translation": {
+              "vi": "Do suy thoái nhiều công ty đã phá sản."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phá sản"
+        }
+      },
+      "content_hash": "d153f88b2e416fdefee70a50d368844a9501792b63929db8bc9f80d96f5c6806",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "とうさん",
+        "romanization": "tousan",
+        "text": "倒産"
+      },
+      "id": "c45254ed-2ae4-5d49-bc9c-01cdf5c2069f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-tousan",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "新しい事業に投資します。",
+            "translation": {
+              "vi": "Tôi đầu tư vào một dự án mới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đầu tư"
+        }
+      },
+      "content_hash": "6b3cbe22cc93927e4596359237e1e58e4140a25833d134258df3b1b9b647bd2e",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "とうし",
+        "romanization": "toushi",
+        "text": "投資"
+      },
+      "id": "04a4c051-50bf-5aad-b502-6708c4dc115c",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-toushi",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "宇宙に行くのが夢です。",
+            "translation": {
+              "vi": "Ước mơ của tôi là bay vào vũ trụ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vũ trụ"
+        }
+      },
+      "content_hash": "8f7be2ffaf93f8a7d0f5ac54a790572a6ef1c8b7811f0203a6518830ceeafa68",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "うちゅう",
+        "romanization": "uchuu",
+        "text": "宇宙"
+      },
+      "id": "657df863-69e5-55e4-9c2c-838463384a22",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-uchuu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "絶滅の危機にある動物がいます。",
+            "translation": {
+              "vi": "Có những loài động vật đang đứng trước nguy cơ tuyệt chủng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tuyệt chủng"
+        }
+      },
+      "content_hash": "4034f529dbe21b969bb4daea067d8bfb89dd7198091cb072d250ea52a1453107",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぜつめつ",
+        "romanization": "zetsumetsu",
+        "text": "絶滅"
+      },
+      "id": "705a5b90-9961-5690-b7be-0e284f17311d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u10-zetsumetsu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "弁解は聞きたくありません。",
+            "translation": {
+              "vi": "Tôi không muốn nghe biện bạch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "biện bạch, bào chữa"
+        }
+      },
+      "content_hash": "b48bec549d24752294d46d03dbb84559791647eb0ae1e9a9773470450a8715a2",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "べんかい",
+        "romanization": "benkai",
+        "text": "弁解"
+      },
+      "id": "f7f71d63-60c0-5f53-b749-8f9bf7134449",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-benkai",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "あの映画は感動して泣きたいほどでした。",
+            "translation": {
+              "vi": "Bộ phim đó làm tôi cảm động đến mức muốn khóc."
+            }
+          },
+          {
+            "target": "疲れて立っていられないくらいです。",
+            "translation": {
+              "vi": "Mệt đến mức không đứng nổi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Đến mức ... (dùng ví dụ nhấn mức độ): 泣きたいほど悲しい (buồn đến mức muốn khóc), 倒れそうなくらい疲れた."
+        }
+      },
+      "content_hash": "85a050c15763feffe5e83f7980b9924b1ee1d8beca87b804878443ff50bc8449",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "hodo da / kurai da",
+        "text": "V辞書形 / A + ほどだ / くらいだ"
+      },
+      "id": "c22da936-854f-5ccc-9cb9-6496917eb18f",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-hodo-da",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "日本人だからといって、全員が寿司を好きなわけではありません。",
+            "translation": {
+              "vi": "Chỉ vì là người Nhật không có nghĩa là ai cũng thích sushi."
+            }
+          },
+          {
+            "target": "高いからといって、いい商品とは限りません。",
+            "translation": {
+              "vi": "Chỉ vì đắt thì chưa chắc là hàng tốt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chỉ vì ... mà không có nghĩa là ... (phản bác suy luận). Vế sau thường là わけではない, とは限らない."
+        }
+      },
+      "content_hash": "2c51ef119bb58f68288a5e42525a3b784eca05520afb6c95ebe3abba8c48ae1b",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "kara to itte",
+        "text": "V / A / N + からといって (～わけではない / ～とは限らない)"
+      },
+      "id": "a61fdba3-0a27-56be-b957-081a83bd0a9a",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-kara-to-itte",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "そんなこと、できっこないよ。",
+            "translation": {
+              "vi": "Chuyện như thế làm sao làm được."
+            }
+          },
+          {
+            "target": "今から走っても、間に合いっこありません。",
+            "translation": {
+              "vi": "Giờ chạy cũng không thể nào kịp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Chắc chắn không thể ..., làm gì có chuyện ... (khẩu ngữ, phủ nhận mạnh). できっこない, 分かりっこない."
+        }
+      },
+      "content_hash": "73ed57ec7ffaa9fd5147326c847a3529cdba96f5691bad1a666cbfec9c0137c5",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "V-stem + kkonai",
+        "text": "V ます (bỏ ます) + っこない"
+      },
+      "id": "ba6b103a-7fef-5e36-a945-73e238bf685f",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-kko-nai",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "寝坊したものですから、遅れてしまいました。",
+            "translation": {
+              "vi": "Vì tôi ngủ quên nên đã đến muộn."
+            }
+          },
+          {
+            "target": "あまりにおいしかったもので、全部食べてしまいました。",
+            "translation": {
+              "vi": "Vì ngon quá nên tôi đã ăn hết."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Vì (lý do biện bạch, mang cảm xúc, thường dùng trong hội thoại để xin lỗi/giải thích). Kết quả thường là điều không mong muốn."
+        }
+      },
+      "content_hash": "70ca20e68297a6bb7279a8eee62eb14e75ac3b198b80d1e4195cb5039fdd8df8",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "mono dakara / mono de",
+        "text": "thể thường + ものだから / もので"
+      },
+      "id": "bf687d21-9d2d-542e-b0d7-eaee729f62c5",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-mono-dakara",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "誰があんな人の言うことを聞くものか。",
+            "translation": {
+              "vi": "Đời nào tôi nghe lời loại người như thế."
+            }
+          },
+          {
+            "target": "こんなに高いもの、買えるものか。",
+            "translation": {
+              "vi": "Đắt thế này, mua nổi cái gì."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Làm gì có chuyện ... / Đời nào ... (phủ định mạnh, mang cảm xúc, thường khẩu ngữ)."
+        }
+      },
+      "content_hash": "34b7006843c5fc0452ad205c666fc5f0264a9093706904d24488e359c58644df",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "plain form mono ka",
+        "text": "V thể thường + ものか"
+      },
+      "id": "7f1f5b8b-77cf-58aa-ae6c-615d96494ab3",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-mono-ka",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "予想に反して、試合は日本が勝ちました。",
+            "translation": {
+              "vi": "Trái với dự đoán, Nhật Bản đã thắng trận đấu."
+            }
+          },
+          {
+            "target": "規則に反する行為は禁止されています。",
+            "translation": {
+              "vi": "Hành vi trái với quy tắc bị cấm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Trái với (kỳ vọng, dự đoán, mệnh lệnh): 予想に反して, 期待に反して, 規則に反して. N に反する + N."
+        }
+      },
+      "content_hash": "41cbab2b67e09c512a786b22fde59cc9306147b02a13cc60d57e68a79a5c0021",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N ni hanshite",
+        "text": "N に反して"
+      },
+      "id": "aa7880f9-3098-5565-aa7a-97f8a0c8656a",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-ni-hanshite",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "料理にかけては、彼女に勝てる人はいません。",
+            "translation": {
+              "vi": "Nói về nấu ăn thì không ai thắng nổi cô ấy."
+            }
+          },
+          {
+            "target": "記憶力にかけては、彼は天才です。",
+            "translation": {
+              "vi": "Về trí nhớ thì anh ấy là thiên tài."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Nói về (khả năng, kỹ năng) thì; riêng về N thì (người đó là nhất). Dùng khen."
+        }
+      },
+      "content_hash": "1c0cf8388f01d954a07950b237aae10cbbe92be67d39562304dccc557df27070",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N ni kakete wa",
+        "text": "N にかけては"
+      },
+      "id": "a40acb1a-4829-505f-96eb-d5112798582f",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-ni-kakete-wa",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "忙しいにしても、連絡くらいはしてほしいです。",
+            "translation": {
+              "vi": "Dù có bận đi nữa, tôi vẫn mong bạn liên lạc một chút."
+            }
+          },
+          {
+            "target": "誰にしても、間違えることはあります。",
+            "translation": {
+              "vi": "Dù là ai thì cũng có lúc mắc lỗi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Dù có ... đi nữa; ngay cả khi thừa nhận ... thì ... Dùng để nhượng bộ rồi nêu quan điểm."
+        }
+      },
+      "content_hash": "59b49b2aef5b216a48396f48e4b9b0669c0f429cd929905894c262c2fe8ea349",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "ni shite mo / ni shiro / ni seyo",
+        "text": "N / V + にしても / にしろ / にせよ"
+      },
+      "id": "3f114c68-db16-5757-a246-ffa51741fb91",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-ni-shite-mo",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "計画に沿って、作業を進めます。",
+            "translation": {
+              "vi": "Tôi sẽ tiến hành công việc theo đúng kế hoạch."
+            }
+          },
+          {
+            "target": "川に沿って、桜の木が並んでいます。",
+            "translation": {
+              "vi": "Dọc theo bờ sông có hàng cây anh đào."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Theo, đi theo, đúng với (kế hoạch, phương châm; dọc theo con sông, con đường). 計画に沿って, 方針に沿って, 川に沿って歩く."
+        }
+      },
+      "content_hash": "ff3494883a02e585740fecb3e8774be9359765e18cb93ea1d7952c89ac89bfa6",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N ni sotte",
+        "text": "N に沿って"
+      },
+      "id": "90444c49-30db-5820-969b-3c1f135104f0",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-ni-sotte",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "confusion": {
+          "vi": "ならない / たまらない / しょうがない thường đi với cảm xúc, cảm giác của người nói; ならない trang trọng hơn."
+        },
+        "examples": [
+          {
+            "target": "試験の結果が心配でならない。",
+            "translation": {
+              "vi": "Tôi lo lắng kết quả kỳ thi đến không chịu nổi."
+            }
+          },
+          {
+            "target": "昨日は暑くてたまりませんでした。",
+            "translation": {
+              "vi": "Hôm qua nóng không chịu nổi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Không chịu nổi, cứ (cảm giác) mãi. Diễn tả cảm giác hay cảm xúc tự nhiên không kiềm chế được: 心配でならない, 眠くてたまらない, 嬉しくてしょうがない."
+        }
+      },
+      "content_hash": "57cc03308a117d220def74d88d8fc8d472e3b6fe9d665289eb50cf68be00ab6b",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "te naranai / tamaranai / shouganai",
+        "text": "A くて / Na で / V て + ならない / たまらない / しょうがない"
+      },
+      "id": "23822057-e22a-5576-b914-eca3fdcc74d2",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-te-naranai",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この映画は実話をもとに作られました。",
+            "translation": {
+              "vi": "Bộ phim này được làm dựa trên chuyện có thật."
+            }
+          },
+          {
+            "target": "アンケートの結果をもとに、計画を立てます。",
+            "translation": {
+              "vi": "Dựa trên kết quả khảo sát, tôi sẽ lập kế hoạch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Dựa trên N (làm nguồn, tư liệu, nền tảng): 実話をもとに作られた映画 (phim dựa trên chuyện thật). Khác に基づいて (căn cứ vào quy tắc, tiêu chuẩn)."
+        }
+      },
+      "content_hash": "16bdcdff6827894be85b858dca6472524541ee61b62c033bdaa4b5f1a6f5ac78",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N o moto ni (shite)",
+        "text": "N をもとに(して)"
+      },
+      "id": "ec6712df-71e4-598c-83f6-cb90c3d5991d",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-wo-moto-ni",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "年齢や国籍を問わず、誰でも参加できます。",
+            "translation": {
+              "vi": "Bất kể tuổi tác và quốc tịch, ai cũng tham gia được."
+            }
+          },
+          {
+            "target": "この店は昼夜を問わず、お客さんでいっぱいです。",
+            "translation": {
+              "vi": "Cửa hàng này lúc nào cũng đông khách, bất kể ngày đêm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "Bất kể N (không phân biệt, không xét): 年齢を問わず, 経験を問わず, 昼夜を問わず. Thường đi với danh từ chỉ sự đối lập hoặc phạm vi."
+        }
+      },
+      "content_hash": "cc93c306a0fc9f782d0938c411ce9b732032345fa79c8e2553a32a34dc51bc5d",
+      "difficulty": 4,
+      "front": {
+        "pos": "cấu trúc ngữ pháp",
+        "romanization": "N o towazu",
+        "text": "N を問わず"
+      },
+      "id": "df48f201-4ce5-5fa6-a54f-cad56dd99a12",
+      "is_demo": false,
+      "item_type": "grammar_point",
+      "key": "ja:item:n2-u11-gram-wo-towazu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "grammar"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の意見に反論しました。",
+            "translation": {
+              "vi": "Tôi đã phản bác ý kiến của anh ấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phản bác"
+        }
+      },
+      "content_hash": "b0c1fb8fa4b7c18bcbf9b9f23a749bdea1675eee223ea1d655119b35d6cf0697",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "はんろん",
+        "romanization": "hanron",
+        "text": "反論"
+      },
+      "id": "f318a736-e12c-5171-8e5b-3055d8732013",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-hanron",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "映画を見て感動しました。",
+            "translation": {
+              "vi": "Xem phim tôi rất xúc động."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cảm động, xúc động"
+        }
+      },
+      "content_hash": "6de4453061a25f7a4ab7b99bc789c2d7e08bcc7551ccfdf7198e12851023933f",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かんどう",
+        "romanization": "kandou",
+        "text": "感動"
+      },
+      "id": "e7f4f038-b425-5d36-95e7-77d7f3a98be3",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-kandou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "試合に負けて悔しいです。",
+            "translation": {
+              "vi": "Thua trận, tôi thấy cay cú."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiếc nuối, tức vì thua, cay cú"
+        }
+      },
+      "content_hash": "aab58e3f06a7097698dec92d0281d7161be92c414901f348cd48a454cc4dbaf7",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "くやしい",
+        "romanization": "kuyashii",
+        "text": "悔しい"
+      },
+      "id": "e73463a2-bb44-56a4-82f8-b0b66cd3d89f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-kuyashii",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "要求を拒否されました。",
+            "translation": {
+              "vi": "Yêu cầu của tôi đã bị từ chối."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "từ chối, bác bỏ"
+        }
+      },
+      "content_hash": "a86015c0f49dc02930daffd597192a7cda70da3581dde4033e1281de424bffb8",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "きょひ",
+        "romanization": "kyohi",
+        "text": "拒否"
+      },
+      "id": "d59d032b-8da6-50e9-8800-a801b53860ed",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-kyohi",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "手続きが面倒です。",
+            "translation": {
+              "vi": "Thủ tục thật phiền phức."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phiền phức, rắc rối"
+        }
+      },
+      "content_hash": "f476afd0bfee488e01bcf931663cf1494356d038c5e3316bdd553a5fd5f5d504",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な / danh từ",
+        "reading": "めんどう",
+        "romanization": "mendou",
+        "text": "面倒"
+      },
+      "id": "7180f3c8-91a6-55a0-a08f-34889ebc9803",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-mendou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "それは無理だと思います。",
+            "translation": {
+              "vi": "Tôi nghĩ việc đó là không thể."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vô lý, quá sức, không thể"
+        }
+      },
+      "content_hash": "8bdebc547d8fe774201db5af1bb28f2067b92d57ccc9a1cde49a0777fd6f30e4",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な / danh từ",
+        "reading": "むり",
+        "romanization": "muri",
+        "text": "無理"
+      },
+      "id": "0cc67512-9d8e-5efb-a119-042f019d1241",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-muri",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "予想より早く終わりました。",
+            "translation": {
+              "vi": "Việc xong sớm hơn dự kiến."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dự đoán, dự kiến"
+        }
+      },
+      "content_hash": "aafb2be85e2fb100180032be775ce7a9f36bb5eaee6adeaa55dca166084671fc",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "よそう",
+        "romanization": "yosou",
+        "text": "予想"
+      },
+      "id": "905675a5-de3e-528d-9616-0bd95b02845a",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-yosou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "結婚を前提に付き合っています。",
+            "translation": {
+              "vi": "Chúng tôi hẹn hò với tiền đề kết hôn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiền đề, điều kiện tiên quyết"
+        }
+      },
+      "content_hash": "d753ea6fa8f0b521d40670e4f29aca8d2adf210bd6643c51c579ab9554aecfb2",
+      "difficulty": 4,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぜんてい",
+        "romanization": "zentei",
+        "text": "前提"
+      },
+      "id": "6b495e76-7cf1-5976-8549-ea5919475657",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u11-zentei",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼が間違っているのは明らかです。",
+            "translation": {
+              "vi": "Rõ ràng là anh ta sai."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "rõ ràng, hiển nhiên"
+        }
+      },
+      "content_hash": "635ec81896c60a02866c9983c6c30693ca5bdac9831e618c8ddde6be5ec8b1df",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "あきらか",
+        "romanization": "akiraka",
+        "text": "明らか"
+      },
+      "id": "010bebc9-aa99-5a61-94d4-386c373ce6f2",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-akiraka",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "子どもの頃から、パイロットに憧れていました。",
+            "translation": {
+              "vi": "Từ nhỏ tôi đã ngưỡng mộ nghề phi công."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ngưỡng mộ, khao khát"
+        }
+      },
+      "content_hash": "95ea05ff5e3c25bcf0913af8b6d69cb96aebd0185d4a3b2316bf1e06df90e1bf",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "あこがれる",
+        "romanization": "akogareru",
+        "text": "憧れる"
+      },
+      "id": "40365311-25e4-5ec3-8fae-b69678abbeea",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-akogareru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "睡眠は健康に不可欠です。",
+            "translation": {
+              "vi": "Giấc ngủ là điều không thể thiếu cho sức khoẻ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "không thể thiếu"
+        }
+      },
+      "content_hash": "2358e4dc3da8f8538ec3982660643ab546ae746ac1fac86e8ea0d45677f36982",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "ふかけつ",
+        "romanization": "fukaketsu",
+        "text": "不可欠"
+      },
+      "id": "80a8d1f0-ba73-56f4-a6e5-76fd23dec25c",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-fukaketsu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "複雑な問題で、すぐには解決できません。",
+            "translation": {
+              "vi": "Vấn đề phức tạp nên không thể giải quyết ngay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phức tạp"
+        }
+      },
+      "content_hash": "37d6ad142082016971f6e6e7d189642721e35e32658aec4eec3be3d4ed465284",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "ふくざつ",
+        "romanization": "fukuzatsu",
+        "text": "複雑"
+      },
+      "id": "6ec28408-dd3e-567e-9d5e-33e7f30cb213",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-fukuzatsu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "落ち込んでいる友達を励ましました。",
+            "translation": {
+              "vi": "Tôi đã động viên người bạn đang chán nản."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "động viên, khích lệ"
+        }
+      },
+      "content_hash": "ce40fb9be1cfb9e2eaee0a3feb96f62348987fa492783b86174741340fe8cf40",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "はげます",
+        "romanization": "hagemasu",
+        "text": "励ます"
+      },
+      "id": "a8785a92-0918-5a3b-bdb1-84cb2f89772b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-hagemasu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "競争が激しくなっています。",
+            "translation": {
+              "vi": "Cạnh tranh ngày càng gay gắt."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dữ dội, gay gắt"
+        }
+      },
+      "content_hash": "d7eac203a605e2de6ac1257b33efb0cf76ac278325f1883efb4f1740aabc141c",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "はげしい",
+        "romanization": "hageshii",
+        "text": "激しい"
+      },
+      "id": "e364173c-0990-5c2f-9c5b-27385ddf1812",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-hageshii",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "徐々に体が慣れてきました。",
+            "translation": {
+              "vi": "Cơ thể tôi dần quen."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "dần dần, từ từ"
+        }
+      },
+      "content_hash": "1b3868910dae206c334b9b52f1162655b5adae3aaf16e977ff87d4b201e12593",
+      "difficulty": 4,
+      "front": {
+        "pos": "phó từ",
+        "reading": "じょじょに",
+        "romanization": "jojo ni",
+        "text": "徐々に"
+      },
+      "id": "17ac72d6-bf39-5364-aec4-56ffed824f44",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-jojoni",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "多くの問題を抱えています。",
+            "translation": {
+              "vi": "Tôi đang gánh nhiều vấn đề."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ôm; gánh vác (vấn đề, nợ)"
+        }
+      },
+      "content_hash": "0596379f0453d8fdef3d5657e8ffefb04b391261c450613d67afe8a82eb2dff3",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "かかえる",
+        "romanization": "kakaeru",
+        "text": "抱える"
+      },
+      "id": "a1076d3a-6ea4-5783-968d-4e20a681ebc6",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-kakaeru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "父は教育に厳しい人です。",
+            "translation": {
+              "vi": "Bố tôi là người nghiêm khắc trong giáo dục."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nghiêm khắc, khắc nghiệt"
+        }
+      },
+      "content_hash": "56f1bb44dde3558810d13459e6af460774e2f5981e251e0367e00119650ddd2c",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "きびしい",
+        "romanization": "kibishii",
+        "text": "厳しい"
+      },
+      "id": "907d75b0-9b4b-5f22-a4b7-324f6e5cab6f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-kibishii",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "貴重な経験をさせていただきました。",
+            "translation": {
+              "vi": "Tôi đã có được một trải nghiệm quý giá."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quý giá, hiếm có"
+        }
+      },
+      "content_hash": "1dc43560b912a428469dc87a3337ffc17efd1f9072b4ca63e121a1a936ce9fca",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "きちょう",
+        "romanization": "kichou",
+        "text": "貴重"
+      },
+      "id": "f049afc0-ffd8-56d1-a080-e05cff2833cc",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-kichou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "毎日走って、体を鍛えています。",
+            "translation": {
+              "vi": "Tôi chạy mỗi ngày để rèn luyện cơ thể."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "rèn luyện"
+        }
+      },
+      "content_hash": "a043ddd521e0876f6767d9bb8b557d02781667319f40b8b6a60661dfd1af6469",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "きたえる",
+        "romanization": "kitaeru",
+        "text": "鍛える"
+      },
+      "id": "09fc31ec-a9d0-5c45-963b-f25bcc20d928",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-kitaeru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "あの時の失敗を悔やんでいます。",
+            "translation": {
+              "vi": "Tôi hối tiếc về thất bại lúc đó."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hối tiếc, nuối tiếc"
+        }
+      },
+      "content_hash": "9cd23b3363d347a2f30eab17f54027af84265fa82164e6f017106e021f634071",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "くやむ",
+        "romanization": "kuyamu",
+        "text": "悔やむ"
+      },
+      "id": "4d91b8db-b2a0-5af7-a879-2c5518f079d5",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-kuyamu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "どちらにするか迷っています。",
+            "translation": {
+              "vi": "Tôi đang phân vân không biết chọn bên nào."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "do dự, phân vân; lạc đường"
+        }
+      },
+      "content_hash": "a4683818c2565aff0aec335e3f8add851b65627cce5f20a2acdfdc3c7f81a0d1",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "まよう",
+        "romanization": "mayou",
+        "text": "迷う"
+      },
+      "id": "81da517b-7aab-5bfe-b59c-533e88e45d3b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-mayou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "自分の間違いを認めました。",
+            "translation": {
+              "vi": "Tôi đã thừa nhận lỗi của mình."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thừa nhận, công nhận"
+        }
+      },
+      "content_hash": "50b577ed8647c0b92383b91cb5e045ba9099d28c56be84263d48ac9434dedd11",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "みとめる",
+        "romanization": "mitomeru",
+        "text": "認める"
+      },
+      "id": "c909ad3c-7d50-5250-ab14-8fde04076246",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-mitomeru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "若者は将来を嘆いています。",
+            "translation": {
+              "vi": "Giới trẻ than thở về tương lai."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "than thở, thương tiếc"
+        }
+      },
+      "content_hash": "6467b1905e005b9758e98c2601cb909722f1b38670003520d8a546e56a92e03d",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "なげく",
+        "romanization": "nageku",
+        "text": "嘆く"
+      },
+      "id": "36b6fecc-1292-5e51-8866-78a721031cbb",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-nageku",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "泣いている子どもを慰めました。",
+            "translation": {
+              "vi": "Tôi đã dỗ dành đứa trẻ đang khóc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "an ủi"
+        }
+      },
+      "content_hash": "29f5b72fe815c317e13c2ac2eeba1f75d88d62bfc74c302d3402dfbb83d163dc",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "なぐさめる",
+        "romanization": "nagusameru",
+        "text": "慰める"
+      },
+      "id": "8229e758-695e-5643-a87e-64ce0c643b79",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-nagusameru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "優勝を狙っています。",
+            "translation": {
+              "vi": "Chúng tôi nhắm tới chức vô địch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhắm tới, ngắm bắn"
+        }
+      },
+      "content_hash": "1cd7ea7dae563333951bbf1dacfb8dcf50a73de2fe9a0870fa53dbada7c6ee44",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "ねらう",
+        "romanization": "nerau",
+        "text": "狙う"
+      },
+      "id": "d8406a51-cdcc-597e-bb6a-df3a39e41351",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-nerau",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "このナイフは切れ味が鈍くなりました。",
+            "translation": {
+              "vi": "Con dao này đã cùn rồi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cùn, chậm chạp, mờ nhạt"
+        }
+      },
+      "content_hash": "33f6d06cd9d00a8ef34deacb0c9ee0a4255df387b56335c58eb8bcf58e4af08b",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "にぶい",
+        "romanization": "nibui",
+        "text": "鈍い"
+      },
+      "id": "94adb0ab-e0b4-588a-82b3-0bf5aacb0017",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-nibui",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "火事のとき、慌てずに逃げてください。",
+            "translation": {
+              "vi": "Khi có cháy, xin hãy thoát ra mà đừng hoảng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chạy trốn, thoát khỏi"
+        }
+      },
+      "content_hash": "83e43760e5ff0706acbc8f48efdac50023ea9bd9695ba82a22a72e105eb54d51",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "にげる",
+        "romanization": "nigeru",
+        "text": "逃げる"
+      },
+      "id": "4726f56c-3f33-5318-9898-6f7298ca2495",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-nigeru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "会議で自分の意見を述べました。",
+            "translation": {
+              "vi": "Tôi đã trình bày ý kiến của mình trong cuộc họp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "trình bày, nêu (ý kiến)"
+        }
+      },
+      "content_hash": "c5fb079ff7eb68aa355bc36ef6b518ed0b3483de229e7eeb4f37bc7fd1130d4d",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "のべる",
+        "romanization": "noberu",
+        "text": "述べる"
+      },
+      "id": "772bf3e3-974f-5a72-896a-438686da336d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-noberu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "足りない分は、アルバイトで補います。",
+            "translation": {
+              "vi": "Phần thiếu tôi sẽ bù bằng việc làm thêm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bù đắp, bổ sung"
+        }
+      },
+      "content_hash": "1d8bdb417633299581e0a19c06f0eb16204e0ea9b1646c0d8b5b8012b41759f7",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "おぎなう",
+        "romanization": "oginau",
+        "text": "補う"
+      },
+      "id": "d5d03b6c-3ab3-5c77-a9dc-cbbcd95ba76c",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-oginau",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "売り上げが大幅に増えました。",
+            "translation": {
+              "vi": "Doanh thu đã tăng mạnh."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đáng kể, mạnh (mức biến động lớn)"
+        }
+      },
+      "content_hash": "ada0b2d3322205b5a417ec7d48366a33ffc6b5f60e6269cb5fdd26c4e1eb8b48",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な / danh từ",
+        "reading": "おおはば",
+        "romanization": "oohaba",
+        "text": "大幅"
+      },
+      "id": "162056ab-9ba0-51f1-82f1-c121c5f28c1f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-oohaba",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "混雑を避けて、早めに出かけました。",
+            "translation": {
+              "vi": "Tôi ra khỏi nhà sớm để tránh đông đúc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tránh, né"
+        }
+      },
+      "content_hash": "153cd2f73c2d2538020c811791045e93fba95386c9746e7f84198f6fabab4f72",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "さける",
+        "romanization": "sakeru",
+        "text": "避ける"
+      },
+      "id": "157a3b45-67c7-5634-988f-beb2605c8c86",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-sakeru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "せっかく来たのに、店は休みでした。",
+            "translation": {
+              "vi": "Mất công đến mà cửa hàng lại nghỉ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cất công, mất công; hiếm hoi mới"
+        }
+      },
+      "content_hash": "8c45277f0101d127298f96b3b34e8e890088d22e8c6f88f5b5b97ed31a02ba6f",
+      "difficulty": 4,
+      "front": {
+        "pos": "phó từ",
+        "romanization": "sekkaku",
+        "text": "せっかく"
+      },
+      "id": "37094e30-b231-5239-92f9-37e66acac2b6",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-sekkaku",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "せめて電話くらいはしてほしかった。",
+            "translation": {
+              "vi": "Ít nhất tôi cũng mong bạn gọi điện."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "ít nhất thì, giá mà ít nhất"
+        }
+      },
+      "content_hash": "3526aa8a4da4276979cd1dc833f888a753c9356ac72b1f920a194c8879232a54",
+      "difficulty": 4,
+      "front": {
+        "pos": "phó từ",
+        "romanization": "semete",
+        "text": "せめて"
+      },
+      "id": "a9ba9c8c-bd41-5fda-9243-8d5955badfe4",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-semete",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "家族が全員揃いました。",
+            "translation": {
+              "vi": "Cả gia đình đã có mặt đủ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tập hợp đủ, đồng đều"
+        }
+      },
+      "content_hash": "a4bc2bd33a7c020e9739c0332027852585e875ca9c5913d35324a75407268679",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "そろう",
+        "romanization": "sorou",
+        "text": "揃う"
+      },
+      "id": "8dbb44d5-1bec-5119-b0f6-083186e74270",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-sorou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "今日は相当寒いです。",
+            "translation": {
+              "vi": "Hôm nay lạnh khá nhiều."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khá, đáng kể; tương đương"
+        }
+      },
+      "content_hash": "c418213c9c19df97921675957ed2d1785be4703348f9b2122a0e9d6d45d21971",
+      "difficulty": 4,
+      "front": {
+        "pos": "phó từ / danh từ",
+        "reading": "そうとう",
+        "romanization": "soutou",
+        "text": "相当"
+      },
+      "id": "06e7adbe-a106-5fda-b589-8afbe5e9236f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-soutou",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼は鋭い指摘をしました。",
+            "translation": {
+              "vi": "Anh ấy đã đưa ra nhận xét sắc bén."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sắc bén, nhạy bén"
+        }
+      },
+      "content_hash": "c6610cd11903583a44840d28a9043eac5e558978d7388244754a6b7391ed183c",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "するどい",
+        "romanization": "surudoi",
+        "text": "鋭い"
+      },
+      "id": "8803ea1b-78cf-567d-8292-d5d0f3fa7d1c",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-surudoi",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "単純なミスで、大きな損失が出ました。",
+            "translation": {
+              "vi": "Một lỗi đơn giản đã gây tổn thất lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đơn giản, giản đơn"
+        }
+      },
+      "content_hash": "4509adc8cd25c37e19600db60340a285d5e0e0b9dee3b03eb57b9872b3b1def2",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "たんじゅん",
+        "romanization": "tanjun",
+        "text": "単純"
+      },
+      "id": "9f772004-b195-5032-8894-e30058ad4869",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-tanjun",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "適切な対応をお願いします。",
+            "translation": {
+              "vi": "Xin hãy có cách ứng xử thích hợp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thích hợp, đúng mức"
+        }
+      },
+      "content_hash": "377ea0f53f21a00acf7399098bee730a554d9ec9031784992bbff968734a7ad8",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "てきせつ",
+        "romanization": "tekisetsu",
+        "text": "適切"
+      },
+      "id": "bc914781-4d40-56cd-a0e7-bbfe74d7e2f0",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-tekisetsu",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "体調を整えてから、試験に臨みます。",
+            "translation": {
+              "vi": "Tôi sẽ điều chỉnh thể trạng rồi mới dự thi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chỉnh đốn, sắp xếp cho ngay ngắn"
+        }
+      },
+      "content_hash": "601961369a4558752db0cff84e29afaf9d2f07af0edc5b7f15331df0824a8880",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "ととのえる",
+        "romanization": "totonoeru",
+        "text": "整える"
+      },
+      "id": "139bf45d-e51e-53a0-b461-4894c9d267cd",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-totonoeru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "新しい店が次々にできています。",
+            "translation": {
+              "vi": "Cửa hàng mới liên tiếp mở ra."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "lần lượt, liên tiếp"
+        }
+      },
+      "content_hash": "21295774e8bb9bd72f834730fd2ec532c65dbc2968d05611ec2d292085106563",
+      "difficulty": 4,
+      "front": {
+        "pos": "phó từ",
+        "reading": "つぎつぎ",
+        "romanization": "tsugitsugi",
+        "text": "次々"
+      },
+      "id": "42dab346-6031-55f1-9cbc-e76e92ba1d4e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-tsugitsugi",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "彼の話を疑っています。",
+            "translation": {
+              "vi": "Tôi nghi ngờ lời anh ta nói."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nghi ngờ"
+        }
+      },
+      "content_hash": "4947288b5cc8401a1934e8b2b1e0142eee9f3a19fec67b13bdd86c8d809e88da",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "うたがう",
+        "romanization": "utagau",
+        "text": "疑う"
+      },
+      "id": "5b475d9b-308b-594d-968f-47552cdcf905",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-utagau",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "市民は環境の改善を訴えました。",
+            "translation": {
+              "vi": "Người dân kêu gọi cải thiện môi trường."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "kêu gọi, khiếu nại; kiện"
+        }
+      },
+      "content_hash": "b3a70279b5f884e6b1bee572c768feb6b9cc42acfa28c667e7b0b8f05a16b7c1",
+      "difficulty": 4,
+      "front": {
+        "pos": "động từ",
+        "reading": "うったえる",
+        "romanization": "uttaeru",
+        "text": "訴える"
+      },
+      "id": "6e078010-1a4a-5743-81ce-d6230f406636",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-uttaeru",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "残りはわずか三日です。",
+            "translation": {
+              "vi": "Chỉ còn vỏn vẹn ba ngày."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chỉ một chút, ít ỏi"
+        }
+      },
+      "content_hash": "9e945f8ace2cf1b5f7b3c2487b7ed2dcb0527410c65b035acb29bb963dce7204",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な / phó từ",
+        "romanization": "wazuka",
+        "text": "わずか"
+      },
+      "id": "64a82fdf-5628-5ef0-8573-32577c330781",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-wazuka",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この町は自然が豊かです。",
+            "translation": {
+              "vi": "Thị trấn này giàu thiên nhiên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phong phú, giàu có"
+        }
+      },
+      "content_hash": "0aed29dbf53bc154d568d06c7502a542b8f4129016a22e8b9ef34a05128dfcf6",
+      "difficulty": 4,
+      "front": {
+        "pos": "tính từ な",
+        "reading": "ゆたか",
+        "romanization": "yutaka",
+        "text": "豊か"
+      },
+      "id": "a178830d-961c-598c-bda0-a5ab34c61ff7",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n2-u12-yutaka",
+      "language_code": "ja",
+      "level_code": "n2",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
       "skill_tags": [
         "vocabulary"
       ],
@@ -797226,11 +817049,11 @@ select content_private.import_bundle($bundle${
           "vi": "(1) \"Thay vì, thay cho\": 部長の代わりに私が出席します. (2) \"Đổi lại\": 日本語を教えてもらうかわりに、ベトナム語を教えます. (3) \"Bù lại\" (mặt tốt - mặt xấu): 給料が高いかわりに、休みが少ない."
         }
       },
-      "content_hash": "e148a06ee4f237f33be443b04080b6cc7ab94e49579ccabaf7e96a99a01c4a43",
+      "content_hash": "3aa8ff060950d78d3a68185e42e356a90bc5e2683d39580c9dc166437f6fe763",
       "difficulty": 4,
       "front": {
         "pos": "thay thế / đổi lại",
-        "reading": "代わりに",
+        "reading": "かわりに",
         "romanization": "kawari ni",
         "text": "Nの / V-る / thể thường + かわりに"
       },
@@ -803778,6 +823601,1227 @@ select content_private.import_bundle($bundle${
       "is_demo": false,
       "item_type": "vocab",
       "key": "ja:item:n3-u10-yappari",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この事件は社会に大きな影響を与えました。",
+            "translation": {
+              "vi": "Vụ việc này đã gây ảnh hưởng lớn đến xã hội."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "trao, mang lại, gây ra"
+        }
+      },
+      "content_hash": "8b2f9786a7c024e00a70d577b3fe7bc3d39b73d06538a8ac4d594d45ff1bfde8",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "あたえる",
+        "romanization": "ataeru",
+        "text": "与える"
+      },
+      "id": "372ee633-a724-5c4e-8201-1d4fa9f5a536",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-ataeru",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "アルバイトを募集しています。",
+            "translation": {
+              "vi": "Chúng tôi đang tuyển nhân viên làm thêm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tuyển, chiêu mộ"
+        }
+      },
+      "content_hash": "d67d5b9a709c4a9b37b1a233380714bdc7cbc7c1b429af486df05dd641f7a414",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "ぼしゅう",
+        "romanization": "boshuu",
+        "text": "募集"
+      },
+      "id": "0953ade3-4102-5cee-beb3-f9fdc9dfafdd",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-boshuu",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "外国の文化を学ぶのは楽しいです。",
+            "translation": {
+              "vi": "Học văn hoá nước ngoài thật thú vị."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "văn hoá"
+        }
+      },
+      "content_hash": "79c7b09b130439c1c9d7bd88e619a625e2b444c1dc7f15663e483aafca4fb641",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぶんか",
+        "romanization": "bunka",
+        "text": "文化"
+      },
+      "id": "e78ba1bb-0fe1-57ef-865a-3f078c36339d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-bunka",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この祭りは三百年の伝統があります。",
+            "translation": {
+              "vi": "Lễ hội này có truyền thống ba trăm năm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "truyền thống"
+        }
+      },
+      "content_hash": "8993529f66998d44c4cd06050b33f78e4fa116c1e02e96b06754dedcf1cfaf50",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "でんとう",
+        "romanization": "dentou",
+        "text": "伝統"
+      },
+      "id": "ae510e83-252e-5e7e-bff0-9182b7b07bc4",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-dentou",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "国から援助を受けて、学校を建てました。",
+            "translation": {
+              "vi": "Nhận hỗ trợ từ nhà nước, họ đã xây trường."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "viện trợ, hỗ trợ"
+        }
+      },
+      "content_hash": "b693b9636e12e6c15d211eb712cefd9c489b0c2071aa200f13f276cc4a96f224",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "えんじょ",
+        "romanization": "enjo",
+        "text": "援助"
+      },
+      "id": "645f1694-eb92-577d-bc30-9aa51b693a4c",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-enjo",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "納税は国民の義務です。",
+            "translation": {
+              "vi": "Nộp thuế là nghĩa vụ của công dân."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nghĩa vụ"
+        }
+      },
+      "content_hash": "60d9c0a2febc377b890d80a231fd1e74c3f4c778648ea09fddba6d65c85fedcc",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ぎむ",
+        "romanization": "gimu",
+        "text": "義務"
+      },
+      "id": "33ba33fa-252b-5179-837f-58c24923a29e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-gimu",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "絶滅しそうな動物を保護しています。",
+            "translation": {
+              "vi": "Chúng tôi đang bảo vệ các loài động vật sắp tuyệt chủng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bảo hộ, bảo vệ"
+        }
+      },
+      "content_hash": "ef5421dea93153988bb42fa9ab9694b46aeedc81d1fd0924da3dc44d4cb3231b",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "ほご",
+        "romanization": "hogo",
+        "text": "保護"
+      },
+      "id": "46678b21-8b8a-53d7-9996-f791b7546351",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-hogo",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "データをパソコンに保存しました。",
+            "translation": {
+              "vi": "Tôi đã lưu dữ liệu vào máy tính."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bảo quản, lưu giữ"
+        }
+      },
+      "content_hash": "164018b488126dca73d8d79ce406ba067f84a6e2b9a9ba2a5cbfcb8c390a1404",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "ほぞん",
+        "romanization": "hozon",
+        "text": "保存"
+      },
+      "id": "3e7b11cd-42f9-549e-8a6f-ab27c105b87d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-hozon",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "四月から大阪支店に異動します。",
+            "translation": {
+              "vi": "Từ tháng Tư tôi sẽ được điều chuyển đến chi nhánh Osaka."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "điều chuyển công tác"
+        }
+      },
+      "content_hash": "4e5a5198ea865a6b62bb9bf20342e4a8a5bdc68e48d6f8d99f27766a36c0532d",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "いどう",
+        "romanization": "idou",
+        "text": "異動"
+      },
+      "id": "19459f2a-0dbe-59f2-8382-ca7296a876a7",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-idou",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "スピード違反で、罰金を払いました。",
+            "translation": {
+              "vi": "Tôi đã nộp phạt vì vi phạm tốc độ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vi phạm"
+        }
+      },
+      "content_hash": "05744685298c4f849baccddc2a01afae4bab46a1d0472ec7921e390d62213851",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "いはん",
+        "romanization": "ihan",
+        "text": "違反"
+      },
+      "id": "c604075e-35a4-55a2-b890-1fa799eed271",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-ihan",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "健康を維持するために、毎日運動しています。",
+            "translation": {
+              "vi": "Tôi tập thể dục mỗi ngày để duy trì sức khoẻ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "duy trì"
+        }
+      },
+      "content_hash": "45348ce6dea42c49be46e379a4860670a09a58520d593c1ac2008930a099e1a9",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "いじ",
+        "romanization": "iji",
+        "text": "維持"
+      },
+      "id": "acac8ec3-be86-5554-ada2-9ca113f3e609",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-iji",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "決勝戦で勝って、優勝しました。",
+            "translation": {
+              "vi": "Thắng ở trận chung kết nên đã vô địch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thắng"
+        }
+      },
+      "content_hash": "93faefee83e14ccf5145a6f83784680a63278d15f970f7d34f8c36da8ffa8cb6",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "かつ",
+        "romanization": "katsu",
+        "text": "勝つ"
+      },
+      "id": "39a87462-dec0-5de8-8df6-0d8812a1cda8",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-kachi",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "原料の価格が上がっています。",
+            "translation": {
+              "vi": "Giá nguyên liệu đang tăng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giá cả"
+        }
+      },
+      "content_hash": "00e3657119a590b5ad06d33c0a3b282ae01711cae892eeb53933551b3189dcfe",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "かかく",
+        "romanization": "kakaku",
+        "text": "価格"
+      },
+      "id": "25778ebf-0bf3-52bb-bb90-ffa7840d72e4",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-kakaku",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "誰でも教育を受ける権利があります。",
+            "translation": {
+              "vi": "Ai cũng có quyền được học hành."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quyền lợi"
+        }
+      },
+      "content_hash": "4cdc2534a1f6c7aab795a1de3c82081d7b8c72d602ac29d51988514fa743ebcb",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "けんり",
+        "romanization": "kenri",
+        "text": "権利"
+      },
+      "id": "7a724778-b0b2-5ca1-8318-803e37fc3c72",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-kenri",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "館内での撮影は禁止されています。",
+            "translation": {
+              "vi": "Việc chụp ảnh trong toà nhà bị cấm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cấm"
+        }
+      },
+      "content_hash": "1397836c973960219924bb00c3f4979661ff476687c72d0e958bff9e494743df",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "きんし",
+        "romanization": "kinshi",
+        "text": "禁止"
+      },
+      "id": "41ff917f-0f10-5907-a672-0977e8890abb",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-kinshi",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "参加者は予想を超えて、千人になりました。",
+            "translation": {
+              "vi": "Số người tham gia vượt dự kiến, lên tới một nghìn người."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vượt quá"
+        }
+      },
+      "content_hash": "1376a1fd74d10b2c1a52bfff9fc54d50f5c9756c3ed7ae46129ddb98cd42e72a",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "こえる",
+        "romanization": "koeru",
+        "text": "超える"
+      },
+      "id": "6ece7a89-ed9f-5037-912a-3672756835a3",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-koeru",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この建物に入るには、許可が必要です。",
+            "translation": {
+              "vi": "Để vào toà nhà này cần có giấy phép."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cho phép, giấy phép"
+        }
+      },
+      "content_hash": "29977e12d852c41b9f9e2a94e8c7d4f67700758a27004aa7b654e21fa86ac60e",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "きょか",
+        "romanization": "kyoka",
+        "text": "許可"
+      },
+      "id": "f69e4df3-4332-5359-9d3b-a7cc09271bb1",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-kyoka",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "みんなで協力して、準備を終えました。",
+            "translation": {
+              "vi": "Mọi người cùng chung sức và hoàn tất việc chuẩn bị."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hợp tác, giúp sức"
+        }
+      },
+      "content_hash": "86f727ea5908e53ed4c40b54317f41c7ebbc46417b2e6164fd8716208982bd82",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "きょうりょく",
+        "romanization": "kyouryoku",
+        "text": "協力"
+      },
+      "id": "7b8c2175-5c60-56f0-8b79-26d8aec12de3",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-kyouryoku",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "会社は即戦力となる人を求めています。",
+            "translation": {
+              "vi": "Công ty đang tìm người có thể làm việc ngay."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đòi hỏi, tìm kiếm, yêu cầu"
+        }
+      },
+      "content_hash": "5292bb3f0c4f4fd7330b083fdddefe90cedfd72681d2cc924ee0590cbd4baa11",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "もとめる",
+        "romanization": "motomeru",
+        "text": "求める"
+      },
+      "id": "d820c669-ed5a-518e-9ef9-22902928b37f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-motomeru",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "面接の結果、三人を採用しました。",
+            "translation": {
+              "vi": "Sau phỏng vấn, chúng tôi đã nhận ba người."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tuyển dụng, nhận vào làm"
+        }
+      },
+      "content_hash": "823e4f66a16abc7608f9e99214a9fa7e2e29ce2a1b4bd41d54a04f99984398c2",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "さいよう",
+        "romanization": "saiyou",
+        "text": "採用"
+      },
+      "id": "5c1c6f93-54b4-563b-ba01-bb2c629631d0",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-saiyou",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "入場できる人数に制限があります。",
+            "translation": {
+              "vi": "Có giới hạn về số người được vào."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "hạn chế, giới hạn"
+        }
+      },
+      "content_hash": "1c6f069ad317c1e2c298123bd1c58e90aea09b44ad5eb815b81294ff339e6208",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "せいげん",
+        "romanization": "seigen",
+        "text": "制限"
+      },
+      "id": "5ca433c7-3e03-5ede-b6a7-36f53f5ef393",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-seigen",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この工場では自動車の部品を製造しています。",
+            "translation": {
+              "vi": "Nhà máy này sản xuất linh kiện ô tô."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chế tạo, sản xuất"
+        }
+      },
+      "content_hash": "de762171fe4746071cfdb0a4092e222495823c427d371d6d2afa1019ba771e93",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "せいぞう",
+        "romanization": "seizou",
+        "text": "製造"
+      },
+      "id": "989b4174-1ed6-5a74-8fdd-6b880118fc2d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-seizou",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "借金を返すために、毎日働いています。",
+            "translation": {
+              "vi": "Tôi làm việc mỗi ngày để trả nợ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nợ, vay nợ"
+        }
+      },
+      "content_hash": "4b3422506330c4e5516e4be8909eea91ad52242b080225b50bbf0fe28e42fcc1",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しゃっきん",
+        "romanization": "shakkin",
+        "text": "借金"
+      },
+      "id": "3ada2ce6-4f96-5252-872f-05dd53fd0795",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-shakkin",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "電気の消費量が増えています。",
+            "translation": {
+              "vi": "Lượng điện tiêu thụ đang tăng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tiêu dùng, tiêu thụ"
+        }
+      },
+      "content_hash": "0c471b1c72b0787d0156e0812fb3167c8986ea431c619e477e2c503facbe2061",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しょうひ",
+        "romanization": "shouhi",
+        "text": "消費"
+      },
+      "id": "04ad03d8-a7a4-5adb-85f0-d66dd4404c38",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-shouhi",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "部長の承認が得られました。",
+            "translation": {
+              "vi": "Chúng tôi đã nhận được sự phê duyệt của trưởng bộ phận."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "phê duyệt, công nhận"
+        }
+      },
+      "content_hash": "53e7c0e1229d26ea59b4131f6533478ac7c4256f3e3ac2bd86c464e833472927",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しょうにん",
+        "romanization": "shounin",
+        "text": "承認"
+      },
+      "id": "2fdb6567-ef52-5fc8-826a-f6e92debab70",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-shounin",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "努力が認められて、課長に昇進しました。",
+            "translation": {
+              "vi": "Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thăng chức"
+        }
+      },
+      "content_hash": "4615c120f84dc1b5a07e4d660348dc455c28bd99447698205eda826594eba178",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しょうしん",
+        "romanization": "shoushin",
+        "text": "昇進"
+      },
+      "id": "fd050a94-e614-5903-a2cc-9e7eafa180a0",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-shoushin",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "国によって、宗教や習慣が違います。",
+            "translation": {
+              "vi": "Tuỳ nước mà tôn giáo và phong tục khác nhau."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tôn giáo"
+        }
+      },
+      "content_hash": "cbe69cd6e07b8df7b751226a2b14fbd3ac590aca331848c19c1a6de0f8f4b165",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "しゅうきょう",
+        "romanization": "shuukyou",
+        "text": "宗教"
+      },
+      "id": "39221057-49e5-5936-bc22-c34c820fe623",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-shuukyou",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "受付は五時で終了します。",
+            "translation": {
+              "vi": "Quầy tiếp nhận sẽ đóng lúc năm giờ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "kết thúc (sự kiện, hệ thống)"
+        }
+      },
+      "content_hash": "b0fcbc67403fa1f923f57e5ad4263f9612a8aa5ee7aacc08f08a911551b97281",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しゅうりょう",
+        "romanization": "shuuryou",
+        "text": "終了"
+      },
+      "id": "35cb8e4b-ceec-52f5-9b67-dbd4c639a4ad",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-shuuryou",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "事故のせいで、大きな損失が出ました。",
+            "translation": {
+              "vi": "Do tai nạn, đã phát sinh tổn thất lớn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "tổn thất, thua lỗ"
+        }
+      },
+      "content_hash": "3a7c97771deb72a2236971546a7ca4a611b03b95585243564395be48c76b579b",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "そんしつ",
+        "romanization": "sonshitsu",
+        "text": "損失"
+      },
+      "id": "35539b5a-e13c-5f96-a4ff-98dbbc0170f6",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-sonshitsu",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "父は来年、六十歳で退職します。",
+            "translation": {
+              "vi": "Bố tôi sẽ nghỉ hưu vào năm sau ở tuổi sáu mươi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nghỉ việc, về hưu"
+        }
+      },
+      "content_hash": "1ab97c2bdf0ad1ca45c7961b7c6ad515b46dd521f0a5a49d306100e010ec7da1",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "たいしょく",
+        "romanization": "taishoku",
+        "text": "退職"
+      },
+      "id": "551e86cd-fabf-55d1-8243-f0ec44d23b67",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-taishoku",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "新しい方法を提案しました。",
+            "translation": {
+              "vi": "Tôi đã đề xuất một phương pháp mới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đề xuất"
+        }
+      },
+      "content_hash": "bddba9ec0a2bb48d3883538f26397156650a96512d87aad8c61926ea1c28086f",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "ていあん",
+        "romanization": "teian",
+        "text": "提案"
+      },
+      "id": "428aa228-a190-5f97-b0a5-d0632e928006",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-teian",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "給料が低いので、転職を考えています。",
+            "translation": {
+              "vi": "Lương thấp nên tôi đang nghĩ đến chuyện chuyển việc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "chuyển việc"
+        }
+      },
+      "content_hash": "1ae25d80c80d5f867d28b085bb9eaa958595b743da8ad66b95d2070a244cb409",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "てんしょく",
+        "romanization": "tenshoku",
+        "text": "転職"
+      },
+      "id": "1fbb577d-f58e-5186-89d1-c272187bb288",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-tenshoku",
+      "language_code": "ja",
+      "level_code": "n3",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "荷物を受け取ったら、連絡してください。",
+            "translation": {
+              "vi": "Khi nhận được hành lý, xin hãy liên lạc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nhận (đồ, tiền, thư)"
+        }
+      },
+      "content_hash": "d8bb2a95123b9010599cbc61f78c5c98319a23555264e1c5e75e6c4902b46ff3",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "うけとる",
+        "romanization": "uketoru",
+        "text": "受け取る"
+      },
+      "id": "a0c968c9-08e5-559e-a1e3-2e30cb5c65ea",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n3-u11-uketoru",
       "language_code": "ja",
       "level_code": "n3",
       "reviewed_at": "2026-10-21T12:00:00+07:00",
@@ -815066,6 +836110,856 @@ select content_private.import_bundle($bundle${
       "is_demo": false,
       "item_type": "vocab",
       "key": "ja:item:n4-u10-yureru",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "店の後ろに駐車場があります。",
+            "translation": {
+              "vi": "Phía sau cửa hàng có bãi đỗ xe."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bãi đỗ xe"
+        }
+      },
+      "content_hash": "cf5df391e55eb6daf7bd40706ff7eafa84a43bcaa3b9ac9cbbe1f603a1bd7cb7",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "ちゅうしゃじょう",
+        "romanization": "chuushajou",
+        "text": "駐車場"
+      },
+      "id": "5be5c8bf-6f24-5681-8dc1-799efa6d4a37",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-chuushajou",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "雪で道路が凍っています。",
+            "translation": {
+              "vi": "Đường bị đóng băng vì tuyết."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đường (giao thông)"
+        }
+      },
+      "content_hash": "77d1a9ff37148138f4da4a2fe1dc9158132200ade63d02b73714cb8c740ae1ca",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "reading": "どうろ",
+        "romanization": "douro",
+        "text": "道路"
+      },
+      "id": "31cdde3c-0663-51c0-b338-d0811c590506",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-douro",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "この店は夜十時まで営業しています。",
+            "translation": {
+              "vi": "Cửa hàng này mở cửa đến mười giờ đêm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "kinh doanh, mở cửa; bán hàng"
+        }
+      },
+      "content_hash": "29d74e640e5baac9397b19ad9d65376f8fd0c94c11cbfa85e6c75911e5d363b6",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "えいぎょう",
+        "romanization": "eigyou",
+        "text": "営業"
+      },
+      "id": "d767ecd1-1223-504a-9b6f-03aa3bc1296d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-eigyou",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "毎日勉強して、偉いですね。",
+            "translation": {
+              "vi": "Ngày nào cũng học, bạn giỏi thật đấy."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giỏi, đáng nể; có địa vị cao"
+        }
+      },
+      "content_hash": "b3580f98d458eca9281310a0b221c721ac190e485b65fd2b5dde599c3052e056",
+      "difficulty": 3,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "えらい",
+        "romanization": "erai",
+        "text": "偉い"
+      },
+      "id": "a83ac8e8-5ba1-5781-9162-9b88b018ee9f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-erai",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "ガソリンが少なくなったので、入れに行きます。",
+            "translation": {
+              "vi": "Xăng sắp hết nên tôi đi đổ."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "xăng"
+        }
+      },
+      "content_hash": "e86c939aa0764acec2ee9050c3b8b54cea074289389278372a540f288333c7c9",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ",
+        "romanization": "gasorin",
+        "text": "ガソリン"
+      },
+      "id": "0006f4b2-d7d9-5576-9403-6abee49bba71",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-gasorin",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "みんなの前で話すのは恥ずかしいです。",
+            "translation": {
+              "vi": "Nói trước mặt mọi người làm tôi ngại."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "xấu hổ, ngại"
+        }
+      },
+      "content_hash": "bf5f6988a4e61d2b288cde23cc17128eeb1530ba7d0ce900186bf32776a902d0",
+      "difficulty": 3,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "はずかしい",
+        "romanization": "hazukashii",
+        "text": "恥ずかしい"
+      },
+      "id": "97809021-c914-55a3-9cb9-439c7157d43e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-hazukashii",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "野菜を油で炒めます。",
+            "translation": {
+              "vi": "Tôi xào rau với dầu."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "xào"
+        }
+      },
+      "content_hash": "8290455d1165bfae8ae242e03481b130285a5e4053f1ac34e058878d00eac7fb",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "いためる",
+        "romanization": "itameru",
+        "text": "炒める"
+      },
+      "id": "9f192ccc-f254-558c-b88e-92868d7e0d05",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-itameru",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "洗濯物がまだ乾いていません。",
+            "translation": {
+              "vi": "Quần áo giặt vẫn chưa khô."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "khô"
+        }
+      },
+      "content_hash": "d65d2aee4889ff3002e39ba53c5bb2d23e4be0e686288826e6281773919bddbc",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "かわく",
+        "romanization": "kawaku",
+        "text": "乾く"
+      },
+      "id": "be5090ec-b879-525a-ad7f-de1baedff33b",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-kawaku",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "旅行の計画を立てています。",
+            "translation": {
+              "vi": "Tôi đang lập kế hoạch cho chuyến du lịch."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "kế hoạch"
+        }
+      },
+      "content_hash": "4e34777281668cc83a9ccc5dab0e9b6571a465bcca4fd442926630486f05f196",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "けいかく",
+        "romanization": "keikaku",
+        "text": "計画"
+      },
+      "id": "d85ae774-2d7f-5ffb-ba01-bfed01f1426e",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-keikaku",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "熱があるので、今日は授業を欠席します。",
+            "translation": {
+              "vi": "Vì bị sốt nên hôm nay tôi vắng mặt buổi học."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "vắng mặt"
+        }
+      },
+      "content_hash": "d65143ff276f504ff72ce9991051cda517f5b4d4ba592e020485a3a477bcb30d",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "けっせき",
+        "romanization": "kesseki",
+        "text": "欠席"
+      },
+      "id": "0e5483d7-0048-5305-9c1a-bab7c63e10fa",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-kesseki",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "希望の会社に入ることができました。",
+            "translation": {
+              "vi": "Tôi đã vào được công ty mình mong muốn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "nguyện vọng, hy vọng"
+        }
+      },
+      "content_hash": "90ac9709aff79c8534d139bfa4bd10f19650ef481f907915d653a905747dc295",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "きぼう",
+        "romanization": "kibou",
+        "text": "希望"
+      },
+      "id": "6c8b0677-dd34-5d65-849d-1f0e2b54ace2",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-kibou",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "忘れ物を取りに、会社に戻ります。",
+            "translation": {
+              "vi": "Tôi quay lại công ty để lấy đồ để quên."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "quay lại, trở về"
+        }
+      },
+      "content_hash": "5e35890c5b761d7eb42223b2326fbab71030bd42789392241a0bbbf96594eaeb",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "もどる",
+        "romanization": "modoru",
+        "text": "戻る"
+      },
+      "id": "686e7e33-47d1-51a6-8f80-bdae4e53c923",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-modoru",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "雨に濡れて、風邪を引きました。",
+            "translation": {
+              "vi": "Tôi bị ướt mưa nên bị cảm."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bị ướt"
+        }
+      },
+      "content_hash": "13532e74ae2f6224a30b496a9aae0c2ca04df0aff820e5e9c2f6d81b742a9a8e",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "ぬれる",
+        "romanization": "nureru",
+        "text": "濡れる"
+      },
+      "id": "bc925fd8-98f8-53a8-9efe-eedf6b28c317",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-nureru",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "先生は遅刻した学生に怒りました。",
+            "translation": {
+              "vi": "Thầy giáo đã giận sinh viên đến muộn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "giận, nổi giận"
+        }
+      },
+      "content_hash": "38fbd68a511db0437e3e847dede74e31c050a1e76a4792193e98bb51512a8328",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "おこる",
+        "romanization": "okoru",
+        "text": "怒る"
+      },
+      "id": "24982fe9-2e54-5449-8290-8641dac03633",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-okoru",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "一人で暮らすと、時々寂しくなります。",
+            "translation": {
+              "vi": "Sống một mình, đôi khi tôi thấy cô đơn."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "cô đơn, buồn tẻ"
+        }
+      },
+      "content_hash": "5661ea601f52533b6bc2aed0b9ef9970cf8ea0fbd6427b47b13b898c5c99eca8",
+      "difficulty": 3,
+      "front": {
+        "pos": "tính từ い",
+        "reading": "さびしい",
+        "romanization": "sabishii",
+        "text": "寂しい"
+      },
+      "id": "96adba48-f973-5b36-9688-95a15a1509df",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-sabishii",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "実験が成功して、みんな喜びました。",
+            "translation": {
+              "vi": "Thí nghiệm thành công nên mọi người rất vui."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thành công"
+        }
+      },
+      "content_hash": "93a915bb111d9ff7e5c235959e45488c7e17aec5f799bcd4abb10bca7256c82e",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "せいこう",
+        "romanization": "seikou",
+        "text": "成功"
+      },
+      "id": "2bb7b1e6-3668-5367-a013-8d07ba115264",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-seikou",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "失敗しても、あきらめないでください。",
+            "translation": {
+              "vi": "Dù thất bại, xin đừng bỏ cuộc."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "thất bại, sai sót"
+        }
+      },
+      "content_hash": "024d95505b05dd771c36d6bcf7190ed93d5b4f88a0a21f9ed478b70fc7de14db",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しっぱい",
+        "romanization": "shippai",
+        "text": "失敗"
+      },
+      "id": "c7ef9cad-1d7a-5479-b447-1a6a7e23e66f",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-shippai",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "明日の会議には、全員出席します。",
+            "translation": {
+              "vi": "Cuộc họp ngày mai tất cả mọi người sẽ tham dự."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "có mặt, tham dự"
+        }
+      },
+      "content_hash": "bef7f8cd5f0d47a2ca440682973102562392c452eb507be8251ed7b93249f07e",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しゅっせき",
+        "romanization": "shusseki",
+        "text": "出席"
+      },
+      "id": "4f53b8c3-81ab-55fe-9728-a556ecb16790",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-shusseki",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "壊れた時計を修理に出しました。",
+            "translation": {
+              "vi": "Tôi đã mang chiếc đồng hồ hỏng đi sửa."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "sửa chữa"
+        }
+      },
+      "content_hash": "ec42caceaa0892da9f8ccf877a019e3eca5c962eb10a1f37075940263e6dd3ca",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "しゅうり",
+        "romanization": "shuuri",
+        "text": "修理"
+      },
+      "id": "12ee7806-d0ce-51f5-9d59-ec077662c7fe",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-shuuri",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "進路について、先生に相談しました。",
+            "translation": {
+              "vi": "Tôi đã xin ý kiến thầy về con đường sắp tới."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "bàn bạc, xin ý kiến"
+        }
+      },
+      "content_hash": "e6e102d9a08ccaeb077ab3902645c4bab0f3480c42f8c246d948611051215913",
+      "difficulty": 3,
+      "front": {
+        "pos": "danh từ / động từ する",
+        "reading": "そうだん",
+        "romanization": "soudan",
+        "text": "相談"
+      },
+      "id": "708a83b2-7f33-508b-a62c-a8562a1c7e94",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-soudan",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "昔お世話になった先生を訪ねました。",
+            "translation": {
+              "vi": "Tôi đã đến thăm người thầy từng giúp đỡ tôi."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đến thăm, ghé thăm"
+        }
+      },
+      "content_hash": "f1c9620a5d0ba771b03041508072175497edea2ebc5138a1ca8744b3f8438705",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "たずねる",
+        "romanization": "tazuneru",
+        "text": "訪ねる"
+      },
+      "id": "35d04f2c-4b11-5c03-9785-eee4a3cc7e0d",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-tazuneru",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "プレゼントをきれいな紙で包みました。",
+            "translation": {
+              "vi": "Tôi đã gói quà bằng giấy đẹp."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "gói, bọc"
+        }
+      },
+      "content_hash": "30cd07f1caa58ab8b09e3245dca23dd47a3c225638fd58189335114eb7e6bdf4",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "つつむ",
+        "romanization": "tsutsumu",
+        "text": "包む"
+      },
+      "id": "bb7c9b4b-1bd1-5171-a906-1a830af560ec",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-tsutsumu",
+      "language_code": "ja",
+      "level_code": "n4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skill_tags": [
+        "vocabulary"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published"
+    },
+    {
+      "audio_path": null,
+      "back": {
+        "examples": [
+          {
+            "target": "お湯を沸かして、お茶をいれます。",
+            "translation": {
+              "vi": "Tôi đun nước rồi pha trà."
+            }
+          }
+        ],
+        "meaning": {
+          "vi": "đun sôi, đun nước"
+        }
+      },
+      "content_hash": "b0845b1be48d16f1c29207d82b44035036cafb3ca422b5de8504ebd42849a460",
+      "difficulty": 3,
+      "front": {
+        "pos": "động từ",
+        "reading": "わかす",
+        "romanization": "wakasu",
+        "text": "沸かす"
+      },
+      "id": "d70a80f6-aaa9-5d2e-89dc-77b89f40eaba",
+      "is_demo": false,
+      "item_type": "vocab",
+      "key": "ja:item:n4-u11-wakasu",
       "language_code": "ja",
       "level_code": "n4",
       "reviewed_at": "2026-10-21T12:00:00+07:00",
@@ -935973,6 +957867,270 @@ select content_private.import_bundle($bundle${
       "role": "introduce"
     },
     {
+      "item_id": "fd45a05c-316a-5199-ac05-b02ec63b2994",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b60ac74d-2bd1-5c7d-92ef-d997a93252cc",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f643dbc9-af85-55ee-adc3-03012998cb44",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "61acdb9f-d379-5467-b469-00f4624719ff",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "765e3e36-b7b5-5e95-ad41-2d23e8551e73",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b2eb3d4b-7ffa-5242-9c92-a0b1d3bb3940",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ffe660d2-6d87-5d86-81e0-517626115845",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7657a3f1-3292-5339-80c4-07c72f09b0ce",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7ca464ae-ad5f-5198-a669-a7cdfecf1619",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bbca2504-9a2e-5027-9981-c3175aeba6e3",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "364b2416-f7d5-5972-ba11-ad11bd248730",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e2a85799-d09d-5609-9d23-5f0bfce7edf5",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "83ad0bec-56c3-5fb7-9162-8463037a0e52",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "de28bad1-36da-53b2-9a0b-2ae2a41cc70e",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 13,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d78b7c6d-7d23-52af-aa31-8e9e1700c655",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 14,
+      "role": "introduce"
+    },
+    {
+      "item_id": "944fc64f-c391-55d5-8462-52cb73f1e1e9",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 15,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c4bab92d-8a56-5902-a731-2a3ef5536185",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 16,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ffab803b-e6b6-56a7-b082-245b84309758",
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "position": 17,
+      "role": "introduce"
+    },
+    {
+      "item_id": "94deb3c3-f2ff-50c3-9acb-605005c1eec1",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "07d0f678-368b-5f45-b658-317450d69629",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bc09d55d-f010-569a-8343-0b730d7d7963",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5ea88b84-8160-5674-b804-915d32115fff",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c2b8bbee-186e-5206-9a54-d7928447e91f",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d01078e4-ba2d-52ba-b91d-3232efa9ed9c",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "abc228ca-4b6b-5d10-ac74-c6c9794b99c1",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ff4caa4f-948d-5cc3-a255-eaaf602d1d5f",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6ef66485-e782-5497-b0ab-4b73166970e5",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f6eecca2-b7af-565c-9aec-fc93ffa72873",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "518f9714-6a6f-5083-b2c3-8aa55ff2b489",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "18af3008-7f26-59a1-9d2b-943480e16f69",
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "23d60493-187e-5a78-8e66-ddaf9dd61d5b",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c83209d5-e066-50a1-a054-b873aca7cfee",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8c84d0b6-d90e-5ddd-a79d-383aff31325a",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7ee09406-419e-5d65-8679-c26c7afcf734",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4979b920-46e0-53cb-ad96-15cceac6d1e1",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a7d21901-8817-51e1-9959-c6873496ea33",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bf179d03-9017-5729-bfa8-4b168d2b1eba",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "034f6809-b5bb-5849-88df-5c9a287e063f",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "681a663a-d80a-57b5-9c11-1a771f4896c3",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8875dec2-5cf3-5ae2-8551-64ec72880ab8",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "dc34b4a3-c88f-55e9-9729-e90cbe7d756e",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "aacb326e-5369-5a1a-a38a-22ae0d74563f",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9a44a930-168b-538f-816a-fb42a7d9af1d",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0926873c-1969-5b3f-9a78-5b10dd861783",
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "position": 13,
+      "role": "introduce"
+    },
+    {
       "item_id": "bd0b5ec4-6918-59a6-a5a0-2761a6578b77",
       "lesson_id": "428d30aa-cdfb-5ef6-9b24-7f4754bf3afd",
       "position": 0,
@@ -936861,6 +959019,156 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "f4121679-c0df-5c7a-8cc0-02d4217364f4",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "36da575e-143d-52c6-951a-5175f63c3e36",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2beb6a23-4cf9-5653-aa53-24344bd32456",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1cda7ace-eccb-597f-bdef-094c1110dcf7",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "688635fa-b49a-58eb-bb4d-1f075f7b7cb1",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e407d509-11fe-5465-8201-931ff122056f",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
+      "item_id": "65d06904-22df-58f7-9ca5-95d44afbd1ec",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2c04fce7-e3ef-510e-a16b-555bc4a07b1a",
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "eacf2232-a495-5abe-a5e5-dd43f9c2e251",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "118e76f3-0d04-5d59-8512-c35fca2a3a21",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "80678d7f-b245-5d89-ab64-2c1061960a22",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1bcce33d-a116-501b-8762-e0922802c6c2",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0ba772e1-8c86-535d-b172-437ccef555a9",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3203c150-21ce-5c0d-892a-c02d77034630",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e5aaed23-a58b-5016-99e9-a1b68082e11b",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ec5de667-4660-5285-9ca8-31ae955903ac",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "728a29a0-7c2f-5e71-b6c9-4350fab03909",
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0d51c36a-e9cf-532e-b6cc-768a81c0631f",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0e8d1681-291e-5f2f-8368-87923c92cf8f",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0352a7b7-40ca-533e-9909-8bd10b925ebb",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d7735632-26ed-5289-8e86-3a95694fe236",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "43ce7e08-9c04-596a-80fd-5a5c19c50939",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a8925387-ec4c-59e0-9633-6d2cbfb04bcd",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6d96fc09-118a-588c-a44e-bf1263ca9d01",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "23042e39-590f-5747-a54a-69ff3b5fd616",
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
       "item_id": "db459b8e-05c5-5c81-98e3-3467ba8c0888",
       "lesson_id": "b87b86f0-6917-52c7-88cc-6b92766fa77b",
       "position": 0,
@@ -937446,6 +959754,642 @@ select content_private.import_bundle($bundle${
       "item_id": "14d7da09-b6fb-533c-b524-72a005c8fe0d",
       "lesson_id": "a1611dc7-26e7-5d1f-bcc3-081cac06c1de",
       "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bf4a144a-bc22-55ca-9aac-e5cfe63019ff",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "71e43198-4568-5621-bf8b-63f0fdc139ac",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f10aed19-7f08-54dc-8080-abe57e2b105b",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "aec3be57-c9d8-5857-9674-e24b21df062e",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "494a76e6-61a0-5d09-9950-0eda84679e37",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c0eb2a09-4b09-5ee0-a57d-f4b79f28347b",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e0a153f4-4a20-55e5-b092-0e09b15c23b5",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "04a4c051-50bf-5aad-b502-6708c4dc115c",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b4188ad8-9ad2-5211-8dc8-2e47b00852c1",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "23fb3318-969c-5f06-9aa1-9a7fd338595d",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c45254ed-2ae4-5d49-bc9c-01cdf5c2069f",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "50475aa4-72b2-5058-985c-504760f803ff",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "728b27d4-9abc-5e18-a630-5a05b2100d1b",
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "523ed247-7bce-5cde-b041-14bb18077dcb",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "77404c83-e862-56dd-ae67-402aa421abb0",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "32e4fb15-bf4b-50a8-a6d8-f67d4d08ab18",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e20b80b9-693b-542a-9154-8389ac618cfe",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a045e21c-f98d-542d-b49f-5dfca789389a",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "10a14e57-776a-5c28-9208-8be2675a6baf",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5a4891ae-8c31-5f32-8190-b8842d7ea7ab",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0ee744ef-63b2-57e4-8f09-6f5b446c30d9",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a3be56da-9cd5-57a1-a845-14b30d2e6026",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1dfbd5c8-99f9-582c-a853-ec7898fd9e0e",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a85363bb-3990-5286-b27a-0709447a426e",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a8324740-4863-5d23-95e5-f8383d92fe40",
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "41c00daa-4f9b-5d3f-8a1e-5bdbc7f1223a",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0c48bb3b-038e-5ef2-aa99-c8e24951d3e9",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f904cd1a-5389-540e-8981-9b36055ea1f6",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "79874362-aec7-5687-a2f6-c752b08ea4ae",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "705a5b90-9961-5690-b7be-0e284f17311d",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "411baa6a-8ba7-5d83-83d3-1bd7c076427f",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "657df863-69e5-55e4-9c2c-838463384a22",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d44ba388-8acb-5032-95b6-32fa035d622b",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0908b3f4-9459-5c4d-a4dc-93fc7f47f703",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d6c46efb-07a3-5e8f-9a7f-ae373a20df5e",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fa78b85a-4d2a-5f06-bb81-d1151794038f",
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c000d098-64d4-543f-a262-7ecb2323d9e0",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a57e91f5-cd10-51ff-98da-a576bcdfe3d0",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "965d1ada-daf0-5f0f-abf6-51eefa8a95bb",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b397e6ee-771e-524d-814b-47ea5a437ac5",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "28efd413-ffaa-5372-a4d3-2d2068817fc3",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7ca0e26f-3fb6-51e9-b250-48f99ce229a2",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "51652c98-b3f3-56b6-ae5d-1473bc70cdb9",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b5455649-aae9-5624-8c7e-36cf41052aee",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b857f0b2-382c-536c-87cc-219ca457a1a5",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8c69debe-ca4a-5fff-8b00-15ccba4ab298",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9c2961fe-c7b7-5523-a70a-4663046a3e83",
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ec6712df-71e4-598c-83f6-cb90c3d5991d",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "90444c49-30db-5820-969b-3c1f135104f0",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "aa7880f9-3098-5565-aa7a-97f8a0c8656a",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "df48f201-4ce5-5fa6-a54f-cad56dd99a12",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a40acb1a-4829-505f-96eb-d5112798582f",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6b495e76-7cf1-5976-8549-ea5919475657",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "b76aa21d-021f-5c29-9a5c-0c50407f1057",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 6,
+      "role": "reuse"
+    },
+    {
+      "item_id": "905675a5-de3e-528d-9616-0bd95b02845a",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d539becb-d295-57fd-af76-d9a30cb93536",
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "position": 8,
+      "role": "reuse"
+    },
+    {
+      "item_id": "a61fdba3-0a27-56be-b957-081a83bd0a9a",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3f114c68-db16-5757-a246-ffa51741fb91",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bf687d21-9d2d-542e-b0d7-eaee729f62c5",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ba6b103a-7fef-5e36-a945-73e238bf685f",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7f1f5b8b-77cf-58aa-ae6c-615d96494ab3",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d59d032b-8da6-50e9-8800-a801b53860ed",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f318a736-e12c-5171-8e5b-3055d8732013",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f7f71d63-60c0-5f53-b749-8f9bf7134449",
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "23822057-e22a-5576-b914-eca3fdcc74d2",
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c22da936-854f-5ccc-9cb9-6496917eb18f",
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e7f4f038-b425-5d36-95e7-77d7f3a98be3",
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e73463a2-bb44-56a4-82f8-b0b66cd3d89f",
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7180f3c8-91a6-55a0-a08f-34889ebc9803",
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0cc67512-9d8e-5efb-a119-042f019d1241",
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "907d75b0-9b4b-5f22-a4b7-324f6e5cab6f",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "e364173c-0990-5c2f-9c5b-27385ddf1812",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8803ea1b-78cf-567d-8292-d5d0f3fa7d1c",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "94adb0ab-e0b4-588a-82b3-0bf5aacb0017",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f049afc0-ffd8-56d1-a080-e05cff2833cc",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a178830d-961c-598c-bda0-a5ab34c61ff7",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6ec28408-dd3e-567e-9d5e-33e7f30cb213",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9f772004-b195-5032-8894-e30058ad4869",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "010bebc9-aa99-5a61-94d4-386c373ce6f2",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bc914781-4d40-56cd-a0e7-bbfe74d7e2f0",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "80a8d1f0-ba73-56f4-a6e5-76fd23dec25c",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "17ac72d6-bf39-5364-aec4-56ffed824f44",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "42dab346-6031-55f1-9cbc-e76e92ba1d4e",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "06e7adbe-a106-5fda-b589-8afbe5e9236f",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 13,
+      "role": "introduce"
+    },
+    {
+      "item_id": "162056ab-9ba0-51f1-82f1-c121c5f28c1f",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 14,
+      "role": "introduce"
+    },
+    {
+      "item_id": "64a82fdf-5628-5ef0-8573-32577c330781",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 15,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a9ba9c8c-bd41-5fda-9243-8d5955badfe4",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 16,
+      "role": "introduce"
+    },
+    {
+      "item_id": "37094e30-b231-5239-92f9-37e66acac2b6",
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "position": 17,
+      "role": "introduce"
+    },
+    {
+      "item_id": "157a3b45-67c7-5634-988f-beb2605c8c86",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4726f56c-3f33-5318-9898-6f7298ca2495",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "81da517b-7aab-5bfe-b59c-533e88e45d3b",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c909ad3c-7d50-5250-ab14-8fde04076246",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6e078010-1a4a-5743-81ce-d6230f406636",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "772bf3e3-974f-5a72-896a-438686da336d",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d5d03b6c-3ab3-5c77-a9dc-cbbcd95ba76c",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "139bf45d-e51e-53a0-b461-4894c9d267cd",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "09fc31ec-a9d0-5c45-963b-f25bcc20d928",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a8785a92-0918-5a3b-bdb1-84cb2f89772b",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8229e758-695e-5643-a87e-64ce0c643b79",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "40365311-25e4-5ec3-8fae-b69678abbeea",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "36b6fecc-1292-5e51-8866-78a721031cbb",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5b475d9b-308b-594d-968f-47552cdcf905",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 13,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4d91b8db-b2a0-5af7-a879-2c5518f079d5",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 14,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d8406a51-cdcc-597e-bb6a-df3a39e41351",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 15,
+      "role": "introduce"
+    },
+    {
+      "item_id": "8dbb44d5-1bec-5119-b0f6-083186e74270",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 16,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a1076d3a-6ea4-5783-968d-4e20a681ebc6",
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "position": 17,
       "role": "introduce"
     },
     {
@@ -939015,6 +961959,84 @@ select content_private.import_bundle($bundle${
       "role": "reuse"
     },
     {
+      "item_id": "e78ba1bb-0fe1-57ef-865a-3f078c36339d",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "ae510e83-252e-5e7e-bff0-9182b7b07bc4",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "39221057-49e5-5936-bc22-c34c820fe623",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3e7b11cd-42f9-549e-8a6f-ab27c105b87d",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "46678b21-8b8a-53d7-9996-f791b7546351",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "acac8ec3-be86-5554-ada2-9ca113f3e609",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "372ee633-a724-5c4e-8201-1d4fa9f5a536",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6ece7a89-ed9f-5037-912a-3672756835a3",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "25778ebf-0bf3-52bb-bb90-ffa7840d72e4",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "989b4174-1ed6-5a74-8fdd-6b880118fc2d",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "04ad03d8-a7a4-5adb-85f0-d66dd4404c38",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "35539b5a-e13c-5f96-a4ff-98dbbc0170f6",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "3ada2ce6-4f96-5252-872f-05dd53fd0795",
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "position": 12,
+      "role": "introduce"
+    },
+    {
       "item_id": "e839c79d-35b9-5f78-9ac3-704478ce98b2",
       "lesson_id": "54f8887c-484f-5111-a339-729e881433ef",
       "position": 0,
@@ -939307,6 +962329,66 @@ select content_private.import_bundle($bundle${
       "lesson_id": "3e3e9605-059d-5e74-9df7-d4e245cb53aa",
       "position": 9,
       "role": "reuse"
+    },
+    {
+      "item_id": "0953ade3-4102-5cee-beb3-f9fdc9dfafdd",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5c1c6f93-54b4-563b-ba01-bb2c629631d0",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "1fbb577d-f58e-5186-89d1-c272187bb288",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "551e86cd-fabf-55d1-8243-f0ec44d23b67",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "fd050a94-e614-5903-a2cc-9e7eafa180a0",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "19459f2a-0dbe-59f2-8382-ca7296a876a7",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a0c968c9-08e5-559e-a1e3-2e30cb5c65ea",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d820c669-ed5a-518e-9ef9-22902928b37f",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "39a87462-dec0-5de8-8df6-0d8812a1cda8",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "35cb8e4b-ceec-52f5-9b67-dbd4c639a4ad",
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "position": 9,
+      "role": "introduce"
     },
     {
       "item_id": "42483978-b0fd-5864-b8fe-072de0192fa8",
@@ -940128,6 +963210,66 @@ select content_private.import_bundle($bundle${
       "item_id": "1b51820c-6199-59fd-baeb-23ee82c32516",
       "lesson_id": "94ae9a1b-8858-5bb8-bf80-5d05db71a64d",
       "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "f69e4df3-4332-5359-9d3b-a7cc09271bb1",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "41ff917f-0f10-5907-a672-0977e8890abb",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5ca433c7-3e03-5ede-b6a7-36f53f5ef393",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c604075e-35a4-55a2-b890-1fa799eed271",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "33ba33fa-252b-5179-837f-58c24923a29e",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7a724778-b0b2-5ca1-8318-803e37fc3c72",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2fdb6567-ef52-5fc8-826a-f6e92debab70",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "428aa228-a190-5f97-b0a5-d0632e928006",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "7b8c2175-5c60-56f0-8b79-26d8aec12de3",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "645f1694-eb92-577d-bc30-9aa51b693a4c",
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "position": 9,
       "role": "introduce"
     },
     {
@@ -941019,6 +964161,42 @@ select content_private.import_bundle($bundle${
       "role": "introduce"
     },
     {
+      "item_id": "d70a80f6-aaa9-5d2e-89dc-77b89f40eaba",
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "9f192ccc-f254-558c-b88e-92868d7e0d05",
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bb7c9b4b-1bd1-5171-a906-1a830af560ec",
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "686e7e33-47d1-51a6-8f80-bdae4e53c923",
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "35d04f2c-4b11-5c03-9785-eee4a3cc7e0d",
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "586a7287-d5e9-5685-b7ef-3794bcbe9dd5",
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "position": 5,
+      "role": "reuse"
+    },
+    {
       "item_id": "504ba539-1fd1-574f-9ed3-997b752dda21",
       "lesson_id": "a26ad3c7-1816-5e1c-9c64-c517133aa9d1",
       "position": 0,
@@ -941184,6 +964362,42 @@ select content_private.import_bundle($bundle${
       "item_id": "302d6bfc-129b-553d-89ac-c722b11412b6",
       "lesson_id": "98c76817-b6e7-5d26-983f-c929fdd6c3b1",
       "position": 11,
+      "role": "introduce"
+    },
+    {
+      "item_id": "24982fe9-2e54-5449-8290-8641dac03633",
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "96adba48-f973-5b36-9688-95a15a1509df",
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "97809021-c914-55a3-9cb9-439c7157d43e",
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "a83ac8e8-5ba1-5781-9162-9b88b018ee9f",
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "be5090ec-b879-525a-ad7f-de1baedff33b",
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "bc925fd8-98f8-53a8-9efe-eedf6b28c317",
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "position": 5,
       "role": "introduce"
     },
     {
@@ -943044,6 +966258,78 @@ select content_private.import_bundle($bundle${
       "item_id": "ec44aec4-2a24-534a-9dc9-6fa6a8c47a58",
       "lesson_id": "1677de72-9347-5a21-91e2-f2a429eac829",
       "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "708a83b2-7f33-508b-a62c-a8562a1c7e94",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 0,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d85ae774-2d7f-5ffb-ba01-bfed01f1426e",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 1,
+      "role": "introduce"
+    },
+    {
+      "item_id": "6c8b0677-dd34-5d65-849d-1f0e2b54ace2",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 2,
+      "role": "introduce"
+    },
+    {
+      "item_id": "2bb7b1e6-3668-5367-a013-8d07ba115264",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 3,
+      "role": "introduce"
+    },
+    {
+      "item_id": "c7ef9cad-1d7a-5479-b447-1a6a7e23e66f",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 4,
+      "role": "introduce"
+    },
+    {
+      "item_id": "4f53b8c3-81ab-55fe-9728-a556ecb16790",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 5,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0e5483d7-0048-5305-9c1a-bab7c63e10fa",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 6,
+      "role": "introduce"
+    },
+    {
+      "item_id": "12ee7806-d0ce-51f5-9d59-ec077662c7fe",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 7,
+      "role": "introduce"
+    },
+    {
+      "item_id": "5be5c8bf-6f24-5681-8dc1-799efa6d4a37",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 8,
+      "role": "introduce"
+    },
+    {
+      "item_id": "0006f4b2-d7d9-5576-9403-6abee49bba71",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 9,
+      "role": "introduce"
+    },
+    {
+      "item_id": "31cdde3c-0663-51c0-b338-d0811c590506",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 10,
+      "role": "introduce"
+    },
+    {
+      "item_id": "d767ecd1-1223-504a-9b6f-03aa3bc1296d",
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "position": 11,
       "role": "introduce"
     },
     {
@@ -957773,6 +981059,18 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "04bc15c1-993c-5fde-83d4-39ca27eeae32"
     },
     {
+      "lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "prerequisite_lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65"
+    },
+    {
+      "lesson_id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "prerequisite_lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba"
+    },
+    {
+      "lesson_id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "prerequisite_lesson_id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a"
+    },
+    {
       "lesson_id": "428d30aa-cdfb-5ef6-9b24-7f4754bf3afd",
       "prerequisite_lesson_id": "50c83d84-462d-5950-af75-5f4f355c5527"
     },
@@ -957885,6 +981183,18 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "3dc1e9dd-318d-569b-973d-056b4fcec687"
     },
     {
+      "lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "prerequisite_lesson_id": "f3f5f9cc-bc0d-5455-871e-9d5e43b03147"
+    },
+    {
+      "lesson_id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "prerequisite_lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009"
+    },
+    {
+      "lesson_id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "prerequisite_lesson_id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69"
+    },
+    {
       "lesson_id": "b87b86f0-6917-52c7-88cc-6b92766fa77b",
       "prerequisite_lesson_id": "41f2d4d4-d20e-58ab-b7d1-871524ffdb22"
     },
@@ -957923,6 +981233,42 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "a1a3f487-8d64-5d7f-9bae-a0d8b8cd7275",
       "prerequisite_lesson_id": "56a4fb67-d3ed-5390-8302-9b0cfe8b0ea4"
+    },
+    {
+      "lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "prerequisite_lesson_id": "cb5366f1-51c6-5e6b-98a8-e394910e5133"
+    },
+    {
+      "lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "prerequisite_lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d"
+    },
+    {
+      "lesson_id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "prerequisite_lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822"
+    },
+    {
+      "lesson_id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "prerequisite_lesson_id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33"
+    },
+    {
+      "lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "prerequisite_lesson_id": "932a68f0-554e-5a82-a5ba-8b273b42bc96"
+    },
+    {
+      "lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "prerequisite_lesson_id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6"
+    },
+    {
+      "lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "prerequisite_lesson_id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40"
+    },
+    {
+      "lesson_id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "prerequisite_lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad"
+    },
+    {
+      "lesson_id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "prerequisite_lesson_id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83"
     },
     {
       "lesson_id": "246e6916-0141-53be-a916-fe053ab6d5e5",
@@ -958085,6 +981431,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "a65fde9a-2ad3-509f-a920-32c09330c31a"
     },
     {
+      "lesson_id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "prerequisite_lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d"
+    },
+    {
       "lesson_id": "54f8887c-484f-5111-a339-729e881433ef",
       "prerequisite_lesson_id": "b4c31c93-02c5-536a-9e72-ece413258b44"
     },
@@ -958099,6 +981449,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "3e3e9605-059d-5e74-9df7-d4e245cb53aa",
       "prerequisite_lesson_id": "b69f7e53-bdd5-5aeb-8b27-9245fd329849"
+    },
+    {
+      "lesson_id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "prerequisite_lesson_id": "534d661f-6a3d-5f60-8e2e-2ab9483eb324"
     },
     {
       "lesson_id": "987f22d7-edfd-5498-a0f2-7f4f30ed1279",
@@ -958177,6 +981531,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "79dfd7fc-081d-51f1-a8fe-ea9ebefe5294"
     },
     {
+      "lesson_id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "prerequisite_lesson_id": "5738b565-e830-5f55-9e52-852725858e4b"
+    },
+    {
       "lesson_id": "2ba5b54b-14e0-576e-99bd-93a3fe99b28e",
       "prerequisite_lesson_id": "b5e202d1-0c56-5b34-bf60-72f792c15577"
     },
@@ -958249,6 +981607,10 @@ select content_private.import_bundle($bundle${
       "prerequisite_lesson_id": "0cd2a186-d7f3-552d-8d65-bb748b076205"
     },
     {
+      "lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "prerequisite_lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43"
+    },
+    {
       "lesson_id": "a26ad3c7-1816-5e1c-9c64-c517133aa9d1",
       "prerequisite_lesson_id": "83f1a6f8-3afe-5c4f-8ac7-c9bbae15c660"
     },
@@ -958259,6 +981621,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "98c76817-b6e7-5d26-983f-c929fdd6c3b1",
       "prerequisite_lesson_id": "b49d4eb7-9a52-5dbf-86b8-a274190f80e4"
+    },
+    {
+      "lesson_id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "prerequisite_lesson_id": "f050176a-564b-51e6-8b66-a489bac7b66d"
     },
     {
       "lesson_id": "402b4572-fdd2-5140-a992-6326ec7a17ce",
@@ -958399,6 +981765,10 @@ select content_private.import_bundle($bundle${
     {
       "lesson_id": "1677de72-9347-5a21-91e2-f2a429eac829",
       "prerequisite_lesson_id": "04ac66ab-f8c1-5a1a-81d9-4ace7454f408"
+    },
+    {
+      "lesson_id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "prerequisite_lesson_id": "f8bc4344-193d-512c-a092-e0748b43eec0"
     },
     {
       "lesson_id": "21c4b3bf-0b3a-5a26-bd2c-6477e5e92afb",
@@ -1029219,7 +1052589,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "a8db3c7ac6e50be762e94e38eb127fe0ee6c124756ab7ff7aec52f0408c912ce",
+      "content_hash": "4009f827412f8544daa5b6539562d3b67c0e94e56a6e27b8f3b67b6babbfda47",
       "estimated_minutes": 15,
       "id": "8b7e37b7-a84c-5a21-aebf-b622cf5a173a",
       "is_demo": false,
@@ -1029817,7 +1053187,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "d68733ee1781fc7867a624262015f08b1df7e3a3b7bd130d8cadbbbfb2d55dd9",
+      "content_hash": "794301fad6f091b1b3677ab24fe80280d34f558f4208b0cf4e3037f37d871317",
       "estimated_minutes": 15,
       "id": "ce5f5943-eb9d-5647-9540-46ab77fc1da8",
       "is_demo": false,
@@ -1030558,7 +1053928,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "f095c91a085bec24ecce8cf8df473629f7aa3e008670c98944227995aac9e4c3",
+      "content_hash": "cf6038a345ef25fa44c29b2fe9cac917fb162e21ec1a593ef092de1c328c51df",
       "estimated_minutes": 15,
       "id": "2db9b06f-eff7-540c-8173-23f149d3c249",
       "is_demo": false,
@@ -1032172,7 +1055542,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "9ab22726e9879dd571d2fc28f539808f713cda0826fa5e8cefe9067848210d50",
+      "content_hash": "ca321bf90d739d39bc0ffd480dea1a8024e262c576d62dd3a0b41f20640b4eab",
       "estimated_minutes": 16,
       "id": "523eba1c-c629-5a17-8fd3-94118a2ae4b1",
       "is_demo": false,
@@ -1034431,7 +1057801,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "3f444a452a8546c4088c6896270f2578c59206b094d4a41b7c5b812985766e82",
+      "content_hash": "09cf92710d3e82fbd06278a9c57835c8709f99d5889981847a1123cb08900836",
       "estimated_minutes": 15,
       "id": "4ec8e5e7-d906-5b67-a82a-2e9b3599a075",
       "is_demo": false,
@@ -1034721,7 +1058091,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "f6fac3d6177cd6acbc2a0360ba50f5503dbe58d98bce21472e18e6a3e849a1c6",
+      "content_hash": "101b4a320db09d7bd03f565d78141ac1dbd3cf9db68cc82d78c1f0e55b2ca4b0",
       "estimated_minutes": 16,
       "id": "41e67b21-67a2-5f1a-8ae9-4ede192fc6cf",
       "is_demo": false,
@@ -1034866,7 +1058236,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "7906398a59bb17ee6c8090302aeded4d3116500b7e35a81a9e8017501c6bd9fa",
+      "content_hash": "e410f043879d3120cdae4c0b9b195211d64c644edf8f355a735d9a2776381c3b",
       "estimated_minutes": 16,
       "id": "2c204e18-9a3b-54fa-b9ea-c4cc95ae0ea7",
       "is_demo": false,
@@ -1036474,6 +1059844,444 @@ select content_private.import_bundle($bundle${
         "vi": "Đã là... thì - ～とあれば và ～とあって"
       },
       "unit_id": "0da3adc9-1abe-55a2-9224-aec1a6846b73"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc bài bình luận N1 dễ hơn - 改善の余地があります。景気が回復する兆しが見えてきました。問題の本質を見極める必要があります。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Danh từ trừu tượng thường gặp - 余地 (dư địa), 兆し (dấu hiệu), 趣 (nét thanh nhã), 概念 (khái niệm), 基盤 (nền tảng), 側面 (khía cạnh), 一環 (một phần), 枠組み (khuôn khổ), 潮流 (xu thế), 見地 (quan điểm), 次元 (tầng bậc), 要因 (nhân tố), 契機 (cơ duyên), 実態 (thực trạng), 本質 (bản chất), 矛盾 (mâu thuẫn), 均衡 (cân bằng), 秩序 (trật tự)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Collocation quan trọng: 余地がある / ない, 兆しが見える, 基盤を固める, 側面を持つ, 一環として, 枠組みを作る, 潮流に乗る, 見地から述べる, 要因を分析する, 契機として, 実態を調査する, 本質を見極める, 矛盾が生じる, 均衡を保つ, 秩序を守る."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Mẫu thường gặp trong văn viết - ～の一環として (như một phần của ...), ～を契機に (nhân dịp ...), ～の見地から (từ góc nhìn ...), ～の余地がない (không còn dư địa để ...)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Một số từ dễ nhầm - 要因 (nhân tố có ảnh hưởng) khác 原因 (nguyên nhân trực tiếp). 契機 (cơ hội khởi đầu thay đổi) gần きっかけ nhưng trang trọng. 側面 (khía cạnh của sự việc) khác 方面 (hướng, lĩnh vực). 一環 chỉ một phần trong chuỗi các hoạt động liên quan, không dùng như \"một phần\" của vật thể. 趣 chỉ vẻ đẹp tinh tế, thường đi với 風景・庭・文章."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "余地."
+          },
+          "target": "この計画には、改善の余地があります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Kế hoạch này còn dư địa để cải thiện."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "兆し."
+          },
+          "target": "景気が回復する兆しが見えてきました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Đã xuất hiện dấu hiệu kinh tế hồi phục."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "一環として."
+          },
+          "target": "環境保護の一環として、植樹を行います。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Trồng cây như một phần của bảo vệ môi trường."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "契機."
+          },
+          "target": "これを契機に、制度を見直します。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Nhân dịp này, chúng tôi sẽ xem xét lại chế độ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "要因 là nhân tố có ảnh hưởng, đi với 分析; 原因 là nguyên nhân trực tiếp."
+          },
+          "right": "失敗の要因を分析します。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "失敗の原因を分析する要因があります。"
+        },
+        {
+          "note": {
+            "vi": "Khía cạnh của vấn đề là 側面, không phải 方面."
+          },
+          "right": "その問題には、様々な側面があります。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "その問題には、様々な方面があります。"
+        },
+        {
+          "points": [
+            {
+              "vi": "余地 · 兆し · 趣 · 概念 · 基盤 · 側面 · 一環 · 枠組み · 潮流."
+            },
+            {
+              "vi": "見地 · 次元 · 要因 · 契機 · 実態 · 本質 · 矛盾 · 均衡 · 秩序."
+            },
+            {
+              "vi": "～の一環として · ～を契機に · ～の見地から."
+            },
+            {
+              "vi": "要因 (nhân tố) ≠ 原因 (nguyên nhân)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "be8572a006f0b3b2407597a3b5794c6945929f50e1facb4107b5737fbfcf03d6",
+      "estimated_minutes": 22,
+      "id": "d5c9c68e-6f8a-5fa3-b64f-7aebef944b6a",
+      "is_demo": false,
+      "key": "ja:lesson:n1-u10-abstract",
+      "language_code": "ja",
+      "level_code": "n1",
+      "objectives": [
+        {
+          "vi": "Dùng 18 danh từ trừu tượng thường gặp trong văn N1: 余地, 兆し, 趣, 概念, 基盤, 側面, 一環, 枠組み, 潮流..."
+        },
+        {
+          "vi": "Nhận ra sắc thái và collocation của từng từ."
+        },
+        {
+          "vi": "Đọc hiểu đoạn bình luận ngắn."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Danh từ trừu tượng - 余地・兆し・基盤・側面・本質"
+      },
+      "unit_id": "461eb2e9-1ccb-5ed5-b887-fad01e860a24"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc hiểu văn viết dễ hơn - 極めて重要な問題です。依然として、状況は変わりません。辛うじて終電に間に合いました。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Phó từ: 概して (nhìn chung), 極めて (vô cùng), 依然 (vẫn), 辛うじて (vất vả lắm mới), 敢えて (cố ý, dám), 至って (cực kỳ, thường bình thản), ことごとく (hết thảy). Tính từ: 甚だしい (quá mức), 煩わしい (phiền hà), 紛らわしい (dễ nhầm lẫn), 慎重 (thận trọng), 懸命 (hết sức)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cặp thường đi cùng: 依然として + trạng thái; 辛うじて + ～た (kết quả suýt thất bại); 敢えて + ～する (làm điều trái xu hướng) / 敢えて ～ない (cố ý không); 至って + 元気 / 普通 / 平穏 (bình thản); ことごとく + 失敗する / 反対する; 極めて + 重要 / 困難 / 珍しい."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Ví dụ - 概して、今年の天気はよかったです。依然として、状況は変わりません。彼女は懸命に働いています. Phát biểu thận trọng - 慎重に検討する必要があります."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Phân biệt các phó từ gần nghĩa - 極めて là trang trọng, 非常に chung hơn, とても là hội thoại. 辛うじて nhấn kết quả \"suýt thất bại nhưng vừa đủ\", khác やっと (cuối cùng cũng, có cố gắng). 敢えて có sắc thái chủ ý làm điều mà thường người ta tránh. 至って thường gắn với 平穏・元気 nên không dùng với 重要. ことごとく nhấn toàn bộ không ngoại lệ, hay đi với kết quả xấu."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "極めて."
+          },
+          "target": "それは極めて重要な問題です。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Đó là vấn đề vô cùng quan trọng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "依然として."
+          },
+          "target": "依然として、状況は変わりません。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tình hình vẫn không thay đổi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "辛うじて."
+          },
+          "target": "辛うじて終電に間に合いました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi vừa kịp chuyến tàu cuối."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "敢えて."
+          },
+          "target": "敢えて反対意見を述べます。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi cố ý nêu ý kiến phản đối."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "至って đi với trạng thái bình thản (元気, 普通); \"cực kỳ quan trọng\" dùng 極めて."
+          },
+          "right": "彼は極めて重要な人物です。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "彼は至って重要な人物です。"
+        },
+        {
+          "note": {
+            "vi": "辛うじて nhấn suýt thất bại; やっと nhấn cuối cùng cũng đạt được sau nỗ lực."
+          },
+          "right": "辛うじて終電に間に合いました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "やっと終電に間に合いました。(suýt thất bại nhưng vừa kịp)"
+        },
+        {
+          "points": [
+            {
+              "vi": "概して nhìn chung · 極めて vô cùng · 依然 vẫn · 辛うじて suýt soát · 敢えて cố ý · 至って cực kỳ · ことごとく hết thảy."
+            },
+            {
+              "vi": "甚だしい · 煩わしい · 紛らわしい · 慎重 · 懸命."
+            },
+            {
+              "vi": "依然として · 極めて重要 · 至って元気."
+            },
+            {
+              "vi": "辛うじて ≠ やっと."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "381aabbf0cd486fcd193f97b039d5d70fffd3b6beba33fa2148c96f9044d1dc6",
+      "estimated_minutes": 22,
+      "id": "9b42b9c9-3682-502f-bd16-0ec63929fa0b",
+      "is_demo": false,
+      "key": "ja:lesson:n1-u10-adverbs",
+      "language_code": "ja",
+      "level_code": "n1",
+      "objectives": [
+        {
+          "vi": "Dùng phó từ văn viết: 概して, 極めて, 依然, 辛うじて, 敢えて, 至って, ことごとく."
+        },
+        {
+          "vi": "Dùng tính từ: 甚だしい, 煩わしい, 紛らわしい, 慎重, 懸命."
+        },
+        {
+          "vi": "Nhận ra sắc thái và cặp từ hay đi cùng."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Phó từ và tính từ văn viết - 概して・極めて・依然・辛うじて・敢えて"
+      },
+      "unit_id": "461eb2e9-1ccb-5ed5-b887-fad01e860a24"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc hiểu tin tức và bình luận có nhiều động từ văn viết - 注意を怠ると、事故につながります。誤解を招く表現は避けましょう。環境汚染は人類の生存を脅かしています。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Nhóm động từ tác động: 覆す (lật ngược), 阻む (cản trở), 怠る (xao nhãng), 促す (thúc giục), 招く (mời, dẫn đến), 損なう (làm tổn hại), 脅かす (đe doạ), 退ける (bác bỏ), 委ねる (giao phó), 費やす (tiêu tốn). Nhóm trạng thái và chuyển đổi: 偏る (thiên lệch), 絶える (đứt), 免れる (tránh được), 携わる (tham gia)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Collocation chính: 常識を覆す, 進路を阻む, 栄養が偏る, 注意を怠る, 注意を促す, 誤解を招く, 健康を損なう, 連絡が絶える, 被害を免れる, 生存を脅かす, 主張を退ける, 教育に携わる, 判断を委ねる, 時間を費やす."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Nhận ra nhóm tự động từ / tha động từ: 偏る (tự), 絶える (tự), 免れる (tha nhưng nghĩa \"thoát khỏi\"), 携わる (tự), còn lại tha động từ. Chú ý trợ từ đi kèm: ～を阻む, ～に携わる, ～を免れる."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "絶える (たえる) đồng âm với 耐える (chịu đựng) và 堪える (chịu nổi) - nên nhớ theo collocation (連絡が絶える, 苦痛に耐える, 見るに堪えない). 招く vừa là mời (客を招く) vừa là gây ra hậu quả (誤解を招く, 混乱を招く). 費やす khác 使う: 費やす nhấn tiêu hao lớn (時間・お金・労力). 委ねる luôn có người nhận (A を B に委ねる)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "覆す."
+          },
+          "target": "この発見は、これまでの常識を覆しました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Phát hiện này đã lật ngược nhận thức thông thường trước nay."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "怠る."
+          },
+          "target": "注意を怠ると、事故につながります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Lơ là sự chú ý sẽ dẫn đến tai nạn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "招く."
+          },
+          "target": "誤解を招く表現は避けましょう。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Hãy tránh cách diễn đạt gây hiểu lầm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "脅かす."
+          },
+          "target": "環境汚染は人類の生存を脅かしています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Ô nhiễm môi trường đang đe doạ sự sinh tồn của nhân loại."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Đồng âm たえる: 絶える (đứt) - dùng với 連絡; 耐える là chịu đựng."
+          },
+          "right": "連絡が絶えて、十年になります。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "連絡が耐えて、十年になります。"
+        },
+        {
+          "note": {
+            "vi": "委ねる có dạng A を B に委ねる."
+          },
+          "right": "判断を専門家に委ねます。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "判断を専門家を委ねます。"
+        },
+        {
+          "points": [
+            {
+              "vi": "覆す · 阻む · 怠る · 促す · 招く · 損なう · 脅かす · 退ける · 委ねる · 費やす."
+            },
+            {
+              "vi": "偏る · 絶える · 免れる · 携わる."
+            },
+            {
+              "vi": "誤解を招く · 注意を促す · 被害を免れる · 教育に携わる."
+            },
+            {
+              "vi": "絶える ≠ 耐える ≠ 堪える."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "3b64eec8be52b7079b9cfb59a9e9e96daceca28f1ccbc3be3ddcc8afddf1fcb7",
+      "estimated_minutes": 22,
+      "id": "a7030b37-e0d4-5b7a-b919-701ab6512aba",
+      "is_demo": false,
+      "key": "ja:lesson:n1-u10-verbs",
+      "language_code": "ja",
+      "level_code": "n1",
+      "objectives": [
+        {
+          "vi": "Dùng 14 động từ văn viết thường gặp ở N1: 覆す, 阻む, 偏る, 怠る, 促す, 招く, 損なう, 絶える, 免れる, 脅かす, 退ける, 携わる, 委ねる, 費やす."
+        },
+        {
+          "vi": "Nhận ra tự động từ và tha động từ trong nhóm."
+        },
+        {
+          "vi": "Dùng đúng collocation trong tin tức và bình luận."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Động từ văn viết - 覆す・阻む・偏る・怠る・促す・招く"
+      },
+      "unit_id": "461eb2e9-1ccb-5ed5-b887-fad01e860a24"
     },
     {
       "body": [
@@ -1040355,6 +1064163,444 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn đọc hiểu những cách nói nhấn mạnh ở N1 - 細部に至るまで、こだわって作られています。成功は努力の結果にほかなりません。子どもならいざ知らず、大人がそんなことをするとは。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "N に至るまで = \"đến cả, tận cùng đến\": nêu cả những mục nhỏ hay xa nhất để nhấn mạnh sự bao quát. 細部に至るまで (đến từng chi tiết nhỏ), 子どもからお年寄りに至るまで (từ trẻ em đến người già). Thường đi cặp ～から ～に至るまで."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V / N に至って(は): ～に至って = \"mãi đến khi (đến mức) ... mới ...\" (muộn, ngoài kỳ vọng). 事故が起きるに至って、やっと対策が取られた. ～に至っては = \"còn như ... thì (ví dụ cực đoan nhất)\". 弟に至っては、一度も本を読んだことがない."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "N / V こと + にほかならない = \"không gì khác hơn là, chính là\": khẳng định bản chất hoặc nguyên nhân. 成功は努力の結果にほかならない. N ならいざ知らず = \"nếu là ... thì còn được (không nói làm gì), nhưng ...\" dùng phê phán: 子どもならいざ知らず、大人がそんなことをするとは."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Chú ý ranh giới giữa ～に至るまで (độ bao phủ, \"tận cùng\"), ～に至って (mốc thời điểm muộn, \"đến mức này mới...\") và ～に至っては (nêu ví dụ cực đoan nhất trong nhóm). ～にほかならない gần với ～のだ (khẳng định mạnh) nhưng dùng cho nguyên nhân, bản chất: A は B にほかならない (A chính là B). ならいざ知らず thường có ngữ khí trách: vế sau là điều đáng phê phán."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "に至るまで."
+          },
+          "target": "この商品は、細部に至るまでこだわって作られています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Sản phẩm này được làm tỉ mỉ đến từng chi tiết nhỏ nhất."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "に至って."
+          },
+          "target": "事故が起きるに至って、やっと対策が取られました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Mãi đến khi tai nạn xảy ra, người ta mới đưa ra biện pháp."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "にほかならない."
+          },
+          "target": "成功は努力の結果にほかなりません。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Thành công chính là kết quả của nỗ lực."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ならいざ知らず."
+          },
+          "target": "子どもならいざ知らず、大人がそんなことをするとは。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Nếu là trẻ con thì còn được, chứ người lớn mà làm thế."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "に至るまで đứng trực tiếp trước vị ngữ, không thêm を."
+          },
+          "right": "細部に至るまで丁寧に作りました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "細部に至るまでを丁寧に作りました。"
+        },
+        {
+          "note": {
+            "vi": "Nêu ví dụ cực đoan trong nhóm dùng ～に至っては."
+          },
+          "right": "弟に至っては、一度も本を読んだことがありません。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "弟に至っても、一度も本を読んだことがありません。(nêu ví dụ cực đoan)"
+        },
+        {
+          "points": [
+            {
+              "vi": "N に至るまで - đến cả (tận cùng)."
+            },
+            {
+              "vi": "V / N に至って - mãi đến khi; に至っては - ngay cả (ví dụ cực đoan)."
+            },
+            {
+              "vi": "N / V こと + にほかならない - chính là."
+            },
+            {
+              "vi": "N ならいざ知らず - nếu là ... thì còn được."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "6ba4a3f46eb3893bd0b0b3dd33f01f545b989081e70238f27c5c755d828dc875",
+      "estimated_minutes": 22,
+      "id": "a2a8a1d1-f5de-5f1d-9b17-6760e0b8ef69",
+      "is_demo": false,
+      "key": "ja:lesson:n1-u9-extent",
+      "language_code": "ja",
+      "level_code": "n1",
+      "objectives": [
+        {
+          "vi": "Nêu cả những điểm nhỏ nhất bằng ～に至るまで."
+        },
+        {
+          "vi": "Phân biệt ～に至って (mãi đến khi) và ～に至っては (ngay cả trường hợp cực đoan như)."
+        },
+        {
+          "vi": "Khẳng định bản chất bằng ～にほかならない và phê phán bằng ～ならいざ知らず."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "grammar",
+        "reading",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Mức độ cực hạn và bản chất - ～に至るまで・～に至って・～にほかならない・～ならいざ知らず"
+      },
+      "unit_id": "27c43d17-cbe3-5395-ac7b-2834ff7fc4b7"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc hiểu thư, bài viết trang trọng - 結婚してからというもの、夜遊びをしなくなりました。お礼かたがた、ご挨拶に伺いました。毎日とは言わないまでも、週に一度は連絡してください。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "V て + からというもの = \"kể từ khi ... thì (suốt từ đó)\": nhấn thay đổi lớn kéo dài sau một sự kiện. 結婚してからというもの, 日本に来てからというもの. V辞書形 / V た / N の + 手前 = \"vì đã ... nên (không thể không giữ thể diện, trách nhiệm)\": 約束した手前, 先輩の手前."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "N + ごとき / ごとく = \"như, giống như\" (văn viết hoặc coi thường): 私ごとき (người như tôi), 矢のごとく (như tên bắn). N + かたがた = \"nhân tiện, đồng thời\": お礼かたがた (đến cảm ơn nhân tiện chào hỏi). V ない + までも = \"dù không (đến mức) ... thì cũng ...\": 毎日とは言わないまでも, 週に一度は."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Từ vựng văn viết - 概要 (khái quát), こつこつ (đều đặn), 妄想 (ảo tưởng), 不一致 (bất đồng). Ví dụ 計画の概要, こつこつ貯金する, 妄想にすぎない, 意見の不一致."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cẩn thận để dùng chính xác: ～てからというもの nhấn một sự kiện chuyển điểm lớn; không dùng cho thay đổi nhỏ trong ngày. ～手前 mang nghĩa trách nhiệm trước người khác nên đi với việc đã cam kết hoặc có mặt người ngoài. ごとき khi dùng với ngôi thứ nhất (私ごとき) là khiêm nhường; khi dùng với người khác (君ごとき) là coi thường. ～かたがた chỉ dùng với danh từ chỉ hành động lễ nghi (お礼, 挨拶, お見舞い)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "てからというもの."
+          },
+          "target": "結婚してからというもの、夜遊びをしなくなりました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Kể từ khi kết hôn tôi không còn đi chơi đêm nữa."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "手前."
+          },
+          "target": "みんなの前で約束した手前、やめるわけにはいきません。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Vì đã hứa trước mặt mọi người nên tôi không thể bỏ cuộc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "かたがた."
+          },
+          "target": "お礼かたがた、ご挨拶に伺いました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi đến chào và nhân tiện cũng để cảm ơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ないまでも."
+          },
+          "target": "毎日とは言わないまでも、週に一度は連絡してください。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Dù không nói là mỗi ngày, ít nhất mỗi tuần một lần hãy liên lạc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "からというもの dùng cho thay đổi lớn kéo dài sau sự kiện trọng đại, không dùng cho khoảng thời gian trong ngày."
+          },
+          "right": "手術を受けてからというもの、体調がよくなりました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "今朝起きてからというもの、頭が痛いです。"
+        },
+        {
+          "note": {
+            "vi": "かたがた đi với danh từ chỉ hành động lễ nghi (お礼), không đi với động từ thông thường."
+          },
+          "right": "友達へのお礼かたがた、手紙を書きました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "友達の家へ行くかたがた、手紙を書きました。"
+        },
+        {
+          "points": [
+            {
+              "vi": "V てからというもの - kể từ khi ... thì · V / N の + 手前 - nể mặt, vì đã."
+            },
+            {
+              "vi": "N ごとき / ごとく - như (khiêm nhường / coi thường)."
+            },
+            {
+              "vi": "N かたがた - nhân tiện · V ないまでも - dù không đến mức."
+            },
+            {
+              "vi": "概要 · こつこつ · 妄想 · 不一致."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "c3063078b568f637c6efd5716554db28274ee5fba510c2042246fa5aae17eba2",
+      "estimated_minutes": 22,
+      "id": "9dc2beba-346d-5370-ab53-242d6aa11b65",
+      "is_demo": false,
+      "key": "ja:lesson:n1-u9-formal",
+      "language_code": "ja",
+      "level_code": "n1",
+      "objectives": [
+        {
+          "vi": "Nói \"kể từ khi ... thì\" bằng ～てからというもの."
+        },
+        {
+          "vi": "Nói \"vì đã ... nên (nể mặt, thể diện)\" bằng ～手前."
+        },
+        {
+          "vi": "Dùng ～ごとき / ごとく, ～かたがた và ～ないまでも trong văn trang trọng."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "grammar",
+        "reading",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Văn trang trọng - ～てからというもの・～手前・～ごとき・～かたがた・～ないまでも"
+      },
+      "unit_id": "27c43d17-cbe3-5395-ac7b-2834ff7fc4b7"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc hiểu bình luận mạnh mẽ ở N1 - 彼の努力は評価されてしかるべきだ。教師ともあろう者が、暴力を振るうとは。子どもではあるまいし。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "V て / N + しかるべき(だ) = \"đáng lẽ phải, xứng đáng được\": 評価されてしかるべきだ (đáng lẽ phải được đánh giá cao), 説明があってしかるべきだ (đáng lẽ phải có lời giải thích). N ともあろう + N = \"một người ở vị trí / danh tiếng như ... mà (lại làm điều đáng trách)\": 教師ともあろう者が."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "N / V であろうと ～ = \"dù là ... đi nữa\": 相手が誰であろうと, どんなに困難であろうと. Dạng thường: であれ, だろうと. N / V ではあるまいし = \"có phải ... đâu mà (nên đừng ...)\": 子どもではあるまいし, 神様ではあるまいし. Thường theo sau là lời trách, khuyên can."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Từ vựng đi kèm trong bình luận - 暴力 (bạo lực), 不正 (gian lận), 謝罪 (xin lỗi chính thức), 評価 (đánh giá). Ví dụ 暴力を振るう, 不正が発覚する, 謝罪を求める, 高く評価される."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cả bốn mẫu đều thuộc văn bình luận, ngữ khí mạnh nên cần cẩn trọng khi dùng. ともあろう chỉ dùng cho người (hoặc tổ chức) có địa vị, danh tiếng: 教師, 医者, 大企業の社長. しかるべき còn dùng như tính từ - しかるべき手続き (thủ tục thích đáng), しかるべき措置 (biện pháp thích hợp). ではあるまいし khác じゃないんだから (khẩu ngữ): ではあるまいし thuộc văn viết hơn."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "てしかるべき."
+          },
+          "target": "彼の努力は、もっと評価されてしかるべきだ。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Nỗ lực của anh ấy đáng lẽ phải được đánh giá cao hơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ともあろう."
+          },
+          "target": "教師ともあろう者が、生徒に暴力を振るうとは。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Một người làm giáo viên mà lại đánh học sinh."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "であろうと."
+          },
+          "target": "相手が誰であろうと、規則は規則です。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Dù đối phương là ai thì quy tắc vẫn là quy tắc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ではあるまいし."
+          },
+          "target": "子どもではあるまいし、自分のことは自分でしなさい。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Có phải trẻ con đâu, việc của mình hãy tự làm đi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ともあろう dẫn tới lời trách; không đi với kết luận khẳng định \"đương nhiên\"."
+          },
+          "right": "社員ともあろう人が、遅刻するとは。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "社員ともあろう人が、遅刻して当然です。"
+        },
+        {
+          "note": {
+            "vi": "ではあるまいし đi với lời trách hoặc khuyên can, không đi với lời rủ."
+          },
+          "right": "子どもではあるまいし、いい加減にしなさい。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "子どもではあるまいし、一緒に遊ぼう。"
+        },
+        {
+          "points": [
+            {
+              "vi": "てしかるべき - đáng lẽ phải · ともあろう - người như ... mà lại."
+            },
+            {
+              "vi": "であろうと / であれ - dù là."
+            },
+            {
+              "vi": "ではあるまいし - có phải ... đâu."
+            },
+            {
+              "vi": "暴力 · 不正 · 謝罪 · 評価."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "e76037296b44b4be639d97e1c04b75cae5dc185d561ad56df1a19e6c7ad14476",
+      "estimated_minutes": 22,
+      "id": "85495d9d-1429-526e-be45-50fbe9f9b009",
+      "is_demo": false,
+      "key": "ja:lesson:n1-u9-should",
+      "language_code": "ja",
+      "level_code": "n1",
+      "objectives": [
+        {
+          "vi": "Nói \"đáng lẽ phải\" bằng ～てしかるべきだ."
+        },
+        {
+          "vi": "Phê phán người có vị thế bằng ～ともあろう."
+        },
+        {
+          "vi": "Nói \"bất kể\" bằng ～であろうと và mỉa mai bằng ～ではあるまいし."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "grammar",
+        "reading",
+        "vocabulary",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Đương nhiên và phê phán - ～てしかるべき・～ともあろう・～であろうと・～ではあるまいし"
+      },
+      "unit_id": "27c43d17-cbe3-5395-ac7b-2834ff7fc4b7"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Bài ôn đi theo một chuỗi việc - gửi email hẹn gặp, gọi điện xác nhận, gặp mặt và họp. Ở mỗi bước, bạn chọn đúng mức kính ngữ và tránh lỗi trộn lẫn tôn kính với khiêm nhường."
           },
           "type": "objective"
@@ -1041840,6 +1066086,1320 @@ select content_private.import_bundle($bundle${
         "vi": "Nhân lúc còn..., đang giữa chừng... - ～うちに và ～最中に"
       },
       "unit_id": "34f4d1b3-9d46-5dc1-a622-5d19c44d3d59"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc được tin kinh doanh - 今年の業績は黒字になりました。需要に供給が追いつきません。 - và bàn luận về đàm phán, liên kết, đầu tư."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Hoạt động kinh doanh: 業績 (kết quả kinh doanh), 取引 (giao dịch), 交渉 (đàm phán), 提携 (liên kết), 競争 (cạnh tranh). Thị trường: 需要 (nhu cầu), 供給 (cung cấp), 貿易 (ngoại thương)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Tài chính: 投資 (đầu tư), 株 (cổ phiếu), 黒字 (có lãi), 赤字 (thua lỗ), 倒産 (phá sản). Ví dụ 赤字が続く, 黒字に転じる, 倒産に追い込まれる, 株が上がる."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Các cụm quen thuộc: 需要が高まる, 供給が不足する, 競争が激しい, 取引を始める, 交渉に応じる, 提携を結ぶ, 投資を行う."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "黒字 (chữ đen) là có lãi, 赤字 (chữ đỏ) là thua lỗ - theo màu mực kế toán xưa. 取引 là giao dịch chung (取引先 - đối tác), còn 貿易 chỉ thương mại với nước ngoài. 提携 là liên kết có tính chiến lược, khác 協力 (hợp tác chung). 株 hay đi với 買う / 売る / 上がる / 下がる."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "黒字 - có lãi."
+          },
+          "target": "今年は黒字になりました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Năm nay công ty đã có lãi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "需要・供給."
+          },
+          "target": "需要に供給が追いつきません。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Nguồn cung không theo kịp nhu cầu."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "提携."
+          },
+          "target": "二つの会社が提携して、新しい事業を始めました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Hai công ty liên kết và bắt đầu một dự án mới."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "倒産."
+          },
+          "target": "不景気で、多くの会社が倒産しました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Do suy thoái, nhiều công ty phá sản."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "黒字 là có lãi nên không gây khó; thua lỗ liên tục là 赤字."
+          },
+          "right": "会社は赤字が続いて、困っています。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "会社は黒字が続いて、困っています。"
+        },
+        {
+          "note": {
+            "vi": "貿易 chỉ thương mại với nước ngoài."
+          },
+          "right": "日本は外国と貿易しています。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "日本は国内で貿易しています。"
+        },
+        {
+          "points": [
+            {
+              "vi": "業績 · 取引 · 交渉 · 提携 · 競争 · 需要 · 供給 · 貿易."
+            },
+            {
+              "vi": "投資 · 株 · 黒字 · 赤字 · 倒産."
+            },
+            {
+              "vi": "黒字 có lãi ↔ 赤字 thua lỗ."
+            },
+            {
+              "vi": "提携を結ぶ · 交渉に応じる · 競争が激しい."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "2edd8ae168364faff816ccdfaf71fa58fc81bb3265723a1afb1ad63fc59911ba",
+      "estimated_minutes": 20,
+      "id": "0b0b07a8-da19-5d2a-8d21-a41a9a327f33",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u10-business",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Dùng từ vựng kinh doanh: 業績, 取引, 交渉, 提携, 競争, 需要, 供給."
+        },
+        {
+          "vi": "Nói về tài chính: 投資, 赤字, 黒字, 倒産, 貿易, 株."
+        },
+        {
+          "vi": "Đọc hiểu tin kinh tế ngắn."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Kinh doanh và thương mại - 業績・取引・投資・赤字"
+      },
+      "unit_id": "54376dc5-fc17-51bf-9bc4-469d6fd1047a"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn nói được về tính cách và cảm xúc - 人によって価値観が違います。将来が不安です。彼の話に共感しました。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Tính cách và thái độ: 性格 (tính cách), 態度 (thái độ), 価値観 (giá trị quan), 偏見 (định kiến), 尊重 (tôn trọng), 共感 (đồng cảm). Ví dụ 明るい性格, 態度が悪い, 価値観が違う, 偏見を持つ, 意見を尊重する."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cảm xúc: 孤独 (cô đơn), 不安 (bất an), 緊張 (căng thẳng), 満足 (hài lòng), 不満 (bất mãn), 葛藤 (giằng xé). Ví dụ 孤独を感じる, 不安になる, 緊張する, 結果に満足している, 不満がある."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Hai cụm đối lập thường gặp: 満足 ↔ 不満; 共感 ↔ 反感 (phản cảm); 尊重 ↔ 無視 (phớt lờ). Dùng khi bình luận hay viết bài nghị luận."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "満足 vừa là danh từ vừa là する-động từ (満足する, 満足している). 不安 dùng cho lo lắng mơ hồ về tương lai, còn 心配 là lo cho một việc cụ thể. 共感 là chia sẻ cảm xúc, 同情 (thương hại, đã học N1) có sắc thái từ trên xuống. 偏見 thường đi với 持つ / 抱く / なくす."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "価値観."
+          },
+          "target": "人によって価値観が違います。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Quan niệm sống khác nhau theo từng người."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "孤独."
+          },
+          "target": "一人暮らしで、孤独を感じることがあります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Sống một mình nên có lúc tôi cảm thấy cô đơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "満足・不満."
+          },
+          "target": "結果に満足していますが、給料には不満があります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi hài lòng với kết quả nhưng bất mãn với lương."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "尊重・偏見."
+          },
+          "target": "相手の意見を尊重して、偏見を持たないようにしています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi cố gắng tôn trọng ý kiến người khác và không mang định kiến."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "心配 dùng cho lo lắng về việc cụ thể (kỳ thi); 不安 là bất an mơ hồ."
+          },
+          "right": "試験が心配です。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "将来が心配で、漠然とした不安を感じます。(lo cho việc cụ thể)"
+        },
+        {
+          "note": {
+            "vi": "共感 là cùng cảm xúc; 同情 là thương cảm từ bên ngoài."
+          },
+          "right": "彼の話に共感して、私も同じ経験があります。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "彼の話に同情して、私も同じ経験があります。(đồng cảm)"
+        },
+        {
+          "points": [
+            {
+              "vi": "性格 · 態度 · 価値観 · 偏見 · 尊重 · 共感."
+            },
+            {
+              "vi": "孤独 · 不安 · 緊張 · 満足 · 不満 · 葛藤."
+            },
+            {
+              "vi": "満足 ↔ 不満 · 共感 ↔ 反感."
+            },
+            {
+              "vi": "不安 (mơ hồ) ≠ 心配 (cụ thể)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "f3ed4254cd302ca6dcaba1a0bf800de067729055f3abdcb5c0ba25490ed1902c",
+      "estimated_minutes": 20,
+      "id": "932a68f0-554e-5a82-a5ba-8b273b42bc96",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u10-mind",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Dùng từ vựng tính cách, thái độ: 性格, 態度, 価値観, 偏見."
+        },
+        {
+          "vi": "Dùng từ vựng cảm xúc: 孤独, 不安, 緊張, 満足, 不満, 共感, 葛藤."
+        },
+        {
+          "vi": "Đọc và nói về cảm xúc, quan hệ giữa người với người."
+        }
+      ],
+      "order_index": 4,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Tâm lý và thái độ - 性格・態度・不安・共感"
+      },
+      "unit_id": "54376dc5-fc17-51bf-9bc4-469d6fd1047a"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc được văn bản môi trường và khoa học - 大気汚染が深刻です。仮説を立てて、データを分析します。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Môi trường: 汚染 (ô nhiễm), 廃棄物 (chất thải), 再生 (tái sinh, tái chế), 発電 (phát điện), 絶滅 (tuyệt chủng), 生態系 (hệ sinh thái). Ví dụ 大気汚染, 廃棄物を減らす, 再生可能エネルギー, 絶滅の危機."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Khoa học: 宇宙 (vũ trụ), 遺伝子 (gen), 仮説 (giả thuyết), 検証 (kiểm chứng), 分析 (phân tích). Ví dụ 仮説を立てる, 仮説を検証する, データを分析する."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Chuỗi nghiên cứu điển hình: 仮説を立てる → 実験する → データを分析する → 仮説を検証する → 結果をまとめる. Dùng từ nối kết quả: その結果, したがって."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "再生 có nhiều nghĩa - tái sinh (再生可能エネルギー), tái chế (再生紙), phát lại (動画の再生). 検証 là xác nhận một giả thuyết bằng bằng chứng; 証明 là chứng minh hoàn toàn; 確認 là kiểm tra đơn giản. 分析 chia nhỏ để hiểu, trái nghĩa 総合 (tổng hợp)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "汚染."
+          },
+          "target": "大気汚染が深刻な問題になっています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Ô nhiễm không khí đang trở thành vấn đề nghiêm trọng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "発電・廃棄物."
+          },
+          "target": "太陽光で発電して、廃棄物を減らします。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Phát điện bằng ánh sáng mặt trời và giảm chất thải."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "絶滅."
+          },
+          "target": "絶滅の危機にある動物を守りましょう。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Hãy bảo vệ các loài động vật đang có nguy cơ tuyệt chủng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "仮説・分析・検証."
+          },
+          "target": "仮説を立てて、データを分析し、結果を検証します。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Đặt giả thuyết, phân tích dữ liệu và kiểm chứng kết quả."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "再生紙 là giấy tái chế từ giấy cũ."
+          },
+          "right": "再生紙は古紙から作った紙です。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "再生紙は新しい紙の一種です。(giấy mới)"
+        },
+        {
+          "note": {
+            "vi": "Giả thuyết được \"đặt ra\" (立てる), không phải phân tích trước khi làm thí nghiệm."
+          },
+          "right": "仮説を立てて、実験します。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "仮説を分析して、実験します。"
+        },
+        {
+          "points": [
+            {
+              "vi": "汚染 · 廃棄物 · 再生 · 発電 · 絶滅 · 生態系."
+            },
+            {
+              "vi": "宇宙 · 遺伝子 · 仮説 · 検証 · 分析."
+            },
+            {
+              "vi": "仮説を立てる → 実験 → 分析 → 検証."
+            },
+            {
+              "vi": "再生 - tái sinh / tái chế / phát lại."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "6acff72d85f6aae26c493e8df737b3beea6e5ff1b99f95bb4c1d92b58b4b34c6",
+      "estimated_minutes": 20,
+      "id": "12916616-2cf5-56b4-a005-a576a3fa773d",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u10-science",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Dùng từ vựng môi trường: 汚染, 廃棄物, 再生, 発電, 絶滅, 生態系."
+        },
+        {
+          "vi": "Dùng từ vựng khoa học: 宇宙, 遺伝子, 仮説, 検証, 分析."
+        },
+        {
+          "vi": "Đọc hiểu đoạn văn khoa học-môi trường ngắn."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Khoa học và môi trường - 汚染・絶滅・仮説・分析"
+      },
+      "unit_id": "54376dc5-fc17-51bf-9bc4-469d6fd1047a"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc và nói về các vấn đề xã hội - 所得の格差が広がっています。高齢者の介護が問題になっています。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Vấn đề xã hội: 格差 (chênh lệch), 失業 (thất nghiệp), 高齢者 (người cao tuổi), 介護 (chăm sóc), 福祉 (phúc lợi), 医療 (y tế), 保険 (bảo hiểm). Ví dụ 格差が広がる, 失業率が上がる, 介護が必要になる."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Chính sách và quyền: 改革 (cải cách), 規制 (quy định hạn chế), 人権 (nhân quyền), 差別 (phân biệt). Ví dụ 制度を改革する, 規制を強める / 緩める, 差別をなくす."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Các cụm hay gặp: 福祉の充実 (hoàn thiện phúc lợi), 医療費の負担 (gánh nặng chi phí y tế), 介護保険 (bảo hiểm chăm sóc dài hạn), 人権を守る."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "介護 là chăm sóc người cần được giúp trong sinh hoạt (người già, người khuyết tật), khác 看護 (điều dưỡng - chăm sóc người bệnh trong y tế). 規制 trái nghĩa 緩和 (nới lỏng). 格差 thường đi với 所得 (thu nhập), 地域 (vùng miền). 差別 thường đi với 人種, 性別, 年齢 (chủng tộc, giới tính, tuổi tác)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "格差."
+          },
+          "target": "所得の格差が広がっています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Chênh lệch thu nhập đang nới rộng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "介護."
+          },
+          "target": "母の介護のために、仕事を辞めました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi nghỉ việc để chăm sóc mẹ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "規制."
+          },
+          "target": "政府は規制を強めました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Chính phủ đã siết chặt quy định."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "差別."
+          },
+          "target": "人種による差別をなくさなければなりません。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Phải xoá bỏ phân biệt đối xử theo chủng tộc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "介護 là chăm sóc sinh hoạt người già; 看護 là điều dưỡng ở bệnh viện."
+          },
+          "right": "母の介護のために仕事を辞めました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "母の看護のために仕事を辞めました。(chăm sóc người già)"
+        },
+        {
+          "note": {
+            "vi": "緩める là nới lỏng nên kết quả là tự do hơn, không phải nghiêm hơn."
+          },
+          "right": "規制を緩めて、自由になりました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "規制を緩めて、きびしくなりました。"
+        },
+        {
+          "points": [
+            {
+              "vi": "格差 · 失業 · 高齢者 · 介護 · 福祉 · 医療 · 保険."
+            },
+            {
+              "vi": "改革 · 規制 · 人権 · 差別."
+            },
+            {
+              "vi": "規制を強める ↔ 緩める."
+            },
+            {
+              "vi": "介護 (sinh hoạt) ≠ 看護 (y tế)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "50cde9b9caab0bf10ef3420190084c75c2e95c995c77d96d3b128d4ee14be4d2",
+      "estimated_minutes": 20,
+      "id": "4dc90b7a-cedb-5e33-b2e5-839ba575d822",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u10-society-policy",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Dùng từ vựng vấn đề xã hội: 格差, 失業, 高齢者, 介護, 福祉, 医療, 保険."
+        },
+        {
+          "vi": "Dùng từ vựng chính sách và quyền: 改革, 規制, 人権, 差別."
+        },
+        {
+          "vi": "Đọc hiểu bài báo và bình luận về xã hội."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "listening",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Xã hội và chính sách - 格差・介護・福祉・改革"
+      },
+      "unit_id": "54376dc5-fc17-51bf-9bc4-469d6fd1047a"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn dùng được các mẫu chỉ căn cứ và đối chiếu - 実話をもとに作られた映画です。計画に沿って進めます。予想に反して、日本が勝ちました。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "N をもとに(して) = \"dựa trên N\" (làm nguồn): 実話をもとにした映画. N に沿って = \"theo, đúng với\" (kế hoạch, phương châm; hoặc dọc theo con đường, dòng sông): 計画に沿って, 川に沿って. N に反して = \"trái với\" (dự đoán, kỳ vọng, quy tắc)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "N を問わず = \"bất kể N\": 年齢を問わず (bất kể tuổi), 国籍を問わず, 昼夜を問わず. Thường đi với danh từ chỉ phạm vi hoặc cặp đối lập. N にかけては = \"về N thì\": nói khen khả năng, 料理にかけては彼女が一番だ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Từ vựng cho mẫu câu: 前提 (tiền đề), 方針 (phương châm), 予想 (dự đoán), 期待 (kỳ vọng). Ví dụ 予想に反して, 期待に反して, 方針に沿って, 結婚を前提に."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Phân biệt をもとに với に基づいて (N2 bài trước): をもとに dùng nguồn tư liệu để làm ra thứ mới (小説をもとに映画を作る), にもとづいて dùng quy tắc, tiêu chuẩn để hành động (法律に基づいて). に反して khác にもかかわらず: に反して trái với dự đoán, còn にもかかわらず là \"mặc dù\". を問わず thường không dùng cho vật cụ thể đơn lẻ."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "をもとに."
+          },
+          "target": "この映画は実話をもとに作られました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Bộ phim này được làm dựa trên chuyện thật."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "に沿って."
+          },
+          "target": "計画に沿って、作業を進めます。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi sẽ tiến hành công việc theo đúng kế hoạch."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "に反して."
+          },
+          "target": "予想に反して、試合は日本が勝ちました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Trái với dự đoán, Nhật Bản đã thắng trận đấu."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "を問わず."
+          },
+          "target": "年齢を問わず、誰でも参加できます。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Bất kể tuổi tác, ai cũng tham gia được."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Dùng tư liệu làm nguồn để sáng tạo thứ mới dùng をもとに."
+          },
+          "right": "小説をもとに映画を作りました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "小説に基づいて映画を作りました。(lấy tiểu thuyết làm nguồn)"
+        },
+        {
+          "note": {
+            "vi": "に反して đã có nghĩa trái ngược nên không thêm にもかかわらず."
+          },
+          "right": "予想に反して、日本が勝ちました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "予想に反するにもかかわらず、日本が勝ちました。"
+        },
+        {
+          "points": [
+            {
+              "vi": "N をもとに - dựa trên (nguồn) · N に沿って - theo đúng (kế hoạch), dọc theo."
+            },
+            {
+              "vi": "N に反して - trái với."
+            },
+            {
+              "vi": "N を問わず - bất kể · N にかけては - về N thì (nhất)."
+            },
+            {
+              "vi": "前提 · 方針 · 予想 · 期待."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "3bf52abbd14db163777e9a98ebe9edb1c15a01f88d42bcad868947412d589471",
+      "estimated_minutes": 20,
+      "id": "8e6b39d2-cca0-5269-9faf-255b0d3720f6",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u11-basis",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Nói căn cứ bằng ～をもとに(して) và ～に沿って."
+        },
+        {
+          "vi": "Nói \"trái với\" bằng ～に反して, \"bất kể\" bằng ～を問わず và \"về ... thì\" bằng ～にかけては."
+        },
+        {
+          "vi": "Dùng 前提, 方針, 予想, 期待 trong văn nói và viết."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "reading",
+        "speaking"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Căn cứ và đối chiếu - ～をもとに・～に沿って・～に反して・～を問わず・～にかけては"
+      },
+      "unit_id": "53c7ea94-ff47-500e-820e-1f4541dec8f2"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn tranh luận và biện bạch linh hoạt - 高いからといって、いい商品とは限りません。寝坊したものですから、遅れてしまいました。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "～からといって = \"chỉ vì ... không có nghĩa là ...\": phản bác suy luận thông thường. Vế sau thường ～わけではない / ～とは限らない: 日本人だからといって、全員が寿司を好きなわけではありません."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "～にしても / ～にしろ / ～にせよ = \"dù có ... đi nữa\": nhượng bộ trước, rồi nêu quan điểm của mình: 忙しいにしても、連絡くらいはしてほしい."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "～ものだから / ものですから = \"vì (lý do biện bạch)\": dùng khi giải thích hoặc xin lỗi, kết quả thường là điều không mong muốn: 寝坊したものですから、遅れました. ～っこない = \"chắc chắn không thể\": できっこない. ～ものか = \"đời nào, làm gì có\": 行くものか."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Lưu ý sắc thái. ～ものだから mềm hơn ～から vì mang giọng biện hộ; không dùng với ý chí (✗ ～ものだから、行きましょう). ～っこない và ～ものか là khẩu ngữ mạnh, nên tránh với người trên. ～にしても thường theo sau là lời trách hoặc yêu cầu (忙しいにしても, 連絡くらいは...). Từ vựng - 拒否 (từ chối), 反論 (phản bác), 弁解 (biện bạch)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "からといって."
+          },
+          "target": "日本人だからといって、全員が寿司を好きなわけではありません。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Chỉ vì là người Nhật không có nghĩa là ai cũng thích sushi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "にしても."
+          },
+          "target": "忙しいにしても、連絡くらいはしてほしいです。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Dù có bận, tôi vẫn mong bạn liên lạc một chút."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ものですから."
+          },
+          "target": "寝坊したものですから、遅れてしまいました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Vì tôi ngủ quên nên đã đến muộn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "っこない."
+          },
+          "target": "そんなこと、できっこないよ。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Chuyện như thế làm sao làm được."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ものだから dẫn tới kết quả không mong muốn; không đi với ý chí hay lời rủ."
+          },
+          "right": "寝坊したものだから、遅れてしまいました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "寝坊したものだから、早く行きましょう。"
+        },
+        {
+          "note": {
+            "vi": "からといって đi với phủ định để bác suy luận (わけではない / とは限らない)."
+          },
+          "right": "日本人だからといって、全員が寿司を好きなわけではありません。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "日本人だからといって、全員が寿司が好きです。"
+        },
+        {
+          "points": [
+            {
+              "vi": "からといって ～わけではない - không có nghĩa là."
+            },
+            {
+              "vi": "にしても / にしろ / にせよ - dù có ... đi nữa."
+            },
+            {
+              "vi": "ものだから - vì (biện bạch)."
+            },
+            {
+              "vi": "っこない - chắc chắn không · ものか - đời nào."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "c26b2f03c7bb5468173757c602a770eff268f2d2d194aef36a5ede2a5ed04a84",
+      "estimated_minutes": 20,
+      "id": "41eb0fb9-cd91-59a0-b74d-82f41b12ea40",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u11-concession",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Phản bác suy luận bằng ～からといって."
+        },
+        {
+          "vi": "Nhượng bộ bằng ～にしても / ～にしろ / ～にせよ."
+        },
+        {
+          "vi": "Biện bạch bằng ～ものだから; phủ nhận mạnh bằng ～っこない / ～ものか."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Nhượng bộ và biện bạch - ～からといって・～にしても・～ものだから・～っこない・～ものか"
+      },
+      "unit_id": "53c7ea94-ff47-500e-820e-1f4541dec8f2"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn diễn tả cảm xúc mạnh - 試験の結果が心配でならない。嬉しくてたまらない。 - và mức độ - 泣きたいほど悲しいです。"
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "A くて / Na で / V て + ならない / たまらない / しょうがない = \"không chịu nổi, cứ ... mãi\" - cảm giác hay cảm xúc không kiềm chế được: 心配でならない, 眠くてたまらない, 嬉しくてしょうがない. ならない trang trọng hơn, たまらない / しょうがない khẩu ngữ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "V辞書形 / A + ほどだ / くらいだ = \"đến mức ...\": nêu ví dụ nhấn mạnh mức độ. 泣きたいほど悲しい (buồn đến mức muốn khóc), 倒れそうなくらい疲れた (mệt đến mức sắp ngã)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Từ vựng cảm xúc N2: 感動 (cảm động), 悔しい (cay cú), 面倒 (phiền phức), 無理 (vô lý, quá sức). Ví dụ 映画に感動する, 負けて悔しい, 面倒な手続き, それは無理だ."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Các mẫu てならない / てたまらない chỉ dùng với cảm xúc, cảm giác tự phát của người nói hoặc người thứ nhất; không dùng cho hành động có chủ ý (✗ 勉強してならない). Với ngôi thứ ba thường thêm ようだ / らしい. ほど đi trước vế mức độ, thường là hình ảnh phóng đại để nhấn mạnh; khác ～くらい (đo lường) ở chỗ ほど hay dùng với phủ định so sánh, くらい nhẹ hơn."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "でならない."
+          },
+          "target": "試験の結果が心配でならない。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi lo lắng kết quả kỳ thi đến không chịu nổi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "てたまらない."
+          },
+          "target": "昨日は暑くてたまりませんでした。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Hôm qua nóng không chịu nổi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "ほどだ."
+          },
+          "target": "あの映画は感動して、泣きたいほどでした。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Bộ phim đó làm tôi cảm động đến mức muốn khóc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "くらいだ."
+          },
+          "target": "疲れて、立っていられないくらいです。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Mệt đến mức không đứng nổi."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "てならない chỉ đi với cảm xúc tự phát; \"phải học\" dùng なければならない."
+          },
+          "right": "毎日勉強しなければならない。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "毎日勉強してならない。"
+        },
+        {
+          "note": {
+            "vi": "Với người thứ ba nên thêm ようだ / らしい vì người nói không biết cảm giác của họ."
+          },
+          "right": "山田さんは眠くてたまらないようだ。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "山田さんは眠くてたまらない。(ngôi thứ ba, khẳng định)"
+        },
+        {
+          "points": [
+            {
+              "vi": "A くて / Na で / V て + ならない / たまらない / しょうがない - không chịu nổi."
+            },
+            {
+              "vi": "V / A + ほどだ / くらいだ - đến mức."
+            },
+            {
+              "vi": "感動 · 悔しい · 面倒 · 無理."
+            },
+            {
+              "vi": "Chỉ dùng cho cảm xúc tự phát của người nói."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "ca64cefeb28931cdca4b22dddfd8aeeffed19edd59304c081b52979ac7692277",
+      "estimated_minutes": 20,
+      "id": "ecbb3198-758a-5aac-b46c-ea8ce080bf83",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u11-feeling",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Nói cảm xúc không kiềm chế được bằng ～てならない / てたまらない / てしょうがない."
+        },
+        {
+          "vi": "Nói mức độ bằng ～ほどだ / ～くらいだ."
+        },
+        {
+          "vi": "Dùng 感動, 悔しい, 面倒, 無理 trong bình luận cảm xúc."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "grammar",
+        "vocabulary",
+        "speaking",
+        "reading"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Cảm xúc mạnh và mức độ - ～てならない・～てたまらない・～ほどだ"
+      },
+      "unit_id": "53c7ea94-ff47-500e-820e-1f4541dec8f2"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn mô tả sự việc chính xác hơn - 競争が激しい, 複雑な問題, 売り上げが大幅に増えた, せっかく来たのに - và đọc hiểu bài đọc N2."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Tính từ い: 厳しい (nghiêm khắc), 激しい (dữ dội), 鋭い (sắc bén), 鈍い (cùn, chậm). Tính từ な: 貴重 (quý giá), 豊か (phong phú), 複雑 (phức tạp), 単純 (đơn giản), 明らか (rõ ràng), 適切 (thích hợp), 不可欠 (không thể thiếu)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Phó từ: 徐々に (dần dần), 次々 (lần lượt), 相当 (khá nhiều), 大幅に (mạnh), わずかに (chút ít), せめて (ít nhất), せっかく (mất công, hiếm hoi mới). Ví dụ 売り上げが大幅に増える, 徐々に慣れる, せめて電話くらいは, せっかく来たのに."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cặp thường đi cùng: 厳しい + 教育 / 競争 / 寒さ; 激しい + 競争 / 雨 / 運動; 鋭い + 指摘 / 目; 豊か + 自然 / 経験; 複雑 + 問題 / 気持ち; 明らか + 事実 / 間違い; 不可欠 + 条件 / 存在."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Chú ý sắc thái. 厳しい (nghiêm, khắt khe với người, điều kiện) khác 激しい (cường độ mạnh, dữ dội). 複雑 trái nghĩa 単純 hoặc 簡単. せめて đi với mong muốn tối thiểu (～てほしい, ～たい, ～くらい); せっかく đi với kết quả không như ý (せっかく～のに) hoặc dịp quý (せっかくの機会). 相当 vừa là \"khá nhiều\" (相当寒い) vừa là \"tương đương\" (一万円に相当する)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "激しい."
+          },
+          "target": "競争が激しくなっています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Cạnh tranh ngày càng gay gắt."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "大幅に."
+          },
+          "target": "売り上げが大幅に増えました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Doanh thu đã tăng mạnh."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "せめて."
+          },
+          "target": "せめて電話くらいはしてほしかった。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Ít nhất tôi cũng mong bạn gọi điện."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "せっかく."
+          },
+          "target": "せっかく来たのに、店は休みでした。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Mất công đến mà cửa hàng lại nghỉ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Dao cùn là 鈍い; 鋭い là sắc."
+          },
+          "right": "このナイフは鈍くなりました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "このナイフは鋭くなりました。(cùn)"
+        },
+        {
+          "note": {
+            "vi": "せめて dùng với mong muốn tối thiểu, có くらい / だけ đi kèm."
+          },
+          "right": "せめて電話くらいはしてください。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "せめて来てください。(yêu cầu thẳng)"
+        },
+        {
+          "points": [
+            {
+              "vi": "厳しい · 激しい · 鋭い · 鈍い · 貴重 · 豊か · 複雑 · 単純 · 明らか · 適切 · 不可欠."
+            },
+            {
+              "vi": "徐々に · 次々 · 相当 · 大幅に · わずか · せめて · せっかく."
+            },
+            {
+              "vi": "厳しい (khắt khe) ≠ 激しい (dữ dội)."
+            },
+            {
+              "vi": "せめて + mong muốn tối thiểu · せっかく + のに."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "d5f37b2c56c53833d57929968a4b0bdc95750cc314a921ddf1ee99c1137404ce",
+      "estimated_minutes": 20,
+      "id": "5ac8e33b-a172-5538-8600-dcf1a026fdaa",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u12-adjectives",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Dùng 18 tính từ và phó từ N2: 厳しい, 激しい, 鋭い, 鈍い, 貴重, 豊か, 複雑, 単純, 明らか, 適切, 不可欠, 徐々に, 次々, 相当, 大幅, わずか, せめて, せっかく."
+        },
+        {
+          "vi": "Nhận ra sắc thái và cặp từ hay đi cùng."
+        },
+        {
+          "vi": "Đọc hiểu đoạn văn có các từ này."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Tính từ và phó từ N2 - 厳しい・複雑・徐々に・せっかく"
+      },
+      "unit_id": "824770e7-a9c2-5c8e-849a-0ba19b1eea92"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn dùng đúng 18 động từ N2 - 混雑を避ける, 自分の間違いを認める, 落ち込んでいる友達を励ます, 優勝を狙う - và đọc hiểu đoạn văn có chúng."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Nhóm hành động: 避ける (tránh), 逃げる (chạy trốn), 迷う (do dự), 認める (thừa nhận), 訴える (kêu gọi), 述べる (trình bày), 補う (bù đắp), 整える (chỉnh đốn), 鍛える (rèn luyện). Nhóm cảm xúc và tác động: 励ます (động viên), 慰める (an ủi), 憧れる (ngưỡng mộ), 嘆く (than thở), 疑う (nghi ngờ), 悔やむ (hối tiếc), 狙う (nhắm tới), 揃う (đủ mặt), 抱える (gánh vác)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Collocation thường gặp: 混雑を避ける, 危険から逃げる, どちらにするか迷う, 間違いを認める, 環境の改善を訴える, 意見を述べる, 不足を補う, 体調を整える, 体を鍛える, 友達を励ます, 子どもを慰める, 将来を嘆く, 話を疑う, 失敗を悔やむ, 優勝を狙う, 全員が揃う, 問題を抱える."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Chú ý trợ từ: 逃げる đi với から (火事から逃げる), 憧れる đi với に (パイロットに憧れる), 悔やむ đi với を, 揃う là tự động từ (が揃う) còn 揃える là tha động từ (を揃える)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Một số cặp dễ nhầm. 迷う vừa là \"do dự\" vừa là \"lạc đường\" (道に迷う); 慰める (an ủi người đang buồn) khác 励ます (cổ vũ người đang nản). 抱える ngoài \"ôm\" còn dùng cho vấn đề, nợ nần (問題を抱える, 借金を抱える). 訴える có thể là \"kêu gọi\" hoặc \"khiếu nại, kiện\" tuỳ ngữ cảnh. 認める vừa \"thừa nhận\" vừa \"công nhận, cho phép\"."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "避ける."
+          },
+          "target": "混雑を避けて、早めに出かけました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi ra khỏi nhà sớm để tránh đông đúc."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "認める."
+          },
+          "target": "自分の間違いを認めて、みんなに謝りました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi thừa nhận lỗi của mình và xin lỗi mọi người."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "励ます."
+          },
+          "target": "落ち込んでいる友達を励ましました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi đã động viên người bạn đang chán nản."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "憧れる."
+          },
+          "target": "子どもの頃から、パイロットに憧れていました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Từ nhỏ tôi đã ngưỡng mộ nghề phi công."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Người đang nản được cổ vũ dùng 励ます; 慰める dùng khi người đang buồn."
+          },
+          "right": "友達に励まされて、元気が出ました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "友達に慰めて、元気が出ました。(cổ vũ)"
+        },
+        {
+          "note": {
+            "vi": "揃う là tự động từ (が揃う); 揃える là tha động từ (を揃える)."
+          },
+          "right": "家族が全員揃いました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "家族が全員揃えました。"
+        },
+        {
+          "points": [
+            {
+              "vi": "避ける · 逃げる · 迷う · 認める · 訴える · 述べる · 補う · 整える · 鍛える."
+            },
+            {
+              "vi": "励ます · 慰める · 憧れる · 嘆く · 疑う · 悔やむ · 狙う · 揃う · 抱える."
+            },
+            {
+              "vi": "励ます (cổ vũ) ≠ 慰める (an ủi)."
+            },
+            {
+              "vi": "揃う (tự) ≠ 揃える (tha)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "71d46f29202518cbcb9e87a05a410f86a2953e64114bb7dbd66c9ad9d3e11002",
+      "estimated_minutes": 20,
+      "id": "844e131e-4689-505c-ad53-f788e707b9ad",
+      "is_demo": false,
+      "key": "ja:lesson:n2-u12-verbs",
+      "language_code": "ja",
+      "level_code": "n2",
+      "objectives": [
+        {
+          "vi": "Dùng 18 động từ N2 thông dụng trong bài đọc và hội thoại: 避ける, 逃げる, 迷う, 認める, 訴える, 述べる, 補う, 整える, 鍛える, 励ます..."
+        },
+        {
+          "vi": "Nhận ra collocation đi kèm từng động từ."
+        },
+        {
+          "vi": "Đọc hiểu tình huống ngắn có các động từ này."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Động từ N2 - 避ける・認める・励ます・憧れる"
+      },
+      "unit_id": "824770e7-a9c2-5c8e-849a-0ba19b1eea92"
     },
     {
       "body": [
@@ -1047350,6 +1072910,143 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn đọc tin ngắn về văn hoá và kinh tế - 伝統を守る, データを保存する, 動物を保護する, 原料の価格が上がる, 予想を超える."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Văn hoá: 文化 (văn hoá), 伝統 (truyền thống), 宗教 (tôn giáo). Giữ gìn: 保存 (bảo quản), 保護 (bảo vệ), 維持 (duy trì)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Kinh tế: 価格 (giá cả), 製造 (chế tạo), 消費 (tiêu thụ), 損失 (tổn thất), 借金 (nợ). Động từ: 与える (gây ra, trao), 超える (vượt quá)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cách dùng cố định: 影響を与える (gây ảnh hưởng), 予想を超える (vượt dự kiến), 伝統を守る (giữ gìn truyền thống), 健康を維持する (duy trì sức khoẻ), 損失が出る (phát sinh tổn thất). 保存 thiên về lưu trữ (ファイルを保存), 保護 thiên về che chở (自然保護), 維持 thiên về giữ nguyên trạng."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "伝統."
+          },
+          "target": "この祭りは三百年の伝統があります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Lễ hội này có truyền thống ba trăm năm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "保護."
+          },
+          "target": "絶滅しそうな動物を保護しています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Chúng tôi đang bảo vệ các loài động vật sắp tuyệt chủng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "影響を与える."
+          },
+          "target": "この事件は社会に大きな影響を与えました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Vụ việc này đã gây ảnh hưởng lớn đến xã hội."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "超える."
+          },
+          "target": "参加者は予想を超えて、千人になりました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Số người tham gia vượt dự kiến, lên tới một nghìn người."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Đối tượng bị ảnh hưởng đi với に, 影響 đi với を."
+          },
+          "right": "社会に影響を与えました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "社会を影響を与えました。"
+        },
+        {
+          "note": {
+            "vi": "Lưu dữ liệu là 保存; 維持 là duy trì trạng thái."
+          },
+          "right": "データを保存しました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "データを維持しました。(lưu)"
+        },
+        {
+          "points": [
+            {
+              "vi": "文化 · 伝統 · 宗教 · 保存 · 保護 · 維持 · 与える · 超える · 価格 · 製造 · 消費 · 損失 · 借金."
+            },
+            {
+              "vi": "影響を与える · 予想を超える · 損失が出る."
+            },
+            {
+              "vi": "保存 (lưu) ≠ 保護 (bảo vệ) ≠ 維持 (duy trì)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "5318b30aeea753ec857d2f61b0d1f03a1b04be76b95724641bd1d771aa86766c",
+      "estimated_minutes": 18,
+      "id": "736c68c1-3ea6-5b37-b308-7081af3179f1",
+      "is_demo": false,
+      "key": "ja:lesson:n3-culture-economy",
+      "language_code": "ja",
+      "level_code": "n3",
+      "objectives": [
+        {
+          "vi": "Dùng 文化, 伝統, 宗教, 保存, 保護, 維持 nói về văn hoá và môi trường."
+        },
+        {
+          "vi": "Dùng 与える, 超える, 価格, 製造, 消費, 損失, 借金 trong chủ đề kinh tế."
+        },
+        {
+          "vi": "Đọc hiểu đoạn tin ngắn."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Văn hoá và kinh tế - 文化・伝統・保護・維持・価格・消費"
+      },
+      "unit_id": "0038d230-69e6-52ca-bebf-67dd87ffef7b"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn trao đổi ý kiến linh hoạt - この店は安いだけでなく、おいしいです。暑いというより、蒸し暑いです。日本といえば、富士山ですね。"
           },
           "type": "objective"
@@ -1047750,7 +1073447,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "09a3f21d3317fec7d369d604ff4c5bc8e73e9723c5bfb0c27db4ef5ad41e5135",
+      "content_hash": "1ca40b1eea6bc0f2b06093d93b319065163a338c475345e256290defbe7c22ad",
       "estimated_minutes": 17,
       "id": "04db0b0a-ca4e-55bf-a145-ae3d756f8f3c",
       "is_demo": false,
@@ -1047910,6 +1073607,143 @@ select content_private.import_bundle($bundle${
         "vi": "Ôn tập - nhật ký \"Năm nay nhất định chạy được 10 km\""
       },
       "unit_id": "2afddf09-806b-5d6b-94fd-487c91dad1eb"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc được thông báo tuyển dụng và nói về sự nghiệp - アルバイトを募集する, 三人を採用する, 転職を考える, 課長に昇進する, 大阪支店に異動する."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Quá trình tuyển dụng: 募集 (tuyển) → 面接 (phỏng vấn) → 採用 (nhận vào làm). Trong công ty: 昇進 (thăng chức), 異動 (điều chuyển), 転職 (chuyển việc), 退職 (nghỉ việc, về hưu)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Động từ liên quan: 受け取る (nhận), 求める (đòi hỏi, tìm kiếm), 勝つ (thắng), 終了する (kết thúc). Ví dụ 会社は即戦力を求めている, 受付は五時で終了する."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "退職 là rời công ty (do về hưu hoặc nghỉ); 転職 là chuyển sang công ty khác. Còn 辞める là cách nói thường ngày cho \"nghỉ\" (会社を辞める), 退職 trang trọng hơn. 異動 là điều chuyển nội bộ, 転勤 là chuyển nơi làm việc (đổi địa điểm). 求める mang nghĩa \"yêu cầu, mong muốn\" (助けを求める, 条件を求める)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "募集."
+          },
+          "target": "アルバイトを募集しています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Chúng tôi đang tuyển nhân viên làm thêm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "昇進."
+          },
+          "target": "努力が認められて、課長に昇進しました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Nỗ lực được công nhận nên anh ấy đã thăng chức trưởng phòng."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "異動."
+          },
+          "target": "四月から大阪支店に異動します。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Từ tháng Tư tôi sẽ được điều chuyển đến chi nhánh Osaka."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "終了."
+          },
+          "target": "受付は五時で終了します。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Quầy tiếp nhận sẽ đóng lúc năm giờ."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "転職 là tự động từ, chuyển sang công ty khác dùng に (別の会社に転職する); 会社を辞める mới dùng を."
+          },
+          "right": "別の会社に転職しました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "会社を転職しました。"
+        },
+        {
+          "note": {
+            "vi": "Nhận đồ vật cụ thể (hành lý, thư, tiền) dùng 受け取る; 受ける dùng cho sự việc trừu tượng (試験を受ける, 影響を受ける)."
+          },
+          "right": "荷物を受け取りました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "荷物を受けました。"
+        },
+        {
+          "points": [
+            {
+              "vi": "募集 → 採用 · 昇進 · 異動 · 転職 · 退職 · 受け取る · 求める · 勝つ · 終了."
+            },
+            {
+              "vi": "退職 (rời công ty) ≠ 転職 (đổi công ty)."
+            },
+            {
+              "vi": "異動 (nội bộ) ≠ 転勤 (đổi nơi làm việc)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "01fe9dd6b685b50a8ea605b279ee3d3089b10ac4762ea548b784b6026a616ce7",
+      "estimated_minutes": 18,
+      "id": "5738b565-e830-5f55-9e52-852725858e4b",
+      "is_demo": false,
+      "key": "ja:lesson:n3-employment",
+      "language_code": "ja",
+      "level_code": "n3",
+      "objectives": [
+        {
+          "vi": "Dùng 10 từ về tuyển dụng và sự nghiệp: 募集, 採用, 転職, 退職, 昇進, 異動, 受け取る, 求める, 勝つ, 終了."
+        },
+        {
+          "vi": "Đọc hiểu thông báo tuyển dụng ngắn."
+        },
+        {
+          "vi": "Phân biệt 退職 và 転職."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Việc làm - 募集・採用・転職・退職・昇進・異動"
+      },
+      "unit_id": "0038d230-69e6-52ca-bebf-67dd87ffef7b"
     },
     {
       "body": [
@@ -1050482,6 +1076316,143 @@ select content_private.import_bundle($bundle${
         "vi": "Hối tiếc và suýt nữa - ～ところだった・～ばよかった・～ずに済む"
       },
       "unit_id": "e7f2a805-c637-53ec-bfd1-086c62645731"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn đọc nội quy và nói về quyền, nghĩa vụ - 館内での撮影は禁止されている, 入場できる人数に制限がある, 誰でも教育を受ける権利がある."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Quy tắc: 許可 (cho phép), 禁止 (cấm), 制限 (hạn chế), 違反 (vi phạm), 義務 (nghĩa vụ), 権利 (quyền lợi). Công việc nhóm: 承認 (phê duyệt), 提案 (đề xuất), 協力 (hợp tác), 援助 (hỗ trợ)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cụm thông dụng: 許可を得る (được cho phép), 撮影禁止 (cấm chụp ảnh), 人数制限 (giới hạn số người), 法律に違反する (vi phạm pháp luật), 義務を果たす (làm tròn nghĩa vụ), 権利を持つ (có quyền), 承認を得る (nhận phê duyệt), 協力を求める (nhờ hợp tác)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cách dùng bị động trong biển báo: 禁止されている (bị cấm). 違反 thường đi với に: ルールに違反する, スピード違反 (vi phạm tốc độ). 義務 đối lập với 権利: 権利があるが、義務もある. 許可 vs 承認: 許可 là cho phép làm một việc; 承認 là chấp nhận một đề xuất, kế hoạch."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "許可."
+          },
+          "target": "この建物に入るには、許可が必要です。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Để vào toà nhà này cần có giấy phép."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "禁止されている."
+          },
+          "target": "館内での撮影は禁止されています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Việc chụp ảnh trong toà nhà bị cấm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "権利."
+          },
+          "target": "誰でも教育を受ける権利があります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Ai cũng có quyền được học hành."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "援助."
+          },
+          "target": "国から援助を受けて、学校を建てました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Nhận hỗ trợ từ nhà nước, họ đã xây trường."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "違反 đi với に (ルールに違反する), không dùng を."
+          },
+          "right": "ルールに違反しました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "ルールを違反しました。"
+        },
+        {
+          "note": {
+            "vi": "Nộp thuế là nghĩa vụ (義務); quyền lợi là 権利."
+          },
+          "right": "納税は国民の義務です。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "納税は国民の権利です。"
+        },
+        {
+          "points": [
+            {
+              "vi": "許可 · 禁止 · 制限 · 違反 · 義務 · 権利 · 承認 · 提案 · 協力 · 援助."
+            },
+            {
+              "vi": "〜に違反する · 〜が禁止されている · 〜に制限がある."
+            },
+            {
+              "vi": "義務 (nghĩa vụ) ≠ 権利 (quyền lợi)."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "8ca6d9fa9786df5b01203b9c62405290da91ffae6c5dcf03152ab8d89bc779f5",
+      "estimated_minutes": 18,
+      "id": "1cb88752-f2d3-5838-9aae-46671674fc8d",
+      "is_demo": false,
+      "key": "ja:lesson:n3-rules-society",
+      "language_code": "ja",
+      "level_code": "n3",
+      "objectives": [
+        {
+          "vi": "Dùng 許可, 禁止, 制限, 違反, 義務, 権利 trong biển báo, nội quy, quy định."
+        },
+        {
+          "vi": "Dùng 承認, 提案, 協力, 援助 trong công việc nhóm."
+        },
+        {
+          "vi": "Đọc hiểu nội quy ngắn."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Quy tắc và xã hội - 許可・禁止・制限・違反・義務・権利"
+      },
+      "unit_id": "0038d230-69e6-52ca-bebf-67dd87ffef7b"
     },
     {
       "body": [
@@ -1053264,6 +1079235,134 @@ select content_private.import_bundle($bundle${
       "body": [
         {
           "text": {
+            "vi": "Sau bài này, bạn nói được お湯を沸かす, 野菜を炒める, プレゼントを包む, 会社に戻る, 先生を訪ねる, 友達を迎えに行く."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Nấu ăn và đồ vật: 沸かす (đun sôi), 炒める (xào), 包む (gói, bọc). Di chuyển: 戻る (quay lại), 訪ねる (đến thăm), 迎える (đón)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Mẫu thông dụng: お湯を沸かす, 野菜を油で炒める, プレゼントを紙で包む, 席に戻る, 友達を訪ねる, 空港まで迎えに行く (V-ます bỏ ます + に行く)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Phân biệt 戻る, 帰る, 返す. 戻る là quay lại điểm xuất phát (会社に戻る). 帰る là về nhà hoặc nơi thuộc về (うちに帰る). 返す là trả đồ (本を返す). 訪ねる (thăm với mục đích) khác 訪問 (trang trọng) và khác 来る/行く thông thường."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "沸かす."
+          },
+          "target": "お湯を沸かして、お茶をいれます。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi đun nước rồi pha trà."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "炒める."
+          },
+          "target": "野菜を油で炒めます。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi xào rau với dầu."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "戻る."
+          },
+          "target": "忘れ物を取りに、会社に戻ります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi quay lại công ty để lấy đồ để quên."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "迎えに行く."
+          },
+          "target": "空港まで友達を迎えに行きます。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi ra sân bay đón bạn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "Trả sách là 返す; 戻す là đặt lại chỗ cũ."
+          },
+          "right": "本を図書館に返しました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "本を図書館に戻しました。(trả)"
+        },
+        {
+          "points": [
+            {
+              "vi": "沸かす · 炒める · 包む · 戻る · 訪ねる · 迎える."
+            },
+            {
+              "vi": "戻る (quay lại) ≠ 帰る (về nhà) ≠ 返す (trả)."
+            },
+            {
+              "vi": "V-ます + に行く = đi để làm."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "b6750c8164f8a6da9574470c6c1e01722d6f6cd2a9b1384c92bfe5256b2ca6b9",
+      "estimated_minutes": 15,
+      "id": "f8bc4344-193d-512c-a092-e0748b43eec0",
+      "is_demo": false,
+      "key": "ja:lesson:n4-cooking-moving",
+      "language_code": "ja",
+      "level_code": "n4",
+      "objectives": [
+        {
+          "vi": "Dùng 沸かす, 炒める, 包む trong ngữ cảnh nấu ăn, gói quà."
+        },
+        {
+          "vi": "Dùng 戻る, 訪ねる, 迎える cho di chuyển và thăm hỏi."
+        },
+        {
+          "vi": "Phân biệt 戻る / 帰る / 返す."
+        }
+      ],
+      "order_index": 2,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Nấu ăn và di chuyển - 沸かす・炒める・包む・戻る・訪ねる"
+      },
+      "unit_id": "9895c8f1-e1b4-597d-b2ae-9cc81892061e"
+    },
+    {
+      "body": [
+        {
+          "text": {
             "vi": "Sau bài này, bạn phân biệt được các cách nói giới hạn - 水だけ飲みます / 千円しかありません / ゲームばかりしています / 一人二つずつ."
           },
           "type": "objective"
@@ -1053697,6 +1079796,141 @@ select content_private.import_bundle($bundle${
         "vi": "Thiên tai và an toàn - 地震・台風・停電"
       },
       "unit_id": "360e8995-3337-5506-9004-27717bd42194"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn nói được 先生が怒る, 一人で寂しい, 人前で恥ずかしい, 雨に濡れる, 洗濯物が乾く và hiểu câu có chúng."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Cảm xúc: 怒る (giận), 寂しい (cô đơn), 恥ずかしい (xấu hổ). Đánh giá: 偉い (giỏi, đáng nể). Trạng thái vật: 乾く (khô), 濡れる (ướt)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "怒る đi với に hoặc không có đối tượng: 先生は学生に怒る / 先生が怒っている. Còn 叱る (mắng) là hành động trực tiếp với người dưới."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "偉い vừa là \"có địa vị cao\" (偉い人) vừa dùng để khen người khác kiên trì, nhất là với người nhỏ tuổi hơn (偉いね). Với cấp trên hay người lạ, tránh dùng để khen vì nghe như đánh giá từ trên xuống."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "乾く là tự động từ (quần áo khô), tha động từ là 乾かす (làm khô). 濡れる cũng tự động từ (bị ướt), tha động từ là 濡らす. Thể ている mô tả trạng thái hiện tại: 乾いている (đang khô), 濡れている (đang ướt)."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "怒る."
+          },
+          "target": "先生は遅刻した学生に怒りました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Thầy giáo đã giận sinh viên đến muộn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "寂しくなる."
+          },
+          "target": "一人で暮らすと、時々寂しくなります。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Sống một mình, đôi khi tôi thấy cô đơn."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "濡れる."
+          },
+          "target": "雨に濡れて、風邪を引きました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi bị ướt mưa nên bị cảm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "乾く là tự động từ (が乾く); 乾かす mới là tha động từ (を乾かす)."
+          },
+          "right": "洗濯物が乾いています。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "洗濯物が乾かしています。"
+        },
+        {
+          "note": {
+            "vi": "Dùng 偉い để khen người dưới hoặc ngang hàng thân thiết; với cấp trên nói すばらしいですね."
+          },
+          "right": "Không dùng 偉い để khen cấp trên.",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "社長に「偉いですね」と言いました。"
+        },
+        {
+          "points": [
+            {
+              "vi": "怒る · 寂しい · 恥ずかしい · 偉い · 乾く · 濡れる."
+            },
+            {
+              "vi": "怒る (giận) ≠ 叱る (mắng)."
+            },
+            {
+              "vi": "乾く (tự) ≠ 乾かす (tha)."
+            },
+            {
+              "vi": "偉い chỉ dùng với người dưới/ngang hàng."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "81f3e6bc0d3a6223f377f9be45ab984d4955f587106285d4dea921e111ab459e",
+      "estimated_minutes": 15,
+      "id": "e962553f-f8b0-5de1-a581-7ca1b243ce43",
+      "is_demo": false,
+      "key": "ja:lesson:n4-feelings-states",
+      "language_code": "ja",
+      "level_code": "n4",
+      "objectives": [
+        {
+          "vi": "Dùng 怒る, 寂しい, 恥ずかしい, 偉い để nói về cảm xúc và đánh giá người khác."
+        },
+        {
+          "vi": "Dùng 乾く, 濡れる cho trạng thái vật (khô, ướt) kèm cấu trúc ～て (nguyên nhân)."
+        },
+        {
+          "vi": "Đọc hiểu câu ngắn có các từ này."
+        }
+      ],
+      "order_index": 1,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Cảm xúc và trạng thái - 怒る・寂しい・恥ずかしい・濡れる"
+      },
+      "unit_id": "9895c8f1-e1b4-597d-b2ae-9cc81892061e"
     },
     {
       "body": [
@@ -1054307,7 +1080541,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "e4dd1c40bb5c2ee6839ffa46c40e7ba52fcb6995b32dc1b9f0633520006a9035",
+      "content_hash": "82b9b056de490e91ca1ad09aae2078ef546e8322821f3b3d815dd37d7b003444",
       "estimated_minutes": 16,
       "id": "303dba32-50dd-5073-9f8f-6bdb8e0150a6",
       "is_demo": false,
@@ -1056256,7 +1082490,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "4d74b6210d4a7f3390e32564034a696e63479fe53a75d3b51d5bca59e1e6fab2",
+      "content_hash": "14ed40835e1b672f3e295343ebc1c0c881859fd4296ac49f2fef3ea98281fe84",
       "estimated_minutes": 16,
       "id": "b49d4eb7-9a52-5dbf-86b8-a274190f80e4",
       "is_demo": false,
@@ -1057505,7 +1083739,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "c5341bc0803da4beb06681c251c295ccc1fe49d1a86188a5a295110bb0fa30fc",
+      "content_hash": "33c83b21fba60aa5678d02fa8918ec0998c2a46f5a8c4d9223b93712b5600544",
       "estimated_minutes": 17,
       "id": "301aa677-d290-502c-8173-d2eefe3c4b52",
       "is_demo": false,
@@ -1058882,7 +1085116,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "38d2d10b317932a4dd110ad04338075291f7eb889af4498e46446ede293459ec",
+      "content_hash": "f6bc3a1d055eecf06f8f85bd591efa8aa2e1f77fe1ace4fd078f048df04698c6",
       "estimated_minutes": 17,
       "id": "f050176a-564b-51e6-8b66-a489bac7b66d",
       "is_demo": false,
@@ -1059216,6 +1085450,143 @@ select content_private.import_bundle($bundle${
         "vi": "Công việc và công ty - 部長・面接・お疲れ様です"
       },
       "unit_id": "65346237-27c9-59cc-957d-ca9a708aa750"
+    },
+    {
+      "body": [
+        {
+          "text": {
+            "vi": "Sau bài này, bạn dùng 12 danh từ trong thông báo và hội thoại công việc - 先生に相談する, 旅行の計画を立てる, 会議に出席する, 時計を修理に出す."
+          },
+          "type": "objective"
+        },
+        {
+          "text": {
+            "vi": "Danh từ + する: 相談する (bàn bạc), 計画する (lên kế hoạch), 成功する (thành công), 失敗する (thất bại), 出席する (có mặt), 欠席する (vắng mặt), 修理する (sửa), 営業する (kinh doanh). 希望 cũng có 希望する (mong muốn)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "Cụm cố định: 計画を立てる (lập kế hoạch), 修理に出す (đem đi sửa), 希望の会社 (công ty mong muốn), 営業中 (đang mở cửa), 駐車場 (bãi đỗ xe), ガソリンを入れる (đổ xăng), 道路が凍る (đường đóng băng)."
+          },
+          "type": "explain"
+        },
+        {
+          "text": {
+            "vi": "相談 đi với に hoặc と: 先生に相談する (xin ý kiến thầy), 友達と相談する (cùng bàn với bạn). 出席 và 欠席 đi với に: 会議に出席する, 授業を欠席する. Nhận ra cặp trái nghĩa 成功 / 失敗 và 出席 / 欠席."
+          },
+          "type": "deep_explain"
+        },
+        {
+          "note": {
+            "vi": "相談."
+          },
+          "target": "進路について、先生に相談しました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi đã xin ý kiến thầy về con đường sắp tới."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "出席."
+          },
+          "target": "明日の会議には、全員出席します。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Cuộc họp ngày mai tất cả mọi người sẽ tham dự."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "修理に出す."
+          },
+          "target": "壊れた時計を修理に出しました。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Tôi đã mang chiếc đồng hồ hỏng đi sửa."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "営業."
+          },
+          "target": "この店は夜十時まで営業しています。",
+          "target_lang": "ja",
+          "translation": {
+            "vi": "Cửa hàng này mở cửa đến mười giờ đêm."
+          },
+          "type": "example"
+        },
+        {
+          "note": {
+            "vi": "相談 đi với に (hoặc と), không dùng を cho người."
+          },
+          "right": "先生に相談しました。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "先生を相談しました。"
+        },
+        {
+          "note": {
+            "vi": "欠席 dùng với を khi nói \"vắng mặt buổi học\"."
+          },
+          "right": "熱があるので、今日は授業を欠席します。",
+          "target_lang": "ja",
+          "type": "common_mistake",
+          "wrong": "熱があるので、今日は授業に欠席します。"
+        },
+        {
+          "points": [
+            {
+              "vi": "相談 · 計画 · 希望 · 成功 · 失敗 · 出席 · 欠席 · 修理 · 駐車場 · ガソリン · 道路 · 営業."
+            },
+            {
+              "vi": "先生に相談する · 会議に出席する · 授業を欠席する."
+            },
+            {
+              "vi": "成功 ↔ 失敗 · 出席 ↔ 欠席."
+            }
+          ],
+          "type": "summary"
+        }
+      ],
+      "content_hash": "8f0bb0eaca0a9b957bcd29428113ba1f723e1e7f887e82dc93e8a64fd86f8e0f",
+      "estimated_minutes": 18,
+      "id": "68e0ce0a-1f07-5515-8ae6-c81339fa8867",
+      "is_demo": false,
+      "key": "ja:lesson:n4-work-nouns",
+      "language_code": "ja",
+      "level_code": "n4",
+      "objectives": [
+        {
+          "vi": "Dùng 12 danh từ làm việc và đời sống: 相談, 計画, 希望, 成功, 失敗, 出席, 欠席, 修理, 駐車場, ガソリン, 道路, 営業."
+        },
+        {
+          "vi": "Tạo động từ bằng danh từ + する (相談する, 計画する, 出席する)."
+        },
+        {
+          "vi": "Đọc hiểu thông báo ngắn."
+        }
+      ],
+      "order_index": 3,
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "skills": [
+        "vocabulary",
+        "reading",
+        "speaking",
+        "listening"
+      ],
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Công việc và đời sống - 相談・計画・希望・成功・失敗・出席・欠席"
+      },
+      "unit_id": "9895c8f1-e1b4-597d-b2ae-9cc81892061e"
     },
     {
       "body": [
@@ -1061066,7 +1087437,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "415e49907a03e96627aab218145f54e9ba6fa3f037941f35aa588300c1e16576",
+      "content_hash": "9ad1bc17bf9f51e4a7cb37bdb756520be74a8eef73bf176347c2b7e99a5cfa92",
       "estimated_minutes": 15,
       "id": "60087155-8799-5af3-9810-55ae510898d5",
       "is_demo": false,
@@ -1062085,7 +1088456,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "3d65fff6eb5fdb430be169a09d9a1eadc2efbf3e99002b7cff28de3f68c086c0",
+      "content_hash": "980a8143d446985e8fa4118f29764a69591c9119ff79b5ee7c4d1f938f9aca39",
       "estimated_minutes": 15,
       "id": "5a1ccc65-6259-5c25-bcf2-0db23e3b70b7",
       "is_demo": false,
@@ -1062376,7 +1088747,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "6981917aba41ea04de846c8311deb8357deba94ff434e0c57175cd246e549a08",
+      "content_hash": "d2a8bb6b1ce4d95c76b9532ccbb5c956371c9dd78da54b01cab123638a9d711f",
       "estimated_minutes": 15,
       "id": "5847d28a-8e7f-5740-960c-6c5dae87d8e8",
       "is_demo": false,
@@ -1062521,7 +1088892,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "c8fe07dc9e627f95ae34536307688027824dc4203ba269070cc0678521a46010",
+      "content_hash": "1c6e3718a9ba14524bbcda5eff4b8d30ff856a220878c6421ae60ca0da06dd77",
       "estimated_minutes": 15,
       "id": "dd7482e1-65ef-5f64-8c1b-c74d1fe59bf9",
       "is_demo": false,
@@ -1063404,7 +1089775,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "b9a8242c36e234267931c6f0f5ce88da458a8919e65eebd9a6d909cdb8b35d01",
+      "content_hash": "2848de776179f8b8e3568d25252c64e14b7fe19e93fd82e8993acad10e329d8d",
       "estimated_minutes": 15,
       "id": "d11323cc-a9c2-5513-9cef-35441599a5df",
       "is_demo": false,
@@ -1063549,7 +1089920,7 @@ select content_private.import_bundle($bundle${
           "type": "summary"
         }
       ],
-      "content_hash": "f843796ff83ea88fcba3b64799396c3dc9905c5330c4aca25c513e7357feefaf",
+      "content_hash": "f6594c12e9d9edaf59703d46550fac73bff0d95c0591701cca4d8913b2e6604a",
       "estimated_minutes": 15,
       "id": "abd77b83-43d5-5dab-a36e-bb328b299233",
       "is_demo": false,
@@ -1085797,6 +1112168,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
+      "content_hash": "c24147b6f474eeb2723371a9eea902f726b05893a2bdc4026bd67599bc97538e",
+      "id": "461eb2e9-1ccb-5ed5-b887-fad01e860a24",
+      "is_demo": false,
+      "key": "ja:unit:n1-abstract-verbs-adverbs",
+      "order_index": 10,
+      "program_id": "c71f3440-1633-5dd6-bfcf-e60af0cd86c4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Từ vựng N1: danh từ trừu tượng, động từ văn viết và phó từ"
+      }
+    },
+    {
       "content_hash": "0019a2495656237d07b1beade15fcec11d3a5e13c56090f854e7afe8971c0f64",
       "id": "3c12101b-a1f9-5775-b07d-46d8bb7f5bcc",
       "is_demo": false,
@@ -1085839,6 +1112225,21 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Nhấn mạnh, tất yếu và ngoài dự đoán"
+      }
+    },
+    {
+      "content_hash": "f360215c904fd8150d2f587246123f838f56341fef12a824f0241418da244789",
+      "id": "27c43d17-cbe3-5395-ac7b-2834ff7fc4b7",
+      "is_demo": false,
+      "key": "ja:unit:n1-extent-nothing-but-should",
+      "order_index": 9,
+      "program_id": "c71f3440-1633-5dd6-bfcf-e60af0cd86c4",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Mức độ cực hạn, khẳng định tuyệt đối và đương nhiên"
       }
     },
     {
@@ -1085917,6 +1112318,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
+      "content_hash": "58c73147540dd630c251d6ad46c1b5dbb71d14fa2d7fd9b9b43f6c0840ddbbfc",
+      "id": "53c7ea94-ff47-500e-820e-1f4541dec8f2",
+      "is_demo": false,
+      "key": "ja:unit:n2-basis-concession-feeling",
+      "order_index": 11,
+      "program_id": "00434097-1e11-58e5-b6ca-945b308dcff5",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Căn cứ, nhượng bộ và cảm xúc mạnh"
+      }
+    },
+    {
       "content_hash": "6ad96b5b6f831d4648cf8b449c1f85179565bb608dff6ab320dfc39421c0b329",
       "id": "fbbc40c8-7b83-5fe9-93ac-5323edb4ed47",
       "is_demo": false,
@@ -1085929,6 +1112345,21 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Kính ngữ và giao tiếp công việc"
+      }
+    },
+    {
+      "content_hash": "5887d3a6c8e89dd72fb266085bbe909f5b3d68fa7958790be61f27123c4aba3f",
+      "id": "54376dc5-fc17-51bf-9bc4-469d6fd1047a",
+      "is_demo": false,
+      "key": "ja:unit:n2-business-society-science-mind",
+      "order_index": 10,
+      "program_id": "00434097-1e11-58e5-b6ca-945b308dcff5",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Từ vựng N2: kinh doanh, xã hội, khoa học và tâm lý"
       }
     },
     {
@@ -1086037,6 +1112468,21 @@ select content_private.import_bundle($bundle${
       }
     },
     {
+      "content_hash": "34e96feedba6e8fc015052f878d092c6a6d7093938c8a95fb86ddae3943f55e9",
+      "id": "824770e7-a9c2-5c8e-849a-0ba19b1eea92",
+      "is_demo": false,
+      "key": "ja:unit:n2-verbs-adjectives-adverbs",
+      "order_index": 12,
+      "program_id": "00434097-1e11-58e5-b6ca-945b308dcff5",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Từ vựng N2: động từ, tính từ và phó từ"
+      }
+    },
+    {
       "content_hash": "629d51ad48eee9e6e8489fb2d0a9ec49a87734ad8ad5ebc42aaa3e2049575b61",
       "id": "e61ecd96-8a95-5bc7-97a3-02c55c3de87c",
       "is_demo": false,
@@ -1086079,6 +1112525,21 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Nhấn mạnh, mức độ và hồi tưởng"
+      }
+    },
+    {
+      "content_hash": "7d6db7d2738aa1f3f70b2046e39bba7b7dd39ffc6ce620248c5cad5da2171b6f",
+      "id": "0038d230-69e6-52ca-bebf-67dd87ffef7b",
+      "is_demo": false,
+      "key": "ja:unit:n3-employment-rules-culture",
+      "order_index": 11,
+      "program_id": "d3895e09-3f7e-5451-b05d-a001d6c92355",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Việc làm, quy tắc xã hội và văn hoá"
       }
     },
     {
@@ -1086229,6 +1112690,21 @@ select content_private.import_bundle($bundle${
       "status": "published",
       "title": {
         "vi": "Giải thích, phỏng đoán và trích dẫn"
+      }
+    },
+    {
+      "content_hash": "3c90ecee26d9bfa88113b2f8d9c23fc00655c2c11235345bf8dbc86af99c4f1a",
+      "id": "9895c8f1-e1b4-597d-b2ae-9cc81892061e",
+      "is_demo": false,
+      "key": "ja:unit:n4-feelings-cooking-work",
+      "order_index": 11,
+      "program_id": "1e8de40a-fde9-5e2e-8bb3-e8c2d2e4b7bd",
+      "reviewed_at": "2026-10-21T12:00:00+07:00",
+      "reviewed_by": "Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền",
+      "source_id": "bf7e159d-73d5-5f79-89cd-f97fb0d667f8",
+      "status": "published",
+      "title": {
+        "vi": "Cảm xúc, nấu ăn, di chuyển và công việc"
       }
     },
     {
