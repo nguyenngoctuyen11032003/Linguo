@@ -1,0 +1,371 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-work-nouns
+order_index: 3
+level: n4
+title:
+  vi: Công việc và đời sống - 相談・計画・希望・成功・失敗・出席・欠席
+objectives:
+  - vi: "Dùng 12 danh từ làm việc và đời sống: 相談, 計画, 希望, 成功, 失敗, 出席, 欠席, 修理, 駐車場, ガソリン, 道路, 営業."
+  - vi: Tạo động từ bằng danh từ + する (相談する, 計画する, 出席する).
+  - vi: Đọc hiểu thông báo ngắn.
+estimated_minutes: 18
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-cooking-moving
+items:
+  - item: ja:item:n4-u11-soudan
+  - item: ja:item:n4-u11-keikaku
+  - item: ja:item:n4-u11-kibou
+  - item: ja:item:n4-u11-seikou
+  - item: ja:item:n4-u11-shippai
+  - item: ja:item:n4-u11-shusseki
+  - item: ja:item:n4-u11-kesseki
+  - item: ja:item:n4-u11-shuuri
+  - item: ja:item:n4-u11-chuushajou
+  - item: ja:item:n4-u11-gasorin
+  - item: ja:item:n4-u11-douro
+  - item: ja:item:n4-u11-eigyou
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng 12 danh từ trong thông báo và hội thoại công việc - 先生に相談する, 旅行の計画を立てる, 会議に出席する, 時計を修理に出す.
+  - type: explain
+    text:
+      vi: "Danh từ + する: 相談する (bàn bạc), 計画する (lên kế hoạch), 成功する (thành công), 失敗する (thất bại), 出席する (có mặt), 欠席する (vắng mặt), 修理する (sửa), 営業する (kinh doanh). 希望 cũng có 希望する (mong muốn)."
+  - type: explain
+    text:
+      vi: "Cụm cố định: 計画を立てる (lập kế hoạch), 修理に出す (đem đi sửa), 希望の会社 (công ty mong muốn), 営業中 (đang mở cửa), 駐車場 (bãi đỗ xe), ガソリンを入れる (đổ xăng), 道路が凍る (đường đóng băng)."
+  - type: deep_explain
+    text:
+      vi: "相談 đi với に hoặc と: 先生に相談する (xin ý kiến thầy), 友達と相談する (cùng bàn với bạn). 出席 và 欠席 đi với に: 会議に出席する, 授業を欠席する. Nhận ra cặp trái nghĩa 成功 / 失敗 và 出席 / 欠席."
+  - type: example
+    target: 進路について、先生に相談しました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã xin ý kiến thầy về con đường sắp tới.
+    note:
+      vi: 相談.
+  - type: example
+    target: 明日の会議には、全員出席します。
+    target_lang: ja
+    translation:
+      vi: Cuộc họp ngày mai tất cả mọi người sẽ tham dự.
+    note:
+      vi: 出席.
+  - type: example
+    target: 壊れた時計を修理に出しました。
+    target_lang: ja
+    translation:
+      vi: Tôi đã mang chiếc đồng hồ hỏng đi sửa.
+    note:
+      vi: 修理に出す.
+  - type: example
+    target: この店は夜十時まで営業しています。
+    target_lang: ja
+    translation:
+      vi: Cửa hàng này mở cửa đến mười giờ đêm.
+    note:
+      vi: 営業.
+  - type: common_mistake
+    wrong: 先生を相談しました。
+    right: 先生に相談しました。
+    target_lang: ja
+    note:
+      vi: 相談 đi với に (hoặc と), không dùng を cho người.
+  - type: common_mistake
+    wrong: 熱があるので、今日は授業に欠席します。
+    right: 熱があるので、今日は授業を欠席します。
+    target_lang: ja
+    note:
+      vi: 欠席 dùng với を khi nói "vắng mặt buổi học".
+  - type: summary
+    points:
+      - vi: 相談 · 計画 · 希望 · 成功 · 失敗 · 出席 · 欠席 · 修理 · 駐車場 · ガソリン · 道路 · 営業.
+      - vi: 先生に相談する · 会議に出席する · 授業を欠席する.
+      - vi: 成功 ↔ 失敗 · 出席 ↔ 欠席.
+exercises:
+  - key: ja:exercise:n4-work-nouns-c1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-keikaku
+    prompt:
+      stem: Từ nào có nghĩa là “kế hoạch”?
+      stem_lang: vi
+      options:
+        - id: zwu
+          text: 希望
+          lang: ja
+        - id: to5
+          text: 計画
+          lang: ja
+        - id: lhm
+          text: 相談
+          lang: ja
+        - id: iyq
+          text: 修理
+          lang: ja
+    answer:
+      correct_option_id: to5
+    explanation:
+      vi: 計画 là kế hoạch. 相談 là bàn bạc, 希望 là nguyện vọng, 修理 là sửa chữa.
+    display_answer: 計画
+  - key: ja:exercise:n4-work-nouns-c2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-kesseki
+    prompt:
+      stem: Từ trái nghĩa với 出席 là gì?
+      stem_lang: vi
+      options:
+        - id: ygz
+          text: 営業
+          lang: ja
+        - id: f8d
+          text: 欠席
+          lang: ja
+        - id: lsk
+          text: 成功
+          lang: ja
+        - id: op4
+          text: 修理
+          lang: ja
+    answer:
+      correct_option_id: f8d
+    explanation:
+      vi: 欠席 là vắng mặt, trái nghĩa với 出席 (có mặt).
+    display_answer: 欠席
+  - key: ja:exercise:n4-work-nouns-c3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u11-eigyou
+    prompt:
+      audio_asset_id: null
+      fallback_text: この店は夜十時まで営業しています。
+      options:
+        - id: x1a
+          text: Cửa hàng này mở lúc mười giờ đêm.
+          lang: vi
+        - id: lvb
+          text: Cửa hàng này mở cửa đến mười giờ đêm.
+          lang: vi
+        - id: grz
+          text: Cửa hàng này đang sửa chữa đến mười giờ đêm.
+          lang: vi
+        - id: wgc
+          text: Cửa hàng này đóng cửa lúc mười giờ sáng.
+          lang: vi
+    answer:
+      correct_option_id: lvb
+    explanation:
+      vi: 営業している - đang mở cửa; 夜十時まで - đến mười giờ đêm.
+    display_answer: Cửa hàng này mở cửa đến mười giờ đêm.
+  - key: ja:exercise:n4-work-nouns-c4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-shuuri
+    prompt:
+      template: 壊れた時計を{{b1}}に出しました。 (Tôi đã mang chiếc đồng hồ hỏng đi sửa.)
+      blanks:
+        - id: b1
+          width_hint: 3
+      hint_levels:
+        - Việc sửa chữa.
+        - Bắt đầu bằng 修.
+    answer:
+      blanks:
+        b1:
+          - 修理
+          - しゅうり
+    known_wrong:
+      - answer: 相談
+        feedback_vi: 相談 là bàn bạc; đem đi sửa là 修理に出す.
+        error_tag: noun_choice
+    explanation:
+      vi: 修理に出す - đem đi sửa.
+    display_answer: 壊れた時計を修理に出しました。
+  - key: ja:exercise:n4-work-nouns-c5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-chuushajou
+    prompt:
+      stem: Bãi đỗ xe là gì?
+      stem_lang: vi
+      options:
+        - id: qss
+          text: 営業
+          lang: ja
+        - id: juh
+          text: 駐車場
+          lang: ja
+        - id: zxk
+          text: 道路
+          lang: ja
+        - id: oa6
+          text: ガソリン
+          lang: ja
+    answer:
+      correct_option_id: juh
+    explanation:
+      vi: 駐車場 là bãi đỗ xe. 道路 là đường, ガソリン là xăng.
+    display_answer: 駐車場
+  - key: ja:exercise:n4-work-nouns-c6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-soudan
+    prompt:
+      template: 進路について、先生に{{b1}}しました。 (Tôi đã xin ý kiến thầy về con đường sắp tới.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 相談
+          - そうだん
+    known_wrong:
+      - answer: 欠席
+        feedback_vi: 欠席 là vắng mặt; xin ý kiến là 相談.
+        error_tag: noun_choice
+    explanation:
+      vi: 相談する - bàn bạc, xin ý kiến.
+    display_answer: 進路について、先生に相談しました。
+  - key: ja:exercise:n4-work-nouns-c7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-shusseki
+    prompt:
+      template: 明日の会議には、全員{{b1}}します。 (Cuộc họp ngày mai tất cả mọi người sẽ tham dự.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 出席
+          - しゅっせき
+    known_wrong:
+      - answer: 欠席
+        feedback_vi: 欠席 là vắng mặt, trái nghĩa với 出席.
+        error_tag: noun_choice
+    explanation:
+      vi: 出席する - có mặt, tham dự.
+    display_answer: 明日の会議には、全員出席します。
+  - key: ja:exercise:n4-work-nouns-c8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-keikaku
+    prompt:
+      source_text: Tôi đang lập kế hoạch cho chuyến du lịch.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 旅行の計画を立てています。
+        - 旅行の計画を立てている。
+        - りょこうのけいかくをたてています。
+        - 旅行の計画をたてています。
+    known_wrong:
+      - answer: 旅行の相談を立てています。
+        feedback_vi: 相談 là bàn bạc; lập kế hoạch là 計画を立てる.
+        error_tag: noun_choice
+    explanation:
+      vi: 計画を立てる - lập kế hoạch.
+    display_answer: 旅行の計画を立てています。
+  - key: ja:exercise:n4-work-nouns-c9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-u11-seikou
+    prompt:
+      source_text: 実験は何度も失敗しましたが、やっと成功して、みんな喜びました。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Thí nghiệm thất bại nhiều lần, nhưng cuối cùng cũng thành công nên mọi người rất vui.
+        - Thí nghiệm đã thất bại nhiều lần, nhưng cuối cùng thành công, ai cũng vui mừng.
+        - Dù thất bại nhiều lần, cuối cùng thí nghiệm cũng thành công và mọi người đều vui.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Thí nghiệm thành công ngay từ lần đầu nên mọi người vui.
+        feedback_vi: 何度も失敗 là thất bại nhiều lần.
+        error_tag: meaning
+    explanation:
+      vi: 何度も失敗 - thất bại nhiều lần; やっと成功 - cuối cùng cũng thành công.
+    display_answer: Thí nghiệm thất bại nhiều lần, nhưng cuối cùng cũng thành công nên mọi người rất vui.
+  - key: ja:exercise:n4-work-nouns-c10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-gasorin
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Xăng sắp hết nên tôi đi đổ."'
+      tokens:
+        - id: t2
+          text: 少なくなったので、
+        - id: t1
+          text: ガソリンが
+        - id: t3
+          text: 入れに行きます。
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+    explanation:
+      vi: Chủ ngữ → lý do (ので) → V-ます + に行く.
+    display_answer: ガソリンが少なくなったので、入れに行きます。
+  - key: ja:exercise:n4-work-nouns-c11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-shippai
+    prompt:
+      stem: Dù thất bại, đừng bỏ cuộc. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: uew
+          text: 失敗しても、営業しないでください
+          lang: ja
+        - id: idq
+          text: 失敗しても、出席しないでください
+          lang: ja
+        - id: yw1
+          text: 失敗しても、あきらめないでください
+          lang: ja
+        - id: ssb
+          text: 失敗しても、修理しないでください
+          lang: ja
+    answer:
+      correct_option_id: yw1
+    explanation:
+      vi: 失敗しても - dù thất bại; あきらめないで - đừng bỏ cuộc.
+    display_answer: 失敗しても、あきらめないでください

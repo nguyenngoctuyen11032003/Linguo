@@ -1,0 +1,363 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-cooking-moving
+order_index: 2
+level: n4
+title:
+  vi: Nấu ăn và di chuyển - 沸かす・炒める・包む・戻る・訪ねる
+objectives:
+  - vi: Dùng 沸かす, 炒める, 包む trong ngữ cảnh nấu ăn, gói quà.
+  - vi: Dùng 戻る, 訪ねる, 迎える cho di chuyển và thăm hỏi.
+  - vi: Phân biệt 戻る / 帰る / 返す.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-feelings-states
+items:
+  - item: ja:item:n4-u11-wakasu
+  - item: ja:item:n4-u11-itameru
+  - item: ja:item:n4-u11-tsutsumu
+  - item: ja:item:n4-u11-modoru
+  - item: ja:item:n4-u11-tazuneru
+  - item: ja:item:n4-u7-mukaeru
+    role: reuse
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được お湯を沸かす, 野菜を炒める, プレゼントを包む, 会社に戻る, 先生を訪ねる, 友達を迎えに行く.
+  - type: explain
+    text:
+      vi: "Nấu ăn và đồ vật: 沸かす (đun sôi), 炒める (xào), 包む (gói, bọc). Di chuyển: 戻る (quay lại), 訪ねる (đến thăm), 迎える (đón)."
+  - type: explain
+    text:
+      vi: "Mẫu thông dụng: お湯を沸かす, 野菜を油で炒める, プレゼントを紙で包む, 席に戻る, 友達を訪ねる, 空港まで迎えに行く (V-ます bỏ ます + に行く)."
+  - type: deep_explain
+    text:
+      vi: Phân biệt 戻る, 帰る, 返す. 戻る là quay lại điểm xuất phát (会社に戻る). 帰る là về nhà hoặc nơi thuộc về (うちに帰る). 返す là trả đồ (本を返す). 訪ねる (thăm với mục đích) khác 訪問 (trang trọng) và khác 来る/行く thông thường.
+  - type: example
+    target: お湯を沸かして、お茶をいれます。
+    target_lang: ja
+    translation:
+      vi: Tôi đun nước rồi pha trà.
+    note:
+      vi: 沸かす.
+  - type: example
+    target: 野菜を油で炒めます。
+    target_lang: ja
+    translation:
+      vi: Tôi xào rau với dầu.
+    note:
+      vi: 炒める.
+  - type: example
+    target: 忘れ物を取りに、会社に戻ります。
+    target_lang: ja
+    translation:
+      vi: Tôi quay lại công ty để lấy đồ để quên.
+    note:
+      vi: 戻る.
+  - type: example
+    target: 空港まで友達を迎えに行きます。
+    target_lang: ja
+    translation:
+      vi: Tôi ra sân bay đón bạn.
+    note:
+      vi: 迎えに行く.
+  - type: common_mistake
+    wrong: 本を図書館に戻しました。(trả)
+    right: 本を図書館に返しました。
+    target_lang: ja
+    note:
+      vi: Trả sách là 返す; 戻す là đặt lại chỗ cũ.
+  - type: summary
+    points:
+      - vi: 沸かす · 炒める · 包む · 戻る · 訪ねる · 迎える.
+      - vi: 戻る (quay lại) ≠ 帰る (về nhà) ≠ 返す (trả).
+      - vi: V-ます + に行く = đi để làm.
+exercises:
+  - key: ja:exercise:n4-cooking-moving-b1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-itameru
+    prompt:
+      stem: Từ nào có nghĩa là “xào”?
+      stem_lang: vi
+      options:
+        - id: p4m
+          text: 沸かす
+          lang: ja
+        - id: foy
+          text: 戻る
+          lang: ja
+        - id: wj2
+          text: 炒める
+          lang: ja
+        - id: lzo
+          text: 包む
+          lang: ja
+    answer:
+      correct_option_id: wj2
+    explanation:
+      vi: 炒める là xào. 沸かす là đun sôi, 包む là gói, 戻る là quay lại.
+    display_answer: 炒める
+  - key: ja:exercise:n4-cooking-moving-b2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-tazuneru
+    prompt:
+      stem: Bạn đến thăm thầy cũ. Từ nào?
+      stem_lang: vi
+      options:
+        - id: pqd
+          text: 戻る
+          lang: ja
+        - id: iy0
+          text: 包む
+          lang: ja
+        - id: xnu
+          text: 迎える
+          lang: ja
+        - id: xw0
+          text: 訪ねる
+          lang: ja
+    answer:
+      correct_option_id: xw0
+    explanation:
+      vi: 訪ねる là đến thăm. 迎える là đón, 戻る là quay lại.
+    display_answer: 訪ねる
+  - key: ja:exercise:n4-cooking-moving-b3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u11-modoru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 忘れ物を取りに、会社に戻ります。
+      options:
+        - id: h3n
+          text: Tôi đến công ty để trả đồ.
+          lang: vi
+        - id: io3
+          text: Tôi quên đồ nên nghỉ việc ở công ty.
+          lang: vi
+        - id: b33
+          text: Tôi quay lại công ty để lấy đồ để quên.
+          lang: vi
+        - id: uur
+          text: Tôi đã quên công ty ở nhà.
+          lang: vi
+    answer:
+      correct_option_id: b33
+    explanation:
+      vi: 戻る - quay lại; 取りに - để lấy; 忘れ物 - đồ để quên.
+    display_answer: Tôi quay lại công ty để lấy đồ để quên.
+  - key: ja:exercise:n4-cooking-moving-b4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-wakasu
+    prompt:
+      template: お湯を{{b1}}て、お茶をいれます。 (Tôi đun nước rồi pha trà.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Đun nước.
+        - Bắt đầu bằng 沸.
+    answer:
+      blanks:
+        b1:
+          - 沸かし
+          - わかし
+    known_wrong:
+      - answer: 炒め
+        feedback_vi: 炒める là xào; đun nước là 沸かす.
+        error_tag: verb_choice
+    explanation:
+      vi: お湯を沸かす - đun nước.
+    display_answer: お湯を沸かして、お茶をいれます。
+  - key: ja:exercise:n4-cooking-moving-b5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u7-mukaeru
+    prompt:
+      stem: Bạn ra sân bay đón bạn. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: pli
+          text: 空港まで友達を迎えに行きます
+          lang: ja
+        - id: t9i
+          text: 空港まで友達を戻りに行きます
+          lang: ja
+        - id: tve
+          text: 空港まで友達を炒めに行きます
+          lang: ja
+        - id: x5n
+          text: 空港まで友達を包みに行きます
+          lang: ja
+    answer:
+      correct_option_id: pli
+    explanation:
+      vi: 迎えに行く - đi đón.
+    display_answer: 空港まで友達を迎えに行きます
+  - key: ja:exercise:n4-cooking-moving-b6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-itameru
+    prompt:
+      template: 野菜を油で{{b1}}ます。 (Tôi xào rau với dầu.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 炒め
+          - いため
+    known_wrong:
+      - answer: 沸かし
+        feedback_vi: 沸かす là đun sôi; xào là 炒める.
+        error_tag: verb_choice
+    explanation:
+      vi: 炒める - xào.
+    display_answer: 野菜を油で炒めます。
+  - key: ja:exercise:n4-cooking-moving-b7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-tsutsumu
+    prompt:
+      template: プレゼントをきれいな紙で{{b1}}ました。 (Tôi đã gói quà bằng giấy đẹp.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 包み
+          - つつみ
+    known_wrong:
+      - answer: 戻り
+        feedback_vi: 戻る là quay lại; gói là 包む.
+        error_tag: verb_choice
+    explanation:
+      vi: 包む - gói.
+    display_answer: プレゼントをきれいな紙で包みました。
+  - key: ja:exercise:n4-cooking-moving-b8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-tazuneru
+    prompt:
+      source_text: Tôi đã đến thăm người thầy từng giúp đỡ tôi.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 昔お世話になった先生を訪ねました。
+        - 昔お世話になった先生を訪ねた。
+        - むかしおせわになったせんせいをたずねました。
+        - お世話になった先生を昔訪ねました。
+    known_wrong:
+      - answer: 昔お世話になった先生を迎えました。
+        feedback_vi: 迎える là đón; đến thăm là 訪ねる.
+        error_tag: verb_choice
+    explanation:
+      vi: 訪ねる - đến thăm; お世話になる - được giúp đỡ.
+    display_answer: 昔お世話になった先生を訪ねました。
+  - key: ja:exercise:n4-cooking-moving-b9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-u11-modoru
+    prompt:
+      source_text: 会議が終わったら、すぐ席に戻ってください。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Họp xong thì hãy quay lại chỗ ngồi ngay.
+        - Khi cuộc họp kết thúc, xin hãy quay về chỗ ngay.
+        - Sau khi họp xong, hãy trở lại chỗ ngồi liền nhé.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Hãy ra ngoài ngay khi họp xong.
+        feedback_vi: 席に戻る là quay lại chỗ ngồi.
+        error_tag: meaning
+    explanation:
+      vi: 終わったら - khi xong; すぐ - ngay; 席に戻る - quay lại chỗ.
+    display_answer: Họp xong thì hãy quay lại chỗ ngồi ngay.
+  - key: ja:exercise:n4-cooking-moving-b10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-tsutsumu
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Tôi đã gói quà bằng giấy đẹp."'
+      tokens:
+        - id: t2
+          text: きれいな紙で
+        - id: t3
+          text: 包みました。
+        - id: t1
+          text: プレゼントを
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+        - - t2
+          - t1
+          - t3
+    explanation:
+      vi: Tân ngữ (を) → phương tiện (で) → 包みました.
+    display_answer: プレゼントをきれいな紙で包みました。
+  - key: ja:exercise:n4-cooking-moving-b11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-modoru
+    prompt:
+      stem: Bạn trả sách cho thư viện. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: wxk
+          text: 本を図書館に炒めました
+          lang: ja
+        - id: ft5
+          text: 本を図書館に迎えました
+          lang: ja
+        - id: vbf
+          text: 本を図書館に戻りました
+          lang: ja
+        - id: vvg
+          text: 本を図書館に返しました
+          lang: ja
+    answer:
+      correct_option_id: vvg
+    explanation:
+      vi: 返す - trả đồ. 戻る là tự động từ (quay lại), không dùng với を.
+    display_answer: 本を図書館に返しました

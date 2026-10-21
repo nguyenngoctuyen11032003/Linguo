@@ -1,0 +1,421 @@
+# Học liệu unit "Cảm xúc, nấu ăn, di chuyển và công việc" (JLPT N4). reading là cách đọc kana (furigana); romanization theo Hepburn, chỉ để tham khảo.
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: ja:item:n4-u11-okoru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 怒る
+      reading: おこる
+      romanization: okoru
+      pos: động từ
+    back:
+      meaning:
+        vi: giận, nổi giận
+      examples:
+        - target: 先生は遅刻した学生に怒りました。
+          translation:
+            vi: Thầy giáo đã giận sinh viên đến muộn.
+  - key: ja:item:n4-u11-sabishii
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 寂しい
+      reading: さびしい
+      romanization: sabishii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: cô đơn, buồn tẻ
+      examples:
+        - target: 一人で暮らすと、時々寂しくなります。
+          translation:
+            vi: Sống một mình, đôi khi tôi thấy cô đơn.
+  - key: ja:item:n4-u11-hazukashii
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 恥ずかしい
+      reading: はずかしい
+      romanization: hazukashii
+      pos: tính từ い
+    back:
+      meaning:
+        vi: xấu hổ, ngại
+      examples:
+        - target: みんなの前で話すのは恥ずかしいです。
+          translation:
+            vi: Nói trước mặt mọi người làm tôi ngại.
+  - key: ja:item:n4-u11-erai
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 偉い
+      reading: えらい
+      romanization: erai
+      pos: tính từ い
+    back:
+      meaning:
+        vi: giỏi, đáng nể; có địa vị cao
+      examples:
+        - target: 毎日勉強して、偉いですね。
+          translation:
+            vi: Ngày nào cũng học, bạn giỏi thật đấy.
+  - key: ja:item:n4-u11-kawaku
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 乾く
+      reading: かわく
+      romanization: kawaku
+      pos: động từ
+    back:
+      meaning:
+        vi: khô
+      examples:
+        - target: 洗濯物がまだ乾いていません。
+          translation:
+            vi: Quần áo giặt vẫn chưa khô.
+  - key: ja:item:n4-u11-nureru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 濡れる
+      reading: ぬれる
+      romanization: nureru
+      pos: động từ
+    back:
+      meaning:
+        vi: bị ướt
+      examples:
+        - target: 雨に濡れて、風邪を引きました。
+          translation:
+            vi: Tôi bị ướt mưa nên bị cảm.
+  - key: ja:item:n4-u11-wakasu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 沸かす
+      reading: わかす
+      romanization: wakasu
+      pos: động từ
+    back:
+      meaning:
+        vi: đun sôi, đun nước
+      examples:
+        - target: お湯を沸かして、お茶をいれます。
+          translation:
+            vi: Tôi đun nước rồi pha trà.
+  - key: ja:item:n4-u11-itameru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 炒める
+      reading: いためる
+      romanization: itameru
+      pos: động từ
+    back:
+      meaning:
+        vi: xào
+      examples:
+        - target: 野菜を油で炒めます。
+          translation:
+            vi: Tôi xào rau với dầu.
+  - key: ja:item:n4-u11-tsutsumu
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 包む
+      reading: つつむ
+      romanization: tsutsumu
+      pos: động từ
+    back:
+      meaning:
+        vi: gói, bọc
+      examples:
+        - target: プレゼントをきれいな紙で包みました。
+          translation:
+            vi: Tôi đã gói quà bằng giấy đẹp.
+  - key: ja:item:n4-u11-modoru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 戻る
+      reading: もどる
+      romanization: modoru
+      pos: động từ
+    back:
+      meaning:
+        vi: quay lại, trở về
+      examples:
+        - target: 忘れ物を取りに、会社に戻ります。
+          translation:
+            vi: Tôi quay lại công ty để lấy đồ để quên.
+  - key: ja:item:n4-u11-tazuneru
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 訪ねる
+      reading: たずねる
+      romanization: tazuneru
+      pos: động từ
+    back:
+      meaning:
+        vi: đến thăm, ghé thăm
+      examples:
+        - target: 昔お世話になった先生を訪ねました。
+          translation:
+            vi: Tôi đã đến thăm người thầy từng giúp đỡ tôi.
+  - key: ja:item:n4-u11-soudan
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 相談
+      reading: そうだん
+      romanization: soudan
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: bàn bạc, xin ý kiến
+      examples:
+        - target: 進路について、先生に相談しました。
+          translation:
+            vi: Tôi đã xin ý kiến thầy về con đường sắp tới.
+  - key: ja:item:n4-u11-keikaku
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 計画
+      reading: けいかく
+      romanization: keikaku
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: kế hoạch
+      examples:
+        - target: 旅行の計画を立てています。
+          translation:
+            vi: Tôi đang lập kế hoạch cho chuyến du lịch.
+  - key: ja:item:n4-u11-kibou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 希望
+      reading: きぼう
+      romanization: kibou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: nguyện vọng, hy vọng
+      examples:
+        - target: 希望の会社に入ることができました。
+          translation:
+            vi: Tôi đã vào được công ty mình mong muốn.
+  - key: ja:item:n4-u11-seikou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 成功
+      reading: せいこう
+      romanization: seikou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: thành công
+      examples:
+        - target: 実験が成功して、みんな喜びました。
+          translation:
+            vi: Thí nghiệm thành công nên mọi người rất vui.
+  - key: ja:item:n4-u11-shippai
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 失敗
+      reading: しっぱい
+      romanization: shippai
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: thất bại, sai sót
+      examples:
+        - target: 失敗しても、あきらめないでください。
+          translation:
+            vi: Dù thất bại, xin đừng bỏ cuộc.
+  - key: ja:item:n4-u11-shusseki
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 出席
+      reading: しゅっせき
+      romanization: shusseki
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: có mặt, tham dự
+      examples:
+        - target: 明日の会議には、全員出席します。
+          translation:
+            vi: Cuộc họp ngày mai tất cả mọi người sẽ tham dự.
+  - key: ja:item:n4-u11-kesseki
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 欠席
+      reading: けっせき
+      romanization: kesseki
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: vắng mặt
+      examples:
+        - target: 熱があるので、今日は授業を欠席します。
+          translation:
+            vi: Vì bị sốt nên hôm nay tôi vắng mặt buổi học.
+  - key: ja:item:n4-u11-shuuri
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 修理
+      reading: しゅうり
+      romanization: shuuri
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: sửa chữa
+      examples:
+        - target: 壊れた時計を修理に出しました。
+          translation:
+            vi: Tôi đã mang chiếc đồng hồ hỏng đi sửa.
+  - key: ja:item:n4-u11-chuushajou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 駐車場
+      reading: ちゅうしゃじょう
+      romanization: chuushajou
+      pos: danh từ
+    back:
+      meaning:
+        vi: bãi đỗ xe
+      examples:
+        - target: 店の後ろに駐車場があります。
+          translation:
+            vi: Phía sau cửa hàng có bãi đỗ xe.
+  - key: ja:item:n4-u11-gasorin
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ガソリン
+      romanization: gasorin
+      pos: danh từ
+    back:
+      meaning:
+        vi: xăng
+      examples:
+        - target: ガソリンが少なくなったので、入れに行きます。
+          translation:
+            vi: Xăng sắp hết nên tôi đi đổ.
+  - key: ja:item:n4-u11-douro
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 道路
+      reading: どうろ
+      romanization: douro
+      pos: danh từ
+    back:
+      meaning:
+        vi: đường (giao thông)
+      examples:
+        - target: 雪で道路が凍っています。
+          translation:
+            vi: Đường bị đóng băng vì tuyết.
+  - key: ja:item:n4-u11-eigyou
+    type: vocab
+    level: n4
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: 営業
+      reading: えいぎょう
+      romanization: eigyou
+      pos: danh từ / động từ する
+    back:
+      meaning:
+        vi: kinh doanh, mở cửa; bán hàng
+      examples:
+        - target: この店は夜十時まで営業しています。
+          translation:
+            vi: Cửa hàng này mở cửa đến mười giờ đêm.

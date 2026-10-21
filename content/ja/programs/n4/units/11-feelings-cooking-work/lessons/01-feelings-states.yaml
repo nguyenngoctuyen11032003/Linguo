@@ -1,0 +1,365 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude Sonnet 5.5 (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền
+reviewed_at: 2026-10-21T12:00:00+07:00
+key: ja:lesson:n4-feelings-states
+order_index: 1
+level: n4
+title:
+  vi: Cảm xúc và trạng thái - 怒る・寂しい・恥ずかしい・濡れる
+objectives:
+  - vi: Dùng 怒る, 寂しい, 恥ずかしい, 偉い để nói về cảm xúc và đánh giá người khác.
+  - vi: Dùng 乾く, 濡れる cho trạng thái vật (khô, ướt) kèm cấu trúc ～て (nguyên nhân).
+  - vi: Đọc hiểu câu ngắn có các từ này.
+estimated_minutes: 15
+skills:
+  - vocabulary
+  - reading
+  - speaking
+  - listening
+prerequisites:
+  - ja:lesson:n4-verb-pairs
+items:
+  - item: ja:item:n4-u11-okoru
+  - item: ja:item:n4-u11-sabishii
+  - item: ja:item:n4-u11-hazukashii
+  - item: ja:item:n4-u11-erai
+  - item: ja:item:n4-u11-kawaku
+  - item: ja:item:n4-u11-nureru
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn nói được 先生が怒る, 一人で寂しい, 人前で恥ずかしい, 雨に濡れる, 洗濯物が乾く và hiểu câu có chúng.
+  - type: explain
+    text:
+      vi: "Cảm xúc: 怒る (giận), 寂しい (cô đơn), 恥ずかしい (xấu hổ). Đánh giá: 偉い (giỏi, đáng nể). Trạng thái vật: 乾く (khô), 濡れる (ướt)."
+  - type: explain
+    text:
+      vi: "怒る đi với に hoặc không có đối tượng: 先生は学生に怒る / 先生が怒っている. Còn 叱る (mắng) là hành động trực tiếp với người dưới."
+  - type: explain
+    text:
+      vi: 偉い vừa là "có địa vị cao" (偉い人) vừa dùng để khen người khác kiên trì, nhất là với người nhỏ tuổi hơn (偉いね). Với cấp trên hay người lạ, tránh dùng để khen vì nghe như đánh giá từ trên xuống.
+  - type: deep_explain
+    text:
+      vi: "乾く là tự động từ (quần áo khô), tha động từ là 乾かす (làm khô). 濡れる cũng tự động từ (bị ướt), tha động từ là 濡らす. Thể ている mô tả trạng thái hiện tại: 乾いている (đang khô), 濡れている (đang ướt)."
+  - type: example
+    target: 先生は遅刻した学生に怒りました。
+    target_lang: ja
+    translation:
+      vi: Thầy giáo đã giận sinh viên đến muộn.
+    note:
+      vi: 怒る.
+  - type: example
+    target: 一人で暮らすと、時々寂しくなります。
+    target_lang: ja
+    translation:
+      vi: Sống một mình, đôi khi tôi thấy cô đơn.
+    note:
+      vi: 寂しくなる.
+  - type: example
+    target: 雨に濡れて、風邪を引きました。
+    target_lang: ja
+    translation:
+      vi: Tôi bị ướt mưa nên bị cảm.
+    note:
+      vi: 濡れる.
+  - type: common_mistake
+    wrong: 洗濯物が乾かしています。
+    right: 洗濯物が乾いています。
+    target_lang: ja
+    note:
+      vi: 乾く là tự động từ (が乾く); 乾かす mới là tha động từ (を乾かす).
+  - type: common_mistake
+    wrong: 社長に「偉いですね」と言いました。
+    right: Không dùng 偉い để khen cấp trên.
+    target_lang: ja
+    note:
+      vi: Dùng 偉い để khen người dưới hoặc ngang hàng thân thiết; với cấp trên nói すばらしいですね.
+  - type: summary
+    points:
+      - vi: 怒る · 寂しい · 恥ずかしい · 偉い · 乾く · 濡れる.
+      - vi: 怒る (giận) ≠ 叱る (mắng).
+      - vi: 乾く (tự) ≠ 乾かす (tha).
+      - vi: 偉い chỉ dùng với người dưới/ngang hàng.
+exercises:
+  - key: ja:exercise:n4-feelings-states-a1
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-okoru
+    prompt:
+      stem: Từ nào có nghĩa là “giận, nổi giận”?
+      stem_lang: vi
+      options:
+        - id: i4x
+          text: 乾く
+          lang: ja
+        - id: i5f
+          text: 偉い
+          lang: ja
+        - id: t2o
+          text: 濡れる
+          lang: ja
+        - id: up8
+          text: 怒る
+          lang: ja
+    answer:
+      correct_option_id: up8
+    explanation:
+      vi: 怒る là giận. 濡れる là bị ướt, 乾く là khô, 偉い là giỏi, đáng nể.
+    display_answer: 怒る
+  - key: ja:exercise:n4-feelings-states-a2
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-hazukashii
+    prompt:
+      stem: Bạn ngại khi nói trước mọi người. Từ nào?
+      stem_lang: vi
+      options:
+        - id: fdq
+          text: 偉い
+          lang: ja
+        - id: ppw
+          text: 寂しい
+          lang: ja
+        - id: avw
+          text: 恥ずかしい
+          lang: ja
+        - id: jsc
+          text: 怒る
+          lang: ja
+    answer:
+      correct_option_id: avw
+    explanation:
+      vi: 恥ずかしい là xấu hổ, ngại. 寂しい là cô đơn.
+    display_answer: 恥ずかしい
+  - key: ja:exercise:n4-feelings-states-a3
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 3
+    item: ja:item:n4-u11-nureru
+    prompt:
+      audio_asset_id: null
+      fallback_text: 雨に濡れて、風邪を引きました。
+      options:
+        - id: siz
+          text: Trời mưa nên tôi nghỉ học.
+          lang: vi
+        - id: b0r
+          text: Tôi bị ướt mưa nên bị cảm.
+          lang: vi
+        - id: a1h
+          text: Tôi tránh mưa nên không bị cảm.
+          lang: vi
+        - id: hby
+          text: Tôi đi dưới mưa vì bị cảm.
+          lang: vi
+    answer:
+      correct_option_id: b0r
+    explanation:
+      vi: 濡れる - bị ướt; 風邪を引く - bị cảm.
+    display_answer: Tôi bị ướt mưa nên bị cảm.
+  - key: ja:exercise:n4-feelings-states-a4
+    type: fill_blank
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-sabishii
+    prompt:
+      template: 一人で暮らすと、時々{{b1}}なります。 (Sống một mình, đôi khi tôi thấy cô đơn.)
+      blanks:
+        - id: b1
+          width_hint: 4
+      hint_levels:
+        - Tính từ い, bỏ い thêm く.
+        - Cô đơn.
+    answer:
+      blanks:
+        b1:
+          - 寂しく
+          - さびしく
+    known_wrong:
+      - answer: 恥ずかしく
+        feedback_vi: 恥ずかしい là xấu hổ; cô đơn là 寂しい.
+        error_tag: adj_choice
+    explanation:
+      vi: 寂しくなる - trở nên cô đơn.
+    display_answer: 一人で暮らすと、時々寂しくなります。
+  - key: ja:exercise:n4-feelings-states-a5
+    type: mcq
+    stage: recognition
+    answer_lang: ja
+    difficulty: 3
+    item: ja:item:n4-u11-kawaku
+    prompt:
+      stem: Quần áo giặt chưa khô. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: kfa
+          text: 洗濯物にまだ乾いていません
+          lang: ja
+        - id: zj4
+          text: 洗濯物がまだ乾いていません
+          lang: ja
+        - id: x15
+          text: 洗濯物がまだ乾かしていません
+          lang: ja
+        - id: htr
+          text: 洗濯物をまだ乾いていません
+          lang: ja
+    answer:
+      correct_option_id: zj4
+    explanation:
+      vi: 乾く là tự động từ nên dùng が; trạng thái chưa khô là 乾いていません.
+    display_answer: 洗濯物がまだ乾いていません
+  - key: ja:exercise:n4-feelings-states-a6
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-okoru
+    prompt:
+      template: 先生は遅刻した学生に{{b1}}ました。 (Thầy giáo đã giận sinh viên đến muộn.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 怒り
+          - おこり
+    known_wrong:
+      - answer: 濡れ
+        feedback_vi: 濡れる là bị ướt; giận là 怒る.
+        error_tag: verb_choice
+    explanation:
+      vi: 怒る - giận.
+    display_answer: 先生は遅刻した学生に怒りました。
+  - key: ja:exercise:n4-feelings-states-a7
+    type: fill_blank
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-nureru
+    prompt:
+      template: 雨に{{b1}}て、風邪を引きました。 (Tôi bị ướt mưa nên bị cảm.)
+      blanks:
+        - id: b1
+          width_hint: 3
+    answer:
+      blanks:
+        b1:
+          - 濡れ
+          - ぬれ
+    known_wrong:
+      - answer: 乾い
+        feedback_vi: 乾く là khô; bị ướt là 濡れる.
+        error_tag: verb_choice
+    explanation:
+      vi: 濡れる - bị ướt.
+    display_answer: 雨に濡れて、風邪を引きました。
+  - key: ja:exercise:n4-feelings-states-a8
+    type: translate
+    stage: recall
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-erai
+    prompt:
+      source_text: Ngày nào cũng học, bạn giỏi thật đấy.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - 毎日勉強して、偉いですね。
+        - 毎日勉強して、偉いね。
+        - まいにちべんきょうして、えらいですね。
+        - 毎日勉強していて、偉いですね。
+    known_wrong:
+      - answer: 毎日勉強して、恥ずかしいですね。
+        feedback_vi: 恥ずかしい là xấu hổ; khen là 偉い.
+        error_tag: adj_choice
+    explanation:
+      vi: 偉いですね - bạn giỏi quá.
+    display_answer: 毎日勉強して、偉いですね。
+  - key: ja:exercise:n4-feelings-states-a9
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 4
+    item: ja:item:n4-u11-hazukashii
+    prompt:
+      source_text: みんなの前で話すのは恥ずかしいですが、練習すれば大丈夫です。
+      source_lang: ja
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nói trước mặt mọi người thì ngại, nhưng luyện tập thì sẽ ổn.
+        - Nói trước mọi người rất xấu hổ, nhưng nếu luyện tập thì không sao.
+        - Tôi ngại nói trước đám đông, nhưng nếu tập thì ổn thôi.
+    rubric:
+      diacritics: lenient
+    known_wrong:
+      - answer: Nói trước mặt mọi người rất dễ nên không cần luyện tập.
+        feedback_vi: 恥ずかしい là ngại, xấu hổ.
+        error_tag: meaning
+    explanation:
+      vi: 恥ずかしいですが - ngại nhưng; 練習すれば - nếu luyện tập thì.
+    display_answer: Nói trước mặt mọi người thì ngại, nhưng luyện tập thì sẽ ổn.
+  - key: ja:exercise:n4-feelings-states-a10
+    type: word_bank
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-kawaku
+    prompt:
+      instruction: 'Sắp xếp thành câu tiếng Nhật: "Quần áo giặt vẫn chưa khô."'
+      tokens:
+        - id: t1
+          text: 洗濯物が
+        - id: t3
+          text: 乾いていません。
+        - id: t2
+          text: まだ
+    answer:
+      orders:
+        - - t1
+          - t2
+          - t3
+        - - t2
+          - t1
+          - t3
+    explanation:
+      vi: Chủ ngữ (が) → まだ → 乾いていません.
+    display_answer: 洗濯物がまだ乾いていません。
+  - key: ja:exercise:n4-feelings-states-a11
+    type: mcq
+    stage: application
+    answer_lang: ja
+    difficulty: 4
+    item: ja:item:n4-u11-okoru
+    prompt:
+      stem: Bố giận vì con về muộn. Câu nào đúng?
+      stem_lang: vi
+      options:
+        - id: mne
+          text: 父は子どもが遅く帰ったので濡れています
+          lang: ja
+        - id: q4x
+          text: 父は子どもが遅く帰ったので怒っています
+          lang: ja
+        - id: vkn
+          text: 父は子どもが遅く帰ったので偉いです
+          lang: ja
+        - id: ypb
+          text: 父は子どもが遅く帰ったので乾いています
+          lang: ja
+    answer:
+      correct_option_id: q4x
+    explanation:
+      vi: 怒っています - đang giận. 濡れる, 乾く không hợp ngữ cảnh.
+    display_answer: 父は子どもが遅く帰ったので怒っています
