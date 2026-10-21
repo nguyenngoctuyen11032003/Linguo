@@ -1,0 +1,303 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w3-fuehrung-management
+order_index: 2
+level: b2
+title:
+  vi: Quản lý, lãnh đạo và cơ cấu doanh nghiệp (Führung und Management)
+objectives:
+  - vi: Nói về phong cách lãnh đạo, cuộc họp đánh giá và cơ cấu tổ chức.
+  - vi: Hiểu các từ về hội đồng công nhân, công đoàn và hợp đồng tập thể.
+  - vi: Dùng các động từ leiten, delegieren, motivieren, umstrukturieren, fusionieren.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w3-gruppe-verhalten
+items:
+  - item: de:item:b2w3-fuehrungsstil
+  - item: de:item:b2w3-mitarbeitergespraech
+  - item: de:item:b2w3-zielvereinbarung
+  - item: de:item:b2w3-leistungsbeurteilung
+  - item: de:item:b2w3-teamleiter
+  - item: de:item:b2w3-abteilungsleiter
+  - item: de:item:b2w3-geschaeftsleitung
+  - item: de:item:b2w3-entscheidungstraeger
+  - item: de:item:b2w3-betriebsrat
+  - item: de:item:b2w3-gewerkschaft
+  - item: de:item:b2w3-tarifvertrag
+  - item: de:item:b2w3-unternehmenskultur
+  - item: de:item:b2w3-restrukturierung
+  - item: de:item:b2w3-stellenabbau
+  - item: de:item:b2w3-fusion
+  - item: de:item:b2w3-uebernahme
+  - item: de:item:b2w3-wettbewerbsvorteil
+  - item: de:item:b2w3-leiten
+  - item: de:item:b2w3-delegieren
+  - item: de:item:b2w3-motivieren
+  - item: de:item:b2w3-umstrukturieren
+  - item: de:item:b2w3-fusionieren
+  - item: de:item:b2w3-uebertragen
+  - item: de:item:b2w3-kooperativ
+  - item: de:item:b2w3-autoritaer
+  - item: de:item:b2w3-hierarchisch
+  - item: de:item:b2w3-betrieblich
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thảo luận được về cách lãnh đạo, cơ cấu tổ chức và những thay đổi trong doanh nghiệp, hiểu các thông báo về sáp nhập, tái cơ cấu và đàm phán lương.
+  - type: explain
+    text:
+      vi: "Lãnh đạo và nhân sự: der Führungsstil (phong cách lãnh đạo), der Teamleiter, der Abteilungsleiter, die Geschäftsleitung, der Entscheidungsträger (người có quyền quyết định), das Mitarbeitergespräch, die Zielvereinbarung (thỏa thuận mục tiêu), die Leistungsbeurteilung (đánh giá hiệu quả). Mô tả phong cách: kooperativ (hợp tác), autoritär (độc đoán), hierarchisch (có thứ bậc)."
+  - type: explain
+    text:
+      vi: "Đại diện người lao động: der Betriebsrat (hội đồng người lao động trong doanh nghiệp), die Gewerkschaft (công đoàn), der Tarifvertrag (thỏa ước lao động tập thể). Cụm từ: Der Betriebsrat vertritt die Interessen der Beschäftigten. Die Gewerkschaft verhandelt über den Tarifvertrag. Tính từ betrieblich nghĩa là thuộc doanh nghiệp: betriebliche Altersvorsorge."
+  - type: explain
+    text:
+      vi: "Thay đổi tổ chức: die Restrukturierung (tái cơ cấu), der Stellenabbau (cắt giảm việc làm), die Fusion (sáp nhập), die Übernahme (mua lại), der Wettbewerbsvorteil, umstrukturieren, fusionieren, übertragen (giao: überträgt, übertrug, hat übertragen), leiten, delegieren (ủy quyền), motivieren. Ví dụ: Die Firma wird umstrukturiert und 200 Stellen werden abgebaut."
+  - type: deep_explain
+    text:
+      vi: Der Betriebsrat được bầu trong doanh nghiệp đủ lớn và có quyền tham gia quyết định về một số vấn đề như giờ làm, sa thải. Die Gewerkschaft (ví dụ ver.di, IG Metall) là tổ chức bên ngoài doanh nghiệp. Tarifvertrag là thỏa thuận giữa công đoàn và hiệp hội chủ lao động, không phải hợp đồng cá nhân. Aufgaben übertragen nghĩa là giao nhiệm vụ cho ai.
+  - type: example
+    target: Sein Führungsstil ist offen und fair.
+    target_lang: de
+    translation:
+      vi: Phong cách lãnh đạo của ông ấy cởi mở và công bằng.
+    note:
+      vi: der Führungsstil = phong cách lãnh đạo.
+  - type: example
+    target: Einmal im Jahr findet ein Mitarbeitergespräch statt.
+    target_lang: de
+    translation:
+      vi: Mỗi năm có một buổi trao đổi với nhân viên.
+    note:
+      vi: das Mitarbeitergespräch = buổi trao đổi, đánh giá với nhân viên.
+  - type: example
+    target: In der Zielvereinbarung stehen die Aufgaben für das nächste Jahr.
+    target_lang: de
+    translation:
+      vi: Trong thỏa thuận mục tiêu ghi các nhiệm vụ của năm sau.
+    note:
+      vi: die Zielvereinbarung = thỏa thuận mục tiêu.
+  - type: example
+    target: Die Leistungsbeurteilung beeinflusst die Gehaltserhöhung.
+    target_lang: de
+    translation:
+      vi: Việc đánh giá hiệu quả ảnh hưởng đến tăng lương.
+    note:
+      vi: die Leistungsbeurteilung = đánh giá hiệu quả công việc.
+  - type: common_mistake
+    wrong: Der Chef hat die Aufgabe an mir übertragen.
+    right: Der Chef hat mir die Aufgabe übertragen.
+    target_lang: de
+    note:
+      vi: Übertragen đi với Dativ người (mir) và tân ngữ Akkusativ; không dùng an + Dativ.
+  - type: common_mistake
+    wrong: Die zwei Firmen sind fusioniert worden.
+    right: Die zwei Firmen sind fusioniert.
+    target_lang: de
+    note:
+      vi: "Fusionieren dùng sein ở Perfekt và không dùng bị động: ist fusioniert."
+  - type: summary
+    points:
+      - vi: der Führungsstil, der Teamleiter, der Abteilungsleiter, die Geschäftsleitung, der Entscheidungsträger, das Mitarbeitergespräch, die Zielvereinbarung, die Leistungsbeurteilung.
+      - vi: der Betriebsrat, die Gewerkschaft, der Tarifvertrag, die Unternehmenskultur; kooperativ, autoritär, hierarchisch, betrieblich.
+      - vi: die Restrukturierung, der Stellenabbau, die Fusion, die Übernahme, der Wettbewerbsvorteil; leiten, delegieren, motivieren, umstrukturieren, fusionieren, übertragen.
+exercises:
+  - key: de:exercise:b2w3l2-listen-motivieren
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-motivieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Lob kann Mitarbeiter motivieren.
+      options:
+        - { id: zpa, text: Hai doanh nghiệp đã sáp nhập., lang: vi }
+        - { id: g58, text: Việc cắt giảm việc làm chủ yếu ảnh hưởng đến bộ phận hành chính., lang: vi }
+        - { id: ew6, text: Lời khen có thể tạo động lực cho nhân viên., lang: vi }
+        - { id: g6c, text: Có chế độ hưu trí của doanh nghiệp., lang: vi }
+    answer:
+      correct_option_id: ew6
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Lời khen có thể tạo động lực cho nhân viên.". Từ khoá là motivieren (tạo động lực); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Lời khen có thể tạo động lực cho nhân viên.
+  - key: de:exercise:b2w3l2-mcq-vi-de-unternehmenskultur
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w3-unternehmenskultur
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "văn hóa doanh nghiệp"?
+      stem_lang: vi
+      options:
+        - { id: wqm, text: der Abteilungsleiter, lang: de }
+        - { id: rr9, text: die Gewerkschaft, lang: de }
+        - { id: xjn, text: die Unternehmenskultur, lang: de }
+        - { id: k8q, text: der Stellenabbau, lang: de }
+    answer:
+      correct_option_id: xjn
+    explanation:
+      vi: "die Unternehmenskultur nghĩa là \"văn hóa doanh nghiệp\". Ví dụ: Eine offene Unternehmenskultur fördert neue Ideen. (Văn hóa doanh nghiệp cởi mở thúc đẩy ý tưởng mới.)"
+    display_answer: die Unternehmenskultur
+  - key: de:exercise:b2w3l2-mcq-de-vi-teamleiter
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-teamleiter
+    prompt:
+      stem: "\"der Teamleiter\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: eos, text: trưởng phòng, lang: vi }
+        - { id: o46, text: "buổi trao đổi, đánh giá với nhân viên", lang: vi }
+        - { id: s05, text: "việc mua lại, tiếp quản", lang: vi }
+        - { id: y9r, text: trưởng nhóm, lang: vi }
+    answer:
+      correct_option_id: y9r
+    explanation:
+      vi: "der Teamleiter nghĩa là \"trưởng nhóm\". Ví dụ: Der Teamleiter verteilt die Aufgaben. (Trưởng nhóm phân chia nhiệm vụ.)"
+    display_answer: trưởng nhóm
+  - key: de:exercise:b2w3l2-mcq-artikel-mitarbeitergespraech
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-mitarbeitergespraech
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Mitarbeitergespräch\" (buổi trao đổi, đánh giá với nhân viên): ___ Mitarbeitergespräch"
+      stem_lang: vi
+      options:
+        - { id: rly, text: die, lang: de }
+        - { id: eqd, text: das, lang: de }
+        - { id: wv8, text: der, lang: de }
+        - { id: x0u, text: ein, lang: de }
+    answer:
+      correct_option_id: eqd
+    explanation:
+      vi: "Mitarbeitergespräch là danh từ giống trung (das): das Mitarbeitergespräch; số nhiều: die Mitarbeitergespräche. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b2w3l2-tr-word-tarifvertrag
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-tarifvertrag
+    prompt:
+      source_text: thỏa ước lao động tập thể (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Tarifvertrag
+    known_wrong:
+      - answer: die Tarifvertrag
+        feedback_vi: Tarifvertrag là giống đực, nên là der Tarifvertrag.
+        error_tag: article
+      - answer: das Tarifvertrag
+        feedback_vi: Tarifvertrag là giống đực, nên là der Tarifvertrag.
+        error_tag: article
+    explanation:
+      vi: "\"thỏa ước lao động tập thể\" trong tiếng Đức là der Tarifvertrag (số nhiều: die Tarifverträge). Ví dụ: Der Tarifvertrag gilt für alle Beschäftigten der Branche."
+    display_answer: der Tarifvertrag
+  - key: de:exercise:b2w3l2-tr-word-kooperativ
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-kooperativ
+    prompt:
+      source_text: hợp tác (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - kooperativ
+    explanation:
+      vi: "\"hợp tác\" trong tiếng Đức là kooperativ. Ví dụ: Er ist ein kooperativer Chef."
+    display_answer: kooperativ
+  - key: de:exercise:b2w3l2-fill-plural-geschaeftsleitung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-geschaeftsleitung
+    prompt:
+      template: "Singular: die Geschäftsleitung · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 20 }
+    answer:
+      blanks:
+        b1:
+          - Geschäftsleitungen
+    known_wrong:
+      - answer: Geschäftsleitung
+        feedback_vi: Geschäftsleitung là dạng số ít; số nhiều là Geschäftsleitungen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Geschäftsleitung là die Geschäftsleitungen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Geschäftsleitung · Plural: die Geschäftsleitungen"
+  - key: de:exercise:b2w3l2-mcq-luecke-fuehrungsstil
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-fuehrungsstil
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Phong cách lãnh đạo của ông ấy cởi mở và công bằng.\": Sein ___ ist offen und fair."
+      stem_lang: vi
+      options:
+        - { id: zds, text: Übernahme, lang: de }
+        - { id: wfz, text: Zielvereinbarung, lang: de }
+        - { id: les, text: Stellenabbau, lang: de }
+        - { id: cwi, text: Führungsstil, lang: de }
+    answer:
+      correct_option_id: cwi
+    explanation:
+      vi: "Câu có nghĩa \"Phong cách lãnh đạo của ông ấy cởi mở và công bằng.\" nên cần Führungsstil (der Führungsstil: phong cách lãnh đạo). Zielvereinbarung = thỏa thuận mục tiêu; Stellenabbau = việc cắt giảm việc làm; Übernahme = việc mua lại, tiếp quản không đúng nghĩa của câu."
+    display_answer: Führungsstil
+  - key: de:exercise:b2w3l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Nach der Fusion wird die Firma umstrukturiert, und der Betriebsrat verhandelt über den Stellenabbau.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nach der Fusion wird die Firma umstrukturiert, und der Betriebsrat verhandelt über den Stellenabbau.
+        - Nach der Fusion wird die Firma neu strukturiert, und der Betriebsrat verhandelt über den Stellenabbau.
+        - Die Firma wird nach der Fusion umstrukturiert, und der Betriebsrat verhandelt über den Stellenabbau.
+    explanation:
+      vi: "Gợi ý đáp án: Nach der Fusion wird die Firma umstrukturiert, und der Betriebsrat verhandelt über den Stellenabbau. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Nach der Fusion wird die Firma umstrukturiert, und der Betriebsrat verhandelt über den Stellenabbau.
+    item: de:item:b2w3-betriebsrat
+  - key: de:exercise:b2w3l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Ein kooperativer Führungsstil motiviert die Mitarbeiter mehr als ein autoritärer, weil sie Verantwortung übernehmen dürfen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Phong cách lãnh đạo hợp tác thúc đẩy nhân viên hơn phong cách độc đoán, vì họ được nhận trách nhiệm.
+        - Cách lãnh đạo mang tính hợp tác tạo động lực cho nhân viên hơn cách độc đoán vì họ được phép nhận trách nhiệm.
+        - Một phong cách lãnh đạo hợp tác thúc đẩy nhân viên hơn kiểu độc đoán, vì họ được gánh trách nhiệm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Ein kooperativer Führungsstil motiviert die Mitarbeiter mehr als ein autoritärer, weil sie Verantwortung übernehmen dürfen.\" nghĩa là: Phong cách lãnh đạo hợp tác thúc đẩy nhân viên hơn phong cách độc đoán, vì họ được nhận trách nhiệm. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Phong cách lãnh đạo hợp tác thúc đẩy nhân viên hơn phong cách độc đoán, vì họ được nhận trách nhiệm.
+    item: de:item:b2w3-fuehrungsstil

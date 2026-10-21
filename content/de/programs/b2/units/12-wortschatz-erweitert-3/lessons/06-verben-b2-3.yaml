@@ -1,0 +1,237 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w3-verben-b2-3
+order_index: 6
+level: b2
+title:
+  vi: "Động từ B2 (3): trình bày, chứng minh, thực hiện (Verben 3)"
+objectives:
+  - vi: Dùng khoảng hai mươi động từ B2 dùng nhiều trong thuyết trình, bài luận và báo cáo.
+  - vi: "Nhớ giới từ đi kèm: hinweisen auf, verweisen auf, folgern aus, entgegenwirken + Dativ."
+  - vi: "Phân biệt động từ tách và không tách: durchführen, umsetzen, vorlegen, hinterlassen."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w3-geschichte-politik
+items:
+  - item: de:item:b2w3-anfuehren
+  - item: de:item:b2w3-ansprechen
+  - item: de:item:b2w3-anzweifeln
+  - item: de:item:b2w3-aufzeigen
+  - item: de:item:b2w3-ausueben
+  - item: de:item:b2w3-bekraeftigen
+  - item: de:item:b2w3-beurteilen
+  - item: de:item:b2w3-durchfuehren
+  - item: de:item:b2w3-durchsetzen
+  - item: de:item:b2w3-entgegnen
+  - item: de:item:b2w3-entgegenwirken
+  - item: de:item:b2w3-entwerfen
+  - item: de:item:b2w3-folgern
+  - item: de:item:b2w3-hinterlassen
+  - item: de:item:b2w3-hinzufuegen
+  - item: de:item:b2w3-umfassen
+  - item: de:item:b2w3-umsetzen
+  - item: de:item:b2w3-veranstalten
+  - item: de:item:b2w3-verdeutlichen
+  - item: de:item:b2w3-vermuten
+  - item: de:item:b2w3-verschaerfen
+  - item: de:item:b2w3-verweisen
+  - item: de:item:b2w3-vorlegen
+  - item: de:item:b2w3-zusammenhaengen
+body:
+  - type: objective
+    text:
+      vi: "Sau bài này, bạn dùng đúng nhiều động từ trong văn viết học thuật và báo cáo: nêu ví dụ, kết luận, thực hiện, làm rõ và giới thiệu thông tin."
+  - type: explain
+    text:
+      vi: "Động từ trình bày: anführen (nêu ra, viện dẫn), ansprechen (đề cập), aufzeigen (chỉ ra), verdeutlichen (làm rõ), hinzufügen (thêm vào), verweisen auf + Akk (chỉ dẫn đến), folgern aus + Dativ (suy ra từ), vorlegen (trình bày, đệ trình). Ví dụ: Der Redner führte mehrere Beispiele an. Der Bericht verweist auf die Quellen."
+  - type: explain
+    text:
+      vi: "Động từ thực hiện: durchführen (tiến hành), durchsetzen (làm cho được thực thi), umsetzen (thực hiện, chuyển thành hành động), veranstalten (tổ chức), ausüben (thực hiện, hành nghề), verschärfen (làm nghiêm ngặt hơn), entgegenwirken (chống lại, đi ngược lại: + Dativ), umfassen (bao gồm). Ví dụ: Die Regierung will die Gesetze verschärfen."
+  - type: explain
+    text:
+      vi: "Các dạng bất quy tắc: hinterlassen (hinterlässt, hinterließ, hat hinterlassen), entwerfen (entwirft, entwarf, hat entworfen), anzweifeln và bekräftigen (đều có chia đều). Zusammenhängen (hängt zusammen, hing zusammen, hat zusammengehangen) đi với mit + Dativ: Das hängt mit dem Klima zusammen."
+  - type: deep_explain
+    text:
+      vi: "Durchführen và umsetzen thường đi cùng nhau trong văn bản dự án: Das Projekt wurde durchgeführt, die Ergebnisse werden umgesetzt. Aufzeigen và verdeutlichen đều là làm rõ, nhưng aufzeigen nhấn mạnh việc chỉ ra điều chưa thấy; verdeutlichen nhấn mạnh việc làm cho dễ hiểu. Vermuten (đoán, cho rằng) nhẹ hơn behaupten (khẳng định)."
+  - type: example
+    target: Er führt drei Gründe für seine Entscheidung an.
+    target_lang: de
+    translation:
+      vi: Anh ấy nêu ba lý do cho quyết định của mình.
+    note:
+      vi: anführen = nêu ra, viện dẫn.
+  - type: example
+    target: Sie hat das Problem im Gespräch angesprochen.
+    target_lang: de
+    translation:
+      vi: Cô ấy đã đề cập vấn đề trong cuộc trò chuyện.
+    note:
+      vi: ansprechen = đề cập; gây ấn tượng.
+  - type: example
+    target: Niemand zweifelt seine Ehrlichkeit an.
+    target_lang: de
+    translation:
+      vi: Không ai nghi ngờ sự trung thực của anh ấy.
+    note:
+      vi: anzweifeln = nghi ngờ.
+  - type: example
+    target: Die Studie zeigt neue Wege auf.
+    target_lang: de
+    translation:
+      vi: Nghiên cứu chỉ ra những hướng đi mới.
+    note:
+      vi: aufzeigen = chỉ ra, vạch rõ.
+  - type: common_mistake
+    wrong: Das hängt von dem Klima zusammen.
+    right: Das hängt mit dem Klima zusammen.
+    target_lang: de
+    note:
+      vi: Zusammenhängen đi với mit + Dativ.
+  - type: common_mistake
+    wrong: Der Autor verweist zu den Quellen.
+    right: Der Autor verweist auf die Quellen.
+    target_lang: de
+    note:
+      vi: Verweisen đi với auf + Akkusativ.
+  - type: summary
+    points:
+      - vi: anführen, ansprechen, aufzeigen, verdeutlichen, hinzufügen, verweisen (auf + Akk), folgern (aus + Dativ), vorlegen, zusammenhängen (mit + Dativ).
+      - vi: durchführen, durchsetzen, umsetzen, veranstalten, ausüben, verschärfen, entgegenwirken (+ Dativ), umfassen, hinterlassen, entwerfen.
+      - vi: "anzweifeln, bekräftigen, beurteilen, entgegnen, vermuten: động từ có chia đều; chú ý động từ tách và Partizip II."
+exercises:
+  - key: de:exercise:b2w3l6-listen-durchfuehren
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-durchfuehren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das Institut führt eine Umfrage durch.
+      options:
+        - { id: byq, text: Các chuyên gia cho rằng có lỗi kỹ thuật., lang: vi }
+        - { id: d5i, text: Viện tiến hành một cuộc khảo sát., lang: vi }
+        - { id: pp8, text: Khó mà đánh giá tình hình đúng., lang: vi }
+        - { id: vb7, text: Từ đó có thể suy ra phương pháp này hiệu quả., lang: vi }
+    answer:
+      correct_option_id: d5i
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Viện tiến hành một cuộc khảo sát.". Từ khoá là durchführen (tiến hành, thực hiện); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Viện tiến hành một cuộc khảo sát.
+  - key: de:exercise:b2w3l6-mcq-vi-de-bekraeftigen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w3-bekraeftigen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "khẳng định lại"?
+      stem_lang: vi
+      options:
+        - { id: nsz, text: ausüben, lang: de }
+        - { id: wks, text: entgegnen, lang: de }
+        - { id: mck, text: bekräftigen, lang: de }
+        - { id: ond, text: entgegenwirken, lang: de }
+    answer:
+      correct_option_id: mck
+    explanation:
+      vi: "bekräftigen nghĩa là \"khẳng định lại\". Ví dụ: Der Minister bekräftigte seine Aussage. (Bộ trưởng khẳng định lại phát biểu của mình.)"
+    display_answer: bekräftigen
+  - key: de:exercise:b2w3l6-mcq-de-vi-entgegnen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-entgegnen
+    prompt:
+      stem: "\"entgegnen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: ff7, text: "làm rõ, minh họa", lang: vi }
+        - { id: lee, text: "đáp lại, phản bác", lang: vi }
+        - { id: icf, text: "trình, đệ trình", lang: vi }
+        - { id: rce, text: "cho rằng, phỏng đoán", lang: vi }
+    answer:
+      correct_option_id: lee
+    explanation:
+      vi: "entgegnen nghĩa là \"đáp lại, phản bác\". Ví dụ: Auf den Vorwurf entgegnete sie ruhig. (Trước lời buộc tội cô đáp lại bình tĩnh.)"
+    display_answer: đáp lại, phản bác
+  - key: de:exercise:b2w3l6-tr-word-umsetzen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-umsetzen
+    prompt:
+      source_text: thực hiện, chuyển thành hành động (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - umsetzen
+    explanation:
+      vi: "\"thực hiện, chuyển thành hành động\" trong tiếng Đức là umsetzen. Ví dụ: Die Stadt will den Plan schnell umsetzen."
+    display_answer: umsetzen
+  - key: de:exercise:b2w3l6-mcq-luecke-anfuehren
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-anfuehren
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Anh ấy nêu ba lý do cho quyết định của mình.\": Er führt drei Gründe für seine Entscheidung ___."
+      stem_lang: vi
+      options:
+        - { id: gxr, text: entwirft, lang: de }
+        - { id: oj8, text: an, lang: de }
+        - { id: hzu, text: vermuten, lang: de }
+        - { id: lys, text: folgern, lang: de }
+    answer:
+      correct_option_id: oj8
+    explanation:
+      vi: "Câu có nghĩa \"Anh ấy nêu ba lý do cho quyết định của mình.\" nên cần an (anführen: nêu ra, viện dẫn). folgern = suy ra, kết luận (aus + Dativ); entwirft = phác thảo, thiết kế; vermuten = cho rằng, phỏng đoán không đúng nghĩa của câu."
+    display_answer: an
+  - key: de:exercise:b2w3l6-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Autorin verweist auf mehrere Studien und folgert daraus, dass die Maßnahme wirksam ist.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Autorin verweist auf mehrere Studien und folgert daraus, dass die Maßnahme wirksam ist.
+        - Die Autorin verweist auf mehrere Untersuchungen und folgert daraus, dass die Maßnahme wirksam ist.
+        - Die Autorin verweist auf mehrere Studien und schließt daraus, dass die Maßnahme wirksam ist.
+    explanation:
+      vi: "Gợi ý đáp án: Die Autorin verweist auf mehrere Studien und folgert daraus, dass die Maßnahme wirksam ist. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Autorin verweist auf mehrere Studien und folgert daraus, dass die Maßnahme wirksam ist.
+    item: de:item:b2w3-folgern
+  - key: de:exercise:b2w3l6-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Das Unternehmen hat ein neues Konzept vorgelegt, das schrittweise umgesetzt werden soll und alle Standorte umfasst.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Doanh nghiệp đã đệ trình một khái niệm mới sẽ được thực hiện từng bước và bao gồm tất cả các địa điểm.
+        - Công ty đã trình bày một đề án mới, sẽ được triển khai dần từng bước và bao quát mọi cơ sở.
+        - Doanh nghiệp đã đưa ra một phương án mới, dự kiến thực hiện theo từng bước và bao gồm toàn bộ các địa điểm.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das Unternehmen hat ein neues Konzept vorgelegt, das schrittweise umgesetzt werden soll und alle Standorte umfasst.\" nghĩa là: Doanh nghiệp đã đệ trình một khái niệm mới sẽ được thực hiện từng bước và bao gồm tất cả các địa điểm. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Doanh nghiệp đã đệ trình một khái niệm mới sẽ được thực hiện từng bước và bao gồm tất cả các địa điểm.
+    item: de:item:b2w3-umfassen

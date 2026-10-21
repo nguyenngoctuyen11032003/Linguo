@@ -1,0 +1,302 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w3-geschichte-politik
+order_index: 5
+level: b2
+title:
+  vi: Lịch sử hiện đại và hệ thống chính trị (Geschichte und Politik)
+objectives:
+  - vi: Gọi tên các sự kiện lịch sử và thiết chế chính trị quan trọng của Đức.
+  - vi: "Hiểu các từ về hệ thống nhà nước: Koalition, Opposition, Bundesrat, Föderalismus."
+  - vi: Dùng các động từ regieren, ablösen, kapitulieren và các tính từ demokratisch, konservativ, liberal.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w3-energie-technik
+items:
+  - item: de:item:b2w3-weltkrieg
+  - item: de:item:b2w3-nachkriegszeit
+  - item: de:item:b2w3-wiedervereinigung
+  - item: de:item:b2w3-mauerfall
+  - item: de:item:b2w3-besatzung
+  - item: de:item:b2w3-diktatur
+  - item: de:item:b2w3-verfolgung
+  - item: de:item:b2w3-gedenkstaette
+  - item: de:item:b2w3-zeitzeuge
+  - item: de:item:b2w3-republik
+  - item: de:item:b2w3-monarchie
+  - item: de:item:b2w3-revolution
+  - item: de:item:b2w3-reform
+  - item: de:item:b2w3-foederalismus
+  - item: de:item:b2w3-wahlkampf
+  - item: de:item:b2w3-koalition
+  - item: de:item:b2w3-opposition
+  - item: de:item:b2w3-kanzler
+  - item: de:item:b2w3-bundesrat
+  - item: de:item:b2w3-amtszeit
+  - item: de:item:b2w3-regieren
+  - item: de:item:b2w3-abloesen
+  - item: de:item:b2w3-kapitulieren
+  - item: de:item:b2w3-demokratisch
+  - item: de:item:b2w3-konservativ
+  - item: de:item:b2w3-liberal
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được một bài báo hoặc đoạn văn về lịch sử và chính trị Đức hiện đại và nêu ý kiến bằng các từ chuyên ngành cơ bản.
+  - type: explain
+    text:
+      vi: "Lịch sử: der Weltkrieg (Zweiter Weltkrieg), die Nachkriegszeit, die Besatzung (sự chiếm đóng), die Diktatur, die Verfolgung, die Gedenkstätte (nơi tưởng niệm), der Zeitzeuge (nhân chứng lịch sử), die Revolution, der Mauerfall, die Wiedervereinigung. Ví dụ: Die Wiedervereinigung fand 1990 statt."
+  - type: explain
+    text:
+      vi: "Hệ thống chính trị: die Republik, die Monarchie, der Föderalismus, der Bundesrat (đại diện các bang), der Kanzler, die Amtszeit, die Koalition (liên minh cầm quyền), die Opposition, der Wahlkampf, die Reform. Ví dụ: Die Koalition besteht aus drei Parteien. Die Opposition kritisiert die Reform."
+  - type: explain
+    text:
+      vi: "Động từ: regieren (cầm quyền), ablösen (thay thế), kapitulieren (đầu hàng), và tính từ demokratisch, konservativ, liberal. Ví dụ: Die Partei regiert seit zwei Jahren. Er wurde von seinem Nachfolger abgelöst. Cẩn thận: konservativ trong chính trị nghĩa là bảo thủ theo truyền thống, liberal là tự do."
+  - type: deep_explain
+    text:
+      vi: "Föderalismus nghĩa là nhà nước liên bang, quyền lực chia giữa liên bang (Bund) và các bang (Länder). Der Bundesrat không giống Bundestag: Bundestag là quốc hội do dân bầu, Bundesrat đại diện chính quyền các bang. Der Kanzler (đầy đủ Bundeskanzler) là người đứng đầu chính phủ. Gedenkstätte và Mahnmal đều dùng để tưởng niệm; ở Đức người ta rất coi trọng việc nhớ lại quá khứ."
+  - type: example
+    target: Der Zweite Weltkrieg endete 1945.
+    target_lang: de
+    translation:
+      vi: Thế chiến thứ hai kết thúc năm 1945.
+    note:
+      vi: der Weltkrieg = thế chiến.
+  - type: example
+    target: In der Nachkriegszeit fehlte es an Wohnungen.
+    target_lang: de
+    translation:
+      vi: Thời hậu chiến thiếu nhà ở.
+    note:
+      vi: die Nachkriegszeit = thời kỳ hậu chiến.
+  - type: example
+    target: Die Wiedervereinigung Deutschlands fand 1990 statt.
+    target_lang: de
+    translation:
+      vi: Việc tái thống nhất nước Đức diễn ra năm 1990.
+    note:
+      vi: die Wiedervereinigung = sự tái thống nhất.
+  - type: example
+    target: Der Mauerfall im November 1989 veränderte Europa.
+    target_lang: de
+    translation:
+      vi: Sự sụp đổ Bức tường Berlin tháng 11 năm 1989 làm thay đổi châu Âu.
+    note:
+      vi: der Mauerfall = sự sụp đổ của Bức tường Berlin.
+  - type: common_mistake
+    wrong: Die Opposition hat die Reform kritisieren.
+    right: Die Opposition hat die Reform kritisiert.
+    target_lang: de
+    note:
+      vi: "Perfekt: hat kritisiert; động từ có đuôi -ieren không thêm ge-."
+  - type: common_mistake
+    wrong: Das Land wurde von eine Diktatur regiert.
+    right: Das Land wurde von einer Diktatur regiert.
+    target_lang: de
+    note:
+      vi: "Von + Dativ: einer Diktatur."
+  - type: summary
+    points:
+      - vi: der Weltkrieg, die Nachkriegszeit, die Wiedervereinigung, der Mauerfall, die Besatzung, die Diktatur, die Verfolgung, die Gedenkstätte, der Zeitzeuge.
+      - vi: die Republik, die Monarchie, die Revolution, die Reform, der Föderalismus, der Wahlkampf, die Koalition, die Opposition, der Kanzler, der Bundesrat, die Amtszeit.
+      - vi: regieren, ablösen, kapitulieren; demokratisch, konservativ, liberal.
+exercises:
+  - key: de:exercise:b2w3l5-listen-gedenkstaette
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-gedenkstaette
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Schüler besuchen eine Gedenkstätte.
+      options:
+        - { id: r4n, text: Học sinh đến thăm một nơi tưởng niệm., lang: vi }
+        - { id: khk, text: Liên minh cầm quyền đã thống nhất về một đạo luật., lang: vi }
+        - { id: scq, text: Bộ trưởng được người kế nhiệm nữ thay thế., lang: vi }
+        - { id: d8a, text: Đức là một nước cộng hòa liên bang., lang: vi }
+    answer:
+      correct_option_id: r4n
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Học sinh đến thăm một nơi tưởng niệm.". Từ khoá là die Gedenkstätte (nơi tưởng niệm); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Học sinh đến thăm một nơi tưởng niệm.
+  - key: de:exercise:b2w3l5-mcq-vi-de-wahlkampf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w3-wahlkampf
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "chiến dịch tranh cử"?
+      stem_lang: vi
+      options:
+        - { id: aa0, text: die Gedenkstätte, lang: de }
+        - { id: nts, text: die Revolution, lang: de }
+        - { id: eyg, text: der Wahlkampf, lang: de }
+        - { id: gle, text: die Koalition, lang: de }
+    answer:
+      correct_option_id: eyg
+    explanation:
+      vi: "der Wahlkampf nghĩa là \"chiến dịch tranh cử\". Ví dụ: Im Wahlkampf versprechen die Parteien viel. (Trong chiến dịch tranh cử các đảng hứa hẹn nhiều.)"
+    display_answer: der Wahlkampf
+  - key: de:exercise:b2w3l5-mcq-de-vi-konservativ
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-konservativ
+    prompt:
+      stem: "\"konservativ\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: ehw, text: thủ tướng, lang: vi }
+        - { id: jh5, text: bảo thủ, lang: vi }
+        - { id: vwx, text: sự chiếm đóng; thủy thủ đoàn, lang: vi }
+        - { id: igv, text: thay thế; tách ra, lang: vi }
+    answer:
+      correct_option_id: jh5
+    explanation:
+      vi: "konservativ nghĩa là \"bảo thủ\". Ví dụ: Die Partei vertritt eine konservative Politik. (Đảng này theo đường lối chính trị bảo thủ.)"
+    display_answer: bảo thủ
+  - key: de:exercise:b2w3l5-mcq-artikel-zeitzeuge
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-zeitzeuge
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Zeitzeuge\" (nhân chứng lịch sử): ___ Zeitzeuge"
+      stem_lang: vi
+      options:
+        - { id: dgf, text: die, lang: de }
+        - { id: gtx, text: der, lang: de }
+        - { id: kn3, text: das, lang: de }
+        - { id: ptl, text: ein, lang: de }
+    answer:
+      correct_option_id: gtx
+    explanation:
+      vi: "Zeitzeuge là danh từ giống đực (der): der Zeitzeuge; số nhiều: die Zeitzeugen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b2w3l5-tr-word-bundesrat
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-bundesrat
+    prompt:
+      source_text: Hội đồng Liên bang (đại diện các bang) (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - der Bundesrat
+    known_wrong:
+      - answer: die Bundesrat
+        feedback_vi: Bundesrat là giống đực, nên là der Bundesrat.
+        error_tag: article
+      - answer: das Bundesrat
+        feedback_vi: Bundesrat là giống đực, nên là der Bundesrat.
+        error_tag: article
+    explanation:
+      vi: "\"Hội đồng Liên bang (đại diện các bang)\" trong tiếng Đức là der Bundesrat (số nhiều: không dùng). Ví dụ: Der Bundesrat muss dem Gesetz zustimmen."
+    display_answer: der Bundesrat
+  - key: de:exercise:b2w3l5-tr-word-liberal
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-liberal
+    prompt:
+      source_text: tự do, cởi mở (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - liberal
+    explanation:
+      vi: "\"tự do, cởi mở\" trong tiếng Đức là liberal. Ví dụ: Er hat eine liberale Einstellung."
+    display_answer: liberal
+  - key: de:exercise:b2w3l5-fill-plural-koalition
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-koalition
+    prompt:
+      template: "Singular: die Koalition · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Koalitionen
+    known_wrong:
+      - answer: Koalition
+        feedback_vi: Koalition là dạng số ít; số nhiều là Koalitionen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Koalition là die Koalitionen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Koalition · Plural: die Koalitionen"
+  - key: de:exercise:b2w3l5-mcq-luecke-weltkrieg
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-weltkrieg
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Thế chiến thứ hai kết thúc năm 1945.\": Der Zweite ___ endete 1945."
+      stem_lang: vi
+      options:
+        - { id: q3y, text: Weltkrieg, lang: de }
+        - { id: sut, text: Opposition, lang: de }
+        - { id: mf7, text: Besatzung, lang: de }
+        - { id: zk9, text: Nachkriegszeit, lang: de }
+    answer:
+      correct_option_id: q3y
+    explanation:
+      vi: "Câu có nghĩa \"Thế chiến thứ hai kết thúc năm 1945.\" nên cần Weltkrieg (der Weltkrieg: thế chiến). Nachkriegszeit = thời kỳ hậu chiến; Besatzung = sự chiếm đóng; thủy thủ đoàn; Opposition = phe đối lập không đúng nghĩa của câu."
+    display_answer: Weltkrieg
+  - key: de:exercise:b2w3l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Nach dem Zweiten Weltkrieg wurde Deutschland besetzt und 1990 wiedervereinigt.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nach dem Zweiten Weltkrieg wurde Deutschland besetzt und 1990 wiedervereinigt.
+        - Nach dem Zweiten Weltkrieg wurde Deutschland besetzt, und 1990 wurde es wiedervereinigt.
+        - Deutschland wurde nach dem Zweiten Weltkrieg besetzt und 1990 wiedervereinigt.
+    explanation:
+      vi: "Gợi ý đáp án: Nach dem Zweiten Weltkrieg wurde Deutschland besetzt und 1990 wiedervereinigt. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Nach dem Zweiten Weltkrieg wurde Deutschland besetzt und 1990 wiedervereinigt.
+    item: de:item:b2w3-weltkrieg
+  - key: de:exercise:b2w3l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Koalition regiert seit der Wahl, während die Opposition die geplante Reform stark kritisiert.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Liên minh cầm quyền từ sau cuộc bầu cử, trong khi phe đối lập chỉ trích mạnh cuộc cải cách dự kiến.
+        - Liên minh cầm quyền từ sau bầu cử, còn phe đối lập thì phê phán dữ dội cuộc cải cách được lên kế hoạch.
+        - Chính phủ liên minh điều hành từ sau cuộc bầu cử, trong khi đối lập chỉ trích gay gắt cải cách đang dự định.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Koalition regiert seit der Wahl, während die Opposition die geplante Reform stark kritisiert.\" nghĩa là: Liên minh cầm quyền từ sau cuộc bầu cử, trong khi phe đối lập chỉ trích mạnh cuộc cải cách dự kiến. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Liên minh cầm quyền từ sau cuộc bầu cử, trong khi phe đối lập chỉ trích mạnh cuộc cải cách dự kiến.
+    item: de:item:b2w3-reform

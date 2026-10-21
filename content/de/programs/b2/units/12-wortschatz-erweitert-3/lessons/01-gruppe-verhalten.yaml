@@ -1,0 +1,300 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w3-gruppe-verhalten
+order_index: 1
+level: b2
+title:
+  vi: Hành vi trong nhóm và giải quyết xung đột (Gruppe und Verhalten)
+objectives:
+  - vi: "Mô tả động lực nhóm: áp lực hòa nhập, người ngoài cuộc, cạnh tranh."
+  - vi: Nói về xung đột và cách giải quyết bằng các động từ vermitteln, schlichten, sich durchsetzen.
+  - vi: Dùng các tính từ solidarisch, introvertiert, extrovertiert trong mô tả người.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w2-nomen-b2-2
+items:
+  - item: de:item:b2w3-gruppenzwang
+  - item: de:item:b2w3-rollenverteilung
+  - item: de:item:b2w3-erwartungshaltung
+  - item: de:item:b2w3-konkurrenzdenken
+  - item: de:item:b2w3-zusammengehoerigkeit
+  - item: de:item:b2w3-aussenseiter
+  - item: de:item:b2w3-anpassungsdruck
+  - item: de:item:b2w3-mobbing
+  - item: de:item:b2w3-verhaltensweise
+  - item: de:item:b2w3-konfliktloesung
+  - item: de:item:b2w3-vermittler
+  - item: de:item:b2w3-einfuehlungsvermoegen
+  - item: de:item:b2w3-durchsetzungsvermoegen
+  - item: de:item:b2w3-zivilcourage
+  - item: de:item:b2w3-schlichten
+  - item: de:item:b2w3-sich-einmischen
+  - item: de:item:b2w3-nachgeben
+  - item: de:item:b2w3-sich-durchsetzen
+  - item: de:item:b2w3-sich-einfuegen
+  - item: de:item:b2w3-sich-abgrenzen
+  - item: de:item:b2w3-ausgrenzen
+  - item: de:item:b2w3-solidarisch
+  - item: de:item:b2w3-introvertiert
+  - item: de:item:b2w3-extrovertiert
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn mô tả được hành vi của con người trong nhóm, nguyên nhân và cách giải quyết xung đột, và nêu quan điểm về áp lực xã hội, bắt nạt và sự đoàn kết.
+  - type: explain
+    text:
+      vi: "Danh từ về nhóm: der Gruppenzwang (áp lực của nhóm), die Rollenverteilung, die Erwartungshaltung, das Konkurrenzdenken, die Zusammengehörigkeit (tinh thần đoàn kết, số ít), der Außenseiter, der Anpassungsdruck. Hiện tượng tiêu cực: das Mobbing (bắt nạt, số ít). Ví dụ: Er leidet unter Mobbing in der Schule."
+  - type: explain
+    text:
+      vi: "Xung đột và giải quyết: die Konfliktlösung, der Vermittler, schlichten (hòa giải), sich einmischen (xen vào), nachgeben (nhượng bộ: gibt nach, gab nach, hat nachgegeben), sich durchsetzen (áp đặt được ý mình, thành công), sich einfügen (hòa nhập), sich abgrenzen (phân biệt, giữ khoảng cách), ausgrenzen (loại trừ)."
+  - type: explain
+    text:
+      vi: "Phẩm chất xã hội: das Einfühlungsvermögen (khả năng thấu cảm), das Durchsetzungsvermögen (khả năng thuyết phục, kiên quyết), die Zivilcourage (can đảm công dân), solidarisch (đoàn kết), introvertiert (hướng nội), extrovertiert (hướng ngoại). Ví dụ: Zivilcourage zeigt, wer bei Mobbing nicht wegsieht."
+  - type: deep_explain
+    text:
+      vi: "Sich durchsetzen (setzt sich durch, setzte sich durch, hat sich durchgesetzt) có tân ngữ giới từ gegen: Sie hat sich gegen alle Widerstände durchgesetzt. Sich einmischen đi với in + Akk: Er mischt sich in fremde Angelegenheiten ein. Ausgrenzen thường được dùng ở bị động: Er wurde von der Gruppe ausgegrenzt. Die Verhaltensweise là cách ứng xử cụ thể, thường dùng số nhiều."
+  - type: example
+    target: Viele Jugendliche rauchen aus Gruppenzwang.
+    target_lang: de
+    translation:
+      vi: Nhiều thiếu niên hút thuốc vì áp lực từ nhóm.
+    note:
+      vi: der Gruppenzwang = áp lực từ nhóm.
+  - type: example
+    target: Die Rollenverteilung im Team war von Anfang an klar.
+    target_lang: de
+    translation:
+      vi: Việc phân vai trong nhóm rõ ràng ngay từ đầu.
+    note:
+      vi: die Rollenverteilung = sự phân vai.
+  - type: example
+    target: Die hohe Erwartungshaltung der Eltern setzt ihn unter Druck.
+    target_lang: de
+    translation:
+      vi: Kỳ vọng cao của cha mẹ khiến cậu ấy chịu áp lực.
+    note:
+      vi: die Erwartungshaltung = tâm thế kỳ vọng.
+  - type: example
+    target: In dieser Abteilung herrscht ein starkes Konkurrenzdenken.
+    target_lang: de
+    translation:
+      vi: Trong phòng ban này có tư duy cạnh tranh rất mạnh.
+    note:
+      vi: das Konkurrenzdenken = tư duy cạnh tranh.
+  - type: common_mistake
+    wrong: Sie hat sich gegen alle durchgesetzt worden.
+    right: Sie hat sich gegen alle durchgesetzt.
+    target_lang: de
+    note:
+      vi: Chủ động phản thân dùng haben + Partizip II; không thêm worden.
+  - type: common_mistake
+    wrong: Er mischt sich an meine Angelegenheiten ein.
+    right: Er mischt sich in meine Angelegenheiten ein.
+    target_lang: de
+    note:
+      vi: Sich einmischen đi với in + Akkusativ.
+  - type: summary
+    points:
+      - vi: der Gruppenzwang, die Rollenverteilung, die Erwartungshaltung, das Konkurrenzdenken, die Zusammengehörigkeit, der Außenseiter, der Anpassungsdruck, das Mobbing.
+      - vi: die Konfliktlösung, der Vermittler, schlichten, sich einmischen (in + Akk), nachgeben, sich durchsetzen (gegen), sich einfügen, sich abgrenzen, ausgrenzen.
+      - vi: das Einfühlungsvermögen, das Durchsetzungsvermögen, die Zivilcourage; solidarisch, introvertiert, extrovertiert.
+exercises:
+  - key: de:exercise:b2w3l1-listen-mobbing
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-mobbing
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Schule bietet Hilfe bei Mobbing an.
+      options:
+        - { id: me3, text: "Bằng lòng can đảm công dân, cô ấy đã giúp nạn nhân.", lang: vi }
+        - { id: aj1, text: Anh trai tôi khá hướng nội., lang: vi }
+        - { id: ovi, text: Nhà trường hỗ trợ khi có bắt nạt., lang: vi }
+        - { id: zxd, text: Học sinh mới đã nhanh chóng hòa nhập với lớp., lang: vi }
+    answer:
+      correct_option_id: ovi
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Nhà trường hỗ trợ khi có bắt nạt.". Từ khoá là das Mobbing (việc bắt nạt); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Nhà trường hỗ trợ khi có bắt nạt.
+  - key: de:exercise:b2w3l1-mcq-vi-de-introvertiert
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w3-introvertiert
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "hướng nội"?
+      stem_lang: vi
+      options:
+        - { id: fbu, text: das Einfühlungsvermögen, lang: de }
+        - { id: pfe, text: introvertiert, lang: de }
+        - { id: s4w, text: das Konkurrenzdenken, lang: de }
+        - { id: fyn, text: das Mobbing, lang: de }
+    answer:
+      correct_option_id: pfe
+    explanation:
+      vi: "introvertiert nghĩa là \"hướng nội\". Ví dụ: Mein Bruder ist eher introvertiert. (Anh trai tôi khá hướng nội.)"
+    display_answer: introvertiert
+  - key: de:exercise:b2w3l1-mcq-de-vi-sich-einmischen
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-sich-einmischen
+    prompt:
+      stem: "\"sich einmischen\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: wy9, text: xen vào (in + Akk), lang: vi }
+        - { id: itw, text: tâm thế kỳ vọng, lang: vi }
+        - { id: vm8, text: áp lực từ nhóm, lang: vi }
+        - { id: qae, text: tư duy cạnh tranh, lang: vi }
+    answer:
+      correct_option_id: wy9
+    explanation:
+      vi: "sich einmischen nghĩa là \"xen vào (in + Akk)\". Ví dụ: Bitte misch dich nicht in meine Angelegenheiten ein. (Xin đừng xen vào chuyện của tôi.)"
+    display_answer: xen vào (in + Akk)
+  - key: de:exercise:b2w3l1-mcq-artikel-durchsetzungsvermoegen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-durchsetzungsvermoegen
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Durchsetzungsvermögen\" (khả năng kiên quyết thực hiện ý mình): ___ Durchsetzungsvermögen"
+      stem_lang: vi
+      options:
+        - { id: mv3, text: die, lang: de }
+        - { id: k32, text: der, lang: de }
+        - { id: f5j, text: ein, lang: de }
+        - { id: dxi, text: das, lang: de }
+    answer:
+      correct_option_id: dxi
+    explanation:
+      vi: "Durchsetzungsvermögen là danh từ giống trung (das): das Durchsetzungsvermögen (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b2w3l1-tr-word-zivilcourage
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-zivilcourage
+    prompt:
+      source_text: lòng can đảm công dân (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Zivilcourage
+    known_wrong:
+      - answer: der Zivilcourage
+        feedback_vi: Zivilcourage là giống cái, nên là die Zivilcourage.
+        error_tag: article
+      - answer: das Zivilcourage
+        feedback_vi: Zivilcourage là giống cái, nên là die Zivilcourage.
+        error_tag: article
+    explanation:
+      vi: "\"lòng can đảm công dân\" trong tiếng Đức là die Zivilcourage (số nhiều: không dùng). Ví dụ: Mit Zivilcourage hat sie dem Opfer geholfen."
+    display_answer: die Zivilcourage
+  - key: de:exercise:b2w3l1-tr-word-solidarisch
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-solidarisch
+    prompt:
+      source_text: đoàn kết (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - solidarisch
+    explanation:
+      vi: "\"đoàn kết\" trong tiếng Đức là solidarisch. Ví dụ: Die Bürger zeigten sich solidarisch mit den Opfern."
+    display_answer: solidarisch
+  - key: de:exercise:b2w3l1-fill-plural-verhaltensweise
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-verhaltensweise
+    prompt:
+      template: "Singular: die Verhaltensweise · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 18 }
+    answer:
+      blanks:
+        b1:
+          - Verhaltensweisen
+    known_wrong:
+      - answer: Verhaltensweise
+        feedback_vi: Verhaltensweise là dạng số ít; số nhiều là Verhaltensweisen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Verhaltensweise là die Verhaltensweisen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Verhaltensweise · Plural: die Verhaltensweisen"
+  - key: de:exercise:b2w3l1-mcq-luecke-gruppenzwang
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-gruppenzwang
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Nhiều thiếu niên hút thuốc vì áp lực từ nhóm.\": Viele Jugendliche rauchen aus ___."
+      stem_lang: vi
+      options:
+        - { id: qxx, text: Rollenverteilung, lang: de }
+        - { id: un1, text: Verhaltensweise, lang: de }
+        - { id: lhf, text: Gruppenzwang, lang: de }
+        - { id: mh7, text: Außenseiter, lang: de }
+    answer:
+      correct_option_id: lhf
+    explanation:
+      vi: "Câu có nghĩa \"Nhiều thiếu niên hút thuốc vì áp lực từ nhóm.\" nên cần Gruppenzwang (der Gruppenzwang: áp lực từ nhóm). Rollenverteilung = sự phân vai; Verhaltensweise = cách ứng xử; Außenseiter = người bị tách khỏi nhóm không đúng nghĩa của câu."
+    display_answer: Gruppenzwang
+  - key: de:exercise:b2w3l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Wer unter Gruppenzwang steht, fügt sich oft ein, obwohl er eigentlich anderer Meinung ist.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Wer unter Gruppenzwang steht, fügt sich oft ein, obwohl er eigentlich anderer Meinung ist.
+        - Wer unter Gruppenzwang steht, passt sich oft an, obwohl er eigentlich anderer Meinung ist.
+        - Wer unter dem Gruppenzwang steht, fügt sich oft ein, obwohl er eigentlich anderer Meinung ist.
+    explanation:
+      vi: "Gợi ý đáp án: Wer unter Gruppenzwang steht, fügt sich oft ein, obwohl er eigentlich anderer Meinung ist. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Wer unter Gruppenzwang steht, fügt sich oft ein, obwohl er eigentlich anderer Meinung ist.
+    item: de:item:b2w3-gruppenzwang
+  - key: de:exercise:b2w3l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Als der Streit eskalierte, hat die Lehrerin geschlichtet und gezeigt, dass Zivilcourage wichtig ist.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Khi cuộc cãi vã leo thang, cô giáo đã hòa giải và cho thấy lòng can đảm công dân là quan trọng.
+        - Lúc cuộc tranh cãi leo thang, cô giáo đã hòa giải và chứng tỏ rằng can đảm công dân rất quan trọng.
+        - Khi mâu thuẫn trở nên căng thẳng, cô giáo đã đứng ra hòa giải và cho thấy lòng dũng cảm công dân quan trọng thế nào.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Als der Streit eskalierte, hat die Lehrerin geschlichtet und gezeigt, dass Zivilcourage wichtig ist.\" nghĩa là: Khi cuộc cãi vã leo thang, cô giáo đã hòa giải và cho thấy lòng can đảm công dân là quan trọng. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Khi cuộc cãi vã leo thang, cô giáo đã hòa giải và cho thấy lòng can đảm công dân là quan trọng.
+    item: de:item:b2w3-zivilcourage

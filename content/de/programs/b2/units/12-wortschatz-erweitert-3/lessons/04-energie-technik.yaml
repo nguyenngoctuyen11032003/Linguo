@@ -1,0 +1,301 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w3-energie-technik
+order_index: 4
+level: b2
+title:
+  vi: Năng lượng, điện và công nghệ môi trường (Energie und Technik)
+objectives:
+  - vi: Hiểu và bàn luận về chuyển đổi năng lượng, các nguồn điện và nguy cơ.
+  - vi: Đọc hiểu thông tin kỹ thuật cơ bản về điện gió, điện mặt trời, hydro.
+  - vi: Dùng các động từ einspeisen, ausstoßen, umrüsten, dämmen và tính từ regenerativ, atomar.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w3-finanzen-boerse
+items:
+  - item: de:item:b2w3-energiewende
+  - item: de:item:b2w3-windkraftanlage
+  - item: de:item:b2w3-photovoltaikanlage
+  - item: de:item:b2w3-speicher
+  - item: de:item:b2w3-stromnetz
+  - item: de:item:b2w3-kernenergie
+  - item: de:item:b2w3-atomkraftwerk
+  - item: de:item:b2w3-kohlekraftwerk
+  - item: de:item:b2w3-braunkohle
+  - item: de:item:b2w3-erdgas
+  - item: de:item:b2w3-wasserstoff
+  - item: de:item:b2w3-wasserkraft
+  - item: de:item:b2w3-netzbetreiber
+  - item: de:item:b2w3-einspeisung
+  - item: de:item:b2w3-energieeffizienz
+  - item: de:item:b2w3-daemmung
+  - item: de:item:b2w3-atommuell
+  - item: de:item:b2w3-endlager
+  - item: de:item:b2w3-einspeisen
+  - item: de:item:b2w3-ausstossen
+  - item: de:item:b2w3-umruesten
+  - item: de:item:b2w3-daemmen
+  - item: de:item:b2w3-regenerativ
+  - item: de:item:b2w3-energieintensiv
+  - item: de:item:b2w3-atomar
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn thảo luận được về các nguồn năng lượng, ưu nhược điểm và chính sách năng lượng, và hiểu các bài báo kỹ thuật cơ bản về điện và môi trường.
+  - type: explain
+    text:
+      vi: "Nguồn năng lượng: die Windkraftanlage, die Photovoltaikanlage, die Wasserkraft, die Kernenergie, das Atomkraftwerk, das Kohlekraftwerk, die Braunkohle, das Erdgas, der Wasserstoff. Đặc điểm: regenerativ (tái tạo), atomar (hạt nhân), energieintensiv (tiêu tốn nhiều năng lượng)."
+  - type: explain
+    text:
+      vi: "Hạ tầng điện: das Stromnetz, der Netzbetreiber, die Einspeisung (việc đưa điện vào lưới), der Speicher (thiết bị lưu trữ), die Energieeffizienz, die Dämmung (cách nhiệt), der Atommüll, das Endlager (nơi chôn lấp lâu dài chất thải phóng xạ). Từ chính sách: die Energiewende (chuyển đổi năng lượng)."
+  - type: explain
+    text:
+      vi: "Động từ: einspeisen (đưa vào lưới điện: speist ein), ausstoßen (thải ra: stößt aus, stieß aus, hat ausgestoßen), umrüsten (nâng cấp, chuyển đổi thiết bị), dämmen (cách nhiệt). Ví dụ: Die Solaranlage speist Strom ins Netz ein. Ältere Heizungen werden auf Wärmepumpen umgerüstet."
+  - type: deep_explain
+    text:
+      vi: Die Energiewende là chính sách của Đức nhằm chuyển từ năng lượng hóa thạch và hạt nhân sang năng lượng tái tạo. Der Wasserstoff được xem là nhiên liệu của tương lai, nhưng chỉ sạch nếu được tạo ra bằng điện tái tạo. Kernenergie và Atomenergie đồng nghĩa; ở Đức việc đóng cửa các nhà máy điện hạt nhân đã được quyết định, nên Atomausstieg là từ thường gặp trên báo.
+  - type: example
+    target: Die Energiewende verändert die Stromversorgung.
+    target_lang: de
+    translation:
+      vi: Quá trình chuyển đổi năng lượng làm thay đổi việc cung cấp điện.
+    note:
+      vi: die Energiewende = chuyển đổi năng lượng.
+  - type: example
+    target: Die neue Windkraftanlage liefert Strom für 5000 Haushalte.
+    target_lang: de
+    translation:
+      vi: Nhà máy điện gió mới cung cấp điện cho 5000 hộ.
+    note:
+      vi: die Windkraftanlage = tua-bin gió, nhà máy điện gió.
+  - type: example
+    target: Auf dem Dach ist eine Photovoltaikanlage installiert.
+    target_lang: de
+    translation:
+      vi: Trên mái nhà đã lắp một hệ thống điện mặt trời.
+    note:
+      vi: die Photovoltaikanlage = hệ thống điện mặt trời.
+  - type: example
+    target: Ein Speicher gleicht Schwankungen im Netz aus.
+    target_lang: de
+    translation:
+      vi: Thiết bị lưu trữ cân bằng sự dao động trong lưới điện.
+    note:
+      vi: der Speicher = thiết bị lưu trữ, kho chứa.
+  - type: common_mistake
+    wrong: Die Anlage speist der Strom ins Netz ein.
+    right: Die Anlage speist den Strom ins Netz ein.
+    target_lang: de
+    note:
+      vi: "Strom là giống đực, Akkusativ: den Strom."
+  - type: common_mistake
+    wrong: Das Auto stoßt viel Kohlendioxid aus.
+    right: Das Auto stößt viel Kohlendioxid aus.
+    target_lang: de
+    note:
+      vi: "Ausstoßen đổi nguyên âm ở ngôi er/sie/es: stößt aus."
+  - type: summary
+    points:
+      - vi: die Energiewende, die Windkraftanlage, die Photovoltaikanlage, die Wasserkraft, die Kernenergie, das Atomkraftwerk, das Kohlekraftwerk, die Braunkohle, das Erdgas, der Wasserstoff.
+      - vi: das Stromnetz, der Netzbetreiber, die Einspeisung, der Speicher, die Energieeffizienz, die Dämmung, der Atommüll, das Endlager.
+      - vi: einspeisen, ausstoßen (stößt aus), umrüsten, dämmen; regenerativ, atomar, energieintensiv.
+exercises:
+  - key: de:exercise:b2w3l4-listen-daemmung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-daemmung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Dämmung der Wände spart Heizenergie.
+      options:
+        - { id: cx7, text: Hệ thống sưởi được chuyển sang dùng khí đốt., lang: vi }
+        - { id: vh5, text: Không muốn một thảm họa hạt nhân lặp lại., lang: vi }
+        - { id: x2g, text: Hệ thống đưa điện dư thừa vào lưới., lang: vi }
+        - { id: ff5, text: Cách nhiệt tường giúp tiết kiệm năng lượng sưởi., lang: vi }
+    answer:
+      correct_option_id: ff5
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Cách nhiệt tường giúp tiết kiệm năng lượng sưởi.". Từ khoá là die Dämmung (việc cách nhiệt); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Cách nhiệt tường giúp tiết kiệm năng lượng sưởi.
+  - key: de:exercise:b2w3l4-mcq-vi-de-daemmen
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w3-daemmen
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "cách nhiệt, giảm (tiếng ồn)"?
+      stem_lang: vi
+      options:
+        - { id: cd4, text: ausstoßen, lang: de }
+        - { id: sfy, text: einspeisen, lang: de }
+        - { id: dbs, text: umrüsten, lang: de }
+        - { id: tyd, text: dämmen, lang: de }
+    answer:
+      correct_option_id: tyd
+    explanation:
+      vi: "dämmen nghĩa là \"cách nhiệt, giảm (tiếng ồn)\". Ví dụ: Wir wollen das Dach dämmen. (Chúng tôi muốn cách nhiệt mái nhà.)"
+    display_answer: dämmen
+  - key: de:exercise:b2w3l4-mcq-de-vi-braunkohle
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-braunkohle
+    prompt:
+      stem: "\"die Braunkohle\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: tzo, text: tái tạo, lang: vi }
+        - { id: nk6, text: than nâu, lang: vi }
+        - { id: fbb, text: thải ra, lang: vi }
+        - { id: t61, text: đưa (điện) vào lưới, lang: vi }
+    answer:
+      correct_option_id: nk6
+    explanation:
+      vi: "die Braunkohle nghĩa là \"than nâu\". Ví dụ: Die Gewinnung von Braunkohle verändert die Landschaft. (Việc khai thác than nâu làm thay đổi cảnh quan.)"
+    display_answer: than nâu
+  - key: de:exercise:b2w3l4-mcq-artikel-speicher
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-speicher
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Speicher\" (thiết bị lưu trữ, kho chứa): ___ Speicher"
+      stem_lang: vi
+      options:
+        - { id: mk2, text: der, lang: de }
+        - { id: lny, text: das, lang: de }
+        - { id: p34, text: die, lang: de }
+        - { id: w3m, text: ein, lang: de }
+    answer:
+      correct_option_id: mk2
+    explanation:
+      vi: "Speicher là danh từ giống đực (der): der Speicher; số nhiều: die Speicher. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b2w3l4-tr-word-energieeffizienz
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-energieeffizienz
+    prompt:
+      source_text: hiệu quả sử dụng năng lượng (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Energieeffizienz
+    known_wrong:
+      - answer: der Energieeffizienz
+        feedback_vi: Energieeffizienz là giống cái, nên là die Energieeffizienz.
+        error_tag: article
+      - answer: das Energieeffizienz
+        feedback_vi: Energieeffizienz là giống cái, nên là die Energieeffizienz.
+        error_tag: article
+    explanation:
+      vi: "\"hiệu quả sử dụng năng lượng\" trong tiếng Đức là die Energieeffizienz (số nhiều: không dùng). Ví dụ: Mehr Energieeffizienz senkt die Kosten."
+    display_answer: die Energieeffizienz
+  - key: de:exercise:b2w3l4-tr-word-atomar
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-atomar
+    prompt:
+      source_text: thuộc hạt nhân, nguyên tử (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - atomar
+    explanation:
+      vi: "\"thuộc hạt nhân, nguyên tử\" trong tiếng Đức là atomar. Ví dụ: Eine atomare Katastrophe soll sich nicht wiederholen."
+    display_answer: atomar
+  - key: de:exercise:b2w3l4-fill-plural-stromnetz
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-stromnetz
+    prompt:
+      template: "Singular: das Stromnetz · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 12 }
+    answer:
+      blanks:
+        b1:
+          - Stromnetze
+    known_wrong:
+      - answer: Stromnetz
+        feedback_vi: Stromnetz là dạng số ít; số nhiều là Stromnetze.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của das Stromnetz là die Stromnetze (ký hiệu trong từ điển: -e). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: das Stromnetz · Plural: die Stromnetze"
+  - key: de:exercise:b2w3l4-mcq-luecke-energiewende
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-energiewende
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Quá trình chuyển đổi năng lượng làm thay đổi việc cung cấp điện.\": Die ___ verändert die Stromversorgung."
+      stem_lang: vi
+      options:
+        - { id: qu8, text: Kohlekraftwerk, lang: de }
+        - { id: xzn, text: Einspeisung, lang: de }
+        - { id: n8t, text: Energieeffizienz, lang: de }
+        - { id: pht, text: Energiewende, lang: de }
+    answer:
+      correct_option_id: pht
+    explanation:
+      vi: "Câu có nghĩa \"Quá trình chuyển đổi năng lượng làm thay đổi việc cung cấp điện.\" nên cần Energiewende (die Energiewende: chuyển đổi năng lượng). Kohlekraftwerk = nhà máy nhiệt điện than; Einspeisung = việc đưa điện vào lưới; Energieeffizienz = hiệu quả sử dụng năng lượng không đúng nghĩa của câu."
+    display_answer: Energiewende
+  - key: de:exercise:b2w3l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Weil die Photovoltaikanlagen mehr Strom ins Netz einspeisen, brauchen wir bessere Speicher.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Weil die Photovoltaikanlagen mehr Strom ins Netz einspeisen, brauchen wir bessere Speicher.
+        - Da die Photovoltaikanlagen mehr Strom ins Netz einspeisen, brauchen wir bessere Speicher.
+        - Wir brauchen bessere Speicher, weil die Photovoltaikanlagen mehr Strom ins Netz einspeisen.
+    explanation:
+      vi: "Gợi ý đáp án: Weil die Photovoltaikanlagen mehr Strom ins Netz einspeisen, brauchen wir bessere Speicher. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Weil die Photovoltaikanlagen mehr Strom ins Netz einspeisen, brauchen wir bessere Speicher.
+    item: de:item:b2w3-photovoltaikanlage
+  - key: de:exercise:b2w3l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Obwohl Wasserstoff regenerativ erzeugt werden kann, ist die Produktion noch energieintensiv und teuer.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Dù hydro có thể được sản xuất bằng nguồn tái tạo, việc sản xuất vẫn tiêu tốn nhiều năng lượng và đắt.
+        - Mặc dù có thể sản xuất hydro bằng năng lượng tái tạo, quá trình này vẫn tốn nhiều năng lượng và đắt đỏ.
+        - Dù hydro có thể được tạo ra từ nguồn tái tạo, việc sản xuất hiện vẫn đòi hỏi nhiều năng lượng và tốn kém.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Obwohl Wasserstoff regenerativ erzeugt werden kann, ist die Produktion noch energieintensiv und teuer.\" nghĩa là: Dù hydro có thể được sản xuất bằng nguồn tái tạo, việc sản xuất vẫn tiêu tốn nhiều năng lượng và đắt. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Dù hydro có thể được sản xuất bằng nguồn tái tạo, việc sản xuất vẫn tiêu tốn nhiều năng lượng và đắt.
+    item: de:item:b2w3-wasserstoff

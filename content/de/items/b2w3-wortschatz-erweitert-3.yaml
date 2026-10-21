@@ -1,0 +1,2424 @@
+# Học liệu unit B2W3 "Mở rộng vốn từ B2 (3): hành vi nhóm, quản lý, tài chính, năng lượng, lịch sử – chính trị, động từ (Wortschatz erweitern 3)" (mở rộng vốn từ, chương trình B2).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:b2w3-gruppenzwang
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Gruppenzwang (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: áp lực từ nhóm
+      examples:
+        - target: Viele Jugendliche rauchen aus Gruppenzwang.
+          translation:
+            vi: Nhiều thiếu niên hút thuốc vì áp lực từ nhóm.
+  - key: de:item:b2w3-rollenverteilung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rollenverteilung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phân vai
+      examples:
+        - target: Die Rollenverteilung im Team war von Anfang an klar.
+          translation:
+            vi: Việc phân vai trong nhóm rõ ràng ngay từ đầu.
+  - key: de:item:b2w3-erwartungshaltung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erwartungshaltung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tâm thế kỳ vọng
+      examples:
+        - target: Die hohe Erwartungshaltung der Eltern setzt ihn unter Druck.
+          translation:
+            vi: Kỳ vọng cao của cha mẹ khiến cậu ấy chịu áp lực.
+  - key: de:item:b2w3-konkurrenzdenken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Konkurrenzdenken (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tư duy cạnh tranh
+      examples:
+        - target: In dieser Abteilung herrscht ein starkes Konkurrenzdenken.
+          translation:
+            vi: Trong phòng ban này có tư duy cạnh tranh rất mạnh.
+  - key: de:item:b2w3-zusammengehoerigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zusammengehörigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tinh thần đoàn kết
+      examples:
+        - target: Das Fest stärkt die Zusammengehörigkeit im Dorf.
+          translation:
+            vi: Lễ hội củng cố tinh thần đoàn kết trong làng.
+  - key: de:item:b2w3-aussenseiter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Außenseiter, - / die Außenseiterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người bị tách khỏi nhóm
+      examples:
+        - target: Er fühlte sich in der Klasse wie ein Außenseiter.
+          translation:
+            vi: Cậu ấy cảm thấy mình như người ngoài cuộc trong lớp.
+  - key: de:item:b2w3-anpassungsdruck
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Anpassungsdruck (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: áp lực phải hòa nhập
+      examples:
+        - target: Der Anpassungsdruck ist an neuen Schulen oft hoch.
+          translation:
+            vi: Áp lực hòa nhập ở các trường mới thường cao.
+  - key: de:item:b2w3-mobbing
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Mobbing (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc bắt nạt
+      examples:
+        - target: Die Schule bietet Hilfe bei Mobbing an.
+          translation:
+            vi: Nhà trường hỗ trợ khi có bắt nạt.
+  - key: de:item:b2w3-verhaltensweise
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verhaltensweise, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cách ứng xử
+      examples:
+        - target: Diese Verhaltensweise ist in der Gruppe nicht akzeptabel.
+          translation:
+            vi: Cách ứng xử này không được chấp nhận trong nhóm.
+  - key: de:item:b2w3-konfliktloesung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Konfliktlösung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc giải quyết xung đột
+      examples:
+        - target: Eine friedliche Konfliktlösung braucht Geduld.
+          translation:
+            vi: Việc giải quyết xung đột hòa bình cần kiên nhẫn.
+  - key: de:item:b2w3-vermittler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Vermittler, - / die Vermittlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người trung gian hòa giải
+      examples:
+        - target: Als neutraler Vermittler hat er den Streit beendet.
+          translation:
+            vi: Là người trung gian trung lập, ông đã chấm dứt cuộc tranh chấp.
+  - key: de:item:b2w3-einfuehlungsvermoegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Einfühlungsvermögen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng thấu cảm
+      examples:
+        - target: Für diesen Beruf braucht man viel Einfühlungsvermögen.
+          translation:
+            vi: Cho nghề này cần nhiều khả năng thấu cảm.
+  - key: de:item:b2w3-durchsetzungsvermoegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Durchsetzungsvermögen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khả năng kiên quyết thực hiện ý mình
+      examples:
+        - target: Eine Führungskraft braucht Durchsetzungsvermögen.
+          translation:
+            vi: Người lãnh đạo cần khả năng kiên quyết thực hiện ý mình.
+  - key: de:item:b2w3-zivilcourage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zivilcourage (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: lòng can đảm công dân
+      examples:
+        - target: Mit Zivilcourage hat sie dem Opfer geholfen.
+          translation:
+            vi: Bằng lòng can đảm công dân, cô ấy đã giúp nạn nhân.
+  - key: de:item:b2w3-schlichten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: schlichten
+      pos: động từ
+    back:
+      meaning:
+        vi: hòa giải
+      examples:
+        - target: Der Bürgermeister hat den Streit geschlichtet.
+          translation:
+            vi: Thị trưởng đã hòa giải cuộc tranh chấp.
+  - key: de:item:b2w3-sich-einmischen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich einmischen
+      pos: động từ
+    back:
+      meaning:
+        vi: xen vào (in + Akk)
+      examples:
+        - target: Bitte misch dich nicht in meine Angelegenheiten ein.
+          translation:
+            vi: Xin đừng xen vào chuyện của tôi.
+  - key: de:item:b2w3-nachgeben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: nachgeben, gibt nach, gab nach, hat nachgegeben
+      pos: động từ
+    back:
+      meaning:
+        vi: nhượng bộ
+      examples:
+        - target: Am Ende hat er nachgegeben.
+          translation:
+            vi: Cuối cùng anh ấy đã nhượng bộ.
+  - key: de:item:b2w3-sich-durchsetzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich durchsetzen, setzt sich durch, setzte sich durch, hat sich durchgesetzt
+      pos: động từ
+    back:
+      meaning:
+        vi: thắng thế, áp đặt được ý mình
+      examples:
+        - target: Sie hat sich gegen alle Widerstände durchgesetzt.
+          translation:
+            vi: Cô ấy đã thắng thế trước mọi sự phản đối.
+  - key: de:item:b2w3-sich-einfuegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich einfügen
+      pos: động từ
+    back:
+      meaning:
+        vi: hòa nhập, thích nghi
+      examples:
+        - target: Der neue Schüler hat sich schnell in die Klasse eingefügt.
+          translation:
+            vi: Học sinh mới đã nhanh chóng hòa nhập với lớp.
+  - key: de:item:b2w3-sich-abgrenzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich abgrenzen
+      pos: động từ
+    back:
+      meaning:
+        vi: giữ khoảng cách, phân biệt mình
+      examples:
+        - target: Er muss sich von dieser Gruppe abgrenzen.
+          translation:
+            vi: Anh ấy phải tách mình khỏi nhóm này.
+  - key: de:item:b2w3-ausgrenzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausgrenzen
+      pos: động từ
+    back:
+      meaning:
+        vi: loại trừ, tẩy chay
+      examples:
+        - target: Niemand sollte wegen seiner Herkunft ausgegrenzt werden.
+          translation:
+            vi: Không ai nên bị tẩy chay vì nguồn gốc.
+  - key: de:item:b2w3-solidarisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: solidarisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: đoàn kết
+      examples:
+        - target: Die Bürger zeigten sich solidarisch mit den Opfern.
+          translation:
+            vi: Người dân thể hiện sự đoàn kết với các nạn nhân.
+  - key: de:item:b2w3-introvertiert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: introvertiert
+      pos: tính từ
+    back:
+      meaning:
+        vi: hướng nội
+      examples:
+        - target: Mein Bruder ist eher introvertiert.
+          translation:
+            vi: Anh trai tôi khá hướng nội.
+  - key: de:item:b2w3-extrovertiert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: extrovertiert
+      pos: tính từ
+    back:
+      meaning:
+        vi: hướng ngoại
+      examples:
+        - target: Sie ist extrovertiert und liebt Partys.
+          translation:
+            vi: Cô ấy hướng ngoại và thích tiệc tùng.
+  - key: de:item:b2w3-fuehrungsstil
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Führungsstil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phong cách lãnh đạo
+      examples:
+        - target: Sein Führungsstil ist offen und fair.
+          translation:
+            vi: Phong cách lãnh đạo của ông ấy cởi mở và công bằng.
+  - key: de:item:b2w3-mitarbeitergespraech
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Mitarbeitergespräch, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: buổi trao đổi, đánh giá với nhân viên
+      examples:
+        - target: Einmal im Jahr findet ein Mitarbeitergespräch statt.
+          translation:
+            vi: Mỗi năm có một buổi trao đổi với nhân viên.
+  - key: de:item:b2w3-zielvereinbarung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zielvereinbarung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thỏa thuận mục tiêu
+      examples:
+        - target: In der Zielvereinbarung stehen die Aufgaben für das nächste Jahr.
+          translation:
+            vi: Trong thỏa thuận mục tiêu ghi các nhiệm vụ của năm sau.
+  - key: de:item:b2w3-leistungsbeurteilung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Leistungsbeurteilung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: đánh giá hiệu quả công việc
+      examples:
+        - target: Die Leistungsbeurteilung beeinflusst die Gehaltserhöhung.
+          translation:
+            vi: Việc đánh giá hiệu quả ảnh hưởng đến tăng lương.
+  - key: de:item:b2w3-teamleiter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Teamleiter, - / die Teamleiterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: trưởng nhóm
+      examples:
+        - target: Der Teamleiter verteilt die Aufgaben.
+          translation:
+            vi: Trưởng nhóm phân chia nhiệm vụ.
+  - key: de:item:b2w3-abteilungsleiter
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Abteilungsleiter, - / die Abteilungsleiterin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: trưởng phòng
+      examples:
+        - target: Der Abteilungsleiter hat den Antrag genehmigt.
+          translation:
+            vi: Trưởng phòng đã phê duyệt đơn.
+  - key: de:item:b2w3-geschaeftsleitung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Geschäftsleitung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ban lãnh đạo, ban giám đốc
+      examples:
+        - target: Die Geschäftsleitung informiert die Mitarbeiter über die Pläne.
+          translation:
+            vi: Ban giám đốc thông báo cho nhân viên về các kế hoạch.
+  - key: de:item:b2w3-entscheidungstraeger
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Entscheidungsträger, - / die Entscheidungsträgerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người có quyền quyết định
+      examples:
+        - target: Die Entscheidungsträger müssen schnell handeln.
+          translation:
+            vi: Những người có quyền quyết định phải hành động nhanh.
+  - key: de:item:b2w3-betriebsrat
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Betriebsrat, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hội đồng người lao động
+      examples:
+        - target: Der Betriebsrat vertritt die Interessen der Beschäftigten.
+          translation:
+            vi: Hội đồng người lao động đại diện quyền lợi của người làm công.
+  - key: de:item:b2w3-gewerkschaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gewerkschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: công đoàn
+      examples:
+        - target: Die Gewerkschaft fordert höhere Löhne.
+          translation:
+            vi: Công đoàn đòi mức lương cao hơn.
+  - key: de:item:b2w3-tarifvertrag
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Tarifvertrag, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thỏa ước lao động tập thể
+      examples:
+        - target: Der Tarifvertrag gilt für alle Beschäftigten der Branche.
+          translation:
+            vi: Thỏa ước lao động tập thể áp dụng cho mọi người làm công trong ngành.
+  - key: de:item:b2w3-unternehmenskultur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Unternehmenskultur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: văn hóa doanh nghiệp
+      examples:
+        - target: Eine offene Unternehmenskultur fördert neue Ideen.
+          translation:
+            vi: Văn hóa doanh nghiệp cởi mở thúc đẩy ý tưởng mới.
+  - key: de:item:b2w3-restrukturierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Restrukturierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc tái cơ cấu
+      examples:
+        - target: Die Restrukturierung soll bis Jahresende abgeschlossen sein.
+          translation:
+            vi: Việc tái cơ cấu phải hoàn thành trước cuối năm.
+  - key: de:item:b2w3-stellenabbau
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Stellenabbau (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc cắt giảm việc làm
+      examples:
+        - target: Der Stellenabbau betrifft vor allem die Verwaltung.
+          translation:
+            vi: Việc cắt giảm việc làm chủ yếu ảnh hưởng đến bộ phận hành chính.
+  - key: de:item:b2w3-fusion
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fusion, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự sáp nhập
+      examples:
+        - target: Die Fusion der beiden Banken wurde genehmigt.
+          translation:
+            vi: Việc sáp nhập hai ngân hàng đã được chấp thuận.
+  - key: de:item:b2w3-uebernahme
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Übernahme, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc mua lại, tiếp quản
+      examples:
+        - target: Die Übernahme des Konkurrenten kostet Milliarden.
+          translation:
+            vi: Việc mua lại đối thủ tốn hàng tỷ.
+  - key: de:item:b2w3-wettbewerbsvorteil
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wettbewerbsvorteil, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lợi thế cạnh tranh
+      examples:
+        - target: Gute Mitarbeiter sind ein Wettbewerbsvorteil.
+          translation:
+            vi: Nhân viên giỏi là một lợi thế cạnh tranh.
+  - key: de:item:b2w3-leiten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: leiten
+      pos: động từ
+    back:
+      meaning:
+        vi: lãnh đạo, điều hành
+      examples:
+        - target: Sie leitet seit zehn Jahren die Abteilung.
+          translation:
+            vi: Bà điều hành phòng ban này đã mười năm.
+  - key: de:item:b2w3-delegieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: delegieren
+      pos: động từ
+    back:
+      meaning:
+        vi: ủy quyền, giao việc
+      examples:
+        - target: Gute Chefs delegieren Aufgaben.
+          translation:
+            vi: Những sếp giỏi biết giao việc.
+  - key: de:item:b2w3-motivieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: motivieren
+      pos: động từ
+    back:
+      meaning:
+        vi: tạo động lực
+      examples:
+        - target: Lob kann Mitarbeiter motivieren.
+          translation:
+            vi: Lời khen có thể tạo động lực cho nhân viên.
+  - key: de:item:b2w3-umstrukturieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umstrukturieren
+      pos: động từ
+    back:
+      meaning:
+        vi: tái cấu trúc
+      examples:
+        - target: Die Firma wird komplett umstrukturiert.
+          translation:
+            vi: Công ty sẽ được tái cấu trúc hoàn toàn.
+  - key: de:item:b2w3-fusionieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fusionieren
+      pos: động từ
+    back:
+      meaning:
+        vi: sáp nhập
+      examples:
+        - target: Die beiden Unternehmen sind fusioniert.
+          translation:
+            vi: Hai doanh nghiệp đã sáp nhập.
+  - key: de:item:b2w3-uebertragen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: übertragen, überträgt, übertrug, hat übertragen
+      pos: động từ
+    back:
+      meaning:
+        vi: giao, chuyển giao
+      examples:
+        - target: Der Chef hat ihr die Leitung übertragen.
+          translation:
+            vi: Sếp đã giao việc điều hành cho cô ấy.
+  - key: de:item:b2w3-kooperativ
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kooperativ
+      pos: tính từ
+    back:
+      meaning:
+        vi: hợp tác
+      examples:
+        - target: Er ist ein kooperativer Chef.
+          translation:
+            vi: Ông ấy là một sếp biết hợp tác.
+  - key: de:item:b2w3-autoritaer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: autoritär
+      pos: tính từ
+    back:
+      meaning:
+        vi: độc đoán
+      examples:
+        - target: Der Vater war sehr autoritär.
+          translation:
+            vi: Người cha rất độc đoán.
+  - key: de:item:b2w3-hierarchisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hierarchisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: có thứ bậc
+      examples:
+        - target: Die Firma ist hierarchisch organisiert.
+          translation:
+            vi: Công ty được tổ chức theo thứ bậc.
+  - key: de:item:b2w3-betrieblich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: betrieblich
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc doanh nghiệp
+      examples:
+        - target: Es gibt eine betriebliche Altersvorsorge.
+          translation:
+            vi: Có chế độ hưu trí của doanh nghiệp.
+  - key: de:item:b2w3-boerse
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Börse, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sàn giao dịch chứng khoán
+      examples:
+        - target: An der Börse herrscht heute große Nervosität.
+          translation:
+            vi: Hôm nay trên sàn chứng khoán có nhiều lo lắng.
+  - key: de:item:b2w3-aktie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Aktie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ phiếu
+      examples:
+        - target: Er hat Aktien eines Autoherstellers gekauft.
+          translation:
+            vi: Anh ấy đã mua cổ phiếu của một hãng ô tô.
+  - key: de:item:b2w3-aktionaer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Aktionär, -e / die Aktionärin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ đông
+      examples:
+        - target: Die Aktionäre stimmen über die Dividende ab.
+          translation:
+            vi: Các cổ đông biểu quyết về cổ tức.
+  - key: de:item:b2w3-anleger
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Anleger, - / die Anlegerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà đầu tư
+      examples:
+        - target: Viele Anleger suchen sichere Investitionen.
+          translation:
+            vi: Nhiều nhà đầu tư tìm kiếm khoản đầu tư an toàn.
+  - key: de:item:b2w3-dividende
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Dividende, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: cổ tức
+      examples:
+        - target: Das Unternehmen zahlt eine hohe Dividende.
+          translation:
+            vi: Doanh nghiệp trả cổ tức cao.
+  - key: de:item:b2w3-rendite
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rendite, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tỷ suất sinh lời
+      examples:
+        - target: Die Rendite der Anleihe beträgt drei Prozent.
+          translation:
+            vi: Tỷ suất sinh lời của trái phiếu là ba phần trăm.
+  - key: de:item:b2w3-wertpapier
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Wertpapier, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chứng khoán, giấy tờ có giá
+      examples:
+        - target: Aktien sind Wertpapiere.
+          translation:
+            vi: Cổ phiếu là chứng khoán.
+  - key: de:item:b2w3-anleihe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Anleihe, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: trái phiếu
+      examples:
+        - target: Der Staat gibt neue Anleihen aus.
+          translation:
+            vi: Nhà nước phát hành trái phiếu mới.
+  - key: de:item:b2w3-fonds
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Fonds, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: quỹ đầu tư
+      examples:
+        - target: Er investiert in einen Fonds für Umwelttechnik.
+          translation:
+            vi: Anh ấy đầu tư vào một quỹ về công nghệ môi trường.
+  - key: de:item:b2w3-rezession
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Rezession, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: suy thoái kinh tế
+      examples:
+        - target: Die Wirtschaft steckt in einer Rezession.
+          translation:
+            vi: Nền kinh tế đang trong suy thoái.
+  - key: de:item:b2w3-konjunktur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Konjunktur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tình hình kinh tế, chu kỳ kinh tế
+      examples:
+        - target: Die Konjunktur erholt sich langsam.
+          translation:
+            vi: Tình hình kinh tế hồi phục chậm.
+  - key: de:item:b2w3-waehrung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Währung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tiền tệ
+      examples:
+        - target: Der Euro ist die gemeinsame Währung vieler Länder.
+          translation:
+            vi: Euro là đồng tiền chung của nhiều nước.
+  - key: de:item:b2w3-wechselkurs
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wechselkurs, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: tỷ giá hối đoái
+      examples:
+        - target: Der Wechselkurs hat sich zugunsten des Euro verändert.
+          translation:
+            vi: Tỷ giá hối đoái đã thay đổi có lợi cho đồng euro.
+  - key: de:item:b2w3-leitzins
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Leitzins, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lãi suất cơ bản
+      examples:
+        - target: Der Leitzins wurde erneut angehoben.
+          translation:
+            vi: Lãi suất cơ bản lại được nâng lên.
+  - key: de:item:b2w3-zentralbank
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zentralbank, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ngân hàng trung ương
+      examples:
+        - target: Die Zentralbank kontrolliert die Geldmenge.
+          translation:
+            vi: Ngân hàng trung ương kiểm soát lượng tiền.
+  - key: de:item:b2w3-staatsverschuldung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Staatsverschuldung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nợ công
+      examples:
+        - target: Die Staatsverschuldung ist in der Krise gestiegen.
+          translation:
+            vi: Nợ công đã tăng trong khủng hoảng.
+  - key: de:item:b2w3-spekulation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Spekulation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự đầu cơ
+      examples:
+        - target: Die Spekulation mit Rohstoffen ist riskant.
+          translation:
+            vi: Đầu cơ nguyên liệu rất rủi ro.
+  - key: de:item:b2w3-insolvenz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Insolvenz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phá sản
+      examples:
+        - target: Die Firma musste Insolvenz anmelden.
+          translation:
+            vi: Công ty phải khai báo phá sản.
+  - key: de:item:b2w3-pleite
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pleite, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phá sản (văn nói); thất bại
+      examples:
+        - target: Das Restaurant steht kurz vor der Pleite.
+          translation:
+            vi: Nhà hàng sắp phá sản.
+  - key: de:item:b2w3-kapital
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Kapital (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: vốn
+      examples:
+        - target: Für die Gründung fehlt das nötige Kapital.
+          translation:
+            vi: Để thành lập thiếu vốn cần thiết.
+  - key: de:item:b2w3-anlegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: đầu tư (tiền); lập; cập bờ
+      examples:
+        - target: Sie legt ihr Geld in einem Fonds an.
+          translation:
+            vi: Cô ấy đầu tư tiền vào một quỹ.
+  - key: de:item:b2w3-spekulieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: spekulieren
+      pos: động từ
+    back:
+      meaning:
+        vi: đầu cơ; phỏng đoán
+      examples:
+        - target: Viele spekulieren mit Aktien.
+          translation:
+            vi: Nhiều người đầu cơ cổ phiếu.
+  - key: de:item:b2w3-ankurbeln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ankurbeln
+      pos: động từ
+    back:
+      meaning:
+        vi: thúc đẩy, kích thích
+      examples:
+        - target: Die Regierung will die Wirtschaft ankurbeln.
+          translation:
+            vi: Chính phủ muốn kích thích nền kinh tế.
+  - key: de:item:b2w3-rentabel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: rentabel
+      pos: tính từ
+    back:
+      meaning:
+        vi: có lợi nhuận
+      examples:
+        - target: Das Geschäft ist nicht mehr rentabel.
+          translation:
+            vi: Việc kinh doanh không còn sinh lời.
+  - key: de:item:b2w3-zahlungsunfaehig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zahlungsunfähig
+      pos: tính từ
+    back:
+      meaning:
+        vi: mất khả năng thanh toán
+      examples:
+        - target: Das Unternehmen ist zahlungsunfähig.
+          translation:
+            vi: Doanh nghiệp mất khả năng thanh toán.
+  - key: de:item:b2w3-energiewende
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Energiewende (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chuyển đổi năng lượng
+      examples:
+        - target: Die Energiewende verändert die Stromversorgung.
+          translation:
+            vi: Quá trình chuyển đổi năng lượng làm thay đổi việc cung cấp điện.
+  - key: de:item:b2w3-windkraftanlage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Windkraftanlage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tua-bin gió, nhà máy điện gió
+      examples:
+        - target: Die neue Windkraftanlage liefert Strom für 5000 Haushalte.
+          translation:
+            vi: Nhà máy điện gió mới cung cấp điện cho 5000 hộ.
+  - key: de:item:b2w3-photovoltaikanlage
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Photovoltaikanlage, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ thống điện mặt trời
+      examples:
+        - target: Auf dem Dach ist eine Photovoltaikanlage installiert.
+          translation:
+            vi: Trên mái nhà đã lắp một hệ thống điện mặt trời.
+  - key: de:item:b2w3-speicher
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Speicher, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: thiết bị lưu trữ, kho chứa
+      examples:
+        - target: Ein Speicher gleicht Schwankungen im Netz aus.
+          translation:
+            vi: Thiết bị lưu trữ cân bằng sự dao động trong lưới điện.
+  - key: de:item:b2w3-stromnetz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Stromnetz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: lưới điện
+      examples:
+        - target: Das Stromnetz muss ausgebaut werden.
+          translation:
+            vi: Lưới điện phải được mở rộng.
+  - key: de:item:b2w3-kernenergie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kernenergie (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: năng lượng hạt nhân
+      examples:
+        - target: Die Kernenergie ist in Deutschland umstritten.
+          translation:
+            vi: Năng lượng hạt nhân gây tranh cãi ở Đức.
+  - key: de:item:b2w3-atomkraftwerk
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Atomkraftwerk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà máy điện hạt nhân
+      examples:
+        - target: Die letzten Atomkraftwerke wurden abgeschaltet.
+          translation:
+            vi: Những nhà máy điện hạt nhân cuối cùng đã bị đóng.
+  - key: de:item:b2w3-kohlekraftwerk
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Kohlekraftwerk, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhà máy nhiệt điện than
+      examples:
+        - target: Ein Kohlekraftwerk stößt viel Kohlendioxid aus.
+          translation:
+            vi: Một nhà máy nhiệt điện than thải ra nhiều khí CO2.
+  - key: de:item:b2w3-braunkohle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Braunkohle (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: than nâu
+      examples:
+        - target: Die Gewinnung von Braunkohle verändert die Landschaft.
+          translation:
+            vi: Việc khai thác than nâu làm thay đổi cảnh quan.
+  - key: de:item:b2w3-erdgas
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Erdgas (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: khí đốt thiên nhiên
+      examples:
+        - target: Viele Häuser werden mit Erdgas geheizt.
+          translation:
+            vi: Nhiều ngôi nhà được sưởi bằng khí đốt.
+  - key: de:item:b2w3-wasserstoff
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wasserstoff (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hydro
+      examples:
+        - target: Wasserstoff gilt als wichtiger Energieträger der Zukunft.
+          translation:
+            vi: Hydro được xem là nguồn năng lượng quan trọng của tương lai.
+  - key: de:item:b2w3-wasserkraft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wasserkraft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thủy điện, sức nước
+      examples:
+        - target: In den Alpen wird viel Strom aus Wasserkraft gewonnen.
+          translation:
+            vi: Ở dãy Alps người ta sản xuất nhiều điện từ thủy điện.
+  - key: de:item:b2w3-netzbetreiber
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Netzbetreiber, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: đơn vị vận hành lưới điện
+      examples:
+        - target: Der Netzbetreiber hat die Leitung repariert.
+          translation:
+            vi: Đơn vị vận hành lưới điện đã sửa đường dây.
+  - key: de:item:b2w3-einspeisung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Einspeisung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc đưa điện vào lưới
+      examples:
+        - target: Die Einspeisung von Solarstrom wird vergütet.
+          translation:
+            vi: Việc đưa điện mặt trời vào lưới được trả tiền.
+  - key: de:item:b2w3-energieeffizienz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Energieeffizienz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu quả sử dụng năng lượng
+      examples:
+        - target: Mehr Energieeffizienz senkt die Kosten.
+          translation:
+            vi: Hiệu quả năng lượng cao hơn giúp giảm chi phí.
+  - key: de:item:b2w3-daemmung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Dämmung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc cách nhiệt
+      examples:
+        - target: Die Dämmung der Wände spart Heizenergie.
+          translation:
+            vi: Cách nhiệt tường giúp tiết kiệm năng lượng sưởi.
+  - key: de:item:b2w3-atommuell
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Atommüll (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất thải hạt nhân
+      examples:
+        - target: Der Atommüll muss sicher gelagert werden.
+          translation:
+            vi: Chất thải hạt nhân phải được lưu giữ an toàn.
+  - key: de:item:b2w3-endlager
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Endlager, -
+      pos: danh từ
+    back:
+      meaning:
+        vi: nơi chôn lấp lâu dài
+      examples:
+        - target: Die Suche nach einem Endlager dauert schon Jahrzehnte.
+          translation:
+            vi: Việc tìm nơi chôn lấp lâu dài đã kéo dài nhiều thập kỷ.
+  - key: de:item:b2w3-einspeisen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: einspeisen
+      pos: động từ
+    back:
+      meaning:
+        vi: đưa (điện) vào lưới
+      examples:
+        - target: Die Anlage speist überschüssigen Strom ein.
+          translation:
+            vi: Hệ thống đưa điện dư thừa vào lưới.
+  - key: de:item:b2w3-ausstossen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausstoßen, stößt aus, stieß aus, hat ausgestoßen
+      pos: động từ
+    back:
+      meaning:
+        vi: thải ra
+      examples:
+        - target: Fabriken stoßen Schadstoffe aus.
+          translation:
+            vi: Các nhà máy thải ra chất độc hại.
+  - key: de:item:b2w3-umruesten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umrüsten
+      pos: động từ
+    back:
+      meaning:
+        vi: nâng cấp, chuyển đổi thiết bị
+      examples:
+        - target: Die Heizung wird auf Erdgas umgerüstet.
+          translation:
+            vi: Hệ thống sưởi được chuyển sang dùng khí đốt.
+  - key: de:item:b2w3-daemmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: dämmen
+      pos: động từ
+    back:
+      meaning:
+        vi: cách nhiệt, giảm (tiếng ồn)
+      examples:
+        - target: Wir wollen das Dach dämmen.
+          translation:
+            vi: Chúng tôi muốn cách nhiệt mái nhà.
+  - key: de:item:b2w3-regenerativ
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: regenerativ
+      pos: tính từ
+    back:
+      meaning:
+        vi: tái tạo
+      examples:
+        - target: Regenerative Energien werden immer wichtiger.
+          translation:
+            vi: Các nguồn năng lượng tái tạo ngày càng quan trọng.
+  - key: de:item:b2w3-energieintensiv
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: energieintensiv
+      pos: tính từ
+    back:
+      meaning:
+        vi: tiêu tốn nhiều năng lượng
+      examples:
+        - target: Die Herstellung von Stahl ist energieintensiv.
+          translation:
+            vi: Việc sản xuất thép tiêu tốn nhiều năng lượng.
+  - key: de:item:b2w3-atomar
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: atomar
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc hạt nhân, nguyên tử
+      examples:
+        - target: Eine atomare Katastrophe soll sich nicht wiederholen.
+          translation:
+            vi: Không muốn một thảm họa hạt nhân lặp lại.
+  - key: de:item:b2w3-weltkrieg
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Weltkrieg, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: thế chiến
+      examples:
+        - target: Der Zweite Weltkrieg endete 1945.
+          translation:
+            vi: Thế chiến thứ hai kết thúc năm 1945.
+  - key: de:item:b2w3-nachkriegszeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Nachkriegszeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: thời kỳ hậu chiến
+      examples:
+        - target: In der Nachkriegszeit fehlte es an Wohnungen.
+          translation:
+            vi: Thời hậu chiến thiếu nhà ở.
+  - key: de:item:b2w3-wiedervereinigung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wiedervereinigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tái thống nhất
+      examples:
+        - target: Die Wiedervereinigung Deutschlands fand 1990 statt.
+          translation:
+            vi: Việc tái thống nhất nước Đức diễn ra năm 1990.
+  - key: de:item:b2w3-mauerfall
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Mauerfall (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự sụp đổ của Bức tường Berlin
+      examples:
+        - target: Der Mauerfall im November 1989 veränderte Europa.
+          translation:
+            vi: Sự sụp đổ Bức tường Berlin tháng 11 năm 1989 làm thay đổi châu Âu.
+  - key: de:item:b2w3-besatzung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Besatzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chiếm đóng; thủy thủ đoàn
+      examples:
+        - target: Nach dem Krieg stand das Land unter alliierter Besatzung.
+          translation:
+            vi: Sau chiến tranh đất nước bị phe Đồng minh chiếm đóng.
+  - key: de:item:b2w3-diktatur
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Diktatur, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ độc tài
+      examples:
+        - target: Die Diktatur unterdrückte die Opposition.
+          translation:
+            vi: Chế độ độc tài đàn áp phe đối lập.
+  - key: de:item:b2w3-verfolgung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verfolgung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự truy bức, truy đuổi
+      examples:
+        - target: Viele flohen vor der politischen Verfolgung.
+          translation:
+            vi: Nhiều người chạy trốn sự truy bức chính trị.
+  - key: de:item:b2w3-gedenkstaette
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gedenkstätte, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: nơi tưởng niệm
+      examples:
+        - target: Die Schüler besuchen eine Gedenkstätte.
+          translation:
+            vi: Học sinh đến thăm một nơi tưởng niệm.
+  - key: de:item:b2w3-zeitzeuge
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Zeitzeuge, -n / die Zeitzeugin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhân chứng lịch sử
+      examples:
+        - target: Der Zeitzeuge berichtet von seiner Kindheit im Krieg.
+          translation:
+            vi: Nhân chứng kể về thời thơ ấu trong chiến tranh.
+  - key: de:item:b2w3-republik
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Republik, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nước cộng hòa
+      examples:
+        - target: Deutschland ist eine föderale Republik.
+          translation:
+            vi: Đức là một nước cộng hòa liên bang.
+  - key: de:item:b2w3-monarchie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Monarchie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ quân chủ
+      examples:
+        - target: In einer Monarchie regiert ein König oder eine Königin.
+          translation:
+            vi: Trong chế độ quân chủ, một vị vua hoặc nữ hoàng cai trị.
+  - key: de:item:b2w3-revolution
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Revolution, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc cách mạng
+      examples:
+        - target: Die Revolution veränderte die Gesellschaft.
+          translation:
+            vi: Cuộc cách mạng đã thay đổi xã hội.
+  - key: de:item:b2w3-reform
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Reform, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc cải cách
+      examples:
+        - target: Die Reform des Rentensystems ist umstritten.
+          translation:
+            vi: Cuộc cải cách hệ thống lương hưu gây tranh cãi.
+  - key: de:item:b2w3-foederalismus
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Föderalismus (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chế độ liên bang
+      examples:
+        - target: Der Föderalismus teilt die Macht zwischen Bund und Ländern.
+          translation:
+            vi: Chế độ liên bang chia quyền lực giữa liên bang và các bang.
+  - key: de:item:b2w3-wahlkampf
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Wahlkampf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: chiến dịch tranh cử
+      examples:
+        - target: Im Wahlkampf versprechen die Parteien viel.
+          translation:
+            vi: Trong chiến dịch tranh cử các đảng hứa hẹn nhiều.
+  - key: de:item:b2w3-koalition
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Koalition, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: liên minh cầm quyền
+      examples:
+        - target: Die Koalition hat sich auf ein Gesetz geeinigt.
+          translation:
+            vi: Liên minh cầm quyền đã thống nhất về một đạo luật.
+  - key: de:item:b2w3-opposition
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Opposition, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phe đối lập
+      examples:
+        - target: Die Opposition fordert Neuwahlen.
+          translation:
+            vi: Phe đối lập đòi bầu cử lại.
+  - key: de:item:b2w3-kanzler
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kanzler, - / die Kanzlerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: thủ tướng
+      examples:
+        - target: Der Kanzler hielt eine Rede im Bundestag.
+          translation:
+            vi: Thủ tướng đã phát biểu tại Quốc hội.
+  - key: de:item:b2w3-bundesrat
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Bundesrat (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: Hội đồng Liên bang (đại diện các bang)
+      examples:
+        - target: Der Bundesrat muss dem Gesetz zustimmen.
+          translation:
+            vi: Hội đồng Liên bang phải đồng ý với đạo luật.
+  - key: de:item:b2w3-amtszeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Amtszeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: nhiệm kỳ
+      examples:
+        - target: Die Amtszeit des Kanzlers dauert vier Jahre.
+          translation:
+            vi: Nhiệm kỳ của thủ tướng kéo dài bốn năm.
+  - key: de:item:b2w3-regieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: regieren
+      pos: động từ
+    back:
+      meaning:
+        vi: cầm quyền, cai trị
+      examples:
+        - target: Die Partei regiert seit 2021.
+          translation:
+            vi: Đảng này cầm quyền từ năm 2021.
+  - key: de:item:b2w3-abloesen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ablösen
+      pos: động từ
+    back:
+      meaning:
+        vi: thay thế; tách ra
+      examples:
+        - target: Der Minister wurde von seiner Nachfolgerin abgelöst.
+          translation:
+            vi: Bộ trưởng được người kế nhiệm nữ thay thế.
+  - key: de:item:b2w3-kapitulieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kapitulieren
+      pos: động từ
+    back:
+      meaning:
+        vi: đầu hàng
+      examples:
+        - target: Das Land musste vor der Übermacht kapitulieren.
+          translation:
+            vi: Đất nước phải đầu hàng trước sức mạnh áp đảo.
+  - key: de:item:b2w3-demokratisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: demokratisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: dân chủ
+      examples:
+        - target: In einem demokratischen Land gibt es freie Wahlen.
+          translation:
+            vi: Ở một nước dân chủ có bầu cử tự do.
+  - key: de:item:b2w3-konservativ
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: konservativ
+      pos: tính từ
+    back:
+      meaning:
+        vi: bảo thủ
+      examples:
+        - target: Die Partei vertritt eine konservative Politik.
+          translation:
+            vi: Đảng này theo đường lối chính trị bảo thủ.
+  - key: de:item:b2w3-liberal
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: liberal
+      pos: tính từ
+    back:
+      meaning:
+        vi: tự do, cởi mở
+      examples:
+        - target: Er hat eine liberale Einstellung.
+          translation:
+            vi: Ông ấy có quan điểm cởi mở, tự do.
+  - key: de:item:b2w3-anfuehren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anführen
+      pos: động từ
+    back:
+      meaning:
+        vi: nêu ra, viện dẫn
+      examples:
+        - target: Er führt drei Gründe für seine Entscheidung an.
+          translation:
+            vi: Anh ấy nêu ba lý do cho quyết định của mình.
+  - key: de:item:b2w3-ansprechen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ansprechen
+      pos: động từ
+    back:
+      meaning:
+        vi: đề cập; gây ấn tượng
+      examples:
+        - target: Sie hat das Problem im Gespräch angesprochen.
+          translation:
+            vi: Cô ấy đã đề cập vấn đề trong cuộc trò chuyện.
+  - key: de:item:b2w3-anzweifeln
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anzweifeln
+      pos: động từ
+    back:
+      meaning:
+        vi: nghi ngờ
+      examples:
+        - target: Niemand zweifelt seine Ehrlichkeit an.
+          translation:
+            vi: Không ai nghi ngờ sự trung thực của anh ấy.
+  - key: de:item:b2w3-aufzeigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: aufzeigen
+      pos: động từ
+    back:
+      meaning:
+        vi: chỉ ra, vạch rõ
+      examples:
+        - target: Die Studie zeigt neue Wege auf.
+          translation:
+            vi: Nghiên cứu chỉ ra những hướng đi mới.
+  - key: de:item:b2w3-ausueben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausüben
+      pos: động từ
+    back:
+      meaning:
+        vi: thực hiện, hành nghề; gây (ảnh hưởng)
+      examples:
+        - target: Er übt seinen Beruf seit 20 Jahren aus.
+          translation:
+            vi: Ông ấy hành nghề đã hai mươi năm.
+  - key: de:item:b2w3-bekraeftigen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bekräftigen
+      pos: động từ
+    back:
+      meaning:
+        vi: khẳng định lại
+      examples:
+        - target: Der Minister bekräftigte seine Aussage.
+          translation:
+            vi: Bộ trưởng khẳng định lại phát biểu của mình.
+  - key: de:item:b2w3-beurteilen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beurteilen
+      pos: động từ
+    back:
+      meaning:
+        vi: đánh giá, nhận định
+      examples:
+        - target: Es ist schwer, die Lage richtig zu beurteilen.
+          translation:
+            vi: Khó mà đánh giá tình hình đúng.
+  - key: de:item:b2w3-durchfuehren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: durchführen
+      pos: động từ
+    back:
+      meaning:
+        vi: tiến hành, thực hiện
+      examples:
+        - target: Das Institut führt eine Umfrage durch.
+          translation:
+            vi: Viện tiến hành một cuộc khảo sát.
+  - key: de:item:b2w3-durchsetzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: durchsetzen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm cho được thực thi, quán triệt
+      examples:
+        - target: Die Regierung konnte das Gesetz nicht durchsetzen.
+          translation:
+            vi: Chính phủ không thể làm cho luật được thực thi.
+  - key: de:item:b2w3-entgegnen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entgegnen
+      pos: động từ
+    back:
+      meaning:
+        vi: đáp lại, phản bác
+      examples:
+        - target: Auf den Vorwurf entgegnete sie ruhig.
+          translation:
+            vi: Trước lời buộc tội cô đáp lại bình tĩnh.
+  - key: de:item:b2w3-entgegenwirken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entgegenwirken
+      pos: động từ
+    back:
+      meaning:
+        vi: chống lại, ngăn cản (+ Dativ)
+      examples:
+        - target: Man muss dieser Entwicklung entgegenwirken.
+          translation:
+            vi: Người ta phải ngăn chặn xu hướng này.
+  - key: de:item:b2w3-entwerfen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: entwerfen, entwirft, entwarf, hat entworfen
+      pos: động từ
+    back:
+      meaning:
+        vi: phác thảo, thiết kế
+      examples:
+        - target: Die Architektin entwirft ein neues Museum.
+          translation:
+            vi: Nữ kiến trúc sư thiết kế một bảo tàng mới.
+  - key: de:item:b2w3-folgern
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: folgern
+      pos: động từ
+    back:
+      meaning:
+        vi: suy ra, kết luận (aus + Dativ)
+      examples:
+        - target: Daraus kann man folgern, dass die Methode funktioniert.
+          translation:
+            vi: Từ đó có thể suy ra phương pháp này hiệu quả.
+  - key: de:item:b2w3-hinterlassen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hinterlassen, hinterlässt, hinterließ, hat hinterlassen
+      pos: động từ
+    back:
+      meaning:
+        vi: để lại
+      examples:
+        - target: Der Sturm hat große Schäden hinterlassen.
+          translation:
+            vi: Cơn bão đã để lại thiệt hại lớn.
+  - key: de:item:b2w3-hinzufuegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hinzufügen
+      pos: động từ
+    back:
+      meaning:
+        vi: thêm vào
+      examples:
+        - target: Möchten Sie noch etwas hinzufügen?
+          translation:
+            vi: Ông/bà còn muốn bổ sung điều gì không?
+  - key: de:item:b2w3-umfassen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umfassen
+      pos: động từ
+    back:
+      meaning:
+        vi: bao gồm
+      examples:
+        - target: Das Paket umfasst fünf Leistungen.
+          translation:
+            vi: Gói này bao gồm năm dịch vụ.
+  - key: de:item:b2w3-umsetzen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: umsetzen
+      pos: động từ
+    back:
+      meaning:
+        vi: thực hiện, chuyển thành hành động
+      examples:
+        - target: Die Stadt will den Plan schnell umsetzen.
+          translation:
+            vi: Thành phố muốn nhanh chóng thực hiện kế hoạch.
+  - key: de:item:b2w3-veranstalten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: veranstalten
+      pos: động từ
+    back:
+      meaning:
+        vi: tổ chức (sự kiện)
+      examples:
+        - target: Der Verein veranstaltet jedes Jahr ein Fest.
+          translation:
+            vi: Câu lạc bộ tổ chức một lễ hội mỗi năm.
+  - key: de:item:b2w3-verdeutlichen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verdeutlichen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm rõ, minh họa
+      examples:
+        - target: Das Diagramm verdeutlicht die Entwicklung.
+          translation:
+            vi: Biểu đồ làm rõ sự phát triển.
+  - key: de:item:b2w3-vermuten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vermuten
+      pos: động từ
+    back:
+      meaning:
+        vi: cho rằng, phỏng đoán
+      examples:
+        - target: Experten vermuten einen technischen Fehler.
+          translation:
+            vi: Các chuyên gia cho rằng có lỗi kỹ thuật.
+  - key: de:item:b2w3-verschaerfen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verschärfen
+      pos: động từ
+    back:
+      meaning:
+        vi: làm nghiêm ngặt hơn; làm trầm trọng thêm
+      examples:
+        - target: Die Regeln wurden verschärft.
+          translation:
+            vi: Các quy định đã được siết chặt hơn.
+  - key: de:item:b2w3-verweisen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verweisen
+      pos: động từ
+    back:
+      meaning:
+        vi: chỉ dẫn, viện dẫn (auf + Akk)
+      examples:
+        - target: Der Text verweist auf frühere Studien.
+          translation:
+            vi: Văn bản viện dẫn các nghiên cứu trước đây.
+  - key: de:item:b2w3-vorlegen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: vorlegen
+      pos: động từ
+    back:
+      meaning:
+        vi: trình, đệ trình
+      examples:
+        - target: Die Firma hat einen Bericht vorgelegt.
+          translation:
+            vi: Công ty đã trình một bản báo cáo.
+  - key: de:item:b2w3-zusammenhaengen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zusammenhängen, hängt zusammen, hing zusammen, hat zusammengehangen
+      pos: động từ
+    back:
+      meaning:
+        vi: có liên quan (mit + Dativ)
+      examples:
+        - target: Das hängt mit der Inflation zusammen.
+          translation:
+            vi: Điều đó liên quan đến lạm phát.

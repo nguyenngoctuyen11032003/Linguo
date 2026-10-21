@@ -1,0 +1,301 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w3-finanzen-boerse
+order_index: 3
+level: b2
+title:
+  vi: Tài chính, chứng khoán và kinh tế vĩ mô (Finanzen und Börse)
+objectives:
+  - vi: "Hiểu các từ về thị trường chứng khoán: Aktie, Anleger, Dividende, Rendite."
+  - vi: Đọc hiểu tin kinh tế về lãi suất, tiền tệ và suy thoái.
+  - vi: Dùng các động từ anlegen, spekulieren, ankurbeln và các tính từ rentabel, zahlungsunfähig.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w3-fuehrung-management
+items:
+  - item: de:item:b2w3-boerse
+  - item: de:item:b2w3-aktie
+  - item: de:item:b2w3-aktionaer
+  - item: de:item:b2w3-anleger
+  - item: de:item:b2w3-dividende
+  - item: de:item:b2w3-rendite
+  - item: de:item:b2w3-wertpapier
+  - item: de:item:b2w3-anleihe
+  - item: de:item:b2w3-fonds
+  - item: de:item:b2w3-rezession
+  - item: de:item:b2w3-konjunktur
+  - item: de:item:b2w3-waehrung
+  - item: de:item:b2w3-wechselkurs
+  - item: de:item:b2w3-leitzins
+  - item: de:item:b2w3-zentralbank
+  - item: de:item:b2w3-staatsverschuldung
+  - item: de:item:b2w3-spekulation
+  - item: de:item:b2w3-insolvenz
+  - item: de:item:b2w3-pleite
+  - item: de:item:b2w3-kapital
+  - item: de:item:b2w3-anlegen
+  - item: de:item:b2w3-spekulieren
+  - item: de:item:b2w3-ankurbeln
+  - item: de:item:b2w3-rentabel
+  - item: de:item:b2w3-zahlungsunfaehig
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu được tin kinh tế và tài chính cơ bản, nói được về đầu tư, lãi suất và tình hình kinh tế, và hiểu các từ chuyên ngành trong báo chí.
+  - type: explain
+    text:
+      vi: "Thị trường chứng khoán: die Börse, die Aktie, der Aktionär, der Anleger (nhà đầu tư), der Kurs (giá), die Dividende, die Rendite (tỷ suất sinh lời), das Wertpapier, die Anleihe (trái phiếu), der Fonds (quỹ; phát âm như tiếng Pháp, số nhiều giữ nguyên), das Kapital. Ví dụ: Die Aktie ist um zwei Prozent gestiegen."
+  - type: explain
+    text:
+      vi: "Kinh tế vĩ mô: die Konjunktur (tình hình kinh tế), die Rezession, die Währung (tiền tệ), der Wechselkurs (tỷ giá), der Leitzins (lãi suất cơ bản), die Zentralbank, die Staatsverschuldung. Ngôn ngữ báo chí: Die Konjunktur schwächt sich ab. Die Zentralbank hat den Leitzins angehoben."
+  - type: explain
+    text:
+      vi: "Rủi ro và suy thoái: die Spekulation, die Insolvenz (phá sản chính thức), die Pleite (phá sản, văn nói), spekulieren, anlegen (đầu tư: legt an), ankurbeln (thúc đẩy), rentabel (có lợi nhuận), zahlungsunfähig (không còn khả năng thanh toán). Ví dụ: Die Firma ist zahlungsunfähig und hat Insolvenz angemeldet."
+  - type: deep_explain
+    text:
+      vi: "Der Kurs còn có nghĩa là giá của một mã hoặc tỷ giá (Wechselkurs) và khóa học (Sprachkurs); ngữ cảnh xác định nghĩa. Das Kapital là một từ giống trung; số nhiều (die Kapitalien) ít dùng. Anlegen có nhiều nghĩa: Geld anlegen (đầu tư), einen Garten anlegen (lập một khu vườn), ein Schiff am Ufer anlegen (cập bờ). Wertpapier gồm Aktien và Anleihen."
+  - type: example
+    target: An der Börse herrscht heute große Nervosität.
+    target_lang: de
+    translation:
+      vi: Hôm nay trên sàn chứng khoán có nhiều lo lắng.
+    note:
+      vi: die Börse = sàn giao dịch chứng khoán.
+  - type: example
+    target: Er hat Aktien eines Autoherstellers gekauft.
+    target_lang: de
+    translation:
+      vi: Anh ấy đã mua cổ phiếu của một hãng ô tô.
+    note:
+      vi: die Aktie = cổ phiếu.
+  - type: example
+    target: Die Aktionäre stimmen über die Dividende ab.
+    target_lang: de
+    translation:
+      vi: Các cổ đông biểu quyết về cổ tức.
+    note:
+      vi: der Aktionär = cổ đông.
+  - type: example
+    target: Viele Anleger suchen sichere Investitionen.
+    target_lang: de
+    translation:
+      vi: Nhiều nhà đầu tư tìm kiếm khoản đầu tư an toàn.
+    note:
+      vi: der Anleger = nhà đầu tư.
+  - type: common_mistake
+    wrong: Die Zentralbank hat der Leitzins erhöht.
+    right: Die Zentralbank hat den Leitzins erhöht.
+    target_lang: de
+    note:
+      vi: "Leitzins là giống đực, Akkusativ: den Leitzins."
+  - type: common_mistake
+    wrong: Ich habe mein Geld in Aktien angelegen.
+    right: Ich habe mein Geld in Aktien angelegt.
+    target_lang: de
+    note:
+      vi: Partizip II của anlegen là angelegt (động từ có chia đều).
+  - type: summary
+    points:
+      - vi: die Börse, die Aktie, der Aktionär, der Anleger, der Kurs, die Dividende, die Rendite, das Wertpapier, die Anleihe, der Fonds, das Kapital.
+      - vi: die Konjunktur, die Rezession, die Währung, der Wechselkurs, der Leitzins, die Zentralbank, die Staatsverschuldung.
+      - vi: die Spekulation, die Insolvenz, die Pleite; anlegen, spekulieren, ankurbeln; rentabel, zahlungsunfähig.
+exercises:
+  - key: de:exercise:b2w3l3-listen-rendite
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-rendite
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Rendite der Anleihe beträgt drei Prozent.
+      options:
+        - { id: la1, text: Tỷ suất sinh lời của trái phiếu là ba phần trăm., lang: vi }
+        - { id: f7e, text: Tình hình kinh tế hồi phục chậm., lang: vi }
+        - { id: v5k, text: Doanh nghiệp mất khả năng thanh toán., lang: vi }
+        - { id: bhn, text: Cổ phiếu là chứng khoán., lang: vi }
+    answer:
+      correct_option_id: la1
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Tỷ suất sinh lời của trái phiếu là ba phần trăm.". Từ khoá là die Rendite (tỷ suất sinh lời); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Tỷ suất sinh lời của trái phiếu là ba phần trăm.
+  - key: de:exercise:b2w3l3-mcq-vi-de-staatsverschuldung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w3-staatsverschuldung
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "nợ công"?
+      stem_lang: vi
+      options:
+        - { id: bur, text: die Insolvenz, lang: de }
+        - { id: yji, text: die Rezession, lang: de }
+        - { id: wvp, text: die Staatsverschuldung, lang: de }
+        - { id: avg, text: die Börse, lang: de }
+    answer:
+      correct_option_id: wvp
+    explanation:
+      vi: "die Staatsverschuldung nghĩa là \"nợ công\". Ví dụ: Die Staatsverschuldung ist in der Krise gestiegen. (Nợ công đã tăng trong khủng hoảng.)"
+    display_answer: die Staatsverschuldung
+  - key: de:exercise:b2w3l3-mcq-de-vi-anleger
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w3-anleger
+    prompt:
+      stem: "\"der Anleger\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: n42, text: vốn, lang: vi }
+        - { id: z96, text: nhà đầu tư, lang: vi }
+        - { id: tv5, text: "chứng khoán, giấy tờ có giá", lang: vi }
+        - { id: r38, text: "tình hình kinh tế, chu kỳ kinh tế", lang: vi }
+    answer:
+      correct_option_id: z96
+    explanation:
+      vi: "der Anleger nghĩa là \"nhà đầu tư\". Ví dụ: Viele Anleger suchen sichere Investitionen. (Nhiều nhà đầu tư tìm kiếm khoản đầu tư an toàn.)"
+    display_answer: nhà đầu tư
+  - key: de:exercise:b2w3l3-mcq-artikel-aktionaer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-aktionaer
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Aktionär\" (cổ đông): ___ Aktionär"
+      stem_lang: vi
+      options:
+        - { id: iq1, text: das, lang: de }
+        - { id: nig, text: ein, lang: de }
+        - { id: xw9, text: die, lang: de }
+        - { id: at0, text: der, lang: de }
+    answer:
+      correct_option_id: at0
+    explanation:
+      vi: "Aktionär là danh từ giống đực (der): der Aktionär; số nhiều: die Aktionäre. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: der
+  - key: de:exercise:b2w3l3-tr-word-insolvenz
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-insolvenz
+    prompt:
+      source_text: sự phá sản (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Insolvenz
+    known_wrong:
+      - answer: der Insolvenz
+        feedback_vi: Insolvenz là giống cái, nên là die Insolvenz.
+        error_tag: article
+      - answer: das Insolvenz
+        feedback_vi: Insolvenz là giống cái, nên là die Insolvenz.
+        error_tag: article
+    explanation:
+      vi: "\"sự phá sản\" trong tiếng Đức là die Insolvenz (số nhiều: die Insolvenzen). Ví dụ: Die Firma musste Insolvenz anmelden."
+    display_answer: die Insolvenz
+  - key: de:exercise:b2w3l3-tr-word-spekulieren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-spekulieren
+    prompt:
+      source_text: đầu cơ (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - spekulieren
+    explanation:
+      vi: "\"đầu cơ\" trong tiếng Đức là spekulieren. Ví dụ: Viele spekulieren mit Aktien."
+    display_answer: spekulieren
+  - key: de:exercise:b2w3l3-fill-plural-rezession
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-rezession
+    prompt:
+      template: "Singular: die Rezession · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Rezessionen
+    known_wrong:
+      - answer: Rezession
+        feedback_vi: Rezession là dạng số ít; số nhiều là Rezessionen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Rezession là die Rezessionen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Rezession · Plural: die Rezessionen"
+  - key: de:exercise:b2w3l3-mcq-luecke-boerse
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w3-boerse
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Hôm nay trên sàn chứng khoán có nhiều lo lắng.\": An der ___ herrscht heute große Nervosität."
+      stem_lang: vi
+      options:
+        - { id: nvp, text: Börse, lang: de }
+        - { id: mm0, text: Kapital, lang: de }
+        - { id: pl5, text: Anleihen, lang: de }
+        - { id: x7z, text: Dividende, lang: de }
+    answer:
+      correct_option_id: nvp
+    explanation:
+      vi: "Câu có nghĩa \"Hôm nay trên sàn chứng khoán có nhiều lo lắng.\" nên cần Börse (die Börse: sàn giao dịch chứng khoán). Kapital = vốn; Dividende = cổ tức; Anleihen = trái phiếu không đúng nghĩa của câu."
+    display_answer: Börse
+  - key: de:exercise:b2w3l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Zentralbank hat den Leitzins gesenkt, um die Konjunktur anzukurbeln, und viele Anleger kaufen jetzt Aktien.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Zentralbank hat den Leitzins gesenkt, um die Konjunktur anzukurbeln, und viele Anleger kaufen jetzt Aktien.
+        - Um die Konjunktur anzukurbeln, hat die Zentralbank den Leitzins gesenkt, und viele Anleger kaufen jetzt Aktien.
+        - Die Zentralbank hat den Leitzins gesenkt, um die Konjunktur anzukurbeln, und viele Anleger kaufen nun Aktien.
+    explanation:
+      vi: "Gợi ý đáp án: Die Zentralbank hat den Leitzins gesenkt, um die Konjunktur anzukurbeln, und viele Anleger kaufen jetzt Aktien. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Zentralbank hat den Leitzins gesenkt, um die Konjunktur anzukurbeln, und viele Anleger kaufen jetzt Aktien.
+    item: de:item:b2w3-aktie
+  - key: de:exercise:b2w3l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Das Unternehmen ist zahlungsunfähig, deshalb hat es Insolvenz angemeldet, und der Kurs der Aktie ist stark gefallen.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Công ty mất khả năng thanh toán, vì vậy đã khai báo phá sản, và giá cổ phiếu giảm mạnh.
+        - Doanh nghiệp không còn khả năng chi trả nên đã nộp đơn phá sản, và giá cổ phiếu tụt mạnh.
+        - Công ty không trả được nợ, do đó đã đăng ký phá sản, và giá cổ phiếu rớt mạnh.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Das Unternehmen ist zahlungsunfähig, deshalb hat es Insolvenz angemeldet, und der Kurs der Aktie ist stark gefallen.\" nghĩa là: Công ty mất khả năng thanh toán, vì vậy đã khai báo phá sản, và giá cổ phiếu giảm mạnh. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Công ty mất khả năng thanh toán, vì vậy đã khai báo phá sản, và giá cổ phiếu giảm mạnh.
+    item: de:item:b2w3-aktie
