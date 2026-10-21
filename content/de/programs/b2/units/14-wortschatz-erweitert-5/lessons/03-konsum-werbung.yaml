@@ -1,0 +1,303 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w5-konsum-werbung
+order_index: 3
+level: b2
+title:
+  vi: Quảng cáo, thị trường và hành vi tiêu dùng (Konsum und Werbung)
+objectives:
+  - vi: "Phân tích một quảng cáo: mục tiêu, thông điệp, kỹ thuật thuyết phục."
+  - vi: "Nói về bẫy tiêu dùng và quyền người tiêu dùng: Mogelpackung, Abofalle, Verbraucherschutz."
+  - vi: Dùng các động từ werben, anlocken, verführen, sich leisten và các tính từ überteuert, verlockend.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w5-medizin-forschung
+items:
+  - item: de:item:b2w5-werbespot
+  - item: de:item:b2w5-werbebotschaft
+  - item: de:item:b2w5-werbeslogan
+  - item: de:item:b2w5-marktforschung
+  - item: de:item:b2w5-schleichwerbung
+  - item: de:item:b2w5-produktplatzierung
+  - item: de:item:b2w5-influencer
+  - item: de:item:b2w5-kaufanreiz
+  - item: de:item:b2w5-verlockung
+  - item: de:item:b2w5-impulskauf
+  - item: de:item:b2w5-statussymbol
+  - item: de:item:b2w5-markenbewusstsein
+  - item: de:item:b2w5-trend
+  - item: de:item:b2w5-kundenbindung
+  - item: de:item:b2w5-mogelpackung
+  - item: de:item:b2w5-abofalle
+  - item: de:item:b2w5-preisnachlass
+  - item: de:item:b2w5-verbraucherschutz
+  - item: de:item:b2w5-werben
+  - item: de:item:b2w5-anlocken
+  - item: de:item:b2w5-verfuehren
+  - item: de:item:b2w5-sich-leisten
+  - item: de:item:b2w5-anhaeufen
+  - item: de:item:b2w5-ueberteuert
+  - item: de:item:b2w5-kostspielig
+  - item: de:item:b2w5-verlockend
+  - item: de:item:b2w5-werbewirksam
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn phân tích và phê bình được một quảng cáo, nói về xu hướng tiêu dùng và mẹo của nhà bán hàng và biết cách bảo vệ mình khi mua sắm.
+  - type: explain
+    text:
+      vi: "Quảng cáo: der Werbespot, die Werbebotschaft, der Werbeslogan, die Zielgruppe, die Marktforschung, die Schleichwerbung (quảng cáo trá hình), die Produktplatzierung, der Influencer. Động từ: werben (für + Akk: wirbt, warb, hat geworben), anlocken, verführen. Ví dụ: Die Firma wirbt mit einem bekannten Gesicht für ihr Produkt."
+  - type: explain
+    text:
+      vi: "Hành vi tiêu dùng: der Kaufanreiz, die Verlockung, der Impulskauf, das Statussymbol, das Markenbewusstsein, der Trend, die Kundenbindung. Bẫy và tiết kiệm: die Mogelpackung (bao bì đánh lừa), die Abofalle (bẫy đăng ký thuê bao), der Preisnachlass, der Verbraucherschutz. Động từ: sich leisten (đủ khả năng mua), anhäufen (tích trữ)."
+  - type: explain
+    text:
+      vi: "Tính từ: überteuert (quá đắt), kostspielig (tốn kém), verlockend (hấp dẫn), werbewirksam (hiệu quả quảng cáo). Ví dụ: Das Angebot klingt verlockend, ist aber überteuert. Muốn phê bình: Die Werbung wirkt manipulativ. Ich kann mir das nicht leisten."
+  - type: deep_explain
+    text:
+      vi: "Schleichwerbung bị cấm trên truyền hình và truyền thông ở Đức; quảng cáo phải được đánh dấu rõ (Werbung). Sich leisten dùng với Dativ phản thân: Ich leiste mir ein neues Fahrrad. Eine Mogelpackung là bao bì lớn nhưng chứa ít hàng. Der Impulskauf là việc mua ngay lập tức không có kế hoạch, thường do die Verlockung."
+  - type: example
+    target: Der Werbespot läuft im Fernsehen.
+    target_lang: de
+    translation:
+      vi: Đoạn quảng cáo chiếu trên tivi.
+    note:
+      vi: der Werbespot = đoạn quảng cáo (phim ngắn).
+  - type: example
+    target: Die Werbebotschaft ist klar und einfach.
+    target_lang: de
+    translation:
+      vi: Thông điệp quảng cáo rõ ràng và đơn giản.
+    note:
+      vi: die Werbebotschaft = thông điệp quảng cáo.
+  - type: example
+    target: Der Werbeslogan bleibt im Gedächtnis.
+    target_lang: de
+    translation:
+      vi: Khẩu hiệu quảng cáo in đậm trong trí nhớ.
+    note:
+      vi: der Werbeslogan = khẩu hiệu quảng cáo.
+  - type: example
+    target: Die Marktforschung zeigt, was Kunden wollen.
+    target_lang: de
+    translation:
+      vi: Nghiên cứu thị trường cho thấy khách hàng muốn gì.
+    note:
+      vi: die Marktforschung = nghiên cứu thị trường.
+  - type: common_mistake
+    wrong: Die Firma wirbt für sein Produkt mit.
+    right: Die Firma wirbt für ihr Produkt.
+    target_lang: de
+    note:
+      vi: Werben cần giới từ für + Akk; không dùng mit ở đây, và dùng ihr (die Firma là giống cái).
+  - type: common_mistake
+    wrong: Ich leiste mich ein neues Auto.
+    right: Ich leiste mir ein neues Auto.
+    target_lang: de
+    note:
+      vi: "Sich leisten dùng đại từ phản thân ở Dativ: mir."
+  - type: summary
+    points:
+      - vi: der Werbespot, die Werbebotschaft, der Werbeslogan, die Zielgruppe, die Marktforschung, die Schleichwerbung, die Produktplatzierung, der Influencer.
+      - vi: der Kaufanreiz, die Verlockung, der Impulskauf, das Statussymbol, das Markenbewusstsein, der Trend, die Kundenbindung, die Mogelpackung, die Abofalle, der Verbraucherschutz.
+      - vi: werben (für + Akk), anlocken, verführen, sich leisten (mir), anhäufen; überteuert, kostspielig, verlockend, werbewirksam.
+exercises:
+  - key: de:exercise:b2w5l3-listen-marktforschung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-marktforschung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Die Marktforschung zeigt, was Kunden wollen.
+      options:
+        - { id: uhp, text: Nghiên cứu thị trường cho thấy khách hàng muốn gì., lang: vi }
+        - { id: s7z, text: Sản phẩm thuần chay là một xu hướng mới., lang: vi }
+        - { id: bad, text: Hãy cẩn thận bẫy thuê bao trên mạng!, lang: vi }
+        - { id: set, text: Quảng cáo cám dỗ người ta mua hàng., lang: vi }
+    answer:
+      correct_option_id: uhp
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Nghiên cứu thị trường cho thấy khách hàng muốn gì.". Từ khoá là die Marktforschung (nghiên cứu thị trường); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Nghiên cứu thị trường cho thấy khách hàng muốn gì.
+  - key: de:exercise:b2w5l3-mcq-vi-de-impulskauf
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w5-impulskauf
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "việc mua theo cảm hứng"?
+      stem_lang: vi
+      options:
+        - { id: zoh, text: der Kaufanreiz, lang: de }
+        - { id: zs1, text: der Influencer, lang: de }
+        - { id: bp2, text: die Produktplatzierung, lang: de }
+        - { id: twr, text: der Impulskauf, lang: de }
+    answer:
+      correct_option_id: twr
+    explanation:
+      vi: "der Impulskauf nghĩa là \"việc mua theo cảm hứng\". Ví dụ: Süßigkeiten an der Kasse fördern den Impulskauf. (Kẹo ở quầy thanh toán thúc đẩy việc mua theo cảm hứng.)"
+    display_answer: der Impulskauf
+  - key: de:exercise:b2w5l3-mcq-de-vi-trend
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-trend
+    prompt:
+      stem: "\"der Trend\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: zbe, text: nghiên cứu thị trường, lang: vi }
+        - { id: qv0, text: việc bảo vệ người tiêu dùng, lang: vi }
+        - { id: s3z, text: yếu tố kích thích mua hàng, lang: vi }
+        - { id: arx, text: xu hướng, lang: vi }
+    answer:
+      correct_option_id: arx
+    explanation:
+      vi: "der Trend nghĩa là \"xu hướng\". Ví dụ: Vegane Produkte sind ein neuer Trend. (Sản phẩm thuần chay là một xu hướng mới.)"
+    display_answer: xu hướng
+  - key: de:exercise:b2w5l3-mcq-artikel-abofalle
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-abofalle
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Abofalle\" (bẫy thuê bao): ___ Abofalle"
+      stem_lang: vi
+      options:
+        - { id: s8p, text: ein, lang: de }
+        - { id: s3d, text: die, lang: de }
+        - { id: huu, text: das, lang: de }
+        - { id: ma1, text: der, lang: de }
+    answer:
+      correct_option_id: s3d
+    explanation:
+      vi: "Abofalle là danh từ giống cái (die): die Abofalle; số nhiều: die Abofallen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w5l3-tr-word-werbebotschaft
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-werbebotschaft
+    prompt:
+      source_text: thông điệp quảng cáo (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Werbebotschaft
+    known_wrong:
+      - answer: der Werbebotschaft
+        feedback_vi: Werbebotschaft là giống cái, nên là die Werbebotschaft.
+        error_tag: article
+      - answer: das Werbebotschaft
+        feedback_vi: Werbebotschaft là giống cái, nên là die Werbebotschaft.
+        error_tag: article
+    explanation:
+      vi: "\"thông điệp quảng cáo\" trong tiếng Đức là die Werbebotschaft (số nhiều: die Werbebotschaften). Ví dụ: Die Werbebotschaft ist klar und einfach."
+    display_answer: die Werbebotschaft
+  - key: de:exercise:b2w5l3-tr-word-werben
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-werben
+    prompt:
+      source_text: quảng cáo (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - werben
+    explanation:
+      vi: "\"quảng cáo\" trong tiếng Đức là werben. Ví dụ: Die Firma wirbt mit niedrigen Preisen."
+    display_answer: werben
+  - key: de:exercise:b2w5l3-fill-plural-produktplatzierung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-produktplatzierung
+    prompt:
+      template: "Singular: die Produktplatzierung · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 22 }
+    answer:
+      blanks:
+        b1:
+          - Produktplatzierungen
+    known_wrong:
+      - answer: Produktplatzierung
+        feedback_vi: Produktplatzierung là dạng số ít; số nhiều là Produktplatzierungen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Produktplatzierung là die Produktplatzierungen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Produktplatzierung · Plural: die Produktplatzierungen"
+  - key: de:exercise:b2w5l3-mcq-luecke-werbespot
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-werbespot
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Đoạn quảng cáo chiếu trên tivi.\": Der ___ läuft im Fernsehen."
+      stem_lang: vi
+      options:
+        - { id: u6a, text: Werbespot, lang: de }
+        - { id: fd2, text: Preisnachlass, lang: de }
+        - { id: aet, text: Statussymbol, lang: de }
+        - { id: kcu, text: Kundenbindung, lang: de }
+    answer:
+      correct_option_id: u6a
+    explanation:
+      vi: "Câu có nghĩa \"Đoạn quảng cáo chiếu trên tivi.\" nên cần Werbespot (der Werbespot: đoạn quảng cáo (phim ngắn)). Preisnachlass = khoản giảm giá; Statussymbol = biểu tượng địa vị; Kundenbindung = việc giữ chân khách hàng không đúng nghĩa của câu."
+    display_answer: Werbespot
+  - key: de:exercise:b2w5l3-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Zielgruppe wird durch verlockende Angebote angelockt, aber viele kaufen aus einem Impuls, den sie später bereuen.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Zielgruppe wird durch verlockende Angebote angelockt, aber viele kaufen aus einem Impuls, den sie später bereuen.
+        - Die Zielgruppe wird durch verlockende Angebote angelockt, doch viele kaufen aus einem Impuls heraus, den sie später bereuen.
+        - Durch verlockende Angebote wird die Zielgruppe angelockt, aber viele kaufen aus einem Impuls, den sie später bereuen.
+    explanation:
+      vi: "Gợi ý đáp án: Die Zielgruppe wird durch verlockende Angebote angelockt, aber viele kaufen aus einem Impuls, den sie später bereuen. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Zielgruppe wird durch verlockende Angebote angelockt, aber viele kaufen aus einem Impuls, den sie später bereuen.
+    item: de:item:b2w5-verlockend
+  - key: de:exercise:b2w5l3-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Der Influencer wirbt für ein überteuertes Produkt, und das ist keineswegs immer als Werbung gekennzeichnet.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Người có sức ảnh hưởng quảng cáo một sản phẩm quá đắt, và điều đó hoàn toàn không phải lúc nào cũng được ghi rõ là quảng cáo.
+        - Người ảnh hưởng quảng bá một món hàng giá quá cao, và việc ấy chẳng phải lúc nào cũng được đánh dấu là quảng cáo.
+        - Influencer quảng cáo cho một sản phẩm quá đắt, và không phải lúc nào cũng ghi rõ đó là quảng cáo.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Der Influencer wirbt für ein überteuertes Produkt, und das ist keineswegs immer als Werbung gekennzeichnet.\" nghĩa là: Người có sức ảnh hưởng quảng cáo một sản phẩm quá đắt, và điều đó hoàn toàn không phải lúc nào cũng được ghi rõ là quảng cáo. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Người có sức ảnh hưởng quảng cáo một sản phẩm quá đắt, và điều đó hoàn toàn không phải lúc nào cũng được ghi rõ là quảng cáo.
+    item: de:item:b2w5-influencer

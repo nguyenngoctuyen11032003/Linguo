@@ -1,0 +1,2120 @@
+# Học liệu unit B2W5 "Mở rộng vốn từ B2 (5): khoa học tự nhiên, y học nghiên cứu, quảng cáo – tiêu dùng, danh từ và tính từ trừu tượng (Wortschatz erweitern 5)" (mở rộng vốn từ, chương trình B2).
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+source: src:linguo-demo
+items:
+  - key: de:item:b2w5-atom
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Atom, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên tử
+      examples:
+        - target: Ein Atom ist extrem klein.
+          translation:
+            vi: Một nguyên tử cực kỳ nhỏ.
+  - key: de:item:b2w5-molekuel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Molekül, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: phân tử
+      examples:
+        - target: Wasser besteht aus Molekülen.
+          translation:
+            vi: Nước gồm các phân tử.
+  - key: de:item:b2w5-element
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Element, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: nguyên tố; yếu tố
+      examples:
+        - target: Sauerstoff ist ein chemisches Element.
+          translation:
+            vi: Ôxy là một nguyên tố hóa học.
+  - key: de:item:b2w5-chemikalie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Chemikalie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: hóa chất
+      examples:
+        - target: Diese Chemikalien sind giftig.
+          translation:
+            vi: Những hóa chất này độc hại.
+  - key: de:item:b2w5-reaktion
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Reaktion, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: phản ứng
+      examples:
+        - target: Die Reaktion läuft bei Raumtemperatur ab.
+          translation:
+            vi: Phản ứng diễn ra ở nhiệt độ phòng.
+  - key: de:item:b2w5-formel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Formel, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: công thức
+      examples:
+        - target: Die Formel für Wasser lautet H₂O.
+          translation:
+            vi: Công thức của nước là H₂O.
+  - key: de:item:b2w5-sauerstoff
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Sauerstoff (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ôxy
+      examples:
+        - target: Ohne Sauerstoff kann man nicht atmen.
+          translation:
+            vi: Không có ôxy người ta không thở được.
+  - key: de:item:b2w5-kohlenstoff
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kohlenstoff (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: cacbon
+      examples:
+        - target: Diamanten bestehen aus reinem Kohlenstoff.
+          translation:
+            vi: Kim cương gồm cacbon nguyên chất.
+  - key: de:item:b2w5-strahlung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Strahlung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bức xạ
+      examples:
+        - target: Die Strahlung war sehr gering.
+          translation:
+            vi: Bức xạ rất thấp.
+  - key: de:item:b2w5-schwerkraft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schwerkraft (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trọng lực
+      examples:
+        - target: Die Schwerkraft zieht Gegenstände zur Erde.
+          translation:
+            vi: Trọng lực kéo các vật xuống Trái Đất.
+  - key: de:item:b2w5-lichtgeschwindigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lichtgeschwindigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: vận tốc ánh sáng
+      examples:
+        - target: Nichts ist schneller als die Lichtgeschwindigkeit.
+          translation:
+            vi: Không gì nhanh hơn vận tốc ánh sáng.
+  - key: de:item:b2w5-zelle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Zelle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tế bào
+      examples:
+        - target: Der Körper besteht aus Milliarden von Zellen.
+          translation:
+            vi: Cơ thể gồm hàng tỷ tế bào.
+  - key: de:item:b2w5-gen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Gen, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: gen
+      examples:
+        - target: Das Gen bestimmt die Augenfarbe.
+          translation:
+            vi: Gen này quyết định màu mắt.
+  - key: de:item:b2w5-erbgut
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Erbgut (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: bộ gen, vật chất di truyền
+      examples:
+        - target: Das Erbgut des Menschen wurde entschlüsselt.
+          translation:
+            vi: Bộ gen người đã được giải mã.
+  - key: de:item:b2w5-evolution
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Evolution (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự tiến hóa
+      examples:
+        - target: Die Evolution dauert Millionen Jahre.
+          translation:
+            vi: Sự tiến hóa kéo dài hàng triệu năm.
+  - key: de:item:b2w5-organismus
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Organismus, Organismen
+      pos: danh từ
+    back:
+      meaning:
+        vi: cơ thể sống, sinh vật
+      examples:
+        - target: Jeder Organismus braucht Energie.
+          translation:
+            vi: Mọi sinh vật đều cần năng lượng.
+  - key: de:item:b2w5-virus
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Virus, Viren
+      pos: danh từ
+    back:
+      meaning:
+        vi: vi rút
+      examples:
+        - target: Dieses Virus verbreitet sich schnell.
+          translation:
+            vi: Loại vi rút này lây lan nhanh.
+  - key: de:item:b2w5-beobachtung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Beobachtung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự quan sát
+      examples:
+        - target: Die Beobachtung dauerte drei Wochen.
+          translation:
+            vi: Việc quan sát kéo dài ba tuần.
+  - key: de:item:b2w5-messwert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Messwert, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: giá trị đo
+      examples:
+        - target: Die Messwerte liegen im normalen Bereich.
+          translation:
+            vi: Các giá trị đo nằm trong phạm vi bình thường.
+  - key: de:item:b2w5-genauigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Genauigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: độ chính xác
+      examples:
+        - target: Auf die Genauigkeit der Messung kommt es an.
+          translation:
+            vi: Điều quan trọng là độ chính xác của phép đo.
+  - key: de:item:b2w5-analysieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: analysieren
+      pos: động từ
+    back:
+      meaning:
+        vi: phân tích
+      examples:
+        - target: Das Labor analysiert die Wasserproben.
+          translation:
+            vi: Phòng thí nghiệm phân tích các mẫu nước.
+  - key: de:item:b2w5-sich-vermehren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich vermehren
+      pos: động từ
+    back:
+      meaning:
+        vi: sinh sôi, nhân lên
+      examples:
+        - target: Bakterien vermehren sich bei Wärme schnell.
+          translation:
+            vi: Vi khuẩn sinh sôi nhanh khi trời ấm.
+  - key: de:item:b2w5-gefrieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gefrieren, gefriert, gefror, ist gefroren
+      pos: động từ
+    back:
+      meaning:
+        vi: đóng băng
+      examples:
+        - target: Wasser gefriert bei null Grad.
+          translation:
+            vi: Nước đóng băng ở không độ.
+  - key: de:item:b2w5-verbrennen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verbrennen, verbrennt, verbrannte, ist verbrannt
+      pos: động từ
+    back:
+      meaning:
+        vi: cháy; đốt
+      examples:
+        - target: Holz verbrennt schnell.
+          translation:
+            vi: Gỗ cháy nhanh.
+  - key: de:item:b2w5-aufloesen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: auflösen
+      pos: động từ
+    back:
+      meaning:
+        vi: hòa tan; giải tán
+      examples:
+        - target: Zucker löst sich in Wasser auf.
+          translation:
+            vi: Đường tan trong nước.
+  - key: de:item:b2w5-chemisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: chemisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc hóa học
+      examples:
+        - target: Es kommt zu einer chemischen Reaktion.
+          translation:
+            vi: Xảy ra một phản ứng hóa học.
+  - key: de:item:b2w5-physikalisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: physikalisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc vật lý
+      examples:
+        - target: Das ist ein physikalisches Gesetz.
+          translation:
+            vi: Đó là một định luật vật lý.
+  - key: de:item:b2w5-mikroskopisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: mikroskopisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: rất nhỏ, thuộc kính hiển vi
+      examples:
+        - target: Die Kristalle sind mikroskopisch klein.
+          translation:
+            vi: Các tinh thể nhỏ đến mức chỉ thấy bằng kính hiển vi.
+  - key: de:item:b2w5-genetisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: genetisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: thuộc di truyền
+      examples:
+        - target: Die Krankheit hat eine genetische Ursache.
+          translation:
+            vi: Căn bệnh có nguyên nhân di truyền.
+  - key: de:item:b2w5-gentechnik
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Gentechnik (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: công nghệ gen
+      examples:
+        - target: Die Gentechnik bietet Chancen und Risiken.
+          translation:
+            vi: Công nghệ gen mang lại cơ hội và rủi ro.
+  - key: de:item:b2w5-stammzelle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Stammzelle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: tế bào gốc
+      examples:
+        - target: Mit Stammzellen erforscht man neue Therapien.
+          translation:
+            vi: Người ta nghiên cứu liệu pháp mới bằng tế bào gốc.
+  - key: de:item:b2w5-placebo
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Placebo, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: giả dược
+      examples:
+        - target: Eine Gruppe bekam ein Placebo.
+          translation:
+            vi: Một nhóm nhận giả dược.
+  - key: de:item:b2w5-wirksamkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Wirksamkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: hiệu quả
+      examples:
+        - target: Die Wirksamkeit des Medikaments wurde getestet.
+          translation:
+            vi: Hiệu quả của loại thuốc đã được thử nghiệm.
+  - key: de:item:b2w5-krebs
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Krebs (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ung thư
+      examples:
+        - target: Früh erkannter Krebs ist oft heilbar.
+          translation:
+            vi: Ung thư được phát hiện sớm thường chữa khỏi được.
+  - key: de:item:b2w5-tumor
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Tumor, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khối u
+      examples:
+        - target: Der Tumor konnte entfernt werden.
+          translation:
+            vi: Khối u đã được cắt bỏ.
+  - key: de:item:b2w5-resistenz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Resistenz, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: tính kháng (thuốc)
+      examples:
+        - target: Die Resistenz gegen Antibiotika nimmt zu.
+          translation:
+            vi: Tình trạng kháng kháng sinh đang tăng.
+  - key: de:item:b2w5-antibiotikum
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Antibiotikum, Antibiotika
+      pos: danh từ
+    back:
+      meaning:
+        vi: thuốc kháng sinh
+      examples:
+        - target: Das Antibiotikum muss genau nach Vorschrift genommen werden.
+          translation:
+            vi: Thuốc kháng sinh phải dùng đúng theo chỉ dẫn.
+  - key: de:item:b2w5-pandemie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Pandemie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: đại dịch
+      examples:
+        - target: Die Pandemie veränderte das Leben vieler Menschen.
+          translation:
+            vi: Đại dịch đã làm thay đổi cuộc sống của nhiều người.
+  - key: de:item:b2w5-epidemie
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Epidemie, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: dịch bệnh (cục bộ)
+      examples:
+        - target: Eine Epidemie breitete sich in der Region aus.
+          translation:
+            vi: Một dịch bệnh lan ra trong khu vực.
+  - key: de:item:b2w5-immunsystem
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Immunsystem, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: hệ miễn dịch
+      examples:
+        - target: Gesunder Schlaf stärkt das Immunsystem.
+          translation:
+            vi: Giấc ngủ lành mạnh tăng cường hệ miễn dịch.
+  - key: de:item:b2w5-abwehrkraefte
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Abwehrkräfte (Pl.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sức đề kháng
+      examples:
+        - target: Vitamine stärken die Abwehrkräfte.
+          translation:
+            vi: Vitamin tăng cường sức đề kháng.
+  - key: de:item:b2w5-organspende
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Organspende, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc hiến tạng
+      examples:
+        - target: Viele Menschen tragen einen Ausweis für die Organspende bei sich.
+          translation:
+            vi: Nhiều người mang theo thẻ đăng ký hiến tạng.
+  - key: de:item:b2w5-transplantation
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Transplantation, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: ca ghép tạng
+      examples:
+        - target: Die Transplantation dauerte acht Stunden.
+          translation:
+            vi: Ca ghép tạng kéo dài tám tiếng.
+  - key: de:item:b2w5-patientenverfuegung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Patientenverfügung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: di chúc điều trị, chỉ dẫn của bệnh nhân
+      examples:
+        - target: In der Patientenverfügung steht, welche Behandlung er wünscht.
+          translation:
+            vi: Trong bản di chúc điều trị ghi rõ anh ấy muốn điều trị thế nào.
+  - key: de:item:b2w5-sterbehilfe
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sterbehilfe (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trợ tử
+      examples:
+        - target: Die Sterbehilfe ist ein ethisch schwieriges Thema.
+          translation:
+            vi: Trợ tử là một chủ đề khó về mặt đạo đức.
+  - key: de:item:b2w5-vorsorge
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Vorsorge (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phòng ngừa, chuẩn bị trước
+      examples:
+        - target: Vorsorge ist bei Herzkrankheiten besonders wichtig.
+          translation:
+            vi: Phòng ngừa đặc biệt quan trọng với bệnh tim.
+  - key: de:item:b2w5-lebensqualitaet
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Lebensqualität (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: chất lượng sống
+      examples:
+        - target: Nach der Operation hat sich seine Lebensqualität verbessert.
+          translation:
+            vi: Sau ca mổ chất lượng sống của anh ấy đã tốt lên.
+  - key: de:item:b2w5-erkranken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erkranken
+      pos: động từ
+    back:
+      meaning:
+        vi: mắc bệnh (an + Dativ)
+      examples:
+        - target: Viele sind an der Grippe erkrankt.
+          translation:
+            vi: Nhiều người đã mắc cúm.
+  - key: de:item:b2w5-sich-infizieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich infizieren
+      pos: động từ
+    back:
+      meaning:
+        vi: bị nhiễm (mit + Dativ)
+      examples:
+        - target: Er hat sich mit dem Virus infiziert.
+          translation:
+            vi: Anh ấy đã bị nhiễm vi rút.
+  - key: de:item:b2w5-eindaemmen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: eindämmen
+      pos: động từ
+    back:
+      meaning:
+        vi: kiềm chế, ngăn chặn
+      examples:
+        - target: Man muss die Ausbreitung eindämmen.
+          translation:
+            vi: Phải kiềm chế sự lây lan.
+  - key: de:item:b2w5-transplantieren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: transplantieren
+      pos: động từ
+    back:
+      meaning:
+        vi: ghép (cơ quan)
+      examples:
+        - target: Die Ärzte transplantieren eine Niere.
+          translation:
+            vi: Các bác sĩ ghép một quả thận.
+  - key: de:item:b2w5-toedlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: tödlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: gây chết người
+      examples:
+        - target: Die Krankheit verläuft oft tödlich.
+          translation:
+            vi: Căn bệnh thường gây tử vong.
+  - key: de:item:b2w5-erblich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: erblich
+      pos: tính từ
+    back:
+      meaning:
+        vi: di truyền
+      examples:
+        - target: Die Veranlagung ist erblich.
+          translation:
+            vi: Khuynh hướng này là di truyền.
+  - key: de:item:b2w5-unheilbar
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unheilbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể chữa khỏi
+      examples:
+        - target: Er leidet an einer unheilbaren Krankheit.
+          translation:
+            vi: Ông ấy mắc một căn bệnh không thể chữa khỏi.
+  - key: de:item:b2w5-boesartig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bösartig
+      pos: tính từ
+    back:
+      meaning:
+        vi: ác tính
+      examples:
+        - target: Der Tumor war bösartig.
+          translation:
+            vi: Khối u là ác tính.
+  - key: de:item:b2w5-werbespot
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Werbespot, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: đoạn quảng cáo (phim ngắn)
+      examples:
+        - target: Der Werbespot läuft im Fernsehen.
+          translation:
+            vi: Đoạn quảng cáo chiếu trên tivi.
+  - key: de:item:b2w5-werbebotschaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Werbebotschaft, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: thông điệp quảng cáo
+      examples:
+        - target: Die Werbebotschaft ist klar und einfach.
+          translation:
+            vi: Thông điệp quảng cáo rõ ràng và đơn giản.
+  - key: de:item:b2w5-werbeslogan
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Werbeslogan, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: khẩu hiệu quảng cáo
+      examples:
+        - target: Der Werbeslogan bleibt im Gedächtnis.
+          translation:
+            vi: Khẩu hiệu quảng cáo in đậm trong trí nhớ.
+  - key: de:item:b2w5-marktforschung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Marktforschung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: nghiên cứu thị trường
+      examples:
+        - target: Die Marktforschung zeigt, was Kunden wollen.
+          translation:
+            vi: Nghiên cứu thị trường cho thấy khách hàng muốn gì.
+  - key: de:item:b2w5-schleichwerbung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Schleichwerbung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: quảng cáo trá hình
+      examples:
+        - target: Schleichwerbung ist in Filmen verboten.
+          translation:
+            vi: Quảng cáo trá hình bị cấm trong phim.
+  - key: de:item:b2w5-produktplatzierung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Produktplatzierung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc đặt sản phẩm trong phim
+      examples:
+        - target: Die Produktplatzierung im Film war auffällig.
+          translation:
+            vi: Việc đặt sản phẩm trong phim rất lộ liễu.
+  - key: de:item:b2w5-influencer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Influencer, - / die Influencerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người có sức ảnh hưởng trên mạng
+      examples:
+        - target: Der Influencer hat Millionen Follower.
+          translation:
+            vi: Người có sức ảnh hưởng này có hàng triệu người theo dõi.
+  - key: de:item:b2w5-kaufanreiz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Kaufanreiz, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: yếu tố kích thích mua hàng
+      examples:
+        - target: Rabatte sind ein starker Kaufanreiz.
+          translation:
+            vi: Giảm giá là yếu tố kích thích mua hàng mạnh.
+  - key: de:item:b2w5-verlockung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Verlockung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cám dỗ
+      examples:
+        - target: Der Duft der Bäckerei ist eine Verlockung.
+          translation:
+            vi: Hương thơm của tiệm bánh là một sự cám dỗ.
+  - key: de:item:b2w5-impulskauf
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Impulskauf, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc mua theo cảm hứng
+      examples:
+        - target: Süßigkeiten an der Kasse fördern den Impulskauf.
+          translation:
+            vi: Kẹo ở quầy thanh toán thúc đẩy việc mua theo cảm hứng.
+  - key: de:item:b2w5-statussymbol
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Statussymbol, -e
+      pos: danh từ
+    back:
+      meaning:
+        vi: biểu tượng địa vị
+      examples:
+        - target: Für manche ist das Auto ein Statussymbol.
+          translation:
+            vi: Với vài người ô tô là một biểu tượng địa vị.
+  - key: de:item:b2w5-markenbewusstsein
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Markenbewusstsein (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: ý thức về thương hiệu
+      examples:
+        - target: Jugendliche haben oft ein starkes Markenbewusstsein.
+          translation:
+            vi: Thanh thiếu niên thường có ý thức thương hiệu mạnh.
+  - key: de:item:b2w5-trend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Trend, -s
+      pos: danh từ
+    back:
+      meaning:
+        vi: xu hướng
+      examples:
+        - target: Vegane Produkte sind ein neuer Trend.
+          translation:
+            vi: Sản phẩm thuần chay là một xu hướng mới.
+  - key: de:item:b2w5-kundenbindung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Kundenbindung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc giữ chân khách hàng
+      examples:
+        - target: Rabattkarten dienen der Kundenbindung.
+          translation:
+            vi: Thẻ giảm giá phục vụ việc giữ chân khách hàng.
+  - key: de:item:b2w5-mogelpackung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mogelpackung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: bao bì đánh lừa
+      examples:
+        - target: Die Chipstüte ist eine Mogelpackung, sie ist halb leer.
+          translation:
+            vi: Gói khoai tây chiên là bao bì đánh lừa, nó trống một nửa.
+  - key: de:item:b2w5-abofalle
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Abofalle, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: bẫy thuê bao
+      examples:
+        - target: Vorsicht vor der Abofalle im Internet!
+          translation:
+            vi: Hãy cẩn thận bẫy thuê bao trên mạng!
+  - key: de:item:b2w5-preisnachlass
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Preisnachlass, ¨-e
+      pos: danh từ
+    back:
+      meaning:
+        vi: khoản giảm giá
+      examples:
+        - target: Bei Barzahlung gibt es einen Preisnachlass.
+          translation:
+            vi: Thanh toán tiền mặt được giảm giá.
+  - key: de:item:b2w5-verbraucherschutz
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Verbraucherschutz (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: việc bảo vệ người tiêu dùng
+      examples:
+        - target: Der Verbraucherschutz hilft bei Streitfällen.
+          translation:
+            vi: Cơ quan bảo vệ người tiêu dùng giúp khi có tranh chấp.
+  - key: de:item:b2w5-werben
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: werben, wirbt, warb, hat geworben
+      pos: động từ
+    back:
+      meaning:
+        vi: quảng cáo; chiêu mộ (für + Akk)
+      examples:
+        - target: Die Firma wirbt mit niedrigen Preisen.
+          translation:
+            vi: Công ty quảng cáo bằng giá thấp.
+  - key: de:item:b2w5-anlocken
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anlocken
+      pos: động từ
+    back:
+      meaning:
+        vi: thu hút, dụ
+      examples:
+        - target: Billige Angebote locken Kunden an.
+          translation:
+            vi: Ưu đãi rẻ thu hút khách hàng.
+  - key: de:item:b2w5-verfuehren
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verführen
+      pos: động từ
+    back:
+      meaning:
+        vi: cám dỗ, quyến rũ
+      examples:
+        - target: Die Werbung verführt zum Kauf.
+          translation:
+            vi: Quảng cáo cám dỗ người ta mua hàng.
+  - key: de:item:b2w5-sich-leisten
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: sich leisten
+      pos: động từ
+    back:
+      meaning:
+        vi: đủ khả năng mua
+      examples:
+        - target: Das kann ich mir nicht leisten.
+          translation:
+            vi: Tôi không đủ khả năng mua điều đó.
+  - key: de:item:b2w5-anhaeufen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: anhäufen
+      pos: động từ
+    back:
+      meaning:
+        vi: tích trữ, chất đống
+      examples:
+        - target: Er hat viele Schulden angehäuft.
+          translation:
+            vi: Anh ta đã tích tụ nhiều khoản nợ.
+  - key: de:item:b2w5-ueberteuert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überteuert
+      pos: tính từ
+    back:
+      meaning:
+        vi: quá đắt
+      examples:
+        - target: Die Getränke am Flughafen sind überteuert.
+          translation:
+            vi: Đồ uống ở sân bay quá đắt.
+  - key: de:item:b2w5-kostspielig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: kostspielig
+      pos: tính từ
+    back:
+      meaning:
+        vi: tốn kém
+      examples:
+        - target: Der Umbau war ein kostspieliges Projekt.
+          translation:
+            vi: Việc cải tạo là một dự án tốn kém.
+  - key: de:item:b2w5-verlockend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: verlockend
+      pos: tính từ
+    back:
+      meaning:
+        vi: hấp dẫn, đầy cám dỗ
+      examples:
+        - target: Das Angebot klingt verlockend.
+          translation:
+            vi: Lời đề nghị nghe rất hấp dẫn.
+  - key: de:item:b2w5-werbewirksam
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: werbewirksam
+      pos: tính từ
+    back:
+      meaning:
+        vi: hiệu quả về mặt quảng cáo
+      examples:
+        - target: Der Spot war werbewirksam.
+          translation:
+            vi: Đoạn quảng cáo có hiệu quả.
+  - key: de:item:b2w5-abhaengigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Abhängigkeit, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phụ thuộc
+      examples:
+        - target: Die Abhängigkeit von Öl ist groß.
+          translation:
+            vi: Sự phụ thuộc vào dầu mỏ rất lớn.
+  - key: de:item:b2w5-aufmerksamkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Aufmerksamkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chú ý
+      examples:
+        - target: Der Vorfall hat viel Aufmerksamkeit erregt.
+          translation:
+            vi: Vụ việc đã thu hút nhiều sự chú ý.
+  - key: de:item:b2w5-auseinandersetzung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Auseinandersetzung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: cuộc tranh luận; sự xem xét kỹ
+      examples:
+        - target: Es kam zu einer heftigen Auseinandersetzung.
+          translation:
+            vi: Đã xảy ra một cuộc tranh cãi gay gắt.
+  - key: de:item:b2w5-bemerkung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bemerkung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: lời nhận xét
+      examples:
+        - target: Seine Bemerkung war nicht böse gemeint.
+          translation:
+            vi: Lời nhận xét của anh ấy không có ý xấu.
+  - key: de:item:b2w5-bevorzugung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bevorzugung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự ưu ái
+      examples:
+        - target: Eine Bevorzugung einzelner Kunden ist nicht erlaubt.
+          translation:
+            vi: Việc ưu ái từng khách hàng riêng lẻ là không được phép.
+  - key: de:item:b2w5-bindung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Bindung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự gắn bó
+      examples:
+        - target: Eine enge Bindung zu den Eltern ist wichtig.
+          translation:
+            vi: Sự gắn bó chặt chẽ với bố mẹ rất quan trọng.
+  - key: de:item:b2w5-dringlichkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Dringlichkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tính cấp bách
+      examples:
+        - target: Die Dringlichkeit des Problems wurde unterschätzt.
+          translation:
+            vi: Tính cấp bách của vấn đề bị đánh giá thấp.
+  - key: de:item:b2w5-eignung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Eignung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phù hợp
+      examples:
+        - target: Die Eignung des Bewerbers wird geprüft.
+          translation:
+            vi: Sự phù hợp của ứng viên sẽ được kiểm tra.
+  - key: de:item:b2w5-einigung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Einigung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự thống nhất, thỏa thuận
+      examples:
+        - target: Nach langen Verhandlungen gab es eine Einigung.
+          translation:
+            vi: Sau những cuộc đàm phán dài đã có sự thống nhất.
+  - key: de:item:b2w5-entfaltung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Entfaltung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự phát triển, bộc lộ
+      examples:
+        - target: Die Schule fördert die Entfaltung der Kinder.
+          translation:
+            vi: Nhà trường thúc đẩy sự phát triển của trẻ em.
+  - key: de:item:b2w5-erwartung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Erwartung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự kỳ vọng
+      examples:
+        - target: Meine Erwartungen wurden übertroffen.
+          translation:
+            vi: Kỳ vọng của tôi đã được vượt qua.
+  - key: de:item:b2w5-fuersorge
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Fürsorge (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự chăm sóc, quan tâm
+      examples:
+        - target: Die Fürsorge für ältere Menschen ist wichtig.
+          translation:
+            vi: Sự chăm sóc cho người cao tuổi rất quan trọng.
+  - key: de:item:b2w5-initiative
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Initiative, -n
+      pos: danh từ
+    back:
+      meaning:
+        vi: sáng kiến, sự chủ động
+      examples:
+        - target: Die Initiative ging von den Schülern aus.
+          translation:
+            vi: Sáng kiến xuất phát từ học sinh.
+  - key: de:item:b2w5-mitverantwortung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Mitverantwortung (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: trách nhiệm chung
+      examples:
+        - target: Alle tragen Mitverantwortung für das Ergebnis.
+          translation:
+            vi: Mọi người cùng chịu trách nhiệm về kết quả.
+  - key: de:item:b2w5-nachfolger
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: der Nachfolger, - / die Nachfolgerin, -nen
+      pos: danh từ
+    back:
+      meaning:
+        vi: người kế nhiệm
+      examples:
+        - target: Der Nachfolger übernimmt das Amt im Mai.
+          translation:
+            vi: Người kế nhiệm nhận chức vào tháng Năm.
+  - key: de:item:b2w5-selbststaendigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Selbstständigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: tính tự lập; việc làm tự do
+      examples:
+        - target: Mit zwölf lernen Kinder Selbstständigkeit.
+          translation:
+            vi: Ở tuổi mười hai trẻ học tính tự lập.
+  - key: de:item:b2w5-sorgfalt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Sorgfalt (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự cẩn thận
+      examples:
+        - target: Mit großer Sorgfalt prüft sie jedes Detail.
+          translation:
+            vi: Cô ấy kiểm tra từng chi tiết với sự cẩn thận.
+  - key: de:item:b2w5-unabhaengigkeit
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Unabhängigkeit (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự độc lập
+      examples:
+        - target: Die Unabhängigkeit der Presse ist wichtig.
+          translation:
+            vi: Sự độc lập của báo chí rất quan trọng.
+  - key: de:item:b2w5-unterstuetzung
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: die Unterstützung, -en
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hỗ trợ
+      examples:
+        - target: Wir danken Ihnen für Ihre Unterstützung.
+          translation:
+            vi: Chúng tôi cảm ơn sự hỗ trợ của ông/bà.
+  - key: de:item:b2w5-vertrauen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Vertrauen (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: niềm tin
+      examples:
+        - target: Ich habe Vertrauen zu ihm.
+          translation:
+            vi: Tôi có niềm tin vào anh ấy.
+  - key: de:item:b2w5-verstaendnis
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: das Verständnis (Sg.)
+      pos: danh từ
+    back:
+      meaning:
+        vi: sự hiểu biết; sự thông cảm
+      examples:
+        - target: Haben Sie Verständnis für meine Lage?
+          translation:
+            vi: Ông/bà có thông cảm cho hoàn cảnh của tôi không?
+  - key: de:item:b2w5-auffaellig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: auffällig
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ thấy, đáng chú ý
+      examples:
+        - target: Es gibt eine auffällige Übereinstimmung.
+          translation:
+            vi: Có một sự trùng hợp đáng chú ý.
+  - key: de:item:b2w5-ausgepraegt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausgeprägt
+      pos: tính từ
+    back:
+      meaning:
+        vi: rõ rệt, phát triển mạnh
+      examples:
+        - target: Sie hat einen ausgeprägten Sinn für Humor.
+          translation:
+            vi: Cô ấy có khiếu hài hước rất rõ nét.
+  - key: de:item:b2w5-ausschlaggebend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: ausschlaggebend
+      pos: tính từ
+    back:
+      meaning:
+        vi: mang tính quyết định
+      examples:
+        - target: Das war der ausschlaggebende Grund.
+          translation:
+            vi: Đó là lý do mang tính quyết định.
+  - key: de:item:b2w5-bestaendig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: beständig
+      pos: tính từ
+    back:
+      meaning:
+        vi: ổn định, bền vững
+      examples:
+        - target: Das Wetter ist nicht beständig.
+          translation:
+            vi: Thời tiết không ổn định.
+  - key: de:item:b2w5-bemerkenswert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: bemerkenswert
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng chú ý, đáng kể
+      examples:
+        - target: Das ist ein bemerkenswertes Ergebnis.
+          translation:
+            vi: Đó là một kết quả đáng chú ý.
+  - key: de:item:b2w5-dauerhaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: dauerhaft
+      pos: tính từ
+    back:
+      meaning:
+        vi: lâu dài, bền
+      examples:
+        - target: Wir suchen eine dauerhafte Lösung.
+          translation:
+            vi: Chúng tôi tìm một giải pháp lâu dài.
+  - key: de:item:b2w5-drastisch
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: drastisch
+      pos: tính từ
+    back:
+      meaning:
+        vi: quyết liệt, mạnh mẽ
+      examples:
+        - target: Die Regierung kündigte drastische Maßnahmen an.
+          translation:
+            vi: Chính phủ thông báo các biện pháp quyết liệt.
+  - key: de:item:b2w5-eindeutig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: eindeutig
+      pos: tính từ
+    back:
+      meaning:
+        vi: rõ ràng, không thể nhầm
+      examples:
+        - target: Das Ergebnis ist eindeutig.
+          translation:
+            vi: Kết quả rất rõ ràng.
+  - key: de:item:b2w5-einschneidend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: einschneidend
+      pos: tính từ
+    back:
+      meaning:
+        vi: sâu sắc, có tác động lớn
+      examples:
+        - target: Die Reform bringt einschneidende Änderungen.
+          translation:
+            vi: Cải cách mang lại những thay đổi sâu sắc.
+  - key: de:item:b2w5-folgenschwer
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: folgenschwer
+      pos: tính từ
+    back:
+      meaning:
+        vi: để lại hậu quả nặng nề
+      examples:
+        - target: Das war ein folgenschwerer Fehler.
+          translation:
+            vi: Đó là một sai lầm để lại hậu quả nặng nề.
+  - key: de:item:b2w5-fundiert
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: fundiert
+      pos: tính từ
+    back:
+      meaning:
+        vi: có cơ sở vững chắc
+      examples:
+        - target: Er hat ein fundiertes Wissen.
+          translation:
+            vi: Anh ấy có kiến thức vững chắc.
+  - key: de:item:b2w5-gaengig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gängig
+      pos: tính từ
+    back:
+      meaning:
+        vi: thông dụng, phổ biến
+      examples:
+        - target: Das ist eine gängige Methode.
+          translation:
+            vi: Đó là một phương pháp phổ biến.
+  - key: de:item:b2w5-geschickt
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: geschickt
+      pos: tính từ
+    back:
+      meaning:
+        vi: khéo léo
+      examples:
+        - target: Sie hat geschickt verhandelt.
+          translation:
+            vi: Cô ấy đã đàm phán khéo léo.
+  - key: de:item:b2w5-gewissenhaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: gewissenhaft
+      pos: tính từ
+    back:
+      meaning:
+        vi: chu đáo, tận tâm
+      examples:
+        - target: Er erledigt seine Arbeit gewissenhaft.
+          translation:
+            vi: Anh ấy làm công việc rất tận tâm.
+  - key: de:item:b2w5-hilfreich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: hilfreich
+      pos: tính từ
+    back:
+      meaning:
+        vi: hữu ích
+      examples:
+        - target: Der Hinweis war sehr hilfreich.
+          translation:
+            vi: Lời gợi ý rất hữu ích.
+  - key: de:item:b2w5-lueckenhaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: lückenhaft
+      pos: tính từ
+    back:
+      meaning:
+        vi: có chỗ thiếu sót
+      examples:
+        - target: Die Dokumentation ist lückenhaft.
+          translation:
+            vi: Tài liệu có nhiều chỗ thiếu.
+  - key: de:item:b2w5-nachteilig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: nachteilig
+      pos: tính từ
+    back:
+      meaning:
+        vi: bất lợi
+      examples:
+        - target: Die Änderung ist für uns nachteilig.
+          translation:
+            vi: Sự thay đổi này bất lợi cho chúng tôi.
+  - key: de:item:b2w5-notgedrungen
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: notgedrungen
+      pos: tính từ
+    back:
+      meaning:
+        vi: bất đắc dĩ, chẳng đặng đừng
+      examples:
+        - target: Er musste notgedrungen zustimmen.
+          translation:
+            vi: Anh ấy buộc phải đồng ý.
+  - key: de:item:b2w5-oberflaechlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: oberflächlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: hời hợt, bề ngoài
+      examples:
+        - target: Der Bericht ist sehr oberflächlich.
+          translation:
+            vi: Báo cáo rất hời hợt.
+  - key: de:item:b2w5-plausibel
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: plausibel
+      pos: tính từ
+    back:
+      meaning:
+        vi: hợp lý
+      examples:
+        - target: Die Erklärung klingt plausibel.
+          translation:
+            vi: Lời giải thích nghe hợp lý.
+  - key: de:item:b2w5-rechtmaessig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: rechtmäßig
+      pos: tính từ
+    back:
+      meaning:
+        vi: hợp pháp
+      examples:
+        - target: Der Antrag ist rechtmäßig.
+          translation:
+            vi: Đơn đề nghị này hợp pháp.
+  - key: de:item:b2w5-schluessig
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: schlüssig
+      pos: tính từ
+    back:
+      meaning:
+        vi: chặt chẽ, logic
+      examples:
+        - target: Das Argument ist schlüssig.
+          translation:
+            vi: Lập luận này chặt chẽ.
+  - key: de:item:b2w5-spuerbar
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: spürbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: cảm nhận rõ, rõ rệt
+      examples:
+        - target: Die Preise sind spürbar gestiegen.
+          translation:
+            vi: Giá cả đã tăng thấy rõ.
+  - key: de:item:b2w5-tiefgreifend
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: tiefgreifend
+      pos: tính từ
+    back:
+      meaning:
+        vi: sâu rộng
+      examples:
+        - target: Es gab eine tiefgreifende Veränderung.
+          translation:
+            vi: Đã có một sự thay đổi sâu rộng.
+  - key: de:item:b2w5-ueberschaubar
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: überschaubar
+      pos: tính từ
+    back:
+      meaning:
+        vi: dễ quan sát, trong tầm kiểm soát
+      examples:
+        - target: Die Kosten sind überschaubar.
+          translation:
+            vi: Chi phí trong tầm kiểm soát.
+  - key: de:item:b2w5-unentgeltlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unentgeltlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: miễn phí, không thù lao
+      examples:
+        - target: Die Beratung ist unentgeltlich.
+          translation:
+            vi: Việc tư vấn miễn phí.
+  - key: de:item:b2w5-unverzichtbar
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: unverzichtbar
+      pos: tính từ
+    back:
+      meaning:
+        vi: không thể thiếu
+      examples:
+        - target: Dieses Werkzeug ist unverzichtbar.
+          translation:
+            vi: Dụng cụ này không thể thiếu.
+  - key: de:item:b2w5-willkuerlich
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: willkürlich
+      pos: tính từ
+    back:
+      meaning:
+        vi: tùy tiện
+      examples:
+        - target: Die Auswahl war willkürlich.
+          translation:
+            vi: Việc lựa chọn là tùy tiện.
+  - key: de:item:b2w5-zweifelhaft
+    type: vocab
+    level: b2
+    difficulty: 3
+    skill_tags:
+      - vocabulary
+    front:
+      text: zweifelhaft
+      pos: tính từ
+    back:
+      meaning:
+        vi: đáng nghi, đáng ngờ
+      examples:
+        - target: Seine Aussage ist zweifelhaft.
+          translation:
+            vi: Lời khai của anh ta đáng ngờ.

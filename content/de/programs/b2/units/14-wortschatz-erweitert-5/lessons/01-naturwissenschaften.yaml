@@ -1,0 +1,305 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w5-naturwissenschaften
+order_index: 1
+level: b2
+title:
+  vi: "Khoa học tự nhiên: hóa, lý, sinh (Naturwissenschaften)"
+objectives:
+  - vi: Gọi tên các khái niệm cơ bản trong hóa học, vật lý và sinh học.
+  - vi: "Đọc hiểu một đoạn văn khoa học phổ thông: Zelle, Gen, Strahlung, Reaktion."
+  - vi: Dùng các động từ analysieren, sich vermehren, gefrieren, verbrennen và các tính từ chemisch, physikalisch, biologisch.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w4-verben-b2-4
+items:
+  - item: de:item:b2w5-atom
+  - item: de:item:b2w5-molekuel
+  - item: de:item:b2w5-element
+  - item: de:item:b2w5-chemikalie
+  - item: de:item:b2w5-reaktion
+  - item: de:item:b2w5-formel
+  - item: de:item:b2w5-sauerstoff
+  - item: de:item:b2w5-kohlenstoff
+  - item: de:item:b2w5-strahlung
+  - item: de:item:b2w5-schwerkraft
+  - item: de:item:b2w5-lichtgeschwindigkeit
+  - item: de:item:b2w5-zelle
+  - item: de:item:b2w5-gen
+  - item: de:item:b2w5-erbgut
+  - item: de:item:b2w5-evolution
+  - item: de:item:b2w5-organismus
+  - item: de:item:b2w5-virus
+  - item: de:item:b2w5-beobachtung
+  - item: de:item:b2w5-messwert
+  - item: de:item:b2w5-genauigkeit
+  - item: de:item:b2w5-analysieren
+  - item: de:item:b2w5-sich-vermehren
+  - item: de:item:b2w5-gefrieren
+  - item: de:item:b2w5-verbrennen
+  - item: de:item:b2w5-aufloesen
+  - item: de:item:b2w5-chemisch
+  - item: de:item:b2w5-physikalisch
+  - item: de:item:b2w5-mikroskopisch
+  - item: de:item:b2w5-genetisch
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu một bài báo khoa học phổ thông, nêu được kết quả thí nghiệm đơn giản và dùng đúng các thuật ngữ cơ bản của khoa học tự nhiên.
+  - type: explain
+    text:
+      vi: "Hóa học và vật lý: das Atom, das Molekül, das Element, die Chemikalie, die Reaktion, die Formel, der Sauerstoff, der Kohlenstoff, die Strahlung, die Schwerkraft, die Lichtgeschwindigkeit. Phần lớn là danh từ giống đực/cái/trung theo từng từ; hãy học cả mạo từ: das Atom (Atome), das Molekül (Moleküle)."
+  - type: explain
+    text:
+      vi: "Sinh học: die Zelle, das Gen, das Erbgut (bộ gen, số ít), die Evolution, der Organismus (số nhiều Organismen), das Virus (số nhiều Viren; cũng nói der Virus). Quan sát và đo lường: die Beobachtung, der Messwert, die Genauigkeit (số ít). Ví dụ: Die Messwerte stimmen mit der Theorie überein."
+  - type: explain
+    text:
+      vi: "Động từ: analysieren, sich vermehren (sinh sôi), gefrieren (gefriert, gefror, ist gefroren), verbrennen (verbrennt, verbrannte, ist/hat verbrannt: cháy/đốt), auflösen. Tính từ: chemisch, physikalisch, biologisch, mikroskopisch, genetisch. Ví dụ: Wasser gefriert bei null Grad. Die Bakterien vermehren sich schnell."
+  - type: deep_explain
+    text:
+      vi: "Verbrennen không tách và có hai cách dùng: không có tân ngữ nghĩa là cháy (ist verbrannt), có tân ngữ nghĩa là đốt (hat verbrannt). Das Virus (nhưng trong tiếng nói người ta hay nói der Virus) có số nhiều die Viren. Das Atom và das Molekül là giống trung. Genauigkeit và Messwert thường xuất hiện cùng nhau trong báo cáo thí nghiệm."
+  - type: example
+    target: Ein Atom ist extrem klein.
+    target_lang: de
+    translation:
+      vi: Một nguyên tử cực kỳ nhỏ.
+    note:
+      vi: das Atom = nguyên tử.
+  - type: example
+    target: Wasser besteht aus Molekülen.
+    target_lang: de
+    translation:
+      vi: Nước gồm các phân tử.
+    note:
+      vi: das Molekül = phân tử.
+  - type: example
+    target: Sauerstoff ist ein chemisches Element.
+    target_lang: de
+    translation:
+      vi: Ôxy là một nguyên tố hóa học.
+    note:
+      vi: das Element = nguyên tố; yếu tố.
+  - type: example
+    target: Diese Chemikalien sind giftig.
+    target_lang: de
+    translation:
+      vi: Những hóa chất này độc hại.
+    note:
+      vi: die Chemikalie = hóa chất.
+  - type: common_mistake
+    wrong: Wasser ist bei null Grad gefrieren.
+    right: Wasser gefriert bei null Grad.
+    target_lang: de
+    note:
+      vi: "Dùng động từ chia: gefriert; không dùng sein + nguyên thể."
+  - type: common_mistake
+    wrong: Die Viruse vermehren sich schnell.
+    right: Die Viren vermehren sich schnell.
+    target_lang: de
+    note:
+      vi: Số nhiều của das Virus là die Viren.
+  - type: summary
+    points:
+      - vi: das Atom, das Molekül, das Element, die Chemikalie, die Reaktion, die Formel, der Sauerstoff, der Kohlenstoff, die Strahlung, die Schwerkraft.
+      - vi: die Zelle, das Gen, das Erbgut, die Evolution, der Organismus (Organismen), das Virus (Viren), die Beobachtung, der Messwert, die Genauigkeit.
+      - vi: analysieren, sich vermehren, gefrieren (ist gefroren), verbrennen, auflösen; chemisch, physikalisch, biologisch, mikroskopisch, genetisch.
+exercises:
+  - key: de:exercise:b2w5l1-listen-gefrieren
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-gefrieren
+    prompt:
+      audio_asset_id: null
+      fallback_text: Wasser gefriert bei null Grad.
+      options:
+        - { id: d61, text: Vi khuẩn sinh sôi nhanh khi trời ấm., lang: vi }
+        - { id: rwf, text: Một nguyên tử cực kỳ nhỏ., lang: vi }
+        - { id: n0p, text: Đó là một định luật vật lý., lang: vi }
+        - { id: ayd, text: Nước đóng băng ở không độ., lang: vi }
+    answer:
+      correct_option_id: ayd
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Nước đóng băng ở không độ.". Từ khoá là gefrieren (đóng băng); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Nước đóng băng ở không độ.
+  - key: de:exercise:b2w5l1-mcq-vi-de-mikroskopisch
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w5-mikroskopisch
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "rất nhỏ, thuộc kính hiển vi"?
+      stem_lang: vi
+      options:
+        - { id: nux, text: mikroskopisch, lang: de }
+        - { id: hnc, text: chemisch, lang: de }
+        - { id: bd9, text: physikalisch, lang: de }
+        - { id: y13, text: genetisch, lang: de }
+    answer:
+      correct_option_id: nux
+    explanation:
+      vi: "mikroskopisch nghĩa là \"rất nhỏ, thuộc kính hiển vi\". Ví dụ: Die Kristalle sind mikroskopisch klein. (Các tinh thể nhỏ đến mức chỉ thấy bằng kính hiển vi.)"
+    display_answer: mikroskopisch
+  - key: de:exercise:b2w5l1-mcq-de-vi-element
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-element
+    prompt:
+      stem: "\"das Element\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: tg0, text: hóa chất, lang: vi }
+        - { id: may, text: "bộ gen, vật chất di truyền", lang: vi }
+        - { id: unp, text: nguyên tố; yếu tố, lang: vi }
+        - { id: biq, text: công thức, lang: vi }
+    answer:
+      correct_option_id: unp
+    explanation:
+      vi: "das Element nghĩa là \"nguyên tố; yếu tố\". Ví dụ: Sauerstoff ist ein chemisches Element. (Ôxy là một nguyên tố hóa học.)"
+    display_answer: nguyên tố; yếu tố
+  - key: de:exercise:b2w5l1-mcq-artikel-molekuel
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-molekuel
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Molekül\" (phân tử): ___ Molekül"
+      stem_lang: vi
+      options:
+        - { id: vuf, text: der, lang: de }
+        - { id: d1e, text: ein, lang: de }
+        - { id: est, text: das, lang: de }
+        - { id: dn3, text: die, lang: de }
+    answer:
+      correct_option_id: est
+    explanation:
+      vi: "Molekül là danh từ giống trung (das): das Molekül; số nhiều: die Moleküle. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: das
+  - key: de:exercise:b2w5l1-tr-word-lichtgeschwindigkeit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-lichtgeschwindigkeit
+    prompt:
+      source_text: vận tốc ánh sáng (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Lichtgeschwindigkeit
+    known_wrong:
+      - answer: der Lichtgeschwindigkeit
+        feedback_vi: Lichtgeschwindigkeit là giống cái, nên là die Lichtgeschwindigkeit.
+        error_tag: article
+      - answer: das Lichtgeschwindigkeit
+        feedback_vi: Lichtgeschwindigkeit là giống cái, nên là die Lichtgeschwindigkeit.
+        error_tag: article
+    explanation:
+      vi: "\"vận tốc ánh sáng\" trong tiếng Đức là die Lichtgeschwindigkeit (số nhiều: không dùng). Ví dụ: Nichts ist schneller als die Lichtgeschwindigkeit."
+    display_answer: die Lichtgeschwindigkeit
+  - key: de:exercise:b2w5l1-tr-word-analysieren
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-analysieren
+    prompt:
+      source_text: phân tích (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - analysieren
+    explanation:
+      vi: "\"phân tích\" trong tiếng Đức là analysieren. Ví dụ: Das Labor analysiert die Wasserproben."
+    display_answer: analysieren
+  - key: de:exercise:b2w5l1-fill-plural-strahlung
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-strahlung
+    prompt:
+      template: "Singular: die Strahlung · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Strahlungen
+    known_wrong:
+      - answer: Strahlung
+        feedback_vi: Strahlung là dạng số ít; số nhiều là Strahlungen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Strahlung là die Strahlungen (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Strahlung · Plural: die Strahlungen"
+  - key: de:exercise:b2w5l1-mcq-luecke-atom
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-atom
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Một nguyên tử cực kỳ nhỏ.\": Ein ___ ist extrem klein."
+      stem_lang: vi
+      options:
+        - { id: r2z, text: Molekülen, lang: de }
+        - { id: sor, text: Organismus, lang: de }
+        - { id: ypv, text: Messwerte, lang: de }
+        - { id: b6p, text: Atom, lang: de }
+    answer:
+      correct_option_id: b6p
+    explanation:
+      vi: "Câu có nghĩa \"Một nguyên tử cực kỳ nhỏ.\" nên cần Atom (das Atom: nguyên tử). Molekülen = phân tử; Messwerte = giá trị đo; Organismus = cơ thể sống, sinh vật không đúng nghĩa của câu."
+    display_answer: Atom
+  - key: de:exercise:b2w5l1-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Die Forscher haben die Zellen unter dem Mikroskop beobachtet und festgestellt, dass sie sich schnell vermehren.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Die Forscher haben die Zellen unter dem Mikroskop beobachtet und festgestellt, dass sie sich schnell vermehren.
+        - Die Forscher haben die Zellen unter dem Mikroskop beobachtet und festgestellt, dass sie sich rasch vermehren.
+        - Unter dem Mikroskop haben die Forscher die Zellen beobachtet und festgestellt, dass sie sich schnell vermehren.
+    explanation:
+      vi: "Gợi ý đáp án: Die Forscher haben die Zellen unter dem Mikroskop beobachtet und festgestellt, dass sie sich schnell vermehren. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Die Forscher haben die Zellen unter dem Mikroskop beobachtet und festgestellt, dass sie sich schnell vermehren.
+    item: de:item:b2w5-zelle
+  - key: de:exercise:b2w5l1-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Bei dieser chemischen Reaktion entsteht Wärme, und die Messwerte zeigen eine hohe Genauigkeit.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Trong phản ứng hóa học này sinh ra nhiệt, và các giá trị đo cho thấy độ chính xác cao.
+        - Ở phản ứng hóa học này xuất hiện nhiệt và số liệu đo cho thấy độ chính xác cao.
+        - Phản ứng hóa học này tỏa nhiệt, và các số đo cho thấy độ chính xác cao.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Bei dieser chemischen Reaktion entsteht Wärme, und die Messwerte zeigen eine hohe Genauigkeit.\" nghĩa là: Trong phản ứng hóa học này sinh ra nhiệt, và các giá trị đo cho thấy độ chính xác cao. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Trong phản ứng hóa học này sinh ra nhiệt, và các giá trị đo cho thấy độ chính xác cao.
+    item: de:item:b2w5-reaktion

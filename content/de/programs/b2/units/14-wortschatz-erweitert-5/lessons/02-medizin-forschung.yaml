@@ -1,0 +1,302 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w5-medizin-forschung
+order_index: 2
+level: b2
+title:
+  vi: Y học, nghiên cứu và dịch bệnh (Medizin und Forschung)
+objectives:
+  - vi: Nói về nghiên cứu y học, thử nghiệm thuốc, dịch bệnh và ghép tạng.
+  - vi: "Hiểu các từ: Zulassung, Wirksamkeit, Pandemie, Immunsystem, Transplantation."
+  - vi: Dùng các động từ erkranken, sich infizieren, eindämmen, transplantieren và các tính từ tödlich, erblich, unheilbar.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w5-naturwissenschaften
+items:
+  - item: de:item:b2w5-gentechnik
+  - item: de:item:b2w5-stammzelle
+  - item: de:item:b2w5-placebo
+  - item: de:item:b2w5-wirksamkeit
+  - item: de:item:b2w5-krebs
+  - item: de:item:b2w5-tumor
+  - item: de:item:b2w5-resistenz
+  - item: de:item:b2w5-antibiotikum
+  - item: de:item:b2w5-pandemie
+  - item: de:item:b2w5-epidemie
+  - item: de:item:b2w5-immunsystem
+  - item: de:item:b2w5-abwehrkraefte
+  - item: de:item:b2w5-organspende
+  - item: de:item:b2w5-transplantation
+  - item: de:item:b2w5-patientenverfuegung
+  - item: de:item:b2w5-sterbehilfe
+  - item: de:item:b2w5-vorsorge
+  - item: de:item:b2w5-lebensqualitaet
+  - item: de:item:b2w5-erkranken
+  - item: de:item:b2w5-sich-infizieren
+  - item: de:item:b2w5-eindaemmen
+  - item: de:item:b2w5-transplantieren
+  - item: de:item:b2w5-toedlich
+  - item: de:item:b2w5-erblich
+  - item: de:item:b2w5-unheilbar
+  - item: de:item:b2w5-boesartig
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đọc hiểu bài báo về nghiên cứu y học và dịch bệnh, nêu ý kiến về thử nghiệm thuốc, hiến tạng và các vấn đề đạo đức y tế.
+  - type: explain
+    text:
+      vi: "Nghiên cứu: die Gentechnik, die Stammzelle, das Placebo, die Wirksamkeit, die Zulassung (việc cấp phép lưu hành thuốc), die Studie. Bệnh: der Krebs (số ít), der Tumor, die Resistenz (sự kháng thuốc), das Antibiotikum (số nhiều Antibiotika), die Pandemie, die Epidemie, das Immunsystem, die Abwehrkräfte (số nhiều)."
+  - type: explain
+    text:
+      vi: "Điều trị và đạo đức: die Organspende, die Transplantation, die Patientenverfügung (di chúc điều trị), die Sterbehilfe, die Vorsorge, die Lebensqualität. Động từ: erkranken (an + Dativ; ist erkrankt), sich infizieren (mit + Dativ), eindämmen (kiềm chế), transplantieren. Tính từ: tödlich, erblich, unheilbar, bösartig."
+  - type: explain
+    text:
+      vi: "Cấu trúc điển hình: Er ist an Krebs erkrankt. Sie hat sich mit dem Virus infiziert. Die Pandemie konnte eingedämmt werden. Der Tumor ist bösartig. Ở Đức, vấn đề Organspende và Sterbehilfe là chủ đề đạo đức thường được tranh luận, và người dân có thể ghi Patientenverfügung."
+  - type: deep_explain
+    text:
+      vi: Erkranken dùng sein ở Perfekt và đi với an + Dativ; còn krank werden gần nghĩa. Das Antibiotikum có số nhiều Antibiotika. Resistenz (die Resistenz gegen Antibiotika) là sự kháng thuốc, vấn đề lớn của y học hiện đại. Placebo là thuốc giả không có hoạt chất, dùng để so sánh trong thử nghiệm lâm sàng.
+  - type: example
+    target: Die Gentechnik bietet Chancen und Risiken.
+    target_lang: de
+    translation:
+      vi: Công nghệ gen mang lại cơ hội và rủi ro.
+    note:
+      vi: die Gentechnik = công nghệ gen.
+  - type: example
+    target: Mit Stammzellen erforscht man neue Therapien.
+    target_lang: de
+    translation:
+      vi: Người ta nghiên cứu liệu pháp mới bằng tế bào gốc.
+    note:
+      vi: die Stammzelle = tế bào gốc.
+  - type: example
+    target: Eine Gruppe bekam ein Placebo.
+    target_lang: de
+    translation:
+      vi: Một nhóm nhận giả dược.
+    note:
+      vi: das Placebo = giả dược.
+  - type: example
+    target: Die Wirksamkeit des Medikaments wurde getestet.
+    target_lang: de
+    translation:
+      vi: Hiệu quả của loại thuốc đã được thử nghiệm.
+    note:
+      vi: die Wirksamkeit = hiệu quả.
+  - type: common_mistake
+    wrong: Er hat an Krebs erkrankt.
+    right: Er ist an Krebs erkrankt.
+    target_lang: de
+    note:
+      vi: Erkranken dùng sein ở Perfekt.
+  - type: common_mistake
+    wrong: Die Bakterien sind resistent von Antibiotika.
+    right: Die Bakterien sind resistent gegen Antibiotika.
+    target_lang: de
+    note:
+      vi: Resistent đi với gegen + Akkusativ.
+  - type: summary
+    points:
+      - vi: die Gentechnik, die Stammzelle, das Placebo, die Wirksamkeit, die Zulassung, der Krebs, der Tumor, die Resistenz, das Antibiotikum (Antibiotika).
+      - vi: die Pandemie, die Epidemie, das Immunsystem, die Abwehrkräfte (Pl.), die Organspende, die Transplantation, die Patientenverfügung, die Sterbehilfe, die Vorsorge, die Lebensqualität.
+      - vi: erkranken (ist erkrankt, an + Dativ), sich infizieren, eindämmen, transplantieren; tödlich, erblich, unheilbar, bösartig.
+exercises:
+  - key: de:exercise:b2w5l2-listen-antibiotikum
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-antibiotikum
+    prompt:
+      audio_asset_id: null
+      fallback_text: Das Antibiotikum muss genau nach Vorschrift genommen werden.
+      options:
+        - { id: np0, text: Vitamin tăng cường sức đề kháng., lang: vi }
+        - { id: qx3, text: Thuốc kháng sinh phải dùng đúng theo chỉ dẫn., lang: vi }
+        - { id: bv6, text: Trợ tử là một chủ đề khó về mặt đạo đức., lang: vi }
+        - { id: ktj, text: Nhiều người đã mắc cúm., lang: vi }
+    answer:
+      correct_option_id: qx3
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Thuốc kháng sinh phải dùng đúng theo chỉ dẫn.". Từ khoá là das Antibiotikum (thuốc kháng sinh); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Thuốc kháng sinh phải dùng đúng theo chỉ dẫn.
+  - key: de:exercise:b2w5l2-mcq-vi-de-sterbehilfe
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w5-sterbehilfe
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "trợ tử"?
+      stem_lang: vi
+      options:
+        - { id: zuh, text: die Transplantation, lang: de }
+        - { id: tfj, text: die Sterbehilfe, lang: de }
+        - { id: v82, text: die Vorsorge, lang: de }
+        - { id: j81, text: die Patientenverfügung, lang: de }
+    answer:
+      correct_option_id: tfj
+    explanation:
+      vi: "die Sterbehilfe nghĩa là \"trợ tử\". Ví dụ: Die Sterbehilfe ist ein ethisch schwieriges Thema. (Trợ tử là một chủ đề khó về mặt đạo đức.)"
+    display_answer: die Sterbehilfe
+  - key: de:exercise:b2w5l2-mcq-de-vi-sich-infizieren
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-sich-infizieren
+    prompt:
+      stem: "\"sich infizieren\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: jft, text: công nghệ gen, lang: vi }
+        - { id: n1t, text: ghép (cơ quan), lang: vi }
+        - { id: yen, text: khối u, lang: vi }
+        - { id: sv4, text: bị nhiễm (mit + Dativ), lang: vi }
+    answer:
+      correct_option_id: sv4
+    explanation:
+      vi: "sich infizieren nghĩa là \"bị nhiễm (mit + Dativ)\". Ví dụ: Er hat sich mit dem Virus infiziert. (Anh ấy đã bị nhiễm vi rút.)"
+    display_answer: bị nhiễm (mit + Dativ)
+  - key: de:exercise:b2w5l2-mcq-artikel-vorsorge
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-vorsorge
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Vorsorge\" (sự phòng ngừa, chuẩn bị trước): ___ Vorsorge"
+      stem_lang: vi
+      options:
+        - { id: fmv, text: der, lang: de }
+        - { id: t6f, text: das, lang: de }
+        - { id: d4s, text: ein, lang: de }
+        - { id: oz2, text: die, lang: de }
+    answer:
+      correct_option_id: oz2
+    explanation:
+      vi: "Vorsorge là danh từ giống cái (die): die Vorsorge (không dùng ở số nhiều). \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w5l2-tr-word-wirksamkeit
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-wirksamkeit
+    prompt:
+      source_text: hiệu quả (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Wirksamkeit
+    known_wrong:
+      - answer: der Wirksamkeit
+        feedback_vi: Wirksamkeit là giống cái, nên là die Wirksamkeit.
+        error_tag: article
+      - answer: das Wirksamkeit
+        feedback_vi: Wirksamkeit là giống cái, nên là die Wirksamkeit.
+        error_tag: article
+    explanation:
+      vi: "\"hiệu quả\" trong tiếng Đức là die Wirksamkeit (số nhiều: không dùng). Ví dụ: Die Wirksamkeit des Medikaments wurde getestet."
+    display_answer: die Wirksamkeit
+  - key: de:exercise:b2w5l2-tr-word-eindaemmen
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-eindaemmen
+    prompt:
+      source_text: kiềm chế, ngăn chặn (động từ, dạng nguyên thể)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - eindämmen
+    explanation:
+      vi: "\"kiềm chế, ngăn chặn\" trong tiếng Đức là eindämmen. Ví dụ: Man muss die Ausbreitung eindämmen."
+    display_answer: eindämmen
+  - key: de:exercise:b2w5l2-fill-plural-stammzelle
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-stammzelle
+    prompt:
+      template: "Singular: die Stammzelle · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 13 }
+    answer:
+      blanks:
+        b1:
+          - Stammzellen
+    known_wrong:
+      - answer: Stammzelle
+        feedback_vi: Stammzelle là dạng số ít; số nhiều là Stammzellen.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Stammzelle là die Stammzellen (ký hiệu trong từ điển: -n). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Stammzelle · Plural: die Stammzellen"
+  - key: de:exercise:b2w5l2-mcq-luecke-gentechnik
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-gentechnik
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Công nghệ gen mang lại cơ hội và rủi ro.\": Die ___ bietet Chancen und Risiken."
+      stem_lang: vi
+      options:
+        - { id: otf, text: Gentechnik, lang: de }
+        - { id: o78, text: Wirksamkeit, lang: de }
+        - { id: vyw, text: Vorsorge, lang: de }
+        - { id: i7m, text: Immunsystem, lang: de }
+    answer:
+      correct_option_id: otf
+    explanation:
+      vi: "Câu có nghĩa \"Công nghệ gen mang lại cơ hội và rủi ro.\" nên cần Gentechnik (die Gentechnik: công nghệ gen). Wirksamkeit = hiệu quả; Vorsorge = sự phòng ngừa, chuẩn bị trước; Immunsystem = hệ miễn dịch không đúng nghĩa của câu."
+    display_answer: Gentechnik
+  - key: de:exercise:b2w5l2-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Weil das Virus sich schnell verbreitet hat, ist die Pandemie nur mit großem Aufwand eingedämmt worden.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Weil das Virus sich schnell verbreitet hat, ist die Pandemie nur mit großem Aufwand eingedämmt worden.
+        - Weil sich das Virus schnell verbreitet hat, ist die Pandemie nur mit großem Aufwand eingedämmt worden.
+        - Die Pandemie ist nur mit großem Aufwand eingedämmt worden, weil sich das Virus schnell verbreitet hat.
+    explanation:
+      vi: "Gợi ý đáp án: Weil das Virus sich schnell verbreitet hat, ist die Pandemie nur mit großem Aufwand eingedämmt worden. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Weil das Virus sich schnell verbreitet hat, ist die Pandemie nur mit großem Aufwand eingedämmt worden.
+    item: de:item:b2w5-pandemie
+  - key: de:exercise:b2w5l2-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Viele Menschen sind an einer unheilbaren Krankheit erkrankt und denken über eine Patientenverfügung nach.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Nhiều người mắc một căn bệnh không thể chữa khỏi và nghĩ đến việc lập di chúc điều trị.
+        - Nhiều người bị một bệnh không chữa được và đang cân nhắc việc lập bản di chúc điều trị.
+        - Rất nhiều người đã mắc bệnh nan y và suy nghĩ về việc làm một văn bản chỉ dẫn điều trị.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Viele Menschen sind an einer unheilbaren Krankheit erkrankt und denken über eine Patientenverfügung nach.\" nghĩa là: Nhiều người mắc một căn bệnh không thể chữa khỏi và nghĩ đến việc lập di chúc điều trị. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Nhiều người mắc một căn bệnh không thể chữa khỏi và nghĩ đến việc lập di chúc điều trị.
+    item: de:item:b2w5-patientenverfuegung

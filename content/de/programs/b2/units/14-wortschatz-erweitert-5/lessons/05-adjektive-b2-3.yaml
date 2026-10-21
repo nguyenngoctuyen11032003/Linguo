@@ -1,0 +1,242 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w5-adjektive-b2-3
+order_index: 5
+level: b2
+title:
+  vi: "Tính từ B2 (3): đánh giá, mức độ chắc chắn, thuyết phục (Adjektive 3)"
+objectives:
+  - vi: Dùng thêm nhiều tính từ để đánh giá lập luận, kết quả và mức độ tác động.
+  - vi: "Phân biệt các cặp: eindeutig – plausibel – schlüssig, ausschlaggebend – entscheidend, folgenschwer – einschneidend."
+  - vi: Nhận biết đuôi -bar, -haft, -ig, -lich, -los, -sam của tính từ.
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w5-nomen-b2-3
+items:
+  - item: de:item:b2w5-auffaellig
+  - item: de:item:b2w5-ausgepraegt
+  - item: de:item:b2w5-ausschlaggebend
+  - item: de:item:b2w5-bestaendig
+  - item: de:item:b2w5-bemerkenswert
+  - item: de:item:b2w5-dauerhaft
+  - item: de:item:b2w5-drastisch
+  - item: de:item:b2w5-eindeutig
+  - item: de:item:b2w5-einschneidend
+  - item: de:item:b2w5-folgenschwer
+  - item: de:item:b2w5-fundiert
+  - item: de:item:b2w5-gaengig
+  - item: de:item:b2w5-geschickt
+  - item: de:item:b2w5-gewissenhaft
+  - item: de:item:b2w5-hilfreich
+  - item: de:item:b2w5-lueckenhaft
+  - item: de:item:b2w5-nachteilig
+  - item: de:item:b2w5-notgedrungen
+  - item: de:item:b2w5-oberflaechlich
+  - item: de:item:b2w5-plausibel
+  - item: de:item:b2w5-rechtmaessig
+  - item: de:item:b2w5-schluessig
+  - item: de:item:b2w5-spuerbar
+  - item: de:item:b2w5-tiefgreifend
+  - item: de:item:b2w5-ueberschaubar
+  - item: de:item:b2w5-unentgeltlich
+  - item: de:item:b2w5-unverzichtbar
+  - item: de:item:b2w5-willkuerlich
+  - item: de:item:b2w5-zweifelhaft
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn đánh giá được một lập luận, một kế hoạch hay một kết quả bằng nhiều tính từ chính xác hơn và hiểu sự khác nhau giữa các tính từ gần nghĩa.
+  - type: explain
+    text:
+      vi: "Tính từ về mức độ tác động: einschneidend (sâu sắc), tiefgreifend (sâu rộng), drastisch (quyết liệt), folgenschwer (nghiêm trọng về hậu quả), spürbar (cảm nhận rõ), ausgeprägt (rõ rệt), ausschlaggebend (mang tính quyết định). Ví dụ: Die Reform hatte tiefgreifende Folgen. Die Preise sind spürbar gestiegen."
+  - type: explain
+    text:
+      vi: "Tính từ về lập luận và độ tin cậy: plausibel (hợp lý), schlüssig (chặt chẽ), fundiert (có cơ sở), eindeutig (rõ ràng, không thể nhầm), zweifelhaft (đáng nghi), oberflächlich (hời hợt), lückenhaft (có chỗ thiếu), willkürlich (tùy tiện). Ví dụ: Seine Argumentation ist schlüssig. Die Quelle ist zweifelhaft."
+  - type: explain
+    text:
+      vi: "Tính từ khác: rechtmäßig (hợp pháp), unentgeltlich (miễn phí), unverzichtbar, überschaubar (dễ quan sát, trong tầm kiểm soát), beständig (ổn định, bền), dauerhaft, gängig (thông dụng), geschickt, gewissenhaft, hilfreich, bemerkenswert, nachteilig. Ví dụ: Die Lage ist überschaubar. Das Angebot ist unentgeltlich."
+  - type: deep_explain
+    text:
+      vi: "Eindeutig nhấn mạnh sự không mơ hồ: ein eindeutiges Ergebnis. Plausibel là nghe có lý; schlüssig còn mạnh hơn, nghĩa là lập luận chặt chẽ, không mâu thuẫn. Notgedrungen nghĩa là bị bắt buộc, chẳng đặng đừng: Er musste notgedrungen zustimmen. Oberflächlich đối lập với gründlich. Willkürlich nhấn mạnh sự không có căn cứ."
+  - type: example
+    target: Es gibt eine auffällige Übereinstimmung.
+    target_lang: de
+    translation:
+      vi: Có một sự trùng hợp đáng chú ý.
+    note:
+      vi: auffällig = dễ thấy, đáng chú ý.
+  - type: example
+    target: Sie hat einen ausgeprägten Sinn für Humor.
+    target_lang: de
+    translation:
+      vi: Cô ấy có khiếu hài hước rất rõ nét.
+    note:
+      vi: ausgeprägt = rõ rệt, phát triển mạnh.
+  - type: example
+    target: Das war der ausschlaggebende Grund.
+    target_lang: de
+    translation:
+      vi: Đó là lý do mang tính quyết định.
+    note:
+      vi: ausschlaggebend = mang tính quyết định.
+  - type: example
+    target: Das Wetter ist nicht beständig.
+    target_lang: de
+    translation:
+      vi: Thời tiết không ổn định.
+    note:
+      vi: beständig = ổn định, bền vững.
+  - type: common_mistake
+    wrong: Die Entscheidung war ausschlaggebende für den Erfolg.
+    right: Die Entscheidung war ausschlaggebend für den Erfolg.
+    target_lang: de
+    note:
+      vi: Sau sein, tính từ không đổi đuôi.
+  - type: common_mistake
+    wrong: Die Quelle ist zweifelhaft, ob sie stimmt.
+    right: Es ist zweifelhaft, ob die Quelle stimmt.
+    target_lang: de
+    note:
+      vi: Zweifelhaft đi với es ist … ob; hoặc nói Die Quelle ist zweifelhaft.
+  - type: summary
+    points:
+      - vi: einschneidend, tiefgreifend, drastisch, folgenschwer, spürbar, ausgeprägt, ausschlaggebend, entscheidend, auffällig.
+      - vi: plausibel, schlüssig, fundiert, eindeutig, zweifelhaft, oberflächlich, lückenhaft, willkürlich.
+      - vi: rechtmäßig, unentgeltlich, unverzichtbar, überschaubar, beständig, dauerhaft, gängig, geschickt, gewissenhaft, hilfreich, bemerkenswert, nachteilig, notgedrungen.
+exercises:
+  - key: de:exercise:b2w5l5-listen-gewissenhaft
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-gewissenhaft
+    prompt:
+      audio_asset_id: null
+      fallback_text: Er erledigt seine Arbeit gewissenhaft.
+      options:
+        - { id: mml, text: Đơn đề nghị này hợp pháp., lang: vi }
+        - { id: fas, text: Anh ấy làm công việc rất tận tâm., lang: vi }
+        - { id: nam, text: Báo cáo rất hời hợt., lang: vi }
+        - { id: kd6, text: Kết quả rất rõ ràng., lang: vi }
+    answer:
+      correct_option_id: fas
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Anh ấy làm công việc rất tận tâm.". Từ khoá là gewissenhaft (chu đáo, tận tâm); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Anh ấy làm công việc rất tận tâm.
+  - key: de:exercise:b2w5l5-mcq-vi-de-folgenschwer
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w5-folgenschwer
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "để lại hậu quả nặng nề"?
+      stem_lang: vi
+      options:
+        - { id: v9z, text: rechtmäßig, lang: de }
+        - { id: hnu, text: gängig, lang: de }
+        - { id: q4n, text: folgenschwer, lang: de }
+        - { id: gsi, text: nachteilig, lang: de }
+    answer:
+      correct_option_id: q4n
+    explanation:
+      vi: "folgenschwer nghĩa là \"để lại hậu quả nặng nề\". Ví dụ: Das war ein folgenschwerer Fehler. (Đó là một sai lầm để lại hậu quả nặng nề.)"
+    display_answer: folgenschwer
+  - key: de:exercise:b2w5l5-mcq-de-vi-eindeutig
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-eindeutig
+    prompt:
+      stem: "\"eindeutig\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: b1z, text: hợp lý, lang: vi }
+        - { id: obi, text: có chỗ thiếu sót, lang: vi }
+        - { id: j5p, text: để lại hậu quả nặng nề, lang: vi }
+        - { id: i7p, text: "rõ ràng, không thể nhầm", lang: vi }
+    answer:
+      correct_option_id: i7p
+    explanation:
+      vi: "eindeutig nghĩa là \"rõ ràng, không thể nhầm\". Ví dụ: Das Ergebnis ist eindeutig. (Kết quả rất rõ ràng.)"
+    display_answer: rõ ràng, không thể nhầm
+  - key: de:exercise:b2w5l5-tr-word-gaengig
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-gaengig
+    prompt:
+      source_text: thông dụng, phổ biến (tính từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - gängig
+    explanation:
+      vi: "\"thông dụng, phổ biến\" trong tiếng Đức là gängig. Ví dụ: Das ist eine gängige Methode."
+    display_answer: gängig
+  - key: de:exercise:b2w5l5-mcq-luecke-auffaellig
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-auffaellig
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Có một sự trùng hợp đáng chú ý.\": Es gibt eine ___ Übereinstimmung."
+      stem_lang: vi
+      options:
+        - { id: a12, text: gewissenhaft, lang: de }
+        - { id: p5m, text: beständig, lang: de }
+        - { id: rpu, text: unverzichtbar, lang: de }
+        - { id: xpz, text: auffällige, lang: de }
+    answer:
+      correct_option_id: xpz
+    explanation:
+      vi: "Câu có nghĩa \"Có một sự trùng hợp đáng chú ý.\" nên cần auffällige (auffällig: dễ thấy, đáng chú ý). gewissenhaft = chu đáo, tận tâm; beständig = ổn định, bền vững; unverzichtbar = không thể thiếu không đúng nghĩa của câu."
+    display_answer: auffällige
+  - key: de:exercise:b2w5l5-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Seine Argumentation ist schlüssig und fundiert, während die Gegenseite oberflächlich und lückenhaft argumentiert.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Seine Argumentation ist schlüssig und fundiert, während die Gegenseite oberflächlich und lückenhaft argumentiert.
+        - Seine Argumentation ist schlüssig und fundiert, die Gegenseite hingegen argumentiert oberflächlich und lückenhaft.
+        - Seine Argumentation ist schlüssig und fundiert, wohingegen die Gegenseite oberflächlich und lückenhaft argumentiert.
+    explanation:
+      vi: "Gợi ý đáp án: Seine Argumentation ist schlüssig und fundiert, während die Gegenseite oberflächlich und lückenhaft argumentiert. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Seine Argumentation ist schlüssig und fundiert, während die Gegenseite oberflächlich und lückenhaft argumentiert.
+    item: de:item:b2w5-fundiert
+  - key: de:exercise:b2w5l5-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Die Reform hatte tiefgreifende Folgen, und die Preise sind spürbar gestiegen, obwohl das Angebot dauerhaft unentgeltlich bleiben sollte.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Cải cách có hậu quả sâu rộng, và giá đã tăng rõ rệt, dù dịch vụ lẽ ra phải miễn phí lâu dài.
+        - Cuộc cải cách để lại hậu quả sâu xa và giá cả tăng rõ rệt, mặc dù ưu đãi đáng lẽ phải miễn phí lâu dài.
+        - Cải cách có những hệ quả sâu rộng và giá đã tăng thấy rõ, mặc dù dịch vụ phải luôn miễn phí.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Die Reform hatte tiefgreifende Folgen, und die Preise sind spürbar gestiegen, obwohl das Angebot dauerhaft unentgeltlich bleiben sollte.\" nghĩa là: Cải cách có hậu quả sâu rộng, và giá đã tăng rõ rệt, dù dịch vụ lẽ ra phải miễn phí lâu dài. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Cải cách có hậu quả sâu rộng, và giá đã tăng rõ rệt, dù dịch vụ lẽ ra phải miễn phí lâu dài.
+    item: de:item:b2w5-dauerhaft

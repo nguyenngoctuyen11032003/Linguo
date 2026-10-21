@@ -1,0 +1,304 @@
+schema_version: 1
+demo: false
+status: published
+reviewed_by: Claude (AI) — ủy quyền bởi Nguyễn Ngọc Tuyền; chưa qua giáo viên tiếng Đức bản ngữ
+reviewed_at: 2026-10-20T12:00:00+07:00
+key: de:lesson:b2w5-nomen-b2-3
+order_index: 4
+level: b2
+title:
+  vi: "Danh từ B2 (3): thái độ, quan hệ, khả năng (Nomen 3)"
+objectives:
+  - vi: Dùng đúng giống, số nhiều và giới từ của khoảng hai mươi danh từ trừu tượng.
+  - vi: Nhận biết đuôi -ung, -heit, -keit, -schaft cho giống cái; Nachfolger, Eignung, Bindung.
+  - vi: "Dùng các cụm: in Abhängigkeit von, zur Einigung kommen, Rücksicht nehmen."
+estimated_minutes: 16
+skills:
+  - vocabulary
+  - reading
+prerequisites:
+  - de:lesson:b2w5-konsum-werbung
+items:
+  - item: de:item:b2w5-abhaengigkeit
+  - item: de:item:b2w5-aufmerksamkeit
+  - item: de:item:b2w5-auseinandersetzung
+  - item: de:item:b2w5-bemerkung
+  - item: de:item:b2w5-bevorzugung
+  - item: de:item:b2w5-bindung
+  - item: de:item:b2w5-dringlichkeit
+  - item: de:item:b2w5-eignung
+  - item: de:item:b2w5-einigung
+  - item: de:item:b2w5-entfaltung
+  - item: de:item:b2w5-erwartung
+  - item: de:item:b2w5-fuersorge
+  - item: de:item:b2w5-initiative
+  - item: de:item:b2w5-mitverantwortung
+  - item: de:item:b2w5-nachfolger
+  - item: de:item:b2w5-selbststaendigkeit
+  - item: de:item:b2w5-sorgfalt
+  - item: de:item:b2w5-unabhaengigkeit
+  - item: de:item:b2w5-unterstuetzung
+  - item: de:item:b2w5-vertrauen
+  - item: de:item:b2w5-verstaendnis
+body:
+  - type: objective
+    text:
+      vi: Sau bài này, bạn dùng đúng thêm nhiều danh từ trừu tượng về thái độ, quan hệ và khả năng, kể cả các giới từ và cụm cố định thường gặp trong bài viết.
+  - type: explain
+    text:
+      vi: "Quan hệ và thái độ: die Abhängigkeit (sự phụ thuộc; von + Dativ), die Auseinandersetzung (sự tranh luận, xung đột; mit + Dativ), die Bindung, die Initiative, die Mitverantwortung, das Vertrauen (số ít; in/auf + Akk), das Verständnis (số ít; für + Akk), die Fürsorge, die Selbstständigkeit, die Unabhängigkeit. Ví dụ: Sie hat die Initiative ergriffen."
+  - type: explain
+    text:
+      vi: "Khả năng và điều kiện: die Eignung (sự phù hợp), die Dringlichkeit (tính cấp bách), die Einigung (sự thống nhất), die Erwartung, die Bevorzugung, die Entfaltung, die Aufmerksamkeit, die Sorgfalt, die Unterstützung, die Bemerkung, die Gewohnheit, der Nachfolger. Cụm: zu einer Einigung kommen, die Aufmerksamkeit auf etwas lenken."
+  - type: explain
+    text:
+      vi: "Giống và số nhiều: hầu hết đuôi -ung, -heit, -keit là giống cái; Vertrauen và Verständnis là giống trung, chỉ số ít; der Nachfolger giống đực (fem. die Nachfolgerin). Số nhiều: die Auseinandersetzungen, die Bindungen, die Erwartungen, die Gewohnheiten; Sorgfalt, Fürsorge, Aufmerksamkeit chỉ số ít."
+  - type: deep_explain
+    text:
+      vi: "Die Auseinandersetzung có hai nghĩa: sự tranh luận hay xung đột (eine politische Auseinandersetzung), và sự xem xét kỹ (die Auseinandersetzung mit einem Thema). Abhängigkeit thường đi với von: die Abhängigkeit von Energie. Das Verständnis còn nghĩa là sự thông cảm: Ich habe Verständnis für deine Situation. Cẩn thận với Eignung (sự phù hợp): Die Eignung für den Beruf wird geprüft."
+  - type: example
+    target: Die Abhängigkeit von Öl ist groß.
+    target_lang: de
+    translation:
+      vi: Sự phụ thuộc vào dầu mỏ rất lớn.
+    note:
+      vi: die Abhängigkeit = sự phụ thuộc.
+  - type: example
+    target: Der Vorfall hat viel Aufmerksamkeit erregt.
+    target_lang: de
+    translation:
+      vi: Vụ việc đã thu hút nhiều sự chú ý.
+    note:
+      vi: die Aufmerksamkeit = sự chú ý.
+  - type: example
+    target: Es kam zu einer heftigen Auseinandersetzung.
+    target_lang: de
+    translation:
+      vi: Đã xảy ra một cuộc tranh cãi gay gắt.
+    note:
+      vi: die Auseinandersetzung = cuộc tranh luận; sự xem xét kỹ.
+  - type: example
+    target: Seine Bemerkung war nicht böse gemeint.
+    target_lang: de
+    translation:
+      vi: Lời nhận xét của anh ấy không có ý xấu.
+    note:
+      vi: die Bemerkung = lời nhận xét.
+  - type: common_mistake
+    wrong: Das Vertrauen zu meine Kollegen ist groß.
+    right: Das Vertrauen zu meinen Kollegen ist groß.
+    target_lang: de
+    note:
+      vi: "Zu + Dativ số nhiều: meinen Kollegen."
+  - type: common_mistake
+    wrong: Ich habe Verständnis von deiner Situation.
+    right: Ich habe Verständnis für deine Situation.
+    target_lang: de
+    note:
+      vi: Verständnis đi với für + Akkusativ.
+  - type: summary
+    points:
+      - vi: die Abhängigkeit (von), die Auseinandersetzung (mit), die Bindung, die Initiative, die Mitverantwortung, das Vertrauen, das Verständnis (für), die Fürsorge.
+      - vi: die Eignung, die Dringlichkeit, die Einigung, die Erwartung, die Bevorzugung, die Entfaltung, die Aufmerksamkeit, die Sorgfalt, die Unterstützung.
+      - vi: "die Bemerkung, die Gewohnheit, die Selbstständigkeit, die Unabhängigkeit, der Nachfolger; cụm: zu einer Einigung kommen, Initiative ergreifen."
+exercises:
+  - key: de:exercise:b2w5l4-listen-erwartung
+    type: listen
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-erwartung
+    prompt:
+      audio_asset_id: null
+      fallback_text: Meine Erwartungen wurden übertroffen.
+      options:
+        - { id: o3d, text: Kỳ vọng của tôi đã được vượt qua., lang: vi }
+        - { id: bws, text: Sáng kiến xuất phát từ học sinh., lang: vi }
+        - { id: eq3, text: Việc ưu ái từng khách hàng riêng lẻ là không được phép., lang: vi }
+        - { id: tkm, text: Cô ấy kiểm tra từng chi tiết với sự cẩn thận., lang: vi }
+    answer:
+      correct_option_id: o3d
+    explanation:
+      vi: Câu bạn nghe có nghĩa "Kỳ vọng của tôi đã được vượt qua.". Từ khoá là die Erwartung (sự kỳ vọng); các câu còn lại nói về những từ khác trong bài.
+    display_answer: Kỳ vọng của tôi đã được vượt qua.
+  - key: de:exercise:b2w5l4-mcq-vi-de-verstaendnis
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 1
+    item: de:item:b2w5-verstaendnis
+    prompt:
+      stem: Từ nào trong tiếng Đức có nghĩa là "sự hiểu biết; sự thông cảm"?
+      stem_lang: vi
+      options:
+        - { id: bci, text: die Auseinandersetzung, lang: de }
+        - { id: l0c, text: die Aufmerksamkeit, lang: de }
+        - { id: hwn, text: die Initiative, lang: de }
+        - { id: es7, text: das Verständnis, lang: de }
+    answer:
+      correct_option_id: es7
+    explanation:
+      vi: "das Verständnis nghĩa là \"sự hiểu biết; sự thông cảm\". Ví dụ: Haben Sie Verständnis für meine Lage? (Ông/bà có thông cảm cho hoàn cảnh của tôi không?)"
+    display_answer: das Verständnis
+  - key: de:exercise:b2w5l4-mcq-de-vi-dringlichkeit
+    type: mcq
+    stage: recognition
+    answer_lang: vi
+    difficulty: 1
+    item: de:item:b2w5-dringlichkeit
+    prompt:
+      stem: "\"die Dringlichkeit\" có nghĩa là gì?"
+      stem_lang: vi
+      options:
+        - { id: hwh, text: lời nhận xét, lang: vi }
+        - { id: lyw, text: sự kỳ vọng, lang: vi }
+        - { id: jmk, text: tính cấp bách, lang: vi }
+        - { id: h9b, text: người kế nhiệm, lang: vi }
+    answer:
+      correct_option_id: jmk
+    explanation:
+      vi: "die Dringlichkeit nghĩa là \"tính cấp bách\". Ví dụ: Die Dringlichkeit des Problems wurde unterschätzt. (Tính cấp bách của vấn đề bị đánh giá thấp.)"
+    display_answer: tính cấp bách
+  - key: de:exercise:b2w5l4-mcq-artikel-auseinandersetzung
+    type: mcq
+    stage: recognition
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-auseinandersetzung
+    prompt:
+      stem: "Chọn mạo từ xác định đúng của danh từ số ít \"Auseinandersetzung\" (cuộc tranh luận): ___ Auseinandersetzung"
+      stem_lang: vi
+      options:
+        - { id: cwa, text: ein, lang: de }
+        - { id: zo4, text: das, lang: de }
+        - { id: cyr, text: die, lang: de }
+        - { id: zof, text: der, lang: de }
+    answer:
+      correct_option_id: cyr
+    explanation:
+      vi: "Auseinandersetzung là danh từ giống cái (die): die Auseinandersetzung; số nhiều: die Auseinandersetzungen. \"ein\" là mạo từ không xác định nên không hợp với yêu cầu. Luôn học danh từ cùng mạo từ."
+    display_answer: die
+  - key: de:exercise:b2w5l4-tr-word-sorgfalt
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-sorgfalt
+    prompt:
+      source_text: sự cẩn thận (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Sorgfalt
+    known_wrong:
+      - answer: der Sorgfalt
+        feedback_vi: Sorgfalt là giống cái, nên là die Sorgfalt.
+        error_tag: article
+      - answer: das Sorgfalt
+        feedback_vi: Sorgfalt là giống cái, nên là die Sorgfalt.
+        error_tag: article
+    explanation:
+      vi: "\"sự cẩn thận\" trong tiếng Đức là die Sorgfalt (số nhiều: không dùng). Ví dụ: Mit großer Sorgfalt prüft sie jedes Detail."
+    display_answer: die Sorgfalt
+  - key: de:exercise:b2w5l4-tr-word-eignung
+    type: translate
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-eignung
+    prompt:
+      source_text: sự phù hợp (danh từ, viết cả mạo từ)
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - die Eignung
+    known_wrong:
+      - answer: der Eignung
+        feedback_vi: Eignung là giống cái, nên là die Eignung.
+        error_tag: article
+      - answer: das Eignung
+        feedback_vi: Eignung là giống cái, nên là die Eignung.
+        error_tag: article
+    explanation:
+      vi: "\"sự phù hợp\" trong tiếng Đức là die Eignung (số nhiều: không dùng). Ví dụ: Die Eignung des Bewerbers wird geprüft."
+    display_answer: die Eignung
+  - key: de:exercise:b2w5l4-fill-plural-abhaengigkeit
+    type: fill_blank
+    stage: recall
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-abhaengigkeit
+    prompt:
+      template: "Singular: die Abhängigkeit · Plural: die {{b1}}"
+      blanks:
+        - { id: b1, width_hint: 16 }
+    answer:
+      blanks:
+        b1:
+          - Abhängigkeiten
+    known_wrong:
+      - answer: Abhängigkeit
+        feedback_vi: Abhängigkeit là dạng số ít; số nhiều là Abhängigkeiten.
+        error_tag: plural_form
+    explanation:
+      vi: "Số nhiều của die Abhängigkeit là die Abhängigkeiten (ký hiệu trong từ điển: -en). Mạo từ số nhiều luôn là die."
+    display_answer: "Singular: die Abhängigkeit · Plural: die Abhängigkeiten"
+  - key: de:exercise:b2w5l4-mcq-luecke-aufmerksamkeit
+    type: mcq
+    stage: application
+    answer_lang: de
+    difficulty: 3
+    item: de:item:b2w5-aufmerksamkeit
+    prompt:
+      stem: "Chọn từ điền vào chỗ trống để câu có nghĩa \"Vụ việc đã thu hút nhiều sự chú ý.\": Der Vorfall hat viel ___ erregt."
+      stem_lang: vi
+      options:
+        - { id: llw, text: Bemerkung, lang: de }
+        - { id: cuu, text: Unabhängigkeit, lang: de }
+        - { id: snz, text: Sorgfalt, lang: de }
+        - { id: uyu, text: Aufmerksamkeit, lang: de }
+    answer:
+      correct_option_id: uyu
+    explanation:
+      vi: "Câu có nghĩa \"Vụ việc đã thu hút nhiều sự chú ý.\" nên cần Aufmerksamkeit (die Aufmerksamkeit: sự chú ý). Sorgfalt = sự cẩn thận; Bemerkung = lời nhận xét; Unabhängigkeit = sự độc lập không đúng nghĩa của câu."
+    display_answer: Aufmerksamkeit
+  - key: de:exercise:b2w5l4-tr-satz-vi-de-1
+    type: translate
+    stage: application
+    answer_lang: de
+    difficulty: 4
+    prompt:
+      source_text: Nach einer langen Auseinandersetzung kamen die Parteien zu einer Einigung, und das Vertrauen wuchs wieder.
+      source_lang: vi
+      direction: vi_to_target
+    answer:
+      accepted:
+        - Nach einer langen Auseinandersetzung kamen die Parteien zu einer Einigung, und das Vertrauen wuchs wieder.
+        - Nach einer langen Auseinandersetzung kamen die Parteien zu einer Einigung, und das Vertrauen wurde wieder größer.
+        - Die Parteien kamen nach einer langen Auseinandersetzung zu einer Einigung, und das Vertrauen wuchs wieder.
+    explanation:
+      vi: "Gợi ý đáp án: Nach einer langen Auseinandersetzung kamen die Parteien zu einer Einigung, und das Vertrauen wuchs wieder. Chú ý vị trí động từ (thứ hai trong câu kể), mạo từ đúng giống và viết hoa danh từ."
+    display_answer: Nach einer langen Auseinandersetzung kamen die Parteien zu einer Einigung, und das Vertrauen wuchs wieder.
+    item: de:item:b2w5-auseinandersetzung
+  - key: de:exercise:b2w5l4-tr-satz-de-vi-1
+    type: translate
+    stage: application
+    answer_lang: vi
+    difficulty: 3
+    prompt:
+      source_text: Wegen der Abhängigkeit von Energieimporten ist die Dringlichkeit einer schnellen Entscheidung hoch.
+      source_lang: de
+      direction: target_to_vi
+    answer:
+      accepted:
+        - Vì sự phụ thuộc vào nhập khẩu năng lượng, tính cấp bách của một quyết định nhanh là rất cao.
+        - Do phụ thuộc vào việc nhập khẩu năng lượng, nên cần ra quyết định nhanh một cách rất cấp bách.
+        - Bởi phụ thuộc vào nhập khẩu năng lượng, tính cấp thiết phải có quyết định sớm là rất lớn.
+    rubric:
+      diacritics: lenient
+    explanation:
+      vi: "Câu \"Wegen der Abhängigkeit von Energieimporten ist die Dringlichkeit einer schnellen Entscheidung hoch.\" nghĩa là: Vì sự phụ thuộc vào nhập khẩu năng lượng, tính cấp bách của một quyết định nhanh là rất cao. Hãy dịch theo ý, không dịch từng chữ."
+    display_answer: Vì sự phụ thuộc vào nhập khẩu năng lượng, tính cấp bách của một quyết định nhanh là rất cao.
+    item: de:item:b2w5-abhaengigkeit
